@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+<html lang="pl" data-przedmiot="che">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>P01 · Blok s — litowce i berylowce</title>
+<style id="lekcja-css">
+/* baza.css — wspólna baza lekcji wszystkich przedmiotów (styl lekcji silnika CHE v0_57). Nie edytować — zmiany wspólne w ulepszenia.css, przedmiotowe w motywy/<kod>.css. */
+
+
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+--bg:#fafbfc;--surface:#ffffff;--surface-soft:#f6f8fa;--surface-warm:#fdfaf4;--border:#e5e9ee;--border-strong:#cdd5dd;
+--text:#1a2332;--text-soft:#4a5568;--text-muted:#8892a0;--text-faint:#b4bcc6;
+--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,0.15);
+--c-basic:#2e7d4f;--c-basic-bg:#eaf6ee;--c-basic-line:#b8dcc4;
+--c-understand:#2b5e9c;--c-understand-bg:#eaf1f9;--c-understand-line:#bcd0e5;
+--c-warn:#b06f1c;--c-warn-bg:#fcf4e6;--c-warn-line:#eed8a8;
+--c-error:#b83a45;--c-error-bg:#fbeced;--c-error-line:#e8b5b9;
+--c-extra:#6b3fa0;--c-extra-bg:#f3ecfa;--c-extra-line:#d3bde8;
+--c-new:#0d7d7d;--c-new-bg:#e6f4f4;--c-new-line:#b0dcdc;
+--c-exam:#a86a00;--c-exam-bg:#fdf5e0;--c-exam-line:#eed49c;
+--sh-sm:0 1px 2px rgba(26,35,50,0.04);--sh-md:0 4px 12px rgba(26,35,50,0.06);--sh-lg:0 12px 32px rgba(26,35,50,0.10);--sh-xl:0 20px 48px rgba(26,35,50,0.14);
+--r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;
+--header-h:56px;
+--ease:cubic-bezier(0.4,0,0.2,1);--ease-out:cubic-bezier(0.16,1,0.3,1);
+--hl-key:#0d6868;--hl-key-bg:#d8ecea;--hl-warn:#b83a45;--hl-warn-bg:#fbe0e2;--hl-new:#6b3fa0;--hl-new-bg:#ede0f8;--hl-formula:#084848;--hl-formula-bg:#e0eeed;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;padding:calc(var(--header-h) + 12px) 0 88px;min-height:100vh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+@media(min-width:600px){body{padding:calc(var(--header-h) + 18px) 12px 96px;}}
+@media(min-width:768px){body{padding:calc(var(--header-h) + 24px) 20px 100px;}}
+@media(min-width:1100px){body{padding:calc(var(--header-h) + 28px) 32px 110px;}}
+.fab{position:fixed;top:12px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);background:rgba(255,255,255,0.94);color:var(--text);cursor:pointer;border-radius:var(--r-md);padding:0;transition:all 0.2s var(--ease);z-index:1200;box-shadow:var(--sh-sm);backdrop-filter:blur(8px);}
+.fab:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);box-shadow:var(--sh-md);transform:translateY(-1px);}
+.fab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.fab-left{left:6px;}.fab-right{right:6px;}
+@media(min-width:600px){.fab-left{left:10px;}.fab-right{right:10px;}}
+@media(min-width:768px){.fab-left{left:14px;}.fab-right{right:14px;}}
+.fab-left::after{content:'';width:16px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;border-radius:1px;transition:transform 0.25s var(--ease);}
+.fab-left.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.fab-left.is-open::after{width:16px;height:2px;background:currentColor;box-shadow:none;transform:rotate(45deg);}
+.fab-left.is-open::before{content:'';position:absolute;width:16px;height:2px;background:currentColor;transform:rotate(-45deg);border-radius:1px;}
+.fab-right::after{content:'';display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:8px solid currentColor;transition:transform 0.35s var(--ease-out);}
+.fab-right.is-hidden::after{transform:rotate(0deg);}
+.fab-right:not(.is-hidden)::after{transform:rotate(180deg);}
+.header-wrapper{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);transform:translateY(0);transition:transform 0.45s var(--ease-out),box-shadow 0.3s var(--ease);box-shadow:var(--sh-sm);}
+.header-wrapper.is-hidden{transform:translateY(-100%);box-shadow:none;}
+.header-bar{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:0 16px;height:var(--header-h);}
+@media(min-width:768px){.header-bar{padding:0 24px;}}
+.header-subject{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:1px;padding:4px 10px;background:var(--accent-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;}
+.header-title{font-size:15px;font-weight:700;color:var(--text);letter-spacing:-0.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1 1 auto;min-width:0;}
+.header-lesson{font-size:10px;font-weight:800;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.7px;padding:4px 9px;background:var(--surface-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;font-family:'JetBrains Mono',monospace;}
+.header-nav{display:flex;gap:2px;flex-shrink:0;align-items:center;}
+.header-nav a,.header-nav button{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;border-radius:var(--r-sm);font-size:16px;font-weight:500;transition:all 0.2s var(--ease);border:1px solid transparent;background:transparent;cursor:pointer;padding:0;font-family:inherit;}
+.header-nav a:hover,.header-nav button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.header-resume-btn.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.header-resume-btn::before{content:'▮';font-size:14px;line-height:1;}
+.header-panel{display:none;border-top:1px solid var(--border);background:linear-gradient(180deg,var(--surface) 0%,var(--surface-soft) 100%);padding:20px 16px 24px;}
+@media(min-width:768px){.header-panel{padding:24px 24px 28px;}}
+.header-panel.is-open{display:block;}
+.header-panel-inner{max-width:900px;margin:0 auto;}
+.header-kicker{font-size:11px;color:var(--text-muted);text-transform:uppercase;font-weight:800;letter-spacing:1px;margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.header-kicker::before{content:'';width:24px;height:2px;background:var(--accent);display:inline-block;border-radius:1px;}
+.header-h1{font-size:32px;font-weight:800;color:var(--text);letter-spacing:-1px;margin-bottom:10px;line-height:1.1;}
+.header-subtitle{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:18px;max-width:720px;}
+.header-modes{display:flex;gap:6px;flex-wrap:wrap;}
+.mode-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 15px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);font-family:inherit;}
+.mode-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
+.mode-btn:hover:not(.active){background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.resume-dropdown{display:none;position:fixed;top:calc(var(--header-h) + 6px);right:14px;z-index:1050;width:min(300px,calc(100vw - 30px));padding:14px;border:1px solid var(--border-strong);border-radius:12px;background:#fff;box-shadow:var(--sh-lg);}
+.resume-dropdown.is-open{display:block;}
+.resume-dropdown h4{margin:0 0 5px;color:var(--text);font-size:.85rem;}
+.resume-dropdown p{margin:0 0 12px;color:var(--text-muted);font-size:.75rem;line-height:1.5;}
+.resume-actions{display:flex;gap:6px;}
+.resume-actions button{flex:1;padding:8px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text-soft);font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.resume-actions .resume-save{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toc-overlay{position:fixed;inset:0;background:rgba(26,35,50,0.34);backdrop-filter:blur(3px);z-index:1100;opacity:0;visibility:hidden;transition:opacity 0.3s var(--ease),visibility 0.3s var(--ease);}
+.toc-overlay.is-visible{opacity:1;visibility:visible;}
+.toc-wrapper{position:fixed;left:0;top:0;width:320px;max-width:86vw;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:1150;transform:translateX(-100%);transition:transform 0.4s var(--ease-out);padding-top:64px;box-shadow:var(--sh-xl);}
+.toc-wrapper.is-open{transform:translateX(0);}
+.toc-content{padding:12px 14px 100px;}
+.toc-header{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);padding:4px 12px 12px;}
+.toc-item{margin-bottom:4px;border-radius:var(--r-md);overflow:hidden;}
+.toc-summary{padding:10px 12px;font-size:13px;font-weight:700;color:var(--text);cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;border-radius:var(--r-sm);transition:background 0.2s var(--ease),color 0.2s var(--ease);user-select:none;}
+.toc-summary:hover{background:var(--accent-soft);color:var(--accent);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::marker{content:'';}
+.toc-summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);opacity:0.5;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);opacity:1;}
+.toc-links{padding:4px 0 8px 28px;display:flex;flex-direction:column;gap:1px;}
+.toc-link{display:block;padding:6px 10px;font-size:12.5px;color:var(--text-soft);text-decoration:none;border-radius:4px;transition:all 0.2s var(--ease);border-left:2px solid transparent;}
+.toc-link:hover{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);}
+.container{max-width:820px;margin:0 auto;background:var(--surface);border-radius:0;box-shadow:none;padding:18px 12px;border:none;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+@media(min-width:600px){.container{border-radius:var(--r-lg);box-shadow:var(--sh-md);border:1px solid var(--border);padding:22px 18px;}}
+@media(min-width:768px){.container{padding:36px 36px;border-radius:var(--r-xl);}}
+@media(min-width:1100px){.container{max-width:840px;padding:40px 40px;}}
+h1,h2,h3,h4,h5{font-weight:800;color:var(--text);letter-spacing:-0.3px;line-height:1.3;}
+h2{font-size:24px;margin-top:44px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+h3{font-size:17px;margin-top:32px;margin-bottom:12px;font-weight:800;}
+h4{font-size:15px;margin-top:24px;margin-bottom:10px;font-weight:800;}
+h5{font-size:13px;margin-top:16px;margin-bottom:8px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-soft);}
+p{margin-bottom:12px;}
+ul,ol{padding-left:24px;margin-bottom:14px;}
+li{margin-bottom:6px;padding-left:4px;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s var(--ease);}
+a:hover{border-bottom-color:var(--accent);}
+strong{font-weight:700;color:var(--text);}
+.hl{background:var(--hl-key-bg);color:var(--hl-key);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-warn{background:var(--hl-warn-bg);color:var(--hl-warn);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-new{background:var(--hl-new-bg);color:var(--hl-new);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.formula{display:inline-block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:14px;font-weight:600;color:var(--hl-formula);background:var(--hl-formula-bg);padding:4px 12px;border-radius:var(--r-sm);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:3px 2px;white-space:nowrap;}
+.formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
+code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
+pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
+.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
+.mnemonic b{color:#78350f;}
+.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
+@media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
+.card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
+.card-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:10px;padding:3px 9px;background:var(--accent-soft);border-radius:4px;}
+.card-core{background:var(--accent-soft);border-color:var(--accent-line);border-left-color:var(--accent);}
+.card-basic{background:var(--c-basic-bg);border-color:var(--c-basic-line);border-left-color:var(--c-basic);}
+.card-basic .card-label{background:rgba(46,125,79,0.12);color:var(--c-basic);}
+.card-understand{background:var(--c-understand-bg);border-color:var(--c-understand-line);border-left-color:var(--c-understand);}
+.card-understand .card-label{background:rgba(43,94,156,0.12);color:var(--c-understand);}
+.card-warning{background:var(--c-warn-bg);border-color:var(--c-warn-line);border-left-color:var(--c-warn);}
+.card-warning .card-label{background:rgba(176,111,28,0.12);color:var(--c-warn);}
+.card-error{background:var(--c-error-bg);border-color:var(--c-error-line);border-left-color:var(--c-error);}
+.card-error .card-label{background:rgba(184,58,69,0.12);color:var(--c-error);}
+.card-extra{background:var(--c-extra-bg);border-color:var(--c-extra-line);border-left-color:var(--c-extra);}
+.card-extra .card-label{background:rgba(107,63,160,0.12);color:var(--c-extra);}
+.card-new{background:var(--c-new-bg);border-color:var(--c-new-line);border-left-color:var(--c-new);}
+.card-new .card-label{background:rgba(13,125,125,0.12);color:var(--c-new);}
+.card-exam{background:var(--c-exam-bg);border-color:var(--c-exam-line);border-left-color:var(--c-exam);}
+.card-exam .card-label{background:rgba(168,106,0,0.12);color:var(--c-exam);}
+.card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0;}
+details.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent-line);border-radius:var(--r-sm);padding:10px 14px;margin:10px 0;transition:all 0.2s var(--ease);}
+details.answer[open]{background:var(--accent-soft);border-left-color:var(--accent);}
+details.answer summary{cursor:pointer;font-weight:700;color:var(--text-soft);font-size:13px;list-style:none;user-select:none;display:flex;align-items:center;gap:10px;transition:color 0.2s var(--ease);}
+details.answer summary::-webkit-details-marker{display:none;}
+details.answer summary::marker{content:'';}
+details.answer summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer[open] summary{color:var(--accent);}
+details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}
+.part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}
+@media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}
+.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
+@media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}
+.table-wrap th,.table-wrap td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px;}
+@media(min-width:600px){.table-wrap th,.table-wrap td{padding:10px 12px;font-size:13.5px;}}
+.table-wrap th{background:var(--surface-soft);font-weight:800;color:var(--text-soft);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;}
+@media(min-width:600px){.table-wrap th{font-size:11px;letter-spacing:0.7px;white-space:nowrap;}}
+.table-wrap.table-compact td,.table-wrap.table-compact th{padding:7px 6px;font-size:12.5px;}
+.table-wrap tr:last-child td{border-bottom:none;}
+.table-wrap tr:hover td{background:var(--accent-soft);}
+.table-wrap .error-row{background:var(--c-error-bg);}
+.table-wrap .ok-row{background:var(--c-basic-bg);}
+.def-list{display:flex;flex-direction:column;gap:8px;margin:14px 0;}
+.def-item{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px 16px;}
+.def-item dt{font-weight:800;color:var(--text);font-size:13.5px;margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+.def-item dt::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;}
+.def-item dd{color:var(--text-soft);font-size:13.5px;line-height:1.6;margin:0;padding-left:11px;}
+.minimum-card{background:linear-gradient(135deg,var(--surface-soft) 0%,var(--accent-soft) 100%);border:1px solid var(--accent-line);border-radius:var(--r-lg);padding:20px 22px;margin:8px 0 28px;box-shadow:var(--sh-sm);position:relative;overflow:hidden;}
+@media(min-width:768px){.minimum-card{padding:28px 34px;margin-bottom:36px;}}
+.minimum-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:var(--accent);}
+.minimum-card h3{color:var(--accent);margin:0 0 16px;font-size:16px;letter-spacing:0.2px;display:flex;align-items:center;gap:10px;}
+.minimum-card h3::before{content:'★';font-size:16px;}
+.minimum-card ol{margin:0;padding-left:0;list-style:none;counter-reset:min-list;}
+.minimum-card li{counter-increment:min-list;padding-left:36px;position:relative;margin-bottom:12px;font-size:14px;line-height:1.6;}
+.minimum-card li::before{content:counter(min-list);position:absolute;left:0;top:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--surface);color:var(--accent);border:2px solid var(--accent-line);border-radius:50%;font-size:12px;font-weight:800;}
+.minimum-card li:last-child{margin-bottom:0;}
+.level-badge{display:inline-block;font-size:9.5px;font-weight:800;text-transform:uppercase;padding:2px 9px;border-radius:12px;vertical-align:middle;letter-spacing:0.5px;line-height:1.6;margin-left:8px;}
+.level-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.level-understand{background:var(--c-understand-bg);color:var(--c-understand);}
+.level-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.level-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.level-new{background:var(--c-new-bg);color:var(--c-new);}
+.rule-box{background:var(--c-understand-bg);border:1px solid var(--c-understand-line);border-radius:var(--r-md);padding:14px 18px;margin:14px 0;font-size:14px;line-height:1.65;}
+.rule-box b{color:var(--c-understand);}
+.step-flow{background:var(--text);color:#fff;padding:16px 18px;border-radius:var(--r-md);font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:12.5px;line-height:1.9;margin:14px 0;overflow-x:auto;white-space:pre;}
+@media(min-width:768px){.step-flow{font-size:13.5px;padding:16px 20px;}}
+.footer{margin-top:56px;padding-top:24px;border-top:2px solid var(--border);text-align:center;font-size:12.5px;color:var(--text-muted);letter-spacing:0.2px;}
+.footer p{margin-bottom:4px;}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:6px;border:2px solid var(--bg);}
+::-webkit-scrollbar-thumb:hover{background:var(--text-muted);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.bottom-nav{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:1100;width:min(700px,calc(100vw - 24px));font-size:.78rem;}
+.bottom-nav__toggle{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;padding:8px 14px;border:1px solid var(--border-strong);border-radius:999px;background:rgba(255,255,255,.97);color:var(--text-soft);font:700 .72rem inherit;box-shadow:0 5px 18px rgba(15,23,42,.14);cursor:pointer;backdrop-filter:blur(10px);font-family:inherit;}
+.bottom-nav__panel{display:none;margin-bottom:7px;padding:10px;border:1px solid var(--border-strong);border-radius:14px;background:rgba(255,255,255,.98);box-shadow:0 10px 28px rgba(15,23,42,.16);backdrop-filter:blur(12px);}
+.bottom-nav.is-open .bottom-nav__panel{display:block;}
+.bottom-nav__primary{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.bottom-nav a,.bottom-nav button.nav-more{min-height:36px;display:flex;align-items:center;justify-content:center;padding:6px 8px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--text-soft);text-decoration:none;font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.bottom-nav a:hover,.bottom-nav button.nav-more:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+@media(max-width:420px){
+  .bottom-nav{font-size:.7rem;width:calc(100vw - 12px);}
+  .bottom-nav a,.bottom-nav button.nav-more{padding:6px 4px;font-size:.65rem;}
+}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
+.widget{background:var(--surface);border:2px solid var(--border);border-radius:var(--r-md);padding:14px;margin:14px 0;box-shadow:var(--sh-sm);}
+@media(min-width:768px){.widget{padding:22px 26px;margin:20px 0;border-radius:var(--r-lg);}}
+.widget h4{margin:0 0 8px;color:var(--text);font-size:15px;font-weight:800;}
+@media(min-width:768px){.widget h4{font-size:16px;}}
+.widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
+.bld-pool{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.bld-pool button{padding:6px 12px;border:1px solid var(--border);border-radius:20px;background:#fff;font:600 0.8rem inherit;cursor:pointer;font-family:inherit;color:var(--text);}
+.bld-pool button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bld-workspace{min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;}
+.bld-feedback,.re-result,.st-feedback,.ch-feedback{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;line-height:1.5;}
+.bld-feedback.ok,.re-result.ok,.st-feedback.ok,.ch-feedback.ok{background:var(--c-basic-bg);color:var(--c-basic);border:1px solid var(--c-basic-line);}
+.bld-feedback.bad,.re-result.bad,.st-feedback.bad,.ch-feedback.bad{background:var(--c-error-bg);color:var(--c-error);border:1px solid var(--c-error-line);}
+.bld-feedback.info,.re-result.info,.st-feedback.info,.ch-feedback.info{background:var(--c-understand-bg);color:var(--c-understand);border:1px solid var(--c-understand-line);}
+.bld-feedback.warn,.re-result.warn,.st-feedback.warn,.ch-feedback.warn{background:var(--c-warn-bg);color:var(--c-warn);border:1px solid var(--c-warn-line);}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);color:var(--text);font-family:inherit;}
+.btn:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent);}
+.btn-primary:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+.btn-sm{padding:6px 10px;font-size:12px;}
+.flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}
+@media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--border);border-radius:var(--r-md);background:#fff;color:var(--text);font:inherit;text-align:center;cursor:pointer;box-shadow:var(--sh-sm);transition:all 0.2s var(--ease);position:relative;font-family:inherit;}
+.flashcard:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-3px);box-shadow:var(--sh-md);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:90px;}
+.flashcard .front{font-weight:700;font-size:14.5px;line-height:1.5;}
+.flashcard .back{display:none;color:var(--text-soft);font-size:13.5px;line-height:1.6;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:8px;right:8px;font-size:9px;text-transform:uppercase;background:var(--surface-soft);padding:2px 8px;border-radius:10px;color:var(--text-muted);font-weight:800;letter-spacing:0.4px;}
+.flashcard .card-tag.tag-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.flashcard .card-tag.tag-error{background:var(--c-error-bg);color:var(--c-error);}
+.flashcard .card-tag.tag-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.flashcard .card-tag.tag-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.checklist{background:#fff;border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.checklist h4{color:var(--c-basic);margin:0 0 12px;font-size:15px;}
+.checklist ul{list-style:none;padding-left:0;margin:0;}
+.checklist li{padding:7px 0;font-size:13.5px;border-bottom:1px dashed var(--c-basic-line);display:flex;align-items:flex-start;gap:10px;line-height:1.55;}
+.checklist li:last-child{border-bottom:none;}
+.checklist li::before{content:'☐';color:var(--c-basic);font-weight:700;font-size:1.15rem;flex-shrink:0;line-height:1.2;}
+.core-path{background:linear-gradient(135deg,var(--c-basic-bg) 0%,#dcefe2 100%);border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:800;color:var(--c-basic);font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.core-path .cp-title::before{content:'▶';font-size:12px;}
+.core-path ol{margin:0;padding-left:22px;}
+.core-path li{margin-bottom:6px;font-size:13.5px;line-height:1.6;}
+.audit-panel{background:var(--surface-soft);border:2px solid var(--border-strong);border-radius:var(--r-lg);padding:16px 18px;margin:16px 0;}
+.audit-panel h4{margin:0 0 12px;color:var(--text);}
+.audit-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px;}
+@media(min-width:600px){.audit-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}}
+.audit-item{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:10px 12px;font-size:12.5px;line-height:1.55;}
+.mini-note{font-size:12.5px;color:var(--text-muted);font-style:italic;margin-top:8px;line-height:1.55;}
+.layer-legend{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:12px 14px;margin:12px 0;display:grid;grid-template-columns:1fr;gap:8px 18px;}
+@media(min-width:600px){.layer-legend{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;}}
+.layer-legend .layer-row{display:flex;gap:10px;align-items:center;font-size:12.5px;line-height:1.5;}
+.layer-legend .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.e8{background:var(--c-basic);}
+.layer-legend .dot.understand{background:var(--c-understand);}
+.layer-legend .dot.extra{background:var(--c-extra);}
+.layer-legend .dot.contest{background:var(--c-warn);}
+.klinika-table td.col-blad{color:var(--c-error);font-weight:700;}
+.klinika-table td.col-blad::before{content:'✕ ';font-weight:900;margin-right:4px;color:var(--c-error);}
+.klinika-table td.col-ok{color:var(--c-basic);font-weight:700;}
+.klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}
+.map-card{position:relative;}
+.map-expand-btn{position:absolute;top:10px;right:10px;z-index:3;padding:6px 12px;border:1px solid var(--accent-line);background:rgba(255,255,255,0.95);color:var(--accent);border-radius:var(--r-sm);font-size:12px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:var(--sh-sm);transition:all 0.15s var(--ease);}
+.map-expand-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.map-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(26,35,50,0.85);backdrop-filter:blur(6px);}
+.map-overlay.is-open{display:block;}
+.map-overlay-inner{position:absolute;inset:12px;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-xl);}
+.map-overlay-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface-soft);gap:8px;flex-wrap:wrap;}
+.map-overlay-title{font-weight:800;font-size:14px;color:var(--text);}
+.map-overlay-actions{display:flex;gap:6px;}
+.map-overlay-actions button{padding:6px 12px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;color:var(--text-soft);transition:all 0.15s var(--ease);}
+.map-overlay-actions button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.map-overlay-actions .map-close{background:var(--c-error);color:#fff;border-color:var(--c-error);}
+.map-overlay-canvas{flex:1;overflow:hidden;position:relative;background:#fff;cursor:grab;touch-action:none;}
+.map-overlay-canvas svg{display:block;position:absolute;top:0;left:0;transform-origin:0 0;}
+@media print{
+.fab,.toc-wrapper,.toc-overlay,.header-wrapper,.bottom-nav,.resume-dropdown,.map-overlay,.map-expand-btn{display:none !important;}
+body{padding:0;background:#fff;}
+.container{box-shadow:none;border:none;padding:0;max-width:100%;}
+details.answer{page-break-inside:avoid;}
+details.answer > *:not(summary){display:block !important;}
+details.answer summary{display:none;}
+.card{page-break-inside:avoid;}
+.widget{page-break-inside:avoid;}
+}
+@media (prefers-reduced-motion: reduce){
+*{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+html{scroll-behavior:auto;}
+}
+html,body{max-width:100%;overflow-x:hidden;}
+.table-scroll-hint{display:none;align-items:center;justify-content:space-between;gap:8px;padding:7px 11px;margin-top:0;margin-bottom:8px;border:1px solid var(--border);border-bottom:0;border-radius:var(--r-sm) var(--r-sm) 0 0;background:var(--surface-soft);color:var(--text-muted);font-size:11px;font-weight:700;}
+.table-wrap.is-scrollable + .table-scroll-hint{display:flex;}
+.table-scroll-hint .scroll-arrow{font-size:13px;letter-spacing:2px;color:var(--accent);}
+.timeline-anim{border-color:var(--c-understand-line);}
+.ta-stage{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 14px;min-height:280px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.ta-scene{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;animation:taFade 0.6s ease-out;width:100%;}
+@keyframes taFade{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.ta-scene .ta-year{font-size:1.7rem;font-weight:800;color:var(--accent);font-family:'JetBrains Mono',monospace;letter-spacing:1px;}
+.ta-scene .ta-who{font-size:1.05rem;font-weight:800;color:var(--text);}
+.ta-scene .ta-desc{font-size:13.5px;color:var(--text-soft);max-width:600px;line-height:1.65;}
+.ta-dots{display:flex;justify-content:center;gap:8px;margin:14px 0 8px;}
+.ta-dot{width:12px;height:12px;border-radius:50%;background:var(--border-strong);border:2px solid transparent;cursor:pointer;padding:0;transition:all 0.2s var(--ease);}
+.ta-dot.active{background:var(--accent);transform:scale(1.25);box-shadow:0 0 0 3px var(--accent-glow);}
+.ta-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;}
+.ta-nav{padding:8px 14px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-weight:700;color:var(--text-soft);cursor:pointer;font-size:12.5px;transition:all 0.15s var(--ease);}
+.ta-nav:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.ta-progress{font-size:12.5px;color:var(--text-muted);font-weight:700;font-family:'JetBrains Mono',monospace;}
+.eq-player{background:linear-gradient(180deg,#f8fafc,#eef6f5);border:2px solid var(--accent-line);border-radius:var(--r-lg);padding:16px 18px;margin:14px 0;}
+.eq-stage{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.15rem;padding:12px;background:#fff;border-radius:var(--r-md);border:1px solid var(--border);}
+.eq-term{display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border);opacity:0;}
+.eq-term.show{opacity:1;animation:reaction-flow 0.7s ease-out;}
+.eq-term.reactant{background:#e0f2fe;border-color:#7dd3fc;color:#0c4a6e;}
+.eq-term.product{background:#dcfce7;border-color:#86efac;color:#14532d;}
+.eq-arrow{opacity:0;color:var(--accent);font-size:1.4rem;}
+.eq-arrow.show{opacity:1;}
+.eq-balance{margin-top:10px;font-size:13px;color:var(--text-soft);display:none;}
+.eq-balance.show{display:block;}
+@keyframes reaction-flow{0%{opacity:.25;transform:scale(.92)}55%{opacity:1}100%{opacity:1;transform:scale(1)}}
+.ion-assembly{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;padding:18px 12px;background:#fff;border:1px solid var(--border);border-radius:var(--r-md);margin:10px 0;}
+.ion-chip{padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid var(--border);}
+.ion-chip.cation{background:#e0f2fe;border-color:#38bdf8;color:#0c4a6e;}
+.ion-chip.anion{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.ion-chip.product{background:#dcfce7;border-color:#4ade80;color:#14532d;}
+.ion-plus,.ion-join{font-size:1.4rem;font-weight:800;color:var(--text-muted);}
+.hero{max-width:900px;margin:0 auto 22px;padding:26px;border:1px solid var(--border);border-radius:var(--r-xl);background:linear-gradient(135deg,#fff,var(--accent-soft));box-shadow:var(--sh-md);}
+.hero h1{font-size:clamp(32px,6vw,52px);margin:4px 0 8px;}
+.hero-kicker{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--accent);text-transform:uppercase;}
+.lead{font-size:16px;color:var(--text-soft);max-width:720px;}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;}
+.page{max-width:900px;margin:0 auto;}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+@media(max-width:720px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px;}
+.metric-grid>div,.result-card,.step-card{padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);}
+.metric-grid b{display:block;font-size:10px;text-transform:uppercase;color:var(--text-muted);}
+.metric-grid strong{display:block;margin-top:3px;}
+@media(max-width:700px){.metric-grid{grid-template-columns:1fr;}}
+.controls,.button-grid{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;}
+.controls button,.button-grid button,.quiz-opt{padding:8px 12px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;cursor:pointer;}
+.particle-stage{height:120px;display:flex;align-items:center;justify-content:center;gap:70px;border:1px dashed var(--border-strong);border-radius:10px;margin-top:12px;}
+.particle{font-size:30px;font-weight:800;}
+.p-h3o{color:var(--accent);}
+.p-cl{color:#b83a45;}
+.ph-scale{display:flex;justify-content:space-between;margin-top:6px;font:700 11px 'JetBrains Mono',monospace;}
+.buffer-tank{height:28px;border:1px solid var(--border-strong);border-radius:999px;overflow:hidden;margin:14px 0;background:var(--surface-soft);}
+#bufferFill{height:100%;width:100%;background:var(--accent);transition:width .2s;}
+.quiz-wrap{margin:16px 0;}
+.quiz-q{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:14px 16px;margin-bottom:12px;}
+.quiz-q h5{margin:0 0 10px;font-size:14.5px;color:var(--text);text-transform:none;letter-spacing:0;line-height:1.45;}
+.quiz-q .q-tag{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:10px;margin-bottom:8px;background:var(--surface-soft);color:var(--text-muted);}
+.quiz-opts{display:flex;flex-direction:column;gap:8px;}
+.quiz-opt{display:block;width:100%;text-align:left;padding:10px 12px;border:2px solid var(--border);border-radius:var(--r-sm);background:#fff;font:inherit;font-size:13.5px;cursor:pointer;transition:all 0.15s var(--ease);color:var(--text);}
+.quiz-opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft);}
+.quiz-opt.correct{border-color:var(--c-basic);background:var(--c-basic-bg);color:var(--c-basic);font-weight:700;}
+.quiz-opt.wrong{border-color:var(--c-error);background:var(--c-error-bg);color:var(--c-error);}
+.quiz-opt:disabled{cursor:default;opacity:0.95;}
+.quiz-fb{margin-top:8px;font-size:13px;line-height:1.5;display:none;padding:8px 10px;border-radius:var(--r-sm);}
+.quiz-fb.show{display:block;}
+.quiz-fb.ok{background:var(--c-basic-bg);color:var(--c-basic);}
+.quiz-fb.bad{background:var(--c-error-bg);color:var(--c-error);}
+.quiz-score{text-align:center;padding:14px;background:var(--surface-soft);border-radius:var(--r-md);margin-top:16px;font-weight:800;color:var(--accent);display:none;}
+.quiz-score.show{display:block;}
+.lab-bridge{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 28px;padding:14px 16px;border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);background:linear-gradient(135deg,var(--surface-soft),var(--accent-soft));}
+.lab-bridge strong{display:block;color:var(--accent-dark);}
+.lab-bridge span{display:block;margin-top:3px;color:var(--text-soft);font-size:13px;}
+.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;}
+.lab-bridge-btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
+@media(max-width:600px){.lab-bridge{align-items:flex-start;flex-direction:column;}.lab-bridge-btn{width:100%;text-align:center;}}
+.exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}
+.exp-card h5{margin:0 0 10px;color:var(--c-basic);font-size:14px;text-transform:none;letter-spacing:0;}
+.exp-grid{display:grid;grid-template-columns:1fr;gap:6px;font-size:13.5px;line-height:1.55;}
+@media(min-width:600px){.exp-grid{grid-template-columns:110px 1fr;}}
+.exp-grid b{color:var(--text-soft);font-size:11px;text-transform:uppercase;letter-spacing:0.4px;}
+
+.js-reveal .card:not(.in),.js-reveal .widget:not(.in){opacity:0;transform:translateY(14px)}
+.js-reveal .card,.js-reveal .widget{transition:opacity .55s var(--ease),transform .55s var(--ease)}
+
+
+.ion-svg{width:100%;height:auto;display:block;background:radial-gradient(ellipse at 50% 40%,#fff,var(--surface-soft));border:1px solid var(--border);border-radius:var(--r-md);margin-top:10px}
+.ion-svg .mv{transition:transform .9s cubic-bezier(.65,0,.35,1);transform-box:fill-box}
+.ion-svg text{font-family:'JetBrains Mono',monospace;font-weight:800;text-anchor:middle;dominant-baseline:central}
+.ion-svg .fade{opacity:0;transition:opacity .6s ease .35s}
+.ion-svg[data-s="1"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="1"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="1"] .d1,.ion-svg[data-s="2"] .d1{opacity:1}
+.ion-svg[data-s="2"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="2"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="2"] .proton{transform:translate(120px,-40px)}
+.ion-svg[data-s="2"] .arrow{opacity:1}
+.ion-svg[data-s="3"] .g-hcl{transform:translateX(10px)}
+.ion-svg[data-s="3"] .g-w{transform:translateX(-10px)}
+.ion-svg[data-s="3"] .proton{transform:translate(230px,-38px)}
+.ion-svg[data-s="3"] .d3{opacity:1}
+.ion-svg[data-s="3"] .glow{animation:ionGlow 1.6s ease-in-out infinite}
+@keyframes ionGlow{0%,100%{filter:drop-shadow(0 0 2px rgba(13,104,104,.3))}50%{filter:drop-shadow(0 0 10px rgba(13,104,104,.8))}}
+
+
+.ph-bar{position:relative;height:18px;border-radius:999px;margin:10px 0 4px;border:1px solid var(--border-strong);
+background:linear-gradient(90deg,#e5262e 0%,#ef5a28 14%,#f6a21e 28%,#d7d93a 43%,#5cb85c 50%,#21a89a 57%,#2f7fc1 71%,#4a4bb5 86%,#6b2d8f 100%)}
+.ph-marker{position:absolute;top:-6px;width:0;height:0;left:0;transform:translateX(-50%);transition:left .35s var(--ease)}
+.ph-marker::before{content:'';position:absolute;left:-7px;top:0;border:7px solid transparent;border-top:10px solid var(--text)}
+.ph-marker::after{content:attr(data-v);position:absolute;left:0;top:-22px;transform:translateX(-50%);background:var(--text);color:#fff;font:800 11px 'JetBrains Mono',monospace;padding:2px 6px;border-radius:5px;white-space:nowrap}
+.ph-flask{display:inline-block;width:22px;height:22px;border-radius:0 0 8px 8px;border:2px solid var(--text-soft);vertical-align:middle;margin-right:6px;transition:background .35s}
+
+
+.titr-wrap{position:relative}
+#titrationCanvas{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--r-md);background:#fff}
+.titr-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.titr-row input[type=range]{flex:1 1 200px}
+.titr-flask{width:34px;height:42px;border:2px solid var(--text-soft);border-radius:2px 2px 12px 12px;transition:background .3s;flex-shrink:0;position:relative}
+.titr-flask::after{content:'';position:absolute;left:-2px;right:-2px;top:-8px;height:6px;border:2px solid var(--text-soft);border-bottom:0;border-radius:3px 3px 0 0}
+
+
+.buffer-tank{position:relative;height:34px}
+#bufferFill{transition:width .4s var(--ease),background .4s;background-size:28px 28px;background-image:linear-gradient(45deg,rgba(255,255,255,.22) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.22) 75%,transparent 75%)}
+.buffer-tank.pulse{animation:bufPulse .45s ease}
+.buffer-tank.dead{animation:bufDead .5s ease 2}
+@keyframes bufPulse{50%{transform:scale(1.02);box-shadow:0 0 0 4px var(--accent-glow)}}
+@keyframes bufDead{50%{box-shadow:0 0 0 4px rgba(184,58,69,.35)}}
+
+
+.rx-stage{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:12px 0;padding:14px;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md)}
+.rx-beaker{position:relative;width:120px;height:150px;border:3px solid var(--text-soft);border-top:0;border-radius:0 0 18px 18px;background:rgba(255,255,255,.55);overflow:visible;flex-shrink:0}
+.rx-liquid{position:absolute;left:0;right:0;bottom:0;height:100px;border-radius:0 0 14px 14px;background:rgba(220,235,240,.65);transition:background 2.2s ease}
+.rx-solid{position:absolute;left:36px;bottom:2px;width:48px;height:24px;border-radius:40% 40% 8px 8px;opacity:0;transition:height 3.5s ease,opacity .5s,transform 3.5s ease}
+.rx-bubbles,.rx-precip,.rx-fumes{position:absolute;left:0;right:0;bottom:0;height:150px;pointer-events:none;overflow:hidden}
+.rx-fumes{overflow:visible;bottom:100px;height:70px}
+.rx-b{position:absolute;bottom:14px;border-radius:50%;background:rgba(255,255,255,.85);border:1px solid rgba(13,104,104,.45);animation:rxRise 2.2s ease-in forwards}
+@keyframes rxRise{to{transform:translate(var(--dx,0),-92px);opacity:0}}
+.rx-p{position:absolute;top:50px;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #cbd5e1;animation:rxFall 2.4s ease-in forwards}
+@keyframes rxFall{to{transform:translateY(90px)}}
+.rx-cloud{position:absolute;bottom:0;left:6px;right:6px;height:0;background:#fff;border-radius:10px 10px 0 0;box-shadow:0 0 0 1px #e2e8f0;transition:height 4s ease;opacity:.95}
+.rx-f{position:absolute;bottom:0;width:26px;height:26px;border-radius:50%;background:rgba(150,75,20,.55);filter:blur(7px);animation:rxFume 3s ease-out forwards}
+@keyframes rxFume{to{transform:translate(var(--dx,0),-70px) scale(2.2);opacity:0}}
+
+
+.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.rx-label{flex:1 1 200px;font-size:13px;color:var(--text-soft);line-height:1.5}
+.rx-label b{color:var(--text);font-family:'JetBrains Mono',monospace}
+@media print{.js-reveal .card,.js-reveal .widget{opacity:1!important;transform:none!important}}
+
+
+/* ulepszenia.css — warstwa wspólna nad baza.css: pasek lekcji, postęp czytania, spis z podświetleniem,
+   tryb ciemny, komponenty wspólne (mity, drzewo, cytat, dialog, słówka, figura), druk, dostępność.
+   Kolejność w lekcji: baza.css → ulepszenia.css → motywy/<przedmiot>.css. Edytuj tylko tutaj. */
+
+:root{--header-h:52px;--serif:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Charter,Georgia,serif}
+
+/* ---------- pasek lekcji (zamiast nagłówka aplikacji) ---------- */
+.lk-bar{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 12px;
+  background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--border)}
+.lk-subj{flex:none;display:inline-flex;align-items:center;gap:7px;font:800 12.5px/1 Inter,system-ui,sans-serif;color:var(--accent);text-decoration:none;
+  padding:6px 10px 6px 8px;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+.lk-subj i{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+.lk-title{flex:1;min-width:0;font:600 13px/1.25 Inter,system-ui,sans-serif;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lk-btn{flex:none;min-width:36px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);background:var(--surface);
+  color:var(--text);border-radius:9px;padding:0 10px;font:700 12.5px Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+.lk-btn:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.lk-prog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
+@media (max-width:520px){.lk-title{display:none}.lk-bar{justify-content:space-between}}
+
+/* ---------- nagłówek lekcji ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+.hero::after{content:"";position:absolute;inset:-10% -6% -10% 52%;z-index:-1;opacity:.12;pointer-events:none;background:var(--motyw-wzor,none) right center/auto 100% repeat-y}
+.hero h1{text-wrap:balance}
+.hero-kicker{color:var(--accent);text-transform:none;letter-spacing:0;font-size:13px}
+.page{padding:0 16px}
+.lk-btn svg{width:16px;height:16px;display:block}
+.lk-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:12.5px;color:var(--text-muted)}
+.lk-meta b{color:var(--text-soft);font-weight:700}
+
+/* ---------- spis treści: aktywna sekcja ---------- */
+@media (min-width:800px){.toc-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));column-gap:12px}}
+.toc-link.on{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);font-weight:700}
+section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
+
+/* ---------- komponenty wspólne ---------- */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:12px 0}
+.myth-head{grid-column:1/-1;font-weight:800;font-size:14px}
+.myth{border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow:hidden}
+.myth p{margin:0;padding:9px 12px;font-size:13.5px;line-height:1.5}
+.myth p span{display:block;font:800 11px Inter,system-ui;margin-bottom:2px}
+.myth-x{background:var(--c-error-bg)}.myth-x span{color:var(--c-error)}.myth-ok span{color:var(--c-basic)}
+
+.lk-tree{margin:12px 0;font-size:14px;overflow-x:auto}
+.lk-tree ul{list-style:none;margin:0;padding-left:18px}.lk-tree>ul{padding-left:0}
+.lk-tree li{position:relative;padding:3px 0 3px 14px}
+.lk-tree ul ul li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--accent-line)}
+.lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
+.lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
+.lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+
+/* cytat z tekstu (lektura, źródło, wypowiedź) */
+.lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
+.lk-quote blockquote{margin:0;font:400 17px/1.65 var(--serif);color:var(--text)}
+.lk-quote blockquote p{margin:0 0 6px;color:inherit}
+.lk-quote figcaption{margin-top:6px;font-size:12.5px;color:var(--text-muted)}
+
+/* dialog (role A/B, rozmowa, scenka) */
+.lk-dialog{margin:14px 0;display:flex;flex-direction:column;gap:8px}
+.lk-line{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.lk-who{min-width:30px;height:30px;padding:0 8px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font:800 12px Inter,system-ui;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line)}
+.lk-line.b .lk-who{background:var(--surface-soft);color:var(--text-soft);border-color:var(--border)}
+.lk-say{padding:8px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font-size:14.5px;line-height:1.55}
+.lk-say small{display:block;color:var(--text-muted);font-size:12.5px;margin-top:2px}
+
+/* słówka: wyraz — znaczenie — przykład */
+.lk-vocab{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.lk-vocab th{text-align:left;font-size:12px;color:var(--text-muted);font-weight:700;padding:6px 10px;border-bottom:2px solid var(--border)}
+.lk-vocab td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+.lk-vocab td:first-child{font-weight:800;color:var(--accent);white-space:nowrap}
+.lk-vocab td:last-child{color:var(--text-soft);font-style:italic}
+@media (max-width:560px){.lk-vocab thead{display:none}.lk-vocab tr{display:block;padding:8px 0;border-bottom:1px solid var(--border)}
+  .lk-vocab td{display:block;border:0;padding:1px 4px}}
+
+/* figura z biblioteki grafik przedmiotu */
+.lk-fig{margin:16px 0;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);overflow:hidden}
+.lk-fig figcaption{padding:9px 14px;border-top:1px solid var(--border);background:var(--surface-soft);font-size:13px;line-height:1.5;color:var(--text-soft)}
+.lk-fig figcaption b{color:var(--text);margin-right:4px}
+.lk-fig-body{padding:12px}
+.lk-fig svg{display:block;width:100%;height:auto}
+
+/* z chemii (lekcja.css): treści akademickie, plakietki */
+details.adv{border:1px dashed var(--c-warn-line,#eed8a8);border-radius:10px;background:var(--surface-soft,#f6f8fa);margin:10px 0;padding:0 12px}details.adv>summary{cursor:pointer;font-weight:700;color:var(--c-warn,#b06f1c);padding:9px 0;list-style:none}details.adv>summary::-webkit-details-marker{display:none}details.adv>summary::before{content:"▸ "}details.adv[open]>summary::before{content:"▾ "}.adv-tag{font-weight:600;font-size:11px;opacity:.75;margin-left:6px}.adv-body{padding:0 0 10px;font-size:13.5px;line-height:1.6}.adv-body table{font-size:12.5px}.adv-toggle{margin-top:10px;border:1px solid var(--c-warn-line,#eed8a8);background:var(--c-warn-bg,#fcf4e6);color:var(--c-warn,#b06f1c);border-radius:999px;padding:6px 12px;font:700 12px Inter,system-ui,sans-serif;cursor:pointer}.bio-tag{display:inline-block;font:800 10px Inter,system-ui;letter-spacing:.04em;padding:2px 7px;border-radius:99px;background:rgba(46,125,79,.12);color:#2e7d4f;margin-left:6px;vertical-align:middle}.v15{display:inline-block;font:800 9.5px Inter,system-ui;padding:1px 6px;border-radius:99px;background:rgba(13,125,125,.12);color:#0d7d7d;margin-left:6px;vertical-align:middle}@media print{details.adv{display:block}details.adv>.adv-body{display:block}}
+/* z chemii (lekcja.css): telefon, tabele */
+.exp-card{min-width:0;max-width:100%;box-sizing:border-box}.exp-grid>*{min-width:0;overflow-wrap:anywhere}
+@media (max-width:600px){.exp-grid{grid-template-columns:minmax(0,1fr)!important}.exp-grid>b{margin-top:4px}}
+.table-wrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+
+/* klinika błędów (::: klinika) — tabela, na telefonie karty */
+.klinika-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden}
+.klinika-table th{text-align:left;padding:9px 12px;background:var(--surface-soft);color:var(--text-soft);font-size:12px;font-weight:800;border-bottom:1px solid var(--border)}
+.klinika-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.klinika-table tr:last-child td{border-bottom:0}
+@media (max-width:600px){.klinika-table thead{display:none}.klinika-table tr{display:block;padding:8px 12px;border-bottom:1px solid var(--border)}
+  .klinika-table td{display:block;border:0;padding:2px 0}.klinika-table td:not(.col-blad):not(.col-ok){color:var(--text-soft)}}
+
+.lk-pre{margin:12px 0;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-soft);overflow-x:auto;font:12.5px/1.55 ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;color:var(--text-soft);white-space:pre}
+.lk-pre code{font:inherit;background:none;padding:0;color:inherit}
+.lk-hr{border:0;border-top:1px solid var(--border);margin:28px 0}
+
+/* ---------- dostępność ---------- */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;z-index:60;background:var(--surface);color:var(--accent);padding:8px 12px;border-radius:8px}
+.skip-link:focus{left:8px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- tryb ciemny: automatycznie albo przyciskiem (data-theme) ---------- */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme=dark]{
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}
+/* elementy bazy z białym tłem na sztywno */
+html[data-ciemny] :is(.flashcard,.checklist,.audit-item,.layer-legend,.quiz-q,.quiz-opt,.btn,.controls button,.eq-stage,.ion-assembly,.bld-workspace,.bld-pool button,.resume-dropdown,.ta-nav){background:var(--surface);color:var(--text)}
+html[data-ciemny] .hero{background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.active,.step-flow){color:var(--bg)}
+@media (max-width:600px){.hero::after{opacity:.07}}
+
+/* ---------- druk ---------- */
+@media print{
+  .lk-bar,.adv-toggle,.toc-item,.fab,.bottom-nav{display:none!important}
+  body{padding:0;background:#fff;color:#000}
+  .hero::after{display:none}.hero{background:none;box-shadow:none}
+  details.adv,details.answer{display:block}details>*{display:block}
+  .card,.minimum-card,.lk-fig,.myth,.quiz-q{break-inside:avoid;box-shadow:none}
+  a{color:inherit;text-decoration:none}
+}
+
+/* === Dopracowanie czytelności (2026-10-11; z wersji „ulepszonej” U03 użytkownika, uogólnione na wszystkie przedmioty, zgodne z trybem ciemnym) === */
+body{line-height:1.74}
+main{isolation:isolate}
+.hero{border-color:var(--accent-line)}
+.hero::before{content:"";position:absolute;right:-42px;top:-56px;width:180px;height:180px;z-index:-1;pointer-events:none;
+ border:1px solid var(--accent-line);border-radius:50%;opacity:.45;
+ box-shadow:0 0 0 22px var(--accent-glow),0 0 0 44px var(--accent-glow)}
+.part-heading{padding:0 0 12px;border-bottom:1px solid var(--border);align-items:flex-start}
+.part-num{margin-top:1px}
+section[id]{scroll-margin-top:calc(var(--header-h,56px) + 20px)}
+section p{max-width:78ch}
+section ul,section ol{padding-left:1.35rem}
+.card,.exp-card,.widget,.table-wrap{box-shadow:0 2px 8px rgba(24,49,59,.045)}
+.table-wrap{max-width:100%}
+.table-wrap table{line-height:1.55}
+.table-wrap td strong{color:var(--text)}
+.table-wrap tbody tr:nth-child(even) td{background:var(--surface-soft)}
+.table-wrap tbody tr:hover td{background:var(--accent-soft)}
+.mini-note{max-width:80ch}
+:is(button,a,summary,[tabindex]):focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:520px){.hero{padding:20px 16px}.part-heading{font-size:19px;gap:11px}
+ .table-wrap table{font-size:12.5px}.table-wrap th,.table-wrap td{padding:8px 9px}}
+@media(hover:none){.card:hover,.flashcard:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media print{.hero::before{display:none}.card,.exp-card,.table-wrap{break-inside:avoid;box-shadow:none}}
+
+/* fiszki: część ukryta do rozwinięcia (lekcja.js); przy druku — wszystkie */
+.flashcard[hidden]{display:none!important}
+.fz-more{display:block;width:100%;margin:-6px 0 18px;padding:12px 16px;border:2px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent;color:var(--text,#1d2a30);font-family:inherit;font-weight:600;font-size:15px;line-height:1.3;cursor:pointer;text-align:center}
+.fz-more:hover,.fz-more:focus-visible{background:var(--surface-2,rgba(0,0,0,.04))}
+@media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
+.quiz-q[hidden]{display:none!important}
+@media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
+
+/* motyw che (Chemia) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,.15);--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 104 180%27%3E%3Cg fill=%27none%27 stroke=%27%230d6868%27 stroke-width=%273%27%3E%3Cpath d=%27M52 10l40 23v46l-40 23-40-23V33z%27/%3E%3Cpath d=%27M52 100l40 23v46l-40 23-40-23v-46z%27/%3E%3Cpath d=%27M52 22v8M92 56h8M12 56H4%27/%3E%3C/g%3E%3Cg fill=%27%230d6868%27%3E%3Ccircle cx=%2752%27 cy=%2710%27 r=%275%27/%3E%3Ccircle cx=%2792%27 cy=%2779%27 r=%275%27/%3E%3Ccircle cx=%2712%27 cy=%27123%27 r=%275%27/%3E%3C/g%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}}
+:root[data-theme=dark]{--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}
+
+/* równanie reakcji w osobnej linii: ::: div.rownanie */
+.rownanie{margin:12px 0;padding:12px 16px;border-radius:var(--r-md);background:var(--surface-soft);border:1px solid var(--border);font:600 17px/1.6 Inter,system-ui,sans-serif;text-align:center;overflow-x:auto;white-space:nowrap}
+.rownanie small{display:block;font-size:12px;font-weight:500;color:var(--text-muted);white-space:normal}
+
+/* Styl klocków laboratoryjnych (palniki, probówki, układ okresowy) — dobrany do motywu che:
+   jasna karta lekcji (--surface), akcent --accent, tekst --text. Scena z płótnem zostaje ciemna
+   (płomienie i poświaty wyglądają na ciemnym tle), reszta jak w sekcjach lekcji. */
+:root{--lab:#0e2326;--lab-tekst:var(--text,#1a2332);--lab-cisza:var(--text-muted,#8892a0);--lab-linia:var(--border,#e5e9ee)}
+.lab{background:var(--surface,#fff);color:var(--text,#1a2332);border:1px solid var(--border,#e5e9ee);border-radius:var(--r-lg,14px);padding:16px;box-shadow:var(--sh-sm,none);font-family:var(--tekst,Inter,system-ui,sans-serif)}
+.lab-pasek{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between;margin-bottom:12px}
+.lab-pasek .btn{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+.lab-cisza{color:var(--text-muted,#8892a0);font-size:14px}
+.btn{appearance:none;cursor:pointer;border:1px solid var(--accent,#0d6868);background:var(--accent,#0d6868);color:#fff;border-radius:var(--r-md,10px);padding:8px 14px;font:600 13px var(--tekst,Inter,sans-serif)}
+.btn.jasny{background:var(--surface,#fff);color:var(--accent,#0d6868)}
+.btn:hover{filter:brightness(1.08)}
+.btn:focus-visible{outline:2px solid var(--accent,#0d6868);outline-offset:2px}
+.btn[disabled]{opacity:.4;cursor:not-allowed}
+.stacje{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.st{display:flex;flex-direction:column;background:none;border:none;padding:0;min-width:0}
+.st-opis{margin-top:auto;display:flex;flex-direction:column;justify-content:flex-end}
+.st canvas,.rack canvas{display:block;width:100%;height:auto;cursor:pointer;background:var(--lab,#0e2326);border-radius:var(--r-md,10px);margin:6px 0 4px}
+.rack{margin:0 auto}
+.rack-kol{display:grid;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));gap:8px}
+.rack-ce{padding:0 6px;min-width:0;display:flex;flex-direction:column}
+.rack-ce.st-opis{justify-content:flex-end}
+.rack .wyb-gr{display:none}
+.rack .rown{font-size:14px}
+.rack-ce .btn,.st .btn{padding:6px 10px;font-size:12px}
+.st-opis{font-size:14px;color:var(--text,#1a2332)}
+.st-opis p{margin:0 0 6px}
+.rown{font:600 15px var(--naglowek,Inter,sans-serif);color:var(--text,#1a2332)}
+.obs{font-size:14px;color:var(--text-soft,#4a5568)}
+.meta{font-size:12.5px;color:var(--text-muted,#8892a0);display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-bottom:8px}
+.meta .pasek{background:var(--border,#e5e9ee);width:90px;height:8px;display:inline-block;vertical-align:middle;margin-left:6px;border-radius:99px;overflow:hidden}
+.meta .pasek i{display:block;height:100%;background:var(--accent,#0d6868)}
+.ostrz{color:var(--c-error,#b83a45);font-size:13px}
+.zak{display:flex;gap:10px;align-items:center;background:var(--c-warn-bg,#fcf4e6);border:1px solid var(--c-warn-line,#eed8a8);border-radius:var(--r-md,10px);padding:8px 10px;font-size:13px;line-height:1.35;margin:8px 0;color:var(--text,#1a2332)}
+.zak-ik{display:flex;gap:4px;flex:none}
+.el .tr{position:absolute;right:2px;bottom:2px;display:flex}
+.sz{position:relative}
+.sz .tr{position:absolute;top:2px;right:2px;display:flex}
+.tr2{display:flex;font-style:normal;margin-left:auto}
+.kol{display:flex;align-items:center;gap:10px;font-size:15px;color:var(--text,#1a2332)}
+.sw{width:20px;height:20px;border-radius:50%;flex:none;box-shadow:0 0 12px var(--glow,transparent)}
+.sw.pusty{border:2px dashed var(--border-strong,#cdd5dd)}
+.wyb-sym{position:relative;min-width:0}
+.wyb-sym>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:6px;font:700 15px var(--naglowek,Inter,sans-serif);color:var(--text,#1a2332);padding:4px 8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-sm,6px);background:var(--surface,#fff)}
+.wyb-sym>summary::-webkit-details-marker{display:none}
+.wyb-tri{display:inline-block;font-size:11px;color:var(--accent,#0d6868);transition:transform .15s}
+.wyb-sym[open] .wyb-tri{transform:rotate(90deg)}
+.wyb-lista{display:grid;gap:6px;margin:6px 0 8px;padding:8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-md,10px);background:var(--surface,#fff)}
+.wyb-g{display:block;font-size:11px;color:var(--text-muted,#8892a0);margin-bottom:3px}
+.wyb-sy{appearance:none;cursor:pointer;border:1px solid var(--border-strong,#cdd5dd);background:var(--surface-soft,#f6f8fa);color:var(--text,#1a2332);border-radius:var(--r-sm,6px);padding:4px 9px;margin:0 4px 4px 0;font:600 13px var(--naglowek,Inter,sans-serif)}
+.wyb-sy[aria-pressed="true"]{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+/* telefon: kilka stojaków obok siebie — węższy tekst, łamanie długich nazw */
+.kol{min-width:0}
+.kol b{overflow-wrap:anywhere;min-width:0}
+.st-opis{font-size:13px}
+.kol{font-size:14px}
+.stacje{gap:8px}
+.rack-kol{gap:6px}
+@media (max-width:480px){.st-opis .obs{font-size:12.5px}.st .btn,.rack-ce .btn{padding:5px 8px;font-size:12px}}
+.seria-przyciski{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+.seria-btn[aria-pressed="false"]{background:transparent;color:var(--accent,#0d6868)}
+.seria-btn[aria-pressed="true"]{background:var(--accent,#0d6868);color:#fff}
+.seria-opis{margin:0 0 10px;font-size:14px;color:var(--lab-cisza,#8892a0)}
+
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+<header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">P01 Blok s — litowce i berylowce</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<main class="page" id="main">
+<section class="hero card"><div class="hero-kicker">P01 · BLOK s · GRUPY 1–2</div><h1>Blok s — litowce i berylowce</h1><p class="lead">Metale grup 1 i 2 należą do najbardziej reaktywnych metali w układzie okresowym. Ta lekcja pokazuje, skąd bierze się ta reaktywność i jak zmienia się w grupie.</p><div class="tag-row"><span class="level-badge level-basic">E8</span><span class="level-badge level-understand">ROZUMIENIE</span><span class="level-badge level-exam">TRENING</span><span class="level-badge level-lo">ROZSZERZENIE</span><span class="level-badge level-olim">DLA AMBITNYCH</span><span class="level-badge level-uni">ZAAWANSOWANE</span></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button><p class="mini-note">Lekcja z szkieletu kanonu P01 (wymaga: F06, F11, N03), przepisana od zera. Legenda warstw: basic = podstawa E8; lo = rozszerzenie; olim = dla ambitnych; uni = zaawansowane. Treści ponad podstawę są oznaczone i nie są wymagane na egzaminie. Liczby orientacyjne oznaczono do W1.</p></section>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#minimum">Minimum E8</a><a class="toc-link" href="#sciaga">0. Ściąga — cała lekcja na jednej stronie</a><a class="toc-link" href="#polozenie">1. Wykład — położenie w układzie i dlaczego te dwie grupy</a><a class="toc-link" href="#wlasciwosci">2. Właściwości fizyczne i trend w grupie</a><a class="toc-link" href="#reakcje">3. Reakcje z wodą i tlenem</a><a class="toc-link" href="#wodorotlenki">4. Wodorotlenki i tlenki — zasadowy charakter</a><a class="toc-link" href="#plomienie">5. Płomienie i spalanie — trzy sekwencje palników</a><a class="toc-link" href="#zastosowania">6. Zastosowania</a><a class="toc-link" href="#klinika">7. Klinika błędów</a><a class="toc-link" href="#cwiczenia">8. Ćwiczenia z kluczem</a><a class="toc-link" href="#warstwy-karty">9. Sekcje warstwowe (ponad podstawę)</a><a class="toc-link" href="#fiszki">10. Fiszki</a><a class="toc-link" href="#slownik">11. Słownik</a><a class="toc-link" href="#test">12. Test końcowy</a><a class="toc-link" href="#ciekawostki">13. Ciekawostki</a><a class="toc-link" href="#mnemotechniki">14. Sposoby zapamiętania</a><a class="toc-link" href="#odpowiedz">15. Odpowiedź na pytanie przewodnie</a><a class="toc-link" href="#dalej">16. Co dalej?</a><a class="toc-link" href="#checklista">17. Checklista — umiem…</a><a class="toc-link" href="#zrodla">Pochodzenie i sprawdzenie treści</a></nav></details>
+<p>Metale grup 1 i 2 (litowce i berylowce) tworzą blok s, bo ich ostatni elektron leży na podpowłoce s. Są bardzo reaktywne: oddają elektrony łatwo i chętnie tworzą jony dodatnie. Zrozumienie tej jednej cechy wyjaśnia prawie wszystko, co dzieje się z nimi w doświadczeniach i w przyrodzie.</p>
+<section id="minimum" class="minimum-card"><h3>Muszę umieć — 6 punktów</h3>
+<ol>
+<li><strong>Grupa 1 (litowce)</strong> — Li, Na, K, Rb, Cs, Fr. Mają jeden elektron walencyjny, więc wartościowość I.</li>
+<li><strong>Grupa 2 (berylowce)</strong> — Be, Mg, Ca, Sr, Ba, Ra. Mają dwa elektrony walencyjne, więc wartościowość II.</li>
+<li><strong>Reaktywność w grupie</strong> rośnie w dół: im większy atom, tym łatwiej oddaje elektrony. (Be jest wyjątkiem w zachowaniu wobec wody — patrz warstwa lo.)</li>
+<li><strong>Reakcja z wodą</strong> daje wodorotlenek i wodór, np. 2 Na + 2 H₂O → 2 NaOH + H₂.</li>
+<li><strong>Tlenki</strong> litowców są zasadowe, tlenki berylowców są zasadowe z wyjątkiem amfoterycznego BeO. Wodorotlenki LiOH, NaOH, KOH, Ca(OH)₂ i Ba(OH)₂ mają właściwości zasadowe; Be(OH)₂ jest amfoteryczny.</li>
+<li><strong>Płomienie:</strong> lit daje czerwony, sód żółty, potas fioletowy (przez filtr kobaltowy), wapń ceglastoczerwony, bar zielony. Barwy pozwalają wykryć metal bez wzorów.</li>
+</ol>
+</section>
+<div class="layer-legend">
+<div class="layer-row"><span class="dot basic"></span><span><b>Podstawa (E8):</b> położenie w układzie; wartościowość I i II; reakcje z wodą i tlenem; wodorotlenki; zastosowania</span></div>
+<div class="layer-row"><span class="dot lo"></span><span><b>Rozszerzenie:</b> dlaczego reaktywność rośnie w dół (promień, energia jonizacji); dlaczego beryl nie reaguje z wodą; nadtlenki</span></div>
+<div class="layer-row"><span class="dot olim"></span><span><b>Dla ambitnych:</b> wodorotlenek berylu jako amfoteryczny; porównanie szybkości reakcji i uzasadnienie kinetyką</span></div>
+<div class="layer-row"><span class="dot uni"></span><span><b>Zaawansowane:</b> granica modelu „metal oddaje elektrony”: wiązanie metaliczne i energia jonizacji</span></div>
+</div>
+<div id="rdzen" class="core-path">
+<div class="cp-title">Rdzeń lekcji — najpierw to</div>
+<ol>
+<li><strong><a href="#polozenie">§1</a></strong> — gdzie są litowce i berylowce i co je łączy.</li>
+<li><strong><a href="#reakcje">§3</a></strong> — reakcje z wodą i tlenem. To sedno lekcji.</li>
+<li><strong><a href="#wodorotlenki">§4</a></strong> — wodorotlenki i ich moc.</li>
+<li><strong><a href="#cwiczenia">§8</a></strong> — ćwiczenia z kluczem.</li>
+</ol>
+</div>
+<div class="card card-core">
+<span class="card-label">Pytanie przewodnie</span>
+<p>Dlaczego sód trzymamy w nafcie, a magnezową taśmę można po rozgrzaniu spalić w powietrzu? Odpowiedź znajdziesz w §15.</p>
+</div>
+<section id="sciaga">
+<div class="part-heading"><span class="part-num">0</span> Ściąga — cała lekcja na jednej stronie</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Grupa</th><th>Metale</th><th>Wartościowość</th><th>Reakcja z wodą (zimna)</th><th>Wodorotlenek</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Li, Na, K</td><td>I</td><td>gwałtowna (Li wolniej, K najgwałtowniej); Na i K ostrzeżenia</td><td>LiOH, NaOH, KOH — zasady mocne</td></tr>
+<tr><td>2</td><td>Be, Mg, Ca, Sr, Ba, Ra</td><td>II</td><td>Be — praktycznie nie; Mg — bardzo wolno; Ca — wyraźnie; Sr, Ba — energicznie (Ra: tylko model)</td><td>Ca(OH)₂, Ba(OH)₂ — związki o właściwościach zasadowych; Be(OH)₂ — amfoteryczny</td></tr>
+</tbody></table></div>
+<p><strong>Reguły:</strong> elektrony walencyjne = numer grupy (grupa 1 → 1, grupa 2 → 2). Reaktywność w grupie rośnie w dół. Płomienie: Li karmazynowy, Na żółty, K fioletowy, Ca ceglastoczerwony, Ba zielony.</p>
+</section>
+<section id="polozenie">
+<div class="part-heading"><span class="part-num">1</span> Wykład — położenie w układzie i dlaczego te dwie grupy</div>
+<figure class="lk-fig" data-klocek="uklad-okresowy" data-opt="{&quot;wybrany&quot;: &quot;Na&quot;}"><div class="lk-fig-body"></div><figcaption>Układ okresowy: kafelki litowców i berylowców</figcaption></figure>
+<!-- OPIS: Tablica okresowa z dwoma rzędami kafelków: grupa 1 (Li, Na, K, Rb, Cs, Fr) i grupa 2 (Be, Mg, Ca, Sr, Ba, Ra). Po kliknięciu kafelka pod spodem pojawia się opis pierwiastka i przyciski prób w probówce i w płomieniu. Ra i Fr mają znak promieniowania. Wniosek: położenie w grupie mówi, ile elektronów walencyjnych ma atom i jak reaguje. -->
+<div class="card card-understand">
+<span class="card-label">Wykład od zera</span>
+<p>Układ okresowy porządkuje pierwiastki według liczby atomowej. Pierwiastki z tą samą liczbą elektronów walencyjnych trafiają do tej samej kolumny (grupy). W pierwszej kolumnie (grupa 1) stoją pierwiastki z jednym elektronem na zewnętrznej powłoce. W drugiej (grupa 2) — z dwoma.</p>
+<p>Elektrony walencyjne są najdalej od jądra i najsłabiej w nim trzymane. Dlatego atom łatwo je oddaje, zamieniając się w jon dodatni: Na → Na⁺ + e⁻. Stąd nazwa bloku s — ostatni elektron jest na podpowłoce s.</p>
+<p>Metale tych grup mają wspólne cechy: błyszczą świeżym przekrojem, który szybko matowieje w powietrzu. Litowce są miękkie (lit, sód i potas kroi się nożem), a lit, sód i potas pływają na wodzie, choć reagują z nią. Berylowce są twardsze i gęstsze — wszystkie cięższe od wody.</p>
+<p><strong>Gdzie analogia się psuje:</strong> „oddawanie elektronu” to model. Elektrony w metalu nie są przypisane do pojedynczego atomu — tworzą wspólną chmurę (wiązanie metaliczne, warstwa uni).</p>
+</div>
+<h3 id="bhp">1.1 Mini-wykład: po co chemik trzyma sód w nafcie</h3>
+<div class="card card-understand">
+<span class="card-label">W skrócie: BHP przy metalach s</span>
+<p>Sód i potas reagują z wilgocią z powietrza i z wodą. Przechowuje się je pod warstwą nafty, która odcina dostęp powietrza i wody. Nie dotykamy ich ręką i nie wrzucamy do wody bez nadzoru. Reakcje litowców z wodą to zawsze pokaz nauczyciela, nie zadanie ucznia.</p>
+</div>
+</section>
+<section id="wlasciwosci">
+<div class="part-heading"><span class="part-num">2</span> Właściwości fizyczne i trend w grupie</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Cecha</th><th>Grupa 1 (litowce)</th><th>Grupa 2 (berylowce)</th></tr></thead>
+<tbody>
+<tr><td>Elektrony na ostatniej powłoce</td><td>1</td><td>2</td></tr>
+<tr><td>Konfiguracja walencyjna</td><td>ns¹</td><td>ns²</td></tr>
+<tr><td>Twardość</td><td>miękkie (Li, Na, K)</td><td>twardsze (Mg, Ca)</td></tr>
+<tr><td>Gęstość</td><td>małe (Li, Na, K &lt; 1 g/cm³)</td><td>większe (Mg, Ca ok. 1,5–1,8 g/cm³ — orientacyjnie)</td></tr>
+<tr><td>Reaktywność</td><td>rośnie w dół</td><td>rośnie w dół (Be słabo)</td></tr>
+</tbody></table></div>
+<div class="card card-understand">
+<span class="card-label">Przykład prowadzony: jaki metal jest najbardziej reaktywny spośród Li, Na i K?</span>
+<p><strong>Dane:</strong> Li, Na, K — wszystkie w grupie 1.
+<strong>Krok 1:</strong> w grupie 1 atomy od góry w dół mają coraz więcej powłok (Li 2, Na 3, K 4).
+<strong>Krok 2:</strong> im więcej powłok, tym dalej elektron walencyjny od jądra i tym słabiej jest przyciągany.
+<strong>Krok 3:</strong> słabiej przyciągany elektron jest łatwiej oddawany.
+<strong>Wniosek:</strong> potas jest najbardziej reaktywny z tej trójki.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">Sprawdź się</span>
+<p>Który metal z grupy 2 ma najbardziej „miękki” elektron walencyjny: Mg czy Ba? (Odpowiedź: Ba — ma więcej powłok, więc elektrony są słabiej trzymane.)</p>
+</div>
+</section>
+<section id="reakcje">
+<div class="part-heading"><span class="part-num">3</span> Reakcje z wodą i tlenem</div>
+<figure class="lk-fig" data-klocek="probowki" data-opt="{&quot;metale&quot;: &quot;Mg,Ca,Na&quot;, &quot;wskaznik&quot;: &quot;1&quot;}"><div class="lk-fig-body"></div><figcaption>Trzy probówki z wodą: magnez, wapń i sód. Trzy różne efekty.</figcaption></figure>
+<!-- OPIS: Trzy probówki stoją obok siebie. Magnez: prawie nic nie widać, po fenoloftaleinie tylko blade różowienie. Wapń: stały strumień pęcherzyków H₂, roztwór mętnieje. Sód: szybka reakcja, pokazana jako animacja, nie jako doświadczenie uczniowskie. Pod probówkami wybierzesz dowolny metal litowców i berylowców albo tlenek wapnia CaO. Wniosek: reakcja zależy od metalu; barwa fenoloftaleiny pokazuje powstanie zasady. -->
+<div class="card card-warning">
+<span class="card-label">Status: wizualizacja komputerowa — sód z wodą</span>
+<p>Reakcję sodu z wodą przedstawiono komputerowo, a nie jako instrukcję doświadczenia. Wodór może się zapalić, a roztwór NaOH jest żrący.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">Strategia → rozwiązanie → sprawdzenie: bilans reakcji sodu z wodą</span>
+<p><strong>Strategia:</strong> zapisuję substraty i produkty. Produkty to wodorotlenek i wodór, bo metal wypiera wodór z wody.
+<strong>Rozwiązanie:</strong> Na + H₂O → NaOH + H₂. Bilans: sód 1 = 1, ale wodór po lewej 2, po prawej 2 + 1 = 3. Daję 2 przed Na, H₂O i NaOH: 2 Na + 2 H₂O → 2 NaOH + H₂.
+<strong>Sprawdzenie:</strong> Na 2 = 2; H: po lewej 2·2 = 4 (2 H₂O); po prawej 2·1 (NaOH) + 2 (H₂) = 4; O 2 = 2. ✔</p>
+</div>
+<p><strong>Zasada:</strong> aktywne metale grupy 1 oraz wybrane metale grupy 2 reagują z wodą, dając wodorotlenek i wodór. Szybkość zależy od metalu, temperatury, powierzchni metalu i warstwy tlenkowej. W grupie 1 reaktywność na ogół rośnie w dół; wynika to z większego promienia atomowego i mniejszej energii jonizacji:</p>
+<ul>
+<li><strong>Li</strong> — reaguje, ale wolniej niż Na.</li>
+<li><strong>Na</strong> — reaguje gwałtownie, wodór może się zapalić.</li>
+<li><strong>K</strong> — reaguje najgwałtowniej z trójki; ciepło topi go w trakcie.</li>
+<li><strong>Ca</strong> — reaguje wyraźnie już w temperaturze pokojowej: wydziela się H₂, a roztwór mętnieje od słabo rozpuszczalnego Ca(OH)₂.</li>
+<li><strong>Mg</strong> — z zimną wodą reaguje bardzo wolno; z gorącą wodą wyraźniej, a z parą wodną daje MgO i H₂: Mg + H₂O(g) → MgO + H₂.</li>
+<li><strong>Be</strong> — praktycznie nie reaguje z wodą: chroni go szczelna warstwa BeO, a także niska rozpuszczalność produktów. Patrz §9, karta „Dlaczego beryl jest wyjątkiem”.</li>
+</ul>
+<p><strong>Reakcje z tlenem.</strong> Litowce reagują z tlenem, ale główny produkt zależy od metalu i warunków: lit daje głównie <strong>Li₂O</strong> (4Li + O₂ → 2Li₂O), sód w nadmiarze tlenu daje <strong>Na₂O₂</strong> (2Na + O₂ → Na₂O₂); przy ograniczonym dostępie tlenu powstaje <strong>Na₂O</strong> (4Na + O₂ → 2Na₂O), a Na₂O w nadmiarze tlenu dalej tworzy nadtlenek (2Na₂O + O₂ → 2Na₂O₂). Potas i cięższe litowce mogą tworzyć ponadtlenki, np. <strong>KO₂</strong>. Bar i stront tworzą też nadtlenki: bar przy ogrzewaniu daje głównie <strong>BaO₂</strong> (Ba + O₂ → BaO₂), często z domieszką BaO. Be, Mg i Ca na ogół nie tworzą nadtlenków; spalają się do tlenków, np. 2Mg + O₂ → 2MgO; magnez — zob. pułapkę w §3.</p>
+<div class="card card-warning">
+<span class="card-label">Status: opis reakcji bez wykonania — potas z wodą</span>
+<p>Potas reaguje z wodą bardzo gwałtownie: może się stopić, zapalić, a rozprysk żrącego KOH jest groźny. Pokazujemy go w animacji lub na filmie; nie jest to doświadczenie do wykonania.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Pułapka: „metal + woda = zawsze gwałtownie”</span>
+<p>Nie. Tempo zależy od metalu i od warunków. Mg nie reaguje gwałtownie z zimną wodą, a Be prawie wcale. Zawsze określ, o który metal i o jaką wodę chodzi.</p>
+</div>
+</section>
+<section id="wodorotlenki">
+<div class="part-heading"><span class="part-num">4</span> Wodorotlenki i tlenki — zasadowy charakter</div>
+<ul>
+<li><strong>LiOH, NaOH, KOH</strong> — zasady mocne; dobrze rozpuszczalne w wodzie.</li>
+<li><strong>Ca(OH)₂</strong> — wapno gaszone: związek o właściwościach zasadowych, słabo rozpuszczalny w wodzie; stosowany w budownictwie.</li>
+<li><strong>Ba(OH)₂</strong> — silnie zasadowy, dobrze rozpuszczalny; sole baru są trujące.</li>
+<li><strong>Be(OH)₂</strong> — amfoteryczny: reaguje z kwasem jak zasada i z zasadą jak kwas.</li>
+<li><strong>Tlenki</strong> litowców są zasadowe: Na₂O + H₂O → 2 NaOH. Tlenki berylowców są zasadowe z wyjątkiem amfoterycznego BeO; np. CaO + H₂O → Ca(OH)₂.</li>
+</ul>
+<div class="card card-understand">
+<span class="card-label">Mini-wykład: dlaczego zasadowe, a nie kwaśne</span>
+<p>Tlenki litowców, CaO, SrO i BaO reagują z wodą, dając wodorotlenki i jony OH⁻. MgO reaguje z wodą prawie wcale, a BeO wcale; zasadowość MgO widać w reakcji z kwasem: MgO + 2 HCl → MgCl₂ + H₂O. Roztwór z jonami OH⁻ ma odczyn zasadowy. Tlenki niemetali robią to odwrotnie (np. CO₂ + H₂O → H₂CO₃, odczyn kwaśny). To jest szkielet, na którym opiera się cała klasyfikacja tlenków (lekcja N02).</p>
+</div>
+</section>
+<section id="plomienie">
+<div class="part-heading"><span class="part-num">5</span> Płomienie i spalanie — trzy sekwencje palników</div>
+<p>Palniki pokazują <strong>cztery sekwencje po trzy palniki</strong>; przełącznik nad palnikami wybiera jedną. Pod każdym palnikiem wybierzesz dowolny pierwiastek litowców lub berylowców. Naraz widać zawsze trzy palniki. Każda sekwencja odpowiada na inne pytanie:</p>
+<ul>
+<li><strong>Próba płomieniowa</strong> — jaka barwa oznacza jaki metal?</li>
+<li><strong>Spalanie i utlenianie</strong> — jaki związek powstaje z tlenem?</li>
+<li><strong>Nadtlenki</strong> — które metale tworzą nadtlenki zamiast zwykłych tlenków (Na, Sr, Ba)?</li>
+<li><strong>Model teoretyczny</strong> — co z pierwiastkami, których nie wykonuje się w szkole?</li>
+</ul>
+<figure class="lk-fig" data-klocek="palniki" data-opt="{&quot;seria&quot;: &quot;plomien&quot;}"><div class="lk-fig-body"></div><figcaption>Palniki: cztery sekwencje do wyboru (po trzy palniki naraz)</figcaption></figure>
+<!-- OPIS: Trzy palniki stoją w jednym rzędzie, nad nimi przełącznik sekwencji. Sekwencja „Próba płomieniowa”: sód żółty, potas fioletowy, wapń ceglastoczerwony. „Spalanie i utlenianie”: lit, magnez i wapń, pod każdym podany produkt (Li₂O, MgO, CaO). „Nadtlenki”: sód, stront i bar, pod każdym podany produkt (Na₂O₂, SrO z domieszką SrO₂, BaO₂). „Model teoretyczny”: rubid, cez i rad. Wniosek: barwa płomienia wskazuje metal, a produkt spalania zależy od metalu i warunków. -->
+<div class="card card-warning">
+<span class="card-label">Status: wizualizacja komputerowa — próba płomieniowa</span>
+<p>Barwę pokazano komputerowo. Płomień sodu jest bardzo intensywny; w prawdziwej pracowni ślady sodu zagłuszają inne barwy. Próbę wykonuje się tylko pod nadzorem nauczyciela.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Status: wizualizacja komputerowa — bar</span>
+<p>Bar barwi płomień na zielono, ale jego sole są trujące. Próbę płomieniową baru pokazujemy tylko jako wizualizację; nie wykonuje się jej z solami baru w szkole.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Status: wizualizacja komputerowa — spalanie i utlenianie</span>
+<p>Spalanie litowców i magnezu jest gwałtowne, a magnez daje oślepiająco biały błysk. Tu zobaczysz produkt, a nie instrukcję. Nie patrz prosto w błysk. Spalanie magnezu nie jest próbą płomieniową — w tej sekwencji nie porównujemy barw.</p>
+<p><strong>Wapń:</strong> spala się do tlenku, 2Ca + O₂ → 2CaO. Sam CaO nie pali się, bo jest już produktem utlenienia metalu.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Status: wizualizacja komputerowa — spalanie baru (nadtlenek)</span>
+<p>Bar tworzy przy ogrzewaniu nadtlenek BaO₂ (Ba + O₂ → BaO₂), często z domieszką BaO. Sole baru są trujące, a metal reaguje gwałtownie z tlenem i wilgocią. W szkole nie wykonuje się tej reakcji; pokazujemy ją tylko jako wizualizację.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Status: model teoretyczny — rad (UWAGA: rzeczywista reakcja niebezpieczna)</span>
+<p><strong>Model teoretyczny.</strong> Rad jest promieniotwórczy i nie jest używany w szkolnych doświadczeniach. Rubid i cez to reakcje niemożliwe do wykonania w szkole. Tu pokazujemy jedynie ich miejsce w grupie i przewidywane analogie. Znak promieniowania i zakaz przy radzie obowiązują także w wizualizacji.</p>
+<p><strong>Frans (Fr):</strong> brak wiarygodnych danych o barwie płomienia i o reakcjach. Przewidywana reakcja z wodą 2Fr + 2H₂O → 2FrOH + H₂ jest wyłącznie teoretyczna; nie pokazujemy jej animacją, a tlenek franu nie jest pewnie znany.</p>
+</div>
+</section>
+<section id="zastosowania">
+<div class="part-heading"><span class="part-num">6</span> Zastosowania</div>
+<ul>
+<li><strong>Li</strong> — baterie litowe, stopy lekkie.</li>
+<li><strong>Na</strong> — sól kuchenna NaCl; sód w lampach wysokoprężnych (żółte światło).</li>
+<li><strong>K</strong> — nawozy potasowe (zwykle chlorek KCl lub azotan(V)).</li>
+<li><strong>Mg</strong> — stopy lekkie, np. w przemyśle lotniczym; składnik chlorofilu.</li>
+<li><strong>Ca</strong> — wapno w budownictwie i rolnictwie; kości i zęby zawierają fosforany wapnia.</li>
+<li><strong>Ba</strong> — siarczan(VI) baru BaSO₄ w diagnostyce (praktycznie nierozpuszczalny; silnie pochłania promienie X, dlatego widać go na zdjęciach).</li>
+</ul>
+</section>
+<section id="klinika">
+<div class="part-heading"><span class="part-num">7</span> Klinika błędów</div>
+<table class="klinika-table"><thead><tr><th>Błąd</th><th>Poprawnie</th><th>Dlaczego?</th></tr></thead><tbody><tr class="error-row"><td class="col-blad" data-label="Błąd">„Wszystkie metale grupy 2 reagują z wodą tak samo”</td><td class="col-ok" data-label="Poprawa">Tempo zależy od metalu; Be prawie nie reaguje</td><td data-label="Dlaczego">Różna reaktywność w grupie i wyjątek berylu</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Sód w nafcie, bo nafta jest zapalna”</td><td class="col-ok" data-label="Poprawa">Nafta odcina powietrze i wilgoć</td><td data-label="Dlaczego">Metal chroni się przed reakcją, a nie przed płomieniem</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Tlenek metalu daje kwas”</td><td class="col-ok" data-label="Poprawa">Tlenek metalu w wodzie daje zasadę (OH⁻)</td><td data-label="Dlaczego">Kwasy dają tlenki niemetali</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Litowce mają dwa elektrony walencyjne”</td><td class="col-ok" data-label="Poprawa">Litowce: jeden (grupa 1); berylowce: dwa</td><td data-label="Dlaczego">Numer grupy = liczba elektronów walencyjnych w grupach 1–2</td></tr></tbody></table>
+</section>
+<section id="cwiczenia">
+<div class="part-heading"><span class="part-num">8</span> Ćwiczenia z kluczem</div>
+<p><strong>Poziom A — podstawowy</strong></p>
+<div class="card card-exam">
+<span class="card-label">A1 (2 pkt) — rozpoznanie</span>
+<p>Podaj liczbę elektronów walencyjnych i wartościowość: a) Na, b) Mg.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ul>
+<li>Podpowiedź 1: w grupie 1 jest jeden elektron walencyjny.</li>
+<li>Podpowiedź 2: w grupie 2 są dwa.</li>
+<li>Rozwiązanie: a) Na — 1 elektron, wartościowość I; b) Mg — 2 elektrony, wartościowość II. (1 pkt za a, 1 pkt za b.)</li>
+</ul>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">A2 (2 pkt) — zastosowanie</span>
+<p>Napisz wzory wodorotlenków: litu, wapnia, baru.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>LiOH; Ca(OH)₂; Ba(OH)₂. (1 pkt za dwa poprawne, 1 pkt za trzeci.)</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">A3 (2 pkt) — rozpoznanie</span>
+<p>Próbka barwi płomień na żółto. Jaki metal jest obecny? Uzasadnij.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>Sód (Na) — żółty płomień to charakterystyczna cecha sodu. (1 pkt za sód, 1 pkt za uzasadnienie płomieniem.)</p>
+</details>
+</div>
+<p><strong>Poziom B — egzaminacyjny</strong></p>
+<div class="card card-exam">
+<span class="card-label">B1 (3 pkt) — transformacja</span>
+<p>Zbilansuj: K + H₂O → KOH + H₂.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ul>
+<li>Podpowiedź 1: po prawej są dwa atomy H w H₂ i jeden w KOH.</li>
+<li>Podpowiedź 2: potas i wodór: po prawej łącznie 3 H, po lewej 2 H w wodzie.</li>
+<li>Rozwiązanie: 2 K + 2 H₂O → 2 KOH + H₂. (1 pkt za współczynnik 2 przed K, 1 pkt za 2 przed H₂O i KOH, 1 pkt za sprawdzenie.)</li>
+</ul>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">B2 (3 pkt) — uzasadnienie</span>
+<p>Wyjaśnij, dlaczego potas reaguje z wodą gwałtowniej niż lit.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ul>
+<li>Podpowiedź 1: co się dzieje z promieniem atomu i z elektronem walencyjnym w dół grupy?</li>
+<li>Podpowiedź 2: który elektron jest łatwiej oddać?</li>
+<li>Rozwiązanie: K ma więcej powłok niż Li, więc elektron walencyjny jest dalej od jądra i słabiej przyciągany. Łatwiej go oddaje, więc reakcja z wodą zachodzi gwałtowniej. (1 pkt za promień, 1 pkt za przyciąganie, 1 pkt za wniosek.)</li>
+</ul>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">B3 (3 pkt) — analiza (kontekst: lampy i bezpieczeństwo)</span>
+<p>Lampa sodowa świeci dzięki parom sodu zamkniętym w szczelnej rurze. Podaj dwa powody, dla których sód nie może mieć kontaktu z powietrzem i wodą, i zaznacz, który wynika z reaktywności.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ul>
+<li>Podpowiedź 1: co się dzieje z sodem w kontakcie z wilgocią?</li>
+<li>Podpowiedź 2: jaki jest stan skupienia sodu w normalnej temperaturze?</li>
+<li>Rozwiązanie: metaliczny sód reaguje z wodą i wilgocią z powietrza (reaktywność), a jest też trudny w obsłudze i wymaga zabezpieczenia. Lampa sodowa wykorzystuje pary sodu zamknięte w szczelnej rurze wyładowczej, dlatego metal nie ma kontaktu z wodą ani wilgocią. (1 pkt za reaktywność, 1 pkt za obsługę, 1 pkt za wskazanie, że reaktywność jest powodem.)</li>
+</ul>
+</details>
+</div>
+<p><strong>Poziom C — ambitny</strong></p>
+<div class="card card-exam">
+<span class="card-label">C1 (4 pkt) — kontrprzykład <span class="level-badge level-contest">lo</span></span>
+<p>Reakcja berylu z wodą praktycznie nie zachodzi, mimo że beryl jest metalem grupy 2. Wyjaśnij, dlaczego, i podaj, co dzieje się z magnezem i wapniem.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ul>
+<li>Podpowiedź 1: co pokrywa powierzchnię berylu w powietrzu?</li>
+<li>Podpowiedź 2: czy warstwa tlenku przepuszcza wodę do metalu?</li>
+<li>Rozwiązanie: beryl pokrywa się szczelną warstwą tlenku BeO, która chroni metal przed wodą. Mg reaguje powoli, lepiej z gorącą wodą; Ca reaguje umiarkowanie w temperaturze pokojowej. Reaktywność nie zawsze rośnie tak samo; sama pozycja w grupie nie wystarcza do przewidzenia tempa. (1 pkt za warstwę tlenku, 1 pkt za mechanizm, 1 pkt za Mg i Ca, 1 pkt za wniosek o ograniczeniu modelu.)</li>
+</ul>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">C2 (4 pkt) — analiza <span class="level-badge level-contest">olim</span></span>
+<p>Wodorotlenek berylu Be(OH)₂ reaguje zarówno z kwasem, jak i z zasadą. Wyjaśnij, dlaczego nie jest to zasada w tym samym sensie co Ca(OH)₂, i zapisz jedno równanie z kwasem.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ul>
+<li>Podpowiedź 1: co oznacza zasada, a co kwas w ujęciu reakcji z H⁺ i OH⁻?</li>
+<li>Podpowiedź 2: Be(OH)₂ + 2 HCl → BeCl₂ + 2 H₂O.</li>
+<li>Rozwiązanie: Be(OH)₂ jest amfoteryczny: z kwasem zachowuje się jak zasada, z zasadą jak kwas (z zasadą: Be(OH)₂ + 2OH⁻ → [Be(OH)₄]²⁻, jon tetrahydroksoberylanowy). Ca(OH)₂ ma właściwości zasadowe i nie jest amfoteryczny. Równanie: Be(OH)₂ + 2 HCl → BeCl₂ + 2 H₂O. (1 pkt za pojęcie amfoteryczności, 1 pkt za porównanie z Ca(OH)₂, 2 pkt za równanie.)</li>
+</ul>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">C3 (4 pkt) — problem otwarty <span class="level-badge level-contest">olim</span></span>
+<p>Mamy trzy białe proszki: NaCl, CaO i MgO. Zaproponuj prosty test, który je odróżni, opisz obserwacje i uzasadnij na podstawie reaktywności z wodą.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ul>
+<li>Podpowiedź 1: który z nich reaguje z wodą i daje zasadę?</li>
+<li>Podpowiedź 2: wprowadź wodę i zbadaj odczyn (np. uniwersalny wskaźnik).</li>
+<li>Rozwiązanie: NaCl rozpuszcza się w wodzie bez zmiany odczynu; CaO reaguje z wodą z wydzieleniem ciepła i daje odczyn zasadowy; MgO reaguje z wodą bardzo słabo. (1 pkt za wodę jako odczynnik, 1 pkt za obserwacje dla NaCl, 1 pkt za CaO, 1 pkt za MgO i wniosek.) Problem otwarty: co zmieniłby test, gdyby MgO był zanieczyszczony Mg(OH)₂? Napisz w 2–3 zdaniach.</li>
+</ul>
+</details>
+</div>
+</section>
+<section id="warstwy-karty">
+<div class="part-heading"><span class="part-num">9</span> Sekcje warstwowe (ponad podstawę)</div>
+<div class="card card-lo">
+<span class="card-label"><span class="level-badge level-contest">lo</span> Pomost do LO — dlaczego reaktywność rośnie w dół</span>
+<p>Im większy atom, tym więcej powłok elektronowych ekranuje ładunek jądra. Elektron walencyjny jest dalej od jądra i słabiej przyciągany, więc energia jonizacji maleje. Energia jonizacji to energia potrzebna do oderwania elektronu od atomu w fazie gazowej. Mniejsza energia jonizacji = łatwiejsze oddawanie elektronu = większa reaktywność. Ten mechanizm wróci w klasie 1 LO przy opisie właściwości okresowych.</p>
+</div>
+<div class="card card-lo">
+<span class="card-label"><span class="level-badge level-contest">lo</span> Dlaczego beryl jest wyjątkiem</span>
+<p>Jon Be²⁺ jest bardzo mały i ma ładunek 2+, więc ma dużą gęstość ładunku i silnie polaryzuje sąsiednie jony; wiązania berylu są w dużej mierze kowalencyjne. Jego tlenek i wodorotlenek są słabo rozpuszczalne, a na powierzchni metalu tworzy się szczelna warstwa BeO. To ogranicza reakcję z wodą. Stąd wniosek: pozycja w grupie to dobre przybliżenie, ale nie prawo bez wyjątków.</p>
+</div>
+<div class="card card-olim">
+<span class="card-label"><span class="level-badge level-contest">olim</span> Dla ambitnych — amfoteryczność berylu</span>
+<p>Beryl i glin (wykład w J05) tworzą wodorotlenki, które reagują zarówno z kwasami, jak i z zasadami. Dla berylu zapis z zasadą to Be(OH)₂ + 2 OH⁻ → [Be(OH)₄]²⁻. Dla klasy 8 wystarczy wiedzieć, że Be(OH)₂ jest amfoteryczny; mechanizm wróci w równowagach kwasowo-zasadowych (J06).</p>
+</div>
+<div class="card card-uni">
+<span class="card-label"><span class="level-badge level-contest">uni</span> Zaawansowane — granica modelu „metal oddaje elektrony”</span>
+<p>W metalu elektrony walencyjne tworzą wspólną „chmurę” wokół dodatnich rdzeni atomowych. To wiązanie metaliczne. Model „Na → Na⁺ + e⁻” jest użyteczny do przewidywania jonów i wzorów, ale nie opisuje, jak elektrony przemieszczają się w krysztale. Pytanie „gdzie model się kończy?” wraca w każdym bloku.</p>
+</div>
+</section>
+<section id="fiszki">
+<div class="part-heading"><span class="part-num">10</span> Fiszki</div>
+<div id="flashcards" class="flashcard-grid"><button class="flashcard" type="button"><span class="front">Grupa 1</span><span class="back">litowce: Li, Na, K, Rb, Cs, Fr</span><span class="card-tag tag-basic">grupy</span></button><button class="flashcard" type="button"><span class="front">Grupa 2</span><span class="back">berylowce: Be, Mg, Ca, Sr, Ba, Ra</span><span class="card-tag tag-basic">grupy</span></button><button class="flashcard" type="button"><span class="front">Wartościowość litowców</span><span class="back">I</span><span class="card-tag tag-basic">wartosciowosc</span></button><button class="flashcard" type="button"><span class="front">Wartościowość berylowców</span><span class="back">II</span><span class="card-tag tag-basic">wartosciowosc</span></button><button class="flashcard" type="button"><span class="front">Reakcja sodu z wodą</span><span class="back">2 Na + 2 H₂O → 2 NaOH + H₂</span><span class="card-tag tag-basic">reakcje</span></button><button class="flashcard" type="button"><span class="front">Płomień sodu</span><span class="back">żółty</span><span class="card-tag tag-basic">plomienie</span></button><button class="flashcard" type="button"><span class="front">Płomień potasu</span><span class="back">fioletowy (przez filtr kobaltowy)</span><span class="card-tag tag-basic">plomienie</span></button><button class="flashcard" type="button"><span class="front">Płomień wapnia</span><span class="back">ceglastoczerwony</span><span class="card-tag tag-basic">plomienie</span></button><button class="flashcard" type="button"><span class="front">Wodorotlenek wapnia</span><span class="back">Ca(OH)₂ — zasada (wapno gaszone)</span><span class="card-tag tag-basic">wodorotlenki</span></button><button class="flashcard" type="button"><span class="front">Tlenek litowca w wodzie</span><span class="back">daje zasadę</span><span class="card-tag tag-basic">wodorotlenki</span></button><button class="flashcard" type="button"><span class="front">Reaktywność w grupie 1</span><span class="back">rośnie w dół</span><span class="card-tag tag-basic">trend</span></button><button class="flashcard" type="button"><span class="front">Be z wodą</span><span class="back">praktycznie nie reaguje (warstwa tlenku)</span><span class="card-tag tag-lo">beryl</span></button><button class="flashcard" type="button"><span class="front">Energia jonizacji w dół grupy</span><span class="back">maleje</span><span class="card-tag tag-lo">trend</span></button><button class="flashcard" type="button"><span class="front">Be(OH)₂</span><span class="back">amfoteryczny</span><span class="card-tag tag-olim">amfoteryczność</span></button><button class="flashcard" type="button"><span class="front">Wiązanie metaliczne</span><span class="back">wspólna chmura elektronów walencyjnych</span><span class="card-tag tag-uni">model</span></button></div>
+</section>
+<section id="slownik">
+<div class="part-heading"><span class="part-num">11</span> Słownik</div>
+<dl><div class="def-item"><dt>Litowce</dt><dd>pierwiastki grupy 1 (oprócz wodoru)</dd></div><div class="def-item"><dt>Berylowce</dt><dd>pierwiastki grupy 2</dd></div><div class="def-item"><dt>Blok s</dt><dd>pierwiastki, których ostatni elektron jest na podpowłoce s</dd></div><div class="def-item"><dt>Elektrony walencyjne</dt><dd>elektrony na zewnętrznej powłoce atomu</dd></div><div class="def-item"><dt>Wodorotlenek</dt><dd>związek metalu z grupą wodorotlenową –OH, wzór ogólny M(OH)ₙ</dd></div><div class="def-item"><dt>Zasada</dt><dd>wodorotlenek, który w wodzie dysocjuje na kation metalu i jony OH⁻ (wg Arrheniusa); rozpuszczalność to osobna cecha</dd></div><div class="def-item"><dt>Nafta</dt><dd>ciecz używana do przechowywania metali reaktywnych, odcina dostęp powietrza</dd></div><div class="def-item"><dt>Nadtlenek</dt><dd>związek zawierający jon O₂²⁻, np. Na₂O₂</dd></div><div class="def-item"><dt>Ponadtlenek</dt><dd>związek zawierający jon O₂⁻, np. KO₂</dd></div><div class="def-item"><dt>Amfoteryczność</dt><dd>zdolność związku do reagowania zarówno z kwasami, jak i z zasadami</dd></div><div class="def-item"><dt>Energia jonizacji</dt><dd>energia potrzebna do oderwania elektronu od atomu w fazie gazowej (lo)</dd></div></dl>
+</section>
+<section id="test">
+<div class="part-heading"><span class="part-num">12</span> Test końcowy</div>
+<div class="che-quiz" id="quizWrap"><div class="quiz-q" data-ok="1" data-fb="Mg leży w grupie 2, więc ma dwa elektrony walencyjne."><h5>1. Ile elektronów walencyjnych ma magnez?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">1</button><button type="button" class="quiz-opt" data-a="1">2</button><button type="button" class="quiz-opt" data-a="2">8</button><button type="button" class="quiz-opt" data-a="3">12</button></div></div><div class="quiz-q" data-ok="2" data-fb="Reaktywność rośnie w dół grupy 1; potas jest najbardziej reaktywny spośród Li, Na i K."><h5>2. Który z metali Li, Na, K reaguje z wodą najgwałtowniej?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Li</button><button type="button" class="quiz-opt" data-a="1">Na</button><button type="button" class="quiz-opt" data-a="2">K</button><button type="button" class="quiz-opt" data-a="3">Mg</button></div></div><div class="quiz-q" data-ok="0" data-fb="Metal wypiera wodór z wody i tworzy wodorotlenek."><h5>3. Produkty reakcji sodu z wodą to:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">NaOH i H₂</button><button type="button" class="quiz-opt" data-a="1">NaCl i O₂</button><button type="button" class="quiz-opt" data-a="2">Na₂O i H₂O</button><button type="button" class="quiz-opt" data-a="3">NaH i O₂</button></div></div><div class="quiz-q" data-ok="1" data-fb="Wapń — ceglastoczerwony; żółty to sód, zielony bar, fioletowy potas."><h5>4. Płomień wapnia ma barwę:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">żółtą</button><button type="button" class="quiz-opt" data-a="1">ceglastoczerwoną</button><button type="button" class="quiz-opt" data-a="2">zieloną</button><button type="button" class="quiz-opt" data-a="3">fioletową</button></div></div><div class="quiz-q" data-ok="1" data-fb="Beryl jest wyjątkiem w zachowaniu wobec wody."><h5>5. Które zdanie o berylu jest poprawne?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">reaguje z zimną wodą gwałtownie</button><button type="button" class="quiz-opt" data-a="1">praktycznie nie reaguje z wodą, bo pokrywa się warstwą tlenku</button><button type="button" class="quiz-opt" data-a="2">ma trzy elektrony walencyjne</button><button type="button" class="quiz-opt" data-a="3">tworzy wyłącznie kwasy</button></div></div><div class="quiz-q" data-ok="1" data-fb="Tlenki metali dają w wodzie jony OH⁻."><h5>6. Tlenek litowca reaguje z wodą, dając:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">kwas</button><button type="button" class="quiz-opt" data-a="1">zasadę</button><button type="button" class="quiz-opt" data-a="2">sól obojętną</button><button type="button" class="quiz-opt" data-a="3">tlen</button></div></div><div class="quiz-q" data-ok="1" data-fb="Wapń ma wartościowość II, więc potrzeba dwóch grup OH."><h5>7. Wzór wodorotlenku wapnia to:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">CaO</button><button type="button" class="quiz-opt" data-a="1">Ca(OH)₂</button><button type="button" class="quiz-opt" data-a="2">CaOH</button><button type="button" class="quiz-opt" data-a="3">Ca₂OH</button></div></div></div><div class="quiz-score" id="quizScore"></div>
+</section>
+<section id="ciekawostki">
+<div class="part-heading"><span class="part-num">13</span> Ciekawostki</div>
+<div class="card card-extra">
+<span class="card-label">Dlaczego fajerwerki mają kolory</span>
+<p>Kolory płomienia pochodzą od elektronów wzbudzanych w atomach metali. Gdy wracają do niższych poziomów, emitują światło o określonej długości fali. Stąd czerwień litu, żółć sodu, zieleń baru.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Lit w telefonie</span>
+<p>Baterie litowo-jonowe stosuje się w telefonach i samochodach elektrycznych. Lit jest najlżejszym metalem, więc ma dużą gęstość energii na masę (uproszczenie szkolne).</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Wapno: dlaczego zaprawa twardnieje</span>
+<p>Wapno gaszone Ca(OH)₂ reaguje z dwutlenkiem węgla z powietrza i z czasem twardnieje: Ca(OH)₂ + CO₂ → CaCO₃ + H₂O. Ten proces wykorzystuje się w zaprawie wapiennej (uproszczenie szkolne).</p>
+</div>
+</section>
+<section id="mnemotechniki">
+<div class="part-heading"><span class="part-num">14</span> Sposoby zapamiętania</div>
+<ul>
+<li><strong>Grupa = elektrony walencyjne</strong> — grupa 1 ma jeden, grupa 2 ma dwa.</li>
+<li><strong>W dół grupy 1 — coraz bardziej gwałtownie</strong> — „im dalej od jądra, tym łatwiej oddać”.</li>
+<li><strong>Płomienie: Na Żółty, Ba Zielony, K Fioletowy, Ca Ceglasty</strong> — skrót „NaŻółty, BaZielony, KFioletowy”.</li>
+</ul>
+</section>
+<section id="odpowiedz">
+<div class="part-heading"><span class="part-num">15</span> Odpowiedź na pytanie przewodnie</div>
+<p>Sód reaguje z wodą i wilgocią z powietrza, więc trzymamy go w nafcie, która odcina dostęp do tych substancji. Magnez nie reaguje tak gwałtownie z wilgocią, a jego wiór spala się w powietrzu jasnym płomieniem (magnezową taśmę trzeba najpierw rozgrzać). Reaktywność zależy od metalu, nie tylko od grupy.</p>
+</section>
+<section id="dalej">
+<div class="part-heading"><span class="part-num">16</span> Co dalej?</div>
+<p><strong>Wcześniej:</strong> F06 (układ okresowy), F11 (wiązania), N03 (wodorotlenki).
+<strong>Dalej:</strong> P02 — blok p; J05 — amfoteryczność (wróci przy berylu i glinie); J06 — równowagi kwasowo-zasadowe.
+<strong>Spirala:</strong> energia jonizacji i reaktywność wrócą w klasie 1 LO.</p>
+</section>
+<section id="checklista">
+<div class="part-heading"><span class="part-num">17</span> Checklista — umiem…</div>
+<checklista>
+<ul>
+<li>[ ] podaję grupę i liczbę elektronów walencyjnych litowców i berylowców</li>
+<li>[ ] piszę reakcję metalu grupy 1 lub 2 z wodą i bilansuję ją</li>
+<li>[ ] wyjaśniam, dlaczego reaktywność rośnie w dół grupy 1</li>
+<li>[ ] rozpoznaję płomienie Na, K, Ca, Ba</li>
+<li>[ ] <span class="level-badge level-contest">lo</span> wiem, dlaczego beryl jest wyjątkiem</li>
+<li>[ ] <span class="level-badge level-contest">olim</span> rozumiem amfoteryczność Be(OH)₂</li>
+<li>[ ] <span class="level-badge level-contest">uni</span> wiem, że model „metal oddaje elektrony” ma granice</li>
+<li>[ ] Zapisz własnymi słowami, dlaczego sód trzymamy w nafcie — to będzie twoja fiszka.</li>
+</ul>
+</checklista>
+</section>
+<section id="zrodla">
+<div class="part-heading">Pochodzenie i sprawdzenie treści</div>
+<ul>
+<li><strong>Skala i typ:</strong> skala M (4 kluczowe umiejętności w minimum; minimum ma 6 punktów), typ temat.</li>
+<li><strong>Źródło:</strong> szkielet kanonu <code>CHE.01.P01.blok_s</code> (wymaga: F06, F11, N03; zakres: litowce i berylowce, związki) — szkielet nie miał treści, lekcja napisana od zera.</li>
+<li><strong>Co zmieniło się względem szkieletu:</strong> szkielet miał 1 KB i sekcje „do uzupełnienia”. Teraz: wykład, mini-wykłady, przykłady prowadzone, klinika, 9 ćwiczeń z drabinką podpowiedzi, fiszki, słownik, test 7 pytań, ciekawostki, warstwy lo/olim/uni.</li>
+<li><strong>Benchmark (tryb B, z pamięci, do potwierdzenia w W1):</strong> Khan Academy — mikro-sprawdzenie („Sprawdź się”) i drabinka podpowiedzi w §8; OpenStax — Strategia / Rozwiązanie / Sprawdzenie w §3; PhET — predict–observe–explain nie użyte (trzy klocki-symulacje: probówki, palniki i tablica okresowa).</li>
+<li><strong>Do W1:</strong> gęstości Mg i Ca (orientacyjnie), rola BaSO₄ w diagnostyce, zapis Be(OH)₂ + OH⁻ → [Be(OH)₄]²⁻, tempo reakcji Mg i Ca z wodą, ciekawostki o bateriach i gipsie (uproszczenia).</li>
+<li><strong>Pominięcia:</strong> brak; wymagany zakres szkieletu pokryty.</li>
+</ul>
+</section>
+<footer class="footer"><p><strong>CHEMIA P01 v0.1</strong> · Blok s · 2026</p></footer>
+</main>
+<script>
+/* KLOCKI — lekkie komponenty wielokrotnego użytku dla lekcji (bez silnika).
+   Każdy klocek: KLOCKI.def(nazwa, {opis, dane, rysuj(canvas, stan, t)}) — rejestr,
+   KLOCKI.montuj(host, nazwa, opcje) — tworzy canvas, autostart gdy widoczny,
+   klik zatrzymuje/wznawia. Lekcja wymienia klocki w manifeście (klocki/manifest). */
+(function (g) {
+  var reg = {};
+  function def(nazwa, k) { reg[nazwa] = k; }
+  function montuj(host, nazwa, opc) {
+    var k = reg[nazwa];
+    if (!k) { host.textContent = 'Brak klocka: ' + nazwa; return null; }
+    opc = Object.assign({}, k.domyslne || {}, opc || {});
+    if (k.html) { host.innerHTML = ''; k.html(host, opc); return null; }
+    var c = document.createElement('canvas');
+    c.width = opc.szer || 480; c.height = opc.wys || 300;
+    c.style.width = '100%'; c.style.maxWidth = c.width + 'px'; c.style.height = 'auto';
+    c.setAttribute('role', 'img');
+    c.setAttribute('aria-label', (opc.opis || k.opis || nazwa));
+    host.innerHTML = ''; host.appendChild(c);
+    var stan = Object.assign({}, k.stan0 ? k.stan0(opc) : {}, {opc: opc});
+    var ctx = c.getContext('2d'), t0 = performance.now(), grane = true, id = null;
+    function klatka(now) {
+      try { k.rysuj(ctx, c.width, c.height, stan, (now - t0) / 1000, opc); } catch (e) { }
+      if (grane) id = requestAnimationFrame(klatka);
+    }
+    function start() { if (!grane) { grane = true; t0 = performance.now() - (stan._t || 0) * 1000; id = requestAnimationFrame(klatka); } }
+    function stop() { grane = false; if (id) cancelAnimationFrame(id); }
+    c.addEventListener('click', function () { grane ? stop() : start(); });
+    if ('IntersectionObserver' in g) {
+      var io = new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? start() : stop(); }); });
+      io.observe(c);
+    } else { start(); }
+    k.rysuj(ctx, c.width, c.height, stan, 0, opc);
+    return {stop: stop, start: start, stan: stan, canvas: c};
+  }
+  g.KLOCKI = {def: def, montuj: montuj, nazwy: function () { return Object.keys(reg); }};
+})(window);
+
+/* KLOCKI — wspólne narzędzia (kolejność: pierwsze w manifeście). Wyciągnięte z animacji P01. */
+/* ---------------------------- narzędzia ---------------------------- */
+var RM = !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
+function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+function sm(v) { v = clamp(v, 0, 1); return v * v * (3 - 2 * v); }
+function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+function hex2rgb(h) { var n = parseInt(h.slice(1), 16); return [n >> 16 & 255, n >> 8 & 255, n & 255]; }
+function rgba(h, a) { var c = hex2rgb(h); return 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ',' + a + ')'; }
+function mixHex(a, b, k) {
+  var A = hex2rgb(a), B = hex2rgb(b);
+  return '#' + [0, 1, 2].map(function (i) { return ('0' + Math.round(A[i] + (B[i] - A[i]) * k).toString(16)).slice(-2); }).join('');
+}
+function rr(x, a, b, w, h, r) {
+  x.beginPath(); x.moveTo(a + r, b); x.arcTo(a + w, b, a + w, b + h, r); x.arcTo(a + w, b + h, a, b + h, r);
+  x.arcTo(a, b + h, a, b, r); x.arcTo(a, b, a + w, b, r); x.closePath();
+}
+
+
+/* ---------------------------- pętla animacji ---------------------------- */
+var uchwyty = [], rafId = 0, ostatni = 0;
+function petla(now) {
+  var dt = Math.min(.05, (now - ostatni) / 1000); ostatni = now;
+  for (var i = 0; i < uchwyty.length; i++) uchwyty[i].krok(dt);
+  rafId = uchwyty.length ? requestAnimationFrame(petla) : 0;
+}
+function wlacz(h) { if (uchwyty.indexOf(h) < 0) uchwyty.push(h); if (!rafId) { ostatni = performance.now(); rafId = requestAnimationFrame(petla); } }
+function wylacz(h) { var i = uchwyty.indexOf(h); if (i >= 0) uchwyty.splice(i, 1); }
+function podepnij(canvas, h) {
+  h.rysuj();
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? wlacz(h) : wylacz(h); }); }, {threshold: .05}).observe(canvas);
+  } else wlacz(h);
+}
+
+
+function parsujListe(txt, dozwolone, domyslne) {
+  var l = String(txt || '').split(',').map(function (s) { return s.trim(); }).filter(function (s) { return dozwolone[s]; });
+  return (l.length ? l : domyslne).slice(0, 3);
+}
+
+
+/* Wybór pierwiastka: tylko symbole, a znacznik ▸ pokazuje, że lista się rozwija (bez pełnych nazw obok). */
+function wyborSymbole(grupy, start, onChange, etykieta) {
+  var box = el('details', 'wyb-sym'), sum = el('summary', null), cur = el('span', 'wyb-cur', start);
+  sum.appendChild(cur); sum.appendChild(el('span', 'wyb-tri', '▸')); box.appendChild(sum);
+  var lst = el('div', 'wyb-lista'), btns = [];
+  lst.setAttribute('role', 'listbox'); lst.setAttribute('aria-label', etykieta || 'Wybór pierwiastka');
+  var NAG = {1: 'Litowce', 2: 'Berylowce', 3: 'Tlenki berylowców'};
+  Object.keys(grupy).forEach(function (g) {
+    var w = el('div', 'wyb-grupa'); w.appendChild(el('span', 'wyb-g', NAG[g] || ('grupa ' + g)));
+    grupy[g].forEach(function (s) {
+      var b = el('button', 'wyb-sy', s); b.type = 'button'; b.setAttribute('data-sym', s);
+      b.setAttribute('title', cap(NAZ[SYM.indexOf(s)] || s));
+      b.addEventListener('click', function () { ustaw(s); box.open = false; onChange(s); });
+      w.appendChild(b); btns.push(b);
+    });
+    lst.appendChild(w);
+  });
+  box.appendChild(lst);
+  function ustaw(s) { cur.textContent = s; btns.forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-sym') === s ? 'true' : 'false'); }); }
+  ustaw(start);
+  return {el: box, ustaw: ustaw};
+}
+
+/* Dane pierwiastków I i II grupy do klocków (wspólne dla palników, probówek i tablicy).
+   Barwy płomieni i zachowanie w wodzie to wartości poglądowe — patrz klocki/EFEKTY.md (do sprawdzenia w W1). */
+/* ---------------------------- dane ---------------------------- */
+var SYM = 'H He Li Be B C N O F Ne Na Mg Al Si P S Cl Ar K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr Rb Sr Y Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I Xe Cs Ba La Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu Hf Ta W Re Os Ir Pt Au Hg Tl Pb Bi Po At Rn Fr Ra Ac Th Pa U Np Pu Am Cm Bk Cf Es Fm Md No Lr Rf Db Sg Bh Hs Mt Ds Rg Cn Nh Fl Mc Lv Ts Og'.split(' ');
+var NAZ = 'wodór,hel,lit,beryl,bor,węgiel,azot,tlen,fluor,neon,sód,magnez,glin,krzem,fosfor,siarka,chlor,argon,potas,wapń,skand,tytan,wanad,chrom,mangan,żelazo,kobalt,nikiel,miedź,cynk,gal,german,arsen,selen,brom,krypton,rubid,stront,itr,cyrkon,niob,molibden,technet,ruten,rod,pallad,srebro,kadm,ind,cyna,antymon,tellur,jod,ksenon,cez,bar,lantan,cer,prazeodym,neodym,promet,samar,europ,gadolin,terb,dysproz,holm,erb,tul,iterb,lutet,hafn,tantal,wolfram,ren,osm,iryd,platyna,złoto,rtęć,tal,ołów,bizmut,polon,astat,radon,frans,rad,aktyn,tor,protaktyn,uran,neptun,pluton,ameryk,kiur,berkel,kaliforn,einstein,ferm,mendelew,nobel,lorens,rutherford,dubn,seaborg,bohr,has,meitner,darmstadt,roentgen,kopernik,nihon,flerow,moskow,liwermor,tennes,oganeson'.split(',');
+var G1 = ['Li', 'Na', 'K', 'Rb', 'Cs', 'Fr'], G2 = ['Be', 'Mg', 'Ca', 'Sr', 'Ba', 'Ra'];
+function grupaEl(s) { return G1.indexOf(s) >= 0 ? 1 : G2.indexOf(s) >= 0 ? 2 : 0; }
+
+function poz(z) {
+  if (z === 1) return {r: 1, c: 1};
+  if (z === 2) return {r: 1, c: 18};
+  if (z <= 4) return {r: 2, c: z - 2};
+  if (z <= 10) return {r: 2, c: z + 8};
+  if (z <= 12) return {r: 3, c: z - 10};
+  if (z <= 18) return {r: 3, c: z};
+  if (z <= 36) return {r: 4, c: z - 18};
+  if (z <= 54) return {r: 5, c: z - 36};
+  if (z <= 56) return {r: 6, c: z - 54};
+  if (z <= 71) return {r: 6, f: 1, c: z - 57 + 3};
+  if (z <= 86) return {r: 6, c: z - 68};
+  if (z <= 88) return {r: 7, c: z - 86};
+  if (z <= 103) return {r: 7, f: 2, c: z - 89 + 3};
+  return {r: 7, c: z - 100};
+}
+
+/* opisy i dane liczbowe litowców i berylowców (rho — g/cm³, mp — °C, re — reaktywność wobec zimnej wody 0–6, skala poglądowa) */
+var DANE = {
+  H:  {opis: 'Leży w grupie 1, ale nie jest litowcem: to niemetal, w warunkach normalnych gaz (H₂).'},
+  He: {opis: 'Ma konfigurację 1s², lecz zalicza się do gazów szlachetnych (grupa 18), a nie do berylowców.'},
+  Li: {kon: '[He] 2s¹', rho: '0,53 g/cm³', rhoN: .53, mp: '181 °C', re: 2,
+       opis: 'Najlżejszy ze wszystkich metali. Jest w akumulatorach litowo-jonowych (telefony, samochody elektryczne). Barwi płomień na karminowo.'},
+  Na: {kon: '[Ne] 3s¹', rho: '0,97 g/cm³', rhoN: .97, mp: '98 °C', re: 3.5,
+       opis: 'Tak miękki, że kroi się go nożem; świeży przekrój szybko matowieje, dlatego przechowuje się go pod olejem lub w nafcie. Wchodzi w skład soli kuchennej NaCl, płomień barwi na żółto.'},
+  K:  {kon: '[Ar] 4s¹', rho: '0,86 g/cm³', rhoN: .86, mp: '64 °C', re: 5,
+       opis: 'Reaguje z wodą gwałtownie, a wodór zapala się fioletowym płomieniem. Jony K⁺ są ważne dla nerwów i mięśni oraz dla roślin (nawozy potasowe).'},
+  Rb: {kon: '[Kr] 5s¹', rho: '1,53 g/cm³', rhoN: 1.53, mp: '39 °C', re: 5.8,
+       opis: 'Miękki metal tak reaktywny, że zapala się na powietrzu. Jest gęstszy od wody, więc w niej tonie. Używa się go m.in. w zegarach atomowych.'},
+  Cs: {kon: '[Xe] 6s¹', rho: '1,93 g/cm³', rhoN: 1.93, mp: '28,5 °C', re: 6,
+       opis: 'Topi się w temperaturze zbliżonej do pokojowej. Z wodą reaguje wybuchowo. Zegary cezowe definiują sekundę.'},
+  Fr: {kon: '[Rn] 7s¹', rho: 'brak danych', mp: 'brak danych', re: null, nie: 1,
+       opis: 'Najcięższy litowiec: promieniotwórczy i niezwykle rzadki — w skorupie ziemskiej naraz jest go zaledwie kilkadziesiąt gramów. Nie wykonuje się z nim doświadczeń.'},
+  Be: {kon: '[He] 2s²', rho: '1,85 g/cm³', rhoN: 1.85, mp: '1287 °C', re: 0,
+       opis: 'Lekki, bardzo twardy i sztywny metal. Cienka warstwa tlenku chroni go przed wodą. Pył i związki berylu są toksyczne. Szmaragd i akwamaryn to odmiany minerału zwanego berylem.'},
+  Mg: {kon: '[Ne] 3s²', rho: '1,74 g/cm³', rhoN: 1.74, mp: '650 °C', re: .5,
+       opis: 'Pali się oślepiająco białym płomieniem (race, dawne lampy błyskowe). Jest centralnym atomem cząsteczki chlorofilu. Z zimną wodą reaguje bardzo wolno.'},
+  Ca: {kon: '[Ar] 4s²', rho: '1,55 g/cm³', rhoN: 1.55, mp: '842 °C', re: 2,
+       opis: 'Buduje kości, zęby i skorupy; wapień to CaCO₃. W wodzie tonie i wydziela wodór, a roztwór mętnieje od słabo rozpuszczalnego Ca(OH)₂. Płomień barwi ceglastoczerwono.'},
+  Sr: {kon: '[Kr] 5s²', rho: '2,64 g/cm³', rhoN: 2.64, mp: '777 °C', re: 3,
+       opis: 'Daje jaskrawą czerwień w fajerwerkach i racach. Z wodą reaguje żywiej niż wapń.'},
+  Ba: {kon: '[Xe] 6s²', rho: '3,51 g/cm³', rhoN: 3.51, mp: '727 °C', re: 4,
+       opis: 'Daje zielony kolor w fajerwerkach. Rozpuszczalne sole baru są trujące, ale nierozpuszczalny BaSO₄ pije się przed prześwietleniem przewodu pokarmowego.'},
+  Ra: {kon: '[Rn] 7s²', rho: '≈ 5,5 g/cm³', mp: '700 °C', re: 4.7, rad: 1,
+       opis: 'Promieniotwórczy; odkryli go w 1898 r. Maria Skłodowska-Curie i Pierre Curie. W szkole doświadczeń z radem nie wykonuje się — pokazujemy tylko animację.'}
+};
+var GR = {
+  1: {nazwa: 'Litowce — grupa 1', el: G1,
+      opis: 'Jeden elektron walencyjny (ns¹), kation M⁺. To miękkie, lekkie metale. Z wodą tworzą wodorotlenki MOH (mocne zasady) i wodór. Im niżej w grupie, tym są reaktywniejsze.'},
+  2: {nazwa: 'Berylowce — grupa 2', el: G2,
+      opis: 'Dwa elektrony walencyjne (ns²), kation M²⁺. Są twardsze i gęstsze niż litowce, a z wodą reagują wolniej. Wodorotlenki M(OH)₂ są tym mocniejszymi zasadami, im niżej w grupie.'}
+};
+
+/* probówki: zachowanie metalu w wodzie */
+var PR = {
+  Li: {kol: '#c5ccd6', r: 8, plywa: 1, tempo: 12, ruch: 7, zyje: 70, rozow: .06, uw: 'pływa, spokojnie',
+       obs: 'Pływa i reaguje spokojnie: równy strumień pęcherzyków H₂. Nie topi się, krąży powoli.', rown: '2Li + 2H₂O → 2LiOH + H₂↑'},
+  Na: {kol: '#e1e7ee', r: 9, plywa: 1, tempo: 30, ruch: 30, zyje: 30, rozow: .14, ostrz: 1, uw: 'pływa, krąży',
+       obs: 'Topi się w srebrzystą kulkę, szybko krąży po powierzchni i syczy.', rown: '2Na + 2H₂O → 2NaOH + H₂↑'},
+  K:  {kol: '#eceff5', r: 10, plywa: 1, tempo: 60, ruch: 62, zyje: 15, rozow: .5, plomien: '#b794ff', uw: 'pływa, zapala się',
+       obs: 'Reaguje gwałtownie: wodór zapala się, a płomień barwią atomy potasu na fioletowo.', rown: '2K + 2H₂O → 2KOH + H₂↑'},
+  Rb: {kol: '#e4dccf', r: 9, tempo: 90, wstrzas: 2, zyje: 8, rozow: .8, ostrz: 1, uw: 'tonie, gwałtownie',
+       obs: 'Jest gęstszy od wody, więc tonie, lecz reaguje bardzo gwałtownie — naczynie może pęknąć.', rown: '2Rb + 2H₂O → 2RbOH + H₂↑'},
+  Cs: {kol: '#e9d48f', r: 9, tempo: 120, wstrzas: 3.2, zyje: 5, rozow: 1, ostrz: 1, uw: 'tonie, wybuchowo',
+       obs: 'Tonie i reaguje wybuchowo.', rown: '2Cs + 2H₂O → 2CsOH + H₂↑'},
+  Be: {kol: '#9aa6b0', r: 7, tempo: 0, rozow: 0, zyje: 0, uw: 'brak reakcji',
+       obs: 'Nie reaguje z wodą: chroni go cienka warstwa tlenku BeO. Pył i związki berylu są toksyczne.', rown: 'Be + H₂O → brak reakcji'},
+  Mg: {kol: '#d0d6dc', r: 7, tempo: 1.2, rozow: .011, rozMax: .28, zyje: 0, uw: 'bardzo wolno',
+       obs: 'Z zimną wodą reaguje bardzo wolno: pojedyncze pęcherzyki i blade różowienie. Szybciej reaguje z wrzątkiem lub parą wodną.', rown: 'Mg + 2H₂O → Mg(OH)₂ + H₂↑'},
+  Ca: {kol: '#c9ccd0', r: 8, tempo: 16, rozow: .07, mut: .85, kurcz: .004, uw: 'tonie, mętnieje',
+       obs: 'Tonie i stale wydziela H₂. Roztwór mętnieje, bo Ca(OH)₂ rozpuszcza się słabo.', rown: 'Ca + 2H₂O → Ca(OH)₂ + H₂↑'},
+  Sr: {kol: '#d8d6c2', r: 8, tempo: 28, rozow: .12, mut: .35, kurcz: .006, uw: 'tonie, żywo',
+       obs: 'Tonie i reaguje żywiej niż wapń; roztwór lekko mętnieje.', rown: 'Sr + 2H₂O → Sr(OH)₂ + H₂↑'},
+  Ra: {kol: '#e6e2d6', r: 8, tempo: 58, rozow: .3, kurcz: .014, rad: 1, uw: 'tonie, tylko animacja',
+       obs: 'Cięższy od wody, tonie; reaguje energiczniej niż bar. Pokazujemy tylko animację — w szkole nie wykonuje się tego doświadczenia.', rown: 'Ra + 2H₂O → Ra(OH)₂ + H₂↑'},
+  Ba: {kol: '#c6cab8', r: 8, tempo: 42, rozow: .2, mut: .08, kurcz: .009, uw: 'tonie, energicznie',
+       obs: 'Tonie i reaguje energicznie. Ba(OH)₂ dobrze się rozpuszcza, więc roztwór zostaje klarowny.', rown: 'Ba + 2H₂O → Ba(OH)₂ + H₂↑'},
+  Fr: {kol: '#8f8f8f', r: 8, tempo: 0, zyje: 0, rozow: 0, rad: 1, uw: 'brak danych',
+       obs: 'Frans jest wyjątkowo rzadki i silnie promieniotwórczy; nie ma wiarygodnych danych o reakcji z wodą. Animacji nie pokazujemy.', rown: 'brak wiarygodnych danych'},
+  CaO: {kol: '#e6e1d0', r: 9, tempo: 0, zyje: 0, rozow: .1, mut: .85, uw: 'opada, ogrzewa wodę, mętnieje',
+       obs: 'Biały proszek opada na dno i ogrzewa wodę (reakcja egzotermiczna). Powstaje Ca(OH)₂: roztwór mętnieje, a po fenoloftaleinie różowieje.', rown: 'CaO + H₂O → Ca(OH)₂'}
+};
+var LISTA_PR = {1: ['Li', 'Na', 'K', 'Rb', 'Cs', 'Fr'], 2: ['Be', 'Mg', 'Ca', 'Sr', 'Ba', 'Ra'], 3: ['CaO']};
+
+/* płomienie: barwa i opis */
+var PL = {
+  Li: {c: '#ff3b6b', nz: 'karminowy', op: 'Czerwień z różowym odcieniem; łatwo pomylić ze strontem.'},
+  Na: {c: '#ffd21f', nz: 'żółty', op: 'Bardzo intensywny: ślady sodu są wszędzie i potrafią zagłuszyć inne barwy.'},
+  K:  {c: '#b794ff', nz: 'fioletowy (liliowy)', op: 'Blady. Ogląda się go przez niebieskie szkło kobaltowe, które pochłania żółć sodu.'},
+  Rb: {c: '#d2428f', nz: 'czerwonofioletowy', op: 'Podobny do potasu, ale z wyraźną czerwienią.'},
+  Cs: {c: '#5aa4ff', nz: 'niebieskofioletowy', op: 'Jasny błękit; nazwa cezu pochodzi od łacińskiego słowa oznaczającego błękit nieba.'},
+  Be: {tryb: 'brak', nz: 'brak barwy', op: 'Beryl nie barwi płomienia, a jego pył jest toksyczny, więc nie robi się z nim prób.'},
+  Mg: {tryb: 'mg', nz: 'oślepiająco biały błysk', op: 'Magnez nie barwi płomienia, tylko pali się własnym: 2Mg + O₂ → 2MgO. Nie patrz prosto w błysk.'},
+  Ca: {c: '#ff6a1f', nz: 'ceglastoczerwony', op: 'Pomarańczowoczerwony, cieplejszy niż stront.'},
+  Sr: {c: '#ff2430', nz: 'jaskrawoczerwony', op: 'Jaskrawa czerwień z fajerwerków i rac.'},
+  Ba: {c: '#9be34d', nz: 'zielony', op: 'Żółtozielony. Sole baru są trujące.'},
+  Ra: {c: '#d6123d', nz: 'karminowy', rad: 1, op: 'Sole radu barwią płomień karminowo. To tylko animacja — z radem nie pracuje się w szkole.'},
+  Fr: {tryb: 'brak', nz: 'brak danych', rad: 1, op: 'Frans jest wyjątkowo rzadki i silnie promieniotwórczy; nie ma wiarygodnych danych o barwie płomienia. Pokazujemy go tylko jako model.'}
+};
+
+
+/* związek berylowca (tlenek) dla probówek */
+DANE.CaO = {kon: 'związek CaO', rho: '3,34 g/cm³', rhoN: 3.34, mp: '2572 °C', re: 2,
+  opis: 'Tlenek wapnia (wapno palone). Z wodą tworzy Ca(OH)₂ z wydzieleniem ciepła.'};
+
+/* Klocek-znaki: promieniowanie (trójlistek ISO 361) i zakaz w szkole. Używane przez każdy klocek z pierwiastkiem promieniotwórczym. */
+/* znaki: trójlistek promieniowania (ISO 361) i zakaz (kolba w czerwonym kole) */
+function tref(sz) {
+  function sek(a) {
+    var r1 = 14, r2 = 40, a1 = (a - 30) * Math.PI / 180, a2 = (a + 30) * Math.PI / 180;
+    function P(r, t) { return (r * Math.cos(t)).toFixed(1) + ' ' + (-r * Math.sin(t)).toFixed(1); }
+    return '<path fill="#111" d="M' + P(r1, a1) + ' L' + P(r2, a1) + ' A' + r2 + ' ' + r2 + ' 0 0 0 ' + P(r2, a2) + ' L' + P(r1, a2) + ' A' + r1 + ' ' + r1 + ' 0 0 1 ' + P(r1, a1) + 'Z"/>';
+  }
+  return '<svg width="' + sz + '" height="' + sz + '" viewBox="-50 -50 100 100" role="img" aria-label="Znak promieniowania jonizującego"><circle r="48" fill="#f6c300" stroke="#111" stroke-width="3"/>' + sek(90) + sek(210) + sek(330) + '<circle r="8" fill="#111"/></svg>';
+}
+function zabron(sz) {
+  return '<svg width="' + sz + '" height="' + sz + '" viewBox="-50 -50 100 100" role="img" aria-label="Zakaz wykonywania w szkole"><path d="M-14 -26h28M-8 -26v18l-20 34a7 7 0 0 0 6 10h44a7 7 0 0 0 6-10l-20-34v-18" fill="none" stroke="#222" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><circle r="43" fill="none" stroke="#e5383b" stroke-width="9"/><path d="M-30 -30L30 30" stroke="#e5383b" stroke-width="9" stroke-linecap="round"/></svg>';
+}
+function zakaz(txt) {
+  return '<div class="zak"><span class="zak-ik">' + tref(28) + zabron(28) + '</span><span><b>Promieniotwórczy.</b> ' + txt + '</span></div>';
+}
+
+KLOCKI.znak = {tref: tref, zabron: zabron, zakaz: zakaz};
+
+/* KLOCEK: probówki (Li, Na, K, Rb, Cs, Be, Mg, Ca, Sr, Ba, Ra). Trzy i więcej probówek obok siebie w statywie. */
+/* ====================================================================
+   KLOCEK: probówki
+   ==================================================================== */
+function Rurka(x, ox, sym, wsk) {
+  var P = {cx: 75, tw: 76, top: 54, wl: 152, bot: 326};
+  var S = {wsk: wsk};
+  var api = {krok: krok, rysuj: rysuj, reset: reset, ustaw: ustaw, wskaznik: function (v) { S.wsk = v; }};
+
+  function reset() {
+    S.t = 0; S.b = []; S.dr = []; S.foam = 0; S.acc = 0; S.dacc = 0; S.spl = false;
+    S.mx0 = (Math.random() - .5) * 20; S.rel = S.mx0; S.tx = 0; S.tc = 0; S.my = 0; S.mx = P.cx + S.mx0;
+    S.zywe = false; S.sc = 1; S.fcap = Math.min(1, S.d.tempo / 50);
+  }
+  function ustaw(s) { S.sym = s; S.d = PR[s]; reset(); }
+
+  function krok(dt) {
+    var d = S.d, t = S.t += dt, t1 = t - .6, fin = d.zyje > 0;
+    var sc = 1;
+    if (fin) sc = Math.max(0, 1 - t1 / d.zyje); else if (d.kurcz) sc = Math.max(.5, 1 - d.kurcz * Math.max(0, t1));
+    S.sc = sc;
+    var zywe = t1 >= 0 && (!fin || sc > .06); S.zywe = zywe;
+    var R = d.r * (.3 + .7 * sc); S.R = R;
+    var surf = P.wl, dno = P.bot + P.tw / 2 - 2;
+
+    if (t < .6) { var u = t / .6, y0 = P.top - 26; S.my = y0 + (surf - y0) * u * u; S.mx = P.cx + S.mx0; }
+    else if (d.plywa) {
+      S.tc -= dt;
+      if (S.tc <= 0) { S.tx = (Math.random() * 2 - 1) * (P.tw / 2 - R - 6); S.tc = .35 + Math.random() * .9 * (1 - Math.min(.8, d.ruch / 80)); }
+      S.rel += (S.tx - S.rel) * Math.min(1, dt * d.ruch / 9);
+      S.mx = P.cx + S.rel; S.my = surf + 1 + Math.sin(t * 4) * .8;
+    } else {
+      var u2 = sm(t1 / 1.1); S.my = surf + (dno - R - surf) * u2; S.mx = P.cx + S.mx0 * (1 - u2 * .7);
+    }
+    if (!S.spl && t >= .6) {
+      S.spl = true;
+      for (var q = 0; q < 10; q++) S.dr.push({x: S.mx, y: surf, vx: (Math.random() - .5) * 70, vy: -(50 + Math.random() * 110), r: 1 + Math.random() * 1.5});
+    }
+    if (zywe && d.tempo > 0) {
+      S.acc += d.tempo * (fin ? (.35 + .65 * sc) : 1) * dt;
+      var n = 0;
+      while (S.acc >= 1 && n < 8) {
+        S.acc -= 1; n++;
+        S.b.push({x: S.mx + (Math.random() - .5) * R * 1.6, y: d.plywa ? S.my + R * .7 : S.my - R * .3, r: 1.1 + Math.random() * 2.3,
+          vy: d.plywa ? -(8 + Math.random() * 30) : (10 + Math.random() * 30), ph: Math.random() * 6.3, w: 3 + Math.random() * 4});
+      }
+    }
+    var l = P.cx - P.tw / 2 + 4, r = P.cx + P.tw / 2 - 4;
+    for (var i = S.b.length - 1; i >= 0; i--) {
+      var b = S.b[i];
+      b.vy = Math.min(75, b.vy + 70 * dt); b.y -= b.vy * dt; b.x = clamp(b.x + Math.sin(b.ph + t * 7) * b.w * dt * 3, l + b.r, r - b.r);
+      if (b.y <= surf + b.r) { S.b.splice(i, 1); S.foam = Math.min(S.fcap, S.foam + .02); }
+    }
+    if (S.b.length > 260) S.b.splice(0, S.b.length - 260);
+    S.foam = Math.max(0, S.foam - dt * .35);
+    var dr = d.plywa ? (d.plomien ? 9 : 0) : (d.wstrzas ? d.wstrzas * 18 : 0);
+    if (zywe && dr > 0) {
+      S.dacc += dr * dt;
+      while (S.dacc >= 1) { S.dacc -= 1; S.dr.push({x: d.plywa ? S.mx : P.cx + (Math.random() - .5) * P.tw * .6, y: surf, vx: (Math.random() - .5) * 60, vy: -(90 + Math.random() * 160), r: 1 + Math.random() * 1.6}); }
+    }
+    for (var k = S.dr.length - 1; k >= 0; k--) {
+      var c = S.dr[k]; c.vy += 420 * dt; c.y += c.vy * dt; c.x += c.vx * dt;
+      if (c.y > P.top && (c.x < l - 1 || c.x > r + 1)) { c.vx *= -.6; c.x = clamp(c.x, l, r); }
+      if (c.vy > 0 && c.y >= surf) S.dr.splice(k, 1);
+    }
+  }
+
+  function tubePath() {
+    var l = P.cx - P.tw / 2, rr_ = P.cx + P.tw / 2;
+    x.beginPath(); x.moveTo(l, P.top); x.lineTo(l, P.bot); x.arc(P.cx, P.bot, P.tw / 2, Math.PI, 0, true); x.lineTo(rr_, P.top);
+  }
+  function metal(mx, my, R, d, rot) {
+    var g = x.createRadialGradient(mx - R * .35, my - R * .35, R * .1, mx, my, R * 1.15);
+    g.addColorStop(0, '#ffffff'); g.addColorStop(.4, d.kol); g.addColorStop(1, mixHex(d.kol, '#3d4a56', .6));
+    x.fillStyle = g; x.beginPath(); x.ellipse(mx, my, R, R * (d.plywa ? .82 : .72), rot, 0, 6.3); x.fill();
+  }
+  function miniPlomien(fx, fy, h, w, kol, sw) {
+    x.save(); x.globalCompositeOperation = 'lighter';
+    var g = x.createLinearGradient(0, fy, 0, fy - h);
+    g.addColorStop(0, rgba(kol, .95)); g.addColorStop(.6, rgba(kol, .5)); g.addColorStop(1, rgba(kol, 0));
+    x.fillStyle = g; x.beginPath(); x.moveTo(fx - w, fy);
+    x.bezierCurveTo(fx - w * 1.2, fy - h * .45, fx - w * .4 + sw, fy - h * .8, fx + sw, fy - h);
+    x.bezierCurveTo(fx + w * .4 + sw, fy - h * .8, fx + w * 1.2, fy - h * .45, fx + w, fy); x.fill();
+    var gl = x.createRadialGradient(fx, fy - h * .4, 2, fx, fy - h * .4, h * 1.4); gl.addColorStop(0, rgba(kol, .35)); gl.addColorStop(1, rgba(kol, 0));
+    x.fillStyle = gl; x.fillRect(fx - h * 1.5, fy - h * 1.9, h * 3, h * 2.6);
+    x.restore();
+  }
+  function rysuj() {
+    var d = S.d, t = S.t, l = P.cx - P.tw / 2, r = P.cx + P.tw / 2, bt = P.bot + P.tw / 2;
+    x.save(); x.translate(ox, 0);
+    var sh = (!RM && S.zywe && d.wstrzas) ? d.wstrzas : 0;
+    x.save(); x.translate(sh * (Math.random() - .5) * 2, sh * (Math.random() - .5) * 1.2);
+
+    x.save(); tubePath(); x.clip();
+    var gw = x.createLinearGradient(0, P.wl, 0, bt); gw.addColorStop(0, 'rgba(150,205,240,.42)'); gw.addColorStop(1, 'rgba(110,170,215,.34)');
+    x.fillStyle = gw; x.fillRect(l - 2, P.wl, P.tw + 4, bt - P.wl + 2);
+    var Pk = (S.wsk && d.rozow) ? Math.min(d.rozMax || .85, d.rozow * Math.max(0, t - .6)) : 0;
+    if (Pk > 0) {
+      var mv = sm((t - .6) / 12), a1 = d.plywa ? Pk : Pk * (.3 + .7 * mv), a2 = d.plywa ? Pk * (.3 + .7 * mv) : Pk;
+      var gp = x.createLinearGradient(0, P.wl, 0, bt); gp.addColorStop(0, 'rgba(240,72,155,' + a1.toFixed(3) + ')'); gp.addColorStop(1, 'rgba(240,72,155,' + a2.toFixed(3) + ')');
+      x.fillStyle = gp; x.fillRect(l - 2, P.wl, P.tw + 4, bt - P.wl + 2);
+    }
+    if (d.mut) {
+      var cl = d.mut * clamp((t - .6) / 9, 0, 1) * .5;
+      var gc = x.createLinearGradient(0, P.wl, 0, bt); gc.addColorStop(0, 'rgba(245,248,252,' + (cl * .6).toFixed(3) + ')'); gc.addColorStop(1, 'rgba(245,248,252,' + cl.toFixed(3) + ')');
+      x.fillStyle = gc; x.fillRect(l - 2, P.wl, P.tw + 4, bt - P.wl + 2);
+    }
+    x.strokeStyle = 'rgba(255,255,255,.6)'; x.lineWidth = 1.4; x.beginPath(); x.moveTo(l, P.wl); x.lineTo(r, P.wl); x.stroke();
+    for (var i = 0; i < S.b.length; i++) {
+      var b = S.b[i]; x.fillStyle = 'rgba(255,255,255,.22)'; x.strokeStyle = 'rgba(255,255,255,.75)'; x.lineWidth = .8;
+      x.beginPath(); x.arc(b.x, b.y, b.r, 0, 6.3); x.fill(); x.stroke();
+    }
+    var nf = Math.round(S.foam * 16); x.fillStyle = 'rgba(255,255,255,.8)';
+    for (var f = 0; f < nf; f++) { x.beginPath(); x.arc(l + 5 + ((f * 37) % (P.tw - 10)), P.wl - 1 + Math.sin(t * 5 + f) * 1, 1.6 + (f % 3) * .7, 0, 6.3); x.fill(); }
+    x.restore();
+
+    x.lineJoin = 'round'; x.lineCap = 'round';
+    tubePath(); x.strokeStyle = 'rgba(215,238,255,.6)'; x.lineWidth = 2.4; x.stroke();
+    x.strokeStyle = 'rgba(255,255,255,.3)'; x.lineWidth = 3; x.beginPath(); x.moveTo(l + 8, P.top + 12); x.lineTo(l + 8, P.bot - 6); x.stroke();
+    x.strokeStyle = 'rgba(255,255,255,.12)'; x.lineWidth = 2; x.beginPath(); x.moveTo(r - 8, P.top + 24); x.lineTo(r - 8, P.bot - 20); x.stroke();
+    x.strokeStyle = 'rgba(225,242,255,.75)'; x.lineWidth = 3; x.beginPath(); x.moveTo(l - 3, P.top); x.lineTo(r + 3, P.top); x.stroke();
+
+    var vis = !(d.zyje > 0 && S.sc <= .06 && t > .6);
+    if (vis && t > 0) {
+      metal(S.mx, S.my, S.R || d.r, d, Math.sin(t * 1.3) * .3);
+      if (d.plomien && S.zywe) miniPlomien(S.mx, S.my - (S.R || d.r) * .4, 26 + (RM ? 0 : Math.random() * 10), 9, d.plomien, RM ? 0 : Math.sin(t * 20) * 2);
+    }
+    if (d.ostrz && t >= .6 && t < .95) {
+      var fl = 1 - (t - .6) / .35; x.save(); x.globalCompositeOperation = 'lighter';
+      var gf = x.createRadialGradient(P.cx, P.wl, 2, P.cx, P.wl, 70 * fl + 10); gf.addColorStop(0, 'rgba(255,255,255,' + (.85 * fl).toFixed(2) + ')'); gf.addColorStop(1, 'rgba(255,255,255,0)');
+      x.fillStyle = gf; x.fillRect(P.cx - 90, P.wl - 90, 180, 180); x.restore();
+    }
+    x.fillStyle = 'rgba(255,255,255,.8)';
+    for (var k = 0; k < S.dr.length; k++) { x.beginPath(); x.arc(S.dr[k].x, S.dr[k].y, S.dr[k].r, 0, 6.3); x.fill(); }
+    x.restore();
+    /* szczęka uchwytu statywu */
+    rr(x, l - 4, 84, P.tw + 8, 17, 4); var g = x.createLinearGradient(0, 84, 0, 101); g.addColorStop(0, '#8d9ba7'); g.addColorStop(1, '#4b5a67'); x.fillStyle = g; x.fill();
+    x.restore();
+  }
+  S.sym = sym; S.d = PR[sym]; reset();
+  return api;
+}
+function znakPauzy(x, W, H) {
+  x.fillStyle = 'rgba(8,16,24,.45)'; x.fillRect(0, 0, W, H);
+  x.fillStyle = 'rgba(255,255,255,.92)'; x.beginPath(); x.moveTo(W / 2 - 16, H / 2 - 22); x.lineTo(W / 2 + 22, H / 2); x.lineTo(W / 2 - 16, H / 2 + 22); x.closePath(); x.fill();
+}
+
+function opisProbowki(sym) {
+  var d = PR[sym], dn = DANE[sym], re = dn.re || 0;
+  var plywa = dn.rhoN < 1;
+  return '<p class="obs">' + d.obs + '</p><p class="rown">' + d.rown + '</p>' +
+    '<div class="meta"><span>Gęstość ' + dn.rho + ' — ' + (plywa ? 'lżejszy od wody, pływa' : 'cięższy od wody, tonie') + '</span>' +
+    '<span>Reaktywność <span class="pasek"><i style="width:' + Math.round(re / 6 * 100) + '%"></i></span></span></div>' +
+    (d.rad ? zakaz('Tylko animacja — doświadczeń z radem nie wykonuje się w szkołach.') : d.ostrz ? '<p class="ostrz">Tylko animacja — tego doświadczenia nie wykonuje się w szkole.</p>' : '');
+}
+
+KLOCKI.def('probowki', {
+  domyslne: {metale: 'Li,K,Ca', wskaznik: 1},
+  html: function (host, opc) {
+    var PITCH = 150, lista = parsujListe(opc.metale, PR, ['Li', 'K', 'Ca']), n = lista.length;
+    var W = n * PITCH + 24, H = 400;
+    var lab = el('div', 'lab'), pasek = el('div', 'lab-pasek');
+    var przel = el('label', 'przel', '<input type="checkbox"><span class="sw-t"></span><span>Fenoloftaleina w wodzie</span>');
+    var cb = przel.querySelector('input'); cb.checked = !!+opc.wskaznik;
+    var bAll = el('button', 'btn', 'Wrzuć metale ponownie'); bAll.type = 'button';
+    pasek.appendChild(przel); pasek.appendChild(bAll); lab.appendChild(pasek);
+
+    var rack = el('div', 'rack'); rack.style.maxWidth = (n * 215) + 'px';
+    var wier1 = el('div', 'rack-kol'), wier2 = el('div', 'rack-kol');
+    [wier1, wier2].forEach(function (w) { w.style.setProperty('--n', n); w.style.width = (n * PITCH / W * 100) + '%'; });
+    var cv = el('canvas'); cv.width = W * 2; cv.height = H * 2; cv.tabIndex = 0; cv.setAttribute('role', 'button');
+    rack.appendChild(wier1); rack.appendChild(cv); rack.appendChild(wier2); lab.appendChild(rack); host.appendChild(lab);
+    var x = cv.getContext('2d');
+
+    var rurki = [], sts = [], licznik = 0, pauza = false;
+    var scena = {
+      krok: function (dt) { if (pauza) return; rurki.forEach(function (r) { r.krok(dt); }); scena.rysuj(); },
+      rysuj: function () {
+        x.setTransform(2, 0, 0, 2, 0, 0); x.clearRect(0, 0, W, H);
+        var rx = n * PITCH + 4, gr = x.createLinearGradient(rx, 0, rx + 11, 0);
+        gr.addColorStop(0, '#5d6c79'); gr.addColorStop(.5, '#b9c5cf'); gr.addColorStop(1, '#52616e');
+        x.fillStyle = gr; x.fillRect(rx, 40, 11, 346);
+        rr(x, 6, 380, W - 12, 12, 4); var gb = x.createLinearGradient(0, 380, 0, 392); gb.addColorStop(0, '#6f7f8c'); gb.addColorStop(1, '#34424e'); x.fillStyle = gb; x.fill();
+        x.fillStyle = '#3c4a56'; x.fillRect(PITCH / 2, 88, rx - PITCH / 2, 9);
+        x.fillStyle = '#2d3943'; x.beginPath(); x.arc(rx + 5.5, 92.5, 7, 0, 6.3); x.fill();
+        rurki.forEach(function (r) { r.rysuj(); });
+        if (pauza) znakPauzy(x, W, H);
+      }
+    };
+    function przelPauza() { pauza = !pauza; scena.rysuj(); }
+    cv.addEventListener('click', przelPauza);
+    cv.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); przelPauza(); } });
+    cv.setAttribute('aria-label', 'Statyw z probówkami: metale w wodzie. Kliknij, aby zatrzymać lub wznowić.');
+
+    lista.forEach(function (sym, i) {
+      var sim = Rurka(x, i * PITCH, sym, cb.checked ? 1 : 0); rurki.push(sim);
+      var cell1 = el('div', 'rack-ce'), cell2 = el('div', 'rack-ce st-opis'), br = el('button', 'btn', 'Wrzuć ponownie'); br.type = 'button';
+      var wb = wyborSymbole(LISTA_PR, sym, function (s) { zmien(s); }, 'Metal w probówce ' + (i + 1));
+      function zmien(s) { sim.ustaw(s); pauza = false; cell2.innerHTML = opisProbowki(s); cell2.appendChild(br); scena.rysuj(); }
+      br.addEventListener('click', function () { sim.reset(); pauza = false; });
+      cell1.appendChild(wb.el); wier1.appendChild(cell1); wier2.appendChild(cell2);
+      cell2.innerHTML = opisProbowki(sym); cell2.appendChild(br);
+      sts.push({wb: wb, zmien: zmien});
+    });
+    podepnij(cv, scena);
+    cb.addEventListener('change', function () { rurki.forEach(function (r) { r.wskaznik(cb.checked ? 1 : 0); }); scena.rysuj(); });
+    bAll.addEventListener('click', function () { rurki.forEach(function (r) { r.reset(); }); pauza = false; });
+    document.addEventListener('klocki:uzyj', function (e) {
+      if (e.detail.cel !== 'probowka' || !PR[e.detail.sym]) return;
+      var s = sts[licznik++ % sts.length]; s.wb.ustaw(e.detail.sym); s.zmien(e.detail.sym);
+      lab.scrollIntoView({behavior: RM ? 'auto' : 'smooth', block: 'center'});
+    });
+    return {stacje: sts};
+  }
+});
+
+
+/* KLOCEK: palniki — próba płomieniowa, stojaki obok siebie. Barwy z dane/pierwiastki.js. */
+/* ====================================================================
+   KLOCEK: palniki
+   ==================================================================== */
+function Palnik(canvas, sym) {
+  var W = 240, H = 400, cx = 120, topY = 252, BL = '#6bb6ff';
+  var x = canvas.getContext('2d'), S = {};
+  var api = {pauza: false, krok: krok, rysuj: rysuj, reset: reset, ustaw: ustaw};
+  function reset() { S.t = 0; S.sp = []; S.sm = []; S.acc = 0; S.acs = 0; }
+  function ustaw(s) { S.sym = s; S.d = PL[s]; reset(); rysuj(); }
+
+  function stan() {
+    var t = S.t, d = S.d, p = sm((t - .6) / 1.1);
+    var tx = cx + 82 + (cx + 4 - (cx + 82)) * p, ty = 118 + (190 - 118) * p;
+    var k = d.c ? Math.min(1, sm((t - 1.9) / 3) * (1 + .04 * Math.sin(t * 3))) : 0;
+    var mg = 0, burn = 0;
+    if (d.tryb === 'mg') { mg = sm((t - 1.5) / .25) * (1 - sm((t - 7.8) / 1.2)); burn = clamp((t - 1.6) / 6.4, 0, 1); }
+    return {tx: tx, ty: ty, k: k, mg: mg, burn: burn};
+  }
+  function krok(dt) {
+    if (api.pauza) return;
+    S.t += dt;
+    var st = stan(), i;
+    if (S.d.tryb === 'mg' && st.mg > .2 && S.t < 8) {
+      S.acc += 46 * dt;
+      while (S.acc >= 1) { S.acc -= 1; S.sp.push({x: st.tx, y: st.ty, vx: (Math.random() - .5) * 170, vy: -(20 + Math.random() * 130), life: .5 + Math.random() * .6, l0: 1}); }
+      S.acs += 7 * dt;
+      while (S.acs >= 1) { S.acs -= 1; S.sm.push({x: st.tx + (Math.random() - .5) * 8, y: st.ty - 8, vy: -(18 + Math.random() * 14), r: 3, life: 2.6}); }
+    }
+    for (i = S.sp.length - 1; i >= 0; i--) { var a = S.sp[i]; a.vy += 380 * dt; a.x += a.vx * dt; a.y += a.vy * dt; a.life -= dt; if (a.life <= 0) S.sp.splice(i, 1); }
+    for (i = S.sm.length - 1; i >= 0; i--) { var b = S.sm[i]; b.y += b.vy * dt; b.r += 6 * dt; b.life -= dt; if (b.life <= 0) S.sm.splice(i, 1); }
+    rysuj();
+  }
+  function mantle(by, h, w, sw) {
+    x.beginPath(); x.moveTo(cx - w, by);
+    x.bezierCurveTo(cx - w * 1.25, by - h * .45, cx - w * .55 + sw * .5, by - h * .82, cx + sw, by - h);
+    x.bezierCurveTo(cx + w * .55 + sw * .5, by - h * .82, cx + w * 1.25, by - h * .45, cx + w, by);
+    x.closePath();
+  }
+  function korpus() {
+    var g;
+    /* wąż gazowy */
+    x.strokeStyle = '#27303a'; x.lineWidth = 7; x.lineCap = 'round'; x.beginPath(); x.moveTo(78, 372); x.bezierCurveTo(40, 372, 30, 350, 0, 346); x.stroke();
+    /* podstawa */
+    g = x.createLinearGradient(0, 362, 0, 386); g.addColorStop(0, '#6b7b89'); g.addColorStop(1, '#2b3743');
+    x.fillStyle = g; x.beginPath(); x.ellipse(cx, 376, 60, 12, 0, 0, 6.3); x.fill();
+    x.fillStyle = '#566472'; x.beginPath(); x.ellipse(cx, 369, 52, 8, 0, 0, 6.3); x.fill();
+    /* lufa */
+    g = x.createLinearGradient(cx - 9, 0, cx + 9, 0); g.addColorStop(0, '#5c6a77'); g.addColorStop(.45, '#c9d3dc'); g.addColorStop(1, '#55636f');
+    x.fillStyle = g; x.fillRect(cx - 9, topY, 18, 120);
+    /* regulator powietrza */
+    g = x.createLinearGradient(cx - 15, 0, cx + 15, 0); g.addColorStop(0, '#46535f'); g.addColorStop(.5, '#9fadb9'); g.addColorStop(1, '#3f4b57');
+    rr(x, cx - 15, 318, 30, 22, 4); x.fillStyle = g; x.fill();
+    x.fillStyle = '#1e2832'; for (var i = 0; i < 3; i++) { x.beginPath(); x.ellipse(cx - 8 + i * 8, 329, 2.2, 6, 0, 0, 6.3); x.fill(); }
+    /* wylot */
+    x.fillStyle = '#26323d'; x.beginPath(); x.ellipse(cx, topY, 10, 3.5, 0, 0, 6.3); x.fill();
+    x.strokeStyle = '#b4c0ca'; x.lineWidth = 1.5; x.stroke();
+  }
+  function rysuj() {
+    var t = S.t, d = S.d, st = stan(), k = st.k, ec = d.c ? mixHex(BL, d.c, k) : BL;
+    x.setTransform(2, 0, 0, 2, 0, 0); x.clearRect(0, 0, W, H);
+    var sw = RM ? 0 : Math.sin(t * 9) * 2.2 + Math.sin(t * 5.3 + 1) * 1.6;
+    var fl = RM ? 0 : Math.sin(t * 13) * 3;
+
+    x.save(); x.globalCompositeOperation = 'lighter';
+    if (d.c && k > 0) {
+      var gl = x.createRadialGradient(cx, topY - 90, 10, cx, topY - 90, 116);
+      gl.addColorStop(0, rgba(d.c, .4 * k)); gl.addColorStop(1, rgba(d.c, 0)); x.fillStyle = gl; x.fillRect(0, 0, W, H);
+    }
+    var hh = 138 + fl, ww = 17;
+    var halo = x.createLinearGradient(0, topY, 0, topY - hh * 1.05);
+    halo.addColorStop(0, rgba(BL, .12)); halo.addColorStop(.6, rgba(ec, .1 + .22 * k)); halo.addColorStop(1, rgba(ec, 0));
+    x.fillStyle = halo; mantle(topY, hh * 1.05, ww * 1.7, sw); x.fill();
+    var gr = x.createLinearGradient(0, topY, 0, topY - hh);
+    gr.addColorStop(0, rgba(BL, .6)); gr.addColorStop(.3, rgba(mixHex(BL, ec, k * .85), .5 + .3 * k));
+    gr.addColorStop(.7, rgba(ec, .2 + .5 * k)); gr.addColorStop(1, rgba(ec, 0));
+    x.fillStyle = gr; mantle(topY, hh, ww, sw); x.fill();
+    var gi = x.createLinearGradient(0, topY, 0, topY - 54);
+    gi.addColorStop(0, 'rgba(210,235,255,.95)'); gi.addColorStop(.5, 'rgba(80,160,255,.8)'); gi.addColorStop(1, 'rgba(60,130,255,.1)');
+    x.fillStyle = gi; mantle(topY, 54, 7.5, sw * .3); x.fill();
+    x.restore();
+
+    korpus();
+
+    /* drut z próbką */
+    var dx = W - 6 - st.tx, dy = 8 - st.ty, len = Math.sqrt(dx * dx + dy * dy), ux = dx / len, uy = dy / len;
+    x.lineCap = 'round';
+    x.strokeStyle = '#b3beca'; x.lineWidth = 1.8; x.beginPath(); x.moveTo(st.tx, st.ty); x.lineTo(W - 6, 8); x.stroke();
+    x.strokeStyle = '#2f3a45'; x.lineWidth = 6; x.beginPath(); x.moveTo(W - 6, 8); x.lineTo(W - 6 - ux * 42, 8 - uy * 42); x.stroke();
+
+    if (d.tryb === 'mg') {
+      var L = 28 * (1 - st.burn * .92);
+      if (S.t > 8) { x.fillStyle = '#eef0f2'; x.beginPath(); x.arc(st.tx, st.ty, 3, 0, 6.3); x.fill(); }
+      else {
+        x.strokeStyle = st.mg > .1 ? '#ffffff' : '#cfd6dc'; x.lineWidth = 3.2;
+        x.beginPath(); x.moveTo(st.tx + L * .5, st.ty - L * .14); x.lineTo(st.tx - L * .5, st.ty + L * .14); x.stroke();
+      }
+    } else if (d.tryb !== 'brak') {
+      x.fillStyle = '#eef2f5'; x.strokeStyle = '#8f9ca8'; x.lineWidth = 1.2;
+      x.beginPath(); x.arc(st.tx, st.ty, 4.6, 0, 6.3); x.fill(); x.stroke();
+      if (k > 0) { x.save(); x.globalCompositeOperation = 'lighter'; var gb = x.createRadialGradient(st.tx, st.ty, 1, st.tx, st.ty, 12); gb.addColorStop(0, rgba(ec, .9 * k)); gb.addColorStop(1, rgba(ec, 0)); x.fillStyle = gb; x.fillRect(st.tx - 14, st.ty - 14, 28, 28); x.restore(); }
+    } else {
+      x.fillStyle = '#eef2f5'; x.strokeStyle = '#8f9ca8'; x.lineWidth = 1.2; x.beginPath(); x.arc(st.tx, st.ty, 4.6, 0, 6.3); x.fill(); x.stroke();
+    }
+
+    /* dym i iskry magnezu */
+    for (var i = 0; i < S.sm.length; i++) { var s = S.sm[i]; x.fillStyle = 'rgba(232,238,244,' + (.2 * s.life / 2.6).toFixed(3) + ')'; x.beginPath(); x.arc(s.x, s.y, s.r, 0, 6.3); x.fill(); }
+    if (st.mg > 0) {
+      x.save(); x.globalCompositeOperation = 'lighter';
+      var jitter = RM ? 1 : (1 + .12 * Math.random()), rad = 95 * st.mg * jitter;
+      var gf = x.createRadialGradient(st.tx, st.ty, 2, st.tx, st.ty, rad);
+      gf.addColorStop(0, 'rgba(255,255,255,1)'); gf.addColorStop(.18, 'rgba(235,245,255,.85)'); gf.addColorStop(.5, 'rgba(160,200,255,.28)'); gf.addColorStop(1, 'rgba(120,170,255,0)');
+      x.fillStyle = gf; x.fillRect(st.tx - rad, st.ty - rad, rad * 2, rad * 2);
+      if (!RM) {
+        x.strokeStyle = 'rgba(255,255,255,' + (.55 * st.mg).toFixed(2) + ')'; x.lineWidth = 1;
+        for (var q = 0; q < 12; q++) { var an = q * .5236 + t * .8, ln = (22 + Math.random() * 38) * st.mg; x.beginPath(); x.moveTo(st.tx, st.ty); x.lineTo(st.tx + Math.cos(an) * ln, st.ty + Math.sin(an) * ln); x.stroke(); }
+      }
+      x.restore();
+    }
+    x.strokeStyle = '#fff'; x.lineWidth = 1.5;
+    for (var j = 0; j < S.sp.length; j++) { var p = S.sp[j]; x.globalAlpha = clamp(p.life * 2, 0, 1); x.beginPath(); x.moveTo(p.x, p.y); x.lineTo(p.x - p.vx * .03, p.y - p.vy * .03); x.stroke(); }
+    x.globalAlpha = 1;
+    if (api.pauza) znakPauzy(x, W, H);
+  }
+  S.sym = sym; S.d = PL[sym]; reset();
+  return api;
+}
+function opisPalnika(sym) {
+  var d = PL[sym];
+  var sw = d.c ? '<span class="sw" style="background:' + d.c + ';--glow:' + d.c + '"></span>'
+    : d.tryb === 'mg' ? '<span class="sw" style="background:#fff;--glow:#cfe3ff"></span>' : '<span class="sw pusty"></span>';
+  return '<p class="kol">' + sw + '<b>' + cap(d.nz) + '</b></p><p class="obs">' + d.op + '</p>' + (d.rad ? zakaz('Tylko animacja — doświadczeń z radem nie wykonuje się w szkołach.') : '');
+}
+
+/* sekwencje palników: w lekcji zawsze widać najwyżej trzy palniki naraz (jedna sekwencja na raz) */
+var SERIE = {
+  plomien: {nazwa: 'Próba płomieniowa', metale: ['Na', 'K', 'Ca'],
+    opis: 'Tu interesuje nas barwa, bo wskazuje metal. Sód przysłania inne barwy, więc potas ogląda się przez szkło kobaltowe.'},
+  utlenianie: {nazwa: 'Spalanie i utlenianie', metale: ['Li', 'Mg', 'Ca'],
+    opis: 'Tu interesuje nas produkt, a nie barwa. Płomień pokazuje tylko przebieg reakcji. Pod każdym palnikiem podano powstały związek.'},
+  nadtlenki: {nazwa: 'Nadtlenki: Na, Sr, Ba', metale: ['Na', 'Sr', 'Ba'],
+    opis: 'Tu widać, że część metali tworzy nadtlenki, a nie zwykłe tlenki. Pod palnikiem podano produkt. Płomień pokazuje tylko przebieg reakcji; spalanie baru to wizualizacja.'},
+  model: {nazwa: 'Model teoretyczny: Rb, Cs, Ra', metale: ['Rb', 'Cs', 'Ra'],
+    opis: 'Model teoretyczny i reakcje niemożliwe w szkole. Ra jest promieniotwórczy, więc pokazujemy go wyłącznie jako animację.'}
+};
+var PRODUKT = {Li: '4Li + O₂ → 2Li₂O', Na: '2Na + O₂ → Na₂O₂ (w nadmiarze tlenu); 4Na + O₂ → 2Na₂O (przy ograniczonym tlenie)', K: 'K + O₂ → KO₂', Ca: '2Ca + O₂ → 2CaO', Mg: '2Mg + O₂ → 2MgO', Sr: '2Sr + O₂ → 2SrO (z domieszką SrO₂)', Ba: 'Ba + O₂ → BaO₂ (często z domieszką BaO)'};
+
+KLOCKI.def('palniki', {
+  domyslne: {seria: 'plomien'},
+  html: function (host, opc) {
+    var lab = el('div', 'lab'), pasek = el('div', 'lab-pasek'), przyciski = el('div', 'seria-przyciski');
+    var intro = el('p', 'seria-opis'), stacje = el('div', 'stacje');
+    var info = el('span', 'lab-cisza', 'Kliknij palnik, aby zatrzymać obraz.'); info.style.cssText = 'font-size:14px;color:var(--lab-cisza)';
+    var bAll = el('button', 'btn', 'Powtórz wszystkie próby'); bAll.type = 'button';
+    var przyc = {};
+    Object.keys(SERIE).forEach(function (k) {
+      var b = el('button', 'btn seria-btn', SERIE[k].nazwa); b.type = 'button'; b.setAttribute('aria-pressed', 'false');
+      b.addEventListener('click', function () { ustaw(k); });
+      przyciski.appendChild(b); przyc[k] = b;
+    });
+    pasek.appendChild(info); pasek.appendChild(bAll); lab.appendChild(pasek); lab.appendChild(przyciski);
+    lab.appendChild(intro); lab.appendChild(stacje); host.appendChild(lab);
+
+    var aktywna = null, sts = [], licznik = 0;
+
+    function opisStacji(s) {
+      return opisPalnika(s) + (aktywna === 'utlenianie' && PRODUKT[s] ? '<p class="rown">Produkt: ' + PRODUKT[s] + '</p>' : '');
+    }
+
+    function stacja(sym) {
+      var art = el('article', 'st'), cv = el('canvas'), op = el('div', 'st-opis'), br = el('button', 'btn', 'Powtórz próbę'); br.type = 'button';
+      cv.width = 480; cv.height = 800; cv.tabIndex = 0; cv.setAttribute('role', 'button');
+      var sim = Palnik(cv, sym);
+      var wb = wyborSymbole({1: ['Li', 'Na', 'K', 'Rb', 'Cs', 'Fr'], 2: ['Be', 'Mg', 'Ca', 'Sr', 'Ba', 'Ra']}, sym, function (s) { zmien(s); }, 'Pierwiastek w palniku');
+      var st = {sim: sim, wb: wb, sym: sym};
+      function zmien(s) {
+        st.sym = s; sim.ustaw(s); sim.pauza = false; op.innerHTML = opisStacji(s); op.appendChild(br);
+        cv.setAttribute('aria-label', 'Palnik z próbką: ' + NAZ[SYM.indexOf(s)] + '. Barwa płomienia: ' + PL[s].nz + '. Kliknij, aby zatrzymać lub wznowić.');
+      }
+      function przel_() { sim.pauza = !sim.pauza; sim.rysuj(); }
+      cv.addEventListener('click', przel_);
+      cv.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); przel_(); } });
+      br.addEventListener('click', function () { sim.reset(); sim.pauza = false; });
+      art.appendChild(wb.el); art.appendChild(cv); art.appendChild(op); stacje.appendChild(art);
+      zmien(sym); podepnij(cv, sim);
+      st.zmien = zmien; return st;
+    }
+
+    function ustaw(klucz) {
+      if (klucz === aktywna) return;
+      sts.forEach(function (s) { wylacz(s.sim); });
+      stacje.innerHTML = ''; sts = []; aktywna = klucz;
+      stacje.style.gridTemplateColumns = 'repeat(3, minmax(0, 1fr))';
+      intro.textContent = SERIE[klucz].opis;
+      SERIE[klucz].metale.forEach(function (sym) { sts.push(stacja(sym)); });
+      Object.keys(przyc).forEach(function (k) { przyc[k].setAttribute('aria-pressed', k === klucz ? 'true' : 'false'); });
+    }
+
+    bAll.addEventListener('click', function () { sts.forEach(function (s) { s.sim.reset(); s.sim.pauza = false; }); });
+    document.addEventListener('klocki:uzyj', function (e) {
+      if (e.detail.cel !== 'palnik' || !PL[e.detail.sym]) return;
+      var sym = e.detail.sym, k = Object.keys(SERIE).filter(function (q) { return SERIE[q].metale.indexOf(sym) >= 0; })[0] || 'plomien';
+      if (k !== aktywna) ustaw(k);
+      var idx = -1;
+      sts.forEach(function (s, i) { if (s.sym === sym) idx = i; });
+      if (idx < 0) idx = licznik++ % sts.length;
+      sts[idx].wb.ustaw(sym); sts[idx].zmien(sym);
+      lab.scrollIntoView({behavior: RM ? 'auto' : 'smooth', block: 'center'});
+    });
+    ustaw(SERIE[opc.seria] ? opc.seria : 'plomien');
+    return {seria: aktywna};
+  }
+});
+
+/* Klocek: tablica Mendelejewa z kafelkami litowców i berylowców.
+   Góra: kafelki grupy 1 i 2 — klik pokazuje opis i dane pierwiastka pod kafelkami,
+   z przyciskami „Wypróbuj w probówce” / „Wypróbuj w płomieniu” (zdarzenie klocki:uzyj).
+   Dół: pełny układ okresowy (przełącznik Obie grupy / Litowce / Berylowce). */
+KLOCKI.def('uklad-okresowy', {
+  opis: 'Tablica Mendelejewa: kafelki litowców i berylowców z opisem i przyciskami prób; pełny układ z przełącznikiem grup.',
+  domyslne: {grupa: 'oba', wybrany: 'Na'},
+  html: function (host, opc) {
+    var W = [
+      ['H', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'He'],
+      ['Li', 'Be', '', '', '', '', '', '', '', '', '', '', 'B', 'C', 'N', 'O', 'F', 'Ne'],
+      ['Na', 'Mg', '', '', '', '', '', '', '', '', '', '', 'Al', 'Si', 'P', 'S', 'Cl', 'Ar'],
+      ['K', 'Ca', '', '', '', '', '', '', '', '', '', '', 'Ga', 'Ge', 'As', 'Se', 'Br', 'Kr'],
+      ['Rb', 'Sr', '', '', '', '', '', '', '', '', '', '', 'In', 'Sn', 'Sb', 'Te', 'I', 'Xe'],
+      ['Cs', 'Ba', '', '', '', '', '', '', '', '', '', '', 'Tl', 'Pb', 'Bi', 'Po', 'At', 'Rn'],
+      ['Fr', 'Ra', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+    ];
+    var OP = {
+      1: {blok: 's', tytul: 'Grupa 1 — litowce', tekst: 'Jeden elektron walencyjny (wartościowość I). Bardzo reaktywne; reaktywność rośnie w dół grupy.'},
+      2: {blok: 's', tytul: 'Grupa 2 — berylowce', tekst: 'Dwa elektrony walencyjne (wartościowość II). Mniej reaktywne niż litowce; beryl prawie nie reaguje z wodą.'},
+      13: {blok: 'p', tytul: 'Grupa 13 — borowce', tekst: 'Trzy elektrony walencyjne. Glin tworzy tlenek amfoteryczny.'},
+      14: {blok: 'p', tytul: 'Grupa 14 — węglowce', tekst: 'Cztery elektrony walencyjne. Węgiel tworzy setki tysięcy związków organicznych.'},
+      15: {blok: 'p', tytul: 'Grupa 15 — azotowce', tekst: 'Pięć elektronów walencyjnych. Azot w powietrzu (ok. 78%).'},
+      16: {blok: 'p', tytul: 'Grupa 16 — tlenowce', tekst: 'Sześć elektronów walencyjnych. Tlen w powietrzu (ok. 21%).'},
+      17: {blok: 'p', tytul: 'Grupa 17 — fluorowce (halogeny)', tekst: 'Siedem elektronów walencyjnych. Reaktywność maleje w dół: F₂ najbardziej, I₂ najmniej.'},
+      18: {blok: 'p', tytul: 'Grupa 18 — gazy szlachetne', tekst: 'Osiem elektronów walencyjnych (dublet w He). Prawie nie reagują.'}
+    };
+    var PROMIEN = {Fr: 1, Ra: 1};
+    var NAZW = {Li: 'lit', Na: 'sód', K: 'potas', Rb: 'rubid', Cs: 'cez', Fr: 'frans', Be: 'beryl', Mg: 'magnez', Ca: 'wapń', Sr: 'stront', Ba: 'bar', Ra: 'rad'};
+    var wybr = String(opc.wybrany || 'Na');
+    var tryb = String(opc.grupa || 'oba'), wyb = (tryb === '1' || tryb === '2') ? +tryb : 1;
+
+    var box = document.createElement('div'); box.className = 'klocek-ukl';
+    box.style.cssText = 'font-family:var(--tekst,Inter,system-ui,sans-serif);font-size:14px;color:var(--text,#1a2332);display:grid;gap:14px';
+
+    /* ---- kafelki litowców i berylowców ---- */
+    var kafelki = document.createElement('div'); kafelki.style.cssText = 'display:grid;gap:10px';
+    var detal = document.createElement('div'); detal.setAttribute('aria-live', 'polite');
+    detal.style.cssText = 'border:1px solid var(--border,#e5e9ee);border-radius:var(--r-md,10px);background:var(--surface-soft,#f6f8fa);padding:12px 14px;min-height:120px';
+    var kaf = {};
+    [[1, 'Litowce (grupa 1)', ['Li', 'Na', 'K', 'Rb', 'Cs', 'Fr']], [2, 'Berylowce (grupa 2)', ['Be', 'Mg', 'Ca', 'Sr', 'Ba', 'Ra']]].forEach(function (g) {
+      var wiersz = document.createElement('div');
+      var etyk = document.createElement('div'); etyk.textContent = g[1];
+      etyk.style.cssText = 'font:700 13px var(--naglowek,Inter,sans-serif);color:var(--text-soft,#4a5568);margin-bottom:6px';
+      var rzad = document.createElement('div'); rzad.style.cssText = 'display:flex;flex-wrap:wrap;gap:8px';
+      g[2].forEach(function (s) {
+        var b = document.createElement('button'); b.type = 'button'; b.setAttribute('data-kafelek', s);
+        b.setAttribute('aria-label', NAZW[s] + ' (' + s + ')');
+        b.style.cssText = 'position:relative;min-width:58px;padding:8px 10px;border-radius:var(--r-md,10px);border:1px solid var(--border-strong,#cdd5dd);background:var(--surface,#fff);color:var(--text,#1a2332);font:700 18px var(--naglowek,Inter,sans-serif);cursor:pointer';
+        b.innerHTML = s + (PROMIEN[s] ? '<span style="position:absolute;right:3px;top:3px;display:flex">' + KLOCKI.znak.tref(11) + '</span>' : '');
+        b.addEventListener('click', function () { pokazDetal(s); });
+        rzad.appendChild(b); kaf[s] = b;
+      });
+      wiersz.appendChild(etyk); wiersz.appendChild(rzad); kafelki.appendChild(wiersz);
+    });
+    box.appendChild(kafelki); box.appendChild(detal);
+
+    function pokazDetal(s) {
+      var d = (typeof DANE !== 'undefined' && DANE[s]) || {};
+      var og = OP[grupaSym(s)] || {};
+      var opisTxt = d.opis || (og.tekst || '');
+      var zak = PROMIEN[s] && KLOCKI.znak ? KLOCKI.znak.zakaz(d.nie ? 'Bez doświadczenia — pierwiastek zbyt rzadki i promieniotwórczy.' : 'Tylko animacja — doświadczeń z radem nie wykonuje się w szkołach.') : '';
+      var sprobuj = d.nie ? '' :
+        '<div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:10px">' +
+        '<button type="button" class="btn" data-uzyj="probowka" data-sym="' + s + '">Wypróbuj w probówce z wodą</button>' +
+        '<button type="button" class="btn jasny" data-uzyj="palnik" data-sym="' + s + '">Wypróbuj w płomieniu</button></div>';
+      detal.innerHTML = '<div style="font:700 20px var(--naglowek,Inter,sans-serif)">' + s + ' — ' + (NAZW[s] || '') + '</div>' +
+        '<p style="margin:6px 0;color:var(--text-soft,#4a5568)">' + opisTxt + '</p>' +
+        (d.kon ? '<p style="margin:4px 0;font-size:13px;color:var(--text-muted,#8892a0)">Konfiguracja: ' + d.kon + (d.rho ? ' · gęstość ' + d.rho : '') + (d.mp ? ' · t. topnienia ' + d.mp : '') + '</p>' : '') +
+        zak + sprobuj;
+      Object.keys(kaf).forEach(function (k) {
+        var on = k === s;
+        kaf[k].style.background = on ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)';
+        kaf[k].style.color = on ? '#fff' : 'var(--text,#1a2332)';
+        kaf[k].setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+      Array.prototype.forEach.call(detal.querySelectorAll('[data-uzyj]'), function (b) {
+        b.addEventListener('click', function () {
+          document.dispatchEvent(new CustomEvent('klocki:uzyj', {detail: {cel: b.getAttribute('data-uzyj'), sym: b.getAttribute('data-sym')}}));
+        });
+      });
+    }
+    function grupaSym(s) { return G1.indexOf(s) >= 0 ? 1 : G2.indexOf(s) >= 0 ? 2 : 0; }
+
+    /* ---- pełny układ okresowy ---- */
+    var pelny = document.createElement('div'); pelny.style.cssText = 'display:grid;gap:8px';
+    var przel = document.createElement('div'); przel.setAttribute('role', 'group'); przel.setAttribute('aria-label', 'Wybór grupy');
+    przel.style.cssText = 'display:flex;flex-wrap:wrap;gap:6px';
+    var tryby = [['oba', 'Obie grupy'], ['1', 'Litowce (1)'], ['2', 'Berylowce (2)']], btnTr = {};
+    tryby.forEach(function (t) {
+      var b = document.createElement('button'); b.type = 'button'; b.textContent = t[1]; b.setAttribute('data-tryb', t[0]);
+      b.style.cssText = 'font:600 13px Inter,system-ui,sans-serif;padding:6px 12px;border-radius:999px;border:1px solid var(--border-strong,#cdd5dd);background:var(--surface,#fff);color:var(--text,#1a2332);cursor:pointer';
+      b.addEventListener('click', function () { ustaw(t[0]); });
+      przel.appendChild(b); btnTr[t[0]] = b;
+    });
+    var opis = document.createElement('div'); opis.setAttribute('aria-live', 'polite');
+    opis.style.cssText = 'min-height:44px;padding:8px 10px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-md,10px);background:var(--surface-soft,#f6f8fa);color:var(--text,#1a2332);font-size:14px';
+    var naglow = document.createElement('div'), tbl = document.createElement('div');
+    pelny.appendChild(przel); pelny.appendChild(opis); pelny.appendChild(naglow); pelny.appendChild(tbl);
+    box.appendChild(pelny);
+    host.appendChild(box);
+
+    function rysuj() {
+      var cols = tryb === 'oba' ? [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18] : [wyb];
+      var n = cols.length;
+      naglow.innerHTML = ''; naglow.style.cssText = 'display:grid;grid-template-columns:repeat(' + n + ',1fr);gap:2px';
+      cols.forEach(function (g) {
+        var b = document.createElement('button'); b.type = 'button'; b.textContent = g;
+        var ma = !!OP[g];
+        b.style.cssText = 'font-size:11px;padding:3px 0;border:1px solid var(--border-strong,#cdd5dd);border-radius:4px;background:var(--surface,#fff);color:var(--text,#1a2332);cursor:' + (ma ? 'pointer' : 'default') + ';opacity:' + (ma ? 1 : .45);
+        if (ma) b.addEventListener('click', function () { ustaw(g === 1 || g === 2 ? String(g) : 'oba'); });
+        naglow.appendChild(b);
+      });
+      tbl.innerHTML = ''; tbl.style.cssText = 'display:grid;grid-template-columns:repeat(' + n + ',1fr);gap:2px';
+      W.forEach(function (wiersz) {
+        cols.forEach(function (g) {
+          var sym = wiersz[g - 1], cell = document.createElement('div');
+          cell.setAttribute('data-col', String(g));
+          cell.style.cssText = 'text-align:center;padding:3px 0;border:1px solid transparent;border-radius:4px;min-height:22px;color:var(--text,#1a2332);' + (sym ? '' : 'visibility:hidden');
+          cell.innerHTML = sym ? '<b>' + sym + '</b>' + (PROMIEN[sym] && KLOCKI.znak ? '<span style="display:block;margin:0 auto;width:10px">' + KLOCKI.znak.tref(10) + '</span>' : '') : '';
+          tbl.appendChild(cell);
+        });
+      });
+      var o = OP[wyb];
+      opis.innerHTML = (tryb !== 'oba' && o) ? '<b>' + o.tytul + '</b><br>' + o.tekst : '<span style="color:var(--text-soft,#4a5568)">Wybierz grupę 1 (litowce) lub 2 (berylowce) — opis pojawi się tutaj.</span>';
+      Array.prototype.forEach.call(tbl.querySelectorAll('[data-col]'), function (c) {
+        var on = +c.getAttribute('data-col') === wyb;
+        c.style.background = on ? (o && o.blok === 's' ? 'var(--accent-soft,#e6f2f1)' : 'var(--c-warn-bg,#fcf4e6)') : '';
+        c.style.borderColor = on ? 'var(--accent,#0d6868)' : 'transparent';
+      });
+      Object.keys(btnTr).forEach(function (k) {
+        var on = k === tryb;
+        btnTr[k].style.background = on ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)';
+        btnTr[k].style.color = on ? '#fff' : 'var(--text,#1a2332)';
+        btnTr[k].setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+    }
+    function ustaw(t) { if (t === 'oba') tryb = 'oba'; else { tryb = t; wyb = +t; } rysuj(); }
+
+    rysuj();
+    if (wybr) pokazDetal(wybr);
+  }
+});
+
+(function(){document.querySelectorAll('[data-klocek]').forEach(function(f){var o={};try{o=JSON.parse(f.getAttribute('data-opt')||'{}')}catch(e){}Object.keys(o).forEach(function(k){if(o[k]!==''&&!isNaN(Number(o[k])))o[k]=Number(o[k])});KLOCKI.montuj(f.querySelector('.lk-fig-body'),f.getAttribute('data-klocek'),o)})})();
+/* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
+   postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
+(function(){
+var html=document.documentElement;
+function ciemny(){var t=html.getAttribute('data-theme');return t?t==='dark':!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function oznacz(){if(ciemny())html.setAttribute('data-ciemny','');else html.removeAttribute('data-ciemny')}
+try{var z=localStorage.getItem('lekcja-motyw');if(z)html.setAttribute('data-theme',z)}catch(e){}
+oznacz();if(window.matchMedia)try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',oznacz)}catch(e){}
+
+function start(){
+var root=document;
+root.querySelectorAll('.flashcard').forEach(function(b){if(b.dataset.lkFz)return;b.dataset.lkFz=1;b.removeAttribute('onclick');b.setAttribute('aria-pressed','false');
+ b.addEventListener('click',function(){var on=b.classList.toggle('flipped');b.setAttribute('aria-pressed',on?'true':'false')})});
+root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibling,ok=0,n=0,all=w.querySelectorAll('.quiz-q').length;
+ if(sc&&sc.classList.contains('quiz-score'))sc.setAttribute('aria-live','polite');
+ w.querySelectorAll('.quiz-q').forEach(function(d){var good=+d.dataset.ok;d.querySelectorAll('.quiz-opt').forEach(function(b){b.onclick=function(){if(d.dataset.done)return;d.dataset.done=1;n++;if(+b.dataset.a===good)ok++;
+  d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
+  if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
+  if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var b=root.querySelector('#advToggle');
+if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
+ if(!k)b.style.display='none';
+ b.textContent='Pokaż treści akademickie ('+k+')';
+ b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';adv().forEach(function(d){d.open=on});b.setAttribute('aria-pressed',on?'true':'false');b.textContent=(on?'Ukryj':'Pokaż')+' treści akademickie ('+k+')'}}
+// spis zwinięty na telefonie
+var sp=root.querySelector('#spis');if(sp&&window.innerWidth<700)sp.removeAttribute('open');
+// przełącznik jasny/ciemny
+var tb=root.querySelector('#lkMotyw');
+if(tb)tb.onclick=function(){var t=ciemny()?'light':'dark';html.setAttribute('data-theme',t);try{localStorage.setItem('lekcja-motyw',t)}catch(e){}oznacz()};
+// postęp czytania + aktywna sekcja w spisie
+var bar=root.querySelector('.lk-prog'),links={},secs=[];
+root.querySelectorAll('.toc-link[href^="#"]').forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1));if(s){links[s.id]=a;secs.push(s)}});
+var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+ if(bar)bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';
+ var cur=null,lim=(parseInt(getComputedStyle(h).getPropertyValue('--header-h'))||52)+40;
+ for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
+ for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// fiszki: pokazuje pierwsze N (domyślnie 6, atrybut data-fz-pierwsze="N"), reszta po wyraźnym przycisku
+root.querySelectorAll('.flashcard-grid').forEach(function(g){
+ var cards=[].slice.call(g.querySelectorAll('.flashcard')),N=+(g.getAttribute('data-fz-pierwsze')||6);
+ if(!(N>0)||cards.length<=N)return;
+ var ukryte=cards.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more';
+ function lab(on){ukryte.forEach(function(c){c.hidden=!on});
+  b.textContent=on?'▲ Zwiń fiszki':'▼ Pokaż pozostałe '+ile+' fiszek (razem '+cards.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ g.insertAdjacentElement('afterend',b);
+});
+// testy: pokazuje pierwsze N pytań (domyślnie 5, atrybut data-q-pierwsze), reszta po wyraźnym przycisku
+root.querySelectorAll('.che-quiz').forEach(function(w){
+ var qs=[].slice.call(w.querySelectorAll('.quiz-q')),N=+(w.getAttribute('data-q-pierwsze')||5);
+ if(!(N>0)||qs.length<=N)return;
+ var ukryte=qs.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more q-more';
+ function lab(on){ukryte.forEach(function(q){q.hidden=!on});
+  b.textContent=on?'▲ Zwiń pytania':'▼ Pokaż pozostałe '+ile+(ile===1?' pytanie':(ile<5?' pytania':' pytań'))+' (razem '+qs.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ var sc=w.nextElementSibling;(sc&&sc.classList.contains('quiz-score')?sc:w).insertAdjacentElement('afterend',b);
+});
+// grafiki przedmiotu
+if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
+if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();
+
+</script>
+</body>
+</html>

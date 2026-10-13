@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="pl" data-przedmiot="che">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>X04 · Szereg aktywności metali — reakcje z wodą, kwasami i solami</title>
+<style id="lekcja-css">
+/* baza.css — wspólna baza lekcji wszystkich przedmiotów (styl lekcji silnika CHE v0_57). Nie edytować — zmiany wspólne w ulepszenia.css, przedmiotowe w motywy/<kod>.css. */
+
+
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+--bg:#fafbfc;--surface:#ffffff;--surface-soft:#f6f8fa;--surface-warm:#fdfaf4;--border:#e5e9ee;--border-strong:#cdd5dd;
+--text:#1a2332;--text-soft:#4a5568;--text-muted:#8892a0;--text-faint:#b4bcc6;
+--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,0.15);
+--c-basic:#2e7d4f;--c-basic-bg:#eaf6ee;--c-basic-line:#b8dcc4;
+--c-understand:#2b5e9c;--c-understand-bg:#eaf1f9;--c-understand-line:#bcd0e5;
+--c-warn:#b06f1c;--c-warn-bg:#fcf4e6;--c-warn-line:#eed8a8;
+--c-error:#b83a45;--c-error-bg:#fbeced;--c-error-line:#e8b5b9;
+--c-extra:#6b3fa0;--c-extra-bg:#f3ecfa;--c-extra-line:#d3bde8;
+--c-new:#0d7d7d;--c-new-bg:#e6f4f4;--c-new-line:#b0dcdc;
+--c-exam:#a86a00;--c-exam-bg:#fdf5e0;--c-exam-line:#eed49c;
+--sh-sm:0 1px 2px rgba(26,35,50,0.04);--sh-md:0 4px 12px rgba(26,35,50,0.06);--sh-lg:0 12px 32px rgba(26,35,50,0.10);--sh-xl:0 20px 48px rgba(26,35,50,0.14);
+--r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;
+--header-h:56px;
+--ease:cubic-bezier(0.4,0,0.2,1);--ease-out:cubic-bezier(0.16,1,0.3,1);
+--hl-key:#0d6868;--hl-key-bg:#d8ecea;--hl-warn:#b83a45;--hl-warn-bg:#fbe0e2;--hl-new:#6b3fa0;--hl-new-bg:#ede0f8;--hl-formula:#084848;--hl-formula-bg:#e0eeed;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;padding:calc(var(--header-h) + 12px) 0 88px;min-height:100vh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+@media(min-width:600px){body{padding:calc(var(--header-h) + 18px) 12px 96px;}}
+@media(min-width:768px){body{padding:calc(var(--header-h) + 24px) 20px 100px;}}
+@media(min-width:1100px){body{padding:calc(var(--header-h) + 28px) 32px 110px;}}
+.fab{position:fixed;top:12px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);background:rgba(255,255,255,0.94);color:var(--text);cursor:pointer;border-radius:var(--r-md);padding:0;transition:all 0.2s var(--ease);z-index:1200;box-shadow:var(--sh-sm);backdrop-filter:blur(8px);}
+.fab:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);box-shadow:var(--sh-md);transform:translateY(-1px);}
+.fab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.fab-left{left:6px;}.fab-right{right:6px;}
+@media(min-width:600px){.fab-left{left:10px;}.fab-right{right:10px;}}
+@media(min-width:768px){.fab-left{left:14px;}.fab-right{right:14px;}}
+.fab-left::after{content:'';width:16px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;border-radius:1px;transition:transform 0.25s var(--ease);}
+.fab-left.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.fab-left.is-open::after{width:16px;height:2px;background:currentColor;box-shadow:none;transform:rotate(45deg);}
+.fab-left.is-open::before{content:'';position:absolute;width:16px;height:2px;background:currentColor;transform:rotate(-45deg);border-radius:1px;}
+.fab-right::after{content:'';display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:8px solid currentColor;transition:transform 0.35s var(--ease-out);}
+.fab-right.is-hidden::after{transform:rotate(0deg);}
+.fab-right:not(.is-hidden)::after{transform:rotate(180deg);}
+.header-wrapper{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);transform:translateY(0);transition:transform 0.45s var(--ease-out),box-shadow 0.3s var(--ease);box-shadow:var(--sh-sm);}
+.header-wrapper.is-hidden{transform:translateY(-100%);box-shadow:none;}
+.header-bar{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:0 16px;height:var(--header-h);}
+@media(min-width:768px){.header-bar{padding:0 24px;}}
+.header-subject{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:1px;padding:4px 10px;background:var(--accent-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;}
+.header-title{font-size:15px;font-weight:700;color:var(--text);letter-spacing:-0.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1 1 auto;min-width:0;}
+.header-lesson{font-size:10px;font-weight:800;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.7px;padding:4px 9px;background:var(--surface-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;font-family:'JetBrains Mono',monospace;}
+.header-nav{display:flex;gap:2px;flex-shrink:0;align-items:center;}
+.header-nav a,.header-nav button{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;border-radius:var(--r-sm);font-size:16px;font-weight:500;transition:all 0.2s var(--ease);border:1px solid transparent;background:transparent;cursor:pointer;padding:0;font-family:inherit;}
+.header-nav a:hover,.header-nav button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.header-resume-btn.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.header-resume-btn::before{content:'▮';font-size:14px;line-height:1;}
+.header-panel{display:none;border-top:1px solid var(--border);background:linear-gradient(180deg,var(--surface) 0%,var(--surface-soft) 100%);padding:20px 16px 24px;}
+@media(min-width:768px){.header-panel{padding:24px 24px 28px;}}
+.header-panel.is-open{display:block;}
+.header-panel-inner{max-width:900px;margin:0 auto;}
+.header-kicker{font-size:11px;color:var(--text-muted);text-transform:uppercase;font-weight:800;letter-spacing:1px;margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.header-kicker::before{content:'';width:24px;height:2px;background:var(--accent);display:inline-block;border-radius:1px;}
+.header-h1{font-size:32px;font-weight:800;color:var(--text);letter-spacing:-1px;margin-bottom:10px;line-height:1.1;}
+.header-subtitle{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:18px;max-width:720px;}
+.header-modes{display:flex;gap:6px;flex-wrap:wrap;}
+.mode-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 15px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);font-family:inherit;}
+.mode-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
+.mode-btn:hover:not(.active){background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.resume-dropdown{display:none;position:fixed;top:calc(var(--header-h) + 6px);right:14px;z-index:1050;width:min(300px,calc(100vw - 30px));padding:14px;border:1px solid var(--border-strong);border-radius:12px;background:#fff;box-shadow:var(--sh-lg);}
+.resume-dropdown.is-open{display:block;}
+.resume-dropdown h4{margin:0 0 5px;color:var(--text);font-size:.85rem;}
+.resume-dropdown p{margin:0 0 12px;color:var(--text-muted);font-size:.75rem;line-height:1.5;}
+.resume-actions{display:flex;gap:6px;}
+.resume-actions button{flex:1;padding:8px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text-soft);font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.resume-actions .resume-save{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toc-overlay{position:fixed;inset:0;background:rgba(26,35,50,0.34);backdrop-filter:blur(3px);z-index:1100;opacity:0;visibility:hidden;transition:opacity 0.3s var(--ease),visibility 0.3s var(--ease);}
+.toc-overlay.is-visible{opacity:1;visibility:visible;}
+.toc-wrapper{position:fixed;left:0;top:0;width:320px;max-width:86vw;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:1150;transform:translateX(-100%);transition:transform 0.4s var(--ease-out);padding-top:64px;box-shadow:var(--sh-xl);}
+.toc-wrapper.is-open{transform:translateX(0);}
+.toc-content{padding:12px 14px 100px;}
+.toc-header{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);padding:4px 12px 12px;}
+.toc-item{margin-bottom:4px;border-radius:var(--r-md);overflow:hidden;}
+.toc-summary{padding:10px 12px;font-size:13px;font-weight:700;color:var(--text);cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;border-radius:var(--r-sm);transition:background 0.2s var(--ease),color 0.2s var(--ease);user-select:none;}
+.toc-summary:hover{background:var(--accent-soft);color:var(--accent);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::marker{content:'';}
+.toc-summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);opacity:0.5;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);opacity:1;}
+.toc-links{padding:4px 0 8px 28px;display:flex;flex-direction:column;gap:1px;}
+.toc-link{display:block;padding:6px 10px;font-size:12.5px;color:var(--text-soft);text-decoration:none;border-radius:4px;transition:all 0.2s var(--ease);border-left:2px solid transparent;}
+.toc-link:hover{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);}
+.container{max-width:820px;margin:0 auto;background:var(--surface);border-radius:0;box-shadow:none;padding:18px 12px;border:none;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+@media(min-width:600px){.container{border-radius:var(--r-lg);box-shadow:var(--sh-md);border:1px solid var(--border);padding:22px 18px;}}
+@media(min-width:768px){.container{padding:36px 36px;border-radius:var(--r-xl);}}
+@media(min-width:1100px){.container{max-width:840px;padding:40px 40px;}}
+h1,h2,h3,h4,h5{font-weight:800;color:var(--text);letter-spacing:-0.3px;line-height:1.3;}
+h2{font-size:24px;margin-top:44px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+h3{font-size:17px;margin-top:32px;margin-bottom:12px;font-weight:800;}
+h4{font-size:15px;margin-top:24px;margin-bottom:10px;font-weight:800;}
+h5{font-size:13px;margin-top:16px;margin-bottom:8px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-soft);}
+p{margin-bottom:12px;}
+ul,ol{padding-left:24px;margin-bottom:14px;}
+li{margin-bottom:6px;padding-left:4px;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s var(--ease);}
+a:hover{border-bottom-color:var(--accent);}
+strong{font-weight:700;color:var(--text);}
+.hl{background:var(--hl-key-bg);color:var(--hl-key);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-warn{background:var(--hl-warn-bg);color:var(--hl-warn);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-new{background:var(--hl-new-bg);color:var(--hl-new);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.formula{display:inline-block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:14px;font-weight:600;color:var(--hl-formula);background:var(--hl-formula-bg);padding:4px 12px;border-radius:var(--r-sm);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:3px 2px;white-space:nowrap;}
+.formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
+code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
+pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
+.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
+.mnemonic b{color:#78350f;}
+.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
+@media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
+.card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
+.card-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:10px;padding:3px 9px;background:var(--accent-soft);border-radius:4px;}
+.card-core{background:var(--accent-soft);border-color:var(--accent-line);border-left-color:var(--accent);}
+.card-basic{background:var(--c-basic-bg);border-color:var(--c-basic-line);border-left-color:var(--c-basic);}
+.card-basic .card-label{background:rgba(46,125,79,0.12);color:var(--c-basic);}
+.card-understand{background:var(--c-understand-bg);border-color:var(--c-understand-line);border-left-color:var(--c-understand);}
+.card-understand .card-label{background:rgba(43,94,156,0.12);color:var(--c-understand);}
+.card-warning{background:var(--c-warn-bg);border-color:var(--c-warn-line);border-left-color:var(--c-warn);}
+.card-warning .card-label{background:rgba(176,111,28,0.12);color:var(--c-warn);}
+.card-error{background:var(--c-error-bg);border-color:var(--c-error-line);border-left-color:var(--c-error);}
+.card-error .card-label{background:rgba(184,58,69,0.12);color:var(--c-error);}
+.card-extra{background:var(--c-extra-bg);border-color:var(--c-extra-line);border-left-color:var(--c-extra);}
+.card-extra .card-label{background:rgba(107,63,160,0.12);color:var(--c-extra);}
+.card-new{background:var(--c-new-bg);border-color:var(--c-new-line);border-left-color:var(--c-new);}
+.card-new .card-label{background:rgba(13,125,125,0.12);color:var(--c-new);}
+.card-exam{background:var(--c-exam-bg);border-color:var(--c-exam-line);border-left-color:var(--c-exam);}
+.card-exam .card-label{background:rgba(168,106,0,0.12);color:var(--c-exam);}
+.card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0;}
+details.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent-line);border-radius:var(--r-sm);padding:10px 14px;margin:10px 0;transition:all 0.2s var(--ease);}
+details.answer[open]{background:var(--accent-soft);border-left-color:var(--accent);}
+details.answer summary{cursor:pointer;font-weight:700;color:var(--text-soft);font-size:13px;list-style:none;user-select:none;display:flex;align-items:center;gap:10px;transition:color 0.2s var(--ease);}
+details.answer summary::-webkit-details-marker{display:none;}
+details.answer summary::marker{content:'';}
+details.answer summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer[open] summary{color:var(--accent);}
+details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}
+.part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}
+@media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}
+.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
+@media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}
+.table-wrap th,.table-wrap td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px;}
+@media(min-width:600px){.table-wrap th,.table-wrap td{padding:10px 12px;font-size:13.5px;}}
+.table-wrap th{background:var(--surface-soft);font-weight:800;color:var(--text-soft);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;}
+@media(min-width:600px){.table-wrap th{font-size:11px;letter-spacing:0.7px;white-space:nowrap;}}
+.table-wrap.table-compact td,.table-wrap.table-compact th{padding:7px 6px;font-size:12.5px;}
+.table-wrap tr:last-child td{border-bottom:none;}
+.table-wrap tr:hover td{background:var(--accent-soft);}
+.table-wrap .error-row{background:var(--c-error-bg);}
+.table-wrap .ok-row{background:var(--c-basic-bg);}
+.def-list{display:flex;flex-direction:column;gap:8px;margin:14px 0;}
+.def-item{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px 16px;}
+.def-item dt{font-weight:800;color:var(--text);font-size:13.5px;margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+.def-item dt::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;}
+.def-item dd{color:var(--text-soft);font-size:13.5px;line-height:1.6;margin:0;padding-left:11px;}
+.minimum-card{background:linear-gradient(135deg,var(--surface-soft) 0%,var(--accent-soft) 100%);border:1px solid var(--accent-line);border-radius:var(--r-lg);padding:20px 22px;margin:8px 0 28px;box-shadow:var(--sh-sm);position:relative;overflow:hidden;}
+@media(min-width:768px){.minimum-card{padding:28px 34px;margin-bottom:36px;}}
+.minimum-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:var(--accent);}
+.minimum-card h3{color:var(--accent);margin:0 0 16px;font-size:16px;letter-spacing:0.2px;display:flex;align-items:center;gap:10px;}
+.minimum-card h3::before{content:'★';font-size:16px;}
+.minimum-card ol{margin:0;padding-left:0;list-style:none;counter-reset:min-list;}
+.minimum-card li{counter-increment:min-list;padding-left:36px;position:relative;margin-bottom:12px;font-size:14px;line-height:1.6;}
+.minimum-card li::before{content:counter(min-list);position:absolute;left:0;top:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--surface);color:var(--accent);border:2px solid var(--accent-line);border-radius:50%;font-size:12px;font-weight:800;}
+.minimum-card li:last-child{margin-bottom:0;}
+.level-badge{display:inline-block;font-size:9.5px;font-weight:800;text-transform:uppercase;padding:2px 9px;border-radius:12px;vertical-align:middle;letter-spacing:0.5px;line-height:1.6;margin-left:8px;}
+.level-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.level-understand{background:var(--c-understand-bg);color:var(--c-understand);}
+.level-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.level-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.level-new{background:var(--c-new-bg);color:var(--c-new);}
+.rule-box{background:var(--c-understand-bg);border:1px solid var(--c-understand-line);border-radius:var(--r-md);padding:14px 18px;margin:14px 0;font-size:14px;line-height:1.65;}
+.rule-box b{color:var(--c-understand);}
+.step-flow{background:var(--text);color:#fff;padding:16px 18px;border-radius:var(--r-md);font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:12.5px;line-height:1.9;margin:14px 0;overflow-x:auto;white-space:pre;}
+@media(min-width:768px){.step-flow{font-size:13.5px;padding:16px 20px;}}
+.footer{margin-top:56px;padding-top:24px;border-top:2px solid var(--border);text-align:center;font-size:12.5px;color:var(--text-muted);letter-spacing:0.2px;}
+.footer p{margin-bottom:4px;}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:6px;border:2px solid var(--bg);}
+::-webkit-scrollbar-thumb:hover{background:var(--text-muted);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.bottom-nav{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:1100;width:min(700px,calc(100vw - 24px));font-size:.78rem;}
+.bottom-nav__toggle{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;padding:8px 14px;border:1px solid var(--border-strong);border-radius:999px;background:rgba(255,255,255,.97);color:var(--text-soft);font:700 .72rem inherit;box-shadow:0 5px 18px rgba(15,23,42,.14);cursor:pointer;backdrop-filter:blur(10px);font-family:inherit;}
+.bottom-nav__panel{display:none;margin-bottom:7px;padding:10px;border:1px solid var(--border-strong);border-radius:14px;background:rgba(255,255,255,.98);box-shadow:0 10px 28px rgba(15,23,42,.16);backdrop-filter:blur(12px);}
+.bottom-nav.is-open .bottom-nav__panel{display:block;}
+.bottom-nav__primary{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.bottom-nav a,.bottom-nav button.nav-more{min-height:36px;display:flex;align-items:center;justify-content:center;padding:6px 8px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--text-soft);text-decoration:none;font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.bottom-nav a:hover,.bottom-nav button.nav-more:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+@media(max-width:420px){
+  .bottom-nav{font-size:.7rem;width:calc(100vw - 12px);}
+  .bottom-nav a,.bottom-nav button.nav-more{padding:6px 4px;font-size:.65rem;}
+}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
+.widget{background:var(--surface);border:2px solid var(--border);border-radius:var(--r-md);padding:14px;margin:14px 0;box-shadow:var(--sh-sm);}
+@media(min-width:768px){.widget{padding:22px 26px;margin:20px 0;border-radius:var(--r-lg);}}
+.widget h4{margin:0 0 8px;color:var(--text);font-size:15px;font-weight:800;}
+@media(min-width:768px){.widget h4{font-size:16px;}}
+.widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
+.bld-pool{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.bld-pool button{padding:6px 12px;border:1px solid var(--border);border-radius:20px;background:#fff;font:600 0.8rem inherit;cursor:pointer;font-family:inherit;color:var(--text);}
+.bld-pool button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bld-workspace{min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;}
+.bld-feedback,.re-result,.st-feedback,.ch-feedback{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;line-height:1.5;}
+.bld-feedback.ok,.re-result.ok,.st-feedback.ok,.ch-feedback.ok{background:var(--c-basic-bg);color:var(--c-basic);border:1px solid var(--c-basic-line);}
+.bld-feedback.bad,.re-result.bad,.st-feedback.bad,.ch-feedback.bad{background:var(--c-error-bg);color:var(--c-error);border:1px solid var(--c-error-line);}
+.bld-feedback.info,.re-result.info,.st-feedback.info,.ch-feedback.info{background:var(--c-understand-bg);color:var(--c-understand);border:1px solid var(--c-understand-line);}
+.bld-feedback.warn,.re-result.warn,.st-feedback.warn,.ch-feedback.warn{background:var(--c-warn-bg);color:var(--c-warn);border:1px solid var(--c-warn-line);}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);color:var(--text);font-family:inherit;}
+.btn:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent);}
+.btn-primary:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+.btn-sm{padding:6px 10px;font-size:12px;}
+.flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}
+@media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--border);border-radius:var(--r-md);background:#fff;color:var(--text);font:inherit;text-align:center;cursor:pointer;box-shadow:var(--sh-sm);transition:all 0.2s var(--ease);position:relative;font-family:inherit;}
+.flashcard:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-3px);box-shadow:var(--sh-md);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:90px;}
+.flashcard .front{font-weight:700;font-size:14.5px;line-height:1.5;}
+.flashcard .back{display:none;color:var(--text-soft);font-size:13.5px;line-height:1.6;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:8px;right:8px;font-size:9px;text-transform:uppercase;background:var(--surface-soft);padding:2px 8px;border-radius:10px;color:var(--text-muted);font-weight:800;letter-spacing:0.4px;}
+.flashcard .card-tag.tag-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.flashcard .card-tag.tag-error{background:var(--c-error-bg);color:var(--c-error);}
+.flashcard .card-tag.tag-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.flashcard .card-tag.tag-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.checklist{background:#fff;border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.checklist h4{color:var(--c-basic);margin:0 0 12px;font-size:15px;}
+.checklist ul{list-style:none;padding-left:0;margin:0;}
+.checklist li{padding:7px 0;font-size:13.5px;border-bottom:1px dashed var(--c-basic-line);display:flex;align-items:flex-start;gap:10px;line-height:1.55;}
+.checklist li:last-child{border-bottom:none;}
+.checklist li::before{content:'☐';color:var(--c-basic);font-weight:700;font-size:1.15rem;flex-shrink:0;line-height:1.2;}
+.core-path{background:linear-gradient(135deg,var(--c-basic-bg) 0%,#dcefe2 100%);border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:800;color:var(--c-basic);font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.core-path .cp-title::before{content:'▶';font-size:12px;}
+.core-path ol{margin:0;padding-left:22px;}
+.core-path li{margin-bottom:6px;font-size:13.5px;line-height:1.6;}
+.audit-panel{background:var(--surface-soft);border:2px solid var(--border-strong);border-radius:var(--r-lg);padding:16px 18px;margin:16px 0;}
+.audit-panel h4{margin:0 0 12px;color:var(--text);}
+.audit-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px;}
+@media(min-width:600px){.audit-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}}
+.audit-item{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:10px 12px;font-size:12.5px;line-height:1.55;}
+.mini-note{font-size:12.5px;color:var(--text-muted);font-style:italic;margin-top:8px;line-height:1.55;}
+.layer-legend{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:12px 14px;margin:12px 0;display:grid;grid-template-columns:1fr;gap:8px 18px;}
+@media(min-width:600px){.layer-legend{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;}}
+.layer-legend .layer-row{display:flex;gap:10px;align-items:center;font-size:12.5px;line-height:1.5;}
+.layer-legend .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.e8{background:var(--c-basic);}
+.layer-legend .dot.understand{background:var(--c-understand);}
+.layer-legend .dot.extra{background:var(--c-extra);}
+.layer-legend .dot.contest{background:var(--c-warn);}
+.klinika-table td.col-blad{color:var(--c-error);font-weight:700;}
+.klinika-table td.col-blad::before{content:'✕ ';font-weight:900;margin-right:4px;color:var(--c-error);}
+.klinika-table td.col-ok{color:var(--c-basic);font-weight:700;}
+.klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}
+.map-card{position:relative;}
+.map-expand-btn{position:absolute;top:10px;right:10px;z-index:3;padding:6px 12px;border:1px solid var(--accent-line);background:rgba(255,255,255,0.95);color:var(--accent);border-radius:var(--r-sm);font-size:12px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:var(--sh-sm);transition:all 0.15s var(--ease);}
+.map-expand-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.map-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(26,35,50,0.85);backdrop-filter:blur(6px);}
+.map-overlay.is-open{display:block;}
+.map-overlay-inner{position:absolute;inset:12px;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-xl);}
+.map-overlay-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface-soft);gap:8px;flex-wrap:wrap;}
+.map-overlay-title{font-weight:800;font-size:14px;color:var(--text);}
+.map-overlay-actions{display:flex;gap:6px;}
+.map-overlay-actions button{padding:6px 12px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;color:var(--text-soft);transition:all 0.15s var(--ease);}
+.map-overlay-actions button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.map-overlay-actions .map-close{background:var(--c-error);color:#fff;border-color:var(--c-error);}
+.map-overlay-canvas{flex:1;overflow:hidden;position:relative;background:#fff;cursor:grab;touch-action:none;}
+.map-overlay-canvas svg{display:block;position:absolute;top:0;left:0;transform-origin:0 0;}
+@media print{
+.fab,.toc-wrapper,.toc-overlay,.header-wrapper,.bottom-nav,.resume-dropdown,.map-overlay,.map-expand-btn{display:none !important;}
+body{padding:0;background:#fff;}
+.container{box-shadow:none;border:none;padding:0;max-width:100%;}
+details.answer{page-break-inside:avoid;}
+details.answer > *:not(summary){display:block !important;}
+details.answer summary{display:none;}
+.card{page-break-inside:avoid;}
+.widget{page-break-inside:avoid;}
+}
+@media (prefers-reduced-motion: reduce){
+*{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+html{scroll-behavior:auto;}
+}
+html,body{max-width:100%;overflow-x:hidden;}
+.table-scroll-hint{display:none;align-items:center;justify-content:space-between;gap:8px;padding:7px 11px;margin-top:0;margin-bottom:8px;border:1px solid var(--border);border-bottom:0;border-radius:var(--r-sm) var(--r-sm) 0 0;background:var(--surface-soft);color:var(--text-muted);font-size:11px;font-weight:700;}
+.table-wrap.is-scrollable + .table-scroll-hint{display:flex;}
+.table-scroll-hint .scroll-arrow{font-size:13px;letter-spacing:2px;color:var(--accent);}
+.timeline-anim{border-color:var(--c-understand-line);}
+.ta-stage{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 14px;min-height:280px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.ta-scene{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;animation:taFade 0.6s ease-out;width:100%;}
+@keyframes taFade{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.ta-scene .ta-year{font-size:1.7rem;font-weight:800;color:var(--accent);font-family:'JetBrains Mono',monospace;letter-spacing:1px;}
+.ta-scene .ta-who{font-size:1.05rem;font-weight:800;color:var(--text);}
+.ta-scene .ta-desc{font-size:13.5px;color:var(--text-soft);max-width:600px;line-height:1.65;}
+.ta-dots{display:flex;justify-content:center;gap:8px;margin:14px 0 8px;}
+.ta-dot{width:12px;height:12px;border-radius:50%;background:var(--border-strong);border:2px solid transparent;cursor:pointer;padding:0;transition:all 0.2s var(--ease);}
+.ta-dot.active{background:var(--accent);transform:scale(1.25);box-shadow:0 0 0 3px var(--accent-glow);}
+.ta-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;}
+.ta-nav{padding:8px 14px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-weight:700;color:var(--text-soft);cursor:pointer;font-size:12.5px;transition:all 0.15s var(--ease);}
+.ta-nav:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.ta-progress{font-size:12.5px;color:var(--text-muted);font-weight:700;font-family:'JetBrains Mono',monospace;}
+.eq-player{background:linear-gradient(180deg,#f8fafc,#eef6f5);border:2px solid var(--accent-line);border-radius:var(--r-lg);padding:16px 18px;margin:14px 0;}
+.eq-stage{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.15rem;padding:12px;background:#fff;border-radius:var(--r-md);border:1px solid var(--border);}
+.eq-term{display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border);opacity:0;}
+.eq-term.show{opacity:1;animation:reaction-flow 0.7s ease-out;}
+.eq-term.reactant{background:#e0f2fe;border-color:#7dd3fc;color:#0c4a6e;}
+.eq-term.product{background:#dcfce7;border-color:#86efac;color:#14532d;}
+.eq-arrow{opacity:0;color:var(--accent);font-size:1.4rem;}
+.eq-arrow.show{opacity:1;}
+.eq-balance{margin-top:10px;font-size:13px;color:var(--text-soft);display:none;}
+.eq-balance.show{display:block;}
+@keyframes reaction-flow{0%{opacity:.25;transform:scale(.92)}55%{opacity:1}100%{opacity:1;transform:scale(1)}}
+.ion-assembly{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;padding:18px 12px;background:#fff;border:1px solid var(--border);border-radius:var(--r-md);margin:10px 0;}
+.ion-chip{padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid var(--border);}
+.ion-chip.cation{background:#e0f2fe;border-color:#38bdf8;color:#0c4a6e;}
+.ion-chip.anion{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.ion-chip.product{background:#dcfce7;border-color:#4ade80;color:#14532d;}
+.ion-plus,.ion-join{font-size:1.4rem;font-weight:800;color:var(--text-muted);}
+.hero{max-width:900px;margin:0 auto 22px;padding:26px;border:1px solid var(--border);border-radius:var(--r-xl);background:linear-gradient(135deg,#fff,var(--accent-soft));box-shadow:var(--sh-md);}
+.hero h1{font-size:clamp(32px,6vw,52px);margin:4px 0 8px;}
+.hero-kicker{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--accent);text-transform:uppercase;}
+.lead{font-size:16px;color:var(--text-soft);max-width:720px;}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;}
+.page{max-width:900px;margin:0 auto;}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+@media(max-width:720px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px;}
+.metric-grid>div,.result-card,.step-card{padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);}
+.metric-grid b{display:block;font-size:10px;text-transform:uppercase;color:var(--text-muted);}
+.metric-grid strong{display:block;margin-top:3px;}
+@media(max-width:700px){.metric-grid{grid-template-columns:1fr;}}
+.controls,.button-grid{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;}
+.controls button,.button-grid button,.quiz-opt{padding:8px 12px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;cursor:pointer;}
+.particle-stage{height:120px;display:flex;align-items:center;justify-content:center;gap:70px;border:1px dashed var(--border-strong);border-radius:10px;margin-top:12px;}
+.particle{font-size:30px;font-weight:800;}
+.p-h3o{color:var(--accent);}
+.p-cl{color:#b83a45;}
+.ph-scale{display:flex;justify-content:space-between;margin-top:6px;font:700 11px 'JetBrains Mono',monospace;}
+.buffer-tank{height:28px;border:1px solid var(--border-strong);border-radius:999px;overflow:hidden;margin:14px 0;background:var(--surface-soft);}
+#bufferFill{height:100%;width:100%;background:var(--accent);transition:width .2s;}
+.quiz-wrap{margin:16px 0;}
+.quiz-q{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:14px 16px;margin-bottom:12px;}
+.quiz-q h5{margin:0 0 10px;font-size:14.5px;color:var(--text);text-transform:none;letter-spacing:0;line-height:1.45;}
+.quiz-q .q-tag{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:10px;margin-bottom:8px;background:var(--surface-soft);color:var(--text-muted);}
+.quiz-opts{display:flex;flex-direction:column;gap:8px;}
+.quiz-opt{display:block;width:100%;text-align:left;padding:10px 12px;border:2px solid var(--border);border-radius:var(--r-sm);background:#fff;font:inherit;font-size:13.5px;cursor:pointer;transition:all 0.15s var(--ease);color:var(--text);}
+.quiz-opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft);}
+.quiz-opt.correct{border-color:var(--c-basic);background:var(--c-basic-bg);color:var(--c-basic);font-weight:700;}
+.quiz-opt.wrong{border-color:var(--c-error);background:var(--c-error-bg);color:var(--c-error);}
+.quiz-opt:disabled{cursor:default;opacity:0.95;}
+.quiz-fb{margin-top:8px;font-size:13px;line-height:1.5;display:none;padding:8px 10px;border-radius:var(--r-sm);}
+.quiz-fb.show{display:block;}
+.quiz-fb.ok{background:var(--c-basic-bg);color:var(--c-basic);}
+.quiz-fb.bad{background:var(--c-error-bg);color:var(--c-error);}
+.quiz-score{text-align:center;padding:14px;background:var(--surface-soft);border-radius:var(--r-md);margin-top:16px;font-weight:800;color:var(--accent);display:none;}
+.quiz-score.show{display:block;}
+.lab-bridge{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 28px;padding:14px 16px;border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);background:linear-gradient(135deg,var(--surface-soft),var(--accent-soft));}
+.lab-bridge strong{display:block;color:var(--accent-dark);}
+.lab-bridge span{display:block;margin-top:3px;color:var(--text-soft);font-size:13px;}
+.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;}
+.lab-bridge-btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
+@media(max-width:600px){.lab-bridge{align-items:flex-start;flex-direction:column;}.lab-bridge-btn{width:100%;text-align:center;}}
+.exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}
+.exp-card h5{margin:0 0 10px;color:var(--c-basic);font-size:14px;text-transform:none;letter-spacing:0;}
+.exp-grid{display:grid;grid-template-columns:1fr;gap:6px;font-size:13.5px;line-height:1.55;}
+@media(min-width:600px){.exp-grid{grid-template-columns:110px 1fr;}}
+.exp-grid b{color:var(--text-soft);font-size:11px;text-transform:uppercase;letter-spacing:0.4px;}
+
+.js-reveal .card:not(.in),.js-reveal .widget:not(.in){opacity:0;transform:translateY(14px)}
+.js-reveal .card,.js-reveal .widget{transition:opacity .55s var(--ease),transform .55s var(--ease)}
+
+
+.ion-svg{width:100%;height:auto;display:block;background:radial-gradient(ellipse at 50% 40%,#fff,var(--surface-soft));border:1px solid var(--border);border-radius:var(--r-md);margin-top:10px}
+.ion-svg .mv{transition:transform .9s cubic-bezier(.65,0,.35,1);transform-box:fill-box}
+.ion-svg text{font-family:'JetBrains Mono',monospace;font-weight:800;text-anchor:middle;dominant-baseline:central}
+.ion-svg .fade{opacity:0;transition:opacity .6s ease .35s}
+.ion-svg[data-s="1"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="1"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="1"] .d1,.ion-svg[data-s="2"] .d1{opacity:1}
+.ion-svg[data-s="2"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="2"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="2"] .proton{transform:translate(120px,-40px)}
+.ion-svg[data-s="2"] .arrow{opacity:1}
+.ion-svg[data-s="3"] .g-hcl{transform:translateX(10px)}
+.ion-svg[data-s="3"] .g-w{transform:translateX(-10px)}
+.ion-svg[data-s="3"] .proton{transform:translate(230px,-38px)}
+.ion-svg[data-s="3"] .d3{opacity:1}
+.ion-svg[data-s="3"] .glow{animation:ionGlow 1.6s ease-in-out infinite}
+@keyframes ionGlow{0%,100%{filter:drop-shadow(0 0 2px rgba(13,104,104,.3))}50%{filter:drop-shadow(0 0 10px rgba(13,104,104,.8))}}
+
+
+.ph-bar{position:relative;height:18px;border-radius:999px;margin:10px 0 4px;border:1px solid var(--border-strong);
+background:linear-gradient(90deg,#e5262e 0%,#ef5a28 14%,#f6a21e 28%,#d7d93a 43%,#5cb85c 50%,#21a89a 57%,#2f7fc1 71%,#4a4bb5 86%,#6b2d8f 100%)}
+.ph-marker{position:absolute;top:-6px;width:0;height:0;left:0;transform:translateX(-50%);transition:left .35s var(--ease)}
+.ph-marker::before{content:'';position:absolute;left:-7px;top:0;border:7px solid transparent;border-top:10px solid var(--text)}
+.ph-marker::after{content:attr(data-v);position:absolute;left:0;top:-22px;transform:translateX(-50%);background:var(--text);color:#fff;font:800 11px 'JetBrains Mono',monospace;padding:2px 6px;border-radius:5px;white-space:nowrap}
+.ph-flask{display:inline-block;width:22px;height:22px;border-radius:0 0 8px 8px;border:2px solid var(--text-soft);vertical-align:middle;margin-right:6px;transition:background .35s}
+
+
+.titr-wrap{position:relative}
+#titrationCanvas{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--r-md);background:#fff}
+.titr-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.titr-row input[type=range]{flex:1 1 200px}
+.titr-flask{width:34px;height:42px;border:2px solid var(--text-soft);border-radius:2px 2px 12px 12px;transition:background .3s;flex-shrink:0;position:relative}
+.titr-flask::after{content:'';position:absolute;left:-2px;right:-2px;top:-8px;height:6px;border:2px solid var(--text-soft);border-bottom:0;border-radius:3px 3px 0 0}
+
+
+.buffer-tank{position:relative;height:34px}
+#bufferFill{transition:width .4s var(--ease),background .4s;background-size:28px 28px;background-image:linear-gradient(45deg,rgba(255,255,255,.22) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.22) 75%,transparent 75%)}
+.buffer-tank.pulse{animation:bufPulse .45s ease}
+.buffer-tank.dead{animation:bufDead .5s ease 2}
+@keyframes bufPulse{50%{transform:scale(1.02);box-shadow:0 0 0 4px var(--accent-glow)}}
+@keyframes bufDead{50%{box-shadow:0 0 0 4px rgba(184,58,69,.35)}}
+
+
+.rx-stage{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:12px 0;padding:14px;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md)}
+.rx-beaker{position:relative;width:120px;height:150px;border:3px solid var(--text-soft);border-top:0;border-radius:0 0 18px 18px;background:rgba(255,255,255,.55);overflow:visible;flex-shrink:0}
+.rx-liquid{position:absolute;left:0;right:0;bottom:0;height:100px;border-radius:0 0 14px 14px;background:rgba(220,235,240,.65);transition:background 2.2s ease}
+.rx-solid{position:absolute;left:36px;bottom:2px;width:48px;height:24px;border-radius:40% 40% 8px 8px;opacity:0;transition:height 3.5s ease,opacity .5s,transform 3.5s ease}
+.rx-bubbles,.rx-precip,.rx-fumes{position:absolute;left:0;right:0;bottom:0;height:150px;pointer-events:none;overflow:hidden}
+.rx-fumes{overflow:visible;bottom:100px;height:70px}
+.rx-b{position:absolute;bottom:14px;border-radius:50%;background:rgba(255,255,255,.85);border:1px solid rgba(13,104,104,.45);animation:rxRise 2.2s ease-in forwards}
+@keyframes rxRise{to{transform:translate(var(--dx,0),-92px);opacity:0}}
+.rx-p{position:absolute;top:50px;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #cbd5e1;animation:rxFall 2.4s ease-in forwards}
+@keyframes rxFall{to{transform:translateY(90px)}}
+.rx-cloud{position:absolute;bottom:0;left:6px;right:6px;height:0;background:#fff;border-radius:10px 10px 0 0;box-shadow:0 0 0 1px #e2e8f0;transition:height 4s ease;opacity:.95}
+.rx-f{position:absolute;bottom:0;width:26px;height:26px;border-radius:50%;background:rgba(150,75,20,.55);filter:blur(7px);animation:rxFume 3s ease-out forwards}
+@keyframes rxFume{to{transform:translate(var(--dx,0),-70px) scale(2.2);opacity:0}}
+
+
+.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.rx-label{flex:1 1 200px;font-size:13px;color:var(--text-soft);line-height:1.5}
+.rx-label b{color:var(--text);font-family:'JetBrains Mono',monospace}
+@media print{.js-reveal .card,.js-reveal .widget{opacity:1!important;transform:none!important}}
+
+
+/* ulepszenia.css — warstwa wspólna nad baza.css: pasek lekcji, postęp czytania, spis z podświetleniem,
+   tryb ciemny, komponenty wspólne (mity, drzewo, cytat, dialog, słówka, figura), druk, dostępność.
+   Kolejność w lekcji: baza.css → ulepszenia.css → motywy/<przedmiot>.css. Edytuj tylko tutaj. */
+
+:root{--header-h:52px;--serif:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Charter,Georgia,serif}
+
+/* ---------- pasek lekcji (zamiast nagłówka aplikacji) ---------- */
+.lk-bar{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 12px;
+  background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--border)}
+.lk-subj{flex:none;display:inline-flex;align-items:center;gap:7px;font:800 12.5px/1 Inter,system-ui,sans-serif;color:var(--accent);text-decoration:none;
+  padding:6px 10px 6px 8px;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+.lk-subj i{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+.lk-title{flex:1;min-width:0;font:600 13px/1.25 Inter,system-ui,sans-serif;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lk-btn{flex:none;min-width:36px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);background:var(--surface);
+  color:var(--text);border-radius:9px;padding:0 10px;font:700 12.5px Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+.lk-btn:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.lk-prog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
+@media (max-width:520px){.lk-title{display:none}.lk-bar{justify-content:space-between}}
+
+/* ---------- nagłówek lekcji ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+.hero::after{content:"";position:absolute;inset:-10% -6% -10% 52%;z-index:-1;opacity:.12;pointer-events:none;background:var(--motyw-wzor,none) right center/auto 100% repeat-y}
+.hero h1{text-wrap:balance}
+.hero-kicker{color:var(--accent);text-transform:none;letter-spacing:0;font-size:13px}
+.page{padding:0 16px}
+.lk-btn svg{width:16px;height:16px;display:block}
+.lk-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:12.5px;color:var(--text-muted)}
+.lk-meta b{color:var(--text-soft);font-weight:700}
+
+/* ---------- spis treści: aktywna sekcja ---------- */
+@media (min-width:800px){.toc-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));column-gap:12px}}
+.toc-link.on{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);font-weight:700}
+section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
+
+/* ---------- komponenty wspólne ---------- */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:12px 0}
+.myth-head{grid-column:1/-1;font-weight:800;font-size:14px}
+.myth{border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow:hidden}
+.myth p{margin:0;padding:9px 12px;font-size:13.5px;line-height:1.5}
+.myth p span{display:block;font:800 11px Inter,system-ui;margin-bottom:2px}
+.myth-x{background:var(--c-error-bg)}.myth-x span{color:var(--c-error)}.myth-ok span{color:var(--c-basic)}
+
+.lk-tree{margin:12px 0;font-size:14px;overflow-x:auto}
+.lk-tree ul{list-style:none;margin:0;padding-left:18px}.lk-tree>ul{padding-left:0}
+.lk-tree li{position:relative;padding:3px 0 3px 14px}
+.lk-tree ul ul li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--accent-line)}
+.lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
+.lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
+.lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+
+/* cytat z tekstu (lektura, źródło, wypowiedź) */
+.lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
+.lk-quote blockquote{margin:0;font:400 17px/1.65 var(--serif);color:var(--text)}
+.lk-quote blockquote p{margin:0 0 6px;color:inherit}
+.lk-quote figcaption{margin-top:6px;font-size:12.5px;color:var(--text-muted)}
+
+/* dialog (role A/B, rozmowa, scenka) */
+.lk-dialog{margin:14px 0;display:flex;flex-direction:column;gap:8px}
+.lk-line{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.lk-who{min-width:30px;height:30px;padding:0 8px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font:800 12px Inter,system-ui;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line)}
+.lk-line.b .lk-who{background:var(--surface-soft);color:var(--text-soft);border-color:var(--border)}
+.lk-say{padding:8px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font-size:14.5px;line-height:1.55}
+.lk-say small{display:block;color:var(--text-muted);font-size:12.5px;margin-top:2px}
+
+/* słówka: wyraz — znaczenie — przykład */
+.lk-vocab{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.lk-vocab th{text-align:left;font-size:12px;color:var(--text-muted);font-weight:700;padding:6px 10px;border-bottom:2px solid var(--border)}
+.lk-vocab td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+.lk-vocab td:first-child{font-weight:800;color:var(--accent);white-space:nowrap}
+.lk-vocab td:last-child{color:var(--text-soft);font-style:italic}
+@media (max-width:560px){.lk-vocab thead{display:none}.lk-vocab tr{display:block;padding:8px 0;border-bottom:1px solid var(--border)}
+  .lk-vocab td{display:block;border:0;padding:1px 4px}}
+
+/* figura z biblioteki grafik przedmiotu */
+.lk-fig{margin:16px 0;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);overflow:hidden}
+.lk-fig figcaption{padding:9px 14px;border-top:1px solid var(--border);background:var(--surface-soft);font-size:13px;line-height:1.5;color:var(--text-soft)}
+.lk-fig figcaption b{color:var(--text);margin-right:4px}
+.lk-fig-body{padding:12px}
+.lk-fig svg{display:block;width:100%;height:auto}
+
+/* z chemii (lekcja.css): treści akademickie, plakietki */
+details.adv{border:1px dashed var(--c-warn-line,#eed8a8);border-radius:10px;background:var(--surface-soft,#f6f8fa);margin:10px 0;padding:0 12px}details.adv>summary{cursor:pointer;font-weight:700;color:var(--c-warn,#b06f1c);padding:9px 0;list-style:none}details.adv>summary::-webkit-details-marker{display:none}details.adv>summary::before{content:"▸ "}details.adv[open]>summary::before{content:"▾ "}.adv-tag{font-weight:600;font-size:11px;opacity:.75;margin-left:6px}.adv-body{padding:0 0 10px;font-size:13.5px;line-height:1.6}.adv-body table{font-size:12.5px}.adv-toggle{margin-top:10px;border:1px solid var(--c-warn-line,#eed8a8);background:var(--c-warn-bg,#fcf4e6);color:var(--c-warn,#b06f1c);border-radius:999px;padding:6px 12px;font:700 12px Inter,system-ui,sans-serif;cursor:pointer}.bio-tag{display:inline-block;font:800 10px Inter,system-ui;letter-spacing:.04em;padding:2px 7px;border-radius:99px;background:rgba(46,125,79,.12);color:#2e7d4f;margin-left:6px;vertical-align:middle}.v15{display:inline-block;font:800 9.5px Inter,system-ui;padding:1px 6px;border-radius:99px;background:rgba(13,125,125,.12);color:#0d7d7d;margin-left:6px;vertical-align:middle}@media print{details.adv{display:block}details.adv>.adv-body{display:block}}
+/* z chemii (lekcja.css): telefon, tabele */
+.exp-card{min-width:0;max-width:100%;box-sizing:border-box}.exp-grid>*{min-width:0;overflow-wrap:anywhere}
+@media (max-width:600px){.exp-grid{grid-template-columns:minmax(0,1fr)!important}.exp-grid>b{margin-top:4px}}
+.table-wrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+
+/* klinika błędów (::: klinika) — tabela, na telefonie karty */
+.klinika-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden}
+.klinika-table th{text-align:left;padding:9px 12px;background:var(--surface-soft);color:var(--text-soft);font-size:12px;font-weight:800;border-bottom:1px solid var(--border)}
+.klinika-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.klinika-table tr:last-child td{border-bottom:0}
+@media (max-width:600px){.klinika-table thead{display:none}.klinika-table tr{display:block;padding:8px 12px;border-bottom:1px solid var(--border)}
+  .klinika-table td{display:block;border:0;padding:2px 0}.klinika-table td:not(.col-blad):not(.col-ok){color:var(--text-soft)}}
+
+.lk-pre{margin:12px 0;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-soft);overflow-x:auto;font:12.5px/1.55 ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;color:var(--text-soft);white-space:pre}
+.lk-pre code{font:inherit;background:none;padding:0;color:inherit}
+.lk-hr{border:0;border-top:1px solid var(--border);margin:28px 0}
+
+/* ---------- dostępność ---------- */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;z-index:60;background:var(--surface);color:var(--accent);padding:8px 12px;border-radius:8px}
+.skip-link:focus{left:8px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- tryb ciemny: automatycznie albo przyciskiem (data-theme) ---------- */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme=dark]{
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}
+/* elementy bazy z białym tłem na sztywno */
+html[data-ciemny] :is(.flashcard,.checklist,.audit-item,.layer-legend,.quiz-q,.quiz-opt,.btn,.controls button,.eq-stage,.ion-assembly,.bld-workspace,.bld-pool button,.resume-dropdown,.ta-nav){background:var(--surface);color:var(--text)}
+html[data-ciemny] .hero{background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.active,.step-flow){color:var(--bg)}
+@media (max-width:600px){.hero::after{opacity:.07}}
+
+/* ---------- druk ---------- */
+@media print{
+  .lk-bar,.adv-toggle,.toc-item,.fab,.bottom-nav{display:none!important}
+  body{padding:0;background:#fff;color:#000}
+  .hero::after{display:none}.hero{background:none;box-shadow:none}
+  details.adv,details.answer{display:block}details>*{display:block}
+  .card,.minimum-card,.lk-fig,.myth,.quiz-q{break-inside:avoid;box-shadow:none}
+  a{color:inherit;text-decoration:none}
+}
+
+/* === Dopracowanie czytelności (2026-10-11; z wersji „ulepszonej” U03 użytkownika, uogólnione na wszystkie przedmioty, zgodne z trybem ciemnym) === */
+body{line-height:1.74}
+main{isolation:isolate}
+.hero{border-color:var(--accent-line)}
+.hero::before{content:"";position:absolute;right:-42px;top:-56px;width:180px;height:180px;z-index:-1;pointer-events:none;
+ border:1px solid var(--accent-line);border-radius:50%;opacity:.45;
+ box-shadow:0 0 0 22px var(--accent-glow),0 0 0 44px var(--accent-glow)}
+.part-heading{padding:0 0 12px;border-bottom:1px solid var(--border);align-items:flex-start}
+.part-num{margin-top:1px}
+section[id]{scroll-margin-top:calc(var(--header-h,56px) + 20px)}
+section p{max-width:78ch}
+section ul,section ol{padding-left:1.35rem}
+.card,.exp-card,.widget,.table-wrap{box-shadow:0 2px 8px rgba(24,49,59,.045)}
+.table-wrap{max-width:100%}
+.table-wrap table{line-height:1.55}
+.table-wrap td strong{color:var(--text)}
+.table-wrap tbody tr:nth-child(even) td{background:var(--surface-soft)}
+.table-wrap tbody tr:hover td{background:var(--accent-soft)}
+.mini-note{max-width:80ch}
+:is(button,a,summary,[tabindex]):focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:520px){.hero{padding:20px 16px}.part-heading{font-size:19px;gap:11px}
+ .table-wrap table{font-size:12.5px}.table-wrap th,.table-wrap td{padding:8px 9px}}
+@media(hover:none){.card:hover,.flashcard:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media print{.hero::before{display:none}.card,.exp-card,.table-wrap{break-inside:avoid;box-shadow:none}}
+
+/* fiszki: część ukryta do rozwinięcia (lekcja.js); przy druku — wszystkie */
+.flashcard[hidden]{display:none!important}
+.fz-more{display:block;width:100%;margin:-6px 0 18px;padding:12px 16px;border:2px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent;color:var(--text,#1d2a30);font-family:inherit;font-weight:600;font-size:15px;line-height:1.3;cursor:pointer;text-align:center}
+.fz-more:hover,.fz-more:focus-visible{background:var(--surface-2,rgba(0,0,0,.04))}
+@media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
+.quiz-q[hidden]{display:none!important}
+@media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
+
+/* motyw che (Chemia) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,.15);--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 104 180%27%3E%3Cg fill=%27none%27 stroke=%27%230d6868%27 stroke-width=%273%27%3E%3Cpath d=%27M52 10l40 23v46l-40 23-40-23V33z%27/%3E%3Cpath d=%27M52 100l40 23v46l-40 23-40-23v-46z%27/%3E%3Cpath d=%27M52 22v8M92 56h8M12 56H4%27/%3E%3C/g%3E%3Cg fill=%27%230d6868%27%3E%3Ccircle cx=%2752%27 cy=%2710%27 r=%275%27/%3E%3Ccircle cx=%2792%27 cy=%2779%27 r=%275%27/%3E%3Ccircle cx=%2712%27 cy=%27123%27 r=%275%27/%3E%3C/g%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}}
+:root[data-theme=dark]{--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}
+
+/* równanie reakcji w osobnej linii: ::: div.rownanie */
+.rownanie{margin:12px 0;padding:12px 16px;border-radius:var(--r-md);background:var(--surface-soft);border:1px solid var(--border);font:600 17px/1.6 Inter,system-ui,sans-serif;text-align:center;overflow-x:auto;white-space:nowrap}
+.rownanie small{display:block;font-size:12px;font-weight:500;color:var(--text-muted);white-space:normal}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+<header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">X04 Szereg aktywności metali — reakcje z wodą, kwasami i solami</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<main class="page" id="main">
+<section class="hero card"><div class="hero-kicker">X04 · CHEMIA · Substancje i ich przemiany — metale · E8 / KONKURS</div><h1>Szereg aktywności metali — reakcje z wodą, kwasami i solami</h1><p class="lead">Dziesięć metali wchodzi na jedną drabinę, a wyniki wszystkich możliwych reakcji zapisane są już w kolejności ich ustawienia. Nauczysz się czytać tę drabinę tak, żeby przewidywać reakcje z wodą, kwasami i solami bez wkuwania setek równań.</p><p class="lead">Zapamiętasz szereg aktywności i jego żelazne reguły, zapiszesz równania cząsteczkowe i jonowe skrócone, opiszesz obserwacje laboratoryjne, a na poziomie konkursowym — rozpiszesz elektronową księgowość redoks i wskażesz granice, w których szereg przestaje działać.</p><div class="tag-row"><span class="level-badge level-basic">E8</span><span class="level-badge level-understand">ROZUMIENIE</span><span class="level-badge level-exam">KONKURS</span><span class="level-badge level-extra">AMBITNE</span></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button><p class="mini-note">Podstawa odpowiada wymaganiom egzaminu ósmoklasisty i typowemu etapowi rejonowemu konkursu chemicznego; kwasy utleniające (stężony HNO₃, stężony H₂SO₄) opisano tylko jako wiedzę rozszerzoną. Szereg aktywności jest szkolnym przybliżeniem — kolejność Ag i Hg różni się między źródłami (oznaczono), a wszystkie opisy szybkości reakcji zależą od warunków (temperatura, stężenie, stan powierzchni metalu).</p></section>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#minimum">Minimum E8</a><a class="toc-link" href="#jak-pracowac">0.1. Jak pracować z lekcją</a><a class="toc-link" href="#diagnoza">0.2. Diagnoza</a></nav></details>
+<section id="minimum" class="minimum-card"><h3>Muszę umieć — 10 punktów</h3>
+<ol>
+<li>Wypisuję z pamięci szkolną wersję szeregu aktywności: K, Ca, Na, Mg, Al, Zn, Fe, Sn, Pb, H, Cu, Hg, Ag, Pt, Au — i wiem, że najważniejsze jest względne położenie metali, nie samo wykuwanie listy.</li>
+<li>Wyjaśniam regułę kierunkową: im bardziej na lewo, tym metal łatwiej oddaje elektrony, tym jest silniejszym reduktorem i tym bardziej aktywnym.</li>
+<li>Przewiduję, czy reakcja metalu z wodą zajdzie, i dobieram warunki: K, Na, Ca reagują z zimną wodą, Mg z zimną wodą bardzo powoli (z parą szybko), Al, Zn, Fe tylko z parą wodną w wysokiej temperaturze, Cu, Ag, Au — wcale.</li>
+<li>Zapisuję równania reakcji metali z wodą i podaję produkty: wodorotlenek + wodór (metale bardzo aktywne) albo tlenek + wodór (para wodna, wysoka temperatura).</li>
+<li>Stosuję regułę wodoru: metale przed H wypierają wodór z rozcieńczonych kwasów nieutleniających (HCl, rozc. H₂SO₄), metale za H — nie.</li>
+<li>Zapisuję równania reakcji metali z kwasami: Zn + 2HCl → ZnCl₂ + H₂↑, Fe + H₂SO₄ → FeSO₄ + H₂↑, Mg + 2HCl → MgCl₂ + H₂↑, i uzasadniam brak reakcji dla Cu i Ag.</li>
+<li>Stosuję regułę wypierania: metal bardziej aktywny wypiera metal mniej aktywny z roztworu jego soli; zapisuję równania cząsteczkowe i jonowe skrócone (np. Fe + Cu²⁺ → Fe²⁺ + Cu).</li>
+<li>Opisuję obserwacje laboratoryjne: wydzielanie gazu (↑), osad miedzi (↓), blaknięcie niebieskiego roztworu Cu²⁺, błękitnienie roztworu po rozpuszczeniu miedzi w AgNO₃ — i sprawdzam wodór próbą palności.</li>
+<li>Rozpisuję reakcję wypierania na elektrony: utlenienie (oddanie elektronów) reduktora i redukcja (przyjęcie elektronów) utleniacza, np. Zn⁰ → Zn²⁺ + 2e⁻ oraz Cu²⁺ + 2e⁻ → Cu⁰.</li>
+<li>Wskazuję granice szeregu: pasywacja glinu, wpływ temperatury i stężenia, kinetyka (reakcja powolna ≠ brak reakcji), kwasy utleniające rządzą się osobnymi regułami — i nie używam szeregu jak uniwersalnego prawa.</li>
+</ol>
+</section>
+<div class="layer-legend">
+<div class="layer-row"><span class="dot e8"></span><span><b>Podstawa:</b> szkolny szereg aktywności, reakcje metali z wodą, rozcieńczonymi kwasami nieutleniającymi i roztworami soli, równania cząsteczkowe, obserwacje, uzasadnianie położeniem w szeregu — dokładnie poziom arkusza E8.</span></div>
+<div class="layer-row"><span class="dot understand"></span><span><b>Rozumienie:</b> skąd bierze się szereg (skłonność do oddawania elektronów), dlaczego wodór jest punktem odniesienia, dlaczego reakcja powolna to nie brak reakcji, dlaczego obserwacje potwierdzają regułę, a nie odwrotnie.</span></div>
+<div class="layer-row"><span class="dot contest"></span><span><b>Konkurs:</b> równania jonowe skrócone, elektronowa rozpiska redoks (utleniacz, reduktor, półreakcje), zadania transferowe (metal X i metal Y), zadania obliczeniowe z substratem ograniczającym, analiza FeCl₃ z Fe³⁺, znajdowanie błędów w rozumowaniach.</span></div>
+<div class="layer-row"><span class="dot extra"></span><span><b>Ambitne:</b> pasywacja jako chroniąca warstwa tlenku, kwasy utleniające i ich osobne reguły, uniwersalny szereg napięć elektrochemicznych (zarys), anoda protektorowa i cynkowanie, termit aluminotermiczny, dlaczego szereg to przybliżenie, nie prawo.</span></div>
+</div>
+<div id="rdzen" class="core-path">
+<div class="cp-title">Rdzeń lekcji — najpierw to</div>
+<ul>
+<li><a href="#wyklad">§1</a> — Wykład od zera: turniej o elektrony i trzy areny zmagań.</li>
+<li><a href="#szereg">§2</a> — Szereg aktywności: dwie wersje i pięć zasad żelaznych.</li>
+<li><a href="#woda">§3</a> — Metale z wodą: pełna tabela z warunkami.</li>
+<li><a href="#kwasy">§4</a> — Metale z kwasami nieutleniającymi: reguła wodoru.</li>
+<li><a href="#sole">§5</a> — Metale z solami: wypieranie i obserwacje.</li>
+<li><a href="#redoks">§6</a> — Redoks: elektronowa księgowość wypierania.</li>
+<li><a href="#granice">§7</a> — Granice szeregu: pasywacja, warunki, pułapki.</li>
+<li><a href="#zadania-konkurs">§9</a> — Zadania konkursowe oraz <a href="#test">§16</a> — test końcowy.</li>
+</ul>
+</div>
+<section id="jak-pracowac">
+<div class="part-heading"><span class="part-num">0.1</span> Jak pracować z lekcją</div>
+<p>Cel tej lekcji jest jeden: <strong>samodzielnie przewidzieć przebieg reakcji metalu z wodą, rozcieńczonym kwasem nieutleniającym i roztworem soli innego metalu wyłącznie na podstawie położenia w szeregu aktywności</strong> — oraz zapisać poprawne równania i uzasadnić obserwacje. Kryterium gotowości wygląda tak:</p>
+<ol>
+<li>Znasz szereg (przynajmniej szkolną wersję).</li>
+<li>Potrafisz wskazać, który metal jest bardziej aktywny.</li>
+<li>Przewidujesz, czy reakcja zajdzie i jakie będą produkty.</li>
+<li>Zapisujesz równanie cząsteczkowe i (jeśli wymagane) jonowe skrócone.</li>
+<li>Rozwiązujesz zadanie transferowe — nowa para metali, nowa sytuacja, nieznany przykład.</li>
+</ol>
+<p>Kolejność pracy:</p>
+<ol>
+<li>Przeczytaj listę „Muszę umieć — 10 punktów” i zrób diagnozę (<a href="#diagnoza">§0.2</a>) — przekonasz się, od którego miejsca zacząć.</li>
+<li>Przeczytaj wykład (<a href="#wyklad">§1</a>) w całości: opowiada jedną ideę, która porządkuje wszystkie reakcje tej lekcji.</li>
+<li>Przerabiaj sekcje 2–7 po kolei. Przy każdym zadaniu najpierw odpowiedź na kartce, potem klucz — klucz czytany bez próby uczy czterokrotnie słabiej.</li>
+<li>Doświadczenia z <a href="#doswiadczenia">§8</a> traktuj zgodnie z BHP: reakcje z sodem i potasem wykonuje się wyłącznie w profesjonalnych warunkach jako demonstrację — ty pracuj z modelem, symulacją lub nagraniem i przewiduj wyniki na piśmie.</li>
+<li>Zadania konkursowe (<a href="#zadania-konkurs">§9</a>) i warstwa olimpijska (<a href="#olimpijczyk">§10</a>) zostaw na moment, gdy podstawa jest pewna — tam czekają pułapki, na których gubią punkty nawet dobrze przygotowani.</li>
+<li>Test końcowy (<a href="#test">§16</a>) rozwiązuj bez zaglądania do lekcji; błędne odpowiedzi wskażą Ci sekcje do powrotu.</li>
+<li>Fiszki (<a href="#fiszki">§17</a>) powtarzaj partiami i regularnie, a przed sprawdzianem przeczytaj ściągi i odhacz checklistę (<a href="#sciaga">§20</a>).</li>
+</ol>
+<p>Przydatne wcześniej (nieobowiązkowe — wykład tłumaczy wszystko od zera): pojęcie jonu i ładunku, podstawy pisania równań reakcji, idea elektrolitu w roztworze wodnym. Równania jonowe rozwiniemy pełniej w lekcji CHE-J03, a obliczenia z nadmiarem — w lekcji CHE-R07; ta lekcja daje fundament, na którym obie staną.</p>
+</section>
+<section id="diagnoza">
+<div class="part-heading"><span class="part-num">0.2</span> Diagnoza</div>
+<p>Odpowiedz na kartce, bez zaglądania do lekcji. Potem sprawdź klucz i policz punkty.</p>
+<ol>
+<li>W szeregu aktywności cynk leży przed miedzią. Który metal jest bardziej aktywny i co to oznacza dla elektronów?</li>
+<li>Czy miedź reaguje z rozcieńczonym kwasem chlorowodorowym? Uzasadnij położeniem w szeregu.</li>
+<li>Zapisz równanie reakcji cynku z rozcieńczonym kwasem chlorowodorowym.</li>
+<li>Co zaobserwujesz po zanurzeniu żelaznego gwoździa w roztworze CuSO₄?</li>
+<li>Sód leży daleko przed miedzią. Czy blaszka sodowa wypierze miedź z roztworu CuSO₄? Poszukaj pułapki.</li>
+</ol>
+<details class="answer"><summary>Klucz diagnozy</summary>
+<ol>
+<li>(1 pkt) Bardziej aktywny jest cynk — leży bardziej na lewo, więc łatwiej oddaje elektrony i jest silniejszym reduktorem.</li>
+<li>(1 pkt) Nie — miedź leży za wodorem w szeregu, więc nie wypiera wodoru z rozcieńczonych kwasów nieutleniających.</li>
+<li>(1 pkt) Zn + 2HCl → ZnCl₂ + H₂↑ (zbilansowane, ze strzałką gazu).</li>
+<li>(1 pkt) Na gwoździu pojawia się czerwonawy osad miedzi, a niebieski roztwór blednie lub zielenieje (ubywa jonów Cu²⁺, przybywa Fe²⁺).</li>
+<li>(1 pkt) W typowym szkolnym modelu nie zapisujemy prostej reakcji wypierania: sód najpierw gwałtownie reaguje z wodą, w której rozpuszczona jest sól (litowce reagują z wodą zamiast wypierać metale z roztworów soli). Za tę pułapkę i jej wyjaśnienie — punkt.</li>
+</ol>
+</details>
+<p>Rozliczenie: 5 pkt — przeskocz szybko przez sekcje 2–3 i ćwicz zadania konkursowe; 3–4 pkt — przerabiaj lekcję po kolei; 0–2 pkt — zacznij od wykładu i tabel, lekcja prowadzi od zera.</p>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">1</span> Wykład — turniej o elektrony: trzy areny, jedna drabina {#wyklad} <span class="level-badge level-basic">E8</span></div>
+<p>Wyobraź sobie ranking sportowy. Zawodnik sklasyfikowany wyżej niemal zawsze wygrywa z zawodnikiem niżej — i wyniki wszystkich możliwych meczów ligi zapisane są w jednej tabeli. Metale grają w taką samą grę, tylko że stawką meczu są <strong>elektrony</strong>. Ten, kto łatwiej się ich pozbywa, wygrywa pojedynek. Cała ta lekcja jest opowieścią o jednej drabinie i trzech arenach, na których rozgrywają się pojedynki.</p>
+<p>Zacznijmy od natury gry. Atom metalu ma na zewnątrz jedną, dwie lub trzy powłoki... a dokładniej: jeden, dwa lub trzy elektrony walencyjne, które trzyma luźno. Niektóre metale odprawiają je chętnie (oddanie elektronów to <strong>utlenienie</strong>), inne — bardzo niechętnie. Metal, który oddaje elektrony, jest <strong>reduktorem</strong> (bo sprawia, że coś innego ulega redukcji); im chętniej oddaje, tym jest <strong>aktywniejszy</strong> i tym silniejszym reduktorem. To cała teoria. Praktyka: chemicy ułożyli metale w <strong>szereg aktywności</strong> — ranking od najbardziej do najmniej skłonnych do oddawania elektronów.</p>
+<p>Na drabinie jest jeden wyjątkowy „zawodnik”: <strong>wodór</strong>. Nie jest metalem, ale stoi w szeregu jako punkt odniesienia — linia metra, po której ustawia się granica. Dlaczego właśnie wodoru? Bo z nim metal konkuje w kwasach: kwas nieutleniający dostarcza jony H⁺, a pytanie brzmi, czy metal zdoła im odebrać elektrony, zamieniając H⁺ w gazowy H₂. Metale przed H — potrafią. Metale za H — nie. Jedna linia dzieli całą chemię metali na dwie strefy.</p>
+<p>Trzy areny zmagań wyglądają tak. <strong>Arena pierwsza: woda.</strong> Najbardziej aktywni — litowce (K, Na) i wapń — reagują z zimną wodą gwałtownie, produkując wodorotlenek i wodór; sód pływa po powierzchni, topi się i świszczy. Magnez z zimną wodą reaguje bardzo powoli (to nadal reakcja! — zapamiętaj), ale z gorącą wodą i parą robi postępy. Żelazo z parą wodną w wysokiej temperaturze daje tlenek-oxide, Fe₃O₄, i wodór. Miedź, srebro i złoto z wodą nie reagują wcale — dlatego stare miedziane dachy i złote artefakty przetrwały wieki. <strong>Arena druga: kwasy nieutleniające</strong> (HCl, rozcieńczony H₂SO₄). Tutaj działa reguła wodoru: przed H — reakcja i wydzielanie wodoru, za H — cisza. <strong>Arena trzecia: roztwory soli.</strong> Reguła wypierania: metal bardziej aktywny wypiera metal mniej aktywny z roztworu jego soli. Żelazny gwóźdź zanurzony w niebieskim roztworze CuSO₄ pokrywa się czerwoną miedzią, a roztwór blednie — to jeden z najładniejszych eksperymentów szkolnej chemii i jednocześnie działająca w tle chemia ogniwa Volty z 1800 roku: dokładnie ta reakcja (cynk + jony miedzi) napędzała pierwszą baterię świata.</p>
+<p>Pod spodem tych trzech aren płynie ta sama elektronowa księgowość. W reakcji Fe + Cu²⁺ → Fe²⁺ + Cu żelazo oddaje dwa elektrony (utlenienie: Fe⁰ → Fe²⁺ + 2e⁻), a jony miedzi przyjmują je (redukcja: Cu²⁺ + 2e⁻ → Cu⁰). Elektrony nie giną: to, co jeden traci, drugi znajduje. Na egzaminie wystarczy znać kierunek i równania; na konkursie proszą o tę rozpiskę wprost — utleniacz, reduktor, półreakcje.</p>
+<p>I na koniec uczciwa przestroga, która na konkursie potrafi być warta całe punkty: <strong>szereg to przybliżenie, nie prawo fizyki zapisane w kamiennych tablicach</strong>. Ranking porządkuje metale według skłonności do oddawania elektronów, ale nie przewiduje każdej reakcji w każdych warunkach. Glin powinien być aktywny jak magnez, a jednak czapeczka z Al₂O₃ (pasywacja) pokrywa go warstwą tlenku i chroni — więc wydaje się leniwy. Ołów reaguje z HCl powoli, bo powstający PbCl₂ słabo się rozpuszcza i zakleja powierzchnię. Stężony kwas azotowy(V) i stężony kwas siarkowy(VI) mają właściwości utleniające i rządzą się innymi regułami — reagują nawet z miedzią i srebrem. Reakcja powolna to nie brak reakcji, a położenie w szeregu nie zastępuje warunków: temperatury, stężenia i stanu powierzchni metalu.</p>
+<p>Masz już całą mapę: drabinę, trzy areny, elektronową księgowość i listę ostrzeżeń. Teraz przejdźmy przez wszystko krok po kroku — z tabelami, równaniami, obserwacjami i zadaniami, które pojawią się na egzaminie i na konkursie.</p>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">2</span> Szereg aktywności — drabina metali {#szereg} <span class="level-badge level-basic">E8</span></div>
+<p><strong>Wersja szkolna i konkursowa (najczęstsza):</strong></p>
+<p>K  Ca  Na  Mg  Al  Zn  Fe  Sn  Pb  | <strong>H</strong> |  Cu  Ag  Hg  Au</p>
+<p>Czasem w szeregu pojawiają się też: Li, Ba, Mn, Ni, Cr. Inne źródła podają wersję rozszerzoną o platynę i z odmienną kolejnością srebra i rtęci:</p>
+<p>K, Ca, Na, Mg, Al, Zn, Fe, Sn, Pb, H, Cu, Hg, Ag, Pt, Au</p>
+<p>Uwaga praktyczna: kolejność <strong>Ag i Hg</strong> oraz obecność Pt różnią się między źródłami — zawsze sprawdź wersję z własnego podręcznika i informatora konkursowego. Do rozwiązywania zadań w tej lekcji wystarczy wersja pierwsza: wszystkie pary, o które pytają arkusze (K, Na, Ca, Mg, Al, Zn, Fe, Sn, Pb, Cu, Hg, Ag, Pt, Au), ustawione są w niej identycznie.</p>
+<p>Co szereg naprawdę mówi: porządkuje metale według ich <strong>skłonności do oddawania elektronów</strong> — i wypierania wodoru lub innych metali z niektórych związków. <strong>Najważniejsze jest względne położenie</strong> metali względem wodoru i względem siebie, a nie mechaniczne wkuwanie listy.</p>
+<p><strong>Zasady żelazne:</strong></p>
+<ul>
+<li>Im bardziej na <strong>lewo</strong>, tym metal łatwiej oddaje elektrony → silniejszy reduktor → bardziej aktywny.</li>
+<li>Metal bardziej aktywny <strong>wypiera</strong> metal mniej aktywny z roztworu jego soli.</li>
+<li>Metale <strong>przed wodorem</strong> wypierają wodór z rozcieńczonych kwasów nieutleniających (HCl, rozc. H₂SO₄).</li>
+<li>Metale <strong>za wodorem</strong> nie wypierają wodoru z tych kwasów.</li>
+<li>Litowce i berylowce (K, Na, Ca…) reagują z wodą zamiast wypierać metale z roztworów soli (w typowych warunkach szkolnych).</li>
+</ul>
+<div class="card card-core">
+<span class="card-label">Najważniejsze — drabina w trzech zdaniach</span>
+<p>Lewo = aktywny = łatwo oddaje elektrony = silny reduktor. Wodór to linia graniczna dla reakcji z kwasami nieutleniającymi. Wypieranie biegnie tylko z góry na dół: aktywniejszy wypiera, nigdy odwrotnie.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — szereg aktywności</span>
+<p>Szereg to ranking skłonności metali do oddawania elektronów. Nie jest uniwersalną tabelą przewidującą każdą reakcję w każdych warunkach: położenie nie wystarcza do opisania pasywacji, wpływu środowiska, stężenia, temperatury i kinetyki. Metal leżący wyżej może wypierać metal leżący niżej z jego soli — jeśli reakcja jest możliwa w danych warunkach. Wodór stoi w szeregu jako punkt odniesienia dla reakcji z kwasami: metale za nim zwykle nie wypierają wodoru z rozcieńczonych kwasów nieutleniających, a kwasy utleniające (np. stężony HNO₃) wymagają osobnych reguł.</p>
+</div>
+<nie-myl>
+<summary>Metal aktywny ≠ metal szlachetny</summary>
+<ul>
+<li>Metal aktywny ≠ metal szlachetny — aktywny to łatwo oddający elektrony (K, Na, Mg), szlachetny to oporny na reakcje (Cu, Ag, Pt, Au); test rozstrzygający: sprawdź pozycję względem H — przed H aktywny, za H szlachetny.</li>
+<li>Reakcja powolna ≠ brak reakcji — Mg z zimną wodą reaguje bardzo powoli, Pb z HCl powoli (PbCl₂ słabo rozpuszczalny); test rozstrzygający: jeśli szereg pozwala na reakcję, a nic nie widać, pytaj o kinetykę i pasywację, nie kreśl „braku reakcji”.</li>
+<li>Pasywacja ≠ mała aktywność — aluminium leży wysoko w szeregu, a mimo to wygląda na bierne; test rozstrzygający: usuń warstwę tlenkową (oraz samą logikę szeregu) — reaktywność metalu pod spodem wraca.</li>
+</ul>
+</nie-myl>
+<div class="card card-exam">
+<span class="card-label">Zadanie 1 (2 pkt) — Uszereguj metale</span>
+<p>Uszereguj metale według rosnącej aktywności chemicznej: Cu, Zn, Ag, Mg, Fe.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>(2 pkt) Ag &lt; Cu &lt; Fe &lt; Zn &lt; Mg. Najmniej aktywny jest srebro-leżący Ag (za H), potem Cu, dalej Fe, Zn, a najbardziej aktywny — Mg (daleko przed H). Każda sąsiednia para w tej kolejności jest zgodna z regułą „lewo wypiera prawo”.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 2 (3 pkt) — Czytanie drabiny</span>
+<p>a) Który metal jest bardziej aktywny: Sn czy Pb? Uzasadnij, co z tego wynika dla reakcji z rozcieńczonym HCl. (1 pkt)
+b) Dlaczego wodór, choć nie jest metalem, ma swoje miejsce w szeregu? (1 pkt)
+c) Znasz parę metali, z której obu medlemów jeden stoi przed H, a drugi za H. Podaj taką parę i przewidź, który z nich reaguje z rozc. H₂SO₄. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) Sn jest bardziej aktywny (stoi przed Pb); oba leżą przed H, więc oba wypierają wodór z rozcieńczonych kwasów nieutleniających, przy czym Sn zrobi to łatwiej.
+b) (1 pkt) Wodór jest punktem odniesienia: pokazuje, czy metal zdoła odebrać elektrony jonom H⁺ z kwasu nieutleniającego — czyli dzieli metale na reagujące i nie-reagujące z tymi kwasami.
+c) (1 pkt) Przykład: Zn (przed H) i Cu (za H); z rozcieńczonym H₂SO₄ reaguje cynk: Zn + H₂SO₄ → ZnSO₄ + H₂↑, a miedź — nie.</p>
+</details>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">3</span> Metale + woda — pełna tabela z warunkami {#woda} <span class="level-badge level-basic">E8</span> <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<p>Woda to najłagodniejsza z aren — i dlatego reaguje z nią tylko ścisła czołówka szeregu. Tabela poniżej jest ważna w całości: <strong>kolumna „Warunki” jest nieodłączną częścią reguły</strong>, bo reakcje metali z wodą silnie zależą od temperatury i warstwy pasywnej — nie wolno czytać jej jako bezwarunkowego prawa.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Metal</th><th>Warunki</th><th>Produkty</th><th>Obserwacje typowe</th><th>Równanie</th></tr></thead>
+<tbody>
+<tr><td>K, Na</td><td>zimna woda, gwałtownie</td><td>wodorotlenek + H₂</td><td>pływa, topi się, zapala się H₂</td><td>2Na + 2H₂O → 2NaOH + H₂↑</td></tr>
+<tr><td>Ca</td><td>zimna woda, żywo</td><td>Ca(OH)₂ + H₂</td><td>gaz, mętny roztwór</td><td>Ca + 2H₂O → Ca(OH)₂ + H₂↑</td></tr>
+<tr><td>Mg</td><td>zimna — bardzo wolno; gorąca / para — szybko</td><td>Mg(OH)₂ lub MgO + H₂</td><td>powolne wydzielanie gazu</td><td>Mg + 2H₂O → Mg(OH)₂ + H₂↑ (zimna)</td></tr>
+<tr><td>Al, Zn, Fe</td><td>tylko z parą wodną w wysokiej temperaturze</td><td>tlenek + H₂</td><td>—</td><td>3Fe + 4H₂O → Fe₃O₄ + 4H₂</td></tr>
+<tr><td>Cu, Ag, Au</td><td>brak reakcji</td><td>—</td><td>brak zmian</td><td>—</td></tr>
+</tbody></table></div>
+<p>Zauważ dwie linie podziału. Pierwsza: metale reagujące z <strong>zimną wodą</strong> (K, Na, Ca) kontra metale potrzebujące <strong>gorącej wody lub pary</strong> (Mg, Al, Zn, Fe). Druga: produkty — metale bardzo aktywne dają <strong>wodorotlenek</strong> (bo ich reakcja jest na tyle gwałtowna, że roztwór zostaje zasadowy), metale z parą wodną dają <strong>tlenek</strong> (w wysokiej temperaturze wodorotlenki rozkładają się). Uwaga konkursowa: glin pasywuje się (warstwa Al₂O₃), więc czasem reakcja z wodą lub kwasem wymaga usunięcia warstwy tlenkowej — bez tego metal „nie pokaże” swojej prawdziwej aktywności.</p>
+<div class="card card-warning">
+<span class="card-label">Uwaga — sód i potas to nie zabawki</span>
+<p>Reakcje K i Na z wodą są gwałtowne i egzotermiczne; wydzielający się wodór może się zapalić, a rozpryski roztworu zasady są żrące. Wykonywanie prób z K/Na i wodą wymaga profesjonalnych warunków — w nauce samodzielnej korzystaj z symulacji, nagrania lub demonstracji prowadzonej przez osobę z uprawnieniami. Nigdy nie wrzucaj sodu do kwasu „żeby było efektowniej”: najpierw i tak zareaguje woda w roztworze, a energia reakcji z kwasem jest jeszcze groźniejsza.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — metale z wodą</span>
+<p>Drabina i trzy strefy: K, Na, Ca — zimna woda, gwałtownie, wodorotlenek + H₂; Mg — z zimną wodą bardzo powoli (reakcja zachodzi!), z gorącą i parą szybko; Al, Zn, Fe — dopiero para wodna w wysokiej temperaturze, tlenek + H₂; Cu, Ag, Au — cisza. Kierunek zapamiętywania: im bardziej na lewo w szeregu, tym niższa bariera wejścia — od pary wodnej po zimną wodę. Produkty: zimna woda → wodorotlenek, para w wysokiej temperaturze → tlenek.</p>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 3 (4 pkt) — Trzy probówki z wodą</span>
+<p>Do trzech probówek z zimną wodą wrzucono jednakowe kawałki: a) sodu, b) wapnia, c) miedzi; do czwartej z parą wodną w wysokiej temperaturze — d) żelaza.</p>
+<p>a) Podaj, w których probówkach zaobserwujesz wydzielanie gazu, i nazwij ten gaz. (2 pkt)
+b) Zapisz równanie reakcji z probówki b. (1 pkt)
+c) Zapisz równanie reakcji z probówki d i nazwij tlenek żelaza, który powstaje. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (2 pkt) W probówkach a i b — gaz to wodór (H₂); w probówce c brak reakcji, więc brak gazu. (Po 1 pkt za poprawne wskazanie i nazwę gazu.)
+b) (1 pkt) Ca + 2H₂O → Ca(OH)₂ + H₂↑ — produktami są wodorotlenek wapnia i wodór; roztwór może zmętnieć (słabo rozpuszczalny Ca(OH)₂).
+c) (1 pkt) 3Fe + 4H₂O → Fe₃O₄ + 4H₂; powstaje tlenek żelaza(II, III) — mieszany tlenek, w którym żelazo występuje na dwóch stopniach utlenienia.</p>
+</details>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">4</span> Metale + kwasy nieutleniające — reguła wodoru {#kwasy} <span class="level-badge level-basic">E8</span> <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<p>Tu zaczyna się rola wodoru jako granicy. <strong>Zachodzi tylko dla metali przed H</strong> — i to jest cała reguła, którą rozbudowujemy równaniami. Metal, będący przed H, odbiera elektrony jonom H⁺; jony te łączą się w cząsteczki wodoru, które uwalniają się jako gaz. Metal przechodzi do roztworu jako kation, tworząc sól.</p>
+<p>Przykłady obowiązkowe:</p>
+<ul>
+<li>Zn + 2HCl → ZnCl₂ + H₂↑</li>
+<li>Fe + H₂SO₄ (rozc.) → FeSO₄ + H₂↑</li>
+<li>Mg + 2HCl → MgCl₂ + H₂↑</li>
+<li>Cu + HCl → <strong>brak reakcji</strong></li>
+<li>Ag + HCl → <strong>brak reakcji</strong></li>
+<li>Pb + 2HCl → PbCl₂ + H₂↑ (powoli; PbCl₂ słabo rozpuszczalny)</li>
+</ul>
+<p>Również inne metale przed H reagują analogicznie: Fe + 2HCl → FeCl₂ + H₂↑ oraz Mg + H₂SO₄ → MgSO₄ + H₂↑. Zauważ, że żelazo z rozcieńczonymi kwasami nieutleniającymi tworzy sole żelaza(II) — Fe²⁺, nie Fe³⁺; to częsty szczegół w kluczach konkursowych.</p>
+<p><strong>Pułapka:</strong> stężony HNO₃ i stężony H₂SO₄ to kwasy utleniające — reagują też z Cu i Ag, według innych schematów. Na poziomie klasy 8 i etapu rejonowego LKO zwykle niewymagane, ale warto wiedzieć, że reguła „metal za H nie reaguje” dotyczy typowo <strong>rozcieńczonych kwasów nieutleniających</strong>, a nie każdego kwasu.</p>
+<p><strong>Jak sprawdzić wydzielający się wodór:</strong> próba palności — zbierz gaz do probówki i zbliż płomień; czysty H₂ pali się spokojnie, mieszanka wodoru z powietrzem daje charakterystyczny głośny trzask. To jedno z podstawowych doświadczeń identyfikacyjnych gazów (pełny opis — <a href="#doswiadczenia">§8</a>, doświadczenie 3).</p>
+<div class="card card-warning">
+<span class="card-label">Uwaga — reguła ma załącznik warunków</span>
+<p>Zdanie „metal przed H reaguje z kwasem” jest skrótem, nie prawem bez wyjątków. Po pierwsze: chodzi o kwasy <strong>nieutleniające</strong> w roztworze (HCl, rozcieńczony H₂SO₄). Po drugie: glin mimo wysokiej pozycji może początkowo nie reagować — chroni go warstwa tlenkowa (pasywacja). Po trzecie: ołów reaguje powoli, bo powstający PbCl₂ słabo rozpuszczalny pokrywa metal. Po czwarte: kinetyka — reakcja może zachodzić wolno, co nie równa się jej brakowi. Na konkursie każde „nie zachodzi” uzasadnij położeniem w szeregu <strong>i</strong> sprawdź, czy nie działa któryś z tych czterech hamulców.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — metale z kwasami</span>
+<p>H w szeregu to linia metra: przed stacją H wsiadają do kwasu (wydzielają H₂), za stacją H — nie. Zapis równania zawsze w trzech krokach: sól (metal + reszta kwasowa), wodor ↑, bilans współczynników. Cztery hamulce reguły: kwas utleniający, pasywacja (Al), słabo rozpuszczalny produkt (PbCl₂), wolna kinetyka. Obserwacja kontrolna: zanikanie blaszki metalu, bąbelki gazu, nagrzewanie — a wodór potwierdzasz próbą palności (głośny trzask).</p>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 4 (4 pkt) — Kwas rozstrzyga</span>
+<p>a) Zapisz równanie reakcji magnezu z rozcieńczonym kwasem chlorowodorowym i nazwij produkty. (2 pkt)
+b) Uczeń twierdzi: „Miedź leży przed wodorem, bo jest cięższa”. Znajdź dwa błędy w rozumowaniu i popraw wniosek. (1 pkt)
+c) Otrzymany w a) gaz zbadano próbą palności. Opisz obserwację potwierdzającą wodór. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (2 pkt) Mg + 2HCl → MgCl₂ + H₂↑; produkty: chlorek magnezu (sól) i wodór. (1 pkt za równanie, 1 pkt za nazwy produktów.)
+b) (1 pkt) Błędy: o pozycji w szeregu nie decyduje gęstość, lecz skłonność do oddawania elektronów; miedź stoi <strong>za</strong> wodorem. Wniosek: Cu nie wypiera wodoru z rozcieńczonych kwasów nieutleniających — Cu + HCl → brak reakcji.
+c) (1 pkt) Głośny trzask (płomień zbliżony do wylotu probówki z mieszanką wodoru z powietrzem) potwierdza obecność wodoru; czysty H₂ pali się spokojnie.</p>
+</details>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">5</span> Metale + roztwory soli — wypieranie {#sole} <span class="level-badge level-basic">E8</span> <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<p><strong>Zasada:</strong> metal bardziej aktywny wypiera metal mniej aktywny z roztworu jego soli. Reguła wypierania działa, jeżeli:</p>
+<ul>
+<li>oba metale pozostają w odpowiednich formach chemicznych;</li>
+<li>powstający produkt jest możliwy w danych warunkach;</li>
+<li>nie występuje pasywacja uniemożliwiająca kontakt;</li>
+<li>reakcja nie jest hamowana kinetycznie.</li>
+</ul>
+<p>I pamiętaj o wyjątku areny wodnej: litowce i berylowce (K, Na, Ca…) w typowych warunkach szkolnych reagują z <strong>wodą rozpuszczalnika</strong> zamiast wypierać metale z roztworów soli.</p>
+<p>Klasyczne doświadczenia szkolne i konkursowe:</p>
+<ol>
+<li><strong>Fe + CuSO₄</strong>
+Fe + CuSO₄ → FeSO₄ + Cu↓
+Obserwacja: niebieski roztwór blednie / zielenieje, na żelazie osad czerwonawej miedzi.
+Jonowo skrócone: Fe + Cu²⁺ → Fe²⁺ + Cu</li>
+</ol>
+<ol start="2">
+<li><strong>Zn + CuSO₄</strong>
+Zn + CuSO₄ → ZnSO₄ + Cu↓
+Jonowo: Zn + Cu²⁺ → Zn²⁺ + Cu</li>
+</ol>
+<ol start="3">
+<li><strong>Cu + 2AgNO₃</strong>
+Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag↓
+Obserwacja: na miedzi srebrzysty/szary osad, roztwór błękitnieje (pojawiają się jony Cu²⁺).
+Jonowo: Cu + 2Ag⁺ → Cu²⁺ + 2Ag</li>
+</ol>
+<ol start="4">
+<li><strong>Cu + FeSO₄</strong> → <strong>brak reakcji</strong> (Cu jest mniej aktywny od Fe; brak reakcji też uzasadniasz szeregiem)</li>
+</ol>
+<ol start="5">
+<li><strong>Zn + FeSO₄</strong> → ZnSO₄ + Fe↓ (zachodzi — cynk stoi przed żelazem)</li>
+</ol>
+<p>Przykład z wyższej półki drabiny: Mg + CuSO₄ → MgSO₄ + Cu — magnez leży wyżej niż miedź, więc może oddać elektrony, a jony Cu²⁺ ulegają redukcji do miedzi; jonowo skrócone: Mg + Cu²⁺ → Mg²⁺ + Cu. I odwrotność tej samej reguły: Cu + MgSO₄ → brak reakcji, bo miedź jest mniej aktywna od magnezu i nie wypiera go z jego soli.</p>
+<p>Barwy, które grają w tych doświadczeniach: rozcieńczony roztwór CuSO₄ jest <strong>niebieski</strong> (jony Cu²⁺), roztwory Fe²⁺ są bladozielonkawe — dlatego po reakcji Fe z CuSO₄ roztwór blednie i zielenieje. Osad miedzi jest czerwonawy (brunatno-czerwony), osad srebra — srebrzystoszary.</p>
+<div class="card card-warning">
+<span class="card-label">Uwaga — sód do roztworu soli: pułapka kluczowa</span>
+<p>Pary „aktywny metal + roztwór soli” nie wolno zamykać w jednym schemacie. Gdy blaszka sodowa trafia do roztworu CuSO₄, sód spotyka najpierw <strong>wodę rozpuszczalnika</strong> — reaguje z nią gwałtownie (2Na + 2H₂O → 2NaOH + H₂↑), zanim cokolwiek wyprawisz z jonami miedzi. W typowym szkolnym modelu nie zapisujemy Na₂SO₄ + Cu↓ jako wynik wrzucenia sodu do roztworu. Ta sama logika dotyczy K i Ca. Na konkursie ta pułapka występuje regularnie — i na egzaminie też bywa.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — wypieranie</span>
+<p>Reguła jednowyrazowa: <strong>z góry na dół</strong>. Metal z góry drabiny wchodzi do roztworu jako kation, metal z dołu wychodzi jako osad. Fe + Cu²⁺ → Fe²⁺ + Cu: żelazo oddaje elektrony, jony miedzi je przyjmują. Obserwacje są po Twojej stronie reguły: blednący niebieski roztwór = ubywa Cu²⁺; czerwony osad = przybywa Cu; błękitnienie przy miedzi w AgNO₃ = przybywa Cu²⁺. Zanim zapiszesz reakcję, sprawdź cztery warunki (forma chemiczna, produkt możliwy, brak pasywacji, brak hamowania kinetycznego) i jeden wyjątek (litowce i wapń najpierw grają z wodą).</p>
+</div>
+<nie-myl>
+<summary>Wypieranie ≠ każde spotkanie metalu z solą</summary>
+<ul>
+<li>Wypieranie „z góry na dół” ≠ reakcja w dowolnym kierunku — Cu + FeSO₄ → brak reakcji, bo miedź stoi niżej; test rozstrzygający: sprawdź, który metal stoi wcześniej w szeregu — tylko ten może być reduktorem.</li>
+<li>Reguła wypierania ≠ pełna chemia redoks soli — Ag + FeCl₃: w typowym szkolnym modelu srebro nie wypiera żelaza; ponadto FeCl₃ zawiera Fe³⁺, więc proste reguły wypierania z soli Fe²⁺ nie wystarczają do analizy wszystkich możliwych procesów redoks; test rozstrzygający: sprawdź stopień utlenienia metalu w soli i nie rozciągaj reguły poza jej założenia.</li>
+<li>Reakcja z roztworem soli ≠ reakcja z czystą wodą dla litowców — K, Na, Ca w roztworach najpierw reagują z wodą; test rozstrzygający: metal przed Mg w szeregu? → spodziewaj się reakcji z wodą rozpuszczalnika.</li>
+</ul>
+</nie-myl>
+<div class="card card-exam">
+<span class="card-label">Zadanie 5 (4 pkt) — Gwóźdź w niebieskim roztworze</span>
+<p>Do niebieskiego roztworu CuSO₄ wrzucono opiłki żelaza.
+a) Co zaobserwujesz? (1 pkt)
+b) Zapisz równanie cząsteczkowe i jonowe skrócone. (1 pkt)
+c) Który metal jest bardziej aktywny? Uzasadnij położeniem w szeregu. (1 pkt)
+d) Co się stanie, gdy do świeżego roztworu FeSO₄ zanurzysz blaszkę miedzianą? Uzasadnij. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) Roztwór traci intensywną niebieską barwę (lub zielenieje), na powierzchni żelaza pojawia się czerwony/brunatny osad miedzi; opiłki mogą stopniowo znikać (żelazo przechodzi do roztworu jako Fe²⁺).
+b) (1 pkt) Fe + CuSO₄ → FeSO₄ + Cu↓ oraz Fe + Cu²⁺ → Fe²⁺ + Cu.
+c) (1 pkt) Żelazo jest bardziej aktywne, bo leży przed miedzią w szeregu aktywności — dlatego może ją wypierać z roztworu jej soli.
+d) (1 pkt) Brak reakcji: miedź leży za żelazem, więc nie wypiera go z roztworu FeSO₄; kierunek wypierania jest tylko jeden — z góry na dół drabiny.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 6 (4 pkt) — Miedziany drut w azotanie(V) srebra</span>
+<p>Do roztworu AgNO₃ wprowadzono miedziany drut.
+a) Zapisz równanie cząsteczkowe. (1 pkt)
+b) Zapisz równanie jonowe skrócone. (1 pkt)
+c) Podaj dwie obserwacje. (1 pkt)
+d) Wyjaśnij, dlaczego reakcja zachodzi, powołując się na szereg. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag↓.
+b) (1 pkt) Cu + 2Ag⁺ → Cu²⁺ + 2Ag.
+c) (1 pkt) Na drucie może pojawić się srebrzysty/szary osad srebra; roztwór może przyjąć niebieskie zabarwienie wskutek obecności jonów Cu²⁺.
+d) (1 pkt) Miedź stoi w szeregu przed srebrem, więc jest bardziej aktywna — może oddać elektrony i wypierać srebro z roztworu jego soli.</p>
+</details>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">6</span> Redoks — elektronowa księgowość wypierania {#redoks} <span class="level-badge level-understand">ROZUMIENIE</span> <span class="level-badge level-exam">KONKURS</span></div>
+<p>Wszystkie reakcje tej lekcji łączy jedna wspólna waluta: <strong>elektrony</strong>. Metal bardziej aktywny:</p>
+<ul>
+<li>oddaje elektrony;</li>
+<li>ulega utlenieniu;</li>
+<li>tworzy kation.</li>
+</ul>
+<p>Jon metalu mniej aktywnego:</p>
+<ul>
+<li>przyjmuje elektrony;</li>
+<li>ulega redukcji;</li>
+<li>tworzy atom metalu.</li>
+</ul>
+<p>Dla reakcji Zn + Cu²⁺ → Zn²⁺ + Cu rozpiska wygląda tak:</p>
+<ul>
+<li>cynk: Zn⁰ → Zn²⁺ + 2e⁻ (utlenienie — cynk jest <strong>reduktorem</strong>);</li>
+<li>miedź: Cu²⁺ + 2e⁻ → Cu⁰ (redukcja — jony Cu²⁺ są <strong>utleniaczem</strong>).</li>
+</ul>
+<p>Suma elektronów oddanych musi równać się sumie przyjętych — stąd współczynniki 2 w reakcji Cu + 2Ag⁺ → Cu²⁺ + 2Ag (jedna miedź odda dwa elektrony, więc potrzebna są dwa jony Ag⁺, z których każdy przyjmuje po jednym). To zdanie rozwiązuje zadania o bilansie ładunków: w równaniu jonowym skróconym suma ładunków po lewej musi równać się sumie po prawej.</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie — redoks wypierania</span>
+<p>Góra drabiny oddaje (utlenienie, reduktor, kation w roztworze), dół przyjmuje (redukcja, utleniacz, metal w osadzie). Elektrony są walutą bez poduszki: nic ich nie gubi — bilans oddanych i przyjętych zawsze się zamyka. Utleniacz utlenia kogoś innego, sam będąc redukowanym; reduktor redukuje kogoś innego, sam będąc utlenianym — pary te zawsze pracują razem, dlatego mówi się o reakcji redoks, nie o dwóch osobnych reakcjach.</p>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 7 (4 pkt) — Kto oddaje, kto przyjmuje</span>
+<p>a) W reakcji Zn + Cu²⁺ → Zn²⁺ + Cu wskaż utleniacz i reduktor. (1 pkt)
+b) Zapisz obie półreakcje elektronowe. (1 pkt)
+c) Sprawdź bilans ładunków w równaniu Ag⁺ + Cl⁻ → AgCl i opisz go. (1 pkt)
+d) Dlaczego w równaniu Cu + 2Ag⁺ → Cu²⁺ + 2Ag współczynnik 2 stoi przy Ag⁺? (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) Reduktorem jest cynk (oddaje elektrony, utlenia się do Zn²⁺); utleniaczem są jony Cu²⁺ (przyjmują elektrony, redukują się do Cu).
+b) (1 pkt) Zn⁰ → Zn²⁺ + 2e⁻ oraz Cu²⁺ + 2e⁻ → Cu⁰.
+c) (1 pkt) Po lewej stronie suma ładunków wynosi 0 (+1 − 1), po prawej osad AgCl jest obojętny — bilans ładunków jest zachowany.
+d) (1 pkt) Jedna cząsteczka/atom miedzi oddaje 2 elektrony, a każdy jon Ag⁺ przyjmuje tylko 1 elektron; żeby elektrony się zbilansowały, potrzebne są dwa jony Ag⁺ na jedną miedź.</p>
+</details>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">7</span> Granice szeregu — pasywacja, warunki i pułapki {#granice} <span class="level-badge level-exam">KONKURS</span> <span class="level-badge level-extra">AMBITNE</span></div>
+<p>Tu zaczyna się poziom, który na etapie rejonowym rozdziela punkty. Szereg aktywności porządkuje metale według skłonności do oddawania elektronów — ale <strong>nie jest uniwersalną tabelą przewidującą każdą reakcję w każdych warunkach</strong>. Oto lista uczciwych ograniczeń:</p>
+<ol>
+<li><strong>Pasywacja.</strong> Glin może być pozornie mniej reaktywny wskutek warstwy pasywnej (Al₂O₃), mimo wysokiej aktywności chemicznego samego metalu. Warstwa tlenkowa chroni też żelazo (stal nierdzewna), a niektóre metale pasywują mocno w specyficznych kwasach. Położenie w szeregu nie wystarcza do opisania pasywacji.</li>
+<li><strong>Warunki fizyczne.</strong> Środowisko, stężenie i temperatura zmieniają wynik: Mg w zimnej wodzie — prawie niewidocznie, w parze — szybko; ta sama reguła daje różne obrazy przy różnych warunkach.</li>
+<li><strong>Kinetyka.</strong> Reakcja możliwa termodynamicznie może przebiegać wolno — a „wolno” nie znaczy „nie zachodzi”. Ołów z HCl reaguje powoli także dlatego, że słabo rozpuszczalny PbCl₂ zakleja powierzchnię.</li>
+<li><strong>Charakter kwasu.</strong> Kwasy utleniające, takie jak stężony kwas azotowy(V) czy stężony kwas siarkowy(VI), mają właściwości utleniające i mogą reagować z metalami według innych schematów — nawet z Cu i Ag. Reguła wodoru dotyczy rozcieńczonych kwasów nieutleniających.</li>
+<li><strong>Forma metalu w soli.</strong> Reguła wypierania jest prosta dla soli z jonami Me²⁺ (Fe²⁺, Cu²⁺, Zn²⁺), ale sole z innymi stopniami utlenienia (Fe³⁺ w FeCl₃) wypadają poza prosty schemat — w typowym szkolnym modelu Ag nie wypiera żelaza z FeCl₃, a pełna analiza wymaga rozważenia wszystkich możliwych procesów redoks.</li>
+<li><strong>Konkurencja wody.</strong> Metale bardzo aktywne w roztworach konkurują z wodą rozpuszczalnika — stąd wyjątek dla litowców i berylowców.</li>
+</ol>
+<p>Metal znajdujący się wyżej może wypierać metal znajdujący się niżej z jego soli, <strong>jeżeli reakcja jest możliwa w danych warunkach</strong> — ten załącznik „jeżeli” to cała różnica między zadaniem łatwym a konkursowym.</p>
+<div class="card card-warning">
+<span class="card-label">Uwaga — cztery hamulce w jednym zadaniu</span>
+<p>Przy ocenie „zachodzi / nie zachodzi” kolejność pytań kontrolnych: (1) Czy oba metale są w sensownych formach chemicznych (uwaga na Fe³⁺)? (2) Czy metal nie jest litowcem/berylowcem, który najpierw zareaguje z wodą? (3) Czy nie działa pasywacja (Al, stare powierzchnie)? (4) Czy produkt jest możliwy i czy kinetyka nie jest fatalna? Dopiero po tych czterech pytaniach sięgaj po sam szereg. Na konkursie każde „nie zachodzi” musi mieć uzasadnienie położeniem — a każde „zachodzi, ale nic nie widać” — wskazanie hamulca.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — granice szeregu</span>
+<p>Szereg to mapa średniej prędkości, nie obieca­nie bezruchu ani lawiny. Sześć ograniczeń: pasywacja (Al₂O₃), warunki (stężenie, temperatura), kinetyka (wolno ≠ nigdy), kwasy utleniające (osobne reguły), stopień utlenienia w soli (Fe³⁺), konkurencja wody (litowce). Przykład-symptom: aluminium — wymieniane wśród najszybszych, a wygląda na nieśmiałe; nie dlatego, że szereg kłamie, lecz dlatego, że między metalem a światem stoi cienka, twarda warstwa tlenku.</p>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 8 (4 pkt) — Paradoks aluminium</span>
+<p>a) Aluminium stoi w szeregu przed cynkiem. Wyjaśnij, dlaczego mimo to blaszka aluminiowa może reagować z rozcieńczonym kwasem chlorowodorowym zauważalnie wolniej niż cynkowa. (2 pkt)
+b) Zapisz równanie reakcji glinu z kwasem chlorowodorowym, pomijając efekt pasywacji. (1 pkt)
+c) Podaj jedno ograniczenie szeregu aktywności, które objawiło się w a). (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (2 pkt) Powierzchnię aluminium pokrywa zwarta warstwa tlenku glinu (pasywacja), którą kwas musi najpierw rozpuścić, zanim dotrze do metalu; dopiero po jej naruszeniu reakcja biegnie zgodnie z pozycją Al w szeregu. (1 pkt za pasywację, 1 pkt za wyjaśnienie roli warstwy.)
+b) (1 pkt) 2Al + 6HCl → 2AlCl₃ + 3H₂↑.
+c) (1 pkt) Szereg nie uwzględnia pasywacji (a także kinetyki, stężenia i temperatury) — pokazuje skłonność „czystego” metalu do oddawania elektronów, nie rzeczywistą szybkość reakcji konkretnej blaszki.</p>
+</details>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">8</span> Doświadczenia {#doswiadczenia} <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<p>Trzy doświadczenia: jedno projektuje szereg dla trzech metali, drugie uczy uczciwego protokołu prób, trzecie potwierdza wodór. Próba kontrolna jest w każdym obowiązkowa — bez niej wniosek nie jest dowodem.</p>
+<div class="exp-card"><h5>Doświadczenie 1 — Ranking metali w kwasie</h5><div class="exp-grid"><b>Problem</b><span>Który z metali Mg, Zn, Cu jest najbardziej aktywny chemicznie?</span><b>Hipoteza</b><span>Aktywność maleje w kolejności Mg > Zn > Cu (zgodnie z szeregiem).</span><b>Sprzęt</b><span>trzy probówki w statywie, jednakowa objętość rozcieńczonego kwasu chlorowodorowego, jednakowe porcje opiłków (blaszek) magnezu, cynku i miedzi, stoper, probówka do próby palności, zapałki.</span><b>Przebieg</b><span>1) Do trzech probówek z jednakową ilością rozcieńczonego HCl wrzuć jednocześnie jednakowe porcje Mg, Zn, Cu. 2) Obserwuj szybkość wydzielania gazu i ewentualny wzrost temperatury przez ten sam czas. 3) Zebrany znad magnezu gaz zbadaj próbą palności. 4) Dodatkowo: wrzuć pasek Zn i pasek Cu do roztworu CuSO₄ oraz pasek Cu do roztworu FeSO₄.</span><b>Próba kontrolna</b><span>probówka z tym samym kwasem bez metalu — wyklucza samorzutne wydzielanie gazu z kwasu; probówka z miedzią pełni rolę kontroli ujemnej (metal za H).</span><b>Obserwacja</b><span>Mg — bardzo szybkie wydzielanie H₂, nagrzewanie; Zn — wyraźne wydzielanie H₂; Cu — brak reakcji z HCl; Zn w CuSO₄ — osad Cu; Cu w FeSO₄ — brak.</span><b>Wniosek</b><span>kolejność aktywności Mg > Zn > Cu — obserwacje potwierdzają hipotezę i położenie metali w szeregu; szybkość wydzielania wodoru z kwasu jest miarą względnej aktywności metali przed H.</span><b>BHP</b><span>okulary i rękawice; HCl drażni skórę i oczy; próbę palności wykonuj tylko nad małą objętością gazu, z wodą pod ręką; nie pij roztworów; po pracy umyj ręce, a odpady zbierz zgodnie z instrukcjami (nie wylewaj roztworów metali ciężkich do zlewu).</span></div></div>
+<div class="exp-card"><h5>Doświadczenie 2 — Próba szeregu: czy X wypiera Y?</h5><div class="exp-grid"><b>Problem</b><span>Czy metal X wypiera metal Y z roztworu jego soli?</span><b>Hipoteza</b><span>Jeżeli X stoi w szeregu przed Y, na powierzchni X pojawi się osad Y, a roztwór zmieni barwę.</span><b>Sprzęt</b><span>porównywalne próbki metali (blaszki/druty), roztwory soli o znanym stężeniu, probówki, papier filtry, woda destylowana do płukania.</span><b>Przebieg</b><span>1) Przygotuj porównywalne próbki metali. 2) Umieść je w roztworach soli o znanym stężeniu. 3) Zachowaj taki sam czas obserwacji i temperaturę. 4) Nie mieszaj próbek między roztworami (każda blaszka — tylko jeden roztwór). 5) Obserwuj zmianę powierzchni metalu, barwy roztworu i ewentualne wydzielanie nowej substancji. 6) Zapisz równanie tylko wtedy, gdy obserwacje i dane potwierdzają zachodzenie reakcji.</span><b>Próba kontrolna</b><span>blaszka tego samego metalu w wodzie destylowanej — pokazuje, czy zmiany powierzchni nie pochodzą od samej wody albo zanieczyszczeń próbki.</span><b>Obserwacja możliwe</b><span>osadzenie metalu na powierzchni próbki; zmiana barwy roztworu; zanikanie części metalu; brak widocznych zmian.</span><b>Wniosek</b><span>widoczny osad może wskazywać na redukcję jonów metalu z roztworu, ale należy wykluczyć zanieczyszczenie próbki i reakcje powierzchniowe niezwiązane z właściwą reakcją wypierania — dopiero seria spójnych obserwacji z kontrolą pozwala uszeregować metale.</span><b>BHP</b><span>używaj okularów i rękawic; nie dotykaj odczynników gołymi rękami; nie wylewaj roztworów metali ciężkich do zlewu; odpady zbieraj do właściwego pojemnika; doświadczenie wykonuj pod nadzorem osoby dorosłej.</span></div></div>
+<div class="exp-card"><h5>Doświadczenie 3 — Próba palności: to jest wodór?</h5><div class="exp-grid"><b>Problem</b><span>Czy gaz wydzielający się w reakcji Zn z rozcieńczonym HCl jest wodorem?</span><b>Hipoteza</b><span>Jeżeli to H₂, zbliżenie płomienia do mieszanki gazu z powietrzem da głośny trzask.</span><b>Sprzęt</b><span>probówka z Zn i rozcieńczonym HCl, korek z rurką (albo druga probówka do zbierania gazu), zapałki/łuczywo, statyw.</span><b>Przebieg</b><span>1) Wytwórz gaz w reakcji Zn + 2HCl → ZnCl₂ + H₂↑. 2) Po kilku sekundach (gdy powietrze zostanie wyparte) zbierz gaz do odwróconej probówki nad wodą lub zatrzymaj wylot korkiem. 3) Zbliż płomień do wylotu probówki z gazem.</span><b>Próba kontrolna</b><span>ta sama próba wykonana nad probówką z powietrzem — brak trzasku potwierdza, że efekt pochodzi od gazu, nie od samej czynności.</span><b>Obserwacja</b><span>głośny trzask (dla czystego wodoru — spokojne spalanie z ledwie widocznym płomieniem).</span><b>Wniosek</b><span>gaz jest wodorem; próba palności potwierdza produkt reakcji metalu przed H z kwasem nieutleniającym, a więc i samą regułę wodoru.</span><b>BHP</b><span>małe objętości gazu — mieszanka H₂ z powietrzem detonuje; nie zbieraj dużych porcji, trzymaj twarz z dala od wylotu, miej dostęp do wody; okulary ochronne obowiązkowe.</span></div></div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">9</span> Zadania konkursowe {#zadania-konkurs} <span class="level-badge level-exam">KONKURS</span></div>
+<p>Osiem zadań w typach: ocena reakcji, transfer, obliczenia, przewidywanie zbiorcze, przekształcanie, znajdź błąd, analiza tekstu, pułapka. Każde z kluczem i uzasadnieniem — na konkursie odpowiedź bez uzasadnienia nie dostaje pełni punktów.</p>
+<details class="adv"><summary>Zadanie 9 (4 pkt) — Które reakcje zachodzą? <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Podaj, które z poniższych reakcji zachodzą. Zapisz równania tych, które zachodzą.
+a) Cu + 2HCl
+b) Zn + CuSO₄
+c) Ag + FeCl₃
+d) Mg + 2H₂O (zimna woda)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) Nie zachodzi — miedź leży za wodorem, więc nie wypiera wodoru z rozcieńczonego kwasu nieutleniającego.
+b) (1 pkt) Zn + CuSO₄ → ZnSO₄ + Cu↓ — cynk stoi przed miedzią.
+c) (1 pkt) W typowym szkolnym modelu Ag nie wypiera żelaza z FeCl₃; należy jednak zaznaczyć, że FeCl₃ zawiera Fe³⁺, więc proste reguły wypierania metalu z soli Fe²⁺ nie wystarczają do analizy wszystkich możliwych procesów redoks — pełna odpowiedź wymaga tej uwagi.
+d) (1 pkt) Mg + 2H₂O → Mg(OH)₂ + H₂↑ — reakcja zachodzi, choć bardzo powoli; „powoli” nie jest „nie zachodzi”.</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie 10 (4 pkt) — Transfer: metal X i metal Y <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Metal X wypiera miedź z roztworu CuSO₄, ale nie reaguje z zimną wodą. Metal Y reaguje gwałtownie z zimną wodą.
+a) Który metal jest bardziej aktywny? Uzasadnij. (1 pkt)
+b) Który metodom szeregu odpowiada opis metalu Y? Podaj przykład. (1 pkt)
+c) Czy dane pozwalają wskazać jednoznacznie metal X? Uzasadnij i podaj dwa przykłady zgodne z typowym szkolnym modelem. (2 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) Y jest bardziej aktywny od X: reaguje gwałtownie z zimną wodą, a X z zimną wodą nie reaguje.
+b) (1 pkt) Gwałtowna reakcja z zimną wodą pasuje do litowców/berylowców, np. Na (Ca także reaguje z wodą, choć opis gwałtowności zależy od warunków).
+c) (2 pkt) Nie. X musi być bardziej aktywny od Cu, skoro wypiera miedź z roztworu CuSO₄, ale dane nie wyznaczają jednego metalu ani ścisłego przedziału „między Mg a H”. Przykładami zgodnymi z typowym szkolnym modelem są Zn lub Fe; Mg reaguje z zimną wodą bardzo powoli, więc też bywa uzasadnionym kandydatem przy założeniu „nie reaguje zauważalnie”. (1 pkt za wniosek „dane niewystarczające”, 1 pkt za dwa przykłady z uzasadnieniem.)</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie 11 (5 pkt) — Obliczenia z substratem ograniczającym <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Do 200 g 10% roztworu CuSO₄ wrzucono 5 g cynku. Czy cały cynk się rozpuści? Ile miedzi się wydzieli? (Cu = 64, Zn = 65, S = 32, O = 16)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li>(1 pkt) Masa CuSO₄ w roztworze: 200 g · 10% = 20 g.</li>
+<li>(1 pkt) Równanie: Zn + CuSO₄ → ZnSO₄ + Cu↓; proporcje masowe: 65 g Zn ↔ 160 g CuSO₄ ↔ 64 g Cu (M(CuSO₄) = 64 + 32 + 4·16 = 160 g/mol).</li>
+<li>(1 pkt) CuSO₄ potrzebny do rozpuszczenia całego cynku: (65/160)·20 ≈ 8,1 g Zn dla 20 g CuSO₄ — czyli 20 g CuSO₄ mogłoby rozpuścić ok. 8,1 g (dokładniej 8,13 g) cynku.</li>
+<li>(1 pkt) Cynku jest 5 g &lt; 8,1 g, więc cynk jest substratem ograniczającym — rozpuści się w całości, a CuSO₄ pozostanie w nadmiarze.</li>
+<li>(1 pkt) Masa miedzi: (64/65)·5 ≈ 4,92 g.</li>
+</ol>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie 12 (4 pkt) — Cztery blaszki w jednym roztworze <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Do probówki z roztworem siarczanu(VI) miedzi(II) włożono osobno, w czterech doświadczeniach: blaszkę cynkową, blaszkę srebrną, blaszkę magnezową i blaszkę żelazną. Podaj, w których doświadczeniach zajdzie reakcja, zapisz równania i wyjaśnij przypadek braku reakcji.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li>(3 pkt) Cynk, magnez i żelazo mogą wypierać miedź z roztworu (wszystkie trzy leżą przed Cu):
+Zn + CuSO₄ → ZnSO₄ + Cu↓
+Mg + CuSO₄ → MgSO₄ + Cu↓
+Fe + CuSO₄ → FeSO₄ + Cu↓
+(1 pkt za wskazanie trzech reakcji + 2 pkt za trzy poprawne równania.)</li>
+<li>(1 pkt) Srebro nie wypiera miedzi: Ag + CuSO₄ → brak typowej reakcji — srebro leży za miedzią w szeregu, więc nie może oddać jej elektronów; kierunek wypierania prowadzi tylko z góry na dół.</li>
+</ol>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie 13 (4 pkt) — Przekształcenia z azotanem(V) srebra <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>a) Zapisz równanie reakcji magnezu z azotanem(V) srebra. (1 pkt)
+b) Oceń, czy zachodzi reakcja żelaza z AgNO₃; jeśli tak — zapisz równanie. (1 pkt)
+c) Zapisz równanie jonowe skrócone reakcji z b) i sprawdź bilans ładunków. (2 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) Mg + 2AgNO₃ → Mg(NO₃)₂ + 2Ag↓ (magnez stoi przed srebrem).
+b) (1 pkt) Tak, zachodzi: Fe + 2AgNO₃ → Fe(NO₃)₂ + 2Ag↓ (żelazo przed srebrem; z rozcieńczonych roztworów powstaje Fe²⁺).
+c) (2 pkt) Fe + 2Ag⁺ → Fe²⁺ + 2Ag (1 pkt); bilans ładunków: po lewej 2·(+1) = +2, po prawej +2 — bilans zachowany (1 pkt; przy osadzie Ag ładunek 0, a 2 srebra biorą 2 elektrony oddane przez żelazo).</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie 14 (5 pkt) — Znajdź błędy w rozumowaniu <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Uczeń zapisał cztery zdania. Znajdź i popraw wszystkie błędy merytoryczne:
+1. „Miedź wyparła cynk z roztworu siarczanu(VI) cynku, bo miedź jest szlachetniejsza.”
+2. „Cu + 2HCl → CuCl₂ + H₂↑, ponieważ miedź leży przed wodorem.”
+3. „Fe + CuSO₄ → FeSO₄ + Cu (bez strzałki, bez opisu obserwacji).”
+4. „Aluminium jest mało aktywne, bo nie reaguje z zimną wodą.”</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li>(1 pkt+) Kierunek odwrócony: to cynk (bardziej aktywny) wypiera miedź z roztworu jej soli; „szlachetniejsza” oznacza mniej aktywną, więc argument prowadził do wniosku przeciwnego. Poprawnie: Zn + CuSO₄ → ZnSO₄ + Cu↓.</li>
+<li>(1 pkt) Miedź leży <strong>za</strong> wodorem; poprawnie: Cu + HCl → brak reakcji (dla rozcieńczonych kwasów nieutleniających).</li>
+<li>(1 pkt+) Równanie prawidłowe, ale zapis wymaga strzałki osadu: Fe + CuSO₄ → FeSO₄ + Cu↓, oraz obserwacji: niebieski roztwór blednie/zielenieje, na żelazie czerwonawy osad miedzi.</li>
+<li>(1 pkt+) Nieistotne: aluminium stoi wysoko w szeregu i jest aktywne chemicznie; brak widocznej reakcji z zimną wodą wynika z pasywacji (warstwa Al₂O₃) i wolnej kinetyki — reakcja nie zachodzi zauważalnie, ale aktywność metalu jest wysoka.</li>
+</ol>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie 15 (4 pkt) — Analiza tekstu: cynkowanie <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Przeczytaj fragment: „Blachę stalową pokrywa się cienką warstwą cynku, aby chronić ją przed korozją. Gdy powłoka jest ciągła, cynk oddziela żelazo od wilgoci i tlenu. Gdy powłoka zostanie porysowana i żelazo obnaży się, cynk — leżący w szeregu przed żelazem — nadal chroni metal: w obecności wilgoci cynk ulega utlenieniu, a żelazo pozostaje nietknięte.”</p>
+<p>a) Wyjaśnij, dlaczego cynk, a nie miedź, nadaje się do ochrony stali. (1 pkt)
+b) Co się dzieje z cynkiem w miejscu rysy, zapisz równanie połówkowe utlenienia. (1 pkt)
+c) Dlaczego powłoka z cynku chroni żelazo nawet po uszkodzeniu, a powłoka z innego, mniej aktywnego metalu — tylko dopóki jest ciągła? (2 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) Cynk stoi przed żelazem w szeregu, więc jest od niego bardziej aktywny i w obecności elektrolitu bierze na siebie utlenienie; miedź stoi za żelazem — w uszkodzonym miejscu to żelazo byłoby utleniane.
+b) (1 pkt) Zn⁰ → Zn²⁺ + 2e⁻ — cynk oddaje elektrony i przechodzi do roztworu (korozyjnie „poświęca się”).
+c) (2 pkt) Cynk jest reduktorem wobec żelaza: elektrony oddawane przez cynk chronią żelazo przed utlenieniem nawet tam, gdzie powłoka jest przerwana (1 pkt). Metal mniej aktywny od żelaza nie odda mu elektronów — w szczelinie utlenianiu uległoby samo żelazo, więc ochrona działa tylko mechanicznie, dopóki powłoka jest nieuszkodzona (1 pkt).</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie 16 (4 pkt) — Pułapka: kwas, który nie działa <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Uczeń wrzucił blaszkę aluminiową do rozcieńczonego HCl i przez pierwszą minutę nie zaobserwował żadnych bąbelków. Wyciągnął wniosek: „Aluminium nie reaguje z kwasami, więc musi leżeć za wodorem”.
+a) Wskaż błąd we wniosku i podaj jego poprawne wyjaśnienie. (2 pkt)
+b) Opisz, co zwykle dzieje się po dłuższej chwili i dlaczego. (1 pkt)
+c) Zapisz równanie reakcji, która zacznie przebiegać. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (2 pkt) Błąd: wniosek o pozycji w szeregu wyciągnięty z samego braku widocznych bąbelków. Poprawnie: aluminium stoi wysoko (przed H), ale jego powierzchnię pokrywa pasywna warstwa tlenku glinu; dopóki kwas jej nie naruszy, reakcja jest niewidoczna. Brak obserwacji ≠ brak aktywności metalu.
+b) (1 pkt) Po rozwinięciu (rozpuszczeniu) warstwy tlenkowej reakcja przyspiesza — pojawiają się bąbelki wodoru, blaszka stopniowo znika.
+c) (1 pkt) 2Al + 6HCl → 2AlCl₃ + 3H₂↑.</p>
+</details>
+</div></details>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">10</span> Dla olimpijczyka — pogłębienie {#olimpijczyk} <span class="level-badge level-exam">KONKURS</span> <span class="level-badge level-extra">AMBITNE</span></div>
+<p><strong>Skąd się bierze szereg? Elektrochemiczna pizza, czyli potencjały standardowe.</strong> W chemii fizycznej każdą parę metal/jon mierzy się względem elektrody wzorcowej (wodorowej) i zapisuje jako <strong>potencjał standardowy</strong>. Uporządkowanie metali po tych potencjałach daje uniwersalny szereg napięć — od litu (bardzo ujemny) po złoto (dodatni). Szkolny szereg aktywności jest jego uproszczeniem; kolejność w nim może się nieznacznie różnić między źródłami (stąd dylematy typu Ag czy Hg dalej — warto sprawdzić wersję z własnego informatora; do weryfikacji). Konkursowo wystarczy rozumienie: im niższy (bardziej ujemny) potencjał, tym chętniej metal oddaje elektrony — czyli dokładnie reguła „lewo wypiera prawo”.</p>
+<p><strong>Dlaczego Na nie wydzieli miedzi z roztworu? Konkurencja reakcji.</strong> W roztworze sód ma dwóch partnerów: wodę i jony Cu²⁺. Woda jest wszędzie i reaguje z sodem gwałtownie, więc kinetyka rozstrzyga na jej korzyść — zanim cokolwiek wydzielisz jako miedź, sód zamieni się w NaOH, a uwolniony H₂ i wydzielone ciepło zrobią swoje. To przykład, że o wyniku reakcji w roztworze decyduje nie tylko kierunek termodynamiczny, ale i to, <strong>z kim metal spotka się najpierw</strong> — stąd wyjątek dla litowców i berylowców w regule wypierania.</p>
+<p><strong>Termodynamika kontra kinetyka.</strong> Szereg porządkuje skłonność (termodynamikę), nie szybkość (kinetykę). Dwie cząsteczki mogą „chcieć” zareagować, ale bariera aktywacyjna może zatrzymać reakcję na lata — albo pasywacja fizycznie odetnie dostęp. Na olimpiadzie pytanie „czy reakcja zachodzi” wymaga odpowiedzi dwuwarstwowej: termodynamicznie możliwa (kierunek wg szeregu) + kinetycznie realna (warunki, powierzchnia, pasywacja). Zadanie 16 jest treningiem dokładnie tego rozróżnienia.</p>
+<p><strong>H⁺ czy H₃O⁺?</strong> W roztworze wodnym proton nie istnieje sam — łączy się z cząsteczką wody do jonu hydroniowego H₃O⁺. Szkolny zapis H⁺ jest konwencją uproszczoną; na olimpiadzie umiej powiedzieć, że reagującym z metalem „donorem protonów” jest faktycznie H₃O⁺ (zapisy szkolne stosują H⁺ dla czytelności — zaznaczaj tę konwencję).</p>
+<p><strong>Kolory jako dane.</strong> Jony Cu²⁺ w roztworze — niebieskie; Fe²⁺ — bladozielonkawe; Fe³⁺ — żółtawe/brunatne. W reakcji Fe + CuSO₄ blednięcie niebieskiego to ubytek Cu²⁺, a zielenienie — przyrost Fe²⁺. Odczytywanie barw jako informacji o składzie roztworu to standard zadań olimpijskich: obserwacja jest daną, nie ozdobą.</p>
+<p><strong>Anoda protektorowa — szereg w praktyce morskiej.</strong> Do kadłubów statków i rurociągów przypina się bloki cynku lub magnezu: one — jako bardziej aktywne — biorą na siebie utlenienie i chronią stal (zadanie 15 to opisuje). To ta sama elektronowa księgowość co w probówce, tylko w skali portu.</p>
+<div class="card card-understand">
+<span class="card-label">Dla olimpijczyka — w skrócie</span>
+<p>Cztery bronie: 1) szereg = uproszczony szereg potencjałów standardowych; im bardziej ujemny potencjał, tym silniejszy reduktor; 2) litowce w roztworach grają najpierw z wodą — kinetyka wygrywa z elegancją reguły; 3) „zachodzi?” = termodynamika (szereg) + kinetyka (warunki, pasywacja); 4) barwy roztworów (Cu²⁺ niebieskie, Fe²⁺ zielonkawe, Fe³⁺ żółtawe) to dane liczbowe, tylko w wersji wizualnej. Do tego konwencja H⁺ zamiast H₃O⁺ — o niej wspomnij na olimpiadzie, a zdobędziesz reputację.</p>
+</div>
+<nie-myl>
+<summary>Termodynamika ≠ kinetyka</summary>
+<ul>
+<li>Reakcja możliwa ≠ reakcja szybka — szereg mówi o kierunku, nie o szybkości; test rozstrzygający: jeśli kierunek „dobry”, a obserwacja pusta — szukaj pasywacji lub bariery kinetycznej, zanim uznasz brak reakcji.</li>
+<li>Silny reduktor ≠ gwałtowna reakcja w każdych warunkach — Mg z zimną wodą reaguje wolno, choć jest silnym reduktorem; test rozstrzygający: warunki (temperatura, stan powierzchni) zmieniają obraz bez zmiany pozycji w szeregu.</li>
+<li>Szereg szkolny ≠ szereg uniwersalny — wersje różnią się kolejnością Ag/Hg i obecnością Pt; test rozstrzygający: do zadań używaj wersji z własnego informatora, a w rozprawce zaznacz, że szereg jest przybliżeniem.</li>
+</ul>
+</nie-myl>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">11</span> Klinika błędów {#klinika} <span class="level-badge level-basic">E8</span></div>
+<table class="klinika-table"><thead><tr><th>Błąd</th><th>Poprawnie</th><th>Dlaczego?</th></tr></thead><tbody><tr class="error-row"><td class="col-blad" data-label="Błąd">„Mniej aktywny metal wypiera bardziej aktywny z roztworu soli.”</td><td class="col-ok" data-label="Poprawa">Metal bardziej aktywny wypiera metal mniej aktywny.</td><td data-label="Dlaczego">Reguła wypierania biegnie tylko z góry na dół szeregu: aktywniejszy metal odda elektrony, a jon mniej aktywnego przejmie je i wytrąci się jako osad.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Cu + 2HCl → CuCl₂ + H₂↑.”</td><td class="col-ok" data-label="Poprawa">Cu + HCl → brak reakcji.</td><td data-label="Dlaczego">Miedź leży za wodorem w szeregu, więc nie wypiera wodoru z rozcieńczonych kwasów nieutleniających.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Fe + CuSO₄ → FeSO₄ + Cu.”</td><td class="col-ok" data-label="Poprawa">Fe + CuSO₄ → FeSO₄ + Cu↓; roztwór blednie/zielenieje, osad czerwony.</td><td data-label="Dlaczego">Strzałki ↓ i ↑ są obowiązkowym elementem zapisu, a opis obserwacji często daje osobny punkt w kluczu.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Aluminium nie reaguje z kwasem, bo jest mało aktywne.”</td><td class="col-ok" data-label="Poprawa">Al stoi wysoko w szeregu; brak szybkiej reakcji wynika z pasywacji (warstwa Al₂O₃).</td><td data-label="Dlaczego">Aktywność metalu i dostęp odczynnika do jego powierzchni to dwie różne sprawy; szereg opisuje pierwszą.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Magnez nie reaguje z zimną wodą.”</td><td class="col-ok" data-label="Poprawa">Mg reaguje z zimną wodą bardzo powoli; z gorącą/parą — szybko.</td><td data-label="Dlaczego">Reakcja powolna ≠ brak reakcji; w tabeli warunków Mg ma obie strefy.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„2Na + CuSO₄ → Na₂SO₄ + Cu↓ — więc sodem wydzielę miedź z roztworu.”</td><td class="col-ok" data-label="Poprawa">Sód najpierw gwałtownie reaguje z wodą rozpuszczalnika.</td><td data-label="Dlaczego">Litowce i wapń w roztworach konkurują z wodą, nie z jonami metalu; w typowym szkolnym modelu nie zapisujemy wypierania sodem.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Każdy metal przed H reaguje z każdym kwasem.”</td><td class="col-ok" data-label="Poprawa">Reguła dotyczy rozcieńczonych kwasów nieutleniających.</td><td data-label="Dlaczego">Kwasy utleniające (stężony HNO₃, stężony H₂SO₄) reagują także z Cu i Ag według innych schematów; do tego pasywacja i kinetyka mogą ukryć reakcję.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Ag + FeCl₃ → AgCl + Fe — przecież reguła wypierania.”</td><td class="col-ok" data-label="Poprawa">W typowym szkolnym modelu brak reakcji; FeCl₃ zawiera Fe³⁺.</td><td data-label="Dlaczego">Proste reguły wypierania opisują sole z typowymi jonami (Fe²⁺, Cu²⁺); stopień utlenienia metalu w soli wypada poza schemat i wymaga pełnej analizy redoks.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Utlenianie to łączenie z tlenem, więc Fe²⁺ → Fe³⁺ to redukcja.”</td><td class="col-ok" data-label="Poprawa">Fe²⁺ → Fe³⁺ + e⁻ to utlenienie.</td><td data-label="Dlaczego">Nowoczesna definicja jest elektronowa: utlenienie = oddanie elektronów, niezależnie od obecności tlenu.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Metal przed H wypierze miedź z CuSO₄, więc każda reakcja przed/po zachodzi natychmiast.”</td><td class="col-ok" data-label="Poprawa">Możliwa reakcja nie znaczy szybka; sprawdź warunki i obserwacje.</td><td data-label="Dlaczego">Kierunek (termodynamika) i szybkość (kinetyka) to osobne pojęcia; pasywacja i słabo rozpuszczalne produkty mogą zamaskować reakcję.</td></tr></tbody></table>
+<div class="myth-grid"><div class="myth"><p class="myth-x"><span>Mit</span>„Szereg aktywności przewiduje każdą reakcję w każdych warunkach.”</p><p class="myth-ok"><span>Poprawnie</span>Szereg porządkuje skłonność do oddawania elektronów; nie uwzględnia pasywacji, kinetyki, stężenia, temperatury ani charakteru odczynnika — dlatego to przybliżenie, nie uniwersalne prawo.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Złoto jest obojętne dla chemii, bo jest szlachetne i drogie.”</p><p class="myth-ok"><span>Poprawnie</span>Cena nie ma związku z aktywnością; złoto leży na końcu szeregu, bo bardzo niechętnie oddaje elektrony — stąd jego trwałość w biżuterii i znaleziska samorodków.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Miedź nie reaguje z żadnym kwasem.”</p><p class="myth-ok"><span>Poprawnie</span>Nie reaguje z rozcieńczonymi kwasami nieutleniającymi (HCl, rozc. H₂SO₄); kwasy utleniające, np. stężony HNO₃, reagują z miedzią według innych reguł (poziom rozszerzony).</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Im metal gęstszy, tym mniej aktywny.”</p><p class="myth-ok"><span>Poprawnie</span>Gęstość i aktywność to niezależne cechy: sód jest lżejszy od wody i ekstremalnie aktywny, a złoto — bardzo gęste i mało aktywne.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Wodoru nie można wstawić do szeregu metali, bo to niemetal.”</p><p class="myth-ok"><span>Poprawnie</span>Wodór stoi w szeregu jako punkt odniesienia — granica między metalami wypierającymi i niewypierającymi wodoru z kwasów nieutleniających; jego obecność tam jest konwencją pomocniczą, nie klasyfikacją.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Po wrzuceniu żelaza do CuSO₄ roztwór błękitnieje.”</p><p class="myth-ok"><span>Poprawnie</span>Jest odwrotnie: roztwór blednie/zielenieje, bo ubywają niebieskie jony Cu²⁺, a przybywają bladozielonkawe Fe²⁺; niebieski kolor mogłaby dodać dopiero miedź wchodząca do roztworu.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Cynk i miedź w kwasie reagują identycznie, bo oba to metale.”</p><p class="myth-ok"><span>Poprawnie</span>Zn leży przed H i wypiera z niego wodór; Cu — za H, więc nie reaguje; przynależność do „metali” nie przesądza o aktywności.</p></div></div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">12</span> Ćwiczenia utrwalające {#cwiczenia} <span class="level-badge level-basic">E8</span> <span class="level-badge level-exam">KONKURS</span></div>
+<p>Krótkie treningi bez punktacji — rozgrzewka przed zadaniami. Każde z kluczem.</p>
+<p><strong>Ćwiczenie 1.</strong> Czy cynk wypiera miedź z CuSO₄?</p>
+<details class="answer"><summary>Klucz</summary>
+<p>Tak: Zn + CuSO₄ → ZnSO₄ + Cu↓ (cynk stoi przed miedzią; jonowo Zn + Cu²⁺ → Zn²⁺ + Cu).</p>
+</details>
+<p><strong>Ćwiczenie 2.</strong> Czy miedź wypiera wodór z rozcieńczonego HCl?</p>
+<details class="answer"><summary>Klucz</summary>
+<p>Zwykle nie — miedź leży za wodorem, więc nie wypiera wodoru z rozcieńczonych kwasów nieutleniających.</p>
+</details>
+<p><strong>Ćwiczenie 3.</strong> Zapisz reakcję żelaza z siarczanem(VI) miedzi(II).</p>
+<details class="answer"><summary>Klucz</summary>
+<p>Fe + CuSO₄ → FeSO₄ + Cu↓ (jonowo: Fe + Cu²⁺ → Fe²⁺ + Cu).</p>
+</details>
+<p><strong>Ćwiczenie 4.</strong> Wyjaśnij, dlaczego aluminium może reagować słabiej niż wynikałoby z jego miejsca w szeregu.</p>
+<details class="answer"><summary>Klucz</summary>
+<p>Chroni je warstwa tlenku — pasywacja: zwarta Al₂O₃ odcina odczynnik od metalu, dopóki nie zostanie naruszona.</p>
+</details>
+<p><strong>Ćwiczenie 5.</strong> Podaj ograniczenie szeregu aktywności.</p>
+<details class="answer"><summary>Klucz</summary>
+<p>Szereg nie uwzględnia wszystkich warunków, kinetyki, pasywacji i charakteru odczynnika — pokazuje skłonność do oddawania elektronów, nie gwarantuje przebiegu każdej reakcji.</p>
+</details>
+<p><strong>Ćwiczenie 6.</strong> Zapisz równanie reakcji magnezu z azotanem(V) srebra.</p>
+<details class="answer"><summary>Klucz</summary>
+<p>Mg + 2AgNO₃ → Mg(NO₃)₂ + 2Ag↓.</p>
+</details>
+<p><strong>Ćwiczenie 7.</strong> Wskaż utleniacz i reduktor w reakcji cynku z jonami miedzi(II).</p>
+<details class="answer"><summary>Klucz</summary>
+<p>Cynk jest reduktorem (utlenia się: Zn⁰ → Zn²⁺ + 2e⁻), a jony Cu²⁺ są utleniaczem (redukują się: Cu²⁺ + 2e⁻ → Cu⁰).</p>
+</details>
+<p><strong>Ćwiczenie 8.</strong> Oceń, czy zachodzi reakcja żelaza z AgNO₃.</p>
+<details class="answer"><summary>Klucz</summary>
+<p>Tak: Fe + 2AgNO₃ → Fe(NO₃)₂ + 2Ag↓ — żelazo stoi przed srebrem i wypiera je z roztworu.</p>
+</details>
+<p><strong>Ćwiczenie 9.</strong> Zapisz równanie reakcji glinu z kwasem chlorowodorowym, pomijając efekt pasywacji.</p>
+<details class="answer"><summary>Klucz</summary>
+<p>2Al + 6HCl → 2AlCl₃ + 3H₂↑.</p>
+</details>
+<p><strong>Ćwiczenie 10.</strong> Wyjaśnij, dlaczego po zanurzeniu żelaznego gwoździa w roztworze CuSO₄ może pojawić się miedź.</p>
+<details class="answer"><summary>Klucz</summary>
+<p>Żelazo oddaje elektrony i przechodzi do roztworu jako Fe²⁺, a jony Cu²⁺ przyjmują elektrony i wydzielają się jako miedź na powierzchni gwoździa — klasyczne wypieranie „z góry na dół”.</p>
+</details>
+<p><strong>Ćwiczenie 11 — mini-test samodzielny.</strong> Odpowiedz bez patrzenia w lekcję, potem sprawdź klucz: 1) Czy Zn wypiera Fe z FeSO₄? 2) Czy Cu reaguje z rozcieńczonym H₂SO₄? 3) Zapisz równanie: Mg + HCl. 4) Co zaobserwujesz po wrzuceniu Fe do CuSO₄? 5) Metal A leży przed H, metal B za H. Który wypiera wodór z HCl?</p>
+<details class="answer"><summary>Klucz</summary>
+<p>1) Tak — Zn stoi przed Fe: Zn + FeSO₄ → ZnSO₄ + Fe↓. 2) Nie — Cu stoi za H. 3) Mg + 2HCl → MgCl₂ + H₂↑. 4) Osad czerwonej miedzi na żelazie + zmiana barwy roztworu (blednieje/zielenieje). 5) Metal A.</p>
+</details>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">13</span> Ciekawostki {#ciekawostki} <span class="level-badge level-extra">AMBITNE</span></div>
+<div class="card card-extra">
+<span class="card-label">Ciekawostka 1 — metale w puszce oleju</span>
+<p>Sód i potas nie mają prawa odpoczywać na powietrzu: reagują z parą wodną i tlenem, więc w laboratoriach przechowuje się je zanurzone w oleju parafinowym, odciętym od wilgoci. Kawałek sodu wyjęty z oleju i rzucony do wody pływa (jest lżejszy od wody), topi się od własnego ciepła reakcji i świszcząc krąży po powierzchni — a potas potrafi zapalić uwolniony wodór sam, bez zapłonu.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Ciekawostka 2 — cynk, który poświęca się za statek</span>
+<p>W szeregu stoi przed żelazem, więc w wilgoci bierze na siebie utlenienie zamiast niego. Ta własność pracuje w portach: do kadłubów statków i rurociągów przypina się bloki cynku (anody protektorowe), które korodują „za” stal. Ta sama idea stoi za cynkowaniem blach — rysa na powłoce nie kończy ochrony, bo cynk wciąż jest reduktorem wobec żelaza (zadanie 15).</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Ciekawostka 3 — termit: glin wypiera żelazo z jego tlenku</span>
+<p>Glin stoi wysoko w szeregu — na tyle wysoko, że potrafi wypierać żelazo nawet z jego tlenku. Mieszanka proszku Al z tlenkiem żelaza (termit) po zapłonie reaguje z takim żarem, że temperatura sięga orientacyjnie 2500°C, a wyparte czyste żelazo topi się i zlewa — reakcję wykorzystywano m.in. do spawania szyn kolejowych w terenie.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Ciekawostka 4 — złoto na końcu drabiny, także w zębach</span>
+<p>Pozycja Au na końcu szeregu oznacza, że złoto nie wypiera nikogo i nikt nie wypiera go z jego „soli” w typowych warunkach — dlatego w naturze spotyka się je w postaci samorodków, a nie tylko rud. Archeolodzy znajdują złote przedmioty po tysiącach lat w niemal niezmienionym stanie, a stomatolodzy od wieków cenili złoto za biernosć w ustach.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Ciekawostka 5 — pierwsza bateria grała reakcję z tej lekcji</span>
+<p>Ogniwo Volty z 1800 roku — stos płytek cynku i miedzi w kwasie — napędzała dokładnie ta elektronowa księgowość, którą opisujemy w reakcji Zn + Cu²⁺ → Zn²⁺ + Cu: cynk oddawał elektrony, a na miedzi osadzały się (redukowały) kationy. Szereg aktywności i historia elektryczności to jedna opowieść o elektronach, tylko w probówce i w obwodzie. (źródło: podręczniki historii chemii, orientacyjnie)</p>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">14</span> Sposoby pamięciowe {#mnemo} <span class="level-badge level-basic">E8</span></div>
+<wskazowki>
+<ul>
+<li>Rytmiczny chór: tupnij sekwencję pierwszych liter — „K, Ka, Na! Mag-al-zin-fer! Sn-Pb! H! Cu-Hg-Ag-Au!” — rytm osadza kolejność lepiej niż czytanie.</li>
+<li>Bloki sensowne: <strong>Kan-Ca-Na</strong> (trzej bohaterowie zimnej wody), <strong>Mag-Al-Zn-Fe</strong> (środek drabiny — bohaterowie 90% zadań), <strong>cyna-pół</strong>, <strong>H</strong> (linia metra), <strong>miedź-srebro-złoto</strong> (szlachetna trójka monet).</li>
+<li>Zdanie na środek drabiny: „<strong>M</strong>a <strong>A</strong>la <strong>Z</strong>awsze <strong>F</strong>eler” — Mg, Al, Zn, Fe w kolejności od aktywnego.</li>
+<li>Reguła kierunkowa: „<strong>L</strong>ewo = <strong>L</strong>tuje” — lewo w szeregu = łatwiej oddaje elektrony = silniejszy reduktor.</li>
+<li>Wodór jako stacja metra: przed stacją H wsiadają do kwasu (wydzielają H₂), za stacją H — czekają na peronie.</li>
+<li>„Cynk wypiera, miedź nie” — najkrótsza reguła do zadań o Fe + CuSO₄ i Cu + FeSO₄; zapamiętaj tę parę jako wzorzec.</li>
+<li>Bilans elektronów: „co oddane, to przyjęte” — suma e⁻ po lewej (oddanych) = suma e⁻ po prawej (przyjętych); stąd dwójki przy Ag⁺.</li>
+<li>Pułapka litowców: „K, Na, Ca najpierw piją wodę” — zanim wypierzą kogokolwiek z soli, reagują z rozpuszczalnikiem.</li>
+</ul>
+</wskazowki>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">15</span> Test końcowy {#test} <span class="level-badge level-basic">E8</span> <span class="level-badge level-exam">KONKURS</span></div>
+<p>Rozwiąż bez zaglądania do lekcji. Każde pytanie ma dokładnie jedną poprawną odpowiedź. Wyjaśnienia sprawdź dopiero po rozwiązaniu całości.</p>
+<div class="che-quiz" id="quizWrap"><div class="quiz-q" data-ok="0" data-fb="Mg stoi najwyżej (najbardziej na lewo) w szeregu spośród wymienionych — najłatwiej oddaje elektrony."><h5>1. Który z wymienionych metali jest najbardziej aktywny chemicznie?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Mg</button><button type="button" class="quiz-opt" data-a="1">Zn</button><button type="button" class="quiz-opt" data-a="2">Cu</button><button type="button" class="quiz-opt" data-a="3">Ag</button></div></div><div class="quiz-q" data-ok="0" data-fb="Reguła wodoru: przed H — reakcja z HCl/rozc. H₂SO₄ z wydzielaniem wodoru; „zawsze reaguje z zimną wodą” to fałsz (np. Zn wymaga pary), a metale tworzą kationy z definicji."><h5>2. Metal leżący w szeregu przed wodorem:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">wypiera wodór z rozcieńczonych kwasów nieutleniających</button><button type="button" class="quiz-opt" data-a="1">nie reaguje z żadnym kwasem</button><button type="button" class="quiz-opt" data-a="2">zawsze reaguje z zimną wodą</button><button type="button" class="quiz-opt" data-a="3">nie tworzy kationów</button></div></div><div class="quiz-q" data-ok="0" data-fb="2Na + 2H₂O → 2NaOH + H₂↑; metale bardzo aktywne z zimną wodą dają wodorotlenek + H₂."><h5>3. Co powstaje w reakcji sodu z zimną wodą?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">wodorotlenek sodu i wodór</button><button type="button" class="quiz-opt" data-a="1">tlenek sodu i wodór</button><button type="button" class="quiz-opt" data-a="2">kwas solny i tlen</button><button type="button" class="quiz-opt" data-a="3">wodorotlenek sodu i tlen</button></div></div><div class="quiz-q" data-ok="0" data-fb="Żelazo: 3Fe + 4H₂O → Fe₃O₄ + 4H₂ tylko z parą; Na, Ca, K reagują już z zimną wodą."><h5>4. Który metal reaguje z parą wodną w wysokiej temperaturze, ale praktycznie nie reaguje z zimną wodą?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Fe</button><button type="button" class="quiz-opt" data-a="1">Na</button><button type="button" class="quiz-opt" data-a="2">Ca</button><button type="button" class="quiz-opt" data-a="3">K</button></div></div><div class="quiz-q" data-ok="0" data-fb="Pasywacja: zwarta Al₂O₃ odseparowuje metal od odczynnika; lekkość i liczba elektronów nie mają tu znaczenia, a Al stoi przed H."><h5>5. Dlaczego aluminium wygląda na mało reaktywne, choć stoi wysoko w szeregu?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">pokrywa je pasywna warstwa tlenku glinu</button><button type="button" class="quiz-opt" data-a="1">jest zbyt lekkie, żeby reagować</button><button type="button" class="quiz-opt" data-a="2">zawiera zbyt mało elektronów</button><button type="button" class="quiz-opt" data-a="3">stoi za wodorem w szeregu</button></div></div><div class="quiz-q" data-ok="0" data-fb="Ubywają niebieskie jony Cu²⁺ (roztwór blednie, pojawiają się zielonkawe Fe²⁺), a miedź wytrąca się jako czerwony osad na żelazie."><h5>6. Jaką obserwację opisuje reakcja Fe + CuSO₄?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">niebieski roztwór blednie/zielenieje, na żelazie pojawia się czerwony osad</button><button type="button" class="quiz-opt" data-a="1">roztwór błękitnieje, osad znika</button><button type="button" class="quiz-opt" data-a="2">wydziela się brunatny gaz</button><button type="button" class="quiz-opt" data-a="3">roztwór zmienia barwę na różową bez osadu</button></div></div><div class="quiz-q" data-ok="0" data-fb="Tylko cynk stoi przed żelazem w szeregu; Cu, Ag i Au leżą za H i za Fe — nie wypierają."><h5>7. Który metal wypierze żelazo z roztworu FeSO₄?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Zn</button><button type="button" class="quiz-opt" data-a="1">Cu</button><button type="button" class="quiz-opt" data-a="2">Ag</button><button type="button" class="quiz-opt" data-a="3">Au</button></div></div><div class="quiz-q" data-ok="0" data-fb="H dzieli metale na wypierające i niewypierające wodoru z rozcieńczonych kwasów nieutleniających — to konwencja pomocnicza, nie klasyfikacja metalu."><h5>8. Wodór umieszczony w szeregu aktywności służy jako:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">punkt odniesienia dla reakcji metali z kwasami</button><button type="button" class="quiz-opt" data-a="1">kolejny metal alkaliczny</button><button type="button" class="quiz-opt" data-a="2">produkt wszystkich reakcji wypierania</button><button type="button" class="quiz-opt" data-a="3">rozpuszczalnik doświadczeń</button></div></div><div class="quiz-q" data-ok="0" data-fb="Utleniacz przyjmuje elektrony: Cu²⁺ + 2e⁻ → Cu⁰; cynk jest reduktorem, bo oddaje elektrony."><h5>9. W reakcji Zn + Cu²⁺ → Zn²⁺ + Cu utleniaczem jest:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">jon Cu²⁺</button><button type="button" class="quiz-opt" data-a="1">atom Zn</button><button type="button" class="quiz-opt" data-a="2">jon Zn²⁺</button><button type="button" class="quiz-opt" data-a="3">elektron</button></div></div><div class="quiz-q" data-ok="0" data-fb="Bez współczynnika 2 przed HCl bilans chloru i wodoru się nie domyka; 2H₂ podwaja wodór; H₂ jest gazem, więc strzałka ↑, nie ↓."><h5>10. Które równanie jest zapisane poprawnie (bilans + strzałki)?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Zn + 2HCl → ZnCl₂ + H₂↑</button><button type="button" class="quiz-opt" data-a="1">Zn + HCl → ZnCl₂ + H₂↑</button><button type="button" class="quiz-opt" data-a="2">Zn + 2HCl → ZnCl₂ + 2H₂↑</button><button type="button" class="quiz-opt" data-a="3">Zn + HCl → ZnCl₂ + H₂↓</button></div></div><div class="quiz-q" data-ok="0" data-fb="Kinetyka i produkt: słabo rozpuszczalny PbCl₂ osadza się na blaszce i spowalnia reakcję; ołów stoi przed H, a HCl rozcieńczony jest kwasem nieutleniającym."><h5>11. Ołów reaguje z rozcieńczonym HCl wolnie, mimo pozycji przed H. Najlepsze wyjaśnienie:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">powstający PbCl₂ jest słabo rozpuszczalny i zakleja powierzchnię metalu</button><button type="button" class="quiz-opt" data-a="1">ołów leży za wodorem</button><button type="button" class="quiz-opt" data-a="2">HCl jest kwasem utleniającym</button><button type="button" class="quiz-opt" data-a="3">ołów nie tworzy kationów</button></div></div><div class="quiz-q" data-ok="0" data-fb="Szereg porządkuje skłonność do oddawania elektronów; warunki, pasywacja i kinetyka mogą zmieniać rzeczywisty obraz reakcji."><h5>12. Które zdanie o szeregu aktywności jest prawdziwe?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">to przybliżenie, które nie uwzględnia pasywacji, kinetyki, stężenia i charakteru odczynnika</button><button type="button" class="quiz-opt" data-a="1">to uniwersalne prawo przewidujące każdą reakcję w każdych warunkach</button><button type="button" class="quiz-opt" data-a="2">to lista cen metali na giełdzie</button><button type="button" class="quiz-opt" data-a="3">to tabela obowiązująca wyłącznie dla metali z lat 1800–1900</button></div></div><div class="quiz-q" data-ok="0" data-fb="W szkolnym modelu Ag nie wypiera żelaza; ponadto FeCl₃ zawiera Fe³⁺, więc prosta reguła wypierania z soli Fe²⁺ nie opisuje wszystkich procesów redoks."><h5>13. (poziom konkursowy) W typowym szkolnym modelu reakcja Ag + FeCl₃:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">nie zachodzi, a poza modelem dodatkowym utrudnieniem jest obecność Fe³⁺ w soli</button><button type="button" class="quiz-opt" data-a="1">zachodzi według Ag + FeCl₃ → AgCl + Fe</button><button type="button" class="quiz-opt" data-a="2">zachodzi tylko w wysokiej temperaturze wg reguły wypierania</button><button type="button" class="quiz-opt" data-a="3">zachodzi, bo srebro stoi przed żelazem</button></div></div><div class="quiz-q" data-ok="0" data-fb="Y reaguje z zimną wodą (typowo litowiec, np. Na), więc jest bardziej aktywny; X tylko wypiera Cu — pasuje np. Zn lub Fe; dane nie wyznaczają pojedynczego metalu ani ścisłego przedziału."><h5>14. (poziom konkursowy) Metal X wypiera miedź z roztworu CuSO₄, a metal Y reaguje gwałtownie z zimną wodą. Który wniosek jest poprawny?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Y jest bardziej aktywny od X, a X jest aktywniejszy od Cu; dane nie wskazują jednoznacznie żadnego konkretnego metalu</button><button type="button" class="quiz-opt" data-a="1">X musi być sodem, a Y miedzią</button><button type="button" class="quiz-opt" data-a="2">X jest bardziej aktywny od Y</button><button type="button" class="quiz-opt" data-a="3">Y musi leżeć za wodorem, bo reaguje z wodą</button></div></div><div class="quiz-q" data-ok="0" data-fb="20 g CuSO₄ zdolne rozpuścić ok. 8,1 g Zn, a cynku jest 5 g — cynk ogranicza; m Cu = (64/65)·5 ≈ 4,92 g."><h5>15. (poziom konkursowy) Do 200 g 10% roztworu CuSO₄ wrzucono 5 g cynku (Cu = 64, Zn = 65, S = 32, O = 16). Teoretyczna masa wydzielonej miedzi wynosi orientacyjnie:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">4,92 g</button><button type="button" class="quiz-opt" data-a="1">5,00 g</button><button type="button" class="quiz-opt" data-a="2">8,13 g</button><button type="button" class="quiz-opt" data-a="3">20,00 g</button></div></div></div><div class="quiz-score" id="quizScore"></div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">16</span> Fiszki {#fiszki} <span class="level-badge level-basic">E8</span> <span class="level-badge level-exam">KONKURS</span></div>
+<p>Powtarzaj partiami: najpierw basic, potem understand i extra, na końcu olimpijskie.</p>
+<div id="flashcards" class="flashcard-grid"><button class="flashcard" type="button"><span class="front">Szkolny szereg aktywności</span><span class="back">K, Ca, Na, Mg, Al, Zn, Fe, Sn, Pb, H, Cu, Hg, Ag, Pt, Au</span><span class="card-tag tag-basic">szereg</span></button><button class="flashcard" type="button"><span class="front">Reguła kierunkowa</span><span class="back">im bardziej na lewo, tym łatwiej oddaje elektrony, tym silniejszy reduktor</span><span class="card-tag tag-basic">szereg</span></button><button class="flashcard" type="button"><span class="front">Reguła wypierania</span><span class="back">metal bardziej aktywny wypiera metal mniej aktywny z roztworu jego soli</span><span class="card-tag tag-basic">szereg</span></button><button class="flashcard" type="button"><span class="front">Wodór w szeregu</span><span class="back">punkt odniesienia: dzieli metale na wypierające i niewypierające wodoru z kwasów</span><span class="card-tag tag-understand">szereg</span></button><button class="flashcard" type="button"><span class="front">Metale reagujące z zimną wodą</span><span class="back">K, Na (gwałtownie), Ca (żywo) — wodorotlenek + H₂</span><span class="card-tag tag-basic">woda</span></button><button class="flashcard" type="button"><span class="front">Równanie Na + woda</span><span class="back">2Na + 2H₂O → 2NaOH + H₂↑</span><span class="card-tag tag-basic">woda</span></button><button class="flashcard" type="button"><span class="front">Równanie Ca + woda</span><span class="back">Ca + 2H₂O → Ca(OH)₂ + H₂↑ (mętny roztwór)</span><span class="card-tag tag-basic">woda</span></button><button class="flashcard" type="button"><span class="front">Magnez z zimną wodą</span><span class="back">reaguje bardzo powoli; z gorącą/parą szybko</span><span class="card-tag tag-understand">woda</span></button><button class="flashcard" type="button"><span class="front">Żelazo z parą wodną</span><span class="back">3Fe + 4H₂O → Fe₃O₄ + 4H₂ (tlenek żelaza(II, III))</span><span class="card-tag tag-extra">woda</span></button><button class="flashcard" type="button"><span class="front">Cu, Ag, Au z wodą</span><span class="back">brak reakcji</span><span class="card-tag tag-basic">woda</span></button><button class="flashcard" type="button"><span class="front">Reguła kwasów</span><span class="back">metale przed H wypierają wodór z rozcieńczonych kwasów nieutleniających</span><span class="card-tag tag-basic">kwasy</span></button><button class="flashcard" type="button"><span class="front">Zn + HCl</span><span class="back">Zn + 2HCl → ZnCl₂ + H₂↑</span><span class="card-tag tag-basic">kwasy</span></button><button class="flashcard" type="button"><span class="front">Fe + H₂SO₄ (rozc.)</span><span class="back">Fe + H₂SO₄ → FeSO₄ + H₂↑ (żelazo(II))</span><span class="card-tag tag-basic">kwasy</span></button><button class="flashcard" type="button"><span class="front">Cu i Ag z HCl</span><span class="back">brak reakcji (za H)</span><span class="card-tag tag-basic">kwasy</span></button><button class="flashcard" type="button"><span class="front">Pb + HCl</span><span class="back">Pb + 2HCl → PbCl₂ + H₂↑ powoli (PbCl₂ słabo rozpuszczalny)</span><span class="card-tag tag-extra">kwasy</span></button><button class="flashcard" type="button"><span class="front">Kwasy utleniające</span><span class="back">stężony HNO₃ i stężony H₂SO₄ reagują też z Cu i Ag — osobne reguły</span><span class="card-tag tag-olimpijski">kwasy</span></button><button class="flashcard" type="button"><span class="front">2Al + 6HCl</span><span class="back">2Al + 6HCl → 2AlCl₃ + 3H₂↑ (po naruszeniu pasywacji)</span><span class="card-tag tag-extra">kwasy</span></button><button class="flashcard" type="button"><span class="front">Fe + CuSO₄ + obserwacja</span><span class="back">Fe + CuSO₄ → FeSO₄ + Cu↓; roztwór blednie/zielenieje, czerwony osad</span><span class="card-tag tag-basic">sole</span></button><button class="flashcard" type="button"><span class="front">Jonowe skrócone Fe/Cu</span><span class="back">Fe + Cu²⁺ → Fe²⁺ + Cu</span><span class="card-tag tag-basic">sole</span></button><button class="flashcard" type="button"><span class="front">Cu + AgNO₃</span><span class="back">Cu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag↓; osad srebrzysty, roztwór błękitnieje</span><span class="card-tag tag-understand">sole</span></button><button class="flashcard" type="button"><span class="front">Cu + FeSO₄</span><span class="back">brak reakcji — Cu stoi za Fe</span><span class="card-tag tag-basic">sole</span></button><button class="flashcard" type="button"><span class="front">Zn + FeSO₄</span><span class="back">Zn + FeSO₄ → ZnSO₄ + Fe↓ (zachodzi)</span><span class="card-tag tag-basic">sole</span></button><button class="flashcard" type="button"><span class="front">Wyjątek litowców</span><span class="back">K, Na, Ca w roztworach soli najpierw reagują z wodą rozpuszczalnika</span><span class="card-tag tag-understand">sole</span></button><button class="flashcard" type="button"><span class="front">Warunki wypierania</span><span class="back">formy chemiczne, możliwy produkt, brak pasywacji, kinetyka</span><span class="card-tag tag-olimpijski">sole</span></button><button class="flashcard" type="button"><span class="front">Utlenienie</span><span class="back">oddanie elektronów (Fe⁰ → Fe²⁺ + 2e⁻)</span><span class="card-tag tag-understand">redoks</span></button><button class="flashcard" type="button"><span class="front">Redukcja</span><span class="back">przyjęcie elektronów (Cu²⁺ + 2e⁻ → Cu⁰)</span><span class="card-tag tag-understand">redoks</span></button><button class="flashcard" type="button"><span class="front">Reduktor</span><span class="back">substancja oddająca elektrony, sama ulega utlenieniu</span><span class="card-tag tag-understand">redoks</span></button><button class="flashcard" type="button"><span class="front">Utleniacz</span><span class="back">substancja przyjmująca elektrony, sama ulega redukcji</span><span class="card-tag tag-understand">redoks</span></button><button class="flashcard" type="button"><span class="front">Półreakcje Zn/Cu</span><span class="back">Zn⁰ → Zn²⁺ + 2e⁻ oraz Cu²⁺ + 2e⁻ → Cu⁰</span><span class="card-tag tag-olimpijski">redoks</span></button><button class="flashcard" type="button"><span class="front">Pasywacja</span><span class="back">ochronna warstwa tlenku (Al₂O₃) ukrywająca aktywność metalu</span><span class="card-tag tag-understand">pasywacja</span></button><button class="flashcard" type="button"><span class="front">Ograniczenia szeregu</span><span class="back">nie uwzględnia warunków, kinetyki, pasywacji i charakteru odczynnika</span><span class="card-tag tag-extra">szereg</span></button><button class="flashcard" type="button"><span class="front">Barwa Cu²⁺</span><span class="back">niebieska (ubytek → roztwór blednie)</span><span class="card-tag tag-basic">obserwacje</span></button><button class="flashcard" type="button"><span class="front">Barwy Fe²⁺ i Fe³⁺</span><span class="back">Fe²⁺ bladozielonkawe, Fe³⁺ żółtawe/brunatne</span><span class="card-tag tag-extra">obserwacje</span></button><button class="flashcard" type="button"><span class="front">Próba palności H₂</span><span class="back">głośny trzask mieszanki wodoru z powietrzem przy płomieniu</span><span class="card-tag tag-basic">obserwacje</span></button><button class="flashcard" type="button"><span class="front">Sód w przechowywaniu</span><span class="back">w oleju parafinowym — ochrona przed wodą i tlenem powietrza</span><span class="card-tag tag-extra">bezpieczenstwo</span></button><button class="flashcard" type="button"><span class="front">Cynkowanie i anoda protektorowa</span><span class="back">cynk przed Fe bierze na siebie utlenienie i chroni stal</span><span class="card-tag tag-extra">zastosowania</span></button><button class="flashcard" type="button"><span class="front">Termit</span><span class="back">Al wypiera Fe z jego tlenku, orientacyjnie do ok. 2500°C — spawanie szyn</span><span class="card-tag tag-extra">zastosowania</span></button><button class="flashcard" type="button"><span class="front">Potencjały standardowe</span><span class="back">elektrochemiczna podstawa szeregu; im niższy, tym silniejszy reduktor</span><span class="card-tag tag-olimpijski">szereg</span></button></div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">17</span> Słownik {#slownik} <span class="level-badge level-basic">E8</span></div>
+<dl><div class="def-item"><dt>Aktywność metalu</dt><dd>skłonność metalu do oddawania elektronów; rośnie w lewo szeregu aktywności.</dd></div><div class="def-item"><dt>Szereg aktywności</dt><dd>uporządkowanie metali (z wodorem jako punktem odniesienia) według skłonności do oddawania elektronów i wypierania.</dd></div><div class="def-item"><dt>Wypieranie</dt><dd>reakcja, w której metal bardziej aktywny wydziela z roztworu soli metal mniej aktywny.</dd></div><div class="def-item"><dt>Reduktor</dt><dd>substancja oddająca elektrony i ulegająca utlenieniu; sprawia, że inne związki ulegają redukcji.</dd></div><div class="def-item"><dt>Utleniacz</dt><dd>substancja przyjmująca elektrony i ulegająca redukcji.</dd></div><div class="def-item"><dt>Utlenienie</dt><dd>proces oddawania elektronów (np. Fe⁰ → Fe²⁺ + 2e⁻).</dd></div><div class="def-item"><dt>Redukcja</dt><dd>proces przyjmowania elektronów (np. Cu²⁺ + 2e⁻ → Cu⁰).</dd></div><div class="def-item"><dt>Reakcja redoks</dt><dd>reakcja, w której jednocześnie zachodzą utlenienie i redukcja z wymianą elektronów.</dd></div><div class="def-item"><dt>Kwas nieutleniający</dt><dd>kwas (np. HCl, rozcieńczony H₂SO₄), z którego metale przed H wypierają wodór według prostej reguły.</dd></div><div class="def-item"><dt>Kwas utleniający</dt><dd>kwas (np. stężony HNO₃, stężony H₂SO₄) o własnościach utleniających, reagujący z metalami według innych schematów, także z Cu i Ag.</dd></div><div class="def-item"><dt>Pasywacja</dt><dd>pokrycie metalu zwartą warstwą tlenku (np. Al₂O₃), która chroni go przed odczynnikami i maskuje jego aktywność.</dd></div><div class="def-item"><dt>Kation</dt><dd>jon dodatni, powstający z atomu metalu po oddaniu elektronów.</dd></div><div class="def-item"><dt>Jon obserwatorowy</dt><dd>jon obecny w roztworze, który nie uczestniczy w reakcji i jest skracany w równaniu jonowym.</dd></div><div class="def-item"><dt>Hydroksyd</dt><dd>wodorotlenek metalu; produkt reakcji bardzo aktywnych metali z zimną wodą.</dd></div><div class="def-item"><dt>Tlenek metalu</dt><dd>związek metalu z tlenem; produkt reakcji metali z parą wodną w wysokiej temperaturze.</dd></div><div class="def-item"><dt>Próba palności wodoru</dt><dd>badanie gaz wydzielonego z reakcji metalu z kwasem; głośny trzask potwierdza H₂.</dd></div><div class="def-item"><dt>Metal szlachetny</dt><dd>metal o niskiej aktywności, leżący za wodorem (Cu, Ag, Pt, Au), odporny na reakcje z kwasami nieutleniającymi.</dd></div><div class="def-item"><dt>Substrat ograniczający</dt><dd>substrat, który kończy się pierwszy i wyznacza maksymalną ilość produktów reakcji.</dd></div><div class="def-item"><dt>Fe₃O₄</dt><dd>tlenek żelaza(II, III) — mieszany tlenek żelaza powstający w reakcji żelaza z parą wodną.</dd></div><div class="def-item"><dt>Bilans ładunków</dt><dd>zasada równania jonowego: suma ładunków po lewej stronie równa sumie ładunków po prawej.</dd></div></dl>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">18</span> Mapa pojęć {#mapa} <span class="level-badge level-basic">E8</span></div>
+<div class="lk-tree"><ul><li><span>Szereg aktywności metali</span><ul><li><span>Idea</span><ul><li><span>Oddawanie elektronów</span></li><li><span>Aktywność metalu</span></li><li><span>Reduktor i utleniacz</span></li></ul></li><li><span>Wersje szeregu</span><ul><li><span>Szkolna K–Au</span></li><li><span>Rozszerzona z Li, Ba, Mn, Ni, Cr</span></li><li><span>Z wariantami Ag/Hg/Pt</span></li></ul></li><li><span>Wodór jako punkt odniesienia</span><ul><li><span>Metale przed H</span></li><li><span>Metale za H</span></li></ul></li><li><span>Arena 1 — woda</span><ul><li><span>Zimna woda</span><ul><li><span>K i Na</span></li><li><span>Ca</span></li><li><span>Mg bardzo powoli</span></li></ul></li><li><span>Para wodna w wysokiej temperaturze</span><ul><li><span>MgO</span></li><li><span>Fe₃O₄</span></li></ul></li><li><span>Brak reakcji</span><ul><li><span>Cu, Ag, Au</span></li></ul></li></ul></li><li><span>Arena 2 — kwasy nieutleniające</span><ul><li><span>Reakcja z H₂↑</span><ul><li><span>Zn, Mg, Fe, Pb (powoli)</span></li></ul></li><li><span>Brak reakcji</span><ul><li><span>Cu, Ag</span></li></ul></li><li><span>Hamulce</span><ul><li><span>Pasywacja Al</span></li><li><span>Słabo rozpuszczalny PbCl₂</span></li><li><span>Kwasy utleniające</span></li></ul></li></ul></li><li><span>Arena 3 — roztwory soli</span><ul><li><span>Reguła wypierania</span><ul><li><span>Fe + CuSO₄</span></li><li><span>Zn + CuSO₄</span></li><li><span>Cu + 2AgNO₃</span></li></ul></li><li><span>Brak reakcji</span><ul><li><span>Cu + FeSO₄</span></li></ul></li><li><span>Wyjątek litowców</span><ul><li><span>Reakcja z wodą rozpuszczalnika</span></li></ul></li></ul></li><li><span>Redoks</span><ul><li><span>Utlenienie</span></li><li><span>Redukcja</span></li><li><span>Półreakcje elektronowe</span></li><li><span>Bilans ładunków</span></li></ul></li><li><span>Obserwacje</span><ul><li><span>Gaz ↑</span></li><li><span>Osad ↓</span></li><li><span>Barwy roztworów</span></li><li><span>Próba palności H₂</span></li></ul></li><li><span>Granice i zastosowania</span><ul><li><span>Pasywacja</span></li><li><span>Kinetyka i warunki</span></li><li><span>Cynkowanie</span></li><li><span>Anoda protektorowa</span></li><li><span>Termit</span></li></ul></li></ul></li></ul></div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">19</span> Ściąga {#sciaga} <span class="level-badge level-basic">E8</span></div>
+<p>Najkrótsza wersja całej lekcji — czytaj, gdy zostało pięć minut przed sprawdzianem:</p>
+<ul>
+<li><strong>Szereg:</strong> K, Ca, Na, Mg, Al, Zn, Fe, Sn, Pb, <strong>H</strong>, Cu, Hg, Ag, Pt, Au — lewo = aktywny = łatwo oddaje elektrony = silny reduktor. Najważniejsze jest względne położenie.</li>
+<li><strong>Woda:</strong> K/Na/Ca z zimną wodą → wodorotlenek + H₂↑ (2Na + 2H₂O → 2NaOH + H₂↑); Mg z zimną bardzo powoli, z parą szybko; Al/Zn/Fe tylko z parą → tlenek + H₂ (3Fe + 4H₂O → Fe₃O₄ + 4H₂); Cu/Ag/Au — brak.</li>
+<li><strong>Kwasy (HCl, rozc. H₂SO₄):</strong> przed H → sól + H₂↑ (Zn + 2HCl → ZnCl₂ + H₂↑; Fe + H₂SO₄ → FeSO₄ + H₂↑); za H → brak (Cu, Ag); Pb powoli (PbCl₂ słabo rozpuszczalny); H₂ potwierdzasz próbą palności (trzask). Stężone HNO₃/H₂SO₄ — kwasy utleniające, osobne reguły.</li>
+<li><strong>Sole:</strong> z góry na dół — Fe + CuSO₄ → FeSO₄ + Cu↓ (roztwór blednie/zielenieje); Zn + Cu²⁺ → Zn²⁺ + Cu; Cu + 2Ag⁺ → Cu²⁺ + 2Ag (osad srebrzysty, błękitnienie); Cu + FeSO₄ — brak; K/Na/Ca w roztworach najpierw reagują z wodą.</li>
+<li><strong>Redoks:</strong> oddane e⁻ = przyjęte e⁻; Zn⁰ → Zn²⁺ + 2e⁻ (reduktor), Cu²⁺ + 2e⁻ → Cu⁰ (utleniacz); bilans ładunków obowiązkowy.</li>
+<li><strong>Granice:</strong> pasywacja (Al₂O₃), kinetyka (wolno ≠ nigdy), stężenie i temperatura, kwasy utleniające, Fe³⁺ w FeCl₃ poza prostą regułą — szereg to przybliżenie, nie prawo.</li>
+<li><strong>Obserwacje:</strong> ↑ gaz, ↓ osad, niebieski Cu²⁺ (blednie przy wypieraniu), zielonkawe Fe²⁺, srebrzysty osad Ag, czerwona miedź.</li>
+<li><strong>Zastosowania:</strong> cynkowanie i anody protektorowe (cynk „poświęca się” za żelazo), termit (Al wypiera Fe z tlenku), ogniwo Volty (Zn + Cu²⁺ jako pierwsza bateria).</li>
+</ul>
+<checklista>
+<ul>
+<li>[ ] umiem wypisać szkolny szereg aktywności z pamięci i wskazać pozycję wodoru</li>
+<li>[ ] umiem uzasadnić regułę „lewo wypiera prawo” oddawaniem elektronów</li>
+<li>[ ] umiem z tabeli wody odczytać warunki i produkty dla K, Na, Ca, Mg, Al, Zn, Fe, Cu</li>
+<li>[ ] umiem zapisywać równania metali z kwasami ze strzałką ↑ i bilansowanymi współczynnikami</li>
+<li>[ ] umiem uzasadnić brak reakcji Cu i Ag z HCl położeniem względem H</li>
+<li>[ ] umiem zapisywać reakcje wypierania cząsteczkowo i jonowo skrócone</li>
+<li>[ ] umiem opisać obserwacje reakcji Fe + CuSO₄ i Cu + AgNO₃ z barwami</li>
+<li>[ ] umiem rozpisać półreakcje elektronowe i wskazać utleniacz z reduktorem</li>
+<li>[ ] umiem sprawdzić bilans ładunków w równaniu jonowym</li>
+<li>[ ] umiem wymienić granice szeregu: pasywacja, kinetyka, warunki, kwasy utleniające, Fe³⁺</li>
+<li>[ ] umiem rozwiązać zadanie obliczeniowe z substratem ograniczającym i wskazać, co się rozpuści</li>
+<li>[ ] umiem wyjaśnić pułapkę litowców w roztworach soli i pułapkę pasywacji aluminium</li>
+</ul>
+</checklista>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">20</span> Co dalej? {#dalej} <span class="level-badge level-basic">E8</span> <span class="level-badge level-extra">AMBITNE</span></div>
+<p>Po opanowaniu tej lekcji naturalne kierunki:</p>
+<ul>
+<li><strong>CHE-J03 — Równania jonowe, strącanie osadów:</strong> tu dopiero rozwiniesz zapisy jonowe pełne i skrócone, z tabelą rozpuszczalności i barwami osadów — wypieranie z tej lekcji stanie się jednym z typów reakcji jonowych.</li>
+<li><strong>CHE-R07 — Obliczenia z równań, substraty w stosunku niestechiometrycznym:</strong> zadanie 11 było przedsmakiem; tam dopracujesz algorytm „co się skończyło, ile zostanie nadmiaru” na pełnej skali.</li>
+<li><strong>CHE-051 / CHE-054 — Reakcje metali:</strong> systematyczny przegląd chemii metali, do którego szereg jest kluczem otwierającym.</li>
+<li><strong>Doświadczenia identyfikacyjne gazów:</strong> próba palności H₂ z doświadczenia 3 to pierwszy z zestawu testów analitycznych (CO₂ — woda wapienna, O₂ — tleń).</li>
+<li><strong>Dla konkursowców:</strong> elektrochemia w liceum rozwinie szereg do potencjałów standardowych i ogniw — ale już teraz przepracuj drugi raz <a href="#zadania-konkurs">§9</a> po tygodniowej przerwie: zadania transferowe (10) i pułapka pasywacji (16) najdłużej trzymają się przy powtórce po odstępie.</li>
+</ul>
+<p>A jeśli chcesz zrozumieć głębiej, dlaczego ranking metali działa — wróć do <a href="#olimpijczyk">§10</a> i porównaj szkolny szereg z ideą potencjałów: to zrozumienie zaprocentuje przy ogniwach i elektrolizie.</p>
+<h3 id="audyt-ulepsz">AUDYT — Claude, 2026-10-12</h3>
+<p><strong>Poprawione:</strong>
+- §9, zadanie 10 (dawniej WM zadanie 3): nadmiernie wąski wniosek „X leży między Mg a H” → poprawiono zgodnie z W20: dane wskazują, że X wypiera Cu, a Y jest bardziej aktywny, ale nie wyznaczają jednego metalu ani ścisłego przedziału; przykłady Zn/Fe, Mg jako uzasadniony kandydat przy założeniu „nie reaguje zauważalnie”.
+- §9, zadanie 9c (dawniej WM zadanie 1c): doprecyzowano, że Ag nie wypiera Fe z FeCl₃ w typowym szkolnym modelu, a FeCl₃ zawiera Fe³⁺, więc proste reguły wypierania nie opisują wszystkich procesów redoks (zgodnie z W20).
+- §9, zadanie 11 (dawniej WM zadanie 4): obliczenia doprowadzone do zgodności z W20 — 20 g CuSO₄ wymaga ok. 8,1 g (8,13 g) Zn; przy 5 g Zn substratem ograniczającym jest Zn; masa Cu ok. 4,92 g; dodano jawną proporcję masową i wniosek o nadmiarze.
+- §13 (ciekawostka 3): dodano „orientacyjnie” przy temperaturze termitu; §12, ćwiczenie 6 i §9, zadanie 13a: dodano strzałkę ↓ przy osadzie srebra (zapis z uzupełnienia Perplexity był bez strzałki — wymagana konwencja zapisu).
+- Frontmatter: „stan: W1” → „stan: ULEPSZONA — Claude, 2026-10-12; do sprawdzenia”; uzupełniono opis, kicker, lead, uwagi.
+- Sprzeczność materiałów roboczych co do kolejności Ag/Hg (WM: Cu Ag Hg Au; Perplexity: Cu Hg Ag Pt Au) → przedstawiono obie wersje jawnie z zaznaczeniem różnic (§2) i wpisem do „Niepewne”.</p>
+<p><strong>Dodane:</strong>
+- §0.1–§0.2: kryteria gotowości (z „Cel lekcji” materiału roboczego), diagnoza 5 pytań z kluczem.
+- §1: pełny wykład „od zera” (obraz przewodni: turniej o elektrony, trzy areny).
+- §2: obie wersje szeregu, lista Li/Ba/Mn/Ni/Cr, pięć zasad żelaznych, karty core/understand, nie-myl, zadania 1–2.
+- §3: pełna tabela metali z wodą z warunkami, ostrzeżenie BHP o K/Na (z audytu W1: preferuj symulację/nagranie/demonstrację), zadanie 3.
+- §4: reguła wodoru, przykłady obowiązkowe (w tym Fe + 2HCl → FeCl₂ i Mg + H₂SO₄ z uzupełnień), pułapka kwasów utleniających, próba palności, zadanie 4.
+- §5: warunki wypierania (4 punkty z uzupełnienia), pięć klasycznych reakcji, Mg + CuSO₄ i Cu + MgSO₄ z uzupełnienia, pułapka sodu, nie-myl, zadania 5–6.
+- §6: elektronowa księgowość z uzupełnienia (półreakcje, bilans ładunków), zadanie 7.
+- §7: sześć granic szeregu (z audytu Perplexity), zadanie 8.
+- §8: trzy doświadczenia z próbami kontrolnymi i BHP (WM projekt Mg/Zn/Cu + HCl; procedura „próba szeregu” z uzupełnienia z uwagą o zanieczyszczeniach; próba palności H₂ — z listy powiązań).
+- §9: osiem zadań konkursowych (9–16) — zachowane wszystkie cztery z materiału roboczego + zadania z uzupełnień (blaszki, AgNO₃, przekształcenia) + nowe: znajdź błąd, analiza tekstu o cynkowaniu, pułapka pasywacji.
+- §10: mini-wykład „Dla olimpijczyka” (potencjały standardowe, konkurencja wody, termodynamika/kinetyka, H₃O⁺, barwy, anoda protektorowa).
+- §11–§14: klinika (10 wierszy, z tabeli błędów WM), mity (7), ćwiczenia 1–11 (zadania i klucze z obu uzupełnień Perplexity oraz mini-test WM z kluczem — zachowane w całości), 5 ciekawostek, mnemotechniki (8).
+- §15–§20: test 15 pytań, 38 fiszek (w tym olimpijskie), 20 haseł słownika, mapa pojęć, ściąga z checklistą, „Co dalej” z powiązaniami materiału (CHE-J03, CHE-R07, CHE-051/054, identyfikacja gazów).</p>
+<p><strong>Niepewne / do weryfikacji:</strong>
+- Kolejność Ag i Hg oraz obecność Pt w szeregu różnią się między źródłami — wymagane porównanie z szeregiem w podręczniku ucznia i informatorem LKO (odnotowano w §2; materiał roboczy prosił o „DANE: szereg w wersji z Twojego podręcznika”).
+- Zakres wymagań dotyczących kwasów utleniających na etapie rejonowym LKO — materiał roboczy mówi „zwykle niewymagane, warto wiedzieć”; utrzymano jako warstwę rozszerzoną.
+- Opis szybkości reakcji Mg z zimną wodą („bardzo powoli”) i Ca z wodą („żywo”) zależy od warunków — sformułowania zachowano jak w tabeli WM z adnotacją o zależności od warunków.
+- Liczby w ciekawostkach (2500°C termitu, data ogniwa Volty) oznaczone „orientacyjnie”.
+- Materiał roboczy przewidywał sekcję „Archiwalne zadania LKO” po pozyskaniu arkuszy rejonowych — do dodania w przyszłej rewizji (brak danych w paczce).</p>
+<p><strong>Proponuję usunąć:</strong>
+- brak.</p>
+<p><strong>Źródła:</strong>
+- podstawa programowa i wymagania egzaminacyjne CKE (egzamin ósmoklasisty, chemia);
+- polskie podręczniki szkolne do chemii klasy 7–8 (m.in. Nowa Era, WSiP) — rozdziały o metalach i szeregu aktywności;
+- informatory i arkusze konkursów chemicznych (etap rejonowy) oraz skryptów akademickich z podstaw elektrochemii (potencjały standardowe — zarys);
+- materiały BHP dotyczące pracy z metalami alkalicznymi i kwasami (demonstracje, symulacje).</p>
+<p><strong>Grafiki do zrobienia:</strong></p>
+<div class="table-wrap"><table>
+<thead><tr><th>Gdzie</th><th>Rodzaj</th><th>Co pokazuje</th><th>Wniosek</th><th>@opis</th></tr></thead>
+<tbody>
+<tr><td>§2, po zasadach żelaznych</td><td>model interaktywny z suwakiem lub przełącznikiem</td><td>pozioma drabina szeregu K–Au; przełącznik wyboru metalu podświetla jego pozycję względem H i pokazuje, z czym reaguje</td><td>położenie w szeregu przewiduje reakcje w trzech arenach</td><td>Interaktywna drabina metali od K do Au z linią wodoru; kliknięcie metalu podświetla go i pokazuje znaczniki: reaguje z zimną wodą / z kwasem / wypiera lub jest wypierany. Wniosek: jedna pozycja szeregu opisuje zachowanie metalu na trzech arenach.</td></tr>
+<tr><td>§3, po tabeli</td><td>doświadczenie wirtualne (zlewka, przyrząd)</td><td>symulacja reakcji Na (i Ca) z wodą: pływanie, topienie, bąbelki H₂, zapłon; bez ryzyka BHP</td><td>metale bardzo aktywne reagują z zimną wodą gwałtownie</td><td>Wirtualna zlewka z wodą: po upuszczeniu kawałka metalu widać jego ruch po powierzchni, kurczenie, bąbelki gazu i ewentualny płomień; przełącznik Na/Ca zmienia gwałtowność. Wniosek: reaktywność wobec zimnej wody maleje w prawo w szeregu.</td></tr>
+<tr><td>§4, po tabeli przykładów</td><td>doświadczenie wirtualne (zlewka, przyrząd)</td><td>cztery probówki z HCl: Mg, Zn, Fe, Cu — różne tempo bąbelków; próba palności gazu nad probówką z Zn</td><td>tylko metale przed H wydzielają wodór z kwasu, w tempie zależnym od aktywności</td><td>Wirtualny stojak z czterema probówkami: Mg (szybkie bąbelki), Zn (średnie), Fe (wolne), Cu (brak); przycisk próby palności nad Zn daje trzask. Wniosek: reguła wodoru dzieli metale, a tempo bąbelków odzwierciedla aktywność.</td></tr>
+<tr><td>§5, po tabeli reakcji</td><td>animacja „do przodu i od początku”</td><td>przekrój blaszki Fe w roztworze Cu²⁺: jony Cu²⁺ przyjmują elektrony i osadzają się, Fe przechodzi do roztworu jako Fe²⁺; roztwór blednie</td><td>wypieranie to transfer elektronów z góry drabiny na dół</td><td>Animacja: blaszka żelaza w niebieskim roztworze; strzałki elektronów z Fe do Cu²⁺, czerwone atomy osadzają się na blaszce, barwa roztworu blaknie; odtwarzanie od początku pokazuje progres. Wniosek: jednoczesna utlenienie żelaza i redukcja miedzi dają osad i zmianę barwy.</td></tr>
+<tr><td>§6, po rozpisce</td><td>schemat statyczny</td><td>dwie półreakcje Zn⁰ → Zn²⁺ + 2e⁻ i Cu²⁺ + 2e⁻ → Cu⁰ połączone strumieniem elektronów; bilans dwóch elektronów</td><td>reakcja redoks zamyka bilans elektronów oddanych i przyjętych</td><td>Schemat dwustronny: po lewej atom cynku traci dwa elektrony (strzałki do mostka), po prawej jon Cu²⁺ je przyjmuje i zamienia w atom; mostek elektronów oznaczony liczbą 2. Wniosek: utleniacz i reduktor pracują w parze, elektrony są walutą wymiany.</td></tr>
+<tr><td>§8, doświadczenie 3</td><td>doświadczenie wirtualne (zlewka, przyrząd)</td><td>probówka z Zn + HCl, zbieranie gazu, zbliżenie płomienia: trzask</td><td>wydzielony gaz to wodór — potwierdzenie reguły wodoru</td><td>Wirtualna probówka z reakcją cynku w kwasie; krok zbierania gazu nad wodą, następnie przycisk zbliżenia płomienia — animacja trzasku; próba kontrolna z powietrzem bez efektu. Wniosek: głośny trzask potwierdza wodór.</td></tr>
+</tbody></table></div>
+<p><strong>Poprawione przy wczytaniu (Claude, 2026-10-12):</strong> kolejność końca szeregu ujednolicona do wersji z tabeli §2 „… H, Cu, Hg, Ag, Pt, Au” (w minimum, fiszce i ściądze było „Cu, Ag, Hg, Au”; Hg i Ag mają bardzo zbliżone potencjały, podręczniki podają obie kolejności).</p>
+</section>
+<footer class="footer"><p><strong>CHEMIA X04 v1.0</strong> · Szereg aktywności metali — reakcje z wodą, kwasami i solami · 2026</p></footer>
+</main>
+<script>
+/* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
+   postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
+(function(){
+var html=document.documentElement;
+function ciemny(){var t=html.getAttribute('data-theme');return t?t==='dark':!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function oznacz(){if(ciemny())html.setAttribute('data-ciemny','');else html.removeAttribute('data-ciemny')}
+try{var z=localStorage.getItem('lekcja-motyw');if(z)html.setAttribute('data-theme',z)}catch(e){}
+oznacz();if(window.matchMedia)try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',oznacz)}catch(e){}
+
+function start(){
+var root=document;
+root.querySelectorAll('.flashcard').forEach(function(b){if(b.dataset.lkFz)return;b.dataset.lkFz=1;b.removeAttribute('onclick');b.setAttribute('aria-pressed','false');
+ b.addEventListener('click',function(){var on=b.classList.toggle('flipped');b.setAttribute('aria-pressed',on?'true':'false')})});
+root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibling,ok=0,n=0,all=w.querySelectorAll('.quiz-q').length;
+ if(sc&&sc.classList.contains('quiz-score'))sc.setAttribute('aria-live','polite');
+ w.querySelectorAll('.quiz-q').forEach(function(d){var good=+d.dataset.ok;d.querySelectorAll('.quiz-opt').forEach(function(b){b.onclick=function(){if(d.dataset.done)return;d.dataset.done=1;n++;if(+b.dataset.a===good)ok++;
+  d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
+  if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
+  if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var b=root.querySelector('#advToggle');
+if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
+ if(!k)b.style.display='none';
+ b.textContent='Pokaż treści akademickie ('+k+')';
+ b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';adv().forEach(function(d){d.open=on});b.setAttribute('aria-pressed',on?'true':'false');b.textContent=(on?'Ukryj':'Pokaż')+' treści akademickie ('+k+')'}}
+// spis zwinięty na telefonie
+var sp=root.querySelector('#spis');if(sp&&window.innerWidth<700)sp.removeAttribute('open');
+// przełącznik jasny/ciemny
+var tb=root.querySelector('#lkMotyw');
+if(tb)tb.onclick=function(){var t=ciemny()?'light':'dark';html.setAttribute('data-theme',t);try{localStorage.setItem('lekcja-motyw',t)}catch(e){}oznacz()};
+// postęp czytania + aktywna sekcja w spisie
+var bar=root.querySelector('.lk-prog'),links={},secs=[];
+root.querySelectorAll('.toc-link[href^="#"]').forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1));if(s){links[s.id]=a;secs.push(s)}});
+var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+ if(bar)bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';
+ var cur=null,lim=(parseInt(getComputedStyle(h).getPropertyValue('--header-h'))||52)+40;
+ for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
+ for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// fiszki: pokazuje pierwsze N (domyślnie 6, atrybut data-fz-pierwsze="N"), reszta po wyraźnym przycisku
+root.querySelectorAll('.flashcard-grid').forEach(function(g){
+ var cards=[].slice.call(g.querySelectorAll('.flashcard')),N=+(g.getAttribute('data-fz-pierwsze')||6);
+ if(!(N>0)||cards.length<=N)return;
+ var ukryte=cards.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more';
+ function lab(on){ukryte.forEach(function(c){c.hidden=!on});
+  b.textContent=on?'▲ Zwiń fiszki':'▼ Pokaż pozostałe '+ile+' fiszek (razem '+cards.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ g.insertAdjacentElement('afterend',b);
+});
+// testy: pokazuje pierwsze N pytań (domyślnie 5, atrybut data-q-pierwsze), reszta po wyraźnym przycisku
+root.querySelectorAll('.che-quiz').forEach(function(w){
+ var qs=[].slice.call(w.querySelectorAll('.quiz-q')),N=+(w.getAttribute('data-q-pierwsze')||5);
+ if(!(N>0)||qs.length<=N)return;
+ var ukryte=qs.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more q-more';
+ function lab(on){ukryte.forEach(function(q){q.hidden=!on});
+  b.textContent=on?'▲ Zwiń pytania':'▼ Pokaż pozostałe '+ile+(ile===1?' pytanie':(ile<5?' pytania':' pytań'))+' (razem '+qs.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ var sc=w.nextElementSibling;(sc&&sc.classList.contains('quiz-score')?sc:w).insertAdjacentElement('afterend',b);
+});
+// grafiki przedmiotu
+if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
+if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();
+
+</script>
+</body>
+</html>

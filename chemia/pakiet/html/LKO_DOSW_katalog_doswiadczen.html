@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="pl" data-przedmiot="che">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>LKO-DOSW · &quot;Katalog doświadczeń — schemat opisu, obserwacja vs wniosek, planowanie (LKO etapy I–II)&quot;</title>
+<style id="lekcja-css">
+/* baza.css — wspólna baza lekcji wszystkich przedmiotów (styl lekcji silnika CHE v0_57). Nie edytować — zmiany wspólne w ulepszenia.css, przedmiotowe w motywy/<kod>.css. */
+
+
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+--bg:#fafbfc;--surface:#ffffff;--surface-soft:#f6f8fa;--surface-warm:#fdfaf4;--border:#e5e9ee;--border-strong:#cdd5dd;
+--text:#1a2332;--text-soft:#4a5568;--text-muted:#8892a0;--text-faint:#b4bcc6;
+--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,0.15);
+--c-basic:#2e7d4f;--c-basic-bg:#eaf6ee;--c-basic-line:#b8dcc4;
+--c-understand:#2b5e9c;--c-understand-bg:#eaf1f9;--c-understand-line:#bcd0e5;
+--c-warn:#b06f1c;--c-warn-bg:#fcf4e6;--c-warn-line:#eed8a8;
+--c-error:#b83a45;--c-error-bg:#fbeced;--c-error-line:#e8b5b9;
+--c-extra:#6b3fa0;--c-extra-bg:#f3ecfa;--c-extra-line:#d3bde8;
+--c-new:#0d7d7d;--c-new-bg:#e6f4f4;--c-new-line:#b0dcdc;
+--c-exam:#a86a00;--c-exam-bg:#fdf5e0;--c-exam-line:#eed49c;
+--sh-sm:0 1px 2px rgba(26,35,50,0.04);--sh-md:0 4px 12px rgba(26,35,50,0.06);--sh-lg:0 12px 32px rgba(26,35,50,0.10);--sh-xl:0 20px 48px rgba(26,35,50,0.14);
+--r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;
+--header-h:56px;
+--ease:cubic-bezier(0.4,0,0.2,1);--ease-out:cubic-bezier(0.16,1,0.3,1);
+--hl-key:#0d6868;--hl-key-bg:#d8ecea;--hl-warn:#b83a45;--hl-warn-bg:#fbe0e2;--hl-new:#6b3fa0;--hl-new-bg:#ede0f8;--hl-formula:#084848;--hl-formula-bg:#e0eeed;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;padding:calc(var(--header-h) + 12px) 0 88px;min-height:100vh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+@media(min-width:600px){body{padding:calc(var(--header-h) + 18px) 12px 96px;}}
+@media(min-width:768px){body{padding:calc(var(--header-h) + 24px) 20px 100px;}}
+@media(min-width:1100px){body{padding:calc(var(--header-h) + 28px) 32px 110px;}}
+.fab{position:fixed;top:12px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);background:rgba(255,255,255,0.94);color:var(--text);cursor:pointer;border-radius:var(--r-md);padding:0;transition:all 0.2s var(--ease);z-index:1200;box-shadow:var(--sh-sm);backdrop-filter:blur(8px);}
+.fab:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);box-shadow:var(--sh-md);transform:translateY(-1px);}
+.fab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.fab-left{left:6px;}.fab-right{right:6px;}
+@media(min-width:600px){.fab-left{left:10px;}.fab-right{right:10px;}}
+@media(min-width:768px){.fab-left{left:14px;}.fab-right{right:14px;}}
+.fab-left::after{content:'';width:16px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;border-radius:1px;transition:transform 0.25s var(--ease);}
+.fab-left.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.fab-left.is-open::after{width:16px;height:2px;background:currentColor;box-shadow:none;transform:rotate(45deg);}
+.fab-left.is-open::before{content:'';position:absolute;width:16px;height:2px;background:currentColor;transform:rotate(-45deg);border-radius:1px;}
+.fab-right::after{content:'';display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:8px solid currentColor;transition:transform 0.35s var(--ease-out);}
+.fab-right.is-hidden::after{transform:rotate(0deg);}
+.fab-right:not(.is-hidden)::after{transform:rotate(180deg);}
+.header-wrapper{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);transform:translateY(0);transition:transform 0.45s var(--ease-out),box-shadow 0.3s var(--ease);box-shadow:var(--sh-sm);}
+.header-wrapper.is-hidden{transform:translateY(-100%);box-shadow:none;}
+.header-bar{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:0 16px;height:var(--header-h);}
+@media(min-width:768px){.header-bar{padding:0 24px;}}
+.header-subject{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:1px;padding:4px 10px;background:var(--accent-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;}
+.header-title{font-size:15px;font-weight:700;color:var(--text);letter-spacing:-0.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1 1 auto;min-width:0;}
+.header-lesson{font-size:10px;font-weight:800;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.7px;padding:4px 9px;background:var(--surface-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;font-family:'JetBrains Mono',monospace;}
+.header-nav{display:flex;gap:2px;flex-shrink:0;align-items:center;}
+.header-nav a,.header-nav button{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;border-radius:var(--r-sm);font-size:16px;font-weight:500;transition:all 0.2s var(--ease);border:1px solid transparent;background:transparent;cursor:pointer;padding:0;font-family:inherit;}
+.header-nav a:hover,.header-nav button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.header-resume-btn.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.header-resume-btn::before{content:'▮';font-size:14px;line-height:1;}
+.header-panel{display:none;border-top:1px solid var(--border);background:linear-gradient(180deg,var(--surface) 0%,var(--surface-soft) 100%);padding:20px 16px 24px;}
+@media(min-width:768px){.header-panel{padding:24px 24px 28px;}}
+.header-panel.is-open{display:block;}
+.header-panel-inner{max-width:900px;margin:0 auto;}
+.header-kicker{font-size:11px;color:var(--text-muted);text-transform:uppercase;font-weight:800;letter-spacing:1px;margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.header-kicker::before{content:'';width:24px;height:2px;background:var(--accent);display:inline-block;border-radius:1px;}
+.header-h1{font-size:32px;font-weight:800;color:var(--text);letter-spacing:-1px;margin-bottom:10px;line-height:1.1;}
+.header-subtitle{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:18px;max-width:720px;}
+.header-modes{display:flex;gap:6px;flex-wrap:wrap;}
+.mode-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 15px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);font-family:inherit;}
+.mode-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
+.mode-btn:hover:not(.active){background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.resume-dropdown{display:none;position:fixed;top:calc(var(--header-h) + 6px);right:14px;z-index:1050;width:min(300px,calc(100vw - 30px));padding:14px;border:1px solid var(--border-strong);border-radius:12px;background:#fff;box-shadow:var(--sh-lg);}
+.resume-dropdown.is-open{display:block;}
+.resume-dropdown h4{margin:0 0 5px;color:var(--text);font-size:.85rem;}
+.resume-dropdown p{margin:0 0 12px;color:var(--text-muted);font-size:.75rem;line-height:1.5;}
+.resume-actions{display:flex;gap:6px;}
+.resume-actions button{flex:1;padding:8px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text-soft);font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.resume-actions .resume-save{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toc-overlay{position:fixed;inset:0;background:rgba(26,35,50,0.34);backdrop-filter:blur(3px);z-index:1100;opacity:0;visibility:hidden;transition:opacity 0.3s var(--ease),visibility 0.3s var(--ease);}
+.toc-overlay.is-visible{opacity:1;visibility:visible;}
+.toc-wrapper{position:fixed;left:0;top:0;width:320px;max-width:86vw;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:1150;transform:translateX(-100%);transition:transform 0.4s var(--ease-out);padding-top:64px;box-shadow:var(--sh-xl);}
+.toc-wrapper.is-open{transform:translateX(0);}
+.toc-content{padding:12px 14px 100px;}
+.toc-header{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);padding:4px 12px 12px;}
+.toc-item{margin-bottom:4px;border-radius:var(--r-md);overflow:hidden;}
+.toc-summary{padding:10px 12px;font-size:13px;font-weight:700;color:var(--text);cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;border-radius:var(--r-sm);transition:background 0.2s var(--ease),color 0.2s var(--ease);user-select:none;}
+.toc-summary:hover{background:var(--accent-soft);color:var(--accent);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::marker{content:'';}
+.toc-summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);opacity:0.5;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);opacity:1;}
+.toc-links{padding:4px 0 8px 28px;display:flex;flex-direction:column;gap:1px;}
+.toc-link{display:block;padding:6px 10px;font-size:12.5px;color:var(--text-soft);text-decoration:none;border-radius:4px;transition:all 0.2s var(--ease);border-left:2px solid transparent;}
+.toc-link:hover{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);}
+.container{max-width:820px;margin:0 auto;background:var(--surface);border-radius:0;box-shadow:none;padding:18px 12px;border:none;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+@media(min-width:600px){.container{border-radius:var(--r-lg);box-shadow:var(--sh-md);border:1px solid var(--border);padding:22px 18px;}}
+@media(min-width:768px){.container{padding:36px 36px;border-radius:var(--r-xl);}}
+@media(min-width:1100px){.container{max-width:840px;padding:40px 40px;}}
+h1,h2,h3,h4,h5{font-weight:800;color:var(--text);letter-spacing:-0.3px;line-height:1.3;}
+h2{font-size:24px;margin-top:44px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+h3{font-size:17px;margin-top:32px;margin-bottom:12px;font-weight:800;}
+h4{font-size:15px;margin-top:24px;margin-bottom:10px;font-weight:800;}
+h5{font-size:13px;margin-top:16px;margin-bottom:8px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-soft);}
+p{margin-bottom:12px;}
+ul,ol{padding-left:24px;margin-bottom:14px;}
+li{margin-bottom:6px;padding-left:4px;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s var(--ease);}
+a:hover{border-bottom-color:var(--accent);}
+strong{font-weight:700;color:var(--text);}
+.hl{background:var(--hl-key-bg);color:var(--hl-key);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-warn{background:var(--hl-warn-bg);color:var(--hl-warn);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-new{background:var(--hl-new-bg);color:var(--hl-new);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.formula{display:inline-block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:14px;font-weight:600;color:var(--hl-formula);background:var(--hl-formula-bg);padding:4px 12px;border-radius:var(--r-sm);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:3px 2px;white-space:nowrap;}
+.formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
+code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
+pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
+.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
+.mnemonic b{color:#78350f;}
+.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
+@media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
+.card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
+.card-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:10px;padding:3px 9px;background:var(--accent-soft);border-radius:4px;}
+.card-core{background:var(--accent-soft);border-color:var(--accent-line);border-left-color:var(--accent);}
+.card-basic{background:var(--c-basic-bg);border-color:var(--c-basic-line);border-left-color:var(--c-basic);}
+.card-basic .card-label{background:rgba(46,125,79,0.12);color:var(--c-basic);}
+.card-understand{background:var(--c-understand-bg);border-color:var(--c-understand-line);border-left-color:var(--c-understand);}
+.card-understand .card-label{background:rgba(43,94,156,0.12);color:var(--c-understand);}
+.card-warning{background:var(--c-warn-bg);border-color:var(--c-warn-line);border-left-color:var(--c-warn);}
+.card-warning .card-label{background:rgba(176,111,28,0.12);color:var(--c-warn);}
+.card-error{background:var(--c-error-bg);border-color:var(--c-error-line);border-left-color:var(--c-error);}
+.card-error .card-label{background:rgba(184,58,69,0.12);color:var(--c-error);}
+.card-extra{background:var(--c-extra-bg);border-color:var(--c-extra-line);border-left-color:var(--c-extra);}
+.card-extra .card-label{background:rgba(107,63,160,0.12);color:var(--c-extra);}
+.card-new{background:var(--c-new-bg);border-color:var(--c-new-line);border-left-color:var(--c-new);}
+.card-new .card-label{background:rgba(13,125,125,0.12);color:var(--c-new);}
+.card-exam{background:var(--c-exam-bg);border-color:var(--c-exam-line);border-left-color:var(--c-exam);}
+.card-exam .card-label{background:rgba(168,106,0,0.12);color:var(--c-exam);}
+.card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0;}
+details.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent-line);border-radius:var(--r-sm);padding:10px 14px;margin:10px 0;transition:all 0.2s var(--ease);}
+details.answer[open]{background:var(--accent-soft);border-left-color:var(--accent);}
+details.answer summary{cursor:pointer;font-weight:700;color:var(--text-soft);font-size:13px;list-style:none;user-select:none;display:flex;align-items:center;gap:10px;transition:color 0.2s var(--ease);}
+details.answer summary::-webkit-details-marker{display:none;}
+details.answer summary::marker{content:'';}
+details.answer summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer[open] summary{color:var(--accent);}
+details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}
+.part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}
+@media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}
+.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
+@media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}
+.table-wrap th,.table-wrap td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px;}
+@media(min-width:600px){.table-wrap th,.table-wrap td{padding:10px 12px;font-size:13.5px;}}
+.table-wrap th{background:var(--surface-soft);font-weight:800;color:var(--text-soft);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;}
+@media(min-width:600px){.table-wrap th{font-size:11px;letter-spacing:0.7px;white-space:nowrap;}}
+.table-wrap.table-compact td,.table-wrap.table-compact th{padding:7px 6px;font-size:12.5px;}
+.table-wrap tr:last-child td{border-bottom:none;}
+.table-wrap tr:hover td{background:var(--accent-soft);}
+.table-wrap .error-row{background:var(--c-error-bg);}
+.table-wrap .ok-row{background:var(--c-basic-bg);}
+.def-list{display:flex;flex-direction:column;gap:8px;margin:14px 0;}
+.def-item{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px 16px;}
+.def-item dt{font-weight:800;color:var(--text);font-size:13.5px;margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+.def-item dt::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;}
+.def-item dd{color:var(--text-soft);font-size:13.5px;line-height:1.6;margin:0;padding-left:11px;}
+.minimum-card{background:linear-gradient(135deg,var(--surface-soft) 0%,var(--accent-soft) 100%);border:1px solid var(--accent-line);border-radius:var(--r-lg);padding:20px 22px;margin:8px 0 28px;box-shadow:var(--sh-sm);position:relative;overflow:hidden;}
+@media(min-width:768px){.minimum-card{padding:28px 34px;margin-bottom:36px;}}
+.minimum-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:var(--accent);}
+.minimum-card h3{color:var(--accent);margin:0 0 16px;font-size:16px;letter-spacing:0.2px;display:flex;align-items:center;gap:10px;}
+.minimum-card h3::before{content:'★';font-size:16px;}
+.minimum-card ol{margin:0;padding-left:0;list-style:none;counter-reset:min-list;}
+.minimum-card li{counter-increment:min-list;padding-left:36px;position:relative;margin-bottom:12px;font-size:14px;line-height:1.6;}
+.minimum-card li::before{content:counter(min-list);position:absolute;left:0;top:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--surface);color:var(--accent);border:2px solid var(--accent-line);border-radius:50%;font-size:12px;font-weight:800;}
+.minimum-card li:last-child{margin-bottom:0;}
+.level-badge{display:inline-block;font-size:9.5px;font-weight:800;text-transform:uppercase;padding:2px 9px;border-radius:12px;vertical-align:middle;letter-spacing:0.5px;line-height:1.6;margin-left:8px;}
+.level-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.level-understand{background:var(--c-understand-bg);color:var(--c-understand);}
+.level-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.level-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.level-new{background:var(--c-new-bg);color:var(--c-new);}
+.rule-box{background:var(--c-understand-bg);border:1px solid var(--c-understand-line);border-radius:var(--r-md);padding:14px 18px;margin:14px 0;font-size:14px;line-height:1.65;}
+.rule-box b{color:var(--c-understand);}
+.step-flow{background:var(--text);color:#fff;padding:16px 18px;border-radius:var(--r-md);font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:12.5px;line-height:1.9;margin:14px 0;overflow-x:auto;white-space:pre;}
+@media(min-width:768px){.step-flow{font-size:13.5px;padding:16px 20px;}}
+.footer{margin-top:56px;padding-top:24px;border-top:2px solid var(--border);text-align:center;font-size:12.5px;color:var(--text-muted);letter-spacing:0.2px;}
+.footer p{margin-bottom:4px;}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:6px;border:2px solid var(--bg);}
+::-webkit-scrollbar-thumb:hover{background:var(--text-muted);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.bottom-nav{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:1100;width:min(700px,calc(100vw - 24px));font-size:.78rem;}
+.bottom-nav__toggle{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;padding:8px 14px;border:1px solid var(--border-strong);border-radius:999px;background:rgba(255,255,255,.97);color:var(--text-soft);font:700 .72rem inherit;box-shadow:0 5px 18px rgba(15,23,42,.14);cursor:pointer;backdrop-filter:blur(10px);font-family:inherit;}
+.bottom-nav__panel{display:none;margin-bottom:7px;padding:10px;border:1px solid var(--border-strong);border-radius:14px;background:rgba(255,255,255,.98);box-shadow:0 10px 28px rgba(15,23,42,.16);backdrop-filter:blur(12px);}
+.bottom-nav.is-open .bottom-nav__panel{display:block;}
+.bottom-nav__primary{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.bottom-nav a,.bottom-nav button.nav-more{min-height:36px;display:flex;align-items:center;justify-content:center;padding:6px 8px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--text-soft);text-decoration:none;font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.bottom-nav a:hover,.bottom-nav button.nav-more:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+@media(max-width:420px){
+  .bottom-nav{font-size:.7rem;width:calc(100vw - 12px);}
+  .bottom-nav a,.bottom-nav button.nav-more{padding:6px 4px;font-size:.65rem;}
+}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
+.widget{background:var(--surface);border:2px solid var(--border);border-radius:var(--r-md);padding:14px;margin:14px 0;box-shadow:var(--sh-sm);}
+@media(min-width:768px){.widget{padding:22px 26px;margin:20px 0;border-radius:var(--r-lg);}}
+.widget h4{margin:0 0 8px;color:var(--text);font-size:15px;font-weight:800;}
+@media(min-width:768px){.widget h4{font-size:16px;}}
+.widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
+.bld-pool{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.bld-pool button{padding:6px 12px;border:1px solid var(--border);border-radius:20px;background:#fff;font:600 0.8rem inherit;cursor:pointer;font-family:inherit;color:var(--text);}
+.bld-pool button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bld-workspace{min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;}
+.bld-feedback,.re-result,.st-feedback,.ch-feedback{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;line-height:1.5;}
+.bld-feedback.ok,.re-result.ok,.st-feedback.ok,.ch-feedback.ok{background:var(--c-basic-bg);color:var(--c-basic);border:1px solid var(--c-basic-line);}
+.bld-feedback.bad,.re-result.bad,.st-feedback.bad,.ch-feedback.bad{background:var(--c-error-bg);color:var(--c-error);border:1px solid var(--c-error-line);}
+.bld-feedback.info,.re-result.info,.st-feedback.info,.ch-feedback.info{background:var(--c-understand-bg);color:var(--c-understand);border:1px solid var(--c-understand-line);}
+.bld-feedback.warn,.re-result.warn,.st-feedback.warn,.ch-feedback.warn{background:var(--c-warn-bg);color:var(--c-warn);border:1px solid var(--c-warn-line);}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);color:var(--text);font-family:inherit;}
+.btn:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent);}
+.btn-primary:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+.btn-sm{padding:6px 10px;font-size:12px;}
+.flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}
+@media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--border);border-radius:var(--r-md);background:#fff;color:var(--text);font:inherit;text-align:center;cursor:pointer;box-shadow:var(--sh-sm);transition:all 0.2s var(--ease);position:relative;font-family:inherit;}
+.flashcard:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-3px);box-shadow:var(--sh-md);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:90px;}
+.flashcard .front{font-weight:700;font-size:14.5px;line-height:1.5;}
+.flashcard .back{display:none;color:var(--text-soft);font-size:13.5px;line-height:1.6;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:8px;right:8px;font-size:9px;text-transform:uppercase;background:var(--surface-soft);padding:2px 8px;border-radius:10px;color:var(--text-muted);font-weight:800;letter-spacing:0.4px;}
+.flashcard .card-tag.tag-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.flashcard .card-tag.tag-error{background:var(--c-error-bg);color:var(--c-error);}
+.flashcard .card-tag.tag-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.flashcard .card-tag.tag-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.checklist{background:#fff;border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.checklist h4{color:var(--c-basic);margin:0 0 12px;font-size:15px;}
+.checklist ul{list-style:none;padding-left:0;margin:0;}
+.checklist li{padding:7px 0;font-size:13.5px;border-bottom:1px dashed var(--c-basic-line);display:flex;align-items:flex-start;gap:10px;line-height:1.55;}
+.checklist li:last-child{border-bottom:none;}
+.checklist li::before{content:'☐';color:var(--c-basic);font-weight:700;font-size:1.15rem;flex-shrink:0;line-height:1.2;}
+.core-path{background:linear-gradient(135deg,var(--c-basic-bg) 0%,#dcefe2 100%);border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:800;color:var(--c-basic);font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.core-path .cp-title::before{content:'▶';font-size:12px;}
+.core-path ol{margin:0;padding-left:22px;}
+.core-path li{margin-bottom:6px;font-size:13.5px;line-height:1.6;}
+.audit-panel{background:var(--surface-soft);border:2px solid var(--border-strong);border-radius:var(--r-lg);padding:16px 18px;margin:16px 0;}
+.audit-panel h4{margin:0 0 12px;color:var(--text);}
+.audit-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px;}
+@media(min-width:600px){.audit-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}}
+.audit-item{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:10px 12px;font-size:12.5px;line-height:1.55;}
+.mini-note{font-size:12.5px;color:var(--text-muted);font-style:italic;margin-top:8px;line-height:1.55;}
+.layer-legend{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:12px 14px;margin:12px 0;display:grid;grid-template-columns:1fr;gap:8px 18px;}
+@media(min-width:600px){.layer-legend{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;}}
+.layer-legend .layer-row{display:flex;gap:10px;align-items:center;font-size:12.5px;line-height:1.5;}
+.layer-legend .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.e8{background:var(--c-basic);}
+.layer-legend .dot.understand{background:var(--c-understand);}
+.layer-legend .dot.extra{background:var(--c-extra);}
+.layer-legend .dot.contest{background:var(--c-warn);}
+.klinika-table td.col-blad{color:var(--c-error);font-weight:700;}
+.klinika-table td.col-blad::before{content:'✕ ';font-weight:900;margin-right:4px;color:var(--c-error);}
+.klinika-table td.col-ok{color:var(--c-basic);font-weight:700;}
+.klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}
+.map-card{position:relative;}
+.map-expand-btn{position:absolute;top:10px;right:10px;z-index:3;padding:6px 12px;border:1px solid var(--accent-line);background:rgba(255,255,255,0.95);color:var(--accent);border-radius:var(--r-sm);font-size:12px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:var(--sh-sm);transition:all 0.15s var(--ease);}
+.map-expand-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.map-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(26,35,50,0.85);backdrop-filter:blur(6px);}
+.map-overlay.is-open{display:block;}
+.map-overlay-inner{position:absolute;inset:12px;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-xl);}
+.map-overlay-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface-soft);gap:8px;flex-wrap:wrap;}
+.map-overlay-title{font-weight:800;font-size:14px;color:var(--text);}
+.map-overlay-actions{display:flex;gap:6px;}
+.map-overlay-actions button{padding:6px 12px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;color:var(--text-soft);transition:all 0.15s var(--ease);}
+.map-overlay-actions button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.map-overlay-actions .map-close{background:var(--c-error);color:#fff;border-color:var(--c-error);}
+.map-overlay-canvas{flex:1;overflow:hidden;position:relative;background:#fff;cursor:grab;touch-action:none;}
+.map-overlay-canvas svg{display:block;position:absolute;top:0;left:0;transform-origin:0 0;}
+@media print{
+.fab,.toc-wrapper,.toc-overlay,.header-wrapper,.bottom-nav,.resume-dropdown,.map-overlay,.map-expand-btn{display:none !important;}
+body{padding:0;background:#fff;}
+.container{box-shadow:none;border:none;padding:0;max-width:100%;}
+details.answer{page-break-inside:avoid;}
+details.answer > *:not(summary){display:block !important;}
+details.answer summary{display:none;}
+.card{page-break-inside:avoid;}
+.widget{page-break-inside:avoid;}
+}
+@media (prefers-reduced-motion: reduce){
+*{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+html{scroll-behavior:auto;}
+}
+html,body{max-width:100%;overflow-x:hidden;}
+.table-scroll-hint{display:none;align-items:center;justify-content:space-between;gap:8px;padding:7px 11px;margin-top:0;margin-bottom:8px;border:1px solid var(--border);border-bottom:0;border-radius:var(--r-sm) var(--r-sm) 0 0;background:var(--surface-soft);color:var(--text-muted);font-size:11px;font-weight:700;}
+.table-wrap.is-scrollable + .table-scroll-hint{display:flex;}
+.table-scroll-hint .scroll-arrow{font-size:13px;letter-spacing:2px;color:var(--accent);}
+.timeline-anim{border-color:var(--c-understand-line);}
+.ta-stage{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 14px;min-height:280px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.ta-scene{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;animation:taFade 0.6s ease-out;width:100%;}
+@keyframes taFade{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.ta-scene .ta-year{font-size:1.7rem;font-weight:800;color:var(--accent);font-family:'JetBrains Mono',monospace;letter-spacing:1px;}
+.ta-scene .ta-who{font-size:1.05rem;font-weight:800;color:var(--text);}
+.ta-scene .ta-desc{font-size:13.5px;color:var(--text-soft);max-width:600px;line-height:1.65;}
+.ta-dots{display:flex;justify-content:center;gap:8px;margin:14px 0 8px;}
+.ta-dot{width:12px;height:12px;border-radius:50%;background:var(--border-strong);border:2px solid transparent;cursor:pointer;padding:0;transition:all 0.2s var(--ease);}
+.ta-dot.active{background:var(--accent);transform:scale(1.25);box-shadow:0 0 0 3px var(--accent-glow);}
+.ta-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;}
+.ta-nav{padding:8px 14px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-weight:700;color:var(--text-soft);cursor:pointer;font-size:12.5px;transition:all 0.15s var(--ease);}
+.ta-nav:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.ta-progress{font-size:12.5px;color:var(--text-muted);font-weight:700;font-family:'JetBrains Mono',monospace;}
+.eq-player{background:linear-gradient(180deg,#f8fafc,#eef6f5);border:2px solid var(--accent-line);border-radius:var(--r-lg);padding:16px 18px;margin:14px 0;}
+.eq-stage{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.15rem;padding:12px;background:#fff;border-radius:var(--r-md);border:1px solid var(--border);}
+.eq-term{display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border);opacity:0;}
+.eq-term.show{opacity:1;animation:reaction-flow 0.7s ease-out;}
+.eq-term.reactant{background:#e0f2fe;border-color:#7dd3fc;color:#0c4a6e;}
+.eq-term.product{background:#dcfce7;border-color:#86efac;color:#14532d;}
+.eq-arrow{opacity:0;color:var(--accent);font-size:1.4rem;}
+.eq-arrow.show{opacity:1;}
+.eq-balance{margin-top:10px;font-size:13px;color:var(--text-soft);display:none;}
+.eq-balance.show{display:block;}
+@keyframes reaction-flow{0%{opacity:.25;transform:scale(.92)}55%{opacity:1}100%{opacity:1;transform:scale(1)}}
+.ion-assembly{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;padding:18px 12px;background:#fff;border:1px solid var(--border);border-radius:var(--r-md);margin:10px 0;}
+.ion-chip{padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid var(--border);}
+.ion-chip.cation{background:#e0f2fe;border-color:#38bdf8;color:#0c4a6e;}
+.ion-chip.anion{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.ion-chip.product{background:#dcfce7;border-color:#4ade80;color:#14532d;}
+.ion-plus,.ion-join{font-size:1.4rem;font-weight:800;color:var(--text-muted);}
+.hero{max-width:900px;margin:0 auto 22px;padding:26px;border:1px solid var(--border);border-radius:var(--r-xl);background:linear-gradient(135deg,#fff,var(--accent-soft));box-shadow:var(--sh-md);}
+.hero h1{font-size:clamp(32px,6vw,52px);margin:4px 0 8px;}
+.hero-kicker{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--accent);text-transform:uppercase;}
+.lead{font-size:16px;color:var(--text-soft);max-width:720px;}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;}
+.page{max-width:900px;margin:0 auto;}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+@media(max-width:720px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px;}
+.metric-grid>div,.result-card,.step-card{padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);}
+.metric-grid b{display:block;font-size:10px;text-transform:uppercase;color:var(--text-muted);}
+.metric-grid strong{display:block;margin-top:3px;}
+@media(max-width:700px){.metric-grid{grid-template-columns:1fr;}}
+.controls,.button-grid{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;}
+.controls button,.button-grid button,.quiz-opt{padding:8px 12px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;cursor:pointer;}
+.particle-stage{height:120px;display:flex;align-items:center;justify-content:center;gap:70px;border:1px dashed var(--border-strong);border-radius:10px;margin-top:12px;}
+.particle{font-size:30px;font-weight:800;}
+.p-h3o{color:var(--accent);}
+.p-cl{color:#b83a45;}
+.ph-scale{display:flex;justify-content:space-between;margin-top:6px;font:700 11px 'JetBrains Mono',monospace;}
+.buffer-tank{height:28px;border:1px solid var(--border-strong);border-radius:999px;overflow:hidden;margin:14px 0;background:var(--surface-soft);}
+#bufferFill{height:100%;width:100%;background:var(--accent);transition:width .2s;}
+.quiz-wrap{margin:16px 0;}
+.quiz-q{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:14px 16px;margin-bottom:12px;}
+.quiz-q h5{margin:0 0 10px;font-size:14.5px;color:var(--text);text-transform:none;letter-spacing:0;line-height:1.45;}
+.quiz-q .q-tag{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:10px;margin-bottom:8px;background:var(--surface-soft);color:var(--text-muted);}
+.quiz-opts{display:flex;flex-direction:column;gap:8px;}
+.quiz-opt{display:block;width:100%;text-align:left;padding:10px 12px;border:2px solid var(--border);border-radius:var(--r-sm);background:#fff;font:inherit;font-size:13.5px;cursor:pointer;transition:all 0.15s var(--ease);color:var(--text);}
+.quiz-opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft);}
+.quiz-opt.correct{border-color:var(--c-basic);background:var(--c-basic-bg);color:var(--c-basic);font-weight:700;}
+.quiz-opt.wrong{border-color:var(--c-error);background:var(--c-error-bg);color:var(--c-error);}
+.quiz-opt:disabled{cursor:default;opacity:0.95;}
+.quiz-fb{margin-top:8px;font-size:13px;line-height:1.5;display:none;padding:8px 10px;border-radius:var(--r-sm);}
+.quiz-fb.show{display:block;}
+.quiz-fb.ok{background:var(--c-basic-bg);color:var(--c-basic);}
+.quiz-fb.bad{background:var(--c-error-bg);color:var(--c-error);}
+.quiz-score{text-align:center;padding:14px;background:var(--surface-soft);border-radius:var(--r-md);margin-top:16px;font-weight:800;color:var(--accent);display:none;}
+.quiz-score.show{display:block;}
+.lab-bridge{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 28px;padding:14px 16px;border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);background:linear-gradient(135deg,var(--surface-soft),var(--accent-soft));}
+.lab-bridge strong{display:block;color:var(--accent-dark);}
+.lab-bridge span{display:block;margin-top:3px;color:var(--text-soft);font-size:13px;}
+.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;}
+.lab-bridge-btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
+@media(max-width:600px){.lab-bridge{align-items:flex-start;flex-direction:column;}.lab-bridge-btn{width:100%;text-align:center;}}
+.exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}
+.exp-card h5{margin:0 0 10px;color:var(--c-basic);font-size:14px;text-transform:none;letter-spacing:0;}
+.exp-grid{display:grid;grid-template-columns:1fr;gap:6px;font-size:13.5px;line-height:1.55;}
+@media(min-width:600px){.exp-grid{grid-template-columns:110px 1fr;}}
+.exp-grid b{color:var(--text-soft);font-size:11px;text-transform:uppercase;letter-spacing:0.4px;}
+
+.js-reveal .card:not(.in),.js-reveal .widget:not(.in){opacity:0;transform:translateY(14px)}
+.js-reveal .card,.js-reveal .widget{transition:opacity .55s var(--ease),transform .55s var(--ease)}
+
+
+.ion-svg{width:100%;height:auto;display:block;background:radial-gradient(ellipse at 50% 40%,#fff,var(--surface-soft));border:1px solid var(--border);border-radius:var(--r-md);margin-top:10px}
+.ion-svg .mv{transition:transform .9s cubic-bezier(.65,0,.35,1);transform-box:fill-box}
+.ion-svg text{font-family:'JetBrains Mono',monospace;font-weight:800;text-anchor:middle;dominant-baseline:central}
+.ion-svg .fade{opacity:0;transition:opacity .6s ease .35s}
+.ion-svg[data-s="1"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="1"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="1"] .d1,.ion-svg[data-s="2"] .d1{opacity:1}
+.ion-svg[data-s="2"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="2"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="2"] .proton{transform:translate(120px,-40px)}
+.ion-svg[data-s="2"] .arrow{opacity:1}
+.ion-svg[data-s="3"] .g-hcl{transform:translateX(10px)}
+.ion-svg[data-s="3"] .g-w{transform:translateX(-10px)}
+.ion-svg[data-s="3"] .proton{transform:translate(230px,-38px)}
+.ion-svg[data-s="3"] .d3{opacity:1}
+.ion-svg[data-s="3"] .glow{animation:ionGlow 1.6s ease-in-out infinite}
+@keyframes ionGlow{0%,100%{filter:drop-shadow(0 0 2px rgba(13,104,104,.3))}50%{filter:drop-shadow(0 0 10px rgba(13,104,104,.8))}}
+
+
+.ph-bar{position:relative;height:18px;border-radius:999px;margin:10px 0 4px;border:1px solid var(--border-strong);
+background:linear-gradient(90deg,#e5262e 0%,#ef5a28 14%,#f6a21e 28%,#d7d93a 43%,#5cb85c 50%,#21a89a 57%,#2f7fc1 71%,#4a4bb5 86%,#6b2d8f 100%)}
+.ph-marker{position:absolute;top:-6px;width:0;height:0;left:0;transform:translateX(-50%);transition:left .35s var(--ease)}
+.ph-marker::before{content:'';position:absolute;left:-7px;top:0;border:7px solid transparent;border-top:10px solid var(--text)}
+.ph-marker::after{content:attr(data-v);position:absolute;left:0;top:-22px;transform:translateX(-50%);background:var(--text);color:#fff;font:800 11px 'JetBrains Mono',monospace;padding:2px 6px;border-radius:5px;white-space:nowrap}
+.ph-flask{display:inline-block;width:22px;height:22px;border-radius:0 0 8px 8px;border:2px solid var(--text-soft);vertical-align:middle;margin-right:6px;transition:background .35s}
+
+
+.titr-wrap{position:relative}
+#titrationCanvas{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--r-md);background:#fff}
+.titr-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.titr-row input[type=range]{flex:1 1 200px}
+.titr-flask{width:34px;height:42px;border:2px solid var(--text-soft);border-radius:2px 2px 12px 12px;transition:background .3s;flex-shrink:0;position:relative}
+.titr-flask::after{content:'';position:absolute;left:-2px;right:-2px;top:-8px;height:6px;border:2px solid var(--text-soft);border-bottom:0;border-radius:3px 3px 0 0}
+
+
+.buffer-tank{position:relative;height:34px}
+#bufferFill{transition:width .4s var(--ease),background .4s;background-size:28px 28px;background-image:linear-gradient(45deg,rgba(255,255,255,.22) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.22) 75%,transparent 75%)}
+.buffer-tank.pulse{animation:bufPulse .45s ease}
+.buffer-tank.dead{animation:bufDead .5s ease 2}
+@keyframes bufPulse{50%{transform:scale(1.02);box-shadow:0 0 0 4px var(--accent-glow)}}
+@keyframes bufDead{50%{box-shadow:0 0 0 4px rgba(184,58,69,.35)}}
+
+
+.rx-stage{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:12px 0;padding:14px;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md)}
+.rx-beaker{position:relative;width:120px;height:150px;border:3px solid var(--text-soft);border-top:0;border-radius:0 0 18px 18px;background:rgba(255,255,255,.55);overflow:visible;flex-shrink:0}
+.rx-liquid{position:absolute;left:0;right:0;bottom:0;height:100px;border-radius:0 0 14px 14px;background:rgba(220,235,240,.65);transition:background 2.2s ease}
+.rx-solid{position:absolute;left:36px;bottom:2px;width:48px;height:24px;border-radius:40% 40% 8px 8px;opacity:0;transition:height 3.5s ease,opacity .5s,transform 3.5s ease}
+.rx-bubbles,.rx-precip,.rx-fumes{position:absolute;left:0;right:0;bottom:0;height:150px;pointer-events:none;overflow:hidden}
+.rx-fumes{overflow:visible;bottom:100px;height:70px}
+.rx-b{position:absolute;bottom:14px;border-radius:50%;background:rgba(255,255,255,.85);border:1px solid rgba(13,104,104,.45);animation:rxRise 2.2s ease-in forwards}
+@keyframes rxRise{to{transform:translate(var(--dx,0),-92px);opacity:0}}
+.rx-p{position:absolute;top:50px;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #cbd5e1;animation:rxFall 2.4s ease-in forwards}
+@keyframes rxFall{to{transform:translateY(90px)}}
+.rx-cloud{position:absolute;bottom:0;left:6px;right:6px;height:0;background:#fff;border-radius:10px 10px 0 0;box-shadow:0 0 0 1px #e2e8f0;transition:height 4s ease;opacity:.95}
+.rx-f{position:absolute;bottom:0;width:26px;height:26px;border-radius:50%;background:rgba(150,75,20,.55);filter:blur(7px);animation:rxFume 3s ease-out forwards}
+@keyframes rxFume{to{transform:translate(var(--dx,0),-70px) scale(2.2);opacity:0}}
+
+
+.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.rx-label{flex:1 1 200px;font-size:13px;color:var(--text-soft);line-height:1.5}
+.rx-label b{color:var(--text);font-family:'JetBrains Mono',monospace}
+@media print{.js-reveal .card,.js-reveal .widget{opacity:1!important;transform:none!important}}
+
+
+/* ulepszenia.css — warstwa wspólna nad baza.css: pasek lekcji, postęp czytania, spis z podświetleniem,
+   tryb ciemny, komponenty wspólne (mity, drzewo, cytat, dialog, słówka, figura), druk, dostępność.
+   Kolejność w lekcji: baza.css → ulepszenia.css → motywy/<przedmiot>.css. Edytuj tylko tutaj. */
+
+:root{--header-h:52px;--serif:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Charter,Georgia,serif}
+
+/* ---------- pasek lekcji (zamiast nagłówka aplikacji) ---------- */
+.lk-bar{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 12px;
+  background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--border)}
+.lk-subj{flex:none;display:inline-flex;align-items:center;gap:7px;font:800 12.5px/1 Inter,system-ui,sans-serif;color:var(--accent);text-decoration:none;
+  padding:6px 10px 6px 8px;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+.lk-subj i{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+.lk-title{flex:1;min-width:0;font:600 13px/1.25 Inter,system-ui,sans-serif;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lk-btn{flex:none;min-width:36px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);background:var(--surface);
+  color:var(--text);border-radius:9px;padding:0 10px;font:700 12.5px Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+.lk-btn:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.lk-prog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
+@media (max-width:520px){.lk-title{display:none}.lk-bar{justify-content:space-between}}
+
+/* ---------- nagłówek lekcji ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+.hero::after{content:"";position:absolute;inset:-10% -6% -10% 52%;z-index:-1;opacity:.12;pointer-events:none;background:var(--motyw-wzor,none) right center/auto 100% repeat-y}
+.hero h1{text-wrap:balance}
+.hero-kicker{color:var(--accent);text-transform:none;letter-spacing:0;font-size:13px}
+.page{padding:0 16px}
+.lk-btn svg{width:16px;height:16px;display:block}
+.lk-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:12.5px;color:var(--text-muted)}
+.lk-meta b{color:var(--text-soft);font-weight:700}
+
+/* ---------- spis treści: aktywna sekcja ---------- */
+@media (min-width:800px){.toc-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));column-gap:12px}}
+.toc-link.on{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);font-weight:700}
+section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
+
+/* ---------- komponenty wspólne ---------- */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:12px 0}
+.myth-head{grid-column:1/-1;font-weight:800;font-size:14px}
+.myth{border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow:hidden}
+.myth p{margin:0;padding:9px 12px;font-size:13.5px;line-height:1.5}
+.myth p span{display:block;font:800 11px Inter,system-ui;margin-bottom:2px}
+.myth-x{background:var(--c-error-bg)}.myth-x span{color:var(--c-error)}.myth-ok span{color:var(--c-basic)}
+
+.lk-tree{margin:12px 0;font-size:14px;overflow-x:auto}
+.lk-tree ul{list-style:none;margin:0;padding-left:18px}.lk-tree>ul{padding-left:0}
+.lk-tree li{position:relative;padding:3px 0 3px 14px}
+.lk-tree ul ul li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--accent-line)}
+.lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
+.lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
+.lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+
+/* cytat z tekstu (lektura, źródło, wypowiedź) */
+.lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
+.lk-quote blockquote{margin:0;font:400 17px/1.65 var(--serif);color:var(--text)}
+.lk-quote blockquote p{margin:0 0 6px;color:inherit}
+.lk-quote figcaption{margin-top:6px;font-size:12.5px;color:var(--text-muted)}
+
+/* dialog (role A/B, rozmowa, scenka) */
+.lk-dialog{margin:14px 0;display:flex;flex-direction:column;gap:8px}
+.lk-line{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.lk-who{min-width:30px;height:30px;padding:0 8px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font:800 12px Inter,system-ui;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line)}
+.lk-line.b .lk-who{background:var(--surface-soft);color:var(--text-soft);border-color:var(--border)}
+.lk-say{padding:8px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font-size:14.5px;line-height:1.55}
+.lk-say small{display:block;color:var(--text-muted);font-size:12.5px;margin-top:2px}
+
+/* słówka: wyraz — znaczenie — przykład */
+.lk-vocab{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.lk-vocab th{text-align:left;font-size:12px;color:var(--text-muted);font-weight:700;padding:6px 10px;border-bottom:2px solid var(--border)}
+.lk-vocab td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+.lk-vocab td:first-child{font-weight:800;color:var(--accent);white-space:nowrap}
+.lk-vocab td:last-child{color:var(--text-soft);font-style:italic}
+@media (max-width:560px){.lk-vocab thead{display:none}.lk-vocab tr{display:block;padding:8px 0;border-bottom:1px solid var(--border)}
+  .lk-vocab td{display:block;border:0;padding:1px 4px}}
+
+/* figura z biblioteki grafik przedmiotu */
+.lk-fig{margin:16px 0;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);overflow:hidden}
+.lk-fig figcaption{padding:9px 14px;border-top:1px solid var(--border);background:var(--surface-soft);font-size:13px;line-height:1.5;color:var(--text-soft)}
+.lk-fig figcaption b{color:var(--text);margin-right:4px}
+.lk-fig-body{padding:12px}
+.lk-fig svg{display:block;width:100%;height:auto}
+
+/* z chemii (lekcja.css): treści akademickie, plakietki */
+details.adv{border:1px dashed var(--c-warn-line,#eed8a8);border-radius:10px;background:var(--surface-soft,#f6f8fa);margin:10px 0;padding:0 12px}details.adv>summary{cursor:pointer;font-weight:700;color:var(--c-warn,#b06f1c);padding:9px 0;list-style:none}details.adv>summary::-webkit-details-marker{display:none}details.adv>summary::before{content:"▸ "}details.adv[open]>summary::before{content:"▾ "}.adv-tag{font-weight:600;font-size:11px;opacity:.75;margin-left:6px}.adv-body{padding:0 0 10px;font-size:13.5px;line-height:1.6}.adv-body table{font-size:12.5px}.adv-toggle{margin-top:10px;border:1px solid var(--c-warn-line,#eed8a8);background:var(--c-warn-bg,#fcf4e6);color:var(--c-warn,#b06f1c);border-radius:999px;padding:6px 12px;font:700 12px Inter,system-ui,sans-serif;cursor:pointer}.bio-tag{display:inline-block;font:800 10px Inter,system-ui;letter-spacing:.04em;padding:2px 7px;border-radius:99px;background:rgba(46,125,79,.12);color:#2e7d4f;margin-left:6px;vertical-align:middle}.v15{display:inline-block;font:800 9.5px Inter,system-ui;padding:1px 6px;border-radius:99px;background:rgba(13,125,125,.12);color:#0d7d7d;margin-left:6px;vertical-align:middle}@media print{details.adv{display:block}details.adv>.adv-body{display:block}}
+/* z chemii (lekcja.css): telefon, tabele */
+.exp-card{min-width:0;max-width:100%;box-sizing:border-box}.exp-grid>*{min-width:0;overflow-wrap:anywhere}
+@media (max-width:600px){.exp-grid{grid-template-columns:minmax(0,1fr)!important}.exp-grid>b{margin-top:4px}}
+.table-wrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+
+/* klinika błędów (::: klinika) — tabela, na telefonie karty */
+.klinika-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden}
+.klinika-table th{text-align:left;padding:9px 12px;background:var(--surface-soft);color:var(--text-soft);font-size:12px;font-weight:800;border-bottom:1px solid var(--border)}
+.klinika-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.klinika-table tr:last-child td{border-bottom:0}
+@media (max-width:600px){.klinika-table thead{display:none}.klinika-table tr{display:block;padding:8px 12px;border-bottom:1px solid var(--border)}
+  .klinika-table td{display:block;border:0;padding:2px 0}.klinika-table td:not(.col-blad):not(.col-ok){color:var(--text-soft)}}
+
+.lk-pre{margin:12px 0;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-soft);overflow-x:auto;font:12.5px/1.55 ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;color:var(--text-soft);white-space:pre}
+.lk-pre code{font:inherit;background:none;padding:0;color:inherit}
+.lk-hr{border:0;border-top:1px solid var(--border);margin:28px 0}
+
+/* ---------- dostępność ---------- */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;z-index:60;background:var(--surface);color:var(--accent);padding:8px 12px;border-radius:8px}
+.skip-link:focus{left:8px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- tryb ciemny: automatycznie albo przyciskiem (data-theme) ---------- */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme=dark]{
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}
+/* elementy bazy z białym tłem na sztywno */
+html[data-ciemny] :is(.flashcard,.checklist,.audit-item,.layer-legend,.quiz-q,.quiz-opt,.btn,.controls button,.eq-stage,.ion-assembly,.bld-workspace,.bld-pool button,.resume-dropdown,.ta-nav){background:var(--surface);color:var(--text)}
+html[data-ciemny] .hero{background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.active,.step-flow){color:var(--bg)}
+@media (max-width:600px){.hero::after{opacity:.07}}
+
+/* ---------- druk ---------- */
+@media print{
+  .lk-bar,.adv-toggle,.toc-item,.fab,.bottom-nav{display:none!important}
+  body{padding:0;background:#fff;color:#000}
+  .hero::after{display:none}.hero{background:none;box-shadow:none}
+  details.adv,details.answer{display:block}details>*{display:block}
+  .card,.minimum-card,.lk-fig,.myth,.quiz-q{break-inside:avoid;box-shadow:none}
+  a{color:inherit;text-decoration:none}
+}
+
+/* === Dopracowanie czytelności (2026-10-11; z wersji „ulepszonej” U03 użytkownika, uogólnione na wszystkie przedmioty, zgodne z trybem ciemnym) === */
+body{line-height:1.74}
+main{isolation:isolate}
+.hero{border-color:var(--accent-line)}
+.hero::before{content:"";position:absolute;right:-42px;top:-56px;width:180px;height:180px;z-index:-1;pointer-events:none;
+ border:1px solid var(--accent-line);border-radius:50%;opacity:.45;
+ box-shadow:0 0 0 22px var(--accent-glow),0 0 0 44px var(--accent-glow)}
+.part-heading{padding:0 0 12px;border-bottom:1px solid var(--border);align-items:flex-start}
+.part-num{margin-top:1px}
+section[id]{scroll-margin-top:calc(var(--header-h,56px) + 20px)}
+section p{max-width:78ch}
+section ul,section ol{padding-left:1.35rem}
+.card,.exp-card,.widget,.table-wrap{box-shadow:0 2px 8px rgba(24,49,59,.045)}
+.table-wrap{max-width:100%}
+.table-wrap table{line-height:1.55}
+.table-wrap td strong{color:var(--text)}
+.table-wrap tbody tr:nth-child(even) td{background:var(--surface-soft)}
+.table-wrap tbody tr:hover td{background:var(--accent-soft)}
+.mini-note{max-width:80ch}
+:is(button,a,summary,[tabindex]):focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:520px){.hero{padding:20px 16px}.part-heading{font-size:19px;gap:11px}
+ .table-wrap table{font-size:12.5px}.table-wrap th,.table-wrap td{padding:8px 9px}}
+@media(hover:none){.card:hover,.flashcard:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media print{.hero::before{display:none}.card,.exp-card,.table-wrap{break-inside:avoid;box-shadow:none}}
+
+/* fiszki: część ukryta do rozwinięcia (lekcja.js); przy druku — wszystkie */
+.flashcard[hidden]{display:none!important}
+.fz-more{display:block;width:100%;margin:-6px 0 18px;padding:12px 16px;border:2px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent;color:var(--text,#1d2a30);font-family:inherit;font-weight:600;font-size:15px;line-height:1.3;cursor:pointer;text-align:center}
+.fz-more:hover,.fz-more:focus-visible{background:var(--surface-2,rgba(0,0,0,.04))}
+@media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
+.quiz-q[hidden]{display:none!important}
+@media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
+
+/* motyw che (Chemia) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,.15);--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 104 180%27%3E%3Cg fill=%27none%27 stroke=%27%230d6868%27 stroke-width=%273%27%3E%3Cpath d=%27M52 10l40 23v46l-40 23-40-23V33z%27/%3E%3Cpath d=%27M52 100l40 23v46l-40 23-40-23v-46z%27/%3E%3Cpath d=%27M52 22v8M92 56h8M12 56H4%27/%3E%3C/g%3E%3Cg fill=%27%230d6868%27%3E%3Ccircle cx=%2752%27 cy=%2710%27 r=%275%27/%3E%3Ccircle cx=%2792%27 cy=%2779%27 r=%275%27/%3E%3Ccircle cx=%2712%27 cy=%27123%27 r=%275%27/%3E%3C/g%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}}
+:root[data-theme=dark]{--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}
+
+/* równanie reakcji w osobnej linii: ::: div.rownanie */
+.rownanie{margin:12px 0;padding:12px 16px;border-radius:var(--r-md);background:var(--surface-soft);border:1px solid var(--border);font:600 17px/1.6 Inter,system-ui,sans-serif;text-align:center;overflow-x:auto;white-space:nowrap}
+.rownanie small{display:block;font-size:12px;font-weight:500;color:var(--text-muted);white-space:normal}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+<header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">LKO-DOSW &quot;Katalog doświadczeń — schemat opisu, obserwacja vs wniosek, planowanie (LKO etapy I–II)&quot;</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<main class="page" id="main">
+<section class="hero card"><div class="hero-kicker">"LKO-DOSW · I–II etap"</div><h1>"Katalog doświadczeń — schemat opisu, obserwacja vs wniosek, planowanie (LKO etapy I–II)"</h1><p class="lead">"Dobre doświadczenie to pytanie, przebieg, obserwacje i wnioski, a obserwacja i wniosek to dwie różne rzeczy. Ta lekcja uczy schematu opisu i katalogów: gazy, osady, barwy, płomienie."</p><div class="tag-row"><span class="level-badge level-basic">E8</span><span class="level-badge level-understand">ROZUMIENIE</span><span class="level-badge level-extra">LKO I–II / OLIMP</span></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#minimum">Minimum E8</a><a class="toc-link" href="#jak-pracowac">0.1. Jak pracować z lekcją</a><a class="toc-link" href="#s1">Lustro i most</a><a class="toc-link" href="#wyklad-schemat">1. Wykład — Schemat opisu i język obserwacji</a><a class="toc-link" href="#wyklad-gazy">2. Wykład — Katalog gazów: otrzymywanie → zbieranie → wykrywanie</a><a class="toc-link" href="#wyklad-reakcje">3. Wykład — Katalog reakcji „w probówce": barwy i zjawiska</a><a class="toc-link" href="#wyklad-planowanie">4. Wykład — Planowanie: matryca i jedna różnica</a><a class="toc-link" href="#s2">5. Wykład — Analiza cudzego opisu: pięć typów błędów</a><a class="toc-link" href="#ciekawostki">Ciekawostki</a><a class="toc-link" href="#s3">KOMPENDIUM — karty szybkiego dostępu</a><a class="toc-link" href="#s4">ZADANIA (formy LKO)</a><a class="toc-link" href="#bledy">BŁĘDY TYPOWE (klinika)</a><a class="toc-link" href="#s5">Notatka dla prowadzącego: granice</a><a class="toc-link" href="#test">Test krótki</a><a class="toc-link" href="#fiszki">Fiszki</a><a class="toc-link" href="#slownik">Słownik</a></nav></details>
+<div class="card card-understand">
+<span class="card-label">Zasady tego zestawu — co jest autorskie</span>
+<p>Oznaczenie „podstawa” odnosi się w tym materiale do szkolnych podstaw chemii, a nie do osobnego egzaminu ósmoklasisty z chemii. Zadania i punktacja są autorskie, chyba że jednoznacznie wskazano autentyczny arkusz. Wymagania konkretnego konkursu lub olimpiady należy sprawdzić w jego aktualnym programie.
+Podane czasy, punktacja i progi interpretacji wyniku są zasadami tego autorskiego zestawu. Nie stanowią potwierdzenia zasad rzeczywistego konkursu. Informacje o terminach, wyposażeniu i zakresie etapów wymagają sprawdzenia w dokumentach organizatora.</p>
+</div>
+<section id="minimum" class="minimum-card"><h3>Muszę umieć — 10 punktów</h3>
+<ol>
+<li>Opisuję doświadczenie według 7 elementów: cel, odczynniki i przybory, schemat, przebieg, obserwacje, wnioski, równania i BHP.</li>
+<li>Oddzielam obserwację (zmysły, bez nazw) od wniosku (interpretacja z nazwami i „bo").</li>
+<li>Czynność („dodano", „podgrzewano") to przebieg, nie obserwacja.</li>
+<li>Znam test i obserwację dla O₂, CO₂, H₂, pary wodnej, NH₃, HCl i H₂S.</li>
+<li>Rozpoznaję osady po barwie: biały, niebieski Cu(OH)₂, rdzawy Fe(OH)₃, czarny PbS/CuS.</li>
+<li>Z barwy roztworu rozpoznaję kation: błękit Cu²⁺, zielonkawy Fe²⁺, brunatny Fe³⁺.</li>
+<li>Rozróżniam dym (stałe), mgiełkę (ciecz) i parę (gaz).</li>
+<li>Planuję rozróżnienie 2–3 substancji JEDNYM odczynnikiem (matryca).</li>
+<li>W porównaniu zmieniam TYLKO badany czynnik (jedna różnica) i nazywam kontrolę zmiennych.</li>
+<li>Znajduję i poprawiam 5 typowych błędów w cudzym opisie.</li>
+</ol>
+</section>
+<div class="layer-legend">
+<div class="layer-row"><span class="dot e8"></span><span><b>Podstawa:</b> obserwacja vs wniosek, katalog gazów, osadów i roztworów, schemat opisu.</span></div>
+<div class="layer-row"><span class="dot understand"></span><span><b>Rozumienie:</b> dlaczego test potwierdzający idzie PRZED wnioskiem i dlaczego jedna różnica decyduje o wyniku porównania.</span></div>
+<div class="layer-row"><span class="dot contest"></span><span><b>Konkurs:</b> matryca rozróżniania, analiza cudzego opisu, planowanie kolejności testów przy spalaniu.</span></div>
+<div class="layer-row"><span class="dot extra"></span><span><b>Ambitne:</b> chromatografia i analiza jakościowa kationów (LO/etap III, poza zakresem tej lekcji).</span></div>
+</div>
+<div class="core-path">
+<div class="cp-title">Rdzeń lekcji — najpierw to</div>
+<ul>
+<li><a href="#wyklad-schemat">§1</a> — schemat 7 elementów i reguły języka obserwacji.</li>
+<li><a href="#wyklad-gazy">§2</a> i <a href="#wyklad-reakcje">§3</a> — katalogi gazów, osadów, roztworów i płomieni.</li>
+<li><a href="#wyklad-planowanie">§4</a> — matryca i zasada jednej różnicy.</li>
+<li><a href="#zadania">ZADANIA</a> — formy LKO z kluczem przy każdym zadaniu.</li>
+</ul>
+</div>
+<section id="jak-pracowac">
+<div class="part-heading"><span class="part-num">0.1</span> Jak pracować z lekcją</div>
+<p>Przeczytaj §1 (schemat i reguły R1–R6), potem katalogi §2–§3 jako „karty 30-sekundowe" — najpierw pokryj tabelę i sprawdź, co pamiętasz. Zadania rób dopiero po §4. Rozwiązując, zapisuj każdą odpowiedź w schemacie 7 elementów.</p>
+<hr class="lk-hr"/>
+</section>
+<section id="s1">
+<div class="part-heading">Lustro i most</div>
+<div class="table-wrap"><table>
+<thead><tr><th></th><th></th></tr></thead>
+<tbody>
+<tr><td><strong>Było (F01, F03, F16, kl. 7)</strong></td><td>obserwacja vs wniosek, objawy reakcji, rozdzielanie mieszanin, pierwsze doświadczenia z gazami</td></tr>
+<tr><td><strong>Teraz</strong></td><td>jeden schemat opisu dla KAŻDEGO doświadczenia; karty obserwacyjne (gazy/osady/płomienie) jak tabliczka mnożenia; projektowanie: rozróżnianie jednym odczynnikiem, porównania z kontrolą zmiennych; znajdowanie błędów w cudzych opisach</td></tr>
+<tr><td><strong>Będzie (LO)</strong></td><td>analiza jakościowa kationów i anionów pełna (J11), miareczkowanie (J12), projektowanie syntez z weryfikacją (F19 dossier)</td></tr>
+<tr><td><strong>Olimpijsko</strong></td><td>doświadczenie = pytanie + kontrola + pomiar; „jedna różnica" jest proto-metodą naukową; arkusze LKO punktują opisy rubrykami — uczeń, który zna schemat, zbiera punkty mechanicznie</td></tr>
+</tbody></table></div>
+<p><strong>Cel ucznia.</strong> Po tym suplemencie uczeń: (1) opisuje dowolne doświadczenie według 7-elementowego schematu i wie, za co przyznaje się punkty; (2) konsekwentnie rozdziela obserwacje (zmysły) od wniosków (interpretacji) — także w zdaniach złożonych; (3) z pamięci podaje odczynnik i obserwację dla wykrywania: O₂, CO₂, H₂, pary wodnej, NH₃, HCl, H₂S; (4) rozpoznaje osady i roztwory po barwach; (5) planuje doświadczenie rozróżniające 2–3 substancje JEDNYM odczynnikiem (matryca) oraz doświadczenie porównawcze z kontrolą zmiennych; (6) znajduje i poprawia typowe błędy w cudzym opisie.</p>
+<hr class="lk-hr"/>
+</section>
+<section id="wyklad-schemat">
+<div class="part-heading"><span class="part-num">1</span> Wykład — Schemat opisu i język obserwacji</div>
+<h3>1.1 Siedem elementów (to jest rubryka punktowania arkusza)</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>#</th><th>Element</th><th>Co zawiera</th><th>Jak mierzy się na LKO</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><strong>Cel</strong></td><td>pytanie: „co chcę sprawdzić/wykryć"</td><td>jedno zdanie; jego brak = utracony punkt w zadaniach „zaplanuj"</td></tr>
+<tr><td>2</td><td><strong>Odczynniki i przybory</strong></td><td>substancje (z określeniem: rozcieńczony/stężony) + sprzęt</td><td>wyliczenie; odczynnik „nieznany" bez nazwy = 0</td></tr>
+<tr><td>3</td><td><strong>Schemat zestawu</strong></td><td>rysunek/opis aparatury</td><td>patrz 1.4</td></tr>
+<tr><td>4</td><td><strong>Przebieg</strong></td><td>czynności PO KOLEI + warunki (ogrzewanie (t), katalizator, ilości „niewielka")</td><td>kolejność logiczna; warunki wprost</td></tr>
+<tr><td>5</td><td><strong>Obserwacje</strong></td><td>to, co zmysły lub bezpośredni pomiar (wskazanie termometru, pH-metru, wagi)</td><td>reguły 1.2</td></tr>
+<tr><td>6</td><td><strong>Wnioski</strong></td><td>interpretacja = odpowiedź na cel</td><td>odwołanie do obserwacji</td></tr>
+<tr><td>7</td><td><strong>Równania + BHP</strong></td><td>równania ze strzałkami i warunkami; zagrożenia</td><td>↓, ↑, (t), katalizator — to jest punktowane</td></tr>
+</tbody></table></div>
+<p><strong>Zasada pracy na arkuszu:</strong> zadanie mówi „opisz doświadczenie, które…" → uczeń przechodzi elementami 1→7 jak checklistą. Zadanie podaje „analizę opisu" → szuka błędów względem tej samej checklisty.</p>
+<h3>1.2 Reguły języka obserwacji (serce umiejętności wspólnej)</h3>
+<p><strong>R1. Obserwacja = rejestry zmysłów, bez nazw produktów.</strong> Wzór: „wydziela się bezbarwny gaz", „powstaje biały osad", „roztwór zmienia barwę na niebieską", „ścianka probówki się nagrzewa", „płomień o barwie…". Nazwa produktu w obserwacji to ZASIĘGNIĘCIE wniosku.</p>
+<p><strong>R2. Wniosek = interpretacja z nazwami.</strong> Wzór: „gaz jest dwutlenkiem węgla, bo woda wapienna zmętniała", „roztwór ma odczyn zasadowy, bo fenoloftaleina zabarwiła się na malinowo". Obserwacja jest dowodem, wniosek — zdaniem z „bo".</p>
+<p><strong>R3. Czynność ≠ obserwacja.</strong> „Dodano roztworu NaOH", „podgrzewano" — to przebieg (element 4). Błąd: wstawianie czynności do rubryki obserwacji.</p>
+<p><strong>R4. „Brak zmian" też jest obserwacją</strong> — i często kluczową (patrz 3.1 i matryca 4.1). Zapis: „nie zaobserwowano zmian". Nie dowodzi to jednak bezwzględnej niemożliwości procesu — tylko tego, że w czasie próby nie było widocznej reakcji.</p>
+<p><strong>R5. Wskaźniki: barwa = obserwacja, odczyn = wniosek.</strong> Malinowa fenoloftaleina → zasadowość; czerwony lakmus → kwasowość. Nigdy odwrotnie w zapisie.</p>
+<p><strong>R6. Konkretnie, nie ogólnie.</strong> „Zachodziła reakcja" nie jest obserwacją. Obserwacje to: bąbelki, osad o barwie X, zniknięcie stałej substancji, ciepło, barwa płomienia, zapach (machnięcie dłoni!).</p>
+<p><strong>Zdanie-pułapka (klasyk zadań zamkniętych):</strong> <em>„Do próbki dodano kwasu solnego i zaobserwowano wydzielanie dwutlenku węgla."</em> — To zdanie MIESZA wszystko: czynność (dodano) + wniosek ubrany w obserwację („wydzielanie CO₂" — CO₂ rozpoznaliśmy dopiero testem). Poprawnie: obserwacja: „burzenie, wydzielanie bezbarwnego gazu"; wniosek: „gaz to CO₂, bo woda wapienna mętnieje".</p>
+<h3>1.3 Słownik precyzji: dym · mgiełka · para · osad</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Słowo</th><th>Co widzimy</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td><strong>osad</strong></td><td>drobiny stałe opadające/pozostające w cieczy</td><td>CaCO₃, AgCl, Cu(OH)₂</td></tr>
+<tr><td><strong>dym</strong></td><td>drobiny STAŁE w powietrzu</td><td>białe dymy = NH₄Cl (NH₃ + HCl)</td></tr>
+<tr><td><strong>mgiełka</strong></td><td>kropelki CIECZY w powietrzu</td><td>HCl w wilgotnym powietrzu (kwas solny)</td></tr>
+<tr><td><strong>para</strong></td><td>gaz, który może skondensować</td><td>para wodna (wykrywa ją CuSO₄)</td></tr>
+</tbody></table></div>
+<p>Rozstrzyga <strong>stan skupienia drobin</strong> — pułapka słowna wraca na każdym etapie.</p>
+<h3>1.4 Schemat zestawu — minimalizm punktowany</h3>
+<p>Ocenia się, czy zestaw da się odtworzyć z rysunku, nie jego urodę. Minimum:
+1. naczynia z podpisami (probówka, zlewka — podpis POD obiektem);
+2. korek i rurka doprowadzająca gaz (linia ze STRZAŁKĄ kierunku przepływu);
+3. poziomy cieczy (krótkie odcinki wewnątrz naczynia);
+4. źródło ciepła: płomień = kilka kresek + podpis „ogrzewanie";
+5. miejsce reakcji zaznaczone (np. strzałka „bąbelki").</p>
+<p>Rada: odręczny schemat 5 linii z podpisami daje pełny punkt; obraz bez podpisów — zero.</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie — opis w 7 krokach i jedna zasada</span>
+<p>Każde doświadczenie opisujesz tym samym szablonem. Obserwacja mówi, CO WIDZISZ (zmysły, bez nazw). Wniosek mówi, CO Z TEGO WYNIKA („…, bo …", z nazwami). Czynność to przebieg, nie obserwacja.</p>
+</div>
+<hr class="lk-hr"/>
+<div class="card card-understand">
+<span class="card-label">Obserwacja, pomiar i próba odniesienia</span>
+<p>Obserwacja lub wynik pomiaru to informacja uzyskana bezpośrednio: barwa, osad, wydzielanie gazu, wskazanie termometru, pH-metru lub wagi. Wniosek wyjaśnia znaczenie tych danych.
+Nazwy znanych odczynników można stosować w opisie. Nie należy natomiast nazywać nieznanego produktu tak, jakby jego tożsamość była bezpośrednio widoczna.
+Jeśli wykrywasz wodę w produktach spalania, sprawdź także wpływ wilgotnego powietrza i wilgoci w aparaturze. Samo zabarwienie bezwodnego CuSO₄ nie wskazuje jeszcze, skąd pochodziła woda.
+W doświadczeniu o szybkości reakcji porównuj np. objętość gazu zebranego w takim samym czasie albo czas zebrania ustalonej objętości. „Więcej bąbelków” jest obserwacją orientacyjną, nie zawsze porównywalnym pomiarem.</p>
+</div>
+</section>
+<section id="wyklad-gazy">
+<div class="part-heading"><span class="part-num">2</span> Wykład — Katalog gazów: otrzymywanie → zbieranie → wykrywanie</div>
+<p>Tabela zbiorcza (tag <strong>[II]</strong> = etap II LKO; bez tagu = etap I):</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Gaz</th><th>Otrzymywanie (równanie)</th><th>Wykrywanie (odczynnik → obserwacja → wniosek)</th><th>Zbieranie</th></tr></thead>
+<tbody>
+<tr><td><strong>O₂</strong></td><td>2H₂O₂ →(MnO₂) 2H₂O + O₂↑ (katalizator!)</td><td>tlące się łuczywo → <strong>rozżarza się/płonie</strong> → O₂</td><td>nad wodą albo dnem do dołu (M=32, lekko cięższy)</td></tr>
+<tr><td><strong>CO₂</strong></td><td>CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂↑</td><td>1) woda wapienna → <strong>mętnienie</strong> (CaCO₃↓) · 2) tlące się łuczywo → <strong>gaśnie</strong> (i nie podtrzymuje spalania)</td><td>dnem do dołu (cięższy)</td></tr>
+<tr><td><strong>H₂</strong></td><td>Zn + 2HCl → ZnCl₂ + H₂↑</td><td><strong>próba czystości</strong>: zapłon → ciche „pi" (czysty) / głośny trzask (z powietrzem)</td><td><strong>nad wodą</strong> (nierozpuszczalny; bezpiecznie)</td></tr>
+<tr><td><strong>para wodna</strong></td><td>(produkt reakcji)</td><td><strong>bezwodny CuSO₄ (biały) → błękitnieje</strong></td><td>—</td></tr>
+<tr><td><strong>NH₃ [II]</strong></td><td>2NH₄Cl + Ca(OH)₂ →(t) CaCl₂ + 2NH₃↑ + 2H₂O</td><td><strong>mokry czerwony lakmus → sinieje</strong>; zapach ostry (machnięcie dłoni)</td><td>dnem do GÓRY (lżejszy); NIE nad wodą</td></tr>
+<tr><td><strong>HCl [II]</strong></td><td>NaCl(s) + H₂SO₄(stęż.) →(t) NaHSO₄ + HCl↑</td><td><strong>mokry niebieski lakmus → czerwienieje</strong>; mgiełka w wilgotnym powietrzu; dymy z NH₃</td><td>dnem do dołu (cięższy); NIE nad wodą</td></tr>
+<tr><td><strong>H₂S [II]</strong></td><td>FeS + 2HCl → FeCl₂ + H₂S↑</td><td><strong>papier ołowiowy → czernieje</strong> (PbS)</td><td>dnem do dołu (albo nad wodą)</td></tr>
+</tbody></table></div>
+<p><strong>Karty 30-sekundowe (do opanowania jak tabliczka):</strong></p>
+<ul>
+<li><strong>O₂:</strong> H₂O₂ + MnO₂ · łuczywo rozżarza · nad wodą. Bonus: to samo doświadczenie w dwóch próbach (z MnO₂ i bez) = <strong>demonstracja katalizatora</strong> (pkt III: katalizator przyspiesza, nie zmienia produktów).</li>
+<li><strong>CO₂:</strong> marmur + HCl · woda wapienna mętnieje · dnem do dołu. Bonus: gaszenie dwóch świec na różnych wysokościach = dowód, że CO₂ jest <strong>cięższy</strong> i nie podtrzymuje spalania.</li>
+<li><strong>H₂:</strong> Zn + HCl · próba czystości PRZED wszystkim · nad wodą.</li>
+<li><strong>Woda:</strong> CuSO₄ biały → błękit. Uniwersalny test produktu spalania.</li>
+<li><strong>NH₃/HCl/H₂S:</strong> pary z tabeli; pary testów: lakmus czerwony (sinieje/czerwienieje) + papier ołowiowy (czerń).</li>
+</ul>
+<p><strong>⚠ BHP katalogowe:</strong> gaz nieznany — wąchanie TYLKO machnięciem dłoni · H₂ zawsze próba czystości · H₂S — test papierowy zamiast nosa (toksyczny) · ogrzewanie probówki: wylotem od siebie, najpierw całość · kwas rozcieńczasz: KWAS do WODY.</p>
+<hr class="lk-hr"/>
+</section>
+<section id="wyklad-reakcje">
+<div class="part-heading"><span class="part-num">3</span> Wykład — Katalog reakcji „w probówce": barwy i zjawiska</div>
+<h3>3.1 Osady — tabela barw (najdroższa tabela konkursu)</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Barwa osadu</th><th>Substancje</th><th>Skąd się bierze (równanie skrócone)</th></tr></thead>
+<tbody>
+<tr><td><strong>biały</strong></td><td>AgCl · BaSO₄ · CaCO₃ · PbSO₄</td><td>Ag⁺+Cl⁻ · Ba²⁺+SO₄²⁻ · Ca²⁺+CO₃²⁻</td></tr>
+<tr><td><strong>niebieski</strong></td><td>Cu(OH)₂</td><td>Cu²⁺+2OH⁻</td></tr>
+<tr><td><strong>rdzawobrunatny</strong></td><td>Fe(OH)₃</td><td>Fe³⁺+3OH⁻</td></tr>
+<tr><td><strong>szarozielonkawy</strong></td><td>Fe(OH)₂</td><td>Fe²⁺+2OH⁻</td></tr>
+<tr><td><strong>czarny</strong></td><td>PbS · CuS · (CuO — stały, nie osad z roztworu)</td><td>S²⁻+Pb²⁺ / S²⁻+Cu²⁺</td></tr>
+<tr><td><strong>żółty</strong></td><td>S (siarka)</td><td>spalanie H₂S przy ograniczonym dostępie O₂</td></tr>
+</tbody></table></div>
+<p><strong>Uwaga o rozróżnieniu bieli:</strong> AgCl, BaSO₄, CaCO₃ — wszystkie białe! Rozróżnia ich POCZĄTEK: AgCl z roztworu chlorku (test Cl⁻), BaSO₄ z siarczanu, CaCO₃ z węglanu — a po fakcie: dodaj kwasu. BaSO₄ nie rozpuszcza się (odporny), CaCO₃ burzy (CO₂), AgCl — brak wyraźnej reakcji z rozcieńczonym HNO₃ (stąd test z zakwaszaniem).</p>
+<h3>3.2 Barwy roztworów</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Barwa roztworu</th><th>Jon</th><th>Uwaga</th></tr></thead>
+<tbody>
+<tr><td><strong>błękitna</strong></td><td>Cu²⁺</td><td>rozcieńczona — błękitna, stężona zielonkawa (Cl⁻!)</td></tr>
+<tr><td><strong>bladozielonkawa</strong></td><td>Fe²⁺</td><td>świeży roztwór</td></tr>
+<tr><td><strong>żółtawobrunatna</strong></td><td>Fe³⁺</td><td>utlenione żelazo</td></tr>
+</tbody></table></div>
+<p>Barwa roztworu to ZA DARMO identyfikacja kationu — połowa zadań detektywistycznych staje przed tym: „roztwór błękitny → szukaj Cu²⁺".</p>
+<h3>3.3 Płomienie</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Substancja</th><th>Barwa płomienia</th><th>Zapis obserwacji</th></tr></thead>
+<tbody>
+<tr><td>H₂</td><td><strong>prawie niewidoczny</strong>, niebieskawy</td><td>„delikatna, ledwie widoczna poświata; krople wody na ściankach"</td></tr>
+<tr><td>Mg</td><td><strong>oślepiająco biały</strong></td><td>„jasny, biały płomień; biały proszek MgO"</td></tr>
+<tr><td>S</td><td>niebieski</td><td>„niebieski płomień, drażniący zapach"</td></tr>
+<tr><td>H₂S</td><td>niebieskawy</td><td>„+ żółty nalot S przy ograniczonym O₂"</td></tr>
+</tbody></table></div>
+<h3>3.4 Słownik zjawisk (po polsku i po konkursowemu)</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Zjawisko</th><th>Obserwacja poprawna</th><th>Wniosek dopuszczalny</th></tr></thead>
+<tbody>
+<tr><td>burzenie</td><td>„intensywne wydzielanie bezbarwnego gazu (bąbelki)"</td><td>„powstaje CO₂/H₂ — po teście"</td></tr>
+<tr><td>mętnienie</td><td>„ciecz staje się mętna"</td><td>„powstaje drobny osad CaCO₃"</td></tr>
+<tr><td>zobojętnienie</td><td>„wskaźnik zmienił barwę z … na …"</td><td>„zasada zobojętniła kwas; powstała sól i woda"</td></tr>
+<tr><td>wypieranie metalu</td><td>„na powierzchni metalu osiada nalot czerwono-brązowy; roztwór blednie"</td><td>„żelazo wyparło miedź (szereg)"</td></tr>
+<tr><td>rozpuszczanie osadu</td><td>„czarny proszek zniknął, roztwór stał się niebieski"</td><td>„CuO reaguje z kwasem, powstaje CuCl₂"</td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+</section>
+<section id="wyklad-planowanie">
+<div class="part-heading"><span class="part-num">4</span> Wykład — Planowanie: matryca i jedna różnica</div>
+<h3>4.1 Matryca rozróżniania — jeden odczynnik, kilka wyników</h3>
+<p>Zadanie konkursowe brzmi zwykle: „Zaproponuj JEDEN odczynnik pozwalający rozróżnić…". Metoda:</p>
+<ol>
+<li>Wypisz substancje do rozróżnienia.</li>
+<li>Dla kandydata-odczynnika przewidź wynik z KAŻDĄ.</li>
+<li>Szukaj odczynnika, którego wyniki są RÓŻNE dla wszystkich par.</li>
+</ol>
+<p><strong>Wzorzec 1 — woda / woda wapienna / kwas solny, odczynnik: Na₂CO₃:</strong></p>
+<div class="table-wrap"><table>
+<thead><tr><th>Próbka</th><th>Obserwacja</th><th>Wniosek</th></tr></thead>
+<tbody>
+<tr><td>woda destylowana</td><td>brak zmian</td><td>woda</td></tr>
+<tr><td>woda wapienna</td><td>biały osad (CaCO₃↓)</td><td>Ca(OH)₂</td></tr>
+<tr><td>kwas solny</td><td>burzenie (CO₂↑)</td><td>HCl</td></tr>
+</tbody></table></div>
+<p>Jeden odczynnik, trzy różne wyniki — pełne punkty.</p>
+<p><strong>Wzorzec 2 — HCl / NaOH, odczynnik: wskaźnik (lakmus albo fenoloftaleina):</strong> czerwienieje vs sinieje; bezbarwna vs malinowa. (Obserwacja barwy → wniosek o odczynie — reguła R5.)</p>
+<p><strong>Wzorzec 3 — CuO / Cu (proszki), odczynnik: HCl(roz.):</strong> czarny proszek znika, roztwór błękitnieje (Cu²⁺) → CuO; brak zmian → Cu (metal po H — szereg aktywności!). Dwóch odczynników przy okazji: barwa ROZTWORU identyfikuje kation.</p>
+<p><strong>Wzorzec 4 — CaCO₃ / Na₂CO₃ (dwa proszki), odczynnik: WODA:</strong> rozpuszcza się → Na₂CO₃; osiada na dnie → CaCO₃. Najtańszy odczynnik świata.</p>
+<h3>4.2 Złota zasada porównań: JEDNA RÓŻNICA</h3>
+<p>Doświadczenie porównawcze (np. wpływ rozdrobnienia/temperatury/stężenia na tempo reakcji) jest poprawne tylko wtedy, gdy próby różnią się <strong>wyłącznie</strong> badanym czynnikiem:</p>
+<ul>
+<li><strong>rozdrobnienie:</strong> dwie próby — pas magnezu vs proszek magnezu — to samo stężenie HCl, ta sama temperatura, te same masy; obserwacja: tempo wydzielania bąbelków.</li>
+<li><strong>temperatura:</strong> tableta w zimnej vs gorącej wodzie — to samo rozdrobnienie, te same ilości.</li>
+<li><strong>stężenie:</strong> HCl 5% vs 20% na tę samą ilość cynku — ta sama temperatura.</li>
+<li><strong>katalizator:</strong> H₂O₂ z MnO₂ vs bez — te same ilości nadtlenku.</li>
+</ul>
+<p>Zapis wniosków: „Próba z proszkiem burzy gwałtowniej, więc <strong>większe rozdrobnienie zwiększa szybkość reakcji</strong>" — odwołanie do obserwacji + wniosek o czynniku. Podanie w planie „kontrola zmiennych" („te same masy i stężenia") to element, który odróżnia pełne punkty od częściowych.</p>
+<h3>4.3 Doświadczenia „potwierdź skład"</h3>
+<p>Klasa zadań: „Wykaż eksperymentalnie, że produkt spalania świecy zawiera CO₂ i parę wodną". Procedura wzorcowa:
+1. nad świecę trzymasz zimny, suchy zlewka → <strong>mgiełka/krople</strong> na ściankach → test CuSO₄: <strong>błękitnieje</strong> → wniosek: para wodna;
+2. gaz ze spalania prowadzisz (lejkiem/poganiaczem) do wody wapiennej → <strong>mętnienie</strong> → wniosek: CO₂.
+W jednym szeregowym strumieniu kolejność jest punktowana: najpierw para (zlewka zimna), potem CO₂ (woda wapienna). Przy niezależnych próbach nie ma jednej obowiązkowej kolejności; ważne, żeby wykryta woda nie pochodziła z aparatury lub odczynnika.</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie — matryca w trzech krokach</span>
+<ol>
+<li>Wypisz substancje do rozróżnienia. 2. Dla każdego kandydata-odczynnika przewidź wynik z KAŻDĄ substancją. 3. Wybierz ten, którego wyniki są RÓŻNE dla wszystkich par — i tylko wtedy zapisz obserwacje.</li>
+</ol>
+</div>
+<hr class="lk-hr"/>
+</section>
+<section id="s2">
+<div class="part-heading"><span class="part-num">5</span> Wykład — Analiza cudzego opisu: pięć typów błędów</div>
+<p>Arkusze LKO kochają wkleić wadliwy opis i kazać go naprawić. Katalog błędów:</p>
+<ol>
+<li><strong>Wniosek w rubryce obserwacji</strong> — „zaobserwowano wydzielanie CO₂" (to wniosek; obserwacja: bezbarwny gaz/burzenie).</li>
+<li><strong>Brak warunku</strong> — równanie bez (t), bez katalizatora, bez „stężony/rozcieńczony".</li>
+<li><strong>Równanie z brakiem formalnym</strong> — brak ↓/↑, brak współczynnika (2HCl!), niezbilansowane.</li>
+<li><strong>Obserwacja niemożliwa/wymyślona</strong> — „rozpuszczony gaz zabarwił roztwór na fioletowo" tam, gdzie nic takiego nie ma prawa powstać; albo osad tam, gdzie produkt rozpuszczalny.</li>
+<li><strong>Kolejność logiczna naruszona</strong> — wniosek o gazie PRZED wykonaniem testu; albo próba czystości wykonana PO zapłonie (groteska i utrata punktów).</li>
+</ol>
+<p>Procedura naprawy: przepuść opis przez checklistę 1.1 (7 elementów) i reguły R1–R6; każdy znaleziony błąd POPRAW wprost (napisz wersję poprawną), nie tylko zakreśl.</p>
+<hr class="lk-hr"/>
+</section>
+<section id="ciekawostki">
+<div class="part-heading">Ciekawostki</div>
+<div class="card card-extra">
+<span class="card-label">Bezwodny siarczan(VI) miedzi(II) jako wskaźnik wody</span>
+<p>Bezwodny CuSO₄ jest biały, a po przyłączeniu wody tworzy błękitny uwodniony siarczan (CuSO₄·5H₂O). Przemiana jest odwracalna: po ogrzaniu wraca do białej postaci — dlatego często służy jako wskaźnik obecności wody.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Dlaczego MnO₂ nie zużywa się</span>
+<p>Dwutlenek manganu przyspiesza rozkład H₂O₂ na wodę i tlen, a sam pozostaje nietknięty. Po doświadczeniu można go odsączyć i użyć ponownie — dobry przykład działania katalizatora.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Papier ołowiowy w laboratorium</span>
+<p>Papierek nasączony octanem ołowiu(II) czernieje w obecności H₂S, bo powstaje czarny PbS. Test pozwala uniknąć celowego wdychania H₂S, ale nadal wymaga odpowiedniej procedury i wyciągu; nie znosi toksyczności H₂S ani zagrożeń związanych z odczynnikami ołowiu — stąd zasada „wykrywaj H₂S papierem, nie nosem".</p>
+</div>
+</section>
+<section id="s3">
+<div class="part-heading">KOMPENDIUM — karty szybkiego dostępu</div>
+<p><strong>Schemat opisu (7):</strong> cel · odczynniki+przybory · schemat · przebieg · obserwacje · wnioski · równania+BHP.</p>
+<p><strong>Reguły języka:</strong> obserwacja = zmysły bez nazw produktów · wniosek = „…, bo …" z nazwami · czynność ≠ obserwacja · „brak zmian" to obserwacja · dym=stałe, mgiełka=ciecz, para=gaz do kondensacji.</p>
+<p><strong>Gazy:</strong> O₂: H₂O₂/MnO₂ → łuczywo rozżarza · CO₂: marmur+HCl → woda wapienna mętnieje · H₂: Zn+HCl → próba czystości, nad wodą · woda: CuSO₄ błękitnieje · NH₃: lakmus sinieje, dnem do góry · HCl: lakmus czerwienieje, dnem do dołu · H₂S: papier ołowiowy czernieje.</p>
+<p><strong>Osady:</strong> biały (AgCl, BaSO₄, CaCO₃) · niebieski Cu(OH)₂ · rdzawy Fe(OH)₃ · czarny PbS/CuS · żółty S.</p>
+<p><strong>Roztwory:</strong> błękit Cu²⁺ · zielonkawy Fe²⁺ · brunatny Fe³⁺.</p>
+<p><strong>Płomienie:</strong> H₂ ledwie widoczny · Mg oślepiająco biały · S niebieski.</p>
+<p><strong>Matryce:</strong> Na₂CO₃ → woda/wapienna/HCl = nic/osad/burzenie · wskaźnik → kwas/zasada · woda → CaCO₃/Na₂CO₃ = osad/roztwór · HCl → CuO/Cu = reakcja/nic.</p>
+<p><strong>Porównania:</strong> jedna różnica + kontrola zmiennych (masa, stężenie, temperatura stałe).</p>
+<p><strong>5 błędów cudzego opisu:</strong> wniosek jako obserwacja · brak warunku · brak ↓/↑/współczynnika · obserwacja niemożliwa · kolejność logiczna.</p>
+<hr class="lk-hr"/>
+</section>
+<section id="s4">
+<div class="part-heading">ZADANIA (formy LKO)</div>
+<p><em>Mapowanie: W1 → A1–A4, B1–B4, C1 · W2 → C2, C3, D1, D2, E1 · W3 → D1, E2, E3 · W4 → E4, E5, F1, F2, F3 · W5 → F4.</em></p>
+<div class="card card-exam">
+<span class="card-label">Zadania A — zamknięte (4 pkt)</span>
+<p><strong>A1.</strong> Które zdanie jest <strong>obserwacją</strong>?
+a) Wydzielał się dwutlenek węgla.  b) Powstał biały osad.  c) Zaszła reakcja chemiczna, bo burzyło.  d) Powstała sól i woda.</p>
+<p><strong>A2.</strong> Obserwacja potwierdzająca obecność CO₂:
+a) tlące się łuczywo rozżarza się  b) woda wapienna mętnieje  c) mokry czerwony lakmus sinieje  d) papier ołowiowy czernieje</p>
+<p><strong>A3.</strong> Osad rdzawobrunatny to:
+a) Cu(OH)₂  b) Fe(OH)₃  c) AgCl  d) PbS</p>
+<p><strong>A4.</strong> Który zestaw wymaga PRZED rozpoczęciem ogrzewania wykonania próby czystości?
+a) rozkład H₂O₂ z MnO₂  b) redukcja CuO strumieniem H₂  c) marmur + HCl  d) rozpuszczanie NaCl</p>
+</div>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p><strong>A1 — b</strong> (a, c, d to wnioski; c dodatkowo miesza czynność z wnioskiem) · 1 pkt
+<strong>A2 — b</strong> · 1 pkt
+<strong>A3 — b</strong> · 1 pkt
+<strong>A4 — b</strong> (strumień H₂ + ogrzewanie bez próby czystości = ryzyko wybuchu) · 1 pkt</p>
+</details>
+<div class="card card-exam">
+<span class="card-label">Zadania B — prawda–fałsz (6 pkt)</span>
+<p><strong>B1.</strong> „Roztwór ma odczyn kwasowy" jest obserwacją.
+<strong>B2.</strong> „Nie zaobserwowano zmian" jest obserwacją, która może wspierać wniosek o braku widocznej reakcji w czasie próby.
+<strong>B3.</strong> Białe dymy NH₃ + HCl to kropelki roztworu.
+<strong>B4.</strong> Fenoloftaleina w kwasie solnym zabarwia się na malinowo.
+<strong>B5.</strong> W doświadczeniu porównawczym próby powinny różnić się wyłącznie badanym czynnikiem.
+<strong>B6.</strong> Rysunek schematu zestawu musi być artystyczny, żeby uzyskać punkt.</p>
+</div>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p><strong>B1 — F</strong> (wniosek) · 1 pkt
+<strong>B2 — P</strong> · 1 pkt
+<strong>B3 — F</strong> (drobiny stałe — dym) · 1 pkt
+<strong>B4 — F</strong> (w kwasie fenoloftaleina pozostaje bezbarwna) · 1 pkt
+<strong>B5 — P</strong> · 1 pkt
+<strong>B6 — F</strong> (liczy się odtwarzalność i podpisy) · 1 pkt</p>
+</details>
+<div class="card card-exam">
+<span class="card-label">Zadania C — luki w opisie doświadczenia (5 pkt)</span>
+<p><strong>C1.</strong> Doświadczenie: wykrywanie wody w gazie nieznany.
+- przebieg: przepuszcza się gaz nad ____ bezwodnym;
+- obserwacja: substancja ____;
+- wniosek: w gazie znajduje się ____.</p>
+<p><strong>C2.</strong> Doświadczenie: otrzymywanie i wykrywanie CO₂.
+- przebieg: do marmuru dodaje się ____ (określ rodzaj!);
+- obserwacja: burzenie, ____;
+- wniosek: wydziela się CO₂, ponieważ ____.</p>
+<p><strong>C3.</strong> Doświadczenie: NH₃ [II].
+- przebieg: mieszaninę chlorku amonu z ____ (podaj nazwę) ogrzewa się; gaz zbiera się w zlewce dnem do ____;
+- obserwacja (test): mokry czerwony lakmus ____;
+- wniosek: gaz jest ____.</p>
+</div>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p><strong>C1</strong> — CuSO₄ · błękitnieje · pary wodnej · po 0,5 → 1,5 pkt
+<strong>C2</strong> — kwasu solnego (rozcieńczonego!) · mętnienie po wprowadzeniu do wody wapiennej · mętnienie = CaCO₃↓ z CO₂ · 1,5 pkt
+<strong>C3</strong> — wapnem gaszonym (Ca(OH)₂) · do GÓRY · sinieje · zasadowy (amoniak) · 2 pkt</p>
+</details>
+<div class="card card-exam">
+<span class="card-label">Zadania D — dobieranie (3,5 pkt)</span>
+<p><strong>D1.</strong> Połącz odczynnik z wykrywaniem (jedna para zbędna):
+1. woda wapienna · 2. bezwodny CuSO₄ · 3. papier ołowiowy · 4. tlące się łuczywo
+a) H₂S [II] · b) CO₂ · c) H₂O (para) · d) O₂ · e) NH₃</p>
+<p><strong>D2.</strong> Do rozróżnienia par wybierz z puli NAJLEPSZY odczynnik (pula: woda · HCl(roz.) · fenoloftaleina · CuSO₄ bezwodny):
+1. proszek CuO vs proszek Cu · 2. NaOH(aq) vs HCl(aq) · 3. CaCO₃(s) vs Na₂CO₃(s)</p>
+</div>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p><strong>D1</strong> — 1→b · 2→c · 3→a · 4→d (zbędne: e) · po 0,5 → 2 pkt
+<strong>D2</strong> — 1→HCl (roztwór błękitny vs brak zmian) · 2→fenoloftaleina (malina vs bezbarwna) · 3→woda (osad vs roztwór) · po 0,5 → 1,5 pkt</p>
+</details>
+<div class="card card-exam">
+<span class="card-label">Zadania E1–E3 — otwarte krótkie (7 pkt)</span>
+<p><strong>E1.</strong> Popraw błędne zdanie tak, aby rozdzielić obserwację i wniosek: <em>„Zaobserwowano, że powstała sól i woda, ponieważ roztwór niebieskiego lakmusu zmienił barwę na czerwoną."</em>
+<strong>E2.</strong> Zapisz obserwacje i wnioski dla reakcji gwóźdź żelazny + CuSO₄(aq) (obserwacje: dwie; wniosek: jeden, z nazwami).
+<strong>E3.</strong> Dlaczego do wykrywania H₂S używa się papieru ołowiowego, a nie węchu? Dwa powody.</p>
+</div>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p><strong>E1</strong> — obserwacja: „roztwór wskaźnika zmienił barwę na czerwoną"; wniosek: „roztwór ma odczyn kwasowy, bo wskaźnik czerwienieje"; zdanie „powstała sól i woda" to wniosek o produktach (wymaga równania), nie obserwacja · 2 pkt
+<strong>E2</strong> — obserwacje: nalot czerwono-brązowy na gwoździu; roztwór zmienia barwę z błękitnej na bladozielonkawą · wniosek: żelazo (aktywniejsze) wyparło miedź, powstaje FeSO₄ i Cu · 3 pkt (2 obserwacje + wniosek)
+<strong>E3</strong> — H₂S jest silnie toksyczny; zmysł węchu adaptuje się (przestaje wyczuwać) — test papierowy jest obiektywny; nie oznacza to braku zagrożenia — wymaga procedury i wyciągu · 2 pkt</p>
+</details>
+<div class="card card-exam">
+<span class="card-label">Zadania E4–E5 — planowanie i kontrola zmiennych (4 pkt)</span>
+<p><strong>E4.</strong> Zaproponuj JEDEN odczynnik rozróżniający wodę destylowaną i rozcieńczony kwas siarkowy(VI); podaj obserwacje i wnioski.
+<strong>E5.</strong> W doświadczeniu porównawczym (wpływ temperatury) uczeń użył w zimnej próbie 5 g tablety, a w gorącej — 5 g proszku. Nazwij błąd projektowania i popraw plan.</p>
+</div>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p><strong>E4</strong> — np. Na₂CO₃: z H₂SO₄ burzenie (CO₂↑), z wodą — brak widocznej reakcji; albo wskaźnik/lakmus: czerwienieje vs bez zmian · odczynnik + obserwacje + wniosek · 2 pkt
+<strong>E5</strong> — błąd: DWIE różnice naraz (rozdrobnienie i temperatura w jednej próbie) → brak kontroli zmiennych; poprawka: obie próby tabletami LUB oba proszki, różnica tylko temperatura · 2 pkt</p>
+</details>
+<div class="card card-exam">
+<span class="card-label">Zadanie F1 (4 pkt) — wykrywanie CO₂ i pary wodnej w produktach spalania</span>
+<p><strong>F1.</strong> Zaplanuj doświadczenie pozwalające wykryć CO₂ ORAZ parę wodną w produktach spalania świecy. Podaj: cel, odczynniki, przebieg (z KOLEJNOŚCIĄ testów i jej uzasadnieniem), obserwacje, wnioski, równanie spalania węglowodoru-typu (dla parafiny wystarczy schemat węglowodór + O₂ → CO₂ + H₂O).</p>
+</div>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p><strong>F1</strong> — rubryka: cel (0,5) · odczynniki (zlewka zimna, CuSO₄ bezwodny, woda wapienna) (0,5) · przebieg z kolejnością: najpierw zlewka z CuSO₄ (para), potem woda wapienna. Uzasadnienie: gaz przepuszczony przez wodny roztwór (wapienną) wnosi wodę, więc test pary trzeba wykonać PRZED nim (1,5) · obserwacje: krople/mgiełka + błękit CuSO₄; mętnienie (1) · wnioski: H₂O i CO₂ obecne (0,5) · razem 4 pkt</p>
+</details>
+<details class="adv"><summary>Zadanie F2 (3 pkt) — trzy ciecze jednym krokiem <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p><strong>F2.</strong> Masz trzy nieopisane ciecze: wodę destylowaną, wodorotlenek sodu(aq), kwas solny(roz.). Zaproponuj odczynnik rozróżniający wszystkie trzy w JEDNYM kroku (matryca 4.1 — tabela z obserwacjami i wnioskami); zapisz równanie jonowe skrócone zobojętniania NaOH kwasem solnym (H⁺ + OH⁻ → H₂O).</p>
+</div></details>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p><strong>F2</strong> — odczynnik: <strong>lakmus</strong> — HCl czerwieni, NaOH sinieje, woda pozostaje fioletowa (obojętna): trzy różne wyniki (1,5 pkt); matryca z obserwacjami (1 pkt); równanie skrócone zobojętniania NaOH + HCl: H⁺ + OH⁻ → H₂O (0,5 pkt) · 3 pkt. <em>Uwaga dydaktyczna: Na₂CO₃ rozróżnia tylko wodę i kwas (nie NaOH), więc w tym zadaniu nie wystarcza; punktuje się też poprawne rozwiązanie dwustopniowe.</em></p>
+</details>
+<details class="adv"><summary>Zadanie F3 (3,5 pkt) — rozdrobnienie CaCO₃ a szybkość reakcji <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p><strong>F3.</strong> Zaplanuj doświadczenie wykazujące wpływ rozdrobnienia CaCO₃ na szybkość reakcji z HCl. Podaj: dwie próby (identyczne co do czego?), obserwacje porównawcze, wniosek. Zaznacz w planie kontrolę zmiennych.</p>
+</div></details>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p><strong>F3</strong> — dwie próby: ta sama masa (np. 2 g), to samo HCl (ta sama objętość i stężenie), ta sama temperatura; różnica: grudka vs proszek (1,5 pkt) · obserwacje: proszek burzy gwałtowniej (1 pkt) · wniosek: większa powierzchnia styku zwiększa szybkość (0,5 pkt) · kontrola zmiennych nazwana wprost (0,5 pkt) · razem 3,5 pkt</p>
+</details>
+<div class="card card-exam">
+<span class="card-label">Zadanie F4 (5 pkt) — błędy w cudzym opisie</span>
+<p><strong>F4.</strong> Poniższy opis zawiera 5 błędów. Wskaż i popraw każdy: <em>„Cel: otrzymanie wodoru. Przebieg: do marmuru dodano rozcieńczonego kwasu solnego; zaobserwowano wydzielanie wodoru; gaz zbierano w zlewce dnem do góry; równanie: CaCO₃ + HCl → CaCl₂ + H₂O + CO₂. Doświadczenie przeprowadzono bez rękawic, a koncentracja uczniów była pełna."</em></p>
+</div>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p><strong>F4</strong> — po 1 pkt za każdy błąd, z poprawną wersją:
+(1) cel „wodór" nie zgadza się z reakcją — marmur (CaCO₃) z kwasem solnym daje CO₂, nie H₂;
+(2) „zaobserwowano wydzielanie wodoru" to wniosek z nazwą przed testem — obserwacja: „wydziela się bezbarwny gaz (bąbelki)";
+(3) zbieranie dnem do góry — CO₂ jest cięższy od powietrza, zbiera się dnem do dołu;
+(4) równanie: brak współczynnika 2 przy HCl, brak ↑ przy CO₂;
+(5) BHP: brak rękawic i okularów (a jeśli miał być H₂ — brak próby czystości). Razem 5 pkt.</p>
+</details>
+<p><em>Maksimum pomocnicze: <strong>≈45 pkt</strong> w zadaniach A–F (poprzednia wersja podawała ≈35 — błąd sumowania; suma kart: A 4 + B 6 + C 5 + D 3,5 + E 11 + F 15,5).</em></p>
+<hr class="lk-hr"/>
+</section>
+<section id="bledy">
+<div class="part-heading">BŁĘDY TYPOWE (klinika)</div>
+<ol>
+<li><strong>Nazwa produktu w obserwacji</strong> → obserwacja opisuje zmysły („biały osad"), nazwę podaje wniosek/równanie. Każde „zaobserwowano CO₂" to strata punktu.</li>
+<li><strong>Czynność w rubryce obserwacji</strong> → „dodano", „podgrzewano" = przebieg. Rozdzielaj rubryki.</li>
+<li><strong>Pominięty test potwierdzający</strong> → „wydziela się gaz" bez testu to nie dowód rodzaju gazu; wniosek o CO₂/H₂/O₂ zawsze PO teście (wapienna/próba czystości/łuczywo).</li>
+<li><strong>„Dym" vs „mgiełka"</strong> → dym = stałe (NH₄Cl), mgiełka = ciecz (HCl w wilgotnym powietrzu). Stan skupienia drobin decyduje o słowie.</li>
+<li><strong>Wskaźnik odwrotnie</strong> → fenoloftaleina malinowa = ZASADA; bezbarwna w kwasie też jest obserwacją („nie zabarwiła się").</li>
+<li><strong>Schemat bez podpisów i strzałek</strong> → rysunek ma pozwalać odtworzyć zestaw: podpisy, kierunek przepływu, poziomy cieczy.</li>
+<li><strong>Porównanie z dwiema różnicami</strong> → jedna próba proszek+gorąco, druga grudka+zimno = wynik bez interpretacji. Jedna różnica + kontrola zmiennych.</li>
+<li><strong>Kolejność testów przy spalaniu</strong> → najpierw para wodna (zlewka zimna, CuSO₄), potem CO₂ (woda wapienna); kolejność jest częścią punktową (F1).</li>
+<li><strong>Brak warunków w równaniach</strong> → (t), katalizator nad strzałką, „stęż./rozcieńcz." — formalne elementy, o które arkusz pyt osobno.</li>
+<li><strong>BHP „dla pokoju"</strong> → BHP wpisane po fakcie nic nie daje; na konkursie rubryka BHP wymaga wskazania zagrożenia TEGO doświadczenia (H₂ wybuch, H₂S toksyczność, kwasy — rękawice/okulary, machnięcie dłoni).</li>
+</ol>
+<hr class="lk-hr"/>
+</section>
+<section id="s5">
+<div class="part-heading">Notatka dla prowadzącego: granice</div>
+<p>Świadomie poza suplementem: analiza jakościowa pełna (kationy Ag⁺/Ba²⁺/Ca²⁺ w systemie, aniony PO₄³⁻ — etap III/LO, J11); miareczkowanie z biuretą (LO, J12 — na etapie III LKO nie wymienione aparaturowo); elektroliza ilościowa (LO, E04); chromatografia (jeśli pojawi się w arkuszu jako metoda rozdzielania barwników — wystarczy jedna linijka: „chromatografia: rozdzielanie składników wg różnej wędrówki po bibule"); pomiar objętości gazu (etap III, R06). Tabela D2/F2 ma celowy „pułapkowy" przykład (Na₂CO₃ nie rozróżnia trzech cieczy jednym krokiem) — użyj go do pokazania, że matryca sprawdza się PRZED wyborem odczynnika, nie po. Zadania F celowo są 4 (najdroższe czasowo); w zestawach B wracają co tydzień jeden.</p>
+</section>
+<section id="test">
+<div class="part-heading">Test krótki</div>
+<p>? Które zdanie jest obserwacją?
++ Powstał biały osad.
+- Zaszła reakcja, bo powstał osad.
+- Dodano roztworu NaOH.
+- Powstał Fe(OH)₃.</p>
+<p>? Woda wapienna mętnieje w obecności:
++ CO₂
+- O₂
+- H₂
+- NH₃</p>
+<p>? Osad rdzawobrunatny to:
++ Fe(OH)₃
+- Cu(OH)₂
+- AgCl
+- PbS</p>
+<p>? W doświadczeniu porównawczym (wpływ temperatury) poprawny plan to:
++ różni się tylko temperatura, reszta warunków identyczna
+- różnią się temperatura i rozdrobnienie
+- różnią się temperatura i stężenie
+- nie ma znaczenia, co się zmienia</p>
+<p>? Gaz NH₃ zbieramy:
++ dnem do góry
+- dnem do dołu
+- wyłącznie nad wodą
+- nie da się go zebrać</p>
+</section>
+<section id="fiszki">
+<div class="part-heading">Fiszki</div>
+<div id="flashcards" class="flashcard-grid"><button class="flashcard" type="button"><span class="front">Obserwacja vs wniosek</span><span class="back">obserwacja = to, co zmysły; wniosek = interpretacja z nazwami („…, bo …")</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Dym vs mgiełka vs para</span><span class="back">dym = drobiny stałe (NH₄Cl); mgiełka = kropelki cieczy (HCl w wilgotnym powietrzu); para = gaz zdolny do kondensacji</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Test na CO₂</span><span class="back">woda wapienna mętnieje (CaCO₃↓)</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Test na H₂</span><span class="back">próba czystości: ciche „pi" = czysty wodór, głośny trzask = z powietrzem</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Test na parę wodną</span><span class="back">bezwodny CuSO₄: biały → błękitnieje</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">NH₃ — wykrywanie i zbieranie</span><span class="back">mokry czerwony lakmus sinieje; zbiera się dnem do góry</span><span class="card-tag tag-understand">ROZUMIENIE</span></button><button class="flashcard" type="button"><span class="front">Osad rdzawobrunatny</span><span class="back">Fe(OH)₃</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Błękitny roztwór</span><span class="back">obecność Cu²⁺ (roztwór miedzi(II))</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Jedna różnica</span><span class="back">w doświadczeniu porównawczym próby różnią się wyłącznie badanym czynnikiem</span><span class="card-tag tag-understand">ROZUMIENIE</span></button><button class="flashcard" type="button"><span class="front">Dlaczego papier ołowiowy zamiast węchu</span><span class="back">H₂S jest toksyczny, węch się adaptuje; papier daje obiektywny wynik (czernieje — PbS)</span><span class="card-tag tag-exam">KONKURS</span></button></div>
+</section>
+<section id="slownik">
+<div class="part-heading">Słownik</div>
+<dl><div class="def-item"><dt>Obserwacja</dt><dd>informacja zebrana zmysłami, bez nazw produktów</dd></div><div class="def-item"><dt>Wniosek</dt><dd>interpretacja obserwacji z nazwami substancji, zwykle w zdaniu z „bo"</dd></div><div class="def-item"><dt>Odczynnik</dt><dd>substancja użyta do wykrycia innej substancji (np. woda wapienna, CuSO₄ bezwodny)</dd></div><div class="def-item"><dt>Próba czystości</dt><dd>test wodoru: próbka gazu zapala się przy probówce i daje ciche „pi" lub trzask</dd></div><div class="def-item"><dt>Matryca rozróżniania</dt><dd>tabela: substancje × wyniki jednego odczynnika, używana do wyboru odczynnika</dd></div><div class="def-item"><dt>Jedna różnica</dt><dd>zasada doświadczenia porównawczego: próby różnią się tylko badanym czynnikiem</dd></div><div class="def-item"><dt>Reduktor</dt><dd>substancja odbierająca tlen (lub oddająca elektrony) innej substancji, np. węgiel przy redukcji CuO</dd></div><div class="def-item"><dt>Katalizator</dt><dd>substancja przyspieszająca reakcję, sama nie zużywana (MnO₂ przy rozkładzie H₂O₂)</dd></div><div class="def-item"><dt>Osad</dt><dd>stała substancja wydzielona z roztworu lub powstała w reakcji (np. CaCO₃, Fe(OH)₃)</dd></div><div class="def-item"><dt>Mgiełka</dt><dd>drobne kropelki cieczy rozproszone w powietrzu</dd></div><div class="def-item"><dt>Dym</dt><dd>drobne cząstki stałe rozproszone w powietrzu (np. NH₄Cl)</dd></div><div class="def-item"><dt>Lakmus</dt><dd>wskaźnik: czerwieni w kwasie, sinieje w zasadzie</dd></div></dl>
+</section>
+<footer class="footer"><p>"<strong>LKO-DOSW szkic</strong> · Katalog doświadczeń · 2026"</p></footer>
+</main>
+<script>
+/* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
+   postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
+(function(){
+var html=document.documentElement;
+function ciemny(){var t=html.getAttribute('data-theme');return t?t==='dark':!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function oznacz(){if(ciemny())html.setAttribute('data-ciemny','');else html.removeAttribute('data-ciemny')}
+try{var z=localStorage.getItem('lekcja-motyw');if(z)html.setAttribute('data-theme',z)}catch(e){}
+oznacz();if(window.matchMedia)try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',oznacz)}catch(e){}
+
+function start(){
+var root=document;
+root.querySelectorAll('.flashcard').forEach(function(b){if(b.dataset.lkFz)return;b.dataset.lkFz=1;b.removeAttribute('onclick');b.setAttribute('aria-pressed','false');
+ b.addEventListener('click',function(){var on=b.classList.toggle('flipped');b.setAttribute('aria-pressed',on?'true':'false')})});
+root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibling,ok=0,n=0,all=w.querySelectorAll('.quiz-q').length;
+ if(sc&&sc.classList.contains('quiz-score'))sc.setAttribute('aria-live','polite');
+ w.querySelectorAll('.quiz-q').forEach(function(d){var good=+d.dataset.ok;d.querySelectorAll('.quiz-opt').forEach(function(b){b.onclick=function(){if(d.dataset.done)return;d.dataset.done=1;n++;if(+b.dataset.a===good)ok++;
+  d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
+  if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
+  if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var b=root.querySelector('#advToggle');
+if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
+ if(!k)b.style.display='none';
+ b.textContent='Pokaż treści akademickie ('+k+')';
+ b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';adv().forEach(function(d){d.open=on});b.setAttribute('aria-pressed',on?'true':'false');b.textContent=(on?'Ukryj':'Pokaż')+' treści akademickie ('+k+')'}}
+// spis zwinięty na telefonie
+var sp=root.querySelector('#spis');if(sp&&window.innerWidth<700)sp.removeAttribute('open');
+// przełącznik jasny/ciemny
+var tb=root.querySelector('#lkMotyw');
+if(tb)tb.onclick=function(){var t=ciemny()?'light':'dark';html.setAttribute('data-theme',t);try{localStorage.setItem('lekcja-motyw',t)}catch(e){}oznacz()};
+// postęp czytania + aktywna sekcja w spisie
+var bar=root.querySelector('.lk-prog'),links={},secs=[];
+root.querySelectorAll('.toc-link[href^="#"]').forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1));if(s){links[s.id]=a;secs.push(s)}});
+var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+ if(bar)bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';
+ var cur=null,lim=(parseInt(getComputedStyle(h).getPropertyValue('--header-h'))||52)+40;
+ for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
+ for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// fiszki: pokazuje pierwsze N (domyślnie 6, atrybut data-fz-pierwsze="N"), reszta po wyraźnym przycisku
+root.querySelectorAll('.flashcard-grid').forEach(function(g){
+ var cards=[].slice.call(g.querySelectorAll('.flashcard')),N=+(g.getAttribute('data-fz-pierwsze')||6);
+ if(!(N>0)||cards.length<=N)return;
+ var ukryte=cards.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more';
+ function lab(on){ukryte.forEach(function(c){c.hidden=!on});
+  b.textContent=on?'▲ Zwiń fiszki':'▼ Pokaż pozostałe '+ile+' fiszek (razem '+cards.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ g.insertAdjacentElement('afterend',b);
+});
+// testy: pokazuje pierwsze N pytań (domyślnie 5, atrybut data-q-pierwsze), reszta po wyraźnym przycisku
+root.querySelectorAll('.che-quiz').forEach(function(w){
+ var qs=[].slice.call(w.querySelectorAll('.quiz-q')),N=+(w.getAttribute('data-q-pierwsze')||5);
+ if(!(N>0)||qs.length<=N)return;
+ var ukryte=qs.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more q-more';
+ function lab(on){ukryte.forEach(function(q){q.hidden=!on});
+  b.textContent=on?'▲ Zwiń pytania':'▼ Pokaż pozostałe '+ile+(ile===1?' pytanie':(ile<5?' pytania':' pytań'))+' (razem '+qs.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ var sc=w.nextElementSibling;(sc&&sc.classList.contains('quiz-score')?sc:w).insertAdjacentElement('afterend',b);
+});
+// grafiki przedmiotu
+if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
+if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();
+
+</script>
+</body>
+</html>

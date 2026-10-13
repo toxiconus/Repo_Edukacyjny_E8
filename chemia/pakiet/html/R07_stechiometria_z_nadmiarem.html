@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="pl" data-przedmiot="che">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>R07 · Obliczenia z równań — substraty w stosunku niestechiometrycznym (bez mola)</title>
+<style id="lekcja-css">
+/* baza.css — wspólna baza lekcji wszystkich przedmiotów (styl lekcji silnika CHE v0_57). Nie edytować — zmiany wspólne w ulepszenia.css, przedmiotowe w motywy/<kod>.css. */
+
+
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+--bg:#fafbfc;--surface:#ffffff;--surface-soft:#f6f8fa;--surface-warm:#fdfaf4;--border:#e5e9ee;--border-strong:#cdd5dd;
+--text:#1a2332;--text-soft:#4a5568;--text-muted:#8892a0;--text-faint:#b4bcc6;
+--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,0.15);
+--c-basic:#2e7d4f;--c-basic-bg:#eaf6ee;--c-basic-line:#b8dcc4;
+--c-understand:#2b5e9c;--c-understand-bg:#eaf1f9;--c-understand-line:#bcd0e5;
+--c-warn:#b06f1c;--c-warn-bg:#fcf4e6;--c-warn-line:#eed8a8;
+--c-error:#b83a45;--c-error-bg:#fbeced;--c-error-line:#e8b5b9;
+--c-extra:#6b3fa0;--c-extra-bg:#f3ecfa;--c-extra-line:#d3bde8;
+--c-new:#0d7d7d;--c-new-bg:#e6f4f4;--c-new-line:#b0dcdc;
+--c-exam:#a86a00;--c-exam-bg:#fdf5e0;--c-exam-line:#eed49c;
+--sh-sm:0 1px 2px rgba(26,35,50,0.04);--sh-md:0 4px 12px rgba(26,35,50,0.06);--sh-lg:0 12px 32px rgba(26,35,50,0.10);--sh-xl:0 20px 48px rgba(26,35,50,0.14);
+--r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;
+--header-h:56px;
+--ease:cubic-bezier(0.4,0,0.2,1);--ease-out:cubic-bezier(0.16,1,0.3,1);
+--hl-key:#0d6868;--hl-key-bg:#d8ecea;--hl-warn:#b83a45;--hl-warn-bg:#fbe0e2;--hl-new:#6b3fa0;--hl-new-bg:#ede0f8;--hl-formula:#084848;--hl-formula-bg:#e0eeed;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;padding:calc(var(--header-h) + 12px) 0 88px;min-height:100vh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+@media(min-width:600px){body{padding:calc(var(--header-h) + 18px) 12px 96px;}}
+@media(min-width:768px){body{padding:calc(var(--header-h) + 24px) 20px 100px;}}
+@media(min-width:1100px){body{padding:calc(var(--header-h) + 28px) 32px 110px;}}
+.fab{position:fixed;top:12px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);background:rgba(255,255,255,0.94);color:var(--text);cursor:pointer;border-radius:var(--r-md);padding:0;transition:all 0.2s var(--ease);z-index:1200;box-shadow:var(--sh-sm);backdrop-filter:blur(8px);}
+.fab:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);box-shadow:var(--sh-md);transform:translateY(-1px);}
+.fab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.fab-left{left:6px;}.fab-right{right:6px;}
+@media(min-width:600px){.fab-left{left:10px;}.fab-right{right:10px;}}
+@media(min-width:768px){.fab-left{left:14px;}.fab-right{right:14px;}}
+.fab-left::after{content:'';width:16px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;border-radius:1px;transition:transform 0.25s var(--ease);}
+.fab-left.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.fab-left.is-open::after{width:16px;height:2px;background:currentColor;box-shadow:none;transform:rotate(45deg);}
+.fab-left.is-open::before{content:'';position:absolute;width:16px;height:2px;background:currentColor;transform:rotate(-45deg);border-radius:1px;}
+.fab-right::after{content:'';display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:8px solid currentColor;transition:transform 0.35s var(--ease-out);}
+.fab-right.is-hidden::after{transform:rotate(0deg);}
+.fab-right:not(.is-hidden)::after{transform:rotate(180deg);}
+.header-wrapper{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);transform:translateY(0);transition:transform 0.45s var(--ease-out),box-shadow 0.3s var(--ease);box-shadow:var(--sh-sm);}
+.header-wrapper.is-hidden{transform:translateY(-100%);box-shadow:none;}
+.header-bar{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:0 16px;height:var(--header-h);}
+@media(min-width:768px){.header-bar{padding:0 24px;}}
+.header-subject{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:1px;padding:4px 10px;background:var(--accent-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;}
+.header-title{font-size:15px;font-weight:700;color:var(--text);letter-spacing:-0.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1 1 auto;min-width:0;}
+.header-lesson{font-size:10px;font-weight:800;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.7px;padding:4px 9px;background:var(--surface-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;font-family:'JetBrains Mono',monospace;}
+.header-nav{display:flex;gap:2px;flex-shrink:0;align-items:center;}
+.header-nav a,.header-nav button{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;border-radius:var(--r-sm);font-size:16px;font-weight:500;transition:all 0.2s var(--ease);border:1px solid transparent;background:transparent;cursor:pointer;padding:0;font-family:inherit;}
+.header-nav a:hover,.header-nav button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.header-resume-btn.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.header-resume-btn::before{content:'▮';font-size:14px;line-height:1;}
+.header-panel{display:none;border-top:1px solid var(--border);background:linear-gradient(180deg,var(--surface) 0%,var(--surface-soft) 100%);padding:20px 16px 24px;}
+@media(min-width:768px){.header-panel{padding:24px 24px 28px;}}
+.header-panel.is-open{display:block;}
+.header-panel-inner{max-width:900px;margin:0 auto;}
+.header-kicker{font-size:11px;color:var(--text-muted);text-transform:uppercase;font-weight:800;letter-spacing:1px;margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.header-kicker::before{content:'';width:24px;height:2px;background:var(--accent);display:inline-block;border-radius:1px;}
+.header-h1{font-size:32px;font-weight:800;color:var(--text);letter-spacing:-1px;margin-bottom:10px;line-height:1.1;}
+.header-subtitle{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:18px;max-width:720px;}
+.header-modes{display:flex;gap:6px;flex-wrap:wrap;}
+.mode-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 15px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);font-family:inherit;}
+.mode-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
+.mode-btn:hover:not(.active){background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.resume-dropdown{display:none;position:fixed;top:calc(var(--header-h) + 6px);right:14px;z-index:1050;width:min(300px,calc(100vw - 30px));padding:14px;border:1px solid var(--border-strong);border-radius:12px;background:#fff;box-shadow:var(--sh-lg);}
+.resume-dropdown.is-open{display:block;}
+.resume-dropdown h4{margin:0 0 5px;color:var(--text);font-size:.85rem;}
+.resume-dropdown p{margin:0 0 12px;color:var(--text-muted);font-size:.75rem;line-height:1.5;}
+.resume-actions{display:flex;gap:6px;}
+.resume-actions button{flex:1;padding:8px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text-soft);font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.resume-actions .resume-save{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toc-overlay{position:fixed;inset:0;background:rgba(26,35,50,0.34);backdrop-filter:blur(3px);z-index:1100;opacity:0;visibility:hidden;transition:opacity 0.3s var(--ease),visibility 0.3s var(--ease);}
+.toc-overlay.is-visible{opacity:1;visibility:visible;}
+.toc-wrapper{position:fixed;left:0;top:0;width:320px;max-width:86vw;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:1150;transform:translateX(-100%);transition:transform 0.4s var(--ease-out);padding-top:64px;box-shadow:var(--sh-xl);}
+.toc-wrapper.is-open{transform:translateX(0);}
+.toc-content{padding:12px 14px 100px;}
+.toc-header{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);padding:4px 12px 12px;}
+.toc-item{margin-bottom:4px;border-radius:var(--r-md);overflow:hidden;}
+.toc-summary{padding:10px 12px;font-size:13px;font-weight:700;color:var(--text);cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;border-radius:var(--r-sm);transition:background 0.2s var(--ease),color 0.2s var(--ease);user-select:none;}
+.toc-summary:hover{background:var(--accent-soft);color:var(--accent);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::marker{content:'';}
+.toc-summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);opacity:0.5;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);opacity:1;}
+.toc-links{padding:4px 0 8px 28px;display:flex;flex-direction:column;gap:1px;}
+.toc-link{display:block;padding:6px 10px;font-size:12.5px;color:var(--text-soft);text-decoration:none;border-radius:4px;transition:all 0.2s var(--ease);border-left:2px solid transparent;}
+.toc-link:hover{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);}
+.container{max-width:820px;margin:0 auto;background:var(--surface);border-radius:0;box-shadow:none;padding:18px 12px;border:none;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+@media(min-width:600px){.container{border-radius:var(--r-lg);box-shadow:var(--sh-md);border:1px solid var(--border);padding:22px 18px;}}
+@media(min-width:768px){.container{padding:36px 36px;border-radius:var(--r-xl);}}
+@media(min-width:1100px){.container{max-width:840px;padding:40px 40px;}}
+h1,h2,h3,h4,h5{font-weight:800;color:var(--text);letter-spacing:-0.3px;line-height:1.3;}
+h2{font-size:24px;margin-top:44px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+h3{font-size:17px;margin-top:32px;margin-bottom:12px;font-weight:800;}
+h4{font-size:15px;margin-top:24px;margin-bottom:10px;font-weight:800;}
+h5{font-size:13px;margin-top:16px;margin-bottom:8px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-soft);}
+p{margin-bottom:12px;}
+ul,ol{padding-left:24px;margin-bottom:14px;}
+li{margin-bottom:6px;padding-left:4px;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s var(--ease);}
+a:hover{border-bottom-color:var(--accent);}
+strong{font-weight:700;color:var(--text);}
+.hl{background:var(--hl-key-bg);color:var(--hl-key);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-warn{background:var(--hl-warn-bg);color:var(--hl-warn);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-new{background:var(--hl-new-bg);color:var(--hl-new);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.formula{display:inline-block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:14px;font-weight:600;color:var(--hl-formula);background:var(--hl-formula-bg);padding:4px 12px;border-radius:var(--r-sm);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:3px 2px;white-space:nowrap;}
+.formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
+code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
+pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
+.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
+.mnemonic b{color:#78350f;}
+.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
+@media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
+.card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
+.card-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:10px;padding:3px 9px;background:var(--accent-soft);border-radius:4px;}
+.card-core{background:var(--accent-soft);border-color:var(--accent-line);border-left-color:var(--accent);}
+.card-basic{background:var(--c-basic-bg);border-color:var(--c-basic-line);border-left-color:var(--c-basic);}
+.card-basic .card-label{background:rgba(46,125,79,0.12);color:var(--c-basic);}
+.card-understand{background:var(--c-understand-bg);border-color:var(--c-understand-line);border-left-color:var(--c-understand);}
+.card-understand .card-label{background:rgba(43,94,156,0.12);color:var(--c-understand);}
+.card-warning{background:var(--c-warn-bg);border-color:var(--c-warn-line);border-left-color:var(--c-warn);}
+.card-warning .card-label{background:rgba(176,111,28,0.12);color:var(--c-warn);}
+.card-error{background:var(--c-error-bg);border-color:var(--c-error-line);border-left-color:var(--c-error);}
+.card-error .card-label{background:rgba(184,58,69,0.12);color:var(--c-error);}
+.card-extra{background:var(--c-extra-bg);border-color:var(--c-extra-line);border-left-color:var(--c-extra);}
+.card-extra .card-label{background:rgba(107,63,160,0.12);color:var(--c-extra);}
+.card-new{background:var(--c-new-bg);border-color:var(--c-new-line);border-left-color:var(--c-new);}
+.card-new .card-label{background:rgba(13,125,125,0.12);color:var(--c-new);}
+.card-exam{background:var(--c-exam-bg);border-color:var(--c-exam-line);border-left-color:var(--c-exam);}
+.card-exam .card-label{background:rgba(168,106,0,0.12);color:var(--c-exam);}
+.card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0;}
+details.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent-line);border-radius:var(--r-sm);padding:10px 14px;margin:10px 0;transition:all 0.2s var(--ease);}
+details.answer[open]{background:var(--accent-soft);border-left-color:var(--accent);}
+details.answer summary{cursor:pointer;font-weight:700;color:var(--text-soft);font-size:13px;list-style:none;user-select:none;display:flex;align-items:center;gap:10px;transition:color 0.2s var(--ease);}
+details.answer summary::-webkit-details-marker{display:none;}
+details.answer summary::marker{content:'';}
+details.answer summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer[open] summary{color:var(--accent);}
+details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}
+.part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}
+@media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}
+.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
+@media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}
+.table-wrap th,.table-wrap td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px;}
+@media(min-width:600px){.table-wrap th,.table-wrap td{padding:10px 12px;font-size:13.5px;}}
+.table-wrap th{background:var(--surface-soft);font-weight:800;color:var(--text-soft);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;}
+@media(min-width:600px){.table-wrap th{font-size:11px;letter-spacing:0.7px;white-space:nowrap;}}
+.table-wrap.table-compact td,.table-wrap.table-compact th{padding:7px 6px;font-size:12.5px;}
+.table-wrap tr:last-child td{border-bottom:none;}
+.table-wrap tr:hover td{background:var(--accent-soft);}
+.table-wrap .error-row{background:var(--c-error-bg);}
+.table-wrap .ok-row{background:var(--c-basic-bg);}
+.def-list{display:flex;flex-direction:column;gap:8px;margin:14px 0;}
+.def-item{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px 16px;}
+.def-item dt{font-weight:800;color:var(--text);font-size:13.5px;margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+.def-item dt::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;}
+.def-item dd{color:var(--text-soft);font-size:13.5px;line-height:1.6;margin:0;padding-left:11px;}
+.minimum-card{background:linear-gradient(135deg,var(--surface-soft) 0%,var(--accent-soft) 100%);border:1px solid var(--accent-line);border-radius:var(--r-lg);padding:20px 22px;margin:8px 0 28px;box-shadow:var(--sh-sm);position:relative;overflow:hidden;}
+@media(min-width:768px){.minimum-card{padding:28px 34px;margin-bottom:36px;}}
+.minimum-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:var(--accent);}
+.minimum-card h3{color:var(--accent);margin:0 0 16px;font-size:16px;letter-spacing:0.2px;display:flex;align-items:center;gap:10px;}
+.minimum-card h3::before{content:'★';font-size:16px;}
+.minimum-card ol{margin:0;padding-left:0;list-style:none;counter-reset:min-list;}
+.minimum-card li{counter-increment:min-list;padding-left:36px;position:relative;margin-bottom:12px;font-size:14px;line-height:1.6;}
+.minimum-card li::before{content:counter(min-list);position:absolute;left:0;top:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--surface);color:var(--accent);border:2px solid var(--accent-line);border-radius:50%;font-size:12px;font-weight:800;}
+.minimum-card li:last-child{margin-bottom:0;}
+.level-badge{display:inline-block;font-size:9.5px;font-weight:800;text-transform:uppercase;padding:2px 9px;border-radius:12px;vertical-align:middle;letter-spacing:0.5px;line-height:1.6;margin-left:8px;}
+.level-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.level-understand{background:var(--c-understand-bg);color:var(--c-understand);}
+.level-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.level-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.level-new{background:var(--c-new-bg);color:var(--c-new);}
+.rule-box{background:var(--c-understand-bg);border:1px solid var(--c-understand-line);border-radius:var(--r-md);padding:14px 18px;margin:14px 0;font-size:14px;line-height:1.65;}
+.rule-box b{color:var(--c-understand);}
+.step-flow{background:var(--text);color:#fff;padding:16px 18px;border-radius:var(--r-md);font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:12.5px;line-height:1.9;margin:14px 0;overflow-x:auto;white-space:pre;}
+@media(min-width:768px){.step-flow{font-size:13.5px;padding:16px 20px;}}
+.footer{margin-top:56px;padding-top:24px;border-top:2px solid var(--border);text-align:center;font-size:12.5px;color:var(--text-muted);letter-spacing:0.2px;}
+.footer p{margin-bottom:4px;}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:6px;border:2px solid var(--bg);}
+::-webkit-scrollbar-thumb:hover{background:var(--text-muted);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.bottom-nav{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:1100;width:min(700px,calc(100vw - 24px));font-size:.78rem;}
+.bottom-nav__toggle{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;padding:8px 14px;border:1px solid var(--border-strong);border-radius:999px;background:rgba(255,255,255,.97);color:var(--text-soft);font:700 .72rem inherit;box-shadow:0 5px 18px rgba(15,23,42,.14);cursor:pointer;backdrop-filter:blur(10px);font-family:inherit;}
+.bottom-nav__panel{display:none;margin-bottom:7px;padding:10px;border:1px solid var(--border-strong);border-radius:14px;background:rgba(255,255,255,.98);box-shadow:0 10px 28px rgba(15,23,42,.16);backdrop-filter:blur(12px);}
+.bottom-nav.is-open .bottom-nav__panel{display:block;}
+.bottom-nav__primary{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.bottom-nav a,.bottom-nav button.nav-more{min-height:36px;display:flex;align-items:center;justify-content:center;padding:6px 8px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--text-soft);text-decoration:none;font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.bottom-nav a:hover,.bottom-nav button.nav-more:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+@media(max-width:420px){
+  .bottom-nav{font-size:.7rem;width:calc(100vw - 12px);}
+  .bottom-nav a,.bottom-nav button.nav-more{padding:6px 4px;font-size:.65rem;}
+}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
+.widget{background:var(--surface);border:2px solid var(--border);border-radius:var(--r-md);padding:14px;margin:14px 0;box-shadow:var(--sh-sm);}
+@media(min-width:768px){.widget{padding:22px 26px;margin:20px 0;border-radius:var(--r-lg);}}
+.widget h4{margin:0 0 8px;color:var(--text);font-size:15px;font-weight:800;}
+@media(min-width:768px){.widget h4{font-size:16px;}}
+.widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
+.bld-pool{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.bld-pool button{padding:6px 12px;border:1px solid var(--border);border-radius:20px;background:#fff;font:600 0.8rem inherit;cursor:pointer;font-family:inherit;color:var(--text);}
+.bld-pool button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bld-workspace{min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;}
+.bld-feedback,.re-result,.st-feedback,.ch-feedback{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;line-height:1.5;}
+.bld-feedback.ok,.re-result.ok,.st-feedback.ok,.ch-feedback.ok{background:var(--c-basic-bg);color:var(--c-basic);border:1px solid var(--c-basic-line);}
+.bld-feedback.bad,.re-result.bad,.st-feedback.bad,.ch-feedback.bad{background:var(--c-error-bg);color:var(--c-error);border:1px solid var(--c-error-line);}
+.bld-feedback.info,.re-result.info,.st-feedback.info,.ch-feedback.info{background:var(--c-understand-bg);color:var(--c-understand);border:1px solid var(--c-understand-line);}
+.bld-feedback.warn,.re-result.warn,.st-feedback.warn,.ch-feedback.warn{background:var(--c-warn-bg);color:var(--c-warn);border:1px solid var(--c-warn-line);}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);color:var(--text);font-family:inherit;}
+.btn:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent);}
+.btn-primary:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+.btn-sm{padding:6px 10px;font-size:12px;}
+.flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}
+@media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--border);border-radius:var(--r-md);background:#fff;color:var(--text);font:inherit;text-align:center;cursor:pointer;box-shadow:var(--sh-sm);transition:all 0.2s var(--ease);position:relative;font-family:inherit;}
+.flashcard:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-3px);box-shadow:var(--sh-md);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:90px;}
+.flashcard .front{font-weight:700;font-size:14.5px;line-height:1.5;}
+.flashcard .back{display:none;color:var(--text-soft);font-size:13.5px;line-height:1.6;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:8px;right:8px;font-size:9px;text-transform:uppercase;background:var(--surface-soft);padding:2px 8px;border-radius:10px;color:var(--text-muted);font-weight:800;letter-spacing:0.4px;}
+.flashcard .card-tag.tag-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.flashcard .card-tag.tag-error{background:var(--c-error-bg);color:var(--c-error);}
+.flashcard .card-tag.tag-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.flashcard .card-tag.tag-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.checklist{background:#fff;border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.checklist h4{color:var(--c-basic);margin:0 0 12px;font-size:15px;}
+.checklist ul{list-style:none;padding-left:0;margin:0;}
+.checklist li{padding:7px 0;font-size:13.5px;border-bottom:1px dashed var(--c-basic-line);display:flex;align-items:flex-start;gap:10px;line-height:1.55;}
+.checklist li:last-child{border-bottom:none;}
+.checklist li::before{content:'☐';color:var(--c-basic);font-weight:700;font-size:1.15rem;flex-shrink:0;line-height:1.2;}
+.core-path{background:linear-gradient(135deg,var(--c-basic-bg) 0%,#dcefe2 100%);border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:800;color:var(--c-basic);font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.core-path .cp-title::before{content:'▶';font-size:12px;}
+.core-path ol{margin:0;padding-left:22px;}
+.core-path li{margin-bottom:6px;font-size:13.5px;line-height:1.6;}
+.audit-panel{background:var(--surface-soft);border:2px solid var(--border-strong);border-radius:var(--r-lg);padding:16px 18px;margin:16px 0;}
+.audit-panel h4{margin:0 0 12px;color:var(--text);}
+.audit-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px;}
+@media(min-width:600px){.audit-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}}
+.audit-item{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:10px 12px;font-size:12.5px;line-height:1.55;}
+.mini-note{font-size:12.5px;color:var(--text-muted);font-style:italic;margin-top:8px;line-height:1.55;}
+.layer-legend{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:12px 14px;margin:12px 0;display:grid;grid-template-columns:1fr;gap:8px 18px;}
+@media(min-width:600px){.layer-legend{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;}}
+.layer-legend .layer-row{display:flex;gap:10px;align-items:center;font-size:12.5px;line-height:1.5;}
+.layer-legend .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.e8{background:var(--c-basic);}
+.layer-legend .dot.understand{background:var(--c-understand);}
+.layer-legend .dot.extra{background:var(--c-extra);}
+.layer-legend .dot.contest{background:var(--c-warn);}
+.klinika-table td.col-blad{color:var(--c-error);font-weight:700;}
+.klinika-table td.col-blad::before{content:'✕ ';font-weight:900;margin-right:4px;color:var(--c-error);}
+.klinika-table td.col-ok{color:var(--c-basic);font-weight:700;}
+.klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}
+.map-card{position:relative;}
+.map-expand-btn{position:absolute;top:10px;right:10px;z-index:3;padding:6px 12px;border:1px solid var(--accent-line);background:rgba(255,255,255,0.95);color:var(--accent);border-radius:var(--r-sm);font-size:12px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:var(--sh-sm);transition:all 0.15s var(--ease);}
+.map-expand-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.map-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(26,35,50,0.85);backdrop-filter:blur(6px);}
+.map-overlay.is-open{display:block;}
+.map-overlay-inner{position:absolute;inset:12px;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-xl);}
+.map-overlay-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface-soft);gap:8px;flex-wrap:wrap;}
+.map-overlay-title{font-weight:800;font-size:14px;color:var(--text);}
+.map-overlay-actions{display:flex;gap:6px;}
+.map-overlay-actions button{padding:6px 12px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;color:var(--text-soft);transition:all 0.15s var(--ease);}
+.map-overlay-actions button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.map-overlay-actions .map-close{background:var(--c-error);color:#fff;border-color:var(--c-error);}
+.map-overlay-canvas{flex:1;overflow:hidden;position:relative;background:#fff;cursor:grab;touch-action:none;}
+.map-overlay-canvas svg{display:block;position:absolute;top:0;left:0;transform-origin:0 0;}
+@media print{
+.fab,.toc-wrapper,.toc-overlay,.header-wrapper,.bottom-nav,.resume-dropdown,.map-overlay,.map-expand-btn{display:none !important;}
+body{padding:0;background:#fff;}
+.container{box-shadow:none;border:none;padding:0;max-width:100%;}
+details.answer{page-break-inside:avoid;}
+details.answer > *:not(summary){display:block !important;}
+details.answer summary{display:none;}
+.card{page-break-inside:avoid;}
+.widget{page-break-inside:avoid;}
+}
+@media (prefers-reduced-motion: reduce){
+*{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+html{scroll-behavior:auto;}
+}
+html,body{max-width:100%;overflow-x:hidden;}
+.table-scroll-hint{display:none;align-items:center;justify-content:space-between;gap:8px;padding:7px 11px;margin-top:0;margin-bottom:8px;border:1px solid var(--border);border-bottom:0;border-radius:var(--r-sm) var(--r-sm) 0 0;background:var(--surface-soft);color:var(--text-muted);font-size:11px;font-weight:700;}
+.table-wrap.is-scrollable + .table-scroll-hint{display:flex;}
+.table-scroll-hint .scroll-arrow{font-size:13px;letter-spacing:2px;color:var(--accent);}
+.timeline-anim{border-color:var(--c-understand-line);}
+.ta-stage{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 14px;min-height:280px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.ta-scene{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;animation:taFade 0.6s ease-out;width:100%;}
+@keyframes taFade{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.ta-scene .ta-year{font-size:1.7rem;font-weight:800;color:var(--accent);font-family:'JetBrains Mono',monospace;letter-spacing:1px;}
+.ta-scene .ta-who{font-size:1.05rem;font-weight:800;color:var(--text);}
+.ta-scene .ta-desc{font-size:13.5px;color:var(--text-soft);max-width:600px;line-height:1.65;}
+.ta-dots{display:flex;justify-content:center;gap:8px;margin:14px 0 8px;}
+.ta-dot{width:12px;height:12px;border-radius:50%;background:var(--border-strong);border:2px solid transparent;cursor:pointer;padding:0;transition:all 0.2s var(--ease);}
+.ta-dot.active{background:var(--accent);transform:scale(1.25);box-shadow:0 0 0 3px var(--accent-glow);}
+.ta-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;}
+.ta-nav{padding:8px 14px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-weight:700;color:var(--text-soft);cursor:pointer;font-size:12.5px;transition:all 0.15s var(--ease);}
+.ta-nav:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.ta-progress{font-size:12.5px;color:var(--text-muted);font-weight:700;font-family:'JetBrains Mono',monospace;}
+.eq-player{background:linear-gradient(180deg,#f8fafc,#eef6f5);border:2px solid var(--accent-line);border-radius:var(--r-lg);padding:16px 18px;margin:14px 0;}
+.eq-stage{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.15rem;padding:12px;background:#fff;border-radius:var(--r-md);border:1px solid var(--border);}
+.eq-term{display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border);opacity:0;}
+.eq-term.show{opacity:1;animation:reaction-flow 0.7s ease-out;}
+.eq-term.reactant{background:#e0f2fe;border-color:#7dd3fc;color:#0c4a6e;}
+.eq-term.product{background:#dcfce7;border-color:#86efac;color:#14532d;}
+.eq-arrow{opacity:0;color:var(--accent);font-size:1.4rem;}
+.eq-arrow.show{opacity:1;}
+.eq-balance{margin-top:10px;font-size:13px;color:var(--text-soft);display:none;}
+.eq-balance.show{display:block;}
+@keyframes reaction-flow{0%{opacity:.25;transform:scale(.92)}55%{opacity:1}100%{opacity:1;transform:scale(1)}}
+.ion-assembly{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;padding:18px 12px;background:#fff;border:1px solid var(--border);border-radius:var(--r-md);margin:10px 0;}
+.ion-chip{padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid var(--border);}
+.ion-chip.cation{background:#e0f2fe;border-color:#38bdf8;color:#0c4a6e;}
+.ion-chip.anion{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.ion-chip.product{background:#dcfce7;border-color:#4ade80;color:#14532d;}
+.ion-plus,.ion-join{font-size:1.4rem;font-weight:800;color:var(--text-muted);}
+.hero{max-width:900px;margin:0 auto 22px;padding:26px;border:1px solid var(--border);border-radius:var(--r-xl);background:linear-gradient(135deg,#fff,var(--accent-soft));box-shadow:var(--sh-md);}
+.hero h1{font-size:clamp(32px,6vw,52px);margin:4px 0 8px;}
+.hero-kicker{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--accent);text-transform:uppercase;}
+.lead{font-size:16px;color:var(--text-soft);max-width:720px;}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;}
+.page{max-width:900px;margin:0 auto;}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+@media(max-width:720px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px;}
+.metric-grid>div,.result-card,.step-card{padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);}
+.metric-grid b{display:block;font-size:10px;text-transform:uppercase;color:var(--text-muted);}
+.metric-grid strong{display:block;margin-top:3px;}
+@media(max-width:700px){.metric-grid{grid-template-columns:1fr;}}
+.controls,.button-grid{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;}
+.controls button,.button-grid button,.quiz-opt{padding:8px 12px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;cursor:pointer;}
+.particle-stage{height:120px;display:flex;align-items:center;justify-content:center;gap:70px;border:1px dashed var(--border-strong);border-radius:10px;margin-top:12px;}
+.particle{font-size:30px;font-weight:800;}
+.p-h3o{color:var(--accent);}
+.p-cl{color:#b83a45;}
+.ph-scale{display:flex;justify-content:space-between;margin-top:6px;font:700 11px 'JetBrains Mono',monospace;}
+.buffer-tank{height:28px;border:1px solid var(--border-strong);border-radius:999px;overflow:hidden;margin:14px 0;background:var(--surface-soft);}
+#bufferFill{height:100%;width:100%;background:var(--accent);transition:width .2s;}
+.quiz-wrap{margin:16px 0;}
+.quiz-q{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:14px 16px;margin-bottom:12px;}
+.quiz-q h5{margin:0 0 10px;font-size:14.5px;color:var(--text);text-transform:none;letter-spacing:0;line-height:1.45;}
+.quiz-q .q-tag{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:10px;margin-bottom:8px;background:var(--surface-soft);color:var(--text-muted);}
+.quiz-opts{display:flex;flex-direction:column;gap:8px;}
+.quiz-opt{display:block;width:100%;text-align:left;padding:10px 12px;border:2px solid var(--border);border-radius:var(--r-sm);background:#fff;font:inherit;font-size:13.5px;cursor:pointer;transition:all 0.15s var(--ease);color:var(--text);}
+.quiz-opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft);}
+.quiz-opt.correct{border-color:var(--c-basic);background:var(--c-basic-bg);color:var(--c-basic);font-weight:700;}
+.quiz-opt.wrong{border-color:var(--c-error);background:var(--c-error-bg);color:var(--c-error);}
+.quiz-opt:disabled{cursor:default;opacity:0.95;}
+.quiz-fb{margin-top:8px;font-size:13px;line-height:1.5;display:none;padding:8px 10px;border-radius:var(--r-sm);}
+.quiz-fb.show{display:block;}
+.quiz-fb.ok{background:var(--c-basic-bg);color:var(--c-basic);}
+.quiz-fb.bad{background:var(--c-error-bg);color:var(--c-error);}
+.quiz-score{text-align:center;padding:14px;background:var(--surface-soft);border-radius:var(--r-md);margin-top:16px;font-weight:800;color:var(--accent);display:none;}
+.quiz-score.show{display:block;}
+.lab-bridge{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 28px;padding:14px 16px;border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);background:linear-gradient(135deg,var(--surface-soft),var(--accent-soft));}
+.lab-bridge strong{display:block;color:var(--accent-dark);}
+.lab-bridge span{display:block;margin-top:3px;color:var(--text-soft);font-size:13px;}
+.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;}
+.lab-bridge-btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
+@media(max-width:600px){.lab-bridge{align-items:flex-start;flex-direction:column;}.lab-bridge-btn{width:100%;text-align:center;}}
+.exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}
+.exp-card h5{margin:0 0 10px;color:var(--c-basic);font-size:14px;text-transform:none;letter-spacing:0;}
+.exp-grid{display:grid;grid-template-columns:1fr;gap:6px;font-size:13.5px;line-height:1.55;}
+@media(min-width:600px){.exp-grid{grid-template-columns:110px 1fr;}}
+.exp-grid b{color:var(--text-soft);font-size:11px;text-transform:uppercase;letter-spacing:0.4px;}
+
+.js-reveal .card:not(.in),.js-reveal .widget:not(.in){opacity:0;transform:translateY(14px)}
+.js-reveal .card,.js-reveal .widget{transition:opacity .55s var(--ease),transform .55s var(--ease)}
+
+
+.ion-svg{width:100%;height:auto;display:block;background:radial-gradient(ellipse at 50% 40%,#fff,var(--surface-soft));border:1px solid var(--border);border-radius:var(--r-md);margin-top:10px}
+.ion-svg .mv{transition:transform .9s cubic-bezier(.65,0,.35,1);transform-box:fill-box}
+.ion-svg text{font-family:'JetBrains Mono',monospace;font-weight:800;text-anchor:middle;dominant-baseline:central}
+.ion-svg .fade{opacity:0;transition:opacity .6s ease .35s}
+.ion-svg[data-s="1"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="1"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="1"] .d1,.ion-svg[data-s="2"] .d1{opacity:1}
+.ion-svg[data-s="2"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="2"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="2"] .proton{transform:translate(120px,-40px)}
+.ion-svg[data-s="2"] .arrow{opacity:1}
+.ion-svg[data-s="3"] .g-hcl{transform:translateX(10px)}
+.ion-svg[data-s="3"] .g-w{transform:translateX(-10px)}
+.ion-svg[data-s="3"] .proton{transform:translate(230px,-38px)}
+.ion-svg[data-s="3"] .d3{opacity:1}
+.ion-svg[data-s="3"] .glow{animation:ionGlow 1.6s ease-in-out infinite}
+@keyframes ionGlow{0%,100%{filter:drop-shadow(0 0 2px rgba(13,104,104,.3))}50%{filter:drop-shadow(0 0 10px rgba(13,104,104,.8))}}
+
+
+.ph-bar{position:relative;height:18px;border-radius:999px;margin:10px 0 4px;border:1px solid var(--border-strong);
+background:linear-gradient(90deg,#e5262e 0%,#ef5a28 14%,#f6a21e 28%,#d7d93a 43%,#5cb85c 50%,#21a89a 57%,#2f7fc1 71%,#4a4bb5 86%,#6b2d8f 100%)}
+.ph-marker{position:absolute;top:-6px;width:0;height:0;left:0;transform:translateX(-50%);transition:left .35s var(--ease)}
+.ph-marker::before{content:'';position:absolute;left:-7px;top:0;border:7px solid transparent;border-top:10px solid var(--text)}
+.ph-marker::after{content:attr(data-v);position:absolute;left:0;top:-22px;transform:translateX(-50%);background:var(--text);color:#fff;font:800 11px 'JetBrains Mono',monospace;padding:2px 6px;border-radius:5px;white-space:nowrap}
+.ph-flask{display:inline-block;width:22px;height:22px;border-radius:0 0 8px 8px;border:2px solid var(--text-soft);vertical-align:middle;margin-right:6px;transition:background .35s}
+
+
+.titr-wrap{position:relative}
+#titrationCanvas{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--r-md);background:#fff}
+.titr-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.titr-row input[type=range]{flex:1 1 200px}
+.titr-flask{width:34px;height:42px;border:2px solid var(--text-soft);border-radius:2px 2px 12px 12px;transition:background .3s;flex-shrink:0;position:relative}
+.titr-flask::after{content:'';position:absolute;left:-2px;right:-2px;top:-8px;height:6px;border:2px solid var(--text-soft);border-bottom:0;border-radius:3px 3px 0 0}
+
+
+.buffer-tank{position:relative;height:34px}
+#bufferFill{transition:width .4s var(--ease),background .4s;background-size:28px 28px;background-image:linear-gradient(45deg,rgba(255,255,255,.22) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.22) 75%,transparent 75%)}
+.buffer-tank.pulse{animation:bufPulse .45s ease}
+.buffer-tank.dead{animation:bufDead .5s ease 2}
+@keyframes bufPulse{50%{transform:scale(1.02);box-shadow:0 0 0 4px var(--accent-glow)}}
+@keyframes bufDead{50%{box-shadow:0 0 0 4px rgba(184,58,69,.35)}}
+
+
+.rx-stage{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:12px 0;padding:14px;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md)}
+.rx-beaker{position:relative;width:120px;height:150px;border:3px solid var(--text-soft);border-top:0;border-radius:0 0 18px 18px;background:rgba(255,255,255,.55);overflow:visible;flex-shrink:0}
+.rx-liquid{position:absolute;left:0;right:0;bottom:0;height:100px;border-radius:0 0 14px 14px;background:rgba(220,235,240,.65);transition:background 2.2s ease}
+.rx-solid{position:absolute;left:36px;bottom:2px;width:48px;height:24px;border-radius:40% 40% 8px 8px;opacity:0;transition:height 3.5s ease,opacity .5s,transform 3.5s ease}
+.rx-bubbles,.rx-precip,.rx-fumes{position:absolute;left:0;right:0;bottom:0;height:150px;pointer-events:none;overflow:hidden}
+.rx-fumes{overflow:visible;bottom:100px;height:70px}
+.rx-b{position:absolute;bottom:14px;border-radius:50%;background:rgba(255,255,255,.85);border:1px solid rgba(13,104,104,.45);animation:rxRise 2.2s ease-in forwards}
+@keyframes rxRise{to{transform:translate(var(--dx,0),-92px);opacity:0}}
+.rx-p{position:absolute;top:50px;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #cbd5e1;animation:rxFall 2.4s ease-in forwards}
+@keyframes rxFall{to{transform:translateY(90px)}}
+.rx-cloud{position:absolute;bottom:0;left:6px;right:6px;height:0;background:#fff;border-radius:10px 10px 0 0;box-shadow:0 0 0 1px #e2e8f0;transition:height 4s ease;opacity:.95}
+.rx-f{position:absolute;bottom:0;width:26px;height:26px;border-radius:50%;background:rgba(150,75,20,.55);filter:blur(7px);animation:rxFume 3s ease-out forwards}
+@keyframes rxFume{to{transform:translate(var(--dx,0),-70px) scale(2.2);opacity:0}}
+
+
+.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.rx-label{flex:1 1 200px;font-size:13px;color:var(--text-soft);line-height:1.5}
+.rx-label b{color:var(--text);font-family:'JetBrains Mono',monospace}
+@media print{.js-reveal .card,.js-reveal .widget{opacity:1!important;transform:none!important}}
+
+
+/* ulepszenia.css — warstwa wspólna nad baza.css: pasek lekcji, postęp czytania, spis z podświetleniem,
+   tryb ciemny, komponenty wspólne (mity, drzewo, cytat, dialog, słówka, figura), druk, dostępność.
+   Kolejność w lekcji: baza.css → ulepszenia.css → motywy/<przedmiot>.css. Edytuj tylko tutaj. */
+
+:root{--header-h:52px;--serif:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Charter,Georgia,serif}
+
+/* ---------- pasek lekcji (zamiast nagłówka aplikacji) ---------- */
+.lk-bar{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 12px;
+  background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--border)}
+.lk-subj{flex:none;display:inline-flex;align-items:center;gap:7px;font:800 12.5px/1 Inter,system-ui,sans-serif;color:var(--accent);text-decoration:none;
+  padding:6px 10px 6px 8px;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+.lk-subj i{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+.lk-title{flex:1;min-width:0;font:600 13px/1.25 Inter,system-ui,sans-serif;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lk-btn{flex:none;min-width:36px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);background:var(--surface);
+  color:var(--text);border-radius:9px;padding:0 10px;font:700 12.5px Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+.lk-btn:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.lk-prog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
+@media (max-width:520px){.lk-title{display:none}.lk-bar{justify-content:space-between}}
+
+/* ---------- nagłówek lekcji ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+.hero::after{content:"";position:absolute;inset:-10% -6% -10% 52%;z-index:-1;opacity:.12;pointer-events:none;background:var(--motyw-wzor,none) right center/auto 100% repeat-y}
+.hero h1{text-wrap:balance}
+.hero-kicker{color:var(--accent);text-transform:none;letter-spacing:0;font-size:13px}
+.page{padding:0 16px}
+.lk-btn svg{width:16px;height:16px;display:block}
+.lk-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:12.5px;color:var(--text-muted)}
+.lk-meta b{color:var(--text-soft);font-weight:700}
+
+/* ---------- spis treści: aktywna sekcja ---------- */
+@media (min-width:800px){.toc-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));column-gap:12px}}
+.toc-link.on{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);font-weight:700}
+section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
+
+/* ---------- komponenty wspólne ---------- */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:12px 0}
+.myth-head{grid-column:1/-1;font-weight:800;font-size:14px}
+.myth{border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow:hidden}
+.myth p{margin:0;padding:9px 12px;font-size:13.5px;line-height:1.5}
+.myth p span{display:block;font:800 11px Inter,system-ui;margin-bottom:2px}
+.myth-x{background:var(--c-error-bg)}.myth-x span{color:var(--c-error)}.myth-ok span{color:var(--c-basic)}
+
+.lk-tree{margin:12px 0;font-size:14px;overflow-x:auto}
+.lk-tree ul{list-style:none;margin:0;padding-left:18px}.lk-tree>ul{padding-left:0}
+.lk-tree li{position:relative;padding:3px 0 3px 14px}
+.lk-tree ul ul li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--accent-line)}
+.lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
+.lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
+.lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+
+/* cytat z tekstu (lektura, źródło, wypowiedź) */
+.lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
+.lk-quote blockquote{margin:0;font:400 17px/1.65 var(--serif);color:var(--text)}
+.lk-quote blockquote p{margin:0 0 6px;color:inherit}
+.lk-quote figcaption{margin-top:6px;font-size:12.5px;color:var(--text-muted)}
+
+/* dialog (role A/B, rozmowa, scenka) */
+.lk-dialog{margin:14px 0;display:flex;flex-direction:column;gap:8px}
+.lk-line{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.lk-who{min-width:30px;height:30px;padding:0 8px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font:800 12px Inter,system-ui;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line)}
+.lk-line.b .lk-who{background:var(--surface-soft);color:var(--text-soft);border-color:var(--border)}
+.lk-say{padding:8px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font-size:14.5px;line-height:1.55}
+.lk-say small{display:block;color:var(--text-muted);font-size:12.5px;margin-top:2px}
+
+/* słówka: wyraz — znaczenie — przykład */
+.lk-vocab{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.lk-vocab th{text-align:left;font-size:12px;color:var(--text-muted);font-weight:700;padding:6px 10px;border-bottom:2px solid var(--border)}
+.lk-vocab td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+.lk-vocab td:first-child{font-weight:800;color:var(--accent);white-space:nowrap}
+.lk-vocab td:last-child{color:var(--text-soft);font-style:italic}
+@media (max-width:560px){.lk-vocab thead{display:none}.lk-vocab tr{display:block;padding:8px 0;border-bottom:1px solid var(--border)}
+  .lk-vocab td{display:block;border:0;padding:1px 4px}}
+
+/* figura z biblioteki grafik przedmiotu */
+.lk-fig{margin:16px 0;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);overflow:hidden}
+.lk-fig figcaption{padding:9px 14px;border-top:1px solid var(--border);background:var(--surface-soft);font-size:13px;line-height:1.5;color:var(--text-soft)}
+.lk-fig figcaption b{color:var(--text);margin-right:4px}
+.lk-fig-body{padding:12px}
+.lk-fig svg{display:block;width:100%;height:auto}
+
+/* z chemii (lekcja.css): treści akademickie, plakietki */
+details.adv{border:1px dashed var(--c-warn-line,#eed8a8);border-radius:10px;background:var(--surface-soft,#f6f8fa);margin:10px 0;padding:0 12px}details.adv>summary{cursor:pointer;font-weight:700;color:var(--c-warn,#b06f1c);padding:9px 0;list-style:none}details.adv>summary::-webkit-details-marker{display:none}details.adv>summary::before{content:"▸ "}details.adv[open]>summary::before{content:"▾ "}.adv-tag{font-weight:600;font-size:11px;opacity:.75;margin-left:6px}.adv-body{padding:0 0 10px;font-size:13.5px;line-height:1.6}.adv-body table{font-size:12.5px}.adv-toggle{margin-top:10px;border:1px solid var(--c-warn-line,#eed8a8);background:var(--c-warn-bg,#fcf4e6);color:var(--c-warn,#b06f1c);border-radius:999px;padding:6px 12px;font:700 12px Inter,system-ui,sans-serif;cursor:pointer}.bio-tag{display:inline-block;font:800 10px Inter,system-ui;letter-spacing:.04em;padding:2px 7px;border-radius:99px;background:rgba(46,125,79,.12);color:#2e7d4f;margin-left:6px;vertical-align:middle}.v15{display:inline-block;font:800 9.5px Inter,system-ui;padding:1px 6px;border-radius:99px;background:rgba(13,125,125,.12);color:#0d7d7d;margin-left:6px;vertical-align:middle}@media print{details.adv{display:block}details.adv>.adv-body{display:block}}
+/* z chemii (lekcja.css): telefon, tabele */
+.exp-card{min-width:0;max-width:100%;box-sizing:border-box}.exp-grid>*{min-width:0;overflow-wrap:anywhere}
+@media (max-width:600px){.exp-grid{grid-template-columns:minmax(0,1fr)!important}.exp-grid>b{margin-top:4px}}
+.table-wrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+
+/* klinika błędów (::: klinika) — tabela, na telefonie karty */
+.klinika-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden}
+.klinika-table th{text-align:left;padding:9px 12px;background:var(--surface-soft);color:var(--text-soft);font-size:12px;font-weight:800;border-bottom:1px solid var(--border)}
+.klinika-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.klinika-table tr:last-child td{border-bottom:0}
+@media (max-width:600px){.klinika-table thead{display:none}.klinika-table tr{display:block;padding:8px 12px;border-bottom:1px solid var(--border)}
+  .klinika-table td{display:block;border:0;padding:2px 0}.klinika-table td:not(.col-blad):not(.col-ok){color:var(--text-soft)}}
+
+.lk-pre{margin:12px 0;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-soft);overflow-x:auto;font:12.5px/1.55 ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;color:var(--text-soft);white-space:pre}
+.lk-pre code{font:inherit;background:none;padding:0;color:inherit}
+.lk-hr{border:0;border-top:1px solid var(--border);margin:28px 0}
+
+/* ---------- dostępność ---------- */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;z-index:60;background:var(--surface);color:var(--accent);padding:8px 12px;border-radius:8px}
+.skip-link:focus{left:8px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- tryb ciemny: automatycznie albo przyciskiem (data-theme) ---------- */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme=dark]{
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}
+/* elementy bazy z białym tłem na sztywno */
+html[data-ciemny] :is(.flashcard,.checklist,.audit-item,.layer-legend,.quiz-q,.quiz-opt,.btn,.controls button,.eq-stage,.ion-assembly,.bld-workspace,.bld-pool button,.resume-dropdown,.ta-nav){background:var(--surface);color:var(--text)}
+html[data-ciemny] .hero{background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.active,.step-flow){color:var(--bg)}
+@media (max-width:600px){.hero::after{opacity:.07}}
+
+/* ---------- druk ---------- */
+@media print{
+  .lk-bar,.adv-toggle,.toc-item,.fab,.bottom-nav{display:none!important}
+  body{padding:0;background:#fff;color:#000}
+  .hero::after{display:none}.hero{background:none;box-shadow:none}
+  details.adv,details.answer{display:block}details>*{display:block}
+  .card,.minimum-card,.lk-fig,.myth,.quiz-q{break-inside:avoid;box-shadow:none}
+  a{color:inherit;text-decoration:none}
+}
+
+/* === Dopracowanie czytelności (2026-10-11; z wersji „ulepszonej” U03 użytkownika, uogólnione na wszystkie przedmioty, zgodne z trybem ciemnym) === */
+body{line-height:1.74}
+main{isolation:isolate}
+.hero{border-color:var(--accent-line)}
+.hero::before{content:"";position:absolute;right:-42px;top:-56px;width:180px;height:180px;z-index:-1;pointer-events:none;
+ border:1px solid var(--accent-line);border-radius:50%;opacity:.45;
+ box-shadow:0 0 0 22px var(--accent-glow),0 0 0 44px var(--accent-glow)}
+.part-heading{padding:0 0 12px;border-bottom:1px solid var(--border);align-items:flex-start}
+.part-num{margin-top:1px}
+section[id]{scroll-margin-top:calc(var(--header-h,56px) + 20px)}
+section p{max-width:78ch}
+section ul,section ol{padding-left:1.35rem}
+.card,.exp-card,.widget,.table-wrap{box-shadow:0 2px 8px rgba(24,49,59,.045)}
+.table-wrap{max-width:100%}
+.table-wrap table{line-height:1.55}
+.table-wrap td strong{color:var(--text)}
+.table-wrap tbody tr:nth-child(even) td{background:var(--surface-soft)}
+.table-wrap tbody tr:hover td{background:var(--accent-soft)}
+.mini-note{max-width:80ch}
+:is(button,a,summary,[tabindex]):focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:520px){.hero{padding:20px 16px}.part-heading{font-size:19px;gap:11px}
+ .table-wrap table{font-size:12.5px}.table-wrap th,.table-wrap td{padding:8px 9px}}
+@media(hover:none){.card:hover,.flashcard:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media print{.hero::before{display:none}.card,.exp-card,.table-wrap{break-inside:avoid;box-shadow:none}}
+
+/* fiszki: część ukryta do rozwinięcia (lekcja.js); przy druku — wszystkie */
+.flashcard[hidden]{display:none!important}
+.fz-more{display:block;width:100%;margin:-6px 0 18px;padding:12px 16px;border:2px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent;color:var(--text,#1d2a30);font-family:inherit;font-weight:600;font-size:15px;line-height:1.3;cursor:pointer;text-align:center}
+.fz-more:hover,.fz-more:focus-visible{background:var(--surface-2,rgba(0,0,0,.04))}
+@media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
+.quiz-q[hidden]{display:none!important}
+@media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
+
+/* motyw che (Chemia) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,.15);--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 104 180%27%3E%3Cg fill=%27none%27 stroke=%27%230d6868%27 stroke-width=%273%27%3E%3Cpath d=%27M52 10l40 23v46l-40 23-40-23V33z%27/%3E%3Cpath d=%27M52 100l40 23v46l-40 23-40-23v-46z%27/%3E%3Cpath d=%27M52 22v8M92 56h8M12 56H4%27/%3E%3C/g%3E%3Cg fill=%27%230d6868%27%3E%3Ccircle cx=%2752%27 cy=%2710%27 r=%275%27/%3E%3Ccircle cx=%2792%27 cy=%2779%27 r=%275%27/%3E%3Ccircle cx=%2712%27 cy=%27123%27 r=%275%27/%3E%3C/g%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}}
+:root[data-theme=dark]{--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}
+
+/* równanie reakcji w osobnej linii: ::: div.rownanie */
+.rownanie{margin:12px 0;padding:12px 16px;border-radius:var(--r-md);background:var(--surface-soft);border:1px solid var(--border);font:600 17px/1.6 Inter,system-ui,sans-serif;text-align:center;overflow-x:auto;white-space:nowrap}
+.rownanie small{display:block;font-size:12px;font-weight:500;color:var(--text-muted);white-space:normal}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+<header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">R07 Obliczenia z równań — substraty w stosunku niestechiometrycznym (bez mola)</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<main class="page" id="main">
+<section class="hero card"><div class="hero-kicker">R07 · CHEMIA · Obliczenia chemiczne — stechiometria · E8 / KONKURS</div><h1>Obliczenia z równań — substraty w stosunku niestechiometrycznym (bez mola)</h1><p class="lead">„Dwa jajka i szklanka mąki na tort” — a masz sześć jajek i dwie szklanki mąki? Zrobisz dwa torty i zostaną ci dwa jajka. Reakcja chemiczna to dokładnie ten sam przepis, tylko że porcje liczy się w gramach.</p><p class="lead">Nauczysz się zamieniać równanie w tabelę mas, rozpoznawać substrat ograniczający i nadmiar, liczyć ilość produktu i resztę nadmiaru, kontrolować rachunek bilansem masy — a na poziomie konkursowym pracować z roztworami, próbkami zanieczyszczonymi i wydajnością.</p><div class="tag-row"><span class="level-badge level-basic">E8</span><span class="level-badge level-understand">ROZUMIENIE</span><span class="level-badge level-exam">KONKURS</span><span class="level-badge level-extra">AMBITNE</span></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button><p class="mini-note">Podejście „bez mola” — liczby mas używamy w gramach jako porcje recepturowe (proporcje identyczne jak w jednostkach u). Masy atomowe przyjęte: H = 1, C = 12, N = 14, O = 16, Mg = 24, S = 32, Cl = 35,5, Ca = 40, Fe = 56, Cu = 64, Zn = 65. Wyniki zaokrąglone do 2–3 cyfr znaczących. Podstawowy algorytm E8 to sekcje 2–6; roztwory procentowe, próbki zanieczyszczone i wydajność to warstwa konkursowa; pojęcie mola omówiono wyłącznie jako zarys w warstwie ambitnej.</p></section>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#minimum">Minimum E8</a><a class="toc-link" href="#jak-pracowac">0.1. Jak pracować z lekcją</a><a class="toc-link" href="#diagnoza">0.2. Diagnoza</a></nav></details>
+<section id="minimum" class="minimum-card"><h3>Muszę umieć — 10 punktów</h3>
+<ol>
+<li>Czytam zbilansowane równanie jak przepis: współczynniki to stosunek cząsteczek (atomów) i zarazem stosunek mas porcji substratów i produktów.</li>
+<li>Liczę masy porcji pod równaniem: masa cząsteczkowa = suma mas atomowych wg wzoru, z uwzględnieniem indeksów i współczynników (2MgO to 80, nie 40).</li>
+<li>Porównuję substraty poprawnie: dzielę podane masy przez masy porcji wg równania — mniejszy wynik („mniejsza porcja”) to substrat ograniczający; nigdy nie porównuję gołych mas „na oko”.</li>
+<li>Wskazuję substrat ograniczający (kończy się pierwszy) i substrat nadmiarowy (jego część zostaje), uzasadniając wybór obliczeniem.</li>
+<li>Obliczam ilość każdego produktu wyłącznie z substratu ograniczającego proporcją masową.</li>
+<li>Obliczam masę zużytego substratu nadmiarowego i resztę nadmiaru: masa początkowa − masa zużyta.</li>
+<li>Prowadzę rozwiązanie w ustalonym schemacie: równanie → masy porcji → porównanie porcji → produkt z ograniczającego → reszta nadmiaru → odpowiedź z jednostką i nazwą substancji.</li>
+<li>Sprawdzam rachunek bilansem masy: masa zużytych substratów = suma mas produktów; wielkie odstępstwo sygnalizuje błąd.</li>
+<li>Rozwiązuję typowe zadania egzaminacyjne: spalanie magnezu, rozkład węglanu wapnia, wydzielanie wodoru z cynku i kwasu, dwutlenek węgla z marmuru.</li>
+<li>Na poziomie konkursowym rozwiązuję zadania wieloetapowe: z roztworami o stężeniu procentowym, z próbkami zanieczyszczonymi (procent zawartości) i z wydajnością reakcji (masa rzeczywista ÷ teoretyczna · 100%).</li>
+</ol>
+</section>
+<div class="layer-legend">
+<div class="layer-row"><span class="dot e8"></span><span><b>Podstawa:</b> równanie jako przepis, masy porcji, jednoetapowe zadania z proporcją, prosty nadmiar i bilans masy — dokładnie poziom arkusza E8.</span></div>
+<div class="layer-row"><span class="dot understand"></span><span><b>Rozumienie:</b> dlaczego decyduje „mniejsza porcja”, a nie większa masa; dlaczego produkt z nadmiaru łamie prawo zachowania masy; po co kontrola bilansem; kiedy substraty są w stosunku stechiometrycznym (nic nie zostaje).</span></div>
+<div class="layer-row"><span class="dot contest"></span><span><b>Konkurs:</b> zadania wieloetapowe, roztwory procentowe (masa czystej substancji), próbki zanieczyszczone, wydajność reakcji, scalanie z lekcjami X04 (wypieranie miedzi cynkiem) i J03 (osady), znajdowanie błędów w cudzych rachunkach, pułapki zaokrągleń i „zbędnych danych”.</span></div>
+<div class="layer-row"><span class="dot extra"></span><span><b>Ambitne:</b> wydajność teoretyczna a praktyczna, stechiometria w silnikach i rakietach, wapienniki w skali przemysłowej, mole jako skrót zawodowców (zarys — most do liceum), granice modelu proporcji masowych.</span></div>
+</div>
+<div id="rdzen" class="core-path">
+<div class="cp-title">Rdzeń lekcji — najpierw to</div>
+<ul>
+<li><a href="#wyklad">§1</a> — Wykład od zera: przepis, porcje i konkurencja składników.</li>
+<li><a href="#przepis">§2</a> — Równanie jako przepis: stosunki stechiometryczne.</li>
+<li><a href="#masy">§3</a> — Masy porcji: tabliczka mnożenia stechiometrii.</li>
+<li><a href="#nadmiar">§4</a> — Substrat ograniczający i nadmiar: dwie metody porównania.</li>
+<li><a href="#algorytm">§5</a> — Algorytm pełnego rozwiązania krok po kroku.</li>
+<li><a href="#e8">§6</a> — Zadania typu E8: trzy wzorce.</li>
+<li><a href="#zadania-konkurs">§8</a> — Zadania konkursowe oraz <a href="#test">§14</a> — test końcowy.</li>
+<li><a href="#sciaga">§18</a> — Ściąga i checklista przed sprawdzianem.</li>
+</ul>
+</div>
+<section id="jak-pracowac">
+<div class="part-heading"><span class="part-num">0.1</span> Jak pracować z lekcją</div>
+<p>Cel tej lekcji: <strong>samodzielnie rozwiązywać zadania, w których substraty nie są w stosunku stechiometrycznym — wskazywać, który substrat się skończy, ile zostanie nadmiaru i ile powstanie produktu, używając tylko mas i proporcji</strong>. Kryterium gotowości:</p>
+<ol>
+<li>Znasz równanie jako przepis: współczynniki → stosunki cząsteczek i mas.</li>
+<li>Liczysz masy porcji dla każdej reakcji z tej lekcji (i nowych, podanych w zadaniu).</li>
+<li>Wskazujesz substrat ograniczający metodą porcji lub metodą „ile potrzeba”.</li>
+<li>Liczysz produkt, zużycie nadmiaru i resztę — z jednostkami i nazwami substancji.</li>
+<li>Kontrolujesz rachunek bilansem masy i rozwiązuje zadania transferowe (roztwory, zanieczyszczenia, wydajność).</li>
+</ol>
+<p>Kolejność pracy:</p>
+<ol>
+<li>Przeczytaj listę „Muszę umieć — 10 punktów” i zrób diagnozę (<a href="#diagnoza">§0.2</a>) — przekonasz się, od którego miejsca zacząć.</li>
+<li>Wykład (<a href="#wyklad">§1</a>) buduje jedną metaforę, która niesie całą lekcję: przepis kuchenny z ograniczonym składnikiem. Bez tej metafory algorytm bywa wkuwany i szybko wyparowuje — z nią rozumiesz każdy krok.</li>
+<li>Sekcje 2–5 to serce lekcji: przerabiaj po kolei, każdą proporcję przelicz własnoręcznie na kartce. Tu najczęstszy błąd to czytanie rozwiązań bez liczenia — klucz czytany bez próby uczy czterokrotnie słabiej.</li>
+<li>Zadania typu E8 (<a href="#e8">§6</a>) przerób wszystkie trzy wzorce; to są szablony, które na egzaminie wracają co roku w nowych liczbach.</li>
+<li>Doświadczenia (<a href="#doswiadczenia">§7</a>) traktuj dwojako: jako fizykę (BHP!) i jako źródła danych do obliczeń — liczb z tych prób użyjemy w zadaniach.</li>
+<li>Zadania konkursowe (<a href="#zadania-konkurs">§8</a>) i warstwa olimpijska (<a href="#olimpijczyk">§9</a>) — gdy algorytm jest pewny; tam czekają roztwory, zanieczyszczenia, wydajność i pułapki.</li>
+<li>Test końcowy (<a href="#test">§14</a>) rozwiązuj bez zaglądania do lekcji; błędne odpowiedzi wskażą sekcje do powrotu.</li>
+<li>Fiszki (<a href="#fiszki">§15</a>) powtarzaj partiami — szczególnie tabele mas porcji, bo ich biegłość przyspiesza każdy rachunek; przed sprawdzianem ściąga i checklista (<a href="#sciaga">§18</a>).</li>
+</ol>
+<p>Przydatne wcześniej (nieobowiązkowe — wszystko tłumaczymy od zera): zbilansowane równania reakcji (spalanie, rozkład, zobojętnienie), masy atomowe z układu okresowego, procent z liczby. Zadania łączą się z lekcjami CHE-X04 (reakcja Zn z CuSO₄ — wróci w zadaniu 10) i CHE-J03 (osady jako produkty do liczenia).</p>
+</section>
+<section id="diagnoza">
+<div class="part-heading"><span class="part-num">0.2</span> Diagnoza</div>
+<p>Odpowiedz na kartce, bez zaglądania do lekcji. Potem sprawdź klucz i policz punkty. (Masy atomowe: Mg = 24, O = 16, Ca = 40, C = 12.)</p>
+<ol>
+<li>Co oznaczają współczynniki w zbilansowanym równaniu chemicznym?</li>
+<li>Oblicz masę cząsteczkową CaCO₃.</li>
+<li>Reakcja: 2Mg + O₂ → 2MgO; masy porcji 48 : 32 : 80. Przy 12 g Mg i 12 g O₂ — który substrat skończy się pierwszy?</li>
+<li>Dlaczego nie wolno obliczać ilości produktu z substratu nadmiarowego? Odpowiedz jednym zdaniem.</li>
+<li>Do 6 g magnezu dodano dokładnie 4 g tlenu i spalono wszystko. Czy któryś substrat był w nadmiarze? Ile MgO powstało?</li>
+</ol>
+<details class="answer"><summary>Klucz diagnozy</summary>
+<ol>
+<li>(1 pkt) Stosunek liczb cząsteczek (atomów) substratów i produktów — „przepis”, z którego wynikają stałe proporcje mas.</li>
+<li>(1 pkt) 40 + 12 + 3·16 = 100.</li>
+<li>(1 pkt) Magnez: na 48 g Mg (3 porcje) przypada 32 g O₂ (2 porcje), więc na 12 g Mg potrzeba tylko 8 g O₂ — tlenu (12 g) jest więcej, niż może zareagować; kończy się magnez.</li>
+<li>(1 pkt) Bo nadmiar bierze w reakcji udział tylko częściowo — rachunek z nadmiaru dałby produkt „ważący” więcej niż wkład, wbrew prawu zachowania masy.</li>
+<li>(1 pkt) Nie — 6 : 4 to dokładnie proporcja 48 : 32 (stosunek stechiometryczny); zużywa się wszystko i powstaje 10 g MgO (6 + 4 = 10, bilans zgadza się).</li>
+</ol>
+</details>
+<p>Rozliczenie: 5 pkt — przejdź szybko sekcje 2–3 i trenuj od zadań typu E8; 3–4 pkt — przerabiaj lekcję po kolei; 0–2 pkt — zacznij od wykładu: metafora przepisu wszystko poukłada.</p>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">1</span> Wykład — przepis, porcje i konkurencja składników {#wyklad} <span class="level-badge level-basic">E8</span></div>
+<p>Otwórz w wyobraźni książkę kucharską. Przepis brzmi: „2 jajka + 1 szklanka mąki → 1 tort”. Wszystko jasne: proporcje sztywne, na jedno jajko więcej tort nie urośnie, a szklanka mąki więcej tort nie pomnoży. Teraz zrób zapasy: masz 6 jajek i 2 szklanki mąki. Ile tortów? Dwa — bo mąka pozwala na dwa, choć jajek starczy aż na trzy. Zostają 2 jajka. Mąka się skończyła pierwsza — <strong>to ona wyznacza wynik</strong>. Jajka są w nadmiarze: biorą udział w wypieku, ale tylko częściowo.</p>
+<p>Równanie chemiczne to dokładnie ten sam przepis, tylko precyzyjniejszy. Zamiast jajek i szklanek — cząsteczki i gramy. Zamiast „1 tort” — produkt. I jedna ważna różnica: w kuchni odchodzisz trochę od proporcji „na oko”, a chemia nie wybacza żadnego odchylenia — proporcje są sztywne z natury materii, zapisane w równaniu współczynnikami.</p>
+<p>Weźmy naszą pracę na całą lekcję: <strong>2Mg + O₂ → 2MgO</strong> (spalanie magnezu). Odczyt przepisu: dwie jednostki magnezu reagują z jedną jednostką tlenu (O₂ — cząsteczka dwuatomowa!) i dają dwie jednostki tlenku magnezu. Współczynniki 2 : 1 : 2 to stosunek cząsteczek. A ponieważ cząsteczki mają znane masy, ten sam stosunek przelicza się na masy: magnez 2·24 = 48, tlen 32, tlenek magnezu 2·40 = 80. Pod równaniem zapisujemy: <strong>48 : 32 : 80</strong>. To są <strong>masy porcji</strong> — „przepisowe gramy”, które zawsze pozostają w tej samej proporcji, niezależnie od tego, czy w probówce reagują miligramy, czy w piecu tony. Chcesz 10 g MgO? To 10/80 = 0,125 porcji: trzeba 0,125·48 = 6 g Mg i 0,125·32 = 4 g O₂. Ułamek porcji? Żaden problem — chemia liczy ułamki tak samo jak kuchnia połówki przepisu.</p>
+<p>I teraz najważniejsze zdanie tej lekcji, z którego wynika cały algorytm: <strong>substraty rzadko trafiają do probówki w idealnej proporcji przepisu</strong>. Ktoś odważył 12 g magnezu i 12 g tlenu — a przepis chce na 12 g magnezu tylko 8 g tlenu. Co się dzieje z resztą tlenu? Nic — zostaje. Reakcja zatrzymuje się w chwili, gdy <strong>pierwszy skończy się któryś substrat</strong> — tutaj magnez. Ten, który się kończy, nazywamy <strong>substratem ograniczającym</strong>: to on wyznacza maksymalną ilość produktów, tak jak mąka wyznacza liczbę tortów. Drugi — <strong>substrat nadmiarowy</strong> — bierze udział w reakcji tylko częściowo, a jego reszta zostaje nietknięta.</p>
+<p>Skąd wiadomo, który skończy się pierwszy? Są dwie drogi, obie uczciwe. <strong>Metoda „ile potrzeba”</strong>: wybierz jeden substrat za punkt odniesienia i policz, ile potrzeba drugiego. Na 12 g Mg (przepis: 48 → 32) potrzeba (32/48)·12 = 8 g O₂. Masz 12 g — czyli nadmiar; ogranicza magnez. <strong>Metoda porcji</strong>: podziel każdą podaną masę przez jej przepisową masę porcji. Magnez: 12/48 = 0,25 porcji. Tlen: 12/32 = 0,375 porcji. <strong>Mniejsza liczba porcji wygrywa tytuł „ograniczający”</strong> — bo jego porcje kończą się pierwsze. Obie metody zawsze dają ten sam werdykt; wybierz tę, która ci wygodniej idzie, a drugą miej na sprawdzanie.</p>
+<p>Skoro ograniczający wyznacza wynik, <strong>produkty liczymy wyłącznie z niego</strong>. Tu nauczycielska przestroga z tysiącami ofiar: rachunek z substratu nadmiarowego daje absurd. Policzmy na przekorę z tlenu: MgO = (12/32)·80 = 30 g. Ale przecież do probówki włożyliśmy 12 + 12 = 24 g! Produkt nie może ważyć więcej niż wszystko, co włożyliśmy — prawo zachowania masy wprost zabrania. Ten absurd to nie ciekawostka, to narzędzie: na sprawdzianie i na konkursie <strong>bilans masy jest twoim detektywem</strong>. Zsumuj masy substratów, które naprawdę zareagowały, i porównaj z sumą produktów: 12 g Mg + 8 g O₂ = 20 g = 20 g MgO. Zgadza się — rachunek prawdopodobnie poprawny. Nie zgadza się — gdzieś jest błąd, znajdź go przed oddaniem pracy.</p>
+<p>Cały algorytm mieści się więc w sześciu krokach: <strong>(1) zbilansuj równanie</strong> — bez tego wszystkie proporcje kłamią; <strong>(2) policz masy porcji</strong> pod równaniem; <strong>(3) porównaj porcje</strong> substratów (albo policz „ile potrzeba”); <strong>(4) wyznacz ograniczający</strong> — mniejsza porcja; <strong>(5) licz produkty i zużycie nadmiaru proporcjami z ograniczającego</strong>, resztę nadmiaru jako masa początkowa − zużyta; <strong>(6) zamknij bilans masy</strong> i zapisz odpowiedź z jednostką i nazwą substancji. Ten schemat przenosi cię przez każdy arkusz — od spalania magnezu po przemysłowe wapienniki.</p>
+<p>Dwa szczegóły, które na egzaminie rozdają punkty. <strong>Jednostki i nazwy</strong>: nie „20”, tylko „20 g MgO” — masa bez substancji to pół odpowiedzi. <strong>Zaokrąglenia</strong>: licz na kalkulatorze z pełną dokładnością, zaokrąglaj dopiero wynik końcowy do 2–3 cyfr znaczących; zaokrąglanie w środku rachunku kumuluje błąd — 4,9 staje się 5,1, a na konkursie to różnica między punktem a jego brakiem.</p>
+<p>A gdzie „bez mola”? Cała powyższa machina działa na masach i proporcjach — dokładnie jak w przepisie kuchennym. Warto jednak wiedzieć, że zawodowi chemicy mają sprawniejszy rejestr: <strong>mole</strong> (porcje po ok. 6·10²³ cząsteczek — orientacyjnie), które pozwalają łączyć masy z objętościami gazów i stężeniami. Zarys tej maszyny zostawiamy do <a href="#olimpijczyk">§9</a> — jako most do liceum; do egzaminu wystarczą proporcje masowe, a tymus „porcji” i tak zostaje ten sam.</p>
+<p>Masz przepis, masz porcje, masz prawo o mniejszej porcji i detektywa-bilans. Teraz krok po kroku, z tabelami, trzema wzorcami egzaminacyjnymi i ośmioma zadaniami konkursowymi — od zwykłego spalania po wapiennik z wydajnością 85%.</p>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">2</span> Równanie jako przepis — stosunki stechiometryczne {#przepis} <span class="level-badge level-basic">E8</span></div>
+<p><strong>Równanie stechiometryczne</strong> (czyli zwykłe, zbilansowane równanie chemiczne) to zapis przepisu. Trzy rzeczy, które trzeba z niego umieć wyczytać:</p>
+<ol>
+<li><strong>Współczynniki</strong> to stosunek liczb cząsteczek (atomów) substratów i produktów: w 2Mg + O₂ → 2MgO na 1 cząsteczkę O₂ przypadają 2 atomy Mg i powstają 2 jednostki MgO (stosunek 2 : 1 : 2).</li>
+<li><strong>Indeksy</strong> we wzorach mówią o składzie cząsteczki: w O₂ jest 2 atomy tlenu, w CaCO₃ — 3 atomy tlenu, w ZnCl₂ — 2 atomy chloru.</li>
+<li>Z pierwszego i drugiego wynika trzecie: <strong>stały stosunek mas</strong>, w jakim substancje reagują i powstają. Ten stosunek nie zależy od ilości — dotyczy miligramów i ton równie dobrze.</li>
+</ol>
+<p><strong>Przykład odczytu dla spalania metanu:</strong></p>
+<p>CH₄ + 2O₂ → CO₂ + 2H₂O
+(1 cząsteczka metanu + 2 cząsteczki tlenu → 1 cząsteczka dwutlenku węgla + 2 cząsteczki wody)</p>
+<div class="card card-core">
+<span class="card-label">Najważniejsze — trzy odczyty jednego równania</span>
+<p>Współczynniki: stosunek porcji cząsteczek (2 : 1 : 2). Indeksy: skład porcji (O₂ = dwa atomy tlenu). Masy porcji: przepis w gramach (48 : 32 : 80 dla magnezu). Wszystkie trzy odczyty to jedno równanie patrzone z trzech stron — i wszystkie trzy prowadzą do tych samych proporcji.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Uwaga — indeks w O₂ to nie literówka</span>
+<p>W zadaniach o spalaniu najczęstszy błąd to traktowanie O₂ jak „O”: tlen cząsteczkowy składa się z <strong>dwóch</strong> atomów, więc jego masa porcji to 32 (2·16), nie 16. Podobnie H₂ to 2, N₂ to 28. Jedna zapomniana dwójka psuje wszystkie proporcje w zadaniu — dlatego masy porcji zawsze przeliczaj z wzoru, nigdy „z pamięci”.</p>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 1 (2 pkt) — Trzy odczyty przepisu</span>
+<p>Równanie: 2H₂ + O₂ → 2H₂O.
+a) Podaj stosunek porcji cząsteczek substratów i produktu oraz stosunek ich mas (H = 1, O = 16). (1 pkt)
+b) Ile cząsteczek wody powstanie z 5 cząsteczek wodoru przy nadmiarze tlenu? Uzasadnij, dlaczego rozumowanie prowadzimy na porcjach, a nie na pojedynczych cząsteczkach. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) Cząsteczki: 2 : 1 : 2. Masy porcji: H₂ → 2·1 = 2, więc 2H₂ = 4; O₂ = 32; 2H₂O = 2·18 = 36. Stosunek mas 4 : 32 : 36 (czyli 1 : 8 : 9).
+b) (1 pkt) Stosunek H₂ : H₂O wynosi 1 : 1, więc z 5 cząsteczek H₂ powstanie 5 cząsteczek H₂O (zgodnie z porcjami zużyje się też 2,5 „porcji” O₂ — a pojedyncze cząsteczki nie dzielą się na pół, dlatego w praktyce rozumujemy na dużych liczbach porcji, czyli na masach; na poziomie makroskopowym odpowiedź 5 jest poprawna).</p>
+</details>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">3</span> Masy porcji — tabliczka mnożenia stechiometrii {#masy} <span class="level-badge level-basic">E8</span> <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<p><strong>Masa porcji</strong> to masa „jednego zestawu” reakcji zgodnie ze współczynnikami — i to jedyna liczba, którą trzeba umieć policzyć samodzielnie. Wzór: masa porcji = suma mas atomowych wszystkich atomów we wzorze, pomnożonych przez współczynnik. Dla wygody liczby mas atomowych przyjmujemy w całej lekcji takie: H = 1, C = 12, N = 14, O = 16, Na = 23, Mg = 24, S = 32, Cl = 35,5, Ca = 40, Fe = 56, Cu = 64, Zn = 65.</p>
+<p><strong>Trzy przykłady zapisu porcji pod równaniem:</strong></p>
+<p>2Mg + O₂ → 2MgO
+48 : 32 : 80
+(skrót: 3 : 2 : 5 — czyli 12 g Mg + 8 g O₂ → 20 g MgO)</p>
+<p>CaCO₃ → CaO + CO₂
+100 : 56 : 44
+(CaCO₃ = 40 + 12 + 48 = 100; CaO = 56; CO₂ = 12 + 32 = 44)</p>
+<p>Zn + 2HCl → ZnCl₂ + H₂
+65 : 73 : 136 : 2
+(HCl = 1 + 35,5 = 36,5; 2HCl = 73; ZnCl₂ = 65 + 71 = 136)</p>
+<p>Zwróć uwagę, gdzie „chowają się” współczynniki i indeksy: w 2HCl masą porcji jest <strong>73</strong> (nie 36,5), w ZnCl₂ chlor wchodzi podwójnie (2·35,5 = 71), a w 2MgO porcja to <strong>80</strong> (nie 40). Pominięcie współczynnika albo indeksu to najtańszy sposób na stracenie całego zadania.</p>
+<p>Zapisy „u” i „g” w praktyce szkolnej: masa cząsteczkowa ma jednostkę u, ale ponieważ proporcje są identyczne, pod równaniem pracujemy tymi liczbami bezpośrednio w gramach — to jest właśnie sens metody „bez mola”: liczby z tablicy periodicznej wchodzą do proporcji bez dodatkowych przekształceń.</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie — masy porcji</span>
+<p>Masa porcji to „cennik” reakcji: ile gramów każdej substancji bierze udział w jednym zestawie reakcji wg współczynników. Liczysz ją raz dla każdej reakcji: wzór → atomy → współczynniki. Od tej chwili każde zadanie z tą reakcją to operacje na jednej linijce liczb: 65 : 73 : 136 : 2. Jeśli porcje masz wyliczone poprawnie, reszta zadania to arytmetyka na proporcjach — i dlatego warto je trenować na pamięć dla reakcji najczęstszych.</p>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 2 (3 pkt) — Wyznacz masy porcji</span>
+<p>a) Wyznacz masy porcji dla rozkładu węglanu wapnia: CaCO₃ → CaO + CO₂. (1 pkt)
+b) Wyznacz masy porcji dla reakcji węglanu wapnia z kwasem: CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂. (1 pkt)
+c) Wyjaśnij, dlaczego w porcjach dla b) woda ma masę 18, a kwas 73. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) CaCO₃ = 40 + 12 + 3·16 = 100; CaO = 40 + 16 = 56; CO₂ = 12 + 2·16 = 44. Porcje: 100 : 56 : 44.
+b) (1 pkt) CaCO₃ = 100; 2HCl = 2·36,5 = 73; CaCl₂ = 40 + 2·35,5 = 111; H₂O = 18; CO₂ = 44. Porcje: 100 : 73 : 111 : 18 : 44.
+c) (1 pkt) Woda nie ma współczynnika, więc jej porcja to po prostu masa cząsteczkowa (18); kwas chlorowodorowy ma współczynnik 2, więc jego porcja to 2·36,5 = 73 — współczynnik przed wzorem mnoży całą masę cząsteczkową.</p>
+</details>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">4</span> Substrat ograniczający i nadmiar — dwie metody porównania {#nadmiar} <span class="level-badge level-understand">ROZUMIENIE</span> <span class="level-badge level-basic">E8</span></div>
+<p><strong>Substrat ograniczający</strong> to ten, który kończy się w reakcji pierwszy — wyznacza maksimum produktów, jak mąka w przepisie na torty. <strong>Substrat nadmiarowy</strong> bierze udział tylko częściowo; jego reszta zostaje po reakcji. I najważniejsza zasada praktyczna: <strong>porównujemy porcje, nie gołe masy</strong>. To, że magnezu „więcej gramów”, nie znaczy, że jest w nadmiarze — wszystko zależy od proporcji przepisu.</p>
+<p><strong>Metoda 1 — „ile potrzeba”.</strong> Wybierz jeden substrat za punkt odniesienia i policz z porcji, ile potrzeba drugiego. Porównaj z tym, co faktycznie dano.</p>
+<p>12 g Mg + 12 g O₂ (porcje 48 : 32):
+na 12 g Mg potrzeba (32/48)·12 = <strong>8 g O₂</strong>; dano 12 g → O₂ w nadmiarze → <strong>ogranicza Mg</strong>.</p>
+<p><strong>Metoda 2 — porcje.</strong> Podziel każdą podaną masę przez jej masę porcji:</p>
+<p>Magnez: 12/48 = <strong>0,25 porcji</strong>; tlen: 12/32 = <strong>0,375 porcji</strong>.
+Mniejsza liczba = ograniczający → <strong>Mg</strong> (0,25 &lt; 0,375).</p>
+<p>Obie metody dają identyczny werdykt. Metoda porcji jest mechaniczna i bezpieczna (dzielenie i porównanie), metoda „ile potrzeba” jest bardziej intuicyjna i świetnie sprawdza wynik drugiej. Na sprawdzianie wybierz jedną i konsekwentnie ją stosuj — a na konkursie miej obie, bo czasem zadanie pyta wprost „ile gramów jednego substratu potrzeba na drugi”.</p>
+<p>A kiedy nadmiaru <strong>nie ma</strong>? Gdy porcje są równe: 6 g Mg i 4 g O₂ dają po 0,125 porcji każde — substraty w <strong>stosunku stechiometrycznym</strong>. Wtedy zużywa się wszystko i bilans masy wygląda najprościej, jak da się: 6 + 4 = 10 = 10 g MgO. Zadania czasem celowo podają taką proporcję — ucznia, który rutynowo szuka nadmiaru, wtedy gubi brak reszty.</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie — mniejsza porcja wygrywa</span>
+<p>Nie pytaj „czego jest więcej gramów”, pytaj „czego jest mniej porcji”. Porcja = podana masa ÷ masa porcji z równania. Mniejszy wynik → substrat ograniczający → z niego liczymy wszystko. Równy wynik → stosunek stechiometryczny → nic nie zostaje. Wynik dla nadmiarowego nigdy nie służy do liczenia produktu — służy tylko do policzenia, ile go zużyto i ile zostało.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Uwaga — „więcej gramów” to nie „nadmiar”</span>
+<p>Porównanie 12 g Mg z 12 g O₂ „na oko” (równe — więc wszystko zareaguje?) to błąd, który kosztuje cały rachunek: tu właśnie magnez kończy się pierwszy, mimo że waży tyle samo. Kierunek błędu bywa obu stronny: uczniowie uznają za nadmiarowy substrat cięższy, a to porcje decydują. Reguła ostrzegawcza: każde zdanie „X jest w nadmiarze” musi mieć za sobą obliczenie porcji albo „ile potrzeba” — samo wskazanie palcem nie dostaje punktu.</p>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 3 (3 pkt) — Dwie metody, jeden werdykt</span>
+<p>Do spalania użyto 12 g magnezu i 12 g tlenu (porcje 48 : 32 : 80).
+a) Rozstrzygnij metodą „ile potrzeba”, który substrat jest ograniczający. (1 pkt)
+b) Rozstrzygnij metodą porcji. (1 pkt)
+c) Podaj masę tlenu, która faktycznie zareaguje. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) Na 12 g Mg potrzeba (32/48)·12 = 8 g O₂; dano 12 g — tlenu za dużo, więc ogranicza magnez.
+b) (1 pkt) Porcje: Mg 12/48 = 0,25; O₂ 12/32 = 0,375. Mniejsza porcja — magnez; metoda potwierdza werdykt z a).
+c) (1 pkt) Reaguje tyle tlenu, ile wymaga ograniczający magnez: 8 g (reszta, 4 g, zostaje).</p>
+</details>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">5</span> Algorytm pełnego rozwiązania — od równania do bilansu {#algorytm} <span class="level-badge level-basic">E8</span> <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<p>Teraz wszystko w jeden schemat — zapisuj go w tej kolejności w każdej pracy pisemnej; kolejność ta sama jest kryterium punktacji na konkursie.</p>
+<p><strong>Zadanie modelowe:</strong> Spalono 6 g magnezu w 8 g tlenu. Oblicz masę powstałego tlenku magnezu i masę reszty nadmiarowego substratu.</p>
+<ol>
+<li><strong>Równanie (zbilansowane!):</strong> 2Mg + O₂ → 2MgO.</li>
+<li><strong>Masy porcji:</strong> 48 : 32 : 80.</li>
+<li><strong>Porównanie porcji:</strong> Mg: 6/48 = 0,125; O₂: 8/32 = 0,25. Mniejsza porcja → <strong>Mg ogranicza</strong>, O₂ nadmiarowy.</li>
+<li><strong>Produkt z ograniczającego:</strong> MgO = (6/48)·80 = <strong>10 g</strong>.</li>
+<li><strong>Zużycie nadmiaru i reszta:</strong> O₂ zużyte = (6/48)·32 = 4 g; reszta = 8 − 4 = <strong>4 g O₂</strong>.</li>
+<li><strong>Bilans masy:</strong> zużyte substraty 6 g Mg + 4 g O₂ = 10 g; produkty 10 g MgO. ✓ <strong>Odpowiedź: powstanie 10 g MgO, a 4 g tlenu pozostanie.</strong></li>
+</ol>
+<p>Zauważ, że proporcję zawsze budujesz z <strong>masy porcji ograniczającego w mianowniku</strong>: (masa ograniczającego / jego porcja) · porcja produktu. Ten jeden wzór zastępuje wszystkie „przekształcania” — wystarczy podstawiać właściwe porcje.</p>
+<p>Druga kontrola, darmowa i bezcenna: <strong>kryterium absurdów</strong>. Suma produktów nie może przekraczać sumy wszystkich substratów włożonych do naczynia, a reszta nadmiaru nie może być ujemna. Jeśli wyszło inaczej — błąd jest wyłącznie w twoim rachunku, nie w naturze.</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie — sześć kroków</span>
+<p>Równanie → masy porcji → porównaj porcje → produkt z mniejszej → reszta = początek − zużyte → bilans masy zamyka sprawę. Każdy krok to jedna linijka zapisu; cały rachunek mieści się w pięciu linijkach pod równaniem. Kolejność kroków jest też kolejnością punktacji: na konkursie rozsypka „wynik bez uzasadnienia” dostaje najwyżej punkt za wynik, nigdy za tok rozumowania.</p>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 4 (5 pkt) — Pełny algorytm na nowych liczbach</span>
+<p>Spalono 6 g magnezu w 4 g tlenu (porcje 48 : 32 : 80).
+a) Zbilansuj równanie i wyznacz masy porcji. (1 pkt)
+b) Wskaż substrat ograniczający metodą porcji. (1 pkt)
+c) Oblicz masę MgO. (1 pkt)
+d) Oblicz masę reszty nadmiaru lub stwierdź, że nadmiaru brak. (1 pkt)
+e) Sprawdź rachunek bilansem masy. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) 2Mg + O₂ → 2MgO; porcje 48 : 32 : 80 (MgO = 2·40).
+b) (1 pkt) Porcje: Mg 6/48 = 0,125; O₂ 4/32 = 0,125 — równe, więc substraty są w stosunku stechiometrycznym (żaden nie jest „ograniczający” w sensie nadmiaru — oba zużyją się całkowicie).
+c) (1 pkt) MgO = 0,125·80 = 10 g (albo z proporcji 48 : 80 = 6 : x → x = 10 g).
+d) (1 pkt) Nadmiaru brak — porcje równe, zużywa się wszystko (6 g Mg i 4 g O₂ w całości).
+e) (1 pkt) 6 g Mg + 4 g O₂ = 10 g = 10 g MgO ✓ — bilans masy potwierdza rachunek; odpowiedź: 10 g MgO, reszty brak.</p>
+</details>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">6</span> Zadania typu E8 — trzy wzorce {#e8} <span class="level-badge level-basic">E8</span></div>
+<p>Trzy reakcje tworzą w arkuszach stałą trójkę: wodoru z cynkiem, dwutlenku węgla z węglanu, spalanie. Opanuj te szablony — na egzaminie zmieniają się tylko liczby.</p>
+<p><strong>Wzorzec 1 — gaz z metalu i kwasu</strong> (Zn + 2HCl → ZnCl₂ + H₂; porcje 65 : 73 : 136 : 2). Typowe pytania: masa wodoru, masa soli, zużyty kwas. Nadmiar bywa jawnie podany („kwas w nadmiarze”) — wtedy ograniczający jest oczywisty i krok porównania można skrócić, ale zapis „kwas w nadmiarze, więc ogranicza Zn” i tak musi się pojawić.</p>
+<p><strong>Wzorzec 2 — rozkład węglanu</strong> (CaCO₃ → CaO + CO₂; porcje 100 : 56 : 44). Jedno-substratowy: ograniczający jest zawsze substrat, liczymy oba produkty. Klasyczna wariacja: „ile wapna z X ton wapienia” — ta sama arytmetyka w skali przemysłowej.</p>
+<p><strong>Wzorzec 3 — spalanie z nadmiarem</strong> (2Mg + O₂ → 2MgO; 48 : 32 : 80 albo CH₄ + 2O₂ → CO₂ + 2H₂O; 16 : 64 : 44 : 36). Tu porównanie porcji jest obowiązkowe — od niego zależy wszystko.</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie — trzy wzorce E8</span>
+<p>Gaz z metalu: sprawdź nadmiar (często jawny) → licz z metalu. Rozkład węglanu: substrat sam w sobie ogranicza → licz oba produkty z proporcji 100 : 56 : 44. Spalanie: porównuj porcje tlenu i paliwa — najczęstsza pułapka egzaminacyjna, bo tlenu „wygląda dużo” w gramach, a przepis żąda go w zestawie 2 : 1 z metanem. Po każdym wzorcu — bilans masy; trzy sekundy pracy, które ratują cały punkt.</p>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 5 (4 pkt) — Wodór z cynku</span>
+<p>Do 6,5 g cynku dodano nadmiar rozcieńczonego kwasu chlorowodorowego (Zn + 2HCl → ZnCl₂ + H₂; porcje 65 : 73 : 136 : 2).
+a) Wskaż substrat ograniczający i uzasadnij. (1 pkt)
+b) Oblicz masę wydzielonego wodoru. (1 pkt)
+c) Oblicz masę powstałego chlorku cynku. (1 pkt)
+d) Oblicz masę zużytego HCl. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) Kwas podano w nadmiarze, więc ogranicza cynk — to z jego masy liczymy wszystkie produkty.
+b) (1 pkt) H₂ = (6,5/65)·2 = 0,2 g (porcja wodoru to 2 — dwie cząsteczki H₂ wg współczynnika… uwaga: porcja H₂ = 2·1·1 = 2).
+c) (1 pkt) ZnCl₂ = (6,5/65)·136 = 13,6 g.
+d) (1 pkt) HCl zużyty = (6,5/65)·73 = 7,3 g. Kontrola bilansu: 6,5 + 7,3 = 13,8 g; produkty 13,6 + 0,2 = 13,8 g ✓.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 6 (4 pkt) — Prażenie wapienia</span>
+<p>Rozłożono 20 g czystego węglanu wapnia (CaCO₃ → CaO + CO₂; porcje 100 : 56 : 44).
+a) Wskaż substrat ograniczający. (1 pkt)
+b) Oblicz masę powstałego tlenku wapnia (wapna palonego). (1 pkt)
+c) Oblicz masę wydzielonego CO₂. (1 pkt)
+d) Sprawdź rachunek bilansem masy. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) Jedynym substratem jest CaCO₃ — to on ogranicza reakcję (produktów liczymy z jego masy).
+b) (1 pkt) CaO = (20/100)·56 = 11,2 g.
+c) (1 pkt) CO₂ = (20/100)·44 = 8,8 g.
+d) (1 pkt) 11,2 + 8,8 = 20 g = masa substratu ✓; bilans potwierdza rachunek.</p>
+</details>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">7</span> Doświadczenia {#doswiadczenia} <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<p>Oba doświadczenia generują dane liczbowe do obliczeń z tej lekcji — traktuj je jak laboratorium, które samo pisze za ciebie treść zadania. Liczby podane w obserwacjach są orientacyjne (zależą od dokładności wagi); rachunek prowadzisz na tych, które uzyskasz lub które podano.</p>
+<div class="exp-card"><h5>Doświadczenie 1 — Spalanie magnezu: kontrola proporcji 3 : 5</h5><div class="exp-grid"><b>Problem</b><span>Czy stosunek masy magnezu do masy powstałego tlenku magnezu zgadza się z porcjami z równania (48 : 80 = 3 : 5)?</span><b>Hipoteza</b><span>Jeśli równanie i porcje są poprawne, z 0,24 g Mg powstanie 0,40 g MgO.</span><b>Sprzęt</b><span>tygiel porcelanowy z pokrywą, szczypty, palnik, statyw z łapą, waga laboratoryjna (dokładność min. 0,01 g), wstążka magnezu (ok. 0,24 g), podkład żaroodporny, szczypce.</span><b>Przebieg</b><span>1) Zważ czysty, suchy tygiel z pokrywą. 2) Włóż zrolowaną wstążkę magnezu, zważ znowu — różnica to masa Mg. 3) Podgrzewaj tygiel z lekko uchyloną pokrywą, aż magnez spłonie i spali się do końca (dopalać ostrożnie, przechylając pokrywę co kilka sekund, aby tlen miał dostęp). 4) Ostudź tygiel do temperatury pokojowej i zważ z zawartością — masa końcowa minus masa tygła z pokrywą to masa MgO.</span><b>Próba kontrolna</b><span>pusty tygiel z pokrywą podgrzewany w tych samych warunkach i ważony przed i po — zmiana masy powinna być pomijalna; potwierdza, że przyrost masy w próbie głównej pochodzi z połączenia Mg z tlenem, a nie z sączenia tygła.</span><b>Obserwacja (orientacyjnie)</b><span>m(Mg) = 0,24 g; m(MgO) = 0,40 g; stosunek 0,24 : 0,40 = 3 : 5.</span><b>Wniosek</b><span>wynik zgadza się z porcjami równania 2Mg + O₂ → 2MgO (48 : 80 = 3 : 5) — masa tlenku to masa magnezu plus masa związana tlenu (0,16 g), co po przeliczeniu daje 0,16/32 = 0,005 porcji tlenu na 0,005·48 = 0,24 g magnezu: idealna proporcja.</span><b>BHP</b><span>nie patrz wprost na płonący magnez (olśniewające światło — szkodzi oczom); rozgrzany tygiel przenoś wyłącznie szczypcami i odkładaj na podkład żaroodporny; pracuj pod nadzorem osoby dorosłej, w wentylowanym miejscu; nie gasź palącego się Mg wodą (gwałtowna reakcja) — przysyp piaskiem.</span></div></div>
+<div class="exp-card"><h5>Doświadczenie 2 — Marmur z kwasem: ubytek masy to CO₂</h5><div class="exp-grid"><b>Problem</b><span>Ile czystego CaCO₃ zawiera próbka marmuru, jeśli znamy masę CO₂, która uleciała podczas reakcji z kwasem?</span><b>Hipoteza</b><span>Ubytek masy kolby równa się masie wydzielonego CO₂; z porcji 100 : 44 przeliczymy masę CaCO₃ i czystość próbki.</span><b>Sprzęt</b><span>kolba stożkowa, waga laboratoryjna, 5,00 g pokruszonego marmuru, rozcieńczony kwas chlorowodorowy (ok. 30 ml), pipeta/lejek, stoper.</span><b>Przebieg</b><span>1) Wstaw kolbę z kwasem na wagę, wyzeruj (tare), dodaj marmur i odczytaj masę całkowitą. 2) Pozostaw bez korka (uwaga — nigdy nie zamykaj szczelnie!) i obserwuj burzliwe wydzielanie gazu. 3) Po ustaniu reakcji (ok. 10–15 min) odczytaj masę końcową. 4) Ubytek masy = masa CO₂, która ulotowała się.</span><b>Próba kontrolna</b><span>identyczna kolba z tym samym kwasem bez marmuru, ważona w tych samych odstępach — ubytek masy (parowanie) powinien być pomijalny; potwierdza, że ubytek w próbie głównej to CO₂, nie parowanie kwasu.</span><b>Obserwacja (orientacyjnie)</b><span>m startowa 100,00 g; m końcowa 97,91 g; ubytek = 2,09 g CO₂.</span><b>Wniosek</b><span>n(CO₂ porcje) = 2,09/44 ≈ 0,0475 → CaCO₃ = 0,0475·100 = 4,75 g z próbki 5,00 g → czystość 95,0%; pozostałe 0,25 g to zanieczyszczenia niereagujące z kwasem — dokładnie ten rachunek wróci w zadaniu 12.</span><b>BHP</b><span>okulary i rękawice — HCl drażni skórę i oczy; nie zamykaj kolby korkiem podczas reakcji (ryzyko rozbicia przez ciśnienie); pracuj na podkładzie, przy dobrej wentylacji; nie pij płynów, po pracy umyj ręce i wylej roztwór zgodnie z instrukcją osoby nadzorującej.</span></div></div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">8</span> Zadania konkursowe {#zadania-konkurs} <span class="level-badge level-exam">KONKURS</span></div>
+<p>Osiem zadań w typach: obliczeniowe, uzasadnianie, znajdź błąd, roztwory, pułapka, analiza danych, analiza tekstu, wydajność. Każde z kluczem i uzasadnieniem — na konkursie wynik bez toku rozumowania nie dostaje pełni punktów.</p>
+<details class="adv"><summary>Zadanie 7 (4 pkt) — Metan spalony dokładnie „na przepis” <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Spalano 8 g metanu w 32 g tlenu (CH₄ + 2O₂ → CO₂ + 2H₂O; porcje 16 : 64 : 44 : 36).
+a) Wskaż, czy któryś substrat jest w nadmiarze. (1 pkt)
+b) Oblicz masę CO₂. (1 pkt)
+c) Oblicz masę H₂O. (1 pkt)
+d) Zamknij bilans masy. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) Porcje: CH₄ 8/16 = 0,5; O₂ 32/64 = 0,5 — równe; substraty w stosunku stechiometrycznym, nadmiaru brak, zużyje się wszystko.
+b) (1 pkt) CO₂ = 0,5·44 = 22 g.
+c) (1 pkt) H₂O = 0,5·36 = 18 g.
+d) (1 pkt) 8 + 32 = 40 g substratów; 22 + 18 = 40 g produktów ✓ — bilans się zamyka, rachunek spójny.</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie 8 (4 pkt) — Rachunek z nadmiaru: wykaż absurd <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Uczeń obliczył masę MgO dla zadania „12 g Mg + 12 g O₂” (porcje 48 : 32 : 80), biorąc za podstawę tlen: m(MgO) = (12/32)·80 = 30 g.
+a) Powtórz ten rachunek i podaj wynik ucznia. (1 pkt)
+b) Wykaż, że wynik przeczy prawu zachowania masy, porównując go z masą substratów włożonych do naczynia. (1 pkt)
+c) Oblicz, ile naprawdę zareagowało substratów, i podaj poprawną masę MgO. (1 pkt)
+d) Sformułuj regułę, która chroni przed tym błędem. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) (12/32)·80 = 30 g — tyle wyszło uczniowi.
+b) (1 pkt) Do naczynia włożono 12 + 12 = 24 g; produkt „30 g” ważyłby o 6 g więcej niż cały wkład — masa wzięła się znikąd, co prawo zachowania masy wyklucza.
+c) (1 pkt) Porcje: Mg 12/48 = 0,25; O₂ 12/32 = 0,375 → ogranicza Mg; zużyte substraty: 12 g Mg + 8 g O₂ = 20 g; MgO = 0,25·80 = 20 g ✓ (zostaje 4 g O₂).
+d) (1 pkt) Produkty liczymy wyłącznie z substratu ograniczającego (mniejszej porcji); rachunek z nadmiaru jest z definicji fałszywy i bilans masy natychmiast to ujawni.</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie 9 (5 pkt) — Znajdź błędy w cudzym rozwiązaniu <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Uczeń rozwiązywał zadanie „Spalono 12 g magnezu w 12 g tlenu; ile MgO powstanie?” (porcje poprawne: 48 : 32 : 80). Jego zapis:
+1. „Masy: Mg = 24, O₂ = 16, MgO = 40.”
+2. „Magnezu i tlenu po 12 g, więc równe ilości — zareaguje wszystko.”
+3. „MgO = 12 g + 12 g = 24 g.”
+4. Odpowiedź bez jednostek substancji: „powstanie 24”.
+Wskaż wszystkie błędy (numerami) i zapisz poprawne rozwiązanie.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>Błąd 1 (1 pkt): masy porcji bez współczynników — powinno być 2·24 = 48 (Mg), 32 (O₂ — dwuatomowa!), 2·40 = 80 (MgO); wartość 16 dla O₂ to pominięcie indeksu 2.
+Błąd 2 (1 pkt): porównanie gołych mas zamiast porcji; porcje: Mg 12/48 = 0,25, O₂ 12/32 = 0,375 — nie są równe; ogranicza magnez, tlen zostaje częściowo.
+Błąd 3 (1 pkt): „suma substratów = produkt” zakłada zużycie wszystkiego; poprawnie produkt = 0,25·80 = 20 g, a bilans zamyka się na zużytych 12 + 8 = 20 g (zostaje 4 g O₂).
+Błąd 4 (1 pkt): odpowiedź bez jednostki i nazwy substancji; poprawnie: „powstanie 20 g MgO”.
+Poprawne rozwiązanie (1 pkt): 2Mg + O₂ → 2MgO; porcje 48 : 32 : 80; porcje danych 0,25 i 0,375 → Mg ogranicza; MgO = 20 g; O₂ zużyte 8 g, reszta 4 g; bilans 12 + 8 = 20 ✓.</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie 10 (5 pkt) — Cynk w roztworze siarczanu(VI) miedzi(II) <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Do 200 g roztworu CuSO₄ o stężeniu 10% wrzucono 5 g cynku (Zn + CuSO₄ → ZnSO₄ + Cu; porcje 65 : 160 : 161 : 64; Cu = 64, Zn = 65, S = 32, O = 16).
+a) Oblicz masę czystego CuSO₄ w roztworze. (1 pkt)
+b) Wskaż substrat ograniczający metodą porcji. (1 pkt)
+c) Oblicz masę wydzielonej miedzi. (1 pkt)
+d) Oblicz masę powstałego ZnSO₄. (1 pkt)
+e) Oblicz masę CuSO₄ pozostałą w roztworze. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) m(CuSO₄) = 200·10% = 20 g.
+b) (1 pkt) Porcje: Zn 5/65 ≈ 0,077; CuSO₄ 20/160 = 0,125 — mniejsza porcja cynku → ogranicza Zn.
+c) (1 pkt) Cu = (5/65)·64 ≈ 4,92 g (osad czerwonej miedzi — obserwacja z lekcji X04).
+d) (1 pkt) ZnSO₄ = (5/65)·161 ≈ 12,38 g.
+e) (1 pkt) CuSO₄ zużyte = (5/65)·160 ≈ 12,31 g; reszta = 20 − 12,31 ≈ 7,69 g. Kontrola: 5 + 12,31 = 17,31 g; 4,92 + 12,38 = 17,30 g ✓ (różnica 0,01 g to zaokrąglenia).</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie 11 (4 pkt) — Pułapka: „przecież wodoru jest dużo” <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Zmieszano 4 g wodoru z 8 g tlenu i zainicjowano reakcję (2H₂ + O₂ → 2H₂O; porcje 4 : 32 : 36).
+a) Wskaż substrat ograniczający metodą porcji. (1 pkt)
+b) Oblicz masę wody. (1 pkt)
+c) Oblicz masę reszty nadmiaru. (1 pkt)
+d) Wyjaśnij, dlaczego stwierdzenie „wodór zużyje się w całości, bo go podano dokładnie 4 g, czyli jedną porcję” jest błędne. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) Porcje: H₂ 4/4 = 1; O₂ 8/32 = 0,25 — mniejsza porcja tlenu → ogranicza O₂.
+b) (1 pkt) H₂O = 0,25·36 = 9 g.
+c) (1 pkt) H₂ zużyte = 0,25·4 = 1 g; reszta = 4 − 1 = 3 g H₂ (bilans: 1 + 8 = 9 ✓).
+d) (1 pkt) „Jedna porcja” wodoru to warunek konieczny, ale nie wystarczający — reakcja zużywa H₂ i O₂ zawsze razem w stosunku 4 : 32; skoro tlenu starcza tylko na 0,25 porcji zestawu, to i wodoru spali się 0,25 porcji (1 g), a 3 g czeka bezczynnie — bo z czym ma zareagować?</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie 12 (4 pkt) — Czystość marmuru (analiza danych z doświadczenia 2) <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>W doświadczeniu 2 zmierzono: próbka marmuru 5,00 g; ubytek masy kolby po reakcji z nadmiarem HCl — 2,09 g (CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂; porcje 100 : 73 : 111 : 18 : 44).
+a) Wyjaśnij, dlaczego ubytek masy można utożsamić z masą CO₂. (1 pkt)
+b) Oblicz masę CaCO₃ w próbce. (1 pkt)
+c) Oblicz zawartość procentową CaCO₃ w marmurze. (1 pkt)
+d) Podaj masę i charakter zanieczyszczeń oraz uzasadnij, że HCl był w nadmiarze. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) Jedyne gazowe/lotne substrat produkt to CO₂ (CaCl₂ i H₂O zostają w kolbie, CaCO₃ jest stały); próba kontrolna wykluczyła parowanie kwasu — ubytek 2,09 g to uleciały CO₂.
+b) (1 pkt) Porcje CO₂: 2,09/44 ≈ 0,0475 → CaCO₃ = 0,0475·100 = 4,75 g.
+c) (1 pkt) 4,75/5,00 · 100% = 95,0%.
+d) (1 pkt) Zanieczyszczenia: 5,00 − 4,75 = 0,25 g substancji niereagujących z kwasem (nie dają CO₂); HCl był w nadmiarze, bo warunek doświadczenia tak stanowi, a wniosek o czystości jest poprawny wyłącznie przy założeniu pełnego rozpuszczenia CaCO₃ — stąd kontrola, czy po reakcji nie zostały białe grudki węglanu.</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie 13 (5 pkt) — Wapiennik: analiza tekstu przemysłowego <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Przeczytaj fragment: „W wapienniku wypala się wapień: CaCO₃ → CaO + CO₂ (porcje 100 : 56 : 44). Dostawiono 250 kg wapienia o zawartości 90% CaCO₃. Otrzymano 107,1 kg wapna palonego.”
+a) Oblicz masę czystego CaCO₃ w dostawie. (1 pkt)
+b) Oblicz teoretyczną masę CaO. (1 pkt)
+c) Oblicz teoretyczną masę CO₂, która ulotuje się do atmosfery. (1 pkt)
+d) Oblicz wydajność reakcji (%). (1 pkt)
+e) Wyjaśnij, czemu teoria mówi o „maksimum”, a przemysł o „wydajności”. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) 250·90% = 225 kg CaCO₃ (zanieczyszczenia 25 kg nie biorą udziału w reakcji).
+b) (1 pkt) Porcje CaCO₃: 225/100 = 2,25 → CaO = 2,25·56 = 126 kg.
+c) (1 pkt) CO₂ = 2,25·44 = 99 kg.
+d) (1 pkt) Wydajność = 107,1/126 · 100% = 85%.
+e) (1 pkt) Rachunek porcji zakłada idealne warunki: pełne rozłożenie, brak strat, 100% produktu; w praktyce część CaCO₃ się nie rozłoży, część produktu ucieka z pyłem, piec chłodzi — stąd rzeczywista masa jest niższa od teoretycznej, a ich stosunek to wydajność; dla przemysłu wydajność decyduje o kosztach, dla ucznia — jest kontrolą, czy dobrze rozumie różnicę teoria/praktyka.</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie 14 (4 pkt) — Wielki piec w miniaturowym zapisie <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Zredukowano 80 g tlenku żelaza(III) nadmiarem tlenku węgla: Fe₂O₃ + 3CO → 2Fe + 3CO₂ (porcje 160 : 84 : 112 : 132; Fe = 56, O = 16, C = 12). Otrzymano 50,4 g żelaza.
+a) Oblicz teoretyczną masę żelaza. (1 pkt)
+b) Oblicz wydajność reakcji. (1 pkt)
+c) Oblicz masę zużytego CO. (1 pkt)
+d) Sprawdź bilans masy dla substancji, które zareagowały. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) Porcje Fe₂O₃: 80/160 = 0,5 → Fe teoretycznie = 0,5·112 = 56 g.
+b) (1 pkt) Wydajność = 50,4/56 · 100% = 90%.
+c) (1 pkt) CO zużyte = 0,5·84 = 42 g.
+d) (1 pkt) Zareagowało 80 g Fe₂O₃ + 42 g CO = 122 g; produkty przy 100%: 56 g Fe + 66 g CO₂ (0,5·132); przy wydajności 90% żelaza 50,4 g — kontrola pełnego bilansu ma sens dopiero przy teoretycznej masie: 56 + 66 = 122 ✓; produkt rzeczywisty 50,4 g wskazuje, że 5,6 g „potencjału żelaza” zostało w nieprzerobionym substracie/stratach — stąd wnioski z e)-typu zadań przemysłowych.</p>
+</details>
+</div></details>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">9</span> Dla olimpijczyka — pogłębienie {#olimpijczyk} <span class="level-badge level-exam">KONKURS</span> <span class="level-badge level-extra">AMBITNE</span></div>
+<p><strong>Dwa procenty, które mylą wszystkie pokolenia: czystość ≠ wydajność.</strong> Zawartość procentowa (czystość) opisuje <strong>wejście</strong>: ile w próbce jest substancji, która w ogóle zareaguje (250 kg wapienia 90% → 225 kg aktora). Wydajność opisuje <strong>wyjście</strong>: ile z teoretycznego maksimum faktycznie udało się uzyskać (126 kg teorii → 107,1 kg praktyki = 85%). W jednym zadaniu mogą wystąpić oba — wtedy mnożysz porządnie: najpierw czystość wejścia, potem algorytm, na końcu wydajność wyjścia. Mylenie ich to klasyka pierwszego etapu konkursów.</p>
+<p><strong>Bilans masy jako narzędzie kryminalistyczne.</strong> Prawo zachowania masy (Lomonosow/Lavoisier, XVIII w. — orientacyjnie) bywa na olimpiadzie ukrytym warunkiem zadania: „po reakcji masa naczynia zmalała o 2,2 g” oznacza „uleciało 2,2 g gazu”; „przyrosło o 0,8 g” — „wtargnęło 0,8 g tlenu z powietrza”. Ubytek i przyrost masy to dane stechiometryczne w przebraniu. Ćwicz zamianę „ważenia” na „gramy reagentu” — doświadczenie 2 jest wzorem tej zamiany.</p>
+<p><strong>Stechiometria w silniku i rakiecie.</strong> Silnik benzynowy pracuje na mieszance paliwo : powietrze o masowym stosunku orientacyjnie 1 : 14,7 (tzw. stechiometryczny — do weryfikacji w literaturze motoryzacyjnej); bogatsza (więcej paliwa) — daje moc, ale i niespalone węglowodory, uboższa — ekonomię i wyższe temperatury. Rakieta na wodór: 2H₂ + O₂ → 2H₂O wymaga masowo 1 : 8 — i zbiorniki projektuje się dokładnie w tej proporcji; każdy kilogram „niepotrzebnego” nadmiaru to kilogram, którego nie zabrał ładunek. Nasze zadanie 11 to rakieta w miniaturowej probówce.</p>
+<p><strong>Mole — skrót zawodowców (zarys, liceum).</strong> Wszystko, co robisz porcjami mas, da się zrobić porcjami „tysięcy bilionów bilionów cząsteczek” (mol, ok. 6·10²³ — orientacyjnie): masa molowa w gramach, stosunki molowe ze współczynników, objętości gazów po przeliczeniu. Wyniki wychodzą identyczne — mola skracają zapis i otwierają objętości oraz stężenia molowe. Do egzaminu ósmoklasisty proporcje masowe w zupełności wystarczają (a tytuł lekcji je egzekwuje), ale jeśli w zadaniu konkursowym zobaczysz „mol”, nie panikuj: to twój algorytm z innym dzielnikiem (do weryfikacji zakresu w aktualnym informatorku LKO).</p>
+<p><strong>Granice modelu.</strong> Porcje masowe zakładają reakcję „na wskroś” i produkty czyste. Przestrzegaj trzech zastrzeżeń: reakcje odwracalne nie idą do końca (stąd wydajność &lt; 100% bywa też kwestią równowagi — liceum), produkty uboczne zjadają substrat bez pytania, a „nadmiar” podany w zadaniu bywa nadmiarem pozornym (spalanie Mg w powietrzu: tlen jest, ale dyfuzja ogranicza — kinetyka, nie stechiometria). Na etapie rejonowym te niuanse sprawdza się zwykle jednym zdaniem uzasadnienia — dokładnie tak, jak robiliśmy przy absurdzie z zadania 8.</p>
+<div class="card card-understand">
+<span class="card-label">Dla olimpijczyka — w skrócie</span>
+<p>Cztery bronie: 1) czystość = wejście (ile aktora w próbce), wydajność = wyjście (ile z teorii wyszło) — nie zamieniaj; 2) ubytek/przyrost masy to masa gazu, który wszedł lub wyleciał — bilans masy czyta wagę jak licznik; 3) silnik i rakieta to stechiometria w skali produkcyjnej (1 : 14,7 benzyna; 1 : 8 wodór — orientacyjnie); 4) mole to twoje porcje pod inną nazwą — algorytm zostaje, zmienia się tylko dzielnik. Każdy z tych punktów wraca w zadaniach etapowych.</p>
+</div>
+<nie-myl>
+<summary>Cztery pary do rozstrzygania</summary>
+<ul>
+<li>Substrat ograniczający ≠ substrat o mniejszej masie — decydują porcje (12 g Mg ogranicza przy 12 g O₂); test rozstrzygający: policz porcje, nie patrz na gramy.</li>
+<li>Masa produktów ≠ masa substratów włożonych — równe tylko przy braku nadmiaru; test rozstrzygający: porównuj z masą zużytych substratów (12 + 8 = 20, nie 12 + 12 = 24).</li>
+<li>Czystość ≠ wydajność — wejście vs wyjście; test rozstrzygający: „procent próbki” = czystość, „procent teorii” = wydajność.</li>
+<li>Reszta nadmiaru ≠ masa zużyta — reszta = początkowa − zużyta; test rozstrzygający: zapisz oba i sprawdź, czy ich suma daje masę początkową.</li>
+</ul>
+</nie-myl>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">10</span> Klinika błędów {#klinika} <span class="level-badge level-basic">E8</span> <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<table class="klinika-table"><thead><tr><th>Błąd</th><th>Poprawnie</th><th>Dlaczego?</th></tr></thead><tbody><tr class="error-row"><td class="col-blad" data-label="Błąd">„Równanie wygląda dobrze, liczę od razu proporcje.”</td><td class="col-ok" data-label="Poprawa">Najpierw sprawdź bilans współczynników, dopiero potem wyznaczaj masy porcji.</td><td data-label="Dlaczego">Współczynniki wyznaczają porcje; niezbalansowane równanie daje porcje-fantazje i cały rachunek kłamie.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Magnezu 12 g, tlenu 12 g — po równo, więc wszystko zareaguje.”</td><td class="col-ok" data-label="Poprawa">Porcje: 12/48 = 0,25 i 12/32 = 0,375 — ogranicza magnez.</td><td data-label="Dlaczego">Porównuje się porcje (masa ÷ masa porcji), nie gołe gramy; równe masy przy nierównych porcjach to nadmiar jednej strony.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„MgO policzę z tlenu, bo go jest 12 g.”</td><td class="col-ok" data-label="Poprawa">Produkty liczymy z substratu ograniczającego: MgO = 0,25·80 = 20 g.</td><td data-label="Dlaczego">Rachunek z nadmiaru daje produkt ważący więcej niż cały wkład (30 g > 24 g) — sprzeczność z prawem zachowania masy.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Wyszło 20 g MgO z 12 g Mg i 12 g O₂ — a wkładałem 24 g, więc coś nie zgoda?”</td><td class="col-ok" data-label="Poprawa">Bilans prowadzisz na substratach zużytych: 12 g Mg + 8 g O₂ = 20 g ✓; 4 g O₂ zostaje.</td><td data-label="Dlaczego">Prawo zachowania masy dotyczy substancji uczestniczących w reakcji, nie wszystkich włożonych; nadmiar celowo nie bierze udziału.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„O₂ to 16, przecież tlen to tlen.”</td><td class="col-ok" data-label="Poprawa">O₂ = 32 (2·16).</td><td data-label="Dlaczego">Tlen cząsteczkowy jest dwuatomowy; pominięcie indeksu 2 psuje wszystkie porcje w zadaniu o spalaniu.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„2HCl to 36,5, a 2MgO to 40.”</td><td class="col-ok" data-label="Poprawa">2HCl = 73; 2MgO = 80.</td><td data-label="Dlaczego">Współczynnik przed wzorem mnoży całą masę cząsteczkową porcji; bez tego proporcje są ślepe na przepis.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Wydajność 90% — dodam więc 10% do wyniku teoretycznego.”</td><td class="col-ok" data-label="Poprawa">Wydajność mnoży: m rzeczywista = teoretyczna · 0,90.</td><td data-label="Dlaczego">„+10%” daje 110% teorii — więcej niż fizycznie możliwe; wydajność ≤ 100% zawsze.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Próbka 250 g wapienia to 250 g CaCO₃.”</td><td class="col-ok" data-label="Poprawa">Czystego: 250·90% = 225 g; zanieczyszczenia (25 g) nie reagują.</td><td data-label="Dlaczego">Rachunki porcji prowadzi się na masie czystej substancji; liczenie na zanieczyszczonej zawyża produkty.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„W środku rachunku zaokrąglam do 4,9, potem jeszcze raz…”</td><td class="col-ok" data-label="Poprawa">Prowadź rachunek z pełną dokładnością, zaokrąglaj tylko wynik końcowy (2–3 cyfry znaczące).</td><td data-label="Dlaczego">Zaokrąglenia pośrednie kumulują się: 0,01 z każdego kroku potrafi zmienić wynik o więcej, niż wynosi punkt za dokładność.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Odpowiedź: 20.”</td><td class="col-ok" data-label="Poprawa">Odpowiedź: „powstanie 20 g MgO”.</td><td data-label="Dlaczego">Liczba bez jednostki i bez nazwy substancji to pół odpowiedzi — i pół punktu; na konkursie często zero.</td></tr></tbody></table>
+<div class="myth-grid"><div class="myth"><p class="myth-x"><span>Mit</span>„Większy substrat zawsze jest nadmiarowy.”</p><p class="myth-ok"><span>Poprawnie</span>O nadmiarze decydują porcje, nie masy: 12 g magnezu przy 12 g tlenu kończy się pierwszy, choć waży tyle samo.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Masy produktów zawsze równają się sumie mas substratów początkowych.”</p><p class="myth-ok"><span>Poprawnie</span>Tylko wtedy, gdy wszystkie substraty zużyją się całkowicie; przy nadmiarze produkty równają się masie substratów zużytych (20 g = 12 + 8, nie 24).</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Stechiometria to wkuwanie tablic i wzorów.”</p><p class="myth-ok"><span>Poprawnie</span>To jedna metafora (przepis) i jedna linijka liczb pod równaniem; reszta to dzielenie i mnożenie, które umiesz od podstawówki.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Bez mola zadania obliczeniowe są niemożliwe do rozwiązania.”</p><p class="myth-ok"><span>Poprawnie</span>Proporcje masowe rozwiązują wszystko na poziomie E8 i etapu rejonowego; mole to sprawniejszy rejestr, nie warunek istnienia rachunku.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Reakcja zawsze zużywa wszystkie substraty do zera.”</p><p class="myth-ok"><span>Poprawnie</span>Zużywa do zera tylko substrat ograniczający; nadmiar celowo zostaje — i jego reszta jest zwykle osobnym pytaniem w zadaniu.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Wydajność 100% to norma, a 85% oznacza błąd w rachunku.”</p><p class="myth-ok"><span>Poprawnie</span>Odwrotnie: 100% jest ideałem laboratoryjnym; w praktyce straty, rozkład uboczny i niepełna reakcja są codziennością — dlatego pojęcie wydajności w ogóle istnieje.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Jeśli równanie jest niezbalansowane, wynik i tak się gdzieś zbilansuje.”</p><p class="myth-ok"><span>Poprawnie</span>Nic się nie zbilanansuje samo: niezbalansowane równanie daje złe porcje, złe proporcje i wynik, który bilans masy (gdy go zrobisz) natychmiast obali.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Zaokrąglenia w trakcie nie mają znaczenia, byle wynik ładny.”</p><p class="myth-ok"><span>Poprawnie</span>Znaczenie mają i to duże: kumulacja zaokrągleń pośrednich potrafi przesunąć wynik o tyle, o ile różni się punkt za dokładność — licz pełne, zaokrąglaj końcowe.</p></div></div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">11</span> Ćwiczenia utrwalające {#cwiczenia} <span class="level-badge level-basic">E8</span> <span class="level-badge level-exam">KONKURS</span></div>
+<p>Krótkie treningi bez punktacji — rozgrzewka przed zadaniami. Każde z kluczem.</p>
+<p><strong>Ćwiczenie 1.</strong> Wyznacz masy porcji dla Zn + 2HCl → ZnCl₂ + H₂ (Zn = 65, Cl = 35,5, H = 1).</p>
+<details class="answer"><summary>Klucz</summary>
+<p>Zn 65 : 2HCl 73 : ZnCl₂ 136 : H₂ 2 (ZnCl₂ = 65 + 2·35,5 = 136; 2HCl = 2·36,5 = 73).</p>
+</details>
+<p><strong>Ćwiczenie 2.</strong> 4 g wodoru i 32 g tlenu. Czy któryś jest w nadmiarze? Ile powstanie wody?</p>
+<details class="answer"><summary>Klucz</summary>
+<p>Porcje: H₂ 4/4 = 1; O₂ 32/32 = 1 — stosunek stechiometryczny, nadmiaru brak; H₂O = 36 g; bilans 4 + 32 = 36 ✓.</p>
+</details>
+<p><strong>Ćwiczenie 3.</strong> 24 g magnezu i 16 g tlenu. Oblicz masę MgO (porcje 48 : 32 : 80).</p>
+<details class="answer"><summary>Klucz</summary>
+<p>Porcje: 24/48 = 0,5 i 16/32 = 0,5 — stechiometrycznie; MgO = 0,5·80 = 40 g; zużywa się wszystko (24 + 16 = 40 ✓).</p>
+</details>
+<p><strong>Ćwiczenie 4.</strong> 6,5 g cynku rozpuszczono w nadmiarze HCl. Ile gramów wodoru wydzieli się?</p>
+<details class="answer"><summary>Klucz</summary>
+<p>Porcje 65 : 2 → H₂ = (6,5/65)·2 = 0,2 g.</p>
+</details>
+<p><strong>Ćwiczenie 5.</strong> 10 g czystego CaCO₃ rozłożono całkowicie. Podaj masy produktów.</p>
+<details class="answer"><summary>Klucz</summary>
+<p>CaO = (10/100)·56 = 5,6 g; CO₂ = (10/100)·44 = 4,4 g; bilans 5,6 + 4,4 = 10 ✓.</p>
+</details>
+<p><strong>Ćwiczenie 6.</strong> Uczeń twierdzi: „10 g CaCO₃ da 8 g CaO”. Znajdź błąd i podaj poprawny wynik.</p>
+<details class="answer"><summary>Klucz</summary>
+<p>Błąd: złe porcje (prawdopodobnie policzył CaO na oko albo pomylił porcje). Poprawnie: CaO = (10/100)·56 = 5,6 g; dodatkowo 8 + coś więcej niż 5,6 przy jedynym produkcie stałym i ulatującym CO₂ przeczyłoby bilansowi (10 g substratu = 5,6 + 4,4, a nie 8 + reszta).</p>
+</details>
+<p><strong>Ćwiczenie 7.</strong> 8 g wodoru i 16 g tlenu. Wskaż substrat ograniczający, policz wodę i resztę.</p>
+<details class="answer"><summary>Klucz</summary>
+<p>Porcje: H₂ 8/4 = 2; O₂ 16/32 = 0,5 → ogranicza O₂; H₂O = 0,5·36 = 18 g; H₂ zużyte 2 g, reszta 6 g H₂ (bilans 2 + 16 = 18 ✓).</p>
+</details>
+<p><strong>Ćwiczenie 8 — mini-test samodzielny.</strong> Odpowiedz bez patrzenia w lekcję, potem sprawdź z ćwiczeniami: 1) Masy porcji dla CaCO₃ → CaO + CO₂? 2) 12 g Mg + 12 g O₂ — który ogranicza? 3) Ile wtedy MgO? 4) Ile zostanie O₂? 5) Zamknij bilans masy dla tego przypadku.</p>
+<details class="answer"><summary>Klucz</summary>
+<p>1) 100 : 56 : 44. 2) Mg (0,25 porcji &lt; 0,375). 3) 20 g. 4) 4 g O₂. 5) Zużyte 12 + 8 = 20 g = 20 g MgO ✓.</p>
+</details>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">12</span> Ciekawostki {#ciekawostki} <span class="level-badge level-extra">AMBITNE</span></div>
+<div class="card card-extra">
+<span class="card-label">Ciekawostka 1 — stechiometria pod maską twojego auta</span>
+<p>Silnik benzynowy pracuje najczyściej przy masowym stosunku paliwo : powietrze orientacyjnie 1 : 14,7 — to „mieszanka stechiometryczna”, po której jeżdżą katalizatory (orientacyjnie; wartość zależy od paliwa). Bogatsza mieszanka (więcej paliwa) daje więcej mocy i mniej ekologii, uboższa — niższe temperatury i ekonomię. Sterownik silnika wstrzykuje paliwo w tych proporcjach setki razy na sekundę — twój samochód to wapiennik na kołach, tyle że z bilansem masy policzonym w czasie rzeczywistym.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Ciekawostka 2 — rakieta waży przepis</span>
+<p>Silnik wodorowy rakiety spala H₂ i O₂ w stosunku masowym 1 : 8 (2H₂ + O₂ → 2H₂O) — i zbiorniki projektuje się dokładnie tak, żeby żaden kilogram utleniacza czy paliwa nie był „nadmiarem”, bo każdy zbędny kilogram to kilogram, którego nie zabrał satelita. Nasze zadanie 11 (4 g H₂ + 8 g O₂) jest miniaturą tego problemu: tam, gdzie kończy się porcja utleniacza, kończy się i lot.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Ciekawostka 3 — wapienniki liczyły proporcje, zanim powstała chemia</span>
+<p>Wypalanie wapna (CaCO₃ → CaO + CO₂) to jedna z najstarszych reakcji przemysłowych ludzkości — wapienniki pracowały od tysięcy lat, a wapno szło do murów, tynków i zapraw. Proporcje 100 : 56 : 44 oznaczają, że z każdej tony wapienia „urośnie” 560 kg wapna i uleci 440 kg CO₂ — w skali historycznej miliardy ton; dzisiejsza branża cementowa liczy właśnie te porcje, tylko w gigatonach rocznie (orientacyjnie).</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Ciekawostka 4 — kuchnia to laboratorium z nadmiarem</span>
+<p>Każdy przepis na chleb to ćwiczenie z substratu ograniczającego: mąka wyznacza liczbę bochenków, drożdże biorą udział „katalizacyjnie”, a sól i woda bywają w nadmiarze względem tego, co wchodzi w reakcje. Piekarze mówią o „higienie proporcji” tak jak chemicy o stosunkach stechiometrycznych — i to nie przenośnia: spulchnianie ciasta to reakcja CO₂ z kwasów i wodorowęglanów, dokładnie z rodziny, którą liczyłeś w zadaniu 12.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Ciekawostka 5 — mole: skrót, który wynaleziono z desperacji</span>
+<p>Chemicy XIX wieku męczyli się z proporcjami mas przy tysiącach reakcji, dopóki nie uporządkowano pojęcia mola — „porcji” liczącej orientacyjnie 6·10²³ cząsteczek (liczba Avogadra; wartość do weryfikacji z tablicami). Od tej pory to samo zadanie zapisuje się w trzech linijkach zamiast sześciu — ale istota pozostała ta, którą robiłeś w tej lekcji: przepis, porcje, mniejsza wygrywa. Ty dziś liczysz „po kuchennemu”; w liceum poznasz rejestr zawodowców — i zauważysz, że to to samo. (źródło: podręczniki historii chemii, orientacyjnie)</p>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">13</span> Sposoby pamięciowe {#mnemo} <span class="level-badge level-basic">E8</span></div>
+<wskazowki>
+<ul>
+<li>Metafora na całą lekcję: „<strong>2 jajka + 1 szklanka mąki → 1 tort</strong>” — mąka (mniejsza porcja) wyznacza liczbę tortów, jajka zostają.</li>
+<li>Sześć kroków jako wierszyk: „<strong>Równanie, masy, podziel porcje — mniejsza wygrywa produkt, reszta zostanie, bilans zamknie</strong>”.</li>
+<li>„<strong>Licz z końca, który skończy się pierwszy</strong>” — produkt zawsze z substratu ograniczającego.</li>
+<li>„<strong>Co weszło, to wyszło</strong>” — bilans masy na substratach zużytych, nie włożonych.</li>
+<li>„<strong>Najpierw zbalansuj — potem licz</strong>” — kolejność niepodlegająca negocjacjom.</li>
+<li>„<strong>Dwie dwójki porcji: 2Mg = 48, 2MgO = 80, O₂ = 32</strong>” — trójka liczb, z której wychodzi spalanie magnezu we wszystkich zadaniach.</li>
+<li>„<strong>Czystość na wejściu, wydajność na wyjściu</strong>” — dwa procenty nigdy się nie zamieniają.</li>
+<li>„<strong>Jednostka i substancja przy każdej liczbie</strong>” — „20 g MgO”, nigdy „20”.</li>
+<li>„<strong>Zaokrąglaj na końcu</strong>” — pośrednie pełne, końcowe 2–3 cyfry.</li>
+</ul>
+</wskazowki>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">14</span> Test końcowy {#test} <span class="level-badge level-basic">E8</span> <span class="level-badge level-exam">KONKURS</span></div>
+<p>Rozwiąż bez zaglądania do lekcji. Każde pytanie ma dokładnie jedną poprawną odpowiedź. Wyjaśnienia sprawdź dopiero po rozwiązaniu całości.</p>
+<div class="che-quiz" id="quizWrap"><div class="quiz-q" data-ok="0" data-fb="Współczynniki to „przepis”: z 2Mg + O₂ → 2MgO wynika stosunek cząsteczek 2 : 1 : 2 i mas 48 : 32 : 80."><h5>1. Co wyrażają współczynniki w zbilansowanym równaniu chemicznym?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">stosunek liczb cząsteczek (atomów) substratów i produktów, z którego wynikają stałe proporcje mas</button><button type="button" class="quiz-opt" data-a="1">jedynie całkowitą liczbę atomów po prawej stronie równania</button><button type="button" class="quiz-opt" data-a="2">masy substratów w gramach dla każdego zadania osobno</button><button type="button" class="quiz-opt" data-a="3">szybkość, z jaką zachodzi reakcja</button></div></div><div class="quiz-q" data-ok="0" data-fb="40 + 12 + 3·16 = 40 + 12 + 48 = 100 — indeks 3 przy tlenie mnoży jego masę."><h5>2. Masa cząsteczkowa CaCO₃ (Ca = 40, C = 12, O = 16) wynosi:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">100</button><button type="button" class="quiz-opt" data-a="1">88</button><button type="button" class="quiz-opt" data-a="2">116</button><button type="button" class="quiz-opt" data-a="3">68</button></div></div><div class="quiz-q" data-ok="0" data-fb="Porcje 48 : 32 = 3 : 2; na 12 g Mg (0,25 porcji) przypada 0,25·32 = 8 g O₂."><h5>3. W reakcji 2Mg + O₂ → 2MgO na 12 g magnezu potrzeba tlenu:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">8 g</button><button type="button" class="quiz-opt" data-a="1">12 g</button><button type="button" class="quiz-opt" data-a="2">16 g</button><button type="button" class="quiz-opt" data-a="3">4 g</button></div></div><div class="quiz-q" data-ok="0" data-fb="Definicja: jego porcje kończą się pierwsze (jak mąka w przepisie na torty); z jego ilości liczymy produkty."><h5>4. Substrat ograniczający to ten, który:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">kończy się pierwszy i wyznacza maksymalną ilość produktów</button><button type="button" class="quiz-opt" data-a="1">ma największą masę początkową</button><button type="button" class="quiz-opt" data-a="2">zostaje po reakcji w całości nietknięty</button><button type="button" class="quiz-opt" data-a="3">jest najcięższym pierwiastkiem w równaniu</button></div></div><div class="quiz-q" data-ok="0" data-fb="Ogranicza Mg (0,25 porcji vs 0,375); MgO = 0,25·80 = 20 g."><h5>5. Spalono 12 g magnezu w 12 g tlenu (porcje 48 : 32 : 80). Masa powstałego MgO:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">20 g</button><button type="button" class="quiz-opt" data-a="1">24 g</button><button type="button" class="quiz-opt" data-a="2">40 g</button><button type="button" class="quiz-opt" data-a="3">12 g</button></div></div><div class="quiz-q" data-ok="0" data-fb="Zużyto 8 g O₂ z 12 g (na 12 g Mg potrzeba 8 g); reszta = 12 − 8 = 4 g."><h5>6. W tym samym zadaniu masa reszty nadmiaru wynosi:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">4 g O₂</button><button type="button" class="quiz-opt" data-a="1">0 g</button><button type="button" class="quiz-opt" data-a="2">8 g O₂</button><button type="button" class="quiz-opt" data-a="3">12 g O₂</button></div></div><div class="quiz-q" data-ok="0" data-fb="Prawo zachowania masy dotyczy uczestników reakcji: 12 g Mg + 8 g O₂ = 20 g = 20 g MgO; nadmiar nie uczestniczy."><h5>7. Kontrola rachunku „bilans masy” polega na sprawdzeniu, czy:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">masa substratów, które zareagowały, równa się sumie mas produktów</button><button type="button" class="quiz-opt" data-a="1">masa początkowa wszystkich substratów równa się masie każdego produktu osobno</button><button type="button" class="quiz-opt" data-a="2">liczba współczynników równa się liczbie substancji w równaniu</button><button type="button" class="quiz-opt" data-a="3">masa produktów jest zawsze większa od masy substratów</button></div></div><div class="quiz-q" data-ok="0" data-fb="Porcje 16 : 64 = 1 : 4; na 8 g metanu (0,5 porcji) przypada 0,5·64 = 32 g O₂."><h5>8. Spalanie metanu: CH₄ + 2O₂ → CO₂ + 2H₂O. Na 8 g CH₄ potrzeba tlenu:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">32 g</button><button type="button" class="quiz-opt" data-a="1">16 g</button><button type="button" class="quiz-opt" data-a="2">64 g</button><button type="button" class="quiz-opt" data-a="3">8 g</button></div></div><div class="quiz-q" data-ok="0" data-fb="Z 12 g O₂ wyszłoby „30 g MgO” przy wkładzie 24 g — masa znikąd; dlatego tylko ograniczający jest legalną podstawą rachunku."><h5>9. Dlaczego produktu nie wolno liczyć z substratu nadmiarowego?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">nadmiar bierze udział w reakcji tylko częściowo — rachunek dałby produkt ważący więcej niż wkład, wbrew prawu zachowania masy</button><button type="button" class="quiz-opt" data-a="1">bo nadmiar jest zawsze w stanie gazowym</button><button type="button" class="quiz-opt" data-a="2">bo substrat nadmiarowy nie ma masy cząsteczkowej</button><button type="button" class="quiz-opt" data-a="3">bo produkt zawsze powstaje wyłącznie z lżejszego substratu</button></div></div><div class="quiz-q" data-ok="0" data-fb="250 · 0,90 = 225 g; pozostałe 25 g to zanieczyszczenia, które nie biorą udziału w reakcji."><h5>10. Próbka wapienia o masie 250 g zawiera 90% CaCO₃. Masa czystego CaCO₃ wynosi:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">225 g</button><button type="button" class="quiz-opt" data-a="1">25 g</button><button type="button" class="quiz-opt" data-a="2">275 g</button><button type="button" class="quiz-opt" data-a="3">245 g</button></div></div><div class="quiz-q" data-ok="0" data-fb="50,4/56 · 100% = 90%; wydajność nigdy nie przekracza 100%."><h5>11. Z reakcji otrzymano 50,4 g produktu, a rachunek teoretyczny dał 56 g. Wydajność reakcji wynosi:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">90%</button><button type="button" class="quiz-opt" data-a="1">105%</button><button type="button" class="quiz-opt" data-a="2">80%</button><button type="button" class="quiz-opt" data-a="3">9%</button></div></div><div class="quiz-q" data-ok="0" data-fb="Porcje: Zn 5/65 ≈ 0,077 &amp;lt; CuSO₄ 20/160 = 0,125 → Zn ogranicza; Cu = 0,077·64 ≈ 4,92 g."><h5>12. (poziom konkursowy) 5 g Zn wrzucono do roztworu zawierającego 20 g CuSO₄ (porcje 65 : 160 : 161 : 64). Substrat ograniczający i masa miedzi:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Zn — ogranicza; Cu ≈ 4,9 g</button><button type="button" class="quiz-opt" data-a="1">CuSO₄ — ogranicza; Cu = 8,0 g</button><button type="button" class="quiz-opt" data-a="2">Zn — ogranicza; Cu = 5,0 g</button><button type="button" class="quiz-opt" data-a="3">CuSO₄ — ogranicza; Cu ≈ 4,9 g</button></div></div><div class="quiz-q" data-ok="0" data-fb="Porcje: H₂ 1, O₂ 0,25 → ogranicza O₂; H₂O = 0,25·36 = 9 g; H₂ zużyte 1 g, reszta 3 g."><h5>13. (poziom konkursowy) Zmieszano 4 g H₂ z 8 g O₂. Masa wody i reszta nadmiaru:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">9 g H₂O; zostaje 3 g H₂</button><button type="button" class="quiz-opt" data-a="1">12 g H₂O; nic nie zostaje</button><button type="button" class="quiz-opt" data-a="2">36 g H₂O; zostaje 4 g O₂</button><button type="button" class="quiz-opt" data-a="3">9 g H₂O; zostaje 3 g O₂</button></div></div><div class="quiz-q" data-ok="0" data-fb="Zaokrąglenia pośrednie kumulują błąd i potrafią przesunąć wynik końcowy; zaokrąglamy tylko na końcu."><h5>14. (poziom konkursowy) Które działanie jest błędem przy zaokrąglaniu wyników?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">zaokrąglanie wyników pośrednich do jednej cyfry znaczącej w trakcie rachunku</button><button type="button" class="quiz-opt" data-a="1">zaokrąglanie ostatecznego wyniku do 2–3 cyfr znaczących</button><button type="button" class="quiz-opt" data-a="2">zapisywanie jednostki i nazwy substancji przy każdej masie</button><button type="button" class="quiz-opt" data-a="3">porównywanie porcji z dokładnością co najmniej do dwóch cyfr</button></div></div></div><div class="quiz-score" id="quizScore"></div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">15</span> Fiszki {#fiszki} <span class="level-badge level-basic">E8</span> <span class="level-badge level-exam">KONKURS</span></div>
+<p>Powtarzaj partiami: najpierw basic, potem understand i extra, na końcu olimpijskie.</p>
+<div id="flashcards" class="flashcard-grid"><button class="flashcard" type="button"><span class="front">Równanie jako przepis</span><span class="back">współczynniki = stosunek porcji cząsteczek, z którego wynikają stałe proporcje mas</span><span class="card-tag tag-basic">rownanie</span></button><button class="flashcard" type="button"><span class="front">Masa porcji</span><span class="back">suma mas atomowych wg wzoru z uwzględnieniem indeksów i współczynników</span><span class="card-tag tag-basic">masy</span></button><button class="flashcard" type="button"><span class="front">M(CaCO₃)</span><span class="back">40 + 12 + 48 = 100</span><span class="card-tag tag-basic">masy</span></button><button class="flashcard" type="button"><span class="front">M(CuSO₄)</span><span class="back">64 + 32 + 64 = 160</span><span class="card-tag tag-basic">masy</span></button><button class="flashcard" type="button"><span class="front">M(ZnSO₄)</span><span class="back">65 + 32 + 64 = 161</span><span class="card-tag tag-basic">masy</span></button><button class="flashcard" type="button"><span class="front">Porcje 2Mg + O₂ → 2MgO</span><span class="back">48 : 32 : 80 (czyli 12 g Mg + 8 g O₂ → 20 g MgO)</span><span class="card-tag tag-basic">przyklad</span></button><button class="flashcard" type="button"><span class="front">Porcje CaCO₃ → CaO + CO₂</span><span class="back">100 : 56 : 44</span><span class="card-tag tag-basic">przyklad</span></button><button class="flashcard" type="button"><span class="front">Porcje CH₄ + 2O₂</span><span class="back">16 : 64 : 44 : 36</span><span class="card-tag tag-basic">przyklad</span></button><button class="flashcard" type="button"><span class="front">Porcje Zn + 2HCl</span><span class="back">65 : 73 : 136 : 2</span><span class="card-tag tag-basic">przyklad</span></button><button class="flashcard" type="button"><span class="front">Porcje CaCO₃ + 2HCl</span><span class="back">100 : 73 : 111 : 18 : 44</span><span class="card-tag tag-extra">przyklad</span></button><button class="flashcard" type="button"><span class="front">Porcje Zn + CuSO₄</span><span class="back">65 : 160 : 161 : 64</span><span class="card-tag tag-extra">przyklad</span></button><button class="flashcard" type="button"><span class="front">Porcje 2H₂ + O₂ → 2H₂O</span><span class="back">4 : 32 : 36 (1 : 8 : 9)</span><span class="card-tag tag-basic">przyklad</span></button><button class="flashcard" type="button"><span class="front">Porcje Fe₂O₃ + 3CO</span><span class="back">160 : 84 : 112 : 132</span><span class="card-tag tag-olimpijski">przyklad</span></button><button class="flashcard" type="button"><span class="front">Metoda porcji</span><span class="back">podana masa ÷ masa porcji; mniejszy wynik = substrat ograniczający</span><span class="card-tag tag-understand">nadmiar</span></button><button class="flashcard" type="button"><span class="front">Metoda „ile potrzeba”</span><span class="back">ile drugiego substratu potrzeba na pierwszy; porównaj z danym</span><span class="card-tag tag-understand">nadmiar</span></button><button class="flashcard" type="button"><span class="front">Substrat ograniczający</span><span class="back">kończy się pierwszy; z niego liczymy wszystkie produkty</span><span class="card-tag tag-basic">nadmiar</span></button><button class="flashcard" type="button"><span class="front">Substrat nadmiarowy</span><span class="back">bierze udział częściowo; jego reszta zostaje</span><span class="card-tag tag-basic">nadmiar</span></button><button class="flashcard" type="button"><span class="front">Reszta nadmiaru</span><span class="back">masa początkowa − masa zużyta</span><span class="card-tag tag-basic">nadmiar</span></button><button class="flashcard" type="button"><span class="front">Stosunek stechiometryczny</span><span class="back">porcje równe — zużywa się wszystko, reszty brak</span><span class="card-tag tag-understand">nadmiar</span></button><button class="flashcard" type="button"><span class="front">Bilans masy</span><span class="back">masa substratów zużytych = suma mas produktów (kontrola rachunku)</span><span class="card-tag tag-understand">kontrola</span></button><button class="flashcard" type="button"><span class="front">Kryterium absurdów</span><span class="back">produkt nie może ważyć więcej niż cały wkład; reszta nie może być ujemna</span><span class="card-tag tag-understand">bledy</span></button><button class="flashcard" type="button"><span class="front">Algorytm sześciu kroków</span><span class="back">równanie → porcje → porównanie → produkt z mniejszej → reszta → bilans</span><span class="card-tag tag-understand">algorytm</span></button><button class="flashcard" type="button"><span class="front">Zasada jednostek</span><span class="back">przy każdej liczbie jednostka i nazwa substancji („20 g MgO”)</span><span class="card-tag tag-basic">bledy</span></button><button class="flashcard" type="button"><span class="front">Zasada zaokrągleń</span><span class="back">licz pełne, zaokrąglaj tylko wynik końcowy do 2–3 cyfr</span><span class="card-tag tag-understand">bledy</span></button><button class="flashcard" type="button"><span class="front">Czystość próbki</span><span class="back">procent zawartości: masa czystej substancji = próbka · procent</span><span class="card-tag tag-understand">probka</span></button><button class="flashcard" type="button"><span class="front">Wyliczenie na roztworze</span><span class="back">masa substancji = masa roztworu · stężenie procentowe (200 g 10% → 20 g)</span><span class="card-tag tag-extra">zadania</span></button><button class="flashcard" type="button"><span class="front">Wydajność reakcji</span><span class="back">(masa rzeczywista ÷ masa teoretyczna) · 100%; zawsze ≤ 100%</span><span class="card-tag tag-extra">wydajnosc</span></button><button class="flashcard" type="button"><span class="front">Czystość ≠ wydajność</span><span class="back">wejście (ile aktora w próbce) ≠ wyjście (ile z teorii wyszło)</span><span class="card-tag tag-olimpijski">wydajnosc</span></button><button class="flashcard" type="button"><span class="front">Ubytek masy = gaz</span><span class="back">masa, która ulotowała się z naczynia, to masa produktu gazowego (CO₂, H₂)</span><span class="card-tag tag-olimpijski">kontrola</span></button><button class="flashcard" type="button"><span class="front">Silnik benzynowy</span><span class="back">paliwo : powietrze orientacyjnie 1 : 14,7 — mieszanka stechiometryczna</span><span class="card-tag tag-extra">zastosowania</span></button><button class="flashcard" type="button"><span class="front">Rakieta wodorowa</span><span class="back">H₂ : O₂ masowo 1 : 8 — zbiorniki w proporcji przepisu</span><span class="card-tag tag-extra">zastosowania</span></button><button class="flashcard" type="button"><span class="front">Mole (zarys)</span><span class="back">porcja ok. 6·10²³ cząsteczek; skrót liczenia w liceum, wyniki identyczne</span><span class="card-tag tag-olimpijski">mola</span></button></div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">16</span> Słownik {#slownik} <span class="level-badge level-basic">E8</span></div>
+<dl><div class="def-item"><dt>Stechiometria</dt><dd>dział chemii opisujący ilościowe proporcje substratów i produktów w reakcjach.</dd></div><div class="def-item"><dt>Równanie stechiometryczne</dt><dd>zbilansowane równanie chemiczne, którego współczynniki wyznaczają stałe proporcje cząsteczek i mas.</dd></div><div class="def-item"><dt>Współczynnik stechiometryczny</dt><dd>liczba przed wzorem substancji w równaniu; określa liczbę porcji danej substancji w przepisie.</dd></div><div class="def-item"><dt>Substrat</dt><dd>substancja zużywana w reakcji (pisana po lewej stronie równania).</dd></div><div class="def-item"><dt>Produkt</dt><dd>substancja powstająca w reakcji (pisana po prawej stronie równania).</dd></div><div class="def-item"><dt>Masa atomowa</dt><dd>masa atomu pierwiastka wyrażona w jednostkach u; odczytywana z układu okresowego.</dd></div><div class="def-item"><dt>Masa cząsteczkowa</dt><dd>suma mas atomowych wszystkich atomów we wzorze substancji.</dd></div><div class="def-item"><dt>Jednostka masy atomowej (u)</dt><dd>umowna jednostka masy atomów i cząsteczek; liczby w u i w gramach dają identyczne proporcje.</dd></div><div class="def-item"><dt>Masa porcji</dt><dd>masa „jednego zestawu” reakcji zgodnie ze współczynnikami; pod równaniem zapisywana w gramach.</dd></div><div class="def-item"><dt>Stosunek stechiometryczny</dt><dd>proporcja substratów dokładnie zgodna z porcjami równania — wtedy zużywa się wszystko.</dd></div><div class="def-item"><dt>Substrat ograniczający</dt><dd>substrat, którego porcje kończą się pierwsze; wyznacza maksymalną ilość produktów.</dd></div><div class="def-item"><dt>Substrat nadmiarowy</dt><dd>substrat, którego część pozostaje po zakończeniu reakcji.</dd></div><div class="def-item"><dt>Reszta nadmiaru</dt><dd>masa substratu nadmiarowego pozostająca po reakcji: masa początkowa − masa zużyta.</dd></div><div class="def-item"><dt>Bilans masy</dt><dd>kontrola rachunku oparta na prawie zachowania masy: substraty zużyte = suma produktów.</dd></div><div class="def-item"><dt>Prawo zachowania masy</dt><dd>prawo przyrody (Lomonosow, Lavoisier): masa substancji przed reakcją równa się masie substancji po reakcji.</dd></div><div class="def-item"><dt>Wydajność reakcji</dt><dd>stosunek masy rzeczywiście otrzymanej do masy teoretycznej, wyrażony w procentach; zawsze nie większy od 100%.</dd></div><div class="def-item"><dt>Próbka zanieczyszczona</dt><dd>materiał zawierający obok substancji reaktywnej także składniki niereagujące; do rachunków bierze się tylko masę czystej substancji.</dd></div><div class="def-item"><dt>Zawartość procentowa</dt><dd>procent masy próbki, jaki stanowi substancja czynna (czystość próbki).</dd></div><div class="def-item"><dt>Roztwór o stężeniu procentowym</dt><dd>roztwór opisany masą substancji rozpuszczonej w 100 g roztworu; masa substancji = masa roztworu · procent.</dd></div><div class="def-item"><dt>Proporcja masowa</dt><dd>zapis typu 48 : 32 : 80 łączący masy porcji substratów i produktów.</dd></div><div class="def-item"><dt>Ubytek masy</dt><dd>masa gazu, który ulatując z naczynia pomiarowego zmniejszył wskazanie wagi; dane do obliczeń w zadaniach „z wagą”.</dd></div></dl>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">17</span> Mapa pojęć {#mapa} <span class="level-badge level-basic">E8</span></div>
+<div class="lk-tree"><ul><li><span>Obliczenia z równań — stechiometria bez mola</span><ul><li><span>Równanie jako przepis</span><ul><li><span>Współczynniki</span><ul><li><span>Stosunek porcji cząsteczek</span></li></ul></li><li><span>Indeksy</span><ul><li><span>Skład cząsteczki</span></li></ul></li><li><span>Masy porcji</span><ul><li><span>Masa atomowa i jednostka u</span></li><li><span>Suma wg wzoru</span></li><li><span>Współczynnik mnoży porcję</span></li></ul></li><li><span>Przykłady porcji</span><ul><li><span>Spalanie magnezu 48:32:80</span></li><li><span>Rozkład węglanu 100:56:44</span></li><li><span>Metan 16:64:44:36</span></li><li><span>Cynk i kwas 65:73:136:2</span></li><li><span>Cynk i siarczan miedzi 65:160:161:64</span></li></ul></li></ul></li><li><span>Porównanie substratów</span><ul><li><span>Metoda porcji</span><ul><li><span>Podana masa dzielona przez porcję</span></li><li><span>Mniejszy wynik wygrywa</span></li></ul></li><li><span>Metoda „ile potrzeba”</span><ul><li><span>Przeliczenie z jednego substratu na drugi</span></li></ul></li><li><span>Wskutek porównania</span><ul><li><span>Substrat ograniczający</span></li><li><span>Substrat nadmiarowy</span></li><li><span>Stosunek stechiometryczny — brak nadmiaru</span></li></ul></li></ul></li><li><span>Algorytm rozwiązania</span><ul><li><span>Zbilansuj równanie</span></li><li><span>Masy porcji</span></li><li><span>Porównaj porcje</span></li><li><span>Produkt z ograniczającego</span></li><li><span>Reszta nadmiaru</span><ul><li><span>Masa początkowa minus zużyta</span></li></ul></li><li><span>Bilans masy</span><ul><li><span>Kontrola rachunku</span></li><li><span>Kryterium absurdów</span></li></ul></li></ul></li><li><span>Higiena rachunku</span><ul><li><span>Jednostki i nazwy substancji</span></li><li><span>Zaokrąglenia na końcu</span></li><li><span>Pełny tok rozumowania w zapisie</span></li></ul></li><li><span>Rozszerzenia konkursowe</span><ul><li><span>Roztwory procentowe</span><ul><li><span>Masa czystej substancji</span></li></ul></li><li><span>Próbki zanieczyszczone</span><ul><li><span>Zawartość procentowa</span></li></ul></li><li><span>Wydajność reakcji</span><ul><li><span>Teoretyczna a rzeczywista masa</span></li></ul></li><li><span>Bilans masy na wadze</span><ul><li><span>Ubytek masy = masa gazu</span></li></ul></li><li><span>Połączenia z X04 i J03</span><ul><li><span>Wypieranie metali</span></li><li><span>Osady jako produkty</span></li></ul></li></ul></li><li><span>Zastosowania</span><ul><li><span>Silniki spalinowe</span></li><li><span>Rakiety</span></li><li><span>Wapienniki</span></li><li><span>Kuchnia jako laboratorium</span></li></ul></li><li><span>Dalej</span><ul><li><span>Mola — skrót zawodowców</span></li></ul></li></ul></li></ul></div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">18</span> Ściąga {#sciaga} <span class="level-badge level-basic">E8</span></div>
+<p>Najkrótsza wersja całej lekcji — czytaj, gdy zostało pięć minut przed sprawdzianem:</p>
+<ul>
+<li><strong>Przepis:</strong> równanie = przepis; współczynniki → porcje cząsteczek i mas. Zawsze najpierw zbalansuj.</li>
+<li><strong>Porcje (nauczone na pamięć):</strong> 2Mg + O₂ → 2MgO: 48 : 32 : 80; CaCO₃ → CaO + CO₂: 100 : 56 : 44; CH₄ + 2O₂ → CO₂ + 2H₂O: 16 : 64 : 44 : 36; Zn + 2HCl → ZnCl₂ + H₂: 65 : 73 : 136 : 2; Zn + CuSO₄ → ZnSO₄ + Cu: 65 : 160 : 161 : 64.</li>
+<li><strong>Kto ogranicza?</strong> porcja = masa ÷ masa porcji; <strong>mniejsza porcja wygrywa</strong>. Równe porcje = stechiometria, nic nie zostaje. Nigdy „na oko” po gramach.</li>
+<li><strong>Produkt tylko z ograniczającego:</strong> (masa ograniczającego ÷ jego porcja) · porcja produktu.</li>
+<li><strong>Nadmiar:</strong> zużyte = (masa ograniczającego ÷ jego porcja) · porcja nadmiarowego; reszta = początkowa − zużyta.</li>
+<li><strong>Kontrola:</strong> bilans masy na substratach zużytych (12 g Mg + 8 g O₂ = 20 g MgO); absurd = produkt > cały wkład → błąd w rachunku.</li>
+<li><strong>Higiena:</strong> „20 g MgO”, nigdy „20”; zaokrąglaj na końcu (2–3 cyfry); tok rozumowania zapisuj — to on punktowany.</li>
+<li><strong>Konkurs:</strong> czystość = wejście (masa czystego = próbka · %), wydajność = wyjście (rzeczywista ÷ teoretyczna · 100%); roztwór: masa substancji = masa roztworu · %; ubytek masy z wagi = masa ulotowanego gazu.</li>
+</ul>
+<checklista>
+<ul>
+<li>[ ] umiem wyznaczyć masy porcji dla każdej reakcji z indeksami i współczynnikami</li>
+<li>[ ] umiem rozstrzygnąć substrat ograniczający metodą porcji i metodą „ile potrzeba”</li>
+<li>[ ] umiem obliczyć masę produktu wyłącznie z substratu ograniczającego</li>
+<li>[ ] umiem obliczyć zużycie nadmiaru i resztę nadmiaru</li>
+<li>[ ] umiem rozpoznać stosunek stechiometryczny i stwierdzić brak nadmiaru</li>
+<li>[ ] umiem zamknąć bilans masy i użyć go jako kontroli rachunku</li>
+<li>[ ] umiem wykazać, że rachunek z nadmiaru łamie prawo zachowania masy</li>
+<li>[ ] umiem rozwiązać trzy wzorce E8: gaz z metalu, rozkład węglanu, spalanie z nadmiarem</li>
+<li>[ ] umiem policzyć zadanie z roztworem procentowym (masa czystej substancji)</li>
+<li>[ ] umiem rozdzielić czystość próbki od wydajności reakcji i policzyć oba</li>
+<li>[ ] umiem interpretować ubytek masy z wagi jako masę ulotowanego gazu</li>
+<li>[ ] umiem zapisać rozwiązanie z jednostkami, nazwami substancji i zaokrągleniami na końcu</li>
+</ul>
+</checklista>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">19</span> Co dalej? {#dalej} <span class="level-badge level-basic">E8</span> <span class="level-badge level-extra">AMBITNE</span></div>
+<p>Po opanowaniu tej lekcji naturalne kierunki:</p>
+<ul>
+<li><strong>CHE-X04 — Szereg aktywności metali:</strong> reakcja Zn + CuSO₄ z zadania 10 tam ma swoje reguły (kto kogo wypiera); połącz oba — szereg powie ci, czy reakcja zachodzi, a R07 — ile z niej wyjdzie.</li>
+<li><strong>CHE-J03 — Równania jonowe i strącanie:</strong> osady z J03 to produkty, które teraz umiesz liczyć; zapisz jonowo, a potem policz masę opadłego AgCl albo BaSO₄ — scalenie obu lekcji to typowe zadanie etapu rejonowego.</li>
+<li><strong>CHE-051 / CHE-054 — Reakcje i kwasy:</strong> zobojętnienia i reakcje kwasów z tej lekcji wrócą z pełną chemią w tle — a twoje porcje mas będą do nich gotowe.</li>
+<li><strong>Liceum — mola i objętości gazów:</strong> twój algorytm zostaje, zmienia się rejestr (mola, objętość molowa, stężenia molowe); jeśli w zadaniu konkursowym zobaczysz „mol”, przełóż go przez masę molową i wróć do porcji.</li>
+<li><strong>Dla konkursowców:</strong> przepracuj drugi raz <a href="#zadania-konkurs">§8</a> po tygodniowej przerwie — zadania 9 (znajdź błędy) i 13 (wapiennik z wydajnością) najdłużej trzymają się przy powtórce po odstępie; wtedy też porównaj zakres z aktualnym informatorem LKO, bo zadania obliczeniowe „z wagą” i wydajnością wracają co edycję w nowych przebraniach.</li>
+</ul>
+<p>A na codzienne utrwalanie: wybierz w kuchni dowolny przepis i policz jego „stechiometrię” — ile tortów z tych jajek, ile porcji z tej mąki, co zostaje. To najtańsze ćwiczenie stechiometryczne świata i działa dokładnie tak samo jak probówka.</p>
+<h3 id="audyt-ulepsz">AUDYT — Claude, 2026-10-12</h3>
+<p><strong>Poprawione:</strong>
+- Materiał roboczy w paczce urwany w połowie sekcji celu (ostatni widoczny fragment: „Uczennica rozwiązuje zadania, w których substraty nie są w stosunku stechiometrycznym: - wska[...]”) — urwaną myśl zrekonstruowano zgodnie z tytułem i leadem jako pełne kryterium gotowości w §0.1 (wskazywanie substratu ograniczającego, nadmiaru i ilości produktu); odnotowano w „Niepewne”.
+- Brak jakichkolwiek dalszych treści materiału (zadań, kluczy, tabel) do zachowania — zamiast „nie usuwano niczego” obowiązuje tu reguła: zachowano wszystkie dostępne elementy (kod, tytuł, lead, plakietki, zakres) i przeniesiono je bez zmian do struktury lekcji.</p>
+<p><strong>Dodane:</strong>
+- Frontmatter uzupełniony w całości (opis, kicker, dwa leady, plakietki z warstwami understand/extra, uwaga o przyjętych masach atomowych i zaokrągleniach, stopka, stan ULEPSZONA zamiast W1).
+- §0.1–§0.2: kryterium gotowości (5 punktów), diagnoza 5 pytań z kluczem i rozliczeniem.
+- §1: pełny wykład „od zera” (obraz przewodni: przepis kuchenny z ograniczonym składnikiem — mąka jako substrat ograniczający).
+- §2: równanie jako przepis — trzy odczyty (współczynniki, indeksy, masy), ostrzeżenie o O₂ = 32, zadanie 1.
+- §3: masy porcji — trzy przykłady pod równaniem, rola indeksów i współczynników, zadanie 2.
+- §4: dwie metody porównania („ile potrzeba” i porcje), stosunek stechiometryczny, nie-myl „więcej gramów ≠ nadmiar”, zadanie 3.
+- §5: algorytm sześciu kroków na zadaniu modelowym, kryterium absurdów, zadanie 4.
+- §6: trzy wzorce E8 (gaz z metalu, rozkład węglanu, spalanie z nadmiarem), zadania 5–6.
+- §7: dwa doświadczenia z próbami kontrolnymi i BHP (spalanie Mg — kontrola proporcji 3 : 5; marmur + HCl na wadze — ubytek masy jako CO₂), które dostarczają danych do zadań 12 i 14.
+- §8: osiem zadań konkursowych (7–14): metan na przepis, absurd rachunku z nadmiaru, znajdź błędy, roztwór CuSO₄ (liczby spójne z zadaniem 11 lekcji X04), pułapka H₂/O₂, czystość marmuru z danych doświadczenia, wapiennik z wydajnością, redukcja Fe₂O₃ z wydajnością — wszystkie typy wymagane (obliczeniowe, uzasadnianie, znajdź błąd, analiza danych, analiza tekstu, pułapka).
+- §9: mini-wykład „Dla olimpijczyka” (czystość vs wydajność, bilans masy na wadze, stechiometria silnika i rakiety, zarys moli, granice modelu).
+- §10–§13: klinika (10 wierszy), mity (8), ćwiczenia 1–8 z kluczami, 5 ciekawostek, 9 mnemotechnik.
+- §14–§19: test 14 pytań (w tym 3 konkursowe), 32 fiszki (w tym olimpijskie), 21 haseł słownika, mapa pojęć, ściąga z checklistą (12 pozycji), „Co dalej” z powiązaniami do X04, J03, 051/054 i moli.</p>
+<p><strong>Niepewne / do weryfikacji:</strong>
+- Materiał roboczy urwany — jeśli w źródle istnieją dalsze sekcje (zadania, klucze, tabela porcji w wersji podręcznikowej), wymagane jest porównanie i uzupełnienie w kolejnej rewizji; nic z widocznej części nie pominięto.
+- Przyjęte masy atomowe (H = 1, C = 12, O = 16, Mg = 24, S = 32, Cl = 35,5, Ca = 40, Fe = 56, Cu = 64, Zn = 65) — porównać z tablicą w podręczniku ucznia (różnice Cl 35,5 vs 35,45 zmieniają trzecią cyfrę wyników).
+- Liczby zastosowań (1 : 14,7 silnik, 1 : 8 rakieta, liczba Avogadra, statystyki wapienników) oznaczone „orientacyjnie”/„do weryfikacji”.
+- Materiał roboczy (jak w X04/J03) przewidywał sekcję „Archiwalne zadania LKO” z zadaniami rejonowymi — do dodania po pozyskaniu arkuszy (brak danych w paczce).
+- Podejście „bez mola” zgodne z tytułem lekcji; obecne wymagania egzaminacyjne E8 obejmują też obliczenia z molami — przed egzaminem zweryfikować z aktualnym informatorem CKE, czy uczeń nie potrzebuje mostu (§9 daje zarys).</p>
+<p><strong>Proponuję usunąć:</strong>
+- brak.</p>
+<p><strong>Źródła:</strong>
+- podstawa programowa i wymagania egzaminacyjne CKE (egzamin ósmoklasisty, chemia) — zadania obliczeniowe z równań;
+- polskie podręczniki szkolne do chemii klasy 7–8 (m.in. Nowa Era, WSiP) — rozdziały o obliczeniach stechiometrycznych i nadmiarze substratów;
+- informatory i arkusze konkursów chemicznych (etap rejonowy) — typy zadań z wydajnością i próbkami zanieczyszczonymi;
+- podręczniki akademickie z podstaw chemii fizycznej (zarys moli i proporcji — most do liceum);
+- literatura motoryzacyjna i rakietowa (stosunki mieszanki — wartości orientacyjne).</p>
+<p><strong>Grafiki do zrobienia:</strong></p>
+<div class="table-wrap"><table>
+<thead><tr><th>Gdzie</th><th>Rodzaj</th><th>Co pokazuje</th><th>Wniosek</th><th>@opis</th></tr></thead>
+<tbody>
+<tr><td>§1, po akapicie o przepisie</td><td>animacja „do przodu i od początku”</td><td>kuchenny przepis 2 jajka + 1 szklanka mąki → 1 tort: przesuwanie zapasów (6 jajek, 2 szklanki) pokazuje 2 torty i 2 jajka resztki</td><td>mniejsza porcja składnika wyznacza liczbę produktów i resztę nadmiaru</td><td>Animacja: po lewej stos jajek i miarka mąki, po prawej torty; przycisk „wypiecz” zużywa w proporcji 2 : 1 aż kończy się mąka; licznik pokazuje torty, zużycie i resztki jajek; odtwarzanie od początku powtarza wypiek. Wniosek: ogranicza ten składnik, którego porcji jest mniej.</td></tr>
+<tr><td>§3, po tabeli porcji</td><td>model interaktywny z suwakiem lub przełącznikiem</td><td>równanie 2Mg + O₂ → 2MgO z porcjami 48 : 32 : 80; przełącznik reakcji zmienia zestaw porcji (CaCO₃, CH₄, Zn+HCl, Zn+CuSO₄)</td><td>masy porcji czyta się z równania raz, a potem służą do wszystkich zadań</td><td>Interaktywny panel: wybór reakcji odsłania równanie z liczbami porcji pod wzorami; przycisk „skąd te liczby?” rozwija obliczenia mas cząsteczkowych z indeksami i współczynnikami. Wniosek: porcje = masy cząsteczkowe pomnożone przez współczynniki.</td></tr>
+<tr><td>§4, po obu metodach</td><td>model interaktywny z suwakiem</td><td>dwa suwaki: masa Mg (0–24 g) i masa O₂ (0–24 g); podświetlenie substratu ograniczającego, podgląd porcji i reszty</td><td>przy zmianie mas ograniczający się przełącza — decydują porcje, nie gramy</td><td>Suwakowy model probówki: suwaki mas obu substratów, obok pokrętło porcji (masa ÷ porcja); większa liczba porcji świeci na zielono jako nadmiar, mniejsza na czerwono jako ograniczający; odczyt produktu MgO na żywo. Wniosek: ta sama masa dwóch substratów daje różne werdykty, gdy porcje różnią się.</td></tr>
+<tr><td>§5, po algorytmie</td><td>schemat statyczny</td><td>schemat blokowy sześciu kroków: równanie → porcje → porównanie → produkt z mniejszej → reszta → bilans masy; przy każdym kroku przykładowa linijka rachunku</td><td>kolejność kroków jest jednocześnie kolejnością zapisu w pracy pisemnej</td><td>Diagram blokowy w pionie z opisami kroków i przykładowymi linijkami (6 g Mg + 8 g O₂); strzałka od kroku 6 do 4 pokazuje pętlę kontroli (bilans odsyła do sprawdzenia). Wniosek: algorytm jest liniowy, a bilans domyka go i weryfikuje.</td></tr>
+<tr><td>§7, doświadczenie 2</td><td>doświadczenie wirtualne (zlewka, przyrząd)</td><td>kolba na wadze z marmurem i kwasem: bąbelki CO₂, spadek wskazania wagi w czasie, tabela pomiarów</td><td>ubytek masy na wadze to masa ulotowanego gazu — dane do obliczeń porcji</td><td>Wirtualna waga z kolbą: po dodaniu marmuru widać bąbelki i cyfrowy spadek masy; suwak czasu pokazuje pomiar start/koniec; przycisk „próba kontrolna” (kwas bez marmuru) pokazuje brak ubytku. Wniosek: różnica wskazań = masa CO₂, z której liczy się czystość CaCO₃.</td></tr>
+<tr><td>§9, przy zastosowaniach</td><td>model interaktywny z suwakiem</td><td>zbiorniki rakiety z suwakiem proporcji H₂ : O₂; wychylenie od 1 : 8 pokazuje „niepotrzebny balast” lub niewykorzystane paliwo</td><td>przestrzeganie proporcji przepisu decyduje o efektywności także w skali przemysłowej</td><td>Interaktywna rakieta: suwak stosunku mas H₂ : O₂; przy 1 : 8 oba zbiorniki wykorzystane w 100%, odchylenia pokazują resztki w jednym ze zbiorników i spadek ładunku użytecznego. Wniosek: stechiometria to nie tylko probówka — to ekonomia każdego kilograma.</td></tr>
+</tbody></table></div>
+<p><strong>Poprawione przy wczytaniu (Claude, 2026-10-12):</strong> §1 wykład — „Chcesz 12 g MgO? To 12/80 porcji: 0,25·48 = 6 g Mg…” (12/80 ≠ 0,25) → „Chcesz 10 g MgO? To 10/80 = 0,125 porcji: 6 g Mg i 4 g O₂”.</p>
+</section>
+<footer class="footer"><p><strong>CHEMIA R07 v1.0</strong> · Obliczenia z równań — substraty w stosunku niestechiometrycznym (bez mola) · 2026</p></footer>
+</main>
+<script>
+/* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
+   postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
+(function(){
+var html=document.documentElement;
+function ciemny(){var t=html.getAttribute('data-theme');return t?t==='dark':!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function oznacz(){if(ciemny())html.setAttribute('data-ciemny','');else html.removeAttribute('data-ciemny')}
+try{var z=localStorage.getItem('lekcja-motyw');if(z)html.setAttribute('data-theme',z)}catch(e){}
+oznacz();if(window.matchMedia)try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',oznacz)}catch(e){}
+
+function start(){
+var root=document;
+root.querySelectorAll('.flashcard').forEach(function(b){if(b.dataset.lkFz)return;b.dataset.lkFz=1;b.removeAttribute('onclick');b.setAttribute('aria-pressed','false');
+ b.addEventListener('click',function(){var on=b.classList.toggle('flipped');b.setAttribute('aria-pressed',on?'true':'false')})});
+root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibling,ok=0,n=0,all=w.querySelectorAll('.quiz-q').length;
+ if(sc&&sc.classList.contains('quiz-score'))sc.setAttribute('aria-live','polite');
+ w.querySelectorAll('.quiz-q').forEach(function(d){var good=+d.dataset.ok;d.querySelectorAll('.quiz-opt').forEach(function(b){b.onclick=function(){if(d.dataset.done)return;d.dataset.done=1;n++;if(+b.dataset.a===good)ok++;
+  d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
+  if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
+  if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var b=root.querySelector('#advToggle');
+if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
+ if(!k)b.style.display='none';
+ b.textContent='Pokaż treści akademickie ('+k+')';
+ b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';adv().forEach(function(d){d.open=on});b.setAttribute('aria-pressed',on?'true':'false');b.textContent=(on?'Ukryj':'Pokaż')+' treści akademickie ('+k+')'}}
+// spis zwinięty na telefonie
+var sp=root.querySelector('#spis');if(sp&&window.innerWidth<700)sp.removeAttribute('open');
+// przełącznik jasny/ciemny
+var tb=root.querySelector('#lkMotyw');
+if(tb)tb.onclick=function(){var t=ciemny()?'light':'dark';html.setAttribute('data-theme',t);try{localStorage.setItem('lekcja-motyw',t)}catch(e){}oznacz()};
+// postęp czytania + aktywna sekcja w spisie
+var bar=root.querySelector('.lk-prog'),links={},secs=[];
+root.querySelectorAll('.toc-link[href^="#"]').forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1));if(s){links[s.id]=a;secs.push(s)}});
+var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+ if(bar)bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';
+ var cur=null,lim=(parseInt(getComputedStyle(h).getPropertyValue('--header-h'))||52)+40;
+ for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
+ for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// fiszki: pokazuje pierwsze N (domyślnie 6, atrybut data-fz-pierwsze="N"), reszta po wyraźnym przycisku
+root.querySelectorAll('.flashcard-grid').forEach(function(g){
+ var cards=[].slice.call(g.querySelectorAll('.flashcard')),N=+(g.getAttribute('data-fz-pierwsze')||6);
+ if(!(N>0)||cards.length<=N)return;
+ var ukryte=cards.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more';
+ function lab(on){ukryte.forEach(function(c){c.hidden=!on});
+  b.textContent=on?'▲ Zwiń fiszki':'▼ Pokaż pozostałe '+ile+' fiszek (razem '+cards.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ g.insertAdjacentElement('afterend',b);
+});
+// testy: pokazuje pierwsze N pytań (domyślnie 5, atrybut data-q-pierwsze), reszta po wyraźnym przycisku
+root.querySelectorAll('.che-quiz').forEach(function(w){
+ var qs=[].slice.call(w.querySelectorAll('.quiz-q')),N=+(w.getAttribute('data-q-pierwsze')||5);
+ if(!(N>0)||qs.length<=N)return;
+ var ukryte=qs.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more q-more';
+ function lab(on){ukryte.forEach(function(q){q.hidden=!on});
+  b.textContent=on?'▲ Zwiń pytania':'▼ Pokaż pozostałe '+ile+(ile===1?' pytanie':(ile<5?' pytania':' pytań'))+' (razem '+qs.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ var sc=w.nextElementSibling;(sc&&sc.classList.contains('quiz-score')?sc:w).insertAdjacentElement('afterend',b);
+});
+// grafiki przedmiotu
+if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
+if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();
+
+</script>
+</body>
+</html>

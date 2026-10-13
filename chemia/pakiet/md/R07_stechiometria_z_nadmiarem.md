@@ -1,0 +1,916 @@
+---
+kod: R07
+tytul: Obliczenia z równań — substraty w stosunku niestechiometrycznym (bez mola)
+opis: równanie jako przepis · stosunek stechiometryczny · masy porcji · masa cząsteczkowa · substrat ograniczający · substrat nadmiarowy · reszta nadmiaru · bilans masy · roztwory procentowe · próbki zanieczyszczone · wydajność reakcji
+kicker: R07 · CHEMIA · Obliczenia chemiczne — stechiometria · E8 / KONKURS
+lead: „Dwa jajka i szklanka mąki na tort” — a masz sześć jajek i dwie szklanki mąki? Zrobisz dwa torty i zostaną ci dwa jajka. Reakcja chemiczna to dokładnie ten sam przepis, tylko że porcje liczy się w gramach.
+lead: Nauczysz się zamieniać równanie w tabelę mas, rozpoznawać substrat ograniczający i nadmiar, liczyć ilość produktu i resztę nadmiaru, kontrolować rachunek bilansem masy — a na poziomie konkursowym pracować z roztworami, próbkami zanieczyszczonymi i wydajnością.
+plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]][[extra:AMBITNE]]
+uwaga: Podejście „bez mola” — liczby mas używamy w gramach jako porcje recepturowe (proporcje identyczne jak w jednostkach u). Masy atomowe przyjęte: H = 1, C = 12, N = 14, O = 16, Mg = 24, S = 32, Cl = 35,5, Ca = 40, Fe = 56, Cu = 64, Zn = 65. Wyniki zaokrąglone do 2–3 cyfr znaczących. Podstawowy algorytm E8 to sekcje 2–6; roztwory procentowe, próbki zanieczyszczone i wydajność to warstwa konkursowa; pojęcie mola omówiono wyłącznie jako zarys w warstwie ambitnej.
+stopka: **CHEMIA R07 v1.0** · Obliczenia z równań — substraty w stosunku niestechiometrycznym (bez mola) · 2026
+stan: WYPEŁNIONY — AI z paczki GOTOWE ZAI (podpis: Claude), 2026-10-12, z materiału OLI.CHE.R07; do W1 (sprawdzić wszystkie rachunki)
+---
+
+::: minimum | Muszę umieć — 10 punktów
+1. Czytam zbilansowane równanie jak przepis: współczynniki to stosunek cząsteczek (atomów) i zarazem stosunek mas porcji substratów i produktów.
+2. Liczę masy porcji pod równaniem: masa cząsteczkowa = suma mas atomowych wg wzoru, z uwzględnieniem indeksów i współczynników (2MgO to 80, nie 40).
+3. Porównuję substraty poprawnie: dzielę podane masy przez masy porcji wg równania — mniejszy wynik („mniejsza porcja”) to substrat ograniczający; nigdy nie porównuję gołych mas „na oko”.
+4. Wskazuję substrat ograniczający (kończy się pierwszy) i substrat nadmiarowy (jego część zostaje), uzasadniając wybór obliczeniem.
+5. Obliczam ilość każdego produktu wyłącznie z substratu ograniczającego proporcją masową.
+6. Obliczam masę zużytego substratu nadmiarowego i resztę nadmiaru: masa początkowa − masa zużyta.
+7. Prowadzę rozwiązanie w ustalonym schemacie: równanie → masy porcji → porównanie porcji → produkt z ograniczającego → reszta nadmiaru → odpowiedź z jednostką i nazwą substancji.
+8. Sprawdzam rachunek bilansem masy: masa zużytych substratów = suma mas produktów; wielkie odstępstwo sygnalizuje błąd.
+9. Rozwiązuję typowe zadania egzaminacyjne: spalanie magnezu, rozkład węglanu wapnia, wydzielanie wodoru z cynku i kwasu, dwutlenek węgla z marmuru.
+10. Na poziomie konkursowym rozwiązuję zadania wieloetapowe: z roztworami o stężeniu procentowym, z próbkami zanieczyszczonymi (procent zawartości) i z wydajnością reakcji (masa rzeczywista ÷ teoretyczna · 100%).
+:::
+
+::: warstwy
+- e8 | <b>Podstawa:</b> równanie jako przepis, masy porcji, jednoetapowe zadania z proporcją, prosty nadmiar i bilans masy — dokładnie poziom arkusza E8.
+- understand | <b>Rozumienie:</b> dlaczego decyduje „mniejsza porcja”, a nie większa masa; dlaczego produkt z nadmiaru łamie prawo zachowania masy; po co kontrola bilansem; kiedy substraty są w stosunku stechiometrycznym (nic nie zostaje).
+- contest | <b>Konkurs:</b> zadania wieloetapowe, roztwory procentowe (masa czystej substancji), próbki zanieczyszczone, wydajność reakcji, scalanie z lekcjami X04 (wypieranie miedzi cynkiem) i J03 (osady), znajdowanie błędów w cudzych rachunkach, pułapki zaokrągleń i „zbędnych danych”.
+- extra | <b>Ambitne:</b> wydajność teoretyczna a praktyczna, stechiometria w silnikach i rakietach, wapienniki w skali przemysłowej, mole jako skrót zawodowców (zarys — most do liceum), granice modelu proporcji masowych.
+:::
+
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
+- [§1](#wyklad) — Wykład od zera: przepis, porcje i konkurencja składników.
+- [§2](#przepis) — Równanie jako przepis: stosunki stechiometryczne.
+- [§3](#masy) — Masy porcji: tabliczka mnożenia stechiometrii.
+- [§4](#nadmiar) — Substrat ograniczający i nadmiar: dwie metody porównania.
+- [§5](#algorytm) — Algorytm pełnego rozwiązania krok po kroku.
+- [§6](#e8) — Zadania typu E8: trzy wzorce.
+- [§8](#zadania-konkurs) — Zadania konkursowe oraz [§14](#test) — test końcowy.
+- [§18](#sciaga) — Ściąga i checklista przed sprawdzianem.
+:::
+
+## 0.1 | Jak pracować z lekcją {#jak-pracowac}
+
+Cel tej lekcji: **samodzielnie rozwiązywać zadania, w których substraty nie są w stosunku stechiometrycznym — wskazywać, który substrat się skończy, ile zostanie nadmiaru i ile powstanie produktu, używając tylko mas i proporcji**. Kryterium gotowości:
+
+1. Znasz równanie jako przepis: współczynniki → stosunki cząsteczek i mas.
+2. Liczysz masy porcji dla każdej reakcji z tej lekcji (i nowych, podanych w zadaniu).
+3. Wskazujesz substrat ograniczający metodą porcji lub metodą „ile potrzeba”.
+4. Liczysz produkt, zużycie nadmiaru i resztę — z jednostkami i nazwami substancji.
+5. Kontrolujesz rachunek bilansem masy i rozwiązuje zadania transferowe (roztwory, zanieczyszczenia, wydajność).
+
+Kolejność pracy:
+
+1. Przeczytaj listę „Muszę umieć — 10 punktów” i zrób diagnozę ([§0.2](#diagnoza)) — przekonasz się, od którego miejsca zacząć.
+2. Wykład ([§1](#wyklad)) buduje jedną metaforę, która niesie całą lekcję: przepis kuchenny z ograniczonym składnikiem. Bez tej metafory algorytm bywa wkuwany i szybko wyparowuje — z nią rozumiesz każdy krok.
+3. Sekcje 2–5 to serce lekcji: przerabiaj po kolei, każdą proporcję przelicz własnoręcznie na kartce. Tu najczęstszy błąd to czytanie rozwiązań bez liczenia — klucz czytany bez próby uczy czterokrotnie słabiej.
+4. Zadania typu E8 ([§6](#e8)) przerób wszystkie trzy wzorce; to są szablony, które na egzaminie wracają co roku w nowych liczbach.
+5. Doświadczenia ([§7](#doswiadczenia)) traktuj dwojako: jako fizykę (BHP!) i jako źródła danych do obliczeń — liczb z tych prób użyjemy w zadaniach.
+6. Zadania konkursowe ([§8](#zadania-konkurs)) i warstwa olimpijska ([§9](#olimpijczyk)) — gdy algorytm jest pewny; tam czekają roztwory, zanieczyszczenia, wydajność i pułapki.
+7. Test końcowy ([§14](#test)) rozwiązuj bez zaglądania do lekcji; błędne odpowiedzi wskażą sekcje do powrotu.
+8. Fiszki ([§15](#fiszki)) powtarzaj partiami — szczególnie tabele mas porcji, bo ich biegłość przyspiesza każdy rachunek; przed sprawdzianem ściąga i checklista ([§18](#sciaga)).
+
+Przydatne wcześniej (nieobowiązkowe — wszystko tłumaczymy od zera): zbilansowane równania reakcji (spalanie, rozkład, zobojętnienie), masy atomowe z układu okresowego, procent z liczby. Zadania łączą się z lekcjami CHE-X04 (reakcja Zn z CuSO₄ — wróci w zadaniu 10) i CHE-J03 (osady jako produkty do liczenia).
+
+## 0.2 | Diagnoza {#diagnoza}
+
+Odpowiedz na kartce, bez zaglądania do lekcji. Potem sprawdź klucz i policz punkty. (Masy atomowe: Mg = 24, O = 16, Ca = 40, C = 12.)
+
+1. Co oznaczają współczynniki w zbilansowanym równaniu chemicznym?
+2. Oblicz masę cząsteczkową CaCO₃.
+3. Reakcja: 2Mg + O₂ → 2MgO; masy porcji 48 : 32 : 80. Przy 12 g Mg i 12 g O₂ — który substrat skończy się pierwszy?
+4. Dlaczego nie wolno obliczać ilości produktu z substratu nadmiarowego? Odpowiedz jednym zdaniem.
+5. Do 6 g magnezu dodano dokładnie 4 g tlenu i spalono wszystko. Czy któryś substrat był w nadmiarze? Ile MgO powstało?
+
+::: odp | Klucz diagnozy
+1. (1 pkt) Stosunek liczb cząsteczek (atomów) substratów i produktów — „przepis”, z którego wynikają stałe proporcje mas.
+2. (1 pkt) 40 + 12 + 3·16 = 100.
+3. (1 pkt) Magnez: na 48 g Mg (3 porcje) przypada 32 g O₂ (2 porcje), więc na 12 g Mg potrzeba tylko 8 g O₂ — tlenu (12 g) jest więcej, niż może zareagować; kończy się magnez.
+4. (1 pkt) Bo nadmiar bierze w reakcji udział tylko częściowo — rachunek z nadmiaru dałby produkt „ważący” więcej niż wkład, wbrew prawu zachowania masy.
+5. (1 pkt) Nie — 6 : 4 to dokładnie proporcja 48 : 32 (stosunek stechiometryczny); zużywa się wszystko i powstaje 10 g MgO (6 + 4 = 10, bilans zgadza się).
+:::
+
+Rozliczenie: 5 pkt — przejdź szybko sekcje 2–3 i trenuj od zadań typu E8; 3–4 pkt — przerabiaj lekcję po kolei; 0–2 pkt — zacznij od wykładu: metafora przepisu wszystko poukłada.
+
+## 1 | Wykład — przepis, porcje i konkurencja składników {#wyklad} [[basic:E8]]
+
+Otwórz w wyobraźni książkę kucharską. Przepis brzmi: „2 jajka + 1 szklanka mąki → 1 tort”. Wszystko jasne: proporcje sztywne, na jedno jajko więcej tort nie urośnie, a szklanka mąki więcej tort nie pomnoży. Teraz zrób zapasy: masz 6 jajek i 2 szklanki mąki. Ile tortów? Dwa — bo mąka pozwala na dwa, choć jajek starczy aż na trzy. Zostają 2 jajka. Mąka się skończyła pierwsza — **to ona wyznacza wynik**. Jajka są w nadmiarze: biorą udział w wypieku, ale tylko częściowo.
+
+Równanie chemiczne to dokładnie ten sam przepis, tylko precyzyjniejszy. Zamiast jajek i szklanek — cząsteczki i gramy. Zamiast „1 tort” — produkt. I jedna ważna różnica: w kuchni odchodzisz trochę od proporcji „na oko”, a chemia nie wybacza żadnego odchylenia — proporcje są sztywne z natury materii, zapisane w równaniu współczynnikami.
+
+Weźmy naszą pracę na całą lekcję: **2Mg + O₂ → 2MgO** (spalanie magnezu). Odczyt przepisu: dwie jednostki magnezu reagują z jedną jednostką tlenu (O₂ — cząsteczka dwuatomowa!) i dają dwie jednostki tlenku magnezu. Współczynniki 2 : 1 : 2 to stosunek cząsteczek. A ponieważ cząsteczki mają znane masy, ten sam stosunek przelicza się na masy: magnez 2·24 = 48, tlen 32, tlenek magnezu 2·40 = 80. Pod równaniem zapisujemy: **48 : 32 : 80**. To są **masy porcji** — „przepisowe gramy”, które zawsze pozostają w tej samej proporcji, niezależnie od tego, czy w probówce reagują miligramy, czy w piecu tony. Chcesz 10 g MgO? To 10/80 = 0,125 porcji: trzeba 0,125·48 = 6 g Mg i 0,125·32 = 4 g O₂. Ułamek porcji? Żaden problem — chemia liczy ułamki tak samo jak kuchnia połówki przepisu.
+
+I teraz najważniejsze zdanie tej lekcji, z którego wynika cały algorytm: **substraty rzadko trafiają do probówki w idealnej proporcji przepisu**. Ktoś odważył 12 g magnezu i 12 g tlenu — a przepis chce na 12 g magnezu tylko 8 g tlenu. Co się dzieje z resztą tlenu? Nic — zostaje. Reakcja zatrzymuje się w chwili, gdy **pierwszy skończy się któryś substrat** — tutaj magnez. Ten, który się kończy, nazywamy **substratem ograniczającym**: to on wyznacza maksymalną ilość produktów, tak jak mąka wyznacza liczbę tortów. Drugi — **substrat nadmiarowy** — bierze udział w reakcji tylko częściowo, a jego reszta zostaje nietknięta.
+
+Skąd wiadomo, który skończy się pierwszy? Są dwie drogi, obie uczciwe. **Metoda „ile potrzeba”**: wybierz jeden substrat za punkt odniesienia i policz, ile potrzeba drugiego. Na 12 g Mg (przepis: 48 → 32) potrzeba (32/48)·12 = 8 g O₂. Masz 12 g — czyli nadmiar; ogranicza magnez. **Metoda porcji**: podziel każdą podaną masę przez jej przepisową masę porcji. Magnez: 12/48 = 0,25 porcji. Tlen: 12/32 = 0,375 porcji. **Mniejsza liczba porcji wygrywa tytuł „ograniczający”** — bo jego porcje kończą się pierwsze. Obie metody zawsze dają ten sam werdykt; wybierz tę, która ci wygodniej idzie, a drugą miej na sprawdzanie.
+
+Skoro ograniczający wyznacza wynik, **produkty liczymy wyłącznie z niego**. Tu nauczycielska przestroga z tysiącami ofiar: rachunek z substratu nadmiarowego daje absurd. Policzmy na przekorę z tlenu: MgO = (12/32)·80 = 30 g. Ale przecież do probówki włożyliśmy 12 + 12 = 24 g! Produkt nie może ważyć więcej niż wszystko, co włożyliśmy — prawo zachowania masy wprost zabrania. Ten absurd to nie ciekawostka, to narzędzie: na sprawdzianie i na konkursie **bilans masy jest twoim detektywem**. Zsumuj masy substratów, które naprawdę zareagowały, i porównaj z sumą produktów: 12 g Mg + 8 g O₂ = 20 g = 20 g MgO. Zgadza się — rachunek prawdopodobnie poprawny. Nie zgadza się — gdzieś jest błąd, znajdź go przed oddaniem pracy.
+
+Cały algorytm mieści się więc w sześciu krokach: **(1) zbilansuj równanie** — bez tego wszystkie proporcje kłamią; **(2) policz masy porcji** pod równaniem; **(3) porównaj porcje** substratów (albo policz „ile potrzeba”); **(4) wyznacz ograniczający** — mniejsza porcja; **(5) licz produkty i zużycie nadmiaru proporcjami z ograniczającego**, resztę nadmiaru jako masa początkowa − zużyta; **(6) zamknij bilans masy** i zapisz odpowiedź z jednostką i nazwą substancji. Ten schemat przenosi cię przez każdy arkusz — od spalania magnezu po przemysłowe wapienniki.
+
+Dwa szczegóły, które na egzaminie rozdają punkty. **Jednostki i nazwy**: nie „20”, tylko „20 g MgO” — masa bez substancji to pół odpowiedzi. **Zaokrąglenia**: licz na kalkulatorze z pełną dokładnością, zaokrąglaj dopiero wynik końcowy do 2–3 cyfr znaczących; zaokrąglanie w środku rachunku kumuluje błąd — 4,9 staje się 5,1, a na konkursie to różnica między punktem a jego brakiem.
+
+A gdzie „bez mola”? Cała powyższa machina działa na masach i proporcjach — dokładnie jak w przepisie kuchennym. Warto jednak wiedzieć, że zawodowi chemicy mają sprawniejszy rejestr: **mole** (porcje po ok. 6·10²³ cząsteczek — orientacyjnie), które pozwalają łączyć masy z objętościami gazów i stężeniami. Zarys tej maszyny zostawiamy do [§9](#olimpijczyk) — jako most do liceum; do egzaminu wystarczą proporcje masowe, a tymus „porcji” i tak zostaje ten sam.
+
+Masz przepis, masz porcje, masz prawo o mniejszej porcji i detektywa-bilans. Teraz krok po kroku, z tabelami, trzema wzorcami egzaminacyjnymi i ośmioma zadaniami konkursowymi — od zwykłego spalania po wapiennik z wydajnością 85%.
+
+## 2 | Równanie jako przepis — stosunki stechiometryczne {#przepis} [[basic:E8]]
+
+**Równanie stechiometryczne** (czyli zwykłe, zbilansowane równanie chemiczne) to zapis przepisu. Trzy rzeczy, które trzeba z niego umieć wyczytać:
+
+1. **Współczynniki** to stosunek liczb cząsteczek (atomów) substratów i produktów: w 2Mg + O₂ → 2MgO na 1 cząsteczkę O₂ przypadają 2 atomy Mg i powstają 2 jednostki MgO (stosunek 2 : 1 : 2).
+2. **Indeksy** we wzorach mówią o składzie cząsteczki: w O₂ jest 2 atomy tlenu, w CaCO₃ — 3 atomy tlenu, w ZnCl₂ — 2 atomy chloru.
+3. Z pierwszego i drugiego wynika trzecie: **stały stosunek mas**, w jakim substancje reagują i powstają. Ten stosunek nie zależy od ilości — dotyczy miligramów i ton równie dobrze.
+
+**Przykład odczytu dla spalania metanu:**
+
+CH₄ + 2O₂ → CO₂ + 2H₂O
+(1 cząsteczka metanu + 2 cząsteczki tlenu → 1 cząsteczka dwutlenku węgla + 2 cząsteczki wody)
+
+::: karta core | Najważniejsze — trzy odczyty jednego równania
+Współczynniki: stosunek porcji cząsteczek (2 : 1 : 2). Indeksy: skład porcji (O₂ = dwa atomy tlenu). Masy porcji: przepis w gramach (48 : 32 : 80 dla magnezu). Wszystkie trzy odczyty to jedno równanie patrzone z trzech stron — i wszystkie trzy prowadzą do tych samych proporcji.
+:::
+
+::: karta warning | Uwaga — indeks w O₂ to nie literówka
+W zadaniach o spalaniu najczęstszy błąd to traktowanie O₂ jak „O”: tlen cząsteczkowy składa się z **dwóch** atomów, więc jego masa porcji to 32 (2·16), nie 16. Podobnie H₂ to 2, N₂ to 28. Jedna zapomniana dwójka psuje wszystkie proporcje w zadaniu — dlatego masy porcji zawsze przeliczaj z wzoru, nigdy „z pamięci”.
+:::
+
+::: karta exam | Zadanie 1 (2 pkt) — Trzy odczyty przepisu
+Równanie: 2H₂ + O₂ → 2H₂O.
+a) Podaj stosunek porcji cząsteczek substratów i produktu oraz stosunek ich mas (H = 1, O = 16). (1 pkt)
+b) Ile cząsteczek wody powstanie z 5 cząsteczek wodoru przy nadmiarze tlenu? Uzasadnij, dlaczego rozumowanie prowadzimy na porcjach, a nie na pojedynczych cząsteczkach. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (1 pkt) Cząsteczki: 2 : 1 : 2. Masy porcji: H₂ → 2·1 = 2, więc 2H₂ = 4; O₂ = 32; 2H₂O = 2·18 = 36. Stosunek mas 4 : 32 : 36 (czyli 1 : 8 : 9).
+b) (1 pkt) Stosunek H₂ : H₂O wynosi 1 : 1, więc z 5 cząsteczek H₂ powstanie 5 cząsteczek H₂O (zgodnie z porcjami zużyje się też 2,5 „porcji” O₂ — a pojedyncze cząsteczki nie dzielą się na pół, dlatego w praktyce rozumujemy na dużych liczbach porcji, czyli na masach; na poziomie makroskopowym odpowiedź 5 jest poprawna).
+:::
+:::
+
+## 3 | Masy porcji — tabliczka mnożenia stechiometrii {#masy} [[basic:E8]] [[understand:ROZUMIENIE]]
+
+**Masa porcji** to masa „jednego zestawu” reakcji zgodnie ze współczynnikami — i to jedyna liczba, którą trzeba umieć policzyć samodzielnie. Wzór: masa porcji = suma mas atomowych wszystkich atomów we wzorze, pomnożonych przez współczynnik. Dla wygody liczby mas atomowych przyjmujemy w całej lekcji takie: H = 1, C = 12, N = 14, O = 16, Na = 23, Mg = 24, S = 32, Cl = 35,5, Ca = 40, Fe = 56, Cu = 64, Zn = 65.
+
+**Trzy przykłady zapisu porcji pod równaniem:**
+
+2Mg + O₂ → 2MgO
+48 : 32 : 80
+(skrót: 3 : 2 : 5 — czyli 12 g Mg + 8 g O₂ → 20 g MgO)
+
+CaCO₃ → CaO + CO₂
+100 : 56 : 44
+(CaCO₃ = 40 + 12 + 48 = 100; CaO = 56; CO₂ = 12 + 32 = 44)
+
+Zn + 2HCl → ZnCl₂ + H₂
+65 : 73 : 136 : 2
+(HCl = 1 + 35,5 = 36,5; 2HCl = 73; ZnCl₂ = 65 + 71 = 136)
+
+Zwróć uwagę, gdzie „chowają się” współczynniki i indeksy: w 2HCl masą porcji jest **73** (nie 36,5), w ZnCl₂ chlor wchodzi podwójnie (2·35,5 = 71), a w 2MgO porcja to **80** (nie 40). Pominięcie współczynnika albo indeksu to najtańszy sposób na stracenie całego zadania.
+
+Zapisy „u” i „g” w praktyce szkolnej: masa cząsteczkowa ma jednostkę u, ale ponieważ proporcje są identyczne, pod równaniem pracujemy tymi liczbami bezpośrednio w gramach — to jest właśnie sens metody „bez mola”: liczby z tablicy periodicznej wchodzą do proporcji bez dodatkowych przekształceń.
+
+::: karta understand | W skrócie — masy porcji
+Masa porcji to „cennik” reakcji: ile gramów każdej substancji bierze udział w jednym zestawie reakcji wg współczynników. Liczysz ją raz dla każdej reakcji: wzór → atomy → współczynniki. Od tej chwili każde zadanie z tą reakcją to operacje na jednej linijce liczb: 65 : 73 : 136 : 2. Jeśli porcje masz wyliczone poprawnie, reszta zadania to arytmetyka na proporcjach — i dlatego warto je trenować na pamięć dla reakcji najczęstszych.
+:::
+
+::: karta exam | Zadanie 2 (3 pkt) — Wyznacz masy porcji
+a) Wyznacz masy porcji dla rozkładu węglanu wapnia: CaCO₃ → CaO + CO₂. (1 pkt)
+b) Wyznacz masy porcji dla reakcji węglanu wapnia z kwasem: CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂. (1 pkt)
+c) Wyjaśnij, dlaczego w porcjach dla b) woda ma masę 18, a kwas 73. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (1 pkt) CaCO₃ = 40 + 12 + 3·16 = 100; CaO = 40 + 16 = 56; CO₂ = 12 + 2·16 = 44. Porcje: 100 : 56 : 44.
+b) (1 pkt) CaCO₃ = 100; 2HCl = 2·36,5 = 73; CaCl₂ = 40 + 2·35,5 = 111; H₂O = 18; CO₂ = 44. Porcje: 100 : 73 : 111 : 18 : 44.
+c) (1 pkt) Woda nie ma współczynnika, więc jej porcja to po prostu masa cząsteczkowa (18); kwas chlorowodorowy ma współczynnik 2, więc jego porcja to 2·36,5 = 73 — współczynnik przed wzorem mnoży całą masę cząsteczkową.
+:::
+:::
+
+## 4 | Substrat ograniczający i nadmiar — dwie metody porównania {#nadmiar} [[understand:ROZUMIENIE]] [[basic:E8]]
+
+**Substrat ograniczający** to ten, który kończy się w reakcji pierwszy — wyznacza maksimum produktów, jak mąka w przepisie na torty. **Substrat nadmiarowy** bierze udział tylko częściowo; jego reszta zostaje po reakcji. I najważniejsza zasada praktyczna: **porównujemy porcje, nie gołe masy**. To, że magnezu „więcej gramów”, nie znaczy, że jest w nadmiarze — wszystko zależy od proporcji przepisu.
+
+**Metoda 1 — „ile potrzeba”.** Wybierz jeden substrat za punkt odniesienia i policz z porcji, ile potrzeba drugiego. Porównaj z tym, co faktycznie dano.
+
+12 g Mg + 12 g O₂ (porcje 48 : 32):
+na 12 g Mg potrzeba (32/48)·12 = **8 g O₂**; dano 12 g → O₂ w nadmiarze → **ogranicza Mg**.
+
+**Metoda 2 — porcje.** Podziel każdą podaną masę przez jej masę porcji:
+
+Magnez: 12/48 = **0,25 porcji**; tlen: 12/32 = **0,375 porcji**.
+Mniejsza liczba = ograniczający → **Mg** (0,25 < 0,375).
+
+Obie metody dają identyczny werdykt. Metoda porcji jest mechaniczna i bezpieczna (dzielenie i porównanie), metoda „ile potrzeba” jest bardziej intuicyjna i świetnie sprawdza wynik drugiej. Na sprawdzianie wybierz jedną i konsekwentnie ją stosuj — a na konkursie miej obie, bo czasem zadanie pyta wprost „ile gramów jednego substratu potrzeba na drugi”.
+
+A kiedy nadmiaru **nie ma**? Gdy porcje są równe: 6 g Mg i 4 g O₂ dają po 0,125 porcji każde — substraty w **stosunku stechiometrycznym**. Wtedy zużywa się wszystko i bilans masy wygląda najprościej, jak da się: 6 + 4 = 10 = 10 g MgO. Zadania czasem celowo podają taką proporcję — ucznia, który rutynowo szuka nadmiaru, wtedy gubi brak reszty.
+
+::: karta understand | W skrócie — mniejsza porcja wygrywa
+Nie pytaj „czego jest więcej gramów”, pytaj „czego jest mniej porcji”. Porcja = podana masa ÷ masa porcji z równania. Mniejszy wynik → substrat ograniczający → z niego liczymy wszystko. Równy wynik → stosunek stechiometryczny → nic nie zostaje. Wynik dla nadmiarowego nigdy nie służy do liczenia produktu — służy tylko do policzenia, ile go zużyto i ile zostało.
+:::
+
+::: karta warning | Uwaga — „więcej gramów” to nie „nadmiar”
+Porównanie 12 g Mg z 12 g O₂ „na oko” (równe — więc wszystko zareaguje?) to błąd, który kosztuje cały rachunek: tu właśnie magnez kończy się pierwszy, mimo że waży tyle samo. Kierunek błędu bywa obu stronny: uczniowie uznają za nadmiarowy substrat cięższy, a to porcje decydują. Reguła ostrzegawcza: każde zdanie „X jest w nadmiarze” musi mieć za sobą obliczenie porcji albo „ile potrzeba” — samo wskazanie palcem nie dostaje punktu.
+:::
+
+::: karta exam | Zadanie 3 (3 pkt) — Dwie metody, jeden werdykt
+Do spalania użyto 12 g magnezu i 12 g tlenu (porcje 48 : 32 : 80).
+a) Rozstrzygnij metodą „ile potrzeba”, który substrat jest ograniczający. (1 pkt)
+b) Rozstrzygnij metodą porcji. (1 pkt)
+c) Podaj masę tlenu, która faktycznie zareaguje. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (1 pkt) Na 12 g Mg potrzeba (32/48)·12 = 8 g O₂; dano 12 g — tlenu za dużo, więc ogranicza magnez.
+b) (1 pkt) Porcje: Mg 12/48 = 0,25; O₂ 12/32 = 0,375. Mniejsza porcja — magnez; metoda potwierdza werdykt z a).
+c) (1 pkt) Reaguje tyle tlenu, ile wymaga ograniczający magnez: 8 g (reszta, 4 g, zostaje).
+:::
+:::
+
+## 5 | Algorytm pełnego rozwiązania — od równania do bilansu {#algorytm} [[basic:E8]] [[understand:ROZUMIENIE]]
+
+Teraz wszystko w jeden schemat — zapisuj go w tej kolejności w każdej pracy pisemnej; kolejność ta sama jest kryterium punktacji na konkursie.
+
+**Zadanie modelowe:** Spalono 6 g magnezu w 8 g tlenu. Oblicz masę powstałego tlenku magnezu i masę reszty nadmiarowego substratu.
+
+1. **Równanie (zbilansowane!):** 2Mg + O₂ → 2MgO.
+2. **Masy porcji:** 48 : 32 : 80.
+3. **Porównanie porcji:** Mg: 6/48 = 0,125; O₂: 8/32 = 0,25. Mniejsza porcja → **Mg ogranicza**, O₂ nadmiarowy.
+4. **Produkt z ograniczającego:** MgO = (6/48)·80 = **10 g**.
+5. **Zużycie nadmiaru i reszta:** O₂ zużyte = (6/48)·32 = 4 g; reszta = 8 − 4 = **4 g O₂**.
+6. **Bilans masy:** zużyte substraty 6 g Mg + 4 g O₂ = 10 g; produkty 10 g MgO. ✓ **Odpowiedź: powstanie 10 g MgO, a 4 g tlenu pozostanie.**
+
+Zauważ, że proporcję zawsze budujesz z **masy porcji ograniczającego w mianowniku**: (masa ograniczającego / jego porcja) · porcja produktu. Ten jeden wzór zastępuje wszystkie „przekształcania” — wystarczy podstawiać właściwe porcje.
+
+Druga kontrola, darmowa i bezcenna: **kryterium absurdów**. Suma produktów nie może przekraczać sumy wszystkich substratów włożonych do naczynia, a reszta nadmiaru nie może być ujemna. Jeśli wyszło inaczej — błąd jest wyłącznie w twoim rachunku, nie w naturze.
+
+::: karta understand | W skrócie — sześć kroków
+Równanie → masy porcji → porównaj porcje → produkt z mniejszej → reszta = początek − zużyte → bilans masy zamyka sprawę. Każdy krok to jedna linijka zapisu; cały rachunek mieści się w pięciu linijkach pod równaniem. Kolejność kroków jest też kolejnością punktacji: na konkursie rozsypka „wynik bez uzasadnienia” dostaje najwyżej punkt za wynik, nigdy za tok rozumowania.
+:::
+
+::: karta exam | Zadanie 4 (5 pkt) — Pełny algorytm na nowych liczbach
+Spalono 6 g magnezu w 4 g tlenu (porcje 48 : 32 : 80).
+a) Zbilansuj równanie i wyznacz masy porcji. (1 pkt)
+b) Wskaż substrat ograniczający metodą porcji. (1 pkt)
+c) Oblicz masę MgO. (1 pkt)
+d) Oblicz masę reszty nadmiaru lub stwierdź, że nadmiaru brak. (1 pkt)
+e) Sprawdź rachunek bilansem masy. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (1 pkt) 2Mg + O₂ → 2MgO; porcje 48 : 32 : 80 (MgO = 2·40).
+b) (1 pkt) Porcje: Mg 6/48 = 0,125; O₂ 4/32 = 0,125 — równe, więc substraty są w stosunku stechiometrycznym (żaden nie jest „ograniczający” w sensie nadmiaru — oba zużyją się całkowicie).
+c) (1 pkt) MgO = 0,125·80 = 10 g (albo z proporcji 48 : 80 = 6 : x → x = 10 g).
+d) (1 pkt) Nadmiaru brak — porcje równe, zużywa się wszystko (6 g Mg i 4 g O₂ w całości).
+e) (1 pkt) 6 g Mg + 4 g O₂ = 10 g = 10 g MgO ✓ — bilans masy potwierdza rachunek; odpowiedź: 10 g MgO, reszty brak.
+:::
+:::
+
+## 6 | Zadania typu E8 — trzy wzorce {#e8} [[basic:E8]]
+
+Trzy reakcje tworzą w arkuszach stałą trójkę: wodoru z cynkiem, dwutlenku węgla z węglanu, spalanie. Opanuj te szablony — na egzaminie zmieniają się tylko liczby.
+
+**Wzorzec 1 — gaz z metalu i kwasu** (Zn + 2HCl → ZnCl₂ + H₂; porcje 65 : 73 : 136 : 2). Typowe pytania: masa wodoru, masa soli, zużyty kwas. Nadmiar bywa jawnie podany („kwas w nadmiarze”) — wtedy ograniczający jest oczywisty i krok porównania można skrócić, ale zapis „kwas w nadmiarze, więc ogranicza Zn” i tak musi się pojawić.
+
+**Wzorzec 2 — rozkład węglanu** (CaCO₃ → CaO + CO₂; porcje 100 : 56 : 44). Jedno-substratowy: ograniczający jest zawsze substrat, liczymy oba produkty. Klasyczna wariacja: „ile wapna z X ton wapienia” — ta sama arytmetyka w skali przemysłowej.
+
+**Wzorzec 3 — spalanie z nadmiarem** (2Mg + O₂ → 2MgO; 48 : 32 : 80 albo CH₄ + 2O₂ → CO₂ + 2H₂O; 16 : 64 : 44 : 36). Tu porównanie porcji jest obowiązkowe — od niego zależy wszystko.
+
+::: karta understand | W skrócie — trzy wzorce E8
+Gaz z metalu: sprawdź nadmiar (często jawny) → licz z metalu. Rozkład węglanu: substrat sam w sobie ogranicza → licz oba produkty z proporcji 100 : 56 : 44. Spalanie: porównuj porcje tlenu i paliwa — najczęstsza pułapka egzaminacyjna, bo tlenu „wygląda dużo” w gramach, a przepis żąda go w zestawie 2 : 1 z metanem. Po każdym wzorcu — bilans masy; trzy sekundy pracy, które ratują cały punkt.
+:::
+
+::: karta exam | Zadanie 5 (4 pkt) — Wodór z cynku
+Do 6,5 g cynku dodano nadmiar rozcieńczonego kwasu chlorowodorowego (Zn + 2HCl → ZnCl₂ + H₂; porcje 65 : 73 : 136 : 2).
+a) Wskaż substrat ograniczający i uzasadnij. (1 pkt)
+b) Oblicz masę wydzielonego wodoru. (1 pkt)
+c) Oblicz masę powstałego chlorku cynku. (1 pkt)
+d) Oblicz masę zużytego HCl. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (1 pkt) Kwas podano w nadmiarze, więc ogranicza cynk — to z jego masy liczymy wszystkie produkty.
+b) (1 pkt) H₂ = (6,5/65)·2 = 0,2 g (porcja wodoru to 2 — dwie cząsteczki H₂ wg współczynnika… uwaga: porcja H₂ = 2·1·1 = 2).
+c) (1 pkt) ZnCl₂ = (6,5/65)·136 = 13,6 g.
+d) (1 pkt) HCl zużyty = (6,5/65)·73 = 7,3 g. Kontrola bilansu: 6,5 + 7,3 = 13,8 g; produkty 13,6 + 0,2 = 13,8 g ✓.
+:::
+:::
+
+::: karta exam | Zadanie 6 (4 pkt) — Prażenie wapienia
+Rozłożono 20 g czystego węglanu wapnia (CaCO₃ → CaO + CO₂; porcje 100 : 56 : 44).
+a) Wskaż substrat ograniczający. (1 pkt)
+b) Oblicz masę powstałego tlenku wapnia (wapna palonego). (1 pkt)
+c) Oblicz masę wydzielonego CO₂. (1 pkt)
+d) Sprawdź rachunek bilansem masy. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (1 pkt) Jedynym substratem jest CaCO₃ — to on ogranicza reakcję (produktów liczymy z jego masy).
+b) (1 pkt) CaO = (20/100)·56 = 11,2 g.
+c) (1 pkt) CO₂ = (20/100)·44 = 8,8 g.
+d) (1 pkt) 11,2 + 8,8 = 20 g = masa substratu ✓; bilans potwierdza rachunek.
+:::
+:::
+
+## 7 | Doświadczenia {#doswiadczenia} [[understand:ROZUMIENIE]]
+
+Oba doświadczenia generują dane liczbowe do obliczeń z tej lekcji — traktuj je jak laboratorium, które samo pisze za ciebie treść zadania. Liczby podane w obserwacjach są orientacyjne (zależą od dokładności wagi); rachunek prowadzisz na tych, które uzyskasz lub które podano.
+
+::: dosw | Doświadczenie 1 — Spalanie magnezu: kontrola proporcji 3 : 5
+Problem: Czy stosunek masy magnezu do masy powstałego tlenku magnezu zgadza się z porcjami z równania (48 : 80 = 3 : 5)?
+Hipoteza: Jeśli równanie i porcje są poprawne, z 0,24 g Mg powstanie 0,40 g MgO.
+Sprzęt: tygiel porcelanowy z pokrywą, szczypty, palnik, statyw z łapą, waga laboratoryjna (dokładność min. 0,01 g), wstążka magnezu (ok. 0,24 g), podkład żaroodporny, szczypce.
+Przebieg: 1) Zważ czysty, suchy tygiel z pokrywą. 2) Włóż zrolowaną wstążkę magnezu, zważ znowu — różnica to masa Mg. 3) Podgrzewaj tygiel z lekko uchyloną pokrywą, aż magnez spłonie i spali się do końca (dopalać ostrożnie, przechylając pokrywę co kilka sekund, aby tlen miał dostęp). 4) Ostudź tygiel do temperatury pokojowej i zważ z zawartością — masa końcowa minus masa tygła z pokrywą to masa MgO.
+Próba kontrolna: pusty tygiel z pokrywą podgrzewany w tych samych warunkach i ważony przed i po — zmiana masy powinna być pomijalna; potwierdza, że przyrost masy w próbie głównej pochodzi z połączenia Mg z tlenem, a nie z sączenia tygła.
+Obserwacja (orientacyjnie): m(Mg) = 0,24 g; m(MgO) = 0,40 g; stosunek 0,24 : 0,40 = 3 : 5.
+Wniosek: wynik zgadza się z porcjami równania 2Mg + O₂ → 2MgO (48 : 80 = 3 : 5) — masa tlenku to masa magnezu plus masa związana tlenu (0,16 g), co po przeliczeniu daje 0,16/32 = 0,005 porcji tlenu na 0,005·48 = 0,24 g magnezu: idealna proporcja.
+BHP: nie patrz wprost na płonący magnez (olśniewające światło — szkodzi oczom); rozgrzany tygiel przenoś wyłącznie szczypcami i odkładaj na podkład żaroodporny; pracuj pod nadzorem osoby dorosłej, w wentylowanym miejscu; nie gasź palącego się Mg wodą (gwałtowna reakcja) — przysyp piaskiem.
+:::
+
+::: dosw | Doświadczenie 2 — Marmur z kwasem: ubytek masy to CO₂
+Problem: Ile czystego CaCO₃ zawiera próbka marmuru, jeśli znamy masę CO₂, która uleciała podczas reakcji z kwasem?
+Hipoteza: Ubytek masy kolby równa się masie wydzielonego CO₂; z porcji 100 : 44 przeliczymy masę CaCO₃ i czystość próbki.
+Sprzęt: kolba stożkowa, waga laboratoryjna, 5,00 g pokruszonego marmuru, rozcieńczony kwas chlorowodorowy (ok. 30 ml), pipeta/lejek, stoper.
+Przebieg: 1) Wstaw kolbę z kwasem na wagę, wyzeruj (tare), dodaj marmur i odczytaj masę całkowitą. 2) Pozostaw bez korka (uwaga — nigdy nie zamykaj szczelnie!) i obserwuj burzliwe wydzielanie gazu. 3) Po ustaniu reakcji (ok. 10–15 min) odczytaj masę końcową. 4) Ubytek masy = masa CO₂, która ulotowała się.
+Próba kontrolna: identyczna kolba z tym samym kwasem bez marmuru, ważona w tych samych odstępach — ubytek masy (parowanie) powinien być pomijalny; potwierdza, że ubytek w próbie głównej to CO₂, nie parowanie kwasu.
+Obserwacja (orientacyjnie): m startowa 100,00 g; m końcowa 97,91 g; ubytek = 2,09 g CO₂.
+Wniosek: n(CO₂ porcje) = 2,09/44 ≈ 0,0475 → CaCO₃ = 0,0475·100 = 4,75 g z próbki 5,00 g → czystość 95,0%; pozostałe 0,25 g to zanieczyszczenia niereagujące z kwasem — dokładnie ten rachunek wróci w zadaniu 12.
+BHP: okulary i rękawice — HCl drażni skórę i oczy; nie zamykaj kolby korkiem podczas reakcji (ryzyko rozbicia przez ciśnienie); pracuj na podkładzie, przy dobrej wentylacji; nie pij płynów, po pracy umyj ręce i wylej roztwór zgodnie z instrukcją osoby nadzorującej.
+:::
+
+## 8 | Zadania konkursowe {#zadania-konkurs} [[exam:KONKURS]]
+
+Osiem zadań w typach: obliczeniowe, uzasadnianie, znajdź błąd, roztwory, pułapka, analiza danych, analiza tekstu, wydajność. Każde z kluczem i uzasadnieniem — na konkursie wynik bez toku rozumowania nie dostaje pełni punktów.
+
+::: adv | Zadanie 7 (4 pkt) — Metan spalony dokładnie „na przepis” | poziom ambitny
+Spalano 8 g metanu w 32 g tlenu (CH₄ + 2O₂ → CO₂ + 2H₂O; porcje 16 : 64 : 44 : 36).
+a) Wskaż, czy któryś substrat jest w nadmiarze. (1 pkt)
+b) Oblicz masę CO₂. (1 pkt)
+c) Oblicz masę H₂O. (1 pkt)
+d) Zamknij bilans masy. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (1 pkt) Porcje: CH₄ 8/16 = 0,5; O₂ 32/64 = 0,5 — równe; substraty w stosunku stechiometrycznym, nadmiaru brak, zużyje się wszystko.
+b) (1 pkt) CO₂ = 0,5·44 = 22 g.
+c) (1 pkt) H₂O = 0,5·36 = 18 g.
+d) (1 pkt) 8 + 32 = 40 g substratów; 22 + 18 = 40 g produktów ✓ — bilans się zamyka, rachunek spójny.
+:::
+:::
+
+::: adv | Zadanie 8 (4 pkt) — Rachunek z nadmiaru: wykaż absurd | poziom ambitny
+Uczeń obliczył masę MgO dla zadania „12 g Mg + 12 g O₂” (porcje 48 : 32 : 80), biorąc za podstawę tlen: m(MgO) = (12/32)·80 = 30 g.
+a) Powtórz ten rachunek i podaj wynik ucznia. (1 pkt)
+b) Wykaż, że wynik przeczy prawu zachowania masy, porównując go z masą substratów włożonych do naczynia. (1 pkt)
+c) Oblicz, ile naprawdę zareagowało substratów, i podaj poprawną masę MgO. (1 pkt)
+d) Sformułuj regułę, która chroni przed tym błędem. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (1 pkt) (12/32)·80 = 30 g — tyle wyszło uczniowi.
+b) (1 pkt) Do naczynia włożono 12 + 12 = 24 g; produkt „30 g” ważyłby o 6 g więcej niż cały wkład — masa wzięła się znikąd, co prawo zachowania masy wyklucza.
+c) (1 pkt) Porcje: Mg 12/48 = 0,25; O₂ 12/32 = 0,375 → ogranicza Mg; zużyte substraty: 12 g Mg + 8 g O₂ = 20 g; MgO = 0,25·80 = 20 g ✓ (zostaje 4 g O₂).
+d) (1 pkt) Produkty liczymy wyłącznie z substratu ograniczającego (mniejszej porcji); rachunek z nadmiaru jest z definicji fałszywy i bilans masy natychmiast to ujawni.
+:::
+:::
+
+::: adv | Zadanie 9 (5 pkt) — Znajdź błędy w cudzym rozwiązaniu | poziom ambitny
+Uczeń rozwiązywał zadanie „Spalono 12 g magnezu w 12 g tlenu; ile MgO powstanie?” (porcje poprawne: 48 : 32 : 80). Jego zapis:
+1. „Masy: Mg = 24, O₂ = 16, MgO = 40.”
+2. „Magnezu i tlenu po 12 g, więc równe ilości — zareaguje wszystko.”
+3. „MgO = 12 g + 12 g = 24 g.”
+4. Odpowiedź bez jednostek substancji: „powstanie 24”.
+Wskaż wszystkie błędy (numerami) i zapisz poprawne rozwiązanie.
+
+::: odp | Pokaż klucz
+Błąd 1 (1 pkt): masy porcji bez współczynników — powinno być 2·24 = 48 (Mg), 32 (O₂ — dwuatomowa!), 2·40 = 80 (MgO); wartość 16 dla O₂ to pominięcie indeksu 2.
+Błąd 2 (1 pkt): porównanie gołych mas zamiast porcji; porcje: Mg 12/48 = 0,25, O₂ 12/32 = 0,375 — nie są równe; ogranicza magnez, tlen zostaje częściowo.
+Błąd 3 (1 pkt): „suma substratów = produkt” zakłada zużycie wszystkiego; poprawnie produkt = 0,25·80 = 20 g, a bilans zamyka się na zużytych 12 + 8 = 20 g (zostaje 4 g O₂).
+Błąd 4 (1 pkt): odpowiedź bez jednostki i nazwy substancji; poprawnie: „powstanie 20 g MgO”.
+Poprawne rozwiązanie (1 pkt): 2Mg + O₂ → 2MgO; porcje 48 : 32 : 80; porcje danych 0,25 i 0,375 → Mg ogranicza; MgO = 20 g; O₂ zużyte 8 g, reszta 4 g; bilans 12 + 8 = 20 ✓.
+:::
+:::
+
+::: adv | Zadanie 10 (5 pkt) — Cynk w roztworze siarczanu(VI) miedzi(II) | poziom ambitny
+Do 200 g roztworu CuSO₄ o stężeniu 10% wrzucono 5 g cynku (Zn + CuSO₄ → ZnSO₄ + Cu; porcje 65 : 160 : 161 : 64; Cu = 64, Zn = 65, S = 32, O = 16).
+a) Oblicz masę czystego CuSO₄ w roztworze. (1 pkt)
+b) Wskaż substrat ograniczający metodą porcji. (1 pkt)
+c) Oblicz masę wydzielonej miedzi. (1 pkt)
+d) Oblicz masę powstałego ZnSO₄. (1 pkt)
+e) Oblicz masę CuSO₄ pozostałą w roztworze. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (1 pkt) m(CuSO₄) = 200·10% = 20 g.
+b) (1 pkt) Porcje: Zn 5/65 ≈ 0,077; CuSO₄ 20/160 = 0,125 — mniejsza porcja cynku → ogranicza Zn.
+c) (1 pkt) Cu = (5/65)·64 ≈ 4,92 g (osad czerwonej miedzi — obserwacja z lekcji X04).
+d) (1 pkt) ZnSO₄ = (5/65)·161 ≈ 12,38 g.
+e) (1 pkt) CuSO₄ zużyte = (5/65)·160 ≈ 12,31 g; reszta = 20 − 12,31 ≈ 7,69 g. Kontrola: 5 + 12,31 = 17,31 g; 4,92 + 12,38 = 17,30 g ✓ (różnica 0,01 g to zaokrąglenia).
+:::
+:::
+
+::: adv | Zadanie 11 (4 pkt) — Pułapka: „przecież wodoru jest dużo” | poziom ambitny
+Zmieszano 4 g wodoru z 8 g tlenu i zainicjowano reakcję (2H₂ + O₂ → 2H₂O; porcje 4 : 32 : 36).
+a) Wskaż substrat ograniczający metodą porcji. (1 pkt)
+b) Oblicz masę wody. (1 pkt)
+c) Oblicz masę reszty nadmiaru. (1 pkt)
+d) Wyjaśnij, dlaczego stwierdzenie „wodór zużyje się w całości, bo go podano dokładnie 4 g, czyli jedną porcję” jest błędne. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (1 pkt) Porcje: H₂ 4/4 = 1; O₂ 8/32 = 0,25 — mniejsza porcja tlenu → ogranicza O₂.
+b) (1 pkt) H₂O = 0,25·36 = 9 g.
+c) (1 pkt) H₂ zużyte = 0,25·4 = 1 g; reszta = 4 − 1 = 3 g H₂ (bilans: 1 + 8 = 9 ✓).
+d) (1 pkt) „Jedna porcja” wodoru to warunek konieczny, ale nie wystarczający — reakcja zużywa H₂ i O₂ zawsze razem w stosunku 4 : 32; skoro tlenu starcza tylko na 0,25 porcji zestawu, to i wodoru spali się 0,25 porcji (1 g), a 3 g czeka bezczynnie — bo z czym ma zareagować?
+:::
+:::
+
+::: adv | Zadanie 12 (4 pkt) — Czystość marmuru (analiza danych z doświadczenia 2) | poziom ambitny
+W doświadczeniu 2 zmierzono: próbka marmuru 5,00 g; ubytek masy kolby po reakcji z nadmiarem HCl — 2,09 g (CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂; porcje 100 : 73 : 111 : 18 : 44).
+a) Wyjaśnij, dlaczego ubytek masy można utożsamić z masą CO₂. (1 pkt)
+b) Oblicz masę CaCO₃ w próbce. (1 pkt)
+c) Oblicz zawartość procentową CaCO₃ w marmurze. (1 pkt)
+d) Podaj masę i charakter zanieczyszczeń oraz uzasadnij, że HCl był w nadmiarze. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (1 pkt) Jedyne gazowe/lotne substrat produkt to CO₂ (CaCl₂ i H₂O zostają w kolbie, CaCO₃ jest stały); próba kontrolna wykluczyła parowanie kwasu — ubytek 2,09 g to uleciały CO₂.
+b) (1 pkt) Porcje CO₂: 2,09/44 ≈ 0,0475 → CaCO₃ = 0,0475·100 = 4,75 g.
+c) (1 pkt) 4,75/5,00 · 100% = 95,0%.
+d) (1 pkt) Zanieczyszczenia: 5,00 − 4,75 = 0,25 g substancji niereagujących z kwasem (nie dają CO₂); HCl był w nadmiarze, bo warunek doświadczenia tak stanowi, a wniosek o czystości jest poprawny wyłącznie przy założeniu pełnego rozpuszczenia CaCO₃ — stąd kontrola, czy po reakcji nie zostały białe grudki węglanu.
+:::
+:::
+
+::: adv | Zadanie 13 (5 pkt) — Wapiennik: analiza tekstu przemysłowego | poziom ambitny
+Przeczytaj fragment: „W wapienniku wypala się wapień: CaCO₃ → CaO + CO₂ (porcje 100 : 56 : 44). Dostawiono 250 kg wapienia o zawartości 90% CaCO₃. Otrzymano 107,1 kg wapna palonego.”
+a) Oblicz masę czystego CaCO₃ w dostawie. (1 pkt)
+b) Oblicz teoretyczną masę CaO. (1 pkt)
+c) Oblicz teoretyczną masę CO₂, która ulotuje się do atmosfery. (1 pkt)
+d) Oblicz wydajność reakcji (%). (1 pkt)
+e) Wyjaśnij, czemu teoria mówi o „maksimum”, a przemysł o „wydajności”. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (1 pkt) 250·90% = 225 kg CaCO₃ (zanieczyszczenia 25 kg nie biorą udziału w reakcji).
+b) (1 pkt) Porcje CaCO₃: 225/100 = 2,25 → CaO = 2,25·56 = 126 kg.
+c) (1 pkt) CO₂ = 2,25·44 = 99 kg.
+d) (1 pkt) Wydajność = 107,1/126 · 100% = 85%.
+e) (1 pkt) Rachunek porcji zakłada idealne warunki: pełne rozłożenie, brak strat, 100% produktu; w praktyce część CaCO₃ się nie rozłoży, część produktu ucieka z pyłem, piec chłodzi — stąd rzeczywista masa jest niższa od teoretycznej, a ich stosunek to wydajność; dla przemysłu wydajność decyduje o kosztach, dla ucznia — jest kontrolą, czy dobrze rozumie różnicę teoria/praktyka.
+:::
+:::
+
+::: adv | Zadanie 14 (4 pkt) — Wielki piec w miniaturowym zapisie | poziom ambitny
+Zredukowano 80 g tlenku żelaza(III) nadmiarem tlenku węgla: Fe₂O₃ + 3CO → 2Fe + 3CO₂ (porcje 160 : 84 : 112 : 132; Fe = 56, O = 16, C = 12). Otrzymano 50,4 g żelaza.
+a) Oblicz teoretyczną masę żelaza. (1 pkt)
+b) Oblicz wydajność reakcji. (1 pkt)
+c) Oblicz masę zużytego CO. (1 pkt)
+d) Sprawdź bilans masy dla substancji, które zareagowały. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (1 pkt) Porcje Fe₂O₃: 80/160 = 0,5 → Fe teoretycznie = 0,5·112 = 56 g.
+b) (1 pkt) Wydajność = 50,4/56 · 100% = 90%.
+c) (1 pkt) CO zużyte = 0,5·84 = 42 g.
+d) (1 pkt) Zareagowało 80 g Fe₂O₃ + 42 g CO = 122 g; produkty przy 100%: 56 g Fe + 66 g CO₂ (0,5·132); przy wydajności 90% żelaza 50,4 g — kontrola pełnego bilansu ma sens dopiero przy teoretycznej masie: 56 + 66 = 122 ✓; produkt rzeczywisty 50,4 g wskazuje, że 5,6 g „potencjału żelaza” zostało w nieprzerobionym substracie/stratach — stąd wnioski z e)-typu zadań przemysłowych.
+:::
+:::
+
+## 9 | Dla olimpijczyka — pogłębienie {#olimpijczyk} [[exam:KONKURS]] [[extra:AMBITNE]]
+
+**Dwa procenty, które mylą wszystkie pokolenia: czystość ≠ wydajność.** Zawartość procentowa (czystość) opisuje **wejście**: ile w próbce jest substancji, która w ogóle zareaguje (250 kg wapienia 90% → 225 kg aktora). Wydajność opisuje **wyjście**: ile z teoretycznego maksimum faktycznie udało się uzyskać (126 kg teorii → 107,1 kg praktyki = 85%). W jednym zadaniu mogą wystąpić oba — wtedy mnożysz porządnie: najpierw czystość wejścia, potem algorytm, na końcu wydajność wyjścia. Mylenie ich to klasyka pierwszego etapu konkursów.
+
+**Bilans masy jako narzędzie kryminalistyczne.** Prawo zachowania masy (Lomonosow/Lavoisier, XVIII w. — orientacyjnie) bywa na olimpiadzie ukrytym warunkiem zadania: „po reakcji masa naczynia zmalała o 2,2 g” oznacza „uleciało 2,2 g gazu”; „przyrosło o 0,8 g” — „wtargnęło 0,8 g tlenu z powietrza”. Ubytek i przyrost masy to dane stechiometryczne w przebraniu. Ćwicz zamianę „ważenia” na „gramy reagentu” — doświadczenie 2 jest wzorem tej zamiany.
+
+**Stechiometria w silniku i rakiecie.** Silnik benzynowy pracuje na mieszance paliwo : powietrze o masowym stosunku orientacyjnie 1 : 14,7 (tzw. stechiometryczny — do weryfikacji w literaturze motoryzacyjnej); bogatsza (więcej paliwa) — daje moc, ale i niespalone węglowodory, uboższa — ekonomię i wyższe temperatury. Rakieta na wodór: 2H₂ + O₂ → 2H₂O wymaga masowo 1 : 8 — i zbiorniki projektuje się dokładnie w tej proporcji; każdy kilogram „niepotrzebnego” nadmiaru to kilogram, którego nie zabrał ładunek. Nasze zadanie 11 to rakieta w miniaturowej probówce.
+
+**Mole — skrót zawodowców (zarys, liceum).** Wszystko, co robisz porcjami mas, da się zrobić porcjami „tysięcy bilionów bilionów cząsteczek” (mol, ok. 6·10²³ — orientacyjnie): masa molowa w gramach, stosunki molowe ze współczynników, objętości gazów po przeliczeniu. Wyniki wychodzą identyczne — mola skracają zapis i otwierają objętości oraz stężenia molowe. Do egzaminu ósmoklasisty proporcje masowe w zupełności wystarczają (a tytuł lekcji je egzekwuje), ale jeśli w zadaniu konkursowym zobaczysz „mol”, nie panikuj: to twój algorytm z innym dzielnikiem (do weryfikacji zakresu w aktualnym informatorku LKO).
+
+**Granice modelu.** Porcje masowe zakładają reakcję „na wskroś” i produkty czyste. Przestrzegaj trzech zastrzeżeń: reakcje odwracalne nie idą do końca (stąd wydajność < 100% bywa też kwestią równowagi — liceum), produkty uboczne zjadają substrat bez pytania, a „nadmiar” podany w zadaniu bywa nadmiarem pozornym (spalanie Mg w powietrzu: tlen jest, ale dyfuzja ogranicza — kinetyka, nie stechiometria). Na etapie rejonowym te niuanse sprawdza się zwykle jednym zdaniem uzasadnienia — dokładnie tak, jak robiliśmy przy absurdzie z zadania 8.
+
+::: karta understand | Dla olimpijczyka — w skrócie
+Cztery bronie: 1) czystość = wejście (ile aktora w próbce), wydajność = wyjście (ile z teorii wyszło) — nie zamieniaj; 2) ubytek/przyrost masy to masa gazu, który wszedł lub wyleciał — bilans masy czyta wagę jak licznik; 3) silnik i rakieta to stechiometria w skali produkcyjnej (1 : 14,7 benzyna; 1 : 8 wodór — orientacyjnie); 4) mole to twoje porcje pod inną nazwą — algorytm zostaje, zmienia się tylko dzielnik. Każdy z tych punktów wraca w zadaniach etapowych.
+:::
+
+::: nie-myl | Cztery pary do rozstrzygania
+- Substrat ograniczający ≠ substrat o mniejszej masie — decydują porcje (12 g Mg ogranicza przy 12 g O₂); test rozstrzygający: policz porcje, nie patrz na gramy.
+- Masa produktów ≠ masa substratów włożonych — równe tylko przy braku nadmiaru; test rozstrzygający: porównuj z masą zużytych substratów (12 + 8 = 20, nie 12 + 12 = 24).
+- Czystość ≠ wydajność — wejście vs wyjście; test rozstrzygający: „procent próbki” = czystość, „procent teorii” = wydajność.
+- Reszta nadmiaru ≠ masa zużyta — reszta = początkowa − zużyta; test rozstrzygający: zapisz oba i sprawdź, czy ich suma daje masę początkową.
+:::
+
+## 10 | Klinika błędów {#klinika} [[basic:E8]] [[understand:ROZUMIENIE]]
+
+::: klinika | Błąd | Poprawnie | Dlaczego?
+| „Równanie wygląda dobrze, liczę od razu proporcje.” | Najpierw sprawdź bilans współczynników, dopiero potem wyznaczaj masy porcji. | Współczynniki wyznaczają porcje; niezbalansowane równanie daje porcje-fantazje i cały rachunek kłamie. |
+| „Magnezu 12 g, tlenu 12 g — po równo, więc wszystko zareaguje.” | Porcje: 12/48 = 0,25 i 12/32 = 0,375 — ogranicza magnez. | Porównuje się porcje (masa ÷ masa porcji), nie gołe gramy; równe masy przy nierównych porcjach to nadmiar jednej strony. |
+| „MgO policzę z tlenu, bo go jest 12 g.” | Produkty liczymy z substratu ograniczającego: MgO = 0,25·80 = 20 g. | Rachunek z nadmiaru daje produkt ważący więcej niż cały wkład (30 g > 24 g) — sprzeczność z prawem zachowania masy. |
+| „Wyszło 20 g MgO z 12 g Mg i 12 g O₂ — a wkładałem 24 g, więc coś nie zgoda?” | Bilans prowadzisz na substratach zużytych: 12 g Mg + 8 g O₂ = 20 g ✓; 4 g O₂ zostaje. | Prawo zachowania masy dotyczy substancji uczestniczących w reakcji, nie wszystkich włożonych; nadmiar celowo nie bierze udziału. |
+| „O₂ to 16, przecież tlen to tlen.” | O₂ = 32 (2·16). | Tlen cząsteczkowy jest dwuatomowy; pominięcie indeksu 2 psuje wszystkie porcje w zadaniu o spalaniu. |
+| „2HCl to 36,5, a 2MgO to 40.” | 2HCl = 73; 2MgO = 80. | Współczynnik przed wzorem mnoży całą masę cząsteczkową porcji; bez tego proporcje są ślepe na przepis. |
+| „Wydajność 90% — dodam więc 10% do wyniku teoretycznego.” | Wydajność mnoży: m rzeczywista = teoretyczna · 0,90. | „+10%” daje 110% teorii — więcej niż fizycznie możliwe; wydajność ≤ 100% zawsze. |
+| „Próbka 250 g wapienia to 250 g CaCO₃.” | Czystego: 250·90% = 225 g; zanieczyszczenia (25 g) nie reagują. | Rachunki porcji prowadzi się na masie czystej substancji; liczenie na zanieczyszczonej zawyża produkty. |
+| „W środku rachunku zaokrąglam do 4,9, potem jeszcze raz…” | Prowadź rachunek z pełną dokładnością, zaokrąglaj tylko wynik końcowy (2–3 cyfry znaczące). | Zaokrąglenia pośrednie kumulują się: 0,01 z każdego kroku potrafi zmienić wynik o więcej, niż wynosi punkt za dokładność. |
+| „Odpowiedź: 20.” | Odpowiedź: „powstanie 20 g MgO”. | Liczba bez jednostki i bez nazwy substancji to pół odpowiedzi — i pół punktu; na konkursie często zero. |
+:::
+
+::: mity
+„Większy substrat zawsze jest nadmiarowy.” || O nadmiarze decydują porcje, nie masy: 12 g magnezu przy 12 g tlenu kończy się pierwszy, choć waży tyle samo.
+„Masy produktów zawsze równają się sumie mas substratów początkowych.” || Tylko wtedy, gdy wszystkie substraty zużyją się całkowicie; przy nadmiarze produkty równają się masie substratów zużytych (20 g = 12 + 8, nie 24).
+„Stechiometria to wkuwanie tablic i wzorów.” || To jedna metafora (przepis) i jedna linijka liczb pod równaniem; reszta to dzielenie i mnożenie, które umiesz od podstawówki.
+„Bez mola zadania obliczeniowe są niemożliwe do rozwiązania.” || Proporcje masowe rozwiązują wszystko na poziomie E8 i etapu rejonowego; mole to sprawniejszy rejestr, nie warunek istnienia rachunku.
+„Reakcja zawsze zużywa wszystkie substraty do zera.” || Zużywa do zera tylko substrat ograniczający; nadmiar celowo zostaje — i jego reszta jest zwykle osobnym pytaniem w zadaniu.
+„Wydajność 100% to norma, a 85% oznacza błąd w rachunku.” || Odwrotnie: 100% jest ideałem laboratoryjnym; w praktyce straty, rozkład uboczny i niepełna reakcja są codziennością — dlatego pojęcie wydajności w ogóle istnieje.
+„Jeśli równanie jest niezbalansowane, wynik i tak się gdzieś zbilansuje.” || Nic się nie zbilanansuje samo: niezbalansowane równanie daje złe porcje, złe proporcje i wynik, który bilans masy (gdy go zrobisz) natychmiast obali.
+„Zaokrąglenia w trakcie nie mają znaczenia, byle wynik ładny.” || Znaczenie mają i to duże: kumulacja zaokrągleń pośrednich potrafi przesunąć wynik o tyle, o ile różni się punkt za dokładność — licz pełne, zaokrąglaj końcowe.
+:::
+
+## 11 | Ćwiczenia utrwalające {#cwiczenia} [[basic:E8]] [[exam:KONKURS]]
+
+Krótkie treningi bez punktacji — rozgrzewka przed zadaniami. Każde z kluczem.
+
+**Ćwiczenie 1.** Wyznacz masy porcji dla Zn + 2HCl → ZnCl₂ + H₂ (Zn = 65, Cl = 35,5, H = 1).
+
+::: odp | Klucz
+Zn 65 : 2HCl 73 : ZnCl₂ 136 : H₂ 2 (ZnCl₂ = 65 + 2·35,5 = 136; 2HCl = 2·36,5 = 73).
+:::
+
+**Ćwiczenie 2.** 4 g wodoru i 32 g tlenu. Czy któryś jest w nadmiarze? Ile powstanie wody?
+
+::: odp | Klucz
+Porcje: H₂ 4/4 = 1; O₂ 32/32 = 1 — stosunek stechiometryczny, nadmiaru brak; H₂O = 36 g; bilans 4 + 32 = 36 ✓.
+:::
+
+**Ćwiczenie 3.** 24 g magnezu i 16 g tlenu. Oblicz masę MgO (porcje 48 : 32 : 80).
+
+::: odp | Klucz
+Porcje: 24/48 = 0,5 i 16/32 = 0,5 — stechiometrycznie; MgO = 0,5·80 = 40 g; zużywa się wszystko (24 + 16 = 40 ✓).
+:::
+
+**Ćwiczenie 4.** 6,5 g cynku rozpuszczono w nadmiarze HCl. Ile gramów wodoru wydzieli się?
+
+::: odp | Klucz
+Porcje 65 : 2 → H₂ = (6,5/65)·2 = 0,2 g.
+:::
+
+**Ćwiczenie 5.** 10 g czystego CaCO₃ rozłożono całkowicie. Podaj masy produktów.
+
+::: odp | Klucz
+CaO = (10/100)·56 = 5,6 g; CO₂ = (10/100)·44 = 4,4 g; bilans 5,6 + 4,4 = 10 ✓.
+:::
+
+**Ćwiczenie 6.** Uczeń twierdzi: „10 g CaCO₃ da 8 g CaO”. Znajdź błąd i podaj poprawny wynik.
+
+::: odp | Klucz
+Błąd: złe porcje (prawdopodobnie policzył CaO na oko albo pomylił porcje). Poprawnie: CaO = (10/100)·56 = 5,6 g; dodatkowo 8 + coś więcej niż 5,6 przy jedynym produkcie stałym i ulatującym CO₂ przeczyłoby bilansowi (10 g substratu = 5,6 + 4,4, a nie 8 + reszta).
+:::
+
+**Ćwiczenie 7.** 8 g wodoru i 16 g tlenu. Wskaż substrat ograniczający, policz wodę i resztę.
+
+::: odp | Klucz
+Porcje: H₂ 8/4 = 2; O₂ 16/32 = 0,5 → ogranicza O₂; H₂O = 0,5·36 = 18 g; H₂ zużyte 2 g, reszta 6 g H₂ (bilans 2 + 16 = 18 ✓).
+:::
+
+**Ćwiczenie 8 — mini-test samodzielny.** Odpowiedz bez patrzenia w lekcję, potem sprawdź z ćwiczeniami: 1) Masy porcji dla CaCO₃ → CaO + CO₂? 2) 12 g Mg + 12 g O₂ — który ogranicza? 3) Ile wtedy MgO? 4) Ile zostanie O₂? 5) Zamknij bilans masy dla tego przypadku.
+
+::: odp | Klucz
+1) 100 : 56 : 44. 2) Mg (0,25 porcji < 0,375). 3) 20 g. 4) 4 g O₂. 5) Zużyte 12 + 8 = 20 g = 20 g MgO ✓.
+:::
+
+## 12 | Ciekawostki {#ciekawostki} [[extra:AMBITNE]]
+
+::: karta extra | Ciekawostka 1 — stechiometria pod maską twojego auta
+Silnik benzynowy pracuje najczyściej przy masowym stosunku paliwo : powietrze orientacyjnie 1 : 14,7 — to „mieszanka stechiometryczna”, po której jeżdżą katalizatory (orientacyjnie; wartość zależy od paliwa). Bogatsza mieszanka (więcej paliwa) daje więcej mocy i mniej ekologii, uboższa — niższe temperatury i ekonomię. Sterownik silnika wstrzykuje paliwo w tych proporcjach setki razy na sekundę — twój samochód to wapiennik na kołach, tyle że z bilansem masy policzonym w czasie rzeczywistym.
+:::
+
+::: karta extra | Ciekawostka 2 — rakieta waży przepis
+Silnik wodorowy rakiety spala H₂ i O₂ w stosunku masowym 1 : 8 (2H₂ + O₂ → 2H₂O) — i zbiorniki projektuje się dokładnie tak, żeby żaden kilogram utleniacza czy paliwa nie był „nadmiarem”, bo każdy zbędny kilogram to kilogram, którego nie zabrał satelita. Nasze zadanie 11 (4 g H₂ + 8 g O₂) jest miniaturą tego problemu: tam, gdzie kończy się porcja utleniacza, kończy się i lot.
+:::
+
+::: karta extra | Ciekawostka 3 — wapienniki liczyły proporcje, zanim powstała chemia
+Wypalanie wapna (CaCO₃ → CaO + CO₂) to jedna z najstarszych reakcji przemysłowych ludzkości — wapienniki pracowały od tysięcy lat, a wapno szło do murów, tynków i zapraw. Proporcje 100 : 56 : 44 oznaczają, że z każdej tony wapienia „urośnie” 560 kg wapna i uleci 440 kg CO₂ — w skali historycznej miliardy ton; dzisiejsza branża cementowa liczy właśnie te porcje, tylko w gigatonach rocznie (orientacyjnie).
+:::
+
+::: karta extra | Ciekawostka 4 — kuchnia to laboratorium z nadmiarem
+Każdy przepis na chleb to ćwiczenie z substratu ograniczającego: mąka wyznacza liczbę bochenków, drożdże biorą udział „katalizacyjnie”, a sól i woda bywają w nadmiarze względem tego, co wchodzi w reakcje. Piekarze mówią o „higienie proporcji” tak jak chemicy o stosunkach stechiometrycznych — i to nie przenośnia: spulchnianie ciasta to reakcja CO₂ z kwasów i wodorowęglanów, dokładnie z rodziny, którą liczyłeś w zadaniu 12.
+:::
+
+::: karta extra | Ciekawostka 5 — mole: skrót, który wynaleziono z desperacji
+Chemicy XIX wieku męczyli się z proporcjami mas przy tysiącach reakcji, dopóki nie uporządkowano pojęcia mola — „porcji” liczącej orientacyjnie 6·10²³ cząsteczek (liczba Avogadra; wartość do weryfikacji z tablicami). Od tej pory to samo zadanie zapisuje się w trzech linijkach zamiast sześciu — ale istota pozostała ta, którą robiłeś w tej lekcji: przepis, porcje, mniejsza wygrywa. Ty dziś liczysz „po kuchennemu”; w liceum poznasz rejestr zawodowców — i zauważysz, że to to samo. (źródło: podręczniki historii chemii, orientacyjnie)
+:::
+
+## 13 | Sposoby pamięciowe {#mnemo} [[basic:E8]]
+
+::: wskazowki
+- Metafora na całą lekcję: „**2 jajka + 1 szklanka mąki → 1 tort**” — mąka (mniejsza porcja) wyznacza liczbę tortów, jajka zostają.
+- Sześć kroków jako wierszyk: „**Równanie, masy, podziel porcje — mniejsza wygrywa produkt, reszta zostanie, bilans zamknie**”.
+- „**Licz z końca, który skończy się pierwszy**” — produkt zawsze z substratu ograniczającego.
+- „**Co weszło, to wyszło**” — bilans masy na substratach zużytych, nie włożonych.
+- „**Najpierw zbalansuj — potem licz**” — kolejność niepodlegająca negocjacjom.
+- „**Dwie dwójki porcji: 2Mg = 48, 2MgO = 80, O₂ = 32**” — trójka liczb, z której wychodzi spalanie magnezu we wszystkich zadaniach.
+- „**Czystość na wejściu, wydajność na wyjściu**” — dwa procenty nigdy się nie zamieniają.
+- „**Jednostka i substancja przy każdej liczbie**” — „20 g MgO”, nigdy „20”.
+- „**Zaokrąglaj na końcu**” — pośrednie pełne, końcowe 2–3 cyfry.
+:::
+
+## 14 | Test końcowy {#test} [[basic:E8]] [[exam:KONKURS]]
+
+Rozwiąż bez zaglądania do lekcji. Każde pytanie ma dokładnie jedną poprawną odpowiedź. Wyjaśnienia sprawdź dopiero po rozwiązaniu całości.
+
+::: test
+? Co wyrażają współczynniki w zbilansowanym równaniu chemicznym?
++ stosunek liczb cząsteczek (atomów) substratów i produktów, z którego wynikają stałe proporcje mas
+- jedynie całkowitą liczbę atomów po prawej stronie równania
+- masy substratów w gramach dla każdego zadania osobno
+- szybkość, z jaką zachodzi reakcja
+! Współczynniki to „przepis”: z 2Mg + O₂ → 2MgO wynika stosunek cząsteczek 2 : 1 : 2 i mas 48 : 32 : 80.
+
+? Masa cząsteczkowa CaCO₃ (Ca = 40, C = 12, O = 16) wynosi:
++ 100
+- 88
+- 116
+- 68
+! 40 + 12 + 3·16 = 40 + 12 + 48 = 100 — indeks 3 przy tlenie mnoży jego masę.
+
+? W reakcji 2Mg + O₂ → 2MgO na 12 g magnezu potrzeba tlenu:
++ 8 g
+- 12 g
+- 16 g
+- 4 g
+! Porcje 48 : 32 = 3 : 2; na 12 g Mg (0,25 porcji) przypada 0,25·32 = 8 g O₂.
+
+? Substrat ograniczający to ten, który:
++ kończy się pierwszy i wyznacza maksymalną ilość produktów
+- ma największą masę początkową
+- zostaje po reakcji w całości nietknięty
+- jest najcięższym pierwiastkiem w równaniu
+! Definicja: jego porcje kończą się pierwsze (jak mąka w przepisie na torty); z jego ilości liczymy produkty.
+
+? Spalono 12 g magnezu w 12 g tlenu (porcje 48 : 32 : 80). Masa powstałego MgO:
++ 20 g
+- 24 g
+- 40 g
+- 12 g
+! Ogranicza Mg (0,25 porcji vs 0,375); MgO = 0,25·80 = 20 g.
+
+? W tym samym zadaniu masa reszty nadmiaru wynosi:
++ 4 g O₂
+- 0 g
+- 8 g O₂
+- 12 g O₂
+! Zużyto 8 g O₂ z 12 g (na 12 g Mg potrzeba 8 g); reszta = 12 − 8 = 4 g.
+
+? Kontrola rachunku „bilans masy” polega na sprawdzeniu, czy:
++ masa substratów, które zareagowały, równa się sumie mas produktów
+- masa początkowa wszystkich substratów równa się masie każdego produktu osobno
+- liczba współczynników równa się liczbie substancji w równaniu
+- masa produktów jest zawsze większa od masy substratów
+! Prawo zachowania masy dotyczy uczestników reakcji: 12 g Mg + 8 g O₂ = 20 g = 20 g MgO; nadmiar nie uczestniczy.
+
+? Spalanie metanu: CH₄ + 2O₂ → CO₂ + 2H₂O. Na 8 g CH₄ potrzeba tlenu:
++ 32 g
+- 16 g
+- 64 g
+- 8 g
+! Porcje 16 : 64 = 1 : 4; na 8 g metanu (0,5 porcji) przypada 0,5·64 = 32 g O₂.
+
+? Dlaczego produktu nie wolno liczyć z substratu nadmiarowego?
++ nadmiar bierze udział w reakcji tylko częściowo — rachunek dałby produkt ważący więcej niż wkład, wbrew prawu zachowania masy
+- bo nadmiar jest zawsze w stanie gazowym
+- bo substrat nadmiarowy nie ma masy cząsteczkowej
+- bo produkt zawsze powstaje wyłącznie z lżejszego substratu
+! Z 12 g O₂ wyszłoby „30 g MgO” przy wkładzie 24 g — masa znikąd; dlatego tylko ograniczający jest legalną podstawą rachunku.
+
+? Próbka wapienia o masie 250 g zawiera 90% CaCO₃. Masa czystego CaCO₃ wynosi:
++ 225 g
+- 25 g
+- 275 g
+- 245 g
+! 250 · 0,90 = 225 g; pozostałe 25 g to zanieczyszczenia, które nie biorą udziału w reakcji.
+
+? Z reakcji otrzymano 50,4 g produktu, a rachunek teoretyczny dał 56 g. Wydajność reakcji wynosi:
++ 90%
+- 105%
+- 80%
+- 9%
+! 50,4/56 · 100% = 90%; wydajność nigdy nie przekracza 100%.
+
+? (poziom konkursowy) 5 g Zn wrzucono do roztworu zawierającego 20 g CuSO₄ (porcje 65 : 160 : 161 : 64). Substrat ograniczający i masa miedzi:
++ Zn — ogranicza; Cu ≈ 4,9 g
+- CuSO₄ — ogranicza; Cu = 8,0 g
+- Zn — ogranicza; Cu = 5,0 g
+- CuSO₄ — ogranicza; Cu ≈ 4,9 g
+! Porcje: Zn 5/65 ≈ 0,077 < CuSO₄ 20/160 = 0,125 → Zn ogranicza; Cu = 0,077·64 ≈ 4,92 g.
+
+? (poziom konkursowy) Zmieszano 4 g H₂ z 8 g O₂. Masa wody i reszta nadmiaru:
++ 9 g H₂O; zostaje 3 g H₂
+- 12 g H₂O; nic nie zostaje
+- 36 g H₂O; zostaje 4 g O₂
+- 9 g H₂O; zostaje 3 g O₂
+! Porcje: H₂ 1, O₂ 0,25 → ogranicza O₂; H₂O = 0,25·36 = 9 g; H₂ zużyte 1 g, reszta 3 g.
+
+? (poziom konkursowy) Które działanie jest błędem przy zaokrąglaniu wyników?
++ zaokrąglanie wyników pośrednich do jednej cyfry znaczącej w trakcie rachunku
+- zaokrąglanie ostatecznego wyniku do 2–3 cyfr znaczących
+- zapisywanie jednostki i nazwy substancji przy każdej masie
+- porównywanie porcji z dokładnością co najmniej do dwóch cyfr
+! Zaokrąglenia pośrednie kumulują błąd i potrafią przesunąć wynik końcowy; zaokrąglamy tylko na końcu.
+:::
+
+## 15 | Fiszki {#fiszki} [[basic:E8]] [[exam:KONKURS]]
+
+Powtarzaj partiami: najpierw basic, potem understand i extra, na końcu olimpijskie.
+
+::: fiszki
+Równanie jako przepis | współczynniki = stosunek porcji cząsteczek, z którego wynikają stałe proporcje mas | basic:rownanie
+Masa porcji | suma mas atomowych wg wzoru z uwzględnieniem indeksów i współczynników | basic:masy
+M(CaCO₃) | 40 + 12 + 48 = 100 | basic:masy
+M(CuSO₄) | 64 + 32 + 64 = 160 | basic:masy
+M(ZnSO₄) | 65 + 32 + 64 = 161 | basic:masy
+Porcje 2Mg + O₂ → 2MgO | 48 : 32 : 80 (czyli 12 g Mg + 8 g O₂ → 20 g MgO) | basic:przyklad
+Porcje CaCO₃ → CaO + CO₂ | 100 : 56 : 44 | basic:przyklad
+Porcje CH₄ + 2O₂ | 16 : 64 : 44 : 36 | basic:przyklad
+Porcje Zn + 2HCl | 65 : 73 : 136 : 2 | basic:przyklad
+Porcje CaCO₃ + 2HCl | 100 : 73 : 111 : 18 : 44 | extra:przyklad
+Porcje Zn + CuSO₄ | 65 : 160 : 161 : 64 | extra:przyklad
+Porcje 2H₂ + O₂ → 2H₂O | 4 : 32 : 36 (1 : 8 : 9) | basic:przyklad
+Porcje Fe₂O₃ + 3CO | 160 : 84 : 112 : 132 | olimpijski:przyklad
+Metoda porcji | podana masa ÷ masa porcji; mniejszy wynik = substrat ograniczający | understand:nadmiar
+Metoda „ile potrzeba” | ile drugiego substratu potrzeba na pierwszy; porównaj z danym | understand:nadmiar
+Substrat ograniczający | kończy się pierwszy; z niego liczymy wszystkie produkty | basic:nadmiar
+Substrat nadmiarowy | bierze udział częściowo; jego reszta zostaje | basic:nadmiar
+Reszta nadmiaru | masa początkowa − masa zużyta | basic:nadmiar
+Stosunek stechiometryczny | porcje równe — zużywa się wszystko, reszty brak | understand:nadmiar
+Bilans masy | masa substratów zużytych = suma mas produktów (kontrola rachunku) | understand:kontrola
+Kryterium absurdów | produkt nie może ważyć więcej niż cały wkład; reszta nie może być ujemna | understand:bledy
+Algorytm sześciu kroków | równanie → porcje → porównanie → produkt z mniejszej → reszta → bilans | understand:algorytm
+Zasada jednostek | przy każdej liczbie jednostka i nazwa substancji („20 g MgO”) | basic:bledy
+Zasada zaokrągleń | licz pełne, zaokrąglaj tylko wynik końcowy do 2–3 cyfr | understand:bledy
+Czystość próbki | procent zawartości: masa czystej substancji = próbka · procent | understand:probka
+Wyliczenie na roztworze | masa substancji = masa roztworu · stężenie procentowe (200 g 10% → 20 g) | extra:zadania
+Wydajność reakcji | (masa rzeczywista ÷ masa teoretyczna) · 100%; zawsze ≤ 100% | extra:wydajnosc
+Czystość ≠ wydajność | wejście (ile aktora w próbce) ≠ wyjście (ile z teorii wyszło) | olimpijski:wydajnosc
+Ubytek masy = gaz | masa, która ulotowała się z naczynia, to masa produktu gazowego (CO₂, H₂) | olimpijski:kontrola
+Silnik benzynowy | paliwo : powietrze orientacyjnie 1 : 14,7 — mieszanka stechiometryczna | extra:zastosowania
+Rakieta wodorowa | H₂ : O₂ masowo 1 : 8 — zbiorniki w proporcji przepisu | extra:zastosowania
+Mole (zarys) | porcja ok. 6·10²³ cząsteczek; skrót liczenia w liceum, wyniki identyczne | olimpijski:mola
+:::
+
+## 16 | Słownik {#slownik} [[basic:E8]]
+
+::: slownik
+Stechiometria :: dział chemii opisujący ilościowe proporcje substratów i produktów w reakcjach.
+Równanie stechiometryczne :: zbilansowane równanie chemiczne, którego współczynniki wyznaczają stałe proporcje cząsteczek i mas.
+Współczynnik stechiometryczny :: liczba przed wzorem substancji w równaniu; określa liczbę porcji danej substancji w przepisie.
+Substrat :: substancja zużywana w reakcji (pisana po lewej stronie równania).
+Produkt :: substancja powstająca w reakcji (pisana po prawej stronie równania).
+Masa atomowa :: masa atomu pierwiastka wyrażona w jednostkach u; odczytywana z układu okresowego.
+Masa cząsteczkowa :: suma mas atomowych wszystkich atomów we wzorze substancji.
+Jednostka masy atomowej (u) :: umowna jednostka masy atomów i cząsteczek; liczby w u i w gramach dają identyczne proporcje.
+Masa porcji :: masa „jednego zestawu” reakcji zgodnie ze współczynnikami; pod równaniem zapisywana w gramach.
+Stosunek stechiometryczny :: proporcja substratów dokładnie zgodna z porcjami równania — wtedy zużywa się wszystko.
+Substrat ograniczający :: substrat, którego porcje kończą się pierwsze; wyznacza maksymalną ilość produktów.
+Substrat nadmiarowy :: substrat, którego część pozostaje po zakończeniu reakcji.
+Reszta nadmiaru :: masa substratu nadmiarowego pozostająca po reakcji: masa początkowa − masa zużyta.
+Bilans masy :: kontrola rachunku oparta na prawie zachowania masy: substraty zużyte = suma produktów.
+Prawo zachowania masy :: prawo przyrody (Lomonosow, Lavoisier): masa substancji przed reakcją równa się masie substancji po reakcji.
+Wydajność reakcji :: stosunek masy rzeczywiście otrzymanej do masy teoretycznej, wyrażony w procentach; zawsze nie większy od 100%.
+Próbka zanieczyszczona :: materiał zawierający obok substancji reaktywnej także składniki niereagujące; do rachunków bierze się tylko masę czystej substancji.
+Zawartość procentowa :: procent masy próbki, jaki stanowi substancja czynna (czystość próbki).
+Roztwór o stężeniu procentowym :: roztwór opisany masą substancji rozpuszczonej w 100 g roztworu; masa substancji = masa roztworu · procent.
+Proporcja masowa :: zapis typu 48 : 32 : 80 łączący masy porcji substratów i produktów.
+Ubytek masy :: masa gazu, który ulatując z naczynia pomiarowego zmniejszył wskazanie wagi; dane do obliczeń w zadaniach „z wagą”.
+:::
+
+## 17 | Mapa pojęć {#mapa} [[basic:E8]]
+
+::: drzewo
+Obliczenia z równań — stechiometria bez mola
+  Równanie jako przepis
+    Współczynniki
+      Stosunek porcji cząsteczek
+    Indeksy
+      Skład cząsteczki
+    Masy porcji
+      Masa atomowa i jednostka u
+      Suma wg wzoru
+      Współczynnik mnoży porcję
+    Przykłady porcji
+      Spalanie magnezu 48:32:80
+      Rozkład węglanu 100:56:44
+      Metan 16:64:44:36
+      Cynk i kwas 65:73:136:2
+      Cynk i siarczan miedzi 65:160:161:64
+  Porównanie substratów
+    Metoda porcji
+      Podana masa dzielona przez porcję
+      Mniejszy wynik wygrywa
+    Metoda „ile potrzeba”
+      Przeliczenie z jednego substratu na drugi
+    Wskutek porównania
+      Substrat ograniczający
+      Substrat nadmiarowy
+      Stosunek stechiometryczny — brak nadmiaru
+  Algorytm rozwiązania
+    Zbilansuj równanie
+    Masy porcji
+    Porównaj porcje
+    Produkt z ograniczającego
+    Reszta nadmiaru
+      Masa początkowa minus zużyta
+    Bilans masy
+      Kontrola rachunku
+      Kryterium absurdów
+  Higiena rachunku
+    Jednostki i nazwy substancji
+    Zaokrąglenia na końcu
+    Pełny tok rozumowania w zapisie
+  Rozszerzenia konkursowe
+    Roztwory procentowe
+      Masa czystej substancji
+    Próbki zanieczyszczone
+      Zawartość procentowa
+    Wydajność reakcji
+      Teoretyczna a rzeczywista masa
+    Bilans masy na wadze
+      Ubytek masy = masa gazu
+    Połączenia z X04 i J03
+      Wypieranie metali
+      Osady jako produkty
+  Zastosowania
+    Silniki spalinowe
+    Rakiety
+    Wapienniki
+    Kuchnia jako laboratorium
+  Dalej
+    Mola — skrót zawodowców
+:::
+
+## 18 | Ściąga {#sciaga} [[basic:E8]]
+
+Najkrótsza wersja całej lekcji — czytaj, gdy zostało pięć minut przed sprawdzianem:
+
+- **Przepis:** równanie = przepis; współczynniki → porcje cząsteczek i mas. Zawsze najpierw zbalansuj.
+- **Porcje (nauczone na pamięć):** 2Mg + O₂ → 2MgO: 48 : 32 : 80; CaCO₃ → CaO + CO₂: 100 : 56 : 44; CH₄ + 2O₂ → CO₂ + 2H₂O: 16 : 64 : 44 : 36; Zn + 2HCl → ZnCl₂ + H₂: 65 : 73 : 136 : 2; Zn + CuSO₄ → ZnSO₄ + Cu: 65 : 160 : 161 : 64.
+- **Kto ogranicza?** porcja = masa ÷ masa porcji; **mniejsza porcja wygrywa**. Równe porcje = stechiometria, nic nie zostaje. Nigdy „na oko” po gramach.
+- **Produkt tylko z ograniczającego:** (masa ograniczającego ÷ jego porcja) · porcja produktu.
+- **Nadmiar:** zużyte = (masa ograniczającego ÷ jego porcja) · porcja nadmiarowego; reszta = początkowa − zużyta.
+- **Kontrola:** bilans masy na substratach zużytych (12 g Mg + 8 g O₂ = 20 g MgO); absurd = produkt > cały wkład → błąd w rachunku.
+- **Higiena:** „20 g MgO”, nigdy „20”; zaokrąglaj na końcu (2–3 cyfry); tok rozumowania zapisuj — to on punktowany.
+- **Konkurs:** czystość = wejście (masa czystego = próbka · %), wydajność = wyjście (rzeczywista ÷ teoretyczna · 100%); roztwór: masa substancji = masa roztworu · %; ubytek masy z wagi = masa ulotowanego gazu.
+
+::: checklista
+- [ ] umiem wyznaczyć masy porcji dla każdej reakcji z indeksami i współczynnikami
+- [ ] umiem rozstrzygnąć substrat ograniczający metodą porcji i metodą „ile potrzeba”
+- [ ] umiem obliczyć masę produktu wyłącznie z substratu ograniczającego
+- [ ] umiem obliczyć zużycie nadmiaru i resztę nadmiaru
+- [ ] umiem rozpoznać stosunek stechiometryczny i stwierdzić brak nadmiaru
+- [ ] umiem zamknąć bilans masy i użyć go jako kontroli rachunku
+- [ ] umiem wykazać, że rachunek z nadmiaru łamie prawo zachowania masy
+- [ ] umiem rozwiązać trzy wzorce E8: gaz z metalu, rozkład węglanu, spalanie z nadmiarem
+- [ ] umiem policzyć zadanie z roztworem procentowym (masa czystej substancji)
+- [ ] umiem rozdzielić czystość próbki od wydajności reakcji i policzyć oba
+- [ ] umiem interpretować ubytek masy z wagi jako masę ulotowanego gazu
+- [ ] umiem zapisać rozwiązanie z jednostkami, nazwami substancji i zaokrągleniami na końcu
+:::
+
+## 19 | Co dalej? {#dalej} [[basic:E8]] [[extra:AMBITNE]]
+
+Po opanowaniu tej lekcji naturalne kierunki:
+
+- **CHE-X04 — Szereg aktywności metali:** reakcja Zn + CuSO₄ z zadania 10 tam ma swoje reguły (kto kogo wypiera); połącz oba — szereg powie ci, czy reakcja zachodzi, a R07 — ile z niej wyjdzie.
+- **CHE-J03 — Równania jonowe i strącanie:** osady z J03 to produkty, które teraz umiesz liczyć; zapisz jonowo, a potem policz masę opadłego AgCl albo BaSO₄ — scalenie obu lekcji to typowe zadanie etapu rejonowego.
+- **CHE-051 / CHE-054 — Reakcje i kwasy:** zobojętnienia i reakcje kwasów z tej lekcji wrócą z pełną chemią w tle — a twoje porcje mas będą do nich gotowe.
+- **Liceum — mola i objętości gazów:** twój algorytm zostaje, zmienia się rejestr (mola, objętość molowa, stężenia molowe); jeśli w zadaniu konkursowym zobaczysz „mol”, przełóż go przez masę molową i wróć do porcji.
+- **Dla konkursowców:** przepracuj drugi raz [§8](#zadania-konkurs) po tygodniowej przerwie — zadania 9 (znajdź błędy) i 13 (wapiennik z wydajnością) najdłużej trzymają się przy powtórce po odstępie; wtedy też porównaj zakres z aktualnym informatorem LKO, bo zadania obliczeniowe „z wagą” i wydajnością wracają co edycję w nowych przebraniach.
+
+A na codzienne utrwalanie: wybierz w kuchni dowolny przepis i policz jego „stechiometrię” — ile tortów z tych jajek, ile porcji z tej mąki, co zostaje. To najtańsze ćwiczenie stechiometryczne świata i działa dokładnie tak samo jak probówka.
+
+### AUDYT — Claude, 2026-10-12 {#audyt-ulepsz}
+
+**Poprawione:**
+- Materiał roboczy w paczce urwany w połowie sekcji celu (ostatni widoczny fragment: „Uczennica rozwiązuje zadania, w których substraty nie są w stosunku stechiometrycznym: - wska[...]”) — urwaną myśl zrekonstruowano zgodnie z tytułem i leadem jako pełne kryterium gotowości w §0.1 (wskazywanie substratu ograniczającego, nadmiaru i ilości produktu); odnotowano w „Niepewne”.
+- Brak jakichkolwiek dalszych treści materiału (zadań, kluczy, tabel) do zachowania — zamiast „nie usuwano niczego” obowiązuje tu reguła: zachowano wszystkie dostępne elementy (kod, tytuł, lead, plakietki, zakres) i przeniesiono je bez zmian do struktury lekcji.
+
+**Dodane:**
+- Frontmatter uzupełniony w całości (opis, kicker, dwa leady, plakietki z warstwami understand/extra, uwaga o przyjętych masach atomowych i zaokrągleniach, stopka, stan ULEPSZONA zamiast W1).
+- §0.1–§0.2: kryterium gotowości (5 punktów), diagnoza 5 pytań z kluczem i rozliczeniem.
+- §1: pełny wykład „od zera” (obraz przewodni: przepis kuchenny z ograniczonym składnikiem — mąka jako substrat ograniczający).
+- §2: równanie jako przepis — trzy odczyty (współczynniki, indeksy, masy), ostrzeżenie o O₂ = 32, zadanie 1.
+- §3: masy porcji — trzy przykłady pod równaniem, rola indeksów i współczynników, zadanie 2.
+- §4: dwie metody porównania („ile potrzeba” i porcje), stosunek stechiometryczny, nie-myl „więcej gramów ≠ nadmiar”, zadanie 3.
+- §5: algorytm sześciu kroków na zadaniu modelowym, kryterium absurdów, zadanie 4.
+- §6: trzy wzorce E8 (gaz z metalu, rozkład węglanu, spalanie z nadmiarem), zadania 5–6.
+- §7: dwa doświadczenia z próbami kontrolnymi i BHP (spalanie Mg — kontrola proporcji 3 : 5; marmur + HCl na wadze — ubytek masy jako CO₂), które dostarczają danych do zadań 12 i 14.
+- §8: osiem zadań konkursowych (7–14): metan na przepis, absurd rachunku z nadmiaru, znajdź błędy, roztwór CuSO₄ (liczby spójne z zadaniem 11 lekcji X04), pułapka H₂/O₂, czystość marmuru z danych doświadczenia, wapiennik z wydajnością, redukcja Fe₂O₃ z wydajnością — wszystkie typy wymagane (obliczeniowe, uzasadnianie, znajdź błąd, analiza danych, analiza tekstu, pułapka).
+- §9: mini-wykład „Dla olimpijczyka” (czystość vs wydajność, bilans masy na wadze, stechiometria silnika i rakiety, zarys moli, granice modelu).
+- §10–§13: klinika (10 wierszy), mity (8), ćwiczenia 1–8 z kluczami, 5 ciekawostek, 9 mnemotechnik.
+- §14–§19: test 14 pytań (w tym 3 konkursowe), 32 fiszki (w tym olimpijskie), 21 haseł słownika, mapa pojęć, ściąga z checklistą (12 pozycji), „Co dalej” z powiązaniami do X04, J03, 051/054 i moli.
+
+**Niepewne / do weryfikacji:**
+- Materiał roboczy urwany — jeśli w źródle istnieją dalsze sekcje (zadania, klucze, tabela porcji w wersji podręcznikowej), wymagane jest porównanie i uzupełnienie w kolejnej rewizji; nic z widocznej części nie pominięto.
+- Przyjęte masy atomowe (H = 1, C = 12, O = 16, Mg = 24, S = 32, Cl = 35,5, Ca = 40, Fe = 56, Cu = 64, Zn = 65) — porównać z tablicą w podręczniku ucznia (różnice Cl 35,5 vs 35,45 zmieniają trzecią cyfrę wyników).
+- Liczby zastosowań (1 : 14,7 silnik, 1 : 8 rakieta, liczba Avogadra, statystyki wapienników) oznaczone „orientacyjnie”/„do weryfikacji”.
+- Materiał roboczy (jak w X04/J03) przewidywał sekcję „Archiwalne zadania LKO” z zadaniami rejonowymi — do dodania po pozyskaniu arkuszy (brak danych w paczce).
+- Podejście „bez mola” zgodne z tytułem lekcji; obecne wymagania egzaminacyjne E8 obejmują też obliczenia z molami — przed egzaminem zweryfikować z aktualnym informatorem CKE, czy uczeń nie potrzebuje mostu (§9 daje zarys).
+
+**Proponuję usunąć:**
+- brak.
+
+**Źródła:**
+- podstawa programowa i wymagania egzaminacyjne CKE (egzamin ósmoklasisty, chemia) — zadania obliczeniowe z równań;
+- polskie podręczniki szkolne do chemii klasy 7–8 (m.in. Nowa Era, WSiP) — rozdziały o obliczeniach stechiometrycznych i nadmiarze substratów;
+- informatory i arkusze konkursów chemicznych (etap rejonowy) — typy zadań z wydajnością i próbkami zanieczyszczonymi;
+- podręczniki akademickie z podstaw chemii fizycznej (zarys moli i proporcji — most do liceum);
+- literatura motoryzacyjna i rakietowa (stosunki mieszanki — wartości orientacyjne).
+
+**Grafiki do zrobienia:**
+
+| Gdzie | Rodzaj | Co pokazuje | Wniosek | @opis |
+|---|---|---|---|---|
+| §1, po akapicie o przepisie | animacja „do przodu i od początku” | kuchenny przepis 2 jajka + 1 szklanka mąki → 1 tort: przesuwanie zapasów (6 jajek, 2 szklanki) pokazuje 2 torty i 2 jajka resztki | mniejsza porcja składnika wyznacza liczbę produktów i resztę nadmiaru | Animacja: po lewej stos jajek i miarka mąki, po prawej torty; przycisk „wypiecz” zużywa w proporcji 2 : 1 aż kończy się mąka; licznik pokazuje torty, zużycie i resztki jajek; odtwarzanie od początku powtarza wypiek. Wniosek: ogranicza ten składnik, którego porcji jest mniej. |
+| §3, po tabeli porcji | model interaktywny z suwakiem lub przełącznikiem | równanie 2Mg + O₂ → 2MgO z porcjami 48 : 32 : 80; przełącznik reakcji zmienia zestaw porcji (CaCO₃, CH₄, Zn+HCl, Zn+CuSO₄) | masy porcji czyta się z równania raz, a potem służą do wszystkich zadań | Interaktywny panel: wybór reakcji odsłania równanie z liczbami porcji pod wzorami; przycisk „skąd te liczby?” rozwija obliczenia mas cząsteczkowych z indeksami i współczynnikami. Wniosek: porcje = masy cząsteczkowe pomnożone przez współczynniki. |
+| §4, po obu metodach | model interaktywny z suwakiem | dwa suwaki: masa Mg (0–24 g) i masa O₂ (0–24 g); podświetlenie substratu ograniczającego, podgląd porcji i reszty | przy zmianie mas ograniczający się przełącza — decydują porcje, nie gramy | Suwakowy model probówki: suwaki mas obu substratów, obok pokrętło porcji (masa ÷ porcja); większa liczba porcji świeci na zielono jako nadmiar, mniejsza na czerwono jako ograniczający; odczyt produktu MgO na żywo. Wniosek: ta sama masa dwóch substratów daje różne werdykty, gdy porcje różnią się. |
+| §5, po algorytmie | schemat statyczny | schemat blokowy sześciu kroków: równanie → porcje → porównanie → produkt z mniejszej → reszta → bilans masy; przy każdym kroku przykładowa linijka rachunku | kolejność kroków jest jednocześnie kolejnością zapisu w pracy pisemnej | Diagram blokowy w pionie z opisami kroków i przykładowymi linijkami (6 g Mg + 8 g O₂); strzałka od kroku 6 do 4 pokazuje pętlę kontroli (bilans odsyła do sprawdzenia). Wniosek: algorytm jest liniowy, a bilans domyka go i weryfikuje. |
+| §7, doświadczenie 2 | doświadczenie wirtualne (zlewka, przyrząd) | kolba na wadze z marmurem i kwasem: bąbelki CO₂, spadek wskazania wagi w czasie, tabela pomiarów | ubytek masy na wadze to masa ulotowanego gazu — dane do obliczeń porcji | Wirtualna waga z kolbą: po dodaniu marmuru widać bąbelki i cyfrowy spadek masy; suwak czasu pokazuje pomiar start/koniec; przycisk „próba kontrolna” (kwas bez marmuru) pokazuje brak ubytku. Wniosek: różnica wskazań = masa CO₂, z której liczy się czystość CaCO₃. |
+| §9, przy zastosowaniach | model interaktywny z suwakiem | zbiorniki rakiety z suwakiem proporcji H₂ : O₂; wychylenie od 1 : 8 pokazuje „niepotrzebny balast” lub niewykorzystane paliwo | przestrzeganie proporcji przepisu decyduje o efektywności także w skali przemysłowej | Interaktywna rakieta: suwak stosunku mas H₂ : O₂; przy 1 : 8 oba zbiorniki wykorzystane w 100%, odchylenia pokazują resztki w jednym ze zbiorników i spadek ładunku użytecznego. Wniosek: stechiometria to nie tylko probówka — to ekonomia każdego kilograma. |
+
+**Poprawione przy wczytaniu (Claude, 2026-10-12):** §1 wykład — „Chcesz 12 g MgO? To 12/80 porcji: 0,25·48 = 6 g Mg…” (12/80 ≠ 0,25) → „Chcesz 10 g MgO? To 10/80 = 0,125 porcji: 6 g Mg i 4 g O₂”.

@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="pl" data-przedmiot="che">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>J10 · Iloczyn rozpuszczalności Ksp</title>
+<style id="lekcja-css">
+/* baza.css — wspólna baza lekcji wszystkich przedmiotów (styl lekcji silnika CHE v0_57). Nie edytować — zmiany wspólne w ulepszenia.css, przedmiotowe w motywy/<kod>.css. */
+
+
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+--bg:#fafbfc;--surface:#ffffff;--surface-soft:#f6f8fa;--surface-warm:#fdfaf4;--border:#e5e9ee;--border-strong:#cdd5dd;
+--text:#1a2332;--text-soft:#4a5568;--text-muted:#8892a0;--text-faint:#b4bcc6;
+--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,0.15);
+--c-basic:#2e7d4f;--c-basic-bg:#eaf6ee;--c-basic-line:#b8dcc4;
+--c-understand:#2b5e9c;--c-understand-bg:#eaf1f9;--c-understand-line:#bcd0e5;
+--c-warn:#b06f1c;--c-warn-bg:#fcf4e6;--c-warn-line:#eed8a8;
+--c-error:#b83a45;--c-error-bg:#fbeced;--c-error-line:#e8b5b9;
+--c-extra:#6b3fa0;--c-extra-bg:#f3ecfa;--c-extra-line:#d3bde8;
+--c-new:#0d7d7d;--c-new-bg:#e6f4f4;--c-new-line:#b0dcdc;
+--c-exam:#a86a00;--c-exam-bg:#fdf5e0;--c-exam-line:#eed49c;
+--sh-sm:0 1px 2px rgba(26,35,50,0.04);--sh-md:0 4px 12px rgba(26,35,50,0.06);--sh-lg:0 12px 32px rgba(26,35,50,0.10);--sh-xl:0 20px 48px rgba(26,35,50,0.14);
+--r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;
+--header-h:56px;
+--ease:cubic-bezier(0.4,0,0.2,1);--ease-out:cubic-bezier(0.16,1,0.3,1);
+--hl-key:#0d6868;--hl-key-bg:#d8ecea;--hl-warn:#b83a45;--hl-warn-bg:#fbe0e2;--hl-new:#6b3fa0;--hl-new-bg:#ede0f8;--hl-formula:#084848;--hl-formula-bg:#e0eeed;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;padding:calc(var(--header-h) + 12px) 0 88px;min-height:100vh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+@media(min-width:600px){body{padding:calc(var(--header-h) + 18px) 12px 96px;}}
+@media(min-width:768px){body{padding:calc(var(--header-h) + 24px) 20px 100px;}}
+@media(min-width:1100px){body{padding:calc(var(--header-h) + 28px) 32px 110px;}}
+.fab{position:fixed;top:12px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);background:rgba(255,255,255,0.94);color:var(--text);cursor:pointer;border-radius:var(--r-md);padding:0;transition:all 0.2s var(--ease);z-index:1200;box-shadow:var(--sh-sm);backdrop-filter:blur(8px);}
+.fab:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);box-shadow:var(--sh-md);transform:translateY(-1px);}
+.fab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.fab-left{left:6px;}.fab-right{right:6px;}
+@media(min-width:600px){.fab-left{left:10px;}.fab-right{right:10px;}}
+@media(min-width:768px){.fab-left{left:14px;}.fab-right{right:14px;}}
+.fab-left::after{content:'';width:16px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;border-radius:1px;transition:transform 0.25s var(--ease);}
+.fab-left.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.fab-left.is-open::after{width:16px;height:2px;background:currentColor;box-shadow:none;transform:rotate(45deg);}
+.fab-left.is-open::before{content:'';position:absolute;width:16px;height:2px;background:currentColor;transform:rotate(-45deg);border-radius:1px;}
+.fab-right::after{content:'';display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:8px solid currentColor;transition:transform 0.35s var(--ease-out);}
+.fab-right.is-hidden::after{transform:rotate(0deg);}
+.fab-right:not(.is-hidden)::after{transform:rotate(180deg);}
+.header-wrapper{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);transform:translateY(0);transition:transform 0.45s var(--ease-out),box-shadow 0.3s var(--ease);box-shadow:var(--sh-sm);}
+.header-wrapper.is-hidden{transform:translateY(-100%);box-shadow:none;}
+.header-bar{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:0 16px;height:var(--header-h);}
+@media(min-width:768px){.header-bar{padding:0 24px;}}
+.header-subject{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:1px;padding:4px 10px;background:var(--accent-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;}
+.header-title{font-size:15px;font-weight:700;color:var(--text);letter-spacing:-0.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1 1 auto;min-width:0;}
+.header-lesson{font-size:10px;font-weight:800;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.7px;padding:4px 9px;background:var(--surface-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;font-family:'JetBrains Mono',monospace;}
+.header-nav{display:flex;gap:2px;flex-shrink:0;align-items:center;}
+.header-nav a,.header-nav button{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;border-radius:var(--r-sm);font-size:16px;font-weight:500;transition:all 0.2s var(--ease);border:1px solid transparent;background:transparent;cursor:pointer;padding:0;font-family:inherit;}
+.header-nav a:hover,.header-nav button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.header-resume-btn.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.header-resume-btn::before{content:'▮';font-size:14px;line-height:1;}
+.header-panel{display:none;border-top:1px solid var(--border);background:linear-gradient(180deg,var(--surface) 0%,var(--surface-soft) 100%);padding:20px 16px 24px;}
+@media(min-width:768px){.header-panel{padding:24px 24px 28px;}}
+.header-panel.is-open{display:block;}
+.header-panel-inner{max-width:900px;margin:0 auto;}
+.header-kicker{font-size:11px;color:var(--text-muted);text-transform:uppercase;font-weight:800;letter-spacing:1px;margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.header-kicker::before{content:'';width:24px;height:2px;background:var(--accent);display:inline-block;border-radius:1px;}
+.header-h1{font-size:32px;font-weight:800;color:var(--text);letter-spacing:-1px;margin-bottom:10px;line-height:1.1;}
+.header-subtitle{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:18px;max-width:720px;}
+.header-modes{display:flex;gap:6px;flex-wrap:wrap;}
+.mode-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 15px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);font-family:inherit;}
+.mode-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
+.mode-btn:hover:not(.active){background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.resume-dropdown{display:none;position:fixed;top:calc(var(--header-h) + 6px);right:14px;z-index:1050;width:min(300px,calc(100vw - 30px));padding:14px;border:1px solid var(--border-strong);border-radius:12px;background:#fff;box-shadow:var(--sh-lg);}
+.resume-dropdown.is-open{display:block;}
+.resume-dropdown h4{margin:0 0 5px;color:var(--text);font-size:.85rem;}
+.resume-dropdown p{margin:0 0 12px;color:var(--text-muted);font-size:.75rem;line-height:1.5;}
+.resume-actions{display:flex;gap:6px;}
+.resume-actions button{flex:1;padding:8px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text-soft);font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.resume-actions .resume-save{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toc-overlay{position:fixed;inset:0;background:rgba(26,35,50,0.34);backdrop-filter:blur(3px);z-index:1100;opacity:0;visibility:hidden;transition:opacity 0.3s var(--ease),visibility 0.3s var(--ease);}
+.toc-overlay.is-visible{opacity:1;visibility:visible;}
+.toc-wrapper{position:fixed;left:0;top:0;width:320px;max-width:86vw;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:1150;transform:translateX(-100%);transition:transform 0.4s var(--ease-out);padding-top:64px;box-shadow:var(--sh-xl);}
+.toc-wrapper.is-open{transform:translateX(0);}
+.toc-content{padding:12px 14px 100px;}
+.toc-header{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);padding:4px 12px 12px;}
+.toc-item{margin-bottom:4px;border-radius:var(--r-md);overflow:hidden;}
+.toc-summary{padding:10px 12px;font-size:13px;font-weight:700;color:var(--text);cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;border-radius:var(--r-sm);transition:background 0.2s var(--ease),color 0.2s var(--ease);user-select:none;}
+.toc-summary:hover{background:var(--accent-soft);color:var(--accent);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::marker{content:'';}
+.toc-summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);opacity:0.5;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);opacity:1;}
+.toc-links{padding:4px 0 8px 28px;display:flex;flex-direction:column;gap:1px;}
+.toc-link{display:block;padding:6px 10px;font-size:12.5px;color:var(--text-soft);text-decoration:none;border-radius:4px;transition:all 0.2s var(--ease);border-left:2px solid transparent;}
+.toc-link:hover{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);}
+.container{max-width:820px;margin:0 auto;background:var(--surface);border-radius:0;box-shadow:none;padding:18px 12px;border:none;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+@media(min-width:600px){.container{border-radius:var(--r-lg);box-shadow:var(--sh-md);border:1px solid var(--border);padding:22px 18px;}}
+@media(min-width:768px){.container{padding:36px 36px;border-radius:var(--r-xl);}}
+@media(min-width:1100px){.container{max-width:840px;padding:40px 40px;}}
+h1,h2,h3,h4,h5{font-weight:800;color:var(--text);letter-spacing:-0.3px;line-height:1.3;}
+h2{font-size:24px;margin-top:44px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+h3{font-size:17px;margin-top:32px;margin-bottom:12px;font-weight:800;}
+h4{font-size:15px;margin-top:24px;margin-bottom:10px;font-weight:800;}
+h5{font-size:13px;margin-top:16px;margin-bottom:8px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-soft);}
+p{margin-bottom:12px;}
+ul,ol{padding-left:24px;margin-bottom:14px;}
+li{margin-bottom:6px;padding-left:4px;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s var(--ease);}
+a:hover{border-bottom-color:var(--accent);}
+strong{font-weight:700;color:var(--text);}
+.hl{background:var(--hl-key-bg);color:var(--hl-key);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-warn{background:var(--hl-warn-bg);color:var(--hl-warn);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-new{background:var(--hl-new-bg);color:var(--hl-new);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.formula{display:inline-block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:14px;font-weight:600;color:var(--hl-formula);background:var(--hl-formula-bg);padding:4px 12px;border-radius:var(--r-sm);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:3px 2px;white-space:nowrap;}
+.formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
+code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
+pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
+.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
+.mnemonic b{color:#78350f;}
+.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
+@media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
+.card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
+.card-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:10px;padding:3px 9px;background:var(--accent-soft);border-radius:4px;}
+.card-core{background:var(--accent-soft);border-color:var(--accent-line);border-left-color:var(--accent);}
+.card-basic{background:var(--c-basic-bg);border-color:var(--c-basic-line);border-left-color:var(--c-basic);}
+.card-basic .card-label{background:rgba(46,125,79,0.12);color:var(--c-basic);}
+.card-understand{background:var(--c-understand-bg);border-color:var(--c-understand-line);border-left-color:var(--c-understand);}
+.card-understand .card-label{background:rgba(43,94,156,0.12);color:var(--c-understand);}
+.card-warning{background:var(--c-warn-bg);border-color:var(--c-warn-line);border-left-color:var(--c-warn);}
+.card-warning .card-label{background:rgba(176,111,28,0.12);color:var(--c-warn);}
+.card-error{background:var(--c-error-bg);border-color:var(--c-error-line);border-left-color:var(--c-error);}
+.card-error .card-label{background:rgba(184,58,69,0.12);color:var(--c-error);}
+.card-extra{background:var(--c-extra-bg);border-color:var(--c-extra-line);border-left-color:var(--c-extra);}
+.card-extra .card-label{background:rgba(107,63,160,0.12);color:var(--c-extra);}
+.card-new{background:var(--c-new-bg);border-color:var(--c-new-line);border-left-color:var(--c-new);}
+.card-new .card-label{background:rgba(13,125,125,0.12);color:var(--c-new);}
+.card-exam{background:var(--c-exam-bg);border-color:var(--c-exam-line);border-left-color:var(--c-exam);}
+.card-exam .card-label{background:rgba(168,106,0,0.12);color:var(--c-exam);}
+.card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0;}
+details.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent-line);border-radius:var(--r-sm);padding:10px 14px;margin:10px 0;transition:all 0.2s var(--ease);}
+details.answer[open]{background:var(--accent-soft);border-left-color:var(--accent);}
+details.answer summary{cursor:pointer;font-weight:700;color:var(--text-soft);font-size:13px;list-style:none;user-select:none;display:flex;align-items:center;gap:10px;transition:color 0.2s var(--ease);}
+details.answer summary::-webkit-details-marker{display:none;}
+details.answer summary::marker{content:'';}
+details.answer summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer[open] summary{color:var(--accent);}
+details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}
+.part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}
+@media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}
+.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
+@media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}
+.table-wrap th,.table-wrap td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px;}
+@media(min-width:600px){.table-wrap th,.table-wrap td{padding:10px 12px;font-size:13.5px;}}
+.table-wrap th{background:var(--surface-soft);font-weight:800;color:var(--text-soft);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;}
+@media(min-width:600px){.table-wrap th{font-size:11px;letter-spacing:0.7px;white-space:nowrap;}}
+.table-wrap.table-compact td,.table-wrap.table-compact th{padding:7px 6px;font-size:12.5px;}
+.table-wrap tr:last-child td{border-bottom:none;}
+.table-wrap tr:hover td{background:var(--accent-soft);}
+.table-wrap .error-row{background:var(--c-error-bg);}
+.table-wrap .ok-row{background:var(--c-basic-bg);}
+.def-list{display:flex;flex-direction:column;gap:8px;margin:14px 0;}
+.def-item{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px 16px;}
+.def-item dt{font-weight:800;color:var(--text);font-size:13.5px;margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+.def-item dt::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;}
+.def-item dd{color:var(--text-soft);font-size:13.5px;line-height:1.6;margin:0;padding-left:11px;}
+.minimum-card{background:linear-gradient(135deg,var(--surface-soft) 0%,var(--accent-soft) 100%);border:1px solid var(--accent-line);border-radius:var(--r-lg);padding:20px 22px;margin:8px 0 28px;box-shadow:var(--sh-sm);position:relative;overflow:hidden;}
+@media(min-width:768px){.minimum-card{padding:28px 34px;margin-bottom:36px;}}
+.minimum-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:var(--accent);}
+.minimum-card h3{color:var(--accent);margin:0 0 16px;font-size:16px;letter-spacing:0.2px;display:flex;align-items:center;gap:10px;}
+.minimum-card h3::before{content:'★';font-size:16px;}
+.minimum-card ol{margin:0;padding-left:0;list-style:none;counter-reset:min-list;}
+.minimum-card li{counter-increment:min-list;padding-left:36px;position:relative;margin-bottom:12px;font-size:14px;line-height:1.6;}
+.minimum-card li::before{content:counter(min-list);position:absolute;left:0;top:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--surface);color:var(--accent);border:2px solid var(--accent-line);border-radius:50%;font-size:12px;font-weight:800;}
+.minimum-card li:last-child{margin-bottom:0;}
+.level-badge{display:inline-block;font-size:9.5px;font-weight:800;text-transform:uppercase;padding:2px 9px;border-radius:12px;vertical-align:middle;letter-spacing:0.5px;line-height:1.6;margin-left:8px;}
+.level-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.level-understand{background:var(--c-understand-bg);color:var(--c-understand);}
+.level-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.level-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.level-new{background:var(--c-new-bg);color:var(--c-new);}
+.rule-box{background:var(--c-understand-bg);border:1px solid var(--c-understand-line);border-radius:var(--r-md);padding:14px 18px;margin:14px 0;font-size:14px;line-height:1.65;}
+.rule-box b{color:var(--c-understand);}
+.step-flow{background:var(--text);color:#fff;padding:16px 18px;border-radius:var(--r-md);font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:12.5px;line-height:1.9;margin:14px 0;overflow-x:auto;white-space:pre;}
+@media(min-width:768px){.step-flow{font-size:13.5px;padding:16px 20px;}}
+.footer{margin-top:56px;padding-top:24px;border-top:2px solid var(--border);text-align:center;font-size:12.5px;color:var(--text-muted);letter-spacing:0.2px;}
+.footer p{margin-bottom:4px;}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:6px;border:2px solid var(--bg);}
+::-webkit-scrollbar-thumb:hover{background:var(--text-muted);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.bottom-nav{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:1100;width:min(700px,calc(100vw - 24px));font-size:.78rem;}
+.bottom-nav__toggle{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;padding:8px 14px;border:1px solid var(--border-strong);border-radius:999px;background:rgba(255,255,255,.97);color:var(--text-soft);font:700 .72rem inherit;box-shadow:0 5px 18px rgba(15,23,42,.14);cursor:pointer;backdrop-filter:blur(10px);font-family:inherit;}
+.bottom-nav__panel{display:none;margin-bottom:7px;padding:10px;border:1px solid var(--border-strong);border-radius:14px;background:rgba(255,255,255,.98);box-shadow:0 10px 28px rgba(15,23,42,.16);backdrop-filter:blur(12px);}
+.bottom-nav.is-open .bottom-nav__panel{display:block;}
+.bottom-nav__primary{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.bottom-nav a,.bottom-nav button.nav-more{min-height:36px;display:flex;align-items:center;justify-content:center;padding:6px 8px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--text-soft);text-decoration:none;font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.bottom-nav a:hover,.bottom-nav button.nav-more:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+@media(max-width:420px){
+  .bottom-nav{font-size:.7rem;width:calc(100vw - 12px);}
+  .bottom-nav a,.bottom-nav button.nav-more{padding:6px 4px;font-size:.65rem;}
+}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
+.widget{background:var(--surface);border:2px solid var(--border);border-radius:var(--r-md);padding:14px;margin:14px 0;box-shadow:var(--sh-sm);}
+@media(min-width:768px){.widget{padding:22px 26px;margin:20px 0;border-radius:var(--r-lg);}}
+.widget h4{margin:0 0 8px;color:var(--text);font-size:15px;font-weight:800;}
+@media(min-width:768px){.widget h4{font-size:16px;}}
+.widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
+.bld-pool{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.bld-pool button{padding:6px 12px;border:1px solid var(--border);border-radius:20px;background:#fff;font:600 0.8rem inherit;cursor:pointer;font-family:inherit;color:var(--text);}
+.bld-pool button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bld-workspace{min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;}
+.bld-feedback,.re-result,.st-feedback,.ch-feedback{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;line-height:1.5;}
+.bld-feedback.ok,.re-result.ok,.st-feedback.ok,.ch-feedback.ok{background:var(--c-basic-bg);color:var(--c-basic);border:1px solid var(--c-basic-line);}
+.bld-feedback.bad,.re-result.bad,.st-feedback.bad,.ch-feedback.bad{background:var(--c-error-bg);color:var(--c-error);border:1px solid var(--c-error-line);}
+.bld-feedback.info,.re-result.info,.st-feedback.info,.ch-feedback.info{background:var(--c-understand-bg);color:var(--c-understand);border:1px solid var(--c-understand-line);}
+.bld-feedback.warn,.re-result.warn,.st-feedback.warn,.ch-feedback.warn{background:var(--c-warn-bg);color:var(--c-warn);border:1px solid var(--c-warn-line);}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);color:var(--text);font-family:inherit;}
+.btn:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent);}
+.btn-primary:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+.btn-sm{padding:6px 10px;font-size:12px;}
+.flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}
+@media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--border);border-radius:var(--r-md);background:#fff;color:var(--text);font:inherit;text-align:center;cursor:pointer;box-shadow:var(--sh-sm);transition:all 0.2s var(--ease);position:relative;font-family:inherit;}
+.flashcard:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-3px);box-shadow:var(--sh-md);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:90px;}
+.flashcard .front{font-weight:700;font-size:14.5px;line-height:1.5;}
+.flashcard .back{display:none;color:var(--text-soft);font-size:13.5px;line-height:1.6;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:8px;right:8px;font-size:9px;text-transform:uppercase;background:var(--surface-soft);padding:2px 8px;border-radius:10px;color:var(--text-muted);font-weight:800;letter-spacing:0.4px;}
+.flashcard .card-tag.tag-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.flashcard .card-tag.tag-error{background:var(--c-error-bg);color:var(--c-error);}
+.flashcard .card-tag.tag-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.flashcard .card-tag.tag-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.checklist{background:#fff;border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.checklist h4{color:var(--c-basic);margin:0 0 12px;font-size:15px;}
+.checklist ul{list-style:none;padding-left:0;margin:0;}
+.checklist li{padding:7px 0;font-size:13.5px;border-bottom:1px dashed var(--c-basic-line);display:flex;align-items:flex-start;gap:10px;line-height:1.55;}
+.checklist li:last-child{border-bottom:none;}
+.checklist li::before{content:'☐';color:var(--c-basic);font-weight:700;font-size:1.15rem;flex-shrink:0;line-height:1.2;}
+.core-path{background:linear-gradient(135deg,var(--c-basic-bg) 0%,#dcefe2 100%);border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:800;color:var(--c-basic);font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.core-path .cp-title::before{content:'▶';font-size:12px;}
+.core-path ol{margin:0;padding-left:22px;}
+.core-path li{margin-bottom:6px;font-size:13.5px;line-height:1.6;}
+.audit-panel{background:var(--surface-soft);border:2px solid var(--border-strong);border-radius:var(--r-lg);padding:16px 18px;margin:16px 0;}
+.audit-panel h4{margin:0 0 12px;color:var(--text);}
+.audit-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px;}
+@media(min-width:600px){.audit-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}}
+.audit-item{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:10px 12px;font-size:12.5px;line-height:1.55;}
+.mini-note{font-size:12.5px;color:var(--text-muted);font-style:italic;margin-top:8px;line-height:1.55;}
+.layer-legend{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:12px 14px;margin:12px 0;display:grid;grid-template-columns:1fr;gap:8px 18px;}
+@media(min-width:600px){.layer-legend{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;}}
+.layer-legend .layer-row{display:flex;gap:10px;align-items:center;font-size:12.5px;line-height:1.5;}
+.layer-legend .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.e8{background:var(--c-basic);}
+.layer-legend .dot.understand{background:var(--c-understand);}
+.layer-legend .dot.extra{background:var(--c-extra);}
+.layer-legend .dot.contest{background:var(--c-warn);}
+.klinika-table td.col-blad{color:var(--c-error);font-weight:700;}
+.klinika-table td.col-blad::before{content:'✕ ';font-weight:900;margin-right:4px;color:var(--c-error);}
+.klinika-table td.col-ok{color:var(--c-basic);font-weight:700;}
+.klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}
+.map-card{position:relative;}
+.map-expand-btn{position:absolute;top:10px;right:10px;z-index:3;padding:6px 12px;border:1px solid var(--accent-line);background:rgba(255,255,255,0.95);color:var(--accent);border-radius:var(--r-sm);font-size:12px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:var(--sh-sm);transition:all 0.15s var(--ease);}
+.map-expand-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.map-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(26,35,50,0.85);backdrop-filter:blur(6px);}
+.map-overlay.is-open{display:block;}
+.map-overlay-inner{position:absolute;inset:12px;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-xl);}
+.map-overlay-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface-soft);gap:8px;flex-wrap:wrap;}
+.map-overlay-title{font-weight:800;font-size:14px;color:var(--text);}
+.map-overlay-actions{display:flex;gap:6px;}
+.map-overlay-actions button{padding:6px 12px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;color:var(--text-soft);transition:all 0.15s var(--ease);}
+.map-overlay-actions button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.map-overlay-actions .map-close{background:var(--c-error);color:#fff;border-color:var(--c-error);}
+.map-overlay-canvas{flex:1;overflow:hidden;position:relative;background:#fff;cursor:grab;touch-action:none;}
+.map-overlay-canvas svg{display:block;position:absolute;top:0;left:0;transform-origin:0 0;}
+@media print{
+.fab,.toc-wrapper,.toc-overlay,.header-wrapper,.bottom-nav,.resume-dropdown,.map-overlay,.map-expand-btn{display:none !important;}
+body{padding:0;background:#fff;}
+.container{box-shadow:none;border:none;padding:0;max-width:100%;}
+details.answer{page-break-inside:avoid;}
+details.answer > *:not(summary){display:block !important;}
+details.answer summary{display:none;}
+.card{page-break-inside:avoid;}
+.widget{page-break-inside:avoid;}
+}
+@media (prefers-reduced-motion: reduce){
+*{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+html{scroll-behavior:auto;}
+}
+html,body{max-width:100%;overflow-x:hidden;}
+.table-scroll-hint{display:none;align-items:center;justify-content:space-between;gap:8px;padding:7px 11px;margin-top:0;margin-bottom:8px;border:1px solid var(--border);border-bottom:0;border-radius:var(--r-sm) var(--r-sm) 0 0;background:var(--surface-soft);color:var(--text-muted);font-size:11px;font-weight:700;}
+.table-wrap.is-scrollable + .table-scroll-hint{display:flex;}
+.table-scroll-hint .scroll-arrow{font-size:13px;letter-spacing:2px;color:var(--accent);}
+.timeline-anim{border-color:var(--c-understand-line);}
+.ta-stage{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 14px;min-height:280px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.ta-scene{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;animation:taFade 0.6s ease-out;width:100%;}
+@keyframes taFade{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.ta-scene .ta-year{font-size:1.7rem;font-weight:800;color:var(--accent);font-family:'JetBrains Mono',monospace;letter-spacing:1px;}
+.ta-scene .ta-who{font-size:1.05rem;font-weight:800;color:var(--text);}
+.ta-scene .ta-desc{font-size:13.5px;color:var(--text-soft);max-width:600px;line-height:1.65;}
+.ta-dots{display:flex;justify-content:center;gap:8px;margin:14px 0 8px;}
+.ta-dot{width:12px;height:12px;border-radius:50%;background:var(--border-strong);border:2px solid transparent;cursor:pointer;padding:0;transition:all 0.2s var(--ease);}
+.ta-dot.active{background:var(--accent);transform:scale(1.25);box-shadow:0 0 0 3px var(--accent-glow);}
+.ta-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;}
+.ta-nav{padding:8px 14px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-weight:700;color:var(--text-soft);cursor:pointer;font-size:12.5px;transition:all 0.15s var(--ease);}
+.ta-nav:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.ta-progress{font-size:12.5px;color:var(--text-muted);font-weight:700;font-family:'JetBrains Mono',monospace;}
+.eq-player{background:linear-gradient(180deg,#f8fafc,#eef6f5);border:2px solid var(--accent-line);border-radius:var(--r-lg);padding:16px 18px;margin:14px 0;}
+.eq-stage{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.15rem;padding:12px;background:#fff;border-radius:var(--r-md);border:1px solid var(--border);}
+.eq-term{display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border);opacity:0;}
+.eq-term.show{opacity:1;animation:reaction-flow 0.7s ease-out;}
+.eq-term.reactant{background:#e0f2fe;border-color:#7dd3fc;color:#0c4a6e;}
+.eq-term.product{background:#dcfce7;border-color:#86efac;color:#14532d;}
+.eq-arrow{opacity:0;color:var(--accent);font-size:1.4rem;}
+.eq-arrow.show{opacity:1;}
+.eq-balance{margin-top:10px;font-size:13px;color:var(--text-soft);display:none;}
+.eq-balance.show{display:block;}
+@keyframes reaction-flow{0%{opacity:.25;transform:scale(.92)}55%{opacity:1}100%{opacity:1;transform:scale(1)}}
+.ion-assembly{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;padding:18px 12px;background:#fff;border:1px solid var(--border);border-radius:var(--r-md);margin:10px 0;}
+.ion-chip{padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid var(--border);}
+.ion-chip.cation{background:#e0f2fe;border-color:#38bdf8;color:#0c4a6e;}
+.ion-chip.anion{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.ion-chip.product{background:#dcfce7;border-color:#4ade80;color:#14532d;}
+.ion-plus,.ion-join{font-size:1.4rem;font-weight:800;color:var(--text-muted);}
+.hero{max-width:900px;margin:0 auto 22px;padding:26px;border:1px solid var(--border);border-radius:var(--r-xl);background:linear-gradient(135deg,#fff,var(--accent-soft));box-shadow:var(--sh-md);}
+.hero h1{font-size:clamp(32px,6vw,52px);margin:4px 0 8px;}
+.hero-kicker{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--accent);text-transform:uppercase;}
+.lead{font-size:16px;color:var(--text-soft);max-width:720px;}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;}
+.page{max-width:900px;margin:0 auto;}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+@media(max-width:720px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px;}
+.metric-grid>div,.result-card,.step-card{padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);}
+.metric-grid b{display:block;font-size:10px;text-transform:uppercase;color:var(--text-muted);}
+.metric-grid strong{display:block;margin-top:3px;}
+@media(max-width:700px){.metric-grid{grid-template-columns:1fr;}}
+.controls,.button-grid{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;}
+.controls button,.button-grid button,.quiz-opt{padding:8px 12px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;cursor:pointer;}
+.particle-stage{height:120px;display:flex;align-items:center;justify-content:center;gap:70px;border:1px dashed var(--border-strong);border-radius:10px;margin-top:12px;}
+.particle{font-size:30px;font-weight:800;}
+.p-h3o{color:var(--accent);}
+.p-cl{color:#b83a45;}
+.ph-scale{display:flex;justify-content:space-between;margin-top:6px;font:700 11px 'JetBrains Mono',monospace;}
+.buffer-tank{height:28px;border:1px solid var(--border-strong);border-radius:999px;overflow:hidden;margin:14px 0;background:var(--surface-soft);}
+#bufferFill{height:100%;width:100%;background:var(--accent);transition:width .2s;}
+.quiz-wrap{margin:16px 0;}
+.quiz-q{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:14px 16px;margin-bottom:12px;}
+.quiz-q h5{margin:0 0 10px;font-size:14.5px;color:var(--text);text-transform:none;letter-spacing:0;line-height:1.45;}
+.quiz-q .q-tag{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:10px;margin-bottom:8px;background:var(--surface-soft);color:var(--text-muted);}
+.quiz-opts{display:flex;flex-direction:column;gap:8px;}
+.quiz-opt{display:block;width:100%;text-align:left;padding:10px 12px;border:2px solid var(--border);border-radius:var(--r-sm);background:#fff;font:inherit;font-size:13.5px;cursor:pointer;transition:all 0.15s var(--ease);color:var(--text);}
+.quiz-opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft);}
+.quiz-opt.correct{border-color:var(--c-basic);background:var(--c-basic-bg);color:var(--c-basic);font-weight:700;}
+.quiz-opt.wrong{border-color:var(--c-error);background:var(--c-error-bg);color:var(--c-error);}
+.quiz-opt:disabled{cursor:default;opacity:0.95;}
+.quiz-fb{margin-top:8px;font-size:13px;line-height:1.5;display:none;padding:8px 10px;border-radius:var(--r-sm);}
+.quiz-fb.show{display:block;}
+.quiz-fb.ok{background:var(--c-basic-bg);color:var(--c-basic);}
+.quiz-fb.bad{background:var(--c-error-bg);color:var(--c-error);}
+.quiz-score{text-align:center;padding:14px;background:var(--surface-soft);border-radius:var(--r-md);margin-top:16px;font-weight:800;color:var(--accent);display:none;}
+.quiz-score.show{display:block;}
+.lab-bridge{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 28px;padding:14px 16px;border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);background:linear-gradient(135deg,var(--surface-soft),var(--accent-soft));}
+.lab-bridge strong{display:block;color:var(--accent-dark);}
+.lab-bridge span{display:block;margin-top:3px;color:var(--text-soft);font-size:13px;}
+.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;}
+.lab-bridge-btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
+@media(max-width:600px){.lab-bridge{align-items:flex-start;flex-direction:column;}.lab-bridge-btn{width:100%;text-align:center;}}
+.exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}
+.exp-card h5{margin:0 0 10px;color:var(--c-basic);font-size:14px;text-transform:none;letter-spacing:0;}
+.exp-grid{display:grid;grid-template-columns:1fr;gap:6px;font-size:13.5px;line-height:1.55;}
+@media(min-width:600px){.exp-grid{grid-template-columns:110px 1fr;}}
+.exp-grid b{color:var(--text-soft);font-size:11px;text-transform:uppercase;letter-spacing:0.4px;}
+
+.js-reveal .card:not(.in),.js-reveal .widget:not(.in){opacity:0;transform:translateY(14px)}
+.js-reveal .card,.js-reveal .widget{transition:opacity .55s var(--ease),transform .55s var(--ease)}
+
+
+.ion-svg{width:100%;height:auto;display:block;background:radial-gradient(ellipse at 50% 40%,#fff,var(--surface-soft));border:1px solid var(--border);border-radius:var(--r-md);margin-top:10px}
+.ion-svg .mv{transition:transform .9s cubic-bezier(.65,0,.35,1);transform-box:fill-box}
+.ion-svg text{font-family:'JetBrains Mono',monospace;font-weight:800;text-anchor:middle;dominant-baseline:central}
+.ion-svg .fade{opacity:0;transition:opacity .6s ease .35s}
+.ion-svg[data-s="1"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="1"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="1"] .d1,.ion-svg[data-s="2"] .d1{opacity:1}
+.ion-svg[data-s="2"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="2"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="2"] .proton{transform:translate(120px,-40px)}
+.ion-svg[data-s="2"] .arrow{opacity:1}
+.ion-svg[data-s="3"] .g-hcl{transform:translateX(10px)}
+.ion-svg[data-s="3"] .g-w{transform:translateX(-10px)}
+.ion-svg[data-s="3"] .proton{transform:translate(230px,-38px)}
+.ion-svg[data-s="3"] .d3{opacity:1}
+.ion-svg[data-s="3"] .glow{animation:ionGlow 1.6s ease-in-out infinite}
+@keyframes ionGlow{0%,100%{filter:drop-shadow(0 0 2px rgba(13,104,104,.3))}50%{filter:drop-shadow(0 0 10px rgba(13,104,104,.8))}}
+
+
+.ph-bar{position:relative;height:18px;border-radius:999px;margin:10px 0 4px;border:1px solid var(--border-strong);
+background:linear-gradient(90deg,#e5262e 0%,#ef5a28 14%,#f6a21e 28%,#d7d93a 43%,#5cb85c 50%,#21a89a 57%,#2f7fc1 71%,#4a4bb5 86%,#6b2d8f 100%)}
+.ph-marker{position:absolute;top:-6px;width:0;height:0;left:0;transform:translateX(-50%);transition:left .35s var(--ease)}
+.ph-marker::before{content:'';position:absolute;left:-7px;top:0;border:7px solid transparent;border-top:10px solid var(--text)}
+.ph-marker::after{content:attr(data-v);position:absolute;left:0;top:-22px;transform:translateX(-50%);background:var(--text);color:#fff;font:800 11px 'JetBrains Mono',monospace;padding:2px 6px;border-radius:5px;white-space:nowrap}
+.ph-flask{display:inline-block;width:22px;height:22px;border-radius:0 0 8px 8px;border:2px solid var(--text-soft);vertical-align:middle;margin-right:6px;transition:background .35s}
+
+
+.titr-wrap{position:relative}
+#titrationCanvas{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--r-md);background:#fff}
+.titr-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.titr-row input[type=range]{flex:1 1 200px}
+.titr-flask{width:34px;height:42px;border:2px solid var(--text-soft);border-radius:2px 2px 12px 12px;transition:background .3s;flex-shrink:0;position:relative}
+.titr-flask::after{content:'';position:absolute;left:-2px;right:-2px;top:-8px;height:6px;border:2px solid var(--text-soft);border-bottom:0;border-radius:3px 3px 0 0}
+
+
+.buffer-tank{position:relative;height:34px}
+#bufferFill{transition:width .4s var(--ease),background .4s;background-size:28px 28px;background-image:linear-gradient(45deg,rgba(255,255,255,.22) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.22) 75%,transparent 75%)}
+.buffer-tank.pulse{animation:bufPulse .45s ease}
+.buffer-tank.dead{animation:bufDead .5s ease 2}
+@keyframes bufPulse{50%{transform:scale(1.02);box-shadow:0 0 0 4px var(--accent-glow)}}
+@keyframes bufDead{50%{box-shadow:0 0 0 4px rgba(184,58,69,.35)}}
+
+
+.rx-stage{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:12px 0;padding:14px;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md)}
+.rx-beaker{position:relative;width:120px;height:150px;border:3px solid var(--text-soft);border-top:0;border-radius:0 0 18px 18px;background:rgba(255,255,255,.55);overflow:visible;flex-shrink:0}
+.rx-liquid{position:absolute;left:0;right:0;bottom:0;height:100px;border-radius:0 0 14px 14px;background:rgba(220,235,240,.65);transition:background 2.2s ease}
+.rx-solid{position:absolute;left:36px;bottom:2px;width:48px;height:24px;border-radius:40% 40% 8px 8px;opacity:0;transition:height 3.5s ease,opacity .5s,transform 3.5s ease}
+.rx-bubbles,.rx-precip,.rx-fumes{position:absolute;left:0;right:0;bottom:0;height:150px;pointer-events:none;overflow:hidden}
+.rx-fumes{overflow:visible;bottom:100px;height:70px}
+.rx-b{position:absolute;bottom:14px;border-radius:50%;background:rgba(255,255,255,.85);border:1px solid rgba(13,104,104,.45);animation:rxRise 2.2s ease-in forwards}
+@keyframes rxRise{to{transform:translate(var(--dx,0),-92px);opacity:0}}
+.rx-p{position:absolute;top:50px;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #cbd5e1;animation:rxFall 2.4s ease-in forwards}
+@keyframes rxFall{to{transform:translateY(90px)}}
+.rx-cloud{position:absolute;bottom:0;left:6px;right:6px;height:0;background:#fff;border-radius:10px 10px 0 0;box-shadow:0 0 0 1px #e2e8f0;transition:height 4s ease;opacity:.95}
+.rx-f{position:absolute;bottom:0;width:26px;height:26px;border-radius:50%;background:rgba(150,75,20,.55);filter:blur(7px);animation:rxFume 3s ease-out forwards}
+@keyframes rxFume{to{transform:translate(var(--dx,0),-70px) scale(2.2);opacity:0}}
+
+
+.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.rx-label{flex:1 1 200px;font-size:13px;color:var(--text-soft);line-height:1.5}
+.rx-label b{color:var(--text);font-family:'JetBrains Mono',monospace}
+@media print{.js-reveal .card,.js-reveal .widget{opacity:1!important;transform:none!important}}
+
+
+/* ulepszenia.css — warstwa wspólna nad baza.css: pasek lekcji, postęp czytania, spis z podświetleniem,
+   tryb ciemny, komponenty wspólne (mity, drzewo, cytat, dialog, słówka, figura), druk, dostępność.
+   Kolejność w lekcji: baza.css → ulepszenia.css → motywy/<przedmiot>.css. Edytuj tylko tutaj. */
+
+:root{--header-h:52px;--serif:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Charter,Georgia,serif}
+
+/* ---------- pasek lekcji (zamiast nagłówka aplikacji) ---------- */
+.lk-bar{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 12px;
+  background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--border)}
+.lk-subj{flex:none;display:inline-flex;align-items:center;gap:7px;font:800 12.5px/1 Inter,system-ui,sans-serif;color:var(--accent);text-decoration:none;
+  padding:6px 10px 6px 8px;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+.lk-subj i{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+.lk-title{flex:1;min-width:0;font:600 13px/1.25 Inter,system-ui,sans-serif;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lk-btn{flex:none;min-width:36px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);background:var(--surface);
+  color:var(--text);border-radius:9px;padding:0 10px;font:700 12.5px Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+.lk-btn:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.lk-prog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
+@media (max-width:520px){.lk-title{display:none}.lk-bar{justify-content:space-between}}
+
+/* ---------- nagłówek lekcji ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+.hero::after{content:"";position:absolute;inset:-10% -6% -10% 52%;z-index:-1;opacity:.12;pointer-events:none;background:var(--motyw-wzor,none) right center/auto 100% repeat-y}
+.hero h1{text-wrap:balance}
+.hero-kicker{color:var(--accent);text-transform:none;letter-spacing:0;font-size:13px}
+.page{padding:0 16px}
+.lk-btn svg{width:16px;height:16px;display:block}
+.lk-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:12.5px;color:var(--text-muted)}
+.lk-meta b{color:var(--text-soft);font-weight:700}
+
+/* ---------- spis treści: aktywna sekcja ---------- */
+@media (min-width:800px){.toc-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));column-gap:12px}}
+.toc-link.on{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);font-weight:700}
+section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
+
+/* ---------- komponenty wspólne ---------- */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:12px 0}
+.myth-head{grid-column:1/-1;font-weight:800;font-size:14px}
+.myth{border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow:hidden}
+.myth p{margin:0;padding:9px 12px;font-size:13.5px;line-height:1.5}
+.myth p span{display:block;font:800 11px Inter,system-ui;margin-bottom:2px}
+.myth-x{background:var(--c-error-bg)}.myth-x span{color:var(--c-error)}.myth-ok span{color:var(--c-basic)}
+
+.lk-tree{margin:12px 0;font-size:14px;overflow-x:auto}
+.lk-tree ul{list-style:none;margin:0;padding-left:18px}.lk-tree>ul{padding-left:0}
+.lk-tree li{position:relative;padding:3px 0 3px 14px}
+.lk-tree ul ul li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--accent-line)}
+.lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
+.lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
+.lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+
+/* cytat z tekstu (lektura, źródło, wypowiedź) */
+.lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
+.lk-quote blockquote{margin:0;font:400 17px/1.65 var(--serif);color:var(--text)}
+.lk-quote blockquote p{margin:0 0 6px;color:inherit}
+.lk-quote figcaption{margin-top:6px;font-size:12.5px;color:var(--text-muted)}
+
+/* dialog (role A/B, rozmowa, scenka) */
+.lk-dialog{margin:14px 0;display:flex;flex-direction:column;gap:8px}
+.lk-line{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.lk-who{min-width:30px;height:30px;padding:0 8px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font:800 12px Inter,system-ui;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line)}
+.lk-line.b .lk-who{background:var(--surface-soft);color:var(--text-soft);border-color:var(--border)}
+.lk-say{padding:8px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font-size:14.5px;line-height:1.55}
+.lk-say small{display:block;color:var(--text-muted);font-size:12.5px;margin-top:2px}
+
+/* słówka: wyraz — znaczenie — przykład */
+.lk-vocab{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.lk-vocab th{text-align:left;font-size:12px;color:var(--text-muted);font-weight:700;padding:6px 10px;border-bottom:2px solid var(--border)}
+.lk-vocab td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+.lk-vocab td:first-child{font-weight:800;color:var(--accent);white-space:nowrap}
+.lk-vocab td:last-child{color:var(--text-soft);font-style:italic}
+@media (max-width:560px){.lk-vocab thead{display:none}.lk-vocab tr{display:block;padding:8px 0;border-bottom:1px solid var(--border)}
+  .lk-vocab td{display:block;border:0;padding:1px 4px}}
+
+/* figura z biblioteki grafik przedmiotu */
+.lk-fig{margin:16px 0;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);overflow:hidden}
+.lk-fig figcaption{padding:9px 14px;border-top:1px solid var(--border);background:var(--surface-soft);font-size:13px;line-height:1.5;color:var(--text-soft)}
+.lk-fig figcaption b{color:var(--text);margin-right:4px}
+.lk-fig-body{padding:12px}
+.lk-fig svg{display:block;width:100%;height:auto}
+
+/* z chemii (lekcja.css): treści akademickie, plakietki */
+details.adv{border:1px dashed var(--c-warn-line,#eed8a8);border-radius:10px;background:var(--surface-soft,#f6f8fa);margin:10px 0;padding:0 12px}details.adv>summary{cursor:pointer;font-weight:700;color:var(--c-warn,#b06f1c);padding:9px 0;list-style:none}details.adv>summary::-webkit-details-marker{display:none}details.adv>summary::before{content:"▸ "}details.adv[open]>summary::before{content:"▾ "}.adv-tag{font-weight:600;font-size:11px;opacity:.75;margin-left:6px}.adv-body{padding:0 0 10px;font-size:13.5px;line-height:1.6}.adv-body table{font-size:12.5px}.adv-toggle{margin-top:10px;border:1px solid var(--c-warn-line,#eed8a8);background:var(--c-warn-bg,#fcf4e6);color:var(--c-warn,#b06f1c);border-radius:999px;padding:6px 12px;font:700 12px Inter,system-ui,sans-serif;cursor:pointer}.bio-tag{display:inline-block;font:800 10px Inter,system-ui;letter-spacing:.04em;padding:2px 7px;border-radius:99px;background:rgba(46,125,79,.12);color:#2e7d4f;margin-left:6px;vertical-align:middle}.v15{display:inline-block;font:800 9.5px Inter,system-ui;padding:1px 6px;border-radius:99px;background:rgba(13,125,125,.12);color:#0d7d7d;margin-left:6px;vertical-align:middle}@media print{details.adv{display:block}details.adv>.adv-body{display:block}}
+/* z chemii (lekcja.css): telefon, tabele */
+.exp-card{min-width:0;max-width:100%;box-sizing:border-box}.exp-grid>*{min-width:0;overflow-wrap:anywhere}
+@media (max-width:600px){.exp-grid{grid-template-columns:minmax(0,1fr)!important}.exp-grid>b{margin-top:4px}}
+.table-wrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+
+/* klinika błędów (::: klinika) — tabela, na telefonie karty */
+.klinika-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden}
+.klinika-table th{text-align:left;padding:9px 12px;background:var(--surface-soft);color:var(--text-soft);font-size:12px;font-weight:800;border-bottom:1px solid var(--border)}
+.klinika-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.klinika-table tr:last-child td{border-bottom:0}
+@media (max-width:600px){.klinika-table thead{display:none}.klinika-table tr{display:block;padding:8px 12px;border-bottom:1px solid var(--border)}
+  .klinika-table td{display:block;border:0;padding:2px 0}.klinika-table td:not(.col-blad):not(.col-ok){color:var(--text-soft)}}
+
+.lk-pre{margin:12px 0;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-soft);overflow-x:auto;font:12.5px/1.55 ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;color:var(--text-soft);white-space:pre}
+.lk-pre code{font:inherit;background:none;padding:0;color:inherit}
+.lk-hr{border:0;border-top:1px solid var(--border);margin:28px 0}
+
+/* ---------- dostępność ---------- */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;z-index:60;background:var(--surface);color:var(--accent);padding:8px 12px;border-radius:8px}
+.skip-link:focus{left:8px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- tryb ciemny: automatycznie albo przyciskiem (data-theme) ---------- */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme=dark]{
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}
+/* elementy bazy z białym tłem na sztywno */
+html[data-ciemny] :is(.flashcard,.checklist,.audit-item,.layer-legend,.quiz-q,.quiz-opt,.btn,.controls button,.eq-stage,.ion-assembly,.bld-workspace,.bld-pool button,.resume-dropdown,.ta-nav){background:var(--surface);color:var(--text)}
+html[data-ciemny] .hero{background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.active,.step-flow){color:var(--bg)}
+@media (max-width:600px){.hero::after{opacity:.07}}
+
+/* ---------- druk ---------- */
+@media print{
+  .lk-bar,.adv-toggle,.toc-item,.fab,.bottom-nav{display:none!important}
+  body{padding:0;background:#fff;color:#000}
+  .hero::after{display:none}.hero{background:none;box-shadow:none}
+  details.adv,details.answer{display:block}details>*{display:block}
+  .card,.minimum-card,.lk-fig,.myth,.quiz-q{break-inside:avoid;box-shadow:none}
+  a{color:inherit;text-decoration:none}
+}
+
+/* === Dopracowanie czytelności (2026-10-11; z wersji „ulepszonej” U03 użytkownika, uogólnione na wszystkie przedmioty, zgodne z trybem ciemnym) === */
+body{line-height:1.74}
+main{isolation:isolate}
+.hero{border-color:var(--accent-line)}
+.hero::before{content:"";position:absolute;right:-42px;top:-56px;width:180px;height:180px;z-index:-1;pointer-events:none;
+ border:1px solid var(--accent-line);border-radius:50%;opacity:.45;
+ box-shadow:0 0 0 22px var(--accent-glow),0 0 0 44px var(--accent-glow)}
+.part-heading{padding:0 0 12px;border-bottom:1px solid var(--border);align-items:flex-start}
+.part-num{margin-top:1px}
+section[id]{scroll-margin-top:calc(var(--header-h,56px) + 20px)}
+section p{max-width:78ch}
+section ul,section ol{padding-left:1.35rem}
+.card,.exp-card,.widget,.table-wrap{box-shadow:0 2px 8px rgba(24,49,59,.045)}
+.table-wrap{max-width:100%}
+.table-wrap table{line-height:1.55}
+.table-wrap td strong{color:var(--text)}
+.table-wrap tbody tr:nth-child(even) td{background:var(--surface-soft)}
+.table-wrap tbody tr:hover td{background:var(--accent-soft)}
+.mini-note{max-width:80ch}
+:is(button,a,summary,[tabindex]):focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:520px){.hero{padding:20px 16px}.part-heading{font-size:19px;gap:11px}
+ .table-wrap table{font-size:12.5px}.table-wrap th,.table-wrap td{padding:8px 9px}}
+@media(hover:none){.card:hover,.flashcard:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media print{.hero::before{display:none}.card,.exp-card,.table-wrap{break-inside:avoid;box-shadow:none}}
+
+/* fiszki: część ukryta do rozwinięcia (lekcja.js); przy druku — wszystkie */
+.flashcard[hidden]{display:none!important}
+.fz-more{display:block;width:100%;margin:-6px 0 18px;padding:12px 16px;border:2px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent;color:var(--text,#1d2a30);font-family:inherit;font-weight:600;font-size:15px;line-height:1.3;cursor:pointer;text-align:center}
+.fz-more:hover,.fz-more:focus-visible{background:var(--surface-2,rgba(0,0,0,.04))}
+@media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
+.quiz-q[hidden]{display:none!important}
+@media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
+
+/* motyw che (Chemia) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,.15);--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 104 180%27%3E%3Cg fill=%27none%27 stroke=%27%230d6868%27 stroke-width=%273%27%3E%3Cpath d=%27M52 10l40 23v46l-40 23-40-23V33z%27/%3E%3Cpath d=%27M52 100l40 23v46l-40 23-40-23v-46z%27/%3E%3Cpath d=%27M52 22v8M92 56h8M12 56H4%27/%3E%3C/g%3E%3Cg fill=%27%230d6868%27%3E%3Ccircle cx=%2752%27 cy=%2710%27 r=%275%27/%3E%3Ccircle cx=%2792%27 cy=%2779%27 r=%275%27/%3E%3Ccircle cx=%2712%27 cy=%27123%27 r=%275%27/%3E%3C/g%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}}
+:root[data-theme=dark]{--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}
+
+/* równanie reakcji w osobnej linii: ::: div.rownanie */
+.rownanie{margin:12px 0;padding:12px 16px;border-radius:var(--r-md);background:var(--surface-soft);border:1px solid var(--border);font:600 17px/1.6 Inter,system-ui,sans-serif;text-align:center;overflow-x:auto;white-space:nowrap}
+.rownanie small{display:block;font-size:12px;font-weight:500;color:var(--text-muted);white-space:normal}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+<header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">J10 Iloczyn rozpuszczalności Ksp</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<main class="page" id="main">
+<section class="hero card"><div class="hero-kicker">J10 · CHEMIA · Jony w roztworach · POZIOM ROZSZERZONY / KONKURS</div><h1>Iloczyn rozpuszczalności Ksp</h1><p class="lead">W J04 przewidywałeś osad jakościowo, korzystając z tabeli rozpuszczalności. Teraz liczysz ilościowo: ile soli rozpuści się w wodzie i kiedy po zmieszaniu roztworów osad naprawdę się pojawi. Narzędziem jest iloczyn rozpuszczalności Ksp.</p><div class="tag-row"><span class="level-badge level-understand">ROZUMIENIE</span><span class="level-badge level-extra">LO</span></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button><p class="mini-note">Lekcja należy do poziomu rozszerzonego. Ksp jest stałą równowagi rozpuszczania trudno rozpuszczalnej substancji w danej temperaturze. Wartości Ksp zależą od temperatury, dlatego w zadaniach należy korzystać z danych podanych w poleceniu. Porównanie Ksp różnych soli pozwala wnioskować o rozpuszczalności tylko dla soli o takiej samej stechiometrii dysocjacji.</p></section>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#minimum">Minimum E8</a><a class="toc-link" href="#jak-pracowac">0.1. Jak pracować z lekcją</a><a class="toc-link" href="#cele">0.2. Cele i pytanie przewodnie</a><a class="toc-link" href="#kompas">0.3. Kompas — co trzeba wiedzieć wcześniej</a><a class="toc-link" href="#diagnoza">0.4. Diagnoza startowa</a><a class="toc-link" href="#fiszki">Fiszki</a><a class="toc-link" href="#ciekawostki">10. Ciekawostki</a><a class="toc-link" href="#wyklad">11. Wykład — równowaga między stałą solą a roztworem</a><a class="toc-link" href="#checklista">12. Checklista — umiem…</a></nav></details>
+<section id="minimum" class="minimum-card"><h3>Muszę umieć — 10 punktów</h3>
+<ol>
+<li>Wyjaśniam, że Ksp to iloczyn rozpuszczalności — stała równowagi rozpuszczania trudno rozpuszczalnej soli.</li>
+<li>Zapisuję równanie rozpuszczania soli typu AB: AB(s) ⇌ A⁺(aq) + B⁻(aq).</li>
+<li>Zapisuję wyrażenie Ksp dla soli typu AB: Ksp = [A⁺]·[B⁻].</li>
+<li>Zapisuję wyrażenie Ksp dla soli typu AB₂: Ksp = [A²⁺]·[B⁻]².</li>
+<li>Rozumiem, że stała Ksp nie zawiera stężenia osadu, ponieważ osad jest fazą stałą.</li>
+<li>Definiuję rozpuszczalność molową s jako stężenie nasyconego roztworu soli, wyrażone w mol/dm³.</li>
+<li>Dla soli typu AB obliczam s = √Ksp.</li>
+<li>Dla soli typu AB₂ obliczam Ksp = 4s³, a następnie s = ∛(Ksp/4).</li>
+<li>Porównuję iloczyn stężeń jonów Q z Ksp: osad powstaje, gdy Q > Ksp.</li>
+<li>Wyjaśniam efekt wspólnego jonu: dodanie jonu obecnego już w równowadze rozpuszczania zmniejsza rozpuszczalność soli.</li>
+</ol>
+</section>
+<div class="layer-legend">
+<div class="layer-row"><span class="dot understand"></span><span><b>Rozumienie:</b> Ksp jako stała równowagi, różnica między Q a Ksp, dlaczego osad nie znika całkowicie w wodzie oraz dlaczego wspólny jon zmniejsza rozpuszczalność.</span></div>
+<div class="layer-row"><span class="dot extra"></span><span><b>Poziom rozszerzony:</b> rozpuszczalność molowa dla soli typu AB i AB₂, warunek strącania, obliczenia z Ksp oraz efekt wspólnego jonu.</span></div>
+<div class="layer-row"><span class="dot contest"></span><span><b>Konkurs:</b> analiza stechiometrii, obliczenia odwrotne, porównywanie rozpuszczalności soli o różnych wzorach, projektowanie warunków strącania oraz granice prostych reguł.</span></div>
+<div class="layer-row"><span class="dot extra"></span><span><b>Ambitne:</b> wpływ temperatury na Ksp, porównywanie soli o różnych typach stechiometrycznych, związek Ksp z tabelą rozpuszczalności oraz zastosowania w analizie i oczyszczaniu.</span></div>
+</div>
+<div id="rdzen" class="core-path">
+<div class="cp-title">Rdzeń lekcji — najpierw to</div>
+<ul>
+<li><a href="#wyklad">§1</a> — Wykład od zera: równowaga między stałą solą a roztworem.</li>
+<li><a href="#ksp">§2</a> — Wyrażenie Ksp i rozpuszczalność molowa.</li>
+<li><a href="#warunek">§3</a> — Warunek strącania: Q i Ksp.</li>
+<li><a href="#przyklady">§4</a> — Przykłady prowadzone.</li>
+<li><a href="#klinika">§5</a> — Klinika błędów.</li>
+<li><a href="#cwiczenia">§6</a> — Ćwiczenia z kluczem.</li>
+<li><a href="#slownik">§7</a> — Słownik.</li>
+<li><a href="#test">§8</a> — Test końcowy.</li>
+<li><a href="#checklista">§9</a> — Checklista.</li>
+</ul>
+</div>
+<section id="jak-pracowac">
+<div class="part-heading"><span class="part-num">0.1</span> Jak pracować z lekcją</div>
+<p>Po tej lekcji potrafisz:</p>
+<ul>
+<li>zapisać wyrażenie Ksp dla danej soli;</li>
+<li>obliczyć rozpuszczalność molową z Ksp;</li>
+<li>ocenić, czy po zmieszaniu roztworów powstanie osad;</li>
+<li>wyjaśnić efekt wspólnego jonu;</li>
+<li>odróżnić Ksp od tabeli rozpuszczalności.</li>
+</ul>
+<p>Kolejność pracy:</p>
+<ol>
+<li>Zacznij od diagnozy w <a href="#diagnoza">§0.4</a>. Odpowiedz samodzielnie, a dopiero potem sprawdź klucz.</li>
+<li>Przeczytaj wykład w <a href="#wyklad">§1</a>. Pokazuje, że trudno rozpuszczalna sól nie znika całkowicie w wodzie, lecz ustala równowagę.</li>
+<li>W <a href="#ksp">§2</a> zapisz wyrażenia Ksp dla soli typu AB, AB₂ i A₂B. Wykładniki wynikają ze stechiometrii, nie z wartości ładunków.</li>
+<li>W <a href="#warunek">§3</a> opanuj porównanie Q z Ksp. To najważniejsze narzędzie przewidywania strącania.</li>
+<li>Przykłady w <a href="#przyklady">§4</a> licz samodzielnie, zanim sprawdzisz klucz.</li>
+<li>Test i ćwiczenia rozwiązuj bez zaglądania do treści. Błędne odpowiedzi wskażą zagadnienie do powtórki.</li>
+</ol>
+<p>Przydatne wcześniej: strącanie osadów i tabela rozpuszczalności z J04, równowaga dynamiczna z J06, stała równowagi z K09.</p>
+</section>
+<section id="cele">
+<div class="part-heading"><span class="part-num">0.2</span> Cele i pytanie przewodnie</div>
+<p>Pytanie przewodnie: <strong>Jak liczbowo przewidzieć, czy osad się strąci, czy rozpuści?</strong></p>
+<p>Po tej lekcji potrafisz:</p>
+<ul>
+<li>zapisać wyrażenie Ksp;</li>
+<li>obliczyć rozpuszczalność molową;</li>
+<li>sprawdzić warunek strącania;</li>
+<li>wyjaśnić efekt wspólnego jonu;</li>
+<li>porównać rozpuszczalność soli o tym samym typie stechiometrycznym.</li>
+</ul>
+</section>
+<section id="kompas">
+<div class="part-heading"><span class="part-num">0.3</span> Kompas — co trzeba wiedzieć wcześniej</div>
+<ul>
+<li><strong>Strącanie osadów i tabela rozpuszczalności</strong> — J04.</li>
+<li><strong>Równowaga dynamiczna</strong> — J06.</li>
+<li><strong>Stała równowagi</strong> — K09; tutaj stosujemy ją do rozpuszczania.</li>
+<li><strong>Równania jonowe</strong> — J03.</li>
+<li><strong>Obliczenia stechiometryczne</strong> — CHE-R07.</li>
+</ul>
+</section>
+<section id="diagnoza">
+<div class="part-heading"><span class="part-num">0.4</span> Diagnoza startowa</div>
+<p>Odpowiedz najpierw samodzielnie.</p>
+<ol>
+<li>Co to jest Ksp?</li>
+<li>Zapisz wyrażenie Ksp dla AgCl.</li>
+<li>Jak z Ksp obliczyć s dla soli typu AB?</li>
+<li>Kiedy strąca się osad?</li>
+<li>Co to jest efekt wspólnego jonu?</li>
+</ol>
+<details class="answer"><summary>Klucz diagnozy i interpretacja</summary>
+<ol>
+<li>(1 pkt) Ksp to iloczyn rozpuszczalności — stała równowagi rozpuszczania trudno rozpuszczalnej soli.</li>
+</ol>
+<ol start="2">
+<li>(1 pkt) Ksp(AgCl) = [Ag⁺]·[Cl⁻].</li>
+</ol>
+<ol start="3">
+<li>(1 pkt) s = √Ksp.</li>
+</ol>
+<ol start="4">
+<li>(1 pkt) Osad strąca się, gdy iloczyn stężeń jonów Q jest większy od Ksp.</li>
+</ol>
+<ol start="5">
+<li>(1 pkt) Efekt wspólnego jonu to zmniejszenie rozpuszczalności soli po dodaniu jonu, który już występuje w jej równowadze rozpuszczania.</li>
+</ol>
+<p>Interpretacja wyniku: 5 pkt — przejdź do przykładów; 3–4 pkt — przeczytaj punkty 1–4; 0–2 pkt — zacznij od rdzenia.</p>
+</details>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">1</span> Wykład — równowaga między stałą solą a roztworem {#wyklad} <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<p>Co to znaczy, że substancja jest trudno rozpuszczalna? Nie oznacza to, że znika całkowicie w wodzie. Nawet nad osadem AgCl w roztworze znajdują się niewielkie ilości jonów Ag⁺ i Cl⁻.</p>
+<p>Gdy umieścisz kryształ AgCl w wodzie, część jonów przechodzi do roztworu:</p>
+<p>AgCl(s) ⇌ Ag⁺(aq) + Cl⁻(aq)</p>
+<p>Jony z roztworu mogą też wracać do powierzchni kryształu i budować ponownie stałą fazę. Po pewnym czasie ustala się równowaga dynamiczna: szybkość rozpuszczania jest równa szybkości krystalizacji.</p>
+<p>W stanie równowagi stężenia jonów są stałe, choć bardzo małe. Dla tej równowagi zapisujemy iloczyn rozpuszczalności:</p>
+<p>Ksp(AgCl) = [Ag⁺]·[Cl⁻]</p>
+<p>Ksp jest liczbą charakterystyczną dla danej substancji w danej temperaturze. Mała wartość Ksp oznacza, że w roztworze pozostaje bardzo mało jonów, czyli substancja jest trudno rozpuszczalna.</p>
+<p>Nie wpisujemy do wyrażenia Ksp stężenia AgCl(s). Osad jest fazą stałą, a jego „stężenie” nie zmienia ilościowego opisu równowagi w taki sposób jak stężenia jonów w roztworze.</p>
+<p>Rozpuszczalność molowa s to stężenie nasyconego roztworu soli, wyrażone w mol/dm³. Dla AgCl jeden mol rozpuszczonej soli daje jeden mol Ag⁺ i jeden mol Cl⁻. Dlatego:</p>
+<p>[Ag⁺] = s</p>
+<p>[Cl⁻] = s</p>
+<p>Ksp = s·s = s²</p>
+<p>s = √Ksp</p>
+<p>Jeżeli Ksp(AgCl) = 1,8·10⁻¹⁰, to:</p>
+<p>s = √(1,8·10⁻¹⁰)</p>
+<p>s ≈ 1,34·10⁻⁵ mol/dm³</p>
+<p>Oznacza to, że w litrze nasyconego roztworu znajduje się około 1,34·10⁻⁵ mola rozpuszczonego AgCl.</p>
+<p>Ksp jest ilościową wersją informacji z tabeli rozpuszczalności. Tabela mówi zwykle „rozpuszczalna” albo „nierozpuszczalna”. Ksp podaje liczbę, dzięki której można obliczyć dokładną rozpuszczalność i przewidzieć strącanie.</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie — po co Ksp?</span>
+<p>Ksp odpowiada na dwa pytania: ile soli rozpuści się w wodzie oraz czy po zmieszaniu roztworów powstanie osad. Mała wartość Ksp oznacza małą rozpuszczalność.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — po co potęgi?</span>
+<p>Wykładniki w wyrażeniu Ksp wynikają z liczby jonów danego rodzaju powstających z jednej jednostki wzoru soli. Dla AB₂ powstają dwa jony B⁻, dlatego stężenie B⁻ występuje w kwadracie.</p>
+</div>
+<div class="card card-core">
+<span class="card-label">W skrócie — strącanie ilościowo</span>
+<p>Osad powstaje, gdy iloczyn stężeń jonów Q przekroczy Ksp. Rozpuszczalność molową oblicza się z Ksp, a wspólny jon ją zmniejsza.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Uwaga — „nierozpuszczalny” nie znaczy „zero jonów”</span>
+<p>Nawet nad osadem AgCl istnieją w roztworze niewielkie ilości Ag⁺ i Cl⁻. Określenie „nierozpuszczalny” jest szkolnym uproszczeniem oznaczającym bardzo małą rozpuszczalność.</p>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">2</span> Wyrażenie Ksp i rozpuszczalność molowa {#ksp} <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<p>Dla soli o wzorze ogólnym:</p>
+<p>AₘBₙ(s) ⇌ mAᵖ⁺(aq) + nBq⁻(aq)</p>
+<p>iloczyn rozpuszczalności zapisuje się jako:</p>
+<p>Ksp = [Aᵖ⁺]ᵐ·[Bq⁻]ⁿ</p>
+<p>Wykładniki pochodzą ze stechiometrii równania rozpuszczania, czyli z indeksów we wzorze soli.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Typ soli</th><th>Równowaga</th><th>Wyrażenie Ksp</th><th>Związek z s</th></tr></thead>
+<tbody>
+<tr><td>AB</td><td>AB(s) ⇌ A⁺ + B⁻</td><td>Ksp = [A⁺]·[B⁻]</td><td>Ksp = s², s = √Ksp</td></tr>
+<tr><td>AB₂</td><td>AB₂(s) ⇌ A²⁺ + 2B⁻</td><td>Ksp = [A²⁺]·[B⁻]²</td><td>Ksp = 4s³, s = ∛(Ksp/4)</td></tr>
+<tr><td>A₂B</td><td>A₂B(s) ⇌ 2A⁺ + B²⁻</td><td>Ksp = [A⁺]²·[B²⁻]</td><td>Ksp = 4s³, s = ∛(Ksp/4)</td></tr>
+<tr><td>AB₃</td><td>AB₃(s) ⇌ A³⁺ + 3B⁻</td><td>Ksp = [A³⁺]·[B⁻]³</td><td>Ksp = 27s⁴, s = ∜(Ksp/27)</td></tr>
+</tbody></table></div>
+<p>Przykłady zapisu:</p>
+<p>AgCl(s) ⇌ Ag⁺ + Cl⁻</p>
+<p>Ksp = [Ag⁺]·[Cl⁻]</p>
+<p>BaSO₄(s) ⇌ Ba²⁺ + SO₄²⁻</p>
+<p>Ksp = [Ba²⁺]·[SO₄²⁻]</p>
+<p>CaF₂(s) ⇌ Ca²⁺ + 2F⁻</p>
+<p>Ksp = [Ca²⁺]·[F⁻]²</p>
+<p>Ag₂CrO₄(s) ⇌ 2Ag⁺ + CrO₄²⁻</p>
+<p>Ksp = [Ag⁺]²·[CrO₄²⁻]</p>
+<p>Dla soli typu AB₂ rozpuszczalność molowa s oznacza stężenie rozpuszczonej soli. Z jednej jednostki wzoru AB₂ powstaje jeden jon A²⁺ i dwa jony B⁻:</p>
+<p>[A²⁺] = s</p>
+<p>[B⁻] = 2s</p>
+<p>Wtedy:</p>
+<p>Ksp = s·(2s)²</p>
+<p>Ksp = s·4s²</p>
+<p>Ksp = 4s³</p>
+<p>Stąd:</p>
+<p>s = ∛(Ksp/4)</p>
+<p>Ważne: nie myl ładunku jonu z liczbą jonów. W CaF₂ wapń ma ładunek +2, ale z jednej jednostki wzoru powstaje jeden jon Ca²⁺. Fluor ma ładunek −1, ale powstają dwa jony F⁻. Dlatego wykładnik 2 dotyczy F⁻, a nie ładunku wapnia.</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie — skąd bierze się 4s³?</span>
+<p>Dla AB₂ każdy mol rozpuszczonej soli daje 1 mol A²⁺ i 2 mole B⁻. Jeżeli rozpuszczalność molowa wynosi s, to [A²⁺] = s, a [B⁻] = 2s. Wtedy Ksp = s·(2s)² = 4s³.</p>
+</div>
+<nie-myl>
+<summary>Ksp, s i ładunek jonu</summary>
+<ul>
+<li>Ksp ≠ s — Ksp jest stałą równowagi, a s rozpuszczalnością molową; test rozstrzygający: Ksp ma jednostkę wynikającą z iloczynu stężeń, a s jest stężeniem nasyconego roztworu.</li>
+<li>Indeks we wzorze ≠ ładunek jonu — CaF₂ zawiera dwa jony F⁻, choć wapń ma ładunek +2; test rozstrzygający: policz jony powstające z jednej jednostki wzoru.</li>
+<li>Ksp ≠ Q — Ksp opisuje równowagę, Q iloczyn stężeń w dowolnym momencie; test rozstrzygający: porównaj aktualne stężenia jonów z wartością Ksp.</li>
+</ul>
+</nie-myl>
+<div class="card card-warning">
+<span class="card-label">Uwaga — wykładniki wynikają ze stechiometrii</span>
+<p>Dla Mg(OH)₂ równanie rozpuszczania wygląda tak:</p>
+<p>Mg(OH)₂(s) ⇌ Mg²⁺ + 2OH⁻</p>
+<p>Dlatego:</p>
+<p>Ksp = [Mg²⁺]·[OH⁻]²</p>
+<p>Wykładnik 2 przy OH⁻ wynika z indeksu 2 we wzorze, a nie z ładunku jonu magnezu.</p>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">3</span> Warunek strącania — Q i Ksp {#warunek} <span class="level-badge level-understand">ROZUMIENIE</span> <span class="level-badge level-extra">LO</span></div>
+<p>Iloczyn stężeń jonów Q oblicza się tak samo jak Ksp, ale dla dowolnego momentu, niekoniecznie równowagi.</p>
+<p>Dla AgCl:</p>
+<p>Q = [Ag⁺]·[Cl⁻]</p>
+<p>Porównanie Q z Ksp pozwala przewidzieć, co się wydarzy:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Porównanie</th><th>Stan roztworu</th><th>Co się dzieje?</th></tr></thead>
+<tbody>
+<tr><td>Q &lt; Ksp</td><td>nienasycony</td><td>osad nie powstanie; sól może się dalej rozpuszczać</td></tr>
+<tr><td>Q = Ksp</td><td>nasycony</td><td>układ jest w równowadze</td></tr>
+<tr><td>Q > Ksp</td><td>przesycony</td><td>osad strąca się, aż Q spadnie do Ksp</td></tr>
+</tbody></table></div>
+<p>Przykład: jeżeli w roztworze [Ag⁺] = 0,01 mol/dm³ i [Cl⁻] = 0,01 mol/dm³, to:</p>
+<p>Q = 0,01·0,01 = 1,0·10⁻⁴</p>
+<p>Ponieważ Ksp(AgCl) = 1,8·10⁻¹⁰, mamy:</p>
+<p>Q > Ksp</p>
+<p>Osad AgCl strąca się.</p>
+<p>Po strąceniu część jonów opuszcza roztwór. Iloczyn Q maleje, aż osiągnie wartość Ksp. Wtedy ustala się równowaga między osadem a roztworem.</p>
+<p><strong>Efekt wspólnego jonu.</strong> Jeżeli do nasyconego roztworu AgCl dodamy NaCl, zwiększymy stężenie Cl⁻. Wtedy:</p>
+<p>Q = [Ag⁺]·[Cl⁻]</p>
+<p>rośnie i przekracza Ksp. Równowaga przesuwa się w stronę osadu:</p>
+<p>Ag⁺ + Cl⁻ → AgCl(s)</p>
+<p>W efekcie rozpuszczalność AgCl maleje. Dodanie wspólnego jonu nie zmienia wartości Ksp w danej temperaturze, ale zmienia stężenia jonów w równowadze.</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie — Q czy Ksp?</span>
+<p>Q opisuje aktualny stan roztworu. Ksp opisuje stan równowagi. Jeżeli Q > Ksp, powstaje osad. Jeżeli Q &lt; Ksp, osad nie powstaje. Jeżeli Q = Ksp, roztwór jest nasycony.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Pułapka — Q = Ksp nie oznacza strącania</span>
+<p>Osad pojawia się dopiero wtedy, gdy Q przekroczy Ksp. Przy Q równym Ksp roztwór jest dokładnie nasycony, a układ znajduje się w równowadze.</p>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 1 (3 pkt) — Czy strąci się AgCl?</span>
+<p>Ksp(AgCl) = 1,8·10⁻¹⁰. Po zmieszaniu roztworów [Ag⁺] = 1,0·10⁻⁵ mol/dm³, a [Cl⁻] = 1,0·10⁻⁵ mol/dm³.</p>
+<p>a) Zapisz wyrażenie na Q. (1 pkt)</p>
+<p>b) Oblicz Q. (1 pkt)</p>
+<p>c) Ustal, czy powstanie osad, i uzasadnij. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) Q = [Ag⁺]·[Cl⁻].</p>
+<p>b) (1 pkt) Q = 1,0·10⁻⁵ · 1,0·10⁻⁵ = 1,0·10⁻¹⁰.</p>
+<p>c) (1 pkt) Q &lt; Ksp, ponieważ 1,0·10⁻¹⁰ &lt; 1,8·10⁻¹⁰. Osad nie powstanie; roztwór jest nienasycony względem AgCl.</p>
+</details>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">4</span> Przykłady prowadzone {#przyklady} <span class="level-badge level-extra">LO</span></div>
+<p><strong>Przykład 1 — rozpuszczalność AgCl.</strong></p>
+<p>Ksp(AgCl) = 1,8·10⁻¹⁰.</p>
+<p>AgCl jest solą typu AB, więc:</p>
+<p>s = √Ksp</p>
+<p>s = √(1,8·10⁻¹⁰)</p>
+<p>s ≈ 1,34·10⁻⁵ mol/dm³</p>
+<p><strong>Przykład 2 — strącanie AgCl.</strong></p>
+<p>Po zmieszaniu roztworów otrzymano:</p>
+<p>[Ag⁺] = 0,01 mol/dm³</p>
+<p>[Cl⁻] = 0,01 mol/dm³</p>
+<p>Q = 0,01·0,01 = 1,0·10⁻⁴</p>
+<p>Ponieważ Q = 1,0·10⁻⁴ > Ksp = 1,8·10⁻¹⁰, osad AgCl strąca się.</p>
+<p><strong>Przykład 3 — efekt wspólnego jonu.</strong></p>
+<p>AgCl znajduje się w równowadze z roztworem zawierającym 0,1 mol/dm³ NaCl. Jon wspólny to Cl⁻.</p>
+<p>Ksp = [Ag⁺]·[Cl⁻]</p>
+<p>[Ag⁺] = Ksp/[Cl⁻]</p>
+<p>[Ag⁺] = 1,8·10⁻¹⁰/0,1</p>
+<p>[Ag⁺] = 1,8·10⁻⁹ mol/dm³</p>
+<p>W czystej wodzie rozpuszczalność AgCl wynosi około 1,34·10⁻⁵ mol/dm³. W obecności 0,1 mol/dm³ Cl⁻ spada do około 1,8·10⁻⁹ mol/dm³. Efekt wspólnego jonu jest bardzo wyraźny.</p>
+<p><strong>Przykład 4 — rozpuszczalność CaF₂.</strong></p>
+<p>Ksp(CaF₂) = 3,2·10⁻¹¹.</p>
+<p>CaF₂ jest solą typu AB₂:</p>
+<p>CaF₂(s) ⇌ Ca²⁺ + 2F⁻</p>
+<p>Ksp = 4s³</p>
+<p>s = ∛(Ksp/4)</p>
+<p>s = ∛(3,2·10⁻¹¹/4)</p>
+<p>s = ∛(8,0·10⁻¹²)</p>
+<p>s = 2,0·10⁻⁴ mol/dm³</p>
+<div class="card card-warning">
+<span class="card-label">Pułapka — Q > Ksp nie oznacza strącania</span>
+<p>Osad pojawia się dopiero, gdy Q przekroczy Ksp. Przy Q równym Ksp roztwór jest dokładnie nasycony.</p>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 2 (4 pkt) — Rozpuszczalność soli typu AB₂</span>
+<p>Ksp(CaF₂) = 3,2·10⁻¹¹.</p>
+<p>a) Zapisz równanie rozpuszczania CaF₂. (1 pkt)</p>
+<p>b) Zapisz wyrażenie Ksp. (1 pkt)</p>
+<p>c) Zapisz zależność Ksp od rozpuszczalności molowej s. (1 pkt)</p>
+<p>d) Oblicz s. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) CaF₂(s) ⇌ Ca²⁺ + 2F⁻.</p>
+<p>b) (1 pkt) Ksp = [Ca²⁺]·[F⁻]².</p>
+<p>c) (1 pkt) Ksp = s·(2s)² = 4s³.</p>
+<p>d) (1 pkt) s = ∛(Ksp/4) = ∛(3,2·10⁻¹¹/4) = ∛(8,0·10⁻¹²) = 2,0·10⁻⁴ mol/dm³.</p>
+</details>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">5</span> Klinika błędów {#klinika} <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<table class="klinika-table"><thead><tr><th>Błąd</th><th>Poprawnie</th><th>Dlaczego?</th></tr></thead><tbody><tr class="error-row"><td class="col-blad" data-label="Błąd">„Ksp = s zawsze.”</td><td class="col-ok" data-label="Poprawa">Dla AB Ksp = s², dla AB₂ Ksp = 4s³.</td><td data-label="Dlaczego">Wzór zależy od liczby jonów powstających z jednej jednostki wzoru soli.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Osad strąca się, gdy Q = Ksp.”</td><td class="col-ok" data-label="Poprawa">Osad strąca się, gdy Q > Ksp.</td><td data-label="Dlaczego">Równość Q i Ksp oznacza roztwór nasycony i stan równowagi.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Pominę wykładniki w Ksp.”</td><td class="col-ok" data-label="Poprawa">Dla AB₂ Ksp = [A²⁺]·[B⁻]².</td><td data-label="Dlaczego">Wykładniki wynikają ze stechiometrii równania rozpuszczania.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Wspólny jon zwiększa rozpuszczalność.”</td><td class="col-ok" data-label="Poprawa">Wspólny jon zmniejsza rozpuszczalność.</td><td data-label="Dlaczego">Dodanie jonu wspólnego przesuwa równowagę w stronę osadu.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Ksp zależy od stężenia jonów.”</td><td class="col-ok" data-label="Poprawa">Ksp zależy od temperatury, a w równowadze iloczyn stężeń jest stały.</td><td data-label="Dlaczego">Zmiana stężeń powoduje strącanie lub rozpuszczanie, ale nie zmienia Ksp w danej temperaturze.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Ksp można porównywać dla wszystkich soli.”</td><td class="col-ok" data-label="Poprawa">Bezpośrednie porównanie jest sensowne dla soli o tej samej stechiometrii.</td><td data-label="Dlaczego">Dla AB i AB₂ zależność między Ksp a s jest inna.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Osad nie ma nic wspólnego z roztworem.”</td><td class="col-ok" data-label="Poprawa">Nad osadem ustala się równowaga z jonami w roztworze.</td><td data-label="Dlaczego">Trudno rozpuszczalna sól rozpuszcza się w bardzo małym stopniu.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Q obliczam tylko w stanie równowagi.”</td><td class="col-ok" data-label="Poprawa">Q oblicza się dla dowolnego momentu.</td><td data-label="Dlaczego">Ksp jest wartością równowagową, a Q może być większe, mniejsze lub równe Ksp.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Ładunek jonu jest wykładnikiem w Ksp.”</td><td class="col-ok" data-label="Poprawa">Wykładnik wynika z liczby jonów w równaniu rozpuszczania.</td><td data-label="Dlaczego">Dla CaF₂ wykładnik 2 dotyczy dwóch jonów F⁻, a nie ładunku Ca²⁺.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Efekt wspólnego jonu zmienia Ksp.”</td><td class="col-ok" data-label="Poprawa">Efekt wspólnego jonu zmienia rozpuszczalność, nie Ksp.</td><td data-label="Dlaczego">Ksp pozostaje stałą równowagi w danej temperaturze.</td></tr></tbody></table>
+<div class="myth-grid"><div class="myth"><p class="myth-x"><span>Mit</span>„Trudno rozpuszczalna sól w ogóle nie rozpuszcza się w wodzie.”</p><p class="myth-ok"><span>Poprawnie</span>Rozpuszcza się w bardzo małym stopniu. Nad osadem istnieje równowaga z jonami w roztworze.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Im większe Ksp, tym zawsze większa rozpuszczalność.”</p><p class="myth-ok"><span>Poprawnie</span>Bezpośrednie porównanie jest poprawne tylko dla soli o tej samej stechiometrii. Dla AB i AB₂ zależność między Ksp a s różni się.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Dodanie NaCl zawsze zwiększa rozpuszczalność AgCl.”</p><p class="myth-ok"><span>Poprawnie</span>Dodanie Cl⁻, czyli wspólnego jonu, zmniejsza rozpuszczalność AgCl.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Ksp zależy od ilości osadu w naczyniu.”</p><p class="myth-ok"><span>Poprawnie</span>Ksp zależy od temperatury i rodzaju substancji. Ilość osadu wpływa na to, czy faza stała jest obecna, ale nie zmienia samej stałej.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Q można obliczyć tylko dla roztworu nasyconego.”</p><p class="myth-ok"><span>Poprawnie</span>Q oblicza się dla dowolnego układu, aby sprawdzić, czy osiągnął lub przekroczył warunek nasycenia.</p></div></div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">6</span> Ćwiczenia z kluczem {#cwiczenia} <span class="level-badge level-extra">LO</span></div>
+<p><strong>Ćwiczenie 1.</strong> Zapisz wyrażenia Ksp dla BaSO₄, CaF₂ i Ag₂CrO₄.</p>
+<details class="answer"><summary>Klucz</summary>
+<p>BaSO₄: Ksp = [Ba²⁺]·[SO₄²⁻].</p>
+<p>CaF₂: Ksp = [Ca²⁺]·[F⁻]².</p>
+<p>Ag₂CrO₄: Ksp = [Ag⁺]²·[CrO₄²⁻].</p>
+</details>
+<p><strong>Ćwiczenie 2.</strong> Oblicz s dla soli typu AB o Ksp = 4,0·10⁻⁸.</p>
+<details class="answer"><summary>Klucz</summary>
+<p>s = √Ksp = √(4,0·10⁻⁸) = 2,0·10⁻⁴ mol/dm³.</p>
+</details>
+<p><strong>Ćwiczenie 3.</strong> Czy strąci się AgCl, gdy [Ag⁺] = 1,0·10⁻⁵ mol/dm³ i [Cl⁻] = 1,0·10⁻⁵ mol/dm³? Ksp(AgCl) = 1,8·10⁻¹⁰.</p>
+<details class="answer"><summary>Klucz</summary>
+<p>Q = 1,0·10⁻⁵ · 1,0·10⁻⁵ = 1,0·10⁻¹⁰.</p>
+<p>Q &lt; Ksp, więc osad nie powstanie.</p>
+</details>
+<p><strong>Ćwiczenie 4.</strong> Dla soli typu AB₂ Ksp = 3,2·10⁻¹¹. Oblicz s.</p>
+<details class="answer"><summary>Klucz</summary>
+<p>s = ∛(Ksp/4) = ∛(3,2·10⁻¹¹/4) = ∛(8,0·10⁻¹²) = 2,0·10⁻⁴ mol/dm³.</p>
+</details>
+<p><strong>Ćwiczenie 5 — mini-test samodzielny.</strong> Odpowiedz bez zaglądania do lekcji: 1) Co to jest Ksp? 2) Zapisz Ksp dla AgCl. 3) Jak oblicza się s dla AB? 4) Kiedy osad strąca się? 5) Co robi efekt wspólnego jonu? Potem sprawdź odpowiedzi w diagnozie.</p>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">7</span> Słownik {#slownik} <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<dl><div class="def-item"><dt>Iloczyn rozpuszczalności Ksp</dt><dd>stała równowagi rozpuszczania trudno rozpuszczalnej soli.</dd></div><div class="def-item"><dt>Rozpuszczalność molowa s</dt><dd>stężenie nasyconego roztworu soli, wyrażone w mol/dm³.</dd></div><div class="def-item"><dt>Równowaga rozpuszczania</dt><dd>stan, w którym szybkość rozpuszczania jest równa szybkości krystalizacji.</dd></div><div class="def-item"><dt>Roztwór nasycony</dt><dd>roztwór, w którym Q = Ksp.</dd></div><div class="def-item"><dt>Roztwór nienasycony</dt><dd>roztwór, w którym Q &lt; Ksp.</dd></div><div class="def-item"><dt>Roztwór przesycony</dt><dd>roztwór, w którym Q > Ksp.</dd></div><div class="def-item"><dt>Iloczyn stężeń jonów Q</dt><dd>iloczyn aktualnych stężeń jonów, obliczany tak samo jak Ksp.</dd></div><div class="def-item"><dt>Warunek strącania</dt><dd>sytuacja, w której Q > Ksp i wydziela się osad.</dd></div><div class="def-item"><dt>Efekt wspólnego jonu</dt><dd>zmniejszenie rozpuszczalności soli po dodaniu jonu obecnego w jej równowadze rozpuszczania.</dd></div><div class="def-item"><dt>Osad</dt><dd>faza stała będąca w równowadze z jonami w roztworze.</dd></div><div class="def-item"><dt>Trudno rozpuszczalna sól</dt><dd>sól o bardzo małej rozpuszczalności, opisywana przez Ksp.</dd></div><div class="def-item"><dt>Stała równowagi</dt><dd>wielkość opisująca położenie równowagi w danej temperaturze.</dd></div><div class="def-item"><dt>Jon wspólny</dt><dd>jon obecny zarówno w równowadze rozpuszczania soli, jak i w dodanym odczynniku.</dd></div><div class="def-item"><dt>Krzystalizacja</dt><dd>proces tworzenia fazy stałej z jonów obecnych w roztworze.</dd></div><div class="def-item"><dt>Rozpuszczanie</dt><dd>proces przechodzenia substancji ze stanu stałego do roztworu.</dd></div></dl>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">8</span> Test {#test} <span class="level-badge level-extra">LO</span></div>
+<div class="che-quiz" id="quizWrap"><div class="quiz-q" data-ok="0" data-fb="Wykładnik 2 przy OH⁻ wynika z liczby jonów hydroksylowych powstających z jednej jednostki wzoru."><h5>1. Ksp dla soli Mg(OH)₂ dysocjującej według Mg(OH)₂ ⇌ Mg²⁺ + 2OH⁻ zapisujemy jako:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Ksp = [Mg²⁺]·[OH⁻]²</button><button type="button" class="quiz-opt" data-a="1">Ksp = [Mg²⁺]·[OH⁻]</button><button type="button" class="quiz-opt" data-a="2">Ksp = [Mg²⁺]²·[OH⁻]</button><button type="button" class="quiz-opt" data-a="3">Ksp = [Mg(OH)₂]</button></div></div><div class="quiz-q" data-ok="0" data-fb="Przesycenie roztworu prowadzi do wydzielania osadu."><h5>2. Osad strąca się, gdy:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Q > Ksp</button><button type="button" class="quiz-opt" data-a="1">Q &lt; Ksp</button><button type="button" class="quiz-opt" data-a="2">Q = 0</button><button type="button" class="quiz-opt" data-a="3">Ksp = 0</button></div></div><div class="quiz-q" data-ok="0" data-fb="Dodanie wspólnego jonu przesuwa równowagę w stronę osadu."><h5>3. Efekt wspólnego jonu:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">zmniejsza rozpuszczalność soli</button><button type="button" class="quiz-opt" data-a="1">zwiększa rozpuszczalność soli</button><button type="button" class="quiz-opt" data-a="2">nie zmienia rozpuszczalności soli</button><button type="button" class="quiz-opt" data-a="3">zmienia wartość Ksp</button></div></div><div class="quiz-q" data-ok="0" data-fb="Dla AB Ksp = s², więc s = √Ksp."><h5>4. Dla soli typu AB rozpuszczalność molowa wynosi:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">s = √Ksp</button><button type="button" class="quiz-opt" data-a="1">s = Ksp</button><button type="button" class="quiz-opt" data-a="2">s = Ksp²</button><button type="button" class="quiz-opt" data-a="3">s = 2·Ksp</button></div></div><div class="quiz-q" data-ok="0" data-fb="Dla soli o tym samym typie stechiometrycznym mniejsze Ksp oznacza mniejszą rozpuszczalność molową."><h5>5. Która sól typu AB ma najmniejszą rozpuszczalność?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">sól o Ksp = 1,0·10⁻¹²</button><button type="button" class="quiz-opt" data-a="1">sól o Ksp = 1,0·10⁻⁸</button><button type="button" class="quiz-opt" data-a="2">sól o Ksp = 1,0·10⁻⁴</button><button type="button" class="quiz-opt" data-a="3">rozpuszczalność zależy wyłącznie od temperatury</button></div></div><div class="quiz-q" data-ok="0" data-fb="Ksp jest stałą równowagi charakterystyczną dla substancji w danej temperaturze."><h5>6. Które zdanie jest poprawne?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Ksp zależy od temperatury</button><button type="button" class="quiz-opt" data-a="1">Ksp zależy od ilości osadu w naczyniu</button><button type="button" class="quiz-opt" data-a="2">Ksp zależy od stężenia jonów w dowolnym momencie</button><button type="button" class="quiz-opt" data-a="3">Ksp nie zależy od rodzaju substancji</button></div></div><div class="quiz-q" data-ok="0" data-fb="Dodanie wspólnego jonu przesuwa równowagę w stronę osadu."><h5>7. Co robi efekt wspólnego jonu w równowadze rozpuszczania?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">zmniejsza rozpuszczalność soli</button><button type="button" class="quiz-opt" data-a="1">zwiększa rozpuszczalność soli</button><button type="button" class="quiz-opt" data-a="2">nie zmienia rozpuszczalności soli</button><button type="button" class="quiz-opt" data-a="3">zmienia wartość Ksp</button></div></div></div><div class="quiz-score" id="quizScore"></div>
+</section>
+<section id="fiszki">
+<div class="part-heading"><span class="part-num">7a</span> Fiszki</div>
+<div id="flashcards" class="flashcard-grid"><button class="flashcard" type="button"><span class="front">Co to Ksp?</span><span class="back">iloczyn rozpuszczalności, stała równowagi rozpuszczania</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Ksp dla AgCl?</span><span class="back">[Ag⁺][Cl⁻]</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Wzór na s dla AB?</span><span class="back">s = √Ksp</span><span class="card-tag tag-extra">LO</span></button><button class="flashcard" type="button"><span class="front">Kiedy osad się strąca?</span><span class="back">gdy Q > Ksp</span><span class="card-tag tag-understand">rozumienie</span></button><button class="flashcard" type="button"><span class="front">Co robi efekt wspólnego jonu?</span><span class="back">zmniejsza rozpuszczalność</span><span class="card-tag tag-understand">rozumienie</span></button></div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">8a</span> Test — pytania uzupełniające {#test-uzupelnienie} <span class="level-badge level-extra">LO</span></div>
+<div class="che-quiz" id="quizWrap"><div class="quiz-q" data-ok="1" data-fb="Wykładnik 2 przy OH⁻ wynika z indeksu."><h5>1. Ksp dla soli Mg(OH)₂ (Mg²⁺ i 2OH⁻) zapisujemy jako:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">[Mg²⁺][OH⁻]</button><button type="button" class="quiz-opt" data-a="1">[Mg²⁺][OH⁻]²</button><button type="button" class="quiz-opt" data-a="2">[Mg²⁺]²[OH⁻]</button><button type="button" class="quiz-opt" data-a="3">[Mg²⁺][OH⁻]/2</button></div></div><div class="quiz-q" data-ok="1" data-fb="Przesycenie prowadzi do strącania."><h5>2. Osad strąca się, gdy:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Q &lt; Ksp</button><button type="button" class="quiz-opt" data-a="1">Q > Ksp</button><button type="button" class="quiz-opt" data-a="2">Q = 0</button><button type="button" class="quiz-opt" data-a="3">Ksp = 0</button></div></div><div class="quiz-q" data-ok="1" data-fb="Równowaga przesuwa się w stronę osadu."><h5>3. Efekt wspólnego jonu:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">zwiększa rozpuszczalność</button><button type="button" class="quiz-opt" data-a="1">zmniejsza rozpuszczalność</button><button type="button" class="quiz-opt" data-a="2">nie zmienia rozpuszczalności</button><button type="button" class="quiz-opt" data-a="3">zmienia Ksp</button></div></div><div class="quiz-q" data-ok="1" data-fb="Z Ksp = s² wynika s = √Ksp."><h5>4. Dla AB rozpuszczalność molowa to:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Ksp</button><button type="button" class="quiz-opt" data-a="1">√Ksp</button><button type="button" class="quiz-opt" data-a="2">Ksp/2</button><button type="button" class="quiz-opt" data-a="3">2 · Ksp</button></div></div><div class="quiz-q" data-ok="1" data-fb="Mniejsze Ksp oznacza mniejsze s."><h5>5. Która sól ma najmniejszą rozpuszczalność przy tym samym typie AB?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">sól o Ksp = 10⁻⁴</button><button type="button" class="quiz-opt" data-a="1">sól o Ksp = 10⁻¹²</button><button type="button" class="quiz-opt" data-a="2">sól o Ksp = 10⁻⁶</button><button type="button" class="quiz-opt" data-a="3">zależy tylko od temperatury</button></div></div></div><div class="quiz-score" id="quizScore"></div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">9</span> Checklista {#checklista} <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<checklista>
+<ul>
+<li>[ ] umiem zapisać Ksp dla soli z indeksami</li>
+<li>[ ] umiem obliczyć s dla AB i AB₂</li>
+<li>[ ] umiem sprawdzić warunek strącania, porównując Q z Ksp</li>
+<li>[ ] umiem wyjaśnić efekt wspólnego jonu</li>
+<li>[ ] umiem odróżnić Ksp od tabeli rozpuszczalności</li>
+<li>[ ] umiem wyjaśnić, dlaczego osad nie znika całkowicie w wodzie</li>
+<li>[ ] umiem rozróżnić roztwór nasycony, nienasycony i przesycony</li>
+<li>[ ] umiem wskazać wpływ temperatury na Ksp</li>
+</ul>
+</checklista>
+<h3 id="audyt-ulepsz">AUDYT — Perplexity, 2026-10-13</h3>
+<p><strong>Poprawione:</strong>
+- Frontmatter: dodano uid, uzupełniono kicker, opis, plakietki i stopkę; zmieniono stan na „ULEPSZONA — Perplexity, 2026-10-13; do sprawdzenia”.
+- Minimum: „Ksp = A·B” → pełny zapis Ksp = [A⁺]·[B⁻] dla AB.
+- Minimum: „dla AB₂ Ksp = 4s” → poprawny zapis Ksp = 4s³.
+- Minimum: „małe Ksp oznacza substancję trudno rozpuszczalną” → doprecyzowano porównanie tylko w obrębie soli o tej samej stechiometrii.
+- Minimum: „Ksp zwykle rośnie z T” → doprecyzowano zależność od temperatury bez twierdzenia o zawsze rosnącej wartości.
+- Wykład: „trudno rozpuszczalny osad nie znika całkowicie” → wyjaśniono równowagę rozpuszczania i krystalizacji.
+- Wykład: „z tabeli wiesz tylko tak lub nie” → doprecyzowano różnicę między jakościową tabelą a ilościowym Ksp.
+- §2: poprawiono zapis ogólny Ksp dla soli AₘBₙ i wyjaśniono pochodzenie wykładników.
+- §2: rozdzielono ładunek jonu od liczby jonów powstających z jednostki wzoru.
+- §3: „Q > Ksp oznacza strącanie” → dodano wyjaśnienie, że Q maleje do Ksp po wydzieleniu osadu.
+- §4: poprawiono obliczenia i doprecyzowano jednostkę rozpuszczalności molowej.
+- Test: „Ksp = MgOH” → poprawny zapis Ksp = [Mg²⁺]·[OH⁻]².
+- Test: „s = Ksp” → poprawny zapis s = √Ksp dla AB.</p>
+<p><strong>Dodane:</strong>
+- §0.1–§0.4: cel, kompas, diagnoza z kluczem i interpretacją wyniku.
+- §1: pełny wykład od zera o równowadze między fazą stałą a roztworem.
+- §2: tabela typów soli, zapis ogólny Ksp, przykłady AgCl, BaSO₄, CaF₂ i Ag₂CrO₄.
+- §2: wyjaśnienie różnicy między indeksem, ładunkiem i wykładnikiem w Ksp.
+- §3: porównanie Q z Ksp, tabela stanów roztworu oraz efekt wspólnego jonu.
+- §4: cztery przykłady prowadzone z obliczeniami.
+- §5: klinika 10 błędów i 6 mitów.
+- §6: ćwiczenia z kluczem i mini-test samodzielny.
+- §7: słownik 15 haseł.
+- §8: test 6 pytań.
+- §9: checklista.</p>
+<p><strong>Niepewne / do weryfikacji:</strong>
+- Zakres konkretnego konkursu chemicznego nie został określony w paczce, dlatego wymagania konkursowe opisano ogólnie.
+- Wartości Ksp zależą od temperatury; w zadaniach należy stosować dane podane przez autora polecenia.
+- Porównywanie Ksp różnych soli wymaga uwzględnienia stechiometrii; w lekcji ograniczono to twierdzenie do soli o tym samym typie.</p>
+<p><strong>Proponuję usunąć:</strong>
+- Brak.</p>
+<p><strong>Źródła:</strong>
+- Dostarczona paczka: lekcja J10.
+- Zintegrowana Platforma Edukacyjna — materiały o równowagach rozpuszczania i strącaniu osadów.</p>
+<p><strong>Grafiki do zrobienia:</strong></p>
+<div class="table-wrap"><table>
+<thead><tr><th>Gdzie</th><th>Rodzaj</th><th>Co pokazuje</th><th>Wniosek</th><th>@opis</th></tr></thead>
+<tbody>
+<tr><td>§1, po równaniu AgCl(s) ⇌ Ag⁺ + Cl⁻</td><td>animacja „tam i z powrotem”</td><td>rozpuszczanie jonów z kryształu i ich powrót do fazy stałej</td><td>Trudno rozpuszczalna sól ustala równowagę z jonami w roztworze</td><td>Animacja pokazuje kryształ AgCl, z którego przechodzą pojedyncze jony Ag⁺ i Cl⁻, a następnie część z nich wraca do kryształu. Po ustaleniu równowagi obie szybkości są równe.</td></tr>
+<tr><td>§2, po tabeli typów soli</td><td>schemat statyczny</td><td>zależność między wzorem soli, liczbą jonów i wyrażeniem Ksp</td><td>Wykładniki w Ksp wynikają ze stechiometrii</td><td>Trzy karty przedstawiają AB, AB₂ i A₂B. Przy każdej znajdują się równanie rozpuszczania, wyrażenie Ksp oraz związek z rozpuszczalnością molową s.</td></tr>
+<tr><td>§3, po porównaniu Q z Ksp</td><td>model interaktywny z suwakiem</td><td>zmiana Q przy zwiększaniu stężenia jednego jonu</td><td>Osad powstaje dopiero po przekroczeniu Ksp</td><td>Suwak zmienia stężenie Cl⁻ przy stałym [Ag⁺]. Wyświetlane są Q, Ksp oraz stan: nienasycony, nasycony albo przesycony. Po przekroczeniu Ksp pojawia się osad.</td></tr>
+<tr><td>§3, przy efekcie wspólnego jonu</td><td>animacja „tam i z powrotem”</td><td>dodanie NaCl do nasyconego roztworu AgCl i przesunięcie równowagi</td><td>Wspólny jon zmniejsza rozpuszczalność soli</td><td>Animacja pokazuje wzrost [Cl⁻] po dodaniu NaCl, wzrost Q powyżej Ksp i powstawanie dodatkowego AgCl. Równowaga przesuwa się w stronę fazy stałej.</td></tr>
+</tbody></table></div>
+</section>
+<section id="ciekawostki">
+<div class="part-heading"><span class="part-num">10</span> Ciekawostki</div>
+<div class="card card-extra">
+<span class="card-label">Dlaczego kamień w czajniku się odkłada?</span>
+<p>Woda twarda zawiera jony wapnia i węglanowe. Po ogrzaniu część CO₂ ucieka, a węglan wapnia przekracza iloczyn rozpuszczalności i osadza się jako kamień. To warunek strącania w praktyce.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Mikroskopijne rozpuszczanie zębów</span>
+<p>Szkliwo zębów zawiera fosforany wapnia o małym Ksp. Kwaśne napoje zwiększają rozpuszczanie, bo jony H⁺ wiążą część anionów fosforanowych i przesuwają równowagę.</p>
+</div>
+</section>
+<section id="wyklad">
+<div class="part-heading"><span class="part-num">11</span> Wykład — równowaga między stałą solą a roztworem</div>
+<div class="card card-understand">
+<span class="card-label">Wykład — od zera: co to znaczy „trudno rozpuszczalny”</span>
+<p>Sól trudno rozpuszczalna nie znika całkowicie w wodzie. Część jej powierzchni rozpuszcza się, a jony z roztworu wracają do osadu. Ustala się równowaga, a stężenia jonów są bardzo małe. Ksp to iloczyn tych stężeń w stanie równowagi.</p>
+<p>Dlatego Ksp jest tak użyteczne. Nie musisz pamiętać, ile soli się rozpuści w każdym przypadku. Wystarczy jedna wartość i prosty rachunek. Z tabeli z J04 wiesz tylko „tak” lub „nie”; z Ksp znasz liczbę.</p>
+<p><strong>Mini-wykład: po co potęgi.</strong> Wykładniki w Ksp wynikają z liczby jonów w jednostce wzoru. Dla AB₂ w roztworze są dwa aniony na jeden kation, więc iloczyn zawiera [B⁻]². To ta sama logika, którą znasz z równań.</p>
+<p><strong>Mini-wykład: Q a Ksp.</strong> Q to iloczyn stężeń, który mierzysz w danym momencie. Ksp to wartość w stanie równowagi. Porównanie obu pokazuje, czy układ będzie tworzył osad, czy się rozpuszczał.</p>
+</div>
+<div class="card card-core">
+<span class="card-label">W skrócie — strącanie ilościowo</span>
+<p>Osad powstaje, gdy iloczyn stężeń jonów Q przekroczy Ksp; rozpuszczalność molową liczymy z Ksp, a wspólny jon ją zmniejsza.</p>
+</div>
+</section>
+<section id="checklista">
+<div class="part-heading"><span class="part-num">12</span> Checklista — umiem…</div>
+<checklista>
+<ul>
+<li>[ ] zapisać Ksp dla soli z indeksami;</li>
+<li>[ ] obliczyć s dla AB i AB₂;</li>
+<li>[ ] sprawdzić warunek strącania, porównując Q z Ksp;</li>
+<li>[ ] wyjaśnić efekt wspólnego jonu;</li>
+<li>[ ] odróżnić Ksp od tabeli rozpuszczalności.</li>
+</ul>
+</checklista>
+</section>
+<footer class="footer"><p>CHEMIA J10 · Iloczyn rozpuszczalności Ksp · Materiał do samodzielnej nauki · 2026</p></footer>
+</main>
+<script>
+/* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
+   postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
+(function(){
+var html=document.documentElement;
+function ciemny(){var t=html.getAttribute('data-theme');return t?t==='dark':!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function oznacz(){if(ciemny())html.setAttribute('data-ciemny','');else html.removeAttribute('data-ciemny')}
+try{var z=localStorage.getItem('lekcja-motyw');if(z)html.setAttribute('data-theme',z)}catch(e){}
+oznacz();if(window.matchMedia)try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',oznacz)}catch(e){}
+
+function start(){
+var root=document;
+root.querySelectorAll('.flashcard').forEach(function(b){if(b.dataset.lkFz)return;b.dataset.lkFz=1;b.removeAttribute('onclick');b.setAttribute('aria-pressed','false');
+ b.addEventListener('click',function(){var on=b.classList.toggle('flipped');b.setAttribute('aria-pressed',on?'true':'false')})});
+root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibling,ok=0,n=0,all=w.querySelectorAll('.quiz-q').length;
+ if(sc&&sc.classList.contains('quiz-score'))sc.setAttribute('aria-live','polite');
+ w.querySelectorAll('.quiz-q').forEach(function(d){var good=+d.dataset.ok;d.querySelectorAll('.quiz-opt').forEach(function(b){b.onclick=function(){if(d.dataset.done)return;d.dataset.done=1;n++;if(+b.dataset.a===good)ok++;
+  d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
+  if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
+  if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var b=root.querySelector('#advToggle');
+if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
+ if(!k)b.style.display='none';
+ b.textContent='Pokaż treści akademickie ('+k+')';
+ b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';adv().forEach(function(d){d.open=on});b.setAttribute('aria-pressed',on?'true':'false');b.textContent=(on?'Ukryj':'Pokaż')+' treści akademickie ('+k+')'}}
+// spis zwinięty na telefonie
+var sp=root.querySelector('#spis');if(sp&&window.innerWidth<700)sp.removeAttribute('open');
+// przełącznik jasny/ciemny
+var tb=root.querySelector('#lkMotyw');
+if(tb)tb.onclick=function(){var t=ciemny()?'light':'dark';html.setAttribute('data-theme',t);try{localStorage.setItem('lekcja-motyw',t)}catch(e){}oznacz()};
+// postęp czytania + aktywna sekcja w spisie
+var bar=root.querySelector('.lk-prog'),links={},secs=[];
+root.querySelectorAll('.toc-link[href^="#"]').forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1));if(s){links[s.id]=a;secs.push(s)}});
+var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+ if(bar)bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';
+ var cur=null,lim=(parseInt(getComputedStyle(h).getPropertyValue('--header-h'))||52)+40;
+ for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
+ for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// fiszki: pokazuje pierwsze N (domyślnie 6, atrybut data-fz-pierwsze="N"), reszta po wyraźnym przycisku
+root.querySelectorAll('.flashcard-grid').forEach(function(g){
+ var cards=[].slice.call(g.querySelectorAll('.flashcard')),N=+(g.getAttribute('data-fz-pierwsze')||6);
+ if(!(N>0)||cards.length<=N)return;
+ var ukryte=cards.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more';
+ function lab(on){ukryte.forEach(function(c){c.hidden=!on});
+  b.textContent=on?'▲ Zwiń fiszki':'▼ Pokaż pozostałe '+ile+' fiszek (razem '+cards.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ g.insertAdjacentElement('afterend',b);
+});
+// testy: pokazuje pierwsze N pytań (domyślnie 5, atrybut data-q-pierwsze), reszta po wyraźnym przycisku
+root.querySelectorAll('.che-quiz').forEach(function(w){
+ var qs=[].slice.call(w.querySelectorAll('.quiz-q')),N=+(w.getAttribute('data-q-pierwsze')||5);
+ if(!(N>0)||qs.length<=N)return;
+ var ukryte=qs.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more q-more';
+ function lab(on){ukryte.forEach(function(q){q.hidden=!on});
+  b.textContent=on?'▲ Zwiń pytania':'▼ Pokaż pozostałe '+ile+(ile===1?' pytanie':(ile<5?' pytania':' pytań'))+' (razem '+qs.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ var sc=w.nextElementSibling;(sc&&sc.classList.contains('quiz-score')?sc:w).insertAdjacentElement('afterend',b);
+});
+// grafiki przedmiotu
+if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
+if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="pl" data-przedmiot="che">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>LKO-Z36 · Konfiguracje elektronowe do Z = 36 i jony</title>
+<style id="lekcja-css">
+/* baza.css — wspólna baza lekcji wszystkich przedmiotów (styl lekcji silnika CHE v0_57). Nie edytować — zmiany wspólne w ulepszenia.css, przedmiotowe w motywy/<kod>.css. */
+
+
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+--bg:#fafbfc;--surface:#ffffff;--surface-soft:#f6f8fa;--surface-warm:#fdfaf4;--border:#e5e9ee;--border-strong:#cdd5dd;
+--text:#1a2332;--text-soft:#4a5568;--text-muted:#8892a0;--text-faint:#b4bcc6;
+--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,0.15);
+--c-basic:#2e7d4f;--c-basic-bg:#eaf6ee;--c-basic-line:#b8dcc4;
+--c-understand:#2b5e9c;--c-understand-bg:#eaf1f9;--c-understand-line:#bcd0e5;
+--c-warn:#b06f1c;--c-warn-bg:#fcf4e6;--c-warn-line:#eed8a8;
+--c-error:#b83a45;--c-error-bg:#fbeced;--c-error-line:#e8b5b9;
+--c-extra:#6b3fa0;--c-extra-bg:#f3ecfa;--c-extra-line:#d3bde8;
+--c-new:#0d7d7d;--c-new-bg:#e6f4f4;--c-new-line:#b0dcdc;
+--c-exam:#a86a00;--c-exam-bg:#fdf5e0;--c-exam-line:#eed49c;
+--sh-sm:0 1px 2px rgba(26,35,50,0.04);--sh-md:0 4px 12px rgba(26,35,50,0.06);--sh-lg:0 12px 32px rgba(26,35,50,0.10);--sh-xl:0 20px 48px rgba(26,35,50,0.14);
+--r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;
+--header-h:56px;
+--ease:cubic-bezier(0.4,0,0.2,1);--ease-out:cubic-bezier(0.16,1,0.3,1);
+--hl-key:#0d6868;--hl-key-bg:#d8ecea;--hl-warn:#b83a45;--hl-warn-bg:#fbe0e2;--hl-new:#6b3fa0;--hl-new-bg:#ede0f8;--hl-formula:#084848;--hl-formula-bg:#e0eeed;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;padding:calc(var(--header-h) + 12px) 0 88px;min-height:100vh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+@media(min-width:600px){body{padding:calc(var(--header-h) + 18px) 12px 96px;}}
+@media(min-width:768px){body{padding:calc(var(--header-h) + 24px) 20px 100px;}}
+@media(min-width:1100px){body{padding:calc(var(--header-h) + 28px) 32px 110px;}}
+.fab{position:fixed;top:12px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);background:rgba(255,255,255,0.94);color:var(--text);cursor:pointer;border-radius:var(--r-md);padding:0;transition:all 0.2s var(--ease);z-index:1200;box-shadow:var(--sh-sm);backdrop-filter:blur(8px);}
+.fab:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);box-shadow:var(--sh-md);transform:translateY(-1px);}
+.fab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.fab-left{left:6px;}.fab-right{right:6px;}
+@media(min-width:600px){.fab-left{left:10px;}.fab-right{right:10px;}}
+@media(min-width:768px){.fab-left{left:14px;}.fab-right{right:14px;}}
+.fab-left::after{content:'';width:16px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;border-radius:1px;transition:transform 0.25s var(--ease);}
+.fab-left.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.fab-left.is-open::after{width:16px;height:2px;background:currentColor;box-shadow:none;transform:rotate(45deg);}
+.fab-left.is-open::before{content:'';position:absolute;width:16px;height:2px;background:currentColor;transform:rotate(-45deg);border-radius:1px;}
+.fab-right::after{content:'';display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:8px solid currentColor;transition:transform 0.35s var(--ease-out);}
+.fab-right.is-hidden::after{transform:rotate(0deg);}
+.fab-right:not(.is-hidden)::after{transform:rotate(180deg);}
+.header-wrapper{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);transform:translateY(0);transition:transform 0.45s var(--ease-out),box-shadow 0.3s var(--ease);box-shadow:var(--sh-sm);}
+.header-wrapper.is-hidden{transform:translateY(-100%);box-shadow:none;}
+.header-bar{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:0 16px;height:var(--header-h);}
+@media(min-width:768px){.header-bar{padding:0 24px;}}
+.header-subject{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:1px;padding:4px 10px;background:var(--accent-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;}
+.header-title{font-size:15px;font-weight:700;color:var(--text);letter-spacing:-0.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1 1 auto;min-width:0;}
+.header-lesson{font-size:10px;font-weight:800;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.7px;padding:4px 9px;background:var(--surface-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;font-family:'JetBrains Mono',monospace;}
+.header-nav{display:flex;gap:2px;flex-shrink:0;align-items:center;}
+.header-nav a,.header-nav button{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;border-radius:var(--r-sm);font-size:16px;font-weight:500;transition:all 0.2s var(--ease);border:1px solid transparent;background:transparent;cursor:pointer;padding:0;font-family:inherit;}
+.header-nav a:hover,.header-nav button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.header-resume-btn.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.header-resume-btn::before{content:'▮';font-size:14px;line-height:1;}
+.header-panel{display:none;border-top:1px solid var(--border);background:linear-gradient(180deg,var(--surface) 0%,var(--surface-soft) 100%);padding:20px 16px 24px;}
+@media(min-width:768px){.header-panel{padding:24px 24px 28px;}}
+.header-panel.is-open{display:block;}
+.header-panel-inner{max-width:900px;margin:0 auto;}
+.header-kicker{font-size:11px;color:var(--text-muted);text-transform:uppercase;font-weight:800;letter-spacing:1px;margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.header-kicker::before{content:'';width:24px;height:2px;background:var(--accent);display:inline-block;border-radius:1px;}
+.header-h1{font-size:32px;font-weight:800;color:var(--text);letter-spacing:-1px;margin-bottom:10px;line-height:1.1;}
+.header-subtitle{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:18px;max-width:720px;}
+.header-modes{display:flex;gap:6px;flex-wrap:wrap;}
+.mode-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 15px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);font-family:inherit;}
+.mode-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
+.mode-btn:hover:not(.active){background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.resume-dropdown{display:none;position:fixed;top:calc(var(--header-h) + 6px);right:14px;z-index:1050;width:min(300px,calc(100vw - 30px));padding:14px;border:1px solid var(--border-strong);border-radius:12px;background:#fff;box-shadow:var(--sh-lg);}
+.resume-dropdown.is-open{display:block;}
+.resume-dropdown h4{margin:0 0 5px;color:var(--text);font-size:.85rem;}
+.resume-dropdown p{margin:0 0 12px;color:var(--text-muted);font-size:.75rem;line-height:1.5;}
+.resume-actions{display:flex;gap:6px;}
+.resume-actions button{flex:1;padding:8px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text-soft);font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.resume-actions .resume-save{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toc-overlay{position:fixed;inset:0;background:rgba(26,35,50,0.34);backdrop-filter:blur(3px);z-index:1100;opacity:0;visibility:hidden;transition:opacity 0.3s var(--ease),visibility 0.3s var(--ease);}
+.toc-overlay.is-visible{opacity:1;visibility:visible;}
+.toc-wrapper{position:fixed;left:0;top:0;width:320px;max-width:86vw;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:1150;transform:translateX(-100%);transition:transform 0.4s var(--ease-out);padding-top:64px;box-shadow:var(--sh-xl);}
+.toc-wrapper.is-open{transform:translateX(0);}
+.toc-content{padding:12px 14px 100px;}
+.toc-header{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);padding:4px 12px 12px;}
+.toc-item{margin-bottom:4px;border-radius:var(--r-md);overflow:hidden;}
+.toc-summary{padding:10px 12px;font-size:13px;font-weight:700;color:var(--text);cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;border-radius:var(--r-sm);transition:background 0.2s var(--ease),color 0.2s var(--ease);user-select:none;}
+.toc-summary:hover{background:var(--accent-soft);color:var(--accent);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::marker{content:'';}
+.toc-summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);opacity:0.5;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);opacity:1;}
+.toc-links{padding:4px 0 8px 28px;display:flex;flex-direction:column;gap:1px;}
+.toc-link{display:block;padding:6px 10px;font-size:12.5px;color:var(--text-soft);text-decoration:none;border-radius:4px;transition:all 0.2s var(--ease);border-left:2px solid transparent;}
+.toc-link:hover{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);}
+.container{max-width:820px;margin:0 auto;background:var(--surface);border-radius:0;box-shadow:none;padding:18px 12px;border:none;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+@media(min-width:600px){.container{border-radius:var(--r-lg);box-shadow:var(--sh-md);border:1px solid var(--border);padding:22px 18px;}}
+@media(min-width:768px){.container{padding:36px 36px;border-radius:var(--r-xl);}}
+@media(min-width:1100px){.container{max-width:840px;padding:40px 40px;}}
+h1,h2,h3,h4,h5{font-weight:800;color:var(--text);letter-spacing:-0.3px;line-height:1.3;}
+h2{font-size:24px;margin-top:44px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+h3{font-size:17px;margin-top:32px;margin-bottom:12px;font-weight:800;}
+h4{font-size:15px;margin-top:24px;margin-bottom:10px;font-weight:800;}
+h5{font-size:13px;margin-top:16px;margin-bottom:8px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-soft);}
+p{margin-bottom:12px;}
+ul,ol{padding-left:24px;margin-bottom:14px;}
+li{margin-bottom:6px;padding-left:4px;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s var(--ease);}
+a:hover{border-bottom-color:var(--accent);}
+strong{font-weight:700;color:var(--text);}
+.hl{background:var(--hl-key-bg);color:var(--hl-key);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-warn{background:var(--hl-warn-bg);color:var(--hl-warn);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-new{background:var(--hl-new-bg);color:var(--hl-new);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.formula{display:inline-block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:14px;font-weight:600;color:var(--hl-formula);background:var(--hl-formula-bg);padding:4px 12px;border-radius:var(--r-sm);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:3px 2px;white-space:nowrap;}
+.formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
+code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
+pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
+.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
+.mnemonic b{color:#78350f;}
+.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
+@media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
+.card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
+.card-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:10px;padding:3px 9px;background:var(--accent-soft);border-radius:4px;}
+.card-core{background:var(--accent-soft);border-color:var(--accent-line);border-left-color:var(--accent);}
+.card-basic{background:var(--c-basic-bg);border-color:var(--c-basic-line);border-left-color:var(--c-basic);}
+.card-basic .card-label{background:rgba(46,125,79,0.12);color:var(--c-basic);}
+.card-understand{background:var(--c-understand-bg);border-color:var(--c-understand-line);border-left-color:var(--c-understand);}
+.card-understand .card-label{background:rgba(43,94,156,0.12);color:var(--c-understand);}
+.card-warning{background:var(--c-warn-bg);border-color:var(--c-warn-line);border-left-color:var(--c-warn);}
+.card-warning .card-label{background:rgba(176,111,28,0.12);color:var(--c-warn);}
+.card-error{background:var(--c-error-bg);border-color:var(--c-error-line);border-left-color:var(--c-error);}
+.card-error .card-label{background:rgba(184,58,69,0.12);color:var(--c-error);}
+.card-extra{background:var(--c-extra-bg);border-color:var(--c-extra-line);border-left-color:var(--c-extra);}
+.card-extra .card-label{background:rgba(107,63,160,0.12);color:var(--c-extra);}
+.card-new{background:var(--c-new-bg);border-color:var(--c-new-line);border-left-color:var(--c-new);}
+.card-new .card-label{background:rgba(13,125,125,0.12);color:var(--c-new);}
+.card-exam{background:var(--c-exam-bg);border-color:var(--c-exam-line);border-left-color:var(--c-exam);}
+.card-exam .card-label{background:rgba(168,106,0,0.12);color:var(--c-exam);}
+.card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0;}
+details.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent-line);border-radius:var(--r-sm);padding:10px 14px;margin:10px 0;transition:all 0.2s var(--ease);}
+details.answer[open]{background:var(--accent-soft);border-left-color:var(--accent);}
+details.answer summary{cursor:pointer;font-weight:700;color:var(--text-soft);font-size:13px;list-style:none;user-select:none;display:flex;align-items:center;gap:10px;transition:color 0.2s var(--ease);}
+details.answer summary::-webkit-details-marker{display:none;}
+details.answer summary::marker{content:'';}
+details.answer summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer[open] summary{color:var(--accent);}
+details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}
+.part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}
+@media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}
+.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
+@media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}
+.table-wrap th,.table-wrap td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px;}
+@media(min-width:600px){.table-wrap th,.table-wrap td{padding:10px 12px;font-size:13.5px;}}
+.table-wrap th{background:var(--surface-soft);font-weight:800;color:var(--text-soft);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;}
+@media(min-width:600px){.table-wrap th{font-size:11px;letter-spacing:0.7px;white-space:nowrap;}}
+.table-wrap.table-compact td,.table-wrap.table-compact th{padding:7px 6px;font-size:12.5px;}
+.table-wrap tr:last-child td{border-bottom:none;}
+.table-wrap tr:hover td{background:var(--accent-soft);}
+.table-wrap .error-row{background:var(--c-error-bg);}
+.table-wrap .ok-row{background:var(--c-basic-bg);}
+.def-list{display:flex;flex-direction:column;gap:8px;margin:14px 0;}
+.def-item{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px 16px;}
+.def-item dt{font-weight:800;color:var(--text);font-size:13.5px;margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+.def-item dt::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;}
+.def-item dd{color:var(--text-soft);font-size:13.5px;line-height:1.6;margin:0;padding-left:11px;}
+.minimum-card{background:linear-gradient(135deg,var(--surface-soft) 0%,var(--accent-soft) 100%);border:1px solid var(--accent-line);border-radius:var(--r-lg);padding:20px 22px;margin:8px 0 28px;box-shadow:var(--sh-sm);position:relative;overflow:hidden;}
+@media(min-width:768px){.minimum-card{padding:28px 34px;margin-bottom:36px;}}
+.minimum-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:var(--accent);}
+.minimum-card h3{color:var(--accent);margin:0 0 16px;font-size:16px;letter-spacing:0.2px;display:flex;align-items:center;gap:10px;}
+.minimum-card h3::before{content:'★';font-size:16px;}
+.minimum-card ol{margin:0;padding-left:0;list-style:none;counter-reset:min-list;}
+.minimum-card li{counter-increment:min-list;padding-left:36px;position:relative;margin-bottom:12px;font-size:14px;line-height:1.6;}
+.minimum-card li::before{content:counter(min-list);position:absolute;left:0;top:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--surface);color:var(--accent);border:2px solid var(--accent-line);border-radius:50%;font-size:12px;font-weight:800;}
+.minimum-card li:last-child{margin-bottom:0;}
+.level-badge{display:inline-block;font-size:9.5px;font-weight:800;text-transform:uppercase;padding:2px 9px;border-radius:12px;vertical-align:middle;letter-spacing:0.5px;line-height:1.6;margin-left:8px;}
+.level-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.level-understand{background:var(--c-understand-bg);color:var(--c-understand);}
+.level-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.level-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.level-new{background:var(--c-new-bg);color:var(--c-new);}
+.rule-box{background:var(--c-understand-bg);border:1px solid var(--c-understand-line);border-radius:var(--r-md);padding:14px 18px;margin:14px 0;font-size:14px;line-height:1.65;}
+.rule-box b{color:var(--c-understand);}
+.step-flow{background:var(--text);color:#fff;padding:16px 18px;border-radius:var(--r-md);font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:12.5px;line-height:1.9;margin:14px 0;overflow-x:auto;white-space:pre;}
+@media(min-width:768px){.step-flow{font-size:13.5px;padding:16px 20px;}}
+.footer{margin-top:56px;padding-top:24px;border-top:2px solid var(--border);text-align:center;font-size:12.5px;color:var(--text-muted);letter-spacing:0.2px;}
+.footer p{margin-bottom:4px;}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:6px;border:2px solid var(--bg);}
+::-webkit-scrollbar-thumb:hover{background:var(--text-muted);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.bottom-nav{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:1100;width:min(700px,calc(100vw - 24px));font-size:.78rem;}
+.bottom-nav__toggle{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;padding:8px 14px;border:1px solid var(--border-strong);border-radius:999px;background:rgba(255,255,255,.97);color:var(--text-soft);font:700 .72rem inherit;box-shadow:0 5px 18px rgba(15,23,42,.14);cursor:pointer;backdrop-filter:blur(10px);font-family:inherit;}
+.bottom-nav__panel{display:none;margin-bottom:7px;padding:10px;border:1px solid var(--border-strong);border-radius:14px;background:rgba(255,255,255,.98);box-shadow:0 10px 28px rgba(15,23,42,.16);backdrop-filter:blur(12px);}
+.bottom-nav.is-open .bottom-nav__panel{display:block;}
+.bottom-nav__primary{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.bottom-nav a,.bottom-nav button.nav-more{min-height:36px;display:flex;align-items:center;justify-content:center;padding:6px 8px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--text-soft);text-decoration:none;font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.bottom-nav a:hover,.bottom-nav button.nav-more:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+@media(max-width:420px){
+  .bottom-nav{font-size:.7rem;width:calc(100vw - 12px);}
+  .bottom-nav a,.bottom-nav button.nav-more{padding:6px 4px;font-size:.65rem;}
+}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
+.widget{background:var(--surface);border:2px solid var(--border);border-radius:var(--r-md);padding:14px;margin:14px 0;box-shadow:var(--sh-sm);}
+@media(min-width:768px){.widget{padding:22px 26px;margin:20px 0;border-radius:var(--r-lg);}}
+.widget h4{margin:0 0 8px;color:var(--text);font-size:15px;font-weight:800;}
+@media(min-width:768px){.widget h4{font-size:16px;}}
+.widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
+.bld-pool{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.bld-pool button{padding:6px 12px;border:1px solid var(--border);border-radius:20px;background:#fff;font:600 0.8rem inherit;cursor:pointer;font-family:inherit;color:var(--text);}
+.bld-pool button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bld-workspace{min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;}
+.bld-feedback,.re-result,.st-feedback,.ch-feedback{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;line-height:1.5;}
+.bld-feedback.ok,.re-result.ok,.st-feedback.ok,.ch-feedback.ok{background:var(--c-basic-bg);color:var(--c-basic);border:1px solid var(--c-basic-line);}
+.bld-feedback.bad,.re-result.bad,.st-feedback.bad,.ch-feedback.bad{background:var(--c-error-bg);color:var(--c-error);border:1px solid var(--c-error-line);}
+.bld-feedback.info,.re-result.info,.st-feedback.info,.ch-feedback.info{background:var(--c-understand-bg);color:var(--c-understand);border:1px solid var(--c-understand-line);}
+.bld-feedback.warn,.re-result.warn,.st-feedback.warn,.ch-feedback.warn{background:var(--c-warn-bg);color:var(--c-warn);border:1px solid var(--c-warn-line);}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);color:var(--text);font-family:inherit;}
+.btn:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent);}
+.btn-primary:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+.btn-sm{padding:6px 10px;font-size:12px;}
+.flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}
+@media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--border);border-radius:var(--r-md);background:#fff;color:var(--text);font:inherit;text-align:center;cursor:pointer;box-shadow:var(--sh-sm);transition:all 0.2s var(--ease);position:relative;font-family:inherit;}
+.flashcard:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-3px);box-shadow:var(--sh-md);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:90px;}
+.flashcard .front{font-weight:700;font-size:14.5px;line-height:1.5;}
+.flashcard .back{display:none;color:var(--text-soft);font-size:13.5px;line-height:1.6;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:8px;right:8px;font-size:9px;text-transform:uppercase;background:var(--surface-soft);padding:2px 8px;border-radius:10px;color:var(--text-muted);font-weight:800;letter-spacing:0.4px;}
+.flashcard .card-tag.tag-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.flashcard .card-tag.tag-error{background:var(--c-error-bg);color:var(--c-error);}
+.flashcard .card-tag.tag-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.flashcard .card-tag.tag-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.checklist{background:#fff;border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.checklist h4{color:var(--c-basic);margin:0 0 12px;font-size:15px;}
+.checklist ul{list-style:none;padding-left:0;margin:0;}
+.checklist li{padding:7px 0;font-size:13.5px;border-bottom:1px dashed var(--c-basic-line);display:flex;align-items:flex-start;gap:10px;line-height:1.55;}
+.checklist li:last-child{border-bottom:none;}
+.checklist li::before{content:'☐';color:var(--c-basic);font-weight:700;font-size:1.15rem;flex-shrink:0;line-height:1.2;}
+.core-path{background:linear-gradient(135deg,var(--c-basic-bg) 0%,#dcefe2 100%);border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:800;color:var(--c-basic);font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.core-path .cp-title::before{content:'▶';font-size:12px;}
+.core-path ol{margin:0;padding-left:22px;}
+.core-path li{margin-bottom:6px;font-size:13.5px;line-height:1.6;}
+.audit-panel{background:var(--surface-soft);border:2px solid var(--border-strong);border-radius:var(--r-lg);padding:16px 18px;margin:16px 0;}
+.audit-panel h4{margin:0 0 12px;color:var(--text);}
+.audit-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px;}
+@media(min-width:600px){.audit-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}}
+.audit-item{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:10px 12px;font-size:12.5px;line-height:1.55;}
+.mini-note{font-size:12.5px;color:var(--text-muted);font-style:italic;margin-top:8px;line-height:1.55;}
+.layer-legend{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:12px 14px;margin:12px 0;display:grid;grid-template-columns:1fr;gap:8px 18px;}
+@media(min-width:600px){.layer-legend{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;}}
+.layer-legend .layer-row{display:flex;gap:10px;align-items:center;font-size:12.5px;line-height:1.5;}
+.layer-legend .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.e8{background:var(--c-basic);}
+.layer-legend .dot.understand{background:var(--c-understand);}
+.layer-legend .dot.extra{background:var(--c-extra);}
+.layer-legend .dot.contest{background:var(--c-warn);}
+.klinika-table td.col-blad{color:var(--c-error);font-weight:700;}
+.klinika-table td.col-blad::before{content:'✕ ';font-weight:900;margin-right:4px;color:var(--c-error);}
+.klinika-table td.col-ok{color:var(--c-basic);font-weight:700;}
+.klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}
+.map-card{position:relative;}
+.map-expand-btn{position:absolute;top:10px;right:10px;z-index:3;padding:6px 12px;border:1px solid var(--accent-line);background:rgba(255,255,255,0.95);color:var(--accent);border-radius:var(--r-sm);font-size:12px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:var(--sh-sm);transition:all 0.15s var(--ease);}
+.map-expand-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.map-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(26,35,50,0.85);backdrop-filter:blur(6px);}
+.map-overlay.is-open{display:block;}
+.map-overlay-inner{position:absolute;inset:12px;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-xl);}
+.map-overlay-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface-soft);gap:8px;flex-wrap:wrap;}
+.map-overlay-title{font-weight:800;font-size:14px;color:var(--text);}
+.map-overlay-actions{display:flex;gap:6px;}
+.map-overlay-actions button{padding:6px 12px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;color:var(--text-soft);transition:all 0.15s var(--ease);}
+.map-overlay-actions button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.map-overlay-actions .map-close{background:var(--c-error);color:#fff;border-color:var(--c-error);}
+.map-overlay-canvas{flex:1;overflow:hidden;position:relative;background:#fff;cursor:grab;touch-action:none;}
+.map-overlay-canvas svg{display:block;position:absolute;top:0;left:0;transform-origin:0 0;}
+@media print{
+.fab,.toc-wrapper,.toc-overlay,.header-wrapper,.bottom-nav,.resume-dropdown,.map-overlay,.map-expand-btn{display:none !important;}
+body{padding:0;background:#fff;}
+.container{box-shadow:none;border:none;padding:0;max-width:100%;}
+details.answer{page-break-inside:avoid;}
+details.answer > *:not(summary){display:block !important;}
+details.answer summary{display:none;}
+.card{page-break-inside:avoid;}
+.widget{page-break-inside:avoid;}
+}
+@media (prefers-reduced-motion: reduce){
+*{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+html{scroll-behavior:auto;}
+}
+html,body{max-width:100%;overflow-x:hidden;}
+.table-scroll-hint{display:none;align-items:center;justify-content:space-between;gap:8px;padding:7px 11px;margin-top:0;margin-bottom:8px;border:1px solid var(--border);border-bottom:0;border-radius:var(--r-sm) var(--r-sm) 0 0;background:var(--surface-soft);color:var(--text-muted);font-size:11px;font-weight:700;}
+.table-wrap.is-scrollable + .table-scroll-hint{display:flex;}
+.table-scroll-hint .scroll-arrow{font-size:13px;letter-spacing:2px;color:var(--accent);}
+.timeline-anim{border-color:var(--c-understand-line);}
+.ta-stage{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 14px;min-height:280px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.ta-scene{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;animation:taFade 0.6s ease-out;width:100%;}
+@keyframes taFade{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.ta-scene .ta-year{font-size:1.7rem;font-weight:800;color:var(--accent);font-family:'JetBrains Mono',monospace;letter-spacing:1px;}
+.ta-scene .ta-who{font-size:1.05rem;font-weight:800;color:var(--text);}
+.ta-scene .ta-desc{font-size:13.5px;color:var(--text-soft);max-width:600px;line-height:1.65;}
+.ta-dots{display:flex;justify-content:center;gap:8px;margin:14px 0 8px;}
+.ta-dot{width:12px;height:12px;border-radius:50%;background:var(--border-strong);border:2px solid transparent;cursor:pointer;padding:0;transition:all 0.2s var(--ease);}
+.ta-dot.active{background:var(--accent);transform:scale(1.25);box-shadow:0 0 0 3px var(--accent-glow);}
+.ta-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;}
+.ta-nav{padding:8px 14px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-weight:700;color:var(--text-soft);cursor:pointer;font-size:12.5px;transition:all 0.15s var(--ease);}
+.ta-nav:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.ta-progress{font-size:12.5px;color:var(--text-muted);font-weight:700;font-family:'JetBrains Mono',monospace;}
+.eq-player{background:linear-gradient(180deg,#f8fafc,#eef6f5);border:2px solid var(--accent-line);border-radius:var(--r-lg);padding:16px 18px;margin:14px 0;}
+.eq-stage{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.15rem;padding:12px;background:#fff;border-radius:var(--r-md);border:1px solid var(--border);}
+.eq-term{display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border);opacity:0;}
+.eq-term.show{opacity:1;animation:reaction-flow 0.7s ease-out;}
+.eq-term.reactant{background:#e0f2fe;border-color:#7dd3fc;color:#0c4a6e;}
+.eq-term.product{background:#dcfce7;border-color:#86efac;color:#14532d;}
+.eq-arrow{opacity:0;color:var(--accent);font-size:1.4rem;}
+.eq-arrow.show{opacity:1;}
+.eq-balance{margin-top:10px;font-size:13px;color:var(--text-soft);display:none;}
+.eq-balance.show{display:block;}
+@keyframes reaction-flow{0%{opacity:.25;transform:scale(.92)}55%{opacity:1}100%{opacity:1;transform:scale(1)}}
+.ion-assembly{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;padding:18px 12px;background:#fff;border:1px solid var(--border);border-radius:var(--r-md);margin:10px 0;}
+.ion-chip{padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid var(--border);}
+.ion-chip.cation{background:#e0f2fe;border-color:#38bdf8;color:#0c4a6e;}
+.ion-chip.anion{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.ion-chip.product{background:#dcfce7;border-color:#4ade80;color:#14532d;}
+.ion-plus,.ion-join{font-size:1.4rem;font-weight:800;color:var(--text-muted);}
+.hero{max-width:900px;margin:0 auto 22px;padding:26px;border:1px solid var(--border);border-radius:var(--r-xl);background:linear-gradient(135deg,#fff,var(--accent-soft));box-shadow:var(--sh-md);}
+.hero h1{font-size:clamp(32px,6vw,52px);margin:4px 0 8px;}
+.hero-kicker{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--accent);text-transform:uppercase;}
+.lead{font-size:16px;color:var(--text-soft);max-width:720px;}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;}
+.page{max-width:900px;margin:0 auto;}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+@media(max-width:720px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px;}
+.metric-grid>div,.result-card,.step-card{padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);}
+.metric-grid b{display:block;font-size:10px;text-transform:uppercase;color:var(--text-muted);}
+.metric-grid strong{display:block;margin-top:3px;}
+@media(max-width:700px){.metric-grid{grid-template-columns:1fr;}}
+.controls,.button-grid{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;}
+.controls button,.button-grid button,.quiz-opt{padding:8px 12px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;cursor:pointer;}
+.particle-stage{height:120px;display:flex;align-items:center;justify-content:center;gap:70px;border:1px dashed var(--border-strong);border-radius:10px;margin-top:12px;}
+.particle{font-size:30px;font-weight:800;}
+.p-h3o{color:var(--accent);}
+.p-cl{color:#b83a45;}
+.ph-scale{display:flex;justify-content:space-between;margin-top:6px;font:700 11px 'JetBrains Mono',monospace;}
+.buffer-tank{height:28px;border:1px solid var(--border-strong);border-radius:999px;overflow:hidden;margin:14px 0;background:var(--surface-soft);}
+#bufferFill{height:100%;width:100%;background:var(--accent);transition:width .2s;}
+.quiz-wrap{margin:16px 0;}
+.quiz-q{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:14px 16px;margin-bottom:12px;}
+.quiz-q h5{margin:0 0 10px;font-size:14.5px;color:var(--text);text-transform:none;letter-spacing:0;line-height:1.45;}
+.quiz-q .q-tag{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:10px;margin-bottom:8px;background:var(--surface-soft);color:var(--text-muted);}
+.quiz-opts{display:flex;flex-direction:column;gap:8px;}
+.quiz-opt{display:block;width:100%;text-align:left;padding:10px 12px;border:2px solid var(--border);border-radius:var(--r-sm);background:#fff;font:inherit;font-size:13.5px;cursor:pointer;transition:all 0.15s var(--ease);color:var(--text);}
+.quiz-opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft);}
+.quiz-opt.correct{border-color:var(--c-basic);background:var(--c-basic-bg);color:var(--c-basic);font-weight:700;}
+.quiz-opt.wrong{border-color:var(--c-error);background:var(--c-error-bg);color:var(--c-error);}
+.quiz-opt:disabled{cursor:default;opacity:0.95;}
+.quiz-fb{margin-top:8px;font-size:13px;line-height:1.5;display:none;padding:8px 10px;border-radius:var(--r-sm);}
+.quiz-fb.show{display:block;}
+.quiz-fb.ok{background:var(--c-basic-bg);color:var(--c-basic);}
+.quiz-fb.bad{background:var(--c-error-bg);color:var(--c-error);}
+.quiz-score{text-align:center;padding:14px;background:var(--surface-soft);border-radius:var(--r-md);margin-top:16px;font-weight:800;color:var(--accent);display:none;}
+.quiz-score.show{display:block;}
+.lab-bridge{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 28px;padding:14px 16px;border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);background:linear-gradient(135deg,var(--surface-soft),var(--accent-soft));}
+.lab-bridge strong{display:block;color:var(--accent-dark);}
+.lab-bridge span{display:block;margin-top:3px;color:var(--text-soft);font-size:13px;}
+.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;}
+.lab-bridge-btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
+@media(max-width:600px){.lab-bridge{align-items:flex-start;flex-direction:column;}.lab-bridge-btn{width:100%;text-align:center;}}
+.exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}
+.exp-card h5{margin:0 0 10px;color:var(--c-basic);font-size:14px;text-transform:none;letter-spacing:0;}
+.exp-grid{display:grid;grid-template-columns:1fr;gap:6px;font-size:13.5px;line-height:1.55;}
+@media(min-width:600px){.exp-grid{grid-template-columns:110px 1fr;}}
+.exp-grid b{color:var(--text-soft);font-size:11px;text-transform:uppercase;letter-spacing:0.4px;}
+
+.js-reveal .card:not(.in),.js-reveal .widget:not(.in){opacity:0;transform:translateY(14px)}
+.js-reveal .card,.js-reveal .widget{transition:opacity .55s var(--ease),transform .55s var(--ease)}
+
+
+.ion-svg{width:100%;height:auto;display:block;background:radial-gradient(ellipse at 50% 40%,#fff,var(--surface-soft));border:1px solid var(--border);border-radius:var(--r-md);margin-top:10px}
+.ion-svg .mv{transition:transform .9s cubic-bezier(.65,0,.35,1);transform-box:fill-box}
+.ion-svg text{font-family:'JetBrains Mono',monospace;font-weight:800;text-anchor:middle;dominant-baseline:central}
+.ion-svg .fade{opacity:0;transition:opacity .6s ease .35s}
+.ion-svg[data-s="1"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="1"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="1"] .d1,.ion-svg[data-s="2"] .d1{opacity:1}
+.ion-svg[data-s="2"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="2"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="2"] .proton{transform:translate(120px,-40px)}
+.ion-svg[data-s="2"] .arrow{opacity:1}
+.ion-svg[data-s="3"] .g-hcl{transform:translateX(10px)}
+.ion-svg[data-s="3"] .g-w{transform:translateX(-10px)}
+.ion-svg[data-s="3"] .proton{transform:translate(230px,-38px)}
+.ion-svg[data-s="3"] .d3{opacity:1}
+.ion-svg[data-s="3"] .glow{animation:ionGlow 1.6s ease-in-out infinite}
+@keyframes ionGlow{0%,100%{filter:drop-shadow(0 0 2px rgba(13,104,104,.3))}50%{filter:drop-shadow(0 0 10px rgba(13,104,104,.8))}}
+
+
+.ph-bar{position:relative;height:18px;border-radius:999px;margin:10px 0 4px;border:1px solid var(--border-strong);
+background:linear-gradient(90deg,#e5262e 0%,#ef5a28 14%,#f6a21e 28%,#d7d93a 43%,#5cb85c 50%,#21a89a 57%,#2f7fc1 71%,#4a4bb5 86%,#6b2d8f 100%)}
+.ph-marker{position:absolute;top:-6px;width:0;height:0;left:0;transform:translateX(-50%);transition:left .35s var(--ease)}
+.ph-marker::before{content:'';position:absolute;left:-7px;top:0;border:7px solid transparent;border-top:10px solid var(--text)}
+.ph-marker::after{content:attr(data-v);position:absolute;left:0;top:-22px;transform:translateX(-50%);background:var(--text);color:#fff;font:800 11px 'JetBrains Mono',monospace;padding:2px 6px;border-radius:5px;white-space:nowrap}
+.ph-flask{display:inline-block;width:22px;height:22px;border-radius:0 0 8px 8px;border:2px solid var(--text-soft);vertical-align:middle;margin-right:6px;transition:background .35s}
+
+
+.titr-wrap{position:relative}
+#titrationCanvas{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--r-md);background:#fff}
+.titr-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.titr-row input[type=range]{flex:1 1 200px}
+.titr-flask{width:34px;height:42px;border:2px solid var(--text-soft);border-radius:2px 2px 12px 12px;transition:background .3s;flex-shrink:0;position:relative}
+.titr-flask::after{content:'';position:absolute;left:-2px;right:-2px;top:-8px;height:6px;border:2px solid var(--text-soft);border-bottom:0;border-radius:3px 3px 0 0}
+
+
+.buffer-tank{position:relative;height:34px}
+#bufferFill{transition:width .4s var(--ease),background .4s;background-size:28px 28px;background-image:linear-gradient(45deg,rgba(255,255,255,.22) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.22) 75%,transparent 75%)}
+.buffer-tank.pulse{animation:bufPulse .45s ease}
+.buffer-tank.dead{animation:bufDead .5s ease 2}
+@keyframes bufPulse{50%{transform:scale(1.02);box-shadow:0 0 0 4px var(--accent-glow)}}
+@keyframes bufDead{50%{box-shadow:0 0 0 4px rgba(184,58,69,.35)}}
+
+
+.rx-stage{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:12px 0;padding:14px;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md)}
+.rx-beaker{position:relative;width:120px;height:150px;border:3px solid var(--text-soft);border-top:0;border-radius:0 0 18px 18px;background:rgba(255,255,255,.55);overflow:visible;flex-shrink:0}
+.rx-liquid{position:absolute;left:0;right:0;bottom:0;height:100px;border-radius:0 0 14px 14px;background:rgba(220,235,240,.65);transition:background 2.2s ease}
+.rx-solid{position:absolute;left:36px;bottom:2px;width:48px;height:24px;border-radius:40% 40% 8px 8px;opacity:0;transition:height 3.5s ease,opacity .5s,transform 3.5s ease}
+.rx-bubbles,.rx-precip,.rx-fumes{position:absolute;left:0;right:0;bottom:0;height:150px;pointer-events:none;overflow:hidden}
+.rx-fumes{overflow:visible;bottom:100px;height:70px}
+.rx-b{position:absolute;bottom:14px;border-radius:50%;background:rgba(255,255,255,.85);border:1px solid rgba(13,104,104,.45);animation:rxRise 2.2s ease-in forwards}
+@keyframes rxRise{to{transform:translate(var(--dx,0),-92px);opacity:0}}
+.rx-p{position:absolute;top:50px;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #cbd5e1;animation:rxFall 2.4s ease-in forwards}
+@keyframes rxFall{to{transform:translateY(90px)}}
+.rx-cloud{position:absolute;bottom:0;left:6px;right:6px;height:0;background:#fff;border-radius:10px 10px 0 0;box-shadow:0 0 0 1px #e2e8f0;transition:height 4s ease;opacity:.95}
+.rx-f{position:absolute;bottom:0;width:26px;height:26px;border-radius:50%;background:rgba(150,75,20,.55);filter:blur(7px);animation:rxFume 3s ease-out forwards}
+@keyframes rxFume{to{transform:translate(var(--dx,0),-70px) scale(2.2);opacity:0}}
+
+
+.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.rx-label{flex:1 1 200px;font-size:13px;color:var(--text-soft);line-height:1.5}
+.rx-label b{color:var(--text);font-family:'JetBrains Mono',monospace}
+@media print{.js-reveal .card,.js-reveal .widget{opacity:1!important;transform:none!important}}
+
+
+/* ulepszenia.css — warstwa wspólna nad baza.css: pasek lekcji, postęp czytania, spis z podświetleniem,
+   tryb ciemny, komponenty wspólne (mity, drzewo, cytat, dialog, słówka, figura), druk, dostępność.
+   Kolejność w lekcji: baza.css → ulepszenia.css → motywy/<przedmiot>.css. Edytuj tylko tutaj. */
+
+:root{--header-h:52px;--serif:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Charter,Georgia,serif}
+
+/* ---------- pasek lekcji (zamiast nagłówka aplikacji) ---------- */
+.lk-bar{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 12px;
+  background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--border)}
+.lk-subj{flex:none;display:inline-flex;align-items:center;gap:7px;font:800 12.5px/1 Inter,system-ui,sans-serif;color:var(--accent);text-decoration:none;
+  padding:6px 10px 6px 8px;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+.lk-subj i{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+.lk-title{flex:1;min-width:0;font:600 13px/1.25 Inter,system-ui,sans-serif;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lk-btn{flex:none;min-width:36px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);background:var(--surface);
+  color:var(--text);border-radius:9px;padding:0 10px;font:700 12.5px Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+.lk-btn:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.lk-prog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
+@media (max-width:520px){.lk-title{display:none}.lk-bar{justify-content:space-between}}
+
+/* ---------- nagłówek lekcji ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+.hero::after{content:"";position:absolute;inset:-10% -6% -10% 52%;z-index:-1;opacity:.12;pointer-events:none;background:var(--motyw-wzor,none) right center/auto 100% repeat-y}
+.hero h1{text-wrap:balance}
+.hero-kicker{color:var(--accent);text-transform:none;letter-spacing:0;font-size:13px}
+.page{padding:0 16px}
+.lk-btn svg{width:16px;height:16px;display:block}
+.lk-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:12.5px;color:var(--text-muted)}
+.lk-meta b{color:var(--text-soft);font-weight:700}
+
+/* ---------- spis treści: aktywna sekcja ---------- */
+@media (min-width:800px){.toc-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));column-gap:12px}}
+.toc-link.on{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);font-weight:700}
+section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
+
+/* ---------- komponenty wspólne ---------- */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:12px 0}
+.myth-head{grid-column:1/-1;font-weight:800;font-size:14px}
+.myth{border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow:hidden}
+.myth p{margin:0;padding:9px 12px;font-size:13.5px;line-height:1.5}
+.myth p span{display:block;font:800 11px Inter,system-ui;margin-bottom:2px}
+.myth-x{background:var(--c-error-bg)}.myth-x span{color:var(--c-error)}.myth-ok span{color:var(--c-basic)}
+
+.lk-tree{margin:12px 0;font-size:14px;overflow-x:auto}
+.lk-tree ul{list-style:none;margin:0;padding-left:18px}.lk-tree>ul{padding-left:0}
+.lk-tree li{position:relative;padding:3px 0 3px 14px}
+.lk-tree ul ul li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--accent-line)}
+.lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
+.lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
+.lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+
+/* cytat z tekstu (lektura, źródło, wypowiedź) */
+.lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
+.lk-quote blockquote{margin:0;font:400 17px/1.65 var(--serif);color:var(--text)}
+.lk-quote blockquote p{margin:0 0 6px;color:inherit}
+.lk-quote figcaption{margin-top:6px;font-size:12.5px;color:var(--text-muted)}
+
+/* dialog (role A/B, rozmowa, scenka) */
+.lk-dialog{margin:14px 0;display:flex;flex-direction:column;gap:8px}
+.lk-line{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.lk-who{min-width:30px;height:30px;padding:0 8px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font:800 12px Inter,system-ui;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line)}
+.lk-line.b .lk-who{background:var(--surface-soft);color:var(--text-soft);border-color:var(--border)}
+.lk-say{padding:8px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font-size:14.5px;line-height:1.55}
+.lk-say small{display:block;color:var(--text-muted);font-size:12.5px;margin-top:2px}
+
+/* słówka: wyraz — znaczenie — przykład */
+.lk-vocab{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.lk-vocab th{text-align:left;font-size:12px;color:var(--text-muted);font-weight:700;padding:6px 10px;border-bottom:2px solid var(--border)}
+.lk-vocab td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+.lk-vocab td:first-child{font-weight:800;color:var(--accent);white-space:nowrap}
+.lk-vocab td:last-child{color:var(--text-soft);font-style:italic}
+@media (max-width:560px){.lk-vocab thead{display:none}.lk-vocab tr{display:block;padding:8px 0;border-bottom:1px solid var(--border)}
+  .lk-vocab td{display:block;border:0;padding:1px 4px}}
+
+/* figura z biblioteki grafik przedmiotu */
+.lk-fig{margin:16px 0;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);overflow:hidden}
+.lk-fig figcaption{padding:9px 14px;border-top:1px solid var(--border);background:var(--surface-soft);font-size:13px;line-height:1.5;color:var(--text-soft)}
+.lk-fig figcaption b{color:var(--text);margin-right:4px}
+.lk-fig-body{padding:12px}
+.lk-fig svg{display:block;width:100%;height:auto}
+
+/* z chemii (lekcja.css): treści akademickie, plakietki */
+details.adv{border:1px dashed var(--c-warn-line,#eed8a8);border-radius:10px;background:var(--surface-soft,#f6f8fa);margin:10px 0;padding:0 12px}details.adv>summary{cursor:pointer;font-weight:700;color:var(--c-warn,#b06f1c);padding:9px 0;list-style:none}details.adv>summary::-webkit-details-marker{display:none}details.adv>summary::before{content:"▸ "}details.adv[open]>summary::before{content:"▾ "}.adv-tag{font-weight:600;font-size:11px;opacity:.75;margin-left:6px}.adv-body{padding:0 0 10px;font-size:13.5px;line-height:1.6}.adv-body table{font-size:12.5px}.adv-toggle{margin-top:10px;border:1px solid var(--c-warn-line,#eed8a8);background:var(--c-warn-bg,#fcf4e6);color:var(--c-warn,#b06f1c);border-radius:999px;padding:6px 12px;font:700 12px Inter,system-ui,sans-serif;cursor:pointer}.bio-tag{display:inline-block;font:800 10px Inter,system-ui;letter-spacing:.04em;padding:2px 7px;border-radius:99px;background:rgba(46,125,79,.12);color:#2e7d4f;margin-left:6px;vertical-align:middle}.v15{display:inline-block;font:800 9.5px Inter,system-ui;padding:1px 6px;border-radius:99px;background:rgba(13,125,125,.12);color:#0d7d7d;margin-left:6px;vertical-align:middle}@media print{details.adv{display:block}details.adv>.adv-body{display:block}}
+/* z chemii (lekcja.css): telefon, tabele */
+.exp-card{min-width:0;max-width:100%;box-sizing:border-box}.exp-grid>*{min-width:0;overflow-wrap:anywhere}
+@media (max-width:600px){.exp-grid{grid-template-columns:minmax(0,1fr)!important}.exp-grid>b{margin-top:4px}}
+.table-wrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+
+/* klinika błędów (::: klinika) — tabela, na telefonie karty */
+.klinika-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden}
+.klinika-table th{text-align:left;padding:9px 12px;background:var(--surface-soft);color:var(--text-soft);font-size:12px;font-weight:800;border-bottom:1px solid var(--border)}
+.klinika-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.klinika-table tr:last-child td{border-bottom:0}
+@media (max-width:600px){.klinika-table thead{display:none}.klinika-table tr{display:block;padding:8px 12px;border-bottom:1px solid var(--border)}
+  .klinika-table td{display:block;border:0;padding:2px 0}.klinika-table td:not(.col-blad):not(.col-ok){color:var(--text-soft)}}
+
+.lk-pre{margin:12px 0;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-soft);overflow-x:auto;font:12.5px/1.55 ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;color:var(--text-soft);white-space:pre}
+.lk-pre code{font:inherit;background:none;padding:0;color:inherit}
+.lk-hr{border:0;border-top:1px solid var(--border);margin:28px 0}
+
+/* ---------- dostępność ---------- */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;z-index:60;background:var(--surface);color:var(--accent);padding:8px 12px;border-radius:8px}
+.skip-link:focus{left:8px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- tryb ciemny: automatycznie albo przyciskiem (data-theme) ---------- */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme=dark]{
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}
+/* elementy bazy z białym tłem na sztywno */
+html[data-ciemny] :is(.flashcard,.checklist,.audit-item,.layer-legend,.quiz-q,.quiz-opt,.btn,.controls button,.eq-stage,.ion-assembly,.bld-workspace,.bld-pool button,.resume-dropdown,.ta-nav){background:var(--surface);color:var(--text)}
+html[data-ciemny] .hero{background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.active,.step-flow){color:var(--bg)}
+@media (max-width:600px){.hero::after{opacity:.07}}
+
+/* ---------- druk ---------- */
+@media print{
+  .lk-bar,.adv-toggle,.toc-item,.fab,.bottom-nav{display:none!important}
+  body{padding:0;background:#fff;color:#000}
+  .hero::after{display:none}.hero{background:none;box-shadow:none}
+  details.adv,details.answer{display:block}details>*{display:block}
+  .card,.minimum-card,.lk-fig,.myth,.quiz-q{break-inside:avoid;box-shadow:none}
+  a{color:inherit;text-decoration:none}
+}
+
+/* === Dopracowanie czytelności (2026-10-11; z wersji „ulepszonej” U03 użytkownika, uogólnione na wszystkie przedmioty, zgodne z trybem ciemnym) === */
+body{line-height:1.74}
+main{isolation:isolate}
+.hero{border-color:var(--accent-line)}
+.hero::before{content:"";position:absolute;right:-42px;top:-56px;width:180px;height:180px;z-index:-1;pointer-events:none;
+ border:1px solid var(--accent-line);border-radius:50%;opacity:.45;
+ box-shadow:0 0 0 22px var(--accent-glow),0 0 0 44px var(--accent-glow)}
+.part-heading{padding:0 0 12px;border-bottom:1px solid var(--border);align-items:flex-start}
+.part-num{margin-top:1px}
+section[id]{scroll-margin-top:calc(var(--header-h,56px) + 20px)}
+section p{max-width:78ch}
+section ul,section ol{padding-left:1.35rem}
+.card,.exp-card,.widget,.table-wrap{box-shadow:0 2px 8px rgba(24,49,59,.045)}
+.table-wrap{max-width:100%}
+.table-wrap table{line-height:1.55}
+.table-wrap td strong{color:var(--text)}
+.table-wrap tbody tr:nth-child(even) td{background:var(--surface-soft)}
+.table-wrap tbody tr:hover td{background:var(--accent-soft)}
+.mini-note{max-width:80ch}
+:is(button,a,summary,[tabindex]):focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:520px){.hero{padding:20px 16px}.part-heading{font-size:19px;gap:11px}
+ .table-wrap table{font-size:12.5px}.table-wrap th,.table-wrap td{padding:8px 9px}}
+@media(hover:none){.card:hover,.flashcard:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media print{.hero::before{display:none}.card,.exp-card,.table-wrap{break-inside:avoid;box-shadow:none}}
+
+/* fiszki: część ukryta do rozwinięcia (lekcja.js); przy druku — wszystkie */
+.flashcard[hidden]{display:none!important}
+.fz-more{display:block;width:100%;margin:-6px 0 18px;padding:12px 16px;border:2px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent;color:var(--text,#1d2a30);font-family:inherit;font-weight:600;font-size:15px;line-height:1.3;cursor:pointer;text-align:center}
+.fz-more:hover,.fz-more:focus-visible{background:var(--surface-2,rgba(0,0,0,.04))}
+@media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
+.quiz-q[hidden]{display:none!important}
+@media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
+
+/* motyw che (Chemia) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,.15);--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 104 180%27%3E%3Cg fill=%27none%27 stroke=%27%230d6868%27 stroke-width=%273%27%3E%3Cpath d=%27M52 10l40 23v46l-40 23-40-23V33z%27/%3E%3Cpath d=%27M52 100l40 23v46l-40 23-40-23v-46z%27/%3E%3Cpath d=%27M52 22v8M92 56h8M12 56H4%27/%3E%3C/g%3E%3Cg fill=%27%230d6868%27%3E%3Ccircle cx=%2752%27 cy=%2710%27 r=%275%27/%3E%3Ccircle cx=%2792%27 cy=%2779%27 r=%275%27/%3E%3Ccircle cx=%2712%27 cy=%27123%27 r=%275%27/%3E%3C/g%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}}
+:root[data-theme=dark]{--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}
+
+/* równanie reakcji w osobnej linii: ::: div.rownanie */
+.rownanie{margin:12px 0;padding:12px 16px;border-radius:var(--r-md);background:var(--surface-soft);border:1px solid var(--border);font:600 17px/1.6 Inter,system-ui,sans-serif;text-align:center;overflow-x:auto;white-space:nowrap}
+.rownanie small{display:block;font-size:12px;font-weight:500;color:var(--text-muted);white-space:normal}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+<header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">LKO-Z36 Konfiguracje elektronowe do Z = 36 i jony</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<main class="page" id="main">
+<section class="hero card"><div class="hero-kicker">LKO-Z36 · SUPLEMENT KONKURSOWY · SZKIC</div><h1>Konfiguracje elektronowe do Z = 36 i jony</h1><p class="lead">Po lekcji F07 i F08 umiesz zapisać konfigurację atomów do Z = 20. Konkurs kuratoryjny (etap I) wymaga tego samego do Z = 36 dla grup 1, 2 i 13–18, a także konfiguracji jonów i wzoru związku wyprowadzonego z konfiguracji. Ta lekcja domyka tę lukę bez wchodzenia w podpowłoki s, p, d.</p><div class="tag-row"><span class="level-badge level-basic">E8</span><span class="level-badge level-understand">ROZUMIENIE</span><span class="level-badge level-extra">OLIMP (LKO)</span></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#minimum">Minimum E8</a><a class="toc-link" href="#s1">Pojęcia i oznaczenia</a><a class="toc-link" href="#s2">Przypomnienie z F07 i F08</a><a class="toc-link" href="#lustro">0.4. Lustro i most</a><a class="toc-link" href="#wyklad1">1. Wykład — cztery wzorce: cały zakres w jednej tabeli</a><a class="toc-link" href="#wyjatki">Dodatek — wyjątki do Z = 36 i tabela Z = 1–36</a><a class="toc-link" href="#wyklad2">2. Wykład — jony: reguła najbliższego gazu szlachetnego</a><a class="toc-link" href="#wyklad3">3. Wykład — od konfiguracji do wzoru związku</a><a class="toc-link" href="#kompendium">4. Kompendium — ściąga-wynik</a><a class="toc-link" href="#klinika">5. Klinika błędów</a><a class="toc-link" href="#cwiczenia">6. Ćwiczenia — formy konkursu LKO (etap I)</a><a class="toc-link" href="#mity">7. Mity</a><a class="toc-link" href="#mini">8. Mini-wykład: po co to wszystko</a><a class="toc-link" href="#dosw">9. Doświadczenie modelowe — dlaczego jony wyglądają jak gazy</a><a class="toc-link" href="#granice">10. Granice uproszczenia (dla nauczyciela i ucznia)</a><a class="toc-link" href="#test">Test — sprawdź się</a><a class="toc-link" href="#fiszki">11. Fiszki</a><a class="toc-link" href="#slownik">12. Słownik</a><a class="toc-link" href="#mapa">13. Mapa pojęć</a><a class="toc-link" href="#checklista">14. Checklista — umiem…</a><a class="toc-link" href="#mosty">15. Mosty do innych lekcji</a><a class="toc-link" href="#ciekawostki">16. Ciekawostki</a><a class="toc-link" href="#zrodla">17. Zadanie transferowe i źródła</a></nav></details>
+<div class="card card-understand">
+<span class="card-label">Zasady tego zestawu — co jest autorskie</span>
+<p>Oznaczenie „podstawa” odnosi się w tym materiale do szkolnych podstaw chemii, a nie do osobnego egzaminu ósmoklasisty z chemii. Zadania i punktacja są autorskie, chyba że jednoznacznie wskazano autentyczny arkusz. Wymagania konkretnego konkursu lub olimpiady należy sprawdzić w jego aktualnym programie.
+Podane czasy, punktacja i progi interpretacji wyniku są zasadami tego autorskiego zestawu. Nie stanowią potwierdzenia zasad rzeczywistego konkursu. Informacje o terminach, wyposażeniu i zakresie etapów wymagają sprawdzenia w dokumentach organizatora.</p>
+</div>
+<section id="minimum" class="minimum-card"><h3>Muszę umieć na konkursie LKO, etap I — 10 punktów</h3>
+<ol>
+<li><strong>Kamienie milowe gazów szlachetnych:</strong> He 2 · Ne 10 · Ar 18 · Kr 36 elektronów. Pierwiastek o Z od 19 do 36 leży w 4. okresie.</li>
+<li><strong>Cztery szkielety konfiguracji</strong> dla grup 1, 2 i 13–18 do Z = 36: [2,x] · [2,8,x] · [2,8,8,x] (tylko grupy 1–2) · [2,8,18,x] (grupy 13–18). Ostatnia liczba x to liczba elektronów walencyjnych.</li>
+<li><strong>Elektrony walencyjne:</strong> grupy 1 i 2 — numer grupy (1 lub 2); grupy 13–18 — numer grupy minus 10 (Al: 3, S: 6, Br: 7).</li>
+<li><strong>Liczba powłok = numer okresu.</strong> Powłoka M mieści do 18 elektronów w tym zakresie, a nie do 8.</li>
+<li><strong>Jon jednoatomowy</strong> grup 1, 2, 13, 15, 16, 17 zwykle osiąga konfigurację najbliższego gazu szlachetnego (reguła dubletu i oktetu pomaga przewidywać wiele prostych jonów, ale nie obejmuje wszystkich — jeśli ładunek podano w zadaniu, oblicz liczbę elektronów z ładunku): grupa 1 → 1+, grupa 2 → 2+, grupa 13 → 3+, grupa 15 → 3−, grupa 16 → 2−, grupa 17 → 1−.</li>
+<li>Grupy 14 i 18 nie tworzą prostych jonów w zakresie szkolnym (14: wiązania kowalencyjne; 18: powłoki pełne).</li>
+<li><strong>Izoelektronowość:</strong> jony i atomy o tej samej liczbie elektronów mają tę samą konfigurację. Trzy rodziny do zapamiętania: Ne (2,8), Ar (2,8,8), Kr (2,8,18,8).</li>
+<li><strong>Ga³⁺ = 2,8,18</strong> — jedyny jon w zakresie, którego konfiguracja nie jest konfiguracją gazu szlachetnego.</li>
+<li><strong>Wzór związku z konfiguracji:</strong> liczba oddanych elektronów kationu = liczba przyjętych przez anion, a ładunki muszą się zbilansować (K₂S, GaCl₃).</li>
+<li><strong>Kontrola:</strong> suma elektronów w konfiguracji atomu = Z; w jonie = Z ∓ ładunek.</li>
+</ol>
+</section>
+<div class="card card-exam">
+<span class="card-label">Pytanie przewodnie</span>
+<p>Jak z liczby Z i położenia w układzie okresowym odtworzyć konfigurację, jon i wzór związku — bez tabeli, w kilka kroków, z kontrolą sumy elektronów?</p>
+</div>
+<section id="s1">
+<div class="part-heading">Pojęcia i oznaczenia</div>
+<p>Pojęcia z F04–F08 są znane. Tu pojawiają się nowe skróty i nazwy, które trzeba rozwinąć od zera:</p>
+<ul>
+<li><strong>Z</strong> — liczba atomowa, czyli liczba protonów w jądrze. Dla obojętnego atomu równa liczbie elektronów.</li>
+<li><strong>Okres</strong> — poziomy wiersz układu okresowego. Numer okresu = liczba zapełnianych powłok (K, L, M, N…).</li>
+<li><strong>Grupa</strong> — pionowa kolumna układu okresowego. Pierwiastki jednej grupy mają podobną liczbę elektronów walencyjnych.</li>
+<li><strong>Elektrony walencyjne</strong> — elektrony na zewnętrznej powłoce, które biorą udział w tworzeniu wiązań i jonów. Oznaczamy je tu literą x w szkielecie.</li>
+<li><strong>Szkielet</strong> — zapis konfiguracji w postaci liczb na powłokach, w którym ostatnią liczbę zastępujemy literą x, bo zależy od grupy. Np. [2,8,x] to szkielet trzeciego okresu.</li>
+<li><strong>Kation</strong> — jon dodatni, powstały przez oddanie elektronów (np. Na⁺, Ca²⁺, Ga³⁺). Oznaczenie <strong>⁺</strong> lub <strong>²⁺</strong> itd. mówi, ile elektronów oddano.</li>
+<li><strong>Anion</strong> — jon ujemny, powstały przez przyjęcie elektronów (np. Cl⁻, S²⁻, As³⁻). Ładunek ⁻ mówi, ile elektronów przyjęto.</li>
+<li><strong>Jon jednoatomowy</strong> — pojedynczy atom mający ładunek (np. Cl⁻, Ga³⁺). Jon wieloatomowy zawiera więcej niż jeden atom (np. SO₄²⁻), niezależnie od tego, ilu pierwiastków są to atomy; w tym zakresie nie występuje.</li>
+<li><strong>Gaz szlachetny</strong> — pierwiastek 18. grupy (He, Ne, Ar, Kr…), którego powłoka zewnętrzna jest pełna. Jony dążą do jego konfiguracji.</li>
+<li><strong>Izoelektronowy</strong> — o tej samej liczbie elektronów (i tej samej konfiguracji). Np. Ne, F⁻, Na⁺ — wszystkie mają po 10 elektronów.</li>
+<li><strong>Zapis skrócony</strong> — konfiguracja z gazem szlachetnym w nawiasie, np. [Ar] 4s¹ dla K. Zapis pełny: 1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹.</li>
+<li><strong>Model powłokowy</strong> — uproszczony opis atomu, w którym elektrony są rozmieszczone w powłokach K, L, M, N. Jest modelem, nie dokładnym obrazem; zakres konkursu wyraźnie na nim się opiera.</li>
+</ul>
+</section>
+<section id="s2">
+<div class="part-heading">Przypomnienie z F07 i F08</div>
+<div class="card card-understand">
+<span class="card-label">Dwa pytania przed startem</span>
+<ol>
+<li>Ile elektronów mieści się na powłoce M (n = 3) według wzoru 2n²? Dlaczego w tym zakresie mówimy o 18, a nie o 8?</li>
+<li>Atom ma 2 powłoki i 7 elektronów walencyjnych. Jaki to pierwiastek i jak zapisać jego konfigurację?</li>
+</ol>
+<details class="answer"><summary>Klucz do przypomnienia</summary>
+<ol>
+<li>2·3² = 18. Do Ca (Z = 20) powłoka M ma 8 elektronów, ale dalej, przy pierwiastkach grup 13–18 w 4. okresie, zapełnia się do 18. Stąd „8" z klasy 7 obowiązuje tylko do Z = 20.</li>
+<li>Liczba powłok 2 → 2. okres; 7 elektronów walencyjnych → grupa 17 → fluorowiec <strong>F</strong> (Z = 9): 2,7 (1s² 2s² 2p⁵). Dla zapisu: F = 1s² 2s² 2p⁵.</li>
+</ol>
+</details>
+</div>
+<hr class="lk-hr"/>
+</section>
+<section id="lustro">
+<div class="part-heading"><span class="part-num">0.4</span> Lustro i most</div>
+<div class="card card-core">
+<span class="card-label">Co się zmienia względem F07 i F08</span>
+<div class="table-wrap"><table>
+<thead><tr><th></th><th></th></tr></thead>
+<tbody>
+<tr><td><strong>Było (F07/F08)</strong></td><td>rozmieszczenie elektronów na K, L, M do Z = 20; „na M maksymalnie 8"; konfiguracja ↔ położenie w układzie</td></tr>
+<tr><td><strong>Teraz (LKO)</strong></td><td>rozszerzenie do Z = 36; powłoka M mieści do 18; cztery szkielety; jony pierwiastków grup 1, 2, 13–18, w tym Br⁻, Ga³⁺, Se²⁻, As³⁻; wzór związku z konfiguracji</td></tr>
+<tr><td><strong>Będzie (LO)</strong></td><td>podpowłoki s, p, d; reguła Hunda i zakaz Pauliego w pełnej formie; wtedy zobaczysz, skąd bierze się liczba 18 i wyjątki Cr i Cu</td></tr>
+<tr><td><strong>Olimpijsko</strong></td><td>izoelektronowość jako narzędzie szybkiego rozpoznania jonu; konfiguracja jako klucz do wartościowości i wzorów</td></tr>
+</tbody></table></div>
+</div>
+<p><strong>Cel ucznia.</strong> Po tej lekcji umiesz:
+1. wypisać konfigurację powłokową dowolnego pierwiastka grup 1, 2, 13–18 o Z ≤ 36 w kilka sekund, korzystając z czterech szkieletów;
+2. wypisać konfigurację jonu jednoatomowego tych grup;
+3. rozpoznać jony izoelektronowe;
+4. na podstawie konfiguracji ustalić ładunek jonu, grupę, okres i wzór związku;
+5. wskazać granice uproszczenia modelu powłokowego.</p>
+<hr class="lk-hr"/>
+</section>
+<section id="wyklad1">
+<div class="part-heading"><span class="part-num">1</span> Wykład — cztery wzorce: cały zakres w jednej tabeli</div>
+<div class="card card-understand">
+<span class="card-label">Wykład — skąd bierze się jeden zapis dla wielu pierwiastków</span>
+<p>Konfiguracja elektronowa jest „adresem" elektronów. Pierwszy krok to ustalenie, na którym piętrze (okresie) znajduje się pierwiastek. Drugi krok to ustalenie, który wzorzec obowiązuje, a trzeci — wpisanie liczby walencyjnej na końcu.</p>
+<p>Dla pierwiastków z zakresu wystarczą cztery wzorce, bo wszystkie zapełnione powłoki poprzedzające ostatnią są znane z dotychczasowych lekcji: K (2), L (8), M (8 lub 18 po dopełnieniu bloku d, który tu nie jest rozpatrywany wprost). Dlatego ich liczba jest stała w obrębie grupy i okresu.</p>
+<p>Najważniejsza wiadomość: jeśli znasz cztery gazy szlachetne z zakresu — He (2), Ne (10), Ar (18), Kr (36) — to każdy pierwiastek z Z ≤ 36 leży między nimi. Pierwiastek o Z od 19 do 36 leży w czwartym okresie, a od 11 do 18 w trzecim. To pierwsza informacja, którą wyciągasz z Z.</p>
+</div>
+<h3>1.1 Kamienie milowe</h3>
+<p>Zapamiętaj cztery liczby:</p>
+<p><strong>He 2 · Ne 10 · Ar 18 · Kr 36</strong></p>
+<p>Każda z nich to koniec okresu. Z liczby Z odczytujesz okres: Z ≤ 2 — okres 1; 3–10 — okres 2; 11–18 — okres 3; 19–36 — okres 4.</p>
+<h3>1.2 Cztery szkielety</h3>
+<p>Każdy pierwiastek z zakresu (grupy 1, 2 i 13–18) ma konfigurację z jednego z czterech wzorców. Szkielet daje okres, a ostatnia liczba — elektrony walencyjne:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Okres</th><th>Szkielet</th><th>Grupy</th><th>Pełne przykłady</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>K</td><td>1, 18</td><td>H: <strong>1</strong> · He: <strong>2</strong> (wyjątek: pełna powłoka K)</td></tr>
+<tr><td>2</td><td>2, x</td><td>1, 2, 13–18</td><td>Li 2,<strong>1</strong> · Be 2,<strong>2</strong> · B 2,<strong>3</strong> · C 2,<strong>4</strong> · N 2,<strong>5</strong> · O 2,<strong>6</strong> · F 2,<strong>7</strong> · Ne 2,<strong>8</strong></td></tr>
+<tr><td>3</td><td>2, 8, x</td><td>1, 2, 13–18</td><td>Na 2,8,<strong>1</strong> · Mg 2,8,<strong>2</strong> · Al 2,8,<strong>3</strong> · Si 2,8,<strong>4</strong> · P 2,8,<strong>5</strong> · S 2,8,<strong>6</strong> · Cl 2,8,<strong>7</strong> · Ar 2,8,<strong>8</strong></td></tr>
+<tr><td>4</td><td>2, 8, 8, x</td><td><strong>tylko grupy 1–2</strong></td><td>K 2,8,8,<strong>1</strong> · Ca 2,8,8,<strong>2</strong></td></tr>
+<tr><td>4</td><td>2, 8, 18, x</td><td><strong>grupy 13–18</strong></td><td>Ga 2,8,18,<strong>3</strong> · Ge 2,8,18,<strong>4</strong> · As 2,8,18,<strong>5</strong> · Se 2,8,18,<strong>6</strong> · Br 2,8,18,<strong>7</strong> · Kr 2,8,18,<strong>8</strong></td></tr>
+</tbody></table></div>
+<p><strong>Końcówka x to elektrony walencyjne, a nie numer grupy.</strong> Dla grup 1 i 2 x = numer grupy. Dla grup 13–18 x = numer grupy − 10:</p>
+<ul>
+<li>grupa 13 (Al, Ga) → x = 3,</li>
+<li>grupa 14 (Si, Ge) → x = 4,</li>
+<li>grupa 16 (S, Se) → x = 6,</li>
+<li>grupa 17 (Cl, Br) → x = 7,</li>
+<li>grupa 18 (Ar, Kr) → x = 8 (He jest wyjątkiem z 2 elektronami na jedynej powłoce).</li>
+</ul>
+<p>Pierwsza wersja tej lekcji (LKO, szkic z 2026-10-13) zapisywała „x = numer grupy" dla całego zakresu. To błąd dla grup 13–18 i został tu poprawiony (patrz LOG ZMIAN).</p>
+<h3>1.3 Skąd „18" na M — i czemu to nie łamie klasy 7</h3>
+<p>W klasie 7 mówiliśmy: „na powłoce M maksymalnie 8". To było prawdziwe <strong>dla zakresu do Z = 20</strong>, bo wtedy M nigdy nie przekracza 8 elektronów.</p>
+<p>Co dzieje się dalej: po wapniu (Z = 20) elektrony nie od razu idą na powłokę N. Najpierw wypełniają się podpowłoki 3d, a te należą do powłoki M. Między Ca (Z = 20) a Ga (Z = 31) leży dziesięć metali przejściowych (Sc–Zn, Z = 21–30). Ich konfiguracje nie są w zakresie konkursu, ale to one dopełniają powłokę M z 8 do 18, zanim Ga zacznie zapełniać N. Stąd skok:</p>
+<p>Ca 2,8,8,2 → (Z = 21–30, poza zakresem) → Ga 2,8,<strong>18</strong>,3</p>
+<p>Dla omawianych grup reguła jest więc czysta, bez wyjątków. Wyjątki konfiguracyjne istnieją w bloku d (Cr, Cu), ale to pierwiastki grup 6 i 11: poza zakresem i poza tym suplementem.</p>
+<p><strong>Dlaczego 4s przed 3d?</strong> W szkolnej kolejności budowania konfiguracji neutralnych K i Ca obsadza się 4s przed 3d. Kolejność energetyczna zależy jednak od pierwiastka i stanu jonizacji; nie przenoś jej automatycznie na wszystkie jony. To nie „przypadek" — zjawisko ekranowania: elektrony wewnętrzne osłaniają jądro, a orbital s ma część bliżej jądra. Przy Ga tę samą powłokę M zapełniają już dziesięć elektronów 3d, a 4s i 4p zapełniają się na zewnątrz.</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie — co zrobić, gdy pada pytanie „dlaczego 18?"</span>
+<p>Odpowiedz w dwóch zdaniach: „Bo po wapniu zapełnia się podpowłoka 3d, która też należy do powłoki M. Powłoka N jest już obsadzona u K i Ca, bo 4s należy do N; po Ca przybywa elektronów 3d należących do M, a u Ga zaczyna się obsadzanie 4p, również należącego do N." Nie trzeba wchodzić w podpowłoki, żeby to było poprawne.</p>
+</div>
+<h3>1.4 Procedura 30-sekundowa</h3>
+<p>Dane: Z lub nazwa pierwiastka.</p>
+<ol>
+<li><strong>Zlokalizuj Z względem kamieni milowych</strong> (2 / 10 / 18 / 36) → okres.</li>
+<li>Jeśli okres 4: rozstrzygnij szkielet po <strong>grupie</strong>. Grupy 1–2 → 2,8,8,x. Grupy 13–18 → 2,8,18,x.</li>
+<li><strong>Ustal x:</strong> grupy 1–2 — numer grupy; grupy 13–18 — numer grupy minus 10.</li>
+<li><strong>Kontrola:</strong> suma elektronów = Z.</li>
+</ol>
+<p>Odwrotnie (z konfiguracji do pierwiastka): liczba powłok = okres; liczba elektronów walencyjnych = x; grupa = x (dla 1–2) albo x + 10 (dla 13–18); suma = Z.</p>
+<div class="card card-understand">
+<span class="card-label">Ćwiczenie w pamięci — dwie konfiguracje</span>
+<ol>
+<li>Podaj konfigurację Se (Z = 34): okres 4, grupa 16 (x = 6) → 2,8,18,6.</li>
+<li>Z konfiguracji 2,8,8,1 wskaż Z i grupę: 4 powłoki → okres 4; x = 1 → grupa 1 → K, Z = 19.</li>
+</ol>
+</div>
+<hr class="lk-hr"/>
+</section>
+<section id="wyjatki">
+<div class="part-heading"><span class="part-num">1b</span> Dodatek — wyjątki do Z = 36 i tabela Z = 1–36</div>
+<div class="card card-understand">
+<span class="card-label">Wykład — dwie kolejności, które łatwo pomylić</span>
+<p>W konfiguracji są dwie różne kolejności i warto je rozdzielić.</p>
+<p>Pierwsza to <strong>kolejność zapełniania</strong> (energetyczna): elektrony wchodzą najpierw na podpowłoki o najniższej energii, czyli 1s, 2s, 2p, 3s, 3p, <strong>4s</strong>, <strong>3d</strong>, 4p. Dlatego po argonie pojawia się 4s, a dopiero potem 3d.</p>
+<p>Druga to <strong>kolejność zapisu</strong> w konfiguracji: podpowłoki grupujemy według numeru powłoki, więc piszemy 1s 2s 2p 3s 3p <strong>3d</strong> 4s 4p. Stąd Fe: 1s² 2s² 2p⁶ 3s² 3p⁶ <strong>3d⁶ 4s²</strong> — to ta sama konfiguracja co [Ar] 4s² 3d⁶, zapisana w kolejności numerów powłok. Nie zmienia to zawartości elektronowej.</p>
+<p>Liczba powłoki (K, L, M, N) zależy od <strong>numeru n</strong>, a nie od kolejności zapisu. Dlatego 3d należy do powłoki M, mimo że zapełnia się po 4s, a 4s należy do N. Jeśli liczysz powłoki, sumujesz elektrony według pierwszej cyfry w symbolu: 3s, 3p, 3d → M; 4s, 4p → N.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">Wykład — wyjątki: dlaczego Cr i Cu, a nie inne</span>
+<p>Model „od dołu do góry" przewiduje dla chromu [Ar] 4s² 3d⁴, a dla miedzi [Ar] 4s² 3d⁹. Tymczasem w stanie podstawowym obserwuje się [Ar] 4s¹ 3d⁵ dla Cr i [Ar] 4s¹ 3d¹⁰ dla Cu. W obu przypadkach jeden elektron z 4s przechodzi do 3d.</p>
+<p>Szkolne wyjaśnienie: najkorzystniej energetycznie są podpowłoki d <strong>zapełnione w połowie</strong> (d⁵) i <strong>całkowicie</strong> (d¹⁰). Dla Cr zysk z d⁵ jest większy niż koszt zmiany 4s². Dla Cu zysk z d¹⁰ przewyższa koszt. Wikipedia (data page, pobrane 2026-10-13) podaje, że różnice energii między konfiguracjami są małe i wiele konfiguracji leży w bliskim sąsiedztwie, a jako wyraźny wyjątek omawia właśnie chrom.</p>
+<p>Wniosek dla ucznia: w zakresie do Z = 36 <strong>wyjątkami szkolnymi są Cr i Cu</strong>. Pozostałe pierwiastki 3d (Sc–Zn) podlegają regule prostej, z jednym przypadkiem wymagającym uwagi — niklem.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">Subtelność, nie wyjątek — nikiel (Ni, Z = 28)</span>
+<p>Nikiel w pobranym źródle (Wikipedia, data page) ma konfigurację <strong>[Ar] 4s² 3d⁸</strong>. Ta sama strona nie wymienia niklu jako wyjątku. W niektórych zapisach pojawia się konfiguracja [Ar] 4s¹ 3d⁹, bo energie 3d⁸4s² i 3d⁹4s¹ leżą bardzo blisko siebie. Ten wariant nie został potwierdzony w pobranym źródle, więc zapisuję go tylko jako uwagę.</p>
+<p>Praktyczna zasada dla konkursu: zapisuj <strong>4s² 3d⁸</strong>, chyba że treść zadania lub klucz podaje inaczej. Nikiel jest tu subtelnością — pokazuje, że reguła prosta bywa przybliżona — ale nie należy go traktować jako trzeciego obowiązkowego wyjątku.</p>
+</div>
+<div class="card card-core">
+<span class="card-label">Tabela Z = 1–36 — rozkład na powłoki i podpowłoki</span>
+<p>Kolumny K, L, M, N to liczba elektronów na powłokach 1, 2, 3, 4 (zapis 1234 to te same liczby). Zapis podpowłokowy podano w skróconej formie [gaz szlachetny]. Pierwiastki grup 3–12 (Sc–Zn) są pokazane dla kontekstu wyjątków; w zakresie konkursu obowiązują grupy 1, 2 i 13–18.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Z</th><th>Pierwiastek</th><th>K</th><th>L</th><th>M</th><th>N</th><th>Konfiguracja</th><th>Uwaga</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>H</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1s¹</td><td></td></tr>
+<tr><td>2</td><td>He</td><td>2</td><td>0</td><td>0</td><td>0</td><td>1s²</td><td></td></tr>
+<tr><td>3</td><td>Li</td><td>2</td><td>1</td><td>0</td><td>0</td><td>1s² 2s¹</td><td></td></tr>
+<tr><td>4</td><td>Be</td><td>2</td><td>2</td><td>0</td><td>0</td><td>1s² 2s²</td><td></td></tr>
+<tr><td>5</td><td>B</td><td>2</td><td>3</td><td>0</td><td>0</td><td>1s² 2s² 2p¹</td><td></td></tr>
+<tr><td>6</td><td>C</td><td>2</td><td>4</td><td>0</td><td>0</td><td>1s² 2s² 2p²</td><td></td></tr>
+<tr><td>7</td><td>N</td><td>2</td><td>5</td><td>0</td><td>0</td><td>1s² 2s² 2p³</td><td></td></tr>
+<tr><td>8</td><td>O</td><td>2</td><td>6</td><td>0</td><td>0</td><td>1s² 2s² 2p⁴</td><td></td></tr>
+<tr><td>9</td><td>F</td><td>2</td><td>7</td><td>0</td><td>0</td><td>1s² 2s² 2p⁵</td><td></td></tr>
+<tr><td>10</td><td>Ne</td><td>2</td><td>8</td><td>0</td><td>0</td><td>1s² 2s² 2p⁶</td><td></td></tr>
+<tr><td>11</td><td>Na</td><td>2</td><td>8</td><td>1</td><td>0</td><td>[Ne] 3s¹</td><td></td></tr>
+<tr><td>12</td><td>Mg</td><td>2</td><td>8</td><td>2</td><td>0</td><td>[Ne] 3s²</td><td></td></tr>
+<tr><td>13</td><td>Al</td><td>2</td><td>8</td><td>3</td><td>0</td><td>[Ne] 3s² 3p¹</td><td></td></tr>
+<tr><td>14</td><td>Si</td><td>2</td><td>8</td><td>4</td><td>0</td><td>[Ne] 3s² 3p²</td><td></td></tr>
+<tr><td>15</td><td>P</td><td>2</td><td>8</td><td>5</td><td>0</td><td>[Ne] 3s² 3p³</td><td></td></tr>
+<tr><td>16</td><td>S</td><td>2</td><td>8</td><td>6</td><td>0</td><td>[Ne] 3s² 3p⁴</td><td></td></tr>
+<tr><td>17</td><td>Cl</td><td>2</td><td>8</td><td>7</td><td>0</td><td>[Ne] 3s² 3p⁵</td><td></td></tr>
+<tr><td>18</td><td>Ar</td><td>2</td><td>8</td><td>8</td><td>0</td><td>[Ne] 3s² 3p⁶</td><td></td></tr>
+<tr><td>19</td><td>K</td><td>2</td><td>8</td><td>8</td><td>1</td><td>[Ar] 4s¹</td><td></td></tr>
+<tr><td>20</td><td>Ca</td><td>2</td><td>8</td><td>8</td><td>2</td><td>[Ar] 4s²</td><td>M dopiero zaczyna się zapełniać 3d</td></tr>
+<tr><td>21</td><td>Sc</td><td>2</td><td>8</td><td>9</td><td>2</td><td>[Ar] 4s² 3d¹</td><td>grupa 3, poza zakresem</td></tr>
+<tr><td>22</td><td>Ti</td><td>2</td><td>8</td><td>10</td><td>2</td><td>[Ar] 4s² 3d²</td><td>poza zakresem</td></tr>
+<tr><td>23</td><td>V</td><td>2</td><td>8</td><td>11</td><td>2</td><td>[Ar] 4s² 3d³</td><td>poza zakresem</td></tr>
+<tr><td>24</td><td>Cr</td><td>2</td><td>8</td><td>13</td><td>1</td><td>[Ar] 4s¹ 3d⁵</td><td><strong>wyjątek szkolny</strong></td></tr>
+<tr><td>25</td><td>Mn</td><td>2</td><td>8</td><td>13</td><td>2</td><td>[Ar] 4s² 3d⁵</td><td>poza zakresem</td></tr>
+<tr><td>26</td><td>Fe</td><td>2</td><td>8</td><td>14</td><td>2</td><td>[Ar] 4s² 3d⁶</td><td>poza zakresem</td></tr>
+<tr><td>27</td><td>Co</td><td>2</td><td>8</td><td>15</td><td>2</td><td>[Ar] 4s² 3d⁷</td><td>poza zakresem</td></tr>
+<tr><td>28</td><td>Ni</td><td>2</td><td>8</td><td>16</td><td>2</td><td>[Ar] 4s² 3d⁸</td><td><strong>subtelność</strong> (patrz wyżej)</td></tr>
+<tr><td>29</td><td>Cu</td><td>2</td><td>8</td><td>18</td><td>1</td><td>[Ar] 4s¹ 3d¹⁰</td><td><strong>wyjątek szkolny</strong></td></tr>
+<tr><td>30</td><td>Zn</td><td>2</td><td>8</td><td>18</td><td>2</td><td>[Ar] 4s² 3d¹⁰</td><td>poza zakresem</td></tr>
+<tr><td>31</td><td>Ga</td><td>2</td><td>8</td><td>18</td><td>3</td><td>[Ar] 4s² 3d¹⁰ 4p¹</td><td>zakres (grupa 13)</td></tr>
+<tr><td>32</td><td>Ge</td><td>2</td><td>8</td><td>18</td><td>4</td><td>[Ar] 4s² 3d¹⁰ 4p²</td><td>zakres (grupa 14)</td></tr>
+<tr><td>33</td><td>As</td><td>2</td><td>8</td><td>18</td><td>5</td><td>[Ar] 4s² 3d¹⁰ 4p³</td><td>zakres (grupa 15)</td></tr>
+<tr><td>34</td><td>Se</td><td>2</td><td>8</td><td>18</td><td>6</td><td>[Ar] 4s² 3d¹⁰ 4p⁴</td><td>zakres (grupa 16)</td></tr>
+<tr><td>35</td><td>Br</td><td>2</td><td>8</td><td>18</td><td>7</td><td>[Ar] 4s² 3d¹⁰ 4p⁵</td><td>zakres (grupa 17)</td></tr>
+<tr><td>36</td><td>Kr</td><td>2</td><td>8</td><td>18</td><td>8</td><td>[Ar] 4s² 3d¹⁰ 4p⁶</td><td>zakres (grupa 18)</td></tr>
+</tbody></table></div>
+<p><strong>Dlaczego Cr ma M = 13?</strong> Powłoka M zawiera 3s², 3p⁶ i 3d⁵: 2 + 6 + 5 = 13. Podpowłoka 4s¹ należy do N, więc N = 1. Stąd rozkład 2,8,13,1.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — jak czytać wiersz tabeli</span>
+<p>Sprawdź sumę K + L + M + N = Z. Dla Cr: 2 + 8 + 13 + 1 = 24. Dla Cu: 2 + 8 + 18 + 1 = 29. Jeśli suma się zgadza, a konfiguracja pokazuje 4s¹ przy d⁵ lub d¹⁰, masz wyjątek szkolny.</p>
+</div>
+<hr class="lk-hr"/>
+</section>
+<section id="wyklad2">
+<div class="part-heading"><span class="part-num">2</span> Wykład — jony: reguła najbliższego gazu szlachetnego</div>
+<div class="card card-understand">
+<span class="card-label">Wykład — dlaczego atomy tworzą jony</span>
+<p>Atom obojętny ma tyle elektronów, ile protonów. Gdy traci lub przyjmuje elektrony, staje się jonem. Dlaczego to robi? Najprościej: układ dąży do stanu o niższej energii, a najbardziej stabilna jest konfiguracja gazu szlachetnego — pełna zewnętrzna powłoka (oktet, a dla helu dublet). Pierwiastki, które mają w zewnętrznej powłoce mało elektronów, oddają je i stają się kationami. Pierwiastki, którym brakuje kilku elektronów do zapełnienia, przyjmują je i stają się anionami.</p>
+<p>W praktyce: metale grup 1, 2 i 13 oddają elektrony (kationy o ładunku równym numerowi grupy, a dla grupy 13 — 3+); niemetale grup 15, 16 i 17 przyjmują elektrony (aniony o ładunku równym 18 minus numer grupy, czyli 3−, 2−, 1−). Grupa 14 nie tworzy prostych jonów w tym zakresie: C i Si łączą się wiązaniami kowalencyjnymi. Grupa 18 nie tworzy jonów, bo jej powłoki są już pełne.</p>
+</div>
+<h3>2.1 Mechanizm</h3>
+<p>Atom buduje jon, by osiągnąć konfigurację <strong>najbliższego gazu szlachetnego</strong>: duet dla helu, oktet dla pozostałych w zakresie. Kation to atom, który oddał elektrony (liczba elektronów maleje, ładunek dodatni). Anion to atom, który przyjął elektrony (liczba elektronów rośnie, ładunek ujemny).</p>
+<h3>2.2 Tabela jonów zakresu</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Grupa</th><th>Ładunek</th><th>Okres 2</th><th>Okres 3</th><th>Okres 4</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>1+</td><td>Li⁺ <strong>2</strong></td><td>Na⁺ <strong>2,8</strong></td><td>K⁺ <strong>2,8,8</strong></td></tr>
+<tr><td>2</td><td>2+</td><td>Be²⁺ <strong>2</strong></td><td>Mg²⁺ <strong>2,8</strong></td><td>Ca²⁺ <strong>2,8,8</strong></td></tr>
+<tr><td>13</td><td>3+</td><td>(bor nie tworzy prostego kationu w tym zakresie)</td><td>Al³⁺ <strong>2,8</strong></td><td>Ga³⁺ <strong>2,8,18</strong> ⚠</td></tr>
+<tr><td>14</td><td>—</td><td>C, Si: wiązania kowalencyjne, prostych jonów szkolnych brak</td><td>←</td><td>←</td></tr>
+<tr><td>15</td><td>3−</td><td>N³⁻ <strong>2,8</strong></td><td>P³⁻ <strong>2,8,8</strong></td><td>As³⁻ <strong>2,8,18,8</strong></td></tr>
+<tr><td>16</td><td>2−</td><td>O²⁻ <strong>2,8</strong></td><td>S²⁻ <strong>2,8,8</strong></td><td>Se²⁻ <strong>2,8,18,8</strong></td></tr>
+<tr><td>17</td><td>1−</td><td>F⁻ <strong>2,8</strong></td><td>Cl⁻ <strong>2,8,8</strong></td><td>Br⁻ <strong>2,8,18,8</strong></td></tr>
+<tr><td>18</td><td>—</td><td>jony nie powstają — powłoki pełne</td><td>←</td><td>←</td></tr>
+</tbody></table></div>
+<p><strong>⚠ Jedyny nie-gazowy jon w tabeli: Ga³⁺ (2,8,18).</strong> Gal ma 3 elektrony walencyjne i oddaje je wszystkie, ale nowa pełna powłoka M (18 elektronów) nie jest konfiguracją żadnego gazu szlachetnego w zakresie: Ar ma na powłoce M tylko 8 elektronów, a Kr zawiera 18 elektronów na M tylko razem z 4s i 4p na N. Zapisujemy 2,8,18 i zapamiętujemy jako jedyny wyjątek w zakresie.</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie — dlaczego Ga³⁺ nie „idzie do oktetu"</span>
+<p>Ga³⁺ ma 28 elektronów. Konfiguracja 2,8,18 jest pełna na M, ale gaz szlachetny o 28 elektronach nie istnieje. Dlatego w zadaniach nie zapisuj „2,8" dla Ga³⁺ ani nie szukaj do niego izoelektronowego gazu.</p>
+</div>
+<h3>2.3 Izoelektronowość — potężne skrócenie</h3>
+<p>Jony (i atomy) o <strong>identycznej konfiguracji</strong> nazywamy izoelektronowymi. Trzy rodziny do zapamiętania na pamięć:</p>
+<ul>
+<li>rodzina Ne (10 e⁻, „2,8"): <strong>N³⁻, O²⁻, F⁻, Na⁺, Mg²⁺, Al³⁺</strong>;</li>
+<li>rodzina Ar (18 e⁻, „2,8,8"): <strong>P³⁻, S²⁻, Cl⁻, K⁺, Ca²⁺</strong>;</li>
+<li>rodzina Kr (36 e⁻, „2,8,18,8"): <strong>As³⁻, Se²⁻, Br⁻</strong> (i sam Kr).</li>
+</ul>
+<p>Zadanie konkursowe „jon X ma 18 elektronów, wskaż pierwiastek" rozwiązujesz wstecz: liczba elektronów jonu = Z ∓ ładunek. Dla X⁻ z 18 elektronami: Z = 17 (Cl). Dla Y²⁻ z 18: Z = 16 (S).</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie — izoelektronowość działa w obie strony</span>
+<p>Rodzina Ar to jednocześnie kationy (K⁺, Ca²⁺) i aniony (Cl⁻, S²⁻, P³⁻). Sama konfiguracja 2,8,8 nie mówi, czy to kation czy anion — mówi tylko, do której rodziny należy jon. Ładunek ustalasz z grupy.</p>
+</div>
+<hr class="lk-hr"/>
+</section>
+<section id="wyklad3">
+<div class="part-heading"><span class="part-num">3</span> Wykład — od konfiguracji do wzoru związku</div>
+<div class="card card-understand">
+<span class="card-label">Wykład — wzór jako bilans elektronów</span>
+<p>Wzór związku jonowego to najprostszy zapis proporcji, w jakiej kationy i aniony się łączą tak, by ładunek całkowity był zero. Ładunki dodatnie muszą się zrównoważyć ujemnymi. Konfiguracja pozwala to sprawdzić elektronicznie: liczba elektronów oddanych przez kationy musi być równa liczbie elektronów przyjętych przez aniony.</p>
+<p>Metoda krzyżowania ładunków: ładunek kationu (liczba bez znaku) staje się indeksem anionu, a ładunek anionu staje się indeksem kationu. Potem wzór upraszcza się, jeśli indeksy mają wspólny dzielnik. Na przykład Al³⁺ i O²⁻ dają Al₂O₃, a nie AlO₃²⁻. Ta reguła działa dla związków jonowych w zakresie.</p>
+</div>
+<h3>3.1 Procedura</h3>
+<ol>
+<li>Zapisz konfigurację atomu każdego pierwiastka.</li>
+<li>Wyznacz ładunek jonu (grupa; reguła gazu szlachetnego).</li>
+<li>Zbuduj wzór: ładunki muszą się zbilansować (krzyżowanie ładunków, upraszczanie).</li>
+<li>Kontrola elektroniczna: liczba oddanych elektronów = liczba przyjętych.</li>
+</ol>
+<h3>3.2 Przykład wzorcowy: siarczek potasu</h3>
+<ul>
+<li>K: 2,8,8,<strong>1</strong> → oddaje 1 e⁻ → <strong>K⁺</strong> (2,8,8).</li>
+<li>S: 2,8,<strong>6</strong> → przyjmuje 2 e⁻ → <strong>S²⁻</strong> (2,8,8).</li>
+<li>Na 1 atom S przypadają 2 atomy K (2 × 1⁺ = 1 × 2⁻) → wzór <strong>K₂S</strong>.</li>
+<li>Kontrola: oddano 2 e⁻ (2 × 1), przyjęto 2 e⁻ (1 × 2). Bilans domknięty.</li>
+</ul>
+<h3>3.3 Drugi przykład: chlorek galu</h3>
+<ul>
+<li>Ga: 2,8,18,<strong>3</strong> → <strong>Ga³⁺</strong> (2,8,18).</li>
+<li>Cl: 2,8,<strong>7</strong> → <strong>Cl⁻</strong> (2,8,8).</li>
+<li>Bilans: 1 × Ga³⁺ potrzebuje 3 × Cl⁻ → <strong>GaCl₃</strong>. Równanie reakcji: 2Ga + 3Cl₂ → 2GaCl₃.</li>
+</ul>
+<h3>3.4 Typowe zadanie LKO „z brzegiem"</h3>
+<p><em>Kation X⁺ ma 18 elektronów, anion Y²⁻ ma 18 elektronów. Podaj wzór i nazwę związku.</em></p>
+<ul>
+<li>X⁺: Z − 1 = 18 → Z = 19 → K → <strong>K⁺</strong>.</li>
+<li>Y²⁻: Z + 2 = 18 → Z = 16 → S → <strong>S²⁻</strong>.</li>
+<li>Wzór: <strong>K₂S</strong>, siarczek potasu.</li>
+</ul>
+<p>Ta sama maszyna działa w obie strony: konfiguracja → ładunek → wzór; albo jon → Z → pierwiastek.</p>
+<hr class="lk-hr"/>
+</section>
+<section id="kompendium">
+<div class="part-heading"><span class="part-num">4</span> Kompendium — ściąga-wynik</div>
+<div class="card card-core">
+<span class="card-label">Na jednej stronie</span>
+<p><strong>Kamienie milowe:</strong> He 2 · Ne 10 · Ar 18 · Kr 36.
+<strong>Cztery szkielety:</strong> [2,x] · [2,8,x] · [2,8,8,x] (tylko K, Ca) · [2,8,18,x] (Ga…Kr).
+<strong>Elektrony walencyjne:</strong> grupy 1–2 → numer grupy; grupy 13–18 → numer grupy − 10. Liczba powłok = numer okresu.
+<strong>Jony:</strong> grupa 1 → 1+, 2 → 2+, 13 → 3+, 15 → 3−, 16 → 2−, 17 → 1−; grupy 14 i 18 — bez prostych jonów.
+<strong>Rodziny izoelektronowe:</strong> Ne: N³⁻ / O²⁻ / F⁻ / Na⁺ / Mg²⁺ / Al³⁺ (2,8) · Ar: P³⁻ / S²⁻ / Cl⁻ / K⁺ / Ca²⁺ (2,8,8) · Kr: As³⁻ / Se²⁻ / Br⁻ (2,8,18,8).
+<strong>Jedyny wyjątek w zakresie:</strong> Ga³⁺ = 2,8,18 (nie jest konfiguracją gazu szlachetnego).
+<strong>Wzór z bilansu:</strong> ładunki się znoszą; K₂S, GaCl₃.</p>
+</div>
+<hr class="lk-hr"/>
+</section>
+<section id="klinika">
+<div class="part-heading"><span class="part-num">5</span> Klinika błędów</div>
+<table class="klinika-table"><thead><tr><th>Błąd</th><th>Poprawnie</th><th>Dlaczego?</th></tr></thead><tbody><tr class="error-row"><td class="col-blad" data-label="Błąd">„M to zawsze 8 elektronów."</td><td class="col-ok" data-label="Poprawa">Po Ca powłoka M zapełnia się do 18 (blok d).</td><td data-label="Dlaczego">Zakres do Z = 20 tylko tak wygląda; kontrola: suma = Z.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Br⁻ = 2,8,8,8."</td><td class="col-ok" data-label="Poprawa">Br⁻ = 2,8,18,8.</td><td data-label="Dlaczego">Szkielet 4. okresu grup 13–18 to 2,8,18,x.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Ga ma x = 13, bo jest w grupie 13."</td><td class="col-ok" data-label="Poprawa">Ga ma x = 3 (13 − 10).</td><td data-label="Dlaczego">Elektrony walencyjne grup 13–18 to numer grupy minus 10.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Fe to 2,8,8,8 — tak jak kryptonu."</td><td class="col-ok" data-label="Poprawa">Fe = 2,8,14,2 (poza zakresem).</td><td data-label="Dlaczego">Metale przejściowe nie pasują do czterech szkieletów; nie zgaduj ich wzorcami.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Ca²⁺ = 2,8,8,0."</td><td class="col-ok" data-label="Poprawa">Ca²⁺ = 2,8,8.</td><td data-label="Dlaczego">Powłokę bez elektronów pomijamy; trzy powłoki, jak w Ar.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„C⁴⁻ i Si⁴⁻ to proste jony szkolne."</td><td class="col-ok" data-label="Poprawa">Grupa 14 nie tworzy prostych jonów w zakresie.</td><td data-label="Dlaczego">Węgiel i krzem łączą się wiązaniami kowalencyjnymi.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Izoelektronowość: K⁺ i Cl⁻ to ten sam rodzaj jonu."</td><td class="col-ok" data-label="Poprawa">Oba mają 18 e⁻ i konfigurację 2,8,8, ale K⁺ jest kationem, Cl⁻ anionem.</td><td data-label="Dlaczego">Konfiguracja wskazuje rodzinę, nie znak ładunku.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Ga³⁺ ma oktet jak gaz szlachetny."</td><td class="col-ok" data-label="Poprawa">Ga³⁺ = 2,8,18; to jedyny jon w zakresie bez konfiguracji gazu szlachetnego.</td><td data-label="Dlaczego">Pełna powłoka M nie oznacza gazu o 28 elektronach.</td></tr></tbody></table>
+<hr class="lk-hr"/>
+</section>
+<section id="cwiczenia">
+<div class="part-heading"><span class="part-num">6</span> Ćwiczenia — formy konkursu LKO (etap I)</div>
+<div class="card card-exam">
+<span class="card-label">A. Zamknięte — jedna odpowiedź (5 pkt)</span>
+<p>A1. Konfiguracja atomu bromu (Z = 35):
+a) 2,8,8,17   b) 2,8,18,7   c) 2,8,15,12   d) 2,8,8,8</p>
+<p>A2. Liczba elektronów w kationie K⁺ wynosi:
+a) 19   b) 20   c) 18   d) 8</p>
+<p>A3. Anion X⁻ ma 36 elektronów. X to:
+a) Br   b) Se   c) Kr   d) As</p>
+<p>A4. Pierwiastek X ma 3 powłoki i 4 elektrony walencyjne. X to:
+a) C   b) Ge   c) Si   d) Sn</p>
+<p>A5. Którym gazem szlachetnym jest izoelektronowy jon S²⁻?
+a) Ne   b) Ar   c) Kr   d) Xe</p>
+<details class="answer"><summary>Klucz — A</summary>
+<p>A1: <strong>b</strong> (okres 4, grupa 17 → 2,8,18,7). A2: <strong>c</strong> (19 − 1 = 18). A3: <strong>a</strong> (Z + 1 = 36 → Z = 35; Se to 2−, As to 3−, Kr nie jest anionem). A4: <strong>c</strong> (szkielet 2,8,x → Si; Ge ma 4 powłoki). A5: <strong>b</strong> (16 + 2 = 18 e⁻ = Ar).</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">B. Prawda–fałsz (7 pkt)</span>
+<p>B1. W atomie wapnia powłoka M ma 8 elektronów.
+B2. W atomie galu powłoka M ma 18 elektronów.
+B3. Jon Mg²⁺ ma 12 elektronów.
+B4. Atom fluoru i jon F⁻ mają tę samą liczbę powłok.
+B5. Potas i siarka mogą tworzyć jony o identycznej konfiguracji.
+B6. Powłoka K atomu wodoru jest zapełniona całkowicie.
+B7. Krypton ma 8 elektronów walencyjnych.</p>
+<details class="answer"><summary>Klucz — B</summary>
+<p>B1: <strong>T</strong> (2,8,8,2). B2: <strong>T</strong> (2,8,18,3). B3: <strong>F</strong> (12 − 2 = 10 → 2,8). B4: <strong>T</strong> (obie mają 2 powłoki; F 2,7 → F⁻ 2,8). B5: <strong>T</strong> (K⁺ i S²⁻: oba 2,8,8). B6: <strong>F</strong> (1 z 2 elektronów; pełna dopiero w He). B7: <strong>T</strong> (2,8,18,8).</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">C. Luki (4 pkt)</span>
+<p>C1. Wapń: 2, 8, ___, ___.
+C2. Jon Br⁻: 2, 8, ___, ___.
+C3. Al: 2, 8, ___; Al³⁺: 2, ___.
+C4. Elektrony walencyjne w grupie 16: ___; przykładowy anion tej grupy: ___.</p>
+<details class="answer"><summary>Klucz — C</summary>
+<p>C1: 8, 2. C2: 18, 8. C3: 3; 8. C4: 6; O²⁻ (lub S²⁻, Se²⁻).</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">D. Dobieranie (5 pkt)</span>
+<p>D1. Dobierz pierwiastek lub jon do konfiguracji — po jednej parze dla każdego wiersza:
+Kr · Ca · Br (atom) · Ga³⁺ · Na⁺ oraz konfiguracje: 2,8 · 2,8,8,2 · 2,8,18,7 · 2,8,18 · 2,8,18,8</p>
+<details class="answer"><summary>Klucz — D</summary>
+<p>Kr → 2,8,18,8 · Ca → 2,8,8,2 · Br (atom) → 2,8,18,7 · Ga³⁺ → 2,8,18 · Na⁺ → 2,8.
+Uwaga: w pierwszej wersji tego zadania stało „Br⁻" zamiast „Br (atom)" — Br⁻ ma 2,8,18,8, więc pasowałby też do Kr i zadanie miałoby dwie poprawne odpowiedzi. Poprawiono.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">E. Otwarte krótkie (6 pkt)</span>
+<p>E1. Podaj konfigurację atomu arsenu (Z = 33) oraz jonu As³⁻.
+E2. Obojętny atom X należy do 3. okresu i ma konfigurację walencyjną 3s²3p⁶. Podaj nazwę i Z.
+E3. Kation jednowartościowy X⁺ ma konfigurację 2,8,8. Podaj Z i nazwę pierwiastka oraz konfigurację jego atomu.
+E4. Anion dwuujemny Y²⁻ ma 18 elektronów. Podaj Z, symbol jonu i jego nazwę.
+E5. Ułóż wzór związku utworzonego przez jony z E3 i E4 oraz podaj jego nazwę.
+E6. Wykorzystując konfigurację neonu, wyjaśnij, dlaczego neon nie tworzy jonów.</p>
+<details class="answer"><summary>Klucz — E</summary>
+<p>E1: As 2,8,18,5; As³⁻ 2,8,18,8 (izoelektronowy z Kr). E2: Z = 18, argon, 2,8,8 (oktet walencyjny 3s²3p⁶ — nie maksymalne obsadzenie całej M, która ma pojemność 18). E3: Z = 19, potas; atom 2,8,8,1. E4: Z = 16, jon S²⁻, anion siarczkowy (siarczek). E5: K₂S, siarczek potasu. E6: Ne ma 2,8 — powłoki pełne. Oddanie lub przyjęcie elektronu nie daje stabilniejszej konfiguracji, bo neon już spełnia regułę oktetu (2s² 2p⁶).</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">F. Otwarte rozszerzone (3 pkt)</span>
+<p>F1. Atomy potasu (Z = 19) i siarki (Z = 16) utworzyły związek. Zapisz konfiguracje obu atomów, wyznacz jony, wykaż elektronicznie, że wzór to K₂S, i sprawdź bilans elektronów.
+F2. Gal (Z = 31) spalono w chlorze. Zapisz konfiguracje Ga, Cl oraz powstających jonów, ułóż wzór chlorku galu i zapisz równanie reakcji.
+F3. Rozstrzygnij i uzasadnij: „Ga³⁺ ma konfigurację gazu szlachetnego" — prawda czy fałsz? Podaj jego konfigurację i porównaj z Ar oraz Kr.</p>
+<details class="answer"><summary>Klucz — F</summary>
+<p>F1: K 2,8,8,1 → K⁺ 2,8,8 (oddaje 1 e⁻); S 2,8,6 → S²⁻ 2,8,8 (przyjmuje 2 e⁻); dwa K oddają razem 2 e⁻, jeden S przyjmuje 2 e⁻ → K₂S. Bilans: 2 oddane = 2 przyjęte.
+F2: Ga 2,8,18,3 → Ga³⁺ 2,8,18; Cl 2,8,7 → Cl⁻ 2,8,8; wzór GaCl₃; 2Ga + 3Cl₂ → 2GaCl₃.
+F3 (zadanie transferowe): <strong>fałsz.</strong> Ga³⁺ ma 2,8,18 (28 e⁻). Ar ma 18 e⁻ (2,8,8), Kr ma 36 e⁻ (2,8,18,8) — żadna z tych konfiguracji nie odpowiada 2,8,18. Ga³⁺ ma pełną powłokę M, ale to nie konfiguracja gazu szlachetnego. Na poziomie szkolnym wystarcza stwierdzenie, że pełna M nie oznacza gazu szlachetnego w zakresie.</p>
+</details>
+</div>
+<details class="adv"><summary>G. Ambitne — Fe²⁺ i Mn²⁺ (4 pkt) <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Podaj konfigurację elektronową jonów Fe²⁺ (Z = 26) i Mn²⁺ (Z = 25) jako wolnych jonów. Ile elektronów niesparowanych ma każdy z nich (reguła Hunda)? Który jon ma więcej?</p>
+</div></details>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>Fe²⁺: 24 elektrony, konfiguracja [Ar]3d⁶ (1 pkt). Mn²⁺: 23 elektrony, konfiguracja [Ar]3d⁵ (1 pkt). Liczba niesparowanych: Fe²⁺ — 4, Mn²⁺ — 5 (1 pkt). Więcej niesparowanych elektronów ma Mn²⁺ (1 pkt). Kontrola: 18 + 6 = 24 i 18 + 5 = 23 ✔.</p>
+</details>
+<details class="adv"><summary>H. Ambitne — pierwiastek z konfiguracji (4 pkt) <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Pierwiastek X ma konfigurację elektronową [Ar]3d¹⁰4s²4p³. Ustal Z, symbol, okres i grupę oraz wzór jego tlenku, w którym X ma najwyższy stopień utlenienia.</p>
+</div></details>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>Z = 18 + 10 + 2 + 3 = 33 — arsen, As (1 pkt). Okres 4 (najwyższa powłoka 4), grupa: 3 + 2 = 5 elektronów walencyjnych → grupa 15 (1 pkt). Najwyższy stopień utlenienia As = V (równy liczbie elektronów walencyjnych) — tlenek As₂O₅ (1 pkt). Kontrola: 2·V = 10 = 5·II ✔ (1 pkt).</p>
+</details>
+<hr class="lk-hr"/>
+</section>
+<section id="mity">
+<div class="part-heading"><span class="part-num">7</span> Mity</div>
+<div class="myth-grid"><div class="myth"><p class="myth-x"><span>Mit</span>„Konfiguracja Cl⁻ to 2,8,7 — jon ma tyle samo elektronów walencyjnych co atom."</p><p class="myth-ok"><span>Poprawnie</span>Anion przyjmuje elektron: Cl⁻ ma 2,8,8, czyli 18 elektronów.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Ga³⁺ jest izoelektronowy z argonem, bo oba mają pełne powłoki."</p><p class="myth-ok"><span>Poprawnie</span>Ar ma 18 elektronów, Ga³⁺ ma 28. Izoelektronowość wymaga tej samej liczby elektronów, nie tylko „pełności".</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Liczba elektronów walencyjnych zawsze równa się numerowi grupy."</p><p class="myth-ok"><span>Poprawnie</span>Tylko dla grup 1 i 2. Dla grup 13–18 odejmujemy 10.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Do Z = 36 wyjątków jest dużo, trzeba znać wszystkie.”</p><p class="myth-ok"><span>Poprawnie</span>Szkolne wyjątki to Cr i Cu. Nikiel to subtelność (4s²3d⁸ w zapisie szkolnym), a reszta 3d leży w regule prostej.</p></div></div>
+<hr class="lk-hr"/>
+</section>
+<section id="mini">
+<div class="part-heading"><span class="part-num">8</span> Mini-wykład: po co to wszystko</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — konfiguracja jest adresem elektronów</span>
+<p>Gdy znasz konfigurację, znasz powłokę walencyjną, a z niej wynika grupa i okres (F08), tworzenie jonów (F09) i wiązań (F10–F11). Konfiguracja to most między budową atomu a resztą chemii, a na konkursie to najczęstszy punkt wyjścia zadań.</p>
+</div>
+<hr class="lk-hr"/>
+</section>
+<section id="dosw">
+<div class="part-heading"><span class="part-num">9</span> Doświadczenie modelowe — dlaczego jony wyglądają jak gazy</div>
+<div class="card card-core">
+<span class="card-label">Doświadczenie modelowe (bez odczynników)</span>
+<p><strong>Cel:</strong> sprawdzić, że jon i gaz mają tę samą konfigurację, gdy mają tyle samo elektronów.
+<strong>Sprzęt:</strong> karta z tabelą Z, przyrząd do zliczania (liczenie na kartce).
+<strong>Przebieg:</strong> zapisz konfigurację Cl⁻, a potem Ar. Porównaj liczby na każdej powłoce.
+<strong>Obserwacja:</strong> 2,8,8 i 2,8,8 — identyczne.
+<strong>Wniosek:</strong> jon Cl⁻ naśladuje konfigurację argonu, bo ma tyle samo elektronów (18) i tę samą liczbę na każdej powłoce.</p>
+</div>
+<hr class="lk-hr"/>
+</section>
+<section id="granice">
+<div class="part-heading"><span class="part-num">10</span> Granice uproszczenia (dla nauczyciela i ucznia)</div>
+<div class="card card-understand">
+<span class="card-label">Czego świadomie nie robimy</span>
+<p>Model powłokowy jest <strong>modelem</strong>, nie dokładnym obrazem atomu (por. F01: model ≠ rzeczywistość). Nie wprowadzamy tu podpowłok s, p, d w pełnym zapisie orbitalnym, wyjątków Cr i Cu, jonów wieloatomowych ani potencjałów jonizacyjnych. Jeśli uczeń zapyta „skąd 18", odpowiedź z 1.3 jest w pełni poprawna w ramach zakresu konkursu. Pełny obraz (podpowłoki i reguła Hunda w zapisie orbitali) pojawi się na LO.</p>
+</div>
+<hr class="lk-hr"/>
+</section>
+<section id="test">
+<div class="part-heading"><span class="part-num">10a</span> Test — sprawdź się</div>
+<div class="che-quiz" id="quizWrap"><div class="quiz-q" data-ok="2" data-fb="Br ma 35 elektronów; jon z ładunkiem 1− ma o jeden więcej: 36."><h5>1. Ile elektronów ma jon Br⁻ (Z = 35)?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">34</button><button type="button" class="quiz-opt" data-a="1">35</button><button type="button" class="quiz-opt" data-a="2">36</button><button type="button" class="quiz-opt" data-a="3">37</button></div></div><div class="quiz-q" data-ok="2" data-fb="Okres 4, grupa 15 → x = 15 − 10 = 5; szkielet 2,8,18,x."><h5>2. Konfiguracja atomu arsenu (Z = 33) to:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">2,8,18,3</button><button type="button" class="quiz-opt" data-a="1">2,8,8,5</button><button type="button" class="quiz-opt" data-a="2">2,8,18,5</button><button type="button" class="quiz-opt" data-a="3">2,8,18,8</button></div></div><div class="quiz-q" data-ok="0" data-fb="Mg²⁺ ma 10 elektronów (konfiguracja neonu); K⁺, S²⁻ i Cl⁻ mają po 18."><h5>3. Który jon NIE jest izoelektronowy z argonem?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Mg²⁺</button><button type="button" class="quiz-opt" data-a="1">K⁺</button><button type="button" class="quiz-opt" data-a="2">S²⁻</button><button type="button" class="quiz-opt" data-a="3">Cl⁻</button></div></div><div class="quiz-q" data-ok="2" data-fb="Ga ma Z = 31; po oddaniu trzech elektronów zostaje 28 (2,8,18)."><h5>4. Ile elektronów ma jon Ga³⁺?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">31</button><button type="button" class="quiz-opt" data-a="1">18</button><button type="button" class="quiz-opt" data-a="2">28</button><button type="button" class="quiz-opt" data-a="3">25</button></div></div><div class="quiz-q" data-ok="2" data-fb="K⁺ i S²⁻: bilans 2 × (1+) = 1 × (2−) daje K₂S."><h5>5. Jaki wzór ma związek potasu z siarką?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">KS</button><button type="button" class="quiz-opt" data-a="1">KS₂</button><button type="button" class="quiz-opt" data-a="2">K₂S</button><button type="button" class="quiz-opt" data-a="3">K₃S</button></div></div></div><div class="quiz-score" id="quizScore"></div>
+</section>
+<section id="fiszki">
+<div class="part-heading"><span class="part-num">11</span> Fiszki</div>
+<div class="card card-understand">
+<span class="card-label">Pojemność, obsadzenie, oktet — trzy różne pojęcia</span>
+<ul>
+<li>pojemność — ile elektronów maksymalnie może pomieścić powłoka;</li>
+<li>obsadzenie — ile elektronów rzeczywiście znajduje się na niej w danym atomie lub jonie;</li>
+<li>oktet — osiem elektronów w konfiguracji walencyjnej typu ns²np⁶.
+Dla Ar powłoka M ma 8 elektronów, choć jej pojemność wynosi 18. Nie ma tu sprzeczności.
+Jon Cl⁻ naśladuje konfigurację argonu, bo ma tyle samo elektronów (18) i tę samą liczbę na każdej powłoce. Ga³⁺ nie jest izoelektronowy z argonem tylko dlatego, że ma pełną powłokę M — izoelektronowość wymaga tej samej liczby elektronów.
+Zadania z Fe²⁺ i Mn²⁺ dotyczą wolnych jonów, zgodnie z regułą Hunda, a nie dowolnych kompleksów metali.</li>
+</ul>
+</div>
+<div id="flashcards" class="flashcard-grid"><button class="flashcard" type="button"><span class="front">Ile elektronów ma powłoka M w tym zakresie?</span><span class="back">18 (po dopełnieniu bloku d)</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Cztery gazy szlachetne kamieni milowych do Z = 36?</span><span class="back">He 2 · Ne 10 · Ar 18 · Kr 36</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Jaka konfiguracja szkieletu obowiązuje grupy 13–18 w 4. okresie?</span><span class="back">2,8,18,x</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Ile elektronów walencyjnych ma atom z grupy 16?</span><span class="back">6</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Ile elektronów walencyjnych ma atom z grupy 13?</span><span class="back">3 (numer grupy − 10)</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Konfiguracja Ga?</span><span class="back">2,8,18,3 · pełna: [Ar] 3d¹⁰ 4s² 4p¹</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Konfiguracja Br⁻?</span><span class="back">2,8,18,8 (= Kr)</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Jon Ca²⁺ — ile elektronów i jaka konfiguracja?</span><span class="back">18 e⁻ · 2,8,8</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Ładunek jonu z grupy 15?</span><span class="back">3− (przyjmuje trzy elektrony do oktetu)</span><span class="card-tag tag-understand">rozumienie</span></button><button class="flashcard" type="button"><span class="front">Dlaczego grupa 14 nie tworzy prostych jonów w zakresie?</span><span class="back">C i Si łączą się wiązaniami kowalencyjnymi</span><span class="card-tag tag-understand">rozumienie</span></button><button class="flashcard" type="button"><span class="front">Wzór związku z Al³⁺ i O²⁻?</span><span class="back">Al₂O₃</span><span class="card-tag tag-understand">rozumienie</span></button><button class="flashcard" type="button"><span class="front">Rodzina izoelektronowa Ne (10 e⁻)?</span><span class="back">N³⁻, O²⁻, F⁻, Na⁺, Mg²⁺, Al³⁺</span><span class="card-tag tag-extra">olimpijskie</span></button><button class="flashcard" type="button"><span class="front">Jedyny jon w zakresie bez konfiguracji gazu szlachetnego?</span><span class="back">Ga³⁺ = 2,8,18</span><span class="card-tag tag-extra">olimpijskie</span></button><button class="flashcard" type="button"><span class="front">Dlaczego po K i Ca elektrony wchodzą na 4s, a potem na 3d?</span><span class="back">4s ma niższą energię niż 3d (ekranowanie)</span><span class="card-tag tag-extra">olimpijskie</span></button></div>
+<hr class="lk-hr"/>
+</section>
+<section id="slownik">
+<div class="part-heading"><span class="part-num">12</span> Słownik</div>
+<dl><div class="def-item"><dt>Konfiguracja powłokowa</dt><dd>rozmieszczenie elektronów na powłokach K, L, M, N; w zakresie LKO do Z = 36</dd></div><div class="def-item"><dt>Szkielet konfiguracji</dt><dd>zapis liczb na powłokach z x na ostatnim miejscu; cztery szkielety dla grup 1, 2, 13–18</dd></div><div class="def-item"><dt>Elektrony walencyjne</dt><dd>elektrony na zewnętrznej powłoce; grupy 1–2 — numer grupy, grupy 13–18 — numer grupy − 10</dd></div><div class="def-item"><dt>Kation</dt><dd>jon dodatni powstały przez oddanie elektronów</dd></div><div class="def-item"><dt>Anion</dt><dd>jon ujemny powstały przez przyjęcie elektronów</dd></div><div class="def-item"><dt>Jon jednoatomowy</dt><dd>jon zbudowany z jednego pierwiastka (np. Cl⁻, Ga³⁺)</dd></div><div class="def-item"><dt>Izoelektronowość</dt><dd>zjawisko, w którym jony lub atomy mają tyle samo elektronów i tę samą konfigurację</dd></div><div class="def-item"><dt>Gaz szlachetny</dt><dd>pierwiastek 18. grupy z pełną zewnętrzną powłoką; wzorzec dla jonów</dd></div><div class="def-item"><dt>Zapis skrócony</dt><dd>konfiguracja z gazem szlachetnym w nawiasie kwadratowym</dd></div><div class="def-item"><dt>Model powłokowy</dt><dd>uproszczony opis atomu z elektronami na powłokach; przybliżenie, nie dokładny obraz</dd></div><div class="def-item"><dt>Wyjątek konfiguracyjny</dt><dd>odstępstwo od prostego zapisu według kolejności energetycznej; w zakresie do Z = 36 — Cr i Cu</dd></div><div class="def-item"><dt>Subtelność konfiguracyjna</dt><dd>dwie konfiguracje o bardzo zbliżonej energii (Ni: 4s²3d⁸ w zapisie szkolnym); nie jest wyjątkiem szkolnym</dd></div></dl>
+<hr class="lk-hr"/>
+</section>
+<section id="mapa">
+<div class="part-heading"><span class="part-num">13</span> Mapa pojęć</div>
+<div class="lk-tree"><ul><li><span>KONFIGURACJA DO Z = 36</span><ul><li><span>ZAKRES: grupy 1, 2, 13–18 · Z ≤ 36</span><ul><li><span>KAMIENIE MILOWE: He 2 · Ne 10 · Ar 18 · Kr 36</span></li><li><span>SZKIELETY: [2,x] · [2,8,x] · [2,8,8,x] · [2,8,18,x]</span></li><li><span>x = numer grupy (1–2) lub numer grupy − 10 (13–18)</span></li></ul></li><li><span>JONY</span><ul><li><span>grupa 1 → 1+ · 2 → 2+ · 13 → 3+ · 15 → 3− · 16 → 2− · 17 → 1−</span></li><li><span>IZOELEKTRONOWOŚĆ: Ne · Ar · Kr</span></li><li><span>WYJĄTEK: Ga³⁺ = 2,8,18</span></li></ul></li><li><span>WZÓR ZWIĄZKU</span><ul><li><span>bilans elektronów · krzyżowanie ładunków · K₂S · GaCl₃</span></li></ul></li></ul></li></ul></div>
+<hr class="lk-hr"/>
+</section>
+<section id="checklista">
+<div class="part-heading"><span class="part-num">14</span> Checklista — umiem…</div>
+<checklista>
+<ul>
+<li>[ ] podać konfigurację powłokową pierwiastka grup 1, 2, 13–18 o Z ≤ 36 ze szkieletu;</li>
+<li>[ ] obliczyć x (grupy 1–2: numer grupy; grupy 13–18: numer grupy − 10);</li>
+<li>[ ] wskazać ładunek jonu z grupy i zapisać konfigurację jonu;</li>
+<li>[ ] rozpoznać rodzinę izoelektronową (Ne, Ar, Kr);</li>
+<li>[ ] wyjaśnić, dlaczego Ga³⁺ nie jest konfiguracją gazu szlachetnego;</li>
+<li>[ ] zbilansować ładunki i ułożyć wzór (K₂S, GaCl₃);</li>
+<li>[ ] podać granice modelu powłokowego.</li>
+</ul>
+</checklista>
+<hr class="lk-hr"/>
+</section>
+<section id="mosty">
+<div class="part-heading"><span class="part-num">15</span> Mosty do innych lekcji</div>
+<ul>
+<li><strong>F07 (konfiguracja)</strong> — ta lekcja rozszerza zakres do Z = 36 i wprowadza cztery szkielety.</li>
+<li><strong>F08 (układ okresowy)</strong> — szkielet daje okres, x daje grupę; tu ta zależność zostaje użyta w praktyce.</li>
+<li><strong>F09 (jony)</strong> — rozszerzenie tabeli jonów o grupy 13–17 i o jon Ga³⁺.</li>
+<li><strong>F12 (wzory chemiczne)</strong> — wzór z bilansu elektronów (3.2–3.4) to ten sam mechanizm, który w F12 stosuje się do wartościowości.</li>
+<li><strong>F11 (wiązania)</strong> — grupa 14 i wiązania kowalencyjne (klinika, mity).</li>
+<li><strong>P03 (LO, podpowłoki)</strong> — pełny opis podpowłok, reguła Hunda w zapisie orbitali, skąd bierze się liczba 18.</li>
+</ul>
+<hr class="lk-hr"/>
+</section>
+<section id="ciekawostki">
+<div class="part-heading"><span class="part-num">16</span> Ciekawostki</div>
+<div class="card card-extra">
+<span class="card-label">Gal topi się w dłoni (orientacyjnie)</span>
+<p>Gal ma niską temperaturę topnienia (ok. 30 °C — wartość orientacyjna, do sprawdzenia w tablicach). Dlatego w zadaniach z galem ważne jest zapamiętanie konfiguracji, a nie wyglądu metalu — z samej konfiguracji nie widać temperatury topnienia.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Dlaczego chrom i miedź „psują” regułę</span>
+<p>Szczegóły i tabela Z = 1–36 są w sekcji 1b. Tu jedna myśl: model szkolny jest przybliżeniem, a dwa wyjątki w zakresie wynikają z tego, że d⁵ i d¹⁰ są energetycznie korzystne. Źródło: Wikipedia, „Electron configurations of the elements (data page)” (pobrane 2026-10-13).</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Dlaczego grupa 14 nie tworzy jonów</span>
+<p>Węgiel i krzem mają po cztery elektrony walencyjne. Oddanie czterech kosztowałoby zbyt wiele energii, a przyjęcie czterech — też. Dlatego tworzą wiązania kowalencyjne (wspólne pary elektronów). To jeden z powodów, dla których grupa 14 jest w tabelach jonów pusta.</p>
+</div>
+<hr class="lk-hr"/>
+</section>
+<section id="zrodla">
+<div class="part-heading"><span class="part-num">17</span> Zadanie transferowe i źródła</div>
+<div class="card card-core">
+<span class="card-label">Źródła</span>
+<ol>
+<li><strong>Oficjalny zakres konkursu LKO 2026/27</strong> (lokalny plik <code>olimpiada/plany/LKO_2026_27/chemia_zakres_2026_2027.md</code>, sekcja 8.2, etap I, rozszerzenie 1 i 3): „konfiguracje elektronowe atomów pierwiastków grupy 1, 2 oraz 13–18 do Z = 36 i ich jonów o podanym ładunku" oraz „ustalanie … wzorów związków chemicznych".</li>
+<li><strong>Wikipedia (EN), „Electron configurations of the elements (data page)"</strong> — pobrana strona. Potwierdzone konfiguracje: Ca [Ar] 4s²; Ga [Ar] 3d¹⁰ 4s² 4p¹; As [Ar] 3d¹⁰ 4s² 4p³; Se [Ar] 3d¹⁰ 4s² 4p⁴; Br [Ar] 3d¹⁰ 4s² 4p⁵; Kr [Ar] 3d¹⁰ 4s² 4p⁶; K [Ar] 4s¹; S [Ne] 3s² 3p⁴; Cl [Ne] 3s² 3p⁵; Al [Ne] 3s² 3p¹; Fe [Ar] 3d⁶ 4s²; Cu [Ar] 3d¹⁰ 4s¹; Cr [Ar] 3d⁵ 4s¹. Strona podaje konfiguracje atomów obojętnych w stanie podstawowym; nie podaje konfiguracji jonów ani reguły 4s przed 3d wprost.</li>
+<li><strong>Wikipedia (EN), „Electron configurations of the elements"</strong> — wynik wyszukiwania, <strong>nie pobrano</strong> (pełny tekst nieprzejrzany).</li>
+<li><strong>Wikipedia (EN), data page — ponowne pobranie 2026-10-13</strong> dla Sc–Zn: Sc [Ar] 3d¹ 4s²; Ti 3d² 4s²; V 3d³ 4s²; Cr 3d⁵ 4s¹; Mn 3d⁵ 4s²; Fe 3d⁶ 4s²; Co 3d⁷ 4s²; Ni 3d⁸ 4s²; Cu 3d¹⁰ 4s¹; Zn 3d¹⁰ 4s².</li>
+<li><strong>Odpowiedź zewnętrzna (AI, sekcja 1b)</strong> — zestawienie wyjątków i tabela Z = 1–36 zgodne z danymi z pkt 4; cytowane materiały ZPE i portale szkolne (np. zpe.gov.pl) to <strong>wynik wyszukiwania, nie pobrano</strong>.</li>
+</ol>
+<p>Ogólna wiedza o jonach i izoelektronowości (sekcje 2 i 2.3) pochodzi z przyjętego w szkole modelu oktetu; nie została potwierdzona osobnym źródłem w tej sesji.</p>
+</div>
+<p><strong>Zadanie transferowe:</strong> patrz F3 w sekcji 6 (Ga³⁺ — prawda czy fałsz z uzasadnieniem).</p>
+<hr class="lk-hr"/>
+<details class="lk-log"><summary>LOG ZMIAN — 2026-10-13</summary>
+<p><strong>Źródło:</strong> odpowiedź zapisana w <code>olimpiada/plany/LKO_2026_27/CHE_suplement_Z36_odpowiedz_ORYG.md</code> (surowa, bez zmian). Ta lekcja jest jej przebudową do formatu repo.</p>
+<p><strong>Zachowano (wszystkie tematy z odpowiedzi):</strong> lustro i most; kamienie milowe; cztery szkielety; skąd 18; procedura 30-sekundowa; mechanizm jonów; tabela jonów; izoelektronowość (3 rodziny); wzór z konfiguracji (procedura, K₂S, GaCl₃, typowe zadanie LKO); kompendium; klinika (7 pozycji); ćwiczenia A–F (26 zadań z kluczem); granice uproszczenia; mity; mini-wykład; fiszki; słownik; mapa pojęć; checklista; źródła.</p>
+<p><strong>Dodano (wymagane przez zasady lekcji):</strong> front matter (kod, uid, opis, wymaga); lead i cele; pojęcia i oznaczenia; przypomnienie z F07/F08; minimum; test (pytania <code>?</code>, sekcja 18); doświadczenie modelowe; ciekawostki sprawdzone; źródła z pobraną stroną; mosty; mapa pojęć.</p>
+<p><strong>Poprawiono błędy z odpowiedzi:</strong>
+1. Elektrony walencyjne: „x = numer grupy" dla całego zakresu → dla grup 13–18 x = numer grupy − 10 (w wykładzie 1.2, procedurze 1.4, kompendium, minimum, mapie pojęć, klinice).
+2. Zadanie D1: „Br⁻ → 2,8,18,7" (dwie poprawne odpowiedzi) → „Br (atom) → 2,8,18,7".
+3. Data stanu: „W1 — 2026-10-22" (przyszłość, sugerowany audyt) → „szkic — 2026-10-13". W1 nie był wykonany.
+4. Zapis „Ca²⁺ 2,8,8,0" i niezrozumiałe zdanie o Ga³⁺ w wykładzie 2.2 — przeredagowane.</p>
+<p><strong>Liczby:</strong> sekcje <code>##</code> ~17; fiszki 13; zadania (karty exam) 26 w 6 zestawach (A–F), ponad 3–8 orientacyjne — zostawiono, bo użytkownik wymaga pełnego zakresu; do decyzji (podział na dwie karty albo osobny plik zadań). Test: 5 pytań. Słownik w lekcji: 10 haseł.</p>
+<p><strong>Do weryfikacji:</strong> temperatura topnienia galu (orientacyjnie, nie pobrana strona); wyjaśnienie wyjątków Cr i Cu w ciekawostce (zgodne z danymi strony, reszta z ogólnej wiedzy); słownik osobny lekcji i wpis w SLOWNIK_CHE.md — w kolejnym kroku.</p>
+<p><strong>Aktualizacja 2026-10-13 (wyjątki i nikiel):</strong> dodano sekcję 1b (dwie kolejności, wykład o Cr i Cu, nikiel jako subtelność, tabela Z = 1–36 z KLMN, 1234 i konfiguracją). Ciekawostkę o Cr/Cu skrócono do odsyłacza, bez powielania. Dodano hasła słownika (wyjątek, subtelność), mit i dwa źródła. Konfiguracje Sc–Zn sprawdzone pobraną stroną; nikiel 4s¹3d⁹ nie potwierdzony w źródle, zapisany jako uwaga.</p>
+<p><strong>Nieprzyjęte z odpowiedzi:</strong> nic — wszystkie tematy zachowano. Propozycja „gen_f00: wiersz LKO-Z36 w sekcji Uzupełnienia" i „POWIAZANIA_CHE: F07 → LKO-Z36 (EXPAND), LKO-Z36 → F09/F12 (APPLY)" zapisana jako zadania poza tą lekcją.</p>
+</details>
+</section>
+<footer class="footer"><p><strong>CHEMIA LKO-Z36 · szkic 2026-10-13 · suplement do sesji 2 Sprintu A</strong></p></footer>
+</main>
+<script>
+/* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
+   postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
+(function(){
+var html=document.documentElement;
+function ciemny(){var t=html.getAttribute('data-theme');return t?t==='dark':!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function oznacz(){if(ciemny())html.setAttribute('data-ciemny','');else html.removeAttribute('data-ciemny')}
+try{var z=localStorage.getItem('lekcja-motyw');if(z)html.setAttribute('data-theme',z)}catch(e){}
+oznacz();if(window.matchMedia)try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',oznacz)}catch(e){}
+
+function start(){
+var root=document;
+root.querySelectorAll('.flashcard').forEach(function(b){if(b.dataset.lkFz)return;b.dataset.lkFz=1;b.removeAttribute('onclick');b.setAttribute('aria-pressed','false');
+ b.addEventListener('click',function(){var on=b.classList.toggle('flipped');b.setAttribute('aria-pressed',on?'true':'false')})});
+root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibling,ok=0,n=0,all=w.querySelectorAll('.quiz-q').length;
+ if(sc&&sc.classList.contains('quiz-score'))sc.setAttribute('aria-live','polite');
+ w.querySelectorAll('.quiz-q').forEach(function(d){var good=+d.dataset.ok;d.querySelectorAll('.quiz-opt').forEach(function(b){b.onclick=function(){if(d.dataset.done)return;d.dataset.done=1;n++;if(+b.dataset.a===good)ok++;
+  d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
+  if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
+  if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var b=root.querySelector('#advToggle');
+if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
+ if(!k)b.style.display='none';
+ b.textContent='Pokaż treści akademickie ('+k+')';
+ b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';adv().forEach(function(d){d.open=on});b.setAttribute('aria-pressed',on?'true':'false');b.textContent=(on?'Ukryj':'Pokaż')+' treści akademickie ('+k+')'}}
+// spis zwinięty na telefonie
+var sp=root.querySelector('#spis');if(sp&&window.innerWidth<700)sp.removeAttribute('open');
+// przełącznik jasny/ciemny
+var tb=root.querySelector('#lkMotyw');
+if(tb)tb.onclick=function(){var t=ciemny()?'light':'dark';html.setAttribute('data-theme',t);try{localStorage.setItem('lekcja-motyw',t)}catch(e){}oznacz()};
+// postęp czytania + aktywna sekcja w spisie
+var bar=root.querySelector('.lk-prog'),links={},secs=[];
+root.querySelectorAll('.toc-link[href^="#"]').forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1));if(s){links[s.id]=a;secs.push(s)}});
+var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+ if(bar)bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';
+ var cur=null,lim=(parseInt(getComputedStyle(h).getPropertyValue('--header-h'))||52)+40;
+ for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
+ for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// fiszki: pokazuje pierwsze N (domyślnie 6, atrybut data-fz-pierwsze="N"), reszta po wyraźnym przycisku
+root.querySelectorAll('.flashcard-grid').forEach(function(g){
+ var cards=[].slice.call(g.querySelectorAll('.flashcard')),N=+(g.getAttribute('data-fz-pierwsze')||6);
+ if(!(N>0)||cards.length<=N)return;
+ var ukryte=cards.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more';
+ function lab(on){ukryte.forEach(function(c){c.hidden=!on});
+  b.textContent=on?'▲ Zwiń fiszki':'▼ Pokaż pozostałe '+ile+' fiszek (razem '+cards.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ g.insertAdjacentElement('afterend',b);
+});
+// testy: pokazuje pierwsze N pytań (domyślnie 5, atrybut data-q-pierwsze), reszta po wyraźnym przycisku
+root.querySelectorAll('.che-quiz').forEach(function(w){
+ var qs=[].slice.call(w.querySelectorAll('.quiz-q')),N=+(w.getAttribute('data-q-pierwsze')||5);
+ if(!(N>0)||qs.length<=N)return;
+ var ukryte=qs.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more q-more';
+ function lab(on){ukryte.forEach(function(q){q.hidden=!on});
+  b.textContent=on?'▲ Zwiń pytania':'▼ Pokaż pozostałe '+ile+(ile===1?' pytanie':(ile<5?' pytania':' pytań'))+' (razem '+qs.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ var sc=w.nextElementSibling;(sc&&sc.classList.contains('quiz-score')?sc:w).insertAdjacentElement('afterend',b);
+});
+// grafiki przedmiotu
+if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
+if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();
+
+</script>
+</body>
+</html>
