@@ -1,0 +1,550 @@
+# L031 — Jak działa dobór naturalny i czym różni się od sztucznego?
+
+## KARTA LEKCJI L031
+
+- Numer: L031
+- Tytuł roboczy: Dobór naturalny
+- Dział: Ewolucja
+- Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]
+- Poprzednia: L030 · Następna: L032
+- Status treści: audyt W1 punktowy 2026-10-09; pełna walidacja wszystkich kluczy nadal wymagana
+- Status HTML: brak HTML
+- Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać `STATUS: DO UZUPEŁNIENIA` (nie przesuwać numerów)
+- Zasada: nic nie wycinać; treść dopisywać poniżej karty
+
+
+
+## WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML
+
+**Główna plansza:** Dobór.
+
+`[BIO: DIAGRAM type=FLOW]`
+`zmienność → różny sukces rozrodczy → zmiana częstości cech`
+`[/BIO: DIAGRAM]`
+@opis Dobór naturalny: działa na różnice w sukcesie rozrodczym, a ewolucja populacji jest zmianą w pokoleniach. Schemat 1 w lekcji L031 pokazuje relację opisaną w jego etykietach; strzałki należy czytać zgodnie z kierunkiem zapisu. Jest modelem dydaktycznym, nie pełnym obrazem wszystkich wyjątków.
+
+**Co uczeń ma zauważyć:** środowisko nie „wybiera” świadomie.
+
+**Zasada projektowa:** grafika ma objaśniać treść, a nie zastępować wyjaśnienie tekstowe.
+
+**Dział:** Ewolucja  
+**Poziomy:** podstawa · trening · ambitny · zaawansowany  
+**Warstwy:** [PRZYPOMNIENIE] · [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY] · ([KONKURS])  
+**Poprzednia lekcja:** L030  
+**Następna lekcja:** L032
+
+---
+
+### Mapa lekcji
+
+| Warstwa | Gdzie w lekcji |
+|---------|----------------|
+| **[PRZYPOMNIENIE]** | pkt 3 Kompas (L015, L020, L030) |
+| **[PODSTAWA E8]** | pkt 5 Ściąga + pkt 6 Wyjaśnienie + pkt 9 Klinika |
+| **[TRENING]** | pkt 11–14 (ćwiczenia, test) |
+| **[MASTER]** | pkt 7 Poziom ambitny |
+| **[ZAAWANSOWANY]** | pkt 8 + pkt 19 |
+| **[KONKURS]** | pkt 11D PROBLEM / THINK |
+| **[POWTÓRKA]** | pkt 13 Fiszki |
+
+---
+
+## 1. Pytanie przewodnie
+
+Jak działa dobór naturalny i czym różni się od sztucznego?
+
+---
+
+## 2. Cele lekcji
+
+Po lekcji uczeń:
+
+- wyjaśnia mechanizm doboru naturalnego,
+- podaje warunki doboru,
+- odróżnia dobór naturalny od sztucznego,
+- (ambitny) rozumie, że dobór nie tworzy cech — wybiera z istniejącej zmienności,
+- (zaawansowany) zna typy doboru i dryf genetyczny.
+
+### Zasada 80/20
+
+| 20% = 80% efektu | Dlaczego |
+|-------------------|----------|
+| dobór = środowisko wybiera | definicja |
+| warunki: zmienność, dziedziczenie, zasoby, rozród | mechanizm |
+| antybiotykooporność | klasyczny przykład |
+| dobór naturalny vs sztuczny | rozróżnienie |
+
+---
+
+## 3. Kompas  · **[PRZYPOMNIENIE]**
+
+- L015 (zmienność),
+- L020 (mutacje),
+- L030 (ewolucja).
+
+---
+
+## 4. Zacznij od problemu
+
+Dlaczego po antybiotyku niektóre bakterie przeżywają?  
+Dlaczego ludzie hodują rasy psów o różnych cechach?
+
+**Hipoteza:** ....................................
+
+---
+
+## 5. Ściąga — poziom podstawowy  · **[PODSTAWA E8]**
+
+**Dobór naturalny** — proces, w którym osobniki różniące się **dziedzicznymi** cechami mają w danym środowisku różny **sukces rozrodczy**: te, których cechy zwiększają szansę przeżycia lub rozmnażania, zostawiają przeciętnie więcej potomstwa. Środowisko **nie wybiera świadomie** i nie tworzy potrzebnych cech — stwarza warunki, w których jedne cechy są korzystniejsze od innych.
+
+**Warunki doboru:**
+1. Zmienność w populacji.
+2. Dziedziczenie cech.
+3. Ograniczone zasoby (walka o byt).
+4. Różny sukces rozrodczy.
+
+**Dobór sztuczny** — człowiek wybiera, które osobniki się rozmnażają.
+
+| | Naturalny | Sztuczny |
+|---|-----------|----------|
+| Co decyduje o rozmnażaniu? | warunki środowiska | człowiek |
+| Czy świadomie? | nie — nie ma celu; dostosowanie jest **skutkiem** | tak — człowiek wybiera cechę użytkową |
+| Co decyduje o sukcesie? | przeżycie i rozmnażanie w danym środowisku | cecha wybrana przez człowieka |
+| Przykład | antybiotykooporność bakterii | rasy psów, odmiany zbóż |
+| Tempo | zależy od organizmu i siły presji — u bakterii nawet kilka dni | zależy od intensywności hodowli |
+
+### Mnemotechniki dla tej lekcji
+
+| # | Mnemotechnika | Znaczenie |
+|---|---------------|-----------|
+| 1 | **Środowisko „sprzyja” (nieświadomie)** | dobór naturalny |
+| 2 | **Człowiek wybiera** | dobór sztuczny |
+| 3 | **Zmienność + dziedziczenie + zasoby + rozród** | warunki |
+
+---
+
+## 6. Wyjaśnienie od podstaw (warstwa podręcznikowa)  · **[PODSTAWA E8]**
+
+**Dobór naturalny** to mechanizm ewolucji, w którym osobniki lepiej przystosowane do środowiska mają większą szansę przeżycia i pozostawienia potomstwa. Cechy korzystne rozprzestrzeniają się w populacji.
+
+**Warunki działania doboru:**
+1. **Zmienność** — osobniki różnią się cechami.
+2. **Dziedziczenie** — cechy są przekazywane potomstwu.
+3. **Ograniczone zasoby** — nie wszystkie osobniki przeżywają.
+4. **Różny rozród** — niektóre osobniki mają więcej potomstwa.
+
+**Dobór sztuczny** — człowiek świadomie wybiera osobniki do rozrodu, aby uzyskać pożądane cechy. Przykłady: rasy psów, odmiany roślin uprawnych.
+
+### 6A. Dlaczego?
+
+1. **Dlaczego bez zmienności nie ma doboru?** Bo nie ma z czego wybierać.
+
+2. **Dlaczego bez dziedziczenia nie ma ewolucji?** Bo cechy nie przechodzą na potomstwo.
+
+3. **Dlaczego bakterie przeżywają antybiotyk?** Bo niektóre już mają oporność — z wcześniejszej mutacji albo z genu oporności przejętego od innej bakterii.
+
+4. **Dlaczego „najsilniejszy" to złe określenie?** Bo liczy się **dostosowanie**, nie siła.
+
+### 6B. Krok po kroku — jak działa dobór naturalny
+
+1. W populacji istnieje zmienność: mutacje (powstają losowo — nie „na zamówienie” organizmu) i rekombinacja (nowe kombinacje alleli).
+2. Środowisko faworyzuje niektóre cechy.
+3. Osobniki z korzystnymi cechami mają więcej potomstwa.
+4. Cechy rozprzestrzeniają się w populacji.
+5. Po wielu pokoleniach populacja się zmienia.
+
+@viz dobor-naturalny | Symulacja: dobór naturalny w kolejnych pokoleniach | ćmy na korze drzew albo bakterie i antybiotyk
+@opis Po lewej kwadrat z populacją 40 osobników: w trybie „ćmy” jasne i ciemne ćmy na korze, której barwę przełącza przycisk (ciemna — zanieczyszczenia, jasna — porosty); w trybie „bakterie” zielone bakterie wrażliwe i czerwone oporne na antybiotyk. Na starcie cecha rzadka (ciemne ćmy, oporne bakterie) to ok. 10% populacji. Przyciski „następne pokolenie” i „+5 pokoleń” losują przeżycie (lepiej widoczne ćmy i bakterie wrażliwe giną częściej) i rozmnażanie ocalałych z dziedziczeniem cechy; po prawej wykres liniowy udziału cechy w procentach w kolejnych pokoleniach. Panel opisuje wynik i warunki doboru. Wniosek: dobór naturalny nie tworzy nowych cech, tylko zwiększa udział tych, które już istniały i dają większą szansę przeżycia i rozmnażania w danym środowisku; zmiana środowiska odwraca kierunek doboru.
+
+### 6C. Przykład prowadzony
+
+**Dane:** Bakterie + antybiotyk.
+
+**Obserwacja:** Większość bakterii ginie, ale niektóre przeżywają.
+
+**Wniosek:** Przeżywają te, które miały oporność (już przed antybiotykiem). Antybiotyk nie uczy bakterii oporności — jest **czynnikiem selekcyjnym**: wrażliwe giną częściej, oporne częściej przeżywają i się rozmnażają, więc w kolejnym pokoleniu jest ich więcej. W rzeczywistości bakterie mogą też przejmować geny oporności od innych bakterii (poziomy transfer genów).
+
+**Ważne:** Bakterie **nie uczą się** oporności — przeżywają te, które już ją miały.
+
+### 6D. Powiązanie z innymi lekcjami
+
+```text
+L015 (zmienność) → L020 (mutacje) → L030 (ewolucja) → L031 (dobór)
+```
+
+---
+
+## 7. Poziom ambitny  · **[MASTER]**
+
+- Dobór **nie tworzy** cech — wybiera z istniejącej zmienności.
+- Antybiotykooporność: przeżywają te, które już mają oporność.
+- Cecha korzystna w jednym środowisku może być szkodliwa w innym.
+- Ewolucja nie dąży do „doskonałości".
+
+---
+
+## 8. Poziom zaawansowany  · **[ZAAWANSOWANY]**
+
+> **Zaawansowane.**
+
+- **Typy doboru:**
+  - **kierunkowy** — sprzyja jednej skrajnej wersji cechy (rosnąca oporność bakterii);
+  - **stabilizujący** — sprzyja wartościom pośrednim, eliminuje skrajne (masa urodzeniowa człowieka — najwięcej przeżywa dzieci o średniej masie);
+  - **rozrywający** — sprzyja obu skrajnościom, a nie pośredniej (ptaki o małych i dużych dziobach przy dwóch rodzajach nasion).
+- Dobór działa na **fenotyp** (to, co widać), a skutkiem jest zmiana **częstości alleli** w populacji. Ewoluuje populacja, nie pojedynczy osobnik.
+- **Sukces rozrodczy** to liczba potomstwa, które przeżywa i się rozmnaża — cecha może nie zwiększać przeżycia, a mimo to się rozprzestrzeniać (ogon pawia — dobór płciowy).
+- **Dryf genetyczny** — losowa zmiana częstości alleli, najsilniejsza w małej populacji. Różnica: w doborze o przeżyciu decyduje cecha, w dryfie — przypadek.
+- **Efekt wąskiego gardła** — drastyczne zmniejszenie populacji → utrata zmienności. **Efekt założyciela** — nową populację zakłada kilka osobników, więc ma tylko część zmienności populacji wyjściowej.
+- **Dobór płciowy** — preferencje partnerów wpływają na cechy.
+
+---
+
+## 9. Klinika błędów  · **[PODSTAWA E8] / [TRENING]**
+
+| Błąd | Poprawa | Dlaczego? |
+|------|---------|-----------|
+| Ewolucja = postęp | dostosowanie | brak „celu" |
+| Bakterie uczą się oporności | przeżywają już oporne | dobór nie tworzy cech |
+| Naturalny = sztuczny | różny czynnik | środowisko vs człowiek |
+| Najsilniejszy przeżywa | lepiej dostosowany | nie siła, ale dostosowanie |
+| Mutacja pojawia się, bo jest potrzebna | mutacje są losowe; dobór „wybiera” spośród istniejących | dobór nie tworzy cech na zamówienie |
+| Dobór zmienia osobnika | dobór zmienia częstość cech w **populacji** | liczy się sukces rozrodczy przez pokolenia |
+
+### Klinika 2.0
+
+**Błąd 1:** „Bakterie uczą się oporności na antybiotyk."
+
+- **Znajdź:** Mylenie doboru z uczeniem się.
+- **Popraw:** Przeżywają te, które już miały oporność.
+- **Reguła:** Dobór wybiera z istniejącej zmienności.
+- **Dlaczego:** Mutacje powstają losowo; antybiotyk eliminuje wrażliwe.
+- **Podobne:** Owady uodparniają się na pestycydy.
+- **Pułapka:** Bakterie nie „chcą" przeżyć — po prostu te z opornością przeżywają.
+
+**Błąd 2:** „Najsilniejszy przeżywa."
+
+- **Znajdź:** Błędne uproszczenie.
+- **Popraw:** Przeżywa lepiej **dostosowany** do środowiska.
+- **Reguła:** Dostosowanie ≠ siła.
+- **Dlaczego:** W danym środowisku liczy się dopasowanie, nie siła.
+- **Podobne:** Małe ptaki mogą być lepiej dostosowane niż duże.
+- **Pułapka:** „Survival of the fittest" ≠ „przetrwanie najsilniejszego".
+
+**Błąd 3:** „Dobór naturalny tworzy nowe cechy."
+
+- **Znajdź:** Błędna rola doboru.
+- **Popraw:** Dobór **wybiera** z już istniejącej zmienności; nowe cechy tworzą mutacje.
+- **Reguła:** Mutacje → zmienność; dobór → selekcja.
+- **Dlaczego:** Dobór nie generuje cech, tylko je filtruje.
+- **Podobne:** Hodowla — człowiek też wybiera, nie tworzy.
+- **Pułapka:** „Dobór tworzy" — nie, dobór wybiera.
+
+**Błąd 4:** „Cecha korzystna w jednym środowisku zawsze jest korzystna."
+
+- **Znajdź:** Uogólnienie.
+- **Popraw:** Cecha korzystna w jednym środowisku może być szkodliwa w innym.
+- **Reguła:** Dostosowanie jest względne, zależne od środowiska.
+- **Dlaczego:** Środowisko się zmienia; to, co pomaga dziś, może szkodzić jutro.
+- **Podobne:** Ciemna barwa ćmy — dobra na ciemnych drzewach, zła na jasnych.
+- **Pułapka:** „Zawsze korzystna" — nie.
+
+---
+
+## 10. Obserwacja / model
+
+**Typ:** symulacja / model.
+
+```text
+Problem: Czy widoczność osobników wpływa na ich przeżycie?
+Hipoteza: Osobniki lepiej widoczne są częściej eliminowane.
+Materiał: koraliki w różnych kolorach + tło zielone i tło białe.
+Zmienna niezależna: kolor tła. Zmienna zależna: liczba (odsetek) znalezionych koralików każdego koloru.
+Warunki stałe: liczba i wielkość koralików, czas szukania, ta sama osoba szukająca.
+Obserwacja: Na tle zielonym zielonych koralików znajduje się mniej niż czerwonych.
+Wniosek: Osobniki bardziej widoczne mogą być częściej eliminowane.
+Ograniczenia: model nie pokazuje dziedziczenia — sam nie dowodzi zmiany cechy w kolejnych pokoleniach (to pokazuje symulacja w §6B).
+BHP: brak.
+```
+
+---
+
+## 11. Ćwiczenia  · **[TRENING]** (11D → [KONKURS])
+
+### 11A. Mini-check
+
+1. Co to dobór naturalny?
+2. Podaj 3 warunki doboru.
+3. Co to dobór sztuczny?
+4. Podaj przykład doboru naturalnego.
+5. Podaj przykład doboru sztucznego.
+
+### 11B. Ćwiczenie prowadzone
+
+**Dane:** Populacja motyli — jasne i ciemne. Środowisko: ciemne drzewa (sadza).
+**Analiza:** Ciemne motyle trudniej zauważyć → więcej przeżywa.
+**Wniosek:** Środowisko faworyzuje ciemne.
+
+### 11C. Ćwiczenia samodzielne
+
+**A. Podstawa**
+1. Zdefiniuj dobór.
+2. Podaj trzy z czterech warunków doboru.
+3. Sztuczny?
+4. Po 1 przykładzie.
+
+**B. Trening**
+5. Antybiotykooporność?
+6. Popraw: „Bakterie uczą się".
+7. Różnica naturalny/sztuczny?
+
+**C. Ambitne**
+8. Dlaczego „najsilniejszy" to złe?
+9. Cecha korzystna w jednym środowisku szkodliwa w innym?
+10. Dlaczego dobór nie tworzy cech?
+
+**D. Zaawansowane**
+11. Typy doboru.
+12. Dryf genetyczny.
+13. PROBLEM: Dlaczego w małej populacji dryf jest silniejszy?
+
+### 11D. PROBLEM / THINK
+
+Dlaczego antybiotykooporność to przykład doboru naturalnego? Uzasadnij mechanizmem.
+
+### Drabinka trudności
+
+| Poziom | Zadanie |
+|--------|---------|
+| ODTWÓRZ | Co to dobór naturalny? |
+| ZASTOSUJ | Podaj przykład. |
+| WYJAŚNIJ | Dlaczego bakterie przeżywają? |
+| ODKRYJ | Kto wybiera w sztucznym? |
+| POŁĄCZ | Połącz dobór z genetyką. |
+| ZAKWESTIONUJ | Czy najsilniejszy zawsze przeżywa? |
+
+---
+
+## 12. Odpowiedzi i sposób oceniania
+
+1. Różny sukces przeżycia i rozmnażania osobników o różnych dziedzicznych cechach w danym środowisku.
+2. Dowolne trzy z: zmienność, dziedziczenie, ograniczone zasoby (konkurencja), różny sukces rozrodczy.
+3. Człowiek świadomie wybiera osobniki do rozmnażania, by uzyskać pożądane cechy.
+4. Naturalny: oporność bakterii na antybiotyk, ubarwienie ćmy; sztuczny: rasy psów, odmiany zbóż.
+5. W populacji są bakterie wrażliwe i oporne; antybiotyk zabija głównie wrażliwe, oporne przeżywają, rozmnażają się i przekazują oporność — jest ich coraz więcej.
+6. Bakterie nie uczą się oporności — oporne warianty już istniały (albo przejęły geny), a antybiotyk zwiększył ich udział.
+7. Naturalny — nieświadomy, zależy od warunków środowiska; sztuczny — człowiek świadomie wybiera cechę.
+8. Dostosowanie to nie siła: liczy się przeżycie i liczba potomstwa w danych warunkach.
+9. Tak, np. ciemne ubarwienie ćmy chroni na ciemnej korze, a na jasnej zdradza; cecha korzystna w jednym środowisku bywa szkodliwa w innym.
+10. Dobór nie tworzy cech — działa na istniejącą zmienność (nowe warianty powstają przez mutacje i rekombinację).
+11. Kierunkowy, stabilizujący, rozrywający (z przykładem — §8).
+12. Dryf genetyczny — losowe zmiany częstości alleli w populacji, niezależne od korzyści z cechy.
+13. W małej populacji każdy przypadkowo utracony lub rozmnożony osobnik to duża część całości, więc zmiany częstości alleli są większe.
+
+**Sposób oceniania:** Podstawa 1; Trening 1+1; Ambitne 2; Zaawansowane 3.
+
+---
+
+## 13. Fiszki  · **[POWTÓRKA]**
+
+| Pytanie | Odpowiedź |
+|---------|-----------|
+| Dobór naturalny | Warunki środowiska sprzyjają cechom zwiększającym sukces rozrodczy (bez celu) |
+| Dobór sztuczny | Człowiek wybiera |
+| Warunki | Zmienność, dziedziczenie, zasoby, rozród |
+| Antybiotykooporność | Przeżywają już oporne |
+| „Najsilniejszy"? | Nie — lepiej dostosowany |
+
+---
+
+## 14. Test końcowy  · **[TRENING]**
+
+1. (P) Co to dobór naturalny?
+2. (P) 3 warunki?
+3. (P) Dobór sztuczny?
+4. (T) Antybiotykooporność?
+5. (T) Popraw: „Bakterie uczą się".
+6. (A) Dlaczego „najsilniejszy" to złe?
+7. (A) Cecha korzystna gdzie indziej szkodliwa?
+8. (Z) Typy doboru.
+
+**Klucz:** 1. Różny sukces rozrodczy osobników z dziedzicznymi różnicami w danym środowisku. 2. Trzy z: zmienność, dziedziczenie, ograniczone zasoby, różny sukces rozrodczy. 3. Człowiek wybiera osobniki do rozmnażania. 4. Antybiotyk zabija wrażliwe; oporne przeżywają i rozmnażają się. 5. Bakterie się nie uczą — przeżywają oporne. 6. Liczy się dostosowanie i sukces rozrodczy, nie siła. 7. Tak — dostosowanie zależy od środowiska. 8. Kierunkowy, stabilizujący, rozrywający.
+
+---
+
+## 15. Checklista
+
+- [ ] Rozumiem mechanizm doboru naturalnego.
+- [ ] Znam warunki doboru.
+- [ ] Odróżniam dobór naturalny od sztucznego.
+- [ ] Rozumiem antybiotykooporność jako dobór.
+- [ ] Znam ideę dryfu (ambitny).
+
+---
+
+## 16. Mapa pojęć
+
+```text
+DOBÓR
+├── naturalny: środowisko
+├── sztuczny: człowiek
+├── warunki: zmienność, dziedziczenie, zasoby, rozród
+└── przykład: antybiotykooporność
+```
+
+---
+
+## 17. Co dalej?
+
+L032 — powtórka ewolucji.
+
+**Most wstecz:** L030 (ewolucja) + L015/L020 (genetyka) → L031 (dobór).
+
+---
+
+## 18. Słownik
+
+| Termin | Definicja |
+|--------|-----------|
+| Dobór naturalny | Środowisko wybiera lepiej dostosowane |
+| Dobór sztuczny | Człowiek wybiera osobniki do rozrodu |
+| Walka o byt | Konkurencja o ograniczone zasoby |
+| Dostosowanie | Dopasowanie do środowiska |
+| Dryf genetyczny | Losowa zmiana alleli w małej populacji |
+
+---
+
+## 19. Dodatek zaawansowany  · **[ZAAWANSOWANY]**
+
+Typy doboru · dryf · efekt wąskiego gardła · dobór płciowy.
+
+---
+
+## 20. Jak się uczyć?
+
+Ściąga → przykład → mini-check → ćwiczenia → fiszki → test.
+
+---
+
+## 21. Połączenia międzyprzedmiotowe
+
+Biologia (genetyka, ekologia) · Medycyna (antybiotykooporność) · Rolnictwo (hodowla).
+
+---
+
+## 22. Zadania z życia codziennego
+
+1. Dlaczego antybiotyki przestają działać?
+2. Dlaczego rasy psów tak się różnią?
+3. Czy człowiek ewoluuje?
+
+**Odpowiedzi:** 1. W populacji bakterii są warianty oporne; leczenie je selekcjonuje, a nieprawidłowe stosowanie (przerwana kuracja, antybiotyk na wirusa) przyspiesza ten proces. 2. Przez wiele pokoleń człowiek wybierał do rozmnażania psy o różnych cechach (dobór sztuczny). 3. Tak — jeśli częstość dziedzicznych cech (alleli) w populacjach ludzkich zmienia się z pokolenia na pokolenie.
+
+---
+
+## 23. STATUS LEKCJI
+
+- Wersja 4.0 (2026-09-12) — rozbudowa do standardu L011–L020.
+- Zachowano całą treść v3.7.
+- Dodano: Mapa lekcji, Klinika 2.0 (4 przykłady), Drabinka trudności, „Jak się uczyć", „Połączenia międzyprzedmiotowe", „Zadania z życia codziennego", STATUS.
+
+---
+
+**Koniec L031 MASTER v4.0**
+
+
+---
+
+## 24. UZUPEŁNIENIE egzaminacyjne v4.0+ (doklejone)
+
+Dobór — mechanizm, nie slogan.
+
+### Ściąga
+Warunki szkolne doboru naturalnego:
+1. Zmienność osobników.
+2. Nadmiar potomstwa / ograniczające zasoby.
+3. Nie wszyscy zostawiają tyle samo potomstwa.
+4. Cechy dziedziczne — te korzystne w **danym** środowisku częściej zostają.
+
+Dobór sztuczny: kryterium ustala człowiek (plon, wygląd, mleczność).
+
+Stabilizujący / kierunkowy / rozrywający — tylko hasła extra, jeśli są w lekcji; na E8 wystarczy naturalny vs sztuczny + przykład.
+
+### Pułapki
+| Błąd | Popraw |
+|------|--------|
+| Osobnik „chce” się dostosować i zmienia ciało za życia, potem przekazuje wysiłek | to nie model Darwina |
+| Dobór = walka na pięści | bywa unikanie drapieżnika, odporność, płodność |
+| Sztuczny dobór jest „nienaturalny więc nieuczony” | jest w podstawie jako kontrast |
+
+### 5 zadań extra
+1. Wypisz 3 warunki doboru naturalnego.  
+2. Owce hodowlane — który dobór?  
+3. Bakterie i antybiotyk — szkic argumentu (zmienność + presja).  
+4. Dlaczego cecha korzystna na pustyni może być zbędna w lesie?  
+5. Most do L020: skąd się bierze nowa zmienność?
+
+**Klucz:** 1. Trzy z: zmienność, dziedziczenie, ograniczone zasoby, różny sukces rozrodczy. 2. Dobór sztuczny — człowiek wybiera do rozmnażania owce o pożądanych cechach (wełna, mleczność). 3. W populacji są bakterie wrażliwe i oporne; antybiotyk (presja) zabija głównie wrażliwe, oporne przeżywają i się rozmnażają. 4. O korzyści z cechy decyduje środowisko — np. gruba warstwa tłuszczu czy kolor maskujący piasek nie pomagają w lesie. 5. Z mutacji i rekombinacji (crossing-over i niezależne rozchodzenie się chromosomów w mejozie — L015).
+
+### Status doklejki
+2026-09-12 · wcześniejsze sekcje bez zmian.
+
+
+## 23. UZUPEŁNIENIE AUDYTOWE v4.2 — zmienność → dobór → zmiana populacji
+
+### 23.1. Najważniejszy łańcuch
+`zmienność → dziedziczenie → różny sukces rozrodczy → zmiana częstości cech/alleli w populacji`
+
+To populacja **ewoluuje**. Nie mówimy, że pojedynczy organizm „ewoluuje”, ponieważ w trakcie własnego życia nie zmienia swojej puli alleli przez dobór naturalny.
+
+### 23.2. Mutacja a dobór — nie zamieniaj ról
+- **Mutacje** mogą tworzyć nowe allele.
+- **Rekombinacja** tworzy nowe kombinacje istniejących alleli.
+- **Dobór naturalny** zmienia częstości wariantów, ponieważ niektóre warianty zwiększają sukces rozrodczy w określonym środowisku.
+
+Dlatego zdanie:
+> „Dobór naturalny tworzy nowe cechy"
+
+jest zbyt uproszczone.
+
+### 23.3. Przykład z antybiotykiem — model
+Przed zastosowaniem antybiotyku w populacji mogą istnieć bakterie o różnej wrażliwości.
+
+`zmienność → antybiotyk → większe przeżycie opornych → rozmnażanie → większy udział oporności`
+
+**Nie:** antybiotyk „uczy” bakterie odporności.
+
+### 23.4. Dobór nie działa „na zawsze”
+Cecha korzystna w jednym środowisku może być mniej korzystna w innym. Dostosowanie jest **zależne od warunków i kosztów**.
+
+### 23.5. Mini-zadanie
+**Pytanie:** Dlaczego zmiana częstości alleli jest lepszym wskaźnikiem ewolucji niż stwierdzenie „osobniki stały się lepsze”?
+
+**Odpowiedź:** Ewolucja dotyczy zmian dziedzicznych w populacjach na przestrzeni pokoleń, a nie świadomego doskonalenia pojedynczych osobników.
+
+<!-- ==================== END L031 ==================== -->
+
+
+<!-- ==================== BEGIN L032 ==================== -->
+
+---
+
+## 25. AUDYT W16 — ewolucja, ekologia i synteza (2026-10-09)
+
+**Zakres:** punktowa kontrola pojęć wysokiego ryzyka i czytelności schematów; nie jest to niezależna recenzja całego materiału.
+
+### Co sprawdzać przy rozwiązywaniu zadań
+
+- **Wniosek musi wynikać z danych.** Nazwij obserwację, wyjaśnij mechanizm i dopiero wtedy sformułuj wniosek. Samo podobieństwo nie wystarcza do rozstrzygnięcia pokrewieństwa, a brak jednego rodzaju skamieniałości nie obala całej teorii ewolucji.
+- **Poziom osobnika a poziom populacji.** Dobór różnicuje sukces rozrodczy osobników, ale ewolucję opisuje się jako zmianę populacji na przestrzeni pokoleń. Mutacja nie pojawia się dlatego, że jest potrzebna; dobór nie działa świadomie.
+- **Energia a materia.** Energia przepływa przez ekosystem i ulega rozproszeniu jako ciepło; materia jest ponownie wykorzystywana w obiegach. Strzałka w łańcuchu pokarmowym prowadzi od pokarmu do konsumenta.
+- **Relacje ekologiczne.** Najpierw ustal skutek dla organizmu A i B, a potem nazwij relację. Nie wnioskuj wyłącznie z nazwy gatunku lub pojedynczej ilustracji.
+- **Człowiek i środowisko.** Oddziel źródło wpływu, mechanizm, skutek i możliwe ograniczenie. Naturalny efekt cieplarniany jest konieczny dla obecnego klimatu Ziemi; problemem jest jego dodatkowe nasilenie przez działalność człowieka.
+- **Warstwa olimpijska.** Model Hardy’ego–Weinberga to model z założeniami (m.in. losowe kojarzenie, brak doboru, mutacji i migracji oraz bardzo duża populacja); nie traktuj go jako automatycznego opisu każdej populacji.
+
+### Ograniczenie audytu
+
+Wprowadzono doprecyzowania pojęciowe i opisy wizualne, lecz nie sprawdzono niezależnie każdego zadania, klucza odpowiedzi ani zgodności zakresu z aktualnym regulaminem konkursu. Liczby, przykłady lokalne i wymagania konkretnego etapu należy walidować osobno.
+
+## AUDYT W1 — Perplexity (2026-10-10)
+
+- Wprowadzone: definicja (dziedziczne cechy, sukces rozrodczy, brak celu i świadomości), tabela naturalny/sztuczny bez „tempa wolne/szybkie”, oporność także przez poziomy transfer genów, losowość mutacji, typy doboru z przykładami, fenotyp a allele, dobór płciowy, dryf a dobór, efekt założyciela, opis modelu z koralikami (zmienne), pełny klucz §12 (był przesunięty), klucz testu §14, odpowiedzi §22.
