@@ -7,7 +7,7 @@ kicker: REV01 · POWTÓRKA · START KLASY 8 · KONKURS ETAP SZKOLNY
 lead: Jedna lekcja, która spina fundamenty klasy 7: atom → jon → wartościowość → wzór → wiązanie → równanie.
 lead: Kluczowy temat to wartościowość — bez niej nie ułożysz poprawnych wzorów w klasie 8. Na końcu: obliczenia i doświadczenia w stylu konkursu kuratoryjnego.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]][[extra:AMBITNE]]
-stan: "szkic — 2026-10-13, bez audytu W1"
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 stopka: **CHEMIA REV01 v1.0** · Powtórka fundamentów z klasy 7 · 2026
 ---
 ::: minimum | Muszę umieć — 10 punktów

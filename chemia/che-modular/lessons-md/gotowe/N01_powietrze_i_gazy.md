@@ -9,7 +9,7 @@ lead: Tlen podtrzymuje spalanie, wodór się pali, tlenek węgla(IV) gasi płomi
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]][[extra:AMBITNE]]
 uwaga: Dział IV podstawy programowej (tlen, wodór i ich właściwości; powietrze). Wymaga: F02, F03, F16. Następne: N02 Tlenki (plik N01_tlenki.md — numeracja sprzed kanonu v0.3).
 stopka: **CHEMIA N01 v1.0** · Powietrze i gazy · 2026
-stan: "szkic — 2026-10-13, bez audytu W1"
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 ---
 ::: minimum | Muszę umieć — 10 punktów
 1. **Powietrze jest mieszaniną** gazów: ok. **78% azotu**, **21% tlenu**, ok. **1% argonu**, ok. **0,04% tlenku węgla(IV)** (objętościowo) oraz zmienna ilość pary wodnej.
