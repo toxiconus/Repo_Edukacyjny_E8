@@ -36,7 +36,7 @@ function podepnij(canvas, h) {
 
 function parsujListe(txt, dozwolone, domyslne) {
   var l = String(txt || '').split(',').map(function (s) { return s.trim(); }).filter(function (s) { return dozwolone[s]; });
-  return (l.length ? l : domyslne).slice(0, 4);
+  return (l.length ? l : domyslne).slice(0, 3);
 }
 
 

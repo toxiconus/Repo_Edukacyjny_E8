@@ -141,7 +141,7 @@ var SERIE = {
   model: {nazwa: 'Model teoretyczny: Rb, Cs, Ra', metale: ['Rb', 'Cs', 'Ra'],
     opis: 'Model teoretyczny i reakcje niemożliwe w szkole. Ra jest promieniotwórczy, więc pokazujemy go wyłącznie jako animację.'}
 };
-var PRODUKT = {Li: '4Li + O₂ → 2Li₂O', Mg: '2Mg + O₂ → 2MgO', Sr: '2Sr + O₂ → 2SrO'};
+var PRODUKT = {Li: '4Li + O₂ → 2Li₂O', Na: '2Na + O₂ → Na₂O₂ (w nadmiarze tlenu)', K: 'K + O₂ → KO₂', Ca: '2Ca + O₂ → 2CaO', Mg: '2Mg + O₂ → 2MgO', Sr: '2Sr + O₂ → 2SrO'};
 
 KLOCKI.def('palniki', {
   domyslne: {seria: 'plomien'},

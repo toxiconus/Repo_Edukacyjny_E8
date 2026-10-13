@@ -100,7 +100,7 @@ var PL = {
   Be: {tryb: 'brak', nz: 'brak barwy', op: 'Beryl nie barwi płomienia, a jego pył jest toksyczny, więc nie robi się z nim prób.'},
   Mg: {tryb: 'mg', nz: 'oślepiająco biały błysk', op: 'Magnez nie barwi płomienia, tylko pali się własnym: 2Mg + O₂ → 2MgO. Nie patrz prosto w błysk.'},
   Ca: {c: '#ff6a1f', nz: 'ceglastoczerwony', op: 'Pomarańczowoczerwony, cieplejszy niż stront.'},
-  Sr: {c: '#ff2430', nz: 'karminowoczerwony', op: 'Jaskrawa czerwień z fajerwerków i rac.'},
+  Sr: {c: '#ff2430', nz: 'jaskrawoczerwony', op: 'Jaskrawa czerwień z fajerwerków i rac.'},
   Ba: {c: '#9be34d', nz: 'zielony', op: 'Żółtozielony. Sole baru są trujące.'},
   Ra: {c: '#d6123d', nz: 'karminowy', rad: 1, op: 'Sole radu barwią płomień karminowo. To tylko animacja — z radem nie pracuje się w szkole.'},
   Fr: {tryb: 'brak', nz: 'brak danych', rad: 1, op: 'Frans jest wyjątkowo rzadki i silnie promieniotwórczy; nie ma wiarygodnych danych o barwie płomienia. Pokazujemy go tylko jako model.'}

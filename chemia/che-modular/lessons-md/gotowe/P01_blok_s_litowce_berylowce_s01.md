@@ -4,7 +4,7 @@ uid: CHE.01.P01.blok_s
 tytul: Blok s — litowce i berylowce
 opis: grupa 1 i 2 układu okresowego · wspólne cechy metali s · reakcje z wodą i tlenem · tlenki i wodorotlenki · płomienie i zastosowania · pokaz nauczyciela zamiast zadania ucznia
 kicker: P01 · BLOK s · GRUPY 1–2
-lead: Metale grup 1 i 2 są najbardziej reaktywnymi metalami w układzie okresowym. Ta lekcja pokazuje, skąd bierze się ta reaktywność i jak zmienia się w grupie.
+lead: Metale grup 1 i 2 należą do najbardziej reaktywnych metali w układzie okresowym. Ta lekcja pokazuje, skąd bierze się ta reaktywność i jak zmienia się w grupie.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:TRENING]][[lo:ROZSZERZENIE]][[olim:DLA AMBITNYCH]][[uni:ZAAWANSOWANE]]
 skala: M
 typ: temat
@@ -39,7 +39,7 @@ Metale grup 1 i 2 (litowce i berylowce) tworzą blok s, bo ich ostatni elektron 
 :::
 
 ::: karta core | Pytanie przewodnie
-Dlaczego sód trzymamy w nafcie, a magnezową taśmę można po rozgrzaniu spalić w powietrzu? Odpowiedź znajdziesz w §11.
+Dlaczego sód trzymamy w nafcie, a magnezową taśmę można po rozgrzaniu spalić w powietrzu? Odpowiedź znajdziesz w §15.
 :::
 
 ## 0 | Ściąga — cała lekcja na jednej stronie {#sciaga}
@@ -53,7 +53,7 @@ Dlaczego sód trzymamy w nafcie, a magnezową taśmę można po rozgrzaniu spali
 
 ## 1 | Wykład — położenie w układzie i dlaczego te dwie grupy {#polozenie}
 
-@klocek uklad-okresowy {wybrany="Na"} | Tablica Mendelejewa: kafelki litowców i berylowców
+@klocek uklad-okresowy {wybrany="Na"} | Układ okresowy: kafelki litowców i berylowców
 @opis Tablica okresowa z dwoma rzędami kafelków: grupa 1 (Li, Na, K, Rb, Cs, Fr) i grupa 2 (Be, Mg, Ca, Sr, Ba, Ra). Po kliknięciu kafelka pod spodem pojawia się opis pierwiastka i przyciski prób w probówce i w płomieniu. Ra i Fr mają znak promieniowania. Wniosek: położenie w grupie mówi, ile elektronów walencyjnych ma atom i jak reaguje.
 
 ::: karta understand | Wykład od zera
@@ -61,7 +61,7 @@ Układ okresowy porządkuje pierwiastki według liczby atomowej. Pierwiastki z t
 
 Elektrony walencyjne są najdalej od jądra i najsłabiej w nim trzymane. Dlatego atom łatwo je oddaje, zamieniając się w jon dodatni: Na → Na⁺ + e⁻. Stąd nazwa bloku s — ostatni elektron jest na podpowłoce s.
 
-Metale tych grup mają wspólne cechy: są miękkie (lit, sód i potas kroi się nożem), mają małe gęstości (lit, sód i potas pływają na wodzie ciekłej, choć reagują z nią), błyszczą świeżym przekrojem, który szybko matowieje w powietrzu.
+Metale tych grup mają wspólne cechy: błyszczą świeżym przekrojem, który szybko matowieje w powietrzu. Litowce są miękkie (lit, sód i potas kroi się nożem), a lit, sód i potas pływają na wodzie, choć reagują z nią. Berylowce są twardsze i gęstsze — wszystkie cięższe od wody.
 
 **Gdzie analogia się psuje:** „oddawanie elektronu” to model. Elektrony w metalu nie są przypisane do pojedynczego atomu — tworzą wspólną chmurę (wiązanie metaliczne, warstwa uni).
 :::
@@ -76,12 +76,13 @@ Sód i potas reagują z wilgocią z powietrza i z wodą. Przechowuje się je pod
 
 | Cecha | Grupa 1 (litowce) | Grupa 2 (berylowce) |
 |---|---|---|
-| Ostatnia powłoka | ns¹ | ns² |
+| Elektrony na ostatniej powłoce | 1 | 2 |
+| Konfiguracja walencyjna | ns¹ | ns² |
 | Twardość | miękkie (Li, Na, K) | twardsze (Mg, Ca) |
 | Gęstość | małe (Li, Na, K < 1 g/cm³) | większe (Mg, Ca ok. 1,5–1,8 g/cm³ — orientacyjnie) |
 | Reaktywność | rośnie w dół | rośnie w dół (Be słabo) |
 
-::: karta understand | Przykład prowadzony: jaki metal jest najbardziej reaktywny w grupie 1?
+::: karta understand | Przykład prowadzony: jaki metal jest najbardziej reaktywny spośród Li, Na i K?
 **Dane:** Li, Na, K — wszystkie w grupie 1.
 **Krok 1:** w grupie 1 atomy od góry w dół mają coraz więcej powłok (Li 2, Na 3, K 4).
 **Krok 2:** im więcej powłok, tym dalej elektron walencyjny od jądra i tym słabiej jest przyciągany.
@@ -104,8 +105,8 @@ Reakcję sodu z wodą przedstawiono komputerowo, a nie jako instrukcję doświad
 
 ::: karta understand | Strategia → rozwiązanie → sprawdzenie: bilans reakcji sodu z wodą
 **Strategia:** zapisuję substraty i produkty. Produkty to wodorotlenek i wodór, bo metal wypiera wodór z wody.
-**Rozwiązanie:** Na + H₂O → NaOH + H₂. Bilans: sód 1 = 1, ale wodór po lewej 2, po prawej 2 + 1 = 3. Daję 2 przed Na i H₂O: 2 Na + 2 H₂O → 2 NaOH + H₂.
-**Sprawdzenie:** Na 2 = 2; H 4 = 2·2 (2 H₂O) i po prawej 2·1 (NaOH) + 2 (H₂) = 4; O 2 = 2. ✔
+**Rozwiązanie:** Na + H₂O → NaOH + H₂. Bilans: sód 1 = 1, ale wodór po lewej 2, po prawej 2 + 1 = 3. Daję 2 przed Na, H₂O i NaOH: 2 Na + 2 H₂O → 2 NaOH + H₂.
+**Sprawdzenie:** Na 2 = 2; H: po lewej 2·2 = 4 (2 H₂O); po prawej 2·1 (NaOH) + 2 (H₂) = 4; O 2 = 2. ✔
 :::
 
 **Zasada:** aktywne metale grupy 1 oraz wybrane metale grupy 2 reagują z wodą, dając wodorotlenek i wodór. Szybkość zależy od metalu, temperatury, powierzchni metalu i warstwy tlenkowej. W grupie 1 reaktywność na ogół rośnie w dół; wynika to z większego promienia atomowego i mniejszej energii jonizacji:
@@ -115,9 +116,9 @@ Reakcję sodu z wodą przedstawiono komputerowo, a nie jako instrukcję doświad
 - **K** — reaguje najgwałtowniej z trójki; ciepło topi go w trakcie.
 - **Ca** — reaguje wyraźnie już w temperaturze pokojowej: wydziela się H₂, a roztwór mętnieje od słabo rozpuszczalnego Ca(OH)₂.
 - **Mg** — z zimną wodą reaguje bardzo wolno; z gorącą wodą wyraźniej, a z parą wodną daje MgO i H₂: Mg + H₂O(g) → MgO + H₂.
-- **Be** — praktycznie nie reaguje z wodą: chroni go szczelna warstwa BeO, a także niska rozpuszczalność produktów. Patrz lo.
+- **Be** — praktycznie nie reaguje z wodą: chroni go szczelna warstwa BeO, a także niska rozpuszczalność produktów. Patrz §9, karta „Dlaczego beryl jest wyjątkiem”.
 
-**Reakcje z tlenem.** Litowce reagują z tlenem, ale główny produkt zależy od metalu i warunków: lit daje głównie **Li₂O** (4Li + O₂ → 2Li₂O), sód przede wszystkim **Na₂O₂** (2Na + O₂ → Na₂O₂), a potas i cięższe litowce mogą tworzyć ponadtlenki, np. **KO₂**. Berylowce spalają się do tlenków, np. 2Mg + O₂ → 2MgO; magnez — zob. pułapkę w §9.
+**Reakcje z tlenem.** Litowce reagują z tlenem, ale główny produkt zależy od metalu i warunków: lit daje głównie **Li₂O** (4Li + O₂ → 2Li₂O), sód w nadmiarze tlenu daje **Na₂O₂** (2Na + O₂ → Na₂O₂), a w powietrzu w temperaturze pokojowej głównie **Na₂O** (4Na + O₂ → 2Na₂O), a potas i cięższe litowce mogą tworzyć ponadtlenki, np. **KO₂**. Berylowce spalają się do tlenków, np. 2Mg + O₂ → 2MgO; magnez — zob. pułapkę w §3.
 
 ::: karta warning | Status: opis reakcji bez wykonania — potas z wodą
 Potas reaguje z wodą bardzo gwałtownie: może się stopić, zapalić, a rozprysk żrącego KOH jest groźny. Pokazujemy go w animacji lub na filmie; nie jest to doświadczenie do wykonania.
@@ -136,7 +137,7 @@ Nie. Tempo zależy od metalu i od warunków. Mg nie reaguje gwałtownie z zimną
 - **Tlenki** litowców są zasadowe: Na₂O + H₂O → 2 NaOH. Tlenki berylowców są zasadowe z wyjątkiem amfoterycznego BeO; np. CaO + H₂O → Ca(OH)₂.
 
 ::: karta understand | Mini-wykład: dlaczego zasadowe, a nie kwaśne
-Tlenek metalu w reakcji z wodą daje jony OH⁻. Roztwór z jonami OH⁻ ma odczyn zasadowy. Tlenki niemetali robią to odwrotnie (np. CO₂ + H₂O → H₂CO₃, odczyn kwaśny). To jest szkielet, na którym opiera się cała klasyfikacja tlenków (lekcja N02).
+Tlenki litowców, CaO, SrO i BaO reagują z wodą, dając wodorotlenki i jony OH⁻. MgO reaguje z wodą prawie wcale, a BeO wcale; zasadowość MgO widać w reakcji z kwasem: MgO + 2 HCl → MgCl₂ + H₂O. Roztwór z jonami OH⁻ ma odczyn zasadowy. Tlenki niemetali robią to odwrotnie (np. CO₂ + H₂O → H₂CO₃, odczyn kwaśny). To jest szkielet, na którym opiera się cała klasyfikacja tlenków (lekcja N02).
 :::
 
 ## 5 | Płomienie i spalanie — trzy sekwencje palników {#plomienie}
@@ -209,7 +210,7 @@ LiOH; Ca(OH)₂; Ba(OH)₂. (1 pkt za dwa poprawne, 1 pkt za trzeci.)
 :::
 
 ::: karta exam | A3 (2 pkt) — rozpoznanie
-Który pierwiastek z grupy 1 daje najintensywniejszy płomień żółty i jaki to metal?
+Próbka barwi płomień na żółto. Jaki metal jest obecny? Uzasadnij.
 ::: odp | Pokaż klucz
 Sód (Na) — żółty płomień to charakterystyczna cecha sodu. (1 pkt za sód, 1 pkt za uzasadnienie płomieniem.)
 :::
@@ -236,7 +237,7 @@ Wyjaśnij, dlaczego potas reaguje z wodą gwałtowniej niż lit.
 :::
 
 ::: karta exam | B3 (3 pkt) — analiza (kontekst: lampy i bezpieczeństwo)
-Lampa sodowa świeci na żółto. Wymień dwa powody, dla których nie używamy czystego sodu jako źródła światła w domu, i zaznacz, który z nich jest związany z reaktywnością.
+Lampa sodowa świeci dzięki parom sodu zamkniętym w szczelnej rurze. Podaj dwa powody, dla których sód nie może mieć kontaktu z powietrzem i wodą, i zaznacz, który wynika z reaktywności.
 ::: odp | Pokaż klucz
 - Podpowiedź 1: co się dzieje z sodem w kontakcie z wilgocią?
 - Podpowiedź 2: jaki jest stan skupienia sodu w normalnej temperaturze?
@@ -280,7 +281,7 @@ Im większy atom, tym więcej powłok elektronowych ekranuje ładunek jądra. El
 :::
 
 ::: karta lo | [[lo]] Dlaczego beryl jest wyjątkiem
-Beryl ma małe, silnie zwarte jony. Jego tlenek i wodorotlenek są słabo rozpuszczalne, a na powierzchni metalu tworzy się szczelna warstwa BeO. To ogranicza reakcję z wodą. Stąd wniosek: pozycja w grupie to dobre przybliżenie, ale nie prawo bez wyjątków.
+Jon Be²⁺ jest bardzo mały i ma ładunek 2+, więc ma dużą gęstość ładunku i silnie polaryzuje sąsiednie jony; wiązania berylu są w dużej mierze kowalencyjne. Jego tlenek i wodorotlenek są słabo rozpuszczalne, a na powierzchni metalu tworzy się szczelna warstwa BeO. To ogranicza reakcję z wodą. Stąd wniosek: pozycja w grupie to dobre przybliżenie, ale nie prawo bez wyjątków.
 :::
 
 ::: karta olim | [[olim]] Dla ambitnych — amfoteryczność berylu
@@ -318,8 +319,8 @@ Litowce :: pierwiastki grupy 1 (oprócz wodoru)
 Berylowce :: pierwiastki grupy 2
 Blok s :: pierwiastki, których ostatni elektron jest na podpowłoce s
 Elektrony walencyjne :: elektrony na zewnętrznej powłoce atomu
-Wodorotlenek :: związek metalu z grupą OH⁻
-Zasada :: związek, który w wodzie daje jony OH⁻ (wg Arrheniusa)
+Wodorotlenek :: związek metalu z grupą wodorotlenową –OH, wzór ogólny M(OH)ₙ
+Zasada :: wodorotlenek, który w wodzie dysocjuje na kation metalu i jony OH⁻ (wg Arrheniusa); rozpuszczalność to osobna cecha
 Nafta :: ciecz używana do przechowywania metali reaktywnych, odcina dostęp powietrza
 Nadtlenek :: związek zawierający jon O₂²⁻, np. Na₂O₂
 Amfoteryczność :: zdolność związku do reagowania zarówno z kwasami, jak i z zasadami
@@ -335,11 +336,11 @@ Energia jonizacji :: energia potrzebna do oderwania elektronu od atomu w fazie g
 - 8
 - 12
 ! Mg leży w grupie 2, więc ma dwa elektrony walencyjne.
-? Który metal z grupy 1 reaguje z wodą najgwałtowniej?
+? Który z metali Li, Na, K reaguje z wodą najgwałtowniej?
 - Li
 - Na
 + K
-- Rb nie
+- Mg
 ! Reaktywność rośnie w dół grupy 1; potas jest najbardziej reaktywny spośród Li, Na i K.
 ? Produkty reakcji sodu z wodą to:
 + NaOH i H₂
@@ -352,14 +353,14 @@ Energia jonizacji :: energia potrzebna do oderwania elektronu od atomu w fazie g
 + ceglastoczerwoną
 - zieloną
 - fioletową
-! Żółty — sód, zielony — bar, fioletowy — potas.
+! Wapń — ceglastoczerwony; żółty to sód, zielony bar, fioletowy potas.
 ? Które zdanie o berylu jest poprawne?
 - reaguje z zimną wodą gwałtownie
 + praktycznie nie reaguje z wodą, bo pokrywa się warstwą tlenku
 - ma trzy elektrony walencyjne
 - tworzy wyłącznie kwasy
 ! Beryl jest wyjątkiem w zachowaniu wobec wody.
-? Tlenek litowca rozpuszczony w wodzie daje:
+? Tlenek litowca reaguje z wodą, dając:
 - kwas
 + zasadę
 - sól obojętną
@@ -383,8 +384,8 @@ Kolory płomienia pochodzą od elektronów wzbudzanych w atomach metali. Gdy wra
 Baterie litowo-jonowe stosuje się w telefonach i samochodach elektrycznych. Lit jest najlżejszym metalem, więc ma dużą gęstość energii na masę (uproszczenie szkolne).
 :::
 
-::: karta extra | Gips i wapno
-Wapno gaszone Ca(OH)₂ reaguje z dwutlenkiem węgla z powietrza i z czasem twardnieje. Ten proces wykorzystuje się w zaprawie wapiennej (uproszczenie szkolne).
+::: karta extra | Wapno: dlaczego zaprawa twardnieje
+Wapno gaszone Ca(OH)₂ reaguje z dwutlenkiem węgla z powietrza i z czasem twardnieje: Ca(OH)₂ + CO₂ → CaCO₃ + H₂O. Ten proces wykorzystuje się w zaprawie wapiennej (uproszczenie szkolne).
 :::
 
 ## 14 | Sposoby zapamiętania {#mnemotechniki}
@@ -418,9 +419,9 @@ Sód reaguje z wodą i wilgocią z powietrza, więc trzymamy go w nafcie, która
 
 ## Pochodzenie i sprawdzenie treści {#zrodla}
 
-- **Skala i typ:** skala M (4 kluczowe umiejętności w minimum i 6 pozycji), typ temat.
+- **Skala i typ:** skala M (4 kluczowe umiejętności w minimum; minimum ma 6 punktów), typ temat.
 - **Źródło:** szkielet kanonu `CHE.01.P01.blok_s` (wymaga: F06, F11, N03; zakres: litowce i berylowce, związki) — szkielet nie miał treści, lekcja napisana od zera.
-- **Co zmieniło się względem szkieletu:** szkielet miał 1 KB i sekcje „do uzupełnienia”. Teraz: wykład, mini-wykłady, przykłady prowadzone, klinika, 9 ćwiczeń z drabinką podpowiedzi, fiszki, słownik, test 8 pytań, ciekawostki, warstwy lo/olim/uni.
-- **Benchmark (tryb B, z pamięci, do potwierdzenia w W1):** Khan Academy — mikro-sprawdzenie („Sprawdź się”) i drabinka podpowiedzi w §8; OpenStax — Strategia / Rozwiązanie / Sprawdzenie w §3; PhET — predict–observe–explain nie użyte (brak symulacji w tej lekcji).
+- **Co zmieniło się względem szkieletu:** szkielet miał 1 KB i sekcje „do uzupełnienia”. Teraz: wykład, mini-wykłady, przykłady prowadzone, klinika, 9 ćwiczeń z drabinką podpowiedzi, fiszki, słownik, test 7 pytań, ciekawostki, warstwy lo/olim/uni.
+- **Benchmark (tryb B, z pamięci, do potwierdzenia w W1):** Khan Academy — mikro-sprawdzenie („Sprawdź się”) i drabinka podpowiedzi w §8; OpenStax — Strategia / Rozwiązanie / Sprawdzenie w §3; PhET — predict–observe–explain nie użyte (trzy klocki-symulacje: probówki, palniki i tablica okresowa).
 - **Do W1:** gęstości Mg i Ca (orientacyjnie), rola BaSO₄ w diagnostyce, zapis Be(OH)₂ + OH⁻ → [Be(OH)₄]²⁻, tempo reakcji Mg i Ca z wodą, ciekawostki o bateriach i gipsie (uproszczenia).
 - **Pominięcia:** brak; wymagany zakres szkieletu pokryty.
