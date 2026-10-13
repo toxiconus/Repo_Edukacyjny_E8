@@ -142,14 +142,15 @@ Tlenki litowców, CaO, SrO i BaO reagują z wodą, dając wodorotlenki i jony OH
 
 ## 5 | Płomienie i spalanie — trzy sekwencje palników {#plomienie}
 
-Palniki pokazują **trzy sekwencje po trzy palniki**; przełącznik nad palnikami wybiera jedną. Pod każdym palnikiem wybierzesz dowolny pierwiastek litowców lub berylowców. Naraz widać zawsze trzy palniki. Każda sekwencja odpowiada na inne pytanie:
+Palniki pokazują **cztery sekwencje po trzy palniki**; przełącznik nad palnikami wybiera jedną. Pod każdym palnikiem wybierzesz dowolny pierwiastek litowców lub berylowców. Naraz widać zawsze trzy palniki. Każda sekwencja odpowiada na inne pytanie:
 
 - **Próba płomieniowa** — jaka barwa oznacza jaki metal?
 - **Spalanie i utlenianie** — jaki związek powstaje z tlenem?
+- **Nadtlenki** — które metale tworzą nadtlenki zamiast zwykłych tlenków (Na, Sr, Ba)?
 - **Model teoretyczny** — co z pierwiastkami, których nie wykonuje się w szkole?
 
-@klocek palniki {seria="plomien"} | Palniki: trzy sekwencje do wyboru (po trzy palniki naraz)
-@opis Trzy palniki stoją w jednym rzędzie, nad nimi przełącznik sekwencji. Sekwencja „Próba płomieniowa”: sód żółty, potas fioletowy, wapń ceglastoczerwony. „Spalanie i utlenianie”: lit, magnez i stront, pod każdym podany produkt (Li₂O, MgO, SrO). „Model teoretyczny”: rubid, cez i rad. Wniosek: barwa płomienia wskazuje metal, a produkt spalania zależy od metalu i warunków.
+@klocek palniki {seria="plomien"} | Palniki: cztery sekwencje do wyboru (po trzy palniki naraz)
+@opis Trzy palniki stoją w jednym rzędzie, nad nimi przełącznik sekwencji. Sekwencja „Próba płomieniowa”: sód żółty, potas fioletowy, wapń ceglastoczerwony. „Spalanie i utlenianie”: lit, magnez i stront, pod każdym podany produkt (Li₂O, MgO, SrO). „Nadtlenki”: sód, stront i bar, pod każdym podany produkt (Na₂O₂, SrO z domieszką SrO₂, BaO₂). „Model teoretyczny”: rubid, cez i rad. Wniosek: barwa płomienia wskazuje metal, a produkt spalania zależy od metalu i warunków.
 
 ::: karta warning | Status: wizualizacja komputerowa — próba płomieniowa
 Barwę pokazano komputerowo. Płomień sodu jest bardzo intensywny; w prawdziwej pracowni ślady sodu zagłuszają inne barwy. Próbę wykonuje się tylko pod nadzorem nauczyciela.
@@ -163,6 +164,10 @@ Bar barwi płomień na zielono, ale jego sole są trujące. Próbę płomieniow�
 Spalanie litowców i magnezu jest gwałtowne, a magnez daje oślepiająco biały błysk. Tu zobaczysz produkt, a nie instrukcję. Nie patrz prosto w błysk. Spalanie magnezu nie jest próbą płomieniową — w tej sekwencji nie porównujemy barw.
 
 **Wapń:** spala się do tlenku, 2Ca + O₂ → 2CaO. Sam CaO nie pali się, bo jest już produktem utlenienia metalu.
+:::
+
+::: karta warning | Status: wizualizacja komputerowa — spalanie baru (nadtlenek)
+Bar tworzy przy ogrzewaniu nadtlenek BaO₂ (Ba + O₂ → BaO₂), często z domieszką BaO. Sole baru są trujące, a metal reaguje gwałtownie z tlenem i wilgocią. W szkole nie wykonuje się tej reakcji; pokazujemy ją tylko jako wizualizację.
 :::
 
 ::: karta warning | Status: model teoretyczny — rad (UWAGA: rzeczywista reakcja niebezpieczna)

@@ -164,3 +164,4 @@
 - 2026-10-13: P01_s01 — w probówce dodano CaO (tlenek berylowca), w selektorach probówek i palników dostępny Fr (bez danych, tylko model); test 56 OK.
 - 2026-10-13: P01_s01 — dopisano: wapń spala się do CaO (CaO nie pali się), frans bez danych (przewidywana reakcja z wodą tylko teoretyczna); test 56 OK.
 - 2026-10-13: P01 — poprawka tlenków Na (bez „temperatury pokojowej” — niepotwierdzone) i Ba (BaO₂ przy ogrzewaniu, LibreTexts); PRODUKT: Na, Sr. Build + test OK. Szczegóły: plany/audyty/P01_podplik_odrzucone_i_odlozone.md §6.
+- 2026-10-13: P01 — czwarta sekwencja palników „Nadtlenki: Na, Sr, Ba” (produkty Na₂O₂, SrO z SrO₂, BaO₂), status wizualizacji dla spalania baru. Build + test OK (56).

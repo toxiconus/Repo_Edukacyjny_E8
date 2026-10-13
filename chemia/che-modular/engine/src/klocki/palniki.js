@@ -138,10 +138,12 @@ var SERIE = {
     opis: 'Tu interesuje nas barwa, bo wskazuje metal. Sód przysłania inne barwy, więc potas ogląda się przez szkło kobaltowe.'},
   utlenianie: {nazwa: 'Spalanie i utlenianie', metale: ['Li', 'Mg', 'Sr'],
     opis: 'Tu interesuje nas produkt, a nie barwa. Płomień pokazuje tylko przebieg reakcji. Pod każdym palnikiem podano powstały związek.'},
+  nadtlenki: {nazwa: 'Nadtlenki: Na, Sr, Ba', metale: ['Na', 'Sr', 'Ba'],
+    opis: 'Tu widać, że część metali tworzy nadtlenki, a nie zwykłe tlenki. Pod palnikiem podano produkt. Płomień pokazuje tylko przebieg reakcji; spalanie baru to wizualizacja.'},
   model: {nazwa: 'Model teoretyczny: Rb, Cs, Ra', metale: ['Rb', 'Cs', 'Ra'],
     opis: 'Model teoretyczny i reakcje niemożliwe w szkole. Ra jest promieniotwórczy, więc pokazujemy go wyłącznie jako animację.'}
 };
-var PRODUKT = {Li: '4Li + O₂ → 2Li₂O', Na: '2Na + O₂ → Na₂O₂ (w nadmiarze tlenu); 4Na + O₂ → 2Na₂O (przy ograniczonym tlenie)', K: 'K + O₂ → KO₂', Ca: '2Ca + O₂ → 2CaO', Mg: '2Mg + O₂ → 2MgO', Sr: '2Sr + O₂ → 2SrO (z domieszką SrO₂)'};
+var PRODUKT = {Li: '4Li + O₂ → 2Li₂O', Na: '2Na + O₂ → Na₂O₂ (w nadmiarze tlenu); 4Na + O₂ → 2Na₂O (przy ograniczonym tlenie)', K: 'K + O₂ → KO₂', Ca: '2Ca + O₂ → 2CaO', Mg: '2Mg + O₂ → 2MgO', Sr: '2Sr + O₂ → 2SrO (z domieszką SrO₂)', Ba: 'Ba + O₂ → BaO₂ (często z domieszką BaO)'};
 
 KLOCKI.def('palniki', {
   domyslne: {seria: 'plomien'},
