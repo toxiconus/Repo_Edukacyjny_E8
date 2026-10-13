@@ -7,6 +7,7 @@ kicker: F02 · FUNDAMENTY · MASTER v1.1
 lead: Druga lekcja bloku fundamentów: co właściwie jest w badanej próbce. Uczysz się klasyfikować materię argumentem, a nie wyglądem —
 lead: substancja czysta (pierwiastek lub związek) czy mieszanina (jednorodna lub niejednorodna) — i rozumieć, co z tej klasyfikacji wynika w praktyce.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 stopka: **CHEMIA F02 v1.0 MASTER** · Materia i substancje · 2026
 ---
 ::: minimum | Muszę umieć na E8 — 12 punktów
@@ -315,7 +316,7 @@ Gdy masz zaklasyfikować materiał, idź po schodach i nie przeskakuj stopni. **
 
 ## 10 | Ćwiczenia {#cwiczenia}
 
-::: karta basic | A. Podstawa
+::: karta exam | A. Podstawa — klasyfikacja (4 pkt, 1 pkt za punkt 1–4)
 1. Zaklasyfikuj (substancja prosta / związek / mieszanina jednorodna / niejednorodna): O₂, H₂O, NaCl, mleko, powietrze, Fe, CO₂, woda z piaskiem.
 2. Wskaż, który zapis oznacza substancję prostą, a który związek: N₂, NH₃, Cl₂, HCl.
 3. Ile pierwiastków i ile atomów jest w zapisie H₂SO₄?
@@ -329,7 +330,7 @@ Gdy masz zaklasyfikować materiał, idź po schodach i nie przeskakuj stopni. **
 :::
 :::
 
-::: karta understand | B. Trening
+::: karta exam | B. Trening — rozumowanie i test (4 pkt)
 1. Uczeń mówi: „Roztwór soli jest przezroczysty, więc to substancja czysta”. Popraw go w schemacie twierdzenie → dowód → wyjaśnienie.
 2. Woda z kranu i woda destylowana wyglądają tak samo. Zaproponuj prosty test, który je odróżni.
 3. Ile substancji i ile faz jest w szklance wody z kostkami lodu i rozpuszczonym cukrem?
@@ -373,7 +374,7 @@ Etanol z wodą tworzy jedną fazę ciekłą — sączenie nie zadziała; trzeba 
 :::
 :::
 
-::: karta basic | F. Utrwalenie — klasyfikacja
+::: karta exam | F. Utrwalenie — klasyfikacja (4 pkt)
 1. Zaklasyfikuj: powietrze, tlen, woda destylowana, mleko, chlorek sodu, granit.
 2. Wyjaśnij, dlaczego woda i wodór nie są tą samą substancją, choć woda zawiera wodór.
 3. Podaj dwie różnice między mieszaniną a związkiem chemicznym.
@@ -381,7 +382,7 @@ Etanol z wodą tworzy jedną fazę ciekłą — sączenie nie zadziała; trzeba 
 
 ::: odp | Pokaż odpowiedzi
 1. Powietrze — mieszanina jednorodna; tlen — substancja prosta; woda destylowana — związek chemiczny; mleko — mieszanina niejednorodna (koloid — niejednorodność widać pod mikroskopem); chlorek sodu — związek chemiczny; granit — mieszanina niejednorodna.
-2. Woda to związek o stałym składzie H₂O i własnych właściwościach (gasi ogień); wodór to substancja prosta H₂ (palny gaz). W wodzie wodór jest połączony chemicznie z tlenem.
+2. Woda to związek o stałym składzie H₂O i własnych właściwościach (nie jest palna); wodór to substancja prosta H₂ (palny gaz). W wodzie wodór jest połączony chemicznie z tlenem.
 3. Mieszanina ma zmienny skład, a związek — stały; składniki mieszaniny zachowują właściwości i rozdziela się je metodami fizycznymi, związek rozkłada się tylko reakcją chemiczną.
 4. Fałsz. „Substancja złożona” to związek chemiczny — substancja czysta o stałym składzie, a nie mieszanina.
 :::
