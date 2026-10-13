@@ -215,6 +215,13 @@ Woda jest **amfoteryczna**: zależnie od partnera reakcji może oddać proton al
 W szklance wody (250 cm³ = 0,25 dm³) przy 25 °C jest ok. 0,25 · 10⁻⁷ = 2,5 · 10⁻⁸ mola H₃O⁺. To ok. 1,5 · 10¹⁶ jonów. Mimo to woda jest obojętna, bo tyle samo jest jonów OH⁻.
 :::
 
+::: karta extra | Ciekawostka — skąd na Ziemi wzięła się woda?
+Ocean światowy ma objętość ok. 1,4 mld km³ i pokrywa ok. 71% powierzchni planety, a mimo to woda to niewielki ułamek jej masy. Jak się tu znalazła, nie wiadomo w stu procentach. Dwie główne hipotezy:
+- **Odgazowanie płaszcza:** podczas formowania się Ziemi wnętrze planety uwalniało parę wodną z gorących skał (podobnie jak dziś podczas erupcji wulkanicznych). Para skraplała się i tworzyła oceany.
+- **Dostarczenie z kosmosu:** planetozymale, asteroidy i komety uderzały we wczesną Ziemię. Stosunek izotopów wodoru D/H w wodzie niektórych komet (np. Halleya) jest ok. 3 razy wyższy niż w oceanach, więc komety zapewne nie były jedynym źródłem. Lepiej pasują do tego asteroidy węgliste, w których woda ma zbliżony skład izotopowy.
+Dziś najczęściej przyjmuje się, że woda pochodzi z obu źródeł naraz.
+:::
+
 ## Zadania {#zadania}
 
 ::: karta exam | Zadania 1–4 (13 pkt)
