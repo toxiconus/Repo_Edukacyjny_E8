@@ -350,7 +350,7 @@ Każdą odpowiedź „jak rozdzielić?” buduj w trzech krokach. **1)** Nazwij 
 :::
 :::
 
-::: karta understand | B. Trening
+::: karta exam | B. Trening — rozumowanie i test (4 pkt)
 1. Wyjaśnij, dlaczego sączenie nie rozdzieli soli od wody, a rozdzieli kredę od wody.
 2. Podaj dwie różnice między odparowaniem a destylacją.
 3. Oblicz masę 50 cm³ oleju o gęstości 0,92 g/cm³.
@@ -394,7 +394,7 @@ Rozpuszczenie w wodzie → sączenie (osad: składnik nierozpuszczalny) → dest
 :::
 :::
 
-::: karta basic | F. Utrwalenie — dobór metody
+::: karta exam | F. Utrwalenie — dobór metody (4 pkt)
 1. Dobierz metodę: kreda i woda, olej i woda, sól i woda, opiłki żelaza i siarka.
 2. Wyjaśnij, dlaczego sączenie nie oddzieli soli rozpuszczonej w wodzie.
 3. Które przemiany są zjawiskami fizycznymi: topnienie lodu, spalanie drewna, wrzenie wody, rdzewienie żelaza?
