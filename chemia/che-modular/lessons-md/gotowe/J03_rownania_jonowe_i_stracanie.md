@@ -597,432 +597,739 @@ Grafiki do zrobienia:
 
 ## 5 | Kiedy reakcja w roztworze zachodzi {#kiedy-zachodzi} [[understand:ROZUMIENIE]] [[basic:E8]]
 
-To pytanie nagradza w każdej konkurencji, od sprawdzianu po etap rejonowy. **Reakcja wymiany w roztworze zachodzi tylko wtedy, gdy powstaje produkt, który opuszcza sferę reakcji:**
+Zmieszanie dwóch roztworów nie jest automatycznie reakcją chemiczną. W roztworze mogą znajdować się jony, które tylko krążą obok siebie. Aby w typowym szkolnym zadaniu o reakcjach wymiany zapisać równanie netto, trzeba wskazać produkt, którego powstawanie zmienia skład układu.
 
-1. **osad (↓)** — substancja nierozpuszczalna lub trudno rozpuszczalna opada na dno; jej jony są usuwane z gry (AgCl↓, BaSO₄↓, Cu(OH)₂↓);
-2. **gaz (↑)** — produkt ulatuje (CO₂ z węglanów, H₂ w reakcjach metali z kwasami);
-3. **słaby elektrolit** — najczęściej woda w zobojętnieniu (H⁺ + OH⁻ → H₂O); dysocjuje tak słabo, że jony H⁺ i OH⁻ są faktycznie usuwane z gry.
+Trzy najważniejsze szkolne przesłanki to:
 
-Jeśli żadna z trzech rzeczy nie powstaje — nie ma reakcji. Klasyka: NaNO₃ + KCl. Potencjalne produkty (KNO₃ i NaCl) są rozpuszczalne, więc wszystkie jony — Na⁺, NO₃⁻, K⁺, Cl⁻ — pozostają w roztworze niezmienione. Zapis „NaNO₃ + KCl → KNO₃ + NaCl” niczego nie opisuje: nic nowego nie powstało, zmieniły się tylko pary partnerów w roztworze. Uczciwy wniosek: **nie ma typowej reakcji netto**.
+1. **Powstaje osad** — produkt jest trudno rozpuszczalny i wydziela się jako faza stała: AgCl↓, BaSO₄↓, Cu(OH)₂↓.
+2. **Wydziela się gaz** — produkt opuszcza roztwór jako gaz: CO₂↑, H₂↑.
+3. **Powstaje słaby elektrolit** — najczęściej woda w zobojętnianiu: H⁺ + OH⁻ → H₂O.
 
-Wpadka równie częsta: **skracanie jonów, których nie ma po obu stronach**. Jony obserwatorowe usuwa się tylko wtedy, gdy rzeczywiście występują niezmienione po obu stronach równania pełnego. Jeśli w równaniu skróconym zostawisz choć jednego widza — odpowiedź jest błędna, nawet jeśli „skład chemiczny się zgadza”.
+Są to typowe przesłanki reakcji wymiany w roztworach, a nie pełna definicja każdej reakcji chemicznej. W roztworach zachodzą również reakcje utleniania i redukcji, tworzenia kompleksów oraz inne przemiany, w których nie powstaje osad, gaz ani woda.
 
-::: karta warning | Uwaga — „przetasowanie jonów” to nie reakcja
-Zdanie „zmieszałem dwie sole, więc zaszła reakcja wymiany” jest za krótkie. Sprawdź trzy powody reakcji (osad, gaz, słaby elektrolit) — i dopiero wtedy pisz równanie albo uczciwe „brak reakcji”. Na konkursie „brak reakcji” jest pełnoprawną, punktową odpowiedzią, o ile masz ją uzasadnić rozpuszczalnością potencjalnych produktów.
+Jeżeli żadna z wymienionych przesłanek nie występuje, nie ma reakcji jonowej netto. Klasyczny przykład to roztwory NaNO₃ i KCl:
+
+NaNO₃ + KCl → brak reakcji netto
+
+Potencjalne produkty wymiany to KNO₃ i NaCl. Oba są dobrze rozpuszczalne. W roztworze pozostają więc Na⁺, NO₃⁻, K⁺ i Cl⁻. Nie powstaje nowa substancja opuszczająca układ, a zapis „NaNO₃ + KCl → KNO₃ + NaCl” opisuje jedynie zmianę przypisania jonów do wzorów, nie rzeczywistą przemianę.
+
+Wniosek „brak reakcji netto” jest pełnoprawną odpowiedzią, jeżeli zostanie uzasadniony. W zadaniu konkursowym zapisz, że potencjalne produkty są rozpuszczalne i żadna z typowych przesłanek reakcji nie jest spełniona.
+
+Nie skracaj jonów, których nie ma po obu stronach równania jonowego pełnego. Jony obserwatorowe usuwa się tylko wtedy, gdy występują w tej samej postaci i w tej samej liczbie po lewej oraz po prawej stronie.
+
+::: karta understand | W skrócie — trzy przesłanki reakcji wymiany
+Osad, gaz i słaby elektrolit to trzy typowe powody, dla których w szkolnych zadaniach zapisuje się reakcję wymiany w roztworze. Osad opuszcza roztwór jako faza stała, gaz może opuścić naczynie, a woda powstaje w zobojętnianiu. Jeżeli żadna z tych przesłanek nie występuje, nie ma reakcji netto.
 :::
 
-::: karta understand | W skrócie — trzy powody reakcji
-Osmiotrysk, nie — osad, gaz, woda: trzy jedyne powody, dla których reakcja wymiany w roztworze ma sens. Osad opuszcza scenę na dno probówki, gaz przez otwór probówki, woda — pozostając w roztworze — „pochłania” H⁺ i OH⁻ w bezelitowe cząsteczki. Brak wszystkich trzech = wszystkie jony zostają w roztworze = reakcja nie zachodzi. Kontroluj przy tym dwie rzeczy: nie skracaj jona, którego nie ma po obu stronach, i nie pisz reakcji, której nie ma.
+::: karta warning | Uwaga — „przetasowanie jonów” to nie reakcja
+Nie pisz reakcji wymiany tylko dlatego, że można zamienić partnerów między dwiema solami. Najpierw sprawdź, czy powstaje osad, gaz lub słaby elektrolit. Jeżeli nie, zapisz „brak reakcji netto” i uzasadnij rozpuszczalnością potencjalnych produktów.
+:::
+
+::: nie-myl | Mieszanie, dysocjacja i reakcja netto
+- Mieszanie roztworów ≠ reakcja netto — w jednym naczyniu mogą znajdować się jony, które nie tworzą nowej substancji; test rozstrzygający: sprawdź, czy powstaje osad, gaz lub słaby elektrolit.
+- Dysocjacja ≠ reakcja netto — rozpuszczanie NaCl wprowadza jony do roztworu, ale samo w sobie nie jest reakcją strącania; test rozstrzygający: zapytaj, czy powstaje nowa substancja opuszczająca układ.
+- Obecność jonów obserwatorowych ≠ brak reakcji — jony obserwatorowe mogą towarzyszyć reakcji strącania; test rozstrzygający: usuń je dopiero po ustaleniu, że rzeczywiście są identyczne po obu stronach.
 :::
 
 ::: karta exam | Zadanie 5 (4 pkt) — Które pary dadzą osad?
-Oceń, które pary roztworów dadzą osad; dla osadów zapisz równanie jonowe skrócone:
+Oceń, które pary roztworów dadzą osad. Dla reakcji z osadem zapisz równanie jonowe skrócone i podaj barwę osadu:
+
 a) NaCl + AgNO₃ (1 pkt)
+
 b) KNO₃ + Na₂SO₄ (1 pkt)
+
 c) CaCl₂ + Na₂CO₃ (1 pkt)
+
 d) CuSO₄ + NaOH (1 pkt)
 
 ::: odp | Pokaż klucz
-a) (1 pkt) Tak: Ag⁺ + Cl⁻ → AgCl↓ (biały, serowaty).
-b) (1 pkt) Nie — potencjalne produkty (K₂SO₄ i NaNO₃) są dobrze rozpuszczalne, więc wszystkie jony pozostają obserwatorowe; reakcja nie zachodzi.
-c) (1 pkt) Tak: Ca²⁺ + CO₃²⁻ → CaCO₃↓ (biały).
-d) (1 pkt) Tak: Cu²⁺ + 2OH⁻ → Cu(OH)₂↓ (niebieski).
+a) (1 pkt) Tak. Ag⁺ + Cl⁻ → AgCl↓. Powstaje biały, serowaty osad.
+
+b) (1 pkt) Nie. Potencjalne produkty, K₂SO₄ i NaNO₃, są dobrze rozpuszczalne. Nie ma reakcji netto.
+
+c) (1 pkt) Tak. Ca²⁺ + CO₃²⁻ → CaCO₃↓. Powstaje biały osad.
+
+d) (1 pkt) Tak. Cu²⁺ + 2OH⁻ → Cu(OH)₂↓. Powstaje niebieski osad.
+:::
+:::
+
+::: karta exam | Zadanie 18 (4 pkt) — Kiedy zapis reakcji jest pusty?
+Oceń, czy po zmieszaniu roztworów występuje reakcja netto. Uzasadnij odpowiedź.
+
+a) NaNO₃ + KCl (1 pkt)
+
+b) Na₂CO₃ + HCl (1 pkt)
+
+c) K₂SO₄ + Ba(NO₃)₂ (1 pkt)
+
+d) NaOH + HCl (1 pkt)
+
+::: odp | Pokaż klucz
+a) (1 pkt) Brak reakcji netto. Potencjalne produkty, KNO₃ i NaCl, są dobrze rozpuszczalne; nie powstaje osad, gaz ani woda w zobojętnianiu.
+
+b) (1 pkt) Reakcja zachodzi. CO₃²⁻ + 2H⁺ → H₂O + CO₂↑. Powstaje gaz i woda.
+
+c) (1 pkt) Reakcja zachodzi. Ba²⁺ + SO₄²⁻ → BaSO₄↓. Powstaje biały osad.
+
+d) (1 pkt) Reakcja zachodzi. H⁺ + OH⁻ → H₂O. Powstaje słaby elektrolit — woda.
 :::
 :::
 
 ## 6 | Osady i ich barwy — obowiązkowy katalog {#osady} [[basic:E8]]
 
-Barwa osadu to najcenniejsza obserwacja w zadaniach o strącaniu — często to ona daje osobny punkt w kluczu. Katalog poniżej jest obowiązkowy w całości.
+Barwa osadu jest ważną obserwacją w doświadczeniach strącaniowych. Pomaga odróżnić produkty, ale sama nie przesądza o składzie próbki. Białe osady mogą pochodzić od różnych jonów, dlatego do wnioskowania potrzebne są dodatkowe próby.
 
-| Osad | Barwa | Reakcja skrócona | Uwagi |
+| Osad | Barwa | Równanie jonowe skrócone | Uwagi |
 |---|---|---|---|
-| AgCl | biały serowaty | Ag⁺ + Cl⁻ → AgCl↓ | rozpuszcza się w NH₃(aq) |
-| AgBr | żółtawobiały | Ag⁺ + Br⁻ → AgBr↓ | światłoczuły (fotografia) |
+| AgCl | biały, serowaty | Ag⁺ + Cl⁻ → AgCl↓ | rozpuszcza się w roztworze amoniaku |
+| AgBr | żółtawobiały | Ag⁺ + Br⁻ → AgBr↓ | związki srebra z halogenkami są światłoczułe |
 | AgI | żółty | Ag⁺ + I⁻ → AgI↓ | światłoczuły |
-| BaSO₄ | biały | Ba²⁺ + SO₄²⁻ → BaSO₄↓ | nierozpuszczalny w kwasach |
-| CaCO₃ | biały | Ca²⁺ + CO₃²⁻ → CaCO₃↓ | rozpuszcza się w kwasach z CO₂↑ |
-| Cu(OH)₂ | niebieski | Cu²⁺ + 2OH⁻ → Cu(OH)₂↓ | — |
-| Fe(OH)₂ | brudnozielony | Fe²⁺ + 2OH⁻ → Fe(OH)₂↓ | utlenia się na powietrzu (ciemnieje ku brunatnemu Fe(OH)₃) |
-| Fe(OH)₃ | brunatny/rdzawy | Fe³⁺ + 3OH⁻ → Fe(OH)₃↓ | — |
-| PbI₂ | żółty | Pb²⁺ + 2I⁻ → PbI₂↓ | „złoty deszcz” — krystaliczny, błyszczący osad |
-| PbCl₂ | biały | Pb²⁺ + 2Cl⁻ → PbCl₂↓ | słabo rozpuszczalny (T) |
+| BaSO₄ | biały | Ba²⁺ + SO₄²⁻ → BaSO₄↓ | praktycznie nierozpuszczalny w rozcieńczonych kwasach stosowanych w szkolnych próbach |
+| CaCO₃ | biały | Ca²⁺ + CO₃²⁻ → CaCO₃↓ | rozpuszcza się w kwasach z wydzielaniem CO₂↑ |
+| Cu(OH)₂ | niebieski | Cu²⁺ + 2OH⁻ → Cu(OH)₂↓ | typowy osad z jonów Cu²⁺ |
+| Fe(OH)₂ | brudnozielony | Fe²⁺ + 2OH⁻ → Fe(OH)₂↓ | na powietrzu stopniowo ciemnieje wskutek utleniania |
+| Fe(OH)₃ | brunatny, rdzawy | Fe³⁺ + 3OH⁻ → Fe(OH)₃↓ | — |
+| PbI₂ | żółty | Pb²⁺ + 2I⁻ → PbI₂↓ | „złoty deszcz” |
+| PbCl₂ | biały | Pb²⁺ + 2Cl⁻ → PbCl₂↓ | trudno rozpuszczalny |
 
-Dwa komentarze, które wygrywają punkty. Pierwszy: **Fe(OH)₂ się zmienia** — świeży brudnozielony osad na powietrzu stopniowo ciemnieje ku brunatnemu, bo tlen powietrza utlenia Fe²⁺ do Fe³⁺; w zapisie obserwacji warto odnotować „osad brudnozielony, ciemniejący na powietrzu”. Drugi: **białe osady się różnią zachowaniem** — BaSO₄ nie rozpuszcza się w kwasach, a CaCO₃ rozpuszcza się z ulotem CO₂; to rozróżnienie będzie bronią w zadaniu o interferencjach ([§10](#zadania-konkurs), zadanie 15).
+Dwie obserwacje wymagają szczególnej uwagi.
+
+Pierwsza dotyczy Fe(OH)₂. Świeży osad jest brudnozielony, ale w obecności tlenu z powietrza stopniowo zmienia barwę na brunatną. W opisie doświadczenia warto napisać: „osad brudnozielony, ciemniejący na powietrzu”. Zmiana barwy wynika z utleniania Fe²⁺ do Fe³⁺.
+
+Druga dotyczy białych osadów. AgCl, BaSO₄, CaCO₃ i PbCl₂ mogą wyglądać podobnie. Różnicuje je zachowanie wobec kwasów i innych odczynników. BaSO₄ pozostaje jako osad, a CaCO₃ rozpuszcza się z ulotem CO₂. Ag₂CO₃ ma zwykle barwę bladożółtą i również może zakłócić prostą próbę na chlorki.
 
 @model j03-osady-v01 | Dwie probówki, dwie sole — czy wytrąci się osad? | Probówki A i B z rozpuszczalnymi solami, wynik po zmieszaniu i równanie · CHE.DATA.SOLUBILITY_TABLE
 @opis Model pokazuje dwie probówki z wybranymi rozpuszczalnymi solami (listy rozwijane A i B). Po zmieszaniu jony łączą się „na krzyż”, a model sprawdza w tabeli rozpuszczalności każdą nową parę. Jeżeli powstaje sól trudno rozpuszczalna (T) lub praktycznie nierozpuszczalna (N), w trzeciej probówce pojawia się osad w barwie z katalogu i zapisywane jest równanie jonowe skrócone z ↓. Jeżeli obie nowe sole są rozpuszczalne (R), roztwór pozostaje przezroczysty i komunikat brzmi „Brak osadu”. Wniosek: osad powstaje tylko wtedy, gdy przynajmniej jeden z produktów wymiany jest trudno rozpuszczalny.
 
-::: karta warning | Uwaga — barwa wskazuje, nie wydaje wyroku
-Sam kolor osadu nie zawsze stanowi jednoznaczną identyfikację: biały jest AgCl, ale też BaSO₄, CaCO₃, Ag₂CO₃ (białawożółty) i PbCl₂. Przy próbach strącaniowych uwzględnij rozpuszczalność, stężenie i możliwe reakcje uboczne — a wniosek formułuj z warunkami („biały osad nierozpuszczalny w rozcieńczonym kwasie, po dodaniu AgNO₃ do zakwaszonej próbki → chlorki”). Pełną analizę interferencji znajdziesz w zadaniu 15.
+::: karta understand | W skrócie — barwa jest obserwacją, nie identyfikacją
+Barwa osadu pomaga zawęzić możliwości, ale nie zastępuje próby rozstrzygającej. Biały osad może być AgCl, BaSO₄ albo CaCO₃. Niebieski osad wskazuje zwykle na Cu(OH)₂, brudnozielony na Fe(OH)₂, a brunatny na Fe(OH)₃.
+:::
+
+::: karta warning | Uwaga — nie myl Fe(OH)₂ z Fe(OH)₃
+Fe(OH)₂ jest brudnozielony, a Fe(OH)₃ brunatny. To najczęściej mylona para barw. Fe(OH)₂ dodatkowo ciemnieje na powietrzu, ponieważ utlenia się do związków żelaza(III).
 :::
 
 ::: karta exam | Zadanie 6 (3 pkt) — Barwy do dopasowania
-Przyporządkuj osadom barwy: biały, niebieski, brudnozielony, brunatny, żółty. Osady: a) Cu(OH)₂, b) Fe(OH)₂, c) Fe(OH)₃, d) PbI₂, e) BaSO₄. (0,5 pkt za każdy poprawny + 0,5 pkt za wskazanie osadu, który ciemnieje na powietrzu.)
+Przyporządkuj osadom barwy: biały, niebieski, brudnozielony, brunatny, żółty.
+
+a) Cu(OH)₂ (0,5 pkt)
+
+b) Fe(OH)₂ (0,5 pkt)
+
+c) Fe(OH)₃ (0,5 pkt)
+
+d) PbI₂ (0,5 pkt)
+
+e) BaSO₄ (0,5 pkt)
+
+f) Wskaż osad, który zmienia barwę na powietrzu, i wyjaśnij przyczynę. (0,5 pkt)
 
 ::: odp | Pokaż klucz
-a) (0,5 pkt) niebieski. b) (0,5 pkt) brudnozielony. c) (0,5 pkt) brunatny/rdzawy. d) (0,5 pkt) żółty. e) (0,5 pkt) biały. Ciemnienie na powietrzu (0,5 pkt): Fe(OH)₂ utlenia się do Fe(OH)₃ — osad brudnozielony stopniowo przyjmuje barwę brunatną.
+a) (0,5 pkt) Niebieski.
+
+b) (0,5 pkt) Brudnozielony.
+
+c) (0,5 pkt) Brunatny, rdzawy.
+
+d) (0,5 pkt) Żółty.
+
+e) (0,5 pkt) Biały.
+
+f) (0,5 pkt) Fe(OH)₂ zmienia barwę na powietrzu z brudnozielonej ku brunatnej, ponieważ Fe²⁺ utlenia się do Fe³⁺.
 :::
 :::
 
-## 7 | Otrzymywanie soli — pięć dróg {#otrzymywanie} [[basic:E8]]
+## 7 | Otrzymywanie soli — pięć rozpatrywanych dróg {#otrzymywanie} [[basic:E8]]
 
-„Sól z soli”, „kwas z soli” — te hasła z tytułu lekcji to nie żart lingwistyczny, lecz nazwy konkretnych dróg syntezy. Oto pełny zestaw:
+Nazwy „sól z soli” i „kwas z soli” opisują kierunek myślenia przy projektowaniu syntezy. Nie są to nowe rodzaje reakcji, lecz sposoby dobierania substratów do otrzymania produktu.
 
-1. **Sól + kwas** (mocniejszy/lotniejszy kwas wypiera słabszy lub lotniejszy):
-   Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂↑
-   Jonowo skrócone: CO₃²⁻ + 2H⁺ → H₂O + CO₂↑
-   To zarazem klasyczna droga „kwasu z soli” przy odwróconym myśleniu: węglan zostaje wyparty z soli jako gazowy CO₂ (po rozpadzie kwasu węglowego).
-2. **Sól + zasada**:
-   CuSO₄ + 2NaOH → Cu(OH)₂↓ + Na₂SO₄
-   Jonowo skrócone: Cu²⁺ + 2OH⁻ → Cu(OH)₂↓
-3. **Sól + sól** (podwójna wymiana — zachodzi, gdy powstaje osad, gaz lub słaby elektrolit):
-   AgNO₃ + NaCl → AgCl↓ + NaNO₃
-   Jonowo skrócone: Ag⁺ + Cl⁻ → AgCl↓
-4. **Metal + sól** (wypieranie — pełna analiza w lekcji CHE-X04):
-   Fe + CuSO₄ → FeSO₄ + Cu↓
-   Jonowo skrócone: Fe + Cu²⁺ → Fe²⁺ + Cu
-5. **Kwas + zasada** (zobojętnianie):
-   NaOH + HCl → NaCl + H₂O
-   Jonowo skrócone: OH⁻ + H⁺ → H₂O
+1. **Sól + kwas.** Węglan reaguje z kwasem, powstaje sól, woda i CO₂:
 
-**Kwas z soli — poziom rozszerzony.** Najbardziej klasyczny przykład „kwasu wypieranego z soli”: NaCl + H₂SO₄ (stężony) → NaHSO₄ + HCl↑ — mniej lotny kwas (siarkowy(VI)) wypiera z soli lotniejszy (chlorowodorowy), który ulatuje. Wymaga stężonego kwasu i jest poza zwykłym zakresem E8; na rejonie bywa pytaniem „na rozgrzewkę” — warto znać kierunek (do weryfikacji w informatorze bieżącej edycji).
+Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂↑
+
+Jonowo skrócone:
+
+CO₃²⁻ + 2H⁺ → H₂O + CO₂↑
+
+2. **Sól + zasada.** Rozpuszczalna sól miedzi(II) reaguje z mocną zasadą, powstaje osad wodorotlenku miedzi(II):
+
+CuSO₄ + 2NaOH → Cu(OH)₂↓ + Na₂SO₄
+
+Jonowo skrócone:
+
+Cu²⁺ + 2OH⁻ → Cu(OH)₂↓
+
+3. **Sól + sól.** Reakcja zachodzi, jeżeli powstaje osad, gaz albo słaby elektrolit:
+
+AgNO₃ + NaCl → AgCl↓ + NaNO₃
+
+Jonowo skrócone:
+
+Ag⁺ + Cl⁻ → AgCl↓
+
+4. **Metal + sól.** Jest to reakcja wypierania metalu. Pełne warunki i zapis redoks rozwija lekcja CHE-X04:
+
+Fe + CuSO₄ → FeSO₄ + Cu↓
+
+Jonowo skrócone:
+
+Fe + Cu²⁺ → Fe²⁺ + Cu
+
+5. **Kwas + zasada.** Zobojętnianie prowadzi do soli i wody:
+
+NaOH + HCl → NaCl + H₂O
+
+Jonowo skrócone:
+
+H⁺ + OH⁻ → H₂O
+
+„Kwas z soli” w reakcji węglanu z kwasem oznacza, że z soli powstaje produkt gazowy CO₂. Kwas węglowy, H₂CO₃, jest nietrwały i rozpada się na wodę oraz CO₂. W zapisie jonowym nie trzeba wprowadzać H₂CO₃ jako odrębnego produktu:
+
+CO₃²⁻ + 2H⁺ → H₂O + CO₂↑
+
+Reakcja NaCl ze stężonym H₂SO₄:
+
+NaCl + H₂SO₄ → NaHSO₄ + HCl↑
+
+Jest przykładem rozszerzenia. Mniej lotny kwas siarkowy(VI) może wypierać z soli bardziej lotny chlorowodór. Reakcja wymaga stężonego H₂SO₄ i nie jest podstawową próbą do samodzielnego wykonania w domu.
+
+Przy projektowaniu syntezy zacznij od produktu. Jeżeli chcesz otrzymać Cu(OH)₂, potrzebujesz rozpuszczalnej soli Cu²⁺ oraz rozpuszczonej zasady dostarczającej OH⁻. Jeżeli chcesz otrzymać NaCl pozostający w roztworze, wybierz substraty tak, aby produkt uboczny był osadem albo gazem.
 
 ::: karta understand | W skrócie — projektowanie syntezy
-Zaplanuj od produktu wstecz: chcę Cu(OH)₂ → potrzebuję Cu²⁺ (rozpuszczalna sól: CuSO₄) + OH⁻ (rozpuszczalna zasada: NaOH) → reakcja z osadem, dobra. Chcę NaCl → droga 1: zobojętnienie HCl + NaOH; droga 2: sól z soli, np. Na₂SO₄ + BaCl₂ → BaSO₄↓ + 2NaCl (osad odfiltrować). Chcę pozbyć się węglanu z roztworu → sól + kwas: CO₃²⁻ + 2H⁺ → H₂O + CO₂↑. Zasada wspólna: wybieraj odczynniki tak, żeby produkt pożądany był rozpuszczalny (jeśli ma zostać w roztworze) albo nierozpuszczalny (jeśli chcesz go odfiltrować), a produkt uboczny — możliwy do odseparowania (osad albo gaz).
+Zaplanuj od produktu wstecz. Najpierw ustal, jakie jony musisz połączyć. Potem wybierz rozpuszczalne odczynniki. Na końcu sprawdź, czy produkt pożądany może zostać oddzielony: osad odfiltrujesz, a gaz ulotni się. Produkt pozostający w roztworze wyodrębnia się przez odparowanie wody.
 :::
 
 ::: karta exam | Zadanie 7 (3 pkt) — Zaprojektuj czysty osad wodorotlenku miedzi(II)
-Zaprojektuj sposób otrzymania czystego osadu Cu(OH)₂:
+Zaprojektuj sposób otrzymania osadu Cu(OH)₂:
+
 a) podaj odczynniki (1 pkt)
+
 b) zapisz równanie cząsteczkowe i jonowe skrócone (1 pkt)
-c) opisz, jak oddzielisz i oczyścisz osad (1 pkt)
+
+c) opisz oddzielenie i oczyszczenie osadu (1 pkt)
 
 ::: odp | Pokaż klucz
-a) (1 pkt) Roztwór CuSO₄ (albo innej rozpuszczalnej soli miedzi(II)) i roztwór NaOH lub KOH.
-b) (1 pkt) CuSO₄ + 2NaOH → Cu(OH)₂↓ + Na₂SO₄; skrócone: Cu²⁺ + 2OH⁻ → Cu(OH)₂↓ (niebieski osad).
-c) (1 pkt) Filtracja (osad zostaje na filtrze, roztwór Na₂SO₄ spływa), następnie przemywanie osadu wodą destylowaną i suszenie.
+a) (1 pkt) Roztwór CuSO₄ lub innej rozpuszczalnej soli miedzi(II) oraz roztwór NaOH albo KOH.
+
+b) (1 pkt) CuSO₄ + 2NaOH → Cu(OH)₂↓ + Na₂SO₄; jonowo skrócone: Cu²⁺ + 2OH⁻ → Cu(OH)₂↓.
+
+c) (1 pkt) Osad oddziela się przez filtrację, następnie przemywa się go wodą destylowaną i suszy.
 :::
 :::
 
 ## 8 | Wykrywanie jonów — reakcje charakterystyczne {#wykrywanie} [[basic:E8]] [[understand:ROZUMIENIE]]
 
-Wykrywanie jonów to strącanie postawione na głowie: nie celujesz w produkt, tylko odczytujesz, co jest w próbce. Katalog podstawowy:
+Wykrywanie jonów polega na dobraniu odczynnika, który w określonych warunkach daje charakterystyczną obserwację. Obserwacja to zmętnienie, osad, wydzielanie gazu albo zmiana barwy. Wniosek o obecności jonu wymaga wykluczenia zakłóceń.
 
-| Jon | Odczynnik | Obserwacja | Równanie skrócone |
+| Jon | Odczynnik | Obserwacja | Równanie jonowe skrócone |
 |---|---|---|---|
-| Cl⁻ | AgNO₃ | biały osad (rozp. w NH₃(aq)) | Ag⁺ + Cl⁻ → AgCl↓ |
-| SO₄²⁻ | BaCl₂ lub Ba(NO₃)₂ | biały osad nierozp. w kwasach | Ba²⁺ + SO₄²⁻ → BaSO₄↓ |
-| CO₃²⁻ | kwas + woda wapienna | gaz + zmętnienie wody wapiennej | CO₃²⁻ + 2H⁺ → CO₂↑ + H₂O |
+| Cl⁻ | AgNO₃ po zakwaszeniu rozcieńczonym HNO₃ | biały osad | Ag⁺ + Cl⁻ → AgCl↓ |
+| SO₄²⁻ | rozpuszczalna sól baru, na przykład BaCl₂ lub Ba(NO₃)₂, po odpowiednim zakwaszeniu | biały osad | Ba²⁺ + SO₄²⁻ → BaSO₄↓ |
+| CO₃²⁻ | rozcieńczony kwas, a następnie woda wapienna | gaz oraz zmętnienie wody wapiennej | CO₃²⁻ + 2H⁺ → CO₂↑ + H₂O |
 | Cu²⁺ | NaOH | niebieski osad | Cu²⁺ + 2OH⁻ → Cu(OH)₂↓ |
-| Fe³⁺ | NaOH | brunatny osad | Fe³⁺ + 3OH⁻ → Fe(OH)₃↓ |
 | Fe²⁺ | NaOH | brudnozielony osad | Fe²⁺ + 2OH⁻ → Fe(OH)₂↓ |
+| Fe³⁺ | NaOH | brunatny osad | Fe³⁺ + 3OH⁻ → Fe(OH)₃↓ |
 
-**Dopowiedzenia, które podnoszą jakość odpowiedzi na konkursie:**
+Przy wykrywaniu CO₃²⁻ sam ulot gazu nie wystarcza. Gaz wprowadza się do wody wapiennej. Zmętnienie potwierdza obecność CO₂:
 
-- **Potwierdzenie gazu z węglanu:** zmętnienie wody wapiennej: Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O — sam „bulgotanie” nie jest dowodem CO₂.
-- **Zakwaszenie przed próbą na SO₄²⁻:** rozpuszczalna sól baru dodawana do próbki zakwaszonej (np. rozcieńczonym HCl lub HNO₃) — zakwaszenie pomaga ograniczyć zakłócenia powodowane przez niektóre inne aniony (np. CO₃²⁻, którego BaCO₃ też byłby białym osadem).
-- **Kontrola:** próbka porównawcza (świadek pozytywny z wiadomym jonem i świadek negatywny z wodą destylowaną) — bez niej wniosek nie jest pewny; zanieczyszczenie próbki lub reakcje powierzchniowe mogą symulować wynik.
-- **Interpretacja z warunkami:** biały osad BaSO₄ jest obserwacją, którą należy interpretować z uwzględnieniem możliwych interferencji — nie „biały osad = na pewno siarczan”.
+Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O
+
+Przy wykrywaniu SO₄²⁻ nie używaj H₂SO₄ do zakwaszenia, ponieważ wprowadziłbyś wykrywany anion. W szkolnej próbie stosuje się zwykle rozcieńczony HCl lub HNO₃, a następnie odczynnik z Ba²⁺. Zakwaszenie ogranicza zakłócenia od węglanów, ponieważ BaCO₃ może rozpuszczać się w kwasie z ulotem CO₂.
+
+Przy wykrywaniu Cl⁻ nie używaj HCl, ponieważ wprowadziłbyś Cl⁻. Stosuje się rozcieńczony HNO₃. Węglany zostają usunięte jako CO₂, a następnie AgNO₃ może wytrącić AgCl.
+
+Dobrze zaprojektowana analiza zawiera:
+
+1. Odpowiednio dobrany odczynnik.
+2. Kontrolę zakłóceń, na przykład zakwaszenie.
+3. Próbę porównawczą: świadek pozytywny i świadek negatywny.
+4. Potwierdzenie drugą, niezależną reakcją, jeżeli to możliwe.
+5. Wniosek sformułowany warunkowo, a nie wyłącznie na podstawie barwy osadu.
+
+::: karta understand | W skrócie — od obserwacji do wniosku
+Obserwacja opisuje to, co widzisz. Wniosek wyjaśnia, jaki jon może powodować taką obserwację. Między nimi musi znajdować się kontrola zakłóceń. Biały osad po dodaniu AgNO₃ nie jest dowodem chlorków, dopóki nie wykluczysz węglanów.
+:::
 
 ::: karta exam | Zadanie 8 (4 pkt) — Zaprojektuj analizę próbki
-W próbce roztworu mogą znajdować się jony Cl⁻, SO₄²⁻ lub CO₃²⁻.
+W próbce mogą znajdować się jony Cl⁻, SO₄²⁻ lub CO₃²⁻.
+
 a) Zaprojektuj próbę na CO₃²⁻ z potwierdzeniem gazu. (2 pkt)
+
 b) Zaprojektuj próbę na SO₄²⁻ z kontrolą zakłóceń. (1 pkt)
+
 c) Zaprojektuj próbę na Cl⁻ tak, aby wynik nie został zafałszowany przez węglan. (1 pkt)
 
 ::: odp | Pokaż klucz
-a) (2 pkt) Do próbki dodaj rozcieńczony kwas (np. HCl) — wydzielanie gazu (CO₃²⁻ + 2H⁺ → CO₂↑ + H₂O); gaz wprowadź do wody wapiennej: zmętnienie (Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O) potwierdza CO₂, a więc obecność węglanów. (1 pkt za próbę z kwasem, 1 pkt za potwierdzenie wody wapiennej z równaniem.)
-b) (1 pkt) Zakwasz próbkę rozcieńczonym HCl/HNO₃, następnie dodaj rozpuszczalną sól baru (BaCl₂ lub Ba(NO₃)₂); biały osad nierozpuszczalny w kwasie (Ba²⁺ + SO₄²⁻ → BaSO₄↓) wskazuje na siarczany(VI) — zakwaszenie eliminuje zakłócenia od węglanów.
-c) (1 pkt) Najpierw zakwasz próbkę rozcieńczonym HNO₃ (usunie CO₃²⁻ jako CO₂↑), dopiero potem dodaj AgNO₃; trwały biały osad (Ag⁺ + Cl⁻ → AgCl↓) wskazuje chlorki. Bez wcześniejszego zakwaszenia Ag₂CO₃ mógłby udawać AgCl (oba osady białe/białawożółte).
+a) (2 pkt) Dodaj rozcieńczony kwas, na przykład HCl. Wydzielający się gaz wprowadź do wody wapiennej. Zmętnienie potwierdza CO₂: CO₃²⁻ + 2H⁺ → CO₂↑ + H₂O oraz Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O. Po 1 pkt za próbę z kwasem i za potwierdzenie wodą wapienną.
+
+b) (1 pkt) Zakwasz próbkę rozcieńczonym HCl lub HNO₃, a następnie dodaj rozpuszczalną sól baru. Trwały biały osad BaSO₄ wskazuje na SO₄²⁻: Ba²⁺ + SO₄²⁻ → BaSO₄↓.
+
+c) (1 pkt) Najpierw zakwasz próbkę rozcieńczonym HNO₃, aby usunąć CO₃²⁻ jako CO₂↑. Następnie dodaj AgNO₃. Trwały biały osad AgCl wskazuje na Cl⁻: Ag⁺ + Cl⁻ → AgCl↓.
 :::
 :::
 
 ## 9 | Doświadczenia {#doswiadczenia} [[understand:ROZUMIENIE]]
 
-Trzy próby strąceniowe-analityczne z pełnymi kontrolami. W każdym doświadczeniu próba kontrolna jest obowiązkowa — bez niej wniosek nie jest dowodem.
+Poniższe doświadczenia służą do analizy zasady próby i budowy wnioskowania. Nie są instrukcją do samodzielnego wykonania w domu. Sole srebra, baru i ołowiu, a także kwasy i zasady wymagają odpowiedniego stanowiska, ochrony oczu oraz właściwego postępowania z odpadami.
 
 ::: dosw | Doświadczenie 1 — Wykrywanie jonów chlorkowych
 Problem: Czy badany roztwór zawiera jony Cl⁻?
-Hipoteza: Jeżeli roztwór zawiera chlorki, dodanie AgNO₃ da biały osad AgCl.
-Sprzęt: probówki, badany roztwór, roztwór AgNO₃, roztwór NaCl jako świadek pozytywny, woda destylowana jako świadek negatywny, statyw, pipety.
-Przebieg: 1) Do trzech probówek wlej: badany roztwór, roztwór NaCl (świadek pozytywny), wodę destylowaną (świadek negatywny). 2) Do każdej dodaj po kilka kropli AgNO₃. 3) Porównaj osady; dla wiarygodności sprawdź rozpuszczalność osadu w NH₃(aq) (jeśli dostępne pod nadzorem).
-Próba kontrolna: świadek negatywny (woda destylowana + AgNO₃) — brak osadu potwierdza, że zmętnienie w probówce badanej nie pochodzi od samego odczynnika ani zanieczyszczeń wody; świadek pozytywny pokazuje wygląd osadu, z którym porównujesz.
-Obserwacja: w probówce badanej i w świadku pozytywnym biały, serowaty osad; w świadku negatywnym roztwór przezroczysty.
-Wniosek: próbka zawiera jony chlorkowe, jeżeli wykluczono jony dające podobne osady i zastosowano odpowiednią kontrolę — przy obecności węglanów najpierw zakwasz próbkę rozcieńczonym HNO₃.
-BHP: sole srebra barwią skórę i tkaniny (ciemne plamy) — pracuj w rękawicach i okularach; AgNO₃ drażni oczy; nie pij roztworów; odpady ze związkami srebra zbierz do pojemnika na odpady srebrowe, nie do zlewu.
+
+Hipoteza: Jeżeli roztwór zawiera chlorki, dodanie AgNO₃ po zakwaszeniu rozcieńczonym HNO₃ da biały osad AgCl.
+
+Sprzęt: probówki, badany roztwór, roztwór AgNO₃, rozcieńczony HNO₃, roztwór NaCl jako świadek pozytywny, woda destylowana jako świadek negatywny, statyw, pipety.
+
+Przebieg: 1) Do trzech probówek wlej badany roztwór, roztwór NaCl oraz wodę destylowaną. 2) Do każdej dodaj kilka kropli rozcieńczonego HNO₃. 3) Następnie dodaj kilka kropli AgNO₃. 4) Porównaj wygląd próbek.
+
+Próba kontrolna: świadek pozytywny z NaCl pokazuje oczekiwany biały osad, a świadek negatywny z wodą destylowaną wyklucza pochodzenie zmętnienia od samego odczynnika lub zanieczyszczeń wody.
+
+Obserwacja: w probówce badanej i w świadku pozytywnym może powstać biały, serowaty osad; w świadku negatywnym roztwór pozostaje przezroczysty.
+
+Wniosek: trwały biały osad po zakwaszeniu rozcieńczonym HNO₃ wskazuje na jony Cl⁻. Bez wcześniejszego zakwaszenia węglany mogłyby dać osad Ag₂CO₃ o zbliżonym wyglądzie.
+
+BHP: roztwory AgNO₃ drażnią oczy i mogą barwić skórę oraz tkaniny. Pracuj w okularach i rękawicach. Nie pij roztworów. Odpady zawierające związki srebra zbierz do odpowiedniego pojemnika, nie wylewaj ich do zlewu.
 :::
 
 ::: dosw | Doświadczenie 2 — Wykrywanie jonów siarczanowych(VI)
 Problem: Czy badany roztwór zawiera jony SO₄²⁻?
-Hipoteza: Jeżeli roztwór zawiera siarczany(VI), dodanie rozpuszczalnej soli baru do zakwaszonej próbki da biały osad BaSO₄.
-Sprzęt: probówki, badany roztwór, rozcieńczony HCl lub HNO₃, roztwór BaCl₂ (lub Ba(NO₃)₂), roztwór Na₂SO₄ jako świadek pozytywny, woda destylowana, pipety.
-Przebieg: 1) Do probówek (badana, świadek pozytywny, świadek negatywny) wlej jednakowe objętości płynów. 2) Zakwasz każdą próbkę kilkoma kroplami rozcieńczonego kwasu. 3) Dodaj kilka kropli roztworu soli baru. 4) Porównaj.
-Próba kontrolna: świadek negatywny (woda destylowana, zakwaszona, z solą baru) — brak osadu wyklucza pochodzenie zmętnienia od samego odczynnika; świadek pozytywny pokazuje wzorcową barwę i konsystencję osadu.
-Obserwacja: w probówce badanej i w świadku pozytywnym biały, drobnoziarnisty osad nierozpuszczalny w kwasie; w świadku negatywnym brak zmian.
-Wniosek: obecność trwałego białego osadu BaSO₄ w zakwaszonej próbce wskazuje na jony SO₄²⁻; zakwaszenie ograniczyło zakłócenia od węglanów (BaCO₃ rozpuściłby się w kwasie z ulotem CO₂).
-BHP: sole baru są toksyczne — unikaj kontaktu ze skórą i oczami, pracuj w rękawicach i okularach; HCl/HNO₃ rozcieńczone drażnią; nie pij roztworów; odpady z solami baru zbierz do właściwego pojemnika (nie do zlewu); doświadczenie pod nadzorem osoby dorosłej.
+
+Hipoteza: Jeżeli roztwór zawiera siarczany(VI), dodanie rozpuszczalnej soli baru do odpowiednio zakwaszonej próbki da biały osad BaSO₄.
+
+Sprzęt: probówki, badany roztwór, rozcieńczony HCl lub HNO₃, roztwór BaCl₂ lub Ba(NO₃)₂, roztwór Na₂SO₄ jako świadek pozytywny, woda destylowana, pipety.
+
+Przebieg: 1) Do probówek wlej badany roztwór, roztwór Na₂SO₄ oraz wodę destylowaną. 2) Zakwasz każdą próbkę kilkoma kroplami rozcieńczonego kwasu. 3) Dodaj kilka kropli roztworu soli baru. 4) Porównaj wyniki.
+
+Próba kontrolna: świadek pozytywny z Na₂SO₄ pokazuje wzorcowy biały osad, a świadek negatywny z wodą destylowaną wyklucza zmętnienie pochodzące od odczynnika.
+
+Obserwacja: w probówce badanej i w świadku pozytywnym może powstać biały osad; w świadku negatywnym brak osadu.
+
+Wniosek: biały osad BaSO₄ w zakwaszonej próbce wskazuje na jony SO₄²⁻. Zakwaszenie ogranicza zakłócenia od węglanów, ponieważ BaCO₃ może rozpuszczać się w kwasie z ulotem CO₂.
+
+BHP: rozpuszczalne sole baru są toksyczne. Unikaj kontaktu ze skórą i oczami, pracuj w okularach i rękawicach. Nie pij roztworów. Odpady zawierające związki baru zbierz do właściwego pojemnika.
 :::
 
 ::: dosw | Doświadczenie 3 — Wykrywanie jonów węglanowych
-Problem: Czy badana próbka (roztwór lub proszek) zawiera węglany?
-Hipoteza: Jeżeli próbka zawiera CO₃²⁻, dodanie rozcieńczonego kwasu wydzieli CO₂, który zmąci wodę wapienną.
-Sprzęt: probówka z odpowiadającym korkiem i rurką (lub rurka odpowietrzająca do drugiej probówki), badana próbka, rozcieńczony HCl, woda wapienna Ca(OH)₂, kawałek marmuru (CaCO₃) jako świadek pozytywny, woda destylowana jako świadek negatywny.
-Przebieg: 1) Do probówki z badaną próbką dodaj rozcieńczony HCl i natychmiast zamknij korkiem z rurką prowadzącą do probówki z wodą wapienną. 2) Obserwuj wydzielanie gazu i barwę wody wapiennej. 3) Powtórz dla świadka pozytywnego (marmur) i negatywnego (woda destylowana).
-Próba kontrolna: świadek pozytywny (marmur + HCl) — pokazuje spodziewany obraz: burzliwy gaz + zmętnienie wody wapiennej; świadek negatywny wyklucza zmętnienie od samej czynności.
-Obserwacja: w próbie badanej (jeśli węglan obecny) — wydzielanie gazu; woda wapienna mętnieje. Równania: CO₃²⁻ + 2H⁺ → CO₂↑ + H₂O oraz Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O.
-Wniosek: gaz zmącający wodę wapienną to CO₂, a więc próbka zawierała węglany; bez potwierdzenia wodą wapienną sam ulot gazu nie przesądza o obecności CO₃²⁻.
-BHP: HCl rozcieńczony drażni skórę i oczy — okulary i rękawice; wodę wapienną trzymaj z dala od oczu (drażni); nie zbieraj gazu do dużych objętości; po pracy umyj ręce i płucz probówki.
+Problem: Czy badana próbka zawiera jony CO₃²⁻?
+
+Hipoteza: Jeżeli próbka zawiera węglany, dodanie rozcieńczonego kwasu wydzieli CO₂, który zmąci wodę wapienną.
+
+Sprzęt: probówka z korkiem i rurką prowadzącą do drugiej probówki, badana próbka, rozcieńczony HCl, woda wapienna Ca(OH)₂, kawałek marmuru CaCO₃ jako świadek pozytywny, woda destylowana jako świadek negatywny.
+
+Przebieg: 1) Do probówki z badaną próbką dodaj rozcieńczony HCl i zamknij korkiem z rurką prowadzącą do probówki z wodą wapienną. 2) Obserwuj wydzielanie gazu oraz zmianę wyglądu wody wapiennej. 3) Powtórz obserwację dla świadka pozytywnego i negatywnego.
+
+Próba kontrolna: świadek pozytywny z marmurem pokazuje oczekiwane wydzielanie gazu i zmętnienie wody wapiennej; świadek negatywny z wodą destylowaną wyklucza zmętnienie spowodowane samą czynnością.
+
+Obserwacja: w próbce zawierającej węglan może wystąpić wydzielanie gazu, a woda wapienna mętnieje. Równania: CO₃²⁻ + 2H⁺ → CO₂↑ + H₂O oraz Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O.
+
+Wniosek: zmętnienie wody wapiennej potwierdza obecność CO₂, a więc wskazuje na węglany. Sam ulot gazu nie jest wystarczającym dowodem.
+
+BHP: rozcieńczony HCl drażni skórę i oczy. Pracuj w okularach i rękawicach. Nie zbieraj gazu do dużych objętości. Po pracy umyj ręce i wyczyść sprzęt.
 :::
 
 ## 10 | Zadania konkursowe {#zadania-konkurs} [[exam:KONKURS]]
 
-Osiem zadań w typach: przekształcanie, uzasadnianie, znajdź błąd, analiza tekstu, zadanie z pułapką, projektowanie. Każde z kluczem i uzasadnieniem — na konkursie odpowiedź bez uzasadnienia nie dostaje pełni punktów.
+Zadania 9–16 rozwijają analizę zapisów, bilansów, syntezy i zakłóceń analitycznych. W każdym przypadku najpierw samodzielnie zapisz rozwiązanie, a dopiero potem sprawdź klucz.
 
 ::: adv | Zadanie 9 (5 pkt) — Azotan(V) srebra z chlorkiem sodu: pełna analiza | poziom ambitny
-a) Zapisz równanie jonowe skrócone reakcji AgNO₃ z NaCl. (1 pkt)
-b) Zapisz równanie jonowe skrócone reakcji HCl z NaOH. (1 pkt)
-c) Wyjaśnij, dlaczego Na⁺ i NO₃⁻ można skrócić w reakcji azotanu(V) srebra z chlorkiem sodu. (1 pkt)
-d) Sprawdź bilans ładunków w równaniu Ag⁺ + Cl⁻ → AgCl i opisz go. (1 pkt)
-e) Uzasadnij, dlaczego ten sam osad powstanie po zmieszaniu AgNO₃ z KCl. (1 pkt)
+a) Zapisz równanie jonowe skrócone reakcji roztworów AgNO₃ i NaCl. (1 pkt)
+
+b) Zapisz równanie jonowe skrócone reakcji roztworów HCl i NaOH. (1 pkt)
+
+c) Wyjaśnij, dlaczego Na⁺ i NO₃⁻ można usunąć z równania jonowego pełnego reakcji AgNO₃ z NaCl. (1 pkt)
+
+d) Sprawdź bilans ładunków w równaniu Ag⁺ + Cl⁻ → AgCl↓. (1 pkt)
+
+e) Wyjaśnij, dlaczego ten sam osad może powstać po zmieszaniu roztworów AgNO₃ i KCl. (1 pkt)
 
 ::: odp | Pokaż klucz
 a) (1 pkt) Ag⁺ + Cl⁻ → AgCl↓.
+
 b) (1 pkt) H⁺ + OH⁻ → H₂O.
-c) (1 pkt) Są jonami obserwatorowymi: występują niezmienione po obu stronach równania jonowego pełnego (Ag⁺ + NO₃⁻ + Na⁺ + Cl⁻ → AgCl↓ + Na⁺ + NO₃⁻), więc nie uczestniczą w reakcji.
-d) (1 pkt) Po lewej stronie suma ładunków wynosi 0 (+1 − 1), po prawej osad AgCl jest obojętny (0) — bilans ładunków zachowany; równolegle bilans atomów (1 Ag, 1 Cl) też się domyka.
-e) (1 pkt) W równaniu skróconym biorą udział tylko Ag⁺ i Cl⁻ — „widownia” (K⁺ zamiast Na⁺, NO₃⁻) nie wpływa na przebieg; jony Ag⁺ z AgNO₃ spotykają jony Cl⁻ z KCl i wytrącają ten sam biały osad AgCl.
+
+c) (1 pkt) Na⁺ i NO₃⁻ występują niezmienione po obu stronach równania jonowego pełnego. Są jonami obserwatorowymi i nie uczestniczą w opisanej przemianie.
+
+d) (1 pkt) Po lewej suma ładunków wynosi +1 − 1 = 0. Po prawej AgCl jest elektrycznie obojętny, więc suma wynosi 0. Bilans ładunków jest zachowany.
+
+e) (1 pkt) W równaniu skróconym uczestniczą Ag⁺ i Cl⁻. Zmiana kationu obserwatorowego z Na⁺ na K⁺ nie zmienia istoty strącania AgCl, o ile pozostałe warunki nie zakłócają reakcji.
 :::
 :::
 
 ::: adv | Zadanie 10 (4 pkt) — Dwa zobojętnienia w porównaniu | poziom ambitny
-a) Zapisz równanie cząsteczkowe, jonowe pełne i skrócone reakcji HCl z NaOH. (2 pkt)
-b) Porównaj zapis skrócony reakcji a) z zapisem skróconym reakcji 2KOH + H₂SO₄ → K₂SO₄ + 2H₂O i wyjaśnij, dlaczego w obu przypadkach sedno jest to samo, choć współczynniki w równaniach cząsteczkowych różne. (2 pkt)
+a) Zapisz równanie cząsteczkowe, jonowe pełne i skrócone reakcji roztworów HCl i NaOH. (2 pkt)
+
+b) Porównaj zapis skrócony reakcji a) z zapisem skróconym reakcji 2KOH + H₂SO₄ → K₂SO₄ + 2H₂O. Wyjaśnij, dlaczego sedno obu reakcji jest takie samo, mimo różnych współczynników w równaniach cząsteczkowych. (2 pkt)
 
 ::: odp | Pokaż klucz
-a) (2 pkt) Cząsteczkowo: HCl + NaOH → NaCl + H₂O. Pełne: H⁺ + Cl⁻ + Na⁺ + OH⁻ → Na⁺ + Cl⁻ + H₂O. Skrócone: H⁺ + OH⁻ → H₂O. (0,5 pkt za cząsteczkowe, 1 pkt za pełne, 0,5 pkt za skrócone.)
-b) (2 pkt) W obu reakcjach mocny kwas neutralizuje mocną zasadą, a jedyną „aktorską” parą są H⁺ i OH⁻, tworzące wodę — dlatego sedno zapisu skróconego jest identyczne: H⁺ + OH⁻ → H₂O (lub podwójnie: 2H⁺ + 2OH⁻ → 2H₂O przy dwukrotnych ilościach). Współczynniki w równaniach cząsteczkowych różnią się, bo różne są ładunki/walentności jonów reszty kwasowej (Cl⁻ vs SO₄²⁻), ale one pozostają w roztworze jako obserwatorowe i nie wpływają na zapis skrócony. (1 pkt za wskazanie wspólnej istoty, 1 pkt za wyjaśnienie roli różnicy współczynników.)
+a) (2 pkt) Cząsteczkowo: HCl + NaOH → NaCl + H₂O. Jonowo pełne: H⁺ + Cl⁻ + Na⁺ + OH⁻ → Na⁺ + Cl⁻ + H₂O. Jonowo skrócone: H⁺ + OH⁻ → H₂O.
+
+b) (2 pkt) W obu reakcjach mocny kwas reaguje z mocną zasadą, a istotą jest powstanie wody z H⁺ i OH⁻. Jony Cl⁻, Na⁺, K⁺ i SO₄²⁻ pozostają w roztworze jako obserwatorowe. Różnica współczynników wynika z ładunków jonów, nie zmienia jednak równania skróconego H⁺ + OH⁻ → H₂O.
 :::
 :::
 
 ::: adv | Zadanie 11 (4 pkt) — „Złoty deszcz”: azotan(V) ołowiu(II) z jodkiem potasu | poziom ambitny
-a) Zapisz równanie cząsteczkowe reakcji Pb(NO₃)₂ z KI. (1 pkt)
+a) Zapisz równanie cząsteczkowe reakcji roztworów Pb(NO₃)₂ i KI. (1 pkt)
+
 b) Zapisz równanie jonowe skrócone. (1 pkt)
+
 c) Podaj obserwację, zwracając uwagę na barwę osadu. (1 pkt)
-d) Wyjaśnij, dlaczego ta reakcja zachodzi, mimo że PbCl₂ (podobny anionowo związek z innym halogenkiem) też jest słabo rozpuszczalny. (1 pkt)
+
+d) Wyjaśnij, dlaczego reakcja zachodzi, mimo że PbCl₂ również jest trudno rozpuszczalny. (1 pkt)
 
 ::: odp | Pokaż klucz
 a) (1 pkt) Pb(NO₃)₂ + 2KI → PbI₂↓ + 2KNO₃.
-b) (1 pkt) Pb²⁺ + 2I⁻ → PbI₂↓ (bilans ładunków: +2 po lewej, 0 po prawej; bilans atomów: 1 Pb, 2 I).
-c) (1 pkt) Osad jest żółty — przy krystalizacji z gorącego roztworu błyszczące żółte płatki opadają jak „złoty deszcz”; roztwór traci zmętnienie, a na dnie zbierają się żółte krystaliczne płatki.
-d) (1 pkt) Reakcja zachodzi, bo PbI₂ jest nierozpuszczalny i opuszcza sferę reakcji jako osad — to jedyne kryterium; słaba rozpuszczalność PbCl₂ (biały, trudno rozpuszczalny) potwierdza ogólną tendencję soli ołowiu(II) z jednowalentnymi halogenkami do wytrącania, ale o „czy reakcja” decyduje rozpuszczalność konkretnego produktu, nie podobieństwo anionów.
+
+b) (1 pkt) Pb²⁺ + 2I⁻ → PbI₂↓. Bilans atomów: jeden Pb i dwa I po obu stronach. Bilans ładunków: +2 po lewej i 0 po prawej.
+
+c) (1 pkt) Powstaje żółty osad PbI₂. Przy krystalizacji z gorącego roztworu mogą powstawać błyszczące żółte płatki, nazywane „złotym deszczem”.
+
+d) (1 pkt) Reakcja zachodzi, ponieważ PbI₂ jest trudno rozpuszczalny i wydziela się jako osad. O przebiegu reakcji decydują właściwości konkretnego produktu i warunki, a nie samo podobieństwo anionów.
 :::
 :::
 
 ::: adv | Zadanie 12 (3 pkt) — Uzasadnij brak reakcji | poziom ambitny
 Oceń, czy zachodzi reakcja po zmieszaniu roztworów NaNO₃ i KCl:
+
 a) wskaż potencjalne produkty wymiany (1 pkt)
+
 b) oceń ich rozpuszczalność (1 pkt)
+
 c) sformułuj wniosek z uzasadnieniem (1 pkt)
 
 ::: odp | Pokaż klucz
-a) (1 pkt) Wymiana partnerów dałaby KNO₃ i NaCl.
-b) (1 pkt) Oba są dobrze rozpuszczalne: KNO₃ — azotan(V), a azotany są zawsze rozpuszczalne; NaCl — sól sodu, a sole Na⁺ są zawsze rozpuszczalne (chlorki są rozpuszczalne, a wyjątki — AgCl, PbCl₂, Hg₂Cl₂ — tu nie dotyczą, bo kationem jest Na⁺).
-c) (1 pkt) Nie ma typowej reakcji netto: potencjalne produkty pozostają rozpuszczone, więc wszystkie jony (Na⁺, NO₃⁻, K⁺, Cl⁻) są obserwatorowymi — nie powstaje osad, gaz ani słaby elektrolit, a „zapisanie” reakcji wymiany byłoby jedynie przetasowaniem partnerów w roztworze.
+a) (1 pkt) Potencjalne produkty to KNO₃ i NaCl.
+
+b) (1 pkt) Oba są dobrze rozpuszczalne: KNO₃ jest azotanem(V), a NaCl typową solą sodu.
+
+c) (1 pkt) Brak reakcji netto. Nie powstaje osad, gaz ani woda w zobojętnianiu. Wszystkie rozpatrywane jony pozostają w roztworze.
 :::
 :::
 
 ::: adv | Zadanie 13 (4 pkt) — Znajdź błędy w zapisach | poziom ambitny
-Oceń cztery zapisy; przy każdym wskaż błąd (lub błędy) i zapisz wersję poprawną:
-1. „Cu²⁺ + 2OH⁻ + 2Na⁺ + SO₄²⁻ → Cu(OH)₂↓ + 2Na⁺ + SO₄²⁻” — uczeń przedstawił to jako równanie skrócone.
-2. „Ag⁺ + Cl⁻ → AgCl”.
-3. „Ca²⁺ + Cl⁻ → CaCl₂”.
-4. „KNO₃ + NaCl → KCl + NaNO₃” — uczeń zapisuje to jako reakcję jonową zachodzącą w roztworze.
+Oceń cztery zapisy. Przy każdym wskaż błąd lub błędy i zapisz wersję poprawną:
+
+1. „Cu²⁺ + 2OH⁻ + 2Na⁺ + SO₄²⁻ → Cu(OH)₂↓ + 2Na⁺ + SO₄²⁻” — uczeń przedstawił to jako równanie skrócone. (1 pkt)
+
+2. „Ag⁺ + Cl⁻ → AgCl” — uczeń pominął oznaczenie osadu. (1 pkt)
+
+3. „Ca²⁺ + Cl⁻ → CaCl₂” — uczeń uznał, że zapisuje reakcję strącania. (1 pkt)
+
+4. „KNO₃ + NaCl → KCl + NaNO₃” — uczeń uznał, że opisuje reakcję jonową zachodzącą w roztworze. (1 pkt)
 
 ::: odp | Pokaż klucz
-1. (1 pkt) To zapis pełny, nie skrócony — w skróconym trzeba usunąć obserwatorowe Na⁺ i SO₄²⁻ (są po obu stronach). Poprawnie: Cu²⁺ + 2OH⁻ → Cu(OH)₂↓.
-2. (1 pkt) Brak strzałki osadu przy nierozpuszczalnym produkcie. Poprawnie: Ag⁺ + Cl⁻ → AgCl↓.
-3. (1 pkt) Dwa błędy: bilans ładunków niezachowany (+2 po lewej, 0 po prawej — brak 2Cl⁻) oraz brak powodu reakcji — CaCl₂ jest rozpuszczalny, więc nic nie opuszcza roztworu; poprawnie: brak reakcji (Ca²⁺ i Cl⁻ w roztworze nie tworzą produktu wytrącającego się, gazowego ani słabego elektrolitu).
-4. (1 pkt) Błąd koncepcyjny: potencjalne produkty (KCl i NaNO₃) są rozpuszczalne, więc reakcja nie zachodzi — wszystkie jony pozostają obserwatorowymi; uczciwy wniosek: „brak typowej reakcji netto”.
+1. (1 pkt) To równanie jonowe pełne, nie skrócone. Należy usunąć Na⁺ i SO₄²⁻, ponieważ występują niezmienione po obu stronach. Poprawnie: Cu²⁺ + 2OH⁻ → Cu(OH)₂↓.
+
+2. (1 pkt) Brak oznaczenia osadu. Poprawnie: Ag⁺ + Cl⁻ → AgCl↓.
+
+3. (1 pkt) Dwa błędy: bilans ładunków nie jest zachowany, ponieważ brakuje 2Cl⁻, oraz nie ma przesłanki reakcji strącania, ponieważ CaCl₂ jest rozpuszczalny. Poprawny wniosek: brak reakcji netto.
+
+4. (1 pkt) Potencjalne produkty, KCl i NaNO₃, są rozpuszczalne. Nie ma reakcji netto; zapis przedstawia jedynie formalną zamianę partnerów.
 :::
 :::
 
 ::: adv | Zadanie 14 (4 pkt) — Sól + kwas: analiza reakcji węglanu z kwasem | poziom ambitny
 a) Zapisz równanie cząsteczkowe reakcji Na₂CO₃ z rozcieńczonym HCl. (1 pkt)
+
 b) Zapisz równanie jonowe skrócone. (1 pkt)
+
 c) Podaj dwie obserwacje potwierdzające przebieg reakcji. (1 pkt)
-d) Wyjaśnij, dlaczego ta reakcja ilustruje zarazem drogę „sól + kwas” i myśl „kwasu wypieranego z soli”. (1 pkt)
+
+d) Wyjaśnij, dlaczego reakcja ilustruje zarazem drogę „sól + kwas” i myśl „kwasu wypieranego z soli”. (1 pkt)
 
 ::: odp | Pokaż klucz
 a) (1 pkt) Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂↑.
-b) (1 pkt) CO₃²⁻ + 2H⁺ → H₂O + CO₂↑ (bilans ładunków: −2 = 0 + 0 z uwzględnieniem znaków — suma po lewej −2, po prawej 0? Uwaga: ładunek anionu −2 plus 2·(+1) = 0; po prawej 0 — bilans zachowany).
-c) (1 pkt) Burzliwe wydzielanie gazu (CO₂↑); potwierdzenie: zmętnienie wody wapiennej po wprowadzeniu gazu (Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O).
-d) (1 pkt) To reakcja „sól + kwas”, w której mocniejszy kwas wypiera z soli kwas słabszy (węglowy), ten zaś rozpada się na wodę i lotny CO₂ — gaz opuszcza roztwór, więc reakcja biegnie do końca; lotność produktu pełni tu tę samą rolę, co nierozpuszczalność osadu w reakcjach strącania.
+
+b) (1 pkt) CO₃²⁻ + 2H⁺ → H₂O + CO₂↑. Suma ładunków po lewej wynosi −2 + 2 = 0, a po prawej 0.
+
+c) (1 pkt) Burzliwe wydzielanie gazu oraz zmętnienie wody wapiennej po wprowadzeniu gazu.
+
+d) (1 pkt) Z węglanu powstaje nietrwały kwas węglowy, który rozpada się na wodę i lotny CO₂. Ulot gazu zmniejsza ilość produktu w roztworze i sprzyja przebiegowi reakcji.
 :::
 :::
 
 ::: adv | Zadanie 15 (5 pkt) — Pułapka interferencji: biały osad — ale czyj? | poziom ambitny
-Do roztworu A dodano AgNO₃ — powstał biały osad. Uczeń wnioskuje: „Są chlorki”.
-a) Wyjaśnij, dlaczego wniosek jest przedwczesny — jaki inny anion daje osad z Ag⁺ i jaką barwę? (2 pkt)
+Do roztworu A dodano AgNO₃ i powstał biały osad. Uczeń stwierdził: „W próbce są chlorki”.
+
+a) Wyjaśnij, dlaczego wniosek jest przedwczesny. Podaj inny anion, który może dawać osad z Ag⁺, i opisz jego barwę. (2 pkt)
+
 b) Zaprojektuj próbę rozstrzygającą z rozcieńczonym HNO₃ i opisz oba możliwe wyniki. (1 pkt)
-c) Zapisz równanie jonowe skrócone rozpuszczania osadu węglanu srebra w kwasie (cząsteczkowo: Ag₂CO₃ + 2HNO₃ → 2AgNO₃ + H₂O + CO₂↑). (1 pkt)
+
+c) Zapisz równanie jonowe skrócone rozpuszczania osadu węglanu srebra w kwasie. Cząsteczkowo: Ag₂CO₃ + 2HNO₃ → 2AgNO₃ + H₂O + CO₂↑. (1 pkt)
+
 d) Sformułuj poprawną, warunkową konkluzję analizy. (1 pkt)
 
 ::: odp | Pokaż klucz
-a) (2 pkt) Z Ag⁺ osad dają też jony CO₃²⁻: Ag₂CO₃ — osad biały/białawożółty; sama barwa nie rozstrzyga, bo AgCl (biały serowaty) i Ag₂CO₃ wyglądają zbliżenie — potrzebna jest próba różnicująca i kontrola zakłóceń.
-b) (1 pkt) Dodaj rozcieńczony HNO₃: osad rozpuszcza się z burzliwym ulotem gazu → węglan (CO₂ potwierdzi woda wapienna); osad pozostaje nietknięty → chlorek (AgCl nie rozpuszcza się w rozcieńczonym kwasie).
-c) (1 pkt) Ag₂CO₃ + 2H⁺ → 2Ag⁺ + H₂O + CO₂↑ (bilans ładunków: −2 + 2 = 0 po lewej, +2 po prawej — zachowany; atomy Ag i C się domykają).
-d) (1 pkt) Przykład poprawnej konkluzji: „W próbce stwierdzono chlorki, jeśli po zakwaszeniu próbki rozcieńczonym HNO₃ dodatek AgNO₃ daje trwały biały osad nierozpuszczalny w kwasie; bez wykluczenia węglanów wniosku o chlorkach nie formułuje się na podstawie samej barwy osadu”.
+a) (2 pkt) Z Ag⁺ osad może tworzyć CO₃²⁻. Ag₂CO₃ ma zwykle barwę bladożółtą. Sama barwa osadu nie rozstrzyga, czy w próbce są chlorki.
+
+b) (1 pkt) Dodaj rozcieńczony HNO₃. Jeżeli osad rozpuszcza się z ulotem gazu, wskazuje to na węglan; gaz można potwierdzić wodą wapienną. Jeżeli osad pozostaje, wskazuje to na AgCl.
+
+c) (1 pkt) Ag₂CO₃ + 2H⁺ → 2Ag⁺ + H₂O + CO₂↑. Suma ładunków po lewej wynosi 0, a po prawej +2. Bilans ładunków jest zachowany.
+
+d) (1 pkt) W próbce stwierdzono chlorki, jeżeli po zakwaszeniu rozcieńczonym HNO₃ dodatek AgNO₃ daje trwały biały osad nierozpuszczalny w kwasie. Bez wykluczenia węglanów nie wolno wnioskować o chlorkach wyłącznie na podstawie barwy osadu.
 :::
 :::
 
-::: adv | Zadanie 16 (5 pkt) — Projektowanie syntezy: dwie drogi do NaCl i czyszczenie BaCO₃ | poziom ambitny
-a) Zaprojektuj dwie różne drogi otrzymania chlorku sodu: przez zobojętnienie i przez „sól z soli”; zapisz równania i wskaż, jak odseparujesz produkt. (3 pkt)
-b) Masz proszek BaCO₃. Zaprojektuj drogę otrzymania z niego BaSO₄ (dwie czynności) i zapisz równania jonowe skrócone obu etapów. (2 pkt)
+::: adv | Zadanie 16 (5 pkt) — Projektowanie syntezy: dwie drogi do NaCl i otrzymanie BaSO₄ | poziom ambitny
+a) Zaprojektuj dwie różne drogi otrzymania chlorku sodu: przez zobojętnienie oraz przez reakcję soli z solą. Zapisz równania i wskaż sposób oddzielenia produktu. (3 pkt)
+
+b) Masz proszek BaCO₃. Zaprojektuj dwuetapowy sposób otrzymania BaSO₄ i zapisz równania jonowe skrócone obu etapów. (2 pkt)
 
 ::: odp | Pokaż klucz
-a) (3 pkt) Droga 1 — zobojętnianie: HCl + NaOH → NaCl + H₂O (skrócone: H⁺ + OH⁻ → H₂O); produkt zostaje w roztworze — odparowanie wody daje sól (1 pkt). Droga 2 — sól z soli: Na₂SO₄ + BaCl₂ → BaSO₄↓ + 2NaCl (skrócone: Ba²⁺ + SO₄²⁻ → BaSO₄↓); po filtracji osadu w roztworze zostaje NaCl, który wyodrębnia się przez odparowanie (1 pkt za równania, 1 pkt za poprawne rozdzielenie ról osadu i roztworu w obu drogach).
-b) (2 pkt) Etap 1: rozpuść BaCO₃ w rozcieńczonym HNO₃ lub HCl — CO₃²⁻ + 2H⁺ → H₂O + CO₂↑ (baru zostaje w roztworze jako Ba²⁺) (1 pkt). Etap 2: dodaj rozpuszczalną sól siarczanowa(VI) (np. Na₂SO₄) — Ba²⁺ + SO₄²⁻ → BaSO₄↓; osad odfiltruj i przemyj (1 pkt).
+a) (3 pkt) Droga 1: HCl + NaOH → NaCl + H₂O. Jonowo skrócone: H⁺ + OH⁻ → H₂O. NaCl pozostaje w roztworze i można go wyodrębnić przez odparowanie wody. Droga 2: Na₂SO₄ + BaCl₂ → BaSO₄↓ + 2NaCl. Jonowo skrócone: Ba²⁺ + SO₄²⁻ → BaSO₄↓. Po filtracji osadu w roztworze pozostaje NaCl. Po 1 pkt za każdą drogę z równaniem i po 1 pkt za poprawne wskazanie sposobu oddzielenia produktu.
+
+b) (2 pkt) Etap 1: rozpuść BaCO₃ w rozcieńczonym HNO₃ lub HCl. CO₃²⁻ + 2H⁺ → H₂O + CO₂↑. Bar pozostaje w roztworze jako Ba²⁺. Etap 2: dodaj rozpuszczalną sól siarczanową(VI), na przykład Na₂SO₄. Ba²⁺ + SO₄²⁻ → BaSO₄↓. Osad odfiltruj i przemyj.
 :::
 :::
 
 ## 11 | Dla olimpijczyka — pogłębienie {#olimpijczyk} [[exam:KONKURS]] [[extra:AMBITNE]]
 
-**H⁺ czy H₃O⁺?** W roztworze wodnym proton nie bytuje samotnie — wiąże się z cząsteczką wody w jon hydroniowy H₃O⁺. Zapis H⁺ to konwencja uproszczona, którą stosują klucze szkolne i rejonowe. Na olimpiadzie wypada jednym zdaniem zaznaczyć konwencję („piszę H⁺ jako skrót od H₃O⁺”), a w analizie reakcji kwasowo-zasadowych myśleć o donorze protonu wiązanym wodą. To drobiazg, który pokazuje kulturę chemiczną (zapisy szkolne stosują H⁺ dla czytelności — zaznaczaj tę konwencję).
+**H⁺ czy H₃O⁺?** W wodzie proton jest związany z cząsteczkami wody. Podstawowym modelem jest jon hydroniowy H₃O⁺. Symbol H⁺ jest użytecznym skrótem szkolnym. W dokładniejszym zapisie zobojętnianie wygląda tak:
 
-**Równowaga dysocjacji słabych elektrolitów.** Mocne elektrolity piszemy strzałką →, słabe — ⇌, bo dysocjacja jest odwracalna i w stanie równowagi większość cząsteczek pozostaje niezdysocjowana. Woda — sam elektrolit słaby — w każdej probówce z roztworem wodnym dysocjuje śladowo (orientacyjnie 10⁻⁷ mol/l każdego z jonów w temperaturze pokojowej — wartość do weryfikacji z aktualnymi tablicami). Dlatego woda zawsze zostaje w zapisie cząsteczkowym: jej jony są w praktyce policzalne tylko ułamkiem tego, co wnosi dodany kwas lub zasada.
+H₃O⁺ + OH⁻ → 2H₂O
 
-**Dlaczego tabela rozpuszczalności w ogóle działa?** O rozpuszczalności soli rozstrzyga pojedynek dwóch sił: energii sieci krystalicznej (trzymającej jony w krysztale) i energii hydratacji (wody „wyciągającej” i otaczającej jony). Gdy hydratacja wygrywa — sól się rozpuszcza (NaCl, azotany); gdy wygrywa sieć — sól opada jako osad (BaSO₄, AgCl). Bar i siarczan(VI) to para o wyjątkowo silnym pocałowaniu ładunków (duże, dwukrotnie naładowane jony) — stąd BaSO₄ jest jednym z najmniej rozpuszczalnych osadów i nie rozpuszcza go żaden rozcieńczony kwas. To zarys — pełny opis wymaga iloczynu rozpuszczalności (Ksp), który poznasz w liceum.
+**Równowaga słabych elektrolitów.** Słabe kwasy i słabe zasady jonizują tylko częściowo. Dlatego w równaniach stosuje się strzałkę równowagi ⇌. Przykład:
 
-**Nie wszystko, co jonowe, to wymiana.** Równania jonowe skrócone opisują też reakcje utleniająco-redukcyjne w roztworach — tam nie ma „wymiany partnerów”, tylko transfer elektronów (przypomnienie z CHE-X04: Fe + Cu²⁺ → Fe²⁺ + Cu). Algorytm trzech poziomów jest ten sam; zmienia się natura „aktorów”. Na olimpiadzie potrafią połączyć oba światy: np. utlenienie Fe²⁺ do Fe³⁺ jonami nadtlenowymi — równania jonowe z bilansem elektronów.
+CH₃COOH ⇌ H⁺ + CH₃COO⁻
 
-**Interferencje analityczne — system, nie przypadek.** Każda próba charakterystyczna ma listę „udawaczy”: Ag⁺ jest mylony z CO₃²⁻ (oba białe), Ba²⁺ dla SO₄²⁻ — z CO₃²⁻ (BaCO₃ też biały), NaOH dla Cu²⁺ — kontra Fe²⁺/Fe³⁺ rozstrzyga się barwami (niebieski / zielony / brunatny). System obrony: (1) zakwaszenie próbki tam, gdzie kwas rozpuszcza zakłócenie, a nie cechę główną; (2) świadki pozytywny i negatywny; (3) potwierdzenie drugą, niezależną próbą (CO₂ → woda wapienna); (4) wniosek z warunkami, nigdy „na sztywno”. Zadanie 15 to pełny trening tego systemu.
+Woda również jonizuje bardzo słabo:
+
+2H₂O ⇌ H₃O⁺ + OH⁻
+
+W typowych równaniach jonowych wodę zapisuje się jako H₂O, a nie jako zbiór swobodnych jonów.
+
+**Skąd wynika rozpuszczalność?** O rozpuszczaniu soli decyduje równowaga między energią sieci krystalicznej, która utrzymuje jony w krysztale, a oddziaływaniami jonów z wodą. Jeżeli oddziaływania z wodą przeważają, sól rozpuszcza się. Jeżeli przeważa energia sieci, powstaje osad. BaSO₄ jest przykładem związku o bardzo małej rozpuszczalności.
+
+**Nie każda reakcja jonowa to wymiana.** Równanie Fe + Cu²⁺ → Fe²⁺ + Cu opisuje reakcję utleniania i redukcji. Żelazo oddaje elektrony, a jony miedzi je pobierają. Algorytm zapisu jonowego pozostaje podobny, ale istotą reakcji jest przepływ elektronów.
+
+**Zakłócenia analityczne.** Ag₂CO₃ może zakłócić próbę na Cl⁻, a BaCO₃ — próbę na SO₄²⁻. Obrona polega na odpowiednim zakwaszeniu, użyciu świadków oraz potwierdzeniu wyniku drugą, niezależną reakcją. Wniosek formułuje się warunkowo.
 
 ::: karta understand | Dla olimpijczyka — w skrócie
-Pięć broni: 1) H⁺ to skrót od H₃O⁺ — powiedz to wprost; 2) słabe elektrolity piszą się z ⇌, a woda jest elektrolitem najsłabszym w scenie; 3) rozpuszczalność to pojedynek sieci z hydratacją — stąd upór BaSO₄; 4) równania jonowe opisują też redoks w roztworach — algorytm ten sam, aktorzy inni; 5) analiza jonów to system świadków i zakwaszeń, nie zgadywanie po kolorze. Każdy z tych punktów jest pytaniem konkursowym czekającym na spotkanie.
+H⁺ jest skrótem od H₃O⁺. Słabe elektrolity zapisuje się ze strzałką równowagi ⇌. Rozpuszczalność wynika z równowagi między energią sieci a oddziaływaniami z wodą. Równania jonowe opisują także reakcje redoks. Analiza jonów wymaga świadków, zakwaszenia i potwierdzenia drugą próbą.
 :::
 
 ::: nie-myl | Reakcja jonowa ≠ każde mieszanie; osad ≠ identyfikacja
-- Mieszanie roztworów ≠ reakcja — bez osadu, gazu i słabego elektrolitu jony tylko krążą; test rozstrzygający: zapytaj „co opuszcza sferę reakcji?”.
-- Osad ≠ jednoznaczna identyfikacja — biały osad może być AgCl, BaSO₄, CaCO₃ lub Ag₂CO₃; test rozstrzygający: dodaj próbę różnicującą (kwas) i kontrolę zakłóceń.
-- Równanie cząsteczkowe ≠ opis mechanizmu — to rejestr laboratoryjny; test rozstrzygający: mechanizmem są jony, więc prawda o reakcji jest w zapisie skróconym.
+- Mieszanie roztworów ≠ reakcja netto — bez osadu, gazu lub słabego elektrolitu jony mogą pozostać niezmienione; test rozstrzygający: zapytaj, czy powstaje nowa substancja opuszczająca układ.
+- Osad ≠ jednoznaczna identyfikacja — biały osad może być AgCl, BaSO₄, CaCO₃ lub PbCl₂; test rozstrzygający: wykonaj próbę różnicującą i kontrolę zakłóceń.
+- Równanie cząsteczkowe ≠ mechanizm reakcji — zapis cząsteczkowy porządkuje substraty i produkty, a mechanizm dotyczy jonów; test rozstrzygający: zapytaj, które jony uczestniczą w przemianie.
 :::
 
 ## 12 | Klinika błędów {#klinika} [[basic:E8]] [[understand:ROZUMIENIE]]
 
 ::: klinika | Błąd | Poprawnie | Dlaczego?
-| „Piszę jony-widzów w równaniu skróconym: Na⁺ + NO₃⁻ + Ag⁺ + Cl⁻ → AgCl↓ + Na⁺ + NO₃⁻.” | Ag⁺ + Cl⁻ → AgCl↓. | Równanie skrócone pokazuje tylko aktorów; jony obserwatorowe są identyczne po obu stronach i nie uczestniczą w reakcji — ich obecność w zapisie skróconym to błąd. |
-| „Ag⁺ + Cl⁻ → AgCl.” | Ag⁺ + Cl⁻ → AgCl↓. | AgCl jest nierozpuszczalny — strzałka ↓ przy osadzie jest obowiązkowym elementem zapisu i często osobnym punktem w kluczu. |
-| „Fe(OH)₂ jest brunatny, Fe(OH)₃ zielony.” | Fe(OH)₂ — brudnozielony, Fe(OH)₃ — brunatny/rdzawy. | Barwy są ze sobą zamieniane najczęściej ze wszystkich; do tego Fe(OH)₂ ciemnieje na powietrzu, utleniając się do Fe(OH)₃. |
-| „Rozpisuję osad na jony: AgCl → Ag⁺ + Cl⁻ w równaniu pełnym.” | Osad zostaje cząsteczkowo: … → AgCl↓. | Osad nie jest w roztworze — opadł jako nierozpuszczalna substancja; rozpisywane są tylko mocne elektrolity obecne w roztworze. |
-| „Ca²⁺ + Cl⁻ → CaCl₂.” | Brak reakcji (CaCl₂ jest rozpuszczalny — nic nie opuszcza roztworu). | Po pierwsze bilans ładunków niezachowany (+2 kontra 0); po drugie nie powstaje osad, gaz ani słaby elektrolit — nie ma reakcji. |
-| „Mieszam NaNO₃ z KCl, więc zaszła wymiana: KNO₃ + NaCl.” | Brak typowej reakcji netto — wszystkie potencjalne produkty są rozpuszczalne. | Zapisanie reakcji wymiany bez osadu, gazu i słabego elektrolitu opisuje jedynie przetasowanie jonów, nie przemianę chemiczną. |
-| „Ba²⁺ + SO₄²⁻ + H⁺ + OH⁻ → BaSO₄↓ + H₂O.” | Dwie osobne reakcje: Ba²⁺ + SO₄²⁻ → BaSO₄↓ oraz 2H⁺ + 2OH⁻ → 2H₂O. | W układzie Ba(OH)₂ + H₂SO₄ zachodzą równolegle strącanie i zobojętnienie; łączenie ich w jedno równanie miesza dwie niezależne pary aktorów i psuje bilanse. |
-| „H⁺ to wolny proton krążący w roztworze.” | H⁺ to konwencja zapisu; realnie proton związany jest w jonie hydroniowym H₃O⁺. | Zapis H⁺ jest szkolnym uproszczeniem; na poziomie olimpijskim zaznacz się konwencję, a myśl o donorach protonu wiązanych wodą. |
-| „Zapamiętałem tabelę rozpuszczalności na sztywno, więc nie sprawdzam reguł.” | Czytaj reguły od anionu: rodzina → wyjątki → werdykt. | Tabela „na pamięć” bez sprawdzenia prowadzi do błędów na nietypowych połączeniach (np. K₂CO₃ — rozpuszczalny mimo „węglanów zwykle N”). |
-| „Biały osad — to na pewno AgCl, więc są chlorki.” | Biały osad + próba różnicująca (kwas) + świadki → wniosek warunkowy. | Kolor osadu nie zawsze stanowi jednoznaczną identyfikację: Ag₂CO₃, BaSO₄, CaCO₃ i PbCl₂ też są białe/białawożółte; wnioski formułuje się z warunkami i kontrolami. |
-| „Pomijam współczynnik przy jonie wieloatomowym: BaCl₂ → Ba²⁺ + Cl⁻.” | BaCl₂ → Ba²⁺ + 2Cl⁻. | Indeksy we wzorze stają się współczynnikami przy jonach; ich pominięcie psuje bilans atomów i ładunków w dalszych krokach. |
+| „Piszę jony obserwatorowe w równaniu skróconym: Na⁺ + NO₃⁻ + Ag⁺ + Cl⁻ → AgCl↓ + Na⁺ + NO₃⁻.” | Ag⁺ + Cl⁻ → AgCl↓. | Równanie skrócone zawiera tylko jony uczestniczące w przemianie. Jony obserwatorowe są identyczne po obu stronach równania pełnego. |
+| „Ag⁺ + Cl⁻ → AgCl.” | Ag⁺ + Cl⁻ → AgCl↓. | AgCl jest osadem, dlatego w zapisie należy podać ↓. |
+| „Fe(OH)₂ jest brunatny, a Fe(OH)₃ zielony.” | Fe(OH)₂ jest brudnozielony, a Fe(OH)₃ brunatny. | Barwy tych osadów są często zamieniane. Fe(OH)₂ dodatkowo ciemnieje na powietrzu. |
+| „Rozpisuję osad na jony: AgCl → Ag⁺ + Cl⁻ w równaniu pełnym.” | Osad pozostaje jako AgCl↓. | Osad jest fazą stałą, a nie zbiorem swobodnych jonów w roztworze. |
+| „Ca²⁺ + Cl⁻ → CaCl₂.” | Brak reakcji netto. | Zapis nie zachowuje bilansu ładunków, a CaCl₂ jest rozpuszczalny, więc nie ma przesłanki strącania. |
+| „Mieszam NaNO₃ z KCl, więc zaszła wymiana: KNO₃ + NaCl.” | Brak reakcji netto. | Potencjalne produkty są rozpuszczalne, a nie powstaje osad, gaz ani woda w zobojętnianiu. |
+| „Ba²⁺ + SO₄²⁻ + H⁺ + OH⁻ → BaSO₄↓ + H₂O.” | Ba²⁺ + SO₄²⁻ → BaSO₄↓ oraz 2H⁺ + 2OH⁻ → 2H₂O. | W układzie Ba(OH)₂ + H₂SO₄ zachodzą strącanie i zobojętnienie. Należy zachować poprawne bilanse obu przemian. |
+| „H⁺ to wolny proton krążący w roztworze.” | H⁺ to konwencja zapisu; dokładniejszym modelem jest H₃O⁺. | W wodzie proton jest związany z cząsteczkami wody. |
+| „Zapamiętałem tabelę rozpuszczalności na sztywno, więc nie sprawdzam reguł.” | Najpierw ustal rodzaj anionu, potem sprawdź wyjątki i odczytaj oznaczenie z tabeli. | Reguły pomagają, ale nie zastępują tabeli i informacji o warunkach zadania. |
+| „Biały osad to na pewno AgCl, więc są chlorki.” | Biały osad wymaga próby różnicującej, świadków i wniosku warunkowego. | Białe osady mogą pochodzić od różnych jonów, na przykład Ba²⁺, Ca²⁺ lub CO₃²⁻. |
+| „Pomijam współczynnik przy jonie wieloatomowym: BaCl₂ → Ba²⁺ + Cl⁻.” | BaCl₂ → Ba²⁺ + 2Cl⁻. | Indeks 2 we wzorze oznacza dwa jony Cl⁻. Jego pominięcie psuje bilans. |
 :::
 
 ::: mity
-„Wszystkie sole są rozpuszczalne w wodzie, a osady to rzadkość.” || Osadów jest mnóstwo: węglany, fosforany i siarczki większości metali, chlorki srebra, ołowiu i rtęci(I), siarczany(VI) baru, ołowiu, wapnia i strontu oraz większość wodorotlenków — strącanie to jeden z najczęstszych typów reakcji w roztworach.
-„Woda jest mocnym elektrolitem, bo wszędzie ją mamy.” || Woda jest elektrolitem słabym — dysocjuje śladowo (⇌) i w równaniach jonowych zawsze zostaje cząsteczkowo; „wszechobecność” nie ma nic do stopnia dysocjacji.
-„Jeśli zmieszam dwa roztwory soli, zawsze powstanie osad.” || Osad powstanie tylko, gdy któryś z potencjalnych produktów wymiany jest nierozpuszczalny; NaNO₃ + KCl to klasyczny przypadek bez reakcji.
-„Równanie jonowe skrócone zrobię z każdego równania cząsteczkowego rozpisując wszystko na jony.” || Rozpisuje się wyłącznie mocne elektrolity w roztworze; osady, gazy, woda i słabe elektrolity zostają cząsteczkowo — rozpisanie ich to błąd psujący cały zapis.
-„BaSO₄ rozpuści się w kwasie, przecież kwas rozpuszcza osady.” || Nie: BaSO₄ jest nierozpuszczalny w kwasach — dlatego próba na siarczany(VI) jest tak pewna; kwas rozpuszcza osady węglanowe (CaCO₃, Ag₂CO₃) z ulotem CO₂.
-„W równaniu Ag₂CO₃ + 2HNO₃ → 2AgNO₃ + H₂O + CO₂↑ współczynniki są obojętne.” || Współczynniki są treścią: bez 2 przy HNO₃ i 2AgNO₃ bilans atomów i ładunków się wali — a bilans ładunków jest tak samo obowiązkowy jak bilans atomów.
-„Wykrywanie jonu kończy się na pierwszym białym osadzie.” || Wykrywanie kończy się wniosek z warunkami: zakwaszenie, świadki, potwierdzenie drugą próbą (np. CO₂ → woda wapienna) — bez tego wynik może być interferencyjny.
-„Jon w roztworze, który nic nie robi, psuje reakcję.” || Jony obserwatorowe są obojętne dla przebiegu — mogą nawet zmieniać partnerów (K⁺ zamiast Na⁺), a równanie skrócone pozostanie to samo; to ich siła, nie wada.
+„Wszystkie sole są rozpuszczalne w wodzie, a osady to rzadkość.” || Wiele soli ma małą rozpuszczalność, między innymi węglany, fosforany(V), siarczki, chlorki srebra i ołowiu oraz siarczany(VI) baru i ołowiu. Strącanie jest częstym typem reakcji w roztworach.
+
+„Woda jest mocnym elektrolitem, bo występuje wszędzie.” || Woda jonizuje bardzo słabo. W typowych równaniach jonowych pozostaje zapisana jako H₂O.
+
+„Jeżeli zmieszam dwa roztwory soli, zawsze powstanie osad.” || Osad powstaje tylko wtedy, gdy w danych warunkach powstaje substancja o małej rozpuszczalności. NaNO₃ i KCl są przykładem mieszanki bez reakcji netto.
+
+„Równanie jonowe skrócone zrobię, rozpisując wszystko na jony.” || Rozpisuje się mocne elektrolity obecne w roztworze. Osady, gazy, woda i słabe elektrolity pozostają bez rozpisywania.
+
+„BaSO₄ rozpuści się w kwasie, przecież kwas rozpuszcza osady.” || BaSO₄ jest praktycznie nierozpuszczalny w rozcieńczonych kwasach stosowanych w szkolnych próbach. Kwas może natomiast rozpuszczać osady węglanowe z ulotem CO₂.
+
+„W równaniu Ag₂CO₃ + 2HNO₃ → 2AgNO₃ + H₂O + CO₂↑ współczynniki są obojętne.” || Współczynniki zapewniają bilans atomów i ładunków. Bez nich zapis jest niepoprawny.
+
+„Wykrywanie jonu kończy się na pierwszym białym osadzie.” || Wykrywanie kończy się wnioskiem opartym na zakwaszeniu, próbach porównawczych i potwierdzeniu inną reakcją.
+
+„Jon obserwatorowy psuje reakcję.” || Jony obserwatorowe pozostają w roztworze i nie uczestniczą w opisanej przemianie. Można je usunąć z równania skróconego.
 :::
 
 ## 13 | Ćwiczenia utrwalające {#cwiczenia} [[basic:E8]] [[exam:KONKURS]]
 
-Krótkie treningi bez punktacji — rozgrzewka przed zadaniami. Każde z kluczem.
-
-**Ćwiczenie 1.** Zapisz skrócone jonowe reakcji AgNO₃ + KCl.
+**Ćwiczenie 1.** Zapisz równanie jonowe skrócone reakcji roztworów AgNO₃ i KCl.
 
 ::: odp | Klucz
-Ag⁺ + Cl⁻ → AgCl↓ (biały osad serowaty; Na⁺/K⁺ i NO₃⁻ to obserwatorowe).
+Ag⁺ + Cl⁻ → AgCl↓. Powstaje biały osad. K⁺ i NO₃⁻ są jonami obserwatorowymi.
 :::
 
-**Ćwiczenie 2.** Jaka barwa osadu Cu(OH)₂?
+**Ćwiczenie 2.** Jaka jest barwa osadu Cu(OH)₂?
 
 ::: odp | Klucz
-Niebieski (Cu²⁺ + 2OH⁻ → Cu(OH)₂↓).
+Niebieska.
 :::
 
-**Ćwiczenie 3.** Czy powstanie osad po zmieszaniu NaNO₃ + KCl?
+**Ćwiczenie 3.** Czy po zmieszaniu roztworów NaNO₃ i KCl powstanie osad?
 
 ::: odp | Klucz
-Nie — potencjalne produkty (KNO₃ i NaCl) są dobrze rozpuszczalne; wszystkie jony pozostają obserwatorowe, brak reakcji netto.
+Nie. Potencjalne produkty, KNO₃ i NaCl, są dobrze rozpuszczalne. Nie ma reakcji netto.
 :::
 
-**Ćwiczenie 4.** Jak wykryć jon SO₄²⁻?
+**Ćwiczenie 4.** Jak wykrywa się jony SO₄²⁻?
 
 ::: odp | Klucz
-Wykrywanie SO₄²⁻ wymaga odczynnika zawierającego Ba²⁺ (BaCl₂ lub Ba(NO₃)₂) i kontroli warunków próbki — najlepiej po zakwaszeniu rozcieńczonym kwasem; biały osad BaSO₄ (Ba²⁺ + SO₄²⁻ → BaSO₄↓) jest obserwacją, którą należy interpretować z uwzględnieniem możliwych interferencji (np. węglanów, usuwanych zakwaszeniem).
+Dodaje się rozpuszczalną sól baru do odpowiednio zakwaszonej próbki. Biały osad BaSO₄ wskazuje na SO₄²⁻: Ba²⁺ + SO₄²⁻ → BaSO₄↓.
 :::
 
-**Ćwiczenie 5.** Zapisz skrócone równanie jonowe reakcji Ba(OH)₂ + H₂SO₄.
+**Ćwiczenie 5.** Zapisz równania jonowe skrócone reakcji roztworów Ba(OH)₂ i H₂SO₄.
 
 ::: odp | Klucz
-Dwie równoległe reakcje jonowe: Ba²⁺ + SO₄²⁻ → BaSO₄↓ (biały osad) oraz 2H⁺ + 2OH⁻ → 2H₂O (zobojętnienie).
+Ba²⁺ + SO₄²⁻ → BaSO₄↓ oraz 2H⁺ + 2OH⁻ → 2H₂O.
 :::
 
-**Ćwiczenie 6.** Który zapis jest prawdziwy: dysocjacja NaCl czy reakcja? Uzasadnij.
+**Ćwiczenie 6.** Czy NaCl → Na⁺ + Cl⁻ jest reakcją jonową netto? Uzasadnij.
 
 ::: odp | Klucz
-NaCl → Na⁺ + Cl⁻ to dysocjacja — opis stanu roztworu, nie reakcja; reakcją jest np. Ag⁺ + Cl⁻ → AgCl↓, bo powstaje nowa substancja opuszczająca roztwór.
+Nie. Jest to zapis dysocjacji soli, czyli opis powstawania jonów w roztworze. Reakcją netto jest na przykład Ag⁺ + Cl⁻ → AgCl↓.
 :::
 
-**Ćwiczenie 7.** Dlaczego osadu PbI₂ nie można rozpisać na jony w równaniu pełnym, a Pb(NO₃)₂ można?
+**Ćwiczenie 7.** Dlaczego PbI₂ nie rozpisuje się na jony w równaniu jonowym pełnym, a Pb(NO₃)₂ tak?
 
 ::: odp | Klucz
-PbI₂ jest nierozpuszczalny (żółty osad ↓) — nie ma go w roztworze; Pb(NO₃)₂ jest rozpuszczalną solą (azotany zawsze R) — istnieje w roztworze jako Pb²⁺ + 2NO₃⁻ i podlega rozpisaniu.
+PbI₂ jest osadem, więc pozostaje w zapisie jako faza stała. Pb(NO₃)₂ jest rozpuszczalną solą obecną w roztworze, więc rozpisuje się na Pb²⁺ i 2NO₃⁻.
 :::
 
-**Ćwiczenie 8 — mini-test samodzielny.** Odpowiedz bez patrzenia w lekcję: 1) Skrócone: AgNO₃ + KCl. 2) Barwa Cu(OH)₂. 3) Osad z NaNO₃ + KCl? 4) Jak wykryć SO₄²⁻? 5) Skrócone: Ba(OH)₂ + H₂SO₄. Potem sprawdź z ćwiczeniami 1–5 — Twoje odpowiedzi muszą się zgadzać (w 4 wymagana jest kontrola warunków, nie sam odczynnik).
+**Ćwiczenie 8 — mini-test samodzielny.** Odpowiedz bez zaglądania do lekcji: 1) Zapisz skrócone równanie reakcji AgNO₃ z KCl. 2) Podaj barwę Cu(OH)₂. 3) Czy z NaNO₃ i KCl powstaje osad? 4) Jak wykrywa się SO₄²⁻? 5) Zapisz skrócone równania reakcji Ba(OH)₂ z H₂SO₄. Następnie porównaj odpowiedzi z ćwiczeniami 1–5.
 
 ## 14 | Ciekawostki {#ciekawostki} [[extra:AMBITNE]]
 
-::: karta extra | Ciekawostka 1 — halogenki srebra wymyśliły fotografię
-AgCl, AgBr i AgI są światłoczułe: pod wpływem światła ulegają przemianom, które zmieniają ich właściwości. Odkrycie to stało się fundamentem fotografii klasycznej — na kliszy kryształy bromku srebra (żółtawobiałe) rejestrowały obraz, a wywoływacz i utrwalacz (właśnie z rozpuszczalnością AgX w roztworach) kończyły robotę. Ciąg barw „biały → żółtawobiały → żółty” wzdłuż Cl → Br → I to widoczna gołym okiem zmiana własności w rodzinie chemicznej.
+::: karta extra | Ciekawostka 1 — halogenki srebra i fotografia
+AgCl, AgBr i AgI są światłoczułe. Pod wpływem światła zachodzą w nich przemiany zmieniające właściwości substancji. Zjawisko to stało się podstawą klasycznej fotografii. Ciąg barw od białego AgCl przez żółtawobiały AgBr do żółtego AgI pokazuje, że podobne związki mogą różnić się właściwościami.
 :::
 
-::: karta extra | Ciekawostka 2 — barowa papka: toksyczny metal ratuje diagnostykę
-Bar jest toksyczny — rozpuszczalne sole baru działają silnie trująco. Ale BaSO₄ jest tak uparcie nierozpuszczalny (nawet w kwasach!), że przechodzi przez układ pokarmowy niczym obojętny piasek. Dlatego zawiesina BaSO₄ („barowa papka”) służy od dekad jako środek cieniujący w badaniach RTG przewodu pokarmowego: pacjent ją wypija, a rentgen „widzi” kontury żołądka i jelit. To lekcja z logiki tabeli rozpuszczalności: toksyczność zależy od rozpuszczalności, nie od nazwy pierwiastka.
+::: karta extra | Ciekawostka 2 — barowa papka: toksyczny metal w diagnostyce
+Rozpuszczalne sole baru są toksyczne, ale BaSO₄ ma bardzo małą rozpuszczalność. Zawiesina BaSO₄ bywa stosowana jako środek cieniujący w badaniach przewodu pokarmowego. Pokazuje to, że zagrożenie zależy nie tylko od pierwiastka, lecz także od rozpuszczalności związku. (źródło: podręczniki chemii nieorganicznej i materiały medyczne, orientacyjnie)
 :::
 
 ::: karta extra | Ciekawostka 3 — złoty deszcz w probówce
-PbI₂ daje tak piękne, błyszczące żółte płatki, że strącanie z gorącego roztworu (i powolne krystalizowanie przy stygnięciu) zyskało własną nazwę: „złoty deszcz”. Demonstracja jest klasyczną atrakcją wykładów chemicznych od ponad wieku — i zarazem gotową ilustracją tego, że „osad” może być krystaliczny i oszałamiający, a nie zawsze szarą papkę.
+PbI₂ tworzy żółte, błyszczące płatki. Strącanie tego osadu z gorącego roztworu bywa nazywane „złotym deszczem”. Jest to klasyczna demonstracja, że osad może mieć postać wyraźnych kryształów, a nie zawsze wygląda jak mętna zawiesina.
 :::
 
-::: karta extra | Ciekawostka 4 — kamień w czajniku to tabela rozpuszczalności w działaniu
-Biała warstwa w czajniku, stalaktyty w jaskiniach i łuska na kranach to CaCO₃ — osad z twardą wodą. Woda bogata w wodorowęglan wapnia przy ogrzewaniu oddaje CO₂ i wytrąca węglan (zjawisko odwrotne do rozpuszczania węglanu w kwasie). Ocet (słaby kwas) usuwa kamień, bo węglan rozpuszcza się w kwasach z ulotem CO₂ — dokładnie ten sam mechanizm, co w próbie na CO₃²⁻ z [§8](#wykrywanie) i [§9](#doswiadczenia).
+::: karta extra | Ciekawostka 4 — kamień w czajniku to chemia strącania
+Biała warstwa w czajniku, osady w rurach i nacieki w jaskiniach zawierają często CaCO₃. Woda zawierająca wodorowęglan wapnia podczas ogrzewania może oddawać CO₂ i wytrącać węglan. Ocet, będący słabym kwasem, może rozpuszczać kamień z ulotem CO₂.
 :::
 
-::: karta extra | Ciekawostka 5 — osad, który się zmienia, zanim zdążysz go narysować
-Świeży Fe(OH)₂ jest brudnozielony, ale na powietrzu tlen utlenia Fe²⁺ do Fe³⁺ — osad stopniowo brunatnieje, przechodząc w Fe(OH)₃. Uczniowie robiący próbę po raz pierwszy często myślą, że pomylili odczynniki. To zaś ten sam chemistry, który stoi za rdzą: brunatne produkty utleniania żelaza w wilgoci są rodziną tlenków i wodorotlenków Fe(III). Jedna probówka — i podgląd na korozję. (źródło: podręczniki chemii nieorganicznej, orientacyjnie)
+::: karta extra | Ciekawostka 5 — osad, który zmienia barwę na powietrzu
+Świeży Fe(OH)₂ jest brudnozielony, ale tlen z powietrza utlenia Fe²⁺ do Fe³⁺. Osad stopniowo przyjmuje barwę brunatną. Jest to widoczne połączenie reakcji strącania z procesem utleniania, podobnym do przemian zachodzących podczas korozji żelaza. (źródło: podręczniki chemii nieorganicznej, orientacyjnie)
 :::
 
 ## 15 | Sposoby pamięciowe {#mnemo} [[basic:E8]]
 
 ::: wskazowki
-- Trójkrok zapisu: „**C**zytaj — **P**odziel — **S**kreśl” (cząsteczkowe → pełne jonowe → skreśl widzów).
-- Czwórka niedotykalnych: „**O**sad, **G**az, **W**oda, **S**łaby — zostają całe” (nie rozpisujesz ich na jony).
-- Rodziny zawsze rozpuszczalne: „**NA-KA-Amon i azotany — nigdy nie opadną**” (sole Na⁺, K⁺, NH₄⁺ oraz wszystkie azotany(V)).
-- Wyjątki chlorków: „**Srebro, ołów, rtęć(I) — chlorków do wody nie dają**” (AgCl, PbCl₂, Hg₂Cl₂).
-- Wyjątki siarczanów(VI): „**Ba-Pb-Ca-Sr — siarczana nie wpuścią w progi**” (BaSO₄, PbSO₄, CaSO₄, SrSO₄).
-- Barwy wodorotlenków: „**Cu — niebo, Fe(II) — mech, Fe(III) — cegła**” (niebieski, brudnozielony, brunatny).
-- Halogenki srebra: „**Od Cl do I ciemnieje się**” (AgCl biały → AgBr żółtawobiały → AgI żółty).
-- Trzy powody reakcji: „**O-G-W: osad, gaz, woda — albo nic się nie dzieje**”.
-- Bilans: „**Atomy i ładunki — dwa liczniki, oba muszą się zgodzić**”.
+- Trójkrok zapisu: „Cząsteczkowo — pełne — skrócone”.
+- Czwórka nierozpisywanych składników: „Osad, gaz, woda, słaby elektrolit”.
+- Typowe rozpuszczalne rodziny: „Azotany(V) oraz typowe sole Na, K i amonu”.
+- Wyjątki chlorków: „Srebro, ołów, rtęć(I)”.
+- Wyjątki siarczanów(VI): „Bar, ołów, wapń, stront”.
+- Barwy wodorotlenków: „Miedź — niebo, żelazo(II) — mech, żelazo(III) — cegła”.
+- Halogenki srebra: „Od Cl do I barwa staje się bardziej żółta”.
+- Typowe przesłanki reakcji: „Osad, gaz, woda — albo brak reakcji netto”.
+- Bilans: „Atomy i ładunki — dwa liczniki, oba muszą się zgadzać”.
 :::
 
 ## 16 | Test końcowy {#test} [[basic:E8]] [[exam:KONKURS]]
 
-Rozwiąż bez zaglądania do lekcji. Każde pytanie ma dokładnie jedną poprawną odpowiedź. Wyjaśnienia sprawdź dopiero po rozwiązaniu całości.
+Rozwiąż bez zaglądania do lekcji. Każde pytanie ma dokładnie jedną poprawną odpowiedź. Wyjaśnienia sprawdź po rozwiązaniu całości.
 
 ::: test
+? Które składniki rozpisujemy na jony w typowym równaniu jonowym pełnym?
++ mocne elektrolity obecne w roztworze: typowe rozpuszczalne sole, mocne kwasy i rozpuszczone mocne zasady
+- wszystkie substraty i wszystkie produkty bez wyjątku
+- tylko osady i gazy
+- wyłącznie wodorotlenki
+! Zapis jonowy przedstawia skład roztworu. Osady, gazy, woda i słabe elektrolity pozostają w postaci wzorów substancji.
+
+? Który zapis jest poprawny dla osadu w równaniu jonowym skróconym?
++ Ag⁺ + Cl⁻ → AgCl↓
+- Ag⁺ + Cl⁻ → AgCl
+- AgCl → Ag⁺ + Cl⁻
+- Ag⁺ + Cl⁻ ⇌ AgCl↓
+! AgCl jest osadem, dlatego stosuje się ↓. Zapis odwrotny opisywałby rozpuszczanie osadu, a nie jego powstawanie.
+
+? Barwa osadu wodorotlenku żelaza(III) to:
++ brunatna, rdzawa
+- niebieska
+- biała
+- żółta
+! Fe(OH)₃ jest brunatny. Niebieski jest Cu(OH)₂, brudnozielony Fe(OH)₂, a żółty PbI₂.
+
+? Po zmieszaniu roztworów NaNO₃ i KCl:
++ nie zachodzi reakcja netto, ponieważ potencjalne produkty są rozpuszczalne
+- wytrąca się KNO₃
+- wytrąca się NaCl
+- wydziela się gaz
+! KNO₃ i NaCl są dobrze rozpuszczalne. Wszystkie rozpatrywane jony pozostają w roztworze.
+
+? Które trzy typowe przesłanki uzasadniają zapisanie reakcji wymiany w roztworze?
++ powstanie osadu, wydzielenie gazu, powstanie słabego elektrolitu, na przykład wody
+- zmiana koloru probówki, grzanie, mieszanie
+- obecność jonów obserwatorowych, filtracja, odparowanie
+- rozpuszczanie, krystalizacja, sublimacja
+! Osad, gaz i woda to typowe produkty zmniejszające ilość swobodnych jonów substratów w szkolnych reakcjach wymiany.
+
+? Jak wykrywa się jony SO₄²⁻?
++ dodając rozpuszczalną sól baru do odpowiednio zakwaszonej próbki — biały osad BaSO₄
+- dodając AgNO₃ do próbki — biały osad
+- dodając NaOH — niebieski osad
+- podgrzewając próbkę — zmiana barwy
+! Ba²⁺ + SO₄²⁻ → BaSO₄↓. AgNO₃ służy do wykrywania chlorków, a NaOH do wykrywania niektórych kationów metali.
+
+? Potwierdzeniem wydzielenia CO₂ w próbie na węglany jest:
++ zmętnienie wody wapiennej: Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O
+- zmiana barwy na niebieską
+- powstanie osadu Fe(OH)₃
+- zapach gazu
+! Sam ulot gazu nie przesądza, że jest to CO₂. Woda wapienna stanowi dodatkowe potwierdzenie.
+
+? W równaniu jonowym skróconym jony obserwatorowe:
++ usuwa się, jeżeli występują niezmienione po obu stronach równania pełnego
+- usuwa się zawsze, niezależnie od zapisu
+- dodaje się dla porządku
+- zamienia się na osady
+! Usuwa się tylko jednakowe ilości tych samych jonów występujących niezmienionych po obu stronach.
+
+? Które rodziny związków są w szkolnej klasyfikacji rozpuszczalne?
++ typowe azotany(V) oraz typowe sole Na⁺, K⁺ i NH₄⁺
+- chlorki i węglany
+- siarczany(VI) i siarczki
+- wodorotlenki wszystkich metali
+! Chlorki mają wyjątki, takie jak AgCl i PbCl₂, a siarczany(VI) — BaSO₄, PbSO₄, CaSO₄ i SrSO₄. Węglany i siarczki większości metali mają małą rozpuszczalność.
+
+? W reakcji Ba(OH)₂ + H₂SO₄ → BaSO₄↓ + 2H₂O równania jonowe skrócone to:
++ Ba²⁺ + SO₄²⁻ → BaSO₄↓ oraz 2H⁺ + 2OH⁻ → 2H₂O
+- tylko Ba²⁺ + SO₄²⁻ → BaSO₄↓
+- tylko 2H⁺ + 2OH⁻ → 2H₂O
+- Ba²⁺ + 2OH⁻ + 2H⁺ + SO₄²⁻ → BaSO₄↓ + 2H₂O jako zapis skrócony
+! W układzie zachodzą strącanie i zobojętnienie. Ostatnia opcja jest zapisem jonowym pełnym, a nie skróconym.
+
+? Wykrywanie jonów Cl⁻ za pomocą AgNO₃ może zafałszować obecność:
++ węglanów, ponieważ Ag₂CO₃ może dawać osad o zbliżonym wyglądzie
+- jonów K⁺, ponieważ dają żółty osad
+- jonów NO₃⁻, ponieważ dają brunatny osad
+- wody, ponieważ daje zmętnienie
+! Dlatego przed próbą na Cl⁻ stosuje się rozcieńczony HNO₃, który usuwa węglany jako CO₂.
+
+? „Kwas z soli” w reakcji Na₂CO₃ + 2HCl polega na tym, że:
++ z węglanu powstaje nietrwały kwas węglowy, który rozpada się na H₂O i lotny CO₂
+- słabszy kwas wypiera mocniejszy
+- sól rozpuszcza kwas bez przemiany
+- powstaje osad węglanu
+! CO₃²⁻ + 2H⁺ → H₂O + CO₂↑. Ulot gazu sprzyja przebiegowi reakcji.
+
+? (poziom konkursowy) Dlaczego zapis „NaNO₃ + KCl → KNO₃ + NaCl” nie opisuje reakcji netto?
++ opisuje jedynie formalną zamianę partnerów, a wszystkie potencjalne produkty są rozpuszczalne
+- ponieważ równanie jest niezbalansowane
+- ponieważ brakuje strzałek ↓ i ↑
+- ponieważ NaNO₃ nie istnieje
+! Równanie jest zbilansowane, ale nie powstaje osad, gaz ani woda w zobojętnianiu. Nie ma reakcji netto.
+
+? (poziom konkursowy) Po dodaniu AgNO₃ do próbki powstał biały osad nierozpuszczalny w rozcieńczonym HNO₃. Najlepsza konkluzja to:
++ próbka zawiera chlorki, ponieważ węglany zostały wykluczone przez zakwaszenie
+- próbka zawiera węglany
+- próbka zawiera siarczany(VI)
+- wniosek nie jest możliwy bez testu z NaOH
+! Trwałość osadu w rozcieńczonym HNO₃ różnicuje AgCl od Ag₂CO₃. Siarczany(VI) wykrywa się solą baru, nie AgNO₃.
 ? Które substancje rozpisujemy na jony w równaniu jonowym pełnym?
 + mocne elektrolity obecne w roztworze: rozpuszczalne sole, mocne kwasy, mocne zasady
 - wszystkie substraty i wszystkie produkty bez wyjątku
@@ -1036,20 +1343,6 @@ Rozwiąż bez zaglądania do lekcji. Każde pytanie ma dokładnie jedną poprawn
 - AgCl → Ag⁺ + Cl⁻
 - Ag⁺ + Cl⁻ ⇌ AgCl↓
 ! AgCl jest nierozpuszczalny — strzałka ↓ jest obowiązkowa; zapis odwrotny to dysocjacja, która nie zachodzi, a ⇌ sugerowałoby rozpuszczanie się osadu.
-
-? Barwa osadu wodorotlenku żelaza(III) to:
-+ brunatna (rdzawa)
-- niebieska
-- biała
-- żółta
-! Fe(OH)₃ — brunatny/rdzawy; niebieski to Cu(OH)₂, brudnozielony — Fe(OH)₂, żółty — PbI₂ i AgI.
-
-? Po zmieszaniu roztworów NaNO₃ i KCl:
-+ nie zachodzi żadna reakcja — wszystkie potencjalne produkty są rozpuszczalne
-- wytrąca się KNO₃
-- wytrąca się NaCl
-- wydziela się gaz
-! KNO₃ (azotan) i NaCl (sól sodu) są dobrze rozpuszczalne — wszystkie jony pozostają obserwatorowymi; to klasyczny przypadek braku reakcji.
 
 ? Które trzy zjawiska uzasadniają zapisanie reakcji wymiany w roztworze?
 + powstanie osadu, wydzielenie gazu, powstanie słabego elektrolitu (np. wody)
@@ -1065,13 +1358,6 @@ Rozwiąż bez zaglądania do lekcji. Każde pytanie ma dokładnie jedną poprawn
 - podgrzewając próbkę — zmiana barwy
 ! Ba²⁺ + SO₄²⁻ → BaSO₄↓ (biały, nierozpuszczalny w kwasach); zakwaszenie eliminuje zakłócenia od węglanów. AgNO₃ wykrywa chlorki, a NaOH — kationy metali.
 
-? Potwierdzeniem wydzielenia CO₂ w próbie na węglany jest:
-+ zmętnienie wody wapiennej: Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O
-- zmiana barwy na niebieską
-- powstanie osadu Fe(OH)₃
-- zapach gazu
-! Sam ulot gazu nie przesądza o CO₂; zmętnienie wody wapiennej jest potwierdzeniem drugą, niezależną próbą.
-
 ? W równaniu skróconym jony obserwatorowe:
 - usuwa się zawsze, niezależnie od zapisu
 + skreśla się, jeżeli występują niezmienione po obu stronach równania pełnego
@@ -1086,26 +1372,12 @@ Rozwiąż bez zaglądania do lekcji. Każde pytanie ma dokładnie jedną poprawn
 - wodorotlenki wszystkich metali
 ! To dwie rodziny bez wyjątków; chlorki mają AgCl, PbCl₂, Hg₂Cl₂, siarczany(VI) — BaSO₄, PbSO₄, CaSO₄, SrSO₄, a węglany i siarczki — poza solami I grupy i amonu — są nierozpuszczalne.
 
-? W reakcji Ba(OH)₂ + H₂SO₄ → BaSO₄↓ + 2H₂O równania jonowe skrócone to:
-+ Ba²⁺ + SO₄²⁻ → BaSO₄↓ oraz 2H⁺ + 2OH⁻ → 2H₂O
-- tylko Ba²⁺ + SO₄²⁻ → BaSO₄↓
-- tylko 2H⁺ + 2OH⁻ → 2H₂O
-- Ba²⁺ + 2OH⁻ + 2H⁺ + SO₄²⁻ → BaSO₄↓ + 2H₂O (jako zapis skrócony)
-! W układzie zachodzą równolegle strącanie i zobojętnienie — uczciwy zapis podaje dwie niezależne pary aktorów; ostatnia opcja to zapis pełny bez skrócenia obserwatorowych.
-
 ? Wykrywanie jonów chlorkowych AgNO₃ może zafałszować obecność:
 + węglanów — osad Ag₂CO₃ jest też biały/białawożółty
 - jonów K⁺ — dają żółty osad
 - jonów NO₃⁻ — dają brunatny osad
 - wody — daje zmętnienie
 ! Dlatego przed próbą na Cl⁻ zakwasza się próbkę rozcieńczonym HNO₃ — węglan ulatuje jako CO₂, a chlorek zostaje do wykrycia.
-
-? „Kwas z soli” w reakcji Na₂CO₃ + 2HCl polega na tym, że:
-+ mocniejszy kwas wypiera z soli słabszy kwas (węglowy), który rozpada się na H₂O i lotny CO₂
-- słabszy kwas wypiera mocniejszy
-- sól rozpuszcza kwas bez przemiany
-- powstaje osad węglanu
-! CO₃²⁻ + 2H⁺ → H₂O + CO₂↑ — lotność produktu działa jak nierozpuszczalność: usuwa produkt z roztworu i ciągnie reakcję do końca.
 
 ? (poziom konkursowy) Dlaczego zapis „NaNO₃ + KCl → KNO₃ + NaCl” jest chemicznie pusty?
 + opisuje przetasowanie partnerów w roztworze, a nie powstanie nowej substancji — reakcja nie zachodzi
@@ -1128,67 +1400,80 @@ Powtarzaj partiami: najpierw basic, potem understand i extra, na końcu olimpijs
 
 ::: fiszki
 Trzy poziomy zapisu | cząsteczkowe → jonowe pełne → jonowe skrócone | basic:zapis
-Rozpisujemy na jony | mocne elektrolity w roztworze: rozpuszczalne sole, mocne kwasy, mocne zasady | basic:zapis
-Czwórka niedotykalnych | osad, gaz, woda, słaby elektrolit — zostają cząsteczkowo | understand:zapis
-Jony obserwatorowe | jony identyczne po obu stronach równania pełnego; skracane, nieobecne w zapisie skróconym | understand:zapis
-Skrócone zobojętnienia | OH⁻ + H⁺ → H₂O | basic:zapis
-Skrócone AgNO₃ + NaCl | Ag⁺ + Cl⁻ → AgCl↓ (biały osad) | basic:zapis
+Rozpisywane na jony | mocne elektrolity obecne w roztworze | basic:zapis
+Nierozpisywane składniki | osad, gaz, woda, słaby elektrolit | understand:zapis
+Jony obserwatorowe | jony identyczne po obu stronach równania pełnego | understand:zapis
+Skrócone zobojętnienie | H⁺ + OH⁻ → H₂O | basic:zapis
+Skrócone AgNO₃ + NaCl | Ag⁺ + Cl⁻ → AgCl↓ | basic:zapis
 Skrócone BaCl₂ + Na₂SO₄ | Ba²⁺ + SO₄²⁻ → BaSO₄↓ | basic:zapis
 Skrócone CuSO₄ + NaOH | Cu²⁺ + 2OH⁻ → Cu(OH)₂↓ | basic:zapis
+Bilans równania jonowego | liczba atomów i suma ładunków po obu stronach | understand:zapis
+Dysocjacja soli | NaCl → Na⁺ + Cl⁻ | basic:dysocjac
+Elektrolity mocne | HCl, HNO₃, NaOH, KOH, typowe rozpuszczalne sole | basic:elektro
+Elektrolity słabe | jonizują częściowo, zapis ⇌ | understand:elektro
+Konwencja H⁺ | skrót od jonu H₃O⁺ | olimpijski:elektro
+Azotany(V) | typowe są rozpuszczalne | basic:rozpusc
+Typowe sole Na⁺, K⁺, NH₄⁺ | rozpuszczalne | basic:rozpusc
+Wyjątki chlorków | AgCl, PbCl₂, Hg₂Cl₂ | basic:rozpusc
+Wyjątki siarczanów(VI) | BaSO₄, PbSO₄, CaSO₄, SrSO₄ | basic:rozpusc
+Węglany i fosforany(V) | większość ma małą rozpuszczalność | basic:rozpusc
+Trzy typowe przesłanki reakcji | osad, gaz, słaby elektrolit | understand:kiedy
+Osady białe | AgCl, BaSO₄, CaCO₃, PbCl₂ | basic:osady
+Barwa Cu(OH)₂ | niebieska | basic:osady
+Barwa Fe(OH)₂ | brudnozielona | basic:osady
+Barwa Fe(OH)₃ | brunatna | basic:osady
+PbI₂ | żółty osad, „złoty deszcz” | extra:osady
+AgBr i AgI | żółtawobiały i żółty, światłoczułe | extra:osady
+Wykrywanie Cl⁻ | AgNO₃ po zakwaszeniu rozcieńczonym HNO₃ | basic:wykryw
+Wykrywanie SO₄²⁻ | sól baru po zakwaszeniu | basic:wykryw
+Wykrywanie CO₃²⁻ | kwas, CO₂ i woda wapienna | basic:wykryw
+Wykrywanie kationów | Cu²⁺ niebieski, Fe²⁺ brudnozielony, Fe³⁺ brunatny | basic:wykryw
+Sól + kwas | CO₃²⁻ + 2H⁺ → H₂O + CO₂↑ | basic:otrzymy
+Sól + zasada | Cu²⁺ + 2OH⁻ → Cu(OH)₂↓ | basic:otrzymy
+Sól z soli | Ag⁺ + Cl⁻ → AgCl↓ | basic:otrzymy
+Kwas z soli, rozszerzenie | NaCl + H₂SO₄ stężony → NaHSO₄ + HCl↑ | olimpijski:otrzymy
+Dwa zapisy z Ba(OH)₂ + H₂SO₄ | Ba²⁺ + SO₄²⁻ → BaSO₄↓ oraz 2H⁺ + 2OH⁻ → 2H₂O | olimpijski:zapis
+Rozpuszczalność a energia | energia sieci i oddziaływania jonów z wodą | olimpijski:rozpusc
+Zakłócenia analityczne | Ag₂CO₃ może mylić się z AgCl | olimpijski:wykryw
+Rozpisujemy na jony | mocne elektrolity w roztworze: rozpuszczalne sole, mocne kwasy, mocne zasady | basic:zapis
+Czwórka niedotykalnych | osad, gaz, woda, słaby elektrolit — zostają cząsteczkowo | understand:zapis
+Skrócone zobojętnienia | OH⁻ + H⁺ → H₂O | basic:zapis
 Bilans w zapisie skróconym | atomy i suma ładunków po obu stronach muszą się zgadzać | understand:zapis
 Dysocjacja | rozpad elektrolitu na jony (NaCl → Na⁺ + Cl⁻) — opis roztworu, nie reakcja | understand:dysocjac
-Elektrolity mocne | dysocjują całkowicie (→): HCl, H₂SO₄, HNO₃, NaOH, KOH, rozpuszczalne sole | basic:elektro
-Elektrolity słabe | dysocjują częściowo (⇌); woda jest słabym elektrolitem | understand:elektro
-Konwencja H⁺ | uproszczenie; realnie proton związany w H₃O⁺ | olimpijski:elektro
-Azotany(V) | zawsze rozpuszczalne — bez wyjątków | basic:rozpusc
 Sole Na⁺, K⁺, NH₄⁺ | zawsze rozpuszczalne — bez wyjątków | basic:rozpusc
-Wyjątki chlorków | AgCl, PbCl₂, Hg₂Cl₂ — nierozpuszczalne | basic:rozpusc
-Wyjątki siarczanów(VI) | BaSO₄, PbSO₄, CaSO₄, SrSO₄ — N/T | basic:rozpusc
 Węglany i fosforany | zwykle nierozpuszczalne; wyjątki: sole I grupy i amonu | basic:rozpusc
 Wodorotlenki rozpuszczalne | metale I grupy oraz (poza Be i Mg) II grupy | basic:rozpusc
 Trzy powody reakcji | osad ↓, gaz ↑, słaby elektrolit (woda) — inaczej reakcja nie zachodzi | understand:kiedy
-Osady białe | AgCl (serowaty), BaSO₄ (w kwasach trwały), CaCO₃ (rozp. w kwasach), PbCl₂, Ag₂CO₃ | basic:osady
-Barwa Cu(OH)₂ | niebieska | basic:osady
-Barwa Fe(OH)₂ | brudnozielona; ciemnieje na powietrzu (utlenienie do Fe(III)) | basic:osady
-Barwa Fe(OH)₃ | brunatna/rdzawa | basic:osady
-PbI₂ | żółty osad — „złoty deszcz”; Pb²⁺ + 2I⁻ → PbI₂↓ | extra:osady
-AgBr i AgI | żółtawobiały i żółty; światłoczułe (fotografia) | extra:osady
-Wykrywanie Cl⁻ | AgNO₃ → biały osad; najpierw zakwasić, by wykluczyć węglany | basic:wykryw
-Wykrywanie SO₄²⁻ | sól baru w zakwaszonej próbce → biały BaSO₄ | basic:wykryw
-Wykrywanie CO₃²⁻ | kwas → CO₂↑; potwierdzenie: zmętnienie wody wapiennej | basic:wykryw
 Wykrywanie kationów NaOH | Cu²⁺ niebieski, Fe²⁺ brudnozielony, Fe³⁺ brunatny | basic:wykryw
-Sól + kwas | Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂↑; skrócone: CO₃²⁻ + 2H⁺ → H₂O + CO₂↑ | basic:otrzymy
-Sól + zasada | CuSO₄ + 2NaOH → Cu(OH)₂↓ + Na₂SO₄ | basic:otrzymy
-Sól z soli | AgNO₃ + NaCl → AgCl↓ + NaNO₃ — gdy produkt opuszcza roztwór | basic:otrzymy
 Kwas z soli (rozszerzenie) | NaCl + H₂SO₄ (stęż.) → NaHSO₄ + HCl↑ — lotny kwas wyparty z soli | olimpijski:otrzymy
 Dwa skrócone z Ba(OH)₂ + H₂SO₄ | Ba²⁺ + SO₄²⁻ → BaSO₄↓ oraz 2H⁺ + 2OH⁻ → 2H₂O | olimpijski:zapis
-Rozpuszczalność a energia | pojedynek energii sieci krystalicznej z hydratacją — stąd upór BaSO₄ | olimpijski:rozpusc
 Interferencje analityczne | Ag₂CO₃ myli się z AgCl; obrona: zakwaszenie + świadki + druga próba | olimpijski:wykryw
 :::
 
 ## 18 | Słownik {#slownik} [[basic:E8]]
 
 ::: slownik
-Równanie cząsteczkowe :: zapis reakcji wzorami sumarycznych związków, zbilansowany, ze strzałkami ↓ i ↑.
-Równanie jonowe pełne :: zapis, w którym mocne elektrolity w roztworze przedstawiono jako jony, a osady, gazy, wodę i słabe elektrolity — cząsteczkowo.
-Równanie jonowe skrócone :: zapis samej istoty reakcji — po skreśleniu jonów obserwatorowych z równania pełnego.
-Jony obserwatorowe :: jony obecne niezmienione po obu stronach równania jonowego; nie uczestniczą w reakcji (mówi się też: jony-widzowie).
-Dysocjacja elektrolityczna :: rozpad elektrolitu na jony w roztworze wodnym; opis stanu roztworu, nie reakcja chemiczna.
-Elektrolit :: substancja dysocjująca w roztworze na jony i przewodząca prąd; dzieli się na mocne (→) i słabe (⇌).
-Jon hydroniowy :: H₃O⁺ — proton związany z cząsteczką wody; zapis H⁺ jest jego konwencjonalnym skrótem.
-Osad :: nierozpuszczalna (lub trudno rozpuszczalna) substancja wydzielająca się z roztworu; oznaczana ↓.
-Tabela rozpuszczalności :: zestaw reguł i wyjątków określających rozpuszczalność soli i wodorotlenków w wodzie.
-Strącanie :: reakcja, w której z roztworu wydziela się osad (np. Ag⁺ + Cl⁻ → AgCl↓).
-Zobojętnienie :: reakcja kwasu z zasadą prowadząca do soli i wody; sedno jonowe: H⁺ + OH⁻ → H₂O.
-Podwójna wymiana :: typ reakcji, w której substraty wymieniają się składnikami; zachodzi w roztworze, gdy powstaje osad, gaz lub słaby elektrolit.
+Równanie cząsteczkowe :: zapis reakcji wzorami substancji, zbilansowany i zawierający oznaczenia osadów oraz gazów.
+Równanie jonowe pełne :: zapis, w którym mocne elektrolity obecne w roztworze przedstawiono jako jony, a osady, gazy, wodę i słabe elektrolity pozostawiono jako wzory substancji.
+Równanie jonowe skrócone :: zapis przemiany po usunięciu jonów obserwatorowych.
+Jony obserwatorowe :: jony występujące niezmienione po obu stronach równania jonowego pełnego.
+Dysocjacja elektrolityczna :: powstawanie jonów podczas rozpuszczania elektrolitu w wodzie.
+Elektrolit :: substancja, która w roztworze tworzy jony i przewodzi prąd elektryczny.
+Jon hydroniowy :: H₃O⁺ — jon powstały przez związanie protonu z cząsteczką wody.
+Osad :: substancja stała wydzielająca się z roztworu, oznaczana ↓.
+Tabela rozpuszczalności :: zestaw informacji o rozpuszczalności związków w określonych warunkach.
+Strącanie :: reakcja prowadząca do wydzielenia osadu z roztworu.
+Zobojętnienie :: reakcja kwasu z zasadą prowadząca do soli i wody.
+Podwójna wymiana :: typ reakcji, w którym substraty wymieniają się składnikami.
+Świadek :: próba porównawcza o znanym składzie, pozytywna lub negatywna.
+Interferencja :: zakłócenie wyniku analizy przez inny jon dający podobną obserwację.
+Woda wapienna :: roztwór Ca(OH)₂, który mętnieje pod wpływem CO₂.
+Azotan(V) :: sól kwasu azotowego(V) HNO₃.
+Wodorotlenek :: związek zawierający kation metalu i jony OH⁻.
+Bilans ładunków :: zgodność sumy ładunków po obu stronach równania jonowego.
+Kwas wypierany z soli :: opis reakcji, w której z soli powstaje lotny lub nietrwały kwas, na przykład CO₂ z węglanów.
+Filtracja :: oddzielanie osadu od roztworu za pomocą filtra.
 Świadek (próba kontrolna) :: próbka porównawcza o znanym składzie (pozytywna lub negatywna), służąca kontroli wiarygodności obserwacji.
-Interferencja :: zakłócenie wyniku analizy przez inny jon dający podobną obserwację (np. CO₃²⁻ przy wykrywaniu Cl⁻).
-Woda wapienna :: roztwór Ca(OH)₂; mętnieje pod wpływem CO₂ (CaCO₃↓) — klasyczna próba potwierdzająca dwutlenek węgla.
-Azotan(V) :: sól kwasu azotowego(V) HNO₃; wszystkie są rozpuszczalne.
-Wodorotlenek :: związek kationu metalu z jonami OH⁻; rozpuszczalne dla metali I grupy i części II grupy.
-Bilans ładunków :: zasada równania jonowego: suma ładunków po lewej stronie równa się sumie po prawej.
-Kwas wypierany z soli :: konwencja opisująca reakcję sól + kwas, w której lotny lub słaby kwas opuszcza roztwór (np. CO₂ z węglanów, HCl z NaCl i stężonego H₂SO₄).
-Filtracja :: oddzielanie osadu od roztworu za pomocą filtra; podstawowa czynność przy otrzymywaniu osadów.
 :::
 
 ## 19 | Mapa pojęć {#mapa} [[basic:E8]]
@@ -1197,149 +1482,126 @@ Filtracja :: oddzielanie osadu od roztworu za pomocą filtra; podstawowa czynno�
 Równania jonowe i strącanie
   Roztwór i jony
     Dysocjacja elektrolityczna
-      Elektrolity mocne (→)
-      Elektrolity słabe (⇌)
-      Woda jako słaby elektrolit
+      Elektrolity mocne
+      Elektrolity słabe
+      Woda jako bardzo słabo jonizująca substancja
     Konwencja H⁺ i jon H₃O⁺
   Trzy poziomy zapisu
     Równanie cząsteczkowe
     Równanie jonowe pełne
-      Rozpisujemy mocne elektrolity
-      Niedotykalne: osad, gaz, woda, słaby
+      Rozpisywane mocne elektrolity
+      Osad, gaz, woda i słaby elektrolit
     Równanie jonowe skrócone
       Jony obserwatorowe
       Bilans atomów i ładunków
   Kiedy reakcja zachodzi
     Powstaje osad
     Wydziela się gaz
-    Powstaje słaby elektrolit (woda)
-    Brak trzech powodów — brak reakcji
+    Powstaje słaby elektrolit
+    Brak przesłanek — brak reakcji netto
   Tabela rozpuszczalności
-    Zawsze rozpuszczalne
-      Azotany(V)
-      Sole Na, K, NH₄
+    Typowe azotany(V)
+    Typowe sole Na, K, NH₄
     Wyjątki chlorków
-      AgCl, PbCl₂, Hg₂Cl₂
     Wyjątki siarczanów(VI)
-      BaSO₄, PbSO₄, CaSO₄, SrSO₄
-    Węglany, fosforany, siarczki
-      Wyjątki: I grupa i amon
+    Węglany, fosforany(V), siarczki
     Wodorotlenki
-      Rozpuszczalne: I grupa, II grupa poza Be i Mg
   Osady i barwy
-    Białe
-      AgCl
-      BaSO₄
-      CaCO₃
-      PbCl₂
-    Kolorowe
-      Cu(OH)₂ niebieski
-      Fe(OH)₂ brudnozielony
-      Fe(OH)₃ brunatny
-      PbI₂ i AgI żółte
-      AgBr żółtawobiały
+    Białe osady
+    Niebieski Cu(OH)₂
+    Brudnozielony Fe(OH)₂
+    Brunatny Fe(OH)₃
+    Żółte PbI₂ i AgI
   Otrzymywanie soli
     Sól + kwas
     Sól + zasada
     Sól + sól
-    Metal + sól (wypieranie)
+    Metal + sól
     Kwas + zasada
   Wykrywanie jonów
-    Cl⁻ — AgNO₃
-    SO₄²⁻ — sól baru po zakwaszeniu
-    CO₃²⁻ — kwas + woda wapienna
-    Cu²⁺, Fe²⁺, Fe³⁺ — NaOH i barwy
-    Interferencje i próby kontrolne
+    Cl⁻
+    SO₄²⁻
+    CO₃²⁻
+    Cu²⁺, Fe²⁺, Fe³⁺
+    Zakłócenia i próby kontrolne
 :::
 
 ## 20 | Ściąga {#sciaga} [[basic:E8]]
 
-Najkrótsza wersja całej lekcji — czytaj, gdy zostało pięć minut przed sprawdzianem:
-
-- **Trójkrok:** cząsteczkowe (zbilansowane, ↓ ↑) → jonowe pełne (rozpisz tylko mocne elektrolity) → skrócone (skreśl widzów). „Niedotykalni”: osad, gaz, woda, słaby.
-- **Skrócone-muszisz:** H⁺ + OH⁻ → H₂O; Ag⁺ + Cl⁻ → AgCl↓; Ba²⁺ + SO₄²⁻ → BaSO₄↓; Cu²⁺ + 2OH⁻ → Cu(OH)₂↓; CO₃²⁻ + 2H⁺ → H₂O + CO₂↑; Fe + Cu²⁺ → Fe²⁺ + Cu (X04).
-- **Rozpuszczalność:** azotany i sole Na/K/NH₄ — zawsze R; chlorki — R poza AgCl, PbCl₂, Hg₂Cl₂; siarczany(VI) — R poza BaSO₄, PbSO₄, CaSO₄, SrSO₄; węglany/fosforany/siarczki — N poza I grupą i amonem; wodorotlenki — R: I grupa i II grupa poza Be, Mg.
-- **Trzy powody reakcji:** osad, gaz, słaby elektrolit. Brak wszystkich = brak reakcji (NaNO₃ + KCl → brak).
-- **Barwy:** AgCl biały serowaty (rozp. w NH₃(aq)), BaSO₄ biały (w kwasach trwały), CaCO₃ biały (rozp. w kwasach z CO₂), Cu(OH)₂ niebieski, Fe(OH)₂ brudnozielony (ciemnieje!), Fe(OH)₃ brunatny, PbI₂ żółty, AgBr żółtawobiały, AgI żółty.
-- **Otrzymywanie soli:** sól+kwas (CO₃²⁻ + 2H⁺ → H₂O + CO₂↑), sól+zasada, sól+sól (gdy osad/gaz/woda), metal+sól (X04), kwas+zasada. Kwas z soli: NaCl + H₂SO₄ (stęż.) → HCl↑ (rozszerzenie).
-- **Wykrywanie:** Cl⁻ — AgNO₃ (biały; najpierw zakwasić!), SO₄²⁻ — Ba²⁺ po zakwaszeniu (biały), CO₃²⁻ — kwas → CO₂ → woda wapienna mętnieje, Cu²⁺/Fe²⁺/Fe³⁺ — NaOH (niebieski/zielony/brunatny). Zawsze: świadki + wniosek z warunkami.
-- **Bilans:** atomy ORAZ ładunki; ↓ przy osadach, ↑ przy gazach; widzowie nie wchodzą do zapisu skróconego.
+- **Trójkrok:** cząsteczkowe → jonowe pełne → jonowe skrócone. Nie rozpisuj osadu, gazu, wody i słabego elektrolitu.
+- **Równania podstawowe:** H⁺ + OH⁻ → H₂O; Ag⁺ + Cl⁻ → AgCl↓; Ba²⁺ + SO₄²⁻ → BaSO₄↓; Cu²⁺ + 2OH⁻ → Cu(OH)₂↓; CO₃²⁻ + 2H⁺ → H₂O + CO₂↑; Fe + Cu²⁺ → Fe²⁺ + Cu.
+- **Rozpuszczalność:** typowe azotany(V) i typowe sole Na⁺, K⁺, NH₄⁺ są rozpuszczalne. Wyjątki chlorków: AgCl, PbCl₂, Hg₂Cl₂. Wyjątki siarczanów(VI): BaSO₄, PbSO₄, CaSO₄, SrSO₄.
+- **Reakcja netto:** osad, gaz albo słaby elektrolit. Brak przesłanek oznacza brak reakcji netto.
+- **Barwy:** AgCl biały, BaSO₄ biały, CaCO₃ biały, Cu(OH)₂ niebieski, Fe(OH)₂ brudnozielony, Fe(OH)₃ brunatny, PbI₂ żółty.
+- **Otrzymywanie soli:** sól + kwas, sól + zasada, sól + sól, metal + sól, kwas + zasada.
+- **Wykrywanie:** Cl⁻ — AgNO₃ po zakwaszeniu HNO₃; SO₄²⁻ — sól baru po zakwaszeniu; CO₃²⁻ — kwas i woda wapienna; Cu²⁺, Fe²⁺, Fe³⁺ — NaOH.
+- **Bilans:** atomy oraz ładunki. ↓ przy osadach, ↑ przy gazach. Jony obserwatorowe nie występują w zapisie skróconym.
 
 ::: checklista
-- [ ] umiem zapisać reakcję na trzech poziomach bez pomocy (cząsteczkowe → pełne → skrócone)
-- [ ] umiem sklasyfikować każdą substancję: rozpisać na jony czy zostawić
-- [ ] umiem wskazać i usunąć jony obserwatorowe, sprawdziwszy obie strony równania
-- [ ] umiem sprawdzić bilans atomów i bilans ładunków w równaniu skróconym
-- [ ] umiem odczytać rozpuszczalność z reguł (nie z wkuwania) i wskazać wyjątki chlorków i siarczanów(VI)
-- [ ] umiem przewidzieć osad i podać jego barwę z katalogu 10 osadów
-- [ ] umiem uzasadnić brak reakcji rozpuszczalnością potencjalnych produktów
-- [ ] umiem zaprojektować otrzymanie soli wszystkimi pięcioma drogami
-- [ ] umiem zaprojektować wykrywanie Cl⁻, SO₄²⁻, CO₃²⁻ i kationów metali z kontrolą interferencji
-- [ ] umiem rozpisać układ Ba(OH)₂ + H₂SO₄ jako dwie równoległe reakcje jonowe
+- [ ] umiem zapisać reakcję na trzech poziomach
+- [ ] umiem sklasyfikować składnik jako rozpisywany lub nierozpisywany
+- [ ] umiem wskazać i usunąć jony obserwatorowe
+- [ ] umiem sprawdzić bilans atomów i ładunków
+- [ ] umiem korzystać z tabeli rozpuszczalności
+- [ ] umiem przewidzieć osad i podać jego barwę
+- [ ] umiem uzasadnić brak reakcji netto
+- [ ] umiem zaprojektować otrzymanie soli
+- [ ] umiem zaprojektować wykrywanie jonów z kontrolą zakłóceń
+- [ ] umiem rozpisać układ Ba(OH)₂ + H₂SO₄ jako strącanie i zobojętnienie
 :::
 
 ## 21 | Co dalej? {#dalej} [[basic:E8]] [[extra:AMBITNE]]
 
-Po opanowaniu tej lekcji naturalne kierunki:
+- **CHE-X04 — Szereg aktywności metali:** rozwinie reakcję metal + sól, warunki wypierania i zapis redoks.
+- **CHE-R07 — Obliczenia z równań:** pomoże obliczyć ilość osadu oraz ustalić substrat w nadmiarze.
+- **CHE-051 i CHE-054 — Reakcje oraz kwasy:** rozwiną zobojętnianie i reakcje kwasów z solami.
+- **Lekcje o wodzie i roztworach:** pogłębią dysocjację, przewodnictwo i właściwości elektrolitów.
+- **Dla konkursowców:** wróć do zadań 15 i 16 po przerwie. Zakłócenia analityczne oraz projektowanie syntezy najlepiej utrwalają się przy ponownym rozwiązywaniu.
 
-- **CHE-X04 — Szereg aktywności metali:** droga „metal + sól” z [§7](#otrzymywanie) to wypieranie — tam poznasz jego pełne reguły, granice (pasywacja, litowce) i zapis redoks; razem z J03 dostajesz komplet reakcji jonowych strącania i wypierania.
-- **CHE-R07 — Obliczenia z równań, substraty w stosunku niestechiometrycznym:** strącanie to też obliczenia — ile osadu opadnie, jaki odczynnik jest w nadmiarze; tam dopracujesz algorytm „co się skończyło”.
-- **CHE-051 / CHE-054 — Reakcje i kwasy:** równania jonowe zobojętnienia i „kwas z soli” wrócą w pełnym kontekście chemii kwasów, zasad i soli.
-- **Lekcje o wodzie i roztworach:** dysocjacja, elektrolity i przewodnictwo roztworów — tam znajdziesz fizyczną stronę tego, co tutaj zapisujesz chemicznie.
-- **Dla konkursowców:** przepracuj drugi raz [§10](#zadania-konkurs) po tygodniowej przerwie — zadanie o interferencjach (15) i projektowanie syntezy (16) najdłużej trzymają się przy powtórce po odstępie; w liceum czeka cię iloczyn rozpuszczalności (Ksp), który wyjaśni tabelę rozpuszczalności ilościowo — to, co tu znasz regułami, dostanie wtedy liczby.
-
-A jeśli chcesz zobaczyć tę lekcję na żywo — znakomitym ciągiem domowym jest obserwacja własnej czajnika (kamień = CaCO₃) i eksperyment z octem: ta sama chemia, którą ćwiczyłeś w probówkach, działa w kuchni za darmo.
-
-### AUDYT — Claude, 2026-10-12 {#audyt-ulepsz}
+### AUDYT — Perplexity, 2026-10-13 {#audyt-ulepsz}
 
 **Poprawione:**
-- Klucz mini-testu materiału roboczego (punkt 5): „2H⁺ + 2OH⁻ → 2H₂O” — utrzymano poprawkę W20 (współczynniki) i przedstawiono układ Ba(OH)₂ + H₂SO₄ jako dwie równoległe reakcje jonowe (ćwiczenie 5, test pyt. 10, fiszka).
-- Klucz mini-testu materiału roboczego (punkt 4): odpowiedź o wykrywaniu SO₄²⁻ rozszerzona o wymóg odczynnika z Ba²⁺, zakwaszenia próby i interpretacji z interferencjami — zgodnie z poprawką W20 („sam zapis Ba²⁺ nie jest wystarczającą instrukcją”).
-- Uzupełnienie z notatką scalającą: „Osad PbI₂ jest żółty — dopisać tę obserwację” → barwa żółta wpisana w treść zadania 11, tabelę osadów i fiszkę.
-- Zapis skrócony 2KOH + H₂SO₄: przedstawiono obie formy (2OH⁻ + 2H⁺ → 2H₂O oraz uproszczoną OH⁻ + H⁺ → H₂O) z zachowaniem wersji materiału.
-- W zadaniu 14b dodano jawne sprawdzenie bilansu ładunków (CO₃²⁻ + 2H⁺), bo materiał roboczy nie rozpisywał tego kroku.
-- Frontmatter: „stan: W1” → „stan: ULEPSZONA — Claude, 2026-10-12; do sprawdzenia”; uzupełniono opis, kicker, lead, uwagi o zakresie.
-- Notatki robocze materiału („Do uzupełnienia danymi”, „Status: MAX”) przeniesione: część do sekcji audytu, merytoryczne żądania danych (wersja tabeli szkoły, zadania rejonowe) odnotowane w „Niepewne”.
+- §5: „trzy powody, dla których reakcja zachodzi” → „trzy typowe przesłanki reakcji wymiany” — usunięto sugestię pełnej definicji wszystkich reakcji w roztworach.
+- §5: „brak reakcji” → „brak reakcji netto” — doprecyzowano terminologię.
+- §6: „Fe(OH)₂ ciemnieje na powietrzu” → dodano wyjaśnienie utleniania Fe²⁺ do Fe³⁺.
+- §7: „kwas z soli” → wyjaśniono jako opis kierunku syntezy, nie nowy typ reakcji.
+- §8: zakwaszanie próbki → doprecyzowano dobór kwasu: HNO₃ dla Cl⁻, HCl lub HNO₃ dla SO₄²⁻, bez używania kwasu wprowadzającego wykrywany jon.
+- §9: doświadczenia → dodano wyraźną informację, że nie są instrukcją do samodzielnego wykonania w domu.
+- §10, zadanie 14b: niejasny opis bilansu ładunków → poprawny zapis: −2 + 2 = 0.
+- §11: „woda jest elektrolitem najsłabszym w scenie” → „woda jonizuje bardzo słabo” — usunięto potoczne, nieprecyzyjne określenie.
+- §16: pytanie o „sole rozpuszczalne bez wyjątków” → „rodziny związków rozpuszczalne w szkolnej klasyfikacji” — uniknięto twierdzenia o wszystkich możliwych związkach.
+- §17: „azotany(V) zawsze rozpuszczalne” → „typowe azotany(V) są rozpuszczalne” — ograniczono zakres reguły.
+- Zachowano wszystkie zadania, klucze, fiszki, hasła słownika, ciekawostki i wiersze kliniki z materiału.
 
 **Dodane:**
-- §0.1–§0.2: kryteria gotowości (z „Cel i kryterium” materiału), diagnoza 5 pytań z kluczem.
-- §1: pełny wykład „od zera” (obraz przewodni: teatr chemiczny — aktorzy i jony-widzowie).
-- §2: algorytm 3-krokowy połączony z 7-krotkową procedurą z audytu Perplexity; trzy przykłady (NaOH+HCl, AgNO₃+NaCl, BaCl₂+Na₂SO₄ — ten ostatni z audytu Perplexity); zadania 1–2 (materiał roboczy zadanie 1 rozbite na dwa).
-- §3: dysocjacja a reakcja, elektrolity mocne/słabe z ⇌, konwencja H⁺/H₃O⁺, nie-myl, zadanie 3 (wszystko z uzupełnień Perplexity).
-- §4: tabela rozpuszczalności materiału roboczego w całości + metoda pracy regułami; zadanie 4.
-- §5: trzy powody reakcji, NaNO₃ + KCl, ostrzeżenie o skracaniu tylko rzeczywistych obserwatorowych (audyt W1); zadanie 5 (materiał roboczy zadanie 2 — klucze zachowane).
-- §6: tabela 10 osadów w pełnym brzmieniu materiału (z uwagami NH₃(aq), Fe(OH)₂ na powietrzu); zadanie 6.
-- §7: pięć dróg materiału roboczego z równaniami + „kwas z soli” NaCl/H₂SO₄ jako poziom rozszerzony; karta understand o projektowaniu syntezy; zadanie 7 (materiał roboczy zadanie 3 — klucz zachowany).
-- §8: tabela wykrywania jonów w pełnym brzmieniu + dopowiedzenia z audytów (woda wapienna, zakwaszenie, kontrola, interpretacja warunkowa); zadanie 8.
-- §9: trzy doświadczenia z pełnymi próbami kontrolnymi i BHP (wykrywanie Cl⁻, SO₄²⁻ z zakwaszeniem, CO₃²⁻ z potwierdzeniem wody wapiennej — z uzupełnień Perplexity).
-- §10: osiem zadań konkursowych (9–16) — wszystkie zadania z materiału roboczego i uzupełnień Perplexity przeniesione lub scalone (AgNO₃+NaCl+skracanie+bilans; HCl+NaOH i H₂SO₄+KOH; Pb(NO₃)₂+KI z żółtym osadem; NaNO₃+KCl) + nowe: znajdź błędy, sól+kwas, pułapka interferencji AgCl/Ag₂CO₃, projektowanie dwóch dróg do NaCl i BaCO₃→BaSO₄.
-- §11: mini-wykład „Dla olimpijczyka” (H₃O⁺, równowaga słabych elektrolitów, energia sieci a hydratacja, redoks jonowy, system interferencji).
-- §12–§15: klinika (11 wierszy — 4 z materiału + 6 z uzupełnień + barwa-identyfikacja z audytu), mity (7), ćwiczenia 1–8 (mini-test materiału zachowany jako ćwiczenie 8 z poprawionym kluczem), 5 ciekawostek, 9 mnemotechnik.
-- §16–§21: test 14 pytań, 37 fiszek (w tym olimpijskie), 20 haseł słownika, mapa pojęć, ściąga z checklistą, „Co dalej” z powiązaniami materiału (X04, R07, 051/054).
+- §5: zadanie 18 o rozpoznawaniu reakcji netto i braku reakcji.
+- §5–§8: karty „W skrócie”, pary „nie-myl” i ostrzeżenia o granicach reguł.
+- §8: lista elementów dobrze zaprojektowanej analizy jonów.
+- §9: zastrzeżenie dotyczące bezpieczeństwa i charakteru doświadczeń.
+- §10: pełne klucze z punktacją przy każdym podpunkcie.
+- §11: rozszerzenie o H₃O⁺, równowagę słabych elektrolitów, rozpuszczalność i reakcje redoks.
+- §13–§21: ćwiczenia, ciekawostki, mnemotechniki, test, fiszki, słownik, mapa pojęć, ściąga, checklistę i wskazania dalszej nauki.
 
 **Niepewne / do weryfikacji:**
-- Wersja tabeli rozpuszczalności w podręczniku ucznia i na konkursie (materiał prosił o „DANE: wersja tabeli używana w szkole/na konkursie”) — w szczególności status CaSO₄ (N vs T) i Mg(OH)₂; w lekcji utrzymano konwencję materiału roboczego z oznaczeniem T.
-- Reakcja NaCl + H₂SO₄ (stęż.) → NaHSO₄ + HCl↑ — obecność w zakresie etapu rejonowego LKO bieżącej edycji do weryfikacji w informatorem (oznaczono jako poziom rozszerzony).
-- Barwa Ag₂CO₃ (biały/białawożółty) i dokładny opis rozpuszczalności AgBr (żółtawobiały) różnią się drobnymi odcieniami między źródłami — podano konwencję szkolną z zapasem słownym.
-- Materiał przewidywał sekcję „Archiwalne zadania LKO” po pozyskaniu arkuszy rejonowych (najlepiej 2024/25, 2025/26) z kluczem i typowymi zapisami wymaganymi w kluczu — do dodania w przyszłej rewizji (brak danych w paczce).
-- Wartość stężenia jonów wody (10⁻⁷ mol/l) oznaczona „orientacyjnie, do weryfikacji z tablicami”.
+- Zakres konkretnego konkursu chemicznego nie został określony w paczce, dlatego wymagania konkursowe opisano ogólnie.
+- Oznaczenia N/T należy dostosować do tabeli dołączonej do konkretnego zadania.
+- Barwa Ag₂CO₃ bywa opisywana jako biała lub bladożółta; w lekcji przyjęto opis „zwykle bladożółta”.
+- Szczegółowy zakres reakcji NaCl ze stężonym H₂SO₄ wymaga sprawdzenia w regulaminie i materiałach konkretnego konkursu.
 
 **Proponuję usunąć:**
-- brak.
+- Brak.
 
 **Źródła:**
-- podstawa programowa i wymagania egzaminacyjne CKE (egzamin ósmoklasisty, chemia);
-- polskie podręczniki szkolne do chemii klasy 7–8 (m.in. Nowa Era, WSiP) — rozdziały o reakcjach jonowych, rozpuszczalności i wykrywaniu jonów;
-- informatory i arkusze konkursów chemicznych (etap rejonowy) — typowe wymagania zapisu jonowego;
-- podręczniki akademickie chemii nieorganicznej i analitycznej (ogólne mechanizmy: dysocjacja, rozpuszczalność, interferencje — zarys).
+- Dostarczona paczka: lekcja J03. [ppl-ai-file-upload.s3.amazonaws](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/2173275917/2c5baf72-4ee9-4409-bad5-5d96aa656cac/GOTOWE_CHE_NASTEPNE_10.md?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Checksum-Mode=ENABLED&X-Amz-Credential=ASIA2F3EMEYEXQY7VM2R%2F20261013%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261013T170518Z&X-Amz-Expires=1860&X-Amz-Security-Token=IQoJb3JpZ2luX2VjENn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDldDMswsqA30EoTdm9l%2FLBFD26eX2Vy1YW1dAlUEnIoQIhAMw9P36ST%2BtWpZXzynlL%2B8Slln3F%2BZpq6dQvXjQ8R7WlKokFCKH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjk5NzUzMzA5NzA1IgzrTZmY%2BKCuID0V4M0q3QTUZf9YDMFBY81eZHhDkMuIC13Uv208yu2YodxVvjoA44Xj9TKglraUHE11d%2BBIGA8uiPHtuI57OAKS0u8d3YqQhUOqZekXAdzHsl2UELNcojpGBI1LLLh18AMJwzl2FCUGbgd%2B1FDyys6QFNp%2B1Jxm4qu2xVsqe6chK%2BUa0NPQIy93h5572o2M5kgvgYwBlf%2Foor36DQ61W0KF2ccw2Ij%2BQ1IvStHfz4qlVkA%2FvufxP3Z9ob74urkQGXz%2Bnc5bayWEyvT4%2BFxZEEgAEjrOQHKqRIwe%2Fruf84zRCr3N4HEm2KxJQy4fRLKwOORiZVKre6IbV096649L8AuYkUBdk8EvdrSojIZCF5cMqSU8G4BW6YZqKeUxoiCCgzZFrG%2FJCS0Hy8O%2FD3XOlXPsKZyLbz7OnZ4uJxSKZOCHWOD6JXYmLG%2Fswlp0aqGyzCQgEmsUVKq6fRKqmB4o45YJrlS6iZIak5c9oLSwwc3rMMlLJ1hF1F3J8eOWyyLPxn3Lw8nzj1SNA7v5OIJ82UK5cFq79GUIgdPgb9xv%2BdFVZW49Pe0TZjSYFWq7yY9crA%2BAymjl8gWCPxrwiS3m8NxEHiV2Mzh0IvRccXqCTN7UiS0uid5RRrc1FlVmHlBD%2Fm4DIWJ7MQvPs%2Fg3sYcelhJDTCt9l8KDU99YYiHUq16fRxUQFvX5%2BejCsmPD0tTJqYZRnFlU%2BgNh4ptS38gUFz89goks3tKGkUHPUFBr8DTpEF09gnNlJOuqBtLPEcCq4VBN9Ewl1zIljxiTNEXVFBJUs9Bp9jSbT1WxdQ9Y1yyZOOaSUDC%2FvLnWBjqXAWRXffp1XDTQwmq1lgzUA4b%2FrE8RWE15BdNZFW2%2B0YAtd7slD0J%2FUltZ0AJG6qUuxEqVpRqyi2yOeQOm723pEQfqqNvvilWcFVaQ47vyXWQGwKFhnH0D%2FUVDiXpyUjoj%2FXM6rzMxkJ5wEAHAlGLofAklWcdKj5F49UNaeoCgz2AX%2BzE3%2BF0QKnV5b8O8s9fQj1i1xGO79oQ%3D&X-Amz-SignedHeaders=host&x-id=GetObject&X-Amz-Signature=8a446a7308b998c10ecccb937ca956286209993e4707a598e8158931965ba125)
+- Zintegrowana Platforma Edukacyjna, „Reakcja strącania” — strącanie i przewidywanie przebiegu reakcji. [zpe.gov](https://zpe.gov.pl/watek/LPBDT5FKBK/11/a/reakcja-stracania/D2MX2FATX)
+- Zintegrowana Platforma Edukacyjna, „Wytrącanie osadów” — rozpuszczalność wodorotlenków i metoda strącania. 
+- Zintegrowana Platforma Edukacyjna, „Czym są reakcje strąceniowe?” — trudno rozpuszczalne związki, w tym siarczan(VI) wapnia. [zpe.gov](https://zpe.gov.pl/a/czym-sa-reakcje-straceniowe/DzATHfqUY)
 
 **Grafiki do zrobienia:**
 
 | Gdzie | Rodzaj | Co pokazuje | Wniosek | @opis |
 |---|---|---|---|---|
-| §1, po akapicie o trzech poziomach | schemat statyczny z podpisami do klikania | trzy karty nad tą samą reakcją AgNO₃ + NaCl: cząsteczkowa, pełna, skrócona; kliknięcie karty odsłania, które jony grają, a które patrzą | każdy kolejny poziom zapisu pokazuje mniej widowni i więcej akcji | Trzy ułożone karty z tym samym równaniem: pierwsza pokazuje całe związki, druga wszystkie jony w roztworze, trzecia tylko Ag⁺ i Cl⁻; podpis wskazuje obserwatorowych szarą czcionką. Wniosek: zapis skrócony to scena aktorska reakcji. |
-| §2, po procedurze 7 kroków | animacja „do przodu i od początku” | kolejne kroki algorytmu na przykładzie BaCl₂ + Na₂SO₄: bilans, klasyfikacja substancji, rozpis, skracanie, kontrola bilansów | algorytm prowadzi krok po kroku od równania cząsteczkowego do skróconego | Animacja przechodzi przez 7 kroków: równanie cząsteczkowe → oznaczenie osadu → rozpisanie jonów → skreślenie 2Na⁺ i 2Cl⁻ → sprawdzenie bilansu; odtwarzanie od początku powtarza sekwencję. Wniosek: procedura jest powtarzalna dla każdej reakcji strącania. |
-| §4, po tabeli reguł | model interaktywny z suwakiem lub przełącznikiem | macierz anion × kation; wybór pary podświetla verdict R/N/T z regułą i wyjątkiem | rozpuszczalność wyznacza się regułami od anionu do wyjątków | Interaktywna siatka: kolumny (Cl⁻, SO₄²⁻, CO₃²⁻, NO₃⁻, OH⁻), wiersze (Na⁺, Ag⁺, Ba²⁺, Ca²⁺, Cu²⁺); kliknięcie pola pokazuje R/N/T, obowiązującą regułę i wyjątek. Wniosek: dwie rodziny bez wyjątków i listy wyjątków rozstrzygają wszystkie pary. |
-| §6, po tabeli barw | schemat statyczny | zestaw probówek z osadami i ich barwami: biały, niebieski, brudnozielony, brunatny, żółty, żółtawobiały | barwa osadu to pierwsza wskazówka identyfikacyjna w analizie | Rząd probówek z opisanymi osadami (AgCl, Cu(OH)₂, Fe(OH)₂, Fe(OH)₃, PbI₂, AgI); przy Fe(OH)₂ strzałka czasu pokazująca ciemnienie na powietrzu. Wniosek: katalog barw różnicuje kationy i aniony w prostych próbach. |
-| §9, doświadczenie 3 | doświadczenie wirtualne (zlewka, przyrząd) | połączenie dwóch probówek: węglan + kwas → CO₂ do wody wapiennej → zmętnienie; świadki pozytywny i negatywny obok | ulot gazu potwierdza dopiero druga niezależna próba (woda wapienna) | Wirtualny zestaw: probówka reakcyjna z korkiem i rurką do probówki z wodą wapienną; przyciski prób: badana, marmur (pozytywny), woda destylowana (negatywna); animacja bąbelków i mętnienia. Wniosek: CO₃²⁻ rozpoznajemy po CO₂ potwierdzonym CaCO₃↓. |
-| §10, przy zadaniu 15 | animacja „tam i z powrotem” | dwie ścieżki rozstrzygania białego osadu: AgCl trwały w HNO₃ kontra Ag₂CO₃ rozpuszczający się z ulotem CO₂ | próba różnicująca kwasem oddziela chlorki od węglanów | Animacja dwutorowa: probówka z białym osadem → dodanie HNO₃ → lewa ścieżka (osad zostaje: chlorki), prawa ścieżka (osad znika z bąbelkami CO₂: węglany); powrót do stanu wyjścia umożliwia porównanie. Wniosek: kolor osadu to wskazówka, a próba kwasem — dowód. |
+| §5, po liście przesłanek reakcji | schemat statyczny | trzy drogi: powstanie osadu, wydzielenie gazu, powstanie wody; obok mieszanka bez reakcji netto | Reakcję netto zapisuje się, gdy powstaje produkt zmieniający układ | Trzy probówki pokazują osad, bąbelki gazu i powstanie wody. Czwarta przedstawia mieszankę NaNO₃ i KCl bez zmiany. Podpis wskazuje, że brak nowych produktów oznacza brak reakcji netto. |
+| §6, po tabeli barw | schemat statyczny | probówki z osadami AgCl, Cu(OH)₂, Fe(OH)₂, Fe(OH)₃, PbI₂ i BaSO₄ | Barwa osadu jest wskazówką, a nie dowodem identyfikacji | Rząd probówek z podpisanymi osadami i ich barwami. Przy Fe(OH)₂ strzałka czasu pokazuje ciemnienie na powietrzu. Podpis przypomina, że biały osad może mieć różne źródła. |
+| §8, przy próbie na CO₃²⁻ | doświadczenie wirtualne | węglan + kwas → CO₂ → woda wapienna → CaCO₃↓ | Gaz potwierdza dopiero dodatkowa reakcja z wodą wapienną | Dwie połączone probówki: w pierwszej powstają bąbelki CO₂, w drugiej woda wapienna mętnieje. Obok znajdują się świadki pozytywny i negatywny. |
+| §10, przy zadaniu 15 | animacja „tam i z powrotem” | dwie możliwości: AgCl pozostaje w HNO₃, Ag₂CO₃ rozpuszcza się z ulotem CO₂ | Próba kwasem różnicuje chlorki i węglany | Probówka z białym osadem po dodaniu HNO₃ pokazuje dwie ścieżki: osad pozostaje albo znika z bąbelkami CO₂. Powrót do stanu początkowego umożliwia ponowne porównanie. |
