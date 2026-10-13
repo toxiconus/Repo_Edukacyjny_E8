@@ -118,7 +118,7 @@ Reakcję sodu z wodą przedstawiono komputerowo, a nie jako instrukcję doświad
 - **Mg** — z zimną wodą reaguje bardzo wolno; z gorącą wodą wyraźniej, a z parą wodną daje MgO i H₂: Mg + H₂O(g) → MgO + H₂.
 - **Be** — praktycznie nie reaguje z wodą: chroni go szczelna warstwa BeO, a także niska rozpuszczalność produktów. Patrz §9, karta „Dlaczego beryl jest wyjątkiem”.
 
-**Reakcje z tlenem.** Litowce reagują z tlenem, ale główny produkt zależy od metalu i warunków: lit daje głównie **Li₂O** (4Li + O₂ → 2Li₂O), sód w nadmiarze tlenu daje **Na₂O₂** (2Na + O₂ → Na₂O₂), a w powietrzu w temperaturze pokojowej głównie **Na₂O** (4Na + O₂ → 2Na₂O), a potas i cięższe litowce mogą tworzyć ponadtlenki, np. **KO₂**. Berylowce spalają się do tlenków, np. 2Mg + O₂ → 2MgO; magnez — zob. pułapkę w §3.
+**Reakcje z tlenem.** Litowce reagują z tlenem, ale główny produkt zależy od metalu i warunków: lit daje głównie **Li₂O** (4Li + O₂ → 2Li₂O), sód w nadmiarze tlenu daje **Na₂O₂** (2Na + O₂ → Na₂O₂); przy ograniczonym dostępie tlenu powstaje **Na₂O** (4Na + O₂ → 2Na₂O), a Na₂O w nadmiarze tlenu dalej tworzy nadtlenek (2Na₂O + O₂ → 2Na₂O₂). Potas i cięższe litowce mogą tworzyć ponadtlenki, np. **KO₂**. Bar i stront tworzą też nadtlenki: bar przy ogrzewaniu daje głównie **BaO₂** (Ba + O₂ → BaO₂), często z domieszką BaO. Be, Mg i Ca na ogół nie tworzą nadtlenków; spalają się do tlenków, np. 2Mg + O₂ → 2MgO; magnez — zob. pułapkę w §3.
 
 ::: karta warning | Status: opis reakcji bez wykonania — potas z wodą
 Potas reaguje z wodą bardzo gwałtownie: może się stopić, zapalić, a rozprysk żrącego KOH jest groźny. Pokazujemy go w animacji lub na filmie; nie jest to doświadczenie do wykonania.

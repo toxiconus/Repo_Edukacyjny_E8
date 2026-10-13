@@ -149,3 +149,23 @@ Odłożone (decyzja: w kolejnym przebiegu):
 - D: pozostałe „przydatne rozszerzenia” (Li₃N, Mg w CO₂, przechowywanie Li, BeO + NaOH, zastosowania) — do wyboru przez autora, nie wdrażam bez decyzji.
 
 Zasada na przyszłość (zapisana przez autora): każda zmiana w lekcji ma zapis starej treści w tym podpliku, z pełnym tekstem.
+
+## 6. Weryfikacja tlenków Na i Ba (2026-10-13)
+
+Pytanie użytkownika: czy sód w powietrzu w temperaturze pokojowej daje Na₂O, a w nadmiarze tlenu Na₂O₂; i to samo dla baru.
+
+Stara treść (usunięta z lekcji, zachowana tu):
+- „sód w nadmiarze tlenu daje **Na₂O₂** (2Na + O₂ → Na₂O₂), a w powietrzu w temperaturze pokojowej głównie **Na₂O** (4Na + O₂ → 2Na₂O)”
+- PRODUKT (palniki.js): `Na: '2Na + O₂ → Na₂O₂ (w nadmiarze tlenu)'`, `Sr: '2Sr + O₂ → 2SrO'`
+
+Wynik weryfikacji:
+- Wikipedia „Sodium peroxide”: sód spalany w nadmiarze tlenu daje Na₂O₂. Proces przemysłowy: 4Na + O₂ → 2Na₂O (kontrolowany dostęp tlenu), potem 2Na₂O + O₂ → 2Na₂O₂. Strona nie podaje warunku „temperatura pokojowa, powietrze”. Zdanie o temperaturze pokojowej NIE potwierdzone — usunięte.
+- LibreTexts „Reactions of Group 2 Elements with Oxygen”: Ba przy ogrzewaniu w tlenie daje BaO₂, często z mieszaniną BaO. Sr i Ba tworzą nadtlenki, skłonność rośnie w dół grupy. Be, Mg, Ca nie tworzą nadtlenków w tych warunkach.
+
+Zastosowane w lekcji (§3, „Reakcje z tlenem”):
+- Na₂O: przy ograniczonym dostępie tlenu (4Na + O₂ → 2Na₂O); Na₂O w nadmiarze tlenu → Na₂O₂ (2Na₂O + O₂ → 2Na₂O₂).
+- Ba: przy ogrzewaniu BaO₂ (Ba + O₂ → BaO₂), często z domieszką BaO. Ba NIE został dodany do sekwencji palników (decyzja: tylko tekst; Ba ma ostrzeżenie w karcie).
+- Be, Mg, Ca: bez nadtlenków.
+- PRODUKT: Na — obie reakcje; Sr — `2Sr + O₂ → 2SrO (z domieszką SrO₂)`.
+
+Źródła: https://en.wikipedia.org/wiki/Sodium_peroxide ; LibreTexts, Reactions of Group 2 Elements with Oxygen.
