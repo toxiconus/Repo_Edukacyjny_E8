@@ -53,3 +53,21 @@ Wniosek: T0 i T1 da się złożyć z gotowych lekcji (N, F, J), wymaga to głów
 3. Zestawy OLK8 (8 szt.) jako `olimpiada/chemia/CHE.OLK8.zestaw_NN.md`, każdy z kluczem.
 4. Tryb: playlisty i progi w `olimpiada/chemia/CHE.OLK8.tryb.md`.
 5. Lekcje wspólne: tylko dopisanie warstwy OL w tym samym pliku (zgodnie z PRZEKAZANIE §2), po akceptacji D1.
+
+## 5. Zestawienie olimpiad SP 2026/2027 (plik `OLIMPIADY_SP_2026_2027_zestawienie_ORYG.md`) — co zmienia w planie
+
+Weryfikacja wyszukiwaniem (2026-10-13). Plik to zestawienie AI, nie źródło oficjalne; każdy termin trzeba potwierdzić na stronie organizatora.
+
+**Olimpiada Chemiczna Juniorów (OChJ, edukator.pl)** — według zestawienia:
+- Etap I: zdalny test 5.11.2026; etap II: zdalny test 10.12.2026; etap III: 11–12.03.2027.
+- Zakres etapu I: podstawa programowa SP (substancje, budowa materii, reakcje, tlen/wodór, powietrze, woda i roztwory, wodorotlenki i kwasy, sole, reakcje amoniaku). **Organika nie wchodzi przed etapem II.**
+
+**Sprzeczność z planem sprintu:** sprint (`CHE_tryb_OLK8_sprint_ORYG.md`) opisuje etapy „szkolny → rejonowy → wojewódzki” za 1–2 tygodnie. Ta struktura pasuje do **wojewódzkiego konkursu przedmiotowego (kuratoryjnego, WKP)**, a nie do OChJ. Wojewódzkie konkursy mają własne regulaminy i zakresy (przykłady: Kielce — `przedmiotowy-regulamin-konkursowy-viii-wojewodzki-konkurs-z-chemii-2026-2027`; Warszawa — projekt programu chemii 2026/27). **Dla Lubelskiego (Kraśnik) nie znalazłem jeszcze regulaminu kuratorium Lublin.**
+
+**Do rozstrzygnięcia (D6):** który konkurs jest celem sprintu — WKP (kuratorium Lublin, termin od kuratorium) czy OChJ (5.11.2026 — za ok. 3 tygodnie)? Od tego zależą zakres T0/T1 i kalendarz. Plan sprintu trzeba przepisać po wyborze.
+
+**Terminy już minęły (sprawdzić, czy udział był):** OLiJP etap I 2.10.2026; OJAJ etap I test 12.10.2026; OMJ etap I część testowa 24.09 i zadaniowa 7.10.2026. Przy angielskim: test 12.10 minął wczoraj.
+
+**Do weryfikacji:** zestawienie twierdzi, że laureaci z wykazu MEN dostają 100% z egzaminu ósmoklasisty i pierwszeństwo w rekrutacji — trzeba potwierdzić w komunikatach MEN (`gov.pl/web/edukacja`) przed użyciem w materiałach dla ucznia.
+
+**Biologia:** zestawienie mówi, że Główna Olimpiada Biologiczna jest raczej dla LO; dla klasy 8 — konkursy wojewódzkie/kuratoryjne. Ta sama logika co D6.
