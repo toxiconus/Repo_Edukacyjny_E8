@@ -22,6 +22,18 @@ wymaga: brak (diagnoza bada F01–F03, F04–F06, F09, F11–F13, F16–F17, N01
 Gdzie tracę punkty, zanim zacznę uczyć się czegokolwiek nowego?
 :::
 
+## 0 | Wykład — jak czytać własny wynik {#wyklad}
+
+::: karta understand | Wykład — wynik to mapa, nie ocena
+Wynik w punktach mówi, ile uzyskałeś. Nie mówi, dlaczego straciłeś resztę. Dlatego w konkursie, tak jak w tej diagnozie, najważniejsze jest pytanie: **gdzie dokładnie straciłem punkty i czy wiedziałem, że to robię?**
+
+Każdy błąd ma inną naturę. Może to być brak wiedzy (nie wiem, czym jest izotop), błąd w rozumowaniu (wiem, czym jest izotop, ale liczę neutrony jako A + Z), błąd zapisu (poprawna myśl, brakujący nawias w wzorze) albo błąd czytania polecenia (zrobiłem coś innego, niż pytano). Każdy z tych typów wymaga innego lekarstwa. Powtarzanie całego materiału po błędzie zapisu to strata czasu, a dopisanie nawiasu nie pomoże, gdy brakuje wiedzy o jonach.
+
+Dlatego przy każdym zadaniu zaznacz, czy byłeś pewny. Pewna odpowiedź błędna jest sygnałem najważniejszym: oznacza, że masz złe przekonanie, które trzeba naprawić, zanim zacznie psuć kolejne zadania. Niepewna odpowiedź poprawna oznacza, że wiedza jest, ale nie jest jeszcze stabilna. Niepewna odpowiedź błędna to zwykła luka, którą uzupełnisz.
+
+Wynik sumuj dopiero po sprawdzeniu każdego zadania z kluczem, nie „na oko". I zapisz w karcie wyników nie tylko punkty, ale jedno zdanie o przyczynie każdej straty. To zdanie jest wartościowsze niż sama liczba, bo pokazuje, co konkretnie trenować.
+:::
+
 ## Lustro i most
 
 | | |
