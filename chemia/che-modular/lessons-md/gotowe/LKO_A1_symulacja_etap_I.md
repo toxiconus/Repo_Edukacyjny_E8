@@ -173,11 +173,11 @@ Dane (rozpuszczalność, g na 100 g wody):
 
 | T (°C) | 20 | 60 |
 |---|---|---|
-| KNO₃ | 32 | 106 |
+| KNO₃ | 32 | 110 |
 | NaCl | 36 | 37 |
 
 a) *(zamknięte)* Masa roztworu nasyconego KNO₃ przygotowanego z 100 g wody w 60 °C wynosi:
-a) 106 g  b) 100 g  c) 206 g  d) 138 g
+a) 110 g  b) 100 g  c) 210 g  d) 138 g
 
 b) *(otwarte rozszerzone)* Nasycony roztwór KNO₃ przygotowano w 60 °C, używając **200 g wody**. Roztwór schłodzono do 20 °C. Oblicz masę wykrystalizowanej saletry. **Pokaż pełny zapis obliczenia.**
 
@@ -229,8 +229,8 @@ Miano 150 g roztworu cukru o stężeniu 10%. Dodano do niego 50 g wody i dokład
 - c: **2Mg + O₂ → 2MgO** — 1 pkt (wzory i współczynniki); obserwacja: **jasny, olśniewający płomień i biały proszek** — 1 pkt (sam opis płomienia bez białego produktu nie wystarcza).
 
 **Zadanie 7:**
-- a: **c** (100 + 106 = 206) — 1 pkt.
-- b: **2 pkt**: odczyty i różnica (106 − 32 = 74 g na 100 g wody) — 1 pkt; skalowanie 74 × 200/100 = **148 g** — 1 pkt. Wynik bez zapisu proporcji: maks. 1 pkt (za odczyty).
+- a: **c** (100 + 110 = 210) — 1 pkt.
+- b: **2 pkt**: odczyty i różnica (110 − 32 = 78 g na 100 g wody) — 1 pkt; skalowanie 78 × 200/100 = **156 g** — 1 pkt. Wynik bez zapisu proporcji: maks. 1 pkt (za odczyty).
 - c: **odparowanie wody**; uzasadnienie: krzywa płaska — chłodzenie prawie nie zmienia rozpuszczalności, więc oziębianie nic nie wydzieli — 1 pkt (metoda + odwołanie do kształtu krzywej; sama metoda = 0).
 
 **Zadanie 8** (po 1 pkt):
@@ -311,9 +311,9 @@ Cykl przemian uczy zapisu równań, a doświadczenie z trzema cieczami uczy oddz
 
 **Poprawki względem odpowiedzi:**
 1. Data stanu „W1 — 2026-10-23" → „szkic — 2026-10-13". Odpowiedź deklarowała W1 dla całego P0 — nieprawdziwie; W1 nie był wykonany dla żadnego z pięciu plików. Usunięto sekcję „Status: komplet P0 zamknięty" z pliku lekcji (stan jest w surowej odpowiedzi).
-2. Zadanie 7a: w odpowiedzi nie było poprawnej opcji (masa roztworu 100 g wody + 110 g = 210 g, a rozpuszczalność po przeliczeniu to 106 g). Poprawiono: 106 g rozpuszczalności, 206 g roztworu (klucz: c).
-3. Zadanie 7b: 74 g na 100 g wody (106 − 32), dla 200 g wody = 148 g (odpowiedź: 156 g z wartości 110).
-4. Tabela A dla 60 °C: KNO₃ 106 g (wcześniej 110 g — wartość z tabeli podręcznikowej, patrz LKO-KRZYWE).
+2. Zadanie 7a: w odpowiedzi nie było poprawnej opcji. Poprawiono na wartość tablicową 110 g rozpuszczalności, 210 g roztworu (klucz: c).
+3. Zadanie 7b: 78 g na 100 g wody (110 − 32), dla 200 g wody = 156 g.
+4. Tabela A dla 60 °C: KNO₃ 110 g (wartość tablicowa; wcześniej 106 g z odczytu wykresu — patrz LKO-KRZYWE).
 5. I.8 (NH₄Cl 80 °C): 66 g (wcześniej 65), zgodnie z LKO-KRZYWE.
 6. Post-mortem, zadanie 8: „C→CO₂→H₂O→?" zastąpiono poprawnym przykładem cyklu węgla.
 7. Zadanie 6: klucz uporządkowany; punkty 1 + 1 + 2 = 4 (zgodne z maksimum), wcześniej opis punktów był niejasny.

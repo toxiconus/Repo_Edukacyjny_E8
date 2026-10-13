@@ -35,7 +35,7 @@ stan: "szkic — 2026-10-13, pod LKO etap I (23.10.2026)"
 |---|---|---|---|
 | 20 | 32 | 36 | 37 |
 | 40 | 62 | 36,5 | 41 |
-| 60 | 106 | 37 | 55 |
+| 60 | 110 | 37 | 55 |
 | 80 | 167 | 37 | 66 |
 
 **Tabela B** — wodorotlenek wapnia Ca(OH)₂ (g na 100 g wody):
@@ -105,7 +105,7 @@ Zapis pamięciowy: **nad = osad, na = granica, pod = jeszcze się zmieści**.
 | płaska | **odparowanie wody** (ogrzewanie/wyparka) | chłodzenie nic nie da (36 → 37!), tylko odparowanie rozpuszczalnika |
 
 **Przykład konkursowy (oczyszczanie z dwiema krzywymi):** sól KNO₃ zanieczyszczona niewielką ilością NaCl. Rozpuszczamy w minimalnej ilości **gorącej** wody (60 °C), chłodzimy do 20 °C:
-- KNO₃ (krzywa stroma): rozpuszczalność spada 106 → 32 → **wykrystalizowuje prawie cały nadmiar**,
+- KNO₃ (krzywa stroma): rozpuszczalność spada 110 → 32 → **wykrystalizowuje prawie cały nadmiar**,
 - NaCl (krzywa płaska): rozpuszczalność prawie bez zmian (37 → 36), a i tak był daleko od nasycenia → **zostaje w roztworze**.
 Otrzymujemy czysty KNO₃; zanieczyszczenie zostało „zostawione" w roztworze macierzystym. Ta jedna scena powtarza się na konkursach w dziesiątkach wariantów.
 
@@ -129,9 +129,9 @@ Na etapie I LKO ocenia się **zapis obliczenia** — sam wynik traci punkty. Ka�
 
 *Nasycony roztwór KNO₃ (250 g wody) schłodzono z 60 °C do 20 °C. Ile wykrystalizuje?*
 
-- odczyty: 60 °C → 106 g; 20 °C → 32 g
-- spadek rozpuszczalności: 106 − 32 = 74 g **na każde 100 g wody**
-- skalowanie: 74 × 250/100 = **185 g osadu**
+- odczyty: 60 °C → 110 g (wartość tablicowa; z wykresu dopuszczalne 108–112 g); 20 °C → 32 g
+- spadek rozpuszczalności: 110 − 32 = 78 g **na każde 100 g wody**
+- skalowanie: 78 × 250/100 = **195 g osadu**
 - zapis wzorowy: m(osadu) = (S₁ − S₂)/100 × m(wody)
 - obserwacja towarzysząca: piękne kryształy na dnie; roztwór nad osadem pozostaje nasycony w 20 °C.
 
@@ -149,15 +149,15 @@ Na etapie I LKO ocenia się **zapis obliczenia** — sam wynik traci punkty. Ka�
 
   Cp(nasyconego) = S/(100 + S) × 100%
 
-**Test „110%":** dla KNO₃ w 60 °C: 106/206 × 100% ≈ 51,5%. Gdyby ktoś policzył „110%", pokazuje to, że pomylił wodę z roztworem — stężenie % **nigdy** nie przekracza 100%, a nasycone roztwory chlorków lądują w okolicach 26%, saletry od ok. 24% (20 °C) do ok. 51,5% (60 °C).
+**Test „110%":** dla KNO₃ w 60 °C: 110/210 × 100% ≈ 52,4%. Gdyby ktoś policzył „110%", pokazuje to, że pomylił wodę z roztworem — stężenie % **nigdy** nie przekracza 100%, a nasycone roztwory chlorków lądują w okolicach 26%, saletry od ok. 24% (20 °C) do ok. 52,4% (60 °C).
 
 ### Szablon 4 — Minimum wody / oczyszczanie / odparowanie
 
 *Ile wody trzeba minimum, by rozpuścić 88 g KNO₃ w 60 °C?*
 
-- odczyt: 100 g wody rozpuszcza 106 g
-- proporcja: m(wody) = 100 × 88/106 ≈ **83 g**
-- (odwrócenie: 83 g wody „mieści" 106 × 83/100 ≈ 88 g — granica ✓)
+- odczyt: 100 g wody rozpuszcza 110 g
+- proporcja: m(wody) = 100 × 88/110 = **80 g**
+- (odwrócenie: 80 g wody „mieści" 110 × 80/100 = 88 g — granica ✓)
 
 **Wariant „odparowanie":** roztwór nasycony w danej T przy odparowywaniu **natychmiast** zaczyna krystalizować (każda utracona kropla wody „wyrzuca" swoją część ładunku rozpuszczonej substancji). Nienasycony — najpierw musi osiągnąć krzywą.
 
@@ -197,7 +197,7 @@ a) 32 g  b) 100 g  c) 132 g  d) 68 g
 a) KNO₃  b) NaCl  c) NH₄Cl  d) wszystkie jednakowo
 
 **A4.** Nasycony roztwór KNO₃ w 60 °C (100 g wody) schłodzono do 20 °C. Masa osadu:
-a) 106 g  b) 74 g  c) 32 g  d) 138 g
+a) 110 g  b) 78 g  c) 32 g  d) 138 g
 
 ### B. Prawda–fałsz
 
@@ -234,7 +234,7 @@ a) Oblicz masę wykrystalizowanej saletry (pełny zapis obliczenia).
 b) Zapisz przewidywaną obserwację.
 c) Jakim roztworem (względem 20 °C) jest ciecz znad osadu?
 
-**F2.** Oblicz stężenia procentowe: (a) roztworu nasyconego NaCl w 20 °C, (b) roztworu nasyconego KNO₃ w 60 °C. Wyjaśnij krótko, dlaczego wynik (b) **nie** wynosi 110%, mimo że rozpuszczalność KNO₃ to 106 g.
+**F2.** Oblicz stężenia procentowe: (a) roztworu nasyconego NaCl w 20 °C, (b) roztworu nasyconego KNO₃ w 60 °C. Wyjaśnij krótko, dlaczego wynik (b) **nie** wynosi 110%, mimo że rozpuszczalność KNO₃ to 110 g.
 
 **F3.** Klarowną wodę wapienną podgrzano od 20 °C do 80 °C w zamkniętym naczyniu (bez dostępu powietrza). Po chwili ciecz zmętniała. Korzystając z tabeli B, wyjaśnij obserwację. (Uwaga: w tym doświadczeniu NIE było CO₂ — rozważ dokładnie, co się zmieniło.)
 
@@ -249,25 +249,25 @@ c) Jakim roztworem (względem 20 °C) jest ciecz znad osadu?
 | A1 | **b** — 31 g | 1 pkt; wybór a) = 62 g, nie skalowano (odczyt traktowany jak wynik) — odnotuj |
 | A2 | **c** — 132 g | 1 pkt; b) = pułapka „woda = roztwór" |
 | A3 | **b** — NaCl | 1 pkt |
-| A4 | **b** — 74 g | 1 pkt; d) = 138 g, sumowano zamiast odejmować |
+| A4 | **b** — 78 g | 1 pkt; d) = 138 g, sumowano zamiast odejmować |
 | B1 | **F** (na 100 g **wody**) | 1 pkt |
 | B2 | **P** | 1 pkt |
 | B3 | **F** (maleje) | 1 pkt |
 | B4 | **P** | 1 pkt |
 | B5 | **P** (0,16 w 20 °C; w wyższej temperaturze mniej) | 1 pkt |
-| B6 | **F** (≈51,5%; stężenie nie może przekraczać 100%) | 1 pkt; pole do 30-sekundowego omówienia szablonu 3 |
+| B6 | **F** (≈52,4%; stężenie nie może przekraczać 100%) | 1 pkt; pole do 30-sekundowego omówienia szablonu 3 |
 | C1 | 55 | 1 pkt |
 | C2 | 40 | 1 pkt |
 | C3 | 66 − 37 = **29** | 1 pkt za wynik; 0,5 za samą różnicę bez wskazania obu odczytów (na konkursie wymagany zapis) |
 | D1 | 1→c, 2→a, 3→b | po 1 pkt (3 łącznie) |
-| E1 | m(wody) = 100 × 88/106 ≈ **83 g** | 1 pkt za zapis proporcji, 1 pkt za wynik |
+| E1 | m(wody) = 100 × 88/110 = **80 g** | 1 pkt za zapis proporcji, 1 pkt za wynik |
 | E2 | Cp = 36/(100+36) × 100% = **≈26,5%** | 1 pkt za sumę 136 g w mianowniku (wzór lub ułamek), 1 pkt za wynik; 36% → 0 pkt, błąd do kliniki |
 | E3 | rozpuszczalność CO₂ maleje z temperaturą → w cieple więcej gazu chce się wydostać | 1 pkt (nazwa zależności + odniesienie do napoju) |
 | E4 | **Nie**: maks. 32 g (tabela, 20 °C); 50 − 32 = **18 g** zostanie na dnie; roztwór nasycony | 1 pkt za odczyt, 1 pkt za różnicę i nazwę stanu |
-| F1a | S: 106 → 32; spadek 74 g/100 g wody; m = 74 × 250/100 = **185 g** | 2 pkt (odczyty+skalowanie 1, wynik 1) |
+| F1a | S: 110 → 32; spadek 78 g/100 g wody; m = 78 × 250/100 = **195 g** | 2 pkt (odczyty+skalowanie 1, wynik 1) |
 | F1b | bezbarwne kryształy osiadają na dnie/przegrodach, ilość stałej substancji rośnie podczas chłodzenia | 1 pkt |
 | F1c | **nasycony** w 20 °C (ciecz nad osadem jest zawsze na krzywej) | 1 pkt |
-| F2 | (a) 36/136 ≈ 26,5%; (b) 106/206 ≈ 51,5%; wyjaśnienie: w mianowniku masa **roztworu** (woda+sól), nie sama woda — 106 g to składnik roztworu o masie 206 g | 2 pkt za obliczenia (po 1), 1 pkt za wyjaśnienie |
+| F2 | (a) 36/136 ≈ 26,5%; (b) 110/210 ≈ 52,4%; wyjaśnienie: w mianowniku masa **roztworu** (woda+sól), nie sama woda — 110 g to składnik roztworu o masie 210 g | 2 pkt za obliczenia (po 1), 1 pkt za wyjaśnienie |
 | F3 | rozpuszczalność Ca(OH)₂ **maleje** z temperaturą (0,16 g w 20 °C, w wyższej mniej); przy podgrzaniu część rozpuszczonego wodorotlenku przestaje się mieścić i **wysadza się jako drobny osad** → mętnienie; brak CO₂ wyklucza reakcję z węglanem — winna jest sama zależność od temperatury | 2 pkt (wskazanie malejącej zależności 1; połączenie z mętnieniem jako wysadzeniem nadmiaru 1) |
 | F4 | rubryka: osie podpisane z jednostkami (1), podziałka + poprawnie naniesione punkty (1), krzywe + legenda, KNO₃ wyraźnie stroma, NaCl płaska (1) | 3 pkt łącznie |
 
@@ -280,7 +280,7 @@ Maksimum całości: **35 pkt** (suma rubryki: A 4 + B 6 + C 3 + D 3 + E 7 + F 12
 1. **„G na 100 g roztworu"** → oś Y to 100 g **wody**. Kontrola: roztwór nasycony NaCl ma Cp ≈ 26,5%, a nie 36% — i właśnie dlatego.
 2. **„110% stężenia"** → stężenie % nie przekracza 100%. Gdy wychodzi więcej — mianownik źle (brakuje sumy 100 + S).
 3. **Skalowanie pominięte** → tabela mówi o 100 g wody; dla 50 g albo 250 g wody odczyt trzeba przemnożyć. W zadaniu A1 wybór 62 g to dokładnie ten błąd.
-4. **Chłodzenie: dodawanie zamiast odejmowania** → osad = S(gorące) − S(zimne). 74 g, nie 138 g.
+4. **Chłodzenie: dodawanie zamiast odejmowania** → osad = S(gorące) − S(zimne). 78 g, nie 138 g.
 5. **„Powyżej krzywej = roztwór przesycony"** (odpowiedź konkursowa) → na etapie I: nasycony **z osadem**. Przesycone to ciekawostka LO/OL, nie odpowiedź w arkuszu.
 6. **Gazy jak ciała stałe** → dla gazów zależność jest ODWROTNA: ciepła woda = mniej CO₂/O₂. Ciepła soda i zimowe ryby to dwa zakotwiczenia pamięciowe.
 7. **Mętnienie wody wapiennej = zawsze CO₂** → mętnieje też przy samym podgrzaniu, bo Ca(OH)₂ ma malejącą krzywą. Konkurs lubi tę pułapkę właśnie dlatego, że odruch mówi „CO₂".
@@ -323,7 +323,7 @@ Osad nad krzywą :: nadmiar substancji stałej, który nie zmieścił się w roz
 1. Data stanu „W1 — 2026-10-22" (przyszłość, sugerowany audyt) → „szkic — 2026-10-13".
 2. „sód ti siarczanowy" → octan sodu (klasyczna demonstracja), oznaczone jako orientacyjne.
 3. „pśika" (niezrozumiałe) → „gazuje mocniej".
-4. Test „110%": saletra w zakresie ok. 24–51,5%, nie „okolice 50%" (32/132 i 106/206).
+4. Test „110%": saletra w zakresie ok. 24–52,4%, nie „okolice 50%" (32/132 i 110/210).
 5. Suma punktów: odpowiedź podawała 36, rubryka daje 35 (A 4 + B 6 + C 3 + D 3 + E 7 + F 12).
 6. Usunięto sekcje procesowe „Do dopięcia w repo" i „Status P0": status „W1 ✅" dla N06, LKO-Z36 i REV01 nie odpowiadał stanowi, bo W1 nie był wykonany.
 
