@@ -136,7 +136,7 @@ function opisPalnika(sym) {
 var SERIE = {
   plomien: {nazwa: 'Próba płomieniowa', metale: ['Na', 'K', 'Ca'],
     opis: 'Tu interesuje nas barwa, bo wskazuje metal. Sód przysłania inne barwy, więc potas ogląda się przez szkło kobaltowe.'},
-  utlenianie: {nazwa: 'Spalanie i utlenianie', metale: ['Li', 'Mg', 'Sr'],
+  utlenianie: {nazwa: 'Spalanie i utlenianie', metale: ['Li', 'Mg', 'Ca'],
     opis: 'Tu interesuje nas produkt, a nie barwa. Płomień pokazuje tylko przebieg reakcji. Pod każdym palnikiem podano powstały związek.'},
   nadtlenki: {nazwa: 'Nadtlenki: Na, Sr, Ba', metale: ['Na', 'Sr', 'Ba'],
     opis: 'Tu widać, że część metali tworzy nadtlenki, a nie zwykłe tlenki. Pod palnikiem podano produkt. Płomień pokazuje tylko przebieg reakcji; spalanie baru to wizualizacja.'},

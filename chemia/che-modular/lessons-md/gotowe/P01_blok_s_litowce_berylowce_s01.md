@@ -150,7 +150,7 @@ Palniki pokazują **cztery sekwencje po trzy palniki**; przełącznik nad palnik
 - **Model teoretyczny** — co z pierwiastkami, których nie wykonuje się w szkole?
 
 @klocek palniki {seria="plomien"} | Palniki: cztery sekwencje do wyboru (po trzy palniki naraz)
-@opis Trzy palniki stoją w jednym rzędzie, nad nimi przełącznik sekwencji. Sekwencja „Próba płomieniowa”: sód żółty, potas fioletowy, wapń ceglastoczerwony. „Spalanie i utlenianie”: lit, magnez i stront, pod każdym podany produkt (Li₂O, MgO, SrO). „Nadtlenki”: sód, stront i bar, pod każdym podany produkt (Na₂O₂, SrO z domieszką SrO₂, BaO₂). „Model teoretyczny”: rubid, cez i rad. Wniosek: barwa płomienia wskazuje metal, a produkt spalania zależy od metalu i warunków.
+@opis Trzy palniki stoją w jednym rzędzie, nad nimi przełącznik sekwencji. Sekwencja „Próba płomieniowa”: sód żółty, potas fioletowy, wapń ceglastoczerwony. „Spalanie i utlenianie”: lit, magnez i wapń, pod każdym podany produkt (Li₂O, MgO, CaO). „Nadtlenki”: sód, stront i bar, pod każdym podany produkt (Na₂O₂, SrO z domieszką SrO₂, BaO₂). „Model teoretyczny”: rubid, cez i rad. Wniosek: barwa płomienia wskazuje metal, a produkt spalania zależy od metalu i warunków.
 
 ::: karta warning | Status: wizualizacja komputerowa — próba płomieniowa
 Barwę pokazano komputerowo. Płomień sodu jest bardzo intensywny; w prawdziwej pracowni ślady sodu zagłuszają inne barwy. Próbę wykonuje się tylko pod nadzorem nauczyciela.
