@@ -6,6 +6,7 @@ opis: Trzy typy wiązań · różnica elektroujemności jako klucz · właściwo
 kicker: F11 · FUNDAMENTY · NOWA WERSJA
 lead: F10 pokazała, dlaczego atomy się łączą. Teraz pytamy, **jak** się łączą — i dlaczego ten sam pierwiastek w różnych wiązaniach daje substancje o zupełnie innych właściwościach. Sól kuchenna kruszy się, miedź daje się zwijać w drut, a grafit przewodzi prąd.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
+stan: "struktura uzupełniona — 2026-10-13, adv 1/2 (do dopisania), bez audytu W1"
 stopka: **CHEMIA F11 v1.0** · Wiązania jonowe, kowalencyjne, metaliczne · 2026
 ---
 
@@ -208,7 +209,7 @@ Uczeń liczy Δχ ≈ 1,0 i uznaje, że „jest dużo, więc jonowe”.
 
 ## 9 | Ćwiczenia {#cwiczenia}
 
-::: karta basic | A. Podstawa — typ wiązania
+::: karta exam | A. Podstawa — typ wiązania (3 pkt)
 Dla każdej substancji podaj typ wiązania:
 1. KCl
 2. O₂
@@ -221,7 +222,7 @@ Dla każdej substancji podaj typ wiązania:
 :::
 :::
 
-::: karta understand | B. Trening — właściwości
+::: karta exam | B. Trening — właściwości (3 pkt)
 1. Substancja topi się w 900 °C, w stanie stałym nie przewodzi prądu, w stopie przewodzi. Jaki typ wiązania?
 2. Substancja ma t.t. −20 °C, nie przewodzi prądu w żadnym stanie. Jaki typ?
 3. Dlaczego drut miedziany można zwijać, a kryształ soli kruszy się?
@@ -233,7 +234,7 @@ Dla każdej substancji podaj typ wiązania:
 :::
 :::
 
-::: karta extra | C. Ambitne — sieci i grafit
+::: adv | C. Ambitne — sieci i grafit | poziom ambitny
 1. Dlaczego diament jest bardzo twardy, a grafit miękki?
 2. Dlaczego grafit przewodzi prąd, choć jest kowalencyjny?
 

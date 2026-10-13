@@ -7,6 +7,7 @@ kicker: F01 · FUNDAMENTY · MASTER v1.1
 lead: Pierwsza lekcja bloku fundamentów: jak z pojedynczej obserwacji dojść do poprawnego modelu chemicznego i zapisu. Uczysz się odróżniać to, co widzisz, od tego, co z tego wnioskujesz,
 lead: przechodzić między poziomem makro, cząsteczkowym, symbolicznym i ilościowym oraz sprawdzać, czy wyjaśnienie zgadza się z danymi.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 stopka: **CHEMIA F01 v1.1 MASTER** · Jak myśli chemik · 2026
 ---
 ::: minimum | Muszę umieć na E8 — 15 punktów
@@ -454,7 +455,7 @@ Gdy dostajesz zadanie doświadczalne, wypełniaj rubryki w stałej kolejności i
 
 ## 12 | Ćwiczenia {#cwiczenia}
 
-::: karta basic | A. Podstawa
+::: karta exam | A. Podstawa (4 pkt)
 1. Wymień cztery rzeczy, które bada chemia.
 2. Czym różni się obserwacja od wniosku? Podaj przykład każdego.
 3. Podaj pięć pytań chemika.
@@ -468,7 +469,7 @@ Gdy dostajesz zadanie doświadczalne, wypełniaj rubryki w stałej kolejności i
 :::
 :::
 
-::: karta understand | B. Trening
+::: karta exam | B. Trening (4 pkt)
 5. Dla każdej obserwacji zapisz **hipotezę** i **test**, który ją sprawdzi: a) roztwór zmienił barwę z bezbarwnej na żółtą; b) na dnie pojawił się biały osad; c) wydzielają się pęcherzyki gazu.
 6. Popraw zdanie „sól zniknęła w wodzie” i uzasadnij.
 7. Podaj po jednym przykładzie zjawiska fizycznego i reakcji chemicznej z kuchni.
@@ -510,7 +511,7 @@ Gdy dostajesz zadanie doświadczalne, wypełniaj rubryki w stałej kolejności i
 :::
 :::
 
-::: karta understand | E. Transfer — myślenie chemika
+::: karta exam | E. Transfer — myślenie chemika (4 pkt)
 17. Uczeń bada dwie próbki. A zmienia barwę, B wydziela gaz. Czy na tej podstawie możesz już powiedzieć, że w obu zaszły reakcje? Napisz, czego jeszcze potrzebujesz.
 18. Zaprojektuj test rozróżniający dwa wyjaśnienia: „gaz powstał w reakcji” oraz „gaz był wcześniej rozpuszczony w cieczy”.
 19. Otrzymujesz wynik sprzeczny z przewidywaniem modelu. Podaj trzy rzeczy, które sprawdzisz przed odrzuceniem modelu.

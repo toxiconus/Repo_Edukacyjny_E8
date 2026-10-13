@@ -6,6 +6,7 @@ opis: Energia i stabilność · reguła oktetu i dubletu · jony czy wspólne el
 kicker: F10 · FUNDAMENTY · NOWA WERSJA
 lead: Większość pierwiastków w przyrodzie nie występuje jako pojedyncze atomy. Sód reaguje gwałtownie z chlorem, a hel praktycznie nie reaguje z niczym. Dlaczego? Odpowiedź leży w energii: atomy łączą się, bo związek ma **mniejszą energię** niż oddzielne atomy.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 stopka: **CHEMIA F10 v1.0** · Dlaczego atomy się łączą · 2026
 ---
 
@@ -214,7 +215,7 @@ Pojedynczy krok (oddanie elektronu) wymaga energii, ale cały proces Na + Cl →
 
 ## 11 | Ćwiczenia {#cwiczenia}
 
-::: karta basic | A. Podstawa — oktet i dublet
+::: karta exam | A. Podstawa — oktet i dublet (3 pkt)
 1. Ile elektronów brakuje do oktetu atomowi tlenu?
 2. Jakie jony tworzą Na (grupa 1) i Mg (grupa 2) w związkach z chlorem i tlenem? Podaj ładunki.
 3. Czy H₂ spełnia regułę dubletu? Uzasadnij.
@@ -226,7 +227,7 @@ Pojedynczy krok (oddanie elektronu) wymaga energii, ale cały proces Na + Cl →
 :::
 :::
 
-::: karta understand | B. Trening — przeniesienie czy uwspólnienie
+::: karta exam | B. Trening — przeniesienie czy uwspólnienie (3 pkt)
 Dla każdej pary wskaż typ wiązania (jonowe/kowalencyjne) i uzasadnij:
 1. Mg i O
 2. C i H
@@ -239,7 +240,7 @@ Dla każdej pary wskaż typ wiązania (jonowe/kowalencyjne) i uzasadnij:
 :::
 :::
 
-::: karta extra | C. Ambitne — bilans energii
+::: adv | C. Ambitne — bilans energii | poziom ambitny
 1. Dlaczego pierwszy etap (Na → Na⁺ + e⁻) wymaga energii, a cały proces tworzenia NaCl jest egzotermiczny?
 2. Dlaczego N≡N ma większą energię wiązania niż N–N?
 
@@ -321,6 +322,10 @@ Elektroujemność :: zdolność atomu do przyciągania wspólnej pary elektronó
 :::
 
 ## 15 | Ciekawostki {#ciekawostki}
+
+::: karta extra | Hel: wyjątek od oktetu
+Hel ma tylko dwa elektrony, które tworzą pełną powłokę K. Dlatego dla wodoru i helu obowiązuje reguła dubletu, a nie oktetu.
+:::
 
 ::: karta extra | Dlaczego neon nie świeci w chemicznym sensie?
 Neon i inne gazy szlachetne są tak trwałe, że w warunkach szkolnych prawie nie tworzą związków. Dlatego w lampach neonowych świeci gaz pobudzony prądem, a nie reakcja chemiczna. To dobry przykład tego, że energia i stabilność mówią, czy reakcja „opłaca się”.

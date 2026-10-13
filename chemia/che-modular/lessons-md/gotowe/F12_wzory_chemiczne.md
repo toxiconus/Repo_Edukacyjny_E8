@@ -6,6 +6,7 @@ opis: Wzór sumaryczny, rzeczywisty, empiryczny i strukturalny · zapis wzorów 
 kicker: F12 · FUNDAMENTY · NOWA WERSJA
 lead: Wzór chemiczny to zapis języka, którym chemicy mówią o substancjach. Potrafisz go przeczytać i zbudować? Umiesz policzyć, ile masy pierwiastka jest w związku? Ta lekcja uczy obu rzeczy — i pokazuje, że z samych procentów da się odtworzyć wzór.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
+stan: "struktura uzupełniona — 2026-10-13, adv 1/2 (do dopisania), bez audytu W1"
 stopka: **CHEMIA F12 v1.0** · Wzory chemiczne · 2026
 ---
 
@@ -201,7 +202,7 @@ Procenty są masami, nie liczbami atomów. Trzeba podzielić przez masy atomowe 
 
 ## 8 | Ćwiczenia {#cwiczenia}
 
-::: karta basic | A. Podstawa — wzory i masy
+::: karta exam | A. Podstawa — wzory i masy (3 pkt)
 1. Zapisz wzór chlorku glinu (Al³⁺ i Cl⁻).
 2. Oblicz masę molową NaOH (Na = 23, O = 16, H = 1).
 3. Ile procent masy stanowi wodór w CH₄? (C = 12, H = 1)
@@ -213,7 +214,7 @@ Procenty są masami, nie liczbami atomów. Trzeba podzielić przez masy atomowe 
 :::
 :::
 
-::: karta understand | B. Trening — procent i wzór
+::: karta exam | B. Trening — procent i wzór (2 pkt)
 1. Oblicz skład procentowy Na₂SO₄ (Na = 23, S = 32, O = 16).
 2. Związek zawiera 52,2% C, 13,0% H i 34,8% O. Wyznacz wzór empiryczny (C = 12, H = 1, O = 16).
 
@@ -223,7 +224,7 @@ Procenty są masami, nie liczbami atomów. Trzeba podzielić przez masy atomowe 
 :::
 :::
 
-::: karta extra | C. Ambitne — hydraty i stosunki
+::: adv | C. Ambitne — hydraty i stosunki | poziom ambitny
 1. Ile wynosi masa molowa CuSO₄·5H₂O (Cu = 63,5; S = 32; O = 16; H = 1)?
 2. Dlaczego w zapisie hydratu kropka oznacza „przyłączone cząsteczki wody”, a nie mnożenie?
 
@@ -305,6 +306,10 @@ Mol :: liczność odpowiadająca 6,02 · 10²³ cząstek
 :::
 
 ## 12 | Ciekawostki {#ciekawostki}
+
+::: karta extra | Wzór empiryczny a rzeczywisty
+Glukoza ma wzór rzeczywisty C₆H₁₂O₆, ale najprostszy stosunek atomów (wzór empiryczny) to CH₂O. Z samych procentów da się wyznaczyć tylko wzór empiryczny; rzeczywisty wymaga jeszcze masy cząsteczkowej.
+:::
 
 ::: karta extra | Dlaczego chemicy mówią „mol”, a nie „sztuka”?
 Mol to bardzo duża liczba (6,02 · 10²³), więc wygodnie jest ważyć substancje w gramach. Jeden mol wody to ok. 18 g, a jeden mol sodu to 23 g — w laboratorium odważa się je wprost w gramach.

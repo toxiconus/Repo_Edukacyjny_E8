@@ -6,6 +6,7 @@ opis: Elektrony walencyjne i kropki · wiązania i wolne pary · procedura rysow
 kicker: F13 · FUNDAMENTY · NOWA WERSJA
 lead: Wzór strukturalny pokazuje, które atomy są połączone. Wzór elektronowy (Lewisa) pokazuje też, **gdzie są elektrony** — wiążące i niewiążące. Ten zapis pozwala przewidzieć kształt cząsteczki (F14), jej polarność (F15) i miejsca reakcji.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
+stan: "struktura uzupełniona — 2026-10-13, adv 1/2 (do dopisania), bez audytu W1"
 stopka: **CHEMIA F13 v1.0** · Wzory elektronowe (Lewisa) · 2026
 ---
 
@@ -193,7 +194,7 @@ Cl ma 7 e⁻ walencyjnych: jedna para wiążąca (2 e⁻ wokół Cl) i trzy woln
 
 ## 8 | Ćwiczenia {#cwiczenia}
 
-::: karta basic | A. Podstawa — elektrony i wiązania
+::: karta exam | A. Podstawa — elektrony i wiązania (3 pkt)
 1. Ile elektronów walencyjnych ma cząsteczka CH₄?
 2. Ile wiązań tworzy atom azotu w NH₃?
 3. Ile wolnych par ma atom tlenu w H₂O?
@@ -205,7 +206,7 @@ Cl ma 7 e⁻ walencyjnych: jedna para wiążąca (2 e⁻ wokół Cl) i trzy woln
 :::
 :::
 
-::: karta understand | B. Trening — narysuj
+::: karta exam | B. Trening — narysuj (3 pkt)
 Narysuj wzór Lewisa dla:
 1. HCl
 2. H₂O
@@ -218,7 +219,7 @@ Narysuj wzór Lewisa dla:
 :::
 :::
 
-::: karta extra | C. Ambitne — wiązania wielokrotne
+::: adv | C. Ambitne — wiązania wielokrotne | poziom ambitny
 1. Narysuj wzór Lewisa HCN i policz wszystkie wolne pary.
 2. Dlaczego N₂ jest tak trudny do reakcji (wskazówka: porównaj z F10)?
 
@@ -299,6 +300,10 @@ Atom centralny :: atom, do którego przyłączone są pozostałe atomy w cząste
 :::
 
 ## 12 | Ciekawostki {#ciekawostki}
+
+::: karta extra | Dlaczego azot jest mało reaktywny
+Cząsteczka N₂ ma potrójne wiązanie N≡N, które wymaga dużo energii do zerwania. To wyjaśnia, dlaczego azot z powietrza reaguje w zwykłych warunkach bardzo słabo.
+:::
 
 ::: karta extra | Dlaczego Lewis rysował kropki?
 Gilbert Lewis zaproponował w 1916 roku prosty sposób zapisu wiązań przez wspólne pary elektronów. Model ma swoje ograniczenia (nie opisuje kształtu bez dodatkowej teorii), ale do dziś jest podstawą nauki o wiązaniach w szkole i na uczelni.

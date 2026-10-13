@@ -6,6 +6,7 @@ opis: Pary elektronowe odpychają się · kształty AX_nE_m: liniowy, trygonalny
 kicker: F14 · FUNDAMENTY · NOWA WERSJA
 lead: Wzór Lewisa mówi, które atomy są połączone. Nie mówi jednak, jak cząsteczka jest ustawiona w przestrzeni. Dlaczego woda jest zgięta, a dwutlenek węgla prosty? Odpowiedź daje model VSEPR: pary elektronów odpychają się i ustawiają jak najdalej od siebie.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
+stan: "struktura uzupełniona — 2026-10-13, adv 1/2 (do dopisania), bez audytu W1"
 stopka: **CHEMIA F14 v1.0** · Geometria cząsteczek (VSEPR) · 2026
 ---
 
@@ -192,7 +193,7 @@ Bor ma trzy wiązania i brak wolnej pary, więc trzy domeny → trygonalny płas
 
 ## 8 | Ćwiczenia {#cwiczenia}
 
-::: karta basic | A. Podstawa — liczba domen i kształt
+::: karta exam | A. Podstawa — liczba domen i kształt (3 pkt)
 1. Ile domen ma atom węgla w CO₂? Jaki kształt?
 2. Ile domen ma atom boru w BF₃? Jaki kształt i kąt?
 3. Ile domen ma atom węgla w CH₄? Jaki kształt?
@@ -204,7 +205,7 @@ Bor ma trzy wiązania i brak wolnej pary, więc trzy domeny → trygonalny płas
 :::
 :::
 
-::: karta understand | B. Trening — wolne pary
+::: karta exam | B. Trening — wolne pary (2 pkt)
 1. Jaki kształt cząsteczkowy ma NH₃? Podaj kąt przybliżony.
 2. Jaki kształt cząsteczkowy ma H₂O? Dlaczego kąt jest mniejszy niż w NH₃?
 
@@ -214,7 +215,7 @@ Bor ma trzy wiązania i brak wolnej pary, więc trzy domeny → trygonalny płas
 :::
 :::
 
-::: karta extra | C. Ambitne — PCl₅ i SF₆
+::: adv | C. Ambitne — PCl₅ i SF₆ | poziom ambitny
 1. Ile domen wokół P w PCl₅? Jaki kształt?
 2. Ile domen wokół S w SF₆? Jaki kształt i kąt?
 
@@ -295,6 +296,10 @@ Geometria tetraedryczna :: rozmieszczenie czterech domen w narożach czworościa
 :::
 
 ## 12 | Ciekawostki {#ciekawostki}
+
+::: karta extra | Dlaczego kąt w wodzie nie wynosi 109,5°
+Woda ma dwie wolne pary elektronowe przy tlenie. Odpychają się one silniej niż wiązania, więc kąt H–O–H zmniejsza się do około 104,5°.
+:::
 
 ::: karta extra | Dlaczego woda jest zgięta, a nie prosta?
 Cztery domeny ustawiają się w czworościanie. Dwie wolne pary na tlenie zajmują dwa z tych narożników, a wiązania O–H pozostałe dwa. Ponieważ wolne pary są bardziej „rozlane” wokół tlenu, mocniej odpychają wiązania i zmniejszają kąt do ok. 104,5°. Zgięta budowa wraz z polarnością wiązań O–H jest podstawą polarności wody i wiązań wodorowych (F15).

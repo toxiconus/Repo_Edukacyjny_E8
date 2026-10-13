@@ -6,6 +6,7 @@ opis: Polarność wiązania i cząsteczki · wektory dipoli i symetria · siły 
 kicker: F15 · FUNDAMENTY · NOWA WERSJA
 lead: Dlaczego woda wrze w 100 °C, a siarkowodór w −60 °C, choć oba mają podobny wzór? Dlaczego sól rozpuszcza się w wodzie, a tłuszcz nie? Odpowiedź leży w tym, jak cząsteczki są spolaryzowane i jak się do siebie przyciągają.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
+stan: "struktura uzupełniona — 2026-10-13, adv 1/2 (do dopisania), bez audytu W1"
 stopka: **CHEMIA F15 v1.0** · Polarność i oddziaływania · 2026
 ---
 
@@ -203,7 +204,7 @@ Wiązanie wodorowe wymaga, by wodór był związany z F, O lub N. Cl jest dużo 
 
 ## 8 | Ćwiczenia {#cwiczenia}
 
-::: karta basic | A. Podstawa — polarność
+::: karta exam | A. Podstawa — polarność (2 pkt)
 Oceń polarność cząsteczek: (a) H₂O (b) CO₂ (c) CH₄ (d) NH₃.
 
 ::: odp | Pokaż odpowiedzi
@@ -211,7 +212,7 @@ Oceń polarność cząsteczek: (a) H₂O (b) CO₂ (c) CH₄ (d) NH₃.
 :::
 :::
 
-::: karta understand | B. Trening — oddziaływania
+::: karta exam | B. Trening — oddziaływania (3 pkt)
 1. Jakie oddziaływania działają między cząsteczkami H₂O?
 2. Jakie oddziaływania działają między cząsteczkami CO₂?
 3. Dlaczego H₂S wrze niżej niż H₂O?
@@ -223,7 +224,7 @@ Oceń polarność cząsteczek: (a) H₂O (b) CO₂ (c) CH₄ (d) NH₃.
 :::
 :::
 
-::: karta extra | C. Ambitne — rozpuszczalność
+::: adv | C. Ambitne — rozpuszczalność | poziom ambitny
 Dlaczego etanol (C₂H₅OH) rozpuszcza się w wodzie w każdym stosunku, a heksan (C₆H₁₄) nie?
 
 ::: odp | Pokaż odpowiedź
@@ -301,6 +302,10 @@ Hydratacja :: otaczanie jonów lub polarnych cząsteczek przez cząsteczki wody
 :::
 
 ## 12 | Ciekawostki {#ciekawostki}
+
+::: karta extra | Dlaczego olej nie miesza się z wodą
+Woda jest cząsteczką polarną, a większość tłuszczów jest niepolarna. Cząsteczki tych substancji nie mają z czym się przyciągać, więc tworzą osobne warstwy.
+:::
 
 ::: karta extra | Dlaczego lód pływa?
 Woda w stanie stałym tworzy regularną sieć wiązań wodorowych, w której cząsteczki są oddalone bardziej niż w cieczy. Dlatego lód ma mniejszą gęstość niż woda i unosi się na jej powierzchni. To rzadki przypadek, który ma ogromne znaczenie dla życia w jeziorach zimą.
