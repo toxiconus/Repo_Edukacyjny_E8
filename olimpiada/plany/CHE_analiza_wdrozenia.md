@@ -100,3 +100,8 @@ Skutek dla planu: daty OCJ są pewne, zakres i format nie. Przed budową zestaw�
 
 ## 8. Wskazówka: start z województwa lubelskiego (2026-10-13)
 Uczennica startuje z województwa lubelskiego. Ścieżka praktyczna to więc LKO (etap szkolny → rejonowy → wojewódzki, `PRIORYTETY.md` pkt 1–2), a nie sama OCJ. Wyszukiwanie nie potwierdziło, czy OCJ w Lubelskiem idzie przez kuratorium. Do ustalenia u nauczyciela: czy etap szkolny (LKO) i OCJ są dwoma osobnymi zgłoszeniami, czy jednym.
+
+## 9. LKO: co potwierdzono, a czego nie (2026-10-13)
+- Podany przez użytkownika link `kuratorium.lublin.pl/?akc=drnews&id=14268` jest zablokowany dla robotów (robots.txt), więc nie da się go pobrać. Wyszukiwanie nie znalazło terminarza LKO 2026/27.
+- Data **20.10.2025** (etap szkolny chemii) dotyczy **roku 2025/26**, nie 2026/27. Nie potwierdza terminu 2026/27 (repo: ~23.10, niepotwierdzone).
+- Do zamknięcia: plik „Terminarz eliminacji 2026/2027” i „Zakresy wymagań” z kuratorium Lublin albo info od nauczyciela. Bez tego zakres i daty w `PRIORYTETY.md` pozostają orientacyjne.
