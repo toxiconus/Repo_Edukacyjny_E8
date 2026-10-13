@@ -10,15 +10,23 @@ poglebia: "R04; R06; R07; R08; R09 (pełne wersje molowe — LO/etap III); LKO-S
 wlasciciel: "brak nowych właścicieli pojęć — mola i stechiometrii formalnie uczy R04/R07/R08; suplement integruje metodę masową (bez mola) pod rozszerzenia 6–7 etapu II"
 zrodla: "Zakres konkursu chemicznego LKO etap II: pkt 8 (masy cząsteczkowe pierwiastków w formie cząsteczek i związków) i pkt 9 (obliczenia ze stechiometrii wzoru i równania, substraty w stosunku stechiometrycznym i niestechiometrycznym) — wg zakresu 2025/26 (OCR w olimpiada/zrodla/LKO); zakres 2026/27 do potwierdzenia po publikacji"
 opis: "Masa cząsteczkowa z pułapką pierwiastków cząsteczkowych (H₂, N₂, O₂, Cl₂, P₄, S₈, O₃), porównania gęstości gazów przez Mr, skład procentowy i ustalanie wzoru z procentów, czterokrokowa metoda proporcji masowej, procedura nadmiaru (trzy kroki + kontrola pozostałości), zadania zespolone ze stężeniem % z etapu I. 20 zadań w formach LKO z kluczem i punktacją. Zasila LKO-SYM-A2."
-stan: "szkic — 2026-10-13, pod LKO etap II (26.11.2026); bez audytu W1"
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 kicker: "LKO-STECH · II etap"
 lead: "Ile gramów powstanie z danej masy substratu? Liczymy Mr, pilnujemy pierwiastków cząsteczkowych, a gdy podano dwie masy — najpierw ustalamy, kto ogranicza reakcję."
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:LKO II / OLIMP]]
-stopka: "**LKO-STECH szkic** · Masy cząsteczkowe i stechiometria · 2026"
+stopka: "**LKO-STECH** · Masy cząsteczkowe i stechiometria · 2026"
 ---
 
 
 # LKO-STECH — Masy cząsteczkowe i stechiometria masowa z nadmiarem
+
+::: minimum | Muszę umieć na LKO II — 10 punktów
+1. **Mr:** sumuj masy atomowe; pierwiastki cząsteczkowe (H₂, N₂, O₂, Cl₂) liczymy jako cząsteczki (H₂ = 2, O₂ = 32).
+2. **Procenty:** %pierwiastka = (liczba atomów · masa atomowa) ÷ Mr · 100%.
+3. **Wzór z procentów:** dziel procenty przez masy atomowe, potem przez najmniejszą liczbę.
+4. **Proporcja masowa:** masowo pod równaniem, wynik z jednostką — zapis punktowany.
+5. **Nadmiar:** najpierw ustal ograniczający (liczba moli lub masa), dopiero potem produkt od niego.
+:::
 
 ## Lustro i most
 
@@ -63,6 +71,10 @@ Gęstości gazów w tych samych warunkach są **proporcjonalne do Mr**. Porówna
   „NH₃ czy HCl jest gęstszy od powietrza (Mr ≈ 29)?" → 17 < 29 (lżejszy, zbieranie dnem do góry) · 36,5 > 29 (cięższy, dnem do dołu) — dokładnie tabela z N06, teraz z liczbowym uzasadnieniem.
 
 ---
+
+::: karta understand | W skrócie — cząsteczka czy atom?
+Mr pierwiastka w równaniu liczymy dla cząsteczki, jeśli jest dwuatomowa: H₂ = 2, O₂ = 32, N₂ = 28, Cl₂ = 71. Dla metali i gazów szlachetnych — atom. Pułapka pojawia się przy każdym gazie w zadaniu.
+:::
 
 ## 2 | Wykład — Stechiometria wzoru: procenty w obie strony
 
@@ -124,6 +136,10 @@ Kalkulator prosty jest dozwolony — liczenie 8 × 160/128 na zawodach jest w po
 Słowo „nadmiar" w treści zadania = licz od cynku, nie myśl o kwasie. Gdy nadmiaru nie ma w treści — patrz WYKŁAD 4.
 
 ---
+
+::: karta understand | W skrócie — kto ogranicza?
+Gdy podano masy dwóch substratów, policz, ile moli każdego jest potrzebne do przereagowania drugiego. Ten, którego brakuje, ogranicza reakcję; produkt liczysz od niego, nigdy od substratu w nadmiarze.
+:::
 
 ## 4 | Wykład — Niestechiometria: reagent ograniczający (trzy kroki + kontrola)
 
@@ -189,12 +205,11 @@ Gdy bilans się zgadza — proporcja była dobra. Trzymaj ten test przy każdym 
 
 ---
 
-## ZADANIA (formy LKO etapu II)
+## 5 | Zadania — karty exam i adv {#zadania}
 
 *Mapowanie: WYKŁAD 1 → A1–A3, B4, D1 · WYKŁAD 2 → B5, C1, E1, E3, F2 · WYKŁAD 3 → B2, C2, C4, E2, E4, F3 · WYKŁAD 4 → A4, A5, B3, B6, C3, E5, F1.*
 
-### A. Zamknięte
-
+::: karta exam | A. Zamknięte (5 pkt)
 **A1.** Mr tlenku glinu Al₂O₃ wynosi:
 a) 43  b) 75  c) 102  d) 150
 
@@ -209,73 +224,92 @@ a) 2,2 g  b) 4,4 g  c) 10 g  d) 44 g
 
 **A5.** 8 g CuO zredukowano 3 g wodoru (CuO + H₂ → Cu + H₂O). Masa miedzi:
 a) 6,4 g  b) 8 g  c) 2,4 g  d) 64 g
+:::
 
-### B. Prawda–fałsz
+::: odp | Pokaż klucz
+A1 — **c** [1]
+A2 — **c** (80/64) [1]
+A3 — **c** [1]
+A4 — **b** (100:44 → 4,4) [1]
+A5 — **a** — H₂ w ogromnym nadmiarze (potrzeba 0,2 g), liczymy od CuO: 8 × 64/80 = 6,4 g [1]
+:::
 
+::: karta exam | B. Prawda–fałsz (6 pkt)
 **B1.** Mr azotu cząsteczkowego N₂ wynosi 28.
 **B2.** Ze spalenia 4 g wodoru w 32 g tlenu powstanie 36 g wody.
 **B3.** W zadaniu z nadmiarem produkt oblicza się od substratu nadmiarowego.
 **B4.** Mr cząsteczki tlenu wynosi 16.
 **B5.** Zawartość procentowa wodoru w H₂O₂ wynosi około 5,9%.
 **B6.** Jeżeli kwas podano jako „200 g roztworu 7,3%", do proporcji stechiometrycznej wstawiamy 14,6 g.
+:::
 
-### C. Luka
+::: odp | Pokaż klucz
+B1 — **P** [1]
+B2 — **P** (stosunek dokładnie stechiometryczny 4:32) [1]
+B3 — **F** (od ograniczającego!) [1]
+B4 — **F** (atomu — cząsteczka to 32) [1]
+B5 — **P** [1]
+B6 — **P** (0,073 × 200 = 14,6 g czystego HCl) [1]
+:::
 
+::: karta exam | C. Luki (4 pkt)
 **C1.** Mr(MgO) = ____ ; zawartość % magnezu w nim = ____ %.
 **C2.** CH₄ + 2O₂ → CO₂ + 2H₂O: ze spalenia 8 g metanu powstanie ____ g CO₂.
 **C3.** 10 g CaCO₃ reaguje z 10 g HCl. Substratem ograniczającym jest ____.
 **C4.** Fe + CuSO₄ → FeSO₄ + Cu: z 5,6 g żelaza powstanie ____ g miedzi.
+:::
 
-### D. Dobieranie
+::: odp | Pokaż klucz
+C1 — 40; 60 [po 0,5]
+C2 — 22 (16→44: 8 × 44/16) [1]
+C3 — **CaCO₃** (10 g potrzebuje 7,3 g HCl < 10 g — HCl w nadmiarze) [1]
+C4 — 6,4 (56→64) [1]
+:::
 
+::: karta exam | D. Dobieranie (5 pkt)
 **D1.** Dopasuj Mr (dwie wartości są zbędne): **CH₄ · O₃ · Ca(OH)₂ · Al₂(SO₄)₃ · NH₃**
 pula: 16 · 17 · 32 · 48 · 64 · 74 · 342
+:::
 
-### E. Otwarte krótkie
+::: odp | Pokaż klucz
+D1 — CH₄→16 · O₃→48 · Ca(OH)₂→74 · Al₂(SO₄)₃→342 · NH₃→17; zbędne: 32 (O₂), 64 (SO₂) [po 1]
+:::
 
+::: karta exam | E. Otwarte krótkie (8 pkt)
 **E1.** Oblicz zawartość procentową tlenu w Al₂O₃.
 **E2.** Ile razy siarkowodór jest cięższy od wodoru?
 **E3.** Tlenek glinu zawiera 52,9% Al (reszta to tlen). Ustal wzór tego tlenku.
 **E4.** 6,4 g CuO zredukowano wodorem. Oblicz masę otrzymanej miedzi. Pokaż obliczenie.
 **E5.** 13 g cynku wprowadzono do 15 g czystego HCl. Który substrat jest w nadmiarze i o ile gramów? Ile wodoru wydzieli się?
+:::
 
-### F. Otwarte rozszerzone (pełny zapis!)
+::: odp | Pokaż klucz
+E1 — 48/102 × 100% ≈ **47,1%** [1 (zapis 0,5, wynik 0,5)]
+E2 — 34/2 = **17 razy** [1]
+E3 — 100 g: Al 52,9/27 ≈ 1,96; O 47,1/16 ≈ 2,94; stosunek ≈ 2:3 → **Al₂O₃** [2 (podział przez M 1, wzór 1)]
+E4 — 80:64 → 6,4 × 64/80 = **5,12 g** [1 (proporcja 0,5, wynik 0,5)]
+E5 — Zn potrzebuje 13 × 73/65 = 14,6 g HCl < 15 g → **HCl w nadmiarze o 0,4 g**; m(H₂) = 13 × 2/65 = **0,4 g** (liczone od Zn — ograniczający) [3 (kto nadmiar 1, o ile 1, H₂ 1)]
+:::
 
+::: adv | F1. Roztwór HCl i węglan wapnia (4 pkt) | poziom ambitny
 **F1.** Do 200 g roztworu kwasu solnego o stężeniu 7,3% dodano 25 g węglanu wapnia. Oblicz: (a) masę wydzielonego CO₂, (b) masę substratu, który pozostał w nadmiarze. We wszystkich krokach pokaż obliczenia.
+:::
+
+::: odp | Pokaż klucz
+F1a — m(HCl) = 0,073 × 200 = 14,6 g (1 pkt); dla 25 g CaCO₃ potrzeba 18,25 g HCl > 14,6 → ograniczający HCl (1); m(CO₂) = 14,6 × 44/73 = **8,8 g** (1) [3]
+F1b — zużyto CaCO₃ = 14,6 × 100/73 = 20 g → **pozostało 5 g CaCO₃** [1]
+:::
+
+::: adv | F2–F3. Skład tlenku i spalanie metanu (6 pkt) | poziom ambitny
 **F2.** Próbka tlenku żelaza o masie 40 g zawiera 70% Fe. (a) Oblicz masy Fe i O w próbce. (b) Ustal wzór tlenku. (c) Sprawdź, czy suma procentów wynosi 100%.
+
 **F3.** Spalono 8 g metanu. (a) Oblicz masę tlenu potrzebną do całkowitego spalania. (b) Oblicz masy CO₂ i H₂O. (c) Wykaż zapisem, że wyniki spełniają prawo zachowania masy.
+:::
 
-### KLUCZ I PUNKTACJA
-
-| Zad. | Odpowiedź | Punktacja |
-|---|---|---|
-| A1 | **c** | 1 |
-| A2 | **c** (80/64) | 1 |
-| A3 | **c** | 1 |
-| A4 | **b** (100:44 → 4,4) | 1 |
-| A5 | **a** — H₂ w ogromnym nadmiarze (potrzeba 0,2 g), liczymy od CuO: 8 × 64/80 = 6,4 g | 1 |
-| B1 | **P** | 1 |
-| B2 | **P** (stosunek dokładnie stechiometryczny 4:32) | 1 |
-| B3 | **F** (od ograniczającego!) | 1 |
-| B4 | **F** (atomu — cząsteczka to 32) | 1 |
-| B5 | **P** | 1 |
-| B6 | **P** (0,073 × 200 = 14,6 g czystego HCl) | 1 |
-| C1 | 40; 60 | po 0,5 |
-| C2 | 22 (16→44: 8 × 44/16) | 1 |
-| C3 | **CaCO₃** (10 g potrzebuje 7,3 g HCl < 10 g — HCl w nadmiarze) | 1 |
-| C4 | 6,4 (56→64) | 1 |
-| D1 | CH₄→16 · O₃→48 · Ca(OH)₂→74 · Al₂(SO₄)₃→342 · NH₃→17; zbędne: 32 (O₂), 64 (SO₂) | po 1 |
-| E1 | 48/102 × 100% ≈ **47,1%** | 1 (zapis 0,5, wynik 0,5) |
-| E2 | 34/2 = **17 razy** | 1 |
-| E3 | 100 g: Al 52,9/27 ≈ 1,96; O 47,1/16 ≈ 2,94; stosunek ≈ 2:3 → **Al₂O₃** | 2 (podział przez M 1, wzór 1) |
-| E4 | 80:64 → 6,4 × 64/80 = **5,12 g** | 1 (proporcja 0,5, wynik 0,5) |
-| E5 | Zn potrzebuje 13 × 73/65 = 14,6 g HCl < 15 g → **HCl w nadmiarze o 0,4 g**; m(H₂) = 13 × 2/65 = **0,4 g** (liczone od Zn — ograniczający) | 3 (kto nadmiar 1, o ile 1, H₂ 1) |
-| F1a | m(HCl) = 0,073 × 200 = 14,6 g (1 pkt); dla 25 g CaCO₃ potrzeba 18,25 g HCl > 14,6 → ograniczający HCl (1); m(CO₂) = 14,6 × 44/73 = **8,8 g** (1) | 3 |
-| F1b | zużyto CaCO₃ = 14,6 × 100/73 = 20 g → **pozostało 5 g CaCO₃** | 1 |
-| F2 | m(Fe) = 0,7 × 40 = **28 g**, m(O) = **12 g** (1); Fe: 28/56 = 0,5; O: 12/16 = 0,75; 0,5:0,75 = 2:3 → **Fe₂O₃** (1,5); 70% + 30% = 100% ✓ (0,5) | 3 |
-| F3 | 16:64:44:36 → m(O₂) = 8 × 64/16 = **32 g** (1); m(CO₂) = **22 g**, m(H₂O) = **18 g** (1); 8 + 32 = 40 = 22 + 18 ✓ (1) | 3 |
-
-Maksimum punktów w zestawie: **38 pkt** (suma kluczy A–F; zestaw ćwiczeniowy, nie wzór próbnego etapu) (lokalizacja: A/B/C/D = technika Mr i proporcji; E/F = pełne procedury i zapis).
+::: odp | Pokaż klucz
+F2 — m(Fe) = 0,7 × 40 = **28 g**, m(O) = **12 g** (1); Fe: 28/56 = 0,5; O: 12/16 = 0,75; 0,5:0,75 = 2:3 → **Fe₂O₃** (1,5); 70% + 30% = 100% ✓ (0,5) [3]
+F3 — 16:64:44:36 → m(O₂) = 8 × 64/16 = **32 g** (1); m(CO₂) = **22 g**, m(H₂O) = **18 g** (1); 8 + 32 = 40 = 22 + 18 ✓ (1) [3]
+:::
 
 ---
 
@@ -293,6 +327,68 @@ Maksimum punktów w zestawie: **38 pkt** (suma kluczy A–F; zestaw ćwiczeniowy
 10. **Nieużywana kontrola zachowania masy** → 30 sekund dzielenia/dodawania ratuje cały wynik w zadaniu F3-typu. Zapisz kontrolę wprost — bywa też osobnym punktem rubryki.
 
 ---
+
+## 6 | Fiszki {#fiszki}
+
+::: fiszki
+Mr cząsteczki O₂ | 32 (nie 16 — to masa atomu) | basic:podstawa
+Mr Al₂O₃ | 102 (2·27 + 3·16) | basic:podstawa
+Ile procent tlenu jest w Al₂O₃? | 48/102 ≈ 47,1% | basic:podstawa
+Jak ustalić wzór z procentów? | dzielimy procenty przez masy atomowe, potem przez najmniejszą liczbę | understand:rozumienie
+Jaki jest pierwszy krok zadania z nadmiarem? | ustal substrat ograniczający | understand:rozumienie
+Ile razy H₂S jest cięższy od H₂? | 34/2 = 17 | basic:podstawa
+Co liczy się w proporcji masowej? | masy pod równaniem (iloczyny mol · M z współczynnikami) | basic:podstawa
+Dlaczego woda w roztworze nie wchodzi do proporcji? | nie bierze udziału w reakcji | understand:rozumienie
+:::
+
+## 7 | Słownik {#slownik}
+
+::: slownik
+Masa cząsteczkowa (Mr) :: suma mas atomowych atomów w cząsteczce, bez jednostki
+Substrat ograniczający :: substrat, który przereaguje pierwszy i wyznacza ilość produktu
+Skład procentowy :: udział masy danego pierwiastka w masie związku, w procentach
+Proporcja masowa :: stosunek mas substratów i produktów wynikający z równania z uwzględnieniem współczynników
+Pierwiastek cząsteczkowy :: pierwiastek, którego cząsteczki składają się z dwóch lub więcej atomów (H₂, O₂, N₂, Cl₂)
+:::
+
+## 8 | Test {#test}
+
+::: test
+? Mr O₂ wynosi:
+- 16
++ 32
+- 64
+- 8
+! O₂ to cząsteczka dwuatomowa: 2·16 = 32.
+
+? Zawartość procentowa tlenu w Al₂O₃ wynosi około:
+- 33%
++ 47%
+- 53%
+- 68%
+! 48/102 · 100% ≈ 47%.
+
+? Z 8 g CH₄ (metan, spalanie całkowite) powstanie CO₂ o masie:
+- 4,4 g
+- 8 g
++ 22 g
+- 44 g
+! 8 · 44/16 = 22 g.
+
+? W zadaniu z dwiema masami substratów pierwszy krok to:
+- policzyć produkt
++ ustalić substrat ograniczający
+- zsumować masy
+- pominąć współczynniki
+! Bez tego kroku wynik jest zawsze podejrzany.
+
+? Woda w roztworze 7,3% HCl (200 g):
+- wchodzi do proporcji w całości
++ nie wchodzi do proporcji, liczymy tylko 14,6 g HCl
+- zmienia Mr kwasu
+- trzeba ją odjąć od wyniku
+! Woda nie bierze udziału w reakcji.
+:::
 
 ## Ciekawostki
 
