@@ -232,3 +232,45 @@ m(KNO₃) = 300 · 110 ÷ 210 ≈ 157,1 g; m(wody) = 300 − 157,1 = 142,9 g (1 
 :::
 
 **Razem: 30 pkt (zadania podstawowe „exam”); zadania ambitne „adv” — 8 pkt dodatkowo, poza sumą.**
+
+::: fiszki
+Rozpuszczalność — definicja | maksymalna masa substancji w 100 g wody w danej temperaturze (g/100 g H₂O) | definicje
+Roztwór nasycony | zawiera dokładnie maksimum; nadmiar leży na dnie | roztwory
+Roztwór nienasycony | mniej niż maksimum — rozpuści jeszcze więcej | roztwory
+Roztwór przesycony | ponad maksimum; nietrwały — kryształek-zarazek wywołuje krystalizację | roztwory
+Krzywa rozpuszczalności | wykres S(T); odczyt w dwie strony: T→ilość, ilość→T | wykresy
+S(KNO₃): 20/60/70 °C | 32 / 110 / 138 g/100 g H₂O | dane
+S(NaCl) 0–100 °C | ok. 36–37 g — krzywa prawie płaska | dane
+Gazy a temperatura | rozpuszczalność maleje z T (a rośnie z ciśnieniem) | gazy
+Krystalizacja przez ochłodzenie | skuteczna dla stromych krzywych (KNO₃); nie działa dla NaCl | krystalizacja
+Krystalizacja przez odparowanie | działa zawsze; jedyna sensowna droga dla NaCl | krystalizacja
+Wzór na osad przy ochłodzeniu | m(osadu) = [S(T₁) − S(T₂)] · (m wody / 100 g) | wzory
+„110%" jako stężenie KNO₃ | błąd: 110 g przypada na 100 g wody; roztwór waży 210 g (Cp — R03) | pułapki
+:::
+
+::: test
+? Rozpuszczalność KNO₃ w 60 °C wynosi 110 g/100 g H₂O. To znaczy, że:
++ w 100 g wody w 60 °C rozpuści się maksymalnie 110 g KNO₃
+- w 100 g roztworu jest 110 g KNO₃
+- roztwór ma stężenie 110%
+
+? Roztwór zawierający więcej substancji niż wynosi rozpuszczalność (w danej T), trwały do dodania kryształka, to:
++ roztwór przesycony
+- nasycony
+- nienasycony
+
+? Rozpuszczalność gazów w wodzie przy wzroście temperatury:
++ maleje
+- rośnie
+- się nie zmienia
+
+? Nasycony roztwór KNO₃ w 70 °C (100 g wody) schłodzono do 20 °C. Wykrystalizuje:
++ 138 − 32 = 106 g
+- 138 g
+- 110 − 32 = 78 g
+
+? Dlaczego sól kuchenną pozyskuje się odparowaniem, a nie ochładzaniem solanki?
++ krzywa rozpuszczalności NaCl jest prawie płaska — chłodzenie daje śladowy osad
+- NaCl rozkłada się w wysokiej temperaturze
+- rozpuszczalność NaCl maleje z temperaturą gwałtownie
+:::

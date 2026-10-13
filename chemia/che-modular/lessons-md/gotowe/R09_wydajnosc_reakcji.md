@@ -174,3 +174,45 @@ n(CaCO₃) = 100 ÷ 100 = 1 mol → po etapie 1: 1 · 0,9 = 0,9 mol CaO (1 pkt).
 :::
 
 **Razem: 33 pkt (zadania podstawowe „exam”); zadania ambitne „adv” — 8 pkt dodatkowo, poza sumą.**
+
+::: fiszki
+Wydajność reakcji — wzór | m(rzeczywista) / m(teoretyczna) · 100% | definicje
+m teoretyczna | maksimum z równania — liczone dla reagenta ograniczającego | definicje
+Czego dotyczy wydajność? | produktu (dzielenie przez masę substratu — błąd pojęciowy) | pułapki
+Kierunek A obliczeń | znane obie masy → wydajność = m(rzecz)/m(teor)·100% | wzory
+Kierunek B obliczeń | znana wydajność → m(rzecz) = (wydajność/100%) · m(teor) | wzory
+Kierunek C obliczeń | zadana masa produktu przy wydajności → m(teor) = m(rzecz)/(wydajność/100%) | wzory
+Sekwencja z nadmiarem | mole → ograniczający → m teoretyczna → wydajność (kolejność sztywna) | procedura
+Wydajność 130% | sygnał błędu rachunku albo założeń (zakres 0–100%) | pułapki
+Przykład lekcji | m teor 6,6 g CO₂, wydajność 90% → 5,94 g (i odwrotnie) | przykład
+Przyczyny strat | przenoszenie, sączenie, reakcje uboczne, niepełny przebieg, zanieczyszczenia | przyczyny
+Wydajności etapów łańcucha | się mnożą: 0,9 · 0,9 = 0,81 → 81% całości | strategia
+Wyjaśnienie zadania 7 | 6,6/20·100% = 33% — zły mianownik: substrat zamiast produktu teoretycznego | pułapki
+:::
+
+::: test
+? Wydajność reakcji to stosunek:
++ masy rzeczywistej produktu do masy teoretycznej produktu
+- masy produktu do masy substratu
+- masy substratu do masy produktu
+
+? Teoretycznie powinno wydzielić się 0,2 g H₂, zebrano 0,16 g. Wydajność:
++ 80%
+- 125%
+- 20%
+
+? Teoretycznie 6,6 g CO₂, wydajność 90%. Zebrano:
++ 5,94 g
+- 7,33 g
+- 0,594 g
+
+? Zadanie z nadmiarem i wydajnością — poprawna kolejność:
++ mole → reagent ograniczający → m teoretyczna → wydajność
+- wydajność → mole → ograniczający
+- m teoretyczna z każdego substratu osobno, potem suma
+
+? Wydajność dokładnie 100%:
++ teoretycznie możliwa, praktycznie nie występuje (zawsze są minimalne straty)
+- niemożliwa nawet teoretycznie
+- standardowa w laboratorium
+:::

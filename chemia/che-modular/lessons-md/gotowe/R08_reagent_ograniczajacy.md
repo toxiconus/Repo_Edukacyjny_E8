@@ -166,3 +166,43 @@ n(Zn) = 13 ÷ 65 = 0,2 mol (1 pkt). Na 0,2 mol Zn potrzeba 0,4 mol HCl, a jest 0
 :::
 
 **Razem: 30 pkt (zadania podstawowe „exam”); zadania ambitne „adv” — 8 pkt dodatkowo, poza sumą.**
+
+::: fiszki
+Reagent ograniczający | substrat, który wyczerpie się pierwszy — wyznacza maksimum produktu | definicje
+Substrat w nadmiarze | część zostaje po reakcji; nie wyznacza ilości produktu | definicje
+Krok 1 procedury | masy → mole: n = m/M (dla każdego substratu) | procedura
+Krok 2 procedury | porównanie moli ze stosunkiem ze równania — kto zabraknie? | procedura
+Krok 3 procedury | produkt z ograniczającego; nadmiar = start − zużyty | procedura
+Dlaczego nie porównujemy gramów? | współczynniki równania mówią o cząstkach/molach; masy molowe są różne | pułapki
+Przykład lekcji: HCl + CaCO₃ | ogranicza HCl (0,3 mol); CO₂ = 6,6 g; zostaje 5 g CaCO₃ | przykład
+Stosunek CaCO₃ : HCl = 1 : 2 | na 0,2 mol CaCO₃ potrzeba 0,4 mol HCl — mamy 0,3 → brakuje HCl | przykład
+Kontrola końcowa | bilans masy: substraty = produkty + pozostały nadmiar | strategia
+Analogia kanapek | 2 kromki + 1 ser: 8 kromek i 3 sery → 3 kanapki, ser ogranicza | analogia
+:::
+
+::: test
+? Reagent ograniczający to substrat:
++ który wyczerpie się pierwszy i wyznacza maksimum produktu
+- który jest w większej masie
+- który zawsze zostaje po reakcji
+
+? Pierwszy krok procedury to:
++ przeliczenie masy każdego substratu na mole (n = m/M)
+- porównanie mas substratów
+- wyznaczenie produktu
+
+? „HCl: 10,95 g, CaCO₃: 20 g, więc CaCO₃ w nadmiarze, bo waży więcej" — błąd, ponieważ:
++ porównano gramy zamiast moli (M: 36,5 vs 100 g/mol)
+- porównano molsze zamiast gramów
+- HCl nie reaguje z CaCO₃
+
+? 4 g H₂ (2 mol) i 16 g O₂ (0,5 mol), reakcja 2H₂ + O₂ → 2H₂O. Ogranicza:
++ O₂ — powstanie 1 mol (18 g) H₂O, zostanie 2 g H₂
+- H₂ — powstanie 2 mol H₂O
+- żadna — reakcja w proporcji
+
+? 10 kromek chleba i 4 plasterki sera (kanapka = 2 kromki + 1 ser). Zrobi się:
++ 4 kanapki, zostaną 2 kromki — ogranicza ser
+- 5 kanapek, ogranicza chleb
+- 4 kanapki, ogranicza chleb
+:::

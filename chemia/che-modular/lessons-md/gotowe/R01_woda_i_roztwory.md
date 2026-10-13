@@ -256,3 +256,45 @@ Typowe zadanie: „dopisz stany skupienia w równaniu". Zasady-ratowniki: metal 
 :::
 
 **Razem: 31 pkt (zadania podstawowe „exam”); zadania ambitne „adv” — 7 pkt dodatkowo, poza sumą.**
+
+::: fiszki
+Cząsteczka wody — kształt i ładunki? | kątowa (ok. 104,5°), tlen δ⁻, wodory δ⁺ — dipol | woda
+Podobne rozpuszcza podobne | polarny rozpuszcza polarny i jonowy; niepolarny — niepolarny | zasada
+Roztwór | mieszanina jednorodna: substancja rozpuszczona + rozpuszczalnik; cząstki molekularne/jonowe | mieszaniny
+Zawiesina | drobiny ciała stałego w cieczy; opadają; zatrzymuje je sączek | mieszaniny
+Koloid | drobinki ok. 1–1000 nm; nie opadają; sączek ich nie zatrzymuje | mieszaniny
+Efekt Tyndalla | wiązka światła widoczna w koloidzie (rozpraszanie); w roztworze niewidoczna | mieszaniny
+Emulsja | koloid typu ciecz-w-ciecz (mleko, majonez) | mieszaniny
+Hydratacja | otoczenie jonu powłoką cząsteczek wody (tlen ku Na⁺, wodorami ku Cl⁻) | wodne
+Zapis (aq) | roztwór wodny — substancja rozproszona jako jony/cząsteczki | zapisy
+Trzy dźwignie szybkości rozpuszczania | rozdrobnienie, mieszanie, temperatura; nie zwiększają rozpuszczalności (poza T) | rozpuszczanie
+Czy rozpuszczanie soli to reakcja chemiczna? | zwykle nie — proces fizyczny; odparowanie wody daje zwrot substratu | pułapki
+NaCl(s) w wodzie → ? | Na⁺(aq) + Cl⁻(aq) — rozdzielone jony (dysocjacja — J01) | jony
+:::
+
+::: test
+? Cząsteczka wody jest polarna, ponieważ:
++ wiązania O–H są polarne, a kątowa budowa nie pozwala dipolom się znosić
+- jest liniowa i symetryczna jak CO₂
+- tlen i wodory mają jednakowe elektroujemności
+
+? Wiązka lasera widoczna jako smuga wewnątrz próbki — to cecha:
++ koloidu (efekt Tyndalla)
+- roztworu rzeczywistego
+- każdej mieszaniny
+
+? Intensywne mieszanie nasyconego roztworu z kryształkiem na dnie:
++ nie rozpuści kryształka — mieszanie zwiększa szybkość, nie rozpuszczalność
+- rozpuści kryształek szybciej
+- zwiększy rozpuszczalność soli
+
+? Zapis Na⁺(aq) oznacza kation sodu:
++ rozproszony w wodzie, otoczony powłoką hydratacyjną
+- w postaci gazu
+- połączony jonowo z Cl⁻ jak w krysztrale
+
+? Olej nie rozpuszcza się w wodzie, bo:
++ cząsteczki oleju są niepolarne, a woda polarna („podobne rozpuszcza podobne")
+- olej jest cięższy od wody
+- woda jest rozpuszczalnikiem uniwersalnym
+:::

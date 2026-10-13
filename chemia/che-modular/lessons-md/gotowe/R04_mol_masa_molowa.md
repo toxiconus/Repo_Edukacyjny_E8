@@ -293,3 +293,45 @@ n = 0,05 g ÷ 18 g/mol ≈ 2,78·10⁻³ mol (1 pkt). N(H₂O) = 2,78·10⁻³ �
 :::
 
 **Razem: 35 pkt (zadania podstawowe „exam”); zadania ambitne „adv” — 7 pkt dodatkowo, poza sumą.**
+
+::: fiszki
+Mol | porcja 6,02·10²³ cząstek (atomów, cząsteczek, jonów) | definicje
+Liczba Avogadra N_A | 6,02·10²³ mol⁻¹ (dokładnie 6,02214076·10²³ od SI 2019) | definicje
+Masa molowa M | masa 1 mola w g/mol; liczbowo równa masie cząsteczkowej Mr | definicje
+n = m/M | przeliczenie masa → mole | wzory
+m = n·M | przeliczenie mole → masa | wzory
+N = n·N_A | przeliczenie mole → liczba cząstek | wzory
+n = N/N_A | przeliczenie liczba cząstek → mole | wzory
+M(H₂O) | 2·1 + 16 = 18 g/mol | obliczenia
+M(CaCO₃) | 40 + 12 + 3·16 = 100 g/mol | obliczenia
+Masa ↔ cząstki | zawsze przez mole — dwa kroki, nigdy „na przełaj" | strategia
+1 mol O vs 1 mol O₂ | 16 g vs 32 g — atomy vs cząsteczki (2 mole atomów w molu O₂) | pułapki
+Współczynniki równania mówią o | stosunku molowym, nie masowym (2H₂ + O₂ → 2H₂O) | zapowiedź
+:::
+
+::: test
+? Jeden mol to porcja:
++ 6,02·10²³ cząstek
+- 6,02·10²³ gramów
+- 22,4 cząstek
+
+? 36 g wody (M = 18 g/mol) to:
++ 2 mol
+- 0,5 mol
+- 18 mol
+
+? Ile waży 0,5 mol CO₂ (M = 44 g/mol)?
++ 22 g
+- 44 g
+- 88 g
+
+? 1 mol atomów tlenu i 1 mol cząsteczek tlenu mają masy:
++ 16 g i 32 g — to różne porcje masy, ta sama liczba cząstek
+- 32 g i 32 g — to to samo
+- 16 g i 16 g — bo tlen to tlen
+
+? Co ma więcej cząsteczek: 18 g H₂O czy 22 g CO₂?
++ 18 g H₂O (1 mol vs 0,5 mol)
+- 22 g CO₂
+- tyle samo
+:::
