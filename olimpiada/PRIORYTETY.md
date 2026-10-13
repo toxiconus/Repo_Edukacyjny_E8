@@ -8,9 +8,9 @@ Pakiet 2026/27 (regulamin, terminarz, zakresy) **nie jest jeszcze opublikowany**
 
 | | chemia 2025/26 | biologia 2025/26 | 2026/27 (pośrednio, niepotwierdzone) |
 |---|---|---|---|
-| etap szkolny | 20.10.2025, 60 min | 16.10.2025, 60 min | chem ~23.10, bio ~21.10 |
-| rejonowy | 26.11.2025, 90 min | 24.11.2025, 90 min | — |
-| wojewódzki | 10.02.2026, 90 min | 06.02.2026, 90 min | — |
+| etap szkolny | 20.10.2025, 60 min | 16.10.2025, 60 min | **chem 23.10.2026, 9:00, 60 min** (terminarz LKO 2026/27) · bio 21.10.2026 |
+| rejonowy | 26.11.2025, 90 min | 24.11.2025, 90 min | **chem 26.11.2026, 9:00, 90 min** · bio 24.11.2026 |
+| wojewódzki | 10.02.2026, 90 min | 06.02.2026, 90 min | **chem 26.02.2027, 10:00, 90 min** · bio 24.02.2027 |
 
 **Zakresy 2025/26 (oficjalne, OCR: `zrodla/LKO/Zakresy_2025_2026_chemia_biologia_OCR.md`)**
 

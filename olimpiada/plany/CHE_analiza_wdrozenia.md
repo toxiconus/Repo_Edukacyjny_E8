@@ -105,3 +105,24 @@ Uczennica startuje z województwa lubelskiego. Ścieżka praktyczna to więc LKO
 - Podany przez użytkownika link `kuratorium.lublin.pl/?akc=drnews&id=14268` jest zablokowany dla robotów (robots.txt), więc nie da się go pobrać. Wyszukiwanie nie znalazło terminarza LKO 2026/27.
 - Data **20.10.2025** (etap szkolny chemii) dotyczy **roku 2025/26**, nie 2026/27. Nie potwierdza terminu 2026/27 (repo: ~23.10, niepotwierdzone).
 - Do zamknięcia: plik „Terminarz eliminacji 2026/2027” i „Zakresy wymagań” z kuratorium Lublin albo info od nauczyciela. Bez tego zakres i daty w `PRIORYTETY.md` pozostają orientacyjne.
+
+## 10. LKO 2026/27 — dokumenty oficjalne (potwierdzone 2026-10-13)
+Pliki: `olimpiada/plany/LKO_2026_27/` (terminarz, regulamin, zakresy + wyciąg chemii `chemia_zakres_2026_2027.md`).
+
+**Terminarz (chemia):**
+- Etap szkolny: **23.10.2026**, start 9:00, 60 min, wyniki dla dyrektorów 6.11.2026.
+- Etap rejonowy: **26.11.2026**, start 9:00, 90 min, wyniki 16.12.2026.
+- Etap wojewódzki: **26.02.2027**, start 10:00, 90 min, wyniki 17.03.2027.
+- Ostateczna lista wojewódzka: do 15.01.2027 (rejonowy); lista laureatów: do 23.04.2027.
+
+**Zakres chemii 2026/27 — zmiany względem 2025/26:**
+- Etap I: pkt I–V podstawy (nie I–VII), plus: konfiguracje elektronowe grup 1, 2, 13–18 do Z = 36 (także jony); typy reakcji; wzory z wartościowości i obliczeń.
+- Etap II: pkt I–VIII, plus: **wodorki niemetali (amoniak, chlorowodór, siarkowodór)**; sole z innej soli; jonowe równania otrzymywania kwasów, wodorotlenków, soli; szereg aktywności metali; kwasy z soli; masy cząsteczkowe; stechiometria (także niestechiometryczna).
+- Etap III: wszystko z II + pkt VII, IX, X (alkany do C5, halogenowanie, addycja do alkenów wg Markownikowa, alkohole, kwas metanowy/etanowy/propanowy, estry, glukoza/fruktoza/sacharoza/skrobia/celuloza, fermentacja, hydroliza, wzory elementarne, mol/Avogadro/masa molowa/objętość molowa).
+- Kalkulator prosty dozwolony na każdym etapie.
+
+**Skutki dla planu:**
+- **N06 (amoniak) jest w zakresie od etapu II (26.11), nie etapu I (23.10).** Odpowiedź zewnętrzna zakładała etap I — wymaga przesunięcia.
+- Etap szkolny (23.10) to pkt I–V + konfiguracje do Z = 36, bez wodorków i stechiometrii.
+- Organika (węglowodory, alkohole, estry, cukry) dopiero etap III (26.02.2027) — zgodnie z PRIORYTETY sekcja 3.
+- PRIORYTETY.md zaktualizowany o te daty (commit w tej sesji).
