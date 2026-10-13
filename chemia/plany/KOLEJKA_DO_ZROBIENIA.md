@@ -2,6 +2,9 @@
 
 Stan na 2026-10-13. Punkty dopisywane w kolejności zgłaszania; po zrobieniu oznaczać `[x]` z datą i commitem.
 
+- [ ] F05: wykres słupkowy udziałów izotopów Cl (³⁵Cl/³⁷Cl) — GFX_TODO_F05.md.
+- [ ] F05: sprawdzić, czy model `f05-izotopy-v01` obsługuje średnią ważoną i liczenie p, n, e.
+- [ ] F06: tryby F06 w `periodic-54` (okres/grupa, blok, e⁻ walencyjne, promień kowalencyjny, I) — GFX_TODO_F06.md; COVALENT_RADIUS_EXT do weryfikacji.
 - [ ] F04: zbudować model `f04-nuklid-v01` (trening zapisu nuklidu, §3) w silniku — jest w tabeli modeli, brak pliku (`chemia/plany/audyty/GFX_TODO_F04.md`).
 - [ ] F04: grafika „Atom zoom” (skala + konstruktor atomu/jonu + animacja Rutherforda) — opis w GFX_TODO_F04.md.
 

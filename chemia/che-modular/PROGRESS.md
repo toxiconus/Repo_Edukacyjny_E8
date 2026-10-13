@@ -207,3 +207,4 @@
 - 2026-10-13: K03 — ULEPSZONA (Perplexity) wczytana. Poprawiono błąd rachunkowy w bilansie z lodem (20,04 °C, nie 1,86 °C). Przywrócono ściągę, ćwiczenia, fiszki i test. Build OK.
 - 2026-10-13: K04 — ULEPSZONA (Perplexity) wczytana. Przywrócono przypomnienie, jednostki, metody pomiaru, przykłady, ćwiczenia, fiszki, test, mnemotechniki, mosty, ciekawostki i hasła słownika. Build OK.
 - 2026-10-13: K05 — ULEPSZONA (Perplexity) wczytana. Przywrócono przypomnienie, natura reagentów, ćwiczenia, fiszki, ciekawostki, test, mosty; dopisano 3 wiersze kliniki i 3 hasła. Naprawiono link do nieistniejącej sekcji i zdublowane hasło. Build OK.
+- 2026-10-13: F04, F05, F06 — audyty W1 04–06 wprowadzone do lekcji gotowych (sekcje „AUDYT W1”, rejestr WERYFIKACJA.md, surowe audyty w chemia/plany/audyty/). Build OK. Otwarte: GFX (f04-nuklid-v01, Atom zoom, wykres izotopów Cl, model periodic-54 F06) — chemia/plany/audyty/GFX_TODO_F0[4-6].md.
