@@ -41,3 +41,8 @@ Format: lekcja źródłowa → lekcja docelowa — co z czego wynika.
 - LKO-METALE → LKO-DOSW — HCl vs CuO/Cu i szereg aktywności w matrycach (APPLY).
 - N06 → LKO-DOSW — karty gazów (APPLY).
 - LKO-DOSW → J11 — analiza jakościowa jako zapowiedź (zapowiedź).
+- LKO-METALE → LKO-B1+B2 — zadania z szeregu i równań jonowych w zestawie B1 (APPLY).
+- N06 → LKO-B1+B2 — wodorki i ich testy w zestawie B2 (APPLY).
+- LKO-STECH → LKO-B1+B2 — stechiometria z nadmiarem i przypadek graniczny w B2 (APPLY).
+- LKO-DOSW → LKO-B1+B2 — planowanie doświadczenia i obserwacja vs wniosek w B2 (APPLY).
+- LKO-B1+B2 → LKO-SYM-A2 — trening przed symulacją (przygotowuje).

@@ -77,6 +77,7 @@ for kod,co,st in [
     ("LKO-METALE","Szereg aktywności, równania jonowe, otrzymywanie soli (LKO etap II)","szkic 2026-10-13, bez audytu W1"),
     ("LKO-STECH","Masy cząsteczkowe i stechiometria z nadmiarem (LKO etap II)","szkic 2026-10-13, bez audytu W1"),
     ("LKO-DOSW","Katalog doświadczeń: schemat opisu, obserwacja vs wniosek, matryce (LKO I–II)","szkic 2026-10-13, bez audytu W1"),
+    ("LKO-B1+B2","Zestawy treningowe etapu II (B1 szereg/jonowe, B2 wodorki/stechiometria) z mixem etapu I","szkic 2026-10-13, bez audytu W1"),
     ("N06","Wodorki: wodór, amoniak, HCl, H₂S (LKO II rozsz. 1)","szkic 2026-10-13, W1 + W2"),
 ]:
     out.append(f"| {kod} | {co} | {st} |")
