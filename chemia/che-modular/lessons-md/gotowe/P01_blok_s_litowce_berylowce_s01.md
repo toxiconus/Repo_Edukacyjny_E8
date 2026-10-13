@@ -328,6 +328,7 @@ Wodorotlenek :: związek metalu z grupą wodorotlenową –OH, wzór ogólny M(O
 Zasada :: wodorotlenek, który w wodzie dysocjuje na kation metalu i jony OH⁻ (wg Arrheniusa); rozpuszczalność to osobna cecha
 Nafta :: ciecz używana do przechowywania metali reaktywnych, odcina dostęp powietrza
 Nadtlenek :: związek zawierający jon O₂²⁻, np. Na₂O₂
+Ponadtlenek :: związek zawierający jon O₂⁻, np. KO₂
 Amfoteryczność :: zdolność związku do reagowania zarówno z kwasami, jak i z zasadami
 Energia jonizacji :: energia potrzebna do oderwania elektronu od atomu w fazie gazowej (lo)
 :::

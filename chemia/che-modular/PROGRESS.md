@@ -166,3 +166,4 @@
 - 2026-10-13: P01 — poprawka tlenków Na (bez „temperatury pokojowej” — niepotwierdzone) i Ba (BaO₂ przy ogrzewaniu, LibreTexts); PRODUKT: Na, Sr. Build + test OK. Szczegóły: plany/audyty/P01_podplik_odrzucone_i_odlozone.md §6.
 - 2026-10-13: P01 — czwarta sekwencja palników „Nadtlenki: Na, Sr, Ba” (produkty Na₂O₂, SrO z SrO₂, BaO₂), status wizualizacji dla spalania baru. Build + test OK (56).
 - 2026-10-13: P01 — w „Spalaniu i utlenianiu” Sr zastąpiony Ca (Sr zostaje tylko w „Nadtlenkach”; Ca ma wspólny produkt CaO z sekwencją płomieniową, pytanie inne). Build + test OK (56).
+- 2026-10-13: P01 — słownik osobny (lessons-md/slowniki/P01_slownik.md, pełne definicje); w §11 dopisane Ponadtlenek (był u Sonneta, brak w md). Test OK (56). Skill lekcja-od-zera-w1: propozycja ulepszenia (inwentarz cudzych propozycji, słownik dwuwarstwowy, etapy 7/11/13, wiele lekcji naraz).
