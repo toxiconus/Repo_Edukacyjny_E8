@@ -10,14 +10,22 @@ poglebia: "N07; P01–P02; J01; J04"
 wlasciciel: "wodór (systematycznie); amoniak; kation amonu i sole amonowe; kwasy a sole (dopisek podstawy); chlorowodór i kwas solny; siarkowodór i kwas siarkowodorowy; zasada wypierania lotnych składników; systematyka wodorków (warstwa LO)"
 zrodla: "podstawa programowa SP (pkt IV i VII po nowelizacji); zakres OCJ Etap I; zakres LKO etap II (rozszerzenie 1: wodorki niemetali); dane rozpuszczalności HCl i H₂S wg danych referencyjnych (Wikipedia, 20 °C) — do weryfikacji"
 opis: "E8: wodór — otrzymywanie, właściwości, wykrywanie, BHP; amoniak i kation amonu; kwasy a sole. LKO etap II: chlorowodór i kwas solny, siarkowodór i kwas siarkowodorowy — pełny zestaw wodorków niemetali z jedną tabelą porównawczą. LO/OL: systematyka wodorków, Haber jakościowo. Zadania 1–20; klucz; błędy typowe."
-stan: "szkic — 2026-10-13 (W1 wodór/amoniak/kation amonu + W2 HCl/H₂S, zadania 15–20); bez audytu W1/W2 — do przeglądu"
+stan: "pełna struktura — 2026-10-13, bez audytu W1/W2"
 kicker: "N06 · LKO II"
 lead: "Wodorki niemetali: wodór, amoniak i kation amonu, chlorowodór i siarkowodór. Jedna zasada — trudnolotny wypiera lotny — spina metody otrzymywania gazów, a jedna tabela porównuje wszystkie trzy gazy."
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:LKO II / LO / OLIMP]]
-stopka: "**CHEMIA N06 szkic** · Wodorki · 2026"
+stopka: "**CHEMIA N06** · Wodorki · 2026"
 ---
 
 # N06 — Wodorki: wodór, amoniak i kation amonu
+
+::: minimum | Muszę umieć na LKO II i OCJ — 10 punktów
+1. **Wodór:** otrzymywanie (metal + kwas), spalanie, redukcja CuO; próba czystości zawsze przed podpaleniem.
+2. **Amoniak:** budowa (wolna para), zbieranie dnem do góry, zasadowy odczyn NH₃ + H₂O ⇌ NH₄⁺ + OH⁻.
+3. **Kation amonu:** sole amonowe, wzory i nazwy, wykrywanie NaOH + podgrzanie + lakmus.
+4. **Zasada wypierania:** trudnolotny wypiera lotny (NaCl + H₂SO₄ → HCl; FeS + HCl → H₂S).
+5. **HCl i H₂S:** gaz vs roztwór, mocny vs słaby kwas, wykrywanie przez AgCl↓ i PbS↓.
+:::
 
 ## Lustro i most
 
@@ -225,6 +233,10 @@ Wniosek: próbka zawiera **kation amonowy**. Zapamiętaj sprzężenie: **zasada 
 
 ---
 
+::: karta understand | W skrócie — dwie metody, jeden wzór myślenia
+Gaz zbieramy według gęstości względem powietrza (M = 29) i rozpuszczalności w wodzie. Lżejszy od powietrza (H₂, NH₃) — dnem do góry; cięższy (HCl, H₂S) — dnem do dołu; praktycznie nierozpuszczalny (H₂) — nad wodą.
+:::
+
 ## 4 | Wykład — Kwasy a sole (dopisek do podstawy)
 
 Schemat: **kwas + sól → nowy kwas + nowa sól**. Reakcja zachodzi, gdy powstaje **osad**, **gaz** albo **kwas słabszy/lotniejszy** — coś musi „wypaść" z układu.
@@ -351,6 +363,10 @@ Jeśli w mieszaninie może powstać gaz — reakcja biegnie, a gaz ucieka. Ta je
 zasada odpowiada na pytania „czy reakcja zajdzie?" dla całego bloku wodorków.
 
 ---
+
+::: karta understand | W skrócie — kwas silny, kwas słaby, ten sam gaz
+HCl w wodzie dysocjuje prawie całkowicie (kwas mocny). H₂S dysocjuje tylko częściowo (kwas słaby). Gaz HCl i jego roztwór to dwie różne substancje: jedna z cząsteczkami kowalencyjnymi, druga z jonami.
+:::
 
 ## 7 | Wykład [LKO-II] — Siarkowodór H₂S i kwas siarkowodorowy
 
@@ -490,61 +506,88 @@ prawie zawsze są pionowe („dany gaz: jak zbierasz? co zobaczysz?").
 
 ---
 
-## ZADANIA
+## 8 | Zadania — karty exam i adv {#zadania}
 
-### Poziom E8 (1–5)
-
+::: karta exam | A. Poziom E8 — zadania 1–3 (6 pkt)
 1. Zapisz równanie reakcji cynku z kwasem solnym. Wskaż objawy i uzasadnij, dlaczego gaz zbieramy przez wypieranie wody, a nie powietrza.
+
 2. Wyjaśnij, na czym polega próba czystości wodoru. Co słyszysz, gdy gaz jest czysty, a co — gdy zawiera powietrze? Dlaczego ten test jest obowiązkowy?
+
 3. Wymień trzy właściwości fizyczne amoniaku i wyprowadź z nich DWA wnioski praktyczne: jak go zbierać i czego nie wolno robić przy zbieraniu.
-4. Uzupełnij: NH₃ + H₂O ⇌ ____ + ____. Jak zabarwi się fenoloftaleina w tym roztworze i jak nazywa się taki roztwór?
-5. Zapisz wzory i nazwy soli amonowych powstałych z NH₄⁺ oraz: Cl⁻, SO₄²⁻, NO₃⁻, PO₄³⁻, CO₃²⁻.
+:::
 
-### Poziom OCJ — Etap I (6–11)
-
-6. Masz próbkę nawozu. Zaprojektuj doświadczenie potwierdzające obecność kationu amonu (zapisy, obserwacje) i zapisz równanie, przyjmując że nawóz to (NH₄)₂SO₄.
-7. Dwa patyczki zbliżono — pojawiła się ściana białych dymów. Co to za substancja? Zapisz równanie i wyjaśnij, czym „dym" różni się od „mgiełki".
-8. Napisz trzy równania: (a) otrzymywanie NH₃ w laboratorium z chlorku amonu, (b) metoda Habera, (c) rozkład termiczny węglanu amonu.
-9. **Detektyw:** trzy nieopisane probówki: rozcieńczony HCl, woda amoniakalna, woda destylowana. Masz cynk, fenoloftaleinę i papiery lakmusowe. Ułóż kolejność testów, podaj obserwacje i równanie reakcji z cynkiem.
-10. Do 10,7 g chlorku amonu dodano nadmiar NaOH i podgrzano. Oblicz masę wydzielonego amoniaku (M: NH₄Cl = 53,5; NH₃ = 17).
-11. Uzasadnij, dlaczego NH₃ zbieramy w zlewce dnem do góry, a H₂ — nad wodą. Jakie dodatkowe ryzyko bywało związane ze zbieraniem H₂ przez wypieranie powietrza?
-
-### Poziom LO/OL (12–14)
-
-12. Sklasyfikuj wodorki: PH₃, CaH₂, H₂S, SiH₄, NaH, NH₃ (jonowe/lotne; obojętne/zasadowe/kwasowe).
-13. Uzupełnij: CaH₂ + H₂O → ____. Do czego praktycznego służy ta reakcja?
-14. Metoda Habera: wyjaśnij jakościowo, po co wysokie ciśnienie i po co katalizator żelazowy.
-
-### Poziom LKO-II — wodorki niemetali (15–20)
-
-15. Zapisz równanie otrzymywania chlorowodoru z chlorku sodu. Uzasadnij
-dwoma wnioskami z właściwości fizycznych, dlaczego gaz zbiera się przez
-wypieranie powietrza z zlewki dnem do dołu, a nie nad wodą.
-16. Masz dwa bezbarwne roztwory kwasów: solny i siarkowodorowy. Zaproponuj
-JEDEN odczynnik pozwalający je rozróżnić; podaj obie obserwacje i wzory osadów.
-17. Zapisz oba warianty spalania siarkowodoru (całkowite i niecałkowite) oraz
-obserwację różnicującą te dwa przypadki.
-18. Z 8,8 g siarczku żelaza(II) FeS otrzymano siarkowodór w reakcji z kwasem
-solnym. Oblicz masę otrzymanego H₂S (M: FeS = 88; H₂S = 34). Pokaż obliczenie.
-19. **Detektyw:** trzy butle z bezbarwnymi gazami: NH₃, HCl, H₂S. Masz mokre
-papiery: czerwony lakmus, niebieski lakmus, papier ołowiowy. Ułóż plan
-rozróżnienia (bez wąchania bezpośredniego!) z przewidywanymi obserwacjami.
-20. [LO/OL] a) Dlaczego ciekły czysty HCl nie przewodzi prądu, a jego roztwór
-wodny tak? b) Dlaczego kwas solny jest kwasem mocnym, a siarkowodorowy — słabym?
-(Jakościowo.)
-
-### KLUCZ (sprawdź po rozwiązaniu)
-
+::: odp | Pokaż klucz
 1. Zn + 2HCl → ZnCl₂ + H₂↑; bąbelki, znikanie metalu; woda nie zostawia powietrza (mieszanina z powietrzem = wybuch, 1.5).
 2. Czysty: ciche „pi"; z powietrzem: głośny trzask; test chroni przed wybuchem aparatury.
 3. lekkość (→ dnem do góry), rozpuszczalność (→ nie nad wodą), zapach (→ rozpoznanie). Wniosek 2: wypieranie powietrza w dół / zakaz wypierania wody.
+:::
+
+::: karta exam | B. Poziom E8 — zadania 4–5 (4 pkt)
+4. Uzupełnij: NH₃ + H₂O ⇌ ____ + ____. Jak zabarwi się fenoloftaleina w tym roztworze i jak nazywa się taki roztwór?
+
+5. Zapisz wzory i nazwy soli amonowych powstałych z NH₄⁺ oraz: Cl⁻, SO₄²⁻, NO₃⁻, PO₄³⁻, CO₃²⁻.
+:::
+
+::: odp | Pokaż klucz
 4. NH₄⁺ + OH⁻; malinowa; woda amoniakalna (odczyn zasadowy).
 5. NH₄Cl chlorek amonu; (NH₄)₂SO₄ siarczan(VI) amonu; NH₄NO₃ azotan(V) amonu; (NH₄)₃PO₄ fosforan(V) amonu; (NH₄)₂CO₃ węglan amonu.
+:::
+
+::: karta exam | C. Poziom OCJ — zadania 6–8 (6 pkt)
+6. Masz próbkę nawozu. Zaprojektuj doświadczenie potwierdzające obecność kationu amonu (zapisy, obserwacje) i zapisz równanie, przyjmując że nawóz to (NH₄)₂SO₄.
+
+7. Dwa patyczki zbliżono — pojawiła się ściana białych dymów. Co to za substancja? Zapisz równanie i wyjaśnij, czym „dym" różni się od „mgiełki".
+
+8. Napisz trzy równania: (a) otrzymywanie NH₃ w laboratorium z chlorku amonu, (b) metoda Habera, (c) rozkład termiczny węglanu amonu.
+:::
+
+::: odp | Pokaż klucz
 6. próbka + NaOH, podgrzać; zapach amoniaku; mokry czerwony lakmus sinieje; (NH₄)₂SO₄ + 2NaOH → Na₂SO₄ + 2NH₃↑ + 2H₂O.
 7. chlorek amonu NH₄Cl (ciało stałe); NH₃ + HCl → NH₄Cl; dym = drobinki STAŁE, mgiełka = kropelki cieczy.
 8. (a) 2NH₄Cl + Ca(OH)₂ →(t) CaCl₂ + 2NH₃↑ + 2H₂O; (b) N₂ + 3H₂ ⇌ 2NH₃; (c) (NH₄)₂CO₃ → 2NH₃↑ + H₂O + CO₂↑.
-9. kolejność: fenoloftaleina (malina = NH₃) → cynk (bąbelki = HCl) → reszta to woda; Zn + 2HCl → ZnCl₂ + H₂↑. Lakmus potwie
+:::
 
+::: karta exam | D. Poziom OCJ — zadania 9–11 (6 pkt)
+9. **Detektyw:** trzy nieopisane probówki: rozcieńczony HCl, woda amoniakalna, woda destylowana. Masz cynk, fenoloftaleinę i papiery lakmusowe. Ułóż kolejność testów, podaj obserwacje i równanie reakcji z cynkiem.
+
+10. Do 10,7 g chlorku amonu dodano nadmiar NaOH i podgrzano. Oblicz masę wydzielonego amoniaku (M: NH₄Cl = 53,5; NH₃ = 17).
+
+11. Uzasadnij, dlaczego NH₃ zbieramy w zlewce dnem do góry, a H₂ — nad wodą. Jakie dodatkowe ryzyko bywało związane ze zbieraniem H₂ przez wypieranie powietrza?
+:::
+
+::: odp | Pokaż klucz
+9. Kolejność: najpierw fenoloftaleina — malinowe zabarwienie oznacza woda amoniakalna (zasada). Następnie cynk do próbki z HCl: bąbelki H₂ → rozcieńczony kwas solny; Zn + 2HCl → ZnCl₂ + H₂↑. Trzecia probówka (woda destylowana) nie reaguje z cynkiem ani nie zabarwia fenoloftaleiny. Papier lakmusowy potwierdza wynik: HCl czerwieni niebieski lakmus.
+10. n(NH₄Cl) = 10,7 g ÷ 53,5 g/mol = 0,2 mol (1 pkt). Z równania 1 : 1 powstaje 0,2 mol NH₃; m(NH₃) = 0,2 mol · 17 g/mol = **3,4 g** (1 pkt).
+11. NH₃ (M = 17) jest lżejszy od powietrza → zbieramy dnem do góry (1 pkt). H₂ nie rozpuszcza się w wodzie → zbieramy nad wodą (1 pkt). Ryzyko przy wypieraniu powietrza: w naczyniu zostaje powietrze, a mieszanina H₂ z powietrzem wybucha od płomienia lub iskry (1 pkt).
+:::
+
+::: adv | E. Poziom LO/OL — zadania 12–14 (6 pkt) | poziom ambitny
+12. Sklasyfikuj wodorki: PH₃, CaH₂, H₂S, SiH₄, NaH, NH₃ (jonowe/lotne; obojętne/zasadowe/kwasowe).
+
+13. Uzupełnij: CaH₂ + H₂O → ____. Do czego praktycznego służy ta reakcja?
+
+14. Metoda Habera: wyjaśnij jakościowo, po co wysokie ciśnienie i po co katalizator żelazowy.
+:::
+
+::: odp | Pokaż klucz
+12. Jonowe: NaH, CaH₂. Lotne (kowalencyjne): PH₃, SiH₄, H₂S, NH₃. Zasadowe: NH₃ (wyraźnie), PH₃ (słabo), NaH i CaH₂ (po reakcji z wodą dają zasadę). Kwasowe: H₂S. Obojętne: SiH₄.
+13. CaH₂ + 2H₂O → Ca(OH)₂ + 2H₂↑. Praktycznie: „suche źródło wodoru” — wystarczy woda, bez butli z gazem.
+14. Wysokie ciśnienie przesuwa równowagę w stronę NH₃ (4 cząsteczki gazów po lewej, 2 po prawej). Katalizator żelazowy przyspiesza osiągnięcie równowagi i nie zmienia jej położenia. Temperatura jest kompromisem: wyższa przyspiesza reakcję, ale przesuwa równowagę w stronę substratów.
+:::
+
+::: karta exam | F. LKO II — zadania 15–17 (6 pkt)
+15. Zapisz równanie otrzymywania chlorowodoru z chlorku sodu. Uzasadnij
+dwoma wnioskami z właściwości fizycznych, dlaczego gaz zbiera się przez
+wypieranie powietrza z zlewki dnem do dołu, a nie nad wodą.
+
+16. Masz dwa bezbarwne roztwory kwasów: solny i siarkowodorowy. Zaproponuj
+JEDEN odczynnik pozwalający je rozróżnić; podaj obie obserwacje i wzory osadów.
+
+17. Zapisz oba warianty spalania siarkowodoru (całkowite i niecałkowite) oraz
+obserwację różnicującą te dwa przypadki.
+:::
+
+::: odp | Pokaż klucz
 15. NaCl(s) + H₂SO₄(stęż.) →(t) NaHSO₄ + HCl↑; HCl jest cięższy od powietrza
 (1,25×) → wypieranie powietrza dnem do dołu; bardzo dobrze rozpuszczalny →
 nad wodą niemożliwe.
@@ -553,15 +596,37 @@ nad wodą niemożliwe.
 17. 2H₂S + 3O₂ → 2SO₂ + 2H₂O (całkowite); 2H₂S + O₂ → 2S + 2H₂O (niecałkowite,
 ograniczony dostęp tlenu); różnica: żółty nalot siarki na ściankach przy
 niecałkowitym.
+:::
+
+::: karta exam | G. LKO II — zadania 18–19 (4 pkt)
+18. Z 8,8 g siarczku żelaza(II) FeS otrzymano siarkowodór w reakcji z kwasem
+solnym. Oblicz masę otrzymanego H₂S (M: FeS = 88; H₂S = 34). Pokaż obliczenie.
+
+19. **Detektyw:** trzy butle z bezbarwnymi gazami: NH₃, HCl, H₂S. Masz mokre
+papiery: czerwony lakmus, niebieski lakmus, papier ołowiowy. Ułóż plan
+rozróżnienia (bez wąchania bezpośredniego!) z przewidywanymi obserwacjami.
+:::
+
+::: odp | Pokaż klucz
 18. proporcja: 88 g FeS → 34 g H₂S; 8,8 g → x = 8,8 × 34/88 = **3,4 g**
 (◇ OLIMP: liczność mola — pojęcie z zakresu OCJ).
 19. 1) czerwony lakmus **sinieje** → NH₃ (jeden zasadowy); 2) papier ołowiowy
 **czernieje** → H₂S (PbS); 3) pozostały (potwierdzenie: niebieski lakmus
 czerwienieje, mgiełka w wilgotnym powietrzu) → HCl. Kolejność dowolna, ale
 obserwacje jednoznaczne: siń/czerń/czerwień.
+:::
+
+::: adv | H. LO/OL, LKO II — zadanie 20 (4 pkt) | poziom ambitny
+20. [LO/OL] a) Dlaczego ciekły czysty HCl nie przewodzi prądu, a jego roztwór
+wodny tak? b) Dlaczego kwas solny jest kwasem mocnym, a siarkowodorowy — słabym?
+(Jakościowo.)
+:::
+
+::: odp | Pokaż klucz
 20. a) w czystym HCl brak jonów (cząsteczki kowalencyjne); roztwór zawiera
 jony H⁺ i Cl⁻ → przewodzi. b) kwas solny dysocjuje praktycznie całkowicie
 (elektrolit mocny), siarkowodorowy — tylko częściowo (elektrolit słaby).
+:::
 
 ---
 
@@ -580,6 +645,73 @@ Test papierowy (ołowiowy) zamiast nosa.
 
 ---
 
+## 9 | Fiszki {#fiszki}
+
+::: fiszki
+Jak zbierasz H₂? | przez wypieranie wody (nierozpuszczalny) | basic:podstawa
+Dlaczego próba czystości jest obowiązkowa? | mieszanina H₂ z powietrzem wybucha | basic:bhp
+Jaki zapach ma NH₃ i jak go wyczuć? | ostry, duszący; machnięciem dłoni | basic:bhp
+Jaka jest gęstość NH₃ względem powietrza? | ok. 1,7× lżejszy — zbieramy dnem do góry | basic:podstawa
+Czym różni się dym od mgiełki? | dym = drobinki stałe (NH₄Cl), mgiełka = kropelki cieczy (HCl) | understand:rozumienie
+Jaki odczyn ma woda amoniakalna? | zasadowy: fenoloftaleina malinowa, lakmus niebieski | basic:podstawa
+Jak wykryć kation NH₄⁺? | NaOH + podgrzanie; zapach NH₃; mokry czerwony lakmus sinieje | basic:podstawa
+Jaki osad daje Cl⁻ w reakcji z AgNO₃? | biały AgCl (ciemnieje na świetle) | basic:podstawa
+Jaki osad daje H₂S z Pb(NO₃)₂? | czarny PbS | basic:podstawa
+Dlaczego H₂S zbieramy dnem do dołu? | M = 34 > 29 (cięższy od powietrza) | understand:rozumienie
+:::
+
+## 10 | Słownik {#slownik}
+
+::: slownik
+wodorek :: związek wodoru z innym pierwiastkiem; jonowy (NaH, CaH₂) lub kowalencyjny/lotny (NH₃, HCl, H₂S)
+kation amonu :: NH₄⁺ — powstaje przez przyłączenie H⁺ do wolnej pary elektronowej azotu w NH₃
+sól amonowa :: sól zawierająca kation NH₄⁺, np. NH₄Cl, (NH₄)₂SO₄
+próba czystości :: podpalenie małej próbki gazu w probówce; czysty H₂ daje ciche „pi”, z powietrzem — trzask
+zasada wypierania :: trudnolotny składnik wypiera lotny; gaz uchodzi z układu i reakcja biegnie do końca
+mgiełka :: drobne kropelki cieczy w powietrzu (np. kwas solny nad stężonym roztworem)
+dym :: drobinki ciała stałego unoszące się w powietrzu (np. NH₄Cl z NH₃ + HCl)
+kwas siarkowodorowy :: roztwór H₂S w wodzie; kwas słaby (dysocjacja częściowa)
+:::
+
+## 11 | Test {#test}
+
+::: test
+? Który gaz zbieramy przez wypieranie wody?
+- NH₃
+- HCl
++ H₂
+- H₂S
+! H₂ jest praktycznie nierozpuszczalny w wodzie, więc zbieramy go nad wodą.
+
+? Co powstaje w reakcji NH₃ z HCl?
++ NH₄Cl (dym z drobinek stałych)
+- NH₄OH (mgiełka)
+- H₂O i NaCl
+- HCl₂
+! Amoniak i chlorowodór tworzą sól amonową bez wody.
+
+? Jaki odczyn ma roztwór amoniaku?
+- kwaśny
++ zasadowy
+- obojętny
+- silnie kwaśny
+! NH₃ + H₂O ⇌ NH₄⁺ + OH⁻ — pojawiają się jony OH⁻.
+
+? Jaki osad powstaje z H₂S i Pb(NO₃)₂?
+- biały PbS
++ czarny PbS
+- żółty S
+- brak osadu
+! Siarczek ołowiu(II) jest czarny; to test na H₂S.
+
+? Dlaczego nie wolno wąchać H₂S bezpośrednio?
+- ma słaby zapach
++ jest bardzo toksyczny, a węch przestaje go wyczuwać
+- jest lżejszy od powietrza
+- nie ma zapachu
+! Adaptacja węchu jest objawem zatrucia.
+:::
+
 ## Ciekawostki
 
 ::: karta extra | Dlaczego srebro czernieje
@@ -587,7 +719,7 @@ Srebrne łyżeczki i biżuteria czernieją w obecności związków siarki — ta
 :::
 
 ::: karta extra | Haber i Bosch
-Synteza amoniaku z pierwiastków (N₂ + 3H₂ ⇌ 2NH₃) wymaga wysokiego ciśnienia i katalizatora żelazowego. Fritz Haber dostał za nią Nagrodę Nobla w 1918 r., a Carl Bosch — za jej przemysłowe wdrożenie — w 1931 r. Dziś ten proces dostarcza azotu do nawozów.
+Synteza amoniaku z pierwiastków (N₂ + 3H₂ ⇌ 2NH₃) wymaga wysokiego ciśnienia i katalizatora żelazowego. Fritz Haber dostał za nią Nagrodę Nobla za rok 1918 (przyznaną w 1919), a Carl Bosch — za jej przemysłowe wdrożenie — w 1931 r. Dziś ten proces dostarcza azotu do nawozów.
 :::
 
 ::: karta extra | Kwas w żołądku
