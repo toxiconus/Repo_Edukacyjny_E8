@@ -47,6 +47,18 @@ Dzieci często myślą, że „mleko wapienne" i „woda wapienna" to dwie nazwy
 Podobnie z „wapnem". Wapno palone (CaO) to ciało stałe, które reaguje z wodą gwałtownie i z wydzielaniem ciepła; po zgaszeniu staje się wapnem gaszonym Ca(OH)₂. Wapno palone nie jest wodorotlenkiem — ma wzór tlenku i jest jego reakcją z wodą zapisaną jako CaO + H₂O → Ca(OH)₂.
 :::
 
+## 1b | Wykład — mleko wapienne: zawiesina, nie roztwór
+
+::: karta understand | Wykład — co zmienia się, gdy dosypujesz więcej wodorotlenku wapnia
+Weź wodę, dosypuj do niej wodorotlenek wapnia Ca(OH)₂ i mieszaj. Przez chwilę cała porcja znika w wodzie — powstaje roztwór, czyli klarowna woda wapienna. Ale rozpuszczalność Ca(OH)₂ jest mała: w 20 °C rozpuszcza się około 0,16 g na 100 g wody. Gdy dosypiesz więcej, nadmiar nie zniknie. Leży na dnie jako biały proszek, a ciecz nad nim jest mętna. Taka mieszanina to **mleko wapienne**.
+
+Ta sama substancja, ta sama woda — różnica tkwi tylko w ilości. Mleko wapienne to **zawiesina**: ciało stałe rozproszone w cieczy, które z czasem opada. Woda wapienna to **roztwór**: w pełni rozpuszczona substancja, klarowna, bez osadu. Dlatego nie wolno mówić „woda wapienna jest mętna" — mętność oznacza zawiesinę.
+
+Mleko wapienne ma zastosowania praktyczne. Bieli się nim ściany (dawna farba wapienna), a z wapna gaszonego, piasku i wody robi się zaprawę murarską. Zaprawa twardnieje, bo Ca(OH)₂ reaguje z CO₂ z powietrza: Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O. Ten sam CaCO₃ tworzy trwałą powłokę.
+
+Przy wprowadzaniu CO₂ do mleka wapiennego najpierw obserwujesz mętnienie (CaCO₃↓). Dalszy nadmiar CO₂ rozpuszcza osad jako wodorowęglan wapnia, Ca(HCO₃)₂, i mieszanina klaruje się. Wniosek konkursowy: klarowanie po nadmiarze CO₂ nie świadczy, że w probówce było „coś innego niż wapno".
+:::
+
 ## 2 | Wykład — dlaczego mętnienie to nie zawsze CO₂
 
 ::: karta understand | Wykład — dwie przyczyny tej samej obserwacji
@@ -131,6 +143,20 @@ Kreda, wapień, marmur :: węglan wapnia CaCO₃ w różnych formach
 Wodorowęglan wapnia :: związek Ca(HCO₃)₂; rozpuszczalny w wodzie, tworzy się przy nadmiarze CO₂
 Soda oczyszczona :: wodorowęglan sodu NaHCO₃
 Soda kalcynowana :: węglan sodu Na₂CO₃
+:::
+
+## Ciekawostki
+
+::: karta extra | Błonka na wodzie wapiennej
+Woda wapienna wystawiona na powietrze pokrywa się cienką błonką węglanu wapnia. Dlatego do doświadczenia bierze się świeżo przygotowaną wodę wapienną, a nie stary roztwór ze stojącego naczynia.
+:::
+
+::: karta extra | Wapno gaszone wrze
+Wapno palone CaO reaguje z wodą gwałtownie i mocno się przy tym nagrzewa, aż do wrzenia. Stąd nazwa „gaszenie wapna": tlenek zostaje „ugaszony" wodą w wodorotlenek.
+:::
+
+::: karta extra | Wapnowanie gleb
+Kwaśne gleby neutralizuje się wapnem — węglanem wapnia lub wodorotlenkiem wapnia — by podnieść pH. Ten sam chemizm, co w probówce: wapń zobojętnia kwas.
 :::
 
 ## 9 | Źródła
