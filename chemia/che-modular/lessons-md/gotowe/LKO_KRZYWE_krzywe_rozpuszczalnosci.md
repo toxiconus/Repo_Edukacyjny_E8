@@ -157,7 +157,7 @@ Na etapie I LKO ocenia się **zapis obliczenia** — sam wynik traci punkty. Ka�
 
 - odczyt: 100 g wody rozpuszcza 106 g
 - proporcja: m(wody) = 100 × 88/106 ≈ **83 g**
-- (odwrócenie: 80 g wody „mieści" 110 × 80/100 = 88 g — dokładnie granica ✓)
+- (odwrócenie: 83 g wody „mieści" 106 × 83/100 ≈ 88 g — granica ✓)
 
 **Wariant „odparowanie":** roztwór nasycony w danej T przy odparowywaniu **natychmiast** zaczyna krystalizować (każda utracona kropla wody „wyrzuca" swoją część ładunku rozpuszczonej substancji). Nienasycony — najpierw musi osiągnąć krzywą.
 
@@ -211,7 +211,7 @@ a) 106 g  b) 74 g  c) 32 g  d) 138 g
 ### C. Luka (odczyt z tabel)
 
 **C1.** W 60 °C w 100 g wody rozpuści się maksymalnie ____ g NH₄Cl.
-**C2.** Rozpuszczalność KNO₃ wynosi 64 g na 100 g wody w temperaturze ____ °C.
+**C2.** Rozpuszczalność KNO₃ wynosi 62 g na 100 g wody w temperaturze ____ °C.
 **C3.** Chłodząc nasycony roztwór NH₄Cl (100 g wody) od 80 °C do 20 °C, wykrystalizuje ____ g soli.
 
 ### D. Dobieranie
@@ -323,7 +323,7 @@ Osad nad krzywą :: nadmiar substancji stałej, który nie zmieścił się w roz
 1. Data stanu „W1 — 2026-10-22" (przyszłość, sugerowany audyt) → „szkic — 2026-10-13".
 2. „sód ti siarczanowy" → octan sodu (klasyczna demonstracja), oznaczone jako orientacyjne.
 3. „pśika" (niezrozumiałe) → „gazuje mocniej".
-4. Test „110%": saletra w zakresie ok. 24–52%, nie „okolice 50%" (32/132 i 106/206).
+4. Test „110%": saletra w zakresie ok. 24–51,5%, nie „okolice 50%" (32/132 i 106/206).
 5. Suma punktów: odpowiedź podawała 36, rubryka daje 35 (A 4 + B 6 + C 3 + D 3 + E 7 + F 12).
 6. Usunięto sekcje procesowe „Do dopięcia w repo" i „Status P0": status „W1 ✅" dla N06, LKO-Z36 i REV01 nie odpowiadał stanowi, bo W1 nie był wykonany.
 
