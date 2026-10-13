@@ -9,6 +9,7 @@
     var k = reg[nazwa];
     if (!k) { host.textContent = 'Brak klocka: ' + nazwa; return null; }
     opc = Object.assign({}, k.domyslne || {}, opc || {});
+    if (k.html) { host.innerHTML = ''; k.html(host, opc); return null; }
     var c = document.createElement('canvas');
     c.width = opc.szer || 480; c.height = opc.wys || 300;
     c.style.width = '100%'; c.style.maxWidth = c.width + 'px'; c.style.height = 'auto';

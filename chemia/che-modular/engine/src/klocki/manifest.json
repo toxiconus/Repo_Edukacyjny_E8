@@ -4,7 +4,20 @@
   "klocki.js": "rejestr i montaż (zawsze)",
   "zlewka.js": "zlewka z cieczą i bąbelkami",
   "plomien.js": "próba płomieniowa (barwa wg metalu)",
-  "metal_woda.js": "metal + woda: H₂ i fenoloftaleina"
+  "metal_woda.js": "metal + woda: H₂ i fenoloftaleina",
+  "palenie.js": "palenie metali: Mg, Na, K (barwa i iskry)",
+  "uklad_okresowy.js": "mini układ okresowy, klik w grupę",
+  "probowki.js": "trzy probówki z metalami obok siebie"
  },
- "lekcje": {"P01": ["klocki.js", "zlewka.js", "plomien.js", "metal_woda.js"]}
+ "lekcje": {
+  "P01": [
+   "klocki.js",
+   "zlewka.js",
+   "plomien.js",
+   "metal_woda.js",
+   "probowki.js",
+   "palenie.js",
+   "uklad_okresowy.js"
+  ]
+ }
 }

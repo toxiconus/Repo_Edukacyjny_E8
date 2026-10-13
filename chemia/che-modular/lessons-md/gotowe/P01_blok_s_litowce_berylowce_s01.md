@@ -53,6 +53,9 @@ Dlaczego sód trzymamy w nafcie, a magnez można spalić w powietrzu jak zwykły
 
 ## 1 | Wykład — położenie w układzie i dlaczego te dwie grupy {#polozenie}
 
+@klocek uklad-okresowy {grupa="1"} | Układ okresowy: grupa 1 (litowce) i grupa 2 (berylowce). Kliknij numer grupy.
+@opis Mini układ okresowy z numerami grup u góry. Podświetlona jest grupa 1 (litowce) w kolumnie pierwszej, z krótkim opisem: jeden elektron walencyjny. Kliknięcie innej grupy z opisem zmienia podświetlenie. Wniosek: położenie w kolumnie mówi, ile elektronów walencyjnych ma atom.
+
 ::: karta understand | Wykład od zera
 Układ okresowy porządkuje pierwiastki według liczby atomowej. Pierwiastki z tą samą liczbą elektronów walencyjnych trafiają do tej samej kolumny (grupy). W pierwszej kolumnie (grupa 1) stoją pierwiastki z jednym elektronem na zewnętrznej powłoce. W drugiej (grupa 2) — z dwoma.
 
@@ -92,14 +95,8 @@ Który metal z grupy 2 ma najbardziej „miękki” elektron walencyjny: Mg czy 
 
 ## 3 | Reakcje z wodą i tlenem {#reakcje}
 
-@klocek metal-woda {metal="Li", wskaznik="1"} | Lit w wodzie: wolne pęcherzyki, roztwór różowieje od fenoloftaleiny
-@opis Zlewka z wodą i kawałkiem litu na dnie. Z metalu wolno unoszą się pęcherzyki wodoru. Po dodaniu fenoloftaleiny roztwór zmienia barwę na różową. Wniosek: barwa pochodzi od wskaźnika, a jej pojawienie się pokazuje, że powstaje zasada (OH⁻).
-
-@klocek metal-woda {metal="Na", wskaznik="1"} | Sód w wodzie: szybsze pęcherzyki i silniejsze różowienie
-@opis Zlewka z wodą i kawałkiem sodu na dnie. Pęcherzyki wodoru tworzą się szybciej niż przy licie. Roztwór różowieje od fenoloftaleiny. Wniosek: sód reaguje gwałtowniej niż lit (ta sama grupa, większy atom).
-
-@klocek metal-woda {metal="K", wskaznik="1"} | Potas w wodzie: najszybsza reakcja z tej trójki
-@opis Zlewka z wodą i kawałkiem potasu na dnie. Pęcherzyki wodoru tworzą się najszybciej, a metal szybko się zmniejsza. Wniosek: w dół grupy 1 reaktywność rośnie.
+@klocek probowki {metale="Li,Na,K", wskaznik="1"} | Trzy probówki z wodą: lit, sód i potas. Ten sam czas, różne tempo.
+@opis Trzy probówki z wodą stoją obok siebie, na dnie każdej kawałek innego metalu: lit, sód, potas. Z potasu pęcherzyki wydzielają się najszybciej, z litu najwolniej. Po fenoloftaleinie roztwory różowieją. Wniosek: w dół grupy 1 reaktywność rośnie, a barwa pokazuje powstanie zasady.
 
 ::: karta understand | Strategia → rozwiązanie → sprawdzenie: bilans reakcji sodu z wodą
 **Strategia:** zapisuję substraty i produkty. Produkty to wodorotlenek i wodór, bo metal wypiera wodór z wody.
@@ -134,6 +131,15 @@ Tlenek metalu w reakcji z wodą daje jony OH⁻. Roztwór z jonami OH⁻ ma odcz
 :::
 
 ## 5 | Płomienie i wykrywanie metali {#plomienie}
+
+@klocek plomien {barwa="#f59e0b", nazwa="Na — żółty"} | Próba płomieniowa: sód
+@opis Płomień palnika, który powoli zmienia barwę z pomarańczowej na żółtą (barwa sodu). Wniosek: sód w płomieniu daje żółtą barwę, więc żółty płomień wskazuje sód.
+
+@klocek palenie {metal="Mg"} | Palenie magnezu: jasny biały błysk
+@opis Taśma magnezu płonie jasnym białym płomieniem z iskrami. Wniosek: magnez w powietrzu pali się intensywnie, dlatego trzeba go trzymać z dala od wody i z dala od dzieci.
+
+@klocek palenie {metal="K"} | Palenie potasu: fioletowy płomień
+@opis Płomień potasu, fioletowy, z małą liczbą iskier. Wniosek: barwa płomienia pozwala rozpoznać metal, a palenie metalu grupy 1 jest niebezpieczne.
 
 @klocek plomien {barwa="#f59e0b", nazwa="Na — żółty"} | Próba płomieniowa: sód
 @opis Płomień palnika o żółtej barwie, podpisany „Na — żółty”. Wniosek: sód w płomieniu daje żółtą barwę, więc żółty płomień wskazuje sód.
