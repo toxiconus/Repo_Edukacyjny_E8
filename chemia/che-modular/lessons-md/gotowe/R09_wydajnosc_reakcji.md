@@ -94,16 +94,18 @@ Synteza amoniaku N₂ + 3H₂ → 2NH₃ (proces Habera–Boscha) — reakcja, k
 Gdy proces składa się z kilku etapów po kolei, ogólna wydajność to **iloczyn** wydajności etapów. Dwa etapy po 90%: 0,9 · 0,9 = 0,81 → tylko 81% całości. Dlatego przemysł tak walka o każdy procent na każdym etapie — dziesięć etapów po 95% daje 0,95¹⁰ ≈ 60% całości (0,95¹⁰ ≈ 0,599 — wartość zaokrąglona). Wydajność pojedynczego etapu „niezła", w łańcuchu — kosztowna.
 :::
 
-## 4 | W skrócie — dlaczego m teoretyczną zawsze liczy się z równania
+::: karta understand | W skrócie — dlaczego m teoretyczną zawsze liczy się z równania
 
 Masa substratu mówi tylko, ile „wkładamy" — nie mówi, ile wyjdzie, bo ta sama masa substratu może dać zupełnie różne masy produktu. Przykład: 20 g CaCO₃ to 0,2 mol (M = 100 g/mol). Przy rozkładzie CaCO₃ → CaO + CO₂ da to najwyżej 0,2 mol CaO = 11,2 g (M = 56 g/mol), a w reakcji z kwasem (CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂) najwyżej 0,2 mol CO₂ = 8,8 g (M = 44 g/mol). Ten sam substrat, dwa różne maksima — o wyniku decyduje równanie (stosunek molowy) i partner reakcji. Dlatego liczenie „teoretycznego produktu" z samej masy substratu, bez równania, nie ma sensu chemicznego.
+:::
 
-## 5 | W skrócie — kolejność kroków w jednym oknie
+::: karta understand | W skrócie — kolejność kroków w jednym oknie
 
 1. Równanie → mole substratów → **reagent ograniczający** (R08).
 2. **m teoretyczna** produktu z równania (stosunek molowy).
 3. **Wydajność** = m(rzecz)/m(teor) · 100% — albo z wydajności liczysz m(rzecz).
 4. Wydajność dotyczy **produktu**; wynik mieści się w 0–100%.
+:::
 
 ## Zadania
 

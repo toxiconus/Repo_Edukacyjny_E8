@@ -82,13 +82,14 @@ Odczyt z krzywej działa w obie strony:
 
 Krzywe mają różne kształty: KNO₃ — stromo w górę; NaCl — prawie płasko; zdarzają się (rzadko) krzywe opadające, np. wodorotlenek wapnia rozpuszcza się **gorzej** w cieplejszej wodzie.
 
-## 4 | W skrócie — krzywa w trzech krokach
+::: karta understand | W skrócie — krzywa w trzech krokach
 
 1. Znajdź na osi poziomej temperaturę (lub na pionowej — ilość, jeśli pytają „przy jakiej T").
 2. Prowadź linię prostą do krzywej substancji (pilnuj, której — każda substancja ma własną!).
 3. Odczytaj drugą współrzędną i **dopisz jednostki**: g/100 g H₂O, temperatura w °C.
+:::
 
-## 5 | Wykład — temperatura: ciała stałe rosną, gazy maleją
+## 4 | Wykład — temperatura: ciała stałe rosną, gazy maleją
 
 **Ciała stałe:** dla większości rozpuszczalność **rośnie** z temperaturą. KNO₃ to przykład skrajny: 32 g w 20 °C, 110 g w 60 °C, 138 g w 70 °C. Niektóre substancje prawie nie reagują na temperaturę (NaCl: 36–37 g w całym zakresie) — dlatego krzywa NaCl jest płaska. A rzadkość typu Ca(OH)₂: rozpuszczalność **maleje** z temperaturą.
 
@@ -104,11 +105,12 @@ Jezioro Nyos w Kamerunie leży nad wulkanicznym wnętrzem, z którego wydobywa s
 Ponieważ rozpuszczalność tlenu w wodzie maleje z temperaturą, zimna woda oceanów rozpuszcza **więcej** O₂ niż ciepła. Dlatego zimne, polarne wody są wyjątkowo „tłuste" z życia — ławice ryb i wieloryby gromadzą się tam, gdzie jest najwięcej rozpuszczonego tlenu i pokarmu. Chemia rozpuszczalności rządzi ekologią oceanów.
 :::
 
-## 6 | W skrócie — płaska krzywa soli: dlaczego solanka nie gra z temperaturą
+::: karta understand | W skrócie — płaska krzywa soli: dlaczego solanka nie gra z temperaturą
 
 Krzywa rozpuszczalności NaCl jest wyjątkowo płaska: od 0 °C do 100 °C rozpuszczalność zmienia się z ok. 36 na ok. 37 g/100 g H₂O — o zaledwie około 1 g na sto stopni. Skutek praktyczny: ochłodzenie nasyconej solanki praktycznie nic nie wykrystalizuje (na każde 100 g wody — nie więcej niż ~1 g osadu). Dlatego sól pozyskuje się przez **odparowanie** wody: warzelnie gotują solankę, a słone stawy zostawiają ją pod słońcem — rozpuszczalnik musi zostać usunięty, bo temperatura go z roztworu nie „wypycha". Ta płaskość jest też powodem, dla którego pora roku niemal nie zmienia ilości soli rozpuszczonej w morzu.
+:::
 
-## 7 | Wykład — krystalizacja: ochładzanie i odparowanie
+## 5 | Wykład — krystalizacja: ochładzanie i odparowanie
 
 Rozpuszczalność rośnie z temperaturą — więc można to wykorzystać od tyłu: **spadek temperatury zmusza nadmiar do opuszczenia roztworu**. Wykrystalizowana substancja to czysty, solidny produkt. Są dwie drogi:
 
@@ -149,7 +151,7 @@ Krzewienie soli kuchennej przez **odparowanie** wody morskiej to jedna z najstar
 Duże, ładne kryształy (np. ałunu albo siarczanu(VI) miedzi) hoduje się tak: rozpuszczasz sol w gorącej wodzie do nasycenia, zawieszasz w roztworze mały kryształek-zarazek i pozwolisz roztworowi stygnąć **bardzo wolno**. Rozpuszczalność powoli spada, a materiał osadza się porządkowo na zarazku — kryształ rośnie warstwa po warstwie. To krystalizacja z ochłodzenia w wersji hobbystycznej.
 :::
 
-## 8 | W skrócie — cała lekcja w sześciu punktach
+::: karta understand | W skrócie — cała lekcja w sześciu punktach
 
 - **Rozpuszczalność** = maksimum g substancji na 100 g wody **w danej temperaturze** (g/100 g H₂O).
 - **Nienasycony** — zmieści jeszcze więcej; **nasycony** — dokładnie maksimum; **przesycony** — ponad maksimum, nietrwały, błyskawicznie krystalizuje po dodaniu zarazka.
@@ -157,6 +159,7 @@ Duże, ładne kryształy (np. ałunu albo siarczanu(VI) miedzi) hoduje się tak:
 - **Temperatura**: ciała stałe — zwykle rośnie (KNO₃ stromo, NaCl płasko); **gazy — maleje** (a rośnie z ciśnieniem).
 - **Krystalizacja**: ochłodzenie (strome krzywe) albo odparowanie (NaCl).
 - **Osad przy ochłodzeniu**: m(osadu) = [S(gorące) − S(zimne)] na każde 100 g wody.
+:::
 
 ## Zadania
 

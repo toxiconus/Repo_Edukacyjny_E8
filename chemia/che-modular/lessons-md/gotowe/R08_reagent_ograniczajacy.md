@@ -53,11 +53,12 @@ Bez tego kroku nie da się porównywać — równanie mówi o molach, a zadanie 
 Ocena zadania z reagentem ograniczającym: równanie reakcji → obliczenie M i n dla **obu** substratów → jawnie napisane porównanie („na X mol A potrzeba Y mol B, mam Z — więc...") → produkt z reagenta ograniczającego → jednostki. Sam wynik bez porównania w molach to zaliczenie kroku 2 na zero.
 :::
 
-## 3 | W skrócie — dlaczego najpierw mole, a nie gramy
+::: karta understand | W skrócie — dlaczego najpierw mole, a nie gramy
 
 Współczynniki w równaniu liczą **cząstki**: 1 cząsteczka CaCO₃ reaguje z 2 cząsteczkami HCl. Mol to porcja cząstek, więc stosunek 1 : 2 przenosi się wprost na mole. Gramy nic tu nie mówią — 100 g CaCO₃ i 73 g HCl akurat dają stosunek molowy 1 : 2 (bo 100 g to 1 mol CaCO₃, a 73 g to 2 mole HCl), ale ten „masowy" przelicznik jest inny dla każdej pary substancji i zależy od ich mas molowych. Jednym uniwersalnym językiem równania są mole — dlatego krok 1 zawsze zamienia masy na mole, zanim cokolwiek porównamy.
+:::
 
-## 4 | Wykład — przykład krok po kroku: HCl + CaCO₃
+## 3 | Wykład — przykład krok po kroku: HCl + CaCO₃
 
 **Zadanie.** Do 150 g roztworu kwasu solnego o stężeniu 7,3% dodano 20 g węglanu wapnia CaCO₃. Reakcja: CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂. Który substrat jest ograniczający i ile CO₂ powstanie?
 
@@ -97,9 +98,10 @@ W przemyśle substraty często łączy się w stosunku innym niż z równania �
 Do probówki z kwasem wrzucasz kawałek cynku — natychmiast lecą bąbelki wodoru. Koniec reakcji mówi, kto był ograniczający: jeśli cynk rozpuścił się do zera, a bąbelki ucichły — ograniczał metal (kwas był w nadmiarze). Jeśli na dnie został nierozpuszczony metal, a bąbelki ucichły — ograniczający był kwas (metal w nadmiarze). Koniec bąbelków = moment, w którym któryś substrat właśnie się wyczerpał; to fizyczny „znacznik" reagenta ograniczającego, widoczny bez żadnych obliczeń.
 :::
 
-## 5 | W skrócie — cała procedura w trzech zdaniach
+::: karta understand | W skrócie — cała procedura w trzech zdaniach
 
 Zamień wszystkie masy substratów na mole (n = m/M). Porównaj dostępne mole ze stosunkiem ze równania i wskaż, który substrat zabraknie — to reagent ograniczający. Produkt (i zużycie nadmiaru) licz z moli reagenta ograniczającego, według stosunku molowego z równania.
+:::
 
 ## Zadania
 

@@ -110,15 +110,17 @@ Samo „1 mol H₂O = 18 g" to zapis bez uzasadnienia. Poprawny łańcuch: M(H�
 Mr — względna masa cząsteczkowa: liczba (bez jednostki), sumuje masy atomowe ze wzoru. M — masa molowa: **ta sama liczba w g/mol**. Liczysz raz, używasz dwukrotnie: Mr do opisu cząsteczki, M do obliczeń z molami. Zawsze dopisuj jednostkę g/mol przy M.
 :::
 
-## 4 | W skrócie — Mr czy M?
+::: karta understand | W skrócie — Mr czy M?
 
 Gdy widzisz w zadaniu „oblicz masę cząsteczkową" — liczysz Mr (liczba, bez jednostki). Gdy widzisz „masa molowa" albo zaczynasz obliczenia z molami — ta sama suma, ale zapisana jako M w **g/mol**. Jedno i drugie liczy się identycznie: indeksy × masy atomowe, potem suma. Jedyne, czego nie wolno pominąć, to jednostka g/mol przy masie molowej.
+:::
 
-## 5 | W skrócie — dlaczego woda ma 18 g/mol, a nie 16
+::: karta understand | W skrócie — dlaczego woda ma 18 g/mol, a nie 16
 
 Częsty błąd: wziąć tylko tlen (16) i zapomnieć o wodorach. Wzór H₂O mówi, że w cząsteczce są **dwa** atomy wodoru i jeden atom tlenu — więc masa molowa to suma z indeksami: 2·1 + 16 = 18 g/mol. Ta sama zasada działa dla każdego wzoru: w CO₂ dwóm tlenu odpowiada 2·16 = 32, do tego węgiel 12 — razem 44 g/mol; w H₂S dwa wodory 2·1 = 2 plus siarka 32 — razem 34 g/mol. Zawsze: indeks × masa atomowa, potem suma — i dopiero na końcu jednostka g/mol.
+:::
 
-## 6 | Wykład — przeliczenia masa ↔ mol ↔ liczba cząstek
+## 4 | Wykład — przeliczenia masa ↔ mol ↔ liczba cząstek
 
 Mol to węzeł, w którym spotykają się dwa światy: **waga** (gramy) i **licznik cząstek**. Są tylko cztery wzory — i wszystkie wynikają z definicji:
 
@@ -187,15 +189,16 @@ Mol to porcja **cząstek**, nie gramów. Poprawnie: „1 mol wody" = 6,02·10²�
 Chcesz z masy w gramach przejść do liczby cząstek. Nie istnieje jeden wzór „gramy → cząstki", bo masa cząstki różni się dla każdej substancji. Ale **mol** łączy oba światy: przez M znasz masę jednej porcji, przez N_A — liczbę cząstek w porcji. Dlatego każdy „daleki dystans" przechodzi przez przystanek n (mole): masa → mole → cząstki.
 :::
 
-## 7 | W skrócie — trzy wzory w jednym oknie
+::: karta understand | W skrócie — trzy wzory w jednym oknie
 
 - Z masy na mole: **n = m / M** (gramy dzielone przez g/mol dają mole).
 - Z moli na masę: **m = n · M**.
 - Cząstki: **N = n · N_A**, odwrotnie **n = N / N_A**.
 - Masa ↔ cząstki: **zawsze przez mole** (dwa kroki).
 - Zawsze pytaj: **mol czego** — atomów czy cząsteczek? (O: 16 g/mol; O₂: 32 g/mol.)
+:::
 
-## 8 | Wykład — mol w równaniu reakcji: zapowiedź stechiometrii
+## 5 | Wykład — mol w równaniu reakcji: zapowiedź stechiometrii
 
 Spójrz na równanie reakcji syntezy wody:
 

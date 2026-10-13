@@ -94,7 +94,7 @@ Częsty błąd: „wszystko, co nie jest roztworem, w końcu osiada na dnie". Ni
 Roztwór: wiązka światła **niewidoczna** z boku. Koloid: wiązka **widoczna** (rozpraszanie na drobinkach). Zawiesina: mętna, drobinki **opadają**, oddzielisz **sączkiem**. Trzy spojrzenia — i wiesz, co masz w zlewce.
 :::
 
-## 4 | W skrócie — jak rozpoznać, co masz w szklance
+::: karta understand | W skrócie — jak rozpoznać, co masz w szklance
 
 Trzy pytania po kolei:
 
@@ -103,8 +103,9 @@ Trzy pytania po kolei:
 3. Czy wygląda spokojnie i trwale, ale wiązka światła zostaje w środku widoczna jako smuga? → **koloid**.
 
 Jeśli odpowiedzi się „gryzą" (np. mętna, ale nic nie opada) — szukaj koloidu; mętność może pochodzić z rozpraszania światła, a nie z dużych drobin.
+:::
 
-## 5 | Wykład — hydratacja: woda otacza jony
+## 4 | Wykład — hydratacja: woda otacza jony
 
 Co dokładnie dzieje się, gdy kryształek soli kuchennej wpada do wody? Kryształ to uporządkowana **sieć jonów**: Na⁺ i Cl⁻ trzymają się nawzajem przyciąganiem elektrostatycznym i nie zamierzają się rozstawać.
 
@@ -126,11 +127,12 @@ Zwykle **nie**. Rozpuszczając sól, nie tworzysz nowej substancji: odparuj wod�
 Woda w organizmach nigdy nie jest „czysta" — to roztwory wodne: krew (woda z rozpuszczonymi solami, cukrami, białkami i gazami), sok komórkowy roślin, ślina i łzy. Rozpuszczone w nich jony (m.in. Na⁺, K⁺, Cl⁻) są niezbędne do pracy nerwów i mięśni — to ta sama chemia hydratacji, co w szklance z solą. Nawet woda morska jest po prostu bardzo mocnym roztworem soli (głównie NaCl) — stąd jej smak i to, że nie nadaje się do picia.
 :::
 
-## 6 | W skrócie — dlaczego Na⁺ i Cl⁻ się rozstają
+::: karta understand | W skrócie — dlaczego Na⁺ i Cl⁻ się rozstają
 
 W krysztrale jony Na⁺ i Cl⁻ trzymają się nawzajem bardzo mocno — przyciągania działają w całej sieci i „budżet" energetyczny jest zbalansowany. W wodzie każdy jon zostaje od razu otoczony warstwą dipoli (tlenem ku Na⁺, wodorami ku Cl⁻), która działa jak poduszka: zasłania ładunek przeciwnego jonu i nie pozwala parom Na⁺–Cl⁻ z powrotem się „dobić". Suma przyciągań woda–jon jest na tyle duża, że wyswobodzenie jonu z sieci się opłaca — i kryształ rozpada się na rozdzielone, hydratowane jony. Dlatego w roztworze nie ma „par NaCl", tylko osobne Na⁺(aq) i Cl⁻(aq).
+:::
 
-## 7 | Wykład — trzy dźwignie szybkości rozpuszczania
+## 5 | Wykład — trzy dźwignie szybkości rozpuszczania
 
 Masz kostkę cukru, szklankę herbaty i ochotę, żeby cukier rozpuścił się jak najszybciej. Masz trzy dźwignie:
 
@@ -146,7 +148,7 @@ I uwaga, bo to ulubiona pułapka: te trzy dźwignie działają na **szybkość**
 Nie. Mieszanie zwiększa **szybkość** rozpuszczania, ale nie zmienia, **ile** substancji maksymalnie się rozpuści. Jeśli roztwór jest nasycony, to niezależnie od mieszania na dnie zostanie dokładnie tyle samo nierozpuszczonej substancji. Szybkość ≠ ilość.
 :::
 
-## 8 | Wykład — zapisy stanów skupienia: (s), (l), (g), (aq)
+## 6 | Wykład — zapisy stanów skupienia: (s), (l), (g), (aq)
 
 W równaniach i opisach reakcji po wzorze substancji dopisujemy jej stan skupienia:
 
@@ -173,7 +175,7 @@ W roztworze sól istnieje jako **rozdzielone, hydratowane jony**. Zjawisko nazyw
 Typowe zadanie: „dopisz stany skupienia w równaniu". Zasady-ratowniki: metal → (s); tlen jako reagent → O₂(g); woda w reakcjach z rozpuszczaniem → (l), a jako rozpuszczalnik w roztworach — substraty rozpuszczone dostają (aq); gazy w temperaturze pokojowej (CO₂, H₂, O₂, NH₃) → (g). Substancja rozpuszczona w wodzie = zawsze (aq), nawet jeśli czysta byłaby gazem lub ciałem stałym.
 :::
 
-## 9 | W skrócie — ściąga z R01
+::: karta understand | W skrócie — ściąga z R01
 
 - Cząsteczka wody: **kątowa** (ok. 104,5°, wartość podręcznikowa), wiązania O–H polarne, tlen δ⁻, wodory δ⁺ → woda to **dipol**.
 - **Podobne rozpuszcza podobne**: polarny rozpuszcza polarny i jonowy; niepolarny — niepolarny.
@@ -181,6 +183,7 @@ Typowe zadanie: „dopisz stany skupienia w równaniu". Zasady-ratowniki: metal 
 - **Hydratacja**: woda dipolami wyciąga jony z sieci i otacza je powłoką wodną → wolne jony → (aq).
 - Rozdrobnienie, mieszanie, temperatura przyspieszają **rozpuszczanie**, ale (poza temperaturą) nie zwiększają **rozpuszczalności** — to temat R02.
 - Zapisy: (s), (l), (g), (aq); NaCl(s) → Na⁺(aq) + Cl⁻(aq) — zapowiedź dysocjacji (J01).
+:::
 
 ## Zadania
 
