@@ -73,6 +73,7 @@ Użycie w md: `@model <id> | Tytuł przycisku | co pokazuje`. „Lekcje” = gdz
 | `n02-stracanie-v01` | Laboratorium jonowe — strącanie wodorotlenków (model cząsteczkowy) | N02 |
 | `n02-wzory-v01` | Wzór wodorotlenku: kation + OH⁻ — bilans ładunków, nawias, modele | N02 |
 | `n02-zobojetnianie-v01` | Zobojętnianie — licznik moli, pH, wskaźniki i jony H⁺ + OH⁻ → H₂O | N02 |
+| `j03-osady-v01` | Dwie probówki, dwie sole — czy wytrąci się osad? (tabela R/T/N, barwa osadu, równanie jonowe) | J03 |
 | `naming-table` | Wzór → nazwa → reszta → sól → moc |  |
 | `neutralization` | Równania jonowe — cząsteczkowe, jonowe pełne, jonowe skrócone |  |
 | `obtaining-hcl-steps` | Otrzymywanie kwasu solnego — etapy |  |

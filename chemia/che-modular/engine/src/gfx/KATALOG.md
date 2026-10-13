@@ -150,11 +150,12 @@ Id w MD/HTML/kodzie jest angielskie (jak w silniku); nazwa PL z rejestru. Plik: 
 | `indicatorRack` | Zestaw wskaźników | Szereg probówek z różnymi wskaźnikami / pH. |
 | `titration` | Miareczkowanie | Biureta nad kolbą — krople, menisk, zmiana barwy punktu końcowego. |
 
-## chemia / widoki (27)
+## chemia / widoki (28)
 
 | id | nazwa | opis |
 |---|---|---|
 | `acid-rain-v01` | Kwaśne deszcze — emisja → chmura → opad → jezioro, las, zabytki |  |
+| `j03-osady-v01` | Dwie probówki, dwie sole — czy wytrąci się osad? |  |
 | `kinetics-v01` | Szybkość reakcji: metal + kwas solny (pomiar objętości H₂) |  |
 | `kw-bufor-v01` | Bufor octanowy kontra czysta woda — dodawaj kwas i zasadę |  |
 | `kw-doswiadczenia-v01` | Pracownia: doświadczenia z kwasami |  |

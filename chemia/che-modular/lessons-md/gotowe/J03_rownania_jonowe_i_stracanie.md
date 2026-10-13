@@ -649,6 +649,9 @@ Barwa osadu to najcenniejsza obserwacja w zadaniach o strącaniu — często to 
 
 Dwa komentarze, które wygrywają punkty. Pierwszy: **Fe(OH)₂ się zmienia** — świeży brudnozielony osad na powietrzu stopniowo ciemnieje ku brunatnemu, bo tlen powietrza utlenia Fe²⁺ do Fe³⁺; w zapisie obserwacji warto odnotować „osad brudnozielony, ciemniejący na powietrzu”. Drugi: **białe osady się różnią zachowaniem** — BaSO₄ nie rozpuszcza się w kwasach, a CaCO₃ rozpuszcza się z ulotem CO₂; to rozróżnienie będzie bronią w zadaniu o interferencjach ([§10](#zadania-konkurs), zadanie 15).
 
+@model j03-osady-v01 | Dwie probówki, dwie sole — czy wytrąci się osad? | Probówki A i B z rozpuszczalnymi solami, wynik po zmieszaniu i równanie · CHE.DATA.SOLUBILITY_TABLE
+@opis Model pokazuje dwie probówki z wybranymi rozpuszczalnymi solami (listy rozwijane A i B). Po zmieszaniu jony łączą się „na krzyż”, a model sprawdza w tabeli rozpuszczalności każdą nową parę. Jeżeli powstaje sól trudno rozpuszczalna (T) lub praktycznie nierozpuszczalna (N), w trzeciej probówce pojawia się osad w barwie z katalogu i zapisywane jest równanie jonowe skrócone z ↓. Jeżeli obie nowe sole są rozpuszczalne (R), roztwór pozostaje przezroczysty i komunikat brzmi „Brak osadu”. Wniosek: osad powstaje tylko wtedy, gdy przynajmniej jeden z produktów wymiany jest trudno rozpuszczalny.
+
 ::: karta warning | Uwaga — barwa wskazuje, nie wydaje wyroku
 Sam kolor osadu nie zawsze stanowi jednoznaczną identyfikację: biały jest AgCl, ale też BaSO₄, CaCO₃, Ag₂CO₃ (białawożółty) i PbCl₂. Przy próbach strącaniowych uwzględnij rozpuszczalność, stężenie i możliwe reakcje uboczne — a wniosek formułuj z warunkami („biały osad nierozpuszczalny w rozcieńczonym kwasie, po dodaniu AgNO₃ do zakwaszonej próbki → chlorki”). Pełną analizę interferencji znajdziesz w zadaniu 15.
 :::

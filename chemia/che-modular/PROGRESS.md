@@ -196,3 +196,5 @@
 - 2026-10-13: N02 — dodany test (6 pytań, wodorotlenki); J03 — usunięte powtórzenie polecenia w zadaniu 2 (powt=0).
 - 2026-10-13: J03 — wczytana odpowiedź ULEPSZONA (Perplexity): 94 KB → 120 KB, naprawiony front matter (dwa bloki), build OK, limity bez ❌. Propozycje grafik z odpowiedzi nie wstawione (do decyzji).
 - 2026-10-13: J03 — dodane 3 wizualizacje z istniejącego katalogu (rownania-jonowe-v01, ion-vs-diss, tabela-rozpuszczalnosci-v01) z @opis; build OK.
+
+- 2026-10-13: J03 — nowy widget `j03-osady-v01` (dwie probówki, osad i barwa), zarejestrowany w index.json i KATALOG, wstawiony do §6 (@opis). Test w przeglądarce nieuruchomiony (`che.py test` przerwany przez brak sieci do fonts.googleapis.com). J07 — ULEPSZONA (Perplexity): przywrócono fiszki (§5a) i wzór ścisły Ostwalda (§2a); sekcja AUDYT w lekcji; grafiki z odpowiedzi (4 propozycje) jeszcze nie zrobione.

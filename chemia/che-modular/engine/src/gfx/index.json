@@ -1226,6 +1226,7 @@
    "subject": "wspolne",
    "file": "wspolne/widoki/che-test-silnika-v01.js",
    "bytes": 4604
-  }
+  },
+    {"kind": "widoki", "id": "j03-osady-v01", "subject": "chemia", "file": "chemia/widoki/j03-osady-v01.js", "bytes": 3142}
  ]
 }
