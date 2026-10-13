@@ -29,8 +29,9 @@ Pakiet 2026/27 (regulamin, terminarz, zakresy) **nie jest jeszcze opublikowany**
 
 **Do zrobienia przez użytkownika:** (zakresy 2025/26 i arkusz rejonowy chemii 2025/26 — już w `zrodla/LKO/`) pobrać z kuratorium.lublin.pl (strona blokuje pobieranie automatyczne) arkusze **etapu szkolnego chemii i biologii 2024/25** z kluczami (publikacja id=13802), PDF zakresów 2025/26 i — gdy wyjdzie — pakiet 2026/27; wrzucić do rozmowy → trafią do `olimpiada/zrodla/` i banku zadań.
 
-## 1a. PRIORYTET polski i angielski (decyzja użytkownika 2026-10-11)
-- **Polski:** najpierw przysłówek (G07) i przydawka (G12 części zdania), potem pozostałe podstawy: przymiotnik, rzeczownik, czasownik, liczebnik, zaimek, imiesłowy, przyimek, spójnik, związki wyrazowe.
+## 1a. PRIORYTET angielski (decyzja użytkownika 2026-10-11; polski i matematyka przeniesione na koniec kolejki 2026-10-13)
+- **Polski — na koniec kolejki (decyzja 2026-10-13):** lekcja szkolna już była wczoraj, więc kolejne etapy są w sekcji 3. Poniższe pozycje zostają w kolejności, gdy wrócą do kolejki.
+- **Polski (kolejność, gdy wróci):** najpierw przysłówek (G07) i przydawka (G12 części zdania), potem pozostałe podstawy: przymiotnik, rzeczownik, czasownik, liczebnik, zaimek, imiesłowy, przyimek, spójnik, związki wyrazowe.
 - **Angielski:** czasy — L004 (teraźniejsze i przeszłe), L005 (Present Perfect), L006 (Past Simple/Continuous), L012 (przyszłość), dalej L003 (stative) i L002 (operatory).
 - Paczki z warstwą olimpijską (`paczka_ai.py … --olimpiada`, dodatek `eksport/OLIMPIADA_DODATEK.md`), **jedna lekcja na paczkę, ≤ ok. 50 KB** (model z Multi-AI Chat czytał tylko ok. 50 KB — dłuższe urywał). Gotowe 2026-10-11: G07, G12, L004 (W1 FULL), L005 (FULL do §8). Kolejność wysyłki: `ANG_L006_past_simple_continuous` → `ANG_L005_reszta` → `ANG_L012_future` → `POL_G03_przymiotnik` → `POL_G01_rzeczownik` → `ANG_L003_stative_imperative` → `POL_G02…G13` → `ANG_L002_operatory_cz1–3`. Długie lekcje dzieli `eksport/podziel_lekcje.py`.
 
@@ -63,6 +64,8 @@ Pakiet 2026/27 (regulamin, terminarz, zakresy) **nie jest jeszcze opublikowany**
 | B2-U10 | **Układ dokrewny** (pkt III.10) | etap rejonowy | **[V] gotowa 2026-10-11** — `biologia/bio/md/BIO.07.U10.uklad_dokrewny.md` (do W1) |
 
 ## 3. Kolejka — później (oceny bieżące, kolejność szkolna kl. 8)
+- **Polski** (przeniesiony z sekcji 1a, 2026-10-13): przysłówek G07, przydawka G12, potem pozostałe podstawy wg sekcji 1a.
+- **Matematyka** (2026-10-13): lekcja szkolna była dzisiaj, więc na koniec kolejki. Zakres i kolejność do ustalenia, gdy matematyka wróci do priorytetów.
 - Chemia: (etap szkolny nie obejmuje organicznej) po solach → **węglowodory** (O01–O07, materiał `lekcje_md/O/CHE.05.O01-O07.weglowodory.md`) → pochodne węglowodorów (O08–O13) → substancje o znaczeniu biologicznym (O15–O20).
 - Biologia: genetyka → ewolucja → ekologia.
 
