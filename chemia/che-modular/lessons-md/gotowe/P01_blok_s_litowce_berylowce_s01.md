@@ -92,6 +92,9 @@ Który metal z grupy 2 ma najbardziej „miękki” elektron walencyjny: Mg czy 
 
 ## 3 | Reakcje z wodą i tlenem {#reakcje}
 
+@klocek metal-woda {metal="Na"} | Sód w wodzie: pęcherzyki wodoru i różowienie roztworu
+@opis Zlewka z wodą. Po wrzuceniu sodu biegną w górę białe pęcherzyki wodoru, a roztwór zmienia barwę na różową (zasada, fenoloftaleina). Wniosek: metal grupy 1 reaguje z wodą, powstaje zasada i wodór.
+
 ::: karta understand | Strategia → rozwiązanie → sprawdzenie: bilans reakcji sodu z wodą
 **Strategia:** zapisuję substraty i produkty. Produkty to wodorotlenek i wodór, bo metal wypiera wodór z wody.
 **Rozwiązanie:** Na + H₂O → NaOH + H₂. Bilans: sód 1 = 1, ale wodór po lewej 2, po prawej 2 + 1 = 3. Daję 2 przed Na i H₂O: 2 Na + 2 H₂O → 2 NaOH + H₂.
@@ -125,6 +128,9 @@ Tlenek metalu w reakcji z wodą daje jony OH⁻. Roztwór z jonami OH⁻ ma odcz
 :::
 
 ## 5 | Płomienie i wykrywanie metali {#plomienie}
+
+@klocek plomien {barwa="#f59e0b", nazwa="Na — żółty"} | Próba płomieniowa: sód
+@opis Płomień palnika o żółtej barwie, podpisany „Na — żółty”. Wniosek: sód w płomieniu daje żółtą barwę, więc żółty płomień wskazuje sód.
 
 ::: karta understand | Przykład prowadzony: wykrycie metalu po płomieniu
 **Dane:** nieznana sól nadaje płomieniu intensywnie żółtą barwę.

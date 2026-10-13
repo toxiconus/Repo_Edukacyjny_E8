@@ -123,6 +123,30 @@ def poziomy(L):
         L[i] = '#' * nowy + L[i][l:]
     return L
 
+KLOCKI_DIR = os.path.join(REPO, 'chemia', 'che-modular', 'engine', 'src', 'klocki')
+
+def klocek_line(st):
+    """@klocek <nazwa> {k="v"} | Podpis  →  figura, którą montuje klocek (engine/src/klocki)."""
+    head, *titles = [x.strip() for x in st[8:].split(' | ')]
+    mm = re.match(r'([\w-]+)\s*(?:\{(.*)\})?\s*$', head)
+    if not mm: raise SyntaxError('zła linia @klocek: ' + st)
+    nazwa, opts = mm.group(1), dict(re.findall(r'([\w-]+)="([^"]*)"', mm.group(2) or ''))
+    cap = m.inline(titles[0]) if titles else ''
+    fc = '<figcaption>%s</figcaption>' % cap if cap else ''
+    return '<figure class="lk-fig" data-klocek="%s" data-opt="%s"><div class="lk-fig-body"></div>%s</figure>' % (
+        nazwa, H.escape(json.dumps(opts, ensure_ascii=False), quote=True), fc)
+
+def klocki_js(kod):
+    """Pliki klocków z manifestu dla lekcji + montaż wszystkich figur data-klocek."""
+    mani = json.loads(rd(os.path.join(KLOCKI_DIR, 'manifest.json')))
+    pliki = mani['lekcje'].get(kod)
+    if not pliki: raise SyntaxError('lekcja %s używa @klocek, a nie ma jej w klocki/manifest.json' % kod)
+    boot = ("(function(){document.querySelectorAll('[data-klocek]').forEach(function(f){"
+            "var o={};try{o=JSON.parse(f.getAttribute('data-opt')||'{}')}catch(e){}"
+            "Object.keys(o).forEach(function(k){if(o[k]!==''&&!isNaN(Number(o[k])))o[k]=Number(o[k])});"
+            "KLOCKI.montuj(f.querySelector('.lk-fig-body'),f.getAttribute('data-klocek'),o)})})();")
+    return ''.join(rd(os.path.join(KLOCKI_DIR, f)) + '\n' for f in pliki) + boot + '\n'
+
 def preprocess(text, p):
     L = text.split('\n'); fm = 0
     if L and L[0].strip() == '---':   # front matter zostaje bez zmian
@@ -130,6 +154,8 @@ def preprocess(text, p):
     out = L[:fm]; L = log_bloki(poziomy(bloki_kodu(L[fm:]))); i = 0; nsec = 0
     while i < len(L):
         st = L[i].strip()
+        if st.startswith('@klocek '):
+            out += ['', klocek_line(st), '']; i += 1; continue
         if st.startswith('@viz '):
             out += ['', viz_line(st, p), '']; i += 1; continue
         if st.startswith('@opis '):
@@ -249,6 +275,7 @@ def render(path, p):
     css = '\n'.join(rd(os.path.join(SZ, f)) for f in ('baza.css', 'ulepszenia.css', os.path.join('motywy', p + '.css')))
     own = '\n'.join(m.collect('styl', lines))
     js = (bio_js(main) if p == 'bio' else (rd(VIZ[p]) + '\n' if p in VIZ else '')) + rd(os.path.join(SZ, 'lekcja.js'))
+    if 'data-klocek=' in main: js = klocki_js(kod) + js
     bar = ('<header class="lk-bar"><span class="lk-subj"><i></i>%s</span><span class="lk-title">%s</span>'
            '<a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a>'
            '<button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button>'
