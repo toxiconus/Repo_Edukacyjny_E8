@@ -59,6 +59,12 @@ Mg — wolno z gorącą wodą; Al, Zn, Fe — tylko z parą wodną przy silnym n
   Zn + 2HCl → ZnCl₂ + H₂↑ · Fe + H₂SO₄(roz.) → FeSO₄ + H₂↑
   2Al + 6HCl → 2AlCl₃ + 3H₂↑ (po usunięciu warstwy tlenku — patrz błędy typowe 7)
 
+::: karta error | Pułapka: „glin nie reaguje z kwasem"
+Glin jest w szeregu przed wodorem, więc **teoretycznie** wypiera H₂ z kwasu solnego. Na pytaniu konkursowym łatwo jednak uznać, że nie reaguje — bo na jego powierzchni zawsze jest szczelna warstewka tlenku Al₂O₃. Kwas najpierw ją rozpuszcza (Al₂O₃ + 6HCl → 2AlCl₃ + 3H₂O), a dopiero potem reaguje czysty metal: 2Al + 6HCl → 2AlCl₃ + 3H₂↑. Stąd obserwacja „najpierw wolno, potem gwałtownie".
+
+Dwa warianty pytań: (a) „Al reaguje z HCl?" — **tak** (B6, prawda, po pokonaniu warstwy tlenku); (b) „dlaczego początek reakcji jest wolny?" — warstwa tlenku (E3). Zimna woda praktycznie nie reaguje z Al w tym sensie, co Na i Ca, więc nie myl go z K/Na/Ca z reguły A.
+:::
+
 Metal po H (Cu, Ag, Au) — brak reakcji. **⚠ Wyjątek konkursowy:** kwas azotowy(V) HNO₃ i stężony H₂SO₄ to kwasy **utleniające** — reagują z większością metali, ale **nie dają H₂** (produkty to tlenki azotu / SO₂). Dla H₂ zawsze: HCl albo rozcieńczony H₂SO₄.
 
 **Reguła C — sole (roztwory).** Metal aktywniejszy **wypiera** mniej aktywny z roztworu jego soli:
