@@ -156,10 +156,14 @@ Barwę pokazano komputerowo. Płomień sodu jest bardzo intensywny; w prawdziwej
 
 ::: karta warning | Status: wizualizacja komputerowa — spalanie i utlenianie
 Spalanie litowców i magnezu jest gwałtowne, a magnez daje oślepiająco biały błysk. Tu zobaczysz produkt, a nie instrukcję. Nie patrz prosto w błysk. Spalanie magnezu nie jest próbą płomieniową — w tej sekwencji nie porównujemy barw.
+
+**Wapń:** spala się do tlenku, 2Ca + O₂ → 2CaO. Sam CaO nie pali się, bo jest już produktem utlenienia metalu.
 :::
 
 ::: karta warning | Status: model teoretyczny — rad (UWAGA: rzeczywista reakcja niebezpieczna)
 **Model teoretyczny.** Rad jest promieniotwórczy i nie jest używany w szkolnych doświadczeniach. Rubid i cez to reakcje niemożliwe do wykonania w szkole. Tu pokazujemy jedynie ich miejsce w grupie i przewidywane analogie. Znak promieniowania i zakaz przy radzie obowiązują także w wizualizacji.
+
+**Frans (Fr):** brak wiarygodnych danych o barwie płomienia i o reakcjach. Przewidywana reakcja z wodą 2Fr + 2H₂O → 2FrOH + H₂ jest wyłącznie teoretyczna; nie pokazujemy jej animacją, a tlenek franu nie jest pewnie znany.
 :::
 
 ## 6 | Zastosowania {#zastosowania}
