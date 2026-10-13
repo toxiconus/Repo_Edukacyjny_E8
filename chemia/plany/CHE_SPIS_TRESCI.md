@@ -1,7 +1,7 @@
 ---
 kod: CHE-SPIS
 wersja: v0.3 (plan roboczy)
-data: 2026-10-12
+data: 2026-10-13
 zrodlo: wygenerowane z che/narzedzia/kanon_dane.py (edytuj dane, nie ten plik) — `python3 che/narzedzia/spis_tresci.py`
 zastepuje: CHE_KANON_v0.2.md, CHE_SPIS_LEKCJI.md, AUDYT_SPISU_v0.2.md (usunięte, w historii git), PLAN_LEKCJI.md
 uzupelnia: PLAN_SCIEZKI_DYDAKTYCZNE.md
@@ -21,9 +21,9 @@ uzupelnia: PLAN_SCIEZKI_DYDAKTYCZNE.md
 - **Status (rejestr z audytu końcowego W1):** GOTOWE HTML — lekcja zbudowana · GOTOWE MASTER — pełny materiał i specyfikacja · UZUPEŁNIONE — dopisana treść kanoniczna · POPRAWIONE — korekty z audytu · DO SPRAWDZENIA · ŹRÓDŁO — materiał bazowy bez audytu · PRZENIESIONE — treść ma właściciela w innej lekcji · DO IMPLEMENTACJI — tylko opis w kanonie. Wyliczany z plików; ręcznie: `kanon_dane.STATUS`.
 - **Treść ponad E8** (np. Faraday, rząd reakcji, Hess, Ka/pKa, bufory) idzie do sekcji `[[extra:ZAAWANSOWANY]]` w tej samej lekcji — nie do osobnych lekcji OLIMPIADA.
 
-**Statusy:** GOTOWE HTML 13 · UZUPEŁNIONE 45 · POPRAWIONE 44 · DO IMPLEMENTACJI 11.
+**Statusy:** GOTOWE HTML 13 · UZUPEŁNIONE 44 · POPRAWIONE 45 · ŹRÓDŁO 11.
 
-**Bilans:** 113 lekcji w 10 grupach. ●●● 13 · ●●○ 10 · ◐○○ 46 · ●○○ 33 · ○○○ 11.
+**Bilans:** 113 lekcji w 10 grupach. ●●● 13 · ●●○ 11 · ◐○○ 56 · ●○○ 33 · ○○○ 0.
 
 ## 1. Zasady kanonu
 
@@ -64,11 +64,11 @@ uzupelnia: PLAN_SCIEZKI_DYDAKTYCZNE.md
 
 **E Elektrochemia:** ◐○○ E01 Ogniwo galwaniczne · ◐○○ E02 Potencjały elektrodowe · ◐○○ E03 SEM · ◐○○ E04 Elektroliza · ◐○○ E05 Korozja · ◐○○ E06 Źródła energii i akumulatory
 
-**K Energetyka, kinetyka i równowaga:** ◐○○ K01 Energia reakcji · ◐○○ K02 Entalpia · ◐○○ K03 Kalorymetria i przemiany fazowe · ◐○○ K04 Szybkość reakcji · ◐○○ K05 Czynniki wpływające na szybkość · ◐○○ K06 Zderzenia i energia aktywacji · ◐○○ K07 Kataliza · ◐○○ K08 Równowaga dynamiczna · ◐○○ K09 Stała równowagi · ◐○○ K10 Reguła Le Chateliera · ◐○○ K11 Równowaga ilościowa
+**K Energetyka, kinetyka i równowaga:** ◐○○ K01 Energia reakcji · ◐○○ K02 Entalpia · ◐○○ K03 Kalorymetria i przemiany fazowe · ●●○ K04 Szybkość reakcji · ◐○○ K05 Czynniki wpływające na szybkość · ◐○○ K06 Zderzenia i energia aktywacji · ◐○○ K07 Kataliza · ◐○○ K08 Równowaga dynamiczna · ◐○○ K09 Stała równowagi · ◐○○ K10 Reguła Le Chateliera · ◐○○ K11 Równowaga ilościowa
 
-**A Chemia jądrowa:** ◐○○ A01 Jądro atomowe · ○○○ A02 Radioaktywność · ○○○ A03 Przemiany jądrowe · ○○○ A04 Okres półtrwania i aktywność · ○○○ A05 Energia wiązania jądra · ○○○ A06 Zastosowania i BHP
+**A Chemia jądrowa:** ◐○○ A01 Jądro atomowe · ◐○○ A02 Radioaktywność · ◐○○ A03 Przemiany jądrowe · ◐○○ A04 Okres półtrwania i aktywność · ◐○○ A05 Energia wiązania jądra · ◐○○ A06 Zastosowania i BHP
 
-**P Układ okresowy — pogłębienie:** ○○○ P01 Blok s · ○○○ P02 Blok p · ○○○ P03 Blok d i metale przejściowe · ○○○ P04 Charakterystyka grup · ○○○ P05 Związki charakterystyczne pierwiastków · ○○○ P06 Trend → właściwość → reaktywność
+**P Układ okresowy — pogłębienie:** ◐○○ P01 Blok s · ◐○○ P02 Blok p · ◐○○ P03 Blok d i metale przejściowe · ◐○○ P04 Charakterystyka grup · ◐○○ P05 Związki charakterystyczne pierwiastków · ◐○○ P06 Trend → właściwość → reaktywność
 
 ---
 
@@ -100,7 +100,7 @@ stan: "●●●"
 - minimum BHP i piktogramy
 - pracownia GFX (6 zlewek)
 
-**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F01_jak_mysli_chemik.md` (54 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F01.jak_mysli_chemik.md` (83 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F01_jak_mysli_chemik.md` (64 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F01.jak_mysli_chemik.md` (22 KB)
 
 #### F02 — Materia i substancje
 
@@ -121,7 +121,7 @@ stan: "●●●"
 - drzewo klasyfikacji
 - metale i niemetale (wstęp)
 
-**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F02_materia_i_substancje.md` (45 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F02.materia_i_substancje.md` (29 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F02_materia_i_substancje.md` (56 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F02.materia_i_substancje.md` (21 KB)
 
 #### F03 — Właściwości i rozdzielanie mieszanin
 
@@ -143,7 +143,7 @@ stan: "●●●"
 - sączenie, dekantacja, odparowanie, krystalizacja, destylacja, chromatografia, magnes
 - dobór metody
 
-**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F03_wlasciwosci_i_rozdzielanie.md` (45 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F03.wlasciwosci_i_rozdzielanie_mieszanin.md` (42 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F03_wlasciwosci_i_rozdzielanie.md` (56 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F03.wlasciwosci_i_rozdzielanie_mieszanin.md` (29 KB)
 
 ### Faza B — Z czego to wynika?
 
@@ -167,7 +167,7 @@ stan: "●●●"
 - atom obojętny vs jon
 - modele atomu (historia skrócona)
 
-**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F04_atom.md` (33 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F04.atom.md` (41 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F04_atom.md` (42 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F04.atom.md` (21 KB)
 
 #### F05 — Izotopy, jony i masa atomowa
 
@@ -189,7 +189,7 @@ stan: "●●●"
 - procedura średniej izotopowej
 - izotop i jon jednocześnie (np. ³⁵Cl⁻)
 
-**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F05_izotopy_jony_masa_atomowa.md` (37 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F05.izotopy_jony_i_masa_atomowa.md` (41 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F05_izotopy_jony_masa_atomowa.md` (47 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F05.izotopy_jony_i_masa_atomowa.md` (41 KB)
 
 #### F06 — Układ okresowy
 
@@ -211,7 +211,7 @@ stan: "●●●"
 - trendy: promień, elektroujemność, charakter metaliczny — każdy z „dlaczego”
 - OWNER trendów
 
-**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F06_uklad_okresowy.md` (57 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F06.uklad_okresowy.md` (32 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F06_uklad_okresowy.md` (73 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F06.uklad_okresowy.md` (32 KB)
 
 #### F07 — Konfiguracja elektronowa
 
@@ -270,7 +270,7 @@ stan: "●●○"
 - tabela typowych wartości
 - pułapki mylenia trzech pojęć
 
-**Mamy:** materiał `lekcje_md/F/CHE.01.F09.wartosciowosc_ladunek_i_stopien_utlenien.md` (109 KB)
+**Mamy:** materiał `lekcje_md/F/CHE.01.F09.wartosciowosc_ladunek_i_stopien_utlenien.md` (40 KB)
 
 ### Faza C — Jak powstaje struktura?
 
@@ -320,7 +320,7 @@ stan: "●●○"
 
 ```yaml
 kod: F12
-status: UZUPEŁNIONE
+status: POPRAWIONE
 poziom: E8
 wymaga: "F09; F11"
 poglebia: "F13; F17; N02–N08"
@@ -339,7 +339,7 @@ stan: "●●○"
 - skład procentowy
 - prawo stałości składu (OWNER)
 
-**Mamy:** materiał `lekcje_md/F/CHE.01.F12.wzory_chemiczne.md` (129 KB)
+**Mamy:** materiał `lekcje_md/F/CHE.01.F12.wzory_chemiczne.md` (28 KB)
 
 #### F13 — Wzory elektronowe (Lewis)
 
@@ -555,7 +555,7 @@ bylo: "nowa"
 - tlen, azot, wodór, CO₂, gazy szlachetne — otrzymywanie, właściwości, wykrywanie, zastosowania
 - zanieczyszczenia powietrza, efekt cieplarniany, dziura ozonowa
 
-**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N01_powietrze_i_gazy.md` (29 KB) → HTML przez `md2html.py`
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N01_powietrze_i_gazy.md` (38 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N01.powietrze_i_gazy.md` (33 KB)
 
 **Dlaczego tu:** cały dział IV podstawy E8 nie miał lekcji; tlen i wodór są potrzebne do tlenków i wodorków
 
@@ -579,7 +579,7 @@ bylo: "N01"
 - tlenki kwasowe, zasadowe, obojętne, amfoteryczne (LO)
 - reakcje z wodą
 
-**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N01_tlenki.md` (130 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N02.tlenki.md` (38 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N02_tlenki.md` (64 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N02.tlenki.md` (38 KB)
 
 #### N03 — Wodorotlenki i zasady
 
@@ -602,7 +602,7 @@ bylo: "N02"
 - dysocjacja (E8)
 - wskaźniki
 
-**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N02_wodorotlenki.md` (136 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N03.wodorotlenki.md` (31 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N03_wodorotlenki.md` (137 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N03.wodorotlenki.md` (31 KB)
 
 #### N04 — Kwasy
 
@@ -626,7 +626,7 @@ bylo: "N03"
 - metal + kwas (OWNER E8)
 - kwaśne deszcze
 
-**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N03_kwasy.md` (140 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N04.kwasy.md` (35 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N04_kwasy.md` (140 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N04.kwasy.md` (36 KB)
 
 #### N05 — Sole
 
@@ -649,7 +649,7 @@ bylo: "N04"
 - tabela rozpuszczalności i strącanie (E8)
 - zastosowania
 
-**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N04_sole.md` (90 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N05.sole.md` (38 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N05_sole.md` (91 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N05.sole.md` (38 KB)
 
 #### N06 — Wodorki
 
@@ -670,7 +670,7 @@ bylo: "N05"
 - charakter chemiczny w układzie okresowym
 - amoniak, chlorowodór, siarkowodór
 
-**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N05_wodorki.md` (61 KB) → HTML przez `md2html.py`
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N06_wodorki_stary.md` (62 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N06.wodorki.md` (1 KB)
 
 #### N07 — Systematyka nieorganiczna
 
@@ -784,7 +784,7 @@ stan: "●●●"
 - mieszanie roztworów
 - gęstość (LO)
 
-**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/R03_woda_roztwory_stezenie_procentowe.md` (35 KB) → HTML przez `md2html.py`; materiał `lekcje_md/R/CHE.03.R03+R05.stezenia.md` (35 KB) — wspólny dla R03, R05
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/R03_woda_roztwory_stezenie_procentowe.md` (36 KB) → HTML przez `md2html.py`; materiał `lekcje_md/R/CHE.03.R03+R05.stezenia.md` (35 KB) — wspólny dla R03, R05
 
 #### R04 — Mol i masa molowa
 
@@ -2123,7 +2123,7 @@ status: POPRAWIONE
 poziom: LO
 wymaga: "R05"
 poglebia: "K05"
-stan: "◐○○"
+stan: "●●○"
 bylo: "K01"
 ```
 
@@ -2135,7 +2135,7 @@ bylo: "K01"
 - wykresy stężenie–czas
 - równanie kinetyczne (LO-R)
 
-**Mamy:** materiał `lekcje_md/K/CHE.07.K04.szybkosc_reakcji.md` (14 KB)
+**Mamy:** materiał `lekcje_md/K/CHE.07.K04.szybkosc_reakcji.md` (34 KB)
 
 #### K05 — Czynniki wpływające na szybkość
 
@@ -2175,7 +2175,7 @@ bylo: "K03"
 - energia aktywacji na wykresie
 - rozkład energii cząsteczek
 
-**Mamy:** materiał `lekcje_md/K/CHE.07.K06.zderzenia_energia_aktywacji.md` (12 KB)
+**Mamy:** materiał `lekcje_md/K/CHE.07.K06.zderzenia_energia_aktywacji.md` (16 KB)
 
 #### K07 — Kataliza
 
@@ -2197,7 +2197,7 @@ bylo: "K04"
 - inhibitory
 - katalizatory w przemyśle i samochodach
 
-**Mamy:** materiał `lekcje_md/K/CHE.07.K07.kataliza.md` (2 KB)
+**Mamy:** materiał `lekcje_md/K/CHE.07.K07.kataliza.md` (20 KB)
 
 #### K08 — Równowaga dynamiczna
 
@@ -2218,7 +2218,7 @@ bylo: "K07"
 - stan równowagi dynamicznej
 - modele
 
-**Mamy:** materiał `lekcje_md/K/CHE.07.K08.rownowaga_dynamiczna.md` (2 KB)
+**Mamy:** materiał `lekcje_md/K/CHE.07.K08.rownowaga_dynamiczna.md` (14 KB)
 
 #### K09 — Stała równowagi
 
@@ -2239,7 +2239,7 @@ bylo: "K08"
 - obliczenia stężeń równowagowych
 - Kp (LO-R)
 
-**Mamy:** materiał `lekcje_md/K/CHE.07.K09.stala_rownowagi.md` (2 KB)
+**Mamy:** materiał `lekcje_md/K/CHE.07.K09.stala_rownowagi.md` (14 KB)
 
 #### K10 — Reguła Le Chateliera
 
@@ -2259,7 +2259,7 @@ bylo: "K09"
 - wpływ stężenia, ciśnienia, temperatury
 - zastosowania przemysłowe (synteza amoniaku)
 
-**Mamy:** materiał `lekcje_md/K/CHE.07.K10.regula_le_chateliera.md` (2 KB)
+**Mamy:** materiał `lekcje_md/K/CHE.07.K10.regula_le_chateliera.md` (14 KB)
 
 #### K11 — Równowaga ilościowa
 
@@ -2278,7 +2278,7 @@ stan: "◐○○"
 - stopień przereagowania
 - zadania złożone z K
 
-**Mamy:** materiał `lekcje_md/K/CHE.07.K11.rownowaga_ilosciowa.md` (12 KB)
+**Mamy:** materiał `lekcje_md/K/CHE.07.K11.rownowaga_ilosciowa.md` (18 KB)
 
 ---
 
@@ -2310,11 +2310,11 @@ stan: "◐○○"
 
 ```yaml
 kod: A02
-status: DO IMPLEMENTACJI
+status: ŹRÓDŁO
 poziom: E8+LO
 wymaga: "A01"
 poglebia: "A03"
-stan: "○○○"
+stan: "◐○○"
 ```
 
 **Cel:** Uczeń rozróżnia rodzaje promieniowania i ich właściwości.
@@ -2324,17 +2324,17 @@ stan: "○○○"
 - przenikliwość
 - detekcja
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/A/CHE.08.A02.radioaktywnosc.md` (1 KB)
 
 #### A03 — Przemiany jądrowe
 
 ```yaml
 kod: A03
-status: DO IMPLEMENTACJI
+status: ŹRÓDŁO
 poziom: LO
 wymaga: "A02"
 poglebia: "A04"
-stan: "○○○"
+stan: "◐○○"
 ```
 
 **Cel:** Uczeń zapisuje równania przemian jądrowych.
@@ -2344,17 +2344,17 @@ stan: "○○○"
 - szeregi promieniotwórcze
 - reakcje jądrowe
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/A/CHE.08.A03.przemiany_jadrowe.md` (0 KB)
 
 #### A04 — Okres półtrwania i aktywność
 
 ```yaml
 kod: A04
-status: DO IMPLEMENTACJI
+status: ŹRÓDŁO
 poziom: LO
 wymaga: "A03"
 poglebia: "A06"
-stan: "○○○"
+stan: "◐○○"
 ```
 
 **Cel:** Uczeń oblicza ubytek substancji promieniotwórczej.
@@ -2364,17 +2364,17 @@ stan: "○○○"
 - aktywność
 - datowanie izotopowe
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/A/CHE.08.A04.okres_potrwania_i_aktywnosc.md` (1 KB)
 
 #### A05 — Energia wiązania jądra
 
 ```yaml
 kod: A05
-status: DO IMPLEMENTACJI
+status: ŹRÓDŁO
 poziom: LO
 wymaga: "A01"
 poglebia: "A06"
-stan: "○○○"
+stan: "◐○○"
 bylo: "A06"
 ```
 
@@ -2385,17 +2385,17 @@ bylo: "A06"
 - E = mc²
 - rozszczepienie i synteza jądrowa
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/A/CHE.08.A05.energia_wiazania_jadra.md` (1 KB)
 
 #### A06 — Zastosowania i BHP
 
 ```yaml
 kod: A06
-status: DO IMPLEMENTACJI
+status: ŹRÓDŁO
 poziom: E8+LO
 wymaga: "A04; A05"
 poglebia: "—"
-stan: "○○○"
+stan: "◐○○"
 bylo: "A05"
 ```
 
@@ -2405,7 +2405,7 @@ bylo: "A05"
 - medycyna, energetyka, datowanie
 - ochrona radiologiczna
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/A/CHE.08.A06.zastosowania_i_bhp.md` (1 KB)
 
 **Dlaczego tu:** energetyka jądrowa wymaga energii wiązania, więc zastosowania na koniec
 
@@ -2419,11 +2419,11 @@ _spina wszystko: przewidywanie właściwości z położenia_
 
 ```yaml
 kod: P01
-status: DO IMPLEMENTACJI
+status: ŹRÓDŁO
 poziom: E8+LO
 wymaga: "F06; F11; N03"
 poglebia: "P04"
-stan: "○○○"
+stan: "◐○○"
 ```
 
 **Cel:** Uczeń opisuje litowce i berylowce oraz ich związki.
@@ -2433,17 +2433,17 @@ stan: "○○○"
 - reakcje z wodą i tlenem
 - najważniejsze związki
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/P/CHE.01.P01.blok_s.md` (0 KB)
 
 #### P02 — Blok p
 
 ```yaml
 kod: P02
-status: DO IMPLEMENTACJI
+status: ŹRÓDŁO
 poziom: LO
 wymaga: "F06; N02; N04"
 poglebia: "P04"
-stan: "○○○"
+stan: "◐○○"
 ```
 
 **Cel:** Uczeń opisuje pierwiastki bloku p i ich związki.
@@ -2453,17 +2453,17 @@ stan: "○○○"
 - metale i niemetale bloku p
 - najważniejsze związki
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/P/CHE.01.P02.blok_p.md` (0 KB)
 
 #### P03 — Blok d i metale przejściowe
 
 ```yaml
 kod: P03
-status: DO IMPLEMENTACJI
+status: ŹRÓDŁO
 poziom: LO
 wymaga: "F07; F08; X01"
 poglebia: "P05"
-stan: "○○○"
+stan: "◐○○"
 bylo: "P03 + P04"
 ```
 
@@ -2475,7 +2475,7 @@ bylo: "P03 + P04"
 - związki barwne
 - kompleksy (wstęp)
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/P/CHE.01.P03.blok_d_i_metale_przejsciowe.md` (1 KB)
 
 **Dlaczego tu:** „blok d” i „metale przejściowe” to prawie ten sam temat
 
@@ -2483,11 +2483,11 @@ bylo: "P03 + P04"
 
 ```yaml
 kod: P04
-status: DO IMPLEMENTACJI
+status: ŹRÓDŁO
 poziom: LO
 wymaga: "P01–P03"
 poglebia: "P05"
-stan: "○○○"
+stan: "◐○○"
 bylo: "P05"
 ```
 
@@ -2497,17 +2497,17 @@ bylo: "P05"
 - porównanie grup
 - podobieństwa i wyjątki
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/P/CHE.01.P04.charakterystyka_grup.md` (1 KB)
 
 #### P05 — Związki charakterystyczne pierwiastków
 
 ```yaml
 kod: P05
-status: DO IMPLEMENTACJI
+status: ŹRÓDŁO
 poziom: LO
 wymaga: "P04"
 poglebia: "P06"
-stan: "○○○"
+stan: "◐○○"
 bylo: "P06"
 ```
 
@@ -2517,17 +2517,17 @@ bylo: "P06"
 - katalog związków charakterystycznych
 - zastosowania
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/P/CHE.01.P05.zwiazki_charakterystyczne_pierwiastkow.md` (1 KB)
 
 #### P06 — Trend → właściwość → reaktywność
 
 ```yaml
 kod: P06
-status: DO IMPLEMENTACJI
+status: ŹRÓDŁO
 poziom: LO
 wymaga: "F06; P01–P05"
 poglebia: "—"
-stan: "○○○"
+stan: "◐○○"
 bylo: "P07 + P08"
 ```
 
@@ -2536,7 +2536,7 @@ bylo: "P07 + P08"
 **Co ma być:**
 - łańcuch: położenie → budowa → właściwości → reakcje (trendy jako OWNER w F06 — tu przewidywanie)
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/P/CHE.01.P06.trend_wasciwosc_reaktywnosc.md` (1 KB)
 
 **Dlaczego tu:** stare P07 i P08 opisywały to samo
 
@@ -2635,7 +2635,7 @@ Materiał wspólny kursu: `lekcje_md/00/CHE.00.W00.wstep.md` (wstęp pakietu v1.
 | P06 | P05 | Związki charakterystyczne pierwiastków |
 | P07 + P08 | P06 | Trend → właściwość → reaktywność |
 
-Gotowe pliki z dawnymi kodami (do przemianowania jednym skryptem po zatwierdzeniu): `che-modular/lessons-md/gotowe/N01_tlenki.md` → N02, `che-modular/lessons-md/gotowe/N02_wodorotlenki.md` → N03, `che-modular/lessons-md/gotowe/N03_kwasy.md` → N04, `che-modular/lessons-md/gotowe/N04_sole.md` → N05, `che-modular/lessons-md/gotowe/N05_wodorki.md` → N06.
+Gotowe pliki z dawnymi kodami (do przemianowania jednym skryptem po zatwierdzeniu): .
 
 ## 15. Decyzje przyjęte domyślnie (do potwierdzenia)
 

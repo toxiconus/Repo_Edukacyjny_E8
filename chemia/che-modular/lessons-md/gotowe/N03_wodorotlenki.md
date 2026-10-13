@@ -1,6 +1,6 @@
 ---
-kod: N02
-uid: 
+kod: N03
+uid: CHE.02.N03.wodorotlenki
 tytul: Wodorotlenki i zasady
 opis: Wodorotlenki — grupa OH⁻, wzór M(OH)ₙ i nawias, nazwy, rozpuszczalność, wodorotlenek a zasada, dysocjacja i odczyn, otrzymywanie, zobojętnianie, strącanie, wapno i woda wapienna, amfoteryczność
 kicker: N02 · CHEMIA · MASTER LAB v9.0

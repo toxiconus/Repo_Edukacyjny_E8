@@ -1,6 +1,6 @@
 ---
-kod: N05
-uid: CHE.02.N05.wodorki
+kod: N06
+uid: CHE.02.N06.wodorki_stary
 tytul: Wodorki
 opis: Wodorki jonowe, kowalencyjne i metaliczne · rola wodoru (H⁻ / H⁺) · amoniak, chlorowodór, siarkowodór · trendy
 stan: W10 — GPT-6, 2026-10-09; korekty bezpieczeństwa i doprecyzowania danych, wymaga niezależnej recenzji chemicznej

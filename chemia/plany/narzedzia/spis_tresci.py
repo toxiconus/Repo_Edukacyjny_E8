@@ -9,7 +9,7 @@ G = 'che-modular/lessons-md/gotowe/'
 GOTOWE = {  # kod v0.3 -> gotowa lekcja (md w szablonie + HTML przez che-modular/tools/md2html.py)
     'F01': G+'F01_jak_mysli_chemik.md', 'F02': G+'F02_materia_i_substancje.md', 'F03': G+'F03_wlasciwosci_i_rozdzielanie.md', 'F04': G+'F04_atom.md',
     'F05': G+'F05_izotopy_jony_masa_atomowa.md', 'F06': G+'F06_uklad_okresowy.md', 'N01': G+'N01_powietrze_i_gazy.md',
-    'N02': G+'N01_tlenki.md', 'N03': G+'N02_wodorotlenki.md', 'N04': G+'N03_kwasy.md', 'N05': G+'N04_sole.md', 'N06': G+'N05_wodorki.md',
+    'N02': G+'N02_tlenki.md', 'N03': G+'N03_wodorotlenki.md', 'N04': G+'N04_kwasy.md', 'N05': G+'N05_sole.md', 'N06': G+'N06_wodorki_stary.md',
     'R03': G+'R03_woda_roztwory_stezenie_procentowe.md',
 }
 GOTOWE = {k: v for k, v in GOTOWE.items() if os.path.exists(v)}

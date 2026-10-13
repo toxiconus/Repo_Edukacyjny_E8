@@ -1,6 +1,6 @@
 ---
-kod: N04
-uid: 
+kod: N05
+uid: CHE.02.N05.sole
 tytul: Sole
 opis: budowa soli · wzory i nazwy · dysocjacja · tabela rozpuszczalności · otrzymywanie · strącanie · wypieranie metali · hydraty · ważne sole · BHP
 kicker: N04 · MASTER LAB v1.1

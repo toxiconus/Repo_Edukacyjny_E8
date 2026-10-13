@@ -1,6 +1,6 @@
 ---
-kod: N01
-uid: CHE.02.N01.tlenki
+kod: N02
+uid: CHE.02.N02.tlenki
 tytul: Tlenki
 opis: tlenek — definicja i nazewnictwo · wzór z wartościowości (W–K–S–K) · charakter (zasadowy, kwasowy, obojętny, amfoteryczny) · reakcje z wodą, kwasami i zasadami · otrzymywanie · zastosowania · BHP i środowisko
 kicker: N01 · CHEMIA NIEORGANICZNA · DZIAŁ IV PODSTAWY · KONKURS ETAP SZKOLNY

@@ -1,6 +1,6 @@
 ---
-kod: N03
-uid: 
+kod: N04
+uid: CHE.02.N04.kwasy
 tytul: Kwasy
 opis: Kwasy — definicja Arrheniusa i Brønsteda, nazewnictwo, reszty kwasowe, właściwości, dysocjacja, moc i stopień dysocjacji, pH i wskaźniki, otrzymywanie, reakcje, kwaśne deszcze, zastosowania, BHP, miareczkowanie i bufory
 kicker: N03 · MASTER LAB v1.9
