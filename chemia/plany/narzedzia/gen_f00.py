@@ -78,6 +78,11 @@ for kod,co,st in [
     ("LKO-STECH","Masy cząsteczkowe i stechiometria z nadmiarem (LKO etap II)","szkic 2026-10-13, bez audytu W1"),
     ("LKO-DOSW","Katalog doświadczeń: schemat opisu, obserwacja vs wniosek, matryce (LKO I–II)","szkic 2026-10-13, bez audytu W1"),
     ("LKO-B1+B2","Zestawy treningowe etapu II (B1 szereg/jonowe, B2 wodorki/stechiometria) z mixem etapu I","szkic 2026-10-13, bez audytu W1"),
+    ("R01","Woda i roztwory (polarność, roztwór, zawiesina, koloid)","szkic 2026-10-13, bez audytu W1"),
+    ("R02","Rozpuszczalność (nasycony, krzywe, krystalizacja)","szkic 2026-10-13, bez audytu W1"),
+    ("R04","Mol i masa molowa (Avogadro, przeliczenia)","szkic 2026-10-13, bez audytu W1"),
+    ("R08","Reagent ograniczający (procedura trzech kroków)","szkic 2026-10-13, bez audytu W1"),
+    ("R09","Wydajność reakcji (łączenie z nadmiarem)","szkic 2026-10-13, bez audytu W1"),
     ("LKO-SYM-A2","Symulacja etapu II LKO (90 min / 40 pkt, 10 zadań, kumulatywnie I–II)","szkic 2026-10-13, bez audytu W1"),
     ("N06","Wodorki: wodór, amoniak, HCl, H₂S (LKO II rozsz. 1)","szkic 2026-10-13, W1 + W2"),
 ]:
