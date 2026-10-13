@@ -6,8 +6,8 @@ opis: Elektrony walencyjne i kropki · wiązania i wolne pary · procedura rysow
 kicker: F13 · FUNDAMENTY · NOWA WERSJA
 lead: Wzór strukturalny pokazuje, które atomy są połączone. Wzór elektronowy (Lewisa) pokazuje też, **gdzie są elektrony** — wiążące i niewiążące. Ten zapis pozwala przewidzieć kształt cząsteczki (F14), jej polarność (F15) i miejsca reakcji.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
-stan: "pełna struktura — 2026-10-13, bez audytu W1"
-stopka: **CHEMIA F13 v1.0** · Wzory elektronowe (Lewisa) · 2026
+stan: "pełna struktura — 2026-10-13, audyt W1 wprowadzony"
+stopka: **CHEMIA F13 v1.1** · Wzory elektronowe (Lewisa) · 2026
 ---
 
 ::: minimum | Muszę umieć na E8 — 10 punktów
@@ -100,13 +100,15 @@ Kropki zapisujemy zgodnie z zasadą: najpierw jedna na każdej stronie, potem dr
 **Wiązanie podwójne** (=) — dwie wspólne pary; **potrójne** (≡) — trzy.
 :::
 
+**Wzór elektronowy** — pary elektronów przedstawione kropkami (także wolne pary). **Wzór kreskowy** — pary wiążące przedstawione kreskami; wolne pary często pomija się lub zapisuje kreskami. H₂O: wzór elektronowy H:Ö:H (kropki), wzór kreskowy H–O–H.
+
 ## 3 | Procedura rysowania — pięć kroków [[basic:E8]] {#procedura}
 
 ::: karta core | Procedura dla prostych cząsteczek
 1. **Policz elektrony walencyjne** wszystkich atomów. Dla jonu dodaj elektrony przy ładunku ujemnym, odejmij przy dodatnim.
 2. **Wybierz atom centralny** — zwykle najmniej elektroujemny (poza H). Atom H nigdy nie jest centralny.
 3. **Połącz atomy pojedynczymi wiązaniami** wokół centralnego (każde wiązanie = 2 elektrony).
-4. **Dorysuj wolne pary** atomom zewnętrznym, aż każdy (H: dublet; reszta: oktet).
+4. **Dorysuj wolne pary** atomom zewnętrznym tak, aby każdy z nich osiągnął trwałą konfigurację (H: dublet, pozostałe: oktet).
 5. **Resztę elektronów** daj atomowi centralnemu. Jeśli brakuje mu oktetu, zamień wolną parę sąsiada na wiązanie podwójne lub potrójne.
 :::
 
@@ -121,6 +123,8 @@ Wynik: H–Ö–H z dwiema wolnymi parami na tlenie.
 ::: odp | Przykład prowadzony — NH₃
 Elektrony: 5 + 3 = 8. Trzy wiązania N–H (6 e⁻), pozostałe 2 e⁻ jako jedna wolna para na N. Wokół N: 3 wiązania + 1 wolna para = 8 e⁻ ✓.
 :::
+
+**Dlaczego N ma jedną wolną parę, a O — dwie?** Azot ma 5 elektronów walencyjnych: 3 idą na wiązania z H, zostają 2 — czyli jedna wolna para. Tlen ma 6: 2 idą na wiązania z H, zostają 4 — czyli dwie wolne pary. W obu przypadkach wokół atomu jest oktet: N — 3 wiązania + 1 wolna para; O — 2 wiązania + 2 wolne pary.
 
 ::: odp | Przykład prowadzony — CH₄
 Elektrony: 4 + 4 = 8. Cztery wiązania C–H. Węgiel ma oktet (4 pary), brak wolnych par.
@@ -164,8 +168,18 @@ Elektrony walencyjne: C 4 + H 3·1 + O 6 + H 1 = 14 (1 pkt). Wiązania: C–H ×
 Elektrony: 5 + 4·1 − 1 (ładunek +) = 8. Azot połączony z czterema atomami H pojedynczymi wiązaniami (8 e⁻). Wokół N: 4 wiązania = oktet, brak wolnych par. Cały jon w nawiasie, z ładunkiem +1 zapisanym górnym indeksem.
 :::
 
+**Skąd czwarte wiązanie?** Cząsteczka NH₃ ma wolną parę na azocie. Jon H⁺ nie ma elektronów, więc oba elektrony wiązania pochodzą od azotu — to wiązanie koordynacyjne. Po utworzeniu wszystkie cztery wiązania N–H są jednakowe. Dlatego w NH₄⁺ azot ma wartościowość IV.
+
 ::: karta understand | Wzór Lewisa dla jonu — zapis
 Jon zapisujemy w nawiasie kwadratowym z ładunkiem poza nawiasem, np. [NH₄]⁺ albo jako NH₄⁺ bez nawiasu, jeśli wzór jest prosty. Dla jonów z wolnymi parami na atomie zewnętrznym (np. O²⁻) pokazujemy dodatkowe pary.
+:::
+
+::: karta core | Wzór elektronowy związku jonowego
+Atom metalu oddaje elektrony walencyjne (powstaje kation bez kropek), atom niemetalu je przyjmuje (anion z 8 kropkami, czyli 4 parami, w nawiasie z ładunkiem).
+- NaCl: Na· + ·Cl̈: → [Na]⁺ [:Cl̈:]⁻
+- MgCl₂: Mg bez 2 elektronów → [Mg]²⁺, dwa aniony [:Cl̈:]⁻ (każdy z oktetem)
+- Na₂O: dwa Na oddają po 1 elektronowi, O przyjmuje 2 → 2 [Na]⁺ [:Ö:]²⁻
+W związku jonowym nie rysujemy wspólnych par — rysujemy jony.
 :::
 
 ## 6 | Wykład — dlaczego oktet jest najczęściej wystarczający [[understand:ROZUMIENIE]] {#wykład}
@@ -181,6 +195,8 @@ Wolne pary są ważne, bo zajmują miejsce w przestrzeni i odpychają wiązania.
 2. Każdy atom ma oktet (H — dublet).
 3. Liczba wiązań = liczba par wiążących (wiązanie podwójne liczymy jako dwie pary).
 :::
+
+**Wartościowość = liczba wiązań atomu (kresek).** NH₃: N — 3 kreski, więc III. NH₄⁺: N — 4 kreski, więc IV. CO₂: C — 4 kreski (O=C=O), więc IV; O — 2 kreski, więc II.
 
 ## 7 | Klinika błędów {#klinika}
 
@@ -241,7 +257,39 @@ Narysuj wzór Lewisa dla:
 Narysuj wzór Lewisa BF₃ i wyjaśnij, dlaczego bor nie ma oktetu.
 
 ::: odp | Pokaż odpowiedź
-Elektrony: 3 + 3·7 = 24 (12 par). Trzy wiązania B–F (3 pary), każdy F ma 3 wolne pary (9 par). Bor ma 6 e⁻ wokół siebie. Nie ma wolnej pary, którą mógłby przerobić na wiązanie — bor jest zbyt mały, by pomieścić więcej par. To wyjątek od oktetu (F10 i F13).
+Elektrony: 3 + 3·7 = 24 (12 par). Trzy wiązania B–F (3 pary) i po 3 wolne pary na każdym F (9 par). Wokół boru jest 6 elektronów — brakuje 2 do oktetu. Dzieje się tak, bo bor ma tylko 3 elektrony walencyjne, więc tworzy 3 wiązania. Ma wolny orbital, dlatego BF₃ chętnie przyłącza parę elektronową innej cząsteczki (np. NH₃) i wtedy uzyskuje oktet.
+:::
+:::
+
+::: karta exam | Zadania do samodzielnej pracy (H1–H5)
+**H1 — O₂ (E8, 3 pkt).** Policz elektrony walencyjne w O₂ i narysuj wzór. Ile wolnych par ma każdy atom?
+
+::: odp | Pokaż klucz
+12 e⁻ (1 pkt); O=O (1 pkt); po 2 wolne pary na każdym O (1 pkt).
+:::
+
+**H2 — H₂S (E8, 3 pkt).** Podaj liczbę elektronów walencyjnych w cząsteczce H₂S i wzór elektronowy (z wolnymi parami).
+
+::: odp | Pokaż klucz
+6 + 2 = 8 e⁻ (1 pkt); H–S–H (1 pkt); 2 wolne pary na S (1 pkt).
+:::
+
+**H3 — MgCl₂ (E8, 3 pkt).** Zapisz wzorami elektronowymi powstawanie MgCl₂ z atomów.
+
+::: odp | Pokaż klucz
+Mg oddaje 2 e⁻ → [Mg]²⁺ (1 pkt); dwa atomy Cl przyjmują po 1 e⁻ → 2 [:Cl̈:]⁻ (1 pkt); suma ładunków 0, wzór MgCl₂ (1 pkt).
+:::
+
+**H4 — Jon OH⁻ (ambitny, 3 pkt).** Policz elektrony walencyjne i narysuj wzór elektronowy OH⁻. Ile wolnych par ma tlen?
+
+::: odp | Pokaż klucz
+6 + 1 + 1 = 8 e⁻ (1 pkt); [O–H]⁻ (1 pkt); trzy wolne pary na O, razem z wiązaniem oktet (1 pkt).
+:::
+
+**H5 — Tlenek węgla(II) (konkursowy, 4 pkt).** Narysuj wzór CO. Jakie wiązanie łączy atomy i ile wolnych par ma każdy atom?
+
+::: odp | Pokaż klucz
+4 + 6 = 10 e⁻ (1 pkt); :C≡O: (1 pkt); potrójne wiązanie, po 1 wolnej parze na każdym atomie (1 pkt); oktet dla obu atomów (1 pkt). Jedno z wiązań jest koordynacyjne (para pochodzi od tlenu).
 :::
 :::
 
@@ -305,6 +353,27 @@ Atom centralny :: atom, do którego przyłączone są pozostałe atomy w cząste
 + H
 - N
 ! Atom H ma tylko jedno wiązanie.
+
+? Ile wolnych par ma atom siarki w H₂S?
+- 0
+- 1
++ 2
+- 3
+! S ma 6 e⁻; 2 idą na wiązania z H, zostają 4 — dwie wolne pary.
+
+? Ile wspólnych par jest w cząsteczce O₂?
+- 1
++ 2
+- 3
+- 4
+! O=O: wiązanie podwójne; każdy O ma jeszcze 2 wolne pary.
+
+? Który zapis poprawnie opisuje NaCl?
+- Na:Cl (wspólna para)
++ [Na]⁺ [:Cl̈:]⁻
+- Na⁻ Cl⁺
+- Na=Cl
+! Sód oddaje elektron, chlor go przyjmuje — powstają jony.
 :::
 
 ## 12 | Ciekawostki {#ciekawostki}
@@ -334,3 +403,18 @@ Cząsteczka O₃ nie ma jednego wzoru Lewisa, który oddaje jej właściwości. 
 ::: karta core | Na jednej stronie
 Elektrony walencyjne = z grupy · jon: + ładunek ujemny, − ładunek dodatni · centralny = najmniej elektroujemny (nie H) · pojedyncze wiązania, potem wolne pary zewnętrznym, na końcu centralnemu · brak oktetu → wiązanie podwójne/potrójne · H: dublet, reszta: oktet.
 :::
+
+## AUDYT W1 — audyt 13 (2026-10-13)
+
+Wprowadzono:
+- błąd 1: §8 klucz D (BF₃) przepisany — 3 + 3·7 = 24 elektrony (12 par), 6 e⁻ wokół boru, brak oktetu z powodu 3 elektronów walencyjnych.
+- błąd 2: §3 krok 4 — wolne pary dorysowuje się tak, aby każdy atom osiągnął trwałą konfigurację (H: dublet, pozostałe: oktet).
+- błąd 3: pytanie przewodnie — odpowiedź po przykładzie NH₃ (N: 1 wolna para, O: 2 wolne pary).
+- błąd 4: §5 — wiązanie koordynacyjne w NH₄⁺: para pochodzi od azotu, po utworzeniu cztery wiązania N–H są jednakowe.
+- U1: karta core „Wzór elektronowy związku jonowego” (NaCl, MgCl₂, Na₂O).
+- U2: nazwy wzorów — elektronowy (kropki) i kreskowy (kreski).
+- U3: wartościowość z wzoru Lewisa (NH₃ III, NH₄⁺ IV, CO₂ IV, O II).
+- U4: test rozszerzony (H₂S: 2 wolne pary; O₂: 2 wspólne pary; NaCl — jony).
+- U5: zadania H1–H5 z kluczem (O₂, H₂S, MgCl₂, OH⁻, CO).
+
+Nieprzyjęte: brak.

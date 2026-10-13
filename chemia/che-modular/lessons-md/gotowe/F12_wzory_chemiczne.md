@@ -6,27 +6,27 @@ opis: Wzór sumaryczny, rzeczywisty, empiryczny i strukturalny · zapis wzorów 
 kicker: F12 · FUNDAMENTY · NOWA WERSJA
 lead: Wzór chemiczny to zapis języka, którym chemicy mówią o substancjach. Potrafisz go przeczytać i zbudować? Umiesz policzyć, ile masy pierwiastka jest w związku? Ta lekcja uczy obu rzeczy — i pokazuje, że z samych procentów da się odtworzyć wzór.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
-stan: "pełna struktura — 2026-10-13, bez audytu W1"
-stopka: **CHEMIA F12 v1.0** · Wzory chemiczne · 2026
+stan: "pełna struktura — 2026-10-13, audyt W1 wprowadzony"
+stopka: **CHEMIA F12 v1.1** · Wzory chemiczne · 2026
 ---
 
 ::: minimum | Muszę umieć na E8 — 10 punktów
 1. **Wzór sumaryczny** podaje rodzaj i liczbę atomów w cząsteczce (C₆H₁₂O₆ — glukoza).
-2. **Wzór empiryczny** (najprostszy) podaje stosunek liczb atomów (CH₂O — dla glukozy).
+2. **Współczynnik** przed wzorem mnoży wszystkie atomy w nim: 2 H₂O = 4 atomy H i 2 atomy O.
 3. **Wzór strukturalny** pokazuje wiązania; kreskowy: H–O–H.
 4. Wzór związku jonowego podaje **stosunek** jonów tak, by suma ładunków była zerowa (Al₂O₃: 2·(+3) + 3·(−2) = 0).
 5. **Masa molowa** M (g/mol) to suma mas atomowych wszystkich atomów we wzorze (H₂O: 2·1 + 16 = 18 g/mol).
 6. **Skład procentowy** pierwiastka w związku: (liczba atomów · masa atomowa pierwiastka) / M · 100%.
-7. Wzór empiryczny wyznaczamy z procentów: dzielimy procenty przez masy atomowe, dzielimy przez najmniejszą wartość i zaokrąglamy do liczb całkowitych.
-8. Wzór rzeczywisty = n · wzór empiryczny, gdzie n = M / M(wzoru empirycznego).
-9. Nazwy pierwiastków w związkach jonowych: najpierw kation, potem anion (NaCl — chlorek sodu).
+7. **Stosunek masowy** pierwiastków w związku: m(C) : m(O) w CO₂ = 12 : 32 = 3 : 8.
+8. **Masa pierwiastka w próbce:** z 90 g wody wodoru jest 90 · 2/18 = 10 g.
+9. We **wzorze** związku jonowego piszemy najpierw kation, potem anion (NaCl). W **nazwie** jest odwrotnie: nazwa anionu + kation w dopełniaczu (chlorek sodu, tlenek glinu, siarczek żelaza(II)).
 10. Dla metali o zmiennym stopniu utlenienia piszemy stopień cyfrą rzymską w nawiasie: FeCl₂ — chlorek żelaza(II), FeCl₃ — chlorek żelaza(III).
 :::
 
 ::: warstwy
-- e8 | <b>E8:</b> wzory sumaryczne i strukturalne prostych związków; zasada zerowej sumy ładunków; masa molowa i skład procentowy; wzór empiryczny z procentów; proste nazwy związków
+- e8 | <b>E8:</b> wzory sumaryczne i strukturalne prostych związków; zasada zerowej sumy ładunków; masa molowa i skład procentowy; stosunek masowy i masa pierwiastka w próbce; proste nazwy związków
 - understand | <b>Rozumienie:</b> dlaczego wzór jonowy nie jest cząsteczką; związek między wzorem empirycznym a rzeczywistym; sens zapisu n i stosunku
-- extra | <b>LO / ambitne:</b> izomery (ten sam wzór, inny układ); wzory półstrukturalne związków organicznych; sprawdzanie wyniku przez sumę procentów; wzory hydratów (CuSO₄·5H₂O) — zarys
+- extra | <b>LO / ambitne:</b> izomery (ten sam wzór, inny układ); wzory półstrukturalne związków organicznych; sprawdzanie wyniku przez sumę procentów; wzory hydratów (CuSO₄·5H₂O) — zarys; wzór empiryczny i rzeczywisty z procentów (§5)
 :::
 
 ::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
@@ -88,10 +88,14 @@ Dwa związki mają ten sam wzór empiryczny CH₂O: glukoza i kwas octowy. Czy t
 - dla substancji jonowej (NaCl, Al₂O₃) — zawsze wzór empiryczny (sieć nie ma cząsteczek), np. NaCl, a nie „cząsteczka NaCl”;
 - dla substancji cząsteczkowej — wzór sumaryczny (rzeczywisty), np. H₂O, CO₂;
 - dla pytania o budowę — strukturalny.
+
+**Uwaga o nazwie.** W arkuszach CKE wzór związku jonowego (NaCl, Al₂O₃) nazywa się **wzorem sumarycznym** i tak go zapisuj na egzaminie. Termin „wzór empiryczny” jest szerszy (najprostszy stosunek atomów) i przydaje się w wyznaczaniu wzoru z procentów.
 :::
 
 ::: karta warning | Pułapka: CH₂O to nie zawsze glukoza
 Wzór empiryczny CH₂O pasuje do glukozy, kwasu octowego, formaldehydu i innych związków. Sam wzór empiryczny nie określa substancji. Dopiero masa molowa (lub znana struktura) rozstrzyga, który związek to jest.
+
+**Odpowiedź na pytanie przewodnie.** Glukoza: C₆H₁₂O₆, M = 180 g/mol. Kwas octowy: C₂H₄O₂, M = 60 g/mol. Oba mają wzór empiryczny CH₂O (stosunek C : H : O = 1 : 2 : 1), ale to różne substancje o różnej budowie i właściwościach.
 :::
 
 ## 2 | Budowa wzorów związków [[basic:E8]] {#budowa}
@@ -115,8 +119,24 @@ Dla związku jonowego zapisujemy stosunek jonów, przy którym suma ładunków w
 ::: karta understand | Nazwy związków
 - chlorek sodu (NaCl), tlenek glinu (Al₂O₃), siarczek żelaza(II) (FeS);
 - dla metali o zmiennym stopniu utlenienia cyfra rzymska: FeCl₂ (żelazo(II)), FeCl₃ (żelazo(III)).
-Zapamiętaj: nazwa anionu kończy się na -ek (chlorek, siarczek), a tlenek to anion O²⁻.
+Zapamiętaj: anion beztlenowy kończy się na -ek (chlorek, siarczek); anion tlenowy — na -an (siarczan, azotan). Tlenek to anion O²⁻.
 :::
+
+::: karta core | Ważniejsze jony złożone
+| Jon | Nazwa | Przykład soli |
+|---|---|---|
+| OH⁻ | wodorotlenkowy | Ca(OH)₂ — wodorotlenek wapnia |
+| NO₃⁻ | azotanowy(V) | KNO₃ — azotan(V) potasu |
+| SO₄²⁻ | siarczanowy(VI) | Na₂SO₄ — siarczan(VI) sodu |
+| SO₃²⁻ | siarczanowy(IV) | Na₂SO₃ — siarczan(IV) sodu |
+| CO₃²⁻ | węglanowy | CaCO₃ — węglan wapnia |
+| PO₄³⁻ | fosforanowy(V) | Mg₃(PO₄)₂ — fosforan(V) magnezu |
+| NH₄⁺ | amonowy | NH₄Cl — chlorek amonu |
+
+W nazwie soli kwasu beztlenowego: -ek (chlorek, siarczek); kwasu tlenowego: -an (siarczan, azotan), z cyfrą rzymską stopnia utlenienia pierwiastka centralnego, jeśli wymaga tego nazwa.
+:::
+
+Mol to liczność odpowiadająca 6,02 · 10²³ cząstkom (liczba Avogadra); szczegóły w §6.
 
 ## 3 | Masa molowa [[basic:E8]] {#masa}
 
@@ -145,6 +165,13 @@ Ca(OH)₂: w nawiasie są dwa atomy O i dwa H — łącznie: 40 + 2·(16 + 1) = 
 Wszystkie masy pierwiastków w cząsteczce dodane razem dają masę cząsteczki. Dlatego suma procentów jest równa 100%. Gdy suma wychodzi inna, to znak błędu w obliczeniach (zaokrąglenia dopuszczalne do ±0,1%).
 :::
 
+**U2. Stosunek masowy i masa pierwiastka w próbce.**
+
+::: karta core | Dwa zadania z wzoru
+**Stosunek masowy:** w CO₂ m(C) : m(O) = 12 : 2·16 = 12 : 32 = 3 : 8.
+**Masa pierwiastka w próbce:** ile gramów wodoru w 90 g wody? Zawartość H w wodzie: 2/18. 90 g · 2/18 = 10 g.
+:::
+
 ::: adv | E. Ambitne — wzór empiryczny z procentów (4 pkt) | poziom ambitny
 Związek zawiera 40% C, 6,7% H i 53,3% O (masy molowe: C 12, H 1, O 16). Ustal wzór empiryczny.
 :::
@@ -153,7 +180,7 @@ Związek zawiera 40% C, 6,7% H i 53,3% O (masy molowe: C 12, H 1, O 16). Ustal w
 Dzielimy procenty przez masy: C 40/12 = 3,33; H 6,7/1 = 6,7; O 53,3/16 = 3,33 (2 pkt). Dzielimy przez 3,33: C : H : O = 1 : 2 : 1 → wzór empiryczny **CH₂O** (2 pkt).
 :::
 
-## 5 | Wzór empiryczny z procentów [[understand:ROZUMIENIE]] {#empiryczny}
+## 5 | Wzór empiryczny z procentów [[extra:AMBITNE (LO)]] {#empiryczny}
 
 ::: regula
 1. Zapisz procenty jako masy w 100 g (np. 40 g C, 6,7 g H, 53,3 g O).
@@ -179,7 +206,7 @@ Dlaczego to ważne? Analiza procentowa daje tylko stosunek. Masa molowa (z inneg
 ## 6 | Wykład — wzór jest zapisem danych, nie obrazkiem [[understand:ROZUMIENIE]] {#wykład}
 
 ::: karta understand | Wykład — od zera: dlaczego chemicy liczą mole
-Atomy są bardzo małe, więc nie liczymy ich pojedynczo. Liczymy je w **molach**: jeden mol to 6,02 · 10²³ cząstek (liczba Avogadra). Dzięki temu masa substancji w gramach jest liczbowo równa masie molowej w g/mol — wystarczy znać wzór, by wiedzieć, ile gramów to jeden mol.
+Atomy są bardzo małe, więc nie liczymy ich pojedynczo. Liczymy je w **molach**: jeden mol to 6,02 · 10²³ cząstek (liczba Avogadra). Masa jednego mola substancji to jej masa molowa M (g/mol) i jest liczbowo równa masie cząsteczkowej w u. Np. 1 mol H₂O ma masę 18 g, bo cząsteczka H₂O ma masę 18 u. Wystarczy więc znać wzór, aby wiedzieć, ile gramów waży jeden mol.
 
 Z tego wynika cała reszta lekcji: wzór mówi, w jakim stosunku są atomy; masa molowa mówi, ile masy to kosztuje; procent mówi, ile masy jest w każdym pierwiastku. Te trzy informacje łączą się w jednym wzorze.
 :::
@@ -197,6 +224,7 @@ Z tego wynika cała reszta lekcji: wzór mówi, w jakim stosunku są atomy; masa
 | „Chlorek wapnia to CaCl.” | CaCl₂. | Suma ładunków: +2 i 2·(−1) = 0. |
 | „M(Ca(OH)₂) = 40 + 16 + 1 = 57.” | Ca(OH)₂ = 40 + 2·(16 + 1) = 74. | Indeks za nawiasem mnoży wszystko w nawiasie. |
 | „Procent tlenu w H₂O to 16%.” | 88,9%. | Trzeba podzielić przez masę cząsteczki (18), nie przez 16. |
+| „H₂O₂ to dwie cząsteczki wody.” | H₂O₂ to jedna cząsteczka nadtlenku wodoru; „dwie cząsteczki wody” zapisujemy 2 H₂O. | Indeks dolny zmienia skład cząsteczki, a współczynnik przed wzorem — liczbę cząsteczek. |
 | „CH₂O to glukoza, więc każdy związek CH₂O to glukoza.” | CH₂O to wzór empiryczny wielu związków. | Trzeba znać masę molową lub strukturę. |
 :::
 
@@ -237,7 +265,7 @@ Procenty są masami, nie liczbami atomów. Trzeba podzielić przez masy atomowe 
 2. Dlaczego w zapisie hydratu kropka oznacza „przyłączone cząsteczki wody”, a nie mnożenie?
 
 ::: odp | Pokaż odpowiedzi
-1. M(CuSO₄) = 63,5 + 32 + 64 = 159,5; 5 H₂O = 5 · 18 = 90; razem 249,5 g/mol.
+1. M(CuSO₄) = 63,5 + 32 + 64 = 159,5; 5 H₂O = 5 · 18 = 90; razem 249,5 g/mol. Wynik zależy od przyjętej masy atomowej miedzi: z Cu = 63,5 wychodzi 249,5 g/mol, z Cu = 64 — 250 g/mol. W arkuszu CKE używaj wartości z tablicy dołączonej do zestawu.
 2. Woda jest związana w strukturze krystalicznej w stałym stosunku 1 : 5. Nie tworzy z CuSO₄ jednej cząsteczki kowalencyjnej, dlatego zapisujemy ją po kropce.
 :::
 :::
@@ -272,6 +300,10 @@ Wzór strukturalny :: pokazuje sposób połączenia atomów wiązaniami
 Masa molowa :: masa jednego mola substancji w g/mol
 Skład procentowy :: udział masy każdego pierwiastka w masie związku (w %)
 Mol :: liczność odpowiadająca 6,02 · 10²³ cząstek
+Indeks (dolny) :: liczba atomów danego pierwiastka lub grupy atomów we wzorze (H₂O)
+Współczynnik stechiometryczny :: liczba przed wzorem, oznacza liczbę cząsteczek lub moli (2 H₂O)
+Jon złożony :: jon zbudowany z kilku atomów, np. SO₄²⁻, OH⁻, NH₄⁺
+Masa cząsteczkowa :: suma mas atomowych atomów w cząsteczce, wyrażona w u
 :::
 
 ## 11 | Test {#test}
@@ -311,6 +343,27 @@ Mol :: liczność odpowiadająca 6,02 · 10²³ cząstek
 - Al₃O₂ (Al³⁺, O²⁻)
 - AlO₃ (Al³⁺, O²⁻)
 ! 2·(+3) + 3·(−2) = 0.
+
+? Masa molowa Ca(OH)₂ (Ca = 40, O = 16, H = 1) wynosi:
+- 57 g/mol
++ 74 g/mol
+- 58 g/mol
+- 41 g/mol
+! 40 + 2·(16 + 1) = 74.
+
+? Wzór siarczanu(VI) sodu to:
+- NaSO₄
++ Na₂SO₄
+- Na₂SO₃
+- NaS
+! Na⁺ i SO₄²⁻: 2·(+1) + (−2) = 0.
+
+? Stosunek masowy węgla do tlenu w CO₂ (C = 12, O = 16) wynosi:
++ 3 : 8
+- 1 : 2
+- 3 : 4
+- 12 : 16
+! 12 : 32 = 3 : 8.
 :::
 
 ## 12 | Ciekawostki {#ciekawostki}
@@ -340,3 +393,23 @@ Związki o takim samym wzorze sumarycznym, ale innym ułożeniu atomów, to **iz
 ::: karta core | Na jednej stronie
 Wzór sumaryczny = rzeczywisty (cząsteczki) · empiryczny = najprostszy stosunek · jonowy: suma ładunków = 0 · M = suma mas atomowych · %pierwiastka = (n·A)/M·100% · z procentów: dziel przez A, potem przez najmniejszą · n = M/M(empiryczny).
 :::
+
+## AUDYT W1 — audyt 12 (2026-10-13)
+
+Wprowadzono:
+- błąd 1: minimum pkt 9 — wzór: kation pierwszy; nazwa: anion pierwszy, kation w dopełniaczu (chlorek sodu, siarczek żelaza(II)).
+- błąd 2: karta CKE — uwaga o nazwie „wzór sumaryczny” dla związków jonowych.
+- błąd 3: §6 wykład — mol zdefiniowany przed §3; masa molowa równa masie cząsteczkowej w u tylko dla jednego mola.
+- błąd 4: pytanie przewodnie — glukoza C₆H₁₂O₆ (M = 180) i kwas octowy C₂H₄O₂ (M = 60), oba CH₂O.
+- błąd 5: Cu 63,5 czy 64 — uwaga przy 249,5 g/mol (z 64 wychodzi 250); w CKE używać tablicy z zestawu.
+- błąd 6: klinika — „H₂O₂ to dwie cząsteczki wody” jako błąd z wyjaśnieniem.
+- U1: karta core „Ważniejsze jony złożone” (tabela) i zasady nazywania soli.
+- U2: karta core — stosunek masowy (CO₂: 3 : 8) i masa pierwiastka w próbce (10 g H w 90 g H₂O).
+- U3: zadania H1–H5 z kluczem.
+- U4: słownik — indeks, współczynnik stechiometryczny, jon złożony, masa cząsteczkowa.
+- U5: test rozszerzony (Ca(OH)₂ = 74 g/mol, Na₂SO₄, CO₂ 3 : 8).
+
+Do potwierdzenia (decyzja merytoryczna):
+- Wzór empiryczny i procenty przeniesione do warstwy ambitnej ([[extra:AMBITNE (LO)]], §5). Minimum pkt 2, 7 i 8 zastąpiono łatwiejszymi punktami (współczynnik, stosunek masowy, masa pierwiastka), a nie tylko usunięto. Zakres E8 (wzór z procentów poza podstawą) zgłoszony przez audytora — wymaga sprawdzenia w podstawie programowej i arkuszach CKE przed zatwierdzeniem.
+
+Nieprzyjęte: brak.
