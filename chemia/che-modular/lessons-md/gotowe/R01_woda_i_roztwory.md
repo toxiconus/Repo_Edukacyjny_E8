@@ -165,7 +165,7 @@ Najważniejszy jest (aq): mówi nie tylko „jest w wodzie", ale „jest **rozpr
 
 Przykład równania ze stanami: CaCO₃(s) → CaO(s) + CO₂(g). (Pełną pracę z równaniami — w R07.)
 
-**Most do J01.** To, co omówiliśmy w sekcji 5, zapisujemy tak:
+**Most do J01.** To, co omówiliśmy w sekcji 4, zapisujemy tak:
 
 NaCl(s) → Na⁺(aq) + Cl⁻(aq)
 

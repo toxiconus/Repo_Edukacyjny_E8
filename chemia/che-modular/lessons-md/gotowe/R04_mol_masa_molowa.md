@@ -29,7 +29,7 @@ Spróbuj odważyć jedną cząsteczkę wody. Waga kuchenna nie pomoże: jedna cz
 
 Liczba 6,02·10²³ to **liczba Avogadra** (oznaczenie N_A, jednostka mol⁻¹). Zapis w pełnej postaci: N_A = 6,02·10²³ 1/mol. W szkole wystarczy zaokrąglenie 6,02·10²³ mol⁻¹.
 
-Dlaczego akurat taka dziwna liczba? Dobrano ją tak, aby **masa jednego molu substancji w gramach była równa jej masie cząsteczkowej (Mr)**. Skutek: 1 mol wody ma masę 18 g (bo Mr(H₂O) = 18), 1 mol CO₂ — 44 g. Wszystko układa się w proste przeliczenia, które poznasz w sekcji 6.
+Dlaczego akurat taka dziwna liczba? Dobrano ją tak, aby **masa jednego molu substancji w gramach była równa jej masie cząsteczkowej (Mr)**. Skutek: 1 mol wody ma masę 18 g (bo Mr(H₂O) = 18), 1 mol CO₂ — 44 g. Wszystko układa się w proste przeliczenia, które poznasz w sekcji 4.
 
 Uwaga terminologiczna: **mol to jednostka liczności** — liczy **sztuki** (cząstki), nie gramy. Masa jednego mola zależy od substancji, tak jak masa jednego tuzina zależy od tego, czy kupujesz tuzin piórek, czy tuzin cegieł.
 
