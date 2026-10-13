@@ -132,25 +132,47 @@ function opisPalnika(sym) {
   return '<p class="kol">' + sw + '<b>' + cap(d.nz) + '</b></p><p class="obs">' + d.op + '</p>' + (d.rad ? zakaz('Tylko animacja — doświadczeń z radem nie wykonuje się w szkołach.') : '');
 }
 
+/* sekwencje palników: w lekcji zawsze widać najwyżej trzy palniki naraz (jedna sekwencja na raz) */
+var SERIE = {
+  plomien: {nazwa: 'Próba płomieniowa', metale: ['Na', 'K', 'Ca'],
+    opis: 'Tu interesuje nas barwa, bo wskazuje metal. Sód przysłania inne barwy, więc potas ogląda się przez szkło kobaltowe.'},
+  utlenianie: {nazwa: 'Spalanie i utlenianie', metale: ['Li', 'Mg', 'Sr'],
+    opis: 'Tu interesuje nas produkt, a nie barwa. Płomień pokazuje tylko przebieg reakcji. Pod każdym palnikiem podano powstały związek.'},
+  model: {nazwa: 'Model teoretyczny: Rb, Cs, Ra', metale: ['Rb', 'Cs', 'Ra'],
+    opis: 'Model teoretyczny i reakcje niemożliwe w szkole. Ra jest promieniotwórczy, więc pokazujemy go wyłącznie jako animację.'}
+};
+var PRODUKT = {Li: '4Li + O₂ → 2Li₂O', Mg: '2Mg + O₂ → 2MgO', Sr: '2Sr + O₂ → 2SrO'};
+
 KLOCKI.def('palniki', {
-  domyslne: {metale: 'K,Ca,Ba'},
+  domyslne: {seria: 'plomien'},
   html: function (host, opc) {
-    var lab = el('div', 'lab'), pasek = el('div', 'lab-pasek'), stacje = el('div', 'stacje');
+    var lab = el('div', 'lab'), pasek = el('div', 'lab-pasek'), przyciski = el('div', 'seria-przyciski');
+    var intro = el('p', 'seria-opis'), stacje = el('div', 'stacje');
     var info = el('span', 'lab-cisza', 'Kliknij palnik, aby zatrzymać obraz.'); info.style.cssText = 'font-size:14px;color:var(--lab-cisza)';
     var bAll = el('button', 'btn', 'Powtórz wszystkie próby'); bAll.type = 'button';
-    pasek.appendChild(info); pasek.appendChild(bAll); lab.appendChild(pasek); lab.appendChild(stacje); host.appendChild(lab);
-    var lista = parsujListe(opc.metale, PL, ['K', 'Ca', 'Ba']);
-    stacje.style.gridTemplateColumns = 'repeat(' + lista.length + ', minmax(0, 1fr))';
-    var sts = [], licznik = 0;
-    lista.forEach(function (sym) { sts.push(stacja(sym)); });
+    var przyc = {};
+    Object.keys(SERIE).forEach(function (k) {
+      var b = el('button', 'btn seria-btn', SERIE[k].nazwa); b.type = 'button'; b.setAttribute('aria-pressed', 'false');
+      b.addEventListener('click', function () { ustaw(k); });
+      przyciski.appendChild(b); przyc[k] = b;
+    });
+    pasek.appendChild(info); pasek.appendChild(bAll); lab.appendChild(pasek); lab.appendChild(przyciski);
+    lab.appendChild(intro); lab.appendChild(stacje); host.appendChild(lab);
+
+    var aktywna = null, sts = [], licznik = 0;
+
+    function opisStacji(s) {
+      return opisPalnika(s) + (aktywna === 'utlenianie' && PRODUKT[s] ? '<p class="rown">Produkt: ' + PRODUKT[s] + '</p>' : '');
+    }
 
     function stacja(sym) {
       var art = el('article', 'st'), cv = el('canvas'), op = el('div', 'st-opis'), br = el('button', 'btn', 'Powtórz próbę'); br.type = 'button';
       cv.width = 480; cv.height = 800; cv.tabIndex = 0; cv.setAttribute('role', 'button');
       var sim = Palnik(cv, sym);
       var wb = wyborSymbole({1: ['Li', 'Na', 'K', 'Rb', 'Cs'], 2: ['Be', 'Mg', 'Ca', 'Sr', 'Ba', 'Ra']}, sym, function (s) { zmien(s); }, 'Pierwiastek w palniku');
+      var st = {sim: sim, wb: wb, sym: sym};
       function zmien(s) {
-        sim.ustaw(s); sim.pauza = false; op.innerHTML = opisPalnika(s); op.appendChild(br);
+        st.sym = s; sim.ustaw(s); sim.pauza = false; op.innerHTML = opisStacji(s); op.appendChild(br);
         cv.setAttribute('aria-label', 'Palnik z próbką: ' + NAZ[SYM.indexOf(s)] + '. Barwa płomienia: ' + PL[s].nz + '. Kliknij, aby zatrzymać lub wznowić.');
       }
       function przel_() { sim.pauza = !sim.pauza; sim.rysuj(); }
@@ -159,14 +181,31 @@ KLOCKI.def('palniki', {
       br.addEventListener('click', function () { sim.reset(); sim.pauza = false; });
       art.appendChild(wb.el); art.appendChild(cv); art.appendChild(op); stacje.appendChild(art);
       zmien(sym); podepnij(cv, sim);
-      return {sim: sim, wb: wb, zmien: zmien};
+      st.zmien = zmien; return st;
     }
+
+    function ustaw(klucz) {
+      if (klucz === aktywna) return;
+      sts.forEach(function (s) { wylacz(s.sim); });
+      stacje.innerHTML = ''; sts = []; aktywna = klucz;
+      stacje.style.gridTemplateColumns = 'repeat(3, minmax(0, 1fr))';
+      intro.textContent = SERIE[klucz].opis;
+      SERIE[klucz].metale.forEach(function (sym) { sts.push(stacja(sym)); });
+      Object.keys(przyc).forEach(function (k) { przyc[k].setAttribute('aria-pressed', k === klucz ? 'true' : 'false'); });
+    }
+
     bAll.addEventListener('click', function () { sts.forEach(function (s) { s.sim.reset(); s.sim.pauza = false; }); });
     document.addEventListener('klocki:uzyj', function (e) {
       if (e.detail.cel !== 'palnik' || !PL[e.detail.sym]) return;
-      var s = sts[licznik++ % sts.length]; s.wb.ustaw(e.detail.sym); s.zmien(e.detail.sym);
+      var sym = e.detail.sym, k = Object.keys(SERIE).filter(function (q) { return SERIE[q].metale.indexOf(sym) >= 0; })[0] || 'plomien';
+      if (k !== aktywna) ustaw(k);
+      var idx = -1;
+      sts.forEach(function (s, i) { if (s.sym === sym) idx = i; });
+      if (idx < 0) idx = licznik++ % sts.length;
+      sts[idx].wb.ustaw(sym); sts[idx].zmien(sym);
       lab.scrollIntoView({behavior: RM ? 'auto' : 'smooth', block: 'center'});
     });
-    return {stacje: sts};
+    ustaw(SERIE[opc.seria] ? opc.seria : 'plomien');
+    return {seria: aktywna};
   }
 });

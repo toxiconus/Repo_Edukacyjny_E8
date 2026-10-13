@@ -39,7 +39,7 @@ Metale grup 1 i 2 (litowce i berylowce) tworzą blok s, bo ich ostatni elektron 
 :::
 
 ::: karta core | Pytanie przewodnie
-Dlaczego sód trzymamy w nafcie, a magnez można spalić w powietrzu jak zwykły pasek do zapalniczki? Odpowiedź znajdziesz w §11.
+Dlaczego sód trzymamy w nafcie, a magnezową taśmę można po rozgrzaniu spalić w powietrzu? Odpowiedź znajdziesz w §11.
 :::
 
 ## 0 | Ściąga — cała lekcja na jednej stronie {#sciaga}
@@ -95,8 +95,12 @@ Który metal z grupy 2 ma najbardziej „miękki” elektron walencyjny: Mg czy 
 
 ## 3 | Reakcje z wodą i tlenem {#reakcje}
 
-@klocek probowki {metale="Li,Na,K", wskaznik="1"} | Trzy probówki z wodą: lit, sód i potas. Ten sam czas, różne tempo.
-@opis Trzy probówki z wodą stoją obok siebie, na dnie każdej kawałek innego metalu: lit, sód, potas. Z potasu pęcherzyki wydzielają się najszybciej, z litu najwolniej. Po fenoloftaleinie roztwory różowieją. Wniosek: w dół grupy 1 reaktywność rośnie, a barwa pokazuje powstanie zasady.
+@klocek probowki {metale="Mg,Ca,Na", wskaznik="1"} | Trzy probówki z wodą: magnez, wapń i sód. Trzy różne efekty.
+@opis Trzy probówki stoją obok siebie. Magnez: prawie nic nie widać, po fenoloftaleinie tylko blade różowienie. Wapń: stały strumień pęcherzyków H₂, roztwór mętnieje. Sód: szybka reakcja, pokazana jako animacja, nie jako doświadczenie uczniowskie. Wniosek: reakcja zależy od metalu; barwa fenoloftaleiny pokazuje powstanie zasady.
+
+::: karta warning | Status: wizualizacja komputerowa — sód z wodą
+Reakcję sodu z wodą przedstawiono komputerowo, a nie jako instrukcję doświadczenia. Wodór może się zapalić, a roztwór NaOH jest żrący.
+:::
 
 ::: karta understand | Strategia → rozwiązanie → sprawdzenie: bilans reakcji sodu z wodą
 **Strategia:** zapisuję substraty i produkty. Produkty to wodorotlenek i wodór, bo metal wypiera wodór z wody.
@@ -104,16 +108,20 @@ Który metal z grupy 2 ma najbardziej „miękki” elektron walencyjny: Mg czy 
 **Sprawdzenie:** Na 2 = 2; H 4 = 2·2 (2 H₂O) i po prawej 2·1 (NaOH) + 2 (H₂) = 4; O 2 = 2. ✔
 :::
 
-**Zasada:** metal grupy 1 lub 2 reaguje z wodą, dając wodorotlenek i wodór. Szybkość zależy od grupy i od tego, jak łatwo metal oddaje elektrony:
+**Zasada:** aktywne metale grupy 1 oraz wybrane metale grupy 2 reagują z wodą, dając wodorotlenek i wodór. Szybkość zależy od metalu, temperatury, powierzchni metalu i warstwy tlenkowej. W grupie 1 reaktywność na ogół rośnie w dół; wynika to z większego promienia atomowego i mniejszej energii jonizacji:
 
 - **Li** — reaguje, ale wolniej niż Na.
 - **Na** — reaguje gwałtownie, wodór może się zapalić.
 - **K** — reaguje najgwałtowniej z trójki; ciepło topi go w trakcie.
-- **Ca** — reaguje umiarkowanie w temperaturze pokojowej.
-- **Mg** — reaguje powoli, lepiej z gorącą wodą.
-- **Be** — praktycznie nie reaguje z wodą (warstwa tlenku). Patrz lo.
+- **Ca** — reaguje wyraźnie już w temperaturze pokojowej: wydziela się H₂, a roztwór mętnieje od słabo rozpuszczalnego Ca(OH)₂.
+- **Mg** — z zimną wodą reaguje bardzo wolno; z gorącą wodą wyraźniej, a z parą wodną daje MgO i H₂: Mg + H₂O(g) → MgO + H₂.
+- **Be** — praktycznie nie reaguje z wodą: chroni go szczelna warstwa BeO, a także niska rozpuszczalność produktów. Patrz lo.
 
-**Reakcje z tlenem.** Litowce i berylowce spalają się w tlenie, tworząc tlenki. Lit daje zwykły tlenek Li₂O. Sód w nadmiarze tlenu tworzy nadtlenek Na₂O₂. Wapń i magnez spalają się jasnym płomieniem; magnez — zob. pułapkę w §9.
+**Reakcje z tlenem.** Litowce reagują z tlenem, ale główny produkt zależy od metalu i warunków: lit daje głównie **Li₂O** (4Li + O₂ → 2Li₂O), sód przede wszystkim **Na₂O₂** (2Na + O₂ → Na₂O₂), a potas i cięższe litowce mogą tworzyć ponadtlenki, np. **KO₂**. Berylowce spalają się do tlenków, np. 2Mg + O₂ → 2MgO; magnez — zob. pułapkę w §9.
+
+::: karta warning | Status: opis reakcji bez wykonania — potas z wodą
+Potas reaguje z wodą bardzo gwałtownie: może się stopić, zapalić, a rozprysk żrącego KOH jest groźny. Pokazujemy go w animacji lub na filmie; nie jest to doświadczenie do wykonania.
+:::
 
 ::: karta warning | Pułapka: „metal + woda = zawsze gwałtownie”
 Nie. Tempo zależy od metalu i od warunków. Mg nie reaguje gwałtownie z zimną wodą, a Be prawie wcale. Zawsze określ, o który metal i o jaką wodę chodzi.
@@ -122,21 +130,37 @@ Nie. Tempo zależy od metalu i od warunków. Mg nie reaguje gwałtownie z zimną
 ## 4 | Wodorotlenki i tlenki — zasadowy charakter {#wodorotlenki}
 
 - **LiOH, NaOH, KOH** — zasady mocne; dobrze rozpuszczalne w wodzie.
-- **Ca(OH)₂** — wapno gaszone, zasada, słabo rozpuszczalna w wodzie; ma zastosowanie w budownictwie.
-- **Ba(OH)₂** — zasada mocna, ale bar jest trujący w postaci rozpuszczalnych soli.
-- **Tlenki** litowców i berylowców w wodzie dają zasady: Na₂O + H₂O → 2 NaOH; CaO + H₂O → Ca(OH)₂.
+- **Ca(OH)₂** — wapno gaszone: związek o właściwościach zasadowych, słabo rozpuszczalny w wodzie; stosowany w budownictwie.
+- **Ba(OH)₂** — silnie zasadowy, dobrze rozpuszczalny; sole baru są trujące.
+- **Be(OH)₂** — amfoteryczny: reaguje z kwasem jak zasada i z zasadą jak kwas.
+- **Tlenki** litowców są zasadowe: Na₂O + H₂O → 2 NaOH. Tlenki berylowców są zasadowe z wyjątkiem amfoterycznego BeO; np. CaO + H₂O → Ca(OH)₂.
 
 ::: karta understand | Mini-wykład: dlaczego zasadowe, a nie kwaśne
 Tlenek metalu w reakcji z wodą daje jony OH⁻. Roztwór z jonami OH⁻ ma odczyn zasadowy. Tlenki niemetali robią to odwrotnie (np. CO₂ + H₂O → H₂CO₃, odczyn kwaśny). To jest szkielet, na którym opiera się cała klasyfikacja tlenków (lekcja N02).
 :::
 
-## 5 | Płomienie i wykrywanie metali {#plomienie}
+## 5 | Płomienie i spalanie — trzy sekwencje palników {#plomienie}
 
-@klocek palniki {metale="Na,K,Ca"} | Próba płomieniowa: trzy palniki obok siebie (sód, potas, wapń)
-@opis Trzy palniki stoją w jednym rzędzie. Nad każdym płomień zaczyna pomarańczowy i powoli zmienia barwę: sód na żółto, potas na fiołkowo, wapń na ceglastoczerwono. Wniosek: barwa płomienia wskazuje metal, bo wzbudzone atomy wysyłają światło o charakterystycznej długości fali.
+Palniki pokazują **trzy sekwencje po trzy palniki**; przełącznik nad palnikami wybiera jedną. Naraz widać zawsze trzy palniki. Każda sekwencja odpowiada na inne pytanie:
 
-@klocek palniki {metale="Mg,Ba,Ra"} | Palenie magnezu i próba płomieniowa baru i radu
-@opis Magnez pali się oślepiająco białym płomieniem z iskrami. Bar zabarwia płomień na zielono. Rad barwi płomień karminowo, lecz jest promieniotwórczy, więc obok pokazano znak promieniowania i zakaz wykonywania doświadczeń w szkole. Wniosek: nie każdy metal barwi płomień, a rad pokazujemy tylko jako animację.
+- **Próba płomieniowa** — jaka barwa oznacza jaki metal?
+- **Spalanie i utlenianie** — jaki związek powstaje z tlenem?
+- **Model teoretyczny** — co z pierwiastkami, których nie wykonuje się w szkole?
+
+@klocek palniki {seria="plomien"} | Palniki: trzy sekwencje do wyboru (po trzy palniki naraz)
+@opis Trzy palniki stoją w jednym rzędzie, nad nimi przełącznik sekwencji. Sekwencja „Próba płomieniowa”: sód żółty, potas fioletowy, wapń ceglastoczerwony. „Spalanie i utlenianie”: lit, magnez i stront, pod każdym podany produkt (Li₂O, MgO, SrO). „Model teoretyczny”: rubid, cez i rad. Wniosek: barwa płomienia wskazuje metal, a produkt spalania zależy od metalu i warunków.
+
+::: karta warning | Status: wizualizacja komputerowa — próba płomieniowa
+Barwę pokazano komputerowo. Płomień sodu jest bardzo intensywny; w prawdziwej pracowni ślady sodu zagłuszają inne barwy. Próbę wykonuje się tylko pod nadzorem nauczyciela.
+:::
+
+::: karta warning | Status: wizualizacja komputerowa — spalanie i utlenianie
+Spalanie litowców i magnezu jest gwałtowne, a magnez daje oślepiająco biały błysk. Tu zobaczysz produkt, a nie instrukcję. Nie patrz prosto w błysk. Spalanie magnezu nie jest próbą płomieniową — w tej sekwencji nie porównujemy barw.
+:::
+
+::: karta warning | Status: model teoretyczny — rad (UWAGA: rzeczywista reakcja niebezpieczna)
+**Model teoretyczny.** Rad jest promieniotwórczy i nie jest używany w szkolnych doświadczeniach. Rubid i cez to reakcje niemożliwe do wykonania w szkole. Tu pokazujemy jedynie ich miejsce w grupie i przewidywane analogie. Znak promieniowania i zakaz przy radzie obowiązują także w wizualizacji.
+:::
 
 ## 6 | Zastosowania {#zastosowania}
 
@@ -208,7 +232,7 @@ Lampa sodowa świeci na żółto. Wymień dwa powody, dla których nie używamy 
 ::: odp | Pokaż klucz
 - Podpowiedź 1: co się dzieje z sodem w kontakcie z wilgocią?
 - Podpowiedź 2: jaki jest stan skupienia sodu w normalnej temperaturze?
-- Rozwiązanie: metaliczny sód reaguje z wodą i wilgocią z powietrza (reaktywność), a jest też trudny w obsłudze i wymaga zabezpieczenia. Lampy sodowe zawierają sód w postaci związku lub par w szczelnej bańce. (1 pkt za reaktywność, 1 pkt za obsługę, 1 pkt za wskazanie, że reaktywność jest powodem.)
+- Rozwiązanie: metaliczny sód reaguje z wodą i wilgocią z powietrza (reaktywność), a jest też trudny w obsłudze i wymaga zabezpieczenia. Lampa sodowa wykorzystuje pary sodu zamknięte w szczelnej rurze wyładowczej, dlatego metal nie ma kontaktu z wodą ani wilgocią. (1 pkt za reaktywność, 1 pkt za obsługę, 1 pkt za wskazanie, że reaktywność jest powodem.)
 :::
 :::
 
@@ -228,7 +252,7 @@ Wodorotlenek berylu Be(OH)₂ reaguje zarówno z kwasem, jak i z zasadą. Wyjaś
 ::: odp | Pokaż klucz
 - Podpowiedź 1: co oznacza zasada, a co kwas w ujęciu reakcji z H⁺ i OH⁻?
 - Podpowiedź 2: Be(OH)₂ + 2 HCl → BeCl₂ + 2 H₂O.
-- Rozwiązanie: Be(OH)₂ jest amfoteryczny: z kwasem zachowuje się jak zasada, z zasadą jak kwas (tworzy np. jon tetrahydroksoberylanowy). Ca(OH)₂ jest czystą zasadą. Równanie: Be(OH)₂ + 2 HCl → BeCl₂ + 2 H₂O. (1 pkt za pojęcie amfoteryczności, 1 pkt za porównanie z Ca(OH)₂, 2 pkt za równanie.)
+- Rozwiązanie: Be(OH)₂ jest amfoteryczny: z kwasem zachowuje się jak zasada, z zasadą jak kwas (tworzy np. jon tetrahydroksoberylanowy). Ca(OH)₂ ma właściwości zasadowe i nie jest amfoteryczny. Równanie: Be(OH)₂ + 2 HCl → BeCl₂ + 2 H₂O. (1 pkt za pojęcie amfoteryczności, 1 pkt za porównanie z Ca(OH)₂, 2 pkt za równanie.)
 :::
 :::
 
@@ -363,7 +387,7 @@ Wapno gaszone Ca(OH)₂ reaguje z dwutlenkiem węgla z powietrza i z czasem twar
 
 ## 15 | Odpowiedź na pytanie przewodnie {#odpowiedz}
 
-Sód reaguje z wodą i wilgocią z powietrza, więc trzymamy go w nafcie, która odcina dostęp do tych substancji. Magnez nie reaguje tak gwałtownie z wilgocią, a jego wiór spala się w powietrzu jasnym płomieniem (zapalniczka to inny metal i inna konstrukcja). Reaktywność zależy od metalu, nie tylko od grupy.
+Sód reaguje z wodą i wilgocią z powietrza, więc trzymamy go w nafcie, która odcina dostęp do tych substancji. Magnez nie reaguje tak gwałtownie z wilgocią, a jego wiór spala się w powietrzu jasnym płomieniem (magnezową taśmę trzeba najpierw rozgrzać). Reaktywność zależy od metalu, nie tylko od grupy.
 
 ## 16 | Co dalej? {#dalej}
 

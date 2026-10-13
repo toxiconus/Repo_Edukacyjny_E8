@@ -63,7 +63,7 @@ var GR = {
 var PR = {
   Li: {kol: '#c5ccd6', r: 8, plywa: 1, tempo: 12, ruch: 7, zyje: 70, rozow: .06, uw: 'pływa, spokojnie',
        obs: 'Pływa i reaguje spokojnie: równy strumień pęcherzyków H₂. Nie topi się, krąży powoli.', rown: '2Li + 2H₂O → 2LiOH + H₂↑'},
-  Na: {kol: '#e1e7ee', r: 9, plywa: 1, tempo: 30, ruch: 30, zyje: 30, rozow: .14, uw: 'pływa, krąży',
+  Na: {kol: '#e1e7ee', r: 9, plywa: 1, tempo: 30, ruch: 30, zyje: 30, rozow: .14, ostrz: 1, uw: 'pływa, krąży',
        obs: 'Topi się w srebrzystą kulkę, szybko krąży po powierzchni i syczy.', rown: '2Na + 2H₂O → 2NaOH + H₂↑'},
   K:  {kol: '#eceff5', r: 10, plywa: 1, tempo: 60, ruch: 62, zyje: 15, rozow: .5, plomien: '#b794ff', uw: 'pływa, zapala się',
        obs: 'Reaguje gwałtownie: wodór zapala się, a płomień barwią atomy potasu na fioletowo.', rown: '2K + 2H₂O → 2KOH + H₂↑'},
