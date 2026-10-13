@@ -20,7 +20,7 @@ Metale grup 1 i 2 (litowce i berylowce) tworzą blok s, bo ich ostatni elektron 
 2. **Grupa 2 (berylowce)** — Be, Mg, Ca, Sr, Ba, Ra. Mają dwa elektrony walencyjne, więc wartościowość II.
 3. **Reaktywność w grupie** rośnie w dół: im większy atom, tym łatwiej oddaje elektrony. (Be jest wyjątkiem w zachowaniu wobec wody — patrz warstwa lo.)
 4. **Reakcja z wodą** daje wodorotlenek i wodór, np. 2 Na + 2 H₂O → 2 NaOH + H₂.
-5. **Tlenki** litowców i berylowców są zasadowe, a wodorotlenki (LiOH, NaOH, KOH, Ca(OH)₂, Ba(OH)₂) to zasady.
+5. **Tlenki** litowców są zasadowe, tlenki berylowców są zasadowe z wyjątkiem amfoterycznego BeO. Wodorotlenki LiOH, NaOH, KOH, Ca(OH)₂ i Ba(OH)₂ mają właściwości zasadowe; Be(OH)₂ jest amfoteryczny.
 6. **Płomienie:** lit daje czerwony, sód żółty, potas fioletowy (przez filtr kobaltowy), wapń ceglastoczerwony, bar zielony. Barwy pozwalają wykryć metal bez wzorów.
 :::
 
@@ -46,8 +46,8 @@ Dlaczego sód trzymamy w nafcie, a magnezową taśmę można po rozgrzaniu spali
 
 | Grupa | Metale | Wartościowość | Reakcja z wodą (zimna) | Wodorotlenek |
 |---|---|---|---|---|
-| 1 | Li, Na, K | I | gwałtowna (Li wolniej, K najgwałtowniej) | zasada mocna |
-| 2 | Ca, Sr, Ba (Be, Mg wolno lub wcale) | II | umiarkowana / powolna | Ca(OH)₂, Ba(OH)₂ — zasady |
+| 1 | Li, Na, K | I | gwałtowna (Li wolniej, K najgwałtowniej); Na i K ostrzeżenia | LiOH, NaOH, KOH — zasady mocne |
+| 2 | Be, Mg, Ca, Sr, Ba, Ra | II | Be — praktycznie nie; Mg — bardzo wolno; Ca — wyraźnie; Sr, Ba — energicznie (Ra: tylko model) | Ca(OH)₂, Ba(OH)₂ — związki o właściwościach zasadowych; Be(OH)₂ — amfoteryczny |
 
 **Reguły:** elektrony walencyjne = numer grupy (grupa 1 → 1, grupa 2 → 2). Reaktywność w grupie rośnie w dół. Płomienie: Li karmazynowy, Na żółty, K fioletowy, Ca ceglastoczerwony, Ba zielony.
 
@@ -154,6 +154,10 @@ Palniki pokazują **trzy sekwencje po trzy palniki**; przełącznik nad palnikam
 Barwę pokazano komputerowo. Płomień sodu jest bardzo intensywny; w prawdziwej pracowni ślady sodu zagłuszają inne barwy. Próbę wykonuje się tylko pod nadzorem nauczyciela.
 :::
 
+::: karta warning | Status: wizualizacja komputerowa — bar
+Bar barwi płomień na zielono, ale jego sole są trujące. Próbę płomieniową baru pokazujemy tylko jako wizualizację; nie wykonuje się jej z solami baru w szkole.
+:::
+
 ::: karta warning | Status: wizualizacja komputerowa — spalanie i utlenianie
 Spalanie litowców i magnezu jest gwałtowne, a magnez daje oślepiająco biały błysk. Tu zobaczysz produkt, a nie instrukcję. Nie patrz prosto w błysk. Spalanie magnezu nie jest próbą płomieniową — w tej sekwencji nie porównujemy barw.
 
@@ -173,7 +177,7 @@ Spalanie litowców i magnezu jest gwałtowne, a magnez daje oślepiająco biały
 - **K** — nawozy potasowe (zwykle chlorek KCl lub azotan(V)).
 - **Mg** — stopy lekkie, np. w przemyśle lotniczym; składnik chlorofilu.
 - **Ca** — wapno w budownictwie i rolnictwie; kości i zęby zawierają fosforany wapnia.
-- **Ba** — siarczan(VI) baru BaSO₄ w diagnostyce (nierozpuszczalny, nieprzepuszczający promieni X).
+- **Ba** — siarczan(VI) baru BaSO₄ w diagnostyce (praktycznie nierozpuszczalny; silnie pochłania promienie X, dlatego widać go na zdjęciach).
 
 ## 7 | Klinika błędów {#klinika}
 
@@ -256,7 +260,7 @@ Wodorotlenek berylu Be(OH)₂ reaguje zarówno z kwasem, jak i z zasadą. Wyjaś
 ::: odp | Pokaż klucz
 - Podpowiedź 1: co oznacza zasada, a co kwas w ujęciu reakcji z H⁺ i OH⁻?
 - Podpowiedź 2: Be(OH)₂ + 2 HCl → BeCl₂ + 2 H₂O.
-- Rozwiązanie: Be(OH)₂ jest amfoteryczny: z kwasem zachowuje się jak zasada, z zasadą jak kwas (tworzy np. jon tetrahydroksoberylanowy). Ca(OH)₂ ma właściwości zasadowe i nie jest amfoteryczny. Równanie: Be(OH)₂ + 2 HCl → BeCl₂ + 2 H₂O. (1 pkt za pojęcie amfoteryczności, 1 pkt za porównanie z Ca(OH)₂, 2 pkt za równanie.)
+- Rozwiązanie: Be(OH)₂ jest amfoteryczny: z kwasem zachowuje się jak zasada, z zasadą jak kwas (z zasadą: Be(OH)₂ + 2OH⁻ → [Be(OH)₄]²⁻, jon tetrahydroksoberylanowy). Ca(OH)₂ ma właściwości zasadowe i nie jest amfoteryczny. Równanie: Be(OH)₂ + 2 HCl → BeCl₂ + 2 H₂O. (1 pkt za pojęcie amfoteryczności, 1 pkt za porównanie z Ca(OH)₂, 2 pkt za równanie.)
 :::
 :::
 
