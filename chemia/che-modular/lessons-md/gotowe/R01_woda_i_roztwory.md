@@ -183,6 +183,36 @@ Typowe zadanie: „dopisz stany skupienia w równaniu". Zasady-ratowniki: metal 
 - **Hydratacja**: woda dipolami wyciąga jony z sieci i otacza je powłoką wodną → wolne jony → (aq).
 - Rozdrobnienie, mieszanie, temperatura przyspieszają **rozpuszczanie**, ale (poza temperaturą) nie zwiększają **rozpuszczalności** — to temat R02.
 - Zapisy: (s), (l), (g), (aq); NaCl(s) → Na⁺(aq) + Cl⁻(aq) — zapowiedź dysocjacji (J01).
+- **Woda sama tworzy jony:** 2 H₂O ⇌ H₃O⁺ + OH⁻ (autoprotoliza, bardzo słaba). W czystej wodzie [H₃O⁺] = [OH⁻] = 10⁻⁷ mol/dm³ (25 °C), K_w = 10⁻¹⁴ — odczyn obojętny (§7).
+- **H₃O⁺** (jon hydroniowy): cząsteczka wody przyłącza proton wolną parą tlenu; ładunek +1.
+:::
+
+## 7 | Wykład — woda sama tworzy jony: H₃O⁺ i autoprotoliza {#autoprotoliza}
+
+Dotąd woda była rozpuszczalnikiem, w którym rozpadały się inne substancje. Okazuje się jednak, że sama bierze udział w tworzeniu jonów.
+
+**Jon hydroniowy H₃O⁺.** Gdy do wody trafi proton H⁺ (np. z kwasu solnego), cząsteczka wody go przyłącza. Atom tlenu udostępnia jedną ze swoich wolnych par elektronowych i tworzy nią wiązanie z protonem. Powstaje jon H₃O⁺: tlen jest związany z trzema atomami wodoru, ma jedną wolną parę i nosi ładunek dodatni +1. Wiązanie utworzone z pary jednego atomu nazywa się koordynacyjnym; po utworzeniu nie różni się od pozostałych trzech wiązań O–H.
+
+Zapis HCl + H₂O → H₃O⁺ + Cl⁻ pokazuje, co dzieje się w roztworze kwasu: to cząsteczki wody przyjmują protony, a nie cała woda zamienia się w H₃O⁺.
+
+**Autoprotoliza wody.** Woda przekazuje protony także sama sobie, choć bardzo rzadko:
+
+2 H₂O ⇌ H₃O⁺ + OH⁻
+
+Strzałki ⇌ oznaczają równowagę: reakcja biegnie w obu kierunkach. Zjawisko jest bardzo słabe. W 1 dm³ wody jest ok. 55 moli cząsteczek H₂O, a jonów tylko ok. 10⁻⁷ mola — jedna cząsteczka na około miliard ulega autoprotolizie.
+
+**Czysta woda jest obojętna.** W temperaturze 25 °C w czystej wodzie [H₃O⁺] = [OH⁻] = 10⁻⁷ mol/dm³. Iloczyn stężeń obu jonów jest stały:
+
+K_w = [H₃O⁺] · [OH⁻] = 10⁻¹⁴ (mol/dm³)²
+
+Gdy dodamy kwasu, [H₃O⁺] rośnie, a [OH⁻] maleje, bo iloczyn K_w się nie zmienia. Dla zasady jest odwrotnie. Skalę pH i obliczenia poznasz w J02. Tu zapamiętaj: odczyn obojętny oznacza, że oba jony występują w równym stężeniu.
+
+::: karta extra | Ciekawostka — woda bywa kwasem, bywa zasadą
+Woda jest **amfoteryczna**: zależnie od partnera reakcji może oddać proton albo go przyjąć. W reakcji z HCl przyjmuje proton (działa jak zasada): H₂O + HCl → H₃O⁺ + Cl⁻. W reakcji z amoniakiem oddaje proton (działa jak kwas): NH₃ + H₂O ⇌ NH₄⁺ + OH⁻.
+:::
+
+::: karta extra | Ciekawostka — ile jonów H₃O⁺ jest w szklance wody?
+W szklance wody (250 cm³ = 0,25 dm³) przy 25 °C jest ok. 0,25 · 10⁻⁷ = 2,5 · 10⁻⁸ mola H₃O⁺. To ok. 1,5 · 10¹⁶ jonów. Mimo to woda jest obojętna, bo tyle samo jest jonów OH⁻.
 :::
 
 ## Zadania {#zadania}
@@ -255,6 +285,14 @@ Typowe zadanie: „dopisz stany skupienia w równaniu". Zasady-ratowniki: metal 
 (a) W lodzie cząsteczki tworzą uporządkowaną, otwartą sieć wiązań wodorowych; zajmują więcej miejsca → mniejsza gęstość (2 pkt). (b) Lód pływa i zamarza od góry; pod nim woda ma ok. 4 °C (największa gęstość), więc organizmy przetrwają zimę (2 pkt).
 :::
 
+::: adv | Zadanie dodatkowe C (3 pkt) — Dlaczego tlen w H₃O⁺ ma trzy wiązania? | poziom ambitny
+Oblicz ładunek formalny tlenu w H₂O i w H₃O⁺ (wzór: Ł_f = elektrony walencyjne − (elektrony wolne + liczba wiązań)). Wyjaśnij wynik.
+:::
+
+::: odp | Klucz — zadanie dodatkowe C
+H₂O: 6 − (4 + 4/2) = 0 (1 pkt). H₃O⁺: 6 − (2 + 6/2) = +1 (1 pkt). Tlen oddaje jedną wolną parę do wiązania z protonem: zostaje mu 1 wolna para (2 elektrony), a 3 wiązania dają 3 elektrony z udziału w wiązaniach. Ładunek dodatni pojawia się, bo tlen nie zachowuje już pełnego udziału w obu swoich parach (1 pkt).
+:::
+
 **Razem: 31 pkt (zadania podstawowe „exam”); zadania ambitne „adv” — 7 pkt dodatkowo, poza sumą.**
 
 ::: fiszki
@@ -270,6 +308,10 @@ Zapis (aq) | roztwór wodny — substancja rozproszona jako jony/cząsteczki | z
 Trzy dźwignie szybkości rozpuszczania | rozdrobnienie, mieszanie, temperatura; nie zwiększają rozpuszczalności (poza T) | rozpuszczanie
 Czy rozpuszczanie soli to reakcja chemiczna? | zwykle nie — proces fizyczny; odparowanie wody daje zwrot substratu | pułapki
 NaCl(s) w wodzie → ? | Na⁺(aq) + Cl⁻(aq) — rozdzielone jony (dysocjacja — J01) | jony
+Jon hydroniowy H₃O⁺ | cząsteczka wody przyłącza proton wolną parą tlenu; ładunek +1 | jony
+Autoprotoliza wody | 2 H₂O ⇌ H₃O⁺ + OH⁻; zachodzi w bardzo małym stopniu | woda
+Iloczyn jonowy wody | K_w = [H₃O⁺]·[OH⁻] = 10⁻¹⁴ (25 °C) | woda
+Odczyn czystej wody | obojętny: [H₃O⁺] = [OH⁻] = 10⁻⁷ mol/dm³ | woda
 :::
 
 ::: test
@@ -297,4 +339,17 @@ NaCl(s) w wodzie → ? | Na⁺(aq) + Cl⁻(aq) — rozdzielone jony (dysocjacja 
 + cząsteczki oleju są niepolarne, a woda polarna („podobne rozpuszcza podobne")
 - olej jest cięższy od wody
 - woda jest rozpuszczalnikiem uniwersalnym
+
+? Jon H₃O⁺ powstaje, gdy:
++ cząsteczka wody przyłącza proton H⁺ wolną parą elektronową tlenu
+- cząsteczka wody oddaje elektron
+- jon OH⁻ przyłącza wodór
+! Tlen tworzy wiązanie koordynacyjne z protonem; powstają 3 wiązania O–H i ładunek +1.
+
+? W czystej wodzie w 25 °C stężenia jonów wynoszą:
++ [H₃O⁺] = [OH⁻] = 10⁻⁷ mol/dm³
+- [H₃O⁺] = 10⁻¹⁴, [OH⁻] = 1
+- [H₃O⁺] = 1, [OH⁻] = 0
+- jonów nie ma
+! Woda jest obojętna, bo autoprotoliza daje równe ilości obu jonów; K_w = 10⁻¹⁴.
 :::
