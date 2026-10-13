@@ -96,7 +96,7 @@ Który metal z grupy 2 ma najbardziej „miękki” elektron walencyjny: Mg czy 
 ## 3 | Reakcje z wodą i tlenem {#reakcje}
 
 @klocek probowki {metale="Mg,Ca,Na", wskaznik="1"} | Trzy probówki z wodą: magnez, wapń i sód. Trzy różne efekty.
-@opis Trzy probówki stoją obok siebie. Magnez: prawie nic nie widać, po fenoloftaleinie tylko blade różowienie. Wapń: stały strumień pęcherzyków H₂, roztwór mętnieje. Sód: szybka reakcja, pokazana jako animacja, nie jako doświadczenie uczniowskie. Wniosek: reakcja zależy od metalu; barwa fenoloftaleiny pokazuje powstanie zasady.
+@opis Trzy probówki stoją obok siebie. Magnez: prawie nic nie widać, po fenoloftaleinie tylko blade różowienie. Wapń: stały strumień pęcherzyków H₂, roztwór mętnieje. Sód: szybka reakcja, pokazana jako animacja, nie jako doświadczenie uczniowskie. Pod probówkami wybierzesz dowolny metal litowców i berylowców albo tlenek wapnia CaO. Wniosek: reakcja zależy od metalu; barwa fenoloftaleiny pokazuje powstanie zasady.
 
 ::: karta warning | Status: wizualizacja komputerowa — sód z wodą
 Reakcję sodu z wodą przedstawiono komputerowo, a nie jako instrukcję doświadczenia. Wodór może się zapalić, a roztwór NaOH jest żrący.
@@ -141,7 +141,7 @@ Tlenek metalu w reakcji z wodą daje jony OH⁻. Roztwór z jonami OH⁻ ma odcz
 
 ## 5 | Płomienie i spalanie — trzy sekwencje palników {#plomienie}
 
-Palniki pokazują **trzy sekwencje po trzy palniki**; przełącznik nad palnikami wybiera jedną. Naraz widać zawsze trzy palniki. Każda sekwencja odpowiada na inne pytanie:
+Palniki pokazują **trzy sekwencje po trzy palniki**; przełącznik nad palnikami wybiera jedną. Pod każdym palnikiem wybierzesz dowolny pierwiastek litowców lub berylowców. Naraz widać zawsze trzy palniki. Każda sekwencja odpowiada na inne pytanie:
 
 - **Próba płomieniowa** — jaka barwa oznacza jaki metal?
 - **Spalanie i utlenianie** — jaki związek powstaje z tlenem?

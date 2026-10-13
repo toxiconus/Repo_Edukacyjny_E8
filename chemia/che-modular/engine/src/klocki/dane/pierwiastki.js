@@ -82,9 +82,13 @@ var PR = {
   Ra: {kol: '#e6e2d6', r: 8, tempo: 58, rozow: .3, kurcz: .014, rad: 1, uw: 'tonie, tylko animacja',
        obs: 'Cięższy od wody, tonie; reaguje energiczniej niż bar. Pokazujemy tylko animację — w szkole nie wykonuje się tego doświadczenia.', rown: 'Ra + 2H₂O → Ra(OH)₂ + H₂↑'},
   Ba: {kol: '#c6cab8', r: 8, tempo: 42, rozow: .2, mut: .08, kurcz: .009, uw: 'tonie, energicznie',
-       obs: 'Tonie i reaguje energicznie. Ba(OH)₂ dobrze się rozpuszcza, więc roztwór zostaje klarowny.', rown: 'Ba + 2H₂O → Ba(OH)₂ + H₂↑'}
+       obs: 'Tonie i reaguje energicznie. Ba(OH)₂ dobrze się rozpuszcza, więc roztwór zostaje klarowny.', rown: 'Ba + 2H₂O → Ba(OH)₂ + H₂↑'},
+  Fr: {kol: '#8f8f8f', r: 8, tempo: 0, zyje: 0, rozow: 0, rad: 1, uw: 'brak danych',
+       obs: 'Frans jest wyjątkowo rzadki i silnie promieniotwórczy; nie ma wiarygodnych danych o reakcji z wodą. Animacji nie pokazujemy.', rown: 'brak wiarygodnych danych'},
+  CaO: {kol: '#e6e1d0', r: 9, tempo: 0, zyje: 0, rozow: .1, mut: .85, uw: 'opada, ogrzewa wodę, mętnieje',
+       obs: 'Biały proszek opada na dno i ogrzewa wodę (reakcja egzotermiczna). Powstaje Ca(OH)₂: roztwór mętnieje, a po fenoloftaleinie różowieje.', rown: 'CaO + H₂O → Ca(OH)₂'}
 };
-var LISTA_PR = {1: ['Li', 'Na', 'K', 'Rb', 'Cs'], 2: ['Be', 'Mg', 'Ca', 'Sr', 'Ba', 'Ra']};
+var LISTA_PR = {1: ['Li', 'Na', 'K', 'Rb', 'Cs', 'Fr'], 2: ['Be', 'Mg', 'Ca', 'Sr', 'Ba', 'Ra'], 3: ['CaO']};
 
 /* płomienie: barwa i opis */
 var PL = {
@@ -98,6 +102,11 @@ var PL = {
   Ca: {c: '#ff6a1f', nz: 'ceglastoczerwony', op: 'Pomarańczowoczerwony, cieplejszy niż stront.'},
   Sr: {c: '#ff2430', nz: 'karminowoczerwony', op: 'Jaskrawa czerwień z fajerwerków i rac.'},
   Ba: {c: '#9be34d', nz: 'zielony', op: 'Żółtozielony. Sole baru są trujące.'},
-  Ra: {c: '#d6123d', nz: 'karminowy', rad: 1, op: 'Sole radu barwią płomień karminowo. To tylko animacja — z radem nie pracuje się w szkole.'}
+  Ra: {c: '#d6123d', nz: 'karminowy', rad: 1, op: 'Sole radu barwią płomień karminowo. To tylko animacja — z radem nie pracuje się w szkole.'},
+  Fr: {tryb: 'brak', nz: 'brak danych', rad: 1, op: 'Frans jest wyjątkowo rzadki i silnie promieniotwórczy; nie ma wiarygodnych danych o barwie płomienia. Pokazujemy go tylko jako model.'}
 };
 
+
+/* związek berylowca (tlenek) dla probówek */
+DANE.CaO = {kon: 'związek CaO', rho: '3,34 g/cm³', rhoN: 3.34, mp: '2572 °C', re: 2,
+  opis: 'Tlenek wapnia (wapno palone). Z wodą tworzy Ca(OH)₂ z wydzieleniem ciepła.'};

@@ -169,7 +169,7 @@ KLOCKI.def('palniki', {
       var art = el('article', 'st'), cv = el('canvas'), op = el('div', 'st-opis'), br = el('button', 'btn', 'Powtórz próbę'); br.type = 'button';
       cv.width = 480; cv.height = 800; cv.tabIndex = 0; cv.setAttribute('role', 'button');
       var sim = Palnik(cv, sym);
-      var wb = wyborSymbole({1: ['Li', 'Na', 'K', 'Rb', 'Cs'], 2: ['Be', 'Mg', 'Ca', 'Sr', 'Ba', 'Ra']}, sym, function (s) { zmien(s); }, 'Pierwiastek w palniku');
+      var wb = wyborSymbole({1: ['Li', 'Na', 'K', 'Rb', 'Cs', 'Fr'], 2: ['Be', 'Mg', 'Ca', 'Sr', 'Ba', 'Ra']}, sym, function (s) { zmien(s); }, 'Pierwiastek w palniku');
       var st = {sim: sim, wb: wb, sym: sym};
       function zmien(s) {
         st.sym = s; sim.ustaw(s); sim.pauza = false; op.innerHTML = opisStacji(s); op.appendChild(br);

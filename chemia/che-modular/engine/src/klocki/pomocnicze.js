@@ -46,7 +46,7 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
   sum.appendChild(cur); sum.appendChild(el('span', 'wyb-tri', '▸')); box.appendChild(sum);
   var lst = el('div', 'wyb-lista'), btns = [];
   lst.setAttribute('role', 'listbox'); lst.setAttribute('aria-label', etykieta || 'Wybór pierwiastka');
-  var NAG = {1: 'Litowce', 2: 'Berylowce'};
+  var NAG = {1: 'Litowce', 2: 'Berylowce', 3: 'Tlenki berylowców'};
   Object.keys(grupy).forEach(function (g) {
     var w = el('div', 'wyb-grupa'); w.appendChild(el('span', 'wyb-g', NAG[g] || ('grupa ' + g)));
     grupy[g].forEach(function (s) {
