@@ -80,3 +80,20 @@ Konsekwencje:
 - Plan sprintu (`CHE_tryb_OLK8_sprint_ORYG.md`) i PRIORYTETY.md opisują to samo. Na razie nie rozwijam sprintu osobno: przy pracy ogólnej wchodzi do PRIORYTETY.md jako kolejka chemii.
 - Kolejność tematów wg PRIORYTETY (C1–C4, R03A, N01, REV01) zastępuje tabelę T0/T1 z sprintu, dopóki nie ma regulaminu 2026/27.
 - Do potwierdzenia u nauczyciela: terminy 2026/27 i zakres, bo zakres 2026/27 w repo jeszcze nie jest oficjalny.
+
+## 7. Weryfikacja OCJ 2026/27 (2026-10-13)
+
+Plik `OCJ_2026_27_realne_dane_ORYG.md` (kopia) twierdzi: etapy 5.11 / 10.12 / 11–12.03, etap I jako test zdalny, zakres = podstawa SP + 5 dodatków, mol poza zakresem, rejestracja od 14.09.
+
+Potwierdzone (lista olimpiad SP kuratorium Kraków, lipiec 2026, `kuratorium.krakow.pl/wp-content/uploads/2026/07/olimpiady-dla-uczniow-szkol-podstawowych.pdf`):
+- OCJ: I etap 5.11.2026, II etap 10.12.2026, III etap 11–12.03.2027.
+- **Przypis w tej liście: OCJ NIE daje zwolnienia z egzaminu ósmoklasisty** („Nie dotyczy”). Zestawienie z wcześniejszego pliku mówiło co innego — błąd tamtego zestawienia.
+
+Niepotwierdzone (brak w źródłach, które udało się otworzyć):
+- format etapu I (zdalny?), rejestracja (od 14.09?),
+- zakres 2026/27 i pięć dodatków (amoniak, cykliczne, halogenopochodne, analiza jakościowa, praktyka),
+- że mol jest poza zakresem.
+
+Źródło zakresu: oficjalny regulamin OCJ na edukator.pl (2025 jest w sieci jako PDF; 2026/27 nie znalazłem). Zakres wiedzy LKO (`PRIORYTETY.md`, pkt 2) to inny konkurs i nie można go mieszać z OCJ.
+
+Skutek dla planu: daty OCJ są pewne, zakres i format nie. Przed budową zestawów A1–A4 trzeba pobrać regulamin OCJ 2026/27 albo potwierdzić zakres u nauczyciela. Bez tego N06 (amoniak) jest tylko hipotezą.
