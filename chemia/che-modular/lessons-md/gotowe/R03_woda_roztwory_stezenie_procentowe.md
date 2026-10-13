@@ -7,6 +7,7 @@ kicker: R03 · ROZTWORY · DZIAŁ V PODSTAWY · KONKURS ETAP SZKOLNY
 lead: Woda rozpuszcza bardzo wiele substancji, ale nie bez końca — granicę wyznacza rozpuszczalność, a ilość substancji w roztworze opisuje stężenie procentowe.
 lead: W tej lekcji łączymy trzy tematy kanonu (R01 woda i roztwory, R02 rozpuszczalność, R03 stężenie procentowe) — to dział, w którym na konkursie najczęściej pojawiają się obliczenia.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]][[extra:AMBITNE]]
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 uwaga: Dział V podstawy programowej. Obejmuje zakres R01–R03 kanonu (osobne lekcje R01, R02 — później). Stężenie molowe (mol) — etap wojewódzki, w ramce „ambitne”.
 stopka: **CHEMIA R03 v1.0** · Woda, roztwory i stężenie procentowe · 2026
 ---
@@ -228,7 +229,7 @@ Pełny wykład o mieszaniu, reguła krzyżowa, hydraty i zadania konkursowe — 
 4. Wykrystalizuje: 104,8 − 30,5 ≈ **74,3 g KNO₃**.
 :::
 
-::: karta understand | Zadania
+::: karta exam | Zadania — rozpuszczalność i roztwory (4 pkt)
 1. Rozpuszczalność cukru w 20°C wynosi ok. 200 g/100 g wody. Ile cukru rozpuści się w 50 g wody?
 2. Czy roztwór zawierający 30 g KNO₃ w 100 g wody w 40°C jest nasycony? (R₄₀ = 64 g)
 3. W 80 g wody w 20°C rozpuszczono 30 g NaCl (R₂₀ = 36 g). Czy cała sól się rozpuściła? Oblicz Cp otrzymanego roztworu.
@@ -296,11 +297,13 @@ Pułapka: masa roztworu to suma masy soli i wody (200 g), a nie sama woda.
 
 ### A. Podstawa {#cw-a}
 
+::: karta exam | Ćwiczenia A — podstawa (5 pkt)
 1. 15 g soli w 85 g wody — oblicz Cp.
 2. 30 g cukru w 270 g wody — oblicz Cp.
 3. Ile gramów soli potrzeba do 200 g roztworu 5%?
 4. Ile gramów cukru i wody potrzeba do 500 g roztworu 20%?
 5. Rozpuszczalność KNO₃ wynosi 60 g/100 g wody. Oblicz Cp roztworu nasyconego.
+:::
 
 ::: odp | Pokaż odpowiedzi
 1. 15%. 2. 10%. 3. 10 g. 4. 100 g cukru i 400 g wody. 5. 60 ÷ 160 · 100% = **37,5%**.
@@ -308,11 +311,13 @@ Pułapka: masa roztworu to suma masy soli i wody (200 g), a nie sama woda.
 
 ### B. Trening {#cw-b}
 
+::: karta exam | Ćwiczenia B — trening (5 pkt)
 6. 50 g roztworu 10% zmieszano ze 150 g roztworu 30% — oblicz Cp mieszaniny.
 7. Do 250 g roztworu 12% dolano 50 g wody — oblicz Cp.
 8. Ile gramów soli trzeba dosypać do 180 g roztworu 10%, aby otrzymać roztwór 20%?
 9. Rozpuszczalność NaCl = 36 g/100 g wody. Ile NaCl rozpuści się w 250 g wody?
 10. 200 cm³ wody (d = 1 g/cm³) i 50 g soli — oblicz Cp.
+:::
 
 ::: odp | Pokaż odpowiedzi
 6. ms = 5 + 45 = 50 g; mr = 200 g → **25%**. 7. ms = 30 g; mr = 300 g → **10%**. 8. ms₁ = 18 g; (18 + x) ÷ (180 + x) = 0,2 → 18 + x = 36 + 0,2x → 0,8x = 18 → **x = 22,5 g**. 9. **90 g**. 10. mr = 250 g; 50 ÷ 250 · 100% = **20%**.
@@ -320,9 +325,11 @@ Pułapka: masa roztworu to suma masy soli i wody (200 g), a nie sama woda.
 
 ### C. Konkurs {#cw-c}
 
+::: karta exam | Ćwiczenia C — konkurs (3 pkt)
 11. 200 g roztworu nasyconego KNO₃ w 60°C (R = 110 g) ochłodzono do 20°C (R = 32 g). Ile KNO₃ wykrystalizuje?
 12. Uczeń ma 100 g roztworu 25% i wodę. Ile gramów roztworu 10% może przygotować?
 13. Wyjaśnij, dlaczego latem w przegrzanych stawach ryby wypływają pod powierzchnię i „łapią powietrze”.
+:::
 
 ::: odp | Pokaż odpowiedzi
 11. ok. **74,3 g** (rozwiązanie w [§7](#konkurs)). 12. ms = 25 g; mr = 25 · 100% ÷ 10% = **250 g** (dolać 150 g wody). 13. Rozpuszczalność tlenu w wodzie maleje ze wzrostem temperatury — w ciepłej wodzie jest go za mało.
