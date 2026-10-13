@@ -43,3 +43,10 @@ Format: **pojęcie** — definicja (pierwsze wprowadzenie: lekcja). Hasła są d
 - **Anion** — jon ujemny (przyjął elektrony), np. Cl⁻ (F04).
 - **Izotop** — atomy tego samego pierwiastka o różnej liczbie neutronów (F04).
 - **Izobar** — nuklidy o tym samym A i różnym Z (F04).
+
+## Dopisane z LKO-Z36 (2026-10-13)
+Konfiguracja powłokowa :: rozmieszczenie elektronów na powłokach K, L, M, N; zakres LKO do Z = 36 — `che-modular/lessons-md/slowniki/LKO_Z36_slownik.md`
+Szkielet konfiguracji :: zapis liczb na powłokach z x na końcu; cztery szkielety dla grup 1, 2, 13–18
+Elektrony walencyjne :: zewnętrzna powłoka; grupy 1–2 → numer grupy, grupy 13–18 → numer grupy − 10
+Izoelektronowość :: atomy lub jony o tej samej liczbie elektronów i konfiguracji (rodziny Ne, Ar, Kr)
+Model powłokowy :: uproszczony opis atomu na powłokach; przybliżenie, nie dokładny obraz
