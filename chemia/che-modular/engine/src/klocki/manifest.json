@@ -1,0 +1,10 @@
+{
+ "opis": "Klocki używane przez lekcje. Każda lekcja wymienia tylko potrzebne pliki.",
+ "klocki": {
+  "klocki.js": "rejestr i montaż (zawsze)",
+  "zlewka.js": "zlewka z cieczą i bąbelkami",
+  "plomien.js": "próba płomieniowa (barwa wg metalu)",
+  "metal_woda.js": "metal + woda: H₂ i fenoloftaleina"
+ },
+ "lekcje": {"P01": ["klocki.js", "zlewka.js", "plomien.js", "metal_woda.js"]}
+}
