@@ -20,3 +20,15 @@ Format: lekcja źródłowa → lekcja docelowa — co z czego wynika.
 - F04 → F05 — izotopy, jony i masa atomowa jako średnia ważona.
 - F04 → F06–F09 — układ okresowy i konfiguracja z liczby protonów i elektronów.
 - F04 → F07 — model powłokowy przechodzi w podpowłoki i orbitale.
+- X04 → LKO-METALE — rozszerzenie szeregu aktywności o reguły zadań etapu II (EXPAND).
+- J03 → LKO-METALE — równania jonowe w trzech formach i katalog skróconych (EXPAND).
+- J04 → LKO-METALE — strącanie osadów i tabela rozpuszczalności w zadaniach LKO (EXPAND).
+- N05 → LKO-METALE — metody otrzymywania soli jako katalog syntez (APPLY).
+- N06 → LKO-METALE — H₂ jako reduktor w cyklu miedzi; H₂S w katalogu soli (APPLY).
+- N06 → J01 — mocny/słaby: HCl dysocjuje całkowicie, H₂S częściowo (APPLY).
+- N06 → J04 — zapowiedź wykrywania jonów: AgCl↓ dla Cl⁻, PbS↓ dla S²⁻ (zapowiedź).
+- N06 → LKO-SYM-A2 — wodorki i ich wykrywanie jako materiał symulacji (zasilanie).
+- LKO-METALE → LKO-SYM-A2 — szereg, jony i synteza jako materiał symulacji (zasilanie).
+- LKO-KRZYWE → LKO-A1 — te same dane rozpuszczalności w zadaniach symulacji (zasilanie).
+- LKO-Z36 → F04 — konfiguracje do Z=36 jako rozszerzenie modelu powłokowego (pogłębienie).
+- LKO-pułapki → N02 — wapno gaszone i woda wapienna jako zasady i wodorotlenki (pogłębienie).

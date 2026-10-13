@@ -68,6 +68,16 @@ out.append("### Uzupełnienia\n")
 out.append("| Kod | Co | Status |")
 out.append("|---|---|---|")
 out.append("| FIZ-01 | Elektrostatyka (pomost do F04 i F11) | gotowa, poza kanonem CHE |")
+for kod,co,st in [
+    ("LKO-Z36","Konfiguracje elektronowe do Z=36 (suplement LKO)","szkic 2026-10-13, LKO etap II"),
+    ("LKO-KRZYWE","Krzywe rozpuszczalności (suplement LKO)","szkic 2026-10-13, LKO etap I"),
+    ("LKO-DIAG","Diagnoza wejściowa LKO","szkic 2026-10-13"),
+    ("LKO-A1","Zestaw A1 i symulacja etapu I LKO","szkic 2026-10-13, przed przeglądem W1"),
+    ("LKO-pułapki","Pułapki: woda wapienna, mleko wapienne, wapno, kreda, soda","szkic 2026-10-13"),
+    ("LKO-METALE","Szereg aktywności, równania jonowe, otrzymywanie soli (LKO etap II)","szkic 2026-10-13, bez audytu W1"),
+    ("N06","Wodorki: wodór, amoniak, HCl, H₂S (LKO II rozsz. 1)","szkic 2026-10-13, W1 + W2"),
+]:
+    out.append(f"| {kod} | {co} | {st} |")
 for k in range(0,11):
     out.append(f"| RT{k:02d} | Powtórka tematyczna (szkic w `plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md`) | do zrobienia |")
 # --- stan plików: rozmiar md/HTML, wersja, grafiki, samodzielność ---
