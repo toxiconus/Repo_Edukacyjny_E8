@@ -53,8 +53,8 @@ Dlaczego sód trzymamy w nafcie, a magnez można spalić w powietrzu jak zwykły
 
 ## 1 | Wykład — położenie w układzie i dlaczego te dwie grupy {#polozenie}
 
-@klocek uklad-okresowy {grupa="1"} | Układ okresowy: grupa 1 (litowce) i grupa 2 (berylowce). Kliknij numer grupy.
-@opis Mini układ okresowy z numerami grup u góry. Podświetlona jest grupa 1 (litowce) w kolumnie pierwszej, z krótkim opisem: jeden elektron walencyjny. Kliknięcie innej grupy z opisem zmienia podświetlenie. Wniosek: położenie w kolumnie mówi, ile elektronów walencyjnych ma atom.
+@klocek uklad-okresowy {wybrany="Na"} | Tablica Mendelejewa: kafelki litowców i berylowców
+@opis Tablica okresowa z dwoma rzędami kafelków: grupa 1 (Li, Na, K, Rb, Cs, Fr) i grupa 2 (Be, Mg, Ca, Sr, Ba, Ra). Po kliknięciu kafelka pod spodem pojawia się opis pierwiastka i przyciski prób w probówce i w płomieniu. Ra i Fr mają znak promieniowania. Wniosek: położenie w grupie mówi, ile elektronów walencyjnych ma atom i jak reaguje.
 
 ::: karta understand | Wykład od zera
 Układ okresowy porządkuje pierwiastki według liczby atomowej. Pierwiastki z tą samą liczbą elektronów walencyjnych trafiają do tej samej kolumny (grupy). W pierwszej kolumnie (grupa 1) stoją pierwiastki z jednym elektronem na zewnętrznej powłoce. W drugiej (grupa 2) — z dwoma.
