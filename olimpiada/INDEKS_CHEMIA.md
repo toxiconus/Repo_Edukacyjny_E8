@@ -15,12 +15,12 @@ Stan 2026-10-13. Rozmiary i stan wg nagłówków lekcji (kolumna Stan: audyt W1 
 | 9 | LKO_DOSW_katalog_doswiadczen.md (umiejętności wspólne I–II) | LKO-DOSW | 37 KB | 114 KB | W1 FULL — Perplexity, 2026-10-13; uwagi wprowadzone |
 | 10 | LKO_B1B2_zestawy_treningowe.md (trening II + mix I) | LKO-B1+B2 | 19 KB | 91 KB | W1 FULL — Perplexity, 2026-10-13; uwagi wprowadzone |
 | 11 | LKO_SYM-A2_symulacja_etap_II.md (próba generalna II: 90 min / 40 pkt, zakres kumulatywny) | LKO-SYM-A2 | 22 KB | 96 KB | W1 FULL — Perplexity, 2026-10-13; uwagi wprowadzone |
-| 12 | LKO_ORG01_alkany.md | LKO-ORG01 | 28 KB | 104 KB | pełna struktura — 2026-10-13, bez audytu W1 |
-| 13 | LKO_ORG02_alkeny.md | LKO-ORG02 | 24 KB | 100 KB | pełna struktura — 2026-10-13, bez audytu W1 |
+| 12 | LKO_ORG01_alkany.md | LKO-ORG01 | 28 KB | 104 KB | W1 FULL — Perplexity, 2026-10-13 |
+| 13 | LKO_ORG02_alkeny.md | LKO-ORG02 | 24 KB | 100 KB | W1 FULL — Perplexity, 2026-10-13 |
 | 14 | LKO_ORG03_alkohole.md | LKO-ORG03 | 26 KB | 101 KB | pełna struktura — 2026-10-13, bez audytu W1 |
-| 15 | LKO_ORG04_glicerol.md | LKO-ORG04 | 26 KB | 102 KB | pełna struktura — 2026-10-13, bez audytu W1 |
-| 16 | LKO_ORG05_kwasy.md | LKO-ORG05 | 27 KB | 103 KB | pełna struktura — 2026-10-13, bez audytu W1 |
-| 17 | LKO_ORG06_estry.md | LKO-ORG06 | 26 KB | 102 KB | pełna struktura — 2026-10-13, bez audytu W1 |
+| 15 | LKO_ORG04_glicerol.md | LKO-ORG04 | 26 KB | 102 KB | W1 FULL — Perplexity, 2026-10-13 |
+| 16 | LKO_ORG05_kwasy.md | LKO-ORG05 | 27 KB | 103 KB | W1 FULL — Perplexity, 2026-10-13 |
+| 17 | LKO_ORG06_estry.md | LKO-ORG06 | 26 KB | 102 KB | W1 FULL — Perplexity, 2026-10-13 |
 | 18 | LKO_ORG07_cukry.md | LKO-ORG07 | 28 KB | 104 KB | pełna struktura — 2026-10-13, bez audytu W1 |
 | 19 | LKO_ORG08_mol_gazy.md | LKO-ORG08 | 27 KB | 104 KB | pełna struktura — 2026-10-13, bez audytu W1 |
 
