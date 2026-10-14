@@ -3,7 +3,7 @@ kod: FIZ-01
 uid: CHE.FIZ.01.elektrostatyka
 tytul: Elektrostatyka
 opis: Ładunek i jego budowa atomowa · elektryzowanie przez tarcie, dotyk i indukcję · przewodniki i izolatory · elektroskop i uziemienie · prawo Coulomba i pole elektryczne · warstwa konkursowa
-stan: W1 FULL — Claude Sonnet 5.5 (paczka GOTOWE), 2026-10-12; wczytane skryptem bez ręcznych zmian
+stan: W1 FULL — Claude Sonnet 5.5 (paczka GOTOWE), 2026-10-12; korekta audytu zewnętrznego 2026-10-14 (częściowa, patrz AUDYT W1 na końcu)
 kicker: FIZ-01 · FIZYKA · MASTER LAB v1.4
 lead: Ładunek i jego budowa atomowa, elektryzowanie (tarcie, dotyk, indukcja), oddziaływanie ładunków, przewodniki i izolatory, elektroskop, uziemienie i zastosowania; dla chętnych i LO: prawo Coulomba, pole elektryczne. Animacje i liczby z silnika CHE.FIZ.ELEKTRO. Warstwa konkursowa: pary do odróżniania, trudne przypadki i zadania ambitne.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:E8+ / LO]][[exam:KONKURS]]
@@ -115,7 +115,7 @@ We wszystkich trzech sposobach działa **zasada zachowania ładunku**: w układz
 
 Naelektryzowane ciało przyciąga też ciała **obojętne** (skrawki papieru, strumień wody). Jego ładunek przesuwa ładunki w obojętnym ciele — w przewodniku swobodne elektrony (indukcja), w izolatorze ładunki wewnątrz cząsteczek (polaryzacja). Bliższy koniec dostaje ładunek przeciwny, więc przyciąganie (bliżej, więc silniej) wygrywa z odpychaniem (dalej, więc słabiej).
 
-To, jak łatwo ładunek się przemieszcza, zależy od materiału. W **przewodniku** (metale, grafit, roztwory soli, ciało człowieka) są swobodne nośniki ładunku i ładunek rozpływa się po całym ciele. W **izolatorze** (szkło, guma, plastik, suche powietrze) nośników swobodnych nie ma i ładunek zostaje tam, gdzie powstał — dlatego izolatory elektryzuje się łatwo przez tarcie.
+To, jak łatwo ładunek się przemieszcza, zależy od materiału. W **przewodniku** (metale, grafit, roztwory soli, ciało człowieka) są swobodne nośniki ładunku i w stanie równowagi nadmiarowy ładunek rozmieszcza się na powierzchni przewodnika. W **izolatorze** (szkło, guma, plastik, suche powietrze) nośników swobodnych nie ma i ładunek zostaje tam, gdzie powstał — dlatego izolatory elektryzuje się łatwo przez tarcie.
 
 **Elektroskop** to przyrząd, w którym dwa metalowe listki dostają ładunek tego samego znaku i odpychają się — im większy ładunek, tym większe rozchylenie. Pokazuje *ile*, ale nie *jaki* znak. **Uziemienie** to połączenie z ziemią: Ziemia jest tak wielkim przewodnikiem, że przejmuje ładunek ciała i zostawia je obojętnym.
 :::
@@ -144,7 +144,7 @@ Protony są w jądrze uwięzione, elektrony zewnętrzne łatwo się odrywają. D
 :::
 
 ::: karta basic | Ładunek elementarny i kulomb
-Najmniejszy swobodny ładunek to **ładunek elementarny**: e = <span data-fiz="e">1,602·10⁻¹⁹ C</span>. Elektron ma ładunek −e, proton +e. Każdy ładunek ciała jest jego wielokrotnością:
+**Ładunek elementarny** jest podstawową jednostką kwantowania ładunku: ładunki swobodnych cząstek są całkowitymi wielokrotnościami e, a nie „najmniejszym swobodnym ładunkiem” w każdym kontekście: e = <span data-fiz="e">1,602·10⁻¹⁹ C</span>. Elektron ma ładunek −e, proton +e. Każdy ładunek ciała jest jego wielokrotnością:
 
 $$ q = n · e
 
@@ -221,7 +221,7 @@ Przy tarciu dwóch różnych materiałów elektrony przechodzą z jednego na dru
 ## 4 | Przewodniki i izolatory {#s4}
 
 ::: karta core | Różnica
-**Przewodnik** zawiera swobodne nośniki ładunku: w metalach i graficie — **elektrony swobodne**, w roztworach i w ciele człowieka — **jony**. Ładunek rozpływa się po całym przewodniku.
+**Przewodnik** zawiera swobodne nośniki ładunku: w metalach i graficie — **elektrony swobodne**, w roztworach i w ciele człowieka — **jony**. W stanie równowagi nadmiarowy ładunek przewodnika znajduje się na jego powierzchni; największa gęstość jest przy ostrzach.
 
 **Izolator** (dielektryk) nie ma swobodnych nośników — ładunek zostaje tam, gdzie go umieszczono (dlatego tarciem łatwo elektryzować izolatory).
 
@@ -243,7 +243,7 @@ Przy tarciu dwóch różnych materiałów elektrony przechodzą z jednego na dru
 @opis Model z lekcji o kwasach: tester przewodnictwa (bateria, żarówka, dwie elektrody) zanurzany w różnych roztworach — żarówka świeci w roztworach elektrolitów, a w wodzie destylowanej czy roztworze cukru nie. Wniosek: w roztworach ładunek przenoszą jony, więc przewodzą tylko roztwory, w których są jony.
 
 ::: karta understand | W skrócie — przewodnik czy izolator?
-Pytanie rozstrzygające: **czy w materiale są swobodne nośniki ładunku?** Tak (elektrony swobodne w metalach i graficie, jony w roztworach i w ciele człowieka) — to przewodnik, a ładunek rozpływa się po całym ciele. Nie — to izolator i ładunek zostaje w miejscu. Różnica jest ogromna: opór właściwy miedzi i teflonu dzieli ok. 30 rzędów wielkości. Półprzewodniki (krzem) są pośrodku, a ich przewodnictwo można kształtować domieszkami.
+Pytanie rozstrzygające: **czy w materiale są swobodne nośniki ładunku?** Tak (elektrony swobodne w metalach i graficie, jony w roztworach i w ciele człowieka) — to przewodnik, a nadmiarowy ładunek rozmieszcza się na powierzchni ciała. Nie — to izolator i ładunek zostaje w miejscu. Różnica jest ogromna: opór właściwy miedzi i teflonu dzieli ok. 30 rzędów wielkości. Półprzewodniki (krzem) są pośrodku, a ich przewodnictwo można kształtować domieszkami.
 :::
 
 ## 5 | Elektryzowanie przez dotyk. Zasada zachowania ładunku {#s5}
@@ -278,7 +278,7 @@ Prawo, które tu stosujemy, to **zasada zachowania ładunku elektrycznego**: w u
 
 $$ q₁ + q₂ + … = q₁′ + q₂′ + … = const
 
-> „Zasady zachowania potencjału” nie ma. Z potencjałem wiąże się inna reguła: gdy zetkniesz przewodniki, elektrony płyną tak długo, aż **potencjały się wyrównają** (rozszerzenie LO poniżej). To ona wyjaśnia, dlaczego identyczne kule dzielą się ładunkiem po równo, a uziemienie rozładowuje ciało.
+> Przy zetknięciu przewodników elektrony płyną tak długo, aż **potencjały się wyrównają** (rozszerzenie LO poniżej). To ona wyjaśnia, dlaczego identyczne kule dzielą się ładunkiem po równo, a uziemienie rozładowuje ciało.
 :::
 
 ::: karta basic | Ładunek to liczba ze znakiem i jednostką
@@ -456,7 +456,7 @@ Po **zbliżeniu** (bez dotykania) naładowanego ciała do przewodnika elektrony 
 
 ::: karta extra | Zastosowania i skutki
 ::: div.table-wrap
-<table><thead><tr><th>Gdzie</th><th>Co się dzieje</th></tr></thead><tbody><tr><td>piorunochron</td><td>chmura indukuje ładunek w ostrzu; wyładowanie trafia w piorunochron i spływa przewodem do ziemi — budynek jest chroniony</td></tr><tr><td>burza</td><td>ładunki rozdzielają się w chmurze (zderzenia kryształków lodu); piorun przenosi zwykle kilka–kilkadziesiąt kulombów (orientacyjnie) w ułamku sekundy</td></tr><tr><td>kserograf, drukarka laserowa</td><td>naelektryzowany bęben przyciąga toner tylko w miejscach obrazu</td></tr><tr><td>filtry elektrostatyczne</td><td>pył w kominie elektrowni zostaje naładowany i osiada na elektrodach</td></tr><tr><td>malowanie proszkowe / natryskowe</td><td>naładowane krople farby lecą do uziemionego elementu i pokrywają go równo, także od tyłu</td></tr><tr><td>stacja paliw, cysterna</td><td>iskra może zapalić opary — cysterny i dystrybutory się uziemia</td></tr><tr><td>elektronika</td><td>wyładowanie z ciała (kilka tysięcy woltów — orientacyjnie!) niszczy układy scalone — opaska antystatyczna, uziemione stanowisko</td></tr><tr><td>klatka Faradaya</td><td>wewnątrz zamkniętego przewodnika pole elektryczne jest zerowe — samochód chroni przed piorunem, mikrofalówka zatrzymuje fale</td></tr></tbody></table>
+<table><thead><tr><th>Gdzie</th><th>Co się dzieje</th></tr></thead><tbody><tr><td>piorunochron</td><td>chmura indukuje ładunek w ostrzu; wyładowanie trafia w piorunochron i spływa przewodem do ziemi — to kontrolowana droga prądu; piorunochron nie gwarantuje trafienia w każde wyładowanie, a instalację projektuje się zgodnie z normami</td></tr><tr><td>burza</td><td>ładunki rozdzielają się w chmurze (zderzenia kryształków lodu); piorun przenosi zwykle kilka–kilkadziesiąt kulombów (orientacyjnie) w ułamku sekundy</td></tr><tr><td>kserograf, drukarka laserowa</td><td>naelektryzowany bęben przyciąga toner tylko w miejscach obrazu</td></tr><tr><td>filtry elektrostatyczne</td><td>pył w kominie elektrowni zostaje naładowany i osiada na elektrodach</td></tr><tr><td>malowanie proszkowe / natryskowe</td><td>naładowane krople farby lecą do uziemionego elementu i pokrywają go równo, także od tyłu</td></tr><tr><td>stacja paliw, cysterna</td><td>iskra może zapalić opary — cysterny i dystrybutory się uziemia</td></tr><tr><td>elektronika</td><td>wyładowanie z ciała (kilka tysięcy woltów — orientacyjnie!) niszczy układy scalone — opaska antystatyczna, uziemione stanowisko</td></tr><tr><td>klatka Faradaya</td><td>wewnątrz zamkniętego przewodnika pole elektryczne jest zerowe — samochód chroni przed piorunem, mikrofalówka zatrzymuje fale</td></tr></tbody></table>
 :::
 :::
 
@@ -521,7 +521,7 @@ Charles Coulomb w 1785 roku zmierzył siłę między naładowanymi kulkami **wag
 
 $$ E = F / q   [N/C = V/m]
 
-Dla ładunku punktowego: E = k·Q / r². **Linie pola** zaczynają się na ładunkach dodatnich i kończą na ujemnych; gęstsze linie — silniejsze pole.
+Dla ładunku punktowego |E| = k·|Q| / r²; zwrot pola: od ładunku dodatniego, ku ujemnemu. **Linie pola** zaczynają się na ładunkach dodatnich i kończą na ujemnych; gęstsze linie — silniejsze pole.
 :::
 
 ::: karta basic | Rodzaje pól
@@ -544,6 +544,8 @@ Pole to sposób opisu: zamiast pytać, jak ładunek A działa na B, pytamy, jaki
 ::: karta extra | Ciekawostka — kropla oleju i ładunek elementarny
 W 1909 roku Robert Millikan obserwował naładowane kropelki oleju w polu elektrycznym: dobierał takie natężenie pola, przy którym kropla wisiała w miejscu (siła elektryczna równoważyła ciężar). Ładunki kropel okazywały się **całkowitymi wielokrotnościami** tej samej, najmniejszej wartości — ładunku elementarnego e. Za badania nad ładunkiem elementarnym dostał Nagrodę Nobla w 1923 roku.
 :::
+
+> **BHP ogólne:** nie wykonuj doświadczeń z wysokim napięciem, iskrami, paliwami i rozpuszczalnikami bez nadzoru dorosłego i odpowiedniego wyposażenia. Nie zbliżaj naładowanych przedmiotów do instalacji elektrycznej, urządzeń medycznych ani łatwopalnych oparów.
 
 ## 10 | Doświadczenia {#s10}
 
@@ -879,6 +881,14 @@ BHP: Doświadczenie bezpieczne; wykonuj je w suchym powietrzu i bez otwartego og
 :::
 :::
 :::
+
+### Dodatkowe zadania — trzy ładunki, przyciąganie, jednostki (W1, 2026-10-14)
+
+1. Ładunki leżą na prostej: q₁ = +2 µC w punkcie 0, q₂ = +2 µC w punkcie 0,3 m, q₃ = −2 µC w punkcie 0,6 m. Oblicz siłę wypadkową na ładunek q₂. **Klucz:** od q₁ odpychanie w prawo, F₁₂ = 8,99·10⁹·(2·10⁻⁶)²/0,3² ≈ 0,40 N; od q₃ przyciąganie w prawo, też ≈ 0,40 N. Wypadkowa ≈ 0,80 N, w prawo.
+2. Naelektryzowana pałeczka przyciąga kawałek papieru. Czy papier jest naelektryzowany? **Klucz:** nie wiadomo. Przyciąganie wystarcza, by wykryć obcy ładunek lub polaryzację obojętnego ciała, ale nie dowodzi naelektryzowania papieru.
+3. Zamień na kulomby: 3 µC, 250 nC, 4 pC. **Klucz:** 3·10⁻⁶ C; 2,5·10⁻⁷ C; 4·10⁻¹² C.
+
+---
 
 ## 12a | Zadania egzaminacyjne E8 — typy i wzorcowe odpowiedzi {#s12a}
 
@@ -1507,3 +1517,13 @@ Tryboelektryczność :: elektryzowanie ciał przy ich zetknięciu i rozdzieleniu
 | §12b, trudny przypadek 1 | animacja „do przodu i od początku” | naładowany elektroskop i powoli zbliżany pręt o dużym ładunku jednoimiennym przeciwnym; zmiana rozkładu ładunków i kąta listków | Najpierw listki opadają, potem rozchylają się ponownie, choć całkowity ładunek się nie zmienia. | Pręt ujemny zbliżany do elektroskopu naładowanego dodatnio: listki opadają, a potem znowu się rozchylają, przy czym znaki ładunków na listkach się zmieniają. Wniosek: o znaku pręta wnioskujemy z początku zbliżania, nie z końca. |
 | §9 lub §12b | schemat z podpisami do klikania | przewodząca powłoka w polu zewnętrznym: ładunki indukowane na powierzchni, wnętrze bez pola | Wewnątrz przewodnika w równowadze pole jest zerowe. | Zamknięta metalowa powłoka w jednorodnym polu: linie pola kończą się na ładunkach indukowanych na powierzchni, a wnętrze jest bez linii. Wniosek: klatka Faradaya osłania wnętrze od pola elektrycznego. |
 | §15, historia odkryć | oś czasu | daty i postacie od Talesa do Millikana | Kolejne odkrycia budowały obraz ładunku jako wielkości o dwóch znakach i najmniejszej porcji. | Oś czasu z wydarzeniami: bursztyn Talesa, Gilbert, Gray, du Fay, Franklin, Coulomb, Faraday, Thomson, Millikan. Wniosek: elektrostatyka rozwijała się od jakościowych obserwacji do pomiarów ładunku. |
+
+### AUDYT W1 — zewnętrzny, weryfikacja 2026-10-14 (Claude Haiku 5.5)
+
+Surowa odpowiedź i tabela weryfikacji: `chemia/plany/audyty/FIZ01_audyt_W1_2026-10-14.md`.
+
+**Wprowadzono:** ładunek elementarny (zdanie o „najmniejszym swobodnym ładunku”); rozmieszczenie ładunku w przewodniku na powierzchni (dwa miejsca); zwrot i wartość natężenia pola; piorunochron (bez gwarancji); usunięto zdanie polemiczne „Zasady zachowania potencjału nie ma”; blok BHP ogólny; dodatkowe zadania z kluczem (trzy ładunki, przyciąganie, jednostki).
+
+**Nieprzyjęte:** cytaty „Jon to atom…”, „Czas rozpływu…”, „Im większy ładunek…”, „Ziemia przejmuje…”, „Wewnątrz zamkniętego przewodnika…”, „Samochód chroni…”, „Wyładowanie trafia…” nie występują w tym pliku (audyt dotyczył innej wersji); definicja jonu już poprawna; dysocjacja kwasu już podaje H₃O⁺; `$$` i `:::` są poprawną składnią silnika; tabela oporu już podaje 20 °C.
+
+**Odłożone:** zadanie „elektroskop z ciałem wzorcowym” i „listki opadają i rozchylają się” — w lekcji są przykłady (§10, §6), wymagają osobnej weryfikacji; sekcja „obserwacja ≠ wniosek” — do dopisania w następnej turze.
