@@ -380,3 +380,9 @@ Zastosowano: dodano pułapkę „brak sprawdzenia reagenta ograniczającego” d
 Nieprzyjęte (sprawdzone w pliku): procedura zadania (zbilansuj, przelicz na mole, użyj współczynników, przelicz na jednostkę, sprawdź fazę) jest w lekcji jako kroki przy zadaniu z gazami; zasada, że woda w warunkach normalnych jest cieczą, jest w lekcji; wzory n = m/M, N = n·N_A, V = n·Vₘ są poprawne.
 
 Do osobnego zadania (nie w tej lekcji): test przekrojowy ORG01–ORG08 i zestaw mieszany — poza zakresem tego audytu.
+
+## AUDYT W1/W2 — wynik zewnętrzny, kolejny przebieg (2026-10-14)
+
+Zastosowano: brak zmian treści.
+
+Nieprzyjęte: oznaczenie „W1 FULL” nie zostało wprowadzone — pełny przegląd linia po linii nie był wykonany, stan lekcji pozostaje „bez audytu W1”. Sprawdzone w pliku: zależności n = m/M, N = nN_A, V = nVₘ; Vₘ = 22,4 dm³/mol tylko dla gazów w warunkach normalnych; gęstości względne (CH₄ ≈ 0,55; C₂H₅Cl ≈ 2,22); wzór elementarny CH₂O i rzeczywisty C₂H₄O₂ (k = 2); stosunki objętościowe propanu; zadanie łańcuchowe z etenem (0,5 mol, 0,45 mol chloroetanu, 29,0 g; Br₂ 8,0 g; produkty ok. 38,4 g) jest w lekcji z kontrolą uczniowskiego błędu „45 g”. Zapis „CH₄?” nie występuje w pliku.
