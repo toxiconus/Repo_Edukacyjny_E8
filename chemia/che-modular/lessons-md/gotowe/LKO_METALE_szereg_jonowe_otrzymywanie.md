@@ -468,3 +468,7 @@ Suma punktów w zestawie zadań: 45 (zestaw ćwiczeniowy, nie próbny etapu II =
 Zastosowano: dopisano uwagę BHP przy zagęszczaniu przesączu z NaOH (produkt reakcji Na₂CO₃ + Ca(OH)₂).
 
 Nieprzyjęte (sprawdzone w pliku): sód w roztworze CuSO₄ — lekcja już zapisuje sekwencję 2Na + 2H₂O → 2NaOH + H₂↑, a potem 2NaOH + CuSO₄ → Cu(OH)₂↓ + Na₂SO₄ i wyraźnie zaznacza, że metaliczna miedź nie powstaje; warunki w cyklu miedzi (Δ/t) są podane przy każdym etapie; magnez z gorącą wodą jest w głównym tekście i w tabeli; tabela metal – woda – kwas – wypieranie jest w lekcji; równanie jonowe ma pełny przykład od formy cząsteczkowej do skróconej (CuSO₄ + 2NaOH → Cu²⁺ + 2OH⁻ → Cu(OH)₂↓). Rozdzielenie części obowiązkowej i olimpijskiej nie wprowadzono — lekcja ma oznaczenia poziomów; do rozważenia przy przebudowie.
+
+## AUDYT W1/W2 — zewnętrzny, blok status LKO (2026-10-14)
+
+Uwaga: klucze tej lekcji były sprawdzone w osobnym audycie z tego samego dnia (sekcja „AUDYT W1/W2 — zewnętrzny, LKO-METALE”); ten blok nie zmienia treści.

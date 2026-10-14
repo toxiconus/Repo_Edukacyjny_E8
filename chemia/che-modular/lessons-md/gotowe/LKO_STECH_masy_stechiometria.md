@@ -428,3 +428,7 @@ Antoine Lavoisier w XVIII wieku pokazał, że w zamkniętym naczyniu masa substr
 ## Notatka dla prowadzącego: granice
 
 Świadomie poza etapem II i poza tym plikiem: **mol, Avogadro, masa molowa jako liczba, objętość molowa gazów** — to rozszerzenie 10 etapu III (pełne wersje: R04, R06); metoda „podziel przez masę atomową" to ich przedsmak, nazwy nie używamy. **Wydajność reakcji i zanieczyszczenia** — poza rozszerzeniem 7 (R09); jeśli w arkuszu pojawi się „otrzymano 90% teoretycznej masy", wystarczy jedna dodatkowa proporcja (×0,9) — pokaż przy okazji zestawów B, nie tutaj. **Objętości gazów w zadaniach** — etap II formułuje wyłącznie obliczenia masowe; gdyby w arkuszu pojawił się litr gazu, to sygnał, że zakres poszerzono — wtedy R06 wchodzi awaryjnie. Wartości mas atomowych w kompendium pokrywają wszystkie zadania tego suplementu i symulacji A2; na zawodach i tak będą w tablicach. Uwaga scalająca: przykład z N06 (10,7 g NH₄Cl → 3,4 g NH₃, zadanie 10) jest tą samą metodą — uczniowi warto pokazać, że „już to umiał", tylko bez nazwy.
+
+## AUDYT W1/W2 — zewnętrzny, blok status LKO (2026-10-14)
+
+Nieprzyjęte: zalecenie dopisania mnożenia wydajności etapów nie zostało wprowadzone — lekcja świadomie wyłącza wydajność i zanieczyszczenia (notatka dla prowadzącego: rozszerzenie 7, R09). Zasada η = η₁·η₂ jest w LKO-ORG06 i LKO-ORG07, gdzie występują reakcje wieloetapowe.
