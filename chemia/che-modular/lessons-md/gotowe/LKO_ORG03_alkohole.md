@@ -79,6 +79,16 @@ Druga ważna sprawa to **odczyn**. Alkohole nie dysocjują na jony, bo –OH jes
 
 Trzecia rzecz to **reakcja z sodem**. Sód odbiera atom wodoru z grupy –OH i zostawia resztę cząsteczki. Powstaje alkoholan sodu i wodór. Wodór pochodzi z lokomotywy, a nie z wagonów — dlatego reakcja jest dowodem na obecność –OH. Liczenie jest proste, jeśli pamiętasz stosunek: **dwie cząsteczki alkoholu dają jedną cząsteczkę H₂**.
 
+::: karta understand | W skrócie — ile H₂ daje mol alkoholu
+| Alkohol | Liczba grup –OH | H₂ z 1 mola alkoholu |
+|---|---|---|
+| etanol | 1 | 0,5 mola |
+| glikol etylenowy | 2 | 1 mol |
+| glicerol | 3 | 1,5 mola |
+
+Każda grupa –OH daje z sodem połowę mola H₂, dlatego liczymy mole grup –OH, a nie mole cząsteczek.
+:::
+
 Czwarta to **spalanie**. Alkohole palą się niebiesko, wydzielając dwutlenek węgla i wodę. Każde równanie bilansujesz w tej kolejności: węgiel, wodór, na końcu tlen. Gdy wyjdzie ułamek, mnożysz wszystko przez 2.
 
 Najczęstsza pułapka: zdanie „etanol ma grupę OH, więc jest zasadą”. Nie jest — zasada to związek, który oddaje jony OH⁻; etanol tego nie robi. Druga pułapka: liczenie atomów wodoru w C₂H₅OH — jest ich **sześć** (pięć w grupie etylowej i jeden w –OH).
@@ -427,3 +437,9 @@ Metanol: 2CH₃OH + 3O₂ → …, więc na 1 mol potrzeba 1,5 mola O₂. Etanol
 **Nieprzyjęte:** brak. Odpowiedź zewnętrzna nie wskazała błędów merytorycznych w treści, poza uzupełnieniami powyżej.
 
 **Bez uwag:** pozostałe rachunki, bilanse i równania sprawdzone — poprawne.
+
+## AUDYT W1/W2 — zewnętrzny, blok organiczny (2026-10-14)
+
+Zastosowano: dodano kartę „W skrócie” z tabelą liczby grup –OH i ilości H₂ z 1 mola alkoholu (etanol 0,5, glikol 1, glicerol 1,5 mola).
+
+Nieprzyjęte (sprawdzone w pliku): pułapka „grupa –OH to nie jon OH⁻ / alkohol nie jest zasadą” jest w lekcji; warunek BHP i demonstracja nauczycielska sodu są w doświadczeniu; ostrzeżenie o metanolu jest w celach i w karcie o toksyczności.

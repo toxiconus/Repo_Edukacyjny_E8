@@ -88,6 +88,14 @@ Drogi „na przełaj" — m → N i m → V — zawsze przez mol (dwa kroki). Ob
 
 **Liczba Avogadro:** N_A = 6,02·10²³ mol⁻¹ w rachunkach szkolnych; od reformy SI 2019 r. wartość dokładna: **6,02214076·10²³ mol⁻¹** (mol zdefiniowano właśnie przez tę liczbę — bez uzależnienia od masy wzorca).
 
+### Najczęstsze pułapki
+
+- Masa molowa to nie masa próbki: M w g/mol, m w gramach — najpierw n = m/M, dopiero potem reszta.
+- 22,4 dm³/mol tylko dla gazów w warunkach normalnych (0 °C, ok. 1013 hPa); nie stosuj go do cieczy ani do innych warunków.
+- Pomijanie współczynników z równania: liczby moli i objętości gazów przeliczamy przez współczynniki.
+- Objętość przed liczbą moli: najpierw n z danych, potem V = n·Vₘ.
+- Wydajność stosujemy do właściwego etapu i właściwego produktu teoretycznego.
+
 ::: karta understand | W skrócie — mapa konwersji w jednej karcie
 Gramy → mole: dziel przez M. Mole → gramy: mnoż przez M. Mole → cząstki: mnoż przez 6,02·10²³. Cząstki → mole: dziel przez 6,02·10²³. Mole → dm³ (gaz!): mnoż przez 22,4. dm³ → mole: dziel przez 22,4. Każde „dalekie" przejście = dwa kroki przez mol. Kontrola błędów: jednostki na każdym kroku i rząd wielkości (mol gazu to zawsze dziesiątki dm³, masa mola — dziesiątki–setki gramów).
 :::
@@ -357,3 +365,9 @@ gęstość absolutna :: masa jednostki objętości gazu: ρ = M/22,4 g/dm³ (war
 - **ORG08:** adv 6f — poprawna suma 38,4 g (29,025 + 9,4); „ok. 45 g" ucznia pozostawione jako celowy błąd do wykrycia (bez wskazania źródła błędu — klucz dopuszcza interpretację); rachunki: 0,45·64,5 = 29,025 ✔; 0,05·188 = 9,4 ✔; 29,025 + 9,4 = 38,425 ≈ 38,4 ✔.
 - **ORG08:** M(Br₂) = 160 g/mol — wartość podręcznikowa spoza listy B1 (Br = 80), oznaczona (jak w ORG02).
 - **SERIA ORG01–ORG08:** wszystkie odwołania do Vₘ = 22,4 dm³/mol domknięte wykładem ORG08; w ORG01–07 przy scalaniu można dodać odnośniki do sekcji 1–2 ORG08.
+
+## AUDYT W1/W2 — zewnętrzny, blok organiczny (2026-10-14)
+
+Zastosowano: dodano sekcję „Najczęstsze pułapki” z pięcioma punktami (masa molowa a masa próbki, Vₘ tylko dla gazów w warunkach normalnych, współczynniki, kolejność n → V, wydajność na właściwym etapie).
+
+Nieprzyjęte: wzory n = m/M, N = n·N_A, V = n·Vₘ, Vₘ = 22,4 dm³/mol w warunkach normalnych są w lekcji; pułapka wzorów elementarnych i pary wodnej jest już w ćwiczeniach.

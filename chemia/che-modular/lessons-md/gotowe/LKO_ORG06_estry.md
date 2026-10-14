@@ -506,3 +506,9 @@ Surowa odpowiedź: `chemia/plany/audyty/LKO_ORG06_audyt_W1_2026-10-14.md`.
 Zastosowano: dodano tabelę nazw zwyczajowych i systematycznych (w tym maślan etylu = butanian etylu); dodano zapis octanu propylu z kwasem octowym i propan-1-olem; dodano zapis jonowy reakcji stearynianu z jonami wapnia.
 
 Nieprzyjęte (sprawdzone w pliku): schemat kwas + alkohol ⇌ ester + woda i rozdzielenie estryfikacji, hydrolizy kwasowej i zasadowej są już w lekcji; sformułowanie o solach sodowych i potasowych (mydła twarde i miękkie) jest; cząsteczkowe równanie twardej wody jest; spalanie 17,6 g octanu etylu (0,2 mol, 1 mol O₂, 35,2 g CO₂) jest poprawne; zasada mnożenia wydajności etapów szeregowych jest już w zadaniu o zmydleniu i w pułapkach.
+
+## AUDYT W1/W2 — zewnętrzny, blok organiczny (2026-10-14)
+
+Zastosowano: brak zmian treści.
+
+Nieprzyjęte (sprawdzone w pliku): Równanie estryfikacji z H₂SO₄ jako katalizatorem i pochłaniaczem wody, nazwy estrów i zapis reakcji twardej wody są w lekcji. Nic do zmiany.

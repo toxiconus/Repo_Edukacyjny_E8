@@ -441,3 +441,9 @@ Zastosowano uwagi z audytu Perplexity: szafirowy zamiast „jasnoniebieskiego" w
 Zastosowano: dopisano wyraźne ostrzeżenie z równaniem Cu(OH)₂ →(Δ) CuO + H₂O (czernienie ogrzanego osadu nie jest efektem działania glicerolu); dopisano wzór ogólny dioli CₙH₂ₙ₊₂O₂ z przykładem glikolu; dodano kartę „W skrócie” z tabelą liczby grup –OH i wyniku próby.
 
 Nieprzyjęte (sprawdzone w pliku): warunek „dwie lub więcej grup –OH przy sąsiednich atomach węgla” jest już w lekcji; barwa „szafirowa” jest już wszędzie, a określenie „jasnoniebieski” nie występuje; ogrzewanie nie jest częścią próby; sformułowanie o szybkości reakcji zależnej od liczby grup –OH nie występuje w lekcji, więc nie ma czego usuwać; zastrzeżenie, że próba nie rozróżnia każdego alkoholu w każdych warunkach, jest już w sekcji o wnioskach.
+
+## AUDYT W1/W2 — zewnętrzny, blok organiczny (2026-10-14)
+
+Zastosowano: brak zmian treści.
+
+Nieprzyjęte (sprawdzone w pliku): Spalanie 2C₃H₈O₃ + 7O₂ → 6CO₂ + 8H₂O jest zbilansowane (C 6, H 16, O 20), próba Cu(OH)₂ z zastrzeżeniem o sąsiednich grupach OH jest w lekcji. Nic do zmiany.

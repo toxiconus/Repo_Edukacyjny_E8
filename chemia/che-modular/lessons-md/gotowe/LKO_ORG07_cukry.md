@@ -418,3 +418,9 @@ fotosynteza :: endotermiczne budowanie glukozy z CO₂ i wody na świetle, przy 
 Zastosowano: brak zmian treści.
 
 Nieprzyjęte (sprawdzone w pliku): próba Trommera wymaga świeżo strąconego Cu(OH)₂, ogrzewania i daje ceglastoczerwony Cu₂O — jest w sekcji o próbach; sacharoza przed hydrolizą nie redukuje Cu(OH)₂ — jest w karcie „Dlaczego sacharoza nie redukuje”; fruktoza jako ketoza przechodzi w środowisku zasadowym w formy enolowe z grupą aldehydową, więc daje dodatnią próbę — jest w lekcji; fermentacja mlekowa jest w karcie rozszerzenia; rozróżnienie trzech prób (jod, Trommer, hydroliza) i tabela „Cukier — próba Trommera — dlaczego” są w lekcji; zadanie z próbami podaje obserwacje, nie tylko „dodatnia/ujemna”.
+
+## AUDYT W1/W2 — zewnętrzny, blok organiczny (2026-10-14)
+
+Zastosowano: brak zmian treści.
+
+Nieprzyjęte (sprawdzone w pliku): Sześć punktów audytu (obserwacja/wniosek, ogrzewanie w próbie Trommera, sacharoza przed hydrolizą, glukoza i fruktoza po hydrolizie, próba jodowa dla skrobi, wydajność względem właściwego produktu) jest spełnionych w lekcji: wydajność 80% stosowano do obu produktów (etanol 73,6 g, CO₂ 35,84 dm³). Nic do zmiany.

@@ -505,3 +505,9 @@ Zastosowano uwagi z audytu Perplexity:
 Zastosowano: dopisano zapis dysocjacji z jonem hydroniowym H₃O⁺ (z zastrzeżeniem, że zapis z H⁺ jest uproszczeniem); dodano kartę „W skrócie” z tabelą kwas octowy – kwas solny – etanol (oddawanie H⁺, odczyn, przewodnictwo).
 
 Nieprzyjęte (sprawdzone w pliku): wzór ogólny CₙH₂ₙ₊₁COOH jest już w lekcji (wraz z wyjaśnieniem n); uwaga o miedzi i zazielenieniu (powolne utlenianie z udziałem tlenu, nie wypieranie wodoru) jest już w sekcji o metalach; octan miedzi (CH₃COO)₂Cu i równania Mg i Zn są poprawne; równanie Cu + CH₃COOH nie jest zapisane jako reakcja, tylko jako zapis fałszywy.
+
+## AUDYT W1/W2 — zewnętrzny, blok organiczny (2026-10-14)
+
+Zastosowano: brak zmian treści.
+
+Nieprzyjęte (sprawdzone w pliku): Cztery schematy reakcji kwasu (z metalem, wodorotlenkiem, tlenkiem, węglanem) i uwaga o nazwach systematycznych (etanowy = octowy, butanowy = masłowy) są w lekcji. Nic do zmiany.
