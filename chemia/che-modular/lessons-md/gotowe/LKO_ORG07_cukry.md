@@ -424,3 +424,9 @@ Nieprzyjęte (sprawdzone w pliku): próba Trommera wymaga świeżo strąconego C
 Zastosowano: brak zmian treści.
 
 Nieprzyjęte (sprawdzone w pliku): Sześć punktów audytu (obserwacja/wniosek, ogrzewanie w próbie Trommera, sacharoza przed hydrolizą, glukoza i fruktoza po hydrolizie, próba jodowa dla skrobi, wydajność względem właściwego produktu) jest spełnionych w lekcji: wydajność 80% stosowano do obu produktów (etanol 73,6 g, CO₂ 35,84 dm³). Nic do zmiany.
+
+## AUDYT W1/W2 — kolejny przebieg zewnętrzny (2026-10-14)
+
+Zastosowano: brak zmian treści.
+
+Nieprzyjęte (sprawdzone w pliku): sześć pułapek z audytu jest w lekcji — próba jodowa dla skrobi, sacharoza nieredukująca przed hydrolizą, hydroliza do glukozy i fruktozy, Trommer z ogrzewaniem i zmianą osadu, bilans atomów w fermentacji, fotosynteza osobno w karcie „trzy drogi glukozy”. Rozdzielenie poziomu podstawowego i ambitnego jest w lekcji (poziomy E8/contest). Do osobnego przebiegu: pełna kontrola kluczy zadań.

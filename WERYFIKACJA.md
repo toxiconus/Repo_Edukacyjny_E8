@@ -227,3 +227,5 @@ Zasada: po każdym audycie surowa odpowiedź trafia do `<przedmiot>/plany/audyty
 | chemia | LKO-ORG06 | Estry | 2026-10-14 (zewnętrzny audyt organiczny) | bez zmian w tej paczce — rdzeń i reakcja twardej wody były | `chemia/plany/audyty/LKO_ORG03_08_audyt_2026-10-14.md` | — |
 | chemia | LKO-ORG07 | Cukry | 2026-10-14 (zewnętrzny audyt organiczny) | bez zmian — sześć punktów audytu spełnionych; wydajność 80% dla obu produktów | `chemia/plany/audyty/LKO_ORG03_08_audyt_2026-10-14.md` | — |
 | chemia | LKO-ORG08 | Mol i gazy | 2026-10-14 (zewnętrzny audyt organiczny) | dopisano sekcję „Najczęstsze pułapki” (5 punktów); wzory n, N, V i Vₘ były | `chemia/plany/audyty/LKO_ORG03_08_audyt_2026-10-14.md` | — |
+| chemia | LKO-ORG08 | Mol i gazy | 2026-10-14 (kolejny zewnętrzny audyt) | dopisano pułapkę reagenta ograniczającego; reszta była (procedura, woda jako ciecz, wzory) | `chemia/plany/audyty/LKO_ORG07_ORG08_audyt_kolejny_2026-10-14.md` | — |
+| chemia | LKO-ORG07 | Cukry | 2026-10-14 (kolejny zewnętrzny audyt) | bez zmian treści — sześć pułapek z audytu było w lekcji | `chemia/plany/audyty/LKO_ORG07_ORG08_audyt_kolejny_2026-10-14.md` | — |

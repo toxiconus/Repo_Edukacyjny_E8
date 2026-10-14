@@ -95,6 +95,7 @@ Drogi „na przełaj" — m → N i m → V — zawsze przez mol (dwa kroki). Ob
 - Pomijanie współczynników z równania: liczby moli i objętości gazów przeliczamy przez współczynniki.
 - Objętość przed liczbą moli: najpierw n z danych, potem V = n·Vₘ.
 - Wydajność stosujemy do właściwego etapu i właściwego produktu teoretycznego.
+- Brak sprawdzenia reagenta ograniczającego: przed liczeniem produktu porównaj liczby moli substratów z równania (ten, którego mniej w stosunku do współczynników, ogranicza reakcję).
 
 ::: karta understand | W skrócie — mapa konwersji w jednej karcie
 Gramy → mole: dziel przez M. Mole → gramy: mnoż przez M. Mole → cząstki: mnoż przez 6,02·10²³. Cząstki → mole: dziel przez 6,02·10²³. Mole → dm³ (gaz!): mnoż przez 22,4. dm³ → mole: dziel przez 22,4. Każde „dalekie" przejście = dwa kroki przez mol. Kontrola błędów: jednostki na każdym kroku i rząd wielkości (mol gazu to zawsze dziesiątki dm³, masa mola — dziesiątki–setki gramów).
@@ -371,3 +372,11 @@ gęstość absolutna :: masa jednostki objętości gazu: ρ = M/22,4 g/dm³ (war
 Zastosowano: dodano sekcję „Najczęstsze pułapki” z pięcioma punktami (masa molowa a masa próbki, Vₘ tylko dla gazów w warunkach normalnych, współczynniki, kolejność n → V, wydajność na właściwym etapie).
 
 Nieprzyjęte: wzory n = m/M, N = n·N_A, V = n·Vₘ, Vₘ = 22,4 dm³/mol w warunkach normalnych są w lekcji; pułapka wzorów elementarnych i pary wodnej jest już w ćwiczeniach.
+
+## AUDYT W1/W2 — kolejny przebieg zewnętrzny (2026-10-14)
+
+Zastosowano: dodano pułapkę „brak sprawdzenia reagenta ograniczającego” do listy pułapek.
+
+Nieprzyjęte (sprawdzone w pliku): procedura zadania (zbilansuj, przelicz na mole, użyj współczynników, przelicz na jednostkę, sprawdź fazę) jest w lekcji jako kroki przy zadaniu z gazami; zasada, że woda w warunkach normalnych jest cieczą, jest w lekcji; wzory n = m/M, N = n·N_A, V = n·Vₘ są poprawne.
+
+Do osobnego zadania (nie w tej lekcji): test przekrojowy ORG01–ORG08 i zestaw mieszany — poza zakresem tego audytu.
