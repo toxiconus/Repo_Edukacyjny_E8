@@ -10,7 +10,7 @@ poglebia: "LKO-ORG07; LKO-ORG08"
 wlasciciel: "chemia olimpijska LKO"
 zrodla: "Zakres olimpiady kuratoryjnej (etap III) + podstawa programowa"
 opis: "Estry jako produkty kwasów i alkoholi: estryfikacja z odszczepieniem wody, rola H₂SO₄ stężonego, zapachy owoców, hydroliza i mydlenie tłuszczów."
-stan: "W1 FULL — Perplexity, 2026-10-13; uzupełnienie zewnętrznego audytu — Claude Haiku 5.5, 2026-10-14"
+stan: "W1 FULL — Perplexity, 2026-10-13; uzupełnienie zewnętrznego audytu i brakujących rachunków — Claude Haiku 5.5, 2026-10-14"
 kicker: "ORG06 · estry"
 lead: "Zapachy banana, ananasa i gruszki w dużej mierze pochodzą od estrów: kwas + alkohol − woda = ester. Reakcja, która pachnie owocami i myje ręce mydłem."
 plakietki: ["estry", "estryfikacja"]
@@ -230,6 +230,25 @@ Tłuszcz + 3CH₃OH ⇌(kat. zasada) 3 estry metylowe kwasów tłuszczowych + gl
 **Bezpieczeństwo:** H₂SO₄ stężony — silnie żrący, dolewać powoli do alkoholu (nie odwrotnie!), przy stole z wyciągiem; etanol i ester — palne, lotne ciecze; zero otwartego ognia, łaźnia wodna zamiast palnika nad probówką; pary estrów nie wdychać bezpośrednio; mieszankę po doświadczeniu najpierw zneutralizować (np. sodą), a dopiero potem zutylizować do pojemnika na odpady organiczne; H₂SO₄ rozcieńczać przez powolne wlewanie kwasu do wody.
 :::
 
+## 4a | Bilans masy, wydajność i rachunki
+
+::: karta exam | Przykład — masa estru
+Zmieszano 6,0 g kwasu octowego i 4,6 g etanolu. Załóż pełne przereagowanie substratu ograniczającego.
+n(CH₃COOH) = 6,0/60 = 0,10 mol; n(C₂H₅OH) = 4,6/46 = 0,10 mol. Stosunek 1:1, więc powstaje 0,10 mol octanu etylu.
+m(estru) = 0,10 · 88 = **8,8 g**; m(wody) = 0,10 · 18 = **1,8 g**.
+Kontrola: 8,8 + 1,8 = 10,6 g = 6,0 + 4,6 ✓.
+:::
+
+::: karta core | Wydajność
+W praktyce estryfikacja nie zachodzi całkowicie. Wydajność: η = m_rzeczywista / m_teoretyczna · 100%. Można też używać moli, jeśli porównujemy tę samą substancję.
+:::
+
+::: karta exam | Przykład — wydajność
+Teoretycznie można otrzymać 8,8 g octanu etylu, a rzeczywiście otrzymano 6,6 g.
+η = 6,6/8,8 · 100% = **75%**.
+Pozostałe kwas i alkohol nie muszą oznaczać błędu: część substratów została, bo reakcja jest odwracalna.
+:::
+
 ## 5 | Zadania {#zadania}
 
 ::: karta exam | Zadanie 1 (4 pkt) — Definicja i nazewnictwo
@@ -343,6 +362,14 @@ W wodzie zawierającej 0,01 mol CaCl₂ rozpuszczono nadmiar stearynianu sodu C�
 (a) 2C₁₇H₃₅COONa + CaCl₂ → (C₁₇H₃₅COO)₂Ca↓ + 2NaCl (1 pkt). (b) n = 0,02 mol; m = 0,02 · 306 = 6,12 g (1 pkt). (c) n(osadu) = 0,01 mol; m = 0,01 · 606 = 6,06 g (2 pkt). (d) Jony Ca²⁺ wiążą anion mydła w nierozpuszczalną sól, więc mydło ubywa z roztworu (1 pkt).
 :::
 
+::: adv | Zadanie 7 — wydajność i bilans | poziom ambitny
+W reakcji 12,0 g kwasu octowego z 9,2 g etanolu otrzymano 14,08 g octanu etylu. Oblicz wydajność reakcji.
+
+::: odp | Pokaż klucz
+n(kwasu) = 0,20 mol, n(etanolu) = 0,20 mol → teoretycznie 0,20 mol estru = 0,20 · 88 = 17,6 g. η = 14,08/17,6 · 100% = **80%**.
+:::
+:::
+
 ## 7 | Fiszki
 
 ::: fiszki
@@ -402,6 +429,14 @@ Kwas butanowy vs octan etylu? | izomery funkcjonalne — wspólny wzór C₄H₈
 + wrze niżej, bo nie tworzy wiązań wodorowych między cząsteczkami
 - ma ten sam odczyn
 ! Kwas ma grupę –COOH, która tworzy wiązania wodorowe; ester ich nie tworzy z sobą, więc wrze niżej.
+:::
+
+## 8a | Dodatkowe pułapki
+
+::: karta error | Pułapki rachunkowe
+- Obliczanie substratu ograniczającego na podstawie mas zamiast moli.
+- Mylenie hydrolizy estru z jego spalaniem.
+- Założenie, że każda estryfikacja daje 100% produktu.
 :::
 
 ## 9 | Słownik
