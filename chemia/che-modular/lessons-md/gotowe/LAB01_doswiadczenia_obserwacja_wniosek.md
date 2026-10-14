@@ -4,11 +4,10 @@ tytul: Doświadczenia
 opis: doświadczenie chemiczne · format protokołu · obserwacja vs wniosek · sprzęt laboratoryjny · BHP · typy doświadczeń · dokumentowanie · próba kontrolna · błędy pomiarowe
 kicker: LAB01 · CHEMIA · Laboratorium · E8 / KONKURS
 lead: Nauczysz się projektować, wykonywać i dokumentować doświadczenia chemiczne tak, jak wymaga tego egzamin ósmoklasisty i konkurs przedmiotowy — od problemu badawczego po wniosek, z pełnym BHP i rozróżnieniem faktu od interpretacji.
-lead: format doświadczenia · obserwacja ≠ wniosek · protokół · sprzęt · BHP · typy doświadczeń · próba kontrolna · dokumentowanie błędów
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]][[extra:AMBITNE]]
 uwaga: Zakres podstawy programowej klasy 7–8 oraz typowe zadania konkursowe; liczby w przykładach (pH, współczynniki) są orientacyjne i służą ilustracji.
 stopka: **CHEMIA LAB01 v1.0** · Doświadczenia · 2026
-stan: WYPEŁNIONY — Grok 4.5 (paczka GOTOWE NAPISZ) + Claude (katalog doświadczeń, zadania 9–14), 2026-10-12; do W1
+stan: W1/W2 — uzupełnienia zewnętrznego audytu 2026-10-14 (zmienne i próby kontrolne, procedura po wypadku, tabela błędów zapisu, audyt wiarygodności, fiszki); W1 FULL do wykonania
 ---
 
 ::: minimum | Muszę umieć — 10 punktów
@@ -165,9 +164,22 @@ Problem → Hipoteza → Sprzęt → Obserwacja → Wniosek → Równanie → BH
 Hipoteza to przewidywanie, które sprawdzamy. Może być fałszywa — i to jest w porządku. Bez hipotezy nie wiemy, co weryfikujemy. Fałszywa hipoteza często uczy więcej niż potwierdzona.
 :::
 
+### Problem, zmienne i próba kontrolna
+
+W doświadczeniu rozróżniamy:
+
+- **zmienną niezależną** — czynnik, który celowo zmieniamy;
+- **zmienną zależną** — wielkość lub efekt, który obserwujemy albo mierzymy;
+- **zmienne kontrolowane** — warunki, które utrzymujemy takie same;
+- **próbę kontrolną** — układ porównawczy bez badanego czynnika.
+
+Przykład: badamy, czy temperatura wody wpływa na czas rozpuszczania cukru. Zmienna niezależna: temperatura wody. Zmienna zależna: czas rozpuszczania. Zmienne kontrolowane: masa cukru, objętość wody, naczynie, mieszanie. Próba kontrolna: woda o temperaturze pokojowej. Nie wolno jednocześnie zmieniać temperatury, ilości cukru i mieszania — nie będzie wiadomo, który czynnik dał wynik.
+
+Przykład chemiczny: chcesz sprawdzić, czy ciecz zawiera wodę za pomocą bezwodnego CuSO₄. Próba badana: ciecz + biały CuSO₄. Kontrola dodatnia: znana woda — proszek zmienia barwę na niebieską. Kontrola ujemna: ciecz wiadomie bez wody. Niebieska barwa w próbie badanej wskazuje na wodę, ale trzeba wykluczyć zanieczyszczenie próbki.
+
 ## 3 | Obserwacja a wniosek {#obserwacja-wniosek} [[basic:E8]] [[understand:ROZUMIENIE]]
 
-**Obserwacja** — fakt zmysłowy: to, co widzimy, słyszymy, czujemy (zapach metodą wachlowania), bez interpretacji.
+**Obserwacja** — opis tego, co można bezpośrednio stwierdzić wzrokiem, słuchem lub bezpiecznym pomiarem (zapach tylko metodą wachlowania; nie dotykamy i nie smakujemy substancji), bez interpretacji.
 
 **Wniosek** — interpretacja obserwacji, wynik rozumowania.
 
@@ -197,6 +209,16 @@ Przykłady:
 ::: karta warning | Pułapka egzaminacyjna
 Na egzaminie często proszą o „obserwację”. Uczeń pisze „powstał tlenek” albo „wydzielił się wodór” i traci punkt. Zawsze najpierw fakt zmysłowy, potem osobno wniosek.
 :::
+
+### Jak zapisać dobrą obserwację?
+
+Dobra obserwacja jest:
+
+- konkretna: „roztwór zmienił barwę z niebieskiej na jasnozieloną”;
+- bez nazwy produktu: nie „powstał CuCl₂”, lecz „pojawił się biały osad”;
+- bez wyjaśnienia przyczyny: nie „zaszła reakcja zobojętniania”, lecz „zanikła malinowa barwa fenoloftaleiny”;
+- kompletna: barwa, wygląd osadu, wydzielanie gazu, zmiana temperatury;
+- zgodna z tym, co widać: jeśli nic się nie zmieniło, napisz „nie zaobserwowano widocznych zmian”.
 
 ## 4 | Sprzęt laboratoryjny {#sprzet} [[basic:E8]]
 
@@ -265,6 +287,16 @@ Historycznie pipetowano ustami. Dziś jest to całkowicie niedopuszczalne — ry
 Nigdy nie wlewamy niewykorzystanego odczynnika z powrotem do butelki. Zanieczyszczamy wtedy cały zapas. Nadmiar trafia do odpadów zgodnie z instrukcją.
 :::
 
+### Co zrobić po wypadku?
+
+- Kontakt substancji ze skórą: natychmiast spłucz dużą ilością wody i zgłoś to nauczycielowi lub opiekunowi.
+- Kontakt z oczami: płucz oczy nieprzerwanie wodą, nie pocieraj ich i natychmiast zgłoś wypadek.
+- Rozlanie substancji: nie sprzątaj samodzielnie nieznanej lub żrącej substancji; odsuń się i zgłoś problem.
+- Skaleczenie szkłem: nie zbieraj odłamków ręką; użyj odpowiedniego sprzętu albo zgłoś wypadek.
+- Pożar: odsuń palne materiały, wyłącz źródło ciepła, powiadom opiekuna i postępuj zgodnie z instrukcją pracowni.
+
+BHP ma pierwszeństwo przed wynikiem doświadczenia. Jeśli wykonanie procedury jest niebezpieczne, doświadczenia nie wykonuj samodzielnie.
+
 ## 6 | Typy doświadczeń i wykrywanie {#typy} [[basic:E8]] [[understand:ROZUMIENIE]]
 
 | Typ | Cel | Przykład |
@@ -292,7 +324,7 @@ Czas przepuszczania gazu i jego ilość wpływają na wynik — stąd znaczenie 
 
 ::: karta understand | W skrócie — próba kontrolna i ślepa
 **Próba kontrolna** — doświadczenie bez badanej zmiennej. Pozwala ustalić, czy efekt pochodzi od tej zmiennej.  
-**Ślepa próba** — bez badanej substancji (kontrola odczynnika). Pozwala wykluczyć wpływ samych odczynników.
+**Ślepa próba** — próba z samymi odczynnikami i rozpuszczalnikiem, bez badanej substancji. Pozwala wykluczyć wpływ odczynnika lub procedury. Nie myl jej z próbą kontrolną, w której badany czynnik jest po prostu nieobecny.
 :::
 
 ::: karta extra | Ciekawostka — powtarzalność
@@ -330,7 +362,7 @@ Sprzęt: rozcieńczony HCl, papierek uniwersalny, probówka.
 Przebieg: Zanurzyć papierek w roztworze, porównać z wzorcem.  
 Obserwacja: Papierek przyjmuje barwę czerwoną (orientacyjnie pH ≈ 1).  
 Wniosek: Roztwór HCl ma odczyn kwasowy.  
-Równanie: HCl → H⁺ + Cl⁻ (w wodzie)  
+Równanie: HCl → H⁺ + Cl⁻ (w uproszczeniu); dokładniej HCl + H₂O → H₃O⁺ + Cl⁻  
 BHP: Okulary; HCl żrący — nie smakować, nie wąchać bezpośrednio.
 :::
 
@@ -480,6 +512,17 @@ Roztwór jodu w jodku potasu opisał w 1829 r. francuski lekarz Jean Lugol — p
 „Jeden wynik = prawo.” || Nie. Jeden wynik w konkretnych warunkach nie stanowi prawa. Potrzebna powtarzalność i kontrole.
 „Wszystkie odczynniki można wąchać i smakować.” || Absolutnie nie. Żaden odczynnik laboratoryjny nie jest do smakowania; zapach tylko wachlowaniem i za zgodą prowadzącego.
 :::
+
+### Błędy w zapisie doświadczeń
+
+| Błędny zapis | Co jest nie tak? | Poprawa |
+|---|---|---|
+| „Obserwacja: powstał wodór” | To wniosek, nie fakt zmysłowy. | „Pojawiły się pęcherzyki; gaz dał charakterystyczny trzask przy płomieniu”. |
+| „Woda wapienna jest biała” | Opisano odczynnik, nie zmianę. | „Bezbarwna woda wapienna zmętniała i pojawił się biały osad”. |
+| „Zaszła reakcja zobojętniania” | To interpretacja. | „Malinowa barwa fenoloftaleiny zniknęła”. |
+| „Wydzielił się chlor, bo był żółtozielony” | Sama barwa może nie wystarczyć do identyfikacji. | Podaj obserwację i dodatkową próbę potwierdzającą, jeśli jest wymagana. |
+| „Nie było wyniku” | Zbyt ogólne. | „Po 2 minutach nie zaobserwowano zmiany barwy ani osadu”. |
+| „Dodano dużo odczynnika” | Brak ilości utrudnia powtórzenie. | Podaj objętość, liczbę kropli albo przybliżoną masę. |
 
 ## 9 | Zadania konkursowe i ambitne {#zadania-konkursowe} [[exam:KONKURS]] [[extra:AMBITNE]]
 
@@ -772,6 +815,24 @@ Wskaźnik: papierek uniwersalny (lub kolejno fenoloftaleina i oranż metylowy), 
 ! SDS = Safety Data Sheet — warstwa ambitna BHP.
 :::
 
+## 11a | Audyt wiarygodności doświadczenia {#audyt-wiarygodnosci} [[exam:KONKURS]]
+
+Przed zaakceptowaniem wyniku zadaj pięć pytań:
+
+1. Czy problem jest sformułowany jako pytanie, a nie gotowy wniosek?
+2. Czy zmieniono tylko jeden główny czynnik?
+3. Czy istniała odpowiednia próba kontrolna?
+4. Czy obserwacja jest zapisana bez interpretacji?
+5. Czy wynik da się powtórzyć i czy zapisano odstępstwa od procedury?
+
+**Trzy poziomy wiarygodności:**
+
+- **Wynik niepewny:** pojedyncza obserwacja, brak kontroli, nieznane ilości.
+- **Wynik częściowo wiarygodny:** procedura opisana, ale brak powtórzeń lub kontroli.
+- **Wynik wiarygodny:** kontrolowane warunki, próba kontrolna, powtórzenia, dokładny opis i zgodność z równaniem reakcji.
+
+Wniosek nie może być szerszy niż dane. Dodatni wynik próby na skrobię nie dowodzi, że próbka zawiera wyłącznie skrobię.
+
 ## 12 | Fiszki · Słownik · Mapa · Ściąga {#fiszki}
 
 ::: fiszki
@@ -800,6 +861,9 @@ Błąd losowy | Przypadkowy (drgania, odczyt) | olimpijski:bledy
 Błąd gruby | Pomyłka (zła jednostka) | olimpijski:bledy
 Powtarzalność | Inni uzyskują podobne wyniki w tych samych warunkach | olimpijski:metoda
 SDS | Karta charakterystyki substancji | olimpijski:bhp
+Zmienna niezależna | czynnik celowo zmieniany w doświadczeniu | basic:metoda
+Zmienna zależna | efekt obserwowany lub mierzony | basic:metoda
+Zmienna kontrolowana | warunek utrzymywany bez zmian | understand:metoda
 Reakcja Mg + HCl | Mg + 2HCl → MgCl₂ + H₂ | basic:reakcje
 Wykrywanie tlenu | żarzące się łuczywo rozpala się | basic:wykrywanie
 Wykrywanie wody | bezwodny CuSO₄ — z białego na niebieski | basic:wykrywanie
@@ -920,3 +984,26 @@ Po opanowaniu formatu, obserwacji, BHP i dokumentowania jesteś gotowy do pracy 
 
 ### Uzupełnienia Claude, 2026-10-12 {#uzupelnienia-claude}
 Wersja Groka była krótka (ok. 41 KB, bez zbiorczego katalogu doświadczeń z priorytetu C4). Dodano: §7a — katalog 20 doświadczeń egzaminacyjnych w trójkach obserwacja → wniosek → równanie (gazy, tlenki i odczyn, osady i metale z solami, woda/roztwory/białka/korozja), mini-wykład o pisaniu obserwacji, `nie-myl` wskaźników, Doświadczenie 9 (korozja z próbami kontrolnymi), 2 ciekawostki (Joseph Black, Jean Lugol); zadania 9–14; +4 pytania testu, +9 fiszek, +5 haseł słownika, +2 pozycje checklisty. Poprawki: diagnoza ujęta w blok `::: test`, powtórzone pytanie o BHP w diagnozie przeformułowane, w formacie dopisany opis wykonania / schemat.
+
+### AUDYT W1/W2 — zewnętrzny (2026-10-14)
+
+Zastosowano (po sprawdzeniu w pliku):
+- usunięto zduplikowany klucz `lead:` (był dwa razy);
+- stan lekcji zmieniono na stan audytu, bez deklaracji „W1 FULL”;
+- definicję obserwacji poprawiono: bez „czujemy”, z zasadą nieprzyjmowania substancji do ust i dotykania;
+- dodano blok „Problem, zmienne i próba kontrolna” (zmienna niezależna, zależna, kontrolowane, próba kontrolna, przykłady);
+- dodano „Jak zapisać dobrą obserwację?”;
+- doprecyzowano „ślepą próbę” i odróżniono ją od próby kontrolnej;
+- dopisano dokładniejsze równanie HCl + H₂O → H₃O⁺ + Cl⁻ (przy uproszczeniu zostawiono H⁺);
+- dodano „Co zrobić po wypadku?” (kontakt ze skórą i oczami, rozlanie, skaleczenie, pożar);
+- dodano tabelę „Błędy w zapisie doświadczeń” (sześć wierszy);
+- dodano sekcję „Audyt wiarygodności doświadczenia” z trzema poziomami wiarygodności;
+- dodano fiszki: zmienna niezależna, zależna, kontrolowana.
+
+Nieprzyjęte (sprawdzone, już obecne lub błędne w audycie):
+- „brak równań z indeksami” — równania z indeksami dolnymi są w katalogu 7a;
+- „brak uwagi o CO₂ w próbie wapiennej” — uwaga o zmętnieniu jest w sekcji o typach doświadczeń;
+- „brak notatki o błędach systematycznych/losowych” — obecne w sekcji o błędach pomiaru;
+- „brak wpisu o ślepej próbie” — był, zdanie doprecyzowano zamiast dublować.
+
+Do zrobienia: pełny W1 FULL linia po linii (bez tego lekcja nie dostaje oznaczenia FULL).
