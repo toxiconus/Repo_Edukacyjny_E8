@@ -430,3 +430,9 @@ Nieprzyjęte (sprawdzone w pliku): Sześć punktów audytu (obserwacja/wniosek, 
 Zastosowano: brak zmian treści.
 
 Nieprzyjęte (sprawdzone w pliku): sześć pułapek z audytu jest w lekcji — próba jodowa dla skrobi, sacharoza nieredukująca przed hydrolizą, hydroliza do glukozy i fruktozy, Trommer z ogrzewaniem i zmianą osadu, bilans atomów w fermentacji, fotosynteza osobno w karcie „trzy drogi glukozy”. Rozdzielenie poziomu podstawowego i ambitnego jest w lekcji (poziomy E8/contest). Do osobnego przebiegu: pełna kontrola kluczy zadań.
+
+## AUDYT W1/W2 — wynik zewnętrzny (2026-10-14)
+
+Zastosowano: brak zmian treści.
+
+Nieprzyjęte: oznaczenie „W1 FULL” nie zostało wprowadzone — pełny przegląd linia po linii nie był wykonany, a stan lekcji pozostaje „bez audytu W1”. Sprawdzone: masy molowe glukozy (180 g/mol) i sacharozy (342 g/mol), nazwa „węglowodany” z wyjaśnieniem wzoru Cₙ(H₂O)ₘ, próba Trommera i próba jodowa.
