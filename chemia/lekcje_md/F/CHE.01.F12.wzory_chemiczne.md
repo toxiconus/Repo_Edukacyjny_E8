@@ -456,6 +456,113 @@ CuSO₄·5H₂O ma niebieski kolor, a po podgrzaniu traci wodę i staje się bia
 Analiza składu procentowego pozwala ustalić wzór empiryczny, nawet gdy nie wiadomo, jaka jest cząsteczka. Dopiero dodatkowa informacja o masie pozwala przejść do wzoru sumarycznego. (ogólna wiedza chemiczna)
 :::
 
+<!-- przywrócone z 3d5fd86 (przed przebudową), wartości mas poprawione -->
+## Diagnoza startowa
+
+1. Co to indeks dolny?
+2. Co to współczynnik?
+3. Kiedy używać nawiasu?
+4. Zapisz wzór tlenku glinu.
+5. Dlaczego Ca(OH)₂ ma nawias?
+
+**Odpowiedzi:**
+1. Liczba atomów w cząsteczce.
+2. Liczba cząsteczek w równaniu.
+3. Gdy grupa powtarza się > 1 raz.
+4. Al₂O₃.
+5. Bo OH⁻ występuje 2 razy.
+
+---
+
+---
+
+## Sprawdzenie diagnostyczne
+
+Test nie jest celem lekcji. Wybierz tylko te zadania, które pokazują, czy uczeń opanował definicję, procedurę i kontrolę wyniku.
+
+1. Zapisz wzory: tlenek wapnia, tlenek żelaza(III), tlenek siarki(VI).
+2. Nazwij: Al₂O₃, N₂O₅, CuO, SO₂.
+3. Zapisz wzory: wodorotlenek wapnia, wodorotlenek glinu, siarczan(VI) sodu.
+4. Popraw: CaOH₂; FeO₃; AlSO₄.
+5. Oblicz masę cząsteczkową H₂O i H₂SO₄.
+6. (extra) Co to hydrat? Podaj przykład.
+7. (extra) Zapisz wzór azotanu(V) ołowiu(II).
+8. (extra) Ile atomów tlenu jest w 2Al₂(SO₄)₃?
+
+---
+
+---
+
+## Checklista
+
+| Temat | Musisz umieć |
+|-------|--------------|
+| Wzór sumaryczny | definicja, przykłady |
+| Wzór strukturalny | definicja, przykłady |
+| Wzór elektronowy | definicja, przykłady |
+| Indeks, współczynnik, nawias | rozróżnienie |
+| W–K–S–K | algorytm |
+| Grupy atomów | wartościowości, przykłady |
+| Masa cząsteczkowa | obliczanie |
+| Hydraty | zapis, przykłady (ambitnie) |
+
+---
+
+---
+
+## Definicje jednym zdaniem
+
+| Pojęcie | Definicja |
+|---------|-----------|
+| Wzór sumaryczny | Zapis liczby atomów pierwiastków w substancji. |
+| Wzór strukturalny | Zapis połączeń między atomami. |
+| Indeks dolny | Liczba atomów w cząsteczce. |
+| Współczynnik | Liczba cząsteczek w równaniu. |
+| Grupa atomów | Kilka atomów działających jak jeden klocek. |
+| Hydrat | Sól z wodą krystalizacyjną. |
+
+---
+
+---
+
+## Szybka ściąga do wydruku
+
+```
+WZORY CHEMICZNE
+SUMARYCZNY: H₂O, CO₂, Al₂O₃, Ca(OH)₂
+STRUKTURALNY: H–O–H, O=C=O
+ELEKTRONOWY: H:O:H, :Cl:Cl:
+
+W–K–S–K:
+1. Wartościowości (I, II, III, IV...)
+2. Krzyżowanie
+3. Skracanie (NWD)
+4. Kontrola (suma ładunków = 0)
+
+INDEKS vs WSPÓŁCZYNNIK vs NAWIAS:
+- indeks: H₂O (2 atomy H)
+- współczynnik: 3H₂O (3 cząsteczki = 6 H)
+- nawias: Ca(OH)₂ (2 całe grupy OH)
+
+GRUPY ATOMÓW:
+OH⁻ (I), NO₃⁻ (I), SO₄²⁻ (II), CO₃²⁻ (II),
+PO₄³⁻ (III), NH₄⁺ (I)
+
+MASY:
+H₂O = 18 u; CO₂ = 44 u; NaCl = 58,5 u;
+H₂SO₄ = 98 u; Ca(OH)₂ = 74 u; Al₂O₃ = 102 u
+
+PUŁAPKI:
+- CaOH₂ ✗ → Ca(OH)₂ ✓
+- FeO₃ ✗ → Fe₂O₃ ✓
+- AlSO₄ ✗ → Al₂(SO₄)₃ ✓
+- Ca₂O₂ ✗ → CaO ✓
+```
+
+---
+
+---
+
 ## Źródła
 
 - ZPE, „Interpretacja zapisów chemicznych”: indeks stechiometryczny, współczynnik, zapis związku jonowego jako najmniejszego zbioru jonów obojętnego elektrycznie, przykłady AlCl₃, K₂S, NaCl, nawias w Ca₃(PO₄)₂. Adres: https://zpe.gov.pl/a/interpretacja-zapisow-chemicznych/D1aAjQsf

@@ -23,7 +23,7 @@ C nie zawsze znaczy stratę: część to świadome przebudowy, w których poprze
 | chemia | CHE.01.F03.wlasciwosci_i_rozdzielanie_mieszanin | 28.7 | 41.4 | 3d5fd86 2026-10-12 |  |
 | chemia | CHE.01.F04.atom | 21.3 | 40.2 | 3d5fd86 2026-10-12 |  |
 | chemia | CHE.01.F09.wartosciowosc_ladunek_i_stopien_utlenien | 39.7 | 107.4 | 2e02c59 2026-10-12 | W1 — GPT-6, 2026-10-09; poprawki audytu wprowadzon |
-| chemia | CHE.01.F12.wzory_chemiczne | 27.7 | 126.9 | 3d5fd86 2026-10-12 | W1 — GPT-6, 2026-10-09; poprawki audytu wprowadzon |
+| chemia | CHE.01.F12.wzory_chemiczne | 30.3 | 126.9 | 3d5fd86 2026-10-12 | W1 — GPT-6, 2026-10-09; poprawki audytu wprowadzon |
 
 ## A — najpełniejsze (pewne)
 
