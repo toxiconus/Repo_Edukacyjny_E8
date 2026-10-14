@@ -10,7 +10,7 @@ poglebia: "LKO-ORG06; LKO-ORG07; LKO-ORG08"
 wlasciciel: "chemia olimpijska LKO"
 zrodla: "Zakres olimpiady kuratoryjnej (etap III) + podstawa programowa"
 opis: "Kwasy karboksylowe C1–C3: grupa –COOH, słaba dysocjacja i kwaśny odczyn, cztery drogi reakcji (metale, tlenki, zasady, węglany) — z pełną stechiometrią."
-stan: "W1 FULL — Perplexity, 2026-10-13"
+stan: "W1 FULL — Perplexity, 2026-10-13; uzupełnienie 2026-10-14 (weryfikacja drugiego audytu, przykład stechiometryczny)"
 kicker: "ORG05 · kwasy karboksylowe"
 lead: "Grupa –COOH łączy wiązanie C=O i grupę –OH na jednym węglu. Kwas octowy reaguje z metalami, tlenkami, zasadami i węglanami — ale nie z miedzią. Sprawdź dlaczego."
 plakietki: ["kwasy karboksylowe", "kwas octowy"]
@@ -450,6 +450,24 @@ kwasy tłuszczowe :: dalsze homologi kwasów karboksylowych (np. stearynowy C₁
 - **ORG05:** rysunek grupy –COOH zamieniony na zapis strukturalny w tekście (bez grafiki); ewentualną grafikę z opisem @viz — do decyzji autora przy scalaniu.
 - **ORG05:** zakładana pozycja kart `odp` jako siostrzanych po kartach zadań (konwencja N01/REV01) — przy scalaniu dostosować.
 
+## Własne przykłady (W1, 2026-10-14)
+
+::: karta exam | Przykład W1-1 (E8) — kwas octowy i wodorotlenek sodu: ile octanu?
+Do 12 g kwasu octowego dodano nadmiar wodorotlenku sodu. Oblicz masę powstałego octanu sodu. Zapisz równanie i wszystkie kroki.
+:::
+
+::: odp | Pokaż klucz
+CH₃COOH + NaOH → CH₃COONa + H₂O. M(CH₃COOH) = 60 g/mol → n = 12 / 60 = 0,2 mol. Stosunek kwasu do octanu 1 : 1, więc n(CH₃COONa) = 0,2 mol. M(CH₃COONa) = 82 g/mol → m = 0,2 · 82 = **16,4 g** (3 pkt: n kwasu, stosunek 1 : 1, masa octanu).
+:::
+
+::: karta exam | Przykład W1-2 (ambitny) — dwa sposoby na ten sam wynik
+Ten sam kwas octowy (12 g) reaguje z nadmiarem węglanu sodu. Ile dm³ CO₂ (warunki normalne) wydzieli się? Porównaj z wynikiem z przykładu W1-1: dlaczego ilości różnią się?
+:::
+
+::: odp | Pokaż klucz
+2CH₃COOH + Na₂CO₃ → 2CH₃COONa + H₂O + CO₂. n(CH₃COOH) = 0,2 mol → n(CO₂) = 0,1 mol (stosunek 2 : 1) → V = 0,1 · 22,4 = **2,24 dm³** (3 pkt). Różnica: w przykładzie W1-1 kwas reaguje z zasadą bez wydzielania gazu, tu z węglanem gaz się wydziela, a stosunek reagentów jest inny (2 : 1, nie 1 : 1).
+:::
+
 ## AUDYT W1 — audyt 05 (2026-10-13)
 
 Zastosowano uwagi z audytu Perplexity:
@@ -463,3 +481,11 @@ Zastosowano uwagi z audytu Perplexity:
 - Propozycja zmiany warstwy „Mg, NaHCO₃” na „Mg, Na₂CO₃” — nieprzyjęta: zamiast tego NaHCO₃ wprowadzono w treści (U5), więc warstwa zgodna z lekcją.
 - Rysunek ASCII — zamieniony na zapis strukturalny w tekście, nie na grafikę z @viz (decyzja do podjęcia przy scalaniu; w pliku nie ma już bloku kodu).
 - Uwaga „0,5 pkt niezgodne z CKE” — przyjęta w wersji całkowitej punktacji; przy zadaniu 5 (c) i (d) połączono w jeden punkt.
+
+## AUDYT W1 — uzupełnienie, weryfikacja drugiego audytu (Claude Haiku 5.5, 2026-10-14)
+
+- Sprawdzono równania, masy molowe i rachunki z drugiego audytu: poprawne (bilans spalania CH₃COOH + 2O₂ → 2CO₂ + 2H₂O, fermentacja octowa, 16,4 g octanu sodu, Zadanie 2 z Mg i kwasem solnym/octowym).
+- Dodano: przykłady W1-1 (12 g kwasu → 16,4 g octanu sodu) i W1-2 (wydzielanie CO₂ z węglanem sodu, 2,24 dm³).
+- Już obecne w lekcji (nie dodawano): wzór CₙH₂ₙO₂, pułapka mas molowych kwasu metanowego i etanolu, karta obserwacja–wniosek, typowe błędy.
+- Nieprzyjęte: pełny mechanizm dysocjacji kwasów karboksylowych i fermentacji octowej — poza rdzeniem lekcji.
+- Nic nie usunięto.
