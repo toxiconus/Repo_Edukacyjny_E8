@@ -10,7 +10,7 @@ poglebia: "LKO-ORG04; LKO-ORG07; LKO-ORG08"
 wlasciciel: "chemia olimpijska LKO"
 zrodla: "Zakres olimpiady kuratoryjnej (etap III) + podstawa programowa"
 opis: "Alkohole C1–C3: grupa hydroksylowa, odczyn obojętny, reakcja z sodem jako dowód –OH oraz spalanie — z pełną stechiometrią mol, gram, dm³."
-stan: "W1 (zewnętrzny audyt 2026-10-14, zweryfikowany; bez pełnego promptu — brak nowego wykładu i ciekawostek)"
+stan: "W1 (zewnętrzny audyt 2026-10-14, zweryfikowany; bez pełnego promptu) — wykład w sekcjach 1–4, 4 ciekawostki, 4 mini-wykłady „W skrócie”"
 kicker: "ORG03 · alkohole"
 lead: "Grupa –OH zmienia węglowodór w zupełnie nową rodzinę: miesza się z wodą, reaguje z sodem i pali się czystym niebieskim płomieniem."
 plakietki: ["alkohole", "etanol"]
@@ -350,4 +350,4 @@ Surowa odpowiedź i tabela weryfikacji: `chemia/plany/audyty/LKO_ORG03_audyt_W1_
 
 **Sprawdzono bez zmian (poprawne):** wzory i masy molowe (32, 46, 60 g/mol); bilanse spalania metanolu, etanolu i propanolu; stechiometria etanolu (96 g $$O_2$$, 88 g $$CO_2$$, 54 g $$H_2O$$; 67,2 i 44,8 dm³); zadanie A (0,20 mola etanolu, 2,24 dm³ $$H_2$$); fiszki.
 
-**Nieprzyjęte:** brak treści usuwającej materiał; brak nowego wykładu i ciekawostek (odpowiedź zewnętrzna ich nie zawierała) — do osobnej tury W1 FULL; mechanizm reakcji z sodem i nomenklatura rozgałęzionych — poza zakresem C1–C3.
+**Nieprzyjęte:** brak treści usuwającej materiał; wykład (sekcje 1–4), 4 mini-wykłady i 4 ciekawostki są już w lekcji (odpowiedź zewnętrzna ich nie uwzględniła) — pełna tura W1 FULL z promptem jeszcze do wykonania; mechanizm reakcji z sodem i nomenklatura rozgałęzionych — poza zakresem C1–C3.

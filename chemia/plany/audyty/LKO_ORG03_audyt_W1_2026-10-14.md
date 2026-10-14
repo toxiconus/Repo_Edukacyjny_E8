@@ -607,3 +607,5 @@ Sprawdzono każdą liczbę i bilans w odpowiedzi oraz porównano z `chemia/che-m
 Wprowadzono do lekcji: zadanie B (błędy w zapisie), procedurę bilansowania z przykładem $$x=3$$, wyjaśnienie pułapki „OH = zasada”.
 
 Nieprzyjęte: brak usuwania treści (odpowiedź nie wskazała merytorycznie błędnych fragmentów w lekcji); brak wykładu i ciekawostek — do osobnej tury W1 FULL; mechanizm i nomenklatura rozgałęzionych — poza zakresem.
+
+> **Korekta 2026-10-14:** odpowiedź zewnętrzna pisze „brak wykładu i ciekawostek”. W lekcji są: wykład w sekcjach 1–4, 4 mini-wykłady „W skrócie” i 4 ciekawostki (karty extra). Zapis w lekcji poprawiono.
