@@ -82,6 +82,10 @@ Reszta alkilowa to fragment alkoholu bez grupy –OH: z etanolu — etylowa (–
 
 **Nazewnictwo** działa jak nazwy soli: najpierw nazwa „solna" kwasu (octan, mrówczan, maślan), potem nazwa grupy alkilowej z alkoholu (etylowy, metylowy, izoamylowy):
 
+Tabela nazw (zwyczajowa — systematyczna): kwas octowy — kwas etanowy; octan etylu — etanian etylu; kwas masłowy — kwas butanowy; **maślan etylu — butanian etylu** (CH₃CH₂CH₂COOCH₂CH₃).
+
+Przykład do zapisania: octan propylu powstaje z kwasu octowego i propan-1-olu: CH₃COOH + CH₃CH₂CH₂OH ⇌ CH₃COOCH₂CH₂CH₃ + H₂O (stężony H₂SO₄, ogrzewanie).
+
 | Kwas | Alkohol | Ester | Zapach |
 |---|---|---|---|
 | octowy | etanol | **octan etylu** | rozpuszczalnik, klej |
@@ -172,6 +176,8 @@ Olej roślinny (np. rzepakowy) **odbarwia wodę bromową**, bo zawiera wiązania
 
 ::: karta understand | Dlaczego mydło nie lubi twardej wody
 Twarda woda zawiera jony wapnia i magnezu. Z mydłem tworzą nierozpuszczalne sole, które wytrącają się jako szary osad (kamień mydlany): 2C₁₇H₃₅COONa + Ca²⁺ → (C₁₇H₃₅COO)₂Ca↓ + 2Na⁺. Mydło „ginie” w osadzie i słabo się pieni. Detergenty syntetyczne tworzą z Ca²⁺ sole rozpuszczalne w wodzie, więc w twardej wodzie działają lepiej.
+
+Zapis jonowy reakcji mydła z jonami wapnia: 2C₁₇H₃₅COO⁻ + Ca²⁺ → (C₁₇H₃₅COO)₂Ca↓.
 
 Mydło sodowe (z NaOH) jest twarde, a potasowe (z KOH) — miękkie, maziste.
 :::
@@ -494,3 +500,9 @@ Surowa odpowiedź: `chemia/plany/audyty/LKO_ORG06_audyt_W1_2026-10-14.md`.
 **Nieprzyjęte:** brak „równania hydrolizy octanu etylu” — jest w §3 i w zadaniu 3; założenie wydajności — zadania mają już założenie „reakcja do końca względem substratu ograniczającego”.
 
 **Dotyczy innej lekcji:** „brak treści LKO-ORG07” — plik `LKO_ORG07_cukry.md` istnieje i zawiera fermentację; nie audytowano go w tej rundzie.
+
+## AUDYT W1/W2 — zewnętrzny, LKO-ORG06 (2026-10-14, uzupełnienie)
+
+Zastosowano: dodano tabelę nazw zwyczajowych i systematycznych (w tym maślan etylu = butanian etylu); dodano zapis octanu propylu z kwasem octowym i propan-1-olem; dodano zapis jonowy reakcji stearynianu z jonami wapnia.
+
+Nieprzyjęte (sprawdzone w pliku): schemat kwas + alkohol ⇌ ester + woda i rozdzielenie estryfikacji, hydrolizy kwasowej i zasadowej są już w lekcji; sformułowanie o solach sodowych i potasowych (mydła twarde i miękkie) jest; cząsteczkowe równanie twardej wody jest; spalanie 17,6 g octanu etylu (0,2 mol, 1 mol O₂, 35,2 g CO₂) jest poprawne; zasada mnożenia wydajności etapów szeregowych jest już w zadaniu o zmydleniu i w pułapkach.

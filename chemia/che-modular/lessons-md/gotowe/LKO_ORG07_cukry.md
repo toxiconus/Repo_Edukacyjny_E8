@@ -412,3 +412,9 @@ fotosynteza :: endotermiczne budowanie glukozy z CO₂ i wody na świetle, przy 
 - **ORG07:** zapis próby Trommera dla glukozy („glukonian" schematycznie) — produkt utlenienia glukozy dokładniej to glukonian miedzi(I)/kwas glukonowy zależnie od warunków; na poziomie konkursu wystarcza obserwacja Cu₂O — nazwa produktu organicznego świadomie niewymagana w kluczu.
 - **ORG07:** rachunki: 90 g → 46 g etanolu, 22,4 dm³ CO₂; adv5: 1,5 mol → 2,1 mol etanolu (96,6 g), 47,04 dm³ CO₂; adv6: 0,1 mol sacharozy → 0,4 mol etanolu teor → 0,3 mol (13,8 g), 6,72 dm³, 13,2 g CO₂; bilans łańcucha 36 g = 27 + 9 ✔ — wszystkie sprawdzone.
 - **ORG07:** M(Cu₂O) = 144 g/mol (Cu 64 z B1) ✔; jednostka skrobi 162 = 72 + 10 + 80 ✔.
+
+## AUDYT W1/W2 — zewnętrzny, LKO-ORG07 (2026-10-14)
+
+Zastosowano: brak zmian treści.
+
+Nieprzyjęte (sprawdzone w pliku): próba Trommera wymaga świeżo strąconego Cu(OH)₂, ogrzewania i daje ceglastoczerwony Cu₂O — jest w sekcji o próbach; sacharoza przed hydrolizą nie redukuje Cu(OH)₂ — jest w karcie „Dlaczego sacharoza nie redukuje”; fruktoza jako ketoza przechodzi w środowisku zasadowym w formy enolowe z grupą aldehydową, więc daje dodatnią próbę — jest w lekcji; fermentacja mlekowa jest w karcie rozszerzenia; rozróżnienie trzech prób (jod, Trommer, hydroliza) i tabela „Cukier — próba Trommera — dlaczego” są w lekcji; zadanie z próbami podaje obserwacje, nie tylko „dodatnia/ujemna”.
