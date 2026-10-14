@@ -3,7 +3,7 @@ kod: FIZ-01
 uid: CHE.FIZ.01.elektrostatyka
 tytul: Elektrostatyka
 opis: Ładunek i jego budowa atomowa · elektryzowanie przez tarcie, dotyk i indukcję · przewodniki i izolatory · elektroskop i uziemienie · prawo Coulomba i pole elektryczne · warstwa konkursowa
-stan: W1 FULL — Claude Sonnet 5.5 (paczka GOTOWE), 2026-10-12; korekta audytu zewnętrznego 2026-10-14 (częściowa, patrz AUDYT W1 na końcu)
+stan: W1 FULL sekcjami — Claude Haiku 5.5, 2026-10-14 (pełny przegląd linia po linii do wykonania; patrz AUDYT W1 FULL na końcu)
 kicker: FIZ-01 · FIZYKA · MASTER LAB v1.4
 lead: Ładunek i jego budowa atomowa, elektryzowanie (tarcie, dotyk, indukcja), oddziaływanie ładunków, przewodniki i izolatory, elektroskop, uziemienie i zastosowania; dla chętnych i LO: prawo Coulomba, pole elektryczne. Animacje i liczby z silnika CHE.FIZ.ELEKTRO. Warstwa konkursowa: pary do odróżniania, trudne przypadki i zadania ambitne.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:E8+ / LO]][[exam:KONKURS]]
@@ -86,7 +86,7 @@ Pole elektryczne :: przestrzeń wokół ładunku, w której na inne ładunki dzi
 ::: karta core | Część 1 — czym jest ładunek elektryczny
 Wszystko wokół ciebie — powietrze, szkło, plastik, twoje ciało — składa się z atomów. W środku atomu jest maleńkie **jądro** z **protonami** i **neutronami**, a dookoła jądra poruszają się **elektrony**. Proton i elektron mają cechę, której nie ma neutron: **ładunek elektryczny**. Ładunek to właściwość cząstki, przez którą cząstka oddziałuje z innymi naładowanymi cząstkami — odpycha je albo przyciąga, nawet jeśli się nie dotykają.
 
-Są dwa rodzaje ładunku. Umówiono się (konwencja z XVIII wieku, którą ustalił Benjamin Franklin), że proton ma ładunek **dodatni (+)**, a elektron **ujemny (−)**. Wartości są równe: proton ma +e, elektron −e, gdzie e ≈ 1,6·10⁻¹⁹ C to **ładunek elementarny**. Neutron ma ładunek 0. Zwykły atom ma tyle samo protonów co elektronów, więc ładunki się znoszą i atom jest **obojętny**.
+Są dwa rodzaje ładunku. Benjamin Franklin w XVIII wieku nazwał jeden rodzaj ładunku dodatnim, a drugi ujemnym (chodziło o naelektryzowane szkło i żywicę). Dopiero później, gdy odkryto cząstki, przypisano tę konwencję: proton ma ładunek **dodatni (+)**, a elektron **ujemny (−)**. Wartości są równe: proton ma +e, elektron −e, gdzie e ≈ 1,6·10⁻¹⁹ C to **ładunek elementarny**. Neutron ma ładunek 0. Zwykły atom ma tyle samo protonów co elektronów, więc ładunki się znoszą i atom jest **obojętny**.
 
 Ciało obojętne **nie jest ciałem bez ładunków** — ma ich ogromnie dużo, ale dodatnie i ujemne dokładnie się równoważą, jak wpłaty i wypłaty, które dają saldo zero. „Naelektryzować ciało” znaczy zaburzyć tę równowagę, czyli zmienić saldo.
 :::
@@ -117,11 +117,11 @@ Naelektryzowane ciało przyciąga też ciała **obojętne** (skrawki papieru, st
 
 To, jak łatwo ładunek się przemieszcza, zależy od materiału. W **przewodniku** (metale, grafit, roztwory soli, ciało człowieka) są swobodne nośniki ładunku i w stanie równowagi nadmiarowy ładunek rozmieszcza się na powierzchni przewodnika. W **izolatorze** (szkło, guma, plastik, suche powietrze) nośników swobodnych nie ma i ładunek zostaje tam, gdzie powstał — dlatego izolatory elektryzuje się łatwo przez tarcie.
 
-**Elektroskop** to przyrząd, w którym dwa metalowe listki dostają ładunek tego samego znaku i odpychają się — im większy ładunek, tym większe rozchylenie. Pokazuje *ile*, ale nie *jaki* znak. **Uziemienie** to połączenie z ziemią: Ziemia jest tak wielkim przewodnikiem, że przejmuje ładunek ciała i zostawia je obojętnym.
+**Elektroskop** to przyrząd, w którym dwa metalowe listki dostają ładunek tego samego znaku i odpychają się — im większy ładunek, tym większe rozchylenie. Pokazuje *ile*, ale nie *jaki* znak. **Uziemienie** to połączenie z ziemią: Ziemia jest tak wielkim zbiornikiem ładunku, że może oddać ciału elektrony albo je przyjąć, a ciało po uziemieniu zostaje praktycznie rozładowane (ma potencjał Ziemi).
 :::
 
 ::: karta understand | Część 5 — dla chętnych: pole elektryczne
-Skoro ładunki działają na siebie na odległość, fizycy mówią, że każdy ładunek wytwarza wokół siebie **pole elektryczne**: w każdym punkcie przestrzeni można ustalić, jaka siła działałaby na jednostkowy dodatni ładunek próbny. Ta siła na jednostkę ładunku to **natężenie pola** E = F/q (jednostka N/C). Dla ładunku punktowego E = k·Q/r². Prawo Coulomba i natężenie pola opisują to samo zjawisko: pierwsze mówi, co dzieje się między dwoma ładunkami, drugie — co każdy z nich robi z przestrzenią wokół siebie.
+Skoro ładunki działają na siebie na odległość, fizycy mówią, że każdy ładunek wytwarza wokół siebie **pole elektryczne**: w każdym punkcie przestrzeni można ustalić, jaka siła działałaby na jednostkowy dodatni ładunek próbny. Ta siła na jednostkę ładunku to **natężenie pola** E = F/q (jednostka N/C). Dla ładunku punktowego |E| = k·|Q|/r². Prawo Coulomba i natężenie pola opisują to samo zjawisko: pierwsze mówi, co dzieje się między dwoma ładunkami, drugie — co każdy z nich robi z przestrzenią wokół siebie.
 :::
 
 ::: karta basic | Jak pracować z lekcją
@@ -1527,3 +1527,62 @@ Surowa odpowiedź i tabela weryfikacji: `chemia/plany/audyty/FIZ01_audyt_W1_2026
 **Nieprzyjęte:** cytaty „Jon to atom…”, „Czas rozpływu…”, „Im większy ładunek…”, „Ziemia przejmuje…”, „Wewnątrz zamkniętego przewodnika…”, „Samochód chroni…”, „Wyładowanie trafia…” nie występują w tym pliku (audyt dotyczył innej wersji); definicja jonu już poprawna; dysocjacja kwasu już podaje H₃O⁺; `$$` i `:::` są poprawną składnią silnika; tabela oporu już podaje 20 °C.
 
 **Odłożone:** zadanie „elektroskop z ciałem wzorcowym” i „listki opadają i rozchylają się” — w lekcji są przykłady (§10, §6), wymagają osobnej weryfikacji; sekcja „obserwacja ≠ wniosek” — do dopisania w następnej turze.
+
+## Luki, poszerzenie i własne przykłady (W1 FULL, 2026-10-14)
+
+**Obserwacja ≠ wniosek (brak w lekcji, dodano):** listki elektroskopu się rozchyliły. Obserwacja to fakt: listki się odsunęły. Wniosek, który wymaga sprawdzenia: ciało jest naelektryzowane. Rozchylenie nie mówi jeszcze, jakim ładunkiem — do tego potrzebny jest ładunek wzorcowy (sekcja 6).
+
+**Typowe błędy uczniów (poza lekcją):** utożsamienie „nadmiaru ładunku” z „nadmiarem protonów” (w elektryzowaniu przemieszczają się wyłącznie elektrony); przyjęcie, że przyciąganie = naelektryzowanie (patrz przykład W1-3); mnożenie ładunku przez odległość zamiast kwadratu odległości w prawie Coulomba.
+
+**Horyzont — mosty międzyprzedmiotowe:**
+- biologia: impulsy nerwowe to ruch jonów przez błonę komórkową — to elektryczność w organizmie (bez tego nerw nie przewodziłby sygnału);
+- chemia: roztwory elektrolitów przewodzą prąd, bo zawierają jony (dysocjacja — lekcja o kwasach);
+- technika i bezpieczeństwo: uziemienie instalacji i opaska antystatyczna przy elektronice (ten sam mechanizm, który poznałeś w sekcji 5).
+
+**Dla ambitnych:** prawo Coulomba w zadaniach — iloczyn ładunków w liczniku, kwadrat odległości w mianowniku; zawsze licz wartość bezwzględną, a zwrot siły określaj jakościowo (jednoimienne odpychają, różnoimienne przyciągają).
+
+::: karta exam | Przykład W1-1 (E8) — zetknięcie dwóch identycznych kul
+Kula A ma ładunek +6 µC, kula B ma −2 µC. Kule zetknięto, a potem rozdzielono. Oblicz ładunek każdej kuli po rozdzieleniu.
+:::
+
+::: odp | Pokaż klucz
+Całkowity ładunek układu: (+6 µC) + (−2 µC) = +4 µC (zasada zachowania ładunku). Kule identyczne, więc dzielą ładunek po równo: q′ = +4 µC / 2 = **+2 µC** każda (3 pkt: suma, zachowanie, podział).
+:::
+
+::: karta exam | Przykład W1-2 (ambitny) — ile elektronów w ciele
+Ciało ma nadmiarowy ładunek −3,2 nC. Ile nadmiarowych elektronów ma to ciało? (e = 1,6·10⁻¹⁹ C)
+:::
+
+::: odp | Pokaż klucz
+n = q / e = 3,2·10⁻⁹ C / 1,6·10⁻¹⁹ C = **2,0·10¹⁰ elektronów** (2 pkt: wzór n = q/e, wynik z jednostką). Zauważ: wynik jest całkowity, co potwierdza kwantowanie ładunku.
+:::
+
+::: karta exam | Przykład W1-3 (pułapka) — przyciąganie a naelektryzowanie
+Naelektryzowana pałeczka przyciąga kawałek papieru. Czy można stąd wnioskować, że papier jest naelektryzowany? Uzasadnij.
+:::
+
+::: odp | Pokaż klucz
+Nie. Obojętne ciało przyciąga się do naelektryzowanego przez indukcję lub polaryzację: bliższy koniec dostaje ładunek przeciwny, więc przyciąganie jest silniejsze niż odpychanie dalszego końca. Naelektryzowanie papieru wymagałoby sprawdzenia ładunkiem wzorcowym (2 pkt).
+:::
+
+::: karta exam | Przykład W1-4 (ambitny) — siła między dwiema kulami
+Dwie małe kule o ładunkach +4 µC i −4 µC znajdują się w odległości 0,20 m. Oblicz wartość siły oddziaływania i określ, czy kule się przyciągają, czy odpychają. (k = 8,99·10⁹ N·m²/C²)
+:::
+
+::: odp | Pokaż klucz
+F = k·|q₁q₂|/r² = 8,99·10⁹ · (4·10⁻⁶)² / (0,20)² = 8,99·10⁹ · 1,6·10⁻¹¹ / 0,04 ≈ **3,6 N**. Ładunki różnoimienne, więc kule się **przyciągają** (3 pkt: wzór, wynik, zwrot).
+:::
+
+**Bez uwag:** pozostałe rachunki (0,60 N w przykładzie Coulomba, 6,24·10¹⁸ elektronów w 1 C) sprawdzone — poprawne.
+
+### AUDYT W1 FULL — Claude Haiku 5.5, 2026-10-14
+
+**Błędy poprawione:** konwencja znaków przypisana Franklinowi (poprawiono: Franklin nazwał ładunki, przypisanie do protonu i elektronu jest późniejsze); E = k·Q/r² bez modułu (poprawiono na |E| = k·|Q|/r²); uziemienie jako „przejmuje ładunek” (doprecyzowano: Ziemia jako zbiornik ładunku, ciało ma potencjał Ziemi).
+
+**Luki:** obserwacja ≠ wniosek (dodano), typowe błędy uczniów (opisane), wiedza wstępna — polaryzacja i prawo Coulomba z zadań, uzupełniono w 0b.
+
+**Poszerzenie:** mosty do biologii (impulsy nerwowe), chemii (elektrolity, dysocjacja) i techniki (uziemienie); wykład 0b i 5a, 9 mini-wykładów „W skrócie” i 4 ciekawostki — zostawione.
+
+**Własne przykłady:** 4 nowe (zetknięcie kul, elektrony w ciele, przyciąganie a naelektryzowanie, siła Coulomba) z kluczem.
+
+**Bez uwag:** pozostałe fragmenty przeglądano sekcjami (0b, 1–5 ćwiczenia, 9–12 klucze, ZUZO) — brak dodatkowych błędów merytorycznych. Pełne przejrzenie linia po linii 118 KB — w przyszłej turze.
