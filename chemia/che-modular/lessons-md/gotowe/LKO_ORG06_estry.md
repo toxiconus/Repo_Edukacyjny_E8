@@ -10,9 +10,9 @@ poglebia: "LKO-ORG07; LKO-ORG08"
 wlasciciel: "chemia olimpijska LKO"
 zrodla: "Zakres olimpiady kuratoryjnej (etap III) + podstawa programowa"
 opis: "Estry jako produkty kwasów i alkoholi: estryfikacja z odszczepieniem wody, rola H₂SO₄ stężonego, zapachy owoców, hydroliza i mydlenie tłuszczów."
-stan: "W1 FULL — Perplexity, 2026-10-13"
+stan: "W1 FULL — Perplexity, 2026-10-13; uzupełnienie zewnętrznego audytu — Claude Haiku 5.5, 2026-10-14"
 kicker: "ORG06 · estry"
-lead: "Zapach banana, ananasa i gruszki to chemia: kwas + alkohol − woda = ester. Reakcja, która pachnie owocami i myje ręce mydłem."
+lead: "Zapachy banana, ananasa i gruszki w dużej mierze pochodzą od estrów: kwas + alkohol − woda = ester. Reakcja, która pachnie owocami i myje ręce mydłem."
 plakietki: ["estry", "estryfikacja"]
 stopka: "LKO-ORG06 · v1.1"
 ---
@@ -86,7 +86,7 @@ Reszta alkilowa to fragment alkoholu bez grupy –OH: z etanolu — etylowa (–
 |---|---|---|---|
 | octowy | etanol | **octan etylu** | rozpuszczalnik, klej |
 | octowy | izoamylol (3-metylobutanol) | **octan izoamylu** | banan |
-| butanowy (masłowy) | etanol | **maślan etylu** | ananas |
+| butanowy (masłowy) | etanol | **maślan etylu** | zapach kojarzony z ananasem |
 | butanowy | metanol | **maślan metylu** | jabłko |
 
 Estry są nazywane „aromatami owoców": lotne estry to główni nośniki zapachów owoców, kwiatów i perfum; przemysł spożywczy dodaje syntetyczne estry do cukierków i napojów jako substancje zapachowe.
@@ -130,7 +130,7 @@ Własności fizyczne estrów: niskie estry są lotnymi cieczami o owocowym zapac
 Spalanie estru: CH₃COOC₂H₅ + 5O₂ → 4CO₂ + 4H₂O (C: 4 = 4 ✔; H: 8 = 8 ✔; O: 2 + 10 = 12 = 8 + 4 ✔).
 
 ::: karta understand | W skrócie — estryfikacja w pięciu kontrolach
-(1) Strzałka ⇌. (2) Katalizator: H₂SO₄ stężony. (3) Produkty: ester **i woda** — bez wody równanie uznaje się za niepełne. (4) Bilans masy: suma M substratów = suma M produktów (60 + 46 = 88 + 18). (5) Ograniczający substrat: licz mole obu — ten, którego jest mniej w stosunku 1 : 1, wyznacza maksimum estru (R08).
+(1) Strzałka ⇌. (2) Katalizator: H₂SO₄ stężony — przyspiesza reakcję i wiąże część wody; nie zużywa się stechiometrycznie. (3) Produkty: ester **i woda** — bez wody równanie uznaje się za niepełne. (4) Bilans masy: suma M substratów = suma M produktów (60 + 46 = 88 + 18). (5) Ograniczający substrat: licz mole obu — ten, którego jest mniej w stosunku 1 : 1, wyznacza maksimum estru (R08).
 :::
 
 ::: karta error | „Reakcja zaszła do końca, bo tak pisze równanie"
@@ -145,6 +145,8 @@ Najczęstszy błąd pojęciowy: traktowanie „→" lub zapisu bez strzałek jak
 - Mylenie estrów (R–COO–R′) z eterami (R–O–R′).
 - Zapis mydła jako soli kwasu octowego — mydło to sole kwasów tłuszczowych.
 - Pominięcie współczynnika 3 przy NaOH w mydleniu.
+- Nazwa „etylan octanu” zamiast **octan etylu** — najpierw reszta kwasowa, potem alkilowa.
+- Nie każda substancja o zapachu owocowym jest czystym estrem — naturalne aromaty to mieszaniny wielu związków.
 :::
 
 ## 3 | Wykład — hydroliza: estryfikacja odwrócona {#hydroliza}
@@ -154,6 +156,8 @@ Skoro estryfikacja jest odwracalna, to reakcja odwrotna też istnieje i ma włas
 **CH₃COOC₂H₅ + H₂O ⇌ CH₃COOH + C₂H₅OH** (estr → kwas + alkohol)
 
 Hydrolizę przyspieszają katalizatory: kwas lub zasada. Hydroliza **kwasowa** jest odwracalna (⇌) — to dokładne odwrócenie estryfikacji. Hydroliza **zasadowa** jest **nieodwracalna** (→), bo powstały kwas zostaje od razu zobojętniony do soli — i to ona ma ważne zastosowanie na tłuszczach:
+
+**Mydlenie prostego estru (model):** CH₃COOC₂H₅ + NaOH →(ogrzewanie) CH₃COONa + C₂H₅OH. Produktem jest sól kwasu octowego, a nie wolny kwas — dlatego reakcja jest nieodwracalna.
 
 **tłuszcz (trójester glicerolu) + 3NaOH →(ogrzewanie) glicerol + 3 sole kwasów tłuszczowych (mydło)**
 
@@ -443,3 +447,15 @@ Zastosowano uwagi z audytu Perplexity:
 - Propozycja nazwy „izopentyl” — nieprzyjęta: zostaje „izoamyl” jako nazwa zwyczajowa (zgodna z tabelą lekcji); nazwa systematyczna podana w „Do weryfikacji”.
 - Mechanizm estryfikacji — zostawiono wersję szkolną z dopiskiem o ¹⁸O; pogłębienie mechanizmu jako decyzja autora (nie wprowadzono w tekst ucznia).
 - Zalecenie „przy skalowaniu nazewnictwa” — poza zakresem tej lekcji; pozostawione w „Do weryfikacji”.
+
+### AUDYT W1 — zewnętrzny, weryfikacja 2026-10-14 (Claude Haiku 5.5)
+
+Surowa odpowiedź: `chemia/plany/audyty/LKO_ORG06_audyt_W1_2026-10-14.md`.
+
+**Wprowadzono:** lead doprecyzowany (zapachy pochodzą głównie od estrów, nie od jednego); „maślan etylu” w tabeli — „zapach kojarzony z ananasem”; katalizator H₂SO₄ — przyspiesza i wiąże wodę, nie zużywa się stechiometrycznie; równanie mydlenia prostego estru (CH₃COOC₂H₅ + NaOH → CH₃COONa + C₂H₅OH); dwie pułapki w błędach (etylan octanu; zapach owocowy ≠ czysty ester).
+
+**Już w lekcji (zarzut nieaktualny):** zastrzeżenie o mechanizmie estryfikacji (odchodzi OH z –COOH i H z alkoholu, z doświadczeniem ¹⁸O); ograniczający substrat liczony z moli; równanie hydrolizy octanu etylu z ⇌; równanie mydlenia tłuszczu z 3NaOH; bilans masy 60 + 46 = 88 + 18.
+
+**Nieprzyjęte:** brak „równania hydrolizy octanu etylu” — jest w §3 i w zadaniu 3; założenie wydajności — zadania mają już założenie „reakcja do końca względem substratu ograniczającego”.
+
+**Dotyczy innej lekcji:** „brak treści LKO-ORG07” — plik `LKO_ORG07_cukry.md` istnieje i zawiera fermentację; nie audytowano go w tej rundzie.

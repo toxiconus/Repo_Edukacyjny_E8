@@ -3,7 +3,7 @@ kod: FIZ-01
 uid: CHE.FIZ.01.elektrostatyka
 tytul: Elektrostatyka
 opis: Ładunek i jego budowa atomowa · elektryzowanie przez tarcie, dotyk i indukcję · przewodniki i izolatory · elektroskop i uziemienie · prawo Coulomba i pole elektryczne · warstwa konkursowa
-stan: W1 FULL sekcjami — Claude Haiku 5.5, 2026-10-14 (pełny przegląd linia po linii do wykonania; patrz AUDYT W1 FULL na końcu)
+stan: W1 FULL — Claude Haiku 5.5, 2026-10-14 (pełny przegląd linia po linii; poprawki w AUDYCIE W1 FULL na końcu)
 kicker: FIZ-01 · FIZYKA · MASTER LAB v1.4
 lead: Ładunek i jego budowa atomowa, elektryzowanie (tarcie, dotyk, indukcja), oddziaływanie ładunków, przewodniki i izolatory, elektroskop, uziemienie i zastosowania; dla chętnych i LO: prawo Coulomba, pole elektryczne. Animacje i liczby z silnika CHE.FIZ.ELEKTRO. Warstwa konkursowa: pary do odróżniania, trudne przypadki i zadania ambitne.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:E8+ / LO]][[exam:KONKURS]]
@@ -69,7 +69,7 @@ Pole elektryczne :: przestrzeń wokół ładunku, w której na inne ładunki dzi
 ::: wskazowki
 - <b>„Plus to brak”</b> — ciało dodatnie <b>nie dostało protonów</b>, tylko <b>straciło elektrony</b>. Przemieszczają się tylko elektrony.
 - <b>„Jednakowi się nie lubią”</b> — ładunki jednoimienne się odpychają, różnoimienne przyciągają.
-- <b>„Szkło w jedwabiu — plus, ebonit w suknie — minus”</b>: szkło + jedwab → szkło (+); ebonit + sukno → ebonit (−).
+- <b>„Szkło w jedwabiu — plus, ebonit z suknem — minus”</b>: szkło + jedwab → szkło (+); ebonit + sukno → ebonit (−).
 - <b>„Dwa razy dalej — cztery razy słabiej”</b> (siła ∝ 1/r²): 3× dalej → 9× słabiej.
 - <b>„Listki mówią ILE, nie JAKI”</b> — elektroskop pokazuje wielkość ładunku, nie znak.
 - <b>Indukcja — 4 kroki „ZUZO”</b>: <b>Z</b>bliż pręt → <b>U</b>ziem → <b>Z</b>abierz palec → <b>O</b>ddal pręt ⇒ ładunek przeciwny do pręta.
@@ -877,7 +877,7 @@ BHP: Doświadczenie bezpieczne; wykonuj je w suchym powietrzu i bez otwartego og
 
 <li>E = 0 — wektory natężeń od obu ładunków mają równe wartości i przeciwne zwroty (superpozycja).</li>
 
-<li>Siła przyciągania Na⁺ i Cl⁻ maleje εr razy; w wodzie ~80× — energia cieplna i hydratacja wystarczają, by rozdzielić jony; w benzynie siła prawie się nie zmienia.</li>
+<li>Siła przyciągania Na⁺ i Cl⁻ maleje εr razy; w wodzie ~80× — energia cieplna i hydratacja wystarczają, by rozdzielić jony; w benzynie (εr ≈ 2) siła spada tylko ok. 2 razy, a cząsteczki benzyny nie są polarne i nie otaczają jonów, więc sól się nie rozpuszcza.</li>
 :::
 :::
 :::
@@ -983,7 +983,7 @@ b) Siła wzrośnie 9 razy (1 pkt), bo F ∝ 1/r², a (1/3)⁻² = 9.
 :::
 
 ::: karta exam | Zadanie 6 (4 pkt) — Zaplanuj doświadczenie
-Uczeń chce sprawdzić, czy rodzaj materiału, którym potrze balon, wpływa na to, ile skrawków papieru balon przyciągnie.
+Uczeń chce sprawdzić, czy rodzaj materiału, którym pociera się balon, wpływa na to, ile skrawków papieru balon przyciągnie.
 
 a) Sformułuj problem badawczy. (1 pkt)
 b) Wskaż zmienną niezależną i zmienną zależną. (1 pkt)
@@ -1403,7 +1403,7 @@ Gdzie ładunek jest najgęstszy? | na ostrzach, bo gęstość powierzchniowa σ 
 ::: karta -
 ::: slownik
 Ładunek elektryczny q :: wielkość opisująca oddziaływania elektryczne; jednostka 1 C
-Ładunek elementarny e :: najmniejszy swobodny ładunek, ≈ 1,6·10⁻¹⁹ C
+Ładunek elementarny e :: wartość bezwzględna ładunku elektronu, ≈ 1,6·10⁻¹⁹ C; ładunki swobodnych cząstek są jej całkowitymi wielokrotnościami
 Indukcja elektrostatyczna :: przesunięcie ładunków w przewodniku pod wpływem zewnętrznego ładunku
 Polaryzacja :: przesunięcie ładunków w cząsteczkach izolatora
 Uziemienie :: połączenie ciała z ziemią przewodnikiem
@@ -1585,4 +1585,4 @@ F = k·|q₁q₂|/r² = 8,99·10⁹ · (4·10⁻⁶)² / (0,20)² = 8,99·10⁹ 
 
 **Własne przykłady:** 4 nowe (zetknięcie kul, elektrony w ciele, przyciąganie a naelektryzowanie, siła Coulomba) z kluczem.
 
-**Bez uwag:** pozostałe fragmenty przeglądano sekcjami (0b, 1–5 ćwiczenia, 9–12 klucze, ZUZO) — brak dodatkowych błędów merytorycznych. Pełne przejrzenie linia po linii 118 KB — w przyszłej turze.
+**Bez uwag:** pozostałe fragmenty przeglądano sekcjami (0b, 1–5 ćwiczenia, 9–12 klucze, ZUZO) — brak dodatkowych błędów merytorycznych. Pełny przegląd linia po linii wykonano 2026-10-14 (§0–§15 i „Luki”). Poprawki: „ebonit z suknem” (ściąga), „potrze balon” → „pociera się balon” (zadanie 6), benzyna (εr ≈ 2: siła spada ok. 2×, sól się nie rozpuszcza), definicja ładunku elementarnego w słowniku. Sprawdzone bez zmian: rachunki w §5a, §8–§12c, klucze, test, fiszki, mosty, historia. Zapisy „$$ wzór” w jednej linii są poprawnym formatem md2html (nie wymagają zamknięcia).
