@@ -6,10 +6,10 @@ Ocena automatyczna (nie merytoryczna): **A** = pełny W1 i treść nie krótsza 
 
 | Ocena | Liczba |
 |---|---|
-| A | 70 |
-| B | 150 |
+| A | 72 |
+| B | 149 |
 | C | 7 |
-| - | 56 |
+| - | 55 |
 
 ## C — do przywrócenia albo sprawdzenia (możliwa utrata treści)
 
@@ -49,7 +49,9 @@ C nie zawsze znaczy stratę: część to świadome przebudowy, w których poprze
 | biologia | BIO.07.U04.krazenie_krew_odpornosc | 90.1 | W1 FULL — Perplexity (paczki ULEPSZ BIO_U04_cz1–2), 2026-10- | 2026-10-11 |
 | biologia | BIO.07.U08.uklad_nerwowy_i_zmysly | 110.4 | W1 FULL — AI z poczty (§0–13) + Claude Sonnet 5.5 (§14–27),  | 2026-10-12 |
 | biologia | BIO.07.U10.uklad_dokrewny | 107.0 | W1 FULL — GLM-5.3-Flash (§0–14 Zad. 7) + Claude Sonnet 5.5 ( | 2026-10-12 |
-| chemia | CHE.01.F17.rownania_reakcji | 43.2 | W6 — GPT-6, 2026-10-09; poprawki wprowadzone do treści kanon | 2026-10-11 |
+| chemia | CHE.01.F15.polarnosc_i_oddzialywania | 35.1 | W1 FULL — Perplexity, 2026-10-13 | 2026-10-13 |
+| chemia | CHE.01.F17.rownania_reakcji | 57.1 | W1 FULL — Perplexity, 2026-10-11 | 2026-10-11 |
+| chemia | CHE.01.F18.dossier_substancji | 30.2 | W1 FULL — Perplexity, 2026-10-13 | 2026-10-13 |
 | chemia | CHE.07.K04.szybkosc_reakcji | 33.5 | PRZEBUDOWANA (wersja 3, wg skillu lekcja-od-zera-w1) — Claud |  |
 | chemia | CHE.07.K06.zderzenia_energia_aktywacji | 16.3 | PRZEBUDOWANA OD ZERA (wersja 2) — Claude Haiku 5.5, 2026-10- |  |
 | chemia | CHE.07.K07.kataliza | 19.8 | PRZEBUDOWANA (wersja 2, wg skillu lekcja-od-zera-w1) — Claud |  |
@@ -115,31 +117,30 @@ C nie zawsze znaczy stratę: część to świadome przebudowy, w których poprze
 | chemia | CHE.00.LAB.doswiadczenia | 29.4 |  |
 | chemia | CHE.00.REV01.powtorka_klasy_7 | 123.9 |  |
 | chemia | CHE.00.REV02.powtorka_klasy_8 | 20.4 |  |
-| chemia | CHE.01.F05.izotopy_jony_i_masa_atomowa | 40.7 |  |
-| chemia | CHE.01.F06.uklad_okresowy | 31.7 |  |
+| chemia | CHE.01.F05.izotopy_jony_i_masa_atomowa | 46.3 | W1 (audyt 05) wprowadzony — 2026-10-13 |
+| chemia | CHE.01.F06.uklad_okresowy | 72.2 | W1 (audyt 06, 06b) wprowadzony — 2026-10-13 |
 | chemia | CHE.01.F07.konfiguracja_elektronowa | 54.9 | W1 — GPT-6, 2026-10-09; poprawki audytu wprowadzone do treści kanonicz |
 | chemia | CHE.01.F08.konfiguracja_uklad_okresowy | 54.8 | W1 — GPT-6, 2026-10-09; poprawki audytu wprowadzone do treści kanonicz |
 | chemia | CHE.01.F10.dlaczego_atomy_sie_lacza | 19.6 | W1 — GPT-6, 2026-10-09; poprawki audytu wprowadzone do treści kanonicz |
 | chemia | CHE.01.F11.wiazania_jonowe_kowalencyjne_i_metaliczn | 65.2 | W1 — GPT-6, 2026-10-09; poprawki audytu wprowadzone do treści kanonicz |
 | chemia | CHE.01.F13.wzory_elektronowe_lewis | 34.9 | W1 — GPT-6, 2026-10-09; poprawki audytu wprowadzone do treści kanonicz |
 | chemia | CHE.01.F14.geometria_czasteczek_vsepr | 66.2 | W1 — GPT-6, 2026-10-09; poprawki audytu wprowadzone do treści kanonicz |
-| chemia | CHE.01.F15.polarnosc_i_oddzialywania | 26.4 | W6 — GPT-6, 2026-10-09; poprawki wprowadzone do treści kanonicznej, wy |
 | chemia | CHE.01.F16.od_obserwacji_do_modelu_reakcji | 47.2 | W6 — GPT-6, 2026-10-09; poprawki wprowadzone do treści kanonicznej, wy |
-| chemia | CHE.01.F18.dossier_substancji | 14.3 | W6 — GPT-6, 2026-10-09; poprawki wprowadzone do treści kanonicznej, wy |
 | chemia | CHE.01.F19.dossier_reakcji | 12.7 | W23 — GPT-6, 2026-10-09; audyt celowany i poprawki punktowe, pełna nie |
 | chemia | CHE.01.F20.klinika_bledow_fundamentow | 13.6 | W23 — GPT-6, 2026-10-09; audyt celowany i poprawki punktowe, pełna nie |
 | chemia | CHE.01.F21.zadania_transferowe_i_diagnostyka | 15.1 | W23 — GPT-6, 2026-10-09; audyt celowany i poprawki punktowe, pełna nie |
-| chemia | CHE.01.P01.blok_s | 1.0 | PUSTY — szkielet z kanonu, do napisania od zera (nie W1) |
+| chemia | CHE.01.P01.blok_s | 28.8 | NOWA — Claude Haiku 5.5, 2026-10-13; benchmark z pamięci (tryb B), do  |
 | chemia | CHE.01.P02.blok_p | 0.9 | PUSTY — szkielet z kanonu, do napisania od zera (nie W1) |
 | chemia | CHE.01.P03.blok_d_i_metale_przejsciowe | 1.1 | PUSTY — szkielet z kanonu, do napisania od zera (nie W1) |
 | chemia | CHE.01.P04.charakterystyka_grup | 1.0 | PUSTY — szkielet z kanonu, do napisania od zera (nie W1) |
 | chemia | CHE.01.P05.zwiazki_charakterystyczne_pierwiastkow | 1.1 | PUSTY — szkielet z kanonu, do napisania od zera (nie W1) |
 | chemia | CHE.01.P06.trend_wasciwosc_reaktywnosc | 1.1 | PUSTY — szkielet z kanonu, do napisania od zera (nie W1) |
 | chemia | CHE.02.N01.powietrze_i_gazy | 33.0 | PRZEBUDOWA — Claude Haiku 5.5, 2026-10-12 (dodany wykład i 3. ciekawos |
-| chemia | CHE.02.N02.tlenki | 37.3 |  |
-| chemia | CHE.02.N03.wodorotlenki | 31.0 |  |
-| chemia | CHE.02.N04.kwasy | 35.4 |  |
-| chemia | CHE.02.N06.wodorki | 1.0 | PUSTY — szkielet z kanonu, do napisania od zera (nie W1) |
+| chemia | CHE.02.N02.tlenki | 63.0 | przepisana od nowa — 2026-10-13, bez audytu W1 |
+| chemia | CHE.02.N03.wodorotlenki | 133.9 | ULEPSZONA — Claude Haiku 5.5, audyt W1 wewnętrzny, 2026-10-12; do zewn |
+| chemia | CHE.02.N04.kwasy | 137.4 | ULEPSZONA — Claude Haiku 5.5, audyt W1 wewnętrzny, 2026-10-12; do zewn |
+| chemia | CHE.02.N05.sole | 89.3 | ULEPSZONA — Claude Haiku 5.5, audyt W1 wewnętrzny, 2026-10-12; do zewn |
+| chemia | CHE.02.N06.wodorki | 40.9 | pełna struktura — 2026-10-13, bez audytu W1/W2 |
 | chemia | CHE.02.N07.systematyka_nieorganiczna | 4.3 | W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE);  |
 | chemia | CHE.02.N08.mapa_przemian | 5.1 | W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE);  |
 | chemia | CHE.03.R01.woda_i_roztwory | 5.5 | W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE);  |
@@ -148,14 +149,14 @@ C nie zawsze znaczy stratę: część to świadome przebudowy, w których poprze
 | chemia | CHE.04.J00.mapa_bloku_J | 8.2 | W23 — Grok, 2026-10-09; aktualizacja po pełnej rozbudowie J01–J06; W1  |
 | chemia | CHE.04.J01.dysocjacja_elektrolityczna | 21.5 | W23 — Grok, 2026-10-09; pełna rozbudowa z materiału W1/W22 do struktur |
 | chemia | CHE.04.J02.odczyn_i_ph | 13.9 | W23 — Grok, 2026-10-09; pełna rozbudowa z materiału W1/W22 do struktur |
-| chemia | CHE.04.J03.reakcje_jonowe | 10.2 | W23 — Grok, 2026-10-09; pełna rozbudowa z materiału W1/W22 do struktur |
+| chemia | CHE.04.J03.reakcje_jonowe | 114.7 | ULEPSZONA — Perplexity, 2026-10-13; do sprawdzenia |
 | chemia | CHE.04.J04.stracanie_osadow | 9.6 | W23 — Grok, 2026-10-09; pełna rozbudowa z materiału W1/W22 do struktur |
 | chemia | CHE.04.J05.amfoterycznosc | 9.7 | W23 — Grok, 2026-10-09; pełna rozbudowa z materiału W1/W22; poprawka k |
 | chemia | CHE.04.J06.rownowagi_kwasowo_zasadowe | 10.9 | W23 — Grok, 2026-10-09; pełna rozbudowa z materiału W1/W22; Ka/pKa/buf |
-| chemia | CHE.04.J07.ka_kb_kw | 3.9 | W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE);  |
-| chemia | CHE.04.J08.hydroliza_soli | 3.9 | W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE);  |
-| chemia | CHE.04.J09.bufory | 3.7 | W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE);  |
-| chemia | CHE.04.J10.iloczyn_rozpuszczalnosci_ksp | 3.6 | W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE);  |
+| chemia | CHE.04.J07.ka_kb_kw | 32.6 | ULEPSZONA — Perplexity, 2026-10-13; do sprawdzenia |
+| chemia | CHE.04.J08.hydroliza_soli | 38.8 | ULEPSZONA — Perplexity, 2026-10-13; do sprawdzenia |
+| chemia | CHE.04.J09.bufory | 34.1 | ULEPSZONA — Perplexity, 2026-10-13; do sprawdzenia |
+| chemia | CHE.04.J10.iloczyn_rozpuszczalnosci_ksp | 30.0 | ULEPSZONA — Perplexity, 2026-10-13; do sprawdzenia |
 | chemia | CHE.04.J11.identyfikacja_jonow | 4.5 | W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE);  |
 | chemia | CHE.04.J12.miareczkowanie | 4.7 | W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE);  |
 | chemia | CHE.05.O09.fenole | 3.9 | W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE);  |
@@ -170,7 +171,7 @@ C nie zawsze znaczy stratę: część to świadome przebudowy, w których poprze
 | chemia | CHE.06.E04.elektroliza | 3.0 | W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE);  |
 | chemia | CHE.06.E05.korozja | 3.6 | W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE);  |
 | chemia | CHE.06.E06.zrodla_energii_akumulatory | 3.6 | W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE);  |
-| chemia | CHE.07.K01.energia_reakcji | 21.4 | W24 — Grok, 2026-10-09; pełna przebudowa do standardu 20–30 KB (wykład |
+| chemia | CHE.07.K01.energia_reakcji | 33.3 | ULEPSZONA — Perplexity, 2026-10-13; do sprawdzenia |
 | chemia | CHE.07.K02.entalpia | 8.9 | W24 — Grok, 2026-10-09; pełna lekcja (inspiracja Khan: bond enthalpy + |
 | chemia | CHE.07.K03.kalorymetria_i_przemiany_fazowe | 16.0 | W23 — Grok, 2026-10-09; pełna lekcja od zera (DO IMPLEMENTACJI → UZUPE |
 | chemia | CHE.07.K05.czynniki_szybkosci | 3.0 | W23 — Grok, 2026-10-09; nowa lekcja (DO IMPLEMENTACJI → UZUPEŁNIONE);  |

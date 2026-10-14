@@ -3,16 +3,18 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (9 pl., 189 KB)
+## .  (11 pl., 375 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 15 KB
-- `MAPA.md` 27 KB
+- `MAPA.md` 39 KB
 - `PROMPT_BUDOWANIA_LEKCJI.md` 9 KB
+- `PRZEGLAD_LEKCJI.md` 27 KB
 - `PRZEKAZANIE.md` 27 KB
 - `README.md` 0 KB
 - ⚠`SPIS_WSZYSTKICH.md` 56 KB
 - ⚠`WERYFIKACJA.md` 51 KB
+- ⚠`przeglad_lekcji.json` 147 KB
 
 ## angielski  (4 pl., 962 KB)
 - ⚠`ANGIELSKI_PODSTAWA_PLUS_v1.0.md` 477 KB
@@ -520,7 +522,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/tools/_stare  (1 pl., 28 KB)
 - `pack_lesson.py` 28 KB
 
-## chemia/html  (94 pl., 8.6 MB)
+## chemia/html  (94 pl., 9.4 MB)
 - (zwinięte; `ls chemia/html`) — duże:
 - ⚠`CHE.00.LAB.doswiadczenia.html` 110 KB
 - ⚠`CHE.00.REV01.powtorka_klasy_7.html` 218 KB
@@ -555,18 +557,21 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE.06.E05.korozja.md` 4 KB
 - `CHE.06.E06.zrodla_energii_akumulatory.md` 4 KB
 
-## chemia/lekcje_md/F  (22 pl., 736 KB)
+## chemia/lekcje_md/F  (22 pl., 823 KB)
 - (zwinięte; `ls chemia/lekcje_md/F`) — duże:
+- ⚠`CHE.01.F06.uklad_okresowy.md` 72 KB
 - ⚠`CHE.01.F07.konfiguracja_elektronowa.md` 55 KB
 - ⚠`CHE.01.F08.konfiguracja_uklad_okresowy.md` 55 KB
 - ⚠`CHE.01.F11.wiazania_jonowe_kowalencyjne_i_metaliczn.md` 65 KB
 - ⚠`CHE.01.F14.geometria_czasteczek_vsepr.md` 66 KB
+- ⚠`CHE.01.F17.rownania_reakcji.md` 57 KB
 
-## chemia/lekcje_md/J  (13 pl., 108 KB)
-- (zwinięte; `ls chemia/lekcje_md/J`)
+## chemia/lekcje_md/J  (13 pl., 333 KB)
+- (zwinięte; `ls chemia/lekcje_md/J`) — duże:
+- ⚠`CHE.04.J03.reakcje_jonowe.md` 115 KB
 
-## chemia/lekcje_md/K  (11 pl., 179 KB)
-- `CHE.07.K01.energia_reakcji.md` 21 KB
+## chemia/lekcje_md/K  (11 pl., 191 KB)
+- `CHE.07.K01.energia_reakcji.md` 33 KB
 - `CHE.07.K02.entalpia.md` 9 KB
 - `CHE.07.K03.kalorymetria_i_przemiany_fazowe.md` 16 KB
 - `CHE.07.K04.szybkosc_reakcji.md` 33 KB
@@ -578,13 +583,13 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE.07.K10.regula_le_chateliera.md` 14 KB
 - `CHE.07.K11.rownowaga_ilosciowa.md` 18 KB
 
-## chemia/lekcje_md/N  (8 pl., 184 KB)
+## chemia/lekcje_md/N  (8 pl., 507 KB)
 - `CHE.02.N01.powietrze_i_gazy.md` 33 KB
-- `CHE.02.N02.tlenki.md` 37 KB
-- `CHE.02.N03.wodorotlenki.md` 31 KB
-- `CHE.02.N04.kwasy.md` 35 KB
-- `CHE.02.N05.sole.md` 37 KB
-- `CHE.02.N06.wodorki.md` 1 KB
+- ⚠`CHE.02.N02.tlenki.md` 63 KB
+- ⚠`CHE.02.N03.wodorotlenki.md` 134 KB
+- ⚠`CHE.02.N04.kwasy.md` 137 KB
+- ⚠`CHE.02.N05.sole.md` 89 KB
+- `CHE.02.N06.wodorki.md` 41 KB
 - `CHE.02.N07.systematyka_nieorganiczna.md` 4 KB
 - `CHE.02.N08.mapa_przemian.md` 5 KB
 
@@ -599,8 +604,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE.05.O24.nazewnictwo_procedura_zbiorcza.md` 4 KB
 - `CHE.05.O25.mechanizmy_reakcji_organicznych.md` 4 KB
 
-## chemia/lekcje_md/P  (6 pl., 6 KB)
-- `CHE.01.P01.blok_s.md` 1 KB
+## chemia/lekcje_md/P  (6 pl., 34 KB)
+- `CHE.01.P01.blok_s.md` 29 KB
 - `CHE.01.P02.blok_p.md` 1 KB
 - `CHE.01.P03.blok_d_i_metale_przejsciowe.md` 1 KB
 - `CHE.01.P04.charakterystyka_grup.md` 1 KB
@@ -683,7 +688,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## eksport/grafiki  (1 pl., 7 KB)
 - `VIZ_START.html` 7 KB
 
-## narzedzia  (22 pl., 152 KB)
+## narzedzia  (23 pl., 159 KB)
 - (zwinięte; `ls narzedzia`)
 
 ## narzedzia/jednorazowe  (5 pl., 14 KB)
