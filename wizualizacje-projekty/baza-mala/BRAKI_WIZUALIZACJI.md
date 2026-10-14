@@ -4,7 +4,35 @@ Stan: 2026-10-14. Sprawdzono: wszystkie 191 lekcji (md) oraz biblioteki w tej pa
 
 Lista obejmuje 30 pozycji z poprzedniego przeglądu. Przy sprawdzaniu część pozycji się zmieniła (patrz §6), więc tabele są już po korekcie.
 
-## Jak czytać działania
+## 0. Aktualizacja 2026-10-14 — osadzanie istniejących wizualizacji
+
+Zasada tej rundy: osadzać tylko wizualizacje już napisane pod konkretną lekcję, lekkie (silnik lite i klocki) i bez zbędnych.
+
+**Osadzone i sprawdzone** (HTML przebudowany, test w Chromium: wszystkie figury się rysują, 0 błędów JS):
+
+- CHE.01.F06 układ okresowy: klocek `uklad-okresowy` w sekcji „Układ okresowy jako mapa”.
+- CHE.01.F07 konfiguracja elektronowa: klocek `palniki {seria="plomien"}` w sekcji „Doświadczenie v16 — barwienie płomienia”.
+- CHE.02.N03 wodorotlenki: klocek `probowki` (Mg, Ca, Na z wodą) w sekcji „3. Doświadczenie model”.
+- BIO.01.L004 organizacja budowy: `lancuch` (siedem poziomów) w sekcji 10.
+
+**Już osadzone wcześniej (sprawdzone, nic nie trzeba):** BIO L005, L011, L017–L020, L041 (`transport-blona`, `kod-genetyczny`, `punnett`, `siec-troficzna`); BIO L042 (`relacje-ekologiczne`, sekcja 6); BIO L010 (12 grafik, patrz niżej); CHE R03A (`r03-krzyz-v01`) i F17 (`f17-bilans-v01`) w ścieżce lite.
+
+**Nie osadzone, z powodem:**
+
+- POL.01.L008 `wykres-zdania` i POL.01.L009 `wykres-zlozonego`: klocki są przypisane do G12 i G15, nie do L008 i L009. Osadzenie to nowe przypisanie, więc do decyzji autora.
+- CHE F09 `f09-trzy-liczby-v01`, F10 `f10-energia-h2-v01`, F15 `f15-dipol-v01`: dedykowane i lekkie, ale ich lekcje są w kanonicznym buildzie (`lekcja_html.py`), który nie obsługuje `@model`. Ścieżka lite działa tylko dla lekcji z `lessons-md/gotowe`, a tam tych lekcji nie ma. Potrzebne: wersja lekcji w `gotowe` albo obsługa lite w buildzie kanonicznym.
+- CHE N01 `palenie`: klocek dotyczy spalania Mg, Na i K, a lekcja N01 dotyczy powietrza i gazów. Brak wspólnego tematu.
+- CHE LAB `znaki`: w lekcji LAB nie ma tematu znaków ostrzegawczych.
+- BIO L001 `komorka`: nie jest zbudowana (w bibliotece jest `komorka-nakladki`), więc nie była „już napisana”.
+
+**Duplikat L010 do decyzji.** Są dwie wersje lekcji:
+
+- `okladki/biologia/md/BIO.02.L010.dna_od_zera.md`: 66 KB, 12 grafik, audyt W1 z 2026-10-12. To wersja aktualna, ale nie leży w źródłach buildu BIO (`zbuduj_wszystkie.py`).
+- `biologia/md/BIO.02.L010.genetyka_i_dna_od_zera.md`: 24 KB, 1 grafika, bez audytu. Kopia starsza, nadal budowana do `biologia/html/`.
+
+Nie usuwałem żadnej z nich. Decyzja: którą wersję uznać za kanon i czy usunąć drugą.
+
+
 
 | Działanie | Co znaczy |
 |---|---|
@@ -46,7 +74,7 @@ W tych ośmiu lekcjach `@opis` opisuje grafikę, ale nie ma ani `@viz`, ani plik
 | Lekcja | Co brakuje | Oczekiwania / stan | Działanie |
 |---|---|---|---|
 | BIO.01.L003 diagnoza | Grafika „Mapa dalszej nauki” | Schemat blokowy: Etap 1 DIAGNOZA (startowa) rozgałęziony na luki (DNA → L001 + L011; 46/23 → L012; gamety/płeć → L002 + L015 + L018) i Etap 2 „strefa”. Już jest narysowany jako tekstowy blok `step-flow` (HTML). Brakuje czytelnego rysunku i konkretnego `@opis` (obecny to powtórzenie tekstu). | OPIS (grafika opcjonalna, niski priorytet) |
-| BIO.01.L004 organizacja budowy | Jedna z dwóch grafik | Łańcuch komórka → tkanka → narząd → układ narządów → organizm. Jest już `@viz lancuch` (linia 35). Druga grafika (linia 211, „pięć poziomów”) to ten sam wzorzec. Propozycja: osadzić `od-organizmu-do-genu` (wariant „w górę”) albo potwierdzić, że `lancuch` wystarcza. | OSADZIĆ `od-organizmu-do-genu` (albo usunąć duplikat) |
+| BIO.01.L004 organizacja budowy | Jedna z dwóch grafik | Łańcuch komórka → tkanka → narząd → układ narządów → organizm. Jest już `@viz lancuch` (linia 35). Druga grafika (linia 211, „pięć poziomów”) to ten sam wzorzec. Propozycja: osadzić `od-organizmu-do-genu` (wariant „w górę”) albo potwierdzić, że `lancuch` wystarcza. | ZROBIONE 2026-10-14: `lancuch` (siedem poziomów) w sekcji 10 |
 | BIO.02.L015 mejoza | Dwie grafiki bez konkretnego opisu | (1) komórka 2n = 46 (dwie pary homologów: czerwone od matki, niebieskie od ojca; chromosom z dwiema chromatydami); (2) łańcuch: 2n → replikacja (92 chromatydy) → mejoza I → mejoza II → 4 gamety n = 23 → zapłodnienie. Są już `@viz podzial-komorki` i `@viz lancuch`; dwie linie `@opis` są ogólne (`Schemat z lekcji; elementy: …`). | OPIS (napisać konkretnie) |
 
 ## 3. Chemia
@@ -68,8 +96,8 @@ W tych ośmiu lekcjach `@opis` opisuje grafikę, ale nie ma ani `@viz`, ani plik
 | CHE N06 wodorki | Rysunek budowy NH₃ („jeden rysunek wyjaśnia wszystko”) | Wzór Lewisa NH₃: N w środku, trzy kreski do H, jedna para wolna (boczna para kropek). Istniejący `molecule-2d` (wiązania, kąty, wolne pary) pokrywa to. | OSADZIĆ `molecule-2d` (NH₃) |
 | CHE OLI.CHE.X04 szereg aktywności | Schemat doświadczenia („pełny schemat”) | Trzy probówki z Mg, Zn, Cu i kwasem solnym, ponumerowane; obserwacja wydzielania gazu. Istniejący `probowki.js` (statyw z probówkami, 1–4 metale) pasuje. Do potwierdzenia z autorem: czy kwas i kolejność metali zgadzają się z lekcją. | OSADZIĆ `probowki.js` (do potwierdzenia) |
 | POL.01.L002 hobbit / nieodmienne | Schemat budowy rozprawki | Trzy pola: Wstęp (teza, 2–3 zdania) → Rozwinięcie (argumenty z przykładami) → Zakończenie (wniosek, nawiązanie do tezy). Strzałka od tezy do zakończenia. | ZBUDOWAĆ `schemat-pola` |
-| POL.01.L008 części zdania | „Wykres zdania” (§9) i „Wizualizacja zależności” (§16) | Wykres zdania: „Wczoraj uczniowie przeczytali ciekawy tekst w bibliotece.” z podporządkowaniem. Klocek `wykres-zdania` istnieje i działa w G12 (zdania z lektur). Brakuje osadzenia; zdanie z L008 trzeba dodać do klocka albo wybrać jedno z 12 zdań. | OSADZIĆ `wykres-zdania` (+ zdanie z L008) |
-| POL.01.L009 zdania złożone | „Wykres — pokaż relację” (§8) | Zdanie współrzędne: części na jednym poziomie ze spójnikiem między nimi. Klocek `wykres-zlozonego` istnieje (G15). Brakuje osadzenia w L009 z przykładem z lekcji. | OSADZIĆ `wykres-zlozonego` |
+| POL.01.L008 części zdania | „Wykres zdania” (§9) i „Wizualizacja zależności” (§16) | Wykres zdania: „Wczoraj uczniowie przeczytali ciekawy tekst w bibliotece.” z podporządkowaniem. Klocek `wykres-zdania` istnieje i działa w G12 (zdania z lektur). Brakuje osadzenia; zdanie z L008 trzeba dodać do klocka albo wybrać jedno z 12 zdań. | DO DECYZJI: `wykres-zdania` jest przypisany do G12 (§0) |
+| POL.01.L009 zdania złożone | „Wykres — pokaż relację” (§8) | Zdanie współrzędne: części na jednym poziomie ze spójnikiem między nimi. Klocek `wykres-zlozonego` istnieje (G15). Brakuje osadzenia w L009 z przykładem z lekcji. | DO DECYZJI: `wykres-zlozonego` jest przypisany do G15 (§0) |
 | POL.01.L010 środki stylistyczne | „Wizualizacja i powiązania” (§19) | Mapa trzech pól dla każdego środka: definicja — przykład — funkcja. Linie łączą pary łatwo mylone (epitet/porównanie, metafora/porównanie, ożywienie/uosobienie, powtórzenie/anafora, symbol …). | ZBUDOWAĆ `schemat-pola` (mapa par) |
 | POL.02.G02 czasownik | „Schematy do zapamiętania” (§18) | To lista reguł (aspekt, strona, tryb), a nie schemat. | BEZ ZMIAN |
 | POL.02.G16 zdania podrzędne | „Wykres” (§7) | Wykres zdania podrzędnego: nadrzędne 1, podrzędne 1a, strzałka z pytaniem „kiedy?”. Klocek `wykres-zlozonego` istnieje. Dziennik lekcji (linia 227): „grafika niepotrzebna; wykres opisany w §7 słownie”. To świadoma decyzja autora. | DECYZJA (przywrócić tylko za zgodą autora) |

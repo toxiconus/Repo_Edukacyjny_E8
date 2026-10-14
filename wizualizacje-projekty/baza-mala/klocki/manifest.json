@@ -23,6 +23,33 @@
    "probowki.js",
    "palniki.js",
    "uklad_okresowy.js"
+  ],
+  "F06": [
+   "klocki.js",
+   "pomocnicze.js",
+   "dane/pierwiastki.js",
+   "znaki.js",
+   "probowki.js",
+   "palniki.js",
+   "uklad_okresowy.js"
+  ],
+  "F07": [
+   "klocki.js",
+   "pomocnicze.js",
+   "dane/pierwiastki.js",
+   "znaki.js",
+   "probowki.js",
+   "palniki.js",
+   "uklad_okresowy.js"
+  ],
+  "N03": [
+   "klocki.js",
+   "pomocnicze.js",
+   "dane/pierwiastki.js",
+   "znaki.js",
+   "probowki.js",
+   "palniki.js",
+   "uklad_okresowy.js"
   ]
  },
  "css": [

@@ -106,6 +106,10 @@ Następnie przewidź, który z nich najłatwiej tworzy typowy jon jednoatomowy.
 
 ## Doświadczenie v16 — barwienie płomienia
 
+@klocek palniki {seria="plomien"} | Próba płomieniowa: trzy palniki z solami metali
+@opis Trzy palniki z różnymi solami metali. Każdy płomień ma inną barwę, bo wzbudzone atomy metalu wysyłają światło o charakterystycznej barwie; sód przysłania inne barwy, a potas ogląda się przez szkło kobaltowe. Wniosek: barwa płomienia wskazuje metal w soli, a nie kwas.
+
+
 **Hipoteza:** różne sole metali mogą dawać charakterystyczne barwy płomienia.
 
 **BHP:** palnik wyłącznie w pracowni; okulary; zabezpieczone włosy i ubranie; soli i procedury dobiera nauczyciel.

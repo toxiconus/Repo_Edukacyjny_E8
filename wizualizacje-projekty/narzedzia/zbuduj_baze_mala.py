@@ -118,6 +118,8 @@ def katalog():
 def main():
     kopiuj()
     (OUT / "KATALOG_KLOCKOW.md").write_text(katalog(), encoding="utf-8")
+    import subprocess, sys
+    subprocess.run([sys.executable, str(Path(__file__).with_name("uzycia_wizualizacji.py"))], check=True)
     n = sum(1 for f in OUT.rglob("*") if f.is_file())
     print("pliki w baza-mala:", n, "rozmiar KB:", rozmiar(OUT) // 1024)
 

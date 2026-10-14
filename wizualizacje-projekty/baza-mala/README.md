@@ -7,6 +7,7 @@ Paczka dla zewnętrznych modeli AI i dla osób pracujących poza silnikiem. Zawi
 | Plik / folder | Co to jest |
 |---|---|
 | `KATALOG_KLOCKOW.md` | **Zacznij tutaj.** Spis wszystkiego w paczce: klocki laboratoryjne, modele chemii, grafiki biologii, polskie grafiki, tablice danych. |
+| `UZYCIA_WIZUALIZACJI.md` | **Które wizualizacje w których lekcjach i ile razy** (0 / 1 / wiele). Najpierw ulepszać te z największą liczbą użyć. Plik `uzycia.json` to to samo w formie maszynowej. |
 | `BRAKI_WIZUALIZACJI.md` | Lista 30 pozycji, których brakuje w lekcjach, z oczekiwanymi elementami każdej grafiki i zaleceniem (osadzić / rozszerzyć / zbudować / opisać / decyzja autora). |
 | `klocki/` | Mała baza: klocki laboratoryjne (zlewka, płomień, probówki, palniki, układ okresowy, znaki…) z `manifest.json` i folderem `dane/`. |
 | `klocki/lite/` | Lekkie silniki: rejestr modeli (`che-lite.js`), naczynia SVG (`rx-lite.js`), kalkulator stechiometryczny (`stech-lite.js`), dane zlewek (`lab-dane.json`). |
@@ -38,3 +39,12 @@ python3 wizualizacje-projekty/narzedzia/zbuduj_baze_mala.py
 ```
 
 Skrypt kopiuje foldery i generuje `KATALOG_KLOCKOW.md` na nowo. `README.md` i `BRAKI_WIZUALIZACJI.md` zachowuje — te pliki pisze się ręcznie.
+
+## Podmiana na nowszą wizualizację
+
+Lekcje odwołują się do wizualizacji tylko przez identyfikator (`@model`, `@viz`, `@klocek`, `@zlewka`). Dzięki temu:
+
+- nowszą wersję można podpiąć pod ten sam identyfikator (zmienia się tylko plik biblioteki, lekcje zostają),
+- albo zmienić nazwę: `python3 wizualizacje-projekty/narzedzia/uzycia_wizualizacji.py --podmien STARE NOWE` (podgląd), a z `--zapisz` wykonuje zamianę we wszystkich lekcjach.
+
+Po podmianie przebuduj lekcje i uruchom skrypt ponownie. Stara nazwa powinna mieć 0 użyć.

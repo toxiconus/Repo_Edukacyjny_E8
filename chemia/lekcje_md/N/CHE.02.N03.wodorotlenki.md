@@ -289,6 +289,10 @@ To dzięki jonowi OH⁻ roztwór ma odczyn zasadowy.
 
 ## 3. DOŚWIADCZENIE MODEL
 
+@klocek probowki {metale="Mg,Ca,Na", wskaznik="1"} | Trzy probówki z wodą: magnez, wapń i sód
+@opis Trzy probówki z wodą i fenoloftaleiną. Każdy metal reaguje z inną szybkością: pęcherzyki wodoru pojawiają się najszybciej przy sodzie, wolniej przy wapniu i prawie wcale przy magnezie. Roztwór z wodorotlenkiem różowieje. Wniosek: metal + woda → wodorotlenek + wodór, a reaktywność rośnie od magnezu do sodu.
+
+
 ### Doświadczenie 1: Odczyn wodorotlenku sodu
 
 **Problem:** Jaki odczyn ma roztwór wodorotlenku sodu?  

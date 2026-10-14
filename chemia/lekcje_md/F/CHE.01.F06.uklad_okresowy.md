@@ -635,6 +635,10 @@ Czytaj okres, grupę, blok, rodzinę i ogólne trendy. Trendy są narzędziem pr
 
 ## 2. Układ okresowy jako mapa, a nie tabela do zapamiętania
 
+@klocek uklad-okresowy {} | Mini układ okresowy: kliknij grupę 1 albo 2
+@opis Mini układ okresowy z kafelkami pierwiastków grup 1 i 2. Kliknięcie grupy pokazuje jej pierwiastki i dane pod kafelkami. Wniosek: pierwiastki z tej samej grupy mają podobne właściwości, bo mają tyle samo elektronów walencyjnych.
+
+
 Układ okresowy porządkuje pierwiastki według rosnącej liczby atomowej Z i grupuje te, których konfiguracje elektronowe oraz właściwości wykazują podobieństwa. Najważniejsza umiejętność F06 to **przejście od adresu pierwiastka do przewidywania**, a nie samo znalezienie kratki.
 
 ### Procedura odczytu pierwiastka

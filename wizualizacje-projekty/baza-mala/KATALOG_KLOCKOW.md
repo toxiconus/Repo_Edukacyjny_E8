@@ -8,7 +8,7 @@ Ta paczka zawiera kopie tego, co już działa w lekcjach. Zewnętrzny model moż
 
 | Folder | Zawartość | Rozmiar |
 |---|---|---|
-| `klocki` | kopia folderu | 109 KB |
+| `klocki` | kopia folderu | 110 KB |
 | `klocki/lite` | kopia folderu | 36 KB |
 | `gfx` | kopia folderu | 720 KB |
 | `tablice` | kopia folderu | 1612 KB |
@@ -39,6 +39,9 @@ Ta paczka zawiera kopie tego, co już działa w lekcjach. Zewnętrzny model moż
 Lekcje i pliki, które wymieniają (`manifest.json` → `lekcje`):
 
 - **P01**: `klocki.js`, `pomocnicze.js`, `dane/pierwiastki.js`, `znaki.js`, `probowki.js`, `palniki.js`, `uklad_okresowy.js`
+- **F06**: `klocki.js`, `pomocnicze.js`, `dane/pierwiastki.js`, `znaki.js`, `probowki.js`, `palniki.js`, `uklad_okresowy.js`
+- **F07**: `klocki.js`, `pomocnicze.js`, `dane/pierwiastki.js`, `znaki.js`, `probowki.js`, `palniki.js`, `uklad_okresowy.js`
+- **N03**: `klocki.js`, `pomocnicze.js`, `dane/pierwiastki.js`, `znaki.js`, `probowki.js`, `palniki.js`, `uklad_okresowy.js`
 
 Lekkie silniki (`klocki/lite/`): `che-lite.js` (rejestr modeli), `rx-lite.js` (naczynia SVG), `stech-lite.js` (kalkulator stechiometryczny), `lab-dane.json` (dane zlewek).
 
