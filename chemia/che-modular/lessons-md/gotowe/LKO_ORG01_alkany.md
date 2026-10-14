@@ -139,7 +139,7 @@ Pozostałe alkany C2–C5 — wszystkie zbilansowane, sprawdź każdy samodzieln
 
 Zauważ regularność: dla alkana CₙH₂ₙ₊₂ pełne spalanie potrzebuje O₂ w ilości n + (2n+2)/4 moli na mol paliwa (metan: 1 + 1 = 2 ✔; propan: 3 + 2 = 5 ✔; pentan: 5 + 3 = 8 ✔). W konkursie to przyspiesza rachunek objętości.
 
-**Spalanie niecałkowite** — gdy tlenu brakuje: obok (lub zamiast) CO₂ powstają **tlenek węgla CO** i **sadza C**; płomień jest żółty i kopcący (porównaj: spalanie całkowite daje płomień niebieski, bez dymu). Zapisy: 2CH₄ + 3O₂ → 2CO + 4H₂O; CH₄ + O₂ → C + 2H₂O. Niebezpieczeństwo CO — bezbarwny, bezwonny, trujący (blokuje transport tlenu we krwi — szczegóły w N01).
+**Spalanie niecałkowite** — gdy tlenu brakuje: obok (lub zamiast) CO₂ powstają **tlenek węgla CO** i **sadza C**; płomień jest żółty i kopcący (porównaj: spalanie całkowite daje płomień niebieski, bez dymu). Ilość tlenu decyduje o produkcie: przy umiarkowanym niedoborze powstaje głównie CO, przy dużym — sadza (węgiel). Zapisy: 2CH₄ + 3O₂ → 2CO + 4H₂O; CH₄ + O₂ → C + 2H₂O. Niebezpieczeństwo CO — bezbarwny, bezwonny, trujący (blokuje transport tlenu we krwi — szczegóły w N01).
 
 ::: karta understand | W skrócie — trzy jednostki spalania propanu
 Zadanie z wojewódzkiego zwykle chce wszystkich trzech: **moli, gramów i dm³**. Przykład: 11 g propanu (0,25 mol; M = 44).
@@ -468,3 +468,9 @@ Zastosowano wszystkie uwagi z audytu Perplexity (P1–P16, braki, typy zadań, p
 - Test: poprawna odpowiedź przestawiona w pięciu pytaniach; dodano dwa pytania (U9).
 - Poprawione względem propozycji: suma spalin w zadaniu 6(d) to 284,5 dm³ (przy 79% N₂), a nie 282 dm³ (przy 78%, z poprzedniej wersji).
 - Nieprzyjęte: brak odrzuceń. Do decyzji zostaje wariant 78% vs 79% N₂ (patrz „Do weryfikacji").
+
+## AUDYT W1/W2 — zewnętrzny, LKO-ORG01 (2026-10-14)
+
+Zastosowano: dopisano, że przy umiarkowanym niedoborze tlenu powstaje głównie CO, a przy dużym — sadza (spalanie niecałkowite).
+
+Nieprzyjęte (sprawdzone w pliku): izomery pentanu są już pełne — n-pentan, izopentan (2-metylobutan) i neopentan (2,2-dimetylopropan), z zasadą liczenia izomerów; temperatura wrzenia neopentanu nie występuje w lekcji, więc nie ma czego poprawiać; przykład 11 g propanu jest poprawny (0,25 mol; 0,75 mol CO₂ = 33 g; 1 mol H₂O; 1,25 mol O₂ = 40 g) i jest w karcie „W skrócie”; światło (dzienne lub UV) jest podane przy reakcji; kolejne produkty chlorowania (CH₃Cl → CH₂Cl₂ → CHCl₃ → CCl₄) są opisane jako kolejne podstawienia; wzory z indeksami dolnymi są już zapisane.

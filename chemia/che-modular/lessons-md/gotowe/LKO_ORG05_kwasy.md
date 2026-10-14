@@ -103,6 +103,8 @@ Roztwory kwasów karboksylowych mają **odczyn kwaśny**: lakmus czerwienieje, f
 
 **CH₃COOH ⇌ CH₃COO⁻ + H⁺**
 
+W roztworze wodnym proton przyłącza się do cząsteczki wody i powstaje jon hydroniowy H₃O⁺: CH₃COOH + H₂O ⇌ CH₃COO⁻ + H₃O⁺. Zapis z H⁺ jest uproszczeniem stosowanym w zadaniach; oba zapisy oznaczają to samo.
+
 Dwie kluczowe cechy tej dysocjacji:
 
 1. **Jest odwracalna (strzałka ⇌)** — tylko **część** cząsteczek oddaje H⁺; reszta pozostaje w postaci niezdysocjowanej. Dlatego kwas octowy nazywamy **kwasem słabym** i **słabym elektrolitem**: roztwór przewodzi prąd, ale słabo (mało jonów) — w przeciwieństwie do HCl, który dysocjuje niemal całkowicie (kwas mocny).
@@ -116,6 +118,14 @@ Słabość kwasu dotyczy **stopnia dysocjacji**, nie siły działania. Kwas octo
 
 ::: karta extra | Lód octowy — kwas, który krzepnie w chłodzie
 Czysty (bezwodny) kwas octowy krzepnie już w temperaturze ok. 17 °C (dokładnie ok. 16,6 °C) — w nieogrzewanym laboratorium zimą butelka zamienia się w blok przypominający lód, stąd historyczna nazwa **kwas octowy lodowaty** (glacjalny). To wygodna puenta własności fizycznych: nie każda „kwaśna" ciecz jest taka sama — ocet stołowy (roztwór kilku–kilkunastu procent) zamarza dopiero w zamrażarce, bo woda obniża temperaturę krzepnięcia (przypomnij wykresy R02 — analogia dla roztworów).
+:::
+
+::: karta understand | W skrócie — kwas słaby, mocny i etanol
+| Substancja | Czy oddaje H⁺? | Odczyn | Przewodnictwo |
+|---|---|---|---|
+| Kwas octowy | częściowo | kwasowy | słabe |
+| Kwas solny (HCl) | prawie całkowicie | kwasowy | dobre |
+| Etanol | praktycznie nie | obojętny | bardzo słabe |
 :::
 
 ## 3 | Wykład — cztery drogi reakcji kwasu octowego {#reakcje}
@@ -489,3 +499,9 @@ Zastosowano uwagi z audytu Perplexity:
 - Już obecne w lekcji (nie dodawano): wzór CₙH₂ₙO₂, pułapka mas molowych kwasu metanowego i etanolu, karta obserwacja–wniosek, typowe błędy.
 - Nieprzyjęte: pełny mechanizm dysocjacji kwasów karboksylowych i fermentacji octowej — poza rdzeniem lekcji.
 - Nic nie usunięto.
+
+## AUDYT W1/W2 — zewnętrzny, LKO-ORG05 (2026-10-14)
+
+Zastosowano: dopisano zapis dysocjacji z jonem hydroniowym H₃O⁺ (z zastrzeżeniem, że zapis z H⁺ jest uproszczeniem); dodano kartę „W skrócie” z tabelą kwas octowy – kwas solny – etanol (oddawanie H⁺, odczyn, przewodnictwo).
+
+Nieprzyjęte (sprawdzone w pliku): wzór ogólny CₙH₂ₙ₊₁COOH jest już w lekcji (wraz z wyjaśnieniem n); uwaga o miedzi i zazielenieniu (powolne utlenianie z udziałem tlenu, nie wypieranie wodoru) jest już w sekcji o metalach; octan miedzi (CH₃COO)₂Cu i równania Mg i Zn są poprawne; równanie Cu + CH₃COOH nie jest zapisane jako reakcja, tylko jako zapis fałszywy.
