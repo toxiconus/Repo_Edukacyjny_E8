@@ -7,7 +7,7 @@ lead: Nauczysz się projektować, wykonywać i dokumentować doświadczenia chem
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]][[extra:AMBITNE]]
 uwaga: Zakres podstawy programowej klasy 7–8 oraz typowe zadania konkursowe; liczby w przykładach (pH, współczynniki) są orientacyjne i służą ilustracji.
 stopka: **CHEMIA LAB01 v1.0** · Doświadczenia · 2026
-stan: W1/W2 — uzupełnienia zewnętrznego audytu 2026-10-14 (zmienne i próby kontrolne, procedura po wypadku, tabela błędów zapisu, audyt wiarygodności, fiszki); W1 FULL do wykonania
+stan: W1/W2 — uzupełnienia zewnętrznego audytu 2026-10-14 (zmienne i próby kontrolne, procedura po wypadku, tabela błędów zapisu, audyt wiarygodności, fiszki); pełny przegląd linia po linii jeszcze nieprzeprowadzony
 ---
 
 ::: minimum | Muszę umieć — 10 punktów
