@@ -334,16 +334,14 @@
   "acid-calculator": {},
   "acid-game": {},
   "acid-rain-v01": {
-   "N04_kwasy": 1
+   "N04": 1
   },
   "acid-table": {},
-  "beaker-prediction-enhanced": {
-   "F01_jak_mysli_chemik": 1
-  },
+  "beaker-prediction-enhanced": {},
   "carboxyl": {},
   "chain-scn": {
-   "N02_tlenki": 1,
-   "N05_sole": 1
+   "N02": 1,
+   "N05": 1
   },
   "che-spojnosc-v01": {},
   "che-test-silnika-v01": {},
@@ -355,200 +353,183 @@
   "env-balance": {},
   "equilibrium": {},
   "fiz-coulomb-v01": {
-   "FIZ01_elektrostatyka": 3
+   "FIZ01": 3
   },
   "fiz-elektroskop-v01": {
-   "FIZ01_elektrostatyka": 3
+   "FIZ01": 3
   },
   "fiz-elektryzowanie-v01": {
-   "FIZ01_elektrostatyka": 3
+   "FIZ01": 3
   },
   "fiz-ladunek-v01": {
-   "FIZ01_elektrostatyka": 3
+   "FIZ01": 3
   },
   "fiz-przewodniki-v01": {
-   "FIZ01_elektrostatyka": 1
+   "FIZ01": 1
   },
   "flashcards-deck": {},
   "flow-egzamin-enhanced": {},
   "flow-naming": {},
   "gfx-scene-acidMetal": {
-   "CHE.02.N01.powietrze_i_gazy": 1,
-   "N01_powietrze_i_gazy": 1,
-   "N04_kwasy": 1
+   "N01": 1,
+   "N04": 1
   },
   "gfx-scene-carbonate": {
-   "CHE.02.N01.powietrze_i_gazy": 1,
-   "N01_powietrze_i_gazy": 1,
-   "N02_tlenki": 1
+   "N01": 1,
+   "N02": 1
   },
   "gfx-scene-conductivity": {
-   "FIZ01_elektrostatyka": 1,
-   "N04_kwasy": 1,
-   "N05_sole": 1
+   "FIZ01": 1,
+   "N04": 1,
+   "N05": 1
   },
   "gfx-scene-dilution": {
-   "N04_kwasy": 1
+   "N04": 1
   },
   "gfx-scene-gasCollection": {},
   "gfx-scene-heating": {},
   "gfx-scene-indicator": {},
   "gfx-scene-indicatorRack": {
-   "N03_wodorotlenki": 1,
-   "N04_kwasy": 1
+   "N03": 1,
+   "N04": 1
   },
   "gfx-scene-titration": {
-   "N04_kwasy": 1
+   "N04": 1
   },
   "hf-paradox": {},
   "ion-map-v02": {
-   "N05_sole": 1
+   "N05": 1
   },
   "ion-vs-diss": {
-   "J03_rownania_jonowe_i_stracanie": 1
+   "J03": 1
   },
   "ka-pka-table": {},
   "kinetics-v01": {},
   "kw-bufor-v01": {
-   "N04_kwasy": 1
+   "N04": 1
   },
   "kw-doswiadczenia-v01": {
-   "N04_kwasy": 11
+   "N04": 11
   },
   "kw-dysocjacja-v01": {
-   "FIZ01_elektrostatyka": 1,
-   "N04_kwasy": 1
+   "FIZ01": 1,
+   "N04": 1
   },
   "kw-reszty-v01": {
-   "N04_kwasy": 1,
-   "N05_sole": 1
+   "N04": 1,
+   "N05": 1
   },
   "kw-szereg-metali-v01": {
-   "N04_kwasy": 1,
-   "N05_sole": 1
+   "N04": 1,
+   "N05": 1
   },
   "kw-wlasciwosci-v01": {
-   "N04_kwasy": 1
+   "N04": 1
   },
   "lab-beaker-v102": {},
   "lab-library-v001": {},
-  "lab-stations-v102": {
-   "F03_wlasciwosci_i_rozdzielanie": 1
-  },
-  "live-cv": {
-   "F01_jak_mysli_chemik": 1
-  },
-  "mind-map": {
-   "F01_jak_mysli_chemik": 1
-  },
+  "lab-stations-v102": {},
+  "live-cv": {},
+  "mind-map": {},
   "molecule-2d": {},
   "molecule-cv": {},
   "molecule-electrons": {},
   "molecule-orbitals": {},
   "molecule3d-merged": {
-   "F02_materia_i_substancje": 1,
-   "N02_tlenki": 1,
-   "REV01_powtorka_klasy_7": 1
+   "N02": 1
   },
   "n01-doswiadczenia-v01": {
-   "N02_tlenki": 4
+   "N02": 4
   },
   "n01-konstruktor-v01": {
-   "N02_tlenki": 1,
-   "REV01_powtorka_klasy_7": 1
+   "N02": 1
   },
   "n01-reaktor-v01": {
-   "N02_tlenki": 1
+   "N02": 1
   },
   "n01-spalanie-v01": {
-   "CHE.02.N01.powietrze_i_gazy": 1,
-   "N01_powietrze_i_gazy": 1,
-   "N02_tlenki": 2
+   "N01": 1,
+   "N02": 2
   },
   "n01-tlenki-v01": {
-   "N02_tlenki": 1
+   "N02": 1
   },
   "n01-trend-v01": {
-   "N02_tlenki": 1
+   "N02": 1
   },
   "n02-doswiadczenia-v01": {
-   "N03_wodorotlenki": 8
+   "N03": 8
   },
   "n02-dysocjacja-v01": {
-   "N03_wodorotlenki": 1
+   "N03": 1
   },
   "n02-otrzymywanie-v01": {
-   "N03_wodorotlenki": 1
+   "N03": 1
   },
   "n02-przeglad-v01": {
-   "N03_wodorotlenki": 1
+   "N03": 1
   },
   "n02-reaktor-v01": {
-   "N03_wodorotlenki": 1
+   "N03": 1
   },
   "n02-stracanie-v01": {
-   "N03_wodorotlenki": 1
+   "N03": 1
   },
   "n02-wzory-v01": {
-   "N03_wodorotlenki": 1,
-   "REV01_powtorka_klasy_7": 1
+   "N03": 1
   },
   "n02-zobojetnianie-v01": {
-   "N03_wodorotlenki": 1
+   "N03": 1
   },
   "j03-osady-v01": {
-   "J03_rownania_jonowe_i_stracanie": 1
+   "J03": 1
   },
   "naming-table": {},
   "neutralization": {},
   "obtaining-hcl-steps": {},
   "obtaining-three": {},
   "f05-izotopy-v01": {
-   "F05_izotopy_jony_masa_atomowa": 1,
-   "REV01_powtorka_klasy_7": 1
+   "F05": 1
   },
   "periodic-54": {
-   "F04_atom": 1,
-   "F06_uklad_okresowy": 1,
-   "N02_tlenki": 1,
-   "REV01_powtorka_klasy_7": 1
+   "F06": 1,
+   "N02": 1
   },
   "ph-indicators-v03": {
-   "N03_wodorotlenki": 2,
-   "N04_kwasy": 1
+   "N03": 2,
+   "N04": 1
   },
   "ph-ladder": {},
   "reaction": {},
   "reakcje-kwasu-v03": {
-   "N04_kwasy": 1
+   "N04": 1
   },
   "rownania-jonowe-v01": {
-   "J03_rownania_jonowe_i_stracanie": 1,
-   "N03_wodorotlenki": 1,
-   "N04_kwasy": 1,
-   "N05_sole": 1
+   "J03": 1,
+   "N03": 1,
+   "N04": 1,
+   "N05": 1
   },
   "safety": {},
   "sole-doswiadczenia-v01": {
-   "N05_sole": 14
+   "N05": 14
   },
   "species-v01": {},
   "stech-kalkulator-v01": {
-   "F17_rownania_reakcji_i_obliczenia": 1,
-   "N02_tlenki": 1,
-   "N05_sole": 1
+   "F17": 1,
+   "N02": 1,
+   "N05": 1
   },
   "substance": {},
   "tabela-rozpuszczalnosci-v01": {
-   "J03_rownania_jonowe_i_stracanie": 1,
-   "N03_wodorotlenki": 1,
-   "N04_kwasy": 1,
-   "N05_sole": 1,
-   "REV01_powtorka_klasy_7": 1
+   "J03": 1,
+   "N03": 1,
+   "N04": 1,
+   "N05": 1
   },
   "timeline": {},
   "titration-merged": {
-   "N04_kwasy": 1
+   "N04": 1
   },
   "n05-wodorki-v01": {},
   "n05-trendy-v01": {},
@@ -557,7 +538,7 @@
   "f10-energia-h2-v01": {},
   "f15-dipol-v01": {},
   "f17-bilans-v01": {
-   "F17_rownania_reakcji_i_obliczenia": 1
+   "F17": 1
   },
   "r03-krzyz-v01": {
    "R03A_mieszanie_roztworow_regula_krzyzowa": 1
@@ -616,7 +597,7 @@
   "gasCollect": {},
   "tubeRack": {},
   "conductivity": {
-   "N04_kwasy": 2
+   "N04": 2
   },
   "pHscale": {},
   "pHmeter": {},
@@ -634,24 +615,24 @@
   "chargeBar": {},
   "discharge": {},
   "acidMetal": {
-   "N04_kwasy": 1
+   "N04": 1
   },
   "indicator": {
-   "N04_kwasy": 1
+   "N04": 1
   },
   "indicatorRack": {},
   "titration": {},
   "dilution": {},
   "gasCollection": {},
   "carbonate": {
-   "N04_kwasy": 1
+   "N04": 1
   },
   "heating": {},
   "liH2o": {
-   "F06_uklad_okresowy": 1
+   "F06": 1
   },
   "kH2o": {
-   "F06_uklad_okresowy": 1
+   "F06": 1
   },
   "caH2o": {},
   "mgH2oHot": {},
@@ -659,9 +640,9 @@
   "k2oH2o": {},
   "li2oH2o": {},
   "caoH2o": {
-   "N02_tlenki": 1,
-   "N03_wodorotlenki": 1,
-   "N05_sole": 1
+   "N02": 1,
+   "N03": 1,
+   "N05": 1
   },
   "mgoH2o": {},
   "baoH2o": {},
@@ -685,7 +666,7 @@
   "feoh3Hcl": {},
   "znoh2Hcl": {},
   "aloh3Naoh": {
-   "N03_wodorotlenki": 1
+   "N03": 1
   },
   "znoh2Naoh": {},
   "baoh2Co2": {},
@@ -710,40 +691,38 @@
   "znoNaohAq": {},
   "sio2Naoh": {},
   "bacl2Na2so4": {
-   "N05_sole": 1
+   "N05": 1
   },
   "cacl2Na2co3": {
-   "N05_sole": 1
+   "N05": 1
   },
   "na2co3Hcl": {
-   "N05_sole": 1
+   "N05": 1
   },
   "cuso4Hydrate": {
-   "N05_sole": 1
+   "N05": 1
   },
   "hyd-nacl": {},
   "hyd-na2co3": {
-   "N05_sole": 1
+   "N05": 1
   },
   "hyd-nh4cl": {
-   "N05_sole": 1
+   "N05": 1
   },
   "hyd-cuso4": {},
   "palenie": {},
   "uklad-okresowy": {
-   "CHE.01.F06.uklad_okresowy": 1,
-   "P01_blok_s_litowce_berylowce_s01": 1
+   "P01": 1
   },
   "plomien": {},
   "zlewka": {},
   "metal-woda": {},
   "palniki": {
-   "CHE.01.F07.konfiguracja_elektronowa": 1,
-   "P01_blok_s_litowce_berylowce_s01": 1
+   "F07": 1,
+   "P01": 1
   },
   "probowki": {
-   "CHE.02.N03.wodorotlenki": 1,
-   "P01_blok_s_litowce_berylowce_s01": 1
+   "P01": 1
   },
   "gruczoly-mapa": {
    "BIO.07.U10.uklad_dokrewny": 1
@@ -812,8 +791,7 @@
    "BIO.01.L008.mikroskop_jak_obserwowac_komorke_a": 1
   },
   "od-organizmu-do-genu": {
-   "BIO.02.L010.dna_od_zera": 1,
-   "BIO.02.L010.genetyka_i_dna_od_zera": 1
+   "BIO.02.L010.dna_od_zera": 1
   },
   "konczyny-homologiczne": {
    "BIO.03.L030.czym_jest_ewolucja_i_jakie": 1,
@@ -969,18 +947,12 @@
    "POL.02.G15.zdania_wspolrzedne": 1
   },
   "f01-doswiadczenia-v01": {
-   "CHE.02.N01.powietrze_i_gazy": 1,
-   "F01_jak_mysli_chemik": 7,
-   "F02_materia_i_substancje": 3,
-   "F17_rownania_reakcji_i_obliczenia": 1,
-   "N01_powietrze_i_gazy": 1,
-   "R03_woda_roztwory_stezenie_procentowe": 2
+   "F17": 1,
+   "N01": 1
   },
-  "f03-rozdzielanie-v01": {
-   "F03_wlasciwosci_i_rozdzielanie": 3
-  },
+  "f03-rozdzielanie-v01": {},
   "f06-doswiadczenia-v01": {
-   "F06_uklad_okresowy": 5
+   "F06": 5
   },
   "cah2H2o": {},
   "nahH2o": {},
@@ -993,43 +965,24 @@
   "nh3Hcl": {},
   "h2sPbac": {},
   "h2sCuso4": {},
-  "f01SolWoda": {
-   "F01_jak_mysli_chemik": 1,
-   "F02_materia_i_substancje": 1,
-   "R03_woda_roztwory_stezenie_procentowe": 1
-  },
-  "f01Odparowanie": {
-   "F01_jak_mysli_chemik": 1,
-   "F02_materia_i_substancje": 1,
-   "F03_wlasciwosci_i_rozdzielanie": 1,
-   "R03_woda_roztwory_stezenie_procentowe": 1
-  },
-  "f01SodaOcet": {
-   "F01_jak_mysli_chemik": 1
-  },
+  "f01SolWoda": {},
+  "f01Odparowanie": {},
+  "f01SodaOcet": {},
   "f01WodaWapienna": {
-   "CHE.02.N01.powietrze_i_gazy": 1,
-   "F01_jak_mysli_chemik": 1,
-   "N01_powietrze_i_gazy": 1
+   "N01": 1
   },
   "f01Mg": {
-   "F01_jak_mysli_chemik": 1,
-   "F17_rownania_reakcji_i_obliczenia": 1
+   "F17": 1
   },
-  "f01FeS": {
-   "F01_jak_mysli_chemik": 1,
-   "F02_materia_i_substancje": 1
-  },
-  "f03PiasekWoda": {
-   "F03_wlasciwosci_i_rozdzielanie": 1
-  },
+  "f01FeS": {},
+  "f03PiasekWoda": {},
   "f03KredaWoda": {},
   "f06Cl2Kbr": {
-   "F06_uklad_okresowy": 1
+   "F06": 1
   },
   "f06Cl2Ki": {},
   "f06Br2Ki": {
-   "F06_uklad_okresowy": 1
+   "F06": 1
   },
   "f06I2Kbr": {}
  },
@@ -1037,6 +990,7 @@
   "acid-calculator",
   "acid-game",
   "acid-table",
+  "beaker-prediction-enhanced",
   "carboxyl",
   "che-spojnosc-v01",
   "che-test-silnika-v01",
@@ -1058,6 +1012,9 @@
   "kinetics-v01",
   "lab-beaker-v102",
   "lab-library-v001",
+  "lab-stations-v102",
+  "live-cv",
+  "mind-map",
   "molecule-2d",
   "molecule-cv",
   "molecule-electrons",
@@ -1206,6 +1163,7 @@
   "zlewka",
   "metal-woda",
   "id",
+  "f03-rozdzielanie-v01",
   "cah2H2o",
   "nahH2o",
   "nh4clCaoh2",
@@ -1217,13 +1175,17 @@
   "nh3Hcl",
   "h2sPbac",
   "h2sCuso4",
+  "f01SolWoda",
+  "f01Odparowanie",
+  "f01SodaOcet",
+  "f01FeS",
+  "f03PiasekWoda",
   "f03KredaWoda",
   "f06Cl2Ki",
   "f06I2Kbr"
  ],
  "jeden": [
   "acid-rain-v01",
-  "beaker-prediction-enhanced",
   "fiz-przewodniki-v01",
   "gfx-scene-dilution",
   "gfx-scene-titration",
@@ -1231,9 +1193,8 @@
   "ion-vs-diss",
   "kw-bufor-v01",
   "kw-wlasciwosci-v01",
-  "lab-stations-v102",
-  "live-cv",
-  "mind-map",
+  "molecule3d-merged",
+  "n01-konstruktor-v01",
   "n01-reaktor-v01",
   "n01-tlenki-v01",
   "n01-trend-v01",
@@ -1242,8 +1203,10 @@
   "n02-przeglad-v01",
   "n02-reaktor-v01",
   "n02-stracanie-v01",
+  "n02-wzory-v01",
   "n02-zobojetnianie-v01",
   "j03-osady-v01",
+  "f05-izotopy-v01",
   "reakcje-kwasu-v03",
   "titration-merged",
   "f17-bilans-v01",
@@ -1260,6 +1223,8 @@
   "cuso4Hydrate",
   "hyd-na2co3",
   "hyd-nh4cl",
+  "uklad-okresowy",
+  "probowki",
   "gruczoly-mapa",
   "eutrofizacja",
   "krazenie-obiegi",
@@ -1270,6 +1235,7 @@
   "nefron",
   "droga-pokarmu",
   "ucho-droga",
+  "od-organizmu-do-genu",
   "enzym-warunki",
   "homeostaza",
   "luk-odruchowy",
@@ -1299,8 +1265,8 @@
   "rozbior-zdania",
   "wykres-zdania",
   "wykres-zlozonego",
-  "f01SodaOcet",
-  "f03PiasekWoda",
+  "f01WodaWapienna",
+  "f01Mg",
   "f06Cl2Kbr",
   "f06Br2Ki"
  ],
@@ -1318,13 +1284,9 @@
   "kw-dysocjacja-v01",
   "kw-reszty-v01",
   "kw-szereg-metali-v01",
-  "molecule3d-merged",
   "n01-doswiadczenia-v01",
-  "n01-konstruktor-v01",
   "n01-spalanie-v01",
   "n02-doswiadczenia-v01",
-  "n02-wzory-v01",
-  "f05-izotopy-v01",
   "periodic-54",
   "ph-indicators-v03",
   "rownania-jonowe-v01",
@@ -1333,9 +1295,7 @@
   "tabela-rozpuszczalnosci-v01",
   "conductivity",
   "caoH2o",
-  "uklad-okresowy",
   "palniki",
-  "probowki",
   "kod-genetyczny",
   "drabina",
   "lancuch",
@@ -1343,7 +1303,6 @@
   "poziomy-dna",
   "podzial-komorki",
   "mikroskop-model",
-  "od-organizmu-do-genu",
   "konczyny-homologiczne",
   "relacje-ekologiczne",
   "siec-troficzna",
@@ -1360,28 +1319,17 @@
   "trener-nici",
   "pary-zasad",
   "f01-doswiadczenia-v01",
-  "f03-rozdzielanie-v01",
-  "f06-doswiadczenia-v01",
-  "f01SolWoda",
-  "f01Odparowanie",
-  "f01WodaWapienna",
-  "f01Mg",
-  "f01FeS"
+  "f06-doswiadczenia-v01"
  ],
  "nie_w_bazie": [
   "-",
   "caoh2Co2",
   "cuoH2so4",
   "cuso4Naoh",
-  "f02-czastki-v01",
-  "f02-magnes-fes-v01",
-  "f04-nuklid-v01",
   "fecl3Naoh",
   "hclNaOH",
   "mgO2",
   "naH2o",
-  "r03-krzywe-v01",
-  "r03-stezenie-v01",
   "rx-ag-cl",
   "rx-cu-naoh",
   "rx-fe-cuso4",

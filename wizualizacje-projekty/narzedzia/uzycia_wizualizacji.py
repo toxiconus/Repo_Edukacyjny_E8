@@ -31,8 +31,15 @@ ZRODLA = {
 }
 
 
+def klucz_lekcji(b):
+    """Kod lekcji (np. N03) z nazwy pliku: CHE.02.N03.xxx albo N03_xxx; inaczej sama nazwa."""
+    m = re.match(r"CHE\.\d\d\.([A-Z]+\d+)", b) or re.match(r"([A-Z]+\d+)_", b)
+    return m.group(1) if m else b[:-3]
+
+
 def lekcje():
-    """Unikalne lekcje (po nazwie pliku; późniejsze źródło nadpisuje, jak w buildzie)."""
+    """Unikalne lekcje: jedna wersja na kod. Kanon (lekcje_md) ma pierwszeństwo przed kopią gotową,
+    więc każda lekcja liczy się raz. Kopie gotowe bez odpowiednika w kanonie (LKO itp.) zostają."""
     out = {}
     for przedm, wzorce in ZRODLA.items():
         for w in wzorce:
@@ -40,7 +47,10 @@ def lekcje():
                 b = os.path.basename(f)
                 if b.startswith("README") or ".99.X" in b:
                     continue
-                out[b[:-3]] = (przedm, Path(f))
+                k = klucz_lekcji(b)
+                if k in out and "gotowe" in f:
+                    continue
+                out[k] = (przedm, Path(f))
     return out
 
 

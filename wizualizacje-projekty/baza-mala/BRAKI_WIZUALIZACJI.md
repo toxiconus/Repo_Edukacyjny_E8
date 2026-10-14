@@ -25,12 +25,7 @@ Zasada tej rundy: osadzać tylko wizualizacje już napisane pod konkretną lekcj
 - CHE LAB `znaki`: w lekcji LAB nie ma tematu znaków ostrzegawczych.
 - BIO L001 `komorka`: nie jest zbudowana (w bibliotece jest `komorka-nakladki`), więc nie była „już napisana”.
 
-**Duplikat L010 do decyzji.** Są dwie wersje lekcji:
-
-- `okladki/biologia/md/BIO.02.L010.dna_od_zera.md`: 66 KB, 12 grafik, audyt W1 z 2026-10-12. To wersja aktualna, ale nie leży w źródłach buildu BIO (`zbuduj_wszystkie.py`).
-- `biologia/md/BIO.02.L010.genetyka_i_dna_od_zera.md`: 24 KB, 1 grafika, bez audytu. Kopia starsza, nadal budowana do `biologia/html/`.
-
-Nie usuwałem żadnej z nich. Decyzja: którą wersję uznać za kanon i czy usunąć drugą.
+**Duplikat L010 rozstrzygnięty (commit 565fcf7).** Kanon: `biologia/bio/md/BIO.02.L010.dna_od_zera.md` (66 KB, 12 grafik, audyt W1). Starsza kopia `biologia/md/BIO.02.L010.genetyka_i_dna_od_zera.md` (24 KB, 1 grafika) usunięta razem z HTML; jest w historii gita.
 
 
 

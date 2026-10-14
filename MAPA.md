@@ -3,7 +3,7 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (11 pl., 375 KB)
+## .  (11 pl., 380 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 15 KB
@@ -12,7 +12,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PRZEGLAD_LEKCJI.md` 27 KB
 - `PRZEKAZANIE.md` 27 KB
 - `README.md` 0 KB
-- ⚠`SPIS_WSZYSTKICH.md` 56 KB
+- ⚠`SPIS_WSZYSTKICH.md` 61 KB
 - ⚠`WERYFIKACJA.md` 51 KB
 - ⚠`przeglad_lekcji.json` 146 KB
 
@@ -1084,12 +1084,12 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PRZEKAZANIE.md` 3 KB
 - ⚠`wzorcownia.html` 59 KB
 
-## wizualizacje-projekty/baza-mala  (5 pl., 138 KB)
+## wizualizacje-projekty/baza-mala  (5 pl., 126 KB)
 - `BRAKI_WIZUALIZACJI.md` 16 KB
 - `KATALOG_KLOCKOW.md` 26 KB
 - `README.md` 3 KB
-- ⚠`UZYCIA_WIZUALIZACJI.md` 61 KB
-- `uzycia.json` 31 KB
+- ⚠`UZYCIA_WIZUALIZACJI.md` 51 KB
+- `uzycia.json` 29 KB
 
 ## wizualizacje-projekty/baza-mala/biblioteki/biologia  (1 pl., 14 KB)
 - `BIO_KATALOG.md` 14 KB
