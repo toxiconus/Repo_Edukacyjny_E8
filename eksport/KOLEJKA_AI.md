@@ -24,35 +24,37 @@
 
 ## chemia
 
-**WYSŁAĆ (bez W1) — 29 lekcji, 875 KB:** J03 (89 KB) · J07 (9 KB) · J08 (10 KB) · J09 (10 KB) · J10 (9 KB) · K01 (14 KB) · K02 (10 KB) · K03 (11 KB) · K04 (31 KB) · K05 (17 KB) · K06 (14 KB) · K08 (12 KB) · LAB01 (55 KB) · LKO-ORG01 (26 KB) · LKO-ORG02 (23 KB) · LKO-ORG03 (24 KB) · LKO-ORG04 (24 KB) · LKO-ORG05 (26 KB) · LKO-ORG06 (25 KB) · LKO-ORG07 (27 KB) · LKO-ORG08 (26 KB) · N05 (59 KB) · N06 (38 KB) · P01 (27 KB) · R01 (23 KB) · R02 (20 KB) · R03A (34 KB) · R07 (77 KB) · X04 (88 KB)
+**WYSŁAĆ (bez W1) — 24 lekcji, 965 KB:** J03 (112 KB) · J07 (31 KB) · J08 (37 KB) · J09 (32 KB) · J10 (28 KB) · K01 (32 KB) · K02 (34 KB) · K03 (33 KB) · K04 (50 KB) · K05 (40 KB) · K06 (14 KB) · K08 (12 KB) · LKO-ORG07 (31 KB) · LKO-ORG08 (26 KB) · N05 (88 KB) · N06 (39 KB) · N07 (21 KB) · N08 (18 KB) · P01 (27 KB) · R01 (28 KB) · R02 (20 KB) · R03A (34 KB) · R07 (77 KB) · X04 (88 KB)
 
-- zestaw 1 (89 KB): `python3 eksport/paczka_ai.py ulepsz CHE_J03 chemia/che-modular/lessons-md/gotowe/J03_rownania_jonowe_i_stracanie.md`
+- zestaw 1 (112 KB): `python3 eksport/paczka_ai.py ulepsz CHE_J03 chemia/che-modular/lessons-md/gotowe/J03_rownania_jonowe_i_stracanie.md`
 
-- zestaw 2 (77 KB): `python3 eksport/paczka_ai.py ulepsz CHE_J07_J08_J09_J10_K01_K02_K03 chemia/che-modular/lessons-md/gotowe/J07_ka_kb_kw.md chemia/che-modular/lessons-md/gotowe/J08_hydroliza_soli.md chemia/che-modular/lessons-md/gotowe/J09_bufory.md chemia/che-modular/lessons-md/gotowe/J10_iloczyn_rozpuszczalnosci_ksp.md chemia/che-modular/lessons-md/gotowe/K01_energia_reakcji.md chemia/che-modular/lessons-md/gotowe/K02_entalpia.md chemia/che-modular/lessons-md/gotowe/K03_kalorymetria_i_przemiany_fazowe.md`
+- zestaw 2 (69 KB): `python3 eksport/paczka_ai.py ulepsz CHE_J07_J08 chemia/che-modular/lessons-md/gotowe/J07_ka_kb_kw.md chemia/che-modular/lessons-md/gotowe/J08_hydroliza_soli.md`
 
-- zestaw 3 (76 KB): `python3 eksport/paczka_ai.py ulepsz CHE_K04_K05_K06_K08 chemia/che-modular/lessons-md/gotowe/K04_szybkosc_reakcji.md chemia/che-modular/lessons-md/gotowe/K05_czynniki_szybkosci.md chemia/che-modular/lessons-md/gotowe/K06_zderzenia_energia_aktywacji.md chemia/che-modular/lessons-md/gotowe/K08_rownowaga_dynamiczna.md`
+- zestaw 3 (61 KB): `python3 eksport/paczka_ai.py ulepsz CHE_J09_J10 chemia/che-modular/lessons-md/gotowe/J09_bufory.md chemia/che-modular/lessons-md/gotowe/J10_iloczyn_rozpuszczalnosci_ksp.md`
 
-- zestaw 4 (82 KB): `python3 eksport/paczka_ai.py ulepsz CHE_LAB01_LKO-ORG01 chemia/che-modular/lessons-md/gotowe/LAB01_doswiadczenia_obserwacja_wniosek.md chemia/che-modular/lessons-md/gotowe/LKO_ORG01_alkany.md`
+- zestaw 4 (66 KB): `python3 eksport/paczka_ai.py ulepsz CHE_K01_K02 chemia/che-modular/lessons-md/gotowe/K01_energia_reakcji.md chemia/che-modular/lessons-md/gotowe/K02_entalpia.md`
 
-- zestaw 5 (73 KB): `python3 eksport/paczka_ai.py ulepsz CHE_LKO-ORG02_LKO-ORG03_LKO-ORG04 chemia/che-modular/lessons-md/gotowe/LKO_ORG02_alkeny.md chemia/che-modular/lessons-md/gotowe/LKO_ORG03_alkohole.md chemia/che-modular/lessons-md/gotowe/LKO_ORG04_glicerol.md`
+- zestaw 5 (84 KB): `python3 eksport/paczka_ai.py ulepsz CHE_K03_K04 chemia/che-modular/lessons-md/gotowe/K03_kalorymetria_i_przemiany_fazowe.md chemia/che-modular/lessons-md/gotowe/K04_szybkosc_reakcji.md`
 
-- zestaw 6 (78 KB): `python3 eksport/paczka_ai.py ulepsz CHE_LKO-ORG05_LKO-ORG06_LKO-ORG07 chemia/che-modular/lessons-md/gotowe/LKO_ORG05_kwasy.md chemia/che-modular/lessons-md/gotowe/LKO_ORG06_estry.md chemia/che-modular/lessons-md/gotowe/LKO_ORG07_cukry.md`
+- zestaw 6 (67 KB): `python3 eksport/paczka_ai.py ulepsz CHE_K05_K06_K08 chemia/che-modular/lessons-md/gotowe/K05_czynniki_szybkosci.md chemia/che-modular/lessons-md/gotowe/K06_zderzenia_energia_aktywacji.md chemia/che-modular/lessons-md/gotowe/K08_rownowaga_dynamiczna.md`
 
-- zestaw 7 (26 KB): `python3 eksport/paczka_ai.py ulepsz CHE_LKO-ORG08 chemia/che-modular/lessons-md/gotowe/LKO_ORG08_mol_gazy.md`
+- zestaw 7 (58 KB): `python3 eksport/paczka_ai.py ulepsz CHE_LKO-ORG07_LKO-ORG08 chemia/che-modular/lessons-md/gotowe/LKO_ORG07_cukry.md chemia/che-modular/lessons-md/gotowe/LKO_ORG08_mol_gazy.md`
 
-- zestaw 8 (59 KB): `python3 eksport/paczka_ai.py ulepsz CHE_N05 chemia/che-modular/lessons-md/gotowe/N05_wodorki.md`
+- zestaw 8 (88 KB): `python3 eksport/paczka_ai.py ulepsz CHE_N05 chemia/che-modular/lessons-md/gotowe/N05_sole.md`
 
-- zestaw 9 (66 KB): `python3 eksport/paczka_ai.py ulepsz CHE_N06_P01 chemia/che-modular/lessons-md/gotowe/N06_wodorki.md chemia/che-modular/lessons-md/gotowe/P01_blok_s_litowce_berylowce_s01.md`
+- zestaw 9 (79 KB): `python3 eksport/paczka_ai.py ulepsz CHE_N06_N07_N08 chemia/che-modular/lessons-md/gotowe/N06_wodorki.md chemia/che-modular/lessons-md/gotowe/N07_systematyka_nieorganiczna.md chemia/che-modular/lessons-md/gotowe/N08_mapa_przemian.md`
 
-- zestaw 10 (78 KB): `python3 eksport/paczka_ai.py ulepsz CHE_R01_R02_R03A chemia/che-modular/lessons-md/gotowe/R01_woda_i_roztwory.md chemia/che-modular/lessons-md/gotowe/R02_rozpuszczalnosc.md chemia/che-modular/lessons-md/gotowe/R03A_mieszanie_roztworow_regula_krzyzowa.md`
+- zestaw 10 (76 KB): `python3 eksport/paczka_ai.py ulepsz CHE_P01_R01_R02 chemia/che-modular/lessons-md/gotowe/P01_blok_s_litowce_berylowce_s01.md chemia/che-modular/lessons-md/gotowe/R01_woda_i_roztwory.md chemia/che-modular/lessons-md/gotowe/R02_rozpuszczalnosc.md`
 
-- zestaw 11 (77 KB): `python3 eksport/paczka_ai.py ulepsz CHE_R07 chemia/che-modular/lessons-md/gotowe/R07_stechiometria_z_nadmiarem.md`
+- zestaw 11 (34 KB): `python3 eksport/paczka_ai.py ulepsz CHE_R03A chemia/che-modular/lessons-md/gotowe/R03A_mieszanie_roztworow_regula_krzyzowa.md`
 
-- zestaw 12 (88 KB): `python3 eksport/paczka_ai.py ulepsz CHE_X04 chemia/che-modular/lessons-md/gotowe/X04_szereg_aktywnosci_metali.md`
+- zestaw 12 (77 KB): `python3 eksport/paczka_ai.py ulepsz CHE_R07 chemia/che-modular/lessons-md/gotowe/R07_stechiometria_z_nadmiarem.md`
 
-**niski priorytet (W1 starym promptem) — 34 lekcji, 1130 KB:** F01 (52 KB) · F02 (43 KB) · F03 (43 KB) · F04 (32 KB) · F05 (35 KB) · F06 (55 KB) · F07 (21 KB) · F08 (14 KB) · F09 (14 KB) · F10 (18 KB) · F11 (18 KB) · F12 (15 KB) · F13 (15 KB) · F14 (15 KB) · F15 (17 KB) · F16 (18 KB) · F18 (15 KB) · F19 (17 KB) · F20 (16 KB) · F21 (17 KB) · J01 (15 KB) · J02 (11 KB) · J04 (11 KB) · J05 (10 KB) · J06 (11 KB) · N01 (61 KB) · N02 (132 KB) · N03 (136 KB) · N04 (88 KB) · R03 (34 KB) · R04 (18 KB) · R08 (14 KB) · R09 (13 KB) · REV01 (69 KB)
+- zestaw 13 (88 KB): `python3 eksport/paczka_ai.py ulepsz CHE_X04 chemia/che-modular/lessons-md/gotowe/X04_szereg_aktywnosci_metali.md`
 
-**NIE wysyłać (W1 FULL) — 16 lekcji, 536 KB:** F17 (55 KB) · FIZ-01 (114 KB) · K12 (11 KB) · LKO-A1 (26 KB) · LKO-B1+B2 (17 KB) · LKO-DIAG (18 KB) · LKO-DOSW (34 KB) · LKO-KRZYWE (32 KB) · LKO-METALE (26 KB) · LKO-STECH (22 KB) · LKO-SYM-A2 (20 KB) · LKO-Z36 (43 KB) · LKO-PUŁAPKI-WAPNO (29 KB) · REV03 (17 KB) · REV04 (28 KB) · REV05 (35 KB)
+**niski priorytet (W1 starym promptem) — 31 lekcji, 1180 KB:** F01 (62 KB) · F02 (54 KB) · F03 (54 KB) · F04 (40 KB) · F05 (45 KB) · F06 (71 KB) · F07 (28 KB) · F08 (20 KB) · F09 (18 KB) · F10 (25 KB) · F11 (25 KB) · F12 (19 KB) · F13 (19 KB) · F19 (17 KB) · F20 (16 KB) · F21 (17 KB) · J01 (15 KB) · J02 (11 KB) · J04 (11 KB) · J05 (10 KB) · J06 (11 KB) · LAB01 (61 KB) · N01 (36 KB) · N02 (61 KB) · N03 (133 KB) · N04 (136 KB) · R03 (34 KB) · R04 (18 KB) · R08 (14 KB) · R09 (13 KB) · REV01 (69 KB)
+
+**NIE wysyłać (W1 FULL) — 26 lekcji, 898 KB:** F14 (29 KB) · F15 (34 KB) · F16 (33 KB) · F17 (55 KB) · F18 (29 KB) · FIZ-01 (125 KB) · K12 (13 KB) · LKO-A1 (26 KB) · LKO-B1+B2 (17 KB) · LKO-DIAG (18 KB) · LKO-DOSW (34 KB) · LKO-KRZYWE (32 KB) · LKO-METALE (26 KB) · LKO-ORG01 (37 KB) · LKO-ORG02 (36 KB) · LKO-ORG03 (33 KB) · LKO-ORG04 (33 KB) · LKO-ORG05 (40 KB) · LKO-ORG06 (40 KB) · LKO-STECH (22 KB) · LKO-SYM-A2 (20 KB) · LKO-Z36 (43 KB) · LKO-PUŁAPKI-WAPNO (29 KB) · REV03 (17 KB) · REV04 (28 KB) · REV05 (35 KB)
 
 ## polski
 
