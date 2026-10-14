@@ -10,7 +10,7 @@ poglebia: "LKO-ORG04; LKO-ORG07; LKO-ORG08"
 wlasciciel: "chemia olimpijska LKO"
 zrodla: "Zakres olimpiady kuratoryjnej (etap III) + podstawa programowa"
 opis: "Alkohole C1–C3: grupa hydroksylowa, odczyn obojętny, reakcja z sodem jako dowód –OH oraz spalanie — z pełną stechiometrią mol, gram, dm³."
-stan: "pełna struktura — 2026-10-13, bez audytu W1"
+stan: "W1 (zewnętrzny audyt 2026-10-14, zweryfikowany; bez pełnego promptu — brak nowego wykładu i ciekawostek)"
 kicker: "ORG03 · alkohole"
 lead: "Grupa –OH zmienia węglowodór w zupełnie nową rodzinę: miesza się z wodą, reaguje z sodem i pali się czystym niebieskim płomieniem."
 plakietki: ["alkohole", "etanol"]
@@ -330,3 +330,24 @@ wskaźnik obojętności :: lakmus, fenoloftaleina, uniwersalny — w roztworze a
 - **ORG03:** sód w dosw — świadomie jako demonstracja nauczycielska; jeśli standard repo przewiduje uczniowskie wykonanie, dopisać ograniczenia.
 - **ORG03:** „płomień wodorkowy prawie niewidoczny" w dosw — opis jakościowy klasycznej próby; dopuszczalny wariant kluczowy: powtórna próba z zapłonem resztkowego gazu w probówce.
 
+## Zadania z błędami i procedura bilansowania (W1, 2026-10-14)
+
+**Zadanie B — znajdź błędy.** Uczeń zapisał: $$C_2H_5OH+Na\rightarrow C_2H_5O+H$$.
+
+Błędy: zniknął sód; produkt organiczny nie zawiera sodu; wodór zapisano jako atom $$H$$ zamiast cząsteczki $$H_2$$; równanie nie jest zbilansowane. Poprawnie: $$2C_2H_5OH+2Na\rightarrow2C_2H_5ONa+H_2$$.
+
+**Procedura bilansowania spalania:** 1) zbilansuj węgiel; 2) zbilansuj wodór; 3) tlen zostaw na końcu; 4) jeśli wyjdzie ułamek, pomnóż wszystkie współczynniki przez 2.
+
+Przykład: $$C_2H_5OH+xO_2\rightarrow2CO_2+3H_2O$$. Po prawej jest 7 atomów tlenu; jeden pochodzi z etanolu, więc z $$O_2$$ trzeba dostarczyć 6 atomów, czyli $$x=6/2=3$$: $$C_2H_5OH+3O_2\rightarrow2CO_2+3H_2O$$.
+
+**Typowa pułapka:** „etanol ma grupę OH, więc jest zasadą” — błędny wniosek. O właściwościach decyduje wiązanie grupy OH: w NaOH jest jonem $$OH^-$$, w etanolu jest związana kowalencyjnie z węglem.
+
+### AUDYT W1 — zewnętrzny, weryfikacja 2026-10-14 (Claude Haiku 5.5)
+
+Surowa odpowiedź i tabela weryfikacji: `chemia/plany/audyty/LKO_ORG03_audyt_W1_2026-10-14.md`.
+
+**Wprowadzono:** zadanie B (znajdź błędy); procedurę bilansowania z przykładem $$x=3$$; wyjaśnienie pułapki „OH = zasada”.
+
+**Sprawdzono bez zmian (poprawne):** wzory i masy molowe (32, 46, 60 g/mol); bilanse spalania metanolu, etanolu i propanolu; stechiometria etanolu (96 g $$O_2$$, 88 g $$CO_2$$, 54 g $$H_2O$$; 67,2 i 44,8 dm³); zadanie A (0,20 mola etanolu, 2,24 dm³ $$H_2$$); fiszki.
+
+**Nieprzyjęte:** brak treści usuwającej materiał; brak nowego wykładu i ciekawostek (odpowiedź zewnętrzna ich nie zawierała) — do osobnej tury W1 FULL; mechanizm reakcji z sodem i nomenklatura rozgałęzionych — poza zakresem C1–C3.
