@@ -1,0 +1,1 @@
+vessel('evapDish',{path:(c,r)=>{const x0=r.x+r.w*.08,x1=r.x+r.w*.92,y0=r.y+r.h*.5,yb=r.y+r.h;c.beginPath();c.moveTo(x0,y0);c.bezierCurveTo(x0,yb,x1,yb,x1,y0)},hmax:.45,pad:2,mat:'porcelain',rim:r=>[r.x+r.w*.08,r.x+r.w*.92,r.y+r.h*.5],shadow:1});

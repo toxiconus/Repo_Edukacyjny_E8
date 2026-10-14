@@ -1,0 +1,1 @@
+P('sio2Naoh',{n:'SiO₂ + NaOH (stężony, ogrzewanie)',solid:Object.assign(pw([235,235,230]),{end:.6}),out:['nic'],T:85,teacher:1,why:'Bardzo powolna reakcja na gorąco — sieć kowalencyjna krzemionki jest trwała.'});

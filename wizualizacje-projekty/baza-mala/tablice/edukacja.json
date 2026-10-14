@@ -1,0 +1,753 @@
+{
+ "CONCEPTS": [
+  {
+   "l": "definicja",
+   "c": "#2b5e9c",
+   "x": 150,
+   "y": 70,
+   "t": "Kwas Brønsteda: donor H⁺."
+  },
+  {
+   "l": "nazewnictwo",
+   "c": "#2b5e9c",
+   "x": 450,
+   "y": 50,
+   "t": "Beztlenowe: -wodorowy. Tlenowe: -owy z cyfrą."
+  },
+  {
+   "l": "wzór HₙR",
+   "c": "#2b5e9c",
+   "x": 750,
+   "y": 70,
+   "t": "H + reszta kwasowa."
+  },
+  {
+   "l": "dysocjacja",
+   "c": "#6b3fa0",
+   "x": 100,
+   "y": 235,
+   "t": "HA + H₂O ⇌ H₃O⁺ + A⁻."
+  },
+  {
+   "l": "reakcje",
+   "c": "#b06f1c",
+   "x": 800,
+   "y": 235,
+   "t": "metal · tlenek · wodorotlenek · węglan"
+  },
+  {
+   "l": "pH",
+   "c": "#2e7d4f",
+   "x": 150,
+   "y": 400,
+   "t": "pH < 7 kwasowy."
+  },
+  {
+   "l": "zastosowania",
+   "c": "#2e7d4f",
+   "x": 450,
+   "y": 425,
+   "t": "żołądek · akumulatory · ocet"
+  },
+  {
+   "l": "BHP",
+   "c": "#b83a45",
+   "x": 750,
+   "y": 400,
+   "t": "Zawsze kwas do wody."
+  }
+ ],
+ "TIMELINE": [
+  {
+   "year": "1887",
+   "who": "Svante Arrhenius",
+   "desc": "Teoria dysocjacji elektrolitycznej."
+  },
+  {
+   "year": "1923",
+   "who": "Johannes Brønsted",
+   "desc": "Teoria protonowa: kwas = donor H⁺."
+  },
+  {
+   "year": "1923",
+   "who": "Thomas Lowry",
+   "desc": "Niezależnie ta sama teoria protonowa."
+  },
+  {
+   "year": "1923",
+   "who": "Gilbert Lewis",
+   "desc": "Teoria elektronowa: kwas = akceptor pary e⁻."
+  },
+  {
+   "year": "XX w.",
+   "who": "Rozwój teorii",
+   "desc": "Pearson (HSAB), Usanovich, chemia supramolekularna."
+  }
+ ],
+ "MODEL_LIMITS": {
+  "temperatureK": 298.15,
+  "idealSolution": true,
+  "activityCoefficients": "pomijane",
+  "waterKw": 1e-14,
+  "polyprotic": "idealny rozkład równowagowy",
+  "pKaReference": "wartości zaokrąglone; zależne od temperatury i definicji układu"
+ },
+ "LO_CHEM_MAX381_388": {
+  "version": "3.88",
+  "source": "CHE.EDUCATION_ENGINE",
+  "status": "IMPLEMENTED",
+  "acidBase": [
+   {
+    "id": "HCL_AQ",
+    "formula": "HCl",
+    "type": "strong_acid",
+    "Ka": null,
+    "sourceType": "DATABASE"
+   },
+   {
+    "id": "CH3COOH_AQ",
+    "formula": "CH3COOH",
+    "type": "weak_acid",
+    "Ka": 1.75e-05,
+    "unit": "mol/L",
+    "temperature_C": 25,
+    "sourceType": "DATABASE"
+   },
+   {
+    "id": "NH3_AQ",
+    "formula": "NH3",
+    "type": "weak_base",
+    "Kb": 1.8e-05,
+    "unit": "mol/L",
+    "temperature_C": 25,
+    "sourceType": "DATABASE"
+   },
+   {
+    "id": "H2O_AQ",
+    "formula": "H2O",
+    "Kw": 1e-14,
+    "unit": "(mol/L)^2",
+    "temperature_C": 25,
+    "sourceType": "EDUCATIONAL_APPROXIMATION"
+   }
+  ],
+  "solubility": [
+   {
+    "id": "AGCL",
+    "formula": "AgCl",
+    "Ksp": 1.8e-10,
+    "unit": "(mol/L)^2",
+    "temperature_C": 25,
+    "sourceType": "DATABASE"
+   },
+   {
+    "id": "BASO4",
+    "formula": "BaSO4",
+    "Ksp": 1.1e-10,
+    "unit": "(mol/L)^2",
+    "temperature_C": 25,
+    "sourceType": "DATABASE"
+   }
+  ],
+  "electrochem": [
+   {
+    "id": "ZN2_ZN",
+    "halfReaction": "Zn2+ + 2e- -> Zn",
+    "E0_V": -0.76,
+    "temperature_C": 25,
+    "sourceType": "DATABASE"
+   },
+   {
+    "id": "CU2_CU",
+    "halfReaction": "Cu2+ + 2e- -> Cu",
+    "E0_V": 0.34,
+    "temperature_C": 25,
+    "sourceType": "DATABASE"
+   },
+   {
+    "id": "H_H2",
+    "halfReaction": "2H+ + 2e- -> H2",
+    "E0_V": 0,
+    "temperature_C": 25,
+    "sourceType": "DATABASE"
+   }
+  ],
+  "organic": [
+   {
+    "id": "ETHANOL",
+    "formula": "C2H6O",
+    "class": "alcohol",
+    "functionalGroup": "hydroxyl"
+   },
+   {
+    "id": "ETHANAL",
+    "formula": "C2H4O",
+    "class": "aldehyde",
+    "functionalGroup": "carbonyl"
+   },
+   {
+    "id": "ACETONE",
+    "formula": "C3H6O",
+    "class": "ketone",
+    "functionalGroup": "carbonyl"
+   },
+   {
+    "id": "ACETIC_ACID",
+    "formula": "C2H4O2",
+    "class": "carboxylic_acid",
+    "functionalGroup": "carboxyl"
+   },
+   {
+    "id": "ETHYL_ACETATE",
+    "formula": "C4H8O2",
+    "class": "ester",
+    "functionalGroup": "ester"
+   },
+   {
+    "id": "GLYCINE",
+    "formula": "C2H5NO2",
+    "class": "amino_acid",
+    "functionalGroups": [
+     "amino",
+     "carboxyl"
+    ]
+   },
+   {
+    "id": "GLUCOSE",
+    "formula": "C6H12O6",
+    "class": "monosaccharide",
+    "reducingSugar": true
+   },
+   {
+    "id": "SUCROSE",
+    "formula": "C12H22O11",
+    "class": "disaccharide",
+    "reducingSugar": false
+   }
+  ],
+  "biochemAsChemistry": [
+   {
+    "id": "PEPTIDE_BOND",
+    "pattern": "-CO-NH-",
+    "class": "amide_bond"
+   },
+   {
+    "id": "DNA_NUCLEOTIDE",
+    "components": [
+     "phosphate",
+     "2-deoxyribose",
+     "nitrogenous_base"
+    ],
+    "polymer": "DNA"
+   },
+   {
+    "id": "RNA_NUCLEOTIDE",
+    "components": [
+     "phosphate",
+     "ribose",
+     "nitrogenous_base"
+    ],
+    "polymer": "RNA"
+   },
+   {
+    "id": "DNA_BASES",
+    "items": [
+     "adenine",
+     "thymine",
+     "guanine",
+     "cytosine"
+    ]
+   },
+   {
+    "id": "RNA_BASES",
+    "items": [
+     "adenine",
+     "uracil",
+     "guanine",
+     "cytosine"
+    ]
+   }
+  ]
+ },
+ "LO_CHEM_MAX389_396": {
+  "version": "3.96",
+  "status": "IMPLEMENTED",
+  "acidBase": [
+   {
+    "id": "ACETIC_ACID_KA_25C",
+    "formula": "CH3COOH",
+    "Ka": 1.75e-05,
+    "temperature_C": 25,
+    "sourceType": "DATABASE"
+   },
+   {
+    "id": "AMMONIUM_KA_25C",
+    "formula": "NH4+",
+    "Ka": 5.6e-10,
+    "temperature_C": 25,
+    "sourceType": "DATABASE"
+   },
+   {
+    "id": "WATER_KW_25C",
+    "formula": "H2O",
+    "Kw": 1e-14,
+    "temperature_C": 25,
+    "sourceType": "EDUCATIONAL_APPROXIMATION"
+   }
+  ],
+  "titration": [
+   {
+    "id": "STRONG_ACID_STRONG_BASE",
+    "equivalence": "nH=nOH",
+    "model": "stoichiometric"
+   },
+   {
+    "id": "WEAK_ACID_STRONG_BASE",
+    "equivalence": "conjugate_base_dominates",
+    "model": "equilibrium"
+   }
+  ],
+  "inorganicReactions": [
+   {
+    "id": "ZN_HCL",
+    "equation": "Zn + 2HCl -> ZnCl2 + H2",
+    "type": "metal_acid",
+    "gas": "H2",
+    "safety": [
+     "acid",
+     "flammable_gas"
+    ]
+   },
+   {
+    "id": "AGNO3_NACL",
+    "equation": "AgNO3 + NaCl -> AgCl(s) + NaNO3",
+    "type": "precipitation",
+    "product": "AgCl"
+   },
+   {
+    "id": "CO2_LIMEWATER",
+    "equation": "CO2 + Ca(OH)2 -> CaCO3(s) + H2O",
+    "type": "precipitation",
+    "product": "CaCO3"
+   }
+  ],
+  "organicReactions": [
+   {
+    "id": "ESTERIFICATION_ETHANOL_ACETIC",
+    "equation": "CH3COOH + C2H5OH <=> CH3COOC2H5 + H2O",
+    "type": "esterification",
+    "catalyst": "H2SO4",
+    "equilibrium": true
+   },
+   {
+    "id": "ETHANOL_OXIDATION",
+    "equation": "C2H5OH + [O] -> CH3CHO + H2O",
+    "type": "oxidation"
+   },
+   {
+    "id": "ETHANAL_OXIDATION",
+    "equation": "CH3CHO + [O] -> CH3COOH",
+    "type": "oxidation"
+   }
+  ],
+  "provenanceSchema": {
+   "required": [
+    "value",
+    "unit",
+    "definition",
+    "conditions",
+    "sourceType",
+    "source",
+    "limitations"
+   ],
+   "sourceTypes": [
+    "DATABASE",
+    "EXPERIMENTAL",
+    "COMPUTED",
+    "ESTIMATED",
+    "EDUCATIONAL_APPROXIMATION",
+    "USER_DEFINED"
+   ]
+  }
+ },
+ "E8": {
+  "version": "4.13",
+  "level": "E8",
+  "school": "SP7-8",
+  "label": "Szkoła podstawowa — klasy 7–8",
+  "source": {
+   "id": "ZPE_SP_CHEMIA_2025_26",
+   "url": "https://zpe.gov.pl/podstawa-programowa/szkola-podstawowa/chemia",
+   "authority": "ZPE/MEN"
+  },
+  "elements": [
+   "H",
+   "He",
+   "C",
+   "N",
+   "O",
+   "F",
+   "Na",
+   "Mg",
+   "Al",
+   "Si",
+   "P",
+   "S",
+   "Cl",
+   "K",
+   "Ca",
+   "Fe",
+   "Cu",
+   "Zn",
+   "Br",
+   "Ag",
+   "I",
+   "Ba",
+   "Pb"
+  ],
+  "ions": [
+   "H+",
+   "H3O+",
+   "OH-",
+   "Na+",
+   "K+",
+   "Mg2+",
+   "Ca2+",
+   "Al3+",
+   "NH4+",
+   "Fe2+",
+   "Fe3+",
+   "Cu2+",
+   "Zn2+",
+   "Ag+",
+   "Ba2+",
+   "Cl-",
+   "Br-",
+   "I-",
+   "F-",
+   "NO3-",
+   "SO4^2-",
+   "SO3^2-",
+   "CO3^2-",
+   "HCO3-",
+   "PO4^3-",
+   "S2-",
+   "CH3COO-",
+   "MnO4-",
+   "Cr2O7^2-"
+  ],
+  "domains": [
+   "atoms_shells",
+   "config_ions",
+   "periodic",
+   "formulae_valence",
+   "oxides_hydroxides_acids_salts",
+   "reactions_balance",
+   "neutralization",
+   "metal_acid",
+   "precipitation",
+   "combustion",
+   "solubility_basic",
+   "indicators_pH",
+   "lab_safety",
+   "molar_mass",
+   "mass_percent",
+   "simple_stoichiometry"
+  ],
+  "policy": "EDUCATIONAL_BASE; not scientific reference grade",
+  "scientificGate": "BLOCKED"
+ },
+ "SCHOOL_PACK": {
+  "version": "4.21",
+  "policy": "EDUCATIONAL_BASE",
+  "roleNote": "Dane szkolne N01-N03. Nie mylić: CHE.eng = silnik JS, CHE.laba = lab atomu, CHE.lab = konstruktor.",
+  "activitySeries": [
+   "K",
+   "Ca",
+   "Na",
+   "Mg",
+   "Al",
+   "Zn",
+   "Fe",
+   "Sn",
+   "Pb",
+   "H",
+   "Cu",
+   "Ag",
+   "Au"
+  ],
+  "oxides": [
+   {
+    "f": "Na2O",
+    "name": "tlenek sodu",
+    "char": "zasadowy"
+   },
+   {
+    "f": "CaO",
+    "name": "tlenek wapnia",
+    "char": "zasadowy",
+    "note": "woda wapienna po reakcji"
+   },
+   {
+    "f": "MgO",
+    "name": "tlenek magnezu",
+    "char": "zasadowy",
+    "note": "z wodą praktycznie nie"
+   },
+   {
+    "f": "Al2O3",
+    "name": "tlenek glinu",
+    "char": "amfoteryczny"
+   },
+   {
+    "f": "ZnO",
+    "name": "tlenek cynku",
+    "char": "amfoteryczny"
+   },
+   {
+    "f": "CuO",
+    "name": "tlenek miedzi(II)",
+    "char": "zasadowy"
+   },
+   {
+    "f": "CO",
+    "name": "tlenek węgla(II)",
+    "char": "obojętny",
+    "note": "czad"
+   },
+   {
+    "f": "CO2",
+    "name": "tlenek węgla(IV)",
+    "char": "kwasowy"
+   },
+   {
+    "f": "SO2",
+    "name": "tlenek siarki(IV)",
+    "char": "kwasowy"
+   },
+   {
+    "f": "SO3",
+    "name": "tlenek siarki(VI)",
+    "char": "kwasowy"
+   },
+   {
+    "f": "NO",
+    "name": "tlenek azotu(II)",
+    "char": "obojętny"
+   },
+   {
+    "f": "N2O",
+    "name": "tlenek azotu(I)",
+    "char": "obojętny"
+   },
+   {
+    "f": "P2O5",
+    "name": "tlenek fosforu(V), zapis szkolny",
+    "char": "kwasowy",
+    "note": "P4O10"
+   },
+   {
+    "f": "SiO2",
+    "name": "tlenek krzemu",
+    "char": "kwasowy",
+    "note": "nie reaguje z wodą, nie jest obojętny"
+   }
+  ],
+  "hydroxides": [
+   {
+    "f": "NaOH",
+    "base": true,
+    "sol": "bardzo dobrze"
+   },
+   {
+    "f": "KOH",
+    "base": true,
+    "sol": "bardzo dobrze"
+   },
+   {
+    "f": "Ca(OH)2",
+    "base": true,
+    "sol": "słabo",
+    "note": "woda wapienna"
+   },
+   {
+    "f": "Mg(OH)2",
+    "base": false,
+    "sol": "praktycznie nie"
+   },
+   {
+    "f": "Al(OH)3",
+    "amph": true,
+    "sol": "nie"
+   },
+   {
+    "f": "Zn(OH)2",
+    "amph": true,
+    "sol": "nie"
+   },
+   {
+    "f": "Fe(OH)2",
+    "base": false,
+    "sol": "nie"
+   },
+   {
+    "f": "Fe(OH)3",
+    "base": false,
+    "sol": "nie"
+   },
+   {
+    "f": "Cu(OH)2",
+    "base": false,
+    "sol": "nie"
+   },
+   {
+    "f": "NH3(aq)",
+    "base": true,
+    "note": "nie ma cząsteczki NH4OH"
+   }
+  ],
+  "acids": [
+   {
+    "f": "HCl",
+    "name": "solny / chlorowodorowy",
+    "strength": "mocny",
+    "h2": true
+   },
+   {
+    "f": "HF",
+    "name": "fluorowodorowy",
+    "strength": "słaby",
+    "note": "wyjątek"
+   },
+   {
+    "f": "H2SO4",
+    "name": "siarkowy(VI)",
+    "strength": "mocny",
+    "h2": true
+   },
+   {
+    "f": "HNO3",
+    "name": "azotowy(V)",
+    "strength": "mocny",
+    "h2": false,
+    "note": "utleniający, pasywacja Fe/Al"
+   },
+   {
+    "f": "H2CO3",
+    "name": "węglowy",
+    "strength": "słaby"
+   },
+   {
+    "f": "H3PO4",
+    "name": "fosforowy(V)",
+    "strength": "średni"
+   },
+   {
+    "f": "H3PO3",
+    "name": "fosforowy(III)",
+    "strength": "słaby",
+    "note": "dwuprotonowy"
+   }
+  ],
+  "hclLevels": [
+   "HCl → H+ + Cl−",
+   "HCl + H2O → H3O+ + Cl−",
+   "HCl(g) kowalencyjny"
+  ],
+  "solubility": [
+   "azotany rozpuszczalne",
+   "Na K NH4+ rozpuszczalne",
+   "AgCl PbCl2 nierozp.",
+   "BaSO4 nierozp.",
+   "węglany nierozp. oprócz Na K NH4+"
+  ],
+  "indicators": [
+   {
+    "name": "oranż metylowy",
+    "acid": "czerwony",
+    "base": "żółty"
+   },
+   {
+    "name": "lakmus",
+    "acid": "czerwony",
+    "base": "niebieski"
+   },
+   {
+    "name": "fenoloftaleina",
+    "acid": "bezbarwna",
+    "base": "malinowa"
+   }
+  ],
+  "constants": {
+   "Vm_dm3": 22.4,
+   "Kw": 1e-14,
+   "note": "szkolne, nie referencyjne"
+  }
+ },
+ "EDU": {
+  "EXAM_FLOW": {
+   "steps": [
+    {
+     "title": "1. Co mam?",
+     "lines": [
+      "wzór, nazwa,",
+      "równanie"
+     ],
+     "detail": "Najpierw odczytaj dokładnie dane: wzór, nazwę, równanie, obserwację albo wartość liczbową. Określ, czego naprawdę szukasz."
+    },
+    {
+     "title": "2. Typ zadania?",
+     "lines": [
+      "nazwa, dysocjacja,",
+      "reakcja czy pH?"
+     ],
+     "detail": "Rozpoznaj typ zadania: nazewnictwo, dysocjacja, reakcja, pH, moc kwasu czy interpretacja doświadczenia."
+    },
+    {
+     "title": "3. Jaki model?",
+     "lines": [
+      "mocny czy słaby;",
+      "metal przed/za H?"
+     ],
+     "detail": "Dobierz model: mocny/słaby kwas, wartościowość, szereg aktywności metali, bilans ładunków albo dane roztworu."
+    },
+    {
+     "title": "4. Zapis",
+     "lines": [
+      "wzór, równanie",
+      "cząst. i jonowe"
+     ],
+     "detail": "Dopiero teraz zapisz wzór lub równanie. W razie potrzeby przejdź do zapisu jonowego."
+    },
+    {
+     "title": "5. Kontrola",
+     "lines": [
+      "ładunki i atomy;",
+      "czy to ma sens?"
+     ],
+     "detail": "Sprawdź atomy, ładunki, współczynniki i sens chemiczny. Sprawdź też, czy reakcja rzeczywiście zachodzi."
+    }
+   ],
+   "examples": [
+    {
+     "title": "Przykład: „Ułóż wzór kwasu siarkowego(VI)”",
+     "lines": [
+      "1–2  nazwa → nazewnictwo tlenowych",
+      "3  S(VI), H(I), O(II)",
+      "4  H₂SO₄",
+      "5  2·(+1) + 6 + 4·(−2) = 0  ✓"
+     ]
+    },
+    {
+     "title": "Przykład: „Cu + HCl → ?”",
+     "lines": [
+      "1–2  metal + kwas",
+      "3  Cu stoi ZA H w szeregu",
+      "4  brak reakcji",
+      "5  H₂ nie powstaje ✓"
+     ]
+    }
+   ]
+  }
+ }
+}

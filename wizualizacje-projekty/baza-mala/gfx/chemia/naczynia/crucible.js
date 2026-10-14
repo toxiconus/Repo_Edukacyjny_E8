@@ -1,0 +1,3 @@
+vessel('crucible',{path:(c,r)=>{const w=Math.min(r.w,r.h*1.1),x=r.x+(r.w-w)/2,y=r.y+r.h*.18,b=r.y+r.h;c.beginPath();c.moveTo(x,y);c.lineTo(x+w*.17,b-10);c.quadraticCurveTo(x+w*.2,b,x+w*.3,b);c.lineTo(x+w*.7,b);c.quadraticCurveTo(x+w*.8,b,x+w*.83,b-10);c.lineTo(x+w,y)},hmax:.75,pad:1,mat:'porcelain',shadow:1,
+ rim:r=>{const w=Math.min(r.w,r.h*1.1),x=r.x+(r.w-w)/2;return[x,x+w,r.y+r.h*.18]},
+ deco:(c,r,T,st)=>{if(!st.lid)return;const w=Math.min(r.w,r.h*1.1),x=r.x+(r.w-w)/2,y=r.y+r.h*.18;c.fillStyle=T.dark?'#cbd5e1':'#f8fafc';c.strokeStyle=T.glass;c.lineWidth=2.5;c.beginPath();c.moveTo(x-6,y-1);c.quadraticCurveTo(x+w/2,y-r.h*.16,x+w+6,y-1);c.closePath();c.fill();c.stroke();rr(c,x+w/2-6,y-r.h*.16,12,7,3);c.fill();c.stroke()}});

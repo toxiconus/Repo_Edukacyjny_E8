@@ -1,0 +1,1 @@
+vessel('chargeBar',{custom:(c,r,st,env)=>{let q=st.cells;if(!q){const N=20,t=(performance.now()/1000)%6;q=new Array(N+2).fill(0);q[0]=10;for(let i=1;i<=N+1;i++)q[i]=Math.max(0,1.2*Math.min(1,t/2)-(i/N)*Math.max(0,1-t/2))}ELX.bar(c,r.x+50,r.y+r.h*.4,r.x+r.w-70,q,{col:st.col,th:env.th})}});

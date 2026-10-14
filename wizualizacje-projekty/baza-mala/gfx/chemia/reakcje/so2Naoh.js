@@ -1,0 +1,1 @@
+P('so2Naoh',{n:'SO₂ + NaOH',out:['nic'],gas:'SO2',bubN:.5,teacher:1,why:'Gaz jest pochłaniany przez zasadę — brak widocznych zmian w roztworze (Na₂SO₃).'});

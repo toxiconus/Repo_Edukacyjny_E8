@@ -1,0 +1,2 @@
+effect('turbidity',{label:'Zmętnienie',defaults:{color:null},schema:{color:{t:'color',l:'Barwa zawiesiny'}},draw:e=>{const k=cl01(e.st.turb||0);if(k<=.01||e.top>=e.bot)return;const c=e.c,r=e.r,col=e.o.color||e.st.turbCol||[244,244,238];c.fillStyle=rgba(col,.62*k);c.fillRect(r.x-8,e.top,r.w+16,e.bot-e.top+2);
+ c.fillStyle=rgba(col.map(v=>v*.9),.8*k);for(let i=0;i<60;i++){const y=e.top+((rnd(i+3)+e.t/9000*(1+rnd(i)))%1)*(e.bot-e.top);c.fillRect(r.x+rnd(i)*r.w+Math.sin(e.t/700+i)*2,y,1.5,1.5)}}});

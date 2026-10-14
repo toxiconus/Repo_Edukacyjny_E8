@@ -1,0 +1,3 @@
+effect('liquid',{label:'Ciecz',draw:e=>{const c=e.c,r=e.r,col=e.st.liquid||[205,228,238];if(e.top>=e.bot-.5)return;const g1=c.createLinearGradient(0,e.top,0,e.bot);g1.addColorStop(0,rgba(col,.6));g1.addColorStop(1,rgba(col.map(v=>v*.84),.84));
+ const poly=()=>{c.beginPath();c.moveTo(r.x-8,e.bot+2);c.lineTo(r.x-8,e.surf(r.x));for(let x=0;x<=r.w;x+=4)c.lineTo(r.x+x,e.surf(r.x+x));c.lineTo(r.x+r.w+8,e.surf(r.x+r.w));c.lineTo(r.x+r.w+8,e.bot+2);c.closePath()};
+ poly();c.fillStyle=g1;c.fill();const g2=c.createLinearGradient(r.x,0,r.x+r.w,0);g2.addColorStop(0,'rgba(0,0,0,.10)');g2.addColorStop(.22,'rgba(0,0,0,0)');g2.addColorStop(.62,'rgba(255,255,255,.07)');g2.addColorStop(1,'rgba(0,0,0,.12)');c.fillStyle=g2;poly();c.fill()}});

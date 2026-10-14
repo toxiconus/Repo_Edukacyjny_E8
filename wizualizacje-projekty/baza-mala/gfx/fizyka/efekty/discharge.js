@@ -1,0 +1,1 @@
+effect('discharge',{free:true,oneShot:true,layer:'front',label:'Wyładowanie (iskra)',defaults:{dur:.45,dx:0,dy:-90},schema:{dur:{t:'range',min:.1,max:1.5,step:.05,l:'Czas [s]'}},draw:e=>{const c=e.c,a=e.anchor;e.evs.forEach((v,i)=>{const o=v.o,k=Math.min(1,v.age/(o.dur||.45));ELX.spark(c,a.x,a.y,a.x+(o.dx||0),a.y+(o.dy==null?-90:o.dy),1-k,1+((v.age*30)|0)+i)})}});

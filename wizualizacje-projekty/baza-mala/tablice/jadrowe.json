@@ -1,0 +1,51 @@
+{
+ "NUCLEAR_DATA": {
+  "constants": {
+   "R0": 1.2,
+   "nuclearDensity": 230000000000000000,
+   "c": 299792458,
+   "amu": 931.494102,
+   "eV": 1.602176634e-19,
+   "fm": 1e-15
+  },
+  "betheWeizsacker": {
+   "aV": 15.75,
+   "aS": 17.8,
+   "aC": 0.711,
+   "aA": 23.7,
+   "aP": 11.18
+  },
+  "decayModes": {
+   "alpha": {
+    "symbol": "Î±",
+    "emitted": "He-4",
+    "deltaZ": -2,
+    "deltaA": -4
+   },
+   "beta-": {
+    "symbol": "β⁻",
+    "emitted": "e⁻ + Î˝Ě„",
+    "deltaZ": 1,
+    "deltaA": 0
+   },
+   "beta+": {
+    "symbol": "β⁺",
+    "emitted": "e⁺ + Î˝",
+    "deltaZ": -1,
+    "deltaA": 0
+   },
+   "EC": {
+    "symbol": "EC",
+    "emitted": "Î˝",
+    "deltaZ": -1,
+    "deltaA": 0
+   },
+   "gamma": {
+    "symbol": "Îł",
+    "emitted": "Îł",
+    "deltaZ": 0,
+    "deltaA": 0
+   }
+  }
+ }
+}

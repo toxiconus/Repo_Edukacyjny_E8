@@ -1,0 +1,1 @@
+P('co2H2o',{n:'CO₂ + H₂O (+ wskaźnik uniwersalny)',l0:u(7),l1:u(5.6),out:['barwa'],gas:'CO2',bubN:.8,why:'CO₂ rozpuszcza się częściowo (równowaga z H₂CO₃) — odczyn słabo kwasowy, pH ≈ 5,6.'});

@@ -1,0 +1,2 @@
+effect('stopper',{layer:'front',label:'Korek',draw:e=>{const s=e.st.stopper;if(!s||!e.v.rim)return;const c=e.c,m=e.v.rim(e.r),w=m[1]-m[0],cx=(m[0]+m[1])/2,y=m[2];c.fillStyle=e.T.dark?'#57534e':'#78716c';c.strokeStyle='rgba(0,0,0,.4)';c.lineWidth=1;c.beginPath();c.moveTo(cx-w/2-4,y-12);c.lineTo(cx+w/2+4,y-12);c.lineTo(cx+w/2-2,y+10);c.lineTo(cx-w/2+2,y+10);c.closePath();c.fill();c.stroke();
+ if(s==='tube'){c.strokeStyle=e.T.glass;c.lineWidth=7;c.beginPath();c.moveTo(cx,y-26);c.lineTo(cx,y+22);c.stroke();c.strokeStyle=e.T.dark?'#1e293b':'#eef4f8';c.lineWidth=4;c.stroke()}}});

@@ -1,0 +1,1 @@
+P('al2o3NaohAq',{n:'Al₂O₃ + NaOH (roztwór, ogrzewanie)',solid:Object.assign(pw(wh),{end:.2}),out:['nic'],T:70,why:'Biały tlenek powoli się roztwarza — amfoteryczność (Na[Al(OH)₄]).'});

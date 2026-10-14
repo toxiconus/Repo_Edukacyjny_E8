@@ -1,0 +1,3 @@
+define('n02-doswiadczenia-v01',{title:'Pracownia: doświadczenia z wodorotlenkami',groups:[
+ ['Metal / tlenek + woda',['naH2o','kH2o','caH2o','mgH2oHot','na2oH2o','caoH2o']],['Strącanie',['cuso4Naoh','fecl3Naoh','mgcl2Naoh','feso4Naoh','niso4Naoh','agno3Naoh']],
+ ['Zobojętnianie',['hclNaOH+php','kohHno3','caoh2Hcl','baoh2H2so4','cuoh2H2so4','feoh3Hcl']],['Amfoteryczność, CO₂, ogrzewanie',['alcl3Naoh','aloh3Naoh','znso4Naoh','znoh2Naoh','caoh2Co2','cuoh2Heat','feoh2O2','nh4clNaoh']]]});

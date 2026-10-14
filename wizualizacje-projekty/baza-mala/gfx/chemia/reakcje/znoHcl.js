@@ -1,0 +1,1 @@
+P('znoHcl',{n:'ZnO + HCl',solid:pw(wh),out:['nic'],why:'Biały ZnO znika — roztwór bezbarwny (ZnCl₂).'});

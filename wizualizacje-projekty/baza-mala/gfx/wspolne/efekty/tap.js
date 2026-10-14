@@ -1,0 +1,2 @@
+effect('tap',{layer:'front',label:'Kranik',vessels:['dropFunnel'],draw:e=>{const c=e.c,r=e.r,{cx}=dfG(r),y=r.y+r.h*.74,op=cl01(e.st.tap||0);c.fillStyle=e.T.dark?'#cbd5e1':'#e2e8f0';c.strokeStyle=e.T.glass;c.lineWidth=2;rr(c,cx-9,y-6,18,12,5);c.fill();c.stroke();c.save();c.translate(cx,y);c.rotate(op>0?Math.PI/2:0);c.fillStyle=e.T.dark?'#1d4ed8':'#2563eb';rr(c,-16,-3,32,6,3);c.fill();c.restore();
+ if(op>0&&e.top<e.bot-1)drips(c,e.env,e.st,cx,r.y+r.h,e.st.liquid||[205,228,238],op*1.4,r,2.4)}});

@@ -1,0 +1,18 @@
+V.define('n02-stracanie-v01',{title:'Laboratorium jonowe — strącanie wodorotlenków (model cząsteczkowy)',tag:'E8',
+ hint:'Kliknij sól — symulacja rusza od razu: wolne jony → zbliżanie (przyciąganie ładunków) → skupiska → zarodki → osad. Liczniki pokazują wolne jony i cząstki osadu. Po prawej: równanie cząsteczkowe i jonowe z silnika.',
+ foot:'Ruch jonów: CHE.sim.ParticleSim (ruch cieplny, zderzenia, opadanie wg CHE.PHYS) · barwy osadów: CHE.COLORS · równania jonowe: CHE.IONIC · model dydaktyczny — rzeczywisty proces obejmuje formy pośrednie (hydroksokompleksy).',
+ build:function(host){host.innerHTML='';var H=HY(),ks=H.precipitations(),st={k:ks.indexOf('fecl3Naoh')>=0?'fecl3Naoh':ks[0],T:25},sim=null;
+  var bar=el('div','r');host.appendChild(bar);var bs=[];ks.forEach(function(k){var x=btn(bar,H.eq(k).split(' → ')[0],function(){st.k=k;bs.forEach(function(q){q.classList.toggle('on',q===x)});build()});if(k===st.k)x.classList.add('on');bs.push(x)});
+  var g=grid(host,300),l=el('div'),r=el('div');g.append(l,r);var cv=el('canvas');cv.style.cssText='width:100%;height:300px;display:block;border-radius:12px;background:var(--surface-soft,#f1f5f9)';l.appendChild(cv);
+  var cnt=el('div','r');l.appendChild(cnt);var ctl=el('div','r');l.appendChild(ctl);var pl=btn(ctl,'▶ start',function(){if(!sim)return;if(sim.running){sim.stop();pl.textContent='▶ start'}else{sim.start();pl.textContent='⏸ pauza'}});btn(ctl,'↺ od nowa',function(){build()});
+  var tl=el('label',null,' T: ');var ts=el('input');ts.type='range';ts.min=5;ts.max=80;ts.value=25;ts.oninput=function(){st.T=+ts.value;tv.textContent=ts.value+' °C';if(sim&&sim.setT)sim.setT(st.T)};var tv=el('span',null,'25 °C');tl.append(ts,tv);ctl.appendChild(tl);
+  function prodRow(k){var R=D().REACTIONS[k];var p=R.products.map(function(x){return H.get(x.formula)}).filter(Boolean)[0];return p||H.get('AgOH')}
+  function build(){if(sim){try{sim.stop()}catch(_){}}var p=prodRow(st.k),col=null;try{var a=p.metal==='Ag'?[74,52,38]:G().colors.at(pptId(p));col=a?hex(a):p.hex}catch(_){col=p.hex}
+   try{sim=new C.sim.ParticleSim({canvas:cv,T:st.T,config:{particles:[{type:'cation',count:6,r:14,color:catCol(p),label:p.cation,speed:1},{type:'oh',count:6*p.q,r:10,color:'#2563eb',label:'OH⁻',speed:1.2}],reaction:{cation:'cation',anion:'oh',ratio:p.q,product:p.f==='AgOH'?'Ag2O':p.f,color:col,pptId:pptId(p)}},
+    onCounters:function(o){cnt.innerHTML='<b>wolne jony:</b> '+o.particles+' · <b>cząstki osadu:</b> '+o.clusters}})}catch(e){cnt.textContent='Symulacja niedostępna: '+e.message}
+    
+   pl.textContent='▶ start';var s0=sim;setTimeout(function(){if(sim===s0&&sim&&sim.start&&!sim.running){sim.start();pl.textContent=sim.running?'⏸ pauza':'▶ start'}},60);var J=null;try{J=C.IONIC.equations(st.k)}catch(_){}
+   r.innerHTML=card('Równanie cząsteczkowe',eqHtml(H.eq(st.k)))+(J&&J.ionic?card('Równanie jonowe','<div><b>pełne:</b> '+J.full+'</div><div><b>skrócone:</b> '+J.net+'</div><div><small>jony widzowe: '+(J.spectators.join(', ')||'—')+'</small></div>','#2563eb'):'')
+    +card('Co pokazuje model?','<ol style="margin:2px 0 0 18px"><li>Co widzę? — swobodne jony poruszają się w roztworze.</li><li>Co się dzieje? — '+p.cation+' przyciąga '+p.q+' × OH⁻ (ładunki przeciwne).</li><li>Skupiska rosną w zarodki, zarodki opadają jako osad ↓ (barwa: '+(p.metal==='Ag'?'brunatna — AgOH od razu rozkłada się do Ag₂O':p.color)+').</li><li>Sprawdzam: proporcja jonów 1 : '+p.q+', rozpuszczalność produktu (tabela), zapis jonowy.</li></ol>','#64748b')
+    +card('Etapy pośrednie (rozszerzenie)','W rzeczywistości powstają najpierw formy pośrednie, np. Fe³⁺ → Fe(OH)²⁺ → Fe(OH)₂⁺ → Fe(OH)₃↓. Animacja jest modelem dydaktycznym, nie filmem trajektorii.','#94a3b8')}
+  build()}});

@@ -1,0 +1,15 @@
+sceneReg('titration',{label:'Zobojętnianie: miareczkowanie HCl zasadą NaOH',lesson:'kwasy',desc:'Biureta, kolba na mieszadle, fenoloftaleina; krzywa miareczkowania na żywo.',height:400,aspect:1.75,
+ init:()=>({V:0,flow:0,dropReq:0,Va:20,ca:.1,cb:.1,hist:[[0,1]]}),
+ parts:[{id:'stand',x:.02,y:.02,w:.42,h:.96,s:{clamps:[{x:.3,y:.12,w:30}]}},
+  {id:'burette',name:'bur',x:.25,y:.02,w:.1,h:.56,get:S=>({titrant:{V:S.V,Vmax:50,drip:S.flow,color:[214,230,240]},dropReq:S.dropReq,landY:.88-.6*.26*tLv(S)-.01,onDrop:()=>{if(S.V>=50)return;const p0=tpH(S);S.V=Math.min(50,S.V+.05);const p=tpH(S);if(S.hist.length<2000&&S.V-S.hist[S.hist.length-1][0]>=.1)S.hist.push([S.V,p]);if(p0<8.2){const Veq=S.ca*S.Va/S.cb;S.api.trigger('dropMix',{color:[219,39,119],dur:.6+2.6*Math.exp(-Math.max(0,Veq-S.V)/1.2)},'fl')}}})},
+  {id:'stand',x:.02,y:.02,w:.42,h:.96,s:{layer:'front',clamps:[{x:.3,y:.12,w:30}]}},
+  {id:'flask',name:'fl',x:.2,y:.62,w:.2,h:.26,get:S=>({liquid:colors.mix(WATER,indCol('ind-fenoloftaleina',tpH(S)),.92),level:tLv(S),stir:.7,T:22})},
+  {id:'hotplate',x:.12,y:.86,w:.36,h:.13,s:{heat:0,stir:.7}}],
+ overlay(c,W,H,S,t,T){const p=tpH(S);head(c,T,W,'HCl + NaOH → NaCl + H₂O','V(NaOH) = '+fmt(S.V,2)+' cm³ · pH = '+fmt(p,2),1);
+  const x0=W*.56,x1=W-16,y0=H*.18,y1=H*.7,X=v=>x0+(x1-x0)*v/40,Y=q=>y1-(y1-y0)*q/14;c.strokeStyle=T.mut;c.lineWidth=1;c.beginPath();c.moveTo(x0,y0);c.lineTo(x0,y1);c.lineTo(x1,y1);c.stroke();
+  for(let q=0;q<=14;q+=7){txt(c,String(q),x0-5,Y(q)+3,T.mut,'right',9)}for(let v=0;v<=40;v+=10)txt(c,String(v),X(v),y1+12,T.mut,'center',9);txt(c,'pH',x0,y0-6,T.mut,'center',9,800);txt(c,'V NaOH [cm³]',x1,y1+24,T.mut,'right',9,700);
+  c.fillStyle='rgba(219,39,119,.12)';c.fillRect(x0,Y(10),x1-x0,Y(8.2)-Y(10));txt(c,'fenoloftaleina',x1-2,Y(10)-3,'#db2777','right',8,700);
+  const Ve=S.ca*S.Va/S.cb;c.setLineDash([4,4]);c.strokeStyle=T.mut;c.beginPath();c.moveTo(X(Ve),y0);c.lineTo(X(Ve),y1);c.stroke();c.setLineDash([]);txt(c,'PR',X(Ve)+3,y0+10,T.mut,'left',9,800);
+  c.strokeStyle='#2563eb';c.lineWidth=2.2;c.beginPath();S.hist.forEach((h,i)=>{const x=X(Math.min(40,h[0])),y=Y(h[1]);i?c.lineTo(x,y):c.moveTo(x,y)});c.stroke();c.fillStyle='#2563eb';c.beginPath();c.arc(X(Math.min(40,S.V)),Y(p),3.5,0,7);c.fill()},
+ ui(h,S,m,api){const r=UI.row(h);UI.btn(r,'Kropla',()=>S.dropReq++,1);UI.btn(r,'+1 cm³',()=>{S.dropReq+=20});UI.sel(r,[['0','kranik zamknięty'],['.9','kroplami (wolno)'],['2.5','strumieniem (szybko)']],'0',v=>S.flow=+v,'Biureta');UI.btn(r,'Od nowa',()=>api.reset());
+  const n=UI.note(h);return S=>{const p=tpH(S),Ve=S.ca*S.Va/S.cb;n.innerHTML=p<8.2?(S.V>Ve-1.5&&S.V>0?'Różowe smugi znikają coraz wolniej — <b>zbliżasz się do punktu końcowego</b>. Dodawaj pojedyncze krople.':'Roztwór w kolbie jest <b>kwasowy</b>: fenoloftaleina bezbarwna, różowe smugi po kropli NaOH znikają po wymieszaniu.'):S.V<Ve+.6?'<b>Trwałe malinowe zabarwienie</b> — punkt końcowy. Zużyto '+fmt(S.V,2)+' cm³ NaOH → c(HCl) = '+fmt(S.cb*S.V/S.Va,3)+' mol/dm³.':'Nadmiar zasady: roztwór <b>zasadowy</b>, pH szybko rośnie.'}}});

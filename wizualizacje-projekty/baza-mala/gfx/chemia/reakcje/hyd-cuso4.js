@@ -1,0 +1,1 @@
+P('hyd-cuso4',{qualitative:1,n:'CuSO₄ + H₂O (+ wskaźnik uniwersalny)',solid:pw(wh),l0:u(7),l1:u(4),out:['barwa'],eq:'Cu²⁺ + 2 H₂O ⇌ CuOH⁺ + H₃O⁺',why:'Uwodniony jon Cu²⁺ zakwasza roztwór — odczyn kwasowy (pH ok. 4); roztwór niebieski od jonów Cu²⁺.'});

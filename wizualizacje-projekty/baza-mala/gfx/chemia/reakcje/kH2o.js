@@ -1,0 +1,1 @@
+P('kH2o',{n:'K + H₂O (+ fenoloftaleina)',bubFrom:'bottom',l0:php,l1:pink,out:['gaz','barwa'],gas:'H2',bubN:2.6,heat:2,T:55,splash:.5,teacher:1,why:'Potas reaguje gwałtowniej niż sód — wodór zapala się fioletowym płomieniem.'});

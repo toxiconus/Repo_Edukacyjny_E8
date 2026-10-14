@@ -1,0 +1,1 @@
+P('p4o10H2o',{n:'P₄O₁₀ + H₂O (+ wskaźnik uniwersalny)',solid:pw(wh),l0:u(7),l1:u(1.8),out:['barwa'],heat:1,T:40,teacher:1,why:'Biały proszek znika z sykiem; powstaje H₃PO₄ — odczyn kwasowy.'});

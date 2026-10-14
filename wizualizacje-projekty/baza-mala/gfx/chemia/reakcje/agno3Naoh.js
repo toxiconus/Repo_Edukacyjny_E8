@@ -1,0 +1,1 @@
+P('agno3Naoh',{n:'AgNO₃ + NaOH',ppt:[74,52,38],out:['osad'],why:'Brunatny osad Ag₂O (AgOH od razu się rozkłada).'});

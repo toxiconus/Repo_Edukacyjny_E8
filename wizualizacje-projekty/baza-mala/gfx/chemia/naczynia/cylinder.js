@@ -1,0 +1,2 @@
+vessel('cylinder',{path:(c,r)=>{const w=Math.min(r.w,90),x=r.x+(r.w-w)/2;rc(c,x,r.y,w,r.h-9,5)},hmax:.86,pad:11,rim:r=>{const w=Math.min(r.w,90),x=r.x+(r.w-w)/2;return[x,x+w,r.y]},shadow:1,scale:{max:100,step:20,minor:5,x:.5},
+ deco:(c,r,T)=>{const w=Math.min(r.w,90),x=r.x+(r.w-w)/2,b=r.y+r.h;c.fillStyle=T.tint;c.strokeStyle=T.glass;c.lineWidth=2.5;c.beginPath();c.moveTo(x-14,b);c.lineTo(x-6,b-9);c.lineTo(x+w+6,b-9);c.lineTo(x+w+14,b);c.closePath();c.fill();c.stroke()}});

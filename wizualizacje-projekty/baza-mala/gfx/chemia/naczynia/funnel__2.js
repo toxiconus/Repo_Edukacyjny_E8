@@ -1,0 +1,1 @@
+vessel('funnel',{path:(c,r)=>{const cx=r.x+r.w/2;c.beginPath();c.moveTo(r.x+r.w*.08,r.y);c.lineTo(cx-4,r.y+r.h*.55);c.lineTo(cx-4,r.y+r.h);c.lineTo(cx+4,r.y+r.h);c.lineTo(cx+4,r.y+r.h*.55);c.lineTo(r.x+r.w*.92,r.y)},hmax:.9,pad:2});

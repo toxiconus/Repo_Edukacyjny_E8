@@ -1,0 +1,20 @@
+V.define('fiz-przewodniki-v01',{title:'Przewodnik czy izolator? Rozpływ ładunku wzdłuż pręta',tag:'FIZ',
+ hint:'Naładowana kula dotyka jednego końca pręta, a drugi koniec łączy się z elektroskopem. Wybierz materiał: w metalu ładunek rozpływa się natychmiast, w izolatorze zostaje tam, gdzie go dotknięto.',
+ foot:'Opór właściwy ρ: CHE.FIZ.ELEKTRO.RHO · czas rozpływu τ ≈ R·C dla pręta 30 cm × 1 cm² i C ≈ 10 pF (rząd wielkości) · animacja: tempo umowne (metal — natychmiast, izolator — praktycznie wcale).',
+ build:function(host){host.innerHTML='';var E=EL(),RH=E.RHO,bar=el('div','r');host.appendChild(bar);
+  var ids=['miedz','aluminium','grafit','kran','destylowana','szklo','drewno','guma','teflon'];var sM=sel(bar,'Pręt z',ids.map(function(k){return[k,RH[k].name]}),'miedz');btn(bar,'↺ od nowa',function(){reset()});
+  var cv=cnv(host,230),note=el('div','note');host.appendChild(note);var ch=cnv(host,230);
+  var N=28,q,st;function tau(k){var rho=RH[k].rho;return rho*0.3/1e-4*10e-12}
+  function reset(){q=new Float64Array(N+2);q[0]=24;st={t:0}}reset();sM.onchange=reset;
+  var last=0;function frame(t){if(!cv.isConnected)return;var dt=Math.min(.05,(t-last)/1000||0);last=t;st.t+=dt;var k=sM.value,ta=tau(k),Tv=ta<0.01?0.5:ta>1e4?Infinity:0.5+1.6*Math.log10(ta/0.01);
+    
+   if(isFinite(Tv)){var Dd=(N*N)/(2*Tv),sub=Math.ceil(Dd*dt/0.35),h0=dt/sub;for(var s=0;s<sub;s++){var cap=function(i){return i===0?6:i===N+1?2:1},fl=new Float64Array(N+1);for(var i=0;i<=N;i++)fl[i]=Dd*h0*0.35*(q[i]/cap(i)-q[i+1]/cap(i+1));for(i=0;i<=N;i++){q[i]-=fl[i];q[i+1]+=fl[i]}}}
+   var g=ctx(cv),x=g.x,w=g.w,h=g.h,th=TH(),y0=110,xs=w*.14,xe=w*.78,cw=(xe-xs)/N;
+   GE().bar(x,xs,y0,xe,q,{col:{miedz:'#c2703d',aluminium:'#cbd5e1',grafit:'#3f3f46',kran:'#7dd3fc',destylowana:'#bae6fd',szklo:'#e0f2fe',drewno:'#b45309',guma:'#1f2937',teflon:'#f5f5f4'}[k],th:th});
+   x.fillStyle=th.text;x.font='700 12px system-ui';x.textAlign='left';x.fillText(RH[k].name+' — '+RH[k].kind+' · ρ = '+sci(RH[k].rho)+' Ω·m',12,22);x.fillText('τ ≈ '+(ta<1e-6?'< 1 µs (natychmiast)':ta<60?sci(ta)+' s':ta<86400*2?fmt(ta/3600,1)+' h':ta<3.15e9?fmt(ta/86400,0)+' dni':'> 100 lat (praktycznie nigdy)'),12,40);
+   requestAnimationFrame(frame)}
+  function bars(){var g=ctx(ch),x=g.x,w=g.w,h=g.h,th=TH(),ks=Object.keys(RH).sort(function(a,b){return RH[a].rho-RH[b].rho}),L=8,bw=(w-16)/ks.length,B=h-74,X0=-9,X1=24,Y=function(r){return B-(B-12)*(Math.log10(r)-X0)/(X1-X0)};
+   ks.forEach(function(k2,i){var r=RH[k2].rho,kd=RH[k2].kind,c=kd==='przewodnik'?'#c2703d':kd==='izolator'?'#475569':kd==='półprzewodnik'?'#7c3aed':'#0891b2';x.fillStyle=c;x.globalAlpha=k2===sM.value?1:.55;x.fillRect(L+i*bw+3,Y(r),bw-6,B-Y(r)+0.01);x.globalAlpha=1;x.save();x.translate(L+i*bw+bw/2,B+6);x.rotate(.6);x.fillStyle=th.text;x.font=(k2===sM.value?'800 ':'600 ')+'10px system-ui';x.textAlign='left';x.fillText(RH[k2].name,0,4);x.restore()});
+   x.fillStyle=th.mut;x.font='600 10px system-ui';x.textAlign='left';x.fillText('opór właściwy ρ [Ω·m], skala log: 10⁻⁹ … 10²⁴ (słupek wyżej = gorszy przewodnik)',L,10)}
+  function info(){var k=sM.value,r=RH[k];bars();note.innerHTML=(r.kind==='przewodnik'?'<b>Przewodnik</b> — ma <b>elektrony swobodne</b> (metale, grafit). Ładunek natychmiast rozpływa się po całym pręcie i dociera do elektroskopu.':r.kind==='elektrolit'?'<b>Przewodzi dzięki jonom</b> (Na⁺, Cl⁻, Ca²⁺… — chemia: dysocjacja). Dla elektrostatyki to dobry przewodnik — dlatego wilgotne powietrze i mokra skóra „zabierają” ładunek.':r.kind==='półprzewodnik'?'<b>Półprzewodnik</b> — mało nośników ładunku; przewodnictwo rośnie z temperaturą i domieszkami (elektronika).':r.kind==='izolator'?'<b>Izolator</b> — elektrony związane w atomach/cząsteczkach. Ładunek zostaje tam, gdzie go dotknięto; elektroskop się nie wychyla.':'<b>Słaby przewodnik</b> — bardzo mało jonów (H₃O⁺, OH⁻ z autodysocjacji wody), ale w elektrostatyce i tak rozładowuje ciało w ułamku sekundy.')}
+  sM.addEventListener('change',info);info();requestAnimationFrame(frame)}});

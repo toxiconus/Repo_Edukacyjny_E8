@@ -1,0 +1,8 @@
+sceneReg('indicator',{label:'Wskaźnik kwasowo-zasadowy w roztworze',lesson:'kwasy',desc:'Kropla wskaźnika rozpływa się w roztworze; barwa z CHE.COLORS dla pH roztworu.',height:340,aspect:1.75,
+ init:()=>({sol:'HCl',ind:'ind-uniwersalny',n:0,dropReq:0,show:false}),
+ parts:[{id:'dropper',x:.21,y:.02,w:.1,h:.27,get:S=>({dropper:{lv:.65,color:indBottle(S.ind)},dropReq:S.dropReq,landY:.49,onDrop:()=>{S.n++;S.api.trigger('dropMix',{color:indCol(S.ind,SOLS[S.sol].pH),dur:2.4},'bk')}})},
+  {id:'beaker',name:'bk',x:.08,y:.3,w:.36,h:.44,get:S=>{const p=SOLS[S.sol].pH,k=Math.min(.9,S.n*.45);return{liquid:colors.mix(WATER,indCol(S.ind,p),k),level:.56,label:SOLS[S.sol].f}}},
+  {id:'pHscale',x:.5,y:.3,w:.48,h:.36,get:S=>({pH:SOLS[S.sol].pH,ind:S.ind,hide:!S.show,marks:S.show?[]:[]})}],
+ overlay(c,W,H,S,t,T){const p=SOLS[S.sol].pH;head(c,T,W,'Roztwór: '+SOLS[S.sol].n,S.n?'Barwa: '+(indName(S.ind,p)||'—')+(S.show?' · odczyn '+odczyn(p):''):'Dodaj kroplę wskaźnika',1)},
+ ui(h,S,m){const r=UI.row(h),reset=()=>{S.n=0;m.reset();S.dropReq++};setTimeout(()=>{if(!S.n)S.dropReq++},400);UI.sel(r,Object.keys(SOLS).map(k=>[k,SOLS[k].n]),S.sol,v=>{S.sol=v;reset()},'Roztwór');UI.sel(r,INDS,S.ind,v=>{S.ind=v;reset()},'Wskaźnik');UI.btn(r,'Dodaj kroplę',()=>S.dropReq++,1);UI.btn(r,'Nowa próbka',reset);UI.chk(r,'pokaż pH',S.show,v=>S.show=v);
+  const n=UI.note(h);return S=>{const p=SOLS[S.sol].pH;n.innerHTML=S.n?'<b>'+INDS.find(x=>x[0]===S.ind)[1]+'</b> w roztworze: '+(indName(S.ind,p)||'zmiana barwy')+'. '+(S.ind==='ind-fenoloftaleina'&&p<8.2?'Fenoloftaleina <b>nie odróżnia</b> kwasu od wody — w obu jest bezbarwna.':S.ind==='ind-lakmus'?'Lakmus: czerwony = kwas, niebieski = zasada.':''):'Wybierz roztwór i wskaźnik, potem dodaj kroplę. Zgadnij barwę zanim kropla spadnie.'}}});

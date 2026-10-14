@@ -1,0 +1,1 @@
+V.define('rownania-jonowe-v01',{title:'Równania jonowe — wszystkie reakcje z silnika',tag:'E8',hint:'Zobojętnianie, strącanie, węglany, sole, tlenki i metale z kwasami — trzy poziomy zapisu.',foot:'CHE.IONIC',build:function(host){eqView(host,'agno3Hcl')}});

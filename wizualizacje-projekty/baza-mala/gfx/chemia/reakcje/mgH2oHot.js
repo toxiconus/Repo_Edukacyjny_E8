@@ -1,0 +1,1 @@
+P('mgH2oHot',{n:'Mg + gorąca H₂O (+ fenoloftaleina)',solid:{col:'metal-mg',eq:4,end:.7,t:'metal'},l0:php,l1:['ind-fenoloftaleina',9.6],out:['gaz','barwa'],gas:'H2',bubN:.4,T:80,why:'Z gorącą wodą magnez reaguje powoli — nieliczne pęcherzyki, słabo różowa barwa (Mg(OH)₂ trudno rozpuszczalny).'});

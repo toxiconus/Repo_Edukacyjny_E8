@@ -1,0 +1,1 @@
+P('fe2o3H2so4',{n:'Fe₂O₃ + H₂SO₄',solid:pw([140,52,30]),l1:'ion-fe3',out:['barwa'],T:45,why:'Rdzawy proszek znika, roztwór żółty (Fe³⁺).'});

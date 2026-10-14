@@ -1,0 +1,1 @@
+P('so3Naoh',{n:'SO₃ + NaOH (+ fenoloftaleina)',solid:pw(wh),l0:['ind-fenoloftaleina',13],l1:['ind-fenoloftaleina',7],out:['barwa'],heat:1,T:42,teacher:1,why:'Tlenek kwasowy zobojętnia zasadę — malinowa barwa znika.'});

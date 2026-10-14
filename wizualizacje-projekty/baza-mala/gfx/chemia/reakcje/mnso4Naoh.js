@@ -1,0 +1,1 @@
+P('mnso4Naoh',{n:'MnSO₄ + NaOH',l0:'ion-mn2',ppt:'ppt-mn-oh-2',out:['osad'],why:'Jasny osad Mn(OH)₂, brunatnieje na powietrzu.'});

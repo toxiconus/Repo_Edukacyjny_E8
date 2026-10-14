@@ -1,0 +1,1 @@
+P('cacl2Naoh',{n:'CaCl₂ + NaOH (stężone)',out:['osad'],turb:.45,why:'Słabe białe zmętnienie — Ca(OH)₂ jest tylko trudno rozpuszczalny.'});
