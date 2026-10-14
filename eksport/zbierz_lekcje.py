@@ -83,8 +83,11 @@ Chcemy, żeby lekcje były **poprawne, pełne i zrozumiałe bez nauczyciela**. T
 - dać gotowe treści do wstawienia (nie całe nowe lekcje).
 
 ## Jak
-1. **Nic nie usuwamy.** Usuwasz tylko dokładne duplikaty. Jeśli treść jest dobra — pomiń ją i nic nie pisz.
-2. **Nie przepisuj całych lekcji.** Dla każdej poprawki podaj: *co* (cytat lub numer sekcji) → *na co zamienić* → *powód i źródło*. Brakującą treść podaj od razu, gotową do wklejenia.
+1. **Ulepszaj, nie usuwaj.** Zachowaj wszystkie dobre dane, przykłady, zadania, tabele i wykresy. Usuwaj tylko dokładne duplikaty albo treść, której usunięcie jest konieczne (błąd, którego nie da się naprawić bez usunięcia) — i zawsze to uzasadnij. Jeśli treść jest dobra — pomiń ją i nic nie pisz.
+2. **Nie przepisuj całych lekcji.** Podawaj tylko to, co się zmienia, w trzech kategoriach:
+   - *zamieniona* — co (cytat lub numer sekcji) → na co zamienić → powód i źródło;
+   - *dodana* — gotowa treść do wklejenia i miejsce wstawienia (po której sekcji);
+   - *ulepszona* — co i jak poprawić, z gotowym fragmentem, bez powtarzania nieruchomej treści.
 3. **Każda lekcja ma mieć:** pełny wykład „od zera” (uczeń rozumie temat bez innych źródeł), 1–3 mini-wykłady w suchych miejscach (karty „W skrócie”) i 3–5 sprawdzonych ciekawostek. Jeśli czegoś brakuje — dopisz.
 4. **Fakty sprawdzaj** w aktualnych źródłach: podstawa programowa MEN (klasy 7–8), informator CKE o egzaminie ósmoklasisty, arkusze CKE 2019–2026, wymagania konkursów kuratoryjnych i olimpiad. Liczby i dane oznaczaj „do weryfikacji”, jeśli nie są pewne.
 5. **Lekcje oznaczone [W1 …]** przeszły już weryfikację treści — sprawdzaj je tylko pod kątem zakresu i spójności.
