@@ -9,7 +9,7 @@ Ocena automatyczna (nie merytoryczna): **A** = pełny W1 i treść nie krótsza 
 | A | 72 |
 | B | 149 |
 | C | 7 |
-| - | 55 |
+| - | 54 |
 
 ## C — do przywrócenia albo sprawdzenia (możliwa utrata treści)
 

@@ -14,7 +14,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `README.md` 0 KB
 - ⚠`SPIS_WSZYSTKICH.md` 56 KB
 - ⚠`WERYFIKACJA.md` 51 KB
-- ⚠`przeglad_lekcji.json` 147 KB
+- ⚠`przeglad_lekcji.json` 146 KB
 
 ## angielski  (4 pl., 962 KB)
 - ⚠`ANGIELSKI_PODSTAWA_PLUS_v1.0.md` 477 KB
@@ -109,7 +109,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## biologia/bio/szablon/wizualizacje  (59 pl., 300 KB)
 - (zwinięte; `ls biologia/bio/szablon/wizualizacje`)
 
-## biologia/html  (48 pl., 7.9 MB)
+## biologia/html  (47 pl., 7.8 MB)
 - (zwinięte; `ls biologia/html`) — duże:
 - ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 187 KB
 - ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 202 KB
@@ -120,7 +120,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIO.01.L004.organizacja_budowy_organizmu_od_komorki.html` 140 KB
 - ⚠`BIO.01.L005.blona_komorkowa_i_transport_substancji.html` 136 KB
 
-## biologia/md  (37 pl., 1.1 MB)
+## biologia/md  (36 pl., 1.1 MB)
 - (zwinięte; `ls biologia/md`) — duże:
 - ⚠`BIO.01.L001.komorka.md` 81 KB
 - ⚠`BIO.01.L002.powtorka_czlowiek.md` 76 KB
@@ -723,7 +723,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `ANG.01.L006.past_simple_continuous.md` 49 KB
 - `ANG.01.L012.future_simple.md` 50 KB
 
-## okladki/biologia/html  (47 pl., 7.9 MB)
+## okladki/biologia/html  (46 pl., 7.8 MB)
 - (zwinięte; `ls okladki/biologia/html`) — duże:
 - ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 187 KB
 - ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 202 KB
@@ -734,7 +734,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIO.01.L004.organizacja_budowy_organizmu_od_komorki.html` 140 KB
 - ⚠`BIO.01.L005.blona_komorkowa_i_transport_substancji.html` 136 KB
 
-## okladki/biologia/md  (47 pl., 2.0 MB)
+## okladki/biologia/md  (46 pl., 2.0 MB)
 - (zwinięte; `ls okladki/biologia/md`) — duże:
 - ⚠`BIO.00.REV02.roznorodnosc_zycia.md` 61 KB
 - ⚠`BIO.01.L001.komorka.md` 81 KB
