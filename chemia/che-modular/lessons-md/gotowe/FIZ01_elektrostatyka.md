@@ -3,7 +3,7 @@ kod: FIZ-01
 uid: CHE.FIZ.01.elektrostatyka
 tytul: Elektrostatyka
 opis: Ładunek i jego budowa atomowa · elektryzowanie przez tarcie, dotyk i indukcję · przewodniki i izolatory · elektroskop i uziemienie · prawo Coulomba i pole elektryczne · warstwa konkursowa
-stan: W1 FULL — Claude Haiku 5.5, 2026-10-14 (pełny przegląd linia po linii; poprawki w AUDYCIE W1 FULL na końcu)
+stan: W1 FULL — Claude Haiku 5.5, 2026-10-14 (pełny przegląd linia po linii; poprawki w AUDYCIE W1 FULL na końcu; audyt W2 zewnętrzny — poprawki 2026-10-14)
 kicker: FIZ-01 · FIZYKA · MASTER LAB v1.4
 lead: Ładunek i jego budowa atomowa, elektryzowanie (tarcie, dotyk, indukcja), oddziaływanie ładunków, przewodniki i izolatory, elektroskop, uziemienie i zastosowania; dla chętnych i LO: prawo Coulomba, pole elektryczne. Animacje i liczby z silnika CHE.FIZ.ELEKTRO. Warstwa konkursowa: pary do odróżniania, trudne przypadki i zadania ambitne.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:E8+ / LO]][[exam:KONKURS]]
@@ -97,7 +97,7 @@ Protony siedzą głęboko w jądrach i trzymają je siły jądrowe — zwykłe d
 - Ciało, które **przyjęło** elektrony, ma ich więcej niż protonów → ładunek **ujemny**.
 - Ciało, które **oddało** elektrony, ma więcej protonów niż elektronów → ładunek **dodatni**, choć nie dostało żadnego protonu.
 
-Wielkość ładunku wynika z liczby nadmiarowych albo brakujących elektronów: q = n · e. Ponieważ nie ma „pół elektronu”, ładunek ciała jest zawsze całkowitą wielokrotnością e. Jednostką jest **kulomb (1 C)** — to ładunek ok. 6,24·10¹⁸ elektronów, więc w doświadczeniach szkolnych mamy do czynienia z nanokulombami (10⁻⁹ C) i mikrokulombami (10⁻⁶ C).
+Wielkość ładunku wynika z liczby nadmiarowych albo brakujących elektronów: q = n · e. W szkolnym opisie ciało zyskuje lub traci całkowitą liczbę elektronów, dlatego jego ładunek jest całkowitą wielokrotnością e. Jednostką jest **kulomb (1 C)** — to ładunek ok. 6,24·10¹⁸ elektronów, więc w doświadczeniach szkolnych mamy do czynienia z nanokulombami (10⁻⁹ C) i mikrokulombami (10⁻⁶ C).
 :::
 
 ::: karta core | Część 3 — trzy sposoby elektryzowania i jedna ważna zasada
@@ -117,7 +117,7 @@ Naelektryzowane ciało przyciąga też ciała **obojętne** (skrawki papieru, st
 
 To, jak łatwo ładunek się przemieszcza, zależy od materiału. W **przewodniku** (metale, grafit, roztwory soli, ciało człowieka) są swobodne nośniki ładunku i w stanie równowagi nadmiarowy ładunek rozmieszcza się na powierzchni przewodnika. W **izolatorze** (szkło, guma, plastik, suche powietrze) nośników swobodnych nie ma i ładunek zostaje tam, gdzie powstał — dlatego izolatory elektryzuje się łatwo przez tarcie.
 
-**Elektroskop** to przyrząd, w którym dwa metalowe listki dostają ładunek tego samego znaku i odpychają się — im większy ładunek, tym większe rozchylenie. Pokazuje *ile*, ale nie *jaki* znak. **Uziemienie** to połączenie z ziemią: Ziemia jest tak wielkim zbiornikiem ładunku, że może oddać ciału elektrony albo je przyjąć, a ciało po uziemieniu zostaje praktycznie rozładowane (ma potencjał Ziemi).
+**Elektroskop** to przyrząd, w którym dwa metalowe listki dostają ładunek tego samego znaku i odpychają się — im większy ładunek, tym większe rozchylenie. Pokazuje *ile*, ale nie *jaki* znak; znak ustala się przez porównanie z ciałem o znanym ładunku. **Uziemienie** to połączenie z ziemią: Ziemia jest tak wielkim zbiornikiem ładunku, że może oddać ciału elektrony albo je przyjąć, a ciało po uziemieniu zostaje praktycznie rozładowane (ma potencjał Ziemi).
 :::
 
 ::: karta understand | Część 5 — dla chętnych: pole elektryczne
@@ -495,6 +495,11 @@ $$ F = 8,99·10⁹ · 2·10⁻⁶ · 3·10⁻⁶ / 0,3² ≈ 0,6 N
 W ośrodku o przenikalności względnej ε<sub>r</sub> siła maleje ε<sub>r</sub> razy: F = k·|q₁q₂| / (ε<sub>r</sub>·r²). Dla wody ε<sub>r</sub> ≈ <span data-fiz="epsr-woda">80</span> — dlatego woda tak skutecznie **rozdziela jony** kryształu soli (dysocjacja, lekcja Sole).
 :::
 
+::: karta extra | Jak czytać wzór Coulomba?
+
+Wzór F = k·|q₁·q₂|/r² podaje wartość siły. Moduły ładunków są w wartości bezwzględnej, więc wynik F jest zawsze dodatni. Rodzaj oddziaływania określa znak iloczynu q₁·q₂: dodatni — odpychanie, ujemny — przyciąganie. Nie wpisuj ujemnej wartości siły tylko dlatego, że ładunki się przyciągają.
+:::
+
 @model fiz-coulomb-v01 | Prawo Coulomba: siły, linie pola, ośrodek, wykres F(r) | k i εr z silnika
 @opis Dwa ładunki punktowe z regulowaną wartością, znakiem i odległością r: strzałki sił (równe, przeciwnie skierowane), linie pola, wybór ośrodka (εr) i wykres F(r). Wniosek: siła rośnie z iloczynem ładunków, maleje z kwadratem odległości (dwa razy dalej — cztery razy słabiej) i jest mniejsza w ośrodku niż w próżni.
 
@@ -546,6 +551,13 @@ W 1909 roku Robert Millikan obserwował naładowane kropelki oleju w polu elektr
 :::
 
 > **BHP ogólne:** nie wykonuj doświadczeń z wysokim napięciem, iskrami, paliwami i rozpuszczalnikami bez nadzoru dorosłego i odpowiedniego wyposażenia. Nie zbliżaj naładowanych przedmiotów do instalacji elektrycznej, urządzeń medycznych ani łatwopalnych oparów.
+
+::: karta understand | Gdzie gromadzi się ładunek?
+
+W stanie równowagi elektrostatycznej nadmiar ładunku przewodnika leży na jego powierzchni, a wewnątrz pole jest zerowe. Na ostrzach i w miejscach o małym promieniu krzywizny gęstość ładunku jest większa niż na płaskich powierzchniach, dlatego ostre końcówki łatwo jonizują powietrze.
+
+Nie oznacza to, że cały ładunek zawsze skupia się na samym ostrzu. Rozkład zależy od kształtu przewodnika i od obecności innych ładunków.
+:::
 
 ## 10 | Doświadczenia {#s10}
 
@@ -652,6 +664,9 @@ BHP: Doświadczenie bezpieczne; wykonuj je w suchym powietrzu i bez otwartego og
 | „Ładunek elementarny e jest ujemny, bo to ładunek elektronu.” | e ≈ 1,6·10⁻¹⁹ C jest dodatnie; ładunek elektronu to −e. | e to wartość najmniejszego ładunku, a znak dopisujemy osobno. |
 | „1 nC = 10⁻⁶ C.” | 1 nC = 10⁻⁹ C, a 10⁻⁶ C to 1 µC. | Nano to miliardowa część, mikro — milionowa; zamień na kulomby przed liczeniem elektronów. |
 | „W przewodniku ładunek zbiera się w środku.” | W równowadze ładunek siedzi na powierzchni, najgęściej na ostrzach. | Ładunki jednoimienne się odpychają i oddalają się od siebie tak daleko, jak się da. |
+| „Wewnątrz każdego przewodnika zawsze nie ma pola.” | W przewodniku w stanie równowagi elektrostatycznej pole wewnątrz jest zerowe, ale tylko w równowadze. | Swobodne ładunki przesuwają się, aż zrównoważą pole wewnątrz. |
+| „Uziemienie zawsze zabiera elektrony.” | Elektrony mogą odpływać do Ziemi albo napływać z Ziemi. | Kierunek zależy od znaku ciała (metoda ZUZO). |
+| „Ujemna wartość siły oznacza przyciąganie.” | Wartość siły jest dodatnia; rodzaj oddziaływania wynika ze znaku iloczynu q₁·q₂. | Wzór Coulomba podaje moduł siły. |
 | „Listki opadły po zbliżeniu pręta, więc pręt jest ujemny.” | Opadnięcie listków oznacza ładunek różnoimienny względem elektroskopu — o znaku pręta decyduje znak ładunku elektroskopu. | Znak pręta trzeba wywnioskować ze znaku ładunku elektroskopu i z zachowania listków. |
 :::
 :::
@@ -717,7 +732,7 @@ BHP: Doświadczenie bezpieczne; wykonuj je w suchym powietrzu i bez otwartego og
 ::: nie-myl | Pojęcia z poziomu E8
 - Ciało obojętne ≠ ciało bez ładunków — obojętne ma ładunki, ale ich suma wynosi 0; test rozstrzygający: policz protony i elektrony (jest ich tyle samo) albo zsumuj ładunki ze znakami.
 - Elektryzowanie przez dotyk ≠ elektryzowanie przez indukcję — przy dotyku ciała się stykają i końcowy znak jest taki sam jak znak ciała naładowanego, przy indukcji nie ma styku, a po uziemieniu znak jest przeciwny; test rozstrzygający: czy ciała się dotykały i jaki jest znak końcowy względem pręta?
-- Przewodnik ≠ izolator — przewodnik ma swobodne nośniki, więc ładunek rozpływa się po całym ciele, a izolator trzyma ładunek w miejscu; test rozstrzygający: czy elektroskop rozładuje się po dotknięciu go tym przedmiotem trzymanym w ręce?
+- Przewodnik ≠ izolator — przewodnik ma swobodne nośniki, więc ładunek rozpływa się po przewodniku i w równowadze gromadzi się na jego powierzchni, a izolator trzyma ładunek w miejscu; test rozstrzygający: czy elektroskop rozładuje się po dotknięciu go tym przedmiotem trzymanym w ręce?
 - Polaryzacja ≠ indukcja — polaryzacja to przesunięcie ładunków wewnątrz cząsteczek izolatora, indukcja to ruch swobodnych elektronów po przewodniku; test rozstrzygający: czy materiał ma swobodne nośniki ładunku?
 - Dowód odpychaniem ≠ dowód przyciąganiem — odpychanie dowodzi ładunków tego samego znaku, a przyciąganie zachodzi też z ciałem obojętnym; test rozstrzygający: czy ciała odpychają się po zetknięciu lub przy zbliżeniu drugim ciałem o znanym znaku?
 - Uziemienie ≠ odizolowanie — uziemienie to połączenie przewodzące z ziemią, które pozwala ładunkowi odpłynąć lub napłynąć; test rozstrzygający: czy istnieje ścieżka przewodząca do ziemi?
@@ -1586,3 +1601,13 @@ F = k·|q₁q₂|/r² = 8,99·10⁹ · (4·10⁻⁶)² / (0,20)² = 8,99·10⁹ 
 **Własne przykłady:** 4 nowe (zetknięcie kul, elektrony w ciele, przyciąganie a naelektryzowanie, siła Coulomba) z kluczem.
 
 **Bez uwag:** pozostałe fragmenty przeglądano sekcjami (0b, 1–5 ćwiczenia, 9–12 klucze, ZUZO) — brak dodatkowych błędów merytorycznych. Pełny przegląd linia po linii wykonano 2026-10-14 (§0–§15 i „Luki”). Poprawki: „ebonit z suknem” (ściąga), „potrze balon” → „pociera się balon” (zadanie 6), benzyna (εr ≈ 2: siła spada ok. 2×, sól się nie rozpuszcza), definicja ładunku elementarnego w słowniku. Sprawdzone bez zmian: rachunki w §5a, §8–§12c, klucze, test, fiszki, mosty, historia. Zapisy „$$ wzór” w jednej linii są poprawnym formatem md2html (nie wymagają zamknięcia).
+
+### AUDYT W2 — zewnętrzny, weryfikacja 2026-10-14 (Claude Haiku 5.5)
+
+Surowa odpowiedź: `chemia/plany/audyty/FIZ01_audyt_W2_2026-10-14.md`.
+
+**Wprowadzono:** zdanie o ładunku wielokrotności e bez „pół elektronu” (uczciwiej dla szkoły); „pokazuje ile, nie jaki” z porównaniem do ciała o znanym ładunku; przewodnik — ładunek na powierzchni w równowadze zamiast „po całym ciele”; karta „Gdzie gromadzi się ładunek?” (ostrza, zastrzeżenie o kształcie); karta „Jak czytać wzór Coulomba?” (moduły, znak iloczynu); trzy pozycje do kliniki (pole wewnątrz w równowadze, uziemienie a kierunek, ujemna wartość siły).
+
+**Już w lekcji (zarzut nieaktualny):** „najmniejszy swobodny ładunek”, „Ziemia przejmuje ładunek” (jest „zbiornik ładunku”), równe dzielenie kul (klinika i zadanie 9), zmiana odległości ×3 (test i zadanie 5b).
+
+**Nieprzyjęte jako dubel:** karta „Klatka Faradaya” z przykładami — treść i ograniczenie do pola magnetycznego są już w §11b i w słowniku; karta „Nie myl pojęć: indukcja/polaryzacja” — jest w §11b.
