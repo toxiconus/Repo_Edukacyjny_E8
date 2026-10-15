@@ -142,6 +142,9 @@ Pozostałe alkany C2–C5 — wszystkie zbilansowane, sprawdź każdy samodzieln
 
 Zauważ regularność: dla alkana CₙH₂ₙ₊₂ pełne spalanie potrzebuje O₂ w ilości n + (2n+2)/4 moli na mol paliwa (metan: 1 + 1 = 2 ✔; propan: 3 + 2 = 5 ✔; pentan: 5 + 3 = 8 ✔). W konkursie to przyspiesza rachunek objętości.
 
+@klocek bilans-spalania {n="3"} | Bilans spalania propanu C₃H₈: ile atomów każdego pierwiastka jest przed i po strzałce
+@opis Równanie propanu z współczynnikami: 1 C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O. Pod nim trzy wiersze (C, H, O) z kółkami: po lewej substraty, po prawej produkty. Węgla jest 3 po każdej stronie, wodoru 8, tlenu 10. Wniosek: równanie jest zbilansowane, bo każdy pierwiastek ma tyle samo atomów przed i po strzałce.
+
 **Spalanie niecałkowite** — gdy tlenu brakuje: obok (lub zamiast) CO₂ powstają **tlenek węgla CO** i **sadza C**; płomień jest żółty i kopcący (porównaj: spalanie całkowite daje płomień niebieski, bez dymu). Zapisy: 2CH₄ + 3O₂ → 2CO + 4H₂O; CH₄ + O₂ → C + 2H₂O. Niebezpieczeństwo CO — bezbarwny, bezwonny, trujący (blokuje transport tlenu we krwi — szczegóły w N01).
 
 ::: karta understand | W skrócie — trzy jednostki spalania propanu
@@ -282,8 +285,14 @@ C1–C3: po jednym (brak izomerii). C4: **2**. C5: **3**. Te liczby trzeba znać
 **Bezpieczeństwo:** metan z powietrzem tworzy mieszaninę wybuchową w pewnych proporcjach — pracować tylko z upływającym strumieniem z palnika (nigdy z gazem z butli wypuszczanym bez kontroli), w przewietrzanym pomieszczeniu, bez otwartego ognia poza płomieniem palnika; zlewkę chwytać szczypcami; sprawdzić szczelność połączeń.
 :::
 
-@klocek palnik-gazowy {etap="2"} | Doświadczenie 1 po obserwacjach: krople H₂O na zlewce odwróconej, sucha zlewka kontrolna, woda wapienna mętnieje
-@opis Płomień palnika z metanem stoi pod zlewką odwróconą (dnem do góry). Na jej wewnętrznej kopule są krople wody; zlewka kontrolna obok płomienia jest sucha. Rurka od zlewki odwróconej prowadzi gaz do probówki z wodą wapienną, która jest mętna. Wniosek: w spalinach są H₂O i CO₂ — spalanie całkowite metanu.
+@klocek palnik-gazowy {etap="0"} | Doświadczenie 1, krok 2: płomień pod zlewką odwróconą — jeszcze bez kropli
+@opis Palnik z metanem; nad płomieniem zlewka odwrócona dnem do góry, obok sucha zlewka kontrolna i probówka z wodą wapienną. Nic jeszcze nie osiadło na ściankach, woda wapienna jest klarowna. Wniosek: sam płomień nie daje widocznego dowodu — trzeba obserwować ścianki zlewki.
+
+@klocek palnik-gazowy {etap="1"} | Obserwacja 1: krople H₂O na kopule zlewki odwróconej, zlewka kontrolna sucha
+@opis Ten sam układ po kilku sekundach: na wewnętrznej kopule zlewki odwróconej pojawiły się krople wody; zlewka kontrolna obok płomienia pozostała sucha; woda wapienna jeszcze klarowna. Wniosek: H₂O powstaje w płomieniu i skrapla się na zimnej ściance — kontrola wyklucza, że to para z otoczenia.
+
+@klocek palnik-gazowy {etap="2"} | Obserwacja 2: woda wapienna mętnieje — w spalinach jest CO₂
+@opis Stan końcowy: krople na zlewce odwróconej, sucha zlewka kontrolna, a rurka od zlewki odwróconej prowadzi gaz do probówki z wodą wapienną, która jest mętna. Wniosek: w spalinach są H₂O i CO₂ — spalanie całkowite metanu.
 
 ## 6 | Zadania {#zadania}
 
@@ -466,7 +475,7 @@ biogaz :: mieszanina gazów z fermentacji materii organicznej, o znacznym udzial
 ## Do weryfikacji
 
 
-- **WIZUALIZACJA ORG01 (spalanie §2, doświadczenie §5): klocek `palnik-gazowy` dodany do §5 (etap 2 = stan końcowy). Etapy 0–1 i wizualizacja spalania §2 — do zrobienia.** Dawny opis braku: `palniki.js` to próba płomieniowa metali (barwy jonów w palniku), a nie palnik gazowy — nie nadaje się do tej lekcji. Potrzebny nowy klocek `palnik-gazowy`: płomień metanu, zlewka odwrócona nad płomieniem z kroplami wody, zlewka kontrolna obok, woda wapienna. Do zrobienia po zatwierdzeniu.
+- **WIZUALIZACJA ORG01:** §2 — klocek `bilans-spalania` (bilans atomów C, H, O dla CₙH₂ₙ₊₂); §5 — klocek `palnik-gazowy` w trzech etapach (0: płomień, 1: krople H₂O, 2: zmętnienie wody wapiennej). Do sprawdzenia przez autora: wygląd kółek przy większym n i zapis współczynnika 3,5 O₂ dla etanu (n=2).
 - **ORG01:** zakres wybuchowości metanu z powietrzem świadomie niepodany (literatura podaje różne przedziały) — w dosw i karcie o lampie Davy'ego tylko jakościowo.
 - **ORG01:** N₂ przyjęty jako 79% (uproszczenie: 21% O₂ + 79% N₂ podane w treści zadania 6) — sprawdzić zgodność z N01, gdzie może być przyjęte 78%; w tym wariancie suma spalin wynosi 281,4 dm³.
 - **ORG01:** adw 6c: 40/22,4 = 1,786 mol → 78,6 g (44 · 1,786 = 78,58) ✔.
