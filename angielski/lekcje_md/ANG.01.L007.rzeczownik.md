@@ -123,11 +123,9 @@ Na egzaminie pojawiają się zdania, w których znaczenie zależy od tego, czy r
 | materiały | wood, plastic, glass, paper |
 | jedzenie (masowe) | bread, cheese, meat, rice, sugar |
 | abstrakcyjne | information, advice, homework, knowledge, luck |
-| nazwy przedmiotów szkolnych* | maths, history, physics |
 | języki | English, Spanish, Polish |
-| sporty | football, basketball, tennis |
 
-*Nazwy przedmiotów szkolnych zwykle występują bez przedimka i bez liczby mnogiej – to nie są typowe rzeczowniki masowe w takim samym sensie jak *water* czy *advice*, ale na egzaminie często pojawiają się w podobnych kontekstach.
+*Nazwy przedmiotów szkolnych i sportów (*maths, history, football*) stosujemy bez przedimka i bez liczby mnogiej: *I like maths. She plays football.* Nie zaliczamy ich do rzeczowników niepoliczalnych w tabeli powyżej — to osobna, prosta reguła.
 
 <!-- UI: AUDIO --> *water, milk, juice / information, advice, homework*
 

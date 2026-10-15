@@ -678,7 +678,7 @@ Konstrukcje z czasownikami modalnymi + **have + III forma** odnoszą się do prz
 - *should have + V3* – żal, krytyka
 - *could have + V3* – możliwość, zdolność, niewykorzystana okazja
 - *must have + V3* – silne przypuszczenie dotyczące przeszłości (nie obowiązek!)
-- *would have + V3* – warunek niespełniony (konstrukcja warunkowa w przeszłości)
+- *would have + V3* – warunek niespełniony (konstrukcja warunkowa w przeszłości) — pełne zdania warunkowe w lekcji R07 (okresy 0–2, trzeci w warstwie olimpijskiej)
 
 ---
 

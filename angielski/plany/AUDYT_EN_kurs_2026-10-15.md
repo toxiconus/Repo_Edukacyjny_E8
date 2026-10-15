@@ -41,3 +41,10 @@ Uzasadnienie: BE/DO i operatory są fundamentem pytań i przeczeń; czasy przed 
 - Odpowiedzi zewnętrzne do lekcji L001–L012 (11 plików) oraz nowych L013–L017 — do przejrzenia pojedynczo przed wprowadzeniem; ten plik jest ich zbiorczym rejestrem.
 - Żadna lekcja nie została zmieniona w tym kroku.
 - Następny krok: zatwierdzenie kolejności i numeracji; potem wprowadzenie zmian w `angielski/lekcje_md/` i build HTML (`python3 narzedzia/lekcja_html.py -p ang <md>`).
+
+## 5. Status wykonania (2026-10-15)
+
+- Wykonane w treści: L001 — usunięty zdublowany nagłówek „Need to”, zdublowana sekcja Will/going to zastąpiona odesłaniem do L012, przenumerowanie sekcji, odesłanie do R07 przy trzecim okresie; L002 — like/have w tabeli stan/czynność poprawione; L003 — phrasal verbs ograniczone do 10 najważniejszych, reszta w powtórce; L004 — duplikaty czasów (Present Perfect, Past Simple, Past/Present Continuous) zastąpione odesłaniem do L005/L006, przenumerowanie; L007 — przedmioty i sporty wydzielone z listy niepoliczalnych; L009 — reguła -er/-est zawężona, podwójne formy oznaczone; L011 — przykład „washes every morning” zastąpiony „gets dressed”.
+- Sprawdzone bez zmian: L010 — czasowniki stanu (look, smell, taste, sound) już wydzielone w osobnej uwadze.
+- Nie wykonane (wymagają decyzji): zmiana kolejności 2→4→5→6→12→1→3→… (pliki zostają w starej numeracji; zmiana wymaga przenumerowania plików i linków), nadanie nazw docelowych (zastępujących prefiks R), weryfikacja merytoryczna wykładów (W1).
+- Nowe lekcje braków: R06 strona bierna, R07 zdania warunkowe, R08 zdania względne, R09 used to/would, R10 question tags (robocze, z numeracją tymczasową).

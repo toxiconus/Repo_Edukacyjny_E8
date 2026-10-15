@@ -13,7 +13,7 @@ stan: W1 FULL — model AI (paczka ULEPSZ --olimpiada ANG_OLI1), 2026-10-11; sca
 
 Słownictwo: plan dnia · obowiązki · czas wolny · określenia czasu (Otwórz słowniczek)
 
-W tej lekcji: Cele lekcji i test wstępny · Wykład — pięć czasów na jednej osi · 1 Present Simple · 2 Present Continuous · 3 Porównanie Present Simple i Continuous · 4 Present Perfect · 5 Present Perfect vs Past Simple · 6 Past Simple · 7 Past Continuous · 8 Łączenie Past Continuous i Past Simple · 9 Zestawienie wszystkich czasów · 10 Słownictwo · 11 Ćwiczenia · 12 7 kluczowych zasad · 13 Najczęstsze błędy · 14 Podsumowanie · 15 Test końcowy – MISJA · 16 FAQ · 17 Test wyjściowy · 18 Warstwa olimpijska · 19 Test — pytania zamknięte · 20 Fiszki · 21 Słowniczek · 22 Ciekawostki
+W tej lekcji: Cele lekcji i test wstępny · Wykład — pięć czasów na jednej osi · 1 Present Simple · 2 Present Continuous · 3 Porównanie Present Simple i Continuous · Present Perfect i przeszłość: lekcje 5 i 6 · 4 Zestawienie wszystkich czasów · 5 Słownictwo · 6 Ćwiczenia · 7 Ważne! – 7 kluczowych zasad · 8 Najczęstsze błędy · 9 Podsumowanie · 10 Test końcowy – MISJA · 11 FAQ · 12 Test wyjściowy · 13 Warstwa olimpijska · 14 Test — pytania zamknięte · 15 Fiszki · 16 Słowniczek · 17 Ciekawostki
 
 ## Cele lekcji {#cele-lekcji}
 
@@ -190,153 +190,11 @@ Niektóre czasowniki mogą występować w obu czasach, ale zmieniają znaczenie:
 - **I'm thinking about you.** – Myślę o tobie. (czynność)
 :::
 
-## 4 | Present Perfect {#present-perfect}
+## Present Perfect i przeszłość — w lekcjach 5 i 6 {#perfect-przeszlosc}
 
-::: karta basic | Budowa
-**have / has + III forma czasownika (past participle)**
+Present Perfect (lekcja 5) oraz Past Simple i Past Continuous (lekcja 6) zostały przeniesione do osobnych lekcji, żeby nie dublować treści. W tej lekcji zostaje tylko zestawienie czasów i test diagnostyczny.
 
-- **I have seen this film.** — Widziałem ten film.
-- **She has visited Paris.** — Ona odwiedziła Paryż.
-:::
-
-::: karta understand | Użycie
-- **Doświadczenia** – *ever, never, before*
-- **Niedawne wydarzenia** – *just, already, yet*
-- **Sytuacje trwające od przeszłości do teraz** – *since, for*
-- **Skutek widoczny teraz** – np. *I have lost my keys.*
-:::
-
-::: karta warning | Pytania i przeczenia
-- **Have you ever been to Italy?** — Czy kiedykolwiek byłeś we Włoszech?
-- **I haven't finished my homework yet.** — Jeszcze nie skończyłem zadania.
-:::
-
-::: karta warning | Since vs For
-- **since** – punkt w czasie: *since Monday, since 2020, since I was a child*
-- **for** – długość okresu: *for three days, for two years, for a long time*
-
-- **I have known her for five years.** — Znam ją od pięciu lat.
-- **I have known her since 2019.** — Znam ją od 2019 roku.
-:::
-
-## 5 | Present Perfect vs Past Simple {#pp-vs-past-simple}
-
-| Present Perfect | Past Simple |
-|---|---|
-| **Doświadczenie** – nie wiemy kiedy — *I have been to London.* | **Konkretny moment w przeszłości** — *I went to London in 2022.* |
-| **Skutek widoczny teraz** — *I have lost my keys.* | **Zakończone wydarzenie** — *I lost my keys yesterday.* |
-| **Sytuacja trwająca do teraz** — *I have lived here for 10 years.* | **Sytuacja zakończona** — *I lived there for 10 years, then I moved.* |
-| **Określenia:** ever, never, just, already, yet, since, for | **Określenia:** yesterday, last week, in 2020, two days ago |
-
-::: karta warning | Złota zasada
-Jeśli podany jest **zakończony moment w przeszłości** (np. *yesterday, in 2024, two days ago*) → używamy **Past Simple**.
-
-Jeśli nie ma konkretnego momentu, a skutek jest ważny teraz → **Present Perfect**.
-:::
-
-::: karta understand | W skrócie — dlaczego „yesterday" wyklucza Present Perfect
-Present Perfect to czas z „otwartym łączem" do teraz: mówimy o wyniku albo doświadczeniu i celowo **nie podajemy momentu**. Określenie typu yesterday, last week, two days ago to „zamknięte drzwi" — moment podany, łącze zerwane, zostaje Past Simple. Dlatego *I have seen him yesterday* to sprzeczność: forma mówi „nie podaję momentu", a przysłówek mówi „podaję". Odwrotność też działa: w pytaniu **When…?** moment jest istotą pytania, więc *When did you arrive?* — nigdy „When have you arrived?". Wyjątek: okresy, które **jeszcze trwają** (today, this week), godzą się z Present Perfect: *I haven't seen him today.*
-:::
-
-## 6 | Past Simple {#past-simple}
-
-::: karta basic | Użycie
-- **Zakończone wydarzenia w przeszłości**
-- **Fakty i stany w przeszłości**
-- **Kolejne wydarzenia w przeszłości**
-:::
-
-::: karta basic | Budowa – twierdzenie
-**Czasownik regularny + -ed** lub **forma nieregularna**
-
-- *regularny* — **She played tennis yesterday.** — Ona grała w tenisa wczoraj.
-- *nieregularny* — **He went home at 5 p.m.** — On poszedł do domu o 17.
-:::
-
-::: karta warning | Budowa – pytanie i przeczenie
-**Pytanie:** Did + podmiot + czasownik podstawowy?
-
-**Przeczenie:** podmiot + didn't + czasownik podstawowy
-
-- **Did you see the film?** — Czy widziałeś ten film?
-- **I didn't go to school yesterday.** — Nie poszedłem wczoraj do szkoły.
-:::
-
-::: karta basic | Określenia czasu dla Past Simple
-- **yesterday, last week / month / year**
-- **two days / three years ago**
-- **in 2020, then**
-:::
-
-::: karta basic | 12 czasowników, które musisz znać (V1–V2–V3)
-
-| V1 | V2 | V3 | Znaczenie |
-|---|---|---|---|
-| be | was / were | been | być |
-| have | had | had | mieć |
-| do | did | done | robić |
-| go | went | gone | iść |
-| make | made | made | robić / tworzyć |
-| get | got | got (AmE też: gotten) | dostawać / stawać się |
-| know | knew | known | wiedzieć, znać |
-| think | thought | thought | myśleć |
-| take | took | taken | brać |
-| see | saw | seen | widzieć |
-| come | came | come | przychodzić |
-| buy | bought | bought | kupować |
-
-:::
-
-## 7 | Past Continuous {#past-continuous}
-
-::: karta basic | Użycie
-- **Czynność trwająca w określonym momencie w przeszłości**
-- **Tło dla krótszego wydarzenia** (łączymy z Past Simple)
-- **Równoległe czynności w przeszłości**
-:::
-
-::: karta basic | Budowa – twierdzenie
-**was / were + czasownik + -ing**
-
-- **I was reading at 8 p.m.** — Czytałem o 20.
-- **They were playing football at that time.** — Oni grali w piłkę w tym czasie.
-:::
-
-::: karta warning | Budowa – pytanie i przeczenie
-**Pytanie:** Was / Were + podmiot + czasownik + -ing?
-
-**Przeczenie:** podmiot + wasn't / weren't + czasownik + -ing
-
-- **Were you sleeping at 11 p.m.?** — Czy spałeś o 23?
-- **She wasn't listening to the teacher.** — Ona nie słuchała nauczyciela.
-:::
-
-::: karta basic | Określenia czasu dla Past Continuous
-- **at 5 p.m. yesterday, at that moment**
-- **all evening, from 8 to 10 p.m.**
-- **while, when**
-:::
-
-## 8 | Łączenie Past Continuous i Past Simple {#when-while}
-
-::: karta basic | Reguła
-- **while** + Past Continuous (czynność trwająca w tle)
-- **when** + Past Simple (krótsze wydarzenie, które przerwało)
-- **when** może też wprowadzać obie części: *When I was walking, I saw...*
-:::
-
-- *przykład* — **I was walking home when it started to rain.** — Szedłem do domu, kiedy zaczęło padać.
-- *przykład* — **While I was studying, my friend called.** — Kiedy się uczyłem, zadzwonił mój przyjaciel.
-
-::: karta understand | W skrócie — film i błysk
-Past Continuous to **scena filmu**: kamera nagrywa coś, co trwało (*I was walking home* — szedłem, w połowie drogi). Past Simple to **błysk fotografii**: zdarzenie krótkie, zakończone (*the phone rang*). Sceny filmowe łączymy przez **while** („w trakcie, gdy"), błyski przez **when** („gdy nagle"). Pułapka: **when** może wprowadzać oba czasy (*When I was walking, I saw...*), bo odpowiada po prostu na „kiedy?"; **while** prawie zawsze stoi z formą -ing. Szyk nie ma znaczenia: *While I was studying, my friend called* = *My friend called while I was studying.*
-:::
-
-::: karta warning | Tip tygodnia – oś czasu
-Narysuj oś czasu. Krótkie wydarzenie zaznacz punktem, a czynność będącą w toku – dłuższą linią. Następnie ułóż zdanie.
-:::
-
-## 9 | Zestawienie wszystkich czasów {#zestawienie}
+## 4 | Zestawienie wszystkich czasów {#zestawienie}
 
 | Czas | Budowa | Użycie | Określenia czasu |
 |---|---|---|---|
@@ -362,7 +220,7 @@ Jak wybrać czas?
         czynność w toku / tło → Past Continuous (I was reading at 8 p.m.)
 :::
 
-## 10 | Słownictwo – plan dnia, obowiązki, czas wolny {#slownictwo}
+## 5 | Słownictwo – plan dnia, obowiązki, czas wolny {#slownictwo}
 
 ::: slowka | Wyraz | Znaczenie | Przykład
 daily routine || codzienna rutyna || My daily routine starts at 7 a.m.
@@ -388,7 +246,7 @@ experience || doświadczenie || I have had many interesting experiences.
 - Opis zdjęcia na egzaminie („Describe the picture") → Present Continuous: *The boy is riding a bike.*
 :::
 
-## 11 | Ćwiczenia {#cwiczenia}
+## 6 | Ćwiczenia {#cwiczenia}
 
 ::: karta exam | Zadanie 1 (5 pkt) — Present Simple czy Continuous? [[basic:PODSTAWA]]
 Uzupełnij zdania właściwą formą czasownika w nawiasie.
@@ -510,7 +368,7 @@ Wymagane elementy: usually meet / play (Present Simple), was doing + went out (P
 :::
 :::
 
-## 12 | Ważne! – 7 kluczowych zasad {#7-zasad}
+## 7 | Ważne! – 7 kluczowych zasad {#7-zasad}
 
 1. **W 3. os. l.poj. Present Simple dodaj -s/-es** — He watches TV every night.
 2. **Po doesn't używaj formy podstawowej** — She doesn't play. (nie: She doesn't plays)
@@ -536,7 +394,7 @@ Wymagane elementy: usually meet / play (Present Simple), was doing + went out (P
 - Czynność w tle → Past Continuous; krótkie wydarzenie → Past Simple.
 :::
 
-## 13 | Najczęstsze błędy {#bledy}
+## 8 | Najczęstsze błędy {#bledy}
 
 ::: klinika | Błąd | Poprawnie | Dlaczego?
 | She like coffee. | She likes coffee. | 3. os. l.poj. w Present Simple wymaga końcówki -s. |
@@ -557,7 +415,7 @@ Wymagane elementy: usually meet / play (Present Simple), was doing + went out (P
 „already i yet są zamienne" || already → twierdzenia (I have already eaten); yet → pytania i przeczenia, zwykle na końcu zdania.
 :::
 
-## 14 | Podsumowanie {#podsumowanie}
+## 9 | Podsumowanie {#podsumowanie}
 
 ::: karta basic | 7 kluczowych zasad – powtórka
 1. **Present Simple:** rutyny, fakty, stany – V1 (3. os. -s/-es)
@@ -604,7 +462,7 @@ Wymagane elementy: usually meet / play (Present Simple), was doing + went out (P
 - PP: ever, never, since, for
 - Past: yesterday, last week, ago
 
-## 15. Test końcowy – MISJA {#misja}
+## 10. Test końcowy – MISJA {#misja}
 
 ::: karta exam | Misja końcowa (10 pkt) — uzupełnij bez zaglądania do zasad
 Bez zaglądania do zasad – uzupełnij wszystkie zdania. Sprawdź swój wynik (1 pkt za zdanie — wszystkie luki poprawne).
@@ -625,7 +483,7 @@ Bez zaglądania do zasad – uzupełnij wszystkie zdania. Sprawdź swój wynik (
 :::
 :::
 
-## 16. FAQ – najczęstsze wątpliwości {#faq}
+## 11. FAQ – najczęstsze wątpliwości {#faq}
 
 ::: karta understand | FAQ – najczęstsze wątpliwości
 **1. Kiedy używamy Present Perfect zamiast Past Simple?** Gdy skutek jest ważny teraz lub nie podajemy konkretnego momentu w przeszłości.
@@ -639,7 +497,7 @@ Bez zaglądania do zasad – uzupełnij wszystkie zdania. Sprawdź swój wynik (
 **5. Czy z „today" i „this week" można użyć Present Perfect?** Tak — to okresy, które jeszcze trwają: *I haven't seen him today.* Ale już nie z *yesterday* — to zamknięty moment.
 :::
 
-## 17. Test wyjściowy – sprawdź swój postęp {#test-wyjsciowy}
+## 12. Test wyjściowy – sprawdź swój postęp {#test-wyjsciowy}
 
 ::: karta basic | Porównaj z testem wstępnym
 :::
@@ -656,7 +514,7 @@ Bez zaglądania do zasad – uzupełnij wszystkie zdania. Sprawdź swój wynik (
 Porównaj swój wynik z testem wstępnym. Czy jest lepiej?
 :::
 
-## 18 | Warstwa olimpijska — Dla olimpijczyka {#olimpijska}
+## 13 | Warstwa olimpijska — Dla olimpijczyka {#olimpijska}
 
 *(Warstwa ponad E8 — do zweryfikowania z wymaganiami konkretnego konkursu; w paczce nie ma dokumentu wymagań.)*
 
@@ -762,7 +620,7 @@ Popraw zdania i wyjaśnij regułę (1 pkt za zdanie).
 :::
 :::
 
-## 19 | Test — pytania zamknięte {#test}
+## 14 | Test — pytania zamknięte {#test}
 
 ::: test
 ? She ______ to school by bus every day.
@@ -836,7 +694,7 @@ Popraw zdania i wyjaśnij regułę (1 pkt za zdanie).
 ! ever (doświadczenie życiowe) → Present Perfect: Have + III forma.
 :::
 
-## 20 | Fiszki {#fiszki}
+## 15 | Fiszki {#fiszki}
 
 ::: fiszki
 Present Simple — użycie | rutyny, fakty, stany, rozkłady | basic:czasy
@@ -860,7 +718,7 @@ I know her since 2020 — błąd? | TAK: I have known her since 2020 (since → 
 How long do you live here? — błąd? | TAK: How long have you lived here? | olimpijski:czasy
 :::
 
-## 21 | Słowniczek {#slownik}
+## 16 | Słowniczek {#slownik}
 
 ::: slownik
 czasownik posiłkowy :: pomaga zbudować pytanie, przeczenie lub formę złożoną: do/does/did, am/is/are, was/were, have/has. Sam zwykle nic nie znaczy — jak podnośnik.
@@ -877,7 +735,7 @@ rutyna :: czynność powtarzalna, schemat dnia: I get up at 6:30.
 oś czasu :: prosty rysunek (linia przeszłość–teraz), na którym zaznaczasz zdarzenia punktami i odcinkami, żeby wybrać czas.
 :::
 
-## 22 | Ciekawostki {#ciekawostki}
+## 17 | Ciekawostki {#ciekawostki}
 
 ::: karta extra | Angielski ma tylko dwa „prawdziwe" czasy
 Brzmi niewiarygodnie, ale gramatycy (m.in. Huddleston i Pullum, The Cambridge Grammar of the English Language) liczą angielskie czasy morfologiczne dokładnie dwa: present i past (goes/went). „Przyszłość" (will), „perfect" (have + III forma) i „continuous" (be + -ing) to konstrukcje z operatorami, a nie osobne końcówki. Dlatego Present Perfect nazywa się present, choć opowiada o przeszłości — bo jego „siedziba" jest w teraźniejszości. (konkurs)

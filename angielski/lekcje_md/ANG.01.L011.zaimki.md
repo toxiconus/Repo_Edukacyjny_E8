@@ -63,7 +63,7 @@ Tom and I went to school.
 
 my / mine
 
-He washes every morning. (codzienna czynność bez zaimka zwrotnego)
+He gets dressed every morning. (codzienna czynność bez zaimka zwrotnego)
 
 myself
 
@@ -256,7 +256,7 @@ Zaimki to słowa, które zastępują rzeczowniki, aby uniknąć powtarzania ich 
 | She gave it to I. | She gave it to me. | po przyimku – dopełnienie |
 | This is mine house. | This is my house. | przed rzeczownikiem – przymiotnik dzierżawczy |
 | This house is my. | This house is mine. | bez rzeczownika – zaimek dzierżawczy |
-| He washed himself every morning. | He washes every morning. | codzienne czynności bez zwrotnego (chyba że chcemy podkreślić) |
+| He washed himself before the party. | He got dressed every morning. | codzienne czynności bez zwrotnego (chyba że chcemy podkreślić) |
 | I enjoyed at the party. | I enjoyed myself at the party. | enjoy + zaimek zwrotny = dobrze się bawić |
 | Which book do you want? – The red. | Which book do you want? – The red one. | one zastępuje rzeczownik |
 | I wash myself every morning. | I wash every morning. | rutyna – bez zaimka zwrotnego |
@@ -473,7 +473,7 @@ Zaimki to słowa, które zastępują rzeczowniki, aby uniknąć powtarzania ich 
 <details>
 <summary><strong>Odpowiedzi z komentarzem</strong></summary>
 
-1. ✅ He washes every morning. (codzienna czynność bez zaimka zwrotnego; chyba że chcemy podkreślić, że umył siebie, a nie kogoś innego)
+1. ✅ He gets dressed every morning. (codzienna czynność; zwrotne *washed himself* używamy, gdy podkreślamy, że umył siebie, a nie kogoś innego)
 2. ✅ I enjoyed myself at the party. (enjoy + zaimek zwrotny)
 3. ✅ She cut herself. (poprawne – podmiot i dopełnienie to ta sama osoba)
 4. ✅ They hurt themselves. (poprawne)
@@ -632,7 +632,7 @@ My family is very important to me. My parents are kind and they always help me. 
 4. my / mine
 5. himself – he
 6. herself – she
-7. He washes every morning. (codzienna czynność bez zaimka zwrotnego)
+7. He gets dressed every morning. (codzienna czynność bez zaimka zwrotnego)
 8. myself – I
 9. This / Those
 10. one – liczba pojedyncza
@@ -786,7 +786,7 @@ My family is very important to me. My parents are kind and they always help me. 
 2. me
 3. Tom and I went to school.
 4. my / mine
-5. He washes every morning.
+5. He gets dressed every morning.
 6. myself
 7. This / Those
 

@@ -94,11 +94,11 @@ Przykłady:
 
 <!-- UI: DIAGRAM -->
 
-**Czy przymiotnik ma 1 sylabę lub kończy się na -y, -er, -ow?**  
-→ TAK → dodaj **-er / -est**: *big – bigger – the biggest*  
+**Czy przymiotnik ma 1 sylabę lub jest dwusylabowy i kończy się na -y?**  
+→ TAK → dodaj **-er / -est**: *big – bigger – the biggest*, *happy – happier – the happiest*  
 → NIE → użyj **more / most**: *interesting – more interesting – the most interesting*
 
-### 3.1. Przymiotniki krótkie (jednosylabowe i dwusylabowe zakończone na -y, -er, -ow)
+### 3.1. Przymiotniki krótkie (jednosylabowe i dwusylabowe na -y) — oraz wyjątki z podwójną formą
 
 [POZIOM E8]
 
@@ -109,8 +109,10 @@ Przykłady:
 | nice | nicer | the nicest |
 | happy | happier | the happiest |
 | busy | busier | the busiest |
-| clever | cleverer | the cleverest |
-| narrow | narrower | the narrowest |
+| clever | cleverer / more clever | the cleverest / the most clever |
+| narrow | narrower / more narrow | the narrowest / the most narrow |
+
+*Uwaga: dwusylabowe na -er i -ow (clever, narrow, quiet) często dopuszczają obie formy; w egzaminie wybieraj formę z -er/-est, jeśli nie ma innej wskazówki. Długie przymiotniki (interesting, careful) biorą more / most.*
 
 <!-- UI: AUDIO --> *big – bigger – the biggest / happy – happier – the happiest*
 

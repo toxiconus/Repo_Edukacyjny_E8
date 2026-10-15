@@ -221,7 +221,7 @@ Cztery konstrukcje układają się na drabinie od najbardziej bezpośredniej do 
 **want to vs would like to** — test rozstrzygający: gdzie mówisz? Oficjalnie (restauracja, list, rozmowa o pracę) → *I'd like…*. Swobodnie (kolega, dom) → *I want…*. Oba poprawne gramatycznie — różnica w grzeczności, nie w logice. Pułapka zadań: „zamień na formę uprzejmą" = want → would like (z zachowaniem to + bezokolicznik).
 :::
 
-## 8 | Phrasal verbs — rutyna, dom, opieka {#phrasal-verbs}
+## 8 | Phrasal verbs — rutyna, dom, opieka (10 najważniejszych) {#phrasal-verbs}
 
 **Phrasal verb** = czasownik + przyimek / przysłówek. Znaczenie często jest inne niż suma części. Ucz się ich **jako całych wyrażeń** w zdaniach.
 
@@ -239,8 +239,6 @@ Zapisuj phrasal verb w zdaniu + tłumaczenie pasujące do kontekstu.
 | **get up** | wstawać (z łóżka) | *I get up at 7 o'clock.* |
 | **put on** | zakładać (ubranie) | *Put on your coat.* |
 | **take off** | zdejmować (ubranie) | *Take off your shoes.* |
-| **go to bed** | kłaść się spać | *I go to bed at 10 p.m.* |
-| **go out** | wychodzić (z domu / spotykać się towarzysko) | *I go out with my friends on Fridays.* |
 
 ### Dom i instrukcje
 
@@ -248,12 +246,7 @@ Zapisuj phrasal verb w zdaniu + tłumaczenie pasujące do kontekstu.
 |---|---|---|
 | **turn on** | włączać | *Turn on the light, please.* |
 | **turn off** | wyłączać | *Turn off the television.* |
-| **switch on** | włączać (synonim turn on) | *Switch on the computer.* |
-| **switch off** | wyłączać (synonim turn off) | *Switch off your phone during the test.* |
 | **tidy up** | sprzątać | *Tidy up your room.* |
-| **pick up** | podnosić / odbierać | *Pick up the book, please.* |
-| **sit down** | siadać | *Sit down, please.* |
-| **stand up** | wstawać | *Stand up and say your name.* |
 
 ### Opieka i relacje
 
@@ -261,14 +254,13 @@ Zapisuj phrasal verb w zdaniu + tłumaczenie pasujące do kontekstu.
 |---|---|---|
 | **look after** | opiekować się | *She looks after her little brother.* |
 | **look for** | szukać | *I'm looking for my keys.* |
-| **find out** | dowiedzieć się | *I need to find out the answer.* |
 | **give up** | rezygnować / poddawać się | *Don't give up! You can do it.* |
-| **come back** | wracać | *Come back home before 9 p.m.* |
-| **go back** | wracać (tam, skąd się przyszło) | *Go back to your seat.* |
 
 ::: karta understand | Uwaga
-**turn on** i **switch on** oraz **turn off** i **switch off** są synonimami – możesz używać obu form.
+**turn on** i **turn off** to podstawowe formy; ich synonimy *switch on / switch off* poznasz w słownictwie.
 :::
+
+**Pozostałe zwroty (powtórka w słowniczku):** go to bed, go out, switch on/off, pick up, sit down, stand up, find out, come back, go back.
 
 ::: karta core | Tip tygodnia
 Ucz się phrasal verbs w **całych zdaniach**, nie jako osobnych słów.
@@ -282,7 +274,7 @@ Ucz się phrasal verbs w **całych zdaniach**, nie jako osobnych słów.
 :::
 
 ::: karta understand | W skrócie — 20 zwrotów, 5 scen dnia
-Nie ucz się 20 zwrotów z osobna — ucz się pięciu scen. **Rano:** wake up (otwieram oczy) → get up (wychodzę z łóżka) → have a shower → get dressed → have breakfast. **Wyjście:** put on (ubranie na siebie) → go out (wychodzę z domu). **W domu wieczorem:** turn on/off albo switch on/off (urządzenia) → tidy up (porządek) → go to bed. **Szukanie i porządki:** look for (szukam) → find out (dowiedzieć się) → pick up (podnieść) → put down (odłożyć). **Relacje:** look after (opiekuję się) → come back (wracam) → give up (poddaję się — rzecz jedyna, której robić nie wolno!). Gdy na egzaminie widzisz lukę, przypomnij sobie scenę, a właściwy zwrot sam wskoczy.
+Nie ucz się zwrotów z osobna — ucz się pięciu scen. **Rano:** wake up (otwieram oczy) → get up (wychodzę z łóżka) → have a shower → get dressed → have breakfast. **Wyjście:** put on (ubranie na siebie) → go out (wychodzę z domu). **W domu wieczorem:** turn on/off albo switch on/off (urządzenia) → tidy up (porządek) → go to bed. **Szukanie i porządki:** look for (szukam) → find out (dowiedzieć się) → pick up (podnieść) → put down (odłożyć). **Relacje:** look after (opiekuję się) → come back (wracam) → give up (poddaję się — rzecz jedyna, której robić nie wolno!). Gdy na egzaminie widzisz lukę, przypomnij sobie scenę, a właściwy zwrot sam wskoczy.
 :::
 
 ::: wskazowki
