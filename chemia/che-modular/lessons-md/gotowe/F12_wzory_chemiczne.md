@@ -6,11 +6,11 @@ opis: Wzór sumaryczny, rzeczywisty, empiryczny i strukturalny · zapis wzorów 
 kicker: F12 · FUNDAMENTY · NOWA WERSJA  
 lead: Wzór chemiczny to zapis języka, którym chemicy mówią o substancjach. Potrafisz go przeczytać i zbudować? Umiesz policzyć, ile masy pierwiastka jest w związku? Ta lekcja uczy obu rzeczy — i pokazuje, że z samych procentów da się odtworzyć wzór.  
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]  
-stan: "pełna struktura — 2026-10-15, audyt W1 wprowadzony (odp. zewn. 12), do weryfikacji W2"  
+stan: "pełna struktura — 2026-10-15, audyt W1 wprowadzony (odp. zewn. 12), W2 wykonany, decyzja (b): etykiety E8+LO"  
 stopka: **CHEMIA F12 v1.2** · Wzory chemiczne · 2026
 ---
 
-::: minimum | Muszę umieć w kursie E8 — 10 punktów (punkty 5–8 wykraczają poza podstawę klas 7–8)
+::: minimum | Muszę umieć na E8 — punkty 1–4, 9 i 10; reszta: poziom E8+LO
 
 1. **Wzór sumaryczny** podaje rodzaj i liczbę atomów w cząsteczce, np. C₆H₁₂O₆ — glukoza.
 2. **Współczynnik** przed wzorem mnoży wszystkie atomy w nim: 2 H₂O oznacza 4 atomy wodoru i 2 atomy tlenu.
@@ -42,7 +42,7 @@ stopka: **CHEMIA F12 v1.2** · Wzory chemiczne · 2026
 
 ::: warstwy
 
-- e8 | <b>Zakres kursu E8:</b> wzory sumaryczne i strukturalne prostych związków (podstawa 2.9, 2.13–2.14); zasada zerowej sumy ładunków (2.10); masa cząsteczkowa (3.5); masa molowa, skład procentowy, stosunek masowy i masa pierwiastka w próbce — poza podstawą klas 7–8, w kursie E8; proste nazwy związków.
+- e8 | <b>Zakres E8 (podstawa + kurs):</b> wzory sumaryczne i strukturalne prostych związków (podstawa 2.9, 2.13–2.14); zasada zerowej sumy ładunków (2.10); masa cząsteczkowa (3.5); proste nazwy związków. <b>Poziom E8+LO:</b> masa molowa, skład procentowy, stosunek masowy, masa pierwiastka w próbce, wzór empiryczny i hydraty.
 - understand | <b>Rozumienie:</b> dlaczego wzór jonowy nie jest zapisem pojedynczej cząsteczki; związek między wzorem empirycznym a rzeczywistym; sens zapisu $$n$$ i stosunku liczbowego atomów.
 - extra | <b>Poziom ponadpodstawowy:</b> izomery; wzory półstrukturalne związków organicznych; sprawdzanie wyniku przez sumę procentów; wzory hydratów, np. CuSO₄·5H₂O; wyznaczanie wzoru empirycznego i rzeczywistego z procentów.
 
@@ -345,7 +345,7 @@ W nazwach takich jak azotan(V), siarczan(VI), siarczyn(IV) i fosforan(V) cyfra r
 
 Mol to liczność odpowiadająca około $$6{,}02\cdot10^{23}$$ cząstkom, atomom lub jonom. Szczegóły znajdują się w §6.
 
-## 3 | Masa molowa [[basic:E8]] {#masa}
+## 3 | Masa molowa [[extra:E8+LO]] {#masa}
 
 Masa molowa $$M$$ to masa jednego mola substancji. Jednostką masy molowej jest g/mol.
 
@@ -410,7 +410,7 @@ Przykład:
 
 Liczby są takie same, ale wielkości i jednostki są różne.
 
-## 4 | Skład procentowy [[basic:E8]] {#procent}
+## 4 | Skład procentowy [[extra:E8+LO]] {#procent}
 
 Skład procentowy mówi, jaka część masy związku przypada na poszczególne pierwiastki.
 
