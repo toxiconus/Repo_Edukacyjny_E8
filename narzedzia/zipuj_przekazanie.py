@@ -21,6 +21,8 @@ KATALOGI = [
     'chemia/che-modular/engine', 'chemia/che-modular/tools', 'biologia/bio/narzedzia', 'szablon', 'narzedzia',
     # olimpiada: ZAWSZE w ZIP (źródła, plany, zestawy, terminy, html) — decyzja Rafała
     'olimpiada', 'olimpiada/zrodla', 'olimpiada/LKO_pakiet',
+    # pilne lekcje do ulepszenia przez zewnętrzne AI (duble, z poleceniem na początku)
+    'chemia/pilne',
     # wizualizacje: baza mała, raporty użycia i braków
     'wizualizacje-projekty/baza-mala',
 ]
