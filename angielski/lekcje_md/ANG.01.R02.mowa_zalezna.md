@@ -439,6 +439,6 @@ Przekształć na mowę zależną:
 
 ## 19 | Ciekawostki {#ciekawostki}
 
-- Mowa zależna to nie tylko angielski wynalazek: w polskim też „powiedział, że przyjdzie” zamiast „powiedział: przyjdę”, a zmiana zaimków i czasu jest analogiczna.
+- Polski też przekształca mowę bezpośrednią w zależną („powiedział, że przyjdzie” zamiast „powiedział: przyjdę”), ale czasy w polskim nie cofają się tak systematycznie jak w angielskim.
 - Czasownik *ask* w mowie zależnej nie wymaga *that*, ale *say* go wymaga częściej — stąd *She said that…* jest tak częste.
 - W mowie potocznej Anglicy często nie cofają czasu przy świeżych wypowiedziach („She says she’s coming”), co jest naturalne, a nie błędne.

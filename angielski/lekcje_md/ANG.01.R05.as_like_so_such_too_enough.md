@@ -336,6 +336,6 @@ Przekształć zdania, stosując *so, such, too, enough, as, like, such as*:
 
 ## 17 | Ciekawostki {#ciekawostki}
 
-- *As if* i *as though* znaczą „jakby” i są poprawne we wszystkich rejestrach, a *like* jako spójnik w mowie potocznej budzi wątpliwości — egzaminatorzy wolą *as if*.
+- *As if* i *as though* znaczą „jakby” i są poprawne we wszystkich rejestrach. W mowie potocznej *like* bywa używane jako spójnik, ale w pracy pisemnej lepiej użyć *as if*.
 - *Such* w zdaniu z *what* działa w wykrzyknieniach: *What a good film!* — tu też rzeczownik idzie po *a*.
 - *Enough* może stać samo po czasowniku: *That’s enough!* — wtedy oznacza „dość”.

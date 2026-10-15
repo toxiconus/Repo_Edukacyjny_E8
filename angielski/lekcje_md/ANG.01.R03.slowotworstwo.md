@@ -50,12 +50,12 @@ Po tej lekcji będziesz potrafić:
 4. *danger* → przymiotnik: ______
 5. *possible* → przeczenie: ______
 6. Popraw: *She is very kindness.*
-7. Popraw: *He made a careful decision carefully.*
+7. Popraw: *He is very careful driving.*
 
 <details>
 <summary><strong>Odpowiedzi do testu wstępnego</strong></summary>
 
-1. happiness · 2. careful · 3. quickly · 4. dangerous · 5. impossible · 6. She is very kind. · 7. *He made a careful decision.* (albo *He made the decision carefully.* — przysłówek jest tu zbędny w znaczeniu, ale nie jest błędem gramatycznym)
+1. happiness · 2. careful · 3. quickly · 4. dangerous · 5. impossible · 6. She is very kind. · 7. *He is a very careful driver.* (przymiotnik po *is*; przysłówek *carefully* stoi przy czasowniku: *He drives carefully.*)
 
 </details>
 
@@ -441,4 +441,4 @@ Uzupełnij lukę właściwą formą wyrazu w nawiasie:
 
 - Przymiotnik *friendly* i *lonely* kończą się na *-ly*, ale są **przymiotnikami**, nie przysłówkami. Przysłówek od *friendly* to *in a friendly way*.
 - Przysłówek od *good* to *well*, ale *good* jako przysłówek w mowie potocznej też się zdarza („he did good”) — w pracach egzaminacyjnych trzymaj się *well*.
-- Prefiks *un-* bywa mylący: *unhappy* (nieszczęśliwy) i *unhappy* jako „mało szczęśliwy” to to samo słowo, a nie dwa różne przeczenia.
+- Prefiks *un-* nie zawsze oznacza przeczenie: *unkind* to przeczenie *kind*, ale *unique* (wyjątkowy) nie ma nic wspólnego z przeczeniem — to samodzielne słowo. Dlatego zapamiętuj całe pary.
