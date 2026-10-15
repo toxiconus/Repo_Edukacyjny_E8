@@ -481,10 +481,12 @@ Po **do / does / did** czasownik wraca do **formy podstawowej**.
 
 | Stan (BE) | Czynność (DO) |
 |---|---|
-| She is tired. | She likes music. |
-| Is she tired? | Does she like music? |
-| She isn't tired. | She doesn't like music. |
+| She is tired. | She cooks dinner. |
+| Is she tired? | Does she cook dinner? |
+| She isn't tired. | She doesn't cook dinner. |
 | Yes, she is. | Yes, she does. |
+
+*Uwaga: *like* i *have* (w znaczeniu posiadania) to czasowniki stanu, a nie czynności. W pytaniach i przeczeniach zachowują się jednak jak zwykłe czasowniki i potrzebują *do/does*: *Do you like tea?*, *Does she have a car?*
 
 | Stan (BE) | Czynność (DO) |
 |---|---|

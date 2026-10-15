@@ -805,8 +805,6 @@ Uzupełnij **should have / could have / must have**:
 
 ### Need to – potrzeba, konieczność
 
-### Need to – potrzeba, konieczność
-
 **Need to** zachowuje się jak zwykły czasownik i w pytaniach potrzebuje operatorów *do/does/did*. Jest podobne do *have to*, ale podkreśla **potrzebę** wykonania czynności bardziej niż obowiązek.
 
 *Need to* podkreśla potrzebę lub konieczność wykonania czynności, natomiast *have to* często przedstawia obowiązek albo konieczność wynikającą z sytuacji. W wielu kontekstach mogą być wymienne.
