@@ -10,7 +10,7 @@ stan: "pełna struktura — 2026-10-15, audyt W1 wprowadzony (odp. zewn. 12), do
 stopka: **CHEMIA F12 v1.2** · Wzory chemiczne · 2026
 ---
 
-::: minimum | Muszę umieć na poziomie szkoły podstawowej — 10 punktów
+::: minimum | Muszę umieć w kursie E8 — 10 punktów (punkty 5–8 wykraczają poza podstawę klas 7–8)
 
 1. **Wzór sumaryczny** podaje rodzaj i liczbę atomów w cząsteczce, np. C₆H₁₂O₆ — glukoza.
 2. **Współczynnik** przed wzorem mnoży wszystkie atomy w nim: 2 H₂O oznacza 4 atomy wodoru i 2 atomy tlenu.
@@ -42,7 +42,7 @@ stopka: **CHEMIA F12 v1.2** · Wzory chemiczne · 2026
 
 ::: warstwy
 
-- e8 | <b>Zakres szkoły podstawowej:</b> wzory sumaryczne i strukturalne prostych związków; zasada zerowej sumy ładunków; masa molowa i skład procentowy; stosunek masowy i masa pierwiastka w próbce; proste nazwy związków.
+- e8 | <b>Zakres kursu E8:</b> wzory sumaryczne i strukturalne prostych związków (podstawa 2.9, 2.13–2.14); zasada zerowej sumy ładunków (2.10); masa cząsteczkowa (3.5); masa molowa, skład procentowy, stosunek masowy i masa pierwiastka w próbce — poza podstawą klas 7–8, w kursie E8; proste nazwy związków.
 - understand | <b>Rozumienie:</b> dlaczego wzór jonowy nie jest zapisem pojedynczej cząsteczki; związek między wzorem empirycznym a rzeczywistym; sens zapisu $$n$$ i stosunku liczbowego atomów.
 - extra | <b>Poziom ponadpodstawowy:</b> izomery; wzory półstrukturalne związków organicznych; sprawdzanie wyniku przez sumę procentów; wzory hydratów, np. CuSO₄·5H₂O; wyznaczanie wzoru empirycznego i rzeczywistego z procentów.
 
@@ -463,6 +463,12 @@ $$
 Masa związku składa się ze wszystkich mas pierwiastków obecnych we wzorze. Jeżeli obliczymy udziały wszystkich pierwiastków, ich suma powinna wynosić 100%.
 
 Niewielka różnica, np. 99,9% albo 100,1%, może wynikać z zaokrągleń. Większa różnica zwykle oznacza błąd w odczytaniu wzoru, obliczeniu masy molowej albo zaokrągleniu wyniku.
+
+:::
+
+::: karta core | Prawo stałości składu (podstawa 3.5)
+
+Każdy czysty związek chemiczny ma zawsze ten sam skład pierwiastków w stałym stosunku masowym. Dlatego skład procentowy (§4) jest tą samą wartością niezależnie od tego, z jakiej próbki pochodzi związek.
 
 :::
 
