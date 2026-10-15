@@ -6,16 +6,18 @@ opis: Domknięcie bloku F — zadania, w których łączysz kilka działów (kon
 kicker: F21 · FUNDAMENTY · NOWA WERSJA
 lead: Blok F nie kończy się na definicjach. Kończy się tym, że potrafisz przejść przez cały łańcuch: od atomu do równania i z powrotem. Ta lekcja to zestaw zadań, które wymagają połączenia kilku lekcji, oraz diagnoza, która wskaże, gdzie wracać.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
-stan: "pełna struktura — 2026-10-13, bez audytu W1"
-stopka: **CHEMIA F21 v1.0** · Zadania transferowe i diagnostyka · 2026
+stan: "pełna struktura — 2026-10-15 · audyt W1 wprowadzony, etykiety E8+LO (decyzja b)"
+stopka: **CHEMIA F21 v1.1** · Zadania transferowe i diagnostyka · 2026
 ---
 
-::: minimum | Muszę umieć na E8 — 10 punktów
-1. Z atomu obojętnego wyznacz liczbę elektronów, okres i grupę (F06–F08).
+<!-- W1: zaktualizowano pole `stan` i wersję w stopce po wprowadzeniu audytu W1. -->
+
+::: minimum | Muszę umieć na E8 — punkty 2, 6, 7, 8, 9, 10; punkty 1, 3, 4, 5: poziom E8+LO
+1. Z atomu obojętnego wyznacz liczbę elektronów, okres i grupę (F06–F08) (E8+LO — konfiguracja).
 2. Z ładunków jonów zbuduj wzór związku jonowego (F09, F12).
-3. Z liczby elektronów walencyjnych zbuduj wzór Lewisa (F13).
-4. Z Lewisa wyznacz domeny i geometrię VSEPR (F14).
-5. Z geometrii i Δχ oceń polarność cząsteczki (F15).
+3. Z liczby elektronów walencyjnych zbuduj wzór Lewisa (F13) (E8+LO).
+4. Z Lewisa wyznacz domeny i geometrię VSEPR (F14) (E8+LO).
+5. Z geometrii i Δχ oceń polarność cząsteczki (F15) (E8+LO).
 6. Oddziel obserwację od hipotezy i wniosku (F16).
 7. Zapisz równanie i zbilansuj je współczynnikami (F17).
 8. Rekord reakcji i substancji zapisz według pól (F18, F19).
@@ -39,6 +41,13 @@ obserwacja → model reakcji → równanie → bilans → interpretacja
 ```
 
 Zadania transferowe nie podają metody. Musisz sam wybrać, który łańcuch uruchomić, i sprawdzić wynik niezależnie.
+
+<!-- W1: dodano mini-wykład, żeby lekcja była zrozumiała od zera. -->
+::: karta understand | Mini-wykład — jak czytać te łańcuchy
+Każdy łańcuch to droga od danych do odpowiedzi. Jeśli zadanie mówi o atomie, zacznij od konfiguracji. Jeśli mówi o cząsteczce, zacznij od Lewisa. Jeśli opisuje doświadczenie, zacznij od obserwacji.
+
+Nie ucz się trzech osobnych „przepisów”. Ucz się pytania startowego: **„Co jest danymi: atom, cząsteczka czy doświadczenie?”** To pytanie wybiera łańcuch.
+:::
 :::
 
 ## 0.1 | Jak pracować z tą lekcją {#jak-pracowac}
@@ -50,11 +59,14 @@ Zrób diagnozę (0.4). Potem rozwiąż zadania z punktu 2 bez zaglądania do klu
 ## 0.2 | Cele i pytanie przewodnie [[basic:E8]] {#cele}
 
 ::: karta basic | Po tej lekcji potrafisz
-- przejść przez łańcuch od konfiguracji do wzoru związku;
-- przejść przez łańcuch od wzoru Lewisa do polarności;
+- przejść przez łańcuch od konfiguracji (E8+LO) do wzoru związku;
+- przejść przez łańcuch od wzoru Lewisa do polarności (E8+LO);
 - przejść od obserwacji do zbilansowanego równania;
-- wskazać etap, w którym pojawił się błąd, i lekcję do powtórki.
+- wskazać etap, w którym pojawił się błąd, i lekcję do powtórki;
+- odróżnić współczynnik stechiometryczny od indeksu we wzorze.
 :::
+
+<!-- W1: dodano ostatni punkt celów — wynika z zadania kanonicznego o 2H₂O i H₂O₂. -->
 
 ::: karta exam | Pytanie przewodnie
 Czy potrafisz wykorzystać fundamenty F01–F20 w sytuacji, w której nikt nie podaje ci gotowej metody?
@@ -100,13 +112,27 @@ Czy potrafisz wykorzystać fundamenty F01–F20 w sytuacji, w której nikt nie p
 5. **Kontrola:** bilans atomów, ładunek, sens chemiczny, jednostki.
 :::
 
+<!-- W1: dodano mnemotechnikę i mini-wykład o kontroli wyniku. -->
+::: karta understand | Mnemotechnika — „DŁMRK”
+- **D**ane
+- **Ł**ańcuch
+- **M**odel
+- **R**achunek
+- **K**ontrola
+
+Przy kontroli pytaj kolejno: *Czy atomy się zgadzają? Czy ładunek jest zerowy, jeśli ma być zerowy? Czy wynik ma sens chemiczny? Czy jednostki są właściwe?*
+:::
+
 ## 2 | Zadania transferowe — 15 zadań z kluczem [[basic:E8]] {#zadania}
 
-::: karta exam | Zadanie 1 — od konfiguracji do pierwiastka (2 pkt)
+::: karta exam | Zadanie 1 — od konfiguracji do pierwiastka (2 pkt, E8+LO)
 Dany jest atom o konfiguracji `[Ne]3s²3p⁵`. Ustal symbol, Z, okres, grupę, liczbę elektronów walencyjnych i typowy jon jednoatomowy.
 
 ::: odp | Pokaż klucz i rozumowanie
 Konfiguracja [Ne]3s²3p⁵ ma 2 + 5 = 7 elektronów powyżej neonu, czyli Z = 10 + 7 = 17: to **Cl**. Najwyższa powłoka to 3, więc **okres 3**. Elektrony walencyjne: 3s²3p⁵ = **7**. Grupa: 7 elektronów walencyjnych → **grupa 17** (fluorowce). Typowy jon: **Cl⁻** (przyjmuje 1 elektron, uzyskując 8 elektronów w powłoce walencyjnej).
+
+<!-- W1: uzupełniono o liczbę elektronów w jonie — wymóg audytu W1. -->
+Jon Cl⁻ ma **18 elektronów**: atom obojętny miał 17 elektronów, a jon ujemny przyjął jeden.
 :::
 :::
 
@@ -134,7 +160,24 @@ Najmniejsza wspólna wielokrotność ładunków: 3 i 2 → 6. Potrzeba 2 jonów 
 :::
 :::
 
-::: karta exam | Zadanie 5 — Lewis dla H₂O (2 pkt)
+<!-- W1: dodano zadanie kanoniczne o bilansie Al + O₂ → Al₂O₃. -->
+::: karta exam | Zadanie 4a — bilans reakcji aluminium z tlenem (2 pkt)
+Zbilansuj równanie:
+
+```text
+Al + O₂ → Al₂O₃
+```
+
+::: odp | Pokaż klucz i rozumowanie
+```text
+4Al + 3O₂ → 2Al₂O₃
+```
+
+Kontrola: po lewej 4 Al i 6 O; po prawej 2·2 = 4 Al i 2·3 = 6 O. Liczba atomów każdego pierwiastka jest taka sama po obu stronach.
+:::
+:::
+
+::: karta exam | Zadanie 5 — Lewis dla H₂O (2 pkt, E8+LO)
 Podaj liczbę elektronów walencyjnych w H₂O, wzór Lewisa, liczbę domen na atomie centralnym i geometrię.
 
 ::: odp | Pokaż klucz i rozumowanie
@@ -142,7 +185,7 @@ Elektrony walencyjne: 2·1 (H) + 6 (O) = **8**. Lewis: O w środku, dwa wiązani
 :::
 :::
 
-::: karta exam | Zadanie 6 — polarność H₂O (2 pkt)
+::: karta exam | Zadanie 6 — polarność H₂O (2 pkt, E8+LO)
 Uczeń twierdzi: „Woda jest niepolarna, bo jej wzór nie zawiera jonów”. Oceń wypowiedź.
 
 ::: odp | Pokaż klucz i rozumowanie
@@ -150,7 +193,7 @@ Rozumowanie jest błędne. Polarność cząsteczki zależy od polarnych wiązań
 :::
 :::
 
-::: karta exam | Zadanie 7 — polarność CO₂ i NH₃ (2 pkt)
+::: karta exam | Zadanie 7 — polarność CO₂ i NH₃ (2 pkt, E8+LO)
 Oceń polarność CO₂ i NH₃, uzasadniając geometrią.
 
 ::: odp | Pokaż klucz i rozumowanie
@@ -190,7 +233,7 @@ Nie. NaCl ma sieć jonową: każdy jon Na⁺ otoczony jest sześcioma jonami Cl�
 :::
 :::
 
-::: karta exam | Zadanie 12 — NH₃: od Lewisa do polarności (2 pkt)
+::: karta exam | Zadanie 12 — NH₃: od Lewisa do polarności (2 pkt, E8+LO)
 Podaj Lewis, geometrię i polarność NH₃.
 
 ::: odp | Pokaż klucz i rozumowanie
@@ -198,7 +241,7 @@ Elektrony walencyjne: 5 + 3 = 8 → 3 wiązania N–H i 1 wolna para na N. Domen
 :::
 :::
 
-::: karta exam | Zadanie 13 — CH₄: dossier substancji (2 pkt)
+::: karta exam | Zadanie 13 — CH₄: dossier substancji (2 pkt, E8+LO)
 Podaj geometrię, polarność i temperaturę wrzenia CH₄ jako przykład wpływu budowy na właściwości (orientacyjnie).
 
 ::: odp | Pokaż klucz i rozumowanie
@@ -245,6 +288,17 @@ Dlaczego NaCl przewodzi prąd w roztworze wodnym, ale nie przewodzi dobrze jako 
 
 ::: odp | Pokaż klucz i rozumowanie
 W krysztale jony są unieruchomione w sieci. W roztworze mogą się przemieszczać i przenosić ładunek.
+:::
+:::
+
+<!-- W1: dodano zadanie kanoniczne o indeksie i współczynniku. -->
+::: karta exam | Zadanie 19 — indeks czy współczynnik? (2 pkt)
+Wyjaśnij różnicę między zapisami `2H₂O` i `H₂O₂`.
+
+::: odp | Pokaż klucz i rozumowanie
+`2H₂O` oznacza **dwie cząsteczki wody** — liczba 2 przed wzorem to współczynnik stechiometryczny.
+
+`H₂O₂` to **nadtlenek wodoru** — inna substancja. Liczba 2 po O jest indeksem i mówi, że w jednej cząsteczce są dwa atomy tlenu. Zmiana indeksu zmienia substancję; zmiana współczynnika zmienia ilość cząsteczek.
 :::
 :::
 
@@ -365,10 +419,15 @@ Jeśli łańcuch urywa się, wskaż konkretną lekcję F, a nie tylko „nie umi
 Jak nazywa się łańcuch: atom → układ → jon → wzór? | łańcuch konfiguracji i walencyjności | basic:podstawa
 Co zwykle daje liczba elektronów walencyjnych grupy 17? | 7 elektronów, jon −1 | basic:podstawa
 Jaki wzór tworzą Al³⁺ i SO₄²⁻? | Al₂(SO₄)₃ | understand:rozumienie
-Ile domen ma tlen w H₂O? | 4 (2 wiązania + 2 wolne pary) | understand:rozumienie
-Czy polarne wiązania dają polarną cząsteczkę? | nie zawsze — trzeba sprawdzić geometrię | extra:ambitne
+Ile domen ma tlen w H₂O? | 4 (2 wiązania + 2 wolne pary) | extra:LO
+Czy polarne wiązania dają polarną cząsteczkę? | nie zawsze — trzeba sprawdzić geometrię | extra:LO
 Jaki jest pierwszy krok naprawy błędu? | znaleźć pierwszą niespójność | basic:podstawa
+Co oznacza współczynnik przed wzorem? | liczbę cząsteczek, jonów lub jednostek wzorowych | basic:podstawa
+Co oznacza indeks we wzorze? | liczbę atomów danego pierwiastka w jednostce wzoru | basic:podstawa
+Jaka jest różnica między 2H₂O a H₂O₂? | 2H₂O to dwie cząsteczki wody; H₂O₂ to nadtlenek wodoru | understand:rozumienie
 :::
+
+<!-- W1: dodano trzy fiszki z audytu W1 — współczynnik, indeks i porównanie 2H₂O / H₂O₂. -->
 
 ## 8 | Słownik {#slownik}
 
@@ -376,7 +435,11 @@ Jaki jest pierwszy krok naprawy błędu? | znaleźć pierwszą niespójność | 
 Łańcuch rozumowania :: sekwencja pojęć, w której wynik jednego etapu jest danymi następnego
 Transfer :: zastosowanie wiedzy w sytuacji, której nie ćwiczono wprost
 Diagnoza poziomów :: ocena, jakiego rodzaju pytanie rozwiązujesz (A: definicja — E: uzasadnienie modelu)
+Współczynnik stechiometryczny :: liczba przed wzorem; mówi, ile cząsteczek, jonów lub jednostek wzorowych bierze udział w równaniu
+Indeks :: liczba po symbolu pierwiastka; mówi, ile atomów tego pierwiastka jest w jednej jednostce wzoru
 :::
+
+<!-- W1: dodano dwa pojęcia do słownika, aby rozróżniać indeks i współczynnik. -->
 
 ## 9 | Ciekawostki {#ciekawostki}
 
@@ -388,9 +451,13 @@ Chlor pojawia się w trzech łańcuchach z tej lekcji: w konfiguracji (grupa 17)
 Jeśli dwie niezależne metody dają ten sam wynik, zaufanie do niego rośnie. Bilans atomów, kontrola ładunku i oszacowanie sensu fizycznego to właśnie takie niezależne drogi.
 :::
 
-
 ::: karta extra | Dlaczego kryształ soli kuchennej jest tak regularny?
 W krysztale NaCl każdy jon Na⁺ otoczony jest sześcioma jonami Cl⁻, a każdy Cl⁻ sześcioma jonami Na⁺. Ta sieć, powtarzana w trzech kierunkach, daje sześcienne kryształy, które widzimy jako kostki soli.
+:::
+
+<!-- W1: dodano ciekawostkę dydaktyczną o indeksie i współczynniku. -->
+::: karta extra | Dlaczego `H₂O₂` nie jest „podwójną wodą”?
+Nadtlenek wodoru H₂O₂ ma dodatkowy atom tlenu w cząsteczce. To zmienia strukturę i właściwości: jest to inna substancja niż woda, choć oba wzory zawierają tylko wodór i tlen. Dlatego w chemii nie wolno „przestawiać” indeksów jak zwykłych liczb.
 :::
 
 ## 10 | Wykład — od odpowiedzi do rozumowania {#wyklad}
@@ -401,6 +468,11 @@ Uczeń, który zna osobno definicje, często nie umie ich użyć, gdy pytanie ł
 Zadanie transferowe sprawdza, czy łańcuch jest w twojej głowie połączony. Dlatego jego najważniejszą częścią nie jest wynik, tylko pierwszy krok: wybór łańcucha.
 
 **Mini-wykład: granice rozumowania.** Każdy łańcuch działa w określonym zakresie. Lewis i VSEPR przewidują geometrię dobrze dla prostych cząsteczek, ale nie opisują każdej substancji. Umiejętność zauważenia, kiedy model przestaje działać, to część E poziomu diagnostyki.
+
+<!-- W1: dodano mini-wykład o indeksie i współczynniku — suchy, ale kluczowy fragment. -->
+**Mini-wykład: indeks i współczynnik.** Indeks stoi **po symbolu pierwiastka** i opisuje skład jednej cząsteczki albo jednostki wzorowej. Współczynnik stoi **przed wzorem** i mówi, ile takich cząsteczek lub jednostek bierzemy.
+
+Przykład: `2H₂O` to dwie cząsteczki wody. `H₂O₂` to jedna cząsteczka nadtlenku wodoru. W bilansowaniu równań zmieniamy współczynniki, nigdy indeksów.
 :::
 
 ::: karta core | W skrócie — transfer w jednym zdaniu
@@ -415,5 +487,44 @@ Nazwij łańcuch, wybierz model, wykonaj rachunek krok po kroku i sprawdź wynik
 - [ ] zbudować Lewis, policzyć domeny i określić geometrię;
 - [ ] ocenić polarność cząsteczki, uwzględniając geometrię;
 - [ ] oddzielić obserwację od wniosku i zbilansować równanie;
+- [ ] rozróżnić współczynnik stechiometryczny i indeks we wzorze;
 - [ ] wskazać pierwszy błąd w cudzym rozwiązaniu i lekcję do powtórki.
 :::
+
+<!-- W1: dodano punkt checklisty o indeksie i współczynniku. -->
+
+## AUDYT W1 — audyt 21 z kanonu
+
+**Zakres audytu:** wprowadzono wymagania z załączonego kanonu W1 dla F21. Lekcja obejmuje treści zgodne z podstawą programową chemii w szkole podstawowej oraz typowym zakresem egzaminu ósmoklasisty; odniesienie do konkursu LKO pozostawiono jako kontekst ambitny, bez dodawania treści wykraczających poza blok F. Oficjalnego zakresu LKO na 2026/2027 nie zweryfikowano — **do sprawdzenia**.
+
+### Co wprowadzono
+
+- **Zadanie 1:** uzupełniono liczbę elektronów w jonie Cl⁻ (18 elektronów), zgodnie z kanonem.
+- **Nowe zadanie 4a:** bilans `Al + O₂ → Al₂O₃`; poprawna odpowiedź `4Al + 3O₂ → 2Al₂O₃`.
+- **Nowe zadanie 19:** różnica między `2H₂O` a `H₂O₂` — współczynnik a indeks.
+- **Fiszki:** dodano trzy pozycje o współczynniku, indeksie i porównaniu `2H₂O` / `H₂O₂`.
+- **Słownik:** dodano definicje „współczynnik stechiometryczny” i „indeks”.
+- **Wykład:** dodano mini-wykład o indeksie i współczynniku.
+- **Ciekawostka:** dodano „Dlaczego H₂O₂ nie jest podwójną wodą?”.
+- **Checklista:** dodano punkt o rozróżnianiu współczynnika i indeksu.
+- **Cele:** dodano umiejętność odróżniania współczynnika od indeksu.
+- **Mini-wykłady i mnemotechnika:** dodano „DŁMRK” oraz mini-wykład o wyborze łańcucha, aby lekcja była czytelna od zera.
+
+### Co poprawiono liczbowo
+
+- Nie znaleziono błędnych wyników liczbowych w istniejących zadaniach i teście.
+- Klucz zadania 1 rozszerzono o **18 elektronów w jonie Cl⁻** — wcześniej wynikało to pośrednio, ale nie było podane wprost.
+- Równanie `4Al + 3O₂ → 2Al₂O₃` dodane jako nowe; sprawdzone bilansem: 4 Al i 6 O po obu stronach.
+
+### Co odrzucono i dlaczego
+
+- **Nie dodano limitów czasu, planów dziennych ani zadań domowych** — sprzeczne z zasadami kursu.
+- **Nie dodano nowych źródeł ani linków** — brak pewnej, zweryfikowanej bibliografii w przesłanym materiale.
+- **Nie rozbudowano testu do 25 pytań** — kanon archiwalny zawierał taką wersję, ale obecna struktura F21 celowo ma 10 pytań końcowych; rozszerzenie zmieniłoby skalę oceny i tabelę decyzji. Treść z 25 pytań można wprowadzić osobno jako wariant rozszerzony.
+- **Nie dodano równań jonowych jako obowiązkowych** — pojawiają się jako kontekst modelu, ale nie są wymagane w minimum E8 tej lekcji.
+
+### Fakty oznaczone „do sprawdzenia”
+
+- Aktualny oficjalny zakres konkursu LKO na rok szkolny 2026/2027 — **do sprawdzenia**.
+- Dokładne sformułowania wymagań podstawy programowej dla poszczególnych klas 4–8 — **do sprawdzenia** względem aktualnego rozporządzenia.
+- Temperatura wrzenia metanu podana jako około −162 °C — wartość orientacyjna; do ostatecznej publikacji warto porównać z tablicą fizykochemiczną używaną w kursie — **do sprawdzenia**.

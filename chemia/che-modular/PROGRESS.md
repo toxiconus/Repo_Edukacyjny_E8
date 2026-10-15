@@ -230,3 +230,4 @@
 
 - 2026-10-15: F09, F12 — etykiety fiszek i celów zgodnie z decyzją (b): stopnie utlenienia, masa molowa, skład procentowy → extra:E8+LO; stan F09 zaktualizowany (W2 wykonany). HTML przebudowany (zbuduj_wszystkie che).
 - 2026-10-15: W2 partia 1 (F01–F08): raport chemia/plany/audyty/F01-F08_W2_zakres_2026-10-15.md; pełne pokrycie F01, F03, F05, F06, F08; braki: F02 odsyłacz 1.5, F04 atom/cząsteczka i 2H, F07 pełna konfiguracja poza podstawą (decyzja). Rejestr WERYFIKACJA zaktualizowany.
+- 2026-10-15: F21 — pełna lekcja z odpowiedzi zewnętrznej (AUDYT W1 wprowadzony), etykiety E8+LO (decyzja b): zadania 1, 5–7, 12–13, fiszki Lewis/VSEPR/polarność. HTML przebudowany. W2 F21 do zrobienia.
