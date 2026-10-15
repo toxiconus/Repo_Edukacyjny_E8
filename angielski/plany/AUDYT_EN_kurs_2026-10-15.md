@@ -48,3 +48,34 @@ Uzasadnienie: BE/DO i operatory są fundamentem pytań i przeczeń; czasy przed 
 - Sprawdzone bez zmian: L010 — czasowniki stanu (look, smell, taste, sound) już wydzielone w osobnej uwadze.
 - Nie wykonane (wymagają decyzji): zmiana kolejności 2→4→5→6→12→1→3→… (pliki zostają w starej numeracji; zmiana wymaga przenumerowania plików i linków), nadanie nazw docelowych (zastępujących prefiks R), weryfikacja merytoryczna wykładów (W1).
 - Nowe lekcje braków: R06 strona bierna, R07 zdania warunkowe, R08 zdania względne, R09 used to/would, R10 question tags (robocze, z numeracją tymczasową).
+
+## 6. Nowa numeracja kursu (wykonana 2026-10-15, decyzja użytkownika: przenumerować teraz)
+
+Kolejność: 2→4→5→6→12→1→3→7→8→9→10→11, potem gotowe braki (R-lekcje).
+
+| Stara | Nowa | Temat |
+|---|---|---|
+| L002 | L001 | operatory i czasowniki posiłkowe |
+| L004 | L002 | czasy teraźniejsze i przeszłe |
+| L005 | L003 | present perfect |
+| L006 | L004 | past simple / continuous |
+| L012 | L005 | future simple (will, going to) |
+| L001 | L006 | czasowniki modalne i have to |
+| L003 | L007 | tryb rozkazujący, stative, phrasal verbs |
+| L007 | L008 | rzeczownik |
+| L008 | L009 | przedimki |
+| L009 | L010 | przymiotniki |
+| L010 | L011 | przysłówek |
+| L011 | L012 | zaimki |
+| R06 | L013 | strona bierna |
+| R07 | L014 | zdania warunkowe |
+| R08 | L015 | zdania względne |
+| R10 | L016 | question tags |
+| R09 | L017 | used to / would |
+| R01 | L018 | spójniki i łączniki |
+| R02 | L019 | mowa zależna |
+| R03 | L020 | słowotwórstwo |
+| R04 | L021 | inwersja i zdania rozłączne |
+| R05 | L022 | as / like / so / such / too / enough |
+
+Zmieniono: nazwy plików w `lekcje_md/`, kody `kod:`, numery „Lekcja N” w tekście i stopkach, odwołania w treści; HTML przebudowane z md. Usunięto zdublowane linki nawigacji „Poprzednia lekcja” w md (nawigację zbuduje szablon). Pliki historyczne (`L001-EN-Wszystkie-lekcje.md`, `eksport/out/`, zrzuty ZIP, plany i audyty sprzed zmiany) pozostają ze starymi numerami — to dokumentacja, nie źródło lekcji.
