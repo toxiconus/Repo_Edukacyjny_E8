@@ -18,6 +18,7 @@ stan: ROBOCZA — numeracja tymczasowa; do W1 FULL (wykład, mini-wykłady, ciek
 6. Unless, as long as, provided that
 7. Klinika błędów
 8. Ćwiczenia
+9. Wish i if only
 9. Zadanie w formule E8
 10. Warstwa olimpijska — okres trzeci
 11. Test końcowy — MISJA
@@ -186,7 +187,19 @@ W okresie drugim czasownik cofa się o jeden krok, żeby pokazać dystans od rze
 
 ---
 
-## 9 | Zadanie w formule E8 {#e8}
+## 9 | Wish i if only {#wish}
+
+**Wish** i **if only** wyrażają życzenie, którego nie da się spełnić teraz lub nie da się cofnąć w przeszłości.
+
+| Typ | Schemat | Przykład |
+|---|---|---|
+| teraz (nierealne) | wish + Past Simple | *I wish I had more time.* (nie mam) |
+| przeszłość (żal) | wish + Past Perfect | *I wish I hadn’t said that.* |
+| mocne życzenie | if only + Past Simple / Past Perfect | *If only I could fly!* / *If only I had listened.* |
+
+**Ważne:** po *wish* dla własnej sytuacji nie używamy *would*. ❌ *I wish I would have more time.* ✅ *I wish I had more time.* *Would* ma sens przy cudzym zachowaniu: *I wish you would stop.*
+
+## 10 | Zadanie w formule E8 {#e8}
 
 Dokończ zdania, stosując właściwy okres:
 
@@ -204,7 +217,7 @@ Dokończ zdania, stosując właściwy okres:
 
 ---
 
-## 10 | Warstwa olimpijska — okres trzeci {#trzeci}
+## 11 | Warstwa olimpijska — okres trzeci {#trzeci}
 
 **Schemat:** if + Past Perfect, would have + V3.
 
@@ -217,7 +230,7 @@ Dokończ zdania, stosując właściwy okres:
 
 ---
 
-## 11 | Test końcowy — MISJA {#misja}
+## 12 | Test końcowy — MISJA {#misja}
 
 1. If you cool water to zero, it ______ (freeze).
 2. If it rains tomorrow, we ______ (stay) home.
@@ -236,7 +249,7 @@ Dokończ zdania, stosując właściwy okres:
 
 ---
 
-## 12 | Fiszki {#fiszki}
+## 13 | Fiszki {#fiszki}
 
 | Przód | Tył |
 |---|---|
@@ -249,7 +262,7 @@ Dokończ zdania, stosując właściwy okres:
 
 ---
 
-## 13 | Ciekawostki {#ciekawostki}
+## 14 | Ciekawostki {#ciekawostki}
 
 - Okres zerowy może używać *when* zamiast *if* bez zmiany znaczenia, np. *When you heat water, it boils.*
 - *If I were you* to jeden z najczęstszych zwrotów w języku angielskim i jest stałym wyrażeniem doradzania.

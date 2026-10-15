@@ -79,3 +79,5 @@ Kolejność: 2→4→5→6→12→1→3→7→8→9→10→11, potem gotowe brak
 | R05 | L022 | as / like / so / such / too / enough |
 
 Zmieniono: nazwy plików w `lekcje_md/`, kody `kod:`, numery „Lekcja N” w tekście i stopkach, odwołania w treści; HTML przebudowane z md. Usunięto zdublowane linki nawigacji „Poprzednia lekcja” w md (nawigację zbuduje szablon). Pliki historyczne (`L001-EN-Wszystkie-lekcje.md`, `eksport/out/`, zrzuty ZIP, plany i audyty sprzed zmiany) pozostają ze starymi numerami — to dokumentacja, nie źródło lekcji.
+
+Dodatkowe lekcje z braków W2 (2026-10-15): L023 przyimki czasu i miejsca, L024 zdania czasowe, L025 there is/are, L026 pisanie e-mail i list, L027 słownictwo tematyczne. Wish / if only dodano do L014.
