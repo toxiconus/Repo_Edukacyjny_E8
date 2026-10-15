@@ -1,4 +1,4 @@
-# Materiały zbiorcze — lekcje 18–26 (nieużyte lub do rozdzielenia)
+# Materiały zbiorcze — lekcje 18–31 (nieużyte lub do rozdzielenia)
 
 Data: 2026-10-15. Źródło: 10 plików z uploadu (`6a228ee5`, `e40b620d`, `ac5d2d1f`, `6c22acd3`, `35c24c93`, `a1d7170d`, `ba7cabdf`, `bd9602d5`, `cc090190`, `c46bbca0`).
 Zasada (decyzja użytkownika): to, czego nie wprowadzono do lekcji, zostaje tutaj. Nic nie jest usuwane; duplikaty są opisane.
@@ -3746,3 +3746,1683 @@ Następna brakująca lekcja to **Zaawansowane konstrukcje z *as, like, such as, 
 
 ---
 
+---
+
+## Partia 2 — lekcje 27–31 (upload 2026-10-15, 5 plików)
+
+| Źródło | Lekcja | Status | Uwagi |
+|---|---|---|---|
+| bbf858c8 | 27 As, like, such as, so, such, too, enough | **w większości unikatowe** | brak `such as` i konstrukcji so/such w L001–L012; too/enough sprawdzić z L009 (przymiotniki) |
+| 3566fb79 | 28 Despite, in spite of, although, even though, however, nevertheless | **częściowo nakłada się** | despite/however już w lekcji 18 (zbiorcze); unikatowe: although/even though w rozwinięciu, nevertheless, „despite the fact that” |
+| 20acb63a | 29 Used to, be used to, get used to, would, would rather, had better | **częściowo nakłada się** | be used to, would rather, had better — w lekcji 26 i 25; used to vs would → planowana L017 |
+| 0ef6e2c4 | 30 If only, I wish, would rather, had better, it's time, would sooner | **częściowo nakłada się** | I wish, would rather, had better — w lekcji 25; unikatowe: it's time, would sooner, if only (szczegóły) |
+| 07aaa12f | 31 No sooner, hardly, scarcely, barely, not only, under no circumstances | **duplikat w większości** | no sooner/hardly/scarcely/not only/under no circumstances — już w lekcji 24; unikatowe tylko `barely` — pominięte, do scalenia z lekcją 24 |
+
+Zalecenie: lekcje 24, 25, 26, 28–31 powtarzają te same konstrukcje w kilku wersjach (warunki „wish/had better”, inwersja, gerund). Przy wprowadzaniu wybrać **jedną** wersję każdego zagadnienia i scalić resztę tutaj.
+
+## Lekcja 27 — As, like, such as, so, such, too, enough [w większości unikatowe]
+
+# LEKCJA 27 — ZAAWANSOWANE KONSTRUKCJE Z *AS, LIKE, SUCH AS, SO, SUCH, TOO, ENOUGH*
+
+<!-- UI: PROGRESS -->
+
+## 0. Cel lekcji
+
+Po tej lekcji będziesz potrafić:
+
+- rozróżniać *as* i *like*,
+- stosować *such as* w przykładach,
+- używać *so* i *such* dla wzmocnienia,
+- stosować *too* i *enough* w zdaniach,
+- rozpoznawać różnice między *as*, *like*, *such as*, *so*, *such*, *too* i *enough*,
+- unikać typowych błędów olimpijskich.
+
+***
+
+## 1. Zanim zaczniesz — szybki test
+
+<!-- UI: CLOZE --> <!-- UI: CHOICE --> <!-- UI: ERROR -->
+
+1. He works ______ a teacher.  
+2. She sings ______ a professional.  
+3. I like fruits, ______ apples and bananas.  
+4. It was ______ a good film that I saw it twice.  
+5. The film was ______ good that I saw it twice.  
+6. The box is ______ heavy to carry.  
+7. She is old ______ to drive.  
+8. Popraw: He works like a teacher.  
+9. Popraw: It was so good film.  
+10. Popraw: The box is too much heavy.  
+11. Popraw: She is enough old to drive.  
+
+<details>
+<summary><strong>Odpowiedzi do testu wstępnego</strong></summary>
+
+1. as  
+2. like  
+3. such as  
+4. such  
+5. so  
+6. too  
+7. enough  
+8. He works as a teacher.  
+9. It was such a good film.  
+10. The box is too heavy.  
+11. She is old enough to drive.  
+
+</details>
+
+***
+
+## 2. As vs like — podstawowa różnica
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+| Słowo | Funkcja | Przykład |
+|---|---|---|
+| *as* | rola, zawód, funkcja | *He works as a teacher.* |
+| *like* | porównanie, podobieństwo | *She sings like a professional.* |
+
+**Ważne:** *as* opisuje to, kim ktoś jest lub czym coś jest. *Like* opisuje podobieństwo.
+
+| Zdanie | Znaczenie |
+|---|---|
+| *He works as a teacher.* | Jest nauczycielem. |
+| *He works like a teacher.* | Pracuje w sposób podobny do nauczyciela. |
+
+***
+
+## 3. As — rola i funkcja
+
+<!-- UI: DIAGRAM -->
+
+[POZIOM AMBITNY]
+
+**Budowa:**  
+*as + rodzajnik + rzeczownik*
+
+| Przykład | Znaczenie |
+|---|---|
+| *She works as a doctor.* | Jest lekarką. |
+| *He used his coat as a pillow.* | Użył płaszcza jako poduszki. |
+| *They chose her as their leader.* | Wybrali ją na liderkę. |
+
+**Ważne:** po *as* często występuje *a/an* + rzeczownik.
+
+❌ *He works as teacher.*  
+✅ *He works as a teacher.*
+
+***
+
+## 4. Like — porównanie
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+**Budowa:**  
+*like + rzeczownik / zaimek*
+
+| Przykład | Znaczenie |
+|---|---|
+| *She sings like a professional.* | Śpiewa jak profesjonalistka. |
+| *He runs like the wind.* | Biega jak wiatr. |
+| *It looks like rain.* | Wygląda, jakby miało padać. |
+
+**Ważne:** po *like* nie używamy *as* w znaczeniu „jak”.
+
+❌ *She sings as a professional.*  
+✅ *She sings like a professional.*
+
+***
+
+## 5. Such as — przykłady
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+**Budowa:**  
+*such as + przykłady*
+
+| Przykład | Znaczenie |
+|---|---|
+| *I like fruits, such as apples and bananas.* | Lubię owoce, np. jabłka i banany. |
+| *He speaks several languages, such as English and French.* | Mówi w kilku językach, np. po angielsku i francusku. |
+| *She enjoys sports, such as swimming and running.* | Lubi sporty, np. pływanie i bieganie. |
+
+**Ważne:** po *such as* nie stawiamy przecinka przed przykładami, jeśli są krótkie.
+
+❌ *I like fruits, such as, apples and bananas.*  
+✅ *I like fruits, such as apples and bananas.*
+
+***
+
+## 6. So + przymiotnik / przysłówek
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+**Budowa:**  
+*so + przymiotnik / przysłówek*
+
+| Przykład | Znaczenie |
+|---|---|
+| *The film was so good.* | Film był taki dobry. |
+| *She sings so beautifully.* | Śpiewa tak pięknie. |
+| *It was so cold that we stayed at home.* | Było tak zimno, że zostaliśmy w domu. |
+
+**Ważne:** po *so* nie używamy *a/an* + rzeczownik.
+
+❌ *It was so good film.*  
+✅ *It was such a good film.*
+
+***
+
+## 7. Such + rzeczownik
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+**Budowa:**  
+*such + a/an + przymiotnik + rzeczownik*  
+*such + przymiotnik + rzeczownik niepoliczalny / liczba mnoga*
+
+| Przykład | Znaczenie |
+|---|---|
+| *It was such a good film.* | To był taki dobry film. |
+| *They are such kind people.* | To są tacy mili ludzie. |
+| *It was such bad weather.* | Była taka zła pogoda. |
+
+**Ważne:** po *such* często występuje *a/an* + przymiotnik + rzeczownik policzalny w l. poj.
+
+❌ *It was so a good film.*  
+✅ *It was such a good film.*
+
+***
+
+## 8. So… that… i such… that…
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+**Budowa:**  
+*so + przymiotnik / przysłówek + that…*  
+*such + a/an + przymiotnik + rzeczownik + that…*
+
+| Przykład | Znaczenie |
+|---|---|
+| *The film was so good that I saw it twice.* | Film był taki dobry, że obejrzałem go dwa razy. |
+| *It was such a good film that I saw it twice.* | To był taki dobry film, że obejrzałem go dwa razy. |
+| *She sings so beautifully that everyone listens.* | Śpiewa tak pięknie, że każdy słucha. |
+
+**Ważne:** po *so* stosujemy przymiotnik lub przysłówek. Po *such* stosujemy rzeczownik.
+
+***
+
+## 9. Too + przymiotnik / przysłówek
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+**Budowa:**  
+*too + przymiotnik / przysłówek*  
+*too + przymiotnik + to + V1*
+
+| Przykład | Znaczenie |
+|---|---|
+| *The box is too heavy.* | Pudełko jest za ciężkie. |
+| *He drives too fast.* | Jeździ za szybko. |
+| *The box is too heavy to carry.* | Pudełko jest za ciężkie, żeby je nieść. |
+
+**Ważne:** po *too* nie używamy *much* przed przymiotnikiem.
+
+❌ *The box is too much heavy.*  
+✅ *The box is too heavy.*
+
+***
+
+## 10. Enough — pozycja i konstrukcja
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+**Budowa:**  
+*przymiotnik + enough*  
+*enough + rzeczownik*  
+*przymiotnik + enough + to + V1*
+
+| Przykład | Znaczenie |
+|---|---|
+| *She is old enough to drive.* | Jest wystarczająco stara, żeby prowadzić. |
+| *We have enough time.* | Mamy wystarczająco dużo czasu. |
+| *He is not tall enough to play basketball.* | Nie jest wystarczająco wysoki, żeby grać w koszykówkę. |
+
+**Ważne:** *enough* stoi po przymiotniku, ale przed rzeczownikiem.
+
+❌ *She is enough old to drive.*  
+✅ *She is old enough to drive.*
+
+***
+
+## 11. Najczęstsze błędy
+
+<!-- UI: ERROR -->
+
+[POZIOM AMBITNY]
+
+| Błąd | Poprawnie | Dlaczego? |
+|---|---|---|
+| ❌ *He works like a teacher.* | ✅ *He works as a teacher.* | *as* = rola |
+| ❌ *She sings as a professional.* | ✅ *She sings like a professional.* | *like* = porównanie |
+| ❌ *It was so a good film.* | ✅ *It was such a good film.* | *such* + rzeczownik |
+| ❌ *It was such good that…* | ✅ *It was so good that…* | *so* + przymiotnik |
+| ❌ *The box is too much heavy.* | ✅ *The box is too heavy.* | *too* + przymiotnik |
+| ❌ *She is enough old to drive.* | ✅ *She is old enough to drive.* | *enough* po przymiotniku |
+| ❌ *I like fruits, such as, apples.* | ✅ *I like fruits, such as apples.* | *such as* bez przecinka |
+
+***
+
+## 12. Ćwiczenia
+
+<!-- UI: CLOZE --> <!-- UI: CHOICE --> <!-- UI: ERROR -->
+
+### Ćwiczenie 1 — Uzupełnij zdania
+
+1. He works ______ a teacher.  
+2. She sings ______ a professional.  
+3. I like fruits, ______ apples and bananas.  
+4. It was ______ a good film.  
+5. The film was ______ good.  
+6. The box is ______ heavy to carry.  
+7. She is old ______ to drive.  
+8. We have ______ time.  
+9. He drives ______ fast.  
+10. It was ______ bad weather.  
+
+<details>
+<summary><strong>Odpowiedzi</strong></summary>
+
+1. as  
+2. like  
+3. such as  
+4. such  
+5. so  
+6. too  
+7. enough  
+8. enough  
+9. too  
+10. such  
+
+</details>
+
+### Ćwiczenie 2 — Przekształć zdania
+
+1. The film was very good. I saw it twice.  
+2. The box is very heavy. I can’t carry it.  
+3. She is very old. She can drive.  
+4. We have a lot of time.  
+
+<details>
+<summary><strong>Odpowiedzi</strong></summary>
+
+1. The film was so good that I saw it twice. / It was such a good film that I saw it twice.  
+2. The box is too heavy to carry.  
+3. She is old enough to drive.  
+4. We have enough time.  
+
+</details>
+
+### Ćwiczenie 3 — Popraw błędy
+
+<!-- UI: ERROR -->
+
+1. He works like a teacher.  
+2. She sings as a professional.  
+3. It was so a good film.  
+4. It was such good that I saw it twice.  
+5. The box is too much heavy.  
+6. She is enough old to drive.  
+7. I like fruits, such as, apples.  
+
+<details>
+<summary><strong>Odpowiedzi</strong></summary>
+
+1. He works as a teacher.  
+2. She sings like a professional.  
+3. It was such a good film.  
+4. It was so good that I saw it twice.  
+5. The box is too heavy.  
+6. She is old enough to drive.  
+7. I like fruits, such as apples.  
+
+</details>
+
+***
+
+## 13. Mini-dialog
+
+<!-- UI: SPEAK -->
+
+A: He works as a teacher.  
+B: Really? He sings like a professional.  
+A: I know. He also likes sports, such as swimming and running.  
+B: The film we saw yesterday was so good that I want to see it again.  
+A: It was such a good film.  
+B: The cinema was too cold, though.  
+A: I agree. It wasn’t warm enough.
+
+***
+
+## 14. Zadanie olimpijskie
+
+<!-- UI: EXAM -->
+
+Przekształć zdania, stosując *as, like, such as, so, such, too, enough*:
+
+1. He is a teacher.  
+2. She sings in a way similar to a professional.  
+3. I like fruits, for example apples and bananas.  
+4. The film was very good. I saw it twice.  
+5. The box is very heavy. I can’t carry it.  
+6. She is very old. She can drive.  
+7. We have a lot of time.  
+8. He drives very fast.  
+
+<details>
+<summary><strong>Odpowiedzi</strong></summary>
+
+1. He works as a teacher.  
+2. She sings like a professional.  
+3. I like fruits, such as apples and bananas.  
+4. The film was so good that I saw it twice. / It was such a good film that I saw it twice.  
+5. The box is too heavy to carry.  
+6. She is old enough to drive.  
+7. We have enough time.  
+8. He drives too fast.  
+
+</details>
+
+***
+
+## 15. Test końcowy — MISJA
+
+<!-- UI: EXAM -->
+
+1. He works ______ a teacher.  
+2. She sings ______ a professional.  
+3. I like fruits, ______ apples and bananas.  
+4. It was ______ a good film.  
+5. The film was ______ good.  
+6. The box is ______ heavy to carry.  
+7. She is old ______ to drive.  
+8. We have ______ time.  
+9. He drives ______ fast.  
+10. It was ______ bad weather.  
+
+<details>
+<summary><strong>Odpowiedzi</strong></summary>
+
+1. as  
+2. like  
+3. such as  
+4. such  
+5. so  
+6. too  
+7. enough  
+8. enough  
+9. too  
+10. such  
+
+</details>
+
+***
+
+## 16. Fiszki
+
+<!-- UI: FISZKI -->
+
+| Przód | Tył | Poziom |
+|---|---|---|
+| *as + zawód* | rola, funkcja | olimpijski |
+| *like + rzeczownik* | porównanie | olimpijski |
+| *such as + przykłady* | np. | olimpijski |
+| *so + przymiotnik* | tak / bardzo | olimpijski |
+| *such + a/an + przymiotnik + rzeczownik* | taki / taka | olimpijski |
+| *so… that…* | tak… że… | olimpijski |
+| *such… that…* | taki… że… | olimpijski |
+| *too + przymiotnik* | za / zbyt | olimpijski |
+| *too + przymiotnik + to + V1* | za…, żeby… | olimpijski |
+| *przymiotnik + enough + to + V1* | wystarczająco…, żeby… | olimpijski |
+| *enough + rzeczownik* | wystarczająco dużo | olimpijski |
+
+***
+
+**Koniec Lekcja 27 — Zaawansowane konstrukcje z *as, like, such as, so, such, too, enough***
+
+Następna brakująca lekcja to **Zaawansowane konstrukcje z *despite, in spite of, although, even though, however, nevertheless*** — kolejny blok olimpijski.
+
+---
+## Lekcja 28 — Despite, although, however, nevertheless [częściowo nakłada się z 18]
+
+# LEKCJA 28 — ZAAWANSOWANE KONSTRUKCJE PRZECZĄCE: *DESPITE, IN SPITE OF, ALTHOUGH, EVEN THOUGH, HOWEVER, NEVERTHELESS*
+
+<!-- UI: PROGRESS -->
+
+## 0. Cel lekcji
+
+Po tej lekcji będziesz potrafić:
+
+- rozróżniać *despite*, *in spite of*, *although*, *even though*, *however* i *nevertheless*,
+- stosować właściwą konstrukcję po każdym z tych wyrażeń,
+- łączyć zdania w sposób naturalny i formalny,
+- unikać typowych błędów olimpijskich.
+
+***
+
+## 1. Zanim zaczniesz — szybki test
+
+<!-- UI: CLOZE --> <!-- UI: CHOICE --> <!-- UI: ERROR -->
+
+1. ______ the rain, we went out.  
+2. ______ it was raining, we went out.  
+3. It was raining. ______, we went out.  
+4. ______ the fact that it was raining, we went out.  
+5. ______ it was raining heavily, we went out.  
+6. Popraw: Despite of the rain, we went out.  
+7. Popraw: Although the rain, we went out.  
+8. Popraw: However, it was raining, we went out.  
+
+<details>
+<summary><strong>Odpowiedzi do testu wstępnego</strong></summary>
+
+1. Despite / In spite of  
+2. Although / Even though  
+3. However / Nevertheless  
+4. Despite / In spite of  
+5. Even though  
+6. Despite the rain, we went out.  
+7. Although it was raining, we went out.  
+8. It was raining. However, we went out.  
+
+</details>
+
+***
+
+## 2. Despite i in spite of — podstawowa różnica
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+| Wyrażenie | Znaczenie | Konstrukcja |
+|---|---|---|
+| *despite* | mimo, pomimo | *despite + rzeczownik / gerund* |
+| *in spite of* | mimo, pomimo | *in spite of + rzeczownik / gerund* |
+
+**Ważne:** *despite* i *in spite of* mają to samo znaczenie. Po nich nie używamy *of* po *despite*.
+
+❌ *Despite of the rain…*  
+✅ *Despite the rain…*  
+✅ *In spite of the rain…*
+
+***
+
+## 3. Despite + rzeczownik / gerund
+
+<!-- UI: DIAGRAM -->
+
+[POZIOM AMBITNY]
+
+**Budowa:**  
+*despite + rzeczownik*  
+*despite + gerund (-ing)*  
+*despite the fact that + zdanie*
+
+| Przykład | Znaczenie |
+|---|---|
+| *Despite the rain, we went out.* | Mimo deszczu wyszliśmy. |
+| *Despite feeling tired, she continued.* | Mimo zmęczenia kontynuowała. |
+| *Despite the fact that it was raining, we went out.* | Mimo że padało, wyszliśmy. |
+
+**Ważne:** po *despite* nie używamy pełnego zdania z podmiotem i czasownikiem.
+
+❌ *Despite it was raining…*  
+✅ *Despite the fact that it was raining…*
+
+***
+
+## 4. In spite of + rzeczownik / gerund
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+**Budowa:**  
+*in spite of + rzeczownik*  
+*in spite of + gerund (-ing)*  
+*in spite of the fact that + zdanie*
+
+| Przykład | Znaczenie |
+|---|---|
+| *In spite of the rain, we went out.* | Mimo deszczu wyszliśmy. |
+| *In spite of feeling tired, she continued.* | Mimo zmęczenia kontynuowała. |
+| *In spite of the fact that it was raining, we went out.* | Mimo że padało, wyszliśmy. |
+
+**Ważne:** *in spite of* jest bardziej formalne niż *despite*, ale znaczenie jest identyczne.
+
+***
+
+## 5. Although — zdanie podrzędne
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+**Budowa:**  
+*although + podmiot + czasownik*
+
+| Przykład | Znaczenie |
+|---|---|
+| *Although it was raining, we went out.* | Choć padało, wyszliśmy. |
+| *Although she was tired, she continued.* | Choć była zmęczona, kontynuowała. |
+| *Although he is young, he is very responsible.* | Choć jest młody, jest bardzo odpowiedzialny. |
+
+**Ważne:** po *although* zawsze występuje pełne zdanie.
+
+❌ *Although the rain…*  
+✅ *Although it was raining…*
+
+***
+
+## 6. Even though — mocniejsze podkreślenie
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+**Budowa:**  
+*even though + podmiot + czasownik*
+
+| Przykład | Znaczenie |
+|---|---|
+| *Even though it was raining heavily, we went out.* | Mimo że bardzo mocno padało, wyszliśmy. |
+| *Even though she was exhausted, she continued.* | Mimo że była wyczerpana, kontynuowała. |
+| *Even though he is young, he is very responsible.* | Mimo że jest młody, jest bardzo odpowiedzialny. |
+
+**Ważne:** *even though* jest mocniejsze niż *although*. Podkreśla kontrast.
+
+***
+
+## 7. However — przysłówek łączący
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+**Budowa:**  
+*zdanie. However, zdanie.*  
+*zdanie; however, zdanie.*
+
+| Przykład | Znaczenie |
+|---|---|
+| *It was raining. However, we went out.* | Padało. Jednak wyszliśmy. |
+| *She was tired. However, she continued.* | Była zmęczona. Jednak kontynuowała. |
+| *He is young. However, he is very responsible.* | Jest młody. Jednak jest bardzo odpowiedzialny. |
+
+**Ważne:** po *however* zawsze stoi przecinek.
+
+❌ *However it was raining, we went out.*  
+✅ *It was raining. However, we went out.*
+
+***
+
+## 8. Nevertheless — formalny kontrast
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+**Budowa:**  
+*zdanie. Nevertheless, zdanie.*  
+*zdanie; nevertheless, zdanie.*
+
+| Przykład | Znaczenie |
+|---|---|
+| *It was raining. Nevertheless, we went out.* | Padało. Mimo to wyszliśmy. |
+| *She was tired. Nevertheless, she continued.* | Była zmęczona. Mimo to kontynuowała. |
+| *He is young. Nevertheless, he is very responsible.* | Jest młody. Mimo to jest bardzo odpowiedzialny. |
+
+**Ważne:** *nevertheless* jest bardziej formalne niż *however*. Często występuje w tekstach publicystycznych i akademickich.
+
+***
+
+## 9. Najczęstsze błędy
+
+<!-- UI: ERROR -->
+
+[POZIOM AMBITNY]
+
+| Błąd | Poprawnie | Dlaczego? |
+|---|---|---|
+| ❌ *Despite of the rain…* | ✅ *Despite the rain…* | *despite* bez *of* |
+| ❌ *Although the rain…* | ✅ *Although it was raining…* | *although* + zdanie |
+| ❌ *However, it was raining, we went out.* | ✅ *It was raining. However, we went out.* | *however* łączy zdania |
+| ❌ *Despite it was raining…* | ✅ *Despite the fact that it was raining…* | *despite* + rzeczownik / gerund |
+| ❌ *Even though the rain…* | ✅ *Even though it was raining…* | *even though* + zdanie |
+| ❌ *Nevertheless it was raining…* | ✅ *It was raining. Nevertheless, we went out.* | *nevertheless* łączy zdania |
+
+***
+
+## 10. Ćwiczenia
+
+<!-- UI: CLOZE --> <!-- UI: CHOICE --> <!-- UI: ERROR -->
+
+### Ćwiczenie 1 — Uzupełnij zdania
+
+1. ______ the rain, we went out.  
+2. ______ it was raining, we went out.  
+3. It was raining. ______, we went out.  
+4. ______ the fact that it was raining, we went out.  
+5. ______ it was raining heavily, we went out.  
+6. She was tired. ______, she continued.  
+7. He is young. ______, he is very responsible.  
+8. ______ feeling tired, she continued.  
+
+<details>
+<summary><strong>Odpowiedzi</strong></summary>
+
+1. Despite / In spite of  
+2. Although / Even though  
+3. However / Nevertheless  
+4. Despite / In spite of  
+5. Even though  
+6. However / Nevertheless  
+7. However / Nevertheless  
+8. Despite / In spite of  
+
+</details>
+
+### Ćwiczenie 2 — Przekształć zdania
+
+1. It was raining. We went out.  
+2. She was tired. She continued.  
+3. He is young. He is very responsible.  
+4. I was feeling tired. I continued.  
+
+<details>
+<summary><strong>Odpowiedzi</strong></summary>
+
+1. Despite the rain, we went out. / Although it was raining, we went out. / It was raining. However, we went out.  
+2. Despite feeling tired, she continued. / Although she was tired, she continued. / She was tired. However, she continued.  
+3. Despite being young, he is very responsible. / Although he is young, he is very responsible. / He is young. However, he is very responsible.  
+4. Despite feeling tired, I continued. / Although I was feeling tired, I continued. / I was feeling tired. However, I continued.  
+
+</details>
+
+### Ćwiczenie 3 — Popraw błędy
+
+<!-- UI: ERROR -->
+
+1. Despite of the rain, we went out.  
+2. Although the rain, we went out.  
+3. However, it was raining, we went out.  
+4. Despite it was raining, we went out.  
+5. Even though the rain, we went out.  
+6. Nevertheless it was raining, we went out.  
+
+<details>
+<summary><strong>Odpowiedzi</strong></summary>
+
+1. Despite the rain, we went out.  
+2. Although it was raining, we went out.  
+3. It was raining. However, we went out.  
+4. Despite the fact that it was raining, we went out.  
+5. Even though it was raining, we went out.  
+6. It was raining. Nevertheless, we went out.  
+
+</details>
+
+***
+
+## 11. Mini-dialog
+
+<!-- UI: SPEAK -->
+
+A: Despite the rain, we went out.  
+B: Really? I thought you would stay at home.  
+A: Although it was raining, we wanted to see the exhibition.  
+B: Even though it was raining heavily?  
+A: Yes. It was raining. However, we had umbrellas.  
+B: Nevertheless, you must have been wet.
+
+***
+
+## 12. Zadanie olimpijskie
+
+<!-- UI: EXAM -->
+
+Przekształć zdania, stosując *despite, in spite of, although, even though, however, nevertheless*:
+
+1. It was raining. We went out.  
+2. She was tired. She continued.  
+3. He is young. He is very responsible.  
+4. I was feeling tired. I continued.  
+5. It was raining heavily. We went out.  
+6. She was exhausted. She continued.  
+7. He is young. He is very responsible.  
+8. I was feeling tired. I continued.  
+
+<details>
+<summary><strong>Odpowiedzi</strong></summary>
+
+1. Despite the rain, we went out. / Although it was raining, we went out. / It was raining. However, we went out.  
+2. Despite feeling tired, she continued. / Although she was tired, she continued. / She was tired. However, she continued.  
+3. Despite being young, he is very responsible. / Although he is young, he is very responsible. / He is young. However, he is very responsible.  
+4. Despite feeling tired, I continued. / Although I was feeling tired, I continued. / I was feeling tired. However, I continued.  
+5. Even though it was raining heavily, we went out.  
+6. Even though she was exhausted, she continued.  
+7. Even though he is young, he is very responsible.  
+8. Even though I was feeling tired, I continued.  
+
+</details>
+
+***
+
+## 13. Test końcowy — MISJA
+
+<!-- UI: EXAM -->
+
+1. ______ the rain, we went out.  
+2. ______ it was raining, we went out.  
+3. It was raining. ______, we went out.  
+4. ______ the fact that it was raining, we went out.  
+5. ______ it was raining heavily, we went out.  
+6. She was tired. ______, she continued.  
+7. He is young. ______, he is very responsible.  
+8. ______ feeling tired, she continued.  
+9. ______ the rain, we went out.  
+10. ______ it was raining, we went out.  
+
+<details>
+<summary><strong>Odpowiedzi</strong></summary>
+
+1. Despite / In spite of  
+2. Although / Even though  
+3. However / Nevertheless  
+4. Despite / In spite of  
+5. Even though  
+6. However / Nevertheless  
+7. However / Nevertheless  
+8. Despite / In spite of  
+9. Despite / In spite of  
+10. Although / Even though  
+
+</details>
+
+***
+
+## 14. Fiszki
+
+<!-- UI: FISZKI -->
+
+| Przód | Tył | Poziom |
+|---|---|---|
+| *despite + rzeczownik* | mimo + rzeczownik | olimpijski |
+| *despite + gerund* | mimo + czynność | olimpijski |
+| *in spite of + rzeczownik* | mimo + rzeczownik | olimpijski |
+| *in spite of + gerund* | mimo + czynność | olimpijski |
+| *although + zdanie* | choć + zdanie | olimpijski |
+| *even though + zdanie* | mimo że + zdanie | olimpijski |
+| *however* | jednak / jednakże | olimpijski |
+| *nevertheless* | mimo to | olimpijski |
+| *despite the fact that + zdanie* | mimo że + zdanie | olimpijski |
+| *in spite of the fact that + zdanie* | mimo że + zdanie | olimpijski |
+
+***
+
+**Koniec Lekcja 28 — Zaawansowane konstrukcje przeczące: *despite, in spite of, although, even though, however, nevertheless***
+
+Następna brakująca lekcja to **Zaawansowane konstrukcje z *used to, be used to, get used to, would, used to be, would rather, had better*** — kolejny blok olimpijski.
+
+---
+## Lekcja 29 — Used to, be used to, would, would rather, had better [częściowo nakłada się z 25/26]
+
+# LEKCJA 29 — *USED TO, BE USED TO, GET USED TO, WOULD, WOULD RATHER, HAD BETTER*
+
+<!-- UI: PROGRESS -->
+
+## 0. Cel lekcji
+
+Po tej lekcji będziesz potrafić:
+
+- rozróżniać *used to*, *be used to* i *get used to*,
+- stosować *would* dla przeszłych nawyków,
+- używać *would rather* i *had better*,
+- rozpoznawać różnice między tymi konstrukcjami,
+- unikać typowych błędów olimpijskich.
+
+***
+
+## 1. Zanim zaczniesz — szybki test
+
+<!-- UI: CLOZE --> <!-- UI: CHOICE --> <!-- UI: ERROR -->
+
+1. I ______ (play) tennis when I was younger.  
+2. I’m used to ______ (get) up early.  
+3. She is getting used to ______ (live) in a new city.  
+4. When we were children, we ______ (go) to the beach every summer.  
+5. I’d rather ______ (stay) at home.  
+6. I’d rather you ______ (not/smoke) here.  
+7. You’d better ______ (hurry).  
+8. Popraw: I’m used to play tennis.  
+9. Popraw: I’d rather you don’t smoke.  
+10. Popraw: You’d better to hurry.  
+
+<details>
+<summary><strong>Odpowiedzi do testu wstępnego</strong></summary>
+
+1. used to play  
+2. getting  
+3. living  
+4. would go  
+5. stay  
+6. didn’t smoke  
+7. hurry  
+8. I’m used to playing tennis.  
+9. I’d rather you didn’t smoke.  
+10. You’d better hurry.  
+
+</details>
+
+***
+
+## 2. Used to — przeszły zwyczaj
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+**Budowa:**  
+*used to + V1*
+
+**Znaczenie:** kiedyś robiłem coś, teraz już nie.
+
+| Przykład | Znaczenie |
+|---|---|
+| *I used to play tennis.* | Kiedyś grałem w tenisa. |
+| *She used to live in London.* | Kiedyś mieszkała w Londynie. |
+| *We used to go to the beach every summer.* | Kiedyś jeździliśmy na plażę każdego lata. |
+
+**Ważne:** *used to* opisuje przeszły zwyczaj lub stan, który już nie istnieje.
+
+❌ *I used to playing tennis.*  
+✅ *I used to play tennis.*
+
+***
+
+## 3. Be used to + -ing — nawyk
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+**Budowa:**  
+*be used to + gerund (-ing)*
+
+**Znaczenie:** być przyzwyczajonym do czegoś.
+
+| Przykład | Znaczenie |
+|---|---|
+| *I’m used to getting up early.* | Jestem przyzwyczajony do wstawania wcześnie. |
+| *She’s used to living in a big city.* | Jest przyzwyczajona do życia w dużym mieście. |
+| *We’re used to working long hours.* | Jesteśmy przyzwyczajeni do długiej pracy. |
+
+**Ważne:** po *be used to* zawsze gerund.
+
+❌ *I’m used to play tennis.*  
+✅ *I’m used to playing tennis.*
+
+***
+
+## 4. Get used to + -ing — proces
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+**Budowa:**  
+*get used to + gerund (-ing)*
+
+**Znaczenie:** przyzwyczajać się do czegoś.
+
+| Przykład | Znaczenie |
+|---|---|
+| *I’m getting used to getting up early.* | Przyzwyczajam się do wstawania wcześnie. |
+| *She’s getting used to living in a new city.* | Przyzwyczaja się do życia w nowym mieście. |
+| *We’re getting used to working from home.* | Przyzwyczajamy się do pracy zdalnej. |
+
+**Ważne:** *get used to* opisuje proces, a *be used to* — stan.
+
+***
+
+## 5. Would — przeszłe nawyki
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+**Budowa:**  
+*would + V1*
+
+**Znaczenie:** kiedyś regularnie robiliśmy coś.
+
+| Przykład | Znaczenie |
+|---|---|
+| *When we were children, we would go to the beach every summer.* | Kiedy byliśmy dziećmi, jeździliśmy na plażę każdego lata. |
+| *He would often visit his grandparents.* | Często odwiedzał dziadków. |
+| *They would play outside after school.* | Po szkole bawili się na zewnątrz. |
+
+**Ważne:** *would* opisuje powtarzające się czynności w przeszłości, ale nie stany.
+
+❌ *I would live in London when I was younger.*  
+✅ *I used to live in London when I was younger.*
+
+***
+
+## 6. Used to vs would — kiedy używać?
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+| Konstrukcja | Zastosowanie | Przykład |
+|---|---|---|
+| *used to + V1* | przeszły zwyczaj lub stan | *I used to play tennis.* |
+| *would + V1* | powtarzająca się czynność w przeszłości | *We would go to the beach every summer.* |
+
+**Ważne:** *would* nie opisuje stanów. Do stanów używamy *used to*.
+
+| Poprawnie | Błąd |
+|---|---|
+| *I used to live in London.* | ❌ *I would live in London.* |
+| *I used to have a dog.* | ❌ *I would have a dog.* |
+
+***
+
+## 7. Would rather — preferencje
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+**Budowa:**  
+*would rather + V1*  
+*would rather + podmiot + Past Simple*
+
+| Przykład | Znaczenie |
+|---|---|
+| *I’d rather stay at home.* | Wolałbym zostać w domu. |
+| *I’d rather you didn’t smoke.* | Wolałbym, żebyś nie palił. |
+| *She’d rather not talk about it.* | Wolałaby o tym nie rozmawiać. |
+
+**Ważne:** po *would rather* w odniesieniu do innej osoby stosujemy Past Simple.
+
+❌ *I’d rather you don’t smoke.*  
+✅ *I’d rather you didn’t smoke.*
+
+***
+
+## 8. Had better — rada i ostrzeżenie
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+**Budowa:**  
+*had better + V1*  
+*had better not + V1*
+
+| Przykład | Znaczenie |
+|---|---|
+| *You’d better hurry.* | Lepiej się pospiesz. |
+| *You’d better not be late.* | Lepiej nie spóźnij się. |
+| *We’d better leave now.* | Lepiej wyjedźmy teraz. |
+
+**Ważne:** po *had better* nie używamy *to*.
+
+❌ *You’d better to hurry.*  
+✅ *You’d better hurry.*
+
+***
+
+## 9. Najczęstsze błędy
+
+<!-- UI: ERROR -->
+
+[POZIOM AMBITNY]
+
+| Błąd | Poprawnie | Dlaczego? |
+|---|---|---|
+| ❌ *I used to playing tennis.* | ✅ *I used to play tennis.* | *used to* + V1 |
+| ❌ *I’m used to play tennis.* | ✅ *I’m used to playing tennis.* | *be used to* + -ing |
+| ❌ *I would live in London when I was younger.* | ✅ *I used to live in London when I was younger.* | *would* nie opisuje stanów |
+| ❌ *I’d rather you don’t smoke.* | ✅ *I’d rather you didn’t smoke.* | *would rather* + Past Simple |
+| ❌ *You’d better to hurry.* | ✅ *You’d better hurry.* | *had better* + V1 |
+| ❌ *She is getting used to live in a new city.* | ✅ *She is getting used to living in a new city.* | *get used to* + -ing |
+
+***
+
+## 10. Ćwiczenia
+
+<!-- UI: CLOZE --> <!-- UI: CHOICE --> <!-- UI: ERROR -->
+
+### Ćwiczenie 1 — Uzupełnij zdania
+
+1. I ______ (play) tennis when I was younger.  
+2. I’m used to ______ (get) up early.  
+3. She is getting used to ______ (live) in a new city.  
+4. When we were children, we ______ (go) to the beach every summer.  
+5. I’d rather ______ (stay) at home.  
+6. I’d rather you ______ (not/smoke) here.  
+7. You’d better ______ (hurry).  
+8. He ______ (visit) his grandparents often.  
+9. We ______ (work) long hours.  
+10. She ______ (live) in London when she was younger.  
+
+<details>
+<summary><strong>Odpowiedzi</strong></summary>
+
+1. used to play  
+2. getting  
+3. living  
+4. would go  
+5. stay  
+6. didn’t smoke  
+7. hurry  
+8. would visit  
+9. are used to working  
+10. used to live  
+
+</details>
+
+### Ćwiczenie 2 — Przekształć zdania
+
+1. I played tennis when I was younger.  
+2. I am accustomed to getting up early.  
+3. She is adapting to living in a new city.  
+4. I prefer to stay at home.  
+5. I think you should hurry.  
+6. I don’t want you to smoke here.  
+
+<details>
+<summary><strong>Odpowiedzi</strong></summary>
+
+1. I used to play tennis.  
+2. I’m used to getting up early.  
+3. She’s getting used to living in a new city.  
+4. I’d rather stay at home.  
+5. You’d better hurry.  
+6. I’d rather you didn’t smoke here.  
+
+</details>
+
+### Ćwiczenie 3 — Popraw błędy
+
+<!-- UI: ERROR -->
+
+1. I used to playing tennis.  
+2. I’m used to play tennis.  
+3. I would live in London when I was younger.  
+4. I’d rather you don’t smoke.  
+5. You’d better to hurry.  
+6. She is getting used to live in a new city.  
+
+<details>
+<summary><strong>Odpowiedzi</strong></summary>
+
+1. I used to play tennis.  
+2. I’m used to playing tennis.  
+3. I used to live in London when I was younger.  
+4. I’d rather you didn’t smoke.  
+5. You’d better hurry.  
+6. She’s getting used to living in a new city.  
+
+</details>
+
+***
+
+## 11. Mini-dialog
+
+<!-- UI: SPEAK -->
+
+A: I used to play tennis when I was younger.  
+B: Really? I’m used to playing tennis too.  
+A: When we were children, we would go to the beach every summer.  
+B: That sounds nice. I’m getting used to living in a new city.  
+A: I’d rather stay at home tonight.  
+B: You’d better not miss the party, though.
+
+***
+
+## 12. Zadanie olimpijskie
+
+<!-- UI: EXAM -->
+
+Przekształć zdania, stosując *used to, be used to, get used to, would, would rather, had better*:
+
+1. I played tennis when I was younger.  
+2. I am accustomed to getting up early.  
+3. She is adapting to living in a new city.  
+4. I prefer to stay at home.  
+5. I think you should hurry.  
+6. I don’t want you to smoke here.  
+7. We went to the beach every summer when we were children.  
+8. He often visited his grandparents.  
+
+<details>
+<summary><strong>Odpowiedzi</strong></summary>
+
+1. I used to play tennis.  
+2. I’m used to getting up early.  
+3. She’s getting used to living in a new city.  
+4. I’d rather stay at home.  
+5. You’d better hurry.  
+6. I’d rather you didn’t smoke here.  
+7. We would go to the beach every summer when we were children.  
+8. He would often visit his grandparents.  
+
+</details>
+
+***
+
+## 13. Test końcowy — MISJA
+
+<!-- UI: EXAM -->
+
+1. I ______ (play) tennis when I was younger.  
+2. I’m used to ______ (get) up early.  
+3. She is getting used to ______ (live) in a new city.  
+4. When we were children, we ______ (go) to the beach every summer.  
+5. I’d rather ______ (stay) at home.  
+6. I’d rather you ______ (not/smoke) here.  
+7. You’d better ______ (hurry).  
+8. He ______ (visit) his grandparents often.  
+9. We ______ (work) long hours.  
+10. She ______ (live) in London when she was younger.  
+
+<details>
+<summary><strong>Odpowiedzi</strong></summary>
+
+1. used to play  
+2. getting  
+3. living  
+4. would go  
+5. stay  
+6. didn’t smoke  
+7. hurry  
+8. would visit  
+9. are used to working  
+10. used to live  
+
+</details>
+
+***
+
+## 14. Fiszki
+
+<!-- UI: FISZKI -->
+
+| Przód | Tył | Poziom |
+|---|---|---|
+| *used to + V1* | przeszły zwyczaj lub stan | olimpijski |
+| *be used to + -ing* | być przyzwyczajonym do | olimpijski |
+| *get used to + -ing* | przyzwyczajać się do | olimpijski |
+| *would + V1* | powtarzająca się czynność w przeszłości | olimpijski |
+| *would rather + V1* | własna preferencja | olimpijski |
+| *would rather + podmiot + Past Simple* | preferencja co do innej osoby | olimpijski |
+| *had better + V1* | silna rada / ostrzeżenie | olimpijski |
+| *had better not + V1* | ostrzeżenie przed czymś | olimpijski |
+| *used to* vs *would* | *used to* dla stanów, *would* dla czynności | olimpijski |
+
+***
+
+**Koniec Lekcja 29 — *used to, be used to, get used to, would, would rather, had better***
+
+Następna brakująca lekcja to **Zaawansowane konstrukcje z *if only, I wish, would rather, had better, it’s time, would sooner*** — kolejny blok olimpijski.
+
+---
+## Lekcja 30 — If only, I wish, would rather, it's time, would sooner [częściowo nakłada się z 25]
+
+# LEKCJA 30 — *IF ONLY, I WISH, WOULD RATHER, HAD BETTER, IT’S TIME, WOULD SOONER*
+
+<!-- UI: PROGRESS -->
+
+## 0. Cel lekcji
+
+Po tej lekcji będziesz potrafić:
+
+- rozróżniać *if only*, *I wish*, *would rather*, *had better*, *it’s time* i *would sooner*,
+- stosować właściwe konstrukcje po każdym z tych wyrażeń,
+- wyrażać żal, pragnienia, preferencje i rady,
+- unikać typowych błędów olimpijskich.
+
+***
+
+## 1. Zanim zaczniesz — szybki test
+
+<!-- UI: CLOZE --> <!-- UI: CHOICE --> <!-- UI: ERROR -->
+
+1. If only I ______ (have) more time.  
+2. I wish I ______ (know) the answer yesterday.  
+3. I wish it ______ (stop) raining.  
+4. I’d rather ______ (stay) at home.  
+5. I’d rather you ______ (not/smoke) here.  
+6. You’d better ______ (hurry).  
+7. It’s time we ______ (leave).  
+8. I’d sooner ______ (stay) at home.  
+9. Popraw: If only I have more time.  
+10. Popraw: I wish I knew yesterday.  
+11. Popraw: I’d rather you don’t smoke.  
+12. Popraw: You’d better to hurry.  
+13. Popraw: It’s time we leave.  
+
+<details>
+<summary><strong>Odpowiedzi do testu wstępnego</strong></summary>
+
+1. had  
+2. had known  
+3. would stop  
+4. stay  
+5. didn’t smoke  
+6. hurry  
+7. left  
+8. stay  
+9. If only I had more time.  
+10. I wish I had known yesterday.  
+11. I’d rather you didn’t smoke.  
+12. You’d better hurry.  
+13. It’s time we left.  
+
+</details>
+
+***
+
+## 2. If only — mocne pragnienie
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+**Budowa:**  
+*If only + Past Simple*  
+*If only + Past Perfect*  
+*If only + would + V1*
+
+| Sytuacja | Konstrukcja | Przykład |
+|---|---|---|
+| teraźniejszość | *If only + Past Simple* | *If only I had more time.* |
+| przeszłość | *If only + Past Perfect* | *If only I had known.* |
+| przyszłość / irytacja | *If only + would + V1* | *If only it would stop raining.* |
+
+**Ważne:** *If only* jest mocniejsze niż *I wish*. Wyraża silne pragnienie lub żal.
+
+❌ *If only I have more time.*  
+✅ *If only I had more time.*
+
+***
+
+## 3. I wish — żal i pragnienia
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+**Budowa:**  
+*I wish + Past Simple*  
+*I wish + Past Perfect*  
+*I wish + would + V1*
+
+| Sytuacja | Konstrukcja | Przykład |
+|---|---|---|
+| teraźniejszość | *I wish + Past Simple* | *I wish I had more time.* |
+| przeszłość | *I wish + Past Perfect* | *I wish I had known.* |
+| przyszłość / irytacja | *I wish + would + V1* | *I wish it would stop raining.* |
+
+**Ważne:** po *I wish* nie używamy *will*.
+
+❌ *I wish I will have more time.*  
+✅ *I wish I had more time.*
+
+***
+
+## 4. If only vs I wish — różnica
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+| Wyrażenie | Siła | Przykład |
+|---|---|---|
+| *If only* | mocniejsze | *If only I had more time!* |
+| *I wish* | standardowe | *I wish I had more time.* |
+
+**Ważne:** oba wyrażenia mają podobną budowę, ale *If only* podkreśla silniejsze pragnienie lub żal.
+
+| Zdanie | Znaczenie |
+|---|---|
+| *If only I had known!* | Gdybym tylko wiedział! |
+| *I wish I had known.* | Żałuję, że nie wiedziałem. |
+
+***
+
+## 5. Would rather — preferencje
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+**Budowa:**  
+*would rather + V1*  
+*would rather + podmiot + Past Simple*
+
+| Przykład | Znaczenie |
+|---|---|
+| *I’d rather stay at home.* | Wolałbym zostać w domu. |
+| *I’d rather you didn’t smoke.* | Wolałbym, żebyś nie palił. |
+| *She’d rather not talk about it.* | Wolałaby o tym nie rozmawiać. |
+
+**Ważne:** po *would rather* w odniesieniu do innej osoby stosujemy Past Simple.
+
+❌ *I’d rather you don’t smoke.*  
+✅ *I’d rather you didn’t smoke.*
+
+***
+
+## 6. Had better — rada i ostrzeżenie
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+**Budowa:**  
+*had better + V1*  
+*had better not + V1*
+
+| Przykład | Znaczenie |
+|---|---|
+| *You’d better hurry.* | Lepiej się pospiesz. |
+| *You’d better not be late.* | Lepiej nie spóźnij się. |
+| *We’d better leave now.* | Lepiej wyjedźmy teraz. |
+
+**Ważne:** po *had better* nie używamy *to*.
+
+❌ *You’d better to hurry.*  
+✅ *You’d better hurry.*
+
+***
+
+## 7. It’s time + Past Simple
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+**Budowa:**  
+*It’s time + podmiot + Past Simple*  
+*It’s time + to + V1*
+
+| Przykład | Znaczenie |
+|---|---|
+| *It’s time we left.* | Czas, żebyśmy wyszli. |
+| *It’s time to go.* | Czas iść. |
+| *It’s time you started studying.* | Czas, żebyś zaczął się uczyć. |
+
+**Ważne:** po *It’s time + podmiot* stosujemy Past Simple.
+
+❌ *It’s time we leave.*  
+✅ *It’s time we left.*
+
+***
+
+## 8. Would sooner — preferencje
+
+<!-- UI: COMPARE -->
+
+[POZIOM AMBITNY]
+
+**Budowa:**  
+*would sooner + V1*  
+*would sooner + podmiot + Past Simple*
+
+| Przykład | Znaczenie |
+|---|---|
+| *I’d sooner stay at home.* | Wolałbym zostać w domu. |
+| *I’d sooner you didn’t smoke.* | Wolałbym, żebyś nie palił. |
+| *She’d sooner not talk about it.* | Wolałaby o tym nie rozmawiać. |
+
+**Ważne:** *would sooner* jest bardziej formalne niż *would rather*, ale znaczenie jest podobne.
+
+***
+
+## 9. Najczęstsze błędy
+
+<!-- UI: ERROR -->
+
+[POZIOM AMBITNY]
+
+| Błąd | Poprawnie | Dlaczego? |
+|---|---|---|
+| ❌ *If only I have more time.* | ✅ *If only I had more time.* | *If only* + Past Simple |
+| ❌ *I wish I knew yesterday.* | ✅ *I wish I had known yesterday.* | *I wish* + Past Perfect |
+| ❌ *I wish it will stop raining.* | ✅ *I wish it would stop raining.* | *I wish* + *would* |
+| ❌ *I’d rather you don’t smoke.* | ✅ *I’d rather you didn’t smoke.* | *would rather* + Past Simple |
+| ❌ *You’d better to hurry.* | ✅ *You’d better hurry.* | *had better* + V1 |
+| ❌ *It’s time we leave.* | ✅ *It’s time we left.* | *It’s time* + Past Simple |
+| ❌ *I’d sooner you don’t smoke.* | ✅ *I’d sooner you didn’t smoke.* | *would sooner* + Past Simple |
+
+***
+
+## 10. Ćwiczenia
+
+<!-- UI: CLOZE --> <!-- UI: CHOICE --> <!-- UI: ERROR -->
+
+### Ćwiczenie 1 — Uzupełnij zdania
+
+1. If only I ______ (have) more time.  
+2. I wish I ______ (know) the answer yesterday.  
+3. I wish it ______ (stop) raining.  
+4. I’d rather ______ (stay) at home.  
+5. I’d rather you ______ (not/smoke) here.  
+6. You’d better ______ (hurry).  
+7. It’s time we ______ (leave).  
+8. I’d sooner ______ (stay) at home.  
+9. If only I ______ (know) the answer yesterday.  
+10. I wish I ______ (have) more time.  
+
+<details>
+<summary><strong>Odpowiedzi</strong></summary>
+
+1. had  
+2. had known  
+3. would stop  
+4. stay  
+5. didn’t smoke  
+6. hurry  
+7. left  
+8. stay  
+9. had known  
+10. had  
+
+</details>
+
+### Ćwiczenie 2 — Przekształć zdania
+
+1. I don’t have more time.  
+2. I didn’t know the answer yesterday.  
+3. It is raining.  
+4. I prefer to stay at home.  
+5. I think you should hurry.  
+6. I don’t want you to smoke here.  
+7. We should leave now.  
+8. I prefer to stay at home.  
+
+<details>
+<summary><strong>Odpowiedzi</strong></summary>
+
+1. If only I had more time. / I wish I had more time.  
+2. If only I had known the answer yesterday. / I wish I had known the answer yesterday.  
+3. If only it would stop raining. / I wish it would stop raining.  
+4. I’d rather stay at home. / I’d sooner stay at home.  
+5. You’d better hurry.  
+6. I’d rather you didn’t smoke here. / I’d sooner you didn’t smoke here.  
+7. It’s time we left.  
+8. I’d rather stay at home. / I’d sooner stay at home.  
+
+</details>
+
+### Ćwiczenie 3 — Popraw błędy
+
+<!-- UI: ERROR -->
+
+1. If only I have more time.  
+2. I wish I knew yesterday.  
+3. I wish it will stop raining.  
+4. I’d rather you don’t smoke.  
+5. You’d better to hurry.  
+6. It’s time we leave.  
+7. I’d sooner you don’t smoke.  
+
+<details>
+<summary><strong>Odpowiedzi</strong></summary>
+
+1. If only I had more time.  
+2. I wish I had known yesterday.  
+3. I wish it would stop raining.  
+4. I’d rather you didn’t smoke.  
+5. You’d better hurry.  
+6. It’s time we left.  
+7. I’d sooner you didn’t smoke.  
+
+</details>
+
+***
+
+## 11. Mini-dialog
+
+<!-- UI: SPEAK -->
+
+A: If only I had more time!  
+B: I know. You always say that.  
+A: I wish I had known about the meeting yesterday.  
+B: If only you had checked your email.  
+A: I’d rather not talk about it now.  
+B: You’d better focus on the future, then.  
+A: It’s time we left.  
+B: I’d sooner stay a little longer.
+
+***
+
+## 12. Zadanie olimpijskie
+
+<!-- UI: EXAM -->
+
+Przekształć zdania, stosując *if only, I wish, would rather, had better, it’s time, would sooner*:
+
+1. I don’t have more time.  
+2. I didn’t know the answer yesterday.  
+3. It is raining.  
+4. I prefer to stay at home.  
+5. I think you should hurry.  
+6. I don’t want you to smoke here.  
+7. We should leave now.  
+8. I prefer to stay at home.  
+9. I don’t have more time.  
+10. I didn’t know the answer yesterday.  
+
+<details>
+<summary><strong>Odpowiedzi</strong></summary>
+
+1. If only I had more time. / I wish I had more time.  
+2. If only I had known the answer yesterday. / I wish I had known the answer yesterday.  
+3. If only it would stop raining. / I wish it would stop raining.  
+4. I’d rather stay at home. / I’d sooner stay at home.  
+5. You’d better hurry.  
+6. I’d rather you didn’t smoke here. / I’d sooner you didn’t smoke here.  
+7. It’s time we left.  
+8. I’d rather stay at home. / I’d sooner stay at home.  
+9. If only I had more time. / I wish I had more time.  
+10. If only I had known the answer yesterday. / I wish I had known the answer yesterday.  
+
+</details>
+
+***
+
+## 13. Test końcowy — MISJA
+
+<!-- UI: EXAM -->
+
+1. If only I ______ (have) more time.  
+2. I wish I ______ (know) the answer yesterday.  
+3. I wish it ______ (stop) raining.  
+4. I’d rather ______ (stay) at home.  
+5. I’d rather you ______ (not/smoke) here.  
+6. You’d better ______ (hurry).  
+7. It’s time we ______ (leave).  
+8. I’d sooner ______ (stay) at home.  
+9. If only I ______ (know) the answer yesterday.  
+10. I wish I ______ (have) more time.  
+
+<details>
+<summary><strong>Odpowiedzi</strong></summary>
+
+1. had  
+2. had known  
+3. would stop  
+4. stay  
+5. didn’t smoke  
+6. hurry  
+7. left  
+8. stay  
+9. had known  
+10. had  
+
+</details>
+
+***
+
+## 14. Fiszki
+
+<!-- UI: FISZKI -->
+
+| Przód | Tył | Poziom |
+|---|---|---|
+| *If only + Past Simple* | żal dotyczący teraźniejszości | olimpijski |
+| *If only + Past Perfect* | żal dotyczący przeszłości | olimpijski |
+| *If only + would + V1* | pragnienie zmiany | olimpijski |
+| *I wish + Past Simple* | żal dotyczący teraźniejszości | olimpijski |
+| *I wish + Past Perfect* | żal dotyczący przeszłości | olimpijski |
+| *I wish + would + V1* | pragnienie zmiany | olimpijski |
+| *would rather + V1* | własna preferencja | olimpijski |
+| *would rather + podmiot + Past Simple* | preferencja co do innej osoby | olimpijski |
+| *had better + V1* | silna rada / ostrzeżenie | olimpijski |
+| *It’s time + podmiot + Past Simple* | czas, żeby… | olimpijski |
+| *would sooner + V1* | formalna preferencja | olimpijski |
+| *would sooner + podmiot + Past Simple* | formalna preferencja co do innej osoby | olimpijski |
+
+***
+
+**Koniec Lekcja 30 — *if only, I wish, would rather, had better, it’s time, would sooner***
+
+Następna brakująca lekcja to **Zaawansowane konstrukcje z *no sooner, hardly, scarcely, barely, not only, under no circumstances*** — kolejny blok olimpijski.
+
+---
+
+*Lekcja 31 (07aaa12f) nie została skopiowana — duplikat w większości; patrz tabela.*
