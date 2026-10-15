@@ -10,7 +10,7 @@ stan: "pełna struktura — 2026-10-15, audyt W1 wprowadzony (odp. zewn. 12), do
 stopka: **CHEMIA F09 v1.2** · Wartościowość, ładunek, stopień utlenienia · 2026
 ---
 
-::: minimum | Muszę umieć na E8 — 10 punktów
+::: minimum | Muszę umieć na E8 — punkty 1, 2, 4 i 5; reszta: poziom E8+LO
 
 1. **Ładunek jonu** to różnica między liczbą protonów i elektronów, np. Na⁺: 11 − 10 = +1.
 2. **Wartościowość** określa liczbę wiązań, które atom danego pierwiastka tworzy w określonej substancji lub związku, np. w H₂O tlen ma wartościowość II.
@@ -264,6 +264,18 @@ Dla prostych związków pierwiastków grup głównych często spotykamy:
 
 Wartościowość nie jest stałą cechą pierwiastka taką jak liczba protonów. Ten sam pierwiastek może tworzyć różną liczbę wiązań w różnych związkach.
 
+::: karta core | Wartościowość z układu okresowego
+
+- Pierwiastki grup 1 i 2: wartościowość równa numerowi grupy (I, II).
+- Pierwiastki grup 13–17: maksymalna wartościowość względem tlenu równa się numerowi grupy; względem wodoru (dla grup 14–17) wynosi 8 minus numer grupy.
+
+Przykłady:
+
+- azot (grupa 15): względem tlenu V, względem wodoru III;
+- tlen (grupa 16): względem wodoru II;
+- chlor (grupa 17): względem wodoru I, względem tlenu VII.
+:::
+
 ::: karta core | Wzór sumaryczny z wartościowości — krzyżowanie
 
 Przykład: tlenek glinu.
@@ -316,7 +328,7 @@ W szkolnych schematach:
 Nie można więc powiedzieć „chlor ma zawsze wartościowość I” bez wskazania związku.
 :::
 
-## 4 | Stopień utlenienia — reguły [[basic:E8]] {#utlenienie}
+## 4 | Stopień utlenienia — reguły [[extra:E8+LO]] {#utlenienie}
 
 **Stopień utlenienia** jest formalną liczbą przypisaną atomowi zgodnie z umownymi regułami. W uproszczeniu zakładamy, że wspólne elektrony wiążące należą do atomu bardziej elektroujemnego.
 
