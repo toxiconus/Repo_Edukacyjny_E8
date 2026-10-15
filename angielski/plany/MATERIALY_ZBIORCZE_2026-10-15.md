@@ -5426,3 +5426,15 @@ Następna brakująca lekcja to **Zaawansowane konstrukcje z *no sooner, hardly, 
 ---
 
 *Lekcja 31 (07aaa12f) nie została skopiowana — duplikat w większości; patrz tabela.*
+
+---
+
+## Partia 3 — lekcje 32–36 (upload 2026-10-15, 3 pliki) — same treści, bez kopiowania
+
+| Źródło | Lekcja | Status | Uwagi |
+|---|---|---|---|
+| d25c80b6 | 32 So, such, too, enough, as, like, such as | **duplikat** | pokrywa się z lekcją 27 (bbf858c8) — prawie słowo w słowo; zachowana wersja 27 |
+| 27a8bd43 | 33 Despite, in spite of, although, even though, however, nevertheless | **duplikat** | pokrywa się z lekcją 28 (3566fb79); jedyne różnice to dwa dodatkowe wiersze w ćwiczeniach 2 i 4 — nieistotne |
+| 5f10f407 | 34–36 Zestaw skrócony: used to / wish / inwersja | **duplikat** | streszczenie lekcji 29, 30 i 31 (20acb63a, 0ef6e2c4, 07aaa12f); nic nowego |
+
+Wniosek: partie 2 i 3 to ciągle te same zagadnienia w kolejnych wersjach (27 ↔ 32, 28 ↔ 33, 29–31 ↔ 34–36). Dalsze lekcje z tą samą listą konstrukcji nie wnoszą materiału. Do decyzji: czy kolejne partie z tej serii mają być przyjmowane, czy kurs kończymy na zestawieniu z partii 1–2 i wybieramy jedną wersję każdego zagadnienia.
