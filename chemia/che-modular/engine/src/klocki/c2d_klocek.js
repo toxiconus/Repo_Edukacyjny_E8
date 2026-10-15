@@ -28,6 +28,7 @@
         host.innerHTML = '';
         var d = document.createElement('div');
         d.setAttribute('data-wzor', String(opc.smiles || 'CC(=O)O'));
+        d.className = 'mol';
         window.C2DP.rysuj(d);
         host.appendChild(d);
         return;

@@ -1084,7 +1084,7 @@ F3 — sód reaguje z wodą, nie z Cu²⁺: 2Na + 2H₂O → 2NaOH + H₂↑; 2N
     c.setAttribute('aria-label', (opc.opis || k.opis || nazwa));
     host.innerHTML = ''; host.appendChild(c);
     var stan = Object.assign({}, k.stan0 ? k.stan0(opc) : {}, {opc: opc});
-    var ctx = c.getContext('2d'), t0 = performance.now(), grane = true, id = null;
+    var ctx = c.getContext('2d'), t0 = performance.now(), grane = false, id = null;   // pętla rusza przez start() (IO albo od razu)
     function klatka(now) {
       try { k.rysuj(ctx, c.width, c.height, stan, (now - t0) / 1000, opc); } catch (e) { }
       if (grane) id = requestAnimationFrame(klatka);

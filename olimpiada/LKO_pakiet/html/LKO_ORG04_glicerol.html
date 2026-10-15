@@ -1051,7 +1051,7 @@ Kontrola: C 6 = 6 ✔; H 16 = 16 ✔; O 6 + 14 = 20 i 12 + 8 = 20 ✔.</p>
     c.setAttribute('aria-label', (opc.opis || k.opis || nazwa));
     host.innerHTML = ''; host.appendChild(c);
     var stan = Object.assign({}, k.stan0 ? k.stan0(opc) : {}, {opc: opc});
-    var ctx = c.getContext('2d'), t0 = performance.now(), grane = true, id = null;
+    var ctx = c.getContext('2d'), t0 = performance.now(), grane = false, id = null;   // pętla rusza przez start() (IO albo od razu)
     function klatka(now) {
       try { k.rysuj(ctx, c.width, c.height, stan, (now - t0) / 1000, opc); } catch (e) { }
       if (grane) id = requestAnimationFrame(klatka);
@@ -1972,6 +1972,11 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
     });
     host.appendChild(cap);
   }
+  (function () {   // styl prostego renderera (zakres .mol), wstrzykiwany raz
+    if (typeof document === 'undefined' || document.getElementById('c2dp-css')) return;
+    var st = document.createElement('style'); st.id = 'c2dp-css'; st.textContent = "  .mol{--bg:#fff;--ink:#0f172a;--mut:#475569;--bond:#334155;--line:#cbd5e1;--o:#dc2626;--n:#2563eb; background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:14px;padding:12px 14px;max-width:520px;margin:0 auto 16px} @media (prefers-color-scheme:dark){.mol{--bg:#0f172a;--ink:#e2e8f0;--mut:#a8b4c6;--bond:#cbd5e1;--line:#334155;--o:#f87171;--n:#60a5fa}} .mol h3{margin:0 0 4px;font-size:16px;font-weight:600} .mol svg{display:block;width:100%;height:auto} .mol .b{stroke:var(--bond);stroke-linecap:round;fill:none;stroke-width:2.2} .mol .lbl{font-weight:600;text-anchor:middle;dominant-baseline:central;fill:var(--ink)} .mol .lbl.H{fill:var(--mut);font-weight:500}.mol .lbl.O{fill:var(--o)}.mol .lbl.N{fill:var(--n)} .mol .lbl.S{fill:#ca8a04}.mol .lbl.F,.mol .lbl.Cl{fill:#16a34a}.mol .lbl.Br{fill:#c2410c} .mol .cap{display:flex;flex-wrap:wrap;gap:2px 18px;margin-top:6px;font-size:14px;color:var(--mut)} .mol .cap b{color:var(--ink);font-size:17px;margin-right:7px} .mol .gv{--c:#7c3aed}.mol .gt{--c:#0e7490}.mol .ga{--c:#b45309}.mol .gb{--c:#2563eb} @media (prefers-color-scheme:dark){.mol .gv{--c:#c4b5fd}.mol .gt{--c:#67e8f9}.mol .ga{--c:#fbbf24}.mol .gb{--c:#93c5fd}} .mol .gx rect{fill:var(--c);fill-opacity:.1;stroke:var(--c);stroke-width:1.8;stroke-dasharray:6 5} .mol .gx text{fill:var(--c);font-size:14px;font-weight:700;text-anchor:middle}";
+    document.head.appendChild(st);
+  })();
   window.C2DP = {rysuj: rysuj};   // klocki: renderer bez automatycznego startu
 })();
 
@@ -2005,6 +2010,7 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
         host.innerHTML = '';
         var d = document.createElement('div');
         d.setAttribute('data-wzor', String(opc.smiles || 'CC(=O)O'));
+        d.className = 'mol';
         window.C2DP.rysuj(d);
         host.appendChild(d);
         return;
