@@ -1,597 +1,1214 @@
 ---
-kod: F12
-tytul: "Wzory chemiczne"
-poziom: E8
-wymaga: "F09; F11"
-poglebia: "F13; F17; N02–N08"
-opis: "Wzory chemiczne od zera: co pokazuje wzór, trzy zapisy, które trzeba odróżniać, indeks a współczynnik, bilans ładunków w związkach jonowych, nawiasy grup wieloatomowych, rodzaje wzorów, masy względne i hydraty, ściąga i typowe błędy."
-stan: "PRZEBUDOWANA (wersja 3, scalona z wersją 2 i treścią z poprzedniej wersji MASTER) — Claude Haiku 5.5, 2026-10-12; źródło: ZPE (interpretacja zapisów chemicznych); W1 FULL do zrobienia; pełna poprzednia wersja: chemia/plany/F12_materialy_robocze_v1.md"
+kod: F12  
+uid: CHE.01.F12.wzory_chemiczne  
+tytul: Wzory chemiczne  
+opis: Wzór sumaryczny, rzeczywisty, empiryczny i strukturalny · zapis wzorów związków jonowych i cząsteczkowych · masa molowa · skład procentowy · wzór empiryczny z analizy  
+kicker: F12 · FUNDAMENTY · NOWA WERSJA  
+lead: Wzór chemiczny to zapis języka, którym chemicy mówią o substancjach. Potrafisz go przeczytać i zbudować? Umiesz policzyć, ile masy pierwiastka jest w związku? Ta lekcja uczy obu rzeczy — i pokazuje, że z samych procentów da się odtworzyć wzór.  
+plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]  
+stan: "pełna struktura — 2026-10-15, audyt W1 wprowadzony (odp. zewn. 12), do weryfikacji W2"  
+stopka: **CHEMIA F12 v1.2** · Wzory chemiczne · 2026
 ---
 
-Ta lekcja uczy zapisywać substancje tak, by wzór mówił prawdę o składzie. Po jej przejściu umiesz zbudować wzór związku jonowego z bilansu ładunków, odróżnić indeks od współczynnika, poprawnie użyć nawiasu, wybrać właściwy rodzaj wzoru do pytania i policzyć masę względną związku.
+::: minimum | Muszę umieć na poziomie szkoły podstawowej — 10 punktów
 
-## Przypomnienie z poprzednich lekcji
+1. **Wzór sumaryczny** podaje rodzaj i liczbę atomów w cząsteczce, np. C₆H₁₂O₆ — glukoza.
+2. **Współczynnik** przed wzorem mnoży wszystkie atomy w nim: 2 H₂O oznacza 4 atomy wodoru i 2 atomy tlenu.
+3. **Wzór strukturalny** pokazuje wiązania; zapis kreskowy wody to H–O–H.
+4. Wzór związku jonowego podaje **stosunek** jonów tak, aby suma ładunków była zerowa: Al₂O₃, ponieważ 2 · (+3) + 3 · (−2) = 0.
+5. **Masa molowa** $$M$$, wyrażana w g/mol, to suma mas atomowych wszystkich atomów zapisanych we wzorze.
+6. **Skład procentowy** pierwiastka w związku obliczamy ze wzoru:
 
-Zanim przeczytasz dalej, odpowiedz na dwa pytania z F09 i F11 (bez zaglądania):
+   $$
+   \%X=\frac{\text{liczba atomów }X\cdot A_r(X)}{M\text{ związku}}\cdot100\%
+   $$
 
-1. Jaki ładunek ma jon glinu Al³⁺ i jon tlenkowy O²⁻?
-2. Co oznacza, że związek jonowy jest obojętny elektrycznie?
+7. **Stosunek masowy** pierwiastków w związku wyznaczamy, mnożąc liczbę atomów każdego pierwiastka przez jego masę atomową. W CO₂:
 
-::: karta understand | Klucz do przypomnienia
-1. Glin: +3, tlen: −2. Jeśli nie pamiętasz ładunków, wróć do F09 przed dalszą lekcją.
-2. Suma ładunków dodatnich i ujemnych w całej jednostce wzoru wynosi zero.
+   $$
+   m(\mathrm C):m(\mathrm O)=12:32=3:8
+   $$
+
+8. **Masę pierwiastka w próbce** obliczamy z jego udziału masowego. W 90 g wody znajduje się:
+
+   $$
+   90\cdot\frac{2}{18}=10\text{ g wodoru}
+   $$
+
+9. We wzorze związku jonowego piszemy najpierw kation, potem anion: NaCl. W nazwie kolejność jest odwrotna: chlorek sodu.
+10. Dla metali o zmiennym stopniu utlenienia zapisujemy stopień utlenienia cyfrą rzymską w nawiasie: FeCl₂ — chlorek żelaza(II), FeCl₃ — chlorek żelaza(III).
+
 :::
 
-::: minimum | Muszę umieć — 7 punktów
-1. Wzór pokazuje skład substancji: jakie atomy lub jony i w jakiej proporcji.
-2. **Indeks** (u dołu) zmienia skład substancji. **Współczynnik** (przed wzorem) zmienia liczbę jednostek.
-3. Związek jonowy jest obojętny elektrycznie: bilans ładunków wynosi zero.
-4. Nawias oznacza, że liczba za nim dotyczy całej grupy w nawiasie.
-5. Nie wolno zmieniać indeksów, by zbilansować równanie reakcji.
-6. Rodzaj wzoru zależy od pytania: skład, połączenia albo najprostszy stosunek.
-7. Masa względna wzoru to suma mas atomowych zgodnie z indeksami.
+::: warstwy
+
+- e8 | <b>Zakres szkoły podstawowej:</b> wzory sumaryczne i strukturalne prostych związków; zasada zerowej sumy ładunków; masa molowa i skład procentowy; stosunek masowy i masa pierwiastka w próbce; proste nazwy związków.
+- understand | <b>Rozumienie:</b> dlaczego wzór jonowy nie jest zapisem pojedynczej cząsteczki; związek między wzorem empirycznym a rzeczywistym; sens zapisu $$n$$ i stosunku liczbowego atomów.
+- extra | <b>Poziom ponadpodstawowy:</b> izomery; wzory półstrukturalne związków organicznych; sprawdzanie wyniku przez sumę procentów; wzory hydratów, np. CuSO₄·5H₂O; wyznaczanie wzoru empirycznego i rzeczywistego z procentów.
+
 :::
 
-## 1 | Wykład 1 — co pokazuje wzór {#wyklad}
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
 
-::: karta understand | Wykład od zera
-Zacznijmy od pytania: czym różni się nazwa substancji od jej wzoru? Nazwa mówi, jak substancję nazwać, a wzór mówi, z czego się składa. Wzór chemiczny nie jest przypadkowym zestawieniem symboli. Pokazuje, jakie składniki tworzą substancję i w jakiej proporcji występują w jej **jednostce wzoru** (najmniejszym zbiorze, który opisuje skład).
+Wzór to **przepis liczbowy** na substancję: mówi, jakich atomów lub jonów i w jakim stosunku jest. Z przepisu wynikają dwie rzeczy, które często sprawdzamy w zadaniach: masa molowa, czyli masa jednego mola substancji, oraz skład procentowy, czyli udział masy każdego pierwiastka. Odwrotnie — na podstawie składu procentowego można odtworzyć najprostszy stosunek atomów, czyli wzór empiryczny.
 
-Weźmy wodę. Wzór H₂O mówi, że w jednej cząsteczce są dwa atomy wodoru i jeden atom tlenu. Stosunek atomów H : O wynosi 2 : 1. Gdybyś zapisał HO, opisałbyś zupełnie inną substancję, czyli rodnik wodorotlenowy, a nie wodę.
-
-Dlatego każdy wzór ma dwa zadania. Po pierwsze podaje skład, czyli rodzaj i liczbę atomów lub jonów. Po drugie pozwala przewidzieć, jak substancja się zachowa. Zapis, który podaje błędny skład, jest błędny, nawet jeśli wygląda estetycznie.
 :::
 
-### 1.1 Mini-wykład: cząsteczka czy jednostka wzoru
+@opis: Schemat zależności: wzór chemiczny → liczba atomów/jonów → masa molowa → skład procentowy; działanie odwrotne: skład procentowy + masa molowa → wzór empiryczny i rzeczywisty.
 
-::: karta understand | W skrócie: skład kryształu
-Substancja kowalencyjna ma **cząsteczki**, czyli najmniejsze jednostki zbudowane z atomów połączonych wiązaniami. Substancja jonowa jest zbudowana z jonów ułożonych w sieć krystaliczną. W sieci nie ma pojedynczych cząsteczek, dlatego mówimy o **jednostce wzoru**: najmniejszym zbiorze jonów, który opisuje skład kryształu, np. jedna jednostka NaCl to jeden Na⁺ i jeden Cl⁻.
+## 0.1 | Jak pracować z tą lekcją {#jak-pracowac}
+
+::: karta understand | Kolejność pracy
+
+Najpierw opanuj minimum. Następnie przeczytaj wykład o rodzajach wzorów i budowaniu wzorów związków jonowych. Rachunki wykonuj krok po kroku — każdy wynik zapisuj z jednostką.
+
+W zadaniach warto stosować stały schemat:
+
+1. Zapisz dane.
+2. Ustal, jaki wzór lub wielkość jest szukana.
+3. Zapisz wzór matematyczny albo bilans ładunków.
+4. Podstaw dane.
+5. Sprawdź jednostkę i sens wyniku.
+
 :::
 
-### 1.2 Trzy zapisy, których nie wolno mylić
+## 0.2 | Cele i pytanie przewodnie [[basic:E8]] {#cele}
 
-Na tym etapie najczęściej mylą się trzy zapisy, choć wszystkie dotyczą liczb:
+::: karta basic | Po tej lekcji potrafisz
 
-- **Wartościowość** to cyfra rzymska bez znaku, np. Fe(III). Mówi, ile wiązań tworzy atom.
-- **Ładunek jonu** to cyfra arabska ze znakiem, np. Fe³⁺. Pokazuje, ile elektronów jon oddał lub przyjął.
-- **Stopień utlenienia** to cyfra rzymska ze znakiem, np. Fe(+3). Opisuje sytuację elektronową atomu w związku.
+- odczytać wzór sumaryczny, empiryczny i strukturalny;
+- odróżnić wzór sumaryczny od empirycznego;
+- zapisać wzór związku jonowego na podstawie ładunków jonów;
+- obliczyć masę molową;
+- obliczyć skład procentowy związku;
+- obliczyć stosunek masowy pierwiastków;
+- obliczyć masę pierwiastka w próbce;
+- wyznaczyć wzór empiryczny z procentów (poziom ambitny);
+- obliczyć wzór rzeczywisty na podstawie wzoru empirycznego i masy molowej (poziom ambitny).
 
-Przy budowie wzoru jonowego korzystamy z ładunków, a przy nazwach związków z wartościowości lub stopnia utlenienia.
-
-### 1.3 Trzy rodzaje masy
-
-- **Liczba masowa A** to suma protonów i neutronów w danym izotopie (zawsze liczba całkowita).
-- **Względna masa atomowa Aᵣ** to średnia masa izotopów danego pierwiastka, odniesiona do układu okresowego.
-- **Względna masa cząsteczkowa Mᵣ** to suma Aᵣ atomów we wzorze. Dla kryształu jonowego mówimy o **masie jednostki wzoru**.
-
-## 2 | Wykład 2 — indeks a współczynnik {#indeks}
-
-### 2.1 Indeks: zmienia substancję
-
-**Indeks** to mała liczba u dołu, za symbolem pierwiastka. Zmienia skład substancji. H₂O i H₂O₂ są różnymi substancjami: pierwsza to woda, druga to nadtlenek wodoru. Nie wolno więc dopisywać indeksów, by „zbilansować” równanie reakcji, bo wtedy zmieniasz substancję, a nie liczbę jej jednostek.
-
-Indeks „1” pomijamy: piszemy H₂O, a nie H₂O₁.
-
-### 2.2 Współczynnik: zmienia liczbę jednostek
-
-**Współczynnik** to liczba przed wzorem. Mówi, ile jednostek substancji bierze udział w reakcji. 2H₂O oznacza dwie cząsteczki wody, a 3CO₂ oznacza trzy cząsteczki lub trzy mole dwutlenku węgla. Współczynnik mnoży wszystkie atomy wzoru: 3H₂O to 6 atomów H i 3 atomy O.
-
-::: karta core | Indeks czy współczynnik? — krok po kroku
-1. Liczba stoi u dołu, za symbolem? To indeks, zmienia substancję.
-2. Liczba stoi przed całym wzorem? To współczynnik, zmienia liczbę jednostek.
-3. Chcesz zmienić skład? Zmień indeks i sprawdź, czy to nadal ta sama substancja.
-4. Chcesz zbilansować równanie? Zmieniaj tylko współczynniki.
 :::
 
-::: karta warning | Pułapka: zmiana indeksu w równaniu
-Zapis H₂ + O₂ → H₂O₂ nie jest poprawnym bilansem, bo zmieniłeś substancję (woda zamieniła się w nadtlenek). Poprawny bilans to 2H₂ + O₂ → 2H₂O, w którym zmieniają się tylko współczynniki.
+::: karta exam | Pytanie przewodnie
+
+Dwa związki mają ten sam wzór empiryczny CH₂O: glukoza i kwas octowy. Czy to znaczy, że są tą samą substancją? Co je różni?
+
 :::
 
-## 3 | Wykład 3 — związki jonowe i bilans ładunków {#jonowe}
+## 0.3 | Kompas — co trzeba wiedzieć wcześniej {#kompas}
 
-### 3.1 Dlaczego ładunki decydują o wzorze
+- ładunki jonów i stopnie utlenienia;
+- podstawowe informacje o wiązaniach i cząsteczkach;
+- symbole pierwiastków;
+- masy atomowe pierwiastków odczytywane z układu okresowego lub tablic dołączonych do arkusza;
+- podstawowe działania na ułamkach, proporcjach i procentach.
 
-W związku jonowym kationy (dodatnie) i aniony (ujemne) łączą się tak, by cała jednostka wzoru była obojętna elektrycznie. Dlatego wzór nie jest dowolny: wynika z ładunków jonów. Przy budowie wzoru zaczynamy od ładunków, a dopiero potem dobieramy liczby.
+## 0.4 | Diagnoza startowa {#diagnoza}
 
-### 3.2 Metoda krzyżowa: najmniejsza wspólna wielokrotność
+::: karta understand | Odpowiedz najpierw sam
 
-Dla jonów Al³⁺ i O²⁻ zapisujemy ładunki (+3 i −2). Szukamy najmniejszej wspólnej wielokrotności wartości ładunków, czyli 6. Potrzebne są dwa jony Al³⁺ (łącznie +6) i trzy jony O²⁻ (łącznie −6). Otrzymujemy Al₂O₃.
+1. Jaki jest wzór chlorku wapnia, jeśli wapń tworzy jon Ca²⁺, a chlor — jon Cl⁻?
+2. Ile wynosi masa molowa CO₂, jeśli C = 12, a O = 16?
+3. Jaki jest stosunek atomów C : H w C₂H₆?
 
-Dla jonów Ca²⁺ i OH⁻: jeden kation ma ładunek +2, więc potrzebne są dwie grupy OH⁻. Otrzymujemy Ca(OH)₂.
+::: odp | Pokaż klucz i interpretację
 
-::: karta core | Budowanie wzoru związku jonowego
-1. Rozpoznaj jony i ich ładunki (np. Ca²⁺, Cl⁻, SO₄²⁻).
-2. Znajdź najmniejszą wspólną wielokrotność ładunków.
-3. Policz, ile jonów każdego rodzaju daje tę wielokrotność.
-4. Zapisz indeksy u dołu, a grupy wieloatomowe w nawiasie, jeśli występują więcej niż raz.
-5. Sprawdź bilans: suma ładunków dodatnich równa się sumie ujemnych.
+1. **CaCl₂** — jeden jon Ca²⁺ wymaga dwóch jonów Cl⁻:
+
+   $$
+   (+2)+2\cdot(-1)=0
+   $$
+
+2. **44 g/mol**:
+
+   $$
+   M(\mathrm{CO_2})=12+2\cdot16=44\text{ g/mol}
+   $$
+
+3. **2 : 6**, czyli po skróceniu **1 : 3**.
+
+:::
 :::
 
-::: karta understand | W skrócie: najmniejsza proporcja, nie „największa”
-Wzór jonowy zapisujemy w najmniejszej całkowitej proporcji. Jeśli stosunek jonów wychodzi 2 : 2, skracamy go do 1 : 1. Dlatego poprawny wzór tlenku wapnia to CaO, a nie Ca₂O₂. Wzór mówi o składzie, a nie o liczbie „przykładów”.
+## 1 | Rodzaje wzorów [[basic:E8]] {#rodzaje}
+
+::: regula
+
+**Wzór sumaryczny** podaje rodzaj i dokładną liczbę atomów w pojedynczej cząsteczce substancji cząsteczkowej. Przykład: glukoza ma wzór C₆H₁₂O₆.
+
+**Wzór rzeczywisty** to wzór pokazujący rzeczywistą liczbę atomów w cząsteczce. Dla substancji cząsteczkowych jest zwykle tym samym co wzór sumaryczny.
+
+**Wzór empiryczny** podaje najprostszy stosunek liczb atomów pierwiastków. Dla glukozy:
+
+$$
+6:12:6=1:2:1
+$$
+
+dlatego wzór empiryczny glukozy to CH₂O.
+
+**Wzór strukturalny** pokazuje, w jaki sposób atomy są połączone wiązaniami. Woda ma zapis:
+
+$$
+\mathrm{H-O-H}
+$$
+
+**Wzór półstrukturalny** skraca zapis grup atomów, ale nadal pokazuje kolejność połączeń, np. etanol:
+
+$$
+\mathrm{CH_3-CH_2-OH}
+$$
+
 :::
 
-## 4 | Wykład 4 — grupy wieloatomowe i nawiasy {#nawiasy}
+::: karta core | Który wzór wybrać?
 
-### 4.1 Po co nawias
+- dla substancji cząsteczkowej — wzór sumaryczny, np. H₂O lub CO₂;
+- dla pytania o najprostszy stosunek atomów — wzór empiryczny, np. CH₂O;
+- dla pytania o budowę i połączenie atomów — wzór strukturalny;
+- dla związku jonowego — zapisujemy stosunek kationów i anionów, np. NaCl lub Al₂O₃.
 
-Część jonów składa się z kilku atomów, na przykład siarczan(VI) SO₄²⁻ czy wodorotlenkowy OH⁻. Taka **grupa wieloatomowa** zachowuje się jak jedna całość. Gdy zapisujesz więcej takich grup, używasz nawiasu, a liczba za nawiasem dotyczy wszystkich atomów w środku.
+**Ważne rozróżnienie.** W przypadku substancji jonowych nie ma pojedynczych cząsteczek NaCl istniejących w sieci krystalicznej jako oddzielne jednostki. Zapis NaCl oznacza najprostszy, elektrycznie obojętny stosunek jonów Na⁺ i Cl⁻. W zadaniach szkolnych taki zapis może być jednak nazywany wzorem sumarycznym związku jonowego.
 
-Przykład: Ca₃(PO₄)₂ zawiera 3 atomy Ca, 2 atomy P i 8 atomów O (bo 2 · 4 = 8). Nawias informuje, że grupę PO₄ liczymy dwa razy.
+**Uwaga terminologiczna.** Termin „wzór empiryczny” oznacza najprostszy stosunek atomów. W przypadku NaCl ten stosunek również jest najprostszy, ale w praktyce szkolnej zwykle mówi się po prostu o wzorze związku jonowego lub wzorze sumarycznym soli.
 
-::: karta core | Nawias krok po kroku
-1. Znajdź nawias i liczbę za nim.
-2. Policz atomy w środku nawiasu (np. P, 4 × O).
-3. Pomnóż każdy atom przez liczbę za nawiasem.
-4. Zsumuj atomy poza nawiasem.
 :::
 
-### 4.2 Mini-wykład: nawias jak paczka
+::: karta warning | Pułapka: CH₂O to nie zawsze glukoza
 
-::: karta understand | W skrócie: paczka po cztery jajka
-Wyobraź sobie paczki po cztery jajka. Jeśli kupujesz dwie paczki, liczysz osiem jajek, a nie dwa. Nawias działa jak paczka: wszystko w środku mnożysz przez liczbę za nawiasem. Tak samo czytamy Ca(OH)₂: dwa jony OH⁻ na jeden Ca²⁺.
+Wzór empiryczny CH₂O pasuje do glukozy, kwasu octowego, metanalu i innych związków. Sam wzór empiryczny nie określa jednoznacznie substancji.
+
+Dopiero masa molowa albo informacja o budowie pozwala ustalić wzór rzeczywisty.
+
+**Odpowiedź na pytanie przewodnie:**
+
+- glukoza: C₆H₁₂O₆, $$M=180\text{ g/mol}$$;
+- kwas octowy: C₂H₄O₂, $$M=60\text{ g/mol}$$.
+
+Oba związki mają wzór empiryczny CH₂O, ale są różnymi substancjami o innej budowie i innych właściwościach.
+
 :::
 
-### 4.3 Grupy, które trzeba znać
+### 1.1 | Indeksy i współczynniki
 
-| Grupa | Nazwa | Ładunek | Wartościowość |
-|-------|-------|---------|---------------|
-| OH | wodorotlenkowa | OH⁻ | I |
-| NO₃ | azotanowa(V) | NO₃⁻ | I |
-| NO₂ | azotanowa(III) | NO₂⁻ | I |
-| SO₄ | siarczanowa(VI) | SO₄²⁻ | II |
-| SO₃ | siarczanowa(IV) | SO₃²⁻ | II |
-| CO₃ | węglanowa | CO₃²⁻ | II |
-| PO₄ | fosforanowa(V) | PO₄³⁻ | III |
-| NH₄ | amonowa | NH₄⁺ | I |
-| HCO₃ | wodorowęglanowa | HCO₃⁻ | I |
-| CH₃COO | octanowa | CH₃COO⁻ | I |
-| MnO₄ | manganianowa(VII) | MnO₄⁻ | I |
-| CrO₄ | chromianowa(VI) | CrO₄²⁻ | II |
-| Cr₂O₇ | dichromianowa(VI) | Cr₂O₇²⁻ | II |
+Wzór chemiczny trzeba czytać bardzo dokładnie, ponieważ znaczenie ma położenie liczby.
 
-## 5 | Wykład 5 — rodzaje wzorów {#rodzaje}
+**Indeks dolny** znajduje się we wzorze, np. H₂O. Mówi, ile atomów danego pierwiastka znajduje się w jednej cząsteczce albo w najmniejszej jednostce zapisu.
 
-### 5.1 Cztery wzory, cztery pytania
+**Współczynnik** stoi przed wzorem, np. 3 H₂O. Mnoży całą zawartość wzoru.
 
-Ten sam związek można zapisać na kilka sposobów. Każdy sposób odpowiada na inne pytanie:
+| Zapis | Znaczenie |
+|---|---|
+| H₂O | 2 atomy H i 1 atom O w jednej cząsteczce |
+| 2 H₂O | 2 cząsteczki wody; razem 4 atomy H i 2 atomy O |
+| H₂O₂ | 2 atomy H i 2 atomy O w jednej cząsteczce |
+| 3 CO₂ | 3 cząsteczki CO₂; razem 3 atomy C i 6 atomów O |
+| Ca(OH)₂ | 1 atom Ca, 2 atomy O i 2 atomy H |
 
-- **Wzór sumaryczny** podaje rodzaj i liczbę atomów w jednostce wzoru (np. C₂H₆O). Odpowiada na pytanie: z czego się składa?
-- **Wzór strukturalny** pokazuje, jak atomy są połączone kreskami (np. H–O–H). Odpowiada na pytanie: w jakiej kolejności?
-- **Wzór Lewisa** (elektronowy, kropkowy) pokazuje elektrony walencyjne, wiązania i wolne pary. Odpowiada na pytanie: jak wiążą się elektrony? To model, a nie zdjęcie rozkładu elektronów.
-- **Wzór empiryczny** podaje najprostszy całkowity stosunek atomów (np. CH₂O dla glukozy). Odpowiada na pytanie: jaki jest najprostszy stosunek?
+**Przykład różnicy:**
 
-### 5.2 Dlaczego wzór sumaryczny nie wystarcza
+- H₂O₂ nie oznacza dwóch cząsteczek wody;
+- 2 H₂O oznacza dwie cząsteczki wody.
 
-C₂H₆O pasuje do dwóch substancji: etanolu i eteru dimetylowego. Ten sam skład, inne połączenia, inne właściwości. Dlatego chemik dla tego samego składu podaje wzór strukturalny.
+@opis: Porównanie dwóch zapisów: H₂O₂ — jedna cząsteczka o składzie 2 H i 2 O; 2 H₂O — dwie cząsteczki, razem 4 H i 2 O.
 
-::: karta warning | Pułapka: wzór empiryczny to nie zawsze prawdziwy wzór
-Glukoza ma wzór sumaryczny C₆H₁₂O₆, a wzór empiryczny CH₂O. Nie oznacza to, że glukoza to CH₂O. Wzór empiryczny jest tylko uproszczeniem stosunku atomów.
+## 2 | Budowa wzorów związków jonowych [[basic:E8]] {#budowa}
+
+Dla związku jonowego zapisujemy taki stosunek jonów, aby całkowity ładunek był równy zero.
+
+| Kation | Anion | Bilans ładunków | Wzór |
+|---|---|---|---|
+| Na⁺ | Cl⁻ | $$1\cdot(+1)+1\cdot(-1)=0$$ | NaCl |
+| Ca²⁺ | Cl⁻ | $$1\cdot(+2)+2\cdot(-1)=0$$ | CaCl₂ |
+| Al³⁺ | O²⁻ | $$2\cdot(+3)+3\cdot(-2)=0$$ | Al₂O₃ |
+| Mg²⁺ | PO₄³⁻ | $$3\cdot(+2)+2\cdot(-3)=0$$ | Mg₃(PO₄)₂ |
+
+::: karta core | Procedura: wzór z ładunków
+
+1. Zapisz symbol kationu i jego ładunek.
+2. Zapisz symbol anionu i jego ładunek.
+3. Znajdź najmniejszą liczbę, która jest podzielna przez wartości obu ładunków.
+4. Ustal, ile jonów każdego rodzaju potrzeba, aby otrzymać tę liczbę ładunków dodatnich i ujemnych.
+5. Zapisz kation przed anionem.
+6. Jeśli jon złożony występuje więcej niż raz, zastosuj nawias.
+7. Sprawdź, czy suma ładunków wynosi zero.
+8. Skróć indeksy, jeśli mają wspólny dzielnik.
+
 :::
 
-### 5.3 Mini-wykład: wzór a masa
+### 2.1 | Przykład: chlorek wapnia
 
-Wzór pozwala policzyć masę względną. Dla H₂O: Mᵣ = 2 · 1 + 16 = 18. Dla CO₂: Mᵣ = 12 + 2 · 16 = 44. Dla Ca(OH)₂: Mᵣ = 40 + 2 · (16 + 1) = 74. Dla Al₂O₃: Mᵣ = 2 · 27 + 3 · 16 = 102. Masa molowa M ma jednostkę g/mol i pojawi się w R05; liczbowo odpowiada Mᵣ, ale to inna wielkość.
+Wapń tworzy jon Ca²⁺, a chlor — jon Cl⁻.
 
-## 6 | Ściąga: wzory i zapisy {#sciaga}
+Jeden jon Ca²⁺ ma ładunek +2. Potrzebne są więc dwa jony Cl⁻:
 
-### 6.1 Algorytm W–K–S–K
+$$
+(+2)+2\cdot(-1)=0
+$$
 
-**W** — **W**artościowości: zapisz wartościowość każdego składnika (np. Al(III), O(II)).
-**K** — **K**rzyżowanie: przestaw wartościowości na indeksy (Al₂O₃).
-**S** — **S**kracanie: skróć indeksy do najmniejszego wspólnego stosunku.
-**K** — **K**ontrola: sprawdź bilans ładunków (2·(+3) = 3·(−2) = +6, czyli 0 po uwzględnieniu znaków).
+Wzór:
+
+$$
+\boxed{\mathrm{CaCl_2}}
+$$
+
+### 2.2 | Przykład: tlenek glinu
+
+Glin tworzy jon Al³⁺, a tlen — jon O²⁻.
+
+Najmniejszą wspólną wielokrotnością 3 i 2 jest 6:
+
+- dwa jony Al³⁺ dają $$+6$$;
+- trzy jony O²⁻ dają $$-6$$.
+
+$$
+2\cdot(+3)+3\cdot(-2)=0
+$$
+
+Wzór:
+
+$$
+\boxed{\mathrm{Al_2O_3}}
+$$
+
+### 2.3 | Przykład: fosforan magnezu
+
+Magnez tworzy jon Mg²⁺, a fosforan — jon PO₄³⁻.
+
+Potrzebujemy:
+
+- trzech jonów Mg²⁺: $$3\cdot(+2)=+6$$;
+- dwóch jonów PO₄³⁻: $$2\cdot(-3)=-6$$.
+
+Ponieważ jon PO₄³⁻ występuje dwa razy, zapisujemy go w nawiasie:
+
+$$
+\boxed{\mathrm{Mg_3(PO_4)_2}}
+$$
+
+Niepoprawny byłby zapis Mg₃PO₄₂, ponieważ indeks 2 powinien pomnożyć cały jon PO₄, a nie tylko tlen.
+
+### 2.4 | Nazwy związków jonowych
+
+We wzorze zapisujemy najpierw kation, potem anion:
+
+- NaCl;
+- CaO;
+- Al₂O₃;
+- FeCl₃.
+
+W nazwie związku kolejność słów jest inna:
+
+- chlorek sodu;
+- tlenek wapnia;
+- tlenek glinu;
+- chlorek żelaza(III).
+
+::: karta understand | Najważniejsze reguły nazw
+
+- aniony beztlenowe często mają końcówkę **-ek**: chlorek, bromek, siarczek;
+- aniony tlenowe często mają końcówkę **-an**: azotan, siarczan, węglan, fosforan;
+- anion O²⁻ tworzy nazwę **tlenek**;
+- w przypadku metalu o kilku możliwych stopniach utlenienia zapisujemy stopień utlenienia cyfrą rzymską w nawiasie.
 
 Przykłady:
-- Al₂O₃: Al(III), O(II) → Al₂O₃ → indeksy 2 i 3 nie mają wspólnego dzielnika → 2·(+3) = 3·(−2) → wzór poprawny.
-- CaO: Ca(II), O(II) → Ca₂O₂ → skracamy przez 2 → CaO → 1·(+2) = 1·(−2) = 0.
-- Fe₂O₃: Fe(III), O(II) → Fe₂O₃ → brak wspólnego dzielnika → 2·(+3) = 3·(−2) → poprawny.
 
-### 6.2 Nawias czy nie nawias?
+- FeCl₂ — chlorek żelaza(II);
+- FeCl₃ — chlorek żelaza(III);
+- Cu₂O — tlenek miedzi(I);
+- CuO — tlenek miedzi(II).
 
-Ca(OH)₂ ma nawias, bo OH powtarza się dwa razy. NaOH nie ma nawiasu, bo jest tylko jedna grupa OH. Al₂(SO₄)₃ ma nawias, bo SO₄ powtarza się trzy razy. CuSO₄ nie ma nawiasu, bo jest jedna grupa SO₄.
+:::
 
-### 6.3 Wzór strukturalny i elektronowy — przykłady
+### 2.5 | Ważniejsze jony złożone
 
-- Woda: H–O–H (strukturalny), H:O:H z dwiema wolnymi parami na tlenie (Lewisa).
-- Dwutlenek węgla: O=C=O.
-- Metan: H–C(–H)(–H)–H.
-- Chlor: Cl–Cl, chlorowodór: H–Cl.
+| Jon | Nazwa | Przykład soli |
+|---|---|---|
+| OH⁻ | wodorotlenkowy | Ca(OH)₂ — wodorotlenek wapnia |
+| NO₃⁻ | azotanowy(V) | KNO₃ — azotan(V) potasu |
+| SO₄²⁻ | siarczanowy(VI) | Na₂SO₄ — siarczan(VI) sodu |
+| SO₃²⁻ | siarczynowy(IV) | Na₂SO₃ — siarczyn(IV) sodu |
+| CO₃²⁻ | węglanowy(IV) | CaCO₃ — węglan wapnia |
+| PO₄³⁻ | fosforanowy(V) | Mg₃(PO₄)₂ — fosforan(V) magnezu |
+| NH₄⁺ | amonowy | NH₄Cl — chlorek amonu |
 
-### 6.4 Hydraty
+ W tabeli poprawiono nazwy jonów siarczynowego i węglanowego tak, aby nie sugerować, że nazwy „siarczan(IV)” i „węglanowy” są uniwersalnie właściwymi nazwami systematycznymi. W szkolnym użyciu spotyka się różne konwencje nazewnicze; w razie rozbieżności należy stosować nazewnictwo przyjęte w danym podręczniku lub tablicach egzaminacyjnych. 
 
-**Hydrat** to związek z cząsteczkami wody w sieci krystalicznej. Zapisujemy go jako sól bezwodną · n H₂O. CuSO₄·5H₂O to pentahydrat siarczanu(VI) miedzi(II). Na₂CO₃·10H₂O to dekahydrat węglanu sodu. CaSO₄·2H₂O to dihydrat siarczanu(VI) wapnia (gips).
+::: karta core | Uwaga o stopniach utlenienia
 
-Masa molowa hydratu to masa bezwodnej soli plus masa wody. Dla CuSO₄·5H₂O: 159,6 + 5 · 18 = 249,6 g/mol.
+W nazwach takich jak azotan(V), siarczan(VI), siarczyn(IV) i fosforan(V) cyfra rzymska oznacza stopień utlenienia pierwiastka centralnego:
 
-### 6.5 Najczęstsze błędy w zapisie
+- w NO₃⁻ azot ma stopień utlenienia +5;
+- w SO₄²⁻ siarka ma stopień utlenienia +6;
+- w SO₃²⁻ siarka ma stopień utlenienia +4;
+- w PO₄³⁻ fosfor ma stopień utlenienia +5.
 
-| Błędnie | Poprawnie | Dlaczego |
-|---------|-----------|----------|
-| CaOH₂ | Ca(OH)₂ | nawias obejmuje całą grupę OH |
-| FeO₃ | Fe₂O₃ | W–K–S–K: 2·III = 3·II |
-| HSO₄ | H₂SO₄ | wartościowości H i SO₄ |
-| Ca₂O₂ | CaO | skrócenie do najprostszego stosunku |
-| AlSO₄ | Al₂(SO₄)₃ | W–K–S–K i nawias |
-| CaNO₃ | Ca(NO₃)₂ | nawias, bo są dwie grupy NO₃ |
-| FeNO | Fe(NO₃)₃ | grupa NO₃ w nawiasie |
-| SO (jako tlenek szkolny) | SO₂ albo SO₃ | S(IV) i S(VI) to różne tlenki |
-| CO (przy spalaniu całkowitym) | CO₂ | CO to inny tlenek |
+:::
 
-## 7 | Doświadczenia modelowe {#doswiadczenia}
+Mol to liczność odpowiadająca około $$6{,}02\cdot10^{23}$$ cząstkom, atomom lub jonom. Szczegóły znajdują się w §6.
 
-### 7.1 Model wzoru z klocków
+## 3 | Masa molowa [[basic:E8]] {#masa}
 
-Problem: jak zobrazować wzór chemiczny? Sprzęt: klocki lub kulki z plasteliny. Wykonanie: zbuduj model H₂O (2 kulki H i 1 kulka O). Wniosek: wzór sumaryczny opisuje liczbę atomów, a nie kształt cząsteczki.
+Masa molowa $$M$$ to masa jednego mola substancji. Jednostką masy molowej jest g/mol.
 
-### 7.2 Budowanie wzoru z jonów
+Aby obliczyć masę molową, dodajemy masy wszystkich atomów zapisanych we wzorze, uwzględniając indeksy i nawiasy.
 
-Problem: jak zbudować wzór z jonów? Wykonanie: połącz Ca²⁺ z dwoma jonami OH⁻ i zapisz wynik jako Ca(OH)₂. Wniosek: bilans ładunków, a nie zgadywanie, prowadzi do wzoru.
+### 3.1 | Przykłady
 
-## 8 | Klinika błędów {#klinika}
+**Woda — H₂O**
+
+$$
+M(\mathrm{H_2O})=2\cdot1+16=18\text{ g/mol}
+$$
+
+**Chlorek sodu — NaCl**
+
+$$
+M(\mathrm{NaCl})=23+35{,}5=58{,}5\text{ g/mol}
+$$
+
+W przypadku związku jonowego nie mówimy o masie pojedynczej cząsteczki NaCl, lecz o masie odpowiadającej jednemu molowi jednostek wzoru.
+
+**Dwutlenek węgla — CO₂**
+
+$$
+M(\mathrm{CO_2})=12+2\cdot16=44\text{ g/mol}
+$$
+
+**Kwas siarkowy(VI) — H₂SO₄**
+
+$$
+M(\mathrm{H_2SO_4})=2\cdot1+32+4\cdot16=98\text{ g/mol}
+$$
+
+::: karta warning | Pułapka: nawiasy i indeksy
+
+W Ca(OH)₂ indeks 2 stojący za nawiasem mnoży zarówno O, jak i H.
+
+$$
+M(\mathrm{Ca(OH)_2})=40+2\cdot(16+1)=40+34=74\text{ g/mol}
+$$
+
+Nie wolno obliczać:
+
+$$
+40+16+1=57\text{ g/mol}
+$$
+
+Taki wynik pomija działanie indeksu za nawiasem.
+
+:::
+
+### 3.2 | Masa cząsteczkowa a masa molowa
+
+Masa cząsteczkowa jest sumą mas atomowych wszystkich atomów w jednej cząsteczce i wyraża się ją w unitach, czyli u.
+
+Masa molowa jest masą jednego mola tych cząsteczek i wyraża się ją w g/mol.
+
+Przykład:
+
+- masa cząsteczkowa H₂O: 18 u;
+- masa molowa H₂O: 18 g/mol.
+
+Liczby są takie same, ale wielkości i jednostki są różne.
+
+## 4 | Skład procentowy [[basic:E8]] {#procent}
+
+Skład procentowy mówi, jaka część masy związku przypada na poszczególne pierwiastki.
+
+Procent masowy pierwiastka $$X$$ obliczamy według wzoru:
+
+$$
+\%X=
+\frac{\text{masa wszystkich atomów }X\text{ we wzorze}}
+{\text{masa molowa związku}}
+\cdot100\%
+$$
+
+Jeżeli pierwiastek $$X$$ występuje we wzorze $$k$$ razy, to:
+
+$$
+\%X=
+\frac{k\cdot A_r(X)}{M\text{ związku}}\cdot100\%
+$$
+
+### 4.1 | Przykład: skład procentowy wody
+
+Wzór wody to H₂O.
+
+$$
+M(\mathrm{H_2O})=2\cdot1+16=18\text{ g/mol}
+$$
+
+Udział wodoru:
+
+$$
+\%H=\frac{2\cdot1}{18}\cdot100\%
+\approx11{,}1\%
+$$
+
+Udział tlenu:
+
+$$
+\%O=\frac{16}{18}\cdot100\%
+\approx88{,}9\%
+$$
+
+Sprawdzenie:
+
+$$
+11{,}1\%+88{,}9\%=100\%
+$$
+
+::: karta understand | Dlaczego suma powinna wynosić 100%?
+
+Masa związku składa się ze wszystkich mas pierwiastków obecnych we wzorze. Jeżeli obliczymy udziały wszystkich pierwiastków, ich suma powinna wynosić 100%.
+
+Niewielka różnica, np. 99,9% albo 100,1%, może wynikać z zaokrągleń. Większa różnica zwykle oznacza błąd w odczytaniu wzoru, obliczeniu masy molowej albo zaokrągleniu wyniku.
+
+:::
+
+### 4.2 | Stosunek masowy
+
+Stosunek masowy nie jest tym samym co stosunek liczby atomów.
+
+W CO₂:
+
+- jeden atom C ma masę względną 12;
+- dwa atomy O mają łączną masę $$2\cdot16=32$$.
+
+Stosunek masowy:
+
+$$
+m(\mathrm C):m(\mathrm O)=12:32=3:8
+$$
+
+Oznacza to, że na każde 3 części masy węgla przypada 8 części masy tlenu.
+
+### 4.3 | Masa pierwiastka w próbce
+
+Jeżeli znamy udział masowy pierwiastka, możemy obliczyć jego masę w konkretnej próbce.
+
+Ile gramów wodoru znajduje się w 90 g wody?
+
+Udział wodoru w wodzie wynosi:
+
+$$
+\frac{2}{18}
+$$
+
+Zatem:
+
+$$
+m(\mathrm H)=90\text{ g}\cdot\frac{2}{18}=10\text{ g}
+$$
+
+W 90 g wody znajduje się 10 g wodoru i 80 g tlenu.
+
+## 5 | Wzór empiryczny z procentów [[extra:AMBITNE (LO)]] {#empiryczny}
+
+>  Ten dział pozostaje w warstwie ambitnej, ale poniżej wyjaśniono dokładnie, dlaczego. Nie jest to element obowiązkowego egzaminu ósmoklasisty z chemii, ponieważ egzamin ósmoklasisty obejmuje język polski, matematykę i język obcy nowożytny, a nie chemię. Jest to jednak wartościowe rozszerzenie przygotowujące do dalszej nauki chemii. CKE informuje, że egzamin ósmoklasisty obejmuje trzy przedmioty: język polski, matematykę i język obcy nowożytny. 
+
+Wzór empiryczny otrzymujemy, gdy z procentów masowych wyznaczamy najprostszy stosunek liczby atomów poszczególnych pierwiastków.
+
+### 5.1 | Procedura
+
+1. Przyjmij, że masz 100 g związku.
+2. Procenty zamień na gramy.
+3. Każdą masę podziel przez masę atomową odpowiedniego pierwiastka.
+4. Otrzymane liczby podziel przez najmniejszą z nich.
+5. Zaokrąglij stosunek do małych liczb całkowitych.
+6. Zapisz wzór empiryczny.
+7. Sprawdź, czy stosunek jest rzeczywiście najprostszy.
+
+### 5.2 | Przykład prowadzony
+
+Związek zawiera:
+
+- 40% C;
+- 6,7% H;
+- 53,3% O.
+
+Przyjmujemy 100 g związku:
+
+- 40 g C;
+- 6,7 g H;
+- 53,3 g O.
+
+Obliczamy liczby moli atomów:
+
+$$
+n(\mathrm C)=\frac{40}{12}\approx3{,}33
+$$
+
+$$
+n(\mathrm H)=\frac{6{,}7}{1}=6{,}7
+$$
+
+$$
+n(\mathrm O)=\frac{53{,}3}{16}\approx3{,}33
+$$
+
+Dzielimy przez najmniejszą wartość, czyli około 3,33:
+
+$$
+\mathrm C:\mathrm H:\mathrm O
+=
+\frac{3{,}33}{3{,}33}:
+\frac{6{,}7}{3{,}33}:
+\frac{3{,}33}{3{,}33}
+$$
+
+$$
+\mathrm C:\mathrm H:\mathrm O\approx1:2:1
+$$
+
+Wzór empiryczny:
+
+$$
+\boxed{\mathrm{CH_2O}}
+$$
+
+### 5.3 | Gdy pojawia się liczba ułamkowa
+
+Czasami po podzieleniu przez najmniejszą wartość otrzymujemy np.:
+
+$$
+1:1{,}5:1
+$$
+
+Ponieważ indeksy muszą być całkowite, wszystkie liczby mnożymy przez 2:
+
+$$
+2:3:2
+$$
+
+Wzór empiryczny będzie miał wtedy postać:
+
+$$
+\mathrm{E_2F_3G_2}
+$$
+
+W praktyce nie należy zaokrąglać bezmyślnie. Wartości takie jak 1,49 lub 1,51 zwykle wskazują na stosunek 1,5, natomiast 1,20 może wskazywać na inną proporcję albo błąd w danych.
+
+### 5.4 | Od wzoru empirycznego do rzeczywistego
+
+Jeśli znamy masę molową związku, możemy ustalić, ile razy wzór rzeczywisty jest większy od empirycznego.
+
+Dla wzoru empirycznego CH₂O:
+
+$$
+M(\mathrm{CH_2O})=12+2\cdot1+16=30\text{ g/mol}
+$$
+
+Jeżeli rzeczywista masa molowa wynosi 180 g/mol:
+
+$$
+n=\frac{180}{30}=6
+$$
+
+Wzór rzeczywisty otrzymujemy, mnożąc wszystkie indeksy przez 6:
+
+$$
+\boxed{\mathrm{C_6H_{12}O_6}}
+$$
+
+### 5.5 | Odpowiedź na pytanie kontrolne
+
+Czy każdy związek o wzorze empirycznym CH₂O jest glukozą?
+
+Nie.
+
+Wzór empiryczny określa tylko najprostszy stosunek atomów. Możliwe wzory rzeczywiste to na przykład:
+
+- CH₂O;
+- C₂H₄O₂;
+- C₆H₁₂O₆;
+- C₁₂H₂₄O₁₂.
+
+Dopiero dodatkowa informacja, na przykład masa molowa, pozwala wybrać właściwy wzór rzeczywisty.
+
+## 6 | Wykład — wzór jest zapisem danych, nie obrazkiem [[understand:ROZUMIENIE]] {#wyklad}
+
+::: karta understand | Dlaczego chemicy liczą mole?
+
+Atomy i cząsteczki są bardzo małe, dlatego w laboratorium nie liczymy ich pojedynczo. Używamy mola, czyli jednostki liczności materii.
+
+Jeden mol zawiera około:
+
+$$
+6{,}02\cdot10^{23}
+$$
+
+cząstek. Ta liczba nosi nazwę liczby Avogadra.
+
+Masa jednego mola substancji to masa molowa. Dla wody:
+
+- jedna cząsteczka H₂O ma masę około 18 u;
+- jeden mol H₂O ma masę około 18 g.
+
+Zapis H₂O dostarcza więc informacji zarówno o budowie cząsteczki, jak i o proporcjach masowych pierwiastków.
+
+:::
+
+::: karta understand | Trzy pytania do każdego wzoru
+
+1. Czy jest to substancja jonowa, czy cząsteczkowa?
+2. Czy liczby dolne oznaczają liczbę atomów w cząsteczce, czy stosunek jonów w sieci?
+3. Jaką masę molową ma substancja?
+
+:::
+
+### 6.1 | Związek między wzorem, masą i procentami
+
+Dla wzoru H₂O:
+
+1. wzór mówi, że występują 2 atomy H i 1 atom O;
+2. masy atomowe pozwalają obliczyć $$M=18\text{ g/mol}$$;
+3. porównanie mas 2 g H i 16 g O pozwala obliczyć skład procentowy;
+4. procenty pozwalają sprawdzić, czy rachunek jest poprawny.
+
+@opis: Koło zależności: liczba atomów we wzorze → masa molowa → udziały procentowe → kontrola wzoru.
+
+### 6.2 | Dlaczego nie wolno mylić indeksu ze współczynnikiem?
+
+Porównaj:
+
+$$
+\mathrm{H_2O}
+$$
+
+i
+
+$$
+2\mathrm{H_2O}
+$$
+
+W pierwszym zapisie znajduje się jedna cząsteczka wody. W drugim — dwie cząsteczki wody.
+
+Indeks zmienia skład jednej cząsteczki. Współczynnik zmienia liczbę cząsteczek lub moli, ale nie zmienia rodzaju substancji.
+
+Dlatego:
+
+- H₂O to woda;
+- H₂O₂ to nadtlenek wodoru;
+- 2 H₂O to dwie cząsteczki wody.
+
+## 7 | Klinika błędów {#klinika}
 
 ::: klinika | Błąd | Poprawnie | Dlaczego?
-| CaOH₂ | Ca(OH)₂ | indeks 2 obejmuje całą grupę OH; bez nawiasu indeks dotyczy tylko H |
-| FeO₃ | Fe₂O₃ | W–K–S–K: 2·(+3) = 3·(−2) = +6 |
-| AlSO₄ | Al₂(SO₄)₃ | brak krzyżowania i brak nawiasu; potrzebne są 3 grupy SO₄ |
-| 3H₂O = 3 atomy H | 3H₂O = 6 atomów H | współczynnik mnoży wszystkie atomy wzoru |
-| Ca₂O₂ | CaO | skracamy do najmniejszej proporcji |
-| Zmiana indeksu, by zbilansować równanie | Zmieniaj tylko współczynniki | indeks zmienia substancję |
-| Wzór empiryczny jako cała cząsteczka | Wzór empiryczny to najprostszy stosunek | glukoza ma C₆H₁₂O₆, a nie CH₂O |
+
+| Błędne stwierdzenie | Poprawnie | Dlaczego? |
+|---|---|---|
+| „Wzór NaCl oznacza pojedynczą cząsteczkę NaCl.” | NaCl oznacza najprostszy stosunek jonów w sieci jonowej. | Kryształ jonowy nie składa się z oddzielnych cząsteczek NaCl. |
+| „Chlorek wapnia to CaCl.” | Chlorek wapnia ma wzór CaCl₂. | Jeden Ca²⁺ wymaga dwóch Cl⁻. |
+| „M(Ca(OH)₂) = 40 + 16 + 1 = 57.” | $$M=40+2\cdot(16+1)=74\text{ g/mol}$$. | Indeks za nawiasem mnoży cały nawias. |
+| „Procent tlenu w H₂O to 16%.” | Procent tlenu wynosi około 88,9%. | Trzeba podzielić masę tlenu przez masę całej cząsteczki lub mola. |
+| „H₂O₂ to dwie cząsteczki wody.” | H₂O₂ to jedna cząsteczka nadtlenku wodoru. | Dwie cząsteczki wody zapisujemy jako 2 H₂O. |
+| „CH₂O to glukoza.” | CH₂O jest wzorem empirycznym wielu związków. | Wzór empiryczny nie określa liczby powtórzeń stosunku. |
+| „Procenty 40 : 6,7 : 53,3 to liczby atomów.” | Procenty trzeba najpierw podzielić przez masy atomowe. | Procenty są udziałami masowymi, a nie liczebnościami atomów. |
+| „AlO jest wzorem tlenku glinu.” | Tlenek glinu ma wzór Al₂O₃. | Trzeba zbilansować ładunki Al³⁺ i O²⁻. |
+
 :::
 
-### 8.1 Klinika: przykład prowadzony
+::: karta error | Klinika — wzór empiryczny bez dzielenia przez masy atomowe
 
-Błąd: CaOH₂. Znajdź: brak nawiasu. Popraw: Ca(OH)₂. Reguła: nawias obejmuje całą grupę OH. Zadanie podobne: zapisz wzór wodorotlenku baru (Ba(OH)₂). Pułapka: NaOH nie ma nawiasu, bo jest tylko jedna grupa OH.
+Uczeń otrzymał:
 
-### 8.2 Klinika: indeks i współczynnik w praktyce
+- 40% C;
+- 6,7% H;
+- 53,3% O.
 
-Błąd: „3H₂O ma 3 atomy H”. Znajdź: współczynnik potraktowany jak indeks. Popraw: 3H₂O ma 6 atomów H i 3 atomy O, bo współczynnik mnoży cały wzór. Zadanie podobne: ile atomów tlenu jest w 2Fe₂O₃? (Odp.: 2 · 3 = 6.)
+Następnie zapisał:
 
-## 9 | Mnemotechniki {#mnemotechniki}
+$$
+\mathrm C:\mathrm H:\mathrm O=40:6{,}7:53{,}3
+$$
 
-::: karta understand | Sposoby pamięciowe
-W–K–S–K: **W**artościowości, **K**rzyżowanie, **S**kracanie, **K**ontrola. Kolejność jest ważna: kontrolę robisz na końcu.
-Nawias = pudełko na grupę. Gdy grupa się powtarza, włóż ją do nawiasu.
-Współczynniki tak, indeksy nie. Przy bilansowaniu zmieniasz tylko współczynniki.
-Wartościowości z pamięci: H–I, O–II, Al–III, C–IV.
+i uznał, że wzór jest podobny do C₄₀H₇O₅₃.
+
+To błąd. Procenty są masami. Aby otrzymać liczbę moli atomów, trzeba podzielić każdą masę przez masę atomową:
+
+$$
+\frac{40}{12}:\frac{6{,}7}{1}:\frac{53{,}3}{16}
+\approx3{,}33:6{,}7:3{,}33
+$$
+
+Po podzieleniu przez 3,33 otrzymujemy:
+
+$$
+1:2:1
+$$
+
+czyli CH₂O.
+
 :::
 
-## 10 | Przykłady krok po kroku {#przyklady}
+## 8 | Ćwiczenia {#cwiczenia}
 
-Każdy przykład rozwiąż najpierw sam, zanim zajrzysz do rozwiązania. Po rozwiązaniu wyjaśnij własnymi słowami, dlaczego wzór ma taki kształt.
+::: karta exam | A. Podstawa — wzory i masy
 
-### 10.1 Chlorek wapnia
+1. Zapisz wzór chlorku glinu, wiedząc, że glin tworzy jon Al³⁺, a chlor — jon Cl⁻.
+2. Oblicz masę molową NaOH. Przyjmij: Na = 23, O = 16, H = 1.
+3. Ile procent masy stanowi wodór w CH₄? Przyjmij: C = 12, H = 1.
 
-::: karta core | Rozwiązanie krok po kroku
-Krok 1. Ładunki: Ca²⁺ (+2), Cl⁻ (−1).
-Krok 2. Najmniejsza wspólna wielokrotność: 2. Potrzebny 1 kation i 2 aniony.
-Krok 3. Wzór: CaCl₂.
-Krok 4. Bilans: +2 + 2 · (−1) = 0.
-Pytanie do przemyślenia: dlaczego nie zapisujemy CaCl? (Odpowiedź: CaCl nie bilansuje ładunków.)
+::: odp | Pokaż odpowiedzi
+
+1. **AlCl₃**
+
+   $$
+   (+3)+3\cdot(-1)=0
+   $$
+
+2. **40 g/mol**
+
+   $$
+   M(\mathrm{NaOH})=23+16+1=40\text{ g/mol}
+   $$
+
+3. Najpierw obliczamy masę molową:
+
+   $$
+   M(\mathrm{CH_4})=12+4\cdot1=16\text{ g/mol}
+   $$
+
+   Następnie:
+
+   $$
+   \%H=\frac{4}{16}\cdot100\%=25\%
+   $$
+
+:::
 :::
 
-### 10.2 Siarczan(VI) glinu
+::: karta exam | B. Trening — procent i wzór
 
-::: karta core | Rozwiązanie krok po kroku
-Krok 1. Ładunki: Al³⁺ (+3), SO₄²⁻ (−2).
-Krok 2. Najmniejsza wspólna wielokrotność: 6. Potrzebne 2 kationy Al³⁺ i 3 grupy SO₄²⁻.
-Krok 3. Wzór: Al₂(SO₄)₃. Nawias jest potrzebny, bo grupa SO₄ występuje trzy razy.
-Krok 4. Policz atomy: 2 Al, 3 S, 12 O (3 · 4).
-Pytanie: dlaczego Al₂SO₁₂ jest błędny? (Odpowiedź: pomija nawias i miesza grupę siarczanową z pojedynczymi atomami.)
+1. Oblicz skład procentowy Na₂SO₄. Przyjmij: Na = 23, S = 32, O = 16.
+2. Związek zawiera 52,2% C, 13,0% H i 34,8% O. Wyznacz wzór empiryczny. Przyjmij: C = 12, H = 1, O = 16.
+
+::: odp | Pokaż odpowiedzi
+
+1. Masa molowa:
+
+   $$
+   M(\mathrm{Na_2SO_4})=2\cdot23+32+4\cdot16=142\text{ g/mol}
+   $$
+
+   Sód:
+
+   $$
+   \%Na=\frac{46}{142}\cdot100\%\approx32{,}4\%
+   $$
+
+   Siarka:
+
+   $$
+   \%S=\frac{32}{142}\cdot100\%\approx22{,}5\%
+   $$
+
+   Tlen:
+
+   $$
+   \%O=\frac{64}{142}\cdot100\%\approx45{,}1\%
+   $$
+
+   Kontrola:
+
+   $$
+   32{,}4\%+22{,}5\%+45{,}1\%=100\%
+   $$
+
+2. Przyjmujemy 100 g związku:
+
+   $$
+   n(\mathrm C)=\frac{52{,}2}{12}\approx4{,}35
+   $$
+
+   $$
+   n(\mathrm H)=\frac{13{,}0}{1}=13
+   $$
+
+   $$
+   n(\mathrm O)=\frac{34{,}8}{16}\approx2{,}18
+   $$
+
+   Dzielimy przez najmniejszą wartość, około 2,18:
+
+   $$
+   \mathrm C:\mathrm H:\mathrm O\approx2:6:1
+   $$
+
+   Wzór empiryczny:
+
+   $$
+   \boxed{\mathrm{C_2H_6O}}
+   $$
+
+:::
 :::
 
-### 10.3 Od wzoru sumarycznego do empirycznego
+::: adv | C. Ambitne — hydraty i stosunki | poziom ambitny
 
-::: karta core | Rozwiązanie krok po kroku
-Krok 1. Dane: C₂H₄O₂. Znajdź wspólny dzielnik liczb atomów: 2, 4, 2. Dzielnik to 2.
-Krok 2. Podziel: C₁H₂O₁, czyli CH₂O.
-Krok 3. Wyjaśnij własnymi słowami, co to znaczy. (Odpowiedź: najprostszy stosunek atomów C : H : O to 1 : 2 : 1, a nie cała cząsteczka.)
+1. Oblicz masę molową CuSO₄·5H₂O. Przyjmij: Cu = 63,5, S = 32, O = 16, H = 1.
+2. Dlaczego w zapisie hydratu kropka oznacza wodę związaną z kryształem, a nie zwykłe mnożenie wzorów?
+
+::: odp | Pokaż odpowiedzi
+
+1. Masa części CuSO₄:
+
+   $$
+   M(\mathrm{CuSO_4})=63{,}5+32+4\cdot16=159{,}5\text{ g/mol}
+   $$
+
+   Masa pięciu cząsteczek wody przypadających na jednostkę hydratu:
+
+   $$
+   5M(\mathrm{H_2O})=5\cdot18=90\text{ g/mol}
+   $$
+
+   Razem:
+
+   $$
+   M(\mathrm{CuSO_4\cdot5H_2O})=159{,}5+90=249{,}5\text{ g/mol}
+   $$
+
+   Jeżeli w zadaniu przyjęto Cu = 64, wynik wyniesie 250 g/mol. W arkuszu należy używać wartości podanych w tablicach lub w treści zadania.
+
+2. Kropka oznacza, że w strukturze krystalicznej występuje ustalona liczba cząsteczek wody przypadająca na jednostkę związku. Nie oznacza ona powstania jednej kowalencyjnej cząsteczki CuSO₄·5H₂O.
+
+:::
 :::
 
-## 11 | Ćwiczenia {#cwiczenia}
+::: karta exam | D. Zaawansowane — z procentów do wzoru rzeczywistego
 
-Rozwiązania podane są w sekcji „Odpowiedzi” na końcu lekcji. Najpierw spróbuj sam.
+Związek ma 85,7% C i 14,3% H, a jego masa molowa wynosi 28 g/mol. Wyznacz wzór empiryczny i rzeczywisty.
 
-### 11.1 Podstawa
+::: odp | Pokaż odpowiedź
 
-1. Zapisz wzory: tlenek magnezu, tlenek glinu, tlenek siarki(IV), tlenek azotu(V).
-2. Nazwij: Fe₂O₃, CuO, N₂O₅, P₂O₅.
-3. Zapisz wzory: chlorek sodu, chlorek wapnia, chlorek glinu.
-4. Zapisz wzory: wodorotlenek sodu, wodorotlenek wapnia, wodorotlenek glinu.
-5. Zapisz wzory: azotan(V) sodu, siarczan(VI) sodu, węglan wapnia.
+Przyjmujemy 100 g związku:
 
-### 11.2 Trening
+$$
+n(\mathrm C)=\frac{85{,}7}{12}\approx7{,}14
+$$
 
-6. Zapisz wzory: siarczan(VI) glinu, fosforan(V) wapnia, azotan(V) ołowiu(II).
-7. Zapisz wzory: wodorotlenek żelaza(II), wodorotlenek żelaza(III).
-8. Popraw: CaOH₂, FeO₃, AlSO₄.
-9. Zapisz wzór hydratu CuSO₄·5H₂O i podaj jego nazwę.
-10. Oblicz masy cząsteczkowe: H₂O, CO₂, H₂SO₄.
+$$
+n(\mathrm H)=\frac{14{,}3}{1}=14{,}3
+$$
 
-### 11.3 Ambitne
+Dzielimy przez 7,14:
 
-11. Zapisz wzory: manganian(VII) potasu, dichromian(VI) potasu.
-12. Zapisz wzory: wodorowęglan sodu, octan sodu.
-13. Narysuj wzór strukturalny: H₂O, CO₂, CH₄.
-14. Narysuj wzór elektronowy (kropkowy): H₂O, Cl₂, HCl.
-15. Wyjaśnij, dlaczego Ca(OH)₂ ma nawias, a NaOH nie.
+$$
+\mathrm C:\mathrm H\approx1:2
+$$
 
-### 11.4 Zaawansowane
+Wzór empiryczny:
 
-16. Co to hydrat? Podaj trzy przykłady.
-17. Oblicz masę molową CuSO₄·5H₂O.
-18. Ile atomów wodoru jest w 3Ca(OH)₂?
-19. Zapisz wzór azotanu(V) żelaza(III).
-20. Porównaj masę cząsteczkową H₂O i D₂O (ciężka woda, D = deuter).
+$$
+\mathrm{CH_2}
+$$
 
-### 11.5 Mieszanka powtórkowa
+Masa wzoru empirycznego:
 
-21. Co to indeks? Co to współczynnik?
-22. Zapisz wzór tlenku glinu.
-23. Kiedy używamy nawiasu?
-24. Jaka jest masa cząsteczkowa H₂O?
-25. Co zmienia się przy bilansowaniu równania: indeksy czy współczynniki?
+$$
+M(\mathrm{CH_2})=12+2=14\text{ g/mol}
+$$
 
-## 12 | Odpowiedzi do ćwiczeń {#odpowiedzi}
+Liczba powtórzeń:
 
-**Podstawa:** 1. MgO, Al₂O₃, SO₂, N₂O₅. 2. tlenek żelaza(III), tlenek miedzi(II), tlenek azotu(V), tlenek fosforu(V). 3. NaCl, CaCl₂, AlCl₃. 4. NaOH, Ca(OH)₂, Al(OH)₃. 5. NaNO₃, Na₂SO₄, CaCO₃.
+$$
+n=\frac{28}{14}=2
+$$
 
-**Trening:** 6. Al₂(SO₄)₃, Ca₃(PO₄)₂, Pb(NO₃)₂. 7. Fe(OH)₂, Fe(OH)₃. 8. Ca(OH)₂, Fe₂O₃, Al₂(SO₄)₃. 9. CuSO₄·5H₂O to pentahydrat siarczanu(VI) miedzi(II). 10. Mᵣ(H₂O) = 18, Mᵣ(CO₂) = 44, Mᵣ(H₂SO₄) = 98.
+Wzór rzeczywisty:
 
-**Ambitne:** 11. KMnO₄, K₂Cr₂O₇. 12. NaHCO₃, CH₃COONa. 13. H–O–H; O=C=O; H–C(–H)(–H)–H. 14. H:O:H (dwie wolne pary na tlenie); :Cl:Cl:; H:Cl:. 15. NaOH ma jedną grupę OH, więc bez nawiasu; Ca(OH)₂ ma dwie grupy OH, więc nawias.
+$$
+\boxed{\mathrm{C_2H_4}}
+$$
 
-**Zaawansowane:** 16. Związki z cząsteczkami wody w sieci, np. CuSO₄·5H₂O, Na₂CO₃·10H₂O, CaSO₄·2H₂O. 17. M(CuSO₄·5H₂O) = 159,6 + 5 · 18 = 249,6 g/mol. 18. 3 · 2 = 6 atomów H. 19. Fe(NO₃)₃. 20. M(H₂O) = 18, M(D₂O) = 2 · 2 + 16 = 20.
-
-**Mieszanka:** 21. Indeks zmienia skład, współczynnik liczbę jednostek. 22. Al₂O₃. 23. Gdy grupa atomów występuje więcej niż raz. 24. 18. 25. Współczynniki; indeksów nie zmieniamy.
-
-## 13 | Test {#test}
-
-::: test
-? Indeks w wzorze (np. H₂O) oznacza:
-+ liczbę atomów danego pierwiastka w jednostce wzoru
-- liczbę cząsteczek w równaniu
-- ładunek jonu
-- temperaturę reakcji
-! Indeks określa skład substancji; współczynnik przed wzorem określa liczbę jednostek.
-? Wzór CaCl₂ jest poprawny, ponieważ:
-+ dwa aniony Cl⁻ równoważą jeden kation Ca²⁺
-- Ca i Cl są w stosunku 1 : 1
-- wzór musi zawierać równą liczbę atomów każdego pierwiastka
-- chlor zawsze występuje w parze
-! Bilans ładunków: +2 + 2 · (−1) = 0.
-? W Al₂(SO₄)₃ liczba 3 za nawiasem oznacza:
-+ trzy grupy SO₄ w całym wzorze
-- trzy atomy siarki w jednej grupie
-- trzy kationy glinu
-- ładunek −3
-! Liczba za nawiasem mnoży wszystkie atomy w środku.
-? Wzór empiryczny glukozy (C₆H₁₂O₆) to:
-+ CH₂O
-- C₆H₁₂O₆
-- C₂H₄O
-- C₆H₁₂
-! Najprostszy całkowity stosunek atomów: 6 : 12 : 6 = 1 : 2 : 1.
-? Wzór sumaryczny C₂H₆O nie wystarcza, by rozróżnić:
-+ etanol i eter dimetylowy
-- wodę i tlen
-- chlorek sodu i chlorek wapnia
-- glukozę i fruktozę
-! Ten sam skład, inne połączenia: potrzebny jest wzór strukturalny.
+:::
 :::
 
-## 14 | Słownik {#slownik}
-
-::: slownik
-Wzór chemiczny :: zapis składu substancji za pomocą symboli pierwiastków, indeksów i nawiasów
-Indeks :: mała liczba u dołu, za symbolem; zmienia skład substancji
-Współczynnik :: liczba przed wzorem; zmienia liczbę jednostek w równaniu
-Jednostka wzoru :: najmniejszy zbiór jonów lub atomów opisujący skład substancji
-Bilans ładunków :: warunek, że suma ładunków w jednostce wzoru wynosi zero
-Grupa wieloatomowa :: zbiór atomów zachowujący się jak jeden jon, np. SO₄²⁻
-Wartościowość :: liczba wiązań tworzonych przez atom, zapisywana cyfrą rzymską bez znaku
-Ładunek jonu :: liczba elektronów oddanych lub przyjętych, zapisywana cyfrą arabską ze znakiem
-Stopień utlenienia :: umowna liczba opisująca stan elektronowy atomu, zapisywana cyfrą rzymską ze znakiem
-Wzór sumaryczny :: rodzaj i liczba atomów w jednostce wzoru
-Wzór strukturalny :: sposób połączenia atomów, kreskami między symbolami
-Wzór empiryczny :: najprostszy całkowity stosunek atomów w substancji
-Wzór Lewisa :: zapis wiązań i par elektronowych
-Mᵣ :: względna masa cząsteczkowa, suma Aᵣ atomów we wzorze
-Hydrat :: związek z cząsteczkami wody w sieci krystalicznej
-:::
-
-## 15 | Fiszki {#fiszki}
+## 9 | Fiszki {#fiszki}
 
 ::: fiszki
-Co pokazuje wzór chemiczny? | Skład substancji: rodzaj i proporcję atomów lub jonów | basic:wzory
-Czym różni się indeks od współczynnika? | Indeks zmienia substancję, współczynnik liczbę jednostek | basic:wzory
-Jak zbudować wzór związku jonowego? | Najmniejsza wspólna wielokrotność ładunków, bilans do zera | basic:jonowe
-Co oznacza nawias w Ca₃(PO₄)₂? | Liczba za nawiasem dotyczy wszystkich atomów w środku | basic:nawiasy
-Czym jest wzór empiryczny? | Najprostszym całkowitym stosunkiem atomów | basic:rodzaje
-Co pokazuje wzór strukturalny? | Sposób połączenia atomów kreskami | understand:rodzaje
-Dlaczego C₂H₆O nie wystarcza? | Pasuje do etanolu i eteru dimetylowego | understand:rodzaje
-Jaki jest wzór Al₂O₃? | Dwa jony Al³⁺ i trzy jony O²⁻ | understand:jonowe
-Co to jednostka wzoru? | Najmniejszy zbiór jonów opisujący skład kryształu | understand:jonowe
-Jaką masę ma jednostka Ca(OH)₂? | Mᵣ = 74 | basic:masy
-Co to hydrat? | Związek z cząsteczkami wody w sieci krystalicznej | basic:hydraty
+
+Wzór sumaryczny glukozy? | C₆H₁₂O₆ | basic:podstawa
+
+Wzór empiryczny glukozy? | CH₂O | basic:podstawa
+
+Wzór chlorku wapnia? | CaCl₂ | basic:podstawa
+
+Masa molowa H₂O? | 18 g/mol | basic:podstawa
+
+Co to wzór empiryczny? | Najprostszy stosunek liczb atomów pierwiastków w związku. | basic:podstawa
+
+Co oznacza indeks dolny? | Liczbę atomów pierwiastka lub powtórzeń grupy atomów we wzorze. | basic:podstawa
+
+Co oznacza współczynnik przed wzorem? | Liczbę cząsteczek, jednostek wzoru lub moli; mnoży cały wzór. | basic:podstawa
+
+Jak obliczyć $$n$$ dla wzoru rzeczywistego? | $$n=M/M(\text{wzoru empirycznego})$$. | understand:rozumienie
+
+Ile wynosi suma procentów składu? | Około 100%; drobna różnica może wynikać z zaokrągleń. | understand:rozumienie
+
+Dlaczego CH₂O nie wyznacza jednoznacznie substancji? | Wiele związków może mieć ten sam najprostszy stosunek atomów. | extra:ambitne
+
+Jak sprawdzić wzór związku jonowego? | Obliczyć sumę wszystkich ładunków; musi wynosić zero. | basic:podstawa
+
 :::
 
-## 16 | Mapa pojęć {#mapa}
+## 10 | Słownik {#slownik}
 
-::: drzewo
-Wzór chemiczny
-  Skład
-    Indeks (zmienia substancję)
-    Współczynnik (zmienia liczbę jednostek)
-    Nawias (grupa wieloatomowa)
-  Rodzaje wzorów
-    Sumaryczny
-    Strukturalny
-    Lewisa
-    Empiryczny
-  Zasady
-    Bilans ładunków = 0
-    W–K–S–K
-    Najmniejsza proporcja
-  Masy
-    Aᵣ, Mᵣ, masa jednostki wzoru
+::: slownik
+
+Wzór sumaryczny :: zapis rodzaju i liczby atomów w cząsteczce substancji cząsteczkowej
+
+Wzór rzeczywisty :: wzór pokazujący rzeczywistą liczbę atomów w cząsteczce
+
+Wzór empiryczny :: najprostszy stosunek liczb atomów pierwiastków w związku
+
+Wzór strukturalny :: zapis pokazujący sposób połączenia atomów wiązaniami
+
+Wzór półstrukturalny :: skrócony zapis pokazujący kolejność połączeń i grupy atomów
+
+Masa molowa :: masa jednego mola substancji, wyrażana w g/mol
+
+Masa cząsteczkowa :: suma mas atomowych atomów w jednej cząsteczce, wyrażana w u
+
+Skład procentowy :: udział masy każdego pierwiastka w całkowitej masie związku, wyrażany w %
+
+Mol :: jednostka liczności materii odpowiadająca około $$6{,}02\cdot10^{23}$$ cząstek
+
+Indeks dolny :: liczba atomów danego pierwiastka lub liczba powtórzeń grupy atomów
+
+Współczynnik stechiometryczny :: liczba stojąca przed wzorem, oznaczająca liczbę cząsteczek, jednostek wzoru lub moli
+
+Jon złożony :: jon zbudowany z kilku atomów, np. SO₄²⁻, OH⁻ lub NH₄⁺
+
+Hydrat :: związek zawierający ustaloną liczbę cząsteczek wody związanych w strukturze kryształu
+
 :::
 
-## 17 | Mosty {#mosty}
+## 11 | Test {#test}
 
-- Przed tą lekcją: F09 (wartościowość, ładunek, stopień utlenienia), F11.
-- Dalej: F13 i F17 (równania reakcji i obliczenia ze wzorów), N02–N08 (konkretne związki), R05 (mol i masa molowa).
+::: test
 
-## 18 | Ciekawostki {#ciekawostki}
+? Wzór empiryczny glukozy to:
 
-::: karta extra | Ta sama liczba atomów, inna substancja
-C₂H₆O to jeden wzór sumaryczny dla dwóch różnych związków: etanolu (alkohol w napojach) i eteru dimetylowego. Różnią się temperaturą wrzenia, choć mają ten sam skład. Dlatego chemia organiczna tak mocno opiera się na wzorach strukturalnych.
+- C₆H₁₂O₆
++ CH₂O
+- C₂H₆O
+- CH₄
+
+! Stosunek 6 : 12 : 6 po skróceniu wynosi 1 : 2 : 1.
+
+? Poprawny wzór chlorku żelaza(III) to:
+
+- FeCl₂
++ FeCl₃
+- Fe₃Cl
+- FeCl
+
+! Żelazo(III) ma ładunek +3, a trzy jony Cl⁻ równoważą ten ładunek.
+
+? Masa molowa CO₂, przy C = 12 i O = 16, wynosi:
+
+- 28 g/mol
++ 44 g/mol
+- 32 g/mol
+- 12 g/mol
+
+! $$12+2\cdot16=44\text{ g/mol}$$.
+
+? Procent wodoru w H₂O, przy H = 1 i O = 16, wynosi około:
+
+- 5,6%
+- 16%
++ 11,1%
+- 88,9%
+
+! $$\frac{2\cdot1}{18}\cdot100\%\approx11{,}1\%$$.
+
+? Która para zawiera poprawny wzór wynikający z ładunków?
+
++ Al₂O₃ dla Al³⁺ i O²⁻
+- AlO dla Al³⁺ i O²⁻
+- Al₃O₂ dla Al³⁺ i O²⁻
+- AlO₃ dla Al³⁺ i O²⁻
+
+! $$2\cdot(+3)+3\cdot(-2)=0$$.
+
+? Masa molowa Ca(OH)₂, przy Ca = 40, O = 16 i H = 1, wynosi:
+
+- 57 g/mol
++ 74 g/mol
+- 58 g/mol
+- 41 g/mol
+
+! $$40+2\cdot(16+1)=74\text{ g/mol}$$.
+
+? Wzór siarczanu(VI) sodu to:
+
+- NaSO₄
++ Na₂SO₄
+- Na₂SO₃
+- NaS
+
+! Dwa jony Na⁺ równoważą jeden jon SO₄²⁻.
+
+? Stosunek masowy węgla do tlenu w CO₂ wynosi:
+
++ 3 : 8
+- 1 : 2
+- 3 : 4
+- 12 : 16
+
+! $$12:32=3:8$$.
+
+? Który zapis oznacza dwie cząsteczki wody?
+
+- H₂O₂
++ 2 H₂O
+- H₄O
+- H₂O
+
+! Współczynnik 2 stoi przed całym wzorem i oznacza dwie cząsteczki H₂O.
+
+? Co trzeba zrobić najpierw podczas wyznaczania wzoru empirycznego z procentów?
+
+- Zapisać procenty jako indeksy.
++ Podzielić masy pierwiastków przez ich masy atomowe.
+- Pomnożyć wszystkie procenty przez 100.
+- Zsumować same wartości procentowe.
+
+! Procenty są udziałami masowymi, dlatego trzeba przeliczyć je na liczby moli atomów.
+
 :::
 
-::: karta extra | Kropka w wzorze hydratu
-CuSO₄·5H₂O ma niebieski kolor, a po podgrzaniu traci wodę i staje się biały. Kropka w zapisie oznacza, że pięć cząsteczek wody jest związanych w krysztale, a nie że to mnożenie. (do weryfikacji w podręczniku)
+## 12 | Ciekawostki {#ciekawostki}
+
+::: karta extra | Wzór empiryczny a rzeczywisty
+
+Glukoza ma wzór rzeczywisty C₆H₁₂O₆, ale najprostszy stosunek atomów węgla, wodoru i tlenu wynosi 1 : 2 : 1, dlatego jej wzór empiryczny to CH₂O.
+
+Z samych procentów można wyznaczyć wzór empiryczny. Aby otrzymać wzór rzeczywisty, trzeba znać dodatkowo masę molową albo inną informację o liczbie atomów w cząsteczce.
+
 :::
 
-::: karta extra | Skład a wzór
-Analiza składu procentowego pozwala ustalić wzór empiryczny, nawet gdy nie wiadomo, jaka jest cząsteczka. Dopiero dodatkowa informacja o masie pozwala przejść do wzoru sumarycznego. (ogólna wiedza chemiczna)
+::: karta extra | Dlaczego chemicy mówią „mol”, a nie „sztuka”?
+
+Mol to bardzo duża liczba cząstek: około $$6{,}02\cdot10^{23}$$. Dzięki temu można łączyć świat niewidocznych atomów z pomiarami wykonywanymi w laboratorium.
+
+Jeden mol wody ma masę około 18 g, a jeden mol sodu około 23 g.
+
 :::
 
-<!-- przywrócone z 3d5fd86 (przed przebudową), wartości mas poprawione -->
-## Diagnoza startowa
+::: karta extra | Ten sam wzór, dwie substancje
 
-1. Co to indeks dolny?
-2. Co to współczynnik?
-3. Kiedy używać nawiasu?
-4. Zapisz wzór tlenku glinu.
-5. Dlaczego Ca(OH)₂ ma nawias?
+Związki o takim samym wzorze sumarycznym, ale innym ułożeniu atomów, to **izomery**.
 
-**Odpowiedzi:**
-1. Liczba atomów w cząsteczce.
-2. Liczba cząsteczek w równaniu.
-3. Gdy grupa powtarza się > 1 raz.
-4. Al₂O₃.
-5. Bo OH⁻ występuje 2 razy.
+Etanol i eter dimetylowy mają ten sam wzór sumaryczny C₂H₆O, ale inną budowę:
 
----
+- etanol: CH₃–CH₂–OH;
+- eter dimetylowy: CH₃–O–CH₃.
 
----
+Różna budowa powoduje różne właściwości. Dlatego sam wzór sumaryczny nie zawsze wystarcza do opisania substancji — czasem potrzebny jest wzór strukturalny.
 
-## Sprawdzenie diagnostyczne
+:::
 
-Test nie jest celem lekcji. Wybierz tylko te zadania, które pokazują, czy uczeń opanował definicję, procedurę i kontrolę wyniku.
+::: karta extra | Wzory hydratów
 
-1. Zapisz wzory: tlenek wapnia, tlenek żelaza(III), tlenek siarki(VI).
-2. Nazwij: Al₂O₃, N₂O₅, CuO, SO₂.
-3. Zapisz wzory: wodorotlenek wapnia, wodorotlenek glinu, siarczan(VI) sodu.
-4. Popraw: CaOH₂; FeO₃; AlSO₄.
-5. Oblicz masę cząsteczkową H₂O i H₂SO₄.
-6. (extra) Co to hydrat? Podaj przykład.
-7. (extra) Zapisz wzór azotanu(V) ołowiu(II).
-8. (extra) Ile atomów tlenu jest w 2Al₂(SO₄)₃?
+Wzór CuSO₄·5H₂O oznacza hydrat, w którym na jedną jednostkę CuSO₄ przypada pięć cząsteczek wody związanych w strukturze kryształu.
 
----
+Kropka nie oznacza zwykłego mnożenia wzorów w sensie tworzenia jednej cząsteczki kowalencyjnej. Informuje o ustalonym stosunku składników w hydracie.
 
----
+:::
 
-## Checklista
+## 13 | Checklista — umiem… {#checklista}
 
-| Temat | Musisz umieć |
-|-------|--------------|
-| Wzór sumaryczny | definicja, przykłady |
-| Wzór strukturalny | definicja, przykłady |
-| Wzór elektronowy | definicja, przykłady |
-| Indeks, współczynnik, nawias | rozróżnienie |
-| W–K–S–K | algorytm |
-| Grupy atomów | wartościowości, przykłady |
-| Masa cząsteczkowa | obliczanie |
-| Hydraty | zapis, przykłady (ambitnie) |
+::: checklista
 
----
+- [ ] odczytać wzór sumaryczny;
+- [ ] odróżnić wzór sumaryczny od empirycznego;
+- [ ] rozpoznać wzór strukturalny i półstrukturalny;
+- [ ] odróżnić indeks dolny od współczynnika;
+- [ ] zbudować wzór związku jonowego z ładunków;
+- [ ] sprawdzić, czy suma ładunków wynosi zero;
+- [ ] obliczyć masę molową;
+- [ ] poprawnie uwzględnić nawiasy we wzorze;
+- [ ] obliczyć skład procentowy;
+- [ ] obliczyć stosunek masowy pierwiastków;
+- [ ] obliczyć masę pierwiastka w próbce;
+- [ ] wyznaczyć wzór empiryczny z procentów;
+- [ ] obliczyć wzór rzeczywisty z masy molowej.
 
----
+:::
 
-## Definicje jednym zdaniem
+::: karta core | Na jednej stronie
 
-| Pojęcie | Definicja |
-|---------|-----------|
-| Wzór sumaryczny | Zapis liczby atomów pierwiastków w substancji. |
-| Wzór strukturalny | Zapis połączeń między atomami. |
-| Indeks dolny | Liczba atomów w cząsteczce. |
-| Współczynnik | Liczba cząsteczek w równaniu. |
-| Grupa atomów | Kilka atomów działających jak jeden klocek. |
-| Hydrat | Sól z wodą krystalizacyjną. |
+- wzór sumaryczny = rzeczywista liczba atomów w cząsteczce;
+- wzór empiryczny = najprostszy stosunek atomów;
+- wzór strukturalny = sposób połączenia atomów;
+- związek jonowy = suma ładunków równa zero;
+- $$M$$ = suma mas atomowych uwzględniająca indeksy;
+- $$\%X=\frac{k\cdot A_r(X)}{M}\cdot100\%$$;
+- stosunek masowy = liczba atomów · masa atomowa;
+- z procentów: przyjmij 100 g, podziel przez masy atomowe, podziel przez najmniejszą wartość;
+- wzór rzeczywisty: $$n=M/M(\text{wzoru empirycznego})$$.
+
+:::
 
 ---
 
----
+# AUDYT W1 — potwierdzenie punktów audytu 12
 
-## Szybka ściąga do wydruku
+## Punkt 1: wzór empiryczny
 
-```
-WZORY CHEMICZNE
-SUMARYCZNY: H₂O, CO₂, Al₂O₃, Ca(OH)₂
-STRUKTURALNY: H–O–H, O=C=O
-ELEKTRONOWY: H:O:H, :Cl:Cl:
+**Decyzja: potwierdzam przeniesienie do warstwy ambitnej.**
 
-W–K–S–K:
-1. Wartościowości (I, II, III, IV...)
-2. Krzyżowanie
-3. Skracanie (NWD)
-4. Kontrola (suma ładunków = 0)
+Wzór empiryczny z analizy procentowej pozostaje w sekcji [[extra:AMBITNE (LO)]], ponieważ:
 
-INDEKS vs WSPÓŁCZYNNIK vs NAWIAS:
-- indeks: H₂O (2 atomy H)
-- współczynnik: 3H₂O (3 cząsteczki = 6 H)
-- nawias: Ca(OH)₂ (2 całe grupy OH)
+- wymaga kilkuetapowego przeliczenia procentów na masy, a następnie na liczby moli atomów;
+- wymaga operowania stosunkiem liczbowym i zaokrąglaniem;
+- jest naturalnym rozszerzeniem pojęcia wzoru empirycznego;
+- wykracza poza podstawowe umiejętności potrzebne do prostego odczytywania wzorów i obliczania masy molowej.
 
-GRUPY ATOMÓW:
-OH⁻ (I), NO₃⁻ (I), SO₄²⁻ (II), CO₃²⁻ (II),
-PO₄³⁻ (III), NH₄⁺ (I)
+Nie usunięto tego materiału, ponieważ jest dydaktycznie wartościowy i przygotowuje do dalszej nauki chemii.
 
-MASY:
-H₂O = 18 u; CO₂ = 44 u; NaCl = 58,5 u;
-H₂SO₄ = 98 u; Ca(OH)₂ = 74 u; Al₂O₃ = 102 u
+## Punkt 2: procenty przeniesione do `[[extra]]` §5
 
-PUŁAPKI:
-- CaOH₂ ✗ → Ca(OH)₂ ✓
-- FeO₃ ✗ → Fe₂O₃ ✓
-- AlSO₄ ✗ → Al₂(SO₄)₃ ✓
-- Ca₂O₂ ✗ → CaO ✓
-```
+**Decyzja: częściowo odrzucona jako opis zakresu.**
 
----
+Sam dział o **składzie procentowym na podstawie podanego wzoru** pozostaje w minimum, ponieważ jest ważnym zastosowaniem masy molowej i wzoru chemicznego.
 
----
+Natomiast dział o **wyznaczaniu wzoru empirycznego z procentów** pozostaje w warstwie ambitnej.
 
-## Źródła
+Wprowadzono doprecyzowanie, że nie należy opisywać tego zakresu jako elementu obowiązkowego egzaminu ósmoklasisty z chemii. CKE wskazuje, że egzamin ósmoklasisty obejmuje język polski, matematykę i język obcy nowożytny, a nie chemię.
 
-- ZPE, „Interpretacja zapisów chemicznych”: indeks stechiometryczny, współczynnik, zapis związku jonowego jako najmniejszego zbioru jonów obojętnego elektrycznie, przykłady AlCl₃, K₂S, NaCl, nawias w Ca₃(PO₄)₂. Adres: https://zpe.gov.pl/a/interpretacja-zapisow-chemicznych/D1aAjQsf
-- Do uzupełnienia przy W1 FULL: definicje wzoru strukturalnego, Lewisa i empirycznego (źródło ZPE ich nie podaje — napisane z ogólnej wiedzy chemicznej), ciekawostka o CuSO₄·5H₂O.
+## Liczby poprawione lub zweryfikowane
 
-## AUDYT W1 — poprzedni (Perplexity, 2026-10-09) — zachowany
+- H₂O: $$M=18\text{ g/mol}$$.
+- CO₂: $$M=44\text{ g/mol}$$.
+- NaCl: $$M=58{,}5\text{ g/mol}$$, przy Na = 23 i Cl = 35,5.
+- H₂SO₄: $$M=98\text{ g/mol}$$.
+- Ca(OH)₂: $$M=74\text{ g/mol}$$.
+- Procent tlenu w H₂O: około 88,9%.
+- Procent wodoru w H₂O: około 11,1%.
+- Stosunek masowy C : O w CO₂: 3 : 8.
+- Masa wodoru w 90 g wody: 10 g.
+- Wzór empiryczny związku zawierającego 40% C, 6,7% H i 53,3% O: CH₂O.
+- Wzór rzeczywisty przy masie molowej 180 g/mol: C₆H₁₂O₆.
+- CuSO₄·5H₂O: 249,5 g/mol przy Cu = 63,5; 250 g/mol przy Cu = 64.
+- W zadaniu dotyczącym hydratu należy stosować wartości mas atomowych podane w treści lub tablicach.
 
-Źródło: `chemia/plany/audyty/W1_perplexity_F07-F14₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu. Uwaga przy scalaniu: w kluczu zadania 4 zamiast „dwutlenek węgla” używać nazwy „tlenek węgla(IV)”.
+## Pozostałe zmiany
 
-Poprawki z tego audytu, wszystkie uwzględnione w tej wersji:
-- Indeks dolny opisuje liczbę atomów danego pierwiastka w cząsteczce lub najmniejszej jednostce wzoru (§2.1).
-- Współczynnik przed wzorem zmienia liczbę cząsteczek, jednostek wzoru lub moli (§2.2).
-- Nie wolno zmieniać indeksów podczas bilansowania równania (§2.1, §8).
-- Nawias stosuje się, gdy grupa atomów występuje więcej niż raz (§4.1).
-- CaOH₂ jest błędny; poprawny zapis to Ca(OH)₂ (§8).
-- AlSO₄ jest błędny dla siarczanu glinu; poprawny zapis to Al₂(SO₄)₃ (§8).
-- Na₂O oznacza stosunek 2 : 1 atomów Na do O w jednostce wzoru (§3.1).
-- 2NaOH oznacza dwie jednostki wzoru NaOH, nie nową substancję (§2.2).
-- W związku jonowym indeksy wynikają z obojętności elektrycznej jednostki wzoru (§3.2).
-- Wzór sumaryczny nie pokazuje zawsze sposobu połączenia atomów (§5).
-- Metoda krzyżowa dla Al³⁺ i O²⁻: najmniejsza wspólna wielokrotność 6, Al₂O₃ (§3.2).
-- Redukcja indeksów: Ca₂O₂ → CaO (§3.2).
-
-## AUDYT W1 — Claude Haiku 5.5, 2026-10-12 (wersja 3, scalenie)
-
-**Co zrobiono:** scalono wersję 2 (lekcja od zera) z treścią poprzedniej wersji MASTER: przywrócono ściągę (algorytm W–K–S–K — poprawione nazwy: Wartościowości, Krzyżowanie, Skracanie, Kontrola), tabelę grup wieloatomowych, hydraty, masy względne, doświadczenia modelowe, klinikę z przykładami, ćwiczenia A–D (20 zadań z odpowiedziami) i mieszankę powtórkową, mnemotechniki, mapę pojęć, słownik rozszerzony o terminy z F09.
-
-**Poprawka względem wersji 2:** mnemotechnika W–K–S–K w wersji 2 miała błędne znaczenie liter („Wiem, Krzyżuję, Sprawdzam, Kontroluję”). Wersja 3 używa właściwego ciągu: Wartościowości, Krzyżowanie, Skracanie, Kontrola.
-
-**Usunięto lub przeniesiono (zatwierdzone 2026-10-12):** zatwierdzone: w lekcji nie ma już: changelogu MASTER v2.5–v3.1, sekcji „Parser”, „Wizualizacja V010v001”, „Warstwy/Poziomy”, „Dodatki C/D/E”, „System powtórek”, „10 zasad supernauki”, „Szybka ściąga do wydruku” (dublująca §6), „Definicje jednym zdaniem” (dublująca słownik), „Diagnoza” i „Sprawdzenie diagnostyczne” (zastąpione przypomnieniem). Pełna poprzednia wersja: `chemia/plany/F12_materialy_robocze_v1.md`. Mnemotechniki o BHP, kwasach, rozpuszczalności, redoksie i spalaniu przeniesiono do lekcji, których dotyczą (CHE.00.LAB, N04, R02, X, REV02, F09). Treść „Wartościowość — model szkolny” z L001 już jest w F09.
-
-**Do W1 FULL:** recenzent sprawdza definicje wzorów strukturalnego, Lewisa i empirycznego, ciekawostkę o hydracie oraz poprawność odpowiedzi w ćwiczeniach.
+- Dodano pełne rozróżnienie wzoru sumarycznego, rzeczywistego, empirycznego, strukturalnego i półstrukturalnego.
+- Dodano wyjaśnienie różnicy między indeksem dolnym a współczynnikiem.
+- Dodano opis słowny każdej wizualizacji oznaczony `@opis`.
+- Rozszerzono procedurę budowania wzorów związków jonowych.
+- Dodano kontrolę poprawności przez sumę ładunków.
+- Doprecyzowano różnicę między masą cząsteczkową a masą molową.
+- Dodano informację, że wynik 100% może różnić się nieznacznie przez zaokrąglenia.
+- Poprawiono i ujednolicono wyjaśnienie hydratu.
+- Rozszerzono test o indeksy, współczynniki i wzór empiryczny.
+- Nie dodano limitów czasu, planu dziennego, pracy domowej ani notatek dla nauczyciela.
+- Nie dodano niezweryfikowanych linków ani źródeł.
+- Niepewne różnice terminologiczne dotyczące nazewnictwa jonów tlenowych oznaczono jako zależne od przyjętej konwencji szkolnej.
