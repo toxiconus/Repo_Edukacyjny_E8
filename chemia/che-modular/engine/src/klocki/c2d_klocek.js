@@ -8,7 +8,8 @@
      kwas="1"               0 = bez pierścienia przy kwaśnym H
      walencja="0"           1 = czerwona kropka przy atomie o niezgodnej walencji
      interaktywny="0"       1 = klik/Enter na atom: opis (sąsiedzi, σ/π, geometria), Esc czyści
-   Zależności (kolejność w manifeście): klocki.js, pomocnicze.js, c2d_core.js, c2d_grupy.js, c2d_wzor.js, c2d_klocek.js */
+   Domyślnie rysuje c2d_prosta.js (prosty renderer). Opcje kulki/kat/pary/walencja/interaktywny włączają renderer v3 (c2d_wzor.js).
+   Zależności (kolejność w manifeście): klocki.js, pomocnicze.js, c2d_core.js, c2d_grupy.js, c2d_wzor.js, c2d_prosta.js, c2d_klocek.js */
 (function () {
   function esc(t) { return String(t).replace(/[&<>"]/g, function (c) { return {'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]; }); }
   var KROTNOSC = {1: 'pojedyncze σ', 2: 'podwójne σ+π', 3: 'potrójne σ+2π'};
@@ -21,6 +22,16 @@
       var g = String(opc.grupa || 'all').trim(), grupy = g;
       if (g !== 'all' && g !== 'none') grupy = g.split(',').map(function (x) { return x.trim(); }).filter(Boolean);
       var inter = opcjaWlaczona(opc.interaktywny), m, base;
+      // domyślnie: prosty renderer (wszystkie atomy, czytelny zygzak); dodatki v3 tylko na żądanie
+      var lekki = !opcjaWlaczona(opc.kulki) && !opcjaWlaczona(opc.kat) && !opcjaWlaczona(opc.pary) && !inter && !opcjaWlaczona(opc.walencja);
+      if (lekki && window.C2DP) {
+        host.innerHTML = '';
+        var d = document.createElement('div');
+        d.setAttribute('data-wzor', String(opc.smiles || 'CC(=O)O'));
+        window.C2DP.rysuj(d);
+        host.appendChild(d);
+        return;
+      }
       try {
         m = window.C2D.uklad(window.C2D.parse(String(opc.smiles || 'CC(=O)O')));
       } catch (e) {

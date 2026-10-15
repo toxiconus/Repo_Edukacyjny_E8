@@ -23,7 +23,8 @@
         "c2d_wzor.js": "rysunek 2D: szkielet (domyślnie), model kulkowy, kąty, wolne pary, ramki grup",
         "c2d_klocek.js": "klocek wzor-2d: wzór strukturalny z SMILES, opcja grupa=..., kulki, kat, pary",
         "palnik_gazowy.js": "palnik gazowy (metan): płomień, zlewka odwrócona z kroplami H₂O, kontrolna, woda wapienna (LKO-ORG01 §5)",
-        "bilans_spalania.js": "bilans spalania całkowitego alkanu CₙH₂ₙ₊₂: współczynniki i bilans atomów C, H, O (LKO-ORG01 §2)"
+        "bilans_spalania.js": "bilans spalania całkowitego alkanu CₙH₂ₙ₊₂: współczynniki i bilans atomów C, H, O (LKO-ORG01 §2)",
+        "c2d_prosta.js": "prosty renderer wzorów 2D (z molekula_prosta): wszystkie atomy, zygzak, ramki grup; domyślny dla wzor-2d"
     },
     "lekcje": {
         "P01": [
@@ -96,6 +97,7 @@
             "c2d_core.js",
             "c2d_grupy.js",
             "c2d_wzor.js",
+            "c2d_prosta.js",
             "c2d_klocek.js"
         ],
         "LKO-ORG04": [
@@ -105,6 +107,7 @@
             "c2d_core.js",
             "c2d_grupy.js",
             "c2d_wzor.js",
+            "c2d_prosta.js",
             "c2d_klocek.js"
         ],
         "LKO-PUŁAPKI-WAPNO": [
@@ -118,6 +121,7 @@
             "c2d_core.js",
             "c2d_grupy.js",
             "c2d_wzor.js",
+            "c2d_prosta.js",
             "c2d_klocek.js"
         ],
         "LKO-ORG03": [
@@ -126,6 +130,7 @@
             "c2d_core.js",
             "c2d_grupy.js",
             "c2d_wzor.js",
+            "c2d_prosta.js",
             "c2d_klocek.js"
         ],
         "LKO-ORG06": [
@@ -134,6 +139,7 @@
             "c2d_core.js",
             "c2d_grupy.js",
             "c2d_wzor.js",
+            "c2d_prosta.js",
             "c2d_klocek.js"
         ],
         "LKO-ORG01": [
@@ -142,6 +148,7 @@
             "c2d_core.js",
             "c2d_grupy.js",
             "c2d_wzor.js",
+            "c2d_prosta.js",
             "c2d_klocek.js",
             "bilans_spalania.js",
             "palnik_gazowy.js"
@@ -152,6 +159,7 @@
             "c2d_core.js",
             "c2d_grupy.js",
             "c2d_wzor.js",
+            "c2d_prosta.js",
             "c2d_klocek.js"
         ]
     },
