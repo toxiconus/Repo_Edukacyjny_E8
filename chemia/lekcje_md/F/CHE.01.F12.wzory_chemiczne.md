@@ -79,10 +79,10 @@ W zadaniach warto stosować stały schemat:
 - odczytać wzór sumaryczny, empiryczny i strukturalny;
 - odróżnić wzór sumaryczny od empirycznego;
 - zapisać wzór związku jonowego na podstawie ładunków jonów;
-- obliczyć masę molową;
-- obliczyć skład procentowy związku;
-- obliczyć stosunek masowy pierwiastków;
-- obliczyć masę pierwiastka w próbce;
+- obliczyć masę molową (E8+LO);
+- obliczyć skład procentowy związku (E8+LO);
+- obliczyć stosunek masowy pierwiastków (E8+LO);
+- obliczyć masę pierwiastka w próbce (E8+LO);
 - wyznaczyć wzór empiryczny z procentów (poziom ambitny);
 - obliczyć wzór rzeczywisty na podstawie wzoru empirycznego i masy molowej (poziom ambitny).
 
@@ -938,13 +938,13 @@ $$
 
 Wzór sumaryczny glukozy? | C₆H₁₂O₆ | basic:podstawa
 
-Wzór empiryczny glukozy? | CH₂O | basic:podstawa
+Wzór empiryczny glukozy? | CH₂O | extra:LO
 
 Wzór chlorku wapnia? | CaCl₂ | basic:podstawa
 
-Masa molowa H₂O? | 18 g/mol | basic:podstawa
+Masa molowa H₂O? | 18 g/mol | extra:LO
 
-Co to wzór empiryczny? | Najprostszy stosunek liczb atomów pierwiastków w związku. | basic:podstawa
+Co to wzór empiryczny? | Najprostszy stosunek liczb atomów pierwiastków w związku. | extra:LO
 
 Co oznacza indeks dolny? | Liczbę atomów pierwiastka lub powtórzeń grupy atomów we wzorze. | basic:podstawa
 

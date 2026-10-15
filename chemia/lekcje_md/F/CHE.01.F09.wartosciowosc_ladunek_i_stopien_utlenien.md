@@ -6,7 +6,7 @@ opis: Trzy różne liczby, które łatwo pomylić · ładunek jonu · wartościo
 kicker: F09 · FUNDAMENTY · NOWA WERSJA
 lead: „Ile wiązań tworzy atom?”, „jaki ma ładunek?”, „jaki ma stopień utlenienia?” — w szkole te trzy pytania często są mieszane. Ta lekcja rozdziela je i pokazuje, kiedy która liczba jest właściwa.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
-stan: "pełna struktura — 2026-10-15, audyt W1 wprowadzony (odp. zewn. 12), do weryfikacji W2"
+stan: "pełna struktura — 2026-10-15, audyt W1 wprowadzony (odp. zewn. 12), W2 wykonany, decyzja (b): etykiety E8+LO"
 stopka: **CHEMIA F09 v1.2** · Wartościowość, ładunek, stopień utlenienia · 2026
 ---
 
@@ -67,9 +67,9 @@ Następnie przejdź do przykładów. Przy każdym obliczeniu stosuj procedurę:
 - odróżnić ładunek, wartościowość i stopień utlenienia;
 - obliczyć ładunek jonu na podstawie liczby protonów i elektronów;
 - rozpoznać wartościowość atomu w prostym schemacie związku;
-- wyznaczyć stopień utlenienia pierwiastka w cząsteczce i jonie wieloatomowym;
+- wyznaczyć stopień utlenienia pierwiastka w cząsteczce i jonie wieloatomowym (E8+LO);
 - zastosować regułę sumy;
-- wskazać wyjątki dotyczące tlenu i wodoru;
+- wskazać wyjątki dotyczące tlenu i wodoru (E8+LO);
 - wyjaśnić, dlaczego stopień utlenienia nie jest tym samym co rzeczywisty ładunek atomu.
 :::
 
@@ -958,13 +958,13 @@ Co oznacza zapis Mg²⁺? | rzeczywisty jon magnezu o ładunku +2 | basic:podsta
 
 Stopień utlenienia pierwiastka w stanie wolnym? | 0 | basic:podstawa
 
-Stopień utlenienia F w związkach? | −I | basic:podstawa
+Stopień utlenienia F w związkach? | −I | extra:LO
 
-Stopień utlenienia O w większości związków? | −II | basic:podstawa
+Stopień utlenienia O w większości związków? | −II | extra:LO
 
-Stopień utlenienia O w nadtlenku H₂O₂? | −I | basic:podstawa
+Stopień utlenienia O w nadtlenku H₂O₂? | −I | extra:LO
 
-Stopień utlenienia H w większości związków? | +I | basic:podstawa
+Stopień utlenienia H w większości związków? | +I | extra:LO
 
 Stopień utlenienia H w NaH? | −I | understand:rozumienie
 

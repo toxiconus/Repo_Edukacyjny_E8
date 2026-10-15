@@ -227,3 +227,5 @@
 - 2026-10-15: klocek wzor-2d (c2d): opcje dodatkowe walencja=1 i interaktywny=1 (klik/Enter na atom: sąsiedzi, σ/π, geometria; Esc czyści). Domyślny wynik bez zmian (porównanie z HEAD, 8 cząsteczek).
 - 2026-10-15: wzor-2d domyślnie renderuje prostym rendererem (c2d_prosta.js z molekula_prosta); opcje v3 (kulki, kat, pary, walencja, interaktywny) nadal na renderze c2d_wzor. Lekcje LKO przebudowane, bez błędów.
 - 2026-10-15: ORG01 — bilans-spalania i palnik-gazowy z wersji Sonneta (paleta, animacja, zlewka odwrócona, palnik gazowy w ciemnym laboratorium); montuj: animacje startują (grane=false, start przez IO); wzor-2d domyślnie prosty renderer z CSS wstrzykiwanym przez c2d_prosta.js.
+
+- 2026-10-15: F09, F12 — etykiety fiszek i celów zgodnie z decyzją (b): stopnie utlenienia, masa molowa, skład procentowy → extra:E8+LO; stan F09 zaktualizowany (W2 wykonany). HTML przebudowany (zbuduj_wszystkie che).
