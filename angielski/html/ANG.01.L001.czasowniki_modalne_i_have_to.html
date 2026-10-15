@@ -1,0 +1,2410 @@
+<!DOCTYPE html>
+<html lang="pl" data-przedmiot="ang">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>L001 · </title>
+<style id="lekcja-css">
+/* baza.css — wspólna baza lekcji wszystkich przedmiotów (styl lekcji silnika CHE v0_57). Nie edytować — zmiany wspólne w ulepszenia.css, przedmiotowe w motywy/<kod>.css. */
+
+
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+--bg:#fafbfc;--surface:#ffffff;--surface-soft:#f6f8fa;--surface-warm:#fdfaf4;--border:#e5e9ee;--border-strong:#cdd5dd;
+--text:#1a2332;--text-soft:#4a5568;--text-muted:#8892a0;--text-faint:#b4bcc6;
+--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,0.15);
+--c-basic:#2e7d4f;--c-basic-bg:#eaf6ee;--c-basic-line:#b8dcc4;
+--c-understand:#2b5e9c;--c-understand-bg:#eaf1f9;--c-understand-line:#bcd0e5;
+--c-warn:#b06f1c;--c-warn-bg:#fcf4e6;--c-warn-line:#eed8a8;
+--c-error:#b83a45;--c-error-bg:#fbeced;--c-error-line:#e8b5b9;
+--c-extra:#6b3fa0;--c-extra-bg:#f3ecfa;--c-extra-line:#d3bde8;
+--c-new:#0d7d7d;--c-new-bg:#e6f4f4;--c-new-line:#b0dcdc;
+--c-exam:#a86a00;--c-exam-bg:#fdf5e0;--c-exam-line:#eed49c;
+--sh-sm:0 1px 2px rgba(26,35,50,0.04);--sh-md:0 4px 12px rgba(26,35,50,0.06);--sh-lg:0 12px 32px rgba(26,35,50,0.10);--sh-xl:0 20px 48px rgba(26,35,50,0.14);
+--r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;
+--header-h:56px;
+--ease:cubic-bezier(0.4,0,0.2,1);--ease-out:cubic-bezier(0.16,1,0.3,1);
+--hl-key:#0d6868;--hl-key-bg:#d8ecea;--hl-warn:#b83a45;--hl-warn-bg:#fbe0e2;--hl-new:#6b3fa0;--hl-new-bg:#ede0f8;--hl-formula:#084848;--hl-formula-bg:#e0eeed;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;padding:calc(var(--header-h) + 12px) 0 88px;min-height:100vh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+@media(min-width:600px){body{padding:calc(var(--header-h) + 18px) 12px 96px;}}
+@media(min-width:768px){body{padding:calc(var(--header-h) + 24px) 20px 100px;}}
+@media(min-width:1100px){body{padding:calc(var(--header-h) + 28px) 32px 110px;}}
+.fab{position:fixed;top:12px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);background:rgba(255,255,255,0.94);color:var(--text);cursor:pointer;border-radius:var(--r-md);padding:0;transition:all 0.2s var(--ease);z-index:1200;box-shadow:var(--sh-sm);backdrop-filter:blur(8px);}
+.fab:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);box-shadow:var(--sh-md);transform:translateY(-1px);}
+.fab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.fab-left{left:6px;}.fab-right{right:6px;}
+@media(min-width:600px){.fab-left{left:10px;}.fab-right{right:10px;}}
+@media(min-width:768px){.fab-left{left:14px;}.fab-right{right:14px;}}
+.fab-left::after{content:'';width:16px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;border-radius:1px;transition:transform 0.25s var(--ease);}
+.fab-left.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.fab-left.is-open::after{width:16px;height:2px;background:currentColor;box-shadow:none;transform:rotate(45deg);}
+.fab-left.is-open::before{content:'';position:absolute;width:16px;height:2px;background:currentColor;transform:rotate(-45deg);border-radius:1px;}
+.fab-right::after{content:'';display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:8px solid currentColor;transition:transform 0.35s var(--ease-out);}
+.fab-right.is-hidden::after{transform:rotate(0deg);}
+.fab-right:not(.is-hidden)::after{transform:rotate(180deg);}
+.header-wrapper{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);transform:translateY(0);transition:transform 0.45s var(--ease-out),box-shadow 0.3s var(--ease);box-shadow:var(--sh-sm);}
+.header-wrapper.is-hidden{transform:translateY(-100%);box-shadow:none;}
+.header-bar{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:0 16px;height:var(--header-h);}
+@media(min-width:768px){.header-bar{padding:0 24px;}}
+.header-subject{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:1px;padding:4px 10px;background:var(--accent-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;}
+.header-title{font-size:15px;font-weight:700;color:var(--text);letter-spacing:-0.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1 1 auto;min-width:0;}
+.header-lesson{font-size:10px;font-weight:800;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.7px;padding:4px 9px;background:var(--surface-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;font-family:'JetBrains Mono',monospace;}
+.header-nav{display:flex;gap:2px;flex-shrink:0;align-items:center;}
+.header-nav a,.header-nav button{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;border-radius:var(--r-sm);font-size:16px;font-weight:500;transition:all 0.2s var(--ease);border:1px solid transparent;background:transparent;cursor:pointer;padding:0;font-family:inherit;}
+.header-nav a:hover,.header-nav button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.header-resume-btn.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.header-resume-btn::before{content:'▮';font-size:14px;line-height:1;}
+.header-panel{display:none;border-top:1px solid var(--border);background:linear-gradient(180deg,var(--surface) 0%,var(--surface-soft) 100%);padding:20px 16px 24px;}
+@media(min-width:768px){.header-panel{padding:24px 24px 28px;}}
+.header-panel.is-open{display:block;}
+.header-panel-inner{max-width:900px;margin:0 auto;}
+.header-kicker{font-size:11px;color:var(--text-muted);text-transform:uppercase;font-weight:800;letter-spacing:1px;margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.header-kicker::before{content:'';width:24px;height:2px;background:var(--accent);display:inline-block;border-radius:1px;}
+.header-h1{font-size:32px;font-weight:800;color:var(--text);letter-spacing:-1px;margin-bottom:10px;line-height:1.1;}
+.header-subtitle{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:18px;max-width:720px;}
+.header-modes{display:flex;gap:6px;flex-wrap:wrap;}
+.mode-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 15px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);font-family:inherit;}
+.mode-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
+.mode-btn:hover:not(.active){background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.resume-dropdown{display:none;position:fixed;top:calc(var(--header-h) + 6px);right:14px;z-index:1050;width:min(300px,calc(100vw - 30px));padding:14px;border:1px solid var(--border-strong);border-radius:12px;background:#fff;box-shadow:var(--sh-lg);}
+.resume-dropdown.is-open{display:block;}
+.resume-dropdown h4{margin:0 0 5px;color:var(--text);font-size:.85rem;}
+.resume-dropdown p{margin:0 0 12px;color:var(--text-muted);font-size:.75rem;line-height:1.5;}
+.resume-actions{display:flex;gap:6px;}
+.resume-actions button{flex:1;padding:8px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text-soft);font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.resume-actions .resume-save{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toc-overlay{position:fixed;inset:0;background:rgba(26,35,50,0.34);backdrop-filter:blur(3px);z-index:1100;opacity:0;visibility:hidden;transition:opacity 0.3s var(--ease),visibility 0.3s var(--ease);}
+.toc-overlay.is-visible{opacity:1;visibility:visible;}
+.toc-wrapper{position:fixed;left:0;top:0;width:320px;max-width:86vw;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:1150;transform:translateX(-100%);transition:transform 0.4s var(--ease-out);padding-top:64px;box-shadow:var(--sh-xl);}
+.toc-wrapper.is-open{transform:translateX(0);}
+.toc-content{padding:12px 14px 100px;}
+.toc-header{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);padding:4px 12px 12px;}
+.toc-item{margin-bottom:4px;border-radius:var(--r-md);overflow:hidden;}
+.toc-summary{padding:10px 12px;font-size:13px;font-weight:700;color:var(--text);cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;border-radius:var(--r-sm);transition:background 0.2s var(--ease),color 0.2s var(--ease);user-select:none;}
+.toc-summary:hover{background:var(--accent-soft);color:var(--accent);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::marker{content:'';}
+.toc-summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);opacity:0.5;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);opacity:1;}
+.toc-links{padding:4px 0 8px 28px;display:flex;flex-direction:column;gap:1px;}
+.toc-link{display:block;padding:6px 10px;font-size:12.5px;color:var(--text-soft);text-decoration:none;border-radius:4px;transition:all 0.2s var(--ease);border-left:2px solid transparent;}
+.toc-link:hover{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);}
+.container{max-width:820px;margin:0 auto;background:var(--surface);border-radius:0;box-shadow:none;padding:18px 12px;border:none;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+@media(min-width:600px){.container{border-radius:var(--r-lg);box-shadow:var(--sh-md);border:1px solid var(--border);padding:22px 18px;}}
+@media(min-width:768px){.container{padding:36px 36px;border-radius:var(--r-xl);}}
+@media(min-width:1100px){.container{max-width:840px;padding:40px 40px;}}
+h1,h2,h3,h4,h5{font-weight:800;color:var(--text);letter-spacing:-0.3px;line-height:1.3;}
+h2{font-size:24px;margin-top:44px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+h3{font-size:17px;margin-top:32px;margin-bottom:12px;font-weight:800;}
+h4{font-size:15px;margin-top:24px;margin-bottom:10px;font-weight:800;}
+h5{font-size:13px;margin-top:16px;margin-bottom:8px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-soft);}
+p{margin-bottom:12px;}
+ul,ol{padding-left:24px;margin-bottom:14px;}
+li{margin-bottom:6px;padding-left:4px;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s var(--ease);}
+a:hover{border-bottom-color:var(--accent);}
+strong{font-weight:700;color:var(--text);}
+.hl{background:var(--hl-key-bg);color:var(--hl-key);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-warn{background:var(--hl-warn-bg);color:var(--hl-warn);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-new{background:var(--hl-new-bg);color:var(--hl-new);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.formula{display:inline-block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:14px;font-weight:600;color:var(--hl-formula);background:var(--hl-formula-bg);padding:4px 12px;border-radius:var(--r-sm);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:3px 2px;white-space:nowrap;}
+.formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
+code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
+pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
+.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
+.mnemonic b{color:#78350f;}
+.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
+@media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
+.card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
+.card-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:10px;padding:3px 9px;background:var(--accent-soft);border-radius:4px;}
+.card-core{background:var(--accent-soft);border-color:var(--accent-line);border-left-color:var(--accent);}
+.card-basic{background:var(--c-basic-bg);border-color:var(--c-basic-line);border-left-color:var(--c-basic);}
+.card-basic .card-label{background:rgba(46,125,79,0.12);color:var(--c-basic);}
+.card-understand{background:var(--c-understand-bg);border-color:var(--c-understand-line);border-left-color:var(--c-understand);}
+.card-understand .card-label{background:rgba(43,94,156,0.12);color:var(--c-understand);}
+.card-warning{background:var(--c-warn-bg);border-color:var(--c-warn-line);border-left-color:var(--c-warn);}
+.card-warning .card-label{background:rgba(176,111,28,0.12);color:var(--c-warn);}
+.card-error{background:var(--c-error-bg);border-color:var(--c-error-line);border-left-color:var(--c-error);}
+.card-error .card-label{background:rgba(184,58,69,0.12);color:var(--c-error);}
+.card-extra{background:var(--c-extra-bg);border-color:var(--c-extra-line);border-left-color:var(--c-extra);}
+.card-extra .card-label{background:rgba(107,63,160,0.12);color:var(--c-extra);}
+.card-new{background:var(--c-new-bg);border-color:var(--c-new-line);border-left-color:var(--c-new);}
+.card-new .card-label{background:rgba(13,125,125,0.12);color:var(--c-new);}
+.card-exam{background:var(--c-exam-bg);border-color:var(--c-exam-line);border-left-color:var(--c-exam);}
+.card-exam .card-label{background:rgba(168,106,0,0.12);color:var(--c-exam);}
+.card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0;}
+details.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent-line);border-radius:var(--r-sm);padding:10px 14px;margin:10px 0;transition:all 0.2s var(--ease);}
+details.answer[open]{background:var(--accent-soft);border-left-color:var(--accent);}
+details.answer summary{cursor:pointer;font-weight:700;color:var(--text-soft);font-size:13px;list-style:none;user-select:none;display:flex;align-items:center;gap:10px;transition:color 0.2s var(--ease);}
+details.answer summary::-webkit-details-marker{display:none;}
+details.answer summary::marker{content:'';}
+details.answer summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer[open] summary{color:var(--accent);}
+details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}
+.part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}
+@media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}
+.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
+@media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}
+.table-wrap th,.table-wrap td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px;}
+@media(min-width:600px){.table-wrap th,.table-wrap td{padding:10px 12px;font-size:13.5px;}}
+.table-wrap th{background:var(--surface-soft);font-weight:800;color:var(--text-soft);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;}
+@media(min-width:600px){.table-wrap th{font-size:11px;letter-spacing:0.7px;white-space:nowrap;}}
+.table-wrap.table-compact td,.table-wrap.table-compact th{padding:7px 6px;font-size:12.5px;}
+.table-wrap tr:last-child td{border-bottom:none;}
+.table-wrap tr:hover td{background:var(--accent-soft);}
+.table-wrap .error-row{background:var(--c-error-bg);}
+.table-wrap .ok-row{background:var(--c-basic-bg);}
+.def-list{display:flex;flex-direction:column;gap:8px;margin:14px 0;}
+.def-item{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px 16px;}
+.def-item dt{font-weight:800;color:var(--text);font-size:13.5px;margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+.def-item dt::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;}
+.def-item dd{color:var(--text-soft);font-size:13.5px;line-height:1.6;margin:0;padding-left:11px;}
+.minimum-card{background:linear-gradient(135deg,var(--surface-soft) 0%,var(--accent-soft) 100%);border:1px solid var(--accent-line);border-radius:var(--r-lg);padding:20px 22px;margin:8px 0 28px;box-shadow:var(--sh-sm);position:relative;overflow:hidden;}
+@media(min-width:768px){.minimum-card{padding:28px 34px;margin-bottom:36px;}}
+.minimum-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:var(--accent);}
+.minimum-card h3{color:var(--accent);margin:0 0 16px;font-size:16px;letter-spacing:0.2px;display:flex;align-items:center;gap:10px;}
+.minimum-card h3::before{content:'★';font-size:16px;}
+.minimum-card ol{margin:0;padding-left:0;list-style:none;counter-reset:min-list;}
+.minimum-card li{counter-increment:min-list;padding-left:36px;position:relative;margin-bottom:12px;font-size:14px;line-height:1.6;}
+.minimum-card li::before{content:counter(min-list);position:absolute;left:0;top:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--surface);color:var(--accent);border:2px solid var(--accent-line);border-radius:50%;font-size:12px;font-weight:800;}
+.minimum-card li:last-child{margin-bottom:0;}
+.level-badge{display:inline-block;font-size:9.5px;font-weight:800;text-transform:uppercase;padding:2px 9px;border-radius:12px;vertical-align:middle;letter-spacing:0.5px;line-height:1.6;margin-left:8px;}
+.level-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.level-understand{background:var(--c-understand-bg);color:var(--c-understand);}
+.level-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.level-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.level-new{background:var(--c-new-bg);color:var(--c-new);}
+.rule-box{background:var(--c-understand-bg);border:1px solid var(--c-understand-line);border-radius:var(--r-md);padding:14px 18px;margin:14px 0;font-size:14px;line-height:1.65;}
+.rule-box b{color:var(--c-understand);}
+.step-flow{background:var(--text);color:#fff;padding:16px 18px;border-radius:var(--r-md);font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:12.5px;line-height:1.9;margin:14px 0;overflow-x:auto;white-space:pre;}
+@media(min-width:768px){.step-flow{font-size:13.5px;padding:16px 20px;}}
+.footer{margin-top:56px;padding-top:24px;border-top:2px solid var(--border);text-align:center;font-size:12.5px;color:var(--text-muted);letter-spacing:0.2px;}
+.footer p{margin-bottom:4px;}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:6px;border:2px solid var(--bg);}
+::-webkit-scrollbar-thumb:hover{background:var(--text-muted);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.bottom-nav{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:1100;width:min(700px,calc(100vw - 24px));font-size:.78rem;}
+.bottom-nav__toggle{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;padding:8px 14px;border:1px solid var(--border-strong);border-radius:999px;background:rgba(255,255,255,.97);color:var(--text-soft);font:700 .72rem inherit;box-shadow:0 5px 18px rgba(15,23,42,.14);cursor:pointer;backdrop-filter:blur(10px);font-family:inherit;}
+.bottom-nav__panel{display:none;margin-bottom:7px;padding:10px;border:1px solid var(--border-strong);border-radius:14px;background:rgba(255,255,255,.98);box-shadow:0 10px 28px rgba(15,23,42,.16);backdrop-filter:blur(12px);}
+.bottom-nav.is-open .bottom-nav__panel{display:block;}
+.bottom-nav__primary{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.bottom-nav a,.bottom-nav button.nav-more{min-height:36px;display:flex;align-items:center;justify-content:center;padding:6px 8px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--text-soft);text-decoration:none;font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.bottom-nav a:hover,.bottom-nav button.nav-more:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+@media(max-width:420px){
+  .bottom-nav{font-size:.7rem;width:calc(100vw - 12px);}
+  .bottom-nav a,.bottom-nav button.nav-more{padding:6px 4px;font-size:.65rem;}
+}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
+.widget{background:var(--surface);border:2px solid var(--border);border-radius:var(--r-md);padding:14px;margin:14px 0;box-shadow:var(--sh-sm);}
+@media(min-width:768px){.widget{padding:22px 26px;margin:20px 0;border-radius:var(--r-lg);}}
+.widget h4{margin:0 0 8px;color:var(--text);font-size:15px;font-weight:800;}
+@media(min-width:768px){.widget h4{font-size:16px;}}
+.widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
+.bld-pool{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.bld-pool button{padding:6px 12px;border:1px solid var(--border);border-radius:20px;background:#fff;font:600 0.8rem inherit;cursor:pointer;font-family:inherit;color:var(--text);}
+.bld-pool button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bld-workspace{min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;}
+.bld-feedback,.re-result,.st-feedback,.ch-feedback{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;line-height:1.5;}
+.bld-feedback.ok,.re-result.ok,.st-feedback.ok,.ch-feedback.ok{background:var(--c-basic-bg);color:var(--c-basic);border:1px solid var(--c-basic-line);}
+.bld-feedback.bad,.re-result.bad,.st-feedback.bad,.ch-feedback.bad{background:var(--c-error-bg);color:var(--c-error);border:1px solid var(--c-error-line);}
+.bld-feedback.info,.re-result.info,.st-feedback.info,.ch-feedback.info{background:var(--c-understand-bg);color:var(--c-understand);border:1px solid var(--c-understand-line);}
+.bld-feedback.warn,.re-result.warn,.st-feedback.warn,.ch-feedback.warn{background:var(--c-warn-bg);color:var(--c-warn);border:1px solid var(--c-warn-line);}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);color:var(--text);font-family:inherit;}
+.btn:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent);}
+.btn-primary:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+.btn-sm{padding:6px 10px;font-size:12px;}
+.flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}
+@media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--border);border-radius:var(--r-md);background:#fff;color:var(--text);font:inherit;text-align:center;cursor:pointer;box-shadow:var(--sh-sm);transition:all 0.2s var(--ease);position:relative;font-family:inherit;}
+.flashcard:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-3px);box-shadow:var(--sh-md);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:90px;}
+.flashcard .front{font-weight:700;font-size:14.5px;line-height:1.5;}
+.flashcard .back{display:none;color:var(--text-soft);font-size:13.5px;line-height:1.6;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:8px;right:8px;font-size:9px;text-transform:uppercase;background:var(--surface-soft);padding:2px 8px;border-radius:10px;color:var(--text-muted);font-weight:800;letter-spacing:0.4px;}
+.flashcard .card-tag.tag-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.flashcard .card-tag.tag-error{background:var(--c-error-bg);color:var(--c-error);}
+.flashcard .card-tag.tag-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.flashcard .card-tag.tag-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.checklist{background:#fff;border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.checklist h4{color:var(--c-basic);margin:0 0 12px;font-size:15px;}
+.checklist ul{list-style:none;padding-left:0;margin:0;}
+.checklist li{padding:7px 0;font-size:13.5px;border-bottom:1px dashed var(--c-basic-line);display:flex;align-items:flex-start;gap:10px;line-height:1.55;}
+.checklist li:last-child{border-bottom:none;}
+.checklist li::before{content:'☐';color:var(--c-basic);font-weight:700;font-size:1.15rem;flex-shrink:0;line-height:1.2;}
+.core-path{background:linear-gradient(135deg,var(--c-basic-bg) 0%,#dcefe2 100%);border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:800;color:var(--c-basic);font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.core-path .cp-title::before{content:'▶';font-size:12px;}
+.core-path ol{margin:0;padding-left:22px;}
+.core-path li{margin-bottom:6px;font-size:13.5px;line-height:1.6;}
+.audit-panel{background:var(--surface-soft);border:2px solid var(--border-strong);border-radius:var(--r-lg);padding:16px 18px;margin:16px 0;}
+.audit-panel h4{margin:0 0 12px;color:var(--text);}
+.audit-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px;}
+@media(min-width:600px){.audit-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}}
+.audit-item{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:10px 12px;font-size:12.5px;line-height:1.55;}
+.mini-note{font-size:12.5px;color:var(--text-muted);font-style:italic;margin-top:8px;line-height:1.55;}
+.layer-legend{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:12px 14px;margin:12px 0;display:grid;grid-template-columns:1fr;gap:8px 18px;}
+@media(min-width:600px){.layer-legend{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;}}
+.layer-legend .layer-row{display:flex;gap:10px;align-items:center;font-size:12.5px;line-height:1.5;}
+.layer-legend .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.e8{background:var(--c-basic);}
+.layer-legend .dot.understand{background:var(--c-understand);}
+.layer-legend .dot.extra{background:var(--c-extra);}
+.layer-legend .dot.contest{background:var(--c-warn);}
+.klinika-table td.col-blad{color:var(--c-error);font-weight:700;}
+.klinika-table td.col-blad::before{content:'✕ ';font-weight:900;margin-right:4px;color:var(--c-error);}
+.klinika-table td.col-ok{color:var(--c-basic);font-weight:700;}
+.klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}
+.map-card{position:relative;}
+.map-expand-btn{position:absolute;top:10px;right:10px;z-index:3;padding:6px 12px;border:1px solid var(--accent-line);background:rgba(255,255,255,0.95);color:var(--accent);border-radius:var(--r-sm);font-size:12px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:var(--sh-sm);transition:all 0.15s var(--ease);}
+.map-expand-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.map-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(26,35,50,0.85);backdrop-filter:blur(6px);}
+.map-overlay.is-open{display:block;}
+.map-overlay-inner{position:absolute;inset:12px;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-xl);}
+.map-overlay-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface-soft);gap:8px;flex-wrap:wrap;}
+.map-overlay-title{font-weight:800;font-size:14px;color:var(--text);}
+.map-overlay-actions{display:flex;gap:6px;}
+.map-overlay-actions button{padding:6px 12px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;color:var(--text-soft);transition:all 0.15s var(--ease);}
+.map-overlay-actions button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.map-overlay-actions .map-close{background:var(--c-error);color:#fff;border-color:var(--c-error);}
+.map-overlay-canvas{flex:1;overflow:hidden;position:relative;background:#fff;cursor:grab;touch-action:none;}
+.map-overlay-canvas svg{display:block;position:absolute;top:0;left:0;transform-origin:0 0;}
+@media print{
+.fab,.toc-wrapper,.toc-overlay,.header-wrapper,.bottom-nav,.resume-dropdown,.map-overlay,.map-expand-btn{display:none !important;}
+body{padding:0;background:#fff;}
+.container{box-shadow:none;border:none;padding:0;max-width:100%;}
+details.answer{page-break-inside:avoid;}
+details.answer > *:not(summary){display:block !important;}
+details.answer summary{display:none;}
+.card{page-break-inside:avoid;}
+.widget{page-break-inside:avoid;}
+}
+@media (prefers-reduced-motion: reduce){
+*{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+html{scroll-behavior:auto;}
+}
+html,body{max-width:100%;overflow-x:hidden;}
+.table-scroll-hint{display:none;align-items:center;justify-content:space-between;gap:8px;padding:7px 11px;margin-top:0;margin-bottom:8px;border:1px solid var(--border);border-bottom:0;border-radius:var(--r-sm) var(--r-sm) 0 0;background:var(--surface-soft);color:var(--text-muted);font-size:11px;font-weight:700;}
+.table-wrap.is-scrollable + .table-scroll-hint{display:flex;}
+.table-scroll-hint .scroll-arrow{font-size:13px;letter-spacing:2px;color:var(--accent);}
+.timeline-anim{border-color:var(--c-understand-line);}
+.ta-stage{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 14px;min-height:280px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.ta-scene{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;animation:taFade 0.6s ease-out;width:100%;}
+@keyframes taFade{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.ta-scene .ta-year{font-size:1.7rem;font-weight:800;color:var(--accent);font-family:'JetBrains Mono',monospace;letter-spacing:1px;}
+.ta-scene .ta-who{font-size:1.05rem;font-weight:800;color:var(--text);}
+.ta-scene .ta-desc{font-size:13.5px;color:var(--text-soft);max-width:600px;line-height:1.65;}
+.ta-dots{display:flex;justify-content:center;gap:8px;margin:14px 0 8px;}
+.ta-dot{width:12px;height:12px;border-radius:50%;background:var(--border-strong);border:2px solid transparent;cursor:pointer;padding:0;transition:all 0.2s var(--ease);}
+.ta-dot.active{background:var(--accent);transform:scale(1.25);box-shadow:0 0 0 3px var(--accent-glow);}
+.ta-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;}
+.ta-nav{padding:8px 14px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-weight:700;color:var(--text-soft);cursor:pointer;font-size:12.5px;transition:all 0.15s var(--ease);}
+.ta-nav:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.ta-progress{font-size:12.5px;color:var(--text-muted);font-weight:700;font-family:'JetBrains Mono',monospace;}
+.eq-player{background:linear-gradient(180deg,#f8fafc,#eef6f5);border:2px solid var(--accent-line);border-radius:var(--r-lg);padding:16px 18px;margin:14px 0;}
+.eq-stage{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.15rem;padding:12px;background:#fff;border-radius:var(--r-md);border:1px solid var(--border);}
+.eq-term{display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border);opacity:0;}
+.eq-term.show{opacity:1;animation:reaction-flow 0.7s ease-out;}
+.eq-term.reactant{background:#e0f2fe;border-color:#7dd3fc;color:#0c4a6e;}
+.eq-term.product{background:#dcfce7;border-color:#86efac;color:#14532d;}
+.eq-arrow{opacity:0;color:var(--accent);font-size:1.4rem;}
+.eq-arrow.show{opacity:1;}
+.eq-balance{margin-top:10px;font-size:13px;color:var(--text-soft);display:none;}
+.eq-balance.show{display:block;}
+@keyframes reaction-flow{0%{opacity:.25;transform:scale(.92)}55%{opacity:1}100%{opacity:1;transform:scale(1)}}
+.ion-assembly{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;padding:18px 12px;background:#fff;border:1px solid var(--border);border-radius:var(--r-md);margin:10px 0;}
+.ion-chip{padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid var(--border);}
+.ion-chip.cation{background:#e0f2fe;border-color:#38bdf8;color:#0c4a6e;}
+.ion-chip.anion{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.ion-chip.product{background:#dcfce7;border-color:#4ade80;color:#14532d;}
+.ion-plus,.ion-join{font-size:1.4rem;font-weight:800;color:var(--text-muted);}
+.hero{max-width:900px;margin:0 auto 22px;padding:26px;border:1px solid var(--border);border-radius:var(--r-xl);background:linear-gradient(135deg,#fff,var(--accent-soft));box-shadow:var(--sh-md);}
+.hero h1{font-size:clamp(32px,6vw,52px);margin:4px 0 8px;}
+.hero-kicker{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--accent);text-transform:uppercase;}
+.lead{font-size:16px;color:var(--text-soft);max-width:720px;}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;}
+.page{max-width:900px;margin:0 auto;}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+@media(max-width:720px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px;}
+.metric-grid>div,.result-card,.step-card{padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);}
+.metric-grid b{display:block;font-size:10px;text-transform:uppercase;color:var(--text-muted);}
+.metric-grid strong{display:block;margin-top:3px;}
+@media(max-width:700px){.metric-grid{grid-template-columns:1fr;}}
+.controls,.button-grid{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;}
+.controls button,.button-grid button,.quiz-opt{padding:8px 12px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;cursor:pointer;}
+.particle-stage{height:120px;display:flex;align-items:center;justify-content:center;gap:70px;border:1px dashed var(--border-strong);border-radius:10px;margin-top:12px;}
+.particle{font-size:30px;font-weight:800;}
+.p-h3o{color:var(--accent);}
+.p-cl{color:#b83a45;}
+.ph-scale{display:flex;justify-content:space-between;margin-top:6px;font:700 11px 'JetBrains Mono',monospace;}
+.buffer-tank{height:28px;border:1px solid var(--border-strong);border-radius:999px;overflow:hidden;margin:14px 0;background:var(--surface-soft);}
+#bufferFill{height:100%;width:100%;background:var(--accent);transition:width .2s;}
+.quiz-wrap{margin:16px 0;}
+.quiz-q{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:14px 16px;margin-bottom:12px;}
+.quiz-q h5{margin:0 0 10px;font-size:14.5px;color:var(--text);text-transform:none;letter-spacing:0;line-height:1.45;}
+.quiz-q .q-tag{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:10px;margin-bottom:8px;background:var(--surface-soft);color:var(--text-muted);}
+.quiz-opts{display:flex;flex-direction:column;gap:8px;}
+.quiz-opt{display:block;width:100%;text-align:left;padding:10px 12px;border:2px solid var(--border);border-radius:var(--r-sm);background:#fff;font:inherit;font-size:13.5px;cursor:pointer;transition:all 0.15s var(--ease);color:var(--text);}
+.quiz-opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft);}
+.quiz-opt.correct{border-color:var(--c-basic);background:var(--c-basic-bg);color:var(--c-basic);font-weight:700;}
+.quiz-opt.wrong{border-color:var(--c-error);background:var(--c-error-bg);color:var(--c-error);}
+.quiz-opt:disabled{cursor:default;opacity:0.95;}
+.quiz-fb{margin-top:8px;font-size:13px;line-height:1.5;display:none;padding:8px 10px;border-radius:var(--r-sm);}
+.quiz-fb.show{display:block;}
+.quiz-fb.ok{background:var(--c-basic-bg);color:var(--c-basic);}
+.quiz-fb.bad{background:var(--c-error-bg);color:var(--c-error);}
+.quiz-score{text-align:center;padding:14px;background:var(--surface-soft);border-radius:var(--r-md);margin-top:16px;font-weight:800;color:var(--accent);display:none;}
+.quiz-score.show{display:block;}
+.lab-bridge{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 28px;padding:14px 16px;border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);background:linear-gradient(135deg,var(--surface-soft),var(--accent-soft));}
+.lab-bridge strong{display:block;color:var(--accent-dark);}
+.lab-bridge span{display:block;margin-top:3px;color:var(--text-soft);font-size:13px;}
+.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;}
+.lab-bridge-btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
+@media(max-width:600px){.lab-bridge{align-items:flex-start;flex-direction:column;}.lab-bridge-btn{width:100%;text-align:center;}}
+.exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}
+.exp-card h5{margin:0 0 10px;color:var(--c-basic);font-size:14px;text-transform:none;letter-spacing:0;}
+.exp-grid{display:grid;grid-template-columns:1fr;gap:6px;font-size:13.5px;line-height:1.55;}
+@media(min-width:600px){.exp-grid{grid-template-columns:110px 1fr;}}
+.exp-grid b{color:var(--text-soft);font-size:11px;text-transform:uppercase;letter-spacing:0.4px;}
+
+.js-reveal .card:not(.in),.js-reveal .widget:not(.in){opacity:0;transform:translateY(14px)}
+.js-reveal .card,.js-reveal .widget{transition:opacity .55s var(--ease),transform .55s var(--ease)}
+
+
+.ion-svg{width:100%;height:auto;display:block;background:radial-gradient(ellipse at 50% 40%,#fff,var(--surface-soft));border:1px solid var(--border);border-radius:var(--r-md);margin-top:10px}
+.ion-svg .mv{transition:transform .9s cubic-bezier(.65,0,.35,1);transform-box:fill-box}
+.ion-svg text{font-family:'JetBrains Mono',monospace;font-weight:800;text-anchor:middle;dominant-baseline:central}
+.ion-svg .fade{opacity:0;transition:opacity .6s ease .35s}
+.ion-svg[data-s="1"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="1"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="1"] .d1,.ion-svg[data-s="2"] .d1{opacity:1}
+.ion-svg[data-s="2"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="2"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="2"] .proton{transform:translate(120px,-40px)}
+.ion-svg[data-s="2"] .arrow{opacity:1}
+.ion-svg[data-s="3"] .g-hcl{transform:translateX(10px)}
+.ion-svg[data-s="3"] .g-w{transform:translateX(-10px)}
+.ion-svg[data-s="3"] .proton{transform:translate(230px,-38px)}
+.ion-svg[data-s="3"] .d3{opacity:1}
+.ion-svg[data-s="3"] .glow{animation:ionGlow 1.6s ease-in-out infinite}
+@keyframes ionGlow{0%,100%{filter:drop-shadow(0 0 2px rgba(13,104,104,.3))}50%{filter:drop-shadow(0 0 10px rgba(13,104,104,.8))}}
+
+
+.ph-bar{position:relative;height:18px;border-radius:999px;margin:10px 0 4px;border:1px solid var(--border-strong);
+background:linear-gradient(90deg,#e5262e 0%,#ef5a28 14%,#f6a21e 28%,#d7d93a 43%,#5cb85c 50%,#21a89a 57%,#2f7fc1 71%,#4a4bb5 86%,#6b2d8f 100%)}
+.ph-marker{position:absolute;top:-6px;width:0;height:0;left:0;transform:translateX(-50%);transition:left .35s var(--ease)}
+.ph-marker::before{content:'';position:absolute;left:-7px;top:0;border:7px solid transparent;border-top:10px solid var(--text)}
+.ph-marker::after{content:attr(data-v);position:absolute;left:0;top:-22px;transform:translateX(-50%);background:var(--text);color:#fff;font:800 11px 'JetBrains Mono',monospace;padding:2px 6px;border-radius:5px;white-space:nowrap}
+.ph-flask{display:inline-block;width:22px;height:22px;border-radius:0 0 8px 8px;border:2px solid var(--text-soft);vertical-align:middle;margin-right:6px;transition:background .35s}
+
+
+.titr-wrap{position:relative}
+#titrationCanvas{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--r-md);background:#fff}
+.titr-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.titr-row input[type=range]{flex:1 1 200px}
+.titr-flask{width:34px;height:42px;border:2px solid var(--text-soft);border-radius:2px 2px 12px 12px;transition:background .3s;flex-shrink:0;position:relative}
+.titr-flask::after{content:'';position:absolute;left:-2px;right:-2px;top:-8px;height:6px;border:2px solid var(--text-soft);border-bottom:0;border-radius:3px 3px 0 0}
+
+
+.buffer-tank{position:relative;height:34px}
+#bufferFill{transition:width .4s var(--ease),background .4s;background-size:28px 28px;background-image:linear-gradient(45deg,rgba(255,255,255,.22) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.22) 75%,transparent 75%)}
+.buffer-tank.pulse{animation:bufPulse .45s ease}
+.buffer-tank.dead{animation:bufDead .5s ease 2}
+@keyframes bufPulse{50%{transform:scale(1.02);box-shadow:0 0 0 4px var(--accent-glow)}}
+@keyframes bufDead{50%{box-shadow:0 0 0 4px rgba(184,58,69,.35)}}
+
+
+.rx-stage{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:12px 0;padding:14px;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md)}
+.rx-beaker{position:relative;width:120px;height:150px;border:3px solid var(--text-soft);border-top:0;border-radius:0 0 18px 18px;background:rgba(255,255,255,.55);overflow:visible;flex-shrink:0}
+.rx-liquid{position:absolute;left:0;right:0;bottom:0;height:100px;border-radius:0 0 14px 14px;background:rgba(220,235,240,.65);transition:background 2.2s ease}
+.rx-solid{position:absolute;left:36px;bottom:2px;width:48px;height:24px;border-radius:40% 40% 8px 8px;opacity:0;transition:height 3.5s ease,opacity .5s,transform 3.5s ease}
+.rx-bubbles,.rx-precip,.rx-fumes{position:absolute;left:0;right:0;bottom:0;height:150px;pointer-events:none;overflow:hidden}
+.rx-fumes{overflow:visible;bottom:100px;height:70px}
+.rx-b{position:absolute;bottom:14px;border-radius:50%;background:rgba(255,255,255,.85);border:1px solid rgba(13,104,104,.45);animation:rxRise 2.2s ease-in forwards}
+@keyframes rxRise{to{transform:translate(var(--dx,0),-92px);opacity:0}}
+.rx-p{position:absolute;top:50px;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #cbd5e1;animation:rxFall 2.4s ease-in forwards}
+@keyframes rxFall{to{transform:translateY(90px)}}
+.rx-cloud{position:absolute;bottom:0;left:6px;right:6px;height:0;background:#fff;border-radius:10px 10px 0 0;box-shadow:0 0 0 1px #e2e8f0;transition:height 4s ease;opacity:.95}
+.rx-f{position:absolute;bottom:0;width:26px;height:26px;border-radius:50%;background:rgba(150,75,20,.55);filter:blur(7px);animation:rxFume 3s ease-out forwards}
+@keyframes rxFume{to{transform:translate(var(--dx,0),-70px) scale(2.2);opacity:0}}
+
+
+.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.rx-label{flex:1 1 200px;font-size:13px;color:var(--text-soft);line-height:1.5}
+.rx-label b{color:var(--text);font-family:'JetBrains Mono',monospace}
+@media print{.js-reveal .card,.js-reveal .widget{opacity:1!important;transform:none!important}}
+
+
+/* ulepszenia.css — warstwa wspólna nad baza.css: pasek lekcji, postęp czytania, spis z podświetleniem,
+   tryb ciemny, komponenty wspólne (mity, drzewo, cytat, dialog, słówka, figura), druk, dostępność.
+   Kolejność w lekcji: baza.css → ulepszenia.css → motywy/<przedmiot>.css. Edytuj tylko tutaj. */
+
+:root{--header-h:52px;--serif:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Charter,Georgia,serif}
+
+/* ---------- pasek lekcji (zamiast nagłówka aplikacji) ---------- */
+.lk-bar{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 12px;
+  background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--border)}
+.lk-subj{flex:none;display:inline-flex;align-items:center;gap:7px;font:800 12.5px/1 Inter,system-ui,sans-serif;color:var(--accent);text-decoration:none;
+  padding:6px 10px 6px 8px;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+.lk-subj i{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+.lk-title{flex:1;min-width:0;font:600 13px/1.25 Inter,system-ui,sans-serif;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lk-btn{flex:none;min-width:36px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);background:var(--surface);
+  color:var(--text);border-radius:9px;padding:0 10px;font:700 12.5px Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+.lk-btn:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.lk-prog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
+@media (max-width:520px){.lk-title{display:none}.lk-bar{justify-content:space-between}}
+
+/* ---------- nagłówek lekcji ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+.hero::after{content:"";position:absolute;inset:-10% -6% -10% 52%;z-index:-1;opacity:.12;pointer-events:none;background:var(--motyw-wzor,none) right center/auto 100% repeat-y}
+.hero h1{text-wrap:balance}
+.hero-kicker{color:var(--accent);text-transform:none;letter-spacing:0;font-size:13px}
+.page{padding:0 16px}
+.lk-btn svg{width:16px;height:16px;display:block}
+.lk-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:12.5px;color:var(--text-muted)}
+.lk-meta b{color:var(--text-soft);font-weight:700}
+
+/* ---------- spis treści: aktywna sekcja ---------- */
+@media (min-width:800px){.toc-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));column-gap:12px}}
+.toc-link.on{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);font-weight:700}
+section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
+
+/* ---------- komponenty wspólne ---------- */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:12px 0}
+.myth-head{grid-column:1/-1;font-weight:800;font-size:14px}
+.myth{border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow:hidden}
+.myth p{margin:0;padding:9px 12px;font-size:13.5px;line-height:1.5}
+.myth p span{display:block;font:800 11px Inter,system-ui;margin-bottom:2px}
+.myth-x{background:var(--c-error-bg)}.myth-x span{color:var(--c-error)}.myth-ok span{color:var(--c-basic)}
+
+.lk-tree{margin:12px 0;font-size:14px;overflow-x:auto}
+.lk-tree ul{list-style:none;margin:0;padding-left:18px}.lk-tree>ul{padding-left:0}
+.lk-tree li{position:relative;padding:3px 0 3px 14px}
+.lk-tree ul ul li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--accent-line)}
+.lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
+.lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
+.lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+
+/* cytat z tekstu (lektura, źródło, wypowiedź) */
+.lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
+.lk-quote blockquote{margin:0;font:400 17px/1.65 var(--serif);color:var(--text)}
+.lk-quote blockquote p{margin:0 0 6px;color:inherit}
+.lk-quote figcaption{margin-top:6px;font-size:12.5px;color:var(--text-muted)}
+
+/* dialog (role A/B, rozmowa, scenka) */
+.lk-dialog{margin:14px 0;display:flex;flex-direction:column;gap:8px}
+.lk-line{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.lk-who{min-width:30px;height:30px;padding:0 8px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font:800 12px Inter,system-ui;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line)}
+.lk-line.b .lk-who{background:var(--surface-soft);color:var(--text-soft);border-color:var(--border)}
+.lk-say{padding:8px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font-size:14.5px;line-height:1.55}
+.lk-say small{display:block;color:var(--text-muted);font-size:12.5px;margin-top:2px}
+
+/* słówka: wyraz — znaczenie — przykład */
+.lk-vocab{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.lk-vocab th{text-align:left;font-size:12px;color:var(--text-muted);font-weight:700;padding:6px 10px;border-bottom:2px solid var(--border)}
+.lk-vocab td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+.lk-vocab td:first-child{font-weight:800;color:var(--accent);white-space:nowrap}
+.lk-vocab td:last-child{color:var(--text-soft);font-style:italic}
+@media (max-width:560px){.lk-vocab thead{display:none}.lk-vocab tr{display:block;padding:8px 0;border-bottom:1px solid var(--border)}
+  .lk-vocab td{display:block;border:0;padding:1px 4px}}
+
+/* figura z biblioteki grafik przedmiotu */
+.lk-fig{margin:16px 0;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);overflow:hidden}
+.lk-fig figcaption{padding:9px 14px;border-top:1px solid var(--border);background:var(--surface-soft);font-size:13px;line-height:1.5;color:var(--text-soft)}
+.lk-fig figcaption b{color:var(--text);margin-right:4px}
+.lk-fig-body{padding:12px}
+.lk-fig svg{display:block;width:100%;height:auto}
+
+/* z chemii (lekcja.css): treści akademickie, plakietki */
+details.adv{border:1px dashed var(--c-warn-line,#eed8a8);border-radius:10px;background:var(--surface-soft,#f6f8fa);margin:10px 0;padding:0 12px}details.adv>summary{cursor:pointer;font-weight:700;color:var(--c-warn,#b06f1c);padding:9px 0;list-style:none}details.adv>summary::-webkit-details-marker{display:none}details.adv>summary::before{content:"▸ "}details.adv[open]>summary::before{content:"▾ "}.adv-tag{font-weight:600;font-size:11px;opacity:.75;margin-left:6px}.adv-body{padding:0 0 10px;font-size:13.5px;line-height:1.6}.adv-body table{font-size:12.5px}.adv-toggle{margin-top:10px;border:1px solid var(--c-warn-line,#eed8a8);background:var(--c-warn-bg,#fcf4e6);color:var(--c-warn,#b06f1c);border-radius:999px;padding:6px 12px;font:700 12px Inter,system-ui,sans-serif;cursor:pointer}.bio-tag{display:inline-block;font:800 10px Inter,system-ui;letter-spacing:.04em;padding:2px 7px;border-radius:99px;background:rgba(46,125,79,.12);color:#2e7d4f;margin-left:6px;vertical-align:middle}.v15{display:inline-block;font:800 9.5px Inter,system-ui;padding:1px 6px;border-radius:99px;background:rgba(13,125,125,.12);color:#0d7d7d;margin-left:6px;vertical-align:middle}@media print{details.adv{display:block}details.adv>.adv-body{display:block}}
+/* z chemii (lekcja.css): telefon, tabele */
+.exp-card{min-width:0;max-width:100%;box-sizing:border-box}.exp-grid>*{min-width:0;overflow-wrap:anywhere}
+@media (max-width:600px){.exp-grid{grid-template-columns:minmax(0,1fr)!important}.exp-grid>b{margin-top:4px}}
+.table-wrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+
+/* klinika błędów (::: klinika) — tabela, na telefonie karty */
+.klinika-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden}
+.klinika-table th{text-align:left;padding:9px 12px;background:var(--surface-soft);color:var(--text-soft);font-size:12px;font-weight:800;border-bottom:1px solid var(--border)}
+.klinika-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.klinika-table tr:last-child td{border-bottom:0}
+@media (max-width:600px){.klinika-table thead{display:none}.klinika-table tr{display:block;padding:8px 12px;border-bottom:1px solid var(--border)}
+  .klinika-table td{display:block;border:0;padding:2px 0}.klinika-table td:not(.col-blad):not(.col-ok){color:var(--text-soft)}}
+
+.lk-pre{margin:12px 0;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-soft);overflow-x:auto;font:12.5px/1.55 ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;color:var(--text-soft);white-space:pre}
+.lk-pre code{font:inherit;background:none;padding:0;color:inherit}
+.lk-hr{border:0;border-top:1px solid var(--border);margin:28px 0}
+
+/* ---------- dostępność ---------- */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;z-index:60;background:var(--surface);color:var(--accent);padding:8px 12px;border-radius:8px}
+.skip-link:focus{left:8px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- tryb ciemny: automatycznie albo przyciskiem (data-theme) ---------- */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme=dark]{
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}
+/* elementy bazy z białym tłem na sztywno */
+html[data-ciemny] :is(.flashcard,.checklist,.audit-item,.layer-legend,.quiz-q,.quiz-opt,.btn,.controls button,.eq-stage,.ion-assembly,.bld-workspace,.bld-pool button,.resume-dropdown,.ta-nav){background:var(--surface);color:var(--text)}
+html[data-ciemny] .hero{background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.active,.step-flow){color:var(--bg)}
+@media (max-width:600px){.hero::after{opacity:.07}}
+
+/* ---------- druk ---------- */
+@media print{
+  .lk-bar,.adv-toggle,.toc-item,.fab,.bottom-nav{display:none!important}
+  body{padding:0;background:#fff;color:#000}
+  .hero::after{display:none}.hero{background:none;box-shadow:none}
+  details.adv,details.answer{display:block}details>*{display:block}
+  .card,.minimum-card,.lk-fig,.myth,.quiz-q{break-inside:avoid;box-shadow:none}
+  a{color:inherit;text-decoration:none}
+}
+
+/* === Dopracowanie czytelności (2026-10-11; z wersji „ulepszonej” U03 użytkownika, uogólnione na wszystkie przedmioty, zgodne z trybem ciemnym) === */
+body{line-height:1.74}
+main{isolation:isolate}
+.hero{border-color:var(--accent-line)}
+.hero::before{content:"";position:absolute;right:-42px;top:-56px;width:180px;height:180px;z-index:-1;pointer-events:none;
+ border:1px solid var(--accent-line);border-radius:50%;opacity:.45;
+ box-shadow:0 0 0 22px var(--accent-glow),0 0 0 44px var(--accent-glow)}
+.part-heading{padding:0 0 12px;border-bottom:1px solid var(--border);align-items:flex-start}
+.part-num{margin-top:1px}
+section[id]{scroll-margin-top:calc(var(--header-h,56px) + 20px)}
+section p{max-width:78ch}
+section ul,section ol{padding-left:1.35rem}
+.card,.exp-card,.widget,.table-wrap{box-shadow:0 2px 8px rgba(24,49,59,.045)}
+.table-wrap{max-width:100%}
+.table-wrap table{line-height:1.55}
+.table-wrap td strong{color:var(--text)}
+.table-wrap tbody tr:nth-child(even) td{background:var(--surface-soft)}
+.table-wrap tbody tr:hover td{background:var(--accent-soft)}
+.mini-note{max-width:80ch}
+:is(button,a,summary,[tabindex]):focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:520px){.hero{padding:20px 16px}.part-heading{font-size:19px;gap:11px}
+ .table-wrap table{font-size:12.5px}.table-wrap th,.table-wrap td{padding:8px 9px}}
+@media(hover:none){.card:hover,.flashcard:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media print{.hero::before{display:none}.card,.exp-card,.table-wrap{break-inside:avoid;box-shadow:none}}
+
+/* fiszki: część ukryta do rozwinięcia (lekcja.js); przy druku — wszystkie */
+.flashcard[hidden]{display:none!important}
+.fz-more{display:block;width:100%;margin:-6px 0 18px;padding:12px 16px;border:2px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent;color:var(--text,#1d2a30);font-family:inherit;font-weight:600;font-size:15px;line-height:1.3;cursor:pointer;text-align:center}
+.fz-more:hover,.fz-more:focus-visible{background:var(--surface-2,rgba(0,0,0,.04))}
+@media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
+.quiz-q[hidden]{display:none!important}
+@media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
+
+/* motyw ang (Język angielski) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#2a4d9b;--accent-dark:#1b336a;--accent-soft:#e9eef9;--accent-line:#c4d1ee;--accent-glow:rgba(42,77,155,.15);--hl-key:#2a4d9b;--hl-key-bg:#dfe7f7;--hl-formula:#1b336a;--hl-formula-bg:#e9eef9;--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 130 200%27%3E%3Cg fill=%27none%27 stroke=%27%232a4d9b%27 stroke-width=%274%27 stroke-linejoin=%27round%27%3E%3Cpath d=%27M14 14h80a10 10 0 0 1 10 10v34a10 10 0 0 1-10 10H48l-18 16V68H14A10 10 0 0 1 4 58V24a10 10 0 0 1 10-10z%27/%3E%3Cpath d=%27M40 106h76a10 10 0 0 1 10 10v30a10 10 0 0 1-10 10h-12v16l-18-16H40a10 10 0 0 1-10-10v-30a10 10 0 0 1 10-10z%27/%3E%3C/g%3E%3Cg fill=%27%232a4d9b%27%3E%3Ccircle cx=%2736%27 cy=%2741%27 r=%275%27/%3E%3Ccircle cx=%2754%27 cy=%2741%27 r=%275%27/%3E%3Ccircle cx=%2772%27 cy=%2741%27 r=%275%27/%3E%3C/g%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#8fb0f0;--accent-dark:#c3d4f8;--accent-soft:#18223a;--accent-line:#33466e;--accent-glow:rgba(143,176,240,.2);--hl-key:#a9c2f4;--hl-key-bg:#1d2a46;--hl-formula:#c3d4f8;--hl-formula-bg:#18223a;}}
+:root[data-theme=dark]{--accent:#8fb0f0;--accent-dark:#c3d4f8;--accent-soft:#18223a;--accent-line:#33466e;--accent-glow:rgba(143,176,240,.2);--hl-key:#a9c2f4;--hl-key-bg:#1d2a46;--hl-formula:#c3d4f8;--hl-formula-bg:#18223a;}
+
+/* wyrażenie po angielsku w tekście polskim i wymowa */
+.en{font-style:italic;font-weight:600;color:var(--accent)}
+.ipa{font-family:var(--serif);font-size:.95em;color:var(--text-muted);white-space:nowrap}
+.ipa::before{content:"/"}.ipa::after{content:"/"}
+/* wzór zdania: podmiot + operator + czasownik */
+.wzor{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:10px 0}
+.wzor span{padding:5px 10px;border-radius:8px;border:1px solid var(--accent-line);background:var(--accent-soft);font-weight:700;font-size:14px}
+.wzor span.op{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.wzor b{color:var(--text-muted);font-weight:700}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+<header class="lk-bar"><span class="lk-subj"><i></i>Język angielski</span><span class="lk-title">L001 </span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<main class="page" id="main">
+<section class="hero card"><div class="hero-kicker">Język angielski, lekcja L001</div><h1></h1><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">0. Cel lekcji</a><a class="toc-link" href="#s2">1. Zanim zaczniesz – szybki test</a><a class="toc-link" href="#s3">2. Czym są czasowniki modalne?</a><a class="toc-link" href="#s4">3. Can, Could, May, Might</a><a class="toc-link" href="#s5">4. Must i Have to – różne źródła obowiązku</a><a class="toc-link" href="#s6">5. Mustn't vs Don't have to</a><a class="toc-link" href="#s7">6. Should / ought to – rada i powinność</a><a class="toc-link" href="#s8">7. Will / going to – przyszłość</a><a class="toc-link" href="#s9">8. Would like (to) – uprzejme prośby i chęci</a><a class="toc-link" href="#s10">9. Formy gramatyczne – pytania, przeczenia, krótkie odpowiedzi</a><a class="toc-link" href="#s11">10. Czasowniki modalne w przeszłości – should have, could have, must have</a><a class="toc-link" href="#s12">11. Need to i Ought to – alternatywy dla must i should</a><a class="toc-link" href="#s13">12. Funkcje językowe</a><a class="toc-link" href="#s14">11. Słownictwo – obowiązki, zdrowie, bezpieczeństwo</a><a class="toc-link" href="#s15">12. Tip tygodnia – zestaw obok siebie</a><a class="toc-link" href="#s16">13. Ćwiczenia</a><a class="toc-link" href="#s17">14. Mini-dialogi – uzupełnij luki</a><a class="toc-link" href="#s18">15. E8 Lab – pułapki z prawdziwych arkuszy</a><a class="toc-link" href="#s19">16. Ważne! – 8 kluczowych zasad</a><a class="toc-link" href="#s20">17. Najczęstsze błędy i pułapki</a><a class="toc-link" href="#s21">18. Podsumowanie</a><a class="toc-link" href="#s22">19. Test końcowy – MISJA</a><a class="toc-link" href="#s23">20. Mini-test podsumowujący (6 pytań)</a><a class="toc-link" href="#s24">21. Ćwiczenia mieszane – sprawdź wszystko naraz</a><a class="toc-link" href="#s25">22. FAQ – najczęstsze wątpliwości</a><a class="toc-link" href="#s26">23. False friends – fałszywi przyjaciele</a><a class="toc-link" href="#s27">24. Test wyjściowy – sprawdź swój postęp</a><a class="toc-link" href="#s28">25. Fiszki</a><a class="toc-link" href="#s29">26. MASTER – wyjaśnij dlaczego</a><a class="toc-link" href="#s30">27. Napisz – regulamin klasy / wiadomość</a><a class="toc-link" href="#s31">28. Odnośniki do powiązanych lekcji</a></nav></details>
+<p>kod: L001
+przedmiot: angielski
+tytul: Czasowniki modalne i HAVE TO
+lead: Can, could, may, must, have to, should, will/going to, would like (to), modalne w przeszłości.
+stopka: Lekcja 1 – Czasowniki modalne i HAVE TO • Pakiet gramatyki angielskiej, lekcje 1–12 • 2026-10-15
+zrodlo: L001-EN-Wszystkie-lekcje.md (sekcja „LEKCJA 1 – CZASOWNIKI MODALNE I HAVE TO”), wydzielono 2026-10-15
+stan: pełna lekcja (wydzielona z pakietu) — 2026-10-15, do W1</p>
+<!-- UI: PROGRESS -->
+<hr class="lk-hr"/>
+<section id="s1">
+<div class="part-heading"><span class="part-num">0</span> Cel lekcji</div>
+<p>Po tej lekcji będziesz potrafić:
+- rozróżniać <strong>must</strong> i <strong>have to</strong> w zależności od kontekstu,
+- używać <strong>mustn't</strong> (zakaz) i <strong>don't have to</strong> (brak konieczności),
+- poprawnie tworzyć pytania z <strong>have to</strong> (z operatorem do/does/did),
+- używać <strong>can, could, may, might</strong> do wyrażania umiejętności, możliwości i pozwoleń,
+- doradzać (<strong>should</strong>), mówić o przyszłości (<strong>will</strong>), wyrażać chęci (<strong>would like to</strong>) i potrzeby (<strong>need to</strong>),
+- stosować konstrukcje z czasownikami modalnymi w przeszłości (dla ambitnych).</p>
+<hr class="lk-hr"/>
+</section>
+<section id="s2">
+<div class="part-heading"><span class="part-num">1</span> Zanim zaczniesz – szybki test</div>
+<!-- UI: CLOZE --> <!-- UI: CHOICE --> <!-- UI: ERROR -->
+<p>Instrukcja: Rozwiąż test samodzielnie, a następnie sprawdź odpowiedzi. Zapisz swój wynik i wróć do tych samych pytań po zakończeniu lekcji.</p>
+<ol>
+<li>You __________ talk during the exam. (zakaz)</li>
+<li>I __________ study harder – I really want a good mark. (must / have to)</li>
+<li>Popraw: She can to dance very well.</li>
+<li>Przetłumacz: Czy musisz iść do lekarza?</li>
+<li>Uzupełnij: You __________ drink more water. It's healthy. (rada)</li>
+<li>It __________ rain later, so take an umbrella. (możliwość, less certain than 'will')</li>
+</ol>
+<details>
+<summary><strong>Odpowiedzi do testu wstępnego</strong></summary>
+<ol>
+<li>mustn't – zakaz</li>
+<li>must – wewnętrzna motywacja (ale <em>have to</em> też byłoby możliwe w innym kontekście)</li>
+<li>She can dance very well. (po czasowniku modalnym bez to)</li>
+<li>Do you have to go to the doctor?</li>
+<li>should – rada</li>
+<li>might / may – możliwość, ale mniej pewna niż 'will'</li>
+</ol>
+<p></details></p>
+<hr class="lk-hr"/>
+</section>
+<section id="s3">
+<div class="part-heading"><span class="part-num">2</span> Czym są czasowniki modalne?</div>
+<p>[POZIOM E8]</p>
+<p>Czasowniki modalne to specjalne słowa, które mówią nam, <strong>jak</strong> coś robimy – czy coś jest obowiązkowe, możliwe, dozwolone, czy tylko zalecane. Nie opisują samej czynności, tylko <strong>nasz stosunek</strong> do niej.</p>
+<p><strong>DLACZEGO to ważne?</strong></p>
+<p>W polskim mówimy: "Chcę iść." Jedno słowo "chcę" wyraża naszą postawę.
+W angielskim rozróżniamy:
+- I <strong>must</strong> go. – Muszę iść; podkreślam silną konieczność, nakaz lub własne stanowisko.
+- I <strong>have to</strong> go. – Muszę iść; konieczność wynika np. z sytuacji, zasad albo decyzji innej osoby.
+- I <strong>should</strong> go. – Powinienem iść; to rada, a nie obowiązek.
+- I <strong>can</strong> go. – Mogę iść; mam możliwość, umiem albo mam nieformalne pozwolenie.
+- I <strong>may</strong> go. – Mogę iść; wyrażam możliwość albo proszę o formalne pozwolenie.</p>
+<p>[MEMORY ANCHOR: Czasowniki modalne — 5 różnych POSTAW]
+Zapamiętaj: MUST/HAVE TO/SHOULD/CAN/MAY = 5 RÓŻNYCH znaczeń i emocji
+Mnemotechnika: Każdy modał to INNA POSTAWA wobec czynności
+Kluczowe pytanie: "Jaki jest MOJ STOSUNEK do tej czynności?"
+Na egzaminie E8: Zawsze zastanów się DLACZEGO wybierasz ten modal
+Olimpiada: Różnice między modalami są KULTUROWE — angielskie podejście do obowiązku</p>
+<p>Angielski <strong>wymaga od nas precyzji</strong> — musisz zdecydować, <strong>jakie jest źródło</strong> obowiązku lub możliwości.</p>
+<p><strong>Najważniejsza zasada</strong>
+Po <strong>większości</strong> czasowników modalnych używamy <strong>formy podstawowej</strong> (bezokolicznika) <strong>bez „to"</strong>.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Poprawnie</th><th>Błąd</th></tr></thead>
+<tbody>
+<tr><td>She <strong>can swim</strong>.</td><td>She can <strong>to</strong> swim.</td></tr>
+<tr><td>You <strong>should rest</strong>.</td><td>You should <strong>to</strong> rest.</td></tr>
+<tr><td>I <strong>must study</strong>.</td><td>I must <strong>to</strong> study.</td></tr>
+</tbody></table></div>
+<p><strong>Wyjątki od zasady:</strong>
+- <strong>ought to</strong> – po tym czasowniku pojawia się <em>to</em>: <em>You ought to rest.</em>
+- <strong>have to</strong>, <strong>need to</strong>, <strong>be able to</strong> – to konstrukcje, które zawierają <em>to</em>, choć nie są typowymi modalnymi. Zachowują się inaczej w pytaniach i przeczeniach.</p>
+<p><strong>Co jeszcze warto wiedzieć</strong>
+- Czasowniki modalne <strong>nie zmieniają się</strong> przez osoby (nie dodajemy -s w 3. os. l. poj.).
+- W pytaniach i przeczeniach <strong>nie używamy</strong> operatorów do/does/did – czasownik modalny sam tworzy pytanie i przeczenie.
+- Wyjątek: <strong>have to</strong> – zachowuje się w pytaniach i przeczeniach podobnie do zwykłego czasownika: używa do/does/did.
+- <strong>Need to</strong> używa do/does/did w pytaniach i przeczeniach (<em>Do you need to go?</em>). <strong>Ought to</strong> natomiast jest marginalnym czasownikiem modalnym i nie używa do: pytanie brzmi <em>Ought I to go?</em>, a przeczenie <em>ought not to</em>.</p>
+<p><strong>Formy przeczące (skróty)</strong></p>
+<div class="table-wrap"><table>
+<thead><tr><th>Forma pełna</th><th>Skrót</th><th>Znaczenie</th><th>Uwaga</th></tr></thead>
+<tbody>
+<tr><td>cannot</td><td>can't</td><td>nie potrafię / nie mogę</td><td>bardzo często używane</td></tr>
+<tr><td>could not</td><td>couldn't</td><td>nie potrafiłem / nie mógłbym</td><td>–</td></tr>
+<tr><td>must not</td><td>mustn't</td><td>nie wolno</td><td>–</td></tr>
+<tr><td>should not</td><td>shouldn't</td><td>nie powinieneś</td><td>–</td></tr>
+<tr><td>will not</td><td>won't</td><td>nie zrobię / nie będzie</td><td>–</td></tr>
+<tr><td>would not</td><td>wouldn't</td><td>nie chciałbym</td><td>–</td></tr>
+<tr><td>may not</td><td>–</td><td>nie wolno / może nie</td><td><em>mayn't</em> jest bardzo rzadkie, pomiń je</td></tr>
+<tr><td>might not</td><td>mightn't (rzadko)</td><td>może nie</td><td>rzadkie, lepiej używać pełnej formy</td></tr>
+<tr><td>need not</td><td>needn't</td><td>nie muszę</td><td>modalna forma formalna; w codziennym angielsku częściej <em>don't need to</em></td></tr>
+</tbody></table></div>
+<p><strong>Schemat:</strong> <code>podmiot → czasownik modalny → forma podstawowa (bez to!)</code>
+np. <em>She can dance.</em> (nie: <em>She can to dance.</em>)</p>
+<!-- UI: AUDIO --> *She can dance. / You mustn't run. / I have to go.*
+<hr class="lk-hr"/>
+</section>
+<section id="s4">
+<div class="part-heading"><span class="part-num">3</span> Can, Could, May, Might</div>
+<!-- UI: DIAGRAM -->
+<p>[POZIOM E8]</p>
+<p><strong>Czy to umiejętność / możliwość / prośba nieformalna?</strong>
+→ TAK → <strong>can</strong></p>
+<p><strong>Czy to przeszłość lub uprzejma prośba o pomoc?</strong>
+→ TAK → <strong>could</strong></p>
+<p><strong>Czy to formalne pozwolenie lub możliwość?</strong>
+→ TAK → <strong>may</strong></p>
+<p><strong>Czy to mniej pewna możliwość (może, ale nie jestem pewien)?</strong>
+→ TAK → <strong>might</strong> (często wymienne z <em>may</em>, choć <em>might</em> bywa postrzegane jako ostrożniejsze)</p>
+<hr class="lk-hr"/>
+<h3>Can – teraźniejszość (nieformalne)</h3>
+<ul>
+<li><strong>Umiejętność</strong> – potrafię, umiem</li>
+<li><strong>Możliwość</strong> – mogę (coś jest możliwe)</li>
+<li><strong>Pozwolenie</strong> – mogę (nieformalne, np. w domu, z przyjaciółmi)</li>
+<li><strong>Prośba o pomoc</strong> – czy możesz (nieformalna)</li>
+</ul>
+<div class="table-wrap"><table>
+<thead><tr><th>Przykład</th><th>Tłumaczenie</th><th>Funkcja</th></tr></thead>
+<tbody>
+<tr><td>I <strong>can speak</strong> English.</td><td>Umiem mówić po angielsku.</td><td>umiejętność</td></tr>
+<tr><td>You <strong>can park</strong> here on Sundays.</td><td>W niedziele możesz tu parkować.</td><td>możliwość</td></tr>
+<tr><td><strong>Can</strong> I <strong>borrow</strong> your pen?</td><td>Mogę pożyczyć twój długopis?</td><td>pozwolenie (nieformalne)</td></tr>
+<tr><td><strong>Can</strong> you <strong>close</strong> the door?</td><td>Czy możesz zamknąć drzwi?</td><td>prośba o pomoc (nieformalna)</td></tr>
+</tbody></table></div>
+<!-- UI: AUDIO --> *I can speak English. / Can you help me?*
+<hr class="lk-hr"/>
+<!-- UI: AMBITNY --> **Dla ambitnych · be able to**
+<p><em>Can</em> nie ma tradycyjnej formy na przyszłość w tym sensie, że nie można powiedzieć <em>~~will can~~</em>. Zamiast tego używamy <strong>be able to</strong> (będę mógł coś zrobić). Jednak <em>can</em> może odnosić się do przyszłości w zdaniach o ustalonej możliwości lub planie, np. <em>I can help you tomorrow.</em></p>
+<p>W przyszłości <em>be able to</em> używa się w kilku sytuacjach:
+- w przyszłości: <em>I <strong>will be able to</strong> help you tomorrow.</em> – Jutro będę mógł ci pomóc.
+- przy jednorazowym osiągnięciu w przeszłości (gdy coś się udało): <em>She <strong>was able to</strong> finish the test.</em> – Udało jej się ukończyć test.
+- po innych czasownikach modalnych: <em>I <strong>might be able to</strong> come.</em> – Mogę być w stanie przyjść.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Czas</th><th>Przykład</th><th>Tłumaczenie</th></tr></thead>
+<tbody>
+<tr><td>Przyszłość</td><td>I <strong>will be able to</strong> help you tomorrow.</td><td>Jutro będę mógł ci pomóc.</td></tr>
+<tr><td>Przeszłość (umiejętność)</td><td>When I was six, I <strong>could</strong> swim.</td><td>Kiedy miałem sześć lat, potrafiłem pływać.</td></tr>
+<tr><td>Przeszłość (jednorazowe osiągnięcie)</td><td>She <strong>was able to</strong> finish the test.</td><td>Udało jej się ukończyć test.</td></tr>
+</tbody></table></div>
+<!-- UI: AUDIO --> *I will be able to help you tomorrow. / She was able to finish the test.*
+<hr class="lk-hr"/>
+<h3>Could – przeszłość, uprzejmość, możliwość i propozycja</h3>
+<p>Could ma wiele użyć:</p>
+<ul>
+<li><strong>Umiejętność w przeszłości</strong> – mogłem, potrafiłem (zdolność ogólna, np. <em>I could swim</em> = potrafiłem pływać)</li>
+<li><strong>Uprzejma prośba o pomoc</strong> – czy mógłbyś (bardziej grzecznie niż <em>can</em>)</li>
+<li><strong>Możliwość</strong> – mogłoby (teoretyczna możliwość; dotyczy zarówno teraźniejszości, jak i przyszłości)</li>
+<li><strong>Propozycja</strong> – moglibyśmy, możemy by</li>
+</ul>
+<p class="mini-note"><strong>UWAGA:</strong> Przy <strong>jednorazowym osiągnięciu w przeszłości</strong> (gdy coś się udało) często używa się <strong>was/were able to</strong>, a nie <em>could</em>. Por. sekcję <em>be able to</em> poniżej.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Przykład</th><th>Tłumaczenie</th><th>Funkcja</th></tr></thead>
+<tbody>
+<tr><td>When I was six, I <strong>could ride</strong> a bike.</td><td>Kiedy miałem sześć lat, potrafiłem jeździć na rowerze.</td><td>przeszła umiejętność</td></tr>
+<tr><td><strong>Could</strong> you <strong>tell</strong> me the time, please?</td><td>Czy mógłbyś mi podać godzinę, proszę?</td><td>uprzejma prośba o pomoc</td></tr>
+<tr><td>It <strong>could snow</strong> tomorrow.</td><td>Jutro mogłoby padać (śnieg).</td><td>możliwość (teoretyczna)</td></tr>
+<tr><td>We <strong>could go</strong> to the cinema.</td><td>Moglibyśmy pójść do kina.</td><td>propozycja</td></tr>
+</tbody></table></div>
+<!-- UI: AUDIO --> *Could you open the window, please? / When I was six, I could ride a bike. / It could snow tomorrow. / We could go to the cinema.*
+<hr class="lk-hr"/>
+<h3>May i Might – pozwolenie formalne, możliwość</h3>
+<ul>
+<li><strong>May</strong> — formalne pozwolenie (szczególnie wobec osób dorosłych, nauczycieli) lub możliwość</li>
+<li><strong>Might</strong> — możliwość, często wymienne z <em>may</em>. Niektórzy mówiący uważają, że <em>might</em> wyraża nieco mniejszą pewność, ale w praktyce różnica jest delikatna lub jej brak</li>
+</ul>
+<div class="table-wrap"><table>
+<thead><tr><th>Przykład</th><th>Tłumaczenie</th><th>Funkcja</th></tr></thead>
+<tbody>
+<tr><td><strong>May</strong> I <strong>go</strong> to the toilet?</td><td>Czy mogę pojść do toalety? (do nauczyciela)</td><td>prośba o pozwolenie (formalne)</td></tr>
+<tr><td>She <strong>may be</strong> at home now.</td><td>Ona może być teraz w domu.</td><td>możliwość</td></tr>
+<tr><td>He <strong>might come</strong> later.</td><td>On może przyjść później.</td><td>możliwość (często ostrożniejsze)</td></tr>
+</tbody></table></div>
+<p><strong>Ważne rozróżnienie:</strong>
+- <em>May I help you?</em> — Czy mogę ci pomóc? (oferta pomocy)
+- <em>May you help me?</em> — Czy możesz mi pomóc? (nienaturalne – <em>May</em> nie używamy do próśb o pomoc skierowanych do kogoś)
+- Na prośbę o pomoc używamy: <em>Can you help me?</em> (nieformalna) lub <em>Could you help me?</em> (uprzejma)</p>
+<!-- UI: AUDIO --> *May I go to the toilet? – Yes, you may. / She may be at home now. / He might come later.*
+<hr class="lk-hr"/>
+<h3>Podsumowanie: Can / Could / May / Might</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Czasownik modalny</th><th>Użycie</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td><strong>can</strong></td><td>umiejętność, możliwość, prośba o pomoc (nieformalne), pozwolenie</td><td>I can swim. / Can you help me? / You can park here.</td></tr>
+<tr><td><strong>could</strong></td><td>umiejętność w przeszłości, uprzejma prośba o pomoc, możliwość, propozycja</td><td>I could swim when I was six. / Could you help me? / It could rain. / We could go out.</td></tr>
+<tr><td><strong>may</strong></td><td>formalne pozwolenie, możliwość</td><td>May I come in? / It may rain.</td></tr>
+<tr><td><strong>might</strong></td><td>możliwość, czasem ostrożniejsza niż <em>may</em></td><td>It might rain.</td></tr>
+</tbody></table></div>
+<p>W znaczeniu <strong>możliwości</strong> (<em>It may/might/could rain</em>) te trzy czasowniki mogą być podobne, ale nie są zawsze wymienne – różnią się stylem, formalnością i odcieniem pewności.</p>
+<hr class="lk-hr"/>
+<h3>Porównanie funkcji – prośba o pomoc vs prośba o pozwolenie</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Funkcja</th><th>Konstrukcja</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td>Prośba o pomoc (do kogoś)</td><td><em>Can you…? / Could you…?</em></td><td><em>Could you open the window?</em></td></tr>
+<tr><td>Prośba o pozwolenie</td><td><em>Can I…? / May I…?</em></td><td><em>May I borrow your pen?</em></td></tr>
+<tr><td>Oferta pomocy</td><td><em>May I…? / Can I…?</em></td><td><em>May I help you?</em></td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+<p>[TRICKY_PAIRS: HAVE (posiadanie) vs HAS (trzecia osoba) — Dlaczego angielski robi to inaczej?]
+PO POLSKU: "Mam" = zawsze to samo
+PO ANGIELSKU: "I have" vs "He has" — forma zmienia się z osobą!</p>
+<p>To jest CAN a BE ani DO — to ZWYKŁY czasownik!
+- I have a cat. ✓ (DO: forma podstawowa)
+- She has a cat. ✓ (DO: trzecia osoba + S)
+- Do you have a cat? ✓ (DO: pytanie z DO)
+- I don't have a cat. ✓ (DO: przeczenie z DON'T)</p>
+<p>OLIMPIADA: Zauważ, że "have" to czynność — nie stan — dlatego bierzemy DO, a nie BE!</p>
+</section>
+<section id="s5">
+<div class="part-heading"><span class="part-num">4</span> Must i Have to – różne źródła obowiązku</div>
+<!-- UI: DIAGRAM -->
+<p>[POZIOM E8]</p>
+<p><code>Must</code> i <code>have to</code> oznaczają obowiązek lub konieczność. Różnica między nimi jest subtelna i w wielu sytuacjach obie formy są prawidłowe.</p>
+<ul>
+<li><code>must</code> — często wyraża silną konieczność wynikającą z osobistego przekonania mówiącego, oficjalnego nakazu lub regulaminu</li>
+<li><code>have to</code> — często wskazuje na konieczność wynikającą z sytuacji, zasad lub okoliczności zewnętrznych; w wielu zdaniach obie formy są możliwe</li>
+</ul>
+<p><strong>Logika różnicy:</strong></p>
+<p>[MEMORY ANCHOR: MUST vs HAVE TO — Subtelne rozróżnienie]</p>
+<p>Must i have to oba mogą znaczyć "musieć", ale różnica często zależy od tego, co chcemy podkreślić, dlatego w wielu zdaniach obie formy są możliwe.</p>
+<ul>
+<li><strong>must</strong> często podkreśla silny nakaz, stanowisko mówiącego, formalną regułę lub osobiste przekonanie</li>
+<li><strong>have to</strong> często opisuje konieczność wynikającą z sytuacji, zasad, prawa albo decyzji innej osoby</li>
+</ul>
+<p>Nie traktuj tego jako sztywnej reguły "must = wewnętrznie, have to = zewnętrznie". Zdanie <em>I must go to school</em> jest poprawne, ale w codziennej rozmowie częściej usłyszysz <em>I have to go to school</em>. Na egzaminie wybieraj formę najlepiej pasującą do podanego kontekstu.</p>
+<p>Przykłady kontekstu:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Kontekst</th><th>MUST</th><th>HAVE TO</th><th>Wyjaśnienie</th></tr></thead>
+<tbody>
+<tr><td>Egzamin</td><td>I must pass.</td><td>(również możliwe)</td><td>Wewnętrzna motywacja — ty tego chcesz (ale <em>have to</em> też byłoby poprawne)</td></tr>
+<tr><td>Szkolna reguła</td><td>(również możliwe)</td><td>I have to wear a uniform.</td><td>Reguła z zewnątrz — szkoła każe (ale <em>must</em> też możliwe jako formalny nakaz)</td></tr>
+<tr><td>Zdrowie</td><td>I must stop smoking.</td><td>I have to take medicine.</td><td>Pierwsza: twoja decyzja. Druga: lekarz zalecił (ale mogą być wymienne)</td></tr>
+<tr><td>Przepisy drogowe</td><td>You must wear a seat belt.</td><td>You have to pay taxes.</td><td>Oba są poprawne — przepisy z zewnątrz (mogą być wymienne)</td></tr>
+</tbody></table></div>
+<p><strong>Przykład od Ałicji (uczennicy):</strong>
+- <em>I must study hard. I really want to pass the exam.</em> — Muszę się dużo uczyć. Naprawdę chcę zdać. (moja chęć)
+- <em>I have to study hard because my parents said so.</em> — Muszę się dużo uczyć, bo rodzice tak powiedzieli. (wymóg z zewnątrz)</p>
+<hr class="lk-hr"/>
+<h3>Must – obowiązek (silny nakaz, stanowisko mówiącego)</h3>
+<p><em>Must</em> wyraża silny obowiązek, nakaz lub stanowisko mówiącego.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Przykład</th><th>Tłumaczenie</th><th>Uwaga</th></tr></thead>
+<tbody>
+<tr><td>I <strong>must study</strong> hard. I want to pass the exam.</td><td>Muszę się dużo uczyć. Chcę zdać egzamin.</td><td>stanowisko mówiącego (moja chęć)</td></tr>
+<tr><td>I <strong>must call</strong> my grandma – it's her birthday.</td><td>Muszę zadzwonić do babci – ma urodziny.</td><td>stanowisko mówiącego (emocjonalnie ważne)</td></tr>
+<tr><td>You <strong>must wear</strong> a seat belt.</td><td>Musisz zapiąć pasy.</td><td>przepis (oba można użyć dla przepisów)</td></tr>
+<tr><td>Visitors <strong>must show</strong> their ID.</td><td>Odwiedzający muszą okazać dowód tożsamości.</td><td>formalna reguła / przepis</td></tr>
+</tbody></table></div>
+<!-- UI: AUDIO --> *I must study hard. I want to pass the exam. / You must wear a seat belt.*
+<hr class="lk-hr"/>
+<h3>Have to – konieczność (wynikająca z sytuacji, zasad lub faktów)</h3>
+<p><em>Have to</em> wyraża konieczność wynikającą z sytuacji, zasad, prawa lub faktów.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Przykład</th><th>Tłumaczenie</th></tr></thead>
+<tbody>
+<tr><td>I <strong>have to wear</strong> a uniform at school.</td><td>Muszę nosić mundurek w szkole. (to zasada)</td></tr>
+<tr><td>She <strong>has to take</strong> medicine every day.</td><td>Ona musi codziennie brać lekarstwo. (zalecił lekarz)</td></tr>
+<tr><td>They <strong>have to pay</strong> taxes.</td><td>Oni muszą płacić podatki. (wymóg prawny)</td></tr>
+<tr><td>I <strong>have to call</strong> my grandmother; she asked me to.</td><td>Muszę zadzwonić do babci; prosiła mnie o to. (zewnętrzny powód)</td></tr>
+<tr><td>I <strong>have to go</strong> now because my bus leaves in five minutes.</td><td>Muszę już iść, bo mój autobus odjeżdża za pięć minut. (sytuacja, nie "ktoś mnie zmusza")</td></tr>
+</tbody></table></div>
+<!-- UI: AUDIO --> *I have to wear a uniform at school. / She has to take medicine every day.*
+<hr class="lk-hr"/>
+<h3>Podsumowanie – must vs have to</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Must</th><th>Have to</th></tr></thead>
+<tbody>
+<tr><td>Często podkreśla stanowisko mówiącego, silny nakaz lub formalną regułę.</td><td>Często wskazuje na konieczność wynikającą z sytuacji, zasad, prawa lub decyzji innej osoby.</td></tr>
+<tr><td>W wielu zdaniach obie formy są wymienne.</td><td>W wielu zdaniach obie formy są wymienne.</td></tr>
+<tr><td>Przeszłość dla obowiązku: <code>had to</code> (must nie ma przeszłości w tym znaczeniu).</td><td>Przeszłość: <code>had to</code>.</td></tr>
+<tr><td><em>Must have + V3</em> = silne przypuszczenie dotyczące przeszłości (NIE obowiązek).</td><td>–</td></tr>
+</tbody></table></div>
+<p><strong>Ważne:</strong> W wielu zdaniach mogą być obie formy poprawne. Różnica między nimi jest subtelna i zależy od kontekstu oraz stanowiska mówiącego.</p>
+<hr class="lk-hr"/>
+<h3>Odmiana have to</h3>
+<p><em>Have to</em> odmienia się jak zwykły czasownik – dostaje <strong>-s</strong> w 3. os. l. poj. i używa operatorów <strong>do/does/did</strong> w pytaniach i przeczeniach.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Osoba</th><th>Teraźniejszość</th><th>Przeszłość</th></tr></thead>
+<tbody>
+<tr><td>I / you / we / they</td><td>have to</td><td>had to</td></tr>
+<tr><td>he / she / it</td><td>has to</td><td>had to</td></tr>
+<tr><td>Pytanie</td><td>Do / Does … have to?</td><td>Did … have to?</td></tr>
+<tr><td>Przeczenie</td><td>don't / doesn't have to</td><td>didn't have to</td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+<h3>Przeszłość: had to (obowiązek) vs must have + V3 (przypuszczenie)</h3>
+<p>[POZIOM AMBITNY]</p>
+<p><strong>WAŻNE:</strong> <em>Must</em> nie ma formy przeszłej w znaczeniu <strong>obowiązku</strong>. W przeszłości używamy <strong>had to</strong> dla obowiązku.
+Natomiast <em>must have + V3</em> jest normalną konstrukcją odnoszącą się do przeszłości i wyraża <strong>silne przypuszczenie</strong> (wniosek).</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Przykład</th><th>Tłumaczenie</th><th>Znaczenie</th></tr></thead>
+<tbody>
+<tr><td>Yesterday I <strong>had to</strong> wake up at 5 a.m.</td><td>Wczoraj musiałem wstać o 5 rano.</td><td>obowiązek w przeszłości</td></tr>
+<tr><td>I <strong>didn't have to</strong> go to school yesterday.</td><td>Nie musiałem iść wczoraj do szkoły.</td><td>brak obowiązku w przeszłości</td></tr>
+<tr><td><strong>Did</strong> you <strong>have to</strong> pay?</td><td>Czy musiałeś zapłacić?</td><td>pytanie o obowiązek w przeszłości</td></tr>
+</tbody></table></div>
+<h3>Ważne: must have + V3 to nie obowiązek!</h3>
+<p><strong>Must have + past participle (III forma)</strong> wyraża <strong>silne przypuszczenie dotyczące przeszłości</strong>, a nie obowiązek:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Konstrukcja</th><th>Znaczenie</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td><em>had to</em></td><td>obowiązek w przeszłości</td><td>I <em>had to</em> go. — Musiałem iść. (było to konieczne)</td></tr>
+<tr><td><em>must have</em></td><td>silne przypuszczenie</td><td>She <em>must have</em> forgotten. — Ona musiała zapomnieć. (przypuszczam, że zapomniała)</td></tr>
+</tbody></table></div>
+<p><strong>Przykłady:</strong>
+- <em>She <strong>must have</strong> forgotten the meeting.</em> — Ona musiała zapomnieć o spotkaniu. (jestem prawie pewien, że zapomniała)
+- <em>He <strong>must have</strong> been tired.</em> — Musiał być zmęczony. (sądzę, że tak)
+- <em>I <strong>had to</strong> go yesterday.</em> — Musiałem iść wczoraj. (byłem zmuszony)</p>
+<hr class="lk-hr"/>
+<h3>Pytania i przeczenia z have to</h3>
+<p><em>Have to</em> w pytaniach i przeczeniach potrzebuje operatora <strong>do / does / did</strong>.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Przykład</th><th>Tłumaczenie</th></tr></thead>
+<tbody>
+<tr><td><strong>Do</strong> you <strong>have to</strong> go now?</td><td>Czy musisz już iść?</td></tr>
+<tr><td>She <strong>doesn't have to</strong> come.</td><td>Ona nie musi przychodzić.</td></tr>
+<tr><td><strong>Did</strong> they <strong>have to</strong> wait?</td><td>Czy oni musieli czekać?</td></tr>
+<tr><td>He <strong>doesn't have to</strong> work today.</td><td>On nie musi dzisiaj pracować.</td></tr>
+</tbody></table></div>
+<p><strong>Kluczowa zasada — Zapamiętaj na egzamin:</strong>
+❌ <em>Have you to go?</em> — BŁĄD
+✅ <em>Do you have to go?</em> — POPRAWNIE</p>
+<p>Dlaczego? W konstrukcji <strong>have to</strong> czasownik <em>have</em> nie jest typowym modalem, więc w pytaniach i przeczeniach używamy <em>do/does/did</em>.</p>
+<hr class="lk-hr"/>
+<h3>Ćwiczenie – must vs have to w kontekście</h3>
+<!-- UI: CLOZE -->
+<p>[POZIOM E8]</p>
+<p>Uzupełnij <strong>must</strong> lub <strong>have to</strong> (w odpowiedniej formie). W niektórych zdaniach obie formy są możliwe – wybierz tę, która najlepiej pasuje do kontekstu.</p>
+<ol>
+<li>I __________ go to the dentist tomorrow. My tooth hurts a lot.</li>
+<li>You __________ be quiet in the library. It's a rule.</li>
+<li>She __________ finish the project today – she has a deadline.</li>
+<li>I __________ call my best friend – it's her birthday and I want to wish her well.</li>
+<li>We __________ wear a uniform at our school.</li>
+<li>You __________ try this cake – it's delicious! (silna rekomendacja mówiącego)</li>
+</ol>
+<details>
+<summary><strong>Odpowiedzi z komentarzem</strong></summary>
+<ol>
+<li>have to – ból zęba (zewnętrzny powód; <em>must</em> też możliwe, ale <em>have to</em> bardziej naturalne)</li>
+<li>have to – reguła biblioteki (ale <em>must</em> też byłoby poprawne jako nakaz)</li>
+<li>has to – deadline (zewnętrzny; <em>must</em> też możliwe)</li>
+<li>must – własna chęć zadzwonienia</li>
+<li>have to – szkolna zasada (lub <em>must</em> – formalny nakaz)</li>
+<li>must – silna rekomendacja mówiącego</li>
+</ol>
+<p></details></p>
+<hr class="lk-hr"/>
+</section>
+<section id="s6">
+<div class="part-heading"><span class="part-num">5</span> Mustn't vs Don't have to</div>
+<!-- UI: DIAGRAM -->
+<p>[POZIOM E8]</p>
+<p><strong>Logika fundamentalna:</strong></p>
+<p>Mustn't i don't have to mogą brzmieć podobnie po polsku ("nie muszę"), ale w angielskim to ZUPEŁNIE inne znaczenia:</p>
+<p><strong>MUSTN'T = ZAKAZ</strong> (nie wolno ci tego robić — jest zabronione, to jest niedozwolone)
+<strong>DON'T HAVE TO = BRAK OBOWIĄZKU</strong> (nie musisz tego robić — ale możesz jeśli chcesz, to opcjonalne)</p>
+<p><strong>Decyzja:</strong></p>
+<p>Czy to zdanie o <strong>zakazie</strong> (nie wolno)?
+→ TAK → <strong>mustn't</strong></p>
+<p>Czy to zdanie o <strong>braku konieczności</strong> (nie muszę, ale mogę)?
+→ TAK → <strong>don't have to</strong></p>
+<hr class="lk-hr"/>
+<h3>Mustn't – zakaz</h3>
+<p><em>Mustn't</em> oznacza <strong>nie wolno</strong> – coś jest zabronione.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Przykład</th><th>Tłumaczenie</th></tr></thead>
+<tbody>
+<tr><td>You <strong>mustn't cheat</strong> during the exam.</td><td>Nie wolno oszukiwać podczas egzaminu.</td></tr>
+<tr><td>You <strong>mustn't run</strong> in the corridor.</td><td>Nie wolno biegać na korytarzu.</td></tr>
+<tr><td>Children <strong>mustn't play</strong> with matches.</td><td>Dzieciom nie wolno bawić się zapałkami.</td></tr>
+</tbody></table></div>
+<!-- UI: AUDIO --> *You mustn't cheat during the exam. / You mustn't run in the corridor.*
+<hr class="lk-hr"/>
+<h3>Don't have to – brak konieczności</h3>
+<p><em>Don't have to</em> oznacza <strong>nie muszę</strong> – coś jest opcjonalne.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Przykład</th><th>Tłumaczenie</th></tr></thead>
+<tbody>
+<tr><td>You <strong>don't have to come</strong> to the party – it's optional.</td><td>Nie musisz przychodzić na imprezę – to opcjonalne.</td></tr>
+<tr><td>You <strong>don't have to pay</strong> for the ticket – it's free.</td><td>Nie musisz płacić za bilet – jest bezpłatny.</td></tr>
+<tr><td>We <strong>don't have to wear</strong> ties at work.</td><td>Nie musimy nosić krawatów w pracy.</td></tr>
+</tbody></table></div>
+<!-- UI: AUDIO --> *You don't have to come to the party – it's optional.*
+<hr class="lk-hr"/>
+<h3>Porównanie – to jest kluczowe na egzaminie!</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Mustn't</th><th>Don't have to</th></tr></thead>
+<tbody>
+<tr><td><strong>ZAKAZ</strong> – nie wolno</td><td><strong>BRAK KONIECZNOŚCI</strong> – nie muszę</td></tr>
+<tr><td>You <em>mustn't</em> run. – Nie wolno biegać.</td><td>You <em>don't have to</em> run. – Nie musisz biegać (ale możesz).</td></tr>
+<tr><td>You <em>mustn't</em> cheat. – Nie wolno oszukiwać.</td><td>You <em>don't have to</em> stay after school. – Nie musisz zostawać po lekcjach (ale możesz).</td></tr>
+<tr><td>You <em>mustn't</em> smoke here. – Zakaz palenia.</td><td>You <em>don't have to</em> wear a uniform here. – Nie musisz tu nosić mundurku (ale możesz).</td></tr>
+</tbody></table></div>
+<p><strong>ZAPAMIĘTAJ NA EGZAMIN:</strong>
+❌ <em>You <strong>mustn't</strong> come to the party.</em> – Nie wolno ci przyjść (zakaz – jeśli byłoby zabronione).
+✅ <em>You <strong>don't have to</strong> come to the party.</em> – Nie musisz przyjść (ale możesz – brak obowiązku).</p>
+<p>Na egzaminie często sprawdzają, czy rozróżniasz te dwa znaczenia!</p>
+<hr class="lk-hr"/>
+<h3>Ćwiczenie – mustn't czy don't have to?</h3>
+<!-- UI: CLOZE -->
+<p>[POZIOM E8]</p>
+<ol>
+<li>You __________ touch this button. It's forbidden and dangerous!</li>
+<li>You __________ bring your own towels – they are provided.</li>
+<li>We __________ run in the hospital. It's against the rules.</li>
+<li>He __________ pay for the meal – his boss invited us.</li>
+<li>You __________ copy your friend's work. It's cheating.</li>
+<li>We __________ finish the project today – we have until Friday.</li>
+</ol>
+<details>
+<summary><strong>Odpowiedzi z komentarzem</strong></summary>
+<ol>
+<li>mustn't – zakaz (forbidden)</li>
+<li>don't have to – brak konieczności</li>
+<li>mustn't – zakaz (against the rules)</li>
+<li>doesn't have to – brak konieczności</li>
+<li>mustn't – zakaz</li>
+<li>don't have to – brak konieczności</li>
+</ol>
+<p></details></p>
+<p><strong>Ważne rozróżnienie:</strong>
+- <em>You mustn't run in the hospital. It's against the rules.</em> – ZAKAZ (jest zabronione)
+- <em>You shouldn't run in the hospital. It's dangerous.</em> – OSTRZEŻENIE (to niebezpieczne)</p>
+<p>Wybierz <code>mustn't</code> gdy coś jest zabronione (reguła, przepis), a <code>shouldn't</code> gdy dajesz ostrzeżenie o zagrożeniu.</p>
+<hr class="lk-hr"/>
+</section>
+<section id="s7">
+<div class="part-heading"><span class="part-num">6</span> Should / ought to – rada i powinność</div>
+<p>[POZIOM E8]</p>
+<h3>Should – rada</h3>
+<p><em>Should</em> wyraża <strong>radę</strong> – coś, co byłoby mądre zrobić.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Przykład</th><th>Tłumaczenie</th></tr></thead>
+<tbody>
+<tr><td>You <strong>should drink</strong> more water.</td><td>Powinieneś pić więcej wody.</td></tr>
+<tr><td>You <strong>shouldn't stay</strong> up late.</td><td>Nie powinieneś kłaść się tak późno.</td></tr>
+<tr><td>You <strong>ought to rest</strong> more.</td><td>Powinieneś więcej odpoczywać. (synonim should, nieco formalniejsze)</td></tr>
+</tbody></table></div>
+<!-- UI: AUDIO --> *You should drink more water. / You shouldn't stay up late.*
+<p><strong>Różnica: must vs should</strong>
+- <strong>Must</strong> = <strong>musisz</strong> (obowiązek)
+- <strong>Should</strong> = <strong>powinieneś</strong> (rada)
+- <strong>Ought to</strong> = podobne do should, nieco formalniejsze</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Must</th><th>Should</th></tr></thead>
+<tbody>
+<tr><td>You <em>must</em> stop. (obowiązek)</td><td>You <em>should</em> stop. (rada)</td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+<h3>Will – przyszłość, obietnica, oferta</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Przykład</th><th>Tłumaczenie</th><th>Funkcja</th></tr></thead>
+<tbody>
+<tr><td>I think it <strong>will rain</strong> tomorrow.</td><td>Myślę, że jutro będzie padać.</td><td>przewidywanie</td></tr>
+<tr><td>I <strong>will help</strong> you with your homework.</td><td>Pomogę ci z zadaniem.</td><td>obietnica / oferta</td></tr>
+<tr><td>I <strong>will call</strong> you later.</td><td>Zadzwonię do ciebie później.</td><td>decyzja</td></tr>
+</tbody></table></div>
+<!-- UI: AUDIO --> *I think it will rain tomorrow. / I will help you with your homework.*
+<hr class="lk-hr"/>
+<h3>Will vs Going to – ważne rozróżnienie</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Will</th><th>Going to</th></tr></thead>
+<tbody>
+<tr><td>Spontaniczna decyzja – zrobię to w tym momencie</td><td>Plan – już wcześniej zaplanowane</td></tr>
+<tr><td><em>I'll open the window.</em> (teraz postanowiłem)</td><td><em>I'm going to visit my grandma.</em> (mam to zaplanowane)</td></tr>
+<tr><td>Przewidywanie – na podstawie opinii</td><td>Przewidywanie – na podstawie dowodów</td></tr>
+<tr><td><em>I think it will rain.</em></td><td><em>Look at those clouds – it's going to rain.</em></td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+<h3>Would like to – uprzejme wyrażanie chęci</h3>
+<p><strong>WAŻNE:</strong> <em>Would like</em> może łączyć się z rzeczownikiem LUB z czasownikiem. To dwie różne konstrukcje, które należy rozróżniać.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Konstrukcja</th><th>Przykład</th><th>Tłumaczenie</th></tr></thead>
+<tbody>
+</tbody></table></div>
+<hr class="lk-hr"/>
+</section>
+<section id="s8">
+<div class="part-heading"><span class="part-num">7</span> Will / going to – przyszłość</div>
+<p>[POZIOM E8]</p>
+<h3>Will – przyszłość, obietnica, oferta</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Przykład</th><th>Tłumaczenie</th><th>Funkcja</th></tr></thead>
+<tbody>
+<tr><td>I think it <strong>will rain</strong> tomorrow.</td><td>Myślę, że jutro będzie padać.</td><td>przewidywanie</td></tr>
+<tr><td>I <strong>will help</strong> you with your homework.</td><td>Pomogę ci z zadaniem.</td><td>obietnica / oferta</td></tr>
+<tr><td>I <strong>will call</strong> you later.</td><td>Zadzwonię do ciebie później.</td><td>decyzja</td></tr>
+</tbody></table></div>
+<!-- UI: AUDIO --> *I think it will rain tomorrow. / I will help you with your homework.*
+<hr class="lk-hr"/>
+<h3>Will vs Going to – ważne rozróżnienie</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Will</th><th>Going to</th></tr></thead>
+<tbody>
+<tr><td>Spontaniczna decyzja – zrobię to w tym momencie</td><td>Plan – już wcześniej zaplanowane</td></tr>
+<tr><td><em>I'll open the window.</em> (teraz postanowiłem)</td><td><em>I'm going to visit my grandma.</em> (mam to zaplanowane)</td></tr>
+<tr><td>Przewidywanie – na podstawie opinii</td><td>Przewidywanie – na podstawie dowodów</td></tr>
+<tr><td><em>I think it will rain.</em></td><td><em>Look at those clouds – it's going to rain.</em></td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+</section>
+<section id="s9">
+<div class="part-heading"><span class="part-num">8</span> Would like (to) – uprzejme prośby i chęci</div>
+<p>[POZIOM E8]</p>
+<h3>Would like to – uprzejme wyrażanie chęci</h3>
+<p><strong>WAŻNE:</strong> <em>Would like</em> może łączyć się z rzeczownikiem LUB z czasownikiem. To dwie różne konstrukcje, które należy rozróżniać.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Konstrukcja</th><th>Przykład</th><th>Tłumaczenie</th></tr></thead>
+<tbody>
+<tr><td><strong>would like + rzeczownik</strong></td><td>I <strong>would like</strong> a coffee.</td><td>Poproszę kawę. (chciałbym kawę)</td></tr>
+<tr><td><strong>would like + to + czasownik</strong></td><td>I <strong>would like to visit</strong> London.</td><td>Chciałbym odwiedzić Londyn.</td></tr>
+<tr><td><strong>would like + rzeczownik</strong></td><td><strong>Would</strong> you <strong>like</strong> some tea?</td><td>Czy chciałbyś herbaty?</td></tr>
+<tr><td><strong>would like + to + czasownik</strong></td><td><strong>Would</strong> you <strong>like to join</strong> us?</td><td>Czy chciałbyś do nas dołączyć?</td></tr>
+</tbody></table></div>
+<!-- UI: AUDIO --> *I would like a coffee. / I would like to visit London. / Would you like some tea?*
+<p><strong>Wyjątek od zasady bez to!</strong>
+<em>Would</em> to czasownik modalny (brak -s, pytania bez <em>do</em>: <em>Would you like…?</em>), ale <em>like</em> łączy się z <strong>to + bezokolicznik</strong> lub <strong>rzeczownikiem</strong>. Dlatego w <em>would like to</em> pojawia się <em>to</em> – to nie łamie zasady, bo <em>to</em> należy do następnego czasownika.
+✅ <em>I would like <strong>to visit</strong> London.</em>
+❌ <em>I would like visit London.</em>
+✅ <em>I would like <strong>a coffee</strong>.</em> (rzeczownik)</p>
+<hr class="lk-hr"/>
+</section>
+<section id="s10">
+<div class="part-heading"><span class="part-num">9</span> Formy gramatyczne – pytania, przeczenia, krótkie odpowiedzi</div>
+<p>[POZIOM E8]</p>
+<h3>Pytania</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Czasownik modalny</th><th>Pytanie</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td>can</td><td>Can + podmiot + czasownik?</td><td>Can you help me?</td></tr>
+<tr><td>could</td><td>Could + podmiot + czasownik?</td><td>Could I borrow this?</td></tr>
+<tr><td>may</td><td>May + podmiot + czasownik?</td><td>May I come in?</td></tr>
+<tr><td>might</td><td>Might + podmiot + czasownik?</td><td>Might he come later? (rzadko)</td></tr>
+<tr><td>must</td><td>Must + podmiot + czasownik?</td><td>Must I stay? (rzadko, bardziej Do I have to…?)</td></tr>
+<tr><td>should</td><td>Should + podmiot + czasownik?</td><td>Should I call him?</td></tr>
+<tr><td>will</td><td>Will + podmiot + czasownik?</td><td>Will you come?</td></tr>
+<tr><td>would like</td><td>Would + podmiot + like + (rzeczownik / to + czasownik)?</td><td>Would you like to join?</td></tr>
+<tr><td>have to</td><td>Do/Does/Did + podmiot + have to + czasownik?</td><td>Do you have to go?</td></tr>
+<tr><td>need to</td><td>Do/Does/Did + podmiot + need to + czasownik?</td><td>Do you need to go?</td></tr>
+<tr><td>ought to</td><td>Ought + podmiot + to + czasownik?</td><td>Ought I to go? (rzadko, formalne)</td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+<h3>Przeczenia</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Czasownik modalny</th><th>Przeczenie</th><th>Skrót</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td>can</td><td>cannot</td><td>can't</td><td>I can't swim.</td></tr>
+<tr><td>could</td><td>could not</td><td>couldn't</td><td>I couldn't find it.</td></tr>
+<tr><td>may</td><td>may not</td><td>–</td><td>You may not enter.</td></tr>
+<tr><td>might</td><td>might not</td><td>mightn't (rzadko)</td><td>It might not rain.</td></tr>
+<tr><td>must</td><td>must not</td><td>mustn't</td><td>You mustn't cheat.</td></tr>
+<tr><td>should</td><td>should not</td><td>shouldn't</td><td>You shouldn't smoke.</td></tr>
+<tr><td>will</td><td>will not</td><td>won't</td><td>I won't forget.</td></tr>
+<tr><td>would</td><td>would not</td><td>wouldn't</td><td>I wouldn't do it.</td></tr>
+<tr><td>have to</td><td>do/does/did + not + have to</td><td>don't / doesn't / didn't have to</td><td>I don't have to go.</td></tr>
+<tr><td>need to</td><td>do/does/did + not + need to</td><td>don't / doesn't / didn't need to</td><td>You don't need to come.</td></tr>
+<tr><td>needn't</td><td>need not</td><td>needn't</td><td>You needn't come. (modalna, formalniejsza)</td></tr>
+<tr><td>ought to</td><td>ought not to</td><td>–</td><td>You ought not to go.</td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+<h3>Krótkie odpowiedzi</h3>
+<p>W krótkiej odpowiedzi powtarzamy <strong>ten sam operator</strong>, którego użyto w pytaniu.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Pytanie</th><th>Odpowiedź (pełna)</th><th>Odpowiedź (naturalna)</th></tr></thead>
+<tbody>
+<tr><td>Can you swim?</td><td>Yes, I can.</td><td>Yes.</td></tr>
+<tr><td>Could you help me?</td><td>Yes, I could. / Yes, I can.</td><td>Sure. / Of course. / Sorry, I can't.</td></tr>
+<tr><td>May I come in?</td><td>Yes, you may.</td><td>Yes, come in.</td></tr>
+<tr><td>Must I stay?</td><td>Yes, you must.</td><td>Yes, please.</td></tr>
+<tr><td>Should I call?</td><td>Yes, you should.</td><td>Yes, you should.</td></tr>
+<tr><td>Will you come?</td><td>Yes, I will.</td><td>Yes. / I'd love to.</td></tr>
+<tr><td>Do I have to go?</td><td>Yes, you do.</td><td>Yes. / Unfortunately, yes.</td></tr>
+</tbody></table></div>
+<p>⚠️ Nie mieszamy: ✅ <em>Yes, I can.</em> na pytanie <em>Can you…?</em>; ❌ <em>Yes, I do.</em> na pytanie <em>Can you…?</em></p>
+<hr class="lk-hr"/>
+</section>
+<section id="s11">
+<div class="part-heading"><span class="part-num">10</span> Czasowniki modalne w przeszłości – should have, could have, must have</div>
+<!-- UI: AMBITNY -->
+<p>[POZIOM AMBITNY]</p>
+<p>Konstrukcje z czasownikami modalnymi + <strong>have + III forma</strong> odnoszą się do przeszłości. Konstrukcje te wykraczają poza podstawowy zakres egzaminu ósmoklasisty i mogą być przydatne dla uczniów ambitnych albo przygotowujących się do dalszej nauki.</p>
+<p><strong>WAŻNE:</strong> To nie są wszystkie "czasowniki modalne w przeszłości" w tym samym znaczeniu. Każda konstrukcja ma swoje konkretne użycie:
+- <em>should have + V3</em> – żal, krytyka
+- <em>could have + V3</em> – możliwość, zdolność, niewykorzystana okazja
+- <em>must have + V3</em> – silne przypuszczenie dotyczące przeszłości (nie obowiązek!)
+- <em>would have + V3</em> – warunek niespełniony (konstrukcja warunkowa w przeszłości)</p>
+<hr class="lk-hr"/>
+<h3>Should have + V3 – żal, krytyka</h3>
+<p>Używamy, gdy mówimy o tym, co <strong>powinno się wydarzyć, ale się nie wydarzyło</strong> (lub odwrotnie).</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Przykład</th><th>Tłumaczenie</th></tr></thead>
+<tbody>
+<tr><td>I <strong>should have studied</strong> harder.</td><td>Powinienem był się uczyć więcej. (ale nie uczyłem się)</td></tr>
+<tr><td>You <strong>shouldn't have said</strong> that.</td><td>Nie powinieneś był tego mówić. (ale powiedziałeś)</td></tr>
+<tr><td>She <strong>should have arrived</strong> by now.</td><td>Powinna już była dotrzeć; oczekuję, że już jest na miejscu, ale nie wiem tego na pewno.</td></tr>
+</tbody></table></div>
+<!-- UI: AUDIO --> *I should have studied harder. / You shouldn't have said that.*
+<hr class="lk-hr"/>
+<h3>Could have + V3 – możliwość, zdolność, niewykorzystana okazja</h3>
+<p><strong>WAŻNE:</strong> <em>Could have + V3</em> nie zawsze oznacza, że coś się nie wydarzyło. Czasem wyraża po prostu możliwość w przeszłości, a kontekst decyduje o tym, czy coś faktycznie miało miejsce.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Przykład</th><th>Tłumaczenie</th><th>Uwaga</th></tr></thead>
+<tbody>
+<tr><td>I <strong>could have won</strong> the race.</td><td>Mogłem wygrać wyścig.</td><td>Kontekst sugeruje, że nie wygrałem.</td></tr>
+<tr><td>He <strong>could have taken</strong> the bus.</td><td>Mógł pojechać autobusem.</td><td>Nie wiemy, co zrobił – samo zdanie tego nie przesądza.</td></tr>
+<tr><td>She <strong>could have been</strong> injured.</td><td>Mogła zostać ranna.</td><td>Możliwość dotycząca przeszłości – nie wiemy, czy została ranna.</td></tr>
+<tr><td>They <strong>could have helped</strong> us.</td><td>Mogli nam pomóc.</td><td>Kontekst pokaże, czy pomogli, czy nie.</td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+<h3>Must have + V3 – silne przypuszczenie ​(<strong>NIE obowiązek!</strong>)</h3>
+<p>Używamy, gdy <strong>jesteśmy prawie pewni</strong>, że coś wydarzyło się w przeszłości. To <strong>wniosek / przypuszczenie</strong>, a nie obowiązek!</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Przykład</th><th>Tłumaczenie</th></tr></thead>
+<tbody>
+<tr><td>She <strong>must have left</strong> already.</td><td>Musiała już wyjść. / Najwyraźniej wyjechała. (wniosek na podstawie poszlak)</td></tr>
+<tr><td>He <strong>must have forgotten</strong> about the meeting.</td><td>Musiał zapomnieć o spotkaniu. / Najwyraźniej zapomniał. (wynika z faktów)</td></tr>
+<tr><td>She <strong>must have been</strong> tired.</td><td>Musiała być zmęczona. (wniosek, nie obowiązek!)</td></tr>
+</tbody></table></div>
+<!-- UI: AUDIO --> *She must have left already. / He must have forgotten about the meeting. / She must have been tired.*
+<hr class="lk-hr"/>
+<h3>Porównanie: Must have vs Had to</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Konstrukcja</th><th>Znaczenie</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td><strong>had to + bezokolicznik</strong></td><td>obowiązek w przeszłości</td><td><em>I <strong>had to</strong> go yesterday.</em> – Musiałem iść wczoraj.</td></tr>
+<tr><td><strong>must have + V3</strong></td><td>silne przypuszczenie o przeszłości</td><td><em>She <strong>must have</strong> gone there.</em> – Najwyraźniej/przypuszczalnie tam poszła.</td></tr>
+</tbody></table></div>
+<p>❌ <em>I must have go yesterday.</em> – błędnie (must have + V3, nie go).
+✅ <em>She must have gone there.</em> – must have gone oznacza przypuszczenie: „prawdopodobnie tam poszła", a nie „miała obowiązek pójść".
+✅ <em>I had to go yesterday.</em> – musiałem iść wczoraj (obowiązek, nie przypuszczenie).</p>
+<hr class="lk-hr"/>
+<h3>Podsumowanie czasowników modalnych w przeszłości</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Konstrukcja</th><th>Znaczenie</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td>should have + V3</td><td>żal, krytyka, powinność</td><td>I should have called.</td></tr>
+<tr><td>could have + V3</td><td>możliwość, zdolność, utracona szansa</td><td>I could have helped. / He could have taken the bus.</td></tr>
+<tr><td>must have + V3</td><td>silne przypuszczenie</td><td>She must have been tired.</td></tr>
+<tr><td>would have + V3</td><td>warunek niespełniony (konstrukcja warunkowa w przeszłości)</td><td>I would have come if you'd asked.</td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+<h3>Ćwiczenie – czasowniki modalne w przeszłości</h3>
+<!-- UI: CLOZE -->
+<p>[POZIOM AMBITNY]</p>
+<p>Uzupełnij <strong>should have / could have / must have</strong>:</p>
+<ol>
+<li>She __________ (study) more – she failed the exam.</li>
+<li>He __________ (miss) the train – he still isn't here.</li>
+<li>They __________ (win) the match, but they played badly.</li>
+<li>You __________ (tell) me earlier – I could have helped.</li>
+<li>It __________ (be) very expensive – it looks luxurious.</li>
+<li>She __________ (take) the bus – we don't know how she got here.</li>
+</ol>
+<details>
+<summary><strong>Odpowiedzi z komentarzem</strong></summary>
+<ol>
+<li>should have studied – krytyka / żal</li>
+<li>must have missed – przypuszczenie</li>
+<li>could have won – utracona szansa (kontekst: but they played badly)</li>
+<li>should have told – krytyka</li>
+<li>must have been – przypuszczenie</li>
+<li>could have taken – możliwość w przeszłości (nie wiemy, co zrobiła)</li>
+</ol>
+<p></details></p>
+<hr class="lk-hr"/>
+</section>
+<section id="s12">
+<div class="part-heading"><span class="part-num">11</span> Need to i Ought to – alternatywy dla must i should</div>
+<p>[POZIOM E8]</p>
+<h3>Need to – potrzeba, konieczność</h3>
+<h3>Need to – potrzeba, konieczność</h3>
+<p><strong>Need to</strong> zachowuje się jak zwykły czasownik i w pytaniach potrzebuje operatorów <em>do/does/did</em>. Jest podobne do <em>have to</em>, ale podkreśla <strong>potrzebę</strong> wykonania czynności bardziej niż obowiązek.</p>
+<p><em>Need to</em> podkreśla potrzebę lub konieczność wykonania czynności, natomiast <em>have to</em> często przedstawia obowiązek albo konieczność wynikającą z sytuacji. W wielu kontekstach mogą być wymienne.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Przykład</th><th>Tłumaczenie</th></tr></thead>
+<tbody>
+<tr><td>I <strong>need to buy</strong> some milk.</td><td>Muszę / potrzebuję kupić mleko.</td></tr>
+<tr><td><strong>Do</strong> you <strong>need to</strong> go now?</td><td>Czy musisz już iść?</td></tr>
+<tr><td>You <strong>don't need to</strong> come if you're busy.</td><td>Nie musisz przychodzić, jeśli jesteś zajęty.</td></tr>
+</tbody></table></div>
+<p><strong>Różnica: need to vs have to</strong>
+<strong>Need to</strong> podkreśla potrzebę; <strong>have to</strong> wyraża obowiązek lub konieczność wynikającą z sytuacji. W wielu kontekstach obie formy są wymienne.</p>
+<hr class="lk-hr"/>
+<h3>Ought to – powinność (czasownik modalny, formalne, rzadsze)</h3>
+<p><em>Ought to</em> jest bardzo podobne do <em>should</em>, ale brzmi nieco bardziej formalnie i jest rzadsze w codziennej mowie. Na egzaminie E8 nie jest priorytetem — skupiaj się na <em>should</em>.</p>
+<p><strong>Uwaga:</strong> <em>Ought to</em> jest czasownikiem modalnym lub półmodalnym – wstępuje zawsze z <strong>to</strong> (np. <em>You ought to rest</em>), a w pytaniach i przeczeniach dziś rzadsze niż <em>should</em>:
+- Pytanie: <em>Ought I to go?</em> (bardzo rzadko we współczesnym języku; lepiej: <em>Should I go?</em>)
+- Przeczenie: <em>You ought not to go.</em> / <em>oughtn't to go</em> (czyli: <em>You shouldn't go.</em>)</p>
+<p><em>Ought to</em> może wyrażać:
+- oczekiwanie moralne lub społeczne: <em>You ought to apologise.</em> (Powinieneś przeprosić.)
+- przewidywane lub właściwe zachowanie: <em>The bus ought to arrive soon.</em> (Autobus powinien wkrótce przyjechać.)</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Przykład</th><th>Tłumaczenie</th></tr></thead>
+<tbody>
+<tr><td>You <strong>ought to apologise</strong>.</td><td>Powinieneś przeprosić. (oczekiwanie społeczne)</td></tr>
+<tr><td>Parents <strong>ought to take</strong> care of their children.</td><td>Rodzice powinni opiekować się swoimi dziećmi.</td></tr>
+<tr><td>The bus <strong>ought to arrive</strong> soon.</td><td>Autobus powinien wkrótce przyjechać.</td></tr>
+</tbody></table></div>
+<p><strong>Na egzaminie E8:</strong> Zamiast <em>ought to</em> częściej używaj <em>should</em>. Nie martw się, jeśli nie pamiętasz <em>ought to</em>.</p>
+<hr class="lk-hr"/>
+<h3>Podsumowanie alternatyw</h3>
+<ul>
+<li><strong>Must</strong> – obowiązek (często wewnętrzny lub silny nakaz)</li>
+<li><strong>Have to</strong> – konieczność (często zewnętrzna)</li>
+<li><strong>Need to</strong> – potrzeba, konieczność</li>
+<li><strong>Should</strong> – rada, sugestia</li>
+<li><strong>Ought to</strong> – powinność, oczekiwanie (formalne, rzadsze)</li>
+</ul>
+<hr class="lk-hr"/>
+</section>
+<section id="s13">
+<div class="part-heading"><span class="part-num">12</span> Funkcje językowe</div>
+<!-- UI: COMPARE -->
+<p>[POZIOM E8]</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Funkcja</th><th>Czasownik modalny</th><th>Przykład</th><th>Tłumaczenie</th></tr></thead>
+<tbody>
+<tr><td>Prośba o pomoc (nieformalna)</td><td>can</td><td>Can you help me?</td><td>Czy możesz mi pomóc?</td></tr>
+<tr><td>Prośba o pomoc (uprzejma)</td><td>could</td><td>Could you open the window?</td><td>Czy mógłbyś otworzyć okno?</td></tr>
+<tr><td>Pytanie o pozwolenie (formalne)</td><td>may</td><td>May I borrow your pen?</td><td>Czy mogę pożyczyć długopis?</td></tr>
+<tr><td>Pozwolenie (nieformalne)</td><td>can</td><td>Can I go out?</td><td>Czy mogę wyjść?</td></tr>
+<tr><td>Pozwolenie (formalne)</td><td>may</td><td>May I leave the room?</td><td>Czy mogę opuścić salę?</td></tr>
+<tr><td>Rada</td><td>should</td><td>You should see a doctor.</td><td>Powinieneś pójść do lekarza.</td></tr>
+<tr><td>Rada (formalna)</td><td>ought to</td><td>You ought to be more careful.</td><td>Powinieneś być ostrożniejszy.</td></tr>
+<tr><td>Zakaz</td><td>mustn't</td><td>You mustn't smoke here.</td><td>Nie wolno tu palić.</td></tr>
+<tr><td>Brak konieczności</td><td>don't have to</td><td>You don't have to pay.</td><td>Nie musisz płacić.</td></tr>
+<tr><td>Obowiązek</td><td>must / have to</td><td>I must study. / I have to wear a uniform.</td><td>Muszę się uczyć. / Muszę nosić mundurek.</td></tr>
+<tr><td>Przewidywanie</td><td>will</td><td>It will rain tomorrow.</td><td>Jutro będzie padać.</td></tr>
+<tr><td>Możliwość</td><td>might / may / could</td><td>It might snow. / It may rain. / It could be true.</td><td>Może będzie padać śnieg. / Może padać. / To może być prawda.</td></tr>
+<tr><td>Chęć / życzenie</td><td>would like</td><td>I would like a coffee. / I would like to go.</td><td>Chciałbym kawę. / Chciałbym pójść.</td></tr>
+<tr><td>Potrzeba</td><td>need to</td><td>I need to rest.</td><td>Muszę odpocząć.</td></tr>
+</tbody></table></div>
+<p><strong>Zapamiętaj na egzaminie</strong>
+- Prośba o pomoc: <em>Can you…? / Could you…?</em> (do kogoś)
+- Prośba o pozwolenie: <em>Can I…? / May I…?</em>
+- Rada: <em>You should… / You ought to…</em>
+- Pozwolenie: <em>Can I…? / May I…?</em>
+- Zakaz: <em>You mustn't…</em>
+- Brak konieczności: <em>You don't have to…</em>
+- Możliwość: <em>may / might / could</em></p>
+<hr class="lk-hr"/>
+</section>
+<section id="s14">
+<div class="part-heading"><span class="part-num">11</span> Słownictwo – obowiązki, zdrowie, bezpieczeństwo</div>
+<!-- UI: VOCAB -->
+<h3>Zdrowie i samopoczucie</h3>
+<p>[POZIOM E8]</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Słowo</th><th>Tłumaczenie</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td>headache</td><td>ból głowy</td><td>I have a headache.</td></tr>
+<tr><td>stomachache</td><td>ból brzucha</td><td>She has a stomachache.</td></tr>
+<tr><td>toothache</td><td>ból zęba</td><td>I have a toothache.</td></tr>
+<tr><td>sore throat</td><td>ból gardła</td><td>He has a sore throat.</td></tr>
+<tr><td>fever / temperature</td><td>gorączka</td><td>She has a high temperature.</td></tr>
+<tr><td>cough</td><td>kaszel</td><td>I have a bad cough.</td></tr>
+<tr><td>cold / flu</td><td>przeziębienie / grypa</td><td>You should rest if you have <strong>the</strong> flu.</td></tr>
+<tr><td>allergy</td><td>alergia</td><td>He has a nut allergy.</td></tr>
+<tr><td>rash</td><td>wysypka</td><td>She has a rash on her arm.</td></tr>
+<tr><td>injury</td><td>uraz, kontuzja</td><td>He suffered a serious injury.</td></tr>
+<tr><td>prescription</td><td>recepta</td><td>The doctor gave me a prescription.</td></tr>
+<tr><td>take medicine</td><td>brać lekarstwo</td><td>I have to take medicine.</td></tr>
+<tr><td>see a doctor</td><td>pójść do lekarza</td><td>You should see a doctor.</td></tr>
+<tr><td>stay in bed</td><td>leżeć w łóżku</td><td>I must stay in bed.</td></tr>
+<tr><td>get better / recover</td><td>wyzdrowieć</td><td>I hope you get better soon.</td></tr>
+<tr><td>healthy lifestyle</td><td>zdrowy tryb życia</td><td>You should live a healthy lifestyle.</td></tr>
+<tr><td>exercise / do some exercise / get exercise</td><td>ćwiczyć</td><td>I try to exercise every day. / I try to get some exercise.</td></tr>
+<tr><td>feel sick</td><td>czuć się źle</td><td>I feel sick today.</td></tr>
+<tr><td>catch a cold</td><td>złapać przeziębienie</td><td>I caught a cold yesterday.</td></tr>
+<tr><td>pain / painful</td><td>ból / bolesny</td><td>The injection was painful.</td></tr>
+<tr><td>dizzy</td><td>mający zawroty głowy</td><td>I feel dizzy.</td></tr>
+<tr><td>weak</td><td>słaby</td><td>She feels weak after the illness.</td></tr>
+<tr><td>recover</td><td>wyzdrowieć</td><td>It takes time to recover.</td></tr>
+<tr><td>treatment</td><td>leczenie</td><td>The treatment was effective.</td></tr>
+<tr><td>patient</td><td>pacjent</td><td>The patient needs rest.</td></tr>
+<tr><td>appointment</td><td>wizyta (umówiona)</td><td>I have an appointment at 3 p.m.</td></tr>
+</tbody></table></div>
+<!-- UI: AUDIO --> *I have a headache. / You should see a doctor.*
+<hr class="lk-hr"/>
+<h3>Bezpieczeństwo</h3>
+<p>[POZIOM E8]</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Słowo</th><th>Tłumaczenie</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td>dangerous</td><td>niebezpieczny</td><td>It's dangerous to play with matches.</td></tr>
+<tr><td>safe / safety</td><td>bezpieczny / bezpieczeństwo</td><td>Stay safe.</td></tr>
+<tr><td>careful</td><td>ostrożny</td><td>Be careful when you cross the road.</td></tr>
+<tr><td>helmet</td><td>kask</td><td>You must wear a helmet.</td></tr>
+<tr><td>seat belt</td><td>pas bezpieczeństwa</td><td>Fasten your seat belt.</td></tr>
+<tr><td>cross the road</td><td>przechodzić przez ulicę</td><td>Cross the road at the zebra crossing.</td></tr>
+<tr><td>emergency</td><td>sytuacja awaryjna</td><td>Call 112 in an emergency.</td></tr>
+<tr><td>warning</td><td>ostrzeżenie</td><td>There was a warning about the storm.</td></tr>
+<tr><td>safety rules</td><td>zasady bezpieczeństwa</td><td>You must follow safety rules.</td></tr>
+<tr><td>hazard</td><td>zagrożenie</td><td>This is a fire hazard.</td></tr>
+<tr><td>call for help</td><td>wezwać pomoc</td><td>We must call for help.</td></tr>
+<tr><td>fire extinguisher</td><td>gaśnica</td><td>Know where the fire extinguisher is.</td></tr>
+<tr><td>first aid</td><td>pierwsza pomoc</td><td>Learn basic first aid.</td></tr>
+<tr><td>accident</td><td>wypadek</td><td>There was a car accident.</td></tr>
+<tr><td>traffic lights</td><td>światła drogowe</td><td>Stop when the traffic lights are red.</td></tr>
+<tr><td>risk</td><td>ryzyko</td><td>Don't take unnecessary risks.</td></tr>
+<tr><td>protect</td><td>chronić</td><td>Protect your eyes from the sun.</td></tr>
+<tr><td>avoid</td><td>unikać</td><td>Avoid dangerous situations.</td></tr>
+<tr><td>injury</td><td>uraz</td><td>The injury was serious.</td></tr>
+</tbody></table></div>
+<!-- UI: AUDIO --> *Be careful when you cross the road. / You must wear a helmet.*
+<hr class="lk-hr"/>
+<h3>Obowiązki (dom i szkoła)</h3>
+<p>[POZIOM E8]</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Słowo</th><th>Tłumaczenie</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td>duty / responsibility</td><td>obowiązek / odpowiedzialność</td><td>It's my duty to help.</td></tr>
+<tr><td>tidy up</td><td>posprzątać</td><td>You must tidy up your room.</td></tr>
+<tr><td>take out the rubbish</td><td>wynieść śmieci</td><td>I have to take out the rubbish.</td></tr>
+<tr><td>do the washing-up</td><td>zmywać naczynia</td><td>We have to do the washing-up.</td></tr>
+<tr><td>walk the dog</td><td>wyprowadzić psa</td><td>She has to walk the dog.</td></tr>
+<tr><td>make your bed</td><td>pościelić łóżko (swoje)</td><td>You should make your bed.</td></tr>
+<tr><td>feed the pet</td><td>nakarmić zwierzątko</td><td>I must feed the cat.</td></tr>
+<tr><td>chore</td><td>obowiązek domowy</td><td>Doing the dishes is my chore.</td></tr>
+<tr><td>deadline</td><td>termin</td><td>The deadline is Friday.</td></tr>
+<tr><td>do homework</td><td>odrobić zadanie</td><td>I have to do my homework.</td></tr>
+<tr><td>prepare for a test</td><td>przygotować się do sprawdzianu</td><td>You should prepare for the test.</td></tr>
+<tr><td>wear a uniform</td><td>nosić mundurek</td><td>We have to wear a uniform.</td></tr>
+<tr><td>help with housework</td><td>pomagać w pracach domowych</td><td>I should help with housework.</td></tr>
+<tr><td>do the shopping</td><td>robić zakupy</td><td>I have to do the shopping.</td></tr>
+<tr><td>water the plants</td><td>podlewać rośliny</td><td>Don't forget to water the plants.</td></tr>
+<tr><td>set the table</td><td>nakryć do stołu</td><td>Could you set the table?</td></tr>
+<tr><td>empty the dishwasher</td><td>opróżnić zmywarkę</td><td>You don't have to empty the dishwasher.</td></tr>
+<tr><td>keep your desk tidy</td><td>utrzymywać porządek na biurku</td><td>Keep your desk tidy.</td></tr>
+<tr><td>be on time</td><td>być punktualnym</td><td>You must be on time.</td></tr>
+<tr><td>follow the rules</td><td>przestrzegać zasad</td><td>We must follow the school rules.</td></tr>
+<tr><td>obey</td><td>przestrzegać, słuchać</td><td>You must obey the teacher.</td></tr>
+<tr><td>break the rules</td><td>łamać zasady</td><td>Don't break the rules.</td></tr>
+<tr><td>be responsible for</td><td>być odpowiedzialnym za</td><td>You are responsible for your actions.</td></tr>
+</tbody></table></div>
+<!-- UI: AUDIO --> *I have to do my homework. / You must tidy up your room.*
+<hr class="lk-hr"/>
+<h3>Prośby i rady</h3>
+<p>[POZIOM E8]</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Słowo</th><th>Tłumaczenie</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td>ask for help</td><td>poprosić o pomoc</td><td>You should ask for help.</td></tr>
+<tr><td>give advice</td><td>udzielić rady</td><td>She gave me good advice.</td></tr>
+<tr><td>offer help</td><td>zaoferować pomoc</td><td>I can offer help.</td></tr>
+<tr><td>please</td><td>proszę</td><td>Could you pass me the salt, please?</td></tr>
+<tr><td>thank you</td><td>dziękuję</td><td>Thank you for your help.</td></tr>
+<tr><td>excuse me</td><td>przepraszam / proszę o uwagę</td><td>Excuse me, where is the station?</td></tr>
+<tr><td>of course</td><td>oczywiście</td><td>Of course I can help.</td></tr>
+<tr><td>I'm sorry, I can't</td><td>przepraszam, nie mogę</td><td>I'm sorry, I can't come.</td></tr>
+<tr><td>Would you mind…?</td><td>Czy miałbyś coś przeciwko…?</td><td>Would you mind closing the window?</td></tr>
+<tr><td>Could you pass me…?</td><td>Czy mógłbyś podać mi…?</td><td>Could you pass me the water?</td></tr>
+<tr><td>Let me help you</td><td>Pozwól, że ci pomogę</td><td>Let me help you with that.</td></tr>
+<tr><td>No problem</td><td>Nie ma sprawy</td><td>Thanks! – No problem.</td></tr>
+<tr><td>Can I ask you a favour?</td><td>Czy mogę cię o coś prosić?</td><td>Can I ask you a favour?</td></tr>
+<tr><td>I'd be grateful if…</td><td>Byłbym wdzięczny, gdyby…</td><td>I'd be grateful if you could help.</td></tr>
+<tr><td>If I were you, I would…</td><td>Na twoim miejscu…</td><td>If I were you, I would apologise.</td></tr>
+<tr><td>I'd rather…</td><td>Wolałbym…</td><td>I'd rather stay at home.</td></tr>
+<tr><td>You'd better…</td><td>Lepiej, żebyś…</td><td>You'd better hurry up.</td></tr>
+</tbody></table></div>
+<!-- UI: AUDIO --> *Could you pass me the salt, please? / Of course I can help.*
+<hr class="lk-hr"/>
+</section>
+<section id="s15">
+<div class="part-heading"><span class="part-num">12</span> Tip tygodnia – zestaw obok siebie</div>
+<!-- UI: COMPARE -->
+<p>[POZIOM E8]</p>
+<p>Najlepiej zapamiętasz różnice, gdy zestawisz podobne konstrukcje <strong>obok siebie</strong> i porównasz ich znaczenia.</p>
+<p><strong>🔴 KLUCZOWA REGUŁA:</strong>
+Po <strong>can, could, may, might, must, should, will</strong> zawsze forma podstawowa (bez „to").</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Konstrukcja</th><th>Znaczenie</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td><strong>must</strong></td><td>silny nakaz, stanowisko mówiącego</td><td>I must study.</td></tr>
+<tr><td><strong>have to</strong></td><td>konieczność, sytuacja</td><td>I have to go.</td></tr>
+<tr><td><strong>mustn't</strong></td><td>zakaz</td><td>You mustn't cheat.</td></tr>
+<tr><td><strong>don't have to</strong></td><td>brak obowiązku</td><td>You don't have to come.</td></tr>
+<tr><td><strong>should</strong></td><td>rada</td><td>You should rest.</td></tr>
+<tr><td><strong>may</strong></td><td>formalne pozwolenie, możliwość</td><td>May I go? / It may rain.</td></tr>
+<tr><td><strong>might</strong></td><td>możliwość (ostrożniejsza)</td><td>It might rain.</td></tr>
+<tr><td><strong>could</strong></td><td>możliwość, przeszła umiejętność</td><td>We could go. / I could swim.</td></tr>
+<tr><td><strong>would like to</strong></td><td>uprzejma chęć (z to + czasownik)</td><td>I'd like to help.</td></tr>
+<tr><td><strong>need to</strong></td><td>potrzeba</td><td>I need to buy milk.</td></tr>
+<tr><td><strong>ought to</strong></td><td>powinność formalna (z to)</td><td>You ought to apologise.</td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+</section>
+<section id="s16">
+<div class="part-heading"><span class="part-num">13</span> Ćwiczenia</div>
+<!-- UI: CHOICE --> <!-- UI: CLOZE --> <!-- UI: TRANSLATE --> <!-- UI: ERROR -->
+<h3>Ćwiczenie 1: Wybór must / have to / mustn't / don't have to</h3>
+<p>[POZIOM E8]</p>
+<p>Wybierz poprawną formę:</p>
+<ol>
+<li>You __________ use your phone during the exam. It's forbidden.</li>
+<li>I __________ wear a uniform at my school – it's the rule.</li>
+<li>You __________ come to the party if you don't want to. It's optional.</li>
+<li>I __________ study harder – I really want to get a good mark.</li>
+<li>Students __________ talk during the test.</li>
+<li>You __________ touch that. It's very hot!</li>
+<li>We __________ buy tickets in advance – they are always available.</li>
+<li>She __________ wear glasses – she can't see well without them.</li>
+<li>You __________ eat in the library – it's not allowed.</li>
+<li>They __________ come to the meeting – it's not required.</li>
+</ol>
+<details>
+<summary><strong>Odpowiedzi z komentarzem</strong></summary>
+<ol>
+<li>mustn't – zakaz (forbidden)</li>
+<li>have to – szkolna zasada (zewnętrzny obowiązek; <em>must</em> też możliwe jako formalny nakaz)</li>
+<li>don't have to – opcjonalne</li>
+<li>must – wewnętrzna motywacja (<em>have to</em> też możliwe, ale <em>must</em> lepiej oddaje chęć)</li>
+<li>mustn't – zakaz</li>
+<li>shouldn't – ostrzeżenie (niebezpieczeństwo)</li>
+<li>don't have to – brak konieczności</li>
+<li>has to – konieczność (słaby wzrok)</li>
+<li>mustn't – zakaz (not allowed)</li>
+<li>don't have to – brak konieczności (not required)</li>
+</ol>
+<p></details></p>
+<hr class="lk-hr"/>
+<h3>Ćwiczenie 2: Uzupełnij luki (can / could / may / might / should / will)</h3>
+<p>[POZIOM E8]</p>
+<ol>
+<li>__________ I borrow your dictionary, please? (formalnie – prośba o pozwolenie)</li>
+<li>When I was younger, I __________ swim very well.</li>
+<li>You __________ drink more water every day. It's healthy.</li>
+<li>I think it __________ rain later – look at the clouds. (mniej pewne niż will)</li>
+<li>__________ you help me carry these bags? (uprzejmie – prośba o pomoc)</li>
+<li>She __________ play the piano very well.</li>
+<li>You __________ be more careful – it's dangerous. (rada)</li>
+<li>I __________ be able to come tomorrow.</li>
+<li>__________ I leave early today? (formalnie – prośba o pozwolenie)</li>
+<li>When I was a child, I __________ run very fast.</li>
+</ol>
+<details>
+<summary><strong>Odpowiedzi z komentarzem</strong></summary>
+<ol>
+<li>May – formalne pozwolenie (Can też jest możliwe, ale mniej formalne; <em>Could I...</em> jest bardzo uprzejme)</li>
+<li>could – przeszła umiejętność</li>
+<li>should – rada</li>
+<li>might / may / could – możliwość (wszystkie są poprawne, zależnie od stopnia pewności)</li>
+<li>Could – uprzejma prośba o pomoc (Can też jest możliwe, ale mniej uprzejme)</li>
+<li>can – umiejętność</li>
+<li>should – rada</li>
+<li>will / may – przyszłość / możliwość</li>
+<li>May – formalne pozwolenie</li>
+<li>could – przeszła umiejętność</li>
+</ol>
+<p></details></p>
+<hr class="lk-hr"/>
+<h3>Ćwiczenie 3: Parafraza – przekształć zdania</h3>
+<p>[POZIOM E8]</p>
+<ol>
+<li>It's necessary for me to finish this project today. → I __________ finish this project today.</li>
+<li>It's not necessary for you to bring food. → You __________ bring food.</li>
+<li>It's forbidden to park here. → You __________ park here.</li>
+<li>It would be a good idea to rest. → You __________ rest.</li>
+<li>It's a rule to wear a uniform. → You __________ wear a uniform.</li>
+<li>You are not allowed to use your phone. → You __________ use your phone.</li>
+<li>I have a strong desire to visit Paris. → I __________ visit Paris.</li>
+<li>It wasn't necessary for me to wait. → I __________ wait.</li>
+<li>I advise you to see a doctor. → You __________ see a doctor.</li>
+<li>It's possible that she is at home. → She __________ be at home.</li>
+</ol>
+<details>
+<summary><strong>Odpowiedzi z komentarzem</strong></summary>
+<ol>
+<li>must / have to – konieczność (oba poprawne)</li>
+<li>don't have to – brak konieczności</li>
+<li>mustn't – zakaz</li>
+<li>should – rada</li>
+<li>have to – zasada (<em>must</em> też możliwe)</li>
+<li>mustn't – zakaz</li>
+<li>would like to – chęć</li>
+<li>didn't have to – brak konieczności w przeszłości</li>
+<li>should – rada</li>
+<li>may / might / could – możliwość (wszystkie poprawne)</li>
+</ol>
+<p></details></p>
+<hr class="lk-hr"/>
+<h3>Ćwiczenie 4: Popraw błędy w zdaniach</h3>
+<!-- UI: ERROR -->
+<p>[POZIOM E8]</p>
+<ol>
+<li>❌ She can to dance very well. → ✅ ___________________</li>
+<li>❌ You must run in the corridor. It's forbidden. → ✅ ___________________</li>
+<li>❌ Have you to go to school tomorrow? → ✅ ___________________</li>
+<li>❌ I must go to the doctor yesterday. → ✅ ___________________</li>
+<li>❌ You mustn't pay for the ticket – it's free. → ✅ ___________________</li>
+<li>❌ He should to study more. → ✅ ___________________</li>
+<li>❌ You don't have to run in the hospital – it's dangerous. → ✅ ___________________</li>
+<li>❌ May you help me, please? → ✅ ___________________</li>
+<li>❌ She doesn't must go. → ✅ ___________________</li>
+<li>❌ I would like drink some water. → ✅ ___________________</li>
+</ol>
+<details>
+<summary><strong>Odpowiedzi z komentarzem</strong></summary>
+<ol>
+<li>✅ She can dance very well. (po 'can' nie używamy 'to')</li>
+<li>✅ You mustn't run in the corridor. (skoro 'forbidden' – zakaz)</li>
+<li>✅ Do you have to go to school tomorrow? (have to w pytaniu z 'do')</li>
+<li>✅ I had to go to the doctor yesterday. (must nie ma przeszłości dla obowiązku)</li>
+<li>✅ You don't have to pay for the ticket – it's free. (bezpłatne → brak konieczności)</li>
+<li>✅ He should study more. (po should bez to)</li>
+<li>✅ You mustn't run in the hospital – it's against the rules. (zakaz) albo: You shouldn't run in the hospital – it's dangerous. (ostrzeżenie)</li>
+<li>✅ Can / Could you help me, please? (May używamy dla pozwolenia: May I…?)</li>
+<li>✅ She doesn't have to go. (must nie używa operatora do przeczenia)</li>
+<li>✅ I would like to drink some water. (would like to + bezokolicznik)</li>
+</ol>
+<p></details></p>
+<hr class="lk-hr"/>
+<h3>Ćwiczenie 5: Mini-wypowiedź pisemna</h3>
+<p>[POZIOM E8]</p>
+<p>Napisz 4–5 zdań po angielsku o obowiązkach w domu lub w szkole. Użyj <strong>must, have to, don't have to, should</strong> oraz <strong>need to</strong> lub <strong>ought to</strong>.</p>
+<details>
+<summary><strong>Przykładowa odpowiedź</strong></summary>
+<p>I must help my parents with housework. At school, we have to wear a uniform. You don't have to bring your own books – we get them from the library. You should always be polite to your teachers. I also need to study for my exams next week.</p>
+<!-- UI: AUDIO --> *I must help my parents with housework. At school, we have to wear a uniform.*
+<p></details></p>
+<hr class="lk-hr"/>
+<h3>Ćwiczenie 6: Reakcje językowe – wybierz odpowiedź A, B lub C</h3>
+<!-- UI: CHOICE -->
+<p>[POZIOM E8]</p>
+<ol>
+<li>– Could you pass me the salt, please?
+A) No, I couldn't. B) Sure, here you are. C) Yes, you could.</li>
+</ol>
+<ol start="2">
+<li>– I have a terrible headache.
+A) You should see a doctor. B) You must see a doctor yesterday. C) You don't have to rest.</li>
+</ol>
+<ol start="3">
+<li>– Can I leave the room for a moment?
+A) No, you mustn't. B) Yes, you may. C) Yes, you must.</li>
+</ol>
+<ol start="4">
+<li>– Do I have to wear a uniform?
+A) Yes, you have. B) No, you don't have to. C) Yes, you mustn't.</li>
+</ol>
+<ol start="5">
+<li>– It's forbidden to use phones here.
+A) You don't have to use them. B) You mustn't use them. C) You can use them.</li>
+</ol>
+<ol start="6">
+<li>– I'd like to visit London one day.
+A) You should go. B) You mustn't go. C) You don't have to go.</li>
+</ol>
+<ol start="7">
+<li>– Can I help you with that?
+A) Yes, you must. B) Yes, please. C) No, you don't have to.</li>
+</ol>
+<details>
+<summary><strong>Odpowiedzi z komentarzem</strong></summary>
+<ol>
+<li>B – Sure, here you are. (zgoda na uprzejmą prośbę)</li>
+<li>A – You should see a doctor. (rada)</li>
+<li>B – Yes, you may. (formalne pozwolenie)</li>
+<li>B – No, you don't have to. (pytanie z have to; odpowiedź z do)</li>
+<li>B – You mustn't use them. (forbidden = zakaz)</li>
+<li>A – You should go. (rada – <em>must</em> byłoby silniejszym poleceniem lub bardzo mocną rekomendacją)</li>
+<li>B – Yes, please. (zgoda na ofertę pomocy)</li>
+</ol>
+<p></details></p>
+<hr class="lk-hr"/>
+<h3>Ćwiczenie 7: Przetłumacz fragmenty zdań</h3>
+<!-- UI: TRANSLATE -->
+<p>[POZIOM E8]</p>
+<ol>
+<li>You __________ (nie wolno ci) open the window during the test.</li>
+<li>I __________ (musiałem) help my mum yesterday.</li>
+<li>__________ (czy mogę – formalnie) borrow your book, please?</li>
+<li>You __________ (nie musisz) bring food – it's provided.</li>
+<li>I __________ (chciałbym) order a pizza.</li>
+<li>She __________ (powinna) drink more water.</li>
+<li>We __________ (musimy) wear a uniform at work.</li>
+<li>You __________ (nie powinieneś) be late.</li>
+<li>I __________ (potrzebuję) buy some milk.</li>
+<li>You __________ (powinieneś – formalnie) apologise.</li>
+<li>It __________ (może) snow later, so take a coat.</li>
+</ol>
+<details>
+<summary><strong>Odpowiedzi z komentarzem</strong></summary>
+<ol>
+<li>mustn't – zakaz</li>
+<li>had to – przeszłość obowiązku</li>
+<li>May I – formalne pozwolenie (Can też możliwe, ale mniej formalne; <em>Could I...</em> jest bardzo uprzejme)</li>
+<li>don't have to – brak konieczności</li>
+<li>would like to – uprzejma chęć (uwaga: would like to + czasownik, nie samo would)</li>
+<li>should – rada</li>
+<li>have to – obowiązek zewnętrzny (must też możliwe)</li>
+<li>shouldn't – negatywna rada</li>
+<li>need to – potrzeba</li>
+<li>ought to – formalna powinność</li>
+<li>might / may / could – możliwość (wszystkie poprawne, zależnie od pewności)</li>
+</ol>
+<p></details></p>
+<hr class="lk-hr"/>
+</section>
+<section id="s17">
+<div class="part-heading"><span class="part-num">14</span> Mini-dialogi – uzupełnij luki</div>
+<!-- UI: CLOZE --> <!-- UI: SPEAK -->
+<p>[POZIOM E8]</p>
+<h3>Dialog 1 – w szkole</h3>
+<p>A: __________ I go to the toilet, please?
+B: Yes, you __________. But you __________ run in the corridor.
+A: OK, I __________ be careful.</p>
+<details>
+<summary><strong>Odpowiedzi</strong></summary>
+<p>A: May I go to the toilet, please?
+B: Yes, you may. But you mustn't run in the corridor.
+A: OK, I will be careful.</p>
+<p><strong>Komentarz:</strong>
+Możliwe są także <code>Can I go to the toilet?</code> (bardziej nieformalne) i <code>Could I go to the toilet?</code> (bardziej uprzejme), ale w ćwiczeniu wybieramy głównie <code>May</code> ze względu na formalny kontekst (szkoła). Odpowiedź <code>Yes, you may.</code> / <code>No, you may not.</code> jest tradycyjna w odpowiedziach na pytania z <em>may</em>.</p>
+<p></details></p>
+<hr class="lk-hr"/>
+<h3>Dialog 2 – w domu</h3>
+<p>A: Mum, __________ I go to the party tonight?
+B: You __________ tidy your room first. And you __________ be home by 11 PM.
+A: OK, I __________ forget.</p>
+<details>
+<summary><strong>Odpowiedzi</strong></summary>
+<p>A: Mum, can I go to the party tonight?
+B: You have to tidy your room first. And you have to be home by 11 PM.
+A: OK, I won't forget.</p>
+<p><strong>Komentarz:</strong>
+<code>Have to</code> pasuje tutaj do zasad ustalonych przez matkę. <code>Must</code> też może być poprawne, ale w ćwiczeniu wybieramy <code>have to</code> ze względu na kontekst (rodzinne przepisy). <code>May</code> jest również możliwe w pierwszej linii, ale <code>can</code> jest bardziej naturalne w rozmowie z rodzicem.</p>
+<p></details></p>
+<hr class="lk-hr"/>
+<h3>Dialog 3 – u lekarza</h3>
+<p><strong>Wariant A:</strong>
+A: I have a terrible headache. What __________ I do?
+B: You __________ take this medicine and you __________ rest for two days.
+A: __________ I come back next week?
+B: Yes, you __________.</p>
+<p><strong>Wariant B:</strong>
+A: I have a terrible headache. What __________ I do?
+B: You __________ take this medicine and you __________ rest for two days.
+A: __________ I have to come back next week?
+B: Yes, you __________.</p>
+<details>
+<summary><strong>Odpowiedzi</strong></summary>
+<p><strong>Wariant A:</strong>
+A: I have a terrible headache. What should I do?
+B: You should take this medicine and you should rest for two days.
+A: Should I come back next week?
+B: Yes, you should.</p>
+<p><strong>Wariant B:</strong>
+A: I have a terrible headache. What should I do?
+B: You should take this medicine and you should rest for two days.
+A: Do I have to come back next week?
+B: Yes, you do.</p>
+<p><strong>Uwaga:</strong> Wariantów nie należy mieszać – pytanie z <em>Should</em> wymaga odpowiedzi z <em>should</em>, a pytanie z <em>Do I have to</em> wymaga odpowiedzi z <em>do</em>.</p>
+<p></details></p>
+<!-- UI: AUDIO --> *May I go to the toilet, please? / You mustn't run in the corridor.*
+<hr class="lk-hr"/>
+</section>
+<section id="s18">
+<div class="part-heading"><span class="part-num">15</span> E8 Lab – pułapki z prawdziwych arkuszy</div>
+<!-- UI: EXAM -->
+<p>[POZIOM E8]</p>
+<h3>Zadanie E8 1 – szkoła i zasady</h3>
+<p>Sytuacja: Nauczyciel mówi o regulaminie szkoły.
+You __________ use your phone during the lesson. It's against the rules.</p>
+<details>
+<summary><strong>Odpowiedź</strong></summary>
+<p>mustn't – to zakaz (against the rules).</p>
+<p></details></p>
+<hr class="lk-hr"/>
+<h3>Zadanie E8 2 – zdrowie i rada</h3>
+<p>Sytuacja: Kolega mówi, że źle się czuje.
+You __________ see a doctor if you don't feel better.</p>
+<details>
+<summary><strong>Odpowiedź</strong></summary>
+<p>should – to rada, nie obowiązek.</p>
+<p></details></p>
+<hr class="lk-hr"/>
+<h3>Zadanie E8 3 – obowiązki domowe</h3>
+<p>Sytuacja: Mama mówi do córki.
+You __________ tidy up your room before you go out.</p>
+<details>
+<summary><strong>Odpowiedź</strong></summary>
+<p>have to – zewnętrzny obowiązek (mama każe; <em>must</em> też możliwe jako silny nakaz).</p>
+<p></details></p>
+<hr class="lk-hr"/>
+<h3>Zadanie E8 4 – zakaz vs brak konieczności</h3>
+<p>Sytuacja: W muzeum są różne zasady.
+You __________ touch the paintings. They are very old.</p>
+<details>
+<summary><strong>Odpowiedź</strong></summary>
+<p>mustn't – dotykanie obrazów jest zabronione.</p>
+<p></details></p>
+<hr class="lk-hr"/>
+<h3>Zadanie E8 5 – uprzejma prośba</h3>
+<p>Sytuacja: W sklepie pytasz sprzedawcę.
+__________ I try this jacket on?</p>
+<details>
+<summary><strong>Odpowiedź</strong></summary>
+<p><strong>Can I...?</strong> (naturalnie i potocznie) albo <strong>May I...?</strong> (formalnie). Could jest możliwe, ale mniej typowe w tej sytuacji.</p>
+<p></details></p>
+<hr class="lk-hr"/>
+<h3>Zadanie E8 6 – przeszłość obowiązku</h3>
+<p>Sytuacja: Ktoś opowiada o wczorajszym dniu.
+I __________ stay at home because I was ill.</p>
+<details>
+<summary><strong>Odpowiedź</strong></summary>
+<p>had to – przeszłość obowiązku.</p>
+<p></details></p>
+<hr class="lk-hr"/>
+<h3>Zadanie E8 7 – możliwość</h3>
+<p>Sytuacja: Nie jesteś pewien, czy jutro będzie padać.
+It __________ rain tomorrow, so take an umbrella just in case.</p>
+<details>
+<summary><strong>Odpowiedź</strong></summary>
+<p>might / may / could – mniej pewne niż will.</p>
+<p></details></p>
+<hr class="lk-hr"/>
+<h3>10 największych pułapek na egzaminie</h3>
+<!-- UI: ERROR -->
+<p>[POZIOM E8]</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Błąd</th><th>Poprawnie</th><th>Dlaczego?</th></tr></thead>
+<tbody>
+<tr><td>❌ Do you are…?</td><td>✅ Are you…?</td><td>nie łączymy DO z BE</td></tr>
+<tr><td>❌ She can to swim.</td><td>✅ She can swim.</td><td>po czasowniku modalnym bez to</td></tr>
+<tr><td>❌ You mustn't go if you don't want.</td><td>✅ You don't have to go…</td><td>brak obowiązku, nie zakaz</td></tr>
+<tr><td>❌ Have you to go?</td><td>✅ Do you have to go?</td><td>have to potrzebuje operatora</td></tr>
+<tr><td>❌ I must go yesterday.</td><td>✅ I had to go yesterday.</td><td>must nie ma przeszłości dla obowiązku</td></tr>
+<tr><td>❌ He should to study.</td><td>✅ He should study.</td><td>po should bez to</td></tr>
+<tr><td>❌ She doesn't must go.</td><td>✅ She doesn't have to go.</td><td>must nie używa operatora</td></tr>
+<tr><td>❌ May you help me?</td><td>✅ Can / Could you help me?</td><td>May używa się dla pozwolenia, nie dla próśb o pomoc</td></tr>
+<tr><td>❌ You don't have to run – it's dangerous.</td><td>✅ You shouldn't run – it's dangerous. (lub: You mustn't run – it's against the rules.)</td><td>niebezpieczeństwo to ostrzeżenie (shouldn't), zakaz to mustn't</td></tr>
+<tr><td>❌ I would like drink water.</td><td>✅ I would like to drink water.</td><td>would like to + bezokolicznik</td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+</section>
+<section id="s19">
+<div class="part-heading"><span class="part-num">16</span> Ważne! – 8 kluczowych zasad</div>
+<p>[POZIOM E8]</p>
+<ol>
+<li>Po <strong>większości</strong> czasowników modalnych zawsze forma podstawowa (bez "to").
+✅ <em>You should rest.</em> (nie: <em>You should to rest</em>)
+⚠️ Wyjątek: <em>ought to</em> zawiera <em>to</em>.</li>
+</ol>
+<ol start="2">
+<li><strong>Mustn't</strong> (zakaz) vs <strong>Don't have to</strong> (brak konieczności).
+<em>mustn't</em> = nie wolno | <em>don't have to</em> = nie muszę</li>
+</ol>
+<ol start="3">
+<li><em>Have to</em> w pytaniach wymaga operatora <strong>DO/DOES/DID</strong>.
+✅ <em>Do you have to go?</em> (nie: <em>Have you to go?</em>)</li>
+</ol>
+<ol start="4">
+<li><strong>Can/Could/May/Might</strong> – podsumowanie.
+<em>Can</em> (nieformalne/umiejętność), <em>Could</em> (przeszłość/uprzejma prośba o pomoc/możliwość/propozycja), <em>May</em> (formalne pozwolenie/możliwość), <em>Might</em> (możliwość, często ostrożniejsza).</li>
+</ol>
+<ol start="5">
+<li><strong>Must</strong> (obowiązek) ≠ <strong>Should</strong> (rada).
+<em>You must stop</em> = musisz przestać. <em>You should stop</em> = powinieneś przestać.</li>
+</ol>
+<ol start="6">
+<li><em>Must</em> nie ma przeszłości dla obowiązku – używamy <strong>HAD TO</strong>.
+✅ <em>I had to go yesterday.</em> (nie: <em>I must go yesterday</em>)
+<em>Must have + V3</em> to przypuszczenie dotyczące przeszłości, nie obowiązek.</li>
+</ol>
+<ol start="7">
+<li><em>Can</em> ma przeszłość <em>could</em>, ale <em>be able to</em> jest potrzebne dla przyszłości i jednorazowych osiągnięć. <em>Would like</em> łączy się z rzeczownikiem (<em>a coffee</em>) LUB z <em>to</em> + bezokolicznik (<em>to visit</em>). <em>Need to</em> i <em>Ought to</em> to alternatywy dla <em>must</em> i <em>should</em>.
+<em>I will be able to help you.</em> · <em>I would like a coffee.</em> / <em>I would like to visit London.</em> · <em>I need to buy milk.</em> · <em>You ought to apologise.</em></li>
+</ol>
+<ol start="8">
+<li><strong>Cztery kluczowe kontrasty na E8:</strong>
+- <em>must</em> = muszę (często wewnętrzne / silny nakaz)
+- <em>have to</em> = muszę (często zewnętrzne)
+- <em>mustn't</em> = nie wolno
+- <em>don't have to</em> = nie muszę (ale mogę)</li>
+</ol>
+<hr class="lk-hr"/>
+<h3>Test na zasadach – sprawdź, czy zapamiętałeś 8 zasad</h3>
+<!-- UI: CLOZE -->
+<p>[POZIOM E8]</p>
+<ol>
+<li>Po czasowniku modalnym używamy formy podstawowej bez __________. (Wyjątek: __________)</li>
+<li>Mustn't oznacza __________, a don't have to oznacza __________.</li>
+<li>Have to w pytaniach potrzebuje operatora __________.</li>
+<li>Could to forma przeszła od __________ i uprzejma prośba o pomoc.</li>
+<li>Must to obowiązek, a should to __________.</li>
+<li>Must nie ma przeszłości dla obowiązku – używamy __________. <em>Must have + V3</em> oznacza __________.</li>
+<li><em>Would like</em> łączy się z __________ LUB z __________ + czasownik.</li>
+<li>Cztery kluczowe kontrasty na E8 to: must / have to / mustn't / __________.</li>
+</ol>
+<details>
+<summary><strong>Odpowiedzi</strong></summary>
+<ol>
+<li>to / ought to</li>
+<li>zakaz / brak konieczności</li>
+<li>do/does/did</li>
+<li>can</li>
+<li>rada</li>
+<li>had to / przypuszczenie (dotyczące przeszłości)</li>
+<li>rzeczownikiem / to</li>
+<li>don't have to</li>
+</ol>
+<p></details></p>
+<hr class="lk-hr"/>
+</section>
+<section id="s20">
+<div class="part-heading"><span class="part-num">17</span> Najczęstsze błędy i pułapki</div>
+<!-- UI: ERROR -->
+<p>[POZIOM E8]</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Błąd</th><th>Poprawnie</th></tr></thead>
+<tbody>
+<tr><td>She can to dance.</td><td>She can dance.</td></tr>
+<tr><td>You must run in the corridor. (gdy zakaz)</td><td>You mustn't run in the corridor.</td></tr>
+<tr><td>Have you to study?</td><td>Do you have to study?</td></tr>
+<tr><td>I must go yesterday. (gdy obowiązek)</td><td>I had to go yesterday.</td></tr>
+<tr><td>You mustn't come to the party. (gdy brak obowiązku)</td><td>You don't have to come to the party.</td></tr>
+<tr><td>You must visit Kraków. It's beautiful. (gdy rada)</td><td>You should visit Kraków. It's beautiful. (lub: You must visit Kraków! – jako mocna rekomendacja)</td></tr>
+<tr><td>You shouldn't to go.</td><td>You shouldn't go.</td></tr>
+<tr><td>May you help me?</td><td>Can / Could you help me?</td></tr>
+<tr><td>I would like drink water.</td><td>I would like to drink water.</td></tr>
+<tr><td>You don't have to run – it's dangerous.</td><td>You shouldn't run – it's dangerous. (lub: You mustn't run – it's against the rules.)</td></tr>
+<tr><td>I would like a coffee? (gdy chcesz zapytać)</td><td>Would you like a coffee?</td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+</section>
+<section id="s21">
+<div class="part-heading"><span class="part-num">18</span> Podsumowanie</div>
+<p>[POZIOM E8]</p>
+<h3>8 kluczowych zasad – powtórka przed egzaminem</h3>
+<ol>
+<li>Po <strong>większości</strong> czasowników modalnych zawsze forma podstawowa (bez to). Wyjątek: <em>ought to</em>.</li>
+<li><strong>Must</strong> – obowiązek (silne podkreślenie stanowiska mówiącego, nakaz, przepis) vs. <strong>have to</strong> – konieczność (wynikająca z sytuacji, zasad, prawa). W wielu zdaniach obie formy są możliwe. Różnica między nimi jest subtelna, a w praktyce często są wymienne.</li>
+<li><strong>Mustn't</strong> = zakaz (nie wolno) vs. <strong>don't have to</strong> = brak konieczności (nie muszę).</li>
+<li><em>Have to</em> w pytaniach: <em>Do you have to…?</em> (z operatorem do/does/did).</li>
+<li><strong>Could</strong> – przeszła umiejętność, uprzejma prośba o pomoc, możliwość, propozycja. <strong>May</strong> – formalne pozwolenie, możliwość. <strong>Might</strong> – możliwość (często ostrożniejsza).</li>
+<li><strong>Should</strong> – rada (powinieneś). <strong>Will</strong> – przyszłość / obietnica / oferta. <strong>Would like</strong> – chciałbym (z rzeczownikiem LUB z <em>to</em> + czasownik).</li>
+<li>Na egzaminie najczęściej mylone są pary: must/mustn't, must/have to, mustn't/don't have to oraz must/should.</li>
+<li><strong>Cztery kluczowe kontrasty:</strong> <em>must</em> / <em>have to</em> / <em>mustn't</em> / <em>don't have to</em></li>
+</ol>
+<hr class="lk-hr"/>
+<h3>Ściąga egzaminacyjna</h3>
+<!-- UI: COMPARE -->
+<p>[POZIOM E8]</p>
+<p><strong>🔴 NAJWAŻNIEJSZA REGUŁA:</strong>
+Po <strong>can, could, may, might, must, should, will</strong> i <strong>would</strong> używamy czasownika w <strong>formie podstawowej, bez „to"</strong>.
+Wyjątki: <strong>would like to + czasownik</strong>, <strong>ought to + czasownik</strong>, <strong>have to</strong>, <strong>need to</strong> (zawierają <em>to</em>).</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Konstrukcja</th><th>Najczęstsze znaczenie</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td><strong>must</strong></td><td>silny nakaz, stanowisko mówiącego</td><td>You must be careful.</td></tr>
+<tr><td><strong>have to</strong></td><td>konieczność, zasada, sytuacja</td><td>We have to wear uniforms.</td></tr>
+<tr><td><strong>mustn't</strong></td><td>zakaz</td><td>You mustn't cheat.</td></tr>
+<tr><td><strong>don't have to</strong></td><td>brak konieczności</td><td>You don't have to come.</td></tr>
+<tr><td><strong>should</strong></td><td>rada</td><td>You should rest.</td></tr>
+<tr><td><strong>may / might</strong></td><td>możliwość</td><td>It may/might rain.</td></tr>
+<tr><td><strong>would like to</strong></td><td>uprzejma chęć</td><td>I'd like to help.</td></tr>
+<tr><td><strong>could</strong></td><td>możliwość, przeszła umiejętność, uprzejma prośba</td><td>We could go out. / I could swim. / Could you help?</td></tr>
+<tr><td><strong>need to</strong></td><td>potrzeba, konieczność</td><td>I need to buy milk.</td></tr>
+<tr><td><strong>ought to</strong></td><td>powinność, oczekiwanie (formalne)</td><td>You ought to apologise.</td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+</section>
+<section id="s22">
+<div class="part-heading"><span class="part-num">19</span> Test końcowy – MISJA</div>
+<!-- UI: EXAM -->
+<p>[POZIOM E8]</p>
+<p>Instrukcja: Bez zaglądania do zasad – uzupełnij wszystkie zdania. Sprawdź swój wynik.</p>
+<ol>
+<li>You __________ use your phone during the exam. (zakaz)</li>
+<li>I __________ wear a uniform at school. (zasada)</li>
+<li>You __________ come to the party – it's optional.</li>
+<li>I __________ study harder – I want a good mark. (wewnętrzny)</li>
+<li>__________ I borrow your pen, please? (formalne – prośba o pozwolenie)</li>
+<li>When I was young, I __________ swim fast.</li>
+<li>You __________ drink more water. (rada)</li>
+<li>I think it __________ rain tomorrow. (przewidywanie)</li>
+<li>You __________ run in the corridor. (zakaz)</li>
+<li>I __________ go to the doctor yesterday. (przeszłość obowiązku)</li>
+<li>It __________ snow, so take a coat. (możliwość)</li>
+<li>I __________ like to order a pizza. (chęć – uwaga: pełna forma)</li>
+</ol>
+<details>
+<summary><strong>Odpowiedzi z komentarzem</strong></summary>
+<ol>
+<li>mustn't – zakaz</li>
+<li>have to – zasada (<em>must</em> też możliwe jako formalny nakaz)</li>
+<li>don't have to – brak konieczności</li>
+<li>must – wewnętrzny obowiązek (<em>have to</em> też możliwe, ale <em>must</em> lepiej oddaje motywację)</li>
+<li>May – formalne pozwolenie (Can też możliwe, ale mniej formalne; <em>Could I...</em> jest bardzo uprzejme)</li>
+<li>could – przeszła umiejętność</li>
+<li>should – rada</li>
+<li>will – przewidywanie</li>
+<li>mustn't – zakaz</li>
+<li>had to – przeszłość obowiązku</li>
+<li>might / may / could – możliwość (wszystkie poprawne, zależnie od pewności)</li>
+<li>would like to – chęć (uwaga: nie samo <em>would</em>!)</li>
+</ol>
+<p></details></p>
+<hr class="lk-hr"/>
+</section>
+<section id="s23">
+<div class="part-heading"><span class="part-num">20</span> Mini-test podsumowujący (6 pytań)</div>
+<!-- UI: EXAM -->
+<p>[POZIOM E8]</p>
+<p><strong>Zaznacz poprawną odpowiedź:</strong></p>
+<ol>
+<li>You ______ use your phone during the exam. It's forbidden.
+a) don't have to b) mustn't c) shouldn't</li>
+</ol>
+<ol start="2">
+<li>I ______ wear a uniform at school. It's a rule.
+a) must b) have to c) should</li>
+</ol>
+<ol start="3">
+<li>______ I borrow your pen, please? (formalnie – prośba o pozwolenie)
+a) Can b) May c) Do</li>
+</ol>
+<ol start="4">
+<li>I ______ go to the doctor yesterday.
+a) must b) had to c) have to</li>
+</ol>
+<ol start="5">
+<li>You ______ come to the party. It's optional.
+a) mustn't b) don't have to c) shouldn't</li>
+</ol>
+<ol start="6">
+<li>She ______ dance very well.
+a) can to b) can c) cans</li>
+</ol>
+<details>
+<summary><strong>Odpowiedzi z komentarzem</strong></summary>
+<ol>
+<li>b – mustn't (zakaz)</li>
+<li>b – have to (zewnętrzny obowiązek; <em>must</em> też możliwe jako formalny nakaz)</li>
+<li>b – May (formalne pozwolenie; <em>Could I...</em> również uprzejme)</li>
+<li>b – had to (przeszłość obowiązku)</li>
+<li>b – don't have to (brak konieczności)</li>
+<li>b – can (po czasowniku modalnym bez to)</li>
+</ol>
+<p></details></p>
+<hr class="lk-hr"/>
+</section>
+<section id="s24">
+<div class="part-heading"><span class="part-num">21</span> Ćwiczenia mieszane – sprawdź wszystko naraz</div>
+<!-- UI: MASTER -->
+<p>[POZIOM E8]</p>
+<p><strong>Uzupełnij zdania właściwą formą:</strong></p>
+<ol>
+<li>You ______ (nie wolno) smoke in the hospital.</li>
+<li>I ______ (musiałem) wake up at 5 a.m. yesterday.</li>
+<li>______ (czy mogę – formalnie) leave the room?</li>
+<li>You ______ (powinieneś) drink more water.</li>
+<li>I ______ (chciałbym) visit London one day.</li>
+<li>It ______ (może) snow later.</li>
+<li>She ______ (nie musi) come – it's optional.</li>
+<li>I ______ (muszę – wewnętrznie) study for the exam.</li>
+<li>______ (czy mógłbyś) help me, please? (prośba o pomoc)</li>
+<li>You ______ (nie powinieneś) eat so much sugar.</li>
+</ol>
+<details>
+<summary><strong>Odpowiedzi z komentarzem</strong></summary>
+<ol>
+<li>mustn't – zakaz (lub shouldn't – ostrzeżenie, w zależności od kontekstu)</li>
+<li>had to – przeszłość obowiązku</li>
+<li>May I – formalne pozwolenie</li>
+<li>should – rada</li>
+<li>would like to – chęć (pełna forma!)</li>
+<li>might / may / could – możliwość</li>
+<li>doesn't have to – brak konieczności</li>
+<li>must – wewnętrzny obowiązek (<em>have to</em> też możliwe)</li>
+<li>Could you – uprzejma prośba o pomoc</li>
+<li>shouldn't – negatywna rada</li>
+</ol>
+<p></details></p>
+<hr class="lk-hr"/>
+</section>
+<section id="s25">
+<div class="part-heading"><span class="part-num">22</span> FAQ – najczęstsze wątpliwości</div>
+<!-- UI: FAQ -->
+<ol>
+<li><strong>Co zrobić, gdy nie wiem, czy to must, czy have to?</strong>
+Sprawdź kontekst. Czy obowiązek wynika z twojej woli lub silnego nakazu? → <em>must</em>. Czy wynika z zasad, sytuacji lub okoliczności? → <em>have to</em>. W wielu zdaniach obie formy są możliwe.</li>
+</ol>
+<ol start="2">
+<li><strong>Czy zawsze używamy mustn't dla zakazu?</strong>
+Tak. Mustn't = zakaz. Don't have to = brak konieczności.</li>
+</ol>
+<ol start="3">
+<li><strong>Czy mogę użyć may zamiast can?</strong>
+Tak, ale may jest bardziej formalne. W nieformalnych sytuacjach używaj can.</li>
+</ol>
+<ol start="4">
+<li><strong>Czy should to to samo co must?</strong>
+Nie. Must to obowiązek, should to rada.</li>
+</ol>
+<ol start="5">
+<li><strong>Czy have to ma formę przeszłą?</strong>
+Tak, had to. Must nie ma przeszłości dla obowiązku. <em>Must have + V3</em> to przypuszczenie dotyczące przeszłości.</li>
+</ol>
+<ol start="6">
+<li><strong>Czy mogę używać skrótów w wypowiedzi pisemnej?</strong>
+Tak, skróty są naturalne w nieformalnych wiadomościach. Zawsze przestrzegaj limitu wyrazów.</li>
+</ol>
+<ol start="7">
+<li><strong>Jaka jest różnica między need to a have to?</strong>
+Need to podkreśla potrzebę, have to – obowiązek. Często są wymienne.</li>
+</ol>
+<ol start="8">
+<li><strong>Czy ought to jest takie samo jak should?</strong>
+Bardzo podobne, ale ought to jest nieco bardziej formalne i <strong>rzadsze w codziennej mowie</strong>. Nie jest priorytetem na egzaminie E8. Zamiast ought to możesz zawsze użyć <em>should</em>. Warto je znać, ale skupiaj się na <em>should</em>.</li>
+</ol>
+<ol start="9">
+<li><strong>Kiedy używamy could have + V3? (ambitny)</strong>
+Gdy mówimy o możliwości, zdolności lub niewykorzystanej okazji w przeszłości. Kontekst pokazuje, czy coś faktycznie się wydarzyło.</li>
+</ol>
+<ol start="10">
+<li><strong>Kiedy używamy must have + V3? (ambitny)</strong>
+Gdy jesteśmy prawie pewni, że coś wydarzyło się w przeszłości (przypuszczenie dotyczące przeszłości).</li>
+</ol>
+<ol start="11">
+<li><strong>Czy might i may są wymienne?</strong>
+Często tak, choć <em>might</em> bywa postrzegane jako ostrożniejsze lub mniej pewne.</li>
+</ol>
+<ol start="12">
+<li><strong>Czy need to odmienia się jak have to?</strong>
+Tak, w pytaniach i przeczeniach używa operatora do/does/did, np. <em>Do you need to go?</em> / <em>She doesn't need to stay.</em></li>
+</ol>
+<ol start="13">
+<li><strong>Jaka jest różnica między <em>would like a coffee</em> a <em>would like to drink coffee</em>?</strong>
+<em>Would like + rzeczownik</em> – chcesz rzecz (kawę). <em>Would like + to + czasownik</em> – chcesz wykonać czynność (napić się kawy).</li>
+</ol>
+<ol start="14">
+<li><strong>Czy <em>May you help me?</em> jest poprawne?</strong>
+Nie jako zwykła prośba o pomoc. <em>May I help you?</em> to oferta pomocy. Na prośbę o pomoc używamy <em>Can you…?</em> lub <em>Could you…?</em></li>
+</ol>
+<hr class="lk-hr"/>
+</section>
+<section id="s26">
+<div class="part-heading"><span class="part-num">23</span> False friends – fałszywi przyjaciele</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Angielski</th><th>Nie znaczy</th><th>Znaczy</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td><strong>sympathetic</strong></td><td>sympatyczny</td><td>współczujący</td><td><em>She is very sympathetic.</em> (współczująca)</td></tr>
+<tr><td><strong>actually</strong></td><td>aktualnie</td><td>właściwie, tak naprawdę</td><td><em>Actually, I don't like it.</em></td></tr>
+<tr><td><strong>eventually</strong></td><td>ewentualnie</td><td>ostatecznie, w końcu</td><td><em>We eventually arrived.</em></td></tr>
+<tr><td><strong>library</strong></td><td>libretto</td><td>biblioteka</td><td><em>I borrowed a book from the library.</em></td></tr>
+<tr><td><strong>fabric</strong></td><td>fabryka</td><td>materiał, tkanina</td><td><em>This fabric is soft.</em></td></tr>
+<tr><td><strong>chef</strong></td><td>szef</td><td>kucharz, szef kuchni</td><td><em>The chef prepared a great meal.</em></td></tr>
+<tr><td><strong>pension</strong></td><td>pensja</td><td>emerytura</td><td><em>My grandma gets a pension.</em></td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+</section>
+<section id="s27">
+<div class="part-heading"><span class="part-num">24</span> Test wyjściowy – sprawdź swój postęp</div>
+<!-- UI: PROGRESS -->
+<ol>
+<li>You __________ talk during the exam. (zakaz)</li>
+<li>I __________ study harder – I really want a good mark. (must / have to)</li>
+<li>Popraw: She can to dance very well.</li>
+<li>Przetłumacz: Czy musisz iść do lekarza?</li>
+<li>Uzupełnij: You __________ drink more water. It's healthy. (rada)</li>
+<li>It __________ rain later, so take an umbrella. (możliwość, less certain than 'will')</li>
+</ol>
+<details>
+<summary><strong>Odpowiedzi</strong></summary>
+<ol>
+<li>mustn't – zakaz</li>
+<li>must – wewnętrzna motywacja (<em>have to</em> też możliwe w innym kontekście)</li>
+<li>She can dance very well. (po czasowniku modalnym bez to)</li>
+<li>Do you have to go to the doctor?</li>
+<li>should – rada</li>
+<li>might / may / could – możliwość</li>
+</ol>
+<p>Porównaj swój wynik z testem wstępnym. Czy jest lepiej?</p>
+<p></details></p>
+<hr class="lk-hr"/>
+</section>
+<section id="s28">
+<div class="part-heading"><span class="part-num">25</span> Fiszki</div>
+<!-- UI: FISZKI -->
+<p>[POZIOM E8]</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Przód</th><th>Tył</th><th>Poziom</th></tr></thead>
+<tbody>
+<tr><td>You __________ talk during the exam. (zakaz)</td><td>mustn't</td><td><strong>E8</strong></td></tr>
+<tr><td>I __________ study harder – I want a good mark. (wewnętrzny)</td><td>must</td><td><strong>E8</strong></td></tr>
+<tr><td>I __________ wear a uniform at school. (zasada)</td><td>have to</td><td><strong>E8</strong></td></tr>
+<tr><td>__________ I borrow your pen, please? (formalne)</td><td>May</td><td><strong>E8</strong></td></tr>
+<tr><td>When I was young, I __________ swim fast.</td><td>could</td><td><strong>E8</strong></td></tr>
+<tr><td>You __________ drink more water. (rada)</td><td>should</td><td><strong>E8</strong></td></tr>
+<tr><td>You __________ run in the corridor. (zakaz)</td><td>mustn't</td><td><strong>E8</strong></td></tr>
+<tr><td>I __________ go to the doctor yesterday. (przeszłość obowiązku)</td><td>had to</td><td><strong>E8</strong></td></tr>
+<tr><td>It __________ rain, so take a coat. (możliwość)</td><td>might / may / could</td><td><strong>E8</strong></td></tr>
+<tr><td>I __________ like to order a pizza. (chęć – pełna forma)</td><td>would like to</td><td><strong>E8</strong></td></tr>
+<tr><td>You mustn't come ≠ You don't have to come</td><td>zakaz vs brak konieczności</td><td><strong>E8</strong></td></tr>
+<tr><td>She can to dance → ?</td><td>She can dance.</td><td><strong>E8</strong></td></tr>
+<tr><td>Have you to go? → ?</td><td>Do you have to go?</td><td><strong>E8</strong></td></tr>
+<tr><td>I must go yesterday → ?</td><td>I had to go yesterday.</td><td><strong>E8</strong></td></tr>
+<tr><td>He should to study → ?</td><td>He should study.</td><td><strong>E8</strong></td></tr>
+<tr><td>I would like drink water → ?</td><td>I would like to drink water.</td><td><strong>E8</strong></td></tr>
+<tr><td>May you help me? → ?</td><td>Can / Could you help me?</td><td><strong>E8</strong></td></tr>
+<tr><td>would like + rzeczownik</td><td>I'd like a coffee.</td><td><strong>E8</strong></td></tr>
+<tr><td>would like + to + czasownik</td><td>I'd like to go.</td><td><strong>E8</strong></td></tr>
+<tr><td>You ______ talk during the exam. (zakaz)</td><td><strong>mustn't</strong></td><td><strong>E8</strong></td></tr>
+<tr><td>You ______ come to the party – it's optional.</td><td><strong>don't have to</strong></td><td><strong>E8</strong></td></tr>
+<tr><td>She can ______ dance.</td><td><strong>—</strong> (bez <em>to</em>)</td><td><strong>E8</strong></td></tr>
+<tr><td>______ you have to go now?</td><td><strong>Do</strong> you have to…?</td><td><strong>E8</strong></td></tr>
+<tr><td>You ______ drink more water. (rada)</td><td><strong>should</strong></td><td><strong>E8</strong></td></tr>
+<tr><td>I ______ like a coffee. / I ______ like to go.</td><td><strong>would</strong> like / <strong>would</strong> like <strong>to</strong></td><td><strong>E8</strong></td></tr>
+<tr><td><em>must</em> = ?</td><td>muszę (często wewnętrzne / silny nakaz)</td><td><strong>E8</strong></td></tr>
+<tr><td><em>have to</em> = ?</td><td>muszę (często zewnętrzne)</td><td><strong>E8</strong></td></tr>
+<tr><td><em>mustn't</em> = ?</td><td>nie wolno</td><td><strong>E8</strong></td></tr>
+<tr><td><em>don't have to</em> = ?</td><td>nie muszę (ale mogę)</td><td><strong>E8</strong></td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+</section>
+<section id="s29">
+<div class="part-heading"><span class="part-num">26</span> MASTER – wyjaśnij dlaczego</div>
+<p>[POZIOM E8]</p>
+<p>W poniższych zadaniach nie tylko wybierz poprawną odpowiedź, ale także uzasadnij swój wybór. To ćwiczenie uczy świadomego stosowania czasowników modalnych.</p>
+<h3>Zadanie 1 – zakaz czy brak obowiązku?</h3>
+<p><strong>You __________ touch this button. It's forbidden and dangerous!</strong></p>
+<details>
+<summary><strong>Odpowiedź + uzasadnienie</strong></summary>
+<p><strong>mustn't</strong>
+<strong>DOWÓD:</strong> <em>It's forbidden</em> → zakaz
+<strong>REGUŁA:</strong> zakaz = <strong>mustn't</strong> (<em>don't have to</em> oznaczałoby tylko „nie jest konieczne")</p>
+<p></details></p>
+<hr class="lk-hr"/>
+<h3>Zadanie 2 – rada czy obowiązek?</h3>
+<p><strong>You __________ drink more water. It's healthy.</strong></p>
+<details>
+<summary><strong>Odpowiedź + uzasadnienie</strong></summary>
+<p><strong>should</strong>
+<strong>DOWÓD:</strong> <em>It's healthy</em> → rekomendacja, nie przymus
+<strong>REGUŁA:</strong> rada = <strong>should</strong> (<em>must</em> byłoby za mocne)</p>
+<p></details></p>
+<hr class="lk-hr"/>
+<h3>Zadanie 3 – przeszłość obowiązku</h3>
+<p><strong>I __________ go to the doctor yesterday.</strong></p>
+<details>
+<summary><strong>Odpowiedź + uzasadnienie</strong></summary>
+<p><strong>had to</strong>
+<strong>DOWÓD:</strong> <em>yesterday</em> → czas przeszły
+<strong>REGUŁA:</strong> przeszłość obowiązku = <strong>had to</strong> (<em>must</em> nie ma przeszłości dla obowiązku)</p>
+<p></details></p>
+<hr class="lk-hr"/>
+<h3>Zadanie 4 – poprawna konstrukcja</h3>
+<p><strong>Popraw: She can to dance.</strong></p>
+<details>
+<summary><strong>Odpowiedź + uzasadnienie</strong></summary>
+<p><strong>She can dance.</strong>
+<strong>DOWÓD:</strong> po czasowniku modalnym używamy formy podstawowej <strong>bez <em>to</strong></em>
+<strong>REGUŁA:</strong> <em>can</em> + bezokolicznik bez „to"</p>
+<p></details></p>
+<hr class="lk-hr"/>
+</section>
+<section id="s30">
+<div class="part-heading"><span class="part-num">27</span> Napisz – regulamin klasy / wiadomość</div>
+<p>[POZIOM E8]</p>
+<p>Napisz 5 zdań po angielsku. Użyj: <strong>must</strong> lub <strong>have to</strong>, <strong>mustn't</strong>, <strong>don't have to</strong>, <strong>should</strong> oraz <strong>can/could/may</strong>.</p>
+<p>Możesz opisać zasady w szkole, w domu lub wysłać krótką wiadomość do kolegi.</p>
+<details>
+<summary><strong>Przykładowa odpowiedź</strong></summary>
+<p><em>We have to wear a uniform at school. You mustn't use your phone during lessons. You don't have to bring your own books – we have a library. You should always be polite to your teachers. May I leave the classroom early today?</em></p>
+<p></details></p>
+<hr class="lk-hr"/>
+</section>
+<section id="s31">
+<div class="part-heading"><span class="part-num">28</span> Odnośniki do powiązanych lekcji</div>
+<ul>
+<li><strong>Lekcja 2</strong> – Operatory BE i DO: <em>have to</em> w pytaniach używa operatora, jak zwykły czasownik.</li>
+<li><strong>Lekcja 12</strong> – Future Simple (<em>will</em>) i <em>be going to</em>: <em>will</em> pojawia się jako czasownik modalny do przewidywań.</li>
+<li><strong>Lekcja 3</strong> – Tryb rozkazujący: <em>Don't +</em> forma podstawowa – podobnie jak po czasownikach modalnych.</li>
+</ul>
+<hr class="lk-hr"/>
+<p><strong>Koniec Lekcji 1 (wersja poprawiona 8.1)</strong></p>
+</section>
+
+</main>
+<script>
+/* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
+   postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
+(function(){
+var html=document.documentElement;
+function ciemny(){var t=html.getAttribute('data-theme');return t?t==='dark':!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function oznacz(){if(ciemny())html.setAttribute('data-ciemny','');else html.removeAttribute('data-ciemny')}
+try{var z=localStorage.getItem('lekcja-motyw');if(z)html.setAttribute('data-theme',z)}catch(e){}
+oznacz();if(window.matchMedia)try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',oznacz)}catch(e){}
+
+function start(){
+var root=document;
+root.querySelectorAll('.flashcard').forEach(function(b){if(b.dataset.lkFz)return;b.dataset.lkFz=1;b.removeAttribute('onclick');b.setAttribute('aria-pressed','false');
+ b.addEventListener('click',function(){var on=b.classList.toggle('flipped');b.setAttribute('aria-pressed',on?'true':'false')})});
+root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibling,ok=0,n=0,all=w.querySelectorAll('.quiz-q').length;
+ if(sc&&sc.classList.contains('quiz-score'))sc.setAttribute('aria-live','polite');
+ w.querySelectorAll('.quiz-q').forEach(function(d){var good=+d.dataset.ok;d.querySelectorAll('.quiz-opt').forEach(function(b){b.onclick=function(){if(d.dataset.done)return;d.dataset.done=1;n++;if(+b.dataset.a===good)ok++;
+  d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
+  if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
+  if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var b=root.querySelector('#advToggle');
+if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
+ if(!k)b.style.display='none';
+ b.textContent='Pokaż treści akademickie ('+k+')';
+ b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';adv().forEach(function(d){d.open=on});b.setAttribute('aria-pressed',on?'true':'false');b.textContent=(on?'Ukryj':'Pokaż')+' treści akademickie ('+k+')'}}
+// spis zwinięty na telefonie
+var sp=root.querySelector('#spis');if(sp&&window.innerWidth<700)sp.removeAttribute('open');
+// przełącznik jasny/ciemny
+var tb=root.querySelector('#lkMotyw');
+if(tb)tb.onclick=function(){var t=ciemny()?'light':'dark';html.setAttribute('data-theme',t);try{localStorage.setItem('lekcja-motyw',t)}catch(e){}oznacz()};
+// postęp czytania + aktywna sekcja w spisie
+var bar=root.querySelector('.lk-prog'),links={},secs=[];
+root.querySelectorAll('.toc-link[href^="#"]').forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1));if(s){links[s.id]=a;secs.push(s)}});
+var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+ if(bar)bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';
+ var cur=null,lim=(parseInt(getComputedStyle(h).getPropertyValue('--header-h'))||52)+40;
+ for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
+ for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// fiszki: pokazuje pierwsze N (domyślnie 6, atrybut data-fz-pierwsze="N"), reszta po wyraźnym przycisku
+root.querySelectorAll('.flashcard-grid').forEach(function(g){
+ var cards=[].slice.call(g.querySelectorAll('.flashcard')),N=+(g.getAttribute('data-fz-pierwsze')||6);
+ if(!(N>0)||cards.length<=N)return;
+ var ukryte=cards.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more';
+ function lab(on){ukryte.forEach(function(c){c.hidden=!on});
+  b.textContent=on?'▲ Zwiń fiszki':'▼ Pokaż pozostałe '+ile+' fiszek (razem '+cards.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ g.insertAdjacentElement('afterend',b);
+});
+// testy: pokazuje pierwsze N pytań (domyślnie 5, atrybut data-q-pierwsze), reszta po wyraźnym przycisku
+root.querySelectorAll('.che-quiz').forEach(function(w){
+ var qs=[].slice.call(w.querySelectorAll('.quiz-q')),N=+(w.getAttribute('data-q-pierwsze')||5);
+ if(!(N>0)||qs.length<=N)return;
+ var ukryte=qs.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more q-more';
+ function lab(on){ukryte.forEach(function(q){q.hidden=!on});
+  b.textContent=on?'▲ Zwiń pytania':'▼ Pokaż pozostałe '+ile+(ile===1?' pytanie':(ile<5?' pytania':' pytań'))+' (razem '+qs.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ var sc=w.nextElementSibling;(sc&&sc.classList.contains('quiz-score')?sc:w).insertAdjacentElement('afterend',b);
+});
+// grafiki przedmiotu
+if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
+if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();
+
+</script>
+</body>
+</html>
