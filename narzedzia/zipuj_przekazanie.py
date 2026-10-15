@@ -9,7 +9,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = sys.argv[1] if len(sys.argv) > 1 else '/tmp/przekazanie_e8.zip'
 
 DOKUMENTY = ['CLAUDE.md', 'README.md', 'PRZEKAZANIE.md', 'MAPA.md', 'WERYFIKACJA.md', 'SPIS_WSZYSTKICH.md',
-             'chemia/che-modular/PRZEKAZANIE.md', 'chemia/che-modular/PROGRESS.md', 'chemia/che-modular/SYSTEM.md',
+             'MAPA_POLACZEN.md', 'wizualizacje-projekty/PRZEKAZANIE.md', 'chemia/che-modular/PRZEKAZANIE.md', 'chemia/che-modular/PROGRESS.md', 'chemia/che-modular/SYSTEM.md',
              'chemia/che-modular/STANDARD_LEKCJI.md', 'chemia/che-modular/KATALOG_MODELI.md',
              'biologia/bio/PRZEKAZANIE.md', 'biologia/bio/BIO_KATALOG.md', 'olimpiada/PRZEKAZANIE.md']
 KATALOGI = [
@@ -21,6 +21,8 @@ KATALOGI = [
     'chemia/che-modular/engine', 'chemia/che-modular/tools', 'biologia/bio/narzedzia', 'szablon', 'narzedzia',
     # olimpiada: ZAWSZE w ZIP (źródła, plany, zestawy, terminy, html) — decyzja Rafała
     'olimpiada', 'olimpiada/zrodla', 'olimpiada/LKO_pakiet',
+    # wizualizacje: baza mała, raporty użycia i braków
+    'wizualizacje-projekty/baza-mala',
 ]
 POMIJAJ = {'.git', 'dist', 'modules', 'archiwum', '.specstory', 'node_modules', '__pycache__', 'out', 'html_podglad'}
 POMIJAJ_EXT = {'.zip', '.pyc'}
