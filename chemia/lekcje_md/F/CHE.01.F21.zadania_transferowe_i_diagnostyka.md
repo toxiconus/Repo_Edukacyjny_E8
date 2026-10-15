@@ -123,7 +123,7 @@ Czy potrafisz wykorzystać fundamenty F01–F20 w sytuacji, w której nikt nie p
 Przy kontroli pytaj kolejno: *Czy atomy się zgadzają? Czy ładunek jest zerowy, jeśli ma być zerowy? Czy wynik ma sens chemiczny? Czy jednostki są właściwe?*
 :::
 
-## 2 | Zadania transferowe — 15 zadań z kluczem [[basic:E8]] {#zadania}
+## 2 | Zadania transferowe — 21 zadań z kluczem [[basic:E8]] {#zadania}
 
 ::: karta exam | Zadanie 1 — od konfiguracji do pierwiastka (2 pkt, E8+LO)
 Dany jest atom o konfiguracji `[Ne]3s²3p⁵`. Ustal symbol, Z, okres, grupę, liczbę elektronów walencyjnych i typowy jon jednoatomowy.
@@ -174,6 +174,18 @@ Al + O₂ → Al₂O₃
 ```
 
 Kontrola: po lewej 4 Al i 6 O; po prawej 2·2 = 4 Al i 2·3 = 6 O. Liczba atomów każdego pierwiastka jest taka sama po obu stronach.
+:::
+:::
+
+::: karta exam | Zadanie 4b — zapisy 2H, H₂ i 2H₂ (2 pkt)
+Opisz słownie, ile atomów lub cząsteczek oznacza każdy zapis: `2H`, `H₂`, `2H₂`.
+
+::: odp | Pokaż klucz i rozumowanie
+- `2H` — **dwa atomy** wodoru. To nie gaz: atomy H łączą się w cząsteczki.
+- `H₂` — **jedna cząsteczka** wodoru, zbudowana z dwóch atomów H (indeks 2 mówi, ile atomów jest w cząsteczce).
+- `2H₂` — **dwie cząsteczki** wodoru, czyli **cztery atomy** H.
+
+Kontrola: liczba przed symbolem to liczba atomów lub cząsteczek; indeks po symbolu to liczba atomów w jednej cząsteczce.
 :::
 :::
 
@@ -249,7 +261,7 @@ Tetraedryczna, niepolarna (cztery polarne wiązania C–H symetrycznie rozmieszc
 :::
 :::
 
-::: adv | Zadanie 14 — dlaczego roztwór HCl przewodzi prąd? (2 pkt) | poziom ambitny
+::: adv | Zadanie 14 — dlaczego roztwór HCl przewodzi prąd? (2 pkt, E8+LO) | poziom ambitny
 Chlorowodór w roztworze wodnym przewodzi prąd. Wyjaśnij, co jest nośnikiem ładunku.
 
 ::: odp | Pokaż klucz i rozumowanie
@@ -257,7 +269,7 @@ HCl jest kwasem; w wodzie ulega jonizacji: HCl → H⁺ + Cl⁻. Ruchliwe jony H
 :::
 :::
 
-::: adv | Zadanie 15 — zadanie zbiorcze: nowa substancja X (2 pkt) | poziom ambitny
+::: adv | Zadanie 15 — zadanie zbiorcze: nowa substancja X (2 pkt, E8+LO) | poziom ambitny
 Dane: substancja X zbudowana z pierwiastka o Z = 8 i pierwiastka o Z = 1. Ustal: wzór, Lewis, geometrię, polarność, jedną reakcję charakterystyczną i co jest potrzebne do pełnego dossier.
 
 ::: odp | Pokaż klucz i rozumowanie
