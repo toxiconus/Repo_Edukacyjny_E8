@@ -19,8 +19,10 @@ KATALOGI = [
     'chemia/html', 'biologia/html', 'polski/html', 'olimpiada/html', 'olimpiada/LKO_pakiet/html', 'angielski/html',
     # małe silniki i narzędzia
     'chemia/che-modular/engine', 'chemia/che-modular/tools', 'biologia/bio/narzedzia', 'szablon', 'narzedzia',
+    # olimpiada: ZAWSZE w ZIP (źródła, plany, zestawy, terminy, html) — decyzja Rafała
+    'olimpiada', 'olimpiada/zrodla', 'olimpiada/LKO_pakiet',
 ]
-POMIJAJ = {'.git', 'dist', 'modules', 'archiwum', '.specstory', 'node_modules', '__pycache__', 'out'}
+POMIJAJ = {'.git', 'dist', 'modules', 'archiwum', '.specstory', 'node_modules', '__pycache__', 'out', 'html_podglad'}
 POMIJAJ_EXT = {'.zip', '.pyc'}
 
 def wybrane():
