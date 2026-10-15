@@ -580,30 +580,7 @@ Wybierz `mustn't` gdy coś jest zabronione (reguła, przepis), a `shouldn't` gdy
 
 ## 7. Will / going to – przyszłość
 
-[POZIOM E8]
-
-### Will – przyszłość, obietnica, oferta
-
-| Przykład | Tłumaczenie | Funkcja |
-|----------|-------------|----------|
-| I think it **will rain** tomorrow. | Myślę, że jutro będzie padać. | przewidywanie |
-| I **will help** you with your homework. | Pomogę ci z zadaniem. | obietnica / oferta |
-| I **will call** you later. | Zadzwonię do ciebie później. | decyzja |
-
-<!-- UI: AUDIO --> *I think it will rain tomorrow. / I will help you with your homework.*
-
----
-
-### Will vs Going to – ważne rozróżnienie
-
-| Will | Going to |
-|------|----------|
-| Spontaniczna decyzja – zrobię to w tym momencie | Plan – już wcześniej zaplanowane |
-| *I'll open the window.* (teraz postanowiłem) | *I'm going to visit my grandma.* (mam to zaplanowane) |
-| Przewidywanie – na podstawie opinii | Przewidywanie – na podstawie dowodów |
-| *I think it will rain.* | *Look at those clouds – it's going to rain.* |
-
----
+Ta sekcja została przeniesiona do lekcji 12 (Future Simple i be going to), żeby nie dublować treści.
 
 ## 8. Would like (to) – uprzejme prośby i chęci
 
@@ -886,7 +863,7 @@ Uzupełnij **should have / could have / must have**:
 
 ---
 
-## 11. Słownictwo – obowiązki, zdrowie, bezpieczeństwo
+## 13. Słownictwo – obowiązki, zdrowie, bezpieczeństwo
 
 <!-- UI: VOCAB -->
 
@@ -1019,7 +996,7 @@ Uzupełnij **should have / could have / must have**:
 
 ---
 
-## 12. Tip tygodnia – zestaw obok siebie
+## 14. Tip tygodnia – zestaw obok siebie
 
 <!-- UI: COMPARE -->
 
@@ -1046,7 +1023,7 @@ Po **can, could, may, might, must, should, will** zawsze forma podstawowa (bez �
 
 ---
 
-## 13. Ćwiczenia
+## 15. Ćwiczenia
 
 <!-- UI: CHOICE --> <!-- UI: CLOZE --> <!-- UI: TRANSLATE --> <!-- UI: ERROR -->
 
@@ -1282,7 +1259,7 @@ I must help my parents with housework. At school, we have to wear a uniform. You
 
 ---
 
-## 14. Mini-dialogi – uzupełnij luki
+## 16. Mini-dialogi – uzupełnij luki
 
 <!-- UI: CLOZE --> <!-- UI: SPEAK -->
 
@@ -1365,7 +1342,7 @@ B: Yes, you do.
 
 ---
 
-## 15. E8 Lab – pułapki z prawdziwych arkuszy
+## 17. E8 Lab – pułapki z prawdziwych arkuszy
 
 <!-- UI: EXAM -->
 
@@ -1490,7 +1467,7 @@ might / may / could – mniej pewne niż will.
 
 ---
 
-## 16. Ważne! – 8 kluczowych zasad
+## 18. Ważne! – 8 kluczowych zasad
 
 [POZIOM E8]
 
@@ -1556,7 +1533,7 @@ might / may / could – mniej pewne niż will.
 
 ---
 
-## 17. Najczęstsze błędy i pułapki
+## 19. Najczęstsze błędy i pułapki
 
 <!-- UI: ERROR -->
 
@@ -1578,7 +1555,7 @@ might / may / could – mniej pewne niż will.
 
 ---
 
-## 18. Podsumowanie
+## 20. Podsumowanie
 
 [POZIOM E8]
 
@@ -1620,7 +1597,7 @@ Wyjątki: **would like to + czasownik**, **ought to + czasownik**, **have to**, 
 
 ---
 
-## 19. Test końcowy – MISJA
+## 21. Test końcowy – MISJA
 
 <!-- UI: EXAM -->
 
@@ -1661,7 +1638,7 @@ Instrukcja: Bez zaglądania do zasad – uzupełnij wszystkie zdania. Sprawdź s
 
 ---
 
-## 20. Mini-test podsumowujący (6 pytań)
+## 22. Mini-test podsumowujący (6 pytań)
 
 <!-- UI: EXAM -->
 
@@ -1701,7 +1678,7 @@ Instrukcja: Bez zaglądania do zasad – uzupełnij wszystkie zdania. Sprawdź s
 
 ---
 
-## 21. Ćwiczenia mieszane – sprawdź wszystko naraz
+## 23. Ćwiczenia mieszane – sprawdź wszystko naraz
 
 <!-- UI: MASTER -->
 
@@ -1738,7 +1715,7 @@ Instrukcja: Bez zaglądania do zasad – uzupełnij wszystkie zdania. Sprawdź s
 
 ---
 
-## 22. FAQ – najczęstsze wątpliwości
+## 24. FAQ – najczęstsze wątpliwości
 
 <!-- UI: FAQ -->
 
@@ -1786,7 +1763,7 @@ Instrukcja: Bez zaglądania do zasad – uzupełnij wszystkie zdania. Sprawdź s
 
 ---
 
-## 23. False friends – fałszywi przyjaciele
+## 25. False friends – fałszywi przyjaciele
 
 | Angielski | Nie znaczy | Znaczy | Przykład |
 |-----------|-----------|--------|----------|
@@ -1800,7 +1777,7 @@ Instrukcja: Bez zaglądania do zasad – uzupełnij wszystkie zdania. Sprawdź s
 
 ---
 
-## 24. Test wyjściowy – sprawdź swój postęp
+## 26. Test wyjściowy – sprawdź swój postęp
 
 <!-- UI: PROGRESS -->
 
@@ -1827,7 +1804,7 @@ Porównaj swój wynik z testem wstępnym. Czy jest lepiej?
 
 ---
 
-## 25. Fiszki
+## 27. Fiszki
 
 <!-- UI: FISZKI -->
 
@@ -1867,7 +1844,7 @@ Porównaj swój wynik z testem wstępnym. Czy jest lepiej?
 
 ---
 
-## 26. MASTER – wyjaśnij dlaczego
+## 28. MASTER – wyjaśnij dlaczego
 
 [POZIOM E8]
 
@@ -1933,7 +1910,7 @@ W poniższych zadaniach nie tylko wybierz poprawną odpowiedź, ale także uzasa
 
 ---
 
-## 27. Napisz – regulamin klasy / wiadomość
+## 29. Napisz – regulamin klasy / wiadomość
 
 [POZIOM E8]
 
@@ -1950,7 +1927,7 @@ Możesz opisać zasady w szkole, w domu lub wysłać krótką wiadomość do kol
 
 ---
 
-## 28. Odnośniki do powiązanych lekcji
+## 30. Odnośniki do powiązanych lekcji
 
 - **Lekcja 2** – Operatory BE i DO: *have to* w pytaniach używa operatora, jak zwykły czasownik.
 - **Lekcja 12** – Future Simple (*will*) i *be going to*: *will* pojawia się jako czasownik modalny do przewidywań.
