@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl" data-przedmiot="che">
+<html lang="pl" data-przedmiot="oli">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
@@ -626,20 +626,88 @@ details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border
 details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
 @media print{details.lk-log{display:none}}
 
-/* motyw che (Chemia) — kolory, wzór nagłówka, komponenty przedmiotu */
-:root{--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,.15);--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 104 180%27%3E%3Cg fill=%27none%27 stroke=%27%230d6868%27 stroke-width=%273%27%3E%3Cpath d=%27M52 10l40 23v46l-40 23-40-23V33z%27/%3E%3Cpath d=%27M52 100l40 23v46l-40 23-40-23v-46z%27/%3E%3Cpath d=%27M52 22v8M92 56h8M12 56H4%27/%3E%3C/g%3E%3Cg fill=%27%230d6868%27%3E%3Ccircle cx=%2752%27 cy=%2710%27 r=%275%27/%3E%3Ccircle cx=%2792%27 cy=%2779%27 r=%275%27/%3E%3Ccircle cx=%2712%27 cy=%27123%27 r=%275%27/%3E%3C/g%3E%3C/svg%3E")}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}}
-:root[data-theme=dark]{--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}
+/* motyw oli (Olimpiada) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#8a5a00;--accent-dark:#5f3e00;--accent-soft:#fbf1dd;--accent-line:#ecd29a;--accent-glow:rgba(138,90,0,.15);--hl-key:#8a5a00;--hl-key-bg:#f8e9c8;--hl-formula:#5f3e00;--hl-formula-bg:#fbf1dd;--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 120 200%27%3E%3Cg fill=%27%238a5a00%27%3E%3Cpath d=%27M60 20l8 17 19 2-14 13 4 19-17-10-17 10 4-19-14-13 19-2z%27/%3E%3C/g%3E%3Cg fill=%27none%27 stroke=%27%238a5a00%27 stroke-width=%274%27 stroke-linecap=%27round%27%3E%3Cpath d=%27M30 110c-6 30 6 56 30 70M90 110c6 30-6 56-30 70%27/%3E%3C/g%3E%3Cg fill=%27%238a5a00%27%3E%3Cellipse cx=%2726%27 cy=%27128%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-60 26 128%29%27/%3E%3Cellipse cx=%2730%27 cy=%27150%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-40 30 150%29%27/%3E%3Cellipse cx=%2742%27 cy=%27168%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-20 42 168%29%27/%3E%3Cellipse cx=%2794%27 cy=%27128%27 rx=%279%27 ry=%275%27 transform=%27rotate%2860 94 128%29%27/%3E%3Cellipse cx=%2790%27 cy=%27150%27 rx=%279%27 ry=%275%27 transform=%27rotate%2840 90 150%29%27/%3E%3Cellipse cx=%2778%27 cy=%27168%27 rx=%279%27 ry=%275%27 transform=%27rotate%2820 78 168%29%27/%3E%3C/g%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#e9b85a;--accent-dark:#f5d79a;--accent-soft:#2b2312;--accent-line:#5c4a22;--accent-glow:rgba(233,184,90,.2);--hl-key:#efc677;--hl-key-bg:#33290f;--hl-formula:#f5d79a;--hl-formula-bg:#2b2312;}}
+:root[data-theme=dark]{--accent:#e9b85a;--accent-dark:#f5d79a;--accent-soft:#2b2312;--accent-line:#5c4a22;--accent-glow:rgba(233,184,90,.2);--hl-key:#efc677;--hl-key-bg:#33290f;--hl-formula:#f5d79a;--hl-formula-bg:#2b2312;}
 
-/* równanie reakcji w osobnej linii: ::: div.rownanie */
-.rownanie{margin:12px 0;padding:12px 16px;border-radius:var(--r-md);background:var(--surface-soft);border:1px solid var(--border);font:600 17px/1.6 Inter,system-ui,sans-serif;text-align:center;overflow-x:auto;white-space:nowrap}
-.rownanie small{display:block;font-size:12px;font-weight:500;color:var(--text-muted);white-space:normal}
+/* poziomy olimpijskie 2–4 (wspólne lekcje E8: warstwy dopisane w tej samej lekcji) */
+.poz{display:inline-flex;align-items:center;gap:5px;font:800 11.5px/1 Inter,system-ui;padding:4px 9px;border-radius:999px;border:1px solid var(--accent-line);background:var(--accent-soft);color:var(--accent);vertical-align:middle}
+.poz::before{content:"";width:22px;height:6px;border-radius:3px;background:linear-gradient(90deg,var(--accent) var(--poz-w,33%),var(--accent-line) 0)}
+.poz-2{--poz-w:33%}.poz-3{--poz-w:66%}.poz-4{--poz-w:100%}
+.zad-konk{border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:12px 16px;margin:14px 0;background:var(--surface)}
+.zad-konk>b:first-child{display:flex;justify-content:space-between;gap:10px;margin-bottom:6px}
+.zad-konk .pkt{font:800 12px Inter,system-ui;color:var(--accent);white-space:nowrap}
+
+/* Styl klocków laboratoryjnych (palniki, probówki, układ okresowy) — dobrany do motywu che:
+   jasna karta lekcji (--surface), akcent --accent, tekst --text. Scena z płótnem zostaje ciemna
+   (płomienie i poświaty wyglądają na ciemnym tle), reszta jak w sekcjach lekcji. */
+:root{--lab:#0e2326;--lab-tekst:var(--text,#1a2332);--lab-cisza:var(--text-muted,#8892a0);--lab-linia:var(--border,#e5e9ee)}
+.lab{background:var(--surface,#fff);color:var(--text,#1a2332);border:1px solid var(--border,#e5e9ee);border-radius:var(--r-lg,14px);padding:16px;box-shadow:var(--sh-sm,none);font-family:var(--tekst,Inter,system-ui,sans-serif)}
+.lab-pasek{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between;margin-bottom:12px}
+.lab-pasek .btn{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+.lab-cisza{color:var(--text-muted,#8892a0);font-size:14px}
+.btn{appearance:none;cursor:pointer;border:1px solid var(--accent,#0d6868);background:var(--accent,#0d6868);color:#fff;border-radius:var(--r-md,10px);padding:8px 14px;font:600 13px var(--tekst,Inter,sans-serif)}
+.btn.jasny{background:var(--surface,#fff);color:var(--accent,#0d6868)}
+.btn:hover{filter:brightness(1.08)}
+.btn:focus-visible{outline:2px solid var(--accent,#0d6868);outline-offset:2px}
+.btn[disabled]{opacity:.4;cursor:not-allowed}
+.stacje{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.st{display:flex;flex-direction:column;background:none;border:none;padding:0;min-width:0}
+.st-opis{margin-top:auto;display:flex;flex-direction:column;justify-content:flex-end}
+.st canvas,.rack canvas{display:block;width:100%;height:auto;cursor:pointer;background:var(--lab,#0e2326);border-radius:var(--r-md,10px);margin:6px 0 4px}
+.rack{margin:0 auto}
+.rack-kol{display:grid;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));gap:8px}
+.rack-ce{padding:0 6px;min-width:0;display:flex;flex-direction:column}
+.rack-ce.st-opis{justify-content:flex-end}
+.rack .wyb-gr{display:none}
+.rack .rown{font-size:14px}
+.rack-ce .btn,.st .btn{padding:6px 10px;font-size:12px}
+.st-opis{font-size:14px;color:var(--text,#1a2332)}
+.st-opis p{margin:0 0 6px}
+.rown{font:600 15px var(--naglowek,Inter,sans-serif);color:var(--text,#1a2332)}
+.obs{font-size:14px;color:var(--text-soft,#4a5568)}
+.meta{font-size:12.5px;color:var(--text-muted,#8892a0);display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-bottom:8px}
+.meta .pasek{background:var(--border,#e5e9ee);width:90px;height:8px;display:inline-block;vertical-align:middle;margin-left:6px;border-radius:99px;overflow:hidden}
+.meta .pasek i{display:block;height:100%;background:var(--accent,#0d6868)}
+.ostrz{color:var(--c-error,#b83a45);font-size:13px}
+.zak{display:flex;gap:10px;align-items:center;background:var(--c-warn-bg,#fcf4e6);border:1px solid var(--c-warn-line,#eed8a8);border-radius:var(--r-md,10px);padding:8px 10px;font-size:13px;line-height:1.35;margin:8px 0;color:var(--text,#1a2332)}
+.zak-ik{display:flex;gap:4px;flex:none}
+.el .tr{position:absolute;right:2px;bottom:2px;display:flex}
+.sz{position:relative}
+.sz .tr{position:absolute;top:2px;right:2px;display:flex}
+.tr2{display:flex;font-style:normal;margin-left:auto}
+.kol{display:flex;align-items:center;gap:10px;font-size:15px;color:var(--text,#1a2332)}
+.sw{width:20px;height:20px;border-radius:50%;flex:none;box-shadow:0 0 12px var(--glow,transparent)}
+.sw.pusty{border:2px dashed var(--border-strong,#cdd5dd)}
+.wyb-sym{position:relative;min-width:0}
+.wyb-sym>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:6px;font:700 15px var(--naglowek,Inter,sans-serif);color:var(--text,#1a2332);padding:4px 8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-sm,6px);background:var(--surface,#fff)}
+.wyb-sym>summary::-webkit-details-marker{display:none}
+.wyb-tri{display:inline-block;font-size:11px;color:var(--accent,#0d6868);transition:transform .15s}
+.wyb-sym[open] .wyb-tri{transform:rotate(90deg)}
+.wyb-lista{display:grid;gap:6px;margin:6px 0 8px;padding:8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-md,10px);background:var(--surface,#fff)}
+.wyb-g{display:block;font-size:11px;color:var(--text-muted,#8892a0);margin-bottom:3px}
+.wyb-sy{appearance:none;cursor:pointer;border:1px solid var(--border-strong,#cdd5dd);background:var(--surface-soft,#f6f8fa);color:var(--text,#1a2332);border-radius:var(--r-sm,6px);padding:4px 9px;margin:0 4px 4px 0;font:600 13px var(--naglowek,Inter,sans-serif)}
+.wyb-sy[aria-pressed="true"]{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+/* telefon: kilka stojaków obok siebie — węższy tekst, łamanie długich nazw */
+.kol{min-width:0}
+.kol b{overflow-wrap:anywhere;min-width:0}
+.st-opis{font-size:13px}
+.kol{font-size:14px}
+.stacje{gap:8px}
+.rack-kol{gap:6px}
+@media (max-width:480px){.st-opis .obs{font-size:12.5px}.st .btn,.rack-ce .btn{padding:5px 8px;font-size:12px}}
+.seria-przyciski{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+.seria-btn[aria-pressed="false"]{background:transparent;color:var(--accent,#0d6868)}
+.seria-btn[aria-pressed="true"]{background:var(--accent,#0d6868);color:#fff}
+.seria-opis{margin:0 0 10px;font-size:14px;color:var(--lab-cisza,#8892a0)}
+
 
 </style>
 </head>
 <body>
 <a class="skip-link" href="#main">Przejdź do treści</a>
-<header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">LKO-STECH &quot;Masy cząsteczkowe i stechiometria równań — metoda masowa z nadmiarem (LKO etap II, rozszerzenia 6–7)&quot;</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<header class="lk-bar"><span class="lk-subj"><i></i>Olimpiada</span><span class="lk-title">LKO-STECH &quot;Masy cząsteczkowe i stechiometria równań — metoda masowa z nadmiarem (LKO etap II, rozszerzenia 6–7)&quot;</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
 <section class="hero card"><div class="hero-kicker">"LKO-STECH · II etap"</div><h1>"Masy cząsteczkowe i stechiometria równań — metoda masowa z nadmiarem (LKO etap II, rozszerzenia 6–7)"</h1><p class="lead">"Ile gramów powstanie z danej masy substratu? Liczymy Mr, pilnujemy pierwiastków cząsteczkowych, a gdy podano dwie masy — najpierw ustalamy, kto ogranicza reakcję."</p><div class="tag-row"><span class="level-badge level-basic">E8</span><span class="level-badge level-understand">ROZUMIENIE</span><span class="level-badge level-extra">LKO II / OLIMP</span></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
 <details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#minimum">Minimum E8</a><a class="toc-link" href="#s1">Lustro i most</a><a class="toc-link" href="#s2">1. Wykład — Masa cząsteczkowa: procedura i pułapka pierwiastków</a><a class="toc-link" href="#s3">2. Wykład — Stechiometria wzoru: procenty w obie strony</a><a class="toc-link" href="#s4">3. Wykład — Stechiometria równania: proporcja masowa w czterech krokach</a><a class="toc-link" href="#s5">4. Wykład — Niestechiometria: reagent ograniczający (trzy kroki + kontrola)</a><a class="toc-link" href="#s6">KOMPENDIUM — ściąga wynikowa</a><a class="toc-link" href="#zadania">5. Zadania — karty exam i adv</a><a class="toc-link" href="#s7">BŁĘDY TYPOWE (klinika)</a><a class="toc-link" href="#fiszki">6. Fiszki</a><a class="toc-link" href="#slownik">7. Słownik</a><a class="toc-link" href="#test">8. Test</a><a class="toc-link" href="#s8">Ciekawostki</a><a class="toc-link" href="#s9">Notatka dla prowadzącego: granice</a></nav></details>
@@ -673,6 +741,8 @@ Podane czasy, punktacja i progi interpretacji wyniku są zasadami tego autorskie
 <section id="s2">
 <div class="part-heading"><span class="part-num">1</span> Wykład — Masa cząsteczkowa: procedura i pułapka pierwiastków</div>
 <h3>1.1 Zasada</h3>
+<figure class="lk-fig" data-klocek="trojkat-przeliczen" data-opt="{&quot;wzor&quot;: &quot;mol&quot;}"><div class="lk-fig-body"></div><figcaption>Trójkąt przeliczeń: masa, mole, cząstki</figcaption></figure>
+<!-- OPIS: Trzy wierzchołki: masa m u góry, liczba moli n w lewym dolnym rogu, liczba cząstek N w prawym. Strzałki przy bokach pokazują działanie: z masy do moli dzielimy przez M, z moli do masy mnożymy przez M, a z moli do cząstek mnożymy przez N_A. Wniosek: każdą konwersję robimy przez mole, a masa molowa jest mostem między gramami a molami. -->
 <p><strong>Mr = suma mas atomowych z uwzględnieniem indeksów (i nawiasów).</strong> Mas atomowych nie uczysz się na pamięć całościowo — na zawodach są w tablicach; rdzeń, który warto mieć w głowie: <strong>H 1 · C 12 · N 14 · O 16 · Na 23 · S 32 · Cl 35,5 · Ca 40 · Fe 56 · Cu 64 · Zn 65 · Ag 108 · Ba 137 · Pb 207</strong>.</p>
 <p>Przykłady z nawiasami:</p>
 <p>Al₂(SO₄)₃ = 2·27 + 3·(32 + 4·16) = 54 + 288 = <strong>342</strong>
@@ -950,6 +1020,198 @@ F3 — 16:64:44:36 → m(O₂) = 8 × 64/16 = <strong>32 g</strong> (1); m(CO₂
 <footer class="footer"><p>"<strong>LKO-STECH</strong> · Masy cząsteczkowe i stechiometria · 2026"</p></footer>
 </main>
 <script>
+/* KLOCKI — lekkie komponenty wielokrotnego użytku dla lekcji (bez silnika).
+   Każdy klocek: KLOCKI.def(nazwa, {opis, dane, rysuj(canvas, stan, t)}) — rejestr,
+   KLOCKI.montuj(host, nazwa, opcje) — tworzy canvas, autostart gdy widoczny,
+   klik zatrzymuje/wznawia. Lekcja wymienia klocki w manifeście (klocki/manifest). */
+(function (g) {
+  var reg = {};
+  function def(nazwa, k) { reg[nazwa] = k; }
+  function montuj(host, nazwa, opc) {
+    var k = reg[nazwa];
+    if (!k) { host.textContent = 'Brak klocka: ' + nazwa; return null; }
+    opc = Object.assign({}, k.domyslne || {}, opc || {});
+    if (k.html) { host.innerHTML = ''; k.html(host, opc); return null; }
+    var c = document.createElement('canvas');
+    c.width = opc.szer || 480; c.height = opc.wys || 300;
+    c.style.width = '100%'; c.style.maxWidth = c.width + 'px'; c.style.height = 'auto';
+    c.setAttribute('role', 'img');
+    c.setAttribute('aria-label', (opc.opis || k.opis || nazwa));
+    host.innerHTML = ''; host.appendChild(c);
+    var stan = Object.assign({}, k.stan0 ? k.stan0(opc) : {}, {opc: opc});
+    var ctx = c.getContext('2d'), t0 = performance.now(), grane = true, id = null;
+    function klatka(now) {
+      try { k.rysuj(ctx, c.width, c.height, stan, (now - t0) / 1000, opc); } catch (e) { }
+      if (grane) id = requestAnimationFrame(klatka);
+    }
+    function start() { if (!grane) { grane = true; t0 = performance.now() - (stan._t || 0) * 1000; id = requestAnimationFrame(klatka); } }
+    function stop() { grane = false; if (id) cancelAnimationFrame(id); }
+    c.addEventListener('click', function () { grane ? stop() : start(); });
+    if ('IntersectionObserver' in g) {
+      var io = new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? start() : stop(); }); });
+      io.observe(c);
+    } else { start(); }
+    k.rysuj(ctx, c.width, c.height, stan, 0, opc);
+    return {stop: stop, start: start, stan: stan, canvas: c};
+  }
+  g.KLOCKI = {def: def, montuj: montuj, nazwy: function () { return Object.keys(reg); }};
+})(window);
+
+/* KLOCKI — wspólne narzędzia (kolejność: pierwsze w manifeście). Wyciągnięte z animacji P01. */
+/* ---------------------------- narzędzia ---------------------------- */
+var RM = !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
+function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+function sm(v) { v = clamp(v, 0, 1); return v * v * (3 - 2 * v); }
+function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+function hex2rgb(h) { var n = parseInt(h.slice(1), 16); return [n >> 16 & 255, n >> 8 & 255, n & 255]; }
+function rgba(h, a) { var c = hex2rgb(h); return 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ',' + a + ')'; }
+function mixHex(a, b, k) {
+  var A = hex2rgb(a), B = hex2rgb(b);
+  return '#' + [0, 1, 2].map(function (i) { return ('0' + Math.round(A[i] + (B[i] - A[i]) * k).toString(16)).slice(-2); }).join('');
+}
+function rr(x, a, b, w, h, r) {
+  x.beginPath(); x.moveTo(a + r, b); x.arcTo(a + w, b, a + w, b + h, r); x.arcTo(a + w, b + h, a, b + h, r);
+  x.arcTo(a, b + h, a, b, r); x.arcTo(a, b, a + w, b, r); x.closePath();
+}
+
+
+/* ---------------------------- pętla animacji ---------------------------- */
+var uchwyty = [], rafId = 0, ostatni = 0;
+function petla(now) {
+  var dt = Math.min(.05, (now - ostatni) / 1000); ostatni = now;
+  for (var i = 0; i < uchwyty.length; i++) uchwyty[i].krok(dt);
+  rafId = uchwyty.length ? requestAnimationFrame(petla) : 0;
+}
+function wlacz(h) { if (uchwyty.indexOf(h) < 0) uchwyty.push(h); if (!rafId) { ostatni = performance.now(); rafId = requestAnimationFrame(petla); } }
+function wylacz(h) { var i = uchwyty.indexOf(h); if (i >= 0) uchwyty.splice(i, 1); }
+function podepnij(canvas, h) {
+  h.rysuj();
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? wlacz(h) : wylacz(h); }); }, {threshold: .05}).observe(canvas);
+  } else wlacz(h);
+}
+
+
+function parsujListe(txt, dozwolone, domyslne) {
+  var l = String(txt || '').split(',').map(function (s) { return s.trim(); }).filter(function (s) { return dozwolone[s]; });
+  return (l.length ? l : domyslne).slice(0, 3);
+}
+
+
+/* Wybór pierwiastka: tylko symbole, a znacznik ▸ pokazuje, że lista się rozwija (bez pełnych nazw obok). */
+function wyborSymbole(grupy, start, onChange, etykieta) {
+  var box = el('details', 'wyb-sym'), sum = el('summary', null), cur = el('span', 'wyb-cur', start);
+  sum.appendChild(cur); sum.appendChild(el('span', 'wyb-tri', '▸')); box.appendChild(sum);
+  var lst = el('div', 'wyb-lista'), btns = [];
+  lst.setAttribute('role', 'listbox'); lst.setAttribute('aria-label', etykieta || 'Wybór pierwiastka');
+  var NAG = {1: 'Litowce', 2: 'Berylowce', 3: 'Tlenki berylowców'};
+  Object.keys(grupy).forEach(function (g) {
+    var w = el('div', 'wyb-grupa'); w.appendChild(el('span', 'wyb-g', NAG[g] || ('grupa ' + g)));
+    grupy[g].forEach(function (s) {
+      var b = el('button', 'wyb-sy', s); b.type = 'button'; b.setAttribute('data-sym', s);
+      b.setAttribute('title', cap(NAZ[SYM.indexOf(s)] || s));
+      b.addEventListener('click', function () { ustaw(s); box.open = false; onChange(s); });
+      w.appendChild(b); btns.push(b);
+    });
+    lst.appendChild(w);
+  });
+  box.appendChild(lst);
+  function ustaw(s) { cur.textContent = s; btns.forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-sym') === s ? 'true' : 'false'); }); }
+  ustaw(start);
+  return {el: box, ustaw: ustaw};
+}
+
+/* KLOCEK: trojkat-przeliczen — trójkąt konwersji masa ↔ liczba moli ↔ cząstki lub objętość gazu.
+   Opcje (w lekcji): wzor="mol"  (domyślnie) — wierzchołki: m [g], n [mol], N [cząstki]; N = n · N_A
+                     wzor="gaz"  — wierzchołki: m [g], n [mol], V [dm³]; V = n · Vₘ (22,4 dm³/mol)
+   Strzałki: góra → lewo ÷ M, lewo → góra × M; lewo ↔ prawo: × / ÷ N_A (lub Vₘ). Bok góra–prawo nie ma operacji.
+   Wzory konwersji są wypisane w rogu. Klik zatrzymuje/wznawia (zachowanie montuj). */
+(function () {
+  var SZABLON = {
+    mol: {R: 'N [cząstki]', kR: 'N_A', wzory: ['m = n · M', 'n = m / M', 'N = n · N_A']},
+    gaz: {R: 'V [dm³]', kR: 'Vₘ', wzory: ['m = n · M', 'n = m / M', 'V = n · Vₘ']}
+  };
+
+  // odcinek A→B przesunięty o off wzdłuż normalnej, skrócony przy węzłach; grot na końcu
+  function strzalka(x, A, B, off, skrA, skrB) {
+    var dx = B.x - A.x, dy = B.y - A.y, d = Math.sqrt(dx * dx + dy * dy) || 1;
+    var ux = dx / d, uy = dy / d, px = -uy, py = ux;
+    var ax = A.x + px * off + ux * skrA, ay = A.y + py * off + uy * skrA;
+    var bx = B.x + px * off - ux * skrB, by = B.y + py * off - uy * skrB;
+    x.beginPath(); x.moveTo(ax, ay); x.lineTo(bx, by); x.stroke();
+    var ang = Math.atan2(by - ay, bx - ax), g = 9;
+    x.beginPath(); x.moveTo(bx, by);
+    x.lineTo(bx - g * Math.cos(ang - 0.4), by - g * Math.sin(ang - 0.4));
+    x.lineTo(bx - g * Math.cos(ang + 0.4), by - g * Math.sin(ang + 0.4));
+    x.closePath(); x.fill();
+    return {x: (A.x + B.x) / 2 + px * off, y: (A.y + B.y) / 2 + py * off, px: px, py: py};
+  }
+  function wyjscie(ux, uy, bw, bh) {
+    var sx = Math.abs(ux) > 1e-6 ? (bw / 2) / Math.abs(ux) : Infinity;
+    var sy = Math.abs(uy) > 1e-6 ? (bh / 2) / Math.abs(uy) : Infinity;
+    return Math.min(sx, sy) + 5;
+  }
+  function skrot(A, B, bw, bh) {
+    var dx = B.x - A.x, dy = B.y - A.y, d = Math.sqrt(dx * dx + dy * dy) || 1;
+    var ux = dx / d, uy = dy / d;
+    return [wyjscie(ux, uy, bw, bh), wyjscie(-ux, -uy, bw, bh)];
+  }
+
+  KLOCKI.def('trojkat-przeliczen', {
+    opis: 'Trójkąt konwersji: masa, liczba moli i cząstki (lub objętość gazu) ze strzałkami operacji ÷/× M, N_A lub Vₘ.',
+    domyslne: {wzor: 'mol', szer: 480, wys: 300},
+    stan0: function () { return {}; },
+    rysuj: function (x, w, h, s, t, opc) {
+      var sz = SZABLON[opc.wzor] || SZABLON.mol;
+      var T = {x: w / 2, y: 46}, Lw = {x: w / 2 - 160, y: h - 64}, Rw = {x: w / 2 + 160, y: h - 64};
+      var BW = 124, BH = 34;
+      x.fillStyle = '#ffffff'; x.fillRect(0, 0, w, h);
+      x.font = '14px system-ui, sans-serif'; x.textBaseline = 'middle'; x.textAlign = 'center';
+
+      // krawędzie trójkąta
+      x.strokeStyle = '#94a3b8'; x.lineWidth = 2;
+      [[T, Lw], [Lw, Rw], [Rw, T]].forEach(function (e) {
+        x.beginPath(); x.moveTo(e[0].x, e[0].y); x.lineTo(e[1].x, e[1].y); x.stroke();
+      });
+
+      // strzałki operacji: dwie na każdym boku z operacją
+      x.strokeStyle = '#334155'; x.fillStyle = '#334155'; x.lineWidth = 2;
+      var etyk = [];
+      function para(A, B, opA, opB, bokA, bokB) {
+        var sk1 = skrot(A, B, BW, BH);
+        var a1 = strzalka(x, A, B, 9, sk1[0], sk1[1]);
+        etyk.push({x: a1.x + a1.px * 16, y: a1.y + a1.py * 16, t: opA});
+        var sk2 = skrot(B, A, BW, BH);
+        var a2 = strzalka(x, B, A, 9, sk2[0], sk2[1]);
+        etyk.push({x: a2.x + a2.px * 16, y: a2.y + a2.py * 16, t: opB});
+      }
+      para(T, Lw, '÷ M ↓', '× M ↑');
+      para(Lw, Rw, '× ' + sz.kR + ' →', '← ÷ ' + sz.kR);
+
+      // etykiety operacji
+      x.fillStyle = '#b45309'; x.font = 'bold 13px system-ui, sans-serif';
+      etyk.forEach(function (e) { x.fillText(e.t, e.x, e.y); });
+
+      // węzły
+      var wez = [[T, 'm [g]'], [Lw, 'n [mol]'], [Rw, sz.R]];
+      wez.forEach(function (p) {
+        x.fillStyle = '#eef6ff'; x.strokeStyle = '#1e40af'; x.lineWidth = 1.5;
+        x.beginPath();
+        if (x.roundRect) x.roundRect(p[0].x - BW / 2, p[0].y - BH / 2, BW, BH, 8); else x.rect(p[0].x - BW / 2, p[0].y - BH / 2, BW, BH);
+        x.fill(); x.stroke();
+        x.fillStyle = '#0f172a'; x.font = '15px system-ui, sans-serif';
+        x.fillText(p[1], p[0].x, p[0].y);
+      });
+
+      // wzory konwersji w prawym górnym rogu
+      x.textAlign = 'right'; x.textBaseline = 'top'; x.fillStyle = '#111827'; x.font = '13px system-ui, sans-serif';
+      sz.wzory.forEach(function (f, i) { x.fillText(f, w - 10, 12 + i * 17); });
+    }
+  });
+})();
+
+(function(){document.querySelectorAll('[data-klocek]').forEach(function(f){var o={};try{o=JSON.parse(f.getAttribute('data-opt')||'{}')}catch(e){}Object.keys(o).forEach(function(k){if(o[k]!==''&&!isNaN(Number(o[k])))o[k]=Number(o[k])});KLOCKI.montuj(f.querySelector('.lk-fig-body'),f.getAttribute('data-klocek'),o)})})();
 /* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
    postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
 (function(){

@@ -69,6 +69,9 @@ Lekcja spina serię organiki: fermentacja zamyka drogę glukoza → etanol → k
 :::
 
 ## 1 | Wykład — cukry: klasyfikacja, wzory, „węglowodany" {#klasyfikacja}
+@klocek wzor-2d {smiles="OCC(O)C(O)C(O)C(O)C=O", grupa="CHO"} | Glukoza C₆H₁₂O₆ w formie łańcuchowej: grupa aldehydowa i pięć grup –OH
+@opis Sześć węgli w łańcuchu, na jednym końcu grupa –CHO, na pozostałych pięć grup –OH. Ramka obejmuje grupę aldehydową. Wniosek: liczne grupy –OH czynią glukozę dobrze rozpuszczalną w wodzie; grupa –CHO odpowiada za redukcję Cu(OH)₂ w próbie Trommera. Rysunek przedstawia formę łańcuchową; w roztworze dominuje forma pierścieniowa.
+
 
 **Cukry (sacharydy, węglowodany)** to związki organiczne zbudowane z węgla, wodoru i tlenu, o wzorach, w których H i O zwykle stoją w stosunku jak w wodzie. Stąd historyczna nazwa: **Cₙ(H₂O)ₘ** — „węgle + woda". Nazwa to relikt: w cukrze **nie ma** wolnego węgla ani cząsteczek wody — jest tylko proporcja atomów. Glukoza: C₆(H₂O)₆ = **C₆H₁₂O₆**; sacharoza: C₁₂(H₂O)₁₁ = **C₁₂H₂₂O₁₁**. Wzór formalny nie może mylić: sacharoza ma **22** atomy H, a nie 24 (1H₂O) — odszczepienie wody przy łączeniu dwóch cukrów prostych kosztowało dwa wodoru i jeden tlen.
 

@@ -50,6 +50,9 @@ Podane czasy, punktacja i progi interpretacji wyniku są zasadami tego autorskie
 
 ### 1.1 Zasada
 
+@klocek trojkat-przeliczen {wzor="mol"} | Trójkąt przeliczeń: masa, mole, cząstki
+@opis Trzy wierzchołki: masa m u góry, liczba moli n w lewym dolnym rogu, liczba cząstek N w prawym. Strzałki przy bokach pokazują działanie: z masy do moli dzielimy przez M, z moli do masy mnożymy przez M, a z moli do cząstek mnożymy przez N_A. Wniosek: każdą konwersję robimy przez mole, a masa molowa jest mostem między gramami a molami.
+
 **Mr = suma mas atomowych z uwzględnieniem indeksów (i nawiasów).** Mas atomowych nie uczysz się na pamięć całościowo — na zawodach są w tablicach; rdzeń, który warto mieć w głowie: **H 1 · C 12 · N 14 · O 16 · Na 23 · S 32 · Cl 35,5 · Ca 40 · Fe 56 · Cu 64 · Zn 65 · Ag 108 · Ba 137 · Pb 207**.
 
 Przykłady z nawiasami:

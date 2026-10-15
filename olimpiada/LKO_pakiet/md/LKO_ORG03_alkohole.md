@@ -70,6 +70,9 @@ Rdzeniem tej lekcji jest **grupa hydroksylowa –OH**: ona decyduje o rozpuszcza
 :::
 
 ## 1 | Wykład — alkohole: węglowodór z grupą –OH {#definicja}
+@klocek wzor-2d {smiles="CCO", grupa="OH"} | Etanol C₂H₅OH: grupa –OH w ramce
+@opis Etanol: dwa atomy węgla w łańcuchu, a przy drugim węglu grupa –OH (tlen z wodorem) w przerywanej ramce. Wodory przy węglach są pominięte w szkielecie. Wniosek: to grupa –OH, nie szkielet węglowy, decyduje o właściwościach alkoholu (np. reakcji z sodem).
+
 
 **Alkohol** powstaje, gdy w węglowodorze (albo w jego pochodnej) **jeden atom wodoru zostaje zastąpiony grupą hydroksylową –OH** przyłączoną do atomu węgla. Grupa –OH to cecha rodzajowa całej rodziny — decyduje o chemii, która łączy wszystkie alkohole.
 

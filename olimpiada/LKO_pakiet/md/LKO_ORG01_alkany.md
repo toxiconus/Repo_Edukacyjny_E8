@@ -72,6 +72,9 @@ Odpowiedz pisemnie, zanim zaczniesz:
 :::
 
 ## 1 | Wykład — węglowodory i szereg homologiczny alkanów {#szereg}
+@klocek wzor-2d {smiles="CCCCC", grupa="none"} | Pentan C₅H₁₂: łańcuch pięciu węgli, same wiązania pojedyncze
+@opis Rysunek szkieletowy: każda łamana to węgiel, końce to grupy CH₃, wewnętrzne węgle to CH₂ bez podpisu. Same kreski pojedyncze, zero podwójnych. Wniosek: alkan to łańcuch, w którym każdy węgiel ma cztery wiązania, a reszta to wodory; stąd wzór CₙH₂ₙ₊₂.
+
 
 ::: karta understand | Przypomnienie — ile wiązań ma węgiel
 Atom węgla w związkach organicznych tworzy **cztery** wiązania (wartościowość IV), a wodór — jedno. Wszystko, co dalej w lekcji, wynika z tej jednej reguły: każdy węgiel „musi" mieć cztery kreski.
@@ -154,6 +157,9 @@ Najczęstsza przyczyna niepotrzebnych ułamków: startowanie od O₂. Zawsze: na
 :::
 
 ## 3 | Wykład — halogenowanie: substytucja, nie addycja {#halogenowanie}
+@klocek wzor-2d {smiles="CCl", grupa="X"} | Chlorometan CH₃Cl: atom chloru zastąpił jeden wodór
+@opis Metan z jednym atomem wodoru zamienionym na chlor. Ramka wskazuje podstawiony atom Cl. Wniosek: w substytucji wodór odchodzi, a na jego miejsce wchodzi chlor, więc liczba wiązań węgla się nie zmienia.
+
 
 Chlor (i brom) reaguje z alkanami, ale na swoich warunkach:
 
@@ -215,6 +221,12 @@ Reakcja biegnie łańcuchowo, przez rodniki (cząstki z niesparowanym elektronem
 :::
 
 ## 4 | Wykład — izomery: ten sam wzór, inna budowa {#izomery}
+@klocek wzor-2d {smiles="CCCC", grupa="none"} | n-butan C₄H₁₀: łańcuch prosty
+@opis Cztery węgle w jednym rzędzie. Wniosek: n-butan i izobutan mają ten sam wzór C₄H₁₀, różnią się tylko budową łańcucha (izomeria łańcuchowa).
+
+@klocek wzor-2d {smiles="CC(C)C", grupa="none"} | Izobutan (2-metylopropan) C₄H₁₀: łańcuch rozgałęziony
+@opis Trzy węgle w łańcuchu i jeden metyl przy środkowym węglu. Ten sam wzór co n-butan, inne połączenia atomów. Wniosek: izomery to nie to samo co wzór sumaryczny; liczy się budowa.
+
 
 **Izomery** to związki o **identycznym wzorze sumarycznym**, ale **różnej budowie** (tu: różnym rozgałęzieniu łańcucha). Zjawisko nazywa się izomerią.
 
@@ -269,6 +281,9 @@ C1–C3: po jednym (brak izomerii). C4: **2**. C5: **3**. Te liczby trzeba znać
 
 **Bezpieczeństwo:** metan z powietrzem tworzy mieszaninę wybuchową w pewnych proporcjach — pracować tylko z upływającym strumieniem z palnika (nigdy z gazem z butli wypuszczanym bez kontroli), w przewietrzanym pomieszczeniu, bez otwartego ognia poza płomieniem palnika; zlewkę chwytać szczypcami; sprawdzić szczelność połączeń.
 :::
+
+@klocek palnik-gazowy {etap="2"} | Doświadczenie 1 po obserwacjach: krople H₂O na zlewce odwróconej, sucha zlewka kontrolna, woda wapienna mętnieje
+@opis Płomień palnika z metanem stoi pod zlewką odwróconą (dnem do góry). Na jej wewnętrznej kopule są krople wody; zlewka kontrolna obok płomienia jest sucha. Rurka od zlewki odwróconej prowadzi gaz do probówki z wodą wapienną, która jest mętna. Wniosek: w spalinach są H₂O i CO₂ — spalanie całkowite metanu.
 
 ## 6 | Zadania {#zadania}
 
@@ -450,6 +465,8 @@ biogaz :: mieszanina gazów z fermentacji materii organicznej, o znacznym udzial
 
 ## Do weryfikacji
 
+
+- **WIZUALIZACJA ORG01 (spalanie §2, doświadczenie §5): klocek `palnik-gazowy` dodany do §5 (etap 2 = stan końcowy). Etapy 0–1 i wizualizacja spalania §2 — do zrobienia.** Dawny opis braku: `palniki.js` to próba płomieniowa metali (barwy jonów w palniku), a nie palnik gazowy — nie nadaje się do tej lekcji. Potrzebny nowy klocek `palnik-gazowy`: płomień metanu, zlewka odwrócona nad płomieniem z kroplami wody, zlewka kontrolna obok, woda wapienna. Do zrobienia po zatwierdzeniu.
 - **ORG01:** zakres wybuchowości metanu z powietrzem świadomie niepodany (literatura podaje różne przedziały) — w dosw i karcie o lampie Davy'ego tylko jakościowo.
 - **ORG01:** N₂ przyjęty jako 79% (uproszczenie: 21% O₂ + 79% N₂ podane w treści zadania 6) — sprawdzić zgodność z N01, gdzie może być przyjęte 78%; w tym wariancie suma spalin wynosi 281,4 dm³.
 - **ORG01:** adw 6c: 40/22,4 = 1,786 mol → 78,6 g (44 · 1,786 = 78,58) ✔.

@@ -179,6 +179,26 @@
         "steam"
       ],
       "design": "Naczynie nad płomieniem — para, poświata, ewentualna zmiana barwy osadu."
+    },
+    "metanSpalanie": {
+      "title": "Spalanie metanu — dwa dowody",
+      "subjects": [
+        "chemia"
+      ],
+      "domains": [
+        "combustion"
+      ],
+      "vessels": [
+        "zlewkaOdwrocona",
+        "beaker",
+        "testTube"
+      ],
+      "effects": [
+        "condensation",
+        "bubbles",
+        "turbidity"
+      ],
+      "design": "Palnik pod zlewką odwróconą (krople H₂O); gaz do wody wapiennej (zmętnienie = CO₂)."
     }
   }
 }

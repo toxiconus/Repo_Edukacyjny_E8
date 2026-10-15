@@ -71,6 +71,9 @@ To lekcja-rachmistrz serii: bez jej narzędzi zadania wojewódzkie z ORG01–ORG
 
 ## 1 | Wykład — trójkąt konwersji: m–n–N–V {#trojkat}
 
+@klocek trojkat-przeliczen {wzor="gaz"} | Trójkąt konwersji: masa, mole i objętość gazu
+@opis Wierzchołki: masa m u góry, liczba moli n w lewym dolnym rogu, objętość gazu V w prawym. Lewy bok to masa molowa (÷ M z masy, × M do masy), dolny bok to objętość molowa (× Vₘ z moli do objętości, ÷ Vₘ z powrotem). Wniosek: dla gazów objętość liczymy przez mole, nie bezpośrednio z masy.
+
 R04 dało ci trzy wierzchołki: masa **m** (g), liczba moli **n** (mol), liczba cząstek **N**. Etap III dokłada czwarty: objętość gazu **V** (dm³). Cztery wzory łączą wszystkie pary przez mol:
 
 | Z | Do | Wzór | Uwagi |
@@ -348,6 +351,8 @@ gęstość absolutna :: masa jednostki objętości gazu: ρ = M/22,4 g/dm³ (war
 
 ## Do weryfikacji
 
+
+- **WIZUALIZACJA ORG08 (§2 objętość molowa, stosunki objętościowe): BRAK klocka.** Potrzebny klocek `objetosci-gazow`: słupki substratów i produktów w jednej skali, wg współczynników równania (np. propan + 5 O₂ → 3 CO₂ + 4 H₂O(ciecz)), z suwakiem objętości substratu. Priorytet: średni. Do zrobienia po zatwierdzeniu.
 - **ORG08:** Vₘ = 22,4 dm³/mol i warunki normalne (0 °C, 1013,25 hPa) — wartości standardowe podręcznikowe; objętość molowa przy ~20 °C „ok. 24 dm³/mol" — orientacyjne, oznaczone.
 - **ORG08:** M powietrza ≈ 29 g/mol — średnia standardowa (dokładniej 28,96); d metanu 0,55 (16/29 = 0,5517), propanu 1,52 (44/29 = 1,517), chloroetanu 2,22 (64,5/29 = 2,224) — zaokrąglenia spójne.
 - **ORG08:** liczba Loschmidta 2,69·10¹⁹/cm³ — zaokrąglona, oznaczona (dokładna 2,6868·10¹⁹ przy 22,414 dm³/mol).

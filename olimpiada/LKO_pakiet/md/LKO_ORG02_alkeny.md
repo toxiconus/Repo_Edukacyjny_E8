@@ -71,6 +71,9 @@ Ta lekcja ma jedno centrum — **wiązanie podwójne C=C** — i wszystko w niej
 :::
 
 ## 1 | Wykład — alkeny: jedna podwójna linia zmienia charakter {#definicja}
+@klocek wzor-2d {smiles="C=C", grupa="C=C"} | Eten C₂H₄: wiązanie podwójne C=C w ramce
+@opis Dwa atomy węgla połączone dwiema kreskami (wiązanie podwójne); wodory przy węglach są pominięte w szkielecie. Ramka obejmuje C=C. Wniosek: to właśnie podwójne wiązanie jest miejscem, w którym alkeny przyłączają inne cząsteczki (addycja).
+
 
 ::: karta understand | Przypomnienie — węgiel, wodór i wiązanie podwójne
 Węgiel tworzy cztery wiązania, wodór jedno (ORG01). Wiązanie podwójne to dwie pary wspólnych elektronów między dwoma węglami zamiast jednej — zajmuje więc dwa z czterech „miejsc" każdego węgla.
@@ -242,6 +245,9 @@ Z etenu w przemyśle robi się etanol (hydratacja), polietylen (polimeryzacja), 
 **Problem:** Jak jednym testem odróżnić dwie bezbarwne próbki gazów — metan i eten?
 
 **Hipoteza:** Eten ma wiązanie C=C i doda brom bez żadnych warunków — woda bromowa odbarwi się; metan (tylko wiązania pojedyncze) nie zareaguje bez światła.
+
+@klocek probowki-odczyn {tuby="Kontrola:pomaranczowy:pomaranczowy:brak,Eten:pomaranczowy:bezbarwny:brak,Metan:pomaranczowy:pomaranczowy:brak"} | Woda bromowa po przepuszczeniu gazów: eten odbarwia, metan nie
+@opis Trzy probówki z pomarańczową wodą bromową: kontrolna i z metanem zachowują barwę, z etenem roztwór odbarwia się. Wniosek: odbarwienie wody bromowej to dowód wiązania wielokrotnego, bo eten przyłącza brom (addycja), a metan nie reaguje.
 
 **Sprzęt:** trzy probówki z wodą bromową, dwie butle z gazami (metan, eten), okulary i rękawice, wyciąg. Doświadczenie wykonuje wyłącznie osoba przygotowana, pod wyciągiem; uczący się samodzielnie analizuje jego opis.
 

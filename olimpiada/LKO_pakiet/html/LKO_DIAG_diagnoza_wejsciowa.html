@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl" data-przedmiot="che">
+<html lang="pl" data-przedmiot="oli">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
@@ -626,20 +626,24 @@ details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border
 details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
 @media print{details.lk-log{display:none}}
 
-/* motyw che (Chemia) — kolory, wzór nagłówka, komponenty przedmiotu */
-:root{--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,.15);--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 104 180%27%3E%3Cg fill=%27none%27 stroke=%27%230d6868%27 stroke-width=%273%27%3E%3Cpath d=%27M52 10l40 23v46l-40 23-40-23V33z%27/%3E%3Cpath d=%27M52 100l40 23v46l-40 23-40-23v-46z%27/%3E%3Cpath d=%27M52 22v8M92 56h8M12 56H4%27/%3E%3C/g%3E%3Cg fill=%27%230d6868%27%3E%3Ccircle cx=%2752%27 cy=%2710%27 r=%275%27/%3E%3Ccircle cx=%2792%27 cy=%2779%27 r=%275%27/%3E%3Ccircle cx=%2712%27 cy=%27123%27 r=%275%27/%3E%3C/g%3E%3C/svg%3E")}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}}
-:root[data-theme=dark]{--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}
+/* motyw oli (Olimpiada) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#8a5a00;--accent-dark:#5f3e00;--accent-soft:#fbf1dd;--accent-line:#ecd29a;--accent-glow:rgba(138,90,0,.15);--hl-key:#8a5a00;--hl-key-bg:#f8e9c8;--hl-formula:#5f3e00;--hl-formula-bg:#fbf1dd;--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 120 200%27%3E%3Cg fill=%27%238a5a00%27%3E%3Cpath d=%27M60 20l8 17 19 2-14 13 4 19-17-10-17 10 4-19-14-13 19-2z%27/%3E%3C/g%3E%3Cg fill=%27none%27 stroke=%27%238a5a00%27 stroke-width=%274%27 stroke-linecap=%27round%27%3E%3Cpath d=%27M30 110c-6 30 6 56 30 70M90 110c6 30-6 56-30 70%27/%3E%3C/g%3E%3Cg fill=%27%238a5a00%27%3E%3Cellipse cx=%2726%27 cy=%27128%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-60 26 128%29%27/%3E%3Cellipse cx=%2730%27 cy=%27150%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-40 30 150%29%27/%3E%3Cellipse cx=%2742%27 cy=%27168%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-20 42 168%29%27/%3E%3Cellipse cx=%2794%27 cy=%27128%27 rx=%279%27 ry=%275%27 transform=%27rotate%2860 94 128%29%27/%3E%3Cellipse cx=%2790%27 cy=%27150%27 rx=%279%27 ry=%275%27 transform=%27rotate%2840 90 150%29%27/%3E%3Cellipse cx=%2778%27 cy=%27168%27 rx=%279%27 ry=%275%27 transform=%27rotate%2820 78 168%29%27/%3E%3C/g%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#e9b85a;--accent-dark:#f5d79a;--accent-soft:#2b2312;--accent-line:#5c4a22;--accent-glow:rgba(233,184,90,.2);--hl-key:#efc677;--hl-key-bg:#33290f;--hl-formula:#f5d79a;--hl-formula-bg:#2b2312;}}
+:root[data-theme=dark]{--accent:#e9b85a;--accent-dark:#f5d79a;--accent-soft:#2b2312;--accent-line:#5c4a22;--accent-glow:rgba(233,184,90,.2);--hl-key:#efc677;--hl-key-bg:#33290f;--hl-formula:#f5d79a;--hl-formula-bg:#2b2312;}
 
-/* równanie reakcji w osobnej linii: ::: div.rownanie */
-.rownanie{margin:12px 0;padding:12px 16px;border-radius:var(--r-md);background:var(--surface-soft);border:1px solid var(--border);font:600 17px/1.6 Inter,system-ui,sans-serif;text-align:center;overflow-x:auto;white-space:nowrap}
-.rownanie small{display:block;font-size:12px;font-weight:500;color:var(--text-muted);white-space:normal}
+/* poziomy olimpijskie 2–4 (wspólne lekcje E8: warstwy dopisane w tej samej lekcji) */
+.poz{display:inline-flex;align-items:center;gap:5px;font:800 11.5px/1 Inter,system-ui;padding:4px 9px;border-radius:999px;border:1px solid var(--accent-line);background:var(--accent-soft);color:var(--accent);vertical-align:middle}
+.poz::before{content:"";width:22px;height:6px;border-radius:3px;background:linear-gradient(90deg,var(--accent) var(--poz-w,33%),var(--accent-line) 0)}
+.poz-2{--poz-w:33%}.poz-3{--poz-w:66%}.poz-4{--poz-w:100%}
+.zad-konk{border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:12px 16px;margin:14px 0;background:var(--surface)}
+.zad-konk>b:first-child{display:flex;justify-content:space-between;gap:10px;margin-bottom:6px}
+.zad-konk .pkt{font:800 12px Inter,system-ui;color:var(--accent);white-space:nowrap}
 
 </style>
 </head>
 <body>
 <a class="skip-link" href="#main">Przejdź do treści</a>
-<header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">LKO-DIAG Diagnoza wejściowa — fundamenty konkursu LKO (punkty I–V podstawy)</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<header class="lk-bar"><span class="lk-subj"><i></i>Olimpiada</span><span class="lk-title">LKO-DIAG Diagnoza wejściowa — fundamenty konkursu LKO (punkty I–V podstawy)</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
 <section class="hero card"><div class="hero-kicker">LKO-DIAG · DIAGNOZA</div><h1>Diagnoza wejściowa — fundamenty konkursu LKO (punkty I–V podstawy)</h1><p class="lead">Ta diagnoza nie uczy nowego materiału. Mierzy, od czego zacząć przygotowanie do etapu I: które sekcje są mocne, a które tracą punkty. Wynik decyduje o tym, które sesje Sprintu A będą pełne, a które skrócone.</p><div class="tag-row"><span class="level-badge level-basic">E8</span><span class="level-badge level-olimp">LKO</span></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
 <details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#minimum">Minimum E8</a><a class="toc-link" href="#wyklad">0. Wykład — jak czytać własny wynik</a><a class="toc-link" href="#s1">Lustro i most</a><a class="toc-link" href="#s2">Karta wyników (wypełnia prowadzący)</a><a class="toc-link" href="#s3">Zadania</a><a class="toc-link" href="#s4">Klucz punktów — podsumowanie</a><a class="toc-link" href="#s5">Interpretacja — z wyniku do decyzji</a><a class="toc-link" href="#s6">Notatka dla prowadzącego: granice diagnozy</a><a class="toc-link" href="#fiszki">Fiszki</a><a class="toc-link" href="#test">Test krótki</a><a class="toc-link" href="#ciekawostki">Ciekawostki</a></nav></details>

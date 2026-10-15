@@ -1,0 +1,10 @@
+sceneReg('metanSpalanie',{label:'Spalanie metanu — dwa dowody (CO₂ i H₂O)',lesson:'technika',desc:'Płomień palnika pod zlewką odwróconą: krople na dnie (H₂O). Gaz przepuszczony do wody wapiennej mętnieje (CO₂).',height:380,aspect:1.5,
+ init:()=>({power:.8,air:85,on:1,T:70,pour:0,turb:0}),
+ parts:[{id:'burner',x:.12,y:.6,w:.3,h:.4,clip:[0,.63,1,.37],get:S=>({flame:{on:S.on,power:S.power,air:S.air,phi:1.55-S.air/100*.65,soot:S.air<35?.5:0,temp:650+S.air*8}})},
+  {id:'zlewkaOdwrocona',x:.1,y:.22,w:.34,h:.33,get:S=>({T:S.on?70:25,liquid:WATER,level:0})},
+  {id:'beaker',x:.5,y:.56,w:.16,h:.26,get:S=>({liquid:WATER,level:0,T:25,label:'kontrola (sucha)'})},
+  {id:'testTube',x:.8,y:.36,w:.12,h:.5,get:S=>({liquid:[226,238,242],level:.6,turb:S.turb,bubFrom:'bottom',bubSize:.8,label:''})}],
+ links:[{pts:[[.36,.5],[.46,.5],[.46,.3],[.86,.3],[.86,.36]],flow:S=>S.on&&S.pour?.8:0}],
+ tick(S,dt){if(S.on&&S.pour)S.turb=Math.min(1,S.turb+dt*.12)},
+ overlay(c,W,H,S,t,T){head(c,T,W,'Spalanie metanu','CH₄ + 2 O₂ → CO₂ + 2 H₂O');txt(c,'zlewka odwrócona (dnem do góry)',W*.27,H*.6,T.mut,'center',10,700);txt(c,'woda wapienna',W*.86,H*.9,T.mut,'center',10,700)},
+ ui(h,S,m,api){const r=UI.row(h);const b=UI.btn(r,'Zgaś',()=>{S.on=S.on?0:1;b.textContent=S.on?'Zgaś':'Zapal'},1);UI.btn(r,'Przepuść gaz',()=>{S.pour=1});UI.btn(r,'Powtórz',()=>{api.reset();S.on=1;S.pour=0;b.textContent='Zgaś'});const n=UI.note(h);return S=>{n.innerHTML=(S.turb>.3?'<b>Woda wapienna mętnieje</b> — to dowód CO₂. ':'')+(S.on?'Krople na dnie zlewki odwróconej — to <b>H₂O</b> z palenia wodoru w metanie.':'Płomień zgaszony: bez spalania nie ma ani kropli, ani zmętnienia.')}}});

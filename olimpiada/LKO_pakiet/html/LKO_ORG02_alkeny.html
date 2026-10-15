@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl" data-przedmiot="che">
+<html lang="pl" data-przedmiot="oli">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
@@ -626,20 +626,88 @@ details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border
 details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
 @media print{details.lk-log{display:none}}
 
-/* motyw che (Chemia) — kolory, wzór nagłówka, komponenty przedmiotu */
-:root{--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,.15);--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 104 180%27%3E%3Cg fill=%27none%27 stroke=%27%230d6868%27 stroke-width=%273%27%3E%3Cpath d=%27M52 10l40 23v46l-40 23-40-23V33z%27/%3E%3Cpath d=%27M52 100l40 23v46l-40 23-40-23v-46z%27/%3E%3Cpath d=%27M52 22v8M92 56h8M12 56H4%27/%3E%3C/g%3E%3Cg fill=%27%230d6868%27%3E%3Ccircle cx=%2752%27 cy=%2710%27 r=%275%27/%3E%3Ccircle cx=%2792%27 cy=%2779%27 r=%275%27/%3E%3Ccircle cx=%2712%27 cy=%27123%27 r=%275%27/%3E%3C/g%3E%3C/svg%3E")}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}}
-:root[data-theme=dark]{--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}
+/* motyw oli (Olimpiada) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#8a5a00;--accent-dark:#5f3e00;--accent-soft:#fbf1dd;--accent-line:#ecd29a;--accent-glow:rgba(138,90,0,.15);--hl-key:#8a5a00;--hl-key-bg:#f8e9c8;--hl-formula:#5f3e00;--hl-formula-bg:#fbf1dd;--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 120 200%27%3E%3Cg fill=%27%238a5a00%27%3E%3Cpath d=%27M60 20l8 17 19 2-14 13 4 19-17-10-17 10 4-19-14-13 19-2z%27/%3E%3C/g%3E%3Cg fill=%27none%27 stroke=%27%238a5a00%27 stroke-width=%274%27 stroke-linecap=%27round%27%3E%3Cpath d=%27M30 110c-6 30 6 56 30 70M90 110c6 30-6 56-30 70%27/%3E%3C/g%3E%3Cg fill=%27%238a5a00%27%3E%3Cellipse cx=%2726%27 cy=%27128%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-60 26 128%29%27/%3E%3Cellipse cx=%2730%27 cy=%27150%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-40 30 150%29%27/%3E%3Cellipse cx=%2742%27 cy=%27168%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-20 42 168%29%27/%3E%3Cellipse cx=%2794%27 cy=%27128%27 rx=%279%27 ry=%275%27 transform=%27rotate%2860 94 128%29%27/%3E%3Cellipse cx=%2790%27 cy=%27150%27 rx=%279%27 ry=%275%27 transform=%27rotate%2840 90 150%29%27/%3E%3Cellipse cx=%2778%27 cy=%27168%27 rx=%279%27 ry=%275%27 transform=%27rotate%2820 78 168%29%27/%3E%3C/g%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#e9b85a;--accent-dark:#f5d79a;--accent-soft:#2b2312;--accent-line:#5c4a22;--accent-glow:rgba(233,184,90,.2);--hl-key:#efc677;--hl-key-bg:#33290f;--hl-formula:#f5d79a;--hl-formula-bg:#2b2312;}}
+:root[data-theme=dark]{--accent:#e9b85a;--accent-dark:#f5d79a;--accent-soft:#2b2312;--accent-line:#5c4a22;--accent-glow:rgba(233,184,90,.2);--hl-key:#efc677;--hl-key-bg:#33290f;--hl-formula:#f5d79a;--hl-formula-bg:#2b2312;}
 
-/* równanie reakcji w osobnej linii: ::: div.rownanie */
-.rownanie{margin:12px 0;padding:12px 16px;border-radius:var(--r-md);background:var(--surface-soft);border:1px solid var(--border);font:600 17px/1.6 Inter,system-ui,sans-serif;text-align:center;overflow-x:auto;white-space:nowrap}
-.rownanie small{display:block;font-size:12px;font-weight:500;color:var(--text-muted);white-space:normal}
+/* poziomy olimpijskie 2–4 (wspólne lekcje E8: warstwy dopisane w tej samej lekcji) */
+.poz{display:inline-flex;align-items:center;gap:5px;font:800 11.5px/1 Inter,system-ui;padding:4px 9px;border-radius:999px;border:1px solid var(--accent-line);background:var(--accent-soft);color:var(--accent);vertical-align:middle}
+.poz::before{content:"";width:22px;height:6px;border-radius:3px;background:linear-gradient(90deg,var(--accent) var(--poz-w,33%),var(--accent-line) 0)}
+.poz-2{--poz-w:33%}.poz-3{--poz-w:66%}.poz-4{--poz-w:100%}
+.zad-konk{border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:12px 16px;margin:14px 0;background:var(--surface)}
+.zad-konk>b:first-child{display:flex;justify-content:space-between;gap:10px;margin-bottom:6px}
+.zad-konk .pkt{font:800 12px Inter,system-ui;color:var(--accent);white-space:nowrap}
+
+/* Styl klocków laboratoryjnych (palniki, probówki, układ okresowy) — dobrany do motywu che:
+   jasna karta lekcji (--surface), akcent --accent, tekst --text. Scena z płótnem zostaje ciemna
+   (płomienie i poświaty wyglądają na ciemnym tle), reszta jak w sekcjach lekcji. */
+:root{--lab:#0e2326;--lab-tekst:var(--text,#1a2332);--lab-cisza:var(--text-muted,#8892a0);--lab-linia:var(--border,#e5e9ee)}
+.lab{background:var(--surface,#fff);color:var(--text,#1a2332);border:1px solid var(--border,#e5e9ee);border-radius:var(--r-lg,14px);padding:16px;box-shadow:var(--sh-sm,none);font-family:var(--tekst,Inter,system-ui,sans-serif)}
+.lab-pasek{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between;margin-bottom:12px}
+.lab-pasek .btn{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+.lab-cisza{color:var(--text-muted,#8892a0);font-size:14px}
+.btn{appearance:none;cursor:pointer;border:1px solid var(--accent,#0d6868);background:var(--accent,#0d6868);color:#fff;border-radius:var(--r-md,10px);padding:8px 14px;font:600 13px var(--tekst,Inter,sans-serif)}
+.btn.jasny{background:var(--surface,#fff);color:var(--accent,#0d6868)}
+.btn:hover{filter:brightness(1.08)}
+.btn:focus-visible{outline:2px solid var(--accent,#0d6868);outline-offset:2px}
+.btn[disabled]{opacity:.4;cursor:not-allowed}
+.stacje{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.st{display:flex;flex-direction:column;background:none;border:none;padding:0;min-width:0}
+.st-opis{margin-top:auto;display:flex;flex-direction:column;justify-content:flex-end}
+.st canvas,.rack canvas{display:block;width:100%;height:auto;cursor:pointer;background:var(--lab,#0e2326);border-radius:var(--r-md,10px);margin:6px 0 4px}
+.rack{margin:0 auto}
+.rack-kol{display:grid;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));gap:8px}
+.rack-ce{padding:0 6px;min-width:0;display:flex;flex-direction:column}
+.rack-ce.st-opis{justify-content:flex-end}
+.rack .wyb-gr{display:none}
+.rack .rown{font-size:14px}
+.rack-ce .btn,.st .btn{padding:6px 10px;font-size:12px}
+.st-opis{font-size:14px;color:var(--text,#1a2332)}
+.st-opis p{margin:0 0 6px}
+.rown{font:600 15px var(--naglowek,Inter,sans-serif);color:var(--text,#1a2332)}
+.obs{font-size:14px;color:var(--text-soft,#4a5568)}
+.meta{font-size:12.5px;color:var(--text-muted,#8892a0);display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-bottom:8px}
+.meta .pasek{background:var(--border,#e5e9ee);width:90px;height:8px;display:inline-block;vertical-align:middle;margin-left:6px;border-radius:99px;overflow:hidden}
+.meta .pasek i{display:block;height:100%;background:var(--accent,#0d6868)}
+.ostrz{color:var(--c-error,#b83a45);font-size:13px}
+.zak{display:flex;gap:10px;align-items:center;background:var(--c-warn-bg,#fcf4e6);border:1px solid var(--c-warn-line,#eed8a8);border-radius:var(--r-md,10px);padding:8px 10px;font-size:13px;line-height:1.35;margin:8px 0;color:var(--text,#1a2332)}
+.zak-ik{display:flex;gap:4px;flex:none}
+.el .tr{position:absolute;right:2px;bottom:2px;display:flex}
+.sz{position:relative}
+.sz .tr{position:absolute;top:2px;right:2px;display:flex}
+.tr2{display:flex;font-style:normal;margin-left:auto}
+.kol{display:flex;align-items:center;gap:10px;font-size:15px;color:var(--text,#1a2332)}
+.sw{width:20px;height:20px;border-radius:50%;flex:none;box-shadow:0 0 12px var(--glow,transparent)}
+.sw.pusty{border:2px dashed var(--border-strong,#cdd5dd)}
+.wyb-sym{position:relative;min-width:0}
+.wyb-sym>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:6px;font:700 15px var(--naglowek,Inter,sans-serif);color:var(--text,#1a2332);padding:4px 8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-sm,6px);background:var(--surface,#fff)}
+.wyb-sym>summary::-webkit-details-marker{display:none}
+.wyb-tri{display:inline-block;font-size:11px;color:var(--accent,#0d6868);transition:transform .15s}
+.wyb-sym[open] .wyb-tri{transform:rotate(90deg)}
+.wyb-lista{display:grid;gap:6px;margin:6px 0 8px;padding:8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-md,10px);background:var(--surface,#fff)}
+.wyb-g{display:block;font-size:11px;color:var(--text-muted,#8892a0);margin-bottom:3px}
+.wyb-sy{appearance:none;cursor:pointer;border:1px solid var(--border-strong,#cdd5dd);background:var(--surface-soft,#f6f8fa);color:var(--text,#1a2332);border-radius:var(--r-sm,6px);padding:4px 9px;margin:0 4px 4px 0;font:600 13px var(--naglowek,Inter,sans-serif)}
+.wyb-sy[aria-pressed="true"]{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+/* telefon: kilka stojaków obok siebie — węższy tekst, łamanie długich nazw */
+.kol{min-width:0}
+.kol b{overflow-wrap:anywhere;min-width:0}
+.st-opis{font-size:13px}
+.kol{font-size:14px}
+.stacje{gap:8px}
+.rack-kol{gap:6px}
+@media (max-width:480px){.st-opis .obs{font-size:12.5px}.st .btn,.rack-ce .btn{padding:5px 8px;font-size:12px}}
+.seria-przyciski{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+.seria-btn[aria-pressed="false"]{background:transparent;color:var(--accent,#0d6868)}
+.seria-btn[aria-pressed="true"]{background:var(--accent,#0d6868);color:#fff}
+.seria-opis{margin:0 0 10px;font-size:14px;color:var(--lab-cisza,#8892a0)}
+
 
 </style>
 </head>
 <body>
 <a class="skip-link" href="#main">Przejdź do treści</a>
-<header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">LKO-ORG02 &quot;Alkeny i addycja — reguła Markownikowa&quot;</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<header class="lk-bar"><span class="lk-subj"><i></i>Olimpiada</span><span class="lk-title">LKO-ORG02 &quot;Alkeny i addycja — reguła Markownikowa&quot;</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
 <section class="hero card"><div class="hero-kicker">"ORG02 · alkeny"</div><h1>"Alkeny i addycja — reguła Markownikowa"</h1><p class="lead">"Jedno otwarte wiązanie zmienia wszystko: alkeny dodają, zamiast podstawiać — i wybierają, do którego węgla się przykleić."</p><div class="tag-row">["alkeny", "addycja"]</div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
 <details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#minimum">Minimum E8</a><a class="toc-link" href="#jak-pracowac">0.1. Jak pracować z lekcją</a><a class="toc-link" href="#diagnoza">0.2. Diagnoza</a><a class="toc-link" href="#definicja">1. Wykład — alkeny: jedna podwójna linia zmienia charakter</a><a class="toc-link" href="#addycja">2. Wykład — addycja: cztery rodzaje gości wiązania podwójnego</a><a class="toc-link" href="#markownikow">3. Wykład — reguła Markownikowa: dokąd idzie H</a><a class="toc-link" href="#spalanie">4. Wykład — spalanie, próba wody bromowej i polimeryzacja</a><a class="toc-link" href="#zadania">5. Zadania</a><a class="toc-link" href="#zadania-adv">6. Zadania konkursowe</a><a class="toc-link" href="#s1">7. Fiszki</a><a class="toc-link" href="#s2">8. Test kontrolny</a><a class="toc-link" href="#s3">9. Słownik</a><a class="toc-link" href="#s4">Do weryfikacji</a></nav></details>
@@ -697,6 +765,8 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 </section>
 <section id="definicja">
 <div class="part-heading"><span class="part-num">1</span> Wykład — alkeny: jedna podwójna linia zmienia charakter</div>
+<figure class="lk-fig" data-klocek="wzor-2d" data-opt="{&quot;smiles&quot;: &quot;C=C&quot;, &quot;grupa&quot;: &quot;C=C&quot;}"><div class="lk-fig-body"></div><figcaption>Eten C₂H₄: wiązanie podwójne C=C w ramce</figcaption></figure>
+<!-- OPIS: Dwa atomy węgla połączone dwiema kreskami (wiązanie podwójne); wodory przy węglach są pominięte w szkielecie. Ramka obejmuje C=C. Wniosek: to właśnie podwójne wiązanie jest miejscem, w którym alkeny przyłączają inne cząsteczki (addycja). -->
 <div class="card card-understand">
 <span class="card-label">Przypomnienie — węgiel, wodór i wiązanie podwójne</span>
 <p>Węgiel tworzy cztery wiązania, wodór jedno (ORG01). Wiązanie podwójne to dwie pary wspólnych elektronów między dwoma węglami zamiast jednej — zajmuje więc dwa z czterech „miejsc" każdego węgla.</p>
@@ -843,6 +913,8 @@ Zawsze zapisuj strukturę produktu — z samego wzoru sumarycznego C₃H₇Cl ni
 </div>
 <div class="exp-card"><h5>Doświadczenie 1 — Woda bromowa rozstrzyga: alkany czy alkeny</h5><div class="exp-grid"></div><p><strong>Problem:</strong> Jak jednym testem odróżnić dwie bezbarwne próbki gazów — metan i eten?</p>
 <p><strong>Hipoteza:</strong> Eten ma wiązanie C=C i doda brom bez żadnych warunków — woda bromowa odbarwi się; metan (tylko wiązania pojedyncze) nie zareaguje bez światła.</p>
+<figure class="lk-fig" data-klocek="probowki-odczyn" data-opt="{&quot;tuby&quot;: &quot;Kontrola:pomaranczowy:pomaranczowy:brak,Eten:pomaranczowy:bezbarwny:brak,Metan:pomaranczowy:pomaranczowy:brak&quot;}"><div class="lk-fig-body"></div><figcaption>Woda bromowa po przepuszczeniu gazów: eten odbarwia, metan nie</figcaption></figure>
+<!-- OPIS: Trzy probówki z pomarańczową wodą bromową: kontrolna i z metanem zachowują barwę, z etenem roztwór odbarwia się. Wniosek: odbarwienie wody bromowej to dowód wiązania wielokrotnego, bo eten przyłącza brom (addycja), a metan nie reaguje. -->
 <p><strong>Sprzęt:</strong> trzy probówki z wodą bromową, dwie butle z gazami (metan, eten), okulary i rękawice, wyciąg. Doświadczenie wykonuje wyłącznie osoba przygotowana, pod wyciągiem; uczący się samodzielnie analizuje jego opis.</p>
 <p><strong>Przebieg:</strong>
 1. Do trzech probówek wlej po 2 cm³ wody bromowej (pomarańczowej). Probówka 1 — <strong>próba kontrolna</strong> (bez gazu).
@@ -996,6 +1068,723 @@ Zawsze zapisuj strukturę produktu — z samego wzoru sumarycznego C₃H₇Cl ni
 <footer class="footer"><p>"LKO-ORG02 · v1.1"</p></footer>
 </main>
 <script>
+/* KLOCKI — lekkie komponenty wielokrotnego użytku dla lekcji (bez silnika).
+   Każdy klocek: KLOCKI.def(nazwa, {opis, dane, rysuj(canvas, stan, t)}) — rejestr,
+   KLOCKI.montuj(host, nazwa, opcje) — tworzy canvas, autostart gdy widoczny,
+   klik zatrzymuje/wznawia. Lekcja wymienia klocki w manifeście (klocki/manifest). */
+(function (g) {
+  var reg = {};
+  function def(nazwa, k) { reg[nazwa] = k; }
+  function montuj(host, nazwa, opc) {
+    var k = reg[nazwa];
+    if (!k) { host.textContent = 'Brak klocka: ' + nazwa; return null; }
+    opc = Object.assign({}, k.domyslne || {}, opc || {});
+    if (k.html) { host.innerHTML = ''; k.html(host, opc); return null; }
+    var c = document.createElement('canvas');
+    c.width = opc.szer || 480; c.height = opc.wys || 300;
+    c.style.width = '100%'; c.style.maxWidth = c.width + 'px'; c.style.height = 'auto';
+    c.setAttribute('role', 'img');
+    c.setAttribute('aria-label', (opc.opis || k.opis || nazwa));
+    host.innerHTML = ''; host.appendChild(c);
+    var stan = Object.assign({}, k.stan0 ? k.stan0(opc) : {}, {opc: opc});
+    var ctx = c.getContext('2d'), t0 = performance.now(), grane = true, id = null;
+    function klatka(now) {
+      try { k.rysuj(ctx, c.width, c.height, stan, (now - t0) / 1000, opc); } catch (e) { }
+      if (grane) id = requestAnimationFrame(klatka);
+    }
+    function start() { if (!grane) { grane = true; t0 = performance.now() - (stan._t || 0) * 1000; id = requestAnimationFrame(klatka); } }
+    function stop() { grane = false; if (id) cancelAnimationFrame(id); }
+    c.addEventListener('click', function () { grane ? stop() : start(); });
+    if ('IntersectionObserver' in g) {
+      var io = new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? start() : stop(); }); });
+      io.observe(c);
+    } else { start(); }
+    k.rysuj(ctx, c.width, c.height, stan, 0, opc);
+    return {stop: stop, start: start, stan: stan, canvas: c};
+  }
+  g.KLOCKI = {def: def, montuj: montuj, nazwy: function () { return Object.keys(reg); }};
+})(window);
+
+/* KLOCKI — wspólne narzędzia (kolejność: pierwsze w manifeście). Wyciągnięte z animacji P01. */
+/* ---------------------------- narzędzia ---------------------------- */
+var RM = !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
+function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+function sm(v) { v = clamp(v, 0, 1); return v * v * (3 - 2 * v); }
+function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+function hex2rgb(h) { var n = parseInt(h.slice(1), 16); return [n >> 16 & 255, n >> 8 & 255, n & 255]; }
+function rgba(h, a) { var c = hex2rgb(h); return 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ',' + a + ')'; }
+function mixHex(a, b, k) {
+  var A = hex2rgb(a), B = hex2rgb(b);
+  return '#' + [0, 1, 2].map(function (i) { return ('0' + Math.round(A[i] + (B[i] - A[i]) * k).toString(16)).slice(-2); }).join('');
+}
+function rr(x, a, b, w, h, r) {
+  x.beginPath(); x.moveTo(a + r, b); x.arcTo(a + w, b, a + w, b + h, r); x.arcTo(a + w, b + h, a, b + h, r);
+  x.arcTo(a, b + h, a, b, r); x.arcTo(a, b, a + w, b, r); x.closePath();
+}
+
+
+/* ---------------------------- pętla animacji ---------------------------- */
+var uchwyty = [], rafId = 0, ostatni = 0;
+function petla(now) {
+  var dt = Math.min(.05, (now - ostatni) / 1000); ostatni = now;
+  for (var i = 0; i < uchwyty.length; i++) uchwyty[i].krok(dt);
+  rafId = uchwyty.length ? requestAnimationFrame(petla) : 0;
+}
+function wlacz(h) { if (uchwyty.indexOf(h) < 0) uchwyty.push(h); if (!rafId) { ostatni = performance.now(); rafId = requestAnimationFrame(petla); } }
+function wylacz(h) { var i = uchwyty.indexOf(h); if (i >= 0) uchwyty.splice(i, 1); }
+function podepnij(canvas, h) {
+  h.rysuj();
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? wlacz(h) : wylacz(h); }); }, {threshold: .05}).observe(canvas);
+  } else wlacz(h);
+}
+
+
+function parsujListe(txt, dozwolone, domyslne) {
+  var l = String(txt || '').split(',').map(function (s) { return s.trim(); }).filter(function (s) { return dozwolone[s]; });
+  return (l.length ? l : domyslne).slice(0, 3);
+}
+
+
+/* Wybór pierwiastka: tylko symbole, a znacznik ▸ pokazuje, że lista się rozwija (bez pełnych nazw obok). */
+function wyborSymbole(grupy, start, onChange, etykieta) {
+  var box = el('details', 'wyb-sym'), sum = el('summary', null), cur = el('span', 'wyb-cur', start);
+  sum.appendChild(cur); sum.appendChild(el('span', 'wyb-tri', '▸')); box.appendChild(sum);
+  var lst = el('div', 'wyb-lista'), btns = [];
+  lst.setAttribute('role', 'listbox'); lst.setAttribute('aria-label', etykieta || 'Wybór pierwiastka');
+  var NAG = {1: 'Litowce', 2: 'Berylowce', 3: 'Tlenki berylowców'};
+  Object.keys(grupy).forEach(function (g) {
+    var w = el('div', 'wyb-grupa'); w.appendChild(el('span', 'wyb-g', NAG[g] || ('grupa ' + g)));
+    grupy[g].forEach(function (s) {
+      var b = el('button', 'wyb-sy', s); b.type = 'button'; b.setAttribute('data-sym', s);
+      b.setAttribute('title', cap(NAZ[SYM.indexOf(s)] || s));
+      b.addEventListener('click', function () { ustaw(s); box.open = false; onChange(s); });
+      w.appendChild(b); btns.push(b);
+    });
+    lst.appendChild(w);
+  });
+  box.appendChild(lst);
+  function ustaw(s) { cur.textContent = s; btns.forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-sym') === s ? 'true' : 'false'); }); }
+  ustaw(start);
+  return {el: box, ustaw: ustaw};
+}
+
+/* KLOCEK: probowki-odczyn — probówki przed i po dodaniu odczynnika (barwa, osad, pęcherzyki gazu).
+   Opcja tuby: lista probówek oddzielona przecinkami; w każdej: etykieta:kolor_przed:kolor_po:efekt
+     kolory: bezbarwny, pomaranczowy, mleczny, niebieski, szafirowy, bialy, fioletowy, zielony
+     efekt:  osad (cząstki opadają), gaz (pęcherzyki unoszą się), brak
+   Przykład: tuby="Kontrola:pomaranczowy:pomaranczowy:brak,Eten:pomaranczowy:bezbarwny:brak"
+   Animacja w cyklu 7 s: przed → przejście → po. Klik zatrzymuje/wznawia (montuj). */
+(function () {
+  var KOL = {
+    bezbarwny: '#e0f2fe', pomaranczowy: '#f97316', mleczny: '#cbd5e1', niebieski: '#60a5fa',
+    szafirowy: '#1e3a8a', bialy: '#f8fafc', fioletowy: '#7e22ce', zielony: '#16a34a'
+  };
+  function hex(h) { var n = parseInt(h.slice(1), 16); return [n >> 16 & 255, n >> 8 & 255, n & 255]; }
+  function mieszaj(a, b, k) {
+    var A = hex(a), B = hex(b);
+    return 'rgb(' + [0, 1, 2].map(function (i) { return Math.round(A[i] + (B[i] - A[i]) * k); }).join(',') + ')';
+  }
+  function kol(n) { return KOL[n] || KOL.bezbarwny; }
+  function probowki(s) {
+    return String(s || '').split(',').map(function (t) {
+      var p = t.split(':').map(function (v) { return v.trim(); });
+      return {etyk: p[0] || '', przed: p[1] || 'bezbarwny', po: p[2] || p[1] || 'bezbarwny', efekt: p[3] || 'brak'};
+    }).filter(function (p) { return p.etyk; }).slice(0, 4);
+  }
+  var IND = {'0': '₀', '1': '₁', '2': '₂', '3': '₃', '4': '₄', '5': '₅', '6': '₆', '7': '₇', '8': '₈', '9': '₉'};
+  function indeksy(s) {
+    return String(s).replace(/([A-Za-z\)])(\d+)/g, function (_, a, d) {
+      return a + d.split('').map(function (c) { return IND[c]; }).join('');
+    });
+  }
+  function sm(v) { v = Math.max(0, Math.min(1, v)); return v * v * (3 - 2 * v); }
+
+  KLOCKI.def('probowki-odczyn', {
+    opis: 'Probówki przed i po dodaniu odczynnika: zmiana barwy, opadający osad lub pęcherzyki gazu.',
+    domyslne: {tuby: 'Kontrola:bezbarwny:bezbarwny:brak,Woda wapienna + CO₂:bezbarwny:mleczny:osad', szer: 480, wys: 300},
+    stan0: function () { return {}; },
+    rysuj: function (x, w, h, s, t, opc) {
+      var tuby = probowki(opc.tuby);
+      var n = tuby.length;
+      x.fillStyle = '#ffffff'; x.fillRect(0, 0, w, h);
+      if (!n) return;
+      var cykl = t % 7;
+      var p = sm((cykl - 2) / 1.5);                 // 0 = przed, 1 = po
+      var gap = 16, tw = Math.min(96, (w - 30 - (n - 1) * gap) / n);
+      var top = 30, bot = h - 62, x0 = (w - (n * tw + (n - 1) * gap)) / 2;
+      x.textAlign = 'center'; x.textBaseline = 'middle';
+
+      tuby.forEach(function (tb, i) {
+        var X = x0 + i * (tw + gap), rr = tw / 2;
+        var lvl = bot - (bot - top) * 0.6;
+        var barwa = mieszaj(kol(tb.przed), kol(tb.po), p);
+        var pozostaje = (tb.efekt === 'osad' && p > 0.6) ? 0.9 : 0.85;
+
+        // korpus probówki jako ścieżka (używana też do przycięcia cieczy)
+        function korpus() {
+          x.beginPath();
+          x.moveTo(X, top); x.lineTo(X, bot - rr);
+          x.arc(X + rr, bot - rr, rr, Math.PI, 0, true);
+          x.lineTo(X + tw, top);
+        }
+
+        // ciecz przycięta do kształtu probówki
+        x.save(); korpus(); x.lineTo(X + tw - 1, top - 2); x.lineTo(X + 1, top - 2); x.closePath(); x.clip();
+        x.globalAlpha = pozostaje;
+        x.fillStyle = barwa;
+        x.fillRect(X, lvl, tw, bot - lvl);
+        x.globalAlpha = 1;
+        x.restore();
+
+        // osad opadający na dno (kolor po reakcji)
+        if (tb.efekt === 'osad') {
+          x.fillStyle = kol(tb.po);
+          for (var k = 0; k < 12; k++) {
+            var px = X + 8 + ((k * 37 + i * 11) % Math.max(1, tw - 16));
+            var fr = Math.min(1, Math.max(0, p * 1.4 - (k % 4) * 0.08));
+            var yy = (lvl + 8) + (bot - 12 - (k % 3) * 3 - (lvl + 8)) * fr;
+            x.globalAlpha = 0.9;
+            x.beginPath(); x.arc(px, yy, 2.2, 0, 2 * Math.PI); x.fill();
+          }
+          x.globalAlpha = 1;
+        }
+
+        // pęcherzyki gazu unoszące się po reakcji
+        if (tb.efekt === 'gaz' && p > 0.1) {
+          x.fillStyle = 'rgba(255,255,255,.9)';
+          for (var b = 0; b < 10; b++) {
+            var bx = X + 10 + ((b * 29 + i * 7) % Math.max(1, tw - 20));
+            var by = bot - 6 - ((t * 38 + b * 23) % (bot - lvl - 10));
+            x.beginPath(); x.arc(bx, by, 2 + (b % 3) * 0.6, 0, 2 * Math.PI); x.fill();
+          }
+        }
+
+        // korpus probówki (zaokrąglone dno)
+        x.strokeStyle = '#64748b'; x.lineWidth = 2;
+        korpus(); x.stroke();
+
+        // podpis
+        x.fillStyle = '#0f172a'; x.font = '12px system-ui, sans-serif';
+        x.fillText(indeksy(tb.etyk), X + rr, bot + 22);
+      });
+    }
+  });
+})();
+
+/* C2D CORE — parser SMILES, układ 2D, geometria VSEPR, wzór i masa.
+   Bez DOM. Eksport: window.C2D. Pochodzi z molekula_silnik_v3 (refaktor). */
+(function (window) {
+  'use strict';
+  var MIN_W = 520, MIN_H = 300;
+  var WALENCJA = {C:4, H:1, O:2, N:3, S:2, F:1, Cl:1, Br:1};
+  var MASA = {C:12.011, H:1.008, O:15.999, N:14.007, S:32.06, F:18.998, Cl:35.45, Br:79.904};
+  var NAZWA = {C:'węgiel', H:'wodór', O:'tlen', N:'azot', S:'siarka', F:'fluor', Cl:'chlor', Br:'brom'};
+  var KOLOR = {C:['#94a3b8','#475569','#ffffff'], H:['#ffffff','#64748b','#0f172a'], O:['#fca5a5','#dc2626','#ffffff'], N:['#bfdbfe','#2563eb','#ffffff'], S:['#fde047','#ca8a04','#422006'], F:['#bbf7d0','#16a34a','#14532d'], Cl:['#86efac','#15803d','#052e16'], Br:['#fdba74','#c2410c','#431407']};
+  var LONE = {O:2, N:1, S:2, F:3, Cl:3, Br:3};
+  var KROTNOSC = {1:'pojedyncze σ', 2:'podwójne σ+π', 3:'potrójne σ+2π'};
+  function sub(n) { return String(n).split('').map(function (c) { return '₀₁₂₃₄₅₆₇₈₉'[c]; }).join(''); }
+  function sumy(m) {
+    var s = m.atoms.map(function () { return 0; });
+    m.bonds.forEach(function (b) { s[b[0]] += b[2]; s[b[1]] += b[2]; });
+    return s;
+  }
+  function wzorSumaryczny(m) {
+    var c = {}; m.atoms.forEach(function (a) { c[a[0]] = (c[a[0]] || 0) + 1; });
+    var k = Object.keys(c).sort(function (a, b) {          // porządek Hilla: C, H, reszta alfabetycznie
+      var w = function (x) { return x === 'C' ? 0 : x === 'H' ? 1 : 2; };
+      return w(a) - w(b) || (a < b ? -1 : 1);
+    });
+    var masa = 0; k.forEach(function (e) { masa += (MASA[e] || 0) * c[e]; });
+    return {tekst: k.map(function (e) { return e + (c[e] > 1 ? sub(c[e]) : ''); }).join(''), masa: masa};
+  }
+  function ramka(m, g) {
+    var xs = g.ids.map(function (i) { return m.atoms[i][1]; }), ys = g.ids.map(function (i) { return m.atoms[i][2]; });
+    var x = Math.min.apply(null, xs) - 40, y = Math.min.apply(null, ys) - 40;
+    return {x: x, y: y, w: Math.max.apply(null, xs) + 40 - x, h: Math.max.apply(null, ys) + 40 - y};
+  }
+  function dopasuj(m, pokazGrupy) {                         // viewBox liczony z geometrii, nie z liczb na sztywno
+    var x0 = 1e9, y0 = 1e9, x1 = -1e9, y1 = -1e9;
+    function dod(x, y) { x0 = Math.min(x0, x); y0 = Math.min(y0, y); x1 = Math.max(x1, x); y1 = Math.max(y1, y); }
+    m.atoms.forEach(function (a) { dod(a[1] - 48, a[2] - 48); dod(a[1] + 48, a[2] + 48); });
+    if (pokazGrupy) m.groups.forEach(function (g) { var r = ramka(m, g); dod(r.x, r.y - 22); dod(r.x + r.w, r.y + r.h); });
+    var w = Math.max(MIN_W, x1 - x0), h = Math.max(MIN_H, y1 - y0);
+    return [(x0 + x1) / 2 - w / 2, (y0 + y1) / 2 - h / 2, w, h].map(function (v) { return Math.round(v); }).join(' ');
+  }
+  function pary(m, i, R) {                                  // wolne pary: kierunki najdalej od wiązań i od siebie
+    var a = m.atoms[i], zajete = [], pts = [];
+    m.bonds.forEach(function (b) {
+      var j = b[0] === i ? b[1] : b[1] === i ? b[0] : -1;
+      if (j >= 0) zajete.push(Math.atan2(m.atoms[j][2] - a[2], m.atoms[j][1] - a[1]));
+    });
+    function dist(x, y) { var v = Math.abs(x - y) % (2 * Math.PI); return v > Math.PI ? 2 * Math.PI - v : v; }
+    for (var n = 0; n < LONE[a[0]]; n++) {
+      var best = 0, bd = -1;
+      for (var k = 0; k < 24; k++) {
+        var t = k * Math.PI / 12, md = Math.PI;
+        zajete.forEach(function (q) { md = Math.min(md, dist(t, q)); });
+        if (md > bd + 1e-6) { bd = md; best = t; }
+      }
+      zajete.push(best);
+      var c = Math.cos(best), s = Math.sin(best);
+      [-3.6, 3.6].forEach(function (f) { pts.push([a[1] + c * R - s * f, a[2] + s * R + c * f]); });
+    }
+    return pts;
+  }
+  function geo(atoms, bonds, i) {                           // geometria wokół atomu wg VSEPR
+    var e = atoms[i][0], n = 0, s = 0, dbl = 0, tri = 0, nH = 0;
+    bonds.forEach(function (b) {
+      var j = b[0] === i ? b[1] : b[1] === i ? b[0] : -1;
+      if (j < 0) return;
+      n++; s += b[2]; if (b[2] === 2) dbl++; if (b[2] === 3) tri++; if (atoms[j][0] === 'H') nH++;
+    });
+    if (n < 2) return null;
+    var lone = (LONE[e] && s === WALENCJA[e]) ? LONE[e] : 0, st = n + lone;
+    if (tri || dbl >= 2) return {kat: 180, nazwa: 'liniowa', hyb: 'sp'};
+    if (st === 3) return {kat: 120, nazwa: n === 3 ? 'trygonalna płaska' : 'kątowa', hyb: 'sp²'};
+    if (st === 4 && n === 4) return {kat: 109.5, nazwa: 'tetraedryczna', hyb: 'sp³', rzut: true};
+    if (st === 4 && n === 3) return {kat: 107, nazwa: 'piramidalna', hyb: 'sp³', rzut: true};
+    if (st === 4) return {kat: e === 'S' ? (nH === 2 ? 92 : 100) : (nH === 2 ? 104.5 : 109.5), nazwa: 'kątowa', hyb: 'sp³'};
+    return {kat: 120, nazwa: 'trygonalna płaska', hyb: 'sp²'};
+  }
+  var ZNAKI = ['Cl', 'Br', 'C', 'N', 'O', 'S', 'F', 'c', 'n', 'o', 's'];
+  function zSmiles(txt) {                                   // SMILES: łańcuchy, rozgałęzienia, pierścienie, aromaty (c n o s)
+    txt = txt.replace(/\s+/g, '');
+    if (!txt) throw new Error('wpisz wzór, np. CC(=O)O lub c1ccccc1');
+    var at = [], ar = [], bonds = [], stos = [], otw = {}, prev = -1, kr = 0;
+    for (var i = 0; i < txt.length; i++) {
+      var c = txt[i];
+      if (c === '(') { if (prev < 0) throw new Error('nawias bez atomu'); stos.push(prev); }
+      else if (c === ')') { if (!stos.length) throw new Error('nadmiarowy nawias )'); prev = stos.pop(); }
+      else if (c === '-' || c === '=' || c === '#') kr = c === '-' ? 1 : c === '=' ? 2 : 3;
+      else if (/[1-9]/.test(c)) {
+        if (prev < 0) throw new Error('cyfra pierścienia bez atomu');
+        if (otw[c]) {
+          if (otw[c].a === prev) throw new Error('pętla atomu do siebie');
+          bonds.push({a: otw[c].a, b: prev, o: kr || otw[c].k}); delete otw[c];
+        } else otw[c] = {a: prev, k: kr};
+        kr = 0;
+      } else {
+        var t = /^(Cl|Br)/.test(txt.substr(i, 2)) ? txt.substr(i, 2) : c;
+        if (ZNAKI.indexOf(t) < 0) throw new Error('nieobsługiwany znak „' + c + '”');
+        i += t.length - 1;
+        if (at.length >= 30) throw new Error('najwyżej 30 atomów ciężkich');
+        at.push(t[0].toUpperCase() + t.slice(1)); ar.push(t === t.toLowerCase());
+        if (prev >= 0) bonds.push({a: prev, b: at.length - 1, o: kr});
+        prev = at.length - 1; kr = 0;
+      }
+    }
+    if (stos.length) throw new Error('niedomknięty nawias (');
+    if (Object.keys(otw).length) throw new Error('niedomknięty pierścień (cyfra bez pary)');
+    bonds.forEach(function (b) { b.arom = !b.o && ar[b.a] && ar[b.b]; if (!b.o) b.o = 1; });
+    return {at: at, ar: ar, bonds: bonds};
+  }
+  function kekule(p) {                                      // wiązania naprzemienne w pierścieniach aromatycznych
+    var need = p.at.map(function (e, i) { return p.ar[i] && (e === 'C' || e === 'N'); });
+    var ab = p.bonds.filter(function (b) { return b.arom; }), mt = p.at.map(function () { return -1; });
+    function rec(i) {
+      while (i < p.at.length && (!need[i] || mt[i] >= 0)) i++;
+      if (i >= p.at.length) return true;
+      for (var k = 0; k < ab.length; k++) {
+        var b = ab[k], j = b.a === i ? b.b : b.b === i ? b.a : -1;
+        if (j < 0 || !need[j] || mt[j] >= 0) continue;
+        mt[i] = j; mt[j] = i;
+        if (rec(i + 1)) { b.o = 2; return true; }
+        mt[i] = mt[j] = -1;
+      }
+      return false;
+    }
+    if (!rec(0)) throw new Error('nie da się ułożyć wiązań naprzemiennych (np. pirol [nH] nie jest obsługiwany)');
+  }
+  function pierscienie(p) {                                 // najmniejsze pierścienie (SSSR, zachłannie)
+    var n = p.at.length, adj = p.at.map(function () { return []; }), cand = {}, lista = [];
+    p.bonds.forEach(function (b, k) { adj[b.a].push([b.b, k]); adj[b.b].push([b.a, k]); });
+    p.bonds.forEach(function (b, k) {
+      var pr = {}, q = [b.a]; pr[b.a] = -1;
+      for (var h = 0; h < q.length && q[h] !== b.b; h++)
+        adj[q[h]].forEach(function (e) { if (e[1] !== k && !(e[0] in pr)) { pr[e[0]] = q[h]; q.push(e[0]); } });
+      if (!(b.b in pr)) return;
+      var r = [], x = b.b; while (x !== -1) { r.push(x); x = pr[x]; }
+      var key = r.slice().sort(function (u, v) { return u - v; }).join(',');
+      if (!cand[key] && r.length <= 12) { cand[key] = 1; lista.push(r); }
+    });
+    lista.sort(function (u, v) { return u.length - v.length; });
+    var ile = p.bonds.length - n + 1, wyb = [], pok = {};
+    lista.forEach(function (r) {
+      if (wyb.length >= ile) return;
+      var nowe = false, kl = r.map(function (a, i) { var c = r[(i + 1) % r.length]; return Math.min(a, c) + '-' + Math.max(a, c); });
+      kl.forEach(function (k) { if (!pok[k]) nowe = true; });
+      if (nowe) { kl.forEach(function (k) { pok[k] = 1; }); wyb.push(r); }
+    });
+    return wyb;
+  }
+  function uklad(p) {                                       // dopisanie H, współrzędne 2D (łańcuchy + wielokąty foremne), grupy
+    kekule(p);
+    var atoms = p.at.map(function (e) { return [e, 0, 0]; });
+    var bonds = p.bonds.map(function (b) { return [b.a, b.b, b.o]; }), arom = p.bonds.map(function (b) { return !!b.arom; });
+    var sum = p.at.map(function () { return 0; }), lin = sum.map(function () { return false; }), dbl = sum.map(function () { return 0; });
+    bonds.forEach(function (b) { sum[b[0]] += b[2]; sum[b[1]] += b[2]; if (b[2] === 2) { dbl[b[0]]++; dbl[b[1]]++; } if (b[2] === 3) lin[b[0]] = lin[b[1]] = true; });
+    dbl.forEach(function (c, i) { if (c >= 2) lin[i] = true; });   // np. O=C=O
+    p.at.forEach(function (e, i) {
+      for (var h = Math.max(0, (WALENCJA[e] || 0) - sum[i]); h > 0; h--) { atoms.push(['H', 0, 0]); bonds.push([i, atoms.length - 1, 1]); arom.push(false); }
+    });
+    var nb = atoms.map(function () { return []; }), placed = atoms.map(function () { return false; });
+    bonds.forEach(function (b) { nb[b[0]].push(b[1]); nb[b[1]].push(b[0]); });
+    var rs = pierscienie(p), cen = [], rpl = [], ringsOf = atoms.map(function () { return []; });
+    rs.forEach(function (r, k) { r.forEach(function (i) { ringsOf[i].push(k); }); });
+    var T = Math.PI / 3, B = 70;
+    function setPos(i, x, y) { atoms[i][1] = x; atoms[i][2] = y; placed[i] = true; }
+    function ringPlace(k, cx, cy, i0, a0, dir) {
+      var r = rs[k], m = r.length, R = B / (2 * Math.sin(Math.PI / m));
+      for (var t = 0; t < m; t++) { var a = a0 + dir * 2 * Math.PI * t / m, id = r[(i0 + t) % m]; if (!placed[id]) setPos(id, cx + R * Math.cos(a), cy + R * Math.sin(a)); }
+      cen[k] = [cx, cy]; rpl[k] = true;
+    }
+    function system(entry, th) {                            // układ pierścieni od atomu wejścia; zwraca nowe pierścienie
+      var k0 = ringsOf[entry].filter(function (k) { return !rpl[k]; })[0], nowe = [k0];
+      var m0 = rs[k0].length, R0 = B / (2 * Math.sin(Math.PI / m0));
+      ringPlace(k0, atoms[entry][1] + R0 * Math.cos(th), atoms[entry][2] + R0 * Math.sin(th), rs[k0].indexOf(entry), th + Math.PI, 1);
+      var zm = true;
+      while (zm) {
+        zm = false;
+        rs.forEach(function (r2, k) {
+          if (rpl[k]) return;
+          for (var i = 0; i < r2.length; i++) {
+            var u = r2[i], v = r2[(i + 1) % r2.length];
+            if (!placed[u] || !placed[v]) continue;
+            var ref = cen.filter(function (c, kk) { return rpl[kk] && rs[kk].indexOf(u) >= 0 && rs[kk].indexOf(v) >= 0; })[0];
+            if (!ref) continue;
+            var mx = (atoms[u][1] + atoms[v][1]) / 2, my = (atoms[u][2] + atoms[v][2]) / 2;
+            var ex = atoms[v][1] - atoms[u][1], ey = atoms[v][2] - atoms[u][2], L = Math.hypot(ex, ey), nx = -ey / L, ny = ex / L;
+            var ap = B / (2 * Math.tan(Math.PI / r2.length)), sg = ((ref[0] - mx) * nx + (ref[1] - my) * ny) > 0 ? -1 : 1;
+            var cx = mx + sg * nx * ap, cy = my + sg * ny * ap;
+            var au = Math.atan2(atoms[u][2] - cy, atoms[u][1] - cx), av = Math.atan2(atoms[v][2] - cy, atoms[v][1] - cx);
+            ringPlace(k, cx, cy, i, au, Math.sin(av - au) > 0 ? 1 : -1);
+            nowe.push(k); zm = true; break;
+          }
+        });
+      }
+      return nowe;
+    }
+    function put(i, j, d, s) {
+      setPos(j, atoms[i][1] + (atoms[j][0] === 'H' ? 62 : 84) * Math.cos(d), atoms[i][2] + (atoms[j][0] === 'H' ? 62 : 84) * Math.sin(d));
+      if (ringsOf[j].some(function (k) { return !rpl[k]; })) pierscien(j, d); else lancuch(j, d, -s, false);
+    }
+    function pierscien(j, d) { system(j, d).forEach(function (k) { rs[k].forEach(podstawniki); }); }
+    function podstawniki(i) {                               // podstawniki atomu pierścienia: na zewnątrz od środka
+      var rk = ringsOf[i].filter(function (k) { return rpl[k]; }), cx = 0, cy = 0;
+      rk.forEach(function (k) { cx += cen[k][0]; cy += cen[k][1]; });
+      var o = Math.atan2(atoms[i][2] - cy / rk.length, atoms[i][1] - cx / rk.length);
+      var fr = nb[i].filter(function (j) { return !placed[j]; }), off = fr.length === 1 ? [0] : fr.length === 2 ? [0.62, -0.62] : [0, 0.95, -0.95];
+      fr.forEach(function (j, q) { if (off[q] !== undefined) put(i, j, o + off[q], 1); });
+    }
+    function lancuch(i, th, s, root) {
+      var fr = nb[i].filter(function (j) { return !placed[j]; }), n = nb[i].length, g = geo(atoms, bonds, i), R = Math.PI / 180, d;
+      if (lin[i]) d = root ? [th, th + Math.PI] : [th];
+      else if (n === 2 && g) d = root ? [Math.PI / 2 + g.kat * R / 2, Math.PI / 2 - g.kat * R / 2] : [th + s * (Math.PI - g.kat * R)];
+      else if (root && n >= 3) d = nb[i].map(function (x, k) { return th + 2 * Math.PI * k / n; });
+      else d = [th + s * T, th - s * T, th + 2 * s * T, th - 2 * s * T, th, th + Math.PI];
+      fr.forEach(function (j, k) { if (d[k] !== undefined) put(i, j, d[k], s); });
+    }
+    setPos(0, 0, 0);
+    if (ringsOf[0].length) pierscien(0, 0); else lancuch(0, -Math.PI / 6, 1, true);
+    if (!placed.every(Boolean)) throw new Error('ten układ pierścieni (spiro/mostkowy) nie jest obsługiwany');
+    atoms.forEach(function (a) { a[1] = Math.round(a[1]); a[2] = Math.round(a[2]); });
+    var opis = 'Wzór własny (SMILES), współrzędne wyliczone automatycznie.' + (rs.length ? ' Pierścienie: ' + rs.length + (arom.some(Boolean) ? ', aromatyczne zapisane wiązaniami naprzemiennymi (struktura Kekulégo).' : '.') : '');
+    return {opis: opis, atoms: atoms, bonds: bonds, ring: ringsOf.map(function (r) { return r.length > 0; }), arom: arom, rings: rs};
+  }
+  window.C2D = {
+    WALENCJA: WALENCJA, MASA: MASA, NAZWA: NAZWA, KOLOR: KOLOR, LONE: LONE,
+    parse: zSmiles, kekule: kekule, pierscienie: pierscienie, uklad: uklad,
+    geo: geo, pary: pary, sumy: sumy, wzor: wzorSumaryczny, ramka: ramka,
+    dopasuj: dopasuj, sub: sub
+  };
+})(typeof window !== 'undefined' ? window : globalThis);
+
+/* C2D GRUPY — wykrywanie grup funkcyjnych w grafie cząsteczki (po wykonaniu C2D.uklad).
+   Wynik: {groups:[{typ, ids, l, c}], acid:[indeksy kwaśnych H]}.
+   typ: COOH, ester, CHO, C=O, OH, eter, NH2, NH, NR, X, CN, C=C, C≡C, Ar.
+   Dodanie grupy: wpisz nową regułę w tym pliku i dopisz typ do listy w opisie klocka. */
+(function (window) {
+  'use strict';
+  var C2D = window.C2D;
+  var KOL = {
+    COOH: '#7c3aed', ester: '#9333ea', CHO: '#b45309', 'C=O': '#b45309', OH: '#0e7490',
+    eter: '#0f766e', NH2: '#2563eb', NH: '#2563eb', NR: '#2563eb', X: '#15803d',
+    CN: '#2563eb', 'C=C': '#0e7490', 'C≡C': '#0e7490', Ar: '#64748b'
+  };
+  var ETYK = {
+    COOH: '–COOH', ester: '–COO–', CHO: '–CHO', 'C=O': 'C=O', OH: '–OH', eter: '–O–',
+    NH2: '–NH₂', NH: '–NH–', NR: '–N<', X: '–X', CN: '–C≡N', 'C=C': 'C=C', 'C≡C': 'C≡C', Ar: 'Ar'
+  };
+
+  function grupy(m) {
+    var E = function (i) { return m.atoms[i][0]; };
+    var N = m.atoms.map(function () { return []; });
+    m.bonds.forEach(function (b) { N[b[0]].push([b[1], b[2]]); N[b[1]].push([b[0], b[2]]); });
+    var wH = function (i) { return N[i].filter(function (x) { return E(x[0]) === 'H'; }).map(function (x) { return x[0]; }); };
+    var zaj = {}, g = [], acid = [];
+    function dodaj(typ, ids) {
+      ids.forEach(function (x) { zaj[x] = 1; });
+      g.push({typ: typ, ids: ids, l: ETYK[typ], c: KOL[typ]});
+    }
+
+    // grupa karbonylowa C=O (kwas, ester, aldehyd, keton)
+    m.atoms.forEach(function (a, i) {
+      if (a[0] !== 'C' || zaj[i]) return;
+      var dO = N[i].filter(function (x) { return x[1] === 2 && E(x[0]) === 'O'; })[0];
+      if (!dO) return;
+      var sO = N[i].filter(function (x) { return x[1] === 1 && E(x[0]) === 'O'; })[0];
+      var h = wH(i);
+      if (sO && wH(sO[0]).length === 1) {
+        var hh = wH(sO[0])[0]; acid.push(hh);
+        dodaj('COOH', [i, dO[0], sO[0], hh]);
+      } else if (sO && N[sO[0]].some(function (y) { return y[0] !== i && E(y[0]) === 'C'; })) {
+        dodaj('ester', [i, dO[0], sO[0]]);
+      } else if (h.length) {
+        dodaj('CHO', [i, dO[0], h[0]]);
+      } else {
+        dodaj('C=O', [i, dO[0]]);
+      }
+    });
+
+    // grupy jednowartościowe: OH, eter, aminy, halogeny
+    m.atoms.forEach(function (a, i) {
+      if (zaj[i]) return;
+      var e = a[0], h = wH(i), nC = N[i].filter(function (x) { return E(x[0]) === 'C'; }).length;
+      if (e === 'O' && h.length === 1 && N[i].length === 2) dodaj('OH', [i, h[0]]);
+      else if (e === 'O' && nC === 2 && N[i].length === 2 && N[i].every(function (x) { return x[1] === 1; })) dodaj('eter', [i]);
+      else if (e === 'N' && !N[i].some(function (x) { return x[1] > 1; }) && !m.ring[i]) {
+        if (h.length === 2) dodaj('NH2', [i].concat(h));
+        else if (h.length === 1 && nC === 2) dodaj('NH', [i, h[0]]);
+        else if (h.length === 0 && nC === 3) dodaj('NR', [i]);
+      }
+      else if ((e === 'F' || e === 'Cl' || e === 'Br') && N[i].length === 1) dodaj('X', [i]);
+    });
+
+    // wiązania wielokrotne między atomami węgla i C≡N
+    m.bonds.forEach(function (b) {
+      var ea = E(b[0]), eb = E(b[1]);
+      if (ea === 'C' && eb === 'C' && !m.arom[m.bonds.indexOf(b)] && b[2] === 2 && !zaj[b[0]] && !zaj[b[1]]) dodaj('C=C', [b[0], b[1]]);
+      if (ea === 'C' && eb === 'C' && b[2] === 3 && !zaj[b[0]] && !zaj[b[1]]) dodaj('C≡C', [b[0], b[1]]);
+      if (((ea === 'C' && eb === 'N') || (ea === 'N' && eb === 'C')) && b[2] === 3 && !zaj[b[0]] && !zaj[b[1]]) dodaj('CN', [b[0], b[1]]);
+    });
+
+    // pierścienie aromatyczne (ramka)
+    // pierścienie aromatyczne; sklejone (wspólny bok) tworzą jeden układ i jedną ramkę
+    var arRings = (m.rings || []).filter(function (r) {
+      return m.bonds.some(function (b, k) { return m.arom[k] && r.indexOf(b[0]) >= 0 && r.indexOf(b[1]) >= 0; });
+    });
+    var uklady = [];
+    arRings.forEach(function (r) {
+      var zl = uklady.filter(function (u) { return u.some(function (i) { return r.indexOf(i) >= 0; }); });
+      var nowy = r.slice();
+      zl.forEach(function (u) { nowy = nowy.concat(u); uklady.splice(uklady.indexOf(u), 1); });
+      nowy = nowy.filter(function (x, k, a) { return a.indexOf(x) === k; });
+      uklady.push(nowy);
+    });
+    uklady.forEach(function (u) { g.push({typ: 'Ar', ids: u, l: ETYK.Ar, c: KOL.Ar}); });
+
+    return {groups: g, acid: acid};
+  }
+
+  window.C2D = window.C2D || {};
+  window.C2D.grupy = grupy;
+  window.C2D.KOL_GRUP = KOL;
+  window.C2D.ETYK_GRUP = ETYK;
+})(typeof window !== 'undefined' ? window : globalThis);
+
+/* C2D WZOR — rysunek cząsteczki w SVG (bez DOM poza zwracanym napisem).
+   Domyślnie: wzór strukturalny 2D (szkielet): wiązania kreskami, C bez podpisu (poza końcowymi CH₃),
+   heteroatomy z podpisem i wodorami (OH, NH₂), typ wiązania przez liczbę kresek (C=O, C≡C).
+   Opcje (wszystkie opcjonalne):
+     kulki   true  — model kulkowy (wszystkie atomy z kulkami i symbolami)
+     grupy   'all' | 'none' | ['COOH','OH',...]  — które ramki grup funkcyjnych
+     kwas    true  — czerwony pierścień wokół kwaśnego H (domyślnie true)
+     kat     true  — łuki i wartości kątów (VSEPR) przy atomach z dwoma wiązaniami
+     pary    true  — wolne pary elektronowe (O, N, halogeny)
+   Zwraca: {svg: string, wzor: string, masa: number}. */
+(function (window) {
+  'use strict';
+  var C2D = window.C2D;
+  var PROMIEN_C = 9, PROMIEN_LBL = 11;
+
+  function rysuj(m, opt) {
+    opt = opt || {};
+    var kulki = !!opt.kulki;
+    var E = function (i) { return m.atoms[i][0]; };
+    var N = m.atoms.map(function () { return []; });
+    m.bonds.forEach(function (b, k) { N[b[0]].push([b[1], b[2], k]); N[b[1]].push([b[0], b[2], k]); });
+    var gr = C2D.grupy(m);
+    var grupy = opt.grupy === undefined ? 'all' : opt.grupy;
+    var widoczneGrupy = gr.groups.filter(function (g) {
+      if (grupy === 'none') return false;
+      if (grupy === 'all') return true;
+      return Array.isArray(grupy) && grupy.indexOf(g.typ) >= 0;
+    });
+    // które atomy są widoczne
+    var widoczny = m.atoms.map(function (a, i) {
+      if (kulki) return true;
+      if (a[0] !== 'H') return true;
+      var przy = N[i][0] ? E(N[i][0][0]) : '';
+      return przy !== 'C';           // H przy C ukryte w szkielecie
+    });
+    function etykieta(i) {
+      var e = E(i), nH = N[i].filter(function (x) { return E(x[0]) === 'H'; }).length;
+      var heavy = N[i].filter(function (x) { return E(x[0]) !== 'H'; }).length;
+      if (kulki) return e;
+      if (e === 'C') {
+        if (heavy <= 1 && nH > 0) return 'CH' + (nH > 1 ? C2D.sub(nH) : '') + (nH === 3 ? '' : '');
+        return null;
+      }
+      if (e === 'H') return null;
+      var hTxt = nH ? 'H' + (nH > 1 ? C2D.sub(nH) : '') : '';
+      return heavy === 0 ? hTxt + e : e + hTxt;
+    }
+    var lbl = m.atoms.map(function (a, i) { return widoczny[i] ? etykieta(i) : null; });
+    function promien(i) { return kulki ? (E(i) === 'H' ? 14 : 22) : 0; }
+    function skroc(i, dx, dy, len) {
+      var r = kulki ? promien(i) + 2 : (lbl[i] ? PROMIEN_LBL : 0);
+      return r;
+    }
+    var out = [];
+    m.groups = widoczneGrupy;
+    var dop = C2D.dopasuj(m, widoczneGrupy.length > 0);
+    var vb = dop.split(' ');
+    out.push('<svg xmlns="http://www.w3.org/2000/svg" viewBox="' + dop + '" role="img" aria-label="' + (opt.opis || 'Wzór strukturalny cząsteczki') + '" style="display:block;width:100%;height:auto;max-width:560px;margin:0 auto">');
+
+    // ramki grup
+    widoczneGrupy.forEach(function (g) {
+      var r = C2D.ramka(m, g);
+      out.push('<rect x="' + r.x + '" y="' + r.y + '" width="' + r.w + '" height="' + r.h + '" rx="14" fill="' + g.c + '" fill-opacity=".09" stroke="' + g.c + '" stroke-width="2" stroke-dasharray="7 5"/>');
+      out.push('<text x="' + (r.x + r.w / 2) + '" y="' + (r.y - 7) + '" text-anchor="middle" font-size="13" font-weight="500" fill="' + g.c + '">' + g.l + '</text>');
+    });
+
+    // wiązania
+    m.bonds.forEach(function (b) {
+      var i = b[0], j = b[1], o = b[2];
+      if (!widoczny[i] || !widoczny[j]) return;
+      var p = m.atoms[i], q = m.atoms[j];
+      var dx = q[1] - p[1], dy = q[2] - p[2], L = Math.hypot(dx, dy) || 1;
+      var ux = dx / L, uy = dy / L, nx = -uy, ny = ux;
+      var ri = kulki ? promien(i) + 2 : (lbl[i] ? PROMIEN_LBL : 0);
+      var rj = kulki ? promien(j) + 2 : (lbl[j] ? PROMIEN_LBL : 0);
+      var x1 = p[1] + ux * ri, y1 = p[2] + uy * ri, x2 = q[1] - ux * rj, y2 = q[2] - uy * rj;
+      var offs = o === 3 ? [-6, 0, 6] : (o === 2 ? [-4, 4] : [0]);
+      if (o === 2 && !kulki && m.rings) {
+        var pier = m.rings.filter(function (r) { return r.indexOf(i) >= 0 && r.indexOf(j) >= 0; })[0];
+        if (pier) {
+          var cx = 0, cy = 0;
+          pier.forEach(function (k) { cx += m.atoms[k][1]; cy += m.atoms[k][2]; });
+          cx /= pier.length; cy /= pier.length;
+          var mx = (p[1] + q[1]) / 2, my = (p[2] + q[2]) / 2;
+          var sg = ((cx - mx) * nx + (cy - my) * ny) > 0 ? 1 : -1;
+          offs = [0, sg * 6];
+        }
+      }
+      var st = kulki ? 'stroke-width:6' : 'stroke-width:2.2';
+      offs.forEach(function (f) {
+        out.push('<line x1="' + (x1 + nx * f).toFixed(1) + '" y1="' + (y1 + ny * f).toFixed(1) + '" x2="' + (x2 + nx * f).toFixed(1) + '" y2="' + (y2 + ny * f).toFixed(1) + '" stroke="#334155" stroke-linecap="round" style="' + st + '"/>');
+      });
+    });
+
+    // atomy
+    m.atoms.forEach(function (a, i) {
+      if (!widoczny[i]) return;
+      var K = C2D.KOLOR[a[0]] || ['#e2e8f0', '#64748b', '#0f172a'];
+      if (kulki) {
+        var r = promien(i);
+        out.push('<circle cx="' + a[1] + '" cy="' + a[2] + '" r="' + r + '" fill="' + K[0] + '" stroke="' + K[1] + '" stroke-width="2.5"/>');
+        out.push('<text x="' + a[1] + '" y="' + a[2] + '" text-anchor="middle" dominant-baseline="central" font-size="' + (a[0] === 'H' ? 14 : 17) + '" font-weight="500" fill="' + K[2] + '">' + a[0] + '</text>');
+      } else if (lbl[i]) {
+        out.push('<text x="' + a[1] + '" y="' + a[2] + '" text-anchor="middle" dominant-baseline="central" font-size="17" font-weight="500" fill="#0f172a" style="stroke:var(--bg,#ffffff);stroke-width:5px;paint-order:stroke">' + lbl[i] + '</text>');
+      }
+    });
+
+    // kwaśny H
+    if (opt.kwas !== false) m.atoms.forEach(function (a, i) {
+      if (widoczny[i] && (gr.acid || []).indexOf(i) >= 0) {
+        out.push('<circle cx="' + a[1] + '" cy="' + a[2] + '" r="' + (promien(i) + 9 || 17) + '" fill="none" stroke="#b83a45" stroke-width="3"/>');
+      }
+    });
+
+    // wolne pary
+    if (opt.pary) m.atoms.forEach(function (a, i) {
+      if (!C2D.LONE[a[0]] || !widoczny[i]) return;
+      C2D.pary(m, i, kulki ? 30 : 24).forEach(function (pt) {
+        out.push('<circle cx="' + pt[0].toFixed(1) + '" cy="' + pt[1].toFixed(1) + '" r="2.4" fill="#334155"/>');
+      });
+    });
+
+    // kąty
+    if (opt.kat) m.atoms.forEach(function (a, i) {
+      if (!widoczny[i] || E(i) === 'H') return;
+      var vis = N[i].filter(function (x) { return widoczny[x[0]]; });
+      if (vis.length !== 2) return;
+      var g = C2D.geo(m.atoms, m.bonds, i);
+      if (!g) return;
+      var ang = vis.map(function (x) { return Math.atan2(m.atoms[x[0]][2] - a[2], m.atoms[x[0]][1] - a[1]); });
+      var a1 = Math.min(ang[0], ang[1]), a2 = Math.max(ang[0], ang[1]);
+      var R = 30, am = (a1 + a2) / 2;
+      var big = (a2 - a1) > Math.PI;
+      if (big) { var t = a1; a1 = a2; a2 = t + 2 * Math.PI; am = (a1 + a2) / 2; }
+      out.push('<path d="M' + (a[1] + R * Math.cos(a1)).toFixed(1) + ' ' + (a[2] + R * Math.sin(a1)).toFixed(1) + ' A' + R + ' ' + R + ' 0 ' + (Math.abs(a2 - a1) > Math.PI ? 1 : 0) + ' 1 ' + (a[1] + R * Math.cos(a2)).toFixed(1) + ' ' + (a[2] + R * Math.sin(a2)).toFixed(1) + '" fill="none" stroke="#64748b" stroke-width="1"/>');
+      out.push('<text x="' + (a[1] + (R + 14) * Math.cos(am)).toFixed(1) + '" y="' + (a[2] + (R + 14) * Math.sin(am)).toFixed(1) + '" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#475569">' + String(g.kat).replace('.', ',') + '°</text>');
+    });
+
+    out.push('</svg>');
+    var w = C2D.wzor(m);
+    return {svg: out.join(''), wzor: w.tekst, masa: w.masa};
+  }
+
+  function zSmiles(smiles, opt) {
+    var p = C2D.parse(smiles);
+    var m = C2D.uklad(p);
+    return rysuj(m, opt);
+  }
+
+  window.C2D = window.C2D || {};
+  window.C2D.rysuj = rysuj;
+  window.C2D.smiles = zSmiles;
+})(typeof window !== 'undefined' ? window : globalThis);
+
+/* KLOCEK: wzor-2d — wzór strukturalny 2D z SMILES, z zaznaczonymi grupami funkcyjnymi.
+   Opcje w lekcji:
+     smiles="CC(=O)O"       dowolny SMILES (C N O S F Cl Br, małe c n o s = aromat, cyfry = pierścienie, ( ) - = #)
+     grupa="all"            'all' | 'none' | lista typów po przecinku: COOH,ester,CHO,C=O,OH,eter,NH2,NH,NR,X,CN,C=C,C≡C,Ar
+     kulki="0"              1 = model kulkowy zamiast wzoru szkieletowego
+     kat="0"                1 = kąty między wiązaniami
+     pary="0"               1 = wolne pary elektronowe
+     kwas="1"               0 = bez pierścienia przy kwaśnym H
+   Zależności (kolejność w manifeście): klocki.js, pomocnicze.js, c2d_core.js, c2d_grupy.js, c2d_wzor.js, c2d_klocek.js */
+(function () {
+  function esc(t) { return String(t).replace(/[&<>"]/g, function (c) { return {'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]; }); }
+  KLOCKI.def('wzor-2d', {
+    opis: 'Wzór strukturalny 2D z SMILES: wiązania (pojedyncze, podwójne, potrójne), zaznaczone grupy funkcyjne, opcjonalnie model kulkowy, kąty i wolne pary.',
+    domyslne: {smiles: 'CC(=O)O', grupa: 'all', kulki: 0, kat: 0, pary: 0, kwas: 1},
+    stan0: function () { return {}; },
+    html: function (host, opc) {
+      var grupy = 'all';
+      var g = String(opc.grupa || 'all').trim();
+      if (g !== 'all' && g !== 'none') grupy = g.split(',').map(function (x) { return x.trim(); }).filter(Boolean);
+      else grupy = g;
+      var wynik;
+      try {
+        wynik = window.C2D.smiles(String(opc.smiles || 'CC(=O)O'), {
+          grupy: grupy, kulki: Number(opc.kulki) === 1, kat: Number(opc.kat) === 1,
+          pary: Number(opc.pary) === 1, kwas: Number(opc.kwas) !== 0, opis: opc.opis || ''
+        });
+      } catch (e) {
+        host.innerHTML = '<div style="color:#b91c1c;font-size:14px;padding:8px">Nie mogę narysować „' + esc(opc.smiles) + '”: ' + esc(e.message) + '</div>';
+        return;
+      }
+      host.innerHTML = '<div style="background:var(--surface-1,transparent);border-radius:8px;padding:6px 0">' + wynik.svg +
+        '<div style="text-align:center;font-size:14px;margin-top:4px">' + esc(wynik.wzor) + ' · M ≈ ' + wynik.masa.toFixed(2).replace('.', ',') + ' g/mol</div></div>';
+    }
+  });
+})();
+
+(function(){document.querySelectorAll('[data-klocek]').forEach(function(f){var o={};try{o=JSON.parse(f.getAttribute('data-opt')||'{}')}catch(e){}Object.keys(o).forEach(function(k){if(o[k]!==''&&!isNaN(Number(o[k])))o[k]=Number(o[k])});KLOCKI.montuj(f.querySelector('.lk-fig-body'),f.getAttribute('data-klocek'),o)})})();
 /* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
    postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
 (function(){

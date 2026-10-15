@@ -70,6 +70,9 @@ Lekcja jest krótka, ale ma dwa twarde punkty: **próba z Cu(OH)₂** (obserwacj
 :::
 
 ## 1 | Wykład — alkohole wielowodorotlenowe: dwa wzory do pamięci {#definicja}
+@klocek wzor-2d {smiles="OCC(O)CO", grupa="OH"} | Glicerol C₃H₈O₃: trzy grupy –OH w ramkach
+@opis Trzy atomy węgla w łańcuchu, każdy z grupą –OH (trzy ramki). Węgle pośrodku i na końcach są pominięte w rysunku szkieletowym, widać tylko grupy. Wniosek: trzy grupy –OH obok siebie tłumaczą dobrą rozpuszczalność w wodzie i zdolność do tworzenia kompleksu z Cu²⁺.
+
 
 ::: karta understand | Przypomnienie — co daje Cu²⁺ w roztworze
 Jon Cu²⁺ w roztworze wodnym jest niebieski. Po dodaniu zasady wytrąca się niebieski, galaretowaty osad Cu(OH)₂ (reakcja strąceniowa — N03). Ta barwa jest punktem odniesienia dla całej próby z tej lekcji.
@@ -227,6 +230,9 @@ Zadanie „ile H₂ z sodu": najpierw policz mole alkoholu (n = m/M), potem pomn
 **Problem:** Jak jednym doświadczeniem odróżnić etanol od glicerolu i udowodnić, że glicerol jest alkoholem wielowodorotlenowym?
 
 **Hipoteza:** Świeży osad Cu(OH)₂ rozpuści się w obecności glicerolu (dwie–trzy sąsiednie grupy –OH wiążą Cu²⁺ w rozpuszczalny kompleks), a w etanolu pozostanie niezmieniony.
+
+@klocek probowki-odczyn {tuby="Etanol:niebieski:niebieski:osad,Glicerol:niebieski:szafirowy:brak"} | Cu(OH)₂ w etanolu (osad pozostaje) i w glicerolu (osad znika, roztwór szafirowy)
+@opis Dwie probówki z niebieskim osadem wodorotlenku miedzi(II): w etanolu osad zostaje bez zmian, w glicerolu znika, a roztwór przyjmuje szafirową barwę. Wniosek: glicerol, mający trzy grupy –OH obok siebie, tworzy z jonami Cu²⁺ rozpuszczalny kompleks; etanol z jedną grupą –OH tego nie robi.
 
 **Sprzęt:** dwie probówki, roztwór CuSO₄, roztwór NaOH, etanol, glicerol, pipety, okulary i rękawice. Doświadczenie wykonuje osoba przygotowana; uczący się samodzielnie analizuje jego opis.
 

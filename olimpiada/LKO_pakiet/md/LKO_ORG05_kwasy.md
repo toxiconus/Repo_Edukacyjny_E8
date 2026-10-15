@@ -75,6 +75,10 @@ Ta lekcja odpowiada na pytanie, które brzmi paradoksalnie: **czym różni się 
 
 Zapis strukturalny grupy: **R–C(=O)–OH** — atom węgla grupy –COOH łączy podwójne wiązanie z tlenem (grupa **karbonylowa** C=O), pojedyncze wiązanie z grupą **hydroksylową** –OH i wiązanie z resztą R. Kwas octowy w zapisie strukturalnym: CH₃–C(=O)–OH. Grupa –COOH jest kwaśna, bo sąsiedztwo C=O osłabia wiązanie O–H.
 
+@klocek wzor-2d {smiles="CC(=O)O", grupa="COOH", kwas="1"} | Kwas octowy CH₃COOH: –COOH w ramce, kwaśny H wskazany
+@opis Cząsteczka kwasu octowego: trzy wodory przy węglu CH₃ oraz grupa –COOH (węgiel z podwójnym wiązaniem do tlenu i pojedynczym do –OH) w fioletowej przerywanej ramce. Czerwony pierścień otacza tylko wodór z –OH grupy karboksylowej. Wniosek: proton oddaje wyłącznie wodór z –COOH, a wodory przy CH₃ są związane z węglem i nie dysocjują.
+
+
 Wzór ogólny kwasów monokarboksylowych nasyconych: **CₙH₂ₙ₊₁COOH**, gdzie n to liczba atomów węgla w reszcie węglowodorowej (dla kwasu metanowego n = 0, dla octowego n = 1). Jeśli policzysz **wszystkie** atomy węgla, wzór to CₙH₂ₙO₂ (np. kwas octowy: C₂H₄O₂).
 
 Pierwsi członkowie szeregu:

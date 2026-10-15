@@ -69,6 +69,9 @@ Estryfikacja to reakcja równowagowa: jedna z reakcji z obowiązkową strzałką
 :::
 
 ## 1 | Wykład — estry: definicja i nazewnictwo {#definicja}
+@klocek wzor-2d {smiles="CC(=O)OCC", grupa="ester"} | Octan etylu: grupa estrowa –COO– w ramce
+@opis Dwie części cząsteczki: fragment kwasowy CH₃–C(=O)– i fragment alkoholowy –O–CH₂CH₃. Ramka obejmuje grupę estrową –COO–. Wniosek: nazwa estru to nazwa kwasu z końcówką „-an” i grupy alkilowej z alkoholu, np. octan etylu.
+
 
 **Ester** to związek organiczny powstały z **kwasu karboksylowego i alkoholu** przez połączenie obu cząsteczek **z odszczepieniem cząsteczki wody**. Schemat ogólny:
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl" data-przedmiot="che">
+<html lang="pl" data-przedmiot="oli">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
@@ -626,22 +626,90 @@ details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border
 details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
 @media print{details.lk-log{display:none}}
 
-/* motyw che (Chemia) — kolory, wzór nagłówka, komponenty przedmiotu */
-:root{--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,.15);--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 104 180%27%3E%3Cg fill=%27none%27 stroke=%27%230d6868%27 stroke-width=%273%27%3E%3Cpath d=%27M52 10l40 23v46l-40 23-40-23V33z%27/%3E%3Cpath d=%27M52 100l40 23v46l-40 23-40-23v-46z%27/%3E%3Cpath d=%27M52 22v8M92 56h8M12 56H4%27/%3E%3C/g%3E%3Cg fill=%27%230d6868%27%3E%3Ccircle cx=%2752%27 cy=%2710%27 r=%275%27/%3E%3Ccircle cx=%2792%27 cy=%2779%27 r=%275%27/%3E%3Ccircle cx=%2712%27 cy=%27123%27 r=%275%27/%3E%3C/g%3E%3C/svg%3E")}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}}
-:root[data-theme=dark]{--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}
+/* motyw oli (Olimpiada) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#8a5a00;--accent-dark:#5f3e00;--accent-soft:#fbf1dd;--accent-line:#ecd29a;--accent-glow:rgba(138,90,0,.15);--hl-key:#8a5a00;--hl-key-bg:#f8e9c8;--hl-formula:#5f3e00;--hl-formula-bg:#fbf1dd;--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 120 200%27%3E%3Cg fill=%27%238a5a00%27%3E%3Cpath d=%27M60 20l8 17 19 2-14 13 4 19-17-10-17 10 4-19-14-13 19-2z%27/%3E%3C/g%3E%3Cg fill=%27none%27 stroke=%27%238a5a00%27 stroke-width=%274%27 stroke-linecap=%27round%27%3E%3Cpath d=%27M30 110c-6 30 6 56 30 70M90 110c6 30-6 56-30 70%27/%3E%3C/g%3E%3Cg fill=%27%238a5a00%27%3E%3Cellipse cx=%2726%27 cy=%27128%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-60 26 128%29%27/%3E%3Cellipse cx=%2730%27 cy=%27150%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-40 30 150%29%27/%3E%3Cellipse cx=%2742%27 cy=%27168%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-20 42 168%29%27/%3E%3Cellipse cx=%2794%27 cy=%27128%27 rx=%279%27 ry=%275%27 transform=%27rotate%2860 94 128%29%27/%3E%3Cellipse cx=%2790%27 cy=%27150%27 rx=%279%27 ry=%275%27 transform=%27rotate%2840 90 150%29%27/%3E%3Cellipse cx=%2778%27 cy=%27168%27 rx=%279%27 ry=%275%27 transform=%27rotate%2820 78 168%29%27/%3E%3C/g%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#e9b85a;--accent-dark:#f5d79a;--accent-soft:#2b2312;--accent-line:#5c4a22;--accent-glow:rgba(233,184,90,.2);--hl-key:#efc677;--hl-key-bg:#33290f;--hl-formula:#f5d79a;--hl-formula-bg:#2b2312;}}
+:root[data-theme=dark]{--accent:#e9b85a;--accent-dark:#f5d79a;--accent-soft:#2b2312;--accent-line:#5c4a22;--accent-glow:rgba(233,184,90,.2);--hl-key:#efc677;--hl-key-bg:#33290f;--hl-formula:#f5d79a;--hl-formula-bg:#2b2312;}
 
-/* równanie reakcji w osobnej linii: ::: div.rownanie */
-.rownanie{margin:12px 0;padding:12px 16px;border-radius:var(--r-md);background:var(--surface-soft);border:1px solid var(--border);font:600 17px/1.6 Inter,system-ui,sans-serif;text-align:center;overflow-x:auto;white-space:nowrap}
-.rownanie small{display:block;font-size:12px;font-weight:500;color:var(--text-muted);white-space:normal}
+/* poziomy olimpijskie 2–4 (wspólne lekcje E8: warstwy dopisane w tej samej lekcji) */
+.poz{display:inline-flex;align-items:center;gap:5px;font:800 11.5px/1 Inter,system-ui;padding:4px 9px;border-radius:999px;border:1px solid var(--accent-line);background:var(--accent-soft);color:var(--accent);vertical-align:middle}
+.poz::before{content:"";width:22px;height:6px;border-radius:3px;background:linear-gradient(90deg,var(--accent) var(--poz-w,33%),var(--accent-line) 0)}
+.poz-2{--poz-w:33%}.poz-3{--poz-w:66%}.poz-4{--poz-w:100%}
+.zad-konk{border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:12px 16px;margin:14px 0;background:var(--surface)}
+.zad-konk>b:first-child{display:flex;justify-content:space-between;gap:10px;margin-bottom:6px}
+.zad-konk .pkt{font:800 12px Inter,system-ui;color:var(--accent);white-space:nowrap}
+
+/* Styl klocków laboratoryjnych (palniki, probówki, układ okresowy) — dobrany do motywu che:
+   jasna karta lekcji (--surface), akcent --accent, tekst --text. Scena z płótnem zostaje ciemna
+   (płomienie i poświaty wyglądają na ciemnym tle), reszta jak w sekcjach lekcji. */
+:root{--lab:#0e2326;--lab-tekst:var(--text,#1a2332);--lab-cisza:var(--text-muted,#8892a0);--lab-linia:var(--border,#e5e9ee)}
+.lab{background:var(--surface,#fff);color:var(--text,#1a2332);border:1px solid var(--border,#e5e9ee);border-radius:var(--r-lg,14px);padding:16px;box-shadow:var(--sh-sm,none);font-family:var(--tekst,Inter,system-ui,sans-serif)}
+.lab-pasek{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between;margin-bottom:12px}
+.lab-pasek .btn{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+.lab-cisza{color:var(--text-muted,#8892a0);font-size:14px}
+.btn{appearance:none;cursor:pointer;border:1px solid var(--accent,#0d6868);background:var(--accent,#0d6868);color:#fff;border-radius:var(--r-md,10px);padding:8px 14px;font:600 13px var(--tekst,Inter,sans-serif)}
+.btn.jasny{background:var(--surface,#fff);color:var(--accent,#0d6868)}
+.btn:hover{filter:brightness(1.08)}
+.btn:focus-visible{outline:2px solid var(--accent,#0d6868);outline-offset:2px}
+.btn[disabled]{opacity:.4;cursor:not-allowed}
+.stacje{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.st{display:flex;flex-direction:column;background:none;border:none;padding:0;min-width:0}
+.st-opis{margin-top:auto;display:flex;flex-direction:column;justify-content:flex-end}
+.st canvas,.rack canvas{display:block;width:100%;height:auto;cursor:pointer;background:var(--lab,#0e2326);border-radius:var(--r-md,10px);margin:6px 0 4px}
+.rack{margin:0 auto}
+.rack-kol{display:grid;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));gap:8px}
+.rack-ce{padding:0 6px;min-width:0;display:flex;flex-direction:column}
+.rack-ce.st-opis{justify-content:flex-end}
+.rack .wyb-gr{display:none}
+.rack .rown{font-size:14px}
+.rack-ce .btn,.st .btn{padding:6px 10px;font-size:12px}
+.st-opis{font-size:14px;color:var(--text,#1a2332)}
+.st-opis p{margin:0 0 6px}
+.rown{font:600 15px var(--naglowek,Inter,sans-serif);color:var(--text,#1a2332)}
+.obs{font-size:14px;color:var(--text-soft,#4a5568)}
+.meta{font-size:12.5px;color:var(--text-muted,#8892a0);display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-bottom:8px}
+.meta .pasek{background:var(--border,#e5e9ee);width:90px;height:8px;display:inline-block;vertical-align:middle;margin-left:6px;border-radius:99px;overflow:hidden}
+.meta .pasek i{display:block;height:100%;background:var(--accent,#0d6868)}
+.ostrz{color:var(--c-error,#b83a45);font-size:13px}
+.zak{display:flex;gap:10px;align-items:center;background:var(--c-warn-bg,#fcf4e6);border:1px solid var(--c-warn-line,#eed8a8);border-radius:var(--r-md,10px);padding:8px 10px;font-size:13px;line-height:1.35;margin:8px 0;color:var(--text,#1a2332)}
+.zak-ik{display:flex;gap:4px;flex:none}
+.el .tr{position:absolute;right:2px;bottom:2px;display:flex}
+.sz{position:relative}
+.sz .tr{position:absolute;top:2px;right:2px;display:flex}
+.tr2{display:flex;font-style:normal;margin-left:auto}
+.kol{display:flex;align-items:center;gap:10px;font-size:15px;color:var(--text,#1a2332)}
+.sw{width:20px;height:20px;border-radius:50%;flex:none;box-shadow:0 0 12px var(--glow,transparent)}
+.sw.pusty{border:2px dashed var(--border-strong,#cdd5dd)}
+.wyb-sym{position:relative;min-width:0}
+.wyb-sym>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:6px;font:700 15px var(--naglowek,Inter,sans-serif);color:var(--text,#1a2332);padding:4px 8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-sm,6px);background:var(--surface,#fff)}
+.wyb-sym>summary::-webkit-details-marker{display:none}
+.wyb-tri{display:inline-block;font-size:11px;color:var(--accent,#0d6868);transition:transform .15s}
+.wyb-sym[open] .wyb-tri{transform:rotate(90deg)}
+.wyb-lista{display:grid;gap:6px;margin:6px 0 8px;padding:8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-md,10px);background:var(--surface,#fff)}
+.wyb-g{display:block;font-size:11px;color:var(--text-muted,#8892a0);margin-bottom:3px}
+.wyb-sy{appearance:none;cursor:pointer;border:1px solid var(--border-strong,#cdd5dd);background:var(--surface-soft,#f6f8fa);color:var(--text,#1a2332);border-radius:var(--r-sm,6px);padding:4px 9px;margin:0 4px 4px 0;font:600 13px var(--naglowek,Inter,sans-serif)}
+.wyb-sy[aria-pressed="true"]{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+/* telefon: kilka stojaków obok siebie — węższy tekst, łamanie długich nazw */
+.kol{min-width:0}
+.kol b{overflow-wrap:anywhere;min-width:0}
+.st-opis{font-size:13px}
+.kol{font-size:14px}
+.stacje{gap:8px}
+.rack-kol{gap:6px}
+@media (max-width:480px){.st-opis .obs{font-size:12.5px}.st .btn,.rack-ce .btn{padding:5px 8px;font-size:12px}}
+.seria-przyciski{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+.seria-btn[aria-pressed="false"]{background:transparent;color:var(--accent,#0d6868)}
+.seria-btn[aria-pressed="true"]{background:var(--accent,#0d6868);color:#fff}
+.seria-opis{margin:0 0 10px;font-size:14px;color:var(--lab-cisza,#8892a0)}
+
 
 </style>
 </head>
 <body>
 <a class="skip-link" href="#main">Przejdź do treści</a>
-<header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">LKO-A1 &quot;Zestaw A1 (rozgrzewka) i symulacja etapu I LKO (60 min / 40 pkt)&quot;</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<header class="lk-bar"><span class="lk-subj"><i></i>Olimpiada</span><span class="lk-title">LKO-A1 &quot;Zestaw A1 (rozgrzewka) i symulacja etapu I LKO (60 min / 40 pkt)&quot;</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
-<section class="hero card"><div class="hero-kicker">Chemia, lekcja LKO-A1</div><h1>"Zestaw A1 (rozgrzewka) i symulacja etapu I LKO (60 min / 40 pkt)"</h1><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
+<section class="hero card"><div class="hero-kicker">Olimpiada, lekcja LKO-A1</div><h1>"Zestaw A1 (rozgrzewka) i symulacja etapu I LKO (60 min / 40 pkt)"</h1><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
 <details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#minimum">Minimum E8</a><a class="toc-link" href="#s1">LKO-A1 — Zestaw A1 + symulacja etapu I</a><a class="toc-link" href="#s2">CZĘŚĆ I — ZESTAW A1: rozgrzewka (12 zadań × 1 pkt, 15 min)</a><a class="toc-link" href="#s3">CZĘŚĆ II — SYMULACJA ETAPU I (40 pkt / 60 min)</a><a class="toc-link" href="#s4">KLUCZ I SIATKA PUNKTOWANIA (część II)</a><a class="toc-link" href="#s5">POST-MORTEM — z wyniku do decyzji (procedura obowiązkowa)</a></nav></details>
 <div class="card card-understand">
 <span class="card-label">Zasady tego zestawu — co jest autorskie</span>
@@ -880,6 +948,8 @@ a) 110 g  b) 100 g  c) 210 g  d) 138 g</p>
 <div class="card card-exam">
 <span class="card-label">Zadanie 8. Cykl przemian (4 pkt) — <em>7 min</em></span>
 <p>Schemat przedstawia cykl przemian wapnia. Do każdej strzałki zapisz równanie reakcji z warunkami (A: spalanie wapnia w tlenie; B: reakcja tlenku z wodą; C: działanie dwutlenkiem węgla na roztwór) oraz podaj obserwację dla przemiany C.</p>
+<figure class="lk-fig" data-klocek="lancuch-przemian" data-opt="{&quot;wezly&quot;: &quot;Ca,CaO,Ca(OH)2,CaCO3&quot;, &quot;etyk&quot;: &quot;A,B,C&quot;}"><div class="lk-fig-body"></div><figcaption>Cykl przemian wapnia: Ca → CaO → Ca(OH)₂ → CaCO₃</figcaption></figure>
+<!-- OPIS: Cztery substancje w jednym rzędzie, łączone trzema strzałkami z literami A, B, C. Wniosek: każda strzałka to osobna reakcja, którą trzeba opisać równaniem z warunkami; wzór po lewej jest substratem, po prawej produktem. -->
 <p>Ca —A→ CaO —B→ Ca(OH)₂ —C→ CaCO₃</p>
 <p>a) równanie A ____ · b) równanie B ____ · c) równanie C ____ · d) obserwacja w C ____</p>
 </div>
@@ -1045,6 +1115,206 @@ Przykład: Jon X⁻ ma 18 elektronów. Ile protonów ma jego jądro? Klucz: 17. 
 
 </main>
 <script>
+/* KLOCKI — lekkie komponenty wielokrotnego użytku dla lekcji (bez silnika).
+   Każdy klocek: KLOCKI.def(nazwa, {opis, dane, rysuj(canvas, stan, t)}) — rejestr,
+   KLOCKI.montuj(host, nazwa, opcje) — tworzy canvas, autostart gdy widoczny,
+   klik zatrzymuje/wznawia. Lekcja wymienia klocki w manifeście (klocki/manifest). */
+(function (g) {
+  var reg = {};
+  function def(nazwa, k) { reg[nazwa] = k; }
+  function montuj(host, nazwa, opc) {
+    var k = reg[nazwa];
+    if (!k) { host.textContent = 'Brak klocka: ' + nazwa; return null; }
+    opc = Object.assign({}, k.domyslne || {}, opc || {});
+    if (k.html) { host.innerHTML = ''; k.html(host, opc); return null; }
+    var c = document.createElement('canvas');
+    c.width = opc.szer || 480; c.height = opc.wys || 300;
+    c.style.width = '100%'; c.style.maxWidth = c.width + 'px'; c.style.height = 'auto';
+    c.setAttribute('role', 'img');
+    c.setAttribute('aria-label', (opc.opis || k.opis || nazwa));
+    host.innerHTML = ''; host.appendChild(c);
+    var stan = Object.assign({}, k.stan0 ? k.stan0(opc) : {}, {opc: opc});
+    var ctx = c.getContext('2d'), t0 = performance.now(), grane = true, id = null;
+    function klatka(now) {
+      try { k.rysuj(ctx, c.width, c.height, stan, (now - t0) / 1000, opc); } catch (e) { }
+      if (grane) id = requestAnimationFrame(klatka);
+    }
+    function start() { if (!grane) { grane = true; t0 = performance.now() - (stan._t || 0) * 1000; id = requestAnimationFrame(klatka); } }
+    function stop() { grane = false; if (id) cancelAnimationFrame(id); }
+    c.addEventListener('click', function () { grane ? stop() : start(); });
+    if ('IntersectionObserver' in g) {
+      var io = new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? start() : stop(); }); });
+      io.observe(c);
+    } else { start(); }
+    k.rysuj(ctx, c.width, c.height, stan, 0, opc);
+    return {stop: stop, start: start, stan: stan, canvas: c};
+  }
+  g.KLOCKI = {def: def, montuj: montuj, nazwy: function () { return Object.keys(reg); }};
+})(window);
+
+/* KLOCKI — wspólne narzędzia (kolejność: pierwsze w manifeście). Wyciągnięte z animacji P01. */
+/* ---------------------------- narzędzia ---------------------------- */
+var RM = !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
+function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+function sm(v) { v = clamp(v, 0, 1); return v * v * (3 - 2 * v); }
+function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+function hex2rgb(h) { var n = parseInt(h.slice(1), 16); return [n >> 16 & 255, n >> 8 & 255, n & 255]; }
+function rgba(h, a) { var c = hex2rgb(h); return 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ',' + a + ')'; }
+function mixHex(a, b, k) {
+  var A = hex2rgb(a), B = hex2rgb(b);
+  return '#' + [0, 1, 2].map(function (i) { return ('0' + Math.round(A[i] + (B[i] - A[i]) * k).toString(16)).slice(-2); }).join('');
+}
+function rr(x, a, b, w, h, r) {
+  x.beginPath(); x.moveTo(a + r, b); x.arcTo(a + w, b, a + w, b + h, r); x.arcTo(a + w, b + h, a, b + h, r);
+  x.arcTo(a, b + h, a, b, r); x.arcTo(a, b, a + w, b, r); x.closePath();
+}
+
+
+/* ---------------------------- pętla animacji ---------------------------- */
+var uchwyty = [], rafId = 0, ostatni = 0;
+function petla(now) {
+  var dt = Math.min(.05, (now - ostatni) / 1000); ostatni = now;
+  for (var i = 0; i < uchwyty.length; i++) uchwyty[i].krok(dt);
+  rafId = uchwyty.length ? requestAnimationFrame(petla) : 0;
+}
+function wlacz(h) { if (uchwyty.indexOf(h) < 0) uchwyty.push(h); if (!rafId) { ostatni = performance.now(); rafId = requestAnimationFrame(petla); } }
+function wylacz(h) { var i = uchwyty.indexOf(h); if (i >= 0) uchwyty.splice(i, 1); }
+function podepnij(canvas, h) {
+  h.rysuj();
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? wlacz(h) : wylacz(h); }); }, {threshold: .05}).observe(canvas);
+  } else wlacz(h);
+}
+
+
+function parsujListe(txt, dozwolone, domyslne) {
+  var l = String(txt || '').split(',').map(function (s) { return s.trim(); }).filter(function (s) { return dozwolone[s]; });
+  return (l.length ? l : domyslne).slice(0, 3);
+}
+
+
+/* Wybór pierwiastka: tylko symbole, a znacznik ▸ pokazuje, że lista się rozwija (bez pełnych nazw obok). */
+function wyborSymbole(grupy, start, onChange, etykieta) {
+  var box = el('details', 'wyb-sym'), sum = el('summary', null), cur = el('span', 'wyb-cur', start);
+  sum.appendChild(cur); sum.appendChild(el('span', 'wyb-tri', '▸')); box.appendChild(sum);
+  var lst = el('div', 'wyb-lista'), btns = [];
+  lst.setAttribute('role', 'listbox'); lst.setAttribute('aria-label', etykieta || 'Wybór pierwiastka');
+  var NAG = {1: 'Litowce', 2: 'Berylowce', 3: 'Tlenki berylowców'};
+  Object.keys(grupy).forEach(function (g) {
+    var w = el('div', 'wyb-grupa'); w.appendChild(el('span', 'wyb-g', NAG[g] || ('grupa ' + g)));
+    grupy[g].forEach(function (s) {
+      var b = el('button', 'wyb-sy', s); b.type = 'button'; b.setAttribute('data-sym', s);
+      b.setAttribute('title', cap(NAZ[SYM.indexOf(s)] || s));
+      b.addEventListener('click', function () { ustaw(s); box.open = false; onChange(s); });
+      w.appendChild(b); btns.push(b);
+    });
+    lst.appendChild(w);
+  });
+  box.appendChild(lst);
+  function ustaw(s) { cur.textContent = s; btns.forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-sym') === s ? 'true' : 'false'); }); }
+  ustaw(start);
+  return {el: box, ustaw: ustaw};
+}
+
+/* KLOCEK: lancuch-przemian — schemat przemian: wzory substancji połączone strzałkami z literami reakcji.
+   Opcje (w lekcji): wezly="Ca,CaO,Ca(OH)2,CaCO3"  kolejne substancje; cyfry po literach zamieniane na indeksy dolne
+                     etyk="A,B,C"                  litery (lub krótkie etykiety) nad strzałkami, w kolejności
+                     zamkniety="1"                 obieg: ostatnia substancja wraca do pierwszej (układ kołowy)
+   Bez zamknięcia: układ liniowy. Strzałki i etykiety nie zawierają odpowiedzi — uczeń zapisuje równania sam. */
+(function () {
+  var IND = {'0': '₀', '1': '₁', '2': '₂', '3': '₃', '4': '₄', '5': '₅', '6': '₆', '7': '₇', '8': '₈', '9': '₉'};
+  function indeksy(s) {
+    return String(s).replace(/([A-Za-z\)])(\d+)/g, function (_, a, d) {
+      return a + d.split('').map(function (c) { return IND[c]; }).join('');
+    });
+  }
+  function przytnij(v) { return Math.max(0, Math.min(1, v)); }
+
+  // strzałka z grotem od (x1,y1) do (x2,y2); skrócona o zadany odstęp przy obu końcach
+  function strzalka(x, x1, y1, x2, y2, skr1, skr2) {
+    var dx = x2 - x1, dy = y2 - y1, d = Math.sqrt(dx * dx + dy * dy) || 1;
+    var ux = dx / d, uy = dy / d;
+    var ax = x1 + ux * skr1, ay = y1 + uy * skr1, bx = x2 - ux * skr2, by = y2 - uy * skr2;
+    x.beginPath(); x.moveTo(ax, ay); x.lineTo(bx, by); x.stroke();
+    var ang = Math.atan2(by - ay, bx - ax), g = 9;
+    x.beginPath(); x.moveTo(bx, by);
+    x.lineTo(bx - g * Math.cos(ang - 0.4), by - g * Math.sin(ang - 0.4));
+    x.lineTo(bx - g * Math.cos(ang + 0.4), by - g * Math.sin(ang + 0.4));
+    x.closePath(); x.fill();
+  }
+  // odstęp od środka prostokąta (bw × bh) do jego krawędzi w kierunku (ux, uy)
+  function wyjscie(ux, uy, bw, bh) {
+    var sx = Math.abs(ux) > 1e-6 ? (bw / 2) / Math.abs(ux) : Infinity;
+    var sy = Math.abs(uy) > 1e-6 ? (bh / 2) / Math.abs(uy) : Infinity;
+    return Math.min(sx, sy) + 5;
+  }
+
+  KLOCKI.def('lancuch-przemian', {
+    opis: 'Schemat przemian: wzory substancji połączone strzałkami z literami reakcji; układ liniowy albo obieg zamknięty.',
+    domyslne: {wezly: 'Ca,CaO,Ca(OH)2,CaCO3', etyk: 'A,B,C', zamkniety: 0, szer: 480, wys: 300},
+    stan0: function () { return {}; },
+    rysuj: function (x, w, h, s, t, opc) {
+      var wezly = String(opc.wezly || '').split(',').map(function (v) { return v.trim(); }).filter(Boolean).slice(0, 8);
+      var etyk = String(opc.etyk || '').split(',').map(function (v) { return v.trim(); });
+      var n = wezly.length;
+      x.fillStyle = '#ffffff'; x.fillRect(0, 0, w, h);
+      if (n < 2) return;
+      var BH = 36, cierne = Number(opc.zamkniety) === 1;
+      x.font = '16px system-ui, sans-serif'; x.textBaseline = 'middle'; x.textAlign = 'center';
+      var pos = [], bw;
+
+      if (cierne) {
+        // obieg: węzły na okręgu, pierwszy na górze
+        var cx = w / 2, cy = h / 2, R = Math.min(w, h) * 0.34;
+        bw = Math.min(118, w * 0.22);
+        for (var i = 0; i < n; i++) {
+          var a = -Math.PI / 2 + 2 * Math.PI * i / n;
+          pos.push({x: cx + R * Math.cos(a) * (w / h > 1.4 ? 1.25 : 1), y: cy + R * Math.sin(a)});
+        }
+      } else {
+        // łańcuch w jednym rzędzie
+        var gap = 34, maxBw = 120;
+        bw = Math.min(maxBw, (w - 30 - (n - 1) * gap) / n);
+        var total = n * bw + (n - 1) * gap, x0 = (w - total) / 2;
+        for (var j = 0; j < n; j++) pos.push({x: x0 + bw / 2 + j * (bw + gap), y: h * 0.45});
+      }
+
+      // strzałki i etykiety
+      var pary = cierne ? n : n - 1;
+      x.strokeStyle = '#334155'; x.fillStyle = '#334155'; x.lineWidth = 2;
+      for (var k = 0; k < pary; k++) {
+        var p1 = pos[k], p2 = pos[(k + 1) % n];
+        var dx = p2.x - p1.x, dy = p2.y - p1.y, d = Math.sqrt(dx * dx + dy * dy) || 1;
+        var ux = dx / d, uy = dy / d;
+        var s1 = wyjscie(ux, uy, bw, BH), s2 = wyjscie(-ux, -uy, bw, BH);
+        strzalka(x, p1.x, p1.y, p2.x, p2.y, s1, s2);
+        var mx = (p1.x + p2.x) / 2, my = (p1.y + p2.y) / 2;
+        var nx = cierne ? (mx - w / 2) : 0, ny = cierne ? (my - h / 2) : -22;
+        var nl = Math.sqrt(nx * nx + ny * ny) || 1;
+        var off = cierne ? 18 : 0;
+        var lx = mx + (nx / nl) * off, ly = my + (ny / nl) * off + (cierne ? 0 : 0);
+        if (!cierne) { lx = mx; ly = my - 22; }
+        x.fillStyle = '#b45309'; x.font = 'bold 15px system-ui, sans-serif';
+        x.fillText(etyk[k] || '', lx, ly);
+        x.fillStyle = '#334155'; x.font = '16px system-ui, sans-serif';
+      }
+
+      // węzły: prostokąty z wzorem
+      for (var q = 0; q < n; q++) {
+        var P = pos[q];
+        x.fillStyle = '#eef6ff'; x.strokeStyle = '#1e40af'; x.lineWidth = 1.5;
+        var bx = P.x - bw / 2, by = P.y - BH / 2;
+        x.beginPath();
+        if (x.roundRect) x.roundRect(bx, by, bw, BH, 8); else x.rect(bx, by, bw, BH);
+        x.fill(); x.stroke();
+        x.fillStyle = '#0f172a'; x.fillText(indeksy(wezly[q]), P.x, P.y);
+      }
+    }
+  });
+})();
+
+(function(){document.querySelectorAll('[data-klocek]').forEach(function(f){var o={};try{o=JSON.parse(f.getAttribute('data-opt')||'{}')}catch(e){}Object.keys(o).forEach(function(k){if(o[k]!==''&&!isNaN(Number(o[k])))o[k]=Number(o[k])});KLOCKI.montuj(f.querySelector('.lk-fig-body'),f.getAttribute('data-klocek'),o)})})();
 /* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
    postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
 (function(){

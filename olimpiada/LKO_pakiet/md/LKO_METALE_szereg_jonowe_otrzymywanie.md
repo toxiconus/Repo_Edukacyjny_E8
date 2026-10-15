@@ -48,7 +48,13 @@ Podane czasy, punktacja i progi interpretacji wyniku są zasadami tego autorskie
 
 ## 1 | Wykład — Szereg aktywności metali: przewidywarka reakcji
 
+@klocek metal-woda {metal="Na", wskaznik="1"} | Sód wrzucony do wody z fenoloftaleiną
+@opis Kawałek sodu na dnie zlewki z wodą; od niego odrywają się pęcherzyki wodoru, a roztwór przy fenoloftaleinie różowieje od wodorotlenku sodu. Wniosek: sód reaguje z zimną wodą gwałtownie, a produkt zasadowy zmienia barwę wskaźnika.
+
 ### 1.1 Szereg (rdzeń szkolny + rozszerzenia)
+
+@klocek probowki-odczyn {tuby="Mg:bezbarwny:bezbarwny:gaz,Zn:bezbarwny:bezbarwny:gaz,Fe:bezbarwny:bezbarwny:gaz,Cu:bezbarwny:bezbarwny:brak"} | Metale w kwasie solnym: pęcherzyki H₂ tylko przy metalach przed wodorem
+@opis Cztery probówki z rozcieńczonym kwasem solnym i kolejno magnezem, cynkiem, żelazem i miedzią. Z Mg, Zn i Fe unoszą się pęcherzyki wodoru, z Cu nie dzieje się nic. Wniosek: metal leżący przed wodorem w szeregu wypiera H₂ z kwasu, a miedź (za wodorem) nie reaguje.
 
   **K · Ca · Na · Mg · Al · Zn · Fe · (H) · Cu · Ag · Au**
 
@@ -217,6 +223,9 @@ Równanie jonowe skrócone pokazuje istotę reakcji: jony, które przechodzą w 
 ## 4 | Wykład — Cykl przemian miedzi (wzorcowy przykład „cykli")
 
 Dokument LKO wprost wymienia: „planowanie i analizowanie cykli przemian (np. metal → tlenek metalu → wodorotlenek → sól)". Oto pełny obieg miedzi — zamknięty, z pięcioma różnymi typami reakcji:
+
+@klocek lancuch-przemian {wezly="Cu,CuO,CuCl2,Cu(OH)2,CuO", etyk="1,2,3,4,5", zamkniety="1"} | Obieg miedzi: numery strzałek odpowiadają etapom w tabeli poniżej
+@opis Pięć etapów w okręgu, zamkniętym przez strzałkę 5 wracającą do metalu. Dwa razy pojawia się CuO (etap 1 i 4 wracają do tego samego tlenku). Wniosek: obieg zamyka się w metalu, więc każdy etap można zaplanować od początku, a równanie piątego etapu łączy go z pierwszym.
 
 | Etap | Równanie (z warunkami) | Obserwacja | Typ |
 |---|---|---|---|

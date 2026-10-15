@@ -107,6 +107,9 @@ Na zawodach i na E8 wartości zawsze są podane (tablica/krzywa/w zadaniu). Uczy
 
 ## 1 | Wykład — czytać wykres: osie, trzy strefy, słownik {#wyklad-osie}
 
+@klocek krzywe-rozpuszczalnosci {subst="KNO3,NaCl,NH4Cl", T="40"} | Krzywe rozpuszczalności KNO₃, NaCl i NH₄Cl z tabeli A; pionowa linia: 40 °C
+@opis Oś pozioma to temperatura (0–100 °C), oś pionowa to gramy substancji na 100 g wody. Krzywa KNO₃ rośnie stromo (32 g w 20 °C, 167 g w 80 °C), krzywe NaCl i NH₄Cl rosną wolniej. Przy 40 °C każda krzywa daje jedną wartość rozpuszczalności; wniosek: odczytujemy zawsze z krzywej, a nie z wyobrażenia.
+
 ### 1.1 Co jest na osiach — pułapka nr 1
 
 - Oś pozioma: **temperatura w °C**.
@@ -115,6 +118,9 @@ Na zawodach i na E8 wartości zawsze są podane (tablica/krzywa/w zadaniu). Uczy
 **⚠ Nie „g na 100 g roztworu"!** To najczęstsza pomyłka. Krzywa mówi o wodzie (rozpuszczalniku), nie o roztworze. Masa roztworu = masa wody + masa rozpuszczonej substancji (wraca w szablonie 3).
 
 ### 1.2 Trzy strefy wykresu
+
+@klocek krzywe-rozpuszczalnosci {subst="KNO3", T="60", m="120"} | Punkt (60 °C; 120 g) nad krzywą KNO₃ (110 g): nadmiar zostaje w fazie stałej
+@opis Krzywa KNO₃ przy 60 °C wynosi 110 g na 100 g wody; żółty punkt leży nad nią, na poziomie 120 g. Trzy strefy opisane przy pionowej linii: nad krzywą to nasycony roztwór z osadem (10 g nadmiaru), na krzywej nasycony, pod krzywą nienasycony. Wniosek: położenie punktu względem krzywej mówi, czy substancja się rozpuści, czy zostanie w osadzie.
 
 Dla ustalonej temperatury T porównuj punkt (T, rozpuszczona masa) z krzywą:
 

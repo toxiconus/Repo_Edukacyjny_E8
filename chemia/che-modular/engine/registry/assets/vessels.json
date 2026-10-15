@@ -19,7 +19,8 @@
         "evapDish",
         "crucible",
         "watchGlass",
-        "dropFunnel"
+        "dropFunnel",
+        "zlewkaOdwrocona"
       ]
     },
     "chem.heat": {
@@ -268,6 +269,11 @@
     "molTank": {
       "title": "molTank",
       "design": "Zbiornik cząsteczek (model)."
+    },
+    "zlewkaOdwrocona": {
+      "title": "Zlewka odwrócona (dnem do góry)",
+      "draw": "zlewkaOdwrocona",
+      "design": "Zlewka odwrócona nad płomieniem — kropelki H₂O na dnie."
     }
   }
 }

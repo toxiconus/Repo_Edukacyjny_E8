@@ -36,6 +36,7 @@ Użycie w md: `@model <id> | Tytuł przycisku | co pokazuje`. „Lekcje” = gdz
 | `gfx-scene-heating` | Ogrzewanie cieczy na trójnogu (palnik Bunsena) |  |
 | `gfx-scene-indicator` | Wskaźnik kwasowo-zasadowy w roztworze |  |
 | `gfx-scene-indicatorRack` | Wskaźnik w siedmiu roztworach (statyw) | N02, N03 |
+| `gfx-scene-metanSpalanie` | Spalanie metanu — zlewka odwrócona (H₂O) i woda wapienna (CO₂) | ORG01 |
 | `gfx-scene-titration` | Zobojętnianie: miareczkowanie HCl zasadą NaOH | N03 |
 | `hf-paradox` | Paradoks HF — dlaczego słaby |  |
 | `ion-map-v02` | Mapa jonów — ładunek, pochodzenie, wykrywanie, sole | N04 |
@@ -136,3 +137,10 @@ Użycie w md: `@model <id> | Tytuł przycisku | co pokazuje`. „Lekcje” = gdz
 
 ## Autoodtwarzanie (2026-10-11)
 `CHE.AUTO(el, krok, ms, {now})` w `engine/src/lekcja/nawigacja.js` (pełne i lekkie lekcje). Skaner co 2,5 s podpina modele w `.che-lesson-viz-slot`, `[data-che-viz]`, `[data-che-zlewka]`: przycisk „▶ krok” → krok co 2,2 s, na końcu „od nowa”; „▶ powtórz / odtwórz / wykonaj” → powtarzanie doświadczenia co 8 s (kilka zlewek — po kolei co 4,5 s). Działa tylko przy widocznym modelu; kliknięcie w model zatrzymuje, przycisk wznawia; `prefers-reduced-motion` — wyłączone. Nowy model z animacją: wystarczy przycisk z jednym z tych napisów albo własne wywołanie `CHE.AUTO`.
+
+
+## Dodane 2026-10-14 (spalanie metanu — dwa dowody)
+
+- Naczynie `zlewkaOdwrocona` (engine/src/gfx/chemia/naczynia/zlewkaOdwrocona.js): zlewka dnem do góry, otwór na dole; kropelki H₂O rysuje `condensation` także na kopule.
+- Scena `metanSpalanie` (engine/src/gfx/chemia/sceny/metanSpalanie.js): palnik `burner` + `zlewkaOdwrocona` + kontrolna `beaker` + probówka z wodą wapienną (`testTube`, zmętnienie po „Przepuść gaz”).
+- Status: scena składa się, montuje w bundle `dist/viz` i pokazuje kropelki na kopule (sprawdzone zrzutem). LKO-ORG01 §5 jeszcze bez `@model` (lekcje LKO budowane są lekkim buildem `@klocek`, który nie renderuje scen GFX).
