@@ -16,6 +16,8 @@
   function rysuj(m, opt) {
     opt = opt || {};
     var kulki = !!opt.kulki;
+    var inter = !!opt.interaktywny, wal = !!opt.walencja;   // opcje dodatkowe: domyślnie wyłączone
+    var sel = (typeof opt.sel === 'number') ? opt.sel : -1;
     var E = function (i) { return m.atoms[i][0]; };
     var N = m.atoms.map(function () { return []; });
     m.bonds.forEach(function (b, k) { N[b[0]].push([b[1], b[2], k]); N[b[1]].push([b[0], b[2], k]); });
@@ -136,6 +138,19 @@
       out.push('<text x="' + (a[1] + (R + 14) * Math.cos(am)).toFixed(1) + '" y="' + (a[2] + (R + 14) * Math.sin(am)).toFixed(1) + '" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#475569">' + String(g.kat).replace('.', ',') + '°</text>');
     });
 
+    // opcje dodatkowe (v3.1): trafienia kliknięcia, zaznaczony atom, znaczniki walencji
+    if (inter) m.atoms.forEach(function (a, i) {
+      if (!widoczny[i]) return;
+      out.push('<circle class="c2d-hit" data-i="' + i + '" tabindex="0" role="button" aria-label="' + (C2D.NAZWA[a[0]] || a[0]) + ' ' + a[0] + (i + 1) + '" cx="' + a[1] + '" cy="' + a[2] + '" r="' + (kulki ? promien(i) + 10 : 22) + '" fill="transparent" style="cursor:pointer"/>');
+    });
+    if (sel >= 0 && widoczny[sel]) out.push('<circle cx="' + m.atoms[sel][1] + '" cy="' + m.atoms[sel][2] + '" r="' + (kulki ? promien(sel) + 13 : 26) + '" fill="none" stroke="#d97706" stroke-width="2" stroke-dasharray="4 3"/>');
+    if (wal) {
+      var sumy = C2D.sumy(m);
+      m.atoms.forEach(function (a, i) {
+        if (!widoczny[i] || !C2D.WALENCJA[a[0]] || sumy[i] === C2D.WALENCJA[a[0]]) return;
+        out.push('<circle cx="' + (a[1] + 15) + '" cy="' + (a[2] - 15) + '" r="5" fill="#b91c1c"/>');
+      });
+    }
     out.push('</svg>');
     var w = C2D.wzor(m);
     return {svg: out.join(''), wzor: w.tekst, masa: w.masa};
