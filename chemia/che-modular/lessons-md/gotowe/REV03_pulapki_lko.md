@@ -48,6 +48,9 @@ Diament i grafit to różne pierwiastki | To ten sam pierwiastek (węgiel) w ró
 Woda gasi, bo zawiera tlen | Woda gasi, ale jej właściwości nie wynikają z prostego sumowania | Związek ma własne właściwości (1.1)
 :::
 
+@viz rev03-klasyfikacja-materii
+@opis Drzewo klasyfikacyjne. Na górze prostokąt „MATERIA”. Rozdziela się na dwie gałęzie: „Substancje czyste” (lewa) i „Mieszaniny” (prawa). Gałąź „Substancje czyste” dzieli się na „Pierwiastki” (przykłady: Fe, O₂, He) i „Związki” (przykłady: H₂O, NaCl, CO₂). Gałąź „Mieszaniny” dzieli się na „Jednorodne” (przykłady: powietrze, roztwór soli, stal) i „Niejednorodne” (przykłady: piasek z wodą, mgła, mleko). Wniosek: najpierw pytamy, czy skład jest stały, potem, czy substancja jest jednorodna.
+
 ### 1.2 Zjawisko fizyczne czy przemiana chemiczna? [[basic:E8]] {#zjawiska}
 
 **Kryterium:** czy powstała nowa substancja o nowych właściwościach.
@@ -98,6 +101,9 @@ Wodór jest metalem alkalicznym, bo jest w grupie 1 | Wodór jest niemetalem | M
 Hel ma 2 elektrony, więc jest w grupie 2 | Hel jest w grupie 18 | Pełna powłoka walencyjna (K) — stabilność, a nie reguła 8
 Metale przejściowe mają stałą wartościowość | Mają zmienne wartościowości: Fe²⁺/Fe³⁺, Cu⁺/Cu²⁺ | Reguły grup głównych tu nie działają
 :::
+
+@viz rev03-jony-na-cl
+@opis Dwa modele atomów obok siebie. Po lewej atom sodu: jądro „+11” i powłoki 2, 8, 1 (jeden elektron na zewnątrz). Po prawej atom chloru: jądro „+17” i powłoki 2, 8, 7. Strzałka pokazuje przejście jednego elektronu od sodu do chloru. Wynik: jon Na⁺ (powłoki 2, 8, ładunek +) i jon Cl⁻ (powłoki 2, 8, 8, ładunek −). Wniosek: oba jony mają pełne powłoki zewnętrzne, a przyciąganie przeciwnych ładunków tworzy wiązanie jonowe w NaCl.
 
 ### 2.2 Co trzeba znać z układu okresowego [[basic:E8]] {#uklad}
 
@@ -223,6 +229,9 @@ Warunki normalne to 25 °C | Warunki normalne to 0 °C i 1013 hPa | Sprawdź, co
 1 mol to 1000 cząstek | 1 mol to 6,022·10²³ cząstek | Liczba Avogadra
 :::
 
+@viz rev03-karuzela-mola
+@opis Diagram w kształcie koła z napisem „n (mol)” w centrum. Cztery strzałki wychodzą i wracają do centrum: w górę do pola „N (cząstki)” z wzorem N = n · N_A; w prawo do pola „m (g)” z wzorem m = n · M; w dół do pola „V (dm³, tylko gazy w warunkach normalnych)” z wzorem V = n · 22,4 dm³; w lewo do pola „C (mol/dm³)” z wzorem C = n / V roztworu. Wniosek: z jednej wielkości można przejść do pozostałych tą samą pętlą.
+
 ### 5.2 Stężenie molowe [[understand:ROZUMIENIE]] {#stezenie-molowe}
 
 **C = n / V**, jednostka mol/dm³. Przelicznik z procentowego:
@@ -275,6 +284,9 @@ Wypadnie 110 − 32 = **78 g kryształów**. Woda nie ucieka, więc porównujemy
 Choroba kesonowa (u nurków) to ta sama chemia: pod wysokim ciśnieniem więcej azotu rozpuszcza się we krwi. Szybkie wynurzenie powoduje wydzielanie się pęcherzyków.
 :::
 
+@viz rev03-krzywe-rozpuszczalnosci
+@opis Wykres: oś pozioma „temperatura (°C)” od 0 do 100, oś pionowa „rozpuszczalność (g na 100 g wody)” od 0 do 250. Trzy krzywe: KNO₃ stromo rosnąca (ok. 32 g w 20 °C, ok. 110 g w 60 °C); NaCl prawie pozioma (ok. 36–39 g); Ca(OH)₂ nisko przy osi, lekko opadająca. Pionowa linia przy 60 °C przecina KNO₃ i odczytujemy 110 g. Ramka: „gazy: rozpuszczalność maleje z temperaturą”. Wniosek: odczyt z krzywej daje rozpuszczalność w danej temperaturze; wartości do weryfikacji.
+
 ### 6.3 Nasycony to nie to samo co stężony [[understand:ROZUMIENIE]] {#nasycony}
 
 - **Roztwór nasycony:** nie rozpuści już więcej substancji w danej temperaturze.
@@ -322,6 +334,9 @@ Kwas w roztworze wodnym oddaje jony H⁺, zasada oddaje jony OH⁻. Reakcja zobo
 ::: klinika | Błąd | Poprawnie | Dlaczego?
 Fenoloftaleina różowa oznacza obojętny odczyn | Malinowa barwa oznacza tylko zasadę | Fenoloftaleina jest bezbarwna w kwasie i w roztworze obojętnym
 :::
+
+@viz rev03-skala-ph
+@opis Pasek gradientowy od czerwieni (pH 0) przez pomarańcz, żółć, zieleń (pH 7, obojętnie) do fioletu (pH 14). Pod paskiem przykłady: kwas akumulatorowy (ok. 0), sok z cytryny (ok. 2), ocet (ok. 3), czysta woda (7), krew (7,4), mydło (9–10), amoniak (11), wybielacz (12–13). Nad paskiem trzy mini-paski barw wskaźników: lakmus, fenoloftaleina (malinowa od ok. 8,2), metylowa pomarańcz (żółta od ok. 4,4). Ramka: skala 0–14 to umowa szkolna. Wniosek: barwę wskaźnika odczytujemy z przedziału pH.
 
 ### 7.3 Woda wapienna, mleko wapienne, twardość [[understand:ROZUMIENIE]] {#woda-wapniona}
 
@@ -414,6 +429,9 @@ CO₂ jest trujący | CO₂ jest duszący (wypiera tlen), trujący jest CO | CO 
 Odbarwienie wody bromowej oznacza alkan | Odbarwienie oznacza wiązanie wielokrotne | Alkeny i alkiny przyłączają brom
 :::
 
+@viz rev03-rodziny-weglowodorow
+@opis Drzewo: u góry „WĘGLOWODORY” z trzema gałęziami: „alkany CₙH₂ₙ₊₂ (pojedyncze wiązania) — metan, propan”, „alkeny CₙH₂ₙ (podwójne) — eten”, „alkiny CₙH₂ₙ₋₂ (potrójne) — etyn”. Metka przy alkenach i alkinach: „odbarwiają wodę bromową”. Z węglowodorów strzałki do pochodnych: „–OH → alkohole”, „–COOH → kwasy karboksylowe”, „kwas + alkohol → estry”. Wniosek: rodzina wyznacza wzór ogólny i próbę chemiczną.
+
 ### 9.3 Pochodne węglowodorów [[basic:E8]] {#pochodne}
 
 - **Alkohole** (–OH): etanol C₂H₅OH (spożywczy), metanol CH₃OH (trujący, uszkadza wzrok).
@@ -459,6 +477,9 @@ K: +I; 4 atomy O: −8 → Mn + (+1) + (−8) = 0 → **Mn: +VII**.
 
 Redoks nie wymaga tlenu. **H₂ + Cl₂ → 2HCl** to reakcja redoks: wodór oddaje elektrony, chlor je przyjmuje.
 :::
+
+@viz rev03-elektroliza-wody
+@opis Naczynie z wodą i kwasem siarkowym jako elektrolitem. Dwie elektrody: lewa podłączona do bieguna ujemnego (katoda: kationy, redukcja), prawa do dodatniego (anoda: aniony, utlenianie). Nad katodą probówka z H₂, objętość 2 jednostki; nad anodą probówka z O₂, objętość 1 jednostka. Ramka: stosunek objętościowy 2 : 1, masowy 1 : 8. Wniosek: objętości gazów i masy różnią się, więc trzeba wiedzieć, co liczymy.
 
 ### 10.3 Elektroliza [[understand:ROZUMIENIE]] {#elektroliza}
 
