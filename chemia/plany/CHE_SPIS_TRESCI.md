@@ -1,7 +1,7 @@
 ---
 kod: CHE-SPIS
 wersja: v0.3 (plan roboczy)
-data: 2026-10-08
+data: 2026-10-12
 zrodlo: wygenerowane z che/narzedzia/kanon_dane.py (edytuj dane, nie ten plik) — `python3 che/narzedzia/spis_tresci.py`
 zastepuje: CHE_KANON_v0.2.md, CHE_SPIS_LEKCJI.md, AUDYT_SPISU_v0.2.md (usunięte, w historii git), PLAN_LEKCJI.md
 uzupelnia: PLAN_SCIEZKI_DYDAKTYCZNE.md
@@ -18,7 +18,12 @@ uzupelnia: PLAN_SCIEZKI_DYDAKTYCZNE.md
 - **Mamy:** pliki materiału w `chemia/lekcje_md/<grupa>/` — jeden plik na lekcję (blok F) albo plik zbiorczy starej lekcji v1.1. Na końcu każdego pliku F jest sekcja „MATERIAŁ Z ARCHIWUM — do redakcji” z treściami ze starszych wersji, których nie było w głównej.
 - **Było:** kod w spisie v0.1 (sprzed przenumerowania).
 
-**Bilans:** 113 lekcji w 10 grupach. ●●● 9 · ●●○ 11 · ◐○○ 6 · ●○○ 31 · ○○○ 56.
+- **Status (rejestr z audytu końcowego W1):** GOTOWE HTML — lekcja zbudowana · GOTOWE MASTER — pełny materiał i specyfikacja · UZUPEŁNIONE — dopisana treść kanoniczna · POPRAWIONE — korekty z audytu · DO SPRAWDZENIA · ŹRÓDŁO — materiał bazowy bez audytu · PRZENIESIONE — treść ma właściciela w innej lekcji · DO IMPLEMENTACJI — tylko opis w kanonie. Wyliczany z plików; ręcznie: `kanon_dane.STATUS`.
+- **Treść ponad E8** (np. Faraday, rząd reakcji, Hess, Ka/pKa, bufory) idzie do sekcji `[[extra:ZAAWANSOWANY]]` w tej samej lekcji — nie do osobnych lekcji OLIMPIADA.
+
+**Statusy:** GOTOWE HTML 13 · UZUPEŁNIONE 45 · POPRAWIONE 44 · DO IMPLEMENTACJI 11.
+
+**Bilans:** 113 lekcji w 10 grupach. ●●● 13 · ●●○ 10 · ◐○○ 46 · ●○○ 33 · ○○○ 11.
 
 ## 1. Zasady kanonu
 
@@ -45,23 +50,23 @@ uzupelnia: PLAN_SCIEZKI_DYDAKTYCZNE.md
 
 ## 2. Spis skrócony
 
-**F Fundamenty:** ●●● F01 Jak myśli chemik · ●●● F02 Materia i substancje · ●●● F03 Właściwości i rozdzielanie mieszanin · ●●● F04 Atom · ●●○ F05 Izotopy, jony i masa atomowa · ●●○ F06 Układ okresowy · ●●○ F07 Konfiguracja elektronowa · ●●○ F08 Konfiguracja ↔ układ okresowy · ●●○ F09 Wartościowość, ładunek i stopień utlenienia · ◐○○ F10 Dlaczego atomy się łączą · ●●○ F11 Wiązania jonowe, kowalencyjne i metaliczne · ●●○ F12 Wzory chemiczne · ●●○ F13 Wzory elektronowe (Lewis) · ●●○ F14 Geometria cząsteczek (VSEPR) · ◐○○ F15 Polarność i oddziaływania · ●●○ F16 Od obserwacji do modelu reakcji · ●●○ F17 Równania reakcji · ◐○○ F18 Dossier substancji · ◐○○ F19 Dossier reakcji · ◐○○ F20 Klinika błędów fundamentów · ◐○○ F21 Zadania transferowe i diagnostyka
+**F Fundamenty:** ●●● F01 Jak myśli chemik · ●●● F02 Materia i substancje · ●●● F03 Właściwości i rozdzielanie mieszanin · ●●● F04 Atom · ●●● F05 Izotopy, jony i masa atomowa · ●●● F06 Układ okresowy · ●●○ F07 Konfiguracja elektronowa · ●●○ F08 Konfiguracja ↔ układ okresowy · ●●○ F09 Wartościowość, ładunek i stopień utlenienia · ◐○○ F10 Dlaczego atomy się łączą · ●●○ F11 Wiązania jonowe, kowalencyjne i metaliczne · ●●○ F12 Wzory chemiczne · ●●○ F13 Wzory elektronowe (Lewis) · ●●○ F14 Geometria cząsteczek (VSEPR) · ●●○ F15 Polarność i oddziaływania · ●●○ F16 Od obserwacji do modelu reakcji · ●●○ F17 Równania reakcji · ◐○○ F18 Dossier substancji · ◐○○ F19 Dossier reakcji · ◐○○ F20 Klinika błędów fundamentów · ◐○○ F21 Zadania transferowe i diagnostyka
 
-**N Chemia nieorganiczna:** ○○○ N01 Powietrze i gazy · ●●● N02 Tlenki · ●●● N03 Wodorotlenki i zasady · ●●● N04 Kwasy · ●●● N05 Sole · ●●● N06 Wodorki · ○○○ N07 Systematyka nieorganiczna · ○○○ N08 Mapa przemian „co powstanie?”
+**N Chemia nieorganiczna:** ●●● N01 Powietrze i gazy · ●●● N02 Tlenki · ●●● N03 Wodorotlenki i zasady · ●●● N04 Kwasy · ●●● N05 Sole · ●●● N06 Wodorki · ◐○○ N07 Systematyka nieorganiczna · ◐○○ N08 Mapa przemian „co powstanie?”
 
-**R Roztwory i stechiometria:** ○○○ R01 Woda i roztwory · ○○○ R02 Rozpuszczalność · ●○○ R03 Stężenie procentowe · ●○○ R04 Mol i masa molowa · ●○○ R05 Stężenie molowe · ○○○ R06 Gazy: objętość molowa · ●○○ R07 Stechiometria · ●○○ R08 Reagent ograniczający · ●○○ R09 Wydajność reakcji
+**R Roztwory i stechiometria:** ◐○○ R01 Woda i roztwory · ◐○○ R02 Rozpuszczalność · ●●● R03 Stężenie procentowe · ●○○ R04 Mol i masa molowa · ●○○ R05 Stężenie molowe · ◐○○ R06 Gazy: objętość molowa · ●○○ R07 Stechiometria · ●○○ R08 Reagent ograniczający · ●○○ R09 Wydajność reakcji
 
-**J Chemia jonowa:** ○○○ J01 Dysocjacja elektrolityczna · ○○○ J02 pH i odczyn · ○○○ J03 Reakcje jonowe · ○○○ J04 Strącanie osadów · ○○○ J05 Amfoteryczność · ○○○ J06 Równowagi kwasowo-zasadowe · ○○○ J07 Ka, Kb i Kw · ○○○ J08 Hydroliza soli · ○○○ J09 Bufory · ○○○ J10 Iloczyn rozpuszczalności Ksp · ○○○ J11 Identyfikacja jonów · ○○○ J12 Miareczkowanie
+**J Chemia jonowa:** ◐○○ J01 Dysocjacja elektrolityczna · ◐○○ J02 pH i odczyn · ◐○○ J03 Reakcje jonowe · ◐○○ J04 Strącanie osadów · ◐○○ J05 Amfoteryczność · ◐○○ J06 Równowagi kwasowo-zasadowe · ◐○○ J07 Ka, Kb i Kw · ◐○○ J08 Hydroliza soli · ◐○○ J09 Bufory · ◐○○ J10 Iloczyn rozpuszczalności Ksp · ◐○○ J11 Identyfikacja jonów · ◐○○ J12 Miareczkowanie
 
-**O Chemia organiczna:** ●○○ O01 Język chemii organicznej · ●○○ O02 Alkany · ●○○ O03 Izomeria · ●○○ O04 Alkeny · ●○○ O05 Alkiny · ●○○ O06 Spalanie węglowodorów · ●○○ O07 Areny · ○○○ O08 Alkohole · ○○○ O09 Fenole · ○○○ O10 Aldehydy i ketony · ○○○ O11 Kwasy karboksylowe · ○○○ O12 Estry · ●○○ O13 Tłuszcze, mydła i detergenty · ○○○ O14 Aminy i amidy · ●○○ O15 Cukry — monosacharydy · ●○○ O16 Cukry — disacharydy · ●○○ O17 Cukry — polisacharydy · ●○○ O18 Aminokwasy · ●○○ O19 Białka — struktura · ●○○ O20 Białka — reakcje charakterystyczne · ○○○ O21 Polimery i tworzywa · ●○○ O22 Witaminy i sole mineralne · ●○○ O23 Metabolizm · ○○○ O24 Nazewnictwo — procedura zbiorcza · ○○○ O25 Mechanizmy reakcji organicznych
+**O Chemia organiczna:** ●○○ O01 Język chemii organicznej · ●○○ O02 Alkany · ●○○ O03 Izomeria · ●○○ O04 Alkeny · ●○○ O05 Alkiny · ●○○ O06 Spalanie węglowodorów · ●○○ O07 Areny · ●○○ O08 Alkohole · ◐○○ O09 Fenole · ◐○○ O10 Aldehydy i ketony · ●○○ O11 Kwasy karboksylowe · ●○○ O12 Estry · ●○○ O13 Tłuszcze, mydła i detergenty · ◐○○ O14 Aminy i amidy · ●○○ O15 Cukry — monosacharydy · ●○○ O16 Cukry — disacharydy · ●○○ O17 Cukry — polisacharydy · ●○○ O18 Aminokwasy · ●○○ O19 Białka — struktura · ●○○ O20 Białka — reakcje charakterystyczne · ◐○○ O21 Polimery i tworzywa · ●○○ O22 Witaminy i sole mineralne · ●○○ O23 Metabolizm · ◐○○ O24 Nazewnictwo — procedura zbiorcza · ◐○○ O25 Mechanizmy reakcji organicznych
 
 **X Redoks:** ●○○ X01 Reakcje redoks · ●○○ X02 Typowe utleniacze i reduktory · ●○○ X03 Bilans elektronowy · ●○○ X04 Szereg aktywności metali · ●○○ X05 Redoks jonowy · ●○○ X06 Redoks w środowisku kwasowym · ●○○ X07 Redoks w środowisku zasadowym · ●○○ X08 Dysproporcjonowanie i synproporcjonowanie · ●○○ X09 Redoks przekrojowy
 
-**E Elektrochemia:** ○○○ E01 Ogniwo galwaniczne · ○○○ E02 Potencjały elektrodowe · ○○○ E03 SEM · ○○○ E04 Elektroliza · ○○○ E05 Korozja · ○○○ E06 Źródła energii i akumulatory
+**E Elektrochemia:** ◐○○ E01 Ogniwo galwaniczne · ◐○○ E02 Potencjały elektrodowe · ◐○○ E03 SEM · ◐○○ E04 Elektroliza · ◐○○ E05 Korozja · ◐○○ E06 Źródła energii i akumulatory
 
-**K Energetyka, kinetyka i równowaga:** ○○○ K01 Energia reakcji · ○○○ K02 Entalpia · ○○○ K03 Kalorymetria i przemiany fazowe · ○○○ K04 Szybkość reakcji · ○○○ K05 Czynniki wpływające na szybkość · ○○○ K06 Zderzenia i energia aktywacji · ○○○ K07 Kataliza · ○○○ K08 Równowaga dynamiczna · ○○○ K09 Stała równowagi · ○○○ K10 Reguła Le Chateliera · ○○○ K11 Równowaga ilościowa
+**K Energetyka, kinetyka i równowaga:** ◐○○ K01 Energia reakcji · ◐○○ K02 Entalpia · ◐○○ K03 Kalorymetria i przemiany fazowe · ◐○○ K04 Szybkość reakcji · ◐○○ K05 Czynniki wpływające na szybkość · ◐○○ K06 Zderzenia i energia aktywacji · ◐○○ K07 Kataliza · ◐○○ K08 Równowaga dynamiczna · ◐○○ K09 Stała równowagi · ◐○○ K10 Reguła Le Chateliera · ◐○○ K11 Równowaga ilościowa
 
-**A Chemia jądrowa:** ○○○ A01 Jądro atomowe · ○○○ A02 Radioaktywność · ○○○ A03 Przemiany jądrowe · ○○○ A04 Okres półtrwania i aktywność · ○○○ A05 Energia wiązania jądra · ○○○ A06 Zastosowania i BHP
+**A Chemia jądrowa:** ◐○○ A01 Jądro atomowe · ○○○ A02 Radioaktywność · ○○○ A03 Przemiany jądrowe · ○○○ A04 Okres półtrwania i aktywność · ○○○ A05 Energia wiązania jądra · ○○○ A06 Zastosowania i BHP
 
 **P Układ okresowy — pogłębienie:** ○○○ P01 Blok s · ○○○ P02 Blok p · ○○○ P03 Blok d i metale przejściowe · ○○○ P04 Charakterystyka grup · ○○○ P05 Związki charakterystyczne pierwiastków · ○○○ P06 Trend → właściwość → reaktywność
 
@@ -77,6 +82,7 @@ _język, atom, wiązanie, równanie — potrzebne wszędzie_
 
 ```yaml
 kod: F01
+status: GOTOWE HTML
 poziom: E8
 wymaga: "—"
 poglebia: "F02–F03; F16–F17"
@@ -94,12 +100,13 @@ stan: "●●●"
 - minimum BHP i piktogramy
 - pracownia GFX (6 zlewek)
 
-**Mamy:** gotowa lekcja `che/md/F01_jak_mysli_chemik.md` (42 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F01.jak_mysli_chemik.md` (83 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F01_jak_mysli_chemik.md` (54 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F01.jak_mysli_chemik.md` (83 KB)
 
 #### F02 — Materia i substancje
 
 ```yaml
 kod: F02
+status: GOTOWE HTML
 poziom: E8
 wymaga: "F01"
 poglebia: "F03; F04; F12"
@@ -114,12 +121,13 @@ stan: "●●●"
 - drzewo klasyfikacji
 - metale i niemetale (wstęp)
 
-**Mamy:** gotowa lekcja `che/md/F02_materia_i_substancje.md` (32 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F02.materia_i_substancje.md` (29 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F02_materia_i_substancje.md` (45 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F02.materia_i_substancje.md` (29 KB)
 
 #### F03 — Właściwości i rozdzielanie mieszanin
 
 ```yaml
 kod: F03
+status: GOTOWE HTML
 poziom: E8
 wymaga: "F01; F02"
 poglebia: "F16–F17; R01–R02"
@@ -135,7 +143,7 @@ stan: "●●●"
 - sączenie, dekantacja, odparowanie, krystalizacja, destylacja, chromatografia, magnes
 - dobór metody
 
-**Mamy:** gotowa lekcja `che/md/F03_wlasciwosci_i_rozdzielanie.md` (33 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F03.wlasciwosci_i_rozdzielanie_mieszanin.md` (42 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F03_wlasciwosci_i_rozdzielanie.md` (45 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F03.wlasciwosci_i_rozdzielanie_mieszanin.md` (42 KB)
 
 ### Faza B — Z czego to wynika?
 
@@ -143,6 +151,7 @@ stan: "●●●"
 
 ```yaml
 kod: F04
+status: GOTOWE HTML
 poziom: E8
 wymaga: "F01; F02"
 poglebia: "F05; F06–F09"
@@ -158,16 +167,17 @@ stan: "●●●"
 - atom obojętny vs jon
 - modele atomu (historia skrócona)
 
-**Mamy:** gotowa lekcja `che/md/F04_atom.md` (24 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F04.atom.md` (41 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F04_atom.md` (33 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F04.atom.md` (41 KB)
 
 #### F05 — Izotopy, jony i masa atomowa
 
 ```yaml
 kod: F05
+status: GOTOWE HTML
 poziom: E8+LO
 wymaga: "F04"
 poglebia: "F06–F09; A01–A06"
-stan: "●●○"
+stan: "●●●"
 ```
 
 **Cel:** Uczeń rozróżnia izotop, jon i inny pierwiastek oraz liczy masę atomową jako średnią ważoną.
@@ -179,16 +189,17 @@ stan: "●●○"
 - procedura średniej izotopowej
 - izotop i jon jednocześnie (np. ³⁵Cl⁻)
 
-**Mamy:** materiał `lekcje_md/F/CHE.01.F05.izotopy_jony_i_masa_atomowa.md` (41 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F05_izotopy_jony_masa_atomowa.md` (37 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F05.izotopy_jony_i_masa_atomowa.md` (41 KB)
 
 #### F06 — Układ okresowy
 
 ```yaml
 kod: F06
+status: GOTOWE HTML
 poziom: E8+LO
 wymaga: "F04; F05"
 poglebia: "F08–F11; P01–P06"
-stan: "●●○"
+stan: "●●●"
 ```
 
 **Cel:** Uczeń czyta położenie pierwiastka, określa elektrony walencyjne i przewiduje trendy.
@@ -200,12 +211,13 @@ stan: "●●○"
 - trendy: promień, elektroujemność, charakter metaliczny — każdy z „dlaczego”
 - OWNER trendów
 
-**Mamy:** materiał `lekcje_md/F/CHE.01.F06.uklad_okresowy.md` (32 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/F06_uklad_okresowy.md` (57 KB) → HTML przez `md2html.py`; materiał `lekcje_md/F/CHE.01.F06.uklad_okresowy.md` (32 KB)
 
 #### F07 — Konfiguracja elektronowa
 
 ```yaml
 kod: F07
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "F04; F06"
 poglebia: "F08–F10; F13"
@@ -218,12 +230,13 @@ stan: "●●○"
 - E8: powłoki K, L, M, N
 - LO: podpowłoki, orbitale, reguła rozbudowy, Hund, Pauli, wyjątki Cr i Cu, konfiguracje jonów
 
-**Mamy:** materiał `lekcje_md/F/CHE.01.F07.konfiguracja_elektronowa.md` (48 KB)
+**Mamy:** materiał `lekcje_md/F/CHE.01.F07.konfiguracja_elektronowa.md` (55 KB)
 
 #### F08 — Konfiguracja ↔ układ okresowy
 
 ```yaml
 kod: F08
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "F06; F07"
 poglebia: "F09–F15"
@@ -237,12 +250,13 @@ stan: "●●○"
 - ograniczenia uproszczeń
 - w ścieżce E8 łączona z F07
 
-**Mamy:** materiał `lekcje_md/F/CHE.01.F08.konfiguracja_uklad_okresowy.md` (51 KB)
+**Mamy:** materiał `lekcje_md/F/CHE.01.F08.konfiguracja_uklad_okresowy.md` (56 KB)
 
 #### F09 — Wartościowość, ładunek i stopień utlenienia
 
 ```yaml
 kod: F09
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "F04; F05; F06; F08"
 poglebia: "F12; F17; X01–X09"
@@ -256,7 +270,7 @@ stan: "●●○"
 - tabela typowych wartości
 - pułapki mylenia trzech pojęć
 
-**Mamy:** materiał `lekcje_md/F/CHE.01.F09.wartosciowosc_ladunek_i_stopien_utlenien.md` (103 KB)
+**Mamy:** materiał `lekcje_md/F/CHE.01.F09.wartosciowosc_ladunek_i_stopien_utlenien.md` (109 KB)
 
 ### Faza C — Jak powstaje struktura?
 
@@ -264,6 +278,7 @@ stan: "●●○"
 
 ```yaml
 kod: F10
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "F06–F09"
 poglebia: "F11; F13–F15"
@@ -278,12 +293,13 @@ stan: "◐○○"
 - wyjątki od oktetu (LO)
 - do rozbudowy — treść cienka
 
-**Mamy:** materiał `lekcje_md/F/CHE.01.F10.dlaczego_atomy_sie_lacza.md` (14 KB)
+**Mamy:** materiał `lekcje_md/F/CHE.01.F10.dlaczego_atomy_sie_lacza.md` (20 KB)
 
 #### F11 — Wiązania jonowe, kowalencyjne i metaliczne
 
 ```yaml
 kod: F11
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "F06; F08; F09; F10"
 poglebia: "F12–F15; P03–P06"
@@ -298,12 +314,13 @@ stan: "●●○"
 - typ wiązania → właściwości
 - wiązanie koordynacyjne (LO)
 
-**Mamy:** materiał `lekcje_md/F/CHE.01.F11.wiazania_jonowe_kowalencyjne_i_metaliczn.md` (60 KB)
+**Mamy:** materiał `lekcje_md/F/CHE.01.F11.wiazania_jonowe_kowalencyjne_i_metaliczn.md` (66 KB)
 
 #### F12 — Wzory chemiczne
 
 ```yaml
 kod: F12
+status: UZUPEŁNIONE
 poziom: E8
 wymaga: "F09; F11"
 poglebia: "F13; F17; N02–N08"
@@ -322,12 +339,13 @@ stan: "●●○"
 - skład procentowy
 - prawo stałości składu (OWNER)
 
-**Mamy:** materiał `lekcje_md/F/CHE.01.F12.wzory_chemiczne.md` (125 KB)
+**Mamy:** materiał `lekcje_md/F/CHE.01.F12.wzory_chemiczne.md` (129 KB)
 
 #### F13 — Wzory elektronowe (Lewis)
 
 ```yaml
 kod: F13
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "F11; F12"
 poglebia: "F14; F15; F18"
@@ -342,12 +360,13 @@ stan: "●●○"
 - wiązania wielokrotne
 - ładunek formalny i jony (LO)
 
-**Mamy:** materiał `lekcje_md/F/CHE.01.F13.wzory_elektronowe_lewis.md` (30 KB)
+**Mamy:** materiał `lekcje_md/F/CHE.01.F13.wzory_elektronowe_lewis.md` (35 KB)
 
 #### F14 — Geometria cząsteczek (VSEPR)
 
 ```yaml
 kod: F14
+status: UZUPEŁNIONE
 poziom: LO
 wymaga: "F11; F12; F13"
 poglebia: "F15; F18"
@@ -363,16 +382,17 @@ stan: "●●○"
 - wpływ wolnych par
 - hybrydyzacja (wstęp, LO-R)
 
-**Mamy:** materiał `lekcje_md/F/CHE.01.F14.geometria_czasteczek_vsepr.md` (61 KB)
+**Mamy:** materiał `lekcje_md/F/CHE.01.F14.geometria_czasteczek_vsepr.md` (67 KB)
 
 #### F15 — Polarność i oddziaływania
 
 ```yaml
 kod: F15
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "F11; F13; F14"
 poglebia: "F18; R01–R03; J01–J02"
-stan: "◐○○"
+stan: "●●○"
 ```
 
 **Cel:** E8: polarność wiązania i „podobne rozpuszcza podobne”. LO: polarność cząsteczki z geometrii i oddziaływania.
@@ -382,7 +402,7 @@ stan: "◐○○"
 - LO: moment dipolowy, wiązania wodorowe, siły van der Waalsa, wpływ na temperatury wrzenia
 - do rozbudowy
 
-**Mamy:** materiał `lekcje_md/F/CHE.01.F15.polarnosc_i_oddzialywania.md` (18 KB)
+**Mamy:** materiał `lekcje_md/F/CHE.01.F15.polarnosc_i_oddzialywania.md` (27 KB)
 
 ### Faza D — Jak opisujemy przemianę?
 
@@ -390,6 +410,7 @@ stan: "◐○○"
 
 ```yaml
 kod: F16
+status: UZUPEŁNIONE
 poziom: E8
 wymaga: "F01; F02; F03"
 poglebia: "F17; F19"
@@ -404,12 +425,13 @@ stan: "●●○"
 - zapis słowny
 - reakcje egzo- i endoenergetyczne (wstęp)
 
-**Mamy:** materiał `lekcje_md/F/CHE.01.F16.od_obserwacji_do_modelu_reakcji.md` (42 KB)
+**Mamy:** materiał `lekcje_md/F/CHE.01.F16.od_obserwacji_do_modelu_reakcji.md` (48 KB)
 
 #### F17 — Równania reakcji
 
 ```yaml
 kod: F17
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "F12; F16"
 poglebia: "F19; R07; X01–X09"
@@ -425,7 +447,7 @@ stan: "●●○"
 - zapis warunków
 - bilans ładunku (LO)
 
-**Mamy:** materiał `lekcje_md/F/CHE.01.F17.rownania_reakcji.md` (39 KB)
+**Mamy:** materiał `lekcje_md/F/CHE.01.F17.rownania_reakcji.md` (44 KB)
 
 ### Faza E — Integracja i samodzielność
 
@@ -433,6 +455,7 @@ stan: "●●○"
 
 ```yaml
 kod: F18
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "F02; F03; F06; F09; F11; F12"
 poglebia: "F13–F15; N02–N08; R01–R03"
@@ -445,12 +468,13 @@ stan: "◐○○"
 - wzór, typ wiązania, wzór elektronowy, geometria, polarność, właściwości, zastosowania, BHP
 - karta rekordu substancji
 
-**Mamy:** materiał `lekcje_md/F/CHE.01.F18.dossier_substancji.md` (10 KB)
+**Mamy:** materiał `lekcje_md/F/CHE.01.F18.dossier_substancji.md` (14 KB)
 
 #### F19 — Dossier reakcji
 
 ```yaml
 kod: F19
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "F16; F17"
 poglebia: "N02–N08; R07–R09; X01–X09; K01–K11"
@@ -463,12 +487,13 @@ stan: "◐○○"
 - substraty, warunki, obserwacje, typ, energia, BHP, równanie
 - karta rekordu reakcji
 
-**Mamy:** materiał `lekcje_md/F/CHE.01.F19.dossier_reakcji.md` (9 KB)
+**Mamy:** materiał `lekcje_md/F/CHE.01.F19.dossier_reakcji.md` (13 KB)
 
 #### F20 — Klinika błędów fundamentów
 
 ```yaml
 kod: F20
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "zależnie od diagnozy F01–F19"
 poglebia: "F21 i właściciele pojęć"
@@ -482,12 +507,13 @@ stan: "◐○○"
 - procedura: wykryj → nazwij → napraw model
 - kliniki pojedynczych pojęć zostają w swoich lekcjach
 
-**Mamy:** materiał `lekcje_md/F/CHE.01.F20.klinika_bledow_fundamentow.md` (9 KB)
+**Mamy:** materiał `lekcje_md/F/CHE.01.F20.klinika_bledow_fundamentow.md` (13 KB)
 
 #### F21 — Zadania transferowe i diagnostyka
 
 ```yaml
 kod: F21
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "F01–F20 zależnie od problemu"
 poglebia: "dalsze grupy kursu"
@@ -502,7 +528,7 @@ stan: "◐○○"
 - zestawy interleavingu (przekrój, „dlaczego”)
 - system powtórek po F03, F05, F07, F09
 
-**Mamy:** materiał `lekcje_md/F/CHE.01.F21.zadania_transferowe_i_diagnostyka.md` (9 KB)
+**Mamy:** materiał `lekcje_md/F/CHE.01.F21.zadania_transferowe_i_diagnostyka.md` (15 KB)
 
 ---
 
@@ -514,10 +540,11 @@ _pierwsze klasy związków; oparta tylko na F_
 
 ```yaml
 kod: N01
+status: GOTOWE HTML
 poziom: E8
 wymaga: "F02; F03; F16"
 poglebia: "N02; N06; K07"
-stan: "○○○"
+stan: "●●●"
 bylo: "nowa"
 ```
 
@@ -528,7 +555,7 @@ bylo: "nowa"
 - tlen, azot, wodór, CO₂, gazy szlachetne — otrzymywanie, właściwości, wykrywanie, zastosowania
 - zanieczyszczenia powietrza, efekt cieplarniany, dziura ozonowa
 
-**Mamy:** nic — do napisania
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N01_powietrze_i_gazy.md` (29 KB) → HTML przez `md2html.py`
 
 **Dlaczego tu:** cały dział IV podstawy E8 nie miał lekcji; tlen i wodór są potrzebne do tlenków i wodorków
 
@@ -536,6 +563,7 @@ bylo: "nowa"
 
 ```yaml
 kod: N02
+status: GOTOWE HTML
 poziom: E8+LO
 wymaga: "F09; F12; N01"
 poglebia: "N03; N04; J05"
@@ -551,12 +579,13 @@ bylo: "N01"
 - tlenki kwasowe, zasadowe, obojętne, amfoteryczne (LO)
 - reakcje z wodą
 
-**Mamy:** gotowa lekcja `che/md/N01_tlenki.md` (119 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N02.tlenki.md` (38 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N01_tlenki.md` (130 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N02.tlenki.md` (38 KB)
 
 #### N03 — Wodorotlenki i zasady
 
 ```yaml
 kod: N03
+status: GOTOWE HTML
 poziom: E8+LO
 wymaga: "F09; F12; N02"
 poglebia: "J01; J02; J05"
@@ -573,12 +602,13 @@ bylo: "N02"
 - dysocjacja (E8)
 - wskaźniki
 
-**Mamy:** gotowa lekcja `che/md/N02_wodorotlenki.md` (125 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N03.wodorotlenki.md` (31 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N02_wodorotlenki.md` (136 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N03.wodorotlenki.md` (31 KB)
 
 #### N04 — Kwasy
 
 ```yaml
 kod: N04
+status: GOTOWE HTML
 poziom: E8+LO
 wymaga: "F09; F12; N02"
 poglebia: "J01–J03; X04"
@@ -596,12 +626,13 @@ bylo: "N03"
 - metal + kwas (OWNER E8)
 - kwaśne deszcze
 
-**Mamy:** gotowa lekcja `che/md/N03_kwasy.md` (128 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N04.kwasy.md` (35 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N03_kwasy.md` (140 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N04.kwasy.md` (35 KB)
 
 #### N05 — Sole
 
 ```yaml
 kod: N05
+status: GOTOWE HTML
 poziom: E8+LO
 wymaga: "N03; N04"
 poglebia: "J03; J04; J08"
@@ -618,12 +649,13 @@ bylo: "N04"
 - tabela rozpuszczalności i strącanie (E8)
 - zastosowania
 
-**Mamy:** gotowa lekcja `che/md/N04_sole.md` (81 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N05.sole.md` (38 KB)
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N04_sole.md` (90 KB) → HTML przez `md2html.py`; materiał `lekcje_md/N/CHE.02.N05.sole.md` (38 KB)
 
 #### N06 — Wodorki
 
 ```yaml
 kod: N06
+status: GOTOWE HTML
 poziom: E8+LO
 wymaga: "N01; F12"
 poglebia: "N07; P01–P02"
@@ -638,16 +670,17 @@ bylo: "N05"
 - charakter chemiczny w układzie okresowym
 - amoniak, chlorowodór, siarkowodór
 
-**Mamy:** gotowa lekcja `che/md/N05_wodorki.md` (54 KB) → HTML przez `md2html.py`
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/N05_wodorki.md` (61 KB) → HTML przez `md2html.py`
 
 #### N07 — Systematyka nieorganiczna
 
 ```yaml
 kod: N07
+status: POPRAWIONE
 poziom: E8+LO
 wymaga: "N02–N06"
 poglebia: "N08"
-stan: "○○○"
+stan: "◐○○"
 bylo: "N06"
 ```
 
@@ -658,16 +691,17 @@ bylo: "N06"
 - nazewnictwo systematyczne
 - procedura rozpoznawania klasy
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/N/CHE.02.N07.systematyka_nieorganiczna.md` (4 KB)
 
 #### N08 — Mapa przemian „co powstanie?”
 
 ```yaml
 kod: N08
+status: POPRAWIONE
 poziom: E8+LO
 wymaga: "N02–N07"
 poglebia: "J03; X01"
-stan: "○○○"
+stan: "◐○○"
 bylo: "N07"
 ```
 
@@ -678,7 +712,7 @@ bylo: "N07"
 - reakcje między klasami
 - moduł interaktywny dostępny z każdej lekcji N
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/N/CHE.02.N08.mapa_przemian.md` (5 KB)
 
 **Dlaczego tu:** mapa spina N i ma być dostępna z każdej lekcji N, nie tylko na końcu
 
@@ -692,10 +726,11 @@ _ilościowy opis; potrzebny J, X, E, K_
 
 ```yaml
 kod: R01
+status: POPRAWIONE
 poziom: E8
 wymaga: "F03; F15"
 poglebia: "R02; J01"
-stan: "○○○"
+stan: "◐○○"
 ```
 
 **Cel:** Uczeń opisuje wodę jako rozpuszczalnik i rozróżnia roztwór, zawiesinę i koloid.
@@ -706,16 +741,17 @@ stan: "○○○"
 - roztwór, zawiesina, koloid
 - czynniki szybkości rozpuszczania
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/R/CHE.03.R01.woda_i_roztwory.md` (5 KB)
 
 #### R02 — Rozpuszczalność
 
 ```yaml
 kod: R02
+status: POPRAWIONE
 poziom: E8
 wymaga: "R01"
 poglebia: "R03; J10"
-stan: "○○○"
+stan: "◐○○"
 ```
 
 **Cel:** Uczeń odczytuje krzywe rozpuszczalności i rozróżnia roztwór nasycony i nienasycony.
@@ -727,16 +763,17 @@ stan: "○○○"
 - krystalizacja
 - zadania z krzywych
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/R/CHE.03.R02.rozpuszczalnosc.md` (4 KB)
 
 #### R03 — Stężenie procentowe
 
 ```yaml
 kod: R03
+status: GOTOWE HTML
 poziom: E8+LO
 wymaga: "R02"
 poglebia: "R05"
-stan: "●○○"
+stan: "●●●"
 ```
 
 **Cel:** Uczeń oblicza stężenie procentowe, rozcieńcza, zatęża i miesza roztwory.
@@ -747,12 +784,13 @@ stan: "●○○"
 - mieszanie roztworów
 - gęstość (LO)
 
-**Mamy:** materiał `lekcje_md/R/CHE.03.R03+R05.stezenia.md` (29 KB) — wspólny dla R03, R05
+**Mamy:** gotowa lekcja `che-modular/lessons-md/gotowe/R03_woda_roztwory_stezenie_procentowe.md` (35 KB) → HTML przez `md2html.py`; materiał `lekcje_md/R/CHE.03.R03+R05.stezenia.md` (35 KB) — wspólny dla R03, R05
 
 #### R04 — Mol i masa molowa
 
 ```yaml
 kod: R04
+status: UZUPEŁNIONE
 poziom: LO
 wymaga: "F12"
 poglebia: "R05–R09"
@@ -766,7 +804,7 @@ bylo: "R05"
 - mol, liczba Avogadra, masa molowa
 - przeliczenia masa ↔ mol ↔ liczba cząstek
 
-**Mamy:** materiał `lekcje_md/R/CHE.03.R04+R07-R09.stechiometria.md` (32 KB) — wspólny dla R04, R07, R08, R09
+**Mamy:** materiał `lekcje_md/R/CHE.03.R04+R07-R09.stechiometria.md` (42 KB) — wspólny dla R04, R07, R08, R09
 
 **Dlaczego tu:** stężenie molowe wymaga mola — w v0.1 było odwrotnie
 
@@ -774,6 +812,7 @@ bylo: "R05"
 
 ```yaml
 kod: R05
+status: UZUPEŁNIONE
 poziom: LO
 wymaga: "R03; R04"
 poglebia: "J02; J07; E01"
@@ -788,16 +827,17 @@ bylo: "R04"
 - przygotowanie roztworu
 - przeliczanie Cp ↔ Cm z gęstością
 
-**Mamy:** materiał `lekcje_md/R/CHE.03.R03+R05.stezenia.md` (29 KB) — wspólny dla R03, R05
+**Mamy:** materiał `lekcje_md/R/CHE.03.R03+R05.stezenia.md` (35 KB) — wspólny dla R03, R05
 
 #### R06 — Gazy: objętość molowa
 
 ```yaml
 kod: R06
+status: POPRAWIONE
 poziom: LO
 wymaga: "R04"
 poglebia: "R07"
-stan: "○○○"
+stan: "◐○○"
 bylo: "nowa"
 ```
 
@@ -808,7 +848,7 @@ bylo: "nowa"
 - równanie Clapeyrona
 - gęstość gazu
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/R/CHE.03.R06.gazy_objetosc_molowa.md` (4 KB)
 
 **Dlaczego tu:** stechiometria z objętością gazu nie miała właściciela
 
@@ -816,6 +856,7 @@ bylo: "nowa"
 
 ```yaml
 kod: R07
+status: UZUPEŁNIONE
 poziom: LO
 wymaga: "F17; R04; R06"
 poglebia: "R08; R09"
@@ -830,12 +871,13 @@ bylo: "R06"
 - proporcje
 - skład mieszanin
 
-**Mamy:** materiał `lekcje_md/R/CHE.03.R04+R07-R09.stechiometria.md` (32 KB) — wspólny dla R04, R07, R08, R09
+**Mamy:** materiał `lekcje_md/R/CHE.03.R04+R07-R09.stechiometria.md` (42 KB) — wspólny dla R04, R07, R08, R09
 
 #### R08 — Reagent ograniczający
 
 ```yaml
 kod: R08
+status: UZUPEŁNIONE
 poziom: LO
 wymaga: "R07"
 poglebia: "R09"
@@ -850,12 +892,13 @@ bylo: "R07"
 - reagent ograniczający
 - skład po reakcji
 
-**Mamy:** materiał `lekcje_md/R/CHE.03.R04+R07-R09.stechiometria.md` (32 KB) — wspólny dla R04, R07, R08, R09
+**Mamy:** materiał `lekcje_md/R/CHE.03.R04+R07-R09.stechiometria.md` (42 KB) — wspólny dla R04, R07, R08, R09
 
 #### R09 — Wydajność reakcji
 
 ```yaml
 kod: R09
+status: UZUPEŁNIONE
 poziom: LO
 wymaga: "R07; R08"
 poglebia: "K11"
@@ -871,7 +914,7 @@ bylo: "R08"
 - czystość substratów
 - zadania wieloetapowe
 
-**Mamy:** materiał `lekcje_md/R/CHE.03.R04+R07-R09.stechiometria.md` (32 KB) — wspólny dla R04, R07, R08, R09
+**Mamy:** materiał `lekcje_md/R/CHE.03.R04+R07-R09.stechiometria.md` (42 KB) — wspólny dla R04, R07, R08, R09
 
 ---
 
@@ -883,10 +926,11 @@ _wymaga N (substancje) i R (stężenia)_
 
 ```yaml
 kod: J01
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "F15; N03–N05; R01"
 poglebia: "J02–J04; J06"
-stan: "○○○"
+stan: "◐○○"
 ```
 
 **Cel:** Uczeń zapisuje równania dysocjacji i rozróżnia elektrolity mocne i słabe.
@@ -897,16 +941,17 @@ stan: "○○○"
 - dysocjacja stopniowa
 - stopień dysocjacji (LO)
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/J/CHE.04.J01.dysocjacja_elektrolityczna.md` (22 KB)
 
 #### J02 — pH i odczyn
 
 ```yaml
 kod: J02
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "J01"
 poglebia: "J07; J09; J12"
-stan: "○○○"
+stan: "◐○○"
 ```
 
 **Cel:** Uczeń określa odczyn, posługuje się skalą pH i wskaźnikami; LO: oblicza pH.
@@ -917,16 +962,17 @@ stan: "○○○"
 - wskaźniki
 - obliczenia pH roztworów mocnych elektrolitów (LO)
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/J/CHE.04.J02.odczyn_i_ph.md` (14 KB)
 
 #### J03 — Reakcje jonowe
 
 ```yaml
 kod: J03
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "J01"
 poglebia: "J04; J11"
-stan: "○○○"
+stan: "◐○○"
 ```
 
 **Cel:** Uczeń zapisuje reakcje w formie cząsteczkowej, jonowej pełnej i skróconej.
@@ -936,16 +982,17 @@ stan: "○○○"
 - zobojętnianie
 - kiedy reakcja jonowa zachodzi
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/J/CHE.04.J03.reakcje_jonowe.md` (10 KB)
 
 #### J04 — Strącanie osadów
 
 ```yaml
 kod: J04
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "J03; N05"
 poglebia: "J10; J11"
-stan: "○○○"
+stan: "◐○○"
 ```
 
 **Cel:** Uczeń przewiduje powstanie osadu z tabeli rozpuszczalności.
@@ -955,16 +1002,17 @@ stan: "○○○"
 - reakcje strąceniowe
 - dobór odczynników
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/J/CHE.04.J04.stracanie_osadow.md` (9 KB)
 
 #### J05 — Amfoteryczność
 
 ```yaml
 kod: J05
+status: UZUPEŁNIONE
 poziom: LO
 wymaga: "N02; N03; J03"
 poglebia: "P03"
-stan: "○○○"
+stan: "◐○○"
 ```
 
 **Cel:** Uczeń rozpoznaje substancje amfoteryczne i zapisuje ich reakcje.
@@ -974,16 +1022,17 @@ stan: "○○○"
 - reakcje z kwasem i zasadą
 - kompleksy hydroksylowe
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/J/CHE.04.J05.amfoterycznosc.md` (9 KB)
 
 #### J06 — Równowagi kwasowo-zasadowe
 
 ```yaml
 kod: J06
+status: UZUPEŁNIONE
 poziom: LO
 wymaga: "J01; J02"
 poglebia: "J07"
-stan: "○○○"
+stan: "◐○○"
 ```
 
 **Cel:** Uczeń stosuje teorię Brønsteda jakościowo.
@@ -993,16 +1042,17 @@ stan: "○○○"
 - pary sprzężone
 - moc kwasów i zasad — opis jakościowy
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/J/CHE.04.J06.rownowagi_kwasowo_zasadowe.md` (11 KB)
 
 #### J07 — Ka, Kb i Kw
 
 ```yaml
 kod: J07
+status: POPRAWIONE
 poziom: LO
 wymaga: "J06; K09"
 poglebia: "J08; J09"
-stan: "○○○"
+stan: "◐○○"
 bylo: "J09"
 ```
 
@@ -1014,7 +1064,7 @@ bylo: "J09"
 - prawo rozcieńczeń Ostwalda
 - pH słabych elektrolitów
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/J/CHE.04.J07.ka_kb_kw.md` (3 KB)
 
 **Dlaczego tu:** stałe są potrzebne do hydrolizy i buforów, więc idą przed nimi
 
@@ -1022,10 +1072,11 @@ bylo: "J09"
 
 ```yaml
 kod: J08
+status: POPRAWIONE
 poziom: LO
 wymaga: "J07; N05"
 poglebia: "J09"
-stan: "○○○"
+stan: "◐○○"
 bylo: "J07"
 ```
 
@@ -1036,16 +1087,17 @@ bylo: "J07"
 - przewidywanie odczynu
 - obliczenia (LO-R)
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/J/CHE.04.J08.hydroliza_soli.md` (3 KB)
 
 #### J09 — Bufory
 
 ```yaml
 kod: J09
+status: POPRAWIONE
 poziom: LO
 wymaga: "J07; J08"
 poglebia: "J12"
-stan: "○○○"
+stan: "◐○○"
 bylo: "J08"
 ```
 
@@ -1056,16 +1108,17 @@ bylo: "J08"
 - bufory w organizmie
 - pH buforu
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/J/CHE.04.J09.bufory.md` (3 KB)
 
 #### J10 — Iloczyn rozpuszczalności Ksp
 
 ```yaml
 kod: J10
+status: POPRAWIONE
 poziom: LO
 wymaga: "J04; K09"
 poglebia: "J11"
-stan: "○○○"
+stan: "◐○○"
 ```
 
 **Cel:** Uczeń oblicza rozpuszczalność z Ksp i warunek strącania.
@@ -1076,16 +1129,17 @@ stan: "○○○"
 - warunek strącania
 - efekt wspólnego jonu
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/J/CHE.04.J10.iloczyn_rozpuszczalnosci_ksp.md` (3 KB)
 
 #### J11 — Identyfikacja jonów
 
 ```yaml
 kod: J11
+status: POPRAWIONE
 poziom: E8+LO
 wymaga: "J03; J04"
 poglebia: "J12"
-stan: "○○○"
+stan: "◐○○"
 ```
 
 **Cel:** Uczeń planuje wykrycie jonów reakcjami charakterystycznymi.
@@ -1095,16 +1149,17 @@ stan: "○○○"
 - reakcje charakterystyczne kationów i anionów
 - projekt doświadczenia
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/J/CHE.04.J11.identyfikacja_jonow.md` (4 KB)
 
 #### J12 — Miareczkowanie
 
 ```yaml
 kod: J12
+status: POPRAWIONE
 poziom: LO
 wymaga: "J02; R05"
 poglebia: "—"
-stan: "○○○"
+stan: "◐○○"
 ```
 
 **Cel:** Uczeń przeprowadza i interpretuje miareczkowanie alkacymetryczne.
@@ -1115,7 +1170,7 @@ stan: "○○○"
 - punkt równoważnikowy i wskaźnik
 - obliczenia
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/J/CHE.04.J12.miareczkowanie.md` (4 KB)
 
 ---
 
@@ -1127,6 +1182,7 @@ _wymaga F (wiązania, wzory) i częściowo J (kwasowość)_
 
 ```yaml
 kod: O01
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "F11; F12; F13"
 poglebia: "O02–O25"
@@ -1142,7 +1198,7 @@ bylo: "O01 + część O20"
 - szereg homologiczny
 - podstawy nazewnictwa (OWNER podstaw)
 
-**Mamy:** materiał `lekcje_md/O/CHE.05.O01-O07.weglowodory.md` (32 KB) — wspólny dla O01, O02, O03, O04, O05, O06, O07
+**Mamy:** materiał `lekcje_md/O/CHE.05.O01-O07.weglowodory.md` (41 KB) — wspólny dla O01, O02, O03, O04, O05, O06, O07
 
 **Dlaczego tu:** nazewnictwo to warstwa — podstawy na początku, zbiorcza procedura (O24) na końcu
 
@@ -1150,6 +1206,7 @@ bylo: "O01 + część O20"
 
 ```yaml
 kod: O02
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "O01"
 poglebia: "O03; O06"
@@ -1165,12 +1222,13 @@ stan: "●○○"
 - reakcja podstawienia (halogenowanie)
 - źródła (ropa, gaz)
 
-**Mamy:** materiał `lekcje_md/O/CHE.05.O01-O07.weglowodory.md` (32 KB) — wspólny dla O01, O02, O03, O04, O05, O06, O07
+**Mamy:** materiał `lekcje_md/O/CHE.05.O01-O07.weglowodory.md` (41 KB) — wspólny dla O01, O02, O03, O04, O05, O06, O07
 
 #### O03 — Izomeria
 
 ```yaml
 kod: O03
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "O02"
 poglebia: "O04; O15; O18"
@@ -1184,7 +1242,7 @@ bylo: "O06"
 - izomeria łańcuchowa (od alkanów), położenia, funkcyjna
 - geometryczna cis-trans i optyczna (LO)
 
-**Mamy:** materiał `lekcje_md/O/CHE.05.O01-O07.weglowodory.md` (32 KB) — wspólny dla O01, O02, O03, O04, O05, O06, O07
+**Mamy:** materiał `lekcje_md/O/CHE.05.O01-O07.weglowodory.md` (41 KB) — wspólny dla O01, O02, O03, O04, O05, O06, O07
 
 **Dlaczego tu:** izomeria łańcuchowa pojawia się już przy alkanach
 
@@ -1192,6 +1250,7 @@ bylo: "O06"
 
 ```yaml
 kod: O04
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "O02; O03"
 poglebia: "O05; O21"
@@ -1208,12 +1267,13 @@ bylo: "O03"
 - polimeryzacja (wstęp)
 - odbarwianie wody bromowej
 
-**Mamy:** materiał `lekcje_md/O/CHE.05.O01-O07.weglowodory.md` (32 KB) — wspólny dla O01, O02, O03, O04, O05, O06, O07
+**Mamy:** materiał `lekcje_md/O/CHE.05.O01-O07.weglowodory.md` (41 KB) — wspólny dla O01, O02, O03, O04, O05, O06, O07
 
 #### O05 — Alkiny
 
 ```yaml
 kod: O05
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "O04"
 poglebia: "O06"
@@ -1228,12 +1288,13 @@ bylo: "O04"
 - etyn — otrzymywanie z karbidu, właściwości
 - addycja
 
-**Mamy:** materiał `lekcje_md/O/CHE.05.O01-O07.weglowodory.md` (32 KB) — wspólny dla O01, O02, O03, O04, O05, O06, O07
+**Mamy:** materiał `lekcje_md/O/CHE.05.O01-O07.weglowodory.md` (41 KB) — wspólny dla O01, O02, O03, O04, O05, O06, O07
 
 #### O06 — Spalanie węglowodorów
 
 ```yaml
 kod: O06
+status: UZUPEŁNIONE
 poziom: E8
 wymaga: "O02; O04; O05; F17"
 poglebia: "K01"
@@ -1249,12 +1310,13 @@ bylo: "O07"
 - paliwa
 - BHP (CO)
 
-**Mamy:** materiał `lekcje_md/O/CHE.05.O01-O07.weglowodory.md` (32 KB) — wspólny dla O01, O02, O03, O04, O05, O06, O07
+**Mamy:** materiał `lekcje_md/O/CHE.05.O01-O07.weglowodory.md` (41 KB) — wspólny dla O01, O02, O03, O04, O05, O06, O07
 
 #### O07 — Areny
 
 ```yaml
 kod: O07
+status: UZUPEŁNIONE
 poziom: LO
 wymaga: "O04"
 poglebia: "O09; O25"
@@ -1269,16 +1331,17 @@ bylo: "O05"
 - substytucja elektrofilowa
 - homologi benzenu
 
-**Mamy:** materiał `lekcje_md/O/CHE.05.O01-O07.weglowodory.md` (32 KB) — wspólny dla O01, O02, O03, O04, O05, O06, O07
+**Mamy:** materiał `lekcje_md/O/CHE.05.O01-O07.weglowodory.md` (41 KB) — wspólny dla O01, O02, O03, O04, O05, O06, O07
 
 #### O08 — Alkohole
 
 ```yaml
 kod: O08
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "O02"
 poglebia: "O10–O12"
-stan: "○○○"
+stan: "●○○"
 ```
 
 **Cel:** Uczeń opisuje budowę, właściwości i reakcje alkoholi.
@@ -1291,16 +1354,17 @@ stan: "○○○"
 - utlenianie (LO)
 - rzędowość (LO)
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/O/CHE.05.O08+O11+O12.alkohole_kwasy_estry.md` (12 KB) — wspólny dla O08, O11, O12
 
 #### O09 — Fenole
 
 ```yaml
 kod: O09
+status: POPRAWIONE
 poziom: LO
 wymaga: "O07; O08"
 poglebia: "—"
-stan: "○○○"
+stan: "◐○○"
 bylo: "nowa"
 ```
 
@@ -1312,16 +1376,17 @@ bylo: "nowa"
 - reakcje
 - porównanie z alkoholami
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/O/CHE.05.O09.fenole.md` (3 KB)
 
 #### O10 — Aldehydy i ketony
 
 ```yaml
 kod: O10
+status: POPRAWIONE
 poziom: LO
 wymaga: "O08"
 poglebia: "O11; O15"
-stan: "○○○"
+stan: "◐○○"
 bylo: "nowa"
 ```
 
@@ -1332,16 +1397,17 @@ bylo: "nowa"
 - otrzymywanie z alkoholi
 - próba Tollensa, Trommera
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/O/CHE.05.O10.aldehydy_i_ketony.md` (3 KB)
 
 #### O11 — Kwasy karboksylowe
 
 ```yaml
 kod: O11
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "O08; J01"
 poglebia: "O12; O13"
-stan: "○○○"
+stan: "●○○"
 bylo: "O09"
 ```
 
@@ -1354,16 +1420,17 @@ bylo: "O09"
 - reakcje z metalami, zasadami, tlenkami
 - hydroksykwasy i aminokwasy (wstęp, LO)
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/O/CHE.05.O08+O11+O12.alkohole_kwasy_estry.md` (12 KB) — wspólny dla O08, O11, O12
 
 #### O12 — Estry
 
 ```yaml
 kod: O12
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "O08; O11"
 poglebia: "O13"
-stan: "○○○"
+stan: "●○○"
 bylo: "O10"
 ```
 
@@ -1375,12 +1442,13 @@ bylo: "O10"
 - hydroliza kwasowa i zasadowa
 - zastosowania
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/O/CHE.05.O08+O11+O12.alkohole_kwasy_estry.md` (12 KB) — wspólny dla O08, O11, O12
 
 #### O13 — Tłuszcze, mydła i detergenty
 
 ```yaml
 kod: O13
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "O11; O12"
 poglebia: "O22; O23"
@@ -1397,7 +1465,7 @@ bylo: "O11 + nowe"
 - budowa i działanie mydła i detergentów
 - twarda woda
 
-**Mamy:** materiał `lekcje_md/O/CHE.05.O13+O15-O20+O22-O23.biochemia.md` (33 KB) — wspólny dla O13, O15, O16, O17, O18, O19, O20, O22, O23
+**Mamy:** materiał `lekcje_md/O/CHE.05.O13+O15-O20+O22-O23.biochemia.md` (46 KB) — wspólny dla O13, O15, O16, O17, O18, O19, O20, O22, O23
 
 **Dlaczego tu:** mydła nie miały właściciela; do weryfikacji, czy są w E8 po 2024
 
@@ -1405,10 +1473,11 @@ bylo: "O11 + nowe"
 
 ```yaml
 kod: O14
+status: POPRAWIONE
 poziom: LO
 wymaga: "O01; J06"
 poglebia: "O18"
-stan: "○○○"
+stan: "◐○○"
 bylo: "nowa"
 ```
 
@@ -1419,12 +1488,13 @@ bylo: "nowa"
 - amidy
 - mocznik
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/O/CHE.05.O14.aminy_i_amidy.md` (3 KB)
 
 #### O15 — Cukry — monosacharydy
 
 ```yaml
 kod: O15
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "O08; O10"
 poglebia: "O16; O17"
@@ -1440,12 +1510,13 @@ bylo: "O12"
 - wykrywanie
 - fotosynteza (wstęp)
 
-**Mamy:** materiał `lekcje_md/O/CHE.05.O13+O15-O20+O22-O23.biochemia.md` (33 KB) — wspólny dla O13, O15, O16, O17, O18, O19, O20, O22, O23
+**Mamy:** materiał `lekcje_md/O/CHE.05.O13+O15-O20+O22-O23.biochemia.md` (46 KB) — wspólny dla O13, O15, O16, O17, O18, O19, O20, O22, O23
 
 #### O16 — Cukry — disacharydy
 
 ```yaml
 kod: O16
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "O15"
 poglebia: "O17"
@@ -1460,12 +1531,13 @@ bylo: "O13"
 - hydroliza
 - cukry redukujące i nieredukujące (LO)
 
-**Mamy:** materiał `lekcje_md/O/CHE.05.O13+O15-O20+O22-O23.biochemia.md` (33 KB) — wspólny dla O13, O15, O16, O17, O18, O19, O20, O22, O23
+**Mamy:** materiał `lekcje_md/O/CHE.05.O13+O15-O20+O22-O23.biochemia.md` (46 KB) — wspólny dla O13, O15, O16, O17, O18, O19, O20, O22, O23
 
 #### O17 — Cukry — polisacharydy
 
 ```yaml
 kod: O17
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "O16"
 poglebia: "O23"
@@ -1480,12 +1552,13 @@ bylo: "O14"
 - wykrywanie skrobi jodem
 - znaczenie
 
-**Mamy:** materiał `lekcje_md/O/CHE.05.O13+O15-O20+O22-O23.biochemia.md` (33 KB) — wspólny dla O13, O15, O16, O17, O18, O19, O20, O22, O23
+**Mamy:** materiał `lekcje_md/O/CHE.05.O13+O15-O20+O22-O23.biochemia.md` (46 KB) — wspólny dla O13, O15, O16, O17, O18, O19, O20, O22, O23
 
 #### O18 — Aminokwasy
 
 ```yaml
 kod: O18
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "O11; O14"
 poglebia: "O19"
@@ -1502,12 +1575,13 @@ bylo: "O15"
 - wiązanie peptydowe
 - peptydy
 
-**Mamy:** materiał `lekcje_md/O/CHE.05.O13+O15-O20+O22-O23.biochemia.md` (33 KB) — wspólny dla O13, O15, O16, O17, O18, O19, O20, O22, O23
+**Mamy:** materiał `lekcje_md/O/CHE.05.O13+O15-O20+O22-O23.biochemia.md` (46 KB) — wspólny dla O13, O15, O16, O17, O18, O19, O20, O22, O23
 
 #### O19 — Białka — struktura
 
 ```yaml
 kod: O19
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "O18"
 poglebia: "O20"
@@ -1522,12 +1596,13 @@ bylo: "O16"
 - denaturacja i koagulacja
 - czynniki denaturujące
 
-**Mamy:** materiał `lekcje_md/O/CHE.05.O13+O15-O20+O22-O23.biochemia.md` (33 KB) — wspólny dla O13, O15, O16, O17, O18, O19, O20, O22, O23
+**Mamy:** materiał `lekcje_md/O/CHE.05.O13+O15-O20+O22-O23.biochemia.md` (46 KB) — wspólny dla O13, O15, O16, O17, O18, O19, O20, O22, O23
 
 #### O20 — Białka — reakcje charakterystyczne
 
 ```yaml
 kod: O20
+status: UZUPEŁNIONE
 poziom: E8+LO
 wymaga: "O19"
 poglebia: "O23"
@@ -1541,16 +1616,17 @@ bylo: "O17"
 - reakcja ksantoproteinowa i biuretowa
 - projekt doświadczenia
 
-**Mamy:** materiał `lekcje_md/O/CHE.05.O13+O15-O20+O22-O23.biochemia.md` (33 KB) — wspólny dla O13, O15, O16, O17, O18, O19, O20, O22, O23
+**Mamy:** materiał `lekcje_md/O/CHE.05.O13+O15-O20+O22-O23.biochemia.md` (46 KB) — wspólny dla O13, O15, O16, O17, O18, O19, O20, O22, O23
 
 #### O21 — Polimery i tworzywa
 
 ```yaml
 kod: O21
+status: POPRAWIONE
 poziom: E8+LO
 wymaga: "O04; O12"
 poglebia: "—"
-stan: "○○○"
+stan: "◐○○"
 bylo: "nowa"
 ```
 
@@ -1562,12 +1638,13 @@ bylo: "nowa"
 - tworzywa i środowisko
 - recykling
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/O/CHE.05.O21.polimery_i_tworzywa.md` (4 KB)
 
 #### O22 — Witaminy i sole mineralne
 
 ```yaml
 kod: O22
+status: UZUPEŁNIONE
 poziom: E8
 wymaga: "O13"
 poglebia: "—"
@@ -1581,12 +1658,13 @@ bylo: "O18"
 - witaminy rozpuszczalne w wodzie i tłuszczach
 - makro- i mikroelementy — tylko chemiczne odniesienie do biologii
 
-**Mamy:** materiał `lekcje_md/O/CHE.05.O13+O15-O20+O22-O23.biochemia.md` (33 KB) — wspólny dla O13, O15, O16, O17, O18, O19, O20, O22, O23
+**Mamy:** materiał `lekcje_md/O/CHE.05.O13+O15-O20+O22-O23.biochemia.md` (46 KB) — wspólny dla O13, O15, O16, O17, O18, O19, O20, O22, O23
 
 #### O23 — Metabolizm
 
 ```yaml
 kod: O23
+status: UZUPEŁNIONE
 poziom: LO
 wymaga: "O15–O20"
 poglebia: "—"
@@ -1600,16 +1678,17 @@ bylo: "O19"
 - reakcje i energia w metabolizmie
 - oddychanie komórkowe chemicznie — odniesienie do biologii
 
-**Mamy:** materiał `lekcje_md/O/CHE.05.O13+O15-O20+O22-O23.biochemia.md` (33 KB) — wspólny dla O13, O15, O16, O17, O18, O19, O20, O22, O23
+**Mamy:** materiał `lekcje_md/O/CHE.05.O13+O15-O20+O22-O23.biochemia.md` (46 KB) — wspólny dla O13, O15, O16, O17, O18, O19, O20, O22, O23
 
 #### O24 — Nazewnictwo — procedura zbiorcza
 
 ```yaml
 kod: O24
+status: POPRAWIONE
 poziom: LO
 wymaga: "O01–O21"
 poglebia: "O25"
-stan: "○○○"
+stan: "◐○○"
 bylo: "O20"
 ```
 
@@ -1621,16 +1700,17 @@ bylo: "O20"
 - lokanty
 - związki wielofunkcyjne
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/O/CHE.05.O24.nazewnictwo_procedura_zbiorcza.md` (4 KB)
 
 #### O25 — Mechanizmy reakcji organicznych
 
 ```yaml
 kod: O25
+status: POPRAWIONE
 poziom: LO
 wymaga: "O24"
 poglebia: "—"
-stan: "○○○"
+stan: "◐○○"
 bylo: "O21"
 ```
 
@@ -1642,7 +1722,7 @@ bylo: "O21"
 - eliminacja
 - zapis strzałkowy
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/O/CHE.05.O25.mechanizmy_reakcji_organicznych.md` (4 KB)
 
 ---
 
@@ -1654,6 +1734,7 @@ _wymaga F09, N, J_
 
 ```yaml
 kod: X01
+status: POPRAWIONE
 poziom: LO
 wymaga: "F09; F17"
 poglebia: "X02–X09"
@@ -1669,7 +1750,7 @@ bylo: "X01 + X02"
 - utleniacz, reduktor
 - rozpoznawanie reakcji redoks
 
-**Mamy:** materiał `lekcje_md/X/CHE.06.X01-X09.redoks.md` (35 KB) — wspólny dla X01, X02, X03, X04, X05, X06, X07, X08, X09
+**Mamy:** materiał `lekcje_md/X/CHE.06.X01-X09.redoks.md` (38 KB) — wspólny dla X01, X02, X03, X04, X05, X06, X07, X08, X09
 
 **Dlaczego tu:** stary X01 dublował F09 — definicja zostaje tylko w F09
 
@@ -1677,6 +1758,7 @@ bylo: "X01 + X02"
 
 ```yaml
 kod: X02
+status: POPRAWIONE
 poziom: LO
 wymaga: "X01"
 poglebia: "X05–X07"
@@ -1691,12 +1773,13 @@ bylo: "X05"
 - metale, węgiel, wodór
 - zależność od środowiska
 
-**Mamy:** materiał `lekcje_md/X/CHE.06.X01-X09.redoks.md` (35 KB) — wspólny dla X01, X02, X03, X04, X05, X06, X07, X08, X09
+**Mamy:** materiał `lekcje_md/X/CHE.06.X01-X09.redoks.md` (38 KB) — wspólny dla X01, X02, X03, X04, X05, X06, X07, X08, X09
 
 #### X03 — Bilans elektronowy
 
 ```yaml
 kod: X03
+status: POPRAWIONE
 poziom: LO
 wymaga: "X01"
 poglebia: "X05–X08"
@@ -1710,12 +1793,13 @@ stan: "●○○"
 - bilans elektronów
 - procedura krok po kroku
 
-**Mamy:** materiał `lekcje_md/X/CHE.06.X01-X09.redoks.md` (35 KB) — wspólny dla X01, X02, X03, X04, X05, X06, X07, X08, X09
+**Mamy:** materiał `lekcje_md/X/CHE.06.X01-X09.redoks.md` (38 KB) — wspólny dla X01, X02, X03, X04, X05, X06, X07, X08, X09
 
 #### X04 — Szereg aktywności metali
 
 ```yaml
 kod: X04
+status: POPRAWIONE
 poziom: E8+LO
 wymaga: "N04; X01"
 poglebia: "E02"
@@ -1729,12 +1813,13 @@ stan: "●○○"
 - metal + kwas, metal + sól
 - metale szlachetne
 
-**Mamy:** materiał `lekcje_md/X/CHE.06.X01-X09.redoks.md` (35 KB) — wspólny dla X01, X02, X03, X04, X05, X06, X07, X08, X09
+**Mamy:** materiał `lekcje_md/X/CHE.06.X01-X09.redoks.md` (38 KB) — wspólny dla X01, X02, X03, X04, X05, X06, X07, X08, X09
 
 #### X05 — Redoks jonowy
 
 ```yaml
 kod: X05
+status: POPRAWIONE
 poziom: LO
 wymaga: "X03; J03"
 poglebia: "X06; X07"
@@ -1748,12 +1833,13 @@ bylo: "X06"
 - zapis jonowy redoks
 - bilans ładunku i elektronów
 
-**Mamy:** materiał `lekcje_md/X/CHE.06.X01-X09.redoks.md` (35 KB) — wspólny dla X01, X02, X03, X04, X05, X06, X07, X08, X09
+**Mamy:** materiał `lekcje_md/X/CHE.06.X01-X09.redoks.md` (38 KB) — wspólny dla X01, X02, X03, X04, X05, X06, X07, X08, X09
 
 #### X06 — Redoks w środowisku kwasowym
 
 ```yaml
 kod: X06
+status: POPRAWIONE
 poziom: LO
 wymaga: "X05"
 poglebia: "E04"
@@ -1767,12 +1853,13 @@ bylo: "X07"
 - metoda połówkowa z H⁺ i H₂O
 - KMnO₄ w kwasie
 
-**Mamy:** materiał `lekcje_md/X/CHE.06.X01-X09.redoks.md` (35 KB) — wspólny dla X01, X02, X03, X04, X05, X06, X07, X08, X09
+**Mamy:** materiał `lekcje_md/X/CHE.06.X01-X09.redoks.md` (38 KB) — wspólny dla X01, X02, X03, X04, X05, X06, X07, X08, X09
 
 #### X07 — Redoks w środowisku zasadowym
 
 ```yaml
 kod: X07
+status: POPRAWIONE
 poziom: LO
 wymaga: "X05"
 poglebia: "—"
@@ -1786,12 +1873,13 @@ bylo: "X08"
 - metoda połówkowa z OH⁻ i H₂O
 - KMnO₄ w środowisku obojętnym i zasadowym
 
-**Mamy:** materiał `lekcje_md/X/CHE.06.X01-X09.redoks.md` (35 KB) — wspólny dla X01, X02, X03, X04, X05, X06, X07, X08, X09
+**Mamy:** materiał `lekcje_md/X/CHE.06.X01-X09.redoks.md` (38 KB) — wspólny dla X01, X02, X03, X04, X05, X06, X07, X08, X09
 
 #### X08 — Dysproporcjonowanie i synproporcjonowanie
 
 ```yaml
 kod: X08
+status: POPRAWIONE
 poziom: LO
 wymaga: "X03"
 poglebia: "—"
@@ -1806,12 +1894,13 @@ bylo: "X09"
 - przykłady (Cl₂ w zasadzie, H₂O₂)
 - bilans
 
-**Mamy:** materiał `lekcje_md/X/CHE.06.X01-X09.redoks.md` (35 KB) — wspólny dla X01, X02, X03, X04, X05, X06, X07, X08, X09
+**Mamy:** materiał `lekcje_md/X/CHE.06.X01-X09.redoks.md` (38 KB) — wspólny dla X01, X02, X03, X04, X05, X06, X07, X08, X09
 
 #### X09 — Redoks przekrojowy
 
 ```yaml
 kod: X09
+status: POPRAWIONE
 poziom: LO
 wymaga: "X01–X08"
 poglebia: "E01–E06"
@@ -1825,7 +1914,7 @@ bylo: "X10"
 - zadania łączące
 - diagnostyka błędów redoks
 
-**Mamy:** materiał `lekcje_md/X/CHE.06.X01-X09.redoks.md` (35 KB) — wspólny dla X01, X02, X03, X04, X05, X06, X07, X08, X09
+**Mamy:** materiał `lekcje_md/X/CHE.06.X01-X09.redoks.md` (38 KB) — wspólny dla X01, X02, X03, X04, X05, X06, X07, X08, X09
 
 ---
 
@@ -1837,10 +1926,11 @@ _wymaga X + J + R_
 
 ```yaml
 kod: E01
+status: POPRAWIONE
 poziom: LO
 wymaga: "X03; J01; R05"
 poglebia: "E02; E03"
-stan: "○○○"
+stan: "◐○○"
 ```
 
 **Cel:** Uczeń opisuje budowę i działanie ogniwa i zapisuje jego schemat.
@@ -1851,16 +1941,17 @@ stan: "○○○"
 - klucz elektrolityczny
 - schemat ogniwa
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/E/CHE.06.E01.ogniwo_galwaniczne.md` (3 KB)
 
 #### E02 — Potencjały elektrodowe
 
 ```yaml
 kod: E02
+status: POPRAWIONE
 poziom: LO
 wymaga: "E01; X04"
 poglebia: "E03"
-stan: "○○○"
+stan: "◐○○"
 ```
 
 **Cel:** Uczeń korzysta z szeregu elektrochemicznego.
@@ -1870,16 +1961,17 @@ stan: "○○○"
 - elektroda wodorowa
 - szereg elektrochemiczny
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/E/CHE.06.E02.potencjaly_elektrodowe.md` (3 KB)
 
 #### E03 — SEM
 
 ```yaml
 kod: E03
+status: POPRAWIONE
 poziom: LO
 wymaga: "E02"
 poglebia: "E06"
-stan: "○○○"
+stan: "◐○○"
 ```
 
 **Cel:** Uczeń oblicza SEM i przewiduje samorzutność reakcji.
@@ -1889,16 +1981,17 @@ stan: "○○○"
 - kierunek reakcji
 - równanie Nernsta (LO-R, wstęp)
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/E/CHE.06.E03.sem.md` (2 KB)
 
 #### E04 — Elektroliza
 
 ```yaml
 kod: E04
+status: POPRAWIONE
 poziom: LO
 wymaga: "E02; X06"
 poglebia: "—"
-stan: "○○○"
+stan: "◐○○"
 ```
 
 **Cel:** Uczeń zapisuje procesy elektrodowe i stosuje prawa Faradaya.
@@ -1908,16 +2001,17 @@ stan: "○○○"
 - kolejność wydzielania
 - prawa Faradaya
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/E/CHE.06.E04.elektroliza.md` (3 KB)
 
 #### E05 — Korozja
 
 ```yaml
 kod: E05
+status: POPRAWIONE
 poziom: E8+LO
 wymaga: "X04"
 poglebia: "—"
-stan: "○○○"
+stan: "◐○○"
 ```
 
 **Cel:** Uczeń wyjaśnia korozję i dobiera ochronę.
@@ -1927,16 +2021,17 @@ stan: "○○○"
 - czynniki
 - ochrona (powłoki, protektor)
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/E/CHE.06.E05.korozja.md` (3 KB)
 
 #### E06 — Źródła energii i akumulatory
 
 ```yaml
 kod: E06
+status: POPRAWIONE
 poziom: LO
 wymaga: "E03"
 poglebia: "—"
-stan: "○○○"
+stan: "◐○○"
 ```
 
 **Cel:** Uczeń porównuje baterie, akumulatory i ogniwa paliwowe.
@@ -1946,7 +2041,7 @@ stan: "○○○"
 - akumulator ołowiowy i litowo-jonowy
 - ogniwo paliwowe
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/E/CHE.06.E06.zrodla_energii_akumulatory.md` (3 KB)
 
 ---
 
@@ -1958,10 +2053,11 @@ _wymaga R; J07–J10 korzystają z K09 (stała równowagi)_
 
 ```yaml
 kod: K01
+status: POPRAWIONE
 poziom: E8+LO
 wymaga: "F16; F17"
 poglebia: "K02; K06"
-stan: "○○○"
+stan: "◐○○"
 bylo: "K05"
 ```
 
@@ -1971,7 +2067,7 @@ bylo: "K05"
 - egzo- i endoenergetyczne
 - wykres energetyczny — jakościowo
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/K/CHE.07.K01.energia_reakcji.md` (21 KB)
 
 **Dlaczego tu:** energia przed szybkością — energia aktywacji wymaga wykresu energetycznego
 
@@ -1979,10 +2075,11 @@ bylo: "K05"
 
 ```yaml
 kod: K02
+status: POPRAWIONE
 poziom: LO
 wymaga: "K01"
 poglebia: "K03"
-stan: "○○○"
+stan: "◐○○"
 bylo: "K06"
 ```
 
@@ -1994,16 +2091,17 @@ bylo: "K06"
 - prawo Hessa
 - energia wiązań
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/K/CHE.07.K02.entalpia.md` (9 KB)
 
 #### K03 — Kalorymetria i przemiany fazowe
 
 ```yaml
 kod: K03
+status: POPRAWIONE
 poziom: LO
 wymaga: "K02"
 poglebia: "—"
-stan: "○○○"
+stan: "◐○○"
 bylo: "K10"
 ```
 
@@ -2015,16 +2113,17 @@ bylo: "K10"
 - ciepło przemian fazowych
 - wykres ogrzewania
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/K/CHE.07.K03.kalorymetria_i_przemiany_fazowe.md` (16 KB)
 
 #### K04 — Szybkość reakcji
 
 ```yaml
 kod: K04
+status: POPRAWIONE
 poziom: LO
 wymaga: "R05"
 poglebia: "K05"
-stan: "○○○"
+stan: "◐○○"
 bylo: "K01"
 ```
 
@@ -2036,16 +2135,17 @@ bylo: "K01"
 - wykresy stężenie–czas
 - równanie kinetyczne (LO-R)
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/K/CHE.07.K04.szybkosc_reakcji.md` (14 KB)
 
 #### K05 — Czynniki wpływające na szybkość
 
 ```yaml
 kod: K05
+status: POPRAWIONE
 poziom: E8+LO
 wymaga: "K04"
 poglebia: "K06; K07"
-stan: "○○○"
+stan: "◐○○"
 bylo: "K02"
 ```
 
@@ -2054,16 +2154,17 @@ bylo: "K02"
 **Co ma być:**
 - stężenie, temperatura, rozdrobnienie, katalizator — doświadczenia
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/K/CHE.07.K05.czynniki_szybkosci.md` (3 KB)
 
 #### K06 — Zderzenia i energia aktywacji
 
 ```yaml
 kod: K06
+status: POPRAWIONE
 poziom: LO
 wymaga: "K01; K05"
 poglebia: "K07"
-stan: "○○○"
+stan: "◐○○"
 bylo: "K03"
 ```
 
@@ -2074,16 +2175,17 @@ bylo: "K03"
 - energia aktywacji na wykresie
 - rozkład energii cząsteczek
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/K/CHE.07.K06.zderzenia_energia_aktywacji.md` (12 KB)
 
 #### K07 — Kataliza
 
 ```yaml
 kod: K07
+status: POPRAWIONE
 poziom: E8+LO
 wymaga: "K06"
 poglebia: "O19"
-stan: "○○○"
+stan: "◐○○"
 bylo: "K04"
 ```
 
@@ -2095,16 +2197,17 @@ bylo: "K04"
 - inhibitory
 - katalizatory w przemyśle i samochodach
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/K/CHE.07.K07.kataliza.md` (2 KB)
 
 #### K08 — Równowaga dynamiczna
 
 ```yaml
 kod: K08
+status: POPRAWIONE
 poziom: LO
 wymaga: "K04"
 poglebia: "K09"
-stan: "○○○"
+stan: "◐○○"
 bylo: "K07"
 ```
 
@@ -2115,16 +2218,17 @@ bylo: "K07"
 - stan równowagi dynamicznej
 - modele
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/K/CHE.07.K08.rownowaga_dynamiczna.md` (2 KB)
 
 #### K09 — Stała równowagi
 
 ```yaml
 kod: K09
+status: POPRAWIONE
 poziom: LO
 wymaga: "K08; R05"
 poglebia: "K10; J07; J10"
-stan: "○○○"
+stan: "◐○○"
 bylo: "K08"
 ```
 
@@ -2135,16 +2239,17 @@ bylo: "K08"
 - obliczenia stężeń równowagowych
 - Kp (LO-R)
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/K/CHE.07.K09.stala_rownowagi.md` (2 KB)
 
 #### K10 — Reguła Le Chateliera
 
 ```yaml
 kod: K10
+status: POPRAWIONE
 poziom: LO
 wymaga: "K09"
 poglebia: "K11"
-stan: "○○○"
+stan: "◐○○"
 bylo: "K09"
 ```
 
@@ -2154,16 +2259,17 @@ bylo: "K09"
 - wpływ stężenia, ciśnienia, temperatury
 - zastosowania przemysłowe (synteza amoniaku)
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/K/CHE.07.K10.regula_le_chateliera.md` (2 KB)
 
 #### K11 — Równowaga ilościowa
 
 ```yaml
 kod: K11
+status: POPRAWIONE
 poziom: LO
 wymaga: "K09; K10"
 poglebia: "—"
-stan: "○○○"
+stan: "◐○○"
 ```
 
 **Cel:** Uczeń rozwiązuje zadania z równowagi.
@@ -2172,7 +2278,7 @@ stan: "○○○"
 - stopień przereagowania
 - zadania złożone z K
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/K/CHE.07.K11.rownowaga_ilosciowa.md` (12 KB)
 
 ---
 
@@ -2184,10 +2290,11 @@ _rozwija F04–F05; niezależna od reszty_
 
 ```yaml
 kod: A01
+status: POPRAWIONE
 poziom: LO
 wymaga: "F04; F05"
 poglebia: "A02"
-stan: "○○○"
+stan: "◐○○"
 ```
 
 **Cel:** Uczeń opisuje siły jądrowe i stabilność jąder.
@@ -2197,12 +2304,13 @@ stan: "○○○"
 - siły jądrowe
 - ścieżka stabilności
 
-**Mamy:** nic — do napisania
+**Mamy:** materiał `lekcje_md/A/CHE.08.A01.jadro_atomowe.md` (2 KB)
 
 #### A02 — Radioaktywność
 
 ```yaml
 kod: A02
+status: DO IMPLEMENTACJI
 poziom: E8+LO
 wymaga: "A01"
 poglebia: "A03"
@@ -2222,6 +2330,7 @@ stan: "○○○"
 
 ```yaml
 kod: A03
+status: DO IMPLEMENTACJI
 poziom: LO
 wymaga: "A02"
 poglebia: "A04"
@@ -2241,6 +2350,7 @@ stan: "○○○"
 
 ```yaml
 kod: A04
+status: DO IMPLEMENTACJI
 poziom: LO
 wymaga: "A03"
 poglebia: "A06"
@@ -2260,6 +2370,7 @@ stan: "○○○"
 
 ```yaml
 kod: A05
+status: DO IMPLEMENTACJI
 poziom: LO
 wymaga: "A01"
 poglebia: "A06"
@@ -2280,6 +2391,7 @@ bylo: "A06"
 
 ```yaml
 kod: A06
+status: DO IMPLEMENTACJI
 poziom: E8+LO
 wymaga: "A04; A05"
 poglebia: "—"
@@ -2307,6 +2419,7 @@ _spina wszystko: przewidywanie właściwości z położenia_
 
 ```yaml
 kod: P01
+status: DO IMPLEMENTACJI
 poziom: E8+LO
 wymaga: "F06; F11; N03"
 poglebia: "P04"
@@ -2326,6 +2439,7 @@ stan: "○○○"
 
 ```yaml
 kod: P02
+status: DO IMPLEMENTACJI
 poziom: LO
 wymaga: "F06; N02; N04"
 poglebia: "P04"
@@ -2345,6 +2459,7 @@ stan: "○○○"
 
 ```yaml
 kod: P03
+status: DO IMPLEMENTACJI
 poziom: LO
 wymaga: "F07; F08; X01"
 poglebia: "P05"
@@ -2368,6 +2483,7 @@ bylo: "P03 + P04"
 
 ```yaml
 kod: P04
+status: DO IMPLEMENTACJI
 poziom: LO
 wymaga: "P01–P03"
 poglebia: "P05"
@@ -2387,6 +2503,7 @@ bylo: "P05"
 
 ```yaml
 kod: P05
+status: DO IMPLEMENTACJI
 poziom: LO
 wymaga: "P04"
 poglebia: "P06"
@@ -2406,6 +2523,7 @@ bylo: "P06"
 
 ```yaml
 kod: P06
+status: DO IMPLEMENTACJI
 poziom: LO
 wymaga: "F06; P01–P05"
 poglebia: "—"
@@ -2428,13 +2546,24 @@ bylo: "P07 + P08"
 
 | kod | co | mamy |
 |---|---|---|
-| FIZ-01 | Elektrostatyka (fizyka, pomost do F04 i F11) | `che/md/FIZ01_elektrostatyka.md (gotowa ●●●)` |
+| FIZ-01 | Elektrostatyka (fizyka, pomost do F04 i F11) | `che-modular/lessons-md/gotowe/FIZ01_elektrostatyka.md (gotowa ●●●)` |
 | LAB | Zbiór doświadczeń LAB01–24 — przypisane do lekcji przez `wymaga` | `lekcje_md/00/CHE.00.LAB.doswiadczenia.md` |
 | REV01 | Powtórka fundamentów z klasy 7 (start klasy 8) | `lekcje_md/00/CHE.00.REV01.powtorka_klasy_7.md` |
 | REV02 | Powtórka klasy 8 | `lekcje_md/00/CHE.00.REV02.powtorka_klasy_8.md` |
 | REV03–05 | LO podstawowe, LO rozszerzone, zadania przekrojowe | — |
 | REV06 | Pomost akademicki / zaawansowana | `lekcje_md/00/CHE.00.REV06.zaawansowana.md` |
 | REV07 | Mapa kompetencji i diagnostyka zależności | — |
+| RT00 | Powtórka tematyczna: Powtórki i diagnostyka — szkic w plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md | — |
+| RT01 | Powtórka tematyczna: Materia i substancje — szkic w plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md | — |
+| RT02 | Powtórka tematyczna: Atom, układ okresowy i konfiguracja — szkic w plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md | — |
+| RT03 | Powtórka tematyczna: Wiązania, Lewis i geometria — szkic w plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md | — |
+| RT04 | Powtórka tematyczna: Wzory i równania reakcji — szkic w plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md | — |
+| RT05 | Powtórka tematyczna: Kwasy, zasady i chemia jonowa — szkic w plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md | — |
+| RT06 | Powtórka tematyczna: Stechiometria i roztwory — szkic w plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md | — |
+| RT07 | Powtórka tematyczna: Redoks i elektrochemia — szkic w plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md | — |
+| RT08 | Powtórka tematyczna: Kinetyka, energia i równowaga — szkic w plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md | — |
+| RT09 | Powtórka tematyczna: Jądro, promieniotwórczość i laboratorium — szkic w plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md | — |
+| RT10 | Powtórka tematyczna: Test mistrzostwa — szkic w plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md | — |
 
 Materiał wspólny kursu: `lekcje_md/00/CHE.00.W00.wstep.md` (wstęp pakietu v1.1), `lekcje_md/00/CHE.00.S00.system_kursu.md` (system kursu), `lekcje_md/F/CHE.01.F00.wspolne_bloku_F.md` (systemy zadań, powtórek, mistrzostwa i specyfikacja HTML bloku F).
 
@@ -2506,7 +2635,7 @@ Materiał wspólny kursu: `lekcje_md/00/CHE.00.W00.wstep.md` (wstęp pakietu v1.
 | P06 | P05 | Związki charakterystyczne pierwiastków |
 | P07 + P08 | P06 | Trend → właściwość → reaktywność |
 
-Gotowe pliki z dawnymi kodami (do przemianowania jednym skryptem po zatwierdzeniu): `che/md/N01_tlenki.md` → N02, `che/md/N02_wodorotlenki.md` → N03, `che/md/N03_kwasy.md` → N04, `che/md/N04_sole.md` → N05, `che/md/N05_wodorki.md` → N06.
+Gotowe pliki z dawnymi kodami (do przemianowania jednym skryptem po zatwierdzeniu): `che-modular/lessons-md/gotowe/N01_tlenki.md` → N02, `che-modular/lessons-md/gotowe/N02_wodorotlenki.md` → N03, `che-modular/lessons-md/gotowe/N03_kwasy.md` → N04, `che-modular/lessons-md/gotowe/N04_sole.md` → N05, `che-modular/lessons-md/gotowe/N05_wodorki.md` → N06.
 
 ## 15. Decyzje przyjęte domyślnie (do potwierdzenia)
 
@@ -2521,6 +2650,6 @@ Gotowe pliki z dawnymi kodami (do przemianowania jednym skryptem po zatwierdzeni
 ## 16. Następne kroki
 
 1. Zatwierdzić decyzje z tabeli wyżej i kolumnę „poziom” (podstawa E8 po 2024).
-2. Przemianować gotowe lekcje N (che/md) na nowe kody.
-3. Wydzielać kolejne lekcje F do szablonu (F02 → `che/md/`) z plików `lekcje_md/F/` — treść główna + przegląd sekcji „z archiwum”.
+2. Przemianować gotowe lekcje N (`che-modular/lessons-md/gotowe/`) na nowe kody.
+3. Wydzielać kolejne lekcje F do szablonu (→ `che-modular/lessons-md/gotowe/`) z plików `lekcje_md/F/` — treść główna + przegląd sekcji „z archiwum”.
 4. Rozdzielić stare lekcje zbiorcze v1.1 (R, O, X) na pojedyncze kody przy pisaniu tych lekcji.

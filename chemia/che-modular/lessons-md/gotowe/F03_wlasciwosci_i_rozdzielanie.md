@@ -3,7 +3,7 @@ kod: F03
 uid: CHE.01.F03.wlasciwosci_i_rozdzielanie
 tytul: Właściwości i rozdzielanie mieszanin
 opis: Właściwości fizyczne i chemiczne · stany skupienia · zjawisko a reakcja · dobór metody rozdzielania do różnicy właściwości
-kicker: F03 · FUNDAMENTY · MASTER v1.0
+kicker: F03 · FUNDAMENTY · MASTER v1.1
 lead: Trzecia lekcja bloku fundamentów: jak właściwość substancji staje się narzędziem — do rozpoznania próbki, odróżnienia zjawiska od reakcji
 lead: i rozdzielenia mieszaniny. Najważniejsza reguła: metoda rozdzielania jest konsekwencją różnicy właściwości, a nie nazwy mieszaniny.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
@@ -31,7 +31,7 @@ stopka: **CHEMIA F03 v1.0 MASTER** · Właściwości i rozdzielanie mieszanin ·
 - contest | <b>Ponad LO:</b> rozwijane bloki „poziom akademicki” — przycisk w nagłówku lekcji
 :::
 
-::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to (ok. 35 min)
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
 1. **[§0.4](#diagnoza)** — diagnoza: odpowiedz, zanim zaczniesz czytać.
 2. **[§1](#wlasciwosci)–[§3](#zjawisko-reakcja)** — właściwości, stany skupienia, zjawisko a reakcja.
 3. **[§5](#metody)–[§6](#dobor)** — metody rozdzielania i procedura doboru metody.
@@ -91,6 +91,20 @@ stopka: **CHEMIA F03 v1.0 MASTER** · Właściwości i rozdzielanie mieszanin ·
 
 **Interpretacja:** 0–2/6 — rdzeń krok po kroku; 3–4/6 — rdzeń, szczególnie punkty z błędami; 5–6/6 — przejdź do [§6](#dobor) i zadań transferowych.
 :::
+:::
+
+## 0.5 | Wykład — właściwości i rozdzielanie od zera {#wyklad}
+
+::: karta understand | Wykład — właściwości i rozdzielanie od zera
+Każda substancja ma swój „dowód osobisty” — zestaw **właściwości**. Część z nich możesz sprawdzić, nie zmieniając substancji: barwę, zapach, stan skupienia, gęstość, temperaturę topnienia i wrzenia, rozpuszczalność w wodzie, przewodnictwo prądu. To **właściwości fizyczne**. Inne ujawniają się dopiero, gdy substancja reaguje i zamienia się w coś nowego: czy się pali, czy rdzewieje, jak reaguje z kwasem. To **właściwości chemiczne**.
+
+Ta sama różnica dzieli zmiany na dwa rodzaje. **Zjawisko fizyczne** zmienia formę, ale nie skład: lód topnieje w wodę, cukier rozpuszcza się w herbacie, gałąź łamie się na pół — nadal jest to ta sama substancja. **Reakcja chemiczna** prowadzi do powstania nowej substancji: drewno spala się na popiół i gazy, żelazo rdzewieje, mleko kwaśnieje. Sygnały reakcji to zmiana barwy, wydzielanie gazu, powstawanie osadu, efekt cieplny lub świetlny, nowy zapach — ale uwaga: same sygnały nie są dowodem (woda też „wydziela gaz”, gdy wrze).
+
+**Stany skupienia** — stały, ciekły i gazowy — to przykład zjawisk fizycznych. Przemiany mają nazwy, które warto znać na pamięć: topnienie i krzepnięcie, parowanie (wrzenie) i skraplanie, sublimacja (ciało stałe → gaz, np. suchy lód) i resublimacja (gaz → ciało stałe, np. szron).
+
+Właściwości fizyczne to też klucz do **rozdzielania mieszanin**. Wybierasz metodę według tego, czym składniki się różnią. Różna wielkość cząstek i nierozpuszczalność — **sączenie** (piasek z wody). Różna gęstość — **dekantacja** albo rozdzielacz (woda i olej). Rozpuszczona substancja stała — **odparowanie** lub **krystalizacja** (sól z wody). Różne temperatury wrzenia — **destylacja** (alkohol z wody). Właściwości magnetyczne — **magnes** (opiłki żelaza z siarki). Różne „przyczepianie się” do bibuły — **chromatografia** (barwniki w atramencie).
+
+Na egzaminie z tej lekcji najczęściej pojawia się zadanie typu: „zaproponuj sposób rozdzielenia mieszaniny i uzasadnij” — odpowiedź zawsze buduj według wzoru: **metoda + właściwość, która na to pozwala**.
 :::
 
 ## 1 | Właściwości fizyczne i chemiczne [[basic:E8]] {#wlasciwosci}
@@ -249,6 +263,8 @@ BHP: okulary; gorąca parownica — tylko szczypcami; pod koniec odparowania kry
 
 @zlewka f03-rozdzielanie-v01 f01Odparowanie | Zobacz w parownicy: odparowanie roztworu soli
 @opis Parownica z roztworem soli ogrzewana palnikiem: woda paruje, na dnie zostają białe kryształy soli. Wniosek: rozpuszczona sól nie zniknęła — odparowanie oddziela substancję stałą od lotnego rozpuszczalnika i jest zjawiskiem fizycznym.
+@zlewka odparowanie-v01 odpCuSO4 | Zobacz w parownicy: krystalizacja siarczanu(VI) miedzi(II)
+@opis Parownica z niebieskim roztworem CuSO₄ stoi na trójnogu z siatką nad płomieniem palnika: ubywa cieczy, nad parownicą unosi się para, przy brzegach i na dnie rosną niebieskie kryształy. Wniosek: krystalizacja odzyskuje substancję rozpuszczoną; odparowujemy tylko do pojawienia się kryształów, bo prażenie do sucha usuwa wodę krystalizacyjną (hydrat bieleje).
 :::
 
 ::: dosw | Doświadczenie 3 — Opiłki żelaza, piasek i sól
@@ -279,6 +295,23 @@ Przebieg: Nauczyciel ogrzewa roztwór w kolbie; para przechodzi przez chłodnic�
 Obserwacja: Termometr pokazuje ok. 100 °C; do odbieralnika kapie bezbarwna ciecz; w kolbie roztwór gęstnieje i ciemnieje.
 Wniosek: Destylacja rozdziela składniki o różnych temperaturach wrzenia i odzyskuje rozpuszczalnik; destylat to woda destylowana.
 BHP: pokaz nauczyciela; kamyczki wrzenne zapobiegają gwałtownemu wrzeniu; nie ogrzewać zamkniętego układu; gorące szkło.
+:::
+
+## 8.5 | Nie myl! {#nie-myl}
+
+::: nie-myl | Pojęcia, które łatwo pomylić
+| Para | Dlaczego łatwo pomylić | Jak rozstrzygnąć |
+|---|---|---|
+| zjawisko fizyczne / reakcja chemiczna | oba to „zmiany” | fizyczne — ta sama substancja; reakcja — powstaje nowa |
+| parowanie / wrzenie | oba to ciecz → gaz | parowanie — z powierzchni, w każdej temperaturze; wrzenie — w całej objętości, w temperaturze wrzenia |
+| sublimacja / resublimacja | podobne nazwy | sublimacja — stały → gaz; resublimacja — gaz → stały |
+| sączenie / dekantacja | obie oddzielają ciało stałe od cieczy | sączenie — przez sączek; dekantacja — zlanie cieczy znad osadu |
+| odparowanie / destylacja | obie z ogrzewaniem | odparowanie — odzyskujemy substancję stałą, ciecz ucieka; destylacja — odzyskujemy też ciecz (skraplamy ją) |
+| rozpuszczanie / topnienie | „cukier znika”, „lód znika” | rozpuszczanie — w rozpuszczalniku; topnienie — pod wpływem ciepła, bez rozpuszczalnika |
+:::
+
+::: karta understand | W skrócie — jak to zastosować w zadaniu
+Każdą odpowiedź „jak rozdzielić?” buduj w trzech krokach. **1)** Nazwij składniki i ustal, czym się różnią (rozpuszczalność, gęstość, temperatura wrzenia, magnetyzm, wielkość cząstek). **2)** Dobierz metodę do tej różnicy. **3)** Gdy składników jest więcej niż dwa, ustal kolejność: np. piasek + sól + woda → najpierw **sączenie** (zostaje piasek na sączku), potem **odparowanie** przesączu (zostaje sól). Uzasadnienie zawsze zawiera właściwość: „sączenie, bo piasek nie rozpuszcza się w wodzie”, a nie samo „sączenie”.
 :::
 
 ## 9 | Klinika błędów {#klinika}
@@ -371,6 +404,52 @@ Rozpuszczenie w wodzie → sączenie (osad: składnik nierozpuszczalny) → dest
 2. Jony soli są dużo mniejsze od porów sączka i przechodzą razem z wodą do przesączu.
 3. Topnienie lodu i wrzenie wody — zjawiska fizyczne; spalanie drewna i rdzewienie żelaza — reakcje chemiczne.
 4. Odparować część wody, ostudzić roztwór (krystalizacja), oddzielić kryształy sączeniem i wysuszyć.
+:::
+:::
+
+## 10.5 | Ciekawostki {#ciekawostki-plus}
+
+::: karta extra | Suchy lód nie topnieje
+Zestalony dwutlenek węgla („suchy lód”) pod zwykłym ciśnieniem nie przechodzi w ciecz, tylko od razu w gaz — sublimuje w temperaturze ok. −78 °C. Dlatego używa się go do chłodzenia i efektów „dymu” na scenie.
+:::
+
+::: karta extra | Destylacja: od wody po perfumy
+Destylację znano już w starożytności; dzięki niej otrzymuje się wodę destylowaną, alkohol, olejki eteryczne do perfum, a w rafineriach rozdziela się ropę naftową na benzynę, naftę i olej napędowy.
+:::
+
+::: karta extra | Chromatografia — „pisanie kolorem”
+Nazwa chromatografii pochodzi od greckich słów „barwa” i „pisać”. Wymyślił ją rosyjski botanik Michaił Cwiet (ur. we Włoszech) na początku XX w., rozdzielając barwniki liści.
+:::
+
+## 10.6 | Warstwa olimpijska — Dla olimpijczyka {#olimpijska}
+
+*(Warstwa ponad E8 — do zweryfikowania z wymaganiami konkretnego konkursu.)*
+
+::: karta understand | Dla olimpijczyka — właściwości i rozdzielanie głębiej
+**Temperatura wrzenia zależy od ciśnienia** — wysoko w górach woda wrze poniżej 100 °C, a w szybkowarze (wyższe ciśnienie) powyżej. **Gęstość pozwala identyfikować substancje** — złoto (19,3 g/cm³) jest znacznie gęstsze od podróbki z mosiądzu (ok. 8,5 g/cm³; orientacyjnie). **Mieszaniny azeotropowe** — niektórych cieczy (np. etanolu i wody, ok. 96%) nie da się rozdzielić do końca zwykłą destylacją. **Krystalizacja a odparowanie** — powolne chłodzenie roztworu nasyconego daje ładne kryształy; szybkie odparowanie — drobny proszek.
+:::
+
+::: adv | Zadanie O1 (4 pkt) — zjawisko czy reakcja? | poziom ambitny (konkurs)
+Rozstrzygnij i uzasadnij: a) rozpuszczanie soli w wodzie, b) spalanie świecy (knota i wosku), c) topnienie wosku, d) ciemnienie przekrojonego jabłka.
+
+::: odp | Pokaż klucz
+a) zjawisko fizyczne — po odparowaniu odzyskujemy sól; b) reakcja — powstają CO₂ i woda; c) zjawisko fizyczne — wosk pozostaje woskiem; d) reakcja — powstają nowe, brązowe substancje. Po 1 pkt.
+:::
+:::
+
+::: adv | Zadanie O2 (4 pkt) — rozdziel trzy składniki | poziom ambitny (konkurs)
+Masz mieszaninę: piasek, sól kuchenna, opiłki żelaza. Zaplanuj rozdzielenie i uzasadnij każdy etap.
+
+::: odp | Pokaż klucz
+1) magnes — odciąga opiłki żelaza (właściwości magnetyczne) (1 pkt); 2) dodanie wody — sól się rozpuszcza, piasek nie (1 pkt); 3) sączenie — piasek zostaje na sączku (1 pkt); 4) odparowanie przesączu — zostaje sól (1 pkt).
+:::
+:::
+
+::: adv | Zadanie O3 (3 pkt) — gęstość | poziom ambitny (konkurs)
+Kostka o objętości 2 cm³ ma masę 21,4 g. Oblicz gęstość i oceń, czy może być z czystego złota (19,3 g/cm³) czy ze srebra (10,5 g/cm³).
+
+::: odp | Pokaż klucz
+d = 21,4 g : 2 cm³ = 10,7 g/cm³ (2 pkt); najbliżej srebra — to nie jest czyste złoto (1 pkt).
 :::
 :::
 
@@ -471,6 +550,10 @@ Osad i przesącz | osad zostaje na sączku, przesącz przechodzi | basic:podstaw
 Dyfuzja | samorzutne mieszanie wynikające z ruchu cząstek | understand:rozumienie
 Właściwość diagnostyczna | właściwość, która różni kandydatów i da się ją zmierzyć | understand:rozumienie
 Destylacja frakcyjna | rozdział wielu cieczy w kolumnie (ropa naftowa) | extra:ambitne
+sublimacja | ciało stałe → gaz (suchy lód, naftalen) | olimpijski:wlasciwosci
+temperatura wrzenia a ciśnienie | niższe ciśnienie — niższa temperatura wrzenia (góry) | olimpijski:wlasciwosci
+azeotrop | mieszanina, której nie rozdzielisz do końca destylacją (etanol ok. 96%) | olimpijski:wlasciwosci
+gęstość | d = m : V — pozwala rozpoznać substancję | olimpijski:wlasciwosci
 :::
 
 ## 14 | Słownik {#slownik}
@@ -510,13 +593,13 @@ Ekstrakcja :: przeprowadzenie składnika do rozpuszczalnika, w którym lepiej si
 
 ## 16 | System powtórek {#powtorki}
 
-| Kiedy | Ile | Co |
-|---|---|---|
-| po lekcji | 20 min | karta z [§12](#powtorka) i ćwiczenia A |
-| po 1 dniu | 10 min | fiszki |
-| po 3 dniach | 15 min | ćwiczenia B |
-| po tygodniu | 20 min | test z [§11](#test) |
-| po F03 | 25 min | F01 + F02 + F03 razem — zestaw przekrojowy z F21 |
+Kolejność powtórki (we własnym tempie):
+
+1. karta z [§12](#powtorka) i ćwiczenia A
+2. fiszki
+3. ćwiczenia B
+4. test z [§11](#test)
+5. F01 + F02 + F03 razem — zestaw przekrojowy z F21
 
 ## A | Dodatek A — mosty i co dalej {#mosty}
 
@@ -537,3 +620,9 @@ Ekstrakcja :: przeprowadzenie składnika do rozpuszczalnika, w którym lepiej si
 | [§7](#przemysl) | `lab-stations-v102` | stanowiska laboratoryjne — chłodnica i palnik do destylacji |
 
 > Do zbudowania w GFX (nowe elementy): lejek z sączkiem i przesączem (sączenie krok po kroku), zestaw do destylacji z odbieralnikiem i termometrem, rozdzielacz z dwiema warstwami cieczy, pasek bibuły z pasmami barwników (chromatografia), magnes zbierający opiłki, kolumna destylacji frakcyjnej ropy.
+
+## Ulepszenie — Claude, 2026-10-11 {#ulepszenie}
+
+- Dodano: §0.5 wykład „od zera”, nie-myl + mini-wykład „W skrócie”, ciekawostki (3), warstwa olimpijska (Dla olimpijczyka + 3 zadania z kluczami), 4 fiszki olimpijskie. Nic nie usunięto.
+- Poprawione: „System powtórek” — bez minut i odstępów dni (kurs we własnym tempie), jeśli występował.
+

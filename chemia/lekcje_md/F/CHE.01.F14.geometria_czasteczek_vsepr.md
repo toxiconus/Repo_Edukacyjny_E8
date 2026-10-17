@@ -6,6 +6,7 @@ wymaga: "F11; F12; F13"
 poglebia: "F15; F18"
 zrodla: "MASTER v17.0; MASTER v15.0; MASTER v14.0; stary kanon F00–F09 (v4.1/v5.0); stary podział CHE.01.F08.geometria_czasteczek.md"
 opis: "Materiał roboczy lekcji (nie gotowa lekcja). Spis i zakres: chemia/plany/CHE_SPIS_TRESCI.md"
+stan: W1 — GPT-6, 2026-10-09; poprawki audytu wprowadzone do treści kanonicznej
 ---
 # CHE.01F.14-GEOMETRIA — GEOMETRIA CZĄSTECZEK: VSEPR, DOMENY I KĄTY
 
@@ -1958,6 +1959,35 @@ Pary elektronowe wokół atomu centralnego odpychają się i układają jak najd
 
 ---
 
+## UZUPEŁNIENIE KANONICZNE — VSEPR, geometria i polarność (W1, 2026-10-09)
+
+Model VSEPR zakłada, że domeny elektronowe wokół atomu centralnego odpychają się. Geometria elektronowa uwzględnia wszystkie domeny (wiązania i wolne pary), natomiast kształt cząsteczki opisuje rozmieszczenie atomów. Wolne pary zwykle odpychają silniej niż pary wiążące, więc kąty są przybliżone i mogą odchylać się od wartości idealnych. Wiązanie podwójne lub potrójne liczy się jako jedną domenę.
+
+| Liczba domen / układ | Geometria elektronowa | Kształt cząsteczki | Przykład |
+|---|---|---|---|
+| 2 domeny | Liniowa | Liniowa | CO₂ |
+| 3 domeny | Trygonalna płaska | Trygonalna płaska | BF₃ |
+| 4 domeny, 4 wiązania | Tetraedryczna | Tetraedryczna | CH₄ |
+| 4 domeny, 3 wiązania + 1 wolna para | Tetraedryczna | Piramidalna trygonalna | NH₃ |
+| 4 domeny, 2 wiązania + 2 wolne pary | Tetraedryczna | Kątowa | H₂O |
+
+### Polarność cząsteczki
+
+- `CO₂`: geometria liniowa, a momenty dipolowe wiązań skierowane przeciwnie i o jednakowej wartości znoszą się — cząsteczka jest niepolarna.
+- `H₂O`: kształt kątowy sprawia, że momenty dipolowe się nie znoszą — cząsteczka jest polarna.
+- `NH₃`: kształt piramidalny i rozkład wiązań powodują, że cząsteczka jest polarna.
+
+Polarne wiązania nie gwarantują polarności całej cząsteczki; trzeba uwzględnić wartość i kierunek wszystkich momentów dipolowych.
+
+### Ćwiczenia kontrolne
+
+1. Określ kształt `CH₄`, `NH₃`, `H₂O` i `CO₂`.
+2. Wyjaśnij, dlaczego CO₂ jest niepolarny, a H₂O polarna.
+3. Policz domeny elektronowe wokół atomu centralnego w NH₃.
+4. Wyjaśnij różnicę między geometrią elektronową i kształtem cząsteczki.
+
+**Klucz:** 1. tetraedryczny, piramidalny, kątowy, liniowy; 2. w CO₂ momenty dipolowe znoszą się, a w H₂O — z powodu kształtu kątowego — nie; 3. cztery domeny: trzy wiązania i jedna wolna para; 4. geometria elektronowa uwzględnia także wolne pary, a kształt cząsteczki opisuje położenie atomów.
+
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
 > Źródło: `chemia/plany/audyty/W1_perplexity_F07-F14₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
@@ -1966,15 +1996,15 @@ Pary elektronowe wokół atomu centralnego odpychają się i układają jak najd
 
 ### Poprawki
 
-- Model VSEPR opiera się na założeniu, że pary elektronowe wokół atomu centralnego odpychają się.
-- Geometria elektronowa uwzględnia wszystkie domeny elektronowe.
-- Geometria cząsteczki uwzględnia położenie atomów, ale pomija wolne pary przy opisie kształtu.
-- Wolne pary zwykle odpychają silniej niż pary wiążące.
-- Nie utożsamiaj liczby wiązań z liczbą domen elektronowych.
-- Wiązanie podwójne i potrójne liczy się jako jedna domena elektronowa.
-- Kąt wiązania jest wartością przybliżoną, ponieważ wolne pary i różne atomy odkształcają geometrię.
-- Nie każda cząsteczka z polarnymi wiązaniami jest cząsteczką polarną.
-- Polaryzacja cząsteczki zależy od wartości i kierunku wszystkich momentów dipolowych.
+- Model VSEPR opiera się na założeniu, że pary elektronowe wokół atomu centralnego odpychają się. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Geometria elektronowa uwzględnia wszystkie domeny elektronowe. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Geometria cząsteczki uwzględnia położenie atomów, ale pomija wolne pary przy opisie kształtu. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Wolne pary zwykle odpychają silniej niż pary wiążące. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Nie utożsamiaj liczby wiązań z liczbą domen elektronowych. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Wiązanie podwójne i potrójne liczy się jako jedna domena elektronowa. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Kąt wiązania jest wartością przybliżoną, ponieważ wolne pary i różne atomy odkształcają geometrię. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Nie każda cząsteczka z polarnymi wiązaniami jest cząsteczką polarną. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Polaryzacja cząsteczki zależy od wartości i kierunku wszystkich momentów dipolowych. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
 
 ### Uzupełnienia
 
@@ -1990,27 +2020,27 @@ Pary elektronowe wokół atomu centralnego odpychają się i układają jak najd
 
 CO₂:
 
-- atom centralny: C;
-- dwie domeny elektronowe;
-- geometria liniowa;
-- kąt około 180°;
-- cząsteczka niepolarna, ponieważ dipole wiązań znoszą się.
+- atom centralny: C; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- dwie domeny elektronowe; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- geometria liniowa; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- kąt około 180°; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- cząsteczka niepolarna, ponieważ dipole wiązań znoszą się. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
 
 H₂O:
 
-- atom centralny: O;
-- cztery domeny elektronowe;
-- geometria elektronowa tetraedryczna;
-- geometria cząsteczki kątowa;
-- cząsteczka polarna.
+- atom centralny: O; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- cztery domeny elektronowe; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- geometria elektronowa tetraedryczna; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- geometria cząsteczki kątowa; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- cząsteczka polarna. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
 
 NH₃:
 
-- atom centralny: N;
-- cztery domeny elektronowe;
-- geometria elektronowa tetraedryczna;
-- geometria cząsteczki piramidalna;
-- cząsteczka polarna.
+- atom centralny: N; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- cztery domeny elektronowe; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- geometria elektronowa tetraedryczna; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- geometria cząsteczki piramidalna; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- cząsteczka polarna. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
 
 #### Zadania
 
@@ -2025,3 +2055,5 @@ NH₃:
 2. W CO₂ momenty dipolowe dwóch wiązań mają przeciwne kierunki i się znoszą; w H₂O kształt kątowy nie pozwala na ich zniesienie.
 3. Cztery domeny: trzy wiązania i jedna wolna para.
 4. Geometria elektronowa uwzględnia wiązania i wolne pary, a geometria cząsteczki opisuje rozmieszczenie atomów.
+
+**Status audytu:** poprawki i uzupełnienia przeniesiono do sekcji „UZUPEŁNIENIE KANONICZNE”; dodano przykłady, ćwiczenia i klucze.

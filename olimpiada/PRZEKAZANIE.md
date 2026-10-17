@@ -35,8 +35,34 @@ Foldery powstają, gdy pojawi się pierwsza treść.
 - **Szkielety czekające na dane od użytkownika (2026-10-09):** `olimpiada/do_uzupelnienia/` — chemia X04 szereg aktywności, J03 równania jonowe i strącanie, R07 nadmiar (bez mola); biologia B2 homeostaza + B2a–B2f (skóra i ruch, pokarmowy, oddychanie i wydalanie, nerwowy i zmysły, dokrewny, rozmnażanie); polski `polski/do_uzupelnienia/` L007–L011 (przegląd części mowy, części zdania, zdania złożone, środki stylistyczne, morał/puenta/budowa utworu). Pod „DANE:” w każdym pliku — czego brakuje. Gdy dane przyjdą: przerobić na dialekt kanonu, przenieść do `lessons-md/gotowe/` / `biologia/bio/md/`, build + test.
 - **Audyt na prawdziwych zadaniach (w toku, nic jeszcze niezapisane):** BIO REV01/REV02, CHE N01/R03 vs arkusze etapu szkolnego Bydgoszcz 2025/26 (`kuratorium.bydgoszcz.pl/wp-content/uploads/2025/12/{biologia,chemia}_{arkusz,klucz}.pdf`, WebFetch). Znalezione luki — BIO: poziomy organizacji od atomu (REV01 błędnie mówi, że atom to nie poziom), makro/mikroelementy z funkcjami, bakteriofag, zwarcica i naczynia, cykle mszaków/paproci (przedrośle, plemnie, rodnie), drzewa (wierzba, topola, osika, olsza), gąbki/parzydełkowce + tabela cech (segmentacja, odbyt, tkanki, symetria), szkielet zewnętrzny = przyczep mięśni, jajo-/żyworodność, podwójna wymiana gazowa ptaków. CHE REV01: progi Δχ Paulinga, gęstość cieczy niemieszających się (jest w F03). Plan: `olimpiada/audyt/AUDYT_KP_SZ_2526.md` (format z MD użytkownika: Treść / Rozwiązanie / Klucz / Dlaczego / Typowe błędy / Lekcja / Decyzja / Działania), potem łatki lekcji. Arkusze LKO (lubelskie, powiat kraśnicki) — kuratorium.lublin.pl blokuje pobieranie; użytkownik ma dosłać ZIP-y etapu szkolnego 2025/26.
 
+## Braki — priorytet: olimpiada, chemia i biologia (aktualizacja 2026-10-17)
+Kolejność: najpierw etap szkolny (21.10 bio, 23.10 chem — daty niepotwierdzone), potem rejonowy, potem warstwy 2–4.
+
+**Chemia (etap szkolny → rejonowy)**
+- [ ] C4 Doświadczenia: obserwacja → wniosek → równanie (zbiorczo) — `chemia/lekcje_md/00/CHE.00.LAB.doswiadczenia.md`.
+- [ ] C3 F17 Równania reakcji + obliczenia z równań (masowe, prawo zachowania masy) — część masowa bez mola.
+- [ ] Audyt CHE REV01: progi Δχ Paulinga; gęstość cieczy niemieszających się (jest w F03).
+- [ ] C1c (rejon): X04 szereg aktywności metali, J03 równania jonowe i strącanie, R07 nadmiar substratu (bez mola) — szkielety w `do_uzupelnienia/`, czekają na przerobienie na dialekt kanonu.
+- [ ] Brak materiału z arkuszy etapu szkolnego 2024/25 (bank zadań) — użytkownik ma dosłać ZIP-y.
+
+**Biologia (etap szkolny → rejonowy)**
+- [ ] Audyt BIO REV01/REV02 vs arkusz Bydgoszcz 2025/26 (`olimpiada/audyt/AUDYT_KP_SZ_2526.md`) — luki do łatania:
+  - poziomy organizacji od atomu (REV01 błędnie wyklucza atom);
+  - makro- i mikroelementy z funkcjami;
+  - bakteriofag; zwarcica i naczynia;
+  - cykle mszaków i paproci (przedrośle, plemnie, rodnie);
+  - drzewa (wierzba, topola, osika, olsza);
+  - gąbki i parzydełkowce + tabela cech (segmentacja, odbyt, tkanki, symetria);
+  - szkielet zewnętrzny jako przyczep mięśni;
+  - jajo- i żyworodność;
+  - podwójna wymiana gazowa u ptaków.
+- [ ] B2 homeostaza + B2a–B2f (skóra i ruch, pokarmowy, oddychanie i wydalanie, nerwowy i zmysły, dokrewny, rozmnażanie) — szkielety w `do_uzupelnienia/`, czekają na przerobienie.
+- [ ] Biologia etap rejonowy: człowiek (źródło `biologia/md/L002_powtorka_czlowiek.md`).
+
+**Do przeglądu przez użytkownika (merytoryka):** N01 (skład powietrza, gęstości gazów), REV02, część R03 (rozpuszczalności), BIO REV01.
+
 ## 5. Następne kroki (propozycja)
-0. **Priorytet klasy 8** (`PRIORYTETY.md` §2): C4 doświadczenia chemiczne zbiorczo · C3 F17 + obliczenia z równań · etap rejonowy: chemia C1c (szereg aktywności, równania jonowe, nadmiar, konfiguracje do Z = 36), biologia B2 (człowiek + homeostaza, źródło `biologia/md/L002_powtorka_czlowiek.md`) · bank zadań z arkuszy LKO (gdy użytkownik dośle etap szkolny 2024/25).
+0. **Priorytet klasy 8** (`PRIORYTETY.md` §2): C4 doświadczenia chemiczne zbiorczo · C3 F17 + obliczenia z równań · etap rejonowy: chemia C1c (szereg aktywności, równania jonowe, nadmiar, konfiguracje do Z = 36), biologia B2 (człowiek + homeostaza, źródło `biologia/md/BIO.01.L002.powtorka_czlowiek.md`) · bank zadań z arkuszy LKO (gdy użytkownik dośle etap szkolny 2024/25).
 1. Mapowanie BIO-001… (biologia), potem POL, MAT, OLI — jak chemia (generator na przedmiot).
 2. Plakietki poziomów 0–4 w dialekcie MD + przełącznik „E8 / Olimpiada” w md2html (jeden plik, dwa widoki).
 3. Format banku zadań (MASTER §46) jako MD/JSON + pierwsze zadania archiwalne (tylko ze źródeł oficjalnych — MASTER §12–13).

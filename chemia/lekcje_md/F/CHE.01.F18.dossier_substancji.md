@@ -6,6 +6,7 @@ wymaga: "F02; F03; F06; F09; F11; F12"
 poglebia: "F13–F15; N02–N08; R01–R03"
 zrodla: "MASTER v17.0; MASTER v15.0"
 opis: "Materiał roboczy lekcji (nie gotowa lekcja). Spis i zakres: chemia/plany/CHE_SPIS_TRESCI.md"
+stan: W6 — GPT-6, 2026-10-09; poprawki wprowadzone do treści kanonicznej, wymaga niezależnej recenzji chemicznej
 ---
 # CHE.01F.18-DOSSIER-SUBSTANCJI — DOSSIER SUBSTANCJI
 
@@ -288,11 +289,35 @@ Najczęstszy błąd nie powinien być tylko poprawiony. Trzeba zapisać: **objaw
 
 Bez zaglądania do wykładu odpowiedz: **co już potrafię w obszarze „Dossier substancji” i gdzie pojawia się pierwsza niepewność?** Wynik diagnozy ma wskazać fragment do powtórki, a nie być oceną końcową.
 
+## UZUPEŁNIENIE KANONICZNE W6 — KARTA DOSSIER SUBSTANCJI
+
+Dossier rozdziela **dane obserwacyjne** (np. barwa próbki), **modelowe** (np. opis sieci jonowej) i **obliczeniowe** (np. wynik wyprowadzony z masy i objętości). Każda wartość wymaga jednostki, źródła i warunków pomiaru. Temperaturę topnienia i wrzenia podawaj wraz z ciśnieniem, jeśli ma znaczenie; gęstość i rozpuszczalność zależą od temperatury, a rozpuszczalność także od rozpuszczalnika. Wartościowość, stopień utlenienia i ładunek jonu to odrębne pola.
+
+### Szablon dossier
+
+- Nazwa i wzór; rodzaj substancji; pierwiastki składowe.
+- Model budowy: cząsteczkowa, jonowa, metaliczna lub sieciowa.
+- Stan skupienia wraz z temperaturą i ciśnieniem.
+- Barwa; zapach wyłącznie wtedy, gdy jest bezpieczne i metodycznie uzasadnione.
+- Rozpuszczalność wraz z temperaturą i rozpuszczalnikiem.
+- Temperatury przemian fazowych wraz z warunkami.
+- Gęstość i przewodnictwo wraz z warunkami oraz informacją, czy chodzi o ciało stałe, ciecz czy roztwór.
+- Reaktywność, zastosowania, zagrożenia, przechowywanie i sposób identyfikacji.
+- Źródło danych, data dostępu/pomiaru i poziom pewności; wartości niepewne oznacz **[do weryfikacji]**.
+
+### Przykład: chlorek sodu
+
+NaCl jest związkiem jonowym zbudowanym z sieci jonów Na⁺ i Cl⁻, a nie z odrębnych cząsteczek NaCl. W temperaturze pokojowej jest ciałem stałym. Kryształ nie przewodzi prądu tak jak roztwór, ponieważ jony w sieci nie przemieszczają się swobodnie; w roztworze wodnym ruchliwe jony przenoszą ładunek. NaCl dobrze rozpuszcza się w wodzie, lecz dokładna wartość rozpuszczalności wymaga podania temperatury i wiarygodnego źródła. Związek używany jako odczynnik laboratoryjny nie jest przeznaczony do spożywania.
+
+**BHP:** określenie zagrożeń nie oznacza automatycznie, że substancji nie wolno używać w żadnych warunkach. Użycie zależy od dawki, stężenia, drogi narażenia, procedury i wyposażenia ochronnego. Każde doświadczenie wymaga oceny ryzyka, instrukcji i nadzoru adekwatnego do substancji.
+
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
 > Źródło: `chemia/plany/audyty/W1_perplexity_F15-F21₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
 
-### Poprawki
+### Poprawki — status wdrożenia
+
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W6”.
 
 - Dossier substancji powinno oddzielać dane obserwacyjne, modelowe i obliczeniowe.
 - Nie wpisuj jednej właściwości jako absolutnej, jeśli zależy od temperatury, ciśnienia lub czystości próbki.
@@ -304,9 +329,11 @@ Bez zaglądania do wykładu odpowiedz: **co już potrafię w obszarze „Dossier
 - Nie utożsamiaj „substancji niebezpiecznej” z substancją, której nie wolno używać w żadnych warunkach.
 - Każde doświadczenie powinno mieć ocenę ryzyka i wymagania BHP.
 
-### Uzupełnienia
+### Uzupełnienia — status wdrożenia
 
 #### Szablon dossier
+
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W6”.
 
 - nazwa;
 - wzór;
@@ -328,6 +355,8 @@ Bez zaglądania do wykładu odpowiedz: **co już potrafię w obszarze „Dossier
 - poziom pewności informacji.
 
 #### Przykład: chlorek sodu
+
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W6”.
 
 - nazwa: chlorek sodu;
 - wzór: NaCl;

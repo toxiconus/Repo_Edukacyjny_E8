@@ -1,0 +1,45 @@
+# Słownik chemii E8 — hasła i lekcje, w których są wprowadzone
+
+Format: **pojęcie** — definicja (pierwsze wprowadzenie: lekcja). Hasła są dopisywane przy przebudowie każdej lekcji.
+
+- **Obserwacja** — to, co widzę lub mierzę, bez dopisywania przyczyny (F01).
+- **Wniosek** — twierdzenie wyprowadzone z danych; jego siła zależy od jakości danych (F01).
+- **Hipoteza** — sprawdzalne wyjaśnienie, prowadzi do przewidywań (F01).
+- **Model** — uproszczony opis układu z zakresem stosowalności (F01).
+- **Zjawisko fizyczne** — zmiana stanu, kształtu lub rozdrobnienia bez powstania nowej substancji (F01).
+- **Reakcja chemiczna** — przemiana, w której z substratów powstają produkty o innym składzie (F01).
+- **Symbol** — skrót pierwiastka, jedna lub dwie litery, np. Na, Cl (F01).
+- **Wzór** — zapis składu substancji, np. H₂O (F01).
+- **Indeks** — mały numer przy symbolu; zmienia skład substancji (F01).
+- **Współczynnik** — liczba przed wzorem w równaniu; liczba jednostek biorących udział w reakcji (F01).
+- **Mol** — jednostka ilości materii; 1 mol = 6,02·10²³ cząstek (F01).
+- **Pierwiastek** — substancja złożona z atomów jednego rodzaju, o tym samym Z (F02).
+- **Substancja prosta** — substancja zbudowana z atomów jednego pierwiastka, np. O₂ (F02).
+- **Związek chemiczny** — substancja złożona z atomów różnych pierwiastków w stałym stosunku (F02).
+- **Mieszanina** — połączenie substancji, które nie tworzą nowej substancji; składniki zachowują swoje właściwości (F02).
+- **Faza** — jednorodna część układu oddzielona od innych granicą, np. lód w wodzie (F02).
+- **Roztwór** — mieszanina jednorodna (jedna faza), np. sól w wodzie (F02).
+- **Układ koloidalny** — mieszanina niejednorodna o cząstkach ok. 1–1000 nm, nie opada samoistnie (F02).
+- **Zawiesina** — mieszanina niejednorodna o cząstkach większych niż w koloidzie, opada (F02).
+- **Filtracja** — rozdzielanie ciała stałego od cieczy przez sączek (F02).
+- **Destylacja** — rozdzielanie cieczy o różnych temperaturach wrzenia przez skraplanie par (F02).
+- **Właściwość fizyczna** — cecha mierzona bez zmiany substancji w inną, np. gęstość (F03).
+- **Właściwość chemiczna** — zdolność do przemiany chemicznej, np. palność (F03).
+- **Zjawisko fizyczne** — zmiana bez powstania nowej substancji, np. topnienie (F03).
+- **Reakcja chemiczna** — przemiana tworząca nowe substancje (F03).
+- **Gęstość (ρ)** — masa na jednostkę objętości, ρ = m/V (F03).
+- **Temperatura wrzenia (T_w)** — zależy od ciśnienia (F03).
+- **Rozpuszczalność** — maksymalna ilość substancji rozpuszczonej w danych warunkach (F03).
+- **Sedymentacja** — opadanie cząstek pod wpływem grawitacji (F03).
+- **Dekantacja** — zlanie cieczy znad osadu (F03).
+- **Chromatografia** — rozdzielanie składników o różnym powinowactwie do faz (F03).
+- **Powinowactwo** — skłonność składnika do przebywania w danej fazie (F03).
+- **Nukleon** — proton lub neutron (F04).
+- **Liczba atomowa Z** — liczba protonów w jądrze; określa pierwiastek (F04).
+- **Liczba masowa A** — suma protonów i neutronów w nuklidzie (F04).
+- **Nuklid** — konkretny rodzaj atomu o danym Z i A, np. ³⁵Cl (F04).
+- **Jon** — atom lub grupa atomów z ładunkiem; powstaje przez utratę lub przyjęcie elektronów (F04).
+- **Kation** — jon dodatni (oddał elektrony), np. Na⁺ (F04).
+- **Anion** — jon ujemny (przyjął elektrony), np. Cl⁻ (F04).
+- **Izotop** — atomy tego samego pierwiastka o różnej liczbie neutronów (F04).
+- **Izobar** — nuklidy o tym samym A i różnym Z (F04).

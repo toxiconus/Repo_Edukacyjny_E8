@@ -3,7 +3,7 @@ kod: F06
 uid: CHE.01.F06.uklad_okresowy
 tytul: Układ okresowy
 opis: Okres, grupa, blok · elektrony walencyjne grup głównych · metale, niemetale, półmetale · rodziny · wodór · trendy: promień, elektroujemność, energia jonizacji, charakter metaliczny
-kicker: F06 · FUNDAMENTY · MASTER v1.0
+kicker: F06 · FUNDAMENTY · MASTER v1.1
 lead: Trzecia lekcja fazy B. Wiesz już, że pierwiastek wyznacza liczba protonów Z (F04, F05). Teraz uczymy się czytać układ okresowy jak mapę:
 lead: z „adresu” pierwiastka — okresu i grupy — odczytujemy budowę zewnętrznej powłoki i przewidujemy, jak pierwiastek się zachowa.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
@@ -29,7 +29,7 @@ stopka: **CHEMIA F06 v1.0 MASTER** · Układ okresowy · 2026
 - contest | <b>Ponad LO:</b> rozwijane bloki „poziom akademicki” — przycisk w nagłówku lekcji
 :::
 
-::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to (ok. 35 min)
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
 1. **[§0.4](#diagnoza)** — diagnoza: odpowiedz, zanim zaczniesz czytać.
 2. **[§1](#mapa)–[§3](#walencyjne)** — układ jako mapa, okres i grupa, elektrony walencyjne.
 3. **[§4](#metale)–[§5](#rodziny)** — metale, niemetale, półmetale i rodziny.
@@ -85,6 +85,20 @@ stopka: **CHEMIA F06 v1.0 MASTER** · Układ okresowy · 2026
 
 **Interpretacja:** 0–2/6 — rdzeń krok po kroku, z przykładami; 3–4/6 — rdzeń, szczególnie punkty z błędami; 5–6/6 — przejdź szybko do [§7](#trendy), [§8](#bloki) i zadań transferowych w [§11](#cwiczenia).
 :::
+:::
+
+## 0.5 | Wykład — układ okresowy od zera {#wyklad}
+
+::: karta understand | Wykład — układ okresowy od zera
+Układ okresowy wisi w każdej sali chemicznej i na pierwszy rzut oka przypomina tabelę do wykucia. To błąd. To **mapa** — a kto umie ją czytać, ten z położenia pierwiastka odczyta jego budowę i przewidzi, jak się zachowa, nie ucząc się tego na pamięć.
+
+Pierwiastki są ułożone według rosnącej **liczby atomowej Z**, czyli liczby protonów. Poziome wiersze to **okresy** (jest ich 7), pionowe kolumny — **grupy** (18). Numer okresu mówi, ile **powłok elektronowych** ma atom: sód (okres 3) ma trzy powłoki — K, L, M. Numer grupy (dla grup 1–2 i 13–18) mówi, ile atom ma **elektronów walencyjnych** — tych na zewnętrznej powłoce, które biorą udział w reakcjach: dla grup 1 i 2 to liczba równa numerowi grupy, dla grup 13–18 — numer grupy minus 10 (chlor w grupie 17 ma 7 elektronów walencyjnych).
+
+To dlatego pierwiastki w jednej grupie są do siebie podobne — mają tyle samo elektronów walencyjnych. **Litowce** (grupa 1: Li, Na, K…) to miękkie, bardzo reaktywne metale, które łatwo oddają 1 elektron i tworzą jony 1+. **Berylowce** (grupa 2) oddają 2 elektrony. **Fluorowce** (grupa 17: F, Cl, Br, I) to reaktywne niemetale, które chętnie przyjmują 1 elektron i tworzą jony 1−. **Helowce** (grupa 18) mają zapełnioną powłokę zewnętrzną (oktet; hel — dublet) i prawie w ogóle nie reagują — to gazy szlachetne.
+
+Układ dzieli się też na **metale** (po lewej i w środku, ok. 3/4 pierwiastków), **niemetale** (prawy górny róg) i **półmetale** na granicy (np. krzem, german). Metale przewodzą prąd i ciepło, mają połysk, są kowalne; niemetale zwykle nie. Wyjątkowe miejsce zajmuje **wodór** — stoi w grupie 1, bo ma 1 elektron walencyjny, ale jest niemetalem i gazem.
+
+Wreszcie **trendy**: w grupie w dół rośnie promień atomu (przybywa powłok) i rośnie aktywność metali; w okresie w prawo promień maleje (jądro silniej przyciąga elektrony), a rośnie charakter niemetaliczny. Na egzaminie wystarczy umieć z położenia odczytać: liczbę powłok, liczbę elektronów walencyjnych, typ pierwiastka i najczęstszy ładunek jonu.
 :::
 
 ## 1 | Układ okresowy jako mapa, a nie tabela do zapamiętania [[basic:E8]] {#mapa}
@@ -316,6 +330,23 @@ BHP: woda chlorowa i bromowa — pod dygestorium, w rękawicach i okularach; chl
 - **Wniosek:** sód reaguje z wodą, powstaje zasada (NaOH) i wodór. Nazwa gazu to wniosek — potwierdza go próba palności („pyk”).
 :::
 
+## 9.5 | Nie myl! {#nie-myl}
+
+::: nie-myl | Pojęcia, które łatwo pomylić
+| Para | Dlaczego łatwo pomylić | Jak rozstrzygnąć |
+|---|---|---|
+| okres / grupa | oba „numery” w układzie | okres — wiersz, liczba powłok; grupa — kolumna, (dla grup głównych) elektrony walencyjne |
+| numer grupy / liczba e⁻ walencyjnych | w grupach 13–18 nie są równe | e⁻ walencyjne = numer grupy − 10 (Cl, gr. 17 → 7) |
+| Z / masa atomowa | obie liczby w polu pierwiastka | Z — liczba całkowita (protony), porządkuje układ; masa atomowa — średnia (u) |
+| metal / niemetal | granica nie jest ostra | metale — po lewej, przewodzą prąd; niemetale — prawy górny róg; półmetale na granicy |
+| wodór / litowce | ta sama grupa 1 | wodór to niemetal i gaz; litowce to metale |
+| promień w grupie / w okresie | trendy w różne strony | w dół grupy rośnie (więcej powłok); w prawo okresu maleje (silniejsze przyciąganie jądra) |
+:::
+
+::: karta understand | W skrócie — jak to zastosować w zadaniu
+Z samego położenia pierwiastka wyciągniesz cztery informacje. **Okres** → liczba powłok (S, okres 3 → 3 powłoki). **Grupa** → elektrony walencyjne (S, grupa 16 → 6). **Położenie względem „schodków”** → metal czy niemetal (S — niemetal). **Elektrony walencyjne** → typowy jon: metale grup 1–2 i glin oddają elektrony (Na⁺, Mg²⁺, Al³⁺), niemetale grup 15–17 przyjmują do oktetu (N³⁻, O²⁻, S²⁻, Cl⁻). Sprawdzenie: jon ma zwykle konfigurację najbliższego gazu szlachetnego (Na⁺ jak Ne, Cl⁻ jak Ar).
+:::
+
 ## 10 | Klinika błędów {#klinika}
 
 ::: klinika | Błąd | Poprawnie | Dlaczego?
@@ -494,6 +525,52 @@ Cl (3,16) — leży po prawej stronie tego samego okresu; Na ma 0,93.
 :::
 :::
 
+## 11.5 | Ciekawostki {#ciekawostki-plus}
+
+::: karta extra | Mendelejew zostawił puste miejsca
+Dmitrij Mendelejew w 1869 r. ułożył pierwiastki w tabelę i zostawił puste pola dla pierwiastków jeszcze nieznanych. Przewidział ich właściwości — i gdy odkryto gal, skand i german, zgadzały się z jego przewidywaniami.
+:::
+
+::: karta extra | Polskie pierwiastki
+Polon (Po) nazwała na cześć Polski Maria Skłodowska-Curie, która odkryła go razem z Piotrem Curie w 1898 r. Pierwiastek kiur (Cm) upamiętnia małżeństwo Curie, a kopernik (Cn) — Mikołaja Kopernika.
+:::
+
+::: karta extra | Gaz, który nie chce reagować
+Argon stanowi prawie 1% powietrza, a przez długi czas nikt go nie zauważył — bo prawie z niczym nie reaguje. Nazwa pochodzi od greckiego *argos* — „leniwy”. Używa się go w żarówkach i przy spawaniu.
+:::
+
+## 11.6 | Warstwa olimpijska — Dla olimpijczyka {#olimpijska}
+
+*(Warstwa ponad E8 — do zweryfikowania z wymaganiami konkretnego konkursu.)*
+
+::: karta understand | Dla olimpijczyka — układ okresowy głębiej
+**Elektroujemność** rośnie w okresie w prawo i w grupie w górę — fluor jest najbardziej elektroujemny; to wyjaśnia, które pierwiastki „przyciągają” elektrony w wiązaniach. **Aktywność metali** rośnie w dół grupy 1 (Li < Na < K) — potas reaguje z wodą gwałtowniej niż sód. **Aktywność fluorowców** maleje w dół grupy (F > Cl > Br > I). **Pierwiastki bloku d** (grupy 3–12, metale przejściowe) mają kilka typowych ładunków jonów (Fe²⁺, Fe³⁺) — dla nich reguła „numer grupy = elektrony walencyjne” nie działa w prosty sposób.
+:::
+
+::: adv | Zadanie O1 (4 pkt) — z położenia do budowy | poziom ambitny (konkurs)
+Pierwiastek leży w 3. okresie i 2. grupie. Podaj: symbol, liczbę powłok, liczbę elektronów walencyjnych i typowy jon.
+
+::: odp | Pokaż klucz
+Mg (1 pkt); 3 powłoki (1 pkt); 2 elektrony walencyjne (1 pkt); Mg²⁺ (1 pkt).
+:::
+:::
+
+::: adv | Zadanie O2 (3 pkt) — trendy | poziom ambitny (konkurs)
+Uszereguj według rosnącego promienia atomu: Cl, Na, Mg, i uzasadnij. Który z nich najłatwiej odda elektron?
+
+::: odp | Pokaż klucz
+Cl < Mg < Na (1 pkt) — w okresie w prawo jądro silniej przyciąga elektrony, promień maleje (1 pkt); najłatwiej odda elektron Na (1 pkt).
+:::
+:::
+
+::: adv | Zadanie O3 (3 pkt) — aktywność w grupie | poziom ambitny (konkurs)
+Lit, sód i potas wrzucono do wody z fenoloftaleiną. Przewidź, który zareaguje najgwałtowniej, jaką barwę przyjmie roztwór i dlaczego.
+
+::: odp | Pokaż klucz
+potas — najgwałtowniej (1 pkt); malinowa — powstaje zasada (wodorotlenek) (1 pkt); w dół grupy rośnie promień i łatwiej oddać elektron walencyjny (1 pkt).
+:::
+:::
+
 ## 12 | Test {#test}
 
 ::: test
@@ -630,6 +707,10 @@ Co to blok s? | grupy 1, 2 (i He) | extra:ambitne
 Co to blok p? | grupy 13–18 (bez He) | extra:ambitne
 Co to blok d? | grupy 3–12 | extra:ambitne
 Energia jonizacji — trend? | rośnie w prawo i w górę; wyjątki Be > B, N > O | extra:ambitne
+Mendelejew 1869 | ułożył układ i przewidział nieodkryte pierwiastki | olimpijski:uklad
+elektroujemność | rośnie w prawo i w górę; najwyższa — fluor | olimpijski:uklad
+aktywność litowców | rośnie w dół grupy (Li < Na < K) | olimpijski:uklad
+e⁻ walencyjne w grupach 13–18 | numer grupy − 10 | olimpijski:uklad
 :::
 
 ## 15 | Słownik {#slownik}
@@ -668,13 +749,13 @@ Promień atomowy :: miara rozmiaru atomu; rośnie w dół grupy, maleje w prawo 
 
 ## 17 | System powtórek {#powtorki}
 
-| Kiedy | Ile | Co |
-|---|---|---|
-| po lekcji | 20 min | karta z [§13](#powtorka) i ćwiczenia A |
-| po 1 dniu | 10 min | fiszki |
-| po 3 dniach | 15 min | ćwiczenia B i model układu: tryby „e⁻ walencyjne” i „promień atomu” |
-| po tygodniu | 20 min | test z [§12](#test) |
-| po F08 | 25 min | F06 + F07 + F08 razem — położenie ↔ konfiguracja |
+Kolejność powtórki (we własnym tempie):
+
+1. karta z [§13](#powtorka) i ćwiczenia A
+2. fiszki
+3. ćwiczenia B i model układu: tryby „e⁻ walencyjne” i „promień atomu”
+4. test z [§12](#test)
+5. F06 + F07 + F08 razem — położenie ↔ konfiguracja
 
 ## A | Dodatek A — mosty i co dalej {#mosty}
 
@@ -699,3 +780,9 @@ Promień atomowy :: miara rozmiaru atomu; rośnie w dół grupy, maleje w prawo 
 | [§9](#doswiadczenia) | `f06-doswiadczenia-v01` | pracownia: Li, Na, K + woda (fenoloftaleina); wypieranie fluorowców Cl₂/Br₂/I₂ z KBr i KI |
 
 > Dane model bierze z silnika: `ELEMENTS_54`, `ATOM_META` (powłoki), `ATOMIC_PROPS` (promień kowalencyjny), `FIRST_IONIZATION_ENERGY` (NIST). Brakujące promienie kowalencyjne (34 pierwiastki) uzupełnia `COVALENT_RADIUS_EXT` (Cordero i in. 2008) — **do weryfikacji**. Tryby F06 rozbudowują istniejący `periodic-54` (rozszerzenia.js §9) — działają też w N01.
+
+## Ulepszenie — Claude, 2026-10-11 {#ulepszenie}
+
+- Dodano: §0.5 wykład „od zera”, nie-myl + mini-wykład „W skrócie”, ciekawostki (3), warstwa olimpijska (Dla olimpijczyka + 3 zadania z kluczami), 4 fiszki olimpijskie. Nic nie usunięto.
+- Poprawione: „System powtórek” — bez minut i odstępów dni (kurs we własnym tempie), jeśli występował.
+

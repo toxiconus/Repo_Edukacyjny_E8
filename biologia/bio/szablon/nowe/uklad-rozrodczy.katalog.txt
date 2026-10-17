@@ -1,0 +1,1 @@
+| uklad-rozrodczy | schemat męskiego i żeńskiego układu rozrodczego (przełącznik), klik = funkcja narządu; zaznaczone miejsce zapłodnienia | start="meski|zenski" | U11 |

@@ -2,11 +2,12 @@
 kod: N04
 uid: 
 tytul: Sole
-opis: 
+opis: budowa soli · wzory i nazwy · dysocjacja · tabela rozpuszczalności · otrzymywanie · strącanie · wypieranie metali · hydraty · ważne sole · BHP
 kicker: N04 · MASTER LAB v1.1
 lead: Budowa, wzory i nazwy, dysocjacja, tabela rozpuszczalności, 10 metod otrzymywania, strącanie i wykrywanie jonów, wypieranie metali, hydraty, ważne sole, BHP, hydroliza (LO), sole w organizmie, doświadczenia, klinika błędów i ćwiczenia. Równania i dane — z silnika CHE (te same co w Atlasie i lekcji o kwasach).
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
 stopka: **CHEMIA N04 v1.1 MASTER LAB** · Sole · 2026
+stan: ULEPSZONA — Claude Haiku 5.5, audyt W1 wewnętrzny, 2026-10-12; do zewnętrznego W1
 ---
 ::: minimum | Muszę umieć na E8 — 10 faktów
 1. **Sól** to związek zbudowany z kationów metalu (lub NH₄⁺) i anionów reszty kwasowej; wzór ogólny M<sub>n</sub>R<sub>m</sub>. W stanie stałym — **kryształ jonowy**.
@@ -28,7 +29,7 @@ stopka: **CHEMIA N04 v1.1 MASTER LAB** · Sole · 2026
 - contest | <b>Ponad LO:</b> rozwijane bloki „poziom akademicki” — przycisk w nagłówku lekcji
 :::
 
-::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to (ok. 30 min)
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
 1. **[§1](#definicja)–[§3](#nazewnictwo)** — czym jest sól, jak z ładunków jonów ułożyć wzór i jak go nazwać.
 2. **[§4](#dysocjacja)–[§5](#rozpuszczalnosc)** — dysocjacja i tabela rozpuszczalności (R / T / N).
 3. **[§6](#otrzymywanie)** — 10 metod otrzymywania soli.
@@ -41,7 +42,7 @@ stopka: **CHEMIA N04 v1.1 MASTER LAB** · Sole · 2026
 ::: karta understand
 1. **Nie czytaj biernie.** Po każdym akapicie: „Co ja z tego zapamiętam?”.
 2. **Najpierw próbuj, potem patrz na odpowiedź.**
-3. **Powtarzaj w odstępach:** dziś → jutro → za 3 dni → za tydzień.
+3. **Powtarzaj w odstępach:** wracaj do materiału kilka razy, z przerwami, we własnym tempie.
 4. **Mów na głos.** Czytaj wzory: „Ca-CO-trzy”.
 5. **Rysuj.** Krzyżowanie ładunków, strącanie, tabela rozpuszczalności.
 6. **Łap moment „aha!”.**
@@ -55,7 +56,7 @@ stopka: **CHEMIA N04 v1.1 MASTER LAB** · Sole · 2026
 1. **Najpierw próbuj, potem czytaj.** Błąd to najlepszy nauczyciel.
 2. **Mów na głos.** Chemia wchodzi przez usta.
 3. **Rysuj.** Nawet brzydko.
-4. **Powtarzaj w odstępach.** Dziś → jutro → za 3 dni → za tydzień.
+4. **Powtarzaj w odstępach.** Wracaj do materiału kilka razy, z przerwami.
 5. **Mieszaj tematy.** Przeplatanie uczy mózg wybierać strategię.
 6. **Testuj się.** Fiszki, pytania, testy — to nie strata czasu, to nauka.
 7. **Tłumacz komuś.** Jeśli nie umiesz wytłumaczyć, nie rozumiesz.
@@ -99,6 +100,30 @@ W trzech nieopisanych probówkach są bezbarwne roztwory NaCl, Na₂SO₄ i Na�
 - kwasy: wzory, reszty kwasowe, dysocjacja; reakcje kwasów z metalami, tlenkami, wodorotlenkami i solami (N03).
 
 > Jon, wartościowość, W–K–S–K i bilans — fundamenty F02, F05–F09; tlenki — N01; wodorotlenki — N02; kwasy i szereg aktywności — N03. Jon z F02 wraca tutaj jako rzeczywisty składnik sieci jonowej i roztworu.
+:::
+
+## 0.4 | Wykład — sól od zera {#wyklad}
+
+::: karta understand | Wykład — co to właściwie jest sól?
+Weź kuchenną sól, czyli chlorek sodu. Wygląda jak białe ziarenka, ale nie ma w niej „cząsteczek soli” przypominających kulki. Tworzy ją regularna sieć, w której na przemian ułożone są jony: dodatnie jony sodu Na⁺ i ujemne jony chlorkowe Cl⁻. Każdy jon przyciąga sąsiednie jony o przeciwnym ładunku — i właśnie dlatego sól jest kryształem.
+
+Skąd bierze się sól? Najprostsza droga to zobojętnianie: kwas solny HCl i wodorotlenek sodu NaOH reagują, a z ich połączenia powstają sól i woda. Kwas dostarcza reszty kwasowej Cl⁻, zasada dostarcza metalu Na⁺, a woda powstaje z połączenia H⁺ i OH⁻. Podobnie działają inne drogi: metal z kwasem, tlenek metalu z kwasem, a nawet sól z inną solą.
+
+Jak zapisać wzór? Wystarczy bilans ładunków. Jon Ca²⁺ (ładunek +2) potrzebuje dwóch jonów Cl⁻ (−1 każdy), więc powstaje CaCl₂. Jon Al³⁺ i jon SO₄²⁻ dają po krzyżowaniu Al₂(SO₄)₃. Suma ładunków w całym wzorze zawsze wynosi zero.
+
+Jak nazwać? Najpierw reszta kwasowa, potem metal: chlorek wapnia, siarczan(VI) glinu. Cyfra rzymska w nawiasie pojawia się tylko przy metalu o zmiennej wartościowości.
+
+Czy sól się rozpuści? Tego nie widać we wzorze. Trzeba sprawdzić tabelę rozpuszczalności: azotany oraz sole sodu, potasu i amonu zwykle się rozpuszczają, a CaCO₃ (wapień) — nie. Ta wiedza jest kluczowa, bo to rozpuszczalność decyduje, czy w reakcji powstanie osad.
+
+Najczęstsza pułapka: nie każda sól jest „obojętna”. Roztwór sody (Na₂CO₃) jest zasadowy, bo jon węglanowy reaguje z wodą — to hydroliza, którą zobaczysz w §13.
+
+Pamiętaj: sól to nie mieszanina kwasu i zasady, tylko nowy związek z własną siecią jonów. Znając ładunki, zbudujesz wzór; znając tabelę, przewidzisz osad.
+:::
+
+::: karta understand | W skrócie — trzy pytania przy każdej soli
+1. Jakie jony tworzą sól (kation metalu lub amonu, anion reszty kwasowej)?
+2. Czy sól jest rozpuszczalna — zajrzyj do tabeli rozpuszczalności?
+3. Czy w reakcji wytrąca się osad? Jeśli tak, zapisz równanie jonowe i wykreśl jony widzów.
 :::
 
 ## 1 | Budowa i definicja soli [[basic:E8]] {#definicja}
@@ -208,7 +233,7 @@ Jony istnieją już w krysztale, ale są unieruchomione w sieci. W wodzie (lub w
 :::
 
 ::: adv | Czy każda sól jest mocnym elektrolitem? | poziom akademicki · poza maturą rozszerzoną
-Szkolna reguła „sole są mocnymi elektrolitami” ma wyjątki: niektóre sole metali ciężkich istnieją w roztworze częściowo jako cząsteczki lub kompleksy, np. HgCl₂ (słabo zdysocjowany) czy octan ołowiu(II) (tworzy kompleksy z jonami octanowymi).
+Szkolna reguła „sole są mocnymi elektrolitami” ma wyjątki: niektóre sole metali ciężkich istnieją w roztworze częściowo jako cząsteczki lub kompleksy, np. HgCl₂, który w roztworze występuje głównie w postaci cząsteczek.
 :::
 
 @model gfx-scene-conductivity | Przewodzenie prądu: elektrolity i dysocjacja | Scena GFX · tester przewodnictwa
@@ -476,7 +501,7 @@ To reakcja **redoks**: Fe oddaje elektrony (utlenia się), Cu²⁺ je przyjmuje 
 
 <div class="formula-lg" data-rx="cuso4Hydrate">CuSO₄ + 5 H₂O → CuSO₄·5H₂O</div>
 
-> Nazwy: CuSO₄·5H₂O — siarczan(VI) miedzi(II)—woda(1/5) (nazwa systematyczna) albo pentahydrat siarczanu(VI) miedzi(II).
+> Nazwy: CuSO₄·5H₂O — pentahydrat siarczanu(VI) miedzi(II) (nazwa z liczbą cząsteczek wody).
 :::
 
 ::: div.table-wrap
@@ -495,7 +520,7 @@ To reakcja **redoks**: Fe oddaje elektrony (utlenia się), Cu²⁺ je przyjmuje 
 ## 10 | Ważne sole — właściwości i zastosowania [[basic:E8]] {#zastosowania}
 
 ::: div.table-wrap
-<table><thead><tr><th>Sól</th><th>Nazwy zwyczajowe</th><th>Zastosowanie / występowanie</th></tr></thead><tbody><tr><td>NaCl</td><td>sól kamienna, halit</td><td>przyprawa, konserwowanie, sól drogowa, produkcja Cl₂ i NaOH, sól fizjologiczna 0,9%</td></tr><tr><td>CaCO₃</td><td>wapień, marmur, kreda</td><td>budownictwo, produkcja wapna, nawozy, pasta do zębów</td></tr><tr><td>CaSO₄·2H₂O</td><td>gips</td><td>budownictwo, opatrunki gipsowe, sztukateria</td></tr><tr><td>Na₂CO₃</td><td>soda</td><td>szkło, mydło, zmiękczanie wody</td></tr><tr><td>NaHCO₃</td><td>soda oczyszczona</td><td>proszek do pieczenia, leki zobojętniające</td></tr><tr><td>KNO₃, NaNO₃</td><td>saletra indyjska, chilijska</td><td>nawozy azotowe, proch czarny, konserwant</td></tr><tr><td>NH₄NO₃, superfosfat</td><td>saletra amonowa, nawóz fosforowy</td><td>nawozy</td></tr><tr><td>Ca₃(PO₄)₂</td><td>fosforyt (składnik kości)</td><td>nawozy fosforowe; kości i zęby (hydroksyapatyt)</td></tr><tr><td>CuSO₄·5H₂O</td><td>siny kamień</td><td>środek grzybobójczy; bezwodny — wykrywa wodę</td></tr><tr><td>AgNO₃</td><td>lapis</td><td>przyżeganie brodawek, analiza chlorków</td></tr><tr><td>BaSO₄</td><td>baryt</td><td>kontrast w badaniach RTG przewodu pokarmowego</td></tr><tr><td>MgSO₄·7H₂O</td><td>sól gorzka</td><td>kąpiele lecznicze, medycyna</td></tr><tr><td>FeSO₄</td><td>—</td><td>nawóz, preparaty żelaza przy niedokrwistości</td></tr><tr><td>KMnO₄</td><td>nadmanganian potasu</td><td>dezynfekcja, utleniacz w laboratorium</td></tr><tr><td>Na₂SO₄</td><td>sól glauberska (hydrat)</td><td>produkcja szkła i detergentów</td></tr></tbody></table>
+<table><thead><tr><th>Sól</th><th>Nazwy zwyczajowe</th><th>Zastosowanie / występowanie</th></tr></thead><tbody><tr><td>NaCl</td><td>sól kamienna, halit</td><td>przyprawa, konserwowanie, sól drogowa, produkcja Cl₂ i NaOH, sól fizjologiczna 0,9%</td></tr><tr><td>CaCO₃</td><td>wapień, marmur, kreda</td><td>budownictwo, produkcja wapna, nawozy, pasta do zębów</td></tr><tr><td>CaSO₄·2H₂O</td><td>gips</td><td>budownictwo, opatrunki gipsowe, sztukateria</td></tr><tr><td>Na₂CO₃</td><td>soda</td><td>szkło, mydło, zmiękczanie wody</td></tr><tr><td>NaHCO₃</td><td>soda oczyszczona</td><td>proszek do pieczenia, leki zobojętniające</td></tr><tr><td>KNO₃, NaNO₃</td><td>saletra indyjska, chilijska</td><td>nawozy azotowe, proch czarny, konserwant</td></tr><tr><td>NH₄NO₃</td><td>saletra amonowa</td><td>nawóz azotowy</td></tr><tr><td>Ca(H₂PO₄)₂ + CaSO₄</td><td>superfosfat</td><td>nawóz fosforowy</td></tr><tr><td>Ca₃(PO₄)₂</td><td>fosforyt (składnik kości)</td><td>nawozy fosforowe; kości i zęby (hydroksyapatyt)</td></tr><tr><td>CuSO₄·5H₂O</td><td>siny kamień</td><td>środek grzybobójczy; bezwodny — wykrywa wodę</td></tr><tr><td>AgNO₃</td><td>lapis</td><td>przyżeganie brodawek, analiza chlorków</td></tr><tr><td>BaSO₄</td><td>baryt</td><td>kontrast w badaniach RTG przewodu pokarmowego</td></tr><tr><td>MgSO₄·7H₂O</td><td>sól gorzka</td><td>kąpiele lecznicze, medycyna</td></tr><tr><td>FeSO₄</td><td>—</td><td>nawóz, preparaty żelaza przy niedokrwistości</td></tr><tr><td>KMnO₄</td><td>nadmanganian potasu</td><td>dezynfekcja, utleniacz w laboratorium</td></tr><tr><td>Na₂SO₄</td><td>sól glauberska (hydrat)</td><td>produkcja szkła i detergentów</td></tr></tbody></table>
 :::
 
 > AgNO₃ był dawniej podstawą fotografii — służył do otrzymywania światłoczułego AgBr. Sól kuchenna to NaCl, soda oczyszczona — NaHCO₃ (także na zgagę), soda kalcynowana — Na₂CO₃ (pranie, szkło), kreda — CaCO₃ (pisanie, budownictwo), gips — CaSO₄·2H₂O (budownictwo, unieruchamianie złamań).
@@ -549,7 +574,7 @@ To reakcja **redoks**: Fe oddaje elektrony (utlenia się), Cu²⁺ je przyjmuje 
 ::: karta extra | LO — sole wodorowe, hydroksosole, hydraty
 - **Wodorosole**: NaHCO₃ — wodorowęglan sodu, NaHSO₄ — wodorosiarczan(VI) sodu, NaH₂PO₄ — diwodorofosforan(V) sodu.
 - **Hydroksosole**: Mg(OH)Cl — chlorek wodorotlenek magnezu.
-- **Hydraty**: CuSO₄·5H₂O — siarczan(VI) miedzi(II)—woda(1/5), CaSO₄·2H₂O — gips.
+- **Hydraty**: CuSO₄·5H₂O — pentahydrat siarczanu(VI) miedzi(II), CaSO₄·2H₂O — gips.
 :::
 
 ::: div.table-wrap
@@ -746,7 +771,7 @@ Hipoteza: Węglan zdradzi gaz z kwasem, siarczan — osad z BaCl₂, chlorek —
 Sprzęt: Trzy probówki z próbkami każdego roztworu, HCl(aq), BaCl₂(aq), AgNO₃(aq), woda wapienna.
 Przebieg: 1) Do próbek dodajemy HCl; 2) do dwóch pozostałych — BaCl₂; 3) do ostatniej — AgNO₃.
 Obserwacja: 1) Musuje jedna próbka (gaz mętni wodę wapienną); 2) biały osad w jednej z dwóch pozostałych; 3) biały, serowaty osad w ostatniej.
-Wniosek: Musuje Na₂CO₃; osad z BaCl₂ — Na₂SO₄; osad z AgNO₃ — NaCl. Węglan trzeba usunąć pierwszy, bo z BaCl₂ i AgNO₃ też daje osady (BaCO₃, Ag₂CO₃).
+Wniosek: Musuje Na₂CO₃; osad z BaCl₂ — Na₂SO₄; osad z AgNO₃ — NaCl. Węglan rozpoznajemy pierwszy, bo z BaCl₂ i AgNO₃ też daje osady (BaCO₃, Ag₂CO₃), które mylą wynik.
 Równanie:: Na₂CO₃ + 2 HCl → 2 NaCl + H₂O + CO₂↑;  Ba²⁺ + SO₄²⁻ → BaSO₄↓;  Ag⁺ + Cl⁻ → AgCl↓
 BHP: Sole baru trujące — odpady do pojemnika; AgNO₃ plami skórę.
 
@@ -797,7 +822,7 @@ BHP: Okulary; soda drażni oczy.
 | AlSO₄ | Al₂(SO₄)₃ | Al(III), SO₄(II) → 2 Al i 3 SO₄; nawias, bo 3 grupy SO₄. |
 | CaNO₃ | Ca(NO₃)₂ | Ca(II), NO₃(I); nawias, bo 2 grupy NO₃. |
 | „chlorek sodu” = NaCl₂ | NaCl | Na(I), Cl(I) → stosunek 1 : 1. |
-| „siarczan sodu” dla Na₂SO₃ | siarczan(IV) sodu | Na₂SO₄ to siarczan(VI); trzeba podać wartościowość siarki. |
+| „siarczan sodu” dla Na₂SO₃ | siarczan(IV) sodu | Na₂SO₃ to siarczan(IV) — bez podania wartościowości siarki nazwa jest niejednoznaczna. |
 | „azotan sodu” dla NaNO₃ | azotan(V) sodu | Azot tworzy azotany(V) i azotany(III) — nazwa z wartościowością. |
 | chlorek żelaza dla FeCl₃ | chlorek żelaza(III) | Żelazo ma zmienną wartościowość — podajemy ją. |
 | FeCl₂ = chlorek żelaza(III) | chlorek żelaza(II) | Dwa Cl⁻ zrównoważą tylko Fe²⁺. |
@@ -861,6 +886,18 @@ BHP: Okulary; soda drażni oczy.
 - **Dlaczego:** Ba²⁺ tworzy z SO₄²⁻ bardzo trudno rozpuszczalny związek.
 - **Zadanie podobne:** które siarczany są nierozpuszczalne? (BaSO₄, PbSO₄)
 - **Z pułapką:** czy MgSO₄ jest rozpuszczalny? (tak — R)
+:::
+
+## 17.5 | Zadanie z przekroju materiałów — parafraza (poziom O) {#przekroj-n04}
+
+::: karta exam | Zobojętnianie — zapis równania i produkty | poziom O
+<small>▲ podobne do: plik „Przekrój materiałów: E8 i olimpiady” (sekcja 10, przykładowe pytania z chemii dla klasy 8). Rok: nieznany. Etap: nieokreślony (konkurs kuratoryjny / Olimpus — adres niepotwierdzony). Zad. 2. Druczek: plik przekroju (wgrany 2026-10-12, poza repo). Status źródła: niepotwierdzony.</small>
+
+**Parafraza (własne sformułowanie):** zapisz produkty reakcji wodorotlenku sodu z kwasem solnym i uzupełnij równanie.
+
+::: odp | Pokaż rozwiązanie
+NaOH + HCl → NaCl + H₂O. Produkty: chlorek sodu (sól) i woda. Reakcja zobojętniania.
+:::
 :::
 
 ## 18 | Ćwiczenia {#cwiczenia}
@@ -1003,7 +1040,7 @@ Fe³⁺ i Cl⁻ → FeCl₃; chlorek żelaza(III); Fe₂O₃ + 6 HCl → 2 FeCl�
 ::: ol {start="19"}
 <li>Przewidź odczyn: K₂CO₃, NH₄NO₃, KCl, CH₃COOK. Zapisz równania hydrolizy.</li>
 
-<li>Dlaczego w zapisie jonowym CaCO₃ + 2 HCl CaCO₃ zostaje w postaci cząsteczkowej? (Czyli: dlaczego w zapisie jonowym reakcji CaCO₃ + 2 HCl węglan wapnia nie jest rozpisany na jony?)</li>
+<li>Dlaczego w zapisie jonowym reakcji CaCO₃ + 2 HCl węglan wapnia nie jest rozpisany na jony?</li>
 
 <li>Co to sole kwaśne i zasadowe? Podaj przykłady. Czy roztwór soli kwaśnej musi mieć pH &lt; 7?</li>
 
@@ -1274,7 +1311,7 @@ Fe³⁺ i Cl⁻ → FeCl₃; chlorek żelaza(III); Fe₂O₃ + 6 HCl → 2 FeCl�
 </ol></div>
 
 ::: div.table-wrap
-<table><thead><tr><th>Kiedy</th><th>Co powtarzać</th><th>Ile</th></tr></thead><tbody><tr><td>po lekcji</td><td>całą lekcję przeczytaj raz</td><td>25 min</td></tr><tr><td>po 1 dniu</td><td>fiszki + karta powtórzenia</td><td>10 min</td></tr><tr><td>po 3 dniach</td><td>ćwiczenia A + B</td><td>20 min</td></tr><tr><td>po tygodniu</td><td>test + mapa myśli</td><td>20 min</td></tr><tr><td>po 2–3 tygodniach</td><td>fiszki + pułapki z kliniki</td><td>10 min</td></tr><tr><td>po miesiącu</td><td>cała lekcja + test</td><td>30 min</td></tr></tbody></table>
+<table><thead><tr><th>Co</th><th>Jak powtarzać</th></tr></thead><tbody><tr><td>cała lekcja</td><td>raz na początku, potem wracaj do niej przy kolejnych podejściach do działu</td></tr><tr><td>fiszki i karta powtórzenia</td><td>częste, krótkie sesje</td></tr><tr><td>ćwiczenia A + B</td><td>po przeczytaniu wykładu i rdzenia</td></tr><tr><td>test i mapa myśli</td><td>gdy czujesz, że materiał siedzi</td></tr><tr><td>pułapki z kliniki</td><td>przed testem</td></tr></tbody></table>
 :::
 
 > Po każdej powtórce odpowiedz na 3 pytania: Co już umiem? Co jeszcze mylę? Co mnie zaskoczyło?
@@ -1289,7 +1326,7 @@ Zawsze rozpuszczalne | sole Na⁺, K⁺, NH₄⁺ i wszystkie azotany(V)
 Wykrywanie Cl⁻ | AgNO₃ → biały osad AgCl
 Wykrywanie SO₄²⁻ | BaCl₂ → biały osad BaSO₄
 Wykrywanie CO₃²⁻ | kwas → CO₂ mętni wodę wapienną
-Cu²⁺ + OH⁻ | niebieski osad Cu(OH)₂
+Cu²⁺ + 2 OH⁻ | niebieski osad Cu(OH)₂
 Fe + CuSO₄ | FeSO₄ + Cu (wypieranie)
 Cu + ZnSO₄ | brak reakcji
 Wapno palone / gaszone | CaO / Ca(OH)₂
@@ -1385,7 +1422,7 @@ Twardość wody :: zawartość jonów Ca²⁺ i Mg²⁺ w wodzie
 <tr><td><a href="#otrzymywanie">§6</a></td><td><code>chain-scn</code></td><td>łańcuch przemian pierwiastek → tlenek → kwas → sól</td></tr>
 <tr><td><a href="#stracanie">§7</a></td><td><code>rownania-jonowe-v01</code></td><td>równania jonowe pełne i skrócone</td></tr>
 <tr><td><a href="#wypieranie">§8</a></td><td><code>kw-szereg-metali-v01</code></td><td>szereg aktywności metali</td></tr>
-<tr><td><a href="#doswiadczenia">§16</a></td><td><code>sole-doswiadczenia-v01</code></td><td>pracownia: 27 doświadczeń w zlewce („Zobacz w zlewce” przy doświadczeniach 1–10 i w §13)</td></tr>
+<tr><td><a href="#doswiadczenia">§16</a></td><td><code>sole-doswiadczenia-v01</code></td><td>pracownia: zlewki do doświadczeń 1–10 (§16) i do odczynu soli (§13)</td></tr>
 <tr><td><a href="#typologia">§19</a></td><td><code>stech-kalkulator-v01</code></td><td>obliczenia: masa osadu, mole</td></tr>
 </tbody></table>
 :::

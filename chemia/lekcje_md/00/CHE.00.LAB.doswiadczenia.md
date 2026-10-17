@@ -848,6 +848,16 @@ Kolejność odczynników bywa częścią BHP i wyniku. Próba kontrolna / ślepa
 
 <!-- ==================== END L011 ==================== -->
 
+
+## Mnemotechniki — przeniesione z F12
+
+::: karta understand | Sposoby pamięciowe
+Kwas do wody: przy rozcieńczaniu zawsze lej kwas do wody, nie odwrotnie (BHP).
+Zapach — wachluj: zapach gazu sprawdzaj ruchem dłoni, nie nosem przy naczyniu (BHP).
+Kontakt — płucz wodą: po kontakcie z substancją żrącą płucz obficie wodą.
+Obserwacja ≠ wniosek: najpierw opisz, co widzisz; wniosek to dopiero interpretacja.
+:::
+
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
 > Źródło: `chemia/plany/audyty/W1_perplexity_O08-X04_2026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.

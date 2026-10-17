@@ -1,0 +1,18 @@
+/* motyw pol (Język polski) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#7a2848;--accent-dark:#561a32;--accent-soft:#f6e9ee;--accent-line:#e2c3cf;--accent-glow:rgba(122,40,72,.15);--hl-key:#7a2848;--hl-key-bg:#f3dfe7;--hl-formula:#561a32;--hl-formula-bg:#f6e9ee;--bg:#fbfafa;--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 140 200%27%3E%3Ctext x=%276%27 y=%27120%27 font-family=%27Georgia,serif%27 font-size=%27150%27 fill=%27%237a2848%27%3E%E2%80%9E%3C/text%3E%3Ctext x=%2760%27 y=%27190%27 font-family=%27Georgia,serif%27 font-size=%2770%27 font-style=%27italic%27 fill=%27%237a2848%27%3EAa%3C/text%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#e58aa8;--accent-dark:#f4bcd0;--accent-soft:#2e1a22;--accent-line:#5a3242;--accent-glow:rgba(229,138,168,.2);--hl-key:#f0a3bd;--hl-key-bg:#38202a;--hl-formula:#f4bcd0;--hl-formula-bg:#2e1a22;}}
+:root[data-theme=dark]{--accent:#e58aa8;--accent-dark:#f4bcd0;--accent-soft:#2e1a22;--accent-line:#5a3242;--accent-glow:rgba(229,138,168,.2);--hl-key:#f0a3bd;--hl-key-bg:#38202a;--hl-formula:#f4bcd0;--hl-formula-bg:#2e1a22;}
+
+/* przykłady i cytaty literackie krojem szeryfowym */
+.hero h1{font-family:var(--serif);font-weight:700;letter-spacing:-.2px}
+.part-heading{font-family:var(--serif);letter-spacing:0}
+.przyklad,.lk-quote blockquote{font-family:var(--serif)}
+.przyklad{display:block;margin:8px 0;padding:6px 0 6px 14px;border-left:2px solid var(--accent-line);font-size:16.5px;line-height:1.7}
+/* części zdania — szkolne oznaczenia (podkreślenia) */
+.z-pod{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+.z-orz{text-decoration:underline double;text-decoration-thickness:1.5px;text-underline-offset:4px}
+.z-prz{text-decoration:underline wavy;text-decoration-thickness:1.5px;text-underline-offset:4px}
+.z-dop{text-decoration:underline dashed;text-decoration-thickness:2px;text-underline-offset:4px}
+.z-oko{text-decoration:underline dotted;text-decoration-thickness:2.5px;text-underline-offset:5px}
+.z-leg{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--text-soft);margin:6px 0 12px}
+.z-pod,.z-orz,.z-prz,.z-dop,.z-oko{text-decoration-color:var(--accent)}

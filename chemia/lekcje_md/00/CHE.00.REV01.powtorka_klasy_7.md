@@ -1655,7 +1655,7 @@ HTML referencyjny: aktualizowany `L001-CHEMIA-Powtorka-Klasy7.html`.
   · powód „kwas do wody”  
   · usunięte pytanie o nietrwały SO  
   · zadania o siarce oparte na konkretnych związkach  
-  · diagnostyka fundamentów (5 min)  
+  · diagnostyka fundamentów  
   · ulepszone sformułowania wiązań i NaCl jako jednostka sieci  
 - Wersja 2.3 — rozszerzona po analizie redakcyjno-merytorycznej:  
   · **KLINIKA BŁĘDÓW** jako realna sekcja 6.5 z tabelą błędów i ćwiczeniami.  

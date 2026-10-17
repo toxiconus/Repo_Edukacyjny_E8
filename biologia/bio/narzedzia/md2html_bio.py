@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""md → HTML lekcji BIO. Parser wspólny z chemią (chemia/che/narzedzia/md2html.py), wygląd i grafiki własne.
+"""md → HTML lekcji BIO — od 2026-10-09 na wspólnym szablonie (szablon/, motywy/bio.css); stary wygląd: build_stary(). Parser wspólny z chemią (chemia/che/narzedzia/md2html.py), wygląd i grafiki własne.
 Użycie: python3 biologia/bio/narzedzia/md2html_bio.py [md/L010_*.md ...]   → biologia/bio/dist/<plik>.html (+ index.html)
-Wynik: jeden samodzielny plik HTML (style + bio-viz.js w środku) — działa offline i na telefonie.
+Wynik: jeden samodzielny plik HTML (style + bio-core.js + tylko użyte wizualizacje/<id>.js) — działa offline i na telefonie.
 
 Dodatki składni (ponad SZABLON_LEKCJI.md chemii):
-  @viz <id> {klucz="wartość" ...} | Tytuł | podpis     → grafika z biblioteki szablon/bio-viz.js (lista: BIO_KATALOG.md)
+  @viz <id> {klucz="wartość" ...} | Tytuł | podpis     → grafika z szablon/wizualizacje/<id>.js (lista i lekcje: BIO_KATALOG.md, generuje katalog_wizualizacji.py)
   @opis tekst                                           → OBOWIĄZKOWO pod każdym @viz/obrazem: co widać + wniosek (HTML: <!-- OPIS -->)
   ::: mity | nagłówek                                   → karty „mit → poprawka”, linie:  mit || poprawka
   ::: drzewo                                            → mapa pojęć z listy wcięć (2 spacje = poziom)
@@ -97,7 +97,13 @@ BAR = ('<div class="bio-bar" role="toolbar" aria-label="Narzędzia lekcji">'
        '<span class="bio-bar-title">%s</span>'
        '<a class="bio-bar-btn" href="#main" aria-label="Na górę">↑</a></div>')
 
+sys.path.insert(0, os.path.join(REPO, 'narzedzia'))
+import lekcja_html as LH   # wspólny szablon wszystkich przedmiotów (szablon/, motyw bio)
+
 def build(path):
+    return LH.render(path, 'bio')
+
+def build_stary(path):
     src = _open(path, encoding='utf-8').read()
     tmp = tempfile.NamedTemporaryFile('w', suffix='.md', delete=False, encoding='utf-8')
     tmp.write(preprocess(src)); tmp.close()

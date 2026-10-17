@@ -79,7 +79,7 @@ Użycie w md: `@model <id> | Tytuł przycisku | co pokazuje`. „Lekcje” = gdz
 | `obtaining-three` | Trzy drogi otrzymywania kwasów |  |
 | `atomBohr` (komponent canvas, `CHE.LAB.atomBohr`, `.anim`) | Rysunek atomu z atlasu (bohr `_anon_004`) bez stanu atlasu: jądro p/n, powłoki „K · 2/2”, elektrony wewn./walencyjne, opcjonalnie `cfg` podpowłok (engine/src/dodatki/atlas-gfx.js) | F05, F07, atlas (po podmianie) |
 | `orbitalCloud` (komponent canvas, `CHE.LAB.orbitalCloud`) | Chmura orbitalna z atlasu: `{sub:'2p', type:'pz'|'s'|'dz2'|'dxy', zoom}`; ψ>0/ψ<0, węzły (engine/src/dodatki/atlas-gfx.js) | atlas (używa), F07+ |
-| `atomSVG` (komponent, `CHE.LAB.atomSVG`) | Model atomu SVG: jądro p/n + elektrony; `powloki:true` → powłoki K–N 2,8,8 (kolory atlasu) (rozszerzenia.js) | F05, F07 |
+| `atomBohr` (komponent, `CHE.LAB.atomBohr` / `CHE_GFX.atomBohr`) | Model atomu z atlasu (canvas): jądro p/n, obręcz neutronów ponad najczęstszy izotop, powłoki K–Q (bez `cfg` 2,8,8), zoom, lupa, podświetlenia; `.anim()` (engine/src/komponenty/atlas-gfx.js) — `atomSVG` usunięty 2026-10-09 | atlas, F05, F07 |
 | `f05-izotopy-v01` | Konstruktor atomu: zmiana p/n/e → inny pierwiastek / izotop / jon + masa atomowa jako średnia ważona (rozszerzenia.js §8) | F05 |
 | `periodic-54` | Układ okresowy — pierwiastki 1–54, modele atomów, tlenki; **tryby F06** (rozszerzenia.js §9): okres i grupa, blok s/p/d, e⁻ walencyjne, promień kowalencyjny, I energia jonizacji, karta „adres → elektrony → przewidywanie”; stan testowy `host._st.set(symbol, tryb)` | N01, F06 |
 | `ph-indicators-v03` | Panel pH — wskaźniki, roztwory, drabinka · v0.05 | N02, N03 |
@@ -119,6 +119,7 @@ Użycie w md: `@model <id> | Tytuł przycisku | co pokazuje`. „Lekcje” = gdz
 | `f10-energia-h2-v01` | Energia dwóch atomów wodoru — skąd się bierze wiązanie | (F10) |
 | `f15-dipol-v01` | Wektory dipola — polarność wiązań a polarność cząsteczki | (F15) |
 | `f17-bilans-v01` | Bilans równania reakcji — atomy i ładunek | (F17) |
+| `r03-krzyz-v01` | Reguła krzyżowa — mieszanie roztworów: krzyż, huśtawka mas, części → gramy, kontrola bilansem | R03A |
 | `fiz02-obwod-v01` | Obwód z dwiema żarówkami — szeregowo i równolegle | (FIZ-02) |
 
 - `n05-doswiadczenia-v01`: `cah2H2o`, `nahH2o`, `nh4clCaoh2`, `naclH2so4`, `fesHcl`, `nh3H2oPhp`, `hclH2oOranz`, `h2sH2oUni`, `nh3Hcl`, `h2sPbac`, `h2sCuso4`, `caOH2Co2`
@@ -127,6 +128,10 @@ Użycie w md: `@model <id> | Tytuł przycisku | co pokazuje`. „Lekcje” = gdz
 
 **Nowa pracownia bez pisania kodu widoku:** `C.EXT_PRACOWNIA(id, tytuł, podpowiedź, [[grupa,[klucze]]…], {klucz:{war,wn,bhp,eq,obs,btn}}, stopka)` (rozszerzenia.js §5). Spec zlewki może mieć `vessel`: `beaker` (domyślnie, wszystkie efekty), `testTube`, `crucible`, `flask`, `cylinder`; `evapDish` rysuje tylko ciecz (bez osadu i pary). Lekcja musi mieć `@model <id-pracowni>` — inaczej przyciski `@zlewka` nie mają gdzie się otworzyć. `noRx:1` zatrzymuje animację (bez zmian w zlewce).
 
-**Braki GFX do zbudowania od podstaw:** magnes (Fe + S), lód pływający, osad i para w parownicy, płomień przy spalaniu w tyglu; rozdzielanie mieszanin (F03), ~~energia wiązania (F10), polarność/dipol (F15), dobieranie współczynników (F17)~~ — zrobione 2026-10-09 (§11 rozszerzenia.js, z wzorcowni).
+**Braki GFX do zbudowania od podstaw:** ~~magnes (Fe + S)~~ — `f02-magnes-fes-v01` (§G rozszerzenia.js, F02, 2026-10-10), lód pływający, osad i para w parownicy, płomień przy spalaniu w tyglu; rozdzielanie mieszanin (F03), ~~energia wiązania (F10), polarność/dipol (F15), dobieranie współczynników (F17)~~ — zrobione 2026-10-09 (§11 rozszerzenia.js, z wzorcowni).
 
 **Jak dodać nową zlewkę:** w `rozszerzenia.js` dopisz spec do obiektu zlewek (`n` nazwa, `solid`, `l0`/`l1` barwa przed/po — np. `['ind-fenoloftaleina',12]`, `ppt` osad, `gas` H2/O2/CO2/NH3/HCl/H2S/Cl2/NO2…, `bubN` ilość pęcherzyków, `heat`/`T`, `fumes`, `teacher`, `why`, `eq`) i rekord reakcji (bilans sprawdza silnik). Barwy osadów: `ppt-agcl`, `ppt-baso4`, `ppt-caco3`, `ppt-cus`, `ppt-pbs`, `ppt-cu-oh-2`, `ppt-fe-oh-3`… (pełna lista w CHE.COLORS); jony: `ion-cu2`, `ion-fe2`, `ion-fe3`, `ion-ni2`, `ion-cr3`, `ion-mn2`; wskaźniki: `ind-uniwersalny`, `ind-fenoloftaleina`, `ind-oranz-metylowy`, `ind-lakmus`, `ind-bbt`, `ind-kapusta`.
+
+
+## Autoodtwarzanie (2026-10-11)
+`CHE.AUTO(el, krok, ms, {now})` w `engine/src/lekcja/nawigacja.js` (pełne i lekkie lekcje). Skaner co 2,5 s podpina modele w `.che-lesson-viz-slot`, `[data-che-viz]`, `[data-che-zlewka]`: przycisk „▶ krok” → krok co 2,2 s, na końcu „od nowa”; „▶ powtórz / odtwórz / wykonaj” → powtarzanie doświadczenia co 8 s (kilka zlewek — po kolei co 4,5 s). Działa tylko przy widocznym modelu; kliknięcie w model zatrzymuje, przycisk wznawia; `prefers-reduced-motion` — wyłączone. Nowy model z animacją: wystarczy przycisk z jednym z tych napisów albo własne wywołanie `CHE.AUTO`.

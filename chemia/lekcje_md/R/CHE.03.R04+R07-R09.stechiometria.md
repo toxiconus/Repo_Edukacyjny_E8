@@ -3,6 +3,7 @@ kod: "R04; R07–R09"
 tytul: "LEKCJA L009 — STECHIOMETRIA"
 zrodla: "CHEMIA_PODSTAWA_PLUS v1.1 (CHE.03.R05-R08.stechiometria.md)"
 opis: "Materiał roboczy lekcji (nie gotowa lekcja). Spis i zakres: chemia/plany/CHE_SPIS_TRESCI.md"
+stan: W23 — GPT-6, 2026-10-09; audyt celowany i poprawki punktowe, pełna niezależna recenzja nadal otwarta
 ---
 <!-- ==================== BEGIN L009 ==================== -->
 
@@ -1114,6 +1115,30 @@ Wydajność = m_rzecz / m_teor · 100%. Reagent ograniczający = ten, który pie
 
 <!-- ==================== END L009 ==================== -->
 
+## UZUPEŁNIENIE KANONICZNE W8 — MOL, STECHIOMETRIA I WYDAJNOŚĆ
+
+### [[extra:AMBITNE]] Mol i masa molowa
+
+Mol jest jednostką ilości substancji. Jeden mol zawiera dokładnie 6,02214076·10²³ określonych obiektów elementarnych. Liczba Avogadra ma jednostkę mol⁻¹. Zawsze określ, czy liczysz mole atomów, cząsteczek, jonów czy jednostek wzoru. Masa molowa M to masa jednego mola określonych obiektów i ma jednostkę g/mol; nie jest masą jednej cząsteczki. Dla związku jonowego mówimy precyzyjnie o molu jednostek wzoru.
+
+Zależności: N = nNₐ; n = N/Nₐ; n = m/M; m = nM. Przykład: 0,5 mola H₂O to około 3,01·10²³ cząsteczek. M(CO₂) = 12 + 2·16 = 44 g/mol; M(Al₂(SO₄)₃) = 2·27 + 3·(32 + 4·16) = 342 g/mol (masy atomowe są tu szkolnymi wartościami zaokrąglonymi).
+
+### Stechiometria reakcji
+
+Współczynniki zbilansowanego równania określają stosunki liczby cząsteczek/jednostek wzoru, a w obliczeniach molowych — stosunki moli. Nie są bezpośrednio stosunkami mas. Na poziomie szkoły podstawowej można porównywać masy przez stosunek mas wynikający ze wzoru i mas atomowych; obliczenia molowe oznaczaj jako rozszerzenie.
+
+### Reagent ograniczający i wydajność
+
+Jeżeli reagenty są użyte w ilościach niezgodnych ze stosunkiem stechiometrycznym, jeden z nich zużyje się jako pierwszy i ograniczy ilość produktu — to reagent ograniczający. Najpierw przelicz dostępne ilości na wspólną podstawę i porównaj ze współczynnikami równania. Wydajność procentowa = (ilość produktu rzeczywiście otrzymana / ilość teoretyczna) · 100%. W liczniku i mianowniku muszą być porównywalne wielkości (np. obie masy albo oba uzyski molowe). Rzeczywista wydajność może być mniejsza od teoretycznej z powodu reakcji ubocznych, strat i niepełnego przebiegu; nie należy zakładać 100% bez danych.
+
+### Sprawdź się
+
+1. Ile moli stanowi 3,011·10²³ cząsteczek? **0,5 mol.**
+2. Masa 0,25 mola CaCO₃, przy M ≈ 100 g/mol: **25 g.**
+3. M(Na₂CO₃), przy szkolnych masach atomowych: **106 g/mol.**
+4. Ile atomów tlenu przypada na 2 mole CO₂? **4 mole atomów O, czyli około 2,41·10²⁴ atomów.**
+5. Jeżeli uzyskano 8 g produktu, a teoretycznie mogło powstać 10 g, wydajność wynosi **80%**.
+
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
 > Źródło: `chemia/plany/audyty/W1_perplexityR03-R09₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
@@ -1123,6 +1148,8 @@ Wydajność = m_rzecz / m_teor · 100%. Reagent ograniczający = ten, który pie
 > Uwaga przy scalaniu: Mol i masa molowa — poziom LO / konkurs (poza podstawą SP). W lekcji używać nazwy „tlenek węgla(IV)” zamiast „dwutlenek węgla”.
 
 #### Poprawki
+
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
 
 - Mol jest jednostką ilości substancji w układzie SI.
 - Jeden mol zawiera dokładnie 6,02214076·10²³ obiektów elementarnych.
@@ -1206,6 +1233,8 @@ Liczba atomów:
 
 #### Poprawki
 
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
 - Współczynniki w zbilansowanym równaniu określają stosunki molowe reagujących substancji.
 - Nie wolno odczytywać współczynników jako stosunków mas bez dodatkowych obliczeń.
 - Najpierw trzeba zbilansować równanie, a dopiero potem wykonywać obliczenia.
@@ -1270,6 +1299,8 @@ Stosunek Mg:MgO=1:1, więc:
 
 #### Poprawki
 
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
 - Reagent ograniczający to substrat, który zostanie zużyty jako pierwszy i ograniczy maksymalną ilość produktu.
 - Reagent w nadmiarze pozostanie częściowo po zakończeniu reakcji.
 - Nie wolno określać reagenta ograniczającego wyłącznie na podstawie mniejszej masy.
@@ -1285,6 +1316,8 @@ Stosunek Mg:MgO=1:1, więc:
  2H₂+O₂→2H₂O
 
 Dane:
+
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
 
 - 3 mole H₂;
 - 1 mol O₂.
@@ -1327,6 +1360,8 @@ zmieszano 3 mole magnezu i 2 mole tlenu. Oblicz reagent ograniczający i ilość
 ### R09 — Wydajność reakcji
 
 #### Poprawki
+
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
 
 - Wydajność reakcji porównuje ilość produktu rzeczywiście otrzymanego z ilością produktu teoretycznie możliwego do otrzymania.
 - Wzór:
@@ -1379,3 +1414,8 @@ Teoretycznie powinno powstać 20 g produktu, a otrzymano 16 g:
 8. Do rozcieńczania stosuj zachowanie liczby moli substancji.
 9. Wydajność licz na podstawie ilości teoretycznej i rzeczywistej.
 10. Wynik zawsze zapisuj z jednostką i kontroluj jego sens fizyczny.
+
+
+## W23 — stechiometria (2026-10-09, GPT-6)
+
+Sprawdzono wybrane przykłady reagenta ograniczającego, nadmiaru i wydajności. Wyniki dotyczą wskazanych zadań; pełna walidacja wszystkich rachunków i kluczy pozostaje otwarta.

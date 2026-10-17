@@ -29,7 +29,7 @@ stopka: **CHEMIA REV01 v1.0** · Powtórka fundamentów z klasy 7 · 2026
 - extra | <b>Dla ambitnych:</b> trendy okresowe, elektroujemność i polaryzacja, rozpuszczalność, zapis jonowy, podpowłoki, izobary, P₄O₁₀, wyjątki od oktetu, alotropia
 :::
 
-::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to (ok. 45 min)
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
 1. **[§0.4](#diagnoza)** — diagnoza: odpowiedz, zanim zaczniesz czytać.
 2. **[§2](#atom)–[§3](#uklad)** — atom, jon, układ okresowy.
 3. **[§4](#wartosciowosc)–[§5](#wzory)** — wartościowość i wzory (kluczowy temat).
@@ -99,6 +99,22 @@ Atom może tworzyć wiązania. **Wartościowość mówi, iloma „rękami” ato
 :::
 :::
 
+## 0.5 | Wykład — chemia od zera {#wyklad}
+
+::: karta understand | Wykład — po co chemikowi słownik i reguły
+Chemia opisuje substancje (ich skład i właściwości) oraz przemiany, w których jedne substancje zamieniają się w inne. Żeby o tym mówić precyzyjnie, potrzebujemy kilku pojęć: pierwiastek to rodzaj atomów o tej samej liczbie protonów, związek to substancja złożona z różnych pierwiastków w stałym stosunku, a mieszanina to zlepek substancji, które nie łączą się chemicznie.
+
+Ta powtórka porządkuje to, co wiesz z klasy 7: bezpieczeństwo w pracowni, budowę atomu, układ okresowy, wartościowość, wzory i równania. Każdy z tych tematów jest szczegółowo rozwinięty w kolejnych lekcjach bloku F.
+:::
+
+::: karta understand | W skrócie — pięć kroków przy każdym zadaniu chemicznym
+1. Nazwij, czego dotyczy zadanie (substancja, reakcja, obliczenie).
+2. Zapisz dane i jednostki.
+3. Wybierz regułę (wartościowość, oktet, bilans masy).
+4. Wykonaj obliczenie lub zapis.
+5. Sprawdź wynik: czy masa się zgadza, czy suma stopni jest zerem, czy sens fizyczny jest poprawny.
+:::
+
 ## 1 | BHP i szkło laboratoryjne [[basic:E8]] {#bhp}
 
 ::: karta core | Zasady obowiązkowe
@@ -134,6 +150,10 @@ Rozcieńczanie kwasu wydziela dużo ciepła. Woda wlana do stężonego kwasu mo�
 | Moździerz | rozdrabnianie substancji stałych |
 | Eksykator | przechowywanie w suchym środowisku |
 | Chłodnica | skraplanie par w destylacji |
+
+::: karta understand | W skrócie: po co atomowi dwie liczby
+Liczba atomowa Z mówi, ile jest protonów, a więc jaki to pierwiastek. Liczba masowa A to suma protonów i neutronów, czyli to, ile „waży” jądro. Te dwie liczby nie są tym samym: ten sam pierwiastek może mieć różną liczbę neutronów (izotopy).
+:::
 
 ## 2 | Budowa atomu, izotopy, jony [[basic:E8]] {#atom}
 
@@ -214,6 +234,10 @@ To wyjaśnia, dlaczego metale oddają elektrony, a niemetale je przyjmują.
 :::
 
 **Skąd nazwy:** *atomos* (gr.) — „niepodzielny”; *ion* — „wędrujący” (jony wędrują w roztworze podczas przepływu prądu); kation — idzie ku katodzie (+), anion — ku anodzie (−); alkaliczne — od alkaliów (zasad: NaOH, KOH); fluorowce (halogeny) — „tworzące sole” (NaCl); chalkogeny — „tworzące rudy”; gazy szlachetne — dawniej uważane za niemal niereaktywne.
+
+::: karta understand | W skrócie: wartościowość to liczba „haczyków”
+Każdy atom ma tyle „haczyków” do łączenia się z innymi, ile wynosi jego wartościowość. Gdy połączysz dwa atomy, haczyki się łączą. Dlatego w wzorze NaCl sód i chlor mają po jednym haczyku, a w H₂O tlen ma dwa, bo łączy się z dwoma atomami wodoru.
+:::
 
 ## 4 | Wartościowość — kluczowy temat [[basic:E8]] {#wartosciowosc}
 
@@ -388,6 +412,10 @@ W szkolnym modelu atomy tworzą wiązania, bo układ elektronów w związku jest
 ::: karta extra | Elektroujemność i polaryzacja
 **Elektroujemność** — miara zdolności atomu do przyciągania elektronów w wiązaniu; ogólnie rośnie w prawo i w górę, największa — **fluor**. To trend, nie automat: duża różnica elektroujemności **zwykle sprzyja** wiązaniu o silnym charakterze jonowym, mała — kowalencyjnemu; to wskazówka, nie test rozstrzygający. W klasie 7/8 najpierw stosuj prostszą regułę (metal + niemetal → jonowe; niemetale → kowalencyjne).
 Polaryzacja: niespolaryzowane — takie same atomy (H₂, Cl₂); spolaryzowane — różne niemetale (HCl, H₂O): para elektronowa silniej przyciągana przez jeden atom.
+:::
+
+::: karta understand | W skrócie: równanie to bilans, jak rachunek w sklepie
+Po obu stronach strzałki musi być tyle samo każdego pierwiastka, jak w rachunku: ile wchodzi, tyle wychodzi. Nie zmieniamy indeksów we wzorach (to tak, jakby zmienić cenę towaru); dopisujemy tylko współczynniki (ile sztuk bierzemy).
 :::
 
 ## 7 | Równania reakcji [[basic:E8]] {#rownania}

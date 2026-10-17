@@ -123,7 +123,6 @@
   "anon001/audyt/s077.js",
   "anon001/audyt/s078.js",
   "anon001/dane-pierwiastki/s080.js",
-  "anon001/dane-pierwiastki/s086.js",
   "anon001/dane-termo-redoks/s090.js",
   "anon001/dane-termo-redoks/s091.js",
   "anon001/audyt/s101.js",
@@ -396,7 +395,12 @@
   "css 09_root.css: -1 → 1.54 MB",
   "css 10_kw-top.css: -1 → 1.54 MB",
   "drop_css cofnięte: test nie widzi wyglądu — CSS tylko z oceną wizualną",
-  "widoki nieużywane: -3 → 1.55 MB"
+  "widoki nieużywane: -3 → 1.55 MB",
+  {
+   "zmiana": "przywrócona sekcja anon001/dane-pierwiastki/s086.js (CHE.DATA.FIRST_IONIZATION_ENERGY) — potrzebna od rozszerzenia F06 periodic-54 (energia jonizacji); bez niej F06 i N01_tlenki różnią się od pełnego silnika",
+   "data": "2026-10-09",
+   "kto": "Claude"
+  }
  ],
  "drop_css": [],
  "lekcje": [

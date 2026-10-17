@@ -6,6 +6,7 @@ wymaga: "F12; F16"
 poglebia: "F19; R07; X01–X09"
 zrodla: "MASTER v17.0; MASTER v15.0; stary kanon F00–F09 (v4.1/v5.0); stary podział CHE.01.F09.rownania_reakcji.md"
 opis: "Materiał roboczy lekcji (nie gotowa lekcja). Spis i zakres: chemia/plany/CHE_SPIS_TRESCI.md"
+stan: W6 — GPT-6, 2026-10-09; poprawki wprowadzone do treści kanonicznej, wymaga niezależnej recenzji chemicznej
 ---
 # CHE.01F.17-RÓWNANIA — RÓWNANIA REAKCJI, BILANS ATOMÓW I ŁADUNKU
 
@@ -1540,11 +1541,46 @@ R08 wydajność
 <!-- ŹRÓDŁO: kanon CHE.core.md (archiwum v0_57), blok główny w. 7113–7894 -->
 # F09 — RÓWNANIA REAKCJI (Fundamenty)
 
+## UZUPEŁNIENIE KANONICZNE W6 — PROCEDURA BILANSOWANIA
+
+### Zasady
+
+Najpierw ustal poprawne wzory substratów i produktów, a dopiero potem bilansuj. W równaniu chemicznym zachowuje się liczbę atomów każdego pierwiastka; w równaniu jonowym trzeba dodatkowo zachować całkowity ładunek. Zmieniamy wyłącznie współczynniki przed wzorami. Indeksy są częścią wzoru substancji i ich zmiana oznaczałaby inną substancję. Współczynnik 1 pomija się. Stany skupienia zapisuje się jako (s) — ciało stałe, (l) — ciecz, (g) — gaz, (aq) — roztwór wodny, gdy są istotne. Warunki i katalizator można zapisać nad strzałką. Symbole ↑ i ↓ stosuj tylko wtedy, gdy są uzasadnione konwencją i opisem reakcji.
+
+### Procedura
+
+1. Zapisz poprawne wzory substratów i produktów.
+2. Policz atomy każdego pierwiastka po obu stronach.
+3. Dobieraj współczynniki; często zostaw H i O na koniec, jeśli występują w wielu związkach.
+4. Nie zmieniaj indeksów.
+5. Sprowadź współczynniki do najmniejszych liczb całkowitych.
+6. Ponownie policz wszystkie atomy; w równaniu jonowym policz także ładunek.
+
+### Przykłady
+
+- 4Al + 3O₂ → 2Al₂O₃
+- 4Fe + 3O₂ → 2Fe₂O₃
+- C₃H₈ + 5O₂ → 3CO₂ + 4H₂O
+- 2Fe(OH)₃ → Fe₂O₃ + 3H₂O
+- 2Al + 6HCl → 2AlCl₃ + 3H₂
+
+Dla strącania chlorku srebra równanie jonowe skrócone ma postać: **Ag⁺ + Cl⁻ → AgCl(s)↓**. Atomy i ładunek są zachowane. Równanie reakcji nie jest równoznaczne z mechanizmem reakcji — nie pokazuje koniecznie wszystkich etapów pośrednich.
+
+### Sprawdź się — klucz
+
+1. H₂ + O₂ → H₂O: **2H₂ + O₂ → 2H₂O**.
+2. Mg + HCl → MgCl₂ + H₂: **Mg + 2HCl → MgCl₂ + H₂**.
+3. NaOH + H₂SO₄ → Na₂SO₄ + H₂O: **2NaOH + H₂SO₄ → Na₂SO₄ + 2H₂O**.
+4. Fe(OH)₃ → Fe₂O₃ + H₂O: **2Fe(OH)₃ → Fe₂O₃ + 3H₂O**.
+5. Al + HCl → AlCl₃ + H₂: **2Al + 6HCl → 2AlCl₃ + 3H₂**.
+
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
 > Źródło: `chemia/plany/audyty/W1_perplexity_F15-F21₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
 
-### Poprawki
+### Poprawki — status wdrożenia
+
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W6”.
 
 - Równanie reakcji musi spełniać zasadę zachowania atomów.
 - W reakcjach jonowych należy dodatkowo zachować całkowity ładunek.
@@ -1560,7 +1596,7 @@ R08 wydajność
 - Katalizator i warunki reakcji zapisuje się nad strzałką.
 - Równanie reakcji nie jest równoważne opisowi mechanizmu reakcji.
 
-### Uzupełnienia
+### Uzupełnienia — status wdrożenia
 
 #### Procedura bilansowania
 

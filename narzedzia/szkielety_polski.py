@@ -1,7 +1,7 @@
 """Szkielety podstawowych lekcji języka polskiego (części mowy, składnia, środki stylistyczne) do wypełnienia przez inne LLM.
 
 Użycie:  python3 narzedzia/szkielety_polski.py
-Wynik:   polski/podstawy/PL_<KOD>_<nazwa>.md  (po jednym pliku na lekcję, stan: PUSTY — nie nadpisuje plików już wypełnionych)
+Wynik:   polski/podstawy/POL.<02|03>.<KOD>.<nazwa>.md  (po jednym pliku na lekcję, stan: PUSTY — nie nadpisuje plików już wypełnionych)
          eksport/out/DO_WYPELNIENIA_PL_podstawy.md  (prompt + wszystkie puste szkielety w jednym pliku — do wysłania do LLM)
 Wypełnioną odpowiedź LLM wkleja się do pliku lekcji (zastępując linie „DO UZUPEŁNIENIA”) i zmienia „stan: PUSTY” na „stan: WYPEŁNIONY — <model>, <data>”.
 """
@@ -210,7 +210,7 @@ def main():
     pliki, pominiete = [], []
     for dane, sek, rodzaj in ((GRAMATYKA, SEKCJE_G, "gramatyka — części mowy i składnia"), (STYL, SEKCJE_S, "środki stylistyczne")):
         for kod, nazwa, tytul, lead, zakres, pulapki, pow in dane:
-            p = os.path.join(OUT, f"PL_{kod}_{nazwa}.md")
+            p = os.path.join(OUT, f"POL.{'02' if kod.startswith('G') else '03'}.{kod}.{nazwa}.md")
             if os.path.exists(p):
                 stan = open(p, encoding="utf-8").read()
                 if "stan: CZĘŚCIOWY" in stan:  # zarys już jest — nie nadpisuj, ale wyślij do rozwinięcia

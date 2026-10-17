@@ -1,0 +1,1 @@
+| etapy-zycia | pionowa oś czasu 10 okresów życia (zarodkowy → starość) z wiekiem orientacyjnym, klik = cechy | start="zarodkowy|…|starosc" | U11 |

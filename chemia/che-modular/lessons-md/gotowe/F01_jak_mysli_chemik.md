@@ -34,7 +34,7 @@ stopka: **CHEMIA F01 v1.1 MASTER** · Jak myśli chemik · 2026
 - contest | <b>Ponad LO:</b> rozwijane bloki „poziom akademicki” — przycisk w nagłówku lekcji
 :::
 
-::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to (ok. 30 min)
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
 1. **[§0.4](#diagnoza)** — diagnoza: spróbuj odpowiedzieć, zanim zaczniesz czytać.
 2. **[§1](#chemia)–[§3](#obserwacja)** — czym zajmuje się chemia; obserwacja, wniosek i hipoteza.
 3. **[§4](#piec-pytan)–[§5](#przyklady)** — pięć pytań chemika i trzy przykłady „obserwacja → model”.
@@ -115,6 +115,20 @@ Po bloku F: chemia nieorganiczna (N01–N07) i kolejne działy.
 
 **Interpretacja:** **0–2/8** → przejdź przez rdzeń razem z przykładami · **3–5/8** → rdzeń + klinika błędów · **6–7/8** → ćwiczenia transferowe · **8/8** → możesz przejść szybko do [§7](#model)–[§8](#poprawnosc), ale nadal wykonaj test końcowy.
 :::
+:::
+
+## 0.5 | Wykład — jak myśli chemik od zera {#wyklad}
+
+::: karta understand | Wykład — jak myśli chemik od zera
+Chemia zaczyna się od patrzenia. Zapalasz świeczkę: wosk mięknie, knot czernieje, nad płomieniem drga gorące powietrze. Każdy to widzi — ale chemik zadaje pytania. Co się zmieniło? Czy powstała nowa substancja? Skąd się wzięła? Ta lekcja uczy właśnie takiego **sposobu myślenia**, bo bez niego wzory i równania będą tylko szyfrem do wykucia.
+
+Pierwsza umiejętność to odróżnienie **obserwacji** od **wniosku**. Obserwacja to to, co rejestrujesz zmysłami lub przyrządem: „ciecz zmieniła barwę na różową”, „wydzielają się pęcherzyki gazu”. Wniosek to wyjaśnienie tego, co widzisz: „powstała zasada”, „zachodzi reakcja chemiczna”. **Hipoteza** to przypuszczenie, które da się sprawdzić doświadczeniem. Na egzaminie ten podział wraca w każdym zadaniu doświadczalnym — kto w rubryce „obserwacje” wpisze wniosek, traci punkt.
+
+Druga umiejętność to patrzenie na to samo zjawisko na kilku **poziomach opisu**. Na poziomie **makroskopowym** opisujemy to, co widać: wrzenie wody, rdzewienie gwoździa. Na poziomie **mikroskopowym (cząsteczkowym)** — to, czego nie widać: cząsteczki wody oddalają się od siebie, atomy żelaza łączą się z tlenem. Na poziomie **symbolicznym** zapisujemy to wzorami i równaniami: H₂O(c) → H₂O(g). Chemik płynnie przechodzi między tymi poziomami, a ty nauczysz się tego krok po kroku przez cały kurs.
+
+Trzecia umiejętność to praca z **modelami**. Atom narysowany jako kulka, cząsteczka jako „patyczki i kulki” — to modele: uproszczenia, które pomagają myśleć, ale nie są samą rzeczywistością. Dobry chemik wie, do czego model się nadaje i gdzie przestaje działać.
+
+Chemia to też **język**: symbol pierwiastka (Fe), wzór (H₂O), równanie reakcji (2 H₂ + O₂ → 2 H₂O). Te znaki pozwalają chemikom na całym świecie porozumieć się bez tłumacza. I wreszcie — **bezpieczeństwo**: myśleć jak chemik to także przewidywać zagrożenia, czytać piktogramy i wiedzieć, czego w laboratorium nie wolno robić nigdy.
 :::
 
 ## 1 | Czym zajmuje się chemia [[basic:E8]] {#chemia}
@@ -399,6 +413,23 @@ BHP: wykonuje nauczyciel pod wyciągiem; przy ogrzewaniu siarki może powstawać
 @opis Zlewka z doświadczeniem i listą możliwych obserwacji: najpierw wybierasz, czego się spodziewasz, potem animacja pokazuje wynik i porównuje go z twoim przewidywaniem. Wniosek: hipotezę formułuje się przed doświadczeniem, a wynik ją wspiera albo obala.
 :::
 
+## 10.5 | Nie myl! {#nie-myl}
+
+::: nie-myl | Pojęcia, które łatwo pomylić
+| Para | Dlaczego łatwo pomylić | Jak rozstrzygnąć |
+|---|---|---|
+| obserwacja / wniosek | oba „o doświadczeniu” | obserwacja — co widać, słychać, czuć (bez wyjaśnień); wniosek — wyjaśnienie i odpowiedź na problem |
+| hipoteza / wniosek | oba to zdania o wyniku | hipoteza — przed doświadczeniem, przypuszczenie; wniosek — po doświadczeniu, potwierdzony wynikiem |
+| model / rzeczywistość | rysunek wygląda „jak naprawdę” | model upraszcza; ma zakres stosowalności |
+| poziom makro / mikro | oba opisują to samo zjawisko | makro — to, co widać; mikro — cząstki, których nie widać |
+| symbol / wzór | oba to litery | symbol — pierwiastek (O); wzór — substancja (O₂, H₂O) |
+| próba badawcza / kontrolna | obie w tym samym doświadczeniu | badawcza — zmieniamy czynnik; kontrolna — bez zmiany, do porównania |
+:::
+
+::: karta understand | W skrócie — jak to zastosować w zadaniu
+Gdy dostajesz zadanie doświadczalne, wypełniaj rubryki w stałej kolejności i każdą innym rodzajem zdania. **Problem** to pytanie („Czy temperatura wpływa na…?”). **Hipoteza** to przypuszczenie w trybie przewidywania („Przypuszczam, że w cieplejszej wodzie…”). **Obserwacje** to wyłącznie zmiany widoczne: barwa, osad, gaz, zapach, temperatura — bez słów „powstał”, „zaszła reakcja”. **Wniosek** odpowiada na problem i może zawierać wyjaśnienie. Sprawdzian: jeśli w obserwacji pojawia się nazwa substancji, której nie widzisz bezpośrednio („wydzielił się wodór”), to już jest wniosek.
+:::
+
 ## 11 | Klinika błędów {#klinika}
 
 ::: klinika | Błąd | Poprawnie | Dlaczego?
@@ -490,6 +521,52 @@ BHP: wykonuje nauczyciel pod wyciągiem; przy ogrzewaniu siarki może powstawać
 18. Próba kontrolna: tę samą ciecz bez drugiego odczynnika ogrzej lub zamieszaj — jeśli też wydziela pęcherzyki, gaz mógł być rozpuszczony (np. woda gazowana). Albo użyj cieczy wcześniej przegotowanej i ostudzonej. Jeśli gaz pojawia się tylko po dodaniu odczynnika, a test (np. woda wapienna) wykrywa nowy gaz — to wsparcie hipotezy reakcji.
 19. Sprawdź: warunki doświadczenia, poprawność pomiaru oraz zakres stosowalności modelu.
 20. Odpowiedź musi zawierać osobno **twierdzenie**, konkretny **dowód z danych** i **wyjaśnienie**, dlaczego ten dowód wspiera wniosek.
+:::
+:::
+
+## 12.5 | Ciekawostki {#ciekawostki-plus}
+
+::: karta extra | Alchemicy i pierwsze laboratoria
+Przez stulecia alchemicy szukali „kamienia filozoficznego”, który miał zamieniać ołów w złoto. Złota nie wytworzyli, ale wynaleźli wiele naczyń i metod (destylację, krystalizację), których chemicy używają do dziś.
+:::
+
+::: karta extra | Lavoisier i waga
+Antoine Lavoisier w XVIII w. zaczął dokładnie ważyć substancje przed i po reakcji. Dzięki temu sformułował prawo zachowania masy i obalił teorię „flogistonu”. Waga stała się najważniejszym przyrządem chemika.
+:::
+
+::: karta extra | Ponad 100 pierwiastków, miliony związków
+Znamy 118 pierwiastków, a z nich zbudowano ponad sto milionów opisanych związków chemicznych — i co roku przybywa ich miliony. (orientacyjnie)
+:::
+
+## 12.6 | Warstwa olimpijska — Dla olimpijczyka {#olimpijska}
+
+*(Warstwa ponad E8 — do zweryfikowania z wymaganiami konkretnego konkursu.)*
+
+::: karta understand | Dla olimpijczyka — jak myśli chemik głębiej
+**Obserwacja zależy od przyrządu** — gołym okiem nie zobaczysz zmiany pH, ale wskaźnik pokaże ją barwą; termometr „widzi” efekt cieplny. **Jedna zmienna naraz** — w dobrze zaplanowanym doświadczeniu zmieniasz tylko jeden czynnik, a resztę utrzymujesz stałą. **Wniosek nie wychodzi poza dane** — z doświadczenia w temperaturach 20–60 °C nie wiesz, co będzie w 90 °C. **Powtarzalność** — wynik jednego pomiaru może być przypadkiem; chemik powtarza doświadczenie i porównuje wyniki.
+:::
+
+::: adv | Zadanie O1 (4 pkt) — obserwacja czy wniosek? | poziom ambitny (konkurs)
+Oceń, czy zdanie jest obserwacją (O) czy wnioskiem (W): 1) Roztwór zabarwił się na malinowo po dodaniu fenoloftaleiny. 2) W probówce powstała zasada. 3) Wydzielały się pęcherzyki bezbarwnego gazu. 4) Wydzielał się wodór.
+
+::: odp | Pokaż klucz
+1 — O; 2 — W; 3 — O; 4 — W (nazwa gazu to wniosek — wodoru nie rozpoznasz po wyglądzie). Po 1 pkt.
+:::
+:::
+
+::: adv | Zadanie O2 (4 pkt) — zaplanuj doświadczenie | poziom ambitny (konkurs)
+Zaplanuj doświadczenie: „Czy temperatura wody wpływa na szybkość rozpuszczania cukru?”. Podaj zmienną niezależną, zależną, dwie wielkości stałe i próbę kontrolną.
+
+::: odp | Pokaż klucz
+niezależna: temperatura wody (1 pkt); zależna: czas rozpuszczenia (1 pkt); stałe: masa cukru, objętość wody, sposób mieszania (1 pkt za dwie); kontrolna: woda w temperaturze pokojowej (1 pkt).
+:::
+:::
+
+::: adv | Zadanie O3 (3 pkt) — trzy poziomy opisu | poziom ambitny (konkurs)
+Opisz topnienie lodu na poziomie makroskopowym, mikroskopowym i symbolicznym.
+
+::: odp | Pokaż klucz
+makro: lód zamienia się w wodę ciekłą (1 pkt); mikro: cząsteczki wody zaczynają się przemieszczać względem siebie, słabną oddziaływania utrzymujące je w sieci (1 pkt); symbolicznie: H₂O(s) → H₂O(c) (1 pkt).
 :::
 :::
 
@@ -596,6 +673,10 @@ Cztery poziomy opisu | makroskopowy, cząsteczkowy, symboliczny, ilościowy | un
 Pięć pytań chemika | co obserwuję? jaki typ zmiany? jaki model? jaki zapis? jak sprawdzę? | basic:podstawa
 Model | uproszczenie rzeczywistości z zakresem stosowalności | understand:rozumienie
 Cztery poziomy poprawności | językowy, strukturalny, ilościowy, chemiczny | understand:rozumienie
+obserwacja a wniosek | obserwacja — co widać; wniosek — wyjaśnienie | olimpijski:metoda
+jedna zmienna naraz | w doświadczeniu zmieniamy tylko jeden czynnik | olimpijski:metoda
+trzy poziomy opisu | makroskopowy, mikroskopowy, symboliczny | olimpijski:metoda
+„wydzielił się wodór” | to wniosek, nie obserwacja | olimpijski:metoda
 :::
 
 ## 16 | Słownik {#slownik}
@@ -630,14 +711,14 @@ Równanie reakcji :: zapis przemiany substratów w produkty z zachowaniem liczby
 
 ## 18 | System powtórek {#powtorki}
 
-| Kiedy | Ile | Co |
-|---|---|---|
-| po lekcji | 20 min | przeczytaj kartę z [§14](#powtorka) i zrób ćwiczenia A |
-| po 1 dniu | 10 min | fiszki |
-| po 3 dniach | 15 min | ćwiczenia B |
-| po tygodniu | 20 min | test z [§13](#test) |
-| po 2 tygodniach | 10 min | fiszki |
-| po miesiącu | 25 min | całość + ćwiczenia C–D |
+Kolejność powtórki (we własnym tempie):
+
+1. przeczytaj kartę z [§14](#powtorka) i zrób ćwiczenia A
+2. fiszki
+3. ćwiczenia B
+4. test z [§13](#test)
+5. fiszki
+6. całość + ćwiczenia C–D
 
 ## A | Dodatek A — mosty i co dalej {#mosty}
 
@@ -662,3 +743,9 @@ Równanie reakcji :: zapis przemiany substratów w produkty z zachowaniem liczby
 | [§14](#powtorka) | `mind-map` | mapa myśli |
 
 > Do zbudowania w GFX (nowe elementy): magnes przy mieszaninie Fe + S (przyciąga opiłki przed reakcją, nie przyciąga FeS); lód pływający w wodzie (topnienie); efekty osadu i pary w parownicy (`evapDish` ich nie rysuje — odparowanie pokazujemy w zlewce).
+
+## Ulepszenie — Claude, 2026-10-11 {#ulepszenie}
+
+- Dodano: §0.5 wykład „od zera”, nie-myl + mini-wykład „W skrócie”, ciekawostki (3), warstwa olimpijska (Dla olimpijczyka + 3 zadania z kluczami), 4 fiszki olimpijskie. Nic nie usunięto.
+- Poprawione: „System powtórek” — bez minut i odstępów dni (kurs we własnym tempie), jeśli występował.
+

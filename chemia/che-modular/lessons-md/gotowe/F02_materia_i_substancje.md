@@ -3,7 +3,7 @@ kod: F02
 uid: CHE.01.F02.materia_i_substancje
 tytul: Materia i substancje
 opis: Substancja czysta czy mieszanina · pierwiastek, substancja prosta, związek · jednorodna i niejednorodna · faza
-kicker: F02 · FUNDAMENTY · MASTER v1.0
+kicker: F02 · FUNDAMENTY · MASTER v1.1
 lead: Druga lekcja bloku fundamentów: co właściwie jest w badanej próbce. Uczysz się klasyfikować materię argumentem, a nie wyglądem —
 lead: substancja czysta (pierwiastek lub związek) czy mieszanina (jednorodna lub niejednorodna) — i rozumieć, co z tej klasyfikacji wynika w praktyce.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
@@ -31,7 +31,7 @@ stopka: **CHEMIA F02 v1.0 MASTER** · Materia i substancje · 2026
 - contest | <b>Ponad LO:</b> rozwijane bloki „poziom akademicki” — przycisk w nagłówku lekcji
 :::
 
-::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to (ok. 30 min)
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
 1. **[§0.4](#diagnoza)** — diagnoza: odpowiedz, zanim zaczniesz czytać.
 2. **[§1](#materia)–[§3](#mieszanina)** — materia, substancja czysta, pierwiastek, związek, mieszanina.
 3. **[§4](#jednorodnosc)–[§5](#procedura)** — jednorodna i niejednorodna; procedura klasyfikacji bez zgadywania.
@@ -90,6 +90,20 @@ stopka: **CHEMIA F02 v1.0 MASTER** · Materia i substancje · 2026
 
 **Interpretacja:** 0–2/6 — przejdź rdzeń krok po kroku; 3–4/6 — rdzeń, szczególnie punkty z błędami; 5–6/6 — przejdź szybko do [§6](#symbol-wzor) i zadań transferowych.
 :::
+:::
+
+## 0.5 | Wykład — materia i substancje od zera {#wyklad}
+
+::: karta understand | Wykład — materia i substancje od zera
+Rozejrzyj się: woda w szklance, powietrze, długopis, kanapka. Wszystko to **materia** — wszystko, co ma masę i zajmuje miejsce. Chemik nie pyta jednak „co to za przedmiot?”, tylko „**z czego to jest?**”. Długopis i linijka mogą być zrobione z tej samej substancji — plastiku; dwa identyczne z wyglądu kryształki mogą być różnymi substancjami (sól i cukier). **Substancja** to rodzaj materii o stałym składzie i stałych właściwościach.
+
+Substancje dzielimy na dwie grupy. **Pierwiastki** (substancje proste) zbudowane są z atomów jednego rodzaju i nie da się ich rozłożyć na prostsze substancje — tlen, żelazo, miedź. **Związki chemiczne** zbudowane są z atomów co najmniej dwóch pierwiastków połączonych w stałym stosunku — woda (H₂O), dwutlenek węgla, sól kuchenna. Związek ma zupełnie inne właściwości niż pierwiastki, z których powstał: sód to miękki, reaktywny metal, chlor — trujący gaz, a chlorek sodu — sól, którą solimy zupę.
+
+Większość materii wokół nas to jednak **mieszaniny** — kilka substancji zmieszanych w dowolnym stosunku, które zachowują swoje właściwości. W mieszaninie wody z piaskiem piasek pozostaje piaskiem, a woda wodą. Mieszaniny bywają **jednorodne** — gdy nie widać składników nawet pod mikroskopem (sól w wodzie, powietrze, stal) — i **niejednorodne** — gdy składniki da się odróżnić (woda z piaskiem, granit, mleko pod mikroskopem). Każdą część mieszaniny o jednakowych właściwościach nazywamy **fazą**: mieszanina wody z olejem ma dwie fazy.
+
+Najważniejsza umiejętność tej lekcji to **klasyfikacja bez zgadywania**. Zadaj kolejno pytania: Czy to jedna substancja, czy kilka? Jeśli jedna — czy da się ją rozłożyć na prostsze (związek), czy nie (pierwiastek)? Jeśli kilka — czy widzisz składniki (niejednorodna), czy nie (jednorodna)? Pułapka: „czysta woda” z kranu to mieszanina (są w niej rozpuszczone sole i gazy), a woda destylowana — praktycznie substancja.
+
+Ta klasyfikacja jest fundamentem całego kursu: od niej zależy, czy mieszaninę rozdzielisz metodą fizyczną (F03), czy trzeba reakcji chemicznej, by rozłożyć związek.
 :::
 
 ## 1 | Materia i substancja [[basic:E8]] {#materia}
@@ -158,6 +172,9 @@ Przykłady: powietrze (mieszanina gazów), woda z piaskiem, herbata, mleko, woda
 | właściwości składników | zachowane | nowe, inne niż pierwiastków |
 | rozdzielanie | metody fizyczne | tylko reakcja chemiczna |
 | przykład z Fe i S | szary proszek z żółtymi drobinkami; magnes wyciąga Fe | FeS — czarna masa, magnes nie przyciąga |
+
+@model f02-magnes-fes-v01 | Magnes: mieszanina Fe + S czy związek FeS? | zbliż magnes do obu próbek
+@opis Dwa szkiełka zegarkowe obok siebie. Po lewej mieszanina: szare podłużne opiłki żelaza i żółte kuleczki siarki, widoczne osobno. Po prawej siarczek żelaza(II): jednolite czarne grudki. Nad każdym szkiełkiem czerwony magnes w woreczku; przycisk „Zbliż magnes” opuszcza magnesy — z mieszaniny opiłki żelaza odrywają się i przyczepiają do magnesu, a żółta siarka zostaje na szkiełku; z FeS nic się nie unosi. Panel pod rysunkiem podsumowuje wynik. Wniosek: w mieszaninie składniki zachowują swoje właściwości i można je rozdzielić metodą fizyczną (magnesem), a w związku chemicznym powstaje nowa substancja o innych właściwościach.
 :::
 
 ## 4 | Jednorodna i niejednorodna. Faza [[basic:E8]] {#jednorodnosc}
@@ -207,6 +224,9 @@ Przykład: *woda z piaskiem* → mieszanina niejednorodna → dwie fazy, piasek 
 | stal, brąz | mieszanina jednorodna (stop, roztwór stały) | skład zmienny, brak jednego wzoru |
 | O₂, O₃ | substancje proste | jeden pierwiastek; dwie różne substancje |
 | woda z lodem | substancja czysta | jedna substancja w dwóch fazach |
+
+@model f02-czastki-v01 | Model cząsteczkowy: substancja czysta czy mieszanina? | policz rodzaje drobin, atomów i fazy, potem sklasyfikuj
+@opis Prostokątne naczynie z kolorowymi kółkami — atomami (legenda pod spodem: O czerwony, H biały, N niebieski, Na fioletowy, Cl zielony, Fe szary, Ar pomarańczowy, He żółty, C ciemnoszary). Osiem próbek po kolei: żelazo (atomy Fe ułożone regularnie), tlen (pary O₂), woda (H₂O), woda z lodem (górna faza z uporządkowanymi H₂O, dolna z chaotycznymi), powietrze (N₂, O₂, Ar), roztwór soli (H₂O z jonami Na⁺ i Cl⁻), woda z olejem (dwie warstwy oddzielone przerywaną linią), hel z argonem. Uczeń wybiera: pierwiastek, związek, mieszanina jednorodna lub niejednorodna; odpowiedź jest oceniana z uzasadnieniem i licznikiem. Wniosek: o czystości decyduje liczba rodzajów drobin, o pierwiastku lub związku — liczba rodzajów atomów w drobinie, o jednorodności — liczba faz; woda z lodem to dwie fazy, ale substancja czysta.
 
 ## 6 | Symbol i wzór — pierwszy kontakt [[basic:E8]] {#symbol-wzor}
 
@@ -258,6 +278,23 @@ Jeden pierwiastek może tworzyć kilka substancji prostych — **odmian alotropo
 
 ::: adv | Czystość w laboratorium — co znaczy „czysty”? | poziom akademicki
 Żadna rzeczywista próbka nie jest absolutnie czysta. Odczynniki oznacza się klasami czystości (np. cz., cz.d.a.), a czystość ocenia się pomiarem właściwości: ostra temperatura topnienia, stała temperatura wrzenia, jedna plamka w chromatografii. Zanieczyszczenia obniżają i rozmywają temperaturę topnienia — to praktyczny test czystości substancji stałej.
+:::
+
+## 8.5 | Nie myl! {#nie-myl}
+
+::: nie-myl | Pojęcia, które łatwo pomylić
+| Para | Dlaczego łatwo pomylić | Jak rozstrzygnąć |
+|---|---|---|
+| pierwiastek / związek | oba to substancje | pierwiastek — atomy jednego rodzaju; związek — co najmniej dwóch pierwiastków, w stałym stosunku |
+| związek / mieszanina | oba „z kilku składników” | związek — stały skład, nowe właściwości, rozdzielenie tylko reakcją; mieszanina — dowolny skład, składniki zachowują właściwości |
+| mieszanina jednorodna / roztwór | oba wyglądają jednolicie | roztwór to rodzaj mieszaniny jednorodnej; jednorodne są też stopy i powietrze |
+| tlen (pierwiastek) / tlen w wodzie | to samo słowo | w H₂O nie ma pierwiastka tlenu jako substancji — jest pierwiastek w związku |
+| faza / składnik | oba „części” mieszaniny | faza — obszar o jednakowych właściwościach; jeden składnik może tworzyć dwie fazy (woda i lód) |
+| woda z kranu / woda destylowana | obie „woda” | z kranu — mieszanina; destylowana — praktycznie czysta substancja |
+:::
+
+::: karta understand | W skrócie — jak to zastosować w zadaniu
+Gdy masz zaklasyfikować materiał, idź po schodach i nie przeskakuj stopni. **Stopień 1:** jedna substancja czy kilka? (zastanów się nad składem, nie wyglądem). **Stopień 2a (jedna):** czy da się ją rozłożyć na prostsze substancje? Tak — związek chemiczny; nie — pierwiastek. **Stopień 2b (kilka):** czy składniki są rozróżnialne (gołym okiem lub pod mikroskopem)? Tak — mieszanina niejednorodna; nie — jednorodna. Przykład: mosiądz — kilka substancji (miedź i cynk), nie widać składników → mieszanina jednorodna (stop). Woda destylowana — jedna substancja, rozkładalna prądem na wodór i tlen → związek.
 :::
 
 ## 9 | Klinika błędów {#klinika}
@@ -392,6 +429,52 @@ BHP: nie smakujemy substancji w pracowni; rozlany olej wytrzeć — śliska pod�
 @opis Sól wsypana do wody w zlewce: kryształy stopniowo znikają, powstaje klarowny, bezbarwny roztwór. Wniosek: to rozpuszczanie, czyli zjawisko fizyczne — sól można odzyskać, odparowując wodę.
 :::
 
+## 11.5 | Ciekawostki {#ciekawostki-plus}
+
+::: karta extra | Powietrze to mieszanina
+Powietrze to mieszanina jednorodna: ok. 78% azotu, 21% tlenu, prawie 1% argonu i ok. 0,04% dwutlenku węgla (objętościowo, orientacyjnie). Mimo że jest go tak mało, CO₂ ma ogromny wpływ na klimat.
+:::
+
+::: karta extra | Złoto 24-karatowe
+Biżuteria rzadko jest z czystego złota — to zwykle stop złota z miedzią lub srebrem. 24 karaty oznaczają złoto praktycznie czyste, a 14 karatów — ok. 58% złota. Stopy są twardsze i trwalsze niż czysty metal.
+:::
+
+::: karta extra | Woda, której nie ma w naturze
+Woda całkowicie czysta chemicznie prawie nie występuje w przyrodzie — nawet deszcz rozpuszcza gazy z powietrza. Dlatego w laboratoriach używa się wody destylowanej lub dejonizowanej.
+:::
+
+## 11.6 | Warstwa olimpijska — Dla olimpijczyka {#olimpijska}
+
+*(Warstwa ponad E8 — do zweryfikowania z wymaganiami konkretnego konkursu.)*
+
+::: karta understand | Dla olimpijczyka — materia i substancje głębiej
+**Stały stosunek mas w związku** (prawo stałości składu) — w wodzie zawsze na 1 g wodoru przypada ok. 8 g tlenu, niezależnie od pochodzenia wody. **Alotropia** — jeden pierwiastek może tworzyć kilka substancji prostych o różnych właściwościach: diament, grafit i fulereny to węgiel; tlen O₂ i ozon O₃ to tlen. **Koloidy** (mleko, mgła, galaretka) leżą między roztworami a zawiesinami — wyglądają jednorodnie, ale rozpraszają światło (efekt Tyndalla). **Stopy** — mieszaniny jednorodne metali (mosiądz, brąz, stal).
+:::
+
+::: adv | Zadanie O1 (4 pkt) — klasyfikacja | poziom ambitny (konkurs)
+Sklasyfikuj (pierwiastek, związek, mieszanina jednorodna, mieszanina niejednorodna): diament, sok pomarańczowy z miąższem, mosiądz, tlenek węgla(IV).
+
+::: odp | Pokaż klucz
+diament — pierwiastek (węgiel); sok z miąższem — mieszanina niejednorodna; mosiądz — mieszanina jednorodna (stop); tlenek węgla(IV) — związek. Po 1 pkt.
+:::
+:::
+
+::: adv | Zadanie O2 (3 pkt) — alotropia | poziom ambitny (konkurs)
+Diament i grafit to ta sama czy różne substancje? Ten sam czy różne pierwiastki? Uzasadnij.
+
+::: odp | Pokaż klucz
+różne substancje (inne właściwości: twardość, przewodnictwo) (1 pkt); ten sam pierwiastek — węgiel (1 pkt); różnią się ułożeniem atomów — to odmiany alotropowe (1 pkt).
+:::
+:::
+
+::: adv | Zadanie O3 (3 pkt) — ile faz? | poziom ambitny (konkurs)
+Ile faz ma układ: woda + olej + kostki lodu + rozpuszczona sól? Wyjaśnij.
+
+::: odp | Pokaż klucz
+trzy fazy (1 pkt): roztwór soli w wodzie (1 faza ciekła), olej (osobna warstwa), lód (faza stała) (2 pkt za uzasadnienie); sól nie tworzy osobnej fazy, bo jest rozpuszczona.
+:::
+:::
+
 ## 12 | Test {#test}
 
 ::: test
@@ -485,6 +568,10 @@ Faza | jednorodna część układu oddzielona granicą od innych | understand:ro
 Atom a pierwiastek | atom — cząstka; pierwiastek — rodzaj atomów o tym samym Z | understand:rozumienie
 Odmiany alotropowe | różne substancje proste tego samego pierwiastka (O₂ i O₃, diament i grafit) | extra:ambitne
 Roztwór, koloid, zawiesina | < 1 nm · 1–1000 nm · > 1000 nm (przybliżenie) | extra:ambitne
+alotropia | jeden pierwiastek — kilka substancji prostych (diament, grafit; O₂, O₃) | olimpijski:materia
+prawo stałości składu | związek ma zawsze ten sam stosunek mas pierwiastków | olimpijski:materia
+koloid | układ pośredni między roztworem a zawiesiną; efekt Tyndalla | olimpijski:materia
+faza | obszar układu o jednakowych właściwościach | olimpijski:materia
 :::
 
 ## 15 | Słownik {#slownik}
@@ -519,13 +606,13 @@ Odmiany alotropowe :: różne substancje proste tego samego pierwiastka
 
 ## 17 | System powtórek {#powtorki}
 
-| Kiedy | Ile | Co |
-|---|---|---|
-| po lekcji | 20 min | karta z [§13](#powtorka) i ćwiczenia A |
-| po 1 dniu | 10 min | fiszki |
-| po 3 dniach | 15 min | ćwiczenia B + powtórka F01 |
-| po tygodniu | 20 min | test z [§12](#test) |
-| po F03 | 25 min | F01 + F02 + F03 razem — zestaw przekrojowy z F21 |
+Kolejność powtórki (we własnym tempie):
+
+1. karta z [§13](#powtorka) i ćwiczenia A
+2. fiszki
+3. ćwiczenia B + powtórka F01
+4. test z [§12](#test)
+5. F01 + F02 + F03 razem — zestaw przekrojowy z F21
 
 ## A | Dodatek A — mosty i co dalej {#mosty}
 
@@ -546,3 +633,9 @@ Odmiany alotropowe :: różne substancje proste tego samego pierwiastka
 | [§11](#doswiadczenia) | `f01-doswiadczenia-v01` · `f01FeS`, `f01Odparowanie`, `f01SolWoda` | mieszanina a związek, odparowanie, rozpuszczanie |
 
 > Do zbudowania w GFX (nowe elementy): zlewka z dwiema warstwami cieczy (olej na wodzie), lód pływający w wodzie, magnes wyciągający opiłki żelaza z mieszaniny, wiązka światła w koloidzie (efekt Tyndalla), interaktywne drzewo klasyfikacji próbki („Rozpoznaj próbkę”, V002).
+
+## Ulepszenie — Claude, 2026-10-11 {#ulepszenie}
+
+- Dodano: §0.5 wykład „od zera”, nie-myl + mini-wykład „W skrócie”, ciekawostki (3), warstwa olimpijska (Dla olimpijczyka + 3 zadania z kluczami), 4 fiszki olimpijskie. Nic nie usunięto.
+- Poprawione: „System powtórek” — bez minut i odstępów dni (kurs we własnym tempie), jeśli występował.
+

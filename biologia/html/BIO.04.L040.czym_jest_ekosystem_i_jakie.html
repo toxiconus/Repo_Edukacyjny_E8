@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="pl" data-przedmiot="bio">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>L040 · Czym jest ekosystem i jakie czynniki na niego wpływają?</title>
+<style id="lekcja-css">
+/* baza.css — wspólna baza lekcji wszystkich przedmiotów (styl lekcji silnika CHE v0_57). Nie edytować — zmiany wspólne w ulepszenia.css, przedmiotowe w motywy/<kod>.css. */
+
+
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+--bg:#fafbfc;--surface:#ffffff;--surface-soft:#f6f8fa;--surface-warm:#fdfaf4;--border:#e5e9ee;--border-strong:#cdd5dd;
+--text:#1a2332;--text-soft:#4a5568;--text-muted:#8892a0;--text-faint:#b4bcc6;
+--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,0.15);
+--c-basic:#2e7d4f;--c-basic-bg:#eaf6ee;--c-basic-line:#b8dcc4;
+--c-understand:#2b5e9c;--c-understand-bg:#eaf1f9;--c-understand-line:#bcd0e5;
+--c-warn:#b06f1c;--c-warn-bg:#fcf4e6;--c-warn-line:#eed8a8;
+--c-error:#b83a45;--c-error-bg:#fbeced;--c-error-line:#e8b5b9;
+--c-extra:#6b3fa0;--c-extra-bg:#f3ecfa;--c-extra-line:#d3bde8;
+--c-new:#0d7d7d;--c-new-bg:#e6f4f4;--c-new-line:#b0dcdc;
+--c-exam:#a86a00;--c-exam-bg:#fdf5e0;--c-exam-line:#eed49c;
+--sh-sm:0 1px 2px rgba(26,35,50,0.04);--sh-md:0 4px 12px rgba(26,35,50,0.06);--sh-lg:0 12px 32px rgba(26,35,50,0.10);--sh-xl:0 20px 48px rgba(26,35,50,0.14);
+--r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;
+--header-h:56px;
+--ease:cubic-bezier(0.4,0,0.2,1);--ease-out:cubic-bezier(0.16,1,0.3,1);
+--hl-key:#0d6868;--hl-key-bg:#d8ecea;--hl-warn:#b83a45;--hl-warn-bg:#fbe0e2;--hl-new:#6b3fa0;--hl-new-bg:#ede0f8;--hl-formula:#084848;--hl-formula-bg:#e0eeed;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;padding:calc(var(--header-h) + 12px) 0 88px;min-height:100vh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+@media(min-width:600px){body{padding:calc(var(--header-h) + 18px) 12px 96px;}}
+@media(min-width:768px){body{padding:calc(var(--header-h) + 24px) 20px 100px;}}
+@media(min-width:1100px){body{padding:calc(var(--header-h) + 28px) 32px 110px;}}
+.fab{position:fixed;top:12px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);background:rgba(255,255,255,0.94);color:var(--text);cursor:pointer;border-radius:var(--r-md);padding:0;transition:all 0.2s var(--ease);z-index:1200;box-shadow:var(--sh-sm);backdrop-filter:blur(8px);}
+.fab:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);box-shadow:var(--sh-md);transform:translateY(-1px);}
+.fab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.fab-left{left:6px;}.fab-right{right:6px;}
+@media(min-width:600px){.fab-left{left:10px;}.fab-right{right:10px;}}
+@media(min-width:768px){.fab-left{left:14px;}.fab-right{right:14px;}}
+.fab-left::after{content:'';width:16px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;border-radius:1px;transition:transform 0.25s var(--ease);}
+.fab-left.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.fab-left.is-open::after{width:16px;height:2px;background:currentColor;box-shadow:none;transform:rotate(45deg);}
+.fab-left.is-open::before{content:'';position:absolute;width:16px;height:2px;background:currentColor;transform:rotate(-45deg);border-radius:1px;}
+.fab-right::after{content:'';display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:8px solid currentColor;transition:transform 0.35s var(--ease-out);}
+.fab-right.is-hidden::after{transform:rotate(0deg);}
+.fab-right:not(.is-hidden)::after{transform:rotate(180deg);}
+.header-wrapper{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);transform:translateY(0);transition:transform 0.45s var(--ease-out),box-shadow 0.3s var(--ease);box-shadow:var(--sh-sm);}
+.header-wrapper.is-hidden{transform:translateY(-100%);box-shadow:none;}
+.header-bar{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:0 16px;height:var(--header-h);}
+@media(min-width:768px){.header-bar{padding:0 24px;}}
+.header-subject{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:1px;padding:4px 10px;background:var(--accent-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;}
+.header-title{font-size:15px;font-weight:700;color:var(--text);letter-spacing:-0.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1 1 auto;min-width:0;}
+.header-lesson{font-size:10px;font-weight:800;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.7px;padding:4px 9px;background:var(--surface-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;font-family:'JetBrains Mono',monospace;}
+.header-nav{display:flex;gap:2px;flex-shrink:0;align-items:center;}
+.header-nav a,.header-nav button{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;border-radius:var(--r-sm);font-size:16px;font-weight:500;transition:all 0.2s var(--ease);border:1px solid transparent;background:transparent;cursor:pointer;padding:0;font-family:inherit;}
+.header-nav a:hover,.header-nav button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.header-resume-btn.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.header-resume-btn::before{content:'▮';font-size:14px;line-height:1;}
+.header-panel{display:none;border-top:1px solid var(--border);background:linear-gradient(180deg,var(--surface) 0%,var(--surface-soft) 100%);padding:20px 16px 24px;}
+@media(min-width:768px){.header-panel{padding:24px 24px 28px;}}
+.header-panel.is-open{display:block;}
+.header-panel-inner{max-width:900px;margin:0 auto;}
+.header-kicker{font-size:11px;color:var(--text-muted);text-transform:uppercase;font-weight:800;letter-spacing:1px;margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.header-kicker::before{content:'';width:24px;height:2px;background:var(--accent);display:inline-block;border-radius:1px;}
+.header-h1{font-size:32px;font-weight:800;color:var(--text);letter-spacing:-1px;margin-bottom:10px;line-height:1.1;}
+.header-subtitle{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:18px;max-width:720px;}
+.header-modes{display:flex;gap:6px;flex-wrap:wrap;}
+.mode-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 15px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);font-family:inherit;}
+.mode-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
+.mode-btn:hover:not(.active){background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.resume-dropdown{display:none;position:fixed;top:calc(var(--header-h) + 6px);right:14px;z-index:1050;width:min(300px,calc(100vw - 30px));padding:14px;border:1px solid var(--border-strong);border-radius:12px;background:#fff;box-shadow:var(--sh-lg);}
+.resume-dropdown.is-open{display:block;}
+.resume-dropdown h4{margin:0 0 5px;color:var(--text);font-size:.85rem;}
+.resume-dropdown p{margin:0 0 12px;color:var(--text-muted);font-size:.75rem;line-height:1.5;}
+.resume-actions{display:flex;gap:6px;}
+.resume-actions button{flex:1;padding:8px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text-soft);font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.resume-actions .resume-save{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toc-overlay{position:fixed;inset:0;background:rgba(26,35,50,0.34);backdrop-filter:blur(3px);z-index:1100;opacity:0;visibility:hidden;transition:opacity 0.3s var(--ease),visibility 0.3s var(--ease);}
+.toc-overlay.is-visible{opacity:1;visibility:visible;}
+.toc-wrapper{position:fixed;left:0;top:0;width:320px;max-width:86vw;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:1150;transform:translateX(-100%);transition:transform 0.4s var(--ease-out);padding-top:64px;box-shadow:var(--sh-xl);}
+.toc-wrapper.is-open{transform:translateX(0);}
+.toc-content{padding:12px 14px 100px;}
+.toc-header{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);padding:4px 12px 12px;}
+.toc-item{margin-bottom:4px;border-radius:var(--r-md);overflow:hidden;}
+.toc-summary{padding:10px 12px;font-size:13px;font-weight:700;color:var(--text);cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;border-radius:var(--r-sm);transition:background 0.2s var(--ease),color 0.2s var(--ease);user-select:none;}
+.toc-summary:hover{background:var(--accent-soft);color:var(--accent);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::marker{content:'';}
+.toc-summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);opacity:0.5;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);opacity:1;}
+.toc-links{padding:4px 0 8px 28px;display:flex;flex-direction:column;gap:1px;}
+.toc-link{display:block;padding:6px 10px;font-size:12.5px;color:var(--text-soft);text-decoration:none;border-radius:4px;transition:all 0.2s var(--ease);border-left:2px solid transparent;}
+.toc-link:hover{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);}
+.container{max-width:820px;margin:0 auto;background:var(--surface);border-radius:0;box-shadow:none;padding:18px 12px;border:none;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+@media(min-width:600px){.container{border-radius:var(--r-lg);box-shadow:var(--sh-md);border:1px solid var(--border);padding:22px 18px;}}
+@media(min-width:768px){.container{padding:36px 36px;border-radius:var(--r-xl);}}
+@media(min-width:1100px){.container{max-width:840px;padding:40px 40px;}}
+h1,h2,h3,h4,h5{font-weight:800;color:var(--text);letter-spacing:-0.3px;line-height:1.3;}
+h2{font-size:24px;margin-top:44px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+h3{font-size:17px;margin-top:32px;margin-bottom:12px;font-weight:800;}
+h4{font-size:15px;margin-top:24px;margin-bottom:10px;font-weight:800;}
+h5{font-size:13px;margin-top:16px;margin-bottom:8px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-soft);}
+p{margin-bottom:12px;}
+ul,ol{padding-left:24px;margin-bottom:14px;}
+li{margin-bottom:6px;padding-left:4px;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s var(--ease);}
+a:hover{border-bottom-color:var(--accent);}
+strong{font-weight:700;color:var(--text);}
+.hl{background:var(--hl-key-bg);color:var(--hl-key);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-warn{background:var(--hl-warn-bg);color:var(--hl-warn);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-new{background:var(--hl-new-bg);color:var(--hl-new);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.formula{display:inline-block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:14px;font-weight:600;color:var(--hl-formula);background:var(--hl-formula-bg);padding:4px 12px;border-radius:var(--r-sm);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:3px 2px;white-space:nowrap;}
+.formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
+code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
+pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
+.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
+.mnemonic b{color:#78350f;}
+.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
+@media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
+.card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
+.card-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:10px;padding:3px 9px;background:var(--accent-soft);border-radius:4px;}
+.card-core{background:var(--accent-soft);border-color:var(--accent-line);border-left-color:var(--accent);}
+.card-basic{background:var(--c-basic-bg);border-color:var(--c-basic-line);border-left-color:var(--c-basic);}
+.card-basic .card-label{background:rgba(46,125,79,0.12);color:var(--c-basic);}
+.card-understand{background:var(--c-understand-bg);border-color:var(--c-understand-line);border-left-color:var(--c-understand);}
+.card-understand .card-label{background:rgba(43,94,156,0.12);color:var(--c-understand);}
+.card-warning{background:var(--c-warn-bg);border-color:var(--c-warn-line);border-left-color:var(--c-warn);}
+.card-warning .card-label{background:rgba(176,111,28,0.12);color:var(--c-warn);}
+.card-error{background:var(--c-error-bg);border-color:var(--c-error-line);border-left-color:var(--c-error);}
+.card-error .card-label{background:rgba(184,58,69,0.12);color:var(--c-error);}
+.card-extra{background:var(--c-extra-bg);border-color:var(--c-extra-line);border-left-color:var(--c-extra);}
+.card-extra .card-label{background:rgba(107,63,160,0.12);color:var(--c-extra);}
+.card-new{background:var(--c-new-bg);border-color:var(--c-new-line);border-left-color:var(--c-new);}
+.card-new .card-label{background:rgba(13,125,125,0.12);color:var(--c-new);}
+.card-exam{background:var(--c-exam-bg);border-color:var(--c-exam-line);border-left-color:var(--c-exam);}
+.card-exam .card-label{background:rgba(168,106,0,0.12);color:var(--c-exam);}
+.card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0;}
+details.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent-line);border-radius:var(--r-sm);padding:10px 14px;margin:10px 0;transition:all 0.2s var(--ease);}
+details.answer[open]{background:var(--accent-soft);border-left-color:var(--accent);}
+details.answer summary{cursor:pointer;font-weight:700;color:var(--text-soft);font-size:13px;list-style:none;user-select:none;display:flex;align-items:center;gap:10px;transition:color 0.2s var(--ease);}
+details.answer summary::-webkit-details-marker{display:none;}
+details.answer summary::marker{content:'';}
+details.answer summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer[open] summary{color:var(--accent);}
+details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}
+.part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}
+@media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}
+.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
+@media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}
+.table-wrap th,.table-wrap td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px;}
+@media(min-width:600px){.table-wrap th,.table-wrap td{padding:10px 12px;font-size:13.5px;}}
+.table-wrap th{background:var(--surface-soft);font-weight:800;color:var(--text-soft);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;}
+@media(min-width:600px){.table-wrap th{font-size:11px;letter-spacing:0.7px;white-space:nowrap;}}
+.table-wrap.table-compact td,.table-wrap.table-compact th{padding:7px 6px;font-size:12.5px;}
+.table-wrap tr:last-child td{border-bottom:none;}
+.table-wrap tr:hover td{background:var(--accent-soft);}
+.table-wrap .error-row{background:var(--c-error-bg);}
+.table-wrap .ok-row{background:var(--c-basic-bg);}
+.def-list{display:flex;flex-direction:column;gap:8px;margin:14px 0;}
+.def-item{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px 16px;}
+.def-item dt{font-weight:800;color:var(--text);font-size:13.5px;margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+.def-item dt::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;}
+.def-item dd{color:var(--text-soft);font-size:13.5px;line-height:1.6;margin:0;padding-left:11px;}
+.minimum-card{background:linear-gradient(135deg,var(--surface-soft) 0%,var(--accent-soft) 100%);border:1px solid var(--accent-line);border-radius:var(--r-lg);padding:20px 22px;margin:8px 0 28px;box-shadow:var(--sh-sm);position:relative;overflow:hidden;}
+@media(min-width:768px){.minimum-card{padding:28px 34px;margin-bottom:36px;}}
+.minimum-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:var(--accent);}
+.minimum-card h3{color:var(--accent);margin:0 0 16px;font-size:16px;letter-spacing:0.2px;display:flex;align-items:center;gap:10px;}
+.minimum-card h3::before{content:'★';font-size:16px;}
+.minimum-card ol{margin:0;padding-left:0;list-style:none;counter-reset:min-list;}
+.minimum-card li{counter-increment:min-list;padding-left:36px;position:relative;margin-bottom:12px;font-size:14px;line-height:1.6;}
+.minimum-card li::before{content:counter(min-list);position:absolute;left:0;top:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--surface);color:var(--accent);border:2px solid var(--accent-line);border-radius:50%;font-size:12px;font-weight:800;}
+.minimum-card li:last-child{margin-bottom:0;}
+.level-badge{display:inline-block;font-size:9.5px;font-weight:800;text-transform:uppercase;padding:2px 9px;border-radius:12px;vertical-align:middle;letter-spacing:0.5px;line-height:1.6;margin-left:8px;}
+.level-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.level-understand{background:var(--c-understand-bg);color:var(--c-understand);}
+.level-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.level-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.level-new{background:var(--c-new-bg);color:var(--c-new);}
+.rule-box{background:var(--c-understand-bg);border:1px solid var(--c-understand-line);border-radius:var(--r-md);padding:14px 18px;margin:14px 0;font-size:14px;line-height:1.65;}
+.rule-box b{color:var(--c-understand);}
+.step-flow{background:var(--text);color:#fff;padding:16px 18px;border-radius:var(--r-md);font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:12.5px;line-height:1.9;margin:14px 0;overflow-x:auto;white-space:pre;}
+@media(min-width:768px){.step-flow{font-size:13.5px;padding:16px 20px;}}
+.footer{margin-top:56px;padding-top:24px;border-top:2px solid var(--border);text-align:center;font-size:12.5px;color:var(--text-muted);letter-spacing:0.2px;}
+.footer p{margin-bottom:4px;}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:6px;border:2px solid var(--bg);}
+::-webkit-scrollbar-thumb:hover{background:var(--text-muted);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.bottom-nav{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:1100;width:min(700px,calc(100vw - 24px));font-size:.78rem;}
+.bottom-nav__toggle{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;padding:8px 14px;border:1px solid var(--border-strong);border-radius:999px;background:rgba(255,255,255,.97);color:var(--text-soft);font:700 .72rem inherit;box-shadow:0 5px 18px rgba(15,23,42,.14);cursor:pointer;backdrop-filter:blur(10px);font-family:inherit;}
+.bottom-nav__panel{display:none;margin-bottom:7px;padding:10px;border:1px solid var(--border-strong);border-radius:14px;background:rgba(255,255,255,.98);box-shadow:0 10px 28px rgba(15,23,42,.16);backdrop-filter:blur(12px);}
+.bottom-nav.is-open .bottom-nav__panel{display:block;}
+.bottom-nav__primary{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.bottom-nav a,.bottom-nav button.nav-more{min-height:36px;display:flex;align-items:center;justify-content:center;padding:6px 8px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--text-soft);text-decoration:none;font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.bottom-nav a:hover,.bottom-nav button.nav-more:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+@media(max-width:420px){
+  .bottom-nav{font-size:.7rem;width:calc(100vw - 12px);}
+  .bottom-nav a,.bottom-nav button.nav-more{padding:6px 4px;font-size:.65rem;}
+}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
+.widget{background:var(--surface);border:2px solid var(--border);border-radius:var(--r-md);padding:14px;margin:14px 0;box-shadow:var(--sh-sm);}
+@media(min-width:768px){.widget{padding:22px 26px;margin:20px 0;border-radius:var(--r-lg);}}
+.widget h4{margin:0 0 8px;color:var(--text);font-size:15px;font-weight:800;}
+@media(min-width:768px){.widget h4{font-size:16px;}}
+.widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
+.bld-pool{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.bld-pool button{padding:6px 12px;border:1px solid var(--border);border-radius:20px;background:#fff;font:600 0.8rem inherit;cursor:pointer;font-family:inherit;color:var(--text);}
+.bld-pool button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bld-workspace{min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;}
+.bld-feedback,.re-result,.st-feedback,.ch-feedback{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;line-height:1.5;}
+.bld-feedback.ok,.re-result.ok,.st-feedback.ok,.ch-feedback.ok{background:var(--c-basic-bg);color:var(--c-basic);border:1px solid var(--c-basic-line);}
+.bld-feedback.bad,.re-result.bad,.st-feedback.bad,.ch-feedback.bad{background:var(--c-error-bg);color:var(--c-error);border:1px solid var(--c-error-line);}
+.bld-feedback.info,.re-result.info,.st-feedback.info,.ch-feedback.info{background:var(--c-understand-bg);color:var(--c-understand);border:1px solid var(--c-understand-line);}
+.bld-feedback.warn,.re-result.warn,.st-feedback.warn,.ch-feedback.warn{background:var(--c-warn-bg);color:var(--c-warn);border:1px solid var(--c-warn-line);}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);color:var(--text);font-family:inherit;}
+.btn:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent);}
+.btn-primary:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+.btn-sm{padding:6px 10px;font-size:12px;}
+.flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}
+@media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--border);border-radius:var(--r-md);background:#fff;color:var(--text);font:inherit;text-align:center;cursor:pointer;box-shadow:var(--sh-sm);transition:all 0.2s var(--ease);position:relative;font-family:inherit;}
+.flashcard:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-3px);box-shadow:var(--sh-md);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:90px;}
+.flashcard .front{font-weight:700;font-size:14.5px;line-height:1.5;}
+.flashcard .back{display:none;color:var(--text-soft);font-size:13.5px;line-height:1.6;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:8px;right:8px;font-size:9px;text-transform:uppercase;background:var(--surface-soft);padding:2px 8px;border-radius:10px;color:var(--text-muted);font-weight:800;letter-spacing:0.4px;}
+.flashcard .card-tag.tag-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.flashcard .card-tag.tag-error{background:var(--c-error-bg);color:var(--c-error);}
+.flashcard .card-tag.tag-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.flashcard .card-tag.tag-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.checklist{background:#fff;border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.checklist h4{color:var(--c-basic);margin:0 0 12px;font-size:15px;}
+.checklist ul{list-style:none;padding-left:0;margin:0;}
+.checklist li{padding:7px 0;font-size:13.5px;border-bottom:1px dashed var(--c-basic-line);display:flex;align-items:flex-start;gap:10px;line-height:1.55;}
+.checklist li:last-child{border-bottom:none;}
+.checklist li::before{content:'☐';color:var(--c-basic);font-weight:700;font-size:1.15rem;flex-shrink:0;line-height:1.2;}
+.core-path{background:linear-gradient(135deg,var(--c-basic-bg) 0%,#dcefe2 100%);border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:800;color:var(--c-basic);font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.core-path .cp-title::before{content:'▶';font-size:12px;}
+.core-path ol{margin:0;padding-left:22px;}
+.core-path li{margin-bottom:6px;font-size:13.5px;line-height:1.6;}
+.audit-panel{background:var(--surface-soft);border:2px solid var(--border-strong);border-radius:var(--r-lg);padding:16px 18px;margin:16px 0;}
+.audit-panel h4{margin:0 0 12px;color:var(--text);}
+.audit-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px;}
+@media(min-width:600px){.audit-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}}
+.audit-item{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:10px 12px;font-size:12.5px;line-height:1.55;}
+.mini-note{font-size:12.5px;color:var(--text-muted);font-style:italic;margin-top:8px;line-height:1.55;}
+.layer-legend{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:12px 14px;margin:12px 0;display:grid;grid-template-columns:1fr;gap:8px 18px;}
+@media(min-width:600px){.layer-legend{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;}}
+.layer-legend .layer-row{display:flex;gap:10px;align-items:center;font-size:12.5px;line-height:1.5;}
+.layer-legend .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.e8{background:var(--c-basic);}
+.layer-legend .dot.understand{background:var(--c-understand);}
+.layer-legend .dot.extra{background:var(--c-extra);}
+.layer-legend .dot.contest{background:var(--c-warn);}
+.klinika-table td.col-blad{color:var(--c-error);font-weight:700;}
+.klinika-table td.col-blad::before{content:'✕ ';font-weight:900;margin-right:4px;color:var(--c-error);}
+.klinika-table td.col-ok{color:var(--c-basic);font-weight:700;}
+.klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}
+.map-card{position:relative;}
+.map-expand-btn{position:absolute;top:10px;right:10px;z-index:3;padding:6px 12px;border:1px solid var(--accent-line);background:rgba(255,255,255,0.95);color:var(--accent);border-radius:var(--r-sm);font-size:12px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:var(--sh-sm);transition:all 0.15s var(--ease);}
+.map-expand-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.map-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(26,35,50,0.85);backdrop-filter:blur(6px);}
+.map-overlay.is-open{display:block;}
+.map-overlay-inner{position:absolute;inset:12px;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-xl);}
+.map-overlay-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface-soft);gap:8px;flex-wrap:wrap;}
+.map-overlay-title{font-weight:800;font-size:14px;color:var(--text);}
+.map-overlay-actions{display:flex;gap:6px;}
+.map-overlay-actions button{padding:6px 12px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;color:var(--text-soft);transition:all 0.15s var(--ease);}
+.map-overlay-actions button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.map-overlay-actions .map-close{background:var(--c-error);color:#fff;border-color:var(--c-error);}
+.map-overlay-canvas{flex:1;overflow:hidden;position:relative;background:#fff;cursor:grab;touch-action:none;}
+.map-overlay-canvas svg{display:block;position:absolute;top:0;left:0;transform-origin:0 0;}
+@media print{
+.fab,.toc-wrapper,.toc-overlay,.header-wrapper,.bottom-nav,.resume-dropdown,.map-overlay,.map-expand-btn{display:none !important;}
+body{padding:0;background:#fff;}
+.container{box-shadow:none;border:none;padding:0;max-width:100%;}
+details.answer{page-break-inside:avoid;}
+details.answer > *:not(summary){display:block !important;}
+details.answer summary{display:none;}
+.card{page-break-inside:avoid;}
+.widget{page-break-inside:avoid;}
+}
+@media (prefers-reduced-motion: reduce){
+*{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+html{scroll-behavior:auto;}
+}
+html,body{max-width:100%;overflow-x:hidden;}
+.table-scroll-hint{display:none;align-items:center;justify-content:space-between;gap:8px;padding:7px 11px;margin-top:0;margin-bottom:8px;border:1px solid var(--border);border-bottom:0;border-radius:var(--r-sm) var(--r-sm) 0 0;background:var(--surface-soft);color:var(--text-muted);font-size:11px;font-weight:700;}
+.table-wrap.is-scrollable + .table-scroll-hint{display:flex;}
+.table-scroll-hint .scroll-arrow{font-size:13px;letter-spacing:2px;color:var(--accent);}
+.timeline-anim{border-color:var(--c-understand-line);}
+.ta-stage{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 14px;min-height:280px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.ta-scene{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;animation:taFade 0.6s ease-out;width:100%;}
+@keyframes taFade{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.ta-scene .ta-year{font-size:1.7rem;font-weight:800;color:var(--accent);font-family:'JetBrains Mono',monospace;letter-spacing:1px;}
+.ta-scene .ta-who{font-size:1.05rem;font-weight:800;color:var(--text);}
+.ta-scene .ta-desc{font-size:13.5px;color:var(--text-soft);max-width:600px;line-height:1.65;}
+.ta-dots{display:flex;justify-content:center;gap:8px;margin:14px 0 8px;}
+.ta-dot{width:12px;height:12px;border-radius:50%;background:var(--border-strong);border:2px solid transparent;cursor:pointer;padding:0;transition:all 0.2s var(--ease);}
+.ta-dot.active{background:var(--accent);transform:scale(1.25);box-shadow:0 0 0 3px var(--accent-glow);}
+.ta-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;}
+.ta-nav{padding:8px 14px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-weight:700;color:var(--text-soft);cursor:pointer;font-size:12.5px;transition:all 0.15s var(--ease);}
+.ta-nav:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.ta-progress{font-size:12.5px;color:var(--text-muted);font-weight:700;font-family:'JetBrains Mono',monospace;}
+.eq-player{background:linear-gradient(180deg,#f8fafc,#eef6f5);border:2px solid var(--accent-line);border-radius:var(--r-lg);padding:16px 18px;margin:14px 0;}
+.eq-stage{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.15rem;padding:12px;background:#fff;border-radius:var(--r-md);border:1px solid var(--border);}
+.eq-term{display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border);opacity:0;}
+.eq-term.show{opacity:1;animation:reaction-flow 0.7s ease-out;}
+.eq-term.reactant{background:#e0f2fe;border-color:#7dd3fc;color:#0c4a6e;}
+.eq-term.product{background:#dcfce7;border-color:#86efac;color:#14532d;}
+.eq-arrow{opacity:0;color:var(--accent);font-size:1.4rem;}
+.eq-arrow.show{opacity:1;}
+.eq-balance{margin-top:10px;font-size:13px;color:var(--text-soft);display:none;}
+.eq-balance.show{display:block;}
+@keyframes reaction-flow{0%{opacity:.25;transform:scale(.92)}55%{opacity:1}100%{opacity:1;transform:scale(1)}}
+.ion-assembly{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;padding:18px 12px;background:#fff;border:1px solid var(--border);border-radius:var(--r-md);margin:10px 0;}
+.ion-chip{padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid var(--border);}
+.ion-chip.cation{background:#e0f2fe;border-color:#38bdf8;color:#0c4a6e;}
+.ion-chip.anion{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.ion-chip.product{background:#dcfce7;border-color:#4ade80;color:#14532d;}
+.ion-plus,.ion-join{font-size:1.4rem;font-weight:800;color:var(--text-muted);}
+.hero{max-width:900px;margin:0 auto 22px;padding:26px;border:1px solid var(--border);border-radius:var(--r-xl);background:linear-gradient(135deg,#fff,var(--accent-soft));box-shadow:var(--sh-md);}
+.hero h1{font-size:clamp(32px,6vw,52px);margin:4px 0 8px;}
+.hero-kicker{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--accent);text-transform:uppercase;}
+.lead{font-size:16px;color:var(--text-soft);max-width:720px;}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;}
+.page{max-width:900px;margin:0 auto;}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+@media(max-width:720px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px;}
+.metric-grid>div,.result-card,.step-card{padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);}
+.metric-grid b{display:block;font-size:10px;text-transform:uppercase;color:var(--text-muted);}
+.metric-grid strong{display:block;margin-top:3px;}
+@media(max-width:700px){.metric-grid{grid-template-columns:1fr;}}
+.controls,.button-grid{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;}
+.controls button,.button-grid button,.quiz-opt{padding:8px 12px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;cursor:pointer;}
+.particle-stage{height:120px;display:flex;align-items:center;justify-content:center;gap:70px;border:1px dashed var(--border-strong);border-radius:10px;margin-top:12px;}
+.particle{font-size:30px;font-weight:800;}
+.p-h3o{color:var(--accent);}
+.p-cl{color:#b83a45;}
+.ph-scale{display:flex;justify-content:space-between;margin-top:6px;font:700 11px 'JetBrains Mono',monospace;}
+.buffer-tank{height:28px;border:1px solid var(--border-strong);border-radius:999px;overflow:hidden;margin:14px 0;background:var(--surface-soft);}
+#bufferFill{height:100%;width:100%;background:var(--accent);transition:width .2s;}
+.quiz-wrap{margin:16px 0;}
+.quiz-q{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:14px 16px;margin-bottom:12px;}
+.quiz-q h5{margin:0 0 10px;font-size:14.5px;color:var(--text);text-transform:none;letter-spacing:0;line-height:1.45;}
+.quiz-q .q-tag{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:10px;margin-bottom:8px;background:var(--surface-soft);color:var(--text-muted);}
+.quiz-opts{display:flex;flex-direction:column;gap:8px;}
+.quiz-opt{display:block;width:100%;text-align:left;padding:10px 12px;border:2px solid var(--border);border-radius:var(--r-sm);background:#fff;font:inherit;font-size:13.5px;cursor:pointer;transition:all 0.15s var(--ease);color:var(--text);}
+.quiz-opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft);}
+.quiz-opt.correct{border-color:var(--c-basic);background:var(--c-basic-bg);color:var(--c-basic);font-weight:700;}
+.quiz-opt.wrong{border-color:var(--c-error);background:var(--c-error-bg);color:var(--c-error);}
+.quiz-opt:disabled{cursor:default;opacity:0.95;}
+.quiz-fb{margin-top:8px;font-size:13px;line-height:1.5;display:none;padding:8px 10px;border-radius:var(--r-sm);}
+.quiz-fb.show{display:block;}
+.quiz-fb.ok{background:var(--c-basic-bg);color:var(--c-basic);}
+.quiz-fb.bad{background:var(--c-error-bg);color:var(--c-error);}
+.quiz-score{text-align:center;padding:14px;background:var(--surface-soft);border-radius:var(--r-md);margin-top:16px;font-weight:800;color:var(--accent);display:none;}
+.quiz-score.show{display:block;}
+.lab-bridge{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 28px;padding:14px 16px;border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);background:linear-gradient(135deg,var(--surface-soft),var(--accent-soft));}
+.lab-bridge strong{display:block;color:var(--accent-dark);}
+.lab-bridge span{display:block;margin-top:3px;color:var(--text-soft);font-size:13px;}
+.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;}
+.lab-bridge-btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
+@media(max-width:600px){.lab-bridge{align-items:flex-start;flex-direction:column;}.lab-bridge-btn{width:100%;text-align:center;}}
+.exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}
+.exp-card h5{margin:0 0 10px;color:var(--c-basic);font-size:14px;text-transform:none;letter-spacing:0;}
+.exp-grid{display:grid;grid-template-columns:1fr;gap:6px;font-size:13.5px;line-height:1.55;}
+@media(min-width:600px){.exp-grid{grid-template-columns:110px 1fr;}}
+.exp-grid b{color:var(--text-soft);font-size:11px;text-transform:uppercase;letter-spacing:0.4px;}
+
+.js-reveal .card:not(.in),.js-reveal .widget:not(.in){opacity:0;transform:translateY(14px)}
+.js-reveal .card,.js-reveal .widget{transition:opacity .55s var(--ease),transform .55s var(--ease)}
+
+
+.ion-svg{width:100%;height:auto;display:block;background:radial-gradient(ellipse at 50% 40%,#fff,var(--surface-soft));border:1px solid var(--border);border-radius:var(--r-md);margin-top:10px}
+.ion-svg .mv{transition:transform .9s cubic-bezier(.65,0,.35,1);transform-box:fill-box}
+.ion-svg text{font-family:'JetBrains Mono',monospace;font-weight:800;text-anchor:middle;dominant-baseline:central}
+.ion-svg .fade{opacity:0;transition:opacity .6s ease .35s}
+.ion-svg[data-s="1"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="1"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="1"] .d1,.ion-svg[data-s="2"] .d1{opacity:1}
+.ion-svg[data-s="2"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="2"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="2"] .proton{transform:translate(120px,-40px)}
+.ion-svg[data-s="2"] .arrow{opacity:1}
+.ion-svg[data-s="3"] .g-hcl{transform:translateX(10px)}
+.ion-svg[data-s="3"] .g-w{transform:translateX(-10px)}
+.ion-svg[data-s="3"] .proton{transform:translate(230px,-38px)}
+.ion-svg[data-s="3"] .d3{opacity:1}
+.ion-svg[data-s="3"] .glow{animation:ionGlow 1.6s ease-in-out infinite}
+@keyframes ionGlow{0%,100%{filter:drop-shadow(0 0 2px rgba(13,104,104,.3))}50%{filter:drop-shadow(0 0 10px rgba(13,104,104,.8))}}
+
+
+.ph-bar{position:relative;height:18px;border-radius:999px;margin:10px 0 4px;border:1px solid var(--border-strong);
+background:linear-gradient(90deg,#e5262e 0%,#ef5a28 14%,#f6a21e 28%,#d7d93a 43%,#5cb85c 50%,#21a89a 57%,#2f7fc1 71%,#4a4bb5 86%,#6b2d8f 100%)}
+.ph-marker{position:absolute;top:-6px;width:0;height:0;left:0;transform:translateX(-50%);transition:left .35s var(--ease)}
+.ph-marker::before{content:'';position:absolute;left:-7px;top:0;border:7px solid transparent;border-top:10px solid var(--text)}
+.ph-marker::after{content:attr(data-v);position:absolute;left:0;top:-22px;transform:translateX(-50%);background:var(--text);color:#fff;font:800 11px 'JetBrains Mono',monospace;padding:2px 6px;border-radius:5px;white-space:nowrap}
+.ph-flask{display:inline-block;width:22px;height:22px;border-radius:0 0 8px 8px;border:2px solid var(--text-soft);vertical-align:middle;margin-right:6px;transition:background .35s}
+
+
+.titr-wrap{position:relative}
+#titrationCanvas{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--r-md);background:#fff}
+.titr-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.titr-row input[type=range]{flex:1 1 200px}
+.titr-flask{width:34px;height:42px;border:2px solid var(--text-soft);border-radius:2px 2px 12px 12px;transition:background .3s;flex-shrink:0;position:relative}
+.titr-flask::after{content:'';position:absolute;left:-2px;right:-2px;top:-8px;height:6px;border:2px solid var(--text-soft);border-bottom:0;border-radius:3px 3px 0 0}
+
+
+.buffer-tank{position:relative;height:34px}
+#bufferFill{transition:width .4s var(--ease),background .4s;background-size:28px 28px;background-image:linear-gradient(45deg,rgba(255,255,255,.22) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.22) 75%,transparent 75%)}
+.buffer-tank.pulse{animation:bufPulse .45s ease}
+.buffer-tank.dead{animation:bufDead .5s ease 2}
+@keyframes bufPulse{50%{transform:scale(1.02);box-shadow:0 0 0 4px var(--accent-glow)}}
+@keyframes bufDead{50%{box-shadow:0 0 0 4px rgba(184,58,69,.35)}}
+
+
+.rx-stage{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:12px 0;padding:14px;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md)}
+.rx-beaker{position:relative;width:120px;height:150px;border:3px solid var(--text-soft);border-top:0;border-radius:0 0 18px 18px;background:rgba(255,255,255,.55);overflow:visible;flex-shrink:0}
+.rx-liquid{position:absolute;left:0;right:0;bottom:0;height:100px;border-radius:0 0 14px 14px;background:rgba(220,235,240,.65);transition:background 2.2s ease}
+.rx-solid{position:absolute;left:36px;bottom:2px;width:48px;height:24px;border-radius:40% 40% 8px 8px;opacity:0;transition:height 3.5s ease,opacity .5s,transform 3.5s ease}
+.rx-bubbles,.rx-precip,.rx-fumes{position:absolute;left:0;right:0;bottom:0;height:150px;pointer-events:none;overflow:hidden}
+.rx-fumes{overflow:visible;bottom:100px;height:70px}
+.rx-b{position:absolute;bottom:14px;border-radius:50%;background:rgba(255,255,255,.85);border:1px solid rgba(13,104,104,.45);animation:rxRise 2.2s ease-in forwards}
+@keyframes rxRise{to{transform:translate(var(--dx,0),-92px);opacity:0}}
+.rx-p{position:absolute;top:50px;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #cbd5e1;animation:rxFall 2.4s ease-in forwards}
+@keyframes rxFall{to{transform:translateY(90px)}}
+.rx-cloud{position:absolute;bottom:0;left:6px;right:6px;height:0;background:#fff;border-radius:10px 10px 0 0;box-shadow:0 0 0 1px #e2e8f0;transition:height 4s ease;opacity:.95}
+.rx-f{position:absolute;bottom:0;width:26px;height:26px;border-radius:50%;background:rgba(150,75,20,.55);filter:blur(7px);animation:rxFume 3s ease-out forwards}
+@keyframes rxFume{to{transform:translate(var(--dx,0),-70px) scale(2.2);opacity:0}}
+
+
+.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.rx-label{flex:1 1 200px;font-size:13px;color:var(--text-soft);line-height:1.5}
+.rx-label b{color:var(--text);font-family:'JetBrains Mono',monospace}
+@media print{.js-reveal .card,.js-reveal .widget{opacity:1!important;transform:none!important}}
+
+
+/* ulepszenia.css — warstwa wspólna nad baza.css: pasek lekcji, postęp czytania, spis z podświetleniem,
+   tryb ciemny, komponenty wspólne (mity, drzewo, cytat, dialog, słówka, figura), druk, dostępność.
+   Kolejność w lekcji: baza.css → ulepszenia.css → motywy/<przedmiot>.css. Edytuj tylko tutaj. */
+
+:root{--header-h:52px;--serif:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Charter,Georgia,serif}
+
+/* ---------- pasek lekcji (zamiast nagłówka aplikacji) ---------- */
+.lk-bar{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 12px;
+  background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--border)}
+.lk-subj{flex:none;display:inline-flex;align-items:center;gap:7px;font:800 12.5px/1 Inter,system-ui,sans-serif;color:var(--accent);text-decoration:none;
+  padding:6px 10px 6px 8px;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+.lk-subj i{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+.lk-title{flex:1;min-width:0;font:600 13px/1.25 Inter,system-ui,sans-serif;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lk-btn{flex:none;min-width:36px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);background:var(--surface);
+  color:var(--text);border-radius:9px;padding:0 10px;font:700 12.5px Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+.lk-btn:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.lk-prog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
+@media (max-width:520px){.lk-title{display:none}.lk-bar{justify-content:space-between}}
+
+/* ---------- nagłówek lekcji ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+.hero::after{content:"";position:absolute;inset:-10% -6% -10% 52%;z-index:-1;opacity:.12;pointer-events:none;background:var(--motyw-wzor,none) right center/auto 100% repeat-y}
+.hero h1{text-wrap:balance}
+.hero-kicker{color:var(--accent);text-transform:none;letter-spacing:0;font-size:13px}
+.page{padding:0 16px}
+.lk-btn svg{width:16px;height:16px;display:block}
+.lk-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:12.5px;color:var(--text-muted)}
+.lk-meta b{color:var(--text-soft);font-weight:700}
+
+/* ---------- spis treści: aktywna sekcja ---------- */
+@media (min-width:800px){.toc-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));column-gap:12px}}
+.toc-link.on{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);font-weight:700}
+section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
+
+/* ---------- komponenty wspólne ---------- */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:12px 0}
+.myth-head{grid-column:1/-1;font-weight:800;font-size:14px}
+.myth{border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow:hidden}
+.myth p{margin:0;padding:9px 12px;font-size:13.5px;line-height:1.5}
+.myth p span{display:block;font:800 11px Inter,system-ui;margin-bottom:2px}
+.myth-x{background:var(--c-error-bg)}.myth-x span{color:var(--c-error)}.myth-ok span{color:var(--c-basic)}
+
+.lk-tree{margin:12px 0;font-size:14px;overflow-x:auto}
+.lk-tree ul{list-style:none;margin:0;padding-left:18px}.lk-tree>ul{padding-left:0}
+.lk-tree li{position:relative;padding:3px 0 3px 14px}
+.lk-tree ul ul li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--accent-line)}
+.lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
+.lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
+.lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+
+/* cytat z tekstu (lektura, źródło, wypowiedź) */
+.lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
+.lk-quote blockquote{margin:0;font:400 17px/1.65 var(--serif);color:var(--text)}
+.lk-quote blockquote p{margin:0 0 6px;color:inherit}
+.lk-quote figcaption{margin-top:6px;font-size:12.5px;color:var(--text-muted)}
+
+/* dialog (role A/B, rozmowa, scenka) */
+.lk-dialog{margin:14px 0;display:flex;flex-direction:column;gap:8px}
+.lk-line{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.lk-who{min-width:30px;height:30px;padding:0 8px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font:800 12px Inter,system-ui;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line)}
+.lk-line.b .lk-who{background:var(--surface-soft);color:var(--text-soft);border-color:var(--border)}
+.lk-say{padding:8px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font-size:14.5px;line-height:1.55}
+.lk-say small{display:block;color:var(--text-muted);font-size:12.5px;margin-top:2px}
+
+/* słówka: wyraz — znaczenie — przykład */
+.lk-vocab{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.lk-vocab th{text-align:left;font-size:12px;color:var(--text-muted);font-weight:700;padding:6px 10px;border-bottom:2px solid var(--border)}
+.lk-vocab td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+.lk-vocab td:first-child{font-weight:800;color:var(--accent);white-space:nowrap}
+.lk-vocab td:last-child{color:var(--text-soft);font-style:italic}
+@media (max-width:560px){.lk-vocab thead{display:none}.lk-vocab tr{display:block;padding:8px 0;border-bottom:1px solid var(--border)}
+  .lk-vocab td{display:block;border:0;padding:1px 4px}}
+
+/* figura z biblioteki grafik przedmiotu */
+.lk-fig{margin:16px 0;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);overflow:hidden}
+.lk-fig figcaption{padding:9px 14px;border-top:1px solid var(--border);background:var(--surface-soft);font-size:13px;line-height:1.5;color:var(--text-soft)}
+.lk-fig figcaption b{color:var(--text);margin-right:4px}
+.lk-fig-body{padding:12px}
+.lk-fig svg{display:block;width:100%;height:auto}
+
+/* z chemii (lekcja.css): treści akademickie, plakietki */
+details.adv{border:1px dashed var(--c-warn-line,#eed8a8);border-radius:10px;background:var(--surface-soft,#f6f8fa);margin:10px 0;padding:0 12px}details.adv>summary{cursor:pointer;font-weight:700;color:var(--c-warn,#b06f1c);padding:9px 0;list-style:none}details.adv>summary::-webkit-details-marker{display:none}details.adv>summary::before{content:"▸ "}details.adv[open]>summary::before{content:"▾ "}.adv-tag{font-weight:600;font-size:11px;opacity:.75;margin-left:6px}.adv-body{padding:0 0 10px;font-size:13.5px;line-height:1.6}.adv-body table{font-size:12.5px}.adv-toggle{margin-top:10px;border:1px solid var(--c-warn-line,#eed8a8);background:var(--c-warn-bg,#fcf4e6);color:var(--c-warn,#b06f1c);border-radius:999px;padding:6px 12px;font:700 12px Inter,system-ui,sans-serif;cursor:pointer}.bio-tag{display:inline-block;font:800 10px Inter,system-ui;letter-spacing:.04em;padding:2px 7px;border-radius:99px;background:rgba(46,125,79,.12);color:#2e7d4f;margin-left:6px;vertical-align:middle}.v15{display:inline-block;font:800 9.5px Inter,system-ui;padding:1px 6px;border-radius:99px;background:rgba(13,125,125,.12);color:#0d7d7d;margin-left:6px;vertical-align:middle}@media print{details.adv{display:block}details.adv>.adv-body{display:block}}
+/* z chemii (lekcja.css): telefon, tabele */
+.exp-card{min-width:0;max-width:100%;box-sizing:border-box}.exp-grid>*{min-width:0;overflow-wrap:anywhere}
+@media (max-width:600px){.exp-grid{grid-template-columns:minmax(0,1fr)!important}.exp-grid>b{margin-top:4px}}
+.table-wrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+
+/* klinika błędów (::: klinika) — tabela, na telefonie karty */
+.klinika-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden}
+.klinika-table th{text-align:left;padding:9px 12px;background:var(--surface-soft);color:var(--text-soft);font-size:12px;font-weight:800;border-bottom:1px solid var(--border)}
+.klinika-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.klinika-table tr:last-child td{border-bottom:0}
+@media (max-width:600px){.klinika-table thead{display:none}.klinika-table tr{display:block;padding:8px 12px;border-bottom:1px solid var(--border)}
+  .klinika-table td{display:block;border:0;padding:2px 0}.klinika-table td:not(.col-blad):not(.col-ok){color:var(--text-soft)}}
+
+.lk-pre{margin:12px 0;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-soft);overflow-x:auto;font:12.5px/1.55 ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;color:var(--text-soft);white-space:pre}
+.lk-pre code{font:inherit;background:none;padding:0;color:inherit}
+.lk-hr{border:0;border-top:1px solid var(--border);margin:28px 0}
+
+/* ---------- dostępność ---------- */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;z-index:60;background:var(--surface);color:var(--accent);padding:8px 12px;border-radius:8px}
+.skip-link:focus{left:8px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- tryb ciemny: automatycznie albo przyciskiem (data-theme) ---------- */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme=dark]{
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}
+/* elementy bazy z białym tłem na sztywno */
+html[data-ciemny] :is(.flashcard,.checklist,.audit-item,.layer-legend,.quiz-q,.quiz-opt,.btn,.controls button,.eq-stage,.ion-assembly,.bld-workspace,.bld-pool button,.resume-dropdown,.ta-nav){background:var(--surface);color:var(--text)}
+html[data-ciemny] .hero{background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.active,.step-flow){color:var(--bg)}
+@media (max-width:600px){.hero::after{opacity:.07}}
+
+/* ---------- druk ---------- */
+@media print{
+  .lk-bar,.adv-toggle,.toc-item,.fab,.bottom-nav{display:none!important}
+  body{padding:0;background:#fff;color:#000}
+  .hero::after{display:none}.hero{background:none;box-shadow:none}
+  details.adv,details.answer{display:block}details>*{display:block}
+  .card,.minimum-card,.lk-fig,.myth,.quiz-q{break-inside:avoid;box-shadow:none}
+  a{color:inherit;text-decoration:none}
+}
+
+/* === Dopracowanie czytelności (2026-10-11; z wersji „ulepszonej” U03 użytkownika, uogólnione na wszystkie przedmioty, zgodne z trybem ciemnym) === */
+body{line-height:1.74}
+main{isolation:isolate}
+.hero{border-color:var(--accent-line)}
+.hero::before{content:"";position:absolute;right:-42px;top:-56px;width:180px;height:180px;z-index:-1;pointer-events:none;
+ border:1px solid var(--accent-line);border-radius:50%;opacity:.45;
+ box-shadow:0 0 0 22px var(--accent-glow),0 0 0 44px var(--accent-glow)}
+.part-heading{padding:0 0 12px;border-bottom:1px solid var(--border);align-items:flex-start}
+.part-num{margin-top:1px}
+section[id]{scroll-margin-top:calc(var(--header-h,56px) + 20px)}
+section p{max-width:78ch}
+section ul,section ol{padding-left:1.35rem}
+.card,.exp-card,.widget,.table-wrap{box-shadow:0 2px 8px rgba(24,49,59,.045)}
+.table-wrap{max-width:100%}
+.table-wrap table{line-height:1.55}
+.table-wrap td strong{color:var(--text)}
+.table-wrap tbody tr:nth-child(even) td{background:var(--surface-soft)}
+.table-wrap tbody tr:hover td{background:var(--accent-soft)}
+.mini-note{max-width:80ch}
+:is(button,a,summary,[tabindex]):focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:520px){.hero{padding:20px 16px}.part-heading{font-size:19px;gap:11px}
+ .table-wrap table{font-size:12.5px}.table-wrap th,.table-wrap td{padding:8px 9px}}
+@media(hover:none){.card:hover,.flashcard:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media print{.hero::before{display:none}.card,.exp-card,.table-wrap{break-inside:avoid;box-shadow:none}}
+
+/* fiszki: część ukryta do rozwinięcia (lekcja.js); przy druku — wszystkie */
+.flashcard[hidden]{display:none!important}
+.fz-more{display:block;width:100%;margin:-6px 0 18px;padding:12px 16px;border:2px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent;color:var(--text,#1d2a30);font-family:inherit;font-weight:600;font-size:15px;line-height:1.3;cursor:pointer;text-align:center}
+.fz-more:hover,.fz-more:focus-visible{background:var(--surface-2,rgba(0,0,0,.04))}
+@media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
+.quiz-q[hidden]{display:none!important}
+@media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
+
+/* motyw bio (Biologia) — warstwa BIO: kolory, helisa w nagłówku, grafiki bio-viz. Wspólne rzeczy w ../ulepszenia.css */
+:root{
+--header-h:48px;
+--accent:#1d6b4f;--accent-dark:#124632;--accent-soft:#e7f3ec;--accent-line:#b9dbc7;--accent-glow:rgba(29,107,79,0.16);
+--hl-key:#1d6b4f;--hl-key-bg:#dcefe3;--hl-formula:#124632;--hl-formula-bg:#e3f0e8;
+--bg:#f8faf8;--surface-soft:#f3f7f4;
+/* nukleotydy i budowa DNA — jedna paleta dla całej biologii */
+--nt-A:#2f9e44;--nt-A-bg:#d3f9d8;--nt-T:#e03131;--nt-T-bg:#ffe3e3;--nt-C:#1971c2;--nt-C-bg:#d0ebff;--nt-G:#7048e8;--nt-G-bg:#e5dbff;--nt-U:#e8590c;--nt-U-bg:#ffe8cc;
+--sugar:#3b8fd0;--sugar-bg:#e3f1fc;--phos:#e09400;--phos-bg:#fff3d6;--hbond:#8a97a6;
+--strand1:#1f6fb2;--strand2:#178a6c;
+/* komórka */
+--cell-mem:#5c8a3a;--cell-cyto:#f4f9ef;--nucleus:#c9a8e8;--nucleus-bg:#f3ecfb;--mito:#e58b5a;--mito-bg:#fde9dc;--chloro:#4caf50;--chloro-bg:#e3f4e3;--wall:#9bbd6a;--dna-ink:#7a3fbf;
+--viz-ink:#1a2332;--viz-mut:#5d6b7a;--viz-line:#d5dee6;--viz-bg:#ffffff;--viz-bg2:#f6f8f7;
+}
+body{font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
+/* pasek górny */
+.bio-bar{position:fixed;top:0;left:0;right:0;height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 12px;background:color-mix(in srgb,var(--surface) 92%,transparent);border-bottom:1px solid var(--border);backdrop-filter:blur(8px);z-index:1200}
+.bio-bar-title{flex:1;min-width:0;font:700 13px/1.2 Inter,system-ui,sans-serif;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bio-bar-btn{flex:none;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:8px;padding:6px 11px;font:700 12.5px Inter,system-ui,sans-serif;cursor:pointer;text-decoration:none}
+.bio-bar-btn:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.page{max-width:900px;margin:0 auto;padding:0 14px}
+@media(min-width:600px){.page{padding:0 8px}}
+/* nagłówek lekcji: spokojne tło z helisą */
+.hero{position:relative;overflow:hidden;isolation:isolate}
+.hero::after{content:"";position:absolute;inset:-20% -10% -20% 45%;z-index:-1;opacity:.13;pointer-events:none;
+background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 240'%3E%3Cg fill='none' stroke-width='5' stroke-linecap='round'%3E%3Cpath d='M20 0C100 30 100 90 20 120S-60 210 20 240' stroke='%231f6fb2'/%3E%3Cpath d='M100 0C20 30 20 90 100 120S180 210 100 240' stroke='%23178a6c'/%3E%3C/g%3E%3Cg stroke='%237a8a99' stroke-width='3'%3E%3Cpath d='M38 18H82M28 42H92M38 66H82M60 90V90M38 138H82M28 162H92M38 186H82'/%3E%3C/g%3E%3C/svg%3E") repeat-y right top/120px 240px;
+animation:bio-drift 60s linear infinite}
+@keyframes bio-drift{to{background-position:right 240px}}
+@media (prefers-reduced-motion:reduce){.hero::after{animation:none}}
+.hero-kicker{color:var(--accent)}
+/* poziomy */
+.level-badge{white-space:nowrap}
+/* figura z biblioteki */
+.bio-fig{margin:16px 0;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--viz-bg);overflow:hidden;box-shadow:var(--sh-sm)}
+.bio-fig figcaption{padding:9px 14px;border-top:1px solid var(--border);background:var(--surface-soft);font-size:13px;line-height:1.5;color:var(--text-soft)}
+.bio-fig figcaption b{color:var(--text);margin-right:4px}
+.bio-fig-body{padding:12px;color:var(--viz-ink)}
+.bio-fig svg{display:block;width:100%;height:auto;max-width:100%}
+.bio-fig svg text{font-family:Inter,system-ui,sans-serif;fill:var(--viz-ink)}
+.bio-err{color:var(--c-error);font-size:13px}
+/* elementy wspólne grafik */
+.bv-tools{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 10px}
+.bv-btn{border:1px solid var(--border-strong);background:var(--surface);color:var(--text);border-radius:8px;padding:6px 11px;font:700 12.5px Inter,system-ui,sans-serif;cursor:pointer;min-height:34px}
+.bv-btn:hover{border-color:var(--accent);color:var(--accent)}
+.bv-btn.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.bv-info{margin-top:10px;padding:10px 12px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:8px;font-size:13.5px;line-height:1.55;min-height:44px}
+.bv-info b{display:block;margin-bottom:2px;color:var(--text)}
+.bv-info.ok{border-left-color:var(--c-basic);background:var(--c-basic-bg)}
+.bv-info.bad{border-left-color:var(--c-error);background:var(--c-error-bg)}
+.bv-hit{cursor:pointer}
+.bv-hit:hover>*:first-child,.bv-hit.sel>*:first-child{filter:drop-shadow(0 0 3px var(--accent-glow))}
+.bv-hit.sel>*:first-child{stroke:var(--accent)!important;stroke-width:3!important}
+.bv-hit:focus-visible{outline:none}.bv-hit:focus-visible>*:first-child{stroke:var(--accent)!important;stroke-width:3!important}
+.bv-legend{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;font-size:12.5px;color:var(--text-soft)}
+.bv-legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.bv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:10px}
+.bv-tile{border:1px solid var(--border);border-radius:12px;background:var(--viz-bg2);padding:10px;min-width:0}
+.bv-tile h6{margin:0 0 6px;font:800 13px/1.3 Inter,system-ui,sans-serif;color:var(--text)}
+.bv-tile p{margin:6px 0 0;font-size:12.5px;line-height:1.5;color:var(--text-soft)}
+/* łańcuch (flow / zoom) */
+.bv-chain{display:flex;flex-wrap:wrap;align-items:stretch;gap:6px}
+.bv-node{flex:1 1 120px;min-width:0;border:1px solid var(--border);border-radius:12px;background:var(--viz-bg2);padding:9px 10px;text-align:center;font-size:13px;line-height:1.35}
+.bv-node b{display:block;font-size:14px;color:var(--text)}
+.bv-node small{display:block;color:var(--text-muted);font-size:11.5px;margin-top:2px}
+.bv-node svg.bv-ico{max-width:110px;margin:0 auto 4px}.bv-node svg{margin:0 auto}
+.bv-arrow{flex:0 0 auto;align-self:center;color:var(--accent);font:800 18px/1 system-ui}
+.bv-node.k{border-color:var(--accent-line);background:var(--accent-soft)}
+.bv-side{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end}
+.bv-side span{border:1px dashed var(--accent-line);border-radius:99px;padding:3px 10px;font-size:12px;color:var(--accent)}
+@media (max-width:560px){.bv-chain.v{flex-direction:column;gap:2px}.bv-chain.v .bv-arrow{transform:rotate(90deg);margin:-3px auto;font-size:15px}.bv-chain.v .bv-node{flex-basis:auto}.bv-chain.v .bv-node:has(svg.bv-ico){display:grid;grid-template-columns:76px 1fr;grid-template-rows:auto auto;column-gap:10px;text-align:left;align-items:center;padding:6px 10px}.bv-chain.v .bv-node svg.bv-ico{grid-row:1/3;width:76px;margin:0}.bv-chain.v .bv-node b{align-self:end}.bv-chain.v .bv-node small{align-self:start}}
+.bv-grid.c2{grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr))}
+/* sekwencje i trener */
+.bv-seq{display:flex;flex-wrap:wrap;gap:4px;align-items:center;font:800 16px/1 ui-monospace,Consolas,monospace}
+.bv-nt{width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;border-radius:8px;border:2px solid;font:800 16px/1 ui-monospace,Consolas,monospace}
+.bv-nt.A{color:var(--nt-A);background:var(--nt-A-bg);border-color:var(--nt-A)}.bv-nt.T{color:var(--nt-T);background:var(--nt-T-bg);border-color:var(--nt-T)}
+.bv-nt.C{color:var(--nt-C);background:var(--nt-C-bg);border-color:var(--nt-C)}.bv-nt.G{color:var(--nt-G);background:var(--nt-G-bg);border-color:var(--nt-G)}
+.bv-nt.U{color:var(--nt-U);background:var(--nt-U-bg);border-color:var(--nt-U)}
+.bv-nt.q{border-style:dashed;color:var(--text-muted);border-color:var(--border-strong);background:var(--surface)}
+.bv-nt.e{border-color:transparent;color:var(--text-faint);background:transparent}
+.bv-nt.diff{box-shadow:0 0 0 3px var(--c-warn)}
+.bv-end{font:700 12px ui-monospace,Consolas,monospace;color:var(--text-muted);width:20px;text-align:center}
+.bv-hb{width:34px;height:14px;display:inline-flex;flex-direction:column;justify-content:center;gap:2px}
+.bv-hb i{display:block;height:0;border-top:2px dashed var(--hbond);margin:0 6px}
+.bv-pick{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 0}
+.bv-pick .bv-nt{cursor:pointer;width:44px;height:44px;font-size:18px}
+.bv-pick .bv-nt:disabled{opacity:.3;cursor:default}
+.bv-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px}
+/* sortowanie cech */
+.bv-sort{display:flex;flex-direction:column;gap:8px}
+.bv-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;padding:8px 10px;border:1px solid var(--border);border-radius:10px;background:var(--viz-bg2)}
+.bv-row>b{flex:1 1 150px;font-size:14px}
+.bv-row .bv-btn{padding:5px 9px;font-size:12px;min-height:32px}
+.bv-row.ok{border-color:var(--c-basic-line);background:var(--c-basic-bg)}
+.bv-row.bad{border-color:var(--c-error-line);background:var(--c-error-bg)}
+.bv-row .why{flex-basis:100%;font-size:12.5px;color:var(--text-soft)}
+.bv-score{font:700 13px Inter,system-ui;color:var(--text-soft);margin-top:4px}
+/* mity */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:12px 0}
+.myth-head{grid-column:1/-1;font-weight:800;font-size:14px}
+.myth{border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow:hidden}
+.myth p{margin:0;padding:9px 12px;font-size:13.5px;line-height:1.5}
+.myth p span{display:block;font:800 10.5px Inter,system-ui;letter-spacing:.06em;text-transform:uppercase;margin-bottom:2px}
+.myth-x{background:var(--c-error-bg);color:var(--text)}.myth-x span{color:var(--c-error)}
+.myth-ok span{color:var(--c-basic)}
+/* mapa pojęć z listy */
+.bio-tree{margin:12px 0;font-size:14px;overflow-x:auto}
+.bio-tree ul{list-style:none;margin:0;padding-left:18px;position:relative}
+.bio-tree>ul{padding-left:0}
+.bio-tree li{position:relative;padding:3px 0 3px 14px}
+.bio-tree ul ul li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--accent-line)}
+.bio-tree ul ul li:last-child::before{bottom:auto;height:16px}
+.bio-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
+.bio-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
+.bio-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+@media print{.bio-bar{display:none}body{padding-top:0}.hero::after{display:none}}
+.hero{background:linear-gradient(135deg,var(--surface),var(--accent-soft))}
+@media(min-width:640px){.flashcard-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.level-contest{background:var(--c-warn-bg);color:var(--c-warn)}
+
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#6fcf9f;--accent-dark:#a8e6c6;--accent-soft:#16281f;--accent-line:#2c5541;--accent-glow:rgba(111,207,159,.2);--hl-key:#86d9ad;--hl-key-bg:#1a3226;--hl-formula:#a8e6c6;--hl-formula-bg:#16281f;--viz-ink:#e6ebf0;--viz-mut:#9aa6b2;--viz-line:#34404c;--viz-bg:#19212a;--viz-bg2:#1f2832;}}
+:root[data-theme=dark]{--accent:#6fcf9f;--accent-dark:#a8e6c6;--accent-soft:#16281f;--accent-line:#2c5541;--accent-glow:rgba(111,207,159,.2);--hl-key:#86d9ad;--hl-key-bg:#1a3226;--hl-formula:#a8e6c6;--hl-formula-bg:#16281f;--viz-ink:#e6ebf0;--viz-mut:#9aa6b2;--viz-line:#34404c;--viz-bg:#19212a;--viz-bg2:#1f2832;}
+
+/* krew i grupy krwi (krazenie-obiegi, transfuzja) */
+:root{--blood-o2:#c62828;--blood-o2-bg:#fde8e8;--blood-co2:#1f5fae;--blood-co2-bg:#e7effb;--ag-a:#c2410c;--ag-b:#7c3aed;--ag-d:#0f766e}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--blood-o2:#f87171;--blood-o2-bg:#3a1616;--blood-co2:#7aa7ff;--blood-co2-bg:#14213a;--ag-a:#fb923c;--ag-b:#c4b5fd;--ag-d:#5eead4}}
+:root[data-theme=dark]{--blood-o2:#f87171;--blood-o2-bg:#3a1616;--blood-co2:#7aa7ff;--blood-co2-bg:#14213a;--ag-a:#fb923c;--ag-b:#c4b5fd;--ag-d:#5eead4}
+.kr-el.sel .kr-v{stroke-width:14}.kr-el{transition:opacity .25s}
+.pk .pk-tube.sel>*:first-child{stroke-width:var(--w)!important}.pk svg [data-k]{transition:opacity .25s}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+<header class="lk-bar"><span class="lk-subj"><i></i>Biologia</span><span class="lk-title">L040 Czym jest ekosystem i jakie czynniki na niego wpływają?</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<main class="page" id="main">
+<section class="hero card"><div class="hero-kicker">Biologia, lekcja L040</div><h1>Czym jest ekosystem i jakie czynniki na niego wpływają?</h1><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#s1">KARTA LEKCJI L040</a><a class="toc-link" href="#s2">WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML</a><a class="toc-link" href="#s3">1. Pytanie przewodnie</a><a class="toc-link" href="#s4">2. Cele lekcji</a><a class="toc-link" href="#s5">3. Kompas  · [PRZYPOMNIENIE]</a><a class="toc-link" href="#s6">4. Zacznij od problemu</a><a class="toc-link" href="#s7">5. Ściąga — poziom podstawowy  · [PODSTAWA E8]</a><a class="toc-link" href="#s8">6. Wyjaśnienie od podstaw (warstwa podręcznikowa)  · [PODSTAWA E8]</a><a class="toc-link" href="#s9">7. Poziom ambitny  · [MASTER]</a><a class="toc-link" href="#s10">8. Poziom zaawansowany  · [ZAAWANSOWANY]</a><a class="toc-link" href="#s11">9. Klinika błędów  · [PODSTAWA E8] / [TRENING]</a><a class="toc-link" href="#s12">10. Obserwacja / model</a><a class="toc-link" href="#s13">11. Ćwiczenia  · [TRENING] (11D → [KONKURS])</a><a class="toc-link" href="#s14">12. Odpowiedzi i sposób oceniania</a><a class="toc-link" href="#s15">13. Fiszki  · [POWTÓRKA]</a><a class="toc-link" href="#s16">14. Test końcowy  · [TRENING]</a><a class="toc-link" href="#s17">15. Checklista</a><a class="toc-link" href="#s18">16. Mapa pojęć</a><a class="toc-link" href="#s19">17. Co dalej?</a><a class="toc-link" href="#s20">18. Słownik</a><a class="toc-link" href="#s21">19. Dodatek zaawansowany  · [ZAAWANSOWANY]</a><a class="toc-link" href="#s22">20. Jak się uczyć?</a><a class="toc-link" href="#s23">21. Połączenia międzyprzedmiotowe</a><a class="toc-link" href="#s24">22. Zadania z życia codziennego</a><a class="toc-link" href="#s25">23. STATUS LEKCJI</a><a class="toc-link" href="#s26">24. UZUPEŁNIENIE E8 v4.0+ (doklejone)</a><a class="toc-link" href="#s27">23. UZUPEŁNIENIE AUDYTOWE v4.2 — energia, materia i poziomy troficzne</a><a class="toc-link" href="#s28">25. AUDYT W16 — ewolucja, ekologia i synteza (2026-10-09)</a></nav></details>
+<section id="s1">
+<div class="part-heading">KARTA LEKCJI L040</div>
+<ul>
+<li>Numer: L040</li>
+<li>Tytuł roboczy: Ekosystem</li>
+<li>Dział: Ekologia</li>
+<li>Poziom: klasa 8 — [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]</li>
+<li>Poprzednia: L032 · Następna: L041</li>
+<li>Status treści: audyt W1 punktowy 2026-10-09; pełna walidacja wszystkich kluczy nadal wymagana</li>
+<li>Status HTML: brak HTML</li>
+<li>Szablon: karta + sekcje 0–22 jak L015; brakującą sekcję oznaczać <code>STATUS: DO UZUPEŁNIENIA</code> (nie przesuwać numerów)</li>
+<li>Zasada: nic nie wycinać; treść dopisywać poniżej karty</li>
+</ul>
+</section>
+<section id="s2">
+<div class="part-heading">WARSTWA WIZUALNA — specyfikacja MD pod przyszły HTML</div>
+<p><strong>Główna plansza:</strong> Ekosystem.</p>
+<p><code>[BIO: DIAGRAM type=FLOW]</code>
+<code>biotop + biocenoza → zależności → przepływ energii/obieg materii</code>
+<code>[/BIO: DIAGRAM]</code></p>
+<!-- OPIS: Ekosystem: rozróżnij przepływ energii od obiegu materii. Schemat 1 w lekcji L040 pokazuje relację opisaną w jego etykietach; strzałki należy czytać zgodnie z kierunkiem zapisu. Jest modelem dydaktycznym, nie pełnym obrazem wszystkich wyjątków. -->
+<p><strong>Co uczeń ma zauważyć:</strong> elementy są połączone.</p>
+<p><strong>Zasada projektowa:</strong> grafika ma objaśniać treść, a nie zastępować wyjaśnienie tekstowe.</p>
+<p><strong>Dział:</strong> Ekologia
+<strong>Poziomy:</strong> podstawa · trening · ambitny · zaawansowany
+<strong>Warstwy:</strong> [PRZYPOMNIENIE] · [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY] · ([KONKURS])
+<strong>Poprzednia lekcja:</strong> L032
+<strong>Następna lekcja:</strong> L041</p>
+<hr class="lk-hr"/>
+<h3>Mapa lekcji</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Warstwa</th><th>Gdzie w lekcji</th></tr></thead>
+<tbody>
+<tr><td><strong>[PRZYPOMNIENIE]</strong></td><td>pkt 3 Kompas (klasy 4–7: środowisko, organizm, populacja)</td></tr>
+<tr><td><strong>[PODSTAWA E8]</strong></td><td>pkt 5 Ściąga + pkt 6 Wyjaśnienie + pkt 9 Klinika</td></tr>
+<tr><td><strong>[TRENING]</strong></td><td>pkt 11–14 (ćwiczenia, test)</td></tr>
+<tr><td><strong>[MASTER]</strong></td><td>pkt 7 Poziom ambitny</td></tr>
+<tr><td><strong>[ZAAWANSOWANY]</strong></td><td>pkt 8 + pkt 19</td></tr>
+<tr><td><strong>[KONKURS]</strong></td><td>pkt 11D PROBLEM / THINK</td></tr>
+<tr><td><strong>[POWTÓRKA]</strong></td><td>pkt 13 Fiszki</td></tr>
+</tbody></table></div>
+<h3>Most z poprzednich lekcji</h3>
+<ul>
+<li><strong>L015 (mejoza):</strong> zmienność rekombinacyjna → różnorodność organizmów w ekosystemie.</li>
+<li><strong>L020 (mutacje):</strong> mutacje → nowe cechy → materiał dla doboru (L031).</li>
+<li><strong>L030–L032 (ewolucja):</strong> dobór naturalny → dostosowanie organizmów do środowiska.</li>
+<li><strong>Z klas 4–7:</strong> organizm, populacja, środowisko.</li>
+</ul>
+<p><strong>Pytanie łączące:</strong> Dlaczego w jednym ekosystemie żyją organizmy o różnych cechach? (Odp.: zmienność genetyczna + dobór + przystosowanie.)</p>
+<hr class="lk-hr"/>
+</section>
+<section id="s3">
+<div class="part-heading"><span class="part-num">1</span> Pytanie przewodnie</div>
+<p>Czym jest ekosystem i jakie czynniki kształtują życie?</p>
+<hr class="lk-hr"/>
+</section>
+<section id="s4">
+<div class="part-heading"><span class="part-num">2</span> Cele lekcji</div>
+<p>Po lekcji uczeń:</p>
+<ul>
+<li>definiuje ekosystem, biocenozę, biotop,</li>
+<li>rozróżnia czynniki abiotyczne i biotyczne,</li>
+<li>rozróżnia producentów, konsumentów, destruentów,</li>
+<li>(ambitny) rozumie obieg materii zamknięty i przepływ energii otwarty,</li>
+<li>(zaawansowany) zna produkcję pierwotną brutto/netto i sukcesję.</li>
+</ul>
+<h3>Zasada 80/20</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>20% = 80% efektu</th><th>Dlaczego</th></tr></thead>
+<tbody>
+<tr><td>ekosystem = biocenoza + biotop</td><td>definicja</td></tr>
+<tr><td>abiotyczne vs biotyczne</td><td>klasyfikacja</td></tr>
+<tr><td>producent → konsument → destruent</td><td>łańcuch</td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+</section>
+<section id="s5">
+<div class="part-heading"><span class="part-num">3</span> Kompas  · <strong>[PRZYPOMNIENIE]</strong></div>
+<p>Z klasy 4–7: środowisko, organizm, populacja.</p>
+<hr class="lk-hr"/>
+</section>
+<section id="s6">
+<div class="part-heading"><span class="part-num">4</span> Zacznij od problemu</div>
+<p>Dlaczego w jednym jeziorze żyją inne organizmy niż w drugim?
+Co decyduje o tym, jakie organizmy mogą żyć w danym miejscu?</p>
+<p><strong>Hipoteza:</strong> ....................................</p>
+<hr class="lk-hr"/>
+</section>
+<section id="s7">
+<div class="part-heading"><span class="part-num">5</span> Ściąga — poziom podstawowy  · <strong>[PODSTAWA E8]</strong></div>
+<p><strong>Ekosystem</strong> = biocenoza + biotop.</p>
+<ul>
+<li><strong>Biocenoza</strong> — wszystkie organizmy w danym środowisku.</li>
+<li><strong>Biotop</strong> — środowisko nieożywione (woda, gleba, powietrze).</li>
+</ul>
+<div class="table-wrap"><table>
+<thead><tr><th>Czynnik</th><th>Przykłady</th></tr></thead>
+<tbody>
+<tr><td>Abiotyczne (nieożywione)</td><td>temperatura, światło, woda, pH, gleba</td></tr>
+<tr><td>Biotyczne (ożywione)</td><td>inne organizmy (konkurencja, drapieżnictwo)</td></tr>
+</tbody></table></div>
+<p><strong>Poziomy troficzne:</strong>
+- <strong>Producenci</strong> — wytwarzają materię organiczną (rośliny, glony).
+- <strong>Konsumenci</strong> — zjadają innych (zwierzęta).
+- <strong>Destruenci</strong> — rozkładają martwą materię (bakterie, grzyby).</p>
+<h3>Mnemotechniki dla tej lekcji</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>#</th><th>Mnemotechnika</th><th>Znaczenie</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><strong>Ekosystem = organizmy + środowisko</strong></td><td>biocenoza + biotop</td></tr>
+<tr><td>2</td><td><strong>Abiotyczne = nieożywione</strong></td><td>klasyfikacja</td></tr>
+<tr><td>3</td><td><strong>Biotyczne = ożywione</strong></td><td>klasyfikacja</td></tr>
+<tr><td>4</td><td><strong>P → K → D</strong></td><td>producent → konsument → destruent</td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+</section>
+<section id="s8">
+<div class="part-heading"><span class="part-num">6</span> Wyjaśnienie od podstaw (warstwa podręcznikowa)  · <strong>[PODSTAWA E8]</strong></div>
+<p><strong>Ekosystem</strong> to układ ekologiczny złożony z <strong>biocenozy</strong> (wszystkich organizmów) i <strong>biotopu</strong> (środowiska nieożywionego).</p>
+<p><strong>Czynniki wpływające na ekosystem:</strong></p>
+<ol>
+<li><strong>Abiotyczne</strong> (nieożywione): temperatura, światło, woda, pH, skład gleby, wilgotność.</li>
+</ol>
+<ol start="2">
+<li><strong>Biotyczne</strong> (ożywione): konkurencja, drapieżnictwo, pasożytnictwo, mutualizm.</li>
+</ol>
+<p><strong>Poziomy troficzne:</strong>
+- <strong>Producenci</strong> — wytwarzają materię organiczną ze związków nieorganicznych (fotosynteza): rośliny, glony, sinice.
+- <strong>Konsumenci</strong> — zjadają innych: konsumenci I rzędu (roślinożercy), II rzędu (drapieżnicy), III rzędu.
+- <strong>Destruenci</strong> — rozkładają martwą materię organiczną na nieorganiczną: bakterie, grzyby.</p>
+<figure class="lk-fig bio-fig" data-bio-viz="energia-materia" data-opt="{}"><div class="lk-fig-body bio-fig-body"></div><figcaption><b>Przepływ energii i obieg materii w ekosystemie</b> <span>przełącz: energia / materia / oba naraz; kliknij poziom</span></figcaption></figure>
+<!-- OPIS: Schemat: Słońce, producenci (rośliny, glony), konsumenci I rzędu (roślinożercy), konsumenci II rzędu (drapieżniki), destruenci (bakterie, grzyby) i związki mineralne (CO₂, woda, sole). Pomarańczowe strzałki energii biegną w jedną stronę: Słońce → producenci → konsumenci I → konsumenci II oraz do destruentów; z każdego poziomu czerwona falka „ciepło” wychodzi poza układ; pod poziomami liczby 10 000 kJ → ok. 1000 kJ → ok. 100 kJ (ok. 10% przechodzi dalej, orientacyjnie). Zielone strzałki materii tworzą pętlę: producenci → konsumenci → destruenci → związki mineralne → producenci. Przyciski przyciemniają jedną z warstw; kliknięcie poziomu pokazuje opis. Wniosek: energia przepływa i jest tracona jako ciepło, a materia krąży dzięki destruentom. -->
+<h3>6A. Dlaczego?</h3>
+<ol>
+<li><strong>Dlaczego producenci są ważni?</strong> Bo wprowadzają energię do ekosystemu.</li>
+</ol>
+<ol start="2">
+<li><strong>Dlaczego destruenci są ważni?</strong> Bo zamykają obieg materii — bez nich materia organiczna nie wracałaby do obiegu.</li>
+</ol>
+<ol start="3">
+<li><strong>Dlaczego energia nie krąży?</strong> Bo na każdym poziomie część jest tracona jako ciepło.</li>
+</ol>
+<ol start="4">
+<li><strong>Dlaczego materia krąży?</strong> Bo atomy są wykorzystywane wielokrotnie.</li>
+</ol>
+<h3>6B. Krok po kroku — jak opisać ekosystem</h3>
+<ol>
+<li>Określ biotop (woda, gleba, powietrze).</li>
+<li>Wymień biocenozę (organizmy).</li>
+<li>Określ producentów.</li>
+<li>Określ konsumentów (I, II, III rzędu).</li>
+<li>Określ destruentów.</li>
+<li>Opisz przepływ energii i obieg materii.</li>
+</ol>
+<h3>6C. Przykład prowadzony</h3>
+<p><strong>Dane:</strong> Łąka.</p>
+<ul>
+<li>Biotop: gleba, powietrze, woda.</li>
+<li>Producenci: trawy, zioła.</li>
+<li>Konsumenci I: króliki, owady.</li>
+<li>Konsumenci II: lisy, ptaki drapieżne.</li>
+<li>Destruenci: bakterie, grzyby.</li>
+</ul>
+<p><strong>Wniosek:</strong> Ekosystem łąki = biocenoza + biotop.</p>
+<h3>6D. Powiązanie z innymi lekcjami</h3>
+<pre class="lk-pre" data-jezyk="text"><code>L040 (ekosystem) → L041 (łańcuchy) → L042 (relacje) → L043 (człowiek)</code></pre>
+<hr class="lk-hr"/>
+</section>
+<section id="s9">
+<div class="part-heading"><span class="part-num">7</span> Poziom ambitny  · <strong>[MASTER]</strong></div>
+<ul>
+<li><strong>Obieg materii</strong> — zamknięty (atomy krążą).</li>
+<li><strong>Przepływ energii</strong> — otwarty (energia tracona jako ciepło).</li>
+<li><strong>Piramida troficzna</strong> — zwęża się ku górze.</li>
+</ul>
+<hr class="lk-hr"/>
+</section>
+<section id="s10">
+<div class="part-heading"><span class="part-num">8</span> Poziom zaawansowany  · <strong>[ZAAWANSOWANY]</strong></div>
+<p class="mini-note"><strong>Zaawansowane.</strong></p>
+<ul>
+<li><strong>Produkcja pierwotna brutto</strong> — całkowita produkcja organiczna.</li>
+<li><strong>Produkcja pierwotna netto</strong> — brutto minus oddychanie.</li>
+<li><strong>Ekosystemy sztuczne</strong> — pola uprawne, miasta.</li>
+<li><strong>Sukcesja</strong> — zmiana ekosystemu w czasie (np. jezioro → łąka → las).</li>
+</ul>
+<hr class="lk-hr"/>
+</section>
+<section id="s11">
+<div class="part-heading"><span class="part-num">9</span> Klinika błędów  · <strong>[PODSTAWA E8] / [TRENING]</strong></div>
+<div class="table-wrap"><table>
+<thead><tr><th>Błąd</th><th>Poprawa</th><th>Dlaczego?</th></tr></thead>
+<tbody>
+<tr><td>Ekosystem = organizmy</td><td>+ biotop</td><td>ekosystem = biocenoza + biotop</td></tr>
+<tr><td>Destruenci = pasożyty</td><td>rozkładają martwą materię</td><td>inna rola</td></tr>
+<tr><td>Wszystkie zwierzęta = konsumenci I</td><td>zależy od pokarmu</td><td>poziomy troficzne</td></tr>
+<tr><td>Energia krąży</td><td>energia przepływa</td><td>materia krąży</td></tr>
+</tbody></table></div>
+<h3>Klinika 2.0</h3>
+<p><strong>Błąd 1:</strong> „Ekosystem to tylko organizmy."</p>
+<ul>
+<li><strong>Znajdź:</strong> Brak biotopu.</li>
+<li><strong>Popraw:</strong> Ekosystem = biocenoza + biotop.</li>
+<li><strong>Reguła:</strong> Dwa elementy.</li>
+<li><strong>Dlaczego:</strong> Organizmy zależą od środowiska nieożywionego.</li>
+<li><strong>Podobne:</strong> Jezioro = ryby + woda + gleba + klimat.</li>
+<li><strong>Pułapka:</strong> Biotop nie jest „tłem" — jest częścią ekosystemu.</li>
+</ul>
+<p><strong>Błąd 2:</strong> „Energia krąży w ekosystemie."</p>
+<ul>
+<li><strong>Znajdź:</strong> Mylenie energii z materią.</li>
+<li><strong>Popraw:</strong> Materia krąży, energia przepływa (jednokierunkowo).</li>
+<li><strong>Reguła:</strong> Obieg materii ≠ przepływ energii.</li>
+<li><strong>Dlaczego:</strong> Energia jest tracona jako ciepło na każdym poziomie.</li>
+<li><strong>Podobne:</strong> Piramida troficzna zwęża się ku górze.</li>
+<li><strong>Pułapka:</strong> „Energia wraca" — nie.</li>
+</ul>
+<p><strong>Błąd 3:</strong> „Destruenci są na końcu łańcucha pokarmowego."</p>
+<ul>
+<li><strong>Znajdź:</strong> Mylenie roli.</li>
+<li><strong>Popraw:</strong> Destruenci są poza łańcuchem — rozkładają materię ze wszystkich poziomów.</li>
+<li><strong>Reguła:</strong> Łańcuch = producent → konsument → konsument.</li>
+<li><strong>Dlaczego:</strong> Destruenci nie tworzą ogniwa „zjadanego" przez kogoś.</li>
+<li><strong>Podobne:</strong> Bakterie i grzyby.</li>
+<li><strong>Pułapka:</strong> Destruenci zamykają obieg materii, ale nie są ogniwem łańcucha.</li>
+</ul>
+<p><strong>Błąd 4:</strong> „Wszystkie zwierzęta to konsumenci I rzędu."</p>
+<ul>
+<li><strong>Znajdź:</strong> Brak analizy pokarmu.</li>
+<li><strong>Popraw:</strong> Poziom troficzny zależy od diety — konsument I, II, III rzędu.</li>
+<li><strong>Reguła:</strong> Poziom troficzny = pozycja w łańcuchu.</li>
+<li><strong>Dlaczego:</strong> Drapieżnik to konsument II rzędu (zja</li>
+</ul>
+<p>dł roślinożercę).
+- <strong>Podobne:</strong> Lis (II), jastrząb (III).
+- <strong>Pułapka:</strong> „Zwierzę = konsument I" — nie.</p>
+<hr class="lk-hr"/>
+</section>
+<section id="s12">
+<div class="part-heading"><span class="part-num">10</span> Obserwacja / model</div>
+<p><strong>Typ:</strong> obserwacja terenowa / model.</p>
+<pre class="lk-pre" data-jezyk="text"><code>Problem: Jakie organizmy żyją w ekosystemie łąki?&#10;Hipoteza: Różnorodność zależy od biotopu.&#10;Obserwacja: Spisujemy organizmy, mierzymy temperaturę, wilgotność.&#10;Wniosek: Ekosystem = biocenoza + biotop; organizmy zależą od czynników.&#10;Ograniczenia: jednorazowa obserwacja nie pokazuje zmian sezonowych.&#10;BHP: bezpieczeństwo w terenie.</code></pre>
+<hr class="lk-hr"/>
+</section>
+<section id="s13">
+<div class="part-heading"><span class="part-num">11</span> Ćwiczenia  · <strong>[TRENING]</strong> (11D → [KONKURS])</div>
+<h3>11A. Mini-check</h3>
+<ol>
+<li>Co to ekosystem?</li>
+<li>Podaj 3 czynniki abiotyczne.</li>
+<li>Co to producent?</li>
+<li>Co to destruent?</li>
+<li>Co to biotop?</li>
+</ol>
+<h3>11B. Ćwiczenie prowadzone</h3>
+<p><strong>Dane:</strong> Jezioro.</p>
+<ul>
+<li>Biotop: woda, dno, światło.</li>
+<li>Producenci: glony, rośliny wodne.</li>
+<li>Konsumenci I: ryby roślinożerne, owady.</li>
+<li>Konsumenci II: ryby drapieżne.</li>
+<li>Destruenci: bakterie w osadach.</li>
+</ul>
+<h3>11C. Ćwiczenia samodzielne</h3>
+<p><strong>A. Podstawa</strong>
+1. Ekosystem?
+2. 3 czynniki abiotyczne?
+3. Producent?
+4. Destruent?
+5. Biotop?</p>
+<p><strong>B. Trening</strong>
+6. Dlaczego destruenci ważni?
+7. Popraw: „Ekosystem = organizmy".
+8. 2 przykłady biotopu.</p>
+<p><strong>C. Ambitne</strong>
+9. Obieg materii vs przepływ energii?
+10. Dlaczego energia nie krąży?
+11. Po co producenci?</p>
+<p><strong>D. Zaawansowane</strong>
+12. Produkcja brutto vs netto.
+13. Sukcesja.
+14. Ekosystemy sztuczne.</p>
+<h3>11D. PROBLEM / THINK</h3>
+<p>Czy ekosystem bez destruentów mógłby istnieć? Uzasadnij.</p>
+<h3>Drabinka trudności</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Poziom</th><th>Zadanie</th></tr></thead>
+<tbody>
+<tr><td>ODTWÓRZ</td><td>Co to ekosystem?</td></tr>
+<tr><td>ZASTOSUJ</td><td>Podaj 3 czynniki abiotyczne.</td></tr>
+<tr><td>WYJAŚNIJ</td><td>Dlaczego destruenci ważni?</td></tr>
+<tr><td>ODKRYJ</td><td>Kto jest producentem?</td></tr>
+<tr><td>POŁĄCZ</td><td>Połącz producentów z konsumentami.</td></tr>
+<tr><td>ZAKWESTIONUJ</td><td>Czy ekosystem = organizmy?</td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+</section>
+<section id="s14">
+<div class="part-heading"><span class="part-num">12</span> Odpowiedzi i sposób oceniania</div>
+<ol>
+<li>Biocenoza + biotop.</li>
+<li>Temperatura, światło, woda.</li>
+<li>Wytwarza materię organiczną.</li>
+<li>Rozkłada martwą.</li>
+<li>Środowisko nieożywione.</li>
+<li>Zamykają obieg materii.</li>
+<li>+ biotop.</li>
+<li>Woda, gleba.</li>
+<li>Materia krąży; energia jednokierunkowo.</li>
+<li>Część tracona jako ciepło.</li>
+<li>Wprowadzają energię.</li>
+<li>Brutto vs netto.</li>
+<li>Zmiana ekosystemu w czasie.</li>
+<li>Pola uprawne, miasta.</li>
+</ol>
+<p><strong>Sposób oceniania:</strong> Podstawa 1; Trening 1+1; Ambitne 2; Zaawansowane 3.</p>
+<hr class="lk-hr"/>
+</section>
+<section id="s15">
+<div class="part-heading"><span class="part-num">13</span> Fiszki  · <strong>[POWTÓRKA]</strong></div>
+<div class="table-wrap"><table>
+<thead><tr><th>Pytanie</th><th>Odpowiedź</th></tr></thead>
+<tbody>
+<tr><td>Ekosystem</td><td>Biocenoza + biotop</td></tr>
+<tr><td>Biocenoza</td><td>Wszystkie organizmy</td></tr>
+<tr><td>Biotop</td><td>Środowisko nieożywione</td></tr>
+<tr><td>Abiotyczne</td><td>Temperatura, światło, woda</td></tr>
+<tr><td>Biotyczne</td><td>Inne organizmy</td></tr>
+<tr><td>Producent</td><td>Wytwarza materię organiczną</td></tr>
+<tr><td>Konsument</td><td>Zjada innych</td></tr>
+<tr><td>Destruent</td><td>Rozkłada martwą materię</td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+</section>
+<section id="s16">
+<div class="part-heading"><span class="part-num">14</span> Test końcowy  · <strong>[TRENING]</strong></div>
+<ol>
+<li>(P) Co to ekosystem?</li>
+<li>(P) 3 czynniki abiotyczne?</li>
+<li>(P) Co to producent?</li>
+<li>(T) Dlaczego destruenci ważni?</li>
+<li>(T) Popraw: „Ekosystem = organizmy".</li>
+<li>(A) Obieg materii vs przepływ energii?</li>
+<li>(A) Dlaczego energia nie krąży?</li>
+<li>(Z) Produkcja brutto vs netto.</li>
+</ol>
+<hr class="lk-hr"/>
+</section>
+<section id="s17">
+<div class="part-heading"><span class="part-num">15</span> Checklista</div>
+<ul>
+<li>[ ] Znam definicję ekosystemu.</li>
+<li>[ ] Rozróżniam czynniki abiotyczne i biotyczne.</li>
+<li>[ ] Rozróżniam producentów, konsumentów, destruentów.</li>
+<li>[ ] Rozumiem obieg materii i przepływ energii.</li>
+<li>[ ] Znam ideę sukcesji (ambitny).</li>
+</ul>
+<hr class="lk-hr"/>
+</section>
+<section id="s18">
+<div class="part-heading"><span class="part-num">16</span> Mapa pojęć</div>
+<pre class="lk-pre" data-jezyk="text"><code>EKOSYSTEM&#10;├── biocenoza + biotop&#10;├── abiotyczne / biotyczne&#10;└── producenci → konsumenci → destruenci</code></pre>
+<hr class="lk-hr"/>
+</section>
+<section id="s19">
+<div class="part-heading"><span class="part-num">17</span> Co dalej?</div>
+<p>L041 — łańcuchy i sieci pokarmowe.</p>
+<p><strong>Most wstecz:</strong> L030–L032 (ewolucja) → L040 (ekosystem).</p>
+<hr class="lk-hr"/>
+</section>
+<section id="s20">
+<div class="part-heading"><span class="part-num">18</span> Słownik</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Termin</th><th>Definicja</th></tr></thead>
+<tbody>
+<tr><td>Ekosystem</td><td>Biocenoza + biotop</td></tr>
+<tr><td>Biocenoza</td><td>Wszystkie organizmy w ekosystemie</td></tr>
+<tr><td>Biotop</td><td>Środowisko nieożywione</td></tr>
+<tr><td>Producent</td><td>Wytwarza materię organiczną</td></tr>
+<tr><td>Konsument</td><td>Zjada innych</td></tr>
+<tr><td>Destruent</td><td>Rozkłada martwą materię</td></tr>
+<tr><td>Sukcesja</td><td>Zmiana ekosystemu w czasie</td></tr>
+</tbody></table></div>
+<hr class="lk-hr"/>
+</section>
+<section id="s21">
+<div class="part-heading"><span class="part-num">19</span> Dodatek zaawansowany  · <strong>[ZAAWANSOWANY]</strong></div>
+<p>Produkcja brutto/netto · sukcesja · ekosystemy sztuczne.</p>
+<hr class="lk-hr"/>
+</section>
+<section id="s22">
+<div class="part-heading"><span class="part-num">20</span> Jak się uczyć?</div>
+<p>Ściąga → przykład → mini-check → ćwiczenia → fiszki → test.</p>
+<hr class="lk-hr"/>
+</section>
+<section id="s23">
+<div class="part-heading"><span class="part-num">21</span> Połączenia międzyprzedmiotowe</div>
+<p>Geografia (klimat) · Chemia (obieg materii) · Biologia (ekologia).</p>
+<hr class="lk-hr"/>
+</section>
+<section id="s24">
+<div class="part-heading"><span class="part-num">22</span> Zadania z życia codziennego</div>
+<ol>
+<li>Dlaczego lasy są ważne?</li>
+<li>Dlaczego jeziora się „starzeją"?</li>
+<li>Jak człowiek zmienia ekosystemy?</li>
+</ol>
+<hr class="lk-hr"/>
+</section>
+<section id="s25">
+<div class="part-heading"><span class="part-num">23</span> STATUS LEKCJI</div>
+<ul>
+<li>Wersja 4.0 (2026-09-12) — rozbudowa do standardu L011–L020.</li>
+<li>Zachowano całą treść v3.7.</li>
+<li>Dodano: Mapa lekcji, Most z poprzednich lekcji, Klinika 2.0 (4 przykłady), Drabinka, „Jak się uczyć", „Połączenia międzyprzedmiotowe", „Zadania z życia codziennego", STATUS.</li>
+</ul>
+<hr class="lk-hr"/>
+<p><strong>Koniec L040 MASTER v4.0</strong></p>
+<hr class="lk-hr"/>
+</section>
+<section id="s26">
+<div class="part-heading"><span class="part-num">24</span> UZUPEŁNIENIE E8 v4.0+ (doklejone)</div>
+<p>Ekosystem = organizmy + środowisko nieożywione.</p>
+<h3>Ściąga</h3>
+<ul>
+<li>Biotop (abiotyczne) + biocenoza (biotyczne).</li>
+<li>Abiotyczne: światło, T, woda, gleba, pH, wiatr.</li>
+<li>Nisza ≠ siedlisko: siedlisko = gdzie; nisza = „jak żyje / rolę” (hasło).</li>
+<li>Równowaga jest względna — zmiana jednego czynnika pociąga inne.</li>
+</ul>
+<h3>4 zadania</h3>
+<ol>
+<li>3 czynniki abiotyczne jeziora.</li>
+<li>Biocenoza vs biotop — po jednym przykładzie.</li>
+<li>Czy ekosystem to „same drzewa”?</li>
+<li>Most do L041: kto wnosi energię słoneczną do sieci.</li>
+</ol>
+<p>Szkic: 3 nie. 4 producenci.</p>
+<h3>Status</h3>
+<p>2026-09-12 · plik roboczy BIOLOGIA_PODSTAWA_PLUS_v3.9_working.md.</p>
+</section>
+<section id="s27">
+<div class="part-heading"><span class="part-num">23</span> UZUPEŁNIENIE AUDYTOWE v4.2 — energia, materia i poziomy troficzne</div>
+<h3>23.1. Jeden schemat, trzy pytania</h3>
+<p><code>Słońce → producenci → konsumenci → ...</code>
+<code>martwa materia → destruenci → związki nieorganiczne → producenci</code></p>
+<ul>
+<li><strong>Energia</strong> przepływa przez ekosystem i część zostaje rozproszona jako ciepło.</li>
+<li><strong>Materia</strong> krąży między organizmami i środowiskiem.</li>
+<li><strong>Destruenci</strong> uczestniczą w rozkładzie materii z wielu poziomów troficznych.</li>
+</ul>
+<h3>23.2. Doprecyzowanie roli destruentów</h3>
+<p>W szkolnych prostych łańcuchach pokarmowych destruenci często są przedstawiani obok łańcucha producent → konsument. Nie oznacza to jednak, że zawsze są „ostatnim ogniwem” jednego łańcucha.</p>
+<p>Lepszy model:
+> destruenci rozkładają martwą materię pochodzącą z różnych poziomów i pomagają zamknąć obieg pierwiastków.</p>
+<h3>23.3. Przykład prowadzony — łąka</h3>
+<ol>
+<li>Trawa pobiera wodę i sole mineralne oraz wykorzystuje CO₂.</li>
+<li>Konik polny zjada trawę.</li>
+<li>Ptak zjada konika.</li>
+<li>Martwe szczątki trafiają do destruentów.</li>
+<li>Produkty rozkładu wracają do środowiska.</li>
+<li>Energia nie wraca w ten sam sposób — część jest rozpraszana jako ciepło.</li>
+</ol>
+<h3>23.4. Sukcesja — ostrożniej z jednym schematem</h3>
+<p>Sukcesja to <strong>kierunkowe zmiany składu i struktury ekosystemu w czasie</strong>. Schemat „jezioro → łąka → las” może być przykładem sukcesji w określonych warunkach, ale nie jest uniwersalną drogą dla każdego ekosystemu.</p>
+<!-- ==================== END L040 ==================== -->
+<!-- ==================== BEGIN L041 ==================== -->
+<hr class="lk-hr"/>
+</section>
+<section id="s28">
+<div class="part-heading"><span class="part-num">25</span> AUDYT W16 — ewolucja, ekologia i synteza (2026-10-09)</div>
+<p><strong>Zakres:</strong> punktowa kontrola pojęć wysokiego ryzyka i czytelności schematów; nie jest to niezależna recenzja całego materiału.</p>
+<h3>Co sprawdzać przy rozwiązywaniu zadań</h3>
+<ul>
+<li><strong>Wniosek musi wynikać z danych.</strong> Nazwij obserwację, wyjaśnij mechanizm i dopiero wtedy sformułuj wniosek. Samo podobieństwo nie wystarcza do rozstrzygnięcia pokrewieństwa, a brak jednego rodzaju skamieniałości nie obala całej teorii ewolucji.</li>
+<li><strong>Poziom osobnika a poziom populacji.</strong> Dobór różnicuje sukces rozrodczy osobników, ale ewolucję opisuje się jako zmianę populacji na przestrzeni pokoleń. Mutacja nie pojawia się dlatego, że jest potrzebna; dobór nie działa świadomie.</li>
+<li><strong>Energia a materia.</strong> Energia przepływa przez ekosystem i ulega rozproszeniu jako ciepło; materia jest ponownie wykorzystywana w obiegach. Strzałka w łańcuchu pokarmowym prowadzi od pokarmu do konsumenta.</li>
+<li><strong>Relacje ekologiczne.</strong> Najpierw ustal skutek dla organizmu A i B, a potem nazwij relację. Nie wnioskuj wyłącznie z nazwy gatunku lub pojedynczej ilustracji.</li>
+<li><strong>Człowiek i środowisko.</strong> Oddziel źródło wpływu, mechanizm, skutek i możliwe ograniczenie. Naturalny efekt cieplarniany jest konieczny dla obecnego klimatu Ziemi; problemem jest jego dodatkowe nasilenie przez działalność człowieka.</li>
+<li><strong>Warstwa olimpijska.</strong> Model Hardy’ego–Weinberga to model z założeniami (m.in. losowe kojarzenie, brak doboru, mutacji i migracji oraz bardzo duża populacja); nie traktuj go jako automatycznego opisu każdej populacji.</li>
+</ul>
+<h3>Ograniczenie audytu</h3>
+<p>Wprowadzono doprecyzowania pojęciowe i opisy wizualne, lecz nie sprawdzono niezależnie każdego zadania, klucza odpowiedzi ani zgodności zakresu z aktualnym regulaminem konkursu. Liczby, przykłady lokalne i wymagania konkretnego etapu należy walidować osobno.</p>
+</section>
+
+</main>
+<script>
+/* bio-core.js — rdzeń biblioteki grafik BIO (v0.2): montaż, prymitywy, efekty i pomocnicze.
+   Ładowany przed każdą wizualizacją z wizualizacje/<id>.js. Wspólne pomocnicze są w BIO.Lh["<grupa>.<nazwa>"]. */
+(function(){ var w=window; w.BIO=w.BIO||{}; w.BIO.Lh=w.BIO.Lh||{}; })();
+/* ---- grupa A: rdzeń (dawny blok 1) ---- */
+(function(){
+'use strict';
+var BIO=window.BIO;
+var BIO=window.BIO=window.BIO||{};
+if(BIO.V)return;
+BIO.V='0.1';
+var REG={};
+BIO.define=function(id,def){REG[id]=def};
+BIO.katalog=function(){return Object.keys(REG).map(function(k){return{id:k,opis:REG[k].opis||''}})};
+var NS='http://www.w3.org/2000/svg';
+function set(e,at){for(var k in at){var v=at[k];if(v==null)continue;
+  if((k==='fill'||k==='stroke'||k==='stop-color')&&String(v).indexOf('var(')>=0)e.style.setProperty(k,v);else e.setAttribute(k,v)}}
+function add(e,kids){(kids||[]).forEach(function(c){if(c==null||c===false)return;e.appendChild(typeof c==='string'||typeof c==='number'?document.createTextNode(String(c)):c)});return e}
+function S(tag,at,kids){var e=document.createElementNS(NS,tag);set(e,at||{});return add(e,kids)}
+function H(tag,cls,html,kids){var e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.innerHTML=html;return add(e,kids)}
+function svg(w,h,label,kids){return S('svg',{viewBox:'0 0 '+w+' '+h,role:'img','aria-label':label||'',preserveAspectRatio:'xMidYMid meet'},kids)}
+function T(x,y,t,o){o=o||{};return S('text',{x:x,y:y,'text-anchor':o.a||'middle','dominant-baseline':o.b||'middle','font-size':o.s||12,'font-weight':o.w||600,fill:o.f||'var(--viz-ink)'},[t])}
+function btn(label,on){var b=H('button','bv-btn');b.type='button';b.textContent=label;if(on)b.onclick=on;return b}
+BIO.S=S;
+BIO.H=H;
+BIO.svg=svg;
+BIO.T=T;
+BIO.btn=btn;
+var NT={A:{n:'adenina',t:'puryna'},G:{n:'guanina',t:'puryna'},T:{n:'tymina',t:'pirymidyna'},C:{n:'cytozyna',t:'pirymidyna'},U:{n:'uracyl',t:'pirymidyna'}};
+var PAIR={A:'T',T:'A',C:'G',G:'C'};
+var PAIR_RNA={A:'U',T:'A',C:'G',G:'C'};
+var HB={A:2,T:2,C:3,G:3,U:2};
+function col(b){return'var(--nt-'+b+')'}
+function bg(b){return'var(--nt-'+b+'-bg)'}
+function pur(b){return NT[b]&&NT[b].t==='puryna'}
+BIO.NT=NT;
+BIO.PAIR=PAIR;
+BIO.PAIR_RNA=PAIR_RNA;
+BIO.HB=HB;
+var g=BIO.g={};
+function hexPts(cx,cy,r){var p=[];for(var i=0;i<6;i++){var a=Math.PI/180*(60*i-90);p.push([cx+r*Math.cos(a),cy+r*Math.sin(a)])}return p}
+function pentOn(p1,p2,hx,hy){ /* pięciokąt foremny na krawędzi p1-p2, na zewnątrz od środka (hx,hy) */
+  var mx=(p1[0]+p2[0])/2,my=(p1[1]+p2[1])/2,dx=p2[0]-p1[0],dy=p2[1]-p1[1],L=Math.hypot(dx,dy),nx=-dy/L,ny=dx/L;
+  if((mx+nx-hx)*(mx+nx-hx)+(my+ny-hy)*(my+ny-hy)<(mx-hx)*(mx-hx)+(my-hy)*(my-hy)){nx=-nx;ny=-ny}
+  var ap=L/(2*Math.tan(Math.PI/5)),R=L/(2*Math.sin(Math.PI/5)),cx=mx+nx*ap,cy=my+ny*ap,a0=Math.atan2(p1[1]-cy,p1[0]-cx),pts=[];
+  for(var i=0;i<5;i++){var a=a0+i*2*Math.PI/5;pts.push([cx+R*Math.cos(a),cy+R*Math.sin(a)])}return pts}
+function P(pts){return pts.map(function(p){return p[0].toFixed(1)+','+p[1].toFixed(1)}).join(' ')}
+g.ring=function(b,cx,cy,r,side,lab){
+  var h=hexPts(cx,cy,r),gg=S('g',{});
+  if(pur(b)){var e=side>0?[h[4],h[5]]:[h[1],h[2]];gg.appendChild(S('polygon',{points:P(pentOn(e[0],e[1],cx,cy)),fill:bg(b),stroke:col(b),'stroke-width':2,'stroke-linejoin':'round'}))}
+  gg.appendChild(S('polygon',{points:P(h),fill:bg(b),stroke:col(b),'stroke-width':2,'stroke-linejoin':'round'}));
+  if(lab!==false)gg.appendChild(T(cx,cy+1,b,{s:r*0.95,w:800,f:col(b)}));
+  return gg};
+g.hbonds=function(x1,x2,yc,n,gap){gap=gap||6;var gg=S('g',{});for(var i=0;i<n;i++){var y=yc+(i-(n-1)/2)*gap;gg.appendChild(S('line',{x1:x1,y1:y,x2:x2,y2:y,stroke:'var(--hbond)','stroke-width':2,'stroke-dasharray':'3 3'}))}return gg};
+g.sugar=function(cx,cy,r){var pts=[];for(var i=0;i<5;i++){var a=Math.PI/180*(72*i-90);pts.push([cx+r*Math.cos(a),cy+r*Math.sin(a)])}
+  return S('polygon',{points:P(pts),fill:'var(--sugar-bg)',stroke:'var(--sugar)','stroke-width':2,'stroke-linejoin':'round'})};
+g.phos=function(cx,cy,r){return S('g',{},[S('circle',{cx:cx,cy:cy,r:r,fill:'var(--phos-bg)',stroke:'var(--phos)','stroke-width':2}),T(cx,cy+0.5,'P',{s:r*1.05,w:800,f:'var(--phos)'})])};
+g.miniHelix=function(x,y,w,h,turns){var gg=S('g',{}),n=40,a='',b='';for(var i=0;i<=n;i++){var t=i/n,yy=y+t*h,ph=t*turns*2*Math.PI;
+  a+=(i?'L':'M')+(x+w/2+w/2*Math.sin(ph)).toFixed(1)+' '+yy.toFixed(1);b+=(i?'L':'M')+(x+w/2-w/2*Math.sin(ph)).toFixed(1)+' '+yy.toFixed(1);
+  if(i%4===2)gg.appendChild(S('line',{x1:x+w/2+w/2*Math.sin(ph),y1:yy,x2:x+w/2-w/2*Math.sin(ph),y2:yy,stroke:'var(--hbond)','stroke-width':1.5}))}
+  gg.appendChild(S('path',{d:a,fill:'none',stroke:'var(--strand1)','stroke-width':3,'stroke-linecap':'round'}));
+  gg.appendChild(S('path',{d:b,fill:'none',stroke:'var(--strand2)','stroke-width':3,'stroke-linecap':'round'}));return gg};
+g.squiggle=function(cx,cy,r,seed){var d='',n=120,s=seed||1;for(var i=0;i<=n;i++){var a=i/n*Math.PI*2+s,rr=r*(0.62+0.16*Math.sin(4*a+s)+0.1*Math.sin(9*a+2*s));
+  d+=(i?'L':'M')+(cx+rr*Math.cos(a)).toFixed(1)+' '+(cy+rr*Math.sin(a)).toFixed(1)}
+  return S('path',{d:d,fill:'none',stroke:'var(--dna-ink)','stroke-width':1.8,'stroke-linejoin':'round','stroke-linecap':'round'})};
+g.chromosome=function(cx,cy,h,fill){var gg=S('g',{}),w=h*0.26;
+  [-18,18].forEach(function(r){gg.appendChild(S('rect',{x:cx-w/2,y:cy-h/2,width:w,height:h,rx:w/2,fill:fill||'var(--nucleus-bg)',stroke:'var(--dna-ink)','stroke-width':2,transform:'rotate('+r+' '+cx+' '+cy+')'}))});
+  gg.appendChild(S('circle',{cx:cx,cy:cy,r:w*0.32,fill:'var(--dna-ink)'}));return gg};
+var fx=BIO.fx={};
+fx.info=function(root,box,map,first){
+  function show(k,el){var d=map[k];if(!d)return;root.querySelectorAll('.bv-hit.sel').forEach(function(x){x.classList.remove('sel')});
+    if(el)el.classList.add('sel');box.className='bv-info';box.innerHTML='<b>'+d[0]+'</b>'+d[1]}
+  root.querySelectorAll('[data-k]').forEach(function(el){el.classList.add('bv-hit');el.setAttribute('tabindex','0');el.setAttribute('role','button');
+    el.addEventListener('click',function(){show(el.getAttribute('data-k'),el)});
+    el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();show(el.getAttribute('data-k'),el)}})});
+  if(first)show(first,root.querySelector('[data-k="'+first+'"]'));return show};
+fx.infoBox=function(txt){return H('div','bv-info',txt||'Kliknij element grafiki, aby zobaczyć wyjaśnienie.')};
+fx.auto=function(el,step,ms,o){o=o||{};var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches,on=!rm,vis=false,tm=null;
+  var bar=H('div','bv-tools bv-auto'),b=H('button','bv-btn');b.type='button';
+  function lab(){b.textContent=on?'⏸ zatrzymaj animację':'▶ odtwarzaj automatycznie';b.setAttribute('aria-pressed',on?'true':'false');b.classList.toggle('on',on)}
+  function halt(){if(tm){clearInterval(tm);tm=null}}
+  function run(){if(tm||!on||!vis||document.hidden)return;if(o.now)step();tm=setInterval(function(){if(document.hidden||!vis){halt();return}step()},ms)}
+  b.onclick=function(){on=!on;lab();if(on)run();else halt()};bar.appendChild(b);el.insertBefore(bar,el.firstChild);lab();
+  function user(e){if(bar.contains(e.target)||!on)return;on=false;halt();lab()}
+  el.addEventListener('pointerdown',user,true);el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' ')user(e)},true);
+  if('IntersectionObserver' in window)new IntersectionObserver(function(es){es.forEach(function(e){vis=e.isIntersecting;if(vis)run();else halt()})},{threshold:.35}).observe(el);else{vis=true;run()}
+  document.addEventListener('visibilitychange',function(){if(document.hidden)halt();else run()});
+  return {stop:function(){on=false;halt();lab()}}};
+fx.toggle=function(btns,i){btns.forEach(function(b,j){b.classList.toggle('on',j===i);b.setAttribute('aria-pressed',j===i?'true':'false')})};
+BIO.mount=function(fig){if(fig.dataset.bioOn)return;fig.dataset.bioOn=1;
+  var id=fig.getAttribute('data-bio-viz'),body=fig.querySelector('.bio-fig-body')||fig,opt={};
+  try{opt=JSON.parse(fig.getAttribute('data-opt')||'{}')}catch(e){}
+  var d=REG[id];if(!d){body.innerHTML='<p class="bio-err">Brak grafiki „'+id+'” w bibliotece bio-viz.js.</p>';return}
+  d.mount(body,opt,fig)};
+BIO.mountAll=function(root){(root||document).querySelectorAll('[data-bio-viz]').forEach(BIO.mount)};
+function chain(el,nodes,opt){var c=H('div','bv-chain'+(opt.pion!=='nie'?' v':''));
+  nodes.forEach(function(n,i){if(i)c.appendChild(H('span','bv-arrow','→'));var d=H('div','bv-node'+(n.k?' k':''));
+    if(n.ico)d.appendChild(n.ico);d.appendChild(H('b',null,n.b));if(n.s)d.appendChild(H('small',null,n.s));if(n.key)d.setAttribute('data-k',n.key);c.appendChild(d)});
+  el.appendChild(c);return c}
+function ico(w,h,kids){var s=svg(w,h,'',kids);s.setAttribute('aria-hidden','true');s.setAttribute('class','bv-ico');return s}
+var ICO={
+ organizm:function(){return ico(120,80,[S('circle',{cx:60,cy:16,r:10,fill:'var(--accent-soft)',stroke:'var(--accent)','stroke-width':2}),S('path',{d:'M42 72V44q0-14 18-14t18 14v28',fill:'var(--accent-soft)',stroke:'var(--accent)','stroke-width':2,'stroke-linejoin':'round'})])},
+ komorka:function(){return ico(120,80,[S('ellipse',{cx:60,cy:40,rx:50,ry:32,fill:'var(--cell-cyto)',stroke:'var(--cell-mem)','stroke-width':2.5}),S('circle',{cx:64,cy:40,r:15,fill:'var(--nucleus-bg)',stroke:'var(--nucleus)','stroke-width':2}),S('ellipse',{cx:30,cy:50,rx:9,ry:5,fill:'var(--mito-bg)',stroke:'var(--mito)','stroke-width':1.5})])},
+ jadro:function(){return ico(120,80,[S('circle',{cx:60,cy:40,r:34,fill:'var(--nucleus-bg)',stroke:'var(--nucleus)','stroke-width':2.5}),g.squiggle(60,40,30,1),g.squiggle(58,42,26,3)])},
+ chromosom:function(){return ico(120,80,[g.chromosome(60,40,66)])},
+ dna:function(){var s=ico(120,80,[]);var gg=g.miniHelix(0,0,60,100,1.6);gg.setAttribute('transform','translate(110 10) rotate(90)');s.appendChild(gg);return s},
+ rna:function(){var d='M8 46',t=[];for(var i=0;i<=10;i++){var x=8+i*10.4,y=46+8*Math.sin(i*0.9);d+='L'+x.toFixed(1)+' '+y.toFixed(1);if(i<10)t.push(S('line',{x1:x,y1:y,x2:x,y2:y-14,stroke:['var(--nt-A)','var(--nt-U)','var(--nt-C)','var(--nt-G)'][i%4],'stroke-width':3,'stroke-linecap':'round'}))}
+   return ico(120,80,t.concat([S('path',{d:d,fill:'none',stroke:'var(--strand1)','stroke-width':3.5,'stroke-linecap':'round','stroke-linejoin':'round'})]))},
+ bialko:function(){var pts=[[14,60],[26,48],[22,32],[36,24],[50,32],[46,48],[58,58],[72,50],[70,34],[84,26],[98,34],[96,50],[106,62]],k=[S('path',{d:'M'+pts.map(function(p){return p.join(' ')}).join('L'),fill:'none',stroke:'var(--viz-mut)','stroke-width':2.5})];
+   pts.forEach(function(p,i){k.push(S('circle',{cx:p[0],cy:p[1],r:6,fill:['#ffd8a8','#c5f6fa','#d3f9d8','#e5dbff','#ffe3e3'][i%5],stroke:'var(--viz-mut)','stroke-width':1.2}))});return ico(120,80,k)},
+ funkcja:function(){return ico(120,80,[S('path',{d:'M60 40L92 22A36 36 0 1 0 92 58Z',fill:'var(--accent-soft)',stroke:'var(--accent)','stroke-width':2.5,'stroke-linejoin':'round',transform:'translate(-14 0)'}),
+   S('circle',{cx:96,cy:40,r:9,fill:'var(--phos-bg)',stroke:'var(--phos)','stroke-width':2}),S('path',{d:'M104 28l8-6M104 52l8 6',stroke:'var(--phos)','stroke-width':2,'stroke-linecap':'round'})])},
+ gen:function(){return ico(120,80,[S('rect',{x:6,y:30,width:108,height:20,rx:4,fill:'var(--viz-bg2)',stroke:'var(--viz-line)'}),S('rect',{x:40,y:28,width:46,height:24,rx:4,fill:'var(--accent-soft)',stroke:'var(--accent)','stroke-width':2}),T(63,40.5,'gen',{s:12,w:800,f:'var(--accent)'})])}};
+BIO.ICO=ICO;
+function mito(cx,cy,rx,ry,rot){var c='';for(var i=0;i<5;i++){var x=cx-rx*0.7+i*rx*0.35;c+='M'+x+' '+(cy+(i%2?-ry*0.75:ry*0.75))+'V'+(cy+(i%2?ry*0.1:-ry*0.1))}
+  return S('g',{'data-k':'mito',transform:rot?'rotate('+rot+' '+cx+' '+cy+')':null},[S('ellipse',{cx:cx,cy:cy,rx:rx,ry:ry,fill:'var(--mito-bg)',stroke:'var(--mito)','stroke-width':2}),
+   S('path',{d:c,fill:'none',stroke:'var(--mito)','stroke-width':1.4,'stroke-linecap':'round',opacity:0.8}),S('circle',{cx:cx+rx*0.45,cy:cy,r:Math.min(4,ry*0.4),fill:'none',stroke:'var(--dna-ink)','stroke-width':1.6})])}
+function nucleus(cx,cy,r,seed){return S('g',{'data-k':'jadro'},[S('circle',{cx:cx,cy:cy,r:r,fill:'var(--nucleus-bg)',stroke:'var(--nucleus)','stroke-width':2.5}),
+  S('circle',{cx:cx,cy:cy,r:r-4,fill:'none',stroke:'var(--nucleus)','stroke-width':0.8,opacity:0.6}),g.squiggle(cx,cy,r*0.85,seed),S('circle',{cx:cx+r*0.3,cy:cy-r*0.25,r:r*0.18,fill:'var(--nucleus)',opacity:0.55})])}
+function cleanSeq(s,def){s=String(s||def).toUpperCase().replace(/[^ATCG]/g,'');return s||def}
+if('IntersectionObserver' in window&&!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)){
+  var st=document.createElement('style');st.textContent='.bio-fig.rv{opacity:0;transform:translateY(10px)}.bio-fig.rv.in{opacity:1;transform:none;transition:opacity .5s ease,transform .5s ease}';document.head.appendChild(st);
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -40px 0px'});
+  var mA=BIO.mountAll;BIO.mountAll=function(root){mA(root);(root||document).querySelectorAll('.bio-fig:not(.rv)').forEach(function(f){f.classList.add('rv');io.observe(f)})}}
+BIO.Lh["A.REG"]=REG;BIO.Lh["A.S"]=S;BIO.Lh["A.H"]=H;BIO.Lh["A.svg"]=svg;BIO.Lh["A.T"]=T;BIO.Lh["A.btn"]=btn;BIO.Lh["A.NT"]=NT;BIO.Lh["A.PAIR"]=PAIR;BIO.Lh["A.PAIR_RNA"]=PAIR_RNA;BIO.Lh["A.HB"]=HB;BIO.Lh["A.g"]=g;BIO.Lh["A.hexPts"]=hexPts;BIO.Lh["A.pur"]=pur;BIO.Lh["A.P"]=P;BIO.Lh["A.pentOn"]=pentOn;BIO.Lh["A.bg"]=bg;BIO.Lh["A.col"]=col;BIO.Lh["A.fx"]=fx;BIO.Lh["A.ICO"]=ICO;BIO.Lh["A.NS"]=NS;BIO.Lh["A.set"]=set;BIO.Lh["A.add"]=add;BIO.Lh["A.chain"]=chain;BIO.Lh["A.ico"]=ico;BIO.Lh["A.mito"]=mito;BIO.Lh["A.nucleus"]=nucleus;BIO.Lh["A.cleanSeq"]=cleanSeq;
+})();
+/* ---- grupa B: prototypy (dawny blok 2, wzorcownia) ---- */
+(function(){
+var BIO=window.BIO;
+var BIO=window.BIO;
+if(!BIO||!BIO.define||BIO.WZOR)return;
+BIO.WZOR=1;
+var NS='http://www.w3.org/2000/svg';
+var UID=0;
+var css=document.createElement('style');
+css.textContent=
+'.bw-seg{display:flex;flex-wrap:wrap;gap:4px}.bw-out{display:grid;gap:4px}.bw-tbl{overflow-x:auto;margin-top:8px}.bw-tbl table{border-collapse:collapse;width:100%;font-size:13px}.bw-tbl th,.bw-tbl td{padding:4px 6px;border-bottom:1px solid var(--border,#dde4e8);text-align:left;vertical-align:top}'+
+'.bw-mono{font-family:ui-monospace,Consolas,monospace}.bw-svg{width:100%;max-width:520px;display:block;background:var(--surface,#fff);border:1px solid var(--border,#dde4e8);border-radius:8px}'+
+'.bw-codons{display:flex;flex-wrap:wrap;gap:6px}.bw-cod{border:1px solid var(--border,#dde4e8);border-radius:7px;padding:4px;display:grid;gap:2px;font:14px ui-monospace,Consolas,monospace;text-align:center;min-width:76px}'+
+'.bw-cod .r{display:flex;justify-content:center;gap:1px}.bw-cod .r span{width:22px;display:inline-block}.bw-cod .r.k span{cursor:pointer;border-radius:4px;background:var(--surface-soft,#eef3f1)}.bw-cod .r.k span.mut{background:#b8860b;color:#fff}'+
+'.bw-cod .r.m{color:var(--accent,#3f7a28);font-weight:700}.bw-cod .aa{font-weight:700;border-top:1px solid var(--border,#dde4e8);padding-top:2px}.bw-cod.chg{border-color:#b8860b}.bw-cod.stop .aa{color:#b23b2a}.bw-cod.off{opacity:.45}'+
+'.bw-key{display:grid;grid-template-columns:auto 1fr;gap:2px 8px;font-size:12.5px;margin-bottom:6px}.bw-key b{font-family:ui-monospace,monospace}'+
+'.bw-pun table{max-width:420px}.bw-pun td,.bw-pun th{text-align:center!important;border:1px solid var(--border,#dde4e8)}.bw-pun td{font:600 14px ui-monospace,monospace;padding:8px 4px}.bw-pun td small{display:block;font:400 11.5px Inter,system-ui;opacity:.8}'+
+'.bw-bars{display:grid;gap:4px}.bw-bar{display:grid;grid-template-columns:minmax(0,9.5em) 1fr 3.2em;gap:8px;align-items:center;font-size:13px}.bw-bar .t{height:12px;background:var(--surface-soft,#eef3f1);border-radius:3px;overflow:hidden}.bw-bar .t i{display:block;height:100%;background:var(--accent,#3f7a28)}.bw-bar .v{text-align:right;font-variant-numeric:tabular-nums}'+
+'.bw-svg text{font-family:system-ui,sans-serif}.bw-sel{font:600 12.5px Inter,system-ui;border:1px solid var(--border-strong,#c7d0d6);border-radius:7px;padding:5px 8px;background:var(--surface,#fff);color:inherit}';
+document.head.appendChild(css);
+function S(t,a,x){var e=document.createElementNS(NS,t);if(a)for(var k in a)e.setAttribute(k,a[k]);if(x!=null)e.textContent=x;return e}
+function H(t,a,h){var e=document.createElement(t);if(a)for(var k in a){if(k==='text')e.textContent=a[k];else e.setAttribute(k,a[k])}if(h!=null)e.innerHTML=h;return e}
+function clr(e){while(e.firstChild)e.removeChild(e.firstChild)}
+function seg(box,items,cur,cb){clr(box);items.forEach(function(it){var b=H('button',{type:'button','class':'bv-btn'+(it[0]===cur?' on':''),'aria-pressed':String(it[0]===cur)});b.textContent=it[1];b.onclick=function(){cb(it[0])};box.appendChild(b)})}
+function info(){return H('div',{'class':'bv-info bw-out','aria-live':'polite'})}
+function key(el,fn){el.setAttribute('role','button');el.setAttribute('tabindex','0');el.onclick=fn;el.onkeydown=function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();fn()}}}
+BIO.Lh["B.css"]=css;BIO.Lh["B.UID"]=UID;BIO.Lh["B.NS"]=NS;BIO.Lh["B.S"]=S;BIO.Lh["B.H"]=H;BIO.Lh["B.clr"]=clr;BIO.Lh["B.seg"]=seg;BIO.Lh["B.info"]=info;BIO.Lh["B.key"]=key;
+BIO.Lh["B.nextUid"]=function(){return ++UID};
+})();
+/* ---- grupa C: lekcje-przeglądy (dawny blok 3) ---- */
+(function(){
+var BIO=window.BIO;
+var BIO=window.BIO;
+if(!BIO||!BIO.define||BIO.REV_VIZ)return;
+BIO.REV_VIZ=1;
+var S=BIO.S;
+var svg=BIO.svg;
+var T=BIO.T;
+var btn=BIO.btn;
+function H(t,c,h,k){var e=BIO.H(t,c,h,k);if(c==='bv-info'){var w=BIO.H('div');e.appendChild(w);Object.defineProperty(e,'innerHTML',{set:function(v){w.innerHTML=String(v).replace(/^<b>([\s\S]*?)<\/b>/,'<strong style="display:block;margin-bottom:2px">$1</strong>').replace(/<(\/?)b(\s|>)/g,'<$1strong$2').replace(/<span>/g,'<span style="display:block;margin-top:3px">')},get:function(){return w.innerHTML}})}return e}
+function clr(e){while(e.firstChild)e.removeChild(e.firstChild)}
+function seg(box,items,cur,cb){clr(box);items.forEach(function(it){var b=btn(it[1],function(){cb(it[0])});if(it[0]===cur)b.classList.add('on');b.setAttribute('aria-pressed',String(it[0]===cur));box.appendChild(b)})}
+BIO.Lh["C.S"]=S;BIO.Lh["C.svg"]=svg;BIO.Lh["C.T"]=T;BIO.Lh["C.btn"]=btn;BIO.Lh["C.H"]=H;BIO.Lh["C.clr"]=clr;BIO.Lh["C.seg"]=seg;
+})();
+
+/* viz: energia-materia — grupa C · z dawnego bio-viz.js (rozbij.js) */
+(function(){
+var BIO=window.BIO;
+var H=BIO.Lh["C.H"],btn=BIO.Lh["C.btn"],svg=BIO.Lh["C.svg"],S=BIO.Lh["C.S"],T=BIO.Lh["C.T"];
+BIO.define('energia-materia',{opis:'Ekosystem: przepływ energii (jednokierunkowy, od Słońca przez producentów i konsumentów, z ciepłem traconym na każdym poziomie, ok. 10% przechodzi dalej) i obieg materii (zamknięty: producenci → konsumenci → destruenci → związki mineralne → producenci); przełącznik energia / materia',
+mount:function(el,o){
+  var tools=H('div','bv-tools'),pic=H('div'),out=H('div','bv-info');el.appendChild(tools);el.appendChild(pic);el.appendChild(out);
+  var b=[btn('przepływ energii',function(){tryb(0)}),btn('obieg materii',function(){tryb(1)}),btn('oba naraz',function(){tryb(2)})];b.forEach(function(x){tools.appendChild(x)});
+  var s=svg(440,300,'Przepływ energii i obieg materii w ekosystemie');pic.appendChild(s);
+  var E='#e08a1e',M='#2e8b57',warstwy={e:[],m:[]};
+  function strz(x1,y1,x2,y2,c,k,przes){var dx=x2-x1,dy=y2-y1,L=Math.hypot(dx,dy),ux=dx/L,uy=dy/L,nx=-uy*(przes||0),ny=ux*(przes||0);x1+=nx;x2+=nx;y1+=ny;y2+=ny;
+    var gg=S('g',{});gg.appendChild(S('line',{x1:x1,y1:y1,x2:x2-ux*7,y2:y2-uy*7,stroke:c,'stroke-width':3}));
+    gg.appendChild(S('path',{d:'M'+x2+' '+y2+' L'+(x2-ux*10-uy*5)+' '+(y2-uy*10+ux*5)+' L'+(x2-ux*10+uy*5)+' '+(y2-uy*10-ux*5)+'z',fill:c}));s.appendChild(gg);warstwy[k].push(gg);return gg}
+  function wezel(x,y,w,t1,t2,k,kol){var gg=S('g',{'data-k':k});gg.appendChild(S('rect',{x:x-w/2,y:y-22,width:w,height:44,rx:9,fill:kol,stroke:'#5b6672'}));gg.appendChild(T(x,y-8,t1,{s:11.5,w:800}));gg.appendChild(T(x,y+9,t2,{s:10.5,w:600}));return gg}
+  var N={slonce:[40,40],P:[70,134],K1:[220,134],K2:[370,134],D:[300,250],Mn:[96,250]};
+  // strzałki (pod węzłami)
+  strz(58,60,70,110,E,'e');
+  strz(127,134,159,134,E,'e',-5);strz(281,134,309,134,E,'e',-5);
+  strz(127,134,159,134,M,'m',5);strz(281,134,309,134,M,'m',5);
+  [[N.P,-5],[N.K1,0],[N.K2,5]].forEach(function(q){strz(q[0][0],156,N.D[0]+q[1]*6-4,228,E,'e',-4);strz(q[0][0],156,N.D[0]+q[1]*6+4,228,M,'m',4)});
+  strz(248,250,153,250,M,'m');strz(84,228,72,157,M,'m');
+  var cieplo=[];[N.P,N.K1,N.K2,[N.D[0]+40,N.D[1]]].forEach(function(q){var gg=S('g',{});gg.appendChild(S('path',{d:'M'+(q[0]+40)+' '+(q[1]-22)+' q6 -8 0 -16 q-6 -8 0 -16',fill:'none',stroke:'#c0392b','stroke-width':2}));gg.appendChild(T(q[0]+40,q[1]-62,'ciepło',{s:10.5,f:'#c0392b'}));s.appendChild(gg);warstwy.e.push(gg)});
+  var sl=S('g',{'data-k':'slonce'});sl.appendChild(S('circle',{cx:40,cy:40,r:18,fill:'#ffd34d',stroke:'#e0a400'}));for(var i=0;i<8;i++){var a=i*Math.PI/4;sl.appendChild(S('line',{x1:40+Math.cos(a)*22,y1:40+Math.sin(a)*22,x2:40+Math.cos(a)*28,y2:40+Math.sin(a)*28,stroke:'#e0a400','stroke-width':2}))}s.appendChild(sl);
+  [wezel(70,134,112,'producenci','rośliny, glony','P','#e3f1dc'),wezel(220,134,120,'konsumenci I rz.','roślinożercy','K1','#f3ead6'),wezel(370,134,120,'konsumenci II rz.','drapieżniki','K2','#f6dfd9'),
+   wezel(300,250,104,'destruenci','bakterie, grzyby','D','#e9e3f2'),wezel(96,250,114,'związki mineralne','CO₂, woda, sole','Mn','#dfeef5')].forEach(function(x){s.appendChild(x)});
+  var liczby=[];[['10 000 kJ',70],['ok. 1000 kJ',220],['ok. 100 kJ',370]].forEach(function(z){var t=T(z[1]-(z[1]===70?52:56),100,z[0],{s:11,w:800,f:E,a:'start'});s.appendChild(t);liczby.push(t);warstwy.e.push(t)});
+  var leg=S('g',{});leg.appendChild(S('rect',{x:150,y:22,width:12,height:5,fill:E}));leg.appendChild(T(168,25,'energia',{s:11,a:'start'}));leg.appendChild(S('rect',{x:150,y:40,width:12,height:5,fill:M}));leg.appendChild(T(168,43,'materia (pierwiastki)',{s:11,a:'start'}));s.appendChild(leg);
+  BIO.fx.info(pic,out,{slonce:['Słońce',' Jedyne źródło energii dla większości ekosystemów. Producenci zamieniają energię światła na energię chemiczną związków organicznych (fotosynteza).'],
+    P:['Producenci',' Z CO₂, wody i soli mineralnych wytwarzają związki organiczne — „wpuszczają” energię i materię do łańcucha pokarmowego.'],
+    K1:['Konsumenci I rzędu',' Zjadają producentów. Większość zjedzonej energii zużywają na oddychanie i ruch — ucieka jako ciepło; do ich ciała trafia tylko mała część (ok. 10%).'],
+    K2:['Konsumenci II rzędu',' Zjadają roślinożerców. Dostaje się do nich znów tylko ok. 10% energii poprzedniego poziomu — dlatego drapieżników jest mało, a łańcuchy rzadko mają więcej niż 4–5 ogniw.'],
+    D:['Destruenci',' Rozkładają martwe szczątki i odchody na związki mineralne (mineralizacja). Sami też oddychają i oddają ciepło. Bez nich materia nie wracałaby do obiegu.'],
+    Mn:['Związki mineralne',' CO₂, woda, azotany, fosforany… Te same atomy węgla, azotu czy fosforu krążą w kółko: pobiera je producent, przechodzą przez konsumentów i destruentów i wracają do gleby, wody i powietrza.']});
+  function tryb(k){BIO.fx.toggle(b,k);warstwy.e.forEach(function(x){x.style.opacity=k===1?.12:1});warstwy.m.forEach(function(x){x.style.opacity=k===0?.12:1});
+    out.className='bv-info';out.innerHTML=[
+     '<b>Energia płynie w jedną stronę</b>Słońce → producenci → konsumenci; na każdym poziomie większość energii ucieka jako <strong>ciepło</strong> (oddychanie, ruch), dalej przechodzi tylko ok. 10% (orientacyjnie; zwykle 5–20%). Energia <strong>nie wraca</strong> do producentów — ekosystem potrzebuje stałego dopływu światła.',
+     '<b>Materia krąży</b>Producenci → konsumenci → destruenci → związki mineralne → znów producenci. Atomy węgla czy azotu są używane wielokrotnie — obieg jest <strong>zamknięty</strong>, a kluczowi są destruenci.',
+     '<b>Porównaj</b>Pomarańczowe strzałki (energia) kończą się ciepłem — to <strong>przepływ</strong>. Zielone (materia) tworzą pętlę — to <strong>obieg</strong>. Zdanie „energia krąży w ekosystemie” jest błędne.'][k]}
+  tryb(o.start==='materia'?1:o.start==='oba'?2:0)}});
+})();
+
+/* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
+   postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
+(function(){
+var html=document.documentElement;
+function ciemny(){var t=html.getAttribute('data-theme');return t?t==='dark':!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function oznacz(){if(ciemny())html.setAttribute('data-ciemny','');else html.removeAttribute('data-ciemny')}
+try{var z=localStorage.getItem('lekcja-motyw');if(z)html.setAttribute('data-theme',z)}catch(e){}
+oznacz();if(window.matchMedia)try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',oznacz)}catch(e){}
+
+function start(){
+var root=document;
+root.querySelectorAll('.flashcard').forEach(function(b){if(b.dataset.lkFz)return;b.dataset.lkFz=1;b.removeAttribute('onclick');b.setAttribute('aria-pressed','false');
+ b.addEventListener('click',function(){var on=b.classList.toggle('flipped');b.setAttribute('aria-pressed',on?'true':'false')})});
+root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibling,ok=0,n=0,all=w.querySelectorAll('.quiz-q').length;
+ if(sc&&sc.classList.contains('quiz-score'))sc.setAttribute('aria-live','polite');
+ w.querySelectorAll('.quiz-q').forEach(function(d){var good=+d.dataset.ok;d.querySelectorAll('.quiz-opt').forEach(function(b){b.onclick=function(){if(d.dataset.done)return;d.dataset.done=1;n++;if(+b.dataset.a===good)ok++;
+  d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
+  if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
+  if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var b=root.querySelector('#advToggle');
+if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
+ if(!k)b.style.display='none';
+ b.textContent='Pokaż treści akademickie ('+k+')';
+ b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';adv().forEach(function(d){d.open=on});b.setAttribute('aria-pressed',on?'true':'false');b.textContent=(on?'Ukryj':'Pokaż')+' treści akademickie ('+k+')'}}
+// spis zwinięty na telefonie
+var sp=root.querySelector('#spis');if(sp&&window.innerWidth<700)sp.removeAttribute('open');
+// przełącznik jasny/ciemny
+var tb=root.querySelector('#lkMotyw');
+if(tb)tb.onclick=function(){var t=ciemny()?'light':'dark';html.setAttribute('data-theme',t);try{localStorage.setItem('lekcja-motyw',t)}catch(e){}oznacz()};
+// postęp czytania + aktywna sekcja w spisie
+var bar=root.querySelector('.lk-prog'),links={},secs=[];
+root.querySelectorAll('.toc-link[href^="#"]').forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1));if(s){links[s.id]=a;secs.push(s)}});
+var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+ if(bar)bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';
+ var cur=null,lim=(parseInt(getComputedStyle(h).getPropertyValue('--header-h'))||52)+40;
+ for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
+ for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// fiszki: pokazuje pierwsze N (domyślnie 6, atrybut data-fz-pierwsze="N"), reszta po wyraźnym przycisku
+root.querySelectorAll('.flashcard-grid').forEach(function(g){
+ var cards=[].slice.call(g.querySelectorAll('.flashcard')),N=+(g.getAttribute('data-fz-pierwsze')||6);
+ if(!(N>0)||cards.length<=N)return;
+ var ukryte=cards.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more';
+ function lab(on){ukryte.forEach(function(c){c.hidden=!on});
+  b.textContent=on?'▲ Zwiń fiszki':'▼ Pokaż pozostałe '+ile+' fiszek (razem '+cards.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ g.insertAdjacentElement('afterend',b);
+});
+// testy: pokazuje pierwsze N pytań (domyślnie 5, atrybut data-q-pierwsze), reszta po wyraźnym przycisku
+root.querySelectorAll('.che-quiz').forEach(function(w){
+ var qs=[].slice.call(w.querySelectorAll('.quiz-q')),N=+(w.getAttribute('data-q-pierwsze')||5);
+ if(!(N>0)||qs.length<=N)return;
+ var ukryte=qs.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more q-more';
+ function lab(on){ukryte.forEach(function(q){q.hidden=!on});
+  b.textContent=on?'▲ Zwiń pytania':'▼ Pokaż pozostałe '+ile+(ile===1?' pytanie':(ile<5?' pytania':' pytań'))+' (razem '+qs.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ var sc=w.nextElementSibling;(sc&&sc.classList.contains('quiz-score')?sc:w).insertAdjacentElement('afterend',b);
+});
+// grafiki przedmiotu
+if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
+if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();
+
+</script>
+</body>
+</html>

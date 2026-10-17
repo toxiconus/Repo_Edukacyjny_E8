@@ -3,7 +3,7 @@ kod: F04
 uid: CHE.01.F04.atom
 tytul: Atom
 opis: Jądro i elektrony · proton, neutron, elektron · liczba atomowa Z i masowa A · zapis nuklidu · atom obojętny i jon · modele atomu
-kicker: F04 · FUNDAMENTY · MASTER v1.0
+kicker: F04 · FUNDAMENTY · MASTER v1.1
 lead: Pierwsza lekcja fazy B — „z czego to wynika?”. Schodzimy z poziomu substancji do atomu: z jakich cząstek się składa,
 lead: która liczba definiuje pierwiastek i jak z zapisu nuklidu bez zgadywania policzyć protony, neutrony i elektrony — w atomie i w jonie.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
@@ -31,7 +31,7 @@ stopka: **CHEMIA F04 v1.0 MASTER** · Atom · 2026
 - contest | <b>Ponad LO:</b> rozwijane bloki „poziom akademicki” — przycisk w nagłówku lekcji
 :::
 
-::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to (ok. 30 min)
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
 1. **[§0.4](#diagnoza)** — diagnoza: odpowiedz, zanim zaczniesz czytać.
 2. **[§1](#czastki)–[§3](#nuklid)** — cząstki atomu, liczby Z i A, zapis nuklidu.
 3. **[§4](#jony)** — atom obojętny i jon: procedura liczenia elektronów.
@@ -93,6 +93,20 @@ Faza A (F01–F03) opisała substancje. **Faza B — Z czego to wynika?** **F04 
 :::
 :::
 
+## 0.5 | Wykład — atom od zera {#wyklad}
+
+::: karta understand | Wykład — z czego zbudowane jest wszystko
+Weź kawałek miedzianego drutu i zacznij go w myślach dzielić na coraz mniejsze części. W końcu dojdziesz do najmniejszej porcji, która nadal jest miedzią — do **atomu**. Starożytni Grecy nazwali go *átomos*, czyli „niepodzielny”. Dziś wiemy, że ta nazwa jest myląca: atom ma wnętrze, a jego budowa tłumaczy niemal całą chemię.
+
+W środku atomu znajduje się **jądro** — maleńkie, ale bardzo ciężkie. Tworzą je **protony** (ładunek +1) i **neutrony** (bez ładunku); obie cząstki mają masę około 1 u. Wokół jądra poruszają się **elektrony** (ładunek −1), prawie 2000 razy lżejsze od protonu. Dodatnie jądro przyciąga ujemne elektrony — to ta sama siła, która przyciąga naelektryzowany balon do włosów. Jądro jest dziesiątki tysięcy razy mniejsze od całego atomu, a skupia ponad 99,9% jego masy: atom to głównie pusta przestrzeń.
+
+Najważniejsza liczba w chemii to **liczba atomowa Z** — liczba protonów. Ona decyduje, jaki to pierwiastek: każdy atom z 6 protonami jest węglem, z 8 — tlenem, z 11 — sodem. **Liczba masowa A** mówi, ile jest w jądrze protonów i neutronów razem; stąd liczba neutronów n = A − Z. Wszystko to zapisujemy skrótem **ᴬ_Z X** — np. ²³₁₁Na oznacza sód z 11 protonami i 12 neutronami.
+
+W atomie obojętnym elektronów jest tyle co protonów, więc ładunki się znoszą. Gdy atom **odda** elektrony, staje się **kationem** (ładunek dodatni, np. Na⁺), gdy **przyjmie** — **anionem** (ładunek ujemny, np. Cl⁻). Liczba protonów się przy tym nie zmienia — dlatego Na⁺ to nadal sód. To kluczowe zdanie lekcji: **reakcje chemiczne przestawiają elektrony, ale nie ruszają jąder**. Zmiana liczby protonów to już przemiana jądrowa i powstaje inny pierwiastek.
+
+Z tej lekcji wyniesiesz jedną procedurę, która wraca przez cały kurs: z zapisu odczytaj Z (protony), policz neutrony (A − Z), a elektrony wyznacz z ładunku (e = Z − q) — i zawsze sprawdź, czy p − e daje podany ładunek.
+:::
+
 ## 1 | Cząstki atomu [[basic:E8]] {#czastki}
 
 | Cząstka | Symbol | Ładunek | Masa (ok.) | Miejsce |
@@ -141,6 +155,9 @@ Zapis **ᴬ_Z X**: u góry liczba masowa A, u dołu liczba atomowa Z, obok symbo
 | ²⁷₁₃Al | 13 | 14 | 13 |
 
 > Elektronów **nie** odczytujesz z A — A mówi tylko o jądrze.
+
+@model f04-nuklid-v01 | Trening: odczytaj zapis nuklidu i policz p, n, e
+@opis Duży zapis nuklidu (np. ³⁵₁₇Cl⁻): u góry liczba masowa A, u dołu liczba atomowa Z, w prawym górnym rogu ładunek jonu. Uczeń wpisuje liczbę protonów, neutronów i elektronów; po „Sprawdź” pola zmieniają kolor (zielony — dobrze, czerwony — źle), pojawia się rachunek p = Z, n = A − Z, e = Z − ładunek oraz model atomu (protony czerwone, neutrony szare, elektrony na powłokach). Licznik pokazuje wynik. Wniosek: liczbę elektronów wyznacza Z i ładunek, a nie liczba masowa; kation ma mniej elektronów niż protonów, anion — więcej.
 
 @model periodic-54 | Układ okresowy z modelami atomów (pierwiastki 1–54) | wybierz pierwiastek: Z, liczba elektronów, schemat atomu
 @opis Interaktywny układ okresowy pierwiastków od 1 do 54; po wybraniu pierwiastka widać jego liczbę atomową Z, liczbę elektronów i schemat atomu z elektronami rozmieszczonymi na powłokach. Wniosek: miejsce pierwiastka w tablicy wynika z liczby protonów i budowy powłok elektronowych.
@@ -258,6 +275,23 @@ BHP: brak — doświadczenie modelowe.
 | „Liczba masowa to masa atomowa.” | A to liczba protonów i neutronów jednego nuklidu (liczba całkowita); masa atomowa to średnia ważona mas izotopów. | Cl: A = 35 lub 37, a masa atomowa ≈ 35,5 u. |
 :::
 
+## 8.5 | Nie myl! {#nie-myl}
+
+::: nie-myl | Pojęcia, które łatwo pomylić
+| Para | Dlaczego łatwo pomylić | Jak rozstrzygnąć |
+|---|---|---|
+| liczba masowa A / masa atomowa | obie „o masie” | A — liczba całkowita (p + n) jednego nuklidu; masa atomowa — średnia ważona izotopów (np. Cl ≈ 35,45 u) |
+| kation / anion | oba to jony | kation (+) oddał elektrony; anion (−) przyjął elektrony |
+| izotopy / izobary | podobne nazwy | izotopy — to samo Z, różne A; izobary — to samo A, różne Z |
+| jon / izotop | oba „ten sam pierwiastek, coś inne” | jon — inna liczba elektronów; izotop — inna liczba neutronów |
+| Z / numer okresu | oba w układzie okresowym | Z — numer pierwiastka (protony); okres — numer wiersza |
+| e = Z − q dla O²⁻ | łatwo odjąć zamiast dodać | q = −2, więc e = 8 − (−2) = 10, nie 6 |
+:::
+
+::: karta understand | W skrócie — trzy pytania kontrolne przy każdym zapisie
+Zanim zapiszesz odpowiedź, zadaj trzy pytania. **1) Czy protony zgadzają się z symbolem?** Symbol i Z to to samo — jeśli wyszło ci 10 protonów dla glinu, popełniłeś błąd. **2) Czy neutrony są liczbą nieujemną i całkowitą?** n = A − Z; dla ¹H wychodzi 0 i to poprawne. **3) Czy p − e daje podany ładunek?** Dla Al³⁺: 13 − 10 = +3 ✓; dla S²⁻: 16 − 18 = −2 ✓. Jeśli któraś kontrola nie wychodzi, wróć do wzoru, zamiast poprawiać liczby „na oko”.
+:::
+
 ## 9 | Ćwiczenia {#cwiczenia}
 
 ::: karta basic | A. Podstawa
@@ -331,6 +365,61 @@ Twierdzenie jest fałszywe. Dowód: Na⁺ ma nadal 11 protonów (Z = 11). Wyjaś
 2. Tlen: Z = 8; jon O²⁻ przyjął 2 elektrony → 10 elektronów.
 3. ²⁷₁₃Al (Z = 13 → glin; A = 13 + 14 = 27).
 4. Oba mają 6 protonów (to ten sam pierwiastek — węgiel), ale różną liczbę neutronów: 6 i 8.
+:::
+:::
+
+## 9.5 | Ciekawostki {#ciekawostki}
+
+::: karta extra | Neutron odkryty dopiero w 1932 roku
+Elektron znano od 1897 r. (J.J. Thomson), jądro od 1911 r. (Rutherford), ale neutron — jako cząstka bez ładunku — długo się ukrywał. Odkrył go James Chadwick w 1932 r. i dostał za to Nagrodę Nobla.
+:::
+
+::: karta extra | Jesteśmy z gwiazd
+Wodór i większość helu powstały tuż po Wielkim Wybuchu, ale węgiel, tlen czy żelazo w twoim ciele „wykuły się” w jądrach gwiazd — w reakcjach jądrowych, które zmieniają liczbę protonów. Cięższe pierwiastki rozsiały wybuchy gwiazd. (orientacyjnie: pierwiastki najcięższe powstają m.in. przy zderzeniach gwiazd neutronowych)
+:::
+
+::: karta extra | Jony w twoich nerwach
+Każdy impuls nerwowy to przepływ jonów — głównie Na⁺ i K⁺ — przez błonę komórki nerwowej. Kiedy czytasz to zdanie, miliardy kationów sodu i potasu przemieszczają się w twoim mózgu. Most do biologii: układ nerwowy (BIO U08).
+:::
+
+## 9.6 | Warstwa olimpijska — Dla olimpijczyka {#olimpijska}
+
+*(Warstwa ponad E8 — do zweryfikowania z wymaganiami konkretnego konkursu.)*
+
+::: karta understand | Dla olimpijczyka — gdzie zapis nuklidu zastawia pułapki
+**Jony izoelektronowe** — różne jony o tej samej liczbie elektronów: O²⁻, F⁻, Ne, Na⁺, Mg²⁺, Al³⁺ mają po 10 e⁻. Im większe Z przy tej samej liczbie elektronów, tym silniej jądro je przyciąga — dlatego Al³⁺ jest mniejszy od O²⁻. **Izotony** — nuklidy o tej samej liczbie neutronów (np. ¹⁴C i ¹⁶O: po 8 neutronów). **Zadania odwrotne** — z liczby elektronów i ładunku wyznacz Z, a potem symbol: X²⁻ z 18 e⁻ → Z = 18 + (−2) = 16 → siarka. **Wodór bez neutronu** — ¹H ma 0 neutronów, a jon H⁺ to „goły” proton, bez żadnego elektronu.
+:::
+
+::: adv | Zadanie O1 (4 pkt) — jony izoelektronowe | poziom ambitny (konkurs)
+Spośród: Na⁺, K⁺, Cl⁻, F⁻, Mg²⁺, S²⁻, Ar, Ne wybierz dwie grupy cząstek izoelektronowych i podaj liczbę elektronów w każdej grupie.
+
+::: odp | Pokaż klucz
+10 e⁻: Na⁺, F⁻, Mg²⁺, Ne (2 pkt); 18 e⁻: K⁺, Cl⁻, S²⁻, Ar (2 pkt).
+:::
+:::
+
+::: adv | Zadanie O2 (4 pkt) — zadanie odwrotne | poziom ambitny (konkurs)
+1. Jon X³⁺ ma 10 elektronów i 14 neutronów. Podaj symbol pierwiastka i zapis nuklidu.
+2. Jon Y²⁻ ma 18 elektronów i 16 neutronów. Podaj symbol i zapis nuklidu.
+
+::: odp | Pokaż klucz
+1. Z = 10 + 3 = 13 → Al; A = 13 + 14 = 27 → ²⁷₁₃Al³⁺ (2 pkt). 2. Z = 18 − 2 = 16 → S; A = 16 + 16 = 32 → ³²₁₆S²⁻ (2 pkt).
+:::
+:::
+
+::: adv | Zadanie O3 (3 pkt) — izotopy, izobary, izotony | poziom ambitny (konkurs)
+Sklasyfikuj pary: (a) ¹⁴C i ¹⁴N, (b) ¹²C i ¹³C, (c) ¹³C i ¹⁴N.
+
+::: odp | Pokaż klucz
+(a) izobary — A = 14, różne Z; (b) izotopy — Z = 6; (c) izotony — po 7 neutronów (13 − 6 = 7, 14 − 7 = 7). Po 1 pkt.
+:::
+:::
+
+::: adv | Zadanie O4 (3 pkt) — który jon jest mniejszy? | poziom ambitny (konkurs)
+Uszereguj jony O²⁻, Na⁺, Mg²⁺, F⁻ od największego do najmniejszego i uzasadnij.
+
+::: odp | Pokaż klucz
+O²⁻ > F⁻ > Na⁺ > Mg²⁺ (2 pkt) — wszystkie mają 10 e⁻; im więcej protonów, tym silniej jądro przyciąga tę samą liczbę elektronów i tym mniejszy jon (1 pkt).
 :::
 :::
 
@@ -427,6 +516,11 @@ Zmiana Z / n / e | inny pierwiastek / izotop / jon | understand:rozumienie
 Jednostka u | 1/12 masy atomu ¹²C ≈ 1,66 · 10⁻²⁴ g | extra:ambitne
 Izobary | ten sam A, różne Z (⁴⁰Ar, ⁴⁰Ca) | extra:ambitne
 Doświadczenie Rutherforda | odkrycie małego, dodatniego jądra | extra:ambitne
+Jony izoelektronowe | ta sama liczba elektronów, np. O²⁻, F⁻, Na⁺, Mg²⁺ — po 10 e⁻ | olimpijski:atom
+Izotony | ta sama liczba neutronów (¹³C i ¹⁴N — po 7) | olimpijski:atom
+X²⁻ z 18 e⁻ — jaki pierwiastek? | Z = 16 → siarka | olimpijski:atom
+H⁺ | goły proton — 0 elektronów | olimpijski:atom
+Kto odkrył neutron? | James Chadwick, 1932 | olimpijski:atom
 :::
 
 ## 13 | Słownik {#slownik}
@@ -459,13 +553,13 @@ Jednostka masy atomowej u :: 1/12 masy atomu węgla ¹²C
 
 ## 15 | System powtórek {#powtorki}
 
-| Kiedy | Ile | Co |
-|---|---|---|
-| po lekcji | 20 min | karta z [§11](#powtorka) i ćwiczenia A |
-| po 1 dniu | 10 min | fiszki |
-| po 3 dniach | 15 min | ćwiczenia B |
-| po tygodniu | 20 min | test z [§10](#test) |
-| po F05 | 25 min | F02 + F03 + F04 + F05 razem — zestaw przekrojowy z F21 |
+Kolejność powtórki (we własnym tempie):
+
+1. karta z [§11](#powtorka) i ćwiczenia A,
+2. fiszki,
+3. ćwiczenia B,
+4. test z [§10](#test),
+5. po F05 — F02 + F03 + F04 + F05 razem: zestaw przekrojowy z F21.
 
 ## A | Dodatek A — mosty i co dalej {#mosty}
 
@@ -486,3 +580,9 @@ Jednostka masy atomowej u :: 1/12 masy atomu węgla ¹²C
 | [§3](#nuklid) | `periodic-54` | układ okresowy 1–54 z modelami atomów — Z i liczba elektronów |
 
 > Do zbudowania w GFX (nowe elementy): „Atom zoom” (V003) — jądro z licznikiem p/n, elektrony, przełącznik skali schematyczna/rzeczywista; konstruktor atomu i jonu (dodaj/zabierz proton, neutron, elektron — pokazuje, czy zmienia się pierwiastek, izotop czy ładunek); animacja doświadczenia Rutherforda.
+
+## Ulepszenie — Claude, 2026-10-11 {#ulepszenie}
+
+- Dodano: §0.5 wykład „od zera”, §8.5 nie-myl + mini-wykład „W skrócie — trzy pytania kontrolne”, §9.5 ciekawostki (3), §9.6 warstwa olimpijska (Dla olimpijczyka + O1–O4 z kluczami), 5 fiszek olimpijskich. Nic nie usunięto.
+- Poprawione: „System powtórek” — usunięto minuty i odstępy dni (kurs we własnym tempie, bez znaczników czasu), zostawiono kolejność powtórki.
+

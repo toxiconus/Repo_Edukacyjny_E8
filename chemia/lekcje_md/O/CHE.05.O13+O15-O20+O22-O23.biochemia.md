@@ -3,6 +3,7 @@ kod: "O13; O15–O20; O22–O23"
 tytul: "LEKCJA L007 — BIOCHEMIA"
 zrodla: "CHEMIA_PODSTAWA_PLUS v1.1 (CHE.05.O11-O19.biochemia.md)"
 opis: "Materiał roboczy lekcji (nie gotowa lekcja). Spis i zakres: chemia/plany/CHE_SPIS_TRESCI.md"
+stan: W23 — GPT-6, 2026-10-09; audyt celowany i poprawki punktowe, pełna niezależna recenzja nadal otwarta
 ---
 <!-- ==================== BEGIN L007 ==================== -->
 
@@ -985,6 +986,33 @@ Wiązanie peptydowe –CO–NH–. Próby: biuret, Fehling/Tollens (redukujące)
 
 <!-- ==================== END L007 ==================== -->
 
+## UZUPEŁNIENIE KANONICZNE W8 — BIOCZĄSTECZKI
+
+### Tłuszcze
+
+Typowe tłuszcze są triestrowymi pochodnymi glicerolu i wyższych kwasów karboksylowych: zawierają trzy wiązania estrowe. Nie każdy tłuszcz jest ciałem stałym; stan skupienia zależy m.in. od składu kwasów tłuszczowych, długości łańcuchów i udziału wiązań C=C. „Nasycone” i „nienasycone” odnosi się do łańcuchów kwasów tłuszczowych. Tłuszcze nie tworzą typowego roztworu wodnego; emulgator ułatwia rozproszenie i stabilizację kropelek, lecz nie zmienia emulsji w roztwór. Olej jest zwykle mieszaniną wielu związków, a nie jednym czystym związkiem.
+
+Schematycznie: tłuszcz + 3H₂O → glicerol + 3 kwasy tłuszczowe (hydroliza); tłuszcz + 3NaOH → glicerol + 3 sole kwasów tłuszczowych (zmydlanie). Uwodornienie części wiązań podwójnych zmienia skład i właściwości, ale nie zachodzi automatycznie w każdym oleju.
+
+### Cukry
+
+Cukry proste (monosacharydy) nie rozkładają się przez hydrolizę na prostsze cukry. Dwucukry i wielocukry mogą ulegać hydrolizie; skrobia i celuloza są zbudowane z jednostek glukozowych, ale różnią się typem wiązań i strukturą, dlatego człowiek trawi skrobię, lecz nie trawi celulozy przy użyciu własnych enzymów. Nie utożsamiaj wszystkich cukrów z sacharozą ani słodkiego smaku z obecnością cukru.
+
+### Białka
+
+Białka są łańcuchami aminokwasów połączonych wiązaniami peptydowymi. Denaturacja zmienia strukturę przestrzenną białka i może pozbawić je aktywności, ale zwykle nie oznacza rozerwania wszystkich wiązań peptydowych. Wysoka temperatura, skrajne pH i niektóre substancje mogą powodować denaturację. Hydroliza rozrywa wiązania peptydowe i prowadzi do krótszych peptydów lub aminokwasów.
+
+### Chemia w organizmie — ostrożność wnioskowania
+
+Składniki odżywcze pełnią różne funkcje, ale organizm nie wykorzystuje ich w izolacji od całego układu metabolicznego. Nie wnioskuj o jakości żywności wyłącznie z jednego składnika lub hasła reklamowego. W zadaniach odróżniaj model uproszczony od danych biologicznych i klinicznych; twierdzenia zdrowotne wymagają wiarygodnych źródeł.
+
+### Sprawdź się
+
+1. Co powstaje w zmydlaniu tłuszczu? **Glicerol i sole kwasów tłuszczowych.**
+2. Czy emulgator czyni tłuszcz rozpuszczalnym w wodzie? **Nie; pomaga tworzyć/stabilizować emulsję.**
+3. Dlaczego celuloza i skrobia różnią się strawnością? **Różnią się budową i typem wiązań.**
+4. Czy denaturacja zawsze rozrywa wiązania peptydowe? **Nie; przede wszystkim zmienia strukturę przestrzenną.**
+
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
 > Źródło: `chemia/plany/audyty/W1_perplexityO01-O07₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
@@ -992,6 +1020,8 @@ Wiązanie peptydowe –CO–NH–. Próby: biuret, Fehling/Tollens (redukujące)
 ### O13 — Tłuszcze (w audycie: O07)
 
 #### Poprawki
+
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
 
 - Tłuszcze są estrami glicerolu i wyższych kwasów karboksylowych.
 - Nie każdy tłuszcz jest ciałem stałym.
@@ -1008,6 +1038,8 @@ Wiązanie peptydowe –CO–NH–. Próby: biuret, Fehling/Tollens (redukujące)
 ##### Budowa
 
 Typowa cząsteczka tłuszczu zawiera:
+
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
 
 - glicerol;
 - trzy reszty wyższych kwasów karboksylowych;
@@ -1049,6 +1081,8 @@ Uwodornienie części wiązań podwójnych może zmieniać właściwości tłusz
 
 #### Poprawki
 
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
 - Cukry, czyli sacharydy, są związkami organicznymi zawierającymi przede wszystkim węgiel, wodór i tlen.
 - Nie wszystkie cukry mają słodki smak.
 - Nie każdy słodki związek jest cukrem.
@@ -1068,6 +1102,8 @@ ale inną budowę, dlatego są izomerami.
 #### Uzupełnienia
 
 ##### Podział
+
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
 
 - monosacharydy: glukoza, fruktoza;
 - disacharydy: sacharoza, maltoza, laktoza;
@@ -1126,6 +1162,8 @@ Proces zachodzi z udziałem drożdży w odpowiednich warunkach.
 
 #### Poprawki
 
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
 - Białka są wielkocząsteczkowymi związkami zbudowanymi z aminokwasów.
 - Aminokwasy białkowe zawierają co najmniej grupę aminową -NH₂ i karboksylową -COOH.
 - W organizmach białka zawierają przede wszystkim węgiel, wodór, tlen i azot; niektóre zawierają również siarkę.
@@ -1162,6 +1200,8 @@ Wynik dodatni: fioletowe zabarwienie roztworu.
 
 Wymagane są:
 
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
 - środowisko zasadowe;
 - jony miedzi(II);
 - co najmniej dwa wiązania peptydowe w wykrywanej strukturze, zależnie od zastosowanej wersji próby.
@@ -1169,6 +1209,8 @@ Wymagane są:
 ##### Denaturacja
 
 Czynniki denaturujące mogą obejmować:
+
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
 
 - wysoką temperaturę;
 - silne kwasy i zasady;
@@ -1197,6 +1239,8 @@ Przykład: ogrzewanie białka jaja powoduje jego ścinanie i zwykle nieodwracaln
 ### O22–O23 — Chemia w organizmie (w audycie: O10)
 
 #### Poprawki
+
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
 
 - Woda pełni funkcję rozpuszczalnika, środowiska reakcji, regulatora temperatury i składnika organizmów.
 - Nie każda substancja polarna rozpuszcza się dobrze w wodzie; znaczenie ma również rozmiar i budowa cząsteczki.
@@ -1237,3 +1281,8 @@ Przykład: ogrzewanie białka jaja powoduje jego ścinanie i zwykle nieodwracaln
 3. Substancja energetyczna dostarcza energii, a regulacyjna wpływa na przebieg procesów organizmu.
 4. Może powodować denaturację białka enzymatycznego.
 5. Enzymatyczna, transportowa, odpornościowa lub regulacyjna.
+
+
+## W23 — biochemia (2026-10-09, GPT-6)
+
+Sprawdzono wybrane równania oddychania, fotosyntezy, fermentacji alkoholowej i mlekowej oraz hydrolizy sacharozy. Doprecyzowano, że produkty hydrolizy sacharozy to glukoza i fruktoza, oba o wzorze C₆H₁₂O₆, lecz różne związki.

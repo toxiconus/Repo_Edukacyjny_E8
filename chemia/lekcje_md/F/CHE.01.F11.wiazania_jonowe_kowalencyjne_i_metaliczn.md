@@ -6,6 +6,7 @@ wymaga: "F06; F08; F09; F10"
 poglebia: "F12–F15; P03–P06"
 zrodla: "MASTER v17.0; MASTER v15.0; MASTER v14.0; stary kanon F00–F09 (v4.1/v5.0); stary podział CHE.01.F07.wiazania_chemiczne.md"
 opis: "Materiał roboczy lekcji (nie gotowa lekcja). Spis i zakres: chemia/plany/CHE_SPIS_TRESCI.md"
+stan: W1 — GPT-6, 2026-10-09; poprawki audytu wprowadzone do treści kanonicznej
 ---
 # CHE.01F.11-WIĄZANIA — WIĄZANIA JONOWE, KOWALENCYJNE I METALICZNE
 
@@ -1884,6 +1885,36 @@ Powłoka K mieści maksymalnie 2 elektrony, L — 8, a M **może** mieścić do 
 
 ---
 
+## UZUPEŁNIENIE KANONICZNE — typy wiązań i przewodnictwo (W1, 2026-10-09)
+
+### Porównanie modeli wiązań
+
+| Typ | Model | Przykład | Typowa właściwość / zachowanie |
+|---|---|---|---|
+| Jonowe | Przyciąganie elektrostatyczne przeciwnie naładowanych jonów w sieci krystalicznej | NaCl | Zwykle wysokie temperatury topnienia; kryształ nie przewodzi prądu w stanie stałym |
+| Kowalencyjne niespolaryzowane | Wspólna para elektronowa dzielona podobnie przez atomy | H₂ | Cząsteczki dwuatomowe takie jak H₂ mają zwykle niskie temperatury wrzenia i nie przewodzą prądu jako czysta substancja |
+| Kowalencyjne spolaryzowane | Wspólna para przesunięta ku bardziej elektroujemnemu atomowi | HCl | Cząsteczki mają bieguny ładunku; wodny roztwór HCl przewodzi dzięki jonom powstałym w reakcji z wodą |
+| Metaliczne | Dodatnie rdzenie atomowe/kationy metalu otoczone zdelokalizowanymi elektronami | Cu | Dobre przewodnictwo elektryczne i cieplne, kowalność i ciągliwość |
+
+W krysztale NaCl nie ma oddzielnych cząsteczek NaCl; wzór oznacza stosunek jonów `Na⁺:Cl⁻ = 1:1`. Wiązanie metaliczne nie jest wspólną parą elektronową między dwoma atomami. Różnica elektroujemności pomaga przewidywać polaryzację, ale nie wyznacza absolutnej granicy między typami wiązań.
+
+### Dlaczego przewodnictwo się różni?
+
+- Stały kryształ jonowy zwykle nie przewodzi, bo jony nie mogą swobodnie przemieszczać się w sieci.
+- Stopiona substancja jonowa może przewodzić, bo jony stają się ruchliwe.
+- Roztwór elektrolitu przewodzi dzięki ruchliwym jonom.
+- Metal przewodzi dzięki ruchliwym elektronom.
+- Sama obecność wiązań kowalencyjnych nie oznacza przewodnictwa.
+
+### Ćwiczenia kontrolne
+
+1. Określ dominujący typ wiązania w NaCl, H₂, HCl i Cu.
+2. Wyjaśnij, dlaczego stały NaCl nie przewodzi prądu tak jak stopiony NaCl.
+3. Wyjaśnij różnicę między cząsteczką H₂ a siecią jonową NaCl.
+4. Oceń zdanie: „Wiązanie jonowe polega na utworzeniu jednej wspólnej pary elektronowej”.
+
+**Klucz:** 1. NaCl — jonowe; H₂ — kowalencyjne niespolaryzowane; HCl — kowalencyjne spolaryzowane; Cu — metaliczne. 2. W krysztale jony są unieruchomione, a w stopionym NaCl mogą się przemieszczać. 3. H₂ składa się z odrębnych cząsteczek, NaCl tworzy rozległą sieć jonów. 4. Fałsz — wiązanie jonowe wynika z przyciągania elektrostatycznego przeciwnie naładowanych jonów.
+
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
 > Źródło: `chemia/plany/audyty/W1_perplexity_F07-F14₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
@@ -1892,15 +1923,15 @@ Powłoka K mieści maksymalnie 2 elektrony, L — 8, a M **może** mieścić do 
 
 ### Poprawki
 
-- Wiązanie jonowe opisuje przyciąganie elektrostatyczne między przeciwnie naładowanymi jonami w sieci krystalicznej.
-- Nie pisz, że „w NaCl jedna cząsteczka sodu łączy się z jedną cząsteczką chloru”.
-- Chlorek sodu nie tworzy odrębnych cząsteczek NaCl w krysztale jonowym; wzór określa najmniejszy stosunek jonów.
-- Wiązanie kowalencyjne powstaje wskutek współdzielenia par elektronowych przez atomy.
-- Wiązanie kowalencyjne może być niespolaryzowane lub spolaryzowane.
-- Wiązanie metaliczne obejmuje dodatnie rdzenie atomowe lub kationy metalu oraz zdelokalizowane elektrony.
-- Nie definiuj wiązania metalicznego jako „wspólnej pary elektronów między dwoma atomami”.
-- Typ wiązania nie zależy wyłącznie od tego, czy pierwiastki są metalami lub niemetalami; to szkolna reguła orientacyjna.
-- Różnica elektroujemności pomaga przewidywać polaryzację wiązania, ale nie stanowi absolutnej granicy między typami wiązań.
+- Wiązanie jonowe opisuje przyciąganie elektrostatyczne między przeciwnie naładowanymi jonami w sieci krystalicznej. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Nie pisz, że „w NaCl jedna cząsteczka sodu łączy się z jedną cząsteczką chloru”. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Chlorek sodu nie tworzy odrębnych cząsteczek NaCl w krysztale jonowym; wzór określa najmniejszy stosunek jonów. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Wiązanie kowalencyjne powstaje wskutek współdzielenia par elektronowych przez atomy. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Wiązanie kowalencyjne może być niespolaryzowane lub spolaryzowane. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Wiązanie metaliczne obejmuje dodatnie rdzenie atomowe lub kationy metalu oraz zdelokalizowane elektrony. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Nie definiuj wiązania metalicznego jako „wspólnej pary elektronów między dwoma atomami”. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Typ wiązania nie zależy wyłącznie od tego, czy pierwiastki są metalami lub niemetalami; to szkolna reguła orientacyjna. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Różnica elektroujemności pomaga przewidywać polaryzację wiązania, ale nie stanowi absolutnej granicy między typami wiązań. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
 
 ### Uzupełnienia
 
@@ -1915,11 +1946,11 @@ Powłoka K mieści maksymalnie 2 elektrony, L — 8, a M **może** mieścić do 
 
 #### Przewodnictwo
 
-- Kryształy jonowe w stanie stałym zwykle nie przewodzą prądu, ponieważ jony nie mogą swobodnie się przemieszczać.
-- Stopione kryształy jonowe mogą przewodzić, ponieważ jony stają się ruchliwe.
-- Roztwory substancji elektrolitycznych przewodzą dzięki ruchliwym jonom.
-- Metale przewodzą dzięki ruchliwym elektronom.
-- Nie każda substancja zawierająca wiązania kowalencyjne przewodzi prąd.
+- Kryształy jonowe w stanie stałym zwykle nie przewodzą prądu, ponieważ jony nie mogą swobodnie się przemieszczać. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Stopione kryształy jonowe mogą przewodzić, ponieważ jony stają się ruchliwe. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Roztwory substancji elektrolitycznych przewodzą dzięki ruchliwym jonom. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Metale przewodzą dzięki ruchliwym elektronom. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Nie każda substancja zawierająca wiązania kowalencyjne przewodzi prąd. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
 
 #### Zadania
 
@@ -1934,3 +1965,5 @@ Powłoka K mieści maksymalnie 2 elektrony, L — 8, a M **może** mieścić do 
 2. W krysztale jony są unieruchomione, a w stopionym NaCl mogą się przemieszczać.
 3. H₂ składa się z odrębnych cząsteczek, natomiast NaCl tworzy rozległą sieć jonów.
 4. Fałsz. Wiązanie jonowe wynika z przyciągania elektrostatycznego jonów o przeciwnych ładunkach.
+
+**Status audytu:** poprawki i uzupełnienia przeniesiono do sekcji „UZUPEŁNIENIE KANONICZNE”; dodano przykłady, ćwiczenia i klucze.

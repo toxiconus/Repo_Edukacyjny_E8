@@ -396,4 +396,16 @@ UZUPELNIENIA = [
     ("REV03–05", "LO podstawowe, LO rozszerzone, zadania przekrojowe"),
     ("REV06", "Pomost akademicki / zaawansowana"),
     ("REV07", "Mapa kompetencji i diagnostyka zależności"),
+    # powtórki tematyczne z audytu W1 Perplexity (tam REV00–REV10); nowe kody, by nie kolidować z REV01/REV02/REV06
+    ("RT00", "Powtórka tematyczna: Powtórki i diagnostyka — szkic w plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md"),
+    ("RT01", "Powtórka tematyczna: Materia i substancje — szkic w plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md"),
+    ("RT02", "Powtórka tematyczna: Atom, układ okresowy i konfiguracja — szkic w plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md"),
+    ("RT03", "Powtórka tematyczna: Wiązania, Lewis i geometria — szkic w plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md"),
+    ("RT04", "Powtórka tematyczna: Wzory i równania reakcji — szkic w plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md"),
+    ("RT05", "Powtórka tematyczna: Kwasy, zasady i chemia jonowa — szkic w plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md"),
+    ("RT06", "Powtórka tematyczna: Stechiometria i roztwory — szkic w plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md"),
+    ("RT07", "Powtórka tematyczna: Redoks i elektrochemia — szkic w plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md"),
+    ("RT08", "Powtórka tematyczna: Kinetyka, energia i równowaga — szkic w plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md"),
+    ("RT09", "Powtórka tematyczna: Jądro, promieniotwórczość i laboratorium — szkic w plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md"),
+    ("RT10", "Powtórka tematyczna: Test mistrzostwa — szkic w plany/audyty/W1_perplexity_REV00-REV10_2026-10-09.md"),
 ]

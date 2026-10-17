@@ -29,6 +29,11 @@ Pakiet 2026/27 (regulamin, terminarz, zakresy) **nie jest jeszcze opublikowany**
 
 **Do zrobienia przez użytkownika:** (zakresy 2025/26 i arkusz rejonowy chemii 2025/26 — już w `zrodla/LKO/`) pobrać z kuratorium.lublin.pl (strona blokuje pobieranie automatyczne) arkusze **etapu szkolnego chemii i biologii 2024/25** z kluczami (publikacja id=13802), PDF zakresów 2025/26 i — gdy wyjdzie — pakiet 2026/27; wrzucić do rozmowy → trafią do `olimpiada/zrodla/` i banku zadań.
 
+## 1a. PRIORYTET polski i angielski (decyzja użytkownika 2026-10-11)
+- **Polski:** najpierw przysłówek (G07) i przydawka (G12 części zdania), potem pozostałe podstawy: przymiotnik, rzeczownik, czasownik, liczebnik, zaimek, imiesłowy, przyimek, spójnik, związki wyrazowe.
+- **Angielski:** czasy — L004 (teraźniejsze i przeszłe), L005 (Present Perfect), L006 (Past Simple/Continuous), L012 (przyszłość), dalej L003 (stative) i L002 (operatory).
+- Paczki z warstwą olimpijską (`paczka_ai.py … --olimpiada`, dodatek `eksport/OLIMPIADA_DODATEK.md`), **jedna lekcja na paczkę, ≤ ok. 50 KB** (model z Multi-AI Chat czytał tylko ok. 50 KB — dłuższe urywał). Gotowe 2026-10-11: G07, G12, L004 (W1 FULL), L005 (FULL do §8). Kolejność wysyłki: `ANG_L006_past_simple_continuous` → `ANG_L005_reszta` → `ANG_L012_future` → `POL_G03_przymiotnik` → `POL_G01_rzeczownik` → `ANG_L003_stative_imperative` → `POL_G02…G13` → `ANG_L002_operatory_cz1–3`. Długie lekcje dzieli `eksport/podziel_lekcje.py`.
+
 ## 2. Kolejka lekcji — teraz (do etapów szkolnych)
 ### Chemia (do 23.10)
 | # | lekcja | dlaczego | materiał źródłowy | stan |
@@ -37,17 +42,25 @@ Pakiet 2026/27 (regulamin, terminarz, zakresy) **nie jest jeszcze opublikowany**
 | C1b | N01 Powietrze i gazy: tlen, wodór, skład powietrza, korozja (dział IV podstawy — w zakresie etapu szkolnego) | dział IV | kanon N01; treść nowa | **[V] gotowa 2026-10-08** — `lessons-md/gotowe/N01_powietrze_i_gazy.md` |
 | C1c | (etap rejonowy) szereg aktywności, jonowe równania, stechiometria z nadmiarem, konfiguracje do Z = 36 | etap II | kanon X04, J03, R07–R08 (część bez mola), F07 | [ ] |
 | C2 | R03 Woda, roztwory i stężenie procentowe (R01–R03 w jednej lekcji) | obliczenia rozdzielają uczestników | `chemia/lekcje_md/R/CHE.03.R03+R05.stezenia.md` | **[V] gotowa 2026-10-08** — `lessons-md/gotowe/R03_woda_roztwory_stezenie_procentowe.md` (brak GFX krzywej rozpuszczalności) |
-| C3 | F17 Równania reakcji + obliczenia z równań (masowe, prawo zachowania masy, proporcje — bez mola) | typowe zadanie konkursowe | `lekcje_md/F/CHE.01.F17…`, `R/…stechiometria.md` (część masowa) | [ ] |
+| C3 | F17 Równania reakcji + obliczenia z równań (masowe, prawo zachowania masy, proporcje — bez mola) | typowe zadanie konkursowe | `lekcje_md/F/CHE.01.F17…`, `R/…stechiometria.md` (część masowa) | **[V] gotowa 2026-10-11, W1 FULL** — `lessons-md/gotowe/F17_rownania_reakcji_i_obliczenia.md` |
+| C2b | R03A Mieszanie roztworów i reguła krzyżowa | częsty temat olimpijski | materiał Perplexity 2026-10-11 | **[V] gotowa 2026-10-11** — `lessons-md/gotowe/R03A_mieszanie_roztworow_regula_krzyzowa.md` (do W1) |
 | C4 | Doświadczenia: obserwacja → wniosek → równanie (zbiorczo) | typowe zadanie konkursowe | `lekcje_md/00/CHE.00.LAB.doswiadczenia.md` | [ ] |
 | — | gotowe: F01–F06, tlenki, wodorotlenki, kwasy, sole, wodorki | | `che-modular/lessons-md/gotowe/` | [~] |
 
 ### Biologia (do 21.10)
 | # | lekcja | dlaczego | stan |
 |---|---|---|---|
-| B1 | **REV02 Różnorodność życia** (klasyfikacja, wirusy, bakterie, rośliny, grzyby, zwierzęta, doświadczenia) | etap szkolny pkt II | **[V] gotowa 2026-10-08** — `biologia/bio/md/REV02_roznorodnosc_zycia.md` (treść wg podstawy 2024 + zakresu LKO; w repo nie było materiału kl. 5–6) |
-| B1a | **REV01 BIO Organizacja i chemizm życia** (komórka, mikroskop, fotosynteza, oddychanie i fermentacja, czynności życiowe; doświadczenia: fotosynteza, drożdże + CO₂) | etap szkolny pkt I | **[V] gotowa 2026-10-08** — `biologia/bio/md/REV01_organizacja_i_chemizm_zycia.md` (z L001, L004–L008 + uzupełnienia) |
+| B1 | **REV02 Różnorodność życia** (klasyfikacja, wirusy, bakterie, rośliny, grzyby, zwierzęta, doświadczenia) | etap szkolny pkt II | **[V] gotowa 2026-10-08** — `biologia/bio/md/BIO.00.REV02.roznorodnosc_zycia.md` (treść wg podstawy 2024 + zakresu LKO; w repo nie było materiału kl. 5–6) |
+| B1a | **REV01 BIO Organizacja i chemizm życia** (komórka, mikroskop, fotosynteza, oddychanie i fermentacja, czynności życiowe; doświadczenia: fotosynteza, drożdże + CO₂) | etap szkolny pkt I | **[V] gotowa 2026-10-08** — `biologia/bio/md/BIO.00.REV01.organizacja_i_chemizm_zycia.md` (z L001, L004–L008 + uzupełnienia) |
 | B1b | genetyka bieżąca (L010 gotowa → L011…) | oceny w kl. 8; konkurs dopiero etap III | L010 gotowa |
 | B2 | człowiek + homeostaza (kl. 7) | etap rejonowy | [ ] |
+| B2-U04 | **Krążenie, krew i odporność** (pkt III.4–5) | etap rejonowy | **[V] gotowa 2026-10-11** — `biologia/bio/md/BIO.07.U04.krazenie_krew_odpornosc.md` (do W1); pozostałe układy: szkielety `olimpiada/do_uzupelnienia/OLI.BIO.B2*.md` |
+| B2-H01 | **Homeostaza** (pkt IV) | etap rejonowy | **[V] gotowa 2026-10-11** — `biologia/bio/md/BIO.07.H01.homeostaza.md` (do W1) |
+| B2-U01 | **Skóra i układ ruchu** (pkt III.1–2) | etap rejonowy | **[V] gotowa 2026-10-11** — `biologia/bio/md/BIO.07.U01.skora_i_uklad_ruchu.md` (do W1) |
+| B2-U03 | **Układ pokarmowy i odżywianie** (pkt III.3) | etap rejonowy | **[V] gotowa 2026-10-11** — `biologia/bio/md/BIO.07.U03.uklad_pokarmowy_i_odzywianie.md` (do W1) |
+| B2-U06 | **Oddychanie i wydalanie** (pkt III.6–7) | etap rejonowy | **[V] gotowa 2026-10-11** — `biologia/bio/md/BIO.07.U06.oddychanie_i_wydalanie.md` (do W1) |
+| B2-U08 | **Układ nerwowy i zmysły** (pkt III.8–9) | etap rejonowy | **[V] gotowa 2026-10-11** — `biologia/bio/md/BIO.07.U08.uklad_nerwowy_i_zmysly.md` (do W1) |
+| B2-U10 | **Układ dokrewny** (pkt III.10) | etap rejonowy | **[V] gotowa 2026-10-11** — `biologia/bio/md/BIO.07.U10.uklad_dokrewny.md` (do W1) |
 
 ## 3. Kolejka — później (oceny bieżące, kolejność szkolna kl. 8)
 - Chemia: (etap szkolny nie obejmuje organicznej) po solach → **węglowodory** (O01–O07, materiał `lekcje_md/O/CHE.05.O01-O07.weglowodory.md`) → pochodne węglowodorów (O08–O13) → substancje o znaczeniu biologicznym (O15–O20).

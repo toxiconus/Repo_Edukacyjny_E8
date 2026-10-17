@@ -1,0 +1,62 @@
+/* Styl klocków laboratoryjnych (palniki, probówki, układ okresowy) — dobrany do motywu che:
+   jasna karta lekcji (--surface), akcent --accent, tekst --text. Scena z płótnem zostaje ciemna
+   (płomienie i poświaty wyglądają na ciemnym tle), reszta jak w sekcjach lekcji. */
+:root{--lab:#0e2326;--lab-tekst:var(--text,#1a2332);--lab-cisza:var(--text-muted,#8892a0);--lab-linia:var(--border,#e5e9ee)}
+.lab{background:var(--surface,#fff);color:var(--text,#1a2332);border:1px solid var(--border,#e5e9ee);border-radius:var(--r-lg,14px);padding:16px;box-shadow:var(--sh-sm,none);font-family:var(--tekst,Inter,system-ui,sans-serif)}
+.lab-pasek{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between;margin-bottom:12px}
+.lab-pasek .btn{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+.lab-cisza{color:var(--text-muted,#8892a0);font-size:14px}
+.btn{appearance:none;cursor:pointer;border:1px solid var(--accent,#0d6868);background:var(--accent,#0d6868);color:#fff;border-radius:var(--r-md,10px);padding:8px 14px;font:600 13px var(--tekst,Inter,sans-serif)}
+.btn.jasny{background:var(--surface,#fff);color:var(--accent,#0d6868)}
+.btn:hover{filter:brightness(1.08)}
+.btn:focus-visible{outline:2px solid var(--accent,#0d6868);outline-offset:2px}
+.btn[disabled]{opacity:.4;cursor:not-allowed}
+.stacje{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.st{display:flex;flex-direction:column;background:none;border:none;padding:0;min-width:0}
+.st-opis{margin-top:auto;display:flex;flex-direction:column;justify-content:flex-end}
+.st canvas,.rack canvas{display:block;width:100%;height:auto;cursor:pointer;background:var(--lab,#0e2326);border-radius:var(--r-md,10px);margin:6px 0 4px}
+.rack{margin:0 auto}
+.rack-kol{display:grid;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));gap:8px}
+.rack-ce{padding:0 6px;min-width:0;display:flex;flex-direction:column}
+.rack-ce.st-opis{justify-content:flex-end}
+.rack .wyb-gr{display:none}
+.rack .rown{font-size:14px}
+.rack-ce .btn,.st .btn{padding:6px 10px;font-size:12px}
+.st-opis{font-size:14px;color:var(--text,#1a2332)}
+.st-opis p{margin:0 0 6px}
+.rown{font:600 15px var(--naglowek,Inter,sans-serif);color:var(--text,#1a2332)}
+.obs{font-size:14px;color:var(--text-soft,#4a5568)}
+.meta{font-size:12.5px;color:var(--text-muted,#8892a0);display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-bottom:8px}
+.meta .pasek{background:var(--border,#e5e9ee);width:90px;height:8px;display:inline-block;vertical-align:middle;margin-left:6px;border-radius:99px;overflow:hidden}
+.meta .pasek i{display:block;height:100%;background:var(--accent,#0d6868)}
+.ostrz{color:var(--c-error,#b83a45);font-size:13px}
+.zak{display:flex;gap:10px;align-items:center;background:var(--c-warn-bg,#fcf4e6);border:1px solid var(--c-warn-line,#eed8a8);border-radius:var(--r-md,10px);padding:8px 10px;font-size:13px;line-height:1.35;margin:8px 0;color:var(--text,#1a2332)}
+.zak-ik{display:flex;gap:4px;flex:none}
+.el .tr{position:absolute;right:2px;bottom:2px;display:flex}
+.sz{position:relative}
+.sz .tr{position:absolute;top:2px;right:2px;display:flex}
+.tr2{display:flex;font-style:normal;margin-left:auto}
+.kol{display:flex;align-items:center;gap:10px;font-size:15px;color:var(--text,#1a2332)}
+.sw{width:20px;height:20px;border-radius:50%;flex:none;box-shadow:0 0 12px var(--glow,transparent)}
+.sw.pusty{border:2px dashed var(--border-strong,#cdd5dd)}
+.wyb-sym{position:relative;min-width:0}
+.wyb-sym>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:6px;font:700 15px var(--naglowek,Inter,sans-serif);color:var(--text,#1a2332);padding:4px 8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-sm,6px);background:var(--surface,#fff)}
+.wyb-sym>summary::-webkit-details-marker{display:none}
+.wyb-tri{display:inline-block;font-size:11px;color:var(--accent,#0d6868);transition:transform .15s}
+.wyb-sym[open] .wyb-tri{transform:rotate(90deg)}
+.wyb-lista{display:grid;gap:6px;margin:6px 0 8px;padding:8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-md,10px);background:var(--surface,#fff)}
+.wyb-g{display:block;font-size:11px;color:var(--text-muted,#8892a0);margin-bottom:3px}
+.wyb-sy{appearance:none;cursor:pointer;border:1px solid var(--border-strong,#cdd5dd);background:var(--surface-soft,#f6f8fa);color:var(--text,#1a2332);border-radius:var(--r-sm,6px);padding:4px 9px;margin:0 4px 4px 0;font:600 13px var(--naglowek,Inter,sans-serif)}
+.wyb-sy[aria-pressed="true"]{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+/* telefon: kilka stojaków obok siebie — węższy tekst, łamanie długich nazw */
+.kol{min-width:0}
+.kol b{overflow-wrap:anywhere;min-width:0}
+.st-opis{font-size:13px}
+.kol{font-size:14px}
+.stacje{gap:8px}
+.rack-kol{gap:6px}
+@media (max-width:480px){.st-opis .obs{font-size:12.5px}.st .btn,.rack-ce .btn{padding:5px 8px;font-size:12px}}
+.seria-przyciski{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+.seria-btn[aria-pressed="false"]{background:transparent;color:var(--accent,#0d6868)}
+.seria-btn[aria-pressed="true"]{background:var(--accent,#0d6868);color:#fff}
+.seria-opis{margin:0 0 10px;font-size:14px;color:var(--lab-cisza,#8892a0)}

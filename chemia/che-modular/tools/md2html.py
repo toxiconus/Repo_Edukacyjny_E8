@@ -2,7 +2,7 @@
 """md → HTML lekcji CHE (format: SZABLON_LEKCJI.md).
 Użycie: python3 md2html.py md/N04_sole.md [...]   → dist/N04_sole.html (+ dist/index.html)
 Wspólne: engine/src/lekcja/lekcja.css, lekcja.js (wklejane do każdej lekcji), dist/che-viz.js (z modułów: tools/silnik.py)."""
-import os, re, sys, json, html as H
+import subprocess, os, re, sys, json, html as H
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MD = os.path.join(ROOT, 'lessons-md', 'gotowe')
@@ -391,11 +391,11 @@ def render(path):
     foot = ''
     if meta.get('stopka'):
         foot = '<footer class="footer">\n<p>%s</p>\n<p style="opacity:0.7;">Ucz się świadomie, nie na pamięć.</p>\n</footer>' % inline(meta['stopka'])
-    css = open(os.path.join(ROOT, 'engine', 'src', 'lekcja', 'lekcja.css'), encoding='utf-8').read()
+    css = open(os.path.join(ROOT, 'engine', 'src', 'lekcja', 'lekcja.css'), encoding='utf-8').read() + '\n' + open(os.path.join(ROOT, 'engine', 'src', 'lekcja', 'nawigacja.css'), encoding='utf-8').read()
     js = ''
     for dod in (os.path.join(ROOT, 'engine', 'src', 'komponenty'), os.path.join(ROOT, 'engine', 'src', 'dodatki')):   # komponenty wspólne z atlasem, potem dodatki
         js += ''.join(open(os.path.join(dod, f), encoding='utf-8').read() + '\n' for f in sorted(os.listdir(dod)) if f.endswith('.js')) if os.path.isdir(dod) else ''
-    js += open(os.path.join(ROOT, 'engine', 'src', 'lekcja', 'rozszerzenia.js'), encoding='utf-8').read() + '\n' + open(os.path.join(ROOT, 'engine', 'src', 'lekcja', 'lekcja.js'), encoding='utf-8').read()
+    js += open(os.path.join(ROOT, 'engine', 'src', 'lekcja', 'rozszerzenia.js'), encoding='utf-8').read() + '\n' + open(os.path.join(ROOT, 'engine', 'src', 'lekcja', 'lekcja.js'), encoding='utf-8').read() + '\n' + open(os.path.join(ROOT, 'engine', 'src', 'lekcja', 'nawigacja.js'), encoding='utf-8').read()
     own_css = '\n'.join(collect('styl', lines))
     doc = ('<!DOCTYPE html>\n<html lang="pl">\n<head>\n<meta charset="utf-8"/>\n<meta content="width=device-width,initial-scale=1.0" name="viewport"/>\n'
            '<title>%s · %s</title>\n<style id="che-lekcja-css">\n%s\n</style>\n%s</head>\n<body>\n'
@@ -433,6 +433,17 @@ if __name__ == '__main__':
     for p in args:
         meta, doc = render(p)
         fn = os.path.splitext(os.path.basename(p))[0]
+        # lekcja bez grafik silnika (@model/@zlewka/@viz): mini-strona bez che-viz.js (sama treść + mini-JS lekcji)
+        if not re.search(r'@(model|zlewka|viz)\b', open(p, encoding='utf-8').read()):
+            # wygląd ze wspólnego szablonu (narzedzia/lekcja_html.py) — jedna samodzielna strona, bez silnika
+            tmp = os.path.join(ROOT, 'dist', '_lekka'); os.makedirs(tmp, exist_ok=True)
+            subprocess.run([sys.executable, os.path.join(ROOT, '..', '..', 'narzedzia', 'lekcja_html.py'), '-p', 'che', '-o', tmp, p], check=True, stdout=subprocess.DEVNULL)
+            lekka = open(os.path.join(tmp, fn + '.html'), encoding='utf-8').read()
+            os.makedirs(os.path.join(ROOT, 'dist', 'jeden_plik'), exist_ok=True)
+            open(os.path.join(ROOT, 'dist', fn + '.html'), 'w', encoding='utf-8').write(lekka)
+            open(os.path.join(ROOT, 'dist', 'jeden_plik', fn + '.html'), 'w', encoding='utf-8').write(lekka)
+            metas.append((fn, meta)); print('ok lekka', fn, len(lekka))
+            continue
         pg = page(meta, doc, fn)
         open(os.path.join(ROOT, 'dist', fn + '.html'), 'w', encoding='utf-8').write(pg)
         # wersja jednoplikowa (telefon, e-mail): che-viz.js wklejony do środka

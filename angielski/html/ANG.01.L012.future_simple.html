@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="pl" data-przedmiot="ang">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>L012 · Future Simple ( will ) i be going to</title>
+<style id="lekcja-css">
+/* baza.css — wspólna baza lekcji wszystkich przedmiotów (styl lekcji silnika CHE v0_57). Nie edytować — zmiany wspólne w ulepszenia.css, przedmiotowe w motywy/<kod>.css. */
+
+
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+--bg:#fafbfc;--surface:#ffffff;--surface-soft:#f6f8fa;--surface-warm:#fdfaf4;--border:#e5e9ee;--border-strong:#cdd5dd;
+--text:#1a2332;--text-soft:#4a5568;--text-muted:#8892a0;--text-faint:#b4bcc6;
+--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,0.15);
+--c-basic:#2e7d4f;--c-basic-bg:#eaf6ee;--c-basic-line:#b8dcc4;
+--c-understand:#2b5e9c;--c-understand-bg:#eaf1f9;--c-understand-line:#bcd0e5;
+--c-warn:#b06f1c;--c-warn-bg:#fcf4e6;--c-warn-line:#eed8a8;
+--c-error:#b83a45;--c-error-bg:#fbeced;--c-error-line:#e8b5b9;
+--c-extra:#6b3fa0;--c-extra-bg:#f3ecfa;--c-extra-line:#d3bde8;
+--c-new:#0d7d7d;--c-new-bg:#e6f4f4;--c-new-line:#b0dcdc;
+--c-exam:#a86a00;--c-exam-bg:#fdf5e0;--c-exam-line:#eed49c;
+--sh-sm:0 1px 2px rgba(26,35,50,0.04);--sh-md:0 4px 12px rgba(26,35,50,0.06);--sh-lg:0 12px 32px rgba(26,35,50,0.10);--sh-xl:0 20px 48px rgba(26,35,50,0.14);
+--r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;
+--header-h:56px;
+--ease:cubic-bezier(0.4,0,0.2,1);--ease-out:cubic-bezier(0.16,1,0.3,1);
+--hl-key:#0d6868;--hl-key-bg:#d8ecea;--hl-warn:#b83a45;--hl-warn-bg:#fbe0e2;--hl-new:#6b3fa0;--hl-new-bg:#ede0f8;--hl-formula:#084848;--hl-formula-bg:#e0eeed;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;padding:calc(var(--header-h) + 12px) 0 88px;min-height:100vh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+@media(min-width:600px){body{padding:calc(var(--header-h) + 18px) 12px 96px;}}
+@media(min-width:768px){body{padding:calc(var(--header-h) + 24px) 20px 100px;}}
+@media(min-width:1100px){body{padding:calc(var(--header-h) + 28px) 32px 110px;}}
+.fab{position:fixed;top:12px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);background:rgba(255,255,255,0.94);color:var(--text);cursor:pointer;border-radius:var(--r-md);padding:0;transition:all 0.2s var(--ease);z-index:1200;box-shadow:var(--sh-sm);backdrop-filter:blur(8px);}
+.fab:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);box-shadow:var(--sh-md);transform:translateY(-1px);}
+.fab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.fab-left{left:6px;}.fab-right{right:6px;}
+@media(min-width:600px){.fab-left{left:10px;}.fab-right{right:10px;}}
+@media(min-width:768px){.fab-left{left:14px;}.fab-right{right:14px;}}
+.fab-left::after{content:'';width:16px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;border-radius:1px;transition:transform 0.25s var(--ease);}
+.fab-left.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.fab-left.is-open::after{width:16px;height:2px;background:currentColor;box-shadow:none;transform:rotate(45deg);}
+.fab-left.is-open::before{content:'';position:absolute;width:16px;height:2px;background:currentColor;transform:rotate(-45deg);border-radius:1px;}
+.fab-right::after{content:'';display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:8px solid currentColor;transition:transform 0.35s var(--ease-out);}
+.fab-right.is-hidden::after{transform:rotate(0deg);}
+.fab-right:not(.is-hidden)::after{transform:rotate(180deg);}
+.header-wrapper{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);transform:translateY(0);transition:transform 0.45s var(--ease-out),box-shadow 0.3s var(--ease);box-shadow:var(--sh-sm);}
+.header-wrapper.is-hidden{transform:translateY(-100%);box-shadow:none;}
+.header-bar{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:0 16px;height:var(--header-h);}
+@media(min-width:768px){.header-bar{padding:0 24px;}}
+.header-subject{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:1px;padding:4px 10px;background:var(--accent-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;}
+.header-title{font-size:15px;font-weight:700;color:var(--text);letter-spacing:-0.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1 1 auto;min-width:0;}
+.header-lesson{font-size:10px;font-weight:800;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.7px;padding:4px 9px;background:var(--surface-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;font-family:'JetBrains Mono',monospace;}
+.header-nav{display:flex;gap:2px;flex-shrink:0;align-items:center;}
+.header-nav a,.header-nav button{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;border-radius:var(--r-sm);font-size:16px;font-weight:500;transition:all 0.2s var(--ease);border:1px solid transparent;background:transparent;cursor:pointer;padding:0;font-family:inherit;}
+.header-nav a:hover,.header-nav button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.header-resume-btn.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.header-resume-btn::before{content:'▮';font-size:14px;line-height:1;}
+.header-panel{display:none;border-top:1px solid var(--border);background:linear-gradient(180deg,var(--surface) 0%,var(--surface-soft) 100%);padding:20px 16px 24px;}
+@media(min-width:768px){.header-panel{padding:24px 24px 28px;}}
+.header-panel.is-open{display:block;}
+.header-panel-inner{max-width:900px;margin:0 auto;}
+.header-kicker{font-size:11px;color:var(--text-muted);text-transform:uppercase;font-weight:800;letter-spacing:1px;margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.header-kicker::before{content:'';width:24px;height:2px;background:var(--accent);display:inline-block;border-radius:1px;}
+.header-h1{font-size:32px;font-weight:800;color:var(--text);letter-spacing:-1px;margin-bottom:10px;line-height:1.1;}
+.header-subtitle{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:18px;max-width:720px;}
+.header-modes{display:flex;gap:6px;flex-wrap:wrap;}
+.mode-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 15px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);font-family:inherit;}
+.mode-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
+.mode-btn:hover:not(.active){background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.resume-dropdown{display:none;position:fixed;top:calc(var(--header-h) + 6px);right:14px;z-index:1050;width:min(300px,calc(100vw - 30px));padding:14px;border:1px solid var(--border-strong);border-radius:12px;background:#fff;box-shadow:var(--sh-lg);}
+.resume-dropdown.is-open{display:block;}
+.resume-dropdown h4{margin:0 0 5px;color:var(--text);font-size:.85rem;}
+.resume-dropdown p{margin:0 0 12px;color:var(--text-muted);font-size:.75rem;line-height:1.5;}
+.resume-actions{display:flex;gap:6px;}
+.resume-actions button{flex:1;padding:8px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text-soft);font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.resume-actions .resume-save{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toc-overlay{position:fixed;inset:0;background:rgba(26,35,50,0.34);backdrop-filter:blur(3px);z-index:1100;opacity:0;visibility:hidden;transition:opacity 0.3s var(--ease),visibility 0.3s var(--ease);}
+.toc-overlay.is-visible{opacity:1;visibility:visible;}
+.toc-wrapper{position:fixed;left:0;top:0;width:320px;max-width:86vw;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:1150;transform:translateX(-100%);transition:transform 0.4s var(--ease-out);padding-top:64px;box-shadow:var(--sh-xl);}
+.toc-wrapper.is-open{transform:translateX(0);}
+.toc-content{padding:12px 14px 100px;}
+.toc-header{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);padding:4px 12px 12px;}
+.toc-item{margin-bottom:4px;border-radius:var(--r-md);overflow:hidden;}
+.toc-summary{padding:10px 12px;font-size:13px;font-weight:700;color:var(--text);cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;border-radius:var(--r-sm);transition:background 0.2s var(--ease),color 0.2s var(--ease);user-select:none;}
+.toc-summary:hover{background:var(--accent-soft);color:var(--accent);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::marker{content:'';}
+.toc-summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);opacity:0.5;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);opacity:1;}
+.toc-links{padding:4px 0 8px 28px;display:flex;flex-direction:column;gap:1px;}
+.toc-link{display:block;padding:6px 10px;font-size:12.5px;color:var(--text-soft);text-decoration:none;border-radius:4px;transition:all 0.2s var(--ease);border-left:2px solid transparent;}
+.toc-link:hover{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);}
+.container{max-width:820px;margin:0 auto;background:var(--surface);border-radius:0;box-shadow:none;padding:18px 12px;border:none;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+@media(min-width:600px){.container{border-radius:var(--r-lg);box-shadow:var(--sh-md);border:1px solid var(--border);padding:22px 18px;}}
+@media(min-width:768px){.container{padding:36px 36px;border-radius:var(--r-xl);}}
+@media(min-width:1100px){.container{max-width:840px;padding:40px 40px;}}
+h1,h2,h3,h4,h5{font-weight:800;color:var(--text);letter-spacing:-0.3px;line-height:1.3;}
+h2{font-size:24px;margin-top:44px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+h3{font-size:17px;margin-top:32px;margin-bottom:12px;font-weight:800;}
+h4{font-size:15px;margin-top:24px;margin-bottom:10px;font-weight:800;}
+h5{font-size:13px;margin-top:16px;margin-bottom:8px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-soft);}
+p{margin-bottom:12px;}
+ul,ol{padding-left:24px;margin-bottom:14px;}
+li{margin-bottom:6px;padding-left:4px;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s var(--ease);}
+a:hover{border-bottom-color:var(--accent);}
+strong{font-weight:700;color:var(--text);}
+.hl{background:var(--hl-key-bg);color:var(--hl-key);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-warn{background:var(--hl-warn-bg);color:var(--hl-warn);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-new{background:var(--hl-new-bg);color:var(--hl-new);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.formula{display:inline-block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:14px;font-weight:600;color:var(--hl-formula);background:var(--hl-formula-bg);padding:4px 12px;border-radius:var(--r-sm);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:3px 2px;white-space:nowrap;}
+.formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
+code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
+pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
+.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
+.mnemonic b{color:#78350f;}
+.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
+@media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
+.card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
+.card-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:10px;padding:3px 9px;background:var(--accent-soft);border-radius:4px;}
+.card-core{background:var(--accent-soft);border-color:var(--accent-line);border-left-color:var(--accent);}
+.card-basic{background:var(--c-basic-bg);border-color:var(--c-basic-line);border-left-color:var(--c-basic);}
+.card-basic .card-label{background:rgba(46,125,79,0.12);color:var(--c-basic);}
+.card-understand{background:var(--c-understand-bg);border-color:var(--c-understand-line);border-left-color:var(--c-understand);}
+.card-understand .card-label{background:rgba(43,94,156,0.12);color:var(--c-understand);}
+.card-warning{background:var(--c-warn-bg);border-color:var(--c-warn-line);border-left-color:var(--c-warn);}
+.card-warning .card-label{background:rgba(176,111,28,0.12);color:var(--c-warn);}
+.card-error{background:var(--c-error-bg);border-color:var(--c-error-line);border-left-color:var(--c-error);}
+.card-error .card-label{background:rgba(184,58,69,0.12);color:var(--c-error);}
+.card-extra{background:var(--c-extra-bg);border-color:var(--c-extra-line);border-left-color:var(--c-extra);}
+.card-extra .card-label{background:rgba(107,63,160,0.12);color:var(--c-extra);}
+.card-new{background:var(--c-new-bg);border-color:var(--c-new-line);border-left-color:var(--c-new);}
+.card-new .card-label{background:rgba(13,125,125,0.12);color:var(--c-new);}
+.card-exam{background:var(--c-exam-bg);border-color:var(--c-exam-line);border-left-color:var(--c-exam);}
+.card-exam .card-label{background:rgba(168,106,0,0.12);color:var(--c-exam);}
+.card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0;}
+details.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent-line);border-radius:var(--r-sm);padding:10px 14px;margin:10px 0;transition:all 0.2s var(--ease);}
+details.answer[open]{background:var(--accent-soft);border-left-color:var(--accent);}
+details.answer summary{cursor:pointer;font-weight:700;color:var(--text-soft);font-size:13px;list-style:none;user-select:none;display:flex;align-items:center;gap:10px;transition:color 0.2s var(--ease);}
+details.answer summary::-webkit-details-marker{display:none;}
+details.answer summary::marker{content:'';}
+details.answer summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer[open] summary{color:var(--accent);}
+details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}
+.part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}
+@media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}
+.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
+@media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}
+.table-wrap th,.table-wrap td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px;}
+@media(min-width:600px){.table-wrap th,.table-wrap td{padding:10px 12px;font-size:13.5px;}}
+.table-wrap th{background:var(--surface-soft);font-weight:800;color:var(--text-soft);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;}
+@media(min-width:600px){.table-wrap th{font-size:11px;letter-spacing:0.7px;white-space:nowrap;}}
+.table-wrap.table-compact td,.table-wrap.table-compact th{padding:7px 6px;font-size:12.5px;}
+.table-wrap tr:last-child td{border-bottom:none;}
+.table-wrap tr:hover td{background:var(--accent-soft);}
+.table-wrap .error-row{background:var(--c-error-bg);}
+.table-wrap .ok-row{background:var(--c-basic-bg);}
+.def-list{display:flex;flex-direction:column;gap:8px;margin:14px 0;}
+.def-item{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px 16px;}
+.def-item dt{font-weight:800;color:var(--text);font-size:13.5px;margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+.def-item dt::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;}
+.def-item dd{color:var(--text-soft);font-size:13.5px;line-height:1.6;margin:0;padding-left:11px;}
+.minimum-card{background:linear-gradient(135deg,var(--surface-soft) 0%,var(--accent-soft) 100%);border:1px solid var(--accent-line);border-radius:var(--r-lg);padding:20px 22px;margin:8px 0 28px;box-shadow:var(--sh-sm);position:relative;overflow:hidden;}
+@media(min-width:768px){.minimum-card{padding:28px 34px;margin-bottom:36px;}}
+.minimum-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:var(--accent);}
+.minimum-card h3{color:var(--accent);margin:0 0 16px;font-size:16px;letter-spacing:0.2px;display:flex;align-items:center;gap:10px;}
+.minimum-card h3::before{content:'★';font-size:16px;}
+.minimum-card ol{margin:0;padding-left:0;list-style:none;counter-reset:min-list;}
+.minimum-card li{counter-increment:min-list;padding-left:36px;position:relative;margin-bottom:12px;font-size:14px;line-height:1.6;}
+.minimum-card li::before{content:counter(min-list);position:absolute;left:0;top:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--surface);color:var(--accent);border:2px solid var(--accent-line);border-radius:50%;font-size:12px;font-weight:800;}
+.minimum-card li:last-child{margin-bottom:0;}
+.level-badge{display:inline-block;font-size:9.5px;font-weight:800;text-transform:uppercase;padding:2px 9px;border-radius:12px;vertical-align:middle;letter-spacing:0.5px;line-height:1.6;margin-left:8px;}
+.level-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.level-understand{background:var(--c-understand-bg);color:var(--c-understand);}
+.level-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.level-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.level-new{background:var(--c-new-bg);color:var(--c-new);}
+.rule-box{background:var(--c-understand-bg);border:1px solid var(--c-understand-line);border-radius:var(--r-md);padding:14px 18px;margin:14px 0;font-size:14px;line-height:1.65;}
+.rule-box b{color:var(--c-understand);}
+.step-flow{background:var(--text);color:#fff;padding:16px 18px;border-radius:var(--r-md);font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:12.5px;line-height:1.9;margin:14px 0;overflow-x:auto;white-space:pre;}
+@media(min-width:768px){.step-flow{font-size:13.5px;padding:16px 20px;}}
+.footer{margin-top:56px;padding-top:24px;border-top:2px solid var(--border);text-align:center;font-size:12.5px;color:var(--text-muted);letter-spacing:0.2px;}
+.footer p{margin-bottom:4px;}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:6px;border:2px solid var(--bg);}
+::-webkit-scrollbar-thumb:hover{background:var(--text-muted);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.bottom-nav{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:1100;width:min(700px,calc(100vw - 24px));font-size:.78rem;}
+.bottom-nav__toggle{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;padding:8px 14px;border:1px solid var(--border-strong);border-radius:999px;background:rgba(255,255,255,.97);color:var(--text-soft);font:700 .72rem inherit;box-shadow:0 5px 18px rgba(15,23,42,.14);cursor:pointer;backdrop-filter:blur(10px);font-family:inherit;}
+.bottom-nav__panel{display:none;margin-bottom:7px;padding:10px;border:1px solid var(--border-strong);border-radius:14px;background:rgba(255,255,255,.98);box-shadow:0 10px 28px rgba(15,23,42,.16);backdrop-filter:blur(12px);}
+.bottom-nav.is-open .bottom-nav__panel{display:block;}
+.bottom-nav__primary{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.bottom-nav a,.bottom-nav button.nav-more{min-height:36px;display:flex;align-items:center;justify-content:center;padding:6px 8px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--text-soft);text-decoration:none;font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.bottom-nav a:hover,.bottom-nav button.nav-more:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+@media(max-width:420px){
+  .bottom-nav{font-size:.7rem;width:calc(100vw - 12px);}
+  .bottom-nav a,.bottom-nav button.nav-more{padding:6px 4px;font-size:.65rem;}
+}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
+.widget{background:var(--surface);border:2px solid var(--border);border-radius:var(--r-md);padding:14px;margin:14px 0;box-shadow:var(--sh-sm);}
+@media(min-width:768px){.widget{padding:22px 26px;margin:20px 0;border-radius:var(--r-lg);}}
+.widget h4{margin:0 0 8px;color:var(--text);font-size:15px;font-weight:800;}
+@media(min-width:768px){.widget h4{font-size:16px;}}
+.widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
+.bld-pool{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.bld-pool button{padding:6px 12px;border:1px solid var(--border);border-radius:20px;background:#fff;font:600 0.8rem inherit;cursor:pointer;font-family:inherit;color:var(--text);}
+.bld-pool button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bld-workspace{min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;}
+.bld-feedback,.re-result,.st-feedback,.ch-feedback{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;line-height:1.5;}
+.bld-feedback.ok,.re-result.ok,.st-feedback.ok,.ch-feedback.ok{background:var(--c-basic-bg);color:var(--c-basic);border:1px solid var(--c-basic-line);}
+.bld-feedback.bad,.re-result.bad,.st-feedback.bad,.ch-feedback.bad{background:var(--c-error-bg);color:var(--c-error);border:1px solid var(--c-error-line);}
+.bld-feedback.info,.re-result.info,.st-feedback.info,.ch-feedback.info{background:var(--c-understand-bg);color:var(--c-understand);border:1px solid var(--c-understand-line);}
+.bld-feedback.warn,.re-result.warn,.st-feedback.warn,.ch-feedback.warn{background:var(--c-warn-bg);color:var(--c-warn);border:1px solid var(--c-warn-line);}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);color:var(--text);font-family:inherit;}
+.btn:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent);}
+.btn-primary:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+.btn-sm{padding:6px 10px;font-size:12px;}
+.flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}
+@media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--border);border-radius:var(--r-md);background:#fff;color:var(--text);font:inherit;text-align:center;cursor:pointer;box-shadow:var(--sh-sm);transition:all 0.2s var(--ease);position:relative;font-family:inherit;}
+.flashcard:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-3px);box-shadow:var(--sh-md);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:90px;}
+.flashcard .front{font-weight:700;font-size:14.5px;line-height:1.5;}
+.flashcard .back{display:none;color:var(--text-soft);font-size:13.5px;line-height:1.6;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:8px;right:8px;font-size:9px;text-transform:uppercase;background:var(--surface-soft);padding:2px 8px;border-radius:10px;color:var(--text-muted);font-weight:800;letter-spacing:0.4px;}
+.flashcard .card-tag.tag-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.flashcard .card-tag.tag-error{background:var(--c-error-bg);color:var(--c-error);}
+.flashcard .card-tag.tag-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.flashcard .card-tag.tag-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.checklist{background:#fff;border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.checklist h4{color:var(--c-basic);margin:0 0 12px;font-size:15px;}
+.checklist ul{list-style:none;padding-left:0;margin:0;}
+.checklist li{padding:7px 0;font-size:13.5px;border-bottom:1px dashed var(--c-basic-line);display:flex;align-items:flex-start;gap:10px;line-height:1.55;}
+.checklist li:last-child{border-bottom:none;}
+.checklist li::before{content:'☐';color:var(--c-basic);font-weight:700;font-size:1.15rem;flex-shrink:0;line-height:1.2;}
+.core-path{background:linear-gradient(135deg,var(--c-basic-bg) 0%,#dcefe2 100%);border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:800;color:var(--c-basic);font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.core-path .cp-title::before{content:'▶';font-size:12px;}
+.core-path ol{margin:0;padding-left:22px;}
+.core-path li{margin-bottom:6px;font-size:13.5px;line-height:1.6;}
+.audit-panel{background:var(--surface-soft);border:2px solid var(--border-strong);border-radius:var(--r-lg);padding:16px 18px;margin:16px 0;}
+.audit-panel h4{margin:0 0 12px;color:var(--text);}
+.audit-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px;}
+@media(min-width:600px){.audit-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}}
+.audit-item{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:10px 12px;font-size:12.5px;line-height:1.55;}
+.mini-note{font-size:12.5px;color:var(--text-muted);font-style:italic;margin-top:8px;line-height:1.55;}
+.layer-legend{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:12px 14px;margin:12px 0;display:grid;grid-template-columns:1fr;gap:8px 18px;}
+@media(min-width:600px){.layer-legend{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;}}
+.layer-legend .layer-row{display:flex;gap:10px;align-items:center;font-size:12.5px;line-height:1.5;}
+.layer-legend .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.e8{background:var(--c-basic);}
+.layer-legend .dot.understand{background:var(--c-understand);}
+.layer-legend .dot.extra{background:var(--c-extra);}
+.layer-legend .dot.contest{background:var(--c-warn);}
+.klinika-table td.col-blad{color:var(--c-error);font-weight:700;}
+.klinika-table td.col-blad::before{content:'✕ ';font-weight:900;margin-right:4px;color:var(--c-error);}
+.klinika-table td.col-ok{color:var(--c-basic);font-weight:700;}
+.klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}
+.map-card{position:relative;}
+.map-expand-btn{position:absolute;top:10px;right:10px;z-index:3;padding:6px 12px;border:1px solid var(--accent-line);background:rgba(255,255,255,0.95);color:var(--accent);border-radius:var(--r-sm);font-size:12px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:var(--sh-sm);transition:all 0.15s var(--ease);}
+.map-expand-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.map-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(26,35,50,0.85);backdrop-filter:blur(6px);}
+.map-overlay.is-open{display:block;}
+.map-overlay-inner{position:absolute;inset:12px;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-xl);}
+.map-overlay-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface-soft);gap:8px;flex-wrap:wrap;}
+.map-overlay-title{font-weight:800;font-size:14px;color:var(--text);}
+.map-overlay-actions{display:flex;gap:6px;}
+.map-overlay-actions button{padding:6px 12px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;color:var(--text-soft);transition:all 0.15s var(--ease);}
+.map-overlay-actions button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.map-overlay-actions .map-close{background:var(--c-error);color:#fff;border-color:var(--c-error);}
+.map-overlay-canvas{flex:1;overflow:hidden;position:relative;background:#fff;cursor:grab;touch-action:none;}
+.map-overlay-canvas svg{display:block;position:absolute;top:0;left:0;transform-origin:0 0;}
+@media print{
+.fab,.toc-wrapper,.toc-overlay,.header-wrapper,.bottom-nav,.resume-dropdown,.map-overlay,.map-expand-btn{display:none !important;}
+body{padding:0;background:#fff;}
+.container{box-shadow:none;border:none;padding:0;max-width:100%;}
+details.answer{page-break-inside:avoid;}
+details.answer > *:not(summary){display:block !important;}
+details.answer summary{display:none;}
+.card{page-break-inside:avoid;}
+.widget{page-break-inside:avoid;}
+}
+@media (prefers-reduced-motion: reduce){
+*{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+html{scroll-behavior:auto;}
+}
+html,body{max-width:100%;overflow-x:hidden;}
+.table-scroll-hint{display:none;align-items:center;justify-content:space-between;gap:8px;padding:7px 11px;margin-top:0;margin-bottom:8px;border:1px solid var(--border);border-bottom:0;border-radius:var(--r-sm) var(--r-sm) 0 0;background:var(--surface-soft);color:var(--text-muted);font-size:11px;font-weight:700;}
+.table-wrap.is-scrollable + .table-scroll-hint{display:flex;}
+.table-scroll-hint .scroll-arrow{font-size:13px;letter-spacing:2px;color:var(--accent);}
+.timeline-anim{border-color:var(--c-understand-line);}
+.ta-stage{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 14px;min-height:280px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.ta-scene{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;animation:taFade 0.6s ease-out;width:100%;}
+@keyframes taFade{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.ta-scene .ta-year{font-size:1.7rem;font-weight:800;color:var(--accent);font-family:'JetBrains Mono',monospace;letter-spacing:1px;}
+.ta-scene .ta-who{font-size:1.05rem;font-weight:800;color:var(--text);}
+.ta-scene .ta-desc{font-size:13.5px;color:var(--text-soft);max-width:600px;line-height:1.65;}
+.ta-dots{display:flex;justify-content:center;gap:8px;margin:14px 0 8px;}
+.ta-dot{width:12px;height:12px;border-radius:50%;background:var(--border-strong);border:2px solid transparent;cursor:pointer;padding:0;transition:all 0.2s var(--ease);}
+.ta-dot.active{background:var(--accent);transform:scale(1.25);box-shadow:0 0 0 3px var(--accent-glow);}
+.ta-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;}
+.ta-nav{padding:8px 14px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-weight:700;color:var(--text-soft);cursor:pointer;font-size:12.5px;transition:all 0.15s var(--ease);}
+.ta-nav:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.ta-progress{font-size:12.5px;color:var(--text-muted);font-weight:700;font-family:'JetBrains Mono',monospace;}
+.eq-player{background:linear-gradient(180deg,#f8fafc,#eef6f5);border:2px solid var(--accent-line);border-radius:var(--r-lg);padding:16px 18px;margin:14px 0;}
+.eq-stage{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.15rem;padding:12px;background:#fff;border-radius:var(--r-md);border:1px solid var(--border);}
+.eq-term{display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border);opacity:0;}
+.eq-term.show{opacity:1;animation:reaction-flow 0.7s ease-out;}
+.eq-term.reactant{background:#e0f2fe;border-color:#7dd3fc;color:#0c4a6e;}
+.eq-term.product{background:#dcfce7;border-color:#86efac;color:#14532d;}
+.eq-arrow{opacity:0;color:var(--accent);font-size:1.4rem;}
+.eq-arrow.show{opacity:1;}
+.eq-balance{margin-top:10px;font-size:13px;color:var(--text-soft);display:none;}
+.eq-balance.show{display:block;}
+@keyframes reaction-flow{0%{opacity:.25;transform:scale(.92)}55%{opacity:1}100%{opacity:1;transform:scale(1)}}
+.ion-assembly{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;padding:18px 12px;background:#fff;border:1px solid var(--border);border-radius:var(--r-md);margin:10px 0;}
+.ion-chip{padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid var(--border);}
+.ion-chip.cation{background:#e0f2fe;border-color:#38bdf8;color:#0c4a6e;}
+.ion-chip.anion{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.ion-chip.product{background:#dcfce7;border-color:#4ade80;color:#14532d;}
+.ion-plus,.ion-join{font-size:1.4rem;font-weight:800;color:var(--text-muted);}
+.hero{max-width:900px;margin:0 auto 22px;padding:26px;border:1px solid var(--border);border-radius:var(--r-xl);background:linear-gradient(135deg,#fff,var(--accent-soft));box-shadow:var(--sh-md);}
+.hero h1{font-size:clamp(32px,6vw,52px);margin:4px 0 8px;}
+.hero-kicker{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--accent);text-transform:uppercase;}
+.lead{font-size:16px;color:var(--text-soft);max-width:720px;}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;}
+.page{max-width:900px;margin:0 auto;}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+@media(max-width:720px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px;}
+.metric-grid>div,.result-card,.step-card{padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);}
+.metric-grid b{display:block;font-size:10px;text-transform:uppercase;color:var(--text-muted);}
+.metric-grid strong{display:block;margin-top:3px;}
+@media(max-width:700px){.metric-grid{grid-template-columns:1fr;}}
+.controls,.button-grid{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;}
+.controls button,.button-grid button,.quiz-opt{padding:8px 12px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;cursor:pointer;}
+.particle-stage{height:120px;display:flex;align-items:center;justify-content:center;gap:70px;border:1px dashed var(--border-strong);border-radius:10px;margin-top:12px;}
+.particle{font-size:30px;font-weight:800;}
+.p-h3o{color:var(--accent);}
+.p-cl{color:#b83a45;}
+.ph-scale{display:flex;justify-content:space-between;margin-top:6px;font:700 11px 'JetBrains Mono',monospace;}
+.buffer-tank{height:28px;border:1px solid var(--border-strong);border-radius:999px;overflow:hidden;margin:14px 0;background:var(--surface-soft);}
+#bufferFill{height:100%;width:100%;background:var(--accent);transition:width .2s;}
+.quiz-wrap{margin:16px 0;}
+.quiz-q{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:14px 16px;margin-bottom:12px;}
+.quiz-q h5{margin:0 0 10px;font-size:14.5px;color:var(--text);text-transform:none;letter-spacing:0;line-height:1.45;}
+.quiz-q .q-tag{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:10px;margin-bottom:8px;background:var(--surface-soft);color:var(--text-muted);}
+.quiz-opts{display:flex;flex-direction:column;gap:8px;}
+.quiz-opt{display:block;width:100%;text-align:left;padding:10px 12px;border:2px solid var(--border);border-radius:var(--r-sm);background:#fff;font:inherit;font-size:13.5px;cursor:pointer;transition:all 0.15s var(--ease);color:var(--text);}
+.quiz-opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft);}
+.quiz-opt.correct{border-color:var(--c-basic);background:var(--c-basic-bg);color:var(--c-basic);font-weight:700;}
+.quiz-opt.wrong{border-color:var(--c-error);background:var(--c-error-bg);color:var(--c-error);}
+.quiz-opt:disabled{cursor:default;opacity:0.95;}
+.quiz-fb{margin-top:8px;font-size:13px;line-height:1.5;display:none;padding:8px 10px;border-radius:var(--r-sm);}
+.quiz-fb.show{display:block;}
+.quiz-fb.ok{background:var(--c-basic-bg);color:var(--c-basic);}
+.quiz-fb.bad{background:var(--c-error-bg);color:var(--c-error);}
+.quiz-score{text-align:center;padding:14px;background:var(--surface-soft);border-radius:var(--r-md);margin-top:16px;font-weight:800;color:var(--accent);display:none;}
+.quiz-score.show{display:block;}
+.lab-bridge{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 28px;padding:14px 16px;border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);background:linear-gradient(135deg,var(--surface-soft),var(--accent-soft));}
+.lab-bridge strong{display:block;color:var(--accent-dark);}
+.lab-bridge span{display:block;margin-top:3px;color:var(--text-soft);font-size:13px;}
+.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;}
+.lab-bridge-btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
+@media(max-width:600px){.lab-bridge{align-items:flex-start;flex-direction:column;}.lab-bridge-btn{width:100%;text-align:center;}}
+.exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}
+.exp-card h5{margin:0 0 10px;color:var(--c-basic);font-size:14px;text-transform:none;letter-spacing:0;}
+.exp-grid{display:grid;grid-template-columns:1fr;gap:6px;font-size:13.5px;line-height:1.55;}
+@media(min-width:600px){.exp-grid{grid-template-columns:110px 1fr;}}
+.exp-grid b{color:var(--text-soft);font-size:11px;text-transform:uppercase;letter-spacing:0.4px;}
+
+.js-reveal .card:not(.in),.js-reveal .widget:not(.in){opacity:0;transform:translateY(14px)}
+.js-reveal .card,.js-reveal .widget{transition:opacity .55s var(--ease),transform .55s var(--ease)}
+
+
+.ion-svg{width:100%;height:auto;display:block;background:radial-gradient(ellipse at 50% 40%,#fff,var(--surface-soft));border:1px solid var(--border);border-radius:var(--r-md);margin-top:10px}
+.ion-svg .mv{transition:transform .9s cubic-bezier(.65,0,.35,1);transform-box:fill-box}
+.ion-svg text{font-family:'JetBrains Mono',monospace;font-weight:800;text-anchor:middle;dominant-baseline:central}
+.ion-svg .fade{opacity:0;transition:opacity .6s ease .35s}
+.ion-svg[data-s="1"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="1"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="1"] .d1,.ion-svg[data-s="2"] .d1{opacity:1}
+.ion-svg[data-s="2"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="2"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="2"] .proton{transform:translate(120px,-40px)}
+.ion-svg[data-s="2"] .arrow{opacity:1}
+.ion-svg[data-s="3"] .g-hcl{transform:translateX(10px)}
+.ion-svg[data-s="3"] .g-w{transform:translateX(-10px)}
+.ion-svg[data-s="3"] .proton{transform:translate(230px,-38px)}
+.ion-svg[data-s="3"] .d3{opacity:1}
+.ion-svg[data-s="3"] .glow{animation:ionGlow 1.6s ease-in-out infinite}
+@keyframes ionGlow{0%,100%{filter:drop-shadow(0 0 2px rgba(13,104,104,.3))}50%{filter:drop-shadow(0 0 10px rgba(13,104,104,.8))}}
+
+
+.ph-bar{position:relative;height:18px;border-radius:999px;margin:10px 0 4px;border:1px solid var(--border-strong);
+background:linear-gradient(90deg,#e5262e 0%,#ef5a28 14%,#f6a21e 28%,#d7d93a 43%,#5cb85c 50%,#21a89a 57%,#2f7fc1 71%,#4a4bb5 86%,#6b2d8f 100%)}
+.ph-marker{position:absolute;top:-6px;width:0;height:0;left:0;transform:translateX(-50%);transition:left .35s var(--ease)}
+.ph-marker::before{content:'';position:absolute;left:-7px;top:0;border:7px solid transparent;border-top:10px solid var(--text)}
+.ph-marker::after{content:attr(data-v);position:absolute;left:0;top:-22px;transform:translateX(-50%);background:var(--text);color:#fff;font:800 11px 'JetBrains Mono',monospace;padding:2px 6px;border-radius:5px;white-space:nowrap}
+.ph-flask{display:inline-block;width:22px;height:22px;border-radius:0 0 8px 8px;border:2px solid var(--text-soft);vertical-align:middle;margin-right:6px;transition:background .35s}
+
+
+.titr-wrap{position:relative}
+#titrationCanvas{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--r-md);background:#fff}
+.titr-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.titr-row input[type=range]{flex:1 1 200px}
+.titr-flask{width:34px;height:42px;border:2px solid var(--text-soft);border-radius:2px 2px 12px 12px;transition:background .3s;flex-shrink:0;position:relative}
+.titr-flask::after{content:'';position:absolute;left:-2px;right:-2px;top:-8px;height:6px;border:2px solid var(--text-soft);border-bottom:0;border-radius:3px 3px 0 0}
+
+
+.buffer-tank{position:relative;height:34px}
+#bufferFill{transition:width .4s var(--ease),background .4s;background-size:28px 28px;background-image:linear-gradient(45deg,rgba(255,255,255,.22) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.22) 75%,transparent 75%)}
+.buffer-tank.pulse{animation:bufPulse .45s ease}
+.buffer-tank.dead{animation:bufDead .5s ease 2}
+@keyframes bufPulse{50%{transform:scale(1.02);box-shadow:0 0 0 4px var(--accent-glow)}}
+@keyframes bufDead{50%{box-shadow:0 0 0 4px rgba(184,58,69,.35)}}
+
+
+.rx-stage{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:12px 0;padding:14px;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md)}
+.rx-beaker{position:relative;width:120px;height:150px;border:3px solid var(--text-soft);border-top:0;border-radius:0 0 18px 18px;background:rgba(255,255,255,.55);overflow:visible;flex-shrink:0}
+.rx-liquid{position:absolute;left:0;right:0;bottom:0;height:100px;border-radius:0 0 14px 14px;background:rgba(220,235,240,.65);transition:background 2.2s ease}
+.rx-solid{position:absolute;left:36px;bottom:2px;width:48px;height:24px;border-radius:40% 40% 8px 8px;opacity:0;transition:height 3.5s ease,opacity .5s,transform 3.5s ease}
+.rx-bubbles,.rx-precip,.rx-fumes{position:absolute;left:0;right:0;bottom:0;height:150px;pointer-events:none;overflow:hidden}
+.rx-fumes{overflow:visible;bottom:100px;height:70px}
+.rx-b{position:absolute;bottom:14px;border-radius:50%;background:rgba(255,255,255,.85);border:1px solid rgba(13,104,104,.45);animation:rxRise 2.2s ease-in forwards}
+@keyframes rxRise{to{transform:translate(var(--dx,0),-92px);opacity:0}}
+.rx-p{position:absolute;top:50px;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #cbd5e1;animation:rxFall 2.4s ease-in forwards}
+@keyframes rxFall{to{transform:translateY(90px)}}
+.rx-cloud{position:absolute;bottom:0;left:6px;right:6px;height:0;background:#fff;border-radius:10px 10px 0 0;box-shadow:0 0 0 1px #e2e8f0;transition:height 4s ease;opacity:.95}
+.rx-f{position:absolute;bottom:0;width:26px;height:26px;border-radius:50%;background:rgba(150,75,20,.55);filter:blur(7px);animation:rxFume 3s ease-out forwards}
+@keyframes rxFume{to{transform:translate(var(--dx,0),-70px) scale(2.2);opacity:0}}
+
+
+.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.rx-label{flex:1 1 200px;font-size:13px;color:var(--text-soft);line-height:1.5}
+.rx-label b{color:var(--text);font-family:'JetBrains Mono',monospace}
+@media print{.js-reveal .card,.js-reveal .widget{opacity:1!important;transform:none!important}}
+
+
+/* ulepszenia.css — warstwa wspólna nad baza.css: pasek lekcji, postęp czytania, spis z podświetleniem,
+   tryb ciemny, komponenty wspólne (mity, drzewo, cytat, dialog, słówka, figura), druk, dostępność.
+   Kolejność w lekcji: baza.css → ulepszenia.css → motywy/<przedmiot>.css. Edytuj tylko tutaj. */
+
+:root{--header-h:52px;--serif:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Charter,Georgia,serif}
+
+/* ---------- pasek lekcji (zamiast nagłówka aplikacji) ---------- */
+.lk-bar{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 12px;
+  background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--border)}
+.lk-subj{flex:none;display:inline-flex;align-items:center;gap:7px;font:800 12.5px/1 Inter,system-ui,sans-serif;color:var(--accent);text-decoration:none;
+  padding:6px 10px 6px 8px;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+.lk-subj i{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+.lk-title{flex:1;min-width:0;font:600 13px/1.25 Inter,system-ui,sans-serif;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lk-btn{flex:none;min-width:36px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);background:var(--surface);
+  color:var(--text);border-radius:9px;padding:0 10px;font:700 12.5px Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+.lk-btn:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.lk-prog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
+@media (max-width:520px){.lk-title{display:none}.lk-bar{justify-content:space-between}}
+
+/* ---------- nagłówek lekcji ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+.hero::after{content:"";position:absolute;inset:-10% -6% -10% 52%;z-index:-1;opacity:.12;pointer-events:none;background:var(--motyw-wzor,none) right center/auto 100% repeat-y}
+.hero h1{text-wrap:balance}
+.hero-kicker{color:var(--accent);text-transform:none;letter-spacing:0;font-size:13px}
+.page{padding:0 16px}
+.lk-btn svg{width:16px;height:16px;display:block}
+.lk-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:12.5px;color:var(--text-muted)}
+.lk-meta b{color:var(--text-soft);font-weight:700}
+
+/* ---------- spis treści: aktywna sekcja ---------- */
+@media (min-width:800px){.toc-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));column-gap:12px}}
+.toc-link.on{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);font-weight:700}
+section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
+
+/* ---------- komponenty wspólne ---------- */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:12px 0}
+.myth-head{grid-column:1/-1;font-weight:800;font-size:14px}
+.myth{border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow:hidden}
+.myth p{margin:0;padding:9px 12px;font-size:13.5px;line-height:1.5}
+.myth p span{display:block;font:800 11px Inter,system-ui;margin-bottom:2px}
+.myth-x{background:var(--c-error-bg)}.myth-x span{color:var(--c-error)}.myth-ok span{color:var(--c-basic)}
+
+.lk-tree{margin:12px 0;font-size:14px;overflow-x:auto}
+.lk-tree ul{list-style:none;margin:0;padding-left:18px}.lk-tree>ul{padding-left:0}
+.lk-tree li{position:relative;padding:3px 0 3px 14px}
+.lk-tree ul ul li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--accent-line)}
+.lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
+.lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
+.lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+
+/* cytat z tekstu (lektura, źródło, wypowiedź) */
+.lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
+.lk-quote blockquote{margin:0;font:400 17px/1.65 var(--serif);color:var(--text)}
+.lk-quote blockquote p{margin:0 0 6px;color:inherit}
+.lk-quote figcaption{margin-top:6px;font-size:12.5px;color:var(--text-muted)}
+
+/* dialog (role A/B, rozmowa, scenka) */
+.lk-dialog{margin:14px 0;display:flex;flex-direction:column;gap:8px}
+.lk-line{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.lk-who{min-width:30px;height:30px;padding:0 8px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font:800 12px Inter,system-ui;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line)}
+.lk-line.b .lk-who{background:var(--surface-soft);color:var(--text-soft);border-color:var(--border)}
+.lk-say{padding:8px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font-size:14.5px;line-height:1.55}
+.lk-say small{display:block;color:var(--text-muted);font-size:12.5px;margin-top:2px}
+
+/* słówka: wyraz — znaczenie — przykład */
+.lk-vocab{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.lk-vocab th{text-align:left;font-size:12px;color:var(--text-muted);font-weight:700;padding:6px 10px;border-bottom:2px solid var(--border)}
+.lk-vocab td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+.lk-vocab td:first-child{font-weight:800;color:var(--accent);white-space:nowrap}
+.lk-vocab td:last-child{color:var(--text-soft);font-style:italic}
+@media (max-width:560px){.lk-vocab thead{display:none}.lk-vocab tr{display:block;padding:8px 0;border-bottom:1px solid var(--border)}
+  .lk-vocab td{display:block;border:0;padding:1px 4px}}
+
+/* figura z biblioteki grafik przedmiotu */
+.lk-fig{margin:16px 0;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);overflow:hidden}
+.lk-fig figcaption{padding:9px 14px;border-top:1px solid var(--border);background:var(--surface-soft);font-size:13px;line-height:1.5;color:var(--text-soft)}
+.lk-fig figcaption b{color:var(--text);margin-right:4px}
+.lk-fig-body{padding:12px}
+.lk-fig svg{display:block;width:100%;height:auto}
+
+/* z chemii (lekcja.css): treści akademickie, plakietki */
+details.adv{border:1px dashed var(--c-warn-line,#eed8a8);border-radius:10px;background:var(--surface-soft,#f6f8fa);margin:10px 0;padding:0 12px}details.adv>summary{cursor:pointer;font-weight:700;color:var(--c-warn,#b06f1c);padding:9px 0;list-style:none}details.adv>summary::-webkit-details-marker{display:none}details.adv>summary::before{content:"▸ "}details.adv[open]>summary::before{content:"▾ "}.adv-tag{font-weight:600;font-size:11px;opacity:.75;margin-left:6px}.adv-body{padding:0 0 10px;font-size:13.5px;line-height:1.6}.adv-body table{font-size:12.5px}.adv-toggle{margin-top:10px;border:1px solid var(--c-warn-line,#eed8a8);background:var(--c-warn-bg,#fcf4e6);color:var(--c-warn,#b06f1c);border-radius:999px;padding:6px 12px;font:700 12px Inter,system-ui,sans-serif;cursor:pointer}.bio-tag{display:inline-block;font:800 10px Inter,system-ui;letter-spacing:.04em;padding:2px 7px;border-radius:99px;background:rgba(46,125,79,.12);color:#2e7d4f;margin-left:6px;vertical-align:middle}.v15{display:inline-block;font:800 9.5px Inter,system-ui;padding:1px 6px;border-radius:99px;background:rgba(13,125,125,.12);color:#0d7d7d;margin-left:6px;vertical-align:middle}@media print{details.adv{display:block}details.adv>.adv-body{display:block}}
+/* z chemii (lekcja.css): telefon, tabele */
+.exp-card{min-width:0;max-width:100%;box-sizing:border-box}.exp-grid>*{min-width:0;overflow-wrap:anywhere}
+@media (max-width:600px){.exp-grid{grid-template-columns:minmax(0,1fr)!important}.exp-grid>b{margin-top:4px}}
+.table-wrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+
+/* klinika błędów (::: klinika) — tabela, na telefonie karty */
+.klinika-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden}
+.klinika-table th{text-align:left;padding:9px 12px;background:var(--surface-soft);color:var(--text-soft);font-size:12px;font-weight:800;border-bottom:1px solid var(--border)}
+.klinika-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.klinika-table tr:last-child td{border-bottom:0}
+@media (max-width:600px){.klinika-table thead{display:none}.klinika-table tr{display:block;padding:8px 12px;border-bottom:1px solid var(--border)}
+  .klinika-table td{display:block;border:0;padding:2px 0}.klinika-table td:not(.col-blad):not(.col-ok){color:var(--text-soft)}}
+
+.lk-pre{margin:12px 0;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-soft);overflow-x:auto;font:12.5px/1.55 ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;color:var(--text-soft);white-space:pre}
+.lk-pre code{font:inherit;background:none;padding:0;color:inherit}
+.lk-hr{border:0;border-top:1px solid var(--border);margin:28px 0}
+
+/* ---------- dostępność ---------- */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;z-index:60;background:var(--surface);color:var(--accent);padding:8px 12px;border-radius:8px}
+.skip-link:focus{left:8px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- tryb ciemny: automatycznie albo przyciskiem (data-theme) ---------- */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme=dark]{
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}
+/* elementy bazy z białym tłem na sztywno */
+html[data-ciemny] :is(.flashcard,.checklist,.audit-item,.layer-legend,.quiz-q,.quiz-opt,.btn,.controls button,.eq-stage,.ion-assembly,.bld-workspace,.bld-pool button,.resume-dropdown,.ta-nav){background:var(--surface);color:var(--text)}
+html[data-ciemny] .hero{background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.active,.step-flow){color:var(--bg)}
+@media (max-width:600px){.hero::after{opacity:.07}}
+
+/* ---------- druk ---------- */
+@media print{
+  .lk-bar,.adv-toggle,.toc-item,.fab,.bottom-nav{display:none!important}
+  body{padding:0;background:#fff;color:#000}
+  .hero::after{display:none}.hero{background:none;box-shadow:none}
+  details.adv,details.answer{display:block}details>*{display:block}
+  .card,.minimum-card,.lk-fig,.myth,.quiz-q{break-inside:avoid;box-shadow:none}
+  a{color:inherit;text-decoration:none}
+}
+
+/* === Dopracowanie czytelności (2026-10-11; z wersji „ulepszonej” U03 użytkownika, uogólnione na wszystkie przedmioty, zgodne z trybem ciemnym) === */
+body{line-height:1.74}
+main{isolation:isolate}
+.hero{border-color:var(--accent-line)}
+.hero::before{content:"";position:absolute;right:-42px;top:-56px;width:180px;height:180px;z-index:-1;pointer-events:none;
+ border:1px solid var(--accent-line);border-radius:50%;opacity:.45;
+ box-shadow:0 0 0 22px var(--accent-glow),0 0 0 44px var(--accent-glow)}
+.part-heading{padding:0 0 12px;border-bottom:1px solid var(--border);align-items:flex-start}
+.part-num{margin-top:1px}
+section[id]{scroll-margin-top:calc(var(--header-h,56px) + 20px)}
+section p{max-width:78ch}
+section ul,section ol{padding-left:1.35rem}
+.card,.exp-card,.widget,.table-wrap{box-shadow:0 2px 8px rgba(24,49,59,.045)}
+.table-wrap{max-width:100%}
+.table-wrap table{line-height:1.55}
+.table-wrap td strong{color:var(--text)}
+.table-wrap tbody tr:nth-child(even) td{background:var(--surface-soft)}
+.table-wrap tbody tr:hover td{background:var(--accent-soft)}
+.mini-note{max-width:80ch}
+:is(button,a,summary,[tabindex]):focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:520px){.hero{padding:20px 16px}.part-heading{font-size:19px;gap:11px}
+ .table-wrap table{font-size:12.5px}.table-wrap th,.table-wrap td{padding:8px 9px}}
+@media(hover:none){.card:hover,.flashcard:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media print{.hero::before{display:none}.card,.exp-card,.table-wrap{break-inside:avoid;box-shadow:none}}
+
+/* fiszki: część ukryta do rozwinięcia (lekcja.js); przy druku — wszystkie */
+.flashcard[hidden]{display:none!important}
+.fz-more{display:block;width:100%;margin:-6px 0 18px;padding:12px 16px;border:2px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent;color:var(--text,#1d2a30);font-family:inherit;font-weight:600;font-size:15px;line-height:1.3;cursor:pointer;text-align:center}
+.fz-more:hover,.fz-more:focus-visible{background:var(--surface-2,rgba(0,0,0,.04))}
+@media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
+.quiz-q[hidden]{display:none!important}
+@media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
+
+/* motyw ang (Język angielski) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#2a4d9b;--accent-dark:#1b336a;--accent-soft:#e9eef9;--accent-line:#c4d1ee;--accent-glow:rgba(42,77,155,.15);--hl-key:#2a4d9b;--hl-key-bg:#dfe7f7;--hl-formula:#1b336a;--hl-formula-bg:#e9eef9;--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 130 200%27%3E%3Cg fill=%27none%27 stroke=%27%232a4d9b%27 stroke-width=%274%27 stroke-linejoin=%27round%27%3E%3Cpath d=%27M14 14h80a10 10 0 0 1 10 10v34a10 10 0 0 1-10 10H48l-18 16V68H14A10 10 0 0 1 4 58V24a10 10 0 0 1 10-10z%27/%3E%3Cpath d=%27M40 106h76a10 10 0 0 1 10 10v30a10 10 0 0 1-10 10h-12v16l-18-16H40a10 10 0 0 1-10-10v-30a10 10 0 0 1 10-10z%27/%3E%3C/g%3E%3Cg fill=%27%232a4d9b%27%3E%3Ccircle cx=%2736%27 cy=%2741%27 r=%275%27/%3E%3Ccircle cx=%2754%27 cy=%2741%27 r=%275%27/%3E%3Ccircle cx=%2772%27 cy=%2741%27 r=%275%27/%3E%3C/g%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#8fb0f0;--accent-dark:#c3d4f8;--accent-soft:#18223a;--accent-line:#33466e;--accent-glow:rgba(143,176,240,.2);--hl-key:#a9c2f4;--hl-key-bg:#1d2a46;--hl-formula:#c3d4f8;--hl-formula-bg:#18223a;}}
+:root[data-theme=dark]{--accent:#8fb0f0;--accent-dark:#c3d4f8;--accent-soft:#18223a;--accent-line:#33466e;--accent-glow:rgba(143,176,240,.2);--hl-key:#a9c2f4;--hl-key-bg:#1d2a46;--hl-formula:#c3d4f8;--hl-formula-bg:#18223a;}
+
+/* wyrażenie po angielsku w tekście polskim i wymowa */
+.en{font-style:italic;font-weight:600;color:var(--accent)}
+.ipa{font-family:var(--serif);font-size:.95em;color:var(--text-muted);white-space:nowrap}
+.ipa::before{content:"/"}.ipa::after{content:"/"}
+/* wzór zdania: podmiot + operator + czasownik */
+.wzor{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:10px 0}
+.wzor span{padding:5px 10px;border-radius:8px;border:1px solid var(--accent-line);background:var(--accent-soft);font-weight:700;font-size:14px}
+.wzor span.op{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.wzor b{color:var(--text-muted);font-weight:700}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+<header class="lk-bar"><span class="lk-subj"><i></i>Język angielski</span><span class="lk-title">L012 Future Simple ( will ) i be going to</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<main class="page" id="main">
+<section class="hero card"><div class="hero-kicker">Język angielski, lekcja L012</div><h1>Future Simple ( will ) i be going to</h1><p class="lead">Egzamin ósmoklasisty · kompleksowe przygotowanie — Lekcja 12 – przyszłość: will, be going to, Present Continuous, Present Simple</p><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#spis-tresci">Spis treści</a><a class="toc-link" href="#cel-test">1. Cel lekcji i test wstępny</a><a class="toc-link" href="#wyklad">2. Wykład — cztery szuflady przyszłości</a><a class="toc-link" href="#will">3. Will — spontaniczne decyzje, obietnice, przewidywania</a><a class="toc-link" href="#be-going-to">4. Be going to — plany i przewidywania z dowodami</a><a class="toc-link" href="#porownanie">5. Porównanie will vs be going to</a><a class="toc-link" href="#present-continuous">6. Present Continuous dla ustalonych planów</a><a class="toc-link" href="#present-simple">7. Present Simple dla rozkładów i harmonogramów</a><a class="toc-link" href="#when-if">8. Po when, if, as soon as — Present Simple, nie will</a><a class="toc-link" href="#dla-ambitnych">9. Dla ambitnych — was/were going to i shall</a><a class="toc-link" href="#slownictwo">10. Słownictwo — plany, marzenia, pogoda, podróże</a><a class="toc-link" href="#cwiczenia">11. Ćwiczenia</a><a class="toc-link" href="#misja">12. Test końcowy – MISJA</a><a class="toc-link" href="#faq">13. FAQ – najczęstsze wątpliwości</a><a class="toc-link" href="#klinika">14. Klinika błędów — najczęstsze błędy</a><a class="toc-link" href="#olimpijska">15. Warstwa olimpijska — dla olimpijczyka</a><a class="toc-link" href="#test">16. Test — pytania zamknięte</a><a class="toc-link" href="#fiszki">17. Fiszki</a><a class="toc-link" href="#slownik">18. Słownik</a><a class="toc-link" href="#ciekawostki">19. Ciekawostki</a></nav></details>
+<section id="spis-tresci">
+<div class="part-heading">Spis treści</div>
+<p>Słownictwo: plany · marzenia · pogoda · podróże (Słownik — sekcja 18)</p>
+<p>W tej lekcji: 1 Cel lekcji i test wstępny · 2 Wykład — cztery szuflady przyszłości · 3 Will · 4 Be going to · 5 Porównanie will vs be going to · 6 Present Continuous dla ustalonych planów · 7 Present Simple dla rozkładów · 8 Po when, if, as soon as — Present Simple · 9 Dla ambitnych: was/were going to i shall · 10 Słownictwo · 11 Ćwiczenia · 12 Test końcowy – MISJA · 13 FAQ · 14 Klinika błędów · 15 Warstwa olimpijska · 16 Test — pytania zamknięte · 17 Fiszki · 18 Słownik · 19 Ciekawostki</p>
+</section>
+<section id="cel-test">
+<div class="part-heading"><span class="part-num">1</span> Cel lekcji i test wstępny</div>
+<div class="card card-basic">
+<span class="card-label">Po tej lekcji będziesz potrafić</span>
+<ul>
+<li>rozróżniać <strong>will</strong> i <strong>be going to</strong> w zależności od kontekstu,</li>
+<li>używać <strong>will</strong> do spontanicznych decyzji, obietnic i przewidywań opartych na opinii,</li>
+<li>używać <strong>be going to</strong> do planów i przewidywań opartych na dowodach,</li>
+<li>stosować <strong>Present Continuous</strong> dla ustalonych planów,</li>
+<li>stosować <strong>Present Simple</strong> dla rozkładów i harmonogramów,</li>
+<li>unikać typowych błędów Polaków na egzaminie E8.</li>
+</ul>
+</div>
+<h3>Zanim zaczniesz – szybki test</h3>
+<p>Rozwiąż test samodzielnie, a następnie sprawdź odpowiedzi. Zapisz swój wynik i wróć do tych samych pytań po zakończeniu lekcji.</p>
+<ol>
+<li>I think it ______ rain tomorrow. (will / going to)</li>
+<li>Look at those clouds! It ______ rain. (will / is going to)</li>
+<li>Popraw: <em>I will to help you.</em></li>
+<li>Uzupełnij: <em>The train ______ at 8.</em> (leaves / is going to leave)</li>
+<li>Uzupełnij: <em>I ______ to study medicine.</em> (plan)</li>
+<li>Uzupełnij: <em>I ______ call you later.</em> (obietnica)</li>
+<li>Popraw: <em>I meet my friend tomorrow.</em> (ustalony plan)</li>
+</ol>
+<details class="answer"><summary>Odpowiedź</summary>
+<ol>
+<li><strong>will</strong> – przewidywanie oparte na opinii (<em>I think</em>)</li>
+<li><strong>is going to</strong> – przewidywanie oparte na dowodach (<em>Look at those clouds!</em>)</li>
+<li><strong>I will help you.</strong> (po will bezokolicznik bez <em>to</em>)</li>
+<li><strong>leaves</strong> – rozkład → Present Simple</li>
+<li><strong>am going to</strong> – wcześniejszy plan</li>
+<li><strong>will</strong> – obietnica</li>
+<li><strong>I am meeting my friend tomorrow.</strong> (ustalony plan → Present Continuous)</li>
+</ol>
+</details>
+<h3>Lista kontrolna</h3>
+<checklista>
+<ul>
+<li>[ ] Rozróżniam will i be going to.</li>
+<li>[ ] Używam will do spontanicznych decyzji, obietnic i opinii.</li>
+<li>[ ] Używam be going to do planów i przewidywań z dowodami.</li>
+<li>[ ] Stosuję Present Continuous dla ustalonych planów.</li>
+<li>[ ] Stosuję Present Simple dla rozkładów i harmonogramów.</li>
+<li>[ ] Po will i po going to daję bezokolicznik bez to.</li>
+<li>[ ] Po when, if, as soon as używam Present Simple, nie will.</li>
+</ul>
+</checklista>
+</section>
+<section id="wyklad">
+<div class="part-heading"><span class="part-num">2</span> Wykład — cztery szuflady przyszłości</div>
+<p>W języku angielskim istnieje kilka sposobów mówienia o przyszłości. Wybór zależy od tego, jak patrzymy na przyszłe wydarzenie.</p>
+<div class="card card-basic">
+<span class="card-label">Najważniejsza zasada</span>
+<p>Nie ucz się: will = przyszłość. Ucz się: will = spontaniczna decyzja / obietnica / opinia.</p>
+<p>Nie ucz się: be going to = przyszłość. Ucz się: be going to = wcześniejszy plan / dowód.</p>
+</div>
+<p>Wyobraź sobie, że plany na przyszłość zapisujesz w czterech różnych miejscach — a każde miejsce wymaga innej konstrukcji.</p>
+<p>Pierwsze miejsce to twoja GŁOWA — i to decyzja, która rodzi się TERAZ, w trakcie rozmowy. Kelnar pyta: <em>What would you like?</em> A ty po raz pierwszy w tej chwili podejmujesz decyzję: <em>I'll have the steak.</em> Niczego takiego nie było w planach — przyszłość powstała w tej sekundzie. Tak samo działa obietnica (<em>I promise I'll call you</em>), oferta (<em>I'll help you</em>) i przewidywanie oparte na opinii (<em>I think it will rain</em> — myślę, sądzę, wierzę; nie widzę dowodu). Do tego wszystkiego służy <strong>WILL</strong>.</p>
+<p>Drugie miejsce to NOTATNIK — decyzja, która zapadła WCZEŚNIEJ. Zanim wstałeś dziś rano, już wiedziałeś: <em>I'm going to visit my grandma.</em> Zamiar, plan, intencja — to <strong>BE GOING TO</strong>. Do tej szuflady należy też przewidywanie oparte na DOWODZIE: widzisz ciemne chmury (<em>Look at those clouds!</em>) albo koleżankę przechylającą się na krześle (<em>She's going to fall!</em>) — dowód jest teraz, więc mówisz going to, nawet jeśli decyzja nie jest twoja.</p>
+<p>Trzecie miejsce to KALENDARZ Z GODZINĄ. Plan przeszedł drogę od zamiaru do ustalenia: umówiłeś się, kupiłeś bilet, spisałeś godzinę — <em>I'm meeting her at 6 p.m.</em> <strong>PRESENT CONTINUOUS</strong> dla przyszłości zawsze chce konkretnego kontekstu: <em>at 6, tomorrow, on Saturday</em>. Bez niego to samo zdanie znaczy „robimy to teraz".</p>
+<p>Czwarte miejsce to TABLICA ROZKŁADÓW — i tu jesteś tylko widzem. Pociąg, film, lekcje, samolot: to nie twój plan, tylko obiektywny harmonogram, który obowiązuje wszystkich tak samo. <em>The train leaves at 8. The film starts at 9. School finishes at 3 p.m.</em> <strong>PRESENT SIMPLE</strong> dla przyszłości brzmi dziwnie tylko na początku: rozkład to rodzaj faktu, a fakty mówimy w Present Simple.</p>
+<p>Z tego układu wynikają trzy pytania, które rozwiązują niemal każde zadanie egzaminacyjne. <strong>PYTANIE 1: KIEDY zapadła decyzja?</strong> Teraz → will; wcześniej → be going to. <strong>PYTANIE 2: CO stoi za przewidywaniem?</strong> Opinia i przypuszczenie (<em>I think, probably, I'm sure</em>) → will; widoczny dowód → be going to. <strong>PYTANIE 3: CZYJ to plan?</strong> Twój, ustalony z drugą osobą → Present Continuous; plan instytucji (przewoźnika, kina, szkoły) → Present Simple.</p>
+<p>Do tego dwie reguły techniczne. Po will i po going to czasownik stoi w formie podstawowej <strong>BEZ to</strong>: <em>I will help</em> (nie: will to help), <em>I'm going to study</em> (nie: going to to study). Przeczenie will to <strong>won't</strong> (will not). A pułapka zbierająca najwięcej punktów: słowo <strong>tomorrow NIE decyduje</strong> o konstrukcji — decyduje znaczenie zdania (zobacz sekcję 5).</p>
+<p>Na koniec reguła, którą zna każdy, kto zdał egzamin: w części zdania po <strong>when, if, as soon as, until, before i after</strong> przyszłość (will) nie występuje — <em>I'll call you when I arrive</em>, nigdy „when I will arrive". Przyszłość mieszka tylko w jednej połowie zdania — tej głównej (sekcja 8).</p>
+<div class="lk-tree"><ul><li><span>Jak mówić o przyszłości?</span><ul><li><span>Czy to rozkład / harmonogram (pociąg, film, szkoła)?</span><ul><li><span>tak → Present Simple (The train leaves at 8)</span></li></ul></li><li><span>Czy masz ustalony plan z godziną lub miejscem?</span><ul><li><span>tak → Present Continuous (I'm meeting her at 6)</span></li></ul></li><li><span>Czy decyzja zapadła wcześniej (plan) albo widzisz dowód?</span><ul><li><span>tak → be going to (I'm going to study)</span></li></ul></li><li><span>Czy decyzja rodzi się teraz, to obietnica albo opinia?</span><ul><li><span>tak → will (I'll help you / I think it will rain)</span></li></ul></li></ul></li></ul></div>
+<wskazowki>
+<ul>
+<li><strong>Cztery miejsca planu:</strong> głowa (decyzja teraz) → will; notatnik (plan wcześniej) → going to; kalendarz z godziną → Present Continuous; tablica rozkładów → Present Simple.</li>
+<li><strong>WILL i GOING TO bez TO</strong> — po obu bezokolicznik bez „to" (I will help / I'm going to help).</li>
+<li><strong>Chmury = going to</strong> — „Look at those clouds!" to zaproszenie do obejrzenia dowodu → be going to.</li>
+<li><strong>Obiecanki-cancanki, a w nich will</strong> — I promise… zawsze łączy się z will.</li>
+<li><strong>WILL ZNIKA po when i if</strong> — I'll call you when I arrive; po spójnikach czasu i warunku Present Simple.</li>
+<li><strong>Pakuj walizkę:</strong> I'm flying tomorrow — bilet kupiony, walizka spakowana = Present Continuous (ustalenie).</li>
+</ul>
+</wskazowki>
+</section>
+<section id="will">
+<div class="part-heading"><span class="part-num">3</span> Will — spontaniczne decyzje, obietnice, przewidywania</div>
+<h3>Spontaniczne decyzje</h3>
+<p>Decyzje podjęte w chwili mówienia, niezaplanowane wcześniej.</p>
+<ul>
+<li><em>spontaniczna</em> — <strong>I will have the steak.</strong> — Poproszę stek. (decyzja w restauracji)</li>
+<li><em>spontaniczna</em> — <strong>I will open the window.</strong> — Otworzę okno. (decyzja podjęta teraz)</li>
+<li><em>spontaniczna</em> — <strong>Wait, I will help you.</strong> — Czekaj, pomogę ci. (oferta w danym momencie)</li>
+</ul>
+<h3>Obietnice i oferty</h3>
+<ul>
+<li><em>obietnica</em> — <strong>I will call you later.</strong> — Zadzwonię do ciebie później.</li>
+<li><em>obietnica</em> — <strong>I promise I will be on time.</strong> — Obiecuję, że będę na czas.</li>
+<li><em>oferta</em> — <strong>I will help you with your homework.</strong> — Pomogę ci z zadaniem domowym.</li>
+</ul>
+<h3>Przewidywania oparte na opinii / przypuszczeniu</h3>
+<p>Gdy przewidujemy coś na podstawie własnej opinii, a nie widocznych dowodów.</p>
+<ul>
+<li><em>opinia</em> — <strong>I think it will rain tomorrow.</strong> — Myślę, że jutro będzie padać.</li>
+<li><em>opinia</em> — <strong>She will probably come.</strong> — Ona prawdopodobnie przyjdzie.</li>
+<li><em>opinia</em> — <strong>I'm sure you will pass the exam.</strong> — Jestem pewien, że zdasz egzamin.</li>
+</ul>
+<div class="card card-basic">
+<span class="card-label">Will – budowa</span>
+<div class="table-wrap"><table>
+<thead><tr><th>Rodzaj</th><th>Budowa</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td><strong>Twierdzenie</strong></td><td>podmiot + will + czasownik</td><td><em>I will help you.</em></td></tr>
+<tr><td><strong>Przeczenie</strong></td><td>podmiot + will not / won't + czasownik</td><td><em>She won't come.</em></td></tr>
+<tr><td><strong>Pytanie</strong></td><td>Will + podmiot + czasownik?</td><td><em>Will you be there?</em></td></tr>
+</tbody></table></div>
+<p><strong>ZAPAMIĘTAJ:</strong> Po <em>will</em> używamy formy podstawowej czasownika <strong>bez TO</strong>! ✓ <em>I will help.</em> — ✗ <em>I will to help.</em></p>
+</div>
+</section>
+<section id="be-going-to">
+<div class="part-heading"><span class="part-num">4</span> Be going to — plany i przewidywania z dowodami</div>
+<h3>Wcześniejsze plany i zamiary</h3>
+<p>Plany, które podjęliśmy przed momentem mówienia.</p>
+<ul>
+<li><em>plan</em> — <strong>I am going to visit my grandma.</strong> — Odwiedzę moją babcię. (mam to zaplanowane)</li>
+<li><em>plan</em> — <strong>She is going to study medicine.</strong> — Ona będzie studiować medycynę. (jej plan)</li>
+<li><em>plan</em> — <strong>We are going to buy a new car.</strong> — Kupimy nowy samochód. (już to zaplanowaliśmy)</li>
+</ul>
+<h3>Przewidywania oparte na dowodach</h3>
+<p>Gdy widzimy coś, co wskazuje na przyszłe wydarzenie.</p>
+<ul>
+<li><em>dowód</em> — <strong>Look at those clouds! It is going to rain.</strong> — Spójrz na te chmury! Będzie padać.</li>
+<li><em>dowód</em> — <strong>She is going to fall!</strong> — Ona zaraz spadnie!</li>
+<li><em>dowód</em> — <strong>The car is going to crash!</strong> — Samochód się rozbije!</li>
+</ul>
+<div class="card card-basic">
+<span class="card-label">Be going to – budowa</span>
+<div class="table-wrap"><table>
+<thead><tr><th>Rodzaj</th><th>Budowa</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td><strong>Twierdzenie</strong></td><td>podmiot + am/is/are + going to + czasownik</td><td><em>I am going to study.</em></td></tr>
+<tr><td><strong>Przeczenie</strong></td><td>podmiot + am/is/are + not + going to + czasownik</td><td><em>She isn't going to come.</em></td></tr>
+<tr><td><strong>Pytanie</strong></td><td>Am/Is/Are + podmiot + going to + czasownik?</td><td><em>Are you going to buy it?</em></td></tr>
+</tbody></table></div>
+<p><strong>ZAPAMIĘTAJ:</strong> Po <em>going to</em> używamy formy podstawowej czasownika — jedno „to"! ✓ <em>I'm going to study.</em> — ✗ <em>I'm going to to study.</em></p>
+</div>
+</section>
+<section id="porownanie">
+<div class="part-heading"><span class="part-num">5</span> Porównanie will vs be going to</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Kryterium</th><th>WILL</th><th>BE GOING TO</th></tr></thead>
+<tbody>
+<tr><td><strong>Decyzja</strong></td><td>spontaniczna, podjęta teraz</td><td>wcześniejsza, zaplanowana</td></tr>
+<tr><td><strong>Przewidywanie</strong></td><td>oparte na opinii, przypuszczeniu</td><td>oparte na widocznych dowodach</td></tr>
+<tr><td><strong>Przykład</strong></td><td><em>Wait, I'll help you.</em></td><td><em>I've saved money. I'm going to buy a car.</em></td></tr>
+<tr><td><strong>Przykład (przyszłość)</strong></td><td><em>I think it will snow.</em></td><td><em>Look! It's going to snow.</em></td></tr>
+</tbody></table></div>
+<div class="card card-warning">
+<span class="card-label">PUŁAPKA</span>
+<p>Nie wybieraj konstrukcji tylko po słowie <em>tomorrow</em> – decyduje <strong>znaczenie</strong> zdania!</p>
+<ul>
+<li><strong>Will you help me tomorrow?</strong> — Czy pomożesz mi jutro? (prośba)</li>
+<li><strong>I am going to visit my grandma tomorrow.</strong> — Jutro zamierzam odwiedzić babcię. (plan)</li>
+<li><strong>I am meeting her tomorrow at 6.</strong> — Spotykam się z nią jutro o 6. (ustalony plan)</li>
+<li><strong>The train leaves tomorrow at 8.</strong> — Pociąg odjeżdża jutro o 8. (rozkład)</li>
+</ul>
+</div>
+<nie-myl>
+<p><strong>will vs be going to</strong> — test rozstrzygający: kiedy zapadła decyzja i czy widać powód? Decyzja w chwili mówienia albo obietnica/opinia (<em>I think, probably, I promise</em>) → <strong>will</strong>. Decyzja wcześniejsza albo widoczny dowód (<em>Look at…!</em>, <em>Watch out!</em>) → <strong>be going to</strong>. Nie kieruj się słowem tomorrow — ono niczego nie przesądza.</p>
+</nie-myl>
+<div class="card card-understand">
+<span class="card-label">W skrócie — test jednej sekundy</span>
+<p>Zastanów się, kiedy decyzja wpisała się do twojej głowy. Jeśli <strong>w trakcie mówienia</strong> — will: <em>Wait, I'll help you.</em> Jeśli <strong>przed</strong> — be going to: <em>I'm going to visit my grandma.</em> Przy przewidywaniach dodaj drugi test: czy widzisz powód? Chmury, przechylająca się szklanka → going to. Tylko przeczucie (<em>I think, probably, I'm sure</em>) → will. Pamiętaj, że to tendencje, nie żelazne prawo: <em>I think it's going to rain</em> też jest poprawne. Na egzaminie trzymaj się sygnałów: I think / probably / I promise → will; Look at…! / Watch out! → going to.</p>
+</div>
+<regula>
+<p>Spontaniczna decyzja / obietnica / opinia → will. Wcześniejszy plan / widoczny dowód → be going to. Ustalenie z godziną lub miejscem → Present Continuous. Rozkład i harmonogram → Present Simple. Po when, if, as soon as, until, before, after → Present Simple.</p>
+</regula>
+</section>
+<section id="present-continuous">
+<div class="part-heading"><span class="part-num">6</span> Present Continuous dla ustalonych planów</div>
+<p>Gdy mamy <strong>ustalony plan</strong> z konkretną godziną lub miejscem.</p>
+<ul>
+<li><em>ustalony plan</em> — <strong>I am meeting her at 6.</strong> — Spotykam się z nią o 6.</li>
+<li><em>ustalony plan</em> — <strong>We are having dinner at 8.</strong> — Mamy kolację o 8.</li>
+<li><em>ustalony plan</em> — <strong>She is flying to London tomorrow.</strong> — Leci do Londynu jutro.</li>
+</ul>
+<div class="card card-basic">
+<span class="card-label">Różnica</span>
+<ul>
+<li><strong>I'm going to visit my grandma.</strong> → ogólny plan, brak konkretnej godziny</li>
+<li><strong>I'm meeting my grandma at 3 p.m.</strong> → ustalony plan, konkretna godzina</li>
+</ul>
+<p><strong>ZAPAMIĘTAJ:</strong> Present Continuous dla przyszłości wymaga konkretnego czasu lub ustalenia (<em>at 6, tomorrow, on Saturday</em>).</p>
+</div>
+<nie-myl>
+<p><strong>Present Continuous (teraz) vs Present Continuous (przyszłość)</strong> — test rozstrzygający: czy w zdaniu jest określenie przyszłości (<em>tomorrow, on Saturday, at 6 next week</em>)? TAK → plan na przyszłość (<em>I'm meeting her at 6 tomorrow</em>). NIE → czynność trwa teraz (<em>I'm meeting her right now</em>). To ten sam czas — o znaczeniu decyduje kontekst czasu.</p>
+</nie-myl>
+</section>
+<section id="present-simple">
+<div class="part-heading"><span class="part-num">7</span> Present Simple dla rozkładów i harmonogramów</div>
+<p>Gdy mówimy o <strong>rozkładach jazdy, harmonogramach, planach lekcji</strong>.</p>
+<ul>
+<li><em>rozkład</em> — <strong>The train leaves at 8.</strong> — Pociąg odjeżdża o 8.</li>
+<li><em>rozkład</em> — <strong>The film starts at 9.</strong> — Film zaczyna się o 9.</li>
+<li><em>harmonogram</em> — <strong>School finishes at 3 p.m.</strong> — Szkoła kończy się o 15.</li>
+</ul>
+<div class="card card-basic">
+<span class="card-label">ZAPAMIĘTAJ</span>
+<p>Rozkłady i harmonogramy → <strong>Present Simple</strong>, nawet gdy mówimy o przyszłości! Mówimy o stałych harmonogramach, a nie o planach osobistych.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — czyj to plan?</span>
+<p>Present Continuous czy Present Simple dla przyszłości? Zadaj pytanie: <strong>czyj to plan i czy mogę go odwołać?</strong> Spotkanie z koleżanką, kolacja u babci, lot, który kupiłeś — twój plan, możesz przesunąć telefonicznie → <strong>Present Continuous</strong> (<em>I'm meeting her at 6</em>). Pociąg, film w kinie, początek lekcji — plan instytucji, obiektywny harmonogram, który obowiązuję wszystkich tak samo → <strong>Present Simple</strong> (<em>The train leaves at 8</em>). Pociągu nie odwołasz SMS-em — stądPresent Simple, jak o fakcie.</p>
+</div>
+<nie-myl>
+<p><strong>Present Simple (rozkład) vs Present Continuous (ustalony plan)</strong> — test rozstrzygający: czy plan jest osobisty (mogę go zmienić), czy instytucjonalny (obowiązuje wszystkich)? Osobisty → PC (<em>We're having dinner at 8</em>). Instytucjonalny → PS (<em>The bus leaves at 8</em>).</p>
+</nie-myl>
+</section>
+<section id="when-if">
+<div class="part-heading"><span class="part-num">8</span> Po when, if, as soon as — Present Simple, nie will</div>
+<p><em>(Sekcja nowa — brakujące wymaganie egzaminacyjne.)</em></p>
+<p>W zdaniach złożonych z częścią czasową lub warunkową przyszłość pojawia się <strong>tylko raz</strong> — w części głównej. Po spójnikach <strong>when, if, as soon as, until, before, after</strong> stawiamy <strong>Present Simple</strong>, choć myślimy o przyszłości:</p>
+<ul>
+<li><strong>I'll call you when I arrive.</strong> — Zadzwonię, kiedy przyjadę. (nie: when I will arrive)</li>
+<li><strong>If it rains, we'll stay at home.</strong> — Jeśli będzie padać, zostaniemy w domu.</li>
+<li><strong>I'll text you as soon as I get home.</strong> — Napiszę, jak tylko wrócę do domu.</li>
+<li><strong>Wait here until the rain stops.</strong> — Poczekaj tu, aż przestanie padać.</li>
+<li><strong>Before we leave, let's check the windows.</strong> — Zanim wyjedziemy, sprawdźmy okna.</li>
+</ul>
+<div class="card card-warning">
+<span class="card-label">Pułapka egzaminacyjna</span>
+<p>✗ <em>I'll call you when I will arrive.</em> → ✓ <em>I'll call you when I arrive.</em></p>
+<p>✗ <em>If it will rain, we'll stay home.</em> → ✓ <em>If it rains, we'll stay home.</em></p>
+<p><strong>Zasada:</strong> po when / if / as soon as / until / before / after — Present Simple. Will zostaje tylko w drugiej połowie zdania.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — przyszłość tylko raz</span>
+<p>Present Simple po when i if <strong>nie znaczy „teraz"</strong> — tak angielski zaznacza część czasową lub warunkową zdania o przyszłości; samą przyszłość pokazuje już część główna z will. Uczniowie wpadają w pułapkę, bo po polsku mówimy „kiedy <strong>przyjadę</strong>”. Trik: przyszłość to mieszkanie na jedno nazwisko — w takim zdaniu wynajmuje je <strong>tylko część główna</strong>. Zobaczysz tę regułę w Zadaniu 6 i w testach.</p>
+</div>
+<nie-myl>
+<p><strong>when + Present Simple vs when + will</strong> — test rozstrzygający: czy when wprowadza część czasową zdania o przyszłości? TAK → Present Simple (<em>I'll call you when I arrive</em>). Uwaga: <em>when</em> w pytaniu o przyszłość może łączyć się z will, ale wtedy nie ma części głównej z will: <em>When will you arrive?</em> — jedno will na całe zdanie, nigdy dwa.</p>
+</nie-myl>
+</section>
+<section id="dla-ambitnych">
+<div class="part-heading"><span class="part-num">9</span> Dla ambitnych — was/were going to i shall</div>
+<h3>Was/Were going to — plany niespełnione</h3>
+<p>Gdy mówimy o planach, które <strong>się nie spełniły</strong>.</p>
+<ul>
+<li><em>plan niespełniony</em> — <strong>I was going to call you, but I forgot.</strong> — Miałem do ciebie zadzwonić, ale zapomniałem.</li>
+<li><em>plan niespełniony</em> — <strong>We were going to go to the cinema, but it was closed.</strong> — Mieliśmy iść do kina, ale było zamknięte.</li>
+<li><em>plan niespełniony</em> — <strong>She was going to study medicine, but she changed her mind.</strong> — Miała studiować medycynę, ale zmieniła zdanie.</li>
+</ul>
+<div class="card card-warning">
+<span class="card-label">Uwaga</span>
+<p><strong>Was/were going to</strong> nie oznacza, że czynność została wykonana. Wręcz przeciwnie – zwykle sugeruje, że <strong>plan się nie spełnił</strong>.</p>
+</div>
+<h3>Shall — propozycje i oferty (formalne)</h3>
+<p><strong>Shall</strong> używamy w pytaniach, gdy proponujemy coś lub oferujemy pomoc. Jest to bardziej formalne i rzadsze w dzisiejszym angielskim.</p>
+<ul>
+<li><em>propozycja</em> — <strong>Shall I open the window?</strong> — Czy mam otworzyć okno?</li>
+<li><em>propozycja</em> — <strong>Shall we go?</strong> — Idziemy?</li>
+<li><em>oferta</em> — <strong>Shall I help you?</strong> — Czy mam ci pomóc?</li>
+</ul>
+<div class="card card-understand">
+<span class="card-label">E8 – uwaga</span>
+<p>W dzisiejszym angielskim <strong>shall</strong> jest rzadkie. Zamiast <em>Shall I…?</em> można użyć:</p>
+<ul>
+<li><em>Would you like me to open the window?</em></li>
+<li><em>Do you want me to open the window?</em></li>
+<li><em>Should I open the window?</em> (ale to znaczy raczej „Czy powinienem otworzyć okno?")</li>
+</ul>
+<p>Na egzaminie wystarczy znajomość podstawowego użycia <em>shall</em> w pytaniach.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — be going to cofnięte w przeszłość</span>
+<p><em>Was/were going to</em> to zwykłe be going to przeniesione do przeszłości: plan istniał, ale się nie spełnił — <em>I was going to call you, but I forgot.</em> Obok niego działa konstrukcja <strong>was/were about to</strong>: czynność tuż przed rozpoczęciem — <em>I was about to leave when the phone rang.</em> Różnica: about to = „miałem już wyjść" (sprawa była na wyciągnięcie ręki), going to = „miałem to w planach". Obie świetnie łączą się z when + Past Simple w drugiej części zdania.</p>
+</div>
+</section>
+<section id="slownictwo">
+<div class="part-heading"><span class="part-num">10</span> Słownictwo — plany, marzenia, pogoda, podróże</div>
+<h3>Plany i marzenia</h3>
+<div class="table-wrap"><table class="lk-vocab"><thead><tr><th>Wyraz</th><th>Znaczenie</th><th>Przykład</th></tr></thead><tbody><tr><td>plan</td><td>plan</td><td>I have a plan for the future.</td></tr><tr><td>dream</td><td>marzenie</td><td>My dream is to travel.</td></tr><tr><td>goal</td><td>cel</td><td>I have set a goal.</td></tr><tr><td>ambition</td><td>ambicja</td><td>Her ambition is to become a doctor.</td></tr><tr><td>promise</td><td>obietnica</td><td>I promise to help.</td></tr><tr><td>decision</td><td>decyzja</td><td>I made a decision.</td></tr><tr><td>future</td><td>przyszłość</td><td>I'm thinking about the future.</td></tr></tbody></table></div>
+<h3>Pogoda</h3>
+<div class="table-wrap"><table class="lk-vocab"><thead><tr><th>Wyraz</th><th>Znaczenie</th><th>Przykład</th></tr></thead><tbody><tr><td>sunny</td><td>słoneczny</td><td>It will be sunny tomorrow.</td></tr><tr><td>rainy</td><td>deszczowy</td><td>It's going to rain.</td></tr><tr><td>cloudy</td><td>pochmurny</td><td>It will be cloudy.</td></tr><tr><td>windy</td><td>wietrzny</td><td>It's going to be windy.</td></tr><tr><td>snow</td><td>śnieg</td><td>It will snow tonight.</td></tr><tr><td>warm / hot / cold</td><td>ciepły / gorący / zimny</td><td>It will be warm tomorrow.</td></tr></tbody></table></div>
+<h3>Podróże</h3>
+<div class="table-wrap"><table class="lk-vocab"><thead><tr><th>Wyraz</th><th>Znaczenie</th><th>Przykład</th></tr></thead><tbody><tr><td>travel</td><td>podróżować</td><td>I'm going to travel to Europe.</td></tr><tr><td>trip</td><td>wycieczka</td><td>We are going on a trip.</td></tr><tr><td>holiday</td><td>wakacje</td><td>We are going on holiday.</td></tr><tr><td>flight</td><td>lot</td><td>I will take a flight.</td></tr><tr><td>abroad</td><td>za granicą</td><td>I'm going to study abroad.</td></tr><tr><td>sightseeing</td><td>zwiedzanie</td><td>We will do some sightseeing.</td></tr></tbody></table></div>
+<div class="card card-basic">
+<span class="card-label">Typowe wyrażenia E8</span>
+<ul>
+<li><strong>I'll help you.</strong> – Pomogę ci. (oferta)</li>
+<li><strong>I promise I will...</strong> – Obiecuję, że...</li>
+<li><strong>I think it will...</strong> – Myślę, że...</li>
+<li><strong>Look at...! It's going to...</strong> – Spójrz na...! To będzie...</li>
+<li><strong>I'm going to...</strong> – Planuję...</li>
+<li><strong>I'm meeting... at...</strong> – Spotykam się... o...</li>
+<li><strong>The train leaves at...</strong> – Pociąg odjeżdża o...</li>
+<li><strong>I was going to... but...</strong> – Miałem... ale...</li>
+<li><strong>Shall I...?</strong> – Czy mam...?</li>
+<li><strong>Are you going to...?</strong> – Czy zamierzasz...?</li>
+</ul>
+</div>
+</section>
+<section id="cwiczenia">
+<div class="part-heading"><span class="part-num">11</span> Ćwiczenia</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 1 (8 pkt) — will czy be going to? <span class="level-badge level-basic">PODSTAWA</span></span>
+<ol>
+<li>I think it ______ rain tomorrow. (will / is going to)</li>
+<li>Look at those clouds! It ______ rain. (will / is going to)</li>
+<li>I ______ visit my grandma next week. (will / am going to)</li>
+<li>Don't worry, I ______ help you. (will / am going to)</li>
+<li>She ______ probably come to the party. (will / is going to)</li>
+<li>I've saved money. I ______ buy a new phone. (will / am going to)</li>
+<li>I promise I ______ be on time. (will / am going to)</li>
+<li>Watch out! You ______ fall! (will / are going to)</li>
+</ol>
+<details class="answer"><summary>Klucz</summary>
+<p>1 pkt za zdanie: 1. <strong>will</strong> – przewidywanie oparte na opinii (<em>I think</em>) 2. <strong>is going to</strong> – przewidywanie oparte na dowodach (<em>Look at those clouds!</em>) 3. <strong>am going to</strong> – wcześniejszy plan (<em>next week</em>) 4. <strong>will</strong> – spontaniczna decyzja (<em>Don't worry</em>) 5. <strong>will</strong> – przewidywanie oparte na opinii (<em>probably</em>) 6. <strong>am going to</strong> – wcześniejszy plan (<em>I've saved money</em>) 7. <strong>will</strong> – obietnica (<em>I promise</em>) 8. <strong>are going to</strong> – przewidywanie oparte na dowodach (<em>Watch out!</em>)</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 2 (8 pkt) — Popraw błędy <span class="level-badge level-understand">TRENING</span></span>
+<ol>
+<li><em>I will to help you.</em></li>
+<li><em>Look at the clouds! It will rain.</em></li>
+<li><em>I will buy a new car.</em> (gdy planuję od dawna)</li>
+<li><em>I meet my friend tomorrow.</em> (ustalony plan)</li>
+<li><em>The train is going to leave at 8.</em> (rozkład)</li>
+<li><em>I was going to call you.</em> (gdy zadzwoniłem)</li>
+<li><em>I going to study.</em></li>
+<li><em>I will going to help you.</em></li>
+</ol>
+<details class="answer"><summary>Klucz</summary>
+<p>1 pkt za zdanie: 1. <strong>I will help you.</strong> (po <em>will</em> bezokolicznik bez <em>to</em>) 2. <strong>Look at the clouds! It's going to rain.</strong> (widoczny dowód → <em>going to</em>) 3. <strong>I am going to buy a new car.</strong> (wcześniejszy zamiar → <em>going to</em>) 4. <strong>I am meeting my friend tomorrow.</strong> (ustalony plan → Present Continuous) 5. <strong>The train leaves at 8.</strong> (rozkład → Present Simple) 6. <strong>I called you.</strong> (<em>was going to</em> = plan niespełniony) 7. <strong>I'm going to study.</strong> (brak czasownika <em>to be</em>) 8. <strong>I'm going to help you.</strong> albo <strong>I will help you.</strong> (mieszanie <em>will</em> i <em>going to</em>)</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 3 (10 pkt) — Uzupełnij właściwą konstrukcją przyszłości <span class="level-badge level-exam">EGZAMIN</span></span>
+<p>1 pkt za zdanie.</p>
+<ol>
+<li>The film ______ (start) at 9 p.m.</li>
+<li>I ______ (meet) my friends at the weekend. (ustalony plan)</li>
+<li>I think she ______ (get) the job.</li>
+<li>Look at that boy! He ______ (fall) off his bike.</li>
+<li>I promise I ______ (not / forget) your birthday.</li>
+<li>We ______ (travel) around Europe next summer. (plan)</li>
+<li>The train ______ (arrive) at 10 a.m.</li>
+<li>Don't worry, I ______ (pay) for the dinner.</li>
+<li>I ______ (study) medicine. (mam taki plan)</li>
+<li>She ______ (be) a great doctor one day. (moje zdanie)</li>
+</ol>
+<details class="answer"><summary>Klucz</summary>
+<ol>
+<li><strong>starts</strong> – rozkład → Present Simple 2. <strong>am meeting</strong> – ustalony plan → Present Continuous 3. <strong>will get</strong> – opinia → <em>will</em> 4. <strong>is going to fall</strong> – dowód → <em>going to</em> 5. <strong>won't forget</strong> – obietnica → <em>will</em> 6. <strong>are going to travel</strong> – plan → <em>going to</em> 7. <strong>arrives</strong> – rozkład → Present Simple 8. <strong>will pay</strong> – spontaniczna decyzja → <em>will</em> 9. <strong>am going to study</strong> – plan → <em>going to</em> 10. <strong>will be</strong> – opinia → <em>will</em></li>
+</ol>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 4 (10 pkt) — Przetłumacz na angielski <span class="level-badge level-exam">EGZAMIN</span></span>
+<p>1 pkt za zdanie; zd. 6 i 9 ambitne.</p>
+<ol>
+<li>Zrobię to jutro. (obietnica)</li>
+<li>Planuję nauczyć się hiszpańskiego.</li>
+<li>Spójrz na te chmury! Będzie padać.</li>
+<li>Film zaczyna się o 9.</li>
+<li>Ona spotyka się z przyjaciółmi w sobotę.</li>
+<li>Miałem do ciebie zadzwonić, ale zapomniałem. (ambitny)</li>
+<li>Myślę, że będzie słonecznie jutro.</li>
+<li>Czy mam otworzyć okno? (ambitny)</li>
+<li>Mieliśmy iść do kina, ale było zamknięte. (ambitny)</li>
+<li>Obiecuję, że będę na czas.</li>
+</ol>
+<details class="answer"><summary>Klucz</summary>
+<ol>
+<li><strong>I will do it tomorrow.</strong> 2. <strong>I am going to learn Spanish.</strong> 3. <strong>Look at those clouds! It's going to rain.</strong> 4. <strong>The film starts at 9.</strong> 5. <strong>She is meeting her friends on Saturday.</strong> 6. <strong>I was going to call you, but I forgot.</strong> 7. <strong>I think it will be sunny tomorrow.</strong> 8. <strong>Shall I open the window?</strong> 9. <strong>We were going to go to the cinema, but it was closed.</strong> 10. <strong>I promise I will be on time.</strong></li>
+</ol>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 5 (5 pkt) — Mini-wypowiedź pisemna PISANIE</span>
+<p>Napisz 5–6 zdań o swoich planach na przyszłość. Użyj: przynajmniej jednego zdania z <strong>will</strong>, jednego z <strong>be going to</strong>, jednego z <strong>Present Continuous</strong> (ustalony plan), jednego z <strong>Present Simple</strong> (rozkład).</p>
+<details class="answer"><summary>Przykład i punktacja</summary>
+<p>Punktacja: 3 pkt – wszystkie cztery wymagane konstrukcje; 2 pkt – poprawność językowa.</p>
+<p>Przykład: <em>I have many plans for the future. I am going to study medicine because I want to be a doctor. I'm meeting my friends on Saturday – we are going to the cinema. The film starts at 8 p.m. I also think I will travel a lot in the future. I promise I will work hard to achieve my goals.</em></p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 6 (4 pkt) — Wybierz właściwą formę (A/B/C) <span class="level-badge level-exam">EGZAMIN</span></span>
+<ol>
+<li>Wait here until I ______ back. — A. will come · B. come · C. comes</li>
+<li>There's no milk left. — OK, I ______ buy some. — A. am going to · B. will · C. buy</li>
+<li>We ______ dinner with grandma on Sunday — she's cooking. — A. have · B. are having · C. will have</li>
+<li>The plane ______ at 6:40 tomorrow morning. — A. lands · B. is landing · C. will land</li>
+</ol>
+<details class="answer"><summary>Klucz</summary>
+<ol>
+<li><strong>B</strong> (come) — po until Present Simple, will tylko w części głównej; 2. <strong>B</strong> (will) — decyzja podjęta w tej sekundzie (spontaniczna reakcja); 3. <strong>B</strong> (are having) — ustalony plan („she's cooking" = ustalenie z drugą osobą) → Present Continuous; 4. <strong>A</strong> (lands) — rozkład lotów → Present Simple.</li>
+</ol>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 7 (6 pkt) — E-mail o planach PISANIE (wzór E8)</span>
+<p>Napisz e-mail do kolegi z Anglii (50–120 słów) o swoich planach na najbliższe wakacje. Uwzględnij:</p>
+<ul>
+<li>plan ogólny (be going to),</li>
+<li>ustalenie z konkretną datą lub godziną (Present Continuous),</li>
+<li>coś, co zaplanowała instytucja (rozkład — Present Simple),</li>
+<li>obietnicę albo przewidywanie (will),</li>
+<li>jedno zdanie z <strong>when</strong> lub <strong>if</strong> + Present Simple.</li>
+</ul>
+<details class="answer"><summary>Przykład i punktacja</summary>
+<p>Punktacja (orientacyjnie, wg zasad oceniania wypowiedzi pisemnej CKE): treść 0–2, spójność 0–1, zakres i poprawność środków językowych 0–3.</p>
+<p>Przykład: <em>Hi Ben! You asked about my summer plans. I'm going to spend two weeks at the seaside with my family. We're leaving on 5 July and our train departs at 7 a.m. My cousin is meeting us at the station. I think we'll swim every day — I hope the weather will be great. If it rains, we'll visit the aquarium. I promise I'll send you a postcard! Best, Kuba</em></p>
+<p>Wymagane elementy: am going to spend · are leaving / departs (rozkład) · is meeting · will swim / will be · If it rains, we'll visit · I'll send.</p>
+</details>
+</div>
+</section>
+<section id="misja">
+<div class="part-heading"><span class="part-num">12</span> Test końcowy – MISJA</div>
+<div class="card card-exam">
+<span class="card-label">Misja końcowa (12 pkt) — uzupełnij bez zaglądania do zasad</span>
+<p>1 pkt za zdanie. Sprawdź swój wynik.</p>
+<ol>
+<li>I think it ______ rain tomorrow.</li>
+<li>Look at those clouds! It ______ rain.</li>
+<li>I promise I ______ be on time.</li>
+<li>I ______ to study medicine. (plan)</li>
+<li>The train ______ at 8. (rozkład)</li>
+<li>I ______ my friend at 6. (ustalony plan)</li>
+<li>Popraw: I will to help you.</li>
+<li>Don't worry, I ______ pay for dinner.</li>
+<li>We ______ go to the cinema, but it was closed. (ambitny)</li>
+<li>The film ______ at 9. (rozkład)</li>
+<li>I ______ buy a new car. (mam taki plan)</li>
+<li>She ______ probably come.</li>
+</ol>
+<details class="answer"><summary>Odpowiedzi</summary>
+<ol>
+<li><strong>will</strong> (opinia) 2. <strong>is going to</strong> (dowód) 3. <strong>will</strong> (obietnica) 4. <strong>am going</strong> — w zdaniu jest już „to study medicine", więc wpisujemy tylko „am going" („am going to" dałoby podwójne „to") 5. <strong>leaves</strong> (rozkład → Present Simple) 6. <strong>am meeting</strong> (ustalony plan → Present Continuous) 7. <strong>I will help you</strong> (po will bez to) 8. <strong>will</strong> (spontaniczna decyzja) 9. <strong>were going to</strong> (plan niespełniony) 10. <strong>starts</strong> (rozkład) 11. <strong>am going to</strong> (plan) 12. <strong>will</strong> (opinia — probably)</li>
+</ol>
+</details>
+</div>
+</section>
+<section id="faq">
+<div class="part-heading"><span class="part-num">13</span> FAQ – najczęstsze wątpliwości</div>
+<div class="card card-understand">
+<span class="card-label">FAQ – najczęstsze wątpliwości</span>
+<p><strong>1. Jaka jest różnica między will a be going to?</strong> <em>Will</em> = spontaniczne decyzje, obietnice, opinie. <em>Be going to</em> = plany, dowody. To typowe tendencje, a nie reguły wykluczające inne formy.</p>
+<p><strong>2. Kiedy używamy Present Continuous dla przyszłości?</strong> Gdy mamy ustalony plan z konkretną godziną lub miejscem: <em>I'm meeting her at 6.</em></p>
+<p><strong>3. Kiedy używamy Present Simple dla przyszłości?</strong> Gdy mówimy o rozkładach i harmonogramach: <em>The train leaves at 8.</em></p>
+<p><strong>4. Czy "I will to help" jest poprawne?</strong> Nie. Po <em>will</em> używamy bezokolicznika bez <em>to</em>: <em>I will help.</em></p>
+<p><strong>5. Czy "I am going to help" i "I will help" znaczą to samo?</strong> Nie do końca. <em>I am going to help</em> = już zaplanowałem pomoc. <em>I will help</em> = spontaniczna decyzja, oferta.</p>
+<p><strong>6. Czy "shall" jest jeszcze używane?</strong> Tak, ale rzadziej. Używamy go w pytaniach o propozycje: <em>Shall I open the window?</em></p>
+<p><strong>7. Jaka jest różnica między "was going to" a "went"?</strong> <em>Was going to</em> = plan, który się nie spełnił: <em>I was going to call you, but I forgot.</em> <em>Went</em> = fakt dokonany: <em>I went to the cinema yesterday.</em></p>
+<p><strong>8. Czy "I'm meeting" i "I'm going to meet" to to samo?</strong> <em>I'm meeting</em> = ustalony plan (konkretna godzina/miejsce). <em>I'm going to meet</em> = ogólny zamiar (bez konkretnych ustaleń).</p>
+<p><strong>9. Czy "I think it's going to rain" jest poprawne?</strong> Tak, mimo że nie ma widocznych dowodów. To naturalna alternatywa dla <em>I think it will rain.</em></p>
+<p><strong>10. Czy "The train is going to leave at 8" jest błędne?</strong> Nie jest błędne, ale przy rozkładzie jazdy naturalniej brzmi <em>The train leaves at 8</em> (Present Simple).</p>
+<p><strong>11. Czy "I will going to help" jest poprawne?</strong> Nie. To mieszanie dwóch konstrukcji. Mówimy <em>I'm going to help</em> lub <em>I will help</em>.</p>
+<p><strong>12. Czy "I going to study" jest poprawne?</strong> Nie. Brakuje czasownika <em>to be</em>: <em>I'm going to study.</em></p>
+</div>
+</section>
+<section id="klinika">
+<div class="part-heading"><span class="part-num">14</span> Klinika błędów — najczęstsze błędy</div>
+<table class="klinika-table"><thead><tr><th>Błąd</th><th>Poprawnie</th><th>Dlaczego?</th></tr></thead><tbody><tr class="error-row"><td class="col-blad" data-label="Błąd">I will to help you.</td><td class="col-ok" data-label="Poprawa">I will help you.</td><td data-label="Dlaczego">Po will bezokolicznik bez to.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">I'm going to to study.</td><td class="col-ok" data-label="Poprawa">I'm going to study.</td><td data-label="Dlaczego">Po going to tylko jedno „to" — forma podstawowa.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">I will going to help you.</td><td class="col-ok" data-label="Poprawa">I'm going to help you. / I will help you.</td><td data-label="Dlaczego">Mieszanie dwóch konstrukcji — wybierz jedną.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">I going to study.</td><td class="col-ok" data-label="Poprawa">I'm going to study.</td><td data-label="Dlaczego">Be going to wymaga am/is/are.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">She will comes.</td><td class="col-ok" data-label="Poprawa">She will come.</td><td data-label="Dlaczego">Po will forma podstawowa, bez końcówki -s.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">I meet my friend tomorrow. (ustalony plan)</td><td class="col-ok" data-label="Poprawa">I'm meeting my friend tomorrow.</td><td data-label="Dlaczego">Ustalony plan z datą → Present Continuous dla przyszłości.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">The train is going to leave at 8. (rozkład)</td><td class="col-ok" data-label="Poprawa">The train leaves at 8.</td><td data-label="Dlaczego">Rozkład → Present Simple; going to nie jest błędem, ale mniej naturalne.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">I was going to call you. (gdy zadzwoniłem)</td><td class="col-ok" data-label="Poprawa">I called you.</td><td data-label="Dlaczego">was going to = plan, który się nie spełnił, nie fakt.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">When I will arrive, I'll call you.</td><td class="col-ok" data-label="Poprawa">When I arrive, I'll call you.</td><td data-label="Dlaczego">Po when Present Simple — will tylko w części głównej.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">If it will rain, we'll stay home.</td><td class="col-ok" data-label="Poprawa">If it rains, we'll stay home.</td><td data-label="Dlaczego">Po if Present Simple; przyszłość tylko raz na zdanie.</td></tr></tbody></table>
+<div class="myth-grid"><div class="myth"><p class="myth-x"><span>Mit</span>„will to jedyny sposób mówienia o przyszłości"</p><p class="myth-ok"><span>Poprawnie</span>W materiale egzaminacyjnym są cztery główne konstrukcje: will, be going to, Present Continuous i Present Simple.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„słowo tomorrow wymusza will"</p><p class="myth-ok"><span>Poprawnie</span>Decyduje znaczenie: Will you help me tomorrow? (prośba), I'm meeting her tomorrow (ustalony plan), The train leaves tomorrow (rozkład).</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„be going to zawsze oznacza widoczny dowód"</p><p class="myth-ok"><span>Poprawnie</span>Going to to też wcześniejsze plany i zamiary — bez żadnego dowodu (I'm going to study medicine).</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Present Continuous dotyczy tylko teraźniejszości"</p><p class="myth-ok"><span>Poprawnie</span>Opisuje też ustalone plany na przyszłość: I'm flying to London tomorrow.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„The train is going to leave at 8 to błąd"</p><p class="myth-ok"><span>Poprawnie</span>Nie błąd, ale przy rozkładzie naturalniejszy jest Present Simple (The train leaves at 8).</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„po when mówimy will, bo myślimy o przyszłości"</p><p class="myth-ok"><span>Poprawnie</span>Po when, if, as soon as, until, before, after — Present Simple: I'll call you when I arrive.</p></div></div>
+</section>
+<section id="olimpijska">
+<div class="part-heading"><span class="part-num">15</span> Warstwa olimpijska — dla olimpijczyka</div>
+<p><em>(Warstwa ponad E8 — do zweryfikowania z wymaganiami konkretnego konkursu; w paczce nie ma dokumentu wymagań.)</em></p>
+<div class="card card-understand">
+<span class="card-label">Dla olimpijczyka — konstrukcje i granice, o których podręcznik milczy</span>
+<p><strong>Will/going to to preferencje, nie prawa.</strong> Kluczowe kryterium to naturalność i akcent zdania. <em>I think it's going to rain</em> jest poprawne, choć nie ma dowodu; a <em>will</em> potrafi opisać nawet zdarzenie już widoczne. Zadania konkursowe testują, czy rozumiesz, ŻE to spektrum, nie binarny wybór. (źródło: M. Swan, Practical English Usage)</p>
+<p><strong>be about to</strong> — przyszłość „tuż-tuż": <em>Hurry up! The train is about to leave.</em> W przeszłości świetnie współpracuje z when + Past Simple: <em>I was about to leave when the phone rang.</em> Porównanie: was going to = plan wcześniej; was about to = sytuacja na wyciągnięcie ręki.</p>
+<p><strong>Akcentowane will = upór.</strong> <em>He WILL keep losing his keys.</em> — „On uparcie ciągle gubi klucze" (irytacja mówiącego; will czytane z naciskiem). Konstrukcja spotykana w zadaniach na interpretację. (źródło: M. Swan, Practical English Usage) (konkurs)</p>
+<p><strong>Shall poza propozycjami.</strong> W dokumentach prawnych shall wyraża obowiązek: <em>The tenant shall pay the rent on the first day of each month.</em> W codziennym BrE przetrwało głównie <em>Shall I/we…?</em> w ofertach i propozycjach. (źródło: Cambridge Dictionary) (konkurs)</p>
+<p><strong>Future Continuous i Future Perfect</strong> — poza E8, ale bywają w materiałach konkursowych: <em>This time tomorrow I'll be flying to Rome</em> (czynność w toku w przyszłości); <em>By 2030 they will have built the line</em> (skończone przed punktem w przyszłości). Tu tylko sygnał istnienia — poznasz je w wyższych lekcjach. (konkurs)</p>
+</div>
+<nie-myl>
+<p><strong>was going to vs was about to</strong> — test rozstrzygający: jak blisko wykonania był plan? <em>I was going to call you</em> = miałem to w planach (dowolnie odległe). <em>I was about to call you</em> = miałem już numer wybrany, „za sekundę" dzwonię. Obie konstrukcje łączą się z when + Past Simple: <em>I was about to leave when it started to rain.</em></p>
+</nie-myl>
+<details class="adv"><summary>Zadanie O1 (4 pkt) — Kiedy po spójniku NIE ma willa <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Uzupełnij właściwą formą czasownika i uzasadnij (1 pkt za zdanie z uzasadnieniem).</p>
+<ol>
+<li>I'll text you as soon as I ______ (get) home.</li>
+<li>Wait here until the rain ______ (stop).</li>
+<li>If you ______ (not / hurry), you'll miss the bus.</li>
+<li>Before we ______ (leave), let's check the windows.</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li><strong>get</strong> — po as soon as Present Simple; will stoi w części głównej; 2. <strong>stops</strong> — po until Present Simple; 3. <strong>don't hurry</strong> — po if Present Simple (przeczenie: don't + forma podstawowa); 4. <strong>leave</strong> — po before Present Simple. Uzasadnienie wspólne: w zdaniu z częścią czasową lub warunkową will może wystąpić tylko raz — w części głównej.</li>
+</ol>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie O2 (5 pkt) — Znajdź błąd: e-mail z pięcioma błędami <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>W tekście ukryto <strong>3 błędy konstrukcji przyszłości</strong>. Znajdź je, popraw i uzasadnij (1 pkt za błąd z uzasadnieniem, 2 pkt za wskazanie dwóch form, które tylko wyglądają podejrzanie, i wyjaśnienie, dlaczego są poprawne). Uwaga: niektóre formy wyglądają podejrzanie, ale są POPRAWNE — nie „naprawiaj" ich.</p>
+<p><em>Hi Emma! Great news — I'm going to visit you in August! My train will arrive at your station at 10:15, I checked the timetable. If I will find cheap tickets, I'll stay a whole week. I'm meeting my cousins on 12 August — we planned it yesterday. I think we're going to have a great time. I will to bring you that book you wanted. Wait — someone is knocking at the door, I'm about to open it!</em></p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li><strong>My train will arrive → My train arrives</strong> — godzina z rozkładu („I checked the timetable") → Present Simple; 2. <strong>If I will find → If I find</strong> — po if Present Simple; 3. <strong>I will to bring → I will bring</strong> — po will bez to. Formy POPRAWNE (pułapki): <em>I'm about to open it</em> (konstrukcja „tuż-tuż”), <em>I'm going to visit you</em> (plan ogólny), <em>I'm meeting my cousins</em> (ustalony plan), <em>we're going to have a great time</em> (przewidywanie wg opinii — poprawne), <em>I'll stay</em> (spontaniczna decyzja w części głównej po if).</li>
+</ol>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie O3 (4 pkt) — Wyjaśnij różnicę <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Wyjaśnij, czym różnią się zdania w każdej parze (1 pkt za parę z poprawnym uzasadnieniem).</p>
+<ol>
+<li>„I'll have the fish." vs „I'm going to have the fish."</li>
+<li>„I'm seeing the doctor at 4." vs „I'm going to see the doctor."</li>
+<li>„The train leaves at 8." vs „The train is going to leave at 8."</li>
+<li>„I was going to text you." vs „I texted you."</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li>Pierwsze: decyzja podjęta w chwili mówienia (np. przy kelnerze) → will; drugie: zamiar istniał wcześniej → going to. 2. Pierwsze: ustalenie z godziną (wizyta umówiona) → Present Continuous; drugie: ogólny zamiar bez ustaleń → going to. 3. Pierwsze: neutralna informacja z rozkładu → Present Simple; drugie: komentarz do widocznej sytuacji (np. pociąg w końcu wyrusza) → going to. 4. Pierwsze: plan, który się nie spełnił (nie napisałem); drugie: fakt dokonany (napisałem).</li>
+</ol>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie O4 (3 pkt) — be about to i was going to <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Uzupełnij i nazwij konstrukcję (1 pkt za zdanie).</p>
+<ol>
+<li>Hurry up! The film ______ start! (zaraz się zacznie)</li>
+<li>I ______ leave when the phone rang.</li>
+<li>We ______ (go) to tell her the truth, but she left first.</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li><strong>is about to</strong> — be about to: czynność tuż przed rozpoczęciem; 2. <strong>was about to</strong> — jak w 1, w przeszłości; 3. <strong>were going</strong> — was/were going to: plan z przeszłości, który się nie spełnił.</li>
+</ol>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie O5 (3 pkt) — Oferty formalne: shall i jego zamienniki <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Przekształć zdania zachowując znaczenie (1 pkt za zdanie).</p>
+<ol>
+<li>Do you want me to open the window? → Shall ______?</li>
+<li>Let's go for a walk. → Shall ______?</li>
+<li>Would you like me to help you with your bag? → Shall ______?</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li><strong>Shall I open the window?</strong> — shall + I w ofercie; 2. <strong>Shall we go for a walk?</strong> — shall + we w propozycji (zamiennik Let's); 3. <strong>Shall I help you with your bag?</strong> — formalna oferta.</li>
+</ol>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie O6 (4 pkt) — Analiza dialogu: decyzje w restauracji <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p><em>A: What would you like? B: I'll have the tomato soup. A: And I'm going to try the pasta — I read a review yesterday. A: And for dessert? Our famous cheesecake! B: Great, I'll try it.</em></p>
+<ol>
+<li>Wyjaśnij (2 pkt), dlaczego B najpierw użył will, a A — be going to.</li>
+<li>Wyjaśnij (1 pkt), dlaczego B przy deserze znów powiedział <em>I'll try it</em>, a nie <em>I'm trying it</em>.</li>
+<li>Ułóż (1 pkt) zdanie A mówiące o ustalonym planie z godziną (Present Continuous).</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li>B podjął decyzję w chwili mówienia (menu otwarte dopiero teraz) → will; A miał zamiar wcześniej („I read a review yesterday" — decyzja zapadła przed rozmową) → be going to. 2. Deser też wybrał w tej sekundzie → will; <em>I'm trying it</em> sugerowałoby wcześniejsze ustalenie. 3. Przykład: <em>I'm meeting my friends at 7, so let's order quickly.</em></li>
+</ol>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie O7 (4 pkt) — Pułapka: prognoza pogody (analiza tekstu) <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Uzupełnij tekst czterema różnymi konstrukcjami przyszłości (will / going to / Present Continuous / Present Simple) i uzasadnij (1 pkt za lukę z uzasadnieniem).</p>
+<p><em>Tomorrow's forecast: the morning will be sunny, but look at the radar — heavy clouds are already over the mountains, so they ______ (reach) our valley by noon. The bus to the trailhead ______ (depart) at 7 a.m. I ______ (meet) the group at the station at 6:30 — everything is arranged. If the rain ______ (start), we'll take the earlier bus back.</em></p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li><strong>are going to reach</strong> — widoczny dowód (chmury na radarze) → be going to; 2. <strong>departs</strong> — rozkład przewoźnika → Present Simple; 3. <strong>am meeting</strong> — ustalony plan („everything is arranged") → Present Continuous; 4. <strong>starts</strong> — po if Present Simple; will zostaje w części głównej (<em>we'll take</em>).</li>
+</ol>
+</details>
+</div></details>
+</section>
+<section id="test">
+<div class="part-heading"><span class="part-num">16</span> Test — pytania zamknięte</div>
+<div class="che-quiz" id="quizWrap"><div class="quiz-q" data-ok="0" data-fb="Sygnał I think → przewidywanie z opinii → will (najbezpieczniejszy wybór egzaminacyjny)."><h5>1. I think it ______ rain tomorrow.</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">will</button><button type="button" class="quiz-opt" data-a="1">is going to</button><button type="button" class="quiz-opt" data-a="2">rains</button><button type="button" class="quiz-opt" data-a="3">rain</button></div></div><div class="quiz-q" data-ok="0" data-fb="Widoczny dowód (chmury) → be going to."><h5>2. Look at those clouds! It ______ rain.</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">is going to</button><button type="button" class="quiz-opt" data-a="1">will</button><button type="button" class="quiz-opt" data-a="2">rains</button><button type="button" class="quiz-opt" data-a="3">rain</button></div></div><div class="quiz-q" data-ok="0" data-fb="next week + zamiar (plan) → be going to."><h5>3. I ______ visit my grandma next week.</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">am going to</button><button type="button" class="quiz-opt" data-a="1">will</button><button type="button" class="quiz-opt" data-a="2">visits</button><button type="button" class="quiz-opt" data-a="3">go to visit</button></div></div><div class="quiz-q" data-ok="0" data-fb="Spontaniczna decyzja podjęta w chwili mówienia → will."><h5>4. Don't worry, I ______ help you.</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">will</button><button type="button" class="quiz-opt" data-a="1">am going to</button><button type="button" class="quiz-opt" data-a="2">helping</button><button type="button" class="quiz-opt" data-a="3">help</button></div></div><div class="quiz-q" data-ok="0" data-fb="probably → przewidywanie z opinii → will."><h5>5. She ______ probably come to the party.</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">will</button><button type="button" class="quiz-opt" data-a="1">is going to</button><button type="button" class="quiz-opt" data-a="2">comes</button><button type="button" class="quiz-opt" data-a="3">coming</button></div></div><div class="quiz-q" data-ok="0" data-fb="Wcześniejszy plan (odłożone pieniądze) → be going to."><h5>6. I've saved money. I ______ buy a new phone.</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">am going to</button><button type="button" class="quiz-opt" data-a="1">will</button><button type="button" class="quiz-opt" data-a="2">buying</button><button type="button" class="quiz-opt" data-a="3">buy</button></div></div><div class="quiz-q" data-ok="0" data-fb="Obietnica → will."><h5>7. I promise I ______ be on time.</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">will</button><button type="button" class="quiz-opt" data-a="1">am going to</button><button type="button" class="quiz-opt" data-a="2">am</button><button type="button" class="quiz-opt" data-a="3">being</button></div></div><div class="quiz-q" data-ok="0" data-fb="Watch out! = widoczny dowód → be going to."><h5>8. Watch out! You ______ fall!</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">are going to</button><button type="button" class="quiz-opt" data-a="1">will</button><button type="button" class="quiz-opt" data-a="2">fall</button><button type="button" class="quiz-opt" data-a="3">falls</button></div></div><div class="quiz-q" data-ok="0" data-fb="Ustalenie z konkretnym dniem → Present Continuous dla przyszłości."><h5>9. We ______ dinner with grandma on Sunday — everything is arranged.</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">are having</button><button type="button" class="quiz-opt" data-a="1">have</button><button type="button" class="quiz-opt" data-a="2">will have</button><button type="button" class="quiz-opt" data-a="3">have had</button></div></div><div class="quiz-q" data-ok="0" data-fb="Rozkład lotów (harmonogram) → Present Simple."><h5>10. The plane ______ at 6:40 tomorrow.</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">lands</button><button type="button" class="quiz-opt" data-a="1">will land</button><button type="button" class="quiz-opt" data-a="2">is going to land</button><button type="button" class="quiz-opt" data-a="3">is landing</button></div></div><div class="quiz-q" data-ok="0" data-fb="Po as soon as Present Simple — will tylko w części głównej."><h5>11. (konkurs) I'll text you as soon as I ______ home.</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">get</button><button type="button" class="quiz-opt" data-a="1">will get</button><button type="button" class="quiz-opt" data-a="2">will arrive</button><button type="button" class="quiz-opt" data-a="3">am getting</button></div></div><div class="quiz-q" data-ok="0" data-fb="Po if Present Simple; przyszłość tylko raz na zdanie."><h5>12. If it ______ , we'll stay at home.</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">rains</button><button type="button" class="quiz-opt" data-a="1">will rain</button><button type="button" class="quiz-opt" data-a="2">is going to rain</button><button type="button" class="quiz-opt" data-a="3">rain</button></div></div><div class="quiz-q" data-ok="0" data-fb="Pytanie o ustalone plany (this evening) → Present Continuous dla przyszłości."><h5>13. (konkurs) What ______ this evening? — Nothing special, why?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">are you doing</button><button type="button" class="quiz-opt" data-a="1">do you do</button><button type="button" class="quiz-opt" data-a="2">will you do</button><button type="button" class="quiz-opt" data-a="3">you do</button></div></div><div class="quiz-q" data-ok="0" data-fb="was going to = plan z przeszłości, który się nie spełnił."><h5>14. (konkurs) I ______ tell her the truth, but she already knew.</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">was going to</button><button type="button" class="quiz-opt" data-a="1">will go to</button><button type="button" class="quiz-opt" data-a="2">am going to</button><button type="button" class="quiz-opt" data-a="3">went to</button></div></div><div class="quiz-q" data-ok="0" data-fb="was about to = miałem właśnie wyjść (czynność tuż przed rozpoczęciem)."><h5>15. (konkurs) I ______ leave when the phone rang.</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">was about to</button><button type="button" class="quiz-opt" data-a="1">am about to</button><button type="button" class="quiz-opt" data-a="2">will about to</button><button type="button" class="quiz-opt" data-a="3">was going</button></div></div><div class="quiz-q" data-ok="0" data-fb="Spontaniczna decyzja podjęta w tej chwili → will (naturalne jest też &lt;em&gt;I&#x27;m coming with you!&lt;/em&gt;)."><h5>16. Wait for me! I ______ with you.</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">will come</button><button type="button" class="quiz-opt" data-a="1">am going to come</button><button type="button" class="quiz-opt" data-a="2">come</button><button type="button" class="quiz-opt" data-a="3">comes</button></div></div></div><div class="quiz-score" id="quizScore"></div>
+</section>
+<section id="fiszki">
+<div class="part-heading"><span class="part-num">17</span> Fiszki</div>
+<div id="flashcards" class="flashcard-grid"><button class="flashcard" type="button"><span class="front">I think it ______ rain.</span><span class="back">will — przewidywanie z opinii → will</span><span class="card-tag tag-basic">future</span></button><button class="flashcard" type="button"><span class="front">Look at the clouds! It ______ rain.</span><span class="back">is going to — dowód → going to</span><span class="card-tag tag-basic">future</span></button><button class="flashcard" type="button"><span class="front">I promise I ______ be on time.</span><span class="back">will — obietnica → will</span><span class="card-tag tag-basic">future</span></button><button class="flashcard" type="button"><span class="front">I ______ study medicine. (plan)</span><span class="back">am going to — wcześniejszy plan → going to</span><span class="card-tag tag-basic">future</span></button><button class="flashcard" type="button"><span class="front">The train ______ at 8. (rozkład)</span><span class="back">leaves — Present Simple dla rozkładów</span><span class="card-tag tag-basic">future</span></button><button class="flashcard" type="button"><span class="front">I ______ my friend at 6. (ustalony plan)</span><span class="back">am meeting — Present Continuous dla ustalonych planów</span><span class="card-tag tag-basic">future</span></button><button class="flashcard" type="button"><span class="front">I will to help → ?</span><span class="back">I will help. — po will bez to</span><span class="card-tag tag-basic">future</span></button><button class="flashcard" type="button"><span class="front">I was going to call you = ?</span><span class="back">miałem zadzwonić (plan niespełniony)</span><span class="card-tag tag-olimpijski">future</span></button><button class="flashcard" type="button"><span class="front">Shall I...? = ?</span><span class="back">Czy mam...? — propozycja / oferta</span><span class="card-tag tag-olimpijski">future</span></button><button class="flashcard" type="button"><span class="front">Spontaniczna decyzja → ?</span><span class="back">will (np. I'll help you!)</span><span class="card-tag tag-basic">future</span></button><button class="flashcard" type="button"><span class="front">Wcześniejszy plan → ?</span><span class="back">be going to (np. I'm going to study)</span><span class="card-tag tag-basic">future</span></button><button class="flashcard" type="button"><span class="front">Ustalony plan (godzina) → ?</span><span class="back">Present Continuous (np. I'm meeting her at 6)</span><span class="card-tag tag-basic">future</span></button><button class="flashcard" type="button"><span class="front">Rozkład / harmonogram → ?</span><span class="back">Present Simple (np. The train leaves at 8)</span><span class="card-tag tag-basic">future</span></button><button class="flashcard" type="button"><span class="front">will = ?</span><span class="back">spontaniczna decyzja, obietnica, opinia</span><span class="card-tag tag-basic">future</span></button><button class="flashcard" type="button"><span class="front">be going to = ?</span><span class="back">plan, dowód</span><span class="card-tag tag-basic">future</span></button><button class="flashcard" type="button"><span class="front">po when, if, as soon as → ?</span><span class="back">Present Simple, nie will (I'll call you when I arrive)</span><span class="card-tag tag-olimpijski">future</span></button><button class="flashcard" type="button"><span class="front">be about to = ?</span><span class="back">„zaraz, właśnie mam zamiar" (The train is about to leave)</span><span class="card-tag tag-olimpijski">future</span></button><button class="flashcard" type="button"><span class="front">shall w dokumentach prawnych</span><span class="back">wyraża obowiązek (The tenant shall pay)</span><span class="card-tag tag-olimpijski">future</span></button><button class="flashcard" type="button"><span class="front">gonna</span><span class="back">potoczna redukcja going to — nie na egzamin</span><span class="card-tag tag-olimpijski">future</span></button><button class="flashcard" type="button"><span class="front">I'll have the steak.</span><span class="back">will — decyzja podjęta teraz (w restauracji)</span><span class="card-tag tag-basic">future</span></button></div>
+</section>
+<section id="slownik">
+<div class="part-heading"><span class="part-num">18</span> Słownik</div>
+<dl><div class="def-item"><dt>will</dt><dd>czasownik modalny przyszłości: spontaniczne decyzje, obietnice, oferty, przewidywania oparte na opinii; po nim forma podstawowa bez to.</dd></div><div class="def-item"><dt>won't</dt><dd>przeczenie will (will not): She won't come.</dd></div><div class="def-item"><dt>be going to</dt><dd>konstrukcja am/is/are + going to + bezokolicznik: wcześniejsze plany i przewidywania oparte na dowodach.</dd></div><div class="def-item"><dt>spontaniczna decyzja</dt><dd>decyzja podjęta w chwili mówienia, bez wcześniejszego planu → will.</dd></div><div class="def-item"><dt>obietnica</dt><dd>zapewnienie, że coś zrobimy → will (I promise I will…).</dd></div><div class="def-item"><dt>oferta</dt><dd>zgłoszenie gotowości pomocy → will albo Shall I…?</dd></div><div class="def-item"><dt>przewidywanie</dt><dd>przypuszczenie o przyszłości: opinia → will; widoczny dowód → be going to.</dd></div><div class="def-item"><dt>dowód</dt><dd>coś, co widać teraz i wskazuje na przyszłe zdarzenie (chmury, przechylona szklanka) → be going to.</dd></div><div class="def-item"><dt>plan wcześniejszy</dt><dd>decyzja podjęta przed momentem mówienia → be going to.</dd></div><div class="def-item"><dt>ustalony plan</dt><dd>plan z ustaloną godziną, miejscem lub drugą osobą → Present Continuous.</dd></div><div class="def-item"><dt>rozkład / harmonogram</dt><dd>obiektywny plan instytucji (pociągi, film, lekcje) → Present Simple.</dd></div><div class="def-item"><dt>forma podstawowa</dt><dd>bezokolicznik bez to — po will i po going to.</dd></div><div class="def-item"><dt>plany niespełnione</dt><dd>was/were going to — miałem coś zrobić, ale nie zrobiłem.</dd></div><div class="def-item"><dt>be about to</dt><dd>„zaraz, właśnie mam zamiar" — czynność tuż przed rozpoczęciem (konkurs).</dd></div></dl>
+</section>
+<section id="ciekawostki">
+<div class="part-heading"><span class="part-num">19</span> Ciekawostki</div>
+<div class="card card-extra">
+<span class="card-label">will to dziedzictwo woli</span>
+<p>Dziś <em>will</em> to „przyszłość", ale etymologicznie znaczył po prostu „chcieć" (staroangielskie <em>wyllan</em>). Dlatego wciąż najnaturalniej brzmi w decyzjach i obietnicach: <em>I'll help you</em> jest dosłownie bliskie „chcę ci pomóc". Gramatyka przyszłości wyrosła z ludzkiej woli. (źródło: etymonline.com)</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">won't — nieregularne skrócenie</span>
+<p>Przeczenie will to nie „willn't", a <strong>won't</strong>. Skąd? Ze średnioangielskiego <em>woll not</em> (stara forma will) → <em>wonnot</em> → <em>won't</em>. Podobnie nieregularne jest <em>shan't</em> (shall not) — pamiętaj więc o literze „o” w <em>won't</em>. (źródło: etymonline.com) (konkurs)</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">gonna — mowa ulicy</span>
+<p>W szybkiej mowie native speakerzy redukują <em>going to</em> do <em>gonna</em>: <em>I'm gonna call you later.</em> W piosenkach i filmach słyszysz to bez przerwy — ale na egzaminie i w wypowiedziach pisemnych zawsze pełna forma <em>going to</em>. Rozumiesz <em>gonna</em>, piszesz <em>going to</em>. (źródło: Cambridge Dictionary)</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">shall w procesach sądowych</span>
+<p>W codziennym angielskim <em>shall</em> żyje głównie w propozycjach (<em>Shall we dance?</em>), ale w dokumentach prawnych wciąż wyraża <strong>obowiązek</strong>: <em>The tenant shall pay the rent…</em> — „najemca ZOBOWIĄZANY jest zapłacić…". To ostatnia twierdza jednego ze starszych znaczeń tego modalnego. (źródło: Cambridge Dictionary) (konkurs)</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Shall we dance?</span>
+<p>Propozycja <em>Shall we…?</em> przetrwała w kulturze m.in. jako tytuł słynnej piosenki „Shall We Dance?" z musicalu „The King and I" (premiera na Broadwayu 1951). Gdy dziś Anglicy proponują coś elegancko, nadal sięgają po ten zwrot — forma starsza niż niejeden teatr, w którym ją śpiewano. (źródło: Rodgers &amp; Hammerstein, historia musicalu) (konkurs)</p>
+</div>
+<p><em>Ucz się świadomie, nie na pamięć. Zadania treningowe wzorowane na formule E8 — oficjalne arkusze i nagrania: CKE.</em></p>
+<details class="lk-log"><summary>AUDYT W1 — ULEPSZ z warstwą olimpijską (2026-10-11) {#audyt}</summary>
+<h3 id="audyt">AUDYT W1 — ULEPSZ z warstwą olimpijską (2026-10-11)</h3>
+<p>Surowe odpowiedzi: <code>angielski/plany/audyty/ULEPSZ_OLI_L012_czesc1…4_2026-10-11.md</code> (model widział lekcję w całości; odpowiedź w czterech częściach, bo dłuższe teksty ucinały się przy przesyłaniu).</p>
+<p><strong>Przyjęte:</strong> zamiana 18 sztucznych bloków <code>::: html</code> na prawdziwe sekcje (2 → 20 sekcji), wykład „cztery szuflady przyszłości” z drzewem decyzyjnym i mnemotechnikami, nowa sekcja 8 (po when / if / as soon as / until / before / after — Present Simple; brakująca reguła egzaminacyjna), 4 mini-wykłady, zadania 6–7 (wybór A/B/C, e-mail E8), FAQ, klinika (10 błędów), mity, warstwa olimpijska (be about to, akcentowane will, shall w dokumentach, Future Continuous i Future Perfect jako sygnał; zadania O1–O7), test 16 pytań (dopisane wyjaśnienia <code>!</code> i dystraktory), 20 fiszek (poziomy znormalizowane), słownik 14 haseł, 5 ciekawostek; poprawka tytułu karty „Cztery konstrukcje” (było sześć wierszy), scalenie zdublowanej karty PUŁAPKA i tabeli fiszek.</p>
+<p><strong>Poprawione względem propozycji:</strong> O2 — zadanie zapowiadało 5 błędów, a w tekście są 3 (<em>I'm about to open it</em> model sam uznał za poprawne) → treść i punktacja dopasowane; ciekawostka <em>won't</em> — „jedyny taki przypadek” nieprawda (<em>shan't</em>); test — dystraktor <em>am coming</em> w „Wait for me! I ___ with you” jest naturalny → zamieniony; mini-wykład „przyszłość tylko raz” — mętne zdanie o znaczeniu Present Simple przepisane; przywrócone: zdanie wstępne i karta „Najważniejsza zasada” z oryginału, stopka „Ucz się świadomie…”.</p>
+<p><strong>Nieprzyjęte:</strong> interaktywne „Wybierz sytuację…” i „Otwórz słowniczek” (elementy starego HTML — zastąpione drzewem i słownikiem); propozycje grafik „Cztery szuflady przyszłości”, „Chmury a pogodynka” — pomysły do biblioteki grafik.</p>
+</details>
+</section>
+<footer class="footer"><p>Lekcja 12 – Future Simple (will) i be going to • Wersja 9.0 (ULEPSZONA) • 2026-10-11</p></footer>
+</main>
+<script>
+/* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
+   postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
+(function(){
+var html=document.documentElement;
+function ciemny(){var t=html.getAttribute('data-theme');return t?t==='dark':!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function oznacz(){if(ciemny())html.setAttribute('data-ciemny','');else html.removeAttribute('data-ciemny')}
+try{var z=localStorage.getItem('lekcja-motyw');if(z)html.setAttribute('data-theme',z)}catch(e){}
+oznacz();if(window.matchMedia)try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',oznacz)}catch(e){}
+
+function start(){
+var root=document;
+root.querySelectorAll('.flashcard').forEach(function(b){if(b.dataset.lkFz)return;b.dataset.lkFz=1;b.removeAttribute('onclick');b.setAttribute('aria-pressed','false');
+ b.addEventListener('click',function(){var on=b.classList.toggle('flipped');b.setAttribute('aria-pressed',on?'true':'false')})});
+root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibling,ok=0,n=0,all=w.querySelectorAll('.quiz-q').length;
+ if(sc&&sc.classList.contains('quiz-score'))sc.setAttribute('aria-live','polite');
+ w.querySelectorAll('.quiz-q').forEach(function(d){var good=+d.dataset.ok;d.querySelectorAll('.quiz-opt').forEach(function(b){b.onclick=function(){if(d.dataset.done)return;d.dataset.done=1;n++;if(+b.dataset.a===good)ok++;
+  d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
+  if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
+  if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var b=root.querySelector('#advToggle');
+if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
+ if(!k)b.style.display='none';
+ b.textContent='Pokaż treści akademickie ('+k+')';
+ b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';adv().forEach(function(d){d.open=on});b.setAttribute('aria-pressed',on?'true':'false');b.textContent=(on?'Ukryj':'Pokaż')+' treści akademickie ('+k+')'}}
+// spis zwinięty na telefonie
+var sp=root.querySelector('#spis');if(sp&&window.innerWidth<700)sp.removeAttribute('open');
+// przełącznik jasny/ciemny
+var tb=root.querySelector('#lkMotyw');
+if(tb)tb.onclick=function(){var t=ciemny()?'light':'dark';html.setAttribute('data-theme',t);try{localStorage.setItem('lekcja-motyw',t)}catch(e){}oznacz()};
+// postęp czytania + aktywna sekcja w spisie
+var bar=root.querySelector('.lk-prog'),links={},secs=[];
+root.querySelectorAll('.toc-link[href^="#"]').forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1));if(s){links[s.id]=a;secs.push(s)}});
+var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+ if(bar)bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';
+ var cur=null,lim=(parseInt(getComputedStyle(h).getPropertyValue('--header-h'))||52)+40;
+ for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
+ for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// fiszki: pokazuje pierwsze N (domyślnie 6, atrybut data-fz-pierwsze="N"), reszta po wyraźnym przycisku
+root.querySelectorAll('.flashcard-grid').forEach(function(g){
+ var cards=[].slice.call(g.querySelectorAll('.flashcard')),N=+(g.getAttribute('data-fz-pierwsze')||6);
+ if(!(N>0)||cards.length<=N)return;
+ var ukryte=cards.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more';
+ function lab(on){ukryte.forEach(function(c){c.hidden=!on});
+  b.textContent=on?'▲ Zwiń fiszki':'▼ Pokaż pozostałe '+ile+' fiszek (razem '+cards.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ g.insertAdjacentElement('afterend',b);
+});
+// testy: pokazuje pierwsze N pytań (domyślnie 5, atrybut data-q-pierwsze), reszta po wyraźnym przycisku
+root.querySelectorAll('.che-quiz').forEach(function(w){
+ var qs=[].slice.call(w.querySelectorAll('.quiz-q')),N=+(w.getAttribute('data-q-pierwsze')||5);
+ if(!(N>0)||qs.length<=N)return;
+ var ukryte=qs.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more q-more';
+ function lab(on){ukryte.forEach(function(q){q.hidden=!on});
+  b.textContent=on?'▲ Zwiń pytania':'▼ Pokaż pozostałe '+ile+(ile===1?' pytanie':(ile<5?' pytania':' pytań'))+' (razem '+qs.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ var sc=w.nextElementSibling;(sc&&sc.classList.contains('quiz-score')?sc:w).insertAdjacentElement('afterend',b);
+});
+// grafiki przedmiotu
+if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
+if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();
+
+</script>
+</body>
+</html>
