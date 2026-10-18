@@ -388,6 +388,13 @@ W szkolnym modelu atomy tworzą wiązania, bo układ elektronów w związku jest
 ::: karta extra | Elektroujemność i polaryzacja
 **Elektroujemność** — miara zdolności atomu do przyciągania elektronów w wiązaniu; ogólnie rośnie w prawo i w górę, największa — **fluor**. To trend, nie automat: duża różnica elektroujemności **zwykle sprzyja** wiązaniu o silnym charakterze jonowym, mała — kowalencyjnemu; to wskazówka, nie test rozstrzygający. W klasie 7/8 najpierw stosuj prostszą regułę (metal + niemetal → jonowe; niemetale → kowalencyjne).
 Polaryzacja: niespolaryzowane — takie same atomy (H₂, Cl₂); spolaryzowane — różne niemetale (HCl, H₂O): para elektronowa silniej przyciągana przez jeden atom.
+
+**Progi szkolne (skala Paulinga, Δχ = różnica elektroujemności dwóch atomów w wiązaniu):**
+- **Δχ < 0,4** — wiązanie niepolarne kowalencyjne. Przykład: H₂ (Δχ = 0). CH₄: Δχ(C–H) = 2,55 − 2,20 = 0,35, czyli też niepolarne.
+- **0,4 ≤ Δχ ≤ 1,7** — wiązanie spolaryzowane kowalencyjne. Przykłady: HCl (Δχ = 3,16 − 2,20 = 0,96), H₂O (Δχ(O–H) = 3,44 − 2,20 = 1,24).
+- **Δχ > 1,7** — wiązanie jonowe. Przykład: NaCl (Δχ = 3,16 − 0,93 = 2,23).
+
+Skąd progi: próg 0,4 oddziela wiązania „prawie równe" od „przesuniętych" (powstają bieguny); próg 1,7 oddziela „przesunięte" od „oddanych" (elektron przechodzi w całości). Progi są umowne — skala szkolna, nie ostra granica fizyczna.
 :::
 
 ## 7 | Równania reakcji [[basic:E8]] {#rownania}

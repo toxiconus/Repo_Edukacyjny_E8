@@ -180,6 +180,12 @@ Składniki mieszaniny zachowują swoje właściwości ([F02](#mosty)), więc ka�
 | **chromatografia** | różne powinowactwo składników do fazy nieruchomej (bibuła) i ruchomej (rozpuszczalnik) | barwniki w różnych miejscach bibuły | barwniki tuszu |
 | **wirowanie** | różna gęstość, przyspieszone opadanie | osad na dnie probówki | składniki krwi |
 
+**Ciecze niemieszające się — układ warstw.** Gdy w rozdzielaczu zmieszamy dwie ciecze, które się nie mieszają, ułożą się w dwie warstwy: **ciecz o mniejszej gęstości jest na górze, o większej — na dole**. Przyczyna: cięższa ciecz działa większą siłą ciężkości na tę samą objętość, a lżejsza „pływa" po niej jak korek po wodzie. Przykłady: woda (ρ = 1,00 g/cm³) i olej roślinny (ρ ≈ 0,92 g/cm³) — olej na górze; chloroform (ρ ≈ 1,49 g/cm³) i woda — chloroform na dole. Woda i etanol (ρ ≈ 0,79 g/cm³) mieszają się w każdym stosunku, więc nie tworzą warstw — gęstość tu nie decyduje, potrzebna jest destylacja.
+
+**Mini-zadanie:** do cylindra wlano 30 cm³ wody i 50 cm³ oleju (ρ = 0,92 g/cm³). Która warstwa jest na górze? Olej (0,92 < 1,00). Masa oleju: 0,92 g/cm³ · 50 cm³ = 46 g; masa wody: 1,00 g/cm³ · 30 cm³ = 30 g.
+
+**Mnemonik:** „Cięższe dół, lżejsze góra".
+
 **Sączenie a destylacja:** sączenie oddziela ciało stałe od cieczy; destylacja rozdziela ciecze lub odzyskuje rozpuszczalnik z roztworu. **Odparowanie a destylacja:** obie usuwają lotny rozpuszczalnik, ale tylko destylacja go **odzyskuje** — para jest chłodzona w chłodnicy, skrapla się i spływa do odbieralnika.
 
 @model f03-rozdzielanie-v01 | Pracownia: rozdzielanie mieszanin | zawiesiny i roztwór w zlewce — sedymentacja, sączenie, odparowanie; jaką różnicę właściwości wykorzystujesz?
