@@ -196,6 +196,15 @@ Roztwór 10% to 10 g substancji w 100 g **roztworu** (czyli 10 g substancji i 90
 Po zmieszaniu roztworu 10% z roztworem 20% stężenie **musi** wyjść **między 10% a 20%** — bliżej tego roztworu, którego jest więcej. Wynik spoza przedziału = błąd w obliczeniach.
 :::
 
+::: karta extra | Metoda krzyża — ile czego zmieszać
+Masy roztworów o stężeniach Cp₁ < Cp₂ mają się do siebie jak **(Cp₂ − Cp) : (Cp − Cp₁)**, gdzie Cp to stężenie docelowe. Przykład: mamy roztwory 10% i 25%, chcemy 20%.
+
+- różnice: 25 − 20 = **5** (części roztworu 10%), 20 − 10 = **10** (części roztworu 25%),
+- stosunek mas roztworu 10% do 25%: **5 : 10 = 1 : 2**, czyli 100 g roztworu 10% + 200 g roztworu 25%.
+
+Sprawdzenie: masa substancji = 10 + 50 = 60 g, masa roztworu = 300 g, Cp = 60 ÷ 300 · 100% = **20%** ✓.
+:::
+
 ## 7 | Zadania konkursowe z rozpuszczalnością [[exam:KONKURS]] {#konkurs}
 
 ::: karta core | Ile substancji wykrystalizuje po ochłodzeniu?

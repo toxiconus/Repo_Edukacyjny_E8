@@ -212,6 +212,13 @@ Płonące łuczywo gaśnie zarówno w CO₂, jak i w azocie. **Odróżnia je wod
 Przy dostatecznej ilości tlenu węgiel spala się do **CO₂** (C + O₂ → CO₂). Przy **niedoborze tlenu** powstaje **tlenek węgla(II), CO — czad**: 2C + O₂ → 2CO. Czad jest bezbarwny i bezwonny, łączy się z hemoglobiną i blokuje transport tlenu — dlatego potrzebne są sprawne przewody kominowe, wentylacja i czujniki czadu.
 :::
 
+::: karta extra | Spalanie siarki i fosforu — tlenki kwasowe
+Siarka pali się niebieskim płomieniem, a fosfor żółtym: **S + O₂ → SO₂** oraz **4 P + 5 O₂ → 2 P₂O₅**. Oba tlenki są **kwasowe** — w wodzie tworzą roztwory o odczynie kwasowym: **SO₂ + H₂O ⇌ H₂SO₃** (kwas siarkawy), **P₂O₅ + 3 H₂O → 2 H₃PO₄** (kwas fosforowy). Tlenek węgla(II) **CO** i tlenek azotu(II) **NO** z wodą nie reagują — to tlenki obojętne.
+::: ciekawostka
+Fosfor biały samoczynnie zapala się w powietrzu już ok. 30 °C (wartość do weryfikacji), dlatego przechowuje się go pod wodą. Fosfor czerwony jest znacznie trwalszy.
+:::
+:::
+
 @model n01-spalanie-v01 | Spalanie pierwiastków i paliw w tlenie | wybierz substancję — produkt, obserwacje, równanie
 @opis Pracownia spalania: po wybraniu substancji (np. węgla, siarki, magnezu, wodoru, metanu) widać przebieg spalania w tlenie — barwę płomienia i inne obserwacje, produkt oraz równanie reakcji. Wniosek: spalanie to reakcja z tlenem, której produktami są tlenki (paliwa organiczne dają CO₂ i H₂O).
 
