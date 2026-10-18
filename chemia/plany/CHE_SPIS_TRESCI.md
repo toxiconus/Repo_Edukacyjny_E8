@@ -18,7 +18,7 @@ uzupelnia: PLAN_SCIEZKI_DYDAKTYCZNE.md
 - **Mamy:** pliki materiału w `chemia/lekcje_md/<grupa>/` — jeden plik na lekcję (blok F) albo plik zbiorczy starej lekcji v1.1. Na końcu każdego pliku F jest sekcja „MATERIAŁ Z ARCHIWUM — do redakcji” z treściami ze starszych wersji, których nie było w głównej.
 - **Było:** kod w spisie v0.1 (sprzed przenumerowania).
 
-**Bilans:** 113 lekcji w 10 grupach. ●●● 9 · ●●○ 11 · ◐○○ 6 · ●○○ 31 · ○○○ 56.
+**Bilans:** 113 lekcji w 10 grupach. ●●● 9 · ●●○ 13 · ◐○○ 6 · ●○○ 30 · ○○○ 55. (zaktualizowano N01, R03 wg plików w gotowe/)
 
 ## 1. Zasady kanonu
 
@@ -47,9 +47,9 @@ uzupelnia: PLAN_SCIEZKI_DYDAKTYCZNE.md
 
 **F Fundamenty:** ●●● F01 Jak myśli chemik · ●●● F02 Materia i substancje · ●●● F03 Właściwości i rozdzielanie mieszanin · ●●● F04 Atom · ●●○ F05 Izotopy, jony i masa atomowa · ●●○ F06 Układ okresowy · ●●○ F07 Konfiguracja elektronowa · ●●○ F08 Konfiguracja ↔ układ okresowy · ●●○ F09 Wartościowość, ładunek i stopień utlenienia · ◐○○ F10 Dlaczego atomy się łączą · ●●○ F11 Wiązania jonowe, kowalencyjne i metaliczne · ●●○ F12 Wzory chemiczne · ●●○ F13 Wzory elektronowe (Lewis) · ●●○ F14 Geometria cząsteczek (VSEPR) · ◐○○ F15 Polarność i oddziaływania · ●●○ F16 Od obserwacji do modelu reakcji · ●●○ F17 Równania reakcji · ◐○○ F18 Dossier substancji · ◐○○ F19 Dossier reakcji · ◐○○ F20 Klinika błędów fundamentów · ◐○○ F21 Zadania transferowe i diagnostyka
 
-**N Chemia nieorganiczna:** ○○○ N01 Powietrze i gazy · ●●● N02 Tlenki · ●●● N03 Wodorotlenki i zasady · ●●● N04 Kwasy · ●●● N05 Sole · ●●● N06 Wodorki · ○○○ N07 Systematyka nieorganiczna · ○○○ N08 Mapa przemian „co powstanie?”
+**N Chemia nieorganiczna:** ●●○ N01 Powietrze i gazy · ●●● N02 Tlenki · ●●● N03 Wodorotlenki i zasady · ●●● N04 Kwasy · ●●● N05 Sole · ●●● N06 Wodorki · ○○○ N07 Systematyka nieorganiczna · ○○○ N08 Mapa przemian „co powstanie?”
 
-**R Roztwory i stechiometria:** ○○○ R01 Woda i roztwory · ○○○ R02 Rozpuszczalność · ●○○ R03 Stężenie procentowe · ●○○ R04 Mol i masa molowa · ●○○ R05 Stężenie molowe · ○○○ R06 Gazy: objętość molowa · ●○○ R07 Stechiometria · ●○○ R08 Reagent ograniczający · ●○○ R09 Wydajność reakcji
+**R Roztwory i stechiometria:** ○○○ R01 Woda i roztwory · ○○○ R02 Rozpuszczalność · ●●○ R03 Stężenie procentowe · ●○○ R04 Mol i masa molowa · ●○○ R05 Stężenie molowe · ○○○ R06 Gazy: objętość molowa · ●○○ R07 Stechiometria · ●○○ R08 Reagent ograniczający · ●○○ R09 Wydajność reakcji
 
 **J Chemia jonowa:** ○○○ J01 Dysocjacja elektrolityczna · ○○○ J02 pH i odczyn · ○○○ J03 Reakcje jonowe · ○○○ J04 Strącanie osadów · ○○○ J05 Amfoteryczność · ○○○ J06 Równowagi kwasowo-zasadowe · ○○○ J07 Ka, Kb i Kw · ○○○ J08 Hydroliza soli · ○○○ J09 Bufory · ○○○ J10 Iloczyn rozpuszczalności Ksp · ○○○ J11 Identyfikacja jonów · ○○○ J12 Miareczkowanie
 
