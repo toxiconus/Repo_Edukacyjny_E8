@@ -48,8 +48,8 @@ W tej lekcji nauczysz się, jak organizm **utrzymuje stałe warunki wewnętrzne*
 ## 1 | Pojęcie homeostazy {#s1}
 
 **Homeostaza** (z greckiego *homoios* — podobny, *stasis* — trwanie) to **zdolność organizmu do utrzymywania stałych warunków wewnętrznych** mimo zmian w otoczeniu. Organizm utrzymuje:
-- **temperaturę ciała** (u człowieka ok. 36,6 °C — do weryfikacji z normą laboratorną, zwykle 36,5–37,5 °C),
-- **poziom glukozy** we krwi (ok. 70–110 mg/dL na czczo — do weryfikacji),
+- **temperaturę ciała** (u człowieka ok. 36,5–37,5 °C; średnia doustna ok. 36,8 °C, a według nowszych badań średnia temperatura wewnętrzna ok. 36,4 °C — źródło: Wikipedia, Human body temperature),
+- **poziom glukozy** we krwi (na czczo 70–100 mg/dL, czyli 3,9–5,6 mmol/L — norma wg ADA),
 - **objętość wody** i stężenie osmotyczne (ok. 290 mOsm/L — do weryfikacji),
 - **pH krwi** (ok. 7,35–7,45),
 - **ciśnienie krwi** (ok. 120/80 mmHg — do weryfikacji z normą wiekową),
@@ -67,7 +67,7 @@ Każda regulacja homeostatyczna działa w **pętli zamkniętej** z 5 elementami:
 
 | Element | Rola | Przykład (termoregulacja) |
 |---|---|---|
-| **Norma** (wartość zadana) | „to chcemy utrzymać" | 36,6 °C |
+| **Norma** (wartość zadana) | „to chcemy utrzymać" | ok. 36,5–37,5 °C |
 | **Czujnik** (receptor) | mierzy wartość rzeczywistą | termoreceptory w skórze i hipotalamusie |
 | **Ster** (centrum sterujące) | porównuje z normą, wysyła sygnał | hipotalamus |
 | **Efektor** (wykonawca) | wykonuje polecenie | mięśnie (dreszcze), naczynia, gruczoły potowe |
@@ -112,7 +112,7 @@ Każda regulacja homeostatyczna działa w **pętli zamkniętej** z 5 elementami:
 
 ## 5 | Regulacja temperatury {#s5}
 
-**Norma:** ~36,6 °C.
+**Norma:** ok. 36,5–37,5 °C (średnio ok. 36,8 °C doustnie).
 
 **Czujniki:**
 - **Termoreceptory skóry** — mierzą temperaturę zewnętrzną.
@@ -139,7 +139,7 @@ Każda regulacja homeostatyczna działa w **pętli zamkniętej** z 5 elementami:
 
 ## 6 | Regulacja glukozy {#s6}
 
-**Norma:** 70–110 mg/dL na czczo (do weryfikacji).
+**Norma:** 70–100 mg/dL na czczo (3,9–5,6 mmol/L, wg ADA). Wartości 100–125 mg/dL to wynik podwyższony.
 
 **Czujniki:** **β-komórki** i **α-komórki trzustki** (Langerhansa) same mierzą stężenie glukozy.
 
@@ -170,7 +170,7 @@ Każda regulacja homeostatyczna działa w **pętli zamkniętej** z 5 elementami:
 
 **Pętla:**
 ```
-   NORMA (70–110 mg/dL)
+   NORMA (70–100 mg/dL)
         ↓ (odchylenie — np. posiłek)
    CZUJNIK (β/α-komórki trzustki)
         ↓
@@ -211,7 +211,7 @@ Każda regulacja homeostatyczna działa w **pętli zamkniętej** z 5 elementami:
 5. Stężenie osmotyczne wraca do normy.
 
 ::: ciekawostka
-**Diabetes insipidus** (moczówka prosta) to choroba spowodowana brakiem ADH lub niewrażliwością nerek na ADH. Pacjent produkuje **do 20 L moczu na dobę** (do weryfikacji; normalnie 1–2 L) i musi pić tyle samo, aby uniknąć śmiertelnego odwodnienia. Leczy się syntetyczną wazopresyną (desmopresyną) w nosie lub w tabletkach.
+**Diabetes insipidus** (moczówka prosta) to choroba spowodowana brakiem ADH lub niewrażliwością nerek na ADH. Pacjent produkuje **do 20 L moczu na dobę** (Wikipedia: „nearly 20 liters per day”; normalna produkcja moczu ok. 1–2 L — wartość orientacyjna) i musi pić tyle samo, aby uniknąć śmiertelnego odwodnienia. Leczy się syntetyczną wazopresyną (desmopresyną) w nosie lub w tabletkach.
 :::
 
 ## 8 | Regulacja pH i innych parametrów {#s8}
@@ -252,7 +252,7 @@ To jest kluczowa umiejętność na etapie rejonowym — **przewidzieć skutki us
 
 | Co uszkodzone | Skutek |
 |---|---|
-| **Hipotalamus (uszkodzenie osmoreceptorów)** | brak ADH → **diabetes insipidus** — produkcja 15–20 L moczu na dobę, silne pragnienie, ryzyko odwodnienia |
+| **Hipotalamus (uszkodzenie osmoreceptorów)** | brak ADH → **diabetes insipidus** — produkcja do ok. 20 L moczu na dobę, silne pragnienie, ryzyko odwodnienia |
 | **Przysadka (brak uwalniania ADH)** | jak wyżej — diabetes insipidus centralny |
 | **Nerki (brak odpowiedzi na ADH)** | **diabetes insipidus nerkowy** — nerki nie reagują na ADH, mocz jasny i obfity |
 | **Reabsorpcja w nerkach (zaburzona)** | utrata wody i elektrolitów — zaburzenia ciśnienia, ryzyko wstrząsu |
@@ -296,8 +296,8 @@ Zdefiniuj homeostazę i wymień 4 główne parametry utrzymywane przez organizm.
 **Homeostaza** — zdolność organizmu do utrzymywania stałych warunków wewnętrznych mimo zmian w otoczeniu. (2 pkt)
 
 **4 parametry**: (2 pkt)
-- temperatura ciała (~36,6 °C),
-- poziom glukozy we krwi (~70–110 mg/dL na czczo),
+- temperatura ciała (ok. 36,5–37,5 °C),
+- poziom glukozy we krwi (ok. 70–100 mg/dL na czczo),
 - objętość wody / stężenie osmotyczne,
 - pH krwi (~7,35–7,45).
 
@@ -307,7 +307,7 @@ Zdefiniuj homeostazę i wymień 4 główne parametry utrzymywane przez organizm.
 Wymień 5 elementów pętli regulacyjnej i opisz rolę każdego.
 
 **Rozwiązanie:**
-1. **Norma** — wartość zadana, np. 36,6 °C. (1 pkt)
+1. **Norma** — wartość zadana, np. 36,8 °C. (1 pkt)
 2. **Czujnik** (receptor) — mierzy wartość rzeczywistą. (1 pkt)
 3. **Ster** (centrum) — porównuje z normą, wysyła sygnał. (1 pkt)
 4. **Efektor** (wykonawca) — wykonuje polecenie. (1,5 pkt)
@@ -347,7 +347,7 @@ Co się stanie z pacjentem, którego przysadka nie uwalnia ADH? Opisz objawy i m
 
 **Rozwiązanie:**
 1. Bez ADH kanaliki zbiorcze w nerkach nie mają akwaporyn → woda nie jest reabsorbowana. (1,5 pkt)
-2. Mocz jest jasny, obfity — **15–20 L dziennie** (diabetes insipidus). (1,5 pkt)
+2. Mocz jest jasny, obfity — **do ok. 20 L dziennie** (diabetes insipidus). (1,5 pkt)
 3. Organizm szybko się odwadnia — stężenie osmotyczne krwi rośnie. (1 pkt)
 4. Hipotalamus aktywuje ośrodek pragnienia — pacjent pije bardzo dużo (np. 15 L dziennie). (1 pkt)
 5. Leczy się syntetyczną wazopresyną (desmopresyną) — w nosie lub w tabletkach.
@@ -510,8 +510,8 @@ Przed egzaminem sprawdź, czy umiesz:
 ## Pytania do autora
 
 1. Pliki źródłowe: materiał wejściowy (surowy wynik) nie zawiera pliku `BIO_B2_homeostaza.md` z olimpiady — przyjęto, że treść jest pisana od zera, z odniesieniami do B2e i B10. Czy są inne źródła do porównania?
-2. Norma temperatury ciała: przyjęto 36,6 °C (zakres 36,5–37,5 °C). Czy etap rejonowy podaje jedną wartość?
-3. Norma glukozy na czczo: przyjęto 70–110 mg/dL. Czy obowiązuje też wartość 70–100 mg/dL?
+2. Norma temperatury ciała: przyjęto 36,5–37,5 °C (Wikipedia; średnia doustna ok. 36,8 °C). Czy etap rejonowy podaje jedną wartość?
+3. Norma glukozy na czczo: przyjęto 70–100 mg/dL (ADA). Czy zakres etapu używa innej wartości?
 4. Ciśnienie krwi: przyjęto 120/80 mmHg jako normę orientacyjną. Czy zakres olimpiady używa klasycznej wartości, czy nowszej (130/80)?
 5. Termogeneza bez drżeń (brązowa tkanka tłuszczowa): przyjęto jako element wiedzy poszerzającej. Czy etap rejonowy ją wymaga?
 6. Glukoneogeneza i aldosteron: przyjęto, że są wspomniane, nie wymagane. Czy potwierdzić?
@@ -521,5 +521,5 @@ Przed egzaminem sprawdź, czy umiesz:
 ## Do potwierdzenia z zakresem etapu
 
 - Wartości norm (temperatura, glukoza, ciśnienie, osmolarność) i kcal z potu — do weryfikacji z tablicami.
-- Dane o wielbłądzie usunięte jako niepewne; diabetes insipidus „do 20 L” — do weryfikacji.
+- Dane o wielbłądzie usunięte jako niepewne; diabetes insipidus „do ok. 20 L” — źródło: Wikipedia (EN).
 - Zakres RAAS i termogenezy bez drżeń — do potwierdzenia z zakresem etapu.

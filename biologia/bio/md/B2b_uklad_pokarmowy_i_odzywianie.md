@@ -44,8 +44,8 @@ Nauczysz się budowy układu pokarmowego, procesu trawienia i wchłaniania, oraz
 2. **Gardło** (pharynx) — krzyżowanie dróg oddechowej i pokarmowej. **Nadgłośnia** zamyka wdech podczas przełykania.
 3. **Przełyk** (esophagus) — ok. 25 cm, transport pokarmu do żołądka przez perystaltykę.
 4. **Żołądek** — objętość 1–1,5 L. Produkuje **HCl** (pH 1,5–2,5) i **pepsynę** (z pepsynogenu). 4 części: wpust, dno, trzon, odźwiernik.
-5. **Jelito cienkie** — ok. 6–7 m. 3 odcinki: dwunastnica (30 cm — przyjm soki z wątroby i trzustki), jelito czcze (2,5 m), jelito kręte (3,5 m). Miejsce **trawienia** i **wchłaniania**.
-6. **Jelito grube** — ok. 1,5 m. 4 odcinki: kątnica z wyrostkiem robaczkowym, wstępnica, poprzecznica, zstępnica. Funkcje: wchłanianie **wody** i elektrolitów, formowanie kału, flora bakteryjna (produkuje witaminę K, biotynę).
+5. **Jelito cienkie** — u żywego człowieka ok. 3–5 m (po śmierci ok. 6,5 m — źródło: Wikipedia). 3 odcinki: dwunastnica (ok. 30 cm — przyjmuje soki z wątroby i trzustki), jelito czcze (ok. 2/5 długości), jelito kręte (ok. 3/5). Miejsce **trawienia** i **wchłaniania**.
+6. **Jelito grube** — ok. 1,5 m. 4 odcinki: kątnica z wyrostkiem robaczkowym, wstępnica, poprzecznica, zstępnica. Funkcje: wchłanianie **wody** i elektrolitów, formowanie kału, flora bakteryjna (bakterie syntetyzują witaminę K2, nie K1 — wg Wikipedii; udział ilościowy do weryfikacji).
 7. **Odbytnica** — magazyn kału (do 200 mL), defekacja.
 
 ## 2 | Gruczoły dopawowe {#s2}
@@ -101,7 +101,7 @@ Dodatkowo: nabłonek żołądka **odnawia się co 3–5 dni** — więc uszkodze
 - naczynia limfatyczne (mlleczkowe) — wchłaniają tłuszcze,
 - komórki nabłonka z mikro-kosmkami.
 
-**Mikrokosmki (microvilli)** — drobne wypusty na komórkach nabłonka kosmków. Dają „szczoteczkę" o powierzchni **600× większej** niż gładki nabłonek. Łączna powierzchnia jelita cienkiego człowieka: ok. 30 m² (poziom boiskowy do koszykówki).
+**Mikrokosmki (microvilli)** — drobne wypusty na komórkach nabłonka kosmków. Dają „szczoteczkę" o powierzchni wielokrotnie większej niż gładki nabłonek (w literaturze podawane ok. 600×, do weryfikacji). Łączna powierzchnia błony śluzowej jelita cienkiego: ok. 30 m² (Helander i Fändriks, 2015, cytowane w Wikipedii) (poziom boiskowy do koszykówki).
 
 **Wchłanianie (schemat):**
 - **Aminokwasy + cukry proste (glukoza, fruktoza, galaktoza)** → krew (naczynia włosowate kosmków) → żyła wrotna → wątroba.
@@ -152,11 +152,11 @@ W wieku 13–15 lat: wyższe zapotrzebowanie (ok. 2400–2800 kcal) — ze wzgl�
 ## Ciekawostki i mnemotechniki
 
 ::: ciekawostka
-Łączna powierzchnia kosmków i mikrokosmków jelita cienkiego wynosi ok. **30 m²** (wartość do weryfikacji — w literaturze podawane są też wyższe szacunki, uwzględniające fałdy Kerckringa). Gdyby wyłożyć ją płasko, zajęłaby mniej więcej powierzchnię małego pokoju.
+Łączna powierzchnia kosmków i mikrokosmków jelita cienkiego wynosi ok. **30 m²** (źródło: Helander i Fändriks, 2015, cytowane w Wikipedii; starsze szacunki bywają wyższe, np. 200 m² — do weryfikacji). Gdyby wyłożyć ją płasko, zajęłaby mniej więcej powierzchnię małego pokoju.
 :::
 
 ::: ciekawostka
-**Wyrostek robaczkowy** (appendix) — długo uważany za „bezużyteczny". Dziś wiadomo, że jest **schroniskiem flory bakteryjnej** jelita grubego — po biegunce flora odbudowuje się właśnie z wyrostka. (Do weryfikacji z aktualną literaturą medyczną.)
+**Wyrostek robaczkowy** (appendix) — długo uważany za „bezużyteczny". Hipoteza (Parker i wsp., 2007): wyrostek jest **zbiornikiem (schroniskiem) flory bakteryjnej** — po biegunce flora może odbudowywać się z wyrostka. Dane są wstępne, a funkcja nie jest w pełni potwierdzona (Wikipedia: „apparent function”).
 :::
 
 ::: mnemonik
@@ -188,7 +188,7 @@ Czym różnią się kosmki od mikrokosmków? Jak zwiększają powierzchnię wch�
 **Rozwiązanie:**
 - **Kosmki** (villi) — palczaste wypusty błony śluzowej jelita, ok. 1 mm długości; zawierają naczynia krwionośne i limfatyczne. (1,5 pkt)
 - **Mikrokosmki** (microvilli) — drobne wypusty na komórkach nabłonka kosmków, tworzące „szczoteczkę". (1,5 pkt)
-- Łączna powierzchnia wchłaniania: ~30 m² (ok. 600× więcej niż gładki nabłonek). (1 pkt)
+- Łączna powierzchnia wchłaniania: ~30 m² (wielokrotnie więcej niż gładki nabłonek). (1 pkt)
 
 ### Ćwiczenie 3 (4 pkt) — wchłanianie
 Co wchłania się do **krwi**, a co do **limfy**? Wyjaśnij.
@@ -265,7 +265,7 @@ Witamina C **nie jest magazynowana** — trzeba codziennie dostarczać. Witaminy
 Jelito grube **nie trawi** (poza drobnymi procesami bakteryjnymi, np. fermentacją błonnika). Wchłania głównie **wodę** i elektrolity.
 
 ### Pułapka 9. Wyrostek jako bezużyteczny
-Wyrostek jest **schroniskiem flory** — nie jest bezużyteczny, ale nie jest niezbędny do życia (usunięcie jest tolerowane).
+Funkcja wyrostka nie jest w pełni wyjaśniona (hipoteza schroniska flory), ale jego usunięcie jest tolerowane.
 
 ### Pułapka 10. Energia z wody
 Woda ma **0 kcal** — to nie dostarcza energii, ale jest niezbędna do reakcji.
@@ -346,7 +346,7 @@ Woda ma **0 kcal** — to nie dostarcza energii, ale jest niezbędna do reakcji.
 - [ ] 3 gruczoły dopawowe (ślinianki, wątroba, trzustka).
 - [ ] Tabela enzymów z substratem i produktem.
 - [ ] Rola żółci (emulguje, nie trawi).
-- [ ] Kosmki i mikrokosmki (powierzchnia 30 m², 600×).
+- [ ] Kosmki i mikrokosmki (powierzchnia ok. 30 m²).
 - [ ] Wchłanianie: krew (aminokwasy, cukry) vs limfa (tłuszcze).
 - [ ] Wartości energetyczne: 4/9/4 kcal/g.
 - [ ] Witaminy ADEK (tłuszcz) vs BC (woda).
@@ -359,16 +359,16 @@ Woda ma **0 kcal** — to nie dostarcza energii, ale jest niezbędna do reakcji.
 
 1. Pliki źródłowe: nie dostarczono pliku `BIO_B2b_uklad_pokarmowy_i_odzywianie.md` — lekcja pisana od zera; czy są materiały do porównania?
 2. Enzymy: przyjęto tabelę z 9 enzymami (w tym sacharazę i laktazę). Czy etap rejonowy wymaga wszystkich, czy 5 głównych?
-3. Witamina K i flora jelitowa: przyjęto, że flora jelita grubego może ją syntetyzować (wzmianka). Czy zakres tego wymaga?
+3. Witamina K: flora jelitowa syntetyzuje K2, nie K1 (wg Wikipedii); w lekcji jako wzmianka. Czy zakres tego wymaga?
 4. Piramida żywienia: nie dodano piramidy ani talerza zdrowia; przyjęto rozkład energii z tekstu. Czy dodać aktualny model talerza?
 5. Błonnik: przyjęto wzmiankę bez podziału na rozpuszczalny i nierozpuszczalny. Czy etap wymaga podziału?
 6. Chylomikrony: przyjęto jako pojęcie poszerzające, nie wymagane. Czy potwierdzić?
-7. Powierzchnia kosmków (30 m² vs 200 m²): przyjęto 30 m² z oznaczeniem „do weryfikacji”. Czy zakres podaje wartość?
+7. Powierzchnia kosmków: przyjęto ok. 30 m² (Helander i Fändriks, 2015). Czy zakres podaje wartość?
 8. Dieta cukrzycowa: poza zakresem tej lekcji; nie dodano. Czy potrzebna osobna lekcja?
 
 ## Do potwierdzenia z zakresem etapu
 
 - Wartości energetyczne i zapotrzebowanie kaloryczne — do weryfikacji z tablicami żywieniowymi.
-- Powierzchnia kosmków i mikrokosmków (30 m²) — do weryfikacji.
-- Działanie wyrostka jako schroniska flory — do weryfikacji z aktualną literaturą.
+- Powierzchnia kosmków i mikrokosmków (ok. 30 m²) — źródło: Helander i Fändriks (2015).
+- Wyrostek jako schronisko flory — hipoteza, dane wstępne.
 - Witamina K syntetyzowana przez florę — do potwierdzenia z zakresem.
