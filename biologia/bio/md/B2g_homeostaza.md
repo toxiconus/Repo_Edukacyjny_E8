@@ -50,9 +50,9 @@ W tej lekcji nauczysz się, jak organizm **utrzymuje stałe warunki wewnętrzne*
 **Homeostaza** (z greckiego *homoios* — podobny, *stasis* — trwanie) to **zdolność organizmu do utrzymywania stałych warunków wewnętrznych** mimo zmian w otoczeniu. Organizm utrzymuje:
 - **temperaturę ciała** (u człowieka ok. 36,5–37,5 °C; średnia doustna ok. 36,8 °C, a według nowszych badań średnia temperatura wewnętrzna ok. 36,4 °C — źródło: Wikipedia, Human body temperature),
 - **poziom glukozy** we krwi (na czczo 70–100 mg/dL, czyli 3,9–5,6 mmol/L — norma wg ADA),
-- **objętość wody** i stężenie osmotyczne (ok. 290 mOsm/L — do weryfikacji),
+- **objętość wody** i stężenie osmotyczne (osmolalność osocza ok. 275–299 mOsm/kg — Wikipedia, Serum osmolality),
 - **pH krwi** (ok. 7,35–7,45),
-- **ciśnienie krwi** (ok. 120/80 mmHg — do weryfikacji z normą wiekową),
+- **ciśnienie krwi** (prawidłowe poniżej 120/80 mmHg wg AHA/ACC 2017; inne towarzystwa podają nieco inne progi),
 - **stężenie gazów** (O₂, CO₂).
 
 **Dlaczego to jest konieczne?** Enzymy organizmu działają tylko w wąskim zakresie temperatury i pH. Spadek temperatury o 2–3 °C — enzymy zwalniają, metabolizm załamuje się. Wzrost o 2–3 °C — białka zaczynają się denaturować (gorączka powyżej 42 °C jest śmiertelna — do weryfikacji). Stąd **utrzymanie stałości** to fundament życia.
@@ -132,7 +132,7 @@ Każda regulacja homeostatyczna działa w **pętli zamkniętej** z 5 elementami:
 | Zimno | tarczyca | **zwiększona tyroksyna** (T4) → wyższy metabolizm → więcej ciepła |
 | Zimno | tkanka tłuszczowa brązowa | **termogeneza bez drżeń** (u noworodków, hibernujących zwierząt) |
 | **Gorąco (hipertermia)** | naczynia skóry | **rozszerzenie** (wazodylatacja) — więcej ciepła przez skórę (skóra czerwona) |
-| Gorąco | gruczoły potowe | **pocenie** — parowanie chłodzi skórę (~580 kcal/L potu — do weryfikacji) |
+| Gorąco | gruczoły potowe | **pocenie** — parowanie chłodzi skórę (ilość energii na litr potu — do weryfikacji; dorosły wydziela do 2–4 L/h przy dużym wysiłku i w upale) |
 | Gorąco | mięśnie | spadek napięcia, zmniejszenie produkcji ciepła |
 
 **Ważne:** w gorączce hipotalamus **resetuje** termostat na wyżej (np. 39 °C) z powodu działania **prostaglandyn** uwalnianych w infekcji. Organizm „odczuwa" 39 °C jako nową normę — stąd **dreszcze** w początkowej fazie gorączki (mimo że jest „gorąco"). Leki przeciwgorączkowe (aspiryna, paracetamol) blokują prostaglandyny — termostat wraca do 36,6 °C, organizm zaczyna się chłodzić (silne pocenie — tzw. „obfite poty" po gorączce).
@@ -188,7 +188,7 @@ Każda regulacja homeostatyczna działa w **pętli zamkniętej** z 5 elementami:
 
 ## 7 | Regulacja wody {#s7}
 
-**Norma:** objętość krwi i stężenie osmotyczne (ok. 290 mOsm/L — do weryfikacji).
+**Norma:** objętość krwi i osmolalność osocza (ok. 275–299 mOsm/kg — wg Wikipedii).
 
 **Czujniki:** **osmoreceptory w hipotalamusie** (mierzą stężenie osmotyczne krwi — gdy wody mało, stężenie rośnie). Dodatkowo: receptory objętości w sercu i dużych naczyniach.
 
@@ -520,6 +520,7 @@ Przed egzaminem sprawdź, czy umiesz:
 
 ## Do potwierdzenia z zakresem etapu
 
-- Wartości norm (temperatura, glukoza, ciśnienie, osmolarność) i kcal z potu — do weryfikacji z tablicami.
+- Temperatura, glukoza, ciśnienie i osmolalność — źródła: Wikipedia (EN), ADA, AHA/ACC 2017; progi mogą się różnić w zależności od towarzystwa — do potwierdzenia z zakresem etapu.
+- Energia odparowania potu (kcal/L) — brak potwierdzenia, do weryfikacji.
 - Dane o wielbłądzie usunięte jako niepewne; diabetes insipidus „do ok. 20 L” — źródło: Wikipedia (EN).
 - Zakres RAAS i termogenezy bez drżeń — do potwierdzenia z zakresem etapu.

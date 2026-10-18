@@ -45,7 +45,7 @@ Nauczysz się budowy układu pokarmowego, procesu trawienia i wchłaniania, oraz
 3. **Przełyk** (esophagus) — ok. 25 cm, transport pokarmu do żołądka przez perystaltykę.
 4. **Żołądek** — objętość 1–1,5 L. Produkuje **HCl** (pH 1,5–2,5) i **pepsynę** (z pepsynogenu). 4 części: wpust, dno, trzon, odźwiernik.
 5. **Jelito cienkie** — u żywego człowieka ok. 3–5 m (po śmierci ok. 6,5 m — źródło: Wikipedia). 3 odcinki: dwunastnica (ok. 30 cm — przyjmuje soki z wątroby i trzustki), jelito czcze (ok. 2/5 długości), jelito kręte (ok. 3/5). Miejsce **trawienia** i **wchłaniania**.
-6. **Jelito grube** — ok. 1,5 m. 4 odcinki: kątnica z wyrostkiem robaczkowym, wstępnica, poprzecznica, zstępnica. Funkcje: wchłanianie **wody** i elektrolitów, formowanie kału, flora bakteryjna (bakterie syntetyzują witaminę K2, nie K1 — wg Wikipedii; udział ilościowy do weryfikacji).
+6. **Jelito grube** — ok. 1,5–1,7 m u dorosłego (średnio 155–166 cm — Wikipedia). 4 odcinki: kątnica z wyrostkiem robaczkowym, wstępnica, poprzecznica, zstępnica. Funkcje: wchłanianie **wody** i elektrolitów, formowanie kału, flora bakteryjna (bakterie jelita grubego wytwarzają m.in. tiaminę, ryboflawinę i witaminę K — głównie K2; udział ilościowy do weryfikacji).
 7. **Odbytnica** — magazyn kału (do 200 mL), defekacja.
 
 ## 2 | Gruczoły dopawowe {#s2}
@@ -371,4 +371,4 @@ Woda ma **0 kcal** — to nie dostarcza energii, ale jest niezbędna do reakcji.
 - Wartości energetyczne i zapotrzebowanie kaloryczne — do weryfikacji z tablicami żywieniowymi.
 - Powierzchnia kosmków i mikrokosmków (ok. 30 m²) — źródło: Helander i Fändriks (2015).
 - Wyrostek jako schronisko flory — hipoteza, dane wstępne.
-- Witamina K syntetyzowana przez florę — do potwierdzenia z zakresem.
+- Witamina K: bakterie wytwarzają K2, nie K1 (Wikipedia) — udział ilościowy do potwierdzenia z zakresem.
