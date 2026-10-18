@@ -144,7 +144,7 @@ Współczynniki w równaniu reakcji określają **stosunek liczby moli** substra
 Z prawa Avogadra wynika, że 1 mol dowolnego gazu w warunkach normalnych zajmuje **22,4 dm³** — niezależnie od tego, czy to H₂, O₂, CO₂ czy N₂.
 
 ::: ciekawostka
-W warunkach standardowych (25 °C, 1000 hPa) objętość molowa wynosi ok. 24,5 dm³/mol (do weryfikacji z konwencją etapu wojewódzkiego).
+W warunkach standardowych (25 °C, 1000 hPa) objętość molowa wynosi ok. 24,5 dm³/mol. Według IUPAC z 1982 r. (0 °C, 1 bar) jest to ok. 22,7 dm³/mol, a w tej lekcji stosujemy klasyczne warunki normalne 0 °C, 1013 hPa i wartość 22,4 dm³/mol (do weryfikacji z konwencją etapu).
 :::
 
 ### 8. Mol w wyobraźni

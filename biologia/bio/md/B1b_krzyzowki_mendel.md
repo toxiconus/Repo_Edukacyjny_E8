@@ -193,9 +193,12 @@ Liczby z doświadczeń Mendla — do weryfikacji z oryginalną publikacją z 186
 | kolor nasion (żółty : zielony) | 6022 : 2001 | 3,01 : 1 |
 | kształt nasion (gładki : pomarszczony) | 5474 : 1850 | 2,96 : 1 |
 | kolor strąków (zielony : żółty) | 428 : 152 | 2,82 : 1 |
+| kolor kwiatów (czerwony : biały) | 705 : 224 | 3,15 : 1 |
 | kształt strąków (napęczniały : ścisnięty) | 882 : 299 | 2,95 : 1 |
 | położenie kwiatów (kątowe : szczytowe) | 651 : 207 | 3,14 : 1 |
 | długość łodygi (długa : krótka) | 787 : 277 | 2,84 : 1 |
+
+Pierwsze cztery wiersze (kolor i kształt nasion, kolor strąków, kolor kwiatów) potwierdzono w opracowaniu Uniwersytetu Waszyngtońskiego (faculty.washington.edu/eathomp/Genetics). Pozostałe trzy wiersze pochodzą z tradycyjnie cytowanych danych — do weryfikacji z oryginalną publikacją z 1866 r.
 
 Wszystkie stosunki są bliskie 3 : 1, co potwierdza drugie prawo Mendla.
 
@@ -383,8 +386,8 @@ Przed sprawdzianem lub zawodami sprawdź, czy umiesz:
 
 ## Do potwierdzenia przed publikacją
 
-1. Dane liczbowe Mendla (6022 : 2001 itd.) — do weryfikacji z oryginalną publikacją z 1866 r.
-2. Liczba roślin w doświadczeniach Mendla (ok. 28 000) — do weryfikacji.
+1. Dane liczbowe Mendla: cztery pierwsze wiersze potwierdzone; trzy pozostałe — do weryfikacji z publikacją z 1866 r.
+2. Liczba roślin i lata doświadczeń Mendla (ok. 28 000 roślin, ok. 8 lat) — nie potwierdzono źródłowo; do weryfikacji.
 3. Czy na etapie wojewódzkim wymagane są cechy sprzężone z płcią, czy tylko wzmianka?
 4. Czy dominacja niepełna i kodominacja są w zakresie? Lekcja podaje je jako ciekawostkę.
 5. Numeracja lekcji (B1b / L011) — do uzgodnienia z BIO_KATALOG.

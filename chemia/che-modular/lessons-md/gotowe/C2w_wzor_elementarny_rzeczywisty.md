@@ -123,7 +123,7 @@ gdzie M(H₂O) = 18 g/mol.
 **Przykład: CuSO₄·5H₂O.**
 - M(CuSO₄) = 64 + 32 + 4 · 16 = 160 g/mol,
 - M(5 H₂O) = 5 · 18 = 90 g/mol,
-- M(hydratu) = 250 g/mol.
+- M(hydratu) = 250 g/mol (przy dokładnych masach atomowych 249,7 g/mol; w lekcji zaokrąglono).
 
 Skład procentowy:
 - %Cu = 64 / 250 · 100% = **25,6%**,
@@ -134,7 +134,7 @@ Skład procentowy:
 Sprawdzenie: 25,6 + 12,8 + 25,6 + 36,0 = 100%.
 
 ::: ciekawostka
-Kryształy CuSO₄·5H₂O są niebieskie. Po ogrzaniu powyżej ok. 100 °C tracą wodę krystalizacyjną i stają się białe (CuSO₄ bezwodny). Ten proces jest odwracalny: dodanie wody przywraca niebieski kolor (wartości temperatur do weryfikacji).
+Kryształy CuSO₄·5H₂O są niebieskie. Woda krystalizacyjna odchodzi stopniowo; ostatnia cząsteczka wody opuszcza strukturę dopiero w ok. 200 °C, a bezwodny CuSO₄ jest biały. Proces jest odwracalny: dodanie wody przywraca niebieski kolor. Źródło: Wikipedia, hasło „Copper(II) sulfate” (sprawdzono 2026-10-18).
 :::
 
 ::: ciekawostka
@@ -301,6 +301,6 @@ Przed zawodami sprawdź, czy umiesz:
 
 1. Czy hydraty mają być w zakresie etapu wojewódzkiego? Lekcja je wprowadza z oznaczeniem poziomu.
 2. Konwencja nazewnictwa hydratów: „pięciowodny” czy „5-wodny”? Lekcja używa pierwszej formy.
-3. Temperatury rozkładu hydratów (ok. 100 °C dla CuSO₄·5H₂O, ok. 150 °C dla gipsu) — do weryfikacji.
+3. Temperatura utraty wody przez gips (ok. 150 °C) — do weryfikacji; dla CuSO₄·5H₂O potwierdzono ok. 200 °C (ostatnia cząsteczka wody).
 4. Czy nazwy zwyczajowe (soda krystaliczna, witriol zielony, gips) są wymagane w konkursie?
 5. Czy spójność z C1c została zachowana? Wynik obu metod jest ten sam (ćw. 9).
