@@ -64,7 +64,7 @@ stopka: **BIOLOGIA REV01 v1.0** · Organizacja i chemizm życia · 2026
 
 @viz lancuch {kroki="komórka|podstawowa jednostka > tkanka|komórki o podobnej budowie i funkcji > narząd|kilka tkanek, wspólna funkcja > układ narządów|narządy współpracujące > organizm|całość"} | Od komórki do organizmu | kliknij poziom
 
-Komórki o podobnej budowie i funkcji tworzą **tkanki**, tkanki budują **narządy**, narządy współtworzą **układy narządów**. Atomy i cząsteczki to materia, z której zbudowane są struktury biologiczne, a nie poziomy organizacji organizmu w tym samym sensie. **Nie każdy organizm ma wszystkie poziomy:** bakteria jest jedną komórką, a mchy nie mają tkanek takich jak rośliny nasienne.
+Komórki o podobnej budowie i funkcji tworzą **tkanki**, tkanki budują **narządy**, narządy współtworzą **układy narządów**. Na początku hierarchii stoją **atomy** i **cząsteczki** (np. atom węgla w cząsteczce glukozy). W konwencji olimpijskiej atom jest pierwszym poziomem organizacji życia: atom → cząsteczka → organelle → komórka → tkanka → narząd → układ narządów → organizm → populacja → biocenoza → ekosystem → biosfera (konwencję poziomów do potwierdzenia z materiałami etapu). **Nie każdy organizm ma wszystkie poziomy:** bakteria jest jedną komórką, a mchy nie mają tkanek takich jak rośliny nasienne.
 
 | Komórka wyspecjalizowana | Przystosowanie | Funkcja |
 |---|---|---|
@@ -73,6 +73,46 @@ Komórki o podobnej budowie i funkcji tworzą **tkanki**, tkanki budują **narz�
 | erytrocyt ssaka | kształt dwuwklęsłego krążka, dojrzały bez jądra | transport tlenu |
 | włośnik korzeniowy | duża powierzchnia kontaktu z glebą | pobieranie wody i soli |
 | komórka szparkowa | zmienia kształt | otwieranie i zamykanie aparatu szparkowego |
+
+### 1.1 Pierwiastki życia — makro- i mikroelementy {#pierwiastki}
+
+Organizm zbudowany jest z kilkunastu pierwiastków, które dzielimy według ilości potrzebnej organizmowi:
+- **makroelementy** — potrzebne w dużych ilościach (w przybliżeniu powyżej 0,01% masy ciała — próg do potwierdzenia),
+- **mikroelementy** — potrzebne w śladowych ilościach.
+
+**Ważność nie równa się ilości.** Żelazo jest niezbędne, ale potrzebne w małych ilościach, więc jest mikroelementem.
+
+**Makroelementy i ich rola:**
+- **C** (węgiel) — szkielet wszystkich związków organicznych,
+- **H** i **O** — składniki wody i większości związków organicznych,
+- **N** (azot) — białka, kwasy nukleinowe, ATP,
+- **P** (fosfor) — DNA, RNA, ATP, kości i zęby,
+- **S** (siarka) — składnik niektórych białek,
+- **K** i **Na** — przewodzenie impulsów nerwowych, równowaga wodna,
+- **Ca** (wapń) — kości, zęby, skurcz mięśni, krzepnięcie krwi,
+- **Mg** (magnez) — składnik chlorofilu i kofaktor enzymów,
+- **Cl** (chlor) — składnik kwasu solnego w żołądku, równowaga jonowa.
+
+**Mikroelementy (przykłady):**
+- **Fe** (żelazo) — składnik hemoglobiny, transport tlenu,
+- **I** (jod) — składnik hormonów tarczycy,
+- **Cu** (miedź) — kofaktor enzymów,
+- **Zn** (cynk) — kofaktor wielu enzymów,
+- **Co** (kobalt) — składnik witaminy B₁₂,
+- **F** (fluor) — budowa szkliwa zębów,
+- **Se** (selen) — składnik enzymów antyoksydacyjnych.
+
+**Pułapka:** żelazo nie jest makroelementem, choć jest bardzo ważne. Niedobór żelaza prowadzi do niedokrwistości (anemii).
+
+**Pytanie kontrolne:** wymień po pięć makro- i mikroelementów wraz z ich funkcją.
+
+::: ciekawostka
+Hemocyjanina, barwnik krwi ośmiornic i krabów, zawiera miedź zamiast żelaza. Dlatego ich krew jest niebieska, gdy jest utleniona.
+:::
+
+::: mnemonik
+**CHNOPS** to sześć pierwiastków głównych składników białek i kwasów nukleinowych: **C**, **H**, **N**, **O**, **P**, **S**.
+:::
 
 ## 2 | Mikroskop — jak obserwować [[basic:E8]] {#mikroskop}
 

@@ -127,6 +127,29 @@ Klasyfikacja porządkuje organizmy w grupy (**jednostki systematyczne, rangi**) 
 Antybiotyki działają na **bakterie**, nie na wirusy. Grypy nie leczy się antybiotykiem — przed chorobami wirusowymi chronią przede wszystkim **szczepienia** i higiena.
 :::
 
+### 2.1 Bakteriofagi {#bakteriofagi}
+
+**Bakteriofag** (fag) to wirus, który atakuje wyłącznie bakterie. Nazwa pochodzi od greckich słów *bakterion* (bakteria) i *phagein* (pożerać).
+
+**Budowa:** główka (kapsyd) z DNA lub RNA, ogon z białkowej rurki, płytka podstawowa z włóknami ogonowymi, którymi fag przyczepia się do bakterii.
+
+**Cykl infekcji fagiem litycznym (np. T4 i *E. coli*):**
+1. Adsorpcja — fag przyczepia się włóknami ogonowymi do receptora na bakterii.
+2. Wstrzyknięcie — DNA faga przechodzi przez ogon do wnętrza bakterii; kapsyd zostaje na zewnątrz.
+3. Replikacja — bakteria wytwarza DNA i białka faga.
+4. Składanie — z tych elementów powstają nowe fagi.
+5. Liza — bakteria pęka, uwalniając nowe fagi (zwykle kilkadziesiąt do ponad stu).
+
+**Pułapka:** bakteriofag to nie „mała bakteria", tylko wirus. Nie ma własnego metabolizmu i nie rozmnaża się bez żywiciela.
+
+**Znaczenie:** fagi są badane jako alternatywa dla antybiotyków wobec rosnącej oporności bakterii (terapia fagowa — w fazie badań).
+
+**Pytanie kontrolne:** opisz budowę bakteriofaga i wymień kroki cyklu litycznego.
+
+::: ciekawostka
+Terapia fagowa była rozwijana w Instytucie Eliava w Tbilisi (Gruzja) już w latach 20. XX w. Rozwój antybiotyków w połowie XX w. sprawił, że zeszła na dalszy plan. Dziś wraca w badaniach.
+:::
+
 ## 3 | Bakterie — organizmy jednokomórkowe [[basic:E8]] {#bakterie}
 
 **Gdzie żyją:** praktycznie wszędzie — w glebie, wodzie, powietrzu, na skórze i w przewodzie pokarmowym człowieka, nawet w gorących źródłach i lodach.
@@ -164,6 +187,16 @@ Antybiotyki działają na **bakterie**, nie na wirusy. Grypy nie leczy się anty
 | **wzmacniająca** | łodygi, ogonki liściowe | utrzymanie kształtu i sztywności |
 | **przewodząca** | wiązki przewodzące | **drewno** — woda z solami mineralnymi z korzeni **w górę** (martwe komórki); **łyko** — produkty fotosyntezy do wszystkich części rośliny (żywe komórki) |
 
+**Drewno (ksylem) roślin naczyniowych:** dwa typy elementów przewodzących wodę z solami z korzeni do liści:
+- **cewki** (tracheidy) — martwe, wydłużone komórki z obramowanymi jamkami; woda przepływa przez jamki z cewki do cewki. Występują we wszystkich roślinach naczyniowych; u iglastych są głównym elementem drewna,
+- **naczynia** (tracheje) — rurki z martwych komórek, których poprzeczne ściany zanikły; przewodzą wodę szybciej, występują u okrytonasiennych.
+
+**Pułapka:** cewki i naczynia to **drewno** (ksylem). Łyko (floem) przewodzi produkty fotosyntezy z liści w dół. Liściaste mają także cewki, więc hasło „iglaste — cewki, liściaste — naczynia" jest uproszczeniem.
+
+::: mnemonik
+**Drewno to ksylem: woda w górę (cewki i naczynia), łyko to floem: cukier w dół.**
+:::
+
 ### 4.2 Mchy {#mchy}
 
 ::: karta core | Mchy — cechy
@@ -188,6 +221,24 @@ Do paprociowych należą **paprocie**, **skrzypy** i **widłaki**.
 :::
 
 **Znaczenie:** dawne drzewiaste paprociowe (karbon) utworzyły **złoża węgla kamiennego**; dziś — składnik runa leśnego, rośliny ozdobne, skrzyp polny w zielarstwie.
+
+**Cykl rozwojowy mchów i paproci — porównanie:**
+
+| Cecha | Mchy | Paprocie |
+|---|---|---|
+| Stadium dominujące | gametofit (n) — zielona roślina | sporofit (2n) — duża paproć |
+| Stadium zredukowane | sporofit (2n) — mały, na gametoficie | przedrośle (n) — drobne, sercowate |
+| Przedrośle | nitkowate (zielona nitka) | sercowate |
+| Narządy płciowe | plemnie (męskie) i rodnie (żeńskie) na gametoficie | plemnie i rodnie na przedroślu |
+| Woda do zapłodnienia | tak | tak |
+
+Plemnie (anteridia) wytwarzają plemniki, rodnie (archegonia) — komórkę jajową. Zapłodnienie wymaga wody, bo plemniki muszą dopłynąć do rodni.
+
+**Pułapka:** duża paproć to **sporofit** (2n), nie gametofit. Gametofit paproci to małe przedrośle.
+
+::: mnemonik
+**Mchy i paprocie wymagają wody do zapłodnienia**, dlatego rosną w wilgotnych miejscach.
+:::
 
 ### 4.4 Nagonasienne {#nagonasienne}
 
@@ -256,6 +307,25 @@ Do paprociowych należą **paprocie**, **skrzypy** i **widłaki**.
 | rozmnażanie | zarodniki | zarodniki | nasiona | nasiona |
 | woda do zapłodnienia | potrzebna | potrzebna | niepotrzebna | niepotrzebna |
 
+### 4.7 Drzewa liściaste przy wodzie {#drzewa-liscie}
+
+Cztery drzewa liściaste często występujące przy wodzie i w wilgotnych lasach:
+
+| Drzewo | Nazwa łacińska | Liść | Siedlisko | Ważna cecha |
+|---|---|---|---|---|
+| Wierzba | *Salix* | wąski, lancetowaty | brzegi wód, mokradła | kora zawiera salicynę, z której powstał kwas salicylowy i aspiryna |
+| Topola | *Populus* | sercowaty, długoogonkowy | doliny rzek | bardzo szybko rośnie; drewno miękkie i lekkie |
+| Osika | *Populus tremula* | okrągły, na spłaszczonym ogonku | lasy, skraje | liście drżą przy najlżejszym wietrze; tworzy odrosty z korzeni |
+| Olsza | *Alnus* | okrągławy, z wcięciem na szczycie | brzegi wód, olsy | na korzeniach guzki z bakteriami wiążącymi azot |
+
+**Pułapka:** osika jest gatunkiem topoli (*Populus tremula*), a nie osobnym rodzajem. Liść osiki jest okrągły, a topoli — sercowaty.
+
+**Pytanie kontrolne:** które z tych drzew rośnie nad wodą, które ma liście drżące na wietrze i u którego występują bakterie wiążące azot?
+
+::: ciekawostka
+Wierzba była znana w medycynie od starożytności. Jej kora zawiera salicynę, z której w XIX w. otrzymano kwas salicylowy, a później aspirynę. (Dane historyczne do weryfikacji ze źródłami.)
+:::
+
 ## 5 | Grzyby — organizmy cudzożywne [[basic:E8]] {#grzyby}
 
 ::: karta core | Grzyby — cechy rozpoznawcze
@@ -292,6 +362,25 @@ Zbieraj tylko grzyby, które znasz na pewno; w razie wątpliwości — do sanepi
 | **nerwowa** | **neurony** z wypustkami | odbieranie i przewodzenie bodźców | mózg, rdzeń, nerwy |
 
 ## 7 | Bezkręgowce [[basic:E8]] {#bezkregowce}
+
+### Gąbki i parzydełkowce {#gabki-parzydelkowce}
+
+**Gąbki (Porifera)** — wodne zwierzęta osiadłe, bez prawdziwych tkanek i bez układu nerwowego. Woda wpływa do ciała przez pory, a wypływa przez większy otwór (osculum). Nie mają ust ani odbytu.
+
+**Parzydełkowce (Cnidaria)** — wodne zwierzęta z tkankami (nabłonkowa, mięśniowa, nerwowa), z jednym otworem pełniącym rolę ust i odbytu, otoczonym parzydełkami (knidocytami). Mają symetrię promienistą i występują jako polip (np. hydra, ukwiał) lub meduza.
+
+| Cecha | Gąbki | Parzydełkowce |
+|---|---|---|
+| Tkanki | brak (same komórki) | są |
+| Symetria | brak (asymetria) | promienista |
+| Usta i odbyt | brak | jeden otwór |
+| Układ nerwowy | brak | sieć nerwowa |
+| Parzydełka | brak | są |
+| Przykłady | gąbka kąpielowa | hydra, meduza, koral |
+
+**Pułapka:** gąbki nie mają symetrii promienistej, bo są asymetryczne. Symetria promienista jest u parzydełkowców.
+
+**Pytanie kontrolne:** podaj trzy cechy, które odróżniają gąbki od parzydełkowców.
 
 ### 7.1 Płazińce {#plazince}
 
@@ -342,6 +431,12 @@ Inne pasożytnicze nicienie: glista ludzka (niemyte warzywa i owoce), włosień 
 
 **Przystosowania do różnych środowisk:** skrzydła (lot), pancerz ograniczający utratę wody (ląd), tchawki, różnorodne aparaty gębowe (gryzący, ssący, kłująco-ssący, liżący). **Znaczenie:** zapylanie roślin, miód i wosk, jedwab, pokarm zwierząt i ludzi; szkodniki upraw (stonka), przenoszenie chorób (kleszcze — borelioza, kleszczowe zapalenie mózgu; komary).
 
+**Szkielet zewnętrzny jako przyczep mięśni.** Mięśnie stawonogów przyczepiają się do wewnętrznej strony pancerza. Gdy się kurczą, poruszają odnóżami. Dla porównania: u kręgowców szkielet wewnętrzny (kości) jest otoczony mięśniami.
+
+**Wady pancerza:** ogranicza wzrost, dlatego stawonogi **linieją**, czyli zrzucają stary pancerz. Nowy jest początkowo miękki i zwierzę jest wtedy bezbronne, dopóki nie stwardnieje.
+
+**Pytanie kontrolne:** wymień trzy funkcje szkieletu zewnętrznego i wyjaśnij, dlaczego stawonogi się liniają.
+
 ### 7.5 Mięczaki {#mieczaki}
 
 **Cechy wspólne:** ciało **miękkie, niesegmentowane**: **noga** (ruch), **worek trzewiowy** z narządami; **płaszcz** wytwarzający zwykle **wapienną muszlę**.
@@ -382,8 +477,32 @@ Inne pasożytnicze nicienie: glista ludzka (niemyte warzywa i owoce), włosień 
 ### 8.4 Ptaki {#ptaki}
 **Przystosowania do lotu:** **pióra** (lot, ochrona przed utratą ciepła), kończyny przednie przekształcone w **skrzydła**, lekkie **kości pneumatyczne** (wypełnione powietrzem), **mostek z grzebieniem** (przyczep silnych mięśni lotnych), **worki powietrzne** wspomagające wydajne oddychanie płucami, dziób bez zębów. **Stałocieplne.** **Rozmnażanie:** zapłodnienie wewnętrzne, **jaja z wapienną skorupką** wysiadywane w gniazdach, opieka nad potomstwem. **Zagniazdowniki** — pisklęta nagie i ślepe, długo w gnieździe (wróbel, sikora); **gniazdowniki** — pisklęta opierzone, szybko samodzielne (kura, kaczka). Kształt dzioba i nóg zależy od pokarmu i środowiska. **Znaczenie:** zjadają owady i gryzonie, rozsiewają nasiona, drób.
 
+**Oddychanie ptaków.** Płuca ptaków są przepływowe. Powietrze przepływa przez nie w jednym kierunku, a wymiana gazowa zachodzi w płucach. Worki powietrzne (przednie i tylne) magazynują powietrze i nie wymieniają gazów. W jednym pełnym cyklu oddechowym powietrze przechodzi przez płuca dwukrotnie, co zwiększa wydajność oddychania. (Dokładną kolejność przepływu do potwierdzenia z podręcznikiem.)
+
+**Pułapka:** wymiana gazowa zachodzi w płucach, nie w workach powietrznych.
+
+::: ciekawostka
+Gęsi gęgawe przelatują nad Himalajami na dużych wysokościach. Dane o najwyższych lotach do weryfikacji.
+:::
+
 ### 8.5 Ssaki łożyskowe {#ssaki}
 **Cechy wspólne:** **sierść** (włosy), gruczoły skórne — potowe, łojowe i **mlekowe** (karmienie młodych **mlekiem**), **zróżnicowane zęby** (siekacze, kły, przedtrzonowe, trzonowe — dostosowane do pokarmu), płuca i **przepona**, dobrze rozwinięty mózg, **stałocieplność**. **Rozmnażanie:** zapłodnienie wewnętrzne, zarodek rozwija się w **macicy**, odżywiany przez **łożysko**; **żyworodne**; opieka nad potomstwem. **Różnorodność:** ląd (sarna), woda (delfin, foka), powietrze (nietoperz), gleba (kret). **Znaczenie:** pokarm, praca, odzież, towarzysze człowieka; rozsiewanie nasion; niektóre wyrządzają szkody (gryzonie w uprawach).
+
+### Rozmnażanie kręgowców — jajorodność i żyworodność
+
+| Tryb | Gdzie rozwija się zarodek | Skąd zarodek bierze pokarm | Przykłady |
+|---|---|---|---|
+| **jajorodność** (oviparia) | poza ciałem matki, w jaju | żółtko | ptaki, większość gadów, większość ryb |
+| **jajożyworodność** (ovoviviparia) | w ciele matki, w jaju | żółtko | niektóre rekiny, żmija zygzakowata |
+| **żyworodność** (viviparia) | w ciele matki | przez łożysko | ssaki łożyskowe, część rekinów |
+
+**Pułapka:** nie wszystkie ssaki są żyworodne. Stekowce (dziobak, kolczatki) są **jajorodne**. Torbacze i łożyskowe są żyworodne.
+
+**Pytanie kontrolne:** czym różni się jajorodność od jajożyworodności? Które ssaki składają jaja?
+
+::: ciekawostka
+Dziobak składa zwykle 1–2 jaja, które samica wysiaduje przez około 10 dni. Matka nie ma sutków, a młode piją mleko wydzielane przez skórę na brzuchu. (Dane do weryfikacji z aktualną systematyką.)
+:::
 
 ### 8.6 Porównanie kręgowców {#porownanie}
 
