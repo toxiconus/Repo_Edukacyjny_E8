@@ -2,7 +2,7 @@
 
 Wzorzec: `engine/src/gfx/wspolne/styl/styl-tokeny.js` i `STYL_WIZUALIZACJI.md`. Kolejka przeróbek: od największej liczby odstępstw.
 
-Plików: 94; zgodnych: 62; używa `CHE.GFX.STYL`: 0.
+Plików: 94; zgodnych: 64; używa `CHE.GFX.STYL`: 0.
 
 | plik | kolory spoza palety | linie spoza skali | używa STYL |
 |---|---|---|---|
@@ -17,24 +17,22 @@ Plików: 94; zgodnych: 62; używa `CHE.GFX.STYL`: 0.
 | `chemia/che-modular/engine/src/gfx/chemia/widoki/n02-przeglad-v01.js` | 4 | 0 |  |
 | `chemia/che-modular/engine/src/gfx/wspolne/naczynia/stage.js` | 2 | 1 |  |
 | `chemia/che-modular/engine/src/gfx/chemia/widoki/n02-wzory-v01.js` | 3 | 0 |  |
-| `chemia/che-modular/engine/src/gfx/chemia/widoki/n01-trend-v01.js` | 2 | 1 |  |
-| `chemia/che-modular/engine/src/gfx/chemia/widoki/n01-tlenki-v01.js` | 3 | 0 |  |
 | `chemia/che-modular/engine/src/gfx/chemia/widoki/n01-konstruktor-v01.js` | 3 | 0 |  |
 | `chemia/che-modular/engine/src/gfx/fizyka/widoki/fiz-elektroskop-v01.js` | 2 | 0 |  |
 | `chemia/che-modular/engine/src/gfx/fizyka/widoki/fiz-coulomb-v01.js` | 1 | 1 |  |
 | `chemia/che-modular/engine/src/gfx/fizyka/naczynia/chargedRod.js` | 2 | 0 |  |
 | `chemia/che-modular/engine/src/gfx/chemia/widoki/n02-zobojetnianie-v01.js` | 2 | 0 |  |
-| `chemia/che-modular/engine/src/gfx/chemia/widoki/n02-reaktor-v01.js` | 2 | 0 |  |
 | `chemia/che-modular/engine/src/gfx/chemia/widoki/n02-dysocjacja-v01.js` | 2 | 0 |  |
+| `chemia/che-modular/engine/src/gfx/chemia/widoki/n01-tlenki-v01.js` | 2 | 0 |  |
 | `chemia/che-modular/engine/src/gfx/chemia/widoki/n01-reaktor-v01.js` | 2 | 0 |  |
-| `chemia/che-modular/engine/src/gfx/chemia/widoki/kw-bufor-v01.js` | 2 | 0 |  |
 | `chemia/che-modular/engine/src/gfx/chemia/sceny/titration.js` | 1 | 1 |  |
-| `chemia/che-modular/engine/src/gfx/chemia/naczynia/crucible.js` | 2 | 0 |  |
 | `chemia/che-modular/engine/src/gfx/chemia/widoki/tabela-rozpuszczalnosci-v01.js` | 1 | 0 |  |
 | `chemia/che-modular/engine/src/gfx/chemia/widoki/stech-kalkulator-v01.js` | 1 | 0 |  |
 | `chemia/che-modular/engine/src/gfx/chemia/widoki/n02-stracanie-v01.js` | 1 | 0 |  |
+| `chemia/che-modular/engine/src/gfx/chemia/widoki/n02-reaktor-v01.js` | 1 | 0 |  |
+| `chemia/che-modular/engine/src/gfx/chemia/widoki/n01-trend-v01.js` | 0 | 1 |  |
 | `chemia/che-modular/engine/src/gfx/chemia/widoki/n01-spalanie-v01.js` | 1 | 0 |  |
 | `chemia/che-modular/engine/src/gfx/chemia/widoki/kw-reszty-v01.js` | 1 | 0 |  |
-| `chemia/che-modular/engine/src/gfx/chemia/widoki/kinetics-v01.js` | 1 | 0 |  |
+| `chemia/che-modular/engine/src/gfx/chemia/widoki/kw-bufor-v01.js` | 1 | 0 |  |
 | `chemia/che-modular/engine/src/gfx/chemia/szkielet/szkielet-zygzak.js` | 0 | 1 |  |
 | `chemia/che-modular/engine/src/gfx/chemia/sceny/acidMetal.js` | 1 | 0 |  |

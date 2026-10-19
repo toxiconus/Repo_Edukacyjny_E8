@@ -60,3 +60,5 @@
 - 2026-10-19 H7: styl_zblizone --zapisz na 7 widokach/scenach; catalog.json sha dla lab-engine i visual-library odświeżone; test szybki 0 FAIL; N02 build 0 błędów.
 - 2026-10-19 N03: powtórzone zlewki (Dośw. 9, 10) → odnośniki tekstowe; FIZ01 zostaje. Build N03 OK.
 - 2026-10-19 Haiku: luki w katalog_oceny.json zaktualizowane (4 zamknięte, C2m częściowo); KATALOG_WIZUALIZACJI.md przegenerowany.
+- 2026-10-19 S12 (przegląd H9, próbka 7/21 lekcji z karta-bhp + 2× bilans-rownania): wszystkie budują się, klocki montują się bez błędów JS, treść karty BHP zgodna z zasadami (kwas do wody, płukanie 15 min, ogrzewanie ukośnie, oparzenie chłodzić). `styl_sprawdz`: 64/94 plików zgodnych (było 62). Luka H9: ORG06, ORG07, ORG08 i REV01 mają prawdziwe doświadczenia chemiczne bez karty BHP → dodano `karta-bhp` + manifest (REV01: nowy klucz). F04/F05 to doświadczenia modelowe/myślowe — bez karty; FIZ01 bez odczynników — bez karty.
+

@@ -227,6 +227,9 @@ Tłuszcz + 3CH₃OH ⇌(kat. zasada) 3 estry metylowe kwasów tłuszczowych + gl
 
 ## 4 | Doświadczenie {#dosw}
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie), pierwsza pomoc (oparzenie, skaleczenie, wdychanie gazu). Wniosek: zasady są takie same przy każdym doświadczeniu i trzeba je znać przed rozpoczęciem pracy.
+
 ::: dosw | Doświadczenie 1 — Otrzymywanie octanu etylu: zapach rozpuszczalnika (do analizy na podstawie opisu)
 **Problem:** Jak otrzymać ester i rozpoznać go po właściwościach?
 

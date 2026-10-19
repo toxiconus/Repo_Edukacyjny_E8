@@ -677,6 +677,9 @@ Konkurs chemiczny Lubelskiego Kuratora Oświaty (zakres 2026/27, oficjalny): eta
 **Obserwacja** — to, co widzisz, czujesz, mierzysz (barwa, osad, gaz, zmętnienie, ciepło). **Wniosek** — co z tego wynika (jaka substancja powstała, jaka reakcja zaszła). „Wydziela się wodór” to wniosek; „wydzielają się pęcherzyki bezbarwnego gazu” — obserwacja.
 :::
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie), pierwsza pomoc (oparzenie, skaleczenie, wdychanie gazu). Wniosek: zasady są takie same przy każdym doświadczeniu i trzeba je znać przed rozpoczęciem pracy.
+
 ::: dosw | Doświadczenie 1 — Wykrywanie tlenku węgla(IV) wodą wapienną
 Problem: Jak wykazać, że w wydychanym powietrzu (albo w produktach spalania) jest tlenek węgla(IV)?
 Hipoteza: Tlenek węgla(IV) powoduje zmętnienie wody wapiennej.

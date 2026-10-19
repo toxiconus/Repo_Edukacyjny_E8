@@ -203,6 +203,9 @@ Elementarny = proporcja (CH₂O); rzeczywisty = substancja (C₂H₄O₂). Bez M
 
 ## 4 | Doświadczenie {#dosw}
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie), pierwsza pomoc (oparzenie, skaleczenie, wdychanie gazu). Wniosek: zasady są takie same przy każdym doświadczeniu i trzeba je znać przed rozpoczęciem pracy.
+
 ::: dosw | Doświadczenie 1 — Wytworzenie i pomiar wodoru: kontrola objętości molowej (demonstracja)
 **Problem:** Czy z odważonej porcji cynku można przewidzieć objętość wodoru — i czy pomiar potwierdzi Vₘ = 22,4 dm³/mol?
 

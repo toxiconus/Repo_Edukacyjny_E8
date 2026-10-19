@@ -109,7 +109,8 @@
       "klocki.js",
       "pomocnicze.js",
       "trojkat_przeliczen.js",
-      "kalkulator_mola.js"
+      "kalkulator_mola.js",
+      "karta_bhp.js"
     ],
     "LKO-ORG02": [
       "klocki.js",
@@ -174,7 +175,8 @@
       "c2d_wzor.js",
       "c2d_prosta.js",
       "c2d_klocek.js",
-      "estryfikacja.js"
+      "estryfikacja.js",
+      "karta_bhp.js"
     ],
     "LKO-ORG01": [
       "klocki.js",
@@ -196,7 +198,8 @@
       "c2d_wzor.js",
       "c2d_prosta.js",
       "c2d_klocek.js",
-      "haworth.js"
+      "haworth.js",
+      "karta_bhp.js"
     ],
     "X04": [
       "klocki.js",
@@ -316,6 +319,10 @@
       "karta_bhp.js"
     ],
     "F01": [
+      "klocki.js",
+      "karta_bhp.js"
+    ],
+    "REV01": [
       "klocki.js",
       "karta_bhp.js"
     ]

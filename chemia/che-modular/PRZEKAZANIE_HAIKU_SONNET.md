@@ -82,7 +82,7 @@ Lekcje (klocki / modele `@model` / `@zlewka` dziś): C1c konfiguracje 1/0/0; C1c
 | S9 (częściowo: `petla-regulacji` — 3 lekcje bio, `estryfikacja`, `haworth`) | Plan komponentów: zebrać wiersze od Haiku (H9), pogrupować, zbudować te, które wracają w ≥ 2 lekcjach (kandydaci: animacja estryfikacji ORG06, schemat procesu biologicznego „strzałki i etapy”, układ narządów z podświetlaniem, wykres z suwakiem) | klocki w `engine/src/klocki/`, wpis w manifest i README |
 | ~~S10~~ (wykonane 2026-10-19: `doswiadczenie` w C4 ×2, X04, C1c kwasy; N01–N05 to lekcje bez `@klocek` — Haiku w H9 może je podpiąć tam, gdzie jest doświadczenie) | Wspólny klocek „doświadczenie”: probówka/zlewka + palnik + karta BHP + równanie w jednym układzie (zamiast składania ręcznego w md) | użyty w C4 i ≥ 2 lekcjach N |
 | ~~S11~~ (wykonane 2026-10-19: `petla-regulacji` w B2c, B2e, B2g) | Biologia: przenieść wzorzec klocków do kilku lekcji (B2c oddychanie, B2e hormony, B2g homeostaza) po ocenie Haiku | min. 3 lekcje z `@klocek` + `@opis` |
-| S12 | Przegląd wyników H9 (losowo 30%): czy zmiany wnoszą coś do lekcji, spójność stylu (`styl_sprawdz.py`) | raport w `PROGRESS.md` |
+| ~~S12~~ (wykonane 2026-10-19: próbka 7 lekcji OK; dodano brakujące karty BHP w ORG06–08 i REV01) | Przegląd wyników H9 (losowo 30%): czy zmiany wnoszą coś do lekcji, spójność stylu (`styl_sprawdz.py`) | raport w `PROGRESS.md` |
 
 ### Plan komponentów (uzupełnia Haiku)
 | nazwa | lekcja | po co |
