@@ -115,6 +115,9 @@ Opis szachownicy: tabelka 2×2 z nagłówkami. Kolumny to gamety jednego rodzica
 4. Wpisz w pola genotypy potomków, łącząc gamety z wiersza i kolumny.
 5. Policz genotypy i fenotypy.
 
+@klocek krzyzowka-mendla {krzyzowki="AA×aa,Aa×Aa,Aa×aa,AA×Aa" start="1" cechy="gładkie:pomarszczone"} | Szachownica Punnetta: wybierz krzyżówkę i klikaj pola
+@opis Szachownica 2 × 2 dla czterech krzyżówek (AA × aa, Aa × Aa, Aa × aa, AA × Aa): u góry gamety jednego rodzica, z lewej drugiego, w polach znak zapytania odsłaniany kliknięciem; allele wielkie i małe mają różne barwy. Pod tabelą stosunek genotypów i fenotypów, np. dla Aa × Aa genotypy 1 AA : 2 Aa : 1 aa i fenotypy 3 : 1 (gładkie : pomarszczone).
+
 ### 7. Krzyżówka dihybrydowa — 9 : 3 : 3 : 1 (poza zakresem LKO 2025/26)
 
 Dwie cechy naraz: kolor nasion (A — żółte, a — zielone) i kształt nasion (B — gładkie, b — pomarszczone).
@@ -143,6 +146,9 @@ Stosunek 9 : 3 : 3 : 1 nie jest uniwersalny. Otrzymamy go tylko wtedy, gdy geny 
 ::: mnemonik
 **9 : 3 : 3 : 1** — dziewięć osobników z dominacją obu cech, po trzy z dominacją jednej cechy, jeden z obiema cechami recesywnymi. Dwie niezależne cechy dają iloczyn 3 × 3 = 9 kombinacji dla dominacji w obu.
 :::
+
+@klocek krzyzowka-mendla {krzyzowki="AaBb×AaBb" start="0" cechy="cecha 1:cecha 2"} | Dihybryda AaBb × AaBb: 16 pól, stosunek 9 : 3 : 3 : 1
+@opis Szachownica 4 × 4: u góry i z lewej cztery gamety AB, Ab, aB, ab; kliknięcie pola odsłania genotyp potomka, a przycisk pokazuje wszystkie 16. Pod tabelą stosunek fenotypów 9 : 3 : 3 : 1 — dziewięć osobników z obiema cechami dominującymi, po trzy z jedną cechą recesywną i jeden z obiema recesywnymi. Treść poza zakresem LKO 2025/26.
 
 ### 8. Prawdopodobieństwo a stosunek liczbowy
 

@@ -5,6 +5,7 @@ Wynik: jeden samodzielny plik HTML (style + bio-viz.js w środku) — działa of
 
 Dodatki składni (ponad SZABLON_LEKCJI.md chemii):
   @viz <id> {klucz="wartość" ...} | Tytuł | podpis     → grafika z biblioteki szablon/bio-viz.js (lista: BIO_KATALOG.md)
+  @klocek nazwa {k="v"} | podpis                      → mały komponent z chemia/che-modular/engine/src/klocki (np. krzyzowka-mendla); też wymaga @opis
   @opis tekst                                           → OBOWIĄZKOWO pod każdym @viz/obrazem: co widać + wniosek (HTML: <!-- OPIS -->)
   ::: mity | nagłówek                                   → karty „mit → poprawka”, linie:  mit || poprawka
   ::: drzewo                                            → mapa pojęć z listy wcięć (2 spacje = poziom)
@@ -22,6 +23,11 @@ SZ = os.path.join(BIO, 'szablon')
 # zasada stała: każda wizualizacja ma linię @opis (narzedzia/opis_wizualizacji.py)
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', '..', 'narzedzia'))
 import opis_wizualizacji as OPIS
+
+# klocki (małe komponenty: chemia/che-modular/engine/src/klocki) — te same, co w lekcjach chemii: @klocek nazwa {opcje} | podpis
+_KM = os.path.join(REPO, 'chemia', 'che-modular', 'tools', 'md2html.py')
+_ks = importlib.util.spec_from_file_location('che_modular_md2html', _KM)
+CHK = importlib.util.module_from_spec(_ks); _ks.loader.exec_module(CHK)
 
 _open = open
 def _bio_open(path, *a, **k):
@@ -81,6 +87,8 @@ def preprocess(text):
         st = L[i].strip()
         if st.startswith('@viz '):
             out += ['', viz_line(st), '']; i += 1; continue
+        if st.startswith('@klocek '):
+            out += ['', CHK.klocek_line(st), '']; i += 1; continue
         if st.startswith('@opis '):  # opis grafiki → ukryty komentarz w HTML
             out += ['::: html', OPIS.komentarz(st[6:]), ':::']; i += 1; continue
         if st.startswith('::: mity') or st == '::: drzewo':
@@ -104,6 +112,9 @@ def build(path):
     try: meta, doc = m.render(tmp.name)
     finally: os.unlink(tmp.name)
     title = re.sub(r'<[^>]+>', '', m.inline(meta.get('tytul', '')))
+    if 'data-klocek=' in doc:   # CSS i skrypty klocków (manifest.json → lekcje[kod]) do samodzielnego pliku
+        doc = doc.replace('</head>', '<style id="klocki-css">\n%s\n</style>\n</head>' % CHK.klocki_css(), 1)
+        doc = doc.replace('</body>', '<script>\n%s\n</script>\n</body>' % CHK.klocki_js(meta.get('kod', '')).replace('</', '<\\/'), 1)
     doc = doc.replace('<title>%s · ' % meta.get('kod', ''), '<title>BIO %s · ' % meta.get('kod', ''), 1)
     doc = doc.replace('<details class="toc-item" open>', '<details class="toc-item" id="spis" open>', 1)
     doc = doc.replace('<main class="page" id="main">', (BAR % H.escape(meta.get('kod', '') + ' · ' + title)) + '\n<main class="page" id="main">', 1)
