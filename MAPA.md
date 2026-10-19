@@ -3,14 +3,14 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (11 pl., 88 KB)
+## .  (11 pl., 90 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 7 KB
 - `MAPA.md` 19 KB
 - `PRZEKAZANIE.md` 6 KB
 - `README.md` 0 KB
-- `WERYFIKACJA.md` 37 KB
+- `WERYFIKACJA.md` 39 KB
 - `edit_html.py` 3 KB
 - `fix_encoding.ps1` 1 KB
 - `fix_encoding_v2.ps1` 5 KB
@@ -48,9 +48,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `BIO_KATALOG.md` 3 KB
 - `PRZEKAZANIE.md` 3 KB
 
-## biologia/bio/md  (12 pl., 300 KB)
+## biologia/bio/md  (12 pl., 303 KB)
 - `B10_powtorka_uklady_czlowieka.md` 18 KB
-- `B1b_krzyzowki_mendel.md` 18 KB
+- `B1b_krzyzowki_mendel.md` 21 KB
 - `B2a_skora_i_uklad_ruchu.md` 18 KB
 - `B2b_uklad_pokarmowy_i_odzywianie.md` 19 KB
 - `B2c_oddychanie_i_wydalanie.md` 15 KB
@@ -129,7 +129,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (13 pl., 100 KB)
+## chemia/che-modular  (13 pl., 101 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -191,8 +191,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `termo-redoks.json` 3 KB
 - ⚠`weryfikacja.json` 836 KB
 
-## chemia/che-modular/engine/src/gfx  (2 pl., 34 KB)
-- `KATALOG.md` 11 KB
+## chemia/che-modular/engine/src/gfx  (2 pl., 35 KB)
+- `KATALOG.md` 12 KB
 - `index.json` 23 KB
 
 ## chemia/che-modular/engine/src/gfx/_szkielet/che-lab-engine-v001  (13 pl., 306 KB)
@@ -228,6 +228,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `indicator.js` 2 KB
 - `indicatorRack.js` 1 KB
 - `titration.js` 3 KB
+
+## chemia/che-modular/engine/src/gfx/chemia/szkielet  (1 pl., 2 KB)
+- `szkielet-zygzak.js` 2 KB
 
 ## chemia/che-modular/engine/src/gfx/chemia/widoki  (27 pl., 96 KB)
 - (zwinięte; `ls chemia/che-modular/engine/src/gfx/chemia/widoki`)
@@ -491,7 +494,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`CHE_SPIS_TRESCI.md` 59 KB
 - `PLAN_SCIEZKI_DYDAKTYCZNE.md` 6 KB
 
-## chemia/plany/audyty  (24 pl., 465 KB)
+## chemia/plany/audyty  (26 pl., 485 KB)
 - (zwinięte; `ls chemia/plany/audyty`)
 
 ## chemia/plany/narzedzia  (3 pl., 47 KB)
