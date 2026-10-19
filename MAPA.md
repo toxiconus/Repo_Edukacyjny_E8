@@ -191,8 +191,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `termo-redoks.json` 3 KB
 - ⚠`weryfikacja.json` 836 KB
 
-## chemia/che-modular/engine/src/gfx  (2 pl., 35 KB)
-- `KATALOG.md` 12 KB
+## chemia/che-modular/engine/src/gfx  (2 pl., 34 KB)
+- `KATALOG.md` 11 KB
 - `index.json` 23 KB
 
 ## chemia/che-modular/engine/src/gfx/_szkielet/che-lab-engine-v001  (13 pl., 306 KB)
@@ -437,11 +437,14 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/sections/anon001/rdzen  (61 pl., 278 KB)
 - (zwinięte; `ls chemia/che-modular/sections/anon001/rdzen`)
 
-## chemia/che-modular/tools  (24 pl., 133 KB)
+## chemia/che-modular/tools  (25 pl., 135 KB)
 - (zwinięte; `ls chemia/che-modular/tools`)
 
 ## chemia/che-modular/tools/_stare  (1 pl., 28 KB)
 - `pack_lesson.py` 28 KB
+
+## chemia/che-modular/wizualizacje_r4  (1 pl., 35 KB)
+- `Wizualizacje_do_lekcji_R4.html` 35 KB
 
 ## chemia/lekcje_md/00  (6 pl., 276 KB)
 - ⚠`CHE.00.LAB.doswiadczenia.md` 67 KB

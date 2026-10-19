@@ -10,7 +10,7 @@
   python3 tools/odchudz.py [--profil X] [--lekcje A,B]   odchudzanie silnika z testem (ddmin)
   python3 tools/che.py test [--szybki]    bezstratność (GFX, lab==monolit, che-viz==v0_59) + render lekcji
   python3 tools/che.py gfx                lista elementów GFX/VIEW (przedmiot/rodzaj: liczba, KB)
-  python3 tools/che.py katalog            generuje engine/src/gfx/KATALOG.md (id ↔ nazwa PL ↔ plik)
+  python3 tools/che.py katalog            generuje engine/src/gfx/KATALOG.md (id ↔ nazwa PL ↔ plik) i KATALOG_WIZUALIZACJI.md
   python3 tools/che.py lab               pełny lab z nową warstwą engine/src/dodatki → dist/lab.html
   python3 tools/che.py atlas [--sprawdz] atlas poza silnikiem → dist/atlas.html (moduły: engine/src/atlas/moduly.txt)
   python3 tools/che.py dane [--sprawdz|--lekcje] CHE.DATA z silnika → engine/src/dane/<dziedzina>.json (+ _indeks.json)
@@ -120,6 +120,7 @@ def katalog():
         out += [f"| `{i}` | {n} | {d} |" for i, n, d in sorted(rows[(subj, kind)])] + [""]
     (ROOT / "engine/src/gfx/KATALOG.md").write_text("\n".join(out), encoding="utf-8")
     print("→ engine/src/gfx/KATALOG.md", sum(len(v) for v in rows.values()), "pozycji")
+    run(sys.executable, str(T / "katalog_zbiorczy.py"))  # jeden katalog: modele + gfx + użycie z md
 
 
 def main(a):

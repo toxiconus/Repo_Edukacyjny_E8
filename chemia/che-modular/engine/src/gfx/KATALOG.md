@@ -231,13 +231,3 @@ Id w MD/HTML/kodzie jest angielskie (jak w silniku); nazwa PL z rejestru. Plik: 
 | id | nazwa | opis |
 |---|---|---|
 | `che-test-silnika-v01` | Test silnika — audyty modułów, spójność i montowanie wszystkich widoków |  |
-
-## chemia / szkielet (1)
-
-| id | nazwa | opis |
-|---|---|---|
-| `szkielet-zygzak` | Wzór kreskowy łańcucha C–C (zygzak) z grupą na końcu | `CHE.GFX.szkieletSVG({n, koniec})`; plik `chemia/szkielet/szkielet-zygzak.js`; lekcja docelowa: O01–O08 (materiał roboczy, bez builda) |
-
-## Samodzielny HTML z efektami silnika
-
-Narzędzie `tools/efekty_do_html.py <plik.html>` wstawia do HTML (między `@@EFEKTY-BEGIN/END`) mini-adapter (`rnd`, `rgba`, `PPT_LOOK` z `06_E.js`) i źródła wskazanych efektów z `chemia/efekty/`. `--sprawdz` zwraca kod 1, gdy blok różni się od silnika. Przykład: `wizualizacje_r4/Wizualizacje_do_lekcji_R4.html` (bubbles, condensation, steam, precipitate). Rysowanie probówki (szkło, ciecz) jest tam jeszcze lokalne, nie z `naczynia/testTube` — do ujednolicenia.
