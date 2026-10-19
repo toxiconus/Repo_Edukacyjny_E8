@@ -59,3 +59,4 @@
 - 2026-10-19 H9 p.1 F01–F06, FIZ01: przegląd bez zmian treści; powtórki modeli FIZ01 do decyzji S12. Punkt 1 H9 zakończony dla wszystkich lekcji z tabeli.
 - 2026-10-19 H7: styl_zblizone --zapisz na 7 widokach/scenach; catalog.json sha dla lab-engine i visual-library odświeżone; test szybki 0 FAIL; N02 build 0 błędów.
 - 2026-10-19 N03: powtórzone zlewki (Dośw. 9, 10) → odnośniki tekstowe; FIZ01 zostaje. Build N03 OK.
+- 2026-10-19 Haiku: luki w katalog_oceny.json zaktualizowane (4 zamknięte, C2m częściowo); KATALOG_WIZUALIZACJI.md przegenerowany.

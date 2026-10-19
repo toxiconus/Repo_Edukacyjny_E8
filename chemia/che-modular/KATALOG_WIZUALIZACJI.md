@@ -13,12 +13,12 @@ Jedno źródło prawdy: modele (widoki) i elementy gfx. Użycie jest liczone z `
 - **czeka** — przygotowany do lekcji z planu, której md jeszcze nie ma
 - **do sprawdzenia** — ocena wstępna z tytułu i rozmiaru; porównać z wymienionym modelem
 
-## Modele (99; użyte w lekcjach: 54)
+## Modele (99; użyte w lekcjach: 56)
 
 | id | tytuł | użyte w | status | uwaga |
 |---|---|---|---|---|
 | `acid-calculator` | Kalkulator kwasu — pH, dysocjacja, formy · wspólny silnik |  | rozszerzony | pH, dysocjacja, formy; w zakresie LKO brak haseł pH/pKa/równowaga (grep) |
-| `acid-game` | Mini-gra: kwas, zasada, sól czy tlenek? |  | kandydat | klasyfikacja kwas/zasada/sól/tlenek; bez presji czasu (po odpowiedzi samo przechodzi dalej po 1,6 s); lekcja: C1c kwasy/zasady/sole, N07 |
+| `acid-game` | Mini-gra: kwas, zasada, sól czy tlenek? | C1c | kandydat | klasyfikacja kwas/zasada/sól/tlenek; bez presji czasu (po odpowiedzi samo przechodzi dalej po 1,6 s); lekcja: C1c kwasy/zasady/sole, N07 |
 | `acid-rain-v01` | Kwaśne deszcze — emisja → chmura → opad → jezioro, las, zabytki | N03 | używany |  |
 | `acid-table` | Tabela mocy kwasów |  | zastąpiony | dwie tabele mocy kwasów; scalić w jedną; zamiennik: `ka-pka-table` |
 | `beaker-prediction-enhanced` | Zlewka z predykcją — wybierz obserwację i sprawdź wynik | F01 | używany |  |
@@ -30,7 +30,7 @@ Jedno źródło prawdy: modele (widoki) i elementy gfx. Użycie jest liczone z `
 | `compound-cards` | Karty związków — HCl, H₂SO₄, CH₃COOH, H₂CO₃ |  | zastąpiony | 4 karty kwasów; kw-reszty-v01 jest w N03 i N04; zamiennik: `kw-reszty-v01` |
 | `conj-pairs` | Pary sprzężone i amfiprotyczność |  | rozszerzony | pary sprzężone, amfiprotyczność (Brønsted) |
 | `diss-three-levels` | Trzy poziomy zapisu dysocjacji |  | zastąpiony | zapis trzech poziomów dysocjacji jest w kw-dysocjacja-v01 (N03), używany w FIZ01; zamiennik: `kw-dysocjacja-v01` |
-| `energy-profile` | Termochemia — egzo i endo |  | kandydat | 1,6 KB, profil energii Ea, ΔH; wypada użyć zamiast rysunku; lekcja: C1c wodorki/typy reakcji (egzo i endo) |
+| `energy-profile` | Termochemia — egzo i endo | C1c | kandydat | 1,6 KB, profil energii Ea, ΔH; wypada użyć zamiast rysunku; lekcja: C1c wodorki/typy reakcji (egzo i endo) |
 | `env-balance` | Bilans mas — wapnowanie jeziora · wspólny model |  | ciekawostka | wapnowanie jeziora; liczy z pH i masy molowej; lekcja: R03 lub N03 (kwaśne deszcze) |
 | `equilibrium` | Równowaga HA ⇌ H⁺ + A⁻ — reguła przekory |  | rozszerzony | równowaga HA ⇌ H⁺ + A⁻, reguła przekory |
 | `fiz-coulomb-v01` | Prawo Coulomba i linie pola elektrycznego | FIZ01 | używany |  |
@@ -123,11 +123,11 @@ Nieużyte bez oceny: brak
 
 | lekcja | propozycja z istniejących |
 |---|---|
-| C1c_konfiguracje_elektronowe | BRAK: molecule-orbitals obsługuje tylko wybrane atomy; zrobić widok z prototypu R4 „konf” (Z ≤ 36, 4s przed 3d, powłoki K–N) |
-| C1c_kwasy_zasady_sole | wstawione: kw-szereg-metali-v01, tabela-rozpuszczalnosci-v01, rownania-jonowe-v01; zostaje acid-game |
-| C1c_wodorki_typy_reakcji | wstawione: n05-wodorki-v01, n05-trendy-v01; zostaje energy-profile (sprawdzić model przed wstawieniem) |
+| C1c_konfiguracje_elektronowe | ZAMKNIĘTE 2026-10-19: klocek `konfiguracje` (Z ≤ 36, suwak, pudełka orbitali, powłoki K–N) wstawiony w lekcji; poza zakresem grupy 3–12 oznaczone. |
+| C1c_kwasy_zasady_sole | ZAMKNIĘTE 2026-10-19: `acid-game` wstawiony (z @opis); pozostałe modele już są. Schemat dróg do NaOH — plan komponentu (diagram-dróg), nie zbudowany. |
+| C1c_wodorki_typy_reakcji | ZAMKNIĘTE 2026-10-19: `energy-profile` wstawiony przed „Przeglądem typów reakcji”; `bilans-rownania` przy syntezie HCl i NH₃. |
 | C1c_masy_sklad_procentowy | wstawione: f05-izotopy-v01 |
-| C2m_mol_masa_molowa | wstawione: stech-kalkulator-v01 (tylko mol z reakcji); BRAK ogólnego kalkulatora n=m/M, N, V dla dowolnej M — nowy widok z prototypu R4 „mol” |
+| C2m_mol_masa_molowa | CZĘŚCIOWO: `kalkulator-mola` (m, n, M, N, V) dla 5 wybranych substancji; dowolna M poza listą — otwarte (wymaga widoku/opcji z prototypu R4 „mol”, do decyzji Sonneta). |
 | C2w_wzor_elementarny_rzeczywisty | wstawione: sole-doswiadczenia-v01 cuso4Hydrate (oznaczone poza zakresem) |
 | C3_rownania_i_obliczenia_z_rownan | wstawione: stech-kalkulator-v01 |
 | C4_doswiadczenia_zbiorczo | safety, lab-stations-v102, pracownie n02/sole/kw-doswiadczenia |
