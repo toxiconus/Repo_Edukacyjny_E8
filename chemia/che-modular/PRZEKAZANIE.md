@@ -69,3 +69,4 @@ node tools/test_lekcje.cjs --wzorzec=dist/_wz/wzorzec.json   # z porównaniem tr
 
 ## Zasada @opis (2026-10-09)
 - Każda wizualizacja w md ma linię `@opis` (build egzekwuje, `narzedzia/opis_wizualizacji.py`). Dług starych lekcji: `narzedzia/opis_dlug.json` — przy edycji lekcji dopisywać opisy.
+- Zadania dla Haiku i Sonneta: chemia/che-modular/PRZEKAZANIE_HAIKU_SONNET.md (stan 2026-10-19).

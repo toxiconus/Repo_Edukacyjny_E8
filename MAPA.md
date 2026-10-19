@@ -129,7 +129,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (14 pl., 117 KB)
+## chemia/che-modular  (16 pl., 124 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -264,6 +264,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/engine/src/gfx/wspolne/naczynia  (2 pl., 0 KB)
 - `anchor.js` 0 KB
 - `stage.js` 0 KB
+
+## chemia/che-modular/engine/src/gfx/wspolne/styl  (1 pl., 3 KB)
+- `styl-tokeny.js` 3 KB
 
 ## chemia/che-modular/engine/src/gfx/wspolne/widoki  (1 pl., 4 KB)
 - `che-test-silnika-v01.js` 4 KB
@@ -438,7 +441,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/sections/anon001/rdzen  (61 pl., 278 KB)
 - (zwinięte; `ls chemia/che-modular/sections/anon001/rdzen`)
 
-## chemia/che-modular/tools  (26 pl., 139 KB)
+## chemia/che-modular/tools  (27 pl., 142 KB)
 - (zwinięte; `ls chemia/che-modular/tools`)
 
 ## chemia/che-modular/tools/_stare  (1 pl., 28 KB)

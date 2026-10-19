@@ -29,8 +29,8 @@ Chemia używa palety niebiesko-szarej, biologia własnej, ziemistej (`bio-viz.js
 4. `rozszerzenia.js`: osobno, bo to jeden plik z wieloma widokami; po przeróbce testy bezstratności silnika trzeba odświeżyć świadomie.
 5. Po przeróbce: `styl_sprawdz.py` ma pokazywać 0 odstępstw w plikach rysunkowych.
 
-## Do decyzji autora
+## Decyzje (2026-10-19)
 
-- Paleta ciemnego motywu (teraz jaśniejsze odpowiedniki tokenów jasnych).
-- Czy `plus`/`minus` mają być czerwony/niebieski (tak jak w większości podręczników), czy odwrotnie.
-- Czy biologia zachowuje ziemisty akcent przedmiotu w tle rysunków, czy przechodzi na teal chemii.
+- **Każdy przedmiot ma nieco inny styl:** wspólne są zasady, skala linii, szkło, znaczenie kolorów i motyw ciemny; różni się akcent przedmiotu (`--accent`: chemia teal, biologia zieleń) i kolory realistyczne (organizmy, substancje). Tokeny czytają akcent z CSS danego przedmiotu.
+- **Ładunek:** plus czerwony, minus niebieski, wszędzie.
+- **Motyw ciemny:** jaśniejsze odpowiedniki tokenów jasnych (jak w `styl-tokeny.js`).
