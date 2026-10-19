@@ -181,6 +181,9 @@ Kwas reaguje z zasadą, tworząc sól i wodę. Jest to **szczególny przypadek w
 **Kolejność sprawdzania: najpierw liczba substratów i produktów, potem wolne pierwiastki.** Jeden produkt z dwóch substratów to synteza. Dwa produkty z jednego substratu to analiza. Wolny pierwiastek po obu stronach to wymiana pojedyncza.
 :::
 
+@model energy-profile | Profil energii: reakcja egzo- i endotermiczna | Silnik CHE · otwiera się w oknie
+@opis Wykres profilu energii reakcji: oś pionowa to energia, a oś pozioma postęp reakcji. Krzywa zaczyna się na poziomie substratów i przechodzi przez szczyt energii aktywacji Eₐ do produktów. Gdy produkty leżą niżej niż substraty, widać różnicę ΔH < 0 (reakcja egzotermiczna, np. spalanie wodoru); gdy wyżej, ΔH > 0 (endotermiczna). Wniosek: egzo oddaje energię do otoczenia, endo ją pobiera.
+
 ### 7. Algorytm rozpoznawania typu z równania
 
 1. Policz substraty (po lewej) i produkty (po prawej).

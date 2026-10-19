@@ -169,6 +169,9 @@ Jeśli żaden z nich nie powstaje, reakcja nie zachodzi.
 @model rownania-jonowe-v01 | Równania jonowe: wybierz reakcję i zobacz trzy zapisy | Silnik CHE · otwiera się w oknie
 @opis Wybierasz reakcję (zobojętnianie, strącanie osadów, węglany, metale z kwasami); model pokazuje ten sam proces jako równanie cząsteczkowe, jonowe pełne i jonowe skrócone, a obok animację w probówce. W zapisie jonowym osad (↓), gaz (↑) i woda są zapisane cząsteczkowo, a jony widzowe występują po obu stronach i są pomijane w zapisie skróconym. Wniosek: zapis skrócony pokazuje, co faktycznie reaguje.
 
+@model acid-game | Kwas, zasada, sól czy tlenek? Klasyfikuj substancje | Gra w silniku CHE · otwiera się w oknie
+@opis Gra klasyfikacyjna: na ekranie pojawiają się wzory substancji (np. HCl, NaOH, NaCl, CO₂), a uczeń wybiera, czy to kwas, zasada, sól czy tlenek. Po odpowiedzi widać poprawną kategorię, a gra przechodzi dalej po krótkiej chwili. Wniosek: kwas ma jony H⁺ lub H₃O⁺ w roztworze, zasada jony OH⁻, sól powstaje z kwasu i zasady, tlenek łączy pierwiastek z tlenem.
+
 ### 5. Wypieranie kwasu z soli mocniejszym kwasem
 
 **Reguła:** mocniejszy kwas wypiera słabszy z jego soli. Słabe kwasy, takie jak H₂CO₃ i H₂SO₃, rozpadają się na wodę i gaz, więc ich sole reagują z mocnymi kwasami z wydzieleniem gazu.
