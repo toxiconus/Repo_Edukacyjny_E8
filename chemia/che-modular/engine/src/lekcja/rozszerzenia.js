@@ -6,14 +6,14 @@ var V=C.VIEW,G=C.LAB&&C.LAB.GFX,rx=G&&G.rx;
 function el(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e}
 var css=el('style');css.textContent=
 '.x5{font:14px/1.5 Inter,system-ui,sans-serif;color:inherit}.x5>*{width:100%;box-sizing:border-box}.x5 .bar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:4px 0 8px}.x5 .bar b{min-width:150px;font-size:13px}'+
-'.x5 button.o{border:1px solid var(--line,#cdd5dd);background:var(--panel,#fff);color:inherit;border-radius:8px;padding:5px 10px;font:600 12.5px Inter,system-ui;cursor:pointer}.x5 button.o.on{background:#0d6868;color:#fff;border-color:#0d6868}'+
+'.x5 button.o{border:1px solid var(--line,#d5dee6);background:var(--panel,#fff);color:inherit;border-radius:8px;padding:5px 10px;font:600 12.5px Inter,system-ui;cursor:pointer}.x5 button.o.on{background:#0d6868;color:#fff;border-color:#0d6868}'+
 '.x5 .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:12px;align-items:start}.x5 .eq{font:700 15px ui-monospace,Consolas,monospace;margin:4px 0 8px;overflow-wrap:anywhere}'+
-'.x5 .nt{border-left:3px solid #0d6868;background:var(--panel-2,#f6f8fa);padding:8px 10px;border-radius:6px;font-size:13.5px}.x5 .tch{color:#b83a45;font-weight:700}'+
+'.x5 .nt{border-left:3px solid #0d6868;background:var(--panel-2,#f1f5f8);padding:8px 10px;border-radius:6px;font-size:13.5px}.x5 .tch{color:#b83a45;font-weight:700}'+
 '.x5 .pt{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:4px;max-width:560px}.x5 .pt .h{font:700 10.5px system-ui;color:var(--mut,#667382);text-align:center;align-self:end}'+
-'.x5 .pt button{aspect-ratio:1;min-width:0;border-radius:8px;border:2px solid transparent;font:800 15px system-ui;cursor:pointer;padding:0;color:#1b2430}.x5 .pt button small{display:block;font:600 9px system-ui;opacity:.75}'+
-'.x5 .pt button.on{border-color:#1b2430;box-shadow:0 0 0 2px #fff inset}.x5 .t-jon{background:#fbd9b0}.x5 .t-kow{background:#bfe3e0}.x5 .t-pol{background:#d8e6c0}.x5 .t-met{background:#cdd5dd}.x5 .t-pos{background:#e9d5f0}'+
+'.x5 .pt button{aspect-ratio:1;min-width:0;border-radius:8px;border:2px solid transparent;font:800 15px system-ui;cursor:pointer;padding:0;color:#18212b}.x5 .pt button small{display:block;font:600 9px system-ui;opacity:.75}'+
+'.x5 .pt button.on{border-color:#18212b;box-shadow:0 0 0 2px #fff inset}.x5 .t-jon{background:#fbd9b0}.x5 .t-kow{background:#bfe3e0}.x5 .t-pol{background:#d8e6c0}.x5 .t-met{background:#d4d9df}.x5 .t-pos{background:#e9d5f0}'+
 '.x5 .lg{display:flex;flex-wrap:wrap;gap:10px;font-size:12px;margin:8px 0}.x5 .lg span{display:inline-flex;align-items:center;gap:5px}.x5 .lg i{width:14px;height:14px;border-radius:4px;display:inline-block}'+
-'.x5 table.k{border-collapse:collapse;width:100%;font-size:13.5px}.x5 table.k td{padding:4px 6px;border-bottom:1px solid var(--line,#e5e9ee);vertical-align:top}.x5 table.k td:first-child{color:var(--mut,#667382);width:42%}'+
+'.x5 table.k{border-collapse:collapse;width:100%;font-size:13.5px}.x5 table.k td{padding:4px 6px;border-bottom:1px solid var(--line,#e2e8ee);vertical-align:top}.x5 table.k td:first-child{color:var(--mut,#667382);width:42%}'+
 '.x5 .en{height:10px;border-radius:5px;background:linear-gradient(90deg,#f0a35e,#e9e3c9 50%,#58b4ae);position:relative;margin:4px 0 14px}.x5 .en i{position:absolute;top:-4px;width:3px;height:18px;background:#1b2430}.x5 .en em{position:absolute;top:12px;font:600 10px system-ui;transform:translateX(-50%);font-style:normal;white-space:nowrap}'+
 '.x5 svg text{font:12px system-ui;fill:currentColor}.x5 .che-zoom-frame{width:100%!important;max-width:640px}.x5 .che-zoom-frame>svg{width:100%!important}';
 document.head.appendChild(css);
@@ -213,7 +213,7 @@ function supN(n){return String(n).replace(/[0-9]/g,function(d){return '⁰¹²³
 function subN(n){return String(n).replace(/[0-9]/g,function(d){return '₀₁₂₃₄₅₆₇₈₉'[d]})}
 function chg(q){return q===0?'':(Math.abs(q)>1?supN(Math.abs(q)):'')+(q>0?'⁺':'⁻')}
 function pl(x,d){return x.toFixed(d).replace('.',',')}
-/* atomSVG — komponent wielokrotnego użytku (F05, F07, A01…): model atomu jako SVG, kolory jak w atlasie (_anon_004 bohr: elektrony wewnętrzne #2e7d4f, walencyjne #b85f00).
+/* atomSVG — komponent wielokrotnego użytku (F05, F07, A01…): model atomu jako SVG, kolory jak w atlasie (_anon_004 bohr: elektrony wewnętrzne #2f8a55, walencyjne #b85f00).
    o = {p, n, e, powloki:false|true, W:260}. powloki:false → elektrony na jednym okręgu (F05; powłoki to pojęcie F07);
    powloki:true → powłoki K, L, M, N wg modelu szkolnego 2, 8, 8, … (do Z = 20; dalej uproszczenie — do weryfikacji). Zwraca otwarty <svg…> (zamknąć '</svg>'). */
 function atomSVG(o){var W=o.W||260,C=W/2,p=o.p|0,n=o.n|0,e=o.e|0,svg='<svg viewBox="0 0 '+W+' '+W+'" width="100%" style="max-width:'+W+'px;display:block;margin:auto" role="img" aria-label="Model atomu: '+p+' p, '+n+' n, '+e+' e">';
@@ -247,7 +247,7 @@ V.define('f05-izotopy-v01',{title:'Izotop, jon czy inny pierwiastek? Konstruktor
   function draw(){var A=s.p+s.n,q=s.p-s.e,X=sym(s.p),d=izo(s.p);
    /* rysunek: jądro (p czerwone, n szare) + elektrony na jednym okręgu (rozmieszczenie na powłokach — F07) */
    var svg=atomSVG({p:s.p,n:s.n,e:s.e});
-   pic.innerHTML=svg+'</svg><div class="nt" style="text-align:center"><span style="color:#d9534f">●</span> proton &nbsp; <span style="color:#7f8da0">●</span> neutron &nbsp; <span style="color:#2f7bd8">●</span> elektron <small>(elektrony na jednym okręgu — powłoki: F07)</small></div>';
+   pic.innerHTML=svg+'</svg><div class="nt" style="text-align:center"><span style="color:#d9534f">●</span> proton &nbsp; <span style="color:#8a949e">●</span> neutron &nbsp; <span style="color:#2f7bd8">●</span> elektron <small>(elektrony na jednym okręgu — powłoki: F07)</small></div>';
    var iso=d&&d[2].filter(function(x){return x[0]===A})[0];
    var zm=[];if(s.p!==start.p)zm.push('<b>zmieniła się liczba protonów</b> → to już <b>inny pierwiastek</b> ('+sym(start.p)+' → '+X+')');
    else{if(s.n!==start.n)zm.push('zmieniła się liczba neutronów → <b>inny izotop</b> tego samego pierwiastka');if(s.e!==start.e)zm.push('zmieniła się liczba elektronów → <b>jon</b>, pierwiastek ten sam')}
@@ -375,13 +375,13 @@ var C=window.CHE;if(!C||!C.VIEW||!C.VIEW.define||C.EXT_WZOR)return;C.EXT_WZOR=1;
 var V=C.VIEW,D=C.DATA||{},NS='http://www.w3.org/2000/svg',MINUS='−',UID=0;
 var css=document.createElement('style');css.textContent=
 '.xw{font:14px/1.5 Inter,system-ui,sans-serif;color:inherit;display:grid;gap:10px}.xw .ctl{display:flex;flex-wrap:wrap;gap:6px;align-items:center}'+
-'.xw .seg{display:flex;flex-wrap:wrap;gap:4px}.xw .seg button,.xw select{font:600 12.5px Inter,system-ui;border:1px solid var(--line,#cdd5dd);background:var(--panel,#fff);color:inherit;padding:5px 10px;border-radius:7px;cursor:pointer}'+
+'.xw .seg{display:flex;flex-wrap:wrap;gap:4px}.xw .seg button,.xw select{font:600 12.5px Inter,system-ui;border:1px solid var(--line,#d5dee6);background:var(--panel,#fff);color:inherit;padding:5px 10px;border-radius:7px;cursor:pointer}'+
 '.xw .seg button[aria-pressed=true]{background:#0d6868;border-color:#0d6868;color:#fff}.xw label.chk{display:inline-flex;gap:5px;align-items:center;font-size:13px}'+
 '.xw .out{background:var(--panel-2,#f6f8fa);border-left:3px solid #0d6868;border-radius:6px;padding:8px 10px;font-size:13.5px;display:grid;gap:4px}'+
-'.xw .tbl{overflow-x:auto}.xw table{border-collapse:collapse;width:100%;font-size:13.5px}.xw th,.xw td{padding:4px 6px;border-bottom:1px solid var(--line,#e5e9ee);text-align:left}'+
+'.xw .tbl{overflow-x:auto}.xw table{border-collapse:collapse;width:100%;font-size:13.5px}.xw th,.xw td{padding:4px 6px;border-bottom:1px solid var(--line,#e2e8ee);text-align:left}'+
 '.xw th button{all:unset;cursor:pointer;font-weight:700;border-bottom:2px dotted currentColor}.xw .hl{background:#e6ebf2}.xw .mono{font-family:ui-monospace,Consolas,monospace}'+
-'.xw .okc{color:#2e7d4f;font-weight:700}.xw .badc{color:#b83a45;font-weight:700}.xw .chip{display:inline-block;font:600 12px ui-monospace,monospace;padding:1px 8px;border-radius:999px}'+
-'.xw .chip.ok{background:#e5e9ee;color:#2e7d4f}.xw .chip.bad{background:#f6dfda;color:#b83a45}.xw .chip.warn{background:#f6ecd5;color:#9a6a12}'+
+'.xw .okc{color:#2b7a4b;font-weight:700}.xw .badc{color:#b83a45;font-weight:700}.xw .chip{display:inline-block;font:600 12px ui-monospace,monospace;padding:1px 8px;border-radius:999px}'+
+'.xw .chip.ok{background:#dcefe3;color:#2b7a4b}.xw .chip.bad{background:#f6dfda;color:#b83a45}.xw .chip.warn{background:#f6ecd5;color:#9a6a12}'+
 '.xw .eqb{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font:600 15px ui-monospace,Consolas,monospace}'+
 '.xw .sp{display:inline-flex;align-items:center;gap:2px;border:1px solid var(--line,#cdd5dd);border-radius:8px;padding:3px 4px}.xw .sp button{all:unset;cursor:pointer;width:24px;height:24px;text-align:center;border-radius:5px;background:var(--panel-2,#f6f8fa);font-weight:700}'+
 '.xw .sp .k{min-width:16px;text-align:center;font-weight:800;color:#0d6868}.xw .tally{display:flex;flex-wrap:wrap;gap:2px;max-width:150px}.xw .tally i{width:9px;height:9px;border-radius:2px;display:inline-block}'+
@@ -462,7 +462,7 @@ var M15={
  NH3:{n:'NH₃',c:'N',L:ring(3,c68,s68,1.01,90).map(function(p){return ['H',p]}),lp:[[0,0.55,0]],v:'Wiązania N–H polarne. Piramida trygonalna (107°): suma wektorów wskazuje azot, po stronie wolnej pary. Cząsteczka polarna.'},
  CH4:{n:'CH₄',c:'C',L:[['H',[0,1.09,0]]].concat(ring(3,ct,stt,1.09,90).map(function(p){return ['H',p]})),lp:[],v:'Wiązania C–H słabo polarne. Tetraedr: cztery jednakowe wektory dają sumę zero. Cząsteczka niepolarna.'},
  HCl:{n:'HCl',c:'Cl',L:[['H',[-1.27,0,0]]],lp:[[0.45,0.3,0],[0.45,-0.3,0],[0.55,0,0.3]],v:'Jedno wiązanie H–Cl, polarne. Nie ma drugiego wektora, który mógłby je znieść. Cząsteczka polarna.'}};
-var COL15={H:'#ffffff',C:'#34404f',N:'#3459c9',O:'#d0402e',Cl:'#3d9a3d'};
+var COL15={H:'#ffffff',C:'#3d4447',N:'#3459c9',O:'#d0402e',Cl:'#3d9a3d'};
 V.define('f15-dipol-v01',{title:'Wektory dipola — polarność wiązań a polarność cząsteczki',tag:'MODEL',
  hint:'Włączaj warstwy po kolei: elektroujemność, cząstkowe ładunki δ, wektory wiązań i ich suma μ. Kształt (VSEPR) decyduje, czy wektory się znoszą.',foot:'EN wg Paulinga z danych silnika · strzałka wskazuje atom δ− (konwencja szkolna) · rozszerzenia.js §11 (V012)',
  build:function(host){base(host);var id='xw'+(++UID),sel=H('div',{'class':'seg ctl'}),lb=H('div',{'class':'ctl'}),svg=S('svg',{viewBox:'0 0 360 250',role:'img','aria-label':'Cząsteczka z wektorami dipola'}),out=H('div',{'class':'out'});[sel,lb,svg,out].forEach(function(e){host.appendChild(e)});
@@ -476,7 +476,7 @@ V.define('f15-dipol-v01',{title:'Wektory dipola — polarność wiązań a polar
    m.lp.forEach(function(lp){var p=P(lp);g.appendChild(S('circle',{cx:p[0]-4,cy:p[1],r:2.6,fill:'#1b2430'}));g.appendChild(S('circle',{cx:p[0]+4,cy:p[1],r:2.6,fill:'#1b2430'}))});
    var all=[[m.c,[0,0,0]]].concat(m.L);
    all.map(function(a,i){return {s:a[0],p:P(a[1]),c:i===0}}).sort(function(a,b){return a.p[2]-b.p[2]}).forEach(function(a){var rad=a.s==='H'?13:19;
-    g.appendChild(S('circle',{cx:a.p[0],cy:a.p[1],r:rad,fill:COL15[a.s],stroke:'#1b2430','stroke-width':'1.2'}));g.appendChild(S('text',{x:a.p[0],y:a.p[1]+4,'text-anchor':'middle','font-size':a.s==='H'?'11':'13','font-weight':'700',fill:a.s==='H'?'#1b2430':'#ffffff'},a.s));
+    g.appendChild(S('circle',{cx:a.p[0],cy:a.p[1],r:rad,fill:COL15[a.s],stroke:'#1a2528','stroke-width':'1.2'}));g.appendChild(S('text',{x:a.p[0],y:a.p[1]+4,'text-anchor':'middle','font-size':a.s==='H'?'11':'13','font-weight':'700',fill:a.s==='H'?'#1a2528':'#ffffff'},a.s));
     if(lay.en)g.appendChild(S('text',{x:a.p[0],y:a.p[1]+rad+12,'text-anchor':'middle','font-size':'10',fill:'#5a6a6d'},pl(EN(a.s),2)));
     if(lay.d){var o=a.c?m.L[0][0]:m.c,neg=EN(a.s)>EN(o);g.appendChild(S('text',{x:a.p[0]+rad*.75,y:a.p[1]-rad*.75,'font-size':'12','font-weight':'700',fill:neg?'#c03d2c':'#2a62b5'},neg?'δ−':'δ+'))}});
    var dE=0;m.L.forEach(function(L){var d=nrm(L[1]),de=EN(m.c)-EN(L[0]);dE=Math.abs(de);var v=[d[0]*-de,d[1]*-de,d[2]*-de];sum=[sum[0]+v[0],sum[1]+v[1],sum[2]+v[2]];
@@ -505,7 +505,7 @@ var EQ17=[
  {n:'spalanie propanu',L:[['C3H8',0],['O2',0]],R:[['CO2',0],['H2O',0]]},{n:'glin + kwas solny',L:[['Al',0],['HCl',0]],R:[['AlCl3',0],['H2',0]]},
  {n:'żelazo + tlen → tlenek żelaza(III)',L:[['Fe',0],['O2',0]],R:[['Fe2O3',0]]},{n:'miedź + jony srebra (ładunek!)',L:[['Cu',0],['Ag',1]],R:[['Cu',2],['Ag',0]]},
  {n:'strącanie wodorotlenku żelaza(III)',L:[['Fe',3],['OH',-1]],R:[['Fe(OH)3',0]]},{n:'siarczan(VI) glinu + wodorotlenek sodu',L:[['Al2(SO4)3',0],['NaOH',0]],R:[['Al(OH)3',0],['Na2SO4',0]]}];
-var ECOL={H:'#8fa3a6',O:'#d0402e',C:'#34404f',N:'#3459c9',Al:'#a07cc5',Cl:'#3d9a3d',Fe:'#b06f1c',Cu:'#c47a3a',Ag:'#9aa0a6',S:'#d6b21e',Na:'#7a5bd6'};
+var ECOL={H:'#8fa3a6',O:'#d0402e',C:'#3d4447',N:'#3459c9',Al:'#a07cc5',Cl:'#3d9a3d',Fe:'#b5651d',Cu:'#c47a3a',Ag:'#9aa0a6',S:'#d6b21e',Na:'#7a5bd6'};
 C.EXT_BILANS=parse;/* parser wzorów dostępny dla innych widoków */
 V.define('f17-bilans-v01',{title:'Bilans równania reakcji — atomy i ładunek',tag:'MODEL',
  hint:'Zmieniasz tylko współczynniki (wzory są stałe — inny indeks to inna substancja). Tabela liczy atomy każdego pierwiastka i łączny ładunek po obu stronach.',foot:'rozszerzenia.js §11 (V015) · tryb ekspercki: najmniejsze współczynniki do obliczeń',

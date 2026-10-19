@@ -355,15 +355,15 @@ if('IntersectionObserver' in window&&!(window.matchMedia&&matchMedia('(prefers-r
 var BIO=window.BIO;if(!BIO||!BIO.define||BIO.WZOR)return;BIO.WZOR=1;
 var NS='http://www.w3.org/2000/svg',UID=0;
 var css=document.createElement('style');css.textContent=
-'.bw-seg{display:flex;flex-wrap:wrap;gap:4px}.bw-out{display:grid;gap:4px}.bw-tbl{overflow-x:auto;margin-top:8px}.bw-tbl table{border-collapse:collapse;width:100%;font-size:13px}.bw-tbl th,.bw-tbl td{padding:4px 6px;border-bottom:1px solid var(--border,#e5e9ee);text-align:left;vertical-align:top}'+
+'.bw-seg{display:flex;flex-wrap:wrap;gap:4px}.bw-out{display:grid;gap:4px}.bw-tbl{overflow-x:auto;margin-top:8px}.bw-tbl table{border-collapse:collapse;width:100%;font-size:13px}.bw-tbl th,.bw-tbl td{padding:4px 6px;border-bottom:1px solid var(--border,#dde4e8);text-align:left;vertical-align:top}'+
 '.bw-mono{font-family:ui-monospace,Consolas,monospace}.bw-svg{width:100%;max-width:520px;display:block;background:var(--surface,#fff);border:1px solid var(--border,#e5e9ee);border-radius:8px}'+
 '.bw-codons{display:flex;flex-wrap:wrap;gap:6px}.bw-cod{border:1px solid var(--border,#e5e9ee);border-radius:7px;padding:4px;display:grid;gap:2px;font:14px ui-monospace,Consolas,monospace;text-align:center;min-width:76px}'+
-'.bw-cod .r{display:flex;justify-content:center;gap:1px}.bw-cod .r span{width:22px;display:inline-block}.bw-cod .r.k span{cursor:pointer;border-radius:4px;background:var(--surface-soft,#e6ebf2)}.bw-cod .r.k span.mut{background:#b8860b;color:#fff}'+
-'.bw-cod .r.m{color:var(--accent,#3f7a28);font-weight:700}.bw-cod .aa{font-weight:700;border-top:1px solid var(--border,#e5e9ee);padding-top:2px}.bw-cod.chg{border-color:#b8860b}.bw-cod.stop .aa{color:#b23b2a}.bw-cod.off{opacity:.45}'+
+'.bw-cod .r{display:flex;justify-content:center;gap:1px}.bw-cod .r span{width:22px;display:inline-block}.bw-cod .r.k span{cursor:pointer;border-radius:4px;background:var(--surface-soft,#eef3f1)}.bw-cod .r.k span.mut{background:#b8860b;color:#fff}'+
+'.bw-cod .r.m{color:var(--accent,#3f7a28);font-weight:700}.bw-cod .aa{font-weight:700;border-top:1px solid var(--border,#dde4e8);padding-top:2px}.bw-cod.chg{border-color:#b8860b}.bw-cod.stop .aa{color:#b23b2a}.bw-cod.off{opacity:.45}'+
 '.bw-key{display:grid;grid-template-columns:auto 1fr;gap:2px 8px;font-size:12.5px;margin-bottom:6px}.bw-key b{font-family:ui-monospace,monospace}'+
 '.bw-pun table{max-width:420px}.bw-pun td,.bw-pun th{text-align:center!important;border:1px solid var(--border,#e5e9ee)}.bw-pun td{font:600 14px ui-monospace,monospace;padding:8px 4px}.bw-pun td small{display:block;font:400 11.5px Inter,system-ui;opacity:.8}'+
-'.bw-bars{display:grid;gap:4px}.bw-bar{display:grid;grid-template-columns:minmax(0,9.5em) 1fr 3.2em;gap:8px;align-items:center;font-size:13px}.bw-bar .t{height:12px;background:var(--surface-soft,#e6ebf2);border-radius:3px;overflow:hidden}.bw-bar .t i{display:block;height:100%;background:var(--accent,#3f7a28)}.bw-bar .v{text-align:right;font-variant-numeric:tabular-nums}'+
-'.bw-svg text{font-family:system-ui,sans-serif}.bw-sel{font:600 12.5px Inter,system-ui;border:1px solid var(--border-strong,#cdd5dd);border-radius:7px;padding:5px 8px;background:var(--surface,#fff);color:inherit}';
+'.bw-bars{display:grid;gap:4px}.bw-bar{display:grid;grid-template-columns:minmax(0,9.5em) 1fr 3.2em;gap:8px;align-items:center;font-size:13px}.bw-bar .t{height:12px;background:var(--surface-soft,#eef3f1);border-radius:3px;overflow:hidden}.bw-bar .t i{display:block;height:100%;background:var(--accent,#3f7a28)}.bw-bar .v{text-align:right;font-variant-numeric:tabular-nums}'+
+'.bw-svg text{font-family:system-ui,sans-serif}.bw-sel{font:600 12.5px Inter,system-ui;border:1px solid var(--border-strong,#c7d0d6);border-radius:7px;padding:5px 8px;background:var(--surface,#fff);color:inherit}';
 document.head.appendChild(css);
 function S(t,a,x){var e=document.createElementNS(NS,t);if(a)for(var k in a)e.setAttribute(k,a[k]);if(x!=null)e.textContent=x;return e}
 function H(t,a,h){var e=document.createElement(t);if(a)for(var k in a){if(k==='text')e.textContent=a[k];else e.setAttribute(k,a[k])}if(h!=null)e.innerHTML=h;return e}
@@ -430,8 +430,8 @@ var TZ=[
  {k:'os',n:'Osmoza',co:'woda',bialko:'często (akwaporyny)',atp:'nie',kier:'do roztworu o wyższym stężeniu substancji rozpuszczonej',opis:'Woda przechodzi przez błonę półprzepuszczalną w stronę, gdzie jest więcej substancji rozpuszczonej (mniej „wolnej” wody).'}];
 function rnd(seed){return function(){seed=(seed*16807)%2147483647;return (seed-1)/2147483646}}
 function dots(g,x0,y0,w,h,n,sh,col,seed){var r=rnd(seed);for(var i=0;i<n;i++){var x=x0+6+r()*(w-12),y=y0+6+r()*(h-12);
- if(sh==='hex'){var p='';for(var k=0;k<6;k++){var a=k*Math.PI/3;p+=(k?'L':'M')+(x+5*Math.cos(a)).toFixed(1)+','+(y+5*Math.sin(a)).toFixed(1)}g.appendChild(S('path',{d:p+'z',fill:col,stroke:'#1b2430','stroke-width':'.6'}))}
- else if(sh==='big')g.appendChild(S('circle',{cx:x,cy:y,r:5.5,fill:col,stroke:'#1b2430','stroke-width':'.6'}));else g.appendChild(S('circle',{cx:x,cy:y,r:3,fill:col}))}}
+ if(sh==='hex'){var p='';for(var k=0;k<6;k++){var a=k*Math.PI/3;p+=(k?'L':'M')+(x+5*Math.cos(a)).toFixed(1)+','+(y+5*Math.sin(a)).toFixed(1)}g.appendChild(S('path',{d:p+'z',fill:col,stroke:'#1a2528','stroke-width':'.6'}))}
+ else if(sh==='big')g.appendChild(S('circle',{cx:x,cy:y,r:5.5,fill:col,stroke:'#1a2528','stroke-width':'.6'}));else g.appendChild(S('circle',{cx:x,cy:y,r:3,fill:col}))}}
 BIO.define('transport-blona',{opis:'Przekrój błony: dyfuzja prosta, ułatwiona, transport aktywny (ATP), osmoza; kropki = stężenie; klik = opis + tabela porównawcza; opcja start="dp|du|ta|os"',
 mount:function(el,o){var id='bw'+(++UID),cur=TZ.some(function(z){return z.k===o.start})?o.start:'dp',svg=S('svg',{viewBox:'0 0 360 270',role:'img','aria-label':'Przekrój błony komórkowej z czterema sposobami transportu','class':'bw-svg'}),out=info(),tw=H('div',{'class':'bw-tbl'}),t=H('table');tw.appendChild(t);[svg,out,tw].forEach(function(e){el.appendChild(e)});
   function draw(){clr(svg);var d=S('defs'),mk=S('marker',{id:id+'a',viewBox:'0 0 10 10',refX:'8',refY:'5',markerWidth:'6',markerHeight:'6',orient:'auto'});mk.appendChild(S('path',{d:'M0,0L10,5L0,10z',fill:'#1b2430'}));d.appendChild(mk);svg.appendChild(d);
