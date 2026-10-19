@@ -6,7 +6,7 @@ opis: gen, allel, genotyp, fenotyp · dominacja i recesywność · pokolenia P, 
 kicker: B1b · BIOLOGIA · GENETYKA · OCENY KL. 8 · ETAP WOJEWÓDZKI
 lead: Dlaczego dzieci są podobne do rodziców, a jednocześnie każde jest inne? Odpowiedź daje genetyka klasyczna: geny występują w parach, jeden allel dziedziczysz od matki, a drugi od ojca, i to właśnie krzyżówki Mendla pozwalają przewidywać wyniki.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:OLIMPIADA WOJEWÓDZKA]]
-uwaga: Kontynuacja L010 (DNA od zera). Numeracja wg BIO_KATALOG do uzgodnienia (kolejka B1b w PRIORYTETY.md). Dane Mendla (liczby z doświadczeń grochu) zgodne z tabelą Griffithsa; lata doświadczeń do weryfikacji.
+uwaga: Kontynuacja L010 (DNA od zera). Numeracja wg BIO_KATALOG do uzgodnienia (kolejka B1b w PRIORYTETY.md). Dane Mendla (liczby z doświadczeń grochu) zgodne z tabelą Griffithsa; lata doświadczeń do weryfikacji. Zakres LKO 2025/26 (etap III, pkt V.6–11) obejmuje dziedziczenie jednogenowe, cechy sprzężone z płcią i grupy krwi ABO. Krzyżówka dihybrydowa 9 : 3 : 3 : 1, dominacja niepełna i sprzężenie są oznaczone jako poza zakresem LKO 2025/26.
 stopka: **BIOLOGIA B1b v1.0** · Krzyżówki jednogenowe i prawa Mendla · wersja robocza po audycie W1 (2026-10-18)
 ---
 
@@ -115,7 +115,7 @@ Opis szachownicy: tabelka 2×2 z nagłówkami. Kolumny to gamety jednego rodzica
 4. Wpisz w pola genotypy potomków, łącząc gamety z wiersza i kolumny.
 5. Policz genotypy i fenotypy.
 
-### 7. Krzyżówka dihybrydowa — 9 : 3 : 3 : 1
+### 7. Krzyżówka dihybrydowa — 9 : 3 : 3 : 1 (poza zakresem LKO 2025/26)
 
 Dwie cechy naraz: kolor nasion (A — żółte, a — zielone) i kształt nasion (B — gładkie, b — pomarszczone).
 
@@ -267,7 +267,7 @@ Roślina o żółtych nasionach (A_) została skrzyżowana z homozygotą recesyw
 - stosunek 1 : 1 oznacza heterozygotę (2 pkt),
 - genotyp: **Aa** (1 pkt).
 
-### Ćwiczenie 5 (6 pkt) — krzyżówka dihybrydowa
+### Ćwiczenie 5 (6 pkt) — krzyżówka dihybrydowa (poza zakresem LKO 2025/26)
 Skrzyżowano AABB (żółte, gładkie) z aabb (zielone, pomarszczone). Podaj F1, a potem stosunek fenotypów w F2.
 
 **Rozwiązanie:**
@@ -355,7 +355,7 @@ Odpowiedź: **b)**.
 **3. Pierwsze prawo Mendla dotyczy:** a) jednorodności F1 z krzyżówki AA × aa; b) rozszczepienia 3 : 1; c) niezależnego dziedziczenia dwóch cech; d) kodominacji.
 Odpowiedź: **a)**.
 
-**4. Stosunek fenotypów w krzyżówce dihybrydowej AaBb × AaBb to:** a) 1 : 1 : 1 : 1; b) 3 : 1; c) 9 : 3 : 3 : 1; d) 1 : 2 : 1.
+**4. (poza zakresem LKO 2025/26) Stosunek fenotypów w krzyżówce dihybrydowej AaBb × AaBb to:** a) 1 : 1 : 1 : 1; b) 3 : 1; c) 9 : 3 : 3 : 1; d) 1 : 2 : 1.
 Odpowiedź: **c)**.
 
 **5. Krzyżówka testowa polega na krzyżowaniu badanego osobnika z:** a) homozygotą dominującą; b) homozygotą recesywną; c) heterozygotą; d) pokoleniem P.
@@ -387,7 +387,7 @@ Przed sprawdzianem lub zawodami sprawdź, czy umiesz:
 ---
 
 
-### 12. Rozszerzenia: prawdopodobieństwo, dominacja niepełna i sprzężenie
+### 12. Rozszerzenia (poza zakresem LKO 2025/26): prawdopodobieństwo, dominacja niepełna i sprzężenie
 
 **Gamety i zapłodnienie.** Organizm diploidalny ma dwa allele danego genu, ale gameta jest haploidalna i ma tylko jeden allel. Podczas zapłodnienia łączą się gamety matki i ojca, więc zygota znów ma dwa allele.
 
