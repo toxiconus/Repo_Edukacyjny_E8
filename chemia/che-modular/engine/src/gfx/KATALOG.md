@@ -231,3 +231,9 @@ Id w MD/HTML/kodzie jest angielskie (jak w silniku); nazwa PL z rejestru. Plik: 
 | id | nazwa | opis |
 |---|---|---|
 | `che-test-silnika-v01` | Test silnika — audyty modułów, spójność i montowanie wszystkich widoków |  |
+
+## chemia / szkielet (1)
+
+| id | nazwa | opis |
+|---|---|---|
+| `szkielet-zygzak` | Wzór kreskowy łańcucha C–C (zygzak) z grupą na końcu | `CHE.GFX.szkieletSVG({n, koniec})`; plik `chemia/szkielet/szkielet-zygzak.js`; lekcja docelowa: O01–O08 (materiał roboczy, bez builda) |
