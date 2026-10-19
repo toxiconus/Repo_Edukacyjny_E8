@@ -73,6 +73,9 @@ Każda regulacja homeostatyczna działa w **pętli zamkniętej** z 5 elementami:
 | **Efektor** (wykonawca) | wykonuje polecenie | mięśnie (dreszcze), naczynia, gruczoły potowe |
 | **Reakcja** (poprawka) | zmiana, która przywraca normę | ocieplenie ciała (zimno) / schłodzenie (gorąco) |
 
+@klocek petla-regulacji {zestaw="temperatura"} | Pętla regulacji z pięciu elementów: przykład temperatury ciała
+@opis Pięć pól ułożonych w pętlę ze strzałkami: bodziec (temperatura rośnie), receptor (termoreceptory), ośrodek (podwzgórze), efektor (gruczoły potowe i naczynia skórne), efekt (oddawanie ciepła, temperatura spada), po którym pętla wraca do bodźca. Impuls krąży po strzałkach, a pośrodku napis „sprzężenie ujemne — efekt cofa odchylenie”. Pokazuje budowę pętli z tej lekcji.
+
 ## 3 | Sprzężenie ujemne vs dodatnie {#s3}
 
 **Sprzężenie zwrotne ujemne** (negative feedback) — odchylenie od normy wywołuje **reakcję przeciwną** która przywraca normę. To **główny mechanizm homeostazy** — większość procesów organizmu.

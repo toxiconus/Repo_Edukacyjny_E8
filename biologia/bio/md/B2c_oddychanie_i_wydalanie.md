@@ -60,6 +60,9 @@ Drogi oddechowe (1–6) służą tylko do przewodzenia powietrza. Wymiana gazów
 
 **Oddychanie wymuszone** (np. przy wysiłku) angażuje dodatkowe mięśnie (klatki piersiowej, brzucha). Wentylacja minutowa rośnie wielokrotnie: z ok. 6 L/min w spoczynku do znacznie wyższych wartości (do potwierdzenia).
 
+@klocek petla-regulacji {zestaw="oddech"} | Regulacja oddychania przez stężenie CO₂
+@opis Pętla z pięciu pól: rośnie CO₂ we krwi, chemoreceptory w rdzeniu i tętnicach to wykrywają, ośrodek oddechowy w rdzeniu przedłużonym reaguje, przepona i mięśnie międzyżebrowe przyspieszają oddech, CO₂ spada. Impuls krąży po strzałkach. Pokazuje sprzężenie ujemne w oddychaniu.
+
 ## 3 | Wymiana gazowa w pęcherzykach {#wymiana}
 
 Ściana pęcherzyka i ściana naczynia włosowatego razem tworzą barierę o grubości rzędu **1 μm**. Gazy przechodzą przez nią dyfuzją, z miejsca o wyższym stężeniu do niższego.

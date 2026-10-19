@@ -35,7 +35,8 @@
     "nadmiar_substratu.js": "Nadmiar substratu: suwaki mas, współczynniki przereagowania, paski, produkty",
     "naczynia.js": "Wspólna geometria i wygląd szkła (probówka) dla klocków probowki, probowki-odczyn",
     "haworth.js": "Wzór Hawortha: α/β-D-glukopiranoza i β-D-fruktofuranoza (przełączane chipami)",
-    "estryfikacja.js": "Animacja estryfikacji: kwas + alkohol → ester + woda (pętla, autostart)"
+    "estryfikacja.js": "Animacja estryfikacji: kwas + alkohol → ester + woda (pętla, autostart)",
+    "petla_regulacji.js": "Pętla sprzężenia ujemnego z 5 elementów z krążącym impulsem (biologia)"
   },
   "lekcje": {
     "P01": [
@@ -255,6 +256,21 @@
       "klocki.js",
       "pomocnicze.js",
       "nadmiar_substratu.js"
+    ],
+    "B2c": [
+      "klocki.js",
+      "pomocnicze.js",
+      "petla_regulacji.js"
+    ],
+    "B2e": [
+      "klocki.js",
+      "pomocnicze.js",
+      "petla_regulacji.js"
+    ],
+    "B2g": [
+      "klocki.js",
+      "pomocnicze.js",
+      "petla_regulacji.js"
     ]
   },
   "css": [

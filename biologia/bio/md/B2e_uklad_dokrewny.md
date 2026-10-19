@@ -107,6 +107,9 @@ Podwzgórze i przysadka sterują gruczołami obwodowymi, a te z kolei wpływają
 **Ujemne = przeciwdziałanie.** Gdy hormon rośnie, układ go wyłącza. Gdy spada, układ go włącza. Dzięki temu stężenie pozostaje w zakresie normy.
 :::
 
+@klocek petla-regulacji {zestaw="tarczyca"} | Sprzężenie zwrotne ujemne na przykładzie tarczycy
+@opis Pętla z pięciu pól: rośnie poziom tyroksyny, podwzgórze i przysadka go wykrywają, przysadka wydziela mniej TSH, tarczyca produkuje mniej hormonu, poziom wraca do normy. Impuls krąży po strzałkach; pośrodku napis „sprzężenie ujemne”. Pokazuje, że hormon hamuje własne wydzielanie.
+
 ## 6 | Tabela hormonów — szybkie przypomnienie {#tabela}
 
 | Gruczoł | Hormon | Działanie |

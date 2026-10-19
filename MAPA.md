@@ -48,7 +48,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `BIO_KATALOG.md` 3 KB
 - `PRZEKAZANIE.md` 3 KB
 
-## biologia/bio/md  (12 pl., 304 KB)
+## biologia/bio/md  (12 pl., 306 KB)
 - `B10_powtorka_uklady_czlowieka.md` 18 KB
 - `B1b_krzyzowki_mendel.md` 22 KB
 - `B2a_skora_i_uklad_ruchu.md` 18 KB
@@ -57,7 +57,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `B2d_uklad_nerwowy_i_zmysly.md` 19 KB
 - `B2e_uklad_dokrewny.md` 15 KB
 - `B2f_rozmnazanie_i_rozwoj.md` 17 KB
-- `B2g_homeostaza.md` 30 KB
+- `B2g_homeostaza.md` 31 KB
 - `L010_dna_od_zera.md` 48 KB
 - `REV01_organizacja_i_chemizm_zycia.md` 29 KB
 - ⚠`REV02_roznorodnosc_zycia.md` 55 KB
@@ -271,7 +271,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/engine/src/gfx/wspolne/widoki  (1 pl., 4 KB)
 - `che-test-silnika-v01.js` 4 KB
 
-## chemia/che-modular/engine/src/klocki  (36 pl., 215 KB)
+## chemia/che-modular/engine/src/klocki  (37 pl., 221 KB)
 - (zwinięte; `ls chemia/che-modular/engine/src/klocki`)
 
 ## chemia/che-modular/engine/src/klocki/dane  (1 pl., 11 KB)

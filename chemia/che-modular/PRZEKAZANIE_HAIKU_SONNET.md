@@ -79,9 +79,9 @@ Lekcje (klocki / modele `@model` / `@zlewka` dziś): C1c konfiguracje 1/0/0; C1c
 ### Sonnet — S9–S12
 | id | zadanie | gotowe, gdy |
 |---|---|---|
-| S9 | Plan komponentów: zebrać wiersze od Haiku (H9), pogrupować, zbudować te, które wracają w ≥ 2 lekcjach (kandydaci: animacja estryfikacji ORG06, schemat procesu biologicznego „strzałki i etapy”, układ narządów z podświetlaniem, wykres z suwakiem) | klocki w `engine/src/klocki/`, wpis w manifest i README |
+| S9 (częściowo: `petla-regulacji` — 3 lekcje bio, `estryfikacja`, `haworth`) | Plan komponentów: zebrać wiersze od Haiku (H9), pogrupować, zbudować te, które wracają w ≥ 2 lekcjach (kandydaci: animacja estryfikacji ORG06, schemat procesu biologicznego „strzałki i etapy”, układ narządów z podświetlaniem, wykres z suwakiem) | klocki w `engine/src/klocki/`, wpis w manifest i README |
 | S10 | Wspólny klocek „doświadczenie”: probówka/zlewka + palnik + karta BHP + równanie w jednym układzie (zamiast składania ręcznego w md) | użyty w C4 i ≥ 2 lekcjach N |
-| S11 | Biologia: przenieść wzorzec klocków do kilku lekcji (B2c oddychanie, B2e hormony, B2g homeostaza) po ocenie Haiku | min. 3 lekcje z `@klocek` + `@opis` |
+| ~~S11~~ (wykonane 2026-10-19: `petla-regulacji` w B2c, B2e, B2g) | Biologia: przenieść wzorzec klocków do kilku lekcji (B2c oddychanie, B2e hormony, B2g homeostaza) po ocenie Haiku | min. 3 lekcje z `@klocek` + `@opis` |
 | S12 | Przegląd wyników H9 (losowo 30%): czy zmiany wnoszą coś do lekcji, spójność stylu (`styl_sprawdz.py`) | raport w `PROGRESS.md` |
 
 ### Plan komponentów (uzupełnia Haiku)
