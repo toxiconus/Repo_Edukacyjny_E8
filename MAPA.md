@@ -3,7 +3,7 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (13 pl., 120 KB)
+## .  (13 pl., 122 KB)
 - (zwinięte; `ls .`)
 
 ## angielski  (9 pl., 1.8 MB)
@@ -88,7 +88,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `BIO.011w.v01.00.html` 27 KB
 
 ## chemia  (2 pl., 7 KB)
-- `INDEKS.html` 6 KB
+- `INDEKS.html` 7 KB
 - `PLAN_LEKCJI.md` 0 KB
 
 ## chemia/archiwum  (1 pl., 1 KB)
@@ -332,7 +332,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - (zwinięte; `ls chemia/che-modular/lessons-md/gotowe`) — duże:
 - ⚠`FIZ01_elektrostatyka.md` 55 KB
 - ⚠`N01_tlenki.md` 123 KB
-- ⚠`N02_wodorotlenki.md` 129 KB
+- ⚠`N02_wodorotlenki.md` 130 KB
 - ⚠`N03_kwasy.md` 134 KB
 - ⚠`N04_sole.md` 86 KB
 - ⚠`N05_wodorki.md` 56 KB
@@ -517,13 +517,13 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `paczka_polski.py` 4 KB
 - `zbierz_lekcje.py` 17 KB
 
-## narzedzia  (8 pl., 51 KB)
+## narzedzia  (8 pl., 52 KB)
 - `audyt_do_kanonu.py` 5 KB
 - `latex2uni.py` 2 KB
 - `mapa.py` 2 KB
 - `opis_dlug.json` 0 KB
 - `opis_wizualizacji.py` 3 KB
-- `spis_lekcji.py` 6 KB
+- `spis_lekcji.py` 7 KB
 - `spis_polski.py` 9 KB
 - `szkielety_polski.py` 24 KB
 

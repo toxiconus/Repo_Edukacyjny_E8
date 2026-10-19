@@ -6,6 +6,23 @@ Rozróżnia lekcje (pliki) od list tematów (plany: chemia/plany/CHE_SPIS_TRESCI
 import glob, os, re, datetime
 WIZ = re.compile(r'^@(klocek|model|zlewka)\b', re.M)
 OPIS = re.compile(r'^@opis\b', re.M)
+
+# Etap konkursu LKO 2026/27, do którego należy treść lekcji (wg pakietu: chemia pkt I–V = etap I, I–VIII = etap II, organika i genetyka = etap III).
+# Dopasowanie po nazwie pliku (prefiks). Lekcje bez etapu w konkursie (fizyka, polski, angielski) → „poza LKO”.
+ETAP = [
+    ('C1c_konfiguracje', 'I (rozszerzenie)'), ('C1c_wodorki', 'I (typy reakcji) + II (wodorki)'), ('C1c_kwasy', 'II'),
+    ('C1c_masy', 'II'), ('C2m', 'III'), ('C2w', 'III (hydraty poza LKO)'), ('C3', 'II'), ('C4', 'I'),
+    ('F01', 'I'), ('F02', 'I'), ('F03', 'I'), ('F04', 'I'), ('F05', 'I'), ('F06', 'I'), ('J03', 'II'),
+    ('LKO_ORG', 'III'), ('N01', 'I'), ('N02', 'II'), ('N03', 'II'), ('N04', 'II'), ('N05', 'II'),
+    ('R03', 'I'), ('R07', 'II'), ('REV01_powtorka', 'I'), ('X04', 'II'),
+    ('B10', 'II'), ('B1b', 'III (genetyka)'), ('B2', 'II'), ('L010', 'III (DNA)'), ('REV01_org', 'I'), ('REV02', 'I'),
+]
+def etap(nazwa):
+    for p, e in ETAP:
+        if nazwa.startswith(p): return e
+    if nazwa.startswith('FIZ'): return 'poza LKO (fizyka)'
+    return 'poza LKO'
+
 ZRODLA = [
     ('chemia (che-modular)', 'chemia/che-modular/lessons-md/gotowe/*.md'),
     ('biologia', 'biologia/bio/md/*.md'),
@@ -19,13 +36,13 @@ tot = 0
 for nazwa, wz in ZRODLA:
     fs = sorted(glob.glob(wz))
     if not fs: continue
-    out += ['## %s (%d lekcji)' % (nazwa, len(fs)), '', '| plik | KB | wiz. | @opis | uwagi |', '|---|---:|---:|---:|---|']
+    out += ['## %s (%d lekcji)' % (nazwa, len(fs)), '', '| plik | etap LKO 2026/27 | KB | wiz. | @opis | uwagi |', '|---|---|---:|---:|---:|---|']
     for f in fs:
         t = open(f, encoding='utf-8', errors='replace').read()
         v, o = len(WIZ.findall(t)), len(OPIS.findall(t)); kb = os.path.getsize(f) // 1024; tot += kb
         uw = 'dług @opis: %d (zob. narzedzia/opis_dlug.json)' % (v - o) if v > o else ''
         if re.search(r'poza zakresem LKO 2025/26', t): uw += (' ' if uw else '') + 'oznaczenia „poza zakresem 2025/26” — sprawdzić z 2026/27'
-        out.append('| `%s` | %d | %d | %d | %s |' % (os.path.basename(f), kb, v, o, uw))
+        out.append('| `%s` | %s | %d | %d | %d | %s |' % (os.path.basename(f), etap(os.path.basename(f)[:-3]), kb, v, o, uw))
     out.append('')
 out.append('Razem: %d KB.' % tot)
 open('SPIS_LEKCJI.md', 'w', encoding='utf-8').write('\n'.join(out) + '\n')
@@ -55,7 +72,7 @@ def wiersze(wz, dist, baza):
         if h and os.path.exists(h): lnk = '<a href="%s">%s</a>' % (H.escape(os.path.relpath(h, baza)), H.escape(n))
         else: lnk = '<a href="%s">%s</a>' % (H.escape(os.path.relpath(f, baza)), H.escape(n)) + (' <span class="s">(md; html: zbuduj)</span>' if dist else '')
         uw = '<span class="w">dług @opis: %d</span>' % (v - o) if v > o else ''
-        r.append('<tr><td>%s</td><td class="n">%d</td><td class="n">%d</td><td>%s</td></tr>' % (lnk, kb, v, uw))
+        r.append('<tr><td>%s</td><td>%s</td><td class="n">%d</td><td class="n">%d</td><td>%s</td></tr>' % (lnk, H.escape(etap(n)), kb, v, uw))
     return r
 def strona(tyt, sekcje, baza, kryt):
     h = ['<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>%s</title>%s</head><body><h1>%s</h1>' % (H.escape(tyt), CSS, H.escape(tyt)), TERM]
@@ -63,7 +80,7 @@ def strona(tyt, sekcje, baza, kryt):
     for naz, wz, dist in sekcje:
         rw = wiersze(wz, dist, baza)
         if not rw: continue
-        h.append('<h2>%s (%d)</h2><table><tr><th>lekcja</th><th class="n">KB</th><th class="n">wiz.</th><th>uwagi</th></tr>%s</table>' % (H.escape(naz), len(rw), ''.join(rw)))
+        h.append('<h2>%s (%d)</h2><table><tr><th>lekcja</th><th>etap LKO 2026/27</th><th class="n">KB</th><th class="n">wiz.</th><th>uwagi</th></tr>%s</table>' % (H.escape(naz), len(rw), ''.join(rw)))
     return ''.join(h) + '</body></html>'
 for kat, tyt, sek in PRZEDMIOTY:
     open(os.path.join(kat, 'INDEKS.html'), 'w', encoding='utf-8').write(strona('Indeks lekcji — ' + tyt, sek, kat, None))
