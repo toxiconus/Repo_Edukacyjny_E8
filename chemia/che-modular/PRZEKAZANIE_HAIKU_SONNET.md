@@ -16,7 +16,7 @@ Start każdej sesji: `CLAUDE.md` w katalogu głównym, potem ten plik, potem tyl
 
 | id | zadanie | pliki / polecenie | gotowe, gdy |
 |---|---|---|---|
-| H1 | Masy atomowe w C1c masy: porównać listę z tablicą IUPAC (CIAAW), zdjąć oznaczenie „do weryfikacji” | `lessons-md/gotowe/C1c_masy_sklad_procentowy.md` | lista zgodna ze źródłem, wpis w `WERYFIKACJA.md`, build OK |
+| ~~H1~~ (wykonane 2026-10-19, zgodne z CIAAW) | Masy atomowe w C1c masy: porównać listę z tablicą IUPAC (CIAAW), zdjąć oznaczenie „do weryfikacji” | `lessons-md/gotowe/C1c_masy_sklad_procentowy.md` | lista zgodna ze źródłem, wpis w `WERYFIKACJA.md`, build OK |
 | H2 | Weryfikacja faktów i liczb: C2m, C2w, C1c wodorki, C1c masy (każda lekcja osobno) | md w `lessons-md/gotowe/`; metoda jak w wierszach C1c w `WERYFIKACJA.md` | poprawki w md, wiersze rejestru |
 | H3 | Siedem modeli „do sprawdzenia”: porównać z zamiennikiem, wpisać status (zastąpiony / zachować / scalić) | `engine/registry/katalog_oceny.json` (statusy „do sprawdzenia”: chem-profile10, compound-cards, diss-three-levels, ion-vs-diss, flow-naming, naming-table, molecule-cv); potem `che.py katalog` | żadnego „do sprawdzenia” w `KATALOG_WIZUALIZACJI.md` |
 | H4 | Wstawić gotowe modele: `energy-profile` do C1c wodorki/typy reakcji, `acid-game` do C1c kwasy/zasady/sole, `gfx-scene-gasCollection` do N01 powietrze i gazy | wzór: sekcje `@model` + `@opis` już wstawione w C1c kwasy; najpierw obejrzeć działanie modelu | build OK, model otwiera się bez błędów (headless), `@opis` jest |
