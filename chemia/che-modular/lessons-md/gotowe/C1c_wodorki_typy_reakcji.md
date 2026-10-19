@@ -47,7 +47,7 @@ Wodorki niemetali zachowują się w wodzie różnie:
 
 | Wzór | Nazwa systematyczna | Nazwa roztworu | Odczyn | Uwagi |
 |---|---|---|---|---|
-| H₂O | tlenek wodoru | woda | obojętny (pH 7) | rozpuszczalnik |
+| H₂O | tlenek wodoru | woda | obojętny (pH ≈ 7) | rozpuszczalnik |
 | HCl | chlorowodór (chlorek wodoru) | kwas solny | kwaśny, mocny kwas | gaz bardzo dobrze rozpuszczalny w wodzie |
 | H₂S | siarkowodór (siarczek wodoru) | kwas siarkowodorowy | kwaśny, słaby kwas | gaz o zapachu zgniłych jaj |
 | NH₃ | azan (azotek wodoru) | amoniak (roztwór wodny) | zasadowy | roztwór zawiera jony NH₄⁺ i OH⁻ |

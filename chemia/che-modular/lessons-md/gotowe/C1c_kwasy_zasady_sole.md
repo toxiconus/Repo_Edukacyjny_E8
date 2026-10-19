@@ -228,7 +228,7 @@ Metoda jest laboratoryjna. Czy etap rejonowy wymaga jej w pełnej formie, patrz 
 :::
 
 ::: mnemonik
-**NPSW — warunek reakcji wymiany:** **N**ierozpuszczalny osad, **P**rodukt gazowy, **S**łaby elektrolit, **W**oda. Brak każdego z nich oznacza brak reakcji.
+**NPSW — warunek reakcji wymiany:** **N**ierozpuszczalny osad, **P**rodukt gazowy, **S**łaby elektrolit, **W**oda. Brak każdego z nich oznacza brak reakcji. To skrót dydaktyczny: o tym, czy reakcja zajdzie, decydują ostatecznie równanie jonowe i warunki.
 :::
 
 ---

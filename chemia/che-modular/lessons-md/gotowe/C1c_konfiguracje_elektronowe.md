@@ -52,7 +52,7 @@ W tej lekcji nauczysz się zapisywać **konfiguracje elektronowe** atomów i jon
 | d | 5 | 10 |
 | f | 7 | 14 |
 
-W zakresie Z ≤ 36 wystarczają podpowłoki **s, p, d**. Podpowłoka f pojawia się dopiero od lantanowców (Z = 57).
+W zakresie Z ≤ 36 wystarczają podpowłoki **s, p, d**. Podpowłoka f zaczyna być obsadzana dopiero w szeregu lantanowców (od Z = 57), więc w zakresie Z ≤ 36 nie występuje.
 
 ::: ciekawostka
 Litery s, p, d, f pochodzą z opisów linii widmowych odkrytych pod koniec XIX w.: **s**harp (ostra), **p**rincipal (główna), **d**iffuse (rozmyta), **f**undamental (podstawowa). Nazwy nie mają dziś znaczenia chemicznego, ale zostały jako konwencja.

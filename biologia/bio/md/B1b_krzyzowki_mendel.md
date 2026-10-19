@@ -37,7 +37,7 @@ W tej lekcji poznasz podstawy dziedziczenia cech. Dowiesz się, jak geny przecho
 
 ### 1. Podstawowe pojęcia
 
-**Gen** — fragment DNA, który koduje cechę organizmu, na przykład kolor kwiatu, kształt nasion czy grupę krwi. Geny leżą na chromosomach w określonym miejscu zwanym **locus**.
+**Gen** — fragment DNA zawierający informację o produkcie (najczęściej białku) wpływającym na cechę organizmu, na przykład kolor kwiatu, kształt nasion czy grupę krwi. Fenotyp zależy też od środowiska, więc sam gen nie przesądza o wszystkim. Geny leżą na chromosomach w określonym miejscu zwanym **locus**.
 
 **Allel** — wariant tego samego genu. Dla genu barwy nasion grochu Mendel miał dwa allele: **A** (żółte nasiona) i **a** (zielone nasiona).
 
