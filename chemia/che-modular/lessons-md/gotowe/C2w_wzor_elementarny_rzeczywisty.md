@@ -6,7 +6,7 @@ opis: wzór elementarny i rzeczywisty · wyznaczanie wzoru z procentów przez mo
 kicker: C2w · OLIMPIADA · ETAP WOJEWÓDZKI
 lead: Z danych procentowych odtworzysz wzór związku. Metoda z molem prowadzi do wzoru elementarnego, a masa molowa pozwala znaleźć wzór rzeczywisty — także dla soli krystalicznych z wodą.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:OLIMPIADA WOJEWÓDZKA]]
-uwaga: Poziom 2 (wojewódzki). Rozszerza C1c (wzór najprostszy bez mola). Temperatury rozkładu hydratów: CuSO₄·5H₂O ok. 200 °C, gips ok. 100–150 °C (wg Wikipedii). Zakres LKO 2025/26 wymienia wzory elementarne i rzeczywiste przy związkach organicznych (etap III, pkt 2.12), a hydraty nieorganiczne nie są wymienione wprost: §6–7 i ćwiczenia 5, 6, 8 są oznaczone jako poza zakresem LKO 2025/26.
+uwaga: Poziom 2 (wojewódzki). Rozszerza C1c (wzór najprostszy bez mola). Temperatury rozkładu hydratów są orientacyjne i do weryfikacji w źródle podręcznikowym (CuSO₄·5H₂O, gips). Zakres LKO 2025/26 wymienia wzory elementarne i rzeczywiste przy związkach organicznych (etap III, pkt 2.12), a hydraty nieorganiczne nie są wymienione wprost: §6–7 i ćwiczenia 5, 6, 8 są oznaczone jako poza zakresem LKO 2025/26.
 stopka: **CHEMIA C2w · Wzór elementarny, rzeczywisty i hydraty · wersja robocza po audycie W1 (2026-10-18)**
 ---
 
@@ -134,11 +134,11 @@ Skład procentowy:
 Sprawdzenie: 25,6 + 12,8 + 25,6 + 36,0 = 100%.
 
 ::: ciekawostka
-Kryształy CuSO₄·5H₂O są niebieskie. Woda krystalizacyjna odchodzi stopniowo; ostatnia cząsteczka wody opuszcza strukturę dopiero w ok. 200 °C, a bezwodny CuSO₄ jest biały. Proces jest odwracalny: dodanie wody przywraca niebieski kolor. Źródło: Wikipedia, hasło „Copper(II) sulfate” (sprawdzono 2026-10-18).
+Kryształy CuSO₄·5H₂O są niebieskie. Woda krystalizacyjna odchodzi stopniowo; woda opuszcza strukturę stopniowo, w kilku etapach, a ostatnia cząsteczka wody odchodzi dopiero po mocnym ogrzaniu (dokładna temperatura do weryfikacji). Bezwodny CuSO₄ jest biały. Proces jest odwracalny: dodanie wody przywraca niebieski kolor.
 :::
 
 ::: ciekawostka
-Gips (CaSO₄·2H₂O) po ogrzaniu do ok. 100–150 °C traci część wody i tworzy półhydrat CaSO₄·0,5H₂O, tzw. gips palony (wg Wikipedii). Po zmieszaniu z wodą wiąże ponownie i twardnieje — stąd jego zastosowanie w budownictwie i medycynie.
+Gips (CaSO₄·2H₂O) po ogrzaniu (temperatura orientacyjna, do weryfikacji) traci część wody i tworzy półhydrat CaSO₄·0,5H₂O, tzw. gips palony. Po zmieszaniu z wodą wiąże ponownie i twardnieje — stąd jego zastosowanie w budownictwie i medycynie.
 :::
 
 @zlewka sole-doswiadczenia-v01 cuso4Hydrate | Zobacz w zlewce: ogrzewanie CuSO₄·5H₂O (poza zakresem LKO 2025/26)
