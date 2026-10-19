@@ -6,6 +6,7 @@ opis:
 kicker: N02 · CHEMIA · MASTER LAB v9.0
 lead: Kation metalu + OH⁻ → wzór M(OH)ₙ, nawias i nazwy; rozpuszczalność, wodorotlenek a zasada, dysocjacja i odczyn; trzy metody otrzymywania, strącanie, zobojętnianie, wskaźniki, amfoteryczność. Modele, liczby i równania z silnika CHE.HYDROXIDES.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNIE / LO]]
+uwaga: Zakres LKO 2026/27: wodorotlenki, kwasy i sole są na etapie rejonowym (pkt I–VIII podstawy), a nie szkolnym (pkt I–V). Treść lekcji zostaje w całości; uczeń na etapie szkolnym może ją pominąć, ale nie jest błędem, że ją zna.
 stopka: **CHEMIA N02 v9.0** · Wodorotlenki · 2026
 ---
 ::: minimum | Muszę umieć na E8 — 8 kluczowych faktów

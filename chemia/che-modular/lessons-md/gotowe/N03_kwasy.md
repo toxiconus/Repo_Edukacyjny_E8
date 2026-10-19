@@ -6,7 +6,7 @@ opis:
 kicker: N03 · MASTER LAB v1.9
 lead: Samodzielna lekcja MASTER: definicja, nazewnictwo, dysocjacja, moc, pH, reakcje, kwaśne deszcze, zastosowania, bezpieczeństwo, historia i rozszerzenia (titracja, bufory, kwasy organiczne).
 plakietki: [[basic:E8]] [[understand:ROZUMIENIE]] [[extra:AMBITNE (LO)]]
-uwaga: Treści ponad poziom matury rozszerzonej (biol-chem) są zwinięte w ramkach „poziom akademicki” — nic nie zostało usunięte. Przycisk rozwija lub zwija wszystkie naraz.
+uwaga: Treści ponad poziom matury rozszerzonej (biol-chem) są zwinięte w ramkach „poziom akademicki” — nic nie zostało usunięte. Przycisk rozwija lub zwija wszystkie naraz. Zakres LKO 2026/27: wodorotlenki, kwasy i sole są na etapie rejonowym (pkt I–VIII podstawy), a nie szkolnym (pkt I–V). Treść lekcji zostaje w całości; uczeń na etapie szkolnym może ją pominąć, ale nie jest błędem, że ją zna.
 stopka: **CHEMIA N03 v1.9 MASTER LAB** · Kwasy · 2026
 ---
 ::: minimum | Muszę umieć na E8 — 10 faktów

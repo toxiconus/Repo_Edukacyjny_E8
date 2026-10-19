@@ -6,6 +6,7 @@ opis:
 kicker: N04 · MASTER LAB v1.1
 lead: Budowa, wzory i nazwy, dysocjacja, tabela rozpuszczalności, 10 metod otrzymywania, strącanie i wykrywanie jonów, wypieranie metali, hydraty, ważne sole, BHP, hydroliza (LO), sole w organizmie, doświadczenia, klinika błędów i ćwiczenia. Równania i dane — z silnika CHE (te same co w Atlasie i lekcji o kwasach).
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
+uwaga: Zakres LKO 2026/27: wodorotlenki, kwasy i sole są na etapie rejonowym (pkt I–VIII podstawy), a nie szkolnym (pkt I–V). Treść lekcji zostaje w całości; uczeń na etapie szkolnym może ją pominąć, ale nie jest błędem, że ją zna.
 stopka: **CHEMIA N04 v1.1 MASTER LAB** · Sole · 2026
 ---
 ::: minimum | Muszę umieć na E8 — 10 faktów
