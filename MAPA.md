@@ -3,13 +3,14 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (11 pl., 93 KB)
+## .  (12 pl., 100 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 8 KB
 - `MAPA.md` 20 KB
 - `PRZEKAZANIE.md` 8 KB
 - `README.md` 0 KB
+- `SPIS_LEKCJI.md` 6 KB
 - `WERYFIKACJA.md` 39 KB
 - `edit_html.py` 3 KB
 - `fix_encoding.ps1` 1 KB
@@ -525,12 +526,13 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `paczka_polski.py` 4 KB
 - `zbierz_lekcje.py` 17 KB
 
-## narzedzia  (7 pl., 46 KB)
+## narzedzia  (8 pl., 51 KB)
 - `audyt_do_kanonu.py` 5 KB
 - `latex2uni.py` 2 KB
 - `mapa.py` 2 KB
 - `opis_dlug.json` 0 KB
 - `opis_wizualizacji.py` 3 KB
+- `spis_lekcji.py` 6 KB
 - `spis_polski.py` 9 KB
 - `szkielety_polski.py` 24 KB
 
