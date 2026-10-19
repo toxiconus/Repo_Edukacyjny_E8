@@ -93,6 +93,7 @@ Lekcje (klocki / modele `@model` / `@zlewka` dziś): C1c konfiguracje 1/0/0; C1c
 | diagram-bohra | C1c konfiguracje (sekcja 7) | Opis schematu modelu Bohra (Na, Cl: kółka K–M z kropkami) stoi w tekście, a rysunku w lekcji nie ma. Nowy komponent: powłoki K–N z liczbą elektronów i przełącznikiem Z |
 
 ## Przegląd H9 (log)
+- 2026-10-19 H9 punkt 1, N02 (przegląd bez zmian treści): 12 modeli + 8 zlewek. Każdy model w osobnym miejscu sekcji; zlewki z `n02-doswiadczenia-v01` to wejścia do jednej pracowni (zasada 4: OK). Dwa panele pH (`ph-indicators-v03` w 6.4 i zlewka w 15) — zlewka to odnośnik do tego samego widoku, zostaje. Brak słabszych duplikatów do zastąpienia bez oglądu wizualnego; oceny statusów w `katalog_oceny.json` dla modeli N02 jeszcze nie wpisane (wymaga oglądu, Sonnet S12). Następne: N03.
 - 2026-10-19 C1c konfiguracje: 1 klocek (`konfiguracje`, Z=19) — wystarcza. Dopisano do planu `diagram-bohra` (sekcja 7 opisuje rysunek, którego brak).
 - 2026-10-19 C1c kwasy: 3 klocki + 4 modele + doświadczenie — wystarcza. Opis schematu trzech dróg do NaOH → plan.
 - 2026-10-19 C1c wodorki: dodano `bilans-rownania` (synteza HCl i NH₃) do sekcji „Schemat otrzymywania HCl i NH₃”.

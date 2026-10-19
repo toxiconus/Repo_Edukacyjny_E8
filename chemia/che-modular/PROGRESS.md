@@ -49,3 +49,4 @@
 - 2026-10-09 polski: kanon v2 (POL_SPIS_TRESCI_v2.md), katalog POL_KATALOG.md, narzedzia/spis_polski.py, 17 szkieletów priorytetu 1 w polski/lekcje/.
 - 2026-10-09 polski: G12–G17, P01–P04 wstępne (Perplexity + poprawki i klucze Claude).
 - 2026-10-09 polski: G18–G20, J01–J06 wstępne (Perplexity + poprawki Claude).
+- 2026-10-19 H9 p.1 N02: przegląd modeli (12 modeli, 8 zlewek) — bez zmian; wpis w PRZEKAZANIE_HAIKU_SONNET.md. Kolejno N03, N04, N05.
