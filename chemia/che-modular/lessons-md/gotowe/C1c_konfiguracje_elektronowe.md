@@ -43,6 +43,8 @@ W tej lekcji nauczysz się zapisywać **konfiguracje elektronowe** atomów i jon
 | M | 3 | 18 |
 | N | 4 | 32 |
 
+Ta liczba to maksimum dla powłoki, a nie kolejność zapełniania. Elektrony wchodzą do orbitali o najniższej energii, więc np. 4s zapełnia się przed 3d, zanim powłoka M jest pełna. Nie zapełniamy kolejno powłok K, L, M do maksimum.
+
 **Podpowłoki** oznaczamy literami **s, p, d, f**. Każda ma określoną liczbę orbitali i elektronów:
 
 | Podpowłoka | Liczba orbitali | Maksymalna liczba elektronów |

@@ -96,6 +96,8 @@ $$\text{FeCl}_3 + 3\,\text{NaOH} \rightarrow \text{Fe(OH)}_3\downarrow + 3\,\tex
 - jonowa pełna: Cu²⁺ + SO₄²⁻ + 2 Na⁺ + 2 OH⁻ → Cu(OH)₂↓ + 2 Na⁺ + SO₄²⁻
 - jonowa skrócona: **Cu²⁺ + 2 OH⁻ → Cu(OH)₂↓** (jony Spectator: Na⁺ i SO₄²⁻)
 
+**Uwaga:** w zapisie jonowym rozpisujemy na jony tylko substancje dobrze rozpuszczalne w wodzie (mocne kwasy, większość soli i zasad). Osad, gaz, wodę, słaby elektrolit i słabo rozpuszczalne tlenki zapisujemy w formie cząsteczkowej, np. Cu(OH)₂, H₂O, CO₂ i CH₃COOH nie rozpadają się na jony w równaniu.
+
 ### 3. Sole — cztery metody
 
 #### Metoda 1: metal + kwas (z wydzieleniem wodoru)
