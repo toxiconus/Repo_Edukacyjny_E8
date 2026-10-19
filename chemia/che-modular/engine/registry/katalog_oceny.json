@@ -1,234 +1,241 @@
 {
- "_statusy": {
-  "kandydat": "pasuje do konkretnej lekcji, której jeszcze nie wstawiono",
-  "ulepszyć": "dobry pomysł, ale wersja za uboga lub ograniczona; rozbudować zamiast pisać nowy",
-  "zastąpiony": "jest lepszy model; po zastąpieniu w lekcjach do wyrzucenia",
-  "rozszerzony": "treść poza zakresem LKO 2025/26 (LO, wyższe etapy); zachować, nie wstawiać do lekcji E8",
-  "ciekawostka": "niski priorytet; ewentualnie rama ciekawostki",
-  "narzędzie": "techniczny, nie dla ucznia (testy, panele pracowni)",
-  "czeka": "przygotowany do lekcji z planu, której md jeszcze nie ma",
-  "do sprawdzenia": "ocena wstępna z tytułu i rozmiaru; porównać z wymienionym modelem"
- },
- "modele": {
-  "acid-calculator": {
-   "status": "rozszerzony",
-   "uwaga": "pH, dysocjacja, formy; w zakresie LKO brak haseł pH/pKa/równowaga (grep)"
+  "_statusy": {
+    "kandydat": "pasuje do konkretnej lekcji, której jeszcze nie wstawiono",
+    "ulepszyć": "dobry pomysł, ale wersja za uboga lub ograniczona; rozbudować zamiast pisać nowy",
+    "zastąpiony": "jest lepszy model; po zastąpieniu w lekcjach do wyrzucenia",
+    "rozszerzony": "treść poza zakresem LKO 2025/26 (LO, wyższe etapy); zachować, nie wstawiać do lekcji E8",
+    "ciekawostka": "niski priorytet; ewentualnie rama ciekawostki",
+    "narzędzie": "techniczny, nie dla ucznia (testy, panele pracowni)",
+    "czeka": "przygotowany do lekcji z planu, której md jeszcze nie ma",
+    "do sprawdzenia": "ocena wstępna z tytułu i rozmiaru; porównać z wymienionym modelem"
   },
-  "acid-table": {
-   "status": "zastąpiony",
-   "zamiennik": "ka-pka-table",
-   "uwaga": "dwie tabele mocy kwasów; scalić w jedną"
+  "modele": {
+    "acid-calculator": {
+      "status": "rozszerzony",
+      "uwaga": "pH, dysocjacja, formy; w zakresie LKO brak haseł pH/pKa/równowaga (grep)"
+    },
+    "acid-table": {
+      "status": "zastąpiony",
+      "zamiennik": "ka-pka-table",
+      "uwaga": "dwie tabele mocy kwasów; scalić w jedną"
+    },
+    "ka-pka-table": {
+      "status": "rozszerzony",
+      "uwaga": "Ka/pKa poza zakresem LKO; scalić z acid-table"
+    },
+    "acid-game": {
+      "status": "kandydat",
+      "lekcja": "C1c kwasy/zasady/sole, N07",
+      "uwaga": "klasyfikacja kwas/zasada/sól/tlenek; bez presji czasu (po odpowiedzi samo przechodzi dalej po 1,6 s)"
+    },
+    "carboxyl": {
+      "status": "ulepszyć",
+      "lekcja": "O11 kwasy karboksylowe",
+      "uwaga": "357 B, szkic; rozbudować razem z szkielet-zygzak"
+    },
+    "che-spojnosc-v01": {
+      "status": "narzędzie",
+      "uwaga": "spójność silnik/Atlas/lekcje/GFX"
+    },
+    "che-test-silnika-v01": {
+      "status": "narzędzie",
+      "uwaga": "testy silnika"
+    },
+    "chem-profile10": {
+      "status": "zastąpiony",
+      "zamiennik": "periodic-54",
+      "uwaga": "karta pierwiastek→substancja→reakcje nie jest w żadnej gotowej lekcji; periodic-54 działa w N01, F04, F06, REV01. Jeśli treść karty jest potrzebna, dopisać ją do periodic-54 w H9",
+      "ocena": "2026-10-19 (H3, porównanie z zamiennikiem użytym w gotowych lekcjach)"
+    },
+    "compound-cards": {
+      "status": "zastąpiony",
+      "zamiennik": "kw-reszty-v01",
+      "uwaga": "4 karty kwasów; kw-reszty-v01 jest w N03 i N04",
+      "ocena": "2026-10-19 (H3, porównanie z zamiennikiem użytym w gotowych lekcjach)"
+    },
+    "conj-pairs": {
+      "status": "rozszerzony",
+      "uwaga": "pary sprzężone, amfiprotyczność (Brønsted)"
+    },
+    "diss-three-levels": {
+      "status": "zastąpiony",
+      "zamiennik": "kw-dysocjacja-v01",
+      "uwaga": "zapis trzech poziomów dysocjacji jest w kw-dysocjacja-v01 (N03), używany w FIZ01",
+      "ocena": "2026-10-19 (H3, porównanie z zamiennikiem użytym w gotowych lekcjach)"
+    },
+    "ion-vs-diss": {
+      "status": "kandydat",
+      "zamiennik": "kw-dysocjacja-v01",
+      "uwaga": "jonizacja a dysocjacja; wstawić jako ramkę do N03 (nieużywany w gotowych lekcjach)",
+      "ocena": "2026-10-19 (H3, porównanie z zamiennikiem użytym w gotowych lekcjach)"
+    },
+    "energy-profile": {
+      "status": "kandydat",
+      "lekcja": "C1c wodorki/typy reakcji (egzo i endo)",
+      "uwaga": "1,6 KB, profil energii Ea, ΔH; wypada użyć zamiast rysunku"
+    },
+    "env-balance": {
+      "status": "ciekawostka",
+      "lekcja": "R03 lub N03 (kwaśne deszcze)",
+      "uwaga": "wapnowanie jeziora; liczy z pH i masy molowej"
+    },
+    "equilibrium": {
+      "status": "rozszerzony",
+      "uwaga": "równowaga HA ⇌ H⁺ + A⁻, reguła przekory"
+    },
+    "species-v01": {
+      "status": "rozszerzony",
+      "uwaga": "diagram rozkładu form kwasu a pH"
+    },
+    "hf-paradox": {
+      "status": "rozszerzony",
+      "uwaga": "dlaczego HF jest słabym kwasem"
+    },
+    "ph-ladder": {
+      "status": "rozszerzony",
+      "uwaga": "obliczanie pH od stężenia (√(Ka·c)); poza zakresem LKO"
+    },
+    "flashcards-deck": {
+      "status": "kandydat",
+      "lekcja": "REV01/REV02 (powtórka)",
+      "uwaga": "fiszki i ściąga"
+    },
+    "flow-egzamin-enhanced": {
+      "status": "kandydat",
+      "lekcja": "REV07 / C3",
+      "uwaga": "algorytm egzaminacyjny jako schemat"
+    },
+    "flow-naming": {
+      "status": "zastąpiony",
+      "zamiennik": "kw-reszty-v01",
+      "uwaga": "algorytm nazwy kwasu jest w kw-reszty-v01 (N03)",
+      "ocena": "2026-10-19 (H3, porównanie z zamiennikiem użytym w gotowych lekcjach)"
+    },
+    "naming-table": {
+      "status": "zastąpiony",
+      "zamiennik": "kw-reszty-v01",
+      "uwaga": "tabela wzór→nazwa→reszta→sól→moc jest w kw-reszty-v01 (N03, N04)",
+      "ocena": "2026-10-19 (H3, porównanie z zamiennikiem użytym w gotowych lekcjach)"
+    },
+    "gfx-scene-gasCollection": {
+      "status": "kandydat",
+      "lekcja": "N01 powietrze i gazy",
+      "uwaga": "scena jest w zapowiedzi N01/LEKCJA.md (scenes), a w md gotowym jej brak"
+    },
+    "gfx-scene-heating": {
+      "status": "kandydat",
+      "lekcja": "C2w (ogrzewanie hydratu), N01",
+      "uwaga": "palnik i trójnóg; prototyp R4 ma własną probówkę z palnikiem"
+    },
+    "gfx-scene-indicator": {
+      "status": "zastąpiony",
+      "zamiennik": "gfx-scene-indicatorRack",
+      "uwaga": "N02 i N03 używają wersji z siedmioma roztworami"
+    },
+    "kinetics-v01": {
+      "status": "rozszerzony",
+      "lekcja": "F19 / REV06 (szybkość reakcji)",
+      "uwaga": "model zderzeń H₃O⁺ z metalem, Ea; kinetyka poza zakresem LKO (grep); dobry, zachować"
+    },
+    "lab-beaker-v102": {
+      "status": "narzędzie",
+      "uwaga": "pełny panel zlewki (pracownia)"
+    },
+    "lab-library-v001": {
+      "status": "narzędzie",
+      "uwaga": "biblioteka elementów laboratorium"
+    },
+    "legacy:timelineAnim": {
+      "status": "zastąpiony",
+      "zamiennik": "timeline",
+      "uwaga": "wpis legacy; sprawdzić zależności i usunąć"
+    },
+    "timeline": {
+      "status": "ciekawostka",
+      "lekcja": "N03",
+      "uwaga": "historia pojęcia kwasu, 5 scen"
+    },
+    "molecule-2d": {
+      "status": "ulepszyć",
+      "lekcja": "F13 Lewis, F15 polarność",
+      "uwaga": "wiązania, kąty, wolne pary; 3,2 KB"
+    },
+    "molecule-cv": {
+      "status": "zastąpiony",
+      "zamiennik": "molecule3d-merged",
+      "uwaga": "wspólny model cząsteczki; molecule3d-merged jest w F02, N01, REV01",
+      "ocena": "2026-10-19 (H3, porównanie z zamiennikiem użytym w gotowych lekcjach)"
+    },
+    "molecule-electrons": {
+      "status": "ulepszyć",
+      "lekcja": "C1c konfiguracje",
+      "uwaga": "podpowłoki i walencyjne; scalić z molecule-orbitals"
+    },
+    "molecule-orbitals": {
+      "status": "ulepszyć",
+      "lekcja": "C1c konfiguracje",
+      "uwaga": "pudełka orbitalne tylko dla wybranych atomów; prototyp R4 (Z ≤ 36, kolejność 4s/3d, powłoki K–N) jest lepszy; przenieść go do komponentu"
+    },
+    "neutralization": {
+      "status": "zastąpiony",
+      "zamiennik": "rownania-jonowe-v01",
+      "uwaga": "jeden zapis; rownania-jonowe-v01 ma wszystkie reakcje; prototyp R4 'npsw' dodaje probówkę i regułę NPSW"
+    },
+    "obtaining-hcl-steps": {
+      "status": "zastąpiony",
+      "zamiennik": "reakcje-kwasu-v03",
+      "uwaga": "etapy otrzymywania HCl"
+    },
+    "obtaining-three": {
+      "status": "zastąpiony",
+      "zamiennik": "reakcje-kwasu-v03",
+      "uwaga": "trzy drogi otrzymywania kwasów"
+    },
+    "reaction": {
+      "status": "narzędzie",
+      "uwaga": "widok danych centralnych (reakcja)"
+    },
+    "substance": {
+      "status": "narzędzie",
+      "uwaga": "widok danych centralnych (substancja)"
+    },
+    "safety": {
+      "status": "kandydat",
+      "lekcja": "C4 doświadczenia zbiorczo, LAB",
+      "uwaga": "pierwsza pomoc i zasady BHP"
+    },
+    "f09-trzy-liczby-v01": {
+      "status": "czeka",
+      "lekcja": "F09"
+    },
+    "f10-energia-h2-v01": {
+      "status": "czeka",
+      "lekcja": "F10"
+    },
+    "f15-dipol-v01": {
+      "status": "czeka",
+      "lekcja": "F15"
+    },
+    "f17-bilans-v01": {
+      "status": "czeka",
+      "lekcja": "F17"
+    },
+    "fiz02-obwod-v01": {
+      "status": "czeka",
+      "lekcja": "FIZ-02"
+    }
   },
-  "ka-pka-table": {
-   "status": "rozszerzony",
-   "uwaga": "Ka/pKa poza zakresem LKO; scalić z acid-table"
-  },
-  "acid-game": {
-   "status": "kandydat",
-   "lekcja": "C1c kwasy/zasady/sole, N07",
-   "uwaga": "klasyfikacja kwas/zasada/sól/tlenek; bez presji czasu (po odpowiedzi samo przechodzi dalej po 1,6 s)"
-  },
-  "carboxyl": {
-   "status": "ulepszyć",
-   "lekcja": "O11 kwasy karboksylowe",
-   "uwaga": "357 B, szkic; rozbudować razem z szkielet-zygzak"
-  },
-  "che-spojnosc-v01": {
-   "status": "narzędzie",
-   "uwaga": "spójność silnik/Atlas/lekcje/GFX"
-  },
-  "che-test-silnika-v01": {
-   "status": "narzędzie",
-   "uwaga": "testy silnika"
-  },
-  "chem-profile10": {
-   "status": "do sprawdzenia",
-   "zamiennik": "periodic-54",
-   "uwaga": "karta pierwiastek→substancja→reakcje; może dublować periodic-54 i karty"
-  },
-  "compound-cards": {
-   "status": "do sprawdzenia",
-   "zamiennik": "kw-reszty-v01",
-   "uwaga": "4 karty kwasów; może dublować kw-reszty-v01/kw-wlasciwosci-v01 (N03)"
-  },
-  "conj-pairs": {
-   "status": "rozszerzony",
-   "uwaga": "pary sprzężone, amfiprotyczność (Brønsted)"
-  },
-  "diss-three-levels": {
-   "status": "do sprawdzenia",
-   "zamiennik": "kw-dysocjacja-v01",
-   "uwaga": "782 B; zapis dysocjacji jest już w kw-dysocjacja-v01 i n02-dysocjacja-v01"
-  },
-  "ion-vs-diss": {
-   "status": "do sprawdzenia",
-   "zamiennik": "kw-dysocjacja-v01",
-   "uwaga": "jonizacja a dysocjacja; pasuje jako ramka w N03"
-  },
-  "energy-profile": {
-   "status": "kandydat",
-   "lekcja": "C1c wodorki/typy reakcji (egzo i endo)",
-   "uwaga": "1,6 KB, profil energii Ea, ΔH; wypada użyć zamiast rysunku"
-  },
-  "env-balance": {
-   "status": "ciekawostka",
-   "lekcja": "R03 lub N03 (kwaśne deszcze)",
-   "uwaga": "wapnowanie jeziora; liczy z pH i masy molowej"
-  },
-  "equilibrium": {
-   "status": "rozszerzony",
-   "uwaga": "równowaga HA ⇌ H⁺ + A⁻, reguła przekory"
-  },
-  "species-v01": {
-   "status": "rozszerzony",
-   "uwaga": "diagram rozkładu form kwasu a pH"
-  },
-  "hf-paradox": {
-   "status": "rozszerzony",
-   "uwaga": "dlaczego HF jest słabym kwasem"
-  },
-  "ph-ladder": {
-   "status": "rozszerzony",
-   "uwaga": "obliczanie pH od stężenia (√(Ka·c)); poza zakresem LKO"
-  },
-  "flashcards-deck": {
-   "status": "kandydat",
-   "lekcja": "REV01/REV02 (powtórka)",
-   "uwaga": "fiszki i ściąga"
-  },
-  "flow-egzamin-enhanced": {
-   "status": "kandydat",
-   "lekcja": "REV07 / C3",
-   "uwaga": "algorytm egzaminacyjny jako schemat"
-  },
-  "flow-naming": {
-   "status": "do sprawdzenia",
-   "zamiennik": "kw-reszty-v01",
-   "uwaga": "algorytm nazwy kwasu; może dublować kw-reszty-v01"
-  },
-  "naming-table": {
-   "status": "do sprawdzenia",
-   "zamiennik": "kw-reszty-v01",
-   "uwaga": "tabela wzór→nazwa→reszta→sól→moc; porównać z kw-reszty-v01"
-  },
-  "gfx-scene-gasCollection": {
-   "status": "kandydat",
-   "lekcja": "N01 powietrze i gazy",
-   "uwaga": "scena jest w zapowiedzi N01/LEKCJA.md (scenes), a w md gotowym jej brak"
-  },
-  "gfx-scene-heating": {
-   "status": "kandydat",
-   "lekcja": "C2w (ogrzewanie hydratu), N01",
-   "uwaga": "palnik i trójnóg; prototyp R4 ma własną probówkę z palnikiem"
-  },
-  "gfx-scene-indicator": {
-   "status": "zastąpiony",
-   "zamiennik": "gfx-scene-indicatorRack",
-   "uwaga": "N02 i N03 używają wersji z siedmioma roztworami"
-  },
-  "kinetics-v01": {
-   "status": "rozszerzony",
-   "lekcja": "F19 / REV06 (szybkość reakcji)",
-   "uwaga": "model zderzeń H₃O⁺ z metalem, Ea; kinetyka poza zakresem LKO (grep); dobry, zachować"
-  },
-  "lab-beaker-v102": {
-   "status": "narzędzie",
-   "uwaga": "pełny panel zlewki (pracownia)"
-  },
-  "lab-library-v001": {
-   "status": "narzędzie",
-   "uwaga": "biblioteka elementów laboratorium"
-  },
-  "legacy:timelineAnim": {
-   "status": "zastąpiony",
-   "zamiennik": "timeline",
-   "uwaga": "wpis legacy; sprawdzić zależności i usunąć"
-  },
-  "timeline": {
-   "status": "ciekawostka",
-   "lekcja": "N03",
-   "uwaga": "historia pojęcia kwasu, 5 scen"
-  },
-  "molecule-2d": {
-   "status": "ulepszyć",
-   "lekcja": "F13 Lewis, F15 polarność",
-   "uwaga": "wiązania, kąty, wolne pary; 3,2 KB"
-  },
-  "molecule-cv": {
-   "status": "do sprawdzenia",
-   "zamiennik": "molecule3d-merged",
-   "uwaga": "wspólny model CHE.MOLECULE; porównać z używanym molecule3d-merged"
-  },
-  "molecule-electrons": {
-   "status": "ulepszyć",
-   "lekcja": "C1c konfiguracje",
-   "uwaga": "podpowłoki i walencyjne; scalić z molecule-orbitals"
-  },
-  "molecule-orbitals": {
-   "status": "ulepszyć",
-   "lekcja": "C1c konfiguracje",
-   "uwaga": "pudełka orbitalne tylko dla wybranych atomów; prototyp R4 (Z ≤ 36, kolejność 4s/3d, powłoki K–N) jest lepszy; przenieść go do komponentu"
-  },
-  "neutralization": {
-   "status": "zastąpiony",
-   "zamiennik": "rownania-jonowe-v01",
-   "uwaga": "jeden zapis; rownania-jonowe-v01 ma wszystkie reakcje; prototyp R4 'npsw' dodaje probówkę i regułę NPSW"
-  },
-  "obtaining-hcl-steps": {
-   "status": "zastąpiony",
-   "zamiennik": "reakcje-kwasu-v03",
-   "uwaga": "etapy otrzymywania HCl"
-  },
-  "obtaining-three": {
-   "status": "zastąpiony",
-   "zamiennik": "reakcje-kwasu-v03",
-   "uwaga": "trzy drogi otrzymywania kwasów"
-  },
-  "reaction": {
-   "status": "narzędzie",
-   "uwaga": "widok danych centralnych (reakcja)"
-  },
-  "substance": {
-   "status": "narzędzie",
-   "uwaga": "widok danych centralnych (substancja)"
-  },
-  "safety": {
-   "status": "kandydat",
-   "lekcja": "C4 doświadczenia zbiorczo, LAB",
-   "uwaga": "pierwsza pomoc i zasady BHP"
-  },
-  "f09-trzy-liczby-v01": {
-   "status": "czeka",
-   "lekcja": "F09"
-  },
-  "f10-energia-h2-v01": {
-   "status": "czeka",
-   "lekcja": "F10"
-  },
-  "f15-dipol-v01": {
-   "status": "czeka",
-   "lekcja": "F15"
-  },
-  "f17-bilans-v01": {
-   "status": "czeka",
-   "lekcja": "F17"
-  },
-  "fiz02-obwod-v01": {
-   "status": "czeka",
-   "lekcja": "FIZ-02"
+  "luki": {
+    "C1c_konfiguracje_elektronowe": "BRAK: molecule-orbitals obsługuje tylko wybrane atomy; zrobić widok z prototypu R4 „konf” (Z ≤ 36, 4s przed 3d, powłoki K–N)",
+    "C1c_kwasy_zasady_sole": "wstawione: kw-szereg-metali-v01, tabela-rozpuszczalnosci-v01, rownania-jonowe-v01; zostaje acid-game",
+    "C1c_wodorki_typy_reakcji": "wstawione: n05-wodorki-v01, n05-trendy-v01; zostaje energy-profile (sprawdzić model przed wstawieniem)",
+    "C1c_masy_sklad_procentowy": "wstawione: f05-izotopy-v01",
+    "C2m_mol_masa_molowa": "wstawione: stech-kalkulator-v01 (tylko mol z reakcji); BRAK ogólnego kalkulatora n=m/M, N, V dla dowolnej M — nowy widok z prototypu R4 „mol”",
+    "C2w_wzor_elementarny_rzeczywisty": "wstawione: sole-doswiadczenia-v01 cuso4Hydrate (oznaczone poza zakresem)",
+    "C3_rownania_i_obliczenia_z_rownan": "wstawione: stech-kalkulator-v01",
+    "C4_doswiadczenia_zbiorczo": "safety, lab-stations-v102, pracownie n02/sole/kw-doswiadczenia",
+    "J03_rownania_jonowe_i_stracanie": "wstawione: tabela-rozpuszczalnosci-v01, rownania-jonowe-v01",
+    "R07_stechiometria_z_nadmiarem": "wstawione: stech-kalkulator-v01",
+    "X04_szereg_aktywnosci_metali": "wstawione: kw-szereg-metali-v01"
   }
- },
- "luki": {
-  "C1c_konfiguracje_elektronowe": "BRAK: molecule-orbitals obsługuje tylko wybrane atomy; zrobić widok z prototypu R4 „konf” (Z ≤ 36, 4s przed 3d, powłoki K–N)",
-  "C1c_kwasy_zasady_sole": "wstawione: kw-szereg-metali-v01, tabela-rozpuszczalnosci-v01, rownania-jonowe-v01; zostaje acid-game",
-  "C1c_wodorki_typy_reakcji": "wstawione: n05-wodorki-v01, n05-trendy-v01; zostaje energy-profile (sprawdzić model przed wstawieniem)",
-  "C1c_masy_sklad_procentowy": "wstawione: f05-izotopy-v01",
-  "C2m_mol_masa_molowa": "wstawione: stech-kalkulator-v01 (tylko mol z reakcji); BRAK ogólnego kalkulatora n=m/M, N, V dla dowolnej M — nowy widok z prototypu R4 „mol”",
-  "C2w_wzor_elementarny_rzeczywisty": "wstawione: sole-doswiadczenia-v01 cuso4Hydrate (oznaczone poza zakresem)",
-  "C3_rownania_i_obliczenia_z_rownan": "wstawione: stech-kalkulator-v01",
-  "C4_doswiadczenia_zbiorczo": "safety, lab-stations-v102, pracownie n02/sole/kw-doswiadczenia",
-  "J03_rownania_jonowe_i_stracanie": "wstawione: tabela-rozpuszczalnosci-v01, rownania-jonowe-v01",
-  "R07_stechiometria_z_nadmiarem": "wstawione: stech-kalkulator-v01",
-  "X04_szereg_aktywnosci_metali": "wstawione: kw-szereg-metali-v01"
- }
 }

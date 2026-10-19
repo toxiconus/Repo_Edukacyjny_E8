@@ -26,10 +26,10 @@ Jedno źródło prawdy: modele (widoki) i elementy gfx. Użycie jest liczone z `
 | `chain-scn` | Łańcuch przemian: pierwiastek → tlenek → kwas → sól | N01, N04 | używany |  |
 | `che-spojnosc-v01` | Spójność danych: silnik ↔ Atlas ↔ lekcje ↔ GFX |  | narzędzie | spójność silnik/Atlas/lekcje/GFX |
 | `che-test-silnika-v01` | Test silnika — audyty modułów, spójność i montowanie wszystkich widoków |  | narzędzie | testy silnika |
-| `chem-profile10` | Profil chemiczny — pierwiastek → substancja → reakcje |  | do sprawdzenia | karta pierwiastek→substancja→reakcje; może dublować periodic-54 i karty; zamiennik: `periodic-54` |
-| `compound-cards` | Karty związków — HCl, H₂SO₄, CH₃COOH, H₂CO₃ |  | do sprawdzenia | 4 karty kwasów; może dublować kw-reszty-v01/kw-wlasciwosci-v01 (N03); zamiennik: `kw-reszty-v01` |
+| `chem-profile10` | Profil chemiczny — pierwiastek → substancja → reakcje |  | zastąpiony | karta pierwiastek→substancja→reakcje nie jest w żadnej gotowej lekcji; periodic-54 działa w N01, F04, F06, REV01. Jeśli treść karty jest potrzebna, dopisać ją do periodic-54 w H9; zamiennik: `periodic-54` |
+| `compound-cards` | Karty związków — HCl, H₂SO₄, CH₃COOH, H₂CO₃ |  | zastąpiony | 4 karty kwasów; kw-reszty-v01 jest w N03 i N04; zamiennik: `kw-reszty-v01` |
 | `conj-pairs` | Pary sprzężone i amfiprotyczność |  | rozszerzony | pary sprzężone, amfiprotyczność (Brønsted) |
-| `diss-three-levels` | Trzy poziomy zapisu dysocjacji |  | do sprawdzenia | 782 B; zapis dysocjacji jest już w kw-dysocjacja-v01 i n02-dysocjacja-v01; zamiennik: `kw-dysocjacja-v01` |
+| `diss-three-levels` | Trzy poziomy zapisu dysocjacji |  | zastąpiony | zapis trzech poziomów dysocjacji jest w kw-dysocjacja-v01 (N03), używany w FIZ01; zamiennik: `kw-dysocjacja-v01` |
 | `energy-profile` | Termochemia — egzo i endo |  | kandydat | 1,6 KB, profil energii Ea, ΔH; wypada użyć zamiast rysunku; lekcja: C1c wodorki/typy reakcji (egzo i endo) |
 | `env-balance` | Bilans mas — wapnowanie jeziora · wspólny model |  | ciekawostka | wapnowanie jeziora; liczy z pH i masy molowej; lekcja: R03 lub N03 (kwaśne deszcze) |
 | `equilibrium` | Równowaga HA ⇌ H⁺ + A⁻ — reguła przekory |  | rozszerzony | równowaga HA ⇌ H⁺ + A⁻, reguła przekory |
@@ -40,7 +40,7 @@ Jedno źródło prawdy: modele (widoki) i elementy gfx. Użycie jest liczone z `
 | `fiz-przewodniki-v01` | Przewodnik czy izolator? Rozpływ ładunku wzdłuż pręta | FIZ01 | używany |  |
 | `flashcards-deck` | Fiszki + ściąga — powtórka |  | kandydat | fiszki i ściąga; lekcja: REV01/REV02 (powtórka) |
 | `flow-egzamin-enhanced` | Algorytm egzaminacyjny — interaktywny schemat · v0.06 · 2026-10-01 |  | kandydat | algorytm egzaminacyjny jako schemat; lekcja: REV07 / C3 |
-| `flow-naming` | Jak nazwać kwas — algorytm |  | do sprawdzenia | algorytm nazwy kwasu; może dublować kw-reszty-v01; zamiennik: `kw-reszty-v01` |
+| `flow-naming` | Jak nazwać kwas — algorytm |  | zastąpiony | algorytm nazwy kwasu jest w kw-reszty-v01 (N03); zamiennik: `kw-reszty-v01` |
 | `gfx-scene-acidMetal` | Metal + kwas solny → wodór (próba „pyk!") | N01, N03 | używany |  |
 | `gfx-scene-carbonate` | Węglan wapnia + kwas → CO₂ (woda wapienna) | N01 | używany |  |
 | `gfx-scene-conductivity` | Przewodzenie prądu: elektrolity i dysocjacja | FIZ01, N03, N04 | używany |  |
@@ -52,7 +52,7 @@ Jedno źródło prawdy: modele (widoki) i elementy gfx. Użycie jest liczone z `
 | `gfx-scene-titration` | Zobojętnianie: miareczkowanie HCl zasadą NaOH | N03 | używany |  |
 | `hf-paradox` | Paradoks HF — dlaczego słaby |  | rozszerzony | dlaczego HF jest słabym kwasem |
 | `ion-map-v02` | Mapa jonów — ładunek, pochodzenie, wykrywanie, sole | N04 | używany |  |
-| `ion-vs-diss` | Jonizacja vs dysocjacja — różnica |  | do sprawdzenia | jonizacja a dysocjacja; pasuje jako ramka w N03; zamiennik: `kw-dysocjacja-v01` |
+| `ion-vs-diss` | Jonizacja vs dysocjacja — różnica |  | kandydat | jonizacja a dysocjacja; wstawić jako ramkę do N03 (nieużywany w gotowych lekcjach); zamiennik: `kw-dysocjacja-v01` |
 | `ka-pka-table` | Ka, pKa, moc — tabela |  | rozszerzony | Ka/pKa poza zakresem LKO; scalić z acid-table |
 | `kinetics-v01` | Szybkość reakcji: metal + kwas solny (pomiar objętości H₂) |  | rozszerzony | model zderzeń H₃O⁺ z metalem, Ea; kinetyka poza zakresem LKO (grep); dobry, zachować; lekcja: F19 / REV06 (szybkość reakcji) |
 | `kw-bufor-v01` | Bufor octanowy kontra czysta woda — dodawaj kwas i zasadę | N03 | używany |  |
@@ -68,7 +68,7 @@ Jedno źródło prawdy: modele (widoki) i elementy gfx. Użycie jest liczone z `
 | `live-cv` | LIVE CV chemii — atom → cząsteczka → substancja → reakcja | F01 | używany |  |
 | `mind-map` | Mapy myśli — MASTER · wybierz temat | F01 | używany |  |
 | `molecule-2d` | Cząsteczka 2D — wiązania, kąty i wolne pary |  | ulepszyć | wiązania, kąty, wolne pary; 3,2 KB; lekcja: F13 Lewis, F15 polarność |
-| `molecule-cv` | CV cząsteczki — wspólny model CHE.MOLECULE |  | do sprawdzenia | wspólny model CHE.MOLECULE; porównać z używanym molecule3d-merged; zamiennik: `molecule3d-merged` |
+| `molecule-cv` | CV cząsteczki — wspólny model CHE.MOLECULE |  | zastąpiony | wspólny model cząsteczki; molecule3d-merged jest w F02, N01, REV01; zamiennik: `molecule3d-merged` |
 | `molecule-electrons` | Elektrony i podpowłoki — wspólny model CHE.MOLECULE |  | ulepszyć | podpowłoki i walencyjne; scalić z molecule-orbitals; lekcja: C1c konfiguracje |
 | `molecule-orbitals` | Orbitalne pudełka — obsada elektronowa |  | ulepszyć | pudełka orbitalne tylko dla wybranych atomów; prototyp R4 (Z ≤ 36, kolejność 4s/3d, powłoki K–N) jest lepszy; przenieść go do komponentu; lekcja: C1c konfiguracje |
 | `molecule3d-merged` | Model 3D cząsteczek — scalony model + geometria + klik atomu | F02, N01, REV01 | używany |  |
@@ -86,7 +86,7 @@ Jedno źródło prawdy: modele (widoki) i elementy gfx. Użycie jest liczone z `
 | `n02-stracanie-v01` | Laboratorium jonowe — strącanie wodorotlenków (model cząsteczkowy) | N02 | używany |  |
 | `n02-wzory-v01` | Wzór wodorotlenku: kation + OH⁻ — bilans ładunków, nawias, modele | N02, REV01 | używany |  |
 | `n02-zobojetnianie-v01` | Zobojętnianie — licznik moli, pH, wskaźniki i jony H⁺ + OH⁻ → H₂O | N02 | używany |  |
-| `naming-table` | Wzór → nazwa → reszta → sól → moc |  | do sprawdzenia | tabela wzór→nazwa→reszta→sól→moc; porównać z kw-reszty-v01; zamiennik: `kw-reszty-v01` |
+| `naming-table` | Wzór → nazwa → reszta → sól → moc |  | zastąpiony | tabela wzór→nazwa→reszta→sól→moc jest w kw-reszty-v01 (N03, N04); zamiennik: `kw-reszty-v01` |
 | `neutralization` | Równania jonowe — cząsteczkowe, jonowe pełne, jonowe skrócone |  | zastąpiony | jeden zapis; rownania-jonowe-v01 ma wszystkie reakcje; prototyp R4 'npsw' dodaje probówkę i regułę NPSW; zamiennik: `rownania-jonowe-v01` |
 | `obtaining-hcl-steps` | Otrzymywanie kwasu solnego — etapy |  | zastąpiony | etapy otrzymywania HCl; zamiennik: `reakcje-kwasu-v03` |
 | `obtaining-three` | Trzy drogi otrzymywania kwasów |  | zastąpiony | trzy drogi otrzymywania kwasów; zamiennik: `reakcje-kwasu-v03` |
