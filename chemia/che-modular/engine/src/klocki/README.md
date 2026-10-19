@@ -38,6 +38,7 @@ W md wstawia się go linią `@klocek nazwa {opcja="wartość"} | Podpis`, a pod 
 | `probowki-wybor` | probowki_wybor.js | Kilka probówek naraz + chipy wyboru metalu/odczynnika, równania pod spodem (autostart) | `zestaw` (metale-hcl, stracanie, kwas-weglan), `wybrane` (lista kluczy), `kat`, `max` (4) |
 | `konfiguracje` | konfiguracje.js | Konfiguracja elektronowa Z ≤ 36: suwak, pudełka orbitali, powłoki K–N, zapis pełny/skrócony | `z` (19), `max` (36) |
 | `diagram-bohra` | diagram_bohra.js | Model Bohra atomu i jonu: jądro z p, powłoki K–N, kation/anion z animacją elektronu, „do konfiguracji gazu szlachetnego” | `z` (11), `ladunek` (0), `max` (36) |
+| `schemat-przemian` | schemat_przemian.js | Kilka dróg do tego samego typu produktu: substraty → strzałka z nazwą drogi → produkty; produkt docelowy wyróżniony, uwaga po kliknięciu, wyróżnienie wędruje po drogach | `tytul`, `drogi` = "etykieta:równanie:uwaga; …" (równanie ASCII, `*` przy produkcie docelowym) |
 | `kalkulator-mola` | kalkulator_mola.js | m, n, M, N, V gazu dla wybranej substancji | `subst` (0–4) |
 | `krzyzowka-mendla` | krzyzowka_mendla.js | Szachownica Punnetta: jedna cecha i dihybryda 4×4 (9:3:3:1), odsłanianie pól | `krzyzowki` (AA×aa,Aa×Aa,…), `start`, `cechy` |
 | `karta-bhp` | karta_bhp.js | Rozwijane karty BHP i pierwszej pomocy | `otwarte` (0) |

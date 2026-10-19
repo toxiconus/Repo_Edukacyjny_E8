@@ -121,7 +121,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (17 pl., 149 KB)
+## chemia/che-modular  (17 pl., 150 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -263,7 +263,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/engine/src/gfx/wspolne/widoki  (1 pl., 4 KB)
 - `che-test-silnika-v01.js` 4 KB
 
-## chemia/che-modular/engine/src/klocki  (39 pl., 232 KB)
+## chemia/che-modular/engine/src/klocki  (40 pl., 243 KB)
 - (zwinięte; `ls chemia/che-modular/engine/src/klocki`)
 
 ## chemia/che-modular/engine/src/klocki/dane  (1 pl., 11 KB)
@@ -333,7 +333,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`FIZ01_elektrostatyka.md` 55 KB
 - ⚠`N01_tlenki.md` 123 KB
 - ⚠`N02_wodorotlenki.md` 130 KB
-- ⚠`N03_kwasy.md` 134 KB
+- ⚠`N03_kwasy.md` 135 KB
 - ⚠`N04_sole.md` 87 KB
 - ⚠`N05_wodorki.md` 57 KB
 - ⚠`REV01_powtorka_klasy_7.md` 63 KB

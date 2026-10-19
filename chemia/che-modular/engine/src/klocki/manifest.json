@@ -38,7 +38,8 @@
     "estryfikacja.js": "Animacja estryfikacji: kwas + alkohol → ester + woda (pętla, autostart)",
     "petla_regulacji.js": "Pętla sprzężenia ujemnego z 5 elementów z krążącym impulsem (biologia)",
     "doswiadczenie.js": "Wspólny układ doświadczenia: cel, sprzęt, BHP, scena (inny klocek), równanie, obserwacje",
-    "diagram_bohra.js": "Model Bohra atomu i jonu: jądro (p), powłoki K–N, suwak Z, oddawanie/przyjmowanie elektronu z animacją"
+    "diagram_bohra.js": "Model Bohra atomu i jonu: jądro (p), powłoki K–N, suwak Z, oddawanie/przyjmowanie elektronu z animacją",
+    "schemat_przemian.js": "Schemat dróg: kilka sposobów otrzymania tego samego typu substancji (substraty → strzałka → produkty), kliknięcie pokazuje uwagę"
   },
   "lekcje": {
     "P01": [
@@ -82,7 +83,8 @@
       "probowki.js",
       "palniki.js",
       "uklad_okresowy.js",
-      "karta_bhp.js"
+      "karta_bhp.js",
+      "schemat_przemian.js"
     ],
     "LKO-KRZYWE": [
       "klocki.js",
@@ -236,7 +238,8 @@
       "diagram_bohra.js",
       "sklad_procentowy.js",
       "doswiadczenie.js",
-      "karta_bhp.js"
+      "karta_bhp.js",
+      "schemat_przemian.js"
     ],
     "C2m": [
       "klocki.js",

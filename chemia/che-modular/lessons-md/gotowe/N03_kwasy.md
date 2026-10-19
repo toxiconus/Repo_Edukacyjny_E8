@@ -608,6 +608,9 @@ Jeden wskaźnik w siedmiu roztworach — statyw probówek poniżej; roztwór × 
 
 <div class="mnemonic"><b>Mnemonik: TNS – trzy drogi do kwasu</b><ol><li><strong>T</strong>lenek kwasowy + woda → kwas tlenowy (SO₃ + H₂O → H₂SO₄).</li><li><strong>N</strong>iemetal + wodór → kwas beztlenowy (H₂ + Cl₂ → 2 HCl; dopiero w wodzie powstaje kwas).</li><li><strong>S</strong>ól + mocniejszy (lub mniej lotny) kwas → nowy kwas (NaCl + H₂SO₄ → NaHSO₄ + HCl↑).</li></ol></div>
 
+@klocek schemat-przemian {tytul="TNS — trzy drogi do kwasu" drogi="tlenek kwasowy + woda:SO3 + H2O -> H2SO4*:Dotyczy tlenków kwasowych, SiO2 z wodą nie reaguje.; niemetal + wodór:H2 + Cl2 -> 2 HCl*:Powstaje gazowy HCl, który po rozpuszczeniu w wodzie daje kwas solny. Mieszanina wybucha na świetle.; sól + kwas mocniejszy lub mniej lotny:NaCl + H2SO4 -> NaHSO4 + HCl*:Stężony H2SO4 i ogrzewanie pod dygestorium. Wydziela się gazowy HCl."} | Trzy drogi do kwasu: kliknij drogę, by zobaczyć uwagę
+@opis Schemat trzech dróg do kwasu: w każdym wierszu substraty, strzałka z nazwą drogi i produkty, kwas wyróżniony ramką. Wiersz 1 — „tlenek kwasowy + woda”: SO₃ + H₂O → H₂SO₄. Wiersz 2 — „niemetal + wodór”: H₂ + Cl₂ → 2 HCl. Wiersz 3 — „sól + kwas mocniejszy lub mniej lotny”: NaCl + H₂SO₄ → NaHSO₄ + HCl. Wyróżnienie przesuwa się po wierszach, a po kliknięciu pokazuje uwagę do wybranej drogi. Wniosek: kwas można otrzymać z tlenku kwasowego, z niemetalu i wodoru albo z soli i innego kwasu (mnemonik TNS).
+
 ### 8.1 Tlenek kwasowy + woda → kwas
 
 ::: karta basic | Metoda E8

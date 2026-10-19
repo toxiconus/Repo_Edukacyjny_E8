@@ -228,14 +228,18 @@ Metoda jest laboratoryjna. Czy etap rejonowy wymaga jej w pełnej formie, patrz 
 **Mocne kwasy szkolne: HCl, HNO₃, H₂SO₄** — kwas solny, azotowy, siarkowy. Reszta z tego zadania jest słaba.
 :::
 
-### 8. Schemat trzech dróg do NaOH
+### 8. Schemat trzech dróg do wodorotlenku
 
-**Opis schematu:** diagram pokazuje trzy strzałki prowadzące do NaOH.
+@klocek schemat-przemian {tytul="Trzy drogi do wodorotlenku" drogi="tlenek zasadowy + woda:Na2O + H2O -> 2 NaOH*:Tlenek sodu reaguje z wodą i daje rozpuszczalny wodorotlenek sodu.; metal aktywny + woda:2 Na + 2 H2O -> 2 NaOH* + H2↑:Wodór uchodzi jako gaz.; wytrącenie osadu:CuSO4 + 2 NaOH -> Cu(OH)2↓* + Na2SO4:Tu NaOH jest substratem. Powstaje nierozpuszczalny wodorotlenek miedzi(II), a nie NaOH."} | Trzy drogi do wodorotlenku: kliknij drogę, by zobaczyć uwagę
+@opis Schemat trzech dróg w trzech wierszach: substraty, strzałka z nazwą drogi i produkty, produkt docelowy wyróżniony ramką. Wiersz 1 — „tlenek zasadowy + woda”: Na₂O + H₂O → 2 NaOH. Wiersz 2 — „metal aktywny + woda”: 2 Na + 2 H₂O → 2 NaOH + H₂↑ (wodór uchodzi jako gaz). Wiersz 3 — „wytrącenie osadu”: CuSO₄ + 2 NaOH → Cu(OH)₂↓ + Na₂SO₄ (NaOH jest tu substratem, wyróżniony jest osad Cu(OH)₂). Wniosek: wodorotlenki otrzymuje się z tlenku, z metalu aktywnego i przez wytrącenie z soli; NaOH powstaje w dwóch pierwszych drogach.
+
+**Opis schematu:** diagram pokazuje trzy strzałki prowadzące do wodorotlenku.
 1. Górna: tlenek sodu Na₂O i woda dają 2 NaOH (napis „reakcja tlenku z wodą”).
 2. Środkowa: sód i woda dają 2 NaOH i wodór uchodzący jako gaz (napis „metal aktywny z wodą”).
-3. Dolna: siarczan(VI) miedzi(II) i wodorotlenek sodu dają osad Cu(OH)₂ i roztwór Na₂SO₄ (napis „wytrącenie osadu”).
+3. Dolna: siarczan(VI) miedzi(II) i wodorotlenek sodu dają osad Cu(OH)₂ i roztwór Na₂SO₄ (napis „wytrącenie osadu”). Tu NaOH jest substratem, a produktem docelowym jest nierozpuszczalny wodorotlenek miedzi(II).
 
-**Wniosek dla ucznia:** NaOH można otrzymać na trzy sposoby. Każdy z nich ma inny produkt uboczny, więc wybór metody zależy od substratów.
+**Wniosek dla ucznia:** wodorotlenki można otrzymać na trzy sposoby: z tlenku zasadowego i wody, z metalu aktywnego i wody oraz przez wytrącenie osadu z soli roztworem zasady. NaOH powstaje w dwóch pierwszych drogach; trzecia prowadzi do osadu (tu Cu(OH)₂). Każda droga ma inny produkt uboczny, więc wybór metody zależy od substratów.
+(poprawka 2026-10-19: wcześniej trzecia droga była opisana jako droga do NaOH, a w niej NaOH jest substratem; tytuł i wniosek poprawione, schemat opisuje drogi do wodorotlenków.)
 
 ---
 
