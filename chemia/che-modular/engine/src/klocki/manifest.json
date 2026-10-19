@@ -1,0 +1,169 @@
+{
+    "opis": "Klocki używane przez lekcje. Każda lekcja wymienia tylko potrzebne pliki.",
+    "klocki": {
+        "klocki.js": "rejestr i montaż (zawsze)",
+        "zlewka.js": "zlewka z cieczą i bąbelkami",
+        "plomien.js": "próba płomieniowa (barwa wg metalu)",
+        "metal_woda.js": "metal + woda: H₂ i fenoloftaleina",
+        "palenie.js": "palenie metali: Mg, Na, K (barwa i iskry)",
+        "uklad_okresowy.js": "mini układ okresowy, klik w grupę",
+        "probowki.js": "statyw z probówkami (1–4 metale)",
+        "pomocnicze.js": "helpery, pętla animacji, wybór symbolu",
+        "dane/pierwiastki.js": "dane pierwiastków I i II grupy (barwy, reaktywność)",
+        "znaki.js": "znaki promieniowania i zakazu",
+        "palniki.js": "palniki obok siebie (1–4 pierwiastki)",
+        "EFEKTY.md": "dokumentacja efektów i danych",
+        "krzywe_rozpuszczalnosci.js": "krzywe rozpuszczalności (g/100 g wody od T): trzy strefy, punkt (T, m); dane tabel A i B LKO-KRZYWE",
+        "lancuch_przemian.js": "łańcuch lub obieg przemian: wzory + strzałki z literami reakcji (bez odpowiedzi)",
+        "trojkat_przeliczen.js": "trójkąt konwersji m–n–N (wzor=mol) lub m–n–V (wzor=gaz) z operacjami ÷/× M, N_A, Vₘ",
+        "probowki_odczyn.js": "probówki przed/po odczynniku: zmiana barwy, osad, pęcherzyki gazu; opcja tuby",
+        "molekula_2d.js": "model cząsteczki 2D (SVG): kwas-octowy, eten, etanol; grupa do wyróżnienia; kwaśny H",
+        "c2d_core.js": "chemia 2D (v3, moduł): parser SMILES, układ współrzędnych, geometria VSEPR, wzór i masa",
+        "c2d_grupy.js": "wykrywanie grup funkcyjnych: COOH, ester, CHO, C=O, OH, eter, NH₂, NH, NR, X, C≡N, C=C, C≡C, Ar",
+        "c2d_wzor.js": "rysunek 2D: szkielet (domyślnie), model kulkowy, kąty, wolne pary, ramki grup",
+        "c2d_klocek.js": "klocek wzor-2d: wzór strukturalny z SMILES, opcja grupa=..., kulki, kat, pary",
+        "palnik_gazowy.js": "palnik gazowy (metan): płomień, zlewka odwrócona z kroplami H₂O, kontrolna, woda wapienna (LKO-ORG01 §5)",
+        "bilans_spalania.js": "bilans spalania całkowitego alkanu CₙH₂ₙ₊₂: współczynniki i bilans atomów C, H, O (LKO-ORG01 §2)",
+        "c2d_prosta.js": "prosty renderer wzorów 2D (z molekula_prosta): wszystkie atomy, zygzak, ramki grup; domyślny dla wzor-2d"
+    },
+    "lekcje": {
+        "P01": [
+            "klocki.js",
+            "pomocnicze.js",
+            "dane/pierwiastki.js",
+            "znaki.js",
+            "probowki.js",
+            "palniki.js",
+            "uklad_okresowy.js"
+        ],
+        "F06": [
+            "klocki.js",
+            "pomocnicze.js",
+            "dane/pierwiastki.js",
+            "znaki.js",
+            "probowki.js",
+            "palniki.js",
+            "uklad_okresowy.js"
+        ],
+        "F07": [
+            "klocki.js",
+            "pomocnicze.js",
+            "dane/pierwiastki.js",
+            "znaki.js",
+            "probowki.js",
+            "palniki.js",
+            "uklad_okresowy.js"
+        ],
+        "N03": [
+            "klocki.js",
+            "pomocnicze.js",
+            "dane/pierwiastki.js",
+            "znaki.js",
+            "probowki.js",
+            "palniki.js",
+            "uklad_okresowy.js"
+        ],
+        "LKO-KRZYWE": [
+            "klocki.js",
+            "pomocnicze.js",
+            "krzywe_rozpuszczalnosci.js"
+        ],
+        "LKO-A1": [
+            "klocki.js",
+            "pomocnicze.js",
+            "lancuch_przemian.js"
+        ],
+        "LKO-METALE": [
+            "klocki.js",
+            "pomocnicze.js",
+            "metal_woda.js",
+            "lancuch_przemian.js",
+            "probowki_odczyn.js"
+        ],
+        "LKO-STECH": [
+            "klocki.js",
+            "pomocnicze.js",
+            "trojkat_przeliczen.js"
+        ],
+        "LKO-ORG08": [
+            "klocki.js",
+            "pomocnicze.js",
+            "trojkat_przeliczen.js"
+        ],
+        "LKO-ORG02": [
+            "klocki.js",
+            "pomocnicze.js",
+            "probowki_odczyn.js",
+            "c2d_core.js",
+            "c2d_grupy.js",
+            "c2d_wzor.js",
+            "c2d_prosta.js",
+            "c2d_klocek.js"
+        ],
+        "LKO-ORG04": [
+            "klocki.js",
+            "pomocnicze.js",
+            "probowki_odczyn.js",
+            "c2d_core.js",
+            "c2d_grupy.js",
+            "c2d_wzor.js",
+            "c2d_prosta.js",
+            "c2d_klocek.js"
+        ],
+        "LKO-PUŁAPKI-WAPNO": [
+            "klocki.js",
+            "pomocnicze.js",
+            "probowki_odczyn.js"
+        ],
+        "LKO-ORG05": [
+            "klocki.js",
+            "pomocnicze.js",
+            "c2d_core.js",
+            "c2d_grupy.js",
+            "c2d_wzor.js",
+            "c2d_prosta.js",
+            "c2d_klocek.js"
+        ],
+        "LKO-ORG03": [
+            "klocki.js",
+            "pomocnicze.js",
+            "c2d_core.js",
+            "c2d_grupy.js",
+            "c2d_wzor.js",
+            "c2d_prosta.js",
+            "c2d_klocek.js"
+        ],
+        "LKO-ORG06": [
+            "klocki.js",
+            "pomocnicze.js",
+            "c2d_core.js",
+            "c2d_grupy.js",
+            "c2d_wzor.js",
+            "c2d_prosta.js",
+            "c2d_klocek.js"
+        ],
+        "LKO-ORG01": [
+            "klocki.js",
+            "pomocnicze.js",
+            "c2d_core.js",
+            "c2d_grupy.js",
+            "c2d_wzor.js",
+            "c2d_prosta.js",
+            "c2d_klocek.js",
+            "bilans_spalania.js",
+            "palnik_gazowy.js"
+        ],
+        "LKO-ORG07": [
+            "klocki.js",
+            "pomocnicze.js",
+            "c2d_core.js",
+            "c2d_grupy.js",
+            "c2d_wzor.js",
+            "c2d_prosta.js",
+            "c2d_klocek.js"
+        ]
+    },
+    "css": [
+        "lab.css"
+    ]
+}

@@ -10,6 +10,39 @@ MD = os.path.join(ROOT, 'lessons-md', 'gotowe')
 # zasada stała: każda wizualizacja ma linię @opis (narzedzia/opis_wizualizacji.py)
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', '..', 'narzedzia'))
 import opis_wizualizacji as OPIS
+KLOCKI_DIR = os.path.join(ROOT, 'engine', 'src', 'klocki')
+
+def klocek_line(st):
+    """@klocek <nazwa> {k="v"} | Podpis → figura montowana przez klocek (engine/src/klocki, jak na gałęzi olimpiady)."""
+    head, *titles = [x.strip() for x in st[8:].split(' | ')]
+    mm = re.match(r'([\w-]+)\s*(?:\{(.*)\})?\s*$', head)
+    if not mm: raise SyntaxError('zła linia @klocek: ' + st)
+    nazwa, opts = mm.group(1), dict(re.findall(r'([\w-]+)="([^"]*)"', mm.group(2) or ''))
+    fc = '<figcaption>%s</figcaption>' % inline(titles[0]) if titles else ''
+    return '<figure class="lk-fig" data-klocek="%s" data-opt="%s"><div class="lk-fig-body"></div>%s</figure>' % (
+        nazwa, H.escape(json.dumps(opts, ensure_ascii=False), quote=True), fc)
+
+def _rd(p):
+    return open(p, encoding='utf-8').read()
+
+def klocki_css():
+    mani = json.loads(_rd(os.path.join(KLOCKI_DIR, 'manifest.json')))
+    own = ('.lk-fig{margin:14px 0;padding:10px 12px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-soft)}'
+           '.lk-fig-body{display:flex;justify-content:center;overflow-x:auto}.lk-fig figcaption{margin-top:6px;font-size:13px;color:var(--text-soft);text-align:center}')
+    return own + '\n' + ''.join(_rd(os.path.join(KLOCKI_DIR, f)) + '\n' for f in mani.get('css', []))
+
+def klocki_js(kod):
+    """Pliki klocków z manifestu dla lekcji + montaż wszystkich figur data-klocek."""
+    mani = json.loads(_rd(os.path.join(KLOCKI_DIR, 'manifest.json')))
+    pliki = mani['lekcje'].get(kod)
+    if not pliki: raise SyntaxError('lekcja %s używa @klocek, a nie ma jej w engine/src/klocki/manifest.json (sekcja lekcje)' % kod)
+    boot = ("(function(){var go=function(){document.querySelectorAll('[data-klocek]').forEach(function(f){"
+            "var o={};try{o=JSON.parse(f.getAttribute('data-opt')||'{}')}catch(e){}"
+            "Object.keys(o).forEach(function(k){if(o[k]!==''&&!isNaN(Number(o[k])))o[k]=Number(o[k])});"
+            "KLOCKI.montuj(f.querySelector('.lk-fig-body'),f.getAttribute('data-klocek'),o)})};"
+            "if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go()})();")
+    return ''.join(_rd(os.path.join(KLOCKI_DIR, f)) + '\n' for f in pliki) + boot + '\n'
+
 BLOCK_TAGS = set('div section article aside details summary figure figcaption table thead tbody tfoot tr td th ul ol li dl dt dd '
                  'p h1 h2 h3 h4 h5 h6 pre blockquote nav header footer main form fieldset hr svg canvas iframe video audio '
                  'style script template'.split())
@@ -123,6 +156,8 @@ def parse_blocks(lines, ctx):
                        'onclick="parent.postMessage({type:\'CHE_LESSON_OPEN_VISUAL\',visualId:\'%s\',lessonId:\'%s\'},\'*\')">'
                        '<b>%s</b><span>%s</span></button></div>' % (vid, vid, vid, code, inline(t), inline(d)))
             i += 1; continue
+        if st.startswith('@klocek '):
+            out.append(klocek_line(st)); i += 1; continue
         if st.startswith('@zlewka '):
             head, _, label = st[8:].partition(' | ')
             prac, k = head.split(None, 1)
@@ -135,7 +170,7 @@ def parse_blocks(lines, ctx):
             out.append('<div%s>%s</div>' % (attr_html(at), inline(t))); i += 1; continue
         # akapit / lista / tabela / surowy HTML — do pustej linii
         j = i
-        while j < n and lines[j].strip() and not lines[j].strip().startswith(':::') and not (j > i and re.match(r'(#{2,6} |@model |@zlewka |@opis |\$\$ )', lines[j].strip())):
+        while j < n and lines[j].strip() and not lines[j].strip().startswith(':::') and not (j > i and re.match(r'(#{2,6} |@model |@zlewka |@klocek |@opis |\$\$ )', lines[j].strip())):
             j += 1
         blk = [x.rstrip() for x in lines[i:j]]; i = j
         out.append(leaf(blk, ctx))
@@ -397,6 +432,7 @@ def render(path):
         js += ''.join(open(os.path.join(dod, f), encoding='utf-8').read() + '\n' for f in sorted(os.listdir(dod)) if f.endswith('.js')) if os.path.isdir(dod) else ''
     js += open(os.path.join(ROOT, 'engine', 'src', 'lekcja', 'rozszerzenia.js'), encoding='utf-8').read() + '\n' + open(os.path.join(ROOT, 'engine', 'src', 'lekcja', 'lekcja.js'), encoding='utf-8').read()
     own_css = '\n'.join(collect('styl', lines))
+    if 'data-klocek=' in main: js = klocki_js(meta.get('kod', '')) + js; css = css + '\n' + klocki_css()
     doc = ('<!DOCTYPE html>\n<html lang="pl">\n<head>\n<meta charset="utf-8"/>\n<meta content="width=device-width,initial-scale=1.0" name="viewport"/>\n'
            '<title>%s · %s</title>\n<style id="che-lekcja-css">\n%s\n</style>\n%s</head>\n<body>\n'
            '<script>\n%s\n</script>\n<a class="skip-link" href="#main">Przejdź do treści</a>\n<main class="page" id="main">\n%s\n%s\n%s\n</main>\n'
