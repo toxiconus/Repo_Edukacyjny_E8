@@ -88,7 +88,12 @@ Lekcje (klocki / modele `@model` / `@zlewka` dziś): C1c konfiguracje 1/0/0; C1c
 | nazwa | lekcja | po co |
 |---|---|---|
 | animacja-estryfikacji | ORG06 | cząsteczki kwasu i alkoholu łączą się w ester + H₂O (opcjonalnie) |
+| schemat-dróg-do-NaOH | C1c kwasy (sekcja 8) | Trzy drogi do NaOH są opisane w tekście jako schemat, bez rysunku. Do rozważenia: wspólny klocek „schemat przemian” (wiele substratów → jeden produkt) |
+| sarkomer | B2a (§6) | Tekst „zastępujący rysunek” opisuje sarkomer. Komponent biologiczny z liniami Z, filamentami aktynowymi i miozynowymi |
 | diagram-bohra | C1c konfiguracje (sekcja 7) | Opis schematu modelu Bohra (Na, Cl: kółka K–M z kropkami) stoi w tekście, a rysunku w lekcji nie ma. Nowy komponent: powłoki K–N z liczbą elektronów i przełącznikiem Z |
 
 ## Przegląd H9 (log)
 - 2026-10-19 C1c konfiguracje: 1 klocek (`konfiguracje`, Z=19) — wystarcza. Dopisano do planu `diagram-bohra` (sekcja 7 opisuje rysunek, którego brak).
+- 2026-10-19 C1c kwasy: 3 klocki + 4 modele + doświadczenie — wystarcza. Opis schematu trzech dróg do NaOH → plan.
+- 2026-10-19 C1c wodorki: dodano `bilans-rownania` (synteza HCl i NH₃) do sekcji „Schemat otrzymywania HCl i NH₃”.
+- Skan H9 (wszystkie lekcje): opisy rysunków bez znacznika — B2a sarkomer (plan), C1c masy (klocek `sklad-procentowy` już jest: OK), C1c konfiguracje i kwasy (plan), N02 (to wzór, nie rysunek: OK).

@@ -207,6 +207,9 @@ Kwas reaguje z zasadą, tworząc sól i wodę. Jest to **szczególny przypadek w
 
 **Opis schematu syntezy NH₃:** po lewej jedna cząsteczka N₂ i trzy cząsteczki H₂, po prawej dwie cząsteczki NH₃. Każda cząsteczka NH₃ ma jeden atom azotu i trzy atomy wodoru. Wniosek: współczynniki 1, 3 i 2 zapewniają po obu stronach 2 atomy azotu i 6 atomów wodoru.
 
+@klocek bilans-rownania {rownanie="H2 + Cl2 -> 2 HCl" przyklady="H2 + Cl2 -> 2 HCl; N2 + 3 H2 -> 2 NH3"} | Bilans atomów przy syntezie HCl i NH₃
+@opis Tabela liczby atomów H, Cl i N po obu stronach równań syntezy. Po lewej H₂ + Cl₂ (2 atomy H i 2 atomy Cl), po prawej 2 HCl (2 atomy H i 2 atomy Cl); druga reakcja N₂ + 3 H₂ → 2 NH₃ daje 2 atomy N i 6 atomów H po obu stronach. Wniosek: współczynniki dobrano tak, by liczba atomów każdego pierwiastka była taka sama po obu stronach.
+
 ---
 
 ## Ciekawostki i mnemotechniki
