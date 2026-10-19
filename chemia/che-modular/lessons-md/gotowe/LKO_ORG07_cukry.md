@@ -106,6 +106,9 @@ W sacharozie wiązanie glikozydowe łączy oba atomy węgla anomerycznego glukoz
 @klocek wzor-2d {smiles="OCC(O)C(O)C(O)C(O)C=O"} | Glukoza w formie łańcuchowej: grupa aldehydowa i pięć grup –OH
 @opis Wzór strukturalny glukozy w formie łańcuchowej: sześć atomów węgla w łańcuchu, grupa aldehydowa –CHO na jednym końcu i grupy –OH przy pozostałych atomach węgla (poza pierwszym); forma łańcuchowa tłumaczy własności aldehydowe glukozy w próbach redukcyjnych.
 
+@klocek haworth {cukier="alfa-glukoza"} | Forma pierścieniowa cukrów (wzór Hawortha): α i β glukoza, fruktoza — ilustracja pomocnicza
+@opis Pierścień cukru narysowany w perspektywie (pogrubiona krawędź jest z przodu), z tlenem w pierścieniu zaznaczonym na czerwono i grupami –OH, –H oraz –CH₂OH nad i pod płaszczyzną. Przyciski przełączają α-D-glukopiranozę (OH przy C1 w dół), β-D-glukopiranozę (OH przy C1 w górę) i β-D-fruktofuranozę (pierścień pięcioczłonowy); formy α i β różnią się tylko położeniem –OH przy węglu anomerycznym. Ilustracja pomocnicza do zrozumienia, że glukoza w roztworze występuje głównie w postaci pierścieniowej.
+
 ## 2 | Wykład — trzy drogi glukozy: fotosynteza, oddychanie, fermentacja {#trzy-drogi}
 
 Glukoza jest centralnym węzłem energetycznym biosfery — i ma dokładnie trzy równania, które musisz znać:

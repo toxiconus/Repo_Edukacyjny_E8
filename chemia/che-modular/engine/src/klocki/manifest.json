@@ -33,7 +33,8 @@
   "sklad_procentowy.js": "Masa cząsteczkowa i skład procentowy wg wzoru (masy jak w lekcji C1c masy)",
   "bilans_rownania.js": "Dobieranie współczynników: przyciski −/+ i tabela bilansu atomów",
   "nadmiar_substratu.js": "Nadmiar substratu: suwaki mas, współczynniki przereagowania, paski, produkty",
-  "naczynia.js": "Wspólna geometria i wygląd szkła (probówka) dla klocków probowki, probowki-odczyn"
+  "naczynia.js": "Wspólna geometria i wygląd szkła (probówka) dla klocków probowki, probowki-odczyn",
+  "haworth.js": "Wzór Hawortha: α/β-D-glukopiranoza i β-D-fruktofuranoza (przełączane chipami)"
  },
  "lekcje": {
   "P01": [
@@ -182,7 +183,8 @@
    "c2d_grupy.js",
    "c2d_wzor.js",
    "c2d_prosta.js",
-   "c2d_klocek.js"
+   "c2d_klocek.js",
+   "haworth.js"
   ],
   "X04": [
    "klocki.js",

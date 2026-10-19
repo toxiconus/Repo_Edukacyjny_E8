@@ -43,6 +43,7 @@ W md wstawia się go linią `@klocek nazwa {opcja="wartość"} | Podpis`, a pod 
 | `sklad-procentowy` | sklad_procentowy.js | Masa cząsteczkowa i skład procentowy wg wzoru (masy jak w lekcji) | `wzor`, `przyklady` |
 | `bilans-rownania` | bilans_rownania.js | Dobieranie współczynników, tabela bilansu atomów | `rownanie`, `przyklady` (po średniku) |
 | `nadmiar-substratu` | nadmiar_substratu.js | Dwa substraty: współczynniki przereagowania, nadmiar, produkty | `reakcja` (mg-hcl, fe-s, zn-h2so4), `mA`, `mB` |
+| `haworth` | haworth.js | Wzór Hawortha: α/β-D-glukopiranoza i β-D-fruktofuranoza (chipy) | `cukier` (alfa-glukoza, beta-glukoza, beta-fruktoza) |
 | `krzywe-rozpuszczalnosci` | krzywe_rozpuszczalnosci.js | Krzywe rozpuszczalności g/100 g wody od T; strefy nasycenia | `subst` (KNO3,NaCl,NH4Cl), `T` (40), `m` (null), `strefy` (1) |
 | `palenie`, `palniki`, `plomien`, `probowki`, `zlewka`, `metal-woda`, `uklad-okresowy`, `znaki` | odpowiednie pliki | Chemia nieorganiczna | zob. nagłówek pliku |
 

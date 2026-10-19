@@ -116,6 +116,9 @@ Najstarsze opisy mydła pochodzą ze starożytnego Babilonu (ok. 4–5 tys. lat 
 @klocek wzor-2d {smiles="CC(=O)OCC"} | Octan etylu: wzór strukturalny estru
 @opis Wzór strukturalny octanu etylu: część kwasowa CH₃–CO– połączona przez atom tlenu z grupą etylową; wiązanie estrowe –COO–.
 
+@klocek wzor-2d {smiles="CCC(=O)OC"} | Propanian metylu: izomer octanu etylu
+@opis Wzór strukturalny propanianu metylu: część kwasowa propanianowa (CH₃CH₂–CO–) połączona przez tlen z grupą metylową; ma ten sam wzór sumaryczny C₄H₈O₂ co octan etylu, ale inną budowę — izomer estrowy.
+
 ## 2 | Wykład — estryfikacja krok po kroku {#estryfikacja}
 
 Reakcja wzorcowa — kwas octowy + etanol:
@@ -155,6 +158,9 @@ Najczęstszy błąd pojęciowy: traktowanie „→" lub zapisu bez strzałek jak
 - Nazwa „etylan octanu” zamiast **octan etylu** — najpierw reszta kwasowa, potem alkilowa.
 - Nie każda substancja o zapachu owocowym jest czystym estrem — naturalne aromaty to mieszaniny wielu związków.
 :::
+
+@klocek bilans-rownania {rownanie="CH3COOH + C2H5OH -> CH3COOC2H5 + H2O" przyklady="CH3COOH + C2H5OH -> CH3COOC2H5 + H2O; HCOOH + CH3OH -> HCOOCH3 + H2O"} | Estryfikacja: bilans atomów po obu stronach
+@opis Równanie estryfikacji (kwas octowy + etanol → octan etylu + woda) z przyciskami − i + przy współczynnikach i tabelą liczby atomów C, H i O po obu stronach; reakcja jest zbilansowana przy wszystkich współczynnikach równych 1 — każda cząsteczka kwasu łączy się z jedną cząsteczką alkoholu i oddaje jedną cząsteczkę wody. Drugi przykład: kwas mrówkowy z metanolem.
 
 ## 3 | Wykład — hydroliza: estryfikacja odwrócona {#hydroliza}
 
