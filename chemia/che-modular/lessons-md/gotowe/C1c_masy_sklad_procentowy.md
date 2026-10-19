@@ -34,7 +34,7 @@ W tej lekcji nauczysz się obliczać **masę cząsteczkową** związku ze wzoru 
 
 ### 1. Masy atomowe do zapamiętania
 
-Wartości zaokrąglone, do weryfikacji z tablicą etapu:
+Wartości zaokrąglone zgodnie z tablicą etapu szkolnego (Cl: 35,5). Są zgodne z zaokrągleniem standardowych mas atomowych CIAAW (2024), np. Cl 35,446–35,457 → 35,5, Fe 55,845 → 56.
 
 | Pierwiastek | Symbol | Masa atomowa (u) |
 |---|---|---|
