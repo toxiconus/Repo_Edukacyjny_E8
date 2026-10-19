@@ -24,7 +24,7 @@ V.define('kw-bufor-v01',{title:'Bufor octanowy kontra czysta woda — dodawaj kw
   var col=function(p){return G.colors.at('ind-uniwersalny',Math.max(0,Math.min(14,p)))||[200,200,200]};
   var m=G.mount(host,{height:250,parts:[{id:'beaker',x:.02,y:.12,w:.28,h:.84,get:function(){return{liquid:col(pHw()),level:.62,label:'woda',T:25}}},{id:'pHmeter',x:.3,y:.1,w:.18,h:.86,get:function(){return{pH:pHw()}}},
    {id:'beaker',x:.52,y:.12,w:.28,h:.84,get:function(){return{liquid:col(pHb()),level:.62,label:'bufor',T:25}}},{id:'pHmeter',x:.8,y:.1,w:.18,h:.86,get:function(){return{pH:pHb()}}}]});
-  var ch=el('canvas');ch.style.cssText='width:100%;height:200px;display:block;border-radius:10px;background:var(--surface-soft,#f1f5f9);margin-top:8px';host.appendChild(ch);var note=el('div','note');host.appendChild(note);
+  var ch=el('canvas');ch.style.cssText='width:100%;height:200px;display:block;border-radius:10px;background:var(--surface-soft,#f6f8fa);margin-top:8px';host.appendChild(ch);var note=el('div','note');host.appendChild(note);
   function draw(){o1.textContent=st.cb.toFixed(2).replace('.',',')+' mol/dm³';o2.textContent=st.ratio.toFixed(2).replace('.',',');
    var d=Math.min(2,window.devicePixelRatio||1),W=ch.clientWidth||500,H=ch.clientHeight||200;ch.width=W*d;ch.height=H*d;var x=ch.getContext('2d');x.setTransform(d,0,0,d,0,0);var T=G.theme(),L=34,B=H-22,R=W-10,Tp=10;
    var HL=Object.keys(S.hist).map(function(k){return S.hist[k]});var ks=HL.map(function(h){return h[0]}),kmin=Math.min(-5,...ks),kmax=Math.max(5,...ks);x.strokeStyle=T.mut;x.fillStyle=T.mut;x.font='600 10px system-ui';x.beginPath();x.moveTo(L,Tp);x.lineTo(L,B);x.lineTo(R,B);x.stroke();
