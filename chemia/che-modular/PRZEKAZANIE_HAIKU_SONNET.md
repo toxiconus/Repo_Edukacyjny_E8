@@ -90,7 +90,7 @@ Lekcje (klocki / modele `@model` / `@zlewka` dziś): C1c konfiguracje 1/0/0; C1c
 | animacja-estryfikacji | ORG06 | cząsteczki kwasu i alkoholu łączą się w ester + H₂O (opcjonalnie) |
 | schemat-dróg-do-NaOH | C1c kwasy (sekcja 8) | Trzy drogi do NaOH są opisane w tekście jako schemat, bez rysunku. Do rozważenia: wspólny klocek „schemat przemian” (wiele substratów → jeden produkt) |
 | sarkomer | B2a (§6) | Tekst „zastępujący rysunek” opisuje sarkomer. Komponent biologiczny z liniami Z, filamentami aktynowymi i miozynowymi |
-| diagram-bohra | C1c konfiguracje (sekcja 7) | Opis schematu modelu Bohra (Na, Cl: kółka K–M z kropkami) stoi w tekście, a rysunku w lekcji nie ma. Nowy komponent: powłoki K–N z liczbą elektronów i przełącznikiem Z |
+| ~~diagram-bohra~~ (zbudowany 2026-10-19: `diagram_bohra.js`; użyty w C1c konfiguracje §7, F04 §4, F06 §3) | C1c konfiguracje (sekcja 7) | Opis schematu modelu Bohra (Na, Cl: kółka K–M z kropkami) stoi w tekście, a rysunku w lekcji nie ma. Nowy komponent: powłoki K–N z liczbą elektronów i przełącznikiem Z |
 
 ## Przegląd H9 (log)
 - 2026-10-19 Haiku — ocena istniejących wizualizacji do wstawienia (kandydaci `kandydat` z katalogu): nic nie wstawiono. `ion-vs-diss` do N03 §5.6 — ta sama różnica już jest w tabeli „Jonizacja a dysocjacja”; `timeline` do N03 Dodatku A — historia już jest w kartach; `flashcards-deck` do REV01 — ściąga i fiszki są w tekście (§14, §16); `safety` do C4 — karta-bhp już jest; `gfx-scene-heating` do C2w — probówki z ogrzewaniem już są. Brakujące lekcje (F09, F10, F15, F17, FIZ02, O11, REV07) nie istnieją w `gotowe/`, więc nie ma gdzie wstawić `czeka`/`kandydat` z katalogu. Nowe komponenty — plan dla Sonneta.

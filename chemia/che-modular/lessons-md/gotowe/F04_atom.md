@@ -162,6 +162,9 @@ $$ q = p − e → e = Z − q
 
 $$ Na → Na⁺ + e⁻ · Cl + e⁻ → Cl⁻
 
+@klocek diagram-bohra {z="11"} | Atom i jon w modelu Bohra: oddaj lub przyjmij elektron
+@opis Model Bohra: pośrodku czerwone jądro z napisem „Zp” (liczba protonów), wokół niego przerywane okręgi powłok K, L, M (i N) z kropkami-elektronami; kropki powłoki zewnętrznej (walencyjnej) są w kolorze akcentu, wewnętrzne szare. Suwak Z zmienia pierwiastek, przyciski dodają lub odbierają elektron: kation oddaje elektron z powłoki zewnętrznej (kropka odlatuje), anion przyjmuje elektron (kropka dolatuje). Obok liczby protonów, elektronów, ładunek i liczba elektronów na powłokach. Wniosek: Na ma 2, 8, 1 elektronów, po oddaniu jednego ma 2, 8 (jak Ne); Cl ma 2, 8, 7, po przyjęciu jednego 2, 8, 8 (jak Ar); liczba protonów się nie zmienia.
+
 ::: karta core | Reguła: kation oddał, anion przyjął
 **Kation** (ładunek dodatni) — elektronów **mniej** niż protonów. **Anion** (ładunek ujemny) — elektronów **więcej** niż protonów. Uwaga na znak: dla O²⁻ e = 8 − (−2) = 10, a nie 6.
 :::

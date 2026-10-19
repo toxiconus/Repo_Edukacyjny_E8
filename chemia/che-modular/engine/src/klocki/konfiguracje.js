@@ -1,5 +1,5 @@
 /* KLOCEK: konfiguracje — konfiguracja elektronowa Z ≤ 36: suwak, kolejność podpowłok, pudełka orbitali (zakaz Pauliego, reguła Hunda),
-   powłoki K–N, zapis pełny i skrócony. Opcje: z (19), max (36). Wyjątki Cr (24) i Cu (29) oznaczone; grupy 3–12 poza zakresem LKO 2025/26. */
+   powłoki K–N, zapis pełny i skrócony. Opcje: z (19), max (36). Wyjątki Cr (24) i Cu (29) oznaczone; grupy 3–12 poza zakresem LKO 2026/27. */
 (function () {
   var SYM = 'H He Li Be B C N O F Ne Na Mg Al Si P S Cl Ar K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr'.split(' ');
   var ORD = [['1s', 2], ['2s', 2], ['2p', 6], ['3s', 2], ['3p', 6], ['4s', 2], ['3d', 10], ['4p', 6]];
@@ -65,7 +65,7 @@
                 '<div>Zapis skrócony: <b>' + (nz ? '[' + nz[1] + '] ' : '') + zapis(rest) + '</b></div>' +
                 '<div>Elektrony na powłokach K, L, M, N: <b>' + [1, 2, 3, 4].map(function (n) { return cnt[n] || 0; }).join(', ') + '</b></div>';
         if (z >= 19) t += '<div style="color:var(--c-basic,#15803d)">4s zapełnia się przed 3d: powłoka M ma ' + cnt[3] + ' z 18 elektronów, a N już ' + cnt[4] + '.</div>';
-        if (z >= 21 && z <= 30) t += '<div style="color:var(--c-warn,#b45309)">Poza zakresem LKO 2025/26 (grupy 3–12)' + (z === 24 || z === 29 ? '; wyjątek od kolejności wypełniania' : '') + '.</div>';
+        if (z >= 21 && z <= 30) t += '<div style="color:var(--c-warn,#b45309)">Poza zakresem LKO 2026/27 (grupy 3–12)' + (z === 24 || z === 29 ? '; wyjątek od kolejności wypełniania' : '') + '.</div>';
         ki.innerHTML = t;
       }
       inp.addEventListener('input', rys); rys();

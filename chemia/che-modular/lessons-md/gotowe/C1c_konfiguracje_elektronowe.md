@@ -223,6 +223,9 @@ Wniosek: sód ma 1 elektron walencyjny (grupa 1) i 3 zapełnione powłoki (okres
 
 Analogicznie chlor ma na powłoce M 7 kropek (3s² 3p⁵), czyli brakuje mu 1 elektronu do Ar. Dlatego tworzy jon Cl⁻.
 
+@klocek diagram-bohra {z="11"} | Model Bohra: ustaw Z = 11 (Na) lub 17 (Cl) i oddaj albo przyjmij elektron
+@opis Model Bohra: pośrodku czerwone jądro z napisem „Zp” (liczba protonów), wokół niego przerywane okręgi powłok K, L, M (i N) z kropkami-elektronami; kropki powłoki zewnętrznej (walencyjnej) są w kolorze akcentu, wewnętrzne szare. Suwak Z zmienia pierwiastek, przyciski dodają lub odbierają elektron: kation oddaje elektron z powłoki zewnętrznej (kropka odlatuje), anion przyjmuje elektron (kropka dolatuje). Obok liczby protonów, elektronów, ładunek i liczba elektronów na powłokach. Wniosek: Na ma 2, 8, 1 elektronów, po oddaniu jednego ma 2, 8 (jak Ne); Cl ma 2, 8, 7, po przyjęciu jednego 2, 8, 8 (jak Ar); liczba protonów się nie zmienia.
+
 ### 8. Przykład: konfiguracja żelaza krok po kroku
 
 **Zadanie:** Napisz konfigurację elektronową żelaza (Fe, Z = 26).

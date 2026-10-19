@@ -37,7 +37,8 @@
     "haworth.js": "Wzór Hawortha: α/β-D-glukopiranoza i β-D-fruktofuranoza (przełączane chipami)",
     "estryfikacja.js": "Animacja estryfikacji: kwas + alkohol → ester + woda (pętla, autostart)",
     "petla_regulacji.js": "Pętla sprzężenia ujemnego z 5 elementów z krążącym impulsem (biologia)",
-    "doswiadczenie.js": "Wspólny układ doświadczenia: cel, sprzęt, BHP, scena (inny klocek), równanie, obserwacje"
+    "doswiadczenie.js": "Wspólny układ doświadczenia: cel, sprzęt, BHP, scena (inny klocek), równanie, obserwacje",
+    "diagram_bohra.js": "Model Bohra atomu i jonu: jądro (p), powłoki K–N, suwak Z, oddawanie/przyjmowanie elektronu z animacją"
   },
   "lekcje": {
     "P01": [
@@ -59,7 +60,8 @@
       "probowki.js",
       "palniki.js",
       "uklad_okresowy.js",
-      "karta_bhp.js"
+      "karta_bhp.js",
+      "diagram_bohra.js"
     ],
     "F07": [
       "klocki.js",
@@ -231,6 +233,7 @@
       "c2d_prosta.js",
       "c2d_klocek.js",
       "konfiguracje.js",
+      "diagram_bohra.js",
       "sklad_procentowy.js",
       "doswiadczenie.js",
       "karta_bhp.js"
@@ -325,6 +328,11 @@
     "REV01": [
       "klocki.js",
       "karta_bhp.js"
+    ],
+    "F04": [
+      "klocki.js",
+      "pomocnicze.js",
+      "diagram_bohra.js"
     ]
   },
   "css": [

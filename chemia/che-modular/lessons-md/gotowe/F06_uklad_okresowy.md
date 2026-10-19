@@ -149,6 +149,9 @@ Na: okres 3, grupa 1. Mg: okres 3, grupa 2. Cl: okres 3, grupa 17. Wszystkie maj
 | 17 | 7 | fluorowce (halogeny) | I (wobec metali i wodoru); Cl wobec tlenu: I, III, V, VII | F⁻, Cl⁻ |
 | 18 | 8 (He: 2) | gazy szlachetne (helowce) | w szkolnym modelu nie tworzą związków | brak |
 
+@klocek diagram-bohra {z="17"} | Elektrony walencyjne na powłoce zewnętrznej: wybierz pierwiastek suwakiem Z
+@opis Model Bohra: pośrodku czerwone jądro z napisem „Zp” (liczba protonów), wokół niego przerywane okręgi powłok K, L, M (i N) z kropkami-elektronami; kropki powłoki zewnętrznej (walencyjnej) są w kolorze akcentu, wewnętrzne szare. Suwak Z zmienia pierwiastek, przyciski dodają lub odbierają elektron: kation oddaje elektron z powłoki zewnętrznej (kropka odlatuje), anion przyjmuje elektron (kropka dolatuje). Obok liczby protonów, elektronów, ładunek i liczba elektronów na powłokach. Wniosek: Na ma 2, 8, 1 elektronów, po oddaniu jednego ma 2, 8 (jak Ne); Cl ma 2, 8, 7, po przyjęciu jednego 2, 8, 8 (jak Ar); liczba protonów się nie zmienia.
+
 ::: karta core | Elektrony walencyjne → kierunek tworzenia jonu
 Metale grup głównych **oddają** elektrony walencyjne → **kation** o ładunku = liczbie oddanych elektronów (Na → Na⁺, Mg → Mg²⁺, Al → Al³⁺). Niemetale grup 15–17 w związkach z metalami **przyjmują** brakujące do oktetu elektrony → **anion** (Cl: 7 + 1 = 8 → Cl⁻; O: 6 + 2 → O²⁻). Liczenie elektronów w jonie: e = Z − q ([F05](#mosty)).
 :::
