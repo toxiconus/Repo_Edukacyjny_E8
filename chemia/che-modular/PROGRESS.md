@@ -55,3 +55,4 @@
 - 2026-10-19 H9 p.1 N05: +bilans-rownania (sekcja 8), manifest N05 +bilans_rownania.js, test headless 0 błędów. Przegląd N02–N05 zakończony.
 - 2026-10-19 H9 p.1 C2m/C3/C4: przegląd bez zmian treści; wpis w PRZEKAZANIE_HAIKU_SONNET.md.
 - 2026-10-19 H9 p.1 ORG01–08: przegląd; ORG05 +bilans-rownania (Mg + CH3COOH), manifest, test headless 0 błędów.
+- 2026-10-19 H9 p.1 C1c masy/wodorki, C2w, J03, R03, X04, N01: przegląd bez zmian treści.
