@@ -98,6 +98,9 @@ Gazy szlachetne używane do skracania (Z ≤ 36):
 
 **Kolejność zapisu** — w tej lekcji przyjmujemy jedną konwencję: zapisujemy konfigurację w kolejności obsadzania, np. Fe: [Ar] 4s² 3d⁶. W niektórych podręcznikach spotkasz [Ar] 3d⁶ 4s² — to ten sam rozkład elektronów. Na olimpiadzie przyjmij konwencję wskazaną w arkuszu zadania.
 
+@klocek konfiguracje {z="19"} | Konfiguracja elektronowa: przesuń suwak Z
+@opis Suwak liczby atomowej Z od 1 do 36. Nad suwakiem kolejność podpowłok ze strzałkami (ostatnia wypełniana pogrubiona), obok pudełka orbitali z elektronami jako strzałki góra/dół (każdy orbital najpierw jedna strzałka, potem druga), po prawej model powłok K–N z kropkami elektronów. Pod spodem zapis pełny i skrócony oraz liczba elektronów na powłokach; od Z = 19 widać, że 4s zapełnia się przed 3d, a dla Cr i Cu zaznaczony jest wyjątek.
+
 ### 4. Konfiguracje pierwiastków Z ≤ 36 — tabela skrócona (grupy 3–12 poza zakresem LKO 2025/26)
 
 **Okres 1 i 2:**

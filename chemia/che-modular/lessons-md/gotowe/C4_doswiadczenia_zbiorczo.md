@@ -164,6 +164,9 @@ Jony Cl⁻ występują po obu stronach bez zmian, więc je wykreślamy. Nazywamy
 
 ---
 
+@klocek probowki-wybor {zestaw="metale-hcl" wybrane="Mg,Zn,Cu"} | Metal + kwas solny: które metale reagują
+@opis Trzy probówki z kwasem solnym i przyciski z nazwami metali: w probówkach z Mg, Zn i Fe pojawiają się pęcherzyki wodoru, a w probówce z miedzią nic się nie dzieje. Pod probówkami są równania jonowe skrócone.
+
 ### Doświadczenie 3. Reakcja tlenku z wodą
 
 Tlenki dzielimy na:
@@ -254,6 +257,9 @@ Wniosek z równania: zobojętnianie zawsze polega na łączeniu się jonów H⁺
 
 ---
 
+@klocek probowki-odczyn {tuby="Kontrola (woda):bezbarwny:bezbarwny:brak,NaOH + fenoloftaleina → HCl:malinowy:bezbarwny:brak"} | Zobojętnianie: malinowy roztwór odbarwia się
+@opis Dwie probówki: w pierwszej woda z fenoloftaleiną pozostaje bezbarwna; w drugiej zasadowy roztwór z fenoloftaleiną jest malinowy i po dodaniu kwasu odbarwia się, gdy środowisko przestaje być zasadowe.
+
 ### Doświadczenie 5. Strącanie osadu
 
 Dwa przezroczyste roztwory soli mieszane razem mogą dać nierozpuszczalny osad. To przykład reakcji wymiany jonowej.
@@ -303,6 +309,9 @@ Przykłady strąceń (wartości z tabeli rozpuszczalności — do potwierdzenia 
 
 ---
 
+@klocek probowki-wybor {zestaw="stracanie" wybrane="AgCl,BaSO4,CuOH2"} | Strącanie osadu: wybierz parę jonów
+@opis Trzy probówki z roztworami; po zmieszaniu odczynników tworzy się osad opadający na dno: biały AgCl i BaSO₄, niebieski Cu(OH)₂ lub rdzawy Fe(OH)₃. Przyciski zmieniają zestaw, a pod probówkami widać równanie jonowe skrócone.
+
 ### Doświadczenie 6. Rozkład CaCO₃ i wykrycie CO₂
 
 To doświadczenie składa się z dwóch etapów: rozkładu węglanu wapnia pod wpływem temperatury i wykrycia powstałego CO₂ wodą wapienną.
@@ -351,6 +360,12 @@ Rozkład CaCO₃ jest podstawą przemysłu wapienniczego: w piecach wypala się 
 :::
 
 ---
+
+@klocek probowki-odczyn {tuby="CaCO₃ ogrzewany:bialy:bialy:gaz" kat="45"} | Ogrzewanie CaCO₃: probówka pochylona, wydziela się gaz
+@opis Probówka z białym węglanem wapnia ustawiona ukośnie (ok. 45°, otworem od siebie) nad palnikiem; po ogrzaniu unoszą się pęcherzyki gazu CO₂, a poziom substancji i cieczy pozostaje poziomy. Znacznik PRZED/PO w rogu pokazuje fazę doświadczenia.
+
+@klocek probowki-odczyn {tuby="Kontrola:bezbarwny:bezbarwny:brak,Woda wapienna + CO₂:bezbarwny:mleczny:osad"} | Wykrycie CO₂: woda wapienna mętnieje
+@opis Dwie probówki z klarowną wodą wapienną: do pierwszej nic nie dodano (kontrola), przez drugą przepuszczono CO₂ — roztwór mętnieje od powstającego białego CaCO₃, który opada na dno.
 
 ## Wskaźniki — kolory w kwasie i w zasadzie
 

@@ -25,7 +25,9 @@
   "palnik_gazowy.js": "palnik gazowy (metan): płomień, zlewka odwrócona z kroplami H₂O, kontrolna, woda wapienna (LKO-ORG01 §5)",
   "bilans_spalania.js": "bilans spalania całkowitego alkanu CₙH₂ₙ₊₂: współczynniki i bilans atomów C, H, O (LKO-ORG01 §2)",
   "c2d_prosta.js": "prosty renderer wzorów 2D (z molekula_prosta): wszystkie atomy, zygzak, ramki grup; domyślny dla wzor-2d",
-  "probowki_wybor.js": "Wybór metali/odczynników: kilka probówek naraz z równaniami (zestawy: metale-hcl, stracanie, kwas-weglan)"
+  "probowki_wybor.js": "Wybór metali/odczynników: kilka probówek naraz z równaniami (zestawy: metale-hcl, stracanie, kwas-weglan)",
+  "konfiguracje.js": "Konfiguracje elektronowe Z ≤ 36: suwak, pudełka orbitali, powłoki K–N, zapis pełny i skrócony",
+  "kalkulator_mola.js": "Kalkulator mola: m, n, M, N, V gazu dla dowolnej substancji"
  },
  "lekcje": {
   "P01": [
@@ -184,12 +186,20 @@
    "c2d_grupy.js",
    "c2d_wzor.js",
    "c2d_prosta.js",
-   "c2d_klocek.js"
+   "c2d_klocek.js",
+   "konfiguracje.js"
   ],
   "C2m": [
    "klocki.js",
    "pomocnicze.js",
-   "trojkat_przeliczen.js"
+   "trojkat_przeliczen.js",
+   "kalkulator_mola.js"
+  ],
+  "C4": [
+   "klocki.js",
+   "pomocnicze.js",
+   "probowki_odczyn.js",
+   "probowki_wybor.js"
   ]
  },
  "css": [

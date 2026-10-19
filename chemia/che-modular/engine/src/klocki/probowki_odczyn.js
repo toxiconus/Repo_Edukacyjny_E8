@@ -1,6 +1,6 @@
 /* KLOCEK: probowki-odczyn — probówki przed i po dodaniu odczynnika (barwa, osad, pęcherzyki gazu).
    Opcja tuby: lista probówek oddzielona przecinkami; w każdej: etykieta:kolor_przed:kolor_po:efekt
-     kolory: bezbarwny, pomaranczowy, mleczny, niebieski, szafirowy, bialy, fioletowy, zielony
+     kolory: malinowy, zolty, brazowy, jasnozielony, blekitny, bezbarwny, pomaranczowy, mleczny, niebieski, szafirowy, bialy, fioletowy, zielony
      efekt:  osad (cząstki opadają), gaz (pęcherzyki unoszą się), brak
    Przykład: tuby="Kontrola:pomaranczowy:pomaranczowy:brak,Eten:pomaranczowy:bezbarwny:brak"
    Opcja kat: pochylenie probówek w stopniach (np. 45 przy ogrzewaniu); poziom cieczy zostaje poziomy.
@@ -9,7 +9,7 @@
   var KOL = {
     bezbarwny: '#e0f2fe', pomaranczowy: '#f97316', mleczny: '#cbd5e1', niebieski: '#60a5fa',
     szafirowy: '#1e3a8a', bialy: '#f1f5f9', fioletowy: '#7e22ce', zielony: '#16a34a',
-    zolty: '#facc15', brazowy: '#b45309', jasnozielony: '#bbf7d0', blekitny: '#93c5fd'
+    malinowy: '#be185d', zolty: '#facc15', brazowy: '#b45309', jasnozielony: '#bbf7d0', blekitny: '#93c5fd'
   };
   function hex(h) { var n = parseInt(h.slice(1), 16); return [n >> 16 & 255, n >> 8 & 255, n & 255]; }
   function mieszaj(a, b, k) {

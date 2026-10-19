@@ -112,6 +112,9 @@ V = 2 · 22,4 = **44,8 dm³**.
 **Przykład 6 — masa na objętość gazu.** Ile dm³ zajmuje 8 g O₂ w warunkach normalnych?
 M(O₂) = 32 g/mol. n = 8 / 32 = 0,25 mol. V = 0,25 · 22,4 = **5,6 dm³**.
 
+@klocek kalkulator-mola {subst="0"} | Kalkulator mola: m, n, M, N, V
+@opis Pola masy molowej, masy, liczby moli i objętości gazu dla wybranej substancji (H₂O, CO₂, O₂, CH₄, NaCl): zmiana jednej wartości przelicza pozostałe, a pod polami stoją wzory n = m/M, N = n·N_A i V = n·22,4 dm³/mol z podstawionymi liczbami; objętość dotyczy tylko gazów w warunkach normalnych (0 °C, 1013 hPa).
+
 ### 5. Obliczenia z równania reakcji
 
 Współczynniki w równaniu reakcji określają **stosunek liczby moli** substratów i produktów. Dla równania 2 Mg + O₂ → 2 MgO stosunek moli Mg : O₂ : MgO wynosi 2 : 1 : 2.

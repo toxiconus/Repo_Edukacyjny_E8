@@ -48,3 +48,8 @@ Start każdej sesji: `CLAUDE.md` w katalogu głównym, potem ten plik, potem tyl
 - Styl: `STYL_WIZUALIZACJI.md`, kontrola `tools/styl_sprawdz.py` → `STYL_RAPORT.md` (94 pliki, 59 zgodnych).
 - Prototyp wizualizacji R4: `wizualizacje_r4/Wizualizacje_do_lekcji_R4.html` (blok efektów generowany: `tools/efekty_do_html.py`).
 - Gotowe modele wstawione do 9 lekcji R4; brak jeszcze w C1c konfiguracje (S1) i ogólnego kalkulatora mola w C2m (S2).
+
+
+## Stan 2026-10-19 (klocki)
+- Wykonane: S1 konfiguracje (`konfiguracje`), kalkulator mola (`kalkulator-mola`), S2 trójkąt przeliczeń w C2m, S6 wzory 2D w C1c, `probowki-wybor` (X04, J03, C1c, C4), opcja `kat` w `probowki-odczyn`.
+- Zostaje: S3/S7 Mendel, S4 migracja stylu dużych plików, S5 wspólna probówka z `naczynia/testTube`, S8 jeden mechanizm animacji.
