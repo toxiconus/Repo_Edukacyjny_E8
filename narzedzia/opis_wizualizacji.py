@@ -17,7 +17,7 @@ import sys
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DLUG = os.path.join(REPO, "narzedzia", "opis_dlug.json")
 KATALOGI = ["chemia/che-modular/lessons-md/gotowe", "biologia/bio/md"]  # lekcje budowane do HTML
-WIZ = re.compile(r"^(@model |@zlewka |@viz |!\[|<img\b|<svg\b)")
+WIZ = re.compile(r"^(@model |@zlewka |@klocek |@viz |!\[|<img\b|<svg\b)")
 
 
 def braki(text):
