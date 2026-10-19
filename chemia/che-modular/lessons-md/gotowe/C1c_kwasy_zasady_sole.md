@@ -177,7 +177,7 @@ Mechanizm jest taki sam: H₂SO₃ rozpada się na H₂O i SO₂↑.
 
 $$\text{CH}_3\text{COONa} + \text{HCl} \rightarrow \text{NaCl} + \text{CH}_3\text{COOH}$$
 
-Tu nie ma gazu ani osadu. Reakcja zachodzi, bo powstaje słaby elektrolit CH₃COOH (pozycja S w NPSW).
+Tu nie ma gazu ani osadu. Reakcja zachodzi, bo powstaje słaby elektrolit CH₃COOH (pozycja S w NPSW). Równanie: CH₃COONa + HCl → CH₃COOH + NaCl; jonowo skrócone: CH₃COO⁻ + H⁺ → CH₃COOH.
 
 ### 6. Wypieranie lotnego kwasu z soli
 
@@ -288,7 +288,7 @@ Zapisz trzy formy reakcji CuO + 2 HCl → CuCl₂ + H₂O.
 ### Ćwiczenie 7 (4 pkt) — wypieranie lotnego kwasu
 Zapisz reakcję wypierania HCl z NaCl przez stężony H₂SO₄ i podaj warunki.
 
-**Rozwiązanie:** NaCl + H₂SO₄ (stęż.) → NaHSO₄ + HCl↑ (3 pkt). Warunki: ogrzewanie, stężony kwas siarkowy (1 pkt).
+**Rozwiązanie:** NaCl + H₂SO₄ (stęż.) → NaHSO₄ + HCl↑ (3 pkt). Warunki: ogrzewanie, stężony kwas siarkowy (1 pkt). Reakcji nie przenosimy na rozcieńczone roztwory.
 
 ### Ćwiczenie 8 (4 pkt) — reguła NPSW
 Czy zajdą reakcje?
@@ -311,7 +311,7 @@ d) **nie** — kwas azotowy nie wypiera chlorowodoru, bo oba kwasy są mocne i r
 
 **Pułapka 2. Tlenki obojętne jako reagujące z wodą.** CO i NO z wodą nie reagują. Błędem jest zapis CO + H₂O → H₂CO₃, bo kwas węglowy powstaje z CO₂.
 
-**Pułapka 3. Metale nieaktywne z wodą.** Cu jest za wodorem w szeregu aktywności i z wodą nie reaguje. Z wodą reagują tylko K, Na, Ca i Mg.
+**Pułapka 3. Metale nieaktywne z wodą.** Cu jest za wodorem w szeregu aktywności i z wodą nie reaguje. Z wodą w temperaturze pokojowej reagują przede wszystkim K, Na i Ca. Magnez reaguje z zimną wodą bardzo wolno, a wyraźnie szybciej z gorącą wodą lub parą.
 
 **Pułapka 4. Brak bilansu.** Zapis NaOH + H₂SO₄ → NaSO₄ + H₂O jest błędny. Poprawnie: 2 NaOH + H₂SO₄ → Na₂SO₄ + 2 H₂O.
 
@@ -374,6 +374,6 @@ Przed zawodami sprawdź, czy umiesz:
 1. Czy etap rejonowy wymaga procesu chloroalkalicznego (elektroliza NaCl)? Lekcja podaje go jako ciekawostkę.
 2. Czy wypieranie lotnego HCl z NaCl przez stężony H₂SO₄ jest obowiązkowe? Lekcja podaje je w ćwiczeniu 7.
 3. Czy słabe kwasy HF, HCN i HClO₄ (mocny) mają być w zakresie? Lekcja ich nie omawia w ćwiczeniach.
-4. Czy kwas fosforowy(V) z P₂O₅ ma być w ćwiczeniach? W lekcji występuje jako przykład reakcji tlenku z wodą.
+4. Czy kwas fosforowy(V) z P₂O₅ ma być w ćwiczeniach? Poprawny zapis: P₂O₅ + 3 H₂O → 2 H₃PO₄ (uproszczony wzór tlenku) lub P₄O₁₀ + 6 H₂O → 4 H₃PO₄. W lekcji występuje jako przykład reakcji tlenku z wodą.
 5. Czy trzy formy równań mają być wymagane także dla reakcji z tlenkami (metody 1–3 kwasów i wodorotlenków)? Lekcja zapisuje je w trzech formach.
-6. Czy przy NaOH + H₂SO₄ w stosunku 1 : 1 uczeń ma znać NaHSO₄? Lekcja zakłada pełne zobojętnianie (Na₂SO₄).
+6. Czy przy NaOH + H₂SO₄ w stosunku 1 : 1 uczeń ma znać NaHSO₄? Może powstać wodorosiarczan sodu: NaOH + H₂SO₄ → NaHSO₄ + H₂O. Lekcja zakłada pełne zobojętnianie: 2 NaOH + H₂SO₄ → Na₂SO₄ + 2 H₂O.

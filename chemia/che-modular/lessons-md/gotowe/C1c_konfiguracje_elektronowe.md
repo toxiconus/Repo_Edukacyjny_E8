@@ -93,7 +93,7 @@ Gazy szlachetne używane do skracania (Z ≤ 36):
 - **[Ar]** = 1s² 2s² 2p⁶ 3s² 3p⁶ (Z = 18)
 - **[Kr]** = [Ar] 4s² 3d¹⁰ 4p⁶ (Z = 36)
 
-**Kolejność zapisu w konfiguracji ostatecznej** — w zapisie końcowym podpowłoki układa się według numeru powłoki (3d przed 4s w zapisie pełnym dla Fe: …3s² 3p⁶ 3d⁶ 4s²). W zapisie skróconym spotyka się obie formy, np. [Ar] 4s² 3d⁶ i [Ar] 3d⁶ 4s². Na olimpiadzie przyjmij konwencję z arkusza zadania.
+**Kolejność zapisu** — w tej lekcji przyjmujemy jedną konwencję: zapisujemy konfigurację w kolejności obsadzania, np. Fe: [Ar] 4s² 3d⁶. W niektórych podręcznikach spotkasz [Ar] 3d⁶ 4s² — to ten sam rozkład elektronów. Na olimpiadzie przyjmij konwencję wskazaną w arkuszu zadania.
 
 ### 4. Konfiguracje pierwiastków Z ≤ 36 — tabela skrócona
 
@@ -148,7 +148,9 @@ Gazy szlachetne używane do skracania (Z ≤ 36):
 | 35 | Br | [Ar] 4s² 3d¹⁰ 4p⁵ | |
 | 36 | Kr | [Ar] 4s² 3d¹⁰ 4p⁶ | |
 
-**Dlaczego Cr i Cu są wyjątkami?** Zamiast [Ar] 4s² 3d⁴ (Cr) i [Ar] 4s² 3d⁹ (Cu) atomy przechodzą jeden elektron z 4s na 3d. Powstaje wtedy połowicznie zapełniona podpowłoka 3d⁵ (Cr) albo całkowicie zapełniona 3d¹⁰ (Cu). Takie konfiguracje są energetycznie korzystniejsze, bo elektrony w podpowłoce o jednakowej energii rozkładają się równomiernie i wzajemnie odpychają mniej.
+**Dlaczego Cr i Cu są wyjątkami?** Zamiast [Ar] 4s² 3d⁴ (Cr) i [Ar] 4s² 3d⁹ (Cu) atomy przechodzą jeden elektron z 4s na 3d. Powstaje wtedy połowicznie zapełniona podpowłoka 3d⁵ (Cr) albo całkowicie zapełniona 3d¹⁰ (Cu). Takie konfiguracje są energetycznie korzystniejsze, bo elektrony w podpowłoce o jednakowej energii rozkładają się równomiernie i wzajemnie odpychają mniej. To szkolne wyjaśnienie jest skrótem, a nie pełną regułą przewidującą wszystkie konfiguracje.
+
+**Jony metali przejściowych.** Najpierw zapełnia się 4s, ale przy tworzeniu kationu elektrony usuwa się najpierw z 4s: Fe: [Ar] 4s² 3d⁶; Fe²⁺: [Ar] 3d⁶; Fe³⁺: [Ar] 3d⁵.
 
 ### 5. Jony — jak powstają i jak je zapisywać
 

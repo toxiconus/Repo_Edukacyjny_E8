@@ -37,7 +37,7 @@ W tej lekcji poznasz podstawy dziedziczenia cech. Dowiesz się, jak geny przecho
 
 ### 1. Podstawowe pojęcia
 
-**Gen** — fragment DNA zawierający informację o produkcie (najczęściej białku) wpływającym na cechę organizmu, na przykład kolor kwiatu, kształt nasion czy grupę krwi. Fenotyp zależy też od środowiska, więc sam gen nie przesądza o wszystkim. Geny leżą na chromosomach w określonym miejscu zwanym **locus**.
+**Gen** — odcinek DNA zawierający informację potrzebną do powstania określonego produktu (najczęściej białka) lub funkcjonalnego RNA. Działanie genu wpływa na cechę, na przykład kolor kwiatu, kształt nasion czy grupę krwi, ale fenotyp zależy także od innych genów i od środowiska. Geny leżą na chromosomach w określonym miejscu zwanym **locus**.
 
 **Allel** — wariant tego samego genu. Dla genu barwy nasion grochu Mendel miał dwa allele: **A** (żółte nasiona) i **a** (zielone nasiona).
 
@@ -56,7 +56,7 @@ Organizmy, które mają dwa zestawy chromosomów (diploidalne, np. człowiek i g
 
 ### 2. Dominacja i recesywność
 
-**Allel dominujący** ujawnia się w fenotypie, gdy występuje w jednej lub dwóch kopiach. Zapisujemy go wielką literą (A).
+**Allel dominujący** w modelu pełnej dominacji ujawnia się w fenotypie już wtedy, gdy występuje w jednej kopii (w heterozygocie). Nie oznacza to, że jest silniejszy ani częstszy w populacji. Zapisujemy go wielką literą (A). Wielka i mała litera to umowa przyjęta w zadaniu; w rzeczywistych opisach genów stosuje się także inne symbole.
 
 **Allel recesywny** ujawnia się tylko wtedy, gdy oba allele są recesywne. Zapisujemy go małą literą (a).
 
@@ -83,7 +83,7 @@ Klasyczne doświadczenie Mendla z grochem:
 **Gregor Mendel** (1822–1884) był zakonnikiem i botanikiem w klasztorze w Brnie. Hodował groch w latach 1856–1863, krzyżując blisko 30 000 roślin; wyniki przedstawił w 1865 r. Wyniki opublikował w 1866 r., ale przez kolejne ok. 35 lat nie zostały docenione. Dopiero w 1900 r. kilku botaników niezależnie je potwierdziło.
 :::
 
-### 4. Pierwsze prawo Mendla — jednorodność F1
+### 4. Pierwsze prawo Mendla — jednorodność F1 (prawo czystości gamet)
 
 Krzyżówka dwóch czystych linii (AA × aa) daje F1, w której wszystkie potomki są heterozygotami Aa i mają fenotyp dominujący.
 
@@ -92,11 +92,11 @@ Krzyżówka dwóch czystych linii (AA × aa) daje F1, w której wszystkie potomk
 | gamety | A | | a |
 | F1 | Aa (żółte) — 100% | | |
 
-Gameta to komórka rozrodcza (jajo lub plemnik), która niesie jeden allel danego genu. Każdy rodzic przekazuje dziecku jedną gametę.
+Gameta to komórka rozrodcza (jajo lub plemnik), która niesie jeden allel danego genu. Każdy rodzic przekazuje dziecku jedną gametę. Podczas tworzenia gamet allele jednej pary rozdzielają się, więc każda gameta otrzymuje tylko jeden z nich — stąd nazwa prawo czystości gamet.
 
 ### 5. Drugie prawo Mendla — rozszczepienie 3 : 1
 
-Krzyżówka F1 × F1 (Aa × Aa) daje F2 w stosunku fenotypów **3 : 1** i w stosunku genotypów **1 : 2 : 1**.
+Krzyżówka F1 × F1 (Aa × Aa) daje F2 w stosunku fenotypów **3 : 1** i w stosunku genotypów **1 : 2 : 1**. Stosunek 3 : 1 dotyczy krzyżówki jednogenowej przy pełnej dominacji.
 
 **Szachownica Punnetta dla Aa × Aa:**
 
@@ -138,8 +138,10 @@ Opis szachownicy: tabelka 4×4. Pola z co najmniej jedną dużą literą A i co 
 
 **Stosunek fenotypów F2: 9 : 3 : 3 : 1.**
 
+Stosunek 9 : 3 : 3 : 1 nie jest uniwersalny. Otrzymamy go tylko wtedy, gdy geny dziedziczą się niezależnie, każdy gen ma dwa allele, występuje pełna dominacja, rodzice są heterozygotami AaBb i analizujemy dostatecznie dużą liczbę potomków. Przy sprzężeniu genów, dominacji niepełnej, kodominacji lub małej liczbie potomków stosunek może być inny.
+
 ::: mnemonik
-**9 : 3 : 3 : 1** — dziewięć dużych, po trzy mieszane z każdej strony, jeden mały. Dwie niezależne cechy dają iloczyn 3 × 3 = 9 kombinacji dla dominacji w obu.
+**9 : 3 : 3 : 1** — dziewięć osobników z dominacją obu cech, po trzy z dominacją jednej cechy, jeden z obiema cechami recesywnymi. Dwie niezależne cechy dają iloczyn 3 × 3 = 9 kombinacji dla dominacji w obu.
 :::
 
 ### 8. Prawdopodobieństwo a stosunek liczbowy
@@ -180,9 +182,9 @@ Drzewo genealogiczne (rodowód) pokazuje dziedziczenie cechy w rodzinie.
 
 **Wnioski podstawowe:**
 - Dwoje zdrowych rodziców ma dziecko z cechą recesywną → oboje są heterozygotami (nosicielami).
-- Rodzic z cechą dominującą ma dziecko bez cechy → rodzic jest heterozygotą (Aa), bo homozygota dałaby cechę wszystkim potomkom.
+- Jeśli przyjmujemy prosty model autosomalnej pełnej dominacji, a rodzic z fenotypem dominującym ma dziecko z fenotypem recesywnym, ten rodzic musi być heterozygotą Aa. Drugi rodzic musi przekazać allel recesywny, więc ma genotyp Aa albo aa.
 
-**Cechy sprzężone z płcią** — tylko wzmianka. Daltonizm i hemofilia są recesywne i leżą na chromosomie X. Kobieta (XX) potrzebuje dwóch recesywnych alleli, by mieć cechę. Mężczyzna (XY) ma jeden chromosom X, więc wystarczy jeden allel recesywny.
+**Cechy sprzężone z płcią** — tylko wzmianka. Daltonizm i hemofilia są recesywne i leżą na chromosomie X. Dla recesywnej cechy sprzężonej z X kobieta zwykle ma fenotyp tej cechy przy genotypie X^aX^a, a mężczyzna przy genotypie X^aY. Mężczyzna jest hemizygotą: ma tylko jedną kopię genu z chromosomu X, więc jeden allel recesywny wystarcza.
 
 ### 11. Dane doświadczalne Mendla (groch)
 
@@ -200,7 +202,7 @@ Liczby z doświadczeń Mendla zgodne z tabelą 2-1 podręcznika Griffithsa (Macm
 
 Wszystkie siedem wierszy potwierdzono w tabeli 2-1 podręcznika Griffithsa (Macmillan). Pierwsze cztery są też w opracowaniu Uniwersytetu Waszyngtońskiego (faculty.washington.edu/eathomp/Genetics).
 
-Wszystkie stosunki są bliskie 3 : 1, co potwierdza drugie prawo Mendla.
+Wyniki są zbliżone do stosunku 3 : 1, ale same dane nie „potwierdzają” automatycznie prawa. W analizie naukowej trzeba uwzględnić wielkość próby i odchylenia losowe oraz użyć odpowiedniego testu statystycznego.
 
 ---
 
@@ -384,9 +386,24 @@ Przed sprawdzianem lub zawodami sprawdź, czy umiesz:
 
 ---
 
+
+### 12. Rozszerzenia: prawdopodobieństwo, dominacja niepełna i sprzężenie
+
+**Gamety i zapłodnienie.** Organizm diploidalny ma dwa allele danego genu, ale gameta jest haploidalna i ma tylko jeden allel. Podczas zapłodnienia łączą się gamety matki i ojca, więc zygota znów ma dwa allele.
+
+**Prawdopodobieństwo kolejnych dzieci.** Dla krzyżówki Aa × Aa każde dziecko to osobne zdarzenie: prawdopodobieństwo aa wynosi zawsze 1/4 (25%), niezależnie od tego, ile dzieci już jest. Dla konkretnej kolejności czworga dzieci z fenotypem dominującym: (3/4)⁴ = 81/256 ≈ 31,6%. Jeśli pytamy o dokładnie troje z czworga, liczymy cztery kolejności: C(4,3)·(3/4)³·(1/4) = 108/256 ≈ 42,2%.
+
+**Dominacja niepełna.** Heterozygota ma fenotyp pośredni, np. czerwony kwiat × biały kwiat daje różowe potomstwo.
+
+**Kodominacja.** Oba allele ujawniają się jednocześnie, np. genotyp I^A I^B daje grupę krwi AB. Nie stosujemy wtedy automatycznie stosunku 3 : 1.
+
+**Sprzężenie genów.** Geny leżące na tym samym chromosomie często dziedziczą się razem. Wtedy klasyczny stosunek 9 : 3 : 3 : 1 może nie wystąpić.
+
+**Zastrzeżenie do zadania z dwojgiem zdrowych rodziców.** Przyjmujemy, że cecha jest autosomalna i recesywna oraz że nie występują inne mechanizmy dziedziczenia; bez tego założenia wniosek o genotypach nie jest uniwersalny.
+
 ## Do potwierdzenia przed publikacją
 
-1. Dane liczbowe Mendla: wszystkie siedem wierszy potwierdzono (Griffiths, tab. 2-1).
+1. Dane liczbowe Mendla: wszystkie siedem wierszy potwierdzono w: Griffiths i in., *An Introduction to Genetic Analysis*, 11. wyd., Macmillan, tab. 2-1.
 2. Lata doświadczeń (1856–1863) i liczba roślin (blisko 30 000) potwierdzone wg OpenStax/ASU — sprawdzone.
 3. Czy na etapie wojewódzkim wymagane są cechy sprzężone z płcią, czy tylko wzmianka?
 4. Czy dominacja niepełna i kodominacja są w zakresie? Lekcja podaje je jako ciekawostkę.
