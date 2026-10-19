@@ -83,6 +83,9 @@ Brak strzałki to utrata punktu.
 
 ## Sześć doświadczeń
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; krótkie kroki, przy poważnym urazie wołamy nauczyciela.
+
 ### Doświadczenie 1. Spalanie magnezu
 
 **Przyrządy:** szczypce żaroodporne, palnik Bunsena (lub łuczywo), porcelanowa czasza, okulary ochronne.

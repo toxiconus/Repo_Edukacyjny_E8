@@ -53,3 +53,4 @@ Start każdej sesji: `CLAUDE.md` w katalogu głównym, potem ten plik, potem tyl
 ## Stan 2026-10-19 (klocki)
 - Wykonane: S1 konfiguracje (`konfiguracje`), kalkulator mola (`kalkulator-mola`), S2 trójkąt przeliczeń w C2m, S6 wzory 2D w C1c, `probowki-wybor` (X04, J03, C1c, C4), opcja `kat` w `probowki-odczyn`.
 - Zostaje: S3/S7 Mendel, S4 migracja stylu dużych plików, S5 wspólna probówka z `naczynia/testTube`, S8 jeden mechanizm animacji.
+- Wykonane też: `krzyzowka-mendla` (S3; dihybryda 4×4 w opcji `krzyzowki`), `karta-bhp` (w C4). Zostaje: wstawienie Mendla do lekcji biologii (L017 i dihybryda) — builder bio (`biologia/bio/narzedzia/md2html_bio.py`) nie obsługuje jeszcze `@klocek`, trzeba przenieść wsparcie z `tools/md2html.py` (klocek_line, klocki_js, klocki_css), S5, S8, S4.

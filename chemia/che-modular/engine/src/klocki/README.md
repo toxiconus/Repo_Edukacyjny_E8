@@ -34,6 +34,8 @@ W md wstawia się go linią `@klocek nazwa {opcja="wartość"} | Podpis`, a pod 
 | `probowki-wybor` | probowki_wybor.js | Kilka probówek naraz + chipy wyboru metalu/odczynnika, równania pod spodem (autostart) | `zestaw` (metale-hcl, stracanie, kwas-weglan), `wybrane` (lista kluczy), `kat`, `max` (4) |
 | `konfiguracje` | konfiguracje.js | Konfiguracja elektronowa Z ≤ 36: suwak, pudełka orbitali, powłoki K–N, zapis pełny/skrócony | `z` (19), `max` (36) |
 | `kalkulator-mola` | kalkulator_mola.js | m, n, M, N, V gazu dla wybranej substancji | `subst` (0–4) |
+| `krzyzowka-mendla` | krzyzowka_mendla.js | Szachownica Punnetta: jedna cecha i dihybryda 4×4 (9:3:3:1), odsłanianie pól | `krzyzowki` (AA×aa,Aa×Aa,…), `start`, `cechy` |
+| `karta-bhp` | karta_bhp.js | Rozwijane karty BHP i pierwszej pomocy | `otwarte` (0) |
 | `krzywe-rozpuszczalnosci` | krzywe_rozpuszczalnosci.js | Krzywe rozpuszczalności g/100 g wody od T; strefy nasycenia | `subst` (KNO3,NaCl,NH4Cl), `T` (40), `m` (null), `strefy` (1) |
 | `palenie`, `palniki`, `plomien`, `probowki`, `zlewka`, `metal-woda`, `uklad-okresowy`, `znaki` | odpowiednie pliki | Chemia nieorganiczna | zob. nagłówek pliku |
 

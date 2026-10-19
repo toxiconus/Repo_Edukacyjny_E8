@@ -27,7 +27,9 @@
   "c2d_prosta.js": "prosty renderer wzorów 2D (z molekula_prosta): wszystkie atomy, zygzak, ramki grup; domyślny dla wzor-2d",
   "probowki_wybor.js": "Wybór metali/odczynników: kilka probówek naraz z równaniami (zestawy: metale-hcl, stracanie, kwas-weglan)",
   "konfiguracje.js": "Konfiguracje elektronowe Z ≤ 36: suwak, pudełka orbitali, powłoki K–N, zapis pełny i skrócony",
-  "kalkulator_mola.js": "Kalkulator mola: m, n, M, N, V gazu dla dowolnej substancji"
+  "kalkulator_mola.js": "Kalkulator mola: m, n, M, N, V gazu dla dowolnej substancji",
+  "krzyzowka_mendla.js": "Szachownica Punnetta: jedna cecha i dihybryda 4×4, stosunek genotypów i fenotypów",
+  "karta_bhp.js": "Karta BHP: zasady pracy w pracowni i pierwsza pomoc (rozwijane karty)"
  },
  "lekcje": {
   "P01": [
@@ -199,7 +201,13 @@
    "klocki.js",
    "pomocnicze.js",
    "probowki_odczyn.js",
-   "probowki_wybor.js"
+   "probowki_wybor.js",
+   "karta_bhp.js"
+  ],
+  "BIO-GENETYKA": [
+   "klocki.js",
+   "pomocnicze.js",
+   "krzyzowka_mendla.js"
   ]
  },
  "css": [
