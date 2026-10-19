@@ -88,3 +88,7 @@ Lekcje (klocki / modele `@model` / `@zlewka` dziś): C1c konfiguracje 1/0/0; C1c
 | nazwa | lekcja | po co |
 |---|---|---|
 | animacja-estryfikacji | ORG06 | cząsteczki kwasu i alkoholu łączą się w ester + H₂O (opcjonalnie) |
+| diagram-bohra | C1c konfiguracje (sekcja 7) | Opis schematu modelu Bohra (Na, Cl: kółka K–M z kropkami) stoi w tekście, a rysunku w lekcji nie ma. Nowy komponent: powłoki K–N z liczbą elektronów i przełącznikiem Z |
+
+## Przegląd H9 (log)
+- 2026-10-19 C1c konfiguracje: 1 klocek (`konfiguracje`, Z=19) — wystarcza. Dopisano do planu `diagram-bohra` (sekcja 7 opisuje rysunek, którego brak).
