@@ -55,6 +55,9 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 ## GFX i modele
 - Najpierw istniejące animacje, modele i zlewki (`chemia/che-modular/KATALOG_WIZUALIZACJI.md` — jeden katalog: modele i gfx z użyciem w lekcjach i statusem; oceny w `engine/registry/katalog_oceny.json`; szczegóły: `engine/src/gfx/KATALOG.md` i `KATALOG_MODELI.md` — pracownie z rozszerzeń) — rozszerzamy je i ulepszamy. Brakujący element (naczynie, przyrząd, przedmiot, efekt) budujemy od podstaw jako komponent wielokrotnego użytku (`engine/src/lekcja/rozszerzenia.js` albo plik w `engine/src/gfx/<przedmiot>/<rodzaj>/`) + wpis w katalogu, nie jednorazowo w lekcji.
 
+## Styl rysunków (jeden dla wszystkich przedmiotów)
+- Każdy nowy rysunek/model: kolory i linie z `CHE.GFX.STYL` (`chemia/che-modular/engine/src/gfx/wspolne/styl/styl-tokeny.js`), zasady w `chemia/che-modular/STYL_WIZUALIZACJI.md`; kolory substancji realistyczne z `CHE.COLORS`. Kontrola: `python3 chemia/che-modular/tools/styl_sprawdz.py` (raport `STYL_RAPORT.md`).
+
 ## Plany kursu
 - Spis kursu (kanon v0.3, 113 lekcji): `chemia/plany/CHE_SPIS_TRESCI.md` (generowany: `cd chemia && python3 plany/narzedzia/spis_tresci.py`, dane w `plany/narzedzia/kanon_dane.py`). Materiał wstępny lekcji: `chemia/lekcje_md/<grupa>/` — czytać tylko sekcję potrzebnej lekcji.
 
