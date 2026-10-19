@@ -87,6 +87,9 @@ Uwaga: stężony kwas siarkowy(VI) i kwas azotowy(V) są kwasami utleniającymi.
 @model kw-szereg-metali-v01 | Szereg aktywności: metale w kwasie solnym | Silnik CHE · otwiera się w oknie
 @opis Cztery probówki z kwasem solnym i metalami Mg, Zn, Fe, Cu obok siebie: magnez reaguje najgwałtowniej, cynk wyraźnie, żelazo powoli, miedź wcale (brak pęcherzyków). Pod probówkami równania reakcji. Wniosek: z kwasów wodór wypierają tylko metale aktywniejsze od wodoru — szereg aktywności Mg > Zn > Fe > (H) > Cu.
 
+@klocek probowki-wybor {zestaw="metale-hcl" wybrane="Mg,Zn,Cu"} | Wybierz metale: które reagują z HCl i co powstaje
+@opis Trzy probówki z kwasem solnym obok siebie i przyciski z nazwami metali (Mg, Zn, Fe, Cu): wybrany metal zastępuje poprzedni. W probówkach z magnezem, cynkiem i żelazem unoszą się pęcherzyki wodoru, a z żelazem roztwór żółknie lekko na zielono (Fe²⁺); w probówce z miedzią nic się nie dzieje. Pod probówkami widać równanie jonowe skrócone każdej reakcji albo informację o braku reakcji.
+
 ### 5. Reakcje z wodą — tylko najbardziej aktywne metale
 
 | Metal | Z wodą | Reakcja |

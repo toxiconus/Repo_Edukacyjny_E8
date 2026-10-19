@@ -112,6 +112,9 @@ Związki ołowiu są toksyczne. Doświadczenie wykonuje się w rękawicach i z z
 @model rownania-jonowe-v01 | Równania jonowe: wybierz reakcję i zobacz trzy zapisy | Silnik CHE · otwiera się w oknie
 @opis Wybierasz reakcję (zobojętnianie, strącanie osadów, węglany, metale z kwasami); model pokazuje ten sam proces jako równanie cząsteczkowe, jonowe pełne i jonowe skrócone, a obok animację w probówce. W zapisie jonowym osad (↓), gaz (↑) i woda są zapisane cząsteczkowo, a jony widzowe występują po obu stronach i są pomijane w zapisie skróconym. Wniosek: zapis skrócony pokazuje, co faktycznie reaguje.
 
+@klocek probowki-wybor {zestaw="stracanie" wybrane="AgCl,BaSO4,CuOH2"} | Wybierz parę jonów i zobacz osad
+@opis Trzy probówki z bezbarwnym lub barwnym roztworem; po dodaniu odczynnika tworzy się osad opadający na dno: biały AgCl i BaSO₄, niebieski Cu(OH)₂, rdzawobrunatny Fe(OH)₃ albo biały CaCO₃. Przyciski pozwalają zmienić zestaw. Pod probówkami jest równanie jonowe skrócone: zawiera tylko jony, które tworzą osad.
+
 ### 7. Kiedy zachodzi reakcja wymiany?
 
 Reakcja wymiany zachodzi, gdy powstaje coś, co opuszcza roztwór:

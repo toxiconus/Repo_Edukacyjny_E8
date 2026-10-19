@@ -89,6 +89,9 @@ $$N = n \cdot N_A$$
 
 $$V = n \cdot 22{,}4\ \text{dm}^3/\text{mol}$$
 
+@klocek trojkat-przeliczen {wzor="mol"} | Trójkąt: m, n, M
+@opis Trójkąt z trzema polami: masa m u góry, liczba moli n i masa molowa M na dole; zasłonięcie jednej wielkości pokazuje, jak ją obliczyć: m = n · M, n = m / M, M = m / n.
+
 ### 4. Przykłady przeliczeń
 
 **Przykład 1 — masa na mole.** Ile moli magnezu jest w 48 g?
@@ -145,6 +148,9 @@ Współczynniki w równaniu reakcji określają **stosunek liczby moli** substra
 ### 7. Prawo Avogadra i objętość molowa
 
 Z prawa Avogadra wynika, że 1 mol dowolnego gazu w warunkach normalnych zajmuje **22,4 dm³** — niezależnie od tego, czy to H₂, O₂, CO₂ czy N₂.
+
+@klocek trojkat-przeliczen {wzor="gaz"} | Trójkąt: V, n, Vm
+@opis Trójkąt dla gazu w warunkach normalnych (0 °C, 1013 hPa): objętość V u góry, liczba moli n i objętość molowa 22,4 dm³/mol na dole; V = n · 22,4, n = V / 22,4.
 
 ::: ciekawostka
 W warunkach standardowych (25 °C, 1000 hPa) objętość molowa wynosi ok. 24,8 dm³/mol. Według IUPAC z 1982 r. (0 °C, 1 bar) jest to 22,71 dm³/mol, a w tej lekcji stosujemy klasyczne warunki normalne 0 °C, 1013 hPa i wartość 22,4 dm³/mol.

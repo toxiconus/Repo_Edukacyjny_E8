@@ -69,6 +69,15 @@ Wodorki niemetali zachowują się w wodzie różnie:
 @model n05-trendy-v01 | Temperatury wrzenia wodorków grup 14–17 | wiązania wodorowe: H₂O, HF i NH₃ wrą „za wysoko”
 @opis Wykres temperatur wrzenia wodorków grup 14–17 w okresach 2–5 (pod ciśnieniem 1013 hPa), z możliwością włączania grup. W każdej grupie temperatura wrzenia rośnie z masą cząsteczki, z wyjątkiem NH₃, H₂O i HF, które leżą wyraźnie wyżej. Wniosek: wiązania wodorowe między cząsteczkami podnoszą temperaturę wrzenia.
 
+@klocek wzor-2d {smiles="O" grupa="none"} | H₂O
+@opis Wzór strukturalny wody: atom tlenu z dwoma atomami wodoru, cząsteczka kątowa.
+
+@klocek wzor-2d {smiles="N" grupa="none"} | NH₃
+@opis Wzór strukturalny amoniaku: atom azotu z trzema atomami wodoru i wolną parą elektronową.
+
+@klocek wzor-2d {smiles="C" grupa="none"} | CH₄
+@opis Wzór strukturalny metanu: atom węgla z czterema atomami wodoru.
+
 ### 3. Otrzymywanie wodorków
 
 #### a) Chlorowodór HCl

@@ -8,7 +8,8 @@
 (function () {
   var KOL = {
     bezbarwny: '#e0f2fe', pomaranczowy: '#f97316', mleczny: '#cbd5e1', niebieski: '#60a5fa',
-    szafirowy: '#1e3a8a', bialy: '#f8fafc', fioletowy: '#7e22ce', zielony: '#16a34a'
+    szafirowy: '#1e3a8a', bialy: '#f1f5f9', fioletowy: '#7e22ce', zielony: '#16a34a',
+    zolty: '#facc15', brazowy: '#b45309', jasnozielony: '#bbf7d0', blekitny: '#93c5fd'
   };
   function hex(h) { var n = parseInt(h.slice(1), 16); return [n >> 16 & 255, n >> 8 & 255, n & 255]; }
   function mieszaj(a, b, k) {
@@ -37,7 +38,9 @@
     rysuj: function (x, w, h, s, t, opc) {
       var tuby = probowki(opc.tuby);
       var n = tuby.length;
-      x.fillStyle = '#ffffff'; x.fillRect(0, 0, w, h);
+      x.clearRect(0, 0, w, h);                       // tło przezroczyste: pasuje do jasnego i ciemnego motywu
+      var tekst = '#0f172a';
+      try { tekst = getComputedStyle(x.canvas).color || tekst; } catch (e) { }
       if (!n) return;
       var cykl = t % 7;
       var p = sm((cykl - 2) / 1.5);                 // 0 = przed, 1 = po
@@ -46,10 +49,12 @@
       var top = 30, bot = h - 62, x0 = (w - (n * tw + (n - 1) * gap)) / 2;
       x.textAlign = 'center'; x.textBaseline = 'middle';
 
+      x.fillStyle = tekst; x.globalAlpha = 0.7; x.font = '600 11px system-ui, sans-serif'; x.textAlign = 'left';
+      x.fillText(p < 0.5 ? 'PRZED' : 'PO', 8, 12); x.globalAlpha = 1; x.textAlign = 'center';
       tuby.forEach(function (tb, i) {
         var X = x0 + i * (tw + gap), rr = tw / 2;
         var lvl = bot - (bot - top) * 0.6;
-        var barwa = mieszaj(kol(tb.przed), kol(tb.po), p);
+        var barwa = mieszaj(kol(tb.przed), kol(tb.po), tb.efekt === 'osad' ? p * 0.35 : p);   // przy osadzie ciecz tylko lekko mętnieje
         var pozostaje = (tb.efekt === 'osad' && p > 0.6) ? 0.9 : 0.85;
         var ang = (Number(opc.kat) || 0) * Math.PI / 180;   // pochylenie probówki (np. 45 przy ogrzewaniu)
         x.save();
@@ -80,9 +85,17 @@
             var fr = Math.min(1, Math.max(0, p * 1.4 - (k % 4) * 0.08));
             var yy = (lvl + 8) + (bot - 12 - (k % 3) * 3 - (lvl + 8)) * fr;
             x.globalAlpha = 0.9;
-            x.beginPath(); x.arc(px, yy, 2.2, 0, 2 * Math.PI); x.fill();
+            x.beginPath(); x.arc(px, yy, 2.4, 0, 2 * Math.PI); x.fill(); x.strokeStyle = 'rgba(100,116,139,.6)'; x.lineWidth = 0.8; x.stroke();
           }
           x.globalAlpha = 1;
+        }
+
+        if (tb.efekt === 'osad' && p > 0.5) {          // zalegający osad: warstwa rośnie w miarę opadania cząstek
+          x.save(); korpus(); x.clip();
+          x.globalAlpha = 0.9 * Math.min(1, (p - 0.5) * 2); x.fillStyle = kol(tb.po);
+          x.fillRect(X - 2, bot - 10 * Math.min(1, (p - 0.5) * 2), tw + 4, 14);
+          x.strokeStyle = 'rgba(100,116,139,.55)'; x.lineWidth = 1; x.beginPath(); x.moveTo(X, bot - 10 * Math.min(1, (p - 0.5) * 2)); x.lineTo(X + tw, bot - 10 * Math.min(1, (p - 0.5) * 2)); x.stroke();
+          x.restore();
         }
 
         // pęcherzyki gazu unoszące się po reakcji
@@ -101,7 +114,7 @@
         x.restore();
 
         // podpis
-        x.fillStyle = '#0f172a'; x.font = '12px system-ui, sans-serif';
+        x.fillStyle = tekst; x.font = '12px system-ui, sans-serif';
         x.fillText(indeksy(tb.etyk), X + rr, bot + 22);
       });
     }

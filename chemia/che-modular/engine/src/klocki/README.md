@@ -30,7 +30,8 @@ W md wstawia się go linią `@klocek nazwa {opcja="wartość"} | Podpis`, a pod 
 | `molekula-2d` | molekula_2d.js | Model 2D kilku gotowych cząsteczek (SVG) | `mol`, `grupa`, `kwas` |
 | `lancuch-przemian` | lancuch_przemian.js | Schemat przemian: wzory połączone strzałkami z literami reakcji | `wezly` (Ca,CaO,Ca(OH)2,CaCO3), `etyk` (A,B,C), `zamkniety` (0) |
 | `trojkat-przeliczen` | trojkat_przeliczen.js | Trójkąt konwersji m–n–N / m–n–V ze strzałkami ÷/× | `wzor` (mol) |
-| `probowki-odczyn` | probowki_odczyn.js | Probówki przed/po odczynniku (barwa, osad, gaz) | `tuby` (format: `nazwa:kolor_przed:kolor_po:efekt`, po przecinku) |
+| `probowki-odczyn` | probowki_odczyn.js | Probówki przed/po odczynniku (barwa, osad, gaz) | `tuby` (format: `nazwa:kolor_przed:kolor_po:efekt`, po przecinku), `kat` (pochylenie, np. 45 przy ogrzewaniu) |
+| `probowki-wybor` | probowki_wybor.js | Kilka probówek naraz + chipy wyboru metalu/odczynnika, równania pod spodem (autostart) | `zestaw` (metale-hcl, stracanie, kwas-weglan), `wybrane` (lista kluczy), `kat`, `max` (4) |
 | `krzywe-rozpuszczalnosci` | krzywe_rozpuszczalnosci.js | Krzywe rozpuszczalności g/100 g wody od T; strefy nasycenia | `subst` (KNO3,NaCl,NH4Cl), `T` (40), `m` (null), `strefy` (1) |
 | `palenie`, `palniki`, `plomien`, `probowki`, `zlewka`, `metal-woda`, `uklad-okresowy`, `znaki` | odpowiednie pliki | Chemia nieorganiczna | zob. nagłówek pliku |
 

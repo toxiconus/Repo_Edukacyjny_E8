@@ -41,7 +41,8 @@ def klocki_js(kod):
             "Object.keys(o).forEach(function(k){if(o[k]!==''&&!isNaN(Number(o[k])))o[k]=Number(o[k])});"
             "KLOCKI.montuj(f.querySelector('.lk-fig-body'),f.getAttribute('data-klocek'),o)})};"
             "if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go()})();")
-    return ''.join(_rd(os.path.join(KLOCKI_DIR, f)) + '\n' for f in pliki) + boot + '\n'
+    # w własnym zakresie: pomocnicze.js (sm, el, clamp…) nie może kolidować z nazwami w kodzie lekcji (jedno wspólne (0,eval))
+    return '(function(){\n' + ''.join(_rd(os.path.join(KLOCKI_DIR, f)) + '\n' for f in pliki) + boot + '\n})();\n'
 
 BLOCK_TAGS = set('div section article aside details summary figure figcaption table thead tbody tfoot tr td th ul ol li dl dt dd '
                  'p h1 h2 h3 h4 h5 h6 pre blockquote nav header footer main form fieldset hr svg canvas iframe video audio '

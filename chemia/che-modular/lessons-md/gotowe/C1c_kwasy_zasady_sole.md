@@ -36,6 +36,12 @@ W tej lekcji poznasz metody otrzymywania **kwasów, wodorotlenków i soli**. Ka�
 
 **Kwasy tlenowe** zawierają tlen (H₂SO₄, HNO₃, H₂CO₃, H₃PO₄). **Kwasy beztlenowe** nie zawierają tlenu (HCl, HBr, HI, H₂S).
 
+@klocek wzor-2d {smiles="OS(=O)(=O)O" grupa="none"} | H₂SO₄: wzór strukturalny
+@opis Wzór strukturalny kwasu siarkowego(VI): atom siarki w środku, dwa wiązania podwójne z tlenem i dwie grupy –OH z atomami wodoru, które mogą się odszczepić jako H⁺.
+
+@klocek wzor-2d {smiles="OP(=O)(O)O" grupa="none"} | H₃PO₄: wzór strukturalny
+@opis Wzór strukturalny kwasu fosforowego(V): atom fosforu w środku, jedno wiązanie podwójne z tlenem i trzy grupy –OH; trzy atomy wodoru kwasowego, więc kwas jest trójprotonowy.
+
 #### Metoda 1: tlenek niemetalu + woda
 
 $$\text{SO}_3 + \text{H}_2\text{O} \rightarrow \text{H}_2\text{SO}_4$$
@@ -177,6 +183,9 @@ $$\text{Na}_2\text{CO}_3 + 2\,\text{HCl} \rightarrow 2\,\text{NaCl} + \text{H}_2
 - cząsteczkowa: Na₂CO₃ + 2 HCl → 2 NaCl + H₂O + CO₂↑
 - jonowa pełna: 2 Na⁺ + CO₃²⁻ + 2 H⁺ + 2 Cl⁻ → 2 Na⁺ + 2 Cl⁻ + H₂O + CO₂↑
 - jonowa skrócona: **CO₃²⁻ + 2 H⁺ → H₂O + CO₂↑**
+
+@klocek probowki-wybor {zestaw="kwas-weglan"} | Węglan + HCl: wydziela się CO₂
+@opis Dwie probówki z kwasem solnym i węglanem (sodu albo wapnia): w obu unoszą się pęcherzyki gazu CO₂. Pod probówkami widać równanie jonowe skrócone; w przypadku CaCO₃ węglan jest nierozpuszczalny, więc zapisany jest w całości.
 
 #### Przykład 2: siarczyn + kwas solny
 
