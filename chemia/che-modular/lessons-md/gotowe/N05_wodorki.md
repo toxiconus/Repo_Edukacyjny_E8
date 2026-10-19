@@ -311,6 +311,9 @@ $$ LiH + H₂O → LiOH + H₂↑
 **Wzór reakcji:** wodorek metalu + woda → wodorotlenek metalu + wodór. Obserwacje: wydziela się bezbarwny gaz (zapalony daje charakterystyczny „pyk”), roztwór z fenoloftaleiną malinowieje, naczynie się ogrzewa.
 :::
 
+@klocek bilans-rownania {rownanie="CaH2 + H2O -> Ca(OH)2 + H2" przyklady="CaH2 + H2O -> Ca(OH)2 + H2; LiH + H2O -> LiOH + H2"} | Bilans atomów: wodorek wapnia i woda
+@opis Tabela bilansu atomów reakcji CaH₂ + H₂O → Ca(OH)₂ + H₂: w kolumnach liczba atomów Ca, H i O po lewej i po prawej stronie równania; współczynniki dobiera się tak, by obie kolumny się zgadzały (2 H₂O i 2 H₂). Uczeń widzi, że wodór z wodorku i wodór z wody tworzą cząsteczki H₂.
+
 ::: karta understand | To jest reakcja redoks
 W CaH₂ wodór ma **−I**, w wodzie **+I**, w H₂ — **0**. Anion H⁻ oddaje elektron (utlenia się), wodór z wody go przyjmuje (redukuje się). Oba spotykają się w cząsteczce H₂:
 
