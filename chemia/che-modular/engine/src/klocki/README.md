@@ -13,6 +13,10 @@ W md wstawia się go linią `@klocek nazwa {opcja="wartość"} | Podpis`, a pod 
 - `manifest.json` — `klocki` (plik → opis), `lekcje` (kod lekcji → lista plików JS w kolejności zależności), `css` (wspólne style, np. `lab.css`).
 - `cl`, `ss`, `paleta`, `siatka` są **lokalne** w IIFE klocków (`bilans_spalania.js`, `palnik_gazowy.js`). Nie są współdzielone; przy kopiowaniu do nowego klocka skopiuj je albo przenieś do `pomocnicze.js`.
 
+## Wspólne naczynia
+
+`naczynia.js` — jedna geometria i wygląd szkła (`KLOCKI.naczynia.probowkaPath`, `szklo`), zgodna z `gfx/chemia/naczynia/testTube.js`; używają jej `probowki` i `probowki-odczyn` (w manifeście zaraz po `pomocnicze.js`). Nowe klocki z probówką rysują ją tą funkcją.
+
 ## Dodanie nowego klocka
 
 1. Plik `klocki/moj_klocek.js` z `KLOCKI.def('moj-klocek', {...})` w IIFE.

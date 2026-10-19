@@ -32,12 +32,14 @@
   "karta_bhp.js": "Karta BHP: zasady pracy w pracowni i pierwsza pomoc (rozwijane karty)",
   "sklad_procentowy.js": "Masa cząsteczkowa i skład procentowy wg wzoru (masy jak w lekcji C1c masy)",
   "bilans_rownania.js": "Dobieranie współczynników: przyciski −/+ i tabela bilansu atomów",
-  "nadmiar_substratu.js": "Nadmiar substratu: suwaki mas, współczynniki przereagowania, paski, produkty"
+  "nadmiar_substratu.js": "Nadmiar substratu: suwaki mas, współczynniki przereagowania, paski, produkty",
+  "naczynia.js": "Wspólna geometria i wygląd szkła (probówka) dla klocków probowki, probowki-odczyn"
  },
  "lekcje": {
   "P01": [
    "klocki.js",
    "pomocnicze.js",
+   "naczynia.js",
    "dane/pierwiastki.js",
    "znaki.js",
    "probowki.js",
@@ -47,6 +49,7 @@
   "F06": [
    "klocki.js",
    "pomocnicze.js",
+   "naczynia.js",
    "dane/pierwiastki.js",
    "znaki.js",
    "probowki.js",
@@ -56,6 +59,7 @@
   "F07": [
    "klocki.js",
    "pomocnicze.js",
+   "naczynia.js",
    "dane/pierwiastki.js",
    "znaki.js",
    "probowki.js",
@@ -65,6 +69,7 @@
   "N03": [
    "klocki.js",
    "pomocnicze.js",
+   "naczynia.js",
    "dane/pierwiastki.js",
    "znaki.js",
    "probowki.js",
@@ -84,6 +89,7 @@
   "LKO-METALE": [
    "klocki.js",
    "pomocnicze.js",
+   "naczynia.js",
    "metal_woda.js",
    "lancuch_przemian.js",
    "probowki_odczyn.js"
@@ -101,6 +107,7 @@
   "LKO-ORG02": [
    "klocki.js",
    "pomocnicze.js",
+   "naczynia.js",
    "probowki_odczyn.js",
    "c2d_core.js",
    "c2d_grupy.js",
@@ -111,6 +118,7 @@
   "LKO-ORG04": [
    "klocki.js",
    "pomocnicze.js",
+   "naczynia.js",
    "probowki_odczyn.js",
    "c2d_core.js",
    "c2d_grupy.js",
@@ -121,6 +129,7 @@
   "LKO-PUŁAPKI-WAPNO": [
    "klocki.js",
    "pomocnicze.js",
+   "naczynia.js",
    "probowki_odczyn.js"
   ],
   "LKO-ORG05": [
@@ -173,18 +182,21 @@
   "X04": [
    "klocki.js",
    "pomocnicze.js",
+   "naczynia.js",
    "probowki_odczyn.js",
    "probowki_wybor.js"
   ],
   "J03": [
    "klocki.js",
    "pomocnicze.js",
+   "naczynia.js",
    "probowki_odczyn.js",
    "probowki_wybor.js"
   ],
   "C1c": [
    "klocki.js",
    "pomocnicze.js",
+   "naczynia.js",
    "probowki_odczyn.js",
    "probowki_wybor.js",
    "c2d_core.js",
@@ -204,6 +216,7 @@
   "C4": [
    "klocki.js",
    "pomocnicze.js",
+   "naczynia.js",
    "probowki_odczyn.js",
    "probowki_wybor.js",
    "karta_bhp.js"
@@ -221,6 +234,7 @@
   "C2w": [
    "klocki.js",
    "pomocnicze.js",
+   "naczynia.js",
    "probowki_odczyn.js"
   ],
   "C3": [

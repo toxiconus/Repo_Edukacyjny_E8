@@ -66,8 +66,7 @@ function Rurka(x, ox, sym, wsk) {
   }
 
   function tubePath() {
-    var l = P.cx - P.tw / 2, rr_ = P.cx + P.tw / 2;
-    x.beginPath(); x.moveTo(l, P.top); x.lineTo(l, P.bot); x.arc(P.cx, P.bot, P.tw / 2, Math.PI, 0, true); x.lineTo(rr_, P.top);
+    KLOCKI.naczynia.probowkaPath(x, P.cx, P.top, P.bot, P.tw);
   }
   function metal(mx, my, R, d, rot) {
     var g = x.createRadialGradient(mx - R * .35, my - R * .35, R * .1, mx, my, R * 1.15);

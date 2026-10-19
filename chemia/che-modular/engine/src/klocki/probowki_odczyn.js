@@ -61,12 +61,7 @@
         if (ang) { x.translate(X + rr, (top + bot) / 2); x.rotate(ang); x.translate(-(X + rr), -(top + bot) / 2); }
 
         // korpus probówki jako ścieżka (używana też do przycięcia cieczy)
-        function korpus() {
-          x.beginPath();
-          x.moveTo(X, top); x.lineTo(X, bot - rr);
-          x.arc(X + rr, bot - rr, rr, Math.PI, 0, true);
-          x.lineTo(X + tw, top);
-        }
+        function korpus() { KLOCKI.naczynia.probowkaPath(x, X + rr, top, bot - rr, tw); }
 
         // ciecz przycięta do kształtu probówki
         x.save(); korpus(); x.lineTo(X + tw - 1, top - 2); x.lineTo(X + 1, top - 2); x.closePath(); x.clip();
@@ -109,8 +104,7 @@
         }
 
         // korpus probówki (zaokrąglone dno)
-        x.strokeStyle = '#64748b'; x.lineWidth = 2;
-        korpus(); x.stroke();
+        KLOCKI.naczynia.szklo(x, X + rr, top, bot - rr, tw);
         x.restore();
 
         // podpis
