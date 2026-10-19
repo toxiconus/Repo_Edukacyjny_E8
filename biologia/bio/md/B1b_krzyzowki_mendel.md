@@ -6,7 +6,7 @@ opis: gen, allel, genotyp, fenotyp · dominacja i recesywność · pokolenia P, 
 kicker: B1b · BIOLOGIA · GENETYKA · OCENY KL. 8 · ETAP WOJEWÓDZKI
 lead: Dlaczego dzieci są podobne do rodziców, a jednocześnie każde jest inne? Odpowiedź daje genetyka klasyczna: geny występują w parach, jeden allel dziedziczysz od matki, a drugi od ojca, i to właśnie krzyżówki Mendla pozwalają przewidywać wyniki.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:OLIMPIADA WOJEWÓDZKA]]
-uwaga: Kontynuacja L010 (DNA od zera). Numeracja wg BIO_KATALOG do uzgodnienia (kolejka B1b w PRIORYTETY.md). Dane Mendla (liczby z doświadczeń grochu) — do weryfikacji z oryginalną publikacją z 1866 r.
+uwaga: Kontynuacja L010 (DNA od zera). Numeracja wg BIO_KATALOG do uzgodnienia (kolejka B1b w PRIORYTETY.md). Dane Mendla (liczby z doświadczeń grochu) zgodne z tabelą Griffithsa; lata doświadczeń do weryfikacji.
 stopka: **BIOLOGIA B1b v1.0** · Krzyżówki jednogenowe i prawa Mendla · wersja robocza po audycie W1 (2026-10-18)
 ---
 
@@ -80,7 +80,7 @@ Klasyczne doświadczenie Mendla z grochem:
 3. **F2:** z krzyżówki F1 × F1 powstaje mieszanka żółtych i zielonych nasion w stosunku 3 : 1.
 
 ::: ciekawostka
-**Gregor Mendel** (1822–1884) był zakonnikiem i botanikiem w klasztorze w Brnie. Hodował groch przez ok. 8 lat (do weryfikacji: ok. 28 000 roślin). Wyniki opublikował w 1866 r., ale przez kolejne ok. 35 lat nie zostały docenione. Dopiero w 1900 r. kilku botaników niezależnie je potwierdziło.
+**Gregor Mendel** (1822–1884) był zakonnikiem i botanikiem w klasztorze w Brnie. Hodował groch przez kilka lat (do weryfikacji: ok. 8 lat); w 1865 r. przedstawił wyniki z blisko 30 000 roślin. Wyniki opublikował w 1866 r., ale przez kolejne ok. 35 lat nie zostały docenione. Dopiero w 1900 r. kilku botaników niezależnie je potwierdziło.
 :::
 
 ### 4. Pierwsze prawo Mendla — jednorodność F1
@@ -186,19 +186,19 @@ Drzewo genealogiczne (rodowód) pokazuje dziedziczenie cechy w rodzinie.
 
 ### 11. Dane doświadczalne Mendla (groch)
 
-Liczby z doświadczeń Mendla — do weryfikacji z oryginalną publikacją z 1866 r.
+Liczby z doświadczeń Mendla zgodne z tabelą 2-1 podręcznika Griffithsa (Macmillan).
 
 | Cecha | F2 (dominująca : recesywna) | Stosunek |
 |---|---|---|
 | kolor nasion (żółty : zielony) | 6022 : 2001 | 3,01 : 1 |
 | kształt nasion (gładki : pomarszczony) | 5474 : 1850 | 2,96 : 1 |
 | kolor strąków (zielony : żółty) | 428 : 152 | 2,82 : 1 |
-| kolor kwiatów (czerwony : biały) | 705 : 224 | 3,15 : 1 |
+| kolor kwiatów (fioletowy : biały) | 705 : 224 | 3,15 : 1 |
 | kształt strąków (napęczniały : ścisnięty) | 882 : 299 | 2,95 : 1 |
 | położenie kwiatów (kątowe : szczytowe) | 651 : 207 | 3,14 : 1 |
 | długość łodygi (długa : krótka) | 787 : 277 | 2,84 : 1 |
 
-Pierwsze cztery wiersze (kolor i kształt nasion, kolor strąków, kolor kwiatów) potwierdzono w opracowaniu Uniwersytetu Waszyngtońskiego (faculty.washington.edu/eathomp/Genetics). Pozostałe trzy wiersze pochodzą z tradycyjnie cytowanych danych — do weryfikacji z oryginalną publikacją z 1866 r.
+Wszystkie siedem wierszy potwierdzono w tabeli 2-1 podręcznika Griffithsa (Macmillan). Pierwsze cztery są też w opracowaniu Uniwersytetu Waszyngtońskiego (faculty.washington.edu/eathomp/Genetics).
 
 Wszystkie stosunki są bliskie 3 : 1, co potwierdza drugie prawo Mendla.
 
@@ -386,8 +386,8 @@ Przed sprawdzianem lub zawodami sprawdź, czy umiesz:
 
 ## Do potwierdzenia przed publikacją
 
-1. Dane liczbowe Mendla: cztery pierwsze wiersze potwierdzone; trzy pozostałe — do weryfikacji z publikacją z 1866 r.
-2. Liczba roślin i lata doświadczeń Mendla (ok. 28 000 roślin, ok. 8 lat) — nie potwierdzono źródłowo; do weryfikacji.
+1. Dane liczbowe Mendla: wszystkie siedem wierszy potwierdzono (Griffiths, tab. 2-1).
+2. Lata doświadczeń Mendla (ok. 8 lat) — do weryfikacji. Liczba roślin: wg OpenStax blisko 30 000 (wyniki z 1865 r.).
 3. Czy na etapie wojewódzkim wymagane są cechy sprzężone z płcią, czy tylko wzmianka?
 4. Czy dominacja niepełna i kodominacja są w zakresie? Lekcja podaje je jako ciekawostkę.
 5. Numeracja lekcji (B1b / L011) — do uzgodnienia z BIO_KATALOG.

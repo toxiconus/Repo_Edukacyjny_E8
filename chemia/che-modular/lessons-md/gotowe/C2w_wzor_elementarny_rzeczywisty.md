@@ -6,7 +6,7 @@ opis: wzór elementarny i rzeczywisty · wyznaczanie wzoru z procentów przez mo
 kicker: C2w · OLIMPIADA · ETAP WOJEWÓDZKI
 lead: Z danych procentowych odtworzysz wzór związku. Metoda z molem prowadzi do wzoru elementarnego, a masa molowa pozwala znaleźć wzór rzeczywisty — także dla soli krystalicznych z wodą.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:OLIMPIADA WOJEWÓDZKA]]
-uwaga: Poziom 2 (wojewódzki). Rozszerza C1c (wzór najprostszy bez mola). Wartości temperatur rozkładu hydratów — do weryfikacji.
+uwaga: Poziom 2 (wojewódzki). Rozszerza C1c (wzór najprostszy bez mola). Temperatury rozkładu hydratów: CuSO₄·5H₂O ok. 200 °C, gips ok. 100–150 °C (wg Wikipedii).
 stopka: **CHEMIA C2w · Wzór elementarny, rzeczywisty i hydraty · wersja robocza po audycie W1 (2026-10-18)**
 ---
 
@@ -138,7 +138,7 @@ Kryształy CuSO₄·5H₂O są niebieskie. Woda krystalizacyjna odchodzi stopnio
 :::
 
 ::: ciekawostka
-Gips (CaSO₄·2H₂O) po ogrzaniu do ok. 150 °C traci część wody i tworzy półhydrat CaSO₄·0,5H₂O, tzw. gips palony (do weryfikacji). Po zmieszaniu z wodą wiąże ponownie i twardnieje — stąd jego zastosowanie w budownictwie i medycynie.
+Gips (CaSO₄·2H₂O) po ogrzaniu do ok. 100–150 °C traci część wody i tworzy półhydrat CaSO₄·0,5H₂O, tzw. gips palony (wg Wikipedii). Po zmieszaniu z wodą wiąże ponownie i twardnieje — stąd jego zastosowanie w budownictwie i medycynie.
 :::
 
 ### 7. Wzór hydratu z danych procentowych
@@ -301,6 +301,6 @@ Przed zawodami sprawdź, czy umiesz:
 
 1. Czy hydraty mają być w zakresie etapu wojewódzkiego? Lekcja je wprowadza z oznaczeniem poziomu.
 2. Konwencja nazewnictwa hydratów: „pięciowodny” czy „5-wodny”? Lekcja używa pierwszej formy.
-3. Temperatura utraty wody przez gips (ok. 150 °C) — do weryfikacji; dla CuSO₄·5H₂O potwierdzono ok. 200 °C (ostatnia cząsteczka wody).
+3. Temperatury utraty wody: gips ok. 100–150 °C, CuSO₄·5H₂O ok. 200 °C (ostatnia cząsteczka wody) — sprawdzone wg Wikipedii.
 4. Czy nazwy zwyczajowe (soda krystaliczna, witriol zielony, gips) są wymagane w konkursie?
 5. Czy spójność z C1c została zachowana? Wynik obu metod jest ten sam (ćw. 9).

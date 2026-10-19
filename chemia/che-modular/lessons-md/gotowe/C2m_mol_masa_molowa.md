@@ -6,7 +6,7 @@ opis: mol jako liczność · stała Avogadra · masa molowa · przeliczenia masa
 kicker: C2m · OLIMPIADA · ETAP WOJEWÓDZKI
 lead: Mol to wygodna miara liczby cząstek. Dzięki niemu masę substancji zamienisz na liczbę cząstek, a z równania reakcji odczytasz, ile moli produktu powstanie.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:OLIMPIADA WOJEWÓDZKA]]
-uwaga: Poziom 2 (wojewódzki). Nawiązuje do C1c (metoda bez mola). Warunki normalne: 0 °C, 1013 hPa — do weryfikacji z konwencją etapu.
+uwaga: Poziom 2 (wojewódzki). Nawiązuje do C1c (metoda bez mola). Warunki normalne: 0 °C, 1013 hPa; V_m = 22,4 dm³/mol (dokładnie 22,414 dm³/mol przy 101,325 kPa).
 stopka: **CHEMIA C2m · Mol i masa molowa · wersja robocza po audycie W1 (2026-10-18)**
 ---
 
@@ -144,7 +144,7 @@ Współczynniki w równaniu reakcji określają **stosunek liczby moli** substra
 Z prawa Avogadra wynika, że 1 mol dowolnego gazu w warunkach normalnych zajmuje **22,4 dm³** — niezależnie od tego, czy to H₂, O₂, CO₂ czy N₂.
 
 ::: ciekawostka
-W warunkach standardowych (25 °C, 1000 hPa) objętość molowa wynosi ok. 24,5 dm³/mol. Według IUPAC z 1982 r. (0 °C, 1 bar) jest to ok. 22,7 dm³/mol, a w tej lekcji stosujemy klasyczne warunki normalne 0 °C, 1013 hPa i wartość 22,4 dm³/mol (do weryfikacji z konwencją etapu).
+W warunkach standardowych (25 °C, 1000 hPa) objętość molowa wynosi ok. 24,8 dm³/mol. Według IUPAC z 1982 r. (0 °C, 1 bar) jest to 22,71 dm³/mol, a w tej lekcji stosujemy klasyczne warunki normalne 0 °C, 1013 hPa i wartość 22,4 dm³/mol.
 :::
 
 ### 8. Mol w wyobraźni
@@ -158,7 +158,7 @@ Wniosek dla ucznia: mol jest jednostką liczności, a każda substancja ma inną
 ## Ciekawostki i mnemotechniki
 
 ::: ciekawostka
-Liczba 6,02·10²³ jest tak duża, że gdyby liczyć jej atomy w tempie miliarda na sekundę, zajęłoby to ok. 19 milionów lat (przybliżenie; do weryfikacji).
+Liczba 6,02·10²³ jest tak duża, że gdyby liczyć jej atomy w tempie miliarda na sekundę, zajęłoby to ok. 19 milionów lat (obliczenie: 6,02·10¹⁴ s ≈ 1,9·10⁷ lat).
 :::
 
 ::: ciekawostka
@@ -313,4 +313,4 @@ Przed zawodami sprawdź, czy umiesz:
 2. Czy stała Avogadra ma być podawana jako 6,02·10²³ czy 6,022·10²³?
 3. Czy prawa gazowe (Boyle'a–Mariotte'a, Gay-Lussaca, równanie Clapeyrona) są poza zakresem? Lekcja ich nie omawia.
 4. Czy zadania z trzema lub więcej substratami są w zakresie? Lekcja podaje jeden taki przykład (ćw. 9).
-5. Wartości w ciekawostkach (np. 19 mln lat, 24,5 dm³/mol) — do weryfikacji.
+5. Wartości w ciekawostkach: 19 mln lat (obliczenie), 22,71 dm³/mol (IUPAC, 1 bar) i 24,8 dm³/mol (25 °C, 1 bar; obliczenie z V_m = RT/p) — sprawdzone.
