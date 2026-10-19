@@ -3,14 +3,25 @@
 Zasada: najpierw to, co jest **najbliżej w kalendarzu** (konkurs, sprawdzian), potem kolejność szkolna, potem warstwy olimpijskie 2–4.
 Lekcje są wspólne z kursem E8 (jeden MD) — każda nowa lekcja od razu służy ocenom i konkursowi.
 
-## 1. Terminy i zasady konkursów LKO (stan 2026-10-08)
-Pakiet 2026/27 (regulamin, terminarz, zakresy) **nie jest jeszcze opublikowany** — daty 21.10 (bio) i 23.10 (chem) pochodzą ze źródła pośredniego i są niepotwierdzone. Punkt odniesienia: oficjalny pakiet **2025/26**. Ustalenia z linkami: `zrodla/konkursy_LKO_2026_27_ustalenia.md`.
+## 1. Terminy i zasady konkursów LKO (stan 2026-10-19 — pakiet 2026/27 OFICJALNY)
+Pakiet 2026/27 dostarczony przez użytkownika 2026-10-19: terminarz, część II zakresów, załącznik 2 (wzory dokumentów) — pliki w `zrodla/LKO_2026_27_*` (PDF, DOCX, TXT). Daty 21.10 (bio) i 23.10 (chem) są **potwierdzone**.
 
-| | chemia 2025/26 | biologia 2025/26 | 2026/27 (pośrednio, niepotwierdzone) |
-|---|---|---|---|
-| etap szkolny | 20.10.2025, 60 min | 16.10.2025, 60 min | chem ~23.10, bio ~21.10 |
-| rejonowy | 26.11.2025, 90 min | 24.11.2025, 90 min | — |
-| wojewódzki | 10.02.2026, 90 min | 06.02.2026, 90 min | — |
+| | chemia 2025/26 | biologia 2025/26 | **chemia 2026/27** | **biologia 2026/27** |
+|---|---|---|---|---|
+| etap szkolny | 20.10.2025, 60 min | 16.10.2025, 60 min | **pt 23.10.2026, 9:00, 60 min** (lista do rejonu: 6.11, po 10:00) | **śr 21.10.2026, 9:00, 60 min** (lista: 6.11, po 10:00) |
+| rejonowy | 26.11.2025, 90 min | 24.11.2025, 90 min | **czw 26.11.2026, 9:00, 90 min** | **wt 24.11.2026, 9:00, 90 min** |
+| wyniki rejonu / wgląd w prace | — | — | 16.12.2026 po 10:00; prace 17–18.12 (8:00–16:00) | to samo |
+| wojewódzki | 10.02.2026, 90 min | 06.02.2026, 90 min | termin w pakiecie nie podany; lista finalistów najpóźniej 15.01.2027 | j.w. |
+
+**Co się zmieniło w zakresie chemii 2026/27 względem 2025/26** (porównanie `zrodla/LKO_2026_27_Czesc_II_zakres_wymagan.txt` z `zrodla/LKO/Zakresy_2025_2026_chemia_biologia_OCR.md`):
+- **Etap I (szkolny):** teraz podstawa pkt **I–V** (było I–VII) **plus rozszerzenia**: konfiguracje elektronowe grup 1, 2, 13–18 do Z = 36 i jonów · typy reakcji, substraty i produkty · **nowe:** ustalanie wzorów związków lub cząsteczek pierwiastków z obliczeń i wartościowości. Kwasy, wodorotlenki i sole (dawne VI–VII) przechodzą na etap II.
+- **Etap II (rejonowy):** podstawa pkt **I–VIII** (było I–VII) + rozszerzenia: wodorki niemetali · sól + sól · jonowe równania otrzymywania kwasów/wodorotlenków/soli · szereg aktywności · kwasy z soli · masy cząsteczkowe · stechiometria (także nadmiar). Konfiguracje i typy reakcji zeszły do etapu I.
+- **Etap III:** „opisane w punkcie **VII**, IX i X” (było VIII, IX, X) — prawdopodobna literówka w dokumencie (powtórzone VII); do wyjaśnienia z kuratorium lub przez porównanie z podstawą. Lista 13 rozszerzeń organicznych bez zmian.
+- Forma, kalkulator prosty, 40 pkt na etap: bez zmian.
+
+**Co się zmieniło w biologii 2026/27:** w etapie I nie ma już „tkanek roślinnych” (jest: mchy, paprociowe, nagonasienne, okrytonasienne; tkanki zwierzęce zostały). Pozostałe punkty (etap II: człowiek, skóra … homeostaza; etap III: genetyka, ewolucja, ekologia + poszerzenia: białka, transport, ATP, oddychanie komórkowe, transkrypcja/translacja, chloroplasty–mitochondria, azotowe produkty przemiany materii, protisty, porosty, widłaki i skrzypy) bez zmian.
+
+**Skutki dla lekcji (do zrobienia):** C1c konfiguracje i typy reakcji = etap I (priorytet na 23.10); kwasy/zasady/sole, szereg aktywności, wodorki = etap II (rejon 26.11); ORG = etap III. Sprawdzić w lekcjach oznaczenia „poza zakresem LKO 2025/26” i dopisać zakres 2026/27 (zadanie H6 w `chemia/che-modular/PRZEKAZANIE_HAIKU_SONNET.md`).
 
 **Zakresy 2025/26 (oficjalne, OCR: `zrodla/LKO/Zakresy_2025_2026_chemia_biologia_OCR.md`)**
 

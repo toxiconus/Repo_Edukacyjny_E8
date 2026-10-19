@@ -21,7 +21,7 @@ Start każdej sesji: `CLAUDE.md` w katalogu głównym, potem ten plik, potem tyl
 | H3 | Siedem modeli „do sprawdzenia”: porównać z zamiennikiem, wpisać status (zastąpiony / zachować / scalić) | `engine/registry/katalog_oceny.json` (statusy „do sprawdzenia”: chem-profile10, compound-cards, diss-three-levels, ion-vs-diss, flow-naming, naming-table, molecule-cv); potem `che.py katalog` | żadnego „do sprawdzenia” w `KATALOG_WIZUALIZACJI.md` |
 | H4 | Wstawić gotowe modele: `energy-profile` do C1c wodorki/typy reakcji, `acid-game` do C1c kwasy/zasady/sole, `gfx-scene-gasCollection` do N01 powietrze i gazy | wzór: sekcje `@model` + `@opis` już wstawione w C1c kwasy; najpierw obejrzeć działanie modelu | build OK, model otwiera się bez błędów (headless), `@opis` jest |
 | H5 | Dług opisów: 42 stare wizualizacje bez `@opis`, po kilka na raz | `python3 narzedzia/opis_wizualizacji.py`, `narzedzia/opis_dlug.json` | dług maleje, wpisy usunięte z `opis_dlug.json` |
-| H6 | Oznaczanie „poza zakresem LKO 2025/26” w pozostałych lekcjach chemii i biologii | plik zakresu LKO; wzór oznaczeń w C1c konfiguracje, C2w, B1b | oznaczenia w md, nic nie usunięte |
+| H6 (UWAGA: zakres 2026/27 jest oficjalny — etap I = pkt I–V + konfiguracje, typy reakcji, wzory z wartościowości; etap II = I–VIII + wodorki, sole, jonowe, szereg aktywności, stechiometria; zob. `olimpiada/PRIORYTETY.md` §1) | Oznaczanie „poza zakresem LKO 2025/26” w pozostałych lekcjach chemii i biologii | plik zakresu LKO; wzór oznaczeń w C1c konfiguracje, C2w, B1b | oznaczenia w md, nic nie usunięte |
 | H7 | Małe widoki do stylu: pliki z 1–6 odstępstwami w `STYL_RAPORT.md` (np. `n02-zobojetnianie-v01`, `n02-wzory-v01`, `n02-dysocjacja-v01`, `n01-konstruktor-v01`) | `python3 tools/styl_sprawdz.py`; mapowanie hex → `CHE.GFX.STYL` tylko dla znaczników i ramek, kolorów substancji nie ruszać | zrzut przed i po bez zmiany treści, raport pokazuje 0 dla pliku |
 | H8 | Rutyna: spisy tematów i lekcji z rozmiarem KB i stanem audytów dla wszystkich przedmiotów; odświeżenie `MAPA.md`, katalogu, build wszystkich lekcji | `cd chemia && python3 plany/narzedzia/spis_tresci.py`, `narzedzia/mapa.py` | spisy zgodne z plikami |
 
@@ -41,7 +41,7 @@ Start każdej sesji: `CLAUDE.md` w katalogu głównym, potem ten plik, potem tyl
 ## Tylko użytkownik
 - Konwencja zapisu konfiguracji w arkuszu olimpiady (Fe: [Ar] 4s² 3d⁶ czy 3d⁶ 4s²).
 - Push na origin.
-- Zakres 2026/27 (regulamin nieopublikowany do 8 października).
+- ~~Zakres 2026/27~~ — opublikowany; pliki `olimpiada/zrodla/LKO_2026_27_*`, zmiany w `olimpiada/PRIORYTETY.md` §1.
 
 ## Stan na dziś
 - Katalog: `KATALOG_WIZUALIZACJI.md` (generowany `che.py katalog`); oceny w `engine/registry/katalog_oceny.json`.

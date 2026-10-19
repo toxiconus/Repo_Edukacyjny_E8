@@ -1,3 +1,5 @@
+> **AKTUALIZACJA 2026-10-19:** pakiet 2026/27 jest już oficjalny — patrz `zrodla/LKO_2026_27_Terminarz_eliminacji.pdf`, `zrodla/LKO_2026_27_Czesc_II_zakres_wymagan.docx/.txt`, `zrodla/LKO_2026_27_Zalacznik2_wzory_dokumentow.docx/.txt` oraz `olimpiada/PRIORYTETY.md` §1 (daty potwierdzone: bio 21.10, chem 23.10; zmiany zakresu). Poniższy tekst to stan z 2026-10-08 (historia).
+
 Na dzień **8 października 2026 r.** nie znalazłem na stronie Lubelskiego Kuratorium Oświaty opublikowanego pakietu dokumentów dla konkursów przedmiotowych **2026/2027**: regulaminu, terminarza ani zakresów dla chemii i biologii. Podane przez Ciebie terminy etapu szkolnego (**ok. 21 i 23.10.2026**) nie są więc jeszcze oficjalnie potwierdzone w dostępnych materiałach Kuratorium. Poniżej wyraźnie oddzielam brakujące dane 2026/2027 od ostatniego pełnego, oficjalnego pakietu **2025/2026**. [kuratorium.lublin](https://kuratorium.lublin.pl/gsok/www2/?m=55&ms=296)
 
 ## Oficjalne strony i dokumenty
