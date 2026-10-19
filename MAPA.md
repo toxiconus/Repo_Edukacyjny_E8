@@ -271,7 +271,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/engine/src/gfx/wspolne/widoki  (1 pl., 4 KB)
 - `che-test-silnika-v01.js` 4 KB
 
-## chemia/che-modular/engine/src/klocki  (38 pl., 227 KB)
+## chemia/che-modular/engine/src/klocki  (39 pl., 230 KB)
 - (zwinięte; `ls chemia/che-modular/engine/src/klocki`)
 
 ## chemia/che-modular/engine/src/klocki/dane  (1 pl., 11 KB)
@@ -534,10 +534,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `spis_polski.py` 9 KB
 - `szkielety_polski.py` 24 KB
 
-## olimpiada  (7 pl., 148 KB)
+## olimpiada  (7 pl., 151 KB)
 - `MAPA_WSPOLNYCH.md` 20 KB
 - ⚠`OLIMPIADA_8_MASTER.md` 81 KB
-- `PRIORYTETY.md` 9 KB
+- `PRIORYTETY.md` 12 KB
 - `PROMPTY_AI_BRAKI_OLI_2026-10-18.md` 11 KB
 - `PROMPTY_AI_BRAKI_OLI_2026-10-18_runda3.md` 12 KB
 - `PROMPTY_AI_BRAKI_OLI_2026-10-18_runda4.md` 9 KB
@@ -559,7 +559,12 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## olimpiada/narzedzia  (1 pl., 7 KB)
 - `mapa_chemia.py` 7 KB
 
-## olimpiada/zrodla  (1 pl., 17 KB)
+## olimpiada/zrodla  (6 pl., 602 KB)
+- ⚠`LKO_2026_27_Czesc_II_zakres_wymagan.docx` 244 KB
+- ⚠`LKO_2026_27_Czesc_II_zakres_wymagan.txt` 103 KB
+- ⚠`LKO_2026_27_Terminarz_eliminacji.pdf` 165 KB
+- ⚠`LKO_2026_27_Zalacznik2_wzory_dokumentow.docx` 59 KB
+- `LKO_2026_27_Zalacznik2_wzory_dokumentow.txt` 14 KB
 - `konkursy_LKO_2026_27_ustalenia.md` 17 KB
 
 ## olimpiada/zrodla/LKO  (5 pl., 3.4 MB)

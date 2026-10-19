@@ -26,7 +26,7 @@ Foldery powstają, gdy pojawi się pierwsza treść.
 
 ## 4. Stan (2026-10-09)
 - MASTER v0.04 w repo; mapa chemii CHEM-001…133 ↔ kanon CHE v0.3 w `MAPA_WSPOLNYCH.md` (generator `narzedzia/mapa_chemia.py`).
-- **Konkursy LKO:** zakresy 2025/26 (OCR) i arkusz rejonowy chemii 2025/26 w `zrodla/LKO/`; terminy i zakresy etapów — `PRIORYTETY.md` §1. Pakiet 2026/27 jeszcze nieopublikowany.
+- **Konkursy LKO:** zakresy 2025/26 (OCR) i arkusz rejonowy chemii 2025/26 w `zrodla/LKO/`; terminy i zakresy etapów — `PRIORYTETY.md` §1. Pakiet 2026/27 OFICJALNY od 2026-10-19 (`zrodla/LKO_2026_27_*`): bio 21.10, chem 23.10 (etap szkolny), rejon bio 24.11, chem 26.11; zmiany zakresu w `PRIORYTETY.md` §1.
 - **Etapy szkolne pokryte lekcjami (2026-10-08):**
   - chemia (pkt I–VII): REV01 Powtórka kl. 7, F01–F06, **N01 Powietrze i gazy**, **R03 Woda, roztwory i stężenie %**, tlenki, wodorotlenki, kwasy, sole, wodorki — `chemia/che-modular/lessons-md/gotowe/`;
   - biologia (pkt I–II): **REV01 Organizacja i chemizm życia**, **REV02 Różnorodność życia** — `biologia/bio/md/`.
