@@ -3,14 +3,14 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (11 pl., 76 KB)
+## .  (11 pl., 88 KB)
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 7 KB
 - `MAPA.md` 19 KB
 - `PRZEKAZANIE.md` 6 KB
 - `README.md` 0 KB
-- `WERYFIKACJA.md` 25 KB
+- `WERYFIKACJA.md` 37 KB
 - `edit_html.py` 3 KB
 - `fix_encoding.ps1` 1 KB
 - `fix_encoding_v2.ps1` 5 KB
@@ -48,10 +48,19 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `BIO_KATALOG.md` 3 KB
 - `PRZEKAZANIE.md` 3 KB
 
-## biologia/bio/md  (3 pl., 123 KB)
+## biologia/bio/md  (12 pl., 300 KB)
+- `B10_powtorka_uklady_czlowieka.md` 18 KB
+- `B1b_krzyzowki_mendel.md` 18 KB
+- `B2a_skora_i_uklad_ruchu.md` 18 KB
+- `B2b_uklad_pokarmowy_i_odzywianie.md` 19 KB
+- `B2c_oddychanie_i_wydalanie.md` 15 KB
+- `B2d_uklad_nerwowy_i_zmysly.md` 19 KB
+- `B2e_uklad_dokrewny.md` 15 KB
+- `B2f_rozmnazanie_i_rozwoj.md` 17 KB
+- `B2g_homeostaza.md` 30 KB
 - `L010_dna_od_zera.md` 48 KB
-- `REV01_organizacja_i_chemizm_zycia.md` 27 KB
-- `REV02_roznorodnosc_zycia.md` 47 KB
+- `REV01_organizacja_i_chemizm_zycia.md` 29 KB
+- ⚠`REV02_roznorodnosc_zycia.md` 55 KB
 
 ## biologia/bio/narzedzia  (2 pl., 9 KB)
 - `md2html_bio.py` 7 KB
@@ -70,6 +79,18 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`L012_jak_dna_jest_upakowane_w.md` 54 KB
 - ⚠`L014_jak_komorki_ciala_powstaja_i.md` 57 KB
 - ⚠`X01_szablon_lekcji.md` 60 KB
+
+## biologia/plany/audyty  (10 pl., 225 KB)
+- `W1_zadanie10_B10_2026-10-18.md` 23 KB
+- `W1_zadanie17_genetyka_mendel_2026-10-18.md` 24 KB
+- `W1_zadanie7_bio_luki_REV01_REV02_2026-10-18.md` 33 KB
+- `W1_zadanie8_homeostaza_2026-10-18.md` 32 KB
+- `W1_zadanie9a_B2a_2026-10-18.md` 22 KB
+- `W1_zadanie9b_pokarmowy_2026-10-18.md` 17 KB
+- `W1_zadanie9c_B2c_2026-10-18.md` 17 KB
+- `W1_zadanie9d_B2d_2026-10-18.md` 20 KB
+- `W1_zadanie9e_B2e_2026-10-18.md` 18 KB
+- `W1_zadanie9f_B2f_2026-10-18.md` 19 KB
 
 ## biologia/wizualizacje  (2 pl., 133 KB)
 - ⚠`BIO.010x.v01.00.html` 107 KB
@@ -302,7 +323,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `MAKRA.md` 2 KB
 - `MAKRA_ROZWINIECIE.md` 2 KB
 
-## chemia/che-modular/lessons-md/gotowe  (15 pl., 911 KB)
+## chemia/che-modular/lessons-md/gotowe  (26 pl., 1.1 MB)
 - (zwinięte; `ls chemia/che-modular/lessons-md/gotowe`) — duże:
 - ⚠`FIZ01_elektrostatyka.md` 51 KB
 - ⚠`N01_tlenki.md` 123 KB
@@ -310,7 +331,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`N03_kwasy.md` 134 KB
 - ⚠`N04_sole.md` 86 KB
 - ⚠`N05_wodorki.md` 53 KB
-- ⚠`REV01_powtorka_klasy_7.md` 62 KB
+- ⚠`REV01_powtorka_klasy_7.md` 63 KB
 
 ## chemia/che-modular/manifests  (5 pl., 9 KB)
 - `FIZ01.json` 1 KB
@@ -419,8 +440,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/tools/_stare  (1 pl., 28 KB)
 - `pack_lesson.py` 28 KB
 
-## chemia/lekcje_md/00  (6 pl., 238 KB)
-- `CHE.00.LAB.doswiadczenia.md` 29 KB
+## chemia/lekcje_md/00  (6 pl., 276 KB)
+- ⚠`CHE.00.LAB.doswiadczenia.md` 67 KB
 - ⚠`CHE.00.REV01.powtorka_klasy_7.md` 124 KB
 - `CHE.00.REV02.powtorka_klasy_8.md` 20 KB
 - `CHE.00.REV06.zaawansowana.md` 40 KB
@@ -470,17 +491,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`CHE_SPIS_TRESCI.md` 59 KB
 - `PLAN_SCIEZKI_DYDAKTYCZNE.md` 6 KB
 
-## chemia/plany/audyty  (10 pl., 156 KB)
-- `W1_perplexity_F01-F06_2026-10-09.md` 18 KB
-- `W1_perplexity_F07-F14_2026-10-09.md` 20 KB
-- `W1_perplexity_F15-F21_2026-10-09.md` 17 KB
-- `W1_perplexity_J01-J00_2026-10-09.md` 19 KB
-- `W1_perplexity_N01-N05_2026-10-09.md` 17 KB
-- `W1_perplexity_O01-O07_2026-10-09.md` 14 KB
-- `W1_perplexity_O08-X04_2026-10-09.md` 20 KB
-- `W1_perplexity_R03-R09_2026-10-09.md` 16 KB
-- `W1_perplexity_uzupelnienia_X04-J03-R07_2026-10-09.md` 9 KB
-- `W1_perplexity_uzupelnienia_koncowe_2026-10-09.md` 8 KB
+## chemia/plany/audyty  (24 pl., 465 KB)
+- (zwinięte; `ls chemia/plany/audyty`)
 
 ## chemia/plany/narzedzia  (3 pl., 47 KB)
 - `kanon_dane.py` 37 KB
@@ -504,10 +516,13 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `opis_wizualizacji.py` 3 KB
 - `szkielety_polski.py` 24 KB
 
-## olimpiada  (4 pl., 116 KB)
+## olimpiada  (7 pl., 148 KB)
 - `MAPA_WSPOLNYCH.md` 20 KB
 - ⚠`OLIMPIADA_8_MASTER.md` 81 KB
 - `PRIORYTETY.md` 9 KB
+- `PROMPTY_AI_BRAKI_OLI_2026-10-18.md` 11 KB
+- `PROMPTY_AI_BRAKI_OLI_2026-10-18_runda3.md` 12 KB
+- `PROMPTY_AI_BRAKI_OLI_2026-10-18_runda4.md` 9 KB
 - `PRZEKAZANIE.md` 6 KB
 
 ## olimpiada/do_uzupelnienia  (11 pl., 62 KB)
@@ -610,7 +625,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `G12_G17_Skladnia_WYPELNIONE.md` 3 KB
 - `S01_S06_Srodki_stylistyczne_WYPELNIONE.md` 4 KB
 
-## polski/podstawy  (23 pl., 89 KB)
+## polski/podstawy  (23 pl., 153 KB)
 - (zwinięte; `ls polski/podstawy`)
 
 ## wizualizacje-projekty  (3 pl., 72 KB)
