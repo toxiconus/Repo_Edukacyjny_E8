@@ -208,6 +208,16 @@
    "klocki.js",
    "pomocnicze.js",
    "krzyzowka_mendla.js"
+  ],
+  "R03": [
+   "klocki.js",
+   "pomocnicze.js",
+   "krzywe_rozpuszczalnosci.js"
+  ],
+  "C2w": [
+   "klocki.js",
+   "pomocnicze.js",
+   "probowki_odczyn.js"
   ]
  },
  "css": [

@@ -128,6 +128,9 @@ BHP: ostrożnie z gorącą wodą.
 
 **Wnioski z tabeli:** rozpuszczalność KNO₃ silnie rośnie z temperaturą, NaCl — prawie się nie zmienia. Dlatego KNO₃ łatwo **krystalizuje przy ochładzaniu**, a sól kuchenną otrzymuje się przez **odparowanie** wody.
 
+@klocek krzywe-rozpuszczalnosci {subst="KNO3-R03,NaCl-R03" T="40"} | Krzywe rozpuszczalności KNO₃ i NaCl: odczytaj punkt dla T
+@opis Wykres rozpuszczalności w g na 100 g wody od 0 do 80 °C: krzywa KNO₃ gwałtownie rośnie (ok. 13 g w 0 °C do ok. 169 g w 80 °C), krzywa NaCl jest prawie pozioma (ok. 36–38 g). Pionowa linia odczytu pokazuje wartość dla wybranej temperatury, a strefy pod krzywą, na krzywej i nad nią oznaczają roztwór nienasycony, nasycony i nasycony z osadem. Wartości orientacyjne jak w tabeli lekcji; w zadaniu korzystamy z danych z treści.
+
 ::: karta understand | Gazy w wodzie
 Rozpuszczalność gazów **maleje ze wzrostem temperatury** i **rośnie ze wzrostem ciśnienia**. Dlatego latem w ciepłych, przegrzanych zbiornikach ryby mogą się dusić (mniej tlenu w wodzie), a otwarta ciepła oranżada szybciej traci CO₂.
 :::

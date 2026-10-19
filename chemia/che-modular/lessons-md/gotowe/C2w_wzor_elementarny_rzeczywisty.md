@@ -144,6 +144,9 @@ Gips (CaSO₄·2H₂O) po ogrzaniu do ok. 100–150 °C traci część wody i tw
 @zlewka sole-doswiadczenia-v01 cuso4Hydrate | Zobacz w zlewce: ogrzewanie CuSO₄·5H₂O (poza zakresem LKO 2025/26)
 @opis Niebieskie kryształy uwodnionego siarczanu(VI) miedzi(II) ogrzewane w probówce: tracą wodę (para skrapla się u wylotu) i stają się białym proszkiem; po dodaniu kropli wody znów błękitnieją. Wniosek: CuSO₄·5H₂O ⇌ CuSO₄ + 5 H₂O — ubytek masy po ogrzaniu pozwala policzyć liczbę cząsteczek wody krystalizacyjnej.
 
+@klocek probowki-odczyn {tuby="CuSO₄·5H₂O ogrzewany:niebieski:bialy:gaz" kat="45"} | Ogrzewanie hydratu: niebieski kryształ biały, uchodzi para wodna (poza zakresem LKO 2025/26)
+@opis Probówka ustawiona ukośnie (ok. 45°) z niebieskim uwodnionym siarczanem(VI) miedzi(II); podczas ogrzewania barwa zmienia się z niebieskiej na białą, bo odchodzi woda krystalizacyjna, a para wodna unosi się w postaci pęcherzyków. Znacznik PRZED/PO w rogu pokazuje fazę doświadczenia. Treść poza zakresem LKO 2025/26.
+
 ### 7. Wzór hydratu z danych procentowych (poza zakresem LKO 2025/26)
 
 **Zadanie:** Hydrat siarczanu miedzi(II) ma 36% wody krystalizacyjnej. Jaki to hydrat?

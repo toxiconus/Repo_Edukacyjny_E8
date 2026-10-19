@@ -8,6 +8,8 @@
 (function () {
   var DANE = {
     'KNO3':    {nazwa: 'KNO₃',     kolor: '#dc2626', pkt: [[20, 32], [40, 62], [60, 110], [80, 167]]},
+    'KNO3-R03': {nazwa: 'KNO₃',   kolor: '#dc2626', pkt: [[0, 13], [20, 32], [40, 64], [60, 110], [80, 169]]},   // wartości jak w tabeli lekcji R03
+    'NaCl-R03': {nazwa: 'NaCl',    kolor: '#2563eb', pkt: [[0, 36], [20, 36], [40, 37], [60, 37], [80, 38]]},
     'NaCl':    {nazwa: 'NaCl',     kolor: '#2563eb', pkt: [[20, 36], [40, 36.5], [60, 37], [80, 38]]},
     'NH4Cl':   {nazwa: 'NH₄Cl',    kolor: '#16a34a', pkt: [[20, 37], [40, 46], [60, 55], [80, 66]]},
     'Ca(OH)2': {nazwa: 'Ca(OH)₂',  kolor: '#9333ea', pkt: [[20, 0.16]]}
