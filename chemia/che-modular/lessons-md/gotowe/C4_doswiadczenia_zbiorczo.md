@@ -167,8 +167,8 @@ Jony Cl⁻ występują po obu stronach bez zmian, więc je wykreślamy. Nazywamy
 
 ---
 
-@klocek probowki-wybor {zestaw="metale-hcl" wybrane="Mg,Zn,Cu"} | Metal + kwas solny: które metale reagują
-@opis Trzy probówki z kwasem solnym i przyciski z nazwami metali: w probówkach z Mg, Zn i Fe pojawiają się pęcherzyki wodoru, a w probówce z miedzią nic się nie dzieje. Pod probówkami są równania jonowe skrócone.
+@klocek doswiadczenie {tytul="Metale z kwasem solnym" cel="Sprawdzić, które metale wypierają wodór z kwasu solnego." sprzet="probówki, rozcieńczony kwas solny HCl, Mg, Zn, Fe, Cu" bhp="Przed doświadczeniem,Kwasy i zasady" scena="probowki-wybor" s_zestaw="metale-hcl" s_wybrane="Mg,Zn,Cu" rownanie="Zn + 2HCl -> ZnCl2 + H2"} | Metal + kwas solny: które metale reagują
+@opis Karta doświadczenia: cel, sprzęt i odczynniki, zwinięta karta BHP (Przed doświadczeniem,Kwasy i zasady), scena z probówkami, równanie i puste pole na obserwacje i wniosek. Scena: Trzy probówki z kwasem solnym i przyciski z nazwami metali: w probówkach z Mg, Zn i Fe pojawiają się pęcherzyki wodoru, a w probówce z miedzią nic się nie dzieje. Pod probówkami są równania jonowe skrócone.
 
 ### Doświadczenie 3. Reakcja tlenku z wodą
 
@@ -312,8 +312,8 @@ Przykłady strąceń (wartości z tabeli rozpuszczalności — do potwierdzenia 
 
 ---
 
-@klocek probowki-wybor {zestaw="stracanie" wybrane="AgCl,BaSO4,CuOH2"} | Strącanie osadu: wybierz parę jonów
-@opis Trzy probówki z roztworami; po zmieszaniu odczynników tworzy się osad opadający na dno: biały AgCl i BaSO₄, niebieski Cu(OH)₂ lub rdzawy Fe(OH)₃. Przyciski zmieniają zestaw, a pod probówkami widać równanie jonowe skrócone.
+@klocek doswiadczenie {tytul="Strącanie osadu" cel="Zobaczyć powstawanie osadu po zmieszaniu roztworów soli." sprzet="probówki, roztwory AgNO3, NaCl, BaCl2, Na2SO4, CuSO4, NaOH" bhp="Przed doświadczeniem" scena="probowki-wybor" s_zestaw="stracanie" s_wybrane="AgCl,BaSO4,CuOH2" rownanie="Ag^+ + Cl^- -> AgCl"} | Strącanie osadu: wybierz parę jonów
+@opis Karta doświadczenia: cel, sprzęt i odczynniki, zwinięta karta BHP (Przed doświadczeniem), scena z probówkami, równanie i puste pole na obserwacje i wniosek. Scena: Trzy probówki z roztworami; po zmieszaniu odczynników tworzy się osad opadający na dno: biały AgCl i BaSO₄, niebieski Cu(OH)₂ lub rdzawy Fe(OH)₃. Przyciski zmieniają zestaw, a pod probówkami widać równanie jonowe skrócone.
 
 ### Doświadczenie 6. Rozkład CaCO₃ i wykrycie CO₂
 

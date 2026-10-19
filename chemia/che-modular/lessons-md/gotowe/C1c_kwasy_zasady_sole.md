@@ -184,8 +184,8 @@ $$\text{Na}_2\text{CO}_3 + 2\,\text{HCl} \rightarrow 2\,\text{NaCl} + \text{H}_2
 - jonowa pełna: 2 Na⁺ + CO₃²⁻ + 2 H⁺ + 2 Cl⁻ → 2 Na⁺ + 2 Cl⁻ + H₂O + CO₂↑
 - jonowa skrócona: **CO₃²⁻ + 2 H⁺ → H₂O + CO₂↑**
 
-@klocek probowki-wybor {zestaw="kwas-weglan"} | Węglan + HCl: wydziela się CO₂
-@opis Dwie probówki z kwasem solnym i węglanem (sodu albo wapnia): w obu unoszą się pęcherzyki gazu CO₂. Pod probówkami widać równanie jonowe skrócone; w przypadku CaCO₃ węglan jest nierozpuszczalny, więc zapisany jest w całości.
+@klocek doswiadczenie {tytul="Węglan z kwasem solnym" cel="Wykazać, że kwas wypiera słaby kwas węglowy z węglanu." sprzet="probówka, węglan wapnia (kreda), rozcieńczony kwas solny HCl" bhp="Przed doświadczeniem,Kwasy i zasady" scena="probowki-wybor" s_zestaw="kwas-weglan" rownanie="CaCO3 + 2HCl -> CaCl2 + H2O + CO2"} | Węglan + HCl: wydziela się CO₂
+@opis Karta doświadczenia: cel, sprzęt i odczynniki, zwinięta karta BHP (Przed doświadczeniem,Kwasy i zasady), scena z probówkami, równanie i puste pole na obserwacje i wniosek. Scena: Dwie probówki z kwasem solnym i węglanem (sodu albo wapnia): w obu unoszą się pęcherzyki gazu CO₂. Pod probówkami widać równanie jonowe skrócone; w przypadku CaCO₃ węglan jest nierozpuszczalny, więc zapisany jest w całości.
 
 #### Przykład 2: siarczyn + kwas solny
 

@@ -36,7 +36,8 @@
     "naczynia.js": "Wspólna geometria i wygląd szkła (probówka) dla klocków probowki, probowki-odczyn",
     "haworth.js": "Wzór Hawortha: α/β-D-glukopiranoza i β-D-fruktofuranoza (przełączane chipami)",
     "estryfikacja.js": "Animacja estryfikacji: kwas + alkohol → ester + woda (pętla, autostart)",
-    "petla_regulacji.js": "Pętla sprzężenia ujemnego z 5 elementów z krążącym impulsem (biologia)"
+    "petla_regulacji.js": "Pętla sprzężenia ujemnego z 5 elementów z krążącym impulsem (biologia)",
+    "doswiadczenie.js": "Wspólny układ doświadczenia: cel, sprzęt, BHP, scena (inny klocek), równanie, obserwacje"
   },
   "lekcje": {
     "P01": [
@@ -194,14 +195,18 @@
       "pomocnicze.js",
       "naczynia.js",
       "probowki_odczyn.js",
-      "probowki_wybor.js"
+      "probowki_wybor.js",
+      "doswiadczenie.js",
+      "karta_bhp.js"
     ],
     "J03": [
       "klocki.js",
       "pomocnicze.js",
       "naczynia.js",
       "probowki_odczyn.js",
-      "probowki_wybor.js"
+      "probowki_wybor.js",
+      "doswiadczenie.js",
+      "karta_bhp.js"
     ],
     "C1c": [
       "klocki.js",
@@ -215,7 +220,9 @@
       "c2d_prosta.js",
       "c2d_klocek.js",
       "konfiguracje.js",
-      "sklad_procentowy.js"
+      "sklad_procentowy.js",
+      "doswiadczenie.js",
+      "karta_bhp.js"
     ],
     "C2m": [
       "klocki.js",
@@ -229,7 +236,8 @@
       "naczynia.js",
       "probowki_odczyn.js",
       "probowki_wybor.js",
-      "karta_bhp.js"
+      "karta_bhp.js",
+      "doswiadczenie.js"
     ],
     "B1b": [
       "klocki.js",

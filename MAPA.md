@@ -271,7 +271,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/engine/src/gfx/wspolne/widoki  (1 pl., 4 KB)
 - `che-test-silnika-v01.js` 4 KB
 
-## chemia/che-modular/engine/src/klocki  (37 pl., 221 KB)
+## chemia/che-modular/engine/src/klocki  (38 pl., 227 KB)
 - (zwinięte; `ls chemia/che-modular/engine/src/klocki`)
 
 ## chemia/che-modular/engine/src/klocki/dane  (1 pl., 11 KB)

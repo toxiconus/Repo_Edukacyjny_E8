@@ -46,6 +46,7 @@ W md wstawia się go linią `@klocek nazwa {opcja="wartość"} | Podpis`, a pod 
 | `haworth` | haworth.js | Wzór Hawortha: α/β-D-glukopiranoza i β-D-fruktofuranoza (chipy) | `cukier` (alfa-glukoza, beta-glukoza, beta-fruktoza) |
 | `estryfikacja` | estryfikacja.js | Animacja: –OH kwasu + H alkoholu → woda; reszty → ester (pętla) | `ester` (octan-etylu, mrowczan-metylu) |
 | `petla-regulacji` | petla_regulacji.js | Pętla regulacji 5 elementów z impulsem; biologia B2c/B2e/B2g | `zestaw` (temperatura, glukoza, tarczyca, oddech) |
+| `doswiadczenie` | doswiadczenie.js | Wspólny układ doświadczenia: cel, sprzęt, karta BHP (wybrane karty), scena z innego klocka, równanie, obserwacje | `tytul`, `cel`, `sprzet`, `bhp`, `scena`, `s_*`, `rownanie` |
 | `krzywe-rozpuszczalnosci` | krzywe_rozpuszczalnosci.js | Krzywe rozpuszczalności g/100 g wody od T; strefy nasycenia | `subst` (KNO3,NaCl,NH4Cl), `T` (40), `m` (null), `strefy` (1) |
 | `palenie`, `palniki`, `plomien`, `probowki`, `zlewka`, `metal-woda`, `uklad-okresowy`, `znaki` | odpowiednie pliki | Chemia nieorganiczna | zob. nagłówek pliku |
 
