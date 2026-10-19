@@ -26,6 +26,7 @@ def main() -> None:
             if p.name == "styl-tokeny.js":
                 continue
             t = p.read_text(encoding="utf-8", errors="ignore")
+            t = "\n".join(l for l in t.split("\n") if "styl:zostaw" not in l)   # linie oznaczone jako celowe (realne barwy) — poza raportem
             hx = {h.lower() for h in re.findall(r"#[0-9a-fA-F]{6}\b", t)} - PALETA
             lw = {x for x in re.findall(r"lineWidth\s*=\s*([\d.]+)", t) if x.lstrip("0") not in LINIE and x not in LINIE}
             sw = {x for x in re.findall(r'stroke-width[=:]\s*"?([\d.]+)', t) if x not in LINIE}

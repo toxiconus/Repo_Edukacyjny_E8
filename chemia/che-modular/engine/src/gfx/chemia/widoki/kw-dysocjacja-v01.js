@@ -7,18 +7,18 @@ V.define('kw-dysocjacja-v01',{title:'Dysocjacja kwasów na żywo — przeniesien
   var l1=el('label',null,'Kwas ');l1.appendChild(s1);bar.appendChild(l1);
   var cs=el('input');cs.type='range';cs.min=-3;cs.max=0;cs.step=.1;cs.value=-1;var co=el('b');var l2=el('label',null,'c = ');l2.append(cs,co);bar.appendChild(l2);
   var bm=el('button',null,'Tryb: roztwór');bm.type='button';bar.appendChild(bm);var bs=el('button',null,'▶ krok');bs.type='button';bs.style.display='none';bar.appendChild(bs);
-  var cv=el('canvas');cv.style.cssText='width:100%;height:360px;display:block;border-radius:12px;background:var(--surface-soft,#f1f5f9)';host.appendChild(cv);
+  var cv=el('canvas');cv.style.cssText='width:100%;height:360px;display:block;border-radius:12px;background:var(--surface-soft,#f6f8fa)';host.appendChild(cv);
   var info=el('div','note');host.appendChild(info);
-  var ac=el('canvas');ac.style.cssText='width:100%;height:190px;display:block;border-radius:12px;background:var(--surface-soft,#f1f5f9);margin-top:8px';host.appendChild(ac);
+  var ac=el('canvas');ac.style.cssText='width:100%;height:190px;display:block;border-radius:12px;background:var(--surface-soft,#f6f8fa);margin-top:8px';host.appendChild(ac);
    
-  var PAL={HCl:'#16a34a',HNO3:'#0891b2',H2SO4:'#7c3aed',HF:'#ea580c',CH3COOH:'#dc2626',H3PO4:'#b45309'};
+/*styl:zostaw — kolory sceny/materiałów są realne*/  var PAL={HCl:'#16a34a',HNO3:'#0891b2',H2SO4:'#7c3aed',HF:'#ea580c',CH3COOH:'#dc2626',H3PO4:'#b45309'};
   function chart(){var d=Math.min(2,window.devicePixelRatio||1),w=ac.clientWidth||600,h=ac.clientHeight||190;ac.width=w*d;ac.height=h*d;var x=ac.getContext('2d');x.setTransform(d,0,0,d,0,0);var T=C.LAB.GFX.theme(),L=40,R=w-185,Tp=12,B=h-26;
    x.strokeStyle=T.mut;x.fillStyle=T.mut;x.lineWidth=1;x.font='600 10px system-ui';x.beginPath();x.moveTo(L,Tp);x.lineTo(L,B);x.lineTo(R,B);x.stroke();
    var X=function(l){return L+(R-L)*(l+3)/3},Y=function(a){return B-(B-Tp)*a};
    [0,.5,1].forEach(function(a){x.textAlign='right';x.fillText(Math.round(a*100)+'%',L-4,Y(a)+3)});[-3,-2,-1,0].forEach(function(l){x.textAlign='center';x.fillText(String(Math.pow(10,l)).replace('.',','),X(l),B+12)});
    x.fillText('c [mol/dm³] (skala log.)',(L+R)/2,h-3);x.save();x.translate(10,(Tp+B)/2);x.rotate(-Math.PI/2);x.fillText('α',0,0);x.restore();
    var ks=Object.keys(CH).filter(function(k){return (C.DATA.ACID_SYSTEMS||{})[k]}),ly=Tp;
-   ks.forEach(function(k){var cur=k===st.acid;x.strokeStyle=PAL[k]||'#64748b';x.lineWidth=cur?3:1.3;x.globalAlpha=cur?1:.55;x.beginPath();for(var i=0;i<=60;i++){var l=-3+3*i/60,m=model(k,Math.pow(10,l));i?x.lineTo(X(l),Y(m.a1)):x.moveTo(X(l),Y(m.a1))}x.stroke();
+   ks.forEach(function(k){var cur=k===st.acid;x.strokeStyle=PAL[k]||'#4a5568';x.lineWidth=cur?3:1.3;x.globalAlpha=cur?1:.55;x.beginPath();for(var i=0;i<=60;i++){var l=-3+3*i/60,m=model(k,Math.pow(10,l));i?x.lineTo(X(l),Y(m.a1)):x.moveTo(X(l),Y(m.a1))}x.stroke();
     x.fillStyle=PAL[k];x.textAlign='left';x.font=(cur?'800 ':'600 ')+'11px system-ui';var mm=model(k,st.c);x.fillText(pf(k)+'  α='+(mm.a1>=.995?'100':(mm.a1*100).toFixed(mm.a1<.1?1:0))+'%  pH='+mm.pH.toFixed(2).replace('.',','),R+8,ly+4);ly+=16});x.globalAlpha=1;
    var lc=Math.log10(st.c);x.strokeStyle=T.text;x.setLineDash([4,3]);x.lineWidth=1;x.beginPath();x.moveTo(X(lc),Tp);x.lineTo(X(lc),B);x.stroke();x.setLineDash([]);x.fillStyle=PAL[st.acid];x.beginPath();x.arc(X(lc),Y(M.a1),5,0,7);x.fill()}
   var P=[],step=0,hops=[],last=0,acc=0,M=null,dead=false;
@@ -42,8 +42,8 @@ V.define('kw-dysocjacja-v01',{title:'Dysocjacja kwasów na żywo — przeniesien
    var cand=P.filter(function(p){return p.id===ch[lv+1]&&!p.busy});if(!cand.length)return false;var a=cand[(Math.random()*cand.length)|0],hh=near(a,'H3O+');if(!hh)return false;hop(hh,a,-1);return true}
   function finish(h){var ch=CH[st.acid];h.a.busy=h.b.busy=0;if(h.dir>0){var k=ch.indexOf(h.a.id);h.a.id=ch[k+1];h.b.id='H3O+'}else{var k2=ch.indexOf(h.b.id);h.b.id=ch[k2-1];h.a.id='H2O'}}
   function drawMol(x,p){var G=C.LAB.GFX,at=G.molecules.atoms(p.id),s=p.fix?18:14,ca=Math.cos(p.a||0),sa=Math.sin(p.a||0),dark=G.theme().dark;
-   at.slice().sort(function(a,b){return G.molecules.radius(a[0])-G.molecules.radius(b[0])}).forEach(function(a){if(p.hideH&&a===p.hideH)return;var ax=p.x+(a[1]*ca-a[2]*sa)*s,ay=p.y+(a[1]*sa+a[2]*ca)*s,r=G.molecules.radius(a[0])*s*.62;var g=x.createRadialGradient(ax-r*.35,ay-r*.35,1,ax,ay,r);g.addColorStop(0,'#fff');g.addColorStop(.35,G.molecules.color(a[0]));g.addColorStop(1,G.molecules.color(a[0]));x.fillStyle=g;x.beginPath();x.arc(ax,ay,r,0,7);x.fill();x.strokeStyle=dark?'rgba(0,0,0,.5)':'rgba(15,23,42,.35)';x.lineWidth=.8;x.stroke()});
-   var q=G.molecules.charge(p.id);if(q){var neg=/−|-/.test(q);x.fillStyle=neg?'#2563eb':'#ea580c';x.beginPath();x.arc(p.x+s*1.3,p.y-s*1.1,7.5,0,7);x.fill();x.fillStyle='#fff';x.font='800 9px system-ui';x.textAlign='center';x.textBaseline='middle';x.fillText(q.replace('2−','2−').replace('−','−'),p.x+s*1.3,p.y-s*1.05)}
+   at.slice().sort(function(a,b){return G.molecules.radius(a[0])-G.molecules.radius(b[0])}).forEach(function(a){if(p.hideH&&a===p.hideH)return;var ax=p.x+(a[1]*ca-a[2]*sa)*s,ay=p.y+(a[1]*sa+a[2]*ca)*s,r=G.molecules.radius(a[0])*s*.62;var g=x.createRadialGradient(ax-r*.35,ay-r*.35,1,ax,ay,r);g.addColorStop(0,'#fff');g.addColorStop(.35,G.molecules.color(a[0]));g.addColorStop(1,G.molecules.color(a[0]));x.fillStyle=g;x.beginPath();x.arc(ax,ay,r,0,7);x.fill();x.strokeStyle=dark?'rgba(0,0,0,.5)':'rgba(15,23,42,.35)';x.lineWidth=1;x.stroke()});
+   var q=G.molecules.charge(p.id);if(q){var neg=/−|-/.test(q);x.fillStyle=neg?'#2563eb':'#dc2626';x.beginPath();x.arc(p.x+s*1.3,p.y-s*1.1,7.5,0,7);x.fill();x.fillStyle='#fff';x.font='800 9px system-ui';x.textAlign='center';x.textBaseline='middle';x.fillText(q.replace('2−','2−').replace('−','−'),p.x+s*1.3,p.y-s*1.05)}
    if(p.fix){x.fillStyle=G.theme().text;x.font='700 13px system-ui';x.textAlign='center';x.textBaseline='top';x.fillText(lbl(p.id),p.x,p.y+s*1.9)}}
   function frame(t){if(dead||!cv.isConnected){return}var dt=Math.min(.05,(t-last)/1000||0);last=t;var d=Math.min(2,window.devicePixelRatio||1),w=W(),h=H();if(cv.width!==Math.round(w*d)){cv.width=w*d;cv.height=h*d}var x=cv.getContext('2d');x.setTransform(d,0,0,d,0,0);x.clearRect(0,0,w,h);
    var g=x.createLinearGradient(0,0,0,h);g.addColorStop(0,'rgba(205,228,238,.35)');g.addColorStop(1,'rgba(160,200,220,.45)');x.fillStyle=g;x.fillRect(0,0,w,h);
@@ -53,7 +53,7 @@ V.define('kw-dysocjacja-v01',{title:'Dysocjacja kwasów na żywo — przeniesien
     
    for(var i=hops.length-1;i>=0;i--){var hp=hops[i];hp.t+=dt/.7;var a=hp.a,b=hp.b;if(st.mode==='roztwor'){var mx=(a.x+b.x)/2,my=(a.y+b.y)/2;a.x+=(mx-14-a.x)*dt*3;b.x+=(mx+14-b.x)*dt*3;a.y+=(my-a.y)*dt*3;b.y+=(my-b.y)*dt*3}
     var u=Math.min(1,hp.t),px=a.x+(b.x-a.x)*u,py=a.y+(b.y-a.y)*u-Math.sin(u*Math.PI)*18;x.strokeStyle='rgba(234,88,12,.5)';x.setLineDash([3,3]);x.beginPath();x.moveTo(a.x,a.y);x.quadraticCurveTo((a.x+b.x)/2,(a.y+b.y)/2-24,b.x,b.y);x.stroke();x.setLineDash([]);
-    x.fillStyle='#fff7ed';x.strokeStyle='#ea580c';x.lineWidth=2;x.beginPath();x.arc(px,py,6,0,7);x.fill();x.stroke();x.fillStyle='#ea580c';x.font='800 9px system-ui';x.textAlign='center';x.textBaseline='middle';x.fillText('H⁺',px,py-11);if(hp.t>=1){finish(hp);hops.splice(i,1)}}
+    x.fillStyle='rgba(220,38,38,.12)';x.strokeStyle='#dc2626';x.lineWidth=2.5;x.beginPath();x.arc(px,py,6,0,7);x.fill();x.stroke();x.fillStyle='#dc2626';x.font='800 9px system-ui';x.textAlign='center';x.textBaseline='middle';x.fillText('H⁺',px,py-11);if(hp.t>=1){finish(hp);hops.splice(i,1)}}
    P.forEach(function(p){drawMol(x,p)});
    var cn2=count(),ch=CH[st.acid];x.fillStyle=G.theme().text;x.font='700 12px system-ui';x.textAlign='left';x.textBaseline='top';
    x.fillText(lbl(ch[0])+': '+cn2[0]+'   '+lbl(ch[1])+': '+cn2[1]+(ch.length>2?'   '+lbl(ch[2])+': '+cn2[2]:'')+'   H₃O⁺: '+P.filter(function(p){return p.id==='H3O+'}).length,10,8);

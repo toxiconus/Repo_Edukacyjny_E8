@@ -2,15 +2,12 @@
 
 Wzorzec: `engine/src/gfx/wspolne/styl/styl-tokeny.js` i `STYL_WIZUALIZACJI.md`. Kolejka przeróbek: od największej liczby odstępstw.
 
-Plików: 94; zgodnych: 59; używa `CHE.GFX.STYL`: 0.
+Plików: 94; zgodnych: 62; używa `CHE.GFX.STYL`: 0.
 
 | plik | kolory spoza palety | linie spoza skali | używa STYL |
 |---|---|---|---|
 | `chemia/che-modular/engine/src/lekcja/rozszerzenia.js` | 58 | 1 |  |
 | `biologia/bio/szablon/bio-viz.js` | 33 | 0 |  |
-| `chemia/che-modular/engine/src/gfx/chemia/widoki/acid-rain-v01.js` | 12 | 1 |  |
-| `chemia/che-modular/engine/src/gfx/fizyka/widoki/fiz-przewodniki-v01.js` | 12 | 0 |  |
-| `chemia/che-modular/engine/src/gfx/chemia/widoki/kw-dysocjacja-v01.js` | 8 | 2 |  |
 | `chemia/che-modular/wizualizacje_r4/Wizualizacje_do_lekcji_R4.html` | 7 | 1 |  |
 | `chemia/che-modular/engine/src/gfx/wspolne/efekty/stopper.js` | 4 | 2 |  |
 | `chemia/che-modular/engine/src/gfx/chemia/widoki/n01-konstruktor-v01.js` | 6 | 0 |  |
