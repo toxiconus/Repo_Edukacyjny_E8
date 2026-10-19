@@ -51,3 +51,4 @@
 - 2026-10-09 polski: G18–G20, J01–J06 wstępne (Perplexity + poprawki Claude).
 - 2026-10-19 H9 p.1 N02: przegląd modeli (12 modeli, 8 zlewek) — bez zmian; wpis w PRZEKAZANIE_HAIKU_SONNET.md. Kolejno N03, N04, N05.
 - 2026-10-19 H9 p.1 N03: przegląd modeli (17 pozycji) — bez zmian treści; zanotowano powtórzone zlewki do decyzji S12.
+- 2026-10-19 H9 p.1 N04: przegląd modeli (9 + 13 zlewek) — bez zmian treści.
