@@ -63,6 +63,7 @@ stopka: **BIOLOGIA REV01 v1.0** · Organizacja i chemizm życia · 2026
 ## 1 | Poziomy organizacji organizmów [[basic:E8]] {#poziomy}
 
 @viz lancuch {kroki="komórka|podstawowa jednostka > tkanka|komórki o podobnej budowie i funkcji > narząd|kilka tkanek, wspólna funkcja > układ narządów|narządy współpracujące > organizm|całość"} | Od komórki do organizmu | kliknij poziom
+@opis Łańcuch hierarchii organizmu: komórka → tkanka → narząd → układ narządów → organizm. Kliknięcie poziomu pokazuje, co go tworzy. Wniosek: każdy wyższy poziom składa się z elementów niższego i ma nową funkcję.
 
 Komórki o podobnej budowie i funkcji tworzą **tkanki**, tkanki budują **narządy**, narządy współtworzą **układy narządów**. Na początku hierarchii stoją **atomy** i **cząsteczki** (np. atom węgla w cząsteczce glukozy). W konwencji olimpijskiej atom jest pierwszym poziomem organizacji życia: atom → cząsteczka → organelle → komórka → tkanka → narząd → układ narządów → organizm → populacja → biocenoza → ekosystem → biosfera (konwencję poziomów do potwierdzenia z materiałami etapu). **Nie każdy organizm ma wszystkie poziomy:** bakteria jest jedną komórką, a mchy nie mają tkanek takich jak rośliny nasienne.
 

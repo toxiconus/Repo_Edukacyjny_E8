@@ -3,19 +3,8 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (12 pl., 100 KB)
-- `.gitattributes` 0 KB
-- `.gitignore` 5 KB
-- `CLAUDE.md` 8 KB
-- `MAPA.md` 20 KB
-- `PRZEKAZANIE.md` 8 KB
-- `README.md` 0 KB
-- `SPIS_LEKCJI.md` 6 KB
-- `WERYFIKACJA.md` 39 KB
-- `edit_html.py` 3 KB
-- `fix_encoding.ps1` 1 KB
-- `fix_encoding_v2.ps1` 5 KB
-- `replace_gereb_card.ps1` 5 KB
+## .  (13 pl., 120 KB)
+- (zwinięte; `ls .`)
 
 ## angielski  (9 pl., 1.8 MB)
 - ⚠`ANGIELSKI_PODSTAWA_PLUS_v1.0 (2).md` 474 KB
@@ -32,7 +21,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `W1_ANGIELSKI_ocena_2026-10-09.md` 3 KB
 - `W1_perplexity_ANGIELSKI_2026-10-09.md` 21 KB
 
-## biologia  (11 pl., 2.2 MB)
+## biologia  (12 pl., 2.2 MB)
 - ⚠`BIO.all.v01.00.md` 711 KB
 - ⚠`BIOLOGIA_L001_KOMORKA v4.html` 161 KB
 - ⚠`BIOLOGIA_L002_CZLOWIEK_v4.html` 145 KB
@@ -42,6 +31,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIOLOGIA_L015_MEJOZA.html` 85 KB
 - ⚠`BIOLOGIA_L017_PUNNETT (2).html` 88 KB
 - ⚠`BIOLOGIA_PODSTAWA_PLUS_v3.9_working (5).md` 578 KB
+- `INDEKS.html` 3 KB
 - ⚠`L000-INDEKS-ROKU_MASTER_v1.0 (8) (1).html` 54 KB
 - `STAN_LEKCJI_PODSTAWA_PLUS.md` 15 KB
 
@@ -49,7 +39,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `BIO_KATALOG.md` 3 KB
 - `PRZEKAZANIE.md` 3 KB
 
-## biologia/bio/md  (12 pl., 306 KB)
+## biologia/bio/md  (12 pl., 309 KB)
 - `B10_powtorka_uklady_czlowieka.md` 18 KB
 - `B1b_krzyzowki_mendel.md` 22 KB
 - `B2a_skora_i_uklad_ruchu.md` 18 KB
@@ -59,8 +49,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `B2e_uklad_dokrewny.md` 15 KB
 - `B2f_rozmnazanie_i_rozwoj.md` 17 KB
 - `B2g_homeostaza.md` 31 KB
-- `L010_dna_od_zera.md` 48 KB
-- `REV01_organizacja_i_chemizm_zycia.md` 29 KB
+- ⚠`L010_dna_od_zera.md` 51 KB
+- `REV01_organizacja_i_chemizm_zycia.md` 30 KB
 - ⚠`REV02_roznorodnosc_zycia.md` 55 KB
 
 ## biologia/bio/narzedzia  (2 pl., 10 KB)
@@ -97,7 +87,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIO.010x.v01.00.html` 107 KB
 - `BIO.011w.v01.00.html` 27 KB
 
-## chemia  (1 pl., 0 KB)
+## chemia  (2 pl., 7 KB)
+- `INDEKS.html` 6 KB
 - `PLAN_LEKCJI.md` 0 KB
 
 ## chemia/archiwum  (1 pl., 1 KB)
@@ -130,7 +121,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (17 pl., 138 KB)
+## chemia/che-modular  (17 pl., 139 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -148,10 +139,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `LAYOUT_LEKCJI.md` 5 KB
 - `MD_CEGIELKI.md` 3 KB
 
-## chemia/che-modular/engine/registry  (6 pl., 58 KB)
+## chemia/che-modular/engine/registry  (6 pl., 59 KB)
 - `dane_lekcji.json` 10 KB
 - `domains.json` 4 KB
-- `katalog_oceny.json` 8 KB
+- `katalog_oceny.json` 9 KB
 - `lessons.json` 4 KB
 - `mapa_sekcji.json` 30 KB
 - `subjects.json` 1 KB
@@ -339,12 +330,12 @@ Pominięte: .specstory/, .vscode/, .claude/
 
 ## chemia/che-modular/lessons-md/gotowe  (34 pl., 1.4 MB)
 - (zwinięte; `ls chemia/che-modular/lessons-md/gotowe`) — duże:
-- ⚠`FIZ01_elektrostatyka.md` 51 KB
+- ⚠`FIZ01_elektrostatyka.md` 55 KB
 - ⚠`N01_tlenki.md` 123 KB
 - ⚠`N02_wodorotlenki.md` 129 KB
 - ⚠`N03_kwasy.md` 134 KB
 - ⚠`N04_sole.md` 86 KB
-- ⚠`N05_wodorki.md` 53 KB
+- ⚠`N05_wodorki.md` 56 KB
 - ⚠`REV01_powtorka_klasy_7.md` 63 KB
 
 ## chemia/che-modular/manifests  (5 pl., 9 KB)
@@ -620,7 +611,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## olimpiada/zrodla/pakiet_2026-10-09/research  (1 pl., 5 KB)
 - `RESEARCH_OLIMPIADY_I_KONKURSY_2026-10-09.md` 5 KB
 
-## polski  (18 pl., 2.5 MB)
+## polski  (19 pl., 2.5 MB)
 - (zwinięte; `ls polski`) — duże:
 - ⚠`L001_lekcja (2).html` 174 KB
 - ⚠`L002-PL-Hobbit-nieodmienne-czesc-mowy v2.html` 114 KB

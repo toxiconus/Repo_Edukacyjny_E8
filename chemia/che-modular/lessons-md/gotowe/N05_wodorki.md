@@ -105,6 +105,7 @@ NaH, CH₄, NH₃ i HCl to cztery wodorki pierwiastków leżących w tym samym o
 :::
 
 @model n05-wodorki-v01 | Mapa wodorków: kliknij pierwiastek — wzór, nazwa, typ, rola wodoru | elektroujemność względem H, stan, t. wrzenia, zachowanie w wodzie
+@opis Mapa układu okresowego z przyciskami pierwiastków: po kliknięciu pierwiastka widać wzór jego wodorku, nazwę, typ wiązania (jonowy, pośredni, kowalencyjny lub metaliczny) i rolę wodoru (kation, anion lub neutralny). Wniosek: wodorki metali są jonowe, a niemetali kowalencyjne.
 
 ## 2 | Wzory wodorków — wartościowość względem wodoru [[basic:E8]] {#wzory}
 
@@ -220,6 +221,7 @@ W grupie 16 masa cząsteczek rośnie: H₂O (18) < H₂S (34) < H₂Se (81) < H�
 :::
 
 @model n05-trendy-v01 | Temperatury wrzenia wodorków grup 14–17 | wiązania wodorowe: H₂O, HF i NH₃ wrą „za wysoko”
+@opis Wykres temperatur wrzenia wodorków grup 14–17 w okresach 2–5. W każdej grupie temperatura rośnie wraz z masą cząsteczki, a H₂O, HF i NH₃ leżą wyraźnie powyżej tej tendencji, bo tworzą wiązania wodorowe. Wniosek: wiązania wodorowe podnoszą temperaturę wrzenia.
 
 ::: adv | Ile wiązań wodorowych na cząsteczkę? | poziom LO / akademicki
 H₂O ma 2 atomy H i 2 wolne pary elektronowe — każda cząsteczka może tworzyć średnio do **czterech** wiązań wodorowych (dwa jako donor, dwa jako akceptor), stąd sieć przestrzenna (lód ma strukturę ażurową i mniejszą gęstość niż ciekła woda). HF ma 3 wolne pary, ale tylko 1 atom H — tworzy zygzakowate łańcuchy, w sumie mniej wiązań na cząsteczkę niż woda, więc wrze niżej (19,5 °C), mimo że pojedyncze wiązanie wodorowe F–H···F jest silniejsze. NH₃ ma 3 atomy H, ale tylko 1 wolną parę — wiązań jeszcze mniej (t. wrz. −33 °C).
@@ -253,6 +255,7 @@ Równowaga jest przesunięta w lewo (zasada słaba) — większość amoniaku po
 :::
 
 @model ph-indicators-v03 | Wskaźniki i skala pH | barwy fenoloftaleiny, oranżu i wskaźnika uniwersalnego dla roztworów NH₃, HCl i H₂S
+@opis Skala pH z barwami wskaźników (fenoloftaleina, oranż metylowy, wskaźnik uniwersalny) oraz pozycje roztworów NH₃, HCl i H₂S. Przełączanie roztworu pokazuje, jaka barwa odpowiada kwaśnemu, obojętnemu i zasadowemu odczynowi. Wniosek: amoniak daje odczyn zasadowy, HCl i H₂S kwaśny.
 
 ## 7 | Otrzymywanie wodorków [[basic:E8]] {#otrzymywanie}
 
@@ -354,6 +357,7 @@ Dwa bezbarwne gazy tworzą biały dym drobnych kryształków **chlorku amonu**. 
 $$ H₂S + (CH₃COO)₂Pb → PbS↓ + 2 CH₃COOH
 
 @model n05-doswiadczenia-v01 | Pracownia: doświadczenia z wodorkami | wodorki jonowe z wodą, otrzymywanie NH₃, HCl, H₂S, odczyn roztworów, wykrywanie gazów
+@opis Pracownia z przyciskami doświadczeń z wodorkami: wodorki jonowe z wodą, otrzymywanie NH₃, HCl i H₂S, odczyn roztworów i wykrywanie gazów. Każdy przycisk otwiera zlewkę lub probówkę z opisanym przebiegiem reakcji i obserwacją. Wniosek: uczeń łączy równanie z tym, co widać w naczyniu.
 
 ## 9 | Ważne wodorki i ich zastosowania [[basic:E8]] {#zastosowania}
 
@@ -466,6 +470,7 @@ Równanie:: CaH₂ + 2 H₂O → Ca(OH)₂ + 2 H₂↑
 BHP: Małe ilości, z dala od ognia (poza próbą łuczywa); okulary.
 
 @zlewka n05-doswiadczenia-v01 cah2H2o | Zobacz w zlewce (pracownia GFX)
+@opis Probówka z wodorkiem wapnia i wodą: wydziela się gaz (pęcherzyki wodoru), a roztwór staje się zasadowy, bo powstaje wodorotlenek wapnia. Wniosek: wodorek metalu reaguje z wodą, dając wodór i zasadę.
 :::
 
 ::: dosw | Doświadczenie 2 — Otrzymywanie i wykrywanie amoniaku
@@ -479,6 +484,7 @@ Równanie:: 2 NH₄Cl + Ca(OH)₂ → CaCl₂ + 2 NH₃↑ + 2 H₂O
 BHP: Nie wąchać bezpośrednio; dygestorium; probówkę kierować wylotem od siebie i innych.
 
 @zlewka n05-doswiadczenia-v01 nh4clCaoh2 | Zobacz w zlewce (pracownia GFX)
+@opis Chlorek amonu ogrzany z wodorotlenkiem wapnia: czuć ostry zapach amoniaku, a zwilżony czerwony papierek lakmusowy niebieje. Wniosek: w probówce powstaje NH₃, co służy do jego wykrywania.
 :::
 
 ::: dosw | Doświadczenie 3 — Fontanna amoniakowa
@@ -494,6 +500,7 @@ BHP: Kolba okrągłodenna bez pęknięć (podciśnienie); pokaz nauczyciela.
 > Wariant z chlorowodorem i oranżem metylowym daje czerwoną fontannę — HCl też jest bardzo dobrze rozpuszczalny, a roztwór jest kwasowy.
 
 @zlewka n05-doswiadczenia-v01 nh3H2oPhp | Zobacz w zlewce (pracownia GFX)
+@opis Amoniak rozpuszczony w wodzie z fenoloftaleiną: roztwór barwi się na malinowo, bo odczyn jest zasadowy. Wniosek: roztwór NH₃ zawiera jony OH⁻.
 :::
 
 ::: dosw | Doświadczenie 4 — Otrzymywanie chlorowodoru i kwasu solnego (pokaz)
@@ -507,6 +514,7 @@ Równanie:: NaCl + H₂SO₄ → NaHSO₄ + HCl↑
 BHP: Tylko pokaz nauczyciela pod dygestorium; lejek zapobiega cofnięciu wody do kolby.
 
 @zlewka n05-doswiadczenia-v01 naclH2so4 | Zobacz w zlewce (pracownia GFX)
+@opis Chlorek sodu z kwasem siarkowym(VI) stężonym: wydziela się bezbarwny gaz HCl tworzący białe opary przy wylocie probówki. Wniosek: kwas siarkowy wypiera chlorowodór z soli.
 :::
 
 ::: dosw | Doświadczenie 5 — Siarkowodór i jego wykrywanie (pokaz)
@@ -520,8 +528,10 @@ Równanie:: FeS + 2 HCl → FeCl₂ + H₂S↑
 BHP: H₂S bardzo trujący — tylko pokaz pod dygestorium; sole ołowiu trujące.
 
 @zlewka n05-doswiadczenia-v01 fesHcl | Zobacz w zlewce: otrzymywanie H₂S
+@opis Siarczek żelaza(II) z kwasem solnym: wydziela się gaz o zapachu zgniłych jaj, czyli H₂S. Wniosek: z siarczku i mocnego kwasu powstaje siarkowodór.
 
 @zlewka n05-doswiadczenia-v01 h2sPbac | Zobacz w zlewce: bibuła z octanem ołowiu (PbS)
+@opis Gaz H₂S wylotowy z probówki zwilża bibułę nasączoną octanem ołowiu(II): bibuła czernieje od PbS. Wniosek: H₂S wykrywa się czernieniem octanu ołowiu.
 :::
 
 ::: dosw | Doświadczenie 6 — Biały dym bez ognia
@@ -535,6 +545,7 @@ Równanie:: NH₃ + HCl → NH₄Cl
 BHP: Stężone roztwory — dygestorium, okulary, rękawice.
 
 @zlewka n05-doswiadczenia-v01 nh3Hcl | Zobacz w zlewce (pracownia GFX)
+@opis Amoniak i chlorowodór zbliżają się do siebie: nad miejscem zetknięcia tworzą się białe opary chlorku amonu. Wniosek: NH₃ i HCl reagują, dając sól NH₄Cl.
 :::
 
 ::: dosw | Doświadczenie 7 — Odczyn wodnych roztworów wodorków
@@ -548,8 +559,10 @@ Równanie:: HCl → H⁺ + Cl⁻; H₂S ⇌ H⁺ + HS⁻; NH₃ + H₂O ⇌ NH�
 BHP: Woda siarkowodorowa tylko pod dygestorium; okulary.
 
 @zlewka n05-doswiadczenia-v01 hclH2oOranz | Zobacz w zlewce: HCl + oranż metylowy
+@opis Roztwór HCl z oranżem metylowym: barwa zmienia się na czerwoną, co potwierdza kwaśny odczyn. Wniosek: wodny roztwór HCl jest kwasem.
 
 @zlewka n05-doswiadczenia-v01 h2sH2oUni | Zobacz w zlewce: H₂S + wskaźnik uniwersalny
+@opis Wodny roztwór H₂S ze wskaźnikiem uniwersalnym: barwa odpowiada odczynowi słabo kwaśnemu. Wniosek: H₂S w wodzie daje kwas siarkowodorowy, słaby.
 :::
 
 ::: dosw | Doświadczenie 8 — Skład metanu: wykrywanie produktów spalania
@@ -563,6 +576,7 @@ Równanie:: CH₄ + 2 O₂ → CO₂ + 2 H₂O
 BHP: Uwaga na płomień — związane włosy, brak luźnych rękawów.
 
 @zlewka n05-doswiadczenia-v01 caOH2Co2 | Zobacz w zlewce: CO₂ mętni wodę wapienną
+@opis Gaz CO₂ przepuszczony przez wodę wapienną: roztwór mętnieje od powstającego węglanu wapnia. Wniosek: CO₂ wykrywa się mętnieniem wody wapiennej.
 :::
 
 ## 15 | Klinika błędów {#klinika}

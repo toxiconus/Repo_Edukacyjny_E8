@@ -53,6 +53,7 @@ Ta lekcja to pełne wejście w genetykę — **start działu** (diagnoza L003 je
 W L011 rozbudujemy chemię parowania zasad i geometrię helisy: dlaczego A–T, a nie A–C; dlaczego dwie nici; dlaczego antyrównoległe. Tutaj uczymy się tego, co najważniejsze i obowiązkowe.
 
 @viz od-organizmu-do-genu | Od organizmu do genu | kliknij krok, aby zobaczyć wyjaśnienie
+@opis Schemat zejścia od organizmu przez narządy, tkanki i komórkę do chromosomu, DNA i genu. Kliknięcie kroku pokazuje wyjaśnienie. Wniosek: gen jest fragmentem DNA, a DNA leży w chromosomie w jądrze komórkowym.
 
 ### DNA w jednej minucie — jeżeli wszystko jest nowe, zacznij tutaj
 DNA jest **cząsteczką**. Nie organem, nie komórką i nie gotową cechą. Ta cząsteczka **przechowuje informację genetyczną**. Informacja jest zapisana w uporządkowanej **kolejności** czterech zasad: **A, T, C i G**.
@@ -129,6 +130,7 @@ Bracia: kolor oczu zależy głównie od odziedziczonych genów, a wzrost jest ce
 | **Wieloczynnikowa** | współdziałanie wielu genów, środowiska i rozwoju | wzrost, masa ciała, ciśnienie, kolor skóry | geny tak, ale wynik zależy też od środowiska |
 
 @viz szuflady-cech | Posortuj cechy | wybierz szufladę dla każdej cechy
+@opis Trzy szuflady: cecha dziedziczna, nabyta i wieloczynnikowa. Uczeń przeciąga przykłady (np. grupa krwi, blizna, wzrost) do właściwej szuflady. Wniosek: tylko cechy dziedziczne i część wieloczynnikowych przechodzą na potomstwo, a cechy nabyte nie.
 
 ### 5.3. Dziedziczna czy nabyta — ściąga
 | Pytanie | Dziedziczna | Nabyta |
@@ -164,6 +166,7 @@ Bracia: kolor oczu zależy głównie od odziedziczonych genów, a wzrost jest ce
 ## 6 | Od genu do cechy [[basic:E8]] {#gen-cecha}
 ### 6.1. Model podstawowy
 @viz lancuch {kroki="DNA (gen)|odcinek z informacją > RNA|kopia robocza > białko|produkt genu > funkcja w komórce|np. enzym, barwnik > udział w cesze|fenotyp" boki="+ środowisko; + rozwój" wyroznij="5"} | Od genu do cechy | model uproszczony
+@opis Łańcuch od genu do cechy: DNA (gen) → RNA → białko → funkcja w komórce → udział w cesze → fenotyp, z dopiskiem, że na wynik wpływają też środowisko i rozwój. Kliknięcie etapu wyjaśnia jego rolę. Wniosek: cecha powstaje w wyniku działania genu, ale nie tylko z genu.
 
 To jest **model podstawowy**. W rzeczywistości:
 - nie każdy fragment DNA koduje białko,
@@ -238,6 +241,7 @@ Przechowuje informację biologiczną, ale samo nie jest „żywym organizmem”.
 | Bakterie (prokarionty) | bez jądra — DNA leży w cytoplazmie, w obszarze zwanym **nukleoidem** (często też plazmidy) |
 
 @viz gdzie-dna | Gdzie w komórce jest DNA? | kliknij jądro, mitochondrium, chloroplast, nukleoid, plazmid, erytrocyt lub leukocyt
+@opis Schemat komórek (jądro, mitochondrium, chloroplast, nukleoid bakterii, plazmid, erytrocyt, leukocyt). Kliknięcie struktury pokazuje, czy zawiera DNA. Wniosek: DNA jest w jądrze, mitochondriach i chloroplastach, a erytrocyty dojrzałe go nie mają.
 
 ::: karta exam | Wyjątek — często na egzaminie
 **Dojrzały erytrocyt** człowieka (czerwona krwinka) nie ma jądra ani mitochondriów — dlatego **nie zawiera DNA**. Krew nadal może służyć do badania DNA: materiał pochodzi wtedy z **leukocytów** (białych krwinek), które mają jądro.
@@ -261,6 +265,7 @@ To najczęstsze źródło pomyłek.
 | **Chromosom** | struktura z długiej cząsteczki DNA i białek | jeden tom książki |
 
 @viz poziomy-dna | Chromosom → DNA → gen | kliknij elementy
+@opis Hierarchia chromosom → DNA → gen z kolejnymi przybliżeniami. Kliknięcie elementu pokazuje jego budowę. Wniosek: chromosom zawiera jedną cząsteczkę DNA, a gen to jej fragment kodujący cechę.
 
 ::: div.bv-grid
 ::: karta error | Sformułowanie zdradliwe
@@ -293,6 +298,7 @@ DNA zawiera:
 
 ### 10.1. Nukleotyd — cegiełka DNA
 @viz nukleotyd | Nukleotyd DNA | zmień zasadę przyciskami; kliknij część
+@opis Nukleotyd DNA: cukier deoksyryboza, reszta fosforanowa i zasada azotowa (A, T, C lub G). Przyciski zmieniają zasadę, a kliknięcie części pokazuje jej rolę. Wniosek: informację niesie zasada azotowa, a szkielet tworzą cukier i fosforany.
 
 **Nukleotyd = zasada azotowa + deoksyryboza + reszta fosforanowa.** Nukleotyd to nie sama litera A, T, C lub G — litera oznacza tylko **zasadę azotową**.
 
@@ -311,6 +317,7 @@ DNA zawiera:
 
 ### 10.2. Pary komplementarne — A–T, C–G
 @viz pary-zasad | Dlaczego A–T i C–G? | porównaj pary prawidłowe i błędne
+@opis Porównanie par prawidłowych (A–T, C–G) z błędnymi. Wniosek: A łączy się tylko z T, a C tylko z G, bo tylko takie pary pasują kształtem i mają odpowiednią liczbę wiązań.
 
 **Reguła:** A–T (2 wiązania wodorowe) · C–G (3 wiązania wodorowe).
 1. **Wielkość zasad:** A i G to puryny (większe), T i C to pirymidyny (mniejsze). Para „duża + mała” zachowuje stałą szerokość helisy.
@@ -319,18 +326,22 @@ DNA zawiera:
 
 ### 10.3. Drabina DNA
 @viz drabina {seq="ATGCCA"} | Model drabiny | boki = szkielet cukrowo-fosforanowy, szczeble = pary zasad
+@opis Model drabiny DNA dla sekwencji ATGCCA: boki to szkielet cukrowo-fosforanowy, szczeble to pary zasad. Wniosek: sekwencja jednej nici wyznacza drugą.
 
 Boki drabiny = **szkielet cukrowo-fosforanowy**. Szczeble = **pary zasad** (A–T, C–G). Przerywane linie = **wiązania wodorowe**. Nici są **antyrównoległe**: jedna biegnie 5′→3′, druga 3′→5′. Informacja jest w **kolejności szczebli**.
 
 ### 10.4. Gdzie jest informacja?
 @viz sekwencje {a="ATGCC" b="ATGGC"} | Dwie sekwencje | zmieniła się jedna pozycja
+@opis Dwie sekwencje DNA różniące się jedną pozycją: w zapisie zaznaczono tylko zmienioną zasadę. Wniosek: nawet zmiana jednej zasady tworzy inną sekwencję, co może zmienić cechę.
 
 Informacja jest w **kolejności zasad**, nie w pojedynczej literze ani w „kształcie helisy”. Obie sekwencje mają tyle samo liter i prawie identyczny zapis, a mimo to różnią się informacją — na czwartej pozycji jest inna zasada. Taka zmiana **może, ale nie musi**, wpłynąć na produkt genu i cechę. Analogia: „kot” ≠ „tok” — te same litery, inna kolejność, inne słowo.
 
 @viz pojemnosc {n="10"} | Ile informacji mieszczą cztery litery? | przesuń suwak długości
+@opis Suwak długości sekwencji: przy czterech literach są 4⁴ = 256 możliwych sekwencji, a przy dziesięciu rośnie to do ponad miliona. Wniosek: cztery zasady wystarczają do zapisu ogromnej liczby informacji.
 
 ### 10.5. Helisa — skręcenie w zarysie
 @viz helisa | Od drabiny do helisy | suwak skręca drabinę w podwójną helisę
+@opis Suwak skręca drabinę DNA w podwójną helisę. Wniosek: podwójna helisa to ta sama drabina, tylko skręcona, a kształt nie zmienia zasad pairowania.
 
 - Dwie nici owinięte wokół wspólnej osi (jak skręcona drabina).
 - Szkielet cukrowo-fosforanowy na zewnątrz, zasady wewnątrz.
@@ -356,6 +367,7 @@ Informacja jest w **kolejności zasad**, nie w pojedynczej literze ani w „kszt
 **Przykład prowadzony.** Matryca: `5′– A T G C C A –3′` → nić komplementarna: `3′– T A C G G T –5′`. Wszystkie pary poprawne. Po replikacji powstają 2 cząsteczki, każda = stara + nowa nić (semikonserwatywność, L013).
 
 @viz trener-nici {seq="AGTCCA"} | Trener: ułóż drugą nić | tryb DNA→DNA: A–T, C–G; tryb DNA→RNA: A–U, T–A, C–G, G–C
+@opis Trener komplementarności: uczeń układa drugą nić do podanej sekwencji. W trybie DNA→DNA pary to A–T i C–G, w trybie DNA→RNA A–U, T–A, C–G i G–C. Wniosek: nić komplementarna ma pary według reguł Chargaffa, a w RNA uracyl zastępuje tymin.
 
 ### 10.8. DNA vs RNA — tabela zbiorcza
 | Cecha | DNA | RNA |
