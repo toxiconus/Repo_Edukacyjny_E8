@@ -505,4 +505,4 @@ Sprawdź, czy umiesz:
 - Konwencja zapisu jonowego dla Ca(OH)₂ (pełne czy skrócone) na etapie szkolnym.
 - Stężenia szkolne (ok. 0,1 mol/dm³) i zakres pH zmiany barwy fenoloftaleiny (8,2–10,0).
 - Tabela rozpuszczalności: które pary soli uczeń ma znać na pamięć.
-- Lista doświadczeń etapu szkolnego w aktualnym zakresie LKO 2025/26 (sześć przyjęto na podstawie kanonu).
+- Lista doświadczeń etapu szkolnego w aktualnym zakresie LKO 2026/27 (sześć przyjęto na podstawie kanonu).

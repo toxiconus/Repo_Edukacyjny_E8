@@ -626,7 +626,7 @@ Poprawka wzoru jest słuszna, ale to **nie** bilansowanie. Wzór Ca(OH)₂ wynik
 ## 12 | Obliczenia i doświadczenia konkursowe [[exam:KONKURS]] {#konkurs}
 
 ::: karta exam | Jak wygląda arkusz etapu szkolnego
-Konkurs chemiczny Lubelskiego Kuratora Oświaty (zakres 2025/26, punkt odniesienia): etap szkolny — **60 minut, 40 punktów**, treści podstawy programowej pkt I–VII (substancje, budowa materii, reakcje, tlen i wodór, woda i roztwory, wodorotlenki i kwasy, sole), prosty kalkulator dozwolony. Typy zadań: zamknięte, prawda–fałsz, dobieranie, luki, otwarte, **obliczeniowe i problemowe, opis doświadczeń** (przebieg, warunki, obserwacje, wnioski). Zakres 2026/27 — do sprawdzenia w regulaminie.
+Konkurs chemiczny Lubelskiego Kuratora Oświaty (zakres 2026/27, oficjalny): etap szkolny 23.10.2026, 9:00 — **60 minut, 40 punktów**, treści podstawy programowej pkt I–V (substancje, budowa materii, reakcje, tlen i wodór, woda i roztwory) oraz konfiguracje elektronowe, typy reakcji i wzory z wartościowości; wodorotlenki, kwasy i sole są od 2026/27 na etapie rejonowym (pkt I–VIII). Prosty kalkulator dozwolony. Typy zadań: zamknięte, prawda–fałsz, dobieranie, luki, otwarte, **obliczeniowe i problemowe, opis doświadczeń** (przebieg, warunki, obserwacje, wnioski). Terminarz i zakres: `olimpiada/PRIORYTETY.md` §1.
 :::
 
 ### 12.1 Zawartość procentowa i stosunek masowy {#procent}

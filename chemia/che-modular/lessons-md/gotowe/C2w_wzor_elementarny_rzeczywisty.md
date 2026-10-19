@@ -6,7 +6,7 @@ opis: wzór elementarny i rzeczywisty · wyznaczanie wzoru z procentów przez mo
 kicker: C2w · OLIMPIADA · ETAP WOJEWÓDZKI
 lead: Z danych procentowych odtworzysz wzór związku. Metoda z molem prowadzi do wzoru elementarnego, a masa molowa pozwala znaleźć wzór rzeczywisty — także dla soli krystalicznych z wodą.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:OLIMPIADA WOJEWÓDZKA]]
-uwaga: Poziom 2 (wojewódzki). Rozszerza C1c (wzór najprostszy bez mola). Temperatury rozkładu hydratów są orientacyjne i do weryfikacji w źródle podręcznikowym (CuSO₄·5H₂O, gips). Zakres LKO 2025/26 wymienia wzory elementarne i rzeczywiste przy związkach organicznych (etap III, pkt 2.12), a hydraty nieorganiczne nie są wymienione wprost: §6–7 i ćwiczenia 5, 6, 8 są oznaczone jako poza zakresem LKO 2025/26.
+uwaga: Poziom 2 (wojewódzki). Rozszerza C1c (wzór najprostszy bez mola). Temperatury rozkładu hydratów są orientacyjne i do weryfikacji w źródle podręcznikowym (CuSO₄·5H₂O, gips). Zakres LKO 2026/27 wymienia wzory elementarne i rzeczywiste przy związkach organicznych (etap III, rozszerzenia, pozycja 12), a hydraty nieorganiczne nie są wymienione wprost: §6–7 i ćwiczenia 5, 6, 8 są oznaczone jako poza zakresem LKO 2026/27.
 stopka: **CHEMIA C2w · Wzór elementarny, rzeczywisty i hydraty · wersja robocza po audycie W1 (2026-10-18)**
 ---
 
@@ -103,7 +103,7 @@ Stosunek 1 : 2. Wzór elementarny: **CH₂** (M = 14). n = 28 / 14 = 2. Wzór rz
 
 Obie metody są matematycznie równoważne, bo dzielenie procentów przez masy atomowe to dzielenie gramów przez masy molowe.
 
-### 6. Hydraty — sole krystaliczne z wodą (poza zakresem LKO 2025/26)
+### 6. Hydraty — sole krystaliczne z wodą (poza zakresem LKO 2026/27)
 
 **Hydrat** to sól, która w strukturze krystalicznej zawiera cząsteczki wody. Ta woda to **woda krystalizacyjna**. W zapisie oznaczamy ją kropką: CuSO₄·5H₂O.
 
@@ -141,13 +141,13 @@ Kryształy CuSO₄·5H₂O są niebieskie. Woda krystalizacyjna odchodzi stopnio
 Gips (CaSO₄·2H₂O) po ogrzaniu (temperatura orientacyjna, do weryfikacji) traci część wody i tworzy półhydrat CaSO₄·0,5H₂O, tzw. gips palony. Po zmieszaniu z wodą wiąże ponownie i twardnieje — stąd jego zastosowanie w budownictwie i medycynie.
 :::
 
-@zlewka sole-doswiadczenia-v01 cuso4Hydrate | Zobacz w zlewce: ogrzewanie CuSO₄·5H₂O (poza zakresem LKO 2025/26)
+@zlewka sole-doswiadczenia-v01 cuso4Hydrate | Zobacz w zlewce: ogrzewanie CuSO₄·5H₂O (poza zakresem LKO 2026/27)
 @opis Niebieskie kryształy uwodnionego siarczanu(VI) miedzi(II) ogrzewane w probówce: tracą wodę (para skrapla się u wylotu) i stają się białym proszkiem; po dodaniu kropli wody znów błękitnieją. Wniosek: CuSO₄·5H₂O ⇌ CuSO₄ + 5 H₂O — ubytek masy po ogrzaniu pozwala policzyć liczbę cząsteczek wody krystalizacyjnej.
 
-@klocek probowki-odczyn {tuby="CuSO₄·5H₂O ogrzewany:niebieski:bialy:gaz" kat="45"} | Ogrzewanie hydratu: niebieski kryształ biały, uchodzi para wodna (poza zakresem LKO 2025/26)
-@opis Probówka ustawiona ukośnie (ok. 45°) z niebieskim uwodnionym siarczanem(VI) miedzi(II); podczas ogrzewania barwa zmienia się z niebieskiej na białą, bo odchodzi woda krystalizacyjna, a para wodna unosi się w postaci pęcherzyków. Znacznik PRZED/PO w rogu pokazuje fazę doświadczenia. Treść poza zakresem LKO 2025/26.
+@klocek probowki-odczyn {tuby="CuSO₄·5H₂O ogrzewany:niebieski:bialy:gaz" kat="45"} | Ogrzewanie hydratu: niebieski kryształ biały, uchodzi para wodna (poza zakresem LKO 2026/27)
+@opis Probówka ustawiona ukośnie (ok. 45°) z niebieskim uwodnionym siarczanem(VI) miedzi(II); podczas ogrzewania barwa zmienia się z niebieskiej na białą, bo odchodzi woda krystalizacyjna, a para wodna unosi się w postaci pęcherzyków. Znacznik PRZED/PO w rogu pokazuje fazę doświadczenia. Treść poza zakresem LKO 2026/27.
 
-### 7. Wzór hydratu z danych procentowych (poza zakresem LKO 2025/26)
+### 7. Wzór hydratu z danych procentowych (poza zakresem LKO 2026/27)
 
 **Zadanie:** Hydrat siarczanu miedzi(II) ma 36% wody krystalizacyjnej. Jaki to hydrat?
 
@@ -198,7 +198,7 @@ Związek zawiera 1,2 g C i 0,2 g H. M(rzecz.) = 28 g/mol. Wyznacz wzór elementa
 
 **Rozwiązanie:** n(C) = 0,1 mol, n(H) = 0,2 mol (2 pkt). Wzór elementarny: **CH₂** (M = 14) (1,5 pkt). n = 28 / 14 = 2, wzór rzeczywisty: **C₂H₄** (1,5 pkt).
 
-### Ćwiczenie 5 (6 pkt) — skład procentowy hydratu (poza zakresem LKO 2025/26)
+### Ćwiczenie 5 (6 pkt) — skład procentowy hydratu (poza zakresem LKO 2026/27)
 Oblicz skład procentowy CuSO₄·5H₂O. (M(Cu) = 64, M(S) = 32, M(O) = 16, M(H) = 1.)
 
 **Rozwiązanie:**
@@ -209,7 +209,7 @@ Oblicz skład procentowy CuSO₄·5H₂O. (M(Cu) = 64, M(S) = 32, M(O) = 16, M(H
 
 Sprawdzenie: 100% (suma).
 
-### Ćwiczenie 6 (5 pkt) — wzór hydratu z danych (poza zakresem LKO 2025/26)
+### Ćwiczenie 6 (5 pkt) — wzór hydratu z danych (poza zakresem LKO 2026/27)
 Hydrat siarczanu miedzi(II) ma 36% wody krystalizacyjnej. Podaj wzór.
 
 **Rozwiązanie:** w 100 g: 36 g H₂O, 64 g CuSO₄ (1 pkt). n(H₂O) = 2 mol, n(CuSO₄) = 0,4 mol (2 pkt). Stosunek 5 : 1 (1 pkt). Wzór: **CuSO₄·5H₂O** (1 pkt).
@@ -219,7 +219,7 @@ Oblicz skład procentowy Fe₂O₃. (M(Fe) = 56, M(O) = 16.)
 
 **Rozwiązanie:** M = 160 g/mol (1 pkt). %Fe = 112 / 160 · 100% = **70%** (1,5 pkt). %O = 48 / 160 · 100% = **30%** (1,5 pkt).
 
-### Ćwiczenie 8 (7 pkt) — hydrat z procentów wody (poza zakresem LKO 2025/26)
+### Ćwiczenie 8 (7 pkt) — hydrat z procentów wody (poza zakresem LKO 2026/27)
 Hydrat Na₂CO₃·n H₂O zawiera 62,94% wody krystalizacyjnej. Wyznacz n. (M(Na) = 23, M(C) = 12, M(O) = 16, M(H) = 1.)
 
 **Rozwiązanie:**

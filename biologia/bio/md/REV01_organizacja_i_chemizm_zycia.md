@@ -7,7 +7,7 @@ kicker: REV01 · BIOLOGIA · POWTÓRKA · KONKURS ETAP SZKOLNY
 lead: Pierwsza część zakresu etapu szkolnego: jak zbudowane są organizmy i skąd biorą materię i energię.
 lead: Komórka jako mapa (jądro = DNA, mitochondrium = ATP, chloroplast = fotosynteza), fotosynteza i oddychanie jako dwa różne procesy oraz dwa obowiązkowe doświadczenia — ze światłem i z drożdżami.
 plakietki: [[basic:E8]][[understand:TRENING]][[exam:KONKURS]][[extra:AMBITNE]]
-uwaga: Zakres wg konkursu biologicznego LKO 2025/26 (etap I, pkt I podstawy programowej). Druga część zakresu — REV02 Różnorodność życia. Rozwinięcie komórki i DNA — L010.
+uwaga: Zakres wg konkursu biologicznego LKO 2026/27 (etap I, pkt I podstawy programowej). Druga część zakresu — REV02 Różnorodność życia. Rozwinięcie komórki i DNA — L010. Od 2026/27 w etapie I nie ma tkanek roślinnych (zostają mchy, paprociowe, nagonasienne, okrytonasienne).
 stopka: **BIOLOGIA REV01 v1.0** · Organizacja i chemizm życia · 2026
 ---
 ::: minimum | Muszę umieć — 10 punktów

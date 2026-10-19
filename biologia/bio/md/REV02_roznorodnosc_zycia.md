@@ -7,7 +7,7 @@ kicker: REV02 · BIOLOGIA · POWTÓRKA KL. 5–6 · KONKURS ETAP SZKOLNY
 lead: Etap szkolny konkursu biologicznego obejmuje organizację i chemizm życia oraz całą różnorodność życia z klas 5–6. Ta lekcja zbiera różnorodność w jednym miejscu:
 lead: od zasad klasyfikacji, przez wirusy i bakterie, rośliny i grzyby, po bezkręgowce i kręgowce — zawsze w parze „budowa → funkcja → przystosowanie → znaczenie”.
 plakietki: [[basic:E8]][[understand:TRENING]][[exam:KONKURS]][[extra:AMBITNE]]
-uwaga: Zakres wg konkursu biologicznego LKO 2025/26 (etap I: pkt I i II podstawy programowej). Część „Organizacja i chemizm życia” (komórka, fotosynteza, oddychanie) — lekcja REV01 BIO.
+uwaga: Zakres wg konkursu biologicznego LKO 2026/27 (etap I: pkt I i II podstawy programowej). Część „Organizacja i chemizm życia” (komórka, fotosynteza, oddychanie) — lekcja REV01 BIO. Od 2026/27 w etapie I nie ma tkanek roślinnych (zostają mchy, paprociowe, nagonasienne, okrytonasienne).
 stopka: **BIOLOGIA REV02 v1.0** · Różnorodność życia — powtórka · 2026
 ---
 ::: minimum | Muszę umieć — 12 punktów
