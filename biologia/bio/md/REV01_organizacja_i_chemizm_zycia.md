@@ -8,7 +8,7 @@ lead: Pierwsza część zakresu etapu szkolnego: jak zbudowane są organizmy i s
 lead: Komórka jako mapa (jądro = DNA, mitochondrium = ATP, chloroplast = fotosynteza), fotosynteza i oddychanie jako dwa różne procesy oraz dwa obowiązkowe doświadczenia — ze światłem i z drożdżami.
 plakietki: [[basic:E8]][[understand:TRENING]][[exam:KONKURS]][[extra:AMBITNE]]
 uwaga: Zakres wg konkursu biologicznego LKO 2026/27 (etap I, pkt I podstawy programowej). Druga część zakresu — REV02 Różnorodność życia. Rozwinięcie komórki i DNA — L010. Od 2026/27 w etapie I nie ma tkanek roślinnych (zostają mchy, paprociowe, nagonasienne, okrytonasienne).
-stopka: **BIOLOGIA REV01 v1.1** · Organizacja i chemizm życia · 2026
+stopka: **BIOLOGIA REV01 v1.2** · Organizacja i chemizm życia · 2026
 ---
 
 ::: minimum | Muszę umieć — 12 punktów
@@ -652,7 +652,69 @@ a) Natężenie światła (odległość od źródła światła). b) Im większa o
 - wytwarza inhibitor
 - zamienia się w tłuszcz
 ! Wysoka temperatura zmienia strukturę przestrzenną białka enzymatycznego.
+
+? Zapasem glukozy u zwierząt jest:
+- skrobia
++ glikogen
+- celuloza
+- sacharoza
+! Skrobia — rośliny, glikogen — zwierzęta i grzyby, celuloza — ściana roślin.
 :::
+
+## 12a | Zadania w stylu LKO — chemizm życia {#zadania-lko}
+
+### Zadanie 1. (4 punkty) — odczyt wykresu
+
+W probówkach zawierających jednakową ilość roztworu skrobi i amylazy zmierzono czas potrzebny do całkowitego rozłożenia skrobi w różnych temperaturach.
+
+| Temperatura | 10°C | 20°C | 30°C | 37°C | 50°C | 70°C | 90°C |
+|---|---|---|---|---|---|---|---|
+| Czas rozkładu skrobi | 18 min | 12 min | 8 min | 5 min | 9 min | brak reakcji | brak reakcji |
+
+a) Przedstaw dane na wykresie liniowym: na osi poziomej temperatura, na osi pionowej czas rozkładu skrobi. **(2 pkt)**  
+b) Sformułuj wniosek dotyczący wpływu temperatury na aktywność amylazy. **(1 pkt)**  
+c) Wyjaśnij, dlaczego w temperaturze 90°C nie zaobserwowano rozkładu skrobi. **(1 pkt)**
+
+::: odp | Klucz
+a) Wykres: punkty połączone linią; najniższy czas przy 37°C, wzrost czasu po obu stronach optimum; dla 70°C i 90°C brak punktu lub oznaczenie „brak reakcji”.  
+b) Aktywność amylazy zależy od temperatury: enzym działa najszybciej przy około 37°C, a przy niższych i wyższych temperaturach jego aktywność maleje.  
+c) Wysoka temperatura denaturuje białko enzymatyczne — amylaza traci strukturę przestrzenną i nie może rozkładać skrobi.
+:::
+
+### Zadanie 2. (5 punktów) — planowanie doświadczenia
+
+Uczeń chce sprawdzić, czy nasiona fasoli zawierają tłuszcz. Ma do dyspozycji nasiona fasoli, nasiona słonecznika, papier sączkowy, tłuczek i wodę.
+
+a) Sformułuj problem badawczy. **(1 pkt)**  
+b) Sformułuj hipotezę. **(1 pkt)**  
+c) Zaprojektuj doświadczenie: wskaż próbę badawczą i próbę kontrolną. **(2 pkt)**  
+d) Zapisz możliwą obserwację i wniosek. **(1 pkt)**
+
+::: odp | Klucz
+a) Czy nasiona fasoli zawierają tłuszcz?  
+b) Nasiona fasoli zawierają tłuszcz / nie zawierają tłuszczu — hipoteza musi być sprawdzalna.  
+c) Próba badawcza: rozgniecione nasiona fasoli na papierze sączkowym. Próba kontrolna: kropla wody na papierze sączkowym; dodatkowo można użyć nasion słonecznika jako próby porównawczej z dodatnim wynikiem.  
+d) Obserwacja: po nasionach fasoli pozostaje półprzezroczysty ślad, a ślad po wodzie znika. Wniosek: nasiona fasoli zawierają tłuszcz. Jeśli ślad nie występuje — nie wykazano obecności tłuszczu tą metodą.
+:::
+
+### Zadanie 3. (4 punkty) — budowa a funkcja
+
+Uzupełnij tabelę, wpisując nazwę związku organicznego oraz wyjaśnienie związku między jego budową a funkcją.
+
+| Struktura / przykład | Związek organiczny | Związek budowy z funkcją |
+|---|---|---|
+| hemoglobina | … | … |
+| celuloza w ścianie komórki rośliny | … | … |
+| fosfolipid w błonie komórkowej | … | … |
+| DNA w jądrze komórkowym | … | … |
+
+::: odp | Klucz
+- Hemoglobina — białko; ma miejsce wiążące żelazo, które umożliwia transport tlenu we krwi.  
+- Celuloza — węglowodan (wielocukier); długie, wytrzymałe włókna tworzą sztywną ścianę komórkową, chroniącą komórkę i nadając jej kształt.  
+- Fosfolipid — lipid; ma hydrofilową „głowę” i hydrofobowe „ogony”, dlatego tworzy dwuwarstwę błony komórkowej, która oddziela wnętrze komórki od otoczenia.  
+- DNA — kwas nukleinowy; zbudowany z nukleotydów, przechowuje zapis informacji potrzebnej do budowy białek i przekazywania cech potomstwu.
+:::
+
 
 ## 13 | Fiszki {#fiszki}
 
