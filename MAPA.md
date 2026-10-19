@@ -142,7 +142,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/engine/registry  (6 pl., 59 KB)
 - `dane_lekcji.json` 10 KB
 - `domains.json` 4 KB
-- `katalog_oceny.json` 9 KB
+- `katalog_oceny.json` 10 KB
 - `lessons.json` 4 KB
 - `mapa_sekcji.json` 30 KB
 - `subjects.json` 1 KB
@@ -263,7 +263,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/engine/src/gfx/wspolne/widoki  (1 pl., 4 KB)
 - `che-test-silnika-v01.js` 4 KB
 
-## chemia/che-modular/engine/src/klocki  (40 pl., 243 KB)
+## chemia/che-modular/engine/src/klocki  (41 pl., 249 KB)
 - (zwinięte; `ls chemia/che-modular/engine/src/klocki`)
 
 ## chemia/che-modular/engine/src/klocki/dane  (1 pl., 11 KB)

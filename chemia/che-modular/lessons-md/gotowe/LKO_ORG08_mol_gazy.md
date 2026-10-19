@@ -206,6 +206,9 @@ Elementarny = proporcja (CH₂O); rzeczywisty = substancja (C₂H₄O₂). Bez M
 @klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
 @opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie), pierwsza pomoc (oparzenie, skaleczenie, wdychanie gazu). Wniosek: zasady są takie same przy każdym doświadczeniu i trzeba je znać przed rozpoczęciem pracy.
 
+@klocek zbieranie-gazu {gaz="H2" metoda="woda" gazy="H2,O2,CO2"} | Zbieranie wodoru nad wodą (i porównanie z innymi metodami)
+@opis Scena zbierania gazu: po lewej kolba z reakcją (pęcherzyki w cieczy, nad nią korek), z niej rurka odprowadzająca prowadzi do naczynia po prawej. Gaz jest bezbarwny, więc zaznaczono go ciemnozielonymi kropkami, a powietrze — szarymi. Chipy wybierają gaz i sposób zbierania: naczynie wylotem do góry (gaz cięższy od powietrza opada na dno i wypycha powietrze), wylotem do dołu (gaz lżejszy zbiera się pod dnem) albo nad wodą (gaz wypiera wodę z odwróconego naczynia). Poprawny wybór napełnia naczynie i pokazuje zielony werdykt; zły — gaz ucieka z naczynia albo rozpuszcza się w wodzie, a werdykt jest czerwony. Wniosek: o sposobie zbierania decyduje gęstość względna d = M/29 (cięższy czy lżejszy od powietrza) i rozpuszczalność w wodzie.
+
 ::: dosw | Doświadczenie 1 — Wytworzenie i pomiar wodoru: kontrola objętości molowej (demonstracja)
 **Problem:** Czy z odważonej porcji cynku można przewidzieć objętość wodoru — i czy pomiar potwierdzi Vₘ = 22,4 dm³/mol?
 

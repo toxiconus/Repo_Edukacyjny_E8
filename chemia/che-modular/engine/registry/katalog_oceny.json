@@ -118,9 +118,9 @@
       "ocena": "2026-10-19 (H3, porównanie z zamiennikiem użytym w gotowych lekcjach)"
     },
     "gfx-scene-gasCollection": {
-      "status": "kandydat",
-      "lekcja": "N01 powietrze i gazy",
-      "uwaga": "scena jest w zapowiedzi N01/LEKCJA.md (scenes), a w md gotowym jej brak"
+      "status": "zastąpiony",
+      "zamiennik": "klocek zbieranie-gazu",
+      "uwaga": "sceny nie ma w kodzie; 2026-10-19 zbudowano klocek `zbieranie-gazu` (gaz × sposób zbierania, werdykt z d = M/29 i rozpuszczalnością) — użyty w N01 powietrze §7, N05, ORG08"
     },
     "gfx-scene-heating": {
       "status": "kandydat",

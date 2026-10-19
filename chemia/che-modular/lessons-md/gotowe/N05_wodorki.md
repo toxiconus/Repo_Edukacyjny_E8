@@ -216,6 +216,10 @@ Bor (2,04) i krzem (1,90) są **mniej** elektroujemne od wodoru — formalnie wo
 > Powietrze ma średnią masę molową ok. 29 g/mol. Gaz o M < 29 g/mol jest lżejszy od powietrza (zbieramy go do naczynia odwróconego dnem do góry), o M > 29 g/mol — cięższy (zbieramy do naczynia ustawionego normalnie).
 :::
 
+@klocek zbieranie-gazu {gaz="NH3" gazy="H2,NH3,HCl"} | Jak zbieramy wodorki gazowe: NH₃ i HCl
+@opis Scena zbierania gazu: po lewej kolba z reakcją (pęcherzyki w cieczy, nad nią korek), z niej rurka odprowadzająca prowadzi do naczynia po prawej. Gaz jest bezbarwny, więc zaznaczono go ciemnozielonymi kropkami, a powietrze — szarymi. Chipy wybierają gaz i sposób zbierania: naczynie wylotem do góry (gaz cięższy od powietrza opada na dno i wypycha powietrze), wylotem do dołu (gaz lżejszy zbiera się pod dnem) albo nad wodą (gaz wypiera wodę z odwróconego naczynia). Poprawny wybór napełnia naczynie i pokazuje zielony werdykt; zły — gaz ucieka z naczynia albo rozpuszcza się w wodzie, a werdykt jest czerwony. Wniosek: o sposobie zbierania decyduje gęstość względna d = M/29 (cięższy czy lżejszy od powietrza) i rozpuszczalność w wodzie.
+
+
 ::: karta understand | Dlaczego woda wrze w 100 °C, a siarkowodór w −60 °C?
 W grupie 16 masa cząsteczek rośnie: H₂O (18) < H₂S (34) < H₂Se (81) < H₂Te (130). Gdyby liczyła się tylko masa, woda powinna wrzeć najniżej — mniej więcej w −80 °C. Wrze w **+100 °C**, bo między jej cząsteczkami tworzą się **wiązania wodorowe**: atom H związany z bardzo elektroujemnym O przyciąga wolną parę elektronów atomu O sąsiedniej cząsteczki. To samo dotyczy **HF** i **NH₃** (H przy F lub N). Metan (C nie jest dość elektroujemny) wiązań wodorowych nie tworzy — w grupie 14 temperatury rosną równo z masą.
 :::

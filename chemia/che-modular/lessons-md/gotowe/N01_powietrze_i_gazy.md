@@ -197,6 +197,9 @@ BHP: okulary, rękawice; kwas solny jest żrący; z wodorem pracujemy z daleka o
 | tlenek węgla(IV) CO₂ | woda wapienna; płonące łuczywo | woda **mętnieje**; łuczywo **gaśnie** | wylotem **do góry** (cięższy) |
 | azot N₂ | płonące łuczywo | gaśnie, woda wapienna **nie** mętnieje | — |
 
+@klocek zbieranie-gazu {gaz="H2" gazy="H2,O2,CO2"} | Jak zbieramy gaz? Wybierz gaz i sposób, a potem sprawdź werdykt
+@opis Scena zbierania gazu: po lewej kolba z reakcją (pęcherzyki w cieczy, nad nią korek), z niej rurka odprowadzająca prowadzi do naczynia po prawej. Gaz jest bezbarwny, więc zaznaczono go ciemnozielonymi kropkami, a powietrze — szarymi. Chipy wybierają gaz i sposób zbierania: naczynie wylotem do góry (gaz cięższy od powietrza opada na dno i wypycha powietrze), wylotem do dołu (gaz lżejszy zbiera się pod dnem) albo nad wodą (gaz wypiera wodę z odwróconego naczynia). Poprawny wybór napełnia naczynie i pokazuje zielony werdykt; zły — gaz ucieka z naczynia albo rozpuszcza się w wodzie, a werdykt jest czerwony. Wniosek: o sposobie zbierania decyduje gęstość względna d = M/29 (cięższy czy lżejszy od powietrza) i rozpuszczalność w wodzie.
+
 ::: karta warning | Uwaga na „gaśnie”
 Płonące łuczywo gaśnie zarówno w CO₂, jak i w azocie. **Odróżnia je woda wapienna** — mętnieje tylko z CO₂.
 :::

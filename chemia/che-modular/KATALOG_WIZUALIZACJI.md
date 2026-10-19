@@ -45,7 +45,7 @@ Jedno źródło prawdy: modele (widoki) i elementy gfx. Użycie jest liczone z `
 | `gfx-scene-carbonate` | Węglan wapnia + kwas → CO₂ (woda wapienna) | N01 | używany |  |
 | `gfx-scene-conductivity` | Przewodzenie prądu: elektrolity i dysocjacja | FIZ01, N03, N04 | używany |  |
 | `gfx-scene-dilution` | Rozcieńczanie kwasu: „kwas do wody!" | N03 | używany |  |
-| `gfx-scene-gasCollection` | Zbieranie gazu nad wodą |  | kandydat | scena jest w zapowiedzi N01/LEKCJA.md (scenes), a w md gotowym jej brak; lekcja: N01 powietrze i gazy |
+| `gfx-scene-gasCollection` | Zbieranie gazu nad wodą |  | zastąpiony | sceny nie ma w kodzie; 2026-10-19 zbudowano klocek `zbieranie-gazu` (gaz × sposób zbierania, werdykt z d = M/29 i rozpuszczalnością) — użyty w N01 powietrze §7, N05, ORG08; zamiennik: `klocek zbieranie-gazu` |
 | `gfx-scene-heating` | Ogrzewanie cieczy na trójnogu (palnik Bunsena) |  | kandydat | palnik i trójnóg; prototyp R4 ma własną probówkę z palnikiem; lekcja: C2w (ogrzewanie hydratu), N01 |
 | `gfx-scene-indicator` | Wskaźnik kwasowo-zasadowy w roztworze |  | zastąpiony | N02 i N03 używają wersji z siedmioma roztworami; zamiennik: `gfx-scene-indicatorRack` |
 | `gfx-scene-indicatorRack` | Wskaźnik w siedmiu roztworach (statyw) | N02, N03 | używany |  |
