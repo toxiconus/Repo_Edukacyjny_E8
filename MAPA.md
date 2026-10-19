@@ -7,7 +7,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `.gitattributes` 0 KB
 - `.gitignore` 5 KB
 - `CLAUDE.md` 7 KB
-- `MAPA.md` 19 KB
+- `MAPA.md` 20 KB
 - `PRZEKAZANIE.md` 6 KB
 - `README.md` 0 KB
 - `WERYFIKACJA.md` 39 KB
@@ -129,7 +129,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (13 pl., 101 KB)
+## chemia/che-modular  (14 pl., 117 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -147,9 +147,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `LAYOUT_LEKCJI.md` 5 KB
 - `MD_CEGIELKI.md` 3 KB
 
-## chemia/che-modular/engine/registry  (5 pl., 50 KB)
+## chemia/che-modular/engine/registry  (6 pl., 58 KB)
 - `dane_lekcji.json` 10 KB
 - `domains.json` 4 KB
+- `katalog_oceny.json` 8 KB
 - `lessons.json` 4 KB
 - `mapa_sekcji.json` 30 KB
 - `subjects.json` 1 KB
@@ -437,7 +438,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/sections/anon001/rdzen  (61 pl., 278 KB)
 - (zwinięte; `ls chemia/che-modular/sections/anon001/rdzen`)
 
-## chemia/che-modular/tools  (25 pl., 135 KB)
+## chemia/che-modular/tools  (26 pl., 139 KB)
 - (zwinięte; `ls chemia/che-modular/tools`)
 
 ## chemia/che-modular/tools/_stare  (1 pl., 28 KB)

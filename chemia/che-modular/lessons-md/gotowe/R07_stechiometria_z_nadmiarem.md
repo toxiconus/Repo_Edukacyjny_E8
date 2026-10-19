@@ -105,6 +105,9 @@ Mniejszy jest Mg, więc **Mg jest substratem ograniczającym**, a HCl jest w nad
 
 **Odpowiedź:** Zn ogranicza; powstaje 32,2 g ZnSO₄ i 0,4 g H₂; H₂SO₄ zostaje w nadmiarze 5,4 g.
 
+@model stech-kalkulator-v01 | Kalkulator stechiometryczny: masa, mole, objętość gazu | Silnik CHE · otwiera się w oknie
+@opis Dla wybranej reakcji wpisujesz masę, liczbę moli lub objętość gazu jednej substancji, a model pokazuje tabelę wszystkich substancji (współczynnik, masa molowa, mole, masa, objętość gazu) i tok rozumowania: n = m/M, stosunek współczynników, m = n·M. Objętość gazu liczona jest przy 22,4 dm³/mol (0 °C, 1013 hPa), a masy atomowe są dokładne, więc wynik może różnić się od zadania z masami zaokrąglonymi w drugim miejscu po przecinku. Tryb „limitujący” pokazuje odczynnik w niedomiarze. Wniosek: ilości substancji w reakcji wynikają ze współczynników równania.
+
 ### 6. Pułapka: porównywanie mas wprost
 
 Uczeń widzi 6 g Mg i 8 g HCl i mówi: „HCl jest w nadmiarze, bo 8 > 6". To błąd. Masy reagentów porównujemy przez proporcję z równania, nie wprost.

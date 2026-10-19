@@ -59,7 +59,7 @@ Jedno źródło prawdy: modele (widoki) i elementy gfx. Użycie jest liczone z `
 | `kw-doswiadczenia-v01` | Pracownia: doświadczenia z kwasami | N03 | używany |  |
 | `kw-dysocjacja-v01` | Dysocjacja kwasów na żywo — przeniesienie protonu H⁺ na wodę | FIZ01, N03 | używany |  |
 | `kw-reszty-v01` | Kwas → reszta kwasowa → sole | N03, N04 | używany |  |
-| `kw-szereg-metali-v01` | Szereg aktywności: Mg, Zn, Fe, Cu w kwasie solnym | N03, N04 | używany |  |
+| `kw-szereg-metali-v01` | Szereg aktywności: Mg, Zn, Fe, Cu w kwasie solnym | C1c, N03, N04, X04 | używany |  |
 | `kw-wlasciwosci-v01` | Właściwości stężonych kwasów — pokazy | N03 | używany |  |
 | `lab-beaker-v102` | CHE.LAB — uniwersalna zlewka (pełny panel) · v1.02 |  | narzędzie | pełny panel zlewki (pracownia) |
 | `lab-library-v001` | Biblioteka elementów laboratorium · v1.0 |  | narzędzie | biblioteka elementów laboratorium |
@@ -90,23 +90,23 @@ Jedno źródło prawdy: modele (widoki) i elementy gfx. Użycie jest liczone z `
 | `neutralization` | Równania jonowe — cząsteczkowe, jonowe pełne, jonowe skrócone |  | zastąpiony | jeden zapis; rownania-jonowe-v01 ma wszystkie reakcje; prototyp R4 'npsw' dodaje probówkę i regułę NPSW; zamiennik: `rownania-jonowe-v01` |
 | `obtaining-hcl-steps` | Otrzymywanie kwasu solnego — etapy |  | zastąpiony | etapy otrzymywania HCl; zamiennik: `reakcje-kwasu-v03` |
 | `obtaining-three` | Trzy drogi otrzymywania kwasów |  | zastąpiony | trzy drogi otrzymywania kwasów; zamiennik: `reakcje-kwasu-v03` |
-| `f05-izotopy-v01` | Konstruktor atomu: zmiana p/n/e → inny pierwiastek / izotop / jon + masa atomowa jako średnia ważona (rozszerzenia.js §8) | F05, REV01 | używany |  |
+| `f05-izotopy-v01` | Konstruktor atomu: zmiana p/n/e → inny pierwiastek / izotop / jon + masa atomowa jako średnia ważona (rozszerzenia.js §8) | C1c, F05, REV01 | używany |  |
 | `periodic-54` | Układ okresowy — pierwiastki 1–54, modele atomów, tlenki; **tryby F06** (rozszerzenia.js §9): okres i grupa, blok s/p/d, e⁻ walencyjne, promień kowalencyjny, I energia jonizacji, karta „adres → elektrony → przewidywanie”; stan testowy `host._st.set(symbol, tryb)` | F04, F06, N01, REV01 | używany |  |
 | `ph-indicators-v03` | Panel pH — wskaźniki, roztwory, drabinka · v0.05 | N02, N03, N05 | używany |  |
 | `ph-ladder` | Obliczanie pH — od stężenia do pH |  | rozszerzony | obliczanie pH od stężenia (√(Ka·c)); poza zakresem LKO |
 | `reaction` | Reakcja |  | narzędzie | widok danych centralnych (reakcja) |
 | `reakcje-kwasu-v03` | Reakcje kwasów — zlewka modułowa · CHE.LAB v1.02 | N03 | używany |  |
-| `rownania-jonowe-v01` | Równania jonowe — wszystkie reakcje z silnika | N02, N03, N04 | używany |  |
+| `rownania-jonowe-v01` | Równania jonowe — wszystkie reakcje z silnika | C1c, J03, N02, N03, N04 | używany |  |
 | `safety` | Bezpieczeństwo — pierwsza pomoc i zasady |  | kandydat | pierwsza pomoc i zasady BHP; lekcja: C4 doświadczenia zbiorczo, LAB |
 | `sole-doswiadczenia-v01` | Pracownia: doświadczenia z solami | N04 | używany |  |
 | `species-v01` | Formy kwasu a pH — diagram rozkładu · v0.01 |  | rozszerzony | diagram rozkładu form kwasu a pH |
-| `stech-kalkulator-v01` | Kalkulator stechiometryczny — masa, mole, objętość gazu, odczynnik limitujący | N01, N04 | używany |  |
+| `stech-kalkulator-v01` | Kalkulator stechiometryczny — masa, mole, objętość gazu, odczynnik limitujący | C2m, C3, N01, N04, R07 | używany |  |
 | `substance` | Substancja |  | narzędzie | widok danych centralnych (substancja) |
-| `tabela-rozpuszczalnosci-v01` | Tabela rozpuszczalności (20 °C) | N02, N03, N04, REV01 | używany |  |
+| `tabela-rozpuszczalnosci-v01` | Tabela rozpuszczalności (20 °C) | C1c, J03, N02, N03, N04, REV01 | używany |  |
 | `timeline` | Historia pojęcia kwasu — 5 scen |  | ciekawostka | historia pojęcia kwasu, 5 scen; lekcja: N03 |
 | `titration-merged` | Titracja — scalony model: typ + wskaźnik + krzywa + kolba | N03 | używany |  |
-| `n05-wodorki-v01` | Mapa wodorków — typ, rola wodoru, właściwości | N05 | używany |  |
-| `n05-trendy-v01` | Temperatury wrzenia wodorków — wiązania wodorowe | N05 | używany |  |
+| `n05-wodorki-v01` | Mapa wodorków — typ, rola wodoru, właściwości | C1c, N05 | używany |  |
+| `n05-trendy-v01` | Temperatury wrzenia wodorków — wiązania wodorowe | C1c, N05 | używany |  |
 | `n05-doswiadczenia-v01` | Pracownia: doświadczenia z wodorkami | N05 | używany |  |
 | `f09-trzy-liczby-v01` | Ładunek, wartościowość, stopień utlenienia — ta sama drobina, trzy pytania |  | czeka | lekcja: F09 |
 | `f10-energia-h2-v01` | Energia dwóch atomów wodoru — skąd się bierze wiązanie |  | czeka | lekcja: F10 |
@@ -123,17 +123,17 @@ Nieużyte bez oceny: brak
 
 | lekcja | propozycja z istniejących |
 |---|---|
-| C1c_konfiguracje_elektronowe | prototyp R4 'konf' (Z ≤ 36); docelowo molecule-orbitals po ulepszeniu; atomSVG z powloki:true |
-| C1c_kwasy_zasady_sole | rownania-jonowe-v01, kw-szereg-metali-v01, tabela-rozpuszczalnosci-v01, acid-game; prototyp R4 'npsw' |
-| C1c_wodorki_typy_reakcji | n05-wodorki-v01, n05-trendy-v01, energy-profile |
-| C1c_masy_sklad_procentowy | f05-izotopy-v01 (średnia ważona masy atomowej) |
-| C2m_mol_masa_molowa | stech-kalkulator-v01 (prototyp R4 'mol') |
-| C2w_wzor_elementarny_rzeczywisty | sole-doswiadczenia-v01 (cuso4Hydrate) lub prototyp R4 'hydrat'; gfx-scene-heating |
-| C3_rownania_i_obliczenia_z_rownan | stech-kalkulator-v01 |
+| C1c_konfiguracje_elektronowe | BRAK: molecule-orbitals obsługuje tylko wybrane atomy; zrobić widok z prototypu R4 „konf” (Z ≤ 36, 4s przed 3d, powłoki K–N) |
+| C1c_kwasy_zasady_sole | wstawione: kw-szereg-metali-v01, tabela-rozpuszczalnosci-v01, rownania-jonowe-v01; zostaje acid-game |
+| C1c_wodorki_typy_reakcji | wstawione: n05-wodorki-v01, n05-trendy-v01; zostaje energy-profile (sprawdzić model przed wstawieniem) |
+| C1c_masy_sklad_procentowy | wstawione: f05-izotopy-v01 |
+| C2m_mol_masa_molowa | wstawione: stech-kalkulator-v01 (tylko mol z reakcji); BRAK ogólnego kalkulatora n=m/M, N, V dla dowolnej M — nowy widok z prototypu R4 „mol” |
+| C2w_wzor_elementarny_rzeczywisty | wstawione: sole-doswiadczenia-v01 cuso4Hydrate (oznaczone poza zakresem) |
+| C3_rownania_i_obliczenia_z_rownan | wstawione: stech-kalkulator-v01 |
 | C4_doswiadczenia_zbiorczo | safety, lab-stations-v102, pracownie n02/sole/kw-doswiadczenia |
-| J03_rownania_jonowe_i_stracanie | rownania-jonowe-v01, tabela-rozpuszczalnosci-v01, prototyp R4 'npsw' |
-| R07_stechiometria_z_nadmiarem | stech-kalkulator-v01 (odczynnik limitujący) |
-| X04_szereg_aktywnosci_metali | kw-szereg-metali-v01 (prototyp R4 'metal') |
+| J03_rownania_jonowe_i_stracanie | wstawione: tabela-rozpuszczalnosci-v01, rownania-jonowe-v01 |
+| R07_stechiometria_z_nadmiarem | wstawione: stech-kalkulator-v01 |
+| X04_szereg_aktywnosci_metali | wstawione: kw-szereg-metali-v01 |
 
 ## Elementy gfx (szczegóły: `engine/src/gfx/KATALOG.md`)
 

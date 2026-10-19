@@ -125,6 +125,9 @@ Współczynniki w równaniu reakcji określają **stosunek liczby moli** substra
 
 **Wniosek:** obie metody dają ten sam wynik. Metoda z molem jest ogólniejsza — szczególnie gdy występują gazy, objętości i więcej niż dwa substraty.
 
+@model stech-kalkulator-v01 | Kalkulator stechiometryczny: masa, mole, objętość gazu | Silnik CHE · otwiera się w oknie
+@opis Dla wybranej reakcji wpisujesz masę, liczbę moli lub objętość gazu jednej substancji, a model pokazuje tabelę wszystkich substancji (współczynnik, masa molowa, mole, masa, objętość gazu) i tok rozumowania: n = m/M, stosunek współczynników, m = n·M. Objętość gazu liczona jest przy 22,4 dm³/mol (0 °C, 1013 hPa), a masy atomowe są dokładne, więc wynik może różnić się od zadania z masami zaokrąglonymi w drugim miejscu po przecinku. Tryb „limitujący” pokazuje odczynnik w niedomiarze. Wniosek: ilości substancji w reakcji wynikają ze współczynników równania.
+
 ### 6. Porównanie metod
 
 | Cecha | Bez mola (C1c) | Z molem (C2m) |

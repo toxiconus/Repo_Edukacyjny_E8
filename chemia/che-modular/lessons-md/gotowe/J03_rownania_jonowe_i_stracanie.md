@@ -62,6 +62,9 @@ R — rozpuszczalne, N — nierozpuszczalne, słabo — słabo rozpuszczalne. Ta
 6. Wodorotlenki są w większości nierozpuszczalne; wyjątki: NaOH, KOH, Ba(OH)₂.
 7. Węglany są w większości nierozpuszczalne; wyjątki: Na, K, NH₄.
 
+@model tabela-rozpuszczalnosci-v01 | Tabela rozpuszczalności soli i wodorotlenków (20 °C) | Silnik CHE · otwiera się w oknie
+@opis Tabela: w kolumnach kationy, w wierszach aniony, w komórkach litery R (rozpuszczalny, zielone tło), T (trudno rozpuszczalny, żółte), N (praktycznie nierozpuszczalny, czerwone) i „—” (nie istnieje w wodzie lub rozkłada się). Kliknięcie komórki pokazuje wzór i nazwę związku, a dla osadów ich barwę. Wniosek: osad powstaje, gdy w roztworze spotkają się jony dające związek N lub T — tabela rozstrzyga, czy reakcja strąceniowa zajdzie.
+
 ### 3. Algorytm zapisu w trzech formach
 
 1. Napisz równanie cząsteczkowe, dobierz współczynniki i oznacz osad strzałką ↓ (gaz ↑).
@@ -105,6 +108,9 @@ Papka barytowa (BaSO₄ z wodą) bywa podawana przed badaniem rentgenowskim prze
 ::: ciekawostka
 Związki ołowiu są toksyczne. Doświadczenie wykonuje się w rękawicach i z zachowaniem ostrożności.
 :::
+
+@model rownania-jonowe-v01 | Równania jonowe: wybierz reakcję i zobacz trzy zapisy | Silnik CHE · otwiera się w oknie
+@opis Wybierasz reakcję (zobojętnianie, strącanie osadów, węglany, metale z kwasami); model pokazuje ten sam proces jako równanie cząsteczkowe, jonowe pełne i jonowe skrócone, a obok animację w probówce. W zapisie jonowym osad (↓), gaz (↑) i woda są zapisane cząsteczkowo, a jony widzowe występują po obu stronach i są pomijane w zapisie skróconym. Wniosek: zapis skrócony pokazuje, co faktycznie reaguje.
 
 ### 7. Kiedy zachodzi reakcja wymiany?
 
