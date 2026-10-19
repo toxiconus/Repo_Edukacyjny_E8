@@ -3,6 +3,7 @@
      kolory: bezbarwny, pomaranczowy, mleczny, niebieski, szafirowy, bialy, fioletowy, zielony
      efekt:  osad (cząstki opadają), gaz (pęcherzyki unoszą się), brak
    Przykład: tuby="Kontrola:pomaranczowy:pomaranczowy:brak,Eten:pomaranczowy:bezbarwny:brak"
+   Opcja kat: pochylenie probówek w stopniach (np. 45 przy ogrzewaniu); poziom cieczy zostaje poziomy.
    Animacja w cyklu 7 s: przed → przejście → po. Klik zatrzymuje/wznawia (montuj). */
 (function () {
   var KOL = {
@@ -31,7 +32,7 @@
 
   KLOCKI.def('probowki-odczyn', {
     opis: 'Probówki przed i po dodaniu odczynnika: zmiana barwy, opadający osad lub pęcherzyki gazu.',
-    domyslne: {tuby: 'Kontrola:bezbarwny:bezbarwny:brak,Woda wapienna + CO₂:bezbarwny:mleczny:osad', szer: 480, wys: 300},
+    domyslne: {tuby: 'Kontrola:bezbarwny:bezbarwny:brak,Woda wapienna + CO₂:bezbarwny:mleczny:osad', szer: 480, wys: 300, kat: 0},
     stan0: function () { return {}; },
     rysuj: function (x, w, h, s, t, opc) {
       var tuby = probowki(opc.tuby);
@@ -40,7 +41,8 @@
       if (!n) return;
       var cykl = t % 7;
       var p = sm((cykl - 2) / 1.5);                 // 0 = przed, 1 = po
-      var gap = 16, tw = Math.min(96, (w - 30 - (n - 1) * gap) / n);
+      var kz = Math.abs(Number(opc.kat) || 0) * Math.PI / 180;
+      var gap = 16 + (kz ? 60 * Math.sin(kz) : 0), tw = Math.min(96, (w - 30 - (n - 1) * gap) / n);
       var top = 30, bot = h - 62, x0 = (w - (n * tw + (n - 1) * gap)) / 2;
       x.textAlign = 'center'; x.textBaseline = 'middle';
 
@@ -49,6 +51,9 @@
         var lvl = bot - (bot - top) * 0.6;
         var barwa = mieszaj(kol(tb.przed), kol(tb.po), p);
         var pozostaje = (tb.efekt === 'osad' && p > 0.6) ? 0.9 : 0.85;
+        var ang = (Number(opc.kat) || 0) * Math.PI / 180;   // pochylenie probówki (np. 45 przy ogrzewaniu)
+        x.save();
+        if (ang) { x.translate(X + rr, (top + bot) / 2); x.rotate(ang); x.translate(-(X + rr), -(top + bot) / 2); }
 
         // korpus probówki jako ścieżka (używana też do przycięcia cieczy)
         function korpus() {
@@ -62,7 +67,8 @@
         x.save(); korpus(); x.lineTo(X + tw - 1, top - 2); x.lineTo(X + 1, top - 2); x.closePath(); x.clip();
         x.globalAlpha = pozostaje;
         x.fillStyle = barwa;
-        x.fillRect(X, lvl, tw, bot - lvl);
+        if (ang) { x.save(); x.translate(X + rr, lvl); x.rotate(-ang); x.fillRect(-tw * 2, 0, tw * 4, h); x.restore(); }
+        else x.fillRect(X, lvl, tw, bot - lvl);
         x.globalAlpha = 1;
         x.restore();
 
@@ -92,6 +98,7 @@
         // korpus probówki (zaokrąglone dno)
         x.strokeStyle = '#64748b'; x.lineWidth = 2;
         korpus(); x.stroke();
+        x.restore();
 
         // podpis
         x.fillStyle = '#0f172a'; x.font = '12px system-ui, sans-serif';
