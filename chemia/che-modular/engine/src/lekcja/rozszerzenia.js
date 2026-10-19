@@ -6,15 +6,15 @@ var V=C.VIEW,G=C.LAB&&C.LAB.GFX,rx=G&&G.rx;
 function el(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e}
 var css=el('style');css.textContent=
 '.x5{font:14px/1.5 Inter,system-ui,sans-serif;color:inherit}.x5>*{width:100%;box-sizing:border-box}.x5 .bar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:4px 0 8px}.x5 .bar b{min-width:150px;font-size:13px}'+
-'.x5 button.o{border:1px solid var(--line,#d5dee6);background:var(--panel,#fff);color:inherit;border-radius:8px;padding:5px 10px;font:600 12.5px Inter,system-ui;cursor:pointer}.x5 button.o.on{background:#0d6868;color:#fff;border-color:#0d6868}'+
+'.x5 button.o{border:1px solid var(--line,#cdd5dd);background:var(--panel,#fff);color:inherit;border-radius:8px;padding:5px 10px;font:600 12.5px Inter,system-ui;cursor:pointer}.x5 button.o.on{background:#0d6868;color:#fff;border-color:#0d6868}'+
 '.x5 .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:12px;align-items:start}.x5 .eq{font:700 15px ui-monospace,Consolas,monospace;margin:4px 0 8px;overflow-wrap:anywhere}'+
-'.x5 .nt{border-left:3px solid #0d6868;background:var(--panel-2,#f1f5f8);padding:8px 10px;border-radius:6px;font-size:13.5px}.x5 .tch{color:#b83a45;font-weight:700}'+
+'.x5 .nt{border-left:3px solid #0d6868;background:var(--panel-2,#f6f8fa);padding:8px 10px;border-radius:6px;font-size:13.5px}.x5 .tch{color:#b83a45;font-weight:700}'+
 '.x5 .pt{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:4px;max-width:560px}.x5 .pt .h{font:700 10.5px system-ui;color:var(--mut,#667382);text-align:center;align-self:end}'+
-'.x5 .pt button{aspect-ratio:1;min-width:0;border-radius:8px;border:2px solid transparent;font:800 15px system-ui;cursor:pointer;padding:0;color:#18212b}.x5 .pt button small{display:block;font:600 9px system-ui;opacity:.75}'+
-'.x5 .pt button.on{border-color:#18212b;box-shadow:0 0 0 2px #fff inset}.x5 .t-jon{background:#fbd9b0}.x5 .t-kow{background:#bfe3e0}.x5 .t-pol{background:#d8e6c0}.x5 .t-met{background:#d4d9df}.x5 .t-pos{background:#e9d5f0}'+
+'.x5 .pt button{aspect-ratio:1;min-width:0;border-radius:8px;border:2px solid transparent;font:800 15px system-ui;cursor:pointer;padding:0;color:#1b2430}.x5 .pt button small{display:block;font:600 9px system-ui;opacity:.75}'+
+'.x5 .pt button.on{border-color:#1b2430;box-shadow:0 0 0 2px #fff inset}.x5 .t-jon{background:#fbd9b0}.x5 .t-kow{background:#bfe3e0}.x5 .t-pol{background:#d8e6c0}.x5 .t-met{background:#cdd5dd}.x5 .t-pos{background:#e9d5f0}'+
 '.x5 .lg{display:flex;flex-wrap:wrap;gap:10px;font-size:12px;margin:8px 0}.x5 .lg span{display:inline-flex;align-items:center;gap:5px}.x5 .lg i{width:14px;height:14px;border-radius:4px;display:inline-block}'+
-'.x5 table.k{border-collapse:collapse;width:100%;font-size:13.5px}.x5 table.k td{padding:4px 6px;border-bottom:1px solid var(--line,#e2e8ee);vertical-align:top}.x5 table.k td:first-child{color:var(--mut,#667382);width:42%}'+
-'.x5 .en{height:10px;border-radius:5px;background:linear-gradient(90deg,#f0a35e,#e9e3c9 50%,#58b4ae);position:relative;margin:4px 0 14px}.x5 .en i{position:absolute;top:-4px;width:3px;height:18px;background:#18212b}.x5 .en em{position:absolute;top:12px;font:600 10px system-ui;transform:translateX(-50%);font-style:normal;white-space:nowrap}'+
+'.x5 table.k{border-collapse:collapse;width:100%;font-size:13.5px}.x5 table.k td{padding:4px 6px;border-bottom:1px solid var(--line,#e5e9ee);vertical-align:top}.x5 table.k td:first-child{color:var(--mut,#667382);width:42%}'+
+'.x5 .en{height:10px;border-radius:5px;background:linear-gradient(90deg,#f0a35e,#e9e3c9 50%,#58b4ae);position:relative;margin:4px 0 14px}.x5 .en i{position:absolute;top:-4px;width:3px;height:18px;background:#1b2430}.x5 .en em{position:absolute;top:12px;font:600 10px system-ui;transform:translateX(-50%);font-style:normal;white-space:nowrap}'+
 '.x5 svg text{font:12px system-ui;fill:currentColor}.x5 .che-zoom-frame{width:100%!important;max-width:640px}.x5 .che-zoom-frame>svg{width:100%!important}';
 document.head.appendChild(css);
 
@@ -135,7 +135,7 @@ V.define('n05-trendy-v01',{title:'Temperatury wrzenia wodorków — wiązania wo
   Object.keys(BP).forEach(function(g){var b=el('button','o on',g+' ('+BP[g][0]+'…)');b.type='button';b.onclick=function(){on[g]=!on[g];b.classList.toggle('on',!!on[g]);draw()};bar.appendChild(b)});
   function draw(){var W=560,H=330,L=48,R=90,T=26,B=34,y0=-180,y1=110,X=function(i){return L+i*(W-L-R)/3},Y=function(v){return T+(y1-v)/(y1-y0)*(H-T-B)};
    var s='<svg viewBox="0 0 '+W+' '+H+'" width="100%" style="max-width:640px;display:block" role="img" aria-label="Wykres temperatur wrzenia wodorków">';
-   for(var v=-150;v<=100;v+=50)s+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+Y(v)+'" y2="'+Y(v)+'" stroke="#c9d3dc" stroke-width="'+(v===0?1.4:.6)+'"/><text x="'+(L-6)+'" y="'+(Y(v)+4)+'" text-anchor="end">'+v+'</text>';
+   for(var v=-150;v<=100;v+=50)s+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+Y(v)+'" y2="'+Y(v)+'" stroke="#cdd5dd" stroke-width="'+(v===0?1.4:.6)+'"/><text x="'+(L-6)+'" y="'+(Y(v)+4)+'" text-anchor="end">'+v+'</text>';
    ['okres 2','okres 3','okres 4','okres 5'].forEach(function(t,i){s+='<text x="'+X(i)+'" y="'+(H-12)+'" text-anchor="middle">'+t+'</text>'});
    s+='<text x="'+(L-6)+'" y="12" text-anchor="end" style="font-size:11px">°C</text>';
    Object.keys(BP).forEach(function(g){if(!on[g])return;var d=BP[g],v=d[4],c=d[5],pts=v.map(function(y,i){return X(i)+','+Y(y)}).join(' ');
@@ -213,19 +213,19 @@ function supN(n){return String(n).replace(/[0-9]/g,function(d){return '⁰¹²³
 function subN(n){return String(n).replace(/[0-9]/g,function(d){return '₀₁₂₃₄₅₆₇₈₉'[d]})}
 function chg(q){return q===0?'':(Math.abs(q)>1?supN(Math.abs(q)):'')+(q>0?'⁺':'⁻')}
 function pl(x,d){return x.toFixed(d).replace('.',',')}
-/* atomSVG — komponent wielokrotnego użytku (F05, F07, A01…): model atomu jako SVG, kolory jak w atlasie (_anon_004 bohr: elektrony wewnętrzne #2f8a55, walencyjne #b85f00).
+/* atomSVG — komponent wielokrotnego użytku (F05, F07, A01…): model atomu jako SVG, kolory jak w atlasie (_anon_004 bohr: elektrony wewnętrzne #2e7d4f, walencyjne #b85f00).
    o = {p, n, e, powloki:false|true, W:260}. powloki:false → elektrony na jednym okręgu (F05; powłoki to pojęcie F07);
    powloki:true → powłoki K, L, M, N wg modelu szkolnego 2, 8, 8, … (do Z = 20; dalej uproszczenie — do weryfikacji). Zwraca otwarty <svg…> (zamknąć '</svg>'). */
 function atomSVG(o){var W=o.W||260,C=W/2,p=o.p|0,n=o.n|0,e=o.e|0,svg='<svg viewBox="0 0 '+W+' '+W+'" width="100%" style="max-width:'+W+'px;display:block;margin:auto" role="img" aria-label="Model atomu: '+p+' p, '+n+' n, '+e+' e">';
  var N=p+n,sk=W/260;
- for(var i=0;i<N;i++){var a=i*2.39996,r=4.2*sk*Math.sqrt(i+.5);svg+='<circle cx="'+(C+r*Math.cos(a)).toFixed(1)+'" cy="'+(C+r*Math.sin(a)).toFixed(1)+'" r="'+(4.6*sk).toFixed(1)+'" fill="'+(Math.floor((i+1)*p/N)>Math.floor(i*p/N)?'#d9534f':'#8a949e')+'" stroke="#fff" stroke-width=".8"/>'}
+ for(var i=0;i<N;i++){var a=i*2.39996,r=4.2*sk*Math.sqrt(i+.5);svg+='<circle cx="'+(C+r*Math.cos(a)).toFixed(1)+'" cy="'+(C+r*Math.sin(a)).toFixed(1)+'" r="'+(4.6*sk).toFixed(1)+'" fill="'+(Math.floor((i+1)*p/N)>Math.floor(i*p/N)?'#d9534f':'#7f8da0')+'" stroke="#fff" stroke-width=".8"/>'}
  var sh=[];if(o.powloki){var cap=[2,8,8],left=e;for(var q=0;left>0;q++){var c=q<3?Math.min(cap[q],left):left;sh.push(c);left-=c}}else if(e)sh=[e];
  var R0=o.powloki?Math.max(40*sk,6*sk*Math.sqrt(N)+18*sk):104*sk,st=sh.length>1?(104*sk-R0)/(sh.length-1):0;
  sh.forEach(function(cnt,q){var R=sh.length>1?R0+q*st:(o.powloki?R0:104*sk),wal=o.powloki&&q===sh.length-1;
-  svg+='<circle cx="'+C+'" cy="'+C+'" r="'+R.toFixed(1)+'" fill="none" stroke="#9aa6b2" stroke-dasharray="4 4"/>';
+  svg+='<circle cx="'+C+'" cy="'+C+'" r="'+R.toFixed(1)+'" fill="none" stroke="#9aa6b6" stroke-dasharray="4 4"/>';
   if(o.powloki)svg+='<text x="'+(C+R*0.71+4).toFixed(1)+'" y="'+(C-R*0.71-4).toFixed(1)+'" font-size="'+(11*sk).toFixed(0)+'" fill="#5b6773">'+'KLMN'[q]+'</text>';
-  for(var k=0;k<cnt;k++){var b=k/cnt*2*Math.PI-Math.PI/2;svg+='<circle cx="'+(C+R*Math.cos(b)).toFixed(1)+'" cy="'+(C+R*Math.sin(b)).toFixed(1)+'" r="'+(5*sk).toFixed(1)+'" fill="'+(o.powloki?(wal?'#b85f00':'#2f8a55'):'#2f7bd8')+'"/>'}});
- if(!e)svg+='<circle cx="'+C+'" cy="'+C+'" r="'+(104*sk)+'" fill="none" stroke="#9aa6b2" stroke-dasharray="4 4"/>';
+  for(var k=0;k<cnt;k++){var b=k/cnt*2*Math.PI-Math.PI/2;svg+='<circle cx="'+(C+R*Math.cos(b)).toFixed(1)+'" cy="'+(C+R*Math.sin(b)).toFixed(1)+'" r="'+(5*sk).toFixed(1)+'" fill="'+(o.powloki?(wal?'#b85f00':'#2e7d4f'):'#2f7bd8')+'"/>'}});
+ if(!e)svg+='<circle cx="'+C+'" cy="'+C+'" r="'+(104*sk)+'" fill="none" stroke="#9aa6b6" stroke-dasharray="4 4"/>';
  return svg}
 try{C.LAB=C.LAB||{};C.LAB.atomSVG=atomSVG}catch(_){}
 /* atomBohr, orbitalCloud → engine/src/dodatki/atlas-gfx.js (wspólne dla labu i lekcji, CHE.LAB.*) */
@@ -247,7 +247,7 @@ V.define('f05-izotopy-v01',{title:'Izotop, jon czy inny pierwiastek? Konstruktor
   function draw(){var A=s.p+s.n,q=s.p-s.e,X=sym(s.p),d=izo(s.p);
    /* rysunek: jądro (p czerwone, n szare) + elektrony na jednym okręgu (rozmieszczenie na powłokach — F07) */
    var svg=atomSVG({p:s.p,n:s.n,e:s.e});
-   pic.innerHTML=svg+'</svg><div class="nt" style="text-align:center"><span style="color:#d9534f">●</span> proton &nbsp; <span style="color:#8a949e">●</span> neutron &nbsp; <span style="color:#2f7bd8">●</span> elektron <small>(elektrony na jednym okręgu — powłoki: F07)</small></div>';
+   pic.innerHTML=svg+'</svg><div class="nt" style="text-align:center"><span style="color:#d9534f">●</span> proton &nbsp; <span style="color:#7f8da0">●</span> neutron &nbsp; <span style="color:#2f7bd8">●</span> elektron <small>(elektrony na jednym okręgu — powłoki: F07)</small></div>';
    var iso=d&&d[2].filter(function(x){return x[0]===A})[0];
    var zm=[];if(s.p!==start.p)zm.push('<b>zmieniła się liczba protonów</b> → to już <b>inny pierwiastek</b> ('+sym(start.p)+' → '+X+')');
    else{if(s.n!==start.n)zm.push('zmieniła się liczba neutronów → <b>inny izotop</b> tego samego pierwiastka');if(s.e!==start.e)zm.push('zmieniła się liczba elektronów → <b>jon</b>, pierwiastek ten sam')}
@@ -312,11 +312,11 @@ if(!D.COVALENT_RADIUS_EXT)D.COVALENT_RADIUS_EXT={unit:'pm',source:'Cordero i in.
    if(box&&box.parentNode)box.parentNode.insertBefore(card,box.nextSibling);else host.appendChild(card);
    function paint(){if(!m)return;var bs=grid.children,max=0,min=1e9,vals=E.map(function(e){return m==='r'?rad(e.s):m==='ie'?ie(e.s):null});
     vals.forEach(function(v){if(v!=null){max=Math.max(max,v);min=Math.min(min,v)}});
-    E.forEach(function(e,i){var b=bs[i];if(!b)return;var bg='#f8fafc',bd='#cbd5e1',lab='',dark=false,fade=false;
-     if(m==='adres'){var inP=e.p===sel.p,inG=e.g===sel.g;bg=inP&&inG?'#0d6868':inP?'#cde8e6':inG?'#fde7c8':'#f8fafc';bd=inP&&inG?'#0d6868':inP?'#0d6868':inG?'#c98a0b':'#e2e8f0';dark=inP&&inG;fade=!inP&&!inG;lab=inP&&inG?'okr '+e.p+' · gr '+e.g:''}
+    E.forEach(function(e,i){var b=bs[i];if(!b)return;var bg='#f6f8fa',bd='#cdd5dd',lab='',dark=false,fade=false;
+     if(m==='adres'){var inP=e.p===sel.p,inG=e.g===sel.g;bg=inP&&inG?'#0d6868':inP?'#cde8e6':inG?'#fde7c8':'#f6f8fa';bd=inP&&inG?'#0d6868':inP?'#0d6868':inG?'#c98a0b':'#e5e9ee';dark=inP&&inG;fade=!inP&&!inG;lab=inP&&inG?'okr '+e.p+' · gr '+e.g:''}
      else if(m==='blok'){var c=BC[blk(e)]||BC.d;bg=c[0];bd=c[1];lab=blk(e)}
-     else if(m==='wal'){var v=val(e);if(v==null){bg='#eef1f4';bd='#cbd5e1';lab='—';fade=true}else{bg=mix('#eef7f6','#0d6868',v/8);bd='#0d6868';dark=v>=5;lab=v+' e⁻'}}
-     else{var x=vals[i];if(x==null){lab='—';fade=true}else{var t=(x-min)/(max-min||1);bg=mix(m==='r'?'#fff7ed':'#f5f3ff',m==='r'?'#b45309':'#5b21b6',t);bd=m==='r'?'#b45309':'#5b21b6';dark=t>.55;lab=Math.round(x)+''}
+     else if(m==='wal'){var v=val(e);if(v==null){bg='#e6ebf2';bd='#cdd5dd';lab='—';fade=true}else{bg=mix('#f6f8fa','#0d6868',v/8);bd='#0d6868';dark=v>=5;lab=v+' e⁻'}}
+     else{var x=vals[i];if(x==null){lab='—';fade=true}else{var t=(x-min)/(max-min||1);bg=mix(m==='r'?'#f6f8fa':'#f6f8fa',m==='r'?'#b45309':'#5b21b6',t);bd=m==='r'?'#b45309':'#5b21b6';dark=t>.55;lab=Math.round(x)+''}
       if(e.t==='noble'&&m==='r')fade=true}
      b.style.background=bg;b.style.borderColor=bd;b.style.color=dark?'#fff':'var(--text)';b.style.opacity=fade?'.55':'1';
      var sm=b.querySelectorAll('small');if(sm[1])sm[1].textContent=lab;
@@ -375,15 +375,15 @@ var C=window.CHE;if(!C||!C.VIEW||!C.VIEW.define||C.EXT_WZOR)return;C.EXT_WZOR=1;
 var V=C.VIEW,D=C.DATA||{},NS='http://www.w3.org/2000/svg',MINUS='−',UID=0;
 var css=document.createElement('style');css.textContent=
 '.xw{font:14px/1.5 Inter,system-ui,sans-serif;color:inherit;display:grid;gap:10px}.xw .ctl{display:flex;flex-wrap:wrap;gap:6px;align-items:center}'+
-'.xw .seg{display:flex;flex-wrap:wrap;gap:4px}.xw .seg button,.xw select{font:600 12.5px Inter,system-ui;border:1px solid var(--line,#d5dee6);background:var(--panel,#fff);color:inherit;padding:5px 10px;border-radius:7px;cursor:pointer}'+
+'.xw .seg{display:flex;flex-wrap:wrap;gap:4px}.xw .seg button,.xw select{font:600 12.5px Inter,system-ui;border:1px solid var(--line,#cdd5dd);background:var(--panel,#fff);color:inherit;padding:5px 10px;border-radius:7px;cursor:pointer}'+
 '.xw .seg button[aria-pressed=true]{background:#0d6868;border-color:#0d6868;color:#fff}.xw label.chk{display:inline-flex;gap:5px;align-items:center;font-size:13px}'+
-'.xw .out{background:var(--panel-2,#f1f5f8);border-left:3px solid #0d6868;border-radius:6px;padding:8px 10px;font-size:13.5px;display:grid;gap:4px}'+
-'.xw .tbl{overflow-x:auto}.xw table{border-collapse:collapse;width:100%;font-size:13.5px}.xw th,.xw td{padding:4px 6px;border-bottom:1px solid var(--line,#e2e8ee);text-align:left}'+
-'.xw th button{all:unset;cursor:pointer;font-weight:700;border-bottom:2px dotted currentColor}.xw .hl{background:#e3f1f1}.xw .mono{font-family:ui-monospace,Consolas,monospace}'+
-'.xw .okc{color:#2b7a4b;font-weight:700}.xw .badc{color:#b83a45;font-weight:700}.xw .chip{display:inline-block;font:600 12px ui-monospace,monospace;padding:1px 8px;border-radius:999px}'+
-'.xw .chip.ok{background:#dcefe3;color:#2b7a4b}.xw .chip.bad{background:#f6dfda;color:#b83a45}.xw .chip.warn{background:#f6ecd5;color:#9a6a12}'+
+'.xw .out{background:var(--panel-2,#f6f8fa);border-left:3px solid #0d6868;border-radius:6px;padding:8px 10px;font-size:13.5px;display:grid;gap:4px}'+
+'.xw .tbl{overflow-x:auto}.xw table{border-collapse:collapse;width:100%;font-size:13.5px}.xw th,.xw td{padding:4px 6px;border-bottom:1px solid var(--line,#e5e9ee);text-align:left}'+
+'.xw th button{all:unset;cursor:pointer;font-weight:700;border-bottom:2px dotted currentColor}.xw .hl{background:#e6ebf2}.xw .mono{font-family:ui-monospace,Consolas,monospace}'+
+'.xw .okc{color:#2e7d4f;font-weight:700}.xw .badc{color:#b83a45;font-weight:700}.xw .chip{display:inline-block;font:600 12px ui-monospace,monospace;padding:1px 8px;border-radius:999px}'+
+'.xw .chip.ok{background:#e5e9ee;color:#2e7d4f}.xw .chip.bad{background:#f6dfda;color:#b83a45}.xw .chip.warn{background:#f6ecd5;color:#9a6a12}'+
 '.xw .eqb{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font:600 15px ui-monospace,Consolas,monospace}'+
-'.xw .sp{display:inline-flex;align-items:center;gap:2px;border:1px solid var(--line,#d5dee6);border-radius:8px;padding:3px 4px}.xw .sp button{all:unset;cursor:pointer;width:24px;height:24px;text-align:center;border-radius:5px;background:var(--panel-2,#eef3f6);font-weight:700}'+
+'.xw .sp{display:inline-flex;align-items:center;gap:2px;border:1px solid var(--line,#cdd5dd);border-radius:8px;padding:3px 4px}.xw .sp button{all:unset;cursor:pointer;width:24px;height:24px;text-align:center;border-radius:5px;background:var(--panel-2,#f6f8fa);font-weight:700}'+
 '.xw .sp .k{min-width:16px;text-align:center;font-weight:800;color:#0d6868}.xw .tally{display:flex;flex-wrap:wrap;gap:2px;max-width:150px}.xw .tally i{width:9px;height:9px;border-radius:2px;display:inline-block}'+
 '.xw svg{width:100%;max-width:560px;display:block}.xw svg text{font-family:system-ui,sans-serif}';
 document.head.appendChild(css);
@@ -434,22 +434,22 @@ V.define('f10-energia-h2-v01',{title:'Energia dwóch atomów wodoru — skąd si
   var X0=46,X1=345,Y0=112,Y1=282,EMAX=300,EMIN=-500;function px(r){return X0+(r-30)/(300-30)*(X1-X0)}function py(e){return Y0+(EMAX-e)/(EMAX-EMIN)*(Y1-Y0)}
   var defs=S('defs'),g=S('radialGradient',{id:id+'c'});g.appendChild(S('stop',{offset:'0','stop-color':'#5aa6ad','stop-opacity':'.55'}));g.appendChild(S('stop',{offset:'1','stop-color':'#5aa6ad','stop-opacity':'0'}));defs.appendChild(g);
   var cp=S('clipPath',{id:id+'k'});cp.appendChild(S('rect',{x:X0,y:Y0,width:X1-X0,height:Y1-Y0}));defs.appendChild(cp);
-  var mk=S('marker',{id:id+'a',viewBox:'0 0 10 10',refX:'8',refY:'5',markerWidth:'6',markerHeight:'6',orient:'auto-start-reverse'});mk.appendChild(S('path',{d:'M0,0L10,5L0,10z',fill:'#1a2528'}));defs.appendChild(mk);svg.appendChild(defs);
-  svg.appendChild(S('text',{x:12,y:18,'font-size':'11',fill:'#5a6a6d'},'model: dwa atomy H'));svg.appendChild(S('line',{x1:10,y1:96,x2:350,y2:96,stroke:'#d3dddb'}));
-  for(var e=-400;e<=200;e+=200){svg.appendChild(S('line',{x1:X0,x2:X1,y1:py(e),y2:py(e),stroke:e===0?'#9fb0ad':'#e8efed'}));svg.appendChild(S('text',{x:X0-4,y:py(e)+4,'text-anchor':'end','font-size':'10',fill:'#5a6a6d'},e===0?'0':(e<0?MINUS+(-e):e)))}
+  var mk=S('marker',{id:id+'a',viewBox:'0 0 10 10',refX:'8',refY:'5',markerWidth:'6',markerHeight:'6',orient:'auto-start-reverse'});mk.appendChild(S('path',{d:'M0,0L10,5L0,10z',fill:'#1b2430'}));defs.appendChild(mk);svg.appendChild(defs);
+  svg.appendChild(S('text',{x:12,y:18,'font-size':'11',fill:'#5a6a6d'},'model: dwa atomy H'));svg.appendChild(S('line',{x1:10,y1:96,x2:350,y2:96,stroke:'#cdd5dd'}));
+  for(var e=-400;e<=200;e+=200){svg.appendChild(S('line',{x1:X0,x2:X1,y1:py(e),y2:py(e),stroke:e===0?'#9aa6b6':'#e6ebf2'}));svg.appendChild(S('text',{x:X0-4,y:py(e)+4,'text-anchor':'end','font-size':'10',fill:'#5a6a6d'},e===0?'0':(e<0?MINUS+(-e):e)))}
   for(var r=50;r<=300;r+=50){svg.appendChild(S('line',{x1:px(r),x2:px(r),y1:Y1,y2:Y1+4,stroke:'#5a6a6d'}));svg.appendChild(S('text',{x:px(r),y:Y1+15,'text-anchor':'middle','font-size':'10',fill:'#5a6a6d'},r))}
   svg.appendChild(S('line',{x1:X0,x2:X1,y1:Y1,y2:Y1,stroke:'#5a6a6d'}));svg.appendChild(S('text',{x:X1,y:Y1-4,'text-anchor':'end','font-size':'10',fill:'#5a6a6d'},'r / pm'));svg.appendChild(S('text',{x:X0+4,y:Y0+10,'font-size':'10',fill:'#5a6a6d'},'E / kJ·mol⁻¹'));
   var dp='';for(var rr=30;rr<=300;rr+=2)dp+=(rr===30?'M':'L')+px(rr).toFixed(1)+','+py(Math.min(E(rr),EMAX+40)).toFixed(1);
-  svg.appendChild(S('path',{d:dp,fill:'none',stroke:'#0d6b70','stroke-width':'2.4','clip-path':'url(#'+id+'k)'}));
-  svg.appendChild(S('line',{x1:px(re),x2:px(re),y1:py(-De),y2:Y1,stroke:'#0d6b70','stroke-dasharray':'3 3'}));svg.appendChild(S('line',{x1:X0,x2:px(re),y1:py(-De),y2:py(-De),stroke:'#0d6b70','stroke-dasharray':'3 3'}));
-  svg.appendChild(S('text',{x:px(re)+6,y:py(-De)+4,'font-size':'10',fill:'#0d6b70','font-weight':'700'},'minimum: 74 pm, '+MINUS+'436'));
+  svg.appendChild(S('path',{d:dp,fill:'none',stroke:'#0d6868','stroke-width':'2.4','clip-path':'url(#'+id+'k)'}));
+  svg.appendChild(S('line',{x1:px(re),x2:px(re),y1:py(-De),y2:Y1,stroke:'#0d6868','stroke-dasharray':'3 3'}));svg.appendChild(S('line',{x1:X0,x2:px(re),y1:py(-De),y2:py(-De),stroke:'#0d6868','stroke-dasharray':'3 3'}));
+  svg.appendChild(S('text',{x:px(re)+6,y:py(-De)+4,'font-size':'10',fill:'#0d6868','font-weight':'700'},'minimum: 74 pm, '+MINUS+'436'));
   var dyn=S('g');svg.appendChild(dyn);
   function ar(x1,x2,y,c,w){dyn.appendChild(S('line',{x1:x1,y1:y,x2:x2,y2:y,stroke:c,'stroke-width':w,'marker-end':'url(#'+id+'a)'}))}
   function draw(){var r=+rng.value,en=E(r);clr(dyn);var sep=r*0.55,cx=180,y=56,x1=cx-sep/2,x2=cx+sep/2;
    [x1,x2].forEach(function(x){dyn.appendChild(S('circle',{cx:x,cy:y,r:30,fill:'url(#'+id+'c)'}));dyn.appendChild(S('circle',{cx:x,cy:y,r:4,fill:'#c03d2c'}));dyn.appendChild(S('text',{x:x,y:y+44,'text-anchor':'middle','font-size':'10',fill:'#5a6a6d'},'p⁺'))});
    var z=r>220?['Daleko','Atomy prawie się nie oddziałują, energia układu ≈ 0.']:r>=85?['Przyciąganie','Elektron każdego atomu przyciąga też drugie jądro: energia spada, atomy zbliżają się.']:r>=63?['Minimum energii','Najtrwalszy układ. Ta odległość to długość wiązania H–H (ok. 74 pm).']:['Za blisko','Dwa dodatnie jądra silnie się odpychają: energia gwałtownie rośnie.'];
-   if(r>=85&&r<=220){ar(x1-38,x1-14,y,'#1a2528',1.6);ar(x2+38,x2+14,y,'#1a2528',1.6)}if(r<63){ar(x1-8,x1-34,y,'#c03d2c',1.8);ar(x2+8,x2+34,y,'#c03d2c',1.8)}
-   dyn.appendChild(S('circle',{cx:px(r),cy:py(Math.min(en,EMAX)),r:6,fill:'#f5c542',stroke:'#1a2528','stroke-width':'1.5'}));
+   if(r>=85&&r<=220){ar(x1-38,x1-14,y,'#1b2430',1.6);ar(x2+38,x2+14,y,'#1b2430',1.6)}if(r<63){ar(x1-8,x1-34,y,'#c03d2c',1.8);ar(x2+8,x2+34,y,'#c03d2c',1.8)}
+   dyn.appendChild(S('circle',{cx:px(r),cy:py(Math.min(en,EMAX)),r:6,fill:'#f5c542',stroke:'#1b2430','stroke-width':'1.5'}));
    var ro=Math.round(en);out.innerHTML='<b>'+z[0]+'</b><span>'+z[1]+'</span><span class="mono">r = '+r+' pm · E ≈ '+(en>=EMAX?'&gt; 300':(ro<0?MINUS+Math.abs(ro):ro))+' kJ/mol</span>'}
   rng.addEventListener('input',draw);draw()}});
 
@@ -462,29 +462,29 @@ var M15={
  NH3:{n:'NH₃',c:'N',L:ring(3,c68,s68,1.01,90).map(function(p){return ['H',p]}),lp:[[0,0.55,0]],v:'Wiązania N–H polarne. Piramida trygonalna (107°): suma wektorów wskazuje azot, po stronie wolnej pary. Cząsteczka polarna.'},
  CH4:{n:'CH₄',c:'C',L:[['H',[0,1.09,0]]].concat(ring(3,ct,stt,1.09,90).map(function(p){return ['H',p]})),lp:[],v:'Wiązania C–H słabo polarne. Tetraedr: cztery jednakowe wektory dają sumę zero. Cząsteczka niepolarna.'},
  HCl:{n:'HCl',c:'Cl',L:[['H',[-1.27,0,0]]],lp:[[0.45,0.3,0],[0.45,-0.3,0],[0.55,0,0.3]],v:'Jedno wiązanie H–Cl, polarne. Nie ma drugiego wektora, który mógłby je znieść. Cząsteczka polarna.'}};
-var COL15={H:'#ffffff',C:'#3d4447',N:'#3459c9',O:'#d0402e',Cl:'#3d9a3d'};
+var COL15={H:'#ffffff',C:'#34404f',N:'#3459c9',O:'#d0402e',Cl:'#3d9a3d'};
 V.define('f15-dipol-v01',{title:'Wektory dipola — polarność wiązań a polarność cząsteczki',tag:'MODEL',
  hint:'Włączaj warstwy po kolei: elektroujemność, cząstkowe ładunki δ, wektory wiązań i ich suma μ. Kształt (VSEPR) decyduje, czy wektory się znoszą.',foot:'EN wg Paulinga z danych silnika · strzałka wskazuje atom δ− (konwencja szkolna) · rozszerzenia.js §11 (V012)',
  build:function(host){base(host);var id='xw'+(++UID),sel=H('div',{'class':'seg ctl'}),lb=H('div',{'class':'ctl'}),svg=S('svg',{viewBox:'0 0 360 250',role:'img','aria-label':'Cząsteczka z wektorami dipola'}),out=H('div',{'class':'out'});[sel,lb,svg,out].forEach(function(e){host.appendChild(e)});
   var lay={en:true,d:true,w:true,s:true},cur='H2O',A=25*Math.PI/180,B=14*Math.PI/180,SC=78,CX=180,CY=120;
   function P(p){var x=p[0]*Math.cos(A)+p[2]*Math.sin(A),z=-p[0]*Math.sin(A)+p[2]*Math.cos(A),y=p[1]*Math.cos(B)-z*Math.sin(B);return [CX+x*SC,CY-y*SC,z]}
   function nrm(v){var l=Math.hypot(v[0],v[1],v[2]);return [v[0]/l,v[1]/l,v[2]/l]}
-  var defs=S('defs');['#c03d2c','#1a2528'].forEach(function(c,i){var mk=S('marker',{id:id+'a'+i,viewBox:'0 0 10 10',refX:'8',refY:'5',markerWidth:i?'5':'6',markerHeight:i?'5':'6',orient:'auto'});mk.appendChild(S('path',{d:'M0,0L10,5L0,10z',fill:c}));defs.appendChild(mk)});
+  var defs=S('defs');['#c03d2c','#1b2430'].forEach(function(c,i){var mk=S('marker',{id:id+'a'+i,viewBox:'0 0 10 10',refX:'8',refY:'5',markerWidth:i?'5':'6',markerHeight:i?'5':'6',orient:'auto'});mk.appendChild(S('path',{d:'M0,0L10,5L0,10z',fill:c}));defs.appendChild(mk)});
   function arrow(x1,y1,x2,y2,c,w,m){svg.appendChild(S('line',{x1:x1,y1:y1,x2:x2,y2:y2,stroke:c,'stroke-width':w,'marker-end':'url(#'+id+'a'+m+')','stroke-linecap':'round'}));var dx=x2-x1,dy=y2-y1,l=Math.hypot(dx,dy)||1,nx=-dy/l,ny=dx/l,tx=x1+dx/l*7,ty=y1+dy/l*7;svg.appendChild(S('line',{x1:tx+nx*5,y1:ty+ny*5,x2:tx-nx*5,y2:ty-ny*5,stroke:c,'stroke-width':w}))}
   function draw(){var m=M15[cur];clr(svg);svg.appendChild(defs);var pc=P([0,0,0]),sum=[0,0,0],g=S('g');svg.appendChild(g);
    m.L.forEach(function(L){var q=P(L[1]);g.appendChild(S('line',{x1:pc[0],y1:pc[1],x2:q[0],y2:q[1],stroke:'#9aa8a6','stroke-width':'5','stroke-linecap':'round'}))});
-   m.lp.forEach(function(lp){var p=P(lp);g.appendChild(S('circle',{cx:p[0]-4,cy:p[1],r:2.6,fill:'#1a2528'}));g.appendChild(S('circle',{cx:p[0]+4,cy:p[1],r:2.6,fill:'#1a2528'}))});
+   m.lp.forEach(function(lp){var p=P(lp);g.appendChild(S('circle',{cx:p[0]-4,cy:p[1],r:2.6,fill:'#1b2430'}));g.appendChild(S('circle',{cx:p[0]+4,cy:p[1],r:2.6,fill:'#1b2430'}))});
    var all=[[m.c,[0,0,0]]].concat(m.L);
    all.map(function(a,i){return {s:a[0],p:P(a[1]),c:i===0}}).sort(function(a,b){return a.p[2]-b.p[2]}).forEach(function(a){var rad=a.s==='H'?13:19;
-    g.appendChild(S('circle',{cx:a.p[0],cy:a.p[1],r:rad,fill:COL15[a.s],stroke:'#1a2528','stroke-width':'1.2'}));g.appendChild(S('text',{x:a.p[0],y:a.p[1]+4,'text-anchor':'middle','font-size':a.s==='H'?'11':'13','font-weight':'700',fill:a.s==='H'?'#1a2528':'#ffffff'},a.s));
+    g.appendChild(S('circle',{cx:a.p[0],cy:a.p[1],r:rad,fill:COL15[a.s],stroke:'#1b2430','stroke-width':'1.2'}));g.appendChild(S('text',{x:a.p[0],y:a.p[1]+4,'text-anchor':'middle','font-size':a.s==='H'?'11':'13','font-weight':'700',fill:a.s==='H'?'#1b2430':'#ffffff'},a.s));
     if(lay.en)g.appendChild(S('text',{x:a.p[0],y:a.p[1]+rad+12,'text-anchor':'middle','font-size':'10',fill:'#5a6a6d'},pl(EN(a.s),2)));
     if(lay.d){var o=a.c?m.L[0][0]:m.c,neg=EN(a.s)>EN(o);g.appendChild(S('text',{x:a.p[0]+rad*.75,y:a.p[1]-rad*.75,'font-size':'12','font-weight':'700',fill:neg?'#c03d2c':'#2a62b5'},neg?'δ−':'δ+'))}});
    var dE=0;m.L.forEach(function(L){var d=nrm(L[1]),de=EN(m.c)-EN(L[0]);dE=Math.abs(de);var v=[d[0]*-de,d[1]*-de,d[2]*-de];sum=[sum[0]+v[0],sum[1]+v[1],sum[2]+v[2]];
     if(!lay.w)return;var q=P(L[1]),mx=(pc[0]+q[0])/2,my=(pc[1]+q[1])/2,dx=q[0]-pc[0],dy=q[1]-pc[1],l=Math.hypot(dx,dy),ux=dx/l,uy=dy/l,nx=-uy,ny=ux,len=14+34*Math.abs(de),s=de>0?-1:1;
-    arrow(mx-ux*len/2*s+nx*12,my-uy*len/2*s+ny*12,mx+ux*len/2*s+nx*12,my+uy*len/2*s+ny*12,'#1a2528',1.8,1)});
+    arrow(mx-ux*len/2*s+nx*12,my-uy*len/2*s+ny*12,mx+ux*len/2*s+nx*12,my+uy*len/2*s+ny*12,'#1b2430',1.8,1)});
    var mag=Math.hypot(sum[0],sum[1],sum[2]);
    if(lay.s){if(mag>.05){var tip=P([sum[0]*.6,sum[1]*.6,sum[2]*.6]),bs=P([-sum[0]*.25,-sum[1]*.25,-sum[2]*.25]),bx=bs[0]+70,tx=tip[0]+70;arrow(bx,bs[1],tx,tip[1],'#c03d2c',3.2,0);svg.appendChild(S('text',{x:tx+6,y:tip[1]+4,'font-size':'13','font-weight':'700',fill:'#c03d2c'},'μ'));svg.appendChild(S('text',{x:bx+6,y:bs[1]+14,'font-size':'10',fill:'#c03d2c'},'suma'))}
-    else svg.appendChild(S('text',{x:300,y:40,'font-size':'13','font-weight':'700',fill:'#2b7a4b','text-anchor':'middle'},'μ = 0'))}
+    else svg.appendChild(S('text',{x:300,y:40,'font-size':'13','font-weight':'700',fill:'#2e7d4f','text-anchor':'middle'},'μ = 0'))}
    out.innerHTML='<b>'+m.n+': cząsteczka '+(mag>.05?'polarna':'niepolarna')+'</b><span>'+m.v+'</span><span class="mono">ΔEN wiązania = '+pl(dE,2)+' · długość wektora sumy (umowna): '+pl(mag,2)+'</span>';
    seg(sel,Object.keys(M15).map(function(k){return [k,M15[k].n]}),cur,function(k){cur=k;draw()})}
   [['en','1 · EN'],['d','2 · δ'],['w','3 · wektory wiązań'],['s','4 · suma μ']].forEach(function(x){var l=H('label',{'class':'chk'}),i=H('input',{type:'checkbox'});i.checked=true;i.onchange=function(){lay[x[0]]=i.checked;draw()};l.appendChild(i);l.appendChild(document.createTextNode(x[1]));lb.appendChild(l)});
@@ -505,7 +505,7 @@ var EQ17=[
  {n:'spalanie propanu',L:[['C3H8',0],['O2',0]],R:[['CO2',0],['H2O',0]]},{n:'glin + kwas solny',L:[['Al',0],['HCl',0]],R:[['AlCl3',0],['H2',0]]},
  {n:'żelazo + tlen → tlenek żelaza(III)',L:[['Fe',0],['O2',0]],R:[['Fe2O3',0]]},{n:'miedź + jony srebra (ładunek!)',L:[['Cu',0],['Ag',1]],R:[['Cu',2],['Ag',0]]},
  {n:'strącanie wodorotlenku żelaza(III)',L:[['Fe',3],['OH',-1]],R:[['Fe(OH)3',0]]},{n:'siarczan(VI) glinu + wodorotlenek sodu',L:[['Al2(SO4)3',0],['NaOH',0]],R:[['Al(OH)3',0],['Na2SO4',0]]}];
-var ECOL={H:'#8fa3a6',O:'#d0402e',C:'#3d4447',N:'#3459c9',Al:'#a07cc5',Cl:'#3d9a3d',Fe:'#b5651d',Cu:'#c47a3a',Ag:'#9aa0a6',S:'#d6b21e',Na:'#7a5bd6'};
+var ECOL={H:'#8fa3a6',O:'#d0402e',C:'#34404f',N:'#3459c9',Al:'#a07cc5',Cl:'#3d9a3d',Fe:'#b06f1c',Cu:'#c47a3a',Ag:'#9aa0a6',S:'#d6b21e',Na:'#7a5bd6'};
 C.EXT_BILANS=parse;/* parser wzorów dostępny dla innych widoków */
 V.define('f17-bilans-v01',{title:'Bilans równania reakcji — atomy i ładunek',tag:'MODEL',
  hint:'Zmieniasz tylko współczynniki (wzory są stałe — inny indeks to inna substancja). Tabela liczy atomy każdego pierwiastka i łączny ładunek po obu stronach.',foot:'rozszerzenia.js §11 (V015) · tryb ekspercki: najmniejsze współczynniki do obliczeń',
@@ -553,19 +553,19 @@ C.VIEW.define('fiz02-obwod-v01',{title:'Obwód z dwiema żarówkami — szeregow
   var r1=H('input',{type:'range',min:'2',max:'20',value:'6',style:'width:110px','aria-label':'Opór R₁'}),r2=H('input',{type:'range',min:'2',max:'20',value:'12',style:'width:110px','aria-label':'Opór R₂'}),sl=H('label',{'class':'chk'}),sw=H('input',{type:'checkbox'});sw.checked=true;sl.appendChild(sw);sl.appendChild(document.createTextNode(' wyłącznik zamknięty'));
   [H('label',{'class':'chk'},'U'),us,H('label',{'class':'chk'},'R₁'),r1,H('label',{'class':'chk'},'R₂'),r2,sl].forEach(function(e){c2.appendChild(e)});
   var tw=H('div',{'class':'tbl'}),t=H('table'),out=H('div',{'class':'out'});tw.appendChild(t);[c1,svg,c2,tw,out].forEach(function(e){host.appendChild(e)});
-  function bulb(g,x,y,P,on,lab){var b=on?Math.min(1,P/8):0;g.appendChild(S('circle',{cx:x,cy:y,r:26,fill:'url(#'+id+'g)',opacity:b.toFixed(2)}));g.appendChild(S('circle',{cx:x,cy:y,r:12,fill:b>.05?'#fff6d3':'#ffffff',stroke:'#1a2528','stroke-width':'1.6'}));
-   g.appendChild(S('path',{d:'M'+(x-8.5)+','+(y-8.5)+'L'+(x+8.5)+','+(y+8.5)+'M'+(x+8.5)+','+(y-8.5)+'L'+(x-8.5)+','+(y+8.5),stroke:'#1a2528','stroke-width':'1.4'}));g.appendChild(S('text',{x:x,y:y-17,'text-anchor':'middle','font-size':'10','font-weight':'700',fill:'#3b4ea0'},lab))}
+  function bulb(g,x,y,P,on,lab){var b=on?Math.min(1,P/8):0;g.appendChild(S('circle',{cx:x,cy:y,r:26,fill:'url(#'+id+'g)',opacity:b.toFixed(2)}));g.appendChild(S('circle',{cx:x,cy:y,r:12,fill:b>.05?'#fff6d3':'#ffffff',stroke:'#1b2430','stroke-width':'1.6'}));
+   g.appendChild(S('path',{d:'M'+(x-8.5)+','+(y-8.5)+'L'+(x+8.5)+','+(y+8.5)+'M'+(x+8.5)+','+(y-8.5)+'L'+(x-8.5)+','+(y+8.5),stroke:'#1b2430','stroke-width':'1.4'}));g.appendChild(S('text',{x:x,y:y-17,'text-anchor':'middle','font-size':'10','font-weight':'700',fill:'#3b4ea0'},lab))}
   function chev(g,x,y,a){g.appendChild(S('path',{d:'M-4,-4L2,0L-4,4',fill:'none',stroke:dir==='umowny'?'#c03d2c':'#2a62b5','stroke-width':'2',transform:'translate('+x+','+y+') rotate('+a+')'}))}
   function draw(){var U=+us.value,R1=+r1.value,R2=+r2.value,on=sw.checked,I,I1,I2,U1,U2,Rz;
    if(mode==='sz'){Rz=R1+R2;I=on?U/Rz:0;I1=I2=I;U1=I*R1;U2=I*R2}else{Rz=R1*R2/(R1+R2);I1=on?U/R1:0;I2=on?U/R2:0;I=I1+I2;U1=U2=on?U:0}var P1=I1*I1*R1,P2=I2*I2*R2;
    clr(svg);var d=S('defs'),gr=S('radialGradient',{id:id+'g'});gr.appendChild(S('stop',{offset:'0','stop-color':'#f5c542','stop-opacity':'.95'}));gr.appendChild(S('stop',{offset:'1','stop-color':'#f5c542','stop-opacity':'0'}));d.appendChild(gr);svg.appendChild(d);
-   var g=S('g',{fill:'none',stroke:'#1a2528','stroke-width':'2'});svg.appendChild(g);function L(p){g.appendChild(S('path',{d:p}))}
+   var g=S('g',{fill:'none',stroke:'#1b2430','stroke-width':'2'});svg.appendChild(g);function L(p){g.appendChild(S('path',{d:p}))}
    L('M40,100V40');L('M40,118V190');L('M40,40H320V190');if(mode!=='sz')L('M180,40V120H320');L('M40,190H150');L('M210,190H320');
-   g.appendChild(S('circle',{cx:150,cy:190,r:3,fill:'#1a2528'}));g.appendChild(S('circle',{cx:210,cy:190,r:3,fill:'#1a2528'}));g.appendChild(S('line',{x1:150,y1:190,x2:on?210:202,y2:on?190:162}));
-   svg.appendChild(S('line',{x1:22,y1:100,x2:58,y2:100,stroke:'#1a2528','stroke-width':'2.4'}));svg.appendChild(S('line',{x1:31,y1:118,x2:49,y2:118,stroke:'#1a2528','stroke-width':'5'}));
+   g.appendChild(S('circle',{cx:150,cy:190,r:3,fill:'#1b2430'}));g.appendChild(S('circle',{cx:210,cy:190,r:3,fill:'#1b2430'}));g.appendChild(S('line',{x1:150,y1:190,x2:on?210:202,y2:on?190:162}));
+   svg.appendChild(S('line',{x1:22,y1:100,x2:58,y2:100,stroke:'#1b2430','stroke-width':'2.4'}));svg.appendChild(S('line',{x1:31,y1:118,x2:49,y2:118,stroke:'#1b2430','stroke-width':'5'}));
    svg.appendChild(S('text',{x:64,y:104,'font-size':'12','font-weight':'700',fill:'#c03d2c'},'+'));svg.appendChild(S('text',{x:56,y:126,'font-size':'13','font-weight':'700',fill:'#2a62b5'},MINUS));
    svg.appendChild(S('text',{x:8,y:150,'font-size':'10',fill:'#5a6a6d'},pl(U,1)+' V'));svg.appendChild(S('text',{x:180,y:214,'font-size':'10',fill:'#5a6a6d','text-anchor':'middle'},on?'wyłącznik zamknięty':'wyłącznik otwarty'));
-   var ax=mode==='sz'?320:110,ay=mode==='sz'?150:40;svg.appendChild(S('circle',{cx:ax,cy:ay,r:12,fill:'#ffffff',stroke:'#1a2528','stroke-width':'1.8'}));svg.appendChild(S('text',{x:ax,y:ay+4,'text-anchor':'middle','font-size':'11','font-weight':'700',fill:'#1a2528'},'A'));
+   var ax=mode==='sz'?320:110,ay=mode==='sz'?150:40;svg.appendChild(S('circle',{cx:ax,cy:ay,r:12,fill:'#ffffff',stroke:'#1b2430','stroke-width':'1.8'}));svg.appendChild(S('text',{x:ax,y:ay+4,'text-anchor':'middle','font-size':'11','font-weight':'700',fill:'#1b2430'},'A'));
    svg.appendChild(S('text',{x:mode==='sz'?ax-16:ax,y:mode==='sz'?ay+4:ay+26,'text-anchor':mode==='sz'?'end':'middle','font-size':'10',fill:'#3b4ea0','font-weight':'700'},pl(I,2)+' A'));
    var bg=S('g');svg.appendChild(bg);if(mode==='sz'){bulb(bg,140,40,P1,on,'Ż₁');bulb(bg,240,40,P2,on,'Ż₂')}else{bulb(bg,250,40,P1,on,'Ż₁');bulb(bg,250,120,P2,on,'Ż₂')}
    if(on){var cg=S('g');svg.appendChild(cg);var f=dir==='umowny'?1:-1;chev(cg,40,70,f>0?-90:90);chev(cg,90,40,f>0?0:180);chev(cg,320,100,f>0?90:-90);chev(cg,260,190,f>0?180:0);chev(cg,90,190,f>0?180:0);

@@ -6,8 +6,8 @@ Plików: 94; zgodnych: 59; używa `CHE.GFX.STYL`: 0.
 
 | plik | kolory spoza palety | linie spoza skali | używa STYL |
 |---|---|---|---|
-| `chemia/che-modular/engine/src/lekcja/rozszerzenia.js` | 73 | 1 |  |
-| `biologia/bio/szablon/bio-viz.js` | 38 | 0 |  |
+| `chemia/che-modular/engine/src/lekcja/rozszerzenia.js` | 46 | 1 |  |
+| `biologia/bio/szablon/bio-viz.js` | 29 | 0 |  |
 | `chemia/che-modular/engine/src/gfx/chemia/widoki/acid-rain-v01.js` | 12 | 1 |  |
 | `chemia/che-modular/engine/src/gfx/fizyka/widoki/fiz-przewodniki-v01.js` | 12 | 0 |  |
 | `chemia/che-modular/engine/src/gfx/chemia/widoki/kw-dysocjacja-v01.js` | 8 | 2 |  |
