@@ -3,8 +3,18 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (13 pl., 132 KB)
-- (zwinięte; `ls .`)
+## .  (11 pl., 93 KB)
+- `.gitattributes` 0 KB
+- `.gitignore` 5 KB
+- `CLAUDE.md` 8 KB
+- `MAPA.md` 20 KB
+- `PRZEKAZANIE.md` 8 KB
+- `README.md` 0 KB
+- `WERYFIKACJA.md` 39 KB
+- `edit_html.py` 3 KB
+- `fix_encoding.ps1` 1 KB
+- `fix_encoding_v2.ps1` 5 KB
+- `replace_gereb_card.ps1` 5 KB
 
 ## angielski  (9 pl., 1.8 MB)
 - ⚠`ANGIELSKI_PODSTAWA_PLUS_v1.0 (2).md` 474 KB
@@ -119,7 +129,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (19 pl., 163 KB)
+## chemia/che-modular  (17 pl., 138 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -261,7 +271,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/engine/src/gfx/wspolne/widoki  (1 pl., 4 KB)
 - `che-test-silnika-v01.js` 4 KB
 
-## chemia/che-modular/engine/src/klocki  (36 pl., 214 KB)
+## chemia/che-modular/engine/src/klocki  (36 pl., 215 KB)
 - (zwinięte; `ls chemia/che-modular/engine/src/klocki`)
 
 ## chemia/che-modular/engine/src/klocki/dane  (1 pl., 11 KB)

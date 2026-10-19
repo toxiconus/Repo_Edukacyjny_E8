@@ -159,6 +159,9 @@ Najczęstszy błąd pojęciowy: traktowanie „→" lub zapisu bez strzałek jak
 - Nie każda substancja o zapachu owocowym jest czystym estrem — naturalne aromaty to mieszaniny wielu związków.
 :::
 
+@klocek estryfikacja {ester="octan-etylu"} | Estryfikacja krok po kroku: skąd bierze się woda
+@opis Animacja w pętli: obok siebie stoją kwas octowy (CH₃C(=O)–OH) i etanol (H–O–C₂H₅). Grupa –OH kwasu (czerwona) i atom H alkoholu (niebieski) zostają podświetlone, schodzą w dół i łączą się w wodę, a reszty kwasu i alkoholu zbliżają się i tworzą wiązanie estrowe –CO–O–. Na końcu widać octan etylu i wodę oraz informację, że reakcja jest odwracalna. Pokazuje, że woda pochodzi z –OH kwasu i H alkoholu.
+
 @klocek bilans-rownania {rownanie="CH3COOH + C2H5OH -> CH3COOC2H5 + H2O" przyklady="CH3COOH + C2H5OH -> CH3COOC2H5 + H2O; HCOOH + CH3OH -> HCOOCH3 + H2O"} | Estryfikacja: bilans atomów po obu stronach
 @opis Równanie estryfikacji (kwas octowy + etanol → octan etylu + woda) z przyciskami − i + przy współczynnikach i tabelą liczby atomów C, H i O po obu stronach; reakcja jest zbilansowana przy wszystkich współczynnikach równych 1 — każda cząsteczka kwasu łączy się z jedną cząsteczką alkoholu i oddaje jedną cząsteczkę wody. Drugi przykład: kwas mrówkowy z metanolem.
 
