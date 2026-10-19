@@ -1205,8 +1205,7 @@ Wniosek: HNO₃ denaturuje białko i nitruje pierścienie aromatyczne aminokwas�
 Równanie:: białko (reszty aromatyczne) + HNO₃ → żółte nitrozwiązki
 BHP: Stężony HNO₃ — silnie żrący i utleniający; tylko pokaz.
 
-@zlewka kw-doswiadczenia-v01 wlasciwosci | Zobacz w zlewce (pracownia GFX)
-@opis Pokazy stężonych kwasów: cukier ze stężonym H₂SO₄ czernieje i pęcznieje, białko z HNO₃ żółknie, stężony HCl „dymi” na powietrzu. Wniosek: stężone kwasy są żrące, utleniające i odwadniające — tylko pokaz nauczyciela pod wyciągiem.
+Ten sam zestaw (cukier, białko, HCl) co w doświadczeniu 8 — zlewka pokazana tam, powyżej.
 :::
 
 ::: dosw | Doświadczenie 10 — Odróżnianie HCl od CH₃COOH
@@ -1219,8 +1218,7 @@ Wniosek: HCl jest kwasem mocnym (pełna dysocjacja), CH₃COOH — słabym (ok. 
 Równanie:: Mg + 2 H₃O⁺ → Mg²⁺ + H₂↑ + 2 H₂O
 BHP: Okulary.
 
-@zlewka kw-doswiadczenia-v01 conductivity | Zobacz w zlewce (pracownia GFX)
-@opis Tester z żarówką zanurzony w roztworze kwasu: żarówka świeci, a w wodzie destylowanej — nie. Wniosek: w roztworze kwasu są jony powstałe w dysocjacji, które przewodzą prąd.
+Ten sam tester z żarówką co w doświadczeniu 6 — zlewka pokazana tam, powyżej.
 :::
 
 ::: karta warning | Obserwacja ≠ wniosek

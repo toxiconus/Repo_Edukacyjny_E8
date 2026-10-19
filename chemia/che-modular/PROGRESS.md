@@ -58,3 +58,4 @@
 - 2026-10-19 H9 p.1 C1c masy/wodorki, C2w, J03, R03, X04, N01: przegląd bez zmian treści.
 - 2026-10-19 H9 p.1 F01–F06, FIZ01: przegląd bez zmian treści; powtórki modeli FIZ01 do decyzji S12. Punkt 1 H9 zakończony dla wszystkich lekcji z tabeli.
 - 2026-10-19 H7: styl_zblizone --zapisz na 7 widokach/scenach; catalog.json sha dla lab-engine i visual-library odświeżone; test szybki 0 FAIL; N02 build 0 błędów.
+- 2026-10-19 N03: powtórzone zlewki (Dośw. 9, 10) → odnośniki tekstowe; FIZ01 zostaje. Build N03 OK.
