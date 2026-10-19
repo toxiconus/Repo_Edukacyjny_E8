@@ -3,18 +3,8 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (11 pl., 90 KB)
-- `.gitattributes` 0 KB
-- `.gitignore` 5 KB
-- `CLAUDE.md` 7 KB
-- `MAPA.md` 20 KB
-- `PRZEKAZANIE.md` 6 KB
-- `README.md` 0 KB
-- `WERYFIKACJA.md` 39 KB
-- `edit_html.py` 3 KB
-- `fix_encoding.ps1` 1 KB
-- `fix_encoding_v2.ps1` 5 KB
-- `replace_gereb_card.ps1` 5 KB
+## .  (13 pl., 132 KB)
+- (zwinięte; `ls .`)
 
 ## angielski  (9 pl., 1.8 MB)
 - ⚠`ANGIELSKI_PODSTAWA_PLUS_v1.0 (2).md` 474 KB
@@ -48,9 +38,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `BIO_KATALOG.md` 3 KB
 - `PRZEKAZANIE.md` 3 KB
 
-## biologia/bio/md  (12 pl., 303 KB)
+## biologia/bio/md  (12 pl., 304 KB)
 - `B10_powtorka_uklady_czlowieka.md` 18 KB
-- `B1b_krzyzowki_mendel.md` 21 KB
+- `B1b_krzyzowki_mendel.md` 22 KB
 - `B2a_skora_i_uklad_ruchu.md` 18 KB
 - `B2b_uklad_pokarmowy_i_odzywianie.md` 19 KB
 - `B2c_oddychanie_i_wydalanie.md` 15 KB
@@ -62,8 +52,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `REV01_organizacja_i_chemizm_zycia.md` 29 KB
 - ⚠`REV02_roznorodnosc_zycia.md` 55 KB
 
-## biologia/bio/narzedzia  (2 pl., 9 KB)
-- `md2html_bio.py` 7 KB
+## biologia/bio/narzedzia  (2 pl., 10 KB)
+- `md2html_bio.py` 8 KB
 - `sprawdz_bio.js` 2 KB
 
 ## biologia/bio/szablon  (5 pl., 119 KB)
@@ -129,7 +119,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (16 pl., 124 KB)
+## chemia/che-modular  (19 pl., 163 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -271,6 +261,12 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/engine/src/gfx/wspolne/widoki  (1 pl., 4 KB)
 - `che-test-silnika-v01.js` 4 KB
 
+## chemia/che-modular/engine/src/klocki  (36 pl., 214 KB)
+- (zwinięte; `ls chemia/che-modular/engine/src/klocki`)
+
+## chemia/che-modular/engine/src/klocki/dane  (1 pl., 11 KB)
+- `pierwiastki.js` 11 KB
+
 ## chemia/che-modular/engine/src/komponenty  (1 pl., 19 KB)
 - `atlas-gfx.js` 19 KB
 
@@ -330,7 +326,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `MAKRA.md` 2 KB
 - `MAKRA_ROZWINIECIE.md` 2 KB
 
-## chemia/che-modular/lessons-md/gotowe  (26 pl., 1.1 MB)
+## chemia/che-modular/lessons-md/gotowe  (34 pl., 1.4 MB)
 - (zwinięte; `ls chemia/che-modular/lessons-md/gotowe`) — duże:
 - ⚠`FIZ01_elektrostatyka.md` 51 KB
 - ⚠`N01_tlenki.md` 123 KB
@@ -441,7 +437,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/sections/anon001/rdzen  (61 pl., 278 KB)
 - (zwinięte; `ls chemia/che-modular/sections/anon001/rdzen`)
 
-## chemia/che-modular/tools  (27 pl., 142 KB)
+## chemia/che-modular/tools  (28 pl., 147 KB)
 - (zwinięte; `ls chemia/che-modular/tools`)
 
 ## chemia/che-modular/tools/_stare  (1 pl., 28 KB)
@@ -513,17 +509,19 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PROMPT_ulepszenia_F.md` 6 KB
 - `PROMPT_ulepszenia_F_v15.md` 12 KB
 
-## eksport  (3 pl., 21 KB)
+## eksport  (4 pl., 25 KB)
 - `.gitignore` 0 KB
 - `html2md.py` 4 KB
+- `paczka_polski.py` 4 KB
 - `zbierz_lekcje.py` 17 KB
 
-## narzedzia  (6 pl., 37 KB)
+## narzedzia  (7 pl., 46 KB)
 - `audyt_do_kanonu.py` 5 KB
 - `latex2uni.py` 2 KB
 - `mapa.py` 2 KB
 - `opis_dlug.json` 0 KB
 - `opis_wizualizacji.py` 3 KB
+- `spis_polski.py` 9 KB
 - `szkielety_polski.py` 24 KB
 
 ## olimpiada  (7 pl., 148 KB)
@@ -623,19 +621,29 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PL_L010_srodki_stylistyczne.md` 4 KB
 - `PL_L011_elementy_utworu_moral_puenta.md` 5 KB
 
+## polski/lekcje  (32 pl., 80 KB)
+- (zwinięte; `ls polski/lekcje`)
+
+## polski/plany  (3 pl., 60 KB)
+- `POL_KATALOG.md` 16 KB
+- `POL_SPIS_TRESCI_v2.md` 40 KB
+- `PROMPT_PERPLEXITY_JEZYK.md` 5 KB
+
 ## polski/plany/audyty  (2 pl., 25 KB)
 - `W1_POLSKI_ocena_2026-10-09.md` 4 KB
 - `W1_perplexity_POLSKI_L001-L011_2026-10-09.md` 21 KB
 
-## polski/plany/wypelnienia  (6 pl., 32 KB)
+## polski/plany/wypelnienia  (8 pl., 84 KB)
 - `G01_Rzeczownik_WYPELNIONY.md` 8 KB
 - `G02_Czasownik_WYPELNIONY.md` 6 KB
 - `G03_Przymiotnik_WYPELNIONY.md` 6 KB
 - `G04_G11_Czesci_mowy_reszta_WYPELNIONE.md` 5 KB
+- `G12-G17_P01-P04_Perplexity_2026-10-09_surowe.md` 35 KB
 - `G12_G17_Skladnia_WYPELNIONE.md` 3 KB
+- `G18-G20_J01-J06_Perplexity_2026-10-09_surowe.md` 18 KB
 - `S01_S06_Srodki_stylistyczne_WYPELNIONE.md` 4 KB
 
-## polski/podstawy  (23 pl., 153 KB)
+## polski/podstawy  (23 pl., 169 KB)
 - (zwinięte; `ls polski/podstawy`)
 
 ## wizualizacje-projekty  (3 pl., 72 KB)
