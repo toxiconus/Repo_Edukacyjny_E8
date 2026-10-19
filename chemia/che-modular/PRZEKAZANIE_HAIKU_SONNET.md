@@ -29,14 +29,14 @@ Start każdej sesji: `CLAUDE.md` w katalogu głównym, potem ten plik, potem tyl
 
 | id | zadanie | wskazówki | gotowe, gdy |
 |---|---|---|---|
-| S1 | Widok konfiguracji elektronowych Z ≤ 36 jako mały komponent: kolejność 4s przed 3d, powłoki K–N, pudełka orbitali; wstawić do C1c konfiguracje | punkt wyjścia: zakładka „Konfiguracje” w `wizualizacje_r4/Wizualizacje_do_lekcji_R4.html`; model `molecule-orbitals` jest ograniczony do wybranych atomów; Cr i Cu oraz grupy 3–12 oznaczone „poza zakresem” | widok zarejestrowany, `@model` w lekcji z `@opis`, test w headless |
-| S2 | Ogólny kalkulator mola: n = m/M, N = n·N_A, V = n·22,4 dm³/mol (0 °C, 1013 hPa) dla dowolnej masy molowej | prototyp: zakładka „Mol” w pliku R4; `stech-kalkulator-v01` liczy tylko z reakcji | widok w C2m, zgodny z liczbami lekcji |
-| S3 | Komponent genetyczny (szachownica Mendla 2×2, gamety, stosunki fenotypów) dla biologii | prototyp: zakładka „Mendel” w pliku R4; dihybryda 4×4 poza zakresem LKO; miejsce: `engine/src/gfx/biologia/` + wpis w katalogu | wstawiony do B1b z `@opis`, build bio OK |
-| S4 | Duże pliki do wspólnego stylu: `lekcja/rozszerzenia.js` (73 odstępstwa), `biologia/bio/szablon/bio-viz.js` (38), `acid-rain-v01`, `fiz-przewodniki-v01`, `kw-dysocjacja-v01` | `STYL_RAPORT.md`; po przeróbce świadomie odświeżyć testy bezstratności (`python3 tools/silnik.py`); zrzuty przed i po | raport pokazuje 0 odstępstw dla tych plików, wygląd bez regresji |
-| S5 | Wspólne rysowanie probówki: prototyp R4 ma własne szkło (`inner`, `glassBack`, `liquid`), powinno używać `naczynia/testTube` i efektów `liquid`/`meniscus` | `engine/src/gfx/chemia/naczynia/testTube.js`; `tools/efekty_do_html.py` | prototyp rysuje szkło z silnika, wygląd taki sam |
-| S6 | Chemia organiczna: wykorzystać 2D z ORG01 (`c2d_prosta`, `c2d_grupy`, `c2d_wzor`) i `szkielet-zygzak` w lekcjach O01–O08 | ORG01 w gałęzi `origin/claude/olimpiada-8-sprint` (commit 24c0083); komponent `engine/src/gfx/chemia/szkielet/szkielet-zygzak.js` | wzory kreskowe w lekcjach, jeden komponent zamiast kopii |
-| S7 | Dihybryda (9:3:3:1) jako osobna lekcja biologii, oznaczona jako poza zakresem LKO 2025/26 | sekcje „poza zakresem” w `biologia/bio/md/B1b_krzyzowki_mendel.md` | osobny md, B1b odsyła do niego |
-| S8 | Jeden mechanizm animacji w silniku: autostart gdy widoczne + powtarzanie dla animacji domyślnych, klik dla doświadczeń, `prefers-reduced-motion` | wzór: `runner()` w pliku R4 | wszystkie nowe modele używają jednego mechanizmu |
+| ~~S1~~ (wykonane) | Widok konfiguracji elektronowych Z ≤ 36 jako mały komponent: kolejność 4s przed 3d, powłoki K–N, pudełka orbitali; wstawić do C1c konfiguracje | punkt wyjścia: zakładka „Konfiguracje” w `wizualizacje_r4/Wizualizacje_do_lekcji_R4.html`; model `molecule-orbitals` jest ograniczony do wybranych atomów; Cr i Cu oraz grupy 3–12 oznaczone „poza zakresem” | widok zarejestrowany, `@model` w lekcji z `@opis`, test w headless |
+| ~~S2~~ (wykonane) | Ogólny kalkulator mola: n = m/M, N = n·N_A, V = n·22,4 dm³/mol (0 °C, 1013 hPa) dla dowolnej masy molowej | prototyp: zakładka „Mol” w pliku R4; `stech-kalkulator-v01` liczy tylko z reakcji | widok w C2m, zgodny z liczbami lekcji |
+| ~~S3~~ (wykonane) | Komponent genetyczny (szachownica Mendla 2×2, gamety, stosunki fenotypów) dla biologii | prototyp: zakładka „Mendel” w pliku R4; dihybryda 4×4 poza zakresem LKO; miejsce: `engine/src/gfx/biologia/` + wpis w katalogu | wstawiony do B1b z `@opis`, build bio OK |
+| ~~S4~~ (wykonane) | Duże pliki do wspólnego stylu: `lekcja/rozszerzenia.js` (73 odstępstwa), `biologia/bio/szablon/bio-viz.js` (38), `acid-rain-v01`, `fiz-przewodniki-v01`, `kw-dysocjacja-v01` | `STYL_RAPORT.md`; po przeróbce świadomie odświeżyć testy bezstratności (`python3 tools/silnik.py`); zrzuty przed i po | raport pokazuje 0 odstępstw dla tych plików, wygląd bez regresji |
+| ~~S5~~ (wykonane) | Wspólne rysowanie probówki: prototyp R4 ma własne szkło (`inner`, `glassBack`, `liquid`), powinno używać `naczynia/testTube` i efektów `liquid`/`meniscus` | `engine/src/gfx/chemia/naczynia/testTube.js`; `tools/efekty_do_html.py` | prototyp rysuje szkło z silnika, wygląd taki sam |
+| ~~S6~~ (wykonane) | Chemia organiczna: wykorzystać 2D z ORG01 (`c2d_prosta`, `c2d_grupy`, `c2d_wzor`) i `szkielet-zygzak` w lekcjach O01–O08 | ORG01 w gałęzi `origin/claude/olimpiada-8-sprint` (commit 24c0083); komponent `engine/src/gfx/chemia/szkielet/szkielet-zygzak.js` | wzory kreskowe w lekcjach, jeden komponent zamiast kopii |
+| ~~S7~~ (wykonane) | Dihybryda (9:3:3:1) jako osobna lekcja biologii, oznaczona jako poza zakresem LKO 2025/26 | sekcje „poza zakresem” w `biologia/bio/md/B1b_krzyzowki_mendel.md` | osobny md, B1b odsyła do niego |
+| ~~S8~~ (wykonane) | Jeden mechanizm animacji w silniku: autostart gdy widoczne + powtarzanie dla animacji domyślnych, klik dla doświadczeń, `prefers-reduced-motion` | wzór: `runner()` w pliku R4 | wszystkie nowe modele używają jednego mechanizmu |
 
 ## Tylko użytkownik
 - Konwencja zapisu konfiguracji w arkuszu olimpiady (Fe: [Ar] 4s² 3d⁶ czy 3d⁶ 4s²).
@@ -47,7 +47,8 @@ Start każdej sesji: `CLAUDE.md` w katalogu głównym, potem ten plik, potem tyl
 - Katalog: `KATALOG_WIZUALIZACJI.md` (generowany `che.py katalog`); oceny w `engine/registry/katalog_oceny.json`.
 - Styl: `STYL_WIZUALIZACJI.md`, kontrola `tools/styl_sprawdz.py` → `STYL_RAPORT.md` (94 pliki, 59 zgodnych).
 - Prototyp wizualizacji R4: `wizualizacje_r4/Wizualizacje_do_lekcji_R4.html` (blok efektów generowany: `tools/efekty_do_html.py`).
-- Gotowe modele wstawione do 9 lekcji R4; brak jeszcze w C1c konfiguracje (S1) i ogólnego kalkulatora mola w C2m (S2).
+- Gotowe modele wstawione do 9 lekcji R4; S1–S8 wykonane (klocki: patrz `engine/src/klocki/README.md`).
+- Repo scalone 2026-10-19: do gałęzi `claude/che-olimpiada-chem-1-3` scalono `claude/polski-spis`; pozostałe gałęzie mają niepowiązane historie (`unrelated histories`) — nie scalać bez decyzji użytkownika.
 
 
 ## Stan 2026-10-19 (klocki)
@@ -63,3 +64,27 @@ Start każdej sesji: `CLAUDE.md` w katalogu głównym, potem ten plik, potem tyl
 - S4 zakończone 2026-10-19: `kw-dysocjacja-v01` (ładunki: plus czerwony, minus niebieski wg STYL; H⁺ czerwony; tła/linie do tokenów), `acid-rain-v01` (kolory tekstu do tokenów, linie), `fiz-przewodniki-v01`. Realne barwy (scena kwaśnego deszczu, materiały przewodników, serie kwasów) zostają i są oznaczone `/*styl:zostaw*/`; `styl_sprawdz.py` pomija oznaczone linie. Test bezstratności `gfx_join` odświeżony świadomie (catalog.json: che-visual-library-v001 sha1/bytes), `che.py test --szybki` i `test_lekcje.cjs` (26 lekcji) OK.
 - 2026-10-19: lekcje LKO_ORG01–08 (md ze zgodnymi treściami 30–44 KB) skopiowane z gałęzi `olimpiada-8-sprint` do `lessons-md/gotowe/` (bez scalania gałęzi) i wzbogacone o klocki: wzor-2d (ORG01–07), bilans-spalania i palnik-gazowy (ORG01), probowki-odczyn (ORG02 woda bromowa, ORG03 etanol+Na, ORG04 Cu(OH)₂, ORG05 kwas octowy), kalkulator-mola i trojkat-przeliczen (ORG08). L017 (biologia) niepotrzebna: temat pokrywa B1b z klockami Mendla.
 - Wykonane 2026-10-19: klocek `haworth` (α/β-D-glukopiranoza, β-D-fruktofuranoza) w ORG07; ORG06 rozbudowane o `bilans-rownania` (estryfikacja) i `wzor-2d` izomeru estru. Zostaje opcjonalnie: animacja estryfikacji.
+
+## Nowe zadania (2026-10-19)
+
+### Haiku — H9: przegląd lekcja po lekcji (wizualizacje)
+Dla KAŻDEJ lekcji z tabeli niżej (jedna lekcja = jedna tura; commit lokalny po każdej) sprawdź w md, czy grafika wnosi coś do zrozumienia (zasady: pamięć/CLAUDE.md — grafiki tylko gdy potrzebne, `@opis` obowiązkowy, jak od jednego autora, rzeczywiste kolory substancji zostają):
+1. Zastąp słabszą wizualizację lepszą z `engine/src/klocki/README.md` / `KATALOG_WIZUALIZACJI.md` (np. `wzor-2d` zamiast wzoru wpisanego tekstem, `bilans-rownania` przy każdym równaniu do bilansowania, `probowki-odczyn`/`probowki-wybor` przy doświadczeniach z probówką, `karta-bhp` zamiast własnych list BHP).
+2. Dodaj tylko tam, gdzie proces/zależność/ćwiczenie tego wymaga; nie jako ozdobę.
+3. Ujednolić karty BHP: każda lekcja z doświadczeniem ma `karta-bhp` (jeden wygląd) zamiast opisów w tekście; treści nie usuwać — zostawić zdanie, dodać klocek.
+4. Jeśli potrzebny jest NOWY komponent — nie buduj; dopisz wiersz do sekcji „Plan komponentów” niżej (nazwa, lekcja, po co).
+5. Po zmianie: `python3 tools/che.py lekcje <plik>`, otwarcie bez błędów konsoli, wpis w `PROGRESS.md`.
+Lekcje (klocki / modele `@model` / `@zlewka` dziś): C1c konfiguracje 1/0/0; C1c kwasy 3/3/0; C1c masy 1/1/0; C1c wodorki 3/2/0; C2m 3/1/0; C2w 1/0/1; C3 1/1/0; C4 6/0/0; F01 0/4/6; F02 0/1/3; F03 0/2/2; F04 0/1/0; F05 0/1/0; F06 0/1/5; FIZ01 0/15/0; J03 1/2/0; ORG01–08 (4,3,2,3,2,3,2,3 klocków); N01 powietrze 0/3/1; N01 tlenki 0/11/4; N02 0/12/8; N03 0/17/10; N04 0/9/13; N05 0/4/10; R03 1/0/2; R07 1/1/0; REV01 kl.7 0/6/0; X04 1/1/0. Biologia (`biologia/bio/md`, builder `md2html_bio.py`): wszystkie poza B1b mają 0 wizualizacji — dla każdej ocenić, czy proces (np. oddychanie, hormony, odruch, trawienie) wymaga schematu; jeśli tak, wpisać do planu komponentów (biologia nie ma jeszcze własnych klocków poza `krzyzowka-mendla`).
+
+### Sonnet — S9–S12
+| id | zadanie | gotowe, gdy |
+|---|---|---|
+| S9 | Plan komponentów: zebrać wiersze od Haiku (H9), pogrupować, zbudować te, które wracają w ≥ 2 lekcjach (kandydaci: animacja estryfikacji ORG06, schemat procesu biologicznego „strzałki i etapy”, układ narządów z podświetlaniem, wykres z suwakiem) | klocki w `engine/src/klocki/`, wpis w manifest i README |
+| S10 | Wspólny klocek „doświadczenie”: probówka/zlewka + palnik + karta BHP + równanie w jednym układzie (zamiast składania ręcznego w md) | użyty w C4 i ≥ 2 lekcjach N |
+| S11 | Biologia: przenieść wzorzec klocków do kilku lekcji (B2c oddychanie, B2e hormony, B2g homeostaza) po ocenie Haiku | min. 3 lekcje z `@klocek` + `@opis` |
+| S12 | Przegląd wyników H9 (losowo 30%): czy zmiany wnoszą coś do lekcji, spójność stylu (`styl_sprawdz.py`) | raport w `PROGRESS.md` |
+
+### Plan komponentów (uzupełnia Haiku)
+| nazwa | lekcja | po co |
+|---|---|---|
+| animacja-estryfikacji | ORG06 | cząsteczki kwasu i alkoholu łączą się w ester + H₂O (opcjonalnie) |
