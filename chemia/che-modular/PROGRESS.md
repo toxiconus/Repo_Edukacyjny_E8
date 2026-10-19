@@ -53,3 +53,4 @@
 - 2026-10-19 H9 p.1 N03: przegląd modeli (17 pozycji) — bez zmian treści; zanotowano powtórzone zlewki do decyzji S12.
 - 2026-10-19 H9 p.1 N04: przegląd modeli (9 + 13 zlewek) — bez zmian treści.
 - 2026-10-19 H9 p.1 N05: +bilans-rownania (sekcja 8), manifest N05 +bilans_rownania.js, test headless 0 błędów. Przegląd N02–N05 zakończony.
+- 2026-10-19 H9 p.1 C2m/C3/C4: przegląd bez zmian treści; wpis w PRZEKAZANIE_HAIKU_SONNET.md.
