@@ -58,7 +58,8 @@
       "znaki.js",
       "probowki.js",
       "palniki.js",
-      "uklad_okresowy.js"
+      "uklad_okresowy.js",
+      "karta_bhp.js"
     ],
     "F07": [
       "klocki.js",
@@ -78,7 +79,8 @@
       "znaki.js",
       "probowki.js",
       "palniki.js",
-      "uklad_okresowy.js"
+      "uklad_okresowy.js",
+      "karta_bhp.js"
     ],
     "LKO-KRZYWE": [
       "klocki.js",
@@ -118,7 +120,8 @@
       "c2d_grupy.js",
       "c2d_wzor.js",
       "c2d_prosta.js",
-      "c2d_klocek.js"
+      "c2d_klocek.js",
+      "karta_bhp.js"
     ],
     "LKO-ORG04": [
       "klocki.js",
@@ -129,7 +132,8 @@
       "c2d_grupy.js",
       "c2d_wzor.js",
       "c2d_prosta.js",
-      "c2d_klocek.js"
+      "c2d_klocek.js",
+      "karta_bhp.js"
     ],
     "LKO-PUŁAPKI-WAPNO": [
       "klocki.js",
@@ -146,7 +150,8 @@
       "c2d_grupy.js",
       "c2d_wzor.js",
       "c2d_prosta.js",
-      "c2d_klocek.js"
+      "c2d_klocek.js",
+      "karta_bhp.js"
     ],
     "LKO-ORG03": [
       "klocki.js",
@@ -157,7 +162,8 @@
       "c2d_grupy.js",
       "c2d_wzor.js",
       "c2d_prosta.js",
-      "c2d_klocek.js"
+      "c2d_klocek.js",
+      "karta_bhp.js"
     ],
     "LKO-ORG06": [
       "klocki.js",
@@ -178,7 +184,8 @@
       "c2d_prosta.js",
       "c2d_klocek.js",
       "bilans_spalania.js",
-      "palnik_gazowy.js"
+      "palnik_gazowy.js",
+      "karta_bhp.js"
     ],
     "LKO-ORG07": [
       "klocki.js",
@@ -247,13 +254,15 @@
     "R03": [
       "klocki.js",
       "pomocnicze.js",
-      "krzywe_rozpuszczalnosci.js"
+      "krzywe_rozpuszczalnosci.js",
+      "karta_bhp.js"
     ],
     "C2w": [
       "klocki.js",
       "pomocnicze.js",
       "naczynia.js",
-      "probowki_odczyn.js"
+      "probowki_odczyn.js",
+      "karta_bhp.js"
     ],
     "C3": [
       "klocki.js",
@@ -279,6 +288,34 @@
       "klocki.js",
       "pomocnicze.js",
       "petla_regulacji.js"
+    ],
+    "N01": [
+      "klocki.js",
+      "karta_bhp.js"
+    ],
+    "N02": [
+      "klocki.js",
+      "karta_bhp.js"
+    ],
+    "N04": [
+      "klocki.js",
+      "karta_bhp.js"
+    ],
+    "N05": [
+      "klocki.js",
+      "karta_bhp.js"
+    ],
+    "F02": [
+      "klocki.js",
+      "karta_bhp.js"
+    ],
+    "F03": [
+      "klocki.js",
+      "karta_bhp.js"
+    ],
+    "F01": [
+      "klocki.js",
+      "karta_bhp.js"
     ]
   },
   "css": [

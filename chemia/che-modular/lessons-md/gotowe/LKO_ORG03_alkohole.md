@@ -149,6 +149,9 @@ Rozpuszczalność w wodzie, wysoka temperatura wrzenia, obojętny odczyn — za 
 Etanol świetnie się spala — i jest odnawialny, bo powstaje z fermentacji cukrów roślinnych (ORG07). W wielu krajach benzyna zawiera etanol (paliwa typu E10 — ok. 10% etanolu; w Brazylii stosuje się znacznie wyższe stężenia — do weryfikacji). Zalety: odnawialne źródło, wyższa liczba oktanowa; ograniczenia: mniejsza wartość opałowa niż benzyna i zużycie upraw na paliwo. Chemia spalania z tej lekcji działa w silniku dokładnie tak, jak w zlewce — tylko szybciej.
 :::
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
 ## 3 | Wykład — reakcja z sodem: dowód na grupę –OH {#sod}
 
 Metaliczny sód reaguje gwałtownie z wodą (2Na + 2H₂O → 2NaOH + H₂). Z alkoholami też reaguje — ale **łagodniej**:

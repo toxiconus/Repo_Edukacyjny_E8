@@ -172,6 +172,9 @@ Jeśli żaden z nich nie powstaje, reakcja nie zachodzi.
 @model acid-game | Kwas, zasada, sól czy tlenek? Klasyfikuj substancje | Gra w silniku CHE · otwiera się w oknie
 @opis Gra klasyfikacyjna: na ekranie pojawiają się wzory substancji (np. HCl, NaOH, NaCl, CO₂), a uczeń wybiera, czy to kwas, zasada, sól czy tlenek. Po odpowiedzi widać poprawną kategorię, a gra przechodzi dalej po krótkiej chwili. Wniosek: kwas ma jony H⁺ lub H₃O⁺ w roztworze, zasada jony OH⁻, sól powstaje z kwasu i zasady, tlenek łączy pierwiastek z tlenem.
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
 ### 5. Wypieranie kwasu z soli mocniejszym kwasem
 
 **Reguła:** mocniejszy kwas wypiera słabszy z jego soli. Słabe kwasy, takie jak H₂CO₃ i H₂SO₃, rozpadają się na wodę i gaz, więc ich sole reagują z mocnymi kwasami z wydzieleniem gazu.

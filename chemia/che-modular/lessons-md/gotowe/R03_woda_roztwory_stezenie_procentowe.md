@@ -73,6 +73,9 @@ Cząsteczka wody H₂O jest **polarna** (kątowa, z biegunem ujemnym przy tlenie
 
 **Woda w przyrodzie:** krąży w **obiegu wody** (parowanie, skraplanie, opady, spływ). **Twardość wody** powodują rozpuszczone sole wapnia i magnezu (kamień w czajniku).
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
 ## 2 | Mieszaniny z wodą [[basic:E8]] {#mieszaniny}
 
 | Rodzaj | Wielkość cząstek | Wygląd | Rozdzielanie | Przykład |

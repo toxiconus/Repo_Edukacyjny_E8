@@ -564,6 +564,9 @@ To reakcja **redoks**: Fe oddaje elektrony (utlenia się), Cu²⁺ je przyjmuje 
 
 > **Uwaga na nazwy:** „sól kwaśna” mówi o budowie (kwasowy wodór w anionie), a nie o odczynie. Roztwór NaHCO₃ ma odczyn słabo zasadowy (pH ok. 8,3), a NaHSO₄ — kwasowy. Odczyn wynika z rzeczywistej równowagi kwasowo-zasadowej ([§13](#hydroliza)). Systematyka soli zasadowych jest złożona i zależy od kontekstu.
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
 ## 13 | Odczyn roztworów soli — hydroliza [[extra:AMBITNE]] {#hydroliza}
 
 ::: karta extra | Kiedy roztwór soli nie jest obojętny?

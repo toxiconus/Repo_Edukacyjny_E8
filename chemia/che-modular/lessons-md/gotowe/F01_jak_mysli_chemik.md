@@ -329,6 +329,9 @@ Każdy prosty test możesz rozpisać w sześciu krokach:
 Nie każde doświadczenie wymaga skomplikowanej kontroli, ale każde powinno mieć **jasne pytanie i określony sposób rozstrzygnięcia**.
 :::
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
 ## 10 | Doświadczenia {#doswiadczenia}
 
 @model f01-doswiadczenia-v01 | Pracownia: co naprawdę się zmieniło? | zjawiska fizyczne i reakcje w zlewce, parownicy, probówce i tyglu — obserwacja, wniosek, BHP

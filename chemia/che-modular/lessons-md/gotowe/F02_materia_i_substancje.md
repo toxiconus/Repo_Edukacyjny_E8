@@ -350,6 +350,9 @@ Etanol z wodą tworzy jedną fazę ciekłą — sączenie nie zadziała; trzeba 
 :::
 :::
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
 ## 11 | Doświadczenia {#doswiadczenia}
 
 ::: dosw | Doświadczenie 1 — Mieszanina czy związek? Żelazo i siarka

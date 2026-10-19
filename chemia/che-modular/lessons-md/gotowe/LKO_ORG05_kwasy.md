@@ -190,6 +190,9 @@ Wspólny produkt: **octan** — reszta CH₃COO⁻ z kationem partnera. Przed na
 - Mylenie octanów (soli) z estrami octanowymi (ORG06) — octan sodu to sól, octan etylu to ester.
 :::
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
 @klocek probowki-odczyn {tuby="CH3COOH + Mg:bezbarwny:bezbarwny:gaz,CH3COOH + Na2CO3:bezbarwny:bezbarwny:gaz,CH3COOH + oranż metylowy:zolty:czerwony:brak"} | Reakcje kwasu octowego: metal, węglan, wskaźnik
 @opis Trzy probówki z kwasem octowym: z magnezem wydziela się wodór, z węglanem sodu — dwutlenek węgla (pęcherzyki gazu), a oranż metylowy zmienia barwę z żółtej na czerwoną, co świadczy o odczynie kwasowym.
 

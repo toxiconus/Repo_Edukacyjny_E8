@@ -103,6 +103,9 @@ Stosunek 1 : 2. Wzór elementarny: **CH₂** (M = 14). n = 28 / 14 = 2. Wzór rz
 
 Obie metody są matematycznie równoważne, bo dzielenie procentów przez masy atomowe to dzielenie gramów przez masy molowe.
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
 ### 6. Hydraty — sole krystaliczne z wodą (poza zakresem LKO 2026/27)
 
 **Hydrat** to sól, która w strukturze krystalicznej zawiera cząsteczki wody. Ta woda to **woda krystalizacyjna**. W zapisie oznaczamy ją kropką: CuSO₄·5H₂O.

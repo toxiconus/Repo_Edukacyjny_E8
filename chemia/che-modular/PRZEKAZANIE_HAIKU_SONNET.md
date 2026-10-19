@@ -97,3 +97,4 @@ Lekcje (klocki / modele `@model` / `@zlewka` dziś): C1c konfiguracje 1/0/0; C1c
 - 2026-10-19 C1c kwasy: 3 klocki + 4 modele + doświadczenie — wystarcza. Opis schematu trzech dróg do NaOH → plan.
 - 2026-10-19 C1c wodorki: dodano `bilans-rownania` (synteza HCl i NH₃) do sekcji „Schemat otrzymywania HCl i NH₃”.
 - Skan H9 (wszystkie lekcje): opisy rysunków bez znacznika — B2a sarkomer (plan), C1c masy (klocek `sklad-procentowy` już jest: OK), C1c konfiguracje i kwasy (plan), N02 (to wzór, nie rysunek: OK).
+- 2026-10-19 H9 punkt 3: `karta-bhp` dodany (przed pierwszym doświadczeniem, treść bez zmian) do: C1c kwasy, C2w, J03, LKO-ORG01–05, N01 (powietrze, tlenki), N02, N03, N04, N05, R03, X04, F01, F02, F03, F06. Manifest: karta_bhp.js w listach kodów. Build 19/19 OK, montaż bez błędów JS.

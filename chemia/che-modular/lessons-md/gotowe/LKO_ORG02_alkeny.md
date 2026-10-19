@@ -271,6 +271,9 @@ Z etenu w przemyśle robi się etanol (hydratacja), polietylen (polimeryzacja), 
 5. Dlaczego odbarwienie wody bromowej nie dowodzi, że to eten (a nie np. etyn)?
 :::
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
 @klocek probowki-odczyn {tuby="Alkan + woda bromowa:pomaranczowy:pomaranczowy:brak,Alken + woda bromowa:pomaranczowy:bezbarwny:brak"} | Próba wody bromowej: alkan nie odbarwia, alken odbarwia
 @opis Dwie probówki z pomarańczową wodą bromową: do pierwszej dodano alkan — barwa pozostaje pomarańczowa; do drugiej alken — roztwór odbarwia się, bo brom ulega addycji do wiązania podwójnego. Znacznik PRZED/PO pokazuje fazę próby.
 

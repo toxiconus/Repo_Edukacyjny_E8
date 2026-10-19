@@ -455,6 +455,9 @@ Porównaj: spalanie amoniaku **bez katalizatora** daje azot (4 NH₃ + 3 O₂ �
 W długiej rurze z watą nasączoną stężonym NH₃(aq) z jednej strony i stężonym HCl z drugiej biały pierścień NH₄Cl powstaje **bliżej końca z HCl**. Szybkość dyfuzji gazów jest odwrotnie proporcjonalna do pierwiastka z masy molowej (prawo Grahama): v(NH₃)/v(HCl) = √(36,5/17) ≈ 1,47 — lżejszy amoniak pokonuje dłuższą drogę w tym samym czasie.
 :::
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
 ## 14 | Doświadczenia {#doswiadczenia}
 
 > Każde doświadczenie w formacie egzaminacyjnym. Przyciski „Zobacz w zlewce” otwierają pracownię na tym doświadczeniu.

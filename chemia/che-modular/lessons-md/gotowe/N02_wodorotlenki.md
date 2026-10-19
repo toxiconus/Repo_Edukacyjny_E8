@@ -993,6 +993,9 @@ Nie używamy skrótu „amfoteryczny = reaguje ze wszystkim”.
 
 > Doświadczenie z Al(OH)₃ w kwasie i w nadmiarze zasady: [§15, doświadczenie H](#doswiadczenia). Tlenki amfoteryczne (Al₂O₃, ZnO): lekcja N01.
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
 ## 15 | Doświadczenia modelowe [[basic:E8]] {#doswiadczenia .section}
 
 Format egzaminacyjny: problem → hipoteza → sprzęt → przebieg → obserwacje → wniosek → równanie → BHP. Wykonuj tylko pod nadzorem nauczyciela. Każde doświadczenie obejrzysz w pracowni silnika (animacja, równania jonowe, warunki).

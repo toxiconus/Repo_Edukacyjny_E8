@@ -1071,6 +1071,9 @@ Pojemność buforowa β = dn/dpH jest największa, gdy [HA] = [A⁻] (pH = pK<su
 @model kw-bufor-v01 | Bufor octanowy kontra woda — dodawaj HCl i NaOH | pH-metry, wskaźnik uniwersalny, wykres · pKa z silnika · wyczerpanie pojemności
 @opis Porównanie buforu octanowego z wodą: do obu dodaje się porcjami HCl lub NaOH; pH wody zmienia się gwałtownie, pH buforu prawie stoi w miejscu, dopóki bufor nie wyczerpie swojej pojemności; widać pH-metry, wskaźnik i wykres. Wniosek: bufor utrzymuje prawie stałe pH, ale tylko do pewnej ilości dodanego kwasu lub zasady.
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
 ## 16 | Doświadczenia {#doswiadczenia}
 
 @model kw-doswiadczenia-v01 | Pracownia: wszystkie doświadczenia z kwasami (GFX) | Zestawy, reakcje i pokazy w jednym oknie · silnik GFX

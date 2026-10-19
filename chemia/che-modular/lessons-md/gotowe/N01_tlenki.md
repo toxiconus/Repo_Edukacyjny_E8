@@ -1114,6 +1114,9 @@ Problem → Hipoteza → Sprzęt → Przebieg → **Obserwacja** → **Wniosek**
 > Obserwacja = to, co rejestrują zmysły; wniosek = interpretacja (nazwa produktu, typ reakcji). Tabela różnic — na końcu sekcji.
 :::
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
 ### Doświadczenie 1: Spalanie magnezu
 
 ::: karta -

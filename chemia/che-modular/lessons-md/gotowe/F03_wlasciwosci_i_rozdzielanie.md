@@ -229,6 +229,9 @@ Nie zawsze. Pojedyncza destylacja mieszaniny etanolu z wodą daje destylat **wzb
 @model lab-stations-v102 | Stanowiska laboratoryjne: zlewka, gaz, chłodnica, palnik | sprzęt do destylacji — kolba, chłodnica, odbieralnik
 @opis Zestaw do destylacji: kolba z cieczą ogrzewana palnikiem, chłodnica, w której para się skrapla, i odbieralnik, do którego spływa destylat. Wniosek: destylacja to odparowanie i skroplenie — odzyskuje się składnik o niższej temperaturze wrzenia.
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
 ## 8 | Doświadczenia {#doswiadczenia}
 
 ::: dosw | Doświadczenie 1 — Rozdzielanie piasku i wody

@@ -97,6 +97,9 @@ AgCl jest światłoczuły. Pod wpływem światła ciemnieje, bo rozkłada się n
 Papka barytowa (BaSO₄ z wodą) bywa podawana przed badaniem rentgenowskim przewodu pokarmowego, bo nie rozpuszcza się i jest kontrastowa. Sole baru rozpuszczalne są silnie trujące, więc tylko BaSO₄ nadaje się do takiego zastosowania. (Do weryfikacji z praktyką medyczną.)
 :::
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
 ### 6. Przykład 3: Pb(NO₃)₂ + KI
 
 - **Cząsteczkowa:** Pb(NO₃)₂ + 2 KI → PbI₂↓ + 2 KNO₃

@@ -256,6 +256,9 @@ C1–C3: po jednym (brak izomerii). C4: **2**. C5: **3**. Te liczby trzeba znać
 @klocek wzor-2d {smiles="CC(C)C" grupa="none"} | Izobutan (metylopropan): wzór strukturalny
 @opis Wzór strukturalny izobutanu: trzy atomy węgla połączone wokół środkowego, rozgałęzienie CH₃; ten sam wzór sumaryczny C₄H₁₀ co butan, inna budowa — izomer.
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
 ## 5 | Doświadczenie — dwa dowody z płomienia metanu {#dosw}
 
 ::: dosw | Doświadczenie 1 — Produkty spalania metanu: zlewka i woda wapienna

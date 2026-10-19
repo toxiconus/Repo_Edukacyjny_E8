@@ -164,6 +164,9 @@ Glicerol jest składnikiem fosfolipidów, z których zbudowane są błony komór
 Przy produkcji biodiesla z oleju roślinnego powstaje glicerol jako produkt uboczny. Gdy go przybywa, jego cena spada — dziś szuka się sposobów przerobu tego nadmiaru (np. na paliwo, kosmetyki). To przykład, że chemia odpadu bywa równie ważna co chemia produktu.
 :::
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
 ## 3 | Wykład — próba z wodorotlenkiem miedzi(II): charakterystyka {#proba-cu}
 
 To najważniejsza reakcja lekcji. Przebieg dwuetapowy:

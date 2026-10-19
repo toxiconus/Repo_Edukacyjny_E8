@@ -70,6 +70,9 @@ Jeśli metal stoi **po** drugim, reakcja nie zachodzi. Cu nie wypiera Zn z ZnSO�
 - Cu stoi po Zn, więc reakcja nie zachodzi.
 - Zapis: Cu + ZnSO₄ → brak reakcji.
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
 ### 4. Reakcje z kwasami — tylko metale przed wodorem
 
 Z rozcieńczonymi kwasami (np. HCl) reagują tylko metale przed wodorem. Wypierają wodór, tworząc sól i H₂↑.

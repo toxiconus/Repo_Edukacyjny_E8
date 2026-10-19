@@ -128,6 +128,9 @@ Hel, neon, argon, krypton, ksenon, radon — grupa 18. Mają **trwałą konfigur
 | neon Ne | świeci czerwono-pomarańczowo w rurach wyładowczych | reklamy świetlne |
 | argon Ar | najczęstszy w powietrzu z gazów szlachetnych | atmosfera ochronna przy spawaniu, wypełnianie żarówek |
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
 ## 5 | Tlenek węgla(IV) — dwutlenek węgla [[basic:E8]] {#co2}
 
 **Otrzymywanie:**

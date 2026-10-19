@@ -271,6 +271,9 @@ W okresie 2 energia jonizacji nie rośnie równo: **Be (899 kJ/mol) > B (801)** 
 **Metale przejściowe mają zmienne stopnie utlenienia** (Fe²⁺/Fe³⁺, Cu⁺/Cu²⁺, Mn od +II do +VII), bo mają elektrony na dwóch podpowłokach — ns i (n−1)d — o zbliżonych energiach; w wiązaniach mogą uczestniczyć elektrony obu. Dlatego reguła „elektrony walencyjne = numer grupy − 10” ich nie obejmuje.
 :::
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
 ## 9 | Doświadczenia — podobieństwo w grupie i trend reaktywności [[basic:E8]] {#doswiadczenia}
 
 ::: dosw | Doświadczenie 1 — Reaktywność litowców z wodą (pokaz nauczyciela)
