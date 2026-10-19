@@ -144,6 +144,9 @@ Liczba reszt octanowych zrównuje ładunek kationu: Na⁺ → CH₃COONa; Mg²�
 Mg + 2CH₃COOH → (CH₃COO)₂Mg + H₂↑
 Zn + 2CH₃COOH → (CH₃COO)₂Zn + H₂↑
 
+@klocek bilans-rownania {rownanie="Mg + CH3COOH -> Mg(CH3COO)2 + H2" przyklady="Zn + CH3COOH -> Zn(CH3COO)2 + H2; Na + CH3COOH -> CH3COONa + H2"} | Bilans atomów: magnez i kwas octowy
+@opis Tabela bilansu atomów reakcji Mg + CH₃COOH → Mg(CH₃COO)₂ + H₂: liczba atomów Mg, C, H i O po obu stronach. Magnez oddaje kationy, reszta octanowa dwukrotnie — współczynnik 2 przy kwasie uzgadnia bilans. Wniosek: reszta octanowa bierze udział w reakcji, a wodór wychodzi jako cząsteczkowy H₂.
+
 Reagują tylko metale **aktywniejsze od wodoru** (szereg aktywności: K, Na, Ca, Mg, Al, Zn, Fe...). **Miedź, srebro i złoto nie reagują** — są mniej aktywne od wodoru i nie wypierają go z kwasu. Cu nie wypiera wodoru z kwasu, więc równanie Cu + 2CH₃COOH → (CH₃COO)₂Cu + H₂↑ jest fałszywe — to najczęstszy fałszywy zapis w zadaniach. (Powolne zazielenienie miedzi w occie na powietrzu to inna reakcja — z udziałem tlenu, nie wypieranie wodoru.)
 
 Z sodem kwas octowy reaguje tak jak etanol — 2CH₃COOH + 2Na → 2CH₃COONa + H₂↑ — ale **znacznie gwałtowniej**, bo atom H w –COOH jest dużo bardziej ruchliwy niż w –OH alkoholu. Odczyn roztworu rozstrzyga: roztwór kwasu czerwieni lakmus, roztwór etanolu — nie.
