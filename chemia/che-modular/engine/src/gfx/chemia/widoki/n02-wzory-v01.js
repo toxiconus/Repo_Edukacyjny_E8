@@ -6,7 +6,7 @@ V.define('n02-wzory-v01',{title:'Wzór wodorotlenku: kation + OH⁻ — bilans �
   var b2=el('div','r');host.appendChild(b2);btn(b2,'− OH⁻',function(){if(st.n>1){st.n--;draw()}});btn(b2,'+ OH⁻',function(){if(st.n<6){st.n++;draw()}});btn(b2,'dobierz automatycznie',function(){st.n=st.r.q;draw()});
   var sp=el('span',null,' <b style="margin-left:12px">Model:</b> ');b2.appendChild(sp);seg(b2,[['A','A — szkolny'],['B','B — przestrzenny'],['ions','jony']],'A',function(m){st.mode=m;draw()});
   var g=grid(host,300),L=el('div'),R=el('div');g.append(L,R);
-  var inp=el('div','r','<b>Sprawdź swój wzór:</b> ');var ii=el('input');ii.placeholder='np. CaOH2 albo Ca(OH)2';ii.style.cssText='font:600 15px ui-monospace,Consolas,monospace;padding:5px 8px;border-radius:8px;border:1px solid var(--border,#cbd5e1);min-width:160px';inp.appendChild(ii);var out=el('div');
+  var inp=el('div','r','<b>Sprawdź swój wzór:</b> ');var ii=el('input');ii.placeholder='np. CaOH2 albo Ca(OH)2';ii.style.cssText='font:600 15px ui-monospace,Consolas,monospace;padding:5px 8px;border-radius:8px;border:1px solid var(--border,#cdd5dd);min-width:160px';inp.appendChild(ii);var out=el('div');
   btn(inp,'Sprawdź',function(){var c=H.check(ii.value,st.r.metal,st.r.q);out.innerHTML=card(c.ok?'✓ Dobrze':'✗ Popraw',c.msg,c.ok?'#16a34a':'#dc2626')});host.append(inp,out);
   var br=el('div');host.appendChild(br);
   function bracketDemo(){var b=H.build(st.r.metal,st.r.q);if(!b.bracket){br.innerHTML=card('Nawias','Jedna grupa OH⁻ → bez nawiasu: <b>'+b.pretty+'</b>.','#64748b');return}

@@ -16,6 +16,6 @@ V.define('n02-przeglad-v01',{title:'Wodorotlenki — rozpuszczalność, barwa os
     +'<tr><th>Co jest w roztworze?</th><td>'+d.eq+'<br><small>'+d.note+'</small></td></tr>'
     +'<tr><th>Jaki odczyn?</th><td>'+s.odczyn+(s.ph?' (pH ≈ '+fmt(s.ph,1)+')':'')+(s.base?' — to <b>zasada</b> (roztwór)':'')+'</td></tr>'
     +'<tr><th>Barwa</th><td><span style="display:inline-block;width:14px;height:14px;border-radius:50%;background:'+r.hex+';border:1px solid #94a3b8;vertical-align:-2px"></span> '+r.color+'</td></tr>'
-    +'</tbody></table></div>'+'<h4 style="margin:10px 0 4px">Jak go otrzymać?</h4>'+ob.map(function(o){return card((o.ok?'✓ ':'✗ ')+o.title,o.ok?eqHtml(o.eq)+'<small>'+o.cond+(o.obs?' · obserwacja: '+o.obs:'')+(o.safety?' · BHP: '+o.safety:'')+'</small>':'<small>'+o.why+'</small>',o.ok?'#16a34a':'#94a3b8')}).join('')
+    +'</tbody></table></div>'+'<h4 style="margin:10px 0 4px">Jak go otrzymać?</h4>'+ob.map(function(o){return card((o.ok?'✓ ':'✗ ')+o.title,o.ok?eqHtml(o.eq)+'<small>'+o.cond+(o.obs?' · obserwacja: '+o.obs:'')+(o.safety?' · BHP: '+o.safety:'')+'</small>':'<small>'+o.why+'</small>',o.ok?'#16a34a':'#9aa6b6')}).join('')
     +(r.notes.length?card('Warto wiedzieć','<ul style="margin:2px 0 0 18px">'+r.notes.map(function(x){return'<li>'+x+'</li>'}).join('')+'</ul>','#64748b'):'')}
   tiles()}});
