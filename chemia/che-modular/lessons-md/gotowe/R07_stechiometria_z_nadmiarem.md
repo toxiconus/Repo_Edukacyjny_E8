@@ -79,6 +79,9 @@ Mniejszy jest Mg, więc **Mg jest substratem ograniczającym**, a HCl jest w nad
 **Współczynnik przereagowania = podana masa ÷ masa odniesienia.** Mniejszy wynik oznacza substrat, który się wyczerpie.
 :::
 
+@klocek nadmiar-substratu {reakcja="mg-hcl" mA="12" mB="40"} | Nadmiar substratu: zmieniaj masy i obserwuj, który się wyczerpie
+@opis Równanie Mg + 2 HCl → MgCl₂ + H₂ z dwoma suwakami mas (Mg i HCl). Model liczy współczynniki przereagowania (podana masa ÷ masa odniesienia), wskazuje substrat ograniczający i pokazuje paski: kolor — masa, która przereagowała, kreskowany pas — nadmiar, który zostaje; poniżej masy produktów. Dla 12 g Mg i 40 g HCl wychodzi 47,5 g MgCl₂, 1 g H₂ i 3,5 g HCl w nadmiarze, tak jak w przykładzie 1.
+
 ### 4. Przykład 2: Fe + S → FeS
 
 **Zadanie:** mamy 7 g Fe i 3,2 g S.

@@ -29,7 +29,10 @@
   "konfiguracje.js": "Konfiguracje elektronowe Z ≤ 36: suwak, pudełka orbitali, powłoki K–N, zapis pełny i skrócony",
   "kalkulator_mola.js": "Kalkulator mola: m, n, M, N, V gazu dla dowolnej substancji",
   "krzyzowka_mendla.js": "Szachownica Punnetta: jedna cecha i dihybryda 4×4, stosunek genotypów i fenotypów",
-  "karta_bhp.js": "Karta BHP: zasady pracy w pracowni i pierwsza pomoc (rozwijane karty)"
+  "karta_bhp.js": "Karta BHP: zasady pracy w pracowni i pierwsza pomoc (rozwijane karty)",
+  "sklad_procentowy.js": "Masa cząsteczkowa i skład procentowy wg wzoru (masy jak w lekcji C1c masy)",
+  "bilans_rownania.js": "Dobieranie współczynników: przyciski −/+ i tabela bilansu atomów",
+  "nadmiar_substratu.js": "Nadmiar substratu: suwaki mas, współczynniki przereagowania, paski, produkty"
  },
  "lekcje": {
   "P01": [
@@ -189,7 +192,8 @@
    "c2d_wzor.js",
    "c2d_prosta.js",
    "c2d_klocek.js",
-   "konfiguracje.js"
+   "konfiguracje.js",
+   "sklad_procentowy.js"
   ],
   "C2m": [
    "klocki.js",
@@ -218,6 +222,16 @@
    "klocki.js",
    "pomocnicze.js",
    "probowki_odczyn.js"
+  ],
+  "C3": [
+   "klocki.js",
+   "pomocnicze.js",
+   "bilans_rownania.js"
+  ],
+  "R07": [
+   "klocki.js",
+   "pomocnicze.js",
+   "nadmiar_substratu.js"
   ]
  },
  "css": [

@@ -96,6 +96,9 @@ Sprawdzenie: Al 4 = 4, O 6 = 6. Zbilansowane.
 **NWW tlenu.** Gdy tlen jest w substracie jako O₂, a w produkcie w cząsteczce z innym liczbą atomów O, szukaj najmniejszej wspólnej wielokrotności liczby atomów O po obu stronach. Dla 2 i 3 wynosi ona 6.
 :::
 
+@klocek bilans-rownania {rownanie="Mg + O2 -> MgO"} | Dobieranie współczynników: licz atomy po obu stronach
+@opis Równanie reakcji z przyciskami − i + przy każdej substancji (współczynnik od 1 do 12) oraz przyciskami z przykładami (H₂ + O₂, Mg + O₂, Al + O₂, CaCO₃ → CaO + CO₂, Mg + HCl). Pod równaniem tabela liczby atomów każdego pierwiastka po lewej i prawej stronie z znakiem ✓ albo ✗ z różnicą; gdy wszystkie wiersze są ✓, pojawia się komunikat, że równanie jest zbilansowane.
+
 ### 4. Obliczenia masowe bez mola — proporcja „z X g → Y g"
 
 **Kluczowa idea:** w zbilansowanym równaniu stosunek mas substratów i produktów jest stały. Jeśli wiemy, że 48 g Mg daje 80 g MgO, to 12 g Mg (cztery razy mniej) da cztery razy mniej produktu.

@@ -117,6 +117,9 @@ Uwaga: w mianowniku jest masa **związku**, nie masa samego pierwiastka.
 **Atom nie równa się procentowi.** H₂O ma 2 atomy wodoru i 1 tlenu, ale wodoru jest tylko 11,1% masy, bo tlen jest 16 razy cięższy. Zawsze liczysz masę, nie liczbę atomów.
 :::
 
+@klocek sklad-procentowy {wzor="H2SO4"} | Kalkulator składu procentowego: wpisz wzór albo wybierz przykład
+@opis Pole na wzór związku (np. H2SO4, Fe2O3, Ca(OH)2) i przyciski z przykładami: model podaje masę cząsteczkową jako sumę n · A, kolorowy pasek z udziałami pierwiastków oraz dla każdego pierwiastka obliczenie n · A / M · 100% z wynikiem; suma procentów to 100%. Masy atomowe zaokrąglone jak w tabeli lekcji (Cl = 35,5).
+
 ### 4. Wzór najprostszy z danych procentowych
 
 **Wzór najprostszy** (empiryczny) to najmniejszy całkowity stosunek liczby atomów w związku. Np. dla glukozy C₆H₁₂O₆ stosunek 6 : 12 : 6 upraszcza się do 1 : 2 : 1, czyli wzór najprostszy to CH₂O.
