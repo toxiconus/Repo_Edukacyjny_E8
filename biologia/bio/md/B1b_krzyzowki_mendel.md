@@ -80,7 +80,7 @@ Klasyczne doświadczenie Mendla z grochem:
 3. **F2:** z krzyżówki F1 × F1 powstaje mieszanka żółtych i zielonych nasion w stosunku 3 : 1.
 
 ::: ciekawostka
-**Gregor Mendel** (1822–1884) był zakonnikiem i botanikiem w klasztorze w Brnie. Hodował groch przez kilka lat (do weryfikacji: ok. 8 lat); w 1865 r. przedstawił wyniki z blisko 30 000 roślin. Wyniki opublikował w 1866 r., ale przez kolejne ok. 35 lat nie zostały docenione. Dopiero w 1900 r. kilku botaników niezależnie je potwierdziło.
+**Gregor Mendel** (1822–1884) był zakonnikiem i botanikiem w klasztorze w Brnie. Hodował groch w latach 1856–1863, krzyżując blisko 30 000 roślin; wyniki przedstawił w 1865 r. Wyniki opublikował w 1866 r., ale przez kolejne ok. 35 lat nie zostały docenione. Dopiero w 1900 r. kilku botaników niezależnie je potwierdziło.
 :::
 
 ### 4. Pierwsze prawo Mendla — jednorodność F1
@@ -387,7 +387,7 @@ Przed sprawdzianem lub zawodami sprawdź, czy umiesz:
 ## Do potwierdzenia przed publikacją
 
 1. Dane liczbowe Mendla: wszystkie siedem wierszy potwierdzono (Griffiths, tab. 2-1).
-2. Lata doświadczeń Mendla (ok. 8 lat) — do weryfikacji. Liczba roślin: wg OpenStax blisko 30 000 (wyniki z 1865 r.).
+2. Lata doświadczeń (1856–1863) i liczba roślin (blisko 30 000) potwierdzone wg OpenStax/ASU — sprawdzone.
 3. Czy na etapie wojewódzkim wymagane są cechy sprzężone z płcią, czy tylko wzmianka?
 4. Czy dominacja niepełna i kodominacja są w zakresie? Lekcja podaje je jako ciekawostkę.
 5. Numeracja lekcji (B1b / L011) — do uzgodnienia z BIO_KATALOG.

@@ -202,7 +202,7 @@ Kwas reaguje z zasadą, tworząc sól i wodę. Jest to **szczególny przypadek w
 :::
 
 ::: ciekawostka
-**Metan** jest głównym składnikiem gazu ziemnego. Spala się czysto: CH₄ + 2 O₂ → CO₂ + 2 H₂O. Jest też silnym gazem cieplarnianym, a jego wpływ na klimat w krótkim okresie jest wielokrotnie większy niż CO₂ (wartości zależą od przyjętego horyzontu czasowego — do weryfikacji).
+**Metan** jest głównym składnikiem gazu ziemnego. Spala się czysto: CH₄ + 2 O₂ → CO₂ + 2 H₂O. Jest też silnym gazem cieplarnianym, a jego wpływ na klimat w krótkim okresie jest wielokrotnie większy niż CO₂ (wg IPCC AR6 dla metanu kopalnego: ok. 82 razy silniejszy niż CO₂ w ciągu 20 lat, ok. 30 razy w ciągu 100 lat).
 :::
 
 ::: mnemonik
