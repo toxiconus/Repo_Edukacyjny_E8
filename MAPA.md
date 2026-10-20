@@ -3,7 +3,7 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (14 pl., 145 KB)
+## .  (14 pl., 147 KB)
 - (zwinięte; `ls .`)
 
 ## angielski  (9 pl., 1.8 MB)
@@ -35,34 +35,47 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`L000-INDEKS-ROKU_MASTER_v1.0 (8) (1).html` 54 KB
 - `STAN_LEKCJI_PODSTAWA_PLUS.md` 15 KB
 
-## biologia/bio  (2 pl., 5 KB)
-- `BIO_KATALOG.md` 3 KB
+## biologia/bio  (2 pl., 7 KB)
+- `BIO_KATALOG.md` 5 KB
 - `PRZEKAZANIE.md` 3 KB
 
-## biologia/bio/md  (12 pl., 348 KB)
-- `B10_powtorka_uklady_czlowieka.md` 18 KB
+## biologia/bio/grafiki/propozycje  (3 pl., 30 KB)
+- `U08_droga_wzrokowa.svg` 10 KB
+- `U10_krzywe_glukozy.svg` 10 KB
+- `U10_os_tarczycowa.svg` 10 KB
+
+## biologia/bio/md  (12 pl., 365 KB)
+- `B10_powtorka_uklady_czlowieka.md` 19 KB
 - `B1b_krzyzowki_mendel.md` 22 KB
-- `B2a_skora_i_uklad_ruchu.md` 18 KB
+- `B2a_skora_i_uklad_ruchu.md` 19 KB
 - `B2b_uklad_pokarmowy_i_odzywianie.md` 19 KB
-- `B2c_oddychanie_i_wydalanie.md` 15 KB
-- `B2d_uklad_nerwowy_i_zmysly.md` 19 KB
+- `B2c_oddychanie_i_wydalanie.md` 18 KB
+- `B2d_uklad_nerwowy_i_zmysly.md` 20 KB
 - `B2e_uklad_dokrewny.md` 15 KB
-- `B2f_rozmnazanie_i_rozwoj.md` 17 KB
+- `B2f_rozmnazanie_i_rozwoj.md` 19 KB
 - `B2g_homeostaza.md` 31 KB
 - ⚠`L010_dna_od_zera.md` 51 KB
-- ⚠`REV01_organizacja_i_chemizm_zycia.md` 54 KB
-- ⚠`REV02_roznorodnosc_zycia.md` 70 KB
+- ⚠`REV01_organizacja_i_chemizm_zycia.md` 56 KB
+- ⚠`REV02_roznorodnosc_zycia.md` 76 KB
 
-## biologia/bio/narzedzia  (2 pl., 10 KB)
+## biologia/bio/narzedzia  (2 pl., 11 KB)
 - `md2html_bio.py` 8 KB
 - `sprawdz_bio.js` 2 KB
 
-## biologia/bio/szablon  (5 pl., 119 KB)
+## biologia/bio/szablon  (7 pl., 235 KB)
 - `baza-wspolna.css` 45 KB
+- `bio-core.js` 18 KB
+- ⚠`bio-rysunki.js` 97 KB
 - ⚠`bio-viz.js` 61 KB
-- `bio-warstwa.css` 10 KB
+- `bio-warstwa.css` 11 KB
 - `index.html` 1 KB
 - `lekcja.js` 2 KB
+
+## biologia/bio/szablon/nowe  (18 pl., 82 KB)
+- (zwinięte; `ls biologia/bio/szablon/nowe`)
+
+## biologia/bio/szablon/wizualizacje  (59 pl., 300 KB)
+- (zwinięte; `ls biologia/bio/szablon/wizualizacje`)
 
 ## biologia/md  (37 pl., 711 KB)
 - (zwinięte; `ls biologia/md`) — duże:
@@ -71,8 +84,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`L014_jak_komorki_ciala_powstaja_i.md` 57 KB
 - ⚠`X01_szablon_lekcji.md` 60 KB
 
-## biologia/plany  (3 pl., 12 KB)
+## biologia/plany  (4 pl., 45 KB)
 - `ANALIZA_ARKUSZY_LKO_BIO.md` 4 KB
+- `KATALOG_GRAFIK_BIO.md` 32 KB
 - `PLAN_BRAKUJACE_LEKCJE.md` 3 KB
 - `PLAN_RYSUNKOW_BIO.md` 5 KB
 
@@ -518,14 +532,17 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PROMPT_ulepszenia_F.md` 6 KB
 - `PROMPT_ulepszenia_F_v15.md` 12 KB
 
-## eksport  (4 pl., 25 KB)
+## eksport  (5 pl., 30 KB)
 - `.gitignore` 0 KB
 - `html2md.py` 4 KB
 - `paczka_polski.py` 4 KB
 - `zbierz_lekcje.py` 17 KB
+- `zip_przekazania.py` 5 KB
 
-## narzedzia  (8 pl., 56 KB)
+## narzedzia  (10 pl., 61 KB)
 - `audyt_do_kanonu.py` 5 KB
+- `etap_lko.py` 1 KB
+- `katalog_grafik_bio.py` 4 KB
 - `latex2uni.py` 2 KB
 - `mapa.py` 2 KB
 - `opis_dlug.json` 0 KB
@@ -559,12 +576,13 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## olimpiada/narzedzia  (1 pl., 7 KB)
 - `mapa_chemia.py` 7 KB
 
-## olimpiada/zrodla  (6 pl., 602 KB)
+## olimpiada/zrodla  (7 pl., 606 KB)
 - ⚠`LKO_2026_27_Czesc_II_zakres_wymagan.docx` 244 KB
 - ⚠`LKO_2026_27_Czesc_II_zakres_wymagan.txt` 103 KB
 - ⚠`LKO_2026_27_Terminarz_eliminacji.pdf` 165 KB
 - ⚠`LKO_2026_27_Zalacznik2_wzory_dokumentow.docx` 59 KB
 - `LKO_2026_27_Zalacznik2_wzory_dokumentow.txt` 14 KB
+- `archiwum_arkuszy.json` 4 KB
 - `konkursy_LKO_2026_27_ustalenia.md` 17 KB
 
 ## olimpiada/zrodla/LKO  (5 pl., 3.4 MB)
