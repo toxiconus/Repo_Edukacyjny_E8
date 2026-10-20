@@ -1,5 +1,7 @@
 # Zadania: Haiku (tanie) i Sonnet (droższe) — stan 2026-10-20
 
+> **ZASADA PRACY CIĄGŁEJ (Haiku i każdy model wykonujący tę listę):** po skończeniu zadania NIE pytaj „czy kontynuować?” ani „co dalej?” — od razu bierz następne niezaznaczone `- [ ]` z listy i rób je po kolei, aż skończą się zadania albo wyczerpie się limit. Raportuj dopiero na końcu serii (2–4 zdania: co zrobione, co zostało). Pytaj tylko wtedy, gdy decyzja grozi utratą danych lub naprawdę należy do użytkownika. Po każdym zadaniu: odhacz `- [x]`, commit, `python3 narzedzia/odswiez_wszystko.py --szybko`; push i scalanie do `main` wolno, jeśli nie tracimy danych (CLAUDE.md). Przy limicie: zapisz stan w tym pliku i zrób najmniejszy działający krok.
+
 Priorytet: biologia LKO etap szkolny, środa 21.10.2026, 9:00, 60 min. Nie pisać nowych lekcji — poprawiać istniejące, pytać zewnętrzne AI (Perplexity).
 
 ## Tanie — Haiku (mechaniczne)

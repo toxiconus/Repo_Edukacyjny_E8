@@ -34,6 +34,9 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 - Praca OLI: najpierw `olimpiada/PRZEKAZANIE.md`; `OLIMPIADA_8_MASTER.md` czytać tylko potrzebną sekcję (`grep -n '^#'`).
 - Lekcje są wspólne z kursem E8: jeden plik MD, warstwy poziomów 2–4 dopisywane w tej samej lekcji — nie kopiować treści do `olimpiada/`.
 
+## Praca ciągła (każdy model, zwłaszcza Haiku)
+- Skończone zadanie → od razu następne z listy (`ZADANIA_HAIKU_SONNET.md`), bez pytania „czy dalej?”. Raport na końcu serii. Pytać tylko przy ryzyku utraty danych.
+
 ## Jedna najlepsza wersja (zasada stała, od 2026-10-20)
 - Każda lekcja, grafika i narzędzie ma w repo **jedną najlepszą wersję**. Przed utworzeniem czegoś sprawdź, czy już istnieje (`ls`, katalogi, KATALOG_GRAFIK_BIO); nie twórz drugiej wersji — rozbuduj istniejącą.
 - Dubel: porównaj (rozmiar, nagłówki, viz, data, zawartość); lepsza zostaje, unikalne treści gorszej dopisz do lepszej albo przenieś do `niewykorzystane/` (biologia/niewykorzystane, chemia/plany/niewykorzystane). Identyczne kopie usuwaj od razu. Nic nie ginie bez porównania.
