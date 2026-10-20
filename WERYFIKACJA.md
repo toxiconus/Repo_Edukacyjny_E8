@@ -401,3 +401,13 @@ Lekcje: CHE.04.J02 (odczyn i pH), CHE.02.N04 (kwasy). Źródła ZPE z `chemia/pl
 - J02 — wzory pH = −log[H₃O⁺], pOH, pKw = 14 przy 25 °C, pH = 7 jako obojętny — zgodne z ZPE. Lekcja podaje „przy ~25 °C” i przybliżenie szkolne dla rozcieńczonych roztworów; ZPE tego przybliżenia wprost nie omawia (zakłada pełną dysocjację mocnych elektrolitów), ale nie ma sprzeczności — dopisek w lekcji wystarczy.
 - N04 — podział kwasów (mocne: HCl, HBr, HI, HNO₃, H₂SO₄, HClO₄; słabe: m.in. H₃PO₄, CH₃COOH) zgodny z przyjętą klasyfikacją szkolną. ZPE w tym materiale nie podaje pełnej listy — niezgodności brak.
 - Przykłady liczbowe ZPE (HA 0,02 mol/dm³ → pH 1,699; [H₃O⁺]=0,2 → pH 0,70; zmieszanie HCl/NaOH → pH 12,7) są spójne ze wzorami. Wątpliwe tylko w ZPE: przykład NaOH 0,5250 g w 0,5 dm³ bez końcowego pH — nie dotyczy naszych lekcji.
+
+## H-Z3 — partia 6: chemia (sole, wodorotlenki) i układy człowieka (B2b–B2d) (2026-10-20)
+
+Bez zmian w treści lekcji. Źródła ZPE z mapy.
+
+- CHE.02.N05 (sole) — zasady rozpuszczalności (sole Na/K i azotany rozpuszczalne; AgCl, BaSO₄ nierozpuszczalne; CaSO₄ trudno rozpuszczalny), reakcje strącania i nazewnictwo zgodne z ZPE. ZPE nie omawia wodorosoli ani hydrolizy — lekcja zawiera je w „ambitnych” (LO), zostaje.
+- CHE.02.N03 (wodorotlenki) — wodorotlenki litowców dobrze rozpuszczalne, Al(OH)₃/Zn(OH)₂ amfoteryczne, Mg(OH)₂ o charakterze zasadowym — zgodne. ZPE nie podaje rozpuszczalności Ca(OH)₂ ani Mg(OH)₂ ani wody wapiennej; lekcja (Ca(OH)₂ mało rozpuszczalny) — podręcznikowo, zostaje.
+- BIO.02.B2b (trzustka 95% egzokrynnej / 5% endokrynnej; wątroba ok. 1,5 kg; kcal/g) — ZPE nie podaje tych liczb. Zostaje jako wiedza podręcznikowa; do potwierdzenia przy kolejnej weryfikacji.
+- BIO.02.B2c (pęcherzyki płucne) — ROZBIEŻNOŚĆ: lekcja „ok. 300–500 mln”, ZPE „ok. 600 mln” i powierzchnia wymiany „90 m²”. Do decyzji Sonneta (oba źródła podają różne przedziały, zapisać w lekcji wartość z przypisem albo zaokrąglić). Skład powietrza wdychanego (21% O₂, 0,04% CO₂) zgodny; ZPE podaje wydychane O₂ 16%, CO₂ 4% (ilustracja 4,5%) — lekcja podaje powietrze pęcherzykowe 5,3% CO₂, nieobecne w ZPE.
+- BIO.02.B2d (potencjał spoczynkowy −70 mV, próg −55 mV, szczyt +30 mV) — ZPE na tej stronie nie podaje wartości potencjałów. Prędkości przewodzenia: ZPE 5–130 m/s dla nerwów obwodowych — zgodne z zakresem w lekcji (8 i 40 m/s), które lekcja już oznacza jako „do potwierdzenia”.
