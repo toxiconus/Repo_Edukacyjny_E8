@@ -46,6 +46,9 @@ Drogi oddechowe (1–6) służą tylko do przewodzenia powietrza. Wymiana gazów
 
 ## 2 | Mechanika wentylacji {#wentylacja}
 
+@viz wentylacja | Wdech i wydech — przepona i żebra | animacja tam i z powrotem, suwak = ręcznie
+@opis Przekrój klatki piersiowej: płuca, przepona (kopuła), żebra. Animacja na przemian powiększa i zmniejsza klatkę: przy wdechu przepona się spłaszcza, a żebra unoszą; przy wydechu wracają. Suwak steruje ręcznie, pod rysunkiem opis fazy. Wniosek: wdech jest czynny (skurcz mięśni), spokojny wydech bierny; zmiana objętości klatki zmienia ciśnienie i wywołuje przepływ powietrza.
+
 **Wdech (inspiracja):**
 - **przepona** kurczy się i opuszcza, powiększając klatkę w pionie,
 - **mięśnie międzyżebrowe zewnętrzne** kurczą się i unoszą żebra, powiększając klatkę w poziomie,
@@ -110,6 +113,9 @@ Powietrze atmosferyczne zawiera ok. 21% O₂ i 0,04% CO₂. Powietrze pęcherzyk
 **Wątroba nie wydala**, ale przekształca toksyczny amoniak w mocznik (cykl mocznikowy, zwany też ornitynowym). Mocznik wydalają dopiero nerki.
 
 ## 6 | Budowa nerki i nefron {#nefron}
+
+@viz nefron-budowa | Nefron — części | poznaj, znajdź, podpisz
+@opis Schemat nefronu z numerami: torebka Bowmana, kłębuszek, tętniczki doprowadzająca i odprowadzająca, kanalik bliższy, pętla Henlego, kanalik dalszy, kanalik zbiorczy i naczynia okołokanalikowe. Wniosek: w kłębuszku zachodzi filtracja, w kanalikach wchłanianie zwrotne i wydzielanie, a mocz ostateczny spływa kanalikiem zbiorczym do miedniczki.
 
 Nerki leżą po bokach kręgosłupa na wysokości odcinka lędźwiowego. Każda ma masę ok. 130–170 g. W przekroju wyróżnia się: **korę** (kłębuszki, kanaliki), **rdzeń** (pętle Henlego, cewki zbiorcze) i **miedniczkę nerkową**, do której spływa mocz.
 

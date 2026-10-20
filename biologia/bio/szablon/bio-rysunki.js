@@ -317,10 +317,11 @@ var CY={
  mech:{t:'Cykl rozwojowy mchu (przemiana pokoleń)',st:[['gametofit','n — roślina mchu','Zielona „roślinka” (liście, łodyżka) to pokolenie płciowe, haploidalne (n) i DOMINUJĄCE.'],['gamety','n — plemnie i rodnie','Na wierzchołkach powstają plemniki i komórka jajowa. Plemniki płyną do rodni w kropli wody.'],['zygota','2n','Po zapłodnieniu powstaje zygota (2n), początek pokolenia bezpłciowego.'],['sporofit','2n — sporogon na nóżce','Sporofit (2n) tkwi na gametofitie i od niego zależy; to „puszka” na szczycie nóżki.'],['zarodniki','n — po mejozie','W puszce zachodzi MEJOZA: powstają haploidalne zarodniki. Po wykiełkowaniu dają nowy gametofit.']]},
  paproc:{t:'Cykl rozwojowy paproci (przemiana pokoleń)',st:[['sporofit','2n — roślina z liśćmi','Duża paproć z kłączem i liśćmi to pokolenie bezpłciowe (2n), DOMINUJĄCE — odwrotnie niż u mchów.'],['zarodnie','na spodzie liści','Na spodzie liści w kupkach zarodni zachodzi MEJOZA i powstają zarodniki (n).'],['zarodnik','n','Zarodnik wydostaje się i kiełkuje na wilgotnej glebie.'],['przedrośle','n — gametofit','Mała, sercowata, zielona płytka: samodzielne pokolenie płciowe (n) z plemniami i rodniami.'],['zygota → młody sporofit','2n','Po zapłodnieniu (potrzebna woda) zygota (2n) rozwija się w nową paproć na przedroślu.']]},
  kwiat:{t:'Cykl rozwojowy okrytonasiennych',st:[['roślina z kwiatem','2n — sporofit','Dominujące pokolenie bezpłciowe (2n). Kwiat ma pręciki (pylniki) i słupek (zalążnia z zalążkami).'],['mejoza w kwiecie','powstają zarodniki','W pylnikach: ziarna pyłku (n). W zalążku: woreczek zalążkowy (n) z komórką jajową.'],['zapylenie','pyłek na znamię','Pyłek (męski gametofit) trafia na znamię słupka (wiatr, owady).'],['podwójne zapłodnienie','2n + 3n','Jedno jądro plemnikowe łączy się z komórką jajową → zygota (2n); drugie z komórką centralną → bielmo (3n).'],['nasiono i owoc','zarodek 2n','Zalążek → nasiono (zarodek + bielmo + łupina), zalążnia → owoc. Kiełkowanie daje nowy sporofit.']]},
+ odruch:{lin:1,t:'Łuk odruchowy (odruch kolanowy)',st:[['receptor','rozciągnięcie ścięgna','Receptor (zakończenie czuciowe) w ścięgnie reaguje na uderzenie — powstaje impuls nerwowy.'],['neuron czuciowy','dośrodkowy','Przewodzi impuls od receptora DO rdzenia kręgowego (korzeń grzbietowy).'],['ośrodek nerwowy','rdzeń kręgowy','Impuls przełączany jest w rdzeniu na neuron ruchowy — bez udziału mózgu, dlatego odruch jest szybki. Mózg dowiaduje się równolegle.'],['neuron ruchowy','odśrodkowy','Przewodzi impuls Z rdzenia do mięśnia (korzeń brzuszny).'],['efektor','mięsień czworogłowy','Mięsień kurczy się i prostuje kolano. Odruch jest wrodzony i niezależny od woli.']]},
  faga:{t:'Bakteriofag — cykl lityczny',st:[['adsorpcja','faga przyczepia się','Faga przyczepia się białkami ogonka do receptorów na ścianie bakterii.'],['wstrzyknięcie DNA','otoczka zostaje na zewnątrz','Do komórki wnika tylko kwas nukleinowy faga; białkowa otoczka pozostaje na zewnątrz.'],['replikacja i synteza','bakteria pracuje dla faga','Maszyneria komórki gospodarza powiela DNA faga i produkuje jego białka.'],['składanie wirionów','powstają nowe fagi','Z DNA i białek składają się nowe cząstki wirusa.'],['liza','komórka pęka','Bakteria pęka i uwalnia dziesiątki nowych fagów. W cyklu LIZOGENICZNYM DNA faga najpierw włącza się w DNA bakterii (profag) i czeka.']]}
 };
 var CYUID=0;
-BIO.define('cykl',{opis:'Cykl życiowy jako pierścień etapów z autostartem w widoku (do przodu i od początku); klik = wyjaśnienie i pauza; opcja cykl="zaba|tasiemiec|mech|paproc|kwiat|faga"',
+BIO.define('cykl',{opis:'Cykl życiowy jako pierścień etapów z autostartem w widoku (do przodu i od początku); klik = wyjaśnienie i pauza; opcja cykl="zaba|tasiemiec|mech|paproc|kwiat|faga|odruch"',
 mount:function(el,o){
   var k=CY[o.cykl]?o.cykl:'zaba',uid='cy'+(++CYUID),cur=0,paused=false,vis=false,tm=null,reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
   var svg=BIO.svg(360,310,'Cykl: '+CY[k].t),out=H('div','bv-info bw-out'),bar=H('div','bw-seg bv-tools'),btnP=H('button','bv-btn');btnP.type='button';
@@ -329,14 +330,14 @@ mount:function(el,o){
   svg.appendChild(S('defs',{},[S('marker',{id:uid,viewBox:'0 0 10 10',refX:8,refY:5,markerWidth:7,markerHeight:7,orient:'auto'},[S('path',{d:'M0,0L10,5L0,10z',fill:'#6b7a88'})])]));
   function pt(a){return [cx+rx*Math.cos(a),cy+ry*Math.sin(a)]}
   var step=2*Math.PI/n,gap=0.36;
-  for(var i=0;i<n;i++){var a1=-Math.PI/2+i*step+gap*0.5*(n>5?0.7:1)+0.06,a2=-Math.PI/2+(i+1)*step-gap*0.5*(n>5?0.7:1)-0.06,p1=pt(a1),p2=pt(a2);
+  for(var i=0;i<n;i++){if(CY[k].lin&&i===n-1)continue;var a1=-Math.PI/2+i*step+gap*0.5*(n>5?0.7:1)+0.06,a2=-Math.PI/2+(i+1)*step-gap*0.5*(n>5?0.7:1)-0.06,p1=pt(a1),p2=pt(a2);
     var ar=P('M'+p1[0].toFixed(1)+','+p1[1].toFixed(1)+' A'+rx+','+ry+' 0 0 1 '+p2[0].toFixed(1)+','+p2[1].toFixed(1),'none','#9aa8b4',2,{'marker-end':'url(#'+uid+')'});svg.appendChild(ar);AR[i]=ar}
   st.forEach(function(s,i){var p=pt(-Math.PI/2+i*step),g=S('g',{'class':'bv-hit',role:'button',tabindex:'0','aria-label':s[0]});
     g.appendChild(R(p[0]-50,p[1]-19,100,38,10,'var(--surface,#fff)','#9aa8b4',1.8));
     g.appendChild(BIO.T(p[0],p[1]-5,s[0],{s:s[0].length>18?9.2:10.5,w:700}));g.appendChild(BIO.T(p[0],p[1]+9,s[1],{s:8.6,w:500,f:'var(--viz-mut,#5d6b7a)'}));
     g.addEventListener('click',function(){paused=true;go(i);lab()});g.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();paused=true;go(i);lab()}});ND[i]=g;svg.appendChild(g)});
   svg.appendChild(BIO.T(cx,cy-6,CY[k].t,{s:11,w:700}));svg.appendChild(BIO.T(cx,cy+10,'kliknij etap',{s:9,w:500,f:'var(--viz-mut,#5d6b7a)'}));
-  function go(i){cur=i;ND.forEach(function(g,j){var r=g.firstChild;r.setAttribute('stroke',j===i?'var(--accent,#3f7a28)':'#9aa8b4');r.setAttribute('stroke-width',j===i?3.2:1.8);r.style.fill=j===i?'var(--accent-soft,#e8f3e0)':'var(--surface,#fff)'});AR.forEach(function(a,j){a.setAttribute('stroke',j===i?'var(--accent,#3f7a28)':'#9aa8b4');a.setAttribute('stroke-width',j===i?3.2:2)});
+  function go(i){cur=i;ND.forEach(function(g,j){var r=g.firstChild;r.setAttribute('stroke',j===i?'var(--accent,#3f7a28)':'#9aa8b4');r.setAttribute('stroke-width',j===i?3.2:1.8);r.style.fill=j===i?'var(--accent-soft,#e8f3e0)':'var(--surface,#fff)'});AR.forEach(function(a,j){if(!a)return;a.setAttribute('stroke',j===i?'var(--accent,#3f7a28)':'#9aa8b4');a.setAttribute('stroke-width',j===i?3.2:2)});
     out.innerHTML='<b>'+(i+1)+'. '+st[i][0]+'</b><span>'+st[i][2]+'</span>'}
   function lab(){btnP.textContent=paused?'▶ wznów animację':'❚❚ pauza';btnP.setAttribute('aria-pressed',String(paused))}
   btnP.onclick=function(){paused=!paused;lab()};
@@ -399,4 +400,60 @@ mount:function(el){
   show(0);lab();applyF();ang=0.35;place();
   if('IntersectionObserver'in window)new IntersectionObserver(function(es){vis=es[0].isIntersecting},{threshold:0.4}).observe(el);else vis=true;
   if(reduce){paused=true;lab()}requestAnimationFrame(loop)}});
+
+/* =====================================================================
+   11. NEURON, NEFRON (lab) i MECHANIKA ODDYCHANIA (animacja tam i z powrotem)
+   ===================================================================== */
+BIO.define('neuron-budowa',{opis:'Neuron: dendryty, ciało komórki, jądro, akson, osłonka mielinowa, przewężenia Ranviera, zakończenia aksonu (synapsa); tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  lab(el,{get:function(){return{w:360,h:200,label:'Neuron z oznaczonymi częściami',parts:[
+    {n:'dendryty',m:[24,46],d:'Krótkie, rozgałęzione wypustki; odbierają sygnały od innych komórek i przewodzą impuls DO ciała komórki.',draw:function(g){['M54,88 L22,68 L8,58','M52,100 L16,102 L4,108','M56,114 L28,134 L14,152','M64,78 L46,50 L40,36'].forEach(function(d){g.appendChild(P(d,null,'#3f5aa8',3))})}},
+    {n:'ciało komórki',m:[96,138],d:'Zawiera jądro i większość organelli; tu prowadzony jest metabolizm neuronu.',draw:function(g){g.appendChild(C(80,100,26,'#c4d0f2','#3f5aa8',2))}},
+    {n:'jądro komórkowe',m:[100,82],z:1,d:'Zawiera DNA i steruje pracą komórki. Dojrzałe neurony nie dzielą się.',draw:function(g){g.appendChild(C(84,100,10,'#2a3d7a','none',0))}},
+    {n:'akson (neuryt)',m:[114,124],z:-2,d:'Długa wypustka (może mieć ponad metr); przewodzi impuls OD ciała komórki do kolejnej komórki. Jeden na neuron.',draw:function(g){g.appendChild(P('M104,100 L300,100',null,'#3f5aa8',4))}},
+    {n:'osłonka mielinowa',m:[144,76],z:-1,d:'Tłuszczowa osłonka z komórek glejowych (Schwanna); izoluje akson i przyspiesza przewodzenie impulsu — impuls „przeskakuje” między przewężeniami.',draw:function(g){[0,1,2,3].forEach(function(i){g.appendChild(R(126+i*42,88,34,24,10,'#f3f0d0','#8a8450',1.6))})}},
+    {n:'przewężenie Ranviera',m:[164,128],d:'Odsłonięty fragment aksonu między sąsiednimi odcinkami osłonki; tu powstaje impuls, który „skacze” do następnego przewężenia (przewodzenie skokowe).',draw:function(g){[160,202,244].forEach(function(x){g.appendChild(R(x,91,8,18,2,'#ffcdd2','#c62828',1.5))})}},
+    {n:'zakończenia aksonu (synapsa)',m:[340,70],d:'Rozgałęzienia z kolbkami; tu impuls zamienia się na sygnał chemiczny — neuroprzekaźnik uwalniany w szczelinę synaptyczną do następnej komórki.',draw:function(g){['M300,100 L322,80','M300,100 L326,100','M300,100 L322,120'].forEach(function(d){g.appendChild(P(d,null,'#3f5aa8',3))});[[326,77],[331,100],[326,123]].forEach(function(p){g.appendChild(C(p[0],p[1],5,'#fff','#3f5aa8',2.5))})}}
+  ]}}})}});
+
+BIO.define('nefron-budowa',{opis:'Nefron: kłębuszek, torebka Bowmana, kanalik bliższy, pętla Henlego, kanalik dalszy, kanalik zbiorczy, tętniczki, naczynia okołokanalikowe; tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  lab(el,{get:function(){return{w:360,h:290,label:'Nefron z oznaczonymi częściami',parts:[
+    {n:'torebka Bowmana',m:[50,60],z:-1,d:'Obejmuje kłębuszek; zbiera przesącz (mocz pierwotny) i kieruje do kanalika. Kłębuszek + torebka = ciałko nerkowe (w korze nerki).',draw:function(g){g.appendChild(C(82,70,32,'#fff7d6','#b8860b',2.5))}},
+    {n:'kłębuszek naczyń włosowatych',m:[110,96],d:'Sieć naczyń włosowatych. Ciśnienie krwi wyciska osocze przez cienką ścianę (ultrafiltracja) — powstaje mocz pierwotny. Białka i komórki krwi zostają we krwi.',draw:function(g){g.appendChild(C(82,70,19,'#f2a0a0','#b23b3b',1.8));g.appendChild(P('M70,62 q8,-8 14,0 t10,8 q-4,10 -14,8 t-14,-6',null,'#b23b3b',1.5))}},
+    {n:'tętniczka doprowadzająca',m:[22,34],d:'Doprowadza krew do kłębuszka. Jest szersza niż odprowadzająca — to utrzymuje wysokie ciśnienie w kłębuszku, potrzebne do filtracji.',draw:function(g){g.appendChild(P('M10,40 L64,56',null,'#b23b3b',9))}},
+    {n:'tętniczka odprowadzająca',m:[150,30],d:'Odprowadza krew z kłębuszka (jest węższa) i rozpada się na naczynia włosowate oplatające kanaliki.',draw:function(g){g.appendChild(P('M98,52 L138,22',null,'#b23b3b',6))}},
+    {n:'kanalik bliższy',m:[42,150],d:'Kręty kanalik tuż za torebką. Wchłanianie zwrotne: cała glukoza i aminokwasy oraz większość wody i jonów wracają do krwi.',draw:function(g){g.appendChild(P('M82,102 q-16,10 0,20 t0,20 q-16,10 0,20 t0,20 L82,184',null,'#2a6f97',6))}},
+    {n:'pętla Henlego',m:[96,262],d:'Ramię zstępujące i wstępujące; tworzy w rdzeniu nerki gradient stężeń, dzięki któremu można odzyskać wodę i wytworzyć mocz zagęszczony.',draw:function(g){g.appendChild(P('M82,184 L112,262 Q135,284 158,262 L186,184',null,'#1d4e73',6))}},
+    {n:'kanalik dalszy',m:[208,128],d:'Kręty kanalik za pętlą; reguluje skład jonów (Na⁺, K⁺) i pH przez wydzielanie H⁺ — pod wpływem hormonów.',draw:function(g){g.appendChild(P('M186,184 q12,-14 22,-4 t22,-4 q12,-14 20,-26 L262,106',null,'#5b9bd5',6))}},
+    {n:'kanalik zbiorczy',m:[318,120],d:'Zbiera mocz z wielu nefronów. Pod wpływem ADH wchłania zwrotnie wodę (mocz bardziej zagęszczony); mocz ostateczny odpływa do miedniczki nerkowej.',draw:function(g){g.appendChild(P('M262,106 L290,106 L290,278',null,'#8a6bbf',8))}},
+    {n:'naczynia okołokanalikowe',m:[16,196],z:-2,d:'Sieć naczyń włosowatych oplatająca kanaliki; przejmuje z nich wchłaniane zwrotnie substancje (woda, glukoza, jony).',draw:function(g){g.appendChild(P('M138,24 Q150,110 120,150 Q60,190 56,150 Q40,200 90,230 Q126,270 140,246 Q180,200 200,160',null,'#e57373',2.4,{'stroke-dasharray':'5 3'}));g.insertBefore(P('M138,24 Q150,110 120,150 Q60,190 56,150 Q40,200 90,230 Q126,270 140,246 Q180,200 200,160',null,'transparent',12),g.firstChild)}}
+  ]}}})}});
+
+var OD=0;
+BIO.define('wentylacja',{opis:'Mechanika oddychania: przepona, żebra, objętość klatki i płuc; animacja wdech ↔ wydech tam i z powrotem (autostart w widoku), suwak do ręcznego sterowania, opis fazy',
+mount:function(el){
+  var t=0,dir=1,paused=false,vis=false,last=0,man=false,reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var svg=BIO.svg(360,290,'Przekrój klatki piersiowej: przepona, płuca, żebra'),sl=H('input'),bar=H('div','bw-seg bv-tools'),pb=H('button','bv-btn'),out=H('div','bv-info bw-out');
+  svg.setAttribute('class','bw-svg');sl.type='range';sl.min=0;sl.max=100;sl.value=0;sl.style.width='100%';sl.setAttribute('aria-label','Faza oddechu: wydech do wdechu');pb.type='button';out.setAttribute('aria-live','polite');
+  [svg,sl,bar,out].forEach(function(e){el.appendChild(e)});bar.appendChild(pb);
+  var cage=S('g',{}),ribs=P('M180,34 C80,34 52,120 60,190 L300,190 C308,120 280,34 180,34Z','none','#b9b0a4',3,{'stroke-dasharray':'8 5'}),
+   lL=E(128,122,50,76,'#f9c9c9','#b23b3b',2),lR=E(232,122,50,76,'#f9c9c9','#b23b3b',2),
+   dia=P('M56,224 Q180,140 304,224',null,'#c0602c',8),abd=R(56,226,248,46,6,'#f3ece2','#c9bfae',1.5),
+   tr=R(172,4,16,56,3,'#cfd8dc','#6a7b86',1.5),
+   ar=P('M180,0 L180,24 M172,16 L180,26 L188,16',null,'#2a6f97',3),st=BIO.T(180,284,'',{s:12,w:800});
+  cage.appendChild(ribs);cage.appendChild(lL);cage.appendChild(lR);
+  [abd,tr,cage,P('M180,58 L128,86 M180,58 L232,86',null,'#6a7b86',3),dia,ar,st,BIO.T(180,254,'jama brzuszna',{s:9.5,w:500,f:'var(--viz-mut,#5d6b7a)'}),BIO.T(180,126,'płuca',{s:11,w:700,f:'#7a2b2b'}),BIO.T(352,124,'żebra',{s:9.5,w:500,a:'end',f:'var(--viz-mut,#5d6b7a)'}),BIO.T(60,206,'przepona',{s:10,w:700,a:'start',f:'#8a3f12'})].forEach(function(e){svg.appendChild(e)});
+  function draw(){var k=t;cage.setAttribute('transform','translate(180 120) scale('+(1+0.07*k)+' '+(1+0.05*k)+') translate(-180 -120)');
+    dia.setAttribute('d','M56,224 Q180,'+(138+56*k).toFixed(1)+' 304,224');
+    ar.setAttribute('transform',dir>0?'translate(0 0)':'translate(0 56) scale(1 -1) translate(0 -2)');ar.setAttribute('stroke',dir>0?'#2a6f97':'#c0602c');ar.style.opacity=man?0.2:1;
+    var ins=dir>0;st.textContent=ins?'WDECH':'WYDECH';st.setAttribute('fill',ins?'#2a6f97':'#c0602c');
+    out.innerHTML=ins?'<b>Wdech (czynny)</b><span>Mięśnie międzyżebrowe zewnętrzne unoszą żebra, a przepona kurczy się i spłaszcza (obniża się). Objętość klatki rośnie, ciśnienie w płucach spada poniżej atmosferycznego i powietrze wpływa.</span>':'<b>Wydech (spokojny — bierny)</b><span>Mięśnie rozkurczają się: przepona wraca do kształtu kopuły, żebra opadają. Objętość klatki maleje, ciśnienie rośnie i powietrze wypływa. Wydech wymuszony angażuje mięśnie międzyżebrowe wewnętrzne i mięśnie brzucha.</span>'}
+  function lab2(){pb.textContent=paused?'▶ wznów oddychanie':'❚❚ pauza';}
+  pb.onclick=function(){paused=!paused;man=false;lab2()};
+  sl.oninput=function(){paused=true;man=true;var nv=sl.value/100;dir=nv>=t?1:-1;if(nv===t)dir=dir;t=nv;lab2();draw()};
+  function loop(ts){if(!document.body.contains(el))return;if(vis&&!paused&&!reduce){var dt=(ts-(last||ts))/1000;t+=dir*dt/2.6;if(t>=1){t=1;dir=-1}if(t<=0){t=0;dir=1}sl.value=Math.round(t*100);draw()}last=ts;requestAnimationFrame(loop)}
+  lab2();draw();
+  if('IntersectionObserver'in window)new IntersectionObserver(function(es){vis=es[0].isIntersecting},{threshold:0.4}).observe(el);else vis=true;
+  if(reduce){paused=true;lab2()}requestAnimationFrame(loop)}});
 })();

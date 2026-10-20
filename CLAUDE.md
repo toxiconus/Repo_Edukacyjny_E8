@@ -23,6 +23,7 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 - Przy kończącym się limicie: najpierw zapisz stan (commit + wpis w `chemia/che-modular/PRZEKAZANIE.md` i `PROGRESS.md`), potem najmniejszy działający krok.
 
 ## Biologia (BIO)
+- **Grafiki BIO: najpierw sprawdź `biologia/plany/KATALOG_GRAFIK_BIO.md`** (generowany: `python3 narzedzia/katalog_grafik_bio.py`): komponenty BIO, stare HTML z animacjami i specyfikacje „WARSTWA WIZUALNA” w starych md. Używaj i ulepszaj istniejące (nowe i dawne), nie dubluj; nowy komponent → `szablon/bio-rysunki.js` + wpis w `BIO_KATALOG.md`.
 - Praca BIO: najpierw `biologia/bio/PRZEKAZANIE.md`, potem tylko md lekcji (`biologia/bio/md/`) i `biologia/bio/BIO_KATALOG.md`. Gałąź: `claude/che-lekcje` (zbiorcza; `claude/bio-lekcje` scalona 2026-10-08).
 - Build `python3 biologia/bio/narzedzia/md2html_bio.py`, test `node biologia/bio/narzedzia/sprawdz_bio.js`. Wygenerowanego HTML nie czytać.
 

@@ -66,6 +66,9 @@ Rdzeń przewodzi impulsy **w górę** (czuciowe, do mózgu) i **w dół** (rucho
 
 ## 4 | Neuron i jego budowa {#neuron}
 
+@viz neuron-budowa | Neuron — budowa | poznaj, znajdź, podpisz
+@opis Neuron z numerami: dendryty, ciało komórki z jądrem, akson, osłonka mielinowa, przewężenia Ranviera, zakończenia aksonu z kolbkami synaptycznymi. Wniosek: dendryty odbierają sygnał, akson przewodzi go dalej (szybciej dzięki osłonce, skokowo), a synapsa przekazuje go chemicznie następnej komórce.
+
 **Neuron** to podstawowa jednostka układu nerwowego.
 
 - **Dendryty** — krótkie, rozgałęzione wypustki; przyjmują sygnały od innych neuronów lub receptorów.
@@ -133,6 +136,9 @@ Synapsa działa **jednokierunkowo**: impuls płynie od błony presynaptycznej do
 :::
 
 ## 8 | Odruchy {#odruchy}
+
+@viz cykl {cykl="odruch"} | Łuk odruchowy — odruch kolanowy | animacja startuje sama, kliknij etap
+@opis Pięć etapów łuku odruchowego: receptor → neuron czuciowy → rdzeń kręgowy → neuron ruchowy → efektor (mięsień); podświetlenie przesuwa się samo i zaczyna od początku. Wniosek: impuls jest przełączany w rdzeniu bez udziału mózgu, dlatego odruch jest szybki, wrodzony i niezależny od woli.
 
 **Odruch bezwarunkowy** — wrodzony, stały, niezależny od doświadczenia. Przykłady: odruch kolanowy, mruganie, odruch ssania u noworodka.
 
