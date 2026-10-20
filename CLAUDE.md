@@ -79,6 +79,11 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 ## GFX i modele
 - Najpierw istniejące animacje, modele i zlewki (`chemia/che-modular/KATALOG_WIZUALIZACJI.md` — jeden katalog: modele i gfx z użyciem w lekcjach i statusem; oceny w `engine/registry/katalog_oceny.json`; szczegóły: `engine/src/gfx/KATALOG.md` i `KATALOG_MODELI.md` — pracownie z rozszerzeń) — rozszerzamy je i ulepszamy. Brakujący element (naczynie, przyrząd, przedmiot, efekt) budujemy od podstaw jako komponent wielokrotnego użytku (`engine/src/lekcja/rozszerzenia.js` albo plik w `engine/src/gfx/<przedmiot>/<rodzaj>/`) + wpis w katalogu, nie jednorazowo w lekcji.
 
+## Silnik chemii — decyzja (2026-10-20)
+- Obowiązuje **nowy mniejszy silnik modułowy**: `chemia/che-modular/engine/src/klocki/` + `engine/src/lekcja/rozszerzenia.js`, składany per lekcja przez `chemia/che-modular/tools/lite.py` (tylko modele użyte w lekcji).
+- Duży `dist/che-viz.js` (2,8 MB, z `silnik.py`) NIE jest już używany w pakietach ani okładkach (`narzedzia/pakiety_okladki.py` → `lite.py`). Archiwum: `chemia/archiwum/che_v0_59/`.
+- Modele, które wymagają jeszcze dużego silnika (do przeniesienia do klocków): f05-izotopy-v01, rownania-jonowe-v01, tabela-rozpuszczalnosci-v01, r03-krzyz-v01, periodic-54, n05-wodorki-v01, n01-konstruktor-v01, molecule3d-merged, live-cv, lab-stations-v102, kw-szereg-metali-v01, stech-kalkulator-v01. Lekcje, których to dotyczy, pokazują przycisk z informacją zamiast modelu.
+
 ## Styl rysunków (jeden dla wszystkich przedmiotów)
 - Każdy nowy rysunek/model: kolory i linie z `CHE.GFX.STYL` (`chemia/che-modular/engine/src/gfx/wspolne/styl/styl-tokeny.js`), zasady w `chemia/che-modular/STYL_WIZUALIZACJI.md`; kolory substancji realistyczne z `CHE.COLORS`. Kontrola: `python3 chemia/che-modular/tools/styl_sprawdz.py` (raport `STYL_RAPORT.md`).
 

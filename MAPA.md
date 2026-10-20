@@ -3,7 +3,7 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (19 pl., 516 KB)
+## .  (19 pl., 517 KB)
 - (zwinięte; `ls .`) — duże:
 - ⚠`INDEKS.html` 52 KB
 - ⚠`SPIS_WSZYSTKICH.md` 61 KB
@@ -533,7 +533,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/wizualizacje_r4  (1 pl., 35 KB)
 - `Wizualizacje_do_lekcji_R4.html` 35 KB
 
-## chemia/html  (115 pl., 13.1 MB)
+## chemia/html  (128 pl., 14.6 MB)
 - (zwinięte; `ls chemia/html`) — duże:
 - ⚠`C1c_konfiguracje_elektronowe.html` 202 KB
 - ⚠`C2m_mol_masa_molowa.html` 107 KB
@@ -626,21 +626,21 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/notatki  (1 pl., 5 KB)
 - `H3O_jon_hydroniowy_woda.md` 5 KB
 
-## chemia/pakiet  (1 pl., 28 KB)
-- `okladka.html` 28 KB
+## chemia/pakiet  (1 pl., 24 KB)
+- `okladka.html` 24 KB
 
-## chemia/pakiet/html  (90 pl., 16.0 MB)
+## chemia/pakiet/html  (74 pl., 11.2 MB)
 - (zwinięte; `ls chemia/pakiet/html`) — duże:
-- ⚠`C1c_konfiguracje_elektronowe.html` 251 KB
-- ⚠`C1c_kwasy_zasady_sole.html` 254 KB
-- ⚠`C1c_masy_sklad_procentowy.html` 243 KB
-- ⚠`C1c_wodorki_typy_reakcji.html` 250 KB
-- ⚠`C2m_mol_masa_molowa.html` 154 KB
-- ⚠`C2w_wzor_elementarny_rzeczywisty.html` 157 KB
-- ⚠`C3_rownania_i_obliczenia_z_rownan.html` 151 KB
-- ⚠`C4_doswiadczenia_zbiorczo.html` 176 KB
+- ⚠`C1c_konfiguracje_elektronowe.html` 222 KB
+- ⚠`C1c_kwasy_zasady_sole.html` 225 KB
+- ⚠`C1c_masy_sklad_procentowy.html` 214 KB
+- ⚠`C1c_wodorki_typy_reakcji.html` 220 KB
+- ⚠`C2m_mol_masa_molowa.html` 134 KB
+- ⚠`C2w_wzor_elementarny_rzeczywisty.html` 130 KB
+- ⚠`C3_rownania_i_obliczenia_z_rownan.html` 132 KB
+- ⚠`C4_doswiadczenia_zbiorczo.html` 149 KB
 
-## chemia/pakiet/md  (90 pl., 3.1 MB)
+## chemia/pakiet/md  (74 pl., 2.5 MB)
 - (zwinięte; `ls chemia/pakiet/md`) — duże:
 - ⚠`F01_jak_mysli_chemik.md` 62 KB
 - ⚠`F02_materia_i_substancje.md` 55 KB
@@ -746,11 +746,11 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `fix_encoding_v2.ps1` 5 KB
 - `replace_gereb_card.ps1` 5 KB
 
-## okladki  (7 pl., 223 KB)
-- ⚠`index.html` 110 KB
+## okladki  (7 pl., 212 KB)
+- ⚠`index.html` 104 KB
 - `okladka_angielski.html` 12 KB
 - `okladka_biologia.html` 22 KB
-- `okladka_chemia.html` 34 KB
+- `okladka_chemia.html` 29 KB
 - `okladka_lko.html` 9 KB
 - `okladka_olimpiada.html` 5 KB
 - `okladka_polski.html` 31 KB
@@ -851,16 +851,16 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## olimpiada/LKO_pakiet  (1 pl., 8 KB)
 - `okladka.html` 8 KB
 
-## olimpiada/LKO_pakiet/html  (19 pl., 3.5 MB)
+## olimpiada/LKO_pakiet/html  (19 pl., 3.0 MB)
 - (zwinięte; `ls olimpiada/LKO_pakiet/html`) — duże:
-- ⚠`LKO_A1_symulacja_etap_I.html` 151 KB
-- ⚠`LKO_B1B2_zestawy_treningowe.html` 138 KB
-- ⚠`LKO_DIAG_diagnoza_wejsciowa.html` 141 KB
-- ⚠`LKO_DOSW_katalog_doswiadczen.html` 163 KB
-- ⚠`LKO_KRZYWE_krzywe_rozpuszczalnosci.html` 159 KB
-- ⚠`LKO_METALE_szereg_jonowe_otrzymywanie.html` 154 KB
-- ⚠`LKO_ORG01_alkany.html` 252 KB
-- ⚠`LKO_ORG02_alkeny.html` 241 KB
+- ⚠`LKO_A1_symulacja_etap_I.html` 123 KB
+- ⚠`LKO_B1B2_zestawy_treningowe.html` 111 KB
+- ⚠`LKO_DIAG_diagnoza_wejsciowa.html` 114 KB
+- ⚠`LKO_DOSW_katalog_doswiadczen.html` 135 KB
+- ⚠`LKO_KRZYWE_krzywe_rozpuszczalnosci.html` 132 KB
+- ⚠`LKO_METALE_szereg_jonowe_otrzymywanie.html` 127 KB
+- ⚠`LKO_ORG01_alkany.html` 222 KB
+- ⚠`LKO_ORG02_alkeny.html` 211 KB
 
 ## olimpiada/LKO_pakiet/md  (19 pl., 641 KB)
 - (zwinięte; `ls olimpiada/LKO_pakiet/md`)

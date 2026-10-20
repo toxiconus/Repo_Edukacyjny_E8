@@ -12,8 +12,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 GOT = ROOT / "chemia/che-modular/lessons-md/gotowe"
-DIST = ROOT / "chemia/che-modular/dist"
-MD2HTML = ROOT / "chemia/che-modular/tools/md2html.py"
+DIST = ROOT / "chemia/che-modular/dist/lite"
+MD2HTML = ROOT / "chemia/che-modular/tools/lite.py"  # silnik modułowy (klocki + tylko użyte modele), bez dużego che-viz.js
 INDEKS_LKO = ROOT / "olimpiada/INDEKS_CHEMIA.md"
 
 def fm(p):

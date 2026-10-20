@@ -32,6 +32,7 @@ Priorytet: biologia LKO etap szkolny, środa 21.10.2026, 9:00, 60 min. Nie pisa�
 - **H-D4 (starsze wersje BIO) — ZROBIONE 2026-10-20:** porównano 40 starych plików z nowymi (wg pogrubionych terminów). Prawie wszystko już jest. Jedyne braki: czasy w planach powtórek (L032, L044, L050) — ODRZUCONE, bo obowiązuje zasada „bez planów czasowych”; tagi `[konkurs]`/`[master]` — metadane, nie treść. Nic nie dopisywano. Stare pliki zostają w `biologia/niewykorzystane/starsze_wersje_lekcji/`.
 
 ## Droższe — Sonnet (merytoryka, decyzje)
+- [ ] S-S1. **Przenieść modele wymagające dużego silnika do klocków** (decyzja: silnik modułowy). Lista w CLAUDE.md (sekcja „Silnik chemii”); po jednym modelu: klocek w `engine/src/klocki/`, wpis w `manifest.json`, potem `python3 narzedzia/pakiety_okladki.py` i sprawdzenie, że lekcja nie ma już przycisku zastępczego.
 - [ ] S-A. **REV02: tury 2–4 odpowiedzi Perplexity** (tura 1 wprowadzona 2026-10-20: tkanki 6.1, ryby, pasożyty, bezkręgowce, D+). Odrzucone z powodem w `WERYFIKACJA.md`. PRIORYTET przed środą.
 - [ ] S-F. Brakujące lekcje etapu II: **B2h Układ krążenia**, **B2i Układ odpornościowy**, B2j arkusz próbny — plan w `biologia/plany/PLAN_BRAKUJACE_LEKCJE.md`; przygotować paczki dla zewnętrznego AI.
 - [ ] S-B. Weryfikacja liczb REV01 (próg 0,01% makroelementów, ~60% wody, 2× energia z tłuszczu) i kluczy §12a.

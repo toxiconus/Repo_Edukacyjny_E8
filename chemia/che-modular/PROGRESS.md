@@ -268,3 +268,4 @@
 - 2026-10-20: H-D1 krok 1–2: builder chemii czyta wybór z chemia/plany/WYBOR_WERSJI.json (lekcje_md + gotowe, 127 lekcji), czyści nieaktualne HTML; F01–F04 → gotowe; 16 identycznych kopii z lekcje_md przeniesione do niewykorzystane.
 - 2026-10-20: H-D1 — decyzje dla F06, F10 (gotowe), F13, F16 (lekcje_md); przegrane w niewykorzystane/wersje_*.
 - 2026-10-20: H-D1 zakończone: wszystkie 52 pary rozstrzygnięte (16 identycznych, F/N/K/J/R/REV wg decyzji i reguły większa wersja). Builder che: 127 lekcji.
+- 2026-10-20: silnik chemii = modułowy (lite.py + klocki); pakiety i okładki na lite; duży che-viz.js poza buildem. 15 lekcji ma przyciski zastępcze dla 12 modeli (zadanie S-S1).
