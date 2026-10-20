@@ -331,3 +331,31 @@ Zasada: po każdym audycie surowa odpowiedź trafia do `<przedmiot>/plany/audyty
 - 4.3 Przy animacjach „tam i z powrotem” dopisać uwagę, że cofnięcie służy ponownemu prześledzeniu schematu, a nie odwróceniu procesu.
 
 **Uwaga o pewności:** odpowiedź Comet sama zastrzega, że lokalizacje i cytaty z pierwszej tury nie były w pełni potwierdzone. Zanim cokolwiek z tych uwag trafi do lekcji, trzeba je porównać z właściwym HTML.
+
+## Weryfikacja REV02 — Comet/Perplexity, tura 1 i 2 (2026-10-20)
+
+Zastosowano (z poprawkami do źródła, nie kopiowanie zaleceń): saprotrofy; odra i gruźlica drogą powietrzną; zakażenie HIV (nie „AIDS”); fermentacja vs oddychanie beztlenowe; „wytwarzają związki organiczne z substancji nieorganicznych”; protisty jako umowna grupa; glony nie tworzą jednej grupy; chlamydomonas przeniesiona do jednokomórkowych; „głównie przytwierdzają” (chwytniki, 3 miejsca); łyko przewodzi od źródła do odbiorcy (akapit, mnemonik, zadanie wykrywania błędu); łodyga vs pęd; magazyn substancji zapasowych (dalia i topinambur inulina, batat i ziemniak skrobia); korzeń nie ma pąków typowych; ciernie liściowe i pędowe; limfa osobno od krwi; komórki glejowe w tkance nerwowej; gąbki (asymetria większości, do potwierdzenia); tasiemiec (człony dojrzałe, wągry vs jaja); stonoga murowa skorupiak, wij drewniak w wijach; rak 10 nóg w mnemonice; oddychanie ptaków (wyjaśnienie); schemat ewolucji jako rozgałęzienie; wniosek „wspiera/niezgodny/nie rozstrzyga”; próba kontrolna jako punkt odniesienia; odczyt wykresu z przybliżeniem; Z4 oznaczony jako fikcyjny zestaw; zakres II/I w nagłówku; definicja gatunku z zastrzeżeniem; sekcja §6 o funkcji tkanek; tkanki roślin (akapit dydaktyczny); płazy ogoniaste (akapit); bezpieczeństwo i kryteria wykiełkowania (§9); „Pod ziemią nie znaczy korzeń”; mikoryza z wyjaśnieniem i mnemonikiem; miniwykład „Jak grzyb pobiera pokarm?” z pytaniem; nagonasienne: kwiaty jednopłciowe bez okwiatu (tabela); zadanie [D] mikoryza (5 pkt); mnemonik R P G P S uzupełniony o płazy (była błędna — brakowało P).
+
+Odrzucono (z uzasadnieniem):
+- „E8” → „PODSTAWA”: E8 to nazwa kursu i system oznaczeń w całym repo (plakietki, badge), a zmiana rozbiłaby spójność z innymi lekcjami. Pozostaje.
+- Gniazdowniki/zagniazdowniki zamienione: w md nie ma takiego zapisu (fiszka i plakietka są poprawne: wróbel — gniazdownik, kura — zagniazdownik). Propozycja z tury 1 dotyczyła wersji z eksportu HTML.
+- „Dwukrotnie przez płuca” (ptaki): zdanie jest poprawne dydaktycznie; w każdym przejściu przez płuca przepływa inna porcja powietrza. Dopisano to wyjaśnienie zamiast usuwać.
+- „Rano Paweł Głośno Powtarza Systematykę”: zastąpione poprawioną wersją własnego mnemonika R P G P S (wersja Comet nie była potrzebna).
+- Pełna anatomia człowieka w REV02: poza zakresem działu II; dopisano tylko zdanie o funkcji tkanek.
+- Usunięcie protistów, gąbek, widłaków: nie stosowano; wymaga decyzji o poziomie (patrz niżej).
+- Ukryte pytania testu, fiszki, O1–O4 jako „brakujące”: nie stwierdzono braku, status niezweryfikowany (eksport nie zawiera treści rozwijanych).
+- „Pokaż pozostałe 43 fiszek”: tekst nie występuje w md (to element interfejsu HTML).
+- Z3 z „domowym odcięciem tlenu”: w md zadanie jest tylko planowaniem bez instrukcji domowej.
+- Wzrost rozmiaru tekstu jako dowód kompletności: nie używany jako dowód.
+- Załącznik z 30 opisami wizualizacji i kluczami P, Z, CW, T, B, R, J, D, M: nie został przekazany w paczce, więc nie zastosowano. Każdy @viz ma opis (sprawdza build).
+
+Do zrobienia / do weryfikacji:
+- Nazwa „klejnotka” dla euglena zielona: niezastosowana, do potwierdzenia w źródle (w md: euglena zielona).
+- Zadania P4, T7, D4, rzeżucha (90% i 15%), D1, D2, D3 — zmiany treści zadań wymagają osobnego przeglądu.
+- Zadania CW1, T3, R1, D5 (kryteria punktowe): do ustalenia z kluczem LKO; punktacja jest autorska.
+- Cebula i ciernie berberysu w rysunku przeksztalcenia-organow: do potwierdzenia w ZPE.
+- Poziom obowiązkowy vs rozszerzenie (protisty, gąbki, cykle n/2n, błony płodowe, terapia fagowa): decyzja redakcyjna; brak oznaczenia w lekcji.
+- Animacje „cofające rozwój” (cykl mchu, żaby): sprawdzić zachowanie skryptów w HTML.
+- Bakteriofag „DNA lub RNA”: uzupełnić przykład T4 (nie zastosowano w tej turze).
+- Liczby i ciekawostki: 1,5 mln gatunków (dodano „zależy od bazy i daty”), liczba fagów, terapia fagowa, jaja i wysiadywanie dziobaka, opieńka, niesporczaki, ochrona gatunkowa — do potwierdzenia w źródłach.
+- Ciekawostki Comet (gniazdownik/zagniazdownik z §8.4, dżdżownica, płazy) — gniazdownik-ciekawostka wymaga miejsca w §8.4, w md nie ma tej sekcji.
