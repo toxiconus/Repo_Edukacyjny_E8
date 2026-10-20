@@ -5,7 +5,9 @@ ETAP = [
     ('F01', 'I'), ('F02', 'I'), ('F03', 'I'), ('F04', 'I'), ('F05', 'I'), ('F06', 'I'), ('J03', 'II'),
     ('LKO_ORG', 'III'), ('N01', 'I'), ('N02', 'II'), ('N03', 'II'), ('N04', 'II'), ('N05', 'II'),
     ('R03', 'I'), ('R07', 'II'), ('REV01_powtorka', 'I'), ('X04', 'II'),
-    ('B10', 'II'), ('B1b', 'III (genetyka)'), ('B2', 'II'), ('L010', 'III (DNA)'), ('REV01_org', 'I'), ('REV02', 'I'),
+    ('B10', 'II'), ('B1b', 'III (genetyka)'), ('B2', 'II'), ('L010', 'III (DNA)'), ('REV01.org', 'I'), ('REV02', 'I'),
+    ('BIO.00.REV', 'I'), ('BIO.01.B1b', 'III (genetyka)'), ('BIO.02.B10', 'II'), ('BIO.02.B2', 'II'), ('BIO.02.L010', 'III (DNA)'),
+    ('BIO.02.', 'III (genetyka)'), ('BIO.03.', 'III'), ('BIO.04.', 'III (ekologia)'), ('BIO.06.', 'II'), ('BIO.07.', 'II (układy — pełna wersja)'),
 ]
 def etap(nazwa):
     for p, e in ETAP:

@@ -3,7 +3,7 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (16 pl., 260 KB)
+## .  (16 pl., 270 KB)
 - (zwinięte; `ls .`) — duże:
 - ⚠`SPIS_WSZYSTKICH.md` 56 KB
 
@@ -80,16 +80,16 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `U10_krzywe_glukozy.svg` 10 KB
 - `U10_os_tarczycowa.svg` 10 KB
 
-## biologia/bio/md  (35 pl., 1.7 MB)
+## biologia/bio/md  (32 pl., 1.6 MB)
 - (zwinięte; `ls biologia/bio/md`) — duże:
-- ⚠`BIO.00.REV02.roznorodnosc_zycia.md` 61 KB
+- ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.md` 66 KB
+- ⚠`BIO.00.REV02.roznorodnosc_zycia.md` 86 KB
 - ⚠`BIO.02.L010.dna_od_zera.md` 65 KB
 - ⚠`BIO.02.L019.dlaczego_grupy_krwi_nie_pasuja.md` 83 KB
 - ⚠`BIO.02.L020.czym_sa_mutacje_i_jakie.md` 84 KB
 - ⚠`BIO.02.L021.powtorka_genetyki.md` 87 KB
 - ⚠`BIO.02.L022.biotechnologia_i_inzynieria_genetyczna.md` 90 KB
 - ⚠`BIO.07.H01.homeostaza.md` 81 KB
-- ⚠`BIO.07.U01.skora_i_uklad_ruchu.md` 59 KB
 
 ## biologia/bio/narzedzia  (3 pl., 14 KB)
 - `katalog_wizualizacji.py` 3 KB
@@ -111,10 +111,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## biologia/bio/szablon/wizualizacje  (59 pl., 300 KB)
 - (zwinięte; `ls biologia/bio/szablon/wizualizacje`)
 
-## biologia/html  (46 pl., 7.6 MB)
+## biologia/html  (46 pl., 7.9 MB)
 - (zwinięte; `ls biologia/html`) — duże:
-- ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 187 KB
-- ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 202 KB
+- ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 316 KB
+- ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 330 KB
 - ⚠`BIO.01.L001.komorka.html` 221 KB
 - ⚠`BIO.01.L001A.dodatek_ambitny_od_komorki_do.html` 155 KB
 - ⚠`BIO.01.L002.powtorka_czlowiek.html` 191 KB
@@ -670,7 +670,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## eksport/grafiki  (1 pl., 7 KB)
 - `VIZ_START.html` 7 KB
 
-## narzedzia  (23 pl., 158 KB)
+## narzedzia  (23 pl., 159 KB)
 - (zwinięte; `ls narzedzia`)
 
 ## narzedzia/jednorazowe  (5 pl., 14 KB)

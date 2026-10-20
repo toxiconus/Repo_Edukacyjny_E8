@@ -198,11 +198,14 @@ def z_nazwy(path):
 
 BIO_SZ = os.path.join(REPO, 'biologia', 'bio', 'szablon')
 def bio_js(main):
-    """Biologia: rdzeń bio-core.js + tylko te wizualizacje (wizualizacje/<id>.js), które lekcja wywołuje przez @viz."""
+    """Biologia: rdzeń bio-core.js + użyte wizualizacje/<id>.js + małe komponenty rysunków (bio-rysunki.js: tryb poznaj/znajdź/podpisz, cykle…), gdy lekcja woła któryś z nich."""
     ids = list(dict.fromkeys(re.findall(r'data-bio-viz="([\w-]+)"', main)))
-    brak = [i for i in ids if not os.path.exists(os.path.join(BIO_SZ, 'wizualizacje', i + '.js'))]
-    if brak: raise SystemExit('BŁĄD: brak wizualizacji w biologia/bio/szablon/wizualizacje/: ' + ', '.join(brak))
-    return rd(os.path.join(BIO_SZ, 'bio-core.js')) + '\n' + ''.join(rd(os.path.join(BIO_SZ, 'wizualizacje', i + '.js')) + '\n' for i in ids)
+    ryspath = os.path.join(BIO_SZ, 'bio-rysunki.js'); rys = rd(ryspath) if os.path.exists(ryspath) else ''
+    w_rys = set(re.findall(r"BIO\.define\('([\w-]+)'", rys))
+    brak = [i for i in ids if not os.path.exists(os.path.join(BIO_SZ, 'wizualizacje', i + '.js')) and i not in w_rys]
+    if brak: raise SystemExit('BŁĄD: brak wizualizacji w biologia/bio/szablon/wizualizacje/ ani w bio-rysunki.js: ' + ', '.join(brak))
+    lib = [i for i in ids if os.path.exists(os.path.join(BIO_SZ, 'wizualizacje', i + '.js'))]
+    return rd(os.path.join(BIO_SZ, 'bio-core.js')) + '\n' + ''.join(rd(os.path.join(BIO_SZ, 'wizualizacje', i + '.js')) + '\n' for i in lib) + (rys + '\n' if any(i in w_rys for i in ids) else '')
 
 AUDYT_H = re.compile(r'^##\s+((?:AUDYT|LOG)\b.*)$')
 

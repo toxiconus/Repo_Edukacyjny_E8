@@ -24,8 +24,10 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 
 ## Biologia (BIO)
 - **Grafiki BIO: najpierw sprawdź `biologia/plany/KATALOG_GRAFIK_BIO.md`** (generowany: `python3 narzedzia/katalog_grafik_bio.py`): komponenty BIO, stare HTML z animacjami i specyfikacje „WARSTWA WIZUALNA” w starych md. Używaj i ulepszaj istniejące (nowe i dawne), nie dubluj; nowy komponent → `szablon/bio-rysunki.js` + wpis w `BIO_KATALOG.md`.
-- Praca BIO: najpierw `biologia/bio/PRZEKAZANIE.md`, potem tylko md lekcji (`biologia/bio/md/`) i `biologia/bio/BIO_KATALOG.md`. Gałąź: `claude/che-lekcje` (zbiorcza; `claude/bio-lekcje` scalona 2026-10-08).
-- Build `python3 biologia/bio/narzedzia/md2html_bio.py`, test `node biologia/bio/narzedzia/sprawdz_bio.js`. Wygenerowanego HTML nie czytać.
+- **Wspólne ścieżki BIO (jedna wersja każdej lekcji):** źródło = `biologia/bio/md/BIO.<blok>.<kod>.<slug>.md` (nazwa = uid; bez starych nazw B2a_/REV01_/L010_). Wersje „rejon” (kompaktowe) to `BIO.02.B2*`, `BIO.02.B10`, `BIO.01.B1b`; pełne układy `BIO.07.U*`; powtórki `BIO.00.REV01/02` (scalone: treść + audyty + olimpijska warstwa). Przed utworzeniem lekcji sprawdź `ls biologia/bio/md | grep <temat>` — nie twórz drugiej wersji tego samego tematu, rozbuduj istniejącą.
+- **Build kanoniczny:** `python3 narzedzia/zbuduj_wszystkie.py bio` → `biologia/html/` (wspólny szablon `narzedzia/lekcja_html.py`; grafiki: `bio-core.js` + `szablon/wizualizacje/<id>.js` + `szablon/bio-rysunki.js`, brak id = błąd). Szybki podgląd/test: `cd biologia/bio && python3 narzedzia/md2html_bio.py` (→ `dist/`, nieśledzone) i `node narzedzia/sprawdz_bio.js`. `szablon/bio-viz.js` = legacy, nieużywany.
+- Praca BIO: najpierw `biologia/bio/PRZEKAZANIE.md`, potem tylko md lekcji i `biologia/bio/BIO_KATALOG.md`. Etap konkursu po prefiksie nazwy: `narzedzia/etap_lko.py`.
+- Praca na gałęzi roboczej, scalanie do `main` na polecenie „scal”.
 
 ## Olimpiada 8 (projekt przełączany)
 - Praca OLI: najpierw `olimpiada/PRZEKAZANIE.md`; `OLIMPIADA_8_MASTER.md` czytać tylko potrzebną sekcję (`grep -n '^#'`).
