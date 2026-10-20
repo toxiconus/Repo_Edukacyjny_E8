@@ -359,3 +359,11 @@ Do zrobienia / do weryfikacji:
 - Bakteriofag „DNA lub RNA”: uzupełnić przykład T4 (nie zastosowano w tej turze).
 - Liczby i ciekawostki: 1,5 mln gatunków (dodano „zależy od bazy i daty”), liczba fagów, terapia fagowa, jaja i wysiadywanie dziobaka, opieńka, niesporczaki, ochrona gatunkowa — do potwierdzenia w źródłach.
 - Ciekawostki Comet (gniazdownik/zagniazdownik z §8.4, dżdżownica, płazy) — gniazdownik-ciekawostka wymaga miejsca w §8.4, w md nie ma tej sekcji.
+
+## H-Z3 — pilotaż porównania z ZPE (2026-10-20)
+
+Lekcje: BIO.02.L015 (mejoza), BIO.02.L010 (DNA od zera). Źródła: strony ZPE z mapy `biologia/plany/MAPA_ZPE.md`.
+
+- L015 — definicja mejozy zgodna (ZPE: podział redukujący liczbę chromosomów o połowę; dwa podziały; 4 komórki haploidalne). Crossing-over w profazie I i losowy rozdział chromosomów — zgodne. Liczba 46/23 nie jest podana w ZPE, zostaje (podstawa szkolna). Liczba kombinacji 2^23 = 8 388 608 nie jest w ZPE — obliczenie własne, lekcja zaznacza, że bez rekombinacji. Brak do rozważenia: ZPE podaje błędną średnicę wrzeciona (25 mm, ćwiczenie 3) — nie dotyczy naszej lekcji.
+- L010 — DNA: nukleotyd, cztery zasady, komplementarność, jądro — zgodne. Rozbieżność: ZPE podaje „ok. 3 mld par nukleotydów” dla jądrowego DNA człowieka (jeden zestaw), nasza lekcja „ok. 6 mld par zasad” (genom diploidalny). Dopisano doprecyzowanie w lekcji. Rozbieżność: ZPE podaje długość „2–7 cm” w kontekście cząsteczki DNA, co wygląda na błąd lub inny kontekst; nasza wartość „ok. 2 m” to długość DNA jednej komórki diploidalnej — pozostaje, do sprawdzenia w podręczniku.
+- Nie sprawdzono jeszcze: L001 (komórka), L004–L009, L013, L016, pozostałe lekcje z mapy. Kolejne partie: H-Z3 dalej.

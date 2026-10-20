@@ -70,7 +70,7 @@ Fragment DNA może być **genem**. Bardzo długa cząsteczka DNA wraz z białkam
 :::
 
 ::: karta extra | Ciekawostka — 2 metry w kilku mikrometrach
-DNA z jednej ludzkiej komórki, rozwinięte i ułożone w linii, miałoby ok. **2 m** długości — a mieści się w jądrze o średnicy kilku mikrometrów, bo jest ciasno nawinięte na białka (L012). To ok. **6 miliardów par zasad**; zapisane literami dałyby tekst rzędu kilku tysięcy grubych książek. DNA ze wszystkich komórek ciała razem to dziesiątki miliardów kilometrów (szacunek).
+DNA z jednej ludzkiej komórki, rozwinięte i ułożone w linii, miałoby ok. **2 m** długości — a mieści się w jądrze o średnicy kilku mikrometrów, bo jest ciasno nawinięte na białka (L012). To ok. **6 miliardów par zasad** (dwa zestawy genomu po ok. 3 mld; jeden zestaw to ok. 3 mld); zapisane literami dałyby tekst rzędu kilku tysięcy grubych książek. DNA ze wszystkich komórek ciała razem to dziesiątki miliardów kilometrów (szacunek).
 :::
 
 ## 2 | Pytanie przewodnie i cele [[basic:E8]] {#cele}
