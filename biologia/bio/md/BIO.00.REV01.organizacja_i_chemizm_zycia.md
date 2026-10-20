@@ -93,8 +93,8 @@ Komórki o podobnej budowie i funkcji tworzą **tkanki**, tkanki budują **narz�
 ### 1.1 Pierwiastki życia — makro- i mikroelementy {#pierwiastki}
 
 Organizm zbudowany jest z kilkunastu pierwiastków, które dzielimy według ilości potrzebnej organizmowi:
-- **makroelementy** — potrzebne w dużych ilościach (w przybliżeniu powyżej 0,01% masy ciała — próg do potwierdzenia),
-- **mikroelementy** — potrzebne w śladowych ilościach.
+- **makroelementy** — potrzebne w dużych ilościach (co najmniej 0,01% suchej masy komórek),
+- **mikroelementy** — potrzebne w śladowych ilościach (poniżej 0,01% suchej masy komórek).
 
 **Ważność nie równa się ilości.** Żelazo jest niezbędne, ale potrzebne w małych ilościach, więc jest mikroelementem.
 
@@ -140,7 +140,7 @@ Organizmy są zbudowane głównie z **wody** i **związków organicznych**, czyl
 
 ### 1a.1 Woda — uniwersalny rozpuszczalnik życia {#woda}
 
-Woda jest najliczniejszym składnikiem większości organizmów. U człowieka stanowi około 60% masy ciała, a jej udział zmienia się w zależności od wieku, płci i tkanki (wartość do weryfikacji; źródło: podstawowe podręczniki fizjologii człowieka).
+Woda jest najliczniejszym składnikiem większości organizmów. U dorosłego człowieka stanowi średnio około 50–60% masy ciała (u mężczyzn więcej niż u kobiet, u niemowląt więcej niż u osób starszych), a jej udział zależy też od tkanki: np. w mózgu jest jej ok. 75–80%, w tkance tłuszczowej znacznie mniej.
 
 | Rola wody | Co to znaczy | Przykład |
 |---|---|---|
@@ -187,7 +187,7 @@ Krowa nie trawi celulozy sama. Robią to za nią mikroorganizmy żyjące w żwac
 | woski | ochrona przed wodą i wysychaniem | woskowa warstwa na liściu |
 | steroidy | m.in. hormony i składnik błon | cholesterol, hormony płciowe |
 
-**Zapamiętaj:** tłuszcz daje około dwa razy więcej energii z gramu niż węglowodan, dlatego jest wygodnym zapasem energii (wartość do weryfikacji; źródło: tabele wartości odżywczej).
+**Zapamiętaj:** tłuszcz daje ok. 38 kJ (9 kcal) energii z 1 g, a węglowodany i białka ok. 17 kJ (4 kcal) z 1 g — czyli ponad dwa razy więcej, dlatego tłuszcz jest wygodnym zapasem energii.
 
 **Pułapka:** tłuszcz nie jest „zły”. Jest niezbędny do budowy błon, wchłaniania witamin rozpuszczalnych w tłuszczach (A, D, E, K) i jako zapas energii.
 

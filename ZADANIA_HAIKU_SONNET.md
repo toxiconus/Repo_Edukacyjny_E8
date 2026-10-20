@@ -31,16 +31,22 @@ Priorytet: biologia LKO etap szkolny, środa 21.10.2026, 9:00, 60 min. Nie pisa�
 - **H-D3 (fragmenty z niewykorzystane) — ZROBIONE 2026-10-20:** F17 (definicje, 10 zasad, typy reakcji): pokryte w sprint F17 (§5 typy, §19 słownik); „10 zasad supernauki” zostaje w archiwum (generyczne, w innych lekcjach). J03: pokryte (§4, §6, §12 pułapki, §14 ciekawostki, §15 mnemoniki). F01–F06, FIZ01: notatki GFX przeniesione do `chemia/che-modular/KATALOG_WIZUALIZACJI.md` (luki). Nic nie dopisywano do lekcji, bo nie było unikalnej treści lekcyjnej.
 - **H-D4 (starsze wersje BIO) — ZROBIONE 2026-10-20:** porównano 40 starych plików z nowymi (wg pogrubionych terminów). Prawie wszystko już jest. Jedyne braki: czasy w planach powtórek (L032, L044, L050) — ODRZUCONE, bo obowiązuje zasada „bez planów czasowych”; tagi `[konkurs]`/`[master]` — metadane, nie treść. Nic nie dopisywano. Stare pliki zostają w `biologia/niewykorzystane/starsze_wersje_lekcji/`.
 
+- [ ] H-S1. **Skan reguł w biologii:** przejrzeć `biologia/bio/md/*.md` pod kątem (a) „10 zasad supernauki”, (b) planów czasowych (minuty/dni w planach powtórek), (c) sformułowań „do weryfikacji / do potwierdzenia”, (d) `@opis` brakujących przy `@rysunek`/`@klocek`. Wypisać listę (plik → linia → typ); poprawiać tylko (a) i (b) przez usunięcie, (c) i (d) zostawić Sonnetowi. Po kolei, bez pytania „dalej?”.
+- [ ] H-S2. **Spójność oznaczeń** w REV01/REV02: jednostki (kJ, kcal, %), pisownia pojęć (makroelementy, mikroelementy, sucha masa komórek), jednolity zapis wzorów. Poprawki mechaniczne, lista zmian w komentarzu commita.
+- [ ] H-S3. **Przepisanie kluczy zadań** w §12a REV01 na format punktacji LKO (kryterium → punkty) tam, gdzie klucz jest opisowy; nie zmieniać treści merytorycznej, wątpliwości wypisać.
+- [ ] H-S4. Po zmianach: `python3 narzedzia/odswiez_wszystko.py --szybko`, sprawdzić brak błędów, commit i push na `main`.
+
 ## Droższe — Sonnet (merytoryka, decyzje)
 - [x] S-S1. **Przenieść modele wymagające dużego silnika do klocków** (decyzja: silnik modułowy). Lista w CLAUDE.md (sekcja „Silnik chemii”); po jednym modelu: klocek w `engine/src/klocki/`, wpis w `manifest.json`, potem `python3 narzedzia/pakiety_okladki.py` i sprawdzenie, że lekcja nie ma już przycisku zastępczego.
 - [ ] S-A. **REV02: tury 2–4 odpowiedzi Perplexity** (tura 1 wprowadzona 2026-10-20: tkanki 6.1, ryby, pasożyty, bezkręgowce, D+). Odrzucone z powodem w `WERYFIKACJA.md`. PRIORYTET przed środą.
 - [ ] S-F. Brakujące lekcje etapu II: **B2h Układ krążenia**, **B2i Układ odpornościowy**, B2j arkusz próbny — plan w `biologia/plany/PLAN_BRAKUJACE_LEKCJE.md`; przygotować paczki dla zewnętrznego AI.
-- [ ] S-B. Weryfikacja liczb REV01 (próg 0,01% makroelementów, ~60% wody, 2× energia z tłuszczu) i kluczy §12a.
+- [x] S-B. Weryfikacja liczb REV01 (próg 0,01% makroelementów, ~60% wody, 2× energia z tłuszczu) i kluczy §12a. (2026-10-20, patrz `WERYFIKACJA.md`)
 - [ ] S-C. Rozbudowa tkanek zwierzęcych w REV02 + zadania z odczytem schematu i planowaniem doświadczenia (styl arkusza 2025/26).
 - [ ] S-D. Etap II biologii (B2a–B2g): zgodność z zakresem rejonowym (24.11.2026).
 - [ ] S-E. Gałęzie zdalne z niepowiązaną historią — decyzja użytkownika (wymaga „scal”).
 
 ## Zrobione
+- 2026-10-20: S-B — REV01: próg makro/mikroelementów = 0,01% suchej masy komórek (nie masy ciała); woda 50–60% masy dorosłego; tłuszcz 38 kJ/g vs 17 kJ/g (ponad 2×); klucze §12a bez zmian merytorycznych.
 - 2026-10-20: S-S1 — wszystkie modele chemii przeniesione na klocki (tabela rozpuszczalności, równania jonowe, osady, izotopy, reguła krzyżowa, układ okresowy 1–54, tlenki, elektrostatyka, F01–F03, jony w wodzie, profil energii, gra klasyfikacyjna); `lite.py` nie zgłasza modeli „tylko w pełnej wersji”; 0 błędów JS we wszystkich 74 lekcjach.
 - 2026-10-20: rysunki BIO (bio-rysunki.js): ryba, mikroskop, jajo ptaka, jajo-porownanie, tkanki, stawonogi, komórki, wykres, cykl (6 cykli) — wstawione w REV01/REV02; wstawianie do innych lekcji = H-G.
 - 2026-10-19/20: pakiety dla Perplexity (`eksport/out/bio_etap1/`, poza gitem); REV01 v1.2 wprowadzona (§1a Chemizm życia, §12a zadania LKO); push i scalenie `main` na polecenie.

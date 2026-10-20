@@ -271,3 +271,12 @@ Zasada: po każdym audycie surowa odpowiedź trafia do `<przedmiot>/plany/audyty
 | BIO.01.B1b.krzyzowki_mendel | 22 | 22 |
 | BIO.02.B2e.uklad_dokrewny | 15 | 18 |
 | BIO.02.B2g.homeostaza | 30 | 32 |
+
+## S-B — liczby REV01, 2026-10-20
+
+| Lekcja | Miejsce | Wynik |
+|---|---|---|
+| BIO.00.REV01 | §1 makro/mikroelementy | Próg 0,01% dotyczy **suchej masy komórek**, nie masy ciała (źródło: Zintegrowana Platforma Edukacyjna, zpe.gov.pl/a/makroelementy/DC42RUCU1); poprawiono tekst |
+| BIO.00.REV01 | §1a.1 woda | Zakres 50–60% masy dorosłego (mężczyźni więcej, starsi mniej); mózg ok. 75–80%; poprawiono tekst |
+| BIO.00.REV01 | §4 lipidy | 38 kJ (9 kcal)/g vs 17 kJ (4 kcal)/g — ponad 2×; poprawiono tekst |
+| BIO.00.REV01 | §12a | Klucze zad. 1–3 zgodne z treścią lekcji; bez zmian |

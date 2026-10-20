@@ -3,11 +3,11 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (19 pl., 517 KB)
+## .  (19 pl., 519 KB)
 - (zwinięte; `ls .`) — duże:
 - ⚠`INDEKS.html` 52 KB
 - ⚠`SPIS_WSZYSTKICH.md` 61 KB
-- ⚠`WERYFIKACJA.md` 77 KB
+- ⚠`WERYFIKACJA.md` 78 KB
 - ⚠`przeglad_lekcji.json` 146 KB
 
 ## angielski  (11 pl., 2.3 MB)
@@ -325,7 +325,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/engine/src/gfx/wspolne/widoki  (1 pl., 4 KB)
 - `che-test-silnika-v01.js` 4 KB
 
-## chemia/che-modular/engine/src/klocki  (58 pl., 391 KB)
+## chemia/che-modular/engine/src/klocki  (59 pl., 421 KB)
 - (zwinięte; `ls chemia/che-modular/engine/src/klocki`)
 
 ## chemia/che-modular/engine/src/klocki/dane  (1 pl., 11 KB)
@@ -1264,7 +1264,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## wizualizacje-projekty/baza-mala/gfx/wspolne/widoki  (1 pl., 4 KB)
 - `che-test-silnika-v01.js` 4 KB
 
-## wizualizacje-projekty/baza-mala/klocki  (42 pl., 267 KB)
+## wizualizacje-projekty/baza-mala/klocki  (59 pl., 421 KB)
 - (zwinięte; `ls wizualizacje-projekty/baza-mala/klocki`)
 
 ## wizualizacje-projekty/baza-mala/klocki/dane  (1 pl., 11 KB)
