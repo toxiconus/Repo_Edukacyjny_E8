@@ -3,6 +3,7 @@ kod: "O01–O07"
 tytul: "LEKCJA L006 — ORGANIKA: WĘGLOWODORY"
 zrodla: "CHEMIA_PODSTAWA_PLUS v1.1 (CHE.05.O01-O07.weglowodory.md)"
 opis: "Materiał roboczy lekcji (nie gotowa lekcja). Spis i zakres: chemia/plany/CHE_SPIS_TRESCI.md"
+stan: W23 — GPT-6, 2026-10-09; audyt celowany i poprawki punktowe, pełna niezależna recenzja nadal otwarta
 ---
 <!-- ==================== BEGIN L006 ==================== -->
 
@@ -978,6 +979,27 @@ Polimeryzacja etenu → polietylen (hasło).
 
 <!-- ==================== END L006 ==================== -->
 
+## UZUPEŁNIENIE KANONICZNE W8 — WĘGLOWODORY I SPALANIE
+
+Węglowodory są związkami organicznymi zbudowanymi wyłącznie z węgla i wodoru. CO, CO₂, węglany i wodorowęglany nie są węglowodorami. W typowych związkach organicznych węgiel tworzy cztery wiązania, a wodór jedno. Alkany mają wyłącznie pojedyncze wiązania C—C; alkeny zawierają co najmniej jedno C=C; alkiny — co najmniej jedno C≡C. Aromatyczność wynika z układu elektronowego, a nie wyłącznie z rysunku naprzemiennych wiązań.
+
+Wzory ogólne odnoszą się do określonych klas: acykliczne alkany CₙH₂ₙ₊₂; acykliczne alkeny z jednym wiązaniem podwójnym CₙH₂ₙ; acykliczne alkiny z jednym wiązaniem potrójnym CₙH₂ₙ₋₂. Nie stosuj ich bez sprawdzenia, czy związek jest acykliczny i czy zawiera dokładnie wskazany typ wiązań. Kolejne alkany szeregu homologicznego różnią się o –CH₂–: CH₄, C₂H₆, C₃H₈, C₄H₁₀, C₅H₁₂, C₆H₁₄.
+
+W nazewnictwie wybiera się najdłuższy łańcuch zgodny z regułami, numeruje od strony bliższej wiązaniu wielokrotnemu i podaje jego położenie. Izomery mają ten sam wzór sumaryczny, lecz inną budowę lub przestrzenne rozmieszczenie atomów; np. C₄H₁₀ występuje jako butan i 2-metylopropan.
+
+### Spalanie i BHP
+
+Spalanie całkowite węglowodoru w dostatecznej ilości tlenu daje tlenek węgla(IV) i wodę. Przy niedoborze tlenu może powstawać tlenek węgla(II) oraz sadza; nie wolno traktować jednego równania jako opisu wszystkich warunków. Tlenek węgla(II) jest silnie toksyczny i bezbarwny, więc płomień lub brak zapachu nie są wiarygodnym zabezpieczeniem. Doświadczenia ze spalaniem i gazami prowadzi się wyłącznie według właściwej procedury i z wentylacją.
+
+Przykłady: CH₄ + 2O₂ → CO₂ + 2H₂O; 2CH₄ + 3O₂ → 2CO + 4H₂O; CH₄ + O₂ → C + 2H₂O. Ostatnie dwa zapisy pokazują możliwe produkty przy ograniczonym dostępie tlenu, a nie gwarantują jednego produktu w każdych warunkach.
+
+### Sprawdź się
+
+1. Czy CO₂ jest węglowodorem? **Nie, nie zawiera wodoru jako składnika węglowodoru i jest tlenkiem węgla.**
+2. Wzór alkanów acyklicznych: **CₙH₂ₙ₊₂**.
+3. Czym różni się alken od alkinu? **Alken ma C=C, alkin C≡C.**
+4. Dlaczego niedobór tlenu przy spalaniu jest niebezpieczny? **Może powstawać toksyczny tlenek węgla(II).**
+
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
 > Źródło: `chemia/plany/audyty/W1_perplexityO01-O07₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
@@ -985,6 +1007,8 @@ Polimeryzacja etenu → polietylen (hasło).
 ### O01/O02 — Węglowodory (w audycie: O01)
 
 #### Poprawki
+
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
 
 - Węglowodory to związki organiczne zbudowane wyłącznie z węgla i wodoru.
 - Nie każdy związek zawierający węgiel jest węglowodorem.
@@ -1025,6 +1049,8 @@ Kolejne związki szeregu homologicznego różnią się o grupę -CH₂-, ale maj
 
 ##### Nazewnictwo
 
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
 - najdłuższy łańcuch węglowy określa nazwę podstawową;
 - położenie wiązania wielokrotnego oznacza się numerem;
 - łańcuch numeruje się od strony bliższej wiązania wielokrotnego;
@@ -1039,6 +1065,8 @@ Izomery mają ten sam wzór sumaryczny, ale różną budowę lub różne rozmies
 
 Przykład dla C₄H₁₀:
 
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
 - butan;
 - 2-metylopropan.
 
@@ -1049,6 +1077,8 @@ Nie są to różne pierwiastki ani różne wzory sumaryczne.
 > Uwaga przy scalaniu: W kluczu zad. 5 zamiast „dwutlenek węgla” — „tlenek węgla(IV)”.
 
 #### Poprawki
+
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
 
 - Spalanie całkowite zachodzi przy wystarczającej ilości tlenu i prowadzi do powstania CO₂ oraz H₂O.
 - Spalanie niecałkowite może prowadzić do powstania:
@@ -1119,6 +1149,8 @@ Niecałkowite do węgla:
 
 #### Poprawki
 
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
 - Alkany są nasycone, ponieważ zawierają maksymalną możliwą liczbę atomów wodoru dla danego szkieletu acyklicznego.
 - Alkeny i alkiny są nienasycone, ponieważ zawierają wiązania wielokrotne.
 - Próba z wodą bromową nie jest ogólnym testem na „każdy związek organiczny”.
@@ -1174,3 +1206,8 @@ W zapisie należy zaznaczyć, że powstaje polietylen, a symbol n oznacza dużą
 5. Propan:
 
  CH₃-CH=CH₂+H₂→ CH₃-CH₂-CH₃
+
+
+## W23 — węglowodory (2026-10-09, GPT-6)
+
+Sprawdzono wzory ogólne i ograniczenie ich stosowania do odpowiednich klas: alkany acykliczne CₙH₂ₙ₊₂, alkeny acykliczne z jednym C=C CₙH₂ₙ, alkiny acykliczne z jednym C≡C CₙH₂ₙ₋₂. Wzór CₙH₂ₙ nie identyfikuje samodzielnie alkenu, bo pasuje też do cykloalkanów.

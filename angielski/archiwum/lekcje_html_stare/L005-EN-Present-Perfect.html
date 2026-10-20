@@ -1,0 +1,2976 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lekcja 5 – Present Perfect · Egzamin ósmoklasisty</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+    <style>
+        /* ======================================================================
+           SYSTEM WIZUALNY REPETYTORIUM E8 – wersja 6.2 (master merge)
+           ====================================================================== */
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+            background: #f5f7fa;
+            color: #1e293b;
+            line-height: 1.7;
+            padding: 16px;
+        }
+        .container {
+            max-width: 1060px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.06);
+            padding: 28px 32px 24px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 12px 10px;
+            }
+            body {
+                padding: 6px;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #0a2540;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 1.45rem;
+            margin-top: 28px;
+            margin-bottom: 10px;
+            padding-bottom: 4px;
+            border-bottom: 2px solid #e9edf2;
+        }
+        h2 .level-badge {
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        h3 {
+            font-size: 1.15rem;
+            margin-top: 20px;
+            margin-bottom: 6px;
+        }
+        h4 {
+            font-size: 1.0rem;
+            margin-top: 14px;
+            margin-bottom: 4px;
+        }
+        p {
+            margin-bottom: 8px;
+        }
+        ul,
+        ol {
+            padding-left: 22px;
+            margin-bottom: 10px;
+        }
+        li {
+            margin-bottom: 3px;
+        }
+        a {
+            color: #2b6cb0;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- KOLORY --- */
+        :root {
+            --color-basic: #2d8f5e;
+            --color-basic-bg: #f0faf4;
+            --color-training: #2b6cb0;
+            --color-training-bg: #f0f6ff;
+            --color-exam: #b7791f;
+            --color-exam-bg: #fffbeb;
+            --color-trap: #dc3545;
+            --color-trap-bg: #fef2f2;
+            --color-ambitious: #7c3aed;
+            --color-ambitious-bg: #f5f0ff;
+            --color-remember: #0a2540;
+            --color-remember-bg: #f1f4f8;
+            --color-difficult: #b7791f;
+            --color-difficult-bg: #fffbeb;
+            --color-hint: #f59e0b;
+            --color-hint-bg: #fffbeb;
+            --color-correct: #2d8f5e;
+            --color-error: #dc3545;
+            --color-text: #1e293b;
+            --color-text-muted: #6b7a8d;
+            --color-border: #e2e8f0;
+            --color-bg-subtle: #f8fafc;
+            --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        /* --- KARTY --- */
+        .card {
+            border-radius: 12px;
+            padding: 14px 18px;
+            margin: 12px 0;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            box-shadow: var(--shadow-card);
+        }
+        .card-remember {
+            background: var(--color-remember-bg);
+            border-left: 5px solid var(--color-remember);
+            border-color: var(--color-remember);
+        }
+        .card-remember .card-label {
+            color: var(--color-remember);
+        }
+        .card-warning {
+            background: #fffbeb;
+            border-left: 5px solid #d69e2e;
+            border-color: #d69e2e;
+        }
+        .card-warning .card-label {
+            color: #d69e2e;
+        }
+        .card-hint {
+            background: var(--color-hint-bg);
+            border-left: 5px solid var(--color-hint);
+            border-color: var(--color-hint);
+        }
+        .card-hint .card-label {
+            color: var(--color-hint);
+        }
+        .card-error {
+            background: var(--color-trap-bg);
+            border-left: 5px solid var(--color-trap);
+            border-color: var(--color-trap);
+        }
+        .card-error .card-label {
+            color: var(--color-trap);
+        }
+        .card-correct {
+            background: var(--color-basic-bg);
+            border-left: 5px solid var(--color-correct);
+            border-color: var(--color-correct);
+        }
+        .card-correct .card-label {
+            color: var(--color-correct);
+        }
+        .card-trap {
+            background: var(--color-trap-bg);
+            border-left: 5px solid var(--color-trap);
+            border-color: var(--color-trap);
+        }
+        .card-trap .card-label {
+            color: var(--color-trap);
+        }
+        .card-ambitious {
+            background: var(--color-ambitious-bg);
+            border-left: 5px solid var(--color-ambitious);
+            border-color: var(--color-ambitious);
+        }
+        .card-ambitious .card-label {
+            color: var(--color-ambitious);
+        }
+        .card-difficult {
+            background: var(--color-difficult-bg);
+            border-left: 5px solid var(--color-difficult);
+            border-color: var(--color-difficult);
+        }
+        .card-difficult .card-label {
+            color: var(--color-difficult);
+        }
+        .card-gray {
+            background: var(--color-bg-subtle);
+            border-left: 5px solid var(--color-text-muted);
+            border-color: var(--color-text-muted);
+        }
+        .card .label {
+            font-weight: 600;
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            display: inline-block;
+            margin-bottom: 4px;
+            padding: 1px 10px;
+            border-radius: 16px;
+            background: rgba(0, 0, 0, 0.05);
+        }
+        .card .card-label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        /* --- BADGE --- */
+        .level-badge {
+            display: inline-block;
+            font-size: 0.55rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 1px 8px;
+            border-radius: 12px;
+            vertical-align: middle;
+            letter-spacing: 0.3px;
+            line-height: 1.6;
+        }
+        .level-basic {
+            background: #d4edda;
+            color: #155724;
+        }
+        .level-training {
+            background: #cce5ff;
+            color: #004085;
+        }
+        .level-exam {
+            background: #ffe8cc;
+            color: #8a6d3b;
+        }
+        .level-trap {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .level-ambitious {
+            background: #e8d5f5;
+            color: #4a1a6b;
+        }
+        .level-writing {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+        .level-remember {
+            background: #d1d5db;
+            color: #1a1a2e;
+        }
+        .level-difficult {
+            background: #fde68a;
+            color: #78350f;
+        }
+
+        /* --- PRZYKŁADY --- */
+        .example {
+            background: var(--color-bg-subtle);
+            border-radius: 10px;
+            padding: 10px 14px;
+            margin: 8px 0;
+            border: 1px solid var(--color-border);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 4px 12px;
+        }
+        .example .eng {
+            font-weight: 600;
+            color: #0a2540;
+            font-size: 1.0rem;
+        }
+        .example .pl {
+            color: var(--color-text-muted);
+            font-style: italic;
+            font-size: 0.88rem;
+        }
+        .example .tag {
+            display: inline-block;
+            font-size: 0.55rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            background: #e2e8f0;
+            padding: 1px 8px;
+            border-radius: 12px;
+            color: #2d3a4f;
+        }
+        .example .note {
+            color: var(--color-text-muted);
+            font-size: 0.78rem;
+            font-style: italic;
+            margin-left: auto;
+        }
+        .hl-operator {
+            color: var(--color-training);
+            font-weight: 700;
+        }
+        .hl-subject {
+            color: var(--color-correct);
+            font-weight: 600;
+        }
+        .hl-main-verb {
+            color: var(--color-exam);
+            font-weight: 600;
+        }
+        .hl-rest {
+            color: var(--color-text-muted);
+        }
+        .hl-past-simple {
+            color: #b7791f;
+            font-weight: 700;
+        }
+        .hl-past-cont {
+            color: #2b6cb0;
+            font-weight: 700;
+        }
+
+        /* --- TABELE --- */
+        .table-wrap {
+            overflow-x: auto;
+            margin: 12px 0;
+            border-radius: 10px;
+            border: 1px solid var(--color-border);
+        }
+        .table-wrap table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+        }
+        .table-wrap th,
+        .table-wrap td {
+            padding: 6px 10px;
+            text-align: left;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .table-wrap th {
+            background: #f1f4f8;
+            font-weight: 600;
+            color: #0a2540;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        .table-wrap tr:nth-child(even) {
+            background: #fafbfc;
+        }
+        .table-wrap .error-row {
+            background: #fef2f2;
+        }
+        .table-wrap .correct-row {
+            background: #f0faf4;
+        }
+        .table-wrap .highlight-be {
+            background: #f0f6ff;
+        }
+
+        /* --- PRZYCISKI --- */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 5px 14px;
+            border-radius: 8px;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            font-size: 0.82rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: var(--color-text);
+            font-family: inherit;
+        }
+        .btn:hover {
+            background: var(--color-bg-subtle);
+            border-color: #b0b8c4;
+        }
+        .btn-primary {
+            background: var(--color-training);
+            border-color: var(--color-training);
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #1f4e8c;
+            border-color: #1f4e8c;
+        }
+        .btn-success {
+            background: var(--color-basic);
+            border-color: var(--color-basic);
+            color: white;
+        }
+        .btn-success:hover {
+            background: #1f6e48;
+            border-color: #1f6e48;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--color-border);
+        }
+        .btn-outline:hover {
+            background: var(--color-bg-subtle);
+        }
+        .btn-sm {
+            padding: 3px 10px;
+            font-size: 0.74rem;
+        }
+        .btn-hint {
+            background: var(--color-hint);
+            border-color: var(--color-hint);
+            color: white;
+        }
+        .btn-hint:hover {
+            background: #d97706;
+            border-color: #d97706;
+        }
+        .btn-check {
+            background: var(--color-training);
+            border-color: var(--color-training);
+            color: white;
+        }
+        .btn-check:hover {
+            background: #1f4e8c;
+            border-color: #1f4e8c;
+        }
+
+        /* --- AUDIO --- */
+        .audio-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            cursor: pointer;
+            font-size: 15px;
+            color: var(--color-training);
+            transition: all 0.2s;
+            flex-shrink: 0;
+            font-family: inherit;
+            line-height: 1;
+        }
+        .audio-btn:hover {
+            background: var(--color-training-bg);
+            border-color: var(--color-training);
+        }
+        .audio-btn.playing {
+            background: var(--color-training);
+            border-color: var(--color-training);
+            color: white;
+        }
+
+        /* --- ĆWICZENIA --- */
+        .exercise {
+            background: var(--color-bg-subtle);
+            border-radius: 12px;
+            padding: 14px 16px;
+            margin: 12px 0;
+            border: 1px solid var(--color-border);
+        }
+        .exercise .ex-title {
+            font-weight: 600;
+            color: #0a2540;
+            margin-bottom: 6px;
+            font-size: 1.0rem;
+        }
+
+        /* --- ODPOWIEDZI, WSKAZÓWKI, WYJAŚNIENIA --- */
+        .answer-toggle,
+        .hint-toggle,
+        .explain-toggle {
+            font-family: inherit;
+            padding: 4px 14px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 0.78rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            margin-top: 4px;
+            margin-right: 4px;
+        }
+        .answer-toggle {
+            background: var(--color-training);
+            color: white;
+        }
+        .answer-toggle:hover {
+            background: #1f4e8c;
+        }
+        .hint-toggle {
+            background: var(--color-hint);
+            color: white;
+        }
+        .hint-toggle:hover {
+            background: #d97706;
+        }
+        .explain-toggle {
+            background: transparent;
+            border: 1px solid var(--color-border);
+            color: var(--color-text-muted);
+        }
+        .explain-toggle:hover {
+            border-color: var(--color-training);
+            color: var(--color-training);
+            background: var(--color-training-bg);
+        }
+        .answer-content,
+        .hint-content,
+        .explain-content {
+            border-radius: 6px;
+            padding: 0 12px;
+            margin-top: 4px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease, padding 0.3s ease, opacity 0.3s ease;
+            opacity: 0;
+        }
+        .answer-content.show,
+        .hint-content.show,
+        .explain-content.show {
+            max-height: 800px;
+            padding: 10px 12px;
+            opacity: 1;
+        }
+        .answer-content {
+            background: var(--color-training-bg);
+            border-left: 3px solid var(--color-training);
+        }
+        .hint-content {
+            background: var(--color-hint-bg);
+            border-left: 3px solid var(--color-hint);
+            font-style: italic;
+            color: #78350f;
+        }
+        .explain-content {
+            background: var(--color-bg-subtle);
+            border-left: 3px solid var(--color-training);
+        }
+        .explain-content .rule-box {
+            background: #ffffff;
+            border-radius: 6px;
+            padding: 6px 12px;
+            margin: 4px 0;
+            border: 1px solid var(--color-border);
+            font-size: 0.9rem;
+        }
+
+        /* stopniowane podpowiedzi */
+        .hint-level {
+            display: block;
+            margin-top: 6px;
+            font-size: 0.9rem;
+            padding: 6px 10px;
+            border-radius: 6px;
+            background: #ffffff;
+            border: 1px solid var(--color-border);
+        }
+        .hint-level .hint-num {
+            font-weight: 700;
+            color: var(--color-hint);
+            margin-right: 6px;
+        }
+        .hint-level.hint-visible {
+            display: block;
+        }
+
+        .hide-all-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+            margin: 8px 0 4px;
+        }
+        .hide-all-btn {
+            font-family: inherit;
+            padding: 4px 14px;
+            border-radius: 6px;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            cursor: pointer;
+            font-size: 0.78rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            color: var(--color-text-muted);
+        }
+        .hide-all-btn:hover {
+            border-color: var(--color-error);
+            color: var(--color-error);
+            background: var(--color-trap-bg);
+        }
+
+        /* --- DIAGRAM / OŚ CZASU --- */
+        .timeline-diagram {
+            background: var(--color-bg-subtle);
+            border-radius: 14px;
+            padding: 16px 20px;
+            margin: 12px 0;
+            border: 1px solid var(--color-border);
+            text-align: center;
+            font-family: 'Courier New', monospace;
+        }
+        .timeline-diagram .line {
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            color: var(--color-text-muted);
+            white-space: pre;
+        }
+        .timeline-diagram .annotation {
+            display: flex;
+            justify-content: space-around;
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+            margin-top: 2px;
+        }
+        .timeline-diagram .point {
+            color: var(--color-exam);
+            font-weight: 700;
+        }
+        .timeline-diagram .bar {
+            color: var(--color-training);
+            font-weight: 700;
+        }
+        .timeline-diagram .legend {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 0.8rem;
+            margin-top: 8px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .timeline-diagram .legend .dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--color-exam);
+            margin-right: 4px;
+            vertical-align: middle;
+        }
+        .timeline-diagram .legend .bar-symbol {
+            display: inline-block;
+            width: 24px;
+            height: 6px;
+            background: var(--color-training);
+            border-radius: 3px;
+            margin-right: 4px;
+            vertical-align: middle;
+        }
+
+        /* --- QUIZ / INTERAKTYWNE --- */
+        .quiz-buttons {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            margin: 4px 0;
+        }
+        .quiz-buttons .btn {
+            min-width: 50px;
+            justify-content: center;
+        }
+        .quiz-buttons .btn.selected {
+            background: var(--color-training);
+            border-color: var(--color-training);
+            color: white;
+        }
+        .quiz-buttons .btn.correct {
+            background: var(--color-correct);
+            border-color: var(--color-correct);
+            color: white;
+        }
+        .quiz-buttons .btn.wrong {
+            background: var(--color-error);
+            border-color: var(--color-error);
+            color: white;
+        }
+        .quiz-feedback {
+            margin-top: 3px;
+            font-weight: 500;
+            font-size: 0.85rem;
+        }
+        .quiz-feedback .correct {
+            color: var(--color-correct);
+        }
+        .quiz-feedback .wrong {
+            color: var(--color-error);
+        }
+
+        /* --- FITB --- */
+        .fitb-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 6px 10px;
+            margin: 4px 0;
+            padding: 4px 0;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .fitb-row:last-child {
+            border-bottom: none;
+        }
+        .fitb-row input[type="text"] {
+            padding: 3px 8px;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            font-size: 0.85rem;
+            width: 130px;
+            transition: border-color 0.2s;
+            font-family: inherit;
+        }
+        .fitb-row input[type="text"]:focus {
+            outline: none;
+            border-color: var(--color-training);
+            box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.15);
+        }
+        .fitb-row input[type="text"].correct {
+            border-color: var(--color-correct);
+            background: #f0faf4;
+        }
+        .fitb-row input[type="text"].wrong {
+            border-color: var(--color-error);
+            background: #fef2f2;
+        }
+        .fitb-row .result-icon {
+            font-size: 1.0rem;
+        }
+
+        /* --- MISJA --- */
+        .mission-result {
+            font-size: 1.0rem;
+            font-weight: 600;
+            padding: 10px 14px;
+            border-radius: 10px;
+            margin-top: 8px;
+        }
+        .mission-result.perfect {
+            background: #d4edda;
+            color: #155724;
+        }
+        .mission-result.good {
+            background: #cce5ff;
+            color: #004085;
+        }
+        .mission-result.ok {
+            background: #ffe8cc;
+            color: #8a6d3b;
+        }
+        .mission-result.fail {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        /* --- FISZKA --- */
+        .fiszka {
+            background: var(--color-bg-subtle);
+            border: 2px solid #0a2540;
+            border-radius: 14px;
+            padding: 18px 22px;
+            margin: 20px 0;
+        }
+        .fiszka h3 {
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #0a2540;
+            padding-bottom: 4px;
+        }
+        .fiszka-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px 24px;
+        }
+        .fiszka-col h4 {
+            font-weight: 600;
+            border-bottom: 1px solid #cbd5e0;
+            padding-bottom: 3px;
+            margin-bottom: 4px;
+        }
+        .fiszka-col ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .fiszka-col li {
+            padding: 2px 0 2px 16px;
+            position: relative;
+            font-size: 0.88rem;
+        }
+        .fiszka-col li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--color-training);
+            font-weight: 700;
+        }
+        @media (max-width: 768px) {
+            .fiszka-grid {
+                grid-template-columns: 1fr;
+            }
+            .fiszka {
+                padding: 14px 16px;
+            }
+        }
+
+        /* --- PANEL POSTĘPU --- */
+        .top-panel {
+            background: var(--color-bg-subtle);
+            border-radius: 16px;
+            padding: 16px 20px;
+            margin-bottom: 24px;
+            border: 1px solid var(--color-border);
+        }
+        .top-panel .panel-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px 16px;
+        }
+        .top-panel .panel-row+.panel-row {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--color-border);
+        }
+        .top-panel .title {
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: #0a2540;
+        }
+        .top-panel .subtitle {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+        .top-panel .lesson-info {
+            margin-top: 6px;
+            font-size: 0.78rem;
+            color: var(--color-text-muted);
+            line-height: 1.4;
+        }
+        .top-panel .lesson-info .lesson-title {
+            font-style: italic;
+        }
+        .progress-bar-wrap {
+            flex: 1;
+            min-width: 140px;
+        }
+        .progress-bar-bg {
+            background: #e9edf2;
+            border-radius: 20px;
+            height: 6px;
+            overflow: hidden;
+            position: relative;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            border-radius: 20px;
+            background: linear-gradient(90deg, #2b6cb0, #4a8fd0);
+            transition: width 0.4s ease;
+            width: 0%;
+        }
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.7rem;
+            color: var(--color-text-muted);
+            margin-top: 2px;
+        }
+        .view-filters {
+            display: flex;
+            gap: 4px;
+            flex-wrap: wrap;
+        }
+        .view-filters .btn {
+            font-size: 0.72rem;
+            padding: 3px 12px;
+        }
+        .view-filters .btn.active {
+            background: var(--color-training);
+            border-color: var(--color-training);
+            color: white;
+        }
+        .today-tasks {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 16px;
+            margin: 4px 0 0;
+        }
+        .today-tasks .task {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.82rem;
+        }
+        .today-tasks .task .circle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid var(--color-border);
+            font-size: 0.55rem;
+            font-weight: 700;
+            color: var(--color-text-muted);
+            transition: all 0.2s;
+        }
+        .today-tasks .task.done .circle {
+            background: var(--color-basic);
+            border-color: var(--color-basic);
+            color: white;
+        }
+        .today-tasks .task .task-label {
+            color: var(--color-text-muted);
+        }
+        .today-tasks .task.done .task-label {
+            color: var(--color-text);
+            text-decoration: line-through;
+        }
+
+        /* --- PRZEKREŚLENIE / BŁĘDY --- */
+        .error-text {
+            color: var(--color-error);
+            text-decoration: line-through;
+            font-weight: 600;
+        }
+        .correct-text {
+            color: var(--color-correct);
+            font-weight: 600;
+        }
+        .cross-mark {
+            color: var(--color-error);
+            font-weight: 700;
+            margin-right: 2px;
+        }
+        .check-mark {
+            color: var(--color-correct);
+            font-weight: 700;
+            margin-right: 2px;
+        }
+
+        /* --- SPIS TREŚCI (akordeon) --- */
+        .toc-section {
+            background: #ffffff;
+            border: 1px solid var(--color-border);
+            border-radius: 16px;
+            padding: 18px 22px;
+            margin-bottom: 22px;
+        }
+        .toc-section h2 {
+            margin-bottom: 14px;
+            font-size: 1.25rem;
+        }
+        .toc-accordion {
+            margin-top: 6px;
+        }
+        .toc-item {
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            margin-bottom: 6px;
+            background: #ffffff;
+        }
+        .toc-summary {
+            font-weight: 600;
+            font-size: 0.92rem;
+            padding: 8px 14px;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s;
+        }
+        .toc-summary:hover {
+            background: var(--color-bg-subtle);
+        }
+        .toc-summary::-webkit-details-marker {
+            display: none;
+        }
+        .toc-summary::before {
+            content: "▶";
+            font-size: 0.7rem;
+            color: var(--color-text-muted);
+            transition: transform 0.2s;
+            margin-right: 6px;
+        }
+        .toc-item[open] .toc-summary::before {
+            transform: rotate(90deg);
+        }
+        .toc-checklist {
+            padding: 4px 14px 12px 30px;
+            list-style: none;
+            margin: 0;
+        }
+        .toc-checklist li {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85rem;
+            padding: 2px 0;
+        }
+        .toc-checklist input[type="checkbox"] {
+            width: 15px;
+            height: 15px;
+            accent-color: var(--color-training);
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        .toc-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: 2px 14px 8px 30px;
+        }
+        .toc-anchor {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 30px;
+            padding: 4px 11px;
+            border: 1px solid var(--color-training);
+            border-radius: 6px;
+            background: var(--color-training-bg);
+            color: var(--color-training);
+            font-size: 0.78rem;
+            font-weight: 600;
+            line-height: 1.2;
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s;
+        }
+        .toc-anchor:hover,
+        .toc-anchor:focus-visible {
+            background: var(--color-training);
+            color: #ffffff;
+        }
+        .toc-item .toc-sublist {
+            padding: 2px 14px 12px 30px;
+            list-style: none;
+            margin: 0;
+        }
+        .toc-item .toc-sublist li {
+            font-size: 0.85rem;
+            padding: 1px 0;
+        }
+        .toc-item .toc-sublist a {
+            color: var(--color-training);
+            text-decoration: none;
+        }
+        .toc-item .toc-sublist a:hover {
+            text-decoration: underline;
+        }
+        .toc-keywords {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 14px;
+            padding: 12px 16px;
+            background: var(--color-basic-bg);
+            border-radius: 12px;
+            color: #0f5132;
+            font-weight: 600;
+            line-height: 1.6;
+        }
+        .toc-keywords span {
+            font-style: italic;
+            color: #1e293b;
+        }
+
+        /* --- UKRYWANIE SEKCJI (filter) --- */
+        .section.hidden-by-filter {
+            display: none !important;
+        }
+
+        /* --- LISTA TEMATÓW GŁÓWNYCH --- */
+        .topic-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 7px 30px;
+            padding-left: 28px;
+        }
+        .topic-list li {
+            margin: 0;
+            padding-left: 2px;
+            font-size: 0.9rem;
+        }
+        .topic-list a {
+            display: flex;
+            align-items: center;
+            min-height: 38px;
+            padding: 6px 10px;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            background: #ffffff;
+            color: #0a2540;
+            font-weight: 600;
+            line-height: 1.25;
+            text-decoration: none;
+            transition: background 0.2s, border-color 0.2s, color 0.2s;
+        }
+        .topic-list a:hover,
+        .topic-list a:focus-visible {
+            background: var(--color-training-bg);
+            border-color: var(--color-training);
+            color: var(--color-training);
+        }
+        @media (max-width: 600px) {
+            .topic-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* --- STOPKA --- */
+        .footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 2px solid var(--color-border);
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 600px) {
+            .top-panel .panel-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .view-filters {
+                justify-content: center;
+            }
+            .today-tasks {
+                flex-direction: column;
+                gap: 3px;
+            }
+            .example {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .example .note {
+                margin-left: 0;
+            }
+            .fitb-row {
+                flex-wrap: wrap;
+            }
+            .fitb-row input[type="text"] {
+                width: 100%;
+            }
+            .quiz-buttons {
+                justify-content: center;
+            }
+            .top-panel {
+                padding: 12px 14px;
+            }
+            .container {
+                padding: 10px 6px;
+            }
+            .topic-list {
+                columns: 1;
+            }
+            .toc-section {
+                padding: 12px 14px;
+            }
+            .toc-summary {
+                font-size: 0.85rem;
+                padding: 6px 10px;
+            }
+            .toc-checklist li {
+                font-size: 0.8rem;
+            }
+        }
+
+        .text-muted {
+            color: var(--color-text-muted);
+        }
+        .text-sm {
+            font-size: 0.82rem;
+        }
+        .mt-8 {
+            margin-top: 8px;
+        }
+        .mb-8 {
+            margin-bottom: 8px;
+        }
+        .gap-8 {
+            gap: 8px;
+        }
+        .inline-flex {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+        .part-heading {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0a2540;
+            margin-top: 32px;
+            margin-bottom: 14px;
+            padding: 8px 16px;
+            background: var(--color-bg-subtle);
+            border-radius: 12px;
+            border-left: 6px solid var(--color-training);
+            letter-spacing: -0.02em;
+        }
+        .part-heading .part-num {
+            color: var(--color-training);
+        }
+
+        /* --- MASTER MM --- */
+        .mm-focusbar {
+            position: sticky;
+            top: 8px;
+            z-index: 20;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            margin: 0 0 12px;
+            padding: 7px 9px;
+            background: rgba(255, 255, 255, .95);
+            border: 1px solid #dfe5eb;
+            border-radius: 10px;
+            font-size: .78rem;
+        }
+        .mm-focusbar .mm-section-name {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #64748b;
+        }
+        .mm-focusbar button {
+            border: 1px solid #dfe5eb;
+            background: #fff;
+            color: #182230;
+            border-radius: 7px;
+            padding: 5px 9px;
+            cursor: pointer;
+            font: inherit;
+        }
+        .mm-orientation {
+            display: grid;
+            grid-template-columns: 1.25fr .9fr .9fr;
+            gap: 10px;
+            margin: 0 0 18px;
+            padding: 12px;
+            border: 1px solid #dfe5eb;
+            border-radius: 12px;
+            background: #fff;
+        }
+        .mm-orientation .mm-step {
+            padding: 11px 12px;
+            border-radius: 9px;
+            background: #f8fafc;
+            border: 1px solid #e5e9ee;
+        }
+        .mm-orientation .mm-step strong {
+            display: block;
+            font-size: .9rem;
+            margin-bottom: 2px;
+        }
+        .mm-orientation .mm-step span {
+            font-size: .78rem;
+            color: #64748b;
+        }
+        .mm-orientation .mm-step.current {
+            border-color: #b8cfc4;
+            background: #edf5f1;
+        }
+        .mm-orientation .mm-step.current strong {
+            color: #2f6f59;
+        }
+        .mm-study-rule {
+            display: flex;
+            gap: 12px;
+            padding: 13px 15px;
+            margin: 14px 0 22px;
+            border: 1px solid #dfe5eb;
+            border-radius: 11px;
+            background: #fff;
+        }
+        .mm-study-rule .mm-rule-key {
+            font-weight: 700;
+            white-space: nowrap;
+            color: #2f6f59;
+        }
+        .mm-study-rule p {
+            margin: 0;
+            font-size: .9rem;
+        }
+        .mm-recall {
+            margin: 16px 0;
+            padding: 14px 16px;
+            border: 1px dashed #b9c3ce;
+            border-radius: 10px;
+            background: #fbfcfd;
+        }
+        .mm-recall summary {
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .mm-recall p {
+            margin: 9px 0 0;
+            font-size: .9rem;
+        }
+        .mm-microtest {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin: 12px 0;
+        }
+        .mm-microtest button {
+            padding: 9px 10px;
+            border: 1px solid #dfe5eb;
+            border-radius: 8px;
+            background: #fff;
+            text-align: left;
+            cursor: pointer;
+            font: inherit;
+        }
+        .mm-microtest button:hover {
+            background: #f8fafc;
+        }
+        .mm-microtest .mm-answer {
+            display: block;
+            margin-top: 5px;
+            color: #64748b;
+            font-size: .8rem;
+        }
+        body.mm-focus .toc-section,
+        body.mm-focus .mm-orientation,
+        body.mm-focus .top-panel .view-filters,
+        body.mm-focus .top-panel .today-tasks {
+            display: none;
+        }
+        body.mm-focus .container {
+            max-width: 900px;
+        }
+        body.mm-focus .section:not(.mm-current-section) {
+            opacity: .42;
+            transition: opacity .2s;
+        }
+        @media(max-width:760px) {
+            .container {
+                padding: 17px 14px 22px;
+                border-radius: 13px;
+            }
+            .mm-orientation {
+                grid-template-columns: 1fr;
+            }
+            .mm-microtest {
+                grid-template-columns: 1fr;
+            }
+            .mm-focusbar {
+                top: 4px;
+            }
+        }
+        @media(prefers-reduced-motion:reduce) {
+            * {
+                transition: none !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        /* --- słowniczek w tabeli --- */
+        .vocab-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px;
+            margin: 8px 0;
+        }
+        .vocab-grid .vocab-item {
+            background: var(--color-bg-subtle);
+            padding: 6px 10px;
+            border-radius: 6px;
+            border: 1px solid var(--color-border);
+            font-size: 0.85rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .vocab-grid .vocab-item .en {
+            font-weight: 600;
+            color: #0a2540;
+        }
+        .vocab-grid .vocab-item .pl {
+            color: var(--color-text-muted);
+            font-style: italic;
+        }
+        .vocab-grid .vocab-item .ex {
+            font-size: 0.8rem;
+            color: var(--color-training);
+            border-top: 1px dashed var(--color-border);
+            padding-top: 2px;
+            margin-top: 2px;
+        }
+        @media (max-width: 600px) {
+            .vocab-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* --- Tabela porównawcza czasów --- */
+        .comparison-table td.highlight-simple {
+            background: #fffbeb;
+        }
+        .comparison-table td.highlight-cont {
+            background: #f0f6ff;
+        }
+
+        /* --- znacznik dla zaawansowanego przykładu --- */
+        .advanced-note {
+            background: #faf5ff;
+            border-left: 4px solid #7c3aed;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            color: #4a1a6b;
+            margin-top: 4px;
+        }
+        .lesson-context {
+            background: #f0f6ff;
+            border-left: 4px solid #2b6cb0;
+            padding: 10px 14px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: #004085;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="app">
+
+        <!-- ============================================================
+        TOP PANEL – POSTĘP + FILTRY + ZADANIA
+        ============================================================ -->
+        <div class="top-panel" id="topPanel">
+            <div class="panel-row">
+                <div>
+                    <div class="title">Present <strong>Perfect</strong></div>
+                    <div class="subtitle">Egzamin ósmoklasisty · kompleksowe przygotowanie</div>
+                    <div class="lesson-info">
+                        <div class="lesson-title">Lekcja 5 – doświadczenia, niedawne wydarzenia, since/for</div>
+                        <div>Nazwa pliku: A.L.05-PresentPerfect.html</div>
+                        <div style="font-size:0.7rem; color:#64748b; margin-top:2px;">🔹 Doświadczenia · skutek teraz · trwanie od przeszłości</div>
+                    </div>
+                </div>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" id="progressFill" style="width:0%;"></div>
+                    </div>
+                    <div class="progress-label">
+                        <span id="progressPercent">0%</span>
+                        <span id="progressStatus">Zacznij naukę</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-row">
+                <div class="view-filters">
+                    <button class="btn active" data-view="all" onclick="setView('all')">Wszystko</button>
+                    <button class="btn" data-view="basic" onclick="setView('basic')">Podstawa + Trening</button>
+                    <button class="btn" data-view="exam" onclick="setView('exam')">Egzamin</button>
+                </div>
+                <div style="font-size:0.75rem; color:var(--color-text-muted); margin-left:auto;">
+                    <span id="visibleCount">0</span> / <span id="totalCount">0</span> widocznych
+                </div>
+                <button class="btn btn-outline btn-sm" type="button" onclick="resetAllProgress()">Resetuj postęp</button>
+            </div>
+
+            <div class="panel-row">
+                <div class="today-tasks" id="todayTasks">
+                    <div class="task" data-task="build"><span class="circle">1</span><span class="task-label">Budowa</span></div>
+                    <div class="task" data-task="use"><span class="circle">2</span><span class="task-label">Zastosowanie</span></div>
+                    <div class="task" data-task="sincefor"><span class="circle">3</span><span class="task-label">Since / For</span></div>
+                    <div class="task" data-task="training"><span class="circle">4</span><span class="task-label">Zrób trening</span></div>
+                    <div class="task" data-task="test"><span class="circle">5</span><span class="task-label">Zrób test</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NAWIGACJA MIĘDZY LEKCJAMI -->
+        <div class="lesson-nav" style="display:flex; justify-content:space-between; align-items:center; padding:10px 0; font-size:0.85em; border-bottom:1px solid var(--color-border); margin-bottom:16px;">
+            <a href="lekcja 04.html" style="color:#2b6cb0; text-decoration:none; font-weight:600;">&larr; Poprzednia lekcja</a>
+            <a href="index.html" class="all-lessons" style="color:#4a5568; text-decoration:none; font-weight:600;">Spis wszystkich lekcji</a>
+            <a href="lekcja 06.html" style="color:#2b6cb0; text-decoration:none; font-weight:600;">Następna lekcja &rarr;</a>
+        </div>
+
+        <!-- MASTER – warstwa prowadzenia ucznia -->
+        <div class="mm-focusbar" id="mmFocusBar" aria-live="polite">
+            <span class="mm-section-name" id="mmSectionName">Lekcja 5 · orientacja</span>
+            <button type="button" id="mmFocusBtn" onclick="mmToggleFocus()">Tryb skupienia</button>
+        </div>
+        <div class="mm-orientation" aria-label="Plan pracy z lekcją">
+            <div class="mm-step current"><strong>1. Rozpoznaj</strong><span>Czy to doświadczenie, skutek teraz, czy sytuacja trwająca?</span></div>
+            <div class="mm-step"><strong>2. Wybierz</strong><span>Present Perfect (have/has + III forma) lub Past Simple (konkretny moment)</span></div>
+            <div class="mm-step"><strong>3. Sprawdź</strong><span>since = moment · for = okres · already przed III formą · yet na końcu</span></div>
+        </div>
+        <div class="mm-study-rule">
+            <div class="mm-rule-key">Zasada pracy</div>
+            <p><strong>Najpierw zdecyduj, czy mówisz o przeszłości jako o doświadczeniu związanym z teraz, czy wskazujesz konkretny zakończony moment.</strong> Dopiero potem wybierz formę.</p>
+        </div>
+
+        <!-- ============================================================
+        SPIS TREŚCI (akordeon)
+        ============================================================ -->
+        <div class="toc-section" id="sec-toc">
+            <h2>Spis treści</h2>
+            <div class="toc-accordion">
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Budowa Present Perfect</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-build">Budowa</a>
+                        <a class="toc-anchor" href="#sec-forms">Have czy has?</a>
+                        <a class="toc-anchor" href="#sec-three-forms">Trzy formy</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Znam budowę: have/has + III forma.</li>
+                        <li><input type="checkbox" data-progress="5" /> Wiem, kiedy użyć have, a kiedy has.</li>
+                        <li><input type="checkbox" data-progress="5" /> Potrafię tworzyć twierdzenia, przeczenia i pytania.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Zastosowanie – doświadczenia, niedawne wydarzenia, trwanie</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-experiences">Doświadczenia – ever/never</a>
+                        <a class="toc-anchor" href="#sec-recent">Niedawne – just/already/yet</a>
+                        <a class="toc-anchor" href="#sec-sincefor">Since i For</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Umiem używać ever/never dla doświadczeń.</li>
+                        <li><input type="checkbox" data-progress="5" /> Umiem używać just/already/yet.</li>
+                        <li><input type="checkbox" data-progress="5" /> Rozróżniam since i for.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Present Perfect vs Past Simple</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-vs">Porównanie</a>
+                        <a class="toc-anchor" href="#sec-trap">Czego nie łączymy</a>
+                        <a class="toc-anchor" href="#sec-been-gone">Been vs Gone</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Rozróżniam Present Perfect od Past Simple.</li>
+                        <li><input type="checkbox" data-progress="5" /> Wiem, że z Present Perfect nie łączymy yesterday, last week.</li>
+                        <li><input type="checkbox" data-progress="5" /> Rozumiem różnicę między been a gone.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Słownictwo i ćwiczenia</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-vocab">Słowniczek</a>
+                        <a class="toc-anchor" href="#sec-exercises">Ćwiczenia</a>
+                        <a class="toc-anchor" href="#sec-mission">Test końcowy</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Znam słownictwo: doświadczenia, osiągnięcia, podróże.</li>
+                        <li><input type="checkbox" data-progress="5" /> Rozwiązałem/am ćwiczenia.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam najczęstsze błędy.</li>
+                    </ul>
+                </details>
+
+            </div>
+            <div class="toc-keywords">
+                <span>Słowa-klucze: ever · never · just · already · yet · since · for · so far · recently</span>
+                <a class="toc-anchor" href="#sec-vocab">Otwórz słowniczek</a>
+            </div>
+        </div>
+
+        <!-- ============================================================
+        ROZGRZEWKA – SPRAWDŹ SIĘ PRZED NAUKĄ
+        ============================================================ -->
+        <div class="mm-recall" id="mmRecall">
+            <details>
+                <summary>Sprawdź się przed nauką — 3 szybkie decyzje</summary>
+                <div class="mm-microtest">
+                    <button type="button" onclick="mmReveal(this,'have never been — doświadczenie')">I ______ never ______ to Spain. (be) → <strong>jakie czasy?</strong><span class="mm-answer"></span></button>
+                    <button type="button" onclick="mmReveal(this,'visited — in 2022 to konkretny moment')">I ______ London in 2022. (have visited / visited) → <strong>który czas?</strong><span class="mm-answer"></span></button>
+                    <button type="button" onclick="mmReveal(this,'for — five years to okres')">I have lived here ___ five years. (since / for) → <strong>since czy for?</strong><span class="mm-answer"></span></button>
+                </div>
+                <p>To nie test na ocenę – ma pokazać, co już działa automatycznie.</p>
+            </details>
+        </div>
+
+        <!-- ============================================================
+        CZĘŚĆ 1 – WPROWADZENIE
+        ============================================================ -->
+        <section class="section" data-level="basic" id="part1">
+            <div class="part-heading"><span class="part-num">Część 1</span> · Wprowadzenie</div>
+
+            <div class="section" data-level="basic" id="sec-cel">
+                <div class="lesson-context">
+                    <strong>🔹 Ta lekcja to szczegółowe omówienie Present Perfect.</strong> Jeśli dopiero poznajesz czasy, zacznij od przeglądu w Lekcji 4, a potem wróć tutaj, aby pogłębić wiedzę.
+                </div>
+                <h2>Cel lekcji</h2>
+                <p>Po tej lekcji będziesz potrafić:</p>
+                <ul>
+                    <li><strong>zbudować</strong> Present Perfect: <strong>have/has + III forma czasownika</strong>;</li>
+                    <li><strong>rozpoznać</strong>, kiedy potrzebujesz Present Perfect;</li>
+                    <li><strong>tworzyć</strong> twierdzenia, przeczenia i pytania;</li>
+                    <li><strong>poprawnie</strong> używać <strong>ever, never, just, already, yet</strong>;</li>
+                    <li><strong>rozróżniać</strong> <strong>since</strong> i <strong>for</strong>;</li>
+                    <li><strong>rozróżniać</strong> Present Perfect i Past Simple;</li>
+                    <li><strong>rozumieć</strong> różnicę między <strong>been</strong> i <strong>gone</strong>.</li>
+                </ul>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-test-start">
+                <h2>1. Zanim zaczniesz – szybki test</h2>
+                <ol>
+                    <li>I ______ never ______ to Spain. (be)</li>
+                    <li>I ______ London in 2022. — have visited / visited</li>
+                    <li>Popraw: <span class="error-text">She has seen him yesterday.</span></li>
+                    <li>I have lived here ___ five years. — since / for</li>
+                    <li>Have you ___ been to London? — ever / never</li>
+                    <li>Co oznacza: <em>She has gone to the shops.</em> — A. była w sklepie i wróciła / B. poszła do sklepu i prawdopodobnie jeszcze nie wróciła</li>
+                </ol>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-start5')">Pokaż odpowiedzi</button>
+                <div id="ans-start5" class="answer-content">
+                    <ol>
+                        <li><strong>have never been</strong></li>
+                        <li><strong>visited</strong> (in 2022 = konkretny moment → Past Simple)</li>
+                        <li><span class="correct-text">She saw him yesterday.</span></li>
+                        <li><strong>for</strong> (five years = okres)</li>
+                        <li><strong>ever</strong> (w pytaniu)</li>
+                        <li><strong>B</strong> (gone = poszła i nie wróciła)</li>
+                    </ol>
+                </div>
+                <p>Nie przejmuj się wynikiem — ta diagnoza ma pokazać, co już umiesz. Wróć do tych pytań po lekcji, aby zobaczyć postęp.</p>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-big-picture">
+                <h2>2. Najważniejsza idea</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Present Perfect nie jest po prostu „czasem przeszłym"</span>
+                    <p>Najważniejsze pytanie brzmi:</p>
+                    <p style="font-size:1.05rem; font-weight:600; text-align:center; margin:8px 0;">Czy mówię o przeszłości jako o doświadczeniu / wydarzeniu związanym z teraz, czy wskazuję konkretny zakończony moment w przeszłości?</p>
+                    <div class="example" style="background:white; margin-top:8px;">
+                        <span class="eng"><span class="hl-main-verb">I have visited Paris.</span></span>
+                        <span class="pl">Byłem w Paryżu. Mówię o doświadczeniu.</span>
+                    </div>
+                    <div class="example" style="background:white; margin-top:4px;">
+                        <span class="eng"><span class="hl-main-verb">I visited Paris in 2022.</span></span>
+                        <span class="pl">Byłem w Paryżu w 2022 r. Podaję konkretny zakończony moment.</span>
+                    </div>
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:8px; font-size:0.9rem;">
+                        <div style="background:#f0faf4; padding:8px 12px; border-radius:6px; border:1px solid #c6f6d5;">
+                            <span class="check-mark">✓</span> <strong>Present Perfect:</strong> przeszłość + związek z teraźniejszością
+                        </div>
+                        <div style="background:#fffbeb; padding:8px 12px; border-radius:6px; border:1px solid #f6c23e;">
+                            <span class="cross-mark">✗</span> <strong>Past Simple:</strong> zakończone wydarzenie + określony moment w przeszłości
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 2 – BUDOWA
+        ============================================================ -->
+        <section class="section" data-level="basic" id="part2">
+            <div class="part-heading"><span class="part-num">Część 2</span> · Budowa Present Perfect</div>
+
+            <div class="section" data-level="basic" id="sec-build">
+                <h2>3. Budowa Present Perfect</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Wzór</span>
+                    <p style="font-size:1.15rem; text-align:center;"><strong>have / has + III forma czasownika (Past Participle)</strong></p>
+                </div>
+
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th></th><th>Twierdzenie</th><th>Przeczenie</th><th>Pytanie</th></tr></thead>
+                        <tbody>
+                            <tr><td><strong>I / you / we / they</strong></td>
+                                <td><span class="hl-main-verb">I have seen</span></td>
+                                <td><span class="hl-operator">I haven't</span> <span class="hl-main-verb">seen</span></td>
+                                <td><span class="hl-operator">Have</span> you <span class="hl-main-verb">seen</span>?</td>
+                            </tr>
+                            <tr><td><strong>he / she / it</strong></td>
+                                <td><span class="hl-main-verb">She has seen</span></td>
+                                <td><span class="hl-operator">She hasn't</span> <span class="hl-main-verb">seen</span></td>
+                                <td><span class="hl-operator">Has</span> she <span class="hl-main-verb">seen</span>?</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="card card-warning">
+                    <span class="card-label">Najważniejsze trzecie formy – powtarzaj regularnie!</span>
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:4px 16px; margin-top:6px; font-size:0.9rem;">
+                        <div><strong>go – went – gone</strong> (iść)</div>
+                        <div><em>She has gone to the shops.</em></div>
+                        <div><strong>see – saw – seen</strong> (widzieć)</div>
+                        <div><em>I have seen this film.</em></div>
+                        <div><strong>write – wrote – written</strong> (pisać)</div>
+                        <div><em>He has written a letter.</em></div>
+                        <div><strong>eat – ate – eaten</strong> (jeść)</div>
+                        <div><em>We have eaten dinner.</em></div>
+                        <div><strong>take – took – taken</strong> (brać)</div>
+                        <div><em>She has taken my pen.</em></div>
+                        <div><strong>do – did – done</strong> (robić)</div>
+                        <div><em>They have done their homework.</em></div>
+                        <div><strong>make – made – made</strong> (robić / czynić)</div>
+                        <div><em>He has made a mistake.</em></div>
+                        <div><strong>have – had – had</strong> (mieć)</div>
+                        <div><em>I have had this car for years.</em></div>
+                        <div><strong>be – was/were – been</strong> (być)</div>
+                        <div><em>She has been to Japan.</em></div>
+                        <div><strong>buy – bought – bought</strong> (kupić)</div>
+                        <div><em>I have bought some milk.</em></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-forms">
+                <h2>4. Have czy has?</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Mini-reguła</span>
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:6px;">
+                        <div style="background:var(--color-training-bg); padding:8px 12px; border-radius:6px; border:1px solid var(--color-training);">
+                            <strong>I / you / we / they</strong> → <span class="hl-operator">have</span>
+                            <div style="font-size:0.85rem; color:var(--color-text-muted);">I have seen it.</div>
+                        </div>
+                        <div style="background:var(--color-basic-bg); padding:8px 12px; border-radius:6px; border:1px solid var(--color-basic);">
+                            <strong>he / she / it</strong> → <span class="hl-operator">has</span>
+                            <div style="font-size:0.85rem; color:var(--color-text-muted);">She has seen it.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="example">
+                    <span class="tag">have</span>
+                    <span class="eng"><span class="hl-subject">I</span> <span class="hl-operator">have</span> <span class="hl-main-verb">seen</span> this film.</span>
+                    <span class="pl">Widziałem ten film.</span>
+                    <button class="audio-btn" data-text="I have seen this film." data-speed="0.7">▶</button>
+                </div>
+                <div class="example">
+                    <span class="tag">has</span>
+                    <span class="eng"><span class="hl-subject">She</span> <span class="hl-operator">has</span> <span class="hl-main-verb">visited</span> Paris.</span>
+                    <span class="pl">Ona odwiedziła Paryż.</span>
+                    <button class="audio-btn" data-text="She has visited Paris." data-speed="0.7">▶</button>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-three-forms">
+                <h2>5. Trzy formy – twierdzenie, przeczenie, pytanie</h2>
+                <div class="card card-gray">
+                    <span class="card-label">Twierdzenie</span>
+                    <p><strong>Podmiot + have/has + III forma</strong></p>
+                    <div class="example" style="background:white; margin-top:4px;">
+                        <span class="eng">I <span class="hl-operator">have</span> <span class="hl-main-verb">seen</span> this film.</span>
+                        <span class="pl">Widziałem ten film.</span>
+                        <button class="audio-btn" data-text="I have seen this film." data-speed="0.7">▶</button>
+                    </div>
+                    <div class="example" style="background:white; margin-top:4px;">
+                        <span class="eng">She <span class="hl-operator">has</span> <span class="hl-main-verb">visited</span> Paris.</span>
+                        <span class="pl">Ona odwiedziła Paryż.</span>
+                        <button class="audio-btn" data-text="She has visited Paris." data-speed="0.7">▶</button>
+                    </div>
+                </div>
+
+                <div class="card card-error">
+                    <span class="card-label">Przeczenie</span>
+                    <p><strong>Podmiot + haven't / hasn't + III forma</strong></p>
+                    <div class="example" style="background:white; margin-top:4px;">
+                        <span class="eng">I <span class="hl-operator">haven't</span> <span class="hl-main-verb">seen</span> this film.</span>
+                        <span class="pl">Nie widziałem tego filmu.</span>
+                        <button class="audio-btn" data-text="I haven't seen this film." data-speed="0.7">▶</button>
+                    </div>
+                    <div class="example" style="background:white; margin-top:4px;">
+                        <span class="eng">She <span class="hl-operator">hasn't</span> <span class="hl-main-verb">visited</span> Paris.</span>
+                        <span class="pl">Ona nie odwiedziła Paryża.</span>
+                        <button class="audio-btn" data-text="She hasn't visited Paris." data-speed="0.7">▶</button>
+                    </div>
+                    <div style="background:#fff5f5; padding:6px 12px; border-radius:6px; margin-top:6px; border:1px solid #fed7d7;">
+                        ⚠️ Po <strong>have/has</strong> zawsze potrzebujemy <strong>III formy</strong>: <span class="correct-text">✓ She hasn't <strong>seen</strong>.</span> <span class="error-text">✗ She hasn't saw.</span>
+                    </div>
+                </div>
+
+                <div class="card card-gray">
+                    <span class="card-label">Pytanie</span>
+                    <p><strong>Have/Has + osoba + III forma?</strong></p>
+                    <div class="example" style="background:white; margin-top:4px;">
+                        <span class="eng"><span class="hl-operator">Have</span> you <span class="hl-main-verb">seen</span> this film?</span>
+                        <span class="pl">Czy widziałeś ten film?</span>
+                        <button class="audio-btn" data-text="Have you seen this film?" data-speed="0.7">▶</button>
+                    </div>
+                    <div class="example" style="background:white; margin-top:4px;">
+                        <span class="eng"><span class="hl-operator">Has</span> she <span class="hl-main-verb">visited</span> Paris?</span>
+                        <span class="pl">Czy ona odwiedziła Paryż?</span>
+                        <button class="audio-btn" data-text="Has she visited Paris?" data-speed="0.7">▶</button>
+                    </div>
+                    <div style="background:#ebf8ff; padding:6px 12px; border-radius:6px; margin-top:6px; border:1px solid #bee3f8;">
+                        <strong>Schemat:</strong> HAVE / HAS → OSOBA → III FORMA
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 3 – ZASTOSOWANIE
+        ============================================================ -->
+        <section class="section" data-level="basic" id="part3">
+            <div class="part-heading"><span class="part-num">Część 3</span> · Zastosowanie</div>
+
+            <div class="section" data-level="basic" id="sec-experiences">
+                <h2>6. Doświadczenia – ever / never</h2>
+                <p>Present Perfect, gdy pytamy, czy coś wydarzyło się <strong>kiedykolwiek w życiu</strong>, bez konkretnego momentu.</p>
+
+                <div class="card card-gray">
+                    <span class="card-label">ever = kiedykolwiek (w pytaniach)</span>
+                    <div class="example" style="background:white; margin-top:4px;">
+                        <span class="eng"><span class="hl-operator">Have</span> you <span class="hl-main-verb">ever</span> been to London?</span>
+                        <span class="pl">Czy kiedykolwiek byłeś w Londynie?</span>
+                        <button class="audio-btn" data-text="Have you ever been to London?" data-speed="0.7">▶</button>
+                    </div>
+                    <div class="example" style="background:white; margin-top:4px;">
+                        <span class="eng">Have you <span class="hl-main-verb">ever</span> eaten sushi?</span>
+                        <span class="pl">Czy kiedykolwiek jadłeś sushi?</span>
+                        <button class="audio-btn" data-text="Have you ever eaten sushi?" data-speed="0.7">▶</button>
+                    </div>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">never = nigdy (w twierdzeniach)</span>
+                    <div class="example" style="background:white; margin-top:4px;">
+                        <span class="eng">I have <span class="hl-main-verb">never</span> eaten sushi.</span>
+                        <span class="pl">Nigdy nie jadłem sushi.</span>
+                        <button class="audio-btn" data-text="I have never eaten sushi." data-speed="0.7">▶</button>
+                    </div>
+                    <div class="example" style="background:white; margin-top:4px;">
+                        <span class="eng">She has <span class="hl-main-verb">never</span> seen a shark.</span>
+                        <span class="pl">Ona nigdy nie widziała rekina.</span>
+                        <button class="audio-btn" data-text="She has never seen a shark." data-speed="0.7">▶</button>
+                    </div>
+                    <div style="background:#fff5f5; padding:6px 12px; border-radius:6px; margin-top:6px; border:1px solid #fed7d7;">
+                        ⚠️ <em>never</em> samo nadaje zdaniu znaczenie przeczące — nie używaj podwójnego przeczenia: <span class="error-text">✗ I haven't never been there.</span> → <span class="correct-text">✓ I have never been there.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-recent">
+                <h2>7. Wydarzenia niedawne – just / already / yet</h2>
+
+                <div class="card card-gray">
+                    <span class="card-label">just = właśnie / przed chwilą</span>
+                    <div class="example" style="background:white; margin-top:4px;">
+                        <span class="eng">She has <span class="hl-main-verb">just</span> finished her homework.</span>
+                        <span class="pl">Ona właśnie skończyła zadanie.</span>
+                        <button class="audio-btn" data-text="She has just finished her homework." data-speed="0.7">▶</button>
+                    </div>
+                    <div class="example" style="background:white; margin-top:4px;">
+                        <span class="eng">I have <span class="hl-main-verb">just</span> arrived.</span>
+                        <span class="pl">Właśnie dotarłem.</span>
+                        <button class="audio-btn" data-text="I have just arrived." data-speed="0.7">▶</button>
+                    </div>
+                </div>
+
+                <div class="card card-correct">
+                    <span class="card-label">already = już (w twierdzeniach)</span>
+                    <div class="example" style="background:white; margin-top:4px;">
+                        <span class="eng">I have <span class="hl-main-verb">already</span> done it.</span>
+                        <span class="pl">Już to zrobiłem.</span>
+                        <button class="audio-btn" data-text="I have already done it." data-speed="0.7">▶</button>
+                    </div>
+                    <div class="example" style="background:white; margin-top:4px;">
+                        <span class="eng">She has <span class="hl-main-verb">already</span> eaten.</span>
+                        <span class="pl">Ona już jadła.</span>
+                        <button class="audio-btn" data-text="She has already eaten." data-speed="0.7">▶</button>
+                    </div>
+                    <div style="background:#fffbeb; padding:6px 12px; border-radius:6px; margin-top:6px; border:1px solid #f6c23e;">
+                        <strong>Wzór:</strong> have/has + <strong>already</strong> + III forma
+                    </div>
+                </div>
+
+                <div class="card card-error">
+                    <span class="card-label">yet = już / jeszcze (w pytaniach i przeczeniach, zwykle na końcu)</span>
+                    <div class="example" style="background:white; margin-top:4px;">
+                        <span class="eng">Have you finished <span class="hl-main-verb">yet</span>?</span>
+                        <span class="pl">Skończyłeś już?</span>
+                        <button class="audio-btn" data-text="Have you finished yet?" data-speed="0.7">▶</button>
+                    </div>
+                    <div class="example" style="background:white; margin-top:4px;">
+                        <span class="eng">I haven't finished <span class="hl-main-verb">yet</span>.</span>
+                        <span class="pl">Jeszcze nie skończyłem.</span>
+                        <button class="audio-btn" data-text="I haven't finished yet." data-speed="0.7">▶</button>
+                    </div>
+                </div>
+
+                <div class="card card-remember" style="margin-top:12px;">
+                    <span class="card-label">Mapa – podsumowanie</span>
+                    <div class="table-wrap" style="margin-top:6px;">
+                        <table>
+                            <thead><tr><th>Słówko</th><th>Znaczenie</th><th>Typowy kontekst</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>ever</strong></td><td>kiedykolwiek</td><td>pytanie</td></tr>
+                                <tr><td><strong>never</strong></td><td>nigdy</td><td>twierdzenie o znaczeniu przeczącym</td></tr>
+                                <tr><td><strong>just</strong></td><td>właśnie</td><td>niedawne wydarzenie</td></tr>
+                                <tr><td><strong>already</strong></td><td>już</td><td>najczęściej twierdzenie</td></tr>
+                                <tr><td><strong>yet</strong></td><td>już / jeszcze</td><td>pytanie i przeczenie, na końcu</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="text-sm text-muted" style="margin-top:6px;">Na egzaminie najbezpieczniej stosować szyk: <strong>already przed III formą, yet na końcu zdania</strong>.</p>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-sincefor">
+                <h2>8. Sytuacje trwające – since / for</h2>
+                <div class="card card-remember">
+                    <span class="card-label">since = od konkretnego momentu (punkt)</span>
+                    <ul>
+                        <li><em>since Monday</em></li>
+                        <li><em>since 2020</em></li>
+                        <li><em>since last summer</em></li>
+                        <li><em>since I was a child</em></li>
+                    </ul>
+                </div>
+                <div class="card card-remember">
+                    <span class="card-label">for = przez określony okres (odcinek)</span>
+                    <ul>
+                        <li><em>for two hours</em></li>
+                        <li><em>for five years</em></li>
+                        <li><em>for a week</em></li>
+                        <li><em>for a long time</em></li>
+                    </ul>
+                </div>
+
+                <div class="card card-warning" style="margin-top:8px;">
+                    <span class="card-label">Najkrótsza reguła</span>
+                    <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:6px;">
+                        <div style="background:var(--color-training-bg); padding:8px 12px; border-radius:6px; border:1px solid var(--color-training);">
+                            <strong>SINCE = punkt</strong>
+                            <div style="font-size:0.85rem; color:var(--color-text-muted);">od kiedy?</div>
+                        </div>
+                        <div style="background:var(--color-basic-bg); padding:8px 12px; border-radius:6px; border:1px solid var(--color-basic);">
+                            <strong>FOR = odcinek</strong>
+                            <div style="font-size:0.85rem; color:var(--color-text-muted);">jak długo?</div>
+                        </div>
+                    </div>
+                    <div class="example" style="background:white; margin-top:6px;">
+                        <span class="eng">I have lived here <span class="hl-operator">for</span> five years.</span>
+                        <span class="pl">Mieszkam tu od pięciu lat. (nadal tu mieszkam)</span>
+                        <button class="audio-btn" data-text="I have lived here for five years." data-speed="0.7">▶</button>
+                    </div>
+                    <div class="example" style="background:white; margin-top:4px;">
+                        <span class="eng">She has known him <span class="hl-operator">since</span> 2020.</span>
+                        <span class="pl">Ona zna go od 2020. (nadal go zna)</span>
+                        <button class="audio-btn" data-text="She has known him since 2020." data-speed="0.7">▶</button>
+                    </div>
+                </div>
+
+                <div class="card card-hint" style="margin-top:8px;">
+                    <span class="card-label">Pytanie pomocnicze</span>
+                    <p>Czy odpowiadasz „od kiedy?" → <strong>since</strong>; czy „jak długo?" → <strong>for</strong>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 4 – PRESENT PERFECT vs PAST SIMPLE
+        ============================================================ -->
+        <section class="section" data-level="training" id="part4">
+            <div class="part-heading"><span class="part-num">Część 4</span> · Present Perfect vs Past Simple</div>
+
+            <div class="section" data-level="training" id="sec-vs">
+                <h2>9. Porównanie</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Present Perfect</th><th>Past Simple</th></tr></thead>
+                        <tbody>
+                            <tr><td>doświadczenie</td><td>zakończone wydarzenie</td></tr>
+                            <tr><td>skutek ważny teraz</td><td>fakt z przeszłości</td></tr>
+                            <tr><td>czas nieokreślony</td><td>określony moment</td></tr>
+                            <tr><td><em>ever / never</em></td><td><em>yesterday</em></td></tr>
+                            <tr><td><em>just / already / yet</em></td><td><em>last week</em></td></tr>
+                            <tr><td><em>since / for</em></td><td><em>in 2020</em></td></tr>
+                            <tr><td><em>so far</em></td><td><em>two days ago</em></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Najważniejszy test decyzyjny</span>
+                    <div style="background:#f8fafc; padding:10px 14px; border-radius:6px; border:1px solid var(--color-border); margin-top:6px;">
+                        <p><strong>KROK 1:</strong> Czy zdanie podaje konkretny, zakończony moment (<em>yesterday, last week, in 2020, two days ago, last summer</em>)?</p>
+                        <p style="font-weight:700; color:var(--color-exam);">TAK → <strong>Past Simple</strong></p>
+                        <p style="font-weight:700; color:var(--color-training);">NIE → przejdź do kroku 2</p>
+                        <p><strong>KROK 2:</strong> Czy mówimy o doświadczeniu, czymś niedawnym, skutku ważnym teraz lub sytuacji trwającej do teraz?</p>
+                        <p style="font-weight:700; color:var(--color-training);">TAK → <strong>Present Perfect</strong></p>
+                    </div>
+                </div>
+
+                <div class="card card-warning" style="margin-top:10px;">
+                    <span class="card-label">Kluczowe porównania</span>
+                    <div class="example" style="background:white; margin-top:4px;">
+                        <span class="tag">doświadczenie</span>
+                        <span class="eng">I have visited Paris.</span>
+                        <span class="pl">Byłem w Paryżu. (doświadczenie)</span>
+                    </div>
+                    <div class="example" style="background:white; margin-top:4px;">
+                        <span class="tag">konkretny moment</span>
+                        <span class="eng">I visited Paris in 2022.</span>
+                        <span class="pl">Byłem w Paryżu w 2022. (konkretny moment)</span>
+                    </div>
+                    <div class="example" style="background:white; margin-top:4px;">
+                        <span class="tag">skutek teraz</span>
+                        <span class="eng">I have lost my keys.</span>
+                        <span class="pl">Zgubiłem klucze. (i teraz ich nie mam)</span>
+                    </div>
+                    <div class="example" style="background:white; margin-top:4px;">
+                        <span class="tag">konkretny moment</span>
+                        <span class="eng">I lost my keys yesterday.</span>
+                        <span class="pl">Zgubiłem klucze wczoraj. (konkretny moment)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="trap" id="sec-trap">
+                <h2>10. Czego nie łączymy z Present Perfect</h2>
+                <div class="card card-trap">
+                    <span class="card-label">Z Present Perfect nie łączymy zakończonych określeń czasu!</span>
+                    <ul>
+                        <li><em>yesterday</em></li>
+                        <li><em>last week</em></li>
+                        <li><em>last year</em></li>
+                        <li><em>two days ago</em></li>
+                        <li><em>in 2020</em></li>
+                    </ul>
+                    <div class="example" style="background:white; margin-top:6px;">
+                        <span class="error-text">✗ I have seen him yesterday.</span>
+                        <span class="correct-text">✓ I saw him yesterday.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="exam" id="sec-been-gone">
+                <h2>11. Been vs Gone – ważna pułapka egzaminacyjna</h2>
+                <div class="card card-trap">
+                    <span class="card-label">been to = był i wrócił</span>
+                    <div class="example" style="background:white; margin-top:4px;">
+                        <span class="eng">I have <span class="hl-main-verb">been</span> to Paris.</span>
+                        <span class="pl">Byłem w Paryżu i wróciłem.</span>
+                        <button class="audio-btn" data-text="I have been to Paris." data-speed="0.7">▶</button>
+                    </div>
+                </div>
+                <div class="card card-trap">
+                    <span class="card-label">gone to = poszedł/pojechał i jeszcze nie wrócił</span>
+                    <div class="example" style="background:white; margin-top:4px;">
+                        <span class="eng">She has <span class="hl-main-verb">gone</span> to the shops.</span>
+                        <span class="pl">Poszła do sklepu i prawdopodobnie jeszcze jej nie ma.</span>
+                        <button class="audio-btn" data-text="She has gone to the shops." data-speed="0.7">▶</button>
+                    </div>
+                </div>
+                <div class="card card-remember" style="margin-top:8px;">
+                    <span class="card-label">Zapamiętaj!</span>
+                    <p><strong>been</strong> = był i wrócił (doświadczenie)</p>
+                    <p><strong>gone</strong> = pojechał i został (nie wrócił)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 5 – SŁOWNICTWO
+        ============================================================ -->
+        <section class="section" data-level="basic" id="part5">
+            <div class="part-heading"><span class="part-num">Część 5</span> · Słownictwo</div>
+
+            <div class="section" data-level="basic" id="sec-vocab">
+                <h2>12. Słowniczek – doświadczenia, osiągnięcia, podróże</h2>
+
+                <h3>Doświadczenia i osiągnięcia</h3>
+                <div class="vocab-grid">
+                    <div class="vocab-item"><span class="en">experience</span><span class="pl">doświadczenie</span><span class="ex">I have had many interesting experiences.</span></div>
+                    <div class="vocab-item"><span class="en">achievement</span><span class="pl">osiągnięcie</span><span class="ex">Her greatest achievement is winning.</span></div>
+                    <div class="vocab-item"><span class="en">visit</span><span class="pl">odwiedzić</span><span class="ex">We have visited five countries so far.</span></div>
+                    <div class="vocab-item"><span class="en">try</span><span class="pl">spróbować</span><span class="ex">Have you ever tried karaoke?</span></div>
+                    <div class="vocab-item"><span class="en">win / lose</span><span class="pl">wygrać / przegrać</span><span class="ex">She has won three medals.</span></div>
+                    <div class="vocab-item"><span class="en">succeed / fail</span><span class="pl">odnieść sukces / ponieść porażkę</span><span class="ex">I have succeeded in passing the exam.</span></div>
+                    <div class="vocab-item"><span class="en">learn</span><span class="pl">nauczyć się</span><span class="ex">She has learned to play the piano.</span></div>
+                    <div class="vocab-item"><span class="en">meet</span><span class="pl">poznać / spotkać</span><span class="ex">I have met many famous people.</span></div>
+                    <div class="vocab-item"><span class="en">change</span><span class="pl">zmienić się</span><span class="ex">You have changed a lot since I last saw you.</span></div>
+                    <div class="vocab-item"><span class="en">improve</span><span class="pl">poprawić się</span><span class="ex">My English has improved this year.</span></div>
+                </div>
+
+                <h3>Podróże i wydarzenia</h3>
+                <div class="vocab-grid">
+                    <div class="vocab-item"><span class="en">travel</span><span class="pl">podróżować</span><span class="ex">She has travelled around Europe.</span></div>
+                    <div class="vocab-item"><span class="en">trip / journey</span><span class="pl">wycieczka / podróż</span><span class="ex">We have had an amazing trip.</span></div>
+                    <div class="vocab-item"><span class="en">abroad</span><span class="pl">za granicą</span><span class="ex">He has never been abroad.</span></div>
+                    <div class="vocab-item"><span class="en">event</span><span class="pl">wydarzenie</span><span class="ex">This has been the most important event.</span></div>
+                    <div class="vocab-item"><span class="en">concert / festival</span><span class="pl">koncert / festiwal</span><span class="ex">We have been to many concerts.</span></div>
+                    <div class="vocab-item"><span class="en">flight</span><span class="pl">lot (samolotem)</span><span class="ex">I have taken a flight to New York.</span></div>
+                    <div class="vocab-item"><span class="en">sightseeing</span><span class="pl">zwiedzanie</span><span class="ex">We have done a lot of sightseeing.</span></div>
+                    <div class="vocab-item"><span class="en">adventure</span><span class="pl">przygoda</span><span class="ex">He has had many adventures.</span></div>
+                    <div class="vocab-item"><span class="en">vacation / holiday</span><span class="pl">wakacje / urlop</span><span class="ex">Where have you spent your holiday?</span></div>
+                    <div class="vocab-item"><span class="en">recently / lately</span><span class="pl">ostatnio</span><span class="ex">I have recently started a new hobby.</span></div>
+                    <div class="vocab-item"><span class="en">so far / up to now</span><span class="pl">do tej pory</span><span class="ex">So far, we have seen three museums.</span></div>
+                    <div class="vocab-item"><span class="en">in my life</span><span class="pl">w moim życiu</span><span class="ex">I have never lied to my parents.</span></div>
+                    <div class="vocab-item"><span class="en">take part in</span><span class="pl">brać udział w</span><span class="ex">I have taken part in many school events.</span></div>
+                    <div class="vocab-item"><span class="en">take up</span><span class="pl">zacząć hobby</span><span class="ex">She has taken up painting recently.</span></div>
+                    <div class="vocab-item"><span class="en">carry on</span><span class="pl">kontynuować</span><span class="ex">They have carried on despite problems.</span></div>
+                    <div class="vocab-item"><span class="en">give up</span><span class="pl">podać się</span><span class="ex">He has never given up on his dream.</span></div>
+                    <div class="vocab-item"><span class="en">set a goal</span><span class="pl">wyznaczyć cel</span><span class="ex">We have set a new goal this month.</span></div>
+                    <div class="vocab-item"><span class="en">reach a goal</span><span class="pl">osiągnąć cel</span><span class="ex">She has reached her goal at last.</span></div>
+                    <div class="vocab-item"><span class="en">improvement</span><span class="pl">poprawa</span><span class="ex">There has been a big improvement.</span></div>
+                    <div class="vocab-item"><span class="en">result</span><span class="pl">wynik</span><span class="ex">Our results have improved this term.</span></div>
+                    <div class="vocab-item"><span class="en">progress</span><span class="pl">postęp</span><span class="ex">I have made good progress lately.</span></div>
+                    <div class="vocab-item"><span class="en">challenge</span><span class="pl">wyzwanie</span><span class="ex">This has been a difficult challenge.</span></div>
+                    <div class="vocab-item"><span class="en">be proud of</span><span class="pl">być dumnym z</span><span class="ex">I have always been proud of my team.</span></div>
+                    <div class="vocab-item"><span class="en">be interested in</span><span class="pl">interesować się</span><span class="ex">She has been interested in science.</span></div>
+                    <div class="vocab-item"><span class="en">be good at</span><span class="pl">być dobrym w</span><span class="ex">He has been good at maths since primary school.</span></div>
+                    <div class="vocab-item"><span class="en">for ages</span><span class="pl">bardzo długo</span><span class="ex">I have known her for ages.</span></div>
+                    <div class="vocab-item"><span class="en">in recent years</span><span class="pl">w ostatnich latach</span><span class="ex">In recent years, technology has changed.</span></div>
+                    <div class="vocab-item"><span class="en">once in my life</span><span class="pl">raz w życiu</span><span class="ex">I have done it only once in my life.</span></div>
+                    <div class="vocab-item"><span class="en">make a decision</span><span class="pl">podjąć decyzję</span><span class="ex">We have made an important decision.</span></div>
+                    <div class="vocab-item"><span class="en">keep trying</span><span class="pl">próbować dalej</span><span class="ex">I have kept trying and finally succeeded.</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 6 – SYNONIMY
+        ============================================================ -->
+        <section class="section" data-level="training" id="part6">
+            <div class="part-heading"><span class="part-num">Część 6</span> · Synonimy i przeciwieństwa</div>
+
+            <div class="section" data-level="training">
+                <div style="display:flex; flex-wrap:wrap; gap:10px 16px; margin:12px 0; padding:12px 16px; background:#faf5ff; border-radius:8px; border:1px solid #e9d8fd;">
+                    <span style="font-size:0.93em; background:white; padding:4px 12px; border-radius:20px; border:1px solid #d6bcfa; box-shadow:0 1px 2px rgba(0,0,0,0.04);"><span style="font-weight:700; color:#6b46c1; margin-right:2px;">≈</span> <strong>have</strong> ≈ <strong>has</strong> (różne osoby)</span>
+                    <span style="font-size:0.93em; background:white; padding:4px 12px; border-radius:20px; border:1px solid #d6bcfa; box-shadow:0 1px 2px rgba(0,0,0,0.04);"><span style="font-weight:700; color:#6b46c1; margin-right:2px;">≈</span> <strong>ever</strong> ≈ <strong>never</strong> (przeciwstawne)</span>
+                    <span style="font-size:0.93em; background:white; padding:4px 12px; border-radius:20px; border:1px solid #d6bcfa; box-shadow:0 1px 2px rgba(0,0,0,0.04);"><span style="font-weight:700; color:#6b46c1; margin-right:2px;">≈</span> <strong>just</strong> ≈ <strong>already</strong> (niedawne)</span>
+                    <span style="font-size:0.93em; background:white; padding:4px 12px; border-radius:20px; border:1px solid #d6bcfa; box-shadow:0 1px 2px rgba(0,0,0,0.04);"><span style="font-weight:700; color:#6b46c1; margin-right:2px;">≈</span> <strong>since</strong> ≈ <strong>for</strong> (czas trwania)</span>
+                    <span style="font-size:0.93em; background:white; padding:4px 12px; border-radius:20px; border:1px solid #d6bcfa; box-shadow:0 1px 2px rgba(0,0,0,0.04);"><span style="font-weight:700; color:#e53e3e; margin-right:2px;">≠</span> <strong>Present Perfect</strong> <span style="color:#e53e3e; font-weight:700;">≠</span> <strong>Past Simple</strong></span>
+                    <span style="font-size:0.93em; background:white; padding:4px 12px; border-radius:20px; border:1px solid #d6bcfa; box-shadow:0 1px 2px rgba(0,0,0,0.04);"><span style="font-weight:700; color:#e53e3e; margin-right:2px;">≠</span> <strong>been</strong> <span style="color:#e53e3e; font-weight:700;">≠</span> <strong>gone</strong></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 7 – TIP TYGODNIA
+        ============================================================ -->
+        <section class="section" data-level="basic" id="part7">
+            <div class="part-heading"><span class="part-num">Tip tygodnia</span> · Sprawdź, czy jest konkretna data</div>
+
+            <div class="card card-warning" style="border:2px solid #d69e2e; background:#fffbeb;">
+                <span class="card-label">Najpierw sprawdź, czy podano zakończony moment</span>
+                <p>Jeśli w zdaniu jest <strong>zakończony moment</strong> (<em>yesterday, in 2024, last summer, two days ago</em>) → wybierz <strong>Past Simple</strong>.</p>
+                <p>Jeśli chodzi o <strong>doświadczenie życiowe</strong> albo <strong>skutek ważny teraz</strong> → <strong>Present Perfect</strong>.</p>
+                <div style="background:rgba(255,255,255,0.7); padding:12px 16px; border-radius:6px; margin-top:10px; border:1px dashed #b7791f;">
+                    <p style="font-weight:700; color:#744210;">Przykłady do zapamiętania:</p>
+                    <ul style="padding-left:20px;">
+                        <li><em>I went to Paris in 2022.</em> – Past Simple (konkretny rok)</li>
+                        <li><em>I have been to Paris.</em> – Present Perfect (doświadczenie)</li>
+                        <li><em>She bought a new phone yesterday.</em> – Past Simple (konkretny dzień)</li>
+                        <li><em>She has just bought a new phone.</em> – Present Perfect (niedawno, skutek – ma nowy telefon)</li>
+                    </ul>
+                </div>
+                <p style="margin-top:14px;"><strong>Twoje zadanie:</strong> Napisz po 3 zdania o swoich doświadczeniach życiowych (Present Perfect) i 3 zdania o zakończonych wydarzeniach z konkretnymi datami (Past Simple).</p>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 8 – ĆWICZENIA
+        ============================================================ -->
+        <section class="section" data-level="training" id="part8">
+            <div class="part-heading"><span class="part-num">Część 8</span> · Ćwiczenia egzaminacyjne</div>
+
+            <div class="hide-all-wrap">
+                <span style="font-size:0.85rem; font-weight:500; color:var(--color-text-muted);">Ukryj wszystkie odpowiedzi:</span>
+                <button class="hide-all-btn" onclick="hideAllAnswers()">Ukryj wszystkie</button>
+            </div>
+
+            <!-- Ćwiczenie 1 -->
+            <div class="section" data-level="basic" id="sec-ex1">
+                <div class="exercise">
+                    <div class="ex-title">Zadanie 1. Uzupełnij have/has + 3. formą <span class="level-badge level-basic">PODSTAWA</span></div>
+                    <ol>
+                        <li>I ______ (never / be) to Spain.</li>
+                        <li>She ______ (just / finish) her project.</li>
+                        <li>______ you ______ (ever / try) sushi?</li>
+                        <li>They ______ (live) here for ten years.</li>
+                        <li>He ______ (not / see) this film yet.</li>
+                    </ol>
+                    <button class="hint-toggle" onclick="toggleHint('hint-ex1')">Wskazówka</button>
+                    <div id="hint-ex1" class="hint-content">
+                        <span class="hint-level"><span class="hint-num">1</span> ever/never → doświadczenie → Present Perfect.</span>
+                        <span class="hint-level"><span class="hint-num">2</span> just → niedawne wydarzenie → Present Perfect.</span>
+                        <span class="hint-level"><span class="hint-num">3</span> yet → w przeczeniu → Present Perfect.</span>
+                    </div>
+                    <button class="answer-toggle" onclick="toggleAnswer('ans-ex1')">Pokaż odpowiedzi</button>
+                    <div id="ans-ex1" class="answer-content">
+                        <ol>
+                            <li><strong>have never been</strong></li>
+                            <li><strong>has just finished</strong></li>
+                            <li><strong>Have you ever tried</strong></li>
+                            <li><strong>have lived</strong></li>
+                            <li><strong>hasn't seen</strong></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ćwiczenie 2 -->
+            <div class="section" data-level="basic" id="sec-ex2">
+                <div class="exercise">
+                    <div class="ex-title">Zadanie 2. Present Perfect czy Past Simple? <span class="level-badge level-basic">PODSTAWA</span></div>
+                    <ol>
+                        <li>I ______ (visit) London in 2022.</li>
+                        <li>She ______ (never / eat) octopus.</li>
+                        <li>We ______ (go) to the cinema yesterday.</li>
+                        <li>He ______ (just / arrive).</li>
+                    </ol>
+                    <button class="hint-toggle" onclick="toggleHint('hint-ex2')">Wskazówka</button>
+                    <div id="hint-ex2" class="hint-content">
+                        <span class="hint-level"><span class="hint-num">1</span> in 2022 → konkretny moment → Past Simple.</span>
+                        <span class="hint-level"><span class="hint-num">2</span> never → doświadczenie → Present Perfect.</span>
+                        <span class="hint-level"><span class="hint-num">3</span> yesterday → konkretny moment → Past Simple.</span>
+                    </div>
+                    <button class="answer-toggle" onclick="toggleAnswer('ans-ex2')">Pokaż odpowiedzi</button>
+                    <div id="ans-ex2" class="answer-content">
+                        <ol>
+                            <li><strong>visited</strong></li>
+                            <li><strong>has never eaten</strong></li>
+                            <li><strong>went</strong></li>
+                            <li><strong>has just arrived</strong></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ćwiczenie 3 – since/for -->
+            <div class="section" data-level="training" id="sec-ex3">
+                <div class="exercise">
+                    <div class="ex-title">Zadanie 3. Since czy for? <span class="level-badge level-training">TRENING</span></div>
+                    <ol>
+                        <li>I have known her ______ 2018.</li>
+                        <li>They have lived here ______ five years.</li>
+                        <li>She has been ill ______ Monday.</li>
+                        <li>We have waited ______ two hours.</li>
+                    </ol>
+                    <button class="hint-toggle" onclick="toggleHint('hint-ex3')">Wskazówka</button>
+                    <div id="hint-ex3" class="hint-content">
+                        <span class="hint-level"><span class="hint-num">1</span> since = punkt (moment), for = okres.</span>
+                        <span class="hint-level"><span class="hint-num">2</span> 2018, Monday → punkty → since.</span>
+                        <span class="hint-level"><span class="hint-num">3</span> five years, two hours → okresy → for.</span>
+                    </div>
+                    <button class="answer-toggle" onclick="toggleAnswer('ans-ex3')">Pokaż odpowiedzi</button>
+                    <div id="ans-ex3" class="answer-content">
+                        <ol>
+                            <li><strong>since</strong></li>
+                            <li><strong>for</strong></li>
+                            <li><strong>since</strong></li>
+                            <li><strong>for</strong></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ćwiczenie 4 – uzupełnij określenia -->
+            <div class="section" data-level="exam" id="sec-ex4">
+                <div class="exercise">
+                    <div class="ex-title">Zadanie 4. Uzupełnij – wstaw właściwe określenie <span class="level-badge level-exam">EGZAMIN</span></div>
+                    <p>(just, already, yet, ever, never)</p>
+                    <ol>
+                        <li>I have ______ eaten sushi. It was delicious.</li>
+                        <li>Have you ______ been to a concert?</li>
+                        <li>She hasn't finished her homework ______.</li>
+                        <li>He has ______ arrived. He is here now.</li>
+                        <li>I have ______ seen such a beautiful view.</li>
+                    </ol>
+                    <button class="hint-toggle" onclick="toggleHint('hint-ex4')">Wskazówka</button>
+                    <div id="hint-ex4" class="hint-content">
+                        <span class="hint-level"><span class="hint-num">1</span> already → twierdzenie, już.</span>
+                        <span class="hint-level"><span class="hint-num">2</span> ever → pytanie, kiedykolwiek.</span>
+                        <span class="hint-level"><span class="hint-num">3</span> yet → przeczenie, na końcu.</span>
+                        <span class="hint-level"><span class="hint-num">4</span> just → właśnie, niedawno.</span>
+                        <span class="hint-level"><span class="hint-num">5</span> never → nigdy, twierdzenie o znaczeniu przeczącym.</span>
+                    </div>
+                    <button class="answer-toggle" onclick="toggleAnswer('ans-ex4')">Pokaż odpowiedzi</button>
+                    <div id="ans-ex4" class="answer-content">
+                        <ol>
+                            <li><strong>already</strong></li>
+                            <li><strong>ever</strong></li>
+                            <li><strong>yet</strong></li>
+                            <li><strong>just</strong></li>
+                            <li><strong>never</strong></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ćwiczenie 5 – popraw błędy -->
+            <div class="section" data-level="exam" id="sec-ex5">
+                <div class="exercise">
+                    <div class="ex-title">Zadanie 5. Popraw błędy <span class="level-badge level-exam">EGZAMIN</span></div>
+                    <ol>
+                        <li><span class="error-text">I have went to London.</span> → ___________________</li>
+                        <li><span class="error-text">She has seen him yesterday.</span> → ___________________</li>
+                        <li><span class="error-text">I have lived here since five years.</span> → ___________________</li>
+                        <li><span class="error-text">He has already finished yet.</span> → ___________________</li>
+                        <li><span class="error-text">They hasn't done their homework.</span> → ___________________</li>
+                    </ol>
+                    <button class="hint-toggle" onclick="toggleHint('hint-ex5')">Wskazówka</button>
+                    <div id="hint-ex5" class="hint-content">
+                        <span class="hint-level"><span class="hint-num">1</span> Sprawdź, czy to III forma (gone/been).</span>
+                        <span class="hint-level"><span class="hint-num">2</span> yesterday → Past Simple.</span>
+                        <span class="hint-level"><span class="hint-num">3</span> five years → okres → for.</span>
+                        <span class="hint-level"><span class="hint-num">4</span> already i yet nie występują razem w twierdzeniu.</span>
+                        <span class="hint-level"><span class="hint-num">5</span> they → have, nie has.</span>
+                    </div>
+                    <button class="answer-toggle" onclick="toggleAnswer('ans-ex5')">Pokaż odpowiedzi</button>
+                    <div id="ans-ex5" class="answer-content">
+                        <ol>
+                            <li><span class="correct-text">I have gone / been to London.</span> <span class="text-muted">(went to forma przeszła – w PP używamy III formy)</span></li>
+                            <li><span class="correct-text">She saw him yesterday.</span> <span class="text-muted">(yesterday → Past Simple)</span></li>
+                            <li><span class="correct-text">I have lived here for five years.</span> <span class="text-muted">(five years = okres → for)</span></li>
+                            <li><span class="correct-text">He has already finished.</span> <span class="text-muted">(yet w przeczeniach i pytaniach, already w twierdzeniach)</span></li>
+                            <li><span class="correct-text">They haven't done their homework.</span> <span class="text-muted">(they → have)</span></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ćwiczenie 6 – mini-wypowiedź -->
+            <div class="section" data-level="writing" id="sec-ex6">
+                <div class="exercise">
+                    <div class="ex-title">Zadanie 6. Mini-wypowiedź pisemna <span class="level-badge level-writing">PISANIE</span></div>
+                    <p>Napisz 3–4 zdania o swoich doświadczeniach życiowych, używając Present Perfect (<em>have/has been, have/has never...</em>).</p>
+                    <button class="answer-toggle" onclick="toggleAnswer('ans-ex6')">Pokaż przykładową odpowiedź</button>
+                    <div id="ans-ex6" class="answer-content">
+                        <p><em>I have never been to Spain, but I have visited Germany twice. I have already tried sushi and I loved it. I have also taken part in a school competition.</em></p>
+                        <button class="audio-btn" data-text="I have never been to Spain, but I have visited Germany twice. I have already tried sushi and I loved it. I have also taken part in a school competition." data-speed="0.7">▶</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ćwiczenie 7 – mini-powtórka -->
+            <div class="section" data-level="exam" id="sec-ex7">
+                <div class="exercise">
+                    <div class="ex-title">Mini-powtórka – Present Simple/Continuous vs Present Perfect <span class="level-badge level-exam">EGZAMIN</span></div>
+                    <ol>
+                        <li>I usually ______ (go) to school by bus.</li>
+                        <li>I ______ just ______ (finish) my homework.</li>
+                        <li>She ______ (is watching / has watched) TV right now.</li>
+                        <li>Popraw: <span class="error-text">I have seen him yesterday.</span></li>
+                        <li>They ______ (live) here since 2020.</li>
+                    </ol>
+                    <button class="answer-toggle" onclick="toggleAnswer('ans-ex7')">Pokaż odpowiedzi</button>
+                    <div id="ans-ex7" class="answer-content">
+                        <ol>
+                            <li><strong>go</strong> (rutyna → Present Simple)</li>
+                            <li><strong>have ... finished</strong> (just → Present Perfect)</li>
+                            <li><strong>is watching</strong> (right now → Present Continuous)</li>
+                            <li><span class="correct-text">I saw him yesterday.</span></li>
+                            <li><strong>have lived</strong> (since 2020 → Present Perfect)</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 9 – WAŻNE! 6 KLUCZOWYCH ZASAD
+        ============================================================ -->
+        <section class="section" data-level="exam" id="part9">
+            <div class="part-heading"><span class="part-num">Część 9</span> · Ważne! – 6 kluczowych zasad</div>
+
+            <div class="section" data-level="exam">
+                <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; margin:12px 0;">
+                    <div style="background:var(--color-training-bg); padding:14px 16px; border-radius:8px; border:1px solid var(--color-border);">
+                        <span style="display:inline-block; background:var(--color-training); color:white; font-weight:800; width:26px; height:26px; text-align:center; line-height:26px; border-radius:50%; font-size:0.8rem; margin-right:6px;">1</span>
+                        <strong>have/has + III forma</strong>
+                        <div style="margin-top:4px; font-size:0.9rem; color:var(--color-training);">She has written a letter.</div>
+                    </div>
+                    <div style="background:var(--color-trap-bg); padding:14px 16px; border-radius:8px; border:1px solid var(--color-border);">
+                        <span style="display:inline-block; background:var(--color-trap); color:white; font-weight:800; width:26px; height:26px; text-align:center; line-height:26px; border-radius:50%; font-size:0.8rem; margin-right:6px;">2</span>
+                        <strong>since = moment, for = okres</strong>
+                        <div style="margin-top:4px; font-size:0.9rem; color:var(--color-training);">since 2020 / for two years</div>
+                    </div>
+                    <div style="background:var(--color-basic-bg); padding:14px 16px; border-radius:8px; border:1px solid var(--color-border);">
+                        <span style="display:inline-block; background:var(--color-basic); color:white; font-weight:800; width:26px; height:26px; text-align:center; line-height:26px; border-radius:50%; font-size:0.8rem; margin-right:6px;">3</span>
+                        <strong>Nie łącz z yesterday, last week, ago, in 2020</strong>
+                        <div style="margin-top:4px; font-size:0.9rem; color:var(--color-training);">To Past Simple!</div>
+                    </div>
+                    <div style="background:var(--color-ambitious-bg); padding:14px 16px; border-radius:8px; border:1px solid var(--color-border);">
+                        <span style="display:inline-block; background:var(--color-ambitious); color:white; font-weight:800; width:26px; height:26px; text-align:center; line-height:26px; border-radius:50%; font-size:0.8rem; margin-right:6px;">4</span>
+                        <strong>just / already / yet / ever / never</strong>
+                        <div style="margin-top:4px; font-size:0.9rem; color:var(--color-training);">Typowe określenia Present Perfect</div>
+                    </div>
+                    <div style="background:var(--color-difficult-bg); padding:14px 16px; border-radius:8px; border:1px solid var(--color-border);">
+                        <span style="display:inline-block; background:var(--color-difficult); color:white; font-weight:800; width:26px; height:26px; text-align:center; line-height:26px; border-radius:50%; font-size:0.8rem; margin-right:6px;">5</span>
+                        <strong>been vs gone</strong>
+                        <div style="margin-top:4px; font-size:0.9rem; color:var(--color-training);">been = był i wrócił; gone = pojechał i nie wrócił</div>
+                    </div>
+                    <div style="background:var(--color-remember-bg); padding:14px 16px; border-radius:8px; border:1px solid var(--color-border);">
+                        <span style="display:inline-block; background:var(--color-remember); color:white; font-weight:800; width:26px; height:26px; text-align:center; line-height:26px; border-radius:50%; font-size:0.8rem; margin-right:6px;">6</span>
+                        <strong>Have you ever…?</strong>
+                        <div style="margin-top:4px; font-size:0.9rem; color:var(--color-training);">Czy kiedykolwiek…? – typowe dla doświadczeń</div>
+                    </div>
+                </div>
+
+                <div class="card card-error" style="margin-top:12px;">
+                    <span class="card-label">Zapamiętaj na egzamin!</span>
+                    <ul>
+                        <li><strong>Present Perfect</strong> = doświadczenia, niedawne wydarzenia, skutek teraz, sytuacje trwające (since/for).</li>
+                        <li><strong>Past Simple</strong> = zakończone wydarzenia z konkretnym momentem w przeszłości.</li>
+                        <li>Uważaj na <strong>trzecie formy</strong> czasowników nieregularnych.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 10 – NAJCZĘSTSZE BŁĘDY
+        ============================================================ -->
+        <section class="section" data-level="trap" id="part10">
+            <div class="part-heading"><span class="part-num">Część 10</span> · Najczęstsze błędy</div>
+
+            <div class="section" data-level="trap">
+                <div class="mistake-box">
+                    <strong>Błąd #1: Zła forma czasownika</strong>
+                    <div class="wrong">I have went to school.</div>
+                    <div class="correct">✓ I have gone to school. / I went to school yesterday.</div>
+                </div>
+                <div class="mistake-box">
+                    <strong>Błąd #2: Present Perfect + yesterday</strong>
+                    <div class="wrong">I have seen him yesterday.</div>
+                    <div class="correct">✓ I saw him yesterday.</div>
+                </div>
+                <div class="mistake-box">
+                    <strong>Błąd #3: since / for – pomyłka</strong>
+                    <div class="wrong">I have lived here since five years.</div>
+                    <div class="correct">✓ I have lived here for five years.</div>
+                </div>
+                <div class="mistake-box">
+                    <strong>Błąd #4: yet w twierdzeniu</strong>
+                    <div class="wrong">I have finished yet.</div>
+                    <div class="correct">✓ I have already finished. / I haven't finished yet.</div>
+                </div>
+                <div class="mistake-box">
+                    <strong>Błąd #5: has zamiast have (lub odwrotnie)</strong>
+                    <div class="wrong">They has done it.</div>
+                    <div class="correct">✓ They have done it.</div>
+                    <div class="wrong">She have gone.</div>
+                    <div class="correct">✓ She has gone.</div>
+                </div>
+                <div class="mistake-box">
+                    <strong>Błąd #6: been vs gone</strong>
+                    <div class="wrong">She has gone to London. (ale wróciła)</div>
+                    <div class="correct">✓ She has been to London. (była i wróciła)</div>
+                    <div class="wrong">He has been to the shops. (ale jeszcze nie wrócił)</div>
+                    <div class="correct">✓ He has gone to the shops. (poszedł i nie wrócił)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 11 – MISJA KOŃCOWA
+        ============================================================ -->
+        <section class="section" data-level="exam" id="part11">
+            <div class="part-heading"><span class="part-num">Część 11</span> · Misja końcowa</div>
+
+            <div class="section" data-level="exam" id="sec-mission">
+                <h2>13. Test końcowy – MISJA</h2>
+                <div class="card card-remember" style="margin-bottom:10px;">
+                    <span class="card-label">Misja końcowa</span>
+                    <p>Bez zaglądania do zasad – uzupełnij wszystkie zdania. Sprawdź swój wynik.</p>
+                </div>
+                <div class="exercise" id="missionExercise">
+                    <div class="ex-title">Uzupełnij poprawną formą czasownika <span class="level-badge level-exam">EGZAMIN</span></div>
+                    <div id="missionQuestions"></div>
+                    <button class="btn btn-primary" onclick="checkMission()" style="margin-top:8px;">Sprawdź misję</button>
+                    <button class="btn btn-outline" onclick="resetMission()" style="margin-top:8px; margin-left:4px;">Resetuj</button>
+                    <div id="missionResult" class="mission-result" style="display:none; margin-top:8px;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 12 – PODSUMOWANIE
+        ============================================================ -->
+        <section class="section" data-level="remember" id="part12">
+            <div class="part-heading"><span class="part-num">Podsumowanie</span> · 7 zasad + fiszka</div>
+
+            <div class="section" data-level="remember" id="sec-7rules">
+                <h2>14. 7 kluczowych zasad</h2>
+                <ol>
+                    <li><strong>Present Perfect</strong> = have/has + III forma.</li>
+                    <li><strong>I/you/we/they → have</strong>; <strong>he/she/it → has</strong>.</li>
+                    <li><strong>ever / never</strong> → doświadczenia.</li>
+                    <li><strong>just / already / yet</strong> → wydarzenia niedawne (already przed III formą, yet na końcu).</li>
+                    <li><strong>since = moment</strong>; <strong>for = okres</strong>.</li>
+                    <li><strong>Zakończony konkretny moment → Past Simple</strong>, nie Present Perfect.</li>
+                    <li><strong>been</strong> = był i wrócił; <strong>gone</strong> = poszedł/pojechał i nie wrócił.</li>
+                </ol>
+            </div>
+
+            <div class="section" data-level="remember" id="sec-fiszka">
+                <h2>15. Fiszka – ściąga egzaminacyjna</h2>
+                <div class="fiszka">
+                    <h3>Present Perfect</h3>
+                    <div class="fiszka-grid">
+                        <div class="fiszka-col">
+                            <h4>Budowa</h4>
+                            <ul>
+                                <li><strong>I / you / we / they</strong> → have + III forma</li>
+                                <li><strong>he / she / it</strong> → has + III forma</li>
+                                <li><strong>Przeczenie:</strong> haven't / hasn't + III forma</li>
+                                <li><strong>Pytanie:</strong> Have / Has + podmiot + III forma?</li>
+                            </ul>
+                            <h4 style="margin-top:10px;">Użycie i określenia</h4>
+                            <ul>
+                                <li><strong>Doświadczenia:</strong> ever, never, before</li>
+                                <li><strong>Niedawne:</strong> just, already, yet</li>
+                                <li><strong>Trwanie:</strong> since (moment), for (okres)</li>
+                                <li><strong>Inne:</strong> recently, lately, so far, up to now</li>
+                            </ul>
+                        </div>
+                        <div class="fiszka-col">
+                            <h4>Porównanie z Past Simple</h4>
+                            <ul>
+                                <li>Present Perfect → <em>I have seen this film.</em> (doświadczenie)</li>
+                                <li>Past Simple → <em>I saw this film last week.</em> (konkretny czas)</li>
+                                <li><strong>Zapamiętaj:</strong> zakończony moment → Past Simple</li>
+                            </ul>
+                            <h4 style="margin-top:10px;">Since / For</h4>
+                            <ul>
+                                <li><strong>since</strong> + moment: since Monday, since 2019</li>
+                                <li><strong>for</strong> + okres: for two hours, for a week</li>
+                            </ul>
+                            <h4 style="margin-top:10px;">been vs gone</h4>
+                            <ul>
+                                <li><strong>been</strong> – był i wrócił</li>
+                                <li><strong>gone</strong> – pojechał i nie wrócił</li>
+                            </ul>
+                            <div style="background:#fffbeb; padding:8px 12px; border-radius:6px; margin-top:10px; border-left:3px solid #d69e2e;">
+                                <strong>Pamiętaj!</strong><br>
+                                Jeśli podano konkretną datę (yesterday, in 2020) → Past Simple.<br>
+                                Jeśli chodzi o doświadczenie lub skutek teraz → Present Perfect.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LISTA TEMATÓW -->
+            <div class="section" data-level="basic" id="topics">
+                <h2>Lista tematów głównych</h2>
+                <p style="color:var(--color-text-muted); font-size:0.9rem;">Wybierz temat, aby przejść bezpośrednio do odpowiedniej części lekcji.</p>
+                <ol class="topic-list">
+                    <li><a href="#sec-cel">Cel lekcji</a></li>
+                    <li><a href="#sec-test-start">Szybki test</a></li>
+                    <li><a href="#sec-big-picture">Najważniejsza idea</a></li>
+                    <li><a href="#sec-build">Budowa – have/has + III forma</a></li>
+                    <li><a href="#sec-forms">Have czy has?</a></li>
+                    <li><a href="#sec-three-forms">Trzy formy – twierdzenie, przeczenie, pytanie</a></li>
+                    <li><a href="#sec-experiences">Doświadczenia – ever/never</a></li>
+                    <li><a href="#sec-recent">Niedawne – just/already/yet</a></li>
+                    <li><a href="#sec-sincefor">Since i For</a></li>
+                    <li><a href="#sec-vs">Present Perfect vs Past Simple</a></li>
+                    <li><a href="#sec-trap">Czego nie łączymy</a></li>
+                    <li><a href="#sec-been-gone">Been vs Gone</a></li>
+                    <li><a href="#sec-vocab">Słownictwo</a></li>
+                    <li><a href="#sec-ex1">Ćwiczenia A–G</a></li>
+                    <li><a href="#sec-mission">Misja końcowa</a></li>
+                    <li><a href="#sec-7rules">7 zasad</a></li>
+                    <li><a href="#sec-fiszka">Fiszka</a></li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- STOPKA -->
+        <footer class="footer">
+            <p><strong>Lekcja 5 – Present Perfect</strong> &bull; Wersja 1.0 &bull; 2026-08-24</p>
+            <p style="font-size:0.78rem; opacity:0.7;">Ucz się świadomie, nie na pamięć.</p>
+            <p style="font-size:0.7rem; opacity:0.5;">Zadania treningowe wzorowane na formule E8. Oficjalne arkusze i nagrania: CKE.</p>
+        </footer>
+
+    </div>
+    <!-- KONIEC CONTAINER -->
+
+    <script>
+        // ======================================================================
+        //  JAVASCRIPT – SYSTEM INTERAKTYWNY
+        // ======================================================================
+
+        // ---------- LOCAL STORAGE ----------
+        function saveProgress() {
+            const checks = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+            const state = [];
+            checks.forEach(cb => state.push(cb.checked));
+            localStorage.setItem('lekcja5_progress', JSON.stringify(state));
+        }
+
+        function loadProgress() {
+            const saved = localStorage.getItem('lekcja5_progress');
+            if (!saved) return;
+            const state = JSON.parse(saved);
+            const checks = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+            checks.forEach((cb, i) => {
+                if (i < state.length) cb.checked = state[i];
+            });
+            updateProgress();
+        }
+
+        function resetAllProgress() {
+            if (!confirm('Czy na pewno chcesz zresetować cały postęp?')) return;
+            document.querySelectorAll('.toc-checklist input[type="checkbox"]').forEach(cb => {
+                cb.checked = false;
+            });
+            localStorage.removeItem('lekcja5_progress');
+            updateProgress();
+        }
+
+        // ---------- AUDIO ----------
+        let currentAudio = null;
+        let currentAudioBtn = null;
+        let audioTimeout = null;
+
+        function speakText(text, speed, btn) {
+            if (!window.speechSynthesis) return;
+            if (currentAudioBtn === btn && btn && btn.classList.contains('playing')) {
+                window.speechSynthesis.cancel();
+                if (audioTimeout) clearTimeout(audioTimeout);
+                btn.textContent = '▶';
+                btn.classList.remove('playing');
+                currentAudioBtn = null;
+                currentAudio = null;
+                return;
+            }
+            if (currentAudio) {
+                window.speechSynthesis.cancel();
+                if (audioTimeout) clearTimeout(audioTimeout);
+                if (currentAudioBtn) {
+                    currentAudioBtn.textContent = '▶';
+                    currentAudioBtn.classList.remove('playing');
+                }
+                currentAudioBtn = null;
+                currentAudio = null;
+            }
+            if (!btn) return;
+            btn.textContent = '■';
+            btn.classList.add('playing');
+            currentAudioBtn = btn;
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'en-GB';
+            utterance.rate = 0.6;
+            utterance.pitch = 1.0;
+            const voices = window.speechSynthesis.getVoices();
+            const ukVoice = voices.find(v => v.lang.startsWith('en-GB'));
+            if (ukVoice) utterance.voice = ukVoice;
+            let isSlowFinished = false;
+            utterance.onend = function() {
+                if (isSlowFinished) {
+                    if (btn) { btn.textContent = '▶';
+                        btn.classList.remove('playing'); }
+                    currentAudioBtn = null;
+                    currentAudio = null;
+                    return;
+                }
+                isSlowFinished = true;
+                const fast = new SpeechSynthesisUtterance(text);
+                fast.lang = 'en-GB';
+                fast.rate = 0.95;
+                fast.pitch = 1.0;
+                if (ukVoice) fast.voice = ukVoice;
+                fast.onend = function() {
+                    if (btn) { btn.textContent = '▶';
+                        btn.classList.remove('playing'); }
+                    currentAudioBtn = null;
+                    currentAudio = null;
+                };
+                fast.onerror = function() {
+                    if (btn) { btn.textContent = '▶';
+                        btn.classList.remove('playing'); }
+                    currentAudioBtn = null;
+                    currentAudio = null;
+                };
+                audioTimeout = setTimeout(() => {
+                    if (btn && btn.classList.contains('playing')) {
+                        window.speechSynthesis.speak(fast);
+                        currentAudio = fast;
+                    }
+                }, 350);
+            };
+            utterance.onerror = function() {
+                if (btn) { btn.textContent = '▶';
+                    btn.classList.remove('playing'); }
+                currentAudioBtn = null;
+                currentAudio = null;
+            };
+            window.speechSynthesis.speak(utterance);
+            currentAudio = utterance;
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.audio-btn').forEach(btn => {
+                const text = btn.dataset.text;
+                if (text) {
+                    btn.setAttribute('aria-label', 'Odtwórz wymowę: ' + text);
+                    btn.title = 'Odtwórz wymowę';
+                }
+                btn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const audioText = this.dataset.text;
+                    if (!audioText) return;
+                    speakText(audioText, 0.7, this);
+                });
+            });
+            loadProgress();
+            setView('all');
+            initMission();
+            updateVisibleCount();
+        });
+
+        // ---------- TOGGLE ----------
+        function toggleAnswer(id) {
+            const el = document.getElementById(id);
+            if (!el) return;
+            el.classList.toggle('show');
+            const btn = document.querySelector(`[onclick*="toggleAnswer('${id}')"]`);
+            if (btn) {
+                btn.textContent = el.classList.contains('show') ? 'Ukryj odpowiedzi' : 'Pokaż odpowiedzi';
+            }
+        }
+
+        function toggleHint(id) {
+            const el = document.getElementById(id);
+            if (!el) return;
+            el.classList.toggle('show');
+            const btn = document.querySelector(`[onclick*="toggleHint('${id}')"]`);
+            if (btn) {
+                btn.textContent = el.classList.contains('show') ? 'Ukryj wskazówkę' : 'Wskazówka';
+            }
+        }
+
+        function hideAllAnswers() {
+            document.querySelectorAll('.answer-content.show, .hint-content.show, .explain-content.show').forEach(el => {
+                el.classList.remove('show');
+                const id = el.id;
+                const btn = document.querySelector(`[onclick*="toggleAnswer('${id}')"]`);
+                if (btn) btn.textContent = 'Pokaż odpowiedzi';
+                const btn2 = document.querySelector(`[onclick*="toggleHint('${id}')"]`);
+                if (btn2) btn2.textContent = 'Wskazówka';
+            });
+        }
+
+        // ---------- PROGRESS ----------
+        function updateProgress() {
+            const checkboxes = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+            let total = 0,
+                done = 0;
+            checkboxes.forEach(cb => {
+                const w = parseInt(cb.dataset.progress) || 0;
+                total += w;
+                if (cb.checked) done += w;
+            });
+            const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+            document.getElementById('progressFill').style.width = pct + '%';
+            document.getElementById('progressPercent').textContent = pct + '%';
+            const statusEl = document.getElementById('progressStatus');
+            if (pct === 100) statusEl.textContent = 'Świetnie. Opanowałeś lekcję!';
+            else if (pct >= 80) statusEl.textContent = 'Bardzo dobrze. Dokończ resztę.';
+            else if (pct >= 50) statusEl.textContent = 'Dobrze. Poćwicz jeszcze.';
+            else if (pct > 0) statusEl.textContent = 'Zacząłeś – kontynuuj!';
+            else statusEl.textContent = 'Zacznij naukę';
+            updateTasks(pct);
+            saveProgress();
+        }
+
+        function updateTasks(pct) {
+            const tasks = document.querySelectorAll('.today-tasks .task');
+            const thresholds = [10, 25, 45, 65, 85];
+            tasks.forEach((task, i) => {
+                if (pct >= thresholds[i]) task.classList.add('done');
+                else task.classList.remove('done');
+            });
+        }
+
+        document.querySelectorAll('.toc-checklist input[type="checkbox"]').forEach(cb => {
+            cb.addEventListener('change', updateProgress);
+        });
+
+        // ---------- FILTER ----------
+        let currentView = 'all';
+
+        function setView(view) {
+            currentView = view;
+            document.querySelectorAll('.view-filters .btn').forEach(b => b.classList.remove('active'));
+            const btn = document.querySelector(`.view-filters .btn[data-view="${view}"]`);
+            if (btn) btn.classList.add('active');
+            applyFilter(view);
+            updateVisibleCount();
+        }
+
+        function applyFilter(view) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(sec => {
+                const level = sec.dataset.level || 'basic';
+                let show = true;
+                if (view === 'basic') {
+                    show = (level === 'basic' || level === 'training' || level === 'remember' || level === 'writing');
+                } else if (view === 'exam') {
+                    show = (level === 'basic' || level === 'training' || level === 'exam' || level === 'trap' || level ===
+                        'difficult' || level === 'remember' || level === 'writing' || level === 'ambitious');
+                }
+                if (view === 'all') show = true;
+                sec.classList.toggle('hidden-by-filter', !show);
+            });
+        }
+
+        function updateVisibleCount() {
+            const visible = document.querySelectorAll('.section:not(.hidden-by-filter)').length;
+            const total = document.querySelectorAll('.section').length;
+            document.getElementById('visibleCount').textContent = visible;
+            document.getElementById('totalCount').textContent = total;
+        }
+
+        // ---------- MISJA ----------
+        const missionData = [
+            { q: 'I ______ (never / be) to Spain.', correct: 'have never been' },
+            { q: 'She ______ (just / finish) her homework.', correct: 'has just finished' },
+            { q: '______ you ever ______ (be) to London?', correct: 'Have / been' },
+            { q: 'He ______ (live) here since 2020.', correct: 'has lived' },
+            { q: 'We ______ (not / finish) yet.', correct: 'haven\'t finished' },
+            { q: 'I ______ (visit) Paris in 2022.', correct: 'visited' },
+            { q: 'She ______ (lose) her keys — she can\'t find them now.', correct: 'has lost' },
+            { q: 'He ______ (just / arrive) home.', correct: 'has just arrived' },
+            { q: 'I ______ (live) here for ten years.', correct: 'have lived' },
+            { q: 'They ______ (go) to the shop — they\'re not here.', correct: 'have gone' },
+            { q: 'She ______ (not / see) the film yet.', correct: 'hasn\'t seen' },
+            { q: 'We ______ (buy) a new car last week.', correct: 'bought' },
+        ];
+
+        function normalizeAnswer(val) {
+            let v = val.trim().toLowerCase().replace(/\s+/g, ' ');
+            v = v.replace(/\bhaven't\b/g, "haven't");
+            v = v.replace(/\bhasn't\b/g, "hasn't");
+            v = v.replace(/\bdidn't\b/g, "didn't");
+            v = v.replace(/\bhave not\b/g, "haven't");
+            v = v.replace(/\bhas not\b/g, "hasn't");
+            v = v.replace(/\bdid not\b/g, "didn't");
+            return v;
+        }
+
+        function initMission() {
+            const container = document.getElementById('missionQuestions');
+            if (!container) return;
+            container.innerHTML = '';
+            missionData.forEach((item, idx) => {
+                const div = document.createElement('div');
+                div.className = 'fitb-row';
+                div.innerHTML = `
+                    <span style="font-weight:500; font-size:0.9rem;">${idx+1}. ${item.q}</span>
+                    <input type="text" id="missionInput${idx}" placeholder="wpisz..." style="width:150px;" />
+                    <span class="result-icon" id="missionIcon${idx}"></span>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function checkMission() {
+            let correct = 0;
+            const total = missionData.length;
+            const mistakes = [];
+            missionData.forEach((item, idx) => {
+                const input = document.getElementById('missionInput' + idx);
+                const icon = document.getElementById('missionIcon' + idx);
+                if (!input || !icon) return;
+                const val = normalizeAnswer(input.value);
+                const expected = Array.isArray(item.correct) ? item.correct : [item.correct];
+                const expectedNorm = expected.map(normalizeAnswer);
+                const isOk = val.length > 0 && expectedNorm.includes(val);
+                input.classList.toggle('correct', isOk);
+                input.classList.toggle('wrong', !isOk);
+                input.setAttribute('aria-invalid', String(!isOk));
+                if (isOk) {
+                    icon.textContent = '✓';
+                    icon.style.color = '#2d8f5e';
+                    correct++;
+                } else {
+                    icon.textContent = '✗';
+                    icon.style.color = '#dc3545';
+                    mistakes.push(`${idx+1}. (poprawnie: ${expected.join(' / ')})`);
+                }
+            });
+            const resultDiv = document.getElementById('missionResult');
+            resultDiv.style.display = 'block';
+            const pct = Math.round((correct / total) * 100);
+            let msg = '',
+                cls = '';
+            if (pct === 100) { msg = 'Present Perfect masz opanowane!';
+                cls = 'perfect'; } else if (pct >= 75) { msg = 'Bardzo dobrze. Powtórz wskazane pułapki.';
+                cls = 'good'; } else if (pct >= 50) { msg = 'Wróć do najważniejszych zasad i spróbuj ponownie.';
+                cls = 'ok'; } else { msg = 'Powtórz podstawy, a następnie rozwiąż test jeszcze raz.';
+                cls = 'fail'; }
+            resultDiv.className = 'mission-result ' + cls;
+            resultDiv.innerHTML =
+                `<strong>Wynik: ${correct}/${total}.</strong> ${msg}` +
+                (mistakes.length ? `<br /><span class="text-sm">Błędy: ${mistakes.join('; ')}</span>` : '');
+        }
+
+        function resetMission() {
+            document.querySelectorAll('#missionQuestions input[type="text"]').forEach(input => {
+                input.value = '';
+                input.classList.remove('correct', 'wrong');
+                input.removeAttribute('aria-invalid');
+            });
+            document.querySelectorAll('#missionQuestions .result-icon').forEach(icon => {
+                icon.textContent = '';
+                icon.style.color = '';
+            });
+            document.getElementById('missionResult').style.display = 'none';
+        }
+
+        // ---------- MASTER MM ----------
+        function mmToggleFocus() {
+            const active = document.body.classList.toggle('mm-focus');
+            const b = document.getElementById('mmFocusBtn');
+            if (b) b.textContent = active ? 'Wyłącz skupienie' : 'Tryb skupienia';
+            localStorage.setItem('lekcja5_focus', active ? '1' : '0');
+        }
+
+        function mmReveal(btn, text) {
+            const out = btn.querySelector('.mm-answer');
+            if (!out) return;
+            const open = out.textContent.trim() !== '';
+            out.textContent = open ? '' : 'Odpowiedź: ' + text;
+        }
+
+        function mmUpdateSection() {
+            const sections = [...document.querySelectorAll('.section[id]')];
+            if (!sections.length) return;
+            const y = window.scrollY + 150;
+            let cur = sections[0];
+            sections.forEach(el => { if (el.offsetTop <= y) cur = el; });
+            sections.forEach(el => el.classList.toggle('mm-current-section', el === cur));
+            const h = cur.querySelector('h2,h3'),
+                n = document.getElementById('mmSectionName');
+            if (h && n) n.textContent = 'Lekcja 5 · ' + h.textContent.trim();
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            if (localStorage.getItem('lekcja5_focus') === '1') {
+                document.body.classList.add('mm-focus');
+                const b = document.getElementById('mmFocusBtn');
+                if (b) b.textContent = 'Wyłącz skupienie';
+            }
+            mmUpdateSection();
+            addEventListener('scroll', mmUpdateSection, { passive: true });
+            addEventListener('resize', mmUpdateSection);
+        });
+
+        // ---------- INIT ----------
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.speechSynthesis) {
+                window.speechSynthesis.getVoices();
+                window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+            }
+        });
+    </script>
+
+</body>
+</html>

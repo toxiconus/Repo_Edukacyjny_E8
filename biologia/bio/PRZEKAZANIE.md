@@ -6,17 +6,29 @@
 - Build: `python3 biologia/bio/narzedzia/md2html_bio.py` → `biologia/bio/dist/<KOD>.html` (jeden samodzielny plik, offline, telefon) + `index.html`.
 - Test: `node biologia/bio/narzedzia/sprawdz_bio.js` (390 px + 1200 px; konsola, grafiki, przewijanie w bok). Opcja `--zrzuty katalog`.
 - Wygląd: `szablon/baza-wspolna.css` (styl lekcji z CHE, nie edytować) + `szablon/bio-warstwa.css` (paleta bio, grafiki; tylko tryb dzienny). Zachowanie: `szablon/lekcja.js`.
-- Grafiki: nowa biblioteka `szablon/bio-viz.js` — katalog w `BIO_KATALOG.md`. Stare HTML/wizualizacje (`biologia/wizualizacje/`, `biologia/*.html`) tylko jako źródło treści; grafik z nich nie przenosimy.
+- Grafiki (od 2026-10-12, zamiast jednego `bio-viz.js`): rdzeń `szablon/bio-core.js` + osobny plik na każdą grafikę `szablon/wizualizacje/<id>.js` (59 sztuk). Lekcja dostaje do HTML tylko rdzeń i grafiki, które wywołuje (`@viz`) — przykład L010: 488 KB → 221 KB. Katalog `BIO_KATALOG.md` generuje `python3 biologia/bio/narzedzia/katalog_wizualizacji.py` (plik, animacja, lekcje). Nową grafikę dodajesz plikiem w `wizualizacje/`, nie w rdzeniu. Stare HTML/wizualizacje (`biologia/wizualizacje/`, `biologia/*.html`) tylko jako źródło treści; grafik z nich nie przenosimy.
 
 ## Lekcje
 | Kod | Plik md | Stan |
 |---|---|---|
-| L010 | `L010_dna_od_zera.md` | v4.0 — scalone BIO.all L010 + HTML v3.0, 12 grafik, test OK |
-| REV01 | `REV01_organizacja_i_chemizm_zycia.md` | v1.0 (2026-10-08) — powtórka do konkursu LKO, etap szkolny pkt I: poziomy, mikroskop, organelle, typy komórek, transport, fotosynteza, oddychanie, fermentacja, czynności życiowe, 2 doświadczenia; źródło L001, L004–L008; test OK |
-| REV02 | `REV02_roznorodnosc_zycia.md` | v1.0 (2026-10-08) — powtórka do konkursu LKO, etap szkolny pkt II (kl. 5–6); treść nowa (podstawa 2024 + zakres LKO 2025/26), bez nowych grafik; test OK |
+| L010 | `BIO.02.L010.dna_od_zera.md` | v4.0 — scalone BIO.all L010 + HTML v3.0, 12 grafik, test OK |
+| REV01 | `BIO.00.REV01.organizacja_i_chemizm_zycia.md` | v1.0 (2026-10-08) — powtórka do konkursu LKO, etap szkolny pkt I: poziomy, mikroskop, organelle, typy komórek, transport, fotosynteza, oddychanie, fermentacja, czynności życiowe, 2 doświadczenia; źródło L001, L004–L008; test OK |
+| REV02 | `BIO.00.REV02.roznorodnosc_zycia.md` | v1.0 (2026-10-08) — powtórka do konkursu LKO, etap szkolny pkt II (kl. 5–6); treść nowa (podstawa 2024 + zakres LKO 2025/26), bez nowych grafik; test OK |
+| U04 | `BIO.07.U04.krazenie_krew_odpornosc.md` | v1.0 (2026-10-11) — etap rejonowy LKO pkt III.4–5; z dwóch odpowiedzi Perplexity, sprawdzone i rozbudowane; nowe grafiki `krazenie-obiegi`, `transfuzja` (kolory krwi w `szablon/motywy/bio.css`); test OK; do W1 |
+| H01 | `BIO.07.H01.homeostaza.md` | v1.0 (2026-10-11) — etap rejonowy pkt IV; Perplexity + szkielet OLI B2 (GPT-6) + Claude; grafiki `sprzezenie-zwrotne`, `glukoza-wykres`; test OK; do W1 |
+| U01 | `BIO.07.U01.skora_i_uklad_ruchu.md` | v1.0 (2026-10-11) — etap rejonowy pkt III.1–2; Perplexity + szkielet OLI B2a + Claude; grafiki `skora-przekroj`, `staw-antagonizm`; test OK; do W1 |
+| U03 | `BIO.07.U03.uklad_pokarmowy_i_odzywianie.md` | v1.0 (2026-10-11) — etap rejonowy pkt III.3; Perplexity + szkielet OLI B2b + Claude; grafiki `droga-pokarmu`, `kosmek-jelitowy`, `enzym-warunki`; test OK; do W1 |
+| U06 | `BIO.07.U06.oddychanie_i_wydalanie.md` | v1.0 (2026-10-11) — etap rejonowy pkt III.6–7; Perplexity + szkielet OLI B2c + Claude; grafiki `wdech-wydech`, `wymiana-gazowa`, `nefron`; test OK; do W1 |
+| U08 | `BIO.07.U08.uklad_nerwowy_i_zmysly.md` | v1.0 (2026-10-11) — etap rejonowy pkt III.8–9; Perplexity + szkielet OLI B2d + Claude; grafiki `luk-odruchowy`, `oko-akomodacja`, `ucho-droga`; test OK; do W1 |
+| U10 | `BIO.07.U10.uklad_dokrewny.md` | v1.0 (2026-10-11) — etap rejonowy pkt III.10; scalone 4 odpowiedzi AI (BADANIE) + szkielet OLI B2e + Claude; grafiki `gruczoly-mapa` (nowa), `sprzezenie-zwrotne` (scenariusze tyroksyna, wapń), `glukoza-wykres`; test OK; do W1 |
+
+## Stan 2026-10-11 (grafiki)
+- Lekcje `biologia/md` budowane `python3 narzedzia/lekcja_html.py -p bio <md>` → `biologia/html/`; wszystkie mają grafiki z `wizualizacje/` (poza L003). Nowe grafiki 2026-10-10: relacje-ekologiczne, konczyny-homologiczne, energia-materia, zrodla-zmiennosci, kontrola-podzialow, eutrofizacja, homeostaza, endosymbioza, hardy-weinberg (katalog `BIO_KATALOG.md`).
+- Test w przeglądarce: każda grafika 390/900 px bez błędów (skrypt jednorazowy w playwright; wzór: zrzut figury `[data-bio-viz]`, klik przycisków `.bv-btn`, `pageerror`).
+- Braki: wykład / mini-wykłady / ciekawostki (`python3 narzedzia/sprawdz_wyklady.py biologia/md`) → do napisania lub W1.
 
 ## Następne kroki
-0. **Priorytet konkursowy** (`olimpiada/PRIORYTETY.md`): zakres etapu szkolnego pokryty (REV01 + REV02). Dalej: etap rejonowy — organizm człowieka i homeostaza (źródło `biologia/md/L002_powtorka_czlowiek.md`). Builder: parser chemii brany z `chemia/archiwum/che_v0_59/narzedzia/md2html.py` (po reorganizacji chemii).
+0. **Priorytet konkursowy** (`olimpiada/PRIORYTETY.md`): zakres etapu szkolnego pokryty (REV01 + REV02). Dalej: etap rejonowy — organizm człowieka i homeostaza (źródło `biologia/md/BIO.01.L002.powtorka_czlowiek.md`). Builder: parser chemii brany z `chemia/archiwum/che_v0_59/narzedzia/md2html.py` (po reorganizacji chemii).
 1. L011 (DNA: chemia par, ekspresja) — źródło `biologia/md/L011_*.md` + `biologia/wizualizacje/BIO.011w…` (tylko treść); nowe grafiki: kodon/transkrypcja.
 2. Liczby (2 nm, 3,4 nm, 10 par, ~2 m DNA) — do weryfikacji w Perplexity.
 3. (użytkownik) PR `claude/bio-lekcje` → `main` / GitHub Pages.

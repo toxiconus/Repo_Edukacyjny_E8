@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Indeks roku · Podstawa Plus · MASTER v1.1 (obowiązujący)</title>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --c-basic:#2d8f5e;--c-basic-bg:#eef9f2;
+  --c-train:#2b6cb0;--c-train-bg:#eef4fb;
+  --c-exam:#b7791f;--c-exam-bg:#fdf7ea;
+  --c-trap:#c33b46;--c-trap-bg:#fdeef0;
+  --c-amb:#6d3fb8;--c-amb-bg:#f2ecfa;
+  --c-rem:#1e3a5f;--c-rem-bg:#eef2f7;
+  --c-hint:#b3701c;--c-hint-bg:#fbf3e3;
+  --c-text:#1c2634;--c-strong:#0a1828;--c-muted:#6b7a8d;
+  --c-border:#e3e8ef;--c-border-strong:#c8d2df;
+  --c-bg:#f7f9fc;--c-surface:#ffffff;--c-surface-2:#fbfcfe;
+  --shadow-sm:0 1px 2px rgba(15,23,42,.04);
+  --shadow:0 2px 8px rgba(15,23,42,.06);
+  --shadow-lg:0 8px 28px rgba(15,23,42,.08);
+}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{font-family:'Segoe UI',Roboto,system-ui,-apple-system,'Helvetica Neue',sans-serif;background:#eef1f5;color:var(--c-text);line-height:1.7;padding:20px 16px}
+.container{max-width:1180px;margin:0 auto;background:var(--c-surface);border-radius:22px;box-shadow:var(--shadow-lg);padding:28px 36px 20px;border:1px solid var(--c-border)}
+@media(max-width:820px){.container{padding:14px 10px;border-radius:14px}body{padding:8px 4px}}
+h1,h2,h3,h4{font-weight:600;letter-spacing:-.02em;color:var(--c-strong);line-height:1.3}
+h1{font-size:1.85rem;margin-bottom:4px}
+h2{font-size:1.3rem;margin-top:28px;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--c-border);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+h2 .h2-num{display:inline-flex;align-items:center;justify-content:center;min-width:32px;height:32px;padding:0 8px;background:var(--c-rem);color:#fff;border-radius:8px;font-size:.8rem;font-weight:700;flex-shrink:0}
+h3{font-size:1.05rem;margin-top:18px;margin-bottom:8px}
+h4{font-size:.92rem;margin-top:10px;margin-bottom:6px}
+p{margin-bottom:10px}ul,ol{padding-left:22px;margin-bottom:10px}li{margin-bottom:4px}
+strong{color:var(--c-strong)}
+.text-muted{color:var(--c-muted)}.text-sm{font-size:.82rem}
+.lead{font-size:1rem;color:#334155;margin-bottom:12px}
+
+/* HEADER */
+.top-header{padding-bottom:18px;border-bottom:1px solid var(--c-border);margin-bottom:16px}
+.top-header .kicker{text-transform:uppercase;font-size:.68rem;letter-spacing:.12em;color:var(--c-train);font-weight:700;margin-bottom:6px}
+.top-header .sub{color:var(--c-muted);font-size:.82rem;margin-top:4px}
+
+/* TABS */
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 18px;border-bottom:2px solid var(--c-border);padding-bottom:0}
+.tab-btn{appearance:none;border:none;background:#f1f4f9;color:var(--c-muted);font-size:.82rem;font-weight:600;padding:10px 16px;border-radius:10px 10px 0 0;cursor:pointer;transition:all .15s;border:1px solid transparent;border-bottom:none;position:relative;top:2px}
+.tab-btn:hover{background:#e8eef8;color:var(--c-strong)}
+.tab-btn.active{background:#fff;color:var(--c-strong);border-color:var(--c-border);border-bottom-color:#fff;box-shadow:0 -1px 0 #fff}
+.tab-btn.empty{opacity:.55;font-weight:500}
+.tab-panel{display:none}
+.tab-panel.active{display:block}
+
+/* SHARED COMPONENTS */
+.info-bar{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:14px 0}
+.stat-card{background:var(--c-surface-2);border:1px solid var(--c-border);border-radius:12px;padding:12px 14px;text-align:center}
+.stat-card .num{font-size:1.35rem;font-weight:700;color:var(--c-rem)}
+.stat-card .lab{font-size:.7rem;color:var(--c-muted);line-height:1.35}
+.how-work{background:linear-gradient(180deg,#f0f4fb 0%,#e8eef8 100%);border:1px solid #c5d4e8;border-left:4px solid var(--c-train);border-radius:12px;padding:14px 18px;margin:14px 0}
+.how-work ol{margin-bottom:0}
+.legend{background:#faf8f5;border:1px solid #e8d9c0;border-left:4px solid var(--c-hint);border-radius:12px;padding:12px 16px;margin:14px 0}
+.legend-row{display:flex;flex-wrap:wrap;gap:12px 18px;font-size:.8rem}
+.legend-item{display:flex;align-items:center;gap:6px}
+.pill{display:inline-block;font-size:.6rem;font-weight:700;text-transform:uppercase;padding:2px 9px;border-radius:20px;letter-spacing:.05em;line-height:1.5}
+.pill-basic{background:#d8f0e0;color:#14532d}
+.pill-train{background:#d5e5f7;color:#1e3a5f}
+.pill-amb{background:#e6d9f5;color:#4a2070}
+.pill-review{background:#e2e8f0;color:#334155}
+.pill-test{background:#fce4ec;color:#9a1f3c}
+.pill-start{background:#e0f2fe;color:#0c4a6e}
+.timeline{position:relative;margin:16px 0}
+.timeline::before{content:"";position:absolute;left:14px;top:0;bottom:0;width:3px;background:linear-gradient(180deg,#2b6cb0,#6d3fb8,#2d8f5e);border-radius:2px}
+.month-block{margin:0 0 22px 46px;position:relative}
+.month-block::before{content:"";position:absolute;left:-38px;top:12px;width:14px;height:14px;border-radius:50%;background:#fff;border:4px solid var(--c-train);box-shadow:0 0 0 3px #fff}
+.month-block.sem2::before{border-color:var(--c-amb)}
+.month-header{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:10px}
+.month-header h3{margin:0;font-size:1.12rem}
+.month-header .month-num{display:inline-flex;align-items:center;justify-content:center;min-width:36px;height:28px;padding:0 8px;background:var(--c-rem);color:#fff;border-radius:7px;font-size:.7rem;font-weight:700}
+.month-block.sem2 .month-header .month-num{background:var(--c-amb)}
+.month-header .focus{font-size:.75rem;color:var(--c-muted);font-style:italic}
+.month-block .desc{font-size:.88rem;color:#334155;margin-bottom:10px}
+.month-grid{display:grid;grid-template-columns:1fr;gap:8px}
+.lesson-card{background:#fff;border:1px solid var(--c-border);border-left:4px solid var(--c-train);border-radius:10px;padding:11px 14px;transition:all .15s}
+.lesson-card:hover{box-shadow:var(--shadow);transform:translateY(-1px)}
+.lesson-card.test{border-left-color:#c33b46;background:#fef7f8}
+.lesson-card.review{border-left-color:#64748b;background:#f8fafc}
+.lesson-card.optional{background:#fdfcf7;border-left-color:#b7791f}
+.lesson-card.start{border-left-color:#0ea5e9;background:#f0f9ff}
+.lesson-card .top-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px;margin-bottom:4px}
+.lesson-card .num{font-size:.66rem;font-weight:700;background:#f1f4f9;color:#94a3b8;padding:2px 9px;border-radius:20px}
+.lesson-card .name{font-size:.95rem;font-weight:600;color:var(--c-strong);margin:2px 0 3px}
+.lesson-card .desc{font-size:.82rem;color:#475569;line-height:1.5;margin-bottom:6px}
+.lesson-card .topics{margin-top:4px;font-size:.76rem;color:var(--c-muted)}
+.callout{display:flex;gap:10px;padding:12px 16px;border-radius:12px;margin:12px 0;font-size:.88rem}
+.callout .icon{font-size:1rem;flex-shrink:0;font-weight:700;color:var(--c-train)}
+.callout-train{background:var(--c-train-bg);border:1px solid #c5d4e8;border-left:4px solid var(--c-train)}
+.callout-test{background:var(--c-trap-bg);border:1px solid #f0c5ca;border-left:4px solid var(--c-trap)}
+.callout-amb{background:var(--c-amb-bg);border:1px solid #d9c9ee;border-left:4px solid var(--c-amb)}
+.callout-review{background:#f1f5f9;border:1px solid #cbd5e1;border-left:4px solid #64748b}
+.part-heading{font-size:1.15rem;font-weight:700;color:var(--c-strong);margin:26px 0 12px;padding:9px 14px;background:var(--c-surface-2);border-radius:10px;border-left:5px solid var(--c-train)}
+.part-heading.amb{border-left-color:var(--c-amb)}
+.table-wrap{overflow-x:auto;margin:12px 0;border-radius:12px;border:1px solid var(--c-border);box-shadow:var(--shadow-sm);background:#fff}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:.84rem}
+.table-wrap th,.table-wrap td{padding:8px 11px;text-align:left;border-bottom:1px solid #eef2f7;vertical-align:top;line-height:1.45}
+.table-wrap th{background:#f2f5f9;font-weight:600;color:var(--c-strong);font-size:.68rem;text-transform:uppercase;letter-spacing:.05em}
+.table-wrap tr:last-child td{border-bottom:none}
+.table-wrap tr:nth-child(even) td{background:#fafbfd}
+.footer{margin-top:32px;padding-top:14px;border-top:1px solid var(--c-border);font-size:.78rem;color:var(--c-muted);text-align:center}
+.empty-panel{padding:40px 20px;text-align:center;color:var(--c-muted)}
+.empty-panel h3{color:var(--c-muted);font-weight:500}
+.ver{font-size:.72rem;color:var(--c-muted);font-weight:500}
+@media(max-width:700px){
+  .timeline::before{left:10px}
+  .month-block{margin-left:34px}
+  .month-block::before{left:-28px;width:12px;height:12px}
+  h1{font-size:1.45rem}
+  .tab-btn{padding:8px 12px;font-size:.75rem}
+}
+
+a { color: #1a5fb4; text-decoration: underline; }
+a:hover { color: #0d3b6e; }
+
+.badge-md{font-size:.72rem;font-weight:700;padding:2px 8px;border-radius:12px;background:#e0f2fe;color:#0369a1}
+.badge-v38{font-size:.72rem;font-weight:700;padding:2px 8px;border-radius:12px;background:#dcfce7;color:#166534}
+.badge-html-no{font-size:.72rem;font-weight:600;padding:2px 8px;border-radius:12px;background:#f1f5f9;color:#64748b}
+.status-table{width:100%;border-collapse:collapse;font-size:.84rem;margin:12px 0 18px}
+.status-table th,.status-table td{border:1px solid var(--c-border);padding:6px 10px;text-align:left}
+.status-table th{background:#f1f4f9;font-weight:600}
+.status-table tr:nth-child(even){background:#fafbfc}
+a.disabled-link,span.disabled-link{color:#94a3b8;text-decoration:none;pointer-events:none;cursor:default}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header class="top-header">
+  <div class="kicker">Podstawa Plus · Indeks roku szkolnego · MASTER</div>
+  <h1>Indeks roku — klasa 8 <span class="ver">v1.1</span></h1>
+  <div class="sub"><strong>Indeks obowiązujący</strong> · plan roku, kolejność, powtórki, sprawdziany · Biologia v3.9 · Chemia pakiet <strong>v2.0</strong> (<code>CHEMIA_PODSTAWA_PLUS_v1.1.md</code>) · Polski v7.11 · Angielski v1.0 · Nowa Era + podstawa 2024 · jeden plik HTML</div>
+</header>
+
+<!-- TABS -->
+<div class="tabs" role="tablist">
+  <button class="tab-btn active" data-tab="bio" role="tab">Biologia <span class="ver">v3.9</span></button>
+  <button class="tab-btn" data-tab="chem" role="tab">Chemia <span class="ver">v1.1</span></button>
+  <button class="tab-btn" data-tab="pol" role="tab">Polski <span class="ver">v7.11</span></button>
+  <button class="tab-btn" data-tab="ang" role="tab">Angielski <span class="ver">v1.0</span></button>
+  <button class="tab-btn" data-tab="konk" role="tab">Konkursy</button>
+  <button class="tab-btn empty" data-tab="mat" role="tab">Matematyka</button>
+  <button class="tab-btn empty" data-tab="fiz" role="tab">Fizyka</button>
+  <button class="tab-btn empty" data-tab="geo" role="tab">Geografia</button>
+  <button class="tab-btn empty" data-tab="his" role="tab">Historia</button>
+</div>
+
+<!-- ==================== BIOLOGIA ==================== -->
+<div id="tab-bio" class="tab-panel active">
+
+<div class="info-bar">
+  <div class="stat-card"><div class="num">~30</div><div class="lab">lekcji merytorycznych</div></div>
+  <div class="stat-card"><div class="num">3</div><div class="lab">bloki: genetyka · ewolucja · ekologia</div></div>
+  <div class="stat-card"><div class="num">9</div><div class="lab">punktów powtórkowych</div></div>
+  <div class="stat-card"><div class="num">6</div><div class="lab">okien sprawdzianowych</div></div>
+  <div class="stat-card"><div class="num">L090</div><div class="lab">extra olimpijska</div></div>
+  <div class="stat-card"><div class="num">v3.9</div><div class="lab">wersja pakietu</div></div>
+</div>
+
+<div class="callout callout-train">
+  <span class="icon">F</span>
+  <div><strong>Biologia v3.9:</strong> Warstwy: [PRZYPOMNIENIE] → [PODSTAWA E8] → [TRENING] → [MASTER] → opcjonalnie [KONKURS]. Uzupełnia podręcznik Nowa Era (Puls życia) — nie zastępuje. <strong>Ten indeks MASTER obowiązuje</strong> jako plan roku biologii. Źródło MD: <code>BIOLOGIA_PODSTAWA_PLUS_v3.9_working.md</code>. Rozszerzenia L050 / L090: <code>poprawione.md</code>. <strong>L011–L020</strong> mają wzmocnioną warstwę merytoryczną (v3.8). HTML pojedynczych lekcji: na razie <em>brak</em> — pracujemy tylko na tym jednym indeksie.</div>
+</div>
+
+<div class="legend">
+  <h4 style="margin-top:0">Legenda</h4>
+  <div class="legend-row">
+    <div class="legend-item"><span class="pill pill-basic">podstawa</span> musisz umieć</div>
+    <div class="legend-item"><span class="pill pill-train">trening</span> utrwalenie</div>
+    <div class="legend-item"><span class="pill pill-amb">ambitny</span> opcjonalnie</div>
+    <div class="legend-item"><span class="pill pill-review">powtórka</span> spaced repetition</div>
+    <div class="legend-item"><span class="pill pill-test">sprawdzian</span> okno</div>
+    <div class="legend-item"><span class="pill pill-start">start</span> powtórka z klas 4–7</div>
+  </div>
+</div>
+
+
+<h2><span class="h2-num">0</span> Status lekcji (MD → HTML) — indeks obowiązujący</h2>
+<p class="lead">Wersja w pliku MD · status HTML (wszystkie lekcje na razie bez osobnych HTML — nieklikalne). Jedyny HTML: ten indeks.</p>
+<div class="table-wrap">
+<table class="status-table">
+<thead><tr><th>Lekcja</th><th>Temat</th><th>Blok</th><th>Wersja MD</th><th>HTML</th></tr></thead>
+<tbody>
+<tr><td>L001</td><td>Komórka (powtórka 4–7)</td><td>Start</td><td><span class="badge-md">v3.7</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L002</td><td>Człowiek (powtórka 4–7)</td><td>Start</td><td><span class="badge-md">v3.7</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L003</td><td>Diagnoza startowa genetyki</td><td>Start</td><td><span class="badge-md">v3.7</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L010</td><td>Wejście w genetykę</td><td>Genetyka</td><td><span class="badge-md">v3.7</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L011</td><td>DNA — sekwencja, A–T / C–G</td><td>Genetyka</td><td><span class="badge-v38">v3.8</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L012</td><td>Chromosom — 46 / 92</td><td>Genetyka</td><td><span class="badge-v38">v3.8</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L013</td><td>Replikacja — semikonserwatywność</td><td>Genetyka</td><td><span class="badge-v38">v3.8</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L014</td><td>Mitoza</td><td>Genetyka</td><td><span class="badge-v38">v3.8</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L015</td><td>Mejoza</td><td>Genetyka</td><td><span class="badge-v38">v3.8</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L016</td><td>Nowotwór</td><td>Genetyka</td><td><span class="badge-v38">v3.8</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L017</td><td>Krzyżówki / Punnett</td><td>Genetyka</td><td><span class="badge-v38">v3.8</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L018</td><td>Dziedziczenie sprzężone z X</td><td>Genetyka</td><td><span class="badge-v38">v3.8</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L019</td><td>ABO / Rh</td><td>Genetyka</td><td><span class="badge-v38">v3.8</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L020</td><td>Mutacje</td><td>Genetyka</td><td><span class="badge-v38">v3.8</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L021</td><td>Powtórka genetyki</td><td>Genetyka</td><td><span class="badge-md">v3.7</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L030</td><td>Dowody ewolucji</td><td>Ewolucja</td><td><span class="badge-md">v3.7</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L031</td><td>Dobór naturalny vs sztuczny</td><td>Ewolucja</td><td><span class="badge-md">v3.7</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L032</td><td>Powtórka ewolucji</td><td>Ewolucja</td><td><span class="badge-md">v3.7</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L040</td><td>Ekosystem i czynniki</td><td>Ekologia</td><td><span class="badge-md">v3.7</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L041</td><td>Łańcuchy i sieci pokarmowe</td><td>Ekologia</td><td><span class="badge-md">v3.7</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L042</td><td>Relacje między organizmami</td><td>Ekologia</td><td><span class="badge-md">v3.7</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L043</td><td>Człowiek a środowisko</td><td>Ekologia</td><td><span class="badge-md">v3.7</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L044</td><td>Powtórka ekologii</td><td>Ekologia</td><td><span class="badge-md">v3.7</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L050</td><td>Powtórka roczna</td><td>Finał</td><td><span class="badge-v38">v4.0 + poprawione.md</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L090</td><td>Extra olimpijska</td><td>Ambitny</td><td><span class="badge-v38">v4.0 + poprawione.md</span></td><td><span class="badge-html-no">brak</span></td></tr>
+</tbody>
+</table>
+</div>
+<p class="text-sm text-muted"><span class="badge-v38">v3.8</span> = wzmocniona merytoryka (DNA → mutacje). <span class="badge-v38">v4.0</span> L050/L090 uzupełnione w <code>poprawione.md</code>. <span class="badge-html-no">brak</span> = brak osobnego HTML lekcji (celowo — jeden indeks).</p>
+
+<h2><span class="h2-num">I</span> Semestr 1 — genetyka + ewolucja</h2>
+<p class="lead">IX: L001–L003 · IX–XI: L010–L021 · XI–I: L030–L032</p>
+
+<div class="timeline">
+<div class="month-block">
+  <div class="month-header"><span class="month-num">IX</span><h3>Wrzesień — start</h3><span class="focus">L001 · L002 · L003</span></div>
+  <div class="month-grid">
+    <div class="lesson-card start"><div class="top-row"><span class="num">T1–2</span><div><span class="pill pill-start">start</span></div></div><div class="name">L001 — Komórka · L002 — Człowiek · L003 — Diagnoza</div><div class="desc">Powtórka z klas 4–7 + diagnoza startowa genetyki. Komórka (organella, podziały wstęp), układy człowieka, test diagnostyczny przed DNA.</div><div class="topics"><strong>Źródło:</strong> BIOLOGIA_PODSTAWA_PLUS_v3.9_working.md · v3.7</div></div>
+    <div class="lesson-card review"><div class="top-row"><span class="num">Koniec IX</span><div><span class="pill pill-review">powtórka</span></div></div><div class="name">Powtórka #1</div></div>
+  </div>
+</div>
+<div class="month-block">
+  <div class="month-header"><span class="month-num">X</span><h3>Październik — DNA, chromosom, replikacja · L011–L013 v3.8</h3><span class="focus">L010–L013 · S#1</span></div>
+  <div class="month-grid">
+    <div class="lesson-card"><div class="top-row"><span class="num">T4–7</span><div><span class="pill pill-basic">podstawa</span> <span class="pill pill-train">trening</span></div></div><div class="name">L010 wejście · L011 DNA · L012 Chromosom · L013 Replikacja</div><div class="desc">Rdzeń: sekwencja, pary A–T / C–G, 46 chromatyd vs 92 po S, semikonserwatywność. L011–L013 wzmocnione v3.8 (warstwa MASTER + pułapki).</div></div>
+    <div class="lesson-card test"><div class="top-row"><span class="num">Okno</span><div><span class="pill pill-test">sprawdzian</span></div></div><div class="name">Sprawdzian #1 — DNA i chromosomy</div></div>
+  </div>
+</div>
+<div class="month-block">
+  <div class="month-header"><span class="month-num">XI</span><h3>Listopad — podziały + dziedziczenie</h3><span class="focus">L014–L018</span></div>
+  <div class="month-grid">
+    <div class="lesson-card"><div class="top-row"><span class="num">T8–12</span><div><span class="pill pill-basic">podstawa</span> <span class="pill pill-train">trening</span></div></div><div class="name">L014 Mitoza · L015 Mejoza · L016 Nowotwór · L017 Krzyżówki · L018 X-linked</div><div class="desc">Mitoza vs mejoza (liczba chromosomów), nowotwór jako utrata kontroli cyklu, szachownica Punnetta, dziedziczenie sprzężone z płcią. <span class="badge-v38">L014–L018 MD v3.8</span></div></div>
+  </div>
+</div>
+<div class="month-block">
+  <div class="month-header"><span class="month-num">XII</span><h3>Grudzień — ABO, mutacje, domknięcie</h3><span class="focus">L019–L021 · S#2</span></div>
+  <div class="month-grid">
+    <div class="lesson-card"><div class="top-row"><span class="num">T12–14</span><div><span class="pill pill-basic">podstawa</span></div></div><div class="name">L019 ABO/Rh · L020 Mutacje · L021 Powtórka genetyki</div><div class="desc"><span class="badge-v38">L019–L020 MD v3.8</span> · L021 v3.7 · <span class="badge-html-no">HTML brak</span></div></div>
+    <div class="lesson-card test"><div class="top-row"><span class="num">Okno</span><div><span class="pill pill-test">sprawdzian</span></div></div><div class="name">Sprawdzian #2 — Genetyka (blok)</div></div>
+  </div>
+</div>
+<div class="month-block">
+  <div class="month-header"><span class="month-num">I</span><h3>Styczeń — ewolucja + semestralny</h3><span class="focus">L030–L032 · S#3</span></div>
+  <div class="month-grid">
+    <div class="lesson-card"><div class="top-row"><span class="num">T15–17</span><div><span class="pill pill-basic">podstawa</span></div></div><div class="name">L030 Dowody · L031 Dobór · L032 Powtórka ewolucji</div></div>
+    <div class="lesson-card test"><div class="top-row"><span class="num">Okno</span><div><span class="pill pill-test">sprawdzian</span></div></div><div class="name">Sprawdzian #3 — Semestralny</div></div>
+  </div>
+</div>
+</div>
+
+<h2><span class="h2-num">II</span> Semestr 2 — ekologia + finał</h2>
+<p class="lead">I–IV: L040–L044 · IV–VI: L050</p>
+<div class="timeline">
+<div class="month-block sem2">
+  <div class="month-header"><span class="month-num">II–III</span><h3>Luty–marzec — ekologia</h3><span class="focus">L040–L043 · S#4</span></div>
+  <div class="month-grid">
+    <div class="lesson-card"><div class="name">L040 Ekosystem · L041 Łańcuchy · L042 Relacje · L043 Człowiek a środowisko</div><div class="desc">Czynniki abiotyczne/biotyczne · producenci–konsumenci–destruenci · konkurencja, drapieżnictwo, pasożytnictwo, mutualizm · wpływ człowieka (v3.7).</div></div>
+    <div class="lesson-card test"><div class="top-row"><span class="num">Okno</span><div><span class="pill pill-test">sprawdzian</span></div></div><div class="name">Sprawdzian #4 — Ekologia</div></div>
+  </div>
+</div>
+<div class="month-block sem2">
+  <div class="month-header"><span class="month-num">IV–VI</span><h3>Kwiecień–czerwiec — powtórka + finał</h3><span class="focus">L044 · L050 · S#5–6</span></div>
+  <div class="month-grid">
+    <div class="lesson-card"><div class="name">L044 Powtórka ekologii · L050 Powtórka roczna</div></div>
+    <div class="lesson-card test"><div class="name">Sprawdzian #5 przekrojowy · #6 finałowy</div></div>
+    <div class="lesson-card optional"><div class="top-row"><span class="num">Opcja</span><div><span class="pill pill-amb">ambitny</span></div></div><div class="name">L090 — Extra olimpijska</div></div>
+  </div>
+</div>
+</div>
+
+<h2><span class="h2-num">M</span> Mapowanie Nowa Era (skrót)</h2>
+<p class="text-sm">Skrót mapowania: L010–L021 = genetyka podręcznika · L030–L032 = ewolucja · L040–L044 = ekologia · L050 = powtórka roczna · L090 = extra. Treści usunięte z podstawy 2024 zostają w warstwie ambitnej — nic nie uszczuplamy.</p>
+
+</div><!-- /tab-bio -->
+
+<!-- ==================== CHEMIA ==================== -->
+<div id="tab-chem" class="tab-panel">
+
+<div class="info-bar">
+  <div class="stat-card"><div class="num">~28</div><div class="lab">lekcji merytorycznych (L002–L028)</div></div>
+  <div class="stat-card"><div class="num">9</div><div class="lab">punktów powtórkowych</div></div>
+  <div class="stat-card"><div class="num">6</div><div class="lab">okien sprawdzianowych</div></div>
+  <div class="stat-card"><div class="num">8+</div><div class="lab">bloków rozszerzonych / L001</div></div>
+  <div class="stat-card"><div class="num">~60 h</div><div class="lab">planowanej pracy</div></div>
+  <div class="stat-card"><div class="num">v2.0</div><div class="lab">wersja pakietu MD</div></div>
+</div>
+
+<div class="callout callout-train">
+  <span class="icon">F</span>
+  <div><strong>Chemia pakiet v2.0:</strong> Nauka L002→…→L013, potem extra L001 (nie „lekcja 1”). MD: <code>CHEMIA_PODSTAWA_PLUS_v1.1.md</code>. HTML extra: <code>CHEMIA_L001_ZAAWANSOWANA_extra.html</code>.</div>
+</div>
+
+<div class="legend">
+  <h4 style="margin-top:0">Legenda</h4>
+  <div class="legend-row">
+    <div class="legend-item"><span class="pill pill-basic">podstawowy</span> musisz umieć</div>
+    <div class="legend-item"><span class="pill pill-train">egzaminacyjny</span> utrwalenie</div>
+    <div class="legend-item"><span class="pill pill-amb">rozszerzony</span> dla ambitnych</div>
+    <div class="legend-item"><span class="pill pill-review">powtórka</span> spaced repetition</div>
+    <div class="legend-item"><span class="pill pill-test">sprawdzian</span> okno</div>
+  </div>
+</div>
+
+<div class="callout callout-train">
+  <span class="icon">L</span>
+  <div><strong>Numeracja:</strong> L000 indeks · L001 zaawansowana (opcjonalna) · L002 fundamenty · L003 tlenki · L004 wodorotlenki · L005 kwasy · L006 sole · L007 organika · L008 biochemia · L009 stężenia · L010 stechiometria · L011 redoks · L012 doświadczenia · L013 powtórka kl. 8.</div>
+</div>
+
+
+<h2><span class="h2-num">0</span> Status lekcji (MD → HTML)</h2>
+<p class="lead">Źródło: <code>CHEMIA_PODSTAWA_PLUS_v1.1.md</code> — scalone z <code>poprawione.md</code> (L001 + L003–L013). HTML lekcji: na razie brak — tylko ten indeks. Backup MD: <code>_backup_md_2026-09-12 · aktualizacja linków 2026-09-13/</code>.</p>
+<div class="table-wrap">
+<table class="status-table">
+<thead><tr><th>Lekcja</th><th>Temat</th><th>Wersja MD</th><th>HTML</th></tr></thead>
+<tbody>
+<tr><td>L001</td><td>Zaawansowana (opcjonalna, most z L002)</td><td><span class="badge-v38">MASTER · scalone</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L002</td><td>Fundamenty kl. 7 (atom, jon, wartościowość, W–K–S–K)</td><td><span class="badge-md">MASTER</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L003</td><td>Tlenki: nazewnictwo, charakter, reakcje, amfoteryczność</td><td><span class="badge-v38">MASTER v2.0 · poprawione.md</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L004</td><td>Wodorotlenki</td><td><span class="badge-v38">MASTER v2.0 · poprawione.md</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L005</td><td>Kwasy</td><td><span class="badge-v38">MASTER v1.0 · scalone</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L006</td><td>Sole</td><td><span class="badge-v38">MASTER v1.0 · scalone</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L007</td><td>Węglowodory / organika</td><td><span class="badge-v38">MASTER v1.0 · scalone</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L008</td><td>Biochemia (wstęp)</td><td><span class="badge-v38">MASTER v1.0 · scalone</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L009</td><td>Stężenia</td><td><span class="badge-v38">MASTER v1.0 · scalone</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L010</td><td>Stechiometria</td><td><span class="badge-v38">MASTER v1.0 · scalone</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L011</td><td>Redoks</td><td><span class="badge-v38">MASTER v1.0 · scalone</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L012</td><td>Doświadczenia</td><td><span class="badge-v38">MASTER v1.0 · scalone</span></td><td><span class="badge-html-no">brak</span></td></tr>
+<tr><td>L013</td><td>Powtórka klasy 8</td><td><span class="badge-v38">MASTER v1.0 · scalone</span></td><td><span class="badge-html-no">brak</span></td></tr>
+</tbody>
+</table>
+</div>
+<h2><span class="h2-num">I</span> Semestr 1 — nieorganika</h2>
+<p class="lead">Fundamenty kl. 7, tlenki, wodorotlenki, kwasy, początek soli. Klucz: wartościowość i wzory.</p>
+
+<div class="timeline">
+<div class="month-block">
+  <div class="month-header"><span class="month-num">IX</span><h3>Wrzesień — start i fundamenty</h3><span class="focus">L002 · BHP · tlenki</span></div>
+  <div class="month-grid">
+    <div class="lesson-card"><div class="top-row"><span class="num">T1</span><div><span class="pill pill-basic">podstawowy</span></div></div><div class="name">Organizacja + BHP + diagnoza startowa</div></div>
+    <div class="lesson-card"><div class="top-row"><span class="num">T1–2</span><div><span class="pill pill-basic">podstawowy</span> <span class="pill pill-train">egzaminacyjny</span></div></div><div class="name">L002 — Powtórka fundamentów z klasy 7</div><div class="desc">Atom, jon, wartościowość, W–K–S–K, wzory, wiązania, równania. MASTER lekcji.</div><div class="topics"><strong>Klucz:</strong> wartościowość, W–K–S–K, „współczynniki tak, indeksy nie”.</div></div>
+    <div class="lesson-card"><div class="top-row"><span class="num">T2–4</span><div><span class="pill pill-basic">podstawowy</span></div></div><div class="name">L002/L003 — Substancje, mieszaniny · L003 Tlenki (wprowadzenie)</div></div>
+    <div class="lesson-card review"><div class="top-row"><span class="num">Koniec IX</span><div><span class="pill pill-review">powtórka</span></div></div><div class="name">Powtórka #1 — Fundamenty + pierwsze tlenki</div></div>
+  </div>
+</div>
+<div class="month-block">
+  <div class="month-header"><span class="month-num">X</span><h3>Październik — tlenki i wodorotlenki</h3><span class="focus">S#1 · L004</span></div>
+  <div class="month-grid">
+    <div class="lesson-card"><div class="name">L003 cd. — Tlenki: reakcje i charakter · L004 Wodorotlenki</div><div class="desc"><span class="badge-v38">MASTER v2.0</span> w <code>poprawione.md</code>: pełna ściąga, klinika 2.0, doświadczenia, fiszki 20+, ćwiczenia A–D. Amfoteryczność w warstwie extra.</div></div>
+    <div class="lesson-card test"><div class="top-row"><span class="num">Okno</span><div><span class="pill pill-test">sprawdzian</span></div></div><div class="name">Sprawdzian #1 — Tlenki</div></div>
+  </div>
+</div>
+<div class="month-block">
+  <div class="month-header"><span class="month-num">XI–XII</span><h3>Listopad–grudzień — kwasy</h3><span class="focus">L005 · S#2</span></div>
+  <div class="month-grid">
+    <div class="lesson-card"><div class="name">L005 — Kwasy: budowa, dysocjacja, pH, reakcje z metalami</div></div>
+    <div class="lesson-card test"><div class="name">Sprawdzian #2 — Kwasy</div></div>
+  </div>
+</div>
+<div class="month-block">
+  <div class="month-header"><span class="month-num">I</span><h3>Styczeń — sole + semestralny</h3><span class="focus">L006 · S#3</span></div>
+  <div class="month-grid">
+    <div class="lesson-card"><div class="name">L006 — Sole: budowa i nazewnictwo</div></div>
+    <div class="lesson-card test"><div class="name">Sprawdzian #3 — Semestralny / sole</div></div>
+  </div>
+</div>
+</div>
+
+<h2><span class="h2-num">II</span> Semestr 2 — sole, organika, rachunki</h2>
+<div class="timeline">
+<div class="month-block sem2">
+  <div class="month-header"><span class="month-num">II–III</span><h3>Luty–marzec — sole + domknięcie nieorganiki</h3><span class="focus">L006 · S#4</span></div>
+  <div class="month-grid">
+    <div class="lesson-card"><div class="name">L006 cd. — Zobojętnianie, strącanie, metody otrzymywania · L003–L006 przekrój</div></div>
+    <div class="lesson-card test"><div class="name">Sprawdzian #4 — Chemia nieorganiczna</div></div>
+  </div>
+</div>
+<div class="month-block sem2">
+  <div class="month-header"><span class="month-num">IV</span><h3>Kwiecień — organika</h3><span class="focus">L007 · L008</span></div>
+  <div class="month-grid">
+    <div class="lesson-card"><div class="name">L007 — Węglowodory · L007/L008 — Pochodne + biochemia (wstęp)</div></div>
+  </div>
+</div>
+<div class="month-block sem2">
+  <div class="month-header"><span class="month-num">V</span><h3>Maj — stężenia, stechiometria, redoks</h3><span class="focus">L009–L011 · S#5</span></div>
+  <div class="month-grid">
+    <div class="lesson-card"><div class="name">L009 Stężenia · L010 Stechiometria · L011 Redoks + środowisko</div></div>
+    <div class="lesson-card test"><div class="name">Sprawdzian #5 — Przekrojowy</div></div>
+  </div>
+</div>
+<div class="month-block sem2">
+  <div class="month-header"><span class="month-num">VI</span><h3>Czerwiec — finał</h3><span class="focus">L012 · L013 · S#6</span></div>
+  <div class="month-grid">
+    <div class="lesson-card"><div class="name">L012 Doświadczenia · L013 Powtórka klasy 8</div></div>
+    <div class="lesson-card test"><div class="name">Sprawdzian #6 — Finałowy</div></div>
+    <div class="lesson-card optional"><div class="top-row"><span class="num">Opcja</span><div><span class="pill pill-amb">rozszerzony</span></div></div><div class="name">L001 — Lekcja zaawansowana (most z L002)</div></div>
+  </div>
+</div>
+</div>
+
+<h2><span class="h2-num">M</span> Mapowanie Nowa Era (Chemia Nowej Ery, kl. 8)</h2>
+<p class="lead">Podręcznik Chemia Nowej Ery (ed. 2024–2026) + uszczuplona podstawa 2024. Nasz indeks uzupełnia — nie zastępuje i nie uszczupla.</p>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>Dział / temat (Nowa Era / podstawa)</th><th>Nasza lekcja</th><th>Uwagi</th></tr></thead>
+    <tbody>
+      <tr><td colspan="3" style="background:#f2f5f9;font-weight:600">Powtórka + fundamenty</td></tr>
+      <tr><td>Powtórzenie z kl. 7 (atom, jon, wartościowość, równania)</td><td><strong>L002</strong></td><td>MASTER; W–K–S–K</td></tr>
+      <tr><td>Substancje, mieszaniny, rozdzielanie, BHP</td><td><strong>L002 / L003</strong></td><td>Dokumentowanie doświadczenia</td></tr>
+      <tr><td colspan="3" style="background:#f2f5f9;font-weight:600">Tlenki · Wodorotlenki · Kwasy · Sole</td></tr>
+      <tr><td>Tlenki (metali/niemetali, charakter, reakcje)</td><td><strong>L003</strong></td><td>Amfoteryczne → rozszerzenie</td></tr>
+      <tr><td>Wodorotlenki (wzory, otrzymywanie, zobojętnianie)</td><td><strong>L004</strong></td><td></td></tr>
+      <tr><td>Kwasy (beztlenowe/tlenowe, dysocjacja, pH, reakcje)</td><td><strong>L005</strong></td><td></td></tr>
+      <tr><td>Sole (budowa, nazewnictwo, metody, strącanie)</td><td><strong>L006</strong></td><td></td></tr>
+      <tr><td colspan="3" style="background:#f2f5f9;font-weight:600">Organika + rachunki</td></tr>
+      <tr><td>Węglowodory (alkany, alkeny, alkiny, spalanie)</td><td><strong>L007</strong></td><td></td></tr>
+      <tr><td>Pochodne + biochemia (alkohole, kwasy, estry; tłuszcze, cukry, białka — wstęp)</td><td><strong>L007 / L008</strong></td><td></td></tr>
+      <tr><td>Stężenia, gęstość</td><td><strong>L009</strong></td><td></td></tr>
+      <tr><td>Stechiometria (proporcje, nadmiar/niedomiar — podstawa)</td><td><strong>L010</strong></td><td></td></tr>
+      <tr><td>Redoks (utlenianie/redukcja, utleniacz/reduktor)</td><td><strong>L011</strong></td><td></td></tr>
+      <tr><td>Doświadczenia i dokumentowanie</td><td><strong>L012</strong></td><td>Format stały z L002</td></tr>
+      <tr><td>Powtórka klasy 8</td><td><strong>L013</strong></td><td></td></tr>
+      <tr><td>Treści ponad podstawę (VSEPR, hybrydyzacja, wydajność, kinetyka…)</td><td><strong>L001</strong> + rozszerzenia</td><td>Opcjonalnie</td></tr>
+    </tbody>
+  </table>
+</div>
+<p class="text-sm text-muted">W podręczniku Nowej Ery na początku kl. 8 jest powtórka tlenków i wodorotlenków — u nas to L002 + start L003/L004. Treści oznaczone w podręczniku jako nieobowiązkowe (po uszczupleniu 2024) trzymamy w warstwie rozszerzonej.</p>
+
+<div class="part-heading amb">Dla ambitnych — ścieżka rozszerzona</div>
+<div class="month-grid">
+  <div class="lesson-card optional"><div class="name">L001 — Lekcja zaawansowana (most z L002)</div><div class="desc">Konfiguracje, VSEPR, hybrydyzacja, redoks zaawansowany, stechiometria z wydajnością, kinetyka, równowaga.</div></div>
+  <div class="lesson-card optional"><div class="name">Rozszerzenia L003–L006 · organika / redoks</div><div class="desc">Tlenki amfoteryczne, sole kwaśne/zasadowe, izomeria, bilans elektronowy, szereg aktywności.</div></div>
+</div>
+
+</div><!-- /tab-chem -->
+
+<!-- ==================== EMPTY TABS ==================== -->
+
+<div id="tab-pol" class="tab-panel">
+<div class="info-bar">
+  <div class="stat-card"><div class="num">L001–L006</div><div class="lab">lektury + gramatyka</div></div>
+  <div class="stat-card"><div class="num">4</div><div class="lab">warstwy: PODSTAWA · ROZSZERZENIE · AMBITNY · ZAAWANSOWANY</div></div>
+  <div class="stat-card"><div class="num">v7.11</div><div class="lab">wersja pakietu</div></div>
+  <div class="stat-card"><div class="num">E8</div><div class="lab">rozprawka · imiesłowy · „nie”</div></div>
+</div>
+<div class="callout callout-train">
+  <span class="icon">P</span>
+  <div><strong>Polski v7.11:</strong> Lektury (Hobbit, Narnia, Plac Broni, Kajko i Kokosz, Akademia Pana Kleksa) + gramatyka (imiesłowy, „nie” RJP 2026, części vs interpretacja). Model Podstawa Plus. Źródło: <code>POLSKI_PODSTAWA_PLUS_v7.11 (3).md</code>. Struktura lekcji inna niż Bio/Chem — możliwa późniejsza unifikacja numeracji bez utraty treści. Gotowe argumenty do rozprawki i pary lektur zostają w pakiecie.</div>
+</div>
+<div class="legend">
+  <h4 style="margin-top:0">Legenda warstw</h4>
+  <div class="legend-row">
+    <div class="legend-item"><span class="pill pill-basic">PODSTAWA</span> minimum</div>
+    <div class="legend-item"><span class="pill pill-train">ROZSZERZENIE</span> uzasadnianie</div>
+    <div class="legend-item"><span class="pill pill-amb">DLA AMBITNYCH</span> opcjonalnie</div>
+    <div class="legend-item"><span class="pill pill-review">ZAAWANSOWANY</span> problemy otwarte</div>
+  </div>
+</div>
+<h2><span class="h2-num">A</span> Blok A — Powtórka (lektury IV–VI + imiesłowy)</h2>
+<div class="month-grid">
+  <div class="lesson-card start"><div class="name">L001 — Lektury IV–VI + imiesłowy (rdzeń powtórki)</div><div class="desc">Hobbit i inne; bohater dynamiczny/statyczny; imiesłowy; „nie” z imiesłowami (RJP 2026). Wzorzec HTML L001.</div></div>
+</div>
+<h2><span class="h2-num">B</span> Blok B — Bieżące (L002–L006)</h2>
+<div class="month-grid">
+  <div class="lesson-card"><div class="name">L002 — Hobbit (rozszerzenie) + gramatyka</div><div class="desc">Bilbo, Thorin, Smaug; fakt vs interpretacja; nieodmienne części mowy.</div></div>
+  <div class="lesson-card"><div class="name">L003 — Narnia</div><div class="desc">Edmund, Aslan, motywy poświęcenia i przemiany; zaimki.</div></div>
+  <div class="lesson-card"><div class="name">L004 — Plac Broni</div><div class="desc">Nemeczek, Gereb, mała ojczyzna; przymiotnik/liczebnik.</div></div>
+  <div class="lesson-card"><div class="name">L005 — Kajko i Kokosz</div><div class="desc">Współpraca, manipulacja; rzeczownik; komiks na E8.</div></div>
+  <div class="lesson-card"><div class="name">L006 — Akademia Pana Kleksa</div><div class="desc">Adaś, wyobraźnia; czasownik; formy osobowe vs bezokolicznik.</div></div>
+</div>
+<h2><span class="h2-num">C</span> System międzylekcyjny</h2>
+<p class="text-sm">Gotowe argumenty do rozprawki · pary lektur · kryteria E8 · klinika polszczyzny · schemat TEZA→DOWÓD→WNIOSEK. Uwaga: kolejność L001–L006 może być dostosowana do planu szkoły / Nowej Ery bez usuwania treści.</p>
+</div>
+
+
+<div id="tab-ang" class="tab-panel">
+<div class="info-bar">
+  <div class="stat-card"><div class="num">L01–L12</div><div class="lab">gramatyka E8 + amb</div></div>
+  <div class="stat-card"><div class="num">4</div><div class="lab">warstwy: E8 · train · amb · extra</div></div>
+  <div class="stat-card"><div class="num">v1.0</div><div class="lab">wersja pakietu</div></div>
+  <div class="stat-card"><div class="num">writing</div><div class="lab">e-mail / list / pocztówka</div></div>
+</div>
+<div class="callout callout-train">
+  <span class="icon">E</span>
+  <div><strong>Angielski v1.0:</strong> Gramatyka pod E8 (modale → future) + warstwa ambitna/olimpiada. Writing 50–120 słów. <strong>Podręcznik / repetytorium: Macmillan Education — Repetytorium Ósmoklasisty</strong> (cz. 1–2, Mann &amp; Taylore-Knowles). Źródło: <code>ANGIELSKI_PODSTAWA_PLUS_v1.0 (2).md</code>. Pakiet uzupełnia repetytorium — nie zastępuje. Kolejność L01–L12 można dopasować do rozkładu Macmillana bez usuwania treści.</div>
+</div>
+<div class="legend">
+  <h4 style="margin-top:0">Legenda</h4>
+  <div class="legend-row">
+    <div class="legend-item"><span class="pill pill-basic">E8 / basic</span> egzamin</div>
+    <div class="legend-item"><span class="pill pill-train">train</span> utrwalenie</div>
+    <div class="legend-item"><span class="pill pill-amb">ambitny</span> niuanse</div>
+    <div class="legend-item"><span class="pill pill-review">extra</span> olimpiada</div>
+  </div>
+</div>
+<h2><span class="h2-num">G</span> Gramatyka L01–L12</h2>
+<div class="month-grid">
+  <div class="lesson-card"><div class="name">L01 — Czasowniki modalne i have to</div><div class="desc">must / have to / mustn't / don't have to · can/could/may/might · should</div></div>
+  <div class="lesson-card"><div class="name">L02 — Operatory BE i DO</div></div>
+  <div class="lesson-card"><div class="name">L03 — Tryb rozkazujący</div></div>
+  <div class="lesson-card"><div class="name">L04 — Czasy teraźniejsze i przeszłe</div></div>
+  <div class="lesson-card"><div class="name">L05 — Present Perfect</div></div>
+  <div class="lesson-card"><div class="name">L06 — Past Simple i Past Continuous</div></div>
+  <div class="lesson-card"><div class="name">L07 — Rzeczownik</div></div>
+  <div class="lesson-card"><div class="name">L08 — Przedimki a/an/the</div></div>
+  <div class="lesson-card"><div class="name">L09 — Przymiotniki</div></div>
+  <div class="lesson-card"><div class="name">L10 — Przysłówki</div></div>
+  <div class="lesson-card"><div class="name">L11 — Zaimki</div></div>
+  <div class="lesson-card"><div class="name">L12 — Future Simple</div></div>
+</div>
+<h2><span class="h2-num">W</span> Writing (E8)</h2>
+<div class="month-grid">
+  <div class="lesson-card"><div class="name">E-mail / list / pocztówka</div><div class="desc">50–120 słów · 3 podpunkty · Hi/Dear · Write back soon · podpis XYZ · klinika błędów</div></div>
+</div>
+<p class="text-sm text-muted">80/20: modale · BE/DO · Present/Past/Perfect · przedimki · wypowiedź pisemna. Kolejność lekcji może być dostosowana do podręcznika bez usuwania treści.</p>
+</div>
+
+
+
+
+
+
+<div id="tab-konk" class="tab-panel">
+<div class="info-bar">
+  <div class="stat-card"><div class="num">A</div><div class="lab">Kuratoryjne LKO (rekrutacja)</div></div>
+  <div class="stat-card"><div class="num">B</div><div class="lab">Ogólnopolskie (trening)</div></div>
+  <div class="stat-card"><div class="num">C</div><div class="lab">Lokalne: Kraśnik · Szastarka</div></div>
+  <div class="stat-card"><div class="num">D</div><div class="lab">Twórcze · PP · sport</div></div>
+</div>
+
+<div class="callout callout-test">
+  <span class="icon">!</span>
+  <div><strong>Lokalizacja:</strong> województwo <strong>lubelskie</strong> · powiat <strong>kraśnicki</strong> · gmina <strong>Szastarka</strong>.  
+  Nie śląskie. Priorytet A = konkursy Lubelskiego Kuratora Oświaty. Punkty do liceum tylko z <strong>aktualnego wykazu</strong> kuratora / rekrutacji. Terminy edycji zmieniają się — w indeksie: <em>do potwierdzenia</em> + data sprawdzenia. Linki zewnętrzne.</div>
+</div>
+
+<div class="callout callout-train">
+  <span class="icon">S</span>
+  <div><strong>Strategia kl. 8:</strong> 1× kuratoryjny (biologia <em>lub</em> chemia) · mat jako trening · lokalne plastyka/recytacja (powiat) · 2–4 wysyłkowe · opcjonalnie PP/pożarnictwo. Pełny rejestr: <code>KONKURSY_2026_2027.md</code>.</div>
+</div>
+
+<h2><span class="h2-num">0</span> Oficjalne źródła (zewnętrzne)</h2>
+<ul>
+  <li><a href="https://kuratorium.lublin.pl/" target="_blank" rel="noopener">Kuratorium Oświaty w Lublinie</a> — strona główna · sprawdzono: 2026-09-12 · aktualizacja linków 2026-09-13</li>
+  <li><a href="https://kuratorium.lublin.pl/?m=55&amp;ms=296" target="_blank" rel="noopener">Konkursy przedmiotowe LKO</a> — regulamin, terminy, zakresy, arkusze</li>
+  <li><a href="https://kuratorium.lublin.pl/?akc=drnews&amp;id=14268" target="_blank" rel="noopener">Regulamin konkursów przedmiotowych 2025/2026</a> (+ terminarz, zakresy PDF)</li>
+  <li>Wykaz zawodów do rekrutacji 2026/2027 — szukaj na <a href="https://kuratorium.lublin.pl/" target="_blank" rel="noopener">kuratorium.lublin.pl</a> (aktualności)</li>
+  <li><a href="https://www.gov.pl/web/edukacja" target="_blank" rel="noopener">Ministerstwo Edukacji</a></li>
+  <li><a href="https://www.olimpus.edu.pl/" target="_blank" rel="noopener">OLIMPUS</a> · <a href="https://www.kangur-mat.pl/" target="_blank" rel="noopener">Kangur Matematyczny</a> · <a href="https://swietlik.edu.pl/" target="_blank" rel="noopener">Świetlik</a></li>
+  <li><a href="https://www.archimedes.edu.pl/" target="_blank" rel="noopener">Archimedes</a> (jeśli domena aktywna) · Albus / CES — sprawdź aktualny organizator</li>
+  <li><a href="https://samorzad.gov.pl/web/powiat-krasnicki" target="_blank" rel="noopener">Powiat kraśnicki</a> · <a href="https://samorzad.gov.pl/web/gmina-szastarka" target="_blank" rel="noopener">Gmina Szastarka</a></li>
+</ul>
+<p class="text-sm text-muted">Statusy: <code>PLANOWANY</code> · <code>DO SPRAWDZENIA</code> · <code>OTWARTY</code> · <code>ZAKOŃCZONY</code> · <code>ARCHIWALNY</code> (tylko arkusze).</p>
+
+<h2><span class="h2-num">A</span> Priorytet A — kuratoryjne (lubelskie)</h2>
+<p class="lead">Szkolny → rejonowy → wojewódzki. Zgłoszenie zwykle przez <strong>szkołę</strong>. Cel: finalista/laureat → możliwe korzyści rekrutacyjne (tylko jeśli w wykazie).</p>
+<div class="table-wrap">
+<table class="status-table">
+<thead><tr><th>Przedmiot</th><th>Priorytet u nas</th><th>Zakres (idea)</th><th>Rekrutacja</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td><strong>Biologia</strong></td><td>wysoki (główny kandydat)</td><td>genetyka, ekologia, komórka — pakiet L011–L044</td><td>sprawdzić wykaz</td><td>DO SPRAWDZENIA (edycja 2026/27)</td></tr>
+<tr><td><strong>Chemia</strong></td><td>wysoki (alternatywa)</td><td>wzory, równania, obliczenia, doświadczenia</td><td>sprawdzić wykaz</td><td>DO SPRAWDZENIA</td></tr>
+<tr><td><strong>Matematyka</strong></td><td>średni (zapas / trening)</td><td>zadania problemowe</td><td>sprawdzić wykaz</td><td>DO SPRAWDZENIA</td></tr>
+<tr><td>J. angielski</td><td>opcjonalny</td><td>czytanie, leksyka, gramatyka</td><td>sprawdzić wykaz</td><td>DO SPRAWDZENIA</td></tr>
+<tr><td>J. polski · historia · geografia · fizyka</td><td>tylko przy pasji</td><td>wg zakresu LKO</td><td>sprawdzić wykaz</td><td>DO SPRAWDZENIA</td></tr>
+</tbody>
+</table>
+</div>
+<p class="text-sm">Edycja 2025/26: regulamin opublikowany IX 2025; arkusze etapów na stronie LKO. Na 2026/27 — czekać na nowy regulamin/terminarz (nie wpisywać sztywnych dat).</p>
+
+<h2><span class="h2-num">B</span> Priorytet B — ogólnopolskie (trening, dyplom)</h2>
+<div class="table-wrap">
+<table class="status-table">
+<thead><tr><th>Konkurs</th><th>Przedmioty</th><th>Cel</th><th>Rekrutacja</th><th>Link</th></tr></thead>
+<tbody>
+<tr><td>OLIMPUS</td><td>PL, MAT, EN, BIO, CHEM, FIZ, HIS, GEO</td><td>trening + ranking</td><td>zwykle nie</td><td><a href="https://www.olimpus.edu.pl/" target="_blank" rel="noopener">olimpus.edu.pl</a></td></tr>
+<tr><td>Kangur Matematyczny</td><td>matematyka</td><td>rozumowanie</td><td>zwykle nie</td><td><a href="https://www.kangur-mat.pl/" target="_blank" rel="noopener">kangur-mat.pl</a></td></tr>
+<tr><td>Świetlik</td><td>przyroda / bio-chem-fiz</td><td>uzupełnienie nauk</td><td>zwykle nie</td><td><a href="https://swietlik.edu.pl/" target="_blank" rel="noopener">swietlik.edu.pl</a></td></tr>
+<tr><td>Archimedes / Albus</td><td>wiele</td><td>diagnoza, trening</td><td>zwykle nie</td><td>sprawdź aktualny regulamin</td></tr>
+</tbody>
+</table>
+</div>
+<p class="text-sm"><strong>Nie stawiać na równi z LKO.</strong> OLIMPUS/Kangur = trening; kuratoryjny = priorytet formalny.</p>
+
+<h2><span class="h2-num">C</span> Priorytet C — lokalne (powiat kraśnicki · gmina Szastarka)</h2>
+<p class="lead">Śledź: <a href="https://samorzad.gov.pl/web/powiat-krasnicki" target="_blank" rel="noopener">powiat kraśnicki</a>, <a href="https://samorzad.gov.pl/web/gmina-szastarka" target="_blank" rel="noopener">gmina Szastarka</a>, CKiP Kraśnik, szkoła, GOK. Edycje powtarzalne — terminy co roku inne.</p>
+<div class="table-wrap">
+<table class="status-table">
+<thead><tr><th>Typ</th><th>Przykłady (powiat / gmina)</th><th>Cel</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td>Plastyka</td><td>„Biali Ułani w Kraśniku” · „Bezpieczna Zima” · pisanki · ozdoby ludowe · antytytoniowy (Sanepid/Starostwo)</td><td>portfolio, dyplom</td><td>DO SPRAWDZENIA (kolejna edycja)</td></tr>
+<tr><td>Recytacja</td><td>Jesienny Konkurs Recytatorski (eliminacje powiatowe → województwo)</td><td>występ, nominacje</td><td>DO SPRAWDZENIA</td></tr>
+<tr><td>Krajoznawstwo</td><td>Powiatowy Konkurs „Czy znasz swój region?” im. I. Kałwy (+ plastyka/album)</td><td>wiedza o regionie</td><td>DO SPRAWDZENIA</td></tr>
+<tr><td>Historia lokalna</td><td>„Z kart historii Ziemi Kraśnickiej” (miasto Kraśnik, kl. 6–8)</td><td>historia lokalna</td><td>DO SPRAWDZENIA</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2><span class="h2-num">D</span> Twórcze · mundurowe · sport</h2>
+<ul>
+  <li><strong>Plastyka międzynar.:</strong> <a href="https://www.konkursplastyczny.pl/" target="_blank" rel="noopener">konkursplastyczny.pl</a> (m.in. Nagroda MSZ Japonii) — sprawdź kategorię wiekową i termin doręczenia</li>
+  <li><strong>PP / pożarnictwo:</strong> „Młodzież Zapobiega Pożarom” · OSP · konkursy pierwszej pomocy</li>
+  <li><strong>Pływanie:</strong> tylko przy regularnym treningu</li>
+</ul>
+
+<h2><span class="h2-num">E</span> Bio / chem — konkurs ≠ [PODSTAWA E8]</h2>
+<p class="text-sm">W pakiecie lekcji warstwa <strong>[KONKURS]</strong> osobno od obowiązków klasy 8. Rdzeń przygotowania: L011–L020 genetyka · L030–L032 ewolucja · L040–L044 ekologia. Chemia: atom → wzory → równania → stężenia (pakiet chemii).</p>
+
+<h2><span class="h2-num">F</span> Tydzień (szkic)</h2>
+<div class="table-wrap">
+<table class="status-table">
+<thead><tr><th>Dzień</th><th>Aktywność</th></tr></thead>
+<tbody>
+<tr><td>Pn</td><td>Bio lub chemia 45 min</td></tr>
+<tr><td>Wt</td><td>Matematyka 30–40 min</td></tr>
+<tr><td>Śr</td><td>Plastyka / recytacja (lokalne)</td></tr>
+<tr><td>Cz</td><td>Drugi blok 45 min</td></tr>
+<tr><td>Pt</td><td>Quiz / odpoczynek</td></tr>
+<tr><td>So</td><td>Zadanie konkursowe</td></tr>
+<tr><td>Nd</td><td>Terminy + plan · sprawdź kuratorium / powiat</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="tab-mat" class="tab-panel">
+  <div class="empty-panel">
+    <h3>Matematyka</h3>
+    <p>Zakładka w przygotowaniu.</p>
+    <p class="text-sm text-muted">Tu pojawi się indeks roku z numeracją wersji, gdy pakiet będzie gotowy.</p>
+  </div>
+</div>
+<div id="tab-fiz" class="tab-panel">
+  <div class="empty-panel">
+    <h3>Fizyka</h3>
+    <p>Zakładka w przygotowaniu.</p>
+    <p class="text-sm text-muted">Tu pojawi się indeks roku z numeracją wersji, gdy pakiet będzie gotowy.</p>
+  </div>
+</div>
+<div id="tab-geo" class="tab-panel">
+  <div class="empty-panel">
+    <h3>Geografia</h3>
+    <p>Zakładka w przygotowaniu.</p>
+    <p class="text-sm text-muted">Tu pojawi się indeks roku z numeracją wersji, gdy pakiet będzie gotowy.</p>
+  </div>
+</div>
+<div id="tab-his" class="tab-panel">
+  <div class="empty-panel">
+    <h3>Historia</h3>
+    <p>Zakładka w przygotowaniu.</p>
+    <p class="text-sm text-muted">Tu pojawi się indeks roku z numeracją wersji, gdy pakiet będzie gotowy.</p>
+  </div>
+</div>
+
+
+<section id="html-lekcji-aktualne" style="margin:24px 0 8px;padding:16px 18px;border:1px solid #e3e8ef;border-radius:14px;background:#f7f9fc">
+  <h2><span class="h2-num">HTML</span> Aktualne pliki lekcji (2026-09-13)</h2>
+  <p class="lead">Indeks linkuje do HTML-i, które już są w folderze. Kanon wykładu nadal jest w MD. Bez paska postępu i checkboxów TOC.</p>
+  <h3>Biologia</h3>
+  <ul>
+    <li><a href="BIOLOGIA_L001_KOMORKA.html">L001 — Komórka</a></li>
+    <li><a href="BIOLOGIA_L002_CZLOWIEK.html">L002 — Człowiek (most do genetyki)</a></li>
+    <li><a href="BIOLOGIA_L003_DIAGNOZA.html">L003 — Diagnoza startowa genetyki</a></li>
+    <li><a href="BIOLOGIA_L011_DNA.html">L011 — DNA</a></li>
+    <li><a href="BIOLOGIA_L015_MEJOZA.html">L015 — Mejoza</a></li>
+    <li><a href="BIOLOGIA_L017_PUNNETT.html">L017 — Punnett / jedna cecha</a></li>
+  </ul>
+  <h3>Chemia</h3>
+  <ul>
+    <li><a href="CHEMIA_L001_FUNDAMENTY.html">L001 — Fundamenty</a></li>
+    <li><a href="CHEMIA_L002_TLENKI.html">L002 — Tlenki</a></li>
+    <li><a href="CHEMIA_L013_ZAAWANSOWANA_extra.html">L013 — Extra zaawansowana</a></li>
+  </ul>
+  <p class="text-sm text-muted">Pełna lista bloków MD (także bez HTML): <a href="STAN_LEKCJI_PODSTAWA_PLUS.md">STAN_LEKCJI_PODSTAWA_PLUS.md</a>. Polski i angielski — na razie tylko MD.</p>
+</section>
+
+<div class="footer">
+  L000 · <strong>Indeks roku MASTER v1.1 — OBOWIĄZUJĄCY</strong> · jeden plik HTML · Biologia v3.9 · Chemia pakiet v2.0 · Polski v7.11 · Angielski v1.0 · HTML lekcji: bio L001 L002 L003 L011 L015 L017 · chem L001 L002 L013 · Konkursy: LKO lubelskie + Kraśnik/Szastarka + ogólnopolskie · Mat/Fiz/Geo/His: puste<br>
+  Bio/Chem: Nowa Era · Polski: WSiP · Angielski: Macmillan · 2026-09-12 · aktualizacja linków 2026-09-13
+</div>
+
+</div>
+
+<script>
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    const id = 'tab-' + btn.dataset.tab;
+    const panel = document.getElementById(id);
+    if (panel) panel.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>

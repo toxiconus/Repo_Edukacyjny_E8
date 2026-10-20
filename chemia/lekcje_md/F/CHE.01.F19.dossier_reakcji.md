@@ -6,6 +6,7 @@ wymaga: "F16; F17"
 poglebia: "N02–N08; R07–R09; X01–X09; K01–K11"
 zrodla: "MASTER v17.0; MASTER v15.0"
 opis: "Materiał roboczy lekcji (nie gotowa lekcja). Spis i zakres: chemia/plany/CHE_SPIS_TRESCI.md"
+stan: W23 — GPT-6, 2026-10-09; audyt celowany i poprawki punktowe, pełna niezależna recenzja nadal otwarta
 ---
 # CHE.01F.19-DOSSIER-REAKCJI — DOSSIER REAKCJI
 
@@ -255,11 +256,41 @@ Najczęstszy błąd nie powinien być tylko poprawiony. Trzeba zapisać: **objaw
 
 Bez zaglądania do wykładu odpowiedz: **co już potrafię w obszarze „Dossier reakcji” i gdzie pojawia się pierwsza niepewność?** Wynik diagnozy ma wskazać fragment do powtórki, a nie być oceną końcową.
 
+## UZUPEŁNIENIE KANONICZNE W6 — KARTA DOSSIER REAKCJI
+
+### Pola rekordu
+
+Każdy opis reakcji powinien rozdzielać: nazwę i typ reakcji; substraty; produkty; równanie cząsteczkowe; równanie jonowe, jeśli ma zastosowanie; warunki i medium; obserwacje; próby identyfikacyjne; interpretację; efekt energetyczny; katalizator; BHP; zastosowanie; ograniczenia modelu i źródła danych. Obserwacja nie jest równaniem ani dowodem tożsamości produktu. Nie wyciągaj wniosku o konkretnym gazie lub osadzie z jednego objawu bez próby identyfikacyjnej.
+
+Reakcja może przebiegać wieloetapowo, chociaż zapis szkolny pokazuje sumaryczną przemianę. Możliwość zajścia reakcji nie jest tym samym co jej szybkość. Katalizator zmienia szybkość reakcji, ale nie jest zużywany w równaniu sumarycznym. Wydzielanie ciepła nie oznacza samo w sobie, że każda reakcja egzotermiczna przebiega gwałtownie.
+
+### Przykład: neutralizacja
+
+Równanie cząsteczkowe:
+
+HCl(aq) + NaOH(aq) → NaCl(aq) + H₂O(l)
+
+Równanie jonowe skrócone:
+
+H⁺(aq) + OH⁻(aq) → H₂O(l)
+
+**Obserwacje:** zwykle nie powstaje osad ani gaz; roztwór może się ogrzać. **Wniosek/model:** jony H⁺ i OH⁻ tworzą wodę. **Warunki:** roztwory wodne; przy pomiarze efektu cieplnego trzeba uwzględnić ilości i stężenia reagentów oraz straty ciepła. **BHP:** kwas i zasada mogą działać żrąco; wymagane są okulary, kontrola odczynników i właściwa procedura.
+
+### Checklista jakości dossier
+
+- Czy wzory i równanie są poprawne oraz zbilansowane?
+- Czy warunki, stany skupienia i medium są podane, gdy wpływają na zapis?
+- Czy oddzielono obserwację od wniosku i wskazano próbę identyfikacyjną?
+- Czy opis energii nie utożsamia „egzotermiczna” z „gwałtowna”?
+- Czy BHP jest konkretne dla danych reagentów?
+
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
 > Źródło: `chemia/plany/audyty/W1_perplexity_F15-F21₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
 
-### Poprawki
+### Poprawki — status wdrożenia
+
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W6”.
 
 - Dossier reakcji powinno zawierać warunki, a nie tylko samo równanie.
 - Należy odróżnić:
@@ -277,9 +308,11 @@ Bez zaglądania do wykładu odpowiedz: **co już potrafię w obszarze „Dossier
 - Katalizator przyspiesza reakcję, ale nie jest zużywany w jej bilansie stechiometrycznym.
 - Wydzielanie ciepła nie oznacza, że wszystkie reakcje egzotermiczne są gwałtowne.
 
-### Uzupełnienia
+### Uzupełnienia — status wdrożenia
 
 #### Szablon dossier reakcji
+
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W6”.
 
 - nazwa reakcji;
 - typ reakcji;
@@ -307,3 +340,8 @@ Równanie jonowe skrócone:
 Obserwacja: zwykle brak osadu i gazu; roztwór może się ogrzać.
 
 Wniosek: jony wodoru reagują z jonami wodorotlenkowymi, tworząc wodę.
+
+
+## W23 — dossier reakcji (2026-10-09, GPT-6)
+
+Sprawdzono kryteria warunków, obserwacji, wniosku, identyfikacji produktu, energii i BHP. Utrwalono, że zapis równania nie zastępuje warunków ani próby identyfikacyjnej; audyt punktowy.

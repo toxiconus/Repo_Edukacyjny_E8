@@ -3,11 +3,14 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (14 pl., 147 KB)
-- (zwinięte; `ls .`)
+## .  (16 pl., 260 KB)
+- (zwinięte; `ls .`) — duże:
+- ⚠`SPIS_WSZYSTKICH.md` 56 KB
 
-## angielski  (9 pl., 1.8 MB)
+## angielski  (11 pl., 2.3 MB)
 - ⚠`ANGIELSKI_PODSTAWA_PLUS_v1.0 (2).md` 474 KB
+- ⚠`ANGIELSKI_PODSTAWA_PLUS_v1.0.md` 477 KB
+- `BANK_PYTAN_ANG.md` 3 KB
 - `L000-EN-Fiszki.txt` 11 KB
 - ⚠`L001-EN-Wszystkie-lekcje.md` 470 KB
 - ⚠`L002-EN-Operatory-i-czasowniki-posilkowe.html` 256 KB
@@ -17,11 +20,38 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`L006-EN-Past-Simple-Continuous.html` 130 KB
 - ⚠`L012-EN-Future-Simple.html` 121 KB
 
-## angielski/plany/audyty  (2 pl., 24 KB)
-- `W1_ANGIELSKI_ocena_2026-10-09.md` 3 KB
-- `W1_perplexity_ANGIELSKI_2026-10-09.md` 21 KB
+## angielski/archiwum/lekcje_html_stare  (6 pl., 902 KB)
+- ⚠`L002-EN-Operatory-i-czasowniki-posilkowe.html` 256 KB
+- ⚠`L003-EN-Tryb-rozkazujacy-czasowniki-stanow-phrasal-verbs.html` 145 KB
+- ⚠`L004-EN-Czasy-terazniejsze-i-przeszle.html` 109 KB
+- ⚠`L005-EN-Present-Perfect.html` 141 KB
+- ⚠`L006-EN-Past-Simple-Continuous.html` 130 KB
+- ⚠`L012-EN-Future-Simple.html` 121 KB
 
-## biologia  (12 pl., 2.2 MB)
+## angielski/html  (7 pl., 942 KB)
+- ⚠`ANG.01.L002.operatory_i_czasowniki_posilkowe.html` 204 KB
+- ⚠`ANG.01.L003.tryb_rozkazujacy_stative_phrasal_verbs.html` 153 KB
+- ⚠`ANG.01.L004.czasy_terazniejsze_i_przeszle.html` 141 KB
+- ⚠`ANG.01.L005.present_perfect.html` 158 KB
+- ⚠`ANG.01.L006.past_simple_continuous.html` 141 KB
+- ⚠`ANG.01.L012.future_simple.html` 142 KB
+- `index.html` 2 KB
+
+## angielski/lekcje_md  (6 pl., 352 KB)
+- ⚠`ANG.01.L002.operatory_i_czasowniki_posilkowe.md` 88 KB
+- ⚠`ANG.01.L003.tryb_rozkazujacy_stative_phrasal_verbs.md` 56 KB
+- `ANG.01.L004.czasy_terazniejsze_i_przeszle.md` 49 KB
+- ⚠`ANG.01.L005.present_perfect.md` 60 KB
+- `ANG.01.L006.past_simple_continuous.md` 49 KB
+- `ANG.01.L012.future_simple.md` 50 KB
+
+## angielski/plany/audyty  (18 pl., 385 KB)
+- (zwinięte; `ls angielski/plany/audyty`) — duże:
+- ⚠`ULEPSZ_OLI_L004_2026-10-11.md` 55 KB
+- ⚠`ULEPSZ_OLI_L006_2026-10-11.md` 55 KB
+
+## biologia  (14 pl., 2.8 MB)
+- (zwinięte; `ls biologia`) — duże:
 - ⚠`BIO.all.v01.00.md` 711 KB
 - ⚠`BIOLOGIA_L001_KOMORKA v4.html` 161 KB
 - ⚠`BIOLOGIA_L002_CZLOWIEK_v4.html` 145 KB
@@ -30,35 +60,39 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIOLOGIA_L012_Chromosom v2.html` 230 KB
 - ⚠`BIOLOGIA_L015_MEJOZA.html` 85 KB
 - ⚠`BIOLOGIA_L017_PUNNETT (2).html` 88 KB
-- ⚠`BIOLOGIA_PODSTAWA_PLUS_v3.9_working (5).md` 578 KB
-- `INDEKS.html` 8 KB
-- ⚠`L000-INDEKS-ROKU_MASTER_v1.0 (8) (1).html` 54 KB
-- `STAN_LEKCJI_PODSTAWA_PLUS.md` 15 KB
 
-## biologia/bio  (2 pl., 7 KB)
+## biologia/archiwum/lekcje_html_stare  (8 pl., 990 KB)
+- ⚠`BIOLOGIA_L001_KOMORKA.html` 161 KB
+- ⚠`BIOLOGIA_L002_CZLOWIEK.html` 145 KB
+- ⚠`BIOLOGIA_L003_DIAGNOZA.html` 142 KB
+- ⚠`BIOLOGIA_L011_DNA.html` 85 KB
+- ⚠`BIOLOGIA_L012_CHROMOSOM.html` 230 KB
+- ⚠`BIOLOGIA_L015_MEJOZA.html` 85 KB
+- ⚠`BIOLOGIA_L017_PUNNETT.html` 88 KB
+- ⚠`L000-INDEKS-ROKU.html` 54 KB
+
+## biologia/bio  (2 pl., 10 KB)
 - `BIO_KATALOG.md` 5 KB
-- `PRZEKAZANIE.md` 3 KB
+- `PRZEKAZANIE.md` 5 KB
 
 ## biologia/bio/grafiki/propozycje  (3 pl., 30 KB)
 - `U08_droga_wzrokowa.svg` 10 KB
 - `U10_krzywe_glukozy.svg` 10 KB
 - `U10_os_tarczycowa.svg` 10 KB
 
-## biologia/bio/md  (12 pl., 365 KB)
-- `B10_powtorka_uklady_czlowieka.md` 19 KB
-- `B1b_krzyzowki_mendel.md` 22 KB
-- `B2a_skora_i_uklad_ruchu.md` 19 KB
-- `B2b_uklad_pokarmowy_i_odzywianie.md` 19 KB
-- `B2c_oddychanie_i_wydalanie.md` 18 KB
-- `B2d_uklad_nerwowy_i_zmysly.md` 20 KB
-- `B2e_uklad_dokrewny.md` 15 KB
-- `B2f_rozmnazanie_i_rozwoj.md` 19 KB
-- `B2g_homeostaza.md` 31 KB
-- ⚠`L010_dna_od_zera.md` 51 KB
-- ⚠`REV01_organizacja_i_chemizm_zycia.md` 56 KB
-- ⚠`REV02_roznorodnosc_zycia.md` 76 KB
+## biologia/bio/md  (35 pl., 1.7 MB)
+- (zwinięte; `ls biologia/bio/md`) — duże:
+- ⚠`BIO.00.REV02.roznorodnosc_zycia.md` 61 KB
+- ⚠`BIO.02.L010.dna_od_zera.md` 65 KB
+- ⚠`BIO.02.L019.dlaczego_grupy_krwi_nie_pasuja.md` 83 KB
+- ⚠`BIO.02.L020.czym_sa_mutacje_i_jakie.md` 84 KB
+- ⚠`BIO.02.L021.powtorka_genetyki.md` 87 KB
+- ⚠`BIO.02.L022.biotechnologia_i_inzynieria_genetyczna.md` 90 KB
+- ⚠`BIO.07.H01.homeostaza.md` 81 KB
+- ⚠`BIO.07.U01.skora_i_uklad_ruchu.md` 59 KB
 
-## biologia/bio/narzedzia  (2 pl., 11 KB)
+## biologia/bio/narzedzia  (3 pl., 14 KB)
+- `katalog_wizualizacji.py` 3 KB
 - `md2html_bio.py` 8 KB
 - `sprawdz_bio.js` 2 KB
 
@@ -77,39 +111,56 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## biologia/bio/szablon/wizualizacje  (59 pl., 300 KB)
 - (zwinięte; `ls biologia/bio/szablon/wizualizacje`)
 
-## biologia/md  (37 pl., 711 KB)
-- (zwinięte; `ls biologia/md`) — duże:
-- ⚠`L002_powtorka_czlowiek.md` 74 KB
-- ⚠`L012_jak_dna_jest_upakowane_w.md` 54 KB
-- ⚠`L014_jak_komorki_ciala_powstaja_i.md` 57 KB
-- ⚠`X01_szablon_lekcji.md` 60 KB
+## biologia/html  (46 pl., 7.6 MB)
+- (zwinięte; `ls biologia/html`) — duże:
+- ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 187 KB
+- ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 202 KB
+- ⚠`BIO.01.L001.komorka.html` 221 KB
+- ⚠`BIO.01.L001A.dodatek_ambitny_od_komorki_do.html` 155 KB
+- ⚠`BIO.01.L002.powtorka_czlowiek.html` 191 KB
+- ⚠`BIO.01.L003.diagnoza.html` 200 KB
+- ⚠`BIO.01.L004.organizacja_budowy_organizmu_od_komorki.html` 139 KB
+- ⚠`BIO.01.L005.blona_komorkowa_i_transport_substancji.html` 136 KB
 
-## biologia/plany  (4 pl., 45 KB)
+## biologia/md  (74 pl., 1.8 MB)
+- (zwinięte; `ls biologia/md`) — duże:
+- ⚠`BIO.01.L001.komorka.md` 81 KB
+- ⚠`BIO.01.L002.powtorka_czlowiek.md` 76 KB
+- ⚠`BIO.01.L003.diagnoza.md` 77 KB
+- ⚠`BIO.02.L012.jak_dna_jest_upakowane_w.md` 55 KB
+- ⚠`BIO.02.L014.jak_komorki_ciala_powstaja_i.md` 61 KB
+- ⚠`BIO.02.L015.mejoza.md` 60 KB
+- ⚠`BIO.99.X01.szablon_lekcji.md` 61 KB
+- ⚠`L002_powtorka_czlowiek.md` 74 KB
+
+## biologia/md/archiwum  (3 pl., 46 KB)
+- `L001_komorka_jako_podstawowa_jednostka_zycia.md` 13 KB
+- `L003_diagnoza_startowa_genetyki.md` 17 KB
+- `L015_jak_powstaja_gamety_i_skad.md` 15 KB
+
+## biologia/plany  (4 pl., 58 KB)
 - `ANALIZA_ARKUSZY_LKO_BIO.md` 4 KB
-- `KATALOG_GRAFIK_BIO.md` 32 KB
+- `KATALOG_GRAFIK_BIO.md` 45 KB
 - `PLAN_BRAKUJACE_LEKCJE.md` 3 KB
 - `PLAN_RYSUNKOW_BIO.md` 5 KB
 
-## biologia/plany/audyty  (12 pl., 298 KB)
-- ⚠`W1_perplexity_REV01_chemizm_2026-10-19.md` 51 KB
-- `W1_perplexity_REV02_tura1_2026-10-20.md` 22 KB
-- `W1_zadanie10_B10_2026-10-18.md` 23 KB
-- `W1_zadanie17_genetyka_mendel_2026-10-18.md` 24 KB
-- `W1_zadanie7_bio_luki_REV01_REV02_2026-10-18.md` 33 KB
-- `W1_zadanie8_homeostaza_2026-10-18.md` 32 KB
-- `W1_zadanie9a_B2a_2026-10-18.md` 22 KB
-- `W1_zadanie9b_pokarmowy_2026-10-18.md` 17 KB
-- `W1_zadanie9c_B2c_2026-10-18.md` 17 KB
-- `W1_zadanie9d_B2d_2026-10-18.md` 20 KB
-- `W1_zadanie9e_B2e_2026-10-18.md` 18 KB
-- `W1_zadanie9f_B2f_2026-10-18.md` 19 KB
+## biologia/plany/audyty  (57 pl., 1.8 MB)
+- (zwinięte; `ls biologia/plany/audyty`) — duże:
+- ⚠`GOTOWE_GPTC_L019_2026-10-12.md` 83 KB
+- ⚠`GOTOWE_GPTC_L022_biotechnologia_2026-10-12.md` 86 KB
+- ⚠`GOTOWE_ZAI_L020_2026-10-12.md` 84 KB
+- ⚠`GOTOWE_ZAI_U11_2026-10-12.md` 105 KB
+- ⚠`ULEPSZ_GLM_U01_2026-10-11.md` 66 KB
+- ⚠`ULEPSZ_GLM_U03_2026-10-11.md` 124 KB
+- ⚠`ULEPSZ_GLM_U10_2026-10-11.md` 68 KB
+- ⚠`ULEPSZ_H01_gpt-6_2026-10-11.md` 52 KB
 
 ## biologia/wizualizacje  (2 pl., 133 KB)
 - ⚠`BIO.010x.v01.00.html` 107 KB
 - `BIO.011w.v01.00.html` 27 KB
 
-## chemia  (2 pl., 10 KB)
-- `INDEKS.html` 10 KB
+## chemia  (2 pl., 20 KB)
+- `INDEKS.html` 20 KB
 - `PLAN_LEKCJI.md` 0 KB
 
 ## chemia/archiwum  (1 pl., 1 KB)
@@ -142,7 +193,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (17 pl., 150 KB)
+## chemia/che-modular  (17 pl., 152 KB)
 - (zwinięte; `ls chemia/che-modular`)
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
@@ -176,10 +227,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/engine/registry/layout  (1 pl., 1 KB)
 - `shell.json` 1 KB
 
-## chemia/che-modular/engine/registry/profile  (3 pl., 32 KB)
-- `F01_jak_mysli_chemik.json` 9 KB
-- `F04_atom.json` 11 KB
-- `wspolny.json` 12 KB
+## chemia/che-modular/engine/registry/profile  (16 pl., 176 KB)
+- (zwinięte; `ls chemia/che-modular/engine/registry/profile`)
 
 ## chemia/che-modular/engine/registry/tables  (1 pl., 4 KB)
 - `index.json` 4 KB
@@ -301,11 +350,19 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `lesson-shell.css` 10 KB
 - `lesson-shell.js` 8 KB
 
-## chemia/che-modular/engine/src/lekcja  (4 pl., 94 KB)
+## chemia/che-modular/engine/src/lekcja  (6 pl., 112 KB)
 - `index.html` 1 KB
 - `lekcja.css` 4 KB
 - `lekcja.js` 2 KB
+- `nawigacja.css` 7 KB
+- `nawigacja.js` 11 KB
 - ⚠`rozszerzenia.js` 87 KB
+
+## chemia/che-modular/engine/src/lite  (4 pl., 37 KB)
+- `che-lite.js` 1 KB
+- `lab-dane.json` 15 KB
+- `rx-lite.js` 13 KB
+- `stech-lite.js` 8 KB
 
 ## chemia/che-modular/engine/src/moduly  (72 pl., 1.0 MB)
 - (zwinięte; `ls chemia/che-modular/engine/src/moduly`) — duże:
@@ -332,6 +389,13 @@ Pominięte: .specstory/, .vscode/, .claude/
 - (zwinięte; `ls chemia/che-modular/engine/src/style`) — duże:
 - ⚠`02_box-sizing.css` 60 KB
 
+## chemia/che-modular/lessons-md  (5 pl., 12 KB)
+- `POMINIETE_J04-J10_K03_K05_logi.md` 1 KB
+- `POMINIETE_K04_audyt.md` 2 KB
+- `POMINIETE_K06_audyt.md` 2 KB
+- `POMINIETE_K08_audyt.md` 1 KB
+- `POMINIETE_Z_ZRODEL.md` 5 KB
+
 ## chemia/che-modular/lessons-md/N01  (3 pl., 9 KB)
 - `DANE.md` 2 KB
 - `GFX.md` 3 KB
@@ -349,15 +413,19 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `MAKRA.md` 2 KB
 - `MAKRA_ROZWINIECIE.md` 2 KB
 
-## chemia/che-modular/lessons-md/gotowe  (34 pl., 1.4 MB)
+## chemia/che-modular/lessons-md/gotowe  (73 pl., 2.2 MB)
 - (zwinięte; `ls chemia/che-modular/lessons-md/gotowe`) — duże:
+- ⚠`F17_rownania_reakcji_i_obliczenia.md` 57 KB
 - ⚠`FIZ01_elektrostatyka.md` 55 KB
+- ⚠`LAB01_doswiadczenia_obserwacja_wniosek.md` 57 KB
 - ⚠`N01_tlenki.md` 123 KB
 - ⚠`N02_wodorotlenki.md` 130 KB
 - ⚠`N03_kwasy.md` 135 KB
 - ⚠`N04_sole.md` 87 KB
 - ⚠`N05_wodorki.md` 57 KB
-- ⚠`REV01_powtorka_klasy_7.md` 63 KB
+
+## chemia/che-modular/lessons-md/slowniki  (1 pl., 4 KB)
+- `P01_slownik.md` 4 KB
 
 ## chemia/che-modular/manifests  (5 pl., 9 KB)
 - `FIZ01.json` 1 KB
@@ -460,7 +528,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/sections/anon001/rdzen  (61 pl., 278 KB)
 - (zwinięte; `ls chemia/che-modular/sections/anon001/rdzen`)
 
-## chemia/che-modular/tools  (28 pl., 147 KB)
+## chemia/che-modular/tools  (32 pl., 166 KB)
 - (zwinięte; `ls chemia/che-modular/tools`)
 
 ## chemia/che-modular/tools/_stare  (1 pl., 28 KB)
@@ -468,6 +536,17 @@ Pominięte: .specstory/, .vscode/, .claude/
 
 ## chemia/che-modular/wizualizacje_r4  (1 pl., 35 KB)
 - `Wizualizacje_do_lekcji_R4.html` 35 KB
+
+## chemia/html  (82 pl., 7.6 MB)
+- (zwinięte; `ls chemia/html`) — duże:
+- ⚠`CHE.00.LAB.doswiadczenia.html` 110 KB
+- ⚠`CHE.00.REV01.powtorka_klasy_7.html` 218 KB
+- ⚠`CHE.00.REV02.powtorka_klasy_8.html` 97 KB
+- ⚠`CHE.00.REV06.zaawansowana.html` 124 KB
+- ⚠`CHE.00.S00.system_kursu.html` 92 KB
+- ⚠`CHE.00.W00.wstep.html` 77 KB
+- ⚠`CHE.01.F00.wspolne_bloku_F.html` 115 KB
+- ⚠`CHE.01.F01.jak_mysli_chemik.html` 99 KB
 
 ## chemia/lekcje_md/00  (6 pl., 276 KB)
 - ⚠`CHE.00.LAB.doswiadczenia.md` 67 KB
@@ -477,81 +556,132 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE.00.S00.system_kursu.md` 18 KB
 - `CHE.00.W00.wstep.md` 6 KB
 
-## chemia/lekcje_md/F  (22 pl., 1.0 MB)
+## chemia/lekcje_md/A  (6 pl., 7 KB)
+- `CHE.08.A01.jadro_atomowe.md` 2 KB
+- `CHE.08.A02.radioaktywnosc.md` 1 KB
+- `CHE.08.A03.przemiany_jadrowe.md` 1 KB
+- `CHE.08.A04.okres_potrwania_i_aktywnosc.md` 1 KB
+- `CHE.08.A05.energia_wiazania_jadra.md` 1 KB
+- `CHE.08.A06.zastosowania_i_bhp.md` 1 KB
+
+## chemia/lekcje_md/E  (6 pl., 20 KB)
+- `CHE.06.E01.ogniwo_galwaniczne.md` 3 KB
+- `CHE.06.E02.potencjaly_elektrodowe.md` 3 KB
+- `CHE.06.E03.sem.md` 3 KB
+- `CHE.06.E04.elektroliza.md` 3 KB
+- `CHE.06.E05.korozja.md` 4 KB
+- `CHE.06.E06.zrodla_energii_akumulatory.md` 4 KB
+
+## chemia/lekcje_md/F  (22 pl., 758 KB)
 - (zwinięte; `ls chemia/lekcje_md/F`) — duże:
-- ⚠`CHE.01.F00.wspolne_bloku_F.md` 110 KB
-- ⚠`CHE.01.F01.jak_mysli_chemik.md` 81 KB
-- ⚠`CHE.01.F07.konfiguracja_elektronowa.md` 50 KB
-- ⚠`CHE.01.F08.konfiguracja_uklad_okresowy.md` 52 KB
-- ⚠`CHE.01.F09.wartosciowosc_ladunek_i_stopien_utlenien.md` 104 KB
-- ⚠`CHE.01.F11.wiazania_jonowe_kowalencyjne_i_metaliczn.md` 62 KB
-- ⚠`CHE.01.F12.wzory_chemiczne.md` 124 KB
-- ⚠`CHE.01.F14.geometria_czasteczek_vsepr.md` 63 KB
+- ⚠`CHE.01.F07.konfiguracja_elektronowa.md` 55 KB
+- ⚠`CHE.01.F08.konfiguracja_uklad_okresowy.md` 55 KB
+- ⚠`CHE.01.F11.wiazania_jonowe_kowalencyjne_i_metaliczn.md` 65 KB
+- ⚠`CHE.01.F14.geometria_czasteczek_vsepr.md` 66 KB
+- ⚠`CHE.01.F17.rownania_reakcji.md` 67 KB
 
-## chemia/lekcje_md/J  (7 pl., 20 KB)
-- `CHE.04.J00.mapa_bloku_J.md` 3 KB
-- `CHE.04.J01.dysocjacja_elektrolityczna.md` 4 KB
-- `CHE.04.J02.odczyn_i_ph.md` 3 KB
-- `CHE.04.J03.reakcje_jonowe.md` 2 KB
-- `CHE.04.J04.stracanie_osadow.md` 2 KB
-- `CHE.04.J05.amfoterycznosc.md` 2 KB
-- `CHE.04.J06.rownowagi_kwasowo_zasadowe.md` 3 KB
+## chemia/lekcje_md/J  (13 pl., 108 KB)
+- (zwinięte; `ls chemia/lekcje_md/J`)
 
-## chemia/lekcje_md/N  (4 pl., 140 KB)
+## chemia/lekcje_md/K  (11 pl., 179 KB)
+- `CHE.07.K01.energia_reakcji.md` 21 KB
+- `CHE.07.K02.entalpia.md` 9 KB
+- `CHE.07.K03.kalorymetria_i_przemiany_fazowe.md` 16 KB
+- `CHE.07.K04.szybkosc_reakcji.md` 33 KB
+- `CHE.07.K05.czynniki_szybkosci.md` 3 KB
+- `CHE.07.K06.zderzenia_energia_aktywacji.md` 16 KB
+- `CHE.07.K07.kataliza.md` 20 KB
+- `CHE.07.K08.rownowaga_dynamiczna.md` 14 KB
+- `CHE.07.K09.stala_rownowagi.md` 14 KB
+- `CHE.07.K10.regula_le_chateliera.md` 14 KB
+- `CHE.07.K11.rownowaga_ilosciowa.md` 18 KB
+
+## chemia/lekcje_md/N  (8 pl., 184 KB)
+- `CHE.02.N01.powietrze_i_gazy.md` 33 KB
 - `CHE.02.N02.tlenki.md` 37 KB
 - `CHE.02.N03.wodorotlenki.md` 31 KB
 - `CHE.02.N04.kwasy.md` 35 KB
 - `CHE.02.N05.sole.md` 37 KB
+- `CHE.02.N06.wodorki.md` 1 KB
+- `CHE.02.N07.systematyka_nieorganiczna.md` 4 KB
+- `CHE.02.N08.mapa_przemian.md` 5 KB
 
-## chemia/lekcje_md/O  (3 pl., 88 KB)
-- `CHE.05.O01-O07.weglowodory.md` 38 KB
-- `CHE.05.O08+O11+O12.alkohole_kwasy_estry.md` 9 KB
-- `CHE.05.O13+O15-O20+O22-O23.biochemia.md` 42 KB
+## chemia/lekcje_md/O  (9 pl., 122 KB)
+- `CHE.05.O01-O07.weglowodory.md` 41 KB
+- `CHE.05.O08+O11+O12.alkohole_kwasy_estry.md` 12 KB
+- `CHE.05.O09.fenole.md` 4 KB
+- `CHE.05.O10.aldehydy_i_ketony.md` 4 KB
+- `CHE.05.O13+O15-O20+O22-O23.biochemia.md` 46 KB
+- `CHE.05.O14.aminy_i_amidy.md` 3 KB
+- `CHE.05.O21.polimery_i_tworzywa.md` 4 KB
+- `CHE.05.O24.nazewnictwo_procedura_zbiorcza.md` 4 KB
+- `CHE.05.O25.mechanizmy_reakcji_organicznych.md` 4 KB
 
-## chemia/lekcje_md/R  (2 pl., 70 KB)
-- `CHE.03.R03+R05.stezenia.md` 32 KB
-- `CHE.03.R04+R07-R09.stechiometria.md` 39 KB
+## chemia/lekcje_md/P  (6 pl., 6 KB)
+- `CHE.01.P01.blok_s.md` 1 KB
+- `CHE.01.P02.blok_p.md` 1 KB
+- `CHE.01.P03.blok_d_i_metale_przejsciowe.md` 1 KB
+- `CHE.01.P04.charakterystyka_grup.md` 1 KB
+- `CHE.01.P05.zwiazki_charakterystyczne_pierwiastkow.md` 1 KB
+- `CHE.01.P06.trend_wasciwosc_reaktywnosc.md` 1 KB
 
-## chemia/lekcje_md/X  (1 pl., 35 KB)
-- `CHE.06.X01-X09.redoks.md` 35 KB
+## chemia/lekcje_md/R  (5 pl., 91 KB)
+- `CHE.03.R01.woda_i_roztwory.md` 5 KB
+- `CHE.03.R02.rozpuszczalnosc.md` 5 KB
+- `CHE.03.R03+R05.stezenia.md` 34 KB
+- `CHE.03.R04+R07-R09.stechiometria.md` 42 KB
+- `CHE.03.R06.gazy_objetosc_molowa.md` 4 KB
 
-## chemia/plany  (3 pl., 87 KB)
-- `CHE.01.F00.architektura_bloku_F.md` 22 KB
+## chemia/lekcje_md/X  (1 pl., 38 KB)
+- `CHE.06.X01-X09.redoks.md` 38 KB
+
+## chemia/plany  (20 pl., 752 KB)
+- (zwinięte; `ls chemia/plany`) — duże:
+- ⚠`BANK_PYTAN_CHE.md` 89 KB
 - ⚠`CHE_SPIS_TRESCI.md` 59 KB
-- `PLAN_SCIEZKI_DYDAKTYCZNE.md` 6 KB
+- ⚠`F00_materialy_robocze_v1.md` 110 KB
+- ⚠`F01_materialy_robocze_v1.md` 81 KB
+- ⚠`F09_materialy_robocze_v1.md` 107 KB
+- ⚠`F12_materialy_robocze_v1.md` 127 KB
 
-## chemia/plany/audyty  (26 pl., 485 KB)
-- (zwinięte; `ls chemia/plany/audyty`)
+## chemia/plany/audyty  (51 pl., 1.1 MB)
+- (zwinięte; `ls chemia/plany/audyty`) — duże:
+- ⚠`GOTOWE_SONNET_FIZ-01_2026-10-12.md` 116 KB
+- ⚠`GOTOWE_ZAI_J03_2026-10-12.md` 92 KB
+- ⚠`GOTOWE_ZAI_R07_2026-10-12.md` 80 KB
+- ⚠`GOTOWE_ZAI_X04_2026-10-12.md` 91 KB
 
-## chemia/plany/narzedzia  (3 pl., 47 KB)
-- `kanon_dane.py` 37 KB
+## chemia/plany/narzedzia  (7 pl., 62 KB)
+- `f00_dol.md` 1 KB
+- `f00_gora.md` 1 KB
+- `gen_f00.py` 7 KB
+- `gen_szkielety_pustych.py` 3 KB
+- `kanon_dane.py` 38 KB
 - `podziel_all_md.py` 2 KB
-- `spis_tresci.py` 8 KB
+- `spis_tresci.py` 10 KB
 
 ## chemia/plany/prompty  (2 pl., 17 KB)
 - `PROMPT_ulepszenia_F.md` 6 KB
 - `PROMPT_ulepszenia_F_v15.md` 12 KB
 
-## eksport  (5 pl., 30 KB)
-- `.gitignore` 0 KB
-- `html2md.py` 4 KB
-- `paczka_polski.py` 4 KB
-- `zbierz_lekcje.py` 17 KB
-- `zip_przekazania.py` 5 KB
+## eksport  (20 pl., 123 KB)
+- (zwinięte; `ls eksport`)
 
-## narzedzia  (10 pl., 61 KB)
-- `audyt_do_kanonu.py` 5 KB
-- `etap_lko.py` 1 KB
-- `katalog_grafik_bio.py` 4 KB
-- `latex2uni.py` 2 KB
-- `mapa.py` 2 KB
-- `opis_dlug.json` 0 KB
-- `opis_wizualizacji.py` 3 KB
-- `spis_lekcji.py` 11 KB
-- `spis_polski.py` 9 KB
-- `szkielety_polski.py` 24 KB
+## eksport/grafiki  (1 pl., 7 KB)
+- `VIZ_START.html` 7 KB
 
-## olimpiada  (7 pl., 151 KB)
+## narzedzia  (23 pl., 158 KB)
+- (zwinięte; `ls narzedzia`)
+
+## narzedzia/jednorazowe  (5 pl., 14 KB)
+- `README.md` 0 KB
+- `edit_html.py` 3 KB
+- `fix_encoding.ps1` 1 KB
+- `fix_encoding_v2.ps1` 5 KB
+- `replace_gereb_card.ps1` 5 KB
+
+## olimpiada  (8 pl., 156 KB)
+- `BANK_PYTAN_MAT_OLI.md` 6 KB
 - `MAPA_WSPOLNYCH.md` 20 KB
 - ⚠`OLIMPIADA_8_MASTER.md` 81 KB
 - `PRIORYTETY.md` 12 KB
@@ -560,21 +690,30 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PROMPTY_AI_BRAKI_OLI_2026-10-18_runda4.md` 9 KB
 - `PRZEKAZANIE.md` 6 KB
 
-## olimpiada/do_uzupelnienia  (11 pl., 62 KB)
-- `BIO_B2_homeostaza.md` 5 KB
-- `BIO_B2a_skora_i_uklad_ruchu.md` 3 KB
-- `BIO_B2b_uklad_pokarmowy_i_odzywianie.md` 4 KB
-- `BIO_B2c_oddychanie_i_wydalanie.md` 3 KB
-- `BIO_B2d_uklad_nerwowy_i_zmysly.md` 4 KB
-- `BIO_B2e_uklad_dokrewny.md` 4 KB
-- `BIO_B2f_rozmnazanie_i_rozwoj.md` 3 KB
-- `CHE_J03_rownania_jonowe_i_straceanie.md` 11 KB
-- `CHE_R07_stechiometria_z_nadmiarem.md` 8 KB
-- `CHE_X04_szereg_aktywnosci_metali.md` 15 KB
-- `README.md` 1 KB
+## olimpiada/do_uzupelnienia  (22 pl., 134 KB)
+- (zwinięte; `ls olimpiada/do_uzupelnienia`)
+
+## olimpiada/html  (11 pl., 789 KB)
+- ⚠`OLI.BIO.B2.homeostaza.html` 77 KB
+- ⚠`OLI.BIO.B2a.skora_i_uklad_ruchu.html` 75 KB
+- ⚠`OLI.BIO.B2b.uklad_pokarmowy_i_odzywianie.html` 76 KB
+- ⚠`OLI.BIO.B2c.oddychanie_i_wydalanie.html` 75 KB
+- ⚠`OLI.BIO.B2d.uklad_nerwowy_i_zmysly.html` 76 KB
+- ⚠`OLI.BIO.B2e.uklad_dokrewny.html` 75 KB
+- ⚠`OLI.BIO.B2f.rozmnazanie_i_rozwoj.html` 75 KB
+- ⚠`OLI.CHE.J03.rownania_jonowe_i_straceanie.html` 85 KB
+- ⚠`OLI.CHE.R07.stechiometria_z_nadmiarem.html` 82 KB
+- ⚠`OLI.CHE.X04.szereg_aktywnosci_metali.html` 90 KB
+- `index.html` 2 KB
 
 ## olimpiada/narzedzia  (1 pl., 7 KB)
 - `mapa_chemia.py` 7 KB
+
+## olimpiada/prompty  (1 pl., 12 KB)
+- `PROMPTY_AI_BRAKI_OLI_2026-10-17.md` 12 KB
+
+## olimpiada/testy  (1 pl., 8 KB)
+- `CHE_OLI8_test_probny.html` 8 KB
 
 ## olimpiada/zrodla  (7 pl., 606 KB)
 - ⚠`LKO_2026_27_Czesc_II_zakres_wymagan.docx` 244 KB
@@ -643,7 +782,15 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## olimpiada/zrodla/pakiet_2026-10-09/research  (1 pl., 5 KB)
 - `RESEARCH_OLIMPIADY_I_KONKURSY_2026-10-09.md` 5 KB
 
-## polski  (19 pl., 2.5 MB)
+## paczki/W23_2026-10-09  (6 pl., 71 KB)
+- `AUDYT_SCALENIA_Claude.md` 4 KB
+- `MANIFEST_SCALENIA.md` 28 KB
+- `POSTEP_W4_2026-10-09.md` 3 KB
+- `POSTEP_W6_2026-10-09.md` 15 KB
+- `UZUPELNIENIA_Z_WATKU.md` 2 KB
+- `ZADANIA.md` 19 KB
+
+## polski  (25 pl., 2.8 MB)
 - (zwinięte; `ls polski`) — duże:
 - ⚠`L001_lekcja (2).html` 174 KB
 - ⚠`L002-PL-Hobbit-nieodmienne-czesc-mowy v2.html` 114 KB
@@ -654,26 +801,112 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik v2.html` 90 KB
 - ⚠`L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik.html` 146 KB
 
-## polski/do_uzupelnienia  (5 pl., 25 KB)
+## polski/archiwum  (1 pl., 0 KB)
+- `README.md` 0 KB
+
+## polski/archiwum/html  (6 pl., 854 KB)
+- ⚠`L002-PL-Hobbit-nieodmienne-czesc-mowy v2.html` 114 KB
+- ⚠`L002-PL-Hobbit-nieodmienne-czesc-mowy.html` 152 KB
+- ⚠`L003-PL-Opowiesci-z-Narnii-zaimek.html` 154 KB
+- ⚠`L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik.html` 147 KB
+- ⚠`L005-PL-Kajko-i-Kokosz-rzeczownik.html` 140 KB
+- ⚠`L006-PL-Akademia-Pana-Kleksa-czasownik.html` 147 KB
+
+## polski/archiwum/lekcje_html_stare  (6 pl., 723 KB)
+- ⚠`L001-PL-Lektury-klas-IV-VI-imieslow.html` 175 KB
+- ⚠`L002-PL-Hobbit-nieodmienne-czesci-mowy.html` 132 KB
+- ⚠`L003-PL-Opowiesci-z-Narnii-zaimek.html` 134 KB
+- ⚠`L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik.html` 91 KB
+- ⚠`L005-PL-Kajko-i-Kokosz-rzeczownik.html` 86 KB
+- ⚠`L006-PL-Akademia-Pana-Kleksa-czasownik.html` 104 KB
+
+## polski/archiwum/master  (4 pl., 736 KB)
+- ⚠`POLSKI_PODSTAWA_PLUS_v7 (10).md` 200 KB
+- ⚠`POLSKI_PODSTAWA_PLUS_v7 (2).md` 173 KB
+- ⚠`POLSKI_PODSTAWA_PLUS_v7 (4).md` 178 KB
+- ⚠`POLSKI_PODSTAWA_PLUS_v7 (5).md` 186 KB
+
+## polski/archiwum/szkielety  (13 pl., 39 KB)
+- (zwinięte; `ls polski/archiwum/szkielety`)
+
+## polski/archiwum/wersje_wejsciowe  (25 pl., 149 KB)
+- (zwinięte; `ls polski/archiwum/wersje_wejsciowe`)
+
+## polski/blok_D  (3 pl., 28 KB)
+- `AUDYT_ZBIORCZY_D_v3.md` 2 KB
+- `POLSKI_BLOK_D_KOMPETENCJE_E8_v1.md` 22 KB
+- `README.md` 3 KB
+
+## polski/blok_D/audyty  (13 pl., 13 KB)
+- (zwinięte; `ls polski/blok_D/audyty`)
+
+## polski/blok_D/lekcje  (13 pl., 193 KB)
+- (zwinięte; `ls polski/blok_D/lekcje`)
+
+## polski/blok_G  (1 pl., 7 KB)
+- `README.md` 7 KB
+
+## polski/blok_G/audyty  (17 pl., 57 KB)
+- (zwinięte; `ls polski/blok_G/audyty`)
+
+## polski/blok_S  (1 pl., 2 KB)
+- `README.md` 2 KB
+
+## polski/blok_S/audyty  (6 pl., 10 KB)
+- `S01_AUDYT.md` 2 KB
+- `S02_AUDYT.md` 2 KB
+- `S03_AUDYT.md` 2 KB
+- `S04_AUDYT.md` 2 KB
+- `S05_AUDYT.md` 2 KB
+- `S06_AUDYT.md` 2 KB
+
+## polski/do_uzupelnienia  (10 pl., 152 KB)
 - `PL_L007_przeglad_czesci_mowy.md` 7 KB
 - `PL_L008_czesci_zdania.md` 4 KB
 - `PL_L009_zdania_zlozone.md` 4 KB
 - `PL_L010_srodki_stylistyczne.md` 4 KB
 - `PL_L011_elementy_utworu_moral_puenta.md` 5 KB
+- `POL.01.L007.przeglad_czesci_mowy.md` 33 KB
+- `POL.01.L008.czesci_zdania.md` 26 KB
+- `POL.01.L009.zdania_zlozone.md` 22 KB
+- `POL.01.L010.srodki_stylistyczne.md` 23 KB
+- `POL.01.L011.elementy_utworu_moral_puenta.md` 22 KB
+
+## polski/html  (48 pl., 6.1 MB)
+- (zwinięte; `ls polski/html`) — duże:
+- ⚠`POL.01.L001.lektury_iv_vi_imieslowy.html` 241 KB
+- ⚠`POL.01.L002.hobbit_nieodmienne_czesci_mowy.html` 184 KB
+- ⚠`POL.01.L003.narnia_zaimek.html` 163 KB
+- ⚠`POL.01.L004.chlopcy_z_placu_broni_przymiotnik_liczebnik.html` 153 KB
+- ⚠`POL.01.L005.kajko_i_kokosz_rzeczownik.html` 159 KB
+- ⚠`POL.01.L006.akademia_pana_kleksa_czasownik.html` 156 KB
+- ⚠`POL.01.L007.przeglad_czesci_mowy.html` 129 KB
+- ⚠`POL.01.L008.czesci_zdania.html` 126 KB
 
 ## polski/lekcje  (32 pl., 80 KB)
 - (zwinięte; `ls polski/lekcje`)
+
+## polski/lekcje_md  (6 pl., 361 KB)
+- ⚠`POL.01.L001.lektury_iv_vi_imieslowy.md` 112 KB
+- ⚠`POL.01.L002.hobbit_nieodmienne_czesci_mowy.md` 68 KB
+- `POL.01.L003.narnia_zaimek.md` 50 KB
+- `POL.01.L004.chlopcy_z_placu_broni_przymiotnik_liczebnik.md` 42 KB
+- `POL.01.L005.kajko_i_kokosz_rzeczownik.md` 47 KB
+- `POL.01.L006.akademia_pana_kleksa_czasownik.md` 43 KB
 
 ## polski/plany  (3 pl., 60 KB)
 - `POL_KATALOG.md` 16 KB
 - `POL_SPIS_TRESCI_v2.md` 40 KB
 - `PROMPT_PERPLEXITY_JEZYK.md` 5 KB
 
-## polski/plany/audyty  (2 pl., 25 KB)
-- `W1_POLSKI_ocena_2026-10-09.md` 4 KB
-- `W1_perplexity_POLSKI_L001-L011_2026-10-09.md` 21 KB
+## polski/plany/audyty  (49 pl., 842 KB)
+- (zwinięte; `ls polski/plany/audyty`) — duże:
+- ⚠`ULEPSZ_OLI_G07_G12_2026-10-11.md` 52 KB
+- ⚠`ULEPSZ_OLI_G12_2026-10-11.md` 61 KB
+- ⚠`W1_perplexity_G13_G15_2026-10-10.md` 54 KB
+- ⚠`W1_perplexity_G16_G17_S01-S06_G10_G11_2026-10-10.md` 106 KB
 
-## polski/plany/wypelnienia  (8 pl., 84 KB)
+## polski/plany/wypelnienia  (8 pl., 85 KB)
 - `G01_Rzeczownik_WYPELNIONY.md` 8 KB
 - `G02_Czasownik_WYPELNIONY.md` 6 KB
 - `G03_Przymiotnik_WYPELNIONY.md` 6 KB
@@ -683,8 +916,43 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `G18-G20_J01-J06_Perplexity_2026-10-09_surowe.md` 18 KB
 - `S01_S06_Srodki_stylistyczne_WYPELNIONE.md` 4 KB
 
-## polski/podstawy  (23 pl., 169 KB)
-- (zwinięte; `ls polski/podstawy`)
+## polski/podstawy  (46 pl., 907 KB)
+- (zwinięte; `ls polski/podstawy`) — duże:
+- ⚠`POL.02.G03.przymiotnik.md` 62 KB
+- ⚠`POL.02.G04.liczebnik.md` 70 KB
+- ⚠`POL.02.G12.czesci_zdania.md` 59 KB
+
+## polski/szablon  (2 pl., 23 KB)
+- `POL_KATALOG_GRAFIK.md` 1 KB
+- `pol-viz.js` 22 KB
+
+## szablon  (4 pl., 70 KB)
+- `README.md` 5 KB
+- `baza.css` 45 KB
+- `lekcja.js` 5 KB
+- `ulepszenia.css` 15 KB
+
+## szablon/motywy  (5 pl., 20 KB)
+- `ang.css` 2 KB
+- `bio.css` 12 KB
+- `che.css` 2 KB
+- `oli.css` 3 KB
+- `pol.css` 2 KB
+
+## szablon/podglad  (6 pl., 407 KB)
+- ⚠`ang.html` 67 KB
+- ⚠`bio.html` 136 KB
+- ⚠`che.html` 66 KB
+- `index.html` 2 KB
+- ⚠`oli.html` 66 KB
+- ⚠`pol.html` 69 KB
+
+## szablon/przyklady  (5 pl., 7 KB)
+- `ang.md` 2 KB
+- `bio.md` 1 KB
+- `che.md` 1 KB
+- `oli.md` 1 KB
+- `pol.md` 2 KB
 
 ## wizualizacje-projekty  (3 pl., 72 KB)
 - `PROJEKT.md` 9 KB

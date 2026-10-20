@@ -1,0 +1,2335 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lekcja 3 – Tryb rozkazujący, czasowniki stanów i phrasal verbs</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+    <style>
+        /* ======================================================================
+           SYSTEM WIZUALNY REPETYTORIUM E8 – wersja 6.2 (master merge)
+           ====================================================================== */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+            background: #f5f7fa;
+            color: #1e293b;
+            line-height: 1.7;
+            padding: 16px;
+        }
+        .container {
+            max-width: 1060px; margin: 0 auto; background: #ffffff;
+            border-radius: 24px; box-shadow: 0 8px 40px rgba(0,0,0,0.06);
+            padding: 28px 32px 24px;
+        }
+        @media (max-width: 768px) { .container { padding: 12px 10px; } body { padding: 6px; } }
+
+        h1, h2, h3, h4 { font-weight: 600; letter-spacing: -0.02em; color: #0a2540; }
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.45rem; margin-top: 28px; margin-bottom: 10px; padding-bottom: 4px; border-bottom: 2px solid #e9edf2; }
+        h2 .level-badge { margin-left: 8px; vertical-align: middle; }
+        h3 { font-size: 1.15rem; margin-top: 20px; margin-bottom: 6px; }
+        h4 { font-size: 1.0rem; margin-top: 14px; margin-bottom: 4px; }
+        p { margin-bottom: 8px; }
+        ul, ol { padding-left: 22px; margin-bottom: 10px; }
+        li { margin-bottom: 3px; }
+        a { color: #2b6cb0; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        :root {
+            --color-basic: #2d8f5e; --color-basic-bg: #f0faf4;
+            --color-training: #2b6cb0; --color-training-bg: #f0f6ff;
+            --color-exam: #b7791f; --color-exam-bg: #fffbeb;
+            --color-trap: #dc3545; --color-trap-bg: #fef2f2;
+            --color-ambitious: #7c3aed; --color-ambitious-bg: #f5f0ff;
+            --color-remember: #0a2540; --color-remember-bg: #f1f4f8;
+            --color-difficult: #b7791f; --color-difficult-bg: #fffbeb;
+            --color-hint: #f59e0b; --color-hint-bg: #fffbeb;
+            --color-correct: #2d8f5e; --color-error: #dc3545;
+            --color-text: #1e293b; --color-text-muted: #6b7a8d;
+            --color-border: #e2e8f0; --color-bg-subtle: #f8fafc;
+            --shadow-card: 0 2px 8px rgba(0,0,0,0.04);
+        }
+
+        .card {
+            border-radius: 12px; padding: 14px 18px; margin: 12px 0;
+            border: 1px solid var(--color-border); background: #ffffff; box-shadow: var(--shadow-card);
+        }
+        .card-remember { background: var(--color-remember-bg); border-left: 5px solid var(--color-remember); border-color: var(--color-remember); }
+        .card-remember .card-label { color: var(--color-remember); }
+        .card-warning { background: #fffbeb; border-left: 5px solid #d69e2e; border-color: #d69e2e; }
+        .card-warning .card-label { color: #d69e2e; }
+        .card-hint { background: var(--color-hint-bg); border-left: 5px solid var(--color-hint); border-color: var(--color-hint); }
+        .card-hint .card-label { color: var(--color-hint); }
+        .card-error { background: var(--color-trap-bg); border-left: 5px solid var(--color-trap); border-color: var(--color-trap); }
+        .card-error .card-label { color: var(--color-trap); }
+        .card-correct { background: var(--color-basic-bg); border-left: 5px solid var(--color-correct); border-color: var(--color-correct); }
+        .card-correct .card-label { color: var(--color-correct); }
+        .card-trap { background: var(--color-trap-bg); border-left: 5px solid var(--color-trap); border-color: var(--color-trap); }
+        .card-trap .card-label { color: var(--color-trap); }
+        .card-ambitious { background: var(--color-ambitious-bg); border-left: 5px solid var(--color-ambitious); border-color: var(--color-ambitious); }
+        .card-ambitious .card-label { color: var(--color-ambitious); }
+        .card-gray { background: var(--color-bg-subtle); border-left: 5px solid var(--color-text-muted); border-color: var(--color-text-muted); }
+        .card .card-label {
+            font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px;
+            display: block; margin-bottom: 4px;
+        }
+
+        .level-badge {
+            display: inline-block; font-size: 0.55rem; font-weight: 700; text-transform: uppercase;
+            padding: 1px 8px; border-radius: 12px; vertical-align: middle; letter-spacing: 0.3px; line-height: 1.6;
+        }
+        .level-basic { background: #d4edda; color: #155724; }
+        .level-training { background: #cce5ff; color: #004085; }
+        .level-exam { background: #ffe8cc; color: #8a6d3b; }
+        .level-trap { background: #f8d7da; color: #721c24; }
+        .level-ambitious { background: #e8d5f5; color: #4a1a6b; }
+        .level-writing { background: #d1ecf1; color: #0c5460; }
+        .level-remember { background: #d1d5db; color: #1a1a2e; }
+        .level-difficult { background: #fde68a; color: #78350f; }
+
+        .example {
+            background: var(--color-bg-subtle); border-radius: 10px; padding: 10px 14px; margin: 8px 0;
+            border: 1px solid var(--color-border); display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px;
+        }
+        .example .eng { font-weight: 600; color: #0a2540; font-size: 1.0rem; }
+        .example .pl { color: var(--color-text-muted); font-style: italic; font-size: 0.88rem; }
+        .example .tag {
+            display: inline-block; font-size: 0.55rem; font-weight: 600; text-transform: uppercase;
+            background: #e2e8f0; padding: 1px 8px; border-radius: 12px; color: #2d3a4f;
+        }
+        .hl-operator { color: var(--color-training); font-weight: 700; }
+        .hl-subject { color: var(--color-correct); font-weight: 600; }
+        .hl-main-verb { color: var(--color-exam); font-weight: 600; }
+
+        .table-wrap { overflow-x: auto; margin: 12px 0; border-radius: 10px; border: 1px solid var(--color-border); }
+        .table-wrap table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+        .table-wrap th, .table-wrap td { padding: 6px 10px; text-align: left; border-bottom: 1px solid #edf2f7; }
+        .table-wrap th { background: #f1f4f8; font-weight: 600; color: #0a2540; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.3px; }
+        .table-wrap tr:nth-child(even) { background: #fafbfc; }
+        .table-wrap .error-row { background: #fef2f2; }
+        .table-wrap .correct-row { background: #f0faf4; }
+
+        .btn {
+            display: inline-flex; align-items: center; gap: 4px; padding: 5px 14px; border-radius: 8px;
+            border: 1px solid var(--color-border); background: #ffffff; font-size: 0.82rem; font-weight: 500;
+            cursor: pointer; transition: all 0.2s; color: var(--color-text); font-family: inherit;
+        }
+        .btn:hover { background: var(--color-bg-subtle); border-color: #b0b8c4; }
+        .btn-primary { background: var(--color-training); border-color: var(--color-training); color: white; }
+        .btn-primary:hover { background: #1f4e8c; border-color: #1f4e8c; }
+        .btn-success { background: var(--color-basic); border-color: var(--color-basic); color: white; }
+        .btn-success:hover { background: #1f6e48; border-color: #1f6e48; }
+        .btn-outline { background: transparent; border: 1px solid var(--color-border); }
+        .btn-outline:hover { background: var(--color-bg-subtle); }
+        .btn-sm { padding: 3px 10px; font-size: 0.74rem; }
+
+        .audio-btn {
+            display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px;
+            border-radius: 50%; border: 1px solid var(--color-border); background: #ffffff; cursor: pointer;
+            font-size: 15px; color: var(--color-training); transition: all 0.2s; flex-shrink: 0;
+            font-family: inherit; line-height: 1;
+        }
+        .audio-btn:hover { background: var(--color-training-bg); border-color: var(--color-training); }
+        .audio-btn.playing { background: var(--color-training); border-color: var(--color-training); color: white; }
+
+        .exercise {
+            background: var(--color-bg-subtle); border-radius: 12px; padding: 14px 16px; margin: 12px 0;
+            border: 1px solid var(--color-border);
+        }
+        .exercise .ex-title { font-weight: 600; color: #0a2540; margin-bottom: 6px; font-size: 1.0rem; }
+
+        .answer-toggle, .hint-toggle, .explain-toggle {
+            font-family: inherit; padding: 4px 14px; border-radius: 6px; border: none; cursor: pointer;
+            font-size: 0.78rem; font-weight: 500; transition: all 0.2s; margin-top: 4px; margin-right: 4px;
+        }
+        .answer-toggle { background: var(--color-training); color: white; }
+        .answer-toggle:hover { background: #1f4e8c; }
+        .hint-toggle { background: var(--color-hint); color: white; }
+        .hint-toggle:hover { background: #d97706; }
+        .explain-toggle { background: transparent; border: 1px solid var(--color-border); color: var(--color-text-muted); }
+        .explain-toggle:hover { border-color: var(--color-training); color: var(--color-training); background: var(--color-training-bg); }
+
+        .answer-content, .hint-content, .explain-content {
+            border-radius: 6px; padding: 0 12px; margin-top: 4px; max-height: 0; overflow: hidden;
+            transition: max-height 0.35s ease, padding 0.3s ease, opacity 0.3s ease; opacity: 0;
+        }
+        .answer-content.show, .hint-content.show, .explain-content.show {
+            max-height: 800px; padding: 10px 12px; opacity: 1;
+        }
+        .answer-content { background: var(--color-training-bg); border-left: 3px solid var(--color-training); }
+        .hint-content { background: var(--color-hint-bg); border-left: 3px solid var(--color-hint); font-style: italic; color: #78350f; }
+        .explain-content { background: var(--color-bg-subtle); border-left: 3px solid var(--color-training); }
+        .explain-content .rule-box {
+            background: #ffffff; border-radius: 6px; padding: 6px 12px; margin: 4px 0;
+            border: 1px solid var(--color-border); font-size: 0.9rem;
+        }
+
+        .hint-level { display: block; margin-top: 6px; font-size: 0.9rem; padding: 6px 10px; border-radius: 6px; background: #ffffff; border: 1px solid var(--color-border); }
+        .hint-level .hint-num { font-weight: 700; color: var(--color-hint); margin-right: 6px; }
+
+        .hide-all-wrap {
+            display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 8px 0 4px;
+        }
+        .hide-all-btn {
+            font-family: inherit; padding: 4px 14px; border-radius: 6px; border: 1px solid var(--color-border);
+            background: #ffffff; cursor: pointer; font-size: 0.78rem; font-weight: 500; transition: all 0.2s;
+            color: var(--color-text-muted);
+        }
+        .hide-all-btn:hover { border-color: var(--color-error); color: var(--color-error); background: var(--color-trap-bg); }
+
+        .fiszka {
+            background: var(--color-bg-subtle); border: 2px solid #0a2540; border-radius: 14px;
+            padding: 18px 22px; margin: 20px 0;
+        }
+        .fiszka h3 { text-align: center; font-weight: 600; font-size: 1.1rem; margin-bottom: 10px; border-bottom: 2px solid #0a2540; padding-bottom: 4px; }
+        .fiszka-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 24px; }
+        .fiszka-col h4 { font-weight: 600; border-bottom: 1px solid #cbd5e0; padding-bottom: 3px; margin-bottom: 4px; }
+        .fiszka-col ul { list-style: none; padding-left: 0; }
+        .fiszka-col li { padding: 2px 0 2px 16px; position: relative; font-size: 0.88rem; }
+        .fiszka-col li::before { content: "•"; position: absolute; left: 0; color: var(--color-training); font-weight: 700; }
+        @media (max-width: 768px) { .fiszka-grid { grid-template-columns: 1fr; } .fiszka { padding: 14px 16px; } }
+
+        .flashcard-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin: 12px 0;
+        }
+        .flashcard {
+            min-height: 96px; padding: 14px; border: 2px solid var(--color-border); border-radius: 8px;
+            background: #ffffff; color: #0a2540; font: inherit; text-align: center; cursor: pointer;
+            box-shadow: var(--shadow-card); transition: border-color 0.2s, background 0.2s, transform 0.2s;
+        }
+        .flashcard:hover, .flashcard:focus-visible { border-color: var(--color-training); background: var(--color-training-bg); transform: translateY(-2px); outline: none; }
+        .flashcard .front { display: block; font-weight: 700; }
+        .flashcard .back { display: none; color: var(--color-text-muted); }
+        .flashcard.flipped .front { display: none; }
+        .flashcard.flipped .back { display: block; }
+
+        .top-panel {
+            background: var(--color-bg-subtle); border-radius: 16px; padding: 16px 20px; margin-bottom: 24px;
+            border: 1px solid var(--color-border);
+        }
+        .top-panel .panel-row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; }
+        .top-panel .panel-row + .panel-row { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--color-border); }
+        .top-panel .title { font-weight: 600; font-size: 1.05rem; color: #0a2540; }
+        .top-panel .subtitle { font-size: 0.8rem; color: var(--color-text-muted); }
+        .top-panel .lesson-info { margin-top: 6px; font-size: 0.78rem; color: var(--color-text-muted); line-height: 1.4; }
+        .top-panel .lesson-info .lesson-title { font-style: italic; }
+        .progress-bar-wrap { flex: 1; min-width: 140px; }
+        .progress-bar-bg { background: #e9edf2; border-radius: 20px; height: 6px; overflow: hidden; position: relative; }
+        .progress-bar-fill { height: 100%; border-radius: 20px; background: linear-gradient(90deg, #2b6cb0, #4a8fd0); transition: width 0.4s ease; width: 0%; }
+        .progress-label { display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--color-text-muted); margin-top: 2px; }
+        .view-filters { display: flex; gap: 4px; flex-wrap: wrap; }
+        .view-filters .btn { font-size: 0.72rem; padding: 3px 12px; }
+        .view-filters .btn.active { background: var(--color-training); border-color: var(--color-training); color: white; }
+        .today-tasks { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 4px 0 0; }
+        .today-tasks .task { display: flex; align-items: center; gap: 4px; font-size: 0.82rem; }
+        .today-tasks .task .circle {
+            display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px;
+            border-radius: 50%; border: 2px solid var(--color-border); font-size: 0.55rem; font-weight: 700;
+            color: var(--color-text-muted); transition: all 0.2s;
+        }
+        .today-tasks .task.done .circle { background: var(--color-basic); border-color: var(--color-basic); color: white; }
+        .today-tasks .task.done .task-label { color: var(--color-text); text-decoration: line-through; }
+
+        .error-text { color: var(--color-error); text-decoration: line-through; font-weight: 600; }
+        .correct-text { color: var(--color-correct); font-weight: 600; }
+        .cross-mark { color: var(--color-error); font-weight: 700; margin-right: 2px; }
+        .check-mark { color: var(--color-correct); font-weight: 700; margin-right: 2px; }
+        .neq { color: var(--color-error); font-weight: 700; }
+
+        .e8-lab {
+            background: #ffffff; border-radius: 14px; padding: 14px 18px; margin: 12px 0;
+            border: 2px solid var(--color-border); box-shadow: var(--shadow-card);
+        }
+        .e8-lab .context { background: var(--color-bg-subtle); border-radius: 8px; padding: 8px 14px; margin: 4px 0 10px; border-left: 4px solid var(--color-exam); }
+        .e8-lab .task-box { background: #ffffff; border-radius: 8px; padding: 8px 14px; margin: 6px 0; border: 1px dashed var(--color-border); }
+        .e8-lab .options { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0; }
+        .e8-lab .options .btn { font-size: 0.85rem; padding: 4px 14px; }
+        .e8-lab .options .btn.correct-option { border-color: var(--color-correct); background: var(--color-basic-bg); }
+        .e8-lab .options .btn.wrong-option { border-color: var(--color-error); background: var(--color-trap-bg); }
+        .e8-lab .analysis { margin-top: 8px; padding: 10px 14px; border-radius: 8px; background: var(--color-bg-subtle); border-left: 4px solid var(--color-training); }
+
+        .fitb-row {
+            display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: 4px 0; padding: 4px 0;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .fitb-row:last-child { border-bottom: none; }
+        .fitb-row input[type="text"] {
+            padding: 3px 8px; border: 1px solid var(--color-border); border-radius: 6px; font-size: 0.85rem;
+            width: 100px; transition: border-color 0.2s; font-family: inherit;
+        }
+        .fitb-row input[type="text"]:focus { outline: none; border-color: var(--color-training); box-shadow: 0 0 0 3px rgba(43,108,176,0.15); }
+        .fitb-row input[type="text"].correct { border-color: var(--color-correct); background: #f0faf4; }
+        .fitb-row input[type="text"].wrong { border-color: var(--color-error); background: #fef2f2; }
+        .fitb-row .result-icon { font-size: 1.0rem; }
+
+        .mission-result {
+            font-size: 1.0rem; font-weight: 600; padding: 10px 14px; border-radius: 10px; margin-top: 8px;
+        }
+        .mission-result.perfect { background: #d4edda; color: #155724; }
+        .mission-result.good { background: #cce5ff; color: #004085; }
+        .mission-result.ok { background: #ffe8cc; color: #8a6d3b; }
+        .mission-result.fail { background: #f8d7da; color: #721c24; }
+
+        .checklist { padding-left: 0; list-style: none; }
+        .checklist li { display: flex; align-items: center; gap: 6px; padding: 1px 0; font-size: 0.88rem; }
+        .checklist input[type="checkbox"] { width: 16px; height: 16px; accent-color: var(--color-training); cursor: pointer; flex-shrink: 0; }
+
+        .toc-section {
+            background: #ffffff; border: 1px solid var(--color-border); border-radius: 16px;
+            padding: 18px 22px; margin-bottom: 22px;
+        }
+        .toc-section h2 { margin-bottom: 14px; font-size: 1.25rem; }
+        .toc-accordion { margin-top: 6px; }
+        .toc-item { border: 1px solid var(--color-border); border-radius: 8px; margin-bottom: 6px; background: #ffffff; }
+        .toc-summary {
+            font-weight: 600; font-size: 0.92rem; padding: 8px 14px; cursor: pointer; list-style: none;
+            display: flex; align-items: center; gap: 8px; transition: background 0.2s;
+        }
+        .toc-summary:hover { background: var(--color-bg-subtle); }
+        .toc-summary::-webkit-details-marker { display: none; }
+        .toc-summary::before { content: "▶"; font-size: 0.7rem; color: var(--color-text-muted); transition: transform 0.2s; margin-right: 6px; }
+        .toc-item[open] .toc-summary::before { transform: rotate(90deg); }
+        .toc-checklist { padding: 4px 14px 12px 30px; list-style: none; margin: 0; }
+        .toc-checklist li { display: flex; align-items: center; gap: 6px; font-size: 0.85rem; padding: 2px 0; }
+        .toc-checklist input[type="checkbox"] { width: 15px; height: 15px; accent-color: var(--color-training); cursor: pointer; flex-shrink: 0; }
+        .toc-actions { display: flex; flex-wrap: wrap; gap: 6px; padding: 2px 14px 8px 30px; }
+        .toc-anchor {
+            display: inline-flex; align-items: center; justify-content: center; min-height: 30px;
+            padding: 4px 11px; border: 1px solid var(--color-training); border-radius: 6px;
+            background: var(--color-training-bg); color: var(--color-training); font-size: 0.78rem;
+            font-weight: 600; line-height: 1.2; text-decoration: none; transition: background 0.2s, color 0.2s;
+        }
+        .toc-anchor:hover, .toc-anchor:focus-visible { background: var(--color-training); color: #ffffff; }
+        .toc-keywords {
+            display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px;
+            margin-top: 14px; padding: 12px 16px; background: var(--color-basic-bg); border-radius: 12px;
+            color: #0f5132; font-weight: 600; line-height: 1.6;
+        }
+        .toc-keywords span { font-style: italic; color: #1e293b; }
+
+        .section.hidden-by-filter { display: none !important; }
+
+        .topic-list {
+            display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px 30px; padding-left: 28px;
+        }
+        .topic-list li { margin: 0; padding-left: 2px; font-size: 0.9rem; }
+        .topic-list a {
+            display: flex; align-items: center; min-height: 38px; padding: 6px 10px;
+            border: 1px solid var(--color-border); border-radius: 6px; background: #ffffff;
+            color: #0a2540; font-weight: 600; line-height: 1.25; text-decoration: none;
+            transition: background 0.2s, border-color 0.2s, color 0.2s;
+        }
+        .topic-list a:hover, .topic-list a:focus-visible { background: var(--color-training-bg); border-color: var(--color-training); color: var(--color-training); }
+        @media (max-width: 600px) { .topic-list { grid-template-columns: 1fr; } }
+
+        .footer {
+            margin-top: 32px; padding-top: 16px; border-top: 2px solid var(--color-border);
+            text-align: center; font-size: 0.8rem; color: var(--color-text-muted);
+        }
+
+        @media (max-width: 600px) {
+            .top-panel .panel-row { flex-direction: column; align-items: stretch; }
+            .view-filters { justify-content: center; }
+            .today-tasks { flex-direction: column; gap: 3px; }
+            .example { flex-direction: column; align-items: flex-start; }
+            .fitb-row { flex-wrap: wrap; }
+            .fitb-row input[type="text"] { width: 100%; }
+            .top-panel { padding: 12px 14px; }
+            .container { padding: 10px 6px; }
+            .toc-section { padding: 12px 14px; }
+            .toc-summary { font-size: 0.85rem; padding: 6px 10px; }
+            .toc-checklist li { font-size: 0.8rem; }
+            .vocab-grid { grid-template-columns: 1fr; }
+        }
+
+        .text-muted { color: var(--color-text-muted); }
+        .text-sm { font-size: 0.82rem; }
+        .mt-8 { margin-top: 8px; }
+        .mb-8 { margin-bottom: 8px; }
+        .flex-wrap { flex-wrap: wrap; }
+
+        .part-heading {
+            font-size: 1.5rem; font-weight: 700; color: #0a2540; margin-top: 32px; margin-bottom: 14px;
+            padding: 8px 16px; background: var(--color-bg-subtle); border-radius: 12px;
+            border-left: 6px solid var(--color-training); letter-spacing: -0.02em;
+        }
+        .part-heading .part-num { color: var(--color-training); }
+
+        .conj-table { font-size: 0.9rem; }
+        .conj-table td { padding: 6px 10px; }
+        .conj-table .operator-cell { background: var(--color-training-bg); font-weight: 600; }
+        .conj-table .error-cell { background: var(--color-trap-bg); color: var(--color-error); }
+        .conj-table .correct-cell { background: var(--color-basic-bg); color: var(--color-correct); }
+        .conj-table .verb-base { font-weight: 600; color: var(--color-exam); }
+        .conj-table .verb-3sg { font-weight: 600; color: var(--color-training); }
+        .conj-table .verb-past { font-weight: 600; color: var(--color-difficult); }
+
+        .vocab-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 8px 0; }
+        .vocab-item { background: var(--color-bg-subtle); padding: 8px 12px; border-radius: 6px; border: 1px solid var(--color-border); }
+        .vocab-item .en { font-weight: 600; }
+        .vocab-item .pl { font-style: italic; color: var(--color-text-muted); }
+        .vocab-item .ex { font-size: 0.8rem; display: block; color: var(--color-training); margin-top: 2px; }
+
+        .lesson-nav {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 10px 0; font-size: 0.85em; border-bottom: 1px solid var(--color-border); margin-bottom: 16px;
+        }
+        .lesson-nav a { color: #2b6cb0; text-decoration: none; font-weight: 600; }
+        .lesson-nav a:hover { text-decoration: underline; }
+        .lesson-nav .all-lessons { color: #4a5568; }
+
+        .goals-box {
+            background: #f0fff4; border: 1px solid #c6f6d5; border-radius: 10px; padding: 16px 22px; margin-bottom: 24px;
+        }
+        .goals-box h3 { font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px; color: #276749; margin-bottom: 8px; }
+        .goals-box ul { padding-left: 20px; }
+        .goals-box li { font-size: 0.98em; margin-bottom: 4px; }
+
+        .warmup-box {
+            background: #ebf8ff; border: 1px solid #bee3f8; border-radius: 10px; padding: 16px 22px; margin-bottom: 24px;
+        }
+        .warmup-box h3 { font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px; color: #2b6cb0; margin-bottom: 8px; }
+        .warmup-box ol { padding-left: 20px; }
+        .warmup-box li { font-size: 0.98em; margin-bottom: 6px; }
+        .warmup-box .warmup-note { margin-top: 8px; font-size: 0.9em; color: #2b6cb0; }
+
+        .vocab-theme { margin-top: 16px; }
+        .vocab-theme h4 { font-weight: 700; color: #2d3748; margin-bottom: 6px; font-size: 1.0rem; border-bottom: 1px solid #edf2f7; padding-bottom: 4px; }
+
+        .answer-key {
+            background: #f0fff4; border-radius: 6px; padding: 10px 14px; margin-top: 10px;
+            border: 1px solid #c6f6d5; font-size: 0.93em;
+        }
+        .answer-key summary { cursor: pointer; font-weight: 700; color: #276749; }
+        .answer-key .reason { display: block; font-size: 0.9em; color: #2b6cb0; font-style: italic; margin-top: 2px; }
+
+        .mistake-box {
+            background: #fff5f5; border-left: 4px solid #fc8181; padding: 14px 18px; margin: 12px 0; border-radius: 6px;
+        }
+        .mistake-box .wrong { color: #c53030; text-decoration: line-through; font-weight: 600; }
+        .mistake-box .correct { color: #38a169; font-weight: 600; }
+
+        .srs-box {
+            background: #1a202c; color: #e2e8f0; border-radius: 12px; padding: 20px 24px; margin: 20px 0 8px;
+        }
+        .srs-box h3 { color: white; font-size: 1em; margin-bottom: 10px; }
+        .srs-box .srs-steps { display: flex; flex-wrap: wrap; gap: 10px; }
+        .srs-box .srs-step {
+            background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 8px; padding: 8px 14px; font-size: 0.85em; flex: 1 1 100px; text-align: center;
+        }
+        .srs-box .srs-step strong { display: block; color: #e53e3e; font-size: 1.1em; }
+    </style>
+</head>
+<body>
+<div class="container" id="app">
+
+    <!-- ============================================================
+    TOP PANEL – POSTĘP + FILTRY
+    ============================================================ -->
+    <div class="top-panel" id="topPanel">
+        <div class="panel-row">
+            <div>
+                <div class="title">Tryb rozkazujący, czasowniki stanów i <strong>phrasal verbs</strong></div>
+                <div class="subtitle">Egzamin ósmoklasisty · kompleksowe przygotowanie</div>
+                <div class="lesson-info">
+                    <div class="lesson-title">Lekcja 3 – imperatyw, stative verbs, czasowniki złożone</div>
+                    <div>Nazwa pliku: lekcja-03-imperative-phrasal.html</div>
+                </div>
+            </div>
+            <div class="progress-bar-wrap">
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" id="progressFill" style="width:0%;"></div>
+                </div>
+                <div class="progress-label">
+                    <span id="progressPercent">0%</span>
+                    <span id="progressStatus">Zacznij naukę</span>
+                </div>
+            </div>
+        </div>
+        <div class="panel-row">
+            <div class="view-filters">
+                <button class="btn active" data-view="all" onclick="setView('all')">📚 Wszystko</button>
+                <button class="btn" data-view="basic" onclick="setView('basic')">🟢 Podstawa + Trening</button>
+                <button class="btn" data-view="exam" onclick="setView('exam')">🟠 Egzamin</button>
+            </div>
+            <div style="font-size:0.75rem; color:var(--color-text-muted); margin-left:auto;">
+                <span id="visibleCount">0</span> / <span id="totalCount">0</span> widocznych
+            </div>
+            <button class="btn btn-outline btn-sm" type="button" onclick="resetAllProgress()">Resetuj postęp</button>
+        </div>
+        <div class="panel-row">
+            <div class="today-tasks" id="todayTasks">
+                <div class="task" data-task="imperative"><span class="circle">1</span><span class="task-label">Tryb rozkazujący</span></div>
+                <div class="task" data-task="stative"><span class="circle">2</span><span class="task-label">Czasowniki stanów</span></div>
+                <div class="task" data-task="phrasal"><span class="circle">3</span><span class="task-label">Phrasal verbs</span></div>
+                <div class="task" data-task="training"><span class="circle">4</span><span class="task-label">Zrób trening</span></div>
+                <div class="task" data-task="test"><span class="circle">5</span><span class="task-label">Zrób test</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    NAWIGACJA MIĘDZY LEKCJAMI
+    ============================================================ -->
+    <div class="lesson-nav">
+        <a href="lekcja 02.html">&larr; Poprzednia lekcja</a>
+        <a href="index.html" class="all-lessons">Spis wszystkich lekcji</a>
+        <a href="lekcja 04.html">Następna lekcja &rarr;</a>
+    </div>
+
+    <!-- ============================================================
+    SPIS TREŚCI (akordeon z checklistą)
+    ============================================================ -->
+    <div class="toc-section" id="sec-toc">
+        <h2>Spis treści</h2>
+        <div class="toc-accordion">
+
+            <details class="toc-item">
+                <summary class="toc-summary">Cele lekcji i test wstępny</summary>
+                <nav class="toc-actions" aria-label="Przejdź do celów i testu">
+                    <a class="toc-anchor" href="#sec-goals">Cele lekcji</a>
+                    <a class="toc-anchor" href="#sec-warmup">Test wstępny</a>
+                </nav>
+                <ul class="toc-checklist">
+                    <li><input type="checkbox" data-progress="5" /> Znam cele lekcji.</li>
+                    <li><input type="checkbox" data-progress="5" /> Rozwiązałem/am test wstępny.</li>
+                </ul>
+            </details>
+
+            <details class="toc-item">
+                <summary class="toc-summary">Tryb rozkazujący (Imperative)</summary>
+                <nav class="toc-actions" aria-label="Przejdź do trybu rozkazującego">
+                    <a class="toc-anchor" href="#part1">Imperative – twierdzenie</a>
+                    <a class="toc-anchor" href="#part2">Imperative – przeczenie</a>
+                    <a class="toc-anchor" href="#part3">What…! / How…!</a>
+                </nav>
+                <ul class="toc-checklist">
+                    <li><input type="checkbox" data-progress="5" /> Umiem tworzyć polecenia i zakazy.</li>
+                    <li><input type="checkbox" data-progress="5" /> Znam różnicę między What…! a How…!.</li>
+                </ul>
+            </details>
+
+            <details class="toc-item">
+                <summary class="toc-summary">Czasowniki stanów i czynności</summary>
+                <nav class="toc-actions" aria-label="Przejdź do czasowników stanów">
+                    <a class="toc-anchor" href="#part4">Stative vs action</a>
+                    <a class="toc-anchor" href="#part5">Would like / want / need</a>
+                </nav>
+                <ul class="toc-checklist">
+                    <li><input type="checkbox" data-progress="5" /> Odróżniam czasowniki stanów od czynności.</li>
+                    <li><input type="checkbox" data-progress="5" /> Wiem, że stative verbs zwykle nie mają -ing.</li>
+                </ul>
+            </details>
+
+            <details class="toc-item">
+                <summary class="toc-summary">Phrasal verbs – czasowniki złożone</summary>
+                <nav class="toc-actions" aria-label="Przejdź do phrasal verbs">
+                    <a class="toc-anchor" href="#part6">Phrasal verbs – codzienna rutyna</a>
+                    <a class="toc-anchor" href="#part7">Phrasal verbs – dom i instrukcje</a>
+                    <a class="toc-anchor" href="#part8">Phrasal verbs – opieka i relacje</a>
+                </nav>
+                <ul class="toc-checklist">
+                    <li><input type="checkbox" data-progress="5" /> Znam znaczenie najważniejszych phrasal verbs.</li>
+                    <li><input type="checkbox" data-progress="5" /> Potrafię używać ich w zdaniach.</li>
+                </ul>
+            </details>
+
+            <details class="toc-item">
+                <summary class="toc-summary">Słownictwo i ćwiczenia</summary>
+                <nav class="toc-actions" aria-label="Przejdź do słownictwa i ćwiczeń">
+                    <a class="toc-anchor" href="#sec-vocab">Słownictwo</a>
+                    <a class="toc-anchor" href="#part10">Ćwiczenia</a>
+                    <a class="toc-anchor" href="#part12">Błędy</a>
+                </nav>
+                <ul class="toc-checklist">
+                    <li><input type="checkbox" data-progress="5" /> Znam słownictwo: dom, czynności, instrukcje, emocje.</li>
+                    <li><input type="checkbox" data-progress="5" /> Rozwiązałem/am ćwiczenia.</li>
+                    <li><input type="checkbox" data-progress="5" /> Znam najczęstsze błędy.</li>
+                </ul>
+            </details>
+
+        </div>
+        <div class="toc-keywords">
+            <span>Słownictwo: dom · codzienne czynności · instrukcje · emocje</span>
+            <a class="toc-anchor" href="#sec-vocab">Otwórz słowniczek</a>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    CZĘŚĆ 0 – CELE I TEST WSTĘPNY
+    ============================================================ -->
+    <section class="section" data-level="basic" id="sec-goals">
+        <div class="part-heading"><span class="part-num">Cele lekcji</span></div>
+
+        <div class="goals-box">
+            <h3>Po tej lekcji będziesz umieć</h3>
+            <ul>
+                <li>tworzyć zdania rozkazujące i przeczące z <strong>Don’t + czasownik</strong>;</li>
+                <li>rozpoznawać podstawowe czasowniki stanu i wiedzieć, że zwykle nie występują w formie ciągłej;</li>
+                <li>stosować co najmniej 8 phrasal verbs w prostych zdaniach;</li>
+                <li>używać <strong>would like to</strong>, <strong>want to</strong> i <strong>need to</strong>;</li>
+                <li>napisać krótką instrukcję dotyczącą opieki nad zwierzęciem.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section" data-level="basic" id="sec-warmup">
+        <div class="warmup-box">
+            <h3>Test wstępny – sprawdź, co już wiesz</h3>
+            <ol>
+                <li>Popraw: <em>Don’t to touch the wire!</em></li>
+                <li>Popraw: <em>I am knowing the answer.</em></li>
+                <li>Uzupełnij: <em>__________ a lovely dress!</em> (What / How)</li>
+                <li>Przetłumacz: <em>Szukam kluczy.</em> (użyj phrasal verb)</li>
+                <li>Uzupełnij: <em>I __________ like to visit London.</em> (would / want)</li>
+            </ol>
+            <div class="warmup-note">Nie martw się, jeśli czegoś nie wiesz – po to jest ta lekcja. Wróć do tych pytań na końcu i porównaj wynik.</div>
+            <button class="answer-toggle" onclick="toggleAnswer('ans-warmup')">Pokaż odpowiedzi</button>
+            <div id="ans-warmup" class="answer-content">
+                <ol>
+                    <li><strong>Don’t touch the wire!</strong> (po don’t forma podstawowa bez to)</li>
+                    <li><strong>I know the answer.</strong> (know to czasownik stanu – bez -ing)</li>
+                    <li><strong>What</strong> a lovely dress! (what + rzeczownik)</li>
+                    <li><strong>I’m looking for my keys.</strong></li>
+                    <li><strong>would</strong> like to visit London.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="checklist">
+            <h3>Lista kontrolna – zaznacz, jeśli potrafisz</h3>
+            <label><input type="checkbox"> Tworzę polecenia i zakazy (Open... / Don't touch...).</label>
+            <label><input type="checkbox"> Poprawnie buduję zdania z What…! i How…!.</label>
+            <label><input type="checkbox"> Wiem, że czasowniki stanów zwykle nie występują w formie -ing.</label>
+            <label><input type="checkbox"> Znam znaczenie i zastosowanie czasowników złożonych (get up, look for, turn on…).</label>
+            <label><input type="checkbox"> Odróżniam would like to / want / need.</label>
+            <label><input type="checkbox"> Znam słówka o domu, codziennych czynnościach, instrukcjach i emocjach.</label>
+            <label><input type="checkbox"> Rozpoznaję pary bliskoznaczne i przeciwstawne.</label>
+            <label><input type="checkbox"> Rozwiązałem/am wszystkie zadania egzaminacyjne.</label>
+            <label><input type="checkbox"> Znam 6 kluczowych zasad z sekcji „Ważne!” na pamięć.</label>
+            <label><input type="checkbox"> Wiem, jakich błędów z trybem rozkazującym i phrasal verbs unikać.</label>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 1 – TRYB ROZKAZUJĄCY (TWIERDZENIE)
+    ============================================================ -->
+    <section class="section" data-level="basic" id="part1">
+        <div class="part-heading"><span class="part-num">Część 1</span> · Tryb rozkazujący – twierdzenie</div>
+
+        <div class="section" data-level="basic">
+            <h2>1. Tryb rozkazujący – forma twierdząca</h2>
+            <p>Tryb rozkazujący służy do dawania <strong>poleceń, instrukcji, rad i próśb</strong>. Podmiot (you) zwykle pomijamy.</p>
+
+            <div class="card card-remember">
+                <span class="card-label">Wzór</span>
+                <p><strong>Czasownik w formie podstawowej + reszta zdania</strong></p>
+            </div>
+
+            <div class="example">
+                <span class="tag">polecenie</span>
+                <span class="eng"><span class="hl-main-verb">Open</span> the window.</span>
+                <span class="pl">Otwórz okno.</span>
+                <button class="audio-btn" data-text="Open the window." data-speed="0.7">▶</button>
+            </div>
+            <div class="example">
+                <span class="tag">instrukcja</span>
+                <span class="eng"><span class="hl-main-verb">Turn</span> left at the traffic lights.</span>
+                <span class="pl">Skręć w lewo na światłach.</span>
+                <button class="audio-btn" data-text="Turn left at the traffic lights." data-speed="0.7">▶</button>
+            </div>
+            <div class="example">
+                <span class="tag">prośba / rada</span>
+                <span class="eng"><span class="hl-main-verb">Please sit</span> down. / <span class="hl-main-verb">Be</span> careful!</span>
+                <span class="pl">Proszę, usiądź. / Uważaj!</span>
+                <button class="audio-btn" data-text="Please sit down." data-speed="0.7">▶</button>
+            </div>
+
+            <div class="card card-warning">
+                <span class="card-label">Uwaga</span>
+                <ul>
+                    <li>W trybie rozkazującym <strong>nie</strong> używamy podmiotu <em>you</em>.</li>
+                    <li>Dla <em>let’s</em> (zróbmy): <em>Let’s go!</em> / <em>Let’s not wait.</em></li>
+                    <li>Forma uprzejma: <em>Open the window, please.</em> lub <em>Please, sit down.</em></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 2 – TRYB ROZKAZUJĄCY (PRZECZENIE)
+    ============================================================ -->
+    <section class="section" data-level="basic" id="part2">
+        <div class="part-heading"><span class="part-num">Część 2</span> · Tryb rozkazujący – przeczenie</div>
+
+        <div class="section" data-level="basic">
+            <h2>2. Tryb rozkazujący – forma przecząca</h2>
+
+            <div class="card card-error">
+                <span class="card-label">Zakaz</span>
+                <p><strong>Don’t + czasownik w formie podstawowej</strong></p>
+            </div>
+
+            <div class="example">
+                <span class="tag">zakaz</span>
+                <span class="eng"><span class="hl-operator">Don’t</span> <span class="hl-main-verb">touch</span> it!</span>
+                <span class="pl">Nie dotykaj tego!</span>
+                <button class="audio-btn" data-text="Don't touch it!" data-speed="0.7">▶</button>
+            </div>
+            <div class="example">
+                <span class="tag">ostrzeżenie</span>
+                <span class="eng"><span class="hl-operator">Don’t</span> <span class="hl-main-verb">run</span> in the corridor.</span>
+                <span class="pl">Nie biegaj na korytarzu.</span>
+                <button class="audio-btn" data-text="Don't run in the corridor." data-speed="0.7">▶</button>
+            </div>
+            <div class="example">
+                <span class="tag">rada</span>
+                <span class="eng"><span class="hl-operator">Don’t</span> <span class="hl-main-verb">forget</span> your homework.</span>
+                <span class="pl">Nie zapomnij o zadaniu domowym.</span>
+                <button class="audio-btn" data-text="Don't forget your homework." data-speed="0.7">▶</button>
+            </div>
+
+            <div class="card card-remember">
+                <span class="card-label">Zapamiętaj</span>
+                <ul>
+                    <li>Po <strong>Don’t</strong> zawsze używamy formy podstawowej czasownika – bez <strong>to</strong>.</li>
+                    <li><span class="error-text">Don’t to touch</span> → <span class="correct-text">Don’t touch</span></li>
+                    <li>Po czasowniku <strong>be</strong> nie używamy <em>do</em> w trybie rozkazującym: <em>Be careful!</em> / <em>Don’t be careless!</em></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 3 – WYKRZYKNIKI WHAT / HOW
+    ============================================================ -->
+    <section class="section" data-level="basic" id="part3">
+        <div class="part-heading"><span class="part-num">Część 3</span> · Wykrzykniki z What…! i How…!</div>
+
+        <div class="section" data-level="basic">
+            <h2>3. What + (a/an) + przymiotnik + rzeczownik!</h2>
+            <div class="example">
+                <span class="tag">zachwyt</span>
+                <span class="eng"><span class="hl-operator">What</span> a beautiful day!</span>
+                <span class="pl">Jaki piękny dzień!</span>
+                <button class="audio-btn" data-text="What a beautiful day!" data-speed="0.7">▶</button>
+            </div>
+            <div class="example">
+                <span class="tag">zachwyt</span>
+                <span class="eng"><span class="hl-operator">What</span> an interesting book!</span>
+                <span class="pl">Jaka interesująca książka!</span>
+                <button class="audio-btn" data-text="What an interesting book!" data-speed="0.7">▶</button>
+            </div>
+            <div class="example">
+                <span class="tag">liczba mnoga</span>
+                <span class="eng"><span class="hl-operator">What</span> nice shoes!</span>
+                <span class="pl">Jakie ładne buty!</span>
+                <button class="audio-btn" data-text="What nice shoes!" data-speed="0.7">▶</button>
+            </div>
+
+            <h2>4. How + przymiotnik / przysłówek!</h2>
+            <div class="example">
+                <span class="tag">zachwyt</span>
+                <span class="eng"><span class="hl-operator">How</span> beautiful!</span>
+                <span class="pl">Jak pięknie!</span>
+                <button class="audio-btn" data-text="How beautiful!" data-speed="0.7">▶</button>
+            </div>
+            <div class="example">
+                <span class="tag">zachwyt</span>
+                <span class="eng"><span class="hl-operator">How</span> interesting!</span>
+                <span class="pl">Jak interesujące!</span>
+                <button class="audio-btn" data-text="How interesting!" data-speed="0.7">▶</button>
+            </div>
+            <div class="example">
+                <span class="tag">z przysłówkiem</span>
+                <span class="eng"><span class="hl-operator">How</span> fast he runs!</span>
+                <span class="pl">Jak szybko on biega!</span>
+                <button class="audio-btn" data-text="How fast he runs!" data-speed="0.7">▶</button>
+            </div>
+
+            <div class="card card-remember">
+                <span class="card-label">Różnica</span>
+                <ul>
+                    <li><strong>What</strong> – przed rzeczownikiem: <em>What a nice house!</em></li>
+                    <li><strong>How</strong> – przed przymiotnikiem lub przysłówkiem: <em>How nice! / How well she sings!</em></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 4 – CZASOWNIKI STANÓW
+    ============================================================ -->
+    <section class="section" data-level="basic" id="part4">
+        <div class="part-heading"><span class="part-num">Część 4</span> · Czasowniki stanów i czynności</div>
+
+        <div class="section" data-level="basic">
+            <h2>5. Czasowniki stanów (stative verbs) vs czynności (action verbs)</h2>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Rodzaj</th><th>Co opisują?</th><th>Przykłady</th><th>Czasy ciągłe?</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr class="correct-row">
+                            <td><strong>Czynności</strong><br />(action / dynamic)</td>
+                            <td>Akcje, które możemy zobaczyć lub wykonać</td>
+                            <td>run, study, write, play, eat, open, clean</td>
+                            <td>Tak – <em>I am running.</em></td>
+                        </tr>
+                        <tr class="error-row">
+                            <td><strong>Stany</strong><br />(stative)</td>
+                            <td>Stany, uczucia, myśli, posiadanie, zmysły</td>
+                            <td>know, need, understand, like, love, want, have, see, hear, believe</td>
+                            <td>Zwykle NIE – <em>I understand.</em> (nie: <em>I am understanding</em>)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card card-error">
+                <span class="card-label">Zapamiętaj!</span>
+                <p>Czasowniki stanów <strong>zwykle nie występują w czasach ciągłych</strong> (-ing).</p>
+                <div class="example" style="background:white; margin-top:8px;">
+                    <span class="tag">poprawnie</span>
+                    <span class="eng"><span class="correct-text">I understand</span> the rule.</span>
+                    <span class="pl">Rozumiem tę zasadę.</span>
+                </div>
+                <div class="example" style="background:white; border-color:var(--color-error);">
+                    <span class="tag">błąd</span>
+                    <span class="eng" style="color:var(--color-error);"><span class="error-text">I am understanding</span> the rule.</span>
+                    <span class="pl">Nie używamy -ing z czasownikami stanów.</span>
+                </div>
+            </div>
+
+            <div class="card card-warning">
+                <span class="card-label">Wyjątki – gdy czasownik stanu zmienia znaczenie</span>
+                <p>Niektóre czasowniki mogą mieć formę ciągłą, gdy zmieniają znaczenie:</p>
+                <ul>
+                    <li><em>I have a car.</em> – Mam samochód. (stan)</li>
+                    <li><em>I’m having lunch.</em> – Jem lunch. (czynność)</li>
+                    <li><em>I think you are right.</em> – Uważam, że masz rację. (stan)</li>
+                    <li><em>I’m thinking about the problem.</em> – Zastanawiam się nad problemem. (czynność)</li>
+                </ul>
+            </div>
+
+            <h3>Najczęstsze czasowniki stanów</h3>
+            <div class="vocab-grid">
+                <div class="vocab-item">
+                    <span class="en">know</span> <span class="pl">wiedzieć / znać</span>
+                    <span class="ex">I know the answer.</span>
+                    <button class="audio-btn" data-text="I know the answer." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                </div>
+                <div class="vocab-item">
+                    <span class="en">understand</span> <span class="pl">rozumieć</span>
+                    <span class="ex">She understands everything.</span>
+                    <button class="audio-btn" data-text="She understands everything." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                </div>
+                <div class="vocab-item">
+                    <span class="en">need</span> <span class="pl">potrzebować</span>
+                    <span class="ex">We need more time.</span>
+                    <button class="audio-btn" data-text="We need more time." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                </div>
+                <div class="vocab-item">
+                    <span class="en">want</span> <span class="pl">chcieć</span>
+                    <span class="ex">I want a new phone.</span>
+                    <button class="audio-btn" data-text="I want a new phone." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                </div>
+                <div class="vocab-item">
+                    <span class="en">like / love / hate</span> <span class="pl">lubić / kochać / nienawidzić</span>
+                    <span class="ex">She loves chocolate.</span>
+                    <button class="audio-btn" data-text="She loves chocolate." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                </div>
+                <div class="vocab-item">
+                    <span class="en">believe</span> <span class="pl">wierzyć</span>
+                    <span class="ex">Do you believe in ghosts?</span>
+                    <button class="audio-btn" data-text="Do you believe in ghosts?" data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                </div>
+                <div class="vocab-item">
+                    <span class="en">remember / forget</span> <span class="pl">pamiętać / zapominać</span>
+                    <span class="ex">I remember your name.</span>
+                    <button class="audio-btn" data-text="I remember your name." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                </div>
+                <div class="vocab-item">
+                    <span class="en">have (posiadać)</span> <span class="pl">mieć</span>
+                    <span class="ex">They have a big house.</span>
+                    <button class="audio-btn" data-text="They have a big house." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                </div>
+                <div class="vocab-item">
+                    <span class="en">see / hear / smell</span> <span class="pl">widzieć / słyszeć / czuć</span>
+                    <span class="ex">I can see the mountains.</span>
+                    <button class="audio-btn" data-text="I can see the mountains." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                </div>
+                <div class="vocab-item">
+                    <span class="en">seem / look (wyglądać)</span> <span class="pl">wydawać się / wyglądać</span>
+                    <span class="ex">She seems tired today.</span>
+                    <button class="audio-btn" data-text="She seems tired today." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 5 – WOULD LIKE / WANT / NEED
+    ============================================================ -->
+    <section class="section" data-level="basic" id="part5">
+        <div class="part-heading"><span class="part-num">Część 5</span> · Would like to, want, need</div>
+
+        <div class="section" data-level="basic">
+            <h2>6. Wyrażanie życzeń, potrzeb i zamiarów</h2>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Konstrukcja</th><th>Znaczenie</th><th>Formalność</th><th>Przykład</th><th>Audio</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>would like to</strong></td>
+                            <td>chciałbym / chciałabym</td>
+                            <td>uprzejme, grzeczne</td>
+                            <td>I would like to visit London.</td>
+                            <td><button class="audio-btn" data-text="I would like to visit London." data-speed="0.7">▶</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>want to</strong></td>
+                            <td>chcę</td>
+                            <td>neutralne / bezpośrednie</td>
+                            <td>I want to go home now.</td>
+                            <td><button class="audio-btn" data-text="I want to go home now." data-speed="0.7">▶</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>need to</strong></td>
+                            <td>muszę / potrzebuję</td>
+                            <td>neutralne (konieczność)</td>
+                            <td>I need to study for the test.</td>
+                            <td><button class="audio-btn" data-text="I need to study for the test." data-speed="0.7">▶</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>have to</strong></td>
+                            <td>muszę, mam obowiązek</td>
+                            <td>obowiązek zewnętrzny</td>
+                            <td>I have to clean my room.</td>
+                            <td><button class="audio-btn" data-text="I have to clean my room." data-speed="0.7">▶</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card card-remember">
+                <span class="card-label">Ważne konstrukcje z would like</span>
+                <ul>
+                    <li><strong>would like + rzeczownik:</strong> <em>I’d like some water.</em> / <em>I’d like a sandwich.</em></li>
+                    <li><strong>would like + to + czasownik:</strong> <em>I’d like to drink some water.</em> / <em>I’d like to visit London.</em></li>
+                    <li><strong>Skróty:</strong> <em>I would like to</em> → <em>I’d like to</em>; <em>I would not like to</em> → <em>I wouldn’t like to</em></li>
+                </ul>
+            </div>
+
+            <div class="card card-warning">
+                <span class="card-label">Uwaga</span>
+                <ul>
+                    <li><em>Want</em> jest czasownikiem stanu – nie używamy go z -ing: <span class="error-text">I am wanting</span> → <span class="correct-text">I want</span></li>
+                    <li><em>Need</em> jest czasownikiem stanu – nie używamy go z -ing: <span class="error-text">I am needing</span> → <span class="correct-text">I need</span></li>
+                    <li><em>Need to</em> i <em>have to</em> mają podobne znaczenie, ale <em>have to</em> częściej wskazuje na obowiązek zewnętrzny.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 6 – PHRASAL VERBS (CODZIENNA RUTYNA)
+    ============================================================ -->
+    <section class="section" data-level="basic" id="part6">
+        <div class="part-heading"><span class="part-num">Część 6</span> · Phrasal verbs – codzienna rutyna</div>
+
+        <div class="section" data-level="basic">
+            <h2>7. Phrasal verbs – codzienna rutyna</h2>
+            <p><strong>Phrasal verb</strong> = czasownik + przyimek / przysłówek. Znaczenie często jest inne niż suma części. Ucz się ich <strong>jako całych wyrażeń</strong> w zdaniach.</p>
+
+            <div class="card card-warning">
+                <span class="card-label">Tip</span>
+                <p>Zapisuj phrasal verb w zdaniu + tłumaczenie pasujące do kontekstu.</p>
+                <div class="example" style="background:white; margin-top:6px;">
+                    <span class="eng">I’m <span class="hl-operator">looking for</span> my keys.</span>
+                    <span class="pl">Szukam kluczy.</span>
+                    <button class="audio-btn" data-text="I'm looking for my keys." data-speed="0.7">▶</button>
+                </div>
+            </div>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Phrasal verb</th><th>Znaczenie</th><th>Przykład</th><th>Audio</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>wake up</strong></td>
+                            <td>budzić się</td>
+                            <td>I wake up at 6:30.</td>
+                            <td><button class="audio-btn" data-text="I wake up at 6:30." data-speed="0.7">▶</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>get up</strong></td>
+                            <td>wstawać (z łóżka)</td>
+                            <td>I get up at 7 o’clock.</td>
+                            <td><button class="audio-btn" data-text="I get up at 7 o'clock." data-speed="0.7">▶</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>put on</strong></td>
+                            <td>zakładać (ubranie)</td>
+                            <td>Put on your coat.</td>
+                            <td><button class="audio-btn" data-text="Put on your coat." data-speed="0.7">▶</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>take off</strong></td>
+                            <td>zdejmować (ubranie)</td>
+                            <td>Take off your shoes.</td>
+                            <td><button class="audio-btn" data-text="Take off your shoes." data-speed="0.7">▶</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>go to bed</strong></td>
+                            <td>kłaść się spać</td>
+                            <td>I go to bed at 10 p.m.</td>
+                            <td><button class="audio-btn" data-text="I go to bed at 10 p.m." data-speed="0.7">▶</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>go out</strong></td>
+                            <td>wychodzić (z domu / spotykać się towarzysko)</td>
+                            <td>I go out with my friends on Fridays.</td>
+                            <td><button class="audio-btn" data-text="I go out with my friends on Fridays." data-speed="0.7">▶</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 7 – PHRASAL VERBS (DOM I INSTRUKCJE)
+    ============================================================ -->
+    <section class="section" data-level="basic" id="part7">
+        <div class="part-heading"><span class="part-num">Część 7</span> · Phrasal verbs – dom i instrukcje</div>
+
+        <div class="section" data-level="basic">
+            <h2>8. Phrasal verbs – dom i instrukcje</h2>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Phrasal verb</th><th>Znaczenie</th><th>Przykład</th><th>Audio</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>turn on</strong></td>
+                            <td>włączać</td>
+                            <td>Turn on the light, please.</td>
+                            <td><button class="audio-btn" data-text="Turn on the light, please." data-speed="0.7">▶</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>turn off</strong></td>
+                            <td>wyłączać</td>
+                            <td>Turn off the television.</td>
+                            <td><button class="audio-btn" data-text="Turn off the television." data-speed="0.7">▶</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>switch on</strong></td>
+                            <td>włączać (synonim turn on)</td>
+                            <td>Switch on the computer.</td>
+                            <td><button class="audio-btn" data-text="Switch on the computer." data-speed="0.7">▶</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>switch off</strong></td>
+                            <td>wyłączać (synonim turn off)</td>
+                            <td>Switch off your phone during the test.</td>
+                            <td><button class="audio-btn" data-text="Switch off your phone during the test." data-speed="0.7">▶</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>tidy up</strong></td>
+                            <td>sprzątać</td>
+                            <td>Tidy up your room.</td>
+                            <td><button class="audio-btn" data-text="Tidy up your room." data-speed="0.7">▶</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>pick up</strong></td>
+                            <td>podnosić / odbierać</td>
+                            <td>Pick up the book, please.</td>
+                            <td><button class="audio-btn" data-text="Pick up the book, please." data-speed="0.7">▶</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>sit down</strong></td>
+                            <td>siadać</td>
+                            <td>Sit down, please.</td>
+                            <td><button class="audio-btn" data-text="Sit down, please." data-speed="0.7">▶</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>stand up</strong></td>
+                            <td>wstawać</td>
+                            <td>Stand up and say your name.</td>
+                            <td><button class="audio-btn" data-text="Stand up and say your name." data-speed="0.7">▶</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card card-hint">
+                <span class="card-label">Uwaga</span>
+                <p><strong>turn on</strong> i <strong>switch on</strong> oraz <strong>turn off</strong> i <strong>switch off</strong> są synonimami – możesz używać obu form.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 8 – PHRASAL VERBS (OPIEKA I RELACJE)
+    ============================================================ -->
+    <section class="section" data-level="basic" id="part8">
+        <div class="part-heading"><span class="part-num">Część 8</span> · Phrasal verbs – opieka i relacje</div>
+
+        <div class="section" data-level="basic">
+            <h2>9. Phrasal verbs – opieka i relacje</h2>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Phrasal verb</th><th>Znaczenie</th><th>Przykład</th><th>Audio</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>look after</strong></td>
+                            <td>opiekować się</td>
+                            <td>She looks after her little brother.</td>
+                            <td><button class="audio-btn" data-text="She looks after her little brother." data-speed="0.7">▶</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>look for</strong></td>
+                            <td>szukać</td>
+                            <td>I’m looking for my keys.</td>
+                            <td><button class="audio-btn" data-text="I'm looking for my keys." data-speed="0.7">▶</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>find out</strong></td>
+                            <td>dowiedzieć się</td>
+                            <td>I need to find out the answer.</td>
+                            <td><button class="audio-btn" data-text="I need to find out the answer." data-speed="0.7">▶</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>give up</strong></td>
+                            <td>rezygnować / poddawać się</td>
+                            <td>Don’t give up! You can do it.</td>
+                            <td><button class="audio-btn" data-text="Don't give up! You can do it." data-speed="0.7">▶</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>come back</strong></td>
+                            <td>wracać</td>
+                            <td>Come back home before 9 p.m.</td>
+                            <td><button class="audio-btn" data-text="Come back home before 9 p.m." data-speed="0.7">▶</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong>go back</strong></td>
+                            <td>wracać (tam, skąd się przyszło)</td>
+                            <td>Go back to your seat.</td>
+                            <td><button class="audio-btn" data-text="Go back to your seat." data-speed="0.7">▶</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card card-remember">
+                <span class="card-label">Tip tygodnia</span>
+                <p>Ucz się phrasal verbs w <strong>całych zdaniach</strong>, nie jako osobnych słów.</p>
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:4px 20px; margin-top:8px; font-size:0.92rem;">
+                    <div><em>I’m looking for my keys.</em></div>
+                    <div>– Szukam kluczy.</div>
+                    <div><em>Turn off the light, please.</em></div>
+                    <div>– Wyłącz światło, proszę.</div>
+                    <div><em>She looks after her brother.</em></div>
+                    <div>– Ona opiekuje się bratem.</div>
+                    <div><em>Don’t give up!</em></div>
+                    <div>– Nie poddawaj się!</div>
+                </div>
+                <p style="margin-top:8px;"><strong>Twoje zadanie:</strong> Wybierz 5 phrasal verbs i ułóż z każdym własne zdanie. Zapisz je w zeszycie.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 9 – SYNONIMY
+    ============================================================ -->
+    <section class="section" data-level="training" id="part9">
+        <div class="part-heading"><span class="part-num">Część 9</span> · Synonimy i przeciwieństwa</div>
+
+        <div class="section" data-level="training">
+            <div class="card card-gray">
+                <span class="card-label">Pary bliskoznaczne i przeciwstawne</span>
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px 20px; margin-top:8px; font-size:0.92rem;">
+                    <div><span class="correct-text">≈</span> <strong>want</strong> ≈ <strong>would like</strong> (chcieć)</div>
+                    <div><span class="correct-text">≈</span> <strong>need</strong> ≈ <strong>have to</strong> (musieć)</div>
+                    <div><span class="correct-text">≈</span> <strong>get up</strong> ≈ <strong>wake up</strong> (wstawać / budzić się)</div>
+                    <div><span class="correct-text">≈</span> <strong>turn off</strong> ≈ <strong>switch off</strong> (wyłączyć)</div>
+                    <div><span class="correct-text">≈</span> <strong>turn on</strong> ≈ <strong>switch on</strong> (włączyć)</div>
+                    <div><span class="error-text">≠</span> <strong>put on</strong> <span class="error-text">≠</span> <strong>take off</strong></div>
+                    <div><span class="error-text">≠</span> <strong>stand up</strong> <span class="error-text">≠</span> <strong>sit down</strong></div>
+                    <div><span class="error-text">≠</span> <strong>go out</strong> <span class="error-text">≠</span> <strong>come back</strong></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 10 – SŁOWNICTWO
+    ============================================================ -->
+    <section class="section" data-level="basic" id="sec-vocab">
+        <div class="part-heading"><span class="part-num">Część 10</span> · Słownictwo</div>
+
+        <div class="section" data-level="basic">
+            <p>Każde słówko ma przykładowe zdanie – ucz się ich w kontekście.</p>
+
+            <div class="vocab-theme">
+                <h4>Dom i pomieszczenia</h4>
+                <div class="vocab-grid">
+                    <div class="vocab-item">
+                        <span class="en">living room</span> <span class="pl">salon</span>
+                        <span class="ex">We watch TV in the living room.</span>
+                        <button class="audio-btn" data-text="We watch TV in the living room." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">bedroom</span> <span class="pl">sypialnia</span>
+                        <span class="ex">My bedroom is upstairs.</span>
+                        <button class="audio-btn" data-text="My bedroom is upstairs." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">kitchen</span> <span class="pl">kuchnia</span>
+                        <span class="ex">Mum is cooking in the kitchen.</span>
+                        <button class="audio-btn" data-text="Mum is cooking in the kitchen." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">bathroom</span> <span class="pl">łazienka</span>
+                        <span class="ex">The bathroom is next to the bedroom.</span>
+                        <button class="audio-btn" data-text="The bathroom is next to the bedroom." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">hall / hallway</span> <span class="pl">przedpokój / korytarz</span>
+                        <span class="ex">Please leave your shoes in the hall.</span>
+                        <button class="audio-btn" data-text="Please leave your shoes in the hall." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">garden</span> <span class="pl">ogród</span>
+                        <span class="ex">In summer, we play in the garden.</span>
+                        <button class="audio-btn" data-text="In summer, we play in the garden." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">upstairs / downstairs</span> <span class="pl">na górze / na dole</span>
+                        <span class="ex">The bedrooms are upstairs.</span>
+                        <button class="audio-btn" data-text="The bedrooms are upstairs." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">furniture</span> <span class="pl">meble</span>
+                        <span class="ex">We bought new furniture.</span>
+                        <button class="audio-btn" data-text="We bought new furniture." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vocab-theme">
+                <h4>Codzienne czynności</h4>
+                <div class="vocab-grid">
+                    <div class="vocab-item">
+                        <span class="en">wake up</span> <span class="pl">budzić się</span>
+                        <span class="ex">I wake up at 6:30.</span>
+                        <button class="audio-btn" data-text="I wake up at 6:30." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">get up</span> <span class="pl">wstawać</span>
+                        <span class="ex">I get up immediately.</span>
+                        <button class="audio-btn" data-text="I get up immediately." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">have a shower / bath</span> <span class="pl">brać prysznic / kąpiel</span>
+                        <span class="ex">She has a shower every morning.</span>
+                        <button class="audio-btn" data-text="She has a shower every morning." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">get dressed</span> <span class="pl">ubierać się</span>
+                        <span class="ex">He gets dressed in his uniform.</span>
+                        <button class="audio-btn" data-text="He gets dressed in his uniform." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">have breakfast / lunch / dinner</span> <span class="pl">jeść śniadanie / obiad / kolację</span>
+                        <span class="ex">We have dinner at 7 p.m.</span>
+                        <button class="audio-btn" data-text="We have dinner at 7 p.m." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">brush your teeth</span> <span class="pl">myć zęby</span>
+                        <span class="ex">You should brush your teeth twice a day.</span>
+                        <button class="audio-btn" data-text="You should brush your teeth twice a day." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">go to school / work</span> <span class="pl">iść do szkoły / pracy</span>
+                        <span class="ex">I go to school by bus.</span>
+                        <button class="audio-btn" data-text="I go to school by bus." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">do homework</span> <span class="pl">odrabiać zadanie</span>
+                        <span class="ex">I have to do my homework.</span>
+                        <button class="audio-btn" data-text="I have to do my homework." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">tidy up / clean</span> <span class="pl">sprzątać</span>
+                        <span class="ex">I need to tidy up my room.</span>
+                        <button class="audio-btn" data-text="I need to tidy up my room." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">go to bed</span> <span class="pl">kłaść się spać</span>
+                        <span class="ex">I go to bed at 10 o'clock.</span>
+                        <button class="audio-btn" data-text="I go to bed at 10 o'clock." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vocab-theme">
+                <h4>Instrukcje i polecenia</h4>
+                <div class="vocab-grid">
+                    <div class="vocab-item">
+                        <span class="en">open / close</span> <span class="pl">otworzyć / zamknąć</span>
+                        <span class="ex">Open the window, please.</span>
+                        <button class="audio-btn" data-text="Open the window, please." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">turn on / turn off</span> <span class="pl">włączyć / wyłączyć</span>
+                        <span class="ex">Turn off the light when you leave.</span>
+                        <button class="audio-btn" data-text="Turn off the light when you leave." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">put on / take off</span> <span class="pl">założyć / zdjąć</span>
+                        <span class="ex">Put on your coat.</span>
+                        <button class="audio-btn" data-text="Put on your coat." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">pick up / put down</span> <span class="pl">podnieść / odłożyć</span>
+                        <span class="ex">Pick up the book, please.</span>
+                        <button class="audio-btn" data-text="Pick up the book, please." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">come in / go out</span> <span class="pl">wejść / wyjść</span>
+                        <span class="ex">You may come in now.</span>
+                        <button class="audio-btn" data-text="You may come in now." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">sit down / stand up</span> <span class="pl">usiąść / wstać</span>
+                        <span class="ex">Please sit down.</span>
+                        <button class="audio-btn" data-text="Please sit down." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">be quiet / be careful</span> <span class="pl">bądź cicho / uważaj</span>
+                        <span class="ex">Be quiet! The baby is sleeping.</span>
+                        <button class="audio-btn" data-text="Be quiet! The baby is sleeping." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">hurry up</span> <span class="pl">pospiesz się</span>
+                        <span class="ex">Hurry up! We're going to be late.</span>
+                        <button class="audio-btn" data-text="Hurry up! We're going to be late." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vocab-theme">
+                <h4>Emocje i samopoczucie</h4>
+                <div class="vocab-grid">
+                    <div class="vocab-item">
+                        <span class="en">happy / sad</span> <span class="pl">szczęśliwy / smutny</span>
+                        <span class="ex">She is happy today.</span>
+                        <button class="audio-btn" data-text="She is happy today." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">angry / annoyed</span> <span class="pl">zły / zirytowany</span>
+                        <span class="ex">My dad was angry.</span>
+                        <button class="audio-btn" data-text="My dad was angry." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">tired / exhausted</span> <span class="pl">zmęczony / wyczerpany</span>
+                        <span class="ex">I’m tired after a long day.</span>
+                        <button class="audio-btn" data-text="I'm tired after a long day." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">worried / nervous</span> <span class="pl">zmartwiony / zdenerwowany</span>
+                        <span class="ex">She is nervous about the exam.</span>
+                        <button class="audio-btn" data-text="She is nervous about the exam." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">excited</span> <span class="pl">podekscytowany</span>
+                        <span class="ex">We are excited about the trip.</span>
+                        <button class="audio-btn" data-text="We are excited about the trip." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">bored / boring</span> <span class="pl">znudzony / nudny</span>
+                        <span class="ex">This film is boring.</span>
+                        <button class="audio-btn" data-text="This film is boring." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">surprised</span> <span class="pl">zaskoczony</span>
+                        <span class="ex">I was surprised to see her.</span>
+                        <button class="audio-btn" data-text="I was surprised to see her." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">proud</span> <span class="pl">dumny</span>
+                        <span class="ex">My parents are proud of me.</span>
+                        <button class="audio-btn" data-text="My parents are proud of me." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">scared / frightened</span> <span class="pl">przestraszony</span>
+                        <span class="ex">She is scared of spiders.</span>
+                        <button class="audio-btn" data-text="She is scared of spiders." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                    <div class="vocab-item">
+                        <span class="en">relaxed</span> <span class="pl">zrelaksowany</span>
+                        <span class="ex">I feel relaxed after a bath.</span>
+                        <button class="audio-btn" data-text="I feel relaxed after a bath." data-speed="0.7" style="width:24px;height:24px;font-size:12px;">▶</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 11 – ĆWICZENIA
+    ============================================================ -->
+    <section class="section" data-level="training" id="part10">
+        <div class="part-heading"><span class="part-num">Część 11</span> · Ćwiczenia</div>
+
+        <div class="hide-all-wrap">
+            <span style="font-size:0.85rem; font-weight:500; color:var(--color-text-muted);">Ukryj wszystkie odpowiedzi:</span>
+            <button class="hide-all-btn" onclick="hideAllAnswers()">Ukryj wszystkie</button>
+        </div>
+
+        <!-- Ćwiczenie 1 -->
+        <div class="section" data-level="basic">
+            <div class="exercise">
+                <div class="ex-title">Zadanie 1. Wybierz poprawną formę <span class="level-badge level-basic">PODSTAWA</span></div>
+                <ol>
+                    <li>Don’t ___ the wire.<br />a) to touch &nbsp; b) touch</li>
+                    <li>___ the light, please.<br />a) Turn on &nbsp; b) To turn on</li>
+                    <li>I ___ the answer.<br />a) know &nbsp; b) am knowing</li>
+                    <li>She ___ for her keys now.<br />a) looks &nbsp; b) is looking</li>
+                    <li>I would like ___ home.<br />a) go &nbsp; b) to go</li>
+                </ol>
+                <button class="hint-toggle" onclick="toggleHint('hint-ex1')">Wskazówka</button>
+                <div id="hint-ex1" class="hint-content">
+                    <span class="hint-level"><span class="hint-num">1</span> Po Don’t używamy formy podstawowej bez to.</span>
+                    <span class="hint-level"><span class="hint-num">2</span> Know to czasownik stanu – nie używamy -ing.</span>
+                    <span class="hint-level"><span class="hint-num">3</span> Po would like zawsze to + czasownik.</span>
+                </div>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-ex1')">Pokaż odpowiedzi</button>
+                <div id="ans-ex1" class="answer-content">
+                    <ol>
+                        <li><strong>b</strong> – touch</li>
+                        <li><strong>a</strong> – Turn on</li>
+                        <li><strong>a</strong> – know</li>
+                        <li><strong>b</strong> – is looking</li>
+                        <li><strong>b</strong> – to go</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ćwiczenie 2 -->
+        <div class="section" data-level="basic">
+            <div class="exercise">
+                <div class="ex-title">Zadanie 2. Ułóż rozkaz <span class="level-badge level-basic">PODSTAWA</span></div>
+                <p>Ułóż zdania rozkazujące z podanych wyrazów.</p>
+                <ol>
+                    <li>the door / close → ________________</li>
+                    <li>your room / tidy up → ________________</li>
+                    <li>the light / turn off → ________________</li>
+                    <li>quiet / be → ________________</li>
+                    <li>the book / pick up → ________________</li>
+                    <li>the dog / look after → ________________</li>
+                </ol>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-ex2')">Pokaż odpowiedzi</button>
+                <div id="ans-ex2" class="answer-content">
+                    <ol>
+                        <li><strong>Close the door.</strong></li>
+                        <li><strong>Tidy up your room.</strong></li>
+                        <li><strong>Turn off the light.</strong></li>
+                        <li><strong>Be quiet.</strong></li>
+                        <li><strong>Pick up the book.</strong></li>
+                        <li><strong>Look after the dog.</strong></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ćwiczenie 3 -->
+        <div class="section" data-level="training">
+            <div class="exercise">
+                <div class="ex-title">Zadanie 3. Przetłumacz na angielski <span class="level-badge level-training">TRENING</span></div>
+                <ol>
+                    <li>Nie dotykaj przewodu.</li>
+                    <li>Włącz światło.</li>
+                    <li>Załóż kurtkę.</li>
+                    <li>Zaopiekuj się psem.</li>
+                    <li>Nie poddawaj się.</li>
+                    <li>Chciałbym napić się wody.</li>
+                </ol>
+                <button class="hint-toggle" onclick="toggleHint('hint-ex3')">Wskazówka</button>
+                <div id="hint-ex3" class="hint-content">
+                    <span class="hint-level"><span class="hint-num">1</span> Użyj trybu rozkazującego – twierdzenie lub przeczenie.</span>
+                    <span class="hint-level"><span class="hint-num">2</span> Do wyrażenia „chciałbym” użyj <em>would like to</em>.</span>
+                </div>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-ex3')">Pokaż odpowiedzi</button>
+                <div id="ans-ex3" class="answer-content">
+                    <ol>
+                        <li><strong>Don’t touch the wire.</strong></li>
+                        <li><strong>Turn on the light.</strong></li>
+                        <li><strong>Put on your coat.</strong></li>
+                        <li><strong>Look after the dog.</strong></li>
+                        <li><strong>Don’t give up.</strong></li>
+                        <li><strong>I would like to drink some water.</strong> / <strong>I’d like to drink some water.</strong></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ćwiczenie 4 -->
+        <div class="section" data-level="trap">
+            <div class="exercise">
+                <div class="ex-title">Zadanie 4. Popraw błędy <span class="level-badge level-trap">PUŁAPKA E8</span></div>
+                <ol>
+                    <li><span class="error-text">Don’t to open the window.</span></li>
+                    <li><span class="error-text">I am knowing the answer.</span></li>
+                    <li><span class="error-text">She look for her phone.</span></li>
+                    <li><span class="error-text">I would like go home.</span></li>
+                    <li><span class="error-text">He is wanting a new computer.</span></li>
+                </ol>
+                <button class="hint-toggle" onclick="toggleHint('hint-ex4')">Wskazówka</button>
+                <div id="hint-ex4" class="hint-content">
+                    <span class="hint-level"><span class="hint-num">1</span> Po Don’t forma podstawowa bez to.</span>
+                    <span class="hint-level"><span class="hint-num">2</span> Know, want to czasowniki stanów – bez -ing.</span>
+                    <span class="hint-level"><span class="hint-num">3</span> Po would like zawsze <em>to</em> + czasownik.</span>
+                </div>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-ex4')">Pokaż odpowiedzi</button>
+                <div id="ans-ex4" class="answer-content">
+                    <ol>
+                        <li><span class="correct-text">Don’t open the window.</span></li>
+                        <li><span class="correct-text">I know the answer.</span></li>
+                        <li><span class="correct-text">She is looking for her phone.</span> (jeśli czynność trwa teraz)</li>
+                        <li><span class="correct-text">I would like to go home.</span></li>
+                        <li><span class="correct-text">He wants a new computer.</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ćwiczenie 5 – pisanie -->
+        <div class="section" data-level="writing">
+            <div class="exercise">
+                <div class="ex-title">Zadanie 5. Mini-wypowiedź pisemna <span class="level-badge level-writing">PISANIE</span></div>
+                <p>Napisz instrukcję pod tytułem <strong>How to look after a pet</strong> (Jak dbać o zwierzątko).</p>
+                <p>Napisz 5–6 zdań. Użyj:</p>
+                <ul>
+                    <li>co najmniej trzech zdań rozkazujących;</li>
+                    <li>jednego zdania z <strong>Don’t</strong>;</li>
+                    <li>co najmniej dwóch phrasal verbs;</li>
+                    <li>jednego zdania z <strong>need to</strong> lub <strong>would like to</strong>.</li>
+                </ul>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-ex5')">Pokaż przykładową odpowiedź</button>
+                <div id="ans-ex5" class="answer-content">
+                    <p><em>Feed your pet every day. Give it fresh water. Don’t forget to clean its bowl. Look after it carefully. Tidy up the room regularly. Your pet needs to feel safe.</em></p>
+                    <button class="audio-btn" data-text="Feed your pet every day. Give it fresh water. Don't forget to clean its bowl. Look after it carefully. Tidy up the room regularly. Your pet needs to feel safe." data-speed="0.7">▶</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ćwiczenie 6 – What / How -->
+        <div class="section" data-level="exam">
+            <div class="exercise">
+                <div class="ex-title">Zadanie 6. What…! czy How…!? <span class="level-badge level-exam">EGZAMIN</span></div>
+                <ol>
+                    <li>__________ a lovely dress!</li>
+                    <li>__________ interesting this book is!</li>
+                    <li>__________ nice weather!</li>
+                    <li>__________ well she sings!</li>
+                    <li>__________ a beautiful day!</li>
+                </ol>
+                <button class="hint-toggle" onclick="toggleHint('hint-ex6')">Wskazówka</button>
+                <div id="hint-ex6" class="hint-content">
+                    <span class="hint-level"><span class="hint-num">1</span> What + (a/an) + przymiotnik + rzeczownik</span>
+                    <span class="hint-level"><span class="hint-num">2</span> How + przymiotnik / przysłówek</span>
+                </div>
+                <button class="answer-toggle" onclick="toggleAnswer('ans-ex6')">Pokaż odpowiedzi</button>
+                <div id="ans-ex6" class="answer-content">
+                    <ol>
+                        <li><strong>What</strong></li>
+                        <li><strong>How</strong></li>
+                        <li><strong>What</strong></li>
+                        <li><strong>How</strong></li>
+                        <li><strong>What</strong></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 12 – WAŻNE! (6 ZASAD)
+    ============================================================ -->
+    <section class="section" data-level="exam" id="part11">
+        <div class="part-heading"><span class="part-num">Część 12</span> · Ważne! – 6 kluczowych zasad</div>
+
+        <div class="section" data-level="exam">
+            <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; margin:12px 0;">
+                <div style="background:var(--color-training-bg); padding:14px 16px; border-radius:8px; border:1px solid var(--color-border);">
+                    <span style="display:inline-block; background:var(--color-training); color:white; font-weight:800; width:26px; height:26px; text-align:center; line-height:26px; border-radius:50%; font-size:0.8rem; margin-right:6px;">1</span>
+                    <strong>Tryb rozkazujący przeczący: Don’t + forma podstawowa</strong>
+                    <div style="margin-top:4px; font-size:0.9rem; color:var(--color-training);">✓ Don’t touch. &nbsp; ✗ Don’t to touch.</div>
+                </div>
+                <div style="background:var(--color-trap-bg); padding:14px 16px; border-radius:8px; border:1px solid var(--color-border);">
+                    <span style="display:inline-block; background:var(--color-trap); color:white; font-weight:800; width:26px; height:26px; text-align:center; line-height:26px; border-radius:50%; font-size:0.8rem; margin-right:6px;">2</span>
+                    <strong>Czasowniki stanów zwykle bez -ing</strong>
+                    <div style="margin-top:4px; font-size:0.9rem; color:var(--color-training);">✓ I understand. &nbsp; ✗ I am understanding.</div>
+                </div>
+                <div style="background:var(--color-basic-bg); padding:14px 16px; border-radius:8px; border:1px solid var(--color-border);">
+                    <span style="display:inline-block; background:var(--color-basic); color:white; font-weight:800; width:26px; height:26px; text-align:center; line-height:26px; border-radius:50%; font-size:0.8rem; margin-right:6px;">3</span>
+                    <strong>Phrasal verbs ucz się jako całych wyrażeń</strong>
+                    <div style="margin-top:4px; font-size:0.9rem; color:var(--color-training);">look for, turn on, get up, find out…</div>
+                </div>
+                <div style="background:var(--color-ambitious-bg); padding:14px 16px; border-radius:8px; border:1px solid var(--color-border);">
+                    <span style="display:inline-block; background:var(--color-ambitious); color:white; font-weight:800; width:26px; height:26px; text-align:center; line-height:26px; border-radius:50%; font-size:0.8rem; margin-right:6px;">4</span>
+                    <strong>What + rzeczownik / How + przymiotnik</strong>
+                    <div style="margin-top:4px; font-size:0.9rem; color:var(--color-training);">What a nice day! / How nice!</div>
+                </div>
+                <div style="background:var(--color-difficult-bg); padding:14px 16px; border-radius:8px; border:1px solid var(--color-border);">
+                    <span style="display:inline-block; background:var(--color-difficult); color:white; font-weight:800; width:26px; height:26px; text-align:center; line-height:26px; border-radius:50%; font-size:0.8rem; margin-right:6px;">5</span>
+                    <strong>Would like to – grzeczniejsze niż want</strong>
+                    <div style="margin-top:4px; font-size:0.9rem; color:var(--color-training);">I would like to go. (uprzejme)</div>
+                </div>
+                <div style="background:var(--color-remember-bg); padding:14px 16px; border-radius:8px; border:1px solid var(--color-border);">
+                    <span style="display:inline-block; background:var(--color-remember); color:white; font-weight:800; width:26px; height:26px; text-align:center; line-height:26px; border-radius:50%; font-size:0.8rem; margin-right:6px;">6</span>
+                    <strong>Need to = konieczność</strong>
+                    <div style="margin-top:4px; font-size:0.9rem; color:var(--color-training);">You need to study. (musisz)</div>
+                </div>
+            </div>
+
+            <div class="card card-error" style="margin-top:12px;">
+                <span class="card-label">Zapamiętaj na egzamin!</span>
+                <ul>
+                    <li>Przeczenie w trybie rozkazującym: <strong>Don’t + czasownik</strong> (bez to).</li>
+                    <li>Czasowniki stanów (know, need, understand, like…) – zwykle <strong>bez</strong> -ing.</li>
+                    <li>Phrasal verbs pojawiają się w zadaniach na uzupełnianie luk i w czytaniu.</li>
+                    <li><strong>What</strong> z rzeczownikiem, <strong>How</strong> z przymiotnikiem / przysłówkiem.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 13 – BŁĘDY
+    ============================================================ -->
+    <section class="section" data-level="trap" id="part12">
+        <div class="part-heading"><span class="part-num">Część 13</span> · Najczęstsze błędy</div>
+
+        <div class="section" data-level="trap">
+            <div class="mistake-box">
+                <strong>Błąd #1: „to” po Don’t</strong>
+                <div class="wrong">Don’t to touch the wire.</div>
+                <div class="correct">Don’t touch the wire.</div>
+                <div class="pl">Po Don’t zawsze forma podstawowa bez „to”.</div>
+            </div>
+
+            <div class="mistake-box">
+                <strong>Błąd #2: Czasownik stanu w formie ciągłej</strong>
+                <div class="wrong">I am knowing the answer.</div>
+                <div class="wrong">She is needing help.</div>
+                <div class="correct">I know the answer.</div>
+                <div class="correct">She needs help.</div>
+                <div class="pl">Know, need, understand, like, want – zwykle bez -ing.</div>
+            </div>
+
+            <div class="mistake-box">
+                <strong>Błąd #3: Tłumaczenie phrasal verba dosłownie</strong>
+                <div class="wrong">I look for the keys. (myśląc: „patrzę dla kluczy”)</div>
+                <div class="correct">I’m looking for my keys. = Szukam kluczy.</div>
+                <div class="pl">Ucz się znaczenia całego wyrażenia, nie osobnych słów.</div>
+            </div>
+
+            <div class="mistake-box">
+                <strong>Błąd #4: What / How – zła konstrukcja</strong>
+                <div class="wrong">How a beautiful day!</div>
+                <div class="wrong">What beautiful!</div>
+                <div class="correct">What a beautiful day!</div>
+                <div class="correct">How beautiful!</div>
+                <div class="pl">What + (a/an) + rzeczownik; How + przymiotnik/przysłówek.</div>
+            </div>
+
+            <div class="mistake-box">
+                <strong>Błąd #5: Brak to po would like</strong>
+                <div class="wrong">I would like go home.</div>
+                <div class="correct">I would like to go home.</div>
+                <div class="pl">Po would like zawsze „to” + czasownik.</div>
+            </div>
+
+            <div class="mistake-box">
+                <strong>Błąd #6: Mylenie czasowników stanów z czynnościami</strong>
+                <div class="wrong">I am wanting a new phone.</div>
+                <div class="wrong">They are believing in ghosts.</div>
+                <div class="correct">I want a new phone.</div>
+                <div class="correct">They believe in ghosts.</div>
+                <div class="pl">Want i believe to czasowniki stanów – nie używamy ich z -ing.</div>
+            </div>
+
+            <div class="card card-trap">
+                <span class="card-label">Pułapka Polaków – false friend</span>
+                <p><strong>sympathetic</strong> = współczujący <span class="neq">≠</span> <strong>sympatyczny</strong> = nice / likeable.</p>
+                <p><span class="error-text">He is very sympathetic.</span> – to nie znaczy „On jest bardzo sympatyczny”.</p>
+                <p><span class="correct-text">He is very nice.</span> – On jest bardzo sympatyczny.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CZĘŚĆ 14 – PODSUMOWANIE + FISZKA
+    ============================================================ -->
+    <section class="section" data-level="exam" id="part13">
+        <div class="part-heading"><span class="part-num">Część 14</span> · Podsumowanie</div>
+
+        <div class="section" data-level="exam">
+            <div class="card card-correct">
+                <span class="card-label">7 kluczowych zasad – powtórka przed egzaminem</span>
+                <ol style="font-size:1.02rem;">
+                    <li><strong>Tryb rozkazujący:</strong> forma podstawowa (<em>Open the door.</em>) / Don’t + forma podstawowa (<em>Don’t touch.</em>).</li>
+                    <li><strong>What…! / How…!: </strong> <em>What a nice day!</em> / <em>How nice!</em></li>
+                    <li><strong>Czasowniki stanów</strong> (know, need, understand, like, want…) zwykle <strong>nie</strong> występują w -ing.</li>
+                    <li><strong>Phrasal verbs</strong> ucz się w całych zdaniach: <em>look for, get up, turn on/off, find out, look after, give up…</em></li>
+                    <li><strong>Would like to</strong> – uprzejme życzenie; <strong>want</strong> – bezpośrednie; <strong>need to</strong> – konieczność.</li>
+                    <li><strong>Don’t forget</strong> – przeczenie w trybie rozkazującym zawsze z <em>Don’t</em>.</li>
+                    <li><strong>What</strong> z rzeczownikiem, <strong>How</strong> z przymiotnikiem / przysłówkiem.</li>
+                </ol>
+            </div>
+
+            <!-- FISZKA -->
+            <div class="fiszka" style="margin-top:20px; border-color: var(--color-training);">
+                <h3>Tryb rozkazujący, phrasal verbs i czasowniki stanów – ściąga egzaminacyjna</h3>
+                <div class="fiszka-grid">
+                    <div class="fiszka-col">
+                        <h4>Tryb rozkazujący</h4>
+                        <ul>
+                            <li><strong>Twierdzenie:</strong> <em>Open the door.</em></li>
+                            <li><strong>Przeczenie:</strong> <em>Don’t touch it.</em></li>
+                            <li>Brak podmiotu, forma podstawowa</li>
+                        </ul>
+                        <h4 style="margin-top:12px;">What / How</h4>
+                        <ul>
+                            <li><strong>What</strong> + (a/an) + przymiotnik + rzeczownik: <em>What a nice day!</em></li>
+                            <li><strong>How</strong> + przymiotnik / przysłówek: <em>How beautiful!</em></li>
+                        </ul>
+                        <h4 style="margin-top:12px;">Czasowniki stanów</h4>
+                        <ul>
+                            <li>know, need, understand, like, love, want, believe, have, see, hear</li>
+                            <li>Zwykle <strong>bez -ing</strong>: <em>I understand.</em></li>
+                        </ul>
+                    </div>
+                    <div class="fiszka-col">
+                        <h4>Phrasal verbs</h4>
+                        <ul>
+                            <li><strong>get up</strong> – wstawać</li>
+                            <li><strong>look for</strong> – szukać</li>
+                            <li><strong>turn on / turn off</strong> – włączać / wyłączać</li>
+                            <li><strong>find out</strong> – dowiedzieć się</li>
+                            <li><strong>put on / take off</strong> – zakładać / zdejmować</li>
+                            <li><strong>wake up</strong> – budzić się</li>
+                            <li><strong>go out</strong> – wychodzić</li>
+                            <li><strong>come back / go back</strong> – wracać</li>
+                            <li><strong>pick up</strong> – podnieść / odebrać</li>
+                            <li><strong>look after</strong> – opiekować się</li>
+                            <li><strong>give up</strong> – rezygnować</li>
+                            <li><strong>switch on / switch off</strong> – włączać / wyłączać</li>
+                            <li><strong>tidy up</strong> – sprzątać</li>
+                            <li><strong>sit down / stand up</strong> – siadać / wstawać</li>
+                        </ul>
+                        <div style="margin-top:10px; padding:8px 12px; background:#fffbeb; border-radius:6px; border-left:4px solid #d69e2e; font-size:0.85rem;">
+                            <strong>Pamiętaj:</strong> Ucz się phrasal verbs w całych zdaniach.<br />
+                            <em>I’m looking for my keys.</em> – Szukam kluczy.
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top:16px; border-top:1px solid var(--color-border); padding-top:14px; display:grid; grid-template-columns:1fr 1fr; gap:4px 20px; font-size:0.88rem;">
+                    <div><strong>Would like to</strong> = chciałbym (uprzejmie)</div>
+                    <div><em>I would like to go.</em></div>
+                    <div><strong>Want</strong> = chcę (bezpośrednio)</div>
+                    <div><em>I want to go.</em></div>
+                    <div><strong>Need to</strong> = muszę / potrzebuję</div>
+                    <div><em>I need to study.</em></div>
+                    <div><strong>Don’t forget!</strong> = Nie zapomnij!</div>
+                    <div><em>Don’t forget your homework.</em></div>
+                </div>
+            </div>
+
+            <!-- MISJA -->
+            <div class="section" data-level="exam" id="sec-mission">
+                <h2>15. Test końcowy – MISJA</h2>
+                <div class="card card-remember" style="margin-bottom:10px;">
+                    <span class="card-label">Misja końcowa</span>
+                    <p>Bez zaglądania do zasad – uzupełnij wszystkie zdania. Sprawdź swój wynik.</p>
+                </div>
+                <div class="exercise" id="missionExercise">
+                    <div class="ex-title">Uzupełnij poprawną formą <span class="level-badge level-exam">EGZAMIN</span></div>
+                    <div id="missionQuestions"></div>
+                    <button class="btn btn-primary" onclick="checkMission()" style="margin-top:8px;">Sprawdź misję</button>
+                    <button class="btn btn-outline" onclick="resetMission()" style="margin-top:8px; margin-left:4px;">Resetuj</button>
+                    <div id="missionResult" class="mission-result" style="display:none; margin-top:8px;"></div>
+                </div>
+            </div>
+
+            <!-- SŁOWNICZEK -->
+            <div class="section" data-level="basic" id="sec-vocab-enhanced">
+                <h2>16. Słowniczek – 50 słówek z kontekstem</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Słowo / konstrukcja</th><th>Tłumaczenie</th><th>Przykład</th><th>Audio</th></tr></thead>
+                        <tbody>
+                            <!-- Dom -->
+                            <tr><td><strong>living room</strong></td><td>salon</td><td>We watch TV in the living room.</td><td><button class="audio-btn" data-text="We watch TV in the living room." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>bedroom</strong></td><td>sypialnia</td><td>My bedroom is upstairs.</td><td><button class="audio-btn" data-text="My bedroom is upstairs." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>kitchen</strong></td><td>kuchnia</td><td>Mum is cooking in the kitchen.</td><td><button class="audio-btn" data-text="Mum is cooking in the kitchen." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>bathroom</strong></td><td>łazienka</td><td>The bathroom is next to the bedroom.</td><td><button class="audio-btn" data-text="The bathroom is next to the bedroom." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>garden</strong></td><td>ogród</td><td>We play in the garden.</td><td><button class="audio-btn" data-text="We play in the garden." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>upstairs / downstairs</strong></td><td>na górze / na dole</td><td>The bedrooms are upstairs.</td><td><button class="audio-btn" data-text="The bedrooms are upstairs." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>furniture</strong></td><td>meble</td><td>We bought new furniture.</td><td><button class="audio-btn" data-text="We bought new furniture." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>sofa / armchair</strong></td><td>kanapa / fotel</td><td>He sits in his armchair.</td><td><button class="audio-btn" data-text="He sits in his armchair." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>wardrobe</strong></td><td>szafa</td><td>I keep clothes in the wardrobe.</td><td><button class="audio-btn" data-text="I keep clothes in the wardrobe." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>desk / shelf</strong></td><td>biurko / półka</td><td>I do homework at my desk.</td><td><button class="audio-btn" data-text="I do homework at my desk." data-speed="0.7">▶</button></td></tr>
+                            <!-- Codzienne czynności -->
+                            <tr><td><strong>wake up</strong></td><td>budzić się</td><td>I wake up at 6:30.</td><td><button class="audio-btn" data-text="I wake up at 6:30." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>get up</strong></td><td>wstawać</td><td>I get up immediately.</td><td><button class="audio-btn" data-text="I get up immediately." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>have a shower</strong></td><td>brać prysznic</td><td>She has a shower every morning.</td><td><button class="audio-btn" data-text="She has a shower every morning." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>get dressed</strong></td><td>ubierać się</td><td>He gets dressed in his uniform.</td><td><button class="audio-btn" data-text="He gets dressed in his uniform." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>have breakfast / lunch / dinner</strong></td><td>jeść śniadanie / obiad / kolację</td><td>We have dinner at 7 p.m.</td><td><button class="audio-btn" data-text="We have dinner at 7 p.m." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>brush your teeth</strong></td><td>myć zęby</td><td>Brush your teeth twice a day.</td><td><button class="audio-btn" data-text="Brush your teeth twice a day." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>go to school</strong></td><td>iść do szkoły</td><td>I go to school by bus.</td><td><button class="audio-btn" data-text="I go to school by bus." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>do homework</strong></td><td>odrabiać zadanie</td><td>I have to do my homework.</td><td><button class="audio-btn" data-text="I have to do my homework." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>tidy up</strong></td><td>sprzątać</td><td>I need to tidy up my room.</td><td><button class="audio-btn" data-text="I need to tidy up my room." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>go to bed</strong></td><td>kłaść się spać</td><td>I go to bed at 10 o'clock.</td><td><button class="audio-btn" data-text="I go to bed at 10 o'clock." data-speed="0.7">▶</button></td></tr>
+                            <!-- Instrukcje -->
+                            <tr><td><strong>open / close</strong></td><td>otworzyć / zamknąć</td><td>Open the window, please.</td><td><button class="audio-btn" data-text="Open the window, please." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>turn on / turn off</strong></td><td>włączyć / wyłączyć</td><td>Turn off the light.</td><td><button class="audio-btn" data-text="Turn off the light." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>put on / take off</strong></td><td>założyć / zdjąć</td><td>Put on your coat.</td><td><button class="audio-btn" data-text="Put on your coat." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>pick up</strong></td><td>podnieść / odebrać</td><td>Pick up the book.</td><td><button class="audio-btn" data-text="Pick up the book." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>sit down / stand up</strong></td><td>usiąść / wstać</td><td>Please sit down.</td><td><button class="audio-btn" data-text="Please sit down." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>be quiet</strong></td><td>bądź cicho</td><td>Be quiet! The baby is sleeping.</td><td><button class="audio-btn" data-text="Be quiet! The baby is sleeping." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>hurry up</strong></td><td>pospiesz się</td><td>Hurry up! We're late.</td><td><button class="audio-btn" data-text="Hurry up! We're late." data-speed="0.7">▶</button></td></tr>
+                            <!-- Emocje -->
+                            <tr><td><strong>happy</strong></td><td>szczęśliwy</td><td>She is happy today.</td><td><button class="audio-btn" data-text="She is happy today." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>sad</strong></td><td>smutny</td><td>He feels sad.</td><td><button class="audio-btn" data-text="He feels sad." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>angry</strong></td><td>zły</td><td>My dad was angry.</td><td><button class="audio-btn" data-text="My dad was angry." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>tired</strong></td><td>zmęczony</td><td>I'm tired after school.</td><td><button class="audio-btn" data-text="I'm tired after school." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>worried</strong></td><td>zmartwiony</td><td>She is worried about the exam.</td><td><button class="audio-btn" data-text="She is worried about the exam." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>excited</strong></td><td>podekscytowany</td><td>We are excited about the trip.</td><td><button class="audio-btn" data-text="We are excited about the trip." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>bored</strong></td><td>znudzony</td><td>I'm bored.</td><td><button class="audio-btn" data-text="I'm bored." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>surprised</strong></td><td>zaskoczony</td><td>I was surprised.</td><td><button class="audio-btn" data-text="I was surprised." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>proud</strong></td><td>dumny</td><td>My parents are proud of me.</td><td><button class="audio-btn" data-text="My parents are proud of me." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>scared</strong></td><td>przestraszony</td><td>She is scared of spiders.</td><td><button class="audio-btn" data-text="She is scared of spiders." data-speed="0.7">▶</button></td></tr>
+                            <!-- Dodatkowe phrasal verbs -->
+                            <tr><td><strong>look after</strong></td><td>opiekować się</td><td>She looks after her brother.</td><td><button class="audio-btn" data-text="She looks after her brother." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>look for</strong></td><td>szukać</td><td>I'm looking for my keys.</td><td><button class="audio-btn" data-text="I'm looking for my keys." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>find out</strong></td><td>dowiedzieć się</td><td>I need to find out the answer.</td><td><button class="audio-btn" data-text="I need to find out the answer." data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>give up</strong></td><td>poddawać się</td><td>Don't give up!</td><td><button class="audio-btn" data-text="Don't give up!" data-speed="0.7">▶</button></td></tr>
+                            <tr><td><strong>come back</strong></td><td>wracać</td><td>Come back home.</td><td><button class="audio-btn" data-text="Come back home." data-speed="0.7">▶</button></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <div class="section" data-level="exam" id="sec-faq">
+                <h2>17. FAQ – najczęstsze wątpliwości</h2>
+                <div class="card card-gray">
+                    <p><strong>1. Czy po Don’t zawsze używamy formy podstawowej?</strong><br />
+                        Tak. <em>Don’t touch</em>, nigdy <em>Don’t to touch</em>.</p>
+                    <p><strong>2. Czy wszystkie czasowniki stanów są bez -ing?</strong><br />
+                        Zwykle tak, ale niektóre mogą mieć -ing, gdy zmieniają znaczenie (np. <em>I have a car</em> vs <em>I’m having lunch</em>).</p>
+                    <p><strong>3. Jaka jest różnica między turn off a switch off?</strong><br />
+                        To synonimy – oba znaczą „wyłączyć”.</p>
+                    <p><strong>4. Czy mogę użyć want zamiast would like?</strong><br />
+                        Tak, ale <em>would like</em> jest bardziej uprzejme.</p>
+                    <p><strong>5. Jak odróżnić What od How w wykrzykniku?</strong><br />
+                        <em>What</em> + rzeczownik, <em>How</em> + przymiotnik / przysłówek.</p>
+                    <p><strong>6. Czy need to i have to to to samo?</strong><br />
+                        Są bardzo podobne. <em>Need to</em> podkreśla potrzebę, <em>have to</em> – obowiązek.</p>
+                </div>
+            </div>
+
+            <!-- TEST WYJŚCIOWY -->
+            <div class="section" data-level="exam" id="sec-exit-test">
+                <h2>18. Test wyjściowy – sprawdź swój postęp</h2>
+                <div class="card card-remember" style="margin-bottom:10px;">
+                    <span class="card-label">Porównaj z testem wstępnym</span>
+                    <p>Rozwiąż te same pytania, które były na początku lekcji.</p>
+                </div>
+                <div class="exercise">
+                    <ol>
+                        <li>Popraw: <em>Don’t to touch the wire!</em></li>
+                        <li>Popraw: <em>I am knowing the answer.</em></li>
+                        <li>Uzupełnij: <em>__________ a lovely dress!</em> (What / How)</li>
+                        <li>Przetłumacz: <em>Szukam kluczy.</em> (użyj phrasal verb)</li>
+                        <li>Uzupełnij: <em>I __________ like to visit London.</em> (would / want)</li>
+                    </ol>
+                    <button class="answer-toggle" onclick="toggleAnswer('ans-exit')">Pokaż odpowiedzi</button>
+                    <div id="ans-exit" class="answer-content">
+                        <ol>
+                            <li><strong>Don’t touch the wire!</strong></li>
+                            <li><strong>I know the answer.</strong></li>
+                            <li><strong>What</strong> a lovely dress!</li>
+                            <li><strong>I’m looking for my keys.</strong></li>
+                            <li><strong>would</strong> like to visit London.</li>
+                        </ol>
+                        <p style="margin-top:8px; font-weight:600;">Porównaj swój wynik z testem wstępnym. Czy jest lepiej?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LISTA TEMATÓW -->
+            <div class="section" data-level="basic" id="topics">
+                <h2>Spis tematów głównych</h2>
+                <ol class="topic-list">
+                    <li><a href="#part1">Tryb rozkazujący – twierdzenie</a></li>
+                    <li><a href="#part2">Tryb rozkazujący – przeczenie</a></li>
+                    <li><a href="#part3">Wykrzykniki What…! / How…!</a></li>
+                    <li><a href="#part4">Czasowniki stanów vs czynności</a></li>
+                    <li><a href="#part5">Would like to, want, need</a></li>
+                    <li><a href="#part6">Phrasal verbs – codzienna rutyna</a></li>
+                    <li><a href="#part7">Phrasal verbs – dom i instrukcje</a></li>
+                    <li><a href="#part8">Phrasal verbs – opieka i relacje</a></li>
+                    <li><a href="#part9">Synonimy i przeciwieństwa</a></li>
+                    <li><a href="#sec-vocab">Słownictwo</a></li>
+                    <li><a href="#part10">Ćwiczenia</a></li>
+                    <li><a href="#part11">Ważne! – 6 kluczowych zasad</a></li>
+                    <li><a href="#part12">Najczęstsze błędy</a></li>
+                    <li><a href="#part13">Podsumowanie i ściąga</a></li>
+                    <li><a href="#sec-mission">Test końcowy – MISJA</a></li>
+                    <li><a href="#sec-vocab-enhanced">Słowniczek</a></li>
+                    <li><a href="#sec-faq">FAQ</a></li>
+                    <li><a href="#sec-exit-test">Test wyjściowy</a></li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    HARMONOGRAM POWTÓREK
+    ============================================================ -->
+    <div class="srs-box" id="harmonogram">
+        <h3>Harmonogram powtórek – spaced repetition</h3>
+        <p style="margin-top: 8px;">Wróć do tej lekcji w te dni, aby utrwalić wiedzę:</p>
+        <table style="width:100%; border-collapse:collapse; margin-top:10px;">
+            <tr style="background:rgba(255,255,255,0.08);">
+                <th style="border:1px solid #e2e8f0;padding:8px;text-align:left;">Dzień</th>
+                <th style="border:1px solid #e2e8f0;padding:8px;text-align:left;">Data</th>
+                <th style="border:1px solid #e2e8f0;padding:8px;text-align:left;">Notatka</th>
+            </tr>
+            <tr><td style="border:1px solid #e2e8f0;padding:8px;">Dzień 1 (dziś)</td><td style="border:1px solid #e2e8f0;padding:8px;"><input type="date" style="width:100%;padding:4px;background:rgba(255,255,255,0.08);border:1px solid #4a5568;border-radius:4px;color:#e2e8f0;"></td><td style="border:1px solid #e2e8f0;padding:8px;"><input type="text" placeholder="nauka" style="width:100%;padding:4px;background:rgba(255,255,255,0.08);border:1px solid #4a5568;border-radius:4px;color:#e2e8f0;"></td></tr>
+            <tr><td style="border:1px solid #e2e8f0;padding:8px;">Dzień 3</td><td style="border:1px solid #e2e8f0;padding:8px;"><input type="date" style="width:100%;padding:4px;background:rgba(255,255,255,0.08);border:1px solid #4a5568;border-radius:4px;color:#e2e8f0;"></td><td style="border:1px solid #e2e8f0;padding:8px;"><input type="text" placeholder="szybki przegląd" style="width:100%;padding:4px;background:rgba(255,255,255,0.08);border:1px solid #4a5568;border-radius:4px;color:#e2e8f0;"></td></tr>
+            <tr><td style="border:1px solid #e2e8f0;padding:8px;">Dzień 7</td><td style="border:1px solid #e2e8f0;padding:8px;"><input type="date" style="width:100%;padding:4px;background:rgba(255,255,255,0.08);border:1px solid #4a5568;border-radius:4px;color:#e2e8f0;"></td><td style="border:1px solid #e2e8f0;padding:8px;"><input type="text" placeholder="ćwiczenia ponownie" style="width:100%;padding:4px;background:rgba(255,255,255,0.08);border:1px solid #4a5568;border-radius:4px;color:#e2e8f0;"></td></tr>
+            <tr><td style="border:1px solid #e2e8f0;padding:8px;">Dzień 14</td><td style="border:1px solid #e2e8f0;padding:8px;"><input type="date" style="width:100%;padding:4px;background:rgba(255,255,255,0.08);border:1px solid #4a5568;border-radius:4px;color:#e2e8f0;"></td><td style="border:1px solid #e2e8f0;padding:8px;"><input type="text" placeholder="tylko fiszka" style="width:100%;padding:4px;background:rgba(255,255,255,0.08);border:1px solid #4a5568;border-radius:4px;color:#e2e8f0;"></td></tr>
+            <tr><td style="border:1px solid #e2e8f0;padding:8px;">Dzień 30</td><td style="border:1px solid #e2e8f0;padding:8px;"><input type="date" style="width:100%;padding:4px;background:rgba(255,255,255,0.08);border:1px solid #4a5568;border-radius:4px;color:#e2e8f0;"></td><td style="border:1px solid #e2e8f0;padding:8px;"><input type="text" placeholder="quiz mieszany" style="width:100%;padding:4px;background:rgba(255,255,255,0.08);border:1px solid #4a5568;border-radius:4px;color:#e2e8f0;"></td></tr>
+        </table>
+    </div>
+
+    <!-- STOPKA -->
+    <footer class="footer">
+        <p><strong>Lekcja 3 – Tryb rozkazujący, czasowniki stanów i phrasal verbs</strong> &bull; Wersja 2.0 (uporządkowana) &bull; 2026-08-23</p>
+        <p style="font-size:0.78rem; opacity:0.7;">Ucz się świadomie, nie na pamięć.</p>
+        <p style="font-size:0.7rem; opacity:0.5;">Zadania treningowe wzorowane na formule E8. Oficjalne arkusze i nagrania: CKE.</p>
+    </footer>
+
+</div>
+
+<script>
+    // ======================================================================
+    //  JAVASCRIPT – SYSTEM INTERAKTYWNY
+    // ======================================================================
+
+    // ---------- LOCAL STORAGE ----------
+    function saveProgress() {
+        const checks = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+        const state = [];
+        checks.forEach(cb => state.push(cb.checked));
+        localStorage.setItem('lekcja3_progress', JSON.stringify(state));
+    }
+
+    function loadProgress() {
+        const saved = localStorage.getItem('lekcja3_progress');
+        if (!saved) return;
+        const state = JSON.parse(saved);
+        const checks = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+        checks.forEach((cb, i) => {
+            if (i < state.length) cb.checked = state[i];
+        });
+        updateProgress();
+    }
+
+    function resetAllProgress() {
+        if (!confirm('Czy na pewno chcesz zresetować cały postęp?')) return;
+        document.querySelectorAll('.toc-checklist input[type="checkbox"]').forEach(cb => {
+            cb.checked = false;
+        });
+        localStorage.removeItem('lekcja3_progress');
+        updateProgress();
+    }
+
+    // ---------- AUDIO ----------
+    let currentAudio = null;
+    let currentAudioBtn = null;
+    let audioTimeout = null;
+
+    function speakText(text, speed, btn) {
+        if (!window.speechSynthesis) return;
+
+        if (currentAudioBtn === btn && btn && btn.classList.contains('playing')) {
+            window.speechSynthesis.cancel();
+            if (audioTimeout) clearTimeout(audioTimeout);
+            btn.textContent = '▶';
+            btn.classList.remove('playing');
+            currentAudioBtn = null;
+            currentAudio = null;
+            return;
+        }
+
+        if (currentAudio) {
+            window.speechSynthesis.cancel();
+            if (audioTimeout) clearTimeout(audioTimeout);
+            if (currentAudioBtn) {
+                currentAudioBtn.textContent = '▶';
+                currentAudioBtn.classList.remove('playing');
+            }
+            currentAudioBtn = null;
+            currentAudio = null;
+        }
+
+        if (!btn) return;
+        btn.textContent = '■';
+        btn.classList.add('playing');
+        currentAudioBtn = btn;
+
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'en-GB';
+        utterance.rate = 0.6;
+        utterance.pitch = 1.0;
+        const voices = window.speechSynthesis.getVoices();
+        const ukVoice = voices.find(v => v.lang.startsWith('en-GB'));
+        if (ukVoice) utterance.voice = ukVoice;
+
+        let isSlowFinished = false;
+
+        utterance.onend = function() {
+            if (isSlowFinished) {
+                if (btn) {
+                    btn.textContent = '▶';
+                    btn.classList.remove('playing');
+                }
+                currentAudioBtn = null;
+                currentAudio = null;
+                return;
+            }
+            isSlowFinished = true;
+            const fast = new SpeechSynthesisUtterance(text);
+            fast.lang = 'en-GB';
+            fast.rate = 0.95;
+            fast.pitch = 1.0;
+            if (ukVoice) fast.voice = ukVoice;
+            fast.onend = function() {
+                if (btn) {
+                    btn.textContent = '▶';
+                    btn.classList.remove('playing');
+                }
+                currentAudioBtn = null;
+                currentAudio = null;
+            };
+            fast.onerror = function() {
+                if (btn) {
+                    btn.textContent = '▶';
+                    btn.classList.remove('playing');
+                }
+                currentAudioBtn = null;
+                currentAudio = null;
+            };
+            audioTimeout = setTimeout(() => {
+                if (btn && btn.classList.contains('playing')) {
+                    window.speechSynthesis.speak(fast);
+                    currentAudio = fast;
+                }
+            }, 350);
+        };
+
+        utterance.onerror = function() {
+            if (btn) {
+                btn.textContent = '▶';
+                btn.classList.remove('playing');
+            }
+            currentAudioBtn = null;
+            currentAudio = null;
+        };
+
+        window.speechSynthesis.speak(utterance);
+        currentAudio = utterance;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.audio-btn').forEach(btn => {
+            const text = btn.dataset.text;
+            if (text) {
+                btn.setAttribute('aria-label', 'Odtwórz wymowę: ' + text);
+                btn.title = 'Odtwórz wymowę';
+            }
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const audioText = this.dataset.text;
+                if (!audioText) return;
+                speakText(audioText, 0.7, this);
+            });
+        });
+        loadProgress();
+        setView('all');
+        initMission();
+        updateVisibleCount();
+        // checkbox listeners
+        document.querySelectorAll('.toc-checklist input[type="checkbox"]').forEach(cb => {
+            cb.addEventListener('change', updateProgress);
+        });
+        // checklist listeners
+        document.querySelectorAll('.checklist input[type="checkbox"]').forEach(cb => {
+            cb.addEventListener('change', function() {
+                const key = 'checklist_3';
+                const items = document.querySelectorAll('.checklist input[type="checkbox"]');
+                const state = [];
+                items.forEach(c => state.push(c.checked));
+                localStorage.setItem(key, JSON.stringify(state));
+            });
+        });
+        // restore checklist
+        const key = 'checklist_3';
+        const saved = JSON.parse(localStorage.getItem(key) || '[]');
+        const items = document.querySelectorAll('.checklist input[type="checkbox"]');
+        items.forEach((cb, i) => {
+            if (saved[i]) cb.checked = true;
+        });
+    });
+
+    // ---------- TOGGLE ----------
+    function toggleAnswer(id) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.classList.toggle('show');
+        const btn = document.querySelector(`[onclick*="toggleAnswer('${id}')"]`);
+        if (btn) {
+            btn.textContent = el.classList.contains('show') ? 'Ukryj odpowiedzi' : 'Pokaż odpowiedzi';
+        }
+    }
+
+    function toggleHint(id) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.classList.toggle('show');
+        const btn = document.querySelector(`[onclick*="toggleHint('${id}')"]`);
+        if (btn) {
+            btn.textContent = el.classList.contains('show') ? 'Ukryj wskazówkę' : 'Wskazówka';
+        }
+    }
+
+    function toggleExplain(id) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.classList.toggle('show');
+        const btn = document.querySelector(`[onclick*="toggleExplain('${id}')"]`);
+        if (btn) {
+            btn.textContent = el.classList.contains('show') ? '❓ Ukryj wyjaśnienie' : '❓ Dlaczego?';
+        }
+    }
+
+    function hideAllAnswers() {
+        document.querySelectorAll('.answer-content.show, .hint-content.show, .explain-content.show').forEach(el => {
+            el.classList.remove('show');
+            const id = el.id;
+            const btn = document.querySelector(`[onclick*="toggleAnswer('${id}')"]`);
+            if (btn) btn.textContent = 'Pokaż odpowiedzi';
+            const btn2 = document.querySelector(`[onclick*="toggleHint('${id}')"]`);
+            if (btn2) btn2.textContent = 'Wskazówka';
+            const btn3 = document.querySelector(`[onclick*="toggleExplain('${id}')"]`);
+            if (btn3) btn3.textContent = '❓ Dlaczego?';
+        });
+    }
+
+    // ---------- PROGRESS ----------
+    function updateProgress() {
+        const checkboxes = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+        let total = 0, done = 0;
+        checkboxes.forEach(cb => {
+            const w = parseInt(cb.dataset.progress) || 0;
+            total += w;
+            if (cb.checked) done += w;
+        });
+        const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+        document.getElementById('progressFill').style.width = pct + '%';
+        document.getElementById('progressPercent').textContent = pct + '%';
+
+        const statusEl = document.getElementById('progressStatus');
+        if (pct === 100) statusEl.textContent = 'Świetnie! Opanowałeś lekcję!';
+        else if (pct >= 80) statusEl.textContent = 'Bardzo dobrze! Dokończ resztę.';
+        else if (pct >= 50) statusEl.textContent = 'Dobrze! Poćwicz jeszcze.';
+        else if (pct > 0) statusEl.textContent = 'Zacząłeś – kontynuuj!';
+        else statusEl.textContent = 'Zacznij naukę';
+
+        updateTasks(pct);
+        saveProgress();
+    }
+
+    function updateTasks(pct) {
+        const tasks = document.querySelectorAll('.today-tasks .task');
+        const thresholds = [10, 25, 45, 65, 85];
+        tasks.forEach((task, i) => {
+            if (pct >= thresholds[i]) task.classList.add('done');
+            else task.classList.remove('done');
+        });
+    }
+
+    // ---------- FILTER ----------
+    let currentView = 'all';
+
+    function setView(view) {
+        currentView = view;
+        document.querySelectorAll('.view-filters .btn').forEach(b => b.classList.remove('active'));
+        const btn = document.querySelector(`.view-filters .btn[data-view="${view}"]`);
+        if (btn) btn.classList.add('active');
+        applyFilter(view);
+        updateVisibleCount();
+    }
+
+    function applyFilter(view) {
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(sec => {
+            const level = sec.dataset.level || 'basic';
+            let show = true;
+            if (view === 'basic') {
+                show = (level === 'basic' || level === 'training' || level === 'remember' || level === 'writing');
+            } else if (view === 'exam') {
+                show = (level === 'basic' || level === 'training' || level === 'exam' || level === 'trap' || level === 'difficult' || level === 'remember' || level === 'writing' || level === 'ambitious');
+            }
+            if (view === 'all') show = true;
+            sec.classList.toggle('hidden-by-filter', !show);
+        });
+    }
+
+    function updateVisibleCount() {
+        const visible = document.querySelectorAll('.section:not(.hidden-by-filter)').length;
+        const total = document.querySelectorAll('.section').length;
+        document.getElementById('visibleCount').textContent = visible;
+        document.getElementById('totalCount').textContent = total;
+    }
+
+    // ---------- MISSION ----------
+    const missionData = [
+        { q: '__________ the window. (otwórz)', correct: 'Open' },
+        { q: '__________ touch the wire! (nie dotykaj)', correct: 'Don\'t' },
+        { q: 'I __________ the answer. (wiem – stative)', correct: 'know' },
+        { q: 'She __________ help. (potrzebuje – stative)', correct: 'needs' },
+        { q: 'I __________ for my keys. (szukam – phrasal)', correct: 'am looking' },
+        { q: '__________ a lovely dress! (What / How)', correct: 'What' },
+        { q: '__________ beautiful! (What / How)', correct: 'How' },
+        { q: 'I would like __________ visit London. (to / –)', correct: 'to' },
+        { q: '__________ up! (nie poddawaj się – phrasal)', correct: 'Don\'t give' },
+        { q: '__________ the light, please. (wyłącz – phrasal)', correct: 'Turn off' },
+    ];
+
+    function normalizeAnswer(val) {
+        let v = val.trim().toLowerCase().replace(/\s+/g, ' ');
+        v = v.replace(/\bdon't\b/g, "don't");
+        v = v.replace(/\bdon’t\b/g, "don't");
+        return v;
+    }
+
+    function initMission() {
+        const container = document.getElementById('missionQuestions');
+        if (!container) return;
+        container.innerHTML = '';
+        missionData.forEach((item, idx) => {
+            const div = document.createElement('div');
+            div.className = 'fitb-row';
+            div.innerHTML = `
+                <span style="font-weight:500;">${idx+1}. ${item.q}</span>
+                <input type="text" id="missionInput${idx}" placeholder="wpisz..." style="width:120px;" />
+                <span class="result-icon" id="missionIcon${idx}"></span>
+            `;
+            container.appendChild(div);
+        });
+    }
+
+    function checkMission() {
+        let correct = 0;
+        const total = missionData.length;
+        const mistakes = [];
+        missionData.forEach((item, idx) => {
+            const input = document.getElementById('missionInput' + idx);
+            const icon = document.getElementById('missionIcon' + idx);
+            if (!input || !icon) return;
+            const val = normalizeAnswer(input.value);
+            const expected = Array.isArray(item.correct) ? item.correct.map(normalizeAnswer) : [normalizeAnswer(item.correct)];
+            const isOk = val.length > 0 && expected.includes(val);
+            input.classList.toggle('correct', isOk);
+            input.classList.toggle('wrong', !isOk);
+            input.setAttribute('aria-invalid', String(!isOk));
+            if (isOk) {
+                icon.textContent = '✓';
+                icon.style.color = '#2d8f5e';
+                correct++;
+            } else {
+                icon.textContent = '✗';
+                icon.style.color = '#dc3545';
+                mistakes.push(`${idx + 1}. ${item.correct}`);
+            }
+        });
+        const resultDiv = document.getElementById('missionResult');
+        resultDiv.style.display = 'block';
+        const pct = Math.round((correct / total) * 100);
+        let msg = '', cls = '';
+        if (pct === 100) {
+            msg = 'Imperative, stative verbs i phrasal verbs opanowane!';
+            cls = 'perfect';
+        } else if (pct >= 75) {
+            msg = 'Bardzo dobrze. Powtórz wskazane pułapki.';
+            cls = 'good';
+        } else if (pct >= 50) {
+            msg = 'Wróć do najważniejszych zasad i spróbuj ponownie.';
+            cls = 'ok';
+        } else {
+            msg = 'Powtórz podstawy, a następnie rozwiąż test jeszcze raz.';
+            cls = 'fail';
+        }
+        resultDiv.className = 'mission-result ' + cls;
+        resultDiv.innerHTML = `<strong>Wynik: ${correct}/${total}.</strong> ${msg}` +
+            (mistakes.length ? `<br /><span class="text-sm">Poprawne odpowiedzi do błędnych punktów: ${mistakes.join('; ')}.</span>` : '');
+    }
+
+    function resetMission() {
+        document.querySelectorAll('#missionQuestions input[type="text"]').forEach(input => {
+            input.value = '';
+            input.classList.remove('correct', 'wrong');
+            input.removeAttribute('aria-invalid');
+        });
+        document.querySelectorAll('#missionQuestions .result-icon').forEach(icon => {
+            icon.textContent = '';
+            icon.style.color = '';
+        });
+        document.getElementById('missionResult').style.display = 'none';
+    }
+
+    // ---------- INIT ----------
+    document.addEventListener('DOMContentLoaded', function() {
+        if (window.speechSynthesis) {
+            window.speechSynthesis.getVoices();
+            window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices();
+        }
+    });
+</script>
+
+</body>
+</html>

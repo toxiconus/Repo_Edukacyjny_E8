@@ -2,8 +2,37 @@
 kod: "O08; O11; O12"
 tytul: "Alkohole · Kwasy karboksylowe · Estry"
 opis: "Materiał wstępny z audytu W1 (Perplexity, 2026-10-09) — w kanonie nie było treści tych lekcji; do weryfikacji przed budową lekcji."
+stan: W23 — GPT-6, 2026-10-09; audyt celowany i poprawki punktowe, pełna niezależna recenzja nadal otwarta
 ---
 # Alkohole · Kwasy karboksylowe · Estry — materiał wstępny
+
+## UZUPEŁNIENIE KANONICZNE W8 — ALKOHOLE, KWASY KARBOKSYLOWE I ESTRY
+
+### Alkohole
+
+W alkoholu grupa hydroksylowa –OH jest połączona z atomem węgla nasyconym; nie jest tym samym co jon OH⁻ w wodorotlenku. Przykłady: metanol CH₃OH, etanol C₂H₅OH, propan-1-ol CH₃CH₂CH₂OH, etano-1,2-diol HOCH₂CH₂OH i propano-1,2,3-triol HOCH₂CHOHCH₂OH. Nie każdy związek zawierający –OH jest alkoholem — fenole stanowią odrębną grupę. Rozpuszczalność alkoholi zależy m.in. od długości łańcucha i liczby grup –OH.
+
+**BHP:** metanol jest silnie toksyczny i może spowodować ślepotę lub śmierć. Etanol również jest substancją psychoaktywną i toksyczną w dużych ilościach; nie należy nazywać go „bezpiecznym alkoholem”. Nie rozpoznaje się substancji przez smak ani przez bezpośrednie wąchanie.
+
+Spalanie całkowite etanolu: C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O. Uproszczony ciąg utleniania: CH₃CH₂OH → CH₃CHO → CH₃COOH; produkty zależą od warunków i utleniacza. Reakcja etanolu z sodem: 2C₂H₅OH + 2Na → 2C₂H₅ONa + H₂.
+
+### Kwasy karboksylowe
+
+Grupą funkcyjną jest –COOH, która obejmuje fragment karbonylowy C=O i hydroksylowy –OH. Właściwości kwasowe wynikają z całej grupy karboksylowej, a nie z obecności dowolnego –OH. Kwas metanowy HCOOH jest znany także jako mrówkowy; kwas etanowy CH₃COOH — jako octowy. Kwas etanowy jest słabym kwasem, lecz stężony roztwór może być żrący. Nie identyfikuj kwasów przez smak.
+
+Dysocjacja w wodzie: CH₃COOH + H₂O ⇌ CH₃COO⁻ + H₃O⁺. Zasada: CH₃COOH + NaOH → CH₃COONa + H₂O. Węglan: 2CH₃COOH + Na₂CO₃ → 2CH₃COONa + H₂O + CO₂. Spalanie kwasu etanowego z najmniejszymi współczynnikami: CH₃COOH + 2O₂ → 2CO₂ + 2H₂O.
+
+### Estry
+
+Estry zawierają grupę –COO–. Często powstają w reakcji kwasu karboksylowego z alkoholem; estryfikacja jest równowagowa i zwykle zachodzi z katalizatorem kwasowym: kwas + alkohol ⇌ ester + woda. Przykład: CH₃COOH + C₂H₅OH ⇌ CH₃COOC₂H₅ + H₂O. Nazwa estru odzwierciedla część pochodzącą od kwasu i grupę alkilową pochodzącą od alkoholu. Zapach nie jest bezpieczną metodą identyfikacji; nie wszystkie estry są lotne, pachnące ani nierozpuszczalne w wodzie. Hydroliza estru jest reakcją odwrotną, a hydroliza zasadowa prowadzi do zmydlania.
+
+### Szybka kontrola
+
+1. Wzór etanolu: **C₂H₅OH**.
+2. Grupa –OH a OH⁻: **grupa jest fragmentem cząsteczki, OH⁻ jest jonem o ładunku −1**.
+3. Wzór kwasu propanowego: **CH₃CH₂COOH**.
+4. Spalanie etanolu: **C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O**.
+5. Produktami estryfikacji kwasu etanowego i etanolu są **etanian etylu (octan etylu) i woda**.
 
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
@@ -12,6 +41,8 @@ opis: "Materiał wstępny z audytu W1 (Perplexity, 2026-10-09) — w kanonie nie
 ### O08 — Alkohole (w audycie: O04)
 
 #### Poprawki
+
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
 
 - Alkohole zawierają grupę hydroksylową -OH połączoną z atomem węgla nasyconym.
 - Grupa -OH w alkoholu nie jest tym samym co jon OH⁻ w wodorotlenku.
@@ -26,6 +57,8 @@ opis: "Materiał wstępny z audytu W1 (Perplexity, 2026-10-09) — w kanonie nie
 #### Uzupełnienia
 
 ##### Przykładowe alkohole
+
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
 
 - metanol: CH₃OH;
 - etanol: C₂H₅OH;
@@ -74,6 +107,8 @@ Produkty zależą od warunków i użytego utleniacza.
 
 #### Poprawki
 
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
 - Kwasy karboksylowe zawierają grupę karboksylową -COOH.
 - Grupa karboksylowa składa się z grupy karbonylowej C=O i hydroksylowej -OH.
 - Właściwości kwasowe nie wynikają z obecności dowolnej grupy -OH, lecz z budowy całej grupy karboksylowej.
@@ -87,6 +122,8 @@ Produkty zależą od warunków i użytego utleniacza.
 #### Uzupełnienia
 
 ##### Przykłady
+
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
 
 - kwas metanowy: HCOOH;
 - kwas etanowy: CH₃COOH;
@@ -139,6 +176,8 @@ Spalanie:
 
 #### Poprawki
 
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
 - Estry zawierają grupę funkcyjną -COO-.
 - Ester powstaje najczęściej w reakcji kwasu karboksylowego z alkoholem.
 - Reakcja estryfikacji jest reakcją równowagową.
@@ -161,6 +200,8 @@ Spalanie:
 Produktem jest etanian etylu, tradycyjnie octan etylu.
 
 ##### Schemat nazewnictwa
+
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
 
 - kwas metanowy + metanol → metanian metylu;
 - kwas etanowy + etanol → etanian etylu;
@@ -196,6 +237,8 @@ Ogólny zapis:
 ### O24 (przekrojowa) — Łączenie treści organicznych (w audycie: O11)
 
 #### Poprawki
+
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
 
 - Węglowodory, alkohole, kwasy karboksylowe i estry należy przedstawiać jako powiązane grupy związków, a nie całkowicie odrębne działy.
 - Grupa funkcyjna wpływa na właściwości chemiczne związku.
@@ -241,6 +284,8 @@ Schemat ten nie opisuje wszystkich możliwych reakcji i wymaga określenia warun
 
 Zidentyfikuj grupę związków:
 
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
+
 - C₂H₆;
 - C₂H₄;
 - C₂H₂;
@@ -248,6 +293,8 @@ Zidentyfikuj grupę związków:
 - CH₃COOH.
 
 ##### Klucz
+
+> ✔ Punkty poniżej są wprowadzone do sekcji „UZUPEŁNIENIE KANONICZNE W8”.
 
 - C₂H₆ — alkan;
 - C₂H₄ — alken;
@@ -289,3 +336,8 @@ Wyjaśnij, dlaczego etan nie odbarwia zwykle wody bromowej w warunkach, w który
 ##### Klucz
 
 Eten zawiera wiązanie podwójne, do którego może przyłączyć się brom. Etan ma wyłącznie wiązania pojedyncze i nie reaguje z bromem w taki sposób bez dodatkowych warunków.
+
+
+## W23 — alkohole, kwasy, estry (2026-10-09, GPT-6)
+
+Sprawdzono bilans spalania etanolu i kwasu etanowego, reakcji etanolu z sodem, kwasu z węglanem i estryfikacji etanolu kwasem etanowym. Podkreślono zależność produktów utleniania od warunków i niebezpieczeństwo identyfikacji substancji przez zapach/smak.

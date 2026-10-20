@@ -322,11 +322,11 @@ CHEMIA KLASY 8
 
 ## 8. JAK SIĘ UCZYĆ — powtórka roczna
 
-1. **Mapa (10 min):** narysuj mapę wszystkich lekcji.
-2. **Fiszki (15 min):** interleaving z 12 lekcji.
-3. **Test przekrojowy (30 min):** sekcja 4.
-4. **Powtórka błędów (15 min):** wróć do lekcji, których dotyczą błędy.
-5. **Mapa pojęć (10 min):** uzupełnij mapę o to, co pomyliłeś.
+1. **Mapa:** narysuj mapę wszystkich lekcji.
+2. **Fiszki:** interleaving z 12 lekcji.
+3. **Test przekrojowy:** sekcja 4.
+4. **Powtórka błędów:** wróć do lekcji, których dotyczą błędy.
+5. **Mapa pojęć:** uzupełnij mapę o to, co pomyliłeś.
 
 **Zasada 3 pytań po powtórce:**
 1. Co już umiem?
@@ -487,6 +487,13 @@ Mapa: atom → wzór → tlenek → wodorotlenek → kwas → sól → rachunki 
 - pH basenu ~7,2 — kompromis dezynfekcja vs skóra (hasło, nie receptura).
 
 <!-- ==================== END L012 ==================== -->
+
+
+## Mnemotechniki — przeniesione z F12
+
+::: karta understand | Sposoby pamięciowe
+Spalanie: całkowite daje CO₂ + H₂O; niecałkowite daje CO i sadzę (C).
+:::
 
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 

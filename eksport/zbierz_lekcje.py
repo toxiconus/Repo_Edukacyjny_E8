@@ -158,7 +158,7 @@ def md_dir(d, pattern="*.md", skip=()):
         if any(p.name.startswith(x) for x in skip):
             continue
         meta, body = front(p)
-        kod = meta.get("kod", "").strip('"') or p.stem.split("_")[0].split(".")[-1]
+        kod = meta.get("kod", "").strip('"') or (re.match(r"[A-Z]{3}\.\w+\.([A-Z]+\d*[A-Za-z]?)\.", p.name) or re.match(r"(?:PL_|EN_)?([A-Za-z]+\d*[A-Za-z]?)_", p.name) or re.match(r"(.+)", p.stem)).group(1)
         tyt = meta.get("tytul", "").strip('"')
         if not tyt:
             m = re.match(r"#\s*\S+\s*[—–-]\s*(.+)", body.lstrip())
@@ -171,11 +171,11 @@ def md_dir(d, pattern="*.md", skip=()):
 
 
 def biologia():
-    kanon = {k: v for k, v in ((x[0], x) for x in md_dir("biologia/md", "L*.md"))}
+    kanon = {k: v for k, v in ((x[0], x) for x in md_dir("biologia/md", "BIO.*.L*.md"))}
     for x in md_dir("biologia/bio/md"):  # gotowe lekcje (nowsze) zastępują kanon
         kanon[x[0]] = x
     les = [kanon[k] for k in sorted(kanon, key=lambda k: (k.startswith("REV"), k))]
-    szk = md_dir("olimpiada/do_uzupelnienia", "BIO_*.md")
+    szk = md_dir("olimpiada/do_uzupelnienia", "OLI.BIO.*.md")
     kont = ("Kurs biologii klasy 8: genetyka, ewolucja, ekologia + powtórki z klas 5–7 (komórka, człowiek) "
             "oraz powtórki konkursowe REV01–REV02 (konkurs kuratoryjny, etap szkolny). Kanon: BIO.all v5.2 pocięty na lekcje; "
             "L010, REV01, REV02 to wersje gotowe (najnowsze). Część lekcji (L004–L009, L016A) to krótkie zarysy — "
@@ -205,7 +205,7 @@ def chemia():
         if k.startswith("REV"): return (6, k)
         return (rz.get(k[0], 8), k, x[3])
     les = sorted(gotowe + kanon, key=klucz)
-    szk = md_dir("olimpiada/do_uzupelnienia", "CHE_*.md")
+    szk = md_dir("olimpiada/do_uzupelnienia", "OLI.CHE.*.md")
     kont = ("Kurs chemii klasy 7–8 (+ ambitne LO, konkurs kuratoryjny). Dwa rodzaje plików: "
             "`lessons-md/gotowe` = lekcje gotowe (najnowsze, najlepiej dopracowane: F01–F06, N01 Powietrze, N01–N05 związki nieorganiczne, "
             "R03, REV01, FIZ01); `lekcje_md` = materiał roboczy kanonu (F00, F07–F21, R, O, powtórki) — jeszcze nie gotowe lekcje. "
@@ -220,13 +220,13 @@ def chemia():
 
 
 def polski():
-    pak = split_md(ROOT / "polski/POLSKI_PODSTAWA_PLUS_v7.11 (3).md", r"^LEKCJA (\d) — (.*)$", end_re=r"^## STATUS")
+    pak = split_md(ROOT / "polski/POLSKI_PODSTAWA_PLUS_v7.11.md", r"^LEKCJA (\d) — (.*)$", end_re=r"^## STATUS")
     pak = {f"L00{k}": v for k, v in pak.items()}
-    html = {"L001": "polski/L001_lekcja (2).html", "L002": "polski/L002_lekcja (3).html",
-            "L003": "polski/L003-PL-Opowiesci-z-Narnii-zaimek v2.html",
-            "L004": "polski/L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik v2.html",
-            "L005": "polski/L005-PL-Kajko-i-Kokosz-rzeczownik v2.html",
-            "L006": "polski/L006-PL-Akademia-Pana-Kleksa-czasownik v2.html"}
+    html = {"L001": "polski/archiwum/lekcje_html_stare/L001-PL-Lektury-klas-IV-VI-imieslow.html", "L002": "polski/archiwum/lekcje_html_stare/L002-PL-Hobbit-nieodmienne-czesci-mowy.html",
+            "L003": "polski/archiwum/lekcje_html_stare/L003-PL-Opowiesci-z-Narnii-zaimek.html",
+            "L004": "polski/archiwum/lekcje_html_stare/L004-PL-Chlopcy-z-Placu-Broni-przymiotnik-liczebnik.html",
+            "L005": "polski/archiwum/lekcje_html_stare/L005-PL-Kajko-i-Kokosz-rzeczownik.html",
+            "L006": "polski/archiwum/lekcje_html_stare/L006-PL-Akademia-Pana-Kleksa-czasownik.html"}
     les = [(c, *pick(c, pak.get(c), html.get(c))) for c in sorted(set(pak) | set(html))]
     kont = ("Kurs języka polskiego: każda lekcja łączy lekturę obowiązkową z gramatyką (imiesłowy, nieodmienne części mowy, "
             "zaimek, przymiotnik/liczebnik, rzeczownik, czasownik). Sprawdź zgodność z listą lektur obowiązkowych "
@@ -238,20 +238,20 @@ def polski():
 
 
 def angielski():
-    pak = split_md(ROOT / "angielski/ANGIELSKI_PODSTAWA_PLUS_v1.0 (2).md",
+    pak = split_md(ROOT / "angielski/ANGIELSKI_PODSTAWA_PLUS_v1.0.md",
                    r"^# LEKCJA (\d+|DODATKOWA \d) – (.*)$", stop_re=r"^# (Część|LEKCJE DODATKOWE)")
     pak2 = {}
     for k, v in pak.items():
         pak2[("D" + k.split()[-1]) if k.startswith("DODATKOWA") else f"L{int(k):03d}"] = v
     # sekcja „LEKCJE DODATKOWE” (dodatek 1: phrasal verbs, false friends itd.)
-    dod = split_md(ROOT / "angielski/ANGIELSKI_PODSTAWA_PLUS_v1.0 (2).md", r"^# (LEKCJE DODATKOWE)()$",
+    dod = split_md(ROOT / "angielski/ANGIELSKI_PODSTAWA_PLUS_v1.0.md", r"^# (LEKCJE DODATKOWE)()$",
                    stop_re=r"^# LEKCJA DODATKOWA 2")
     if dod:
         pak2["D1"] = ("Lekcje dodatkowe (phrasal verbs, false friends, ciekawostki)", dod["LEKCJE DODATKOWE"][1])
-    html = {"L002": "angielski/L002-EN-Operatory-i-czasowniki-posilkowe.html",
-            "L003": "angielski/L003-EN-Tryb-rozkaza zujacy-czasowniki-stanow-phrasal-verbs.html",
-            "L004": "angielski/L004-EN-Czasy-terazniejsze-i-przeszle.html", "L005": "angielski/L005-EN-Present-Perfect.html",
-            "L006": "angielski/L006-EN-Past-Simple-Continuous.html", "L012": "angielski/L012-EN-Future-Simple.html"}
+    html = {"L002": "angielski/archiwum/lekcje_html_stare/L002-EN-Operatory-i-czasowniki-posilkowe.html",
+            "L003": "angielski/archiwum/lekcje_html_stare/L003-EN-Tryb-rozkazujacy-czasowniki-stanow-phrasal-verbs.html",
+            "L004": "angielski/archiwum/lekcje_html_stare/L004-EN-Czasy-terazniejsze-i-przeszle.html", "L005": "angielski/archiwum/lekcje_html_stare/L005-EN-Present-Perfect.html",
+            "L006": "angielski/archiwum/lekcje_html_stare/L006-EN-Past-Simple-Continuous.html", "L012": "angielski/archiwum/lekcje_html_stare/L012-EN-Future-Simple.html"}
     les = [(c, *pick(c, pak2.get(c), html.get(c))) for c in sorted(set(pak2) | set(html))]
     kont = ("Kurs gramatyki angielskiej z objaśnieniami po polsku (poziom A2+/B1, egzamin ósmoklasisty z angielskiego). "
             "Sprawdź poprawność przykładów angielskich i reguł. Oceń, czego brakuje względem egzaminu: "

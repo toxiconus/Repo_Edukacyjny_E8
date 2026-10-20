@@ -1,0 +1,2234 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Biologia L003 — Diagnoza startowa genetyki (v8.0)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+<style>
+/* =========================================================
+   BAZA
+   ========================================================= */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Segoe UI',Roboto,system-ui,-apple-system,sans-serif;
+  background:linear-gradient(135deg,#f5f7fa 0%,#e8eefc 100%);
+  color:#1e293b;line-height:1.7;
+  padding:16px 16px 90px;min-height:100vh;
+}
+.container{max-width:1100px;margin:0 auto;background:#fff;border-radius:24px;box-shadow:0 8px 40px rgba(0,0,0,0.06);padding:28px 32px 24px;}
+@media(max-width:768px){.container{padding:12px 10px;}body{padding:6px 6px 90px;}}
+
+h1,h2,h3,h4{font-weight:600;letter-spacing:-0.02em;color:#0a2540;}
+h1{font-size:2rem;}
+h2{font-size:1.45rem;margin-top:28px;margin-bottom:10px;padding-bottom:4px;border-bottom:2px solid #e9edf2;}
+h3{font-size:1.15rem;margin-top:20px;margin-bottom:6px;}
+h4{font-size:1.0rem;margin-top:14px;margin-bottom:4px;}
+p{margin-bottom:8px;}
+ul,ol{padding-left:22px;margin-bottom:10px;}
+li{margin-bottom:3px;}
+a{color:#2b6cb0;text-decoration:none;}
+a:hover{text-decoration:underline;}
+code{background:#0a2540;color:#fff;padding:1px 6px;border-radius:4px;font-family:'Courier New',monospace;font-size:0.88em;}
+
+:root{
+  --color-basic:#2d8f5e;--color-basic-bg:#f0faf4;
+  --color-training:#2b6cb0;--color-training-bg:#f0f6ff;
+  --color-exam:#b7791f;--color-exam-bg:#fffbeb;
+  --color-trap:#dc3545;--color-trap-bg:#fef2f2;
+  --color-ambitious:#7c3aed;--color-ambitious-bg:#f5f0ff;
+  --color-remember:#0a2540;--color-remember-bg:#f1f4f8;
+  --color-hint:#f59e0b;--color-hint-bg:#fffbeb;
+  --color-correct:#2d8f5e;--color-error:#dc3545;
+  --color-new:#059669;--color-new-bg:#ecfdf5;
+  --color-preview:#0891b2;--color-preview-bg:#ecfeff;
+  --color-return:#a855f7;--color-return-bg:#faf5ff;
+  --color-text:#1e293b;--color-text-muted:#6b7a8d;
+  --color-border:#e2e8f0;--color-bg-subtle:#f8fafc;
+  --shadow-card:0 2px 8px rgba(0,0,0,0.04);
+  --viz-common:#2b6cb0;
+  --viz-info:#0891b2;
+  --viz-check:#2d8f5e;
+  --viz-unknown:#f59e0b;
+  --viz-bad:#dc2626;
+  --viz-notyet:#94a3b8;
+  --viz-return:#a855f7;
+}
+
+/* =========================================================
+   ETAPY DIAGNOZY (3 warstwy)
+   ========================================================= */
+.stage-banner{display:flex;align-items:center;gap:12px;padding:14px 20px;border-radius:14px;margin:20px 0 10px;font-weight:600;}
+.stage-banner .stage-num{font-size:1.5rem;font-weight:800;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.stage-banner .stage-body{flex:1;}
+.stage-banner .stage-body .stage-title{font-size:1.05rem;}
+.stage-banner .stage-body .stage-desc{font-size:0.82rem;color:#475569;font-weight:500;margin-top:2px;}
+
+.stage-core{background:linear-gradient(135deg,#f0faf4 0%,#dcfce7 100%);border:2px solid #2d8f5e;}
+.stage-core .stage-num{background:#2d8f5e;color:#fff;}
+
+.stage-preview{background:linear-gradient(135deg,#ecfeff 0%,#cffafe 100%);border:2px solid #0891b2;}
+.stage-preview .stage-num{background:#0891b2;color:#fff;}
+
+.stage-return{background:linear-gradient(135deg,#faf5ff 0%,#e9d5ff 100%);border:2px solid #a855f7;}
+.stage-return .stage-num{background:#a855f7;color:#fff;}
+
+/* =========================================================
+   PASEK POSTĘPU (5-etapowy)
+   ========================================================= */
+.progress-bar{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:12px 16px;background:#f8fafc;border:1px solid var(--color-border);border-radius:12px;margin:12px 0 18px;font-size:0.82rem;}
+.progress-bar .p-step{padding:5px 12px;border-radius:20px;background:#fff;border:1px solid var(--color-border);color:#64748b;font-weight:600;display:flex;align-items:center;gap:6px;}
+.progress-bar .p-step .p-ico{font-weight:800;}
+.progress-bar .p-step.done{background:#dcfce7;border-color:#86efac;color:#166534;}
+.progress-bar .p-step.current{background:#0a2540;border-color:#0a2540;color:#fff;}
+.progress-bar .p-step.return{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.progress-bar .p-arrow{color:#94a3b8;font-weight:700;}
+
+/* =========================================================
+   KARTY
+   ========================================================= */
+.card{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--color-border);background:#fff;box-shadow:var(--shadow-card);}
+.card-remember{background:var(--color-remember-bg);border-left:5px solid var(--color-remember);border-color:var(--color-remember);}
+.card-remember .card-label{color:var(--color-remember);}
+.card-warning{background:#fffbeb;border-left:5px solid #d69e2e;border-color:#d69e2e;}
+.card-warning .card-label{color:#d69e2e;}
+.card-hint{background:var(--color-hint-bg);border-left:5px solid var(--color-hint);border-color:var(--color-hint);}
+.card-hint .card-label{color:var(--color-hint);}
+.card-error{background:var(--color-trap-bg);border-left:5px solid var(--color-trap);border-color:var(--color-trap);}
+.card-error .card-label{color:var(--color-trap);}
+.card-correct{background:var(--color-basic-bg);border-left:5px solid var(--color-correct);border-color:var(--color-correct);}
+.card-correct .card-label{color:var(--color-correct);}
+.card-trap{background:var(--color-trap-bg);border-left:5px solid var(--color-trap);border-color:var(--color-trap);}
+.card-trap .card-label{color:var(--color-trap);}
+.card-ambitious{background:var(--color-ambitious-bg);border-left:5px solid var(--color-ambitious);border-color:var(--color-ambitious);}
+.card-ambitious .card-label{color:var(--color-ambitious);}
+.card-gray{background:var(--color-bg-subtle);border-left:5px solid var(--color-text-muted);border-color:var(--color-text-muted);}
+.card-new{background:var(--color-new-bg);border-left:5px solid var(--color-new);border-color:var(--color-new);}
+.card-new .card-label{color:var(--color-new);}
+.card-exam{background:var(--color-exam-bg);border-left:5px solid var(--color-exam);border-color:var(--color-exam);}
+.card-exam .card-label{color:var(--color-exam);}
+.card .card-label{font-weight:600;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:4px;}
+.card-optional{background:#f8fafc;border:1px dashed #94a3b8;border-left:5px solid #94a3b8;}
+.card-optional .card-label{color:#64748b;font-style:italic;}
+.card-meaning{background:#f0f9ff;border-left:5px solid #0891b2;border-color:#0891b2;border-radius:12px;padding:10px 16px;margin:8px 0;font-size:0.88rem;}
+.card-meaning .card-label{color:#0891b2;}
+.card-boundary{background:#fef2f2;border:1.5px dashed #dc2626;border-left:5px solid #dc2626;border-radius:12px;padding:12px 18px;margin:12px 0;font-size:0.9rem;}
+.card-boundary .card-label{color:#991b1b;}
+.card-language{background:#f0fdfa;border-left:5px solid #14b8a6;border-color:#14b8a6;border-radius:12px;padding:12px 18px;margin:12px 0;}
+.card-language .card-label{color:#0f766e;}
+.card-preview{background:#ecfeff;border-left:5px solid #0891b2;border-color:#0891b2;}
+.card-preview .card-label{color:#155e75;}
+.card-return{background:#faf5ff;border-left:5px solid #a855f7;border-color:#a855f7;}
+.card-return .card-label{color:#5b21b6;}
+
+.minimum-card{
+  background:linear-gradient(135deg,#fff7ed 0%,#fef3c7 100%);
+  border:2px solid #d97706;border-radius:16px;
+  padding:20px 24px;margin:20px 0;
+  box-shadow:0 4px 16px rgba(217,119,6,0.12);
+}
+.minimum-card h3{margin:0 0 12px;color:#78350f;font-size:1.15rem;}
+.minimum-card ol{margin:0;padding-left:22px;}
+.minimum-card li{margin-bottom:10px;font-size:0.98rem;line-height:1.55;}
+.minimum-card li strong{color:#78350f;}
+
+.layer-legend{
+  background:#fff;border:1px solid var(--color-border);border-radius:12px;
+  padding:12px 16px;margin:12px 0;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px 16px;
+}
+.layer-legend .layer-row{display:flex;gap:8px;align-items:center;font-size:0.82rem;}
+.layer-legend .dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.start{background:#2d8f5e;}
+.layer-legend .dot.preview{background:#0891b2;}
+.layer-legend .dot.return{background:#a855f7;}
+.layer-legend .dot.trap{background:#dc2626;}
+
+.viz-legend{background:#fff;border:1px solid var(--color-border);border-radius:12px;padding:12px 16px;margin:12px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px 16px;}
+.viz-legend-item{display:flex;gap:8px;align-items:center;font-size:0.8rem;}
+.viz-swatch{width:14px;height:14px;border-radius:4px;flex-shrink:0;}
+.viz-swatch.common{background:var(--viz-common);}
+.viz-swatch.check{background:var(--viz-check);}
+.viz-swatch.unknown{background:var(--viz-unknown);}
+.viz-swatch.bad{background:var(--viz-bad);}
+.viz-swatch.notyet{background:var(--viz-notyet);}
+
+.level-badge{display:inline-block;font-size:0.55rem;font-weight:700;text-transform:uppercase;padding:1px 8px;border-radius:12px;vertical-align:middle;letter-spacing:0.3px;line-height:1.6;}
+.level-start{background:#d4edda;color:#155724;}
+.level-preview{background:#cffafe;color:#155e75;}
+.level-return{background:#e9d5ff;color:#5b21b6;}
+.level-trap{background:#f8d7da;color:#721c24;}
+.level-basic{background:#d4edda;color:#155724;}
+.level-training{background:#cce5ff;color:#004085;}
+.level-new{background:#a7f3d0;color:#065f46;}
+
+/* Chip "Poznasz w: L0xx" */
+.chip{padding:2px 8px;border-radius:12px;font-size:0.65rem;font-weight:700;background:#e0f2fe;color:#075985;text-transform:uppercase;letter-spacing:0.3px;display:inline-block;margin-left:6px;vertical-align:middle;}
+.chip.ret{background:#ede9fe;color:#5b21b6;}
+
+.table-wrap{overflow-x:auto;margin:12px 0;border-radius:10px;border:1px solid var(--color-border);}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:0.88rem;}
+.table-wrap th,.table-wrap td{padding:6px 10px;text-align:left;border-bottom:1px solid #edf2f7;vertical-align:top;}
+.table-wrap th{background:#f1f4f8;font-weight:600;color:#0a2540;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.3px;}
+.table-wrap tr:nth-child(even){background:#fafbfc;}
+.table-wrap .error-row{background:#fef2f2;}
+.table-wrap .correct-row{background:#f0faf4;}
+
+details.answer{background:var(--color-training-bg);border-left:3px solid var(--color-training);border-radius:6px;padding:8px 12px;margin-top:6px;}
+details.answer summary{cursor:pointer;font-weight:600;color:var(--color-training);font-size:0.9rem;padding:2px 0;list-style:none;}
+details.answer summary::marker{content:"";}
+details.answer summary::before{content:"\25B6 ";font-size:0.7rem;display:inline-block;transition:transform 0.2s;}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer > *:not(summary){margin-top:8px;}
+details.answer .ans-part{display:block;margin-bottom:6px;}
+details.answer .ans-part b{color:#1e4a7a;}
+
+details.foldout{background:#f8fafc;border:1px dashed #94a3b8;border-radius:12px;padding:0;margin:12px 0;}
+details.foldout > summary{cursor:pointer;font-weight:600;color:#475569;font-size:0.9rem;padding:12px 16px;list-style:none;display:flex;align-items:center;gap:6px;}
+details.foldout > summary::marker{content:"";}
+details.foldout > summary::before{content:"\25B6 ";font-size:0.7rem;transition:transform 0.2s;display:inline-block;}
+details.foldout[open] > summary::before{transform:rotate(90deg);}
+details.foldout > summary:hover{background:#f1f5f9;}
+details.foldout > *:not(summary){padding:0 16px 12px 16px;}
+details.foldout .foldout-note{font-size:0.78rem;color:#64748b;font-style:italic;margin-left:8px;font-weight:400;}
+
+.exercise{background:var(--color-bg-subtle);border-radius:12px;padding:14px 16px;margin:12px 0;border:1px solid var(--color-border);}
+.exercise.exam{background:var(--color-exam-bg);border:1px solid #f0d090;}
+
+.top-panel{background:var(--color-bg-subtle);border-radius:16px;padding:16px 20px;margin-bottom:24px;border:1px solid var(--color-border);}
+.top-panel .panel-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;}
+.top-panel .panel-row+.panel-row{margin-top:10px;padding-top:10px;border-top:1px solid var(--color-border);}
+.top-panel .title{font-weight:600;font-size:1.05rem;color:#0a2540;}
+.top-panel .subtitle{font-size:0.8rem;color:var(--color-text-muted);}
+.top-panel .lesson-info{margin-top:6px;font-size:0.78rem;color:var(--color-text-muted);line-height:1.4;}
+
+.mode-bar{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 20px;padding:10px 14px;background:#fff;border:1px solid var(--color-border);border-radius:12px;}
+.mode-btn{padding:6px 14px;border:1px solid var(--color-border);border-radius:8px;background:#fff;font-family:inherit;font-size:0.82rem;font-weight:600;cursor:pointer;transition:all 0.15s;color:#475569;}
+.mode-btn:hover{background:#f1f5f9;}
+.mode-btn.active{background:#0a2540;color:#fff;border-color:#0a2540;}
+body.mode-core .stage-preview-block{display:none!important;}
+body.mode-core .stage-return-block{display:none!important;}
+body.mode-preview .stage-return-block{display:none!important;}
+body.mode-return .stage-core-block{display:none!important;}
+body.mode-return .stage-preview-block{display:none!important;}
+
+.toc-section{background:#fff;border:1px solid var(--color-border);border-radius:16px;padding:18px 22px;margin-bottom:22px;}
+.toc-section h2{margin-bottom:14px;font-size:1.25rem;}
+.toc-item{border:1px solid var(--color-border);border-radius:8px;margin-bottom:6px;background:#fff;}
+.toc-summary{font-weight:600;font-size:0.92rem;padding:8px 14px;cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;}
+.toc-summary:hover{background:var(--color-bg-subtle);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::before{content:"\25B6";font-size:0.7rem;color:var(--color-text-muted);transition:transform 0.2s;margin-right:6px;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);}
+.toc-actions{display:flex;flex-wrap:wrap;gap:6px;padding:2px 14px 8px 30px;}
+.toc-anchor{display:inline-flex;align-items:center;justify-content:center;min-height:30px;padding:4px 11px;border:1px solid var(--color-training);border-radius:6px;background:var(--color-training-bg);color:var(--color-training);font-size:0.78rem;font-weight:600;line-height:1.2;text-decoration:none;}
+.toc-anchor:hover{background:var(--color-training);color:#fff;}
+.toc-anchor.start{border-color:#2d8f5e;background:#f0faf4;color:#14532d;}
+.toc-anchor.start:hover{background:#2d8f5e;color:#fff;}
+.toc-anchor.preview{border-color:#0891b2;background:#ecfeff;color:#155e75;}
+.toc-anchor.preview:hover{background:#0891b2;color:#fff;}
+.toc-anchor.ret{border-color:#a855f7;background:#faf5ff;color:#5b21b6;}
+.toc-anchor.ret:hover{background:#a855f7;color:#fff;}
+.toc-keywords{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:14px;padding:12px 16px;background:var(--color-basic-bg);border-radius:12px;color:#0f5132;font-weight:600;line-height:1.6;}
+
+.section{margin-bottom:8px;}
+.part-heading{font-size:1.5rem;font-weight:700;color:#0a2540;margin-top:32px;margin-bottom:14px;padding:8px 16px;background:var(--color-bg-subtle);border-radius:12px;border-left:6px solid var(--color-training);letter-spacing:-0.02em;}
+.part-heading .part-num{color:var(--color-training);}
+.part-heading.start{border-left-color:#2d8f5e;}
+.part-heading.start .part-num{color:#2d8f5e;}
+.part-heading.preview{border-left-color:#0891b2;}
+.part-heading.preview .part-num{color:#0891b2;}
+.part-heading.ret{border-left-color:#a855f7;}
+.part-heading.ret .part-num{color:#a855f7;}
+
+.footer{margin-top:32px;padding-top:16px;border-top:2px solid var(--color-border);text-align:center;font-size:0.8rem;color:var(--color-text-muted);}
+
+.flashcard-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:16px 0;}
+.flashcard{min-height:140px;padding:16px;border:2px solid var(--color-border);border-radius:12px;background:#fff;color:#0a2540;font:inherit;text-align:center;cursor:pointer;box-shadow:var(--shadow-card);transition:border-color 0.2s,background 0.2s,transform 0.2s;position:relative;}
+.flashcard:hover{border-color:var(--color-training);background:var(--color-training-bg);transform:translateY(-2px);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:100px;}
+.flashcard .front{font-weight:600;font-size:0.95rem;line-height:1.4;}
+.flashcard .back{display:none;color:var(--color-text-muted);font-size:0.9rem;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:6px;right:8px;font-size:0.55rem;text-transform:uppercase;background:#e2e8f0;padding:1px 8px;border-radius:10px;color:#2d3a4f;}
+.flashcard .card-tag.tag-ambitious{background:#e8d5f5;color:#4a1a6b;}
+.flashcard .card-tag.tag-trap{background:#f8d7da;color:#721c24;}
+.flashcard .card-tag.tag-basic{background:#d4edda;color:#155724;}
+.flashcard .card-tag.tag-preview{background:#cffafe;color:#155e75;}
+
+.highlight-box{background:#fef9c3;border:1px solid #facc15;padding:1rem 1.8rem;border-radius:12px;margin:1.5rem 0;}
+
+.step-flow{background:#0a2540;color:#fff;padding:12px 16px;border-radius:8px;font-family:'Courier New',monospace;font-size:0.9rem;line-height:1.7;margin:8px 0;overflow-x:auto;white-space:pre;}
+
+.core-path{background:linear-gradient(180deg,#f0faf4 0%,#e5f5ea 100%);border:2px solid var(--color-basic);border-radius:14px;padding:16px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:700;color:#14532d;font-size:1.1rem;margin-bottom:10px;}
+.core-path ol{margin-bottom:0;}
+
+.mini-note{font-size:0.82rem;color:var(--color-text-muted);font-style:italic;margin-top:6px;}
+
+/* =========================================================
+   WIDGET 46/23
+   ========================================================= */
+.card-46-23{background:#fff;border:2px solid #2b6cb0;border-radius:16px;padding:20px 22px;margin:18px 0;}
+.card-46-23 .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:12px;}
+@media(max-width:640px){.card-46-23 .grid{grid-template-columns:1fr;}}
+.card-46-23 .cell{padding:16px;border-radius:12px;text-align:center;}
+.card-46-23 .cell.soma{background:#eff6ff;border:2px solid #3b82f6;}
+.card-46-23 .cell.gamete{background:#faf5ff;border:2px solid #a855f7;}
+.card-46-23 .cell .label{font-size:0.78rem;font-weight:700;text-transform:uppercase;color:#334155;letter-spacing:0.3px;margin-bottom:6px;}
+.card-46-23 .cell .big{font-size:2.6rem;font-weight:800;line-height:1;letter-spacing:-0.03em;}
+.card-46-23 .cell.soma .big{color:#1d4ed8;}
+.card-46-23 .cell.gamete .big{color:#7c3aed;}
+.card-46-23 .cell .sub{font-size:0.86rem;color:#334155;margin-top:6px;}
+.card-46-23 .cell .sub code{background:#0a2540;font-size:0.85em;}
+.card-46-23 .toggle-btn{margin-top:14px;padding:6px 14px;border:1px solid var(--color-border);border-radius:8px;background:#fff;font-family:inherit;font-size:0.82rem;font-weight:600;cursor:pointer;color:#334155;}
+.card-46-23 .toggle-btn:hover{background:#f1f5f9;}
+.card-46-23 .pairs{margin-top:12px;padding:12px;background:#f8fafc;border-radius:10px;font-family:'Courier New',monospace;font-size:0.9rem;line-height:1.9;letter-spacing:3px;color:#475569;display:none;}
+.card-46-23 .pairs.show{display:block;}
+.card-46-23 .pairs .p{color:#1d4ed8;font-weight:700;}
+.card-46-23 .pairs .g{color:#7c3aed;font-weight:700;}
+.card-46-23 .footer-note{margin-top:14px;padding:10px 14px;background:#eff6ff;border-left:4px solid #3b82f6;border-radius:8px;font-size:0.86rem;color:#1e4a7a;}
+
+/* =========================================================
+   DRABINA DNA → CHROMOSOM → JĄDRO → GEN
+   ========================================================= */
+.ladder{background:#fff;border:2px solid #0891b2;border-radius:16px;padding:20px 22px;margin:18px 0;}
+.ladder .steps{display:flex;flex-wrap:wrap;gap:6px;align-items:center;justify-content:center;margin:14px 0;}
+.ladder .lstep{padding:8px 14px;border-radius:10px;background:#f1f5f9;border:2px solid transparent;font-weight:600;font-size:0.84rem;cursor:pointer;transition:all 0.15s;color:#334155;}
+.ladder .lstep:hover{transform:translateY(-2px);background:#e2e8f0;}
+.ladder .lstep.active{background:#0891b2;color:#fff;border-color:#0e7490;box-shadow:0 4px 12px rgba(8,145,178,0.3);}
+.ladder .larrow{color:#94a3b8;font-weight:700;font-size:1.2rem;}
+.ladder .linfo{background:#ecfeff;border-left:4px solid #0891b2;border-radius:10px;padding:12px 16px;font-size:0.9rem;min-height:80px;}
+.ladder .linfo b{color:#155e75;}
+
+/* =========================================================
+   MITOZA / MEJOZA (ścieżki równoległe)
+   ========================================================= */
+.mit-mei{background:#fff;border:2px solid #7c3aed;border-radius:16px;padding:20px 22px;margin:18px 0;}
+.mit-mei .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:12px;}
+@media(max-width:640px){.mit-mei .grid{grid-template-columns:1fr;}}
+.mit-mei .path{padding:16px;border-radius:12px;}
+.mit-mei .path.mit{background:#eff6ff;border:2px solid #3b82f6;}
+.mit-mei .path.mei{background:#faf5ff;border:2px solid #a855f7;}
+.mit-mei .path h4{margin:0 0 10px;font-size:1rem;}
+.mit-mei .path.mit h4{color:#1d4ed8;}
+.mit-mei .path.mei h4{color:#7c3aed;}
+.mit-mei .path ul{font-size:0.86rem;margin:0;padding-left:20px;}
+.mit-mei .path li{margin-bottom:4px;}
+.mit-mei .why{margin-top:12px;padding:10px 14px;background:#f8fafc;border-radius:8px;border-left:4px solid #7c3aed;font-size:0.86rem;display:none;}
+.mit-mei .why.show{display:block;}
+.mit-mei .toggle-btn{padding:6px 14px;border:1px solid var(--color-border);border-radius:8px;background:#fff;font-family:inherit;font-size:0.82rem;font-weight:600;cursor:pointer;color:#334155;margin-top:10px;}
+.mit-mei .toggle-btn:hover{background:#f1f5f9;}
+
+/* =========================================================
+   WIDGET STATUSU AUTODIAGNOZY — 5 statusów
+   ========================================================= */
+.status-widget{background:#fff;border:2px solid #2b6cb0;border-radius:16px;padding:20px 22px;margin:18px 0;}
+.status-widget h4{margin:0 0 6px;color:#0a2540;font-size:1.05rem;}
+.status-widget .sw-hint{font-size:0.82rem;color:#475569;margin-bottom:14px;line-height:1.6;}
+.status-list{display:grid;gap:8px;}
+.status-item{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;background:#f8fafc;border:1px solid var(--color-border);border-radius:10px;flex-wrap:wrap;}
+.status-item .s-label{font-size:0.88rem;color:#0a2540;font-weight:600;flex:1;min-width:180px;}
+.status-item .s-buttons{display:flex;gap:4px;}
+.s-btn{width:36px;height:36px;border-radius:8px;border:1px solid var(--color-border);background:#fff;font-family:inherit;font-weight:700;font-size:0.92rem;cursor:pointer;transition:all 0.15s;color:#64748b;display:flex;align-items:center;justify-content:center;}
+.s-btn:hover{transform:translateY(-1px);}
+.s-btn.active[data-status="none"]{background:#f1f5f9;border-color:#94a3b8;color:#475569;}
+.s-btn.active[data-status="ok"]{background:#dcfce7;border-color:#86efac;color:#166534;}
+.s-btn.active[data-status="?"]{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.s-btn.active[data-status="x"]{background:#fef2f2;border-color:#fca5a5;color:#991b1b;}
+.s-btn.active[data-status="!"]{background:#ede9fe;border-color:#c4b5fd;color:#5b21b6;}
+.status-summary{margin-top:12px;padding:10px 14px;background:#f0f6ff;border-left:4px solid #2b6cb0;border-radius:8px;font-size:0.86rem;color:#1e4a7a;}
+
+/* =========================================================
+   PEWNE / MOŻLIWE / NIEMOŻLIWE / BRAKUJE
+   ========================================================= */
+.confidence{background:#fff;border:2px solid #b45309;border-radius:16px;padding:20px 22px;margin:18px 0;}
+.confidence h4{margin:0 0 6px;color:#0a2540;font-size:1.05rem;}
+.confidence .c-hint{font-size:0.82rem;color:#475569;margin-bottom:14px;}
+.conf-item{padding:12px 14px;background:#fffbeb;border:1px solid #fcd34d;border-radius:10px;margin-bottom:10px;}
+.conf-item .c-q{font-size:0.9rem;font-weight:600;color:#78350f;margin-bottom:8px;}
+.conf-item .c-btns{display:flex;flex-wrap:wrap;gap:6px;}
+.conf-btn{padding:6px 12px;border:1px solid var(--color-border);border-radius:20px;background:#fff;font-family:inherit;font-size:0.8rem;font-weight:600;cursor:pointer;color:#334155;transition:all 0.15s;}
+.conf-btn:hover{background:#f1f5f9;}
+.conf-btn.active[data-conf="pewne"]{background:#dcfce7;border-color:#86efac;color:#166534;}
+.conf-btn.active[data-conf="mozliwe"]{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.conf-btn.active[data-conf="niemozliwe"]{background:#fef2f2;border-color:#fca5a5;color:#991b1b;}
+.conf-btn.active[data-conf="brak"]{background:#ede9fe;border-color:#c4b5fd;color:#5b21b6;}
+.conf-explain{margin-top:8px;padding:10px 14px;background:#f0fdf4;border-left:3px solid #14b8a6;border-radius:6px;font-size:0.84rem;color:#134e4a;display:none;}
+.conf-explain.show{display:block;}
+
+/* =========================================================
+   TIMELINE
+   ========================================================= */
+.timeline-widget{background:#fff;border:2px solid #0891b2;border-radius:16px;padding:20px 22px;margin:18px 0;}
+.timeline-widget h4{margin:0 0 6px;color:#0a2540;font-size:1.05rem;}
+.timeline-widget .tl-hint{font-size:0.82rem;color:#64748b;margin-bottom:16px;}
+.timeline-axis{position:relative;padding:20px 0 10px;display:flex;justify-content:space-between;gap:4px;overflow-x:auto;}
+.timeline-axis::before{content:"";position:absolute;left:2%;right:2%;top:44px;height:3px;background:linear-gradient(90deg,#0891b2,#7c3aed);border-radius:2px;}
+.timeline-point{position:relative;z-index:1;flex-shrink:0;display:flex;flex-direction:column;align-items:center;min-width:90px;cursor:pointer;background:transparent;border:0;font:inherit;padding:0;}
+.timeline-year{font-size:0.72rem;font-weight:700;color:#475569;margin-bottom:8px;}
+.timeline-dot{width:16px;height:16px;border-radius:50%;background:#fff;border:3px solid #0891b2;transition:all 0.2s;}
+.timeline-point:hover .timeline-dot{transform:scale(1.2);background:#ecfeff;}
+.timeline-point.active .timeline-dot{background:#0a2540;border-color:#0a2540;transform:scale(1.3);}
+.timeline-point.active .timeline-year{color:#0a2540;}
+.timeline-who{font-size:0.7rem;color:#64748b;margin-top:6px;text-align:center;max-width:90px;line-height:1.3;}
+.timeline-point.active .timeline-who{color:#0a2540;font-weight:700;}
+.timeline-info{margin-top:16px;padding:14px 18px;background:#ecfeff;border-left:4px solid #0891b2;border-radius:10px;font-size:0.9rem;min-height:70px;}
+.timeline-info b{color:#155e75;}
+
+.sticky-nav{position:fixed;bottom:0;left:0;right:0;background:rgba(10,37,64,0.94);color:#fff;padding:8px 12px;display:flex;gap:6px;justify-content:center;flex-wrap:wrap;z-index:100;box-shadow:0 -4px 12px rgba(0,0,0,0.15);backdrop-filter:blur(6px);}
+.sticky-nav a{color:#fff;font-size:0.75rem;padding:4px 10px;border-radius:6px;background:rgba(255,255,255,0.1);text-decoration:none;font-weight:500;}
+.sticky-nav a:hover{background:rgba(255,255,255,0.25);}
+@media(max-width:600px){.sticky-nav a{font-size:0.68rem;padding:3px 7px;}}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;}
+}
+:focus-visible{outline:3px solid #fbbf24;outline-offset:2px;border-radius:6px;}
+</style>
+</head>
+<body class="mode-preview">
+
+<div class="container" id="app">
+
+<!-- ================= TOP PANEL ================= -->
+<div class="top-panel" id="topPanel">
+  <div class="panel-row">
+    <div>
+      <div class="title">L003 — Diagnoza startowa genetyki</div>
+      <div class="subtitle">Trzy etapy: diagnoza właściwa · strefa podglądu · powrót po bloku genetyki</div>
+      <div class="lesson-info">
+        Poprzednia: L002 (człowiek) · Następna: L010 (dziedziczenie i zmienność)<br>
+        <strong style="color:var(--color-new)">Wersja 8.0</strong> — restrukturyzacja na trzy etapy, 5. status autodiagnozy „○ Jeszcze nie było",
+        8 mikropunktów zamiast 5 pytań (rozdzielenie startowe / wyprzedzające), nowe pytania diagnostyczne (wyjątek, liczby, model-vs-rzeczywistość),
+        rozbudowana Klinika K8–K13, sekcja ABO/RhD oznaczona jako „Wróć po L019", ramka XX/XY w jednym miejscu,
+        pasek postępu 5-etapowy, wizualizacje relacji (46/23, mitoza/mejoza, drabina DNA→gen).
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= EKRAN STARTOWY ================= -->
+<div class="minimum-card" id="minimum-e8-start" style="background:linear-gradient(135deg,#eef4fb 0%,#dbeafe 100%);border-color:#2b6cb0;">
+  <h3 style="color:#1e4a7a;">Ta lekcja ma dwie funkcje — i to jest ważne</h3>
+  <ol style="font-size:1.0rem;line-height:1.7;">
+    <li><strong>Diagnoza startowa przed L010.</strong> Sprawdza, co już pamiętasz i z czym się kojarzysz.</li>
+    <li><strong>Strefa podglądu.</strong> Zawiera pojęcia, których jeszcze nie musisz umieć, ale które wrócą w kolejnych lekcjach.</li>
+  </ol>
+  <p style="margin-top:12px;color:#1e4a7a;font-size:0.92rem;"><strong>Nie oceniaj siebie na podstawie pojęć, których jeszcze nie było na lekcji.</strong> Jeśli czegoś nie znasz, oznacz to jako <em>„poznam później"</em>, a nie <em>„nie umiem"</em>.</p>
+  <p style="margin-top:8px;color:#1e4a7a;font-size:0.92rem;">Po ukończeniu bloku genetyki (L010–L021) wróć do sekcji oznaczonej <span style="background:#faf5ff;border:1px solid #a855f7;padding:1px 8px;border-radius:10px;font-weight:700;color:#5b21b6;">POWRÓT PO L021</span> — tam sprawdzisz, co już potrafisz.</p>
+</div>
+
+<!-- ================= PASEK POSTĘPU ================= -->
+<div class="progress-bar" aria-label="Etapy pracy z diagnozą">
+  <span class="p-step current"><span class="p-ico">1</span> Odpowiadam</span>
+  <span class="p-arrow">→</span>
+  <span class="p-step"><span class="p-ico">2</span> Sprawdzam</span>
+  <span class="p-arrow">→</span>
+  <span class="p-step"><span class="p-ico">3</span> Oznaczam luki</span>
+  <span class="p-arrow">→</span>
+  <span class="p-step"><span class="p-ico">4</span> Ćwiczę</span>
+  <span class="p-arrow">→</span>
+  <span class="p-step return"><span class="p-ico">5</span> Wracam później</span>
+</div>
+
+<!-- ================= LEGENDA WARSTW ================= -->
+<div class="layer-legend" aria-label="Legenda etapów diagnozy">
+  <div class="layer-row"><span class="dot start"></span><span><b>Etap 1 (start):</b> pytania i pojęcia, które mogłeś poznać wcześniej</span></div>
+  <div class="layer-row"><span class="dot preview"></span><span><b>Etap 2 (podgląd):</b> pojęcia z L011–L020 — jeszcze nie musisz</span></div>
+  <div class="layer-row"><span class="dot return"></span><span><b>Etap 3 (powrót):</b> pełne ćwiczenia, fiszki, test — po ukończeniu bloku</span></div>
+  <div class="layer-row"><span class="dot trap"></span><span><b>Pułapki:</b> typowe błędy (K1–K13)</span></div>
+</div>
+
+<!-- ================= WIZUALNA LEGENDA STATUSÓW ================= -->
+<div class="viz-legend" aria-label="Legenda statusów autodiagnozy">
+  <div class="viz-legend-item"><span class="viz-swatch notyet"></span><span><b>○ Jeszcze nie było</b> — nie jest luką</span></div>
+  <div class="viz-legend-item"><span class="viz-swatch check"></span><span><b>✓ Umiem wyjaśnić</b> — własnymi słowami</span></div>
+  <div class="viz-legend-item"><span class="viz-swatch unknown"></span><span><b>? Kojarzę</b> — ale nie potrafię wyjaśnić</span></div>
+  <div class="viz-legend-item"><span class="viz-swatch bad"></span><span><b>✗ Nie rozumiem</b> mimo nauki</span></div>
+  <div class="viz-legend-item"><span class="viz-swatch common"></span><span><b>! Mylę podobne</b> pojęcia / pułapka</span></div>
+</div>
+
+<!-- ================= TRYBY ================= -->
+<div class="mode-bar">
+  <button class="mode-btn" data-mode="core">Etap 1 — tylko start</button>
+  <button class="mode-btn active" data-mode="preview">Etap 1+2 — diagnoza + podgląd</button>
+  <button class="mode-btn" data-mode="return">Etap 3 — powrót po L021</button>
+</div>
+
+<!-- ================= RDZEŃ ================= -->
+<div class="core-path">
+  <div class="cp-title">Rdzeń diagnozy — najpierw to</div>
+  <ol>
+    <li><strong>Etap 1 (start):</strong> 8 mikropunktów diagnostycznych — bez zaglądania do klucza (sekcja 3).</li>
+    <li><strong>Autodiagnoza</strong> — wypełnij widget statusu (sekcja 5).</li>
+    <li><strong>Klucz 4-warstwowy</strong> — Odpowiedź / Dlaczego / Pułapka / Wzór na ocenę bdb.</li>
+    <li><strong>Rubryka „Moje luki"</strong> — zapisz konkretne luki i lekcje do powtórki.</li>
+    <li><strong>Etap 3 (powrót)</strong> — test i ćwiczenia dopiero po ukończeniu bloku genetyki.</li>
+  </ol>
+</div>
+
+<!-- ================= TOC ================= -->
+<div class="toc-section" id="sec-toc">
+  <h2>Spis treści</h2>
+
+  <details class="toc-item" open>
+    <summary class="toc-summary">0. Czym jest ta diagnoza? + kompas</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#wprowadzenie">Wprowadzenie</a>
+      <a class="toc-anchor" href="#kompas">Kompas</a>
+    </nav>
+  </details>
+
+  <details class="toc-item" open>
+    <summary class="toc-summary">Etap 1 — Diagnoza właściwa (przed L010)</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor start" href="#etap1">8 mikropunktów</a>
+      <a class="toc-anchor start" href="#autodiagnoza">Autodiagnoza</a>
+      <a class="toc-anchor start" href="#klucz">Klucz</a>
+      <a class="toc-anchor start" href="#interpretacja">Interpretacja</a>
+    </nav>
+  </details>
+
+  <details class="toc-item" open>
+    <summary class="toc-summary">Etap 2 — Strefa podglądu (pojęcia z L011–L020)</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor preview" href="#etap2">Pytania wyprzedzające</a>
+      <a class="toc-anchor preview" href="#klucz-preview">Klucz do podglądu</a>
+      <a class="toc-anchor preview" href="#wnioskowanie">Co wynika, a czego nie wolno wnioskować</a>
+      <a class="toc-anchor preview" href="#jezyk">Język precyzyjnego biologa</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">Klinika typowych pomyłek K1–K13 + ściąga startowa</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#klinika">Klinika K1–K13</a>
+      <a class="toc-anchor" href="#sciaga-startowa">Ściąga startowa</a>
+      <a class="toc-anchor" href="#mini-diagnoza">Mini-diagnoza</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">Wizualizacje relacji</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#viz-46-23">46 / 23 — karta podziału</a>
+      <a class="toc-anchor" href="#viz-ladder">Drabina: komórka → jądro → DNA → gen</a>
+      <a class="toc-anchor" href="#viz-mitmei">Mitoza / mejoza — ścieżki</a>
+      <a class="toc-anchor" href="#viz-confidence">Pewne / możliwe / niemożliwe</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">Rubryka „Moje luki" + mapa dalszej nauki</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#moje-luki">Moje luki</a>
+      <a class="toc-anchor" href="#mapa">Mapa dalszej nauki</a>
+    </nav>
+  </details>
+
+  <details class="toc-item" style="border-color:#a855f7;background:#faf5ff;">
+    <summary class="toc-summary" style="color:#5b21b6;">Etap 3 — POWRÓT PO L021</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor ret" href="#etap3">Wprowadzenie do etapu 3</a>
+      <a class="toc-anchor ret" href="#cwiczenia">Ćwiczenia A–E</a>
+      <a class="toc-anchor ret" href="#test">Test postępu</a>
+      <a class="toc-anchor ret" href="#fiszki">Fiszki</a>
+      <a class="toc-anchor ret" href="#checklista">Checklista</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">Słownik, historia, jak się uczyć, status</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#slownik">Słownik</a>
+      <a class="toc-anchor" href="#historia">Historia genetyki</a>
+      <a class="toc-anchor" href="#jak-sie-uczyc">Jak się uczyć</a>
+      <a class="toc-anchor" href="#status">Status</a>
+    </nav>
+  </details>
+
+  <div class="toc-keywords"><span>diagnoza · 8 mikropunktów · etap 1 start · etap 2 podgląd · etap 3 powrót · autodiagnoza · moje luki</span></div>
+</div>
+
+<!-- ================= 0. WPROWADZENIE ================= -->
+<section class="section" id="wprowadzenie">
+  <div class="part-heading"><span class="part-num">0.</span> Czym jest ta diagnoza?</div>
+
+  <div class="card card-new">
+    <span class="card-label">Ta lekcja ma dwie funkcje — i to jest ważne</span>
+    <p>Najpierw jest <strong>diagnozą startową przed L010</strong>: sprawdza, co już pamiętasz i z czym się kojarzysz.</p>
+    <p>Dalej zawiera <strong>strefę podglądu</strong> — pojęcia, których jeszcze nie musisz umieć, ale które wrócą w kolejnych lekcjach.</p>
+    <p style="margin-top:8px;font-weight:600;">Nie oceniaj siebie na podstawie pojęć, których nie było jeszcze na lekcji. Jeśli czegoś nie znasz, oznacz to jako: „poznam później", a nie „nie umiem".</p>
+  </div>
+
+  <div class="card card-warning">
+    <span class="card-label">Zasada — najpierw odpowiedź, potem klucz</span>
+    <p><strong>Odpowiedz najpierw sam, potem sprawdź.</strong> Błąd w diagnozie jest wskazówką: pokazuje, co warto spokojnie wyjaśnić przed dalszą nauką. Diagnoza nie służy do chwalenia się, tylko do planowania nauki.</p>
+  </div>
+
+  <div class="card card-hint">
+    <span class="card-label">Jak pracować z diagnozą (5 kroków)</span>
+    <ol>
+      <li><strong>Odpowiedz na mikropunkty startowe</strong> — bez zaglądania do klucza.</li>
+      <li><strong>Sprawdź się</strong> — użyj widgetu autodiagnozy (5 statusów: ○ / ✓ / ? / ✗ / !).</li>
+      <li><strong>Zapisz, co pomyliłeś</strong> — do tabeli „Moje luki" (sekcja 6.6).</li>
+      <li><strong>Wróć do lekcji</strong> — tej, której dotyczy luka.</li>
+      <li><strong>Powtórz diagnozę po bloku genetyki</strong> (Etap 3) — zobaczysz postęp.</li>
+    </ol>
+  </div>
+
+  <div class="card card-preview">
+    <span class="card-label">Trzy etapy tej lekcji</span>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Etap</th><th>Co zawiera</th><th>Kiedy</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Etap 1 — start</strong></td><td>8 mikropunktów diagnostycznych (tylko to, co mogłeś poznać wcześniej)</td><td>Przed L010</td></tr>
+          <tr><td><strong>Etap 2 — podgląd</strong></td><td>Pytania wyprzedzające z L011–L020; granice wnioskowania; język precyzyjny</td><td>Przed L010 (możesz zajrzeć)</td></tr>
+          <tr><td><strong>Etap 3 — powrót</strong></td><td>Pełne ćwiczenia, test, fiszki, checklista</td><td>Po L021 (koniec bloku genetyki)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 0.2 KOMPAS ================= -->
+<section class="section" id="kompas">
+  <div class="part-heading"><span class="part-num">0.2</span> Kompas — co trzeba wiedzieć wcześniej</div>
+
+  <div class="card card-remember">
+    <span class="card-label">Przypomnienie i materiał do zdiagnozowania</span>
+    <p><strong>Materiał przypomnieniowy</strong> (powinieneś to już umieć):</p>
+    <ul>
+      <li><strong>L001 (komórka):</strong> komórki mają błonę komórkową, cytoplazmę i zwykle jądro; jądro zawiera większość DNA komórki.</li>
+      <li><strong>L002 (człowiek):</strong> organizm człowieka tworzą komórki, tkanki, narządy i układy narządów; krew zawiera różne typy komórek; człowiek rozmnaża się płciowo.</li>
+      <li><strong>Z życia:</strong> możesz już kojarzyć grupy krwi, podobieństwo rodzinne, bliźniaki, badania DNA lub choroby dziedziczne.</li>
+    </ul>
+    <p><strong>Materiał do zdiagnozowania (wyprzedzająco):</strong></p>
+    <ul>
+      <li>Allel, genotyp, fenotyp, replikacja, mitoza, mejoza, 2n/n, ABO, RhD, HLA, mutacje — dopiero poznasz w L010–L021.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================
+     ETAP 1 — DIAGNOZA WŁAŚCIWA
+     ============================================================ -->
+<div class="stage-banner stage-core stage-core-block" id="etap1">
+  <div class="stage-num">1</div>
+  <div class="stage-body">
+    <div class="stage-title">Diagnoza właściwa — przed L010</div>
+    <div class="stage-desc">8 mikropunktów diagnostycznych. Tylko to, co mogłeś poznać wcześniej lub logicznie wywnioskować z L001–L002 i życia.</div>
+  </div>
+</div>
+
+<!-- ================= 1. CEL ================= -->
+<section class="section stage-core-block">
+  <div class="part-heading start"><span class="part-num">1.</span> Po co robimy diagnozę?</div>
+
+  <div class="card card-correct">
+    <ul>
+      <li>Ustalić, co już wiesz o DNA, chromosomach i dziedziczeniu.</li>
+      <li>Wskazać, które lekcje (L010–L021) czytać szybko, a które uważnie.</li>
+      <li>Oswoić terminologię przed pierwszym blokiem genetyki.</li>
+    </ul>
+    <p class="mini-note"><strong>80/20:</strong> osiem mikropunktów startowych mówi, od czego zacząć (L010 szybko / uważnie / od zera).</p>
+  </div>
+</section>
+
+<!-- ================= 2. JAK PRACOWAĆ ================= -->
+<section class="section stage-core-block">
+  <div class="part-heading start"><span class="part-num">2.</span> Jak pracować z diagnozą</div>
+
+  <div class="card card-hint">
+    <span class="card-label">Instrukcja</span>
+    <ol>
+      <li>Odpowiedz <strong>na piśmie</strong> — bez podręcznika.</li>
+      <li>Sprawdź klucz (sekcja 4) — każda odpowiedź ma <strong>4 warstwy</strong>: Odpowiedź / Dlaczego / Pułapka / Wzór na ocenę bdb.</li>
+      <li>Wypełnij widget autodiagnozy (sekcja 5) — <strong>5 statusów</strong>: ○ Jeszcze nie było · ✓ Umiem wyjaśnić · ? Kojarzę · ✗ Nie rozumiem · ! Mylę podobne.</li>
+      <li>Zapisz luki do tabeli „Moje luki" (sekcja 6.6).</li>
+      <li>Wróć do wskazanej lekcji. Powtórz diagnozę po bloku genetyki.</li>
+    </ol>
+    <p><strong>Czas:</strong> 10–15 minut na mikropunkty startowe, potem 5 minut na sprawdzenie.</p>
+  </div>
+</section>
+
+<!-- ================= 3. 8 MIKROPUNKTÓW ================= -->
+<section class="section stage-core-block" id="mikropunkty">
+  <div class="part-heading start"><span class="part-num">3.</span> Osiem mikropunktów diagnostycznych <span class="level-badge level-start">ETAP 1</span></div>
+
+  <div class="card card-warning">
+    <span class="card-label">Instrukcja</span>
+    <p>Odpowiedz najpierw <strong>na piśmie</strong>, bez zaglądania do klucza. Każdy mikropunkt licz osobno — razem 8 punktów.</p>
+  </div>
+
+  <div class="exercise">
+    <p style="font-weight:700;color:#14532d;">Startowe / przypomnienie — 3 mikropunkty</p>
+    <ol>
+      <li><strong>Co to DNA i jaka jest jego rola?</strong></li>
+      <li><strong>Gdzie w typowej komórce zwierzęcej znajduje się większość DNA?</strong></li>
+      <li><strong>Czy zdanie „w każdej komórce człowieka znajduje się DNA w jądrze" jest poprawne?</strong> Odpowiedz: „tak", „nie" albo „to zależy" i uzasadnij jednym przykładem.</li>
+    </ol>
+
+    <p style="font-weight:700;color:#155e75;margin-top:16px;">Wyprzedzające — 5 mikropunktów (jeszcze nie musisz)</p>
+    <ol start="4">
+      <li><strong>Komórka skóry i plemnik człowieka mają różną liczbę chromosomów. Która ma 46, a która 23? Jeśli potrafisz — wyjaśnij, dlaczego.</strong></li>
+      <li><strong>Uzupełnij:</strong> „Człowiek otrzymuje po 23 chromosomy od każdego z rodziców, dlatego jego typowa komórka somatyczna ma ___ chromosomów, czyli ___ pary."</li>
+      <li><strong>Co to allel?</strong> <span class="chip">Poznasz w: L017</span></li>
+      <li><strong>Co to genotyp?</strong> <span class="chip">Poznasz w: L017</span></li>
+      <li><strong>Co to fenotyp?</strong> Podaj jeden przykład fenotypu człowieka. <span class="chip">Poznasz w: L017</span></li>
+    </ol>
+
+    <details class="answer"><summary>Pokaż podpowiedź — rozkład</summary>
+      <p style="margin-top:8px;"><strong>Wynik startowy:</strong> mikropunkty 1, 2, 3.</p>
+      <p><strong>Wynik wyprzedzający:</strong> mikropunkty 4, 5, 6, 7, 8.</p>
+      <p class="mini-note">Nie porównuj tych dwóch wyników — sprawdzają inne rzeczy. Wynik startowy mówi, czy warto powtórzyć L001–L002 przed L010. Wynik wyprzedzający mówi, od jakiego tempa zacząć blok genetyki.</p>
+    </details>
+  </div>
+
+  <div class="exercise">
+    <p><strong>Pytanie modelowe:</strong> <em>„Jeden gen zawsze decyduje o jednej cesze."</em> Oceń zdanie jako: prawdziwe / fałszywe / zbyt uproszczone. Uzasadnij.</p>
+    <details class="answer"><summary>Pokaż model odpowiedzi</summary>
+      <p><strong>Ocena:</strong> zbyt uproszczone.</p>
+      <p><strong>Uzasadnienie:</strong> W szkolnych zadaniach czasem analizuje się jedną cechę kontrolowaną przez jeden gen, ale wiele rzeczywistych cech zależy od wielu genów oraz od środowiska.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ================= 4. KLUCZ ================= -->
+<section class="section stage-core-block" id="klucz">
+  <div class="part-heading start"><span class="part-num">4.</span> Klucz odpowiedzi (4 warstwy) <span class="level-badge level-start">ETAP 1</span></div>
+
+  <div class="card card-hint">
+    <span class="card-label">Każda odpowiedź ma 4 warstwy</span>
+    <ul>
+      <li><strong>Odpowiedź</strong> — krótka, poprawna odpowiedź.</li>
+      <li><strong>Dlaczego</strong> — uzasadnienie, skąd to wiadomo / co to łączy.</li>
+      <li><strong>Pułapka</strong> — najczęstszy błąd związany z tym pytaniem.</li>
+      <li><strong>Odpowiedź na ocenę bardzo dobrą</strong> (★) — pełny wzór do zeszytu lub na sprawdzian.</li>
+    </ul>
+  </div>
+
+  <h3>Mikropunkty startowe (1–3)</h3>
+
+  <details class="answer">
+    <summary>Mikropunkt 1 — Co to DNA i jaka jest jego rola?</summary>
+    <p><span class="ans-part"><b>Odpowiedź:</b> DNA (kwas deoksyrybonukleinowy) to <strong>nośnik informacji genetycznej</strong>. Zawiera instrukcje potrzebne komórce do budowy białek i funkcjonowania.</span></p>
+    <p><span class="ans-part"><b>Dlaczego:</b> Kolejność zasad w DNA (A, T, C, G) zapisuje informację. To ona decyduje o cechach organizmu — oczywiście razem ze środowiskiem.</span></p>
+    <p><span class="ans-part"><b>Pułapka:</b> „DNA to białko". Nie — DNA to <em>kwas nukleinowy</em>; białka powstają <em>na podstawie</em> informacji z DNA.</span></p>
+    <p><span class="ans-part"><b>★ Wzór na ocenę bardzo dobrą:</b> DNA to kwas deoksyrybonukleinowy — główny nośnik informacji genetycznej w komórce. Zapisana w nim kolejność zasad A, T, C, G zawiera instrukcje potrzebne do wytworzenia białek i funkcjonowania organizmu.</span></p>
+  </details>
+
+  <details class="answer">
+    <summary>Mikropunkt 2 — Gdzie w typowej komórce zwierzęcej jest większość DNA?</summary>
+    <p><span class="ans-part"><b>Odpowiedź:</b> <strong>W jądrze komórkowym</strong>. U zwierząt większość DNA znajduje się w jądrze komórkowym. Niewielka część DNA znajduje się także w mitochondriach (tzw. mtDNA).</span></p>
+    <p><span class="ans-part"><b>Dlaczego:</b> Jądro jest głównym miejscem przechowywania DNA u eukariontów. Mitochondria mają własną, kolistą cząsteczkę DNA — pozostałość po bakteryjnym pochodzeniu mitochondriów (teoria endosymbiozy, L001).</span></p>
+    <p><span class="ans-part"><b>Pułapka:</b> Nie mów „DNA jest tylko w jądrze" — to nieprawda. U roślin dodatkowo występuje w chloroplastach.</span></p>
+    <p><span class="ans-part"><b>★ Wzór na ocenę bardzo dobrą:</b> U zwierząt większość DNA znajduje się w jądrze komórkowym. Niewielka część DNA znajduje się także w mitochondriach. Dojrzałe erytrocyty człowieka są wyjątkiem, ponieważ nie mają ani jądra, ani mitochondriów.</span></p>
+  </details>
+
+  <details class="answer">
+    <summary>Mikropunkt 3 — „W każdej komórce człowieka znajduje się DNA w jądrze" — prawda?</summary>
+    <p><span class="ans-part"><b>Odpowiedź:</b> <strong>„To zależy"</strong> — zdanie jest <em>prawdziwe dla większości komórek</em>, ale ma istotny wyjątek.</span></p>
+    <p><span class="ans-part"><b>Przykład wyjątku:</b> <strong>Dojrzały erytrocyt człowieka</strong> nie ma jądra ani mitochondriów, dlatego nie zawiera DNA. Krew nadal może służyć do badania DNA — materiał pochodzi wtedy z leukocytów (białych krwinek), które jądro mają.</span></p>
+    <p><span class="ans-part"><b>Dlaczego:</b> W biologii zwykle bezpieczniej mówić: „<em>typowa</em> komórka somatyczna człowieka ma jądro z DNA". Zamiast „każda" używamy słowa „typowa" — bo wyjątki istnieją.</span></p>
+    <p><span class="ans-part"><b>Pułapka:</b> Automatyczne „tak, każda komórka ma jądro" — pomija erytrocyty.</span></p>
+    <p><span class="ans-part"><b>★ Wzór na ocenę bardzo dobrą:</b> To zależy od rodzaju komórki. Większość komórek człowieka ma jądro komórkowe z DNA, ale dojrzały erytrocyt stanowi wyjątek: nie ma jądra ani mitochondriów, więc nie zawiera DNA.</span></p>
+  </details>
+
+  <h3>Mikropunkty wyprzedzające (4–8)</h3>
+
+  <details class="answer">
+    <summary>Mikropunkt 4 — Komórka skóry i plemnik: która ma 46, która 23?</summary>
+    <p><span class="ans-part"><b>Odpowiedź:</b> <strong>Komórka skóry ma 46 chromosomów</strong> (jest diploidalna, 2n = 46). <strong>Plemnik ma 23 chromosomy</strong> (jest haploidalny, n = 23).</span></p>
+    <p><span class="ans-part"><b>Dlaczego (jeśli potrafisz):</b> Komórka ciała (somatyczna) ma dwa zestawy chromosomów — jeden od matki, jeden od ojca. Plemnik jako komórka rozrodcza powstaje w procesie, który zmniejsza liczbę chromosomów o połowę — dzięki temu po połączeniu z komórką jajową powstaje zygota z 46 chromosomami.</span></p>
+    <p><span class="ans-part"><b>Pułapka:</b> „Plemnik ma 46, jak każda komórka". Nie — komórki rozrodcze mają <em>połowę</em> zestawu.</span></p>
+    <p><span class="ans-part"><b>★ Wzór na ocenę bardzo dobrą:</b> Komórka skóry to typowa komórka somatyczna — ma 46 chromosomów (2n). Plemnik to gameta — ma 23 chromosomy (n). Różnica wynika z tego, że gamety powstają w podziale redukującym liczbę chromosomów o połowę, aby po zapłodnieniu zygota miała znów 46 chromosomów.</span></p>
+  </details>
+
+  <details class="answer">
+    <summary>Mikropunkt 5 — Uzupełnij zdanie o 46 i 23 parach</summary>
+    <p><span class="ans-part"><b>Odpowiedź:</b> „Człowiek otrzymuje po 23 chromosomy od każdego z rodziców, dlatego jego typowa komórka somatyczna ma <strong>46</strong> chromosomów, czyli <strong>23</strong> pary."</span></p>
+    <p><span class="ans-part"><b>Dlaczego:</b> Każdy rodzic przekazuje jeden zestaw 23 chromosomów. 23 + 23 = 46. Te chromosomy łączą się w pary homologiczne — dlatego mówimy o 23 parach.</span></p>
+    <p><span class="ans-part"><b>Pułapka:</b> Mylenie liczby chromosomów z liczbą <em>par</em>. 46 chromosomów = 23 pary. 23 chromosomy (w gamecie) = 23 <em>pojedyncze</em> chromosomy, nie pary.</span></p>
+    <p><span class="ans-part"><b>★ Wzór na ocenę bardzo dobrą:</b> Typowa komórka somatyczna człowieka ma 46 chromosomów, czyli 23 pary — po jednym chromosomie w każdej parze od matki i po jednym od ojca. Gameta ma 23 chromosomy, ale są to chromosomy pojedyncze, nie pary.</span></p>
+  </details>
+
+  <details class="answer">
+    <summary>Mikropunkt 6 — Co to allel? <span class="chip">Poznasz w: L017</span></summary>
+    <p><span class="ans-part"><b>Odpowiedź:</b> <strong>Allel</strong> — jedna z możliwych <em>wersji genu</em> (np. A lub a).</span></p>
+    <p><span class="ans-part"><b>Dlaczego:</b> Ten sam gen może występować w różnych wersjach. Komórka ciała ma dwa allele tego samego genu — po jednym od każdego rodzica.</span></p>
+    <p><span class="ans-part"><b>Pułapka:</b> „allel to cały chromosom" — allel to jedna wersja <em>jednego genu</em>, nie cały chromosom.</span></p>
+    <p><span class="ans-part"><b>★ Wzór na ocenę bardzo dobrą:</b> Allel to jedna z możliwych wersji tego samego genu. W typowym zapisie szkolnym allele oznaczamy literami, np. A (dominujący) i a (recesywny).</span></p>
+  </details>
+
+  <details class="answer">
+    <summary>Mikropunkt 7 — Co to genotyp? <span class="chip">Poznasz w: L017</span></summary>
+    <p><span class="ans-part"><b>Odpowiedź:</b> <strong>Genotyp</strong> to zestaw alleli <em>badanego genu</em> albo — szerzej — <em>wszystkich genów organizmu</em>. W szkolnych zadaniach najczęściej zapisujemy genotyp dotyczący jednej cechy, np. <code>AA</code>, <code>Aa</code> lub <code>aa</code>.</span></p>
+    <p><span class="ans-part"><b>Dlaczego:</b> Genotyp to „litery" — zapis tego, jakie wersje genów ma dany organizm. Nie myl go z fenotypem (cechą obserwowalną): przy pełnej dominacji <code>AA</code> i <code>Aa</code> mają ten sam fenotyp, ale różne genotypy (L017). <strong>Uwaga:</strong> <code>AA</code>, <code>Aa</code>, <code>aa</code> nie są pełnym genotypem człowieka — to zapis dotyczący jednego genu w uproszczonym zadaniu.</span></p>
+    <p><span class="ans-part"><b>Pułapka:</b> „genotyp to wygląd". Genotyp to <em>zapis alleli</em>, wygląd to fenotyp. Z fenotypu nie zawsze da się odczytać genotyp.</span></p>
+    <p><span class="ans-part"><b>★ Wzór na ocenę bardzo dobrą:</b> Genotyp to zestaw alleli danego organizmu. W prostych zadaniach szkolnych oznaczamy go literami — np. AA (homozygota dominująca), Aa (heterozygota), aa (homozygota recesywna) — dotyczących jednego, wybranego genu.</span></p>
+  </details>
+
+  <details class="answer">
+    <summary>Mikropunkt 8 — Co to fenotyp? Podaj przykład. <span class="chip">Poznasz w: L017</span></summary>
+    <p><span class="ans-part"><b>Odpowiedź:</b> <strong>Fenotyp</strong> to <em>zespół obserwowalnych cech organizmu</em>, takich jak budowa, właściwości fizjologiczne i niektóre cechy możliwe do zmierzenia. Fenotyp powstaje w wyniku działania genotypu w określonych warunkach środowiska.</span></p>
+    <p><span class="ans-part"><b>Przykład:</b> grupa krwi, kolor oczu, wzrost, budowa ciała.</span></p>
+    <p><span class="ans-part"><b>Dlaczego:</b> Fenotyp to nie tylko „wygląd zewnętrzny" — to również cechy fizjologiczne (np. grupa krwi) i mierzalne (np. wzrost). Fenotyp = geny + środowisko + rozwój.</span></p>
+    <p><span class="ans-part"><b>Pułapka:</b> „fenotyp = wygląd". Za krótko — fenotyp obejmuje też cechy niewidoczne, jak grupa krwi, oraz mierzalne, jak wzrost czy ciśnienie.</span></p>
+    <p><span class="ans-part"><b>★ Wzór na ocenę bardzo dobrą:</b> Fenotyp to zespół obserwowalnych cech organizmu, np. grupa krwi, kolor oczu, wzrost lub budowa ciała. Zależy od genotypu oraz często także od warunków środowiska, m.in. odżywiania, chorób i aktywności fizycznej.</span></p>
+  </details>
+</section>
+
+<!-- ================= 5. AUTODIAGNOZA ================= -->
+<section class="section stage-core-block" id="autodiagnoza">
+  <div class="part-heading start"><span class="part-num">5.</span> Widget: Moja autodiagnoza <span class="level-badge level-start">5 STATUSÓW</span></div>
+
+  <p>Kliknij przycisk przy każdym pojęciu, aby oznaczyć swój status. Kliknięcie zapisuje status w przeglądarce (lokalnie, na tym urządzeniu).</p>
+
+  <div class="status-widget" id="statusWidget">
+    <h4>Moja autodiagnoza — 5 statusów</h4>
+    <p class="sw-hint">
+      <span style="color:#475569;font-weight:700;">○</span> jeszcze nie było &nbsp;·&nbsp;
+      <span style="color:#166534;font-weight:700;">✓</span> umiem wyjaśnić &nbsp;·&nbsp;
+      <span style="color:#78350f;font-weight:700;">?</span> kojarzę, nie wyjaśnię &nbsp;·&nbsp;
+      <span style="color:#991b1b;font-weight:700;">✗</span> nie rozumiem mimo nauki &nbsp;·&nbsp;
+      <span style="color:#5b21b6;font-weight:700;">!</span> mylę podobne / pułapka
+    </p>
+
+    <div class="status-list" id="statusList">
+      <!-- generowane przez JS -->
+    </div>
+
+    <div class="status-summary" id="statusSummary">
+      Zaznacz statusy powyżej — zobaczysz podsumowanie i wskazówki.
+    </div>
+  </div>
+
+  <div class="card card-warning">
+    <span class="card-label">Uwaga — jak używać statusu ○</span>
+    <p><strong>„○ Jeszcze nie było"</strong> wybieraj wtedy, gdy dane pojęcie pojawi się dopiero w przyszłych lekcjach (L011–L021). To <em>nie jest</em> luka — to informacja, że materiał dopiero przed tobą.</p>
+  </div>
+</section>
+
+<!-- ================= 6. INTERPRETACJA ================= -->
+<section class="section stage-core-block" id="interpretacja">
+  <div class="part-heading start"><span class="part-num">6.</span> Interpretacja wyniku</div>
+
+  <h3>Punktacja rozdzielona — dwie skale</h3>
+
+  <div class="card card-preview">
+    <span class="card-label">Ważne — dwie osobne skale</span>
+    <p><strong>Wynik startowy</strong> (mikropunkty 1, 2, 3) — sprawdza, czy warto powtórzyć L001–L002 przed L010.</p>
+    <p><strong>Wynik wyprzedzający</strong> (mikropunkty 4, 5, 6, 7, 8) — mówi, od jakiego tempa zacząć blok genetyki.</p>
+    <p class="mini-note">Nie porównuj tych dwóch wyników. Mierzą inne rzeczy.</p>
+  </div>
+
+  <h3>Wynik startowy (3 mikropunkty)</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Trafienia (z 3)</th><th>Co robić dalej</th></tr></thead>
+      <tbody>
+        <tr><td>0–1</td><td>Wróć do L001–L002 przed L010 — czytaj wolno, od definicji.</td></tr>
+        <tr><td>2</td><td>L010 czytaj uważnie. Uzupełnij lukę z L001–L002.</td></tr>
+        <tr><td>3</td><td>L010 szybkim przeglądem. Możesz iść dalej w tempie.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Wynik wyprzedzający (5 mikropunktów)</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Trafienia (z 5)</th><th>Co robić dalej</th></tr></thead>
+      <tbody>
+        <tr><td>0–1</td><td>W porządku — to materiał przed tobą. L010 czytaj wolno, po nim L011 od nukleotydu.</td></tr>
+        <tr><td>2–3</td><td>Część pojęć już kojarzysz. L011 czytaj uważnie.</td></tr>
+        <tr><td>4–5</td><td>Mocny start. Możesz szybciej przejść przez L010–L011, skupić się na L013, L017, L020.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card card-correct">
+    <span class="card-label">Ważniejsze od liczby punktów — rozumienie</span>
+    <p><strong>Ważniejsze od liczby punktów jest rozumienie odpowiedzi.</strong> Jeśli odpowiedź była trafiona, ale zgadnięta albo nie potrafisz jej uzasadnić, zaznacz ją jako „do powtórki".</p>
+    <p>Szczególnie ważne są luki dotyczące:</p>
+    <ul>
+      <li>DNA i jądra (gdzie jest materiał genetyczny),</li>
+      <li>różnicy między 46 a 23 chromosomami,</li>
+      <li>pojęć: gen – allel – genotyp – fenotyp.</li>
+    </ul>
+  </div>
+
+  <h3>Próg roboczy — kiedy wracać do czego</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Luka w diagnozie</th><th>Wróć do</th></tr></thead>
+      <tbody>
+        <tr><td>Luki w „gdzie jest DNA"</td><td>L001 (jądro) + L011</td></tr>
+        <tr><td>Luki w 46 / 23</td><td>L012</td></tr>
+        <tr><td>Luki w gametach / płci</td><td>L002 + L015 + L018</td></tr>
+        <tr><td>Luki w grupach krwi</td><td>L002 + L019</td></tr>
+        <tr><td>Luki w allelach / genotypach</td><td>L017</td></tr>
+        <tr><td>Luki w mutacjach</td><td>L020</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============================================================
+     ETAP 2 — STREFA PODGLĄDU
+     ============================================================ -->
+<div class="stage-banner stage-preview stage-preview-block" id="etap2">
+  <div class="stage-num">2</div>
+  <div class="stage-body">
+    <div class="stage-title">Strefa podglądu — pojęcia z L011–L020</div>
+    <div class="stage-desc">Pojęcia, których jeszcze nie musisz umieć, ale które wrócą w kolejnych lekcjach. Traktuj jako „poznam później".</div>
+  </div>
+</div>
+
+<section class="section stage-preview-block">
+  <div class="part-heading preview"><span class="part-num">7.</span> Pytania wyprzedzające <span class="level-badge level-preview">ETAP 2</span></div>
+
+  <div class="card card-optional">
+    <span class="card-label">Bez presji</span>
+    <p>Te pytania dotyczą materiału z L011–L020. Jeśli ich nie umiesz — <strong>to normalne i oczekiwane</strong>. Nie są częścią właściwej diagnozy startowej. Zapisz je jako „pojęcia do poznania", nie jako „porażki".</p>
+  </div>
+
+  <details class="foldout">
+    <summary>Pokaż pytania wyprzedzające <span class="foldout-note">(kliknij, żeby rozwinąć)</span></summary>
+    <div class="exercise" style="margin-top:8px;">
+      <ol>
+        <li><strong>Co to replikacja i po co jest?</strong> <span class="chip">L013</span></li>
+        <li><strong>Co oznacza zapis 2n = 46?</strong> <span class="chip">L012</span></li>
+        <li><strong>Czym różni się mitoza od mejozy?</strong> <span class="chip">L014 / L015</span></li>
+        <li><strong>Dlaczego rodzeństwo nie jest identyczne? Podaj co najmniej dwa mechanizmy.</strong> <span class="chip">L015</span></li>
+        <li><strong>Co to chromatyda i centromer?</strong> <span class="chip">L012</span></li>
+        <li><strong>Czym różni się gen od chromosomu?</strong> <span class="chip">L011 / L012</span></li>
+        <li><strong>Co to allel dominujący i recesywny?</strong> <span class="chip">L017</span></li>
+        <li><strong>Dlaczego hemofilia częściej dotyczy mężczyzn?</strong> <span class="chip">L018</span></li>
+        <li><strong>Co to mutacja i mutagen?</strong> <span class="chip">L020</span></li>
+        <li><strong>Czy każda mutacja jest szkodliwa?</strong> <span class="chip">L020</span></li>
+      </ol>
+    </div>
+  </details>
+</section>
+
+<section class="section stage-preview-block" id="klucz-preview">
+  <div class="part-heading preview"><span class="part-num">7.5</span> Klucz do pytań wyprzedzających <span class="level-badge level-preview">ETAP 2</span></div>
+
+  <details class="foldout">
+    <summary>Pokaż klucz do pytań wyprzedzających <span class="foldout-note">(poznasz później)</span></summary>
+
+    <details class="answer">
+      <summary>Replikacja <span class="chip">L013</span></summary>
+      <p><span class="ans-part"><b>Odpowiedź:</b> Replikacja DNA zachodzi w <strong>fazie S interfazy</strong>, <em>przed</em> mitozą lub <em>przed</em> pierwszym podziałem mejotycznym. Nie powtarza się między mejozą I a mejozą II. Zachodzi <em>semikonserwatywnie</em>: każda nowa cząsteczka DNA składa się z jednej starej nici i jednej nowej.</span></p>
+      <p><span class="ans-part"><b>Dlaczego:</b> Obie komórki potomne muszą dostać pełną, identyczną informację genetyczną. Bez skopiowanego DNA jedna z komórek dostałaby niepełny zestaw.</span></p>
+      <p><span class="ans-part"><b>Pułapka:</b> „dwa podziały mejotyczne = dwie replikacje DNA" — <em>nie</em>. W mejozie jest <strong>jedna replikacja</strong> i <strong>dwa podziały</strong>.</span></p>
+    </details>
+
+    <details class="answer">
+      <summary>2n = 46 <span class="chip">L012</span></summary>
+      <p><span class="ans-part"><b>Odpowiedź:</b> Zapis <strong>diploidalnej liczby chromosomów</strong> w typowej komórce ciała człowieka. 2n = dwa zestawy chromosomów; 46 = łączna liczba chromosomów = 23 pary.</span></p>
+      <p><span class="ans-part"><b>Pułapka:</b> Nie myl 2n z n. n = 23 (jeden zestaw — gameta). 2n = 46 (dwa zestawy — typowa komórka ciała).</span></p>
+    </details>
+
+    <details class="answer">
+      <summary>Mitoza vs mejoza <span class="chip">L014 / L015</span></summary>
+      <p><span class="ans-part"><b>Odpowiedź:</b> <strong>Mitoza</strong> to podział, w którym komórki potomne zachowują taką samą liczbę chromosomów jak komórka macierzysta; u człowieka typowo: <code>2n → 2n</code>. Służy wzrostowi i regeneracji. <strong>Mejoza</strong> to dwa kolejne podziały komórkowe, które zmniejszają liczbę zestawów chromosomów z diploidalnej do haploidalnej; u człowieka z komórki <code>2n</code> prowadzą do komórek <code>n</code>. W jej przebiegu powstają komórki rozrodcze lub ich bezpośrednie prekursory, zależnie od organizmu i płci.</span></p>
+      <p><span class="ans-part"><b>Uwaga:</b> „Mejoza zawsze tworzy cztery gamety" to uproszczenie. W oogenezie powstaje jedna duża komórka jajowa i ciałka kierunkowe.</span></p>
+    </details>
+
+    <details class="answer">
+      <summary>Rodzeństwo nieidentyczne <span class="chip">L015</span></summary>
+      <p><span class="ans-part"><b>Odpowiedź:</b> Rodzeństwo zwykle nie jest identyczne, ponieważ każde z rodziców wytwarza <strong>różne gamety</strong> podczas mejozy, połączenie plemnika i komórki jajowej jest <strong>losowe</strong>, a na rozwój człowieka wpływa również <strong>środowisko</strong>.</span></p>
+      <p><span class="ans-part"><b>Mechanizmy genetyczne:</b></span></p>
+      <ul>
+        <li><strong>Rekombinacja chromosomowa</strong> (crossing-over) — wymiana fragmentów chromatyd niesiostrzanych między homologami w profazie I mejozy.</li>
+        <li><strong>Niezależna segregacja chromosomów</strong> — pary chromosomów homologicznych rozchodzą się niezależnie do gamet (2²³ ≈ 8,4 mln możliwych zestawów).</li>
+        <li><strong>Losowe zapłodnienie</strong> — dowolny plemnik łączy się z dowolną komórką jajową.</li>
+      </ul>
+    </details>
+
+    <details class="answer">
+      <summary>Chromatyda i centromer <span class="chip">L012</span></summary>
+      <p><span class="ans-part"><b>Odpowiedź:</b></span></p>
+      <ul>
+        <li><strong>Chromatyda</strong> — kopia chromosomu powstała po replikacji. Chromatydy siostrzane są połączone i identyczne.</li>
+        <li><strong>Centromer</strong> — miejsce połączenia dwóch chromatyd siostrzanych. <em>Jednostka liczenia chromosomów</em>: jeden centromer = jeden chromosom.</li>
+      </ul>
+      <p><span class="ans-part"><b>Pułapka:</b> „92 chromosomy po replikacji" — <em>nie</em>. Liczymy centromery: chromosomów jest nadal 46; chromatyd jest 92.</span></p>
+    </details>
+
+    <details class="answer">
+      <summary>Gen vs chromosom <span class="chip">L011 / L012</span></summary>
+      <p><span class="ans-part"><b>Odpowiedź:</b></span></p>
+      <ul>
+        <li><strong>Chromosom</strong> — silnie upakowana forma DNA z białkami (histonami).</li>
+        <li><strong>Gen</strong> — <em>odcinek</em> DNA w chromosomie, który zawiera informację o jednym produkcie (białku lub RNA).</li>
+      </ul>
+      <p><span class="ans-part"><b>Analogia:</b> chromosom = książka kucharska; gen = pojedynczy przepis. <strong>Uwaga:</strong> gen jest fragmentem DNA, ale <em>nie każde DNA jest genem</em>.</span></p>
+    </details>
+
+    <details class="answer">
+      <summary>Allele dominujące i recesywne <span class="chip">L017</span></summary>
+      <p><span class="ans-part"><b>Odpowiedź:</b></span></p>
+      <ul>
+        <li><strong>Dominujący</strong> — ujawnia się, gdy jest tylko <em>jeden</em> (w heterozygocie Aa).</li>
+        <li><strong>Recesywny</strong> — ujawnia się tylko, gdy są <em>dwa</em> (w homozygocie aa).</li>
+      </ul>
+      <p><span class="ans-part"><b>Pułapka:</b> „dominujący = lepszy / częstszy". Dominacja to <em>sposób ujawniania się</em> w fenotypie, nie wartość ani częstość w populacji.</span></p>
+    </details>
+
+    <details class="answer">
+      <summary>Hemofilia częściej u mężczyzn <span class="chip">L018</span></summary>
+      <p><span class="ans-part"><b>Odpowiedź:</b> Gen hemofilii leży na <strong>chromosomie X</strong> i jest <strong>recesywny</strong>. Mężczyzna ma tylko <strong>jeden chromosom X</strong> (XY), więc nie ma drugiego X, który mógłby „zamaskować" wadliwy allel.</span></p>
+      <p><span class="ans-part"><b>Uwaga:</b> „Kobieta nigdy nie ma hemofilii" to nieprawda — może mieć (XᵃXᵃ), ale to bardzo rzadkie.</span></p>
+    </details>
+
+    <details class="answer">
+      <summary>Mutacja i mutagen <span class="chip">L020</span></summary>
+      <p><span class="ans-part"><b>Odpowiedź:</b> <strong>Mutacja</strong> to zmiana w materiale genetycznym, która może zostać utrwalona i przekazana komórkom potomnym. Może dotyczyć sekwencji DNA, liczby chromosomów albo ich budowy. <strong>Mutagen</strong> to czynnik, który zwiększa częstość mutacji (np. UV, promieniowanie X, niektóre chemikalia).</span></p>
+      <p><span class="ans-part"><b>Pułapka:</b> „mutagen = mutacja" — mutagen to <em>przyczyna</em>, mutacja to <em>skutek</em>.</span></p>
+    </details>
+
+    <details class="answer">
+      <summary>Czy każda mutacja szkodliwa? <span class="chip">L020</span></summary>
+      <p><span class="ans-part"><b>Odpowiedź:</b> <strong>Nie.</strong> Skutki mutacji mogą być szkodliwe, neutralne lub (rzadko) korzystne.</span></p>
+      <p><span class="ans-part"><b>Dlaczego:</b> Kod genetyczny jest <em>zdegenerowany</em> (kilka kodonów → ten sam aminokwas), a część DNA nie koduje białek. Dlatego wiele zmian w DNA nie wpływa istotnie na organizm.</span></p>
+      <p><span class="ans-part"><b>Pułapka:</b> „mutacja = choroba = nowotwór". Te trzy pojęcia nie są tym samym.</span></p>
+    </details>
+  </details>
+</section>
+
+<!-- ================= 9. WNIOSKOWANIE ================= -->
+<section class="section stage-preview-block" id="wnioskowanie">
+  <div class="part-heading preview"><span class="part-num">8.</span> Co wynika, a czego nie wolno wnioskować? <span class="level-badge level-preview">ETAP 2</span></div>
+
+  <div class="card card-warning">
+    <span class="card-label">Nie jest potrzebne przed L010. Wróć po L019.</span>
+    <p>Ta sekcja pokazuje, jak ostrożnie wnioskować z danych genetycznych — na przykładzie grup krwi ABO i RhD. Do bloku genetyki wystarczy przeczytać ją pobieżnie; wróci w L019.</p>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Z danych</th><th>Wolno powiedzieć</th><th>Czego NIE wolno powiedzieć</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Matka ma grupę 0 (genotyp ii), ojciec grupę AB (IᴬIᴮ)</td>
+          <td>Ich dziecko może mieć grupę A (Iᴬi) albo B (Iᴮi).</td>
+          <td>„Dziecko na pewno będzie miało A"</td>
+        </tr>
+        <tr>
+          <td>Ktoś ma grupę krwi A</td>
+          <td>Genotyp to <code>IᴬIᴬ</code> albo <code>Iᴬi</code></td>
+          <td>„Na pewno ma genotyp <code>IᴬIᴬ</code>"</td>
+        </tr>
+        <tr>
+          <td>Dziecko ma grupę 0, a matka 0</td>
+          <td>Ojciec musi dać allel <code>i</code></td>
+          <td>„Ojciec na pewno ma grupę 0"</td>
+        </tr>
+        <tr>
+          <td>Matka RhD−, ojciec RhD+</td>
+          <td>W prostym modelu dziedziczenia antygenu D płód może być RhD+ albo RhD−, jeśli ojciec RhD+ jest heterozygotą. Jeśli ma dwa allele warunkujące RhD+, wszystkie dzieci będą RhD+.</td>
+          <td>„Na pewno dojdzie do konfliktu RhD" — matka RhD− i płód RhD+ to <em>warunek, który może wiązać się z ryzykiem</em> konfliktu serologicznego, ale sam nie przesądza o jego wystąpieniu. Znaczenie ma m.in. wcześniejsze uczulenie matki oraz opieka medyczna i profilaktyka.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card card-boundary">
+    <span class="card-label">Ważne</span>
+    <p><strong>Grupa krwi nie służy do ustalania ojcostwa ani pokrewieństwa.</strong> Zgodność lub niezgodność prostego modelu ABO nie wystarcza do takich wniosków. Do ustalania pokrewieństwa używa się specjalistycznych badań DNA.</p>
+  </div>
+
+  <div class="card card-correct">
+    <span class="card-label">Cztery kategorie do zapamiętania</span>
+    <ul>
+      <li><strong>Pewne z danych</strong> — wynika jednoznacznie z podanych informacji i modelu.</li>
+      <li><strong>Możliwe</strong> — nie da się wykluczyć, ale też nie jest pewne.</li>
+      <li><strong>Niemożliwe</strong> — sprzeczne z modelem i danymi.</li>
+      <li><strong>Brakuje danych</strong> — żeby coś rozstrzygnąć, potrzebujemy np. genotypu rodzica, a nie tylko fenotypu.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= 10. JĘZYK ================= -->
+<section class="section stage-preview-block" id="jezyk">
+  <div class="part-heading preview"><span class="part-num">9.</span> Język precyzyjnego biologa <span class="level-badge level-preview">ETAP 2</span></div>
+
+  <p>W genetyce precyzja językowa ma znaczenie. Poniższa tabela pomaga uniknąć nieprecyzyjnych sformułowań.</p>
+
+  <div class="card card-language">
+    <span class="card-label">Zamiast — lepiej</span>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Nieprecyzyjne</th><th>Precyzyjne</th></tr></thead>
+        <tbody>
+          <tr><td>„Każda komórka ma 46 chromosomów"</td><td><strong>„Typowa komórka somatyczna człowieka ma 46 chromosomów"</strong></td></tr>
+          <tr><td>„Grupa 0 nie ma genów"</td><td><strong>„Grupa 0 wynika z genotypu <code>ii</code>"</strong></td></tr>
+          <tr><td>„Rh− jest chorobą"</td><td><strong>„Rh− oznacza brak antygenu D na erytrocytach"</strong></td></tr>
+          <tr><td>„Matka decyduje o płci"</td><td><strong>„W modelu XX/XY plemnik wnosi X albo Y"</strong></td></tr>
+          <tr><td>„Erytrocyt nie ma DNA"</td><td><strong>„Dojrzały erytrocyt człowieka nie ma jądra ani mitochondriów — dlatego nie zawiera DNA. Próbka krwi nadal może służyć do badania DNA, ponieważ zawiera leukocyty z jądrami komórkowymi."</strong></td></tr>
+          <tr><td>„Genotyp to wygląd"</td><td><strong>„Genotyp to zestaw alleli; fenotyp to obserwowalne cechy organizmu"</strong></td></tr>
+          <tr><td>„Fenotyp = wygląd zewnętrzny"</td><td><strong>„Fenotyp obejmuje też cechy fizjologiczne (np. grupa krwi) i mierzalne (np. wzrost)"</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card card-correct">
+    <span class="card-label">Zamiana słownika — jedna uwaga</span>
+    <p><strong>Komórka somatyczna</strong> to komórka ciała niezwiązana bezpośrednio z tworzeniem gamet (np. komórka skóry, mięśnia, wątroby). W prostym wyjaśnieniu mówimy „komórka ciała", a w zadaniach precyzyjnych — „komórka somatyczna".</p>
+  </div>
+</section>
+
+<!-- ================= 11. RAMKA XX/XY ================= -->
+<section class="section stage-preview-block">
+  <div class="part-heading preview"><span class="part-num">10.</span> Ramka: zakres szkolnego modelu XX/XY <span class="level-badge level-preview">ETAP 2</span></div>
+
+  <div class="card card-preview">
+    <span class="card-label">Zakres szkolnego modelu</span>
+    <p>W typowym modelu człowieka osoby z chromosomami <strong>XX</strong> rozwijają się jako kobiety, a osoby z chromosomami <strong>XY</strong> jako mężczyźni. <strong>Biologia rozwoju płci jest bardziej złożona</strong>: istnieją także warianty rozwoju cech płciowych.</p>
+    <p>W tej lekcji rozwiązujemy zadania według uproszczonego modelu XX/XY. Chromosomy są ważnym, ale <em>nie jedynym</em> elementem tego procesu.</p>
+  </div>
+</section>
+
+<!-- ================= 11. KLINIKA ================= -->
+<section class="section" id="klinika">
+  <div class="part-heading"><span class="part-num">11.</span> Klinika typowych pomyłek K1–K13 <span class="level-badge level-trap">PUŁAPKI</span></div>
+
+  <p>To najczęstsze pomyłki pojawiające się na starcie genetyki. Przeczytaj je nawet jeśli diagnoza wyszła dobrze — łatwo je popełnić w pierwszych zadaniach.</p>
+
+  <div class="card card-error">
+    <span class="card-label">K1 — „DNA jest tylko w krwi"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „DNA występuje tylko we krwi."</li>
+      <li><strong>Poprawa:</strong> U zwierząt większość DNA znajduje się w jądrze komórkowym; niewielka część w mitochondriach. Dojrzałe erytrocyty są wyjątkiem — nie mają jądra ani mitochondriów.</li>
+      <li><strong>Reguła:</strong> lokalizacja DNA = L001 + L011.</li>
+      <li><strong>Pułapka:</strong> mylenie „badamy DNA z krwi" z „DNA jest tylko we krwi".</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">K2 — „Człowiek ma 23 chromosomy"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Człowiek ma 23 chromosomy."</li>
+      <li><strong>Poprawa:</strong> 23 <strong>pary</strong> = 46 w typowej komórce ciała; 23 <em>pojedyncze</em> chromosomy w gamecie.</li>
+      <li><strong>Pułapka:</strong> liczba haploidalna vs diploidalna.</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">K3 — „Mitoza i mejoza to to samo"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Mitoza i mejoza to to samo, bo obie dzielą komórkę."</li>
+      <li><strong>Poprawa:</strong> Obie to podziały, ale <strong>wynik i cel</strong> inne (2n vs n; ciało vs gamety).</li>
+      <li><strong>Pułapka:</strong> liczenie „ile komórek powstaje" bez pytania „jaka liczba chromosomów".</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">K4 — „Genotyp to wygląd"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Genotyp to wygląd organizmu."</li>
+      <li><strong>Poprawa:</strong> Wygląd / cecha = <strong>fenotyp</strong>; <strong>genotyp</strong> = zestaw alleli.</li>
+      <li><strong>Pułapka:</strong> „Ma niebieskie oczy, więc ma genotyp niebieski" — za krótko.</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">K5 — „XY to kobieta"</span>
+    <ul>
+      <li><strong>Błąd:</strong> skojarzenia językowe.</li>
+      <li><strong>Poprawa:</strong> W typowym modelu szkolnym <strong>XX = kobieta, XY = mężczyzna</strong>.</li>
+      <li><strong>Pułapka:</strong> skojarzenia zamiast faktu.</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">K6 — „Każda mutacja powoduje chorobę"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Każda mutacja = choroba."</li>
+      <li><strong>Poprawa:</strong> Nie każda mutacja powoduje chorobę. Skutki mutacji mogą być <strong>szkodliwe, neutralne, a w pewnych warunkach także korzystne</strong>.</li>
+      <li><strong>Most:</strong> L020.</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">K7 — „Rodzeństwo musi być identyczne"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Skoro ci sami rodzice, to rodzeństwo jest identyczne."</li>
+      <li><strong>Poprawa:</strong> Ci sami rodzice ≠ te same gamety. <strong>Rekombinacja chromosomowa + losowy rozdział chromosomów + losowe zapłodnienie</strong>.</li>
+      <li><strong>Most:</strong> L015, L017.</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">K8 — „Po replikacji są dwa razy więcej chromosomów"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Po replikacji komórka człowieka ma 92 chromosomy."</li>
+      <li><strong>Poprawa:</strong> Ma nadal <strong>46 chromosomów</strong>, ale każdy może składać się z dwóch <em>chromatyd siostrzanych</em>. Podwaja się ilość DNA, nie liczba chromosomów.</li>
+      <li><strong>Sygnał ostrzegawczy:</strong> zawsze zapytaj: „liczę chromosomy czy chromatydy?"</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">K9 — „Gameta ma 23 pary chromosomów"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Plemnik ma 23 pary chromosomów."</li>
+      <li><strong>Poprawa:</strong> Gameta ma <strong>23 pojedyncze chromosomy</strong>, czyli po jednym z każdej pary obecnej w komórkach diploidalnych.</li>
+      <li><strong>Most:</strong> L012, L015.</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">K10 — „Dominujący znaczy częsty, silniejszy lub lepszy"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Allel dominujący jest częstszy albo silniejszy."</li>
+      <li><strong>Poprawa:</strong> Dominujący oznacza tylko tyle, że <strong>jego efekt jest widoczny w fenotypie heterozygoty</strong> w danym modelu cechy.</li>
+      <li><strong>Most:</strong> L017.</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">K11 — „Recesywny znaczy niewidoczny"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Cecha recesywna nigdy się nie ujawnia."</li>
+      <li><strong>Poprawa:</strong> Może się ujawnić, gdy w genotypie występują dwa odpowiednie allele recesywne — w prostym modelu <code>aa</code>.</li>
+      <li><strong>Most:</strong> L017.</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">K12 — „Bliźnięta jednojajowe są zawsze identyczne pod każdym względem"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Bliźnięta jednojajowe są identyczne pod każdym względem."</li>
+      <li><strong>Poprawa:</strong> Mają <strong>bardzo podobny materiał genetyczny</strong>, ale ich fenotyp może się różnić pod wpływem środowiska, rozwoju, epigenetyki, zdrowia i przypadkowych zdarzeń.</li>
+      <li><strong>Most:</strong> L010.</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">K13 — „Dziedziczne znaczy obecne od urodzenia"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Skoro coś jest dziedziczne, to musi być widoczne od urodzenia." (I odwrotnie — „skoro coś jest od urodzenia, to jest dziedziczne.")</li>
+      <li><strong>Poprawa:</strong> Cecha dziedziczna ma związek z informacją genetyczną, ale <strong>nie musi być widoczna od urodzenia</strong> (np. choroby późnoobjawowe). Z kolei cecha obecna od urodzenia <strong>nie musi być dziedziczna</strong> (np. wady wrodzone pochodzenia środowiskowego).</li>
+      <li><strong>Most:</strong> L010 — przygotowanie do odróżniania cech dziedzicznych i nabytych.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= 12. ŚCIĄGA STARTOWA ================= -->
+<section class="section" id="sciaga-startowa">
+  <div class="part-heading"><span class="part-num">12.</span> Ściąga startowa <span class="level-badge level-start">PRZED L011</span></div>
+
+  <p>To minimum, które trzeba mieć w głowie, <strong>zanim zacznie się blok genetyki</strong>. Każdy wiersz to odsyłacz do lekcji, gdzie dane pojęcie jest rozwinięte.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Pojęcie</th><th>Definicja precyzyjna</th><th>Gdzie wrócisz</th></tr></thead>
+      <tbody>
+        <tr><td><strong>DNA</strong></td><td>kwas deoksyrybonukleinowy, nośnik informacji genetycznej; u zwierząt większość DNA znajduje się w jądrze, a niewielka część w mitochondriach</td><td>L011</td></tr>
+        <tr><td><strong>Gen</strong></td><td>odcinek DNA zawierający informację o produkcie (białku lub RNA); jedna cecha często zależy od wielu genów i środowiska</td><td>L010, L011</td></tr>
+        <tr><td><strong>Chromosom</strong></td><td>upakowana forma DNA + białka</td><td>L012</td></tr>
+        <tr><td><strong>Kariotyp</strong></td><td>zestaw chromosomów komórki</td><td>L012</td></tr>
+        <tr><td><strong>2n = 46</strong></td><td>typowa komórka somatyczna człowieka: 46 chromosomów, 23 pary</td><td>L012, L014</td></tr>
+        <tr><td><strong>n = 23</strong></td><td>gameta (plemnik, komórka jajowa)</td><td>L015</td></tr>
+        <tr><td><strong>Replikacja</strong></td><td>kopiowanie DNA w fazie S, przed podziałem; semikonserwatywna. W mejozie <em>jedna</em> replikacja poprzedza <em>dwa</em> podziały.</td><td>L013</td></tr>
+        <tr><td><strong>Mitoza</strong></td><td>podział, w którym komórki potomne zachowują taką samą liczbę chromosomów jak komórka macierzysta; u człowieka typowo <code>2n → 2n</code>. Służy wzrostowi i regeneracji.</td><td>L014</td></tr>
+        <tr><td><strong>Mejoza</strong></td><td>dwa kolejne podziały, które zmniejszają liczbę zestawów chromosomów z diploidalnej do haploidalnej; u człowieka z <code>2n</code> prowadzą do komórek <code>n</code>.</td><td>L015</td></tr>
+        <tr><td><strong>Allel</strong></td><td>jedna z możliwych wersji genu (np. A lub a)</td><td>L017</td></tr>
+        <tr><td><strong>Genotyp</strong></td><td>zestaw alleli badanego genu albo — szerzej — wszystkich genów organizmu. W zadaniach szkolnych najczęściej <code>AA</code>, <code>Aa</code> lub <code>aa</code> (dotyczące jednej cechy).</td><td>L017</td></tr>
+        <tr><td><strong>Fenotyp</strong></td><td>zespół obserwowalnych cech organizmu — budowy, właściwości fizjologicznych i mierzalnych. Zależy od genotypu i często od środowiska.</td><td>L017</td></tr>
+        <tr><td><strong>XX / XY</strong></td><td>kobieta / mężczyzna — typowy model szkolny</td><td>L018</td></tr>
+        <tr><td><strong>Mutacja</strong></td><td>zmiana w materiale genetycznym, która może zostać utrwalona i przekazana komórkom potomnym. Może dotyczyć sekwencji DNA, liczby chromosomów albo ich budowy.</td><td>L020</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card card-warning">
+    <span class="card-label">Uwaga — o uproszczeniu „jeden gen = jedna cecha"</span>
+    <p>W prostych zadaniach szkolnych często zakłada się, że jeden gen odpowiada za jedną cechę. To <strong>uproszczenie pomocne w nauce dziedziczenia</strong>, ale w rzeczywistości wiele cech (np. wzrost, kolor skóry) zależy od <strong>wielu genów i środowiska</strong>.</p>
+  </div>
+</section>
+
+<!-- ================= 12.5 MINI-DIAGNOZA ================= -->
+<section class="section" id="mini-diagnoza">
+  <div class="part-heading"><span class="part-num">12.5</span> Mini-diagnoza rozszerzona <span class="level-badge level-training">5 PYTAŃ · 3–5 MIN</span></div>
+
+  <p>Wersja skrócona — jeśli nie masz 15 minut, zrób tę.</p>
+
+  <div class="exercise">
+    <ol>
+      <li>Najmniejsza jednostka życia?</li>
+      <li>DNA u człowieka (typowa komórka ciała)?</li>
+      <li>Blizna po kolanie — dziedziczna?</li>
+      <li>Plemnik: 46 czy 23 chromosomy?</li>
+      <li>Dwoje rodzeństwa różni się, choć ci sami rodzice — czy to „błąd genów"?</li>
+    </ol>
+
+    <details class="answer"><summary>Pokaż pełny klucz</summary>
+      <p><span class="ans-part"><b>1. Najmniejsza jednostka życia?</b></span></p>
+      <p><span class="ans-part"><b>Odpowiedź:</b> <strong>Komórka.</strong></span></p>
+      <p><span class="ans-part"><b>Dlaczego:</b> Komórka to najmniejsza podstawowa jednostka budowy i funkcjonowania organizmów. Wirusy nie są komórkami (L001).</span></p>
+      <p><span class="ans-part"><b>Pułapka:</b> „atom" albo „cząsteczka" — to jednostki materii nieożywionej, nie życia.</span></p>
+
+      <p><span class="ans-part"><b>2. DNA u człowieka (typowa komórka ciała)?</b></span></p>
+      <p><span class="ans-part"><b>Odpowiedź:</b> <strong>W jądrze komórkowym</strong> — dodatkowo niewielka ilość w mitochondriach.</span></p>
+      <p><span class="ans-part"><b>Pułapka:</b> „w cytoplazmie" — u eukariontów DNA nie pływa swobodnie w cytoplazmie.</span></p>
+
+      <p><span class="ans-part"><b>3. Blizna po kolanie — dziedziczna?</b></span></p>
+      <p><span class="ans-part"><b>Odpowiedź:</b> <strong>Nie</strong> — to cecha nabyta, nie dziedziczna.</span></p>
+      <p><span class="ans-part"><b>Dlaczego:</b> Blizna powstaje w wyniku urazu (środowiska), a nie jest zapisana w DNA.</span></p>
+
+      <p><span class="ans-part"><b>4. Plemnik: 46 czy 23 chromosomy?</b></span></p>
+      <p><span class="ans-part"><b>Odpowiedź:</b> <strong>23</strong> (n).</span></p>
+      <p><span class="ans-part"><b>Dlaczego:</b> Plemnik to gameta — komórka haploidalna. Po zapłodnieniu 23 + 23 = 46 w zygocie.</span></p>
+
+      <p><span class="ans-part"><b>5. Rodzeństwo różni się — czy to „błąd genów"?</b></span></p>
+      <p><span class="ans-part"><b>Odpowiedź:</b> <strong>Nie</strong> — to normalne i oczekiwane zjawisko.</span></p>
+      <p><span class="ans-part"><b>Dlaczego:</b> Każde dziecko powstaje z innej pary gamet. Rekombinacja chromosomowa, niezależna segregacja i losowe zapłodnienie — te trzy mechanizmy dają nowe kombinacje.</span></p>
+    </details>
+  </div>
+
+  <div class="card card-warning">
+    <span class="card-label">Pułapki mini-diagnozy</span>
+    <ul>
+      <li>„Umiem grupy krwi" ≠ umiem allele Iᴬ, Iᴮ, i (L019).</li>
+      <li>„Wiem, co to DNA" ≠ umiem par A–T / C–G (L011).</li>
+      <li>Zgadywanie bez uzasadnienia = luka, nawet przy trafieniu.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================
+     WIZUALIZACJE RELACJI
+     ============================================================ -->
+
+<!-- 46 / 23 -->
+<section class="section" id="viz-46-23">
+  <div class="part-heading"><span class="part-num">13.</span> 46 / 23 — karta podziału</div>
+
+  <div class="card-46-23">
+    <div class="grid">
+      <div class="cell soma">
+        <div class="label">Typowa komórka ciała</div>
+        <div class="big">46</div>
+        <div class="sub">23 pary chromosomów<br><code>2n = 46</code></div>
+      </div>
+      <div class="cell gamete">
+        <div class="label">Gameta</div>
+        <div class="big">23</div>
+        <div class="sub">23 pojedyncze chromosomy<br><code>n = 23</code></div>
+      </div>
+    </div>
+
+    <button class="toggle-btn" onclick="document.getElementById('pairsView').classList.toggle('show')">Pokaż pary chromosomów</button>
+
+    <div class="pairs" id="pairsView">
+      <div style="font-size:0.78rem;color:#475569;letter-spacing:0;margin-bottom:6px;text-transform:uppercase;">23 pary (każda para: jeden od matki + jeden od ojca)</div>
+      <span class="p">||</span> <span class="g">||</span> &nbsp; <span class="p">||</span> <span class="g">||</span> &nbsp; <span class="p">||</span> <span class="g">||</span> &nbsp; <span class="p">||</span> <span class="g">||</span> &nbsp; <span class="p">||</span> <span class="g">||</span><br>
+      <span class="p">||</span> <span class="g">||</span> &nbsp; <span class="p">||</span> <span class="g">||</span> &nbsp; <span class="p">||</span> <span class="g">||</span> &nbsp; <span class="p">||</span> <span class="g">||</span> &nbsp; <span class="p">||</span> <span class="g">||</span><br>
+      <span class="p">||</span> <span class="g">||</span> &nbsp; <span class="p">||</span> <span class="g">||</span> &nbsp; <span class="p">||</span> <span class="g">||</span> &nbsp; <span class="p">||</span> <span class="g">||</span> &nbsp; <span class="p">||</span> <span class="g">||</span><br>
+      <span class="p">||</span> <span class="g">||</span> &nbsp; <span class="p">||</span> <span class="g">||</span> &nbsp; <span class="p">||</span> <span class="g">||</span> &nbsp; <span class="p">||</span> <span class="g">||</span> &nbsp; <span class="p">||</span> <span class="g">||</span><br>
+      <span class="p">||</span> <span class="g">||</span> &nbsp; <span class="p">||</span> <span class="g">||</span> &nbsp; <span class="p">||</span> <span class="g">||</span><br>
+      <div style="font-size:0.8rem;color:#64748b;letter-spacing:0;margin-top:6px;">
+        <span class="p">niebieskie</span> = od matki · <span class="g">fioletowe</span> = od ojca (umowne)
+      </div>
+    </div>
+
+    <div class="footer-note">
+      Po zapłodnieniu 23 chromosomy z komórki jajowej i 23 z plemnika tworzą zygotę z 46 chromosomami.
+    </div>
+  </div>
+</section>
+
+<!-- DRABINA DNA -->
+<section class="section" id="viz-ladder">
+  <div class="part-heading"><span class="part-num">14.</span> Drabina: komórka → jądro → chromosom → DNA → gen</div>
+
+  <div class="ladder" id="ladderWidget">
+    <div class="steps">
+      <button class="lstep active" data-step="cell">Komórka</button>
+      <span class="larrow">→</span>
+      <button class="lstep" data-step="nucleus">Jądro</button>
+      <span class="larrow">→</span>
+      <button class="lstep" data-step="chromosome">Chromosom</button>
+      <span class="larrow">→</span>
+      <button class="lstep" data-step="dna">DNA</button>
+      <span class="larrow">→</span>
+      <button class="lstep" data-step="gene">Gen</button>
+    </div>
+    <div class="linfo" id="ladderInfo">
+      <b>Komórka:</b> najmniejsza podstawowa jednostka budowy i funkcjonowania organizmów. Zawiera m.in. jądro komórkowe (u eukariontów).
+    </div>
+  </div>
+</section>
+
+<!-- MITOZA / MEJOZA -->
+<section class="section" id="viz-mitmei">
+  <div class="part-heading"><span class="part-num">15.</span> Mitoza / mejoza — dwie ścieżki losu komórki</div>
+
+  <div class="mit-mei">
+    <div class="grid">
+      <div class="path mit">
+        <h4>Mitoza</h4>
+        <ul>
+          <li>1 podział</li>
+          <li>Zachowuje liczbę chromosomów</li>
+          <li>Wzrost i regeneracja</li>
+          <li>U człowieka typowo: 46 → 46</li>
+        </ul>
+      </div>
+      <div class="path mei">
+        <h4>Mejoza</h4>
+        <ul>
+          <li>2 podziały</li>
+          <li>Zmniejsza liczbę zestawów chromosomów</li>
+          <li>Rozmnażanie płciowe</li>
+          <li>U człowieka: 46 → 23</li>
+        </ul>
+      </div>
+    </div>
+    <button class="toggle-btn" onclick="document.getElementById('whyMitMei').classList.toggle('show')">Pokaż „dlaczego?"</button>
+    <div class="why" id="whyMitMei">
+      <p><strong>Mitoza:</strong> chromatydy siostrzane rozchodzą się do dwóch biegunów komórki — każda komórka potomna dostaje pełny zestaw chromosomów. Dlatego 2n → 2n.</p>
+      <p><strong>Mejoza:</strong> najpierw rozchodzą się całe chromosomy homologiczne (mejoza I, redukcja 2n → n), a potem chromatydy siostrzane (mejoza II, utrzymanie n). Dlatego powstają komórki haploidalne.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PEWNE / MOŻLIWE / NIEMOŻLIWE -->
+<section class="section" id="viz-confidence">
+  <div class="part-heading"><span class="part-num">16.</span> Pewne / możliwe / niemożliwe / brakuje danych</div>
+
+  <div class="confidence">
+    <h4>Jak mocno mogę to stwierdzić?</h4>
+    <p class="c-hint">Przeczytaj każde zdanie i wybierz jedną z czterech kategorii. Potem kliknij „Sprawdź".</p>
+
+    <div class="conf-item" data-id="c1">
+      <div class="c-q">Matka: grupa 0. Ojciec: grupa AB. <strong>Dziecko może mieć grupę A.</strong></div>
+      <div class="c-btns">
+        <button class="conf-btn" data-conf="pewne">Pewne</button>
+        <button class="conf-btn" data-conf="mozliwe">Możliwe</button>
+        <button class="conf-btn" data-conf="niemozliwe">Niemożliwe</button>
+        <button class="conf-btn" data-conf="brak">Brakuje danych</button>
+      </div>
+      <div class="conf-explain">✓ <strong>Możliwe.</strong> Matka ii daje tylko <code>i</code>; ojciec AB daje <code>Iᴬ</code> lub <code>Iᴮ</code>. Dziecko może być Iᴬi (grupa A) lub Iᴮi (grupa B).</div>
+    </div>
+
+    <div class="conf-item" data-id="c2">
+      <div class="c-q">Matka: grupa 0. Ojciec: grupa AB. <strong>Dziecko na pewno ma grupę B.</strong></div>
+      <div class="c-btns">
+        <button class="conf-btn" data-conf="pewne">Pewne</button>
+        <button class="conf-btn" data-conf="mozliwe">Możliwe</button>
+        <button class="conf-btn" data-conf="niemozliwe">Niemożliwe</button>
+        <button class="conf-btn" data-conf="brak">Brakuje danych</button>
+      </div>
+      <div class="conf-explain">✓ <strong>Niemożliwe jako „pewne".</strong> Dziecko może mieć A albo B — nie da się stwierdzić z góry, że będzie B.</div>
+    </div>
+
+    <div class="conf-item" data-id="c3">
+      <div class="c-q">Matka: grupa 0. Ojciec: grupa AB. <strong>Dziecko może mieć grupę AB.</strong></div>
+      <div class="c-btns">
+        <button class="conf-btn" data-conf="pewne">Pewne</button>
+        <button class="conf-btn" data-conf="mozliwe">Możliwe</button>
+        <button class="conf-btn" data-conf="niemozliwe">Niemożliwe</button>
+        <button class="conf-btn" data-conf="brak">Brakuje danych</button>
+      </div>
+      <div class="conf-explain">✓ <strong>Niemożliwe.</strong> Matka ii nie ma <code>Iᴮ</code>, ojciec nie ma <code>i</code>. Grupa AB wymaga dwóch różnych alleli — matka może dać tylko <code>i</code>, ojciec może dać tylko <code>Iᴬ</code> albo <code>Iᴮ</code>. Nie da się złożyć <code>IᴬIᴮ</code>.</div>
+    </div>
+
+    <div class="conf-item" data-id="c4">
+      <div class="c-q">Ktoś ma grupę krwi A. <strong>Ma genotyp IᴬIᴬ.</strong></div>
+      <div class="c-btns">
+        <button class="conf-btn" data-conf="pewne">Pewne</button>
+        <button class="conf-btn" data-conf="mozliwe">Możliwe</button>
+        <button class="conf-btn" data-conf="niemozliwe">Niemożliwe</button>
+        <button class="conf-btn" data-conf="brak">Brakuje danych</button>
+      </div>
+      <div class="conf-explain">✓ <strong>Brakuje danych.</strong> Grupa A to <code>IᴬIᴬ</code> ALBO <code>Iᴬi</code>. Bez dodatkowych informacji (np. grup krwi rodziców, potomstwa) nie da się rozstrzygnąć, który to genotyp.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 17. MOJE LUKI ================= -->
+<section class="section" id="moje-luki">
+  <div class="part-heading"><span class="part-num">17.</span> Moje luki po L003 <span class="level-badge level-new">RUBRYKA UCZNIA</span></div>
+
+  <p>Uzupełnij tę tabelę po diagnozie i po sprawdzeniu klucza. Wpisz własne oznaczenia i zaplanuj powtórki.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Pojęcie / pytanie</th><th>Status (○ / ✓ / ? / ✗ / !)</th><th>Lekcja do powtórki</th><th>Data pierwszej powtórki</th><th>Czy umiem już wyjaśnić?</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>DNA i miejsce występowania</td><td>○ ✓ ? ✗ !</td><td>L001 / L011</td><td>__________</td><td>__________</td></tr>
+        <tr><td>46 i 23 chromosomy (2n vs n)</td><td>○ ✓ ? ✗ !</td><td>L012 / L015</td><td>__________</td><td>__________</td></tr>
+        <tr><td>Mitoza i mejoza</td><td>○ ✓ ? ✗ !</td><td>L014 / L015</td><td>__________</td><td>__________</td></tr>
+        <tr><td>Gen, allel, genotyp, fenotyp</td><td>○ ✓ ? ✗ !</td><td>L017</td><td>__________</td><td>__________</td></tr>
+        <tr><td>XX i XY (model szkolny)</td><td>○ ✓ ? ✗ !</td><td>L018</td><td>__________</td><td>__________</td></tr>
+        <tr><td>Mutacje</td><td>○ ✓ ? ✗ !</td><td>L020</td><td>__________</td><td>__________</td></tr>
+        <tr><td>Inne (wpisz własne): __________</td><td>○ ✓ ? ✗ !</td><td>__________</td><td>__________</td><td>__________</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card card-correct">
+    <span class="card-label">Jak oznaczać statusy</span>
+    <ul>
+      <li><strong>○ Jeszcze nie było</strong> — pojęcie dopiero pojawi się w przyszłych lekcjach. To nie jest luka.</li>
+      <li><strong>✓ Umiem wyjaśnić</strong> — wybieraj wtedy, gdy potrafisz wyjaśnić pojęcie własnymi słowami i podać przykład.</li>
+      <li><strong>?</strong> — masz wątpliwość, kojarzysz, ale nie wyjaśnisz. To uczciwa informacja, która pomaga zaplanować naukę.</li>
+      <li><strong>✗</strong> — nie rozumiesz mimo nauki.</li>
+      <li><strong>!</strong> — mylisz podobne pojęcia (np. chromatyda ↔ chromosom). To typowa pułapka.</li>
+    </ul>
+  </div>
+
+  <div class="card card-hint">
+    <span class="card-label">Jak sprawdzić się — krótka odpowiedź kontrolna</span>
+    <p>Zanim oznaczysz coś jako <strong>✓</strong>, spróbuj odpowiedzieć na pytanie kontrolne, np.:</p>
+    <ul>
+      <li><em>„Ile chromosomów ma gameta człowieka i dlaczego nie mówimy »23 pary«?"</em></li>
+      <li><em>„Gdzie w komórce znajduje się DNA, a gdzie go nie ma?"</em></li>
+      <li><em>„Czy każda mutacja jest szkodliwa?"</em></li>
+    </ul>
+    <p class="mini-note">Dopiero gdy umiesz odpowiedzieć własnymi słowami — zaznacz ✓.</p>
+  </div>
+</section>
+
+<!-- ================= 18. MAPA ================= -->
+<section class="section" id="mapa">
+  <div class="part-heading"><span class="part-num">18.</span> Mapa dalszej nauki</div>
+
+  <div class="step-flow">Etap 1: DIAGNOZA (startowa)
+   │
+   ├── Luki w „gdzie jest DNA" → L001 + L011
+   ├── Luki w 46/23 → L012
+   ├── Luki w gametach/płci → L002 + L015 + L018
+   │
+   ▼
+Etap 2: STREFA PODGLĄDU (pojęcia z L011–L020)
+   │
+   ▼
+L010 cechy i zmienność
+   ├── L011 DNA
+   ├── L012 chromosom
+   ├── L013 replikacja
+   ├── L014 mitoza · L015 mejoza
+   ├── L017–L019 dziedziczenie / płeć / ABO
+   └── L020 mutacje
+   │
+   ▼
+Etap 3: POWRÓT PO L021 (test, ćwiczenia, fiszki, checklista)</div>
+
+  <div class="card card-correct">
+    <span class="card-label">Co dalej?</span>
+    <p><strong>Następna lekcja:</strong> L010 — czym jest genetyka (cechy dziedziczne vs nabyte).</p>
+    <p>Potem: <strong>L011 (DNA), L012 (chromosom), L013 (replikacja)</strong>.</p>
+    <p><strong>Po L021</strong> wróć do tej lekcji (Etap 3) i zrób test postępu.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     ETAP 3 — POWRÓT PO L021
+     ============================================================ -->
+<div class="stage-banner stage-return stage-return-block" id="etap3">
+  <div class="stage-num">3</div>
+  <div class="stage-body">
+    <div class="stage-title">Powrót po L021 — sprawdź, co już potrafisz</div>
+    <div class="stage-desc">Pełne ćwiczenia, test, fiszki i checklista. Wróć tutaj dopiero po ukończeniu bloku genetyki (L010–L021).</div>
+  </div>
+</div>
+
+<section class="section stage-return-block">
+  <div class="part-heading ret"><span class="part-num">19.</span> Jak używać Etapu 3 <span class="level-badge level-return">POWRÓT PO L021</span></div>
+
+  <div class="card card-return">
+    <span class="card-label">Kiedy tu wracać?</span>
+    <p>Po ukończeniu bloku genetyki (L010–L021). Ten etap zbiera całą wiedzę z bloku w formie:</p>
+    <ul>
+      <li>ćwiczeń A–E (podstawa, trening, wybierz i uzasadnij, ambitne, napraw odpowiedź),</li>
+      <li>testu postępu (10 pytań),</li>
+      <li>fiszek i checklisty.</li>
+    </ul>
+    <p><strong>Wskazówka:</strong> najpierw wykonaj test, potem fiszki i checklistę. Powtórz diagnozę startową (Etap 1) i porównaj wyniki — zobaczysz, ile się nauczyłeś.</p>
+  </div>
+</section>
+
+<!-- ================= ĆWICZENIA ================= -->
+<section class="section stage-return-block" id="cwiczenia">
+  <div class="part-heading ret"><span class="part-num">20.</span> Ćwiczenia A–E <span class="level-badge level-return">ETAP 3</span></div>
+
+  <div class="card card-hint">
+    <span class="card-label">Kolejność pracy</span>
+    <p><strong>A. Podstawa</strong> — sprawdzenie terminów. <strong>B. Trening</strong> — zastosowanie. <strong>C. Wybierz i uzasadnij</strong> — typ zadań sprawdzianowych. <strong>D. Ambitne</strong> — łączenie pojęć. <strong>E. Napraw odpowiedź</strong> — szukanie typowych błędów.</p>
+  </div>
+
+  <h3>A. Podstawa <span class="level-badge level-basic">A</span></h3>
+  <div class="exercise">
+    <ol>
+      <li>Podkreśl poprawne: DNA u zwierzęcia jest głównie w (jądrze / wakuoli / ścianie komórkowej).</li>
+      <li>Uzupełnij: komórka ciała człowieka ma ___ chromosomów, gameta ma ___.</li>
+      <li>
+        <strong>Połącz proces z opisem w tabeli:</strong>
+        <div class="table-wrap" style="margin-top:8px;">
+          <table>
+            <thead><tr><th>Proces</th><th>Co dzieje się z DNA/chromosomami?</th><th>Główna rola u człowieka</th></tr></thead>
+            <tbody>
+              <tr><td>Replikacja</td><td>__________</td><td>__________</td></tr>
+              <tr><td>Mitoza</td><td>__________</td><td>__________</td></tr>
+              <tr><td>Mejoza</td><td>__________</td><td>__________</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </li>
+      <li>XX czy XY — kto jest kim (w typowym modelu szkolnym)?</li>
+      <li>Allel to: (a) cały chromosom (b) wersja genu (c) białko.</li>
+    </ol>
+    <details class="answer"><summary>Pokaż pełne odpowiedzi</summary>
+      <p><span class="ans-part"><b>A1.</b> jądro. <b>Dlaczego:</b> U zwierząt większość DNA w jądrze; niewielka część w mitochondriach. Wakuola to zbiornik, ściana to osłona.</span></p>
+      <p><span class="ans-part"><b>A2.</b> 46 i 23. <b>Dlaczego:</b> Typowa komórka ciała = 2n = 46 (23 pary); gameta = n = 23 (jeden zestaw).</span></p>
+      <p><span class="ans-part"><b>A3. Tabela:</b></span></p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Proces</th><th>Co dzieje się z DNA/chromosomami?</th><th>Główna rola u człowieka</th></tr></thead>
+          <tbody>
+            <tr><td>Replikacja</td><td>DNA zostaje skopiowane (w fazie S)</td><td>Przygotowanie do podziału</td></tr>
+            <tr><td>Mitoza</td><td>Powstają komórki o takiej samej liczbie chromosomów jak komórka macierzysta</td><td>Wzrost, regeneracja, wymiana komórek</td></tr>
+            <tr><td>Mejoza</td><td>Liczba zestawów chromosomów zostaje zmniejszona</td><td>Powstawanie komórek rozrodczych</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><span class="ans-part"><b>A4.</b> XX — kobieta; XY — mężczyzna (typowy model szkolny).</span></p>
+      <p><span class="ans-part"><b>A5.</b> (b) wersja genu.</span></p>
+    </details>
+  </div>
+
+  <h3>B. Trening <span class="level-badge level-training">B</span></h3>
+  <div class="exercise">
+    <ol start="6">
+      <li>Dlaczego dojrzałe erytrocyty człowieka są złym przykładem „komórki z DNA w jądrze"?</li>
+      <li>Zapisz jednym zdaniem różnicę 2n vs n.</li>
+      <li>Rodzeństwo: podaj <strong>dwa</strong> mechanizmy zmienności.</li>
+      <li><strong>Lekarz pyta o choroby występujące w rodzinie. Wyjaśnij, dlaczego taka informacja może być przydatna, ale dlaczego sama nie przesądza, że dana osoba zachoruje.</strong></li>
+      <li>Ktoś napisał „23 chromosomy w skórze". Popraw i nazwij pułapkę.</li>
+    </ol>
+    <details class="answer"><summary>Pokaż pełne odpowiedzi</summary>
+      <p><span class="ans-part"><b>B6.</b> Bo dojrzały erytrocyt człowieka i większości ssaków <strong>traci jądro i organelle</strong> — nie ma ich.</span></p>
+      <p><span class="ans-part"><b>B7.</b> 2n = diploidalna (typowa komórka ciała, 46 u człowieka); n = haploidalna (gameta, 23 u człowieka).</span></p>
+      <p><span class="ans-part"><b>B8.</b> np. (1) rekombinacja chromosomowa, (2) niezależna segregacja chromosomów. (Trzeci: losowe zapłodnienie.)</span></p>
+      <p><span class="ans-part"><b>B9. Odpowiedź:</b> Choroby występujące w rodzinie mogą wskazywać na zwiększone ryzyko związane z genami albo wspólnym środowiskiem. <strong>Nie są jednak pewną prognozą zachorowania</strong>, ponieważ znaczenie mogą mieć także styl życia, inne czynniki środowiskowe i przypadek.</span></p>
+      <p><span class="ans-part"><b>B10.</b> W skórze jest <strong>46</strong> chromosomów (2n), nie 23. <b>Nazwa pułapki:</b> mylenie liczby haploidalnej (n = 23) z diploidalną (2n = 46).</span></p>
+    </details>
+  </div>
+
+  <h3>C. Wybierz i uzasadnij <span class="level-badge level-training">C</span></h3>
+
+  <div class="exercise">
+    <p><strong>1.</strong> Komórka mięśniowa człowieka zawiera zwykle:</p>
+    <ul>
+      <li>A. 23 chromosomy,</li>
+      <li>B. 46 chromosomów,</li>
+      <li>C. 23 pary gamet,</li>
+      <li>D. 46 par chromosomów.</li>
+    </ul>
+    <details class="answer"><summary>Pokaż pełne odpowiedzi</summary>
+      <p><span class="ans-part"><b>C1. Odpowiedź:</b> <strong>B.</strong> Komórka mięśniowa człowieka zawiera zwykle 46 chromosomów.</span></p>
+      <p><span class="ans-part"><b>Uzasadnienie:</b> Komórki ciała (somatyczne) są diploidalne (2n = 46), więc każda z nich — w tym mięśniowa — ma 46 chromosomów, czyli 23 pary.</span></p>
+    </details>
+  </div>
+
+  <div class="exercise">
+    <p><strong>2.</strong> Przed podziałem komórki zachodzi replikacja DNA. Jej znaczenie polega na tym, że:</p>
+    <ul>
+      <li>A. komórka zmniejsza liczbę chromosomów,</li>
+      <li>B. DNA zostaje skopiowane,</li>
+      <li>C. powstaje nowy organizm,</li>
+      <li>D. chromosomy znikają.</li>
+    </ul>
+    <details class="answer"><summary>Pokaż pełne odpowiedzi</summary>
+      <p><span class="ans-part"><b>C2. Odpowiedź:</b> <strong>B.</strong> DNA zostaje skopiowane.</span></p>
+      <p><span class="ans-part"><b>Uzasadnienie:</b> Replikacja to kopiowanie DNA przed podziałem, aby każda komórka potomna otrzymała pełną informację genetyczną.</span></p>
+    </details>
+  </div>
+
+  <div class="exercise">
+    <p><strong>3.</strong> <strong>Rodzice mają po dwie wersje wielu genów. Wyjaśnij, dlaczego rodzeństwo zwykle nie otrzymuje dokładnie takiego samego zestawu alleli.</strong></p>
+    <details class="answer"><summary>Pokaż pełne odpowiedzi</summary>
+      <p><span class="ans-part"><b>C3. Odpowiedź:</b> <strong>Każde dziecko powstaje z innej kombinacji alleli.</strong></span></p>
+      <p><span class="ans-part"><b>Uzasadnienie:</b> Rodzice mają ustalone genotypy, ale wytwarzają różne gamety (rekombinacja chromosomowa + niezależna segregacja), a zapłodnienie jest losowe. Dlatego każde dziecko otrzymuje inną kombinację alleli.</span></p>
+    </details>
+  </div>
+
+  <h3>D. Ambitne <span class="level-badge level-ambitious">D</span></h3>
+  <div class="exercise">
+    <ol start="11">
+      <li>Czym różni się gen od chromosomu (analogią + definicją)?</li>
+      <li>Dlaczego hemofilia częściej u mężczyzn? (szkic — pełny model w L018)</li>
+      <li>Mutagen vs mutacja — para definicji + jeden przykład czynnika.</li>
+      <li>Czy identyczne bliźnięta jednojajowe mają identyczny fenotyp zawsze? Uzasadnij ostrożnie.</li>
+    </ol>
+    <details class="answer"><summary>Pokaż pełne odpowiedzi</summary>
+      <p><span class="ans-part"><b>D11.</b> <b>Definicja:</b> chromosom = upakowana forma DNA z białkami; gen = odcinek DNA z informacją o produkcie. <b>Analogia:</b> chromosom = książka kucharska; gen = pojedynczy przepis. <b>Uwaga:</b> gen jest fragmentem DNA, ale nie każde DNA jest genem.</span></p>
+      <p><span class="ans-part"><b>D12.</b> Gen hemofilii leży na chromosomie X. Mężczyzna ma tylko jeden X — recesywny allel ujawnia się. Kobieta ma dwa X, więc recesywny allel ujawnia się tylko przy XᵃXᵃ.</span></p>
+      <p><span class="ans-part"><b>D13.</b> Mutacja = zmiana w materiale genetycznym, która może zostać utrwalona i przekazana komórkom potomnym. Mutagen = czynnik zwiększający częstość mutacji (np. UV, promieniowanie X).</span></p>
+      <p><span class="ans-part"><b>D14.</b> Nie zawsze. Mają bardzo podobny materiał genetyczny, ale ich fenotyp może się różnić pod wpływem środowiska, rozwoju, epigenetyki, zdrowia i przypadkowych zdarzeń.</span></p>
+    </details>
+  </div>
+
+  <h3>E. Napraw odpowiedź <span class="level-badge level-training">E</span></h3>
+  <div class="exercise">
+    <p>Uczeń napisał: <em>„Człowiek ma 23 chromosomy, ponieważ od mamy dostaje 23, a od taty kolejne 23."</em></p>
+    <ol>
+      <li>Wskaż, co w tej odpowiedzi jest prawdziwe.</li>
+      <li>Wskaż błąd.</li>
+      <li>Napisz poprawną wersję odpowiedzi w jednym lub dwóch zdaniach.</li>
+    </ol>
+    <details class="answer"><summary>Pokaż pełne rozwiązanie</summary>
+      <p><span class="ans-part"><b>E1. Co jest prawdziwe?</b> Dziecko otrzymuje po jednym zestawie chromosomów od każdego z rodziców — od mamy (przez komórkę jajową) 23 chromosomy i od taty (przez plemnik) 23 chromosomy.</span></p>
+      <p><span class="ans-part"><b>E2. Co jest błędne?</b> Stwierdzenie, że <em>człowiek ma tylko 23 chromosomy</em>. Pomylił liczbę chromosomów w <em>gamecie</em> (n = 23) z liczbą chromosomów w <em>komórce ciała</em> (2n = 46). <b>Nazwa pułapki:</b> mylenie liczby haploidalnej (n) z diploidalną (2n).</span></p>
+      <p><span class="ans-part"><b>E3. Poprawna wersja:</b> Typowa komórka ciała człowieka ma 46 chromosomów, czyli 23 pary. Dziecko otrzymuje po jednym zestawie chromosomów od każdego z rodziców: 23 chromosomy od matki i 23 od ojca, razem 46 (2n). Gamety mają po 23 chromosomy (n).</span></p>
+    </details>
+  </div>
+</section>
+
+<!-- ================= 21. TEST ================= -->
+<section class="section stage-return-block" id="test">
+  <div class="part-heading ret"><span class="part-num">21.</span> Test postępu (10 pytań) <span class="level-badge level-return">ETAP 3</span></div>
+
+  <div class="card card-hint">
+    <span class="card-label">Zrób test dopiero po bloku genetyki</span>
+    <p>Ten test sprawdza cały blok. Najlepiej rozwiąż go po L021 — jako sprawdzian postępu. Wcześniej traktuj go jako „podgląd".</p>
+  </div>
+
+  <div class="exercise">
+    <ol>
+      <li>Gdzie jest DNA w typowej komórce zwierzęcej?</li>
+      <li>Ile chromosomów ma komórka skóry człowieka?</li>
+      <li>Mitoza: 2n → ?</li>
+      <li>Mejoza służy m.in. do…</li>
+      <li>Allel to…</li>
+      <li>Fenotyp to…</li>
+      <li>XX / XY — przypisz płeć (w typowym modelu szkolnym).</li>
+      <li>Replikacja dzieje się <strong>przed</strong> czy <strong>zamiast</strong> podziału?</li>
+      <li>Czy każda mutacja jest szkodliwa?</li>
+      <li>Wskaż jedną lekcję, do której wrócisz po swoim wyniku.</li>
+    </ol>
+
+    <details class="answer"><summary>Pokaż pełny klucz z uzasadnieniami</summary>
+      <p><span class="ans-part"><b>1.</b> W jądrze komórkowym (większość) + niewielka ilość w mitochondriach.</span></p>
+      <p><span class="ans-part"><b>2.</b> 46 (2n).</span></p>
+      <p><span class="ans-part"><b>3.</b> 2n (zachowuje liczbę zestawów).</span></p>
+      <p><span class="ans-part"><b>4.</b> Powstawania komórek rozrodczych (redukcji 2n → n) i generowania zmienności genetycznej.</span></p>
+      <p><span class="ans-part"><b>5.</b> Wersja genu (np. A lub a).</span></p>
+      <p><span class="ans-part"><b>6.</b> Zespół obserwowalnych cech organizmu — budowy, właściwości fizjologicznych i mierzalnych.</span></p>
+      <p><span class="ans-part"><b>7.</b> XX — kobieta; XY — mężczyzna (w typowym modelu szkolnym).</span></p>
+      <p><span class="ans-part"><b>8.</b> <strong>Przed</strong> podziałem (w fazie S).</span></p>
+      <p><span class="ans-part"><b>9.</b> <strong>Nie</strong> — może być szkodliwa, neutralna lub (rzadko) korzystna.</span></p>
+      <p><span class="ans-part"><b>10.</b> Zależy od wyniku — patrz tabela interpretacji w sekcji 6. Przykłady: luki w „gdzie jest DNA" → L001 + L011; luki w gametach / płci → L002 + L015 + L018; itd.</span></p>
+    </details>
+  </div>
+</section>
+
+<!-- ================= 22. FISZKI ================= -->
+<section class="section stage-return-block" id="fiszki">
+  <div class="part-heading ret"><span class="part-num">22.</span> Fiszki startowe <span class="level-badge level-return">ETAP 3</span></div>
+
+  <p>Fiszki w formacie <strong>pytanie → odpowiedź</strong>. Dodatkowo kilka fiszek <em>odwróconych</em> — zamiast definicji podajesz pojęcie.</p>
+
+  <div class="flashcard-grid">
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Gdzie znajduje się większość DNA w typowej komórce zwierzęcej?</span>
+      <span class="back"><strong>W jądrze komórkowym; niewielka ilość w mitochondriach.</strong></span>
+      <span class="card-tag tag-basic">start</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Ile chromosomów ma typowa komórka ciała człowieka?</span>
+      <span class="back"><strong>46 chromosomów, czyli 23 pary.</strong></span>
+      <span class="card-tag tag-basic">podstawa</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Ile chromosomów ma gameta człowieka?</span>
+      <span class="back"><strong>23 chromosomy (n) — pojedyncze, nie pary.</strong></span>
+      <span class="card-tag tag-basic">podstawa</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Co to allel?</span>
+      <span class="back"><strong>Jedna z możliwych wersji genu (np. A lub a).</strong></span>
+      <span class="card-tag tag-preview">podgląd</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Co to genotyp?</span>
+      <span class="back"><strong>Zestaw alleli dotyczących jednego genu albo szerzej — wszystkich genów organizmu.</strong></span>
+      <span class="card-tag tag-preview">podgląd</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Co to fenotyp?</span>
+      <span class="back"><strong>Zespół obserwowalnych cech organizmu — budowy, właściwości fizjologicznych i mierzalnych. Zależy od genotypu i często od środowiska.</strong></span>
+      <span class="card-tag tag-preview">podgląd</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Czym różni się mitoza od mejozy?</span>
+      <span class="back"><strong>Mitoza zachowuje liczbę chromosomów (u człowieka typowo 2n → 2n). Mejoza — 2 podziały, zmniejsza liczbę zestawów (2n → n).</strong></span>
+      <span class="card-tag tag-preview">podgląd</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Co to replikacja?</span>
+      <span class="back"><strong>Kopiowanie DNA w fazie S, przed podziałem. Semikonserwatywna. W mejozie jedna replikacja poprzedza dwa podziały.</strong></span>
+      <span class="card-tag tag-preview">podgląd</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Co to mutacja?</span>
+      <span class="back"><strong>Zmiana w materiale genetycznym, która może zostać utrwalona i przekazana komórkom potomnym.</strong></span>
+      <span class="card-tag tag-preview">podgląd</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Kto wnosi chromosom X albo Y w typowym modelu szkolnym?</span>
+      <span class="back"><strong>Plemnik — X (dziewczynka) albo Y (chłopiec). Komórka jajowa zawsze X.</strong></span>
+      <span class="card-tag tag-basic">podstawa</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Czy każda mutacja jest szkodliwa?</span>
+      <span class="back"><strong>Nie — może być szkodliwa, neutralna lub (rzadko) korzystna.</strong></span>
+      <span class="card-tag tag-trap">pułapka</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Po replikacji — ile chromosomów ma komórka człowieka?</span>
+      <span class="back"><strong>Nadal 46 (nie 92). Podwaja się ilość DNA i liczba chromatyd, ale nie liczba chromosomów.</strong></span>
+      <span class="card-tag tag-trap">pułapka</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Wersja genu — jak nazywa się to pojęcie?</span>
+      <span class="back"><strong>Allel.</strong></span>
+      <span class="card-tag tag-preview">odwrócona</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Zestaw obserwowalnych cech organizmu — jak nazywa się to pojęcie?</span>
+      <span class="back"><strong>Fenotyp.</strong></span>
+      <span class="card-tag tag-preview">odwrócona</span>
+    </button>
+    <button class="flashcard" onclick="toggleFlashcard(this)">
+      <span class="front">Proces kopiowania DNA przed podziałem — jak nazywa się to pojęcie?</span>
+      <span class="back"><strong>Replikacja.</strong></span>
+      <span class="card-tag tag-preview">odwrócona</span>
+    </button>
+  </div>
+</section>
+
+<!-- ================= 23. CHECKLISTA ================= -->
+<section class="section stage-return-block" id="checklista">
+  <div class="part-heading ret"><span class="part-num">23.</span> Checklista + system powtórek <span class="level-badge level-return">ETAP 3</span></div>
+
+  <div class="card card-correct">
+    <span class="card-label">Checklista</span>
+    <ul style="list-style:none;padding-left:0;">
+      <li>☐ Zrobiłem mikropunkty startowe 1–3 bez podglądania.</li>
+      <li>☐ Zrobiłem mikropunkty wyprzedzające 4–8 albo świadomie odłożyłem.</li>
+      <li>☐ Policzyłem <strong>dwa osobne</strong> wyniki (startowy i wyprzedzający).</li>
+      <li>☐ Wypełniłem widget autodiagnozy (5 statusów: ○ / ✓ / ? / ✗ / !).</li>
+      <li>☐ Zapisałem luki w tabeli „Moje luki po L003".</li>
+      <li>☐ Wiem, że 23 ≠ 46 (pary vs sztuki).</li>
+      <li>☐ Wiem, że mitoza ≠ mejoza.</li>
+      <li>☐ Wiem, gdzie jest DNA (i wyjątek erytrocytu).</li>
+      <li>☐ Wiem, że po replikacji liczba chromosomów się <strong>nie</strong> podwaja.</li>
+      <li>☐ Fiszki startowe przerobione co najmniej raz.</li>
+      <li>☐ Data powtórki diagnozy po bloku genetyki: ________</li>
+    </ul>
+  </div>
+
+  <h3>System powtórek — diagnoza</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Kiedy</th><th>Co</th></tr></thead>
+      <tbody>
+        <tr><td>Ten sam dzień</td><td>fiszki startowe</td></tr>
+        <tr><td>+2 dni</td><td>pytania, które były błędne</td></tr>
+        <tr><td>+7 dni</td><td>krótka powtórka diagnozy (mikropunkty startowe)</td></tr>
+        <tr><td>Po L013</td><td>wróć do pytań o DNA / 46 / replikację</td></tr>
+        <tr><td>Po L017</td><td>allel, genotyp, fenotyp</td></tr>
+        <tr><td>Po L021</td><td>cała diagnoza (Etap 3) jako „czy blok genetyki siedzi"</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card card-hint">
+    <span class="card-label">Zasada 3 pytań po powtórce</span>
+    <ol>
+      <li>Co już umiem?</li>
+      <li>Co jeszcze mylę?</li>
+      <li>Co mnie zaskoczyło?</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= 24. SŁOWNIK ================= -->
+<section class="section" id="slownik">
+  <div class="part-heading"><span class="part-num">24.</span> Słownik startowy</div>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Termin</th><th>Definicja precyzyjna</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Komórka somatyczna</strong></td><td>komórka ciała niezwiązana bezpośrednio z tworzeniem gamet (np. komórka skóry, mięśnia, wątroby)</td></tr>
+        <tr><td><strong>DNA</strong></td><td>kwas deoksyrybonukleinowy — nośnik informacji genetycznej; u zwierząt większość w jądrze, niewielka część w mitochondriach</td></tr>
+        <tr><td><strong>Gen</strong></td><td>odcinek DNA zawierający informację o produkcie (białku lub RNA); jedna cecha często zależy od wielu genów i środowiska</td></tr>
+        <tr><td><strong>Chromosom</strong></td><td>upakowana forma DNA + białka</td></tr>
+        <tr><td><strong>Kariotyp</strong></td><td>zestaw chromosomów komórki</td></tr>
+        <tr><td><strong>2n</strong></td><td>diploidalna liczba chromosomów (46 u człowieka)</td></tr>
+        <tr><td><strong>n</strong></td><td>haploidalna liczba chromosomów (23 u człowieka)</td></tr>
+        <tr><td><strong>Replikacja</strong></td><td>kopiowanie DNA w fazie S, przed podziałem; semikonserwatywna. W mejozie jedna replikacja poprzedza dwa podziały.</td></tr>
+        <tr><td><strong>Mitoza</strong></td><td>podział, w którym komórki potomne zachowują taką samą liczbę chromosomów jak komórka macierzysta; u człowieka typowo 2n → 2n. Służy wzrostowi i regeneracji.</td></tr>
+        <tr><td><strong>Mejoza</strong></td><td>dwa kolejne podziały, które zmniejszają liczbę zestawów chromosomów z diploidalnej do haploidalnej; u człowieka z 2n prowadzą do komórek n.</td></tr>
+        <tr><td><strong>Allel</strong></td><td>jedna z możliwych wersji genu</td></tr>
+        <tr><td><strong>Genotyp</strong></td><td>zestaw alleli badanego genu albo szerzej — wszystkich genów organizmu</td></tr>
+        <tr><td><strong>Fenotyp</strong></td><td>zespół obserwowalnych cech organizmu (budowy, właściwości fizjologicznych i mierzalnych); zależy od genotypu i często od środowiska</td></tr>
+        <tr><td><strong>Homozygota</strong></td><td>AA lub aa</td></tr>
+        <tr><td><strong>Heterozygota</strong></td><td>Aa</td></tr>
+        <tr><td><strong>Mutacja</strong></td><td>zmiana w materiale genetycznym, która może zostać utrwalona i przekazana komórkom potomnym</td></tr>
+        <tr><td><strong>Mutagen</strong></td><td>czynnik zwiększający częstość mutacji (np. UV, promieniowanie X, chemikalia)</td></tr>
+        <tr><td><strong>Gameta</strong></td><td>komórka rozrodcza (n = 23 u człowieka)</td></tr>
+        <tr><td><strong>Zygota</strong></td><td>komórka po połączeniu gamet (2n = 46 u człowieka)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ================= 25. HISTORIA ================= -->
+<section class="section" id="historia">
+  <div class="part-heading"><span class="part-num">25.</span> Historia genetyki <span class="level-badge level-preview">DLA CHĘTNYCH</span></div>
+
+  <details class="foldout">
+    <summary>Pokaż oś czasu — od Mendla do podwójnej helisy <span class="foldout-note">(materiał nadprogramowy)</span></summary>
+
+    <div class="timeline-widget" id="timelineWidget">
+      <h4>Oś czasu genetyki</h4>
+      <p class="tl-hint">Kliknij punkt na osi, aby zobaczyć opis odkrycia.</p>
+
+      <div class="timeline-axis" id="timelineAxis" role="tablist" aria-label="Oś czasu genetyki">
+        <button class="timeline-point active" data-tl="1865" role="tab" aria-selected="true">
+          <span class="timeline-year">1865</span>
+          <span class="timeline-dot"></span>
+          <span class="timeline-who">Mendel</span>
+        </button>
+        <button class="timeline-point" data-tl="1869" role="tab" aria-selected="false">
+          <span class="timeline-year">1869</span>
+          <span class="timeline-dot"></span>
+          <span class="timeline-who">Miescher</span>
+        </button>
+        <button class="timeline-point" data-tl="1944" role="tab" aria-selected="false">
+          <span class="timeline-year">1944</span>
+          <span class="timeline-dot"></span>
+          <span class="timeline-who">Avery</span>
+        </button>
+        <button class="timeline-point" data-tl="1952" role="tab" aria-selected="false">
+          <span class="timeline-year">1952</span>
+          <span class="timeline-dot"></span>
+          <span class="timeline-who">Franklin</span>
+        </button>
+        <button class="timeline-point" data-tl="1953" role="tab" aria-selected="false">
+          <span class="timeline-year">1953</span>
+          <span class="timeline-dot"></span>
+          <span class="timeline-who">Watson &amp; Crick</span>
+        </button>
+      </div>
+
+      <div class="timeline-info" id="timelineInfo" aria-live="polite">
+        <b>1865 — Gregor Mendel:</b> na podstawie krzyżówek grochu sformułował podstawowe prawa dziedziczenia. Jego praca została doceniona dopiero na początku XX wieku.
+      </div>
+    </div>
+  </details>
+</section>
+
+<!-- ================= 26. JAK SIĘ UCZYĆ ================= -->
+<section class="section" id="jak-sie-uczyc">
+  <div class="part-heading"><span class="part-num">26.</span> Jak się uczyć po diagnozie</div>
+
+  <div class="card card-hint">
+    <span class="card-label">Plan nauki</span>
+    <ol>
+      <li><strong>Zapisz swoje 3 największe luki</strong> — do tabeli „Moje luki".</li>
+      <li><strong>Zaplanuj powtórki</strong> (ten sam dzień, +2 dni, +7 dni, po L013, po L017, po L021).</li>
+      <li><strong>Zacznij od L010</strong> — cechy i zmienność.</li>
+      <li><strong>Wracaj do diagnozy</strong> po każdym bloku (L013, L017, L021).</li>
+    </ol>
+  </div>
+
+  <div class="card card-correct">
+    <span class="card-label">Trzy ścieżki po diagnozie — startowej i wyprzedzającej</span>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Wynik</th><th>Ścieżka</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Startowy 0–1 / 3</strong></td><td>Powtórz L001–L002, potem L010 od zera (wolno)</td></tr>
+          <tr><td><strong>Startowy 2 / 3</strong></td><td>L010 czytaj uważnie, uzupełnij lukę z L001–L002</td></tr>
+          <tr><td><strong>Startowy 3 / 3</strong></td><td>L010 szybkim przeglądem</td></tr>
+          <tr><td><strong>Wyprzedzający 0–1 / 5</strong></td><td>W porządku — to materiał przed tobą. L011 od nukleotydu.</td></tr>
+          <tr><td><strong>Wyprzedzający 2–3 / 5</strong></td><td>L011 czytaj uważnie.</td></tr>
+          <tr><td><strong>Wyprzedzający 4–5 / 5</strong></td><td>Możesz szybciej przez L010–L011, skupić się na L013, L017, L020.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 27. STATUS ================= -->
+<section class="section" id="status">
+  <div class="part-heading"><span class="part-num">27.</span> Status lekcji</div>
+
+  <div class="card card-new">
+    <span class="card-label">Wersja 8.0 — diagnoza w trzech etapach + warstwa wyprzedzająca</span>
+    <p><strong>Wersja 8.0 rozwija materiał v7.0; część treści została uporządkowana i przeniesiona do etapów.</strong></p>
+    <p><strong>Główne zmiany w tej wersji (v8.0):</strong></p>
+    <ul>
+      <li><strong>Trzy etapy diagnozy</strong> wyraźnie oznaczone:
+        <ul>
+          <li><b>Etap 1 — Diagnoza właściwa (start):</b> 8 mikropunktów — tylko to, co mogłeś poznać wcześniej.</li>
+          <li><b>Etap 2 — Strefa podglądu:</b> pytania wyprzedzające z L011–L020; granice wnioskowania; język precyzyjny.</li>
+          <li><b>Etap 3 — Powrót po L021:</b> ćwiczenia, test, fiszki, checklista — do zrobienia po ukończeniu bloku.</li>
+        </ul>
+      </li>
+      <li><strong>5. status autodiagnozy</strong> — dodano <b>○ Jeszcze nie było</b>, żeby uczeń nie mylił „nie było jeszcze materiału" z „nie umiem".</li>
+      <li><strong>8 mikropunktów</strong> zamiast 5 pytań — z rozdzieleniem na <b>startowe (1–3)</b> i <b>wyprzedzające (4–8)</b>. Punktacja rozdzielona na dwie skale.</li>
+      <li><strong>Nowe pytanie 3 (startowe)</strong> — o <em>różnicę między komórką skóry a plemnikiem (46 vs 23)</em> zamiast definiowania mitozy i mejozy. Łatwiej wykrywa intuicję, nie wymaga znajomości nieomówionych procesów.</li>
+      <li><strong>Rozbudowana Klinika K8–K13</strong>:
+        <ul>
+          <li>K8 — „Po replikacji 92 chromosomy" (kluczowa pułapka).</li>
+          <li>K9 — „Gameta ma 23 pary".</li>
+          <li>K10 — „Dominujący znaczy częsty/silniejszy".</li>
+          <li>K11 — „Recesywny znaczy niewidoczny".</li>
+          <li>K12 — „Bliźnięta jednojajowe zawsze identyczne".</li>
+          <li>K13 — „Dziedziczne = obecne od urodzenia" (przygotowanie do L010).</li>
+        </ul>
+      </li>
+      <li><strong>Doprecyzowania biologiczne:</strong> definicje genotypu (zestaw alleli <em>badanego genu</em>), fenotypu (nie tylko „wygląd", ale też fizjologia i cechy mierzalne), replikacji (tylko w fazie S, jedna w mejozie przed dwoma podziałami), erytrocytu (bez jądra <em>i mitochondriów</em> — dlatego bez DNA; krew nadal do badania DNA przez leukocyty).</li>
+      <li><strong>Ramka XX/XY</strong> w jednym miejscu (sekcja 10) zamiast rozproszonej po tekście.</li>
+      <li><strong>Sekcja o ABO i RhD</strong> oznaczona jako „Nie jest potrzebne przed L010. Wróć po L019". Uzupełnione o pełniejszy opis konfliktu RhD.</li>
+      <li><strong>Ćwiczenia poprawione:</strong>
+        <ul>
+          <li>A3 — tabela zamiast pojedynczego przyporządkowania (unikamy „mitoza = wzrost").</li>
+          <li>B9 — przeformułowane (choroby rodzinne ≠ pewność zachorowania).</li>
+          <li>C3 — o otrzymywaniu zestawu alleli zamiast „grup krwi".</li>
+        </ul>
+      </li>
+      <li><strong>Wizualizacje relacji:</strong>
+        <ul>
+          <li><b>46/23 karta</b> — obok siebie typowa komórka ciała i gameta + przełącznik „Pokaż pary chromosomów".</li>
+          <li><b>Drabina komórka → jądro → chromosom → DNA → gen</b> — interaktywne kliknięcia.</li>
+          <li><b>Mitoza / mejoza ścieżki</b> — dwie kolumny + przycisk „Dlaczego?".</li>
+          <li><b>Pewne / możliwe / niemożliwe / brakuje danych</b> — 4 zadania z przyciskami i wyjaśnieniem.</li>
+        </ul>
+      </li>
+      <li><strong>Pasek postępu 5-etapowy</strong> — Odpowiadam → Sprawdzam → Oznaczam luki → Ćwiczę → Wracam później.</li>
+      <li><strong>Tryby widoku</strong> — Etap 1 / Etap 1+2 / Etap 3 (powrót).</li>
+      <li><strong>Język mniej oceniający:</strong>
+        <ul>
+          <li>„samooszukiwanie" → „uczciwa informacja, która pomaga zaplanować naukę".</li>
+          <li>„Błąd teraz = zysk później" → „Błąd w diagnozie jest wskazówką".</li>
+        </ul>
+      </li>
+      <li><strong>Ujednolicone słownictwo</strong> — komórka somatyczna / komórka ciała z jednorazowym wyjaśnieniem w słowniku.</li>
+      <li><strong>Spis treści</strong> pokazuje etapy kolorystycznie (zielony = start, cyan = podgląd, fiolet = powrót).</li>
+      <li><strong>Status</strong> — pełna lista zmian (ta sekcja).</li>
+    </ul>
+    <p><strong>Zachowane z v7.0:</strong> pytania 1–5, dodatkowe 6–8, ambitne 9–14 (przenumerowane jako podgląd), interpretacja wyniku, Klinika K1–K7, ściąga startowa, mini-diagnoza, ćwiczenia A–E, test końcowy, checklista, system powtórek, słownik, timeline.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <p><strong>BIOLOGIA L003 v8.0</strong> · Diagnoza startowa genetyki w trzech etapach · autodiagnoza 5-statusowa · 2026</p>
+  <p style="font-size:0.78rem;opacity:0.7;">To nie jest ocena — to mapa twoich luk i okno na to, co przed tobą.</p>
+</footer>
+
+</div>
+
+<!-- ================= STICKY NAV ================= -->
+<div class="sticky-nav">
+  <a href="#topPanel">Start</a>
+  <a href="#etap1">Etap 1</a>
+  <a href="#mikropunkty">8 mikropunktów</a>
+  <a href="#klucz">Klucz</a>
+  <a href="#autodiagnoza">Autodiagnoza</a>
+  <a href="#etap2">Etap 2</a>
+  <a href="#wnioskowanie">Wnioskowanie</a>
+  <a href="#klinika">Klinika</a>
+  <a href="#viz-46-23">46/23</a>
+  <a href="#moje-luki">Moje luki</a>
+  <a href="#etap3">Etap 3</a>
+</div>
+
+<script>
+/* =========================================================
+   PODSTAWOWE
+   ========================================================= */
+function toggleFlashcard(card){card.classList.toggle('flipped');}
+
+document.querySelectorAll('.mode-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const mode = btn.dataset.mode;
+    document.body.classList.remove('mode-core','mode-preview','mode-return');
+    if(mode === 'core') document.body.classList.add('mode-core');
+    else if(mode === 'preview') document.body.classList.add('mode-preview');
+    else document.body.classList.add('mode-return');
+  });
+});
+
+/* =========================================================
+   TIMELINE — historia genetyki
+   ========================================================= */
+(function(){
+  const data = {
+    '1865': '<b>1865 — Gregor Mendel:</b> na podstawie krzyżówek grochu sformułował podstawowe prawa dziedziczenia. Jego praca została doceniona dopiero na początku XX wieku.',
+    '1869': '<b>1869 — Friedrich Miescher:</b> wyizolował z jąder komórkowych substancję bogatą w fosfor. Nazwał ją „nukleiną". Nie wiedział jeszcze, że to nośnik informacji genetycznej.',
+    '1944': '<b>1944 — Oswald Avery, Colin MacLeod, Maclyn McCarty:</b> pokazali, że to właśnie DNA (a nie białko) przenosi informację genetyczną. Wcześniej sądzono, że białka są ważniejsze.',
+    '1952': '<b>1952 — Rosalind Franklin i Maurice Wilkins:</b> wykonali zdjęcia rentgenowskie DNA. Słynne „Zdjęcie 51" pokazało charakterystyczny wzór spiralny — dane kluczowe dla modelu helisy.',
+    '1953': '<b>1953 — James Watson i Francis Crick:</b> opublikowali w „Nature" model podwójnej helisy. Ten model wyjaśniał regułę Chargaffa i sugerował mechanizm kopiowania DNA. W 1962 r. Watson, Crick i Wilkins otrzymali Nagrodę Nobla; Rosalind Franklin zmarła w 1958 r. i nie mogła jej otrzymać.'
+  };
+  document.querySelectorAll('#timelineAxis .timeline-point').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#timelineAxis .timeline-point').forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+      document.getElementById('timelineInfo').innerHTML = data[btn.dataset.tl];
+    });
+  });
+})();
+
+/* =========================================================
+   WIDGET: MOJA AUTODIAGNOZA (5 STATUSÓW)
+   ========================================================= */
+(function(){
+  const items = [
+    {id: 'dna',   label: 'DNA i miejsce występowania (jądro + mtDNA)', stage: 'start'},
+    {id: '46-23', label: '46 i 23 chromosomy (2n vs n)', stage: 'start'},
+    {id: 'allel', label: 'Allel, genotyp, fenotyp', stage: 'preview'},
+    {id: 'mit',   label: 'Mitoza vs mejoza', stage: 'preview'},
+    {id: 'repl',  label: 'Replikacja (kopiowanie DNA przed podziałem)', stage: 'preview'},
+    {id: 'xx',    label: 'XX / XY (model szkolny)', stage: 'preview'},
+    {id: 'mut',   label: 'Mutacje (nie zawsze szkodliwe)', stage: 'preview'},
+    {id: 'pk',    label: 'Grupy krwi ABO (0 = ii, nie „brak genów")', stage: 'preview'},
+    {id: 'rh',    label: 'RhD / Rh− (brak antygenu D, nie choroba)', stage: 'preview'},
+    {id: 'hla',   label: 'HLA ≠ ABO/RhD (inne komórki, przeszczepy)', stage: 'preview'}
+  ];
+  const storageKey = 'bio_L003_status_v2';
+  let state = {};
+  try { state = JSON.parse(localStorage.getItem(storageKey) || '{}'); } catch(e) { state = {}; }
+
+  const list = document.getElementById('statusList');
+  const summary = document.getElementById('statusSummary');
+  const statuses = [
+    {key: 'none', label: '○', title: 'Jeszcze nie było — nie jest luką'},
+    {key: 'ok',   label: '✓', title: 'Umiem wyjaśnić własnymi słowami'},
+    {key: '?',    label: '?', title: 'Kojarzę, ale nie potrafię wyjaśnić'},
+    {key: 'x',    label: '✗', title: 'Nie rozumiem mimo nauki'},
+    {key: '!',    label: '!', title: 'Mylę podobne pojęcia / pułapka'}
+  ];
+
+  items.forEach(it => {
+    const row = document.createElement('div');
+    row.className = 'status-item';
+    const stageBadge = it.stage === 'start'
+      ? '<span class="chip" style="background:#d4edda;color:#155724;margin-left:6px;">start</span>'
+      : '<span class="chip" style="background:#cffafe;color:#155e75;margin-left:6px;">podgląd</span>';
+    row.innerHTML = `<div class="s-label">${it.label}${stageBadge}</div><div class="s-buttons"></div>`;
+    const btns = row.querySelector('.s-buttons');
+    statuses.forEach(s => {
+      const b = document.createElement('button');
+      b.className = 's-btn';
+      b.dataset.status = s.key;
+      b.title = s.title;
+      b.textContent = s.label;
+      if(state[it.id] === s.key) b.classList.add('active');
+      b.addEventListener('click', () => {
+        btns.querySelectorAll('.s-btn').forEach(x => x.classList.remove('active'));
+        b.classList.add('active');
+        state[it.id] = s.key;
+        try { localStorage.setItem(storageKey, JSON.stringify(state)); } catch(e){}
+        updateSummary();
+      });
+      btns.appendChild(b);
+    });
+    list.appendChild(row);
+  });
+
+  function updateSummary(){
+    const counts = {none:0, ok:0, '?':0, x:0, '!':0};
+    let done = 0;
+    items.forEach(it => {
+      const v = state[it.id];
+      if(v && counts[v] !== undefined){ counts[v]++; done++; }
+    });
+    if(done === 0){
+      summary.innerHTML = 'Zaznacz statusy powyżej — zobaczysz podsumowanie i wskazówki.';
+      return;
+    }
+    const parts = [];
+    if(counts.none) parts.push(`<strong style="color:#475569;">○ ${counts.none}</strong> jeszcze nie było`);
+    if(counts.ok) parts.push(`<strong style="color:#166534;">✓ ${counts.ok}</strong> umiem`);
+    if(counts['?']) parts.push(`<strong style="color:#78350f;">? ${counts['?']}</strong> kojarzę`);
+    if(counts.x) parts.push(`<strong style="color:#991b1b;">✗ ${counts.x}</strong> nie rozumiem`);
+    if(counts['!']) parts.push(`<strong style="color:#5b21b6;">! ${counts['!']}</strong> mylę podobne`);
+    summary.innerHTML = `Podsumowanie (${done} z ${items.length}): ${parts.join(' · ')}.
+      <br><span style="font-size:0.82rem;"><strong>○</strong> nie jest luką — to materiał przed tobą. Luki do powtórki: <strong>?</strong>, <strong>✗</strong>, <strong>!</strong>.</span>`;
+  }
+  updateSummary();
+})();
+
+/* =========================================================
+   DRABINA DNA → CHROMOSOM → JĄDRO → GEN
+   ========================================================= */
+(function(){
+  const data = {
+    cell: '<b>Komórka:</b> najmniejsza podstawowa jednostka budowy i funkcjonowania organizmów. Zawiera m.in. jądro komórkowe (u eukariontów). Jest <em>największym</em> elementem tej drabiny.',
+    nucleus: '<b>Jądro komórkowe:</b> struktura otoczona błoną; zawiera większość DNA komórki. <em>Mniejsze</em> niż komórka, ale <em>większe</em> niż chromosom.',
+    chromosome: '<b>Chromosom:</b> upakowana forma DNA z białkami (histonami). W komórce ciała człowieka jest 46 chromosomów, czyli 23 pary.',
+    dna: '<b>DNA:</b> kwas deoksyrybonukleinowy — nośnik informacji genetycznej. Zbudowany z nukleotydów; ma kształt podwójnej helisy. <em>Mniejsze</em> niż chromosom, ale zawiera geny.',
+    gene: '<b>Gen:</b> odcinek DNA zawierający informację o jednym produkcie (białku lub RNA). <strong>Uwaga:</strong> gen jest fragmentem DNA, ale <em>nie każde DNA jest genem</em> — są też regiony niekodujące.'
+  };
+  document.querySelectorAll('#ladderWidget .lstep').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#ladderWidget .lstep').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('ladderInfo').innerHTML = data[btn.dataset.step];
+    });
+  });
+})();
+
+/* =========================================================
+   WIDGET PEWNE / MOŻLIWE / NIEMOŻLIWE
+   ========================================================= */
+(function(){
+  const answers = {
+    c1: 'mozliwe',
+    c2: 'niemozliwe',
+    c3: 'niemozliwe',
+    c4: 'brak'
+  };
+  document.querySelectorAll('.conf-item').forEach(item => {
+    const id = item.dataset.id;
+    const btns = item.querySelectorAll('.conf-btn');
+    const explain = item.querySelector('.conf-explain');
+    btns.forEach(b => {
+      b.addEventListener('click', () => {
+        btns.forEach(x => x.classList.remove('active'));
+        b.classList.add('active');
+        // pokaż wyjaśnienie zawsze (nie tylko po trafieniu — uczymy, nie testujemy)
+        explain.classList.add('show');
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>

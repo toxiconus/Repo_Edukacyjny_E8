@@ -1,0 +1,641 @@
+---
+kod: PL.G01
+przedmiot: język polski
+blok: G — gramatyka i składnia
+tytul: Rzeczownik — znaczenie, kategorie gramatyczne, odmiana i funkcje
+wersja: 3.1
+stan: W1 FULL — Perplexity (ULEPSZ --olimpiada), 2026-10-11; wcześniej W1 GPT-6, 2026-10-09; scalenie i sprawdzenie Claude
+poziom: szkoła podstawowa, klasy 7–8; rozszerzenie konkursowe oznaczone osobno
+powiazania: G02 czasownik; G03 przymiotnik; G04 liczebnik; G05 zaimek; G06 imiesłowy; G12 części zdania; G13 związki wyrazowe; G14 zdanie pojedyncze; L005 Kajko i Kokosz
+---
+
+# G01 | Rzeczownik
+
+## Jak pracować z lekcją
+
+To pełna lekcja do nauki i powtórki, nie tylko notatka. Najpierw przeczytaj objaśnienia i przykłady, następnie rozwiązuj zadania bez zaglądania do klucza. Przy każdym trudniejszym wyrazie uzasadnij odpowiedź: samo zadanie pytania „kto? co?” nie zawsze wystarcza do rozpoznania części mowy. Zadania oznaczone **KONKURS** są trudniejsze niż typowe minimum szkolne.
+
+## 1 | Cele i kryteria sukcesu
+
+Po lekcji potrafisz:
+
+1. wyjaśnić, czym jest rzeczownik, i rozpoznać go w zdaniu oraz w dłuższym tekście;
+2. odróżnić rzeczowniki konkretne i abstrakcyjne, własne i pospolite, osobowe i nieosobowe oraz wskazać rzeczowniki zbiorowe i odczasownikowe;
+3. określić liczbę, rodzaj i przypadek tam, gdzie dana kategoria ma zastosowanie;
+4. odmienić rzeczownik przez siedem przypadków i poprawnie użyć go w zdaniu;
+5. rozumieć różnicę między rodzajem gramatycznym a płcią lub rzeczywistą żywotnością;
+6. rozpoznać typowe wzorce biernika rzeczowników rodzaju męskiego;
+7. wyjaśnić, dlaczego niektóre rzeczowniki występują tylko w liczbie mnogiej;
+8. zapisać poprawnie nazwy własne i „nie” z rzeczownikami w typowych konstrukcjach;
+9. odróżnić rzeczownik odczasownikowy od czasownika i imiesłowu;
+10. określić funkcję rzeczownika w zdaniu, nie myląc części mowy z częścią zdania;
+11. skorygować błędy i uzasadnić korektę.
+
+**Sprawdź się na końcu:** wynik co najmniej 80% w teście i umiejętność uzasadnienia odpowiedzi własnymi słowami oznaczają, że możesz przejść do kolejnej lekcji. To próg treningowy, nie oficjalna skala egzaminacyjna.
+
+## 2 | Wykład — rzeczownik od podstaw
+
+Rzeczownik jest jedną z podstawowych części mowy. Jego najważniejsze zadanie to **nazywanie**: osób, zwierząt, przedmiotów, miejsc, zjawisk, uczuć, cech, czynności oraz pojęć. Dlatego rzeczownikiem jest nie tylko *stół* albo *pies*, lecz także *odwaga*, *burza*, *czytanie* czy *sprawiedliwość*.
+
+W szkole najczęściej zaczynamy od pytania **kto? co?**. To dobre pytanie pomocnicze, ale nie wystarcza jako jedyny test. Wyraz *czyta* odpowiada na pytanie „co robi?”, a *czytanie* — na pytanie „co?”. Pierwszy wyraz jest czasownikiem, drugi — rzeczownikiem odczasownikowym. Podobnie *ktoś* odpowiada na pytanie „kto?”, ale jest zaimkiem, nie rzeczownikiem.
+
+Rzeczownik jest częścią mowy **odmienną**. Oznacza to, że jego forma zmienia się zależnie od przypadku i liczby: *uczeń — ucznia — uczniowi — uczniem*, a także *uczeń — uczniowie*. Rzeczownik ma również rodzaj gramatyczny: w liczbie pojedynczej męski, żeński albo nijaki. Rodzaj jest zwykle stały: *ten stół*, *ta noc*, *to okno*.
+
+Odmiana przez przypadki pozwala językowi pokazać relacje między wyrazami. W zdaniu *Uczeń czyta książkę* forma *uczeń* wskazuje wykonawcę czynności, a *książkę* — obiekt czynności. Gdy zmienimy konstrukcję na *Nie ma ucznia*, forma *ucznia* pokazuje dopełniacz. Znaczenie zdania zależy więc nie tylko od samych wyrazów, lecz także od ich form gramatycznych.
+
+Rzeczownik może pełnić różne funkcje w zdaniu. Najczęściej jest podmiotem albo dopełnieniem, ale może być też przydawką, orzecznikiem w orzeczeniu imiennym lub występować w wołaczu. Dlatego należy zawsze rozróżniać dwa poziomy opisu: **część mowy** odpowiada na pytanie „jakim wyrazem jest dana forma?”, a **część zdania** — na pytanie „jaką rolę pełni w konstrukcji?”.
+
+::: karta understand | W skrócie — trzy testy rzeczownika
+Rzeczownik rozpoznajesz, sprawdzając trzy rzeczy. Po pierwsze, czy nazywa osobę, zwierzę, przedmiot, miejsce, zjawisko, cechę, czynność lub pojęcie. Po drugie, czy odmienia się przez przypadki i liczby, np. *książka — książki — książce*. Po trzecie, czy w zdaniu może pełnić funkcję typową dla rzeczownika, np. podmiotu lub dopełnienia. Samo pytanie „kto? co?” bywa pomocne, ale nie rozstrzyga wszystkiego: *ktoś* jest zaimkiem, a *czytanie* — rzeczownikiem, choć oba można powiązać z pytaniami rzeczownikowymi.
+:::
+
+## 3 | Definicja i zakres znaczeniowy
+
+**Rzeczownik** to odmienna część mowy, która nazywa między innymi osoby, zwierzęta, przedmioty, miejsca, zjawiska, uczucia, cechy, czynności i pojęcia. Typowe pytania rzeczownika to **kto? co?**: *kto? uczennica; co? zeszyt; co? burza; co? radość; co? czytanie*.
+
+Rzeczownik nie musi oznaczać przedmiotu, który można zobaczyć lub dotknąć. *Odwaga, pamięć, sprawiedliwość, hałas, spotkanie* także są rzeczownikami. Z kolei samo znaczenie wyrazu nie wystarcza do ustalenia jego części mowy: o rozpoznaniu decydują także forma gramatyczna i funkcja w zdaniu.
+
+### 3.1. Praktyczne grupy rzeczowników
+
+| Grupa | Co nazywa? | Przykłady | Uwaga |
+|---|---|---|---|
+| konkretne | osoby, zwierzęta, przedmioty i inne byty ujmowane jako konkretne | *dziecko, pies, stół, telefon* | „Konkretne” nie znaczy zawsze „można dotknąć”; klasyfikacja szkolna bywa uproszczona. |
+| abstrakcyjne | cechy, stany, uczucia, pojęcia, zjawiska ujmowane abstrakcyjnie | *odwaga, smutek, wolność, wiedza* | Często nie mają jednej materialnej postaci. |
+| własne | indywidualnie nazywają osobę, miejsce, instytucję, utwór itp. | *Jan, Wisła, Kraków, „Akademia pana Kleksa”* | Pisownia zależy od typu nazwy i aktualnych zasad ortograficznych. |
+| pospolite | nazywają klasę osób, przedmiotów lub zjawisk | *chłopiec, rzeka, miasto, książka* | Zwykle zapis małą literą, chyba że wymaga jej początek zdania. |
+| osobowe | nazywają osoby | *lekarka, uczeń, przyjaciel* | „Osobowy” to kategoria znaczeniowa, nie osobny rodzaj gramatyczny. |
+| zbiorowe | nazywają zbiór ujmowany jako całość | *młodzież, rodzeństwo, stado, publiczność* | Nie każdy rzeczownik oznaczający wiele osób jest rzeczownikiem zbiorowym. |
+| odczasownikowe | nazywają czynność, proces lub rezultat i są utworzone od czasownika | *czytanie, bieganie, pisanie, odkrycie* | Są rzeczownikami, mimo że znaczeniowo wiążą się z czynnością. |
+
+Podział na rzeczowniki konkretne i abstrakcyjne jest przydatny, ale nie zawsze mechaniczny. W razie wątpliwości wyjaśnij, jak rozumiesz nazwę w danym kontekście.
+
+::: karta understand | W skrócie — rzeczowniki zbiorowe
+Rzeczownik zbiorowy nazywa wiele osób, zwierząt lub rzeczy jako jedną całość. *Młodzież*, *rodzeństwo*, *stado* i *publiczność* są zbiorowe, ponieważ nie liczymy ich tak samo jak *uczniów*, *braci i sióstr*, *psów* albo *widzów*. Dlatego *młodzież* ma formę liczby pojedynczej, choć oznacza wiele osób: *Młodzież rozmawiała*. Nie jest natomiast zbiorowy rzeczownik *uczniowie*, ponieważ jest zwykłą formą liczby mnogiej rzeczownika *uczeń*.
+:::
+
+## 4 | Jak rozpoznawać rzeczownik — procedura
+
+1. **Przeczytaj całe zdanie.** Nie klasyfikuj wyrazu w oderwaniu od kontekstu, jeśli może mieć różne użycia.
+2. **Sprawdź znaczenie:** czy wyraz nazywa osobę, rzecz, miejsce, zjawisko, cechę, stan, czynność lub pojęcie?
+3. **Zadaj pytanie „kto?” lub „co?”** do wyrazu w jego formie zdaniowej, np. *Czego brakuje? — cierpliwości*.
+4. **Sprawdź odmianę przez przypadki:** *książka, książki, książce, książkę…*. To mocna wskazówka, ale nie jedyny test.
+5. **Ustal, czy wyraz nie jest inną częścią mowy.** *Czyta* jest czasownikiem, *czytający* może być imiesłowem, a *czytanie* — rzeczownikiem odczasownikowym.
+6. **Sprawdź funkcję w zdaniu osobno.** Rzeczownik może być podmiotem, dopełnieniem, przydawką lub inną częścią zdania. Część mowy i część zdania to dwa różne opisy.
+
+### Porównaj
+
+- *Czytam ciekawą książkę.* — **czytam**: czasownik; **książkę**: rzeczownik.
+- *Czytanie książek rozwija wyobraźnię.* — **czytanie**: rzeczownik odczasownikowy; **książek**: rzeczownik.
+- *Czytający uczeń robi notatki.* — **czytający**: imiesłów przymiotnikowy czynny; **uczeń**: rzeczownik.
+- *To było niezwykłe przeżycie.* — **przeżycie**: rzeczownik, choć nazywa zdarzenie/doświadczenie.
+- *Przeżył trudną przygodę.* — **przeżył**: czasownik.
+
+**Uwaga:** wyrazy *ktoś, coś, nic, nikt* to zaimki, a nie rzeczowniki, mimo że mogą zajmować podobne miejsce w zdaniu. Wypowiedzenie *Ktoś zapukał* nie zawiera rzeczownika w roli podmiotu — podmiotem jest zaimek.
+
+## 5 | Rodzaj gramatyczny
+
+W liczbie pojedynczej rzeczowniki mają rodzaj **męski, żeński albo nijaki**. Rodzaj jest kategorią gramatyczną, a nie prostym opisem biologicznej płci.
+
+| Rodzaj | Typowe przykłady | Pomocna wskazówka |
+|---|---|---|
+| męski | *stół, uczeń, pies, tata* | często kończy się spółgłoską, ale są wyjątki, np. *mężczyzna* |
+| żeński | *książka, noc, przyjaźń, pani* | często kończy się na *-a*, ale nie zawsze |
+| nijaki | *dziecko, okno, morze, czytanie* | często kończy się na *-o, -e, -ę*, ale nie wolno polegać wyłącznie na końcówce |
+
+Rodzaj najlepiej sprawdzać w zgodzie gramatycznej: *ten stół, ta noc, to okno*. Nie każda końcówka jednoznacznie wskazuje rodzaj: *mężczyzna* jest rodzaju męskiego, a *noc* — żeńskiego.
+
+### 5.1. Rodzaj w liczbie mnogiej
+
+W liczbie mnogiej istotne jest rozróżnienie **męskoosobowe** i **niemęskoosobowe**, widoczne m.in. w zgodzie gramatycznej:
+
+- *ci uczniowie przyszli* — rodzaj męskoosobowy;
+- *te uczennice przyszły, te psy biegły, te okna stały* — rodzaj niemęskoosobowy.
+
+Nie należy mechanicznie przenosić trzech rodzajów liczby pojedynczej na każdą formę liczby mnogiej. Rzeczowniki występujące tylko w liczbie mnogiej (np. *drzwi, nożyczki*) wymagają opisu zgodnego z ich użyciem w liczbie mnogiej.
+
+::: karta understand | W skrócie — jak sprawdzić rodzaj
+Najpewniejszym testem rodzaju jest połączenie rzeczownika z wyrazem wskazującym: *ten/ta/to*. Powiedz: *ten pies*, *ta noc*, *to dziecko*. W liczbie mnogiej sprawdź zgodę z czasownikiem lub zaimkiem: *ci chłopcy przyszli*, ale *te dziewczyny przyszły*, *te psy biegły*. Rodzaj gramatyczny nie musi odpowiadać płci: *mężczyzna* jest rodzaju męskiego, choć kończy się na *-a*, a *dziewczę* — rodzaju nijakiego.
+:::
+
+## 6 | Liczba pojedyncza i mnoga
+
+Większość rzeczowników ma dwie liczby: *uczeń — uczniowie; książka — książki; dziecko — dzieci*. Nie zawsze forma liczby mnogiej jest tworzona przez prostą zmianę końcówki.
+
+### 6.1. Rzeczowniki występujące tylko w liczbie pojedynczej
+
+Niektóre rzeczowniki w typowym znaczeniu nie mają zwykłej liczby mnogiej, np. *młodzież, odzież, mąka, powietrze, dobroć*. W użyciu przenośnym, specjalistycznym albo przy innym znaczeniu mogą pojawiać się odstępstwa; w zadaniu szkolnym kieruj się konkretnym kontekstem.
+
+### 6.2. Rzeczowniki występujące tylko w liczbie mnogiej
+
+Przykłady: *drzwi, nożyczki, skrzypce, spodnie, urodziny*. W standardowym znaczeniu nie używamy ich jako zwykłych rzeczowników liczby pojedynczej. Dlatego mówimy: *te drzwi są otwarte*, nie: *te drzwi jest otwarte*.
+
+### 6.3. Dawna liczba podwójna
+
+W polszczyźnie pozostały ślady dawnej liczby podwójnej, np. w odmianie wyrazów *oko, ucho, ręka*: *oczy, uszy, ręce*. To przydatna ciekawostka językowa, ale nie należy na tej podstawie uznawać, że współczesny polski ma produktywną, osobną liczbę podwójną.
+
+::: karta extra | Dlaczego mówimy „oczy”, a nie „oki”?
+Formy *oczy, uszy, ręce* zachowały ślady dawnej liczby podwójnej, używanej kiedyś do nazywania dokładnie dwóch obiektów. Współczesna polszczyzna ma już liczby pojedynczą i mnogą, ale dawne formy przetrwały w niektórych rzeczownikach. (źródło: zpe.gov.pl)
+:::
+
+::: karta extra | Rzeczowniki tylko mnogie
+Wyrazy *drzwi, nożyczki, spodnie, skrzypce* i *urodziny* w standardowym znaczeniu nie mają liczby pojedynczej. Mówimy *jedne drzwi*, *jedne nożyczki*, *jedne spodnie* — także o jednym przedmiocie używamy form liczby mnogiej, a formy „jedna nożyczka” czy „drzwia” nie istnieją w standardowym znaczeniu. (źródło: zpe.gov.pl)
+:::
+
+## 7 | Przypadki — pytania i funkcje
+
+Rzeczownik odmienia się przez **siedem przypadków**. Pytania pomagają, ale trzeba uwzględniać przyimek i sens zdania.
+
+| Przypadek | Pytania pomocnicze | Przykład w zdaniu |
+|---|---|---|
+| Mianownik (M.) | kto? co? | **Uczeń** czyta. |
+| Dopełniacz (D.) | kogo? czego? | Nie ma **ucznia**. |
+| Celownik (C.) | komu? czemu? | Przyglądam się **uczniowi**. |
+| Biernik (B.) | kogo? co? | Widzę **ucznia** i **książkę**. |
+| Narzędnik (N.) | z kim? z czym? | Idę z **uczniem**. |
+| Miejscownik (Ms.) | o kim? o czym? | Rozmawiam o **uczniu**. |
+| Wołacz (W.) | o! — forma zwrotu | **Uczniu**, posłuchaj! |
+
+### 7.1. Pełna odmiana wzorcowa
+
+| Przypadek | *uczeń* | *książka* | *dziecko* |
+|---|---|---|---|
+| M. | uczeń | książka | dziecko |
+| D. | ucznia | książki | dziecka |
+| C. | uczniowi | książce | dziecku |
+| B. | ucznia | książkę | dziecko |
+| N. | uczniem | książką | dzieckiem |
+| Ms. | uczniu | książce | dziecku |
+| W. | uczniu! | książko! | dziecko! |
+
+To tabela przykładowa, nie uniwersalny wzór dla każdego rzeczownika. Odmiana może być nieregularna lub mieć oboczne formy. Wołacz istnieje w systemie języka, lecz w codziennej polszczyźnie bywa zastępowany mianownikiem w niektórych zwrotach; w starannych zwrotach bezpośrednich warto znać formę poprawną.
+
+### 7.2. Jak ustalić przypadek
+
+1. Odczytaj całe zdanie.
+2. Znajdź wyraz nadrzędny lub przyimek, który wpływa na formę rzeczownika.
+3. Zadaj właściwe pytanie do rzeczownika w tym zdaniu.
+4. Sprawdź końcówkę i zgodność z konstrukcją.
+5. Jeśli możliwe są różne interpretacje, uzasadnij wybór kontekstem.
+
+Przykład: *Przyglądam się mapie.* — *przyglądać się komu? czemu?* → celownik; *mapie* jest formą celownika. Nie wystarczy zapamiętać, że końcówka *-e* zawsze oznacza jeden przypadek — ta sama lub podobna końcówka może występować w różnych formach.
+
+::: karta understand | W skrócie — przypadek ustala zdanie
+Nie pytaj najpierw: „Jaka jest końcówka?”. Zapytaj raczej: „Jakiego przypadka wymaga czasownik lub przyimek?”. W zdaniu *Boję się psa* czasownik *bać się* łączy się z dopełniaczem, więc *psa* jest w dopełniaczu. W zdaniu *Widzę psa* czasownik *widzieć* wymaga biernika, więc *psa* jest w bierniku. Forma jest ta sama, ale przypadek — inny.
+:::
+
+## 8 | Żywotność i biernik — ważne rozróżnienie
+
+W rodzaju męskim w liczbie pojedynczej żywotność często wpływa na formę biernika:
+
+- rzeczownik męski **żywotny**: biernik ma zwykle formę taką jak dopełniacz — *widzę psa, kota, ucznia*;
+- rzeczownik męski **nieżywotny**: biernik ma zwykle formę taką jak mianownik — *widzę stół, dom, miecz*.
+
+To reguła przydatna w szkole, ale należy mówić precyzyjnie: dotyczy typowego wzorca rzeczowników rodzaju męskiego w liczbie pojedynczej. W liczbie mnogiej, przy nazwach zwierząt użytych żartobliwie lub personifikująco i w konstrukcjach specjalnych mogą wystąpić inne formy. Przykładowo w liczbie mnogiej spotykamy *widzę psy* oraz *widzę uczniów*.
+
+**Żywotność gramatyczna nie zawsze pokrywa się z biologiczną.** O formie decyduje także zwyczaj językowy i sposób użycia. Nie klasyfikuj wyrazu wyłącznie na podstawie tego, czy jego desygnat żyje.
+
+::: karta warning | Pułapka: żywotność to nie to samo co życie
+Rzeczownik *kartofel* oznacza roślinę, ale w typowym użyciu ma biernik równy dopełniaczowi: *widzę kartofla*. Z kolei *samochód* nie żyje, a jednak ma biernik równy mianownikowi: *widzę samochód*. O formie decyduje gramatyczna tradycja języka, a nie to, czy obiekt oddycha albo się porusza.
+:::
+
+## 9 | Odmiana i typowe trudności
+
+### 9.1. Temat i końcówka
+
+W odmianie rzeczownika może zmieniać się końcówka, temat lub oba elementy: *pies — psa; ręka — ręce; człowiek — ludzie*. Nie wszystkie formy da się utworzyć przez dodanie jednej końcówki. Dlatego w wątpliwych przypadkach sprawdzaj formę w słowniku lub wiarygodnym źródle językowym.
+
+### 9.2. Rzeczowniki nieodmienne
+
+W polszczyźnie występują rzeczowniki, których forma nie zmienia się w przypadkach, np. część zapożyczeń i nazw własnych. Brak widocznej zmiany formy nie oznacza, że wyraz przestaje pełnić funkcję rzeczownika. Przypadek można wtedy rozpoznać z konstrukcji składniowej.
+
+### 9.3. Rzeczowniki z nietypową liczbą
+
+*Drzwi* i *nożyczki* mają formę liczby mnogiej; *młodzież* jest zwykle rzeczownikiem w liczbie pojedynczej, mimo że oznacza wiele osób. Liczba gramatyczna nie jest prostym liczeniem obiektów.
+
+## 10 | Rzeczownik odczasownikowy, czasownik i imiesłów
+
+| Forma | Część mowy | Jak ją rozpoznać? |
+|---|---|---|
+| *czyta* | czasownik | oznacza czynność w formie osobowej; można określić osobę, liczbę i czas |
+| *czytanie* | rzeczownik odczasownikowy | nazywa czynność jako zjawisko; odmienia się przez przypadki: *czytania, czytaniu* |
+| *czytający* | zwykle imiesłów przymiotnikowy czynny | określa rzeczownik: *czytający uczeń*; odmienia się jak przymiotnik |
+| *przeczytawszy* | imiesłów przysłówkowy uprzedni | forma nieodmienna, oznacza czynność wcześniejszą; poziom rozszerzający |
+
+Przykłady: *Czytanie przed snem mnie uspokaja* — rzeczownik *czytanie* jest podmiotem. *Czytając przed snem, robię notatki* — *czytając* jest imiesłowem przysłówkowym współczesnym, a nie rzeczownikiem.
+
+**Pułapka:** rzeczownik odczasownikowy może zachować znaczenie czynności, ale gramatycznie zachowuje się jak rzeczownik: *długie czytanie, bez czytania, o czytaniu*. Z kolei czasownik nazywa czynność w sposób gramatycznie typowy dla czasownika: *czytam, czytałem, przeczytają*.
+
+::: karta understand | W skrócie — czytanie, czyta, czytający
+*Czyta* jest czasownikiem, bo można zapytać: „kto? co robi?” — *Uczeń czyta*. *Czytanie* jest rzeczownikiem, bo można zapytać: „co?” — *Czytanie pomaga*. Można też powiedzieć *długie czytanie* albo *bez czytania*, czyli połączyć je jak zwykły rzeczownik. *Czytający* jest imiesłowem, bo określa rzeczownik jak przymiotnik: *czytający uczeń*.
+:::
+
+## 11 | Pisownia „nie” z rzeczownikami
+
+W typowych połączeniach **„nie” z rzeczownikami piszemy łącznie**: *nieprzyjaciel, niepokój, nieład, nieszczęście, nieczytanie*. Rozdzielna pisownia występuje m.in. wtedy, gdy „nie” jest wyraźnym zaprzeczeniem lub pojawia się przeciwstawienie:
+
+- *To nie przyjaciel, lecz wróg.*
+- *Nie pokój, ale wojna.* — zaprzeczenie i przeciwstawienie znaczeń.
+
+Porównaj:
+
+- *Nieprzyjaciel nadchodził.* — rzeczownik oznacza wroga.
+- *To nie przyjaciel przyszedł, tylko sąsiad.* — zaprzeczamy, że przyszedł przyjaciel.
+
+Nie opieraj decyzji wyłącznie na tym, czy zdanie zawiera słowo *lecz* lub *ale*; sprawdź, czy chodzi o utrwaloną nazwę, czy o rzeczywiste zaprzeczenie. W razie wątpliwości dotyczącej szczególnej konstrukcji sprawdź aktualne zasady ortograficzne.
+
+## 12 | Nazwy własne i wielka litera
+
+Nazwy własne identyfikują konkretne osoby, miejsca, obiekty lub utwory. Przykłady: *Jan, Warszawa, Wisła, Tatry, Polska, „Akademia pana Kleksa”*. Nazwy pospolite zapisujemy zazwyczaj małą literą: *uczeń, miasto, rzeka, góra, książka*.
+
+Nie wystarczy stwierdzić, że rzeczownik oznacza coś ważnego — o wielkiej literze decyduje typ nazwy i obowiązujące reguły. W tytułach utworów wielka litera nie musi występować na początku każdego wyrazu. Przy nazwach instytucji, wydarzeń, mieszkańców i przymiotnikach utworzonych od nazw geograficznych obowiązują szczegółowe reguły; nie należy ich uogólniać na podstawie kilku przykładów.
+
+::: karta extra | Nazwa miasta i nazwa rzeki
+*Warszawa* i *Wisła* piszemy wielką literą, ponieważ są nazwami własnymi. Natomiast *miasto* i *rzeka* to nazwy pospolite, dlatego piszemy je małą literą. Zapis *warszawa* lub *wisła* w znaczeniu nazwy własnej jest błędem ortograficznym.
+:::
+
+::: karta extra | Skąd wzięła się nazwa „rzeczownik”?
+Nazwa „rzeczownik” pochodzi od słowa „rzecz”, ale nie należy jej rozumieć zbyt dosłownie. Rzeczowniki nazywają także osoby, zwierzęta, zjawiska, uczucia, cechy i czynności. Dlatego *radość*, *burza* i *czytanie* są rzeczownikami, choć nie są rzeczami, które można włożyć do plecaka. (źródło: zpe.gov.pl)
+:::
+
+## 13 | Funkcja rzeczownika w zdaniu
+
+**Część mowy** odpowiada na pytanie, jakim typem wyrazu jest dana forma. **Część zdania** opisuje jej rolę składniową. Rzeczownik nie jest zawsze podmiotem.
+
+- **Podmiot:** *Odwaga pomaga bohaterowi.* — *odwaga* odpowiada na pytanie „co pomaga?”.
+- **Dopełnienie:** *Bohater okazał odwagę.* — *odwagę* uzupełnia znaczenie czasownika: „okazał co?”.
+- **Przydawka:** *Książka ucznia leży na stole.* — *ucznia* określa rzeczownik *książka* („czyja książka?”).
+- **Orzecznik w orzeczeniu imiennym:** *Mój brat jest lekarzem.* — *lekarzem* jest rzeczownikiem użytym jako orzecznik.
+- **Wołacz w zwrocie:** *Mamo, posłuchaj!* — *mamo* jest formą wołacza, używaną w zwrocie do adresata.
+
+W analizie składniowej trzeba rozpatrzyć całą konstrukcję. Sam fakt, że wyraz odpowiada na pytanie „kogo? czego?”, nie zawsze wystarcza do rozstrzygnięcia, jaką dokładnie pełni funkcję.
+
+## 14 | Analiza zdań krok po kroku
+
+### Przykład A
+
+*Odwaga młodej bohaterki dodała otuchy przyjaciołom.*
+
+1. Rzeczowniki: *odwaga, bohaterki, otuchy, przyjaciołom*.
+2. *odwaga* — rzeczownik abstrakcyjny, rodzaj żeński, liczba pojedyncza, mianownik; pełni funkcję podmiotu.
+3. *bohaterki* — rzeczownik, dopełniacz liczby pojedynczej; określa rzeczownik *odwaga* (czyja odwaga?).
+4. *otuchy* — rzeczownik, dopełniacz liczby pojedynczej w konstrukcji *dodać otuchy*; uzupełnia znaczenie czasownika.
+5. *przyjaciołom* — rzeczownik, celownik liczby mnogiej; wskazuje odbiorców tego, co zostało dodane.
+
+### Przykład B
+
+*Czytanie lektur pomaga uczniom rozwijać wyobraźnię.*
+
+1. *czytanie* — rzeczownik odczasownikowy, mianownik, podmiot.
+2. *lektur* — rzeczownik, dopełniacz liczby mnogiej; określa zakres czynności czytania.
+3. *uczniom* — rzeczownik, celownik liczby mnogiej; określa, komu czytanie pomaga.
+4. *wyobraźnię* — rzeczownik, biernik liczby pojedynczej; dopełnienie czasownika *rozwijać*.
+
+## 15 | Dla olimpijczyka — granice pojęcia rzeczownika
+
+W analizie trudniejszych tekstów nie wystarczy znać definicję szkolną. Trzeba odróżniać rzeczownik od wyrazów o podobnym znaczeniu lub podobnej formie.
+
+- **Rzeczownik a zaimek rzeczowny:** *uczeń* jest rzeczownikiem, *on* — zaimkiem; oba mogą być podmiotem, ale tylko pierwszy nazywa klasę osób.
+- **Rzeczownik odczasownikowy a imiesłów:** *czytanie* można określić przymiotnikiem i odmienić przez przypadki; *czytający* określa rzeczownik i odmienia się jak przymiotnik.
+- **Rzeczownik a przysłówek:** *dobro* może być rzeczownikiem (*dobro bliźniego*), a *dobrze* — przysłówkiem (*czuje się dobrze*).
+- **Rzeczownik a wyrażenie przyimkowe:** *bez wątpienia* zawiera rzeczownik *wątpienie*, ale całość funkcjonuje jako wyrażenie przyimkowe; nie należy mylić części mowy z funkcją całej grupy wyrazów.
+- **Rzeczownik a forma czasownika:** *przeczytanie* jest rzeczownikiem, *przeczytał* — czasownikiem, a *przeczytawszy* — imiesłowem przysłówkowym.
+
+::: karta understand | Dla olimpijczyka
+W zadaniach konkursowych pytaj nie tylko „czy to rzeczownik?”, lecz także „dlaczego?”. Sprawdź: czy wyraz odmienia się przez przypadki, czy może być określony przymiotnikiem, czy tworzy związek rządu z czasownikiem lub przyimkiem i czy pełni funkcję podmiotu, dopełnienia, przydawki albo orzecznika. Na przykład w zdaniu *Po przeczytaniu książki uczeń zrobił notatki* wyraz *przeczytaniu* jest rzeczownikiem odczasownikowym w miejscowniku, mimo że pochodzi od czasownika *przeczytać*.
+:::
+
+## 16 | Rzeczownik a inne części mowy — test rozstrzygający
+
+| Wyraz | Najpierw sprawdź | Rozstrzygnięcie |
+|---|---|---|
+| *bieg* | czy nazywa czynność jako pojęcie i odmienia się przez przypadki | rzeczownik |
+| *biega* | czy ma osobę, liczbę i czas | czasownik |
+| *biegający* | czy określa rzeczownik i odmienia się jak przymiotnik | imiesłów przymiotnikowy czynny |
+| *biegając* | czy jest nieodmienny i wprowadza czynność równoczesną | imiesłów przysłówkowy współczesny |
+| *biegiem* | czy jest formą narzędnika rzeczownika *bieg* | rzeczownik w narzędniku |
+| *ktoś* | czy nazywa klasę osób czy tylko wskazuje nieokreśloną osobę | zaimek |
+
+::: nie-myl | Rzeczownik czy nie rzeczownik?
+| Wyraz | Dlaczego łatwo pomylić | Jak rozstrzygnąć |
+|---|---|---|
+| *czytanie* | pochodzi od czasownika | odmienia się przez przypadki: *czytania, czytaniu* — rzeczownik |
+| *czytający* | też związany z czynnością | określa rzeczownik: *czytający uczeń* — imiesłów |
+| *ktoś* | odpowiada na pytanie „kto?” | nie nazywa klasy osób, tylko wskazuje osobę nieokreśloną — zaimek |
+| *młodzież* | oznacza wiele osób | ma formę liczby pojedynczej i znaczenie zbiorowe — rzeczownik zbiorowy |
+| *domu* | końcówka bywa mylona z innymi przypadkami | *nie ma domu* — dopełniacz; *mieszkam w domu* — miejscownik |
+:::
+
+## 17 | Klinika błędów
+
+::: klinika | Błąd | Poprawnie | Dlaczego?
+| „Czytanie” to czasownik, bo oznacza czynność. | *Czytanie* — rzeczownik odczasownikowy | odmienia się przez przypadki (*czytania, czytaniu*); czasownikiem jest *czyta*. |
+| Każdy rzeczownik oznacza przedmiot. | rzeczownik nazywa też niematerialne byty | Rzeczowniki nazywają też uczucia, cechy, zjawiska, czynności i pojęcia. |
+| Rodzaj gramatyczny to zawsze płeć. | rodzaj to kategoria gramatyczna | *dziecko* jest rodzaju nijakiego niezależnie od płci, *osoba* — żeńskiego. |
+| Każda końcówka jednoznacznie wskazuje przypadek. | przypadek ustala się w kontekście | Formę ustala się na podstawie zdania, składni, pytania i odmiany. |
+| „Drzwi jest otwarte”. | *Drzwi są otwarte* | rzeczownik używany tylko w liczbie mnogiej łączy się z formą mnogą orzeczenia. |
+| „Widzę pies”. | *Widzę psa* | typowy biernik rzeczownika męskiego żywotnego ma formę jak dopełniacz. |
+| „Widzę miecza” (w znaczeniu zwykłego przedmiotu). | *Widzę miecz* | typowy biernik rzeczownika męskiego nieżywotnego ma formę jak mianownik. |
+| „To nieprzyjaciel, lecz kolega” — bez rozpoznania znaczenia. | *To nie przyjaciel, lecz kolega.* | przy zaprzeczeniu z przeciwstawieniem *nie* z rzeczownikiem piszemy rozdzielnie. |
+| Każdy wyraz po przyimku jest dopełnieniem. | funkcję ustala się w całej konstrukcji | Przyimek wpływa na przypadek, ale funkcję składniową ustala się w całej konstrukcji. |
+| Rzeczownik zawsze pełni funkcję podmiotu. | może być też dopełnieniem, przydawką lub orzecznikiem | funkcja zależy od zdania, nie od części mowy. |
+:::
+
+## 18 | Ćwiczenia — poziom podstawowy
+
+### Zadanie 1. Wskaż rzeczowniki
+
+W zdaniu *Mały podróżnik z odwagą wszedł do ciemnej jaskini i usłyszał szum wody* wypisz rzeczowniki.
+
+### Zadanie 2. Klasyfikacja
+
+Przyporządkuj wyrazy do grup: konkretne, abstrakcyjne, własne, odczasownikowe. Kategorie mogą się nakładać.
+
+*Warszawa, cierpliwość, bieganie, pies, czytanie, Wisła, radość, okno.*
+
+### Zadanie 3. Rodzaj i liczba
+
+Określ rodzaj i liczbę gramatyczną: *noc, mężczyzna, dziecko, uczniowie, rodzeństwo, nożyczki*.
+
+### Zadanie 4. Przypadek
+
+Nazwij przypadek wyróżnionego rzeczownika:
+
+1. Nie ma **zeszytu**.
+2. Przyglądam się **obrazowi**.
+3. Rozmawiamy o **wakacjach**.
+4. Idę z **siostrą**.
+5. **Przyjacielu**, zaczekaj!
+
+### Zadanie 5. Uzupełnij formę
+
+Wstaw poprawną formę rzeczownika w nawiasie:
+
+1. Nie widzę (pies) __________.
+2. Przyglądam się (książka) __________.
+3. Idę z (kolega) __________.
+4. Nie ma (dziecko) __________ w sali.
+5. Rozmawiam o (przyjaźń) __________.
+
+### Zadanie 6. Rozróżnij części mowy
+
+Określ, czy wyróżniony wyraz jest rzeczownikiem, czasownikiem czy imiesłowem:
+
+1. **Pisanie** listów wymaga skupienia.
+2. Ona **pisze** list.
+3. **Piszący** uczeń nie słyszał dzwonka.
+4. **Odkrycie** nowej planety wzbudziło zainteresowanie.
+
+### Zadanie 7. Popraw błędy
+
+Popraw zdania i krótko uzasadnij:
+
+1. Te drzwi jest zamknięte.
+2. Nie ma uczeń w klasie.
+3. Warszawa jest dużym miastem, a warszawa leży nad Wisłą.
+4. Czytając lekturę jest przyjemne.
+
+## 19 | Ćwiczenia — poziom średni
+
+### Zadanie 8. Pełna analiza
+
+Przeanalizuj rzeczowniki w zdaniu: *Pamięć o bohaterach dodaje odwagi młodym ludziom.* Dla każdego rzeczownika określ przypadek, liczbę, rodzaj (jeśli można go ustalić) i funkcję w zdaniu.
+
+### Zadanie 9. „Nie” z rzeczownikami
+
+Wybierz poprawny zapis i wyjaśnij różnicę:
+
+1. To (nieprzyjaciel / nie przyjaciel), lecz sprzymierzeniec.
+2. W opowiadaniu pojawił się (niepokój / nie pokój) bohatera.
+3. To (nie przygoda / nieprzygoda), lecz zwykły spacer.
+
+### Zadanie 10. Nazwa własna czy pospolita?
+
+Popraw wielkie i małe litery: *W sobotę odwiedziliśmy warszawę i spacerowaliśmy nad wisłą. Potem czytaliśmy „akademię pana kleksa”.*
+
+### Zadanie 11. Funkcja w zdaniu
+
+Określ funkcję rzeczowników zapisanych pogrubieniem:
+
+1. **Odwaga** jest ważna.
+2. Bohater okazał **odwagę**.
+3. **Odwaga** bohatera zachwyciła czytelników.
+4. Moja siostra jest **lekarką**.
+
+### Zadanie 12. Przypadek a końcówka
+
+Wyjaśnij, dlaczego nie wolno rozpoznawać przypadku wyłącznie na podstawie końcówki. Podaj dwa przykłady, w których podobna końcówka występuje w różnych funkcjach lub przypadkach.
+
+## 20 | Ćwiczenia — poziom konkursowy
+
+### Zadanie 13. Pułapka klasyfikacyjna
+
+W zdaniu *Młodzież długo rozmawiała o przyszłości, a potem uczniowie zapisali swoje plany* wskaż rzeczowniki. Wyjaśnij, dlaczego *młodzież* ma formę liczby pojedynczej, mimo że oznacza wiele osób, oraz określ rodzaj i liczbę wyrazu *uczniowie*.
+
+### Zadanie 14. Rzeczownik odczasownikowy
+
+Porównaj zdania:
+
+A. *Bieganie po lesie uspokaja.*
+
+B. *Biegając po lesie, słucham ptaków.*
+
+C. *Biegam po lesie.*
+
+Wskaż formy związane z czasownikiem *biegać*, nazwij ich części mowy i uzasadnij odpowiedź.
+
+### Zadanie 15. Analiza wieloetapowa
+
+Przeanalizuj zdanie: *Po przeczytaniu opowiadania uczennica napisała recenzję o odwadze bohaterów.*
+
+1. Wypisz wszystkie rzeczowniki.
+2. Określ przypadek i liczbę każdego z nich.
+3. Wskaż rzeczownik odczasownikowy, jeśli występuje.
+4. Wskaż rzeczownik pełniący funkcję podmiotu i dwa rzeczowniki pełniące inne funkcje.
+5. Uzasadnij, dlaczego *przeczytaniu* jest rzeczownikiem, a nie czasownikiem.
+
+### Zadanie 16. Oceń stwierdzenia
+
+Zapisz P (prawda) lub F (fałsz) i popraw każde fałszywe stwierdzenie:
+
+1. Każdy rzeczownik ma liczbę pojedynczą i mnogą.
+2. Rzeczownik rodzaju męskiego zawsze oznacza osobę płci męskiej.
+3. W zdaniu *Czytanie jest pożyteczne* wyraz *czytanie* jest rzeczownikiem.
+4. Wszystkie rzeczowniki odpowiadające na pytanie „kogo?” są dopełnieniami.
+5. W zdaniu *Widzę psa* forma *psa* jest biernikiem.
+6. Rzeczownik może być orzecznikiem.
+
+## 21 | Zadania konkursowe — rozszerzenie
+
+::: adv | Zadanie 17. Odszukaj błąd | poziom ambitny
+W zdaniu *Młodzież wróciły z wycieczki i każdy z nich opowiedziało o swoich wrażeniach* znajdź dwa błędy gramatyczne. Popraw zdanie i wyjaśnij, dlaczego forma *wróciły* oraz *opowiedziało* są niepoprawne.
+:::
+
+::: adv | Zadanie 18. Przekształcanie | poziom ambitny
+Przekształć zdanie *Uczeń czytał książkę* tak, aby zamiast czasownika *czytał* użyć rzeczownika odczasownikowego. Zapisz nowe zdanie, wskaż rzeczownik odczasownikowy i określ jego funkcję w zdaniu.
+:::
+
+::: adv | Zadanie 19. Uzasadnij klasyfikację | poziom ambitny
+Wyjaśnij, dlaczego w zdaniu *Widzę psa* forma *psa* jest biernikiem, a w zdaniu *Nie ma psa* — dopełniaczem, mimo że obie formy brzmią tak samo. Podaj jeszcze jedną parę zdań z taką samą formą, ale różnym przypadkiem.
+:::
+
+::: adv | Zadanie 20. Analiza tekstu | poziom ambitny
+W zdaniu *Odwaga nie zawsze oznacza brak strachu; czasem jest to decyzja podjęta mimo strachu* wskaż wszystkie rzeczowniki, określ ich przypadki i wyjaśnij, dlaczego *strachu* występuje dwa razy w tym samym przypadku.
+:::
+
+::: adv | Zadanie 21. Zadanie z pułapką | poziom ambitny
+Uczeń napisał: *To nieprzygoda, lecz zwykły spacer.* Wyjaśnij, dlaczego zapis jest niepoprawny w tym kontekście, podaj poprawną wersję i ułóż własne zdanie z rzeczownikiem z *nie-* pisanym łącznie (np. *niepowodzenie, nieporozumienie, nieprzyjaciel*).
+:::
+
+::: adv | Zadanie 22. Przewidź skutek | poziom ambitny
+Porównaj pary zdań: *Ci uczniowie czytają* oraz *Te uczennice czytają*. Wyjaśnij, co zmienia się wraz z rzeczownikiem (forma zaimka *ci/te*), a co pozostaje takie samo (czasownik *czytają*) i dlaczego. Określ rodzaj gramatyczny obu grup rzeczowników w liczbie mnogiej.
+:::
+
+## 22 | Klucz odpowiedzi i objaśnienia
+
+**Zadanie 1:** *podróżnik, odwagą, jaskini, szum, wody*. Wyraz *wody* jest rzeczownikiem, mimo że w tym zdaniu określa dopełnienie nazwy *szum*.
+
+**Zadanie 2:** *Warszawa* — własny; *cierpliwość* — abstrakcyjny; *bieganie* — odczasownikowy i abstrakcyjny; *pies* — konkretny; *czytanie* — odczasownikowy; *Wisła* — własny; *radość* — abstrakcyjny; *okno* — konkretny. W niektórych kontekstach klasyfikacja znaczeniowa może wymagać dopowiedzenia.
+
+**Zadanie 3:** *noc* — rodzaj żeński, liczba pojedyncza; *mężczyzna* — rodzaj męski, liczba pojedyncza; *dziecko* — nijaki, liczba pojedyncza; *uczniowie* — męskoosobowy, liczba mnoga; *rodzeństwo* — nijaki, liczba pojedyncza; *nożyczki* — liczba mnoga, rodzaj określa się zgodnie z użyciem i zgodą gramatyczną, nie przez dopisywanie formy pojedynczej.
+
+**Zadanie 4:** 1. dopełniacz; 2. celownik; 3. miejscownik (po przyimku *o*); 4. narzędnik; 5. wołacz.
+
+**Zadanie 5:** 1. psa; 2. książce; 3. kolegą; 4. dziecka; 5. przyjaźni.
+
+**Zadanie 6:** 1. rzeczownik odczasownikowy; 2. czasownik; 3. imiesłów przymiotnikowy czynny; 4. rzeczownik odczasownikowy.
+
+**Zadanie 7:** 1. *Te drzwi są zamknięte* — rzeczownik używany tylko w liczbie mnogiej. 2. *Nie ma ucznia w klasie* — konstrukcja *nie ma kogo? czego?* wymaga dopełniacza. 3. *Warszawa jest dużym miastem, a Wisła przepływa przez wiele miejscowości.* — *Warszawa* i *Wisła* są nazwami własnymi. 4. *Czytanie lektury jest przyjemne* albo *Czytając lekturę, można miło spędzić czas* — trzeba dopasować konstrukcję składniową.
+
+**Zadanie 8:** *pamięć* — mianownik, lp., rodzaj żeński, podmiot; *bohaterach* — miejscownik, lm., forma po przyimku *o*, określenie rzeczownika *pamięć* (pamięć o kim?); *odwagi* — dopełniacz, lp., rodzaj żeński, dopełnienie w konstrukcji *dodaje odwagi*; *ludziom* — celownik, lm., forma męskoosobowa, wskazuje odbiorców (komu dodaje odwagi?).
+
+**Zadanie 9:** 1. *To nie przyjaciel, lecz sprzymierzeniec* — zaprzeczenie; 2. *niepokój bohatera* — rzeczownik nazywający stan, pisownia łączna; 3. *To nie przygoda, lecz zwykły spacer* — zaprzeczenie z przeciwstawieniem.
+
+**Zadanie 10:** *W sobotę odwiedziliśmy Warszawę i spacerowaliśmy nad Wisłą. Potem czytaliśmy „Akademię pana Kleksa”.* Zapis tytułu wymaga uwzględnienia zasad pisowni tytułów utworów.
+
+**Zadanie 11:** 1. *odwaga* — podmiot; 2. *odwagę* — dopełnienie; 3. *odwaga* — podmiot, *bohatera* — przydawka; 4. *lekarką* — orzecznik w orzeczeniu imiennym.
+
+**Zadanie 12:** Końcówki mogą się powtarzać w różnych formach, a część rzeczowników odmienia się nieregularnie lub jest nieodmienna. Np. *książce* może być celownikiem (*przyglądam się książce*) albo miejscownikiem (*mówię o książce*). Forma *domu* może być dopełniaczem (*nie ma domu*) albo miejscownikiem (*mieszkam w domu*). Kontekst, przyimek i składnia rozstrzygają przypadek.
+
+**Zadanie 13:** Rzeczowniki: *młodzież, przyszłości, uczniowie, plany*. *Młodzież* to rzeczownik rodzaju żeńskiego w liczbie pojedynczej, choć ma znaczenie zbiorowe. *Uczniowie* to liczba mnoga, rodzaj męskoosobowy.
+
+**Zadanie 14:** A: *bieganie* — rzeczownik odczasownikowy, podmiot. B: *biegając* — imiesłów przysłówkowy współczesny, forma nieodmienna; C: *biegam* — czasownik w formie osobowej, 1. osoba liczby pojedynczej czasu teraźniejszego.
+
+**Zadanie 15:** Rzeczowniki: *przeczytaniu, opowiadania, uczennica, recenzję, odwadze, bohaterów*. *przeczytaniu* — miejscownik w konstrukcji *po przeczytaniu* (po + miejscownik), liczba pojedyncza, rzeczownik odczasownikowy; *opowiadania* — dopełniacz liczby pojedynczej (czego przeczytaniu?); *uczennica* — mianownik liczby pojedynczej, rodzaj żeński, podmiot; *recenzję* — biernik liczby pojedynczej, dopełnienie; *odwadze* — miejscownik po *o*; *bohaterów* — dopełniacz liczby mnogiej, określenie rzeczownika *odwadze* (odwaga kogo?).
+
+**Zadanie 16:** 1. F — niektóre występują tylko w jednej liczbie; 2. F — rodzaj gramatyczny nie zawsze odpowiada płci; 3. P; 4. F — pytanie przypadkowe nie przesądza funkcji składniowej; 5. P; 6. P.
+
+**Zadanie 17:** Poprawnie: *Młodzież wróciła z wycieczki i każdy z nich opowiedział o swoich wrażeniach.* *Młodzież* jest rodzaju żeńskiego w liczbie pojedynczej, dlatego wymaga formy *wróciła*. Zaimek *każdy* jest rodzaju męskiego w liczbie pojedynczej, dlatego wymaga formy *opowiedział*.
+
+**Zadanie 18:** Przykład: *Uczeń zajmował się czytaniem książki.* Rzeczownik odczasownikowy to *czytaniem* — narzędnik liczby pojedynczej. Pełni funkcję dopełnienia w konstrukcji *zajmował się czym?*.
+
+**Zadanie 19:** W zdaniu *Widzę psa* forma *psa* odpowiada na pytanie „widzę kogo?”, więc jest biernikiem. W zdaniu *Nie ma psa* forma odpowiada na pytanie „nie ma kogo?”, więc jest dopełniaczem. Podobnie: *Nie ma domu* — dopełniacz; *mieszkam w domu* — miejscownik.
+
+**Zadanie 20:** Rzeczowniki: *odwaga, brak, strachu, decyzja, strachu*. *odwaga* — mianownik lp.; *brak* — biernik lp. (*oznacza co?*); *strachu* — dopełniacz lp.; *decyzja* — mianownik lp.; drugie *strachu* — dopełniacz lp. w konstrukcji *mimo strachu*. Ten sam przypadek wynika z tego, że oba wystąpienia mają podobną relację znaczeniową: *brak czego?* oraz *mimo czego?*.
+
+**Zadanie 21:** Poprawnie: *To nie przygoda, lecz zwykły spacer.* W tym zdaniu „nie” zaprzecza, że chodzi o przygodę, i pojawia się przeciwstawienie. Zdanie z pisownią łączną, np.: *Nieporozumienie szybko się wyjaśniło.* (*nieporozumienie* — utrwalony rzeczownik z *nie-*).
+
+**Zadanie 22:** *Uczniowie* to liczba mnoga rodzaju męskoosobowego, dlatego używamy *ci* i formy *czytają*. *Uczennice* to liczba mnoga rodzaju niemęskoosobowego, dlatego używamy *te* i również formy *czytają*. W tym przykładzie końcówka czasownika jest taka sama, ale forma zaimka pokazuje różnicę rodzajową.
+
+## 23 | Test końcowy — 20 punktów treningowych
+
+1. (2 pkt) Wypisz wszystkie rzeczowniki ze zdania: *Po burzy dzieci z radością wróciły do domu.*
+2. (2 pkt) Określ przypadek i liczbę form: *uczniom, przyjaźni, drzwi, książkę*.
+3. (2 pkt) Wyjaśnij różnicę między *czyta*, *czytanie* i *czytający*.
+4. (2 pkt) Uzupełnij: *Nie ma (kot) ___; widzę (kot) ___; idę z (kot) ___*.
+5. (2 pkt) Popraw zapis: *To nieprzyjaciel, lecz kolega. Widziałem warszawę i wisłę.*
+6. (2 pkt) Określ funkcję rzeczowników: *Odwaga bohaterki zachwyciła czytelników.*
+7. (2 pkt) Wyjaśnij, dlaczego *młodzież* jest w liczbie pojedynczej, a *uczniowie* w mnogiej.
+8. (2 pkt) Podaj dwa rzeczowniki abstrakcyjne i dwa konkretne oraz uzasadnij wybór.
+9. (2 pkt) Odmień *książka* w dopełniaczu, celowniku, bierniku i narzędniku liczby pojedynczej.
+10. (2 pkt) Ułóż zdanie z rzeczownikiem odczasownikowym i nazwij jego funkcję w zdaniu.
+
+### Klucz do testu
+
+1. *burzy, dzieci, radością, domu* (2 pkt za komplet, 1 pkt za częściowy poprawny zestaw).
+2. *uczniom* — celownik lm.; *przyjaźni* — forma może zależeć od kontekstu (np. D./C./Ms. lp.); *drzwi* — lm., przypadek zależy od zdania; *książkę* — B. lp. (2 pkt za poprawne rozpoznanie i wskazanie, gdzie sam wyraz nie wystarcza).
+3. *czyta* — czasownik; *czytanie* — rzeczownik odczasownikowy; *czytający* — zwykle imiesłów przymiotnikowy czynny.
+4. *kota; kota; kotem*.
+5. *To nie przyjaciel, lecz kolega. Widziałem Warszawę i Wisłę.* (W zdaniu z „nieprzyjaciel” sens byłby inny: wróg.)
+6. *odwaga* — podmiot; *bohaterki* — przydawka; *czytelników* — dopełnienie.
+7. *Młodzież* to rzeczownik zbiorowy rodzaju żeńskiego, zwykle w liczbie pojedynczej; *uczniowie* to forma liczby mnogiej, męskoosobowej.
+8. Przykładowo: abstrakcyjne *radość, odwaga*; konkretne *stół, pies*. Uzasadnienie ma wskazywać znaczenie.
+9. *książki; książce; książkę; książką*.
+10. Dowolne poprawne zdanie, np. *Czytanie pomaga w nauce* — *czytanie* jest podmiotem.
+
+**Interpretacja wyniku (autorska):** 18–20 — bardzo dobrze; 15–17 — dobrze, powtórz zadania z błędami; 11–14 — wróć do tabel przypadków i rozpoznawania części mowy; 0–10 — przerób lekcję ponownie etapami. To skala treningowa.
+
+## 24 | Fiszki do powtórki
+
+::: fiszki
+Jakie pytania są typowe dla rzeczownika? | *kto? co?* | basic:rzeczownik
+Ile przypadków ma polski rzeczownik? | Siedem. | basic:rzeczownik
+Jakie są trzy rodzaje w liczbie pojedynczej? | Męski, żeński, nijaki. | basic:rzeczownik
+Jak nazywa się rozróżnienie rodzajów w liczbie mnogiej ważne dla zgody? | Męskoosobowy i niemęskoosobowy. | basic:rzeczownik
+Czym jest rzeczownik abstrakcyjny? | Nazywa np. cechę, stan, uczucie lub pojęcie. | basic:rzeczownik
+Podaj rzeczownik odczasownikowy. | Np. *czytanie, bieganie, pisanie*. | basic:rzeczownik
+Jak brzmi typowy biernik męskiego rzeczownika żywotnego? | Jak dopełniacz: *widzę psa*. | basic:rzeczownik
+Jak brzmi typowy biernik męskiego rzeczownika nieżywotnego? | Jak mianownik: *widzę stół*. | basic:rzeczownik
+Podaj rzeczownik używany tylko w liczbie mnogiej. | *Drzwi, nożyczki, spodnie*. | basic:rzeczownik
+Czy rzeczownik zawsze jest podmiotem? | Nie; może pełnić różne funkcje składniowe. | basic:rzeczownik
+Co rozstrzyga przypadek, gdy końcówka jest niejednoznaczna? | Kontekst, składnia, przyimek i pytanie. | basic:rzeczownik
+Jak zwykle zapisujemy „nie” z rzeczownikiem? | Łącznie; rozdzielnie m.in. przy wyraźnym zaprzeczeniu/przeciwstawieniu. | basic:ortografia
+Czym różni się *czytanie* od *czytający*? | *Czytanie* to rzeczownik odczasownikowy, *czytający* — imiesłów przymiotnikowy czynny. | olimpijski:rzeczownik
+Dlaczego *młodzież* jest w liczbie pojedynczej? | To rzeczownik zbiorowy: wiele osób ujętych jako całość. | olimpijski:rzeczownik
+Dlaczego *widzę psa* i *nie ma psa* mają tę samą formę? | W pierwszym zdaniu to biernik, w drugim — dopełniacz; rozstrzyga konstrukcja. | olimpijski:rzeczownik
+:::
+
+## 25 | Samoocena i plan naprawczy
+
+Zaznacz: **umiem samodzielnie / umiem z pomocą / muszę powtórzyć**.
+
+- Rozpoznaję rzeczownik w kontekście.
+- Odróżniam rzeczownik odczasownikowy od czasownika i imiesłowu.
+- Rozpoznaję rodzaj, liczbę i przypadek.
+- Odmieniam rzeczowniki i sprawdzam formę w zdaniu.
+- Stosuję wzorzec biernika rzeczowników męskich.
+- Rozpoznaję rzeczowniki tylko mnogie i zbiorowe.
+- Poprawnie zapisuję „nie” i nazwy własne.
+- Rozróżniam część mowy i część zdania.
+- Potrafię wyjaśnić, dlaczego odpowiedź jest poprawna.
+
+Jeśli trudność sprawia **przypadek**, wróć do tabeli z sekcji 7 i analizuj całe zdania. Jeśli trudność sprawia **rozpoznawanie części mowy**, porównaj sekcję 4 z sekcją 10 oraz sekcję 16. Jeśli trudność sprawia **funkcja w zdaniu**, przećwicz sekcję 13 i zadania 8 oraz 11.
+
+## 26 | Materiały powiązane
+
+- `POL.02.G02.czasownik.md` — porównanie rzeczownika odczasownikowego i czasownika.
+- `POL.02.G03.przymiotnik.md` — zgoda przymiotnika z rzeczownikiem.
+- `POL.02.G04.liczebnik.md` — połączenia liczebników z rzeczownikami, w tym formy zbiorowe.
+- `POL.02.G05.zaimek.md` — odróżnianie zaimków *ktoś, coś, nic* od rzeczowników.
+- `POL.02.G06.imieslowy.md` — rozpoznawanie imiesłowów.
+- `POL.02.G12.czesci_zdania.md`, `POL.02.G13.zwiazki_wyrazowe.md`, `POL.02.G14.zdanie_pojedyncze.md` — analiza składniowa.
+- Lekcja `L005-PL-Kajko-i-Kokosz-rzeczownik` — zastosowanie gramatyki w pracy z tekstem literackim i komiksem.
+
+## 27 | Źródła i uwagi redakcyjne
+
+Lekcja została opracowana na podstawie istniejącego materiału `POL.02.G01.rzeczownik.md`, sekcji o rzeczowniku w pliku `POLSKI_PODSTAWA_PLUS`, materiałów L005 oraz powiązanych notatek gramatycznych w repozytorium. Zakres zgodzono z podstawą programową: uczeń rozpoznaje części mowy, odróżnia części mowy odmienne od nieodmiennych oraz rozpoznaje formy przypadków, liczb i rodzajów gramatycznych rzeczownika.  [oke.waw](https://www.oke.waw.pl/wp-content/uploads/OKE_WARSZAWA/E8/Informatory/2025/Informator_E8_polski_2025_P8.pdf) Zgodność z egzaminem ósmoklasistą potwierdza informator CKE.  [zpe.gov](https://zpe.gov.pl/podstawa-programowa/szkola-podstawowa/jezyk-polski)
+
+Zadania i skala testu są autorskie i treningowe. Przed uznaniem lekcji za ostatecznie zweryfikowaną należy przeprowadzić niezależny audyt poprawności językowej oraz porównać zakres z aktualnymi wymaganiami szkoły i wymaganiami konkretnego konkursu przedmiotowego.
+
+## AUDYT W1 — wynik (2026-10-09, GPT-6)
+
+**Zakres kontroli:** definicja i klasyfikacja rzeczownika, rodzaj i liczba, przypadki, rzeczowniki odczasownikowe, biernik rodzaju męskiego, pisownia „nie”, przykłady i klucze.
+
+**Ustalenia:**
+- W lekcji wskazano, że pytania „kto? co?” są wskazówką, a nie samodzielnym testem rozstrzygającym; potrzebny jest kontekst i analiza formy.
+- Zachowano rozróżnienie części mowy i części zdania oraz oddzielono rodzaj gramatyczny od płci.
+- Reguły biernika męskiego opisano jako typowe, a nie bezwyjątkowe; formę należy sprawdzać w kontekście.
+- Zadania, samoocena i progi procentowe są autorskie/treningowe, nie stanowią oficjalnej punktacji CKE.
+
+**Do dalszej niezależnej kontroli:** pełna korekta językowa wszystkich przykładów i kluczy oraz weryfikacja aktualnych przykładów ortograficznych w źródle normatywnym.
+
+**Status:** kontrola redakcyjno-merytoryczna wykonana w podanym zakresie; nie jest to pełna recenzja ekspercka.
+
+### AUDYT W1 — ULEPSZ z warstwą olimpijską, Perplexity (2026-10-11)
+Surowa odpowiedź: `polski/plany/audyty/ULEPSZ_PPLX_G01_2026-10-11.md` (nowa rozmowa, paczka `AI_ULEPSZ_POL_G01_rzeczownik`; odpowiedź w całości). Wcześniejsza ucięta próba — `ULEPSZ_PPLX_G01_czesc1_2026-10-11.md`.
+
+**Przyjęte:** wykład „rzeczownik od podstaw” (§2) z kartą „trzy testy”, 5 mini-wykładów, 4 ciekawostki (liczba podwójna — *oczy, uszy, ręce*; rzeczowniki tylko mnogie; Warszawa/Wisła; skąd nazwa „rzeczownik”), §15 „Dla olimpijczyka — granice pojęcia rzeczownika”, §16 test rozstrzygający z tabelą „nie myl”, §21 sześć zadań konkursowych (17–22) z kluczami w §22, 15 fiszek w bloku, klinika (12 błędów); P1 (biernik męskich — liczba pojedyncza), P2 (rozdzielne „nie” przy zaprzeczeniu i przeciwstawieniu), P3 (pełne zdanie w kluczu zad. 7), P4 (odniesienie do podstawy i informatora).
+
+**Poprawione względem propozycji:** ciekawostka o rzeczownikach tylko mnogich — model pisał, że „nie powiemy *jedne drzwi*”, a właśnie tak mówimy o jednym przedmiocie; zad. 20 — *brak* w zdaniu „oznacza brak strachu” to biernik, nie mianownik; zad. 21 — zamiast nieistniejącego „nieprzygoda” (łącznie) zdanie z utrwalonym rzeczownikiem z *nie-* (*nieporozumienie*); zad. 22 — polecenie zapowiadało zmianę końcówki *czytają*, której nie ma — polecenie przeformułowane.
+
+**Nieprzyjęte:** propozycja grafiki „Rzeczownik — trzy pytania kontrolne” — pomysł (treść jest w karcie „W skrócie”).
+

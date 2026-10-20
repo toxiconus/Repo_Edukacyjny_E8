@@ -34,6 +34,7 @@ python3 tools/che.py lekcje [plik.md]     # pełny silnik z modułów + lekcje M
 python3 tools/che.py silnik               # odchudzone silniki z profili → dist/viz/<profil>.js
 python3 tools/che.py test [--szybki]      # bezstratność + render 6 lekcji (--szybki: bez przeglądarki)
 python3 tools/che.py nowa N06 systematyka # nowa lekcja z szablonu
+python3 tools/lite.py lessons-md/gotowe/X.md # LEKKA lekcja (2026-10-11): wspólny szablon + tylko modele użyte w lekcji, bez che-viz.js → dist/lite/ (~150 KB zamiast ~3 MB); modele zależne od silnika (LAB/GFX, dane reakcji) i @zlewka zostają jako przycisk „w pełnej wersji” — raport w konsoli. Rejestr: engine/src/lite/che-lite.js; hamburger + zakładka: engine/src/lekcja/nawigacja.js/.css (wspólne z pełną wersją)
 python3 tools/che.py gfx | katalog        # liczniki GFX / KATALOG.md
 python3 tools/odchudz.py --profil X [--lekcje A,B]   # odchudzanie z testem (długie, wznawialne)
 ```

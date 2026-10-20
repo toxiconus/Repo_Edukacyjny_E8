@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Biologia L017 — Jak przewidywać dziedziczenie jednej cechy? (v5.0 — przebudowa)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+<style>
+/* ============ SYSTEM WIZUALNY ============ */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI',Roboto,system-ui,-apple-system,sans-serif;background:#f5f7fa;color:#1e293b;line-height:1.7;padding:16px;}
+.container{max-width:1060px;margin:0 auto;background:#fff;border-radius:24px;box-shadow:0 8px 40px rgba(0,0,0,0.06);padding:28px 32px 24px;}
+@media(max-width:768px){.container{padding:12px 10px;}body{padding:6px;}}
+
+h1,h2,h3,h4{font-weight:600;letter-spacing:-0.02em;color:#0a2540;}
+h1{font-size:2rem;}
+h2{font-size:1.45rem;margin-top:28px;margin-bottom:10px;padding-bottom:4px;border-bottom:2px solid #e9edf2;}
+h3{font-size:1.15rem;margin-top:20px;margin-bottom:6px;}
+h4{font-size:1.0rem;margin-top:14px;margin-bottom:4px;}
+p{margin-bottom:8px;}
+ul,ol{padding-left:22px;margin-bottom:10px;}
+li{margin-bottom:3px;}
+a{color:#2b6cb0;text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+:root{
+  --color-basic:#2d8f5e;--color-basic-bg:#f0faf4;
+  --color-training:#2b6cb0;--color-training-bg:#f0f6ff;
+  --color-exam:#b7791f;--color-exam-bg:#fffbeb;
+  --color-trap:#dc3545;--color-trap-bg:#fef2f2;
+  --color-ambitious:#7c3aed;--color-ambitious-bg:#f5f0ff;
+  --color-remember:#0a2540;--color-remember-bg:#f1f4f8;
+  --color-hint:#f59e0b;--color-hint-bg:#fffbeb;
+  --color-correct:#2d8f5e;--color-error:#dc3545;
+  --color-new:#059669;--color-new-bg:#ecfdf5;
+  --color-text:#1e293b;--color-text-muted:#6b7a8d;
+  --color-border:#e2e8f0;--color-bg-subtle:#f8fafc;
+  --shadow-card:0 2px 8px rgba(0,0,0,0.04);
+}
+
+.card{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--color-border);background:#fff;box-shadow:var(--shadow-card);}
+.card-remember{background:var(--color-remember-bg);border-left:5px solid var(--color-remember);border-color:var(--color-remember);}
+.card-remember .card-label{color:var(--color-remember);}
+.card-warning{background:#fffbeb;border-left:5px solid #d69e2e;border-color:#d69e2e;}
+.card-warning .card-label{color:#d69e2e;}
+.card-hint{background:var(--color-hint-bg);border-left:5px solid var(--color-hint);border-color:var(--color-hint);}
+.card-hint .card-label{color:var(--color-hint);}
+.card-error{background:var(--color-trap-bg);border-left:5px solid var(--color-trap);border-color:var(--color-trap);}
+.card-error .card-label{color:var(--color-trap);}
+.card-correct{background:var(--color-basic-bg);border-left:5px solid var(--color-correct);border-color:var(--color-correct);}
+.card-correct .card-label{color:var(--color-correct);}
+.card-trap{background:var(--color-trap-bg);border-left:5px solid var(--color-trap);border-color:var(--color-trap);}
+.card-trap .card-label{color:var(--color-trap);}
+.card-ambitious{background:var(--color-ambitious-bg);border-left:5px solid var(--color-ambitious);border-color:var(--color-ambitious);}
+.card-ambitious .card-label{color:var(--color-ambitious);}
+.card-gray{background:var(--color-bg-subtle);border-left:5px solid var(--color-text-muted);border-color:var(--color-text-muted);}
+.card-new{background:var(--color-new-bg);border-left:5px solid var(--color-new);border-color:var(--color-new);}
+.card-new .card-label{color:var(--color-new);}
+.card .card-label{font-weight:600;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:4px;}
+
+.level-badge{display:inline-block;font-size:0.55rem;font-weight:700;text-transform:uppercase;padding:1px 8px;border-radius:12px;vertical-align:middle;letter-spacing:0.3px;line-height:1.6;}
+.level-basic{background:#d4edda;color:#155724;}
+.level-training{background:#cce5ff;color:#004085;}
+.level-exam{background:#ffe8cc;color:#8a6d3b;}
+.level-trap{background:#f8d7da;color:#721c24;}
+.level-ambitious{background:#e8d5f5;color:#4a1a6b;}
+.level-new{background:#a7f3d0;color:#065f46;}
+
+.table-wrap{overflow-x:auto;margin:12px 0;border-radius:10px;border:1px solid var(--color-border);}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:0.88rem;}
+.table-wrap th,.table-wrap td{padding:6px 10px;text-align:left;border-bottom:1px solid #edf2f7;}
+.table-wrap th{background:#f1f4f8;font-weight:600;color:#0a2540;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.3px;}
+.table-wrap tr:nth-child(even){background:#fafbfc;}
+.table-wrap .error-row{background:#fef2f2;}
+.table-wrap .correct-row{background:#f0faf4;}
+
+.example{background:var(--color-bg-subtle);border-radius:10px;padding:10px 14px;margin:8px 0;border:1px solid var(--color-border);display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;}
+.example .chem{font-weight:600;color:#0a2540;font-size:1.0rem;font-family:'Courier New',monospace;}
+.example .desc{color:var(--color-text-muted);font-size:0.88rem;}
+.example .tag{display:inline-block;font-size:0.55rem;font-weight:600;text-transform:uppercase;background:#e2e8f0;padding:1px 8px;border-radius:12px;color:#2d3a4f;}
+
+.btn{display:inline-flex;align-items:center;gap:4px;padding:5px 14px;border-radius:8px;border:1px solid var(--color-border);background:#fff;font-size:0.82rem;font-weight:500;cursor:pointer;transition:all 0.2s;color:var(--color-text);font-family:inherit;}
+.btn:hover{background:var(--color-bg-subtle);border-color:#b0b8c4;}
+.btn-outline{background:transparent;border:1px solid var(--color-border);}
+.btn-outline:hover{background:var(--color-bg-subtle);}
+.btn-sm{padding:3px 10px;font-size:0.74rem;}
+
+.answer-toggle{font-family:inherit;padding:4px 14px;border-radius:6px;border:none;cursor:pointer;font-size:0.78rem;font-weight:500;transition:all 0.2s;margin-top:4px;margin-right:4px;background:var(--color-training);color:#fff;}
+.answer-toggle:hover{background:#1f4e8c;}
+.answer-content{border-radius:6px;padding:0 12px;margin-top:4px;max-height:0;overflow:hidden;transition:max-height 0.35s ease,padding 0.3s ease,opacity 0.3s ease;opacity:0;background:var(--color-training-bg);border-left:3px solid var(--color-training);}
+.answer-content.show{max-height:3000px;padding:10px 12px;opacity:1;}
+
+.exercise{background:var(--color-bg-subtle);border-radius:12px;padding:14px 16px;margin:12px 0;border:1px solid var(--color-border);}
+
+.top-panel{background:var(--color-bg-subtle);border-radius:16px;padding:16px 20px;margin-bottom:24px;border:1px solid var(--color-border);}
+.top-panel .panel-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;}
+.top-panel .panel-row+.panel-row{margin-top:10px;padding-top:10px;border-top:1px solid var(--color-border);}
+.top-panel .title{font-weight:600;font-size:1.05rem;color:#0a2540;}
+.top-panel .subtitle{font-size:0.8rem;color:var(--color-text-muted);}
+.top-panel .lesson-info{margin-top:6px;font-size:0.78rem;color:var(--color-text-muted);line-height:1.4;}
+
+
+.toc-section{background:#fff;border:1px solid var(--color-border);border-radius:16px;padding:18px 22px;margin-bottom:22px;}
+.toc-section h2{margin-bottom:14px;font-size:1.25rem;}
+.toc-item{border:1px solid var(--color-border);border-radius:8px;margin-bottom:6px;background:#fff;}
+.toc-summary{font-weight:600;font-size:0.92rem;padding:8px 14px;cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;}
+.toc-summary:hover{background:var(--color-bg-subtle);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::before{content:"▶";font-size:0.7rem;color:var(--color-text-muted);transition:transform 0.2s;margin-right:6px;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);}
+.toc-actions{display:flex;flex-wrap:wrap;gap:6px;padding:2px 14px 8px 30px;}
+.toc-anchor{display:inline-flex;align-items:center;justify-content:center;min-height:30px;padding:4px 11px;border:1px solid var(--color-training);border-radius:6px;background:var(--color-training-bg);color:var(--color-training);font-size:0.78rem;font-weight:600;line-height:1.2;text-decoration:none;}
+.toc-anchor:hover{background:var(--color-training);color:#fff;}
+.toc-keywords{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:14px;padding:12px 16px;background:var(--color-basic-bg);border-radius:12px;color:#0f5132;font-weight:600;line-height:1.6;}
+
+.section{margin-bottom:8px;}
+
+.part-heading{font-size:1.5rem;font-weight:700;color:#0a2540;margin-top:32px;margin-bottom:14px;padding:8px 16px;background:var(--color-bg-subtle);border-radius:12px;border-left:6px solid var(--color-training);letter-spacing:-0.02em;}
+.part-heading .part-num{color:var(--color-training);}
+
+.footer{margin-top:32px;padding-top:16px;border-top:2px solid var(--color-border);text-align:center;font-size:0.8rem;color:var(--color-text-muted);}
+
+.flashcard-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:16px 0;}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--color-border);border-radius:12px;background:#fff;color:#0a2540;font:inherit;text-align:center;cursor:pointer;box-shadow:var(--shadow-card);transition:border-color 0.2s,background 0.2s,transform 0.2s;position:relative;}
+.flashcard:hover{border-color:var(--color-training);background:var(--color-training-bg);transform:translateY(-2px);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:80px;}
+.flashcard .front{font-weight:700;font-size:1.05rem;}
+.flashcard .back{display:none;color:var(--color-text-muted);font-size:0.95rem;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:6px;right:8px;font-size:0.55rem;text-transform:uppercase;background:#e2e8f0;padding:1px 8px;border-radius:10px;color:#2d3a4f;}
+.flashcard .card-tag.tag-ambitious{background:#e8d5f5;color:#4a1a6b;}
+.flashcard .card-tag.tag-trap{background:#f8d7da;color:#721c24;}
+.flashcard .card-tag.tag-basic{background:#d4edda;color:#155724;}
+
+.highlight-box{background:#fef9c3;border:1px solid #facc15;padding:1rem 1.8rem;border-radius:12px;margin:1.5rem 0;}
+.warning-box{background:#fee2e2;border:1px solid #f87171;padding:1rem 1.8rem;border-radius:12px;margin:1.5rem 0;}
+.ambitny-box{background:#dbeafe;border:1px solid #3b82f6;padding:1rem 1.8rem;border-radius:12px;margin:1.5rem 0;}
+
+.diagram{background:var(--color-bg-subtle);border:1px solid var(--color-border);border-radius:12px;padding:16px;margin:16px 0;text-align:center;overflow-x:auto;}
+.diagram svg{max-width:100%;height:auto;}
+.diagram .caption{font-size:0.82rem;color:var(--color-text-muted);font-style:italic;margin-top:8px;}
+
+.def-box{background:#eef7ff;border-left:4px solid #2b6cb0;border-radius:8px;padding:10px 14px;margin:10px 0;}
+.def-box .term{font-weight:700;color:#0a2540;}
+.def-box .meaning{color:#1e293b;}
+
+.curiosity{background:#fdf4ff;border-left:4px solid #a855f7;border-radius:8px;padding:10px 14px;margin:10px 0;font-size:0.92rem;}
+.curiosity .label{font-weight:700;color:#7c3aed;display:block;margin-bottom:2px;}
+
+.punnett-grid{display:grid;grid-template-columns:auto 1fr 1fr;gap:0;max-width:340px;margin:16px auto;border:1px solid var(--color-border);border-radius:8px;overflow:hidden;}
+.punnett-cell{padding:14px 8px;text-align:center;font-weight:600;font-size:1.05rem;border:1px solid var(--color-border);background:#fff;}
+.punnett-cell.header{background:#f1f4f8;font-size:0.95rem;color:#0a2540;font-weight:700;}
+.punnett-cell.dom{background:#e8f5e9;color:#2e7d32;}
+.punnett-cell.het{background:#fff3e0;color:#ef6c00;}
+.punnett-cell.rec{background:#ffebee;color:#c62828;}
+
+.money-grid{display:grid;grid-template-columns:auto 1fr 1fr;gap:0;max-width:280px;margin:16px auto;border:1px solid var(--color-border);border-radius:8px;overflow:hidden;}
+.money-cell{padding:12px 8px;text-align:center;font-weight:600;font-size:1rem;border:1px solid var(--color-border);background:#fff;}
+.money-cell.header{background:#fef3c7;color:#92400e;font-weight:700;}
+
+@media(max-width:600px){
+  .top-panel .panel-row{flex-direction:column;align-items:stretch;}
+  .container{padding:10px 6px;}
+  .toc-section{padding:12px 14px;}
+  .toc-summary{font-size:0.85rem;padding:6px 10px;}
+    .punnett-grid,.money-grid{max-width:100%;}
+}
+</style>
+</head>
+<body>
+<div class="container" id="app">
+
+<div class="card card-new">
+  <span class="card-label">Dopisek v5.1</span>
+  <p><strong>Niepełna vs kodominacja:</strong> Aa w niepełnej = barwa <em>pośrednia</em> (model: różowy). Aa w kodominacji = <em>oba</em> warianty widać naraz, nie zmieszane w jeden kolor.</p>
+  <p><strong>Rozmiar Punnetta:</strong> przy n niezależnych genach (po 2 allele) tabela ma <strong>4<sup>n</sup></strong> pól (1 gen: 4; 2: 16; 3: 64).</p>
+  <p><strong>Test krzyżowy dziś:</strong> w hodowli częściej markery DNA niż klasyczne Aa×aa — test z aa zostaje narzędziem szkolnym i logicznym.</p>
+  <p><strong>Granice Mendla (extra):</strong> mtDNA, imprinting — Punnett jednogenowy tego nie opisuje.</p>
+  <p><strong>Epistaza (extra, nie E8):</strong> bywa stosunek 9:3:4 (recesywna) zamiast 9:3:3:1.</p>
+</div>
+
+
+<!-- ============================================================
+TOP PANEL
+============================================================ -->
+<div class="top-panel" id="topPanel">
+  <div class="panel-row">
+    <div>
+      <div class="title">L017 — Jak przewidywać dziedziczenie jednej cechy?</div>
+      <div class="subtitle">Genetyka · Punnett · 3:1 · 1:2:1 · test krzyżowy · dominacja niepełna · ograniczenia Punnett</div>
+      <div class="lesson-info">
+        Poprzednia: L016 (kontrola podziałów / nowotwory) · Następna: L018 (płeć i X-linked)<br>
+        Warstwy: [PRZYPOMNIENIE] · [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY]<br>
+        <strong style="color:var(--color-new)">Wersja 5.0</strong> — przebudowa „od podstaw do zaawansowanych"
+      </div>
+    </div>
+    
+      <div class="progress-label"><span id="progressPercent">0%</span><span id="progressStatus">Zacznij naukę</span></div>
+    </div>
+  </div>
+  <div class="panel-row">
+    
+    
+  </div>
+</div>
+
+<!-- ============================================================
+TOC
+============================================================ -->
+<div class="toc-section" id="sec-toc">
+  <h2>Spis treści</h2>
+
+  <details class="toc-item" open>
+    <summary class="toc-summary">0. Wprowadzenie — o co tu chodzi?</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#wprowadzenie">Wprowadzenie</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">1–4. Pytanie, cele, kompas, problem</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#pytanie">Pytanie przewodnie</a>
+      <a class="toc-anchor" href="#cele">Cele + 80/20</a>
+      <a class="toc-anchor" href="#kompas">Kompas</a>
+      <a class="toc-anchor" href="#problem">Zacznij od problemu</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">5. Ściąga — definicje i konwencje</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#sciaga">Ściąga</a></nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">6. Wyjaśnienie od podstaw</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#wyjasnienie">Wyjaśnienie</a></nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">7. Krzyżówka testowa</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#krzyzowka-testowa">Krzyżówka testowa</a></nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">8–9. Poziom ambitny i zaawansowany</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#ambitny">MASTER</a>
+      <a class="toc-anchor" href="#zaawansowany">ZAAWANSOWANY</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">10. Klinika błędów + Klinika 2.0</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#klinika">Klinika</a></nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">11–15. Ćwiczenia, fiszki, test, checklista</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#cwiczenia">Ćwiczenia</a>
+      <a class="toc-anchor" href="#fiszki">Fiszki</a>
+      <a class="toc-anchor" href="#test">Test</a>
+      <a class="toc-anchor" href="#checklista">Checklista</a>
+    </nav>
+  </details>
+
+  <details class="toc-item">
+    <summary class="toc-summary">16–23. Mapa, słownik, dodatek, życie, status</summary>
+    <nav class="toc-actions">
+      <a class="toc-anchor" href="#mapa">Mapa</a>
+      <a class="toc-anchor" href="#slownik">Słownik</a>
+      <a class="toc-anchor" href="#dodatek">Dodatek</a>
+      <a class="toc-anchor" href="#zycie">Z życia</a>
+    </nav>
+  </details>
+
+  <div class="toc-keywords"><span>Słowa kluczowe: allel · genotyp · fenotyp · Punnett · 3:1 · 1:2:1 · dominacja · test krzyżowy · prawdopodobieństwo · ograniczenia Punnett</span></div>
+</div>
+
+<!-- ============================================================
+0. WPROWADZENIE
+============================================================ -->
+<section class="section" id="wprowadzenie">
+  <div class="part-heading"><span class="part-num">0. Wprowadzenie</span> <span class="level-badge level-new">NOWE</span></div>
+
+  <div class="card card-new">
+    <span class="card-label">O co tu właściwie chodzi?</span>
+    <p>Wyobraź sobie, że masz dwa psy tej samej rasy. Jeden ma uszy sterczące, drugi opadające. Chcesz wiedzieć: <strong>czy ich szczenięta będą miały uszy sterczące czy opadające?</strong> A może jedne i drugie? W jakich proporcjach?</p>
+    <p>Albo inaczej: rodzice mają brązowe oczy, a dziecko niebieskie. <strong>Czy to w ogóle możliwe?</strong> Skąd wiadomo, że to nie pomyłka?</p>
+    <p>Jeszcze inaczej: w rodzinie pojawia się choroba, która „przeskakuje pokolenia". Dziadek chorował, ojciec nie, a syn tak. <strong>Jak to możliwe?</strong></p>
+    <p style="margin-top:8px;font-weight:600;">Wszystkie te pytania sprowadzają się do jednego: jak przewidzieć, jakie cechy będzie miało potomstwo, jeśli znamy cechy rodziców?</p>
+  </div>
+
+  <div class="card card-correct">
+    <span class="card-label">Czego się nauczysz na tej lekcji?</span>
+    <ol>
+      <li><strong>Co to znaczy „cecha dziedziczna"</strong> i jak jest zapisana w DNA.</li>
+      <li><strong>Jak przewidzieć</strong>, jakie cechy może mieć potomstwo — za pomocą narzędzia zwanego <strong>szachownicą (kwadratem) Punnetta</strong>.</li>
+      <li><strong>Jak obliczyć prawdopodobieństwo</strong> — i dlaczego „25%" nie znaczy „co czwarte dziecko".</li>
+      <li><strong>Jak sprawdzić</strong>, czy osobnik o cesze dominującej jest homo- czy heterozygotą (krzyżówka testowa).</li>
+      <li><strong>Kiedy to narzędzie przestaje działać</strong> (ograniczenia Punnett).</li>
+    </ol>
+  </div>
+
+  <h3>Skąd ta nazwa — Reginald Punnett</h3>
+  <div class="curiosity">
+    <span class="label">Kim był Reginald Punnett?</span>
+    <p><strong>Reginald Crundall Punnett</strong> (1875–1967) był angielskim genetykiem, jednym z pierwszych, którzy spopularyzowali prawa Mendla w Anglii. Około 1900 r. wymyślił prosty diagram — kwadrat — który pozwala <strong>zobaczyć wszystkie możliwe kombinacje alleli</strong> u potomstwa. Do dziś używa się go na całym świecie.</p>
+    <p>Punnett był nie tylko twórcą szachownicy. Napisał także <strong>„Mendelism" (1905)</strong> — pierwszy podręcznik o prawach Mendla — i razem z Williamem Batesonem założył <strong>„Journal of Genetics"</strong>, jedno z najstarszych czasopism genetycznych. Ale najbardziej zapamiętano go właśnie za kwadrat, który nosi jego imię.</p>
+  </div>
+
+  <div class="card card-warning">
+    <span class="card-label">Kluczowa myśl</span>
+    <p>Punnett to <strong>narzędzie wizualne</strong>. Nie „wróży" konkretnych dzieci — pokazuje <strong>wszystkie możliwe wyniki i ich prawdopodobieństwa</strong>. To różnica między „co czwarte dziecko będzie chore" (błąd!) a „każde dziecko ma 25% szansy" (prawda).</p>
+  </div>
+
+  <h3>Dlaczego to ma znaczenie?</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Dziedzina</th><th>Zastosowanie</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Medycyna</strong></td><td>poradnictwo genetyczne — ocena ryzyka chorób dziedzicznych</td></tr>
+        <tr><td><strong>Rolnictwo</strong></td><td>hodowla odmian o pożądanych cechach</td></tr>
+        <tr><td><strong>Hodowla zwierząt</strong></td><td>planowanie krzyżówek</td></tr>
+        <tr><td><strong>Kryminalistyka</strong></td><td>wykluczanie ojcostwa (uproszczone)</td></tr>
+        <tr><td><strong>Codzienne życie</strong></td><td>zrozumienie, dlaczego dziecko może wyglądać inaczej niż rodzice</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============================================================
+1. PYTANIE PRZEWODNIE
+============================================================ -->
+<section class="section" id="pytanie">
+  <div class="part-heading"><span class="part-num">1. Pytanie przewodnie</span></div>
+  <div class="card card-correct">
+    <p style="font-size:1.1rem;font-weight:600;">Jak przewidywać dziedziczenie jednej cechy na podstawie alleli rodziców?</p>
+  </div>
+</section>
+
+<!-- ============================================================
+2. CELE + 80/20
+============================================================ -->
+<section class="section" id="cele">
+  <div class="part-heading"><span class="part-num">2. Cele lekcji</span> <span class="level-badge level-basic">PODSTAWA E8</span></div>
+
+  <div class="card card-correct">
+    <span class="card-label">Po tej lekcji umiesz:</span>
+    <ul>
+      <li><strong>definiować</strong> podstawowe pojęcia: gen, allel, genotyp, fenotyp, homozygota, heterozygota, dominujący, recesywny — i <strong>rozumieć, skąd się one biorą</strong>,</li>
+      <li><strong>zapisać i odczytać</strong> krzyżówkę jednogenową (kwadrat Punnetta),</li>
+      <li><strong>obliczać</strong> stosunki genotypów (1:2:1) i fenotypów (3:1 przy pełnej dominacji),</li>
+      <li><strong>uzasadnić</strong> wynik mejozą (L015) i <strong>rozróżnić</strong> prawdopodobieństwo od „gwarancji kolejności",</li>
+      <li>(ambitny) znać ideę dominacji niepełnej, kodominacji i testu krzyżowego,</li>
+      <li>(zaawansowany) rozumieć ograniczenia Punnett i potrafić je ominąć rachunkiem prawdopodobieństwa.</li>
+    </ul>
+  </div>
+
+  <div class="card card-hint">
+    <span class="card-label">Zasada 80/20 — co daje 80% efektu (i dlaczego)</span>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>20% = 80% efektu</th><th>Dlaczego to jest kluczowe</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Allel to wersja genu; homo = dwie takie same, hetero = dwie różne</strong></td><td>Bez tego nie odróżnisz AA od Aa i nie zrozumiesz, dlaczego fenotyp bywa mylący</td></tr>
+          <tr><td><strong>Punnett to tabela: gamety jednego rodzica × gamety drugiego</strong></td><td>To jest <strong>cała mechanika</strong> — reszta to interpretacja</td></tr>
+          <tr><td><strong>3:1 i 1:2:1</strong></td><td>Najczęstsze wyniki w zadaniach; musisz je rozpoznawać natychmiast</td></tr>
+          <tr><td><strong>P = 25% ≠ „co czwarte dziecko"</strong></td><td>Najczęstszy błąd w zadaniach i w rozumieniu genetyki</td></tr>
+          <tr><td><strong>Gameta ma 1 allel, bo mejoza rozdziela homologi</strong></td><td>To łączy L017 z L015 — bez tego Punnett to „magia"</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:6px;"><strong>Dlaczego to wystarczy?</strong> Bo 90% zadań E8 o dziedziczeniu jednogenowym sprowadza się do: zapisz genotypy → wypisz gamety → zrób Punnett → odczytaj stosunek. Reszta to niuanse.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+3. KOMPAS
+============================================================ -->
+<section class="section" id="kompas">
+  <div class="part-heading"><span class="part-num">3. Kompas</span> <span class="level-badge level-basic">PRZYPOMNIENIE</span></div>
+  <div class="card card-remember">
+    <span class="card-label">Co trzeba wiedzieć wcześniej</span>
+    <ul>
+      <li><strong>L011:</strong> DNA to nośnik informacji; informacja jest w kolejności zasad.</li>
+      <li><strong>L012:</strong> chromosomy homologiczne — w komórce ciała masz po jednym chromosomie od każdego rodzica.</li>
+      <li><strong>L015:</strong> mejoza redukuje 2n → n; <strong>gameta dostaje jeden chromosom z pary homologicznej</strong> → <strong>jeden allel z pary genów</strong>.</li>
+      <li><strong>L010:</strong> fenotyp = geny + środowisko + rozwój.</li>
+    </ul>
+    <p style="margin-top:8px;font-size:0.88rem;color:var(--color-text-muted);">Jeśli nie pamiętasz, jak powstają gamety — wróć do L015, sekcja 6B. To fundament Punnett.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+4. ZACZNIJ OD PROBLEMU
+============================================================ -->
+<section class="section" id="problem">
+  <div class="part-heading"><span class="part-num">4. Zacznij od problemu</span></div>
+  <div class="highlight-box">
+    <p><strong>Rodzice mają cechę dominującą, dziecko — recesywną. Czy to możliwe? Jakie genotypy?</strong></p>
+    <p style="margin-top:8px;">Zapisz hipotezę: ....................................</p>
+    <p style="margin-top:8px;font-size:0.9rem;color:#78350f;">💡 Po lekcji wróć do hipotezy i sprawdź, czy była trafna. Kluczowa wskazówka: jeśli dziecko ma cechę recesywną (aa), to <strong>oboje rodzice musieli dać mu „a"</strong>. Więc oboje muszą być co najmniej heterozygotami (Aa). Ale jak to możliwe, że rodzice z cechą dominującą mają dziecko z recesywną? Bo <strong>dominująca nie znaczy „jedyna"</strong> — heterozygota Aa wygląda jak dominująca, ale nosi ukryte „a".</p>
+  </div>
+</section>
+
+<!-- ============================================================
+5. ŚCIĄGA
+============================================================ -->
+<section class="section" id="sciaga">
+  <div class="part-heading"><span class="part-num">5. Ściąga</span> <span class="level-badge level-basic">PODSTAWA E8</span></div>
+
+  <h3>5.1. Skąd się bierze cały zapis — od DNA do allelu</h3>
+  <div class="card card-new">
+    <span class="card-label">Łańcuch: DNA → gen → allel → genotyp</span>
+    <ol>
+      <li><strong>DNA</strong> (L011) to cząsteczka, która przechowuje informację.</li>
+      <li><strong>Gen</strong> to odcinek DNA, który zawiera informację o jednym produkcie (białku/RNA), a ten produkt wpływa na cechę.</li>
+      <li><strong>Allel</strong> to <strong>wersja genu</strong>. Ten sam gen może występować w różnych wersjach — np. allel „A" (dominujący) i allel „a" (recesywny).</li>
+      <li>W komórce ciała (2n) masz <strong>dwa allele</strong> tego samego genu — jeden na chromosomie od matki, drugi od ojca (chromosomy homologiczne, L012).</li>
+      <li>W <strong>gamecie</strong> (n) masz <strong>jeden allel</strong> — bo w mejozie I homologi się rozchodzą (L015).</li>
+    </ol>
+    <p style="margin-top:6px;"><strong>To jest cała logika:</strong> dwa allele w komórce ciała → jeden allel w gamecie → Punnett pokazuje, co się stanie, gdy dwa allele się spotkają.</p>
+  </div>
+
+  <h3>5.2. Definicje — pełne wyjaśnienie</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Termin</th><th>Definicja</th><th>Co to znaczy w praktyce</th><th>Przykład</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Gen</strong></td><td>Odcinek DNA związany z cechą</td><td>„Przepis" na białko, które wpływa na cechę</td><td>Gen barwy kwiatu</td></tr>
+        <tr><td><strong>Allel</strong></td><td>Wersja genu</td><td>Ten sam gen, ale inna „wersja"</td><td>A (czerwony) / a (biały)</td></tr>
+        <tr><td><strong>Genotyp</strong></td><td>Zestaw alleli</td><td>To, co jest w DNA — „litery"</td><td>AA, Aa, aa</td></tr>
+        <tr><td><strong>Fenotyp</strong></td><td>Ujawniona cecha</td><td>To, co widać / mierzymy</td><td>Czerwony lub biały kwiat</td></tr>
+        <tr><td><strong>Homozygota</strong></td><td>Dwa takie same allele</td><td>AA lub aa</td><td>AA — dwa dominujące</td></tr>
+        <tr><td><strong>Heterozygota</strong></td><td>Dwa różne allele</td><td>Aa</td><td>Aa — jeden dominujący, jeden recesywny</td></tr>
+        <tr><td><strong>Dominujący</strong></td><td>Ujawnia się w heterozygocie</td><td>Wystarczy jeden allel, by cecha się pojawiła</td><td>A w Aa daje czerwony</td></tr>
+        <tr><td><strong>Recesywny</strong></td><td>Tylko w homozygocie</td><td>Potrzeba dwóch, by cecha się pojawiła</td><td>aa daje biały</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="card card-warning">
+    <span class="card-label">Uwaga</span>
+    <p>„Dominujący" <strong>nie</strong> znaczy: silniejszy, częstszy, lepszy, zdrowszy. To tylko opis <strong>sposobu ujawniania się</strong> w fenotypie.</p>
+  </div>
+
+  <h3>5.3. Dlaczego AA i Aa mogą wyglądać tak samo?</h3>
+  <div class="card card-hint">
+    <p>Przy <strong>pełnej dominacji</strong> allel A „przykrywa" efekt allelu a. Więc:</p>
+    <ul>
+      <li>AA → fenotyp dominujący</li>
+      <li>Aa → fenotyp dominujący (bo A przykrywa a)</li>
+      <li>aa → fenotyp recesywny (bo nie ma A)</li>
+    </ul>
+    <p><strong>Skutek:</strong> z samego wyglądu <strong>nie</strong> odczytasz, czy ktoś to AA, czy Aa. To jest właśnie powód, dla którego istnieje <strong>krzyżówka testowa</strong> (sekcja 7).</p>
+  </div>
+
+  <h3>5.4. Skąd gameta ma jeden allel? (most do L015)</h3>
+  <div class="card card-remember">
+    <p>W <strong>mejozie I</strong> chromosomy homologiczne się rozchodzą. Każda gameta dostaje <strong>jeden chromosom z pary</strong> → <strong>jeden allel z pary genów</strong>.</p>
+    <ul>
+      <li>AA → wszystkie gamety mają A</li>
+      <li>aa → wszystkie gamety mają a</li>
+      <li>Aa → połowa gamet ma A, połowa ma a (50/50)</li>
+    </ul>
+    <p style="margin-top:6px;"><strong>To dlatego w Punnett na brzegach piszemy pojedyncze litery (A, a), a nie pary (Aa).</strong></p>
+  </div>
+
+  <h3>5.5. Konwencja zapisu</h3>
+  <div class="card card-gray">
+    <ul>
+      <li><strong>Wielka litera</strong> = allel dominujący (A).</li>
+      <li><strong>Mała litera</strong> = allel recesywny (a).</li>
+      <li><strong>Zapis heterozygoty:</strong> zwykle duża litera pierwsza (Aa, nie aA).</li>
+      <li><strong>Zapis homozygoty:</strong> AA lub aa.</li>
+    </ul>
+    <p>To konwencja, nie prawo natury. W innych podręcznikach mogą być inne litery (np. B/b, D/d) — zasada pozostaje ta sama.</p>
+  </div>
+
+  <h3>5.6. Mnemotechniki</h3>
+  <div class="card card-correct">
+    <ul>
+      <li><strong>Duża = dominujący, mała = recesywny</strong> — konwencja zapisu (nie „lepszy")</li>
+      <li><strong>Homo = te same, hetero = różne</strong> — AA / Aa / aa</li>
+      <li><strong>1:2:1 → „jeden AA, dwa Aa, jeden aa"</strong> — genotypy</li>
+      <li><strong>3:1 → „trzy dominujące, jeden recesywny"</strong> — fenotypy</li>
+      <li><strong>Gameta = 1 litera, nie 2</strong> — most do mejozy</li>
+    </ul>
+  </div>
+
+  <h3>5.7. Tabela zbiorcza — genotyp → fenotyp</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Genotyp</th><th>Nazwa</th><th>Fenotyp (pełna dominacja)</th></tr></thead>
+      <tbody>
+        <tr><td><strong>AA</strong></td><td>homozygota dominująca</td><td>cecha dominująca</td></tr>
+        <tr><td><strong>Aa</strong></td><td>heterozygota</td><td>cecha dominująca (ale nosi ukryte a)</td></tr>
+        <tr><td><strong>aa</strong></td><td>homozygota recesywna</td><td>cecha recesywna</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============================================================
+6. WYJAŚNIENIE OD PODSTAW
+============================================================ -->
+<section class="section" id="wyjasnienie">
+  <div class="part-heading"><span class="part-num">6. Wyjaśnienie od podstaw</span></div>
+
+  <h3>6.1. Po co w ogóle Punnett? (logika narzędzia)</h3>
+  <div class="card card-new">
+    <span class="card-label">Analogia z monetami</span>
+    <p>Wyobraź sobie, że masz dwie monety. Każda może wypaść orłem (O) lub reszką (R). Chcesz wiedzieć, <strong>jakie są możliwe wyniki rzutu dwiema monetami</strong>:</p>
+    <div class="money-grid">
+      <div class="money-cell header"></div>
+      <div class="money-cell header">O</div>
+      <div class="money-cell header">R</div>
+      <div class="money-cell header">O</div>
+      <div class="money-cell">OO</div>
+      <div class="money-cell">OR</div>
+      <div class="money-cell header">R</div>
+      <div class="money-cell">RO</div>
+      <div class="money-cell">RR</div>
+    </div>
+    <p>To dokładnie ten sam pomysł co Punnett! Tyle że zamiast monet mamy <strong>gamety</strong>, a zamiast orła/reszki — <strong>allele</strong>.</p>
+    <p><strong>Punnett to tabela, która pokazuje wszystkie możliwe połączenia gamet.</strong></p>
+  </div>
+
+  <h3>6.2. Jak zrobić Punnett — krok po kroku</h3>
+  <div class="card card-hint">
+    <ol>
+      <li><strong>Zapisz genotypy rodziców</strong> (np. Aa × Aa).</li>
+      <li><strong>Wypisz gamety każdego rodzica</strong> (po jednym allelu z pary):
+        <ul>
+          <li>Aa → A i a</li>
+          <li>AA → A i A (wszystkie takie same)</li>
+          <li>aa → a i a</li>
+        </ul>
+      </li>
+      <li><strong>Narysuj tabelę:</strong> gamety jednego rodzica u góry, drugiego z boku.</li>
+      <li><strong>Wypełnij pola:</strong> w każdą kratkę wpisz jeden allel z góry + jeden z boku.</li>
+      <li><strong>Policz genotypy</strong> (ile AA, ile Aa, ile aa).</li>
+      <li><strong>Zamień na fenotypy</strong> (pamiętając o dominacji).</li>
+    </ol>
+  </div>
+
+  <h3>6.3. Przykład prowadzony — Aa × Aa (pełny tok rozumowania)</h3>
+  <div class="card card-correct">
+    <p><strong>Dane:</strong> Oboje rodzice to heterozygoty Aa (np. czerwone kwiaty, ale noszą ukryty allel biały).</p>
+    <p><strong>Krok 1.</strong> Gamety każdego rodzica: A i a.</p>
+    <p><strong>Krok 2.</strong> Tabela:</p>
+    <div class="punnett-grid">
+      <div class="punnett-cell header"></div>
+      <div class="punnett-cell header">A</div>
+      <div class="punnett-cell header">a</div>
+      <div class="punnett-cell header">A</div>
+      <div class="punnett-cell dom">AA</div>
+      <div class="punnett-cell het">Aa</div>
+      <div class="punnett-cell header">a</div>
+      <div class="punnett-cell het">Aa</div>
+      <div class="punnett-cell rec">aa</div>
+    </div>
+    <p><strong>Krok 3.</strong> Genotypy: AA (1), Aa (2), aa (1) → stosunek <strong>1:2:1</strong>.</p>
+    <p><strong>Krok 4.</strong> Fenotypy (pełna dominacja): AA i Aa = czerwone, aa = białe → stosunek <strong>3:1</strong>.</p>
+    <p><strong>Krok 5.</strong> Prawdopodobieństwa: P(AA) = 1/4, P(Aa) = 2/4 = 1/2, P(aa) = 1/4.</p>
+    <p><strong>Wniosek:</strong> 75% potomstwa będzie miało kwiaty czerwone, 25% białe.</p>
+  </div>
+
+  <h3>6.4. Dlaczego 3:1, a nie 2:2? (kluczowe pytanie)</h3>
+  <div class="card card-new">
+    <p>Bo <strong>tylko jedno z czterech pól</strong> daje fenotyp recesywny (aa). Pozostałe trzy (AA, Aa, Aa) dają fenotyp dominujący. To nie „2 dominujące i 2 recesywne" — to „3 dominujące i 1 recesywny".</p>
+  </div>
+
+  <h3>6.5. Dlaczego 1:2:1, a nie 1:1:2?</h3>
+  <div class="card card-new">
+    <p>Bo heterozygota Aa powstaje na <strong>dwa sposoby</strong>:</p>
+    <ul>
+      <li>A od matki + a od ojca</li>
+      <li>a od matki + A od ojca</li>
+    </ul>
+    <p>To dwa różne pola w tabeli, ale <strong>ten sam genotyp</strong> (Aa). Dlatego Aa występuje <strong>dwa razy</strong> częściej niż AA czy aa.</p>
+  </div>
+
+  <h3>6.6. Pięć podstawowych krzyżówek — pełne tabele</h3>
+
+  <h4>AA × AA</h4>
+  <div class="punnett-grid">
+    <div class="punnett-cell header"></div>
+    <div class="punnett-cell header">A</div>
+    <div class="punnett-cell header">A</div>
+    <div class="punnett-cell header">A</div>
+    <div class="punnett-cell dom">AA</div>
+    <div class="punnett-cell dom">AA</div>
+    <div class="punnett-cell header">A</div>
+    <div class="punnett-cell dom">AA</div>
+    <div class="punnett-cell dom">AA</div>
+  </div>
+  <p style="text-align:center;font-weight:600;">100% AA · 100% fenotyp dominujący</p>
+
+  <h4>aa × aa</h4>
+  <div class="punnett-grid">
+    <div class="punnett-cell header"></div>
+    <div class="punnett-cell header">a</div>
+    <div class="punnett-cell header">a</div>
+    <div class="punnett-cell header">a</div>
+    <div class="punnett-cell rec">aa</div>
+    <div class="punnett-cell rec">aa</div>
+    <div class="punnett-cell header">a</div>
+    <div class="punnett-cell rec">aa</div>
+    <div class="punnett-cell rec">aa</div>
+  </div>
+  <p style="text-align:center;font-weight:600;">100% aa · 100% fenotyp recesywny</p>
+
+  <h4>AA × aa</h4>
+  <div class="punnett-grid">
+    <div class="punnett-cell header"></div>
+    <div class="punnett-cell header">A</div>
+    <div class="punnett-cell header">A</div>
+    <div class="punnett-cell header">a</div>
+    <div class="punnett-cell het">Aa</div>
+    <div class="punnett-cell het">Aa</div>
+    <div class="punnett-cell header">a</div>
+    <div class="punnett-cell het">Aa</div>
+    <div class="punnett-cell het">Aa</div>
+  </div>
+  <p style="text-align:center;font-weight:600;">100% Aa · 100% fenotyp dominujący (wszyscy nosiciele)</p>
+
+  <h4>Aa × Aa</h4>
+  <div class="punnett-grid">
+    <div class="punnett-cell header"></div>
+    <div class="punnett-cell header">A</div>
+    <div class="punnett-cell header">a</div>
+    <div class="punnett-cell header">A</div>
+    <div class="punnett-cell dom">AA</div>
+    <div class="punnett-cell het">Aa</div>
+    <div class="punnett-cell header">a</div>
+    <div class="punnett-cell het">Aa</div>
+    <div class="punnett-cell rec">aa</div>
+  </div>
+  <p style="text-align:center;font-weight:600;">1 AA : 2 Aa : 1 aa · 3:1 (fenotypy)</p>
+
+  <h4>Aa × aa (test krzyżowy)</h4>
+  <div class="punnett-grid">
+    <div class="punnett-cell header"></div>
+    <div class="punnett-cell header">A</div>
+    <div class="punnett-cell header">a</div>
+    <div class="punnett-cell header">a</div>
+    <div class="punnett-cell het">Aa</div>
+    <div class="punnett-cell rec">aa</div>
+    <div class="punnett-cell header">a</div>
+    <div class="punnett-cell het">Aa</div>
+    <div class="punnett-cell rec">aa</div>
+  </div>
+  <p style="text-align:center;font-weight:600;">1 Aa : 1 aa · 1:1</p>
+
+  <h3>6.7. Tabela zbiorcza — wyniki krzyżówek</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Rodzice</th><th>Potomstwo (genotypy)</th><th>Potomstwo (fenotypy)</th><th>Po co</th></tr></thead>
+      <tbody>
+        <tr><td>AA × AA</td><td>100% AA</td><td>100% dominujący</td><td>linia czysta dominująca</td></tr>
+        <tr><td>aa × aa</td><td>100% aa</td><td>100% recesywny</td><td>linia czysta recesywna</td></tr>
+        <tr><td>AA × aa</td><td>100% Aa</td><td>100% dominujący</td><td>pokolenie F1 u Mendla</td></tr>
+        <tr><td>Aa × Aa</td><td>1:2:1</td><td>3:1</td><td>F2, klasyka E8</td></tr>
+        <tr><td>Aa × aa</td><td>1:1</td><td>1:1</td><td>test krzyżowy</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>6.8. 6A. Dlaczego?</h3>
+  <div class="card card-hint">
+    <ol>
+      <li><strong>Dlaczego gameta ma jeden allel?</strong> Bo w mejozie I homologi się rozchodzą (L015).</li>
+      <li><strong>Dlaczego połączenie gamet jest losowe?</strong> Losowy plemnik × losowa komórka jajowa.</li>
+      <li><strong>Dlaczego przy Aa × Aa jest 3:1, a nie 2:2?</strong> Cztery równoprawdopodobne pola Punnetta; tylko jedno (aa) daje fenotyp recesywny.</li>
+      <li><strong>Dlaczego genotypy 1:2:1, a nie 1:1:2?</strong> Heterozygota Aa powstaje na <strong>dwa</strong> sposoby (A od matki + a od ojca <strong>oraz</strong> odwrotnie).</li>
+    </ol>
+  </div>
+
+  <h3>6.9. 6B. Krok po kroku — jak zrobić Punnett</h3>
+  <div class="card card-remember">
+    <ol>
+      <li>Zapisz genotypy rodziców.</li>
+      <li>Wypisz gamety każdego rodzica (po jednym allelu z pary).</li>
+      <li>Zbuduj tabelę: gamety jednego rodzica u góry, drugiego z boku.</li>
+      <li>Wypełnij pola (łącz po jednym allelu z każdej strony).</li>
+      <li>Odczytaj genotypy i policz stosunek.</li>
+      <li>Zamień na fenotypy (pamiętając o dominacji).</li>
+    </ol>
+    <p style="margin-top:6px;"><strong>Gamety:</strong></p>
+    <ul>
+      <li>AA → wszystkie A</li>
+      <li>aa → wszystkie a</li>
+      <li>Aa → połowa A, połowa a</li>
+    </ul>
+  </div>
+
+  <h3>6.10. 6C. Przykład prowadzony — pełny</h3>
+  <div class="card card-correct">
+    <p><strong>Dane:</strong> Krzyżówka Aa × Aa (np. dwa czarne koty, które noszą ukryty allel na rude futro).</p>
+    <p><strong>Pytanie:</strong> Jakie jest prawdopodobieństwo, że kocię będzie rude?</p>
+    <p><strong>Rozumowanie:</strong></p>
+    <ol>
+      <li>Każdy rodzic Aa → gamety: A i a (po 50%).</li>
+      <li>Punnett:</li>
+    </ol>
+    <div class="punnett-grid">
+      <div class="punnett-cell header"></div>
+      <div class="punnett-cell header">A</div>
+      <div class="punnett-cell header">a</div>
+      <div class="punnett-cell header">A</div>
+      <div class="punnett-cell dom">AA (czarny)</div>
+      <div class="punnett-cell het">Aa (czarny)</div>
+      <div class="punnett-cell header">a</div>
+      <div class="punnett-cell het">Aa (czarny)</div>
+      <div class="punnett-cell rec">aa (rudy)</div>
+    </div>
+    <ol start="3">
+      <li>Genotypy: 1 AA : 2 Aa : 1 aa.</li>
+      <li>Fenotypy: 3 czarne : 1 rudy.</li>
+      <li>P(rudy) = P(aa) = 1/4 = 25%.</li>
+    </ol>
+    <p><strong>Odpowiedź:</strong> Prawdopodobieństwo, że kocię będzie rude, wynosi 25% — ale to <strong>przy każdym kocięciu osobno</strong>, nie „co czwarte".</p>
+  </div>
+
+  <h3>6.11. 6D. Powiązanie z innymi lekcjami</h3>
+  <div class="card card-gray">
+    <pre style="font-family:'Courier New',monospace;font-size:0.88rem;line-height:1.5;white-space:pre-wrap;">L011 (DNA) → L012 (chromosom) → L015 (mejoza → gameta z 1 allelem)
+  → L017 (Punnett) → L018 (płeć / X-linked) → L019 (ABO) → L020 (mutacje)</pre>
+    <ul style="margin-top:8px;">
+      <li><strong>L011:</strong> gen = odcinek DNA.</li>
+      <li><strong>L012:</strong> chromosomy homologiczne — dwa allele w komórce ciała.</li>
+      <li><strong>L015:</strong> mejoza → gameta ma jeden allel.</li>
+      <li><strong>L018:</strong> płeć i cechy sprzężone z X — inna „geometria" dziedziczenia.</li>
+      <li><strong>L019:</strong> ABO — wyjątek: 3 allele + kodominacja.</li>
+      <li><strong>L020:</strong> mutacje → nowe allele → zmienność.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================
+7. KRZYŻÓWKA TESTOWA
+============================================================ -->
+<section class="section" id="krzyzowka-testowa">
+  <div class="part-heading"><span class="part-num">7. Krzyżówka testowa</span> <span class="level-badge level-new">NOWA SEKCJA</span></div>
+
+  <h3>7.1. Problem: nie wiesz, czy osobnik dominujący to AA czy Aa</h3>
+  <div class="card card-hint">
+    <p>Masz roślinę o czerwonych kwiatach. Wiesz, że ma <strong>co najmniej jeden allel A</strong>. Ale czy jest:</p>
+    <ul>
+      <li><strong>AA</strong> (homozygota dominująca), czy</li>
+      <li><strong>Aa</strong> (heterozygota)?</li>
+    </ul>
+    <p>Z <strong>fenotypu</strong> tego nie odróżnisz — oba wyglądają tak samo (sekcja 5.3).</p>
+  </div>
+
+  <h3>7.2. Rozwiązanie: skrzyżuj z homozygotą recesywną (aa)</h3>
+  <div class="card card-correct">
+    <p>To właśnie <strong>krzyżówka testowa</strong> (inaczej: test cross, krzyżówka wsteczna).</p>
+
+    <h4>Jeśli testowany osobnik to AA:</h4>
+    <div class="punnett-grid">
+      <div class="punnett-cell header"></div>
+      <div class="punnett-cell header">A</div>
+      <div class="punnett-cell header">A</div>
+      <div class="punnett-cell header">a</div>
+      <div class="punnett-cell het">Aa</div>
+      <div class="punnett-cell het">Aa</div>
+      <div class="punnett-cell header">a</div>
+      <div class="punnett-cell het">Aa</div>
+      <div class="punnett-cell het">Aa</div>
+    </div>
+    <p style="text-align:center;font-weight:600;">100% Aa → wszystkie dzieci dominujące (100% czerwonych)</p>
+
+    <h4>Jeśli testowany osobnik to Aa:</h4>
+    <div class="punnett-grid">
+      <div class="punnett-cell header"></div>
+      <div class="punnett-cell header">A</div>
+      <div class="punnett-cell header">a</div>
+      <div class="punnett-cell header">a</div>
+      <div class="punnett-cell het">Aa</div>
+      <div class="punnett-cell rec">aa</div>
+      <div class="punnett-cell header">a</div>
+      <div class="punnett-cell het">Aa</div>
+      <div class="punnett-cell rec">aa</div>
+    </div>
+    <p style="text-align:center;font-weight:600;">50% Aa : 50% aa → połowa dzieci recesywnych (50% białych)</p>
+  </div>
+
+  <h3>7.3. Wniosek</h3>
+  <div class="card card-warning">
+    <ul>
+      <li>Jeśli w potomstwie <strong>pojawi się choć jedno dziecko z cechą recesywną</strong> → testowany osobnik był <strong>Aa</strong>.</li>
+      <li>Jeśli <strong>wszystkie</strong> dzieci mają cechę dominującą → prawdopodobnie <strong>AA</strong> (ale przy małej liczbie potomstwa to tylko sugestia — może być Aa, które przypadkiem nie dało aa).</li>
+    </ul>
+    <p style="margin-top:6px;"><strong>Uwaga praktyczna:</strong> „Wszystkie dzieci dominujące" przy <strong>małej</strong> liczbie potomstwa <strong>nie dowodzi</strong> AA. Dopiero duża próba (dziesiątki, setki) daje pewność statystyczną.</p>
+  </div>
+
+  <h3>7.4. Po co to komu?</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Dziedzina</th><th>Zastosowanie</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Rolnictwo</strong></td><td>selekcja odmian homozygotycznych pod względem pożądanych cech (np. odporność na choroby)</td></tr>
+        <tr><td><strong>Hodowla zwierząt</strong></td><td>planowanie krzyżówek w celu uzyskania pożądanych cech</td></tr>
+        <tr><td><strong>Medycyna</strong></td><td>ocena ryzyka chorób recesywnych u potomstwa</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>7.5. Przykład praktyczny</h3>
+  <div class="card card-correct">
+    <p><strong>Dane:</strong> Hodowca ma byka o pożądanej cesze dominującej (np. duża masa mięśniowa). Chce wiedzieć, czy byk jest AA (homozygota) czy Aa (heterozygota) — bo tylko AA daje <strong>wszystkim</strong> potomstwu pożądaną cechę.</p>
+    <p><strong>Rozwiązanie:</strong> Krzyżuje byka z krowami o cesze recesywnej (aa). Jeśli w potomstwie pojawi się choć jedno cielę bez pożądanej cechy → byk był Aa. Jeśli wszystkie cielęta mają pożądaną cechę → prawdopodobnie AA.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+8. POZIOM AMBITNY
+============================================================ -->
+<section class="section" id="ambitny">
+  <div class="part-heading"><span class="part-num">8. Poziom ambitny</span> <span class="level-badge level-ambitious">MASTER</span></div>
+
+  <h3>8.1. Prawdopodobieństwo ≠ przeznaczenie</h3>
+  <div class="card card-ambitious">
+    <span class="card-label">P(aa) = 1/4 przy każdym dziecku osobno</span>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Sytuacja</th><th>Prawda</th></tr></thead>
+        <tbody>
+          <tr><td>Rodzina ma już 3 dzieci z cechą dominującą</td><td>4. dziecko <strong>nadal</strong> ma P(aa) = 1/4</td></tr>
+          <tr><td>„Co czwarte musi być recesywne"</td><td><strong>Fałsz</strong> — to nie kolejka, tylko P</td></tr>
+          <tr><td>Dwoje kolejnych dzieci aa</td><td>P = 1/4 × 1/4 = <strong>1/16</strong> (reguła iloczynu)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:6px;"><strong>Analogia:</strong> Rzut monetą 4 razy nie gwarantuje 2 orłów i 2 reszek. Tak samo 4 dzieci Aa × Aa nie gwarantuje dokładnie 3:1. Mendel mówił o <strong>dużej liczbie</strong> potomstwa, nie o czwórce dzieci w jednej rodzinie.</p>
+  </div>
+
+  <h3>8.2. Reguła iloczynu i sumy</h3>
+  <div class="card card-hint">
+    <ul>
+      <li><strong>Reguła iloczynu:</strong> P(A i B) = P(A) · P(B) — gdy zdarzenia są niezależne.</li>
+      <li><strong>Reguła sumy:</strong> P(A lub B) = P(A) + P(B) — gdy zdarzenia się wykluczają.</li>
+    </ul>
+    <p style="margin-top:6px;"><strong>Przykłady:</strong></p>
+    <ul>
+      <li>P(dwoje kolejnych dzieci aa) = 1/4 · 1/4 = <strong>1/16</strong></li>
+      <li>P(dokładnie jedno z dwojga dzieci aa) = 1/4 · 3/4 + 3/4 · 1/4 = <strong>3/8</strong></li>
+      <li>P(co najmniej jedno z dwojga aa) = 1 − P(żadne aa) = 1 − (3/4 · 3/4) = 1 − 9/16 = <strong>7/16</strong></li>
+    </ul>
+  </div>
+
+  <h3>8.3. Zadanie odwrócone</h3>
+  <div class="card card-ambitious">
+    <p>Rodzice z fenotypem dominującym + dziecko recesywne (aa) → <strong>oboje rodzice muszą być Aa × Aa</strong>.</p>
+    <p><strong>Dlaczego?</strong> Bo dziecko aa potrzebuje dwóch alleli „a" — po jednym od każdego rodzica. Skoro rodzice mają fenotyp dominujący, ich genotypy to A_, ale skoro dają „a", muszą być Aa.</p>
+  </div>
+
+  <h3>8.4. Rozkład prawdopodobieństw w rodzinie z 4 dzieci</h3>
+  <div class="card card-new">
+    <p>Możliwe wyniki w rodzinie z 4 dzieci (Aa × Aa):</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Liczba dzieci z cechą recesywną</th><th>Prawdopodobieństwo</th><th>Wartość</th></tr></thead>
+        <tbody>
+          <tr><td>0 (wszystkie dominujące)</td><td>(3/4)⁴</td><td>81/256 ≈ <strong>32%</strong></td></tr>
+          <tr><td>1 (jedno recesywne)</td><td>4 · (3/4)³ · (1/4)</td><td>108/256 ≈ <strong>42%</strong></td></tr>
+          <tr><td>2 (dwa recesywne)</td><td>6 · (3/4)² · (1/4)²</td><td>54/256 ≈ <strong>21%</strong></td></tr>
+          <tr><td>3 (trzy recesywne)</td><td>4 · (3/4) · (1/4)³</td><td>12/256 ≈ <strong>5%</strong></td></tr>
+          <tr><td>4 (wszystkie recesywne)</td><td>(1/4)⁴</td><td>1/256 ≈ <strong>0,4%</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>Wniosek:</strong> W małej rodzinie stosunek 3:1 może się nie pojawić — i to jest <strong>normalne</strong>.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+9. POZIOM ZAAWANSOWANY
+============================================================ -->
+<section class="section" id="zaawansowany">
+  <div class="part-heading"><span class="part-num">9. Poziom zaawansowany</span> <span class="level-badge level-ambitious">ZAAWANSOWANY</span></div>
+
+  <h3>9.1. Typy dominacji — pełna tabela</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Pojęcie</th><th>Idea</th><th>Stosunek fenotypów (przykład)</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Dominacja pełna</strong></td><td>Aa = AA w wyglądzie</td><td>Aa × Aa → <strong>3:1</strong></td></tr>
+        <tr><td><strong>Dominacja niepełna</strong></td><td>Aa = pośredni (np. różowy kwiat)</td><td>Aa × Aa → <strong>1:2:1</strong></td></tr>
+        <tr><td><strong>Kodominacja</strong></td><td>oba allele widoczne naraz (np. ABO: AB)</td><td>zależnie od alleli</td></tr>
+        <tr><td><strong>Allele wielokrotne</strong></td><td>więcej niż 2 allele w populacji (Iᴬ, Iᴮ, i)</td><td>grupy krwi (L019)</td></tr>
+        <tr><td><strong>Test krzyżowy</strong></td><td>krzyżówka z <strong>aa</strong> — rozróżnia AA od Aa</td><td>AA×aa → 100% Aa; Aa×aa → 1:1</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>9.2. Dominacja niepełna — przykład</h3>
+  <div class="card card-new">
+    <p><strong>Czerwony kwiat (RR) × biały kwiat (rr) → wszystkie różowe (Rr)</strong></p>
+    <p>W dominacji niepełnej heterozygota Rr ma fenotyp <strong>pośredni</strong> — nie czerwony, nie biały, ale różowy. Dlatego w pokoleniu F2 (Rr × Rr):</p>
+    <div class="punnett-grid">
+      <div class="punnett-cell header"></div>
+      <div class="punnett-cell header">R</div>
+      <div class="punnett-cell header">r</div>
+      <div class="punnett-cell header">R</div>
+      <div class="punnett-cell rec">RR (czerwony)</div>
+      <div class="punnett-cell het">Rr (różowy)</div>
+      <div class="punnett-cell header">r</div>
+      <div class="punnett-cell het">Rr (różowy)</div>
+      <div class="punnett-cell dom">rr (biały)</div>
+    </div>
+    <p style="text-align:center;font-weight:600;">1:2:1 (czerwony : różowy : biały) — genotyp = fenotyp</p>
+    <p><strong>Uwaga:</strong> To <strong>model szkolny</strong>. W rzeczywistości barwy kwiatów są często wielogenowe.</p>
+  </div>
+
+  <h3>9.3. Kodominacja — przykład</h3>
+  <div class="card card-new">
+    <p><strong>ABO (uproszczenie, szczegóły w L019):</strong></p>
+    <ul>
+      <li>Allel Iᴬ → antygen A</li>
+      <li>Allel Iᴮ → antygen B</li>
+      <li>Allel i → brak antygenu</li>
+    </ul>
+    <p><strong>Kodominacja:</strong> Iᴬ i Iᴮ <strong>oba się ujawniają</strong> w heterozygocie IᴬIᴮ → grupa AB. To nie „mieszanka", ale <strong>współwystępowanie</strong> obu antygenów.</p>
+    <p><strong>Różnica kluczowa:</strong></p>
+    <ul>
+      <li><strong>Niepełna dominacja:</strong> Aa = pośredni (np. różowy)</li>
+      <li><strong>Kodominacja:</strong> Aa = oba naraz (np. AB)</li>
+    </ul>
+  </div>
+
+  <h3>9.4. Ograniczenia szachownicy Punnetta</h3>
+  <div class="card card-warning">
+    <span class="card-label">Kiedy Punnett przestaje działać?</span>
+    <p>Punnett jest świetny dla <strong>1–2 cech</strong>. Ale:</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Liczba cech</th><th>Rozmiar tabeli</th><th>Praktyczność</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>2×2 = 4 pola</td><td>idealna</td></tr>
+          <tr><td>2</td><td>4×4 = 16 pól</td><td>dobra</td></tr>
+          <tr><td>3</td><td>8×8 = 64 pola</td><td>niepraktyczna</td></tr>
+          <tr><td>4</td><td>16×16 = 256 pól</td><td>koszmar</td></tr>
+          <tr><td>5+</td><td>32×32+</td><td>niemożliwa</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>Więcej niż 2 cechy</strong> → używamy <strong>rachunku prawdopodobieństwa</strong>, nie tabeli.</p>
+    <p><strong>Czego Punnett nie uwzględnia:</strong></p>
+    <ul>
+      <li><strong>Epistaza</strong> — jeden gen maskuje efekt innego</li>
+      <li><strong>Geny sprzężone</strong> — nie segregują niezależnie (są na tym samym chromosomie)</li>
+      <li><strong>Dziedziczenie poligeniczne</strong> — wiele genów na jedną cechę (np. wzrost, kolor skóry)</li>
+      <li><strong>Wpływ środowiska</strong> — fenotyp = geny + środowisko (L010)</li>
+      <li><strong>Mutacje de novo</strong> — nowe allele, których nie ma u rodziców</li>
+      <li><strong>Niepełna penetracja</strong> — allel jest, ale się nie ujawnia</li>
+    </ul>
+  </div>
+
+  <h3>9.5. Alternatywa dla wielu cech — rachunek prawdopodobieństwa</h3>
+  <div class="card card-hint">
+    <p>Dla dwóch cech niezależnych (AaBb × AaBb):</p>
+    <ul>
+      <li>Zamiast tabeli 4×4, można policzyć osobno: P(A_) = 3/4, P(aa) = 1/4 itd.</li>
+      <li>P(A_B_) = 3/4 · 3/4 = 9/16</li>
+      <li>P(A_bb) = 3/4 · 1/4 = 3/16</li>
+      <li>P(aaB_) = 1/4 · 3/4 = 3/16</li>
+      <li>P(aabb) = 1/4 · 1/4 = 1/16</li>
+    </ul>
+    <p><strong>Stosunek: 9:3:3:1</strong> (II prawo Mendla)</p>
+  </div>
+
+  <h3>9.6. Plejotropia i epistaza (poziom olimpijski)</h3>
+  <div class="card card-ambitious">
+    <ul>
+      <li><strong>Plejotropia</strong> — jeden gen wpływa na wiele cech (np. gen odpowiedzialny za fenyloketonurię wpływa na układ nerwowy i pigmentację).</li>
+      <li><strong>Epistaza</strong> — gen maskuje efekt innego genu (np. gen albinizmu maskuje geny koloru sierści).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================
+10. KLINIKA BŁĘDÓW
+============================================================ -->
+<section class="section" id="klinika">
+  <div class="part-heading"><span class="part-num">10. Klinika błędów</span> <span class="level-badge level-trap">PUŁAPKI</span></div>
+
+  <h3>10.1. Tabela błędów</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Błąd</th><th>Poprawa</th><th>Dlaczego?</th></tr></thead>
+      <tbody>
+        <tr class="error-row"><td>25% = co czwarte dziecko chore</td><td>P przy każdym dziecku</td><td>niezależność zdarzeń</td></tr>
+        <tr class="error-row"><td>Heterozygota ujawnia recesywny</td><td>dominujący</td><td>definicja dominacji</td></tr>
+        <tr class="error-row"><td>Genotyp = fenotyp</td><td>różne pojęcia</td><td>AA i Aa mogą wyglądać tak samo</td></tr>
+        <tr class="error-row"><td>Duża litera = częstszy allel</td><td>konwencja</td><td>dominacja ≠ częstość</td></tr>
+        <tr class="error-row"><td>Aa × Aa zawsze 3:1</td><td>tylko dom. pełna</td><td>przy niepełnej 1:2:1</td></tr>
+        <tr class="error-row"><td>Rodzice dominujący → dziecko recesywne niemożliwe</td><td>możliwe, jeśli oboje Aa</td><td>aa wymaga dwóch a</td></tr>
+        <tr class="error-row"><td>Krzyżówka testowa = zwykła krzyżówka</td><td>to krzyżówka z <strong>aa</strong></td><td>ma konkretny cel: rozróżnić AA od Aa</td></tr>
+        <tr class="error-row"><td>Punnett działa dla 5 cech</td><td>nie — 32×32 pola</td><td>ograniczenia narzędzia</td></tr>
+        <tr class="error-row"><td>„Dominujący" znaczy „lepszy/częstszy"</td><td>to tylko opis ujawniania</td><td>dominacja ≠ wartość</td></tr>
+        <tr class="error-row"><td>aA to inny genotyp niż Aa</td><td>ten sam genotyp</td><td>konwencja zapisu</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>10.2. Klinika 2.0 — pięć pełnych przykładów</h3>
+
+  <div class="card card-error">
+    <span class="card-label">Przykład 1 — „Skoro 25%, to co czwarte dziecko chore"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Skoro P(aa) = 25%, to co czwarte dziecko będzie chore."</li>
+      <li><strong>Znajdź:</strong> Gwarancja kolejności.</li>
+      <li><strong>Popraw:</strong> Każde dziecko osobno 25%.</li>
+      <li><strong>Reguła:</strong> Niezależność zdarzeń.</li>
+      <li><strong>Dlaczego:</strong> Zapłodnienie to osobne zdarzenie — poprzednie dzieci nie wpływają na następne.</li>
+      <li><strong>Podobne:</strong> P(dwoje kolejnych aa) = 1/16.</li>
+      <li><strong>Pułapka:</strong> Rodzina ma już troje dominujących. Czy czwarte „musi" być recesywne? <strong>Nie.</strong></li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">Przykład 2 — „AA i Aa to samo"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „AA i Aa to to samo, bo wyglądają tak samo."</li>
+      <li><strong>Znajdź:</strong> Mylenie genotypu z fenotypem.</li>
+      <li><strong>Popraw:</strong> Ten sam fenotyp, różny genotyp.</li>
+      <li><strong>Reguła:</strong> Genotyp ≠ fenotyp.</li>
+      <li><strong>Dlaczego:</strong> Allel dominujący ujawnia się w obu, ale Aa nosi ukryte „a" i może przekazać je potomstwu.</li>
+      <li><strong>Podobne:</strong> Rozróżnij AA od Aa testem krzyżowym.</li>
+      <li><strong>Pułapka:</strong> Czy z fenotypu można odczytać genotyp? <strong>Nie.</strong></li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">Przykład 3 — „Aa × aa daje 3:1"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Aa × aa daje 3:1, tak jak Aa × Aa."</li>
+      <li><strong>Znajdź:</strong> Zły stosunek.</li>
+      <li><strong>Popraw:</strong> 1:1.</li>
+      <li><strong>Reguła:</strong> Stosunek zależy od genotypów rodziców.</li>
+      <li><strong>Dlaczego:</strong> aa daje tylko a; Aa daje A i a — więc połowa dzieci dostanie A (dominujące), połowa a (recesywne).</li>
+      <li><strong>Podobne:</strong> AA × aa → 100% Aa.</li>
+      <li><strong>Pułapka:</strong> Aa × Aa → 3:1, ale tylko przy pełnej dominacji. <strong>Nie każda krzyżówka daje 3:1.</strong></li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">Przykład 4 — „Dominacja niepełna to to samo co kodominacja"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Niepełna dominacja i kodominacja to to samo."</li>
+      <li><strong>Znajdź:</strong> Mylenie dwóch pojęć.</li>
+      <li><strong>Popraw:</strong> Dominacja niepełna → fenotyp <strong>pośredni</strong> (Aa = różowy); kodominacja → <strong>oba allele widoczne naraz</strong> (AB = A i B jednocześnie).</li>
+      <li><strong>Reguła:</strong> Niepełna = mieszanie; kodominacja = współwystępowanie.</li>
+      <li><strong>Dlaczego:</strong> W niepełnej Aa wygląda inaczej niż AA; w kodominacji Aa pokazuje oba naraz.</li>
+      <li><strong>Podobne:</strong> Grupy krwi ABO (kodominacja Iᴬ Iᴮ).</li>
+      <li><strong>Pułapka:</strong> „Niepełna" ≠ „kodominacja" — to dwa różne modele.</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">Przykład 5 — „Punnett dla 4 cech"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Zrobię Punnett dla 4 cech."</li>
+      <li><strong>Znajdź:</strong> Nieznajomość ograniczeń narzędzia.</li>
+      <li><strong>Popraw:</strong> Dla 4 cech tabela ma 16×16 = 256 pól — użyj rachunku prawdopodobieństwa.</li>
+      <li><strong>Reguła:</strong> Punnett dla 1–2 cech; dalej — mnożenie P.</li>
+      <li><strong>Dlaczego:</strong> Rozmiar tabeli rośnie wykładniczo.</li>
+      <li><strong>Podobne:</strong> 3 cechy → 8×8 = 64 pola.</li>
+      <li><strong>Pułapka:</strong> Punnett to narzędzie, nie uniwersalna metoda.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================
+11. OBSERWACJA / MODEL
+============================================================ -->
+<section class="section" id="obserwacja">
+  <div class="part-heading"><span class="part-num">11. Obserwacja / model</span></div>
+  <div class="card card-gray">
+    <pre style="font-family:'Courier New',monospace;font-size:0.88rem;line-height:1.5;white-space:pre-wrap;">Problem: Jakie genotypy potomstwa z Aa × Aa?
+Hipoteza: 1:2:1 (genotypy), 3:1 (fenotypy przy pełnej dominacji).
+Materiał: kwadrat Punnetta.
+Obserwacja: 4 równoprawdopodobne pola.
+Wniosek: P(aa)=1/4; fenotyp 3:1.
+Ograniczenia: model dotyczy 1 genu i pełnej dominacji.
+BHP: brak.</pre>
+    <p style="margin-top:8px;font-style:italic;color:var(--color-text-muted);">Kwadrat Punnetta <strong>nie jest</strong> doświadczeniem — to model probabilistyczny.</p>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Typ</th><th>Przykład</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Obserwacja</strong></td><td>liczenie potomstwa w hodowli, izolacja DNA, preparat mitozy</td></tr>
+        <tr><td><strong>Model</strong></td><td>Punnett, schemat mejozy, rodowód</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Punnett <strong>przewiduje</strong> prawdopodobieństwa. Obserwacja <strong>sprawdza</strong>, czy przewidywania się zgadzają (przy dużej próbie).</p>
+</section>
+
+<!-- ============================================================
+12. ĆWICZENIA
+============================================================ -->
+<section class="section" id="cwiczenia">
+  <div class="part-heading"><span class="part-num">12. Ćwiczenia (12A–12D)</span> <span class="level-badge level-training">TRENING</span></div>
+
+  <h3>12A. Mini-check (5 pytań)</h3>
+  <div class="exercise">
+    <ol>
+      <li>Co to allel?</li>
+      <li>Co to heterozygota?</li>
+      <li>Co ujawnia się w Aa przy pełnej dominacji?</li>
+      <li>Skąd gameta ma jeden allel?</li>
+      <li>Co znaczy P = 25%?</li>
+    </ol>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-12a')">Pokaż odpowiedzi</button>
+    <div id="ans-12a" class="answer-content">
+      <ol>
+        <li>Wersja genu (A lub a).</li>
+        <li>Osobnik o dwóch różnych allelach (Aa).</li>
+        <li>Allel dominujący (A).</li>
+        <li>Bo w mejozie I homologi się rozchodzą.</li>
+        <li>Prawdopodobieństwo przy każdym dziecku osobno (nie gwarancja co czwartego).</li>
+      </ol>
+    </div>
+  </div>
+
+  <h3>12B. Ćwiczenie prowadzone</h3>
+  <div class="exercise">
+    <p><strong>Dane:</strong> Aa × Aa.</p>
+    <p><strong>Krok 1.</strong> Gamety: A, a (od każdego rodzica).</p>
+    <p><strong>Krok 2.</strong> Punnett: AA, Aa, Aa, aa.</p>
+    <p><strong>Krok 3.</strong> Genotypy 1:2:1; fenotypy 3:1; P(aa) = 1/4.</p>
+    <p><strong>Spróbuj sam:</strong> AA × aa → ?</p>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-12b')">Pokaż odpowiedź</button>
+    <div id="ans-12b" class="answer-content">
+      <p>Wszystkie dzieci Aa → 100% fenotyp dominujący.</p>
+    </div>
+  </div>
+
+  <h3>12C. Ćwiczenia samodzielne</h3>
+
+  <h4>A. Podstawa <span class="level-badge level-basic">A</span></h4>
+  <div class="exercise">
+    <ol>
+      <li>Zdefiniuj: allel, genotyp, fenotyp.</li>
+      <li>Homozygota vs heterozygota — przykład.</li>
+      <li>Aa × Aa — stosunek genotypów i fenotypów.</li>
+      <li>Co to allel dominujący?</li>
+    </ol>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-12c-a')">Pokaż odpowiedzi</button>
+    <div id="ans-12c-a" class="answer-content">
+      <ol>
+        <li>Allel — wersja genu; genotyp — zestaw alleli; fenotyp — ujawniona cecha.</li>
+        <li>Homozygota: AA lub aa; heterozygota: Aa.</li>
+        <li>Genotypy 1:2:1; fenotypy 3:1 (pełna dominacja).</li>
+        <li>Allel, który ujawnia się w heterozygocie (A).</li>
+      </ol>
+    </div>
+  </div>
+
+  <h4>B. Trening <span class="level-badge level-training">B</span></h4>
+  <div class="exercise">
+    <ol start="5">
+      <li>Narysuj Punnett dla AA × aa.</li>
+      <li>Popraw: „25% znaczy, że co czwarte dziecko będzie chore".</li>
+      <li>Rodzice mają fenotyp dominujący, dziecko recesywny. Jakie genotypy rodziców?</li>
+    </ol>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-12c-b')">Pokaż odpowiedzi</button>
+    <div id="ans-12c-b" class="answer-content">
+      <ol start="5">
+        <li>Wszystkie pola Aa.</li>
+        <li>25% to prawdopodobieństwo przy każdym dziecku osobno.</li>
+        <li>Oboje Aa (bo tylko wtedy mogą dać „a" dziecku).</li>
+      </ol>
+    </div>
+  </div>
+
+  <h4>C. Ambitne <span class="level-badge level-ambitious">C</span></h4>
+  <div class="exercise">
+    <ol start="8">
+      <li>P(dwoje kolejnych dzieci aa) w Aa × Aa?</li>
+      <li>Uzasadnij, dlaczego fenotypy w Aa × Aa dają 3:1, a nie 2:2.</li>
+      <li>Po co wykonuje się test krzyżowy?</li>
+    </ol>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-12c-c')">Pokaż odpowiedzi</button>
+    <div id="ans-12c-c" class="answer-content">
+      <ol start="8">
+        <li>1/4 · 1/4 = 1/16.</li>
+        <li>Bo tylko jedno z czterech pól (aa) daje fenotyp recesywny.</li>
+        <li>Aby odróżnić AA od Aa (krzyżujemy z aa).</li>
+      </ol>
+    </div>
+  </div>
+
+  <h4>D. Zaawansowane <span class="level-badge level-ambitious">D</span></h4>
+  <div class="exercise">
+    <ol start="11">
+      <li>Rodzice dominujący, jedno dziecko recesywne — genotypy rodziców?</li>
+      <li>Czy fenotyp dominujący = AA? Uzasadnij.</li>
+      <li>Jak mejoza (L015) wyjaśnia, że gameta ma jeden allel?</li>
+      <li>P(dokładnie jedno aa z dwojga dzieci) w Aa × Aa?</li>
+    </ol>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-12c-d')">Pokaż odpowiedzi</button>
+    <div id="ans-12c-d" class="answer-content">
+      <ol start="11">
+        <li>Oboje Aa (tylko wtedy mogą dać dziecku „a" + „a").</li>
+        <li>Nie — fenotyp dominujący to AA <strong>lub</strong> Aa. Bez testu nie odróżnisz.</li>
+        <li>W mejozie I homologi się rozchodzą; każda gameta dostaje jeden chromosom z pary → jeden allel.</li>
+        <li>1/4 · 3/4 + 3/4 · 1/4 = 3/8.</li>
+      </ol>
+    </div>
+  </div>
+
+  <h3>12D. PROBLEM / THINK <span class="level-badge level-ambitious">KONKURS</span></h3>
+  <div class="exercise">
+    <p>Zdrowi rodzice mają dwoje dzieci z cechą recesywną. Czy to przeczy modelowi Aa × Aa? Uzasadnij.</p>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-12d')">Pokaż odpowiedź</button>
+    <div id="ans-12d" class="answer-content">
+      <p><strong>Nie przeczy.</strong> Przy Aa × Aa każde dziecko ma P(aa) = 1/4. Dwoje kolejnych aa ma prawdopodobieństwo 1/16 — rzadkie, ale całkowicie możliwe. Model nie gwarantuje „3:1 w każdej rodzinie" — mówi o prawdopodobieństwie.</p>
+    </div>
+  </div>
+
+  <h3>Drabinka trudności</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Poziom</th><th>Zadanie</th></tr></thead>
+      <tbody>
+        <tr><td>ODTWÓRZ</td><td>Definicja allelu.</td></tr>
+        <tr><td>ZASTOSUJ</td><td>Oblicz P(aa).</td></tr>
+        <tr><td>WYJAŚNIJ</td><td>Dlaczego 3:1?</td></tr>
+        <tr><td>ODKRYJ</td><td>Jaki genotyp rodzica?</td></tr>
+        <tr><td>POŁĄCZ</td><td>Mejoza + dziedziczenie.</td></tr>
+        <tr><td>ZAKWESTIONUJ</td><td>Fenotyp dominujący = AA?</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============================================================
+13. ODPOWIEDZI
+============================================================ -->
+<section class="section" id="odpowiedzi">
+  <div class="part-heading"><span class="part-num">13. Odpowiedzi i sposób oceniania</span></div>
+
+  <div class="card card-gray">
+    <p><strong>Sposób oceniania:</strong></p>
+    <ul>
+      <li><strong>Podstawa:</strong> 1 pkt.</li>
+      <li><strong>Trening:</strong> 1 pkt za wynik, 1 pkt za uzasadnienie.</li>
+      <li><strong>Ambitne:</strong> 2 pkt.</li>
+      <li><strong>Zaawansowane:</strong> 3 pkt.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================
+14. FISZKI
+============================================================ -->
+<section class="section" id="fiszki">
+  <div class="part-heading"><span class="part-num">14. Fiszki</span> <span class="level-badge level-training">POWTÓRKA</span></div>
+  <div class="flashcard-grid">
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Allel</span><span class="back"><strong>Wersja genu</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Aa × Aa genotypy</span><span class="back"><strong>1 : 2 : 1</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Aa × Aa fenotypy</span><span class="back"><strong>3 : 1</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Co znaczy 25%?</span><span class="back"><strong>P przy każdym dziecku</strong></span><span class="card-tag tag-trap">pułapka</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Dominujący</span><span class="back"><strong>Ujawnia się w heterozygocie</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Homozygota</span><span class="back"><strong>AA lub aa</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Heterozygota</span><span class="back"><strong>Aa</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Test krzyżowy</span><span class="back"><strong>Krzyżówka z aa</strong></span><span class="card-tag tag-ambitious">ambitny</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">AA × aa</span><span class="back"><strong>100% Aa</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Aa × aa</span><span class="back"><strong>1 : 1</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Dominacja niepełna</span><span class="back"><strong>1:2:1 (fenotyp pośredni)</strong></span><span class="card-tag tag-ambitious">ambitny</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Kodominacja</span><span class="back"><strong>Oba allele widoczne naraz</strong></span><span class="card-tag tag-ambitious">ambitny</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">P(dwoje aa)?</span><span class="back"><strong>1/16</strong></span><span class="card-tag tag-ambitious">ambitny</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Ograniczenie Punnett</span><span class="back"><strong>&gt;2 cechy — niepraktyczne</strong></span><span class="card-tag tag-ambitious">ambitny</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Kto wymyślił Punnett?</span><span class="back"><strong>Reginald Punnett, ok. 1900</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+  </div>
+</section>
+
+<!-- ============================================================
+15. TEST KOŃCOWY
+============================================================ -->
+<section class="section" id="test">
+  <div class="part-heading"><span class="part-num">15. Test końcowy (3+2+2+1)</span> <span class="level-badge level-training">TRENING</span></div>
+  <div class="exercise">
+    <ol>
+      <li>(P) Allel / genotyp / fenotyp — definicje.</li>
+      <li>(P) Homozygota vs heterozygota.</li>
+      <li>(P) Aa × Aa — stosunek genotypów i fenotypów.</li>
+      <li>(T) Narysuj Punnett dla AA × aa.</li>
+      <li>(T) Popraw mit o „co czwartym dziecku".</li>
+      <li>(A) P(dwoje dzieci aa) w Aa × Aa?</li>
+      <li>(A) Rodzice dominujący, dziecko recesywne — genotypy rodziców?</li>
+      <li>(Z) Czy fenotyp dominujący = AA? Uzasadnij. Jak to sprawdzić?</li>
+    </ol>
+    <button class="answer-toggle" onclick="toggleAnswer('ans-test')">Pokaż odpowiedzi</button>
+    <div id="ans-test" class="answer-content">
+      <ol>
+        <li>Allel = wersja genu; genotyp = zestaw alleli; fenotyp = ujawniona cecha.</li>
+        <li>Homo = AA lub aa; hetero = Aa.</li>
+        <li>Genotypy 1:2:1; fenotypy 3:1 (pełna dominacja).</li>
+        <li>Wszystkie pola Aa (100% fenotyp dominujący).</li>
+        <li>25% to P przy każdym dziecku osobno — nie kolejka.</li>
+        <li>1/4 · 1/4 = 1/16.</li>
+        <li>Oboje Aa.</li>
+        <li>Nie — fenotyp dominujący to AA lub Aa. Sprawdzić można testem krzyżowym z aa.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+16. CHECKLISTA
+============================================================ -->
+<section class="section" id="checklista">
+  <div class="part-heading"><span class="part-num">16. Checklista</span></div>
+  <div class="card card-correct">
+    <ul style="list-style:none;padding-left:0;">
+      <li>☐ Znam pojęcia: allel, genotyp, fenotyp, homo/hetero, dominacja.</li>
+      <li>☐ Umiem narysować i odczytać Punnetta.</li>
+      <li>☐ Rozumiem 3:1 i 1:2:1.</li>
+      <li>☐ Wiem, że 25% ≠ gwarancja kolejności.</li>
+      <li>☐ Potrafię wnioskować o genotypach rodziców.</li>
+      <li>☐ Znam ideę testu krzyżowego.</li>
+      <li>☐ Wiem, że dominacja niepełna daje 1:2:1.</li>
+      <li>☐ Rozumiem różnicę: dominacja niepełna ≠ kodominacja.</li>
+      <li>☐ Znam ograniczenia Punnett (ambitny).</li>
+      <li>☐ Wiem, kim był Reginald Punnett.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================
+17. MAPA POJĘĆ
+============================================================ -->
+<section class="section" id="mapa">
+  <div class="part-heading"><span class="part-num">17. Mapa pojęć</span></div>
+  <div class="diagram">
+    <svg viewBox="0 0 620 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa pojęć L017">
+      <rect x="230" y="10" width="160" height="40" rx="10" fill="#2b6cb0"/>
+      <text x="310" y="35" font-size="14" text-anchor="middle" fill="#fff" font-family="Segoe UI" font-weight="700">DZIEDZICZENIE 1 GENU</text>
+      <line x1="310" y1="50" x2="310" y2="75" stroke="#6b7a8d" stroke-width="2"/>
+      <line x1="90" y1="75" x2="530" y2="75" stroke="#6b7a8d" stroke-width="2"/>
+      <line x1="90" y1="75" x2="90" y2="105" stroke="#6b7a8d" stroke-width="2"/>
+      <line x1="235" y1="75" x2="235" y2="105" stroke="#6b7a8d" stroke-width="2"/>
+      <line x1="385" y1="75" x2="385" y2="105" stroke="#6b7a8d" stroke-width="2"/>
+      <line x1="530" y1="75" x2="530" y2="105" stroke="#6b7a8d" stroke-width="2"/>
+
+      <rect x="30" y="105" width="120" height="50" rx="8" fill="#e8f5e9" stroke="#2d8f5e" stroke-width="2"/>
+      <text x="90" y="127" font-size="12" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="600">allele</text>
+      <text x="90" y="143" font-size="10" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">A / a</text>
+
+      <rect x="175" y="105" width="120" height="50" rx="8" fill="#e8f5e9" stroke="#2d8f5e" stroke-width="2"/>
+      <text x="235" y="127" font-size="12" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="600">genotyp</text>
+      <text x="235" y="143" font-size="10" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">AA / Aa / aa</text>
+
+      <rect x="325" y="105" width="120" height="50" rx="8" fill="#fff3e0" stroke="#ef6c00" stroke-width="2"/>
+      <text x="385" y="127" font-size="12" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="600">fenotyp</text>
+      <text x="385" y="143" font-size="10" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">widoczna cecha</text>
+
+      <rect x="470" y="105" width="120" height="50" rx="8" fill="#e1bee7" stroke="#7c3aed" stroke-width="2"/>
+      <text x="530" y="127" font-size="12" text-anchor="middle" fill="#0a2540" font-family="Segoe UI" font-weight="600">gamety</text>
+      <text x="530" y="143" font-size="10" text-anchor="middle" fill="#6b7a8d" font-family="Segoe UI">1 allel z pary</text>
+
+      <line x1="310" y1="155" x2="310" y2="180" stroke="#6b7a8d" stroke-width="2"/>
+      <rect x="210" y="180" width="200" height="40" rx="8" fill="#2b6cb0"/>
+      <text x="310" y="205" font-size="13" text-anchor="middle" fill="#fff" font-family="Segoe UI" font-weight="700">Punnett</text>
+
+      <line x1="310" y1="220" x2="310" y2="245" stroke="#6b7a8d" stroke-width="2"/>
+      <line x1="130" y1="245" x2="490" y2="245" stroke="#6b7a8d" stroke-width="2"/>
+
+      <line x1="130" y1="245" x2="130" y2="270" stroke="#6b7a8d" stroke-width="2"/>
+      <rect x="60" y="270" width="140" height="40" rx="6" fill="#d4edda" stroke="#2d8f5e"/>
+      <text x="130" y="288" font-size="11" text-anchor="middle" fill="#155724" font-family="Segoe UI" font-weight="600">Aa × Aa → 3:1</text>
+      <text x="130" y="302" font-size="10" text-anchor="middle" fill="#155724" font-family="Segoe UI">(genotypy 1:2:1)</text>
+
+      <line x1="310" y1="245" x2="310" y2="270" stroke="#6b7a8d" stroke-width="2"/>
+      <rect x="240" y="270" width="140" height="40" rx="6" fill="#d4edda" stroke="#2d8f5e"/>
+      <text x="310" y="288" font-size="11" text-anchor="middle" fill="#155724" font-family="Segoe UI" font-weight="600">AA × aa → 100% Aa</text>
+      <text x="310" y="302" font-size="10" text-anchor="middle" fill="#155724" font-family="Segoe UI">(F1 Mendla)</text>
+
+      <line x1="490" y1="245" x2="490" y2="270" stroke="#6b7a8d" stroke-width="2"/>
+      <rect x="420" y="270" width="140" height="40" rx="6" fill="#d4edda" stroke="#2d8f5e"/>
+      <text x="490" y="288" font-size="11" text-anchor="middle" fill="#155724" font-family="Segoe UI" font-weight="600">Aa × aa → 1:1</text>
+      <text x="490" y="302" font-size="10" text-anchor="middle" fill="#155724" font-family="Segoe UI">(test krzyżowy)</text>
+    </svg>
+    <div class="caption">Mapa pojęć L017 — od alleli przez genotyp i fenotyp do wyniku krzyżówki.</div>
+  </div>
+</section>
+
+<!-- ============================================================
+18. CO DALEJ / JAK SIĘ UCZYĆ
+============================================================ -->
+<section class="section" id="dalej">
+  <div class="part-heading"><span class="part-num">18. Co dalej? Jak się uczyć?</span></div>
+  <div class="card card-hint">
+    <p><strong>Następna lekcja:</strong> L018 — płeć i cechy sprzężone z X.</p>
+    <p><strong>Most wstecz:</strong> L015 (mejoza → 1 allel w gamecie) + L011 (gen = odcinek DNA) → L017 (Punnett).</p>
+    <p><strong>Plan nauki:</strong></p>
+    <ol>
+      <li>Ściąga (5 min).</li>
+      <li>Przerysuj Punnett dla 5 krzyżówek (10 min).</li>
+      <li>Mini-check (5 min).</li>
+      <li>Ćwiczenia A i B (15 min).</li>
+      <li>Fiszki (10 min).</li>
+      <li>Test (15 min).</li>
+      <li>Powtórka za 1 dzień, 3 dni, tydzień.</li>
+    </ol>
+  </div>
+
+  <h3>System powtórek (spaced)</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Kiedy</th><th>Co</th><th>Czas</th></tr></thead>
+      <tbody>
+        <tr><td>Po lekcji</td><td>ściąga + 5 fiszek</td><td>15–20 min</td></tr>
+        <tr><td>+1 dzień</td><td>fiszki bloku</td><td>10 min</td></tr>
+        <tr><td>+3 dni</td><td>klinika + 3 zadania treningowe</td><td>15 min</td></tr>
+        <tr><td>+1 tydzień</td><td>mini-test bloku</td><td>20 min</td></tr>
+        <tr><td>+1 miesiąc</td><td>mapa pojęć + pułapki</td><td>15 min</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============================================================
+19. SŁOWNIK
+============================================================ -->
+<section class="section" id="slownik">
+  <div class="part-heading"><span class="part-num">19. Słownik</span></div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Termin</th><th>Definicja</th></tr></thead>
+      <tbody>
+        <tr><td>Allel</td><td>Wersja genu (A / a)</td></tr>
+        <tr><td>Genotyp</td><td>Zestaw alleli (AA, Aa, aa)</td></tr>
+        <tr><td>Fenotyp</td><td>Ujawniona cecha</td></tr>
+        <tr><td>Homozygota</td><td>AA lub aa</td></tr>
+        <tr><td>Heterozygota</td><td>Aa</td></tr>
+        <tr><td>Krzyżówka</td><td>Zapis możliwych genotypów potomstwa</td></tr>
+        <tr><td>Locus</td><td>Miejsce genu na chromosomie</td></tr>
+        <tr><td>Dominacja pełna</td><td>Aa = AA w fenotypie</td></tr>
+        <tr><td>Dominacja niepełna</td><td>Aa = fenotyp pośredni</td></tr>
+        <tr><td>Kodominacja</td><td>Oba allele widoczne naraz</td></tr>
+        <tr><td>Test krzyżowy</td><td>Krzyżówka z homozygotą recesywną (aa)</td></tr>
+        <tr><td>Linia czysta</td><td>Zespół osobników homozygotycznych</td></tr>
+        <tr><td>Punnett</td><td>Diagram pokazujący kombinacje alleli</td></tr>
+        <tr><td>Epistaza</td><td>Gen maskuje efekt innego genu</td></tr>
+        <tr><td>Plejotropia</td><td>Jeden gen wpływa na wiele cech</td></tr>
+        <tr><td>Poligeniczne</td><td>Wiele genów na jedną cechę</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============================================================
+20. DODATEK ZAAWANSOWANY
+============================================================ -->
+<section class="section" id="dodatek">
+  <div class="part-heading"><span class="part-num">20. Dodatek zaawansowany</span> <span class="level-badge level-ambitious">ZAAWANSOWANY</span></div>
+
+  <h3>20.1. Test krzyżowy — pełny algorytm</h3>
+  <div class="card card-ambitious">
+    <p><strong>Cel:</strong> odróżnić AA od Aa u osobnika o fenotypie dominującym.</p>
+    <p><strong>Krok 1.</strong> Wybierz partnera: homozygota recesywna (aa).</p>
+    <p><strong>Krok 2.</strong> Wykonaj krzyżówkę.</p>
+    <p><strong>Krok 3.</strong> Obserwuj potomstwo:</p>
+    <ul>
+      <li>100% dominujące → prawdopodobnie AA</li>
+      <li>Jakiekolwiek recesywne → na pewno Aa</li>
+    </ul>
+    <p><strong>Uwaga statystyczna:</strong> przy małej liczbie potomstwa „100% dominujące" może się zdarzyć nawet przy Aa. Potrzebna duża próba.</p>
+  </div>
+
+  <h3>20.2. Krzyżówka dwugenowa (zapowiedź)</h3>
+  <div class="card card-gray">
+    <p><strong>AaBb × AaBb</strong> (dwie cechy niezależne) → <strong>9:3:3:1</strong> (II prawo Mendla).</p>
+    <p>Szczegóły — w przyszłych lekcjach lub w materiale rozszerzonym.</p>
+  </div>
+
+  <h3>20.3. Plejotropia i epistaza</h3>
+  <div class="card card-ambitious">
+    <ul>
+      <li><strong>Plejotropia:</strong> jeden gen → wiele cech.</li>
+      <li><strong>Epistaza:</strong> gen maskuje efekt innego genu.</li>
+    </ul>
+  </div>
+
+  <h3>20.4. Zadanie olimpijskie</h3>
+  <div class="card card-warning">
+    <p><strong>Pytanie:</strong> Aa × Aa. P(dokładnie jedno z dwojga dzieci aa)?</p>
+    <p><strong>Rozwiązanie:</strong> 1/4 · 3/4 + 3/4 · 1/4 = <strong>3/8</strong>.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+21. POŁĄCZENIA MIĘDZYPRZEDMIOTOWE
+============================================================ -->
+<section class="section" id="polaczenia">
+  <div class="part-heading"><span class="part-num">21. Połączenia międzyprzedmiotowe</span></div>
+  <div class="card card-gray">
+    <ul>
+      <li><strong>Matematyka:</strong> prawdopodobieństwo, stosunki, reguła iloczynu i sumy.</li>
+      <li><strong>Historia:</strong> Gregor Mendel — ojciec genetyki, groszek zwyczajny; Reginald Punnett — twórca szachownicy.</li>
+      <li><strong>Etyka:</strong> poradnictwo genetyczne, choroby dziedziczne.</li>
+      <li><strong>Informatyka:</strong> symulacje krzyżówek, drzewa decyzyjne.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================
+22. ZADANIA Z ŻYCIA
+============================================================ -->
+<section class="section" id="zycie">
+  <div class="part-heading"><span class="part-num">22. Zadania z życia codziennego</span></div>
+  <div class="card card-correct">
+    <ol>
+      <li>Uproszczone krzyżówki jednogenowe są do cech modelowych. Kolor oczu człowieka zależy od wielu genów — nie jest typowym przykładem A/a.</li>
+      <li>Dlaczego grupy krwi dziedziczą się inaczej niż kolor oczu? (Bo ABO to 3 allele + kodominacja — L019.)</li>
+      <li>Jak hodowcy wykorzystują wiedzę o dziedziczeniu? (Dobór sztuczny — L031.)</li>
+      <li>Dlaczego w rodzinie z dzieckiem chorym na mukowiscydozę rodzice „nosiciele" nie są chorzy? (Bo to cecha recesywna — heterozygoty są zdrowe.)</li>
+      <li>Dlaczego w małej rodzinie może nie być dziecka z cechą recesywną, mimo że oboje rodzice są Aa? (Bo P = 25% przy każdym dziecku — może się zdarzyć, że żadne nie będzie aa.)</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============================================================
+23. STATUS
+============================================================ -->
+<section class="section" id="status">
+  <div class="part-heading"><span class="part-num">23. Status lekcji</span></div>
+  <div class="card card-new">
+    <span class="card-label">Wersja 5.0 (2026-09-13) — przebudowa</span>
+    <p><strong>Zachowano całą treść v3.8/v4.0/v4.1/v4.2.</strong></p>
+    <p><strong>Dodano:</strong></p>
+    <ul>
+      <li>sekcję 0 (wprowadzenie — o co chodzi, historia Punnett, dlaczego to ważne),</li>
+      <li>pełne wyjaśnienie definicji z kontekstem (sekcja 5.1–5.7),</li>
+      <li>logikę narzędzia (dlaczego tabela 2×2 — sekcja 6.1),</li>
+      <li>pełny tok rozumowania w przykładach (sekcja 6.3–6.5, 6.10),</li>
+      <li>osobną, rozbudowaną sekcję o krzyżówce testowej (sekcja 7),</li>
+      <li>ograniczenia Punnett (sekcja 9.4),</li>
+      <li>rachunek prawdopodobieństwa jako alternatywę (sekcja 9.5),</li>
+      <li>rozbudowaną tabelę błędów (sekcja 10.1) + 5 pełnych przykładów Kliniki 2.0,</li>
+      <li>tabelę zbiorczą krzyżówek (sekcja 6.7),</li>
+      <li>rozkład prawdopodobieństw w rodzinie z 4 dzieci (sekcja 8.4).</li>
+    </ul>
+    <p><strong>Zasada:</strong> nic nie usunięto — tylko rozbudowano.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <p><strong>BIOLOGIA L017 v5.0</strong> · Genetyka · Punnett · 3:1 · 1:2:1 · test krzyżowy · 2026</p>
+  <p style="font-size:0.78rem;opacity:0.7;">Ucz się świadomie, nie na pamięć.</p>
+</footer>
+
+</div>
+
+<script>
+// ---------- LOCAL STORAGE ----------
+function toggleAnswer(id){
+  const el=document.getElementById(id);
+  if(!el)return;
+  el.classList.toggle('show');
+  const btn=document.querySelector(`[onclick*="toggleAnswer('${id}')"]`);
+  if(btn)btn.textContent=el.classList.contains('show')?'Ukryj odpowiedzi':'Pokaż odpowiedzi';
+}
+function toggleFlashcard(card){card.classList.toggle('flipped');}
+
+
+</script>
+</body>
+</html>

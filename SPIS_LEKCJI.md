@@ -5,7 +5,7 @@ Listy tematów (plan) są osobno: `chemia/plany/CHE_SPIS_TRESCI.md`, `polski/POL
 
 Etap LKO = do którego etapu konkursu lekcja jest potrzebna: **I** = szkolny (biologia 21.10, chemia 23.10; 60 min, 40 pkt), **II** = rejonowy (biologia 24.11, chemia 26.11; 90 min; obejmuje też etap I), **III** = wojewódzki (obejmuje I i II), **poza LKO** = kurs E8/inny przedmiot. Warstwy w lekcji: **E8** (podstawa programowa) · **rozum.** (trening, rozumienie) · **konkurs** (zadania i doświadczenia konkursowe) · **ambitne** (olimpiada, ponad zakres). Zakres źródłowy: `olimpiada/PRIORYTETY.md` §1.
 
-## chemia (che-modular) (34 lekcji)
+## chemia (che-modular) (73 lekcji)
 
 | plik | etap LKO 2026/27 | warstwy | KB | wiz. | @opis | uwagi |
 |---|---|---|---:|---:|---:|---|
@@ -21,10 +21,43 @@ Etap LKO = do którego etapu konkursu lekcja jest potrzebna: **I** = szkolny (bi
 | `F02_materia_i_substancje.md` | I | E8 · rozum. · ambitne | 35 | 5 | 5 |  |
 | `F03_wlasciwosci_i_rozdzielanie.md` | I | E8 · rozum. · ambitne | 37 | 5 | 5 |  |
 | `F04_atom.md` | I | E8 · rozum. · ambitne | 25 | 2 | 2 |  |
-| `F05_izotopy_jony_masa_atomowa.md` | I | E8 · rozum. · ambitne | 27 | 1 | 1 |  |
+| `F05_izotopy_jony_masa_atomowa.md` | I | E8 · rozum. · ambitne | 36 | 1 | 1 |  |
 | `F06_uklad_okresowy.md` | I | E8 · rozum. · ambitne | 49 | 8 | 8 |  |
+| `F07_konfiguracja_elektronowa.md` | poza LKO | E8 · rozum. · ambitne | 22 | 0 | 0 |  |
+| `F08_konfiguracja_uklad_okresowy.md` | poza LKO | E8 · rozum. · ambitne | 14 | 0 | 0 |  |
+| `F09_wartosciowosc_ladunek_stopien_utlenienia.md` | poza LKO | E8 · rozum. · ambitne | 14 | 0 | 0 |  |
+| `F10_dlaczego_atomy_sie_lacza.md` | poza LKO | E8 · rozum. · ambitne | 19 | 0 | 0 |  |
+| `F11_wiazania_jonowe_kowalencyjne_metaliczne.md` | poza LKO | E8 · rozum. · ambitne | 19 | 0 | 0 |  |
+| `F12_wzory_chemiczne.md` | poza LKO | E8 · rozum. · ambitne | 15 | 0 | 0 |  |
+| `F13_wzory_elektronowe_lewis.md` | poza LKO | E8 · rozum. · ambitne | 15 | 0 | 0 |  |
+| `F14_geometria_czasteczek_vsepr.md` | poza LKO | E8 · rozum. · ambitne | 15 | 0 | 0 |  |
+| `F15_polarnosc_i_oddzialywania.md` | poza LKO | E8 · rozum. · ambitne | 17 | 0 | 0 |  |
+| `F16_od_obserwacji_do_modelu_reakcji.md` | poza LKO | E8 · rozum. · ambitne | 17 | 0 | 0 |  |
+| `F17_rownania_reakcji_i_obliczenia.md` | poza LKO | E8 · rozum. · konkurs · ambitne | 57 | 3 | 3 |  |
+| `F18_dossier_substancji.md` | poza LKO | E8 · rozum. · ambitne | 14 | 0 | 0 |  |
+| `F19_dossier_reakcji.md` | poza LKO | E8 · rozum. · ambitne | 17 | 0 | 0 |  |
+| `F20_klinika_bledow_fundamentow.md` | poza LKO | E8 · rozum. · ambitne | 16 | 0 | 0 |  |
+| `F21_zadania_transferowe_i_diagnostyka.md` | poza LKO | E8 · rozum. · ambitne | 18 | 0 | 0 |  |
 | `FIZ01_elektrostatyka.md` | poza LKO (fizyka) | E8 · rozum. · ambitne | 54 | 15 | 15 |  |
+| `J01_dysocjacja_elektrolityczna.md` | poza LKO | E8 · rozum. · ambitne | 16 | 0 | 0 |  |
+| `J02_odczyn_i_ph.md` | poza LKO | E8 · rozum. · ambitne | 11 | 0 | 0 |  |
 | `J03_rownania_jonowe_i_stracanie.md` | II | E8 · konkurs | 11 | 4 | 4 |  |
+| `J04_stracanie_osadow.md` | poza LKO | E8 · rozum. · ambitne | 12 | 0 | 0 |  |
+| `J05_amfoterycznosc.md` | poza LKO | E8 · rozum. · ambitne | 10 | 0 | 0 |  |
+| `J06_rownowagi_kwasowo_zasadowe.md` | poza LKO | E8 · rozum. · ambitne | 12 | 0 | 0 |  |
+| `J07_ka_kb_kw.md` | poza LKO | rozum. · ambitne | 10 | 0 | 0 |  |
+| `J08_hydroliza_soli.md` | poza LKO | E8 · rozum. · ambitne | 10 | 0 | 0 |  |
+| `J09_bufory.md` | poza LKO | E8 · rozum. · ambitne | 11 | 0 | 0 |  |
+| `J10_iloczyn_rozpuszczalnosci_ksp.md` | poza LKO | E8 · rozum. · ambitne | 10 | 0 | 0 |  |
+| `K01_energia_reakcji.md` | poza LKO | E8 · rozum. · ambitne | 15 | 0 | 0 |  |
+| `K02_entalpia.md` | poza LKO | rozum. · ambitne | 11 | 0 | 0 |  |
+| `K03_kalorymetria_i_przemiany_fazowe.md` | poza LKO | E8 · rozum. · ambitne | 12 | 0 | 0 |  |
+| `K04_szybkosc_reakcji.md` | poza LKO | E8 · rozum. · ambitne | 32 | 0 | 0 |  |
+| `K05_czynniki_szybkosci.md` | poza LKO | E8 · rozum. · ambitne | 18 | 0 | 0 |  |
+| `K06_zderzenia_energia_aktywacji.md` | poza LKO | E8 · rozum. · ambitne | 15 | 0 | 0 |  |
+| `K08_rownowaga_dynamiczna.md` | poza LKO | rozum. · ambitne | 12 | 0 | 0 |  |
+| `K12_energia_ukladow_zywych_atp.md` | poza LKO | rozum. · konkurs · ambitne | 12 | 0 | 0 |  |
+| `LAB01_doswiadczenia_obserwacja_wniosek.md` | poza LKO | E8 · rozum. · konkurs · ambitne | 56 | 0 | 0 |  |
 | `LKO_ORG01_alkany.md` | III | — | 40 | 5 | 5 |  |
 | `LKO_ORG02_alkeny.md` | III | — | 38 | 4 | 4 |  |
 | `LKO_ORG03_alkohole.md` | III | — | 35 | 3 | 3 |  |
@@ -39,27 +72,56 @@ Etap LKO = do którego etapu konkursu lekcja jest potrzebna: **I** = szkolny (bi
 | `N03_kwasy.md` | II | E8 · rozum. · konkurs · ambitne | 134 | 27 | 27 |  |
 | `N04_sole.md` | II | E8 · rozum. · konkurs · ambitne | 86 | 23 | 23 |  |
 | `N05_wodorki.md` | II | E8 · rozum. · ambitne | 57 | 17 | 17 |  |
+| `P01_blok_s_litowce_berylowce_s01.md` | poza LKO | E8 · rozum. · konkurs | 28 | 3 | 3 |  |
+| `R03A_mieszanie_roztworow_regula_krzyzowa.md` | I | E8 · rozum. · konkurs · ambitne | 35 | 1 | 1 |  |
 | `R03_woda_roztwory_stezenie_procentowe.md` | I | E8 · rozum. · konkurs · ambitne | 26 | 4 | 4 |  |
 | `R07_stechiometria_z_nadmiarem.md` | II | E8 · konkurs | 12 | 2 | 2 |  |
 | `REV01_powtorka_klasy_7.md` | I | E8 · rozum. · konkurs · ambitne | 63 | 7 | 7 |  |
+| `REV03_fundamenty_start_klasy_8.md` | poza LKO | E8 · rozum. · konkurs | 18 | 0 | 0 |  |
+| `REV03_pulapki_lko.md` | poza LKO | E8 · rozum. · konkurs · ambitne | 34 | 0 | 7 |  |
+| `REV04_fundamenty_v3_proba.md` | poza LKO | E8 · rozum. · konkurs | 29 | 0 | 0 |  |
+| `REV05_fundamenty_v32_proba.md` | poza LKO | E8 · rozum. · konkurs | 37 | 0 | 0 |  |
 | `X04_szereg_aktywnosci_metali.md` | II | E8 · konkurs | 13 | 3 | 3 |  |
 
-## biologia (12 lekcji)
+## biologia (35 lekcji)
 
 | plik | etap LKO 2026/27 | warstwy | KB | wiz. | @opis | uwagi |
 |---|---|---|---:|---:|---:|---|
-| `B10_powtorka_uklady_czlowieka.md` | II | E8 · rozum. · konkurs · ambitne | 17 | 0 | 0 |  |
+| `B10_powtorka_uklady_czlowieka.md` | II | E8 · rozum. · konkurs · ambitne | 19 | 0 | 3 |  |
 | `B1b_krzyzowki_mendel.md` | III (genetyka) | E8 · rozum. · konkurs | 22 | 2 | 2 |  |
-| `B2a_skora_i_uklad_ruchu.md` | II | E8 · rozum. · konkurs · ambitne | 17 | 0 | 0 |  |
-| `B2b_uklad_pokarmowy_i_odzywianie.md` | II | E8 · rozum. · konkurs · ambitne | 18 | 0 | 0 |  |
-| `B2c_oddychanie_i_wydalanie.md` | II | E8 · rozum. · konkurs · ambitne | 15 | 1 | 1 |  |
-| `B2d_uklad_nerwowy_i_zmysly.md` | II | E8 · rozum. · konkurs · ambitne | 18 | 0 | 0 |  |
+| `B2a_skora_i_uklad_ruchu.md` | II | E8 · rozum. · konkurs · ambitne | 18 | 0 | 2 |  |
+| `B2b_uklad_pokarmowy_i_odzywianie.md` | II | E8 · rozum. · konkurs · ambitne | 19 | 0 | 2 |  |
+| `B2c_oddychanie_i_wydalanie.md` | II | E8 · rozum. · konkurs · ambitne | 17 | 1 | 6 |  |
+| `B2d_uklad_nerwowy_i_zmysly.md` | II | E8 · rozum. · konkurs · ambitne | 20 | 0 | 4 |  |
 | `B2e_uklad_dokrewny.md` | II | E8 · rozum. · konkurs · ambitne | 15 | 1 | 1 |  |
-| `B2f_rozmnazanie_i_rozwoj.md` | II | E8 · rozum. · konkurs · ambitne | 17 | 0 | 0 |  |
+| `B2f_rozmnazanie_i_rozwoj.md` | II | E8 · rozum. · konkurs · ambitne | 19 | 0 | 6 |  |
 | `B2g_homeostaza.md` | II | E8 · rozum. · konkurs · ambitne | 30 | 1 | 1 |  |
+| `BIO.00.REV01.organizacja_i_chemizm_zycia.md` | poza LKO | E8 · rozum. · konkurs · ambitne | 44 | 0 | 7 |  |
+| `BIO.00.REV02.roznorodnosc_zycia.md` | poza LKO | E8 · rozum. · konkurs · ambitne | 61 | 0 | 4 |  |
+| `BIO.02.L010.dna_od_zera.md` | poza LKO | E8 · rozum. · konkurs · ambitne | 64 | 0 | 12 |  |
+| `BIO.02.L019.dlaczego_grupy_krwi_nie_pasuja.md` | poza LKO | E8 · rozum. · konkurs · ambitne | 82 | 0 | 1 |  |
+| `BIO.02.L020.czym_sa_mutacje_i_jakie.md` | poza LKO | E8 · rozum. · konkurs · ambitne | 83 | 0 | 1 |  |
+| `BIO.02.L021.powtorka_genetyki.md` | poza LKO | E8 · rozum. · konkurs · ambitne | 86 | 0 | 2 |  |
+| `BIO.02.L022.biotechnologia_i_inzynieria_genetyczna.md` | poza LKO | E8 · rozum. · konkurs · ambitne | 89 | 0 | 1 |  |
+| `BIO.03.L030.czym_jest_ewolucja_i_jakie.md` | poza LKO | E8 · rozum. · konkurs · ambitne | 20 | 0 | 1 |  |
+| `BIO.03.L031.jak_dziala_dobor_naturalny_i.md` | poza LKO | E8 · rozum. · konkurs · ambitne | 19 | 0 | 1 |  |
+| `BIO.04.L040.czym_jest_ekosystem_i_jakie.md` | poza LKO | E8 · rozum. · ambitne | 30 | 0 | 1 |  |
+| `BIO.04.L041.jak_zapisac_lancuchy_i_sieci.md` | poza LKO | E8 · rozum. · konkurs · ambitne | 19 | 0 | 1 |  |
+| `BIO.04.L042.jakie_relacje_panuja_miedzy_organizmami.md` | poza LKO | E8 · rozum. · konkurs · ambitne | 19 | 0 | 1 |  |
+| `BIO.04.L043.jak_czlowiek_wplywa_na_srodowisko.md` | poza LKO | E8 · rozum. · konkurs · ambitne | 21 | 0 | 1 |  |
+| `BIO.06.L091.atp_jak_komorka_magazynuje_energie.md` | poza LKO | E8 · rozum. · konkurs · ambitne | 20 | 0 | 1 |  |
+| `BIO.07.H01.homeostaza.md` | poza LKO | E8 · rozum. · konkurs · ambitne | 80 | 0 | 2 |  |
+| `BIO.07.U01.skora_i_uklad_ruchu.md` | poza LKO | E8 · rozum. · konkurs · ambitne | 59 | 0 | 2 |  |
+| `BIO.07.U03.uklad_pokarmowy_i_odzywianie.md` | poza LKO | E8 · rozum. · konkurs · ambitne | 106 | 0 | 3 |  |
+| `BIO.07.U04.krazenie_krew_odpornosc.md` | poza LKO | E8 · rozum. · konkurs · ambitne | 90 | 0 | 2 |  |
+| `BIO.07.U06.oddychanie_i_wydalanie.md` | poza LKO | E8 · rozum. · konkurs · ambitne | 81 | 0 | 3 |  |
+| `BIO.07.U08.uklad_nerwowy_i_zmysly.md` | poza LKO | E8 · rozum. · konkurs · ambitne | 110 | 0 | 4 |  |
+| `BIO.07.U10.uklad_dokrewny.md` | poza LKO | E8 · rozum. · konkurs · ambitne | 107 | 0 | 3 |  |
+| `BIO.07.U11.rozmnazanie_i_rozwoj.md` | poza LKO | E8 · rozum. · konkurs · ambitne | 107 | 0 | 5 |  |
 | `L010_dna_od_zera.md` | III (DNA) | E8 · rozum. · konkurs · ambitne | 51 | 0 | 12 |  |
-| `REV01_organizacja_i_chemizm_zycia.md` | I | E8 · rozum. · konkurs · ambitne | 53 | 0 | 1 |  |
-| `REV02_roznorodnosc_zycia.md` | I | E8 · rozum. · konkurs · ambitne | 70 | 0 | 0 |  |
+| `POMINIETE_BIO_L030-L043_L091_szkielety.md` | poza LKO | — | 2 | 0 | 0 |  |
+| `REV01_organizacja_i_chemizm_zycia.md` | I | E8 · rozum. · konkurs · ambitne | 55 | 0 | 5 |  |
+| `REV02_roznorodnosc_zycia.md` | I | E8 · rozum. · konkurs · ambitne | 75 | 0 | 14 |  |
 
 ## polski (lekcje) (32 lekcji)
 
@@ -98,7 +160,7 @@ Etap LKO = do którego etapu konkursu lekcja jest potrzebna: **I** = szkolny (bi
 | `PL_T02_gatunki_liryczne_fraszka_piesn_tren_sone.md` | poza LKO | — | 1 | 0 | 0 |  |
 | `PL_T03_gatunki_dramatyczne_komedia_tragedia_dra.md` | poza LKO | — | 1 | 0 | 0 |  |
 
-## polski (podstawy) (23 lekcji)
+## polski (podstawy) (46 lekcji)
 
 | plik | etap LKO 2026/27 | warstwy | KB | wiz. | @opis | uwagi |
 |---|---|---|---:|---:|---:|---|
@@ -125,6 +187,29 @@ Etap LKO = do którego etapu konkursu lekcja jest potrzebna: **I** = szkolny (bi
 | `PL_S04_powtorzenie_anafora_wyliczenie.md` | poza LKO | E8 · rozum. · konkurs | 2 | 0 | 0 |  |
 | `PL_S05_neologizm_zdrobnienie_archaizm.md` | poza LKO | E8 · rozum. · konkurs | 2 | 0 | 0 |  |
 | `PL_S06_hiperbola_ironia_symbol_alegoria.md` | poza LKO | E8 · rozum. · konkurs | 3 | 0 | 1 |  |
+| `POL.02.G01.rzeczownik.md` | poza LKO | — | 48 | 0 | 0 |  |
+| `POL.02.G02.czasownik.md` | poza LKO | E8 · rozum. · konkurs | 44 | 0 | 0 |  |
+| `POL.02.G03.przymiotnik.md` | poza LKO | E8 · rozum. · konkurs | 61 | 0 | 0 |  |
+| `POL.02.G04.liczebnik.md` | poza LKO | E8 · rozum. · konkurs | 69 | 0 | 2 |  |
+| `POL.02.G05.zaimek.md` | poza LKO | E8 · rozum. · konkurs | 44 | 0 | 2 |  |
+| `POL.02.G06.imieslowy.md` | poza LKO | E8 · rozum. · konkurs | 45 | 0 | 2 |  |
+| `POL.02.G07.przyslowek.md` | poza LKO | E8 · rozum. · konkurs | 48 | 0 | 4 |  |
+| `POL.02.G08.przyimek.md` | poza LKO | E8 · rozum. · konkurs | 35 | 0 | 2 |  |
+| `POL.02.G09.spojnik.md` | poza LKO | E8 · rozum. · konkurs | 38 | 0 | 2 |  |
+| `POL.02.G10.partykula.md` | poza LKO | E8 · rozum. · konkurs | 32 | 0 | 2 |  |
+| `POL.02.G11.wykrzyknik.md` | poza LKO | E8 · rozum. · konkurs | 26 | 0 | 2 |  |
+| `POL.02.G12.czesci_zdania.md` | poza LKO | E8 · rozum. · konkurs | 59 | 0 | 2 |  |
+| `POL.02.G13.zwiazki_wyrazowe.md` | poza LKO | E8 · rozum. · konkurs | 22 | 0 | 0 |  |
+| `POL.02.G14.zdanie_pojedyncze.md` | poza LKO | E8 · rozum. · konkurs | 19 | 0 | 0 |  |
+| `POL.02.G15.zdania_wspolrzedne.md` | poza LKO | E8 · rozum. · konkurs | 23 | 0 | 1 |  |
+| `POL.02.G16.zdania_podrzedne.md` | poza LKO | E8 · rozum. · konkurs | 18 | 0 | 0 |  |
+| `POL.02.G17.mowa_zalezna.md` | poza LKO | E8 · rozum. · konkurs | 16 | 0 | 0 |  |
+| `POL.03.S01.epitet_porownanie.md` | poza LKO | E8 · rozum. · konkurs | 13 | 0 | 0 |  |
+| `POL.03.S02.przenosnia_ozywienie_uosobienie.md` | poza LKO | E8 · rozum. · konkurs | 14 | 0 | 0 |  |
+| `POL.03.S03.wyrazy_dzwiekonasladowcze_apostrofa.md` | poza LKO | E8 · rozum. · konkurs | 12 | 0 | 0 |  |
+| `POL.03.S04.powtorzenie_anafora_wyliczenie.md` | poza LKO | E8 · rozum. · konkurs | 12 | 0 | 0 |  |
+| `POL.03.S05.neologizm_zdrobnienie_archaizm.md` | poza LKO | E8 · rozum. · konkurs | 12 | 0 | 0 |  |
+| `POL.03.S06.hiperbola_ironia_symbol_alegoria.md` | poza LKO | E8 · rozum. · konkurs | 16 | 0 | 0 |  |
 
 ## biologia — planowane lekcje (brak plików; zakres w `biologia/plany/PLAN_BRAKUJACE_LEKCJE.md`)
 
@@ -149,7 +234,7 @@ Etap LKO = do którego etapu konkursu lekcja jest potrzebna: **I** = szkolny (bi
 | chemia | II — rejonowy | 2025/26 | — | 90 | [plik](olimpiada/zrodla/LKO/Chemia_etap_rejonowy_2025_2026.txt.md) | sprawdzić w pliku | Etap rejonowy (26.11.2025). Tekst z PDF (oryginał: Chemia_etap_rejonowy_2025_2026.pdf). Kuratorium Oświaty w Lublinie (konkursy przedmiotowe dla szkół podstawowych). |
 | biologia i chemia | — | 2024/25 | — | — | brak pliku | — | Kuratorium publikuje komplet zestawów i kluczy (w tym etap szkolny): kuratorium.lublin.pl/?akc=akt&id=13802 — pliku nie mamy w repo; do pobrania. |
 
-Lekcje właściwe dla etapu (do ćwiczenia z danym arkuszem): biologia etap I: B10_powtorka_uklady_czlowieka, B1b_krzyzowki_mendel, B2a_skora_i_uklad_ruchu, B2b_uklad_pokarmowy_i_odzywianie, B2c_oddychanie_i_wydalanie, B2d_uklad_nerwowy_i_zmysly, B2e_uklad_dokrewny, B2f_rozmnazanie_i_rozwoj, B2g_homeostaza, L010_dna_od_zera, REV01_organizacja_i_chemizm_zycia, REV02_roznorodnosc_zycia; biologia etap II: B10_powtorka_uklady_czlowieka, B1b_krzyzowki_mendel, B2a_skora_i_uklad_ruchu, B2b_uklad_pokarmowy_i_odzywianie, B2c_oddychanie_i_wydalanie, B2d_uklad_nerwowy_i_zmysly, B2e_uklad_dokrewny, B2f_rozmnazanie_i_rozwoj, B2g_homeostaza, L010_dna_od_zera; chemia etap I: C1c_konfiguracje_elektronowe, C1c_kwasy_zasady_sole, C1c_masy_sklad_procentowy, C1c_wodorki_typy_reakcji, C2m_mol_masa_molowa, C2w_wzor_elementarny_rzeczywisty, C3_rownania_i_obliczenia_z_rownan, C4_doswiadczenia_zbiorczo, F01_jak_mysli_chemik, F02_materia_i_substancje, F03_wlasciwosci_i_rozdzielanie, F04_atom, F05_izotopy_jony_masa_atomowa, F06_uklad_okresowy, J03_rownania_jonowe_i_stracanie, LKO_ORG01_alkany, LKO_ORG02_alkeny, LKO_ORG03_alkohole, LKO_ORG04_glicerol, LKO_ORG05_kwasy, LKO_ORG06_estry, LKO_ORG07_cukry, LKO_ORG08_mol_gazy, N01_powietrze_i_gazy, N01_tlenki, N02_wodorotlenki, N03_kwasy, N04_sole, N05_wodorki, R03_woda_roztwory_stezenie_procentowe, R07_stechiometria_z_nadmiarem, REV01_powtorka_klasy_7, X04_szereg_aktywnosci_metali; chemia etap II: C1c_kwasy_zasady_sole, C1c_masy_sklad_procentowy, C2m_mol_masa_molowa, C2w_wzor_elementarny_rzeczywisty, C3_rownania_i_obliczenia_z_rownan, J03_rownania_jonowe_i_stracanie, LKO_ORG01_alkany, LKO_ORG02_alkeny, LKO_ORG03_alkohole, LKO_ORG04_glicerol, LKO_ORG05_kwasy, LKO_ORG06_estry, LKO_ORG07_cukry, LKO_ORG08_mol_gazy, N02_wodorotlenki, N03_kwasy, N04_sole, N05_wodorki, R07_stechiometria_z_nadmiarem, X04_szereg_aktywnosci_metali
+Lekcje właściwe dla etapu (do ćwiczenia z danym arkuszem): biologia etap I: B10_powtorka_uklady_czlowieka, B1b_krzyzowki_mendel, B2a_skora_i_uklad_ruchu, B2b_uklad_pokarmowy_i_odzywianie, B2c_oddychanie_i_wydalanie, B2d_uklad_nerwowy_i_zmysly, B2e_uklad_dokrewny, B2f_rozmnazanie_i_rozwoj, B2g_homeostaza, L010_dna_od_zera, REV01_organizacja_i_chemizm_zycia, REV02_roznorodnosc_zycia; biologia etap II: B10_powtorka_uklady_czlowieka, B1b_krzyzowki_mendel, B2a_skora_i_uklad_ruchu, B2b_uklad_pokarmowy_i_odzywianie, B2c_oddychanie_i_wydalanie, B2d_uklad_nerwowy_i_zmysly, B2e_uklad_dokrewny, B2f_rozmnazanie_i_rozwoj, B2g_homeostaza, L010_dna_od_zera; chemia etap I: C1c_konfiguracje_elektronowe, C1c_kwasy_zasady_sole, C1c_masy_sklad_procentowy, C1c_wodorki_typy_reakcji, C2m_mol_masa_molowa, C2w_wzor_elementarny_rzeczywisty, C3_rownania_i_obliczenia_z_rownan, C4_doswiadczenia_zbiorczo, F01_jak_mysli_chemik, F02_materia_i_substancje, F03_wlasciwosci_i_rozdzielanie, F04_atom, F05_izotopy_jony_masa_atomowa, F06_uklad_okresowy, J03_rownania_jonowe_i_stracanie, LKO_ORG01_alkany, LKO_ORG02_alkeny, LKO_ORG03_alkohole, LKO_ORG04_glicerol, LKO_ORG05_kwasy, LKO_ORG06_estry, LKO_ORG07_cukry, LKO_ORG08_mol_gazy, N01_powietrze_i_gazy, N01_tlenki, N02_wodorotlenki, N03_kwasy, N04_sole, N05_wodorki, R03A_mieszanie_roztworow_regula_krzyzowa, R03_woda_roztwory_stezenie_procentowe, R07_stechiometria_z_nadmiarem, REV01_powtorka_klasy_7, X04_szereg_aktywnosci_metali; chemia etap II: C1c_kwasy_zasady_sole, C1c_masy_sklad_procentowy, C2m_mol_masa_molowa, C2w_wzor_elementarny_rzeczywisty, C3_rownania_i_obliczenia_z_rownan, J03_rownania_jonowe_i_stracanie, LKO_ORG01_alkany, LKO_ORG02_alkeny, LKO_ORG03_alkohole, LKO_ORG04_glicerol, LKO_ORG05_kwasy, LKO_ORG06_estry, LKO_ORG07_cukry, LKO_ORG08_mol_gazy, N02_wodorotlenki, N03_kwasy, N04_sole, N05_wodorki, R07_stechiometria_z_nadmiarem, X04_szereg_aktywnosci_metali
 
 
-Razem: 1975 KB.
+Razem: 4881 KB.

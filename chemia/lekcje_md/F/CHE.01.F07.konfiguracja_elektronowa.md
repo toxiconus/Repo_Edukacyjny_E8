@@ -6,6 +6,7 @@ wymaga: "F04; F06"
 poglebia: "F08–F10; F13"
 zrodla: "MASTER v17.0; MASTER v15.0; MASTER v14.0; stary kanon F00–F09 (v4.1/v5.0); stary podział CHE.01.F04.konfiguracja_elektronowa.md"
 opis: "Materiał roboczy lekcji (nie gotowa lekcja). Spis i zakres: chemia/plany/CHE_SPIS_TRESCI.md"
+stan: W1 — GPT-6, 2026-10-09; poprawki audytu wprowadzone do treści kanonicznej
 ---
 # CHE.01F.07-KONFIGURACJA — KONFIGURACJA ELEKTRONOWA
 
@@ -1380,32 +1381,76 @@ HTML: `CHE.001e.v01.00.html` (v1.5 mer). Nie zastępuje L001. Warstwa [ZAAWANSOW
 <!-- ŹRÓDŁO: kanon CHE.core.md (archiwum v0_57), blok główny w. 3280–4149 -->
 # F04 — KONFIGURACJA ELEKTRONOWA (Fundamenty)
 
+## UZUPEŁNIENIE KANONICZNE — konfiguracja elektronowa (W1, 2026-10-09)
+
+### Powłoka, podpowłoka i orbital — trzy różne poziomy opisu
+
+- **Powłoka** jest opisana główną liczbą kwantową `n`. Jej maksymalna pojemność w modelu atomowym wynosi `2n²`.
+- **Podpowłoki** oznacza się literami `s`, `p`, `d`, `f`. Ich maksymalna pojemność wynosi odpowiednio 2, 6, 10 i 14 elektronów.
+- **Orbital** to stan/obszar opisu prawdopodobieństwa znalezienia elektronu; jeden orbital może zawierać najwyżej dwa elektrony o przeciwnych spinach. Nie jest to tor podobny do orbity planety.
+- Podpowłoka `s` ma 1 orbital, `p` — 3, `d` — 5, a `f` — 7.
+
+Zasada Pauliego ogranicza obsadę jednego orbitalu do dwóch elektronów o przeciwnych spinach. Zgodnie z regułą Hunda orbitale o tej samej energii są najpierw obsadzane pojedynczo elektronami o równoległych spinach. Zapis według rosnącej energii jest szkolnym schematem; dla części atomów występują wyjątki.
+
+### Pojemność powłok i przykłady
+
+| Powłoka | n | Maksymalna pojemność 2n² |
+|---|---:|---:|
+| K | 1 | 2 |
+| L | 2 | 8 |
+| M | 3 | 18 |
+| N | 4 | 32 |
+
+Nie należy utożsamiać pełnej pojemności powłoki z uproszczonym rozkładem elektronów używanym w pierwszych przykładach szkolnych.
+
+- Na (Z = 11): `1s² 2s² 2p⁶ 3s¹`, powłokowo: `2, 8, 1`.
+- Cl (Z = 17): `1s² 2s² 2p⁶ 3s² 3p⁵`, powłokowo: `2, 8, 7`.
+- Ca (Z = 20): `1s² 2s² 2p⁶ 3s² 3p⁶ 4s²`, powłokowo: `2, 8, 8, 2`.
+
+### Jony: najpierw sprawdź liczbę elektronów
+
+- `Na⁺` ma 10 elektronów: `1s² 2s² 2p⁶`.
+- `Cl⁻` ma 18 elektronów: `1s² 2s² 2p⁶ 3s² 3p⁶`.
+- `Mg²⁺` ma 10 elektronów: `1s² 2s² 2p⁶`.
+
+Dla metali przejściowych kolejność zapełniania podpowłok nie może być mechanicznie utożsamiana z kolejnością usuwania elektronów. Przy tworzeniu typowych kationów metali przejściowych elektrony z podpowłoki `4s` usuwa się przed elektronami `3d`.
+
+### Ćwiczenia kontrolne
+
+1. Zapisz konfigurację podpowłokową Al (Z = 13).
+2. Podaj rozkład powłokowy O (Z = 8).
+3. Zapisz konfigurację `Mg²⁺`.
+4. Wskaż błąd w `1s² 2s² 2p⁷`.
+5. Wyjaśnij, dlaczego Na i `Na⁺` mają różną liczbę elektronów.
+
+**Klucz:** 1. `1s² 2s² 2p⁶ 3s² 3p¹`; 2. `2, 6`; 3. `1s² 2s² 2p⁶`; 4. podpowłoka `p` mieści najwyżej 6 elektronów; 5. atom sodu oddał jeden elektron, a liczba protonów się nie zmieniła.
+
 ## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
 
 > Źródło: `chemia/plany/audyty/W1_perplexity_F07-F14₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
 
 ### Poprawki
 
-- Elektrony zajmują powłoki, podpowłoki i orbitale.
-- Powłoka elektronowa jest określana główną liczbą kwantową n.
-- Podpowłoki oznacza się symbolami s, p, d i f.
-- Maksymalna liczba elektronów na podpowłoce wynosi:
-  - s: 2;
-  - p: 6;
-  - d: 10;
-  - f: 14.
-- Orbital może pomieścić najwyżej dwa elektrony o przeciwnych spinach.
-- Nie zapisuj, że elektrony „krążą po powłokach jak planety”. To wyłącznie uproszczony model.
-- Zasada obsadzania orbitali według rosnącej energii jest przybliżeniem używanym do zapisu konfiguracji elektronowej.
-- Zasada Pauliego: w jednym orbitalu mogą znajdować się najwyżej dwa elektrony o przeciwnych spinach.
-- Reguła Hunda: orbitale o tej samej energii są najpierw obsadzane pojedynczo elektronami o równoległych spinach.
-- W zapisie szkolnym należy rozróżniać:
-  - powłokę, na przykład n=3;
-  - podpowłokę, na przykład 3p;
-  - orbital, na przykład jeden z trzech orbitali podpowłoki 3p.
-- Kolejność zapisu podpowłok nie jest tym samym co kolejność powłok w układzie okresowym.
-- Dla atomów metali przejściowych elektrony są zwykle zapisywane najpierw na podpowłoce 4s, a następnie na 3d, ale podczas tworzenia kationów elektrony 4s usuwa się przed elektronami 3d.
-- Nie przedstawiaj konfiguracji 4s i 3d jako bezwyjątkowej reguły dla wszystkich atomów.
+- Elektrony zajmują powłoki, podpowłoki i orbitale. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Powłoka elektronowa jest określana główną liczbą kwantową n. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Podpowłoki oznacza się symbolami s, p, d i f. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Maksymalna liczba elektronów na podpowłoce wynosi: — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+  - s: 2; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+  - p: 6; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+  - d: 10; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+  - f: 14. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Orbital może pomieścić najwyżej dwa elektrony o przeciwnych spinach. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Nie zapisuj, że elektrony „krążą po powłokach jak planety”. To wyłącznie uproszczony model. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Zasada obsadzania orbitali według rosnącej energii jest przybliżeniem używanym do zapisu konfiguracji elektronowej. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Zasada Pauliego: w jednym orbitalu mogą znajdować się najwyżej dwa elektrony o przeciwnych spinach. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Reguła Hunda: orbitale o tej samej energii są najpierw obsadzane pojedynczo elektronami o równoległych spinach. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- W zapisie szkolnym należy rozróżniać: — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+  - powłokę, na przykład n=3; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+  - podpowłokę, na przykład 3p; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+  - orbital, na przykład jeden z trzech orbitali podpowłoki 3p. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Kolejność zapisu podpowłok nie jest tym samym co kolejność powłok w układzie okresowym. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Dla atomów metali przejściowych elektrony są zwykle zapisywane najpierw na podpowłoce 4s, a następnie na 3d, ale podczas tworzenia kationów elektrony 4s usuwa się przed elektronami 3d. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- Nie przedstawiaj konfiguracji 4s i 3d jako bezwyjątkowej reguły dla wszystkich atomów. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
 
 ### Uzupełnienia
 
@@ -1417,10 +1462,10 @@ Dla powłoki o numerze n maksymalna liczba elektronów wynosi:
 
 W szkolnym modelu:
 
-- pierwsza powłoka: maksymalnie 2 elektrony;
-- druga powłoka: maksymalnie 8 elektronów;
-- trzecia powłoka: w podstawowych przykładach często zapisywana jako 8 elektronów na zewnętrznej części, ale pełna pojemność powłoki wynosi 18;
-- czwarta powłoka: pełna pojemność wynosi 32 elektrony.
+- pierwsza powłoka: maksymalnie 2 elektrony; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- druga powłoka: maksymalnie 8 elektronów; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- trzecia powłoka: w podstawowych przykładach często zapisywana jako 8 elektronów na zewnętrznej części, ale pełna pojemność powłoki wynosi 18; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+- czwarta powłoka: pełna pojemność wynosi 32 elektrony. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
 
 #### Przykłady
 
@@ -1464,7 +1509,7 @@ Dla Cl⁻:
 
 #### Poprawki do zadań
 
-1. Nie pytaj wyłącznie o „liczbę powłok” bez określenia, czy chodzi o atom czy jon.
+1. Nie pytaj wyłącznie o „liczbę powłok” bez określenia, czy chodzi o atom czy jon. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
 2. Przy zapisie jonu zawsze sprawdzaj liczbę elektronów.
 3. Nie dopuszczaj konfiguracji, w której orbital s zawiera więcej niż 2 elektrony.
 4. Nie dopuszczaj konfiguracji, w której podpowłoka p zawiera więcej niż 6 elektronów.
@@ -1472,7 +1517,7 @@ Dla Cl⁻:
 
 #### Zadania
 
-1. Zapisz konfigurację elektronową atomu glinu.
+1. Zapisz konfigurację elektronową atomu glinu. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
 2. Zapisz konfigurację powłokową atomu tlenu.
 3. Zapisz konfigurację elektronową jonu Mg²⁺.
 4. Wskaż błąd w zapisie 1s² 2s² 2p⁷.
@@ -1480,7 +1525,7 @@ Dla Cl⁻:
 
 #### Klucz
 
-1. Al:
+1. Al: — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
 
  1s² 2s² 2p⁶ 3s² 3p¹
 
@@ -1491,3 +1536,5 @@ Dla Cl⁻:
 
 4. Podpowłoka p może zawierać najwyżej 6 elektronów.
 5. Atom sodu oddał jeden elektron, tworząc kation Na⁺.
+
+**Status audytu:** poprawki i uzupełnienia zostały przeniesione do sekcji „UZUPEŁNIENIE KANONICZNE”; ćwiczenia i klucze dodano do treści lekcji.

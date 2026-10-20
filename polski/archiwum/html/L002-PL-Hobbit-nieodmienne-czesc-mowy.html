@@ -1,0 +1,3261 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lekcja 2 – Hobbit + nieodmienne części mowy</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+    <style>
+        /* ======================================================================
+           SYSTEM WIZUALNY REPETYTORIUM E8 – wersja 6.2 (master merge)
+           ====================================================================== */
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+            background: #f5f7fa;
+            color: #1e293b;
+            line-height: 1.7;
+            padding: 16px;
+        }
+        .container {
+            max-width: 1060px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.06);
+            padding: 28px 32px 24px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 12px 10px;
+            }
+            body {
+                padding: 6px;
+            }
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #0a2540;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 1.45rem;
+            margin-top: 28px;
+            margin-bottom: 10px;
+            padding-bottom: 4px;
+            border-bottom: 2px solid #e9edf2;
+        }
+        h2 .level-badge {
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        h3 {
+            font-size: 1.15rem;
+            margin-top: 20px;
+            margin-bottom: 6px;
+        }
+        h4 {
+            font-size: 1.0rem;
+            margin-top: 14px;
+            margin-bottom: 4px;
+        }
+        p {
+            margin-bottom: 8px;
+        }
+        ul,
+        ol {
+            padding-left: 22px;
+            margin-bottom: 10px;
+        }
+        li {
+            margin-bottom: 3px;
+        }
+        a {
+            color: #2b6cb0;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- KOLORY --- */
+        :root {
+            --color-basic: #2d8f5e;
+            --color-basic-bg: #f0faf4;
+            --color-training: #2b6cb0;
+            --color-training-bg: #f0f6ff;
+            --color-exam: #b7791f;
+            --color-exam-bg: #fffbeb;
+            --color-trap: #dc3545;
+            --color-trap-bg: #fef2f2;
+            --color-ambitious: #7c3aed;
+            --color-ambitious-bg: #f5f0ff;
+            --color-remember: #0a2540;
+            --color-remember-bg: #f1f4f8;
+            --color-difficult: #b7791f;
+            --color-difficult-bg: #fffbeb;
+            --color-hint: #f59e0b;
+            --color-hint-bg: #fffbeb;
+            --color-correct: #2d8f5e;
+            --color-error: #dc3545;
+            --color-text: #1e293b;
+            --color-text-muted: #6b7a8d;
+            --color-border: #e2e8f0;
+            --color-bg-subtle: #f8fafc;
+            --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        /* --- KARTY --- */
+        .card {
+            border-radius: 12px;
+            padding: 14px 18px;
+            margin: 12px 0;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            box-shadow: var(--shadow-card);
+        }
+        .card-remember {
+            background: var(--color-remember-bg);
+            border-left: 5px solid var(--color-remember);
+            border-color: var(--color-remember);
+        }
+        .card-remember .card-label {
+            color: var(--color-remember);
+        }
+        .card-warning {
+            background: #fffbeb;
+            border-left: 5px solid #d69e2e;
+            border-color: #d69e2e;
+        }
+        .card-warning .card-label {
+            color: #d69e2e;
+        }
+        .card-hint {
+            background: var(--color-hint-bg);
+            border-left: 5px solid var(--color-hint);
+            border-color: var(--color-hint);
+        }
+        .card-hint .card-label {
+            color: var(--color-hint);
+        }
+        .card-error {
+            background: var(--color-trap-bg);
+            border-left: 5px solid var(--color-trap);
+            border-color: var(--color-trap);
+        }
+        .card-error .card-label {
+            color: var(--color-trap);
+        }
+        .card-correct {
+            background: var(--color-basic-bg);
+            border-left: 5px solid var(--color-correct);
+            border-color: var(--color-correct);
+        }
+        .card-correct .card-label {
+            color: var(--color-correct);
+        }
+        .card-trap {
+            background: var(--color-trap-bg);
+            border-left: 5px solid var(--color-trap);
+            border-color: var(--color-trap);
+        }
+        .card-trap .card-label {
+            color: var(--color-trap);
+        }
+        .card-ambitious {
+            background: var(--color-ambitious-bg);
+            border-left: 5px solid var(--color-ambitious);
+            border-color: var(--color-ambitious);
+        }
+        .card-ambitious .card-label {
+            color: var(--color-ambitious);
+        }
+        .card-difficult {
+            background: var(--color-difficult-bg);
+            border-left: 5px solid var(--color-difficult);
+            border-color: var(--color-difficult);
+        }
+        .card-difficult .card-label {
+            color: var(--color-difficult);
+        }
+        .card-gray {
+            background: var(--color-bg-subtle);
+            border-left: 5px solid var(--color-text-muted);
+            border-color: var(--color-text-muted);
+        }
+        .card .label {
+            font-weight: 600;
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            display: inline-block;
+            margin-bottom: 4px;
+            padding: 1px 10px;
+            border-radius: 16px;
+            background: rgba(0, 0, 0, 0.05);
+        }
+        .card .card-label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        /* --- BADGE --- */
+        .level-badge {
+            display: inline-block;
+            font-size: 0.55rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 1px 8px;
+            border-radius: 12px;
+            vertical-align: middle;
+            letter-spacing: 0.3px;
+            line-height: 1.6;
+        }
+        .level-basic {
+            background: #d4edda;
+            color: #155724;
+        }
+        .level-training {
+            background: #cce5ff;
+            color: #004085;
+        }
+        .level-exam {
+            background: #ffe8cc;
+            color: #8a6d3b;
+        }
+        .level-trap {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .level-ambitious {
+            background: #e8d5f5;
+            color: #4a1a6b;
+        }
+        .level-writing {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+        .level-remember {
+            background: #d1d5db;
+            color: #1a1a2e;
+        }
+        .level-difficult {
+            background: #fde68a;
+            color: #78350f;
+        }
+
+        /* --- PRZYKŁADY --- */
+        .example {
+            background: var(--color-bg-subtle);
+            border-radius: 10px;
+            padding: 10px 14px;
+            margin: 8px 0;
+            border: 1px solid var(--color-border);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 4px 12px;
+        }
+        .example .pl {
+            font-weight: 600;
+            color: #0a2540;
+            font-size: 1.0rem;
+        }
+        .example .tag {
+            display: inline-block;
+            font-size: 0.55rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            background: #e2e8f0;
+            padding: 1px 8px;
+            border-radius: 12px;
+            color: #2d3a4f;
+        }
+        .example .note {
+            color: var(--color-text-muted);
+            font-size: 0.78rem;
+            font-style: italic;
+            margin-left: auto;
+        }
+        .example .expl {
+            color: var(--color-text-muted);
+            font-size: 0.82rem;
+            font-style: italic;
+        }
+        .hl-imieslow {
+            color: #7c3aed;
+            font-weight: 700;
+        }
+
+        /* --- TABELE --- */
+        .table-wrap {
+            overflow-x: auto;
+            margin: 12px 0;
+            border-radius: 10px;
+            border: 1px solid var(--color-border);
+        }
+        .table-wrap table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+        }
+        .table-wrap th,
+        .table-wrap td {
+            padding: 6px 10px;
+            text-align: left;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .table-wrap th {
+            background: #f1f4f8;
+            font-weight: 600;
+            color: #0a2540;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        .table-wrap tr:nth-child(even) {
+            background: #fafbfc;
+        }
+        .table-wrap .error-row {
+            background: #fef2f2;
+        }
+        .table-wrap .correct-row {
+            background: #f0faf4;
+        }
+
+        /* --- PRZYCISKI --- */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 5px 14px;
+            border-radius: 8px;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            font-size: 0.82rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: var(--color-text);
+            font-family: inherit;
+        }
+        .btn:hover {
+            background: var(--color-bg-subtle);
+            border-color: #b0b8c4;
+        }
+        .btn-primary {
+            background: var(--color-training);
+            border-color: var(--color-training);
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #1f4e8c;
+            border-color: #1f4e8c;
+        }
+        .btn-success {
+            background: var(--color-basic);
+            border-color: var(--color-basic);
+            color: white;
+        }
+        .btn-success:hover {
+            background: #1f6e48;
+            border-color: #1f6e48;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--color-border);
+        }
+        .btn-outline:hover {
+            background: var(--color-bg-subtle);
+        }
+        .btn-sm {
+            padding: 3px 10px;
+            font-size: 0.74rem;
+        }
+        .btn-hint {
+            background: var(--color-hint);
+            border-color: var(--color-hint);
+            color: white;
+        }
+        .btn-hint:hover {
+            background: #d97706;
+            border-color: #d97706;
+        }
+
+        /* --- AUDIO --- */
+        .audio-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            cursor: pointer;
+            font-size: 15px;
+            color: var(--color-training);
+            transition: all 0.2s;
+            flex-shrink: 0;
+            font-family: inherit;
+            line-height: 1;
+        }
+        .audio-btn:hover {
+            background: var(--color-training-bg);
+            border-color: var(--color-training);
+        }
+        .audio-btn.playing {
+            background: var(--color-training);
+            border-color: var(--color-training);
+            color: white;
+        }
+
+        /* --- ĆWICZENIA --- */
+        .exercise {
+            background: var(--color-bg-subtle);
+            border-radius: 12px;
+            padding: 14px 16px;
+            margin: 12px 0;
+            border: 1px solid var(--color-border);
+        }
+        .exercise .ex-title {
+            font-weight: 600;
+            color: #0a2540;
+            margin-bottom: 6px;
+            font-size: 1.0rem;
+        }
+
+        /* --- ODPOWIEDZI, WSKAZÓWKI, WYJAŚNIENIA --- */
+        .answer-toggle,
+        .hint-toggle,
+        .explain-toggle {
+            font-family: inherit;
+            padding: 4px 14px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 0.78rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            margin-top: 4px;
+            margin-right: 4px;
+        }
+        .answer-toggle {
+            background: var(--color-training);
+            color: white;
+        }
+        .answer-toggle:hover {
+            background: #1f4e8c;
+        }
+        .hint-toggle {
+            background: var(--color-hint);
+            color: white;
+        }
+        .hint-toggle:hover {
+            background: #d97706;
+        }
+        .explain-toggle {
+            background: transparent;
+            border: 1px solid var(--color-border);
+            color: var(--color-text-muted);
+        }
+        .explain-toggle:hover {
+            border-color: var(--color-training);
+            color: var(--color-training);
+            background: var(--color-training-bg);
+        }
+        .answer-content,
+        .hint-content,
+        .explain-content {
+            border-radius: 6px;
+            padding: 0 12px;
+            margin-top: 4px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease, padding 0.3s ease, opacity 0.3s ease;
+            opacity: 0;
+        }
+        .answer-content.show,
+        .hint-content.show,
+        .explain-content.show {
+            max-height: 800px;
+            padding: 10px 12px;
+            opacity: 1;
+        }
+        .answer-content {
+            background: var(--color-training-bg);
+            border-left: 3px solid var(--color-training);
+        }
+        .hint-content {
+            background: var(--color-hint-bg);
+            border-left: 3px solid var(--color-hint);
+            font-style: italic;
+            color: #78350f;
+        }
+        .explain-content {
+            background: var(--color-bg-subtle);
+            border-left: 3px solid var(--color-training);
+        }
+        .explain-content .rule-box {
+            background: #ffffff;
+            border-radius: 6px;
+            padding: 6px 12px;
+            margin: 4px 0;
+            border: 1px solid var(--color-border);
+            font-size: 0.9rem;
+        }
+
+        .hide-all-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+            margin: 8px 0 4px;
+        }
+        .hide-all-btn {
+            font-family: inherit;
+            padding: 4px 14px;
+            border-radius: 6px;
+            border: 1px solid var(--color-border);
+            background: #ffffff;
+            cursor: pointer;
+            font-size: 0.78rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            color: var(--color-text-muted);
+        }
+        .hide-all-btn:hover {
+            border-color: var(--color-error);
+            color: var(--color-error);
+            background: var(--color-trap-bg);
+        }
+
+        /* --- FISZKA --- */
+        .fiszka {
+            background: var(--color-bg-subtle);
+            border: 2px solid #0a2540;
+            border-radius: 14px;
+            padding: 18px 22px;
+            margin: 20px 0;
+        }
+        .fiszka h3 {
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #0a2540;
+            padding-bottom: 4px;
+        }
+        .fiszka-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px 24px;
+        }
+        .fiszka-col h4 {
+            font-weight: 600;
+            border-bottom: 1px solid #cbd5e0;
+            padding-bottom: 3px;
+            margin-bottom: 4px;
+        }
+        .fiszka-col ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .fiszka-col li {
+            padding: 2px 0 2px 16px;
+            position: relative;
+            font-size: 0.88rem;
+        }
+        .fiszka-col li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--color-training);
+            font-weight: 700;
+        }
+        @media (max-width: 768px) {
+            .fiszka-grid {
+                grid-template-columns: 1fr;
+            }
+            .fiszka {
+                padding: 14px 16px;
+            }
+        }
+
+        /* --- BANK KONSTRUKCJI --- */
+        .bank-item {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 4px 12px;
+            padding: 6px 8px;
+            border-bottom: 1px solid var(--color-border);
+        }
+        .bank-item:last-child {
+            border-bottom: none;
+        }
+        .bank-item .constr {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: #0a2540;
+            min-width: 100px;
+        }
+        .bank-item .meaning {
+            color: var(--color-text-muted);
+            font-style: italic;
+            font-size: 0.85rem;
+            min-width: 80px;
+        }
+        .bank-item .example {
+            flex: 1;
+            background: transparent;
+            border: none;
+            padding: 2px 0;
+            margin: 0;
+            gap: 4px 8px;
+            border-radius: 0;
+        }
+        .bank-item .example .pl {
+            font-size: 0.9rem;
+        }
+        .bank-item .example .expl {
+            font-size: 0.8rem;
+        }
+
+        /* --- FISZKI INTERAKTYWNE --- */
+        .flashcard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px;
+            margin: 12px 0;
+        }
+        .flashcard {
+            min-height: 96px;
+            padding: 14px;
+            border: 2px solid var(--color-border);
+            border-radius: 8px;
+            background: #ffffff;
+            color: #0a2540;
+            font: inherit;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: var(--shadow-card);
+            transition: border-color 0.2s, background 0.2s, transform 0.2s;
+        }
+        .flashcard:hover,
+        .flashcard:focus-visible {
+            border-color: var(--color-training);
+            background: var(--color-training-bg);
+            transform: translateY(-2px);
+            outline: none;
+        }
+        .flashcard .front {
+            display: block;
+            font-weight: 700;
+        }
+        .flashcard .back {
+            display: none;
+            color: var(--color-text-muted);
+        }
+        .flashcard.flipped .front {
+            display: none;
+        }
+        .flashcard.flipped .back {
+            display: block;
+        }
+
+        /* --- PANEL POSTĘPU --- */
+        .top-panel {
+            background: var(--color-bg-subtle);
+            border-radius: 16px;
+            padding: 16px 20px;
+            margin-bottom: 24px;
+            border: 1px solid var(--color-border);
+        }
+        .top-panel .panel-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px 16px;
+        }
+        .top-panel .panel-row+.panel-row {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--color-border);
+        }
+        .top-panel .title {
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: #0a2540;
+        }
+        .top-panel .subtitle {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+        .top-panel .lesson-info {
+            margin-top: 6px;
+            font-size: 0.78rem;
+            color: var(--color-text-muted);
+            line-height: 1.4;
+        }
+        .top-panel .lesson-info .lesson-title {
+            font-style: italic;
+        }
+        .progress-bar-wrap {
+            flex: 1;
+            min-width: 140px;
+        }
+        .progress-bar-bg {
+            background: #e9edf2;
+            border-radius: 20px;
+            height: 6px;
+            overflow: hidden;
+            position: relative;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            border-radius: 20px;
+            background: linear-gradient(90deg, #2b6cb0, #4a8fd0);
+            transition: width 0.4s ease;
+            width: 0%;
+        }
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.7rem;
+            color: var(--color-text-muted);
+            margin-top: 2px;
+        }
+        .view-filters {
+            display: flex;
+            gap: 4px;
+            flex-wrap: wrap;
+        }
+        .view-filters .btn {
+            font-size: 0.72rem;
+            padding: 3px 12px;
+        }
+        .view-filters .btn.active {
+            background: var(--color-training);
+            border-color: var(--color-training);
+            color: white;
+        }
+        .today-tasks {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 16px;
+            margin: 4px 0 0;
+        }
+        .today-tasks .task {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.82rem;
+        }
+        .today-tasks .task .circle {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid var(--color-border);
+            font-size: 0.55rem;
+            font-weight: 700;
+            color: var(--color-text-muted);
+            transition: all 0.2s;
+        }
+        .today-tasks .task.done .circle {
+            background: var(--color-basic);
+            border-color: var(--color-basic);
+            color: white;
+        }
+        .today-tasks .task .task-label {
+            color: var(--color-text-muted);
+        }
+        .today-tasks .task.done .task-label {
+            color: var(--color-text);
+            text-decoration: line-through;
+        }
+
+        /* --- PRZEKREŚLENIE / BŁĘDY --- */
+        .error-text {
+            color: var(--color-error);
+            text-decoration: line-through;
+            font-weight: 600;
+        }
+        .correct-text {
+            color: var(--color-correct);
+            font-weight: 600;
+        }
+        .cross-mark {
+            color: var(--color-error);
+            font-weight: 700;
+            margin-right: 2px;
+        }
+        .check-mark {
+            color: var(--color-correct);
+            font-weight: 700;
+            margin-right: 2px;
+        }
+
+        /* --- FITB --- */
+        .fitb-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 6px 10px;
+            margin: 4px 0;
+            padding: 4px 0;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .fitb-row:last-child {
+            border-bottom: none;
+        }
+        .fitb-row input[type="text"] {
+            padding: 3px 8px;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            font-size: 0.85rem;
+            width: 140px;
+            transition: border-color 0.2s;
+            font-family: inherit;
+        }
+        .fitb-row input[type="text"]:focus {
+            outline: none;
+            border-color: var(--color-training);
+            box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.15);
+        }
+        .fitb-row input[type="text"].correct {
+            border-color: var(--color-correct);
+            background: #f0faf4;
+        }
+        .fitb-row input[type="text"].wrong {
+            border-color: var(--color-error);
+            background: #fef2f2;
+        }
+        .fitb-row .result-icon {
+            font-size: 1.0rem;
+        }
+        .fitb-row select {
+            padding: 4px 8px;
+            border-radius: 6px;
+            border: 1px solid var(--color-border);
+            font-family: inherit;
+            background: #ffffff;
+            min-width: 120px;
+        }
+        .fitb-row select:focus {
+            outline: none;
+            border-color: var(--color-training);
+            box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.15);
+        }
+
+        /* --- MISJA --- */
+        .mission-result {
+            font-size: 1.0rem;
+            font-weight: 600;
+            padding: 10px 14px;
+            border-radius: 10px;
+            margin-top: 8px;
+        }
+        .mission-result.perfect {
+            background: #d4edda;
+            color: #155724;
+        }
+        .mission-result.good {
+            background: #cce5ff;
+            color: #004085;
+        }
+        .mission-result.ok {
+            background: #ffe8cc;
+            color: #8a6d3b;
+        }
+        .mission-result.fail {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        /* --- CHECKLISTA --- */
+        .checklist {
+            padding-left: 0;
+            list-style: none;
+        }
+        .checklist li {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 1px 0;
+            font-size: 0.88rem;
+        }
+        .checklist input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            accent-color: var(--color-training);
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        /* --- SPIS TREŚCI (akordeon) --- */
+        .toc-section {
+            background: #ffffff;
+            border: 1px solid var(--color-border);
+            border-radius: 16px;
+            padding: 18px 22px;
+            margin-bottom: 22px;
+        }
+        .toc-section h2 {
+            margin-bottom: 14px;
+            font-size: 1.25rem;
+        }
+        .toc-accordion {
+            margin-top: 6px;
+        }
+        .toc-item {
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            margin-bottom: 6px;
+            background: #ffffff;
+        }
+        .toc-summary {
+            font-weight: 600;
+            font-size: 0.92rem;
+            padding: 8px 14px;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s;
+        }
+        .toc-summary:hover {
+            background: var(--color-bg-subtle);
+        }
+        .toc-summary::-webkit-details-marker {
+            display: none;
+        }
+        .toc-summary::before {
+            content: "▶";
+            font-size: 0.7rem;
+            color: var(--color-text-muted);
+            transition: transform 0.2s;
+            margin-right: 6px;
+        }
+        .toc-item[open] .toc-summary::before {
+            transform: rotate(90deg);
+        }
+        .toc-checklist {
+            padding: 4px 14px 12px 30px;
+            list-style: none;
+            margin: 0;
+        }
+        .toc-checklist li {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85rem;
+            padding: 2px 0;
+        }
+        .toc-checklist input[type="checkbox"] {
+            width: 15px;
+            height: 15px;
+            accent-color: var(--color-training);
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        .toc-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: 2px 14px 8px 30px;
+        }
+        .toc-anchor {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 30px;
+            padding: 4px 11px;
+            border: 1px solid var(--color-training);
+            border-radius: 6px;
+            background: var(--color-training-bg);
+            color: var(--color-training);
+            font-size: 0.78rem;
+            font-weight: 600;
+            line-height: 1.2;
+            text-decoration: none;
+            transition: background 0.2s, color 0.2s;
+        }
+        .toc-anchor:hover,
+        .toc-anchor:focus-visible {
+            background: var(--color-training);
+            color: #ffffff;
+        }
+        .toc-keywords {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 14px;
+            padding: 12px 16px;
+            background: var(--color-basic-bg);
+            border-radius: 12px;
+            color: #0f5132;
+            font-weight: 600;
+            line-height: 1.6;
+        }
+        .toc-keywords span {
+            font-style: italic;
+            color: #1e293b;
+        }
+
+        /* --- UKRYWANIE SEKCJI (filter) --- */
+        .section.hidden-by-filter {
+            display: none !important;
+        }
+
+        /* --- LISTA TEMATÓW GŁÓWNYCH --- */
+        .topic-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 7px 30px;
+            padding-left: 28px;
+        }
+        .topic-list li {
+            margin: 0;
+            padding-left: 2px;
+            font-size: 0.9rem;
+        }
+        .topic-list a {
+            display: flex;
+            align-items: center;
+            min-height: 38px;
+            padding: 6px 10px;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            background: #ffffff;
+            color: #0a2540;
+            font-weight: 600;
+            line-height: 1.25;
+            text-decoration: none;
+            transition: background 0.2s, border-color 0.2s, color 0.2s;
+        }
+        .topic-list a:hover,
+        .topic-list a:focus-visible {
+            background: var(--color-training-bg);
+            border-color: var(--color-training);
+            color: var(--color-training);
+        }
+        @media (max-width: 600px) {
+            .topic-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* --- STOPKA --- */
+        .footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 2px solid var(--color-border);
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 600px) {
+            .top-panel .panel-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .view-filters {
+                justify-content: center;
+            }
+            .today-tasks {
+                flex-direction: column;
+                gap: 3px;
+            }
+            .example {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .example .note {
+                margin-left: 0;
+            }
+            .fitb-row {
+                flex-wrap: wrap;
+            }
+            .fitb-row input[type="text"] {
+                width: 100%;
+            }
+            .top-panel {
+                padding: 12px 14px;
+            }
+            .container {
+                padding: 10px 6px;
+            }
+            .bank-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2px;
+            }
+            .bank-item .constr {
+                min-width: auto;
+            }
+            .bank-item .meaning {
+                min-width: auto;
+            }
+            .topic-list {
+                columns: 1;
+            }
+            .toc-section {
+                padding: 12px 14px;
+            }
+            .toc-summary {
+                font-size: 0.85rem;
+                padding: 6px 10px;
+            }
+            .toc-checklist li {
+                font-size: 0.8rem;
+            }
+            .fitb-row select {
+                width: 100%;
+                min-width: unset;
+            }
+        }
+
+        .text-muted {
+            color: var(--color-text-muted);
+        }
+        .text-sm {
+            font-size: 0.82rem;
+        }
+        .mt-8 {
+            margin-top: 8px;
+        }
+        .mb-8 {
+            margin-bottom: 8px;
+        }
+        .part-heading {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0a2540;
+            margin-top: 32px;
+            margin-bottom: 14px;
+            padding: 8px 16px;
+            background: var(--color-bg-subtle);
+            border-radius: 12px;
+            border-left: 6px solid var(--color-training);
+            letter-spacing: -0.02em;
+        }
+        .part-heading .part-num {
+            color: var(--color-training);
+        }
+
+        /* --- MASTER --- */
+        :root {
+            --master-ink: #17212b;
+            --master-muted: #64748b;
+            --master-line: #e2e8f0;
+            --master-surface: #ffffff;
+            --master-soft: #f8fafc;
+            --master-accent: #276749;
+            --master-accent-soft: #eef7f1;
+            --master-shadow: 0 4px 18px rgba(15, 23, 42, .055);
+        }
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 74px
+        }
+        body {
+            background: #f3f5f7;
+            color: var(--master-ink)
+        }
+        .container {
+            border: 1px solid #e8edf2;
+            box-shadow: 0 10px 34px rgba(15, 23, 42, .06)
+        }
+        .section {
+            scroll-margin-top: 76px
+        }
+        .card,
+        .exercise,
+        .rule-box,
+        .example,
+        .flashcard,
+        .table-wrap {
+            box-shadow: none
+        }
+        .btn,
+        .answer-toggle,
+        .hint-toggle,
+        .hide-all-btn {
+            transition: background .16s ease, border-color .16s ease, transform .08s ease, box-shadow .16s ease
+        }
+        .btn:active,
+        .answer-toggle:active,
+        .hint-toggle:active {
+            transform: translateY(1px)
+        }
+        button:focus-visible,
+        a:focus-visible,
+        input:focus-visible,
+        select:focus-visible,
+        [tabindex]:focus-visible {
+            outline: 3px solid rgba(39, 103, 73, .22);
+            outline-offset: 2px
+        }
+        .audio-btn {
+            min-width: 34px;
+            min-height: 34px;
+            border-radius: 8px;
+            font-size: .9rem
+        }
+        .master-topbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            min-height: 48px;
+            margin: -8px -8px 18px;
+            padding: 7px 10px;
+            background: rgba(255, 255, 255, .96);
+            border: 1px solid var(--master-line);
+            border-radius: 12px;
+            box-shadow: var(--master-shadow);
+            backdrop-filter: blur(8px)
+        }
+        .master-topbar .master-title {
+            font-size: .82rem;
+            font-weight: 600;
+            color: #334155;
+            margin-right: auto;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis
+        }
+        .master-btn {
+            appearance: none;
+            border: 1px solid #d7dee7;
+            background: #fff;
+            color: #334155;
+            border-radius: 8px;
+            padding: 7px 10px;
+            font: inherit;
+            font-size: .78rem;
+            cursor: pointer
+        }
+        .master-btn:hover {
+            background: #f8fafc;
+            border-color: #cbd5e1
+        }
+        .master-btn[aria-pressed="true"] {
+            background: var(--master-accent-soft);
+            border-color: #b7d7c3;
+            color: #20553c
+        }
+        .master-progress {
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            height: 2px;
+            width: 0;
+            background: var(--master-accent);
+            transition: width .1s linear
+        }
+        .master-section-nav {
+            display: flex;
+            gap: 6px;
+            overflow: auto;
+            padding: 4px 0 10px;
+            margin-bottom: 8px;
+            scrollbar-width: thin
+        }
+        .master-section-nav a {
+            flex: 0 0 auto;
+            padding: 5px 9px;
+            border: 1px solid #e2e8f0;
+            border-radius: 7px;
+            color: #475569;
+            background: #fff;
+            font-size: .75rem;
+            text-decoration: none
+        }
+        .master-section-nav a.active {
+            background: var(--master-accent-soft);
+            border-color: #b7d7c3;
+            color: #20553c;
+            font-weight: 600
+        }
+        body.master-focus .toc-wrap,
+        body.master-focus .toc,
+        body.master-focus .master-section-nav {
+            display: none !important
+        }
+        body.master-focus .container {
+            max-width: 920px
+        }
+        body.master-focus .section:not(.section-active) {
+            opacity: .72
+        }
+        body.master-focus .section.section-active {
+            opacity: 1
+        }
+        .master-tip {
+            margin: 10px 0;
+            padding: 10px 12px;
+            border-left: 3px solid #94a3b8;
+            background: #f8fafc;
+            color: #475569;
+            font-size: .86rem;
+            border-radius: 0 8px 8px 0
+        }
+        @media(max-width:700px) {
+            .master-topbar .master-title {
+                display: none
+            }
+            .master-topbar {
+                justify-content: flex-end
+            }
+            .master-btn {
+                padding: 7px 8px
+            }
+            .master-section-nav a {
+                font-size: .72rem
+            }
+        }
+        @media(prefers-reduced-motion:reduce) {
+            html {
+                scroll-behavior: auto
+            }
+            * {
+                transition: none !important
+            }
+        }
+
+        /* MASTER MASTER */
+        :root {
+            --mm-ink: #182230;
+            --mm-muted: #64748b;
+            --mm-line: #dfe5eb;
+            --mm-surface: #f8fafc;
+            --mm-accent: #2f6f59;
+            --mm-accent-soft: #edf5f1;
+            --mm-danger: #b33a3a;
+            --mm-danger-soft: #fbf1f1;
+            --mm-warn: #806a2b;
+            --mm-warn-soft: #faf7ec
+        }
+        body {
+            background: #eef1f4;
+            color: var(--mm-ink)
+        }
+        .container {
+            border-radius: 18px;
+            box-shadow: 0 5px 24px rgba(15, 23, 42, .055);
+            padding: 24px 30px 28px
+        }
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: #1d2b39
+        }
+        h2 {
+            border-bottom: 1px solid var(--mm-line)
+        }
+        .card {
+            box-shadow: none;
+            border-radius: 10px
+        }
+        .card-warning {
+            background: var(--mm-warn-soft);
+            border-left-color: var(--mm-warn);
+            border-color: #e5ddbf
+        }
+        .card-hint {
+            background: #f7f8fa;
+            border-left-color: #64748b;
+            border-color: #d8dee5
+        }
+        .card-error {
+            background: var(--mm-danger-soft);
+            border-left-color: var(--mm-danger);
+            border-color: #ebd0d0
+        }
+        .card-correct {
+            background: var(--mm-accent-soft);
+            border-left-color: var(--mm-accent);
+            border-color: #cfe1d8
+        }
+        .audio-btn {
+            min-width: 36px;
+            min-height: 32px;
+            border-radius: 8px
+        }
+        .mm-focusbar {
+            position: sticky;
+            top: 8px;
+            z-index: 20;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            margin: 0 0 12px;
+            padding: 7px 9px;
+            background: rgba(255, 255, 255, .95);
+            border: 1px solid var(--mm-line);
+            border-radius: 10px;
+            font-size: .78rem
+        }
+        .mm-focusbar .mm-section-name {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: var(--mm-muted)
+        }
+        .mm-focusbar button {
+            border: 1px solid var(--mm-line);
+            background: #fff;
+            color: var(--mm-ink);
+            border-radius: 7px;
+            padding: 5px 9px;
+            cursor: pointer
+        }
+        .mm-orientation {
+            display: grid;
+            grid-template-columns: 1.25fr .9fr .9fr;
+            gap: 10px;
+            margin: 0 0 18px;
+            padding: 12px;
+            border: 1px solid var(--mm-line);
+            border-radius: 12px;
+            background: #fff
+        }
+        .mm-orientation .mm-step {
+            padding: 11px 12px;
+            border-radius: 9px;
+            background: var(--mm-surface);
+            border: 1px solid #e5e9ee
+        }
+        .mm-orientation .mm-step strong {
+            display: block;
+            font-size: .9rem;
+            margin-bottom: 2px
+        }
+        .mm-orientation .mm-step span {
+            font-size: .78rem;
+            color: var(--mm-muted)
+        }
+        .mm-orientation .mm-step.current {
+            border-color: #b8cfc4;
+            background: var(--mm-accent-soft)
+        }
+        .mm-orientation .mm-step.current strong {
+            color: var(--mm-accent)
+        }
+        .mm-study-rule {
+            display: flex;
+            gap: 12px;
+            padding: 13px 15px;
+            margin: 14px 0 22px;
+            border: 1px solid var(--mm-line);
+            border-radius: 11px;
+            background: #fff
+        }
+        .mm-study-rule .mm-rule-key {
+            font-weight: 700;
+            white-space: nowrap;
+            color: var(--mm-accent)
+        }
+        .mm-study-rule p {
+            margin: 0;
+            font-size: .9rem
+        }
+        .mm-recall {
+            margin: 16px 0;
+            padding: 14px 16px;
+            border: 1px dashed #b9c3ce;
+            border-radius: 10px;
+            background: #fbfcfd
+        }
+        .mm-recall summary {
+            cursor: pointer;
+            font-weight: 600
+        }
+        .mm-recall p {
+            margin: 9px 0 0;
+            font-size: .9rem
+        }
+        .mm-microtest {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin: 12px 0
+        }
+        .mm-microtest button {
+            padding: 9px 10px;
+            border: 1px solid var(--mm-line);
+            border-radius: 8px;
+            background: #fff;
+            text-align: left;
+            cursor: pointer;
+            font: inherit
+        }
+        .mm-microtest button:hover {
+            background: var(--mm-surface)
+        }
+        .mm-microtest .mm-answer {
+            display: block;
+            margin-top: 5px;
+            color: var(--mm-muted);
+            font-size: .8rem
+        }
+        .mm-current-section {
+            scroll-margin-top: 75px
+        }
+        body.mm-focus .toc-section,
+        body.mm-focus .mm-orientation,
+        body.mm-focus .top-panel .view-filters,
+        body.mm-focus .top-panel .today-tasks {
+            display: none
+        }
+        body.mm-focus .container {
+            max-width: 900px
+        }
+        body.mm-focus .section:not(.mm-current-section) {
+            opacity: .42;
+            transition: opacity .2s
+        }
+        @media(max-width:760px) {
+            .container {
+                padding: 17px 14px 22px;
+                border-radius: 13px
+            }
+            .mm-orientation {
+                grid-template-columns: 1fr
+            }
+            .mm-microtest {
+                grid-template-columns: 1fr
+            }
+            .mm-focusbar {
+                top: 4px
+            }
+        }
+        @media(prefers-reduced-motion:reduce) {
+            * {
+                transition: none !important;
+                scroll-behavior: auto !important
+            }
+        }
+
+        /* dodatkowe */
+        .bohater-tabela td:first-child {
+            font-weight: 700;
+            color: var(--color-training);
+        }
+        .bohater-tabela tr:nth-child(even) {
+            background: #f8faff;
+        }
+        .rule-highlight {
+            background: var(--color-remember-bg);
+            border-radius: 6px;
+            padding: 4px 10px;
+            font-weight: 600;
+            color: var(--color-remember);
+        }
+        .poprawka-box {
+            background: #fff8e7;
+            border-left: 4px solid #d69e2e;
+            padding: 10px 14px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        .poprawka-box .poprawka-title {
+            font-weight: 700;
+            color: #8a6d3b;
+        }
+        .korekta {
+            background: #f0faf4;
+            border-left: 4px solid var(--color-correct);
+            padding: 10px 14px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        .korekta .korekta-title {
+            font-weight: 700;
+            color: var(--color-correct);
+        }
+        .blad-box {
+            background: #fef2f2;
+            border-left: 4px solid var(--color-error);
+            padding: 10px 14px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        .blad-box .blad-title {
+            font-weight: 700;
+            color: var(--color-error);
+        }
+        /* dodatkowe style dla nowych elementów */
+        .haczyk-box {
+            background: #f0f6ff;
+            border-left: 5px solid #2b6cb0;
+            padding: 12px 16px;
+            margin: 10px 0;
+            border-radius: 6px;
+        }
+        .haczyk-box .haczyk-title {
+            font-weight: 700;
+            color: #2b6cb0;
+        }
+        .motyw-dopasowanie {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 16px;
+            margin: 8px 0;
+            padding: 6px 0;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .motyw-dopasowanie select {
+            padding: 4px 8px;
+            border-radius: 6px;
+            border: 1px solid var(--color-border);
+            font-family: inherit;
+            min-width: 140px;
+        }
+        .motyw-dopasowanie .motyw-label {
+            font-weight: 500;
+            min-width: 100px;
+        }
+        .motyw-dopasowanie .result-icon {
+            font-size: 1.0rem;
+        }
+
+        /* Nowa klasa dla ściągi z notatkami */
+        .cheat-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 8px;
+        }
+        .cheat-grid h4 {
+            margin-top: 0;
+            margin-bottom: 4px;
+            border-bottom: 1px solid #cbd5e0;
+            padding-bottom: 2px;
+        }
+        .cheat-grid ul {
+            padding-left: 18px;
+            margin-bottom: 6px;
+        }
+        .cheat-grid ul li {
+            font-size: 0.88rem;
+        }
+        @media (max-width: 600px) {
+            .cheat-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .czesc-mowy-tabela td:first-child {
+            font-weight: 700;
+            color: var(--color-training);
+        }
+
+        /* styl dla rozpoznawania z uzasadnieniem */
+        .rozpoznawanie-tabela td:nth-child(3) {
+            font-style: italic;
+            color: var(--color-text-muted);
+            font-size: 0.82rem;
+        }
+        .rozpoznawanie-tabela th:nth-child(3) {
+            font-weight: 600;
+        }
+
+        /* Box CKE – wyróżniony */
+        .cke-box {
+            background: #f0f6ff;
+            border-left: 6px solid #2b6cb0;
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin: 16px 0;
+        }
+        .cke-box .cke-title {
+            font-weight: 700;
+            color: #2b6cb0;
+            font-size: 1.05rem;
+            display: block;
+            margin-bottom: 6px;
+        }
+        .cke-box ul {
+            padding-left: 20px;
+        }
+
+        /* Box z wyjątkami */
+        .wyjatki-box {
+            background: #fff8e7;
+            border-left: 4px solid #d69e2e;
+            padding: 10px 14px;
+            margin: 8px 0;
+            border-radius: 4px;
+        }
+        .wyjatki-box .wyjatki-title {
+            font-weight: 700;
+            color: #8a6d3b;
+        }
+
+        /* Tabela pułapek – rozbudowana */
+        .pulapki-tabela td:first-child {
+            font-weight: 600;
+            color: var(--color-error);
+        }
+        .pulapki-tabela .poprawka-col {
+            color: var(--color-correct);
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="app">
+
+        <!-- ============================================================
+        TOP PANEL – POSTĘP + FILTRY + ZADANIA
+        ============================================================ -->
+        <div class="top-panel" id="topPanel">
+            <div class="panel-row">
+                <div>
+                    <div class="title">„Hobbit” + nieodmienne części mowy</div>
+                    <div class="subtitle">Egzamin ósmoklasisty · język polski · kompleksowe przygotowanie</div>
+                    <div class="lesson-info">
+                        <div class="lesson-title">Lekcja 2 – „Hobbit, czyli tam i z powrotem” oraz przysłówek, przyimek, spójnik, partykuła, wykrzyknik</div>
+                        <div>Wersja 3.0 – uzupełniona o status lektury, zasady CKE, pułapki egzaminacyjne i rozróżnienie „czy”</div>
+                    </div>
+                </div>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" id="progressFill" style="width:0%;"></div>
+                    </div>
+                    <div class="progress-label">
+                        <span id="progressPercent">0%</span>
+                        <span id="progressStatus">Zacznij naukę</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-row">
+                <div class="view-filters">
+                    <button class="btn active" data-view="all" onclick="setView('all')">Wszystko</button>
+                    <button class="btn" data-view="basic" onclick="setView('basic')">Podstawa + Trening</button>
+                    <button class="btn" data-view="exam" onclick="setView('exam')">Egzamin</button>
+                </div>
+                <div style="font-size:0.75rem; color:var(--color-text-muted); margin-left:auto;">
+                    <span id="visibleCount">0</span> / <span id="totalCount">0</span> widocznych
+                </div>
+                <button class="btn btn-outline btn-sm" type="button" onclick="resetAllProgress()">Resetuj postęp</button>
+            </div>
+
+            <div class="panel-row">
+                <div class="today-tasks" id="todayTasks">
+                    <div class="task" data-task="hobbit"><span class="circle">1</span><span class="task-label">Poznaj Hobbita – bohaterów i wydarzenia</span></div>
+                    <div class="task" data-task="motywy"><span class="circle">2</span><span class="task-label">Opanuj motywy i przemianę Bilba</span></div>
+                    <div class="task" data-task="czescimowy"><span class="circle">3</span><span class="task-label">Rozpoznaj nieodmienne części mowy</span></div>
+                    <div class="task" data-task="cwiczenia"><span class="circle">4</span><span class="task-label">Zrób ćwiczenia</span></div>
+                    <div class="task" data-task="test"><span class="circle">5</span><span class="task-label">Zrób test końcowy</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MASTER MASTER — warstwa prowadzenia ucznia -->
+        <div class="mm-focusbar" id="mmFocusBar" aria-live="polite"><span class="mm-section-name" id="mmSectionName">Lekcja 2 · orientacja</span><button type="button" id="mmFocusBtn" onclick="mmToggleFocus()">Tryb skupienia</button></div>
+        <div class="mm-orientation" aria-label="Plan pracy z lekcją">
+            <div class="mm-step current"><strong>1. Rozpoznaj</strong><span>Przypomnij sobie bohaterów i wydarzenia z „Hobbita”.</span></div>
+            <div class="mm-step"><strong>2. Zrozum</strong><span>Opanuj zasady rozpoznawania nieodmiennych części mowy.</span></div>
+            <div class="mm-step"><strong>3. Zastosuj</strong><span>Wykonaj ćwiczenia i sprawdź się w teście.</span></div>
+        </div>
+        <div class="mm-study-rule">
+            <div class="mm-rule-key">Zasada pracy</div>
+            <p><strong>Nie ucz się definicji na pamięć.</strong> Ćwicz rozpoznawanie części mowy w konkretnych zdaniach – to właśnie ta umiejętność jest sprawdzana na egzaminie. Łącz wiedzę o lekturze z umiejętnościami językowymi: każdy motyw z „Hobbita” możesz wykorzystać w rozprawce, a znajomość części mowy pomoże ci w zadaniach gramatycznych.</p>
+        </div>
+
+        <!-- ============================================================
+        NOWY BOX: STATUS LEKTURY I ZASADY CKE (DODANY)
+        ============================================================ -->
+        <div class="cke-box">
+            <span class="cke-title">📌 WAŻNE – CKE / E8</span>
+            <ul>
+                <li><strong>„Hobbit, czyli tam i z powrotem” J.R.R. Tolkiena</strong> to <strong>lektura obowiązkowa</strong> z klas IV–VI.</li>
+                <li>W latach 2024/2025–2025/2026 zadania w <strong>części I arkusza</strong> dotyczą <strong>wyłącznie fragmentu</strong> zamieszczonego w arkuszu – <strong>nie sprawdzają znajomości całej treści ani problematyki całego utworu</strong>.</li>
+                <li>W <strong>wypracowaniu i zadaniach otwartych</strong> możesz się do niej <strong>swobodnie odwoływać</strong>.</li>
+                <li>Lista lektur obowiązkowych znajduje się <strong>na początku arkusza egzaminacyjnego</strong> – możesz z niej korzystać w trakcie egzaminu.</li>
+            </ul>
+        </div>
+
+        <!-- ============================================================
+        ŚCIĄGA Z NOTATEK
+        ============================================================ -->
+        <div class="card card-remember" style="border-left: 6px solid #2b6cb0; background: #f0f6ff; margin: 16px 0 20px;">
+            <span class="card-label" style="color: #2b6cb0; font-size: 1rem; font-weight: 700;">📌 Ściąga z notatek – najważniejsze informacje w pigułce</span>
+            <div class="cheat-grid">
+                <div>
+                    <h4>„Hobbit” – kluczowe fakty</h4>
+                    <ul>
+                        <li><strong>Autor:</strong> J.R.R. Tolkien.</li>
+                        <li><strong>Główny bohater:</strong> Bilbo Baggins (przemiana: hobbit → bohater).</li>
+                        <li><strong>Smauga zabija Bard</strong> (nie Bilbo).</li>
+                        <li><strong>Bilbo odkrywa słaby punkt</strong> Smauga (goła plama na brzuchu).</li>
+                        <li><strong>Thorin</strong> ulega chciwości, ale przed śmiercią żałuje.</li>
+                        <li><strong>Gandalf</strong> – inicjator wyprawy, mądry przewodnik.</li>
+                    </ul>
+                    <h4 style="margin-top:12px;">Motywy w „Hobbicie”</h4>
+                    <ul>
+                        <li>Podróż i wędrówka (droga do dojrzałości)</li>
+                        <li>Przyjaźń i lojalność</li>
+                        <li>Chciwość (Thorin, Smaug)</li>
+                        <li>Odwaga (działanie mimo strachu)</li>
+                        <li>Walka dobra ze złem</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Nieodmienne części mowy</h4>
+                    <ul>
+                        <li><strong>Przysłówek</strong> – jak? gdzie? kiedy? (<em>szybko, tutaj, jutro</em>)</li>
+                        <li><strong>Przyimek</strong> – łączy się z rzeczownikiem (<em>do, pod, z, na</em>)</li>
+                        <li><strong>Spójnik</strong> – łączy wyrazy lub zdania (<em>i, ale, ponieważ</em>)</li>
+                        <li><strong>Partykuła</strong> – modyfikuje znaczenie (<em>nie, czy, oby, nawet</em>)</li>
+                        <li><strong>Wykrzyknik</strong> – wyraża emocje (<em>ach, hej, hurra</em>)</li>
+                    </ul>
+                    <h4 style="margin-top:12px;">Gotowe zdania do rozprawki</h4>
+                    <ul>
+                        <li><em>Bilbo udowadnia, że prawdziwa odwaga nie polega na braku strachu, lecz na działaniu mimo lęku.</em></li>
+                        <li><em>Historia Thorina pokazuje, że chciwość może zniszczyć nawet silne więzi przyjaźni.</em></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================================
+        SPIS TREŚCI (akordeon z checklistą)
+        ============================================================ -->
+        <div class="toc-section" id="sec-toc">
+            <h2>Spis treści</h2>
+            <div class="toc-accordion">
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Wprowadzenie – „Hobbit” i nieodmienne części mowy</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-hobbit-info">Podstawowe informacje</a>
+                        <a class="toc-anchor" href="#sec-hobbit-bohaterowie">Bohaterowie</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Znam autora, tytuł i gatunek „Hobbita”.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam najważniejszych bohaterów.</li>
+                        <li><input type="checkbox" data-progress="5" /> Wiem, że to lektura obowiązkowa i znam zasady CKE.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Wydarzenia i przemiana Bilba</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-hobbit-wydarzenia">Najważniejsze wydarzenia</a>
+                        <a class="toc-anchor" href="#sec-hobbit-przemiana">Przemiana Bilba</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Znam kluczowe wydarzenia i ich znaczenie.</li>
+                        <li><input type="checkbox" data-progress="5" /> Rozumiem, na czym polega przemiana Bilba.</li>
+                        <li><input type="checkbox" data-progress="5" /> Wiem, że Bard zabija Smauga, a Bilbo odkrywa słaby punkt.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Motywy i gotowe argumenty</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-hobbit-motywy">Motywy</a>
+                        <a class="toc-anchor" href="#sec-hobbit-zdania">Zdania do rozprawki</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Znam motywy obecne w „Hobbicie”.</li>
+                        <li><input type="checkbox" data-progress="5" /> Mam gotowe zdania do rozprawki.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Nieodmienne części mowy – teoria</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-czesci-mowy">Przegląd</a>
+                        <a class="toc-anchor" href="#sec-przyslowek">Przysłówek</a>
+                        <a class="toc-anchor" href="#sec-przyimek">Przyimek</a>
+                        <a class="toc-anchor" href="#sec-spojnik">Spójnik</a>
+                        <a class="toc-anchor" href="#sec-partykula">Partykuła</a>
+                        <a class="toc-anchor" href="#sec-wykrzyknik">Wykrzyknik</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Rozróżniam pięć nieodmiennych części mowy.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam przykłady każdej z nich.</li>
+                        <li><input type="checkbox" data-progress="5" /> Potrafię wskazać je w zdaniu.</li>
+                        <li><input type="checkbox" data-progress="5" /> Rozróżniam „czy” jako partykułę i spójnik.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Ćwiczenia interaktywne i fiszki</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-cwiczenia">Ćwiczenia</a>
+                        <a class="toc-anchor" href="#sec-flashcards">Fiszki</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Wykonałem ćwiczenia z części mowy.</li>
+                        <li><input type="checkbox" data-progress="5" /> Przećwiczyłem fiszki.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Egzamin – jak to wygląda?</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-egzamin">Egzamin w praktyce</a>
+                        <a class="toc-anchor" href="#sec-pulapki">Pułapki egzaminacyjne</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Wiem, jak wyglądają zadania z „Hobbita” na egzaminie.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam najczęstsze pułapki egzaminacyjne.</li>
+                    </ul>
+                </details>
+
+                <details class="toc-item">
+                    <summary class="toc-summary">Test końcowy i podsumowanie</summary>
+                    <nav class="toc-actions">
+                        <a class="toc-anchor" href="#sec-mission">Misja końcowa</a>
+                        <a class="toc-anchor" href="#sec-podsumowanie">Podsumowanie</a>
+                    </nav>
+                    <ul class="toc-checklist">
+                        <li><input type="checkbox" data-progress="5" /> Rozwiązałem test końcowy.</li>
+                        <li><input type="checkbox" data-progress="5" /> Znam swoje mocne i słabe strony.</li>
+                    </ul>
+                </details>
+
+            </div>
+            <div class="toc-keywords">
+                <span>Słowa kluczowe: Bilbo · Smaug · Bard · Thorin · Gandalf · przemiana · podróż · chciwość · odwaga · przysłówek · przyimek · spójnik · partykuła · wykrzyknik · nieodmienne części mowy · CKE · E8 · fragment · pułapki</span>
+            </div>
+        </div>
+
+        <!-- ============================================================
+        CZĘŚĆ 1 – „HOBBIT”
+        ============================================================ -->
+        <div class="mm-recall" id="mmRecall">
+            <details>
+                <summary>Sprawdź się przed nauką — 3 szybkie pytania</summary>
+                <div class="mm-microtest">
+                    <button type="button" onclick="mmReveal(this,'Bilbo Baggins – hobbit, który wyrusza w podróż i przechodzi przemianę.')">Kto jest głównym bohaterem „Hobbita”?<span class="mm-answer"></span></button>
+                    <button type="button" onclick="mmReveal(this,'Przysłówek odpowiada na pytania: jak? gdzie? kiedy?')">Na jakie pytania odpowiada przysłówek?<span class="mm-answer"></span></button>
+                    <button type="button" onclick="mmReveal(this,'Bard zabija Smauga czarną strzałą.')">Kto zabija Smauga?<span class="mm-answer"></span></button>
+                </div>
+                <p>To nie jest test na ocenę – pokazuje, co już wiesz.</p>
+            </details>
+        </div>
+
+        <section class="section" data-level="basic" id="part1">
+            <div class="part-heading"><span class="part-num">Część 1</span> · „Hobbit, czyli tam i z powrotem”</div>
+
+            <div class="section" data-level="basic" id="sec-hobbit-info">
+                <h2>1. Podstawowe informacje</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Lektura w pigułce</span>
+                    <ul>
+                        <li><strong>Autor:</strong> J.R.R. Tolkien (John Ronald Reuel Tolkien).</li>
+                        <li><strong>Tytuł:</strong> „Hobbit, czyli tam i z powrotem”.</li>
+                        <li><strong>Główny bohater:</strong> Bilbo Baggins.</li>
+                        <li><strong>Miejsce wydarzeń:</strong> Śródziemie.</li>
+                        <li><strong>Czas:</strong> nieokreślony, charakterystyczny dla fantasy.</li>
+                        <li><strong>Gatunek:</strong> powieść fantasy z elementami baśni, powieści przygodowej i utworu drogi.</li>
+                        <li><strong>Status:</strong> <span class="correct-text">lektura obowiązkowa z klas IV–VI</span>.</li>
+                    </ul>
+                    <div class="korekta">
+                        <span class="korekta-title">Ważne doprecyzowanie</span>
+                        <p>Nie jest to po prostu „baśń”. W utworze występują wprawdzie elementy baśniowe — smoki, czarodzieje, elfy i magiczne przedmioty — ale całość ma rozbudowaną fabułę, wielu bohaterów i cechy powieści przygodowej.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-hobbit-bohaterowie">
+                <h2>2. Najważniejsi bohaterowie</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Bohater</th><th>Najważniejsze informacje</th></tr></thead>
+                        <tbody>
+                            <tr><td><strong>Bilbo Baggins</strong></td><td>Hobbit, który wyrusza w podróż i stopniowo staje się odważny, samodzielny oraz odpowiedzialny. <strong>Bohater dynamiczny</strong> – zwycięża <strong>sprytem i inteligencją</strong>, nie siłą.</td></tr>
+                            <tr><td><strong>Gandalf</strong></td><td>Czarodziej, inicjator wyprawy. Jest mądry, przewidujący i pomaga bohaterom w trudnych sytuacjach.</td></tr>
+                            <tr><td><strong>Thorin Dębowa Tarcza</strong></td><td>Przywódca krasnoludów, następca króla pod Górą. Jest odważny i dumny, ale ostatecznie ulega <strong>chciwości</strong> (smocza choroba), jednak przed śmiercią <strong>żałuje</strong>.</td></tr>
+                            <tr><td><strong>Smaug</strong></td><td>Potężny i inteligentny smok, który zagarnął skarby krasnoludów. Symbolizuje <strong>zło, przemoc i niszczącą chciwość</strong>.</td></tr>
+                            <tr><td><strong>Bard Łucznik</strong></td><td>Mieszkaniec Esgaroth, który <strong>zabija Smauga</strong> czarną strzałą w słaby punkt smoka.</td></tr>
+                            <tr><td><strong>Gollum</strong></td><td>Samotna, niebezpieczna istota mieszkająca pod ziemią. Przechowuje pierścień i rywalizuje z Bilbem w pojedynku na zagadki.</td></tr>
+                            <tr><td><strong>Dwalin i Balin</strong></td><td>Krasnoludy uczestniczące w wyprawie Thorina. Balin darzy Bilba szczególnym szacunkiem.</td></tr>
+                            <tr><td><strong>Elrond</strong></td><td>Władca Rivendell, który pomaga uczestnikom wyprawy odczytać mapę i księżycowe litery.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card card-trap">
+                    <span class="card-label">⚠️ Częsty błąd na egzaminie!</span>
+                    <p><strong>Bilbo</strong> odkrywa słaby punkt Smauga (goła plama na brzuchu), ale <strong>to Bard zabija Smauga</strong> czarną strzałą. Nie myl tych ról!</p>
+                </div>
+            </div>
+
+            <div class="section" data-level="training" id="sec-hobbit-wydarzenia">
+                <h2>3. Najważniejsze wydarzenia</h2>
+
+                <h3>Wyprawa Bilba</h3>
+                <div class="card card-remember">
+                    <span class="card-label">Początek podróży</span>
+                    <p>Gandalf przyprowadza do domu Bilba grupę krasnoludów dowodzonych przez Thorina. Ich celem jest odzyskanie Samotnej Góry i skarbu zagarniętego przez Smauga.</p>
+                    <p>Bilbo początkowo nie chce opuszczać domu, ale ostatecznie przyłącza się do wyprawy. Podróż staje się dla niego próbą charakteru.</p>
+                    <p><strong>Znaczenie:</strong> początek przemiany Bilba; opuszczenie bezpiecznego świata; rozpoczęcie motywu wędrówki; konfrontacja z nieznanym.</p>
+                </div>
+
+                <h3>Spotkanie z Gollumem</h3>
+                <div class="card card-remember">
+                    <span class="card-label">Pojedynek na zagadki</span>
+                    <p>Bilbo trafia do podziemi, gdzie spotyka Golluma. W wyniku pojedynku na zagadki zdobywa pierścień i dzięki niemu staje się niewidzialny.</p>
+                    <p>Bilbo wygrywa nie siłą, lecz <strong>sprytem, opanowaniem, inteligencją i umiejętnością szybkiego reagowania</strong>.</p>
+                    <p><strong>Wniosek:</strong> Gdy bohater nie może zwyciężyć siłą, może wykorzystać rozum i odwagę.</p>
+                </div>
+
+                <h3>Rozmowa ze Smaugiem</h3>
+                <div class="card card-remember">
+                    <span class="card-label">Słaby punkt smoka</span>
+                    <p>Bilbo wchodzi do Samotnej Góry i rozmawia ze Smaugiem. Smok próbuje go zastraszyć i wydobyć z niego informacje, ale hobbit zachowuje ostrożność.</p>
+                    <p>Bilbo zauważa, że w pancerzu Smauga znajduje się słaby punkt (goła plama na brzuchu). Później przekazuje tę wiadomość mieszkańcom Esgaroth (przez drozda).</p>
+                    <div class="korekta">
+                        <span class="korekta-title">Ważne doprecyzowanie</span>
+                        <p><strong>Bilbo nie zabija Smauga.</strong> Smoka zabija <strong>Bard</strong>, trafiając go czarną strzałą w odsłonięte miejsce. Bilbo wygrywa <strong>sprytem, nie mieczem</strong>.</p>
+                    </div>
+                </div>
+
+                <h3>Śmierć Smauga</h3>
+                <div class="card card-remember">
+                    <span class="card-label">Koniec smoka</span>
+                    <p>Smaug atakuje Esgaroth, ale Bard dowiaduje się o jego słabym punkcie i zabija smoka.</p>
+                    <p><strong>Motywy:</strong> odwaga, odpowiedzialność za wspólnotę, walka dobra ze złem, zwycięstwo rozumu i wiedzy nad brutalną siłą.</p>
+                </div>
+
+                <h3>Konflikt o skarb</h3>
+                <div class="card card-remember">
+                    <span class="card-label">Chciwość Thorina</span>
+                    <p>Po śmierci Smauga wiele grup chce przejąć skarb znajdujący się w Samotnej Górze. Thorin nie chce podzielić się bogactwem i staje się podejrzliwy oraz bezwzględny.</p>
+                    <p><strong>Znaczenie:</strong> chciwość niszczy relacje; bogactwo może odebrać człowiekowi rozsądek; konflikt interesów prowadzi do wojny.</p>
+                </div>
+
+                <h3>Bitwa Pięciu Armii</h3>
+                <div class="card card-remember">
+                    <span class="card-label">Finał</span>
+                    <p>W bitwie uczestniczą między innymi krasnoludy, elfy, ludzie, gobliny i wilki. Wspólny wróg zmusza część bohaterów do połączenia sił.</p>
+                    <p>Thorin przed śmiercią rozumie, że popełnił błąd, pozwalając, aby chciwość przesłoniła mu przyjaźń i rozsądek.</p>
+                </div>
+            </div>
+
+            <div class="section" data-level="training" id="sec-hobbit-przemiana">
+                <h2>4. Przemiana Bilba – bohater dynamiczny</h2>
+                <div class="card card-correct">
+                    <span class="card-label">Bilbo – bohater dynamiczny</span>
+                    <div class="table-wrap">
+                        <table>
+                            <thead><tr><th>Etap</th><th>Bilbo</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>Początek</strong></td><td>Ceni spokój, wygodę i bezpieczeństwo. Nie uważa się za bohatera.</td></tr>
+                                <tr><td><strong>Próby</strong></td><td>Spotyka trolle, gobliny, Golluma i Smauga. Musi podejmować samodzielne decyzje.</td></tr>
+                                <tr><td><strong>Koniec</strong></td><td>Jest odważny, sprytny, odpowiedzialny i gotowy sprzeciwić się nawet potężniejszym od siebie.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>Bilbo nie zmienia się w wojownika posługującego się mieczem. Jego siłą pozostają <strong>inteligencja, rozwaga, spryt, empatia i umiejętność przewidywania skutków decyzji</strong>.</p>
+                </div>
+
+                <div class="card card-hint">
+                    <span class="card-label">Przykład do rozprawki</span>
+                    <p><em>Bilbo Baggins z „Hobbita” pokazuje, że odwaga nie zawsze oznacza walkę z bronią w ręku. Hobbit wielokrotnie znajduje się w niebezpieczeństwie, ale zwycięża dzięki sprytowi, opanowaniu i umiejętności podejmowania decyzji.</em></p>
+                </div>
+            </div>
+
+            <div class="section" data-level="training" id="sec-hobbit-motywy">
+                <h2>5. Najważniejsze motywy</h2>
+
+                <div class="card card-remember">
+                    <span class="card-label">Motyw podróży i wędrówki</span>
+                    <p>Podróż może być nie tylko przemieszczaniem się, ale również drogą do wewnętrznej przemiany. Bilbo opuszcza bezpieczny dom, poznaje nieznany świat i wraca jako inny hobbit.</p>
+                    <p><strong>Wniosek:</strong> Wędrówka uczy samodzielności, odwagi i odpowiedzialności.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Motyw przyjaźni i lojalności</span>
+                    <p>Bilbo przywiązuje się do krasnoludów i pomaga im mimo niebezpieczeństwa. Jego relacja z Balinem pokazuje, że przyjaźń może powstać między osobami różniącymi się charakterem i pochodzeniem.</p>
+                    <ul>
+                        <li>Bilbo pomaga towarzyszom w trudnych sytuacjach.</li>
+                        <li>Nie chce dopuścić do wojny między sprzymierzonymi ludami.</li>
+                        <li>Próbuje powstrzymać Thorina przed zgubnym działaniem.</li>
+                    </ul>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Motyw chciwości</span>
+                    <p>Thorin początkowo walczy o odzyskanie ojczyzny i dziedzictwa, ale z czasem coraz bardziej przywiązuje się do skarbu.</p>
+                    <p><strong>Wniosek:</strong> Chciwość może zmienić szlachetnego człowieka i doprowadzić do utraty przyjaciół.</p>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Motyw odwagi</span>
+                    <p>Odwaga Bilba nie polega na braku strachu. Hobbit często się boi, ale mimo tego działa.</p>
+                    <div class="rule-highlight">
+                        <p>Odważny człowiek nie musi być pozbawiony lęku. Odwaga polega na działaniu mimo strachu.</p>
+                    </div>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Motyw dobra i zła</span>
+                    <p>W „Hobbicie” dobro i zło nie zawsze są przedstawione wyłącznie jako dwie grupy walczących postaci. Zło może znajdować się także w człowieku — przykładem jest przemiana Thorina pod wpływem skarbu.</p>
+                </div>
+            </div>
+
+            <div class="section" data-level="exam" id="sec-hobbit-zdania">
+                <h2>6. Gotowe zdania do rozprawki</h2>
+                <div class="card card-hint">
+                    <span class="card-label">Bank zdań</span>
+                    <div class="bank-item">
+                        <span class="constr">Odwaga</span>
+                        <div class="example"><span class="pl">Bilbo udowadnia, że prawdziwa odwaga nie polega na braku strachu, lecz na działaniu mimo lęku.</span></div>
+                    </div>
+                    <div class="bank-item">
+                        <span class="constr">Podróż</span>
+                        <div class="example"><span class="pl">Podróż może zmienić człowieka, ponieważ zmusza go do samodzielnego podejmowania decyzji.</span></div>
+                    </div>
+                    <div class="bank-item">
+                        <span class="constr">Chciwość</span>
+                        <div class="example"><span class="pl">Historia Thorina pokazuje, że chciwość może zniszczyć nawet silne więzi przyjaźni.</span></div>
+                    </div>
+                    <div class="bank-item">
+                        <span class="constr">Spryt</span>
+                        <div class="example"><span class="pl">Bilbo zwycięża nie dzięki przewadze fizycznej, lecz dzięki inteligencji, sprytowi i opanowaniu.</span></div>
+                    </div>
+                    <div class="bank-item">
+                        <span class="constr">Prawdziwy skarb</span>
+                        <div class="example"><span class="pl">Prawdziwym skarbem okazują się nie bogactwa, lecz przyjaźń, lojalność i pokój.</span></div>
+                    </div>
+                </div>
+                <div class="card card-remember">
+                    <span class="card-label">Jak zbudować zakończenie?</span>
+                    <p>Ostatnie zdanie dobrze sprawdza się jako zakończenie rozprawki, ale warto poprzedzić je konkretnym wnioskiem, na przykład:</p>
+                    <p><em>Losy Thorina pokazują, że bogactwo nie daje szczęścia, jeśli prowadzi do utraty przyjaciół. Dlatego można uznać, że prawdziwym skarbem są przyjaźń, lojalność i pokój.</em></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 2 – NIEOdmienne CZĘŚCI MOWY
+        ============================================================ -->
+        <section class="section" data-level="basic" id="part2">
+            <div class="part-heading"><span class="part-num">Część 2</span> · Nieodmienne części mowy</div>
+
+            <div class="section" data-level="basic" id="sec-czesci-mowy">
+                <h2>7. Czym są nieodmienne części mowy?</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Definicja</span>
+                    <p><strong>Nieodmienne części mowy</strong> to takie części mowy, które <strong>nie zmieniają swojej formy</strong> – nie odmieniają się przez przypadki, liczby, rodzaje ani osoby.</p>
+                    <p>W języku polskim wyróżniamy pięć nieodmiennych części mowy:</p>
+                    <ol>
+                        <li><strong>przysłówek</strong></li>
+                        <li><strong>przyimek</strong></li>
+                        <li><strong>spójnik</strong></li>
+                        <li><strong>partykuła</strong></li>
+                        <li><strong>wykrzyknik</strong></li>
+                    </ol>
+                    <div class="korekta">
+                        <span class="korekta-title">Ważna korekta</span>
+                        <p>Nie wystarczy stwierdzić, że nieodmienne części mowy „wyglądają tak samo w każdym zdaniu”. Należy sprawdzić, czy dana forma <strong>nie zmienia się zależnie od przypadku, liczby, rodzaju lub osoby</strong> oraz jaką funkcję pełni w zdaniu.</p>
+                    </div>
+                </div>
+
+                <div class="table-wrap">
+                    <table class="czesc-mowy-tabela">
+                        <thead><tr><th>Część mowy</th><th>Funkcja</th><th>Przykłady</th></tr></thead>
+                        <tbody>
+                            <tr><td><strong>Przysłówek</strong></td><td>określa czasownik (jak? gdzie? kiedy?)</td><td><em>szybko, tutaj, jutro</em></td></tr>
+                            <tr><td><strong>Przyimek</strong></td><td>łączy się z rzeczownikiem, wskazuje relację</td><td><em>do, pod, z, na</em></td></tr>
+                            <tr><td><strong>Spójnik</strong></td><td>łączy wyrazy lub zdania</td><td><em>i, ale, ponieważ</em></td></tr>
+                            <tr><td><strong>Partykuła</strong></td><td>modyfikuje znaczenie wypowiedzi</td><td><em>nie, czy, oby, nawet</em></td></tr>
+                            <tr><td><strong>Wykrzyknik</strong></td><td>wyraża emocje, uczucia, rozkazy</td><td><em>ach, hej, hurra</em></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-przyslowek">
+                <h2>8. Przysłówek</h2>
+                <div class="card card-correct">
+                    <span class="card-label">Przysłówek</span>
+                    <p>Przysłówek najczęściej określa <strong>czasownik</strong>. Odpowiada na pytania:</p>
+                    <ul>
+                        <li><strong>jak?</strong> – <em>szybko, wolno, odważnie, sprytnie, dobrze</em></li>
+                        <li><strong>gdzie?</strong> – <em>tutaj, tam, wysoko, blisko, wszędzie</em></li>
+                        <li><strong>kiedy?</strong> – <em>dziś, jutro, wczoraj, później, zawsze</em></li>
+                    </ul>
+                    <p><strong>Przykłady w zdaniach:</strong></p>
+                    <ul>
+                        <li><em>Bilbo <strong>sprytnie</strong> rozwiązał zagadkę.</em></li>
+                        <li><em>Gollum mieszkał <strong>pod ziemią</strong>.</em> („pod ziemią” – wyrażenie przyimkowe, ale „pod” to przyimek)</li>
+                        <li><em>Krasnoludy <strong>później</strong> dotarły do Samotnej Góry.</em></li>
+                        <li><em>Bard <strong>celnie</strong> wystrzelił czarną strzałę.</em></li>
+                        <li><em>Bilbo <strong>cicho</strong> zakradł się do jaskini Smauga.</em></li>
+                    </ul>
+                </div>
+
+                <h3>Stopniowanie przysłówków</h3>
+                <div class="card card-remember">
+                    <span class="card-label">Stopniowanie</span>
+                    <p>Niektóre przysłówki można stopniować:</p>
+                    <ul>
+                        <li><em>szybko – szybciej – najszybciej</em></li>
+                        <li><em>odważnie – odważniej – najodważniej</em></li>
+                        <li><em>dobrze – lepiej – najlepiej</em></li>
+                        <li><em>źle – gorzej – najgorzej</em></li>
+                        <li><em>mądrze – mądrzej – najmądrzej</em></li>
+                        <li><em>sprytnie – sprytniej – najsprytniej</em></li>
+                    </ul>
+                    <p>Nie wszystkie przysłówki można stopniować. Nie stopniujemy na przykład: <em>jutro, tutaj, bardzo, wszędzie</em>.</p>
+                    <div class="example">
+                        <span class="tag">Przykład w zdaniu</span>
+                        <span class="pl">Bilbo zachował się <strong>sprytniej</strong> niż ktokolwiek inny.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-przyimek">
+                <h2>9. Przyimek</h2>
+                <div class="card card-correct">
+                    <span class="card-label">Przyimek</span>
+                    <p><strong>Przyimek</strong> łączy się najczęściej z rzeczownikiem, zaimkiem lub liczebnikiem i wskazuje relację między wyrazami.</p>
+                    <p><strong>Przykłady przyimków:</strong> <em>do, z, na, pod, nad, przed, za, przez, między, bez, dla, o, po, przy, u</em>.</p>
+                    <p><strong>Przykłady w zdaniach:</strong></p>
+                    <ul>
+                        <li><em>Bilbo poszedł <strong>do</strong> jaskini.</em></li>
+                        <li><em>Gollum mieszkał <strong>pod</strong> ziemią.</em></li>
+                        <li><em>Krasnoludy walczyły <strong>o</strong> skarb.</em></li>
+                        <li><em>Bohaterowie przeszli <strong>przez</strong> las.</em></li>
+                        <li><em>Thorin stał <strong>przed</strong> bramą.</em></li>
+                        <li><em>Bilbo wrócił <strong>do</strong> domu <strong>z</strong> przygodami.</em></li>
+                    </ul>
+                </div>
+
+                <h3>Przyimki proste i złożone</h3>
+                <div class="card card-remember">
+                    <span class="card-label">Podział przyimków</span>
+                    <p><strong>Przyimki proste:</strong> <em>do, z, na, pod, bez, za, przez, o, po, przy, u, w, nad, przed, między</em></p>
+                    <p><strong>Przyimki złożone:</strong> <em>ponad, poprzez, spośród, zamiast, naprzeciwko, wskutek, wewnątrz, obok, wokół, wśród</em></p>
+                    <p>Sam przyimek zwykle nie tworzy pełnej informacji. Dopiero połączenie przyimka z innym wyrazem tworzy wyrażenie przyimkowe:</p>
+                    <ul>
+                        <li><em><strong>w</strong> lesie</em></li>
+                        <li><em><strong>pod</strong> górą</em></li>
+                        <li><em><strong>do</strong> domu</em></li>
+                        <li><em><strong>bez</strong> strachu</em></li>
+                        <li><em><strong>z</strong> przyjaciółmi</em></li>
+                        <li><em><strong>zamiast</strong> miecza użył sprytu</em> – przyimek złożony</li>
+                        <li><em><strong>wskutek</strong> chciwości Thorin stracił przyjaciół</em> – przyimek złożony</li>
+                        <li><em><strong>naprzeciwko</strong> Samotnej Góry leżało jezioro</em> – przyimek złożony</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-spojnik">
+                <h2>10. Spójnik</h2>
+                <div class="card card-correct">
+                    <span class="card-label">Spójnik</span>
+                    <p><strong>Spójnik</strong> łączy wyrazy, wyrażenia lub zdania.</p>
+                </div>
+
+                <h3>Spójniki współrzędne</h3>
+                <div class="card card-remember">
+                    <span class="card-label">Współrzędne</span>
+                    <p>Łączą elementy równorzędne:</p>
+                    <p><em>i, oraz, a, ale, lecz, lub, albo, więc, dlatego, bądź, ni</em></p>
+                    <p><strong>Przykłady:</strong></p>
+                    <ul>
+                        <li><em>Bilbo był ostrożny <strong>i</strong> odważny.</em></li>
+                        <li><em>Thorin był dumny, <strong>ale</strong> uległ chciwości.</em></li>
+                        <li><em>Bilbo mógł uciec <strong>albo</strong> zostać i pomóc przyjaciołom.</em></li>
+                        <li><em>Gandalf był mądry, <strong>więc</strong> wiedział, co robić.</em></li>
+                    </ul>
+                </div>
+
+                <h3>Spójniki podrzędne</h3>
+                <div class="card card-remember">
+                    <span class="card-label">Podrzędne</span>
+                    <p>Wprowadzają zdanie podrzędne:</p>
+                    <p><em>ponieważ, gdy, kiedy, aby, żeby, chociaż, jeśli, że, który, aż, zanim, jak, niż</em></p>
+                    <p><strong>Przykład:</strong></p>
+                    <p><em>Bilbo został z towarzyszami, <strong>chociaż</strong> bardzo się bał.</em></p>
+                    <p><em>Bilbo wyruszył w podróż, <strong>ponieważ</strong> chciał pomóc krasnoludom.</em></p>
+                </div>
+
+                <h3>Przecinek przed spójnikami</h3>
+                <div class="card card-trap">
+                    <span class="card-label">Przecinek – zasada</span>
+                    <p>Przecinek często stawiamy przed spójnikami:</p>
+                    <p><em>ale, lecz, jednak, więc, ponieważ, chociaż, gdy, kiedy, aby, że, zanim, aż</em></p>
+                    <p><strong>Przykłady:</strong></p>
+                    <ul>
+                        <li><em>Bilbo się bał, <strong>ale</strong> nie uciekł.</em></li>
+                        <li><em>Thorin cierpiał, <strong>ponieważ</strong> utracił przyjaciół.</em></li>
+                        <li><em>Bilbo wrócił do domu, <strong>chociaż</strong> bardzo zmienił się podczas wyprawy.</em></li>
+                    </ul>
+                    <p>Przed spójnikami <strong>i, oraz, lub, albo, ani</strong> zwykle <strong>nie</strong> stawiamy przecinka, jeśli łączą równorzędne wyrazy lub zdania:</p>
+                    <p><em>Bilbo był odważny <strong>i</strong> sprytny.</em></p>
+
+                    <div class="wyjatki-box" style="margin-top:8px;">
+                        <span class="wyjatki-title">⚠️ Wyjątek – przecinek przed spójnikami współrzędnymi</span>
+                        <p>Przecinek stawiamy przed spójnikami <strong>i, oraz, lub, albo, ani</strong>, gdy łączą one <strong>zdania złożone</strong> (każde z własnym orzeczeniem) lub gdy występują w konstrukcjach z <strong>powtórzeniami</strong>:</p>
+                        <ul>
+                            <li><em>Bilbo wszedł do jaskini, <strong>i</strong> wtedy usłyszał głos Golluma.</em> (dwa zdania z własnymi orzeczeniami)</li>
+                            <li><em>Bohaterowie walczyli, <strong>i</strong> walka trwała całą noc.</em></li>
+                            <li><em>Krasnoludy śpiewały, <strong>a</strong> Bilbo słuchał ich z zachwytem.</em></li>
+                            <li><em>Bilbo był <strong>i</strong> odważny, <strong>i</strong> sprytny.</em> (powtórzenie „i”)</li>
+                        </ul>
+                        <p><strong>Wskazówka:</strong> Jeśli po spójniku pojawia się osobne orzeczenie, zwykle potrzebny jest przecinek.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-partykula">
+                <h2>11. Partykuła</h2>
+                <div class="card card-correct">
+                    <span class="card-label">Partykuła</span>
+                    <p><strong>Partykuła</strong> nadaje wypowiedzi dodatkowe znaczenie. Może:</p>
+                    <ul>
+                        <li>zaprzeczać – <em>nie</em></li>
+                        <li>wzmacniać treść – <em>właśnie, nawet</em></li>
+                        <li>wyrażać pytanie – <em>czy</em></li>
+                        <li>ograniczać znaczenie – <em>tylko</em></li>
+                        <li>wskazywać przypuszczenie lub życzenie – <em>może, chyba, oby, by, niech</em></li>
+                    </ul>
+                    <p><strong>Przykłady partykuł:</strong> <em>nie, czy, by, niech, oby, właśnie, tylko, nawet, może, chyba, -że, -no</em></p>
+                    <p><strong>Przykłady w zdaniach:</strong></p>
+                    <ul>
+                        <li><em>Bilbo <strong>nie</strong> chciał zostać w domu.</em></li>
+                        <li><em><strong>Czy</strong> Gandalf wróci?</em> – partykuła pytająca</li>
+                        <li><em><strong>Niech</strong> przyjaciele połączą siły.</em></li>
+                        <li><em><strong>Oby</strong> wyprawa zakończyła się pomyślnie.</em></li>
+                        <li><em>To <strong>właśnie</strong> Bilbo odnalazł słaby punkt smoka.</em></li>
+                        <li><em><strong>Może</strong> Thorin zmieni zdanie.</em></li>
+                    </ul>
+
+                    <div class="korekta" style="margin-top:8px;">
+                        <span class="korekta-title">Ważne – „nie” jako partykuła</span>
+                        <p>Partykuła <strong>nie</strong> z czasownikiem jest zawsze <strong>rozdzielna</strong>:</p>
+                        <p><em>Bilbo <strong>nie uciekł</strong>, Thorin <strong>nie zmienił</strong> zdania.</em></p>
+                        <p>Natomiast z imiesłowami przymiotnikowymi „nie” łączy się <strong>łącznie</strong>:</p>
+                        <p><em><strong>nieuczący</strong> się Bilbo, <strong>nieprzeczytana</strong> mapa</em></p>
+                        <p>To rozróżnienie jest często sprawdzane na egzaminie!</p>
+                    </div>
+                </div>
+
+                <h3>Różnica między spójnikiem a partykułą – przykład „czy”</h3>
+                <div class="card card-trap">
+                    <span class="card-label">⚠️ WAŻNE – „czy” na egzaminie</span>
+                    <p>Wyraz <strong>czy</strong> może być zarówno partykułą, jak i spójnikiem – zależy od funkcji w zdaniu:</p>
+                    <ul>
+                        <li><strong>Partykuła (pytająca):</strong> <em><strong>Czy</strong> Bilbo wrócił do domu?</em> – wprowadza pytanie, nie łączy niczego.</li>
+                        <li><strong>Spójnik (alternatywa):</strong> <em>Bilbo nie wiedział, <strong>czy</strong> ma uciekać, <strong>czy</strong> zostać.</em> – łączy dwa zdania podrzędne, wprowadza alternatywę.</li>
+                    </ul>
+                    <p><strong>Wskazówka:</strong> Jeśli <em>czy</em> można zastąpić przez <em>lub</em> lub <em>albo</em>, jest spójnikiem. Jeśli wprowadza pytanie – jest partykułą.</p>
+                    <div class="example" style="margin-top:6px;">
+                        <span class="tag">partykuła</span>
+                        <span class="pl"><strong>Czy</strong> Bilbo odnalazł pierścień?</span>
+                        <span class="expl">(pytanie – partykuła)</span>
+                    </div>
+                    <div class="example">
+                        <span class="tag">spójnik</span>
+                        <span class="pl">Nie wiem, <strong>czy</strong> Bilbo odnalazł pierścień.</span>
+                        <span class="expl">(łączy zdania – spójnik)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="sec-wykrzyknik">
+                <h2>12. Wykrzyknik</h2>
+                <div class="card card-correct">
+                    <span class="card-label">Wykrzyknik</span>
+                    <p><strong>Wykrzyknik</strong> wyraża emocje, uczucia, rozkazy, reakcje lub odgłosy.</p>
+                    <p><strong>Przykłady:</strong> <em>ach, och, ej, hej, o, biada, hurra, halo, brawo, ojej, niestety</em></p>
+                    <p><strong>Przykłady w zdaniach:</strong></p>
+                    <ul>
+                        <li><em><strong>Ach</strong>, jaka piękna kraina!</em></li>
+                        <li><em><strong>Hej</strong>, poczekajcie na mnie!</em></li>
+                        <li><em><strong>Hurra</strong>, wygraliśmy!</em></li>
+                        <li><em><strong>Och</strong>, jak bardzo się bałem!</em></li>
+                        <li><em><strong>Niestety</strong>, Thorin nie zdążył przeprosić przyjaciół.</em></li>
+                    </ul>
+                    <p>Wykrzyknik może być samodzielną wypowiedzią:</p>
+                    <p><em>— <strong>Ach!</strong></em></p>
+                    <p>Może również występować w zdaniu i wtedy często oddzielamy go przecinkiem:</p>
+                    <p><em><strong>Hej</strong>, zaczekajcie!</em></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 3 – ROZPOZNAWANIE CZĘŚCI MOWY
+        ============================================================ -->
+        <section class="section" data-level="training" id="part3">
+            <div class="part-heading"><span class="part-num">Część 3</span> · Rozpoznawanie części mowy w praktyce</div>
+
+            <div class="section" data-level="training" id="sec-rozpoznawanie">
+                <h2>13. Nie myl części mowy – analiza z uzasadnieniem</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Przykłady analizy</span>
+                    <div class="table-wrap">
+                        <table class="rozpoznawanie-tabela">
+                            <thead><tr><th>Wyraz</th><th>Zdanie</th><th>Uzasadnienie</th><th>Część mowy</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>szybko</strong></td><td><em>Bilbo <strong>szybko</strong> uciekł.</em></td><td>określa sposób wykonania czynności (jak?) → przysłówek</td><td><strong>przysłówek</strong></td></tr>
+                                <tr><td><strong>do</strong></td><td><em>Bilbo poszedł <strong>do</strong> jaskini.</em></td><td>łączy się z rzeczownikiem „jaskini”, wskazuje relację przestrzenną → przyimek</td><td><strong>przyimek</strong></td></tr>
+                                <tr><td><strong>ale</strong></td><td><em>Bilbo się bał, <strong>ale</strong> pozostał z przyjaciółmi.</em></td><td>łączy dwa zdania, wprowadza kontrast → spójnik współrzędny</td><td><strong>spójnik</strong></td></tr>
+                                <tr><td><strong>nie</strong></td><td><em>Bilbo <strong>nie</strong> uciekł.</em></td><td>zaprzecza treści zdania, nie łączy niczego → partykuła</td><td><strong>partykuła</strong></td></tr>
+                                <tr><td><strong>Ach</strong></td><td><em><strong>Ach</strong>, jak tu ciemno!</em></td><td>wyraża emocje (zdziwienie, strach) → wykrzyknik</td><td><strong>wykrzyknik</strong></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <h3>Przykładowe zdanie do analizy z uzasadnieniem</h3>
+                <div class="card card-hint">
+                    <span class="card-label">Analiza z uzasadnieniem</span>
+                    <p><em>Odważny Bilbo szybko wrócił do domu, ale jutro znów wyruszy z przyjaciółmi.</em></p>
+                    <div class="table-wrap">
+                        <table class="rozpoznawanie-tabela">
+                            <thead><tr><th>Wyraz</th><th>Część mowy</th><th>Uzasadnienie</th></tr></thead>
+                            <tbody>
+                                <tr><td>Odważny</td><td><strong>przymiotnik</strong></td><td>określa rzeczownik (jaki Bilbo?)</td></tr>
+                                <tr><td>Bilbo</td><td><strong>rzeczownik własny</strong></td><td>nazwa własna, odmienia się przez przypadki</td></tr>
+                                <tr><td>szybko</td><td><strong>przysłówek</strong></td><td>określa czasownik „wrócił” – jak wrócił? (szybko)</td></tr>
+                                <tr><td>wrócił</td><td><strong>czasownik</strong></td><td>orzeczenie, odmienia się przez osoby i czasy</td></tr>
+                                <tr><td>do</td><td><strong>przyimek</strong></td><td>łączy się z rzeczownikiem „domu”, wskazuje kierunek</td></tr>
+                                <tr><td>domu</td><td><strong>rzeczownik</strong></td><td>określa miejsce, odmienia się przez przypadki</td></tr>
+                                <tr><td>ale</td><td><strong>spójnik</strong></td><td>łączy dwa zdania, wprowadza kontrast</td></tr>
+                                <tr><td>jutro</td><td><strong>przysłówek</strong></td><td>określa czasownik „wyruszy” – kiedy wyruszy? (jutro)</td></tr>
+                                <tr><td>znów</td><td><strong>przysłówek</strong></td><td>określa czasownik „wyruszy” – jak często? (znów)</td></tr>
+                                <tr><td>wyruszy</td><td><strong>czasownik</strong></td><td>orzeczenie, odmienia się przez osoby i czasy</td></tr>
+                                <tr><td>z</td><td><strong>przyimek</strong></td><td>łączy się z rzeczownikiem „przyjaciółmi”, wskazuje towarzystwo</td></tr>
+                                <tr><td>przyjaciółmi</td><td><strong>rzeczownik</strong></td><td>odmienia się przez przypadki, liczbę mnogą</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p><strong>Wniosek:</strong> Każdy wyraz w zdaniu pełni określoną funkcję. Kluczem do poprawnej klasyfikacji jest odpowiedź na pytanie: <em>co ten wyraz robi w zdaniu? co określa? z czym się łączy?</em></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 4 – ĆWICZENIA INTERAKTYWNE
+        ============================================================ -->
+        <section class="section" data-level="training" id="part4">
+            <div class="part-heading"><span class="part-num">Część 4</span> · Ćwiczenia interaktywne</div>
+
+            <div class="hide-all-wrap">
+                <span style="font-size:0.85rem; font-weight:500; color:var(--color-text-muted);">Ukryj wszystkie odpowiedzi:</span>
+                <button class="hide-all-btn" onclick="hideAllAnswers()">Ukryj wszystkie</button>
+            </div>
+
+            <div class="section" data-level="training" id="sec-cwiczenia">
+                <h2>14. Ćwiczenie – rozpoznaj część mowy</h2>
+                <div class="exercise">
+                    <div class="ex-title">Określ, jaką częścią mowy jest podkreślony wyraz. <span class="level-badge level-basic">PODSTAWA</span></div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">1. Bilbo <strong>szybko</strong> uciekł.</span>
+                        <select id="czesc1" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="przyslowek">przysłówek</option>
+                            <option value="przyimek">przyimek</option>
+                            <option value="spojnik">spójnik</option>
+                            <option value="partykuła">partykuła</option>
+                            <option value="wykrzyknik">wykrzyknik</option>
+                        </select>
+                        <span class="result-icon" id="czescIcon1"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">2. Bilbo poszedł <strong>do</strong> jaskini.</span>
+                        <select id="czesc2" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="przyslowek">przysłówek</option>
+                            <option value="przyimek">przyimek</option>
+                            <option value="spojnik">spójnik</option>
+                            <option value="partykuła">partykuła</option>
+                            <option value="wykrzyknik">wykrzyknik</option>
+                        </select>
+                        <span class="result-icon" id="czescIcon2"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">3. Bilbo się bał, <strong>ale</strong> pozostał z przyjaciółmi.</span>
+                        <select id="czesc3" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="przyslowek">przysłówek</option>
+                            <option value="przyimek">przyimek</option>
+                            <option value="spojnik">spójnik</option>
+                            <option value="partykuła">partykuła</option>
+                            <option value="wykrzyknik">wykrzyknik</option>
+                        </select>
+                        <span class="result-icon" id="czescIcon3"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">4. Bilbo <strong>nie</strong> uciekł.</span>
+                        <select id="czesc4" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="przyslowek">przysłówek</option>
+                            <option value="przyimek">przyimek</option>
+                            <option value="spojnik">spójnik</option>
+                            <option value="partykuła">partykuła</option>
+                            <option value="wykrzyknik">wykrzyknik</option>
+                        </select>
+                        <span class="result-icon" id="czescIcon4"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">5. <strong>Ach</strong>, jak tu ciemno!</span>
+                        <select id="czesc5" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="przyslowek">przysłówek</option>
+                            <option value="przyimek">przyimek</option>
+                            <option value="spojnik">spójnik</option>
+                            <option value="partykuła">partykuła</option>
+                            <option value="wykrzyknik">wykrzyknik</option>
+                        </select>
+                        <span class="result-icon" id="czescIcon5"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="checkCzesciMowy()" style="margin-top:6px;">Sprawdź</button>
+                    <div id="czescResult" style="margin-top:6px;font-weight:500;"></div>
+                </div>
+            </div>
+
+            <div class="section" data-level="training" id="sec-cw-rozpoznawanie2">
+                <h2>15. Ćwiczenie – rozpoznaj część mowy w zdaniu z „Hobbita”</h2>
+                <div class="exercise">
+                    <div class="ex-title">Określ, jaką częścią mowy jest podkreślony wyraz. <span class="level-badge level-training">TRENING</span></div>
+                    <p style="font-size:0.85rem; color:var(--color-text-muted); margin-bottom:8px;">Wskazówka: zastanów się, czy wyraz określa czasownik (przysłówek), łączy się z rzeczownikiem (przyimek), łączy zdania (spójnik), modyfikuje znaczenie (partykuła) czy wyraża emocje (wykrzyknik).</p>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">1. Bilbo <strong>odważnie</strong> wszedł do jaskini.</span>
+                        <select id="rozp1" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="przyslowek">przysłówek</option>
+                            <option value="przyimek">przyimek</option>
+                            <option value="spojnik">spójnik</option>
+                            <option value="partykuła">partykuła</option>
+                            <option value="wykrzyknik">wykrzyknik</option>
+                        </select>
+                        <span class="result-icon" id="rozpIcon1"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">2. Thorin stanął <strong>przed</strong> bramą Samotnej Góry.</span>
+                        <select id="rozp2" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="przyslowek">przysłówek</option>
+                            <option value="przyimek">przyimek</option>
+                            <option value="spojnik">spójnik</option>
+                            <option value="partykuła">partykuła</option>
+                            <option value="wykrzyknik">wykrzyknik</option>
+                        </select>
+                        <span class="result-icon" id="rozpIcon2"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">3. Bilbo <strong>często</strong> myślał o powrocie do domu.</span>
+                        <select id="rozp3" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="przyslowek">przysłówek</option>
+                            <option value="przyimek">przyimek</option>
+                            <option value="spojnik">spójnik</option>
+                            <option value="partykuła">partykuła</option>
+                            <option value="wykrzyknik">wykrzyknik</option>
+                        </select>
+                        <span class="result-icon" id="rozpIcon3"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">4. <strong>Hej</strong>, poczekajcie na mnie!</span>
+                        <select id="rozp4" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="przyslowek">przysłówek</option>
+                            <option value="przyimek">przyimek</option>
+                            <option value="spojnik">spójnik</option>
+                            <option value="partykuła">partykuła</option>
+                            <option value="wykrzyknik">wykrzyknik</option>
+                        </select>
+                        <span class="result-icon" id="rozpIcon4"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">5. Bilbo <strong>nie</strong> chciał opuścić domu.</span>
+                        <select id="rozp5" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="przyslowek">przysłówek</option>
+                            <option value="przyimek">przyimek</option>
+                            <option value="spojnik">spójnik</option>
+                            <option value="partykuła">partykuła</option>
+                            <option value="wykrzyknik">wykrzyknik</option>
+                        </select>
+                        <span class="result-icon" id="rozpIcon5"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">6. Bard zabił Smauga, <strong>ponieważ</strong> znał jego słaby punkt.</span>
+                        <select id="rozp6" style="padding:4px 8px;border-radius:6px;border:1px solid var(--color-border);font-family:inherit;">
+                            <option value="">— wybierz —</option>
+                            <option value="przyslowek">przysłówek</option>
+                            <option value="przyimek">przyimek</option>
+                            <option value="spojnik">spójnik</option>
+                            <option value="partykuła">partykuła</option>
+                            <option value="wykrzyknik">wykrzyknik</option>
+                        </select>
+                        <span class="result-icon" id="rozpIcon6"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="checkRozpoznawanie2()" style="margin-top:6px;">Sprawdź</button>
+                    <div id="rozpResult" style="margin-top:6px;font-weight:500;"></div>
+                </div>
+            </div>
+
+            <div class="section" data-level="exam" id="sec-cw-przecinek">
+                <h2>16. Ćwiczenie – przecinek przed spójnikami</h2>
+                <div class="exercise">
+                    <div class="ex-title">Wstaw przecinek tam, gdzie jest potrzebny. <span class="level-badge level-exam">EGZAMIN</span></div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">1. Bilbo się bał ale nie uciekł.</span>
+                        <input type="text" id="przec1" placeholder="popraw..." style="width:250px;" />
+                        <span class="result-icon" id="przecIcon1"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">2. Thorin cierpiał ponieważ utracił przyjaciół.</span>
+                        <input type="text" id="przec2" placeholder="popraw..." style="width:250px;" />
+                        <span class="result-icon" id="przecIcon2"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">3. Bilbo wrócił do domu chociaż bardzo zmienił się podczas wyprawy.</span>
+                        <input type="text" id="przec3" placeholder="popraw..." style="width:250px;" />
+                        <span class="result-icon" id="przecIcon3"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">4. Bilbo był odważny i sprytny.</span>
+                        <input type="text" id="przec4" placeholder="popraw..." style="width:250px;" />
+                        <span class="result-icon" id="przecIcon4"></span>
+                    </div>
+                    <div class="fitb-row">
+                        <span style="font-weight:500;">5. Bilbo wszedł do jaskini i wtedy usłyszał głos Golluma.</span>
+                        <input type="text" id="przec5" placeholder="popraw..." style="width:250px;" />
+                        <span class="result-icon" id="przecIcon5"></span>
+                    </div>
+                    <button class="btn btn-primary" onclick="checkPrzecinki()" style="margin-top:6px;">Sprawdź</button>
+                    <div id="przecResult" style="margin-top:6px;font-weight:500;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 5 – FISZKI
+        ============================================================ -->
+        <section class="section" data-level="basic" id="part5">
+            <div class="part-heading"><span class="part-num">Część 5</span> · Fiszki</div>
+
+            <div class="section" data-level="basic" id="sec-flashcards">
+                <h2>17. Fiszki – najważniejsze pojęcia</h2>
+                <div class="flashcard-grid">
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Przysłówek</span>
+                        <span class="back">Nieodmienna część mowy określająca najczęściej czasownik.<br />Odpowiada na pytania: <em>jak? gdzie? kiedy?</em><br />Przykład: <em>szybko, tutaj, jutro</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Przyimek</span>
+                        <span class="back">Nieodmienna część mowy wskazująca relację między wyrazami.<br />Łączy się z rzeczownikiem.<br />Przykład: <em>do, pod, z, na, przez</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Spójnik</span>
+                        <span class="back">Łączy wyrazy, wyrażenia lub zdania.<br />Przykład: <em>i, ale, ponieważ, lub</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Partykuła</span>
+                        <span class="back">Modyfikuje znaczenie wypowiedzi.<br />Przykład: <em>nie, czy, oby, nawet, właśnie</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Wykrzyknik</span>
+                        <span class="back">Wyraża emocje, uczucia, rozkazy lub odgłosy.<br />Przykład: <em>ach, hej, hurra, och</em></span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Bilbo Baggins</span>
+                        <span class="back">Główny bohater „Hobbita”.<br />Przechodzi przemianę z wygodnego hobbita w odważnego, sprytnego i odpowiedzialnego bohatera.</span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Thorin Dębowa Tarcza</span>
+                        <span class="back">Przywódca krasnoludów.<br />Początkowo szlachetny, później ulega chciwości, ale przed śmiercią żałuje swojego postępowania.</span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Bard</span>
+                        <span class="back">Mieszkaniec Esgaroth, który <strong>zabija Smauga</strong> czarną strzałą w słaby punkt smoka.</span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Smaug</span>
+                        <span class="back">Potężny smok, który zagarnął skarby krasnoludów.<br />Symbolizuje zło, przemoc i niszczącą chciwość.</span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Motyw podróży</span>
+                        <span class="back">Podróż to nie tylko przemieszczanie się, ale także droga do wewnętrznej przemiany. Bilbo opuszcza bezpieczny dom i wraca jako inny hobbit.</span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Motyw chciwości</span>
+                        <span class="back">Thorin początkowo walczy o odzyskanie ojczyzny, ale z czasem przywiązuje się do skarbu. Chciwość niszczy relacje i prowadzi do konfliktu.</span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Odwaga w „Hobbicie”</span>
+                        <span class="back">Odwaga Bilba nie polega na braku strachu, lecz na działaniu mimo lęku.<br />To ważna definicja egzaminacyjna.</span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Gollum</span>
+                        <span class="back">Samotna istota mieszkająca pod ziemią. Rywalizuje z Bilbem w pojedynku na zagadki. Przechowuje pierścień, który później trafia do Bilba.</span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Gandalf</span>
+                        <span class="back">Czarodziej, inicjator wyprawy. Mądry, przewidujący, pomaga bohaterom w trudnych sytuacjach.</span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">„czy” – partykuła czy spójnik?</span>
+                        <span class="back"><strong>Partykuła:</strong> <em>Czy Bilbo wrócił?</em> (pytanie)<br /><strong>Spójnik:</strong> <em>Nie wiem, czy wrócił.</em> (łączy zdania)</span>
+                    </button>
+                    <button class="flashcard" type="button" aria-pressed="false" onclick="toggleFlashcard(this)">
+                        <span class="front">Status lektury</span>
+                        <span class="back">„Hobbit” to <strong>lektura obowiązkowa</strong> z klas IV–VI.<br />Na egzaminie zadania z fragmentu, w wypracowaniu można się swobodnie odwoływać.</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 6 – EGZAMIN – JAK TO WYGLĄDA? (NOWA SEKCJA)
+        ============================================================ -->
+        <section class="section" data-level="exam" id="part6">
+            <div class="part-heading"><span class="part-num">Część 6</span> · Egzamin – jak to wygląda?</div>
+
+            <div class="section" data-level="exam" id="sec-egzamin">
+                <h2>18. Jak to wygląda na egzaminie?</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Zadania z „Hobbita” na E8</span>
+                    <ul>
+                        <li><strong>W części I arkusza</strong> (zadania zamknięte i otwarte) – pytania dotyczą <strong>wyłącznie fragmentu</strong> zamieszczonego w arkuszu. Sprawdzają: rozumienie tekstu, wskazywanie postaw bohaterów, rozpoznawanie środków językowych.</li>
+                        <li><strong>W wypracowaniu</strong> – „Hobbit” to świetny materiał do tematów o:
+                            <ul>
+                                <li><strong>przemianie</strong> (Bilbo jako bohater dynamiczny),</li>
+                                <li><strong>odwadze</strong> (działanie mimo strachu),</li>
+                                <li><strong>chciwości</strong> (Thorin, Smaug),</li>
+                                <li><strong>przyjaźni i lojalności</strong> (relacja Bilba z krasnoludami),</li>
+                                <li><strong>podróży jako drodze do dojrzałości</strong>.</li>
+                            </ul>
+                        </li>
+                        <li><strong>W zadaniach gramatycznych</strong> – możesz spotkać się z rozpoznawaniem części mowy (zwłaszcza nieodmiennych) w zdaniach zaczerpniętych z lektury.</li>
+                    </ul>
+                    <div class="korekta" style="margin-top:6px;">
+                        <span class="korekta-title">Pamiętaj!</span>
+                        <p>Lista lektur obowiązkowych znajduje się <strong>na początku arkusza</strong> – jeśli zapomnisz tytułu lub autora, możesz tam sprawdzić.</p>
+                        <p>Nie musisz znać całej książki na pamięć – w części I sprawdzana jest umiejętność pracy z <strong>fragmentem</strong>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" data-level="exam" id="sec-pulapki">
+                <h2>19. Najczęstsze pułapki egzaminacyjne</h2>
+                <div class="card card-trap">
+                    <span class="card-label">PUŁAPKI – sprawdź, czy ich nie wpadniesz!</span>
+                    <div class="table-wrap">
+                        <table class="pulapki-tabela">
+                            <thead><tr><th>Pułapka</th><th>Błąd</th><th>Poprawnie</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>Kto zabija Smauga?</strong></td><td class="error-text">Bilbo zabił Smauga.</td><td class="poprawka-col"><strong>Bard</strong> zabija Smauga czarną strzałą. Bilbo odkrywa słaby punkt.</td></tr>
+                                <tr><td><strong>Bilbo – sposób walki</strong></td><td class="error-text">Bilbo walczy mieczem.</td><td class="poprawka-col">Bilbo zwycięża <strong>sprytem i inteligencją</strong>, nie siłą fizyczną.</td></tr>
+                                <tr><td><strong>Thorin – przemiana</strong></td><td class="error-text">Thorin jest bohaterem dynamicznym.</td><td class="poprawka-col">Thorin <strong>ulega chciwości</strong>, ale przed śmiercią <strong>żałuje</strong> – to nie jest pełna przemiana, raczej upadek i skrucha.</td></tr>
+                                <tr><td><strong>„czy” – część mowy</strong></td><td class="error-text">„Czy” zawsze jest partykułą.</td><td class="poprawka-col">„Czy” to <strong>partykuła</strong> w pytaniach (<em>Czy wrócił?</em>) i <strong>spójnik</strong> w zdaniach złożonych (<em>Nie wiem, czy wrócił</em>).</td></tr>
+                                <tr><td><strong>Przecinek przed spójnikami</strong></td><td class="error-text">Zawsze stawiamy przecinek przed „i”.</td><td class="poprawka-col">Przed „i” <strong>nie stawiamy</strong> przecinka, gdy łączy równorzędne wyrazy lub zdania. Stawiamy, gdy łączy zdania złożone.</td></tr>
+                                <tr><td><strong>„nie” z czasownikiem</strong></td><td class="error-text">„Nie” z czasownikiem piszemy łącznie.</td><td class="poprawka-col"><strong>Rozdzielnie</strong> – <em>nie uciekł, nie chciał</em>. Łącznie piszemy z imiesłowami przymiotnikowymi (<em>nieczytający</em>).</td></tr>
+                                <tr><td><strong>Znajomość lektury</strong></td><td class="error-text">Na egzaminie sprawdzają całą treść książki.</td><td class="poprawka-col">W części I – <strong>tylko fragment</strong> z arkusza. W wypracowaniu – możesz się odwoływać do całej lektury.</td></tr>
+                                <tr><td><strong>Gatunek „Hobbita”</strong></td><td class="error-text">To tylko baśń.</td><td class="poprawka-col">To <strong>powieść fantasy</strong> z elementami baśni, powieści przygodowej i utworu drogi.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 7 – TEST KOŃCOWY (MISJA)
+        ============================================================ -->
+        <section class="section" data-level="exam" id="part7">
+            <div class="part-heading"><span class="part-num">Część 7</span> · Test końcowy – MISJA</div>
+
+            <div class="section" data-level="exam" id="sec-mission">
+                <h2>20. Misja końcowa</h2>
+                <div class="card card-remember" style="margin-bottom:10px;">
+                    <span class="card-label">Zadanie</span>
+                    <p>Bez zaglądania do notatek – uzupełnij wszystkie zdania. Sprawdź swój wynik.</p>
+                    <p>Pamiętaj o najważniejszych poprawkach: <strong>Bard zabija Smauga</strong>, Bilbo zwycięża <strong>sprytem</strong>, Thorin ulega <strong>chciwości</strong>, a <strong>„czy”</strong> może być partykułą lub spójnikiem.</p>
+                </div>
+                <div class="exercise" id="missionExercise">
+                    <div class="ex-title">Uzupełnij poprawną formą lub odpowiedzią. <span class="level-badge level-exam">EGZAMIN</span></div>
+                    <div id="missionQuestions"></div>
+                    <button class="btn btn-primary" onclick="checkMission()" style="margin-top:8px;">Sprawdź misję</button>
+                    <button class="btn btn-outline" onclick="resetMission()" style="margin-top:8px; margin-left:4px;">Resetuj</button>
+                    <div id="missionResult" class="mission-result" style="display:none; margin-top:8px;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CZĘŚĆ 8 – PODSUMOWANIE
+        ============================================================ -->
+        <section class="section" data-level="exam" id="part8">
+            <div class="part-heading"><span class="part-num">Część 8</span> · Podsumowanie</div>
+
+            <div class="section" data-level="exam" id="sec-podsumowanie">
+                <h2>21. Co powinieneś umieć po tej lekcji?</h2>
+                <div class="card card-remember">
+                    <span class="card-label">Sprawdź się</span>
+                    <ul>
+                        <li><span class="correct-text">Znam autora (J.R.R. Tolkien), tytuł i głównego bohatera „Hobbita”.</span></li>
+                        <li><span class="correct-text">Wiem, że to <strong>lektura obowiązkowa</strong> z klas IV–VI.</span></li>
+                        <li><span class="correct-text">Wiem, że w części I arkusza zadania dotyczą <strong>fragmentu</strong>, a w wypracowaniu mogę się odwoływać do całej lektury.</span></li>
+                        <li><span class="correct-text">Wiem, kto zabija Smauga (<strong>Bard</strong>) i kto odkrywa jego słaby punkt (<strong>Bilbo</strong>).</span></li>
+                        <li><span class="correct-text">Rozumiem przemianę Bilba – od wygodnego hobbita do odważnego bohatera.</span></li>
+                        <li><span class="correct-text">Znam motywy: podróż, przyjaźń, chciwość, odwaga, dobro i zło.</span></li>
+                        <li><span class="correct-text">Rozróżniam pięć nieodmiennych części mowy: przysłówek, przyimek, spójnik, partykułę, wykrzyknik.</span></li>
+                        <li><span class="correct-text">Potrafię wskazać je w zdaniu i uzasadnić swój wybór.</span></li>
+                        <li><span class="correct-text">Znam zasady stawiania przecinka przed wybranymi spójnikami (w tym wyjątki).</span></li>
+                        <li><span class="correct-text">Rozumiem różnicę między spójnikiem a partykułą na przykładzie <strong>„czy”</strong>.</span></li>
+                        <li><span class="correct-text">Wiem, że „nie” z czasownikiem piszemy <strong>rozdzielnie</strong>, a z imiesłowami przymiotnikowymi <strong>łącznie</strong>.</span></li>
+                        <li><span class="correct-text">Mam gotowe zdania do wykorzystania w rozprawce.</span></li>
+                    </ul>
+                </div>
+
+                <div class="card card-remember">
+                    <span class="card-label">Najważniejsze zasady – ściąga</span>
+                    <div class="table-wrap">
+                        <table>
+                            <thead><tr><th>Część mowy</th><th>Pytanie / funkcja</th><th>Przykłady</th></tr></thead>
+                            <tbody>
+                                <tr><td><strong>Przysłówek</strong></td><td>jak? gdzie? kiedy?</td><td><em>szybko, tutaj, jutro</em></td></tr>
+                                <tr><td><strong>Przyimek</strong></td><td>łączy się z rzeczownikiem</td><td><em>do, pod, z, na</em></td></tr>
+                                <tr><td><strong>Spójnik</strong></td><td>łączy wyrazy lub zdania</td><td><em>i, ale, ponieważ</em></td></tr>
+                                <tr><td><strong>Partykuła</strong></td><td>modyfikuje znaczenie</td><td><em>nie, czy, oby, nawet</em></td></tr>
+                                <tr><td><strong>Wykrzyknik</strong></td><td>wyraża emocje</td><td><em>ach, hej, hurra</em></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="margin-top:8px;">
+                        <p><strong>Zapamiętaj:</strong> <strong>„czy”</strong> jako <strong>partykuła</strong> wprowadza pytanie, jako <strong>spójnik</strong> łączy zdania.</p>
+                        <p><strong>„nie” z czasownikiem</strong> – rozdzielnie, z imiesłowem przymiotnikowym – łącznie.</p>
+                        <p><strong>Bard</strong> zabija Smauga, <strong>Bilbo</strong> odkrywa słaby punkt.</p>
+                    </div>
+                </div>
+
+                <div class="card card-correct">
+                    <span class="card-label">Osiągnąłeś najważniejszy cel lekcji</span>
+                    <p>Nie tylko znasz „Hobbita” – potrafisz wykorzystać go w rozprawce. Nie tylko pamiętasz definicje – potrafisz rozpoznawać nieodmienne części mowy w praktyce. Unikniesz pułapek egzaminacyjnych i wiesz, czego możesz się spodziewać na E8.</p>
+                </div>
+            </div>
+
+            <div class="section" data-level="basic" id="topics">
+                <h2>Lista tematów głównych</h2>
+                <p style="color:var(--color-text-muted); font-size:0.9rem;">Wybierz temat, aby przejść bezpośrednio do odpowiedniej części lekcji.</p>
+                <ol class="topic-list">
+                    <li><a href="#sec-hobbit-info">Podstawowe informacje o „Hobbicie”</a></li>
+                    <li><a href="#sec-hobbit-bohaterowie">Bohaterowie</a></li>
+                    <li><a href="#sec-hobbit-wydarzenia">Najważniejsze wydarzenia</a></li>
+                    <li><a href="#sec-hobbit-przemiana">Przemiana Bilba</a></li>
+                    <li><a href="#sec-hobbit-motywy">Motywy</a></li>
+                    <li><a href="#sec-hobbit-zdania">Zdania do rozprawki</a></li>
+                    <li><a href="#sec-czesci-mowy">Nieodmienne części mowy – przegląd</a></li>
+                    <li><a href="#sec-przyslowek">Przysłówek</a></li>
+                    <li><a href="#sec-przyimek">Przyimek</a></li>
+                    <li><a href="#sec-spojnik">Spójnik</a></li>
+                    <li><a href="#sec-partykula">Partykuła</a></li>
+                    <li><a href="#sec-wykrzyknik">Wykrzyknik</a></li>
+                    <li><a href="#sec-cwiczenia">Ćwiczenia</a></li>
+                    <li><a href="#sec-flashcards">Fiszki</a></li>
+                    <li><a href="#sec-egzamin">Egzamin – jak to wygląda</a></li>
+                    <li><a href="#sec-pulapki">Pułapki egzaminacyjne</a></li>
+                    <li><a href="#sec-mission">Test końcowy</a></li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        STOPKA
+        ============================================================ -->
+        <footer class="footer">
+            <p><strong>Lekcja 2 – „Hobbit” + nieodmienne części mowy</strong> &bull; Wersja 3.0 (uzupełniona o status lektury, zasady CKE, pułapki egzaminacyjne i rozróżnienie „czy”) &bull; 2026-08-23</p>
+            <p style="font-size:0.78rem; opacity:0.7;">Ucz się świadomie, nie na pamięć. Zwracaj uwagę na poprawne informacje – unikniesz pułapek egzaminacyjnych.</p>
+            <p style="font-size:0.7rem; opacity:0.5;">Zadania treningowe wzorowane na formule E8 z języka polskiego.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // ======================================================================
+        //  JAVASCRIPT – SYSTEM INTERAKTYWNY
+        // ======================================================================
+
+        // ---------- LOCAL STORAGE ----------
+        function saveProgress() {
+            const checks = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+            const state = [];
+            checks.forEach(cb => state.push(cb.checked));
+            try {
+                localStorage.setItem('polski_lec2_progress_v3', JSON.stringify(state));
+            } catch (e) { /* ignore */ }
+        }
+
+        function loadProgress() {
+            let saved;
+            try {
+                saved = localStorage.getItem('polski_lec2_progress_v3');
+            } catch (e) { return; }
+            if (!saved) return;
+            let state;
+            try {
+                state = JSON.parse(saved);
+            } catch (e) { return; }
+            const checks = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+            checks.forEach((cb, i) => {
+                if (i < state.length) cb.checked = state[i];
+            });
+            updateProgress();
+        }
+
+        function resetAllProgress() {
+            if (!confirm('Czy na pewno chcesz zresetować cały postęp?')) return;
+            document.querySelectorAll('.toc-checklist input[type="checkbox"]').forEach(cb => {
+                cb.checked = false;
+            });
+            try {
+                localStorage.removeItem('polski_lec2_progress_v3');
+            } catch (e) { /* ignore */ }
+            updateProgress();
+        }
+
+        // ---------- TOGGLE ----------
+        function toggleAnswer(id) {
+            const el = document.getElementById(id);
+            if (!el) return;
+            el.classList.toggle('show');
+            const btn = document.querySelector(`[onclick*="toggleAnswer('${id}')"]`);
+            if (btn) {
+                btn.textContent = el.classList.contains('show') ? 'Ukryj odpowiedzi' : 'Pokaż odpowiedzi';
+            }
+        }
+
+        function toggleFlashcard(card) {
+            const flipped = card.classList.toggle('flipped');
+            card.setAttribute('aria-pressed', String(flipped));
+        }
+
+        function hideAllAnswers() {
+            document.querySelectorAll('.answer-content.show, .hint-content.show, .explain-content.show').forEach(el => {
+                el.classList.remove('show');
+            });
+        }
+
+        // ---------- PROGRESS ----------
+        function updateProgress() {
+            const checkboxes = document.querySelectorAll('.toc-checklist input[type="checkbox"]');
+            let total = 0,
+                done = 0;
+            checkboxes.forEach(cb => {
+                const w = parseInt(cb.dataset.progress) || 0;
+                total += w;
+                if (cb.checked) done += w;
+            });
+            const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+            const fill = document.getElementById('progressFill');
+            if (fill) fill.style.width = pct + '%';
+            const pctLabel = document.getElementById('progressPercent');
+            if (pctLabel) pctLabel.textContent = pct + '%';
+
+            const statusEl = document.getElementById('progressStatus');
+            if (statusEl) {
+                if (pct === 100) statusEl.textContent = 'Świetnie. Opanowałeś lekcję!';
+                else if (pct >= 80) statusEl.textContent = 'Bardzo dobrze. Dokończ resztę.';
+                else if (pct >= 50) statusEl.textContent = 'Dobrze. Poćwicz jeszcze.';
+                else if (pct > 0) statusEl.textContent = 'Zacząłeś – kontynuuj!';
+                else statusEl.textContent = 'Zacznij naukę';
+            }
+
+            updateTasks(pct);
+            saveProgress();
+        }
+
+        function updateTasks(pct) {
+            const tasks = document.querySelectorAll('.today-tasks .task');
+            const thresholds = [10, 25, 45, 65, 85];
+            tasks.forEach((task, i) => {
+                if (pct >= thresholds[i]) task.classList.add('done');
+                else task.classList.remove('done');
+            });
+        }
+
+        // ---------- FILTER ----------
+        let currentView = 'all';
+
+        function setView(view) {
+            currentView = view;
+            document.querySelectorAll('.view-filters .btn').forEach(b => b.classList.remove('active'));
+            const btn = document.querySelector(`.view-filters .btn[data-view="${view}"]`);
+            if (btn) btn.classList.add('active');
+            applyFilter(view);
+            updateVisibleCount();
+        }
+
+        function applyFilter(view) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(sec => {
+                const level = sec.dataset.level || 'basic';
+                let show = true;
+                if (view === 'basic') {
+                    show = (level === 'basic' || level === 'training' || level === 'remember');
+                } else if (view === 'exam') {
+                    show = (level === 'basic' || level === 'training' || level === 'exam' || level === 'trap' || level ===
+                        'difficult' || level === 'remember');
+                }
+                if (view === 'all') show = true;
+                sec.classList.toggle('hidden-by-filter', !show);
+            });
+        }
+
+        function updateVisibleCount() {
+            const visible = document.querySelectorAll('.section:not(.hidden-by-filter)').length;
+            const total = document.querySelectorAll('.section').length;
+            const vEl = document.getElementById('visibleCount');
+            const tEl = document.getElementById('totalCount');
+            if (vEl) vEl.textContent = visible;
+            if (tEl) tEl.textContent = total;
+        }
+
+        // ---------- ĆWICZENIA ----------
+        function checkCzesciMowy() {
+            const answers = ['przyslowek', 'przyimek', 'spojnik', 'partykuła', 'wykrzyknik'];
+            const icons = ['czescIcon1', 'czescIcon2', 'czescIcon3', 'czescIcon4', 'czescIcon5'];
+            let correct = 0;
+            for (let i = 1; i <= 5; i++) {
+                const sel = document.getElementById('czesc' + i);
+                const icon = document.getElementById(icons[i - 1]);
+                if (!sel || !icon) continue;
+                const val = sel.value;
+                const isOk = val === answers[i - 1];
+                icon.textContent = isOk ? '✓' : '✗';
+                icon.style.color = isOk ? '#2d8f5e' : '#dc3545';
+                if (isOk) correct++;
+            }
+            const res = document.getElementById('czescResult');
+            if (res) {
+                res.innerHTML =
+                    `<span style="color:${correct === 5 ? '#2d8f5e' : '#b7791f'};">Wynik: ${correct}/5. ${correct === 5 ? 'Świetnie rozpoznajesz części mowy!' : 'Sprawdź notatki – zwróć uwagę na funkcję każdej części mowy.'}</span>`;
+            }
+        }
+
+        function checkRozpoznawanie2() {
+            const answers = ['przyslowek', 'przyimek', 'przyslowek', 'wykrzyknik', 'partykuła', 'spojnik'];
+            const icons = ['rozpIcon1', 'rozpIcon2', 'rozpIcon3', 'rozpIcon4', 'rozpIcon5', 'rozpIcon6'];
+            let correct = 0;
+            for (let i = 1; i <= 6; i++) {
+                const sel = document.getElementById('rozp' + i);
+                const icon = document.getElementById(icons[i - 1]);
+                if (!sel || !icon) continue;
+                const val = sel.value;
+                const isOk = val === answers[i - 1];
+                icon.textContent = isOk ? '✓' : '✗';
+                icon.style.color = isOk ? '#2d8f5e' : '#dc3545';
+                if (isOk) correct++;
+            }
+            const res = document.getElementById('rozpResult');
+            if (res) {
+                res.innerHTML =
+                    `<span style="color:${correct === 6 ? '#2d8f5e' : '#b7791f'};">Wynik: ${correct}/6. ${correct === 6 ? 'Doskonale! Rozpoznajesz części mowy w kontekście.' : 'Sprawdź, czy poprawnie identyfikujesz funkcję każdego wyrazu.'}</span>`;
+            }
+        }
+
+        function checkPrzecinki() {
+            const answers = [
+                'Bilbo się bał, ale nie uciekł.',
+                'Thorin cierpiał, ponieważ utracił przyjaciół.',
+                'Bilbo wrócił do domu, chociaż bardzo zmienił się podczas wyprawy.',
+                'Bilbo był odważny i sprytny.',
+                'Bilbo wszedł do jaskini i wtedy usłyszał głos Golluma.'
+            ];
+            const icons = ['przecIcon1', 'przecIcon2', 'przecIcon3', 'przecIcon4', 'przecIcon5'];
+            let correct = 0;
+            for (let i = 1; i <= 5; i++) {
+                const inp = document.getElementById('przec' + i);
+                const icon = document.getElementById(icons[i - 1]);
+                if (!inp || !icon) continue;
+                const val = inp.value.trim();
+                const isOk = val === answers[i - 1];
+                icon.textContent = isOk ? '✓' : '✗';
+                icon.style.color = isOk ? '#2d8f5e' : '#dc3545';
+                inp.classList.toggle('correct', isOk);
+                inp.classList.toggle('wrong', !isOk);
+                if (isOk) correct++;
+            }
+            const res = document.getElementById('przecResult');
+            if (res) {
+                res.innerHTML =
+                    `<span style="color:${correct === 5 ? '#2d8f5e' : '#b7791f'};">Wynik: ${correct}/5. ${correct === 5 ? 'Przecinki przed spójnikami opanowane!' : 'Pamiętaj: przed spójnikami jak "ale", "ponieważ", "chociaż" stawiamy przecinek, a przed "i" w zdaniu prostym – nie.'}</span>`;
+            }
+        }
+
+        // ---------- MISJA ----------
+        const missionData = [
+            { q: '1. Kto jest głównym bohaterem „Hobbita”?', correct: 'Bilbo' },
+            { q: '2. Kto zabija Smauga?', correct: 'Bard' },
+            { q: '3. Kto odkrywa słaby punkt Smauga?', correct: 'Bilbo' },
+            { q: '4. Kto jest przywódcą krasnoludów?', correct: 'Thorin' },
+            { q: '5. Jaka część mowy odpowiada na pytania: jak? gdzie? kiedy?', correct: 'przysłówek' },
+            { q: '6. Jaka część mowy łączy wyrazy lub zdania?', correct: 'spójnik' },
+            { q: '7. Jaka część mowy modyfikuje znaczenie wypowiedzi?', correct: 'partykuła' },
+            { q: '8. Jaka część mowy wyraża emocje?', correct: 'wykrzyknik' },
+            { q: '9. Jaka część mowy łączy się z rzeczownikiem i wskazuje relację?', correct: 'przyimek' },
+            { q: '10. Uzupełnij: „Bilbo zwycięża nie dzięki sile, lecz dzięki _____ i sprytowi.”', correct: 'inteligencji' },
+            { q: '11. Który motyw wiąże się z Thorinem pod koniec powieści?', correct: 'chciwość' },
+            { q: '12. „Czy” jako partykuła wprowadza ……… (pytanie / zdanie podrzędne)', correct: 'pytanie' },
+            { q: '13. Jaki jest status „Hobbita” na egzaminie? (obowiązkowa / dodatkowa)', correct: 'obowiązkowa' },
+            { q: '14. Kto jest autorem „Hobbita”?', correct: 'Tolkien' },
+        ];
+
+        function initMission() {
+            const container = document.getElementById('missionQuestions');
+            if (!container) return;
+            container.innerHTML = '';
+            missionData.forEach((item, idx) => {
+                const div = document.createElement('div');
+                div.className = 'fitb-row';
+                div.innerHTML = `
+                        <span style="font-weight:500;">${item.q}</span>
+                        <input type="text" id="missionInput${idx}" placeholder="wpisz..." style="width:180px;" />
+                        <span class="result-icon" id="missionIcon${idx}"></span>
+                    `;
+                container.appendChild(div);
+            });
+        }
+
+        function checkMission() {
+            let correct = 0;
+            const total = missionData.length;
+            const mistakes = [];
+            missionData.forEach((item, idx) => {
+                const input = document.getElementById('missionInput' + idx);
+                const icon = document.getElementById('missionIcon' + idx);
+                if (!input || !icon) return;
+                const val = input.value.trim().toLowerCase();
+                const isOk = val === item.correct.toLowerCase();
+                input.classList.toggle('correct', isOk);
+                input.classList.toggle('wrong', !isOk);
+                if (isOk) {
+                    icon.textContent = '✓';
+                    icon.style.color = '#2d8f5e';
+                    correct++;
+                } else {
+                    icon.textContent = '✗';
+                    icon.style.color = '#dc3545';
+                    mistakes.push(`${idx + 1}. (poprawnie: „${item.correct}”)`);
+                }
+            });
+            const resultDiv = document.getElementById('missionResult');
+            if (!resultDiv) return;
+            resultDiv.style.display = 'block';
+            const pct = Math.round((correct / total) * 100);
+            let msg = '',
+                cls = '';
+            if (pct === 100) { msg = 'Świetnie! Opanowałeś lekcję!';
+                cls = 'perfect'; } else if (pct >= 75) { msg = 'Bardzo dobrze. Powtórz wskazane zagadnienia.';
+                cls = 'good'; } else if (pct >= 50) { msg = 'Wróć do najważniejszych zasad i spróbuj ponownie.';
+                cls = 'ok'; } else { msg = 'Powtórz podstawy i rozwiąż test jeszcze raz.';
+                cls = 'fail'; }
+            resultDiv.className = 'mission-result ' + cls;
+            resultDiv.innerHTML = `<strong>Wynik: ${correct}/${total}.</strong> ${msg}` +
+                (mistakes.length ? `<br /><span class="text-sm">Popraw odpowiedzi: ${mistakes.join('; ')}</span>` : '');
+        }
+
+        function resetMission() {
+            document.querySelectorAll('#missionQuestions input[type="text"]').forEach(input => {
+                input.value = '';
+                input.classList.remove('correct', 'wrong');
+            });
+            document.querySelectorAll('#missionQuestions .result-icon').forEach(icon => {
+                icon.textContent = '';
+                icon.style.color = '';
+            });
+            const resultDiv = document.getElementById('missionResult');
+            if (resultDiv) resultDiv.style.display = 'none';
+        }
+
+        // ---------- MASTER ----------
+        function mmToggleFocus() {
+            const active = document.body.classList.toggle('mm-focus');
+            const b = document.getElementById('mmFocusBtn');
+            if (b) b.textContent = active ? 'Wyłącz skupienie' : 'Tryb skupienia';
+            try {
+                localStorage.setItem('polski_lec2_focus_v3', active ? '1' : '0');
+            } catch (e) { /* ignore */ }
+        }
+
+        function mmReveal(btn, text) {
+            const out = btn.querySelector('.mm-answer');
+            if (!out) return;
+            const open = out.textContent.trim() !== '';
+            out.textContent = open ? '' : 'Odpowiedź: ' + text;
+        }
+
+        function mmUpdateSection() {
+            const sections = [...document.querySelectorAll('.section[id]')];
+            if (!sections.length) return;
+            const y = window.scrollY + 150;
+            let cur = sections[0];
+            sections.forEach(el => {
+                if (el.offsetTop <= y) cur = el;
+            });
+            sections.forEach(el => el.classList.toggle('mm-current-section', el === cur));
+            const h = cur.querySelector('h2, h3');
+            const n = document.getElementById('mmSectionName');
+            if (h && n) n.textContent = 'Lekcja 2 · ' + h.textContent.trim();
+        }
+
+        // ---------- INIT ----------
+        document.addEventListener('DOMContentLoaded', function() {
+            loadProgress();
+            setView('all');
+            initMission();
+            try {
+                if (localStorage.getItem('polski_lec2_focus_v3') === '1') {
+                    document.body.classList.add('mm-focus');
+                    const b = document.getElementById('mmFocusBtn');
+                    if (b) b.textContent = 'Wyłącz skupienie';
+                }
+            } catch (e) { /* ignore */ }
+            mmUpdateSection();
+            addEventListener('scroll', mmUpdateSection, { passive: true });
+            addEventListener('resize', mmUpdateSection);
+            document.querySelectorAll('.toc-checklist input[type="checkbox"]').forEach(cb => {
+                cb.addEventListener('change', updateProgress);
+            });
+        });
+    </script>
+
+</body>
+</html>

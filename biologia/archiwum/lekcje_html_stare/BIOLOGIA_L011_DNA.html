@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Biologia L011 — Jak DNA przechowuje informację? (v6.3)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" />
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Segoe UI',Roboto,system-ui,-apple-system,sans-serif;background:#f5f7fa;color:#1e293b;line-height:1.7;padding:16px;}
+.container{max-width:1100px;margin:0 auto;background:#fff;border-radius:24px;box-shadow:0 8px 40px rgba(0,0,0,0.06);padding:28px 32px 24px;}
+@media(max-width:768px){.container{padding:12px 10px;}body{padding:6px;}}
+
+h1,h2,h3,h4{font-weight:600;letter-spacing:-0.02em;color:#0a2540;}
+h1{font-size:2rem;}
+h2{font-size:1.45rem;margin-top:28px;margin-bottom:10px;padding-bottom:4px;border-bottom:2px solid #e9edf2;}
+h3{font-size:1.15rem;margin-top:20px;margin-bottom:6px;}
+h4{font-size:1.0rem;margin-top:14px;margin-bottom:4px;}
+p{margin-bottom:8px;}
+ul,ol{padding-left:22px;margin-bottom:10px;}
+li{margin-bottom:3px;}
+a{color:#2b6cb0;text-decoration:none;}
+a:hover{text-decoration:underline;}
+code{background:#0a2540;color:#fff;padding:1px 6px;border-radius:4px;font-family:'Courier New',monospace;font-size:0.88em;}
+pre.flow{background:#0a2540;color:#fff;padding:12px 16px;border-radius:8px;font-family:'Courier New',monospace;font-size:0.9rem;line-height:1.65;margin:8px 0;overflow-x:auto;white-space:pre;}
+
+:root{
+  --color-basic:#2d8f5e;--color-basic-bg:#f0faf4;
+  --color-training:#2b6cb0;--color-training-bg:#f0f6ff;
+  --color-exam:#b7791f;--color-exam-bg:#fffbeb;
+  --color-trap:#dc3545;--color-trap-bg:#fef2f2;
+  --color-ambitious:#7c3aed;--color-ambitious-bg:#f5f0ff;
+  --color-remember:#0a2540;--color-remember-bg:#f1f4f8;
+  --color-hint:#f59e0b;--color-hint-bg:#fffbeb;
+  --color-correct:#2d8f5e;--color-error:#dc3545;
+  --color-new:#059669;--color-new-bg:#ecfdf5;
+  --color-text:#1e293b;--color-text-muted:#6b7a8d;
+  --color-border:#e2e8f0;--color-bg-subtle:#f8fafc;
+  --shadow-card:0 2px 8px rgba(0,0,0,0.04);
+  --base-A:#2d8f5e;
+  --base-T:#e67e22;
+  --base-C:#2b6cb0;
+  --base-G:#7c3aed;
+  --sugar-color:#94a3b8;
+  --phosphate-color:#facc15;
+  --backbone-color:#334155;
+}
+
+.card{border-radius:12px;padding:14px 18px;margin:12px 0;border:1px solid var(--color-border);background:#fff;box-shadow:var(--shadow-card);}
+.card-remember{background:var(--color-remember-bg);border-left:5px solid var(--color-remember);border-color:var(--color-remember);}
+.card-remember .card-label{color:var(--color-remember);}
+.card-warning{background:#fffbeb;border-left:5px solid #d69e2e;border-color:#d69e2e;}
+.card-warning .card-label{color:#d69e2e;}
+.card-hint{background:var(--color-hint-bg);border-left:5px solid var(--color-hint);border-color:var(--color-hint);}
+.card-hint .card-label{color:var(--color-hint);}
+.card-error{background:var(--color-trap-bg);border-left:5px solid var(--color-trap);border-color:var(--color-trap);}
+.card-error .card-label{color:var(--color-trap);}
+.card-correct{background:var(--color-basic-bg);border-left:5px solid var(--color-correct);border-color:var(--color-correct);}
+.card-correct .card-label{color:var(--color-correct);}
+.card-trap{background:var(--color-trap-bg);border-left:5px solid var(--color-trap);border-color:var(--color-trap);}
+.card-trap .card-label{color:var(--color-trap);}
+.card-ambitious{background:var(--color-ambitious-bg);border-left:5px solid var(--color-ambitious);border-color:var(--color-ambitious);}
+.card-ambitious .card-label{color:var(--color-ambitious);}
+.card-gray{background:var(--color-bg-subtle);border-left:5px solid var(--color-text-muted);border-color:var(--color-text-muted);}
+.card-new{background:var(--color-new-bg);border-left:5px solid var(--color-new);border-color:var(--color-new);}
+.card-new .card-label{color:var(--color-new);}
+.card-exam{background:var(--color-exam-bg);border-left:5px solid var(--color-exam);border-color:var(--color-exam);}
+.card-exam .card-label{color:var(--color-exam);}
+.card .card-label{font-weight:600;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:4px;}
+
+.level-badge{display:inline-block;font-size:0.55rem;font-weight:700;text-transform:uppercase;padding:1px 8px;border-radius:12px;vertical-align:middle;letter-spacing:0.3px;line-height:1.6;}
+.level-basic{background:#d4edda;color:#155724;}
+.level-training{background:#cce5ff;color:#004085;}
+.level-exam{background:#ffe8cc;color:#8a6d3b;}
+.level-trap{background:#f8d7da;color:#721c24;}
+.level-ambitious{background:#e8d5f5;color:#4a1a6b;}
+.level-new{background:#a7f3d0;color:#065f46;}
+
+.table-wrap{overflow-x:auto;margin:12px 0;border-radius:10px;border:1px solid var(--color-border);}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:0.88rem;}
+.table-wrap th,.table-wrap td{padding:6px 10px;text-align:left;border-bottom:1px solid #edf2f7;vertical-align:top;}
+.table-wrap th{background:#f1f4f8;font-weight:600;color:#0a2540;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.3px;}
+.table-wrap tr:nth-child(even){background:#fafbfc;}
+
+.btn{display:inline-flex;align-items:center;gap:4px;padding:5px 14px;border-radius:8px;border:1px solid var(--color-border);background:#fff;font-size:0.82rem;font-weight:500;cursor:pointer;transition:all 0.2s;color:var(--color-text);font-family:inherit;}
+.btn:hover{background:var(--color-bg-subtle);border-color:#b0b8c4;}
+.btn-primary{background:var(--color-training);color:#fff;border-color:var(--color-training);}
+.btn-primary:hover{background:#1f4e8c;border-color:#1f4e8c;color:#fff;}
+
+details.answer{background:var(--color-training-bg);border-left:3px solid var(--color-training);border-radius:6px;padding:8px 12px;margin-top:6px;}
+details.answer summary{cursor:pointer;font-weight:600;color:var(--color-training);font-size:0.9rem;padding:2px 0;list-style:none;}
+details.answer summary::marker{content:"";}
+details.answer summary::before{content:"▶ ";font-size:0.7rem;display:inline-block;transition:transform 0.2s;}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer > *:not(summary){margin-top:8px;}
+
+details.bridge{background:var(--color-ambitious-bg);border:1px solid #d9c9ee;border-left:5px solid var(--color-ambitious);border-radius:12px;padding:8px 14px;margin:12px 0;}
+details.bridge summary{cursor:pointer;font-weight:600;color:var(--color-ambitious);font-size:1.0rem;padding:6px 0;list-style:none;}
+details.bridge summary::marker{content:"";}
+details.bridge summary::before{content:"▶ ";font-size:0.7rem;display:inline-block;transition:transform 0.2s;margin-right:4px;}
+details.bridge[open] summary::before{transform:rotate(90deg);}
+details.bridge > *:not(summary){margin-top:8px;}
+
+.exercise{background:var(--color-bg-subtle);border-radius:12px;padding:14px 16px;margin:12px 0;border:1px solid var(--color-border);}
+.exercise.exam{background:var(--color-exam-bg);border:1px solid #f0d090;}
+
+.top-panel{background:var(--color-bg-subtle);border-radius:16px;padding:16px 20px;margin-bottom:24px;border:1px solid var(--color-border);}
+.top-panel .panel-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;}
+.top-panel .panel-row+.panel-row{margin-top:10px;padding-top:10px;border-top:1px solid var(--color-border);}
+.top-panel .title{font-weight:600;font-size:1.05rem;color:#0a2540;}
+.top-panel .subtitle{font-size:0.8rem;color:var(--color-text-muted);}
+.top-panel .lesson-info{margin-top:6px;font-size:0.78rem;color:var(--color-text-muted);line-height:1.4;}
+
+.toc-section{background:#fff;border:1px solid var(--color-border);border-radius:16px;padding:18px 22px;margin-bottom:22px;}
+.toc-section h2{margin-bottom:14px;font-size:1.25rem;}
+.toc-item{border:1px solid var(--color-border);border-radius:8px;margin-bottom:6px;background:#fff;}
+.toc-summary{font-weight:600;font-size:0.92rem;padding:8px 14px;cursor:pointer;list-style:none;display:flex;align-items:center;gap:8px;}
+.toc-summary:hover{background:var(--color-bg-subtle);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::before{content:"▶";font-size:0.7rem;color:var(--color-text-muted);transition:transform 0.2s;margin-right:6px;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);}
+.toc-actions{display:flex;flex-wrap:wrap;gap:6px;padding:2px 14px 8px 30px;}
+.toc-anchor{display:inline-flex;align-items:center;justify-content:center;min-height:30px;padding:4px 11px;border:1px solid var(--color-training);border-radius:6px;background:var(--color-training-bg);color:var(--color-training);font-size:0.78rem;font-weight:600;line-height:1.2;text-decoration:none;}
+.toc-anchor:hover{background:var(--color-training);color:#fff;}
+.toc-keywords{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:14px;padding:12px 16px;background:var(--color-basic-bg);border-radius:12px;color:#0f5132;font-weight:600;line-height:1.6;}
+
+.section{margin-bottom:8px;}
+.part-heading{font-size:1.5rem;font-weight:700;color:#0a2540;margin-top:32px;margin-bottom:14px;padding:8px 16px;background:var(--color-bg-subtle);border-radius:12px;border-left:6px solid var(--color-training);letter-spacing:-0.02em;}
+.part-heading .part-num{color:var(--color-training);}
+
+.footer{margin-top:32px;padding-top:16px;border-top:2px solid var(--color-border);text-align:center;font-size:0.8rem;color:var(--color-text-muted);}
+
+.flashcard-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:16px 0;}
+.flashcard{min-height:140px;padding:16px;border:2px solid var(--color-border);border-radius:12px;background:#fff;color:#0a2540;font:inherit;text-align:center;cursor:pointer;box-shadow:var(--shadow-card);transition:border-color 0.2s,background 0.2s,transform 0.2s;position:relative;}
+.flashcard:hover{border-color:var(--color-training);background:var(--color-training-bg);transform:translateY(-2px);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:100px;}
+.flashcard .front{font-weight:600;font-size:0.95rem;line-height:1.4;}
+.flashcard .back{display:none;color:var(--color-text-muted);font-size:0.9rem;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:6px;right:8px;font-size:0.55rem;text-transform:uppercase;background:#e2e8f0;padding:1px 8px;border-radius:10px;color:#2d3a4f;}
+.flashcard .card-tag.tag-ambitious{background:#e8d5f5;color:#4a1a6b;}
+.flashcard .card-tag.tag-trap{background:#f8d7da;color:#721c24;}
+.flashcard .card-tag.tag-basic{background:#d4edda;color:#155724;}
+.flashcard .card-tag.tag-exam{background:#ffe8cc;color:#8a6d3b;}
+
+.highlight-box{background:#fef9c3;border:1px solid #facc15;padding:1rem 1.8rem;border-radius:12px;margin:1.5rem 0;}
+
+.diagram{background:var(--color-bg-subtle);border:1px solid var(--color-border);border-radius:12px;padding:16px;margin:16px 0;text-align:center;overflow-x:auto;}
+.diagram svg{max-width:100%;height:auto;display:block;margin:0 auto;}
+.diagram .caption{font-size:0.82rem;color:var(--color-text-muted);font-style:italic;margin-top:8px;}
+
+.step-flow{background:#0a2540;color:#fff;padding:12px 16px;border-radius:8px;font-family:'Courier New',monospace;font-size:0.9rem;line-height:1.7;margin:8px 0;overflow-x:auto;white-space:pre;}
+
+.b-A{color:var(--base-A);font-weight:700;}
+.b-T{color:var(--base-T);font-weight:700;}
+.b-C{color:var(--base-C);font-weight:700;}
+.b-G{color:var(--base-G);font-weight:700;}
+
+/* Karty par zasad (wizualizacja 1) */
+.pair-cards{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin:18px 0;}
+.pair-card{background:#fff;border:2px solid var(--color-border);border-radius:14px;padding:16px 22px;text-align:center;box-shadow:var(--shadow-card);min-width:240px;}
+.pair-card .pair-title{font-size:0.8rem;text-transform:uppercase;letter-spacing:0.5px;color:var(--color-text-muted);font-weight:600;margin-bottom:8px;}
+.pair-card svg{display:block;margin:0 auto;}
+
+/* Wizualizacja puryna/pirymidyna (SVG) */
+.purin-pirim-wrap{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin:12px 0;}
+
+/* Interaktywny trener */
+.trainer{background:#fff;border:2px solid var(--color-training);border-radius:14px;padding:18px 20px;margin:14px 0;}
+.trainer .tr-title{font-weight:700;color:var(--color-training);font-size:1.05rem;margin-bottom:8px;}
+.trainer .tr-line{font-family:'Courier New',monospace;font-size:1.1rem;letter-spacing:0.15em;padding:10px 14px;background:var(--color-bg-subtle);border-radius:8px;margin:10px 0;min-height:44px;display:flex;flex-wrap:wrap;align-items:center;}
+.trainer .tr-line .cell{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;margin:2px 4px;border-radius:6px;font-weight:700;font-size:1.05rem;position:relative;}
+.trainer .tr-line .cell-A{background:#e6f6ec;color:var(--base-A);border:2px solid var(--base-A);}
+.trainer .tr-line .cell-T{background:#fdf1e1;color:var(--base-T);border:2px solid var(--base-T);}
+.trainer .tr-line .cell-C{background:#e5effa;color:var(--base-C);border:2px solid var(--base-C);}
+.trainer .tr-line .cell-G{background:#f2ecfa;color:var(--base-G);border:2px solid var(--base-G);}
+.trainer .tr-line .cell-q{background:#fff;color:var(--color-trap);border:2px dashed var(--color-trap);cursor:pointer;}
+.trainer .tr-line .cell-done{background:#e6f6ec;color:var(--color-basic);border:2px solid var(--color-basic);}
+.trainer .tr-line .cell-empty{background:transparent;border:2px dashed #cbd5e1;color:transparent;}
+.trainer .tr-buttons{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0;}
+.trainer .tr-buttons button{font-family:'Courier New',monospace;font-size:1.05rem;font-weight:700;padding:6px 16px;border-radius:8px;border:2px solid var(--color-border);background:#fff;cursor:pointer;transition:all 0.15s;color:var(--color-text);}
+.trainer .tr-buttons button:hover{border-color:var(--color-training);background:var(--color-training-bg);}
+.trainer .tr-buttons button.b-A{border-color:var(--base-A);color:var(--base-A);}
+.trainer .tr-buttons button.b-T{border-color:var(--base-T);color:var(--base-T);}
+.trainer .tr-buttons button.b-C{border-color:var(--base-C);color:var(--base-C);}
+.trainer .tr-buttons button.b-G{border-color:var(--base-G);color:var(--base-G);}
+.trainer .tr-info{font-size:0.85rem;color:var(--color-text-muted);margin-top:6px;font-style:italic;}
+.trainer .tr-result{margin-top:10px;padding:10px 14px;border-radius:8px;font-weight:600;display:none;}
+.trainer .tr-result.ok{background:var(--color-basic-bg);color:#14532d;display:block;}
+.trainer .tr-result.warn{background:var(--color-hint-bg);color:#78350f;display:block;}
+
+.trainer .tr-bond-row{display:flex;flex-wrap:wrap;align-items:center;padding:2px 14px;gap:0;min-height:14px;}
+.trainer .tr-bond-cell{width:34px;height:14px;margin:0 4px;display:inline-flex;align-items:center;justify-content:center;}
+
+.core-path{background:linear-gradient(180deg,#f0faf4 0%,#e5f5ea 100%);border:2px solid var(--color-basic);border-radius:14px;padding:16px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:700;color:#14532d;font-size:1.1rem;margin-bottom:10px;}
+.core-path ol{margin-bottom:0;}
+
+.simplification{background:#fef3c7;border:1px solid #f59e0b;border-left:5px solid #d97706;border-radius:10px;padding:12px 16px;margin:12px 0;}
+.simplification .sl-label{font-weight:700;color:#92400e;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:4px;}
+
+.seq-compare{display:flex;flex-wrap:wrap;gap:24px;justify-content:center;margin:16px 0;align-items:center;}
+.seq-row{display:flex;align-items:center;gap:6px;}
+.seq-label{font-size:0.8rem;color:var(--color-text-muted);font-weight:600;margin-right:8px;min-width:90px;text-align:right;}
+.seq-cell{width:34px;height:34px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-family:'Courier New',monospace;font-size:1rem;border:2px solid;}
+.seq-cell.diff{border-width:3px;transform:scale(1.12);box-shadow:0 0 0 3px rgba(220,53,69,0.2);}
+.seq-arrow{color:var(--color-trap);font-weight:700;font-size:1.05rem;text-align:center;margin-top:8px;}
+
+@media(max-width:600px){
+  .top-panel .panel-row{flex-direction:column;align-items:stretch;}
+  .container{padding:10px 6px;}
+  .toc-section{padding:12px 14px;}
+  .toc-summary{font-size:0.85rem;padding:6px 10px;}
+}
+</style>
+</head>
+<body>
+<div class="container" id="app">
+
+<!-- ================= TOP PANEL ================= -->
+<div class="top-panel" id="topPanel">
+  <div class="panel-row">
+    <div>
+      <div class="title">L011 — Jak DNA przechowuje informację?</div>
+      <div class="subtitle">Od nukleotydu przez pary zasad do helisy · informacja w kolejności · DNA vs RNA · most do ekspresji genu</div>
+      <div class="lesson-info">
+        Poprzednia: L010 · Następna: L012<br>
+        Warstwy: [PRZYPOMNIENIE] · [PODSTAWA E8] · [TRENING] · [MASTER] · [ZAAWANSOWANY] · [KONKURS]<br>
+        <strong style="color:var(--color-new)">Wersja 6.3</strong> — wizualizacje SVG: pary zasad, drabina DNA, helisa, puryny/pirymidyny, trener z widocznymi wiązaniami
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= RDZEŃ LEKCJI ================= -->
+<div class="core-path">
+  <div class="cp-title">Rdzeń lekcji — najpierw to (ok. 15–20 min)</div>
+  <ol>
+    <li><strong>Sekcja 5.1</strong> — czym jest DNA.</li>
+    <li><strong>Sekcja 5.2</strong> — z czego składa się nukleotyd.</li>
+    <li><strong>Sekcja 5.3–5.5</strong> — pary A–T i C–G oraz sekwencja jako informacja.</li>
+    <li><strong>Sekcja 6.6–6.7</strong> — uzupełnianie nici komplementarnej.</li>
+    <li><strong>Sekcja 10.1</strong> — najczęstsze błędy.</li>
+    <li><strong>Sekcja 12A, 12B i test 15</strong>.</li>
+  </ol>
+</div>
+
+<!-- ================= TOC ================= -->
+<div class="toc-section" id="sec-toc">
+  <h2>Spis treści</h2>
+  <details class="toc-item" open>
+    <summary class="toc-summary">0. Wprowadzenie (z historią odkrycia DNA)</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#wprowadzenie">Wprowadzenie</a><a class="toc-anchor" href="#historia">Historia</a></nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">1–4. Pytanie, cele, kompas, problem</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#pytanie">Pytanie</a><a class="toc-anchor" href="#cele">Cele + 80/20</a><a class="toc-anchor" href="#kompas">Kompas</a><a class="toc-anchor" href="#problem">Problem</a></nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">5. Ściąga — definicje z wizualizacjami</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#sciaga">Ściąga</a><a class="toc-anchor" href="#pary">Pary zasad</a><a class="toc-anchor" href="#drabina">Drabina DNA</a><a class="toc-anchor" href="#helisa">Helisa</a></nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">6. Wyjaśnienie od podstaw</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#wyjasnienie">Wyjaśnienie</a><a class="toc-anchor" href="#trener">Trener komplementarności</a></nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">7. Centralny dogmat (rozszerzenie)</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#dogmat">Dogmat</a></nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">8–9. Ambitny i zaawansowany</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#ambitny">MASTER</a><a class="toc-anchor" href="#zaawansowany">ZAAWANSOWANY</a></nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">10–15. Klinika, ćwiczenia, fiszki, test, checklista</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#klinika">Klinika</a><a class="toc-anchor" href="#cwiczenia">Ćwiczenia</a><a class="toc-anchor" href="#fiszki">Fiszki</a><a class="toc-anchor" href="#test">Test</a></nav>
+  </details>
+  <details class="toc-item">
+    <summary class="toc-summary">16–23. Mapa, słownik, dodatek, życie, status</summary>
+    <nav class="toc-actions"><a class="toc-anchor" href="#mapa">Mapa</a><a class="toc-anchor" href="#slownik">Słownik</a><a class="toc-anchor" href="#status">Status</a></nav>
+  </details>
+  <div class="toc-keywords"><span>DNA · nukleotyd · A–T · C–G · podwójna helisa · komplementarność · informacja · gen · transkrypcja · translacja</span></div>
+</div>
+
+<!-- ================= 0. WPROWADZENIE ================= -->
+<section class="section" id="wprowadzenie">
+  <div class="part-heading"><span class="part-num">0. Wprowadzenie</span></div>
+  <div class="card card-new">
+    <span class="card-label">O co tu właściwie chodzi?</span>
+    <p>Wyobraź sobie, że masz <strong>książkę kucharską</strong>. Każdy przepis mówi, jak zrobić konkretną potrawę. W każdej komórce twojego ciała jest <strong>taka książka kucharska</strong> — zapisana czterema symbolami: A, T, C, G. Ta książka nazywa się <strong>DNA</strong>.</p>
+    <p><strong>Zawiera instrukcje</strong> potrzebne komórkom do wytwarzania wielu cząsteczek, przede wszystkim <strong>białek</strong> oraz niektórych rodzajów <strong>RNA</strong>. Produkty genów współuczestniczą w powstawaniu i działaniu cech organizmu.</p>
+    <div class="simplification">
+      <span class="sl-label">Uwaga na ważne uproszczenie</span>
+      <p style="margin-bottom:0;">DNA <strong>nie jest</strong> gotowym „projektem całego człowieka", który działa samodzielnie. Cecha powstaje w wyniku <strong>współdziałania wielu genów, środowiska oraz rozwoju organizmu</strong>.</p>
+    </div>
+    <p><strong>Na tej lekcji dowiesz się:</strong></p>
+    <ol>
+      <li>Czym jest DNA i jak jest zbudowane.</li>
+      <li>Jak cztery litery (A, T, C, G) mogą przechowywać ogromną ilość informacji.</li>
+      <li>Dlaczego budowa DNA umożliwia jego wierne kopiowanie. Sam przebieg replikacji poznasz w <strong>L013</strong>.</li>
+      <li>W uproszczeniu: jak informacja zapisana w genie prowadzi do powstania białka. Pełniej — w <strong>L014</strong>.</li>
+      <li>Dlaczego to ma znaczenie — od medycyny po kryminalistykę.</li>
+    </ol>
+  </div>
+
+  <h3 id="historia">Historia — krótka oś czasu</h3>
+  <div class="card card-new">
+    <ol>
+      <li><strong>1869 — Miescher</strong> wyizolował „nukleinę" z jąder komórkowych.</li>
+      <li><strong>1944 — Avery, MacLeod, McCarty</strong> pokazali, że to DNA (nie białko) przenosi informację.</li>
+      <li><strong>1950 — Chargaff</strong> odkrył regułę %A = %T oraz %C = %G.</li>
+      <li><strong>1952 — Franklin i Wilkins</strong> wykonali zdjęcia rentgenowskie DNA.</li>
+      <li><strong>1953 — Watson i Crick</strong> opublikowali model podwójnej helisy.</li>
+    </ol>
+    <p style="font-size:0.85rem;color:var(--color-text-muted);">Pełniejsza historia — sekcja 20.1.</p>
+  </div>
+</section>
+
+<!-- ================= 1. PYTANIE ================= -->
+<section class="section" id="pytanie">
+  <div class="part-heading"><span class="part-num">1. Pytanie przewodnie</span></div>
+  <div class="card card-correct">
+    <p style="font-size:1.1rem;font-weight:600;">Jak jedna cząsteczka może przechowywać informacje potrzebne do budowy i funkcjonowania organizmu?</p>
+  </div>
+</section>
+
+<!-- ================= 2. CELE ================= -->
+<section class="section" id="cele">
+  <div class="part-heading"><span class="part-num">2. Cele lekcji</span> <span class="level-badge level-basic">PODSTAWA E8</span></div>
+  <div class="card card-correct">
+    <span class="card-label">Po tej lekcji uczeń:</span>
+    <ul>
+      <li><strong>wyjaśnia</strong>, czym jest DNA i rozumie, dlaczego jest nośnikiem informacji <span class="level-badge level-basic">E8</span></li>
+      <li><strong>wymienia składniki nukleotydu</strong> <span class="level-badge level-basic">E8</span></li>
+      <li><strong>rozpoznaje zasady A, T, C, G</strong> i stosuje komplementarność <span class="level-badge level-basic">E8</span></li>
+      <li><strong>uzupełnia nić komplementarną</strong> <span class="level-badge level-basic">E8</span></li>
+      <li>rozróżnia DNA od genu <span class="level-badge level-ambitious">MASTER</span></li>
+      <li>anty-równoległość, liczba wiązań A–T/C–G <span class="level-badge level-ambitious">ZAAWANSOWANY</span></li>
+      <li>transkrypcja, translacja, kod zdegenerowany <span class="level-badge level-ambitious">ZAAWANSOWANY</span></li>
+      <li>mtDNA, mutacje silent/missense/nonsense <span class="level-badge level-ambitious">ZAAWANSOWANY</span></li>
+    </ul>
+  </div>
+
+  <div class="card card-hint">
+    <span class="card-label">Zasada 80/20 — co naprawdę daje 80% efektu (i DLACZEGO)</span>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>20% = 80% efektu</th><th>DLACZEGO to jest kluczowe</th></tr></thead>
+        <tbody>
+          <tr><td><strong>DNA = informacja w kolejności zasad</strong></td><td>Cała idea DNA. Bez tego nie zrozumiesz ani replikacji, ani mutacji, ani funkcji białek.</td></tr>
+          <tr><td><strong>Nukleotyd = cukier + fosforan + zasada</strong></td><td>Cegiełka DNA. Bez niej nie zrozumiesz, jak nić się łączy ani skąd różnica DNA/RNA.</td></tr>
+          <tr><td><strong>A–T, C–G</strong></td><td>Fundament kopiowania, odczytu, stabilności helisy. Jak tabliczka mnożenia w matematyce.</td></tr>
+          <tr><td><strong>Helisa (dwie nici)</strong></td><td>Dwie komplementarne nici to mechanizm wiernego kopiowania i naprawy DNA.</td></tr>
+          <tr><td><strong>DNA ≠ gen ≠ chromosom</strong></td><td>Trzy poziomy organizacji, które uczniowie mylą.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 3. KOMPAS ================= -->
+<section class="section" id="kompas">
+  <div class="part-heading"><span class="part-num">3. Kompas</span> <span class="level-badge level-basic">PRZYPOMNIENIE</span></div>
+  <div class="card card-remember">
+    <span class="card-label">Co trzeba wiedzieć wcześniej</span>
+    <ul>
+      <li><strong>L001:</strong> jądro komórkowe zawiera materiał genetyczny.</li>
+      <li><strong>L010:</strong> cecha = geny + środowisko; gen to odcinek DNA.</li>
+      <li><strong>Z chemii (klasy 7–8):</strong> atomy, cząsteczki, wiązania (podstawy).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= 4. PROBLEM ================= -->
+<section class="section" id="problem">
+  <div class="part-heading"><span class="part-num">4. Zacznij od problemu</span></div>
+  <div class="highlight-box">
+    <p>Wyobraź sobie, że masz tylko <strong>cztery symbole</strong>: A, T, C, G. Czy za ich pomocą można zapisać bardzo dużą ilość informacji?</p>
+    <p><strong>Hipoteza ucznia:</strong> ....................................</p>
+    <p><strong>Podpowiedź ilościowa:</strong></p>
+    <ul>
+      <li>4¹ = 4 · 4² = 16 · 4³ = 64</li>
+      <li>4¹⁰ ≈ 1 000 000 (milion) sekwencji 10-nukleotydowych</li>
+      <li>4²⁰ ≈ 1 000 000 000 000 (bilion) sekwencji 20-nukleotydowych</li>
+    </ul>
+    <p><strong>Wniosek:</strong> nawet krótki odcinek DNA niesie ogromną ilość informacji — dzięki <strong>kolejności</strong>.</p>
+  </div>
+</section>
+
+<!-- ================= 5. ŚCIĄGA ================= -->
+<section class="section" id="sciaga">
+  <div class="part-heading"><span class="part-num">5. Ściąga</span> <span class="level-badge level-basic">PODSTAWA E8</span></div>
+
+  <h3>5.1. Co to DNA?</h3>
+  <div class="card card-new">
+    <p><strong>DNA</strong> = <strong>kwas deoksyrybonukleinowy</strong>. To <strong>główny nośnik informacji genetycznej</strong> u wszystkich organizmów żywych (poza niektórymi wirusami, które mają RNA).</p>
+    <p><strong>Gdzie jest DNA?</strong></p>
+    <ul>
+      <li>U <strong>eukariontów:</strong> głównie w <strong>jądrze</strong>, ale też w <strong>mitochondriach</strong> (mtDNA), u roślin w chloroplastach (cpDNA).</li>
+      <li>U <strong>prokariontów:</strong> w <strong>nukleoidzie</strong>, czasem w plazmidach.</li>
+    </ul>
+  </div>
+
+  <h3>5.2. Budowa — nukleotyd i jego trzy części</h3>
+
+  <!-- WIZUALIZACJA: nukleotyd SVG -->
+  <div class="card card-correct">
+    <span class="card-label">Diagram nukleotydu</span>
+    <div class="diagram" style="background:#fff;">
+      <svg viewBox="0 0 340 320" width="340" height="320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Budowa nukleotydu">
+        <!-- Zasada azotowa -->
+        <rect x="70" y="20" width="200" height="60" rx="10" fill="#f2ecfa" stroke="#7c3aed" stroke-width="2.5"/>
+        <text x="170" y="42" text-anchor="middle" font-family="Segoe UI" font-size="11" font-weight="700" fill="#5b21b6">ZASADA AZOTOWA</text>
+        <text x="120" y="66" text-anchor="middle" font-family="Courier New" font-size="18" font-weight="700" fill="#2d8f5e">A</text>
+        <text x="153" y="66" text-anchor="middle" font-family="Courier New" font-size="18" font-weight="700" fill="#e67e22">T</text>
+        <text x="186" y="66" text-anchor="middle" font-family="Courier New" font-size="18" font-weight="700" fill="#2b6cb0">C</text>
+        <text x="219" y="66" text-anchor="middle" font-family="Courier New" font-size="18" font-weight="700" fill="#7c3aed">G</text>
+
+        <!-- linia łącząca -->
+        <line x1="170" y1="80" x2="170" y2="115" stroke="#334155" stroke-width="2.5"/>
+
+        <!-- Deoksyryboza -->
+        <polygon points="170,115 220,150 220,205 170,240 120,205 120,150" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2.5"/>
+        <text x="170" y="168" text-anchor="middle" font-family="Segoe UI" font-size="11" font-weight="700" fill="#475569">CUKIER</text>
+        <text x="170" y="185" text-anchor="middle" font-family="Segoe UI" font-size="11" font-weight="700" fill="#475569">deoksyryboza</text>
+
+        <!-- linia łącząca -->
+        <line x1="170" y1="240" x2="170" y2="270" stroke="#334155" stroke-width="2.5"/>
+
+        <!-- Fosforan -->
+        <circle cx="170" cy="290" r="22" fill="#fef3c7" stroke="#facc15" stroke-width="2.5"/>
+        <text x="170" y="296" text-anchor="middle" font-family="Segoe UI" font-size="16" font-weight="700" fill="#92400e">P</text>
+      </svg>
+      <div class="caption">Nukleotyd = zasada azotowa + deoksyryboza + fosforan</div>
+    </div>
+    <p><strong>Ważne:</strong> nukleotyd to <strong>nie sama litera</strong> A, T, C lub G. Litera oznacza tylko <strong>zasadę azotową</strong>. Cała cegiełka DNA zawiera jeszcze cukier — deoksyrybozę — oraz resztę fosforanową.</p>
+  </div>
+
+  <h3>5.3. Pary komplementarne — dlaczego A–T, C–G?</h3>
+
+  <!-- WIZUALIZACJA: pary zasad side-by-side -->
+  <div class="card card-correct" id="pary">
+    <span class="card-label">Pary zasad — porównanie wizualne</span>
+    <div class="pair-cards">
+      <!-- Para A–T -->
+      <div class="pair-card" style="border-color:#2d8f5e;">
+        <div class="pair-title">Para A–T · 2 wiązania</div>
+        <svg viewBox="0 0 200 80" width="200" height="80" xmlns="http://www.w3.org/2000/svg">
+          <!-- A -->
+          <rect x="10" y="20" width="50" height="40" rx="8" fill="#e6f6ec" stroke="#2d8f5e" stroke-width="2.5"/>
+          <text x="35" y="48" text-anchor="middle" font-family="Courier New" font-size="22" font-weight="700" fill="#2d8f5e">A</text>
+          <!-- 2 wiązania -->
+          <line x1="64" y1="32" x2="136" y2="32" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4 3"/>
+          <line x1="64" y1="48" x2="136" y2="48" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4 3"/>
+          <!-- T -->
+          <rect x="140" y="20" width="50" height="40" rx="8" fill="#fdf1e1" stroke="#e67e22" stroke-width="2.5"/>
+          <text x="165" y="48" text-anchor="middle" font-family="Courier New" font-size="22" font-weight="700" fill="#e67e22">T</text>
+        </svg>
+      </div>
+      <!-- Para C–G -->
+      <div class="pair-card" style="border-color:#2b6cb0;">
+        <div class="pair-title">Para C–G · 3 wiązania</div>
+        <svg viewBox="0 0 200 80" width="200" height="80" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="20" width="50" height="40" rx="8" fill="#e5effa" stroke="#2b6cb0" stroke-width="2.5"/>
+          <text x="35" y="48" text-anchor="middle" font-family="Courier New" font-size="22" font-weight="700" fill="#2b6cb0">C</text>
+          <line x1="64" y1="28" x2="136" y2="28" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4 3"/>
+          <line x1="64" y1="40" x2="136" y2="40" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4 3"/>
+          <line x1="64" y1="52" x2="136" y2="52" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4 3"/>
+          <rect x="140" y="20" width="50" height="40" rx="8" fill="#f2ecfa" stroke="#7c3aed" stroke-width="2.5"/>
+          <text x="165" y="48" text-anchor="middle" font-family="Courier New" font-size="22" font-weight="700" fill="#7c3aed">G</text>
+        </svg>
+      </div>
+    </div>
+    <p style="margin-top:8px;"><strong>Reguła:</strong> A–T (2 wiązania wodorowe) · C–G (3 wiązania wodorowe). Widać to po liczbie przerywanych linii między zasadami.</p>
+  </div>
+
+  <!-- WIZUALIZACJA: puryny vs pirymidyny -->
+  <div class="card card-correct">
+    <span class="card-label">Puryny i pirymidyny — rozmiar ma znaczenie</span>
+    <div class="purin-pirim-wrap">
+      <svg viewBox="0 0 320 130" width="320" height="130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Porównanie rozmiarów puryn i pirymidyn">
+        <!-- Puryna (szeroka) -->
+        <text x="10" y="30" font-family="Segoe UI" font-size="11" font-weight="700" fill="#2d8f5e">PURYNA</text>
+        <rect x="10" y="38" width="140" height="42" rx="8" fill="#e6f6ec" stroke="#2d8f5e" stroke-width="2.5"/>
+        <text x="48" y="66" font-family="Courier New" font-size="20" font-weight="700" fill="#2d8f5e">A</text>
+        <text x="110" y="66" font-family="Courier New" font-size="20" font-weight="700" fill="#7c3aed">G</text>
+        <text x="10" y="100" font-family="Segoe UI" font-size="10" fill="#6b7a8d">dwa pierścienie · większe</text>
+
+        <!-- Pirymidyna (wąska) -->
+        <text x="180" y="30" font-family="Segoe UI" font-size="11" font-weight="700" fill="#b45309">PIRYMIDYNA</text>
+        <rect x="180" y="38" width="70" height="42" rx="8" fill="#fdf1e1" stroke="#e67e22" stroke-width="2.5"/>
+        <text x="200" y="66" font-family="Courier New" font-size="20" font-weight="700" fill="#e67e22">T</text>
+        <text x="232" y="66" font-family="Courier New" font-size="20" font-weight="700" fill="#2b6cb0">C</text>
+        <text x="180" y="100" font-family="Segoe UI" font-size="10" fill="#6b7a8d">jeden pierścień · mniejsze</text>
+
+        <!-- Przykład dopasowania -->
+        <text x="10" y="122" font-family="Segoe UI" font-size="11" fill="#334155">Para prawidłowa: duża + mała → stała szerokość helisy</text>
+      </svg>
+    </div>
+    <p style="font-size:0.85rem;color:var(--color-text-muted);">„Puryna + pirymidyna" wyjaśnia <strong>stałą szerokość helisy</strong>, ale o dokładnym partnerze decyduje także <strong>chemiczne rozmieszczenie miejsc wiązania</strong>.</p>
+
+    <p><strong>Dlaczego występują właśnie takie pary?</strong></p>
+    <ol>
+      <li><strong>Wielkość zasad:</strong> A i G to puryny (większe), T i C to pirymidyny (mniejsze). Para „duża + mała" zachowuje stałą szerokość helisy.</li>
+      <li><strong>Układ miejsc wiązania:</strong> nie każda duża pasuje do każdej małej. Adenina pasuje do tyminy, cytozyna do guaniny.</li>
+      <li><strong>Wynik:</strong> A–T tworzy 2 wiązania wodorowe, C–G tworzy 3.</li>
+    </ol>
+  </div>
+
+  <h3>5.4. Podwójna helisa — struktura</h3>
+
+  <!-- WIZUALIZACJA: drabina DNA (SVG) -->
+  <div class="card card-new" id="drabina">
+    <span class="card-label">Najpierw drabina, potem helisa</span>
+    <p>Zanim wyobrazisz sobie skręconą helisę, zobacz <strong>prostą drabinę</strong>. Tak łatwiej zrozumieć parowanie:</p>
+    <div class="diagram" style="background:#fff;">
+      <svg viewBox="0 0 460 280" width="460" height="280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Drabina DNA">
+        <!-- Szkielet lewy -->
+        <line x1="60" y1="30" x2="60" y2="250" stroke="#334155" stroke-width="5"/>
+        <!-- Szkielet prawy -->
+        <line x1="400" y1="30" x2="400" y2="250" stroke="#334155" stroke-width="5"/>
+
+        <!-- Oznaczenia 5' 3' góra -->
+        <text x="42" y="22" font-family="Courier New" font-size="13" font-weight="700" fill="#334155">5'</text>
+        <text x="400" y="22" font-family="Courier New" font-size="13" font-weight="700" fill="#334155">3'</text>
+
+        <!-- Oznaczenia 3' 5' dół -->
+        <text x="42" y="272" font-family="Courier New" font-size="13" font-weight="700" fill="#334155">3'</text>
+        <text x="400" y="272" font-family="Courier New" font-size="13" font-weight="700" fill="#334155">5'</text>
+
+        <!-- Rząd 1: A–T (2 wiązania) -->
+        <rect x="80" y="42" width="40" height="34" rx="6" fill="#e6f6ec" stroke="#2d8f5e" stroke-width="2"/>
+        <text x="100" y="66" text-anchor="middle" font-family="Courier New" font-size="18" font-weight="700" fill="#2d8f5e">A</text>
+        <line x1="124" y1="53" x2="336" y2="53" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <line x1="124" y1="65" x2="336" y2="65" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <rect x="340" y="42" width="40" height="34" rx="6" fill="#fdf1e1" stroke="#e67e22" stroke-width="2"/>
+        <text x="360" y="66" text-anchor="middle" font-family="Courier New" font-size="18" font-weight="700" fill="#e67e22">T</text>
+
+        <!-- Rząd 2: C–G (3 wiązania) -->
+        <rect x="80" y="94" width="40" height="34" rx="6" fill="#e5effa" stroke="#2b6cb0" stroke-width="2"/>
+        <text x="100" y="118" text-anchor="middle" font-family="Courier New" font-size="18" font-weight="700" fill="#2b6cb0">C</text>
+        <line x1="124" y1="101" x2="336" y2="101" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <line x1="124" y1="111" x2="336" y2="111" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <line x1="124" y1="121" x2="336" y2="121" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <rect x="340" y="94" width="40" height="34" rx="6" fill="#f2ecfa" stroke="#7c3aed" stroke-width="2"/>
+        <text x="360" y="118" text-anchor="middle" font-family="Courier New" font-size="18" font-weight="700" fill="#7c3aed">G</text>
+
+        <!-- Rząd 3: G–C (3 wiązania) -->
+        <rect x="80" y="146" width="40" height="34" rx="6" fill="#f2ecfa" stroke="#7c3aed" stroke-width="2"/>
+        <text x="100" y="170" text-anchor="middle" font-family="Courier New" font-size="18" font-weight="700" fill="#7c3aed">G</text>
+        <line x1="124" y1="153" x2="336" y2="153" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <line x1="124" y1="163" x2="336" y2="163" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <line x1="124" y1="173" x2="336" y2="173" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <rect x="340" y="146" width="40" height="34" rx="6" fill="#e5effa" stroke="#2b6cb0" stroke-width="2"/>
+        <text x="360" y="170" text-anchor="middle" font-family="Courier New" font-size="18" font-weight="700" fill="#2b6cb0">C</text>
+
+        <!-- Rząd 4: T–A (2 wiązania) -->
+        <rect x="80" y="198" width="40" height="34" rx="6" fill="#fdf1e1" stroke="#e67e22" stroke-width="2"/>
+        <text x="100" y="222" text-anchor="middle" font-family="Courier New" font-size="18" font-weight="700" fill="#e67e22">T</text>
+        <line x1="124" y1="209" x2="336" y2="209" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <line x1="124" y1="221" x2="336" y2="221" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <rect x="340" y="198" width="40" height="34" rx="6" fill="#e6f6ec" stroke="#2d8f5e" stroke-width="2"/>
+        <text x="360" y="222" text-anchor="middle" font-family="Courier New" font-size="18" font-weight="700" fill="#2d8f5e">A</text>
+      </svg>
+      <div class="caption">Boki = szkielet cukrowo-fosforanowy (szary) · szczeble = pary zasad (kolorowe) · przerywane linie = wiązania wodorowe</div>
+    </div>
+    <p>Najpierw wyobraź sobie DNA jako <strong>drabinę</strong>: boki tworzą szkielety cukrowo-fosforanowe, a szczeble — pary zasad. Dopiero potem „skręć" drabinę w helisę.</p>
+  </div>
+
+  <!-- WIZUALIZACJA: helisa SVG -->
+  <div class="card card-new" id="helisa">
+    <span class="card-label">Teraz skręcona helisa</span>
+    <div class="diagram" style="background:#fff;">
+      <svg viewBox="0 0 400 320" width="400" height="320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Podwójna helisa DNA">
+        <!-- Nić 1 - niebieska, biegnie z lewej do prawej sinusoidalnie -->
+        <path d="M 80 20 Q 200 80 320 140 Q 200 200 80 260 Q 200 320 320 380" fill="none" stroke="#2b6cb0" stroke-width="4"/>
+        <!-- Nić 2 - fioletowa, biegnie w przeciwfazie -->
+        <path d="M 320 20 Q 200 80 80 140 Q 200 200 320 260 Q 200 320 80 380" fill="none" stroke="#7c3aed" stroke-width="4"/>
+
+        <!-- Szczeble (pary) na przecięciach -->
+        <!-- y=80: nici blisko siebie -->
+        <line x1="160" y1="80" x2="240" y2="80" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <line x1="160" y1="90" x2="240" y2="90" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <circle cx="160" cy="80" r="3" fill="#2d8f5e"/>
+        <circle cx="240" cy="80" r="3" fill="#e67e22"/>
+
+        <!-- y=140: nici daleko, ale zbierają się ku środkowi -->
+        <line x1="120" y1="150" x2="280" y2="150" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <line x1="120" y1="160" x2="280" y2="160" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <line x1="120" y1="170" x2="280" y2="170" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <circle cx="120" cy="160" r="3" fill="#2b6cb0"/>
+        <circle cx="280" cy="160" r="3" fill="#7c3aed"/>
+
+        <!-- y=210 -->
+        <line x1="160" y1="220" x2="240" y2="220" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <line x1="160" y1="230" x2="240" y2="230" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <circle cx="160" cy="225" r="3" fill="#e67e22"/>
+        <circle cx="240" cy="225" r="3" fill="#2d8f5e"/>
+
+        <!-- y=280 -->
+        <line x1="120" y1="285" x2="280" y2="285" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <line x1="120" y1="295" x2="280" y2="295" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <line x1="120" y1="305" x2="280" y2="305" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="4 3"/>
+        <circle cx="120" cy="295" r="3" fill="#7c3aed"/>
+        <circle cx="280" cy="295" r="3" fill="#2b6cb0"/>
+
+        <!-- Etykiety kierunków -->
+        <text x="60" y="24" font-family="Courier New" font-size="12" font-weight="700" fill="#2b6cb0">5'</text>
+        <text x="330" y="24" font-family="Courier New" font-size="12" font-weight="700" fill="#7c3aed">3'</text>
+        <text x="60" y="316" font-family="Courier New" font-size="12" font-weight="700" fill="#2b6cb0">3'</text>
+        <text x="330" y="316" font-family="Courier New" font-size="12" font-weight="700" fill="#7c3aed">5'</text>
+      </svg>
+      <div class="caption">Dwie nici owinięte wokół wspólnej osi · zasady wewnątrz, szkielet na zewnątrz</div>
+    </div>
+    <ul>
+      <li><strong>Dwie nici</strong> owinięte wokół wspólnej osi (jak skręcona drabina).</li>
+      <li>Nici są <strong>antyrównoległe</strong>: jedna biegnie 5'→3', druga 3'→5'. <span class="level-badge level-ambitious">ZAAWANSOWANY</span></li>
+      <li><strong>Szkielet cukrowo-fosforanowy</strong> na zewnątrz, <strong>zasady wewnątrz</strong>.</li>
+      <li><strong>Średnica helisy</strong> ≈ 2 nm. <span class="level-badge level-ambitious">ZAAWANSOWANY</span></li>
+    </ul>
+  </div>
+
+  <h3>5.5. Gdzie jest informacja?</h3>
+  <div class="card card-warning">
+    <span class="card-label">Kluczowa myśl</span>
+    <p><strong>Informacja jest w KOLEJNOŚCI zasad</strong>, nie w pojedynczej literze ani nie w „kształcie helisy".</p>
+
+    <!-- WIZUALIZACJA: porównanie sekwencji -->
+    <div class="seq-compare">
+      <div>
+        <div class="seq-row">
+          <div class="seq-label">Sekwencja 1:</div>
+          <div class="seq-cell" style="background:#e6f6ec;color:#2d8f5e;border-color:#2d8f5e;">A</div>
+          <div class="seq-cell" style="background:#fdf1e1;color:#e67e22;border-color:#e67e22;">T</div>
+          <div class="seq-cell" style="background:#f2ecfa;color:#7c3aed;border-color:#7c3aed;">G</div>
+          <div class="seq-cell diff" style="background:#e5effa;color:#2b6cb0;border-color:#dc3545;">C</div>
+          <div class="seq-cell" style="background:#e5effa;color:#2b6cb0;border-color:#2b6cb0;">C</div>
+        </div>
+        <div class="seq-row" style="margin-top:10px;">
+          <div class="seq-label">Sekwencja 2:</div>
+          <div class="seq-cell" style="background:#e6f6ec;color:#2d8f5e;border-color:#2d8f5e;">A</div>
+          <div class="seq-cell" style="background:#fdf1e1;color:#e67e22;border-color:#e67e22;">T</div>
+          <div class="seq-cell" style="background:#f2ecfa;color:#7c3aed;border-color:#7c3aed;">G</div>
+          <div class="seq-cell diff" style="background:#f2ecfa;color:#7c3aed;border-color:#dc3545;">G</div>
+          <div class="seq-cell" style="background:#e5effa;color:#2b6cb0;border-color:#2b6cb0;">C</div>
+        </div>
+        <div class="seq-arrow">↑ zmieniła się jedna pozycja</div>
+      </div>
+    </div>
+
+    <p>Obie sekwencje mają tyle samo liter i prawie identyczny zapis. Mimo to <strong>różnią się informacją</strong>, ponieważ na czwartej pozycji występuje inna zasada. W biologii taka zmiana w sekwencji <strong>może, ale nie zawsze musi</strong>, wpłynąć na produkt genu i cechę.</p>
+    <p><strong>Analogia:</strong> „kot" ≠ „tok" — te same litery, inna kolejność, inne słowo.</p>
+  </div>
+
+  <h3>5.6. Mnemotechniki</h3>
+  <div class="card card-hint">
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Mnemotechnika</th><th>Znaczenie</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td><strong>A–T, C–G</strong></td><td>pary zasad</td></tr>
+          <tr><td>2</td><td><strong>Deoksyryboza = DNA</strong></td><td>cukier (deoksy- = bez tlenu)</td></tr>
+          <tr><td>3</td><td><strong>Kolejność = informacja</strong></td><td>nie pojedyncza litera</td></tr>
+          <tr><td>4</td><td><strong>Dwie nici = helisa</strong></td><td>struktura + wierność kopii</td></tr>
+          <tr><td>5</td><td><strong>Puryna + pirymidyna</strong></td><td>stała szerokość helisy</td></tr>
+          <tr><td>6</td><td><strong>T w DNA, U w RNA</strong></td><td>nie mylić</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h3>5.7. Tabela zbiorcza — DNA vs RNA</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Cecha</th><th>DNA</th><th>RNA</th></tr></thead>
+      <tbody>
+        <tr><td>Pełna nazwa</td><td>kwas deoksyrybonukleinowy</td><td>kwas rybonukleinowy</td></tr>
+        <tr><td>Cukier</td><td>deoksyryboza</td><td>ryboza</td></tr>
+        <tr><td>Zasady</td><td>A, T, C, G</td><td>A, U, C, G</td></tr>
+        <tr><td>Struktura</td><td>dwie nici (helisa)</td><td>zwykle jedna nić</td></tr>
+        <tr><td>Rola główna</td><td>przechowywanie informacji</td><td>odczyt / przekazywanie</td></tr>
+        <tr><td>Lokalizacja</td><td>jądro (głównie)</td><td>jądro i cytoplazma</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="card card-hint" style="margin-top:10px">
+    <span class="card-label">Dlaczego DNA ma T, a RNA ma U?</span>
+    <p>Tymina i uracyl mogą łączyć się z adeniną. DNA wykorzystuje <strong>tyminę</strong>, a RNA — <strong>uracyl</strong>. Tymina jest chemicznie zmodyfikowanym uracylem; jej obecność w DNA pomaga komórkom łatwiej rozpoznawać i naprawiać pewne uszkodzenia zasad. Reguła szkolna: <strong>DNA ma T, RNA ma U</strong>.</p>
+  </div>
+
+  <h3 id="dna-6-zdan">5.8. DNA w 6 zdaniach (bezpieczny punkt powrotu)</h3>
+  <div class="card card-new">
+    <ol>
+      <li>DNA to kwas nukleinowy, który przechowuje informację genetyczną.</li>
+      <li>Jest zbudowany z nukleotydów: deoksyrybozy, reszty fosforanowej i zasady azotowej.</li>
+      <li>W DNA występują cztery zasady: A, T, C i G.</li>
+      <li>W dwuniciowym DNA A łączy się z T, a C z G.</li>
+      <li>Informacja zależy przede wszystkim od kolejności zasad (sekwencji).</li>
+      <li>Gen jest odcinkiem DNA; jego informacja może prowadzić do powstania RNA lub białka.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= 6. WYJAŚNIENIE ================= -->
+<section class="section" id="wyjasnienie">
+  <div class="part-heading"><span class="part-num">6. Wyjaśnienie od podstaw</span></div>
+
+  <h3>6.1. Po co w ogóle helisa?</h3>
+  <div class="card card-new">
+    <p>Wyobraź sobie <strong>zamek błyskawiczny</strong>. Ma dwie części, które do siebie pasują — jeśli rozsuniesz zamek, każda część może posłużyć jako „wzór" do odtworzenia drugiej.</p>
+    <p><strong>DNA działa podobnie:</strong> ma dwie komplementarne nici, każda może być <strong>matrycą</strong> dla drugiej. Dzięki temu kopiowanie (replikacja) jest wierne.</p>
+    <p>To jest <strong>cała logika</strong> podwójnej helisy: <strong>struktura umożliwia funkcję</strong>.</p>
+  </div>
+
+  <h3>6.2. Łańcuch budowy</h3>
+  <div class="card card-gray">
+    <pre class="flow">NUKLEOTYD (cukier + fosforan + zasada)
+    ↓
+NIĆ DNA (nukleotydy połączone w łańcuch)
+    ↓
+DWIE NICI (komplementarne, owinięte wokół siebie)
+    ↓
+PODWÓJNA HELISA</pre>
+  </div>
+
+  <h3>6.3. Skąd informacja?</h3>
+  <div class="card card-hint">
+    <p>Weźmy dwa odcinki DNA:</p>
+    <ul>
+      <li>Odcinek 1: <code>ATG<span class="b-C">C</span>C</code></li>
+      <li>Odcinek 2: <code>ATG<span class="b-G">G</span>C</code></li>
+    </ul>
+    <p><strong>Różnica:</strong> pozycja 4. <strong>Skutek:</strong> te odcinki niosą inną informację. Kolejność zasad decyduje o tym, jakie białko powstanie.</p>
+  </div>
+
+  <h3>6.4. Od DNA do cechy — dwa procesy</h3>
+  <div class="card card-correct">
+    <ul>
+      <li><strong>Replikacja</strong> = kopiowanie DNA — L013.</li>
+      <li><strong>Ekspresja</strong> = odczyt informacji (DNA → RNA → białko) — sekcja 7 i L014.</li>
+    </ul>
+    <p>DNA <strong>przechowuje</strong>; ekspresja <strong>czyta</strong>.</p>
+  </div>
+
+  <h3>6.5. 6A. Dlaczego?</h3>
+  <div class="card card-hint">
+    <ol>
+      <li><strong>Dlaczego A z T, a nie z C?</strong> Stała szerokość helisy (puryna + pirymidyna) + chemiczny układ miejsc wiązania.</li>
+      <li><strong>Dlaczego komplementarność kluczowa?</strong> Umożliwia wierne kopiowanie i odczyt.</li>
+      <li><strong>Dlaczego informacja w kolejności?</strong> Bo kolejność zasad określa kolejność aminokwasów w białku.</li>
+      <li><strong>Dlaczego dwie nici?</strong> Stabilizacja, naprawa, wierne kopiowanie.</li>
+    </ol>
+  </div>
+
+  <h3>6.6. 6B. Krok po kroku — uzupełnianie nici</h3>
+  <div class="card card-correct">
+    <ol>
+      <li><strong>Weź sekwencję</strong> (np. A–G–T–C).</li>
+      <li><strong>Dopisz partnera:</strong> A → T, T → A, G → C, C → G.</li>
+      <li><strong>Wynik:</strong> T–C–A–G.</li>
+      <li><strong>Sprawdź:</strong> każda para to puryna + pirymidyna? (tak).</li>
+    </ol>
+    <p><strong>Uwaga:</strong> W DNA nie ma U. Jeśli widzisz U, to RNA (L014).</p>
+  </div>
+
+  <!-- WIZUALIZACJA: trener z widocznymi wiązaniami -->
+  <h3 id="trener">6.7. Trener komplementarności — ułóż drugą nić</h3>
+  <div class="trainer">
+    <div class="tr-title">Ułóż drugą nić DNA</div>
+    <p class="tr-info">Kliknij literę, która pasuje do zasady z górnej nici. Między parami pojawią się widoczne wiązania wodorowe.</p>
+    <div class="tr-line" id="tr-top"></div>
+    <div class="tr-bond-row" id="tr-bonds"></div>
+    <div class="tr-line" id="tr-bottom"></div>
+    <div class="tr-buttons">
+      <button class="b-A" onclick="trainerAnswer('A')">A</button>
+      <button class="b-T" onclick="trainerAnswer('T')">T</button>
+      <button class="b-C" onclick="trainerAnswer('C')">C</button>
+      <button class="b-G" onclick="trainerAnswer('G')">G</button>
+    </div>
+    <button class="btn btn-primary btn-sm" onclick="trainerNew()">Nowa sekwencja</button>
+    <button class="btn btn-sm" onclick="trainerToggleRNA()" id="tr-mode-btn">Tryb: DNA→DNA</button>
+    <div class="tr-result" id="tr-result"></div>
+  </div>
+
+  <h3>6.8. 6C. Przykład prowadzony</h3>
+  <div class="card card-correct">
+    <p><strong>Matryca:</strong> <code>5'– A T G C C A –3'</code><br>
+    <strong>Nić komplementarna:</strong> <code>3'– T A C G G T –5'</code></p>
+    <p>Wszystkie pary poprawne. Po replikacji: 2 cząsteczki, każda = stara + nowa nić (semikonserwatywność — L013).</p>
+  </div>
+
+  <h3>6.9. 6D. Powiązanie z innymi lekcjami</h3>
+  <div class="card card-gray">
+    <pre class="flow">L011 (DNA — przechowywanie)
+  → L012 (chromosom)
+  → L013 (replikacja)
+  → L014 (RNA, transkrypcja)
+  → L017 (dziedziczenie)
+  → L020 (mutacje)</pre>
+  </div>
+</section>
+
+<!-- ================= 7. CENTRALNY DOGMAT ================= -->
+<section class="section" id="dogmat">
+  <div class="part-heading"><span class="part-num">7. Centralny dogmat i ekspresja genu</span> <span class="level-badge level-ambitious">MASTER — rozszerzenie</span></div>
+
+  <details class="bridge" open>
+    <summary>MASTER: Co dzieje się z informacją zapisaną w DNA? (most do L014)</summary>
+
+    <div class="card card-ambitious">
+      <p>Ta część <strong>nie jest konieczna</strong> do zrozumienia budowy DNA. Czytaj po opanowaniu sekcji 5–6 albo jako przygotowanie do L014.</p>
+    </div>
+
+    <h3>7.1. Problem: skoro DNA jest w jądrze, jak informacja dociera do cytoplazmy?</h3>
+    <div class="card card-ambitious">
+      <p><strong>Odpowiedź:</strong> przez <strong>RNA</strong> — cząsteczkę pośrednią, która jest kopią roboczą DNA.</p>
+      <p>W typowej komórce eukariotycznej <strong>DNA jądrowe pozostaje w jądrze</strong>. Gdy komórka potrzebuje informacji z genu, wytwarza roboczą cząsteczkę <strong>RNA</strong>, która może przejść do cytoplazmy.</p>
+      <pre class="flow">DNA --(transkrypcja)--> RNA --(translacja)--> BIAŁKO</pre>
+      <div class="diagram" style="background:#fff;">
+        <svg viewBox="0 0 400 300" width="400" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Przepływ informacji">
+          <rect x="100" y="10" width="200" height="40" rx="8" fill="#e5effa" stroke="#2b6cb0" stroke-width="2"/>
+          <text x="200" y="35" text-anchor="middle" font-family="Segoe UI" font-size="14" font-weight="700" fill="#1e4a7a">GEN w DNA</text>
+          <line x1="200" y1="50" x2="200" y2="80" stroke="#334155" stroke-width="2"/>
+          <polygon points="195,78 205,78 200,88" fill="#334155"/>
+          <text x="215" y="70" font-family="Segoe UI" font-size="11" fill="#334155">transkrypcja</text>
+
+          <rect x="120" y="90" width="160" height="40" rx="8" fill="#e6f6ec" stroke="#2d8f5e" stroke-width="2"/>
+          <text x="200" y="115" text-anchor="middle" font-family="Segoe UI" font-size="14" font-weight="700" fill="#14532d">mRNA</text>
+          <line x1="200" y1="130" x2="200" y2="160" stroke="#334155" stroke-width="2"/>
+          <polygon points="195,158 205,158 200,168" fill="#334155"/>
+          <text x="215" y="150" font-family="Segoe UI" font-size="11" fill="#334155">translacja</text>
+
+          <rect x="90" y="170" width="220" height="40" rx="8" fill="#fdf1e1" stroke="#e67e22" stroke-width="2"/>
+          <text x="200" y="195" text-anchor="middle" font-family="Segoe UI" font-size="14" font-weight="700" fill="#7a4a0f">łańcuch aminokwasów</text>
+          <line x1="200" y1="210" x2="200" y2="240" stroke="#334155" stroke-width="2"/>
+          <polygon points="195,238 205,238 200,248" fill="#334155"/>
+          <text x="215" y="230" font-family="Segoe UI" font-size="11" fill="#334155">fałdowanie</text>
+
+          <rect x="120" y="250" width="160" height="40" rx="8" fill="#f2ecfa" stroke="#7c3aed" stroke-width="2"/>
+          <text x="200" y="275" text-anchor="middle" font-family="Segoe UI" font-size="14" font-weight="700" fill="#4a2070">białko</text>
+        </svg>
+        <div class="caption">możliwy udział w cesze (+ środowisko + rozwój)</div>
+      </div>
+    </div>
+
+    <h3>7.2. Transkrypcja</h3>
+    <div class="card card-ambitious">
+      <p><strong>Reguła DNA → RNA:</strong> A → U, T → A, G → C, C → G.</p>
+      <p><strong>Przykład:</strong> DNA <code>TAC GCA TGG</code> → mRNA <code>AUG CGU ACC</code>.</p>
+    </div>
+
+    <h3>7.3. Translacja</h3>
+    <div class="card card-ambitious">
+      <p>Kodony (trójki nukleotydów) są odczytywane na rybosomie. Każdy kodon pasuje do antykodonu w tRNA niosącego aminokwas.</p>
+      <p><strong>Przykład:</strong> mRNA <code>AUG CGU ACC</code> → metionina–arginina–treonina.</p>
+      <p style="font-size:0.85rem;color:var(--color-text-muted);">To fragment dobrany do ćwiczenia — w prawdziwej komórce potrzebne są jeszcze sygnały startu i stopu.</p>
+    </div>
+
+    <h3>7.4. Kod genetyczny — cechy</h3>
+    <div class="card card-ambitious">
+      <ul>
+        <li><strong>Trójkowy</strong> — 3 nukleotydy → 1 aminokwas.</li>
+        <li><strong>Zdegenerowany</strong> — wiele kodonów → ten sam aminokwas.</li>
+        <li><strong>Bezprzecinkowy, niezachodzący, uniwersalny.</strong></li>
+      </ul>
+      <p><strong>Szczegóły — L090.</strong></p>
+    </div>
+  </details>
+</section>
+
+<!-- ================= 8. AMBITNY ================= -->
+<section class="section" id="ambitny">
+  <div class="part-heading"><span class="part-num">8. Poziom ambitny</span> <span class="level-badge level-ambitious">MASTER</span></div>
+
+  <h3>8.1. Dlaczego A–T, C–G?</h3>
+  <div class="card card-ambitious">
+    <p>Stała szerokość helisy ≈ 2 nm. Gdyby łączyły się dwie duże zasady — helisa byłaby za szeroka. Dwie małe — za wąska.</p>
+    <p>Ale to tylko warunek konieczny. O konkretnym partnerze decyduje układ chemiczny miejsc wiązania.</p>
+  </div>
+
+  <h3>8.2. DNA vs RNA — porównanie z wyjaśnieniami</h3>
+  <div class="card card-ambitious">
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Cecha</th><th>DNA</th><th>RNA</th><th>Dlaczego różnica ma znaczenie</th></tr></thead>
+        <tbody>
+          <tr><td>Cukier</td><td>deoksyryboza</td><td>ryboza</td><td>Deoksyryboza stabilniejsza — DNA przechowuje długo, RNA działa „na krótko".</td></tr>
+          <tr><td>Zasady</td><td>A, T, C, G</td><td>A, U, C, G</td><td>Tymina i uracyl mogą łączyć się z adeniną; to cecha rozróżniająca.</td></tr>
+          <tr><td>Struktura</td><td>dwie nici</td><td>zwykle jedna nić</td><td>Dwie nici = stabilność. Jedna = elastyczność.</td></tr>
+          <tr><td>Rola</td><td>przechowywanie</td><td>odczyt</td><td>DNA = archiwum; RNA = kopia robocza.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h3>8.3. Gen vs DNA</h3>
+  <div class="card card-ambitious">
+    <ul>
+      <li><strong>DNA</strong> = cała cząsteczka.</li>
+      <li><strong>Gen</strong> = odcinek DNA z informacją o produkcie (RNA/białku).</li>
+      <li><strong>Allel</strong> = wersja genu.</li>
+    </ul>
+    <p><strong>Chromosom</strong> to silnie upakowana, długa cząsteczka DNA połączona z białkami. Może zawierać od niewielu do wielu tysięcy genów.</p>
+  </div>
+</section>
+
+<!-- ================= 9. ZAAWANSOWANY ================= -->
+<section class="section" id="zaawansowany">
+  <div class="part-heading"><span class="part-num">9. Poziom zaawansowany</span> <span class="level-badge level-ambitious">ZAAWANSOWANY</span></div>
+
+  <h3>9.1. Wiązania wodorowe</h3>
+  <div class="card card-ambitious">
+    <p>A–T: 2 wiązania. C–G: 3 wiązania. Regiony bogate w C–G są trudniejsze do rozplecenia.</p>
+  </div>
+
+  <h3>9.2. Antyrównoległość nici</h3>
+  <div class="card card-ambitious">
+    <p>Jedna nić 5'→3', druga 3'→5'. Polimeraza DNA może syntetyzować nową nić tylko w kierunku 5'→3' (L013).</p>
+  </div>
+
+  <h3>9.3. mtDNA</h3>
+  <div class="card card-ambitious">
+    <p>Mała kolista cząsteczka (~16 500 par zasad). Dziedziczy się po matce. Mosty: L001 (endosymbioza), L090 (choroby mitochondrialne).</p>
+  </div>
+
+  <h3>9.4. Kod zdegenerowany — przykłady</h3>
+  <div class="card card-ambitious">
+    <p><strong>Cicha:</strong> CGU → CGC (oba arginina). <strong>Missense:</strong> CGU → AGU (arginina → seryna). <strong>Nonsense:</strong> UAC → UAA (tyrozyna → stop).</p>
+  </div>
+</section>
+
+<!-- ================= 10. KLINIKA ================= -->
+<section class="section" id="klinika">
+  <div class="part-heading"><span class="part-num">10. Klinika błędów</span> <span class="level-badge level-trap">PUŁAPKI</span></div>
+
+  <h3>10.1. Tabela błędów</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Błąd</th><th>Poprawa</th><th>Dlaczego?</th></tr></thead>
+      <tbody>
+        <tr><td>DNA jest białkiem</td><td>DNA to kwas nukleinowy</td><td>białka powstają na podstawie DNA</td></tr>
+        <tr><td>A łączy się z C</td><td>A–T, C–G</td><td>komplementarność</td></tr>
+        <tr><td>Nukleotyd = zasada</td><td>cukier + fosforan + zasada</td><td>trzy składniki</td></tr>
+        <tr><td>DNA to jedna nić</td><td>dwie nici</td><td>komplementarność, stabilność</td></tr>
+        <tr><td>DNA = gen</td><td>DNA = cząsteczka; gen = odcinek</td><td>poziomy organizacji</td></tr>
+        <tr><td>Kolejność nie ma znaczenia</td><td>kolejność = informacja</td><td>ATGCC ≠ ATGGC</td></tr>
+        <tr><td>W DNA jest U</td><td>w DNA jest T; U w RNA</td><td>różnica DNA/RNA</td></tr>
+        <tr><td>Helisa = informacja</td><td>informacja w sekwencji</td><td>helisa to struktura</td></tr>
+        <tr><td>Gen decyduje o cesze</td><td>gen współtworzy cechę</td><td>wiele genów + środowisko</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>10.2. Klinika 2.0 — pełne przykłady</h3>
+
+  <div class="card card-error">
+    <span class="card-label">Przykład 1 — „Tymina z guaniną"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Tymina łączy się z guaniną."</li>
+      <li><strong>Popraw:</strong> Tymina z adeniną.</li>
+      <li><strong>Reguła:</strong> A–T, C–G.</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">Przykład 2 — „DNA = gen"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „DNA i gen to to samo."</li>
+      <li><strong>Popraw:</strong> DNA = cała cząsteczka; gen = odcinek.</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">Przykład 3 — „Kolejność bez znaczenia"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Kolejność nie ma znaczenia."</li>
+      <li><strong>Popraw:</strong> <code>ATG<span class="b-C">C</span>C</code> ≠ <code>ATG<span class="b-G">G</span>C</code>.</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">Przykład 4 — „U w DNA"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „W DNA jest uracyl."</li>
+      <li><strong>Popraw:</strong> W DNA jest T; U w RNA.</li>
+    </ul>
+  </div>
+
+  <div class="card card-error">
+    <span class="card-label">Przykład 5 — „Wystarczy znać 4 litery"</span>
+    <ul>
+      <li><strong>Błąd:</strong> „Skoro znam A, T, C, G, to znam całe DNA."</li>
+      <li><strong>Popraw:</strong> Trzeba znać kolejność (sekwencję).</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= 11. OBSERWACJA ================= -->
+<section class="section" id="obserwacja">
+  <div class="part-heading"><span class="part-num">11. Obserwacja / model</span></div>
+  <div class="card card-gray">
+    <pre class="flow">Problem: Jak powstaje nić komplementarna?
+Hipoteza: Każdej zasadzie odpowiada jedna partnerka.
+Materiał: paski z literami A, T, C, G.
+Obserwacja: Każdej zasadzie przypisuje się jednego partnera.
+Wniosek: Komplementarność umożliwia kopiowanie.
+Ograniczenia: papier nie pokazuje wiązań chemicznych.
+BHP: brak.</pre>
+  </div>
+</section>
+
+<!-- ================= 12. ĆWICZENIA ================= -->
+<section class="section" id="cwiczenia">
+  <div class="part-heading"><span class="part-num">12. Ćwiczenia</span> <span class="level-badge level-training">TRENING</span></div>
+
+  <h3>12A. Mini-check</h3>
+  <div class="exercise">
+    <ol>
+      <li>Co to DNA?</li>
+      <li>Z czego składa się nukleotyd?</li>
+      <li>Podaj cztery zasady azotowe DNA.</li>
+      <li>Podaj pary komplementarne.</li>
+      <li>Gdzie w DNA znajduje się informacja genetyczna?</li>
+    </ol>
+    <details class="answer"><summary>Pokaż odpowiedzi</summary>
+      <ol>
+        <li>Kwas deoksyrybonukleinowy — nośnik informacji.</li>
+        <li>Deoksyryboza + reszta fosforanowa + zasada azotowa.</li>
+        <li>A, T, C, G.</li>
+        <li>A–T, C–G.</li>
+        <li>W kolejności zasad (sekwencji).</li>
+      </ol>
+    </details>
+  </div>
+
+  <h3>12B. Ćwiczenie prowadzone</h3>
+  <div class="exercise">
+    <p><strong>Matryca:</strong> <code>A–G–T–C–C–A</code></p>
+    <p><strong>Krok 1.</strong> Dopisz partnera:</p>
+    <ul>
+      <li><span class="b-A">A</span> → <span class="b-T">T</span></li>
+      <li><span class="b-G">G</span> → <span class="b-C">C</span></li>
+      <li><span class="b-T">T</span> → <span class="b-A">A</span></li>
+      <li><span class="b-C">C</span> → <span class="b-G">G</span></li>
+      <li><span class="b-C">C</span> → <span class="b-G">G</span></li>
+      <li><span class="b-A">A</span> → <span class="b-T">T</span></li>
+    </ul>
+    <p><strong>Wynik:</strong> <code>T–C–A–G–G–T</code>.</p>
+    <p><strong>Spróbuj sam:</strong> matryca <code>G–A–T–C</code> → ?</p>
+  </div>
+
+  <h3>12C. Ćwiczenia samodzielne</h3>
+  <h4>A. Podstawa</h4>
+  <div class="exercise">
+    <ol>
+      <li>Co to DNA?</li>
+      <li>Z czego nukleotyd?</li>
+      <li>Podaj zasady i pary.</li>
+      <li>Gdzie jest informacja?</li>
+    </ol>
+  </div>
+
+  <h4>B. Trening</h4>
+  <div class="exercise">
+    <ol start="5">
+      <li>Uzupełnij nić: <code>A–G–T–C</code>.</li>
+      <li>Popraw: „Tymina łączy się z guaniną".</li>
+      <li>Popraw: „DNA jest białkiem".</li>
+    </ol>
+  </div>
+
+  <h4>C. Ambitne</h4>
+  <div class="exercise">
+    <ol start="8">
+      <li>Dlaczego komplementarność jest kluczowa?</li>
+      <li>Czym różni się gen od DNA?</li>
+      <li>Dlaczego rodzeństwo nie jest genetycznie identyczne?</li>
+    </ol>
+  </div>
+
+  <h4>D. Zaawansowane</h4>
+  <div class="exercise">
+    <ol start="11">
+      <li>DNA vs RNA — 3 różnice.</li>
+      <li>Dlaczego C–G trwalsze?</li>
+      <li>Dlaczego zmiana jednej zasady może nie zmienić fenotypu?</li>
+      <li>Sekwencja <code>TAC GCA TGG</code> → mRNA?</li>
+    </ol>
+  </div>
+
+  <h4>E. Wybierz i uzasadnij <span class="level-badge level-ambitious">MASTER</span></h4>
+  <div class="exercise">
+    <ol>
+      <li>Który zapis to prawidłowy fragment dwuniciowego DNA? A. A–U i C–G · B. A–T i C–G · C. A–C i G–T · D. A–G i T–C</li>
+      <li>„W DNA informację przechowuje helisa" — co prawda, co poprawić?</li>
+      <li>[MASTER] W próbce jest 24% adeniny. Ile tyminy? Ile łącznie C+G?</li>
+      <li>Nici <code>5'–ACGTT–3'</code> → nić komplementarna z kierunkiem?</li>
+      <li>Czy <code>AUGCCU</code> to DNA czy RNA? Dwa argumenty.</li>
+    </ol>
+    <details class="answer"><summary>Pokaż odpowiedzi</summary>
+      <ol>
+        <li><strong>B</strong> — A–T i C–G.</li>
+        <li>Prawda: helisa istnieje. Poprawa: informacja jest w kolejności zasad.</li>
+        <li>T = 24%; C+G = 52% (C=26%, G=26%).</li>
+        <li><code>3'–TGCAA–5'</code>.</li>
+        <li>RNA — ma uracyl (U).</li>
+      </ol>
+    </details>
+  </div>
+
+  <h3>12D. PROBLEM / THINK</h3>
+  <div class="exercise">
+    <ol>
+      <li>Jedna nić <code>ATGCC</code> — druga? Starsza?</li>
+      <li>Czy <code>ATG<span class="b-C">C</span>C</code> i <code>ATG<span class="b-G">G</span>C</code> niosą tę samą informację?</li>
+      <li>Czy DNA z trzema zasadami wystarczyłoby?</li>
+    </ol>
+    <details class="answer"><summary>Pokaż odpowiedzi</summary>
+      <ol>
+        <li><code>TACGG</code> — obie równoważne.</li>
+        <li>Nie.</li>
+        <li>Tak, ale ok. 17× mniej kombinacji (3¹⁰ vs 4¹⁰).</li>
+      </ol>
+    </details>
+  </div>
+</section>
+
+<!-- ================= 13. ODPOWIEDZI ================= -->
+<section class="section" id="odpowiedzi">
+  <div class="part-heading"><span class="part-num">13. Odpowiedzi</span></div>
+  <p><strong>12A:</strong> 1. kwas deoksyrybonukleinowy · 2. cukier + fosforan + zasada · 3. A, T, C, G · 4. A–T, C–G · 5. w kolejności zasad.</p>
+  <p><strong>12B:</strong> <code>G–A–T–C</code> → <code>C–T–A–G</code>.</p>
+  <p><strong>12C:</strong> patrz wyżej.</p>
+  <div class="card card-correct">
+    <p><strong>Pełna odpowiedź (wzór):</strong> „Komplementarność umożliwia wierne kopiowanie DNA, ponieważ każda zasada ma określonego partnera: A łączy się z T, C z G. Gdy nici DNA się rozdzielą, kolejność zasad jednej nici wskazuje, jakie zasady dołączyć do drugiej."</p>
+  </div>
+</section>
+
+<!-- ================= 14. FISZKI ================= -->
+<section class="section" id="fiszki">
+  <div class="part-heading"><span class="part-num">14. Fiszki</span></div>
+  <div class="flashcard-grid">
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">DNA</span><span class="back"><strong>Kwas deoksyrybonukleinowy</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Nukleotyd</span><span class="back"><strong>Cukier + fosforan + zasada</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Zasady DNA</span><span class="back"><strong>A, T, C, G</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Pary</span><span class="back"><strong>A–T, C–G</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Gdzie informacja?</span><span class="back"><strong>W kolejności zasad</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Gen vs DNA</span><span class="back"><strong>Gen = odcinek DNA</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Puryna + pirymidyna</span><span class="back"><strong>Stała szerokość helisy</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">A–T vs C–G</span><span class="back"><strong>2 vs 3 wiązania</strong></span><span class="card-tag tag-ambitious">ambitny</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">RNA — różnica</span><span class="back"><strong>Ryboza, U zamiast T, jedna nić</strong></span><span class="card-tag tag-basic">podstawa</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Transkrypcja</span><span class="back"><strong>DNA → RNA</strong></span><span class="card-tag tag-ambitious">ambitny</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Translacja</span><span class="back"><strong>RNA → białko</strong></span><span class="card-tag tag-ambitious">ambitny</span></button>
+    <button class="flashcard" onclick="toggleFlashcard(this)"><span class="front">Kod zdegenerowany</span><span class="back"><strong>Wiele kodonów → ten sam aminokwas</strong></span><span class="card-tag tag-ambitious">ambitny</span></button>
+  </div>
+</section>
+
+<!-- ================= 15. TEST ================= -->
+<section class="section" id="test">
+  <div class="part-heading"><span class="part-num">15. Test końcowy (3+2+2+1)</span></div>
+  <div class="exercise">
+    <ol>
+      <li>(P) Co to DNA?</li>
+      <li>(P) Z czego nukleotyd?</li>
+      <li>(P) Pary zasad?</li>
+      <li>(T) Uzupełnij: <code>G–A–T–C</code>.</li>
+      <li>(T) Popraw: „DNA jest białkiem".</li>
+      <li>(A) Dlaczego komplementarność jest kluczowa?</li>
+      <li>(A) Czym różni się gen od DNA?</li>
+      <li>(Z) Dlaczego zmiana jednej zasady może nie zmienić fenotypu?</li>
+    </ol>
+    <details class="answer"><summary>Pokaż odpowiedzi</summary>
+      <ol>
+        <li>Kwas deoksyrybonukleinowy.</li>
+        <li>Cukier + fosforan + zasada.</li>
+        <li>A–T, C–G.</li>
+        <li><code>C–T–A–G</code>.</li>
+        <li>DNA to kwas nukleinowy.</li>
+        <li>Umożliwia wierne kopiowanie i odczyt.</li>
+        <li>DNA = cząsteczka; gen = odcinek.</li>
+        <li>Kod zdegenerowany.</li>
+      </ol>
+    </details>
+  </div>
+</section>
+
+<!-- ================= 16. CHECKLISTA ================= -->
+<section class="section" id="checklista">
+  <div class="part-heading"><span class="part-num">16. Checklista</span></div>
+  <div class="card card-correct">
+    <ul style="list-style:none;padding-left:0;">
+      <li>☐ Wiem, czym jest DNA.</li>
+      <li>☐ Znam budowę nukleotydu.</li>
+      <li>☐ Znam A, T, C, G i pary A–T, C–G.</li>
+      <li>☐ Rozumiem, że kolejność = informacja.</li>
+      <li>☐ Umiem uzupełnić nić komplementarną.</li>
+      <li>☐ Odróżniam DNA od genu.</li>
+      <li>☐ Umiem przepisać DNA na mRNA.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= 17. MAPA ================= -->
+<section class="section" id="mapa">
+  <div class="part-heading"><span class="part-num">17. Mapa pojęć</span></div>
+  <div class="diagram">
+    <pre class="flow" style="text-align:left;background:#f1f5f9;color:#0a2540;border:1px solid var(--color-border);">DNA
+├── nukleotyd (cukier + fosforan + zasada)
+├── pary: A–T (2) · C–G (3)
+├── podwójna helisa (antyrównoległa)
+├── informacja = kolejność zasad
+├── gen (odcinek) → RNA → białko → cecha
+└── replikacja (L013) / ekspresja (L014)</pre>
+  </div>
+</section>
+
+<!-- ================= 18. CO DALEJ ================= -->
+<section class="section" id="dalej">
+  <div class="part-heading"><span class="part-num">18. Co dalej?</span></div>
+  <div class="card card-hint">
+    <p><strong>Następna lekcja:</strong> L012 — chromosom, kariotyp.</p>
+    <p><strong>Mosty:</strong></p>
+    <ul>
+      <li>L012 — upakowanie DNA → chromosom.</li>
+      <li>L013 — replikacja korzysta z A–T, C–G.</li>
+      <li>L014 — transkrypcja (DNA → RNA).</li>
+      <li>L017 — gen = odcinek DNA.</li>
+      <li>L020 — mutacje = zmiany sekwencji.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= 19. SŁOWNIK ================= -->
+<section class="section" id="slownik">
+  <div class="part-heading"><span class="part-num">19. Słownik</span></div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Termin</th><th>Definicja</th></tr></thead>
+      <tbody>
+        <tr><td>DNA</td><td>Kwas deoksyrybonukleinowy — nośnik informacji</td></tr>
+        <tr><td>Nukleotyd</td><td>Cukier + fosforan + zasada</td></tr>
+        <tr><td>Puryna</td><td>Duża zasada (A, G)</td></tr>
+        <tr><td>Pirymidyna</td><td>Mała zasada (T, C, U)</td></tr>
+        <tr><td>Komplementarność</td><td>Reguła A–T, C–G</td></tr>
+        <tr><td>Podwójna helisa</td><td>Dwie komplementarne nici</td></tr>
+        <tr><td>Gen</td><td>Odcinek DNA z informacją o produkcie (RNA lub pośrednio białku)</td></tr>
+        <tr><td>Allel</td><td>Wersja genu</td></tr>
+        <tr><td>Kodon</td><td>Trójka nukleotydów kodująca aminokwas</td></tr>
+        <tr><td>Kod zdegenerowany</td><td>Wiele kodonów → ten sam aminokwas</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="card card-hint">
+    <p><strong>Nie każdy gen koduje białko.</strong> Część genów zawiera informację o RNA, które samo pełni funkcję (np. tRNA, rRNA).</p>
+  </div>
+</section>
+
+<!-- ================= 20. DODATEK ================= -->
+<section class="section" id="dodatek">
+  <div class="part-heading"><span class="part-num">20. Dodatek</span> <span class="level-badge level-ambitious">ZAAWANSOWANY</span></div>
+  <div class="card card-ambitious">
+    <p><strong>Hershey i Chase (1952):</strong> potwierdzili, że DNA (a nie białko) jest materiałem genetycznym.</p>
+    <p><strong>Wymiary:</strong> średnica helisy ≈ 2 nm, skręt ≈ 3,4 nm (10 par), długość w komórce ≈ 2 m.</p>
+    <p><strong>Rodzaje RNA:</strong> mRNA (kopia robocza), tRNA (transport aminokwasów), rRNA (budulec rybosomów).</p>
+  </div>
+</section>
+
+<!-- ================= 21. POŁĄCZENIA ================= -->
+<section class="section" id="polaczenia">
+  <div class="part-heading"><span class="part-num">21. Połączenia międzyprzedmiotowe</span></div>
+  <div class="card card-gray">
+    <ul>
+      <li><strong>Chemia:</strong> kwasy nukleinowe, wiązania wodorowe.</li>
+      <li><strong>Matematyka:</strong> kombinatoryka (4ⁿ).</li>
+      <li><strong>Informatyka:</strong> kod binarny vs kod czteroliterowy.</li>
+      <li><strong>Język polski:</strong> kod jako sekwencja znaków.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= 22. Z ŻYCIA ================= -->
+<section class="section" id="zycie">
+  <div class="part-heading"><span class="part-num">22. Z życia</span></div>
+
+  <div class="exercise">
+    <p><strong>1. Dlaczego DNA nazywa się „kodem życia"?</strong></p>
+    <details class="answer"><summary>Model odpowiedzi</summary><p>Bo zawiera instrukcję potrzebną do funkcjonowania organizmu, zapisaną w kolejności czterech zasad.</p></details>
+  </div>
+
+  <div class="exercise">
+    <p><strong>2. Kryminalistyka i ojcostwo?</strong></p>
+    <details class="answer"><summary>Model odpowiedzi</summary><p>Porównuje się wybrane fragmenty sekwencji DNA. Każdy człowiek (poza bliźniakami jednojąjowymi) ma unikalny wzór.</p></details>
+  </div>
+
+  <div class="exercise">
+    <p><strong>3. Czy bliźniaki jednojąjowe mają identyczne DNA?</strong></p>
+    <details class="answer"><summary>Model odpowiedzi</summary><p>Niemal identyczny genom jądrowy; z czasem mogą pojawić się drobne różnice (mutacje somatyczne, epigenetyka).</p></details>
+  </div>
+
+  <div class="exercise">
+    <p><strong>4. Dlaczego nawet krótka sekwencja jest unikalna?</strong></p>
+    <details class="answer"><summary>Model odpowiedzi</summary><p>4²⁰ ≈ bilion kombinacji. W praktyce używa się kilkunastu–kilkudziesięciu markerów.</p></details>
+  </div>
+
+  <div class="exercise">
+    <p><strong>5. Szczepionka mRNA?</strong></p>
+    <details class="answer"><summary>Model odpowiedzi</summary><p>Dostarcza mRNA na wybrane białko. Rybosomy produkują białko. Układ odpornościowy uczy się je rozpoznawać.</p></details>
+  </div>
+</section>
+
+<!-- ================= 23. STATUS ================= -->
+<section class="section" id="status">
+  <div class="part-heading"><span class="part-num">23. Status lekcji</span></div>
+  <div class="card card-new">
+    <span class="card-label">Wersja 6.3 (2026-09-13) — wizualizacje SVG</span>
+    <p><strong>Zachowano całą treść v6.2</strong> — nic nie zostało usunięte.</p>
+    <p><strong>Wprowadzone wizualizacje:</strong></p>
+    <ul>
+      <li><strong>Pary zasad (A–T, C–G)</strong> — karty side-by-side z widocznymi wiązaniami wodorowymi (2 vs 3 linie przerywane), kolorami zasad.</li>
+      <li><strong>Puryny vs pirymidyny</strong> — SVG z prostokątami różnej szerokości (puryna 2× szersza), pokazujący stałą szerokość helisy.</li>
+      <li><strong>Nukleotyd</strong> — pełny diagram SVG: zasada (kolorowe litery A/T/C/G), cukier (pięciokąt), fosforan (P).</li>
+      <li><strong>Drabina DNA</strong> — SVG z pionowymi szkieletami, kolorowymi szczeblami, wiązaniami wodorowymi (linie przerywane), oznaczeniami 5'/3'.</li>
+      <li><strong>Helisa</strong> — SVG z dwiema sinusoidalnymi nićmi w przeciwfazie (5'→3' i 3'→5'), szczeblami i kolorami zasad.</li>
+      <li><strong>Sekwencja jako informacja</strong> — porównanie dwóch sekwencji obok siebie, wyróżniona różniąca się pozycja (czerwona obwódka).</li>
+      <li><strong>Trener komplementarności</strong> — widoczne wiązania wodorowe między górną i dolną nicią; komórki w kolorach zasad; animacja budowania.</li>
+    </ul>
+  </div>
+</section>
+
+<footer class="footer">
+  <p><strong>BIOLOGIA L011 v6.3</strong> · Jak DNA przechowuje informację? · od podstaw do zaawansowanych · 2026</p>
+  <p style="font-size:0.78rem;opacity:0.7;">Ucz się świadomie, nie na pamięć.</p>
+</footer>
+
+</div>
+
+<script>
+function toggleFlashcard(card){card.classList.toggle('flipped');}
+
+/* ============ INTERAKTYWNY TRENER KOMPLEMENTARNOŚCI Z WIZUALNYMI WIĄZANIAMI ============ */
+const TRAINER = {
+  seq: [],
+  idx: 0,
+  rnaMode: false,
+  bases: ['A','T','C','G'],
+  partnerDNA: {A:'T', T:'A', C:'G', G:'C'},
+  partnerRNA: {A:'U', T:'A', C:'G', G:'C'},
+  bondsDNA: {A:2, T:2, C:3, G:3}
+};
+
+function trainerNew(){
+  const len = 5 + Math.floor(Math.random()*5); // 5-9
+  TRAINER.seq = [];
+  for(let i=0;i<len;i++){
+    TRAINER.seq.push(TRAINER.bases[Math.floor(Math.random()*4)]);
+  }
+  TRAINER.idx = 0;
+  const res = document.getElementById('tr-result');
+  res.className = 'tr-result';
+  res.style.display = 'none';
+  trainerRender();
+}
+
+function trainerRender(){
+  const top = document.getElementById('tr-top');
+  const bonds = document.getElementById('tr-bonds');
+  const bot = document.getElementById('tr-bottom');
+  let topHtml = '<span style="color:var(--color-text-muted);font-size:0.8rem;font-family:Courier New;margin-right:6px;">5\'</span>';
+  let botHtml = '<span style="color:var(--color-text-muted);font-size:0.8rem;font-family:Courier New;margin-right:6px;">3\'</span>';
+  let bondsHtml = '<span style="width:30px;display:inline-block;"></span>';
+
+  TRAINER.seq.forEach((b,i)=>{
+    topHtml += '<span class="cell cell-'+b+'">'+b+'</span>';
+    if(i < TRAINER.idx){
+      const p = TRAINER.rnaMode ? TRAINER.partnerRNA[b] : TRAINER.partnerDNA[b];
+      botHtml += '<span class="cell cell-'+p+'">'+p+'</span>';
+      // Wiązania wodorowe - liczba kropek zależna od pary
+      const n = TRAINER.rnaMode ? (b==='C'||b==='G' ? 3 : (b==='A' ? 2 : 2)) : TRAINER.bondsDNA[b];
+      let bondSvg = '';
+      for(let k=0;k<n;k++){
+        const yOffset = 4 + k*3;
+        bondSvg += '<line x1="4" y1="'+yOffset+'" x2="30" y2="'+yOffset+'" stroke="#94a3b8" stroke-width="1.4" stroke-dasharray="3 2"/>';
+      }
+      bondsHtml += '<span class="tr-bond-cell"><svg width="34" height="14" viewBox="0 0 34 14">'+bondSvg+'</svg></span>';
+    } else if(i === TRAINER.idx){
+      botHtml += '<span class="cell cell-q" onclick="trainerHint()">?</span>';
+      bondsHtml += '<span class="tr-bond-cell"></span>';
+    } else {
+      botHtml += '<span class="cell cell-empty">·</span>';
+      bondsHtml += '<span class="tr-bond-cell"></span>';
+    }
+  });
+  topHtml += '<span style="color:var(--color-text-muted);font-size:0.8rem;font-family:Courier New;margin-left:6px;">3\'</span>';
+  botHtml += '<span style="color:var(--color-text-muted);font-size:0.8rem;font-family:Courier New;margin-left:6px;">5\'</span>';
+  top.innerHTML = topHtml;
+  bonds.innerHTML = bondsHtml;
+  bot.innerHTML = botHtml;
+}
+
+function trainerAnswer(b){
+  if(TRAINER.idx >= TRAINER.seq.length) return;
+  const current = TRAINER.seq[TRAINER.idx];
+  const correct = TRAINER.rnaMode ? TRAINER.partnerRNA[current] : TRAINER.partnerDNA[current];
+  const res = document.getElementById('tr-result');
+  res.style.display = 'block';
+  if(b === correct){
+    TRAINER.idx++;
+    res.className = 'tr-result ok';
+    if(TRAINER.rnaMode){
+      res.textContent = 'Dobrze. ' + current + ' → ' + correct + ' (w RNA zamiast T jest U).';
+    } else {
+      const n = TRAINER.bondsDNA[current];
+      res.textContent = 'Dobrze. ' + current + ' łączy się z ' + correct + ' (' + n + ' wiązania wodorowe).';
+    }
+    trainerRender();
+    if(TRAINER.idx >= TRAINER.seq.length){
+      res.textContent = 'Sekwencja ukończona. Czy potrafisz wyjaśnić wynik bez patrzenia do tabeli?';
+    }
+  } else {
+    res.className = 'tr-result warn';
+    res.textContent = 'Nie. Do zasady ' + current + ' pasuje ' + correct + '. Reguła: ' +
+      (TRAINER.rnaMode ? 'A→U, T→A, C→G, G→C.' : 'A–T, C–G.');
+  }
+}
+
+function trainerHint(){
+  const current = TRAINER.seq[TRAINER.idx];
+  const correct = TRAINER.rnaMode ? TRAINER.partnerRNA[current] : TRAINER.partnerDNA[current];
+  const res = document.getElementById('tr-result');
+  res.style.display = 'block';
+  res.className = 'tr-result warn';
+  res.textContent = 'Do ' + current + ' pasuje ' + correct + '. Kliknij odpowiednią literę.';
+}
+
+function trainerToggleRNA(){
+  TRAINER.rnaMode = !TRAINER.rnaMode;
+  document.getElementById('tr-mode-btn').textContent = 'Tryb: ' + (TRAINER.rnaMode ? 'DNA→RNA' : 'DNA→DNA');
+  TRAINER.idx = 0;
+  const res = document.getElementById('tr-result');
+  res.className = 'tr-result';
+  res.style.display = 'none';
+  trainerRender();
+}
+
+document.addEventListener('DOMContentLoaded', ()=>{ trainerNew(); });
+</script>
+</body>
+</html>
