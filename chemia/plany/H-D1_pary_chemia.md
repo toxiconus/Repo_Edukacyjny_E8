@@ -57,3 +57,10 @@ R03|lekcje_md 33KB 2026-10-20 CHE.03.R03+R05.stezenia.md|gotowe 26KB 2026-10-20 
 R04|lekcje_md 41KB 2026-10-20 CHE.03.R04+R07-R09.stechiometria.md|gotowe 19KB 2026-10-13 R04_mol_masa_molowa.md|brak w lekcje_md: 6|brak w gotowe: 92
 REV01|lekcje_md 123KB 2026-10-20 CHE.00.REV01.powtorka_klasy_7.md|gotowe 69KB 2026-10-20 REV01_powtorka_klasy_7.md|brak w lekcje_md: 36|brak w gotowe: 100
 ```
+
+
+## Decyzje (2026-10-20, per para)
+- F01, F02, F03, F04, F06, F10 → gotowe (przegrane lekcje_md → chemia/plany/niewykorzystane/wersje_lekcje_md/)
+- F13, F16 → lekcje_md (przegrane gotowe → chemia/plany/niewykorzystane/wersje_gotowe/)
+- 16 identycznych kopii → gotowe (kopie lekcje_md → niewykorzystane/identyczne_kopie_lekcje_md/)
+- Wybór zapisany w chemia/plany/WYBOR_WERSJI.json; builder: narzedzia/zbuduj_wszystkie.py che

@@ -365,7 +365,9 @@
    "N04": 1
   },
   "acid-table": {},
-  "beaker-prediction-enhanced": {},
+  "beaker-prediction-enhanced": {
+   "F01": 1
+  },
   "carboxyl": {},
   "chain-scn": {
    "N02": 1,
@@ -461,14 +463,21 @@
   },
   "lab-beaker-v102": {},
   "lab-library-v001": {},
-  "lab-stations-v102": {},
-  "live-cv": {},
-  "mind-map": {},
+  "lab-stations-v102": {
+   "F03": 1
+  },
+  "live-cv": {
+   "F01": 1
+  },
+  "mind-map": {
+   "F01": 1
+  },
   "molecule-2d": {},
   "molecule-cv": {},
   "molecule-electrons": {},
   "molecule-orbitals": {},
   "molecule3d-merged": {
+   "F02": 1,
    "N02": 1
   },
   "n01-doswiadczenia-v01": {
@@ -526,6 +535,7 @@
    "F05": 1
   },
   "periodic-54": {
+   "F04": 1,
    "F06": 1,
    "N02": 1
   },
@@ -767,7 +777,9 @@
    "LKO_ORG01_alkany": 1
   },
   "diagram-bohra": {
-   "C1c_konfiguracje_elektronowe": 1
+   "C1c_konfiguracje_elektronowe": 1,
+   "F04": 1,
+   "F06": 1
   },
   "sklad-procentowy": {
    "C1c_masy_sklad_procentowy": 1
@@ -777,6 +789,10 @@
    "C1c_kwasy_zasady_sole": 1,
    "C2w_wzor_elementarny_rzeczywisty": 1,
    "C4": 1,
+   "F01": 1,
+   "F02": 1,
+   "F03": 1,
+   "F06": 1,
    "LKO_ORG01_alkany": 1,
    "LKO_ORG02_alkeny": 1,
    "LKO_ORG03_alkohole": 1,
@@ -1109,10 +1125,14 @@
    "POL.02.G15.zdania_wspolrzedne": 1
   },
   "f01-doswiadczenia-v01": {
+   "F01": 7,
+   "F02": 3,
    "F17": 1,
    "N01": 1
   },
-  "f03-rozdzielanie-v01": {},
+  "f03-rozdzielanie-v01": {
+   "F03": 3
+  },
   "f06-doswiadczenia-v01": {
    "F06": 5
   },
@@ -1127,17 +1147,33 @@
   "nh3Hcl": {},
   "h2sPbac": {},
   "h2sCuso4": {},
-  "f01SolWoda": {},
-  "f01Odparowanie": {},
-  "f01SodaOcet": {},
+  "f01SolWoda": {
+   "F01": 1,
+   "F02": 1
+  },
+  "f01Odparowanie": {
+   "F01": 1,
+   "F02": 1,
+   "F03": 1
+  },
+  "f01SodaOcet": {
+   "F01": 1
+  },
   "f01WodaWapienna": {
+   "F01": 1,
    "N01": 1
   },
   "f01Mg": {
+   "F01": 1,
    "F17": 1
   },
-  "f01FeS": {},
-  "f03PiasekWoda": {},
+  "f01FeS": {
+   "F01": 1,
+   "F02": 1
+  },
+  "f03PiasekWoda": {
+   "F03": 1
+  },
   "f03KredaWoda": {},
   "f06Cl2Kbr": {
    "F06": 1
@@ -1151,7 +1187,6 @@
  "zero": [
   "acid-calculator",
   "acid-table",
-  "beaker-prediction-enhanced",
   "carboxyl",
   "che-spojnosc-v01",
   "che-test-silnika-v01",
@@ -1173,9 +1208,6 @@
   "kinetics-v01",
   "lab-beaker-v102",
   "lab-library-v001",
-  "lab-stations-v102",
-  "live-cv",
-  "mind-map",
   "molecule-2d",
   "molecule-cv",
   "molecule-electrons",
@@ -1328,7 +1360,6 @@
   "zlewka",
   "metal-woda",
   "id",
-  "f03-rozdzielanie-v01",
   "cah2H2o",
   "nahH2o",
   "nh4clCaoh2",
@@ -1340,11 +1371,6 @@
   "nh3Hcl",
   "h2sPbac",
   "h2sCuso4",
-  "f01SolWoda",
-  "f01Odparowanie",
-  "f01SodaOcet",
-  "f01FeS",
-  "f03PiasekWoda",
   "f03KredaWoda",
   "f06Cl2Ki",
   "f06I2Kbr"
@@ -1352,6 +1378,7 @@
  "jeden": [
   "acid-game",
   "acid-rain-v01",
+  "beaker-prediction-enhanced",
   "energy-profile",
   "fiz-przewodniki-v01",
   "gfx-scene-dilution",
@@ -1360,7 +1387,9 @@
   "ion-vs-diss",
   "kw-bufor-v01",
   "kw-wlasciwosci-v01",
-  "molecule3d-merged",
+  "lab-stations-v102",
+  "live-cv",
+  "mind-map",
   "n01-konstruktor-v01",
   "n01-reaktor-v01",
   "n01-tlenki-v01",
@@ -1391,7 +1420,6 @@
   "hyd-na2co3",
   "hyd-nh4cl",
   "bilans-spalania",
-  "diagram-bohra",
   "sklad-procentowy",
   "uklad-okresowy",
   "haworth",
@@ -1427,8 +1455,8 @@
   "rozbior-zdania",
   "wykres-zdania",
   "wykres-zlozonego",
-  "f01WodaWapienna",
-  "f01Mg",
+  "f01SodaOcet",
+  "f03PiasekWoda",
   "f06Cl2Kbr",
   "f06Br2Ki"
  ],
@@ -1446,6 +1474,7 @@
   "kw-dysocjacja-v01",
   "kw-reszty-v01",
   "kw-szereg-metali-v01",
+  "molecule3d-merged",
   "n01-doswiadczenia-v01",
   "n01-spalanie-v01",
   "n02-doswiadczenia-v01",
@@ -1460,6 +1489,7 @@
   "caoH2o",
   "cuso4Hydrate",
   "trojkat-przeliczen",
+  "diagram-bohra",
   "karta-bhp",
   "petla-regulacji",
   "krzyzowka-mendla",
@@ -1507,7 +1537,13 @@
   "trener-nici",
   "pary-zasad",
   "f01-doswiadczenia-v01",
-  "f06-doswiadczenia-v01"
+  "f03-rozdzielanie-v01",
+  "f06-doswiadczenia-v01",
+  "f01SolWoda",
+  "f01Odparowanie",
+  "f01WodaWapienna",
+  "f01Mg",
+  "f01FeS"
  ],
  "nie_w_bazie": [
   "-",
@@ -1515,6 +1551,8 @@
   "cuoH2so4",
   "cuso4Naoh",
   "cykl",
+  "f02-czastki-v01",
+  "f04-nuklid-v01",
   "fecl3Naoh",
   "fotosynteza-oddychanie-krazenie",
   "hclNaOH",
