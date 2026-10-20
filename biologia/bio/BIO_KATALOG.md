@@ -1,110 +1,69 @@
-# Katalog grafik BIO (`szablon/bio-viz.js` v0.1)
+# Katalog grafik BIO (`szablon/wizualizacje/<id>.js`)
 
-Użycie w md lekcji: `@viz <id> {opcja="wartość"} | Tytuł | podpis`. Nowa grafika: `BIO.define('id',{opis,mount(el,opt)})` w `bio-viz.js`, potem wpis tutaj.
-Zasady: statyczny widok + kliknięcie = wyjaśnienie (`BIO.fx.info`); ruch tylko na żądanie ucznia (suwak/przycisk). Kolory tylko ze zmiennych CSS (`--nt-A`, `--sugar`, `--nucleus`…). Tylko tryb dzienny.
+Każda grafika to osobny plik; lekcja dołącza do swojego HTML tylko grafiki, których używa (`@viz`) plus rdzeń `szablon/bio-core.js`.
+Wspólne narzędzia (S, H, svg, T, btn, chain, ICO…) są w rdzeniu jako `BIO.Lh["<grupa>.<nazwa>"]`; grafika dostaje je aliasami na górze pliku.
+Użycie w md lekcji: `@viz <id> {opcja="wartość"} | Tytuł | podpis` + linia `@opis` (obowiązkowa).
+Nowa grafika: plik `szablon/wizualizacje/<id>.js` z `BIO.define('<id>',{opis:'…',mount(el,opt,fig){…}})`, potem `python3 biologia/bio/narzedzia/katalog_wizualizacji.py`.
+Zasady: statyczny widok + kliknięcie = wyjaśnienie (`BIO.fx.info`); ruch tylko na żądanie ucznia lub autoodtwarzanie (`BIO.fx.auto`, „animacja: tak”). Kolory tylko ze zmiennych CSS (`--nt-A`, `--sugar`, `--nucleus`…). Tylko tryb dzienny.
 
-| id | Co pokazuje | Opcje | Lekcje |
-|---|---|---|---|
-| lancuch | łańcuch kroków A → B → C (+ czynniki z boku) | kroki="A\|opis > B", boki="x; y", wyroznij="n", pion="nie", ikony="nie" (ikony dobierane same: DNA/gen, RNA, białko, funkcja, cecha) | L010 |
-| od-organizmu-do-genu | organizm → komórka → jądro → chromosom → DNA → gen | start="gen" | L010 |
-| szuflady-cech | sortowanie: dziedziczna / nabyta / wieloczynnikowa | cechy="nazwa:d\|wyjaśnienie; …" | L010 |
-| gdzie-dna | jądro z jąderkiem, mitochondria (grzebienie, mtDNA), cpDNA, nukleoid, plazmidy, rybosomy, erytrocyt (góra + profil) i leukocyt | — | L010 |
-| poziomy-dna | chromosom → histony → odcinek DNA (gen, regulator, niekodujące) | — | L010 |
-| nukleotyd | fosforan + deoksyryboza + zasada, 1′/3′/5′ | zasada="A" | L010 |
-| pary-zasad | A–T, G–C oraz błędne A–G, C–T, A–C (pierścienie, szerokość, wiązania) | — | L010 |
-| drabina | dwie nici antyrównoległe, cukry, fosforany, pary, wiązania | seq="ATGCCA" | L010 |
-| helisa | suwak drabina ↔ helisa, 2 nm, 3,4 nm / 10 par | seq, skret="0–100" | L010 |
-| sekwencje | dwie sekwencje, różnice zaznaczone | a, b | L010 |
-| pojemnosc | 4ⁿ vs 3ⁿ, suwak długości | n | L010 |
-| trener-nici | dopisywanie nici DNA→DNA / DNA→RNA | seq, tryb="rna" | L010 |
-| kod-genetyczny | DNA (nić kodująca + matrycowa) → mRNA → aminokwasy; klik w zasadę = mutacja (cicha, zmiany sensu, nonsensowna, utrata START) | seq="ATG…" | (L011, L020) |
-| punnett | szachownica Punnetta: A/a (Mendel), grupy krwi AB0, hemofilia (X); fenotypy i genotypy w % | tryb="A\|K\|X" | (L017–L019) |
-| transport-blona | przekrój błony: dyfuzja prosta, ułatwiona, transport aktywny (ATP), osmoza + tabela porównawcza | start="dp\|du\|ta\|os" | (L005) |
-| siec-troficzna | sieć troficzna lasu: co je / kto go je, poziomy, łańcuchy; tryb „usuń gatunek” | — | (L041–L042) |
-| ryba-budowa | ryba kostnoszkieletowa: płetwy, skrzela, linia boczna, pęcherz pławny; tryby poznaj/znajdź/podpisz | — | REV02 §8.1 |
-| mikroskop-budowa | mikroskop świetlny: 12 części; 3 tryby | — | REV02 D+ |
-| jajo-ptaka | przekrój jaja ptaka: skorupa, błony, komora, białko, żółtko, tarczka, chalazy | — | REV02 §8.4 |
-| jajo-porownanie | jajo ryb/płazów, owadów, gadów, ptaków, ssaków: tabela + ścieżka ewolucyjna | — | REV02 §8.5 |
-| tkanki-zwierzece | 4 tkanki zwierzęce, rozpoznawanie po budowie; 3 tryby | — | REV02 §6.1 |
-| stawonogi-budowa | owad / pająk / rak: tagmy, odnóża, czułki + tabela; 3 tryby | — | REV02 §7.4 |
-| komorki-porownanie | komórka zwierzęca / roślinna / drożdży / bakterii + tabela cech; 3 tryby | — | REV01 §3 |
-| wykres-dane | czytanie wykresu: osie, skala, punkty, suwak odczytu, 3 zestawy danych | — | REV02 D+ |
-| serce-budowa | serce w przekroju: komory, przedsionki, zastawki, naczynia; 3 tryby | — | B10 §2.5 (docelowo B2h) |
-| krazenie | obieg krwi: pierścień z krążącą kroplą (niebieska/czerwona), filtr małe/duże, klik = wyjaśnienie | — | B10 §2.5 (docelowo B2h) |
-| neuron-budowa | neuron: dendryty, ciało, akson, osłonka, Ranvier, synapsa; 3 tryby | — | B2d §4 |
-| nefron-budowa | nefron: kłębuszek, torebka, kanaliki, pętla Henlego, naczynia; 3 tryby | — | B2c §6 |
-| wentylacja | wdech/wydech: przepona i żebra, animacja tam i z powrotem + suwak | — | B2c §2 |
-| fotosynteza-oddychanie | chloroplast ↔ mitochondrium: krążenie materii, przepływ energii, kropki w pętli, tryby fot/odd/oba + tabela | — | REV01 §7 |
-| podzial-komorki | mitoza i mejoza (2n=4) etapami, autostart + ◀ ▶; opcja `typ="mit\|mej"` | — | B2f §4 |
-| cykl | cykl życiowy jako pierścień etapów, autostart w widoku (do przodu i od początku), klik = wyjaśnienie + pauza; opcja `cykl="zaba\|tasiemiec\|mech\|paproc\|kwiat\|faga"` (dane w `CY` w bio-rysunki.js) | — | REV02 §2.1, 4.2, 4.3, 4.5, 7.1, 8.2 |
-
-Silnik rysunków z podpisami: `szablon/bio-rysunki.js` (`BIO.lab`, tryby poznaj / znajdź / podpisz; opcja `typ=` wybiera wariant). Plan dalszych: `plany/PLAN_RYSUNKOW_BIO.md`.
-
-Prymitywy (`BIO.g`): `ring` (puryna 6+5 / pirymidyna 6), `hbonds`, `sugar`, `phos`, `miniHelix`, `squiggle` (chromatyna), `chromosome`. Ikony: `BIO.ICO` (organizm, komorka, jadro, chromosom, dna, rna, bialko, funkcja, gen). Efekty: `BIO.fx.info`, `fx.toggle`, odsłanianie figur przy przewijaniu.
-
-Kontenery md tylko w BIO: `::: mity` (linie `mit || poprawka`), `::: drzewo` (mapa pojęć z wcięć).
-
-## Stan lekcji (2026-10-20, generowane z biologia/bio/md)
-
-| Lekcja | KB | @viz | audyty |
-|---|---:|---:|---:|
-| BIO.00.REV01.organizacja_i_chemizm_zycia | 66 | 9 | 1 |
-| BIO.00.REV02.roznorodnosc_zycia | 85 | 17 | 2 |
-| BIO.01.B1b.krzyzowki_mendel | 22 | 1 | 0 |
-| BIO.01.L001.komorka | 81 | 4 | 0 |
-| BIO.01.L001A.dodatek_ambitny_od_komorki_do | 45 | 1 | 1 |
-| BIO.01.L002.powtorka_czlowiek | 75 | 1 | 1 |
-| BIO.01.L003.diagnoza | 76 | 0 | 0 |
-| BIO.01.L004.organizacja_budowy_organizmu_od_komorki | 37 | 2 | 2 |
-| BIO.01.L005.blona_komorkowa_i_transport_substancji | 29 | 1 | 2 |
-| BIO.01.L006.fotosynteza_skad_roslina_bierze_materie | 30 | 1 | 2 |
-| BIO.01.L007.oddychanie_komorkowe_skad_komorka_bierze | 35 | 2 | 3 |
-| BIO.01.L008.mikroskop_jak_obserwowac_komorke_a | 28 | 1 | 2 |
-| BIO.01.L009.podzial_komorki_wzrost_regeneracja_i | 26 | 1 | 2 |
-| BIO.02.B10.powtorka_uklady_czlowieka | 19 | 3 | 0 |
-| BIO.02.B2a.skora_uklad_ruchu | 18 | 2 | 0 |
-| BIO.02.B2b.uklad_pokarmowy | 19 | 2 | 0 |
-| BIO.02.B2c.oddychanie_wydalanie | 17 | 5 | 0 |
-| BIO.02.B2d.uklad_nerwowy_zmysly | 20 | 4 | 0 |
-| BIO.02.B2e.uklad_dokrewny | 18 | 3 | 0 |
-| BIO.02.B2f.rozmnazanie_rozwoj | 19 | 6 | 0 |
-| BIO.02.B2g.homeostaza | 32 | 2 | 0 |
-| BIO.02.L010.dna_od_zera | 64 | 12 | 3 |
-| BIO.02.L011.jak_dna_przechowuje_informacje | 41 | 5 | 1 |
-| BIO.02.L012.jak_dna_jest_upakowane_w | 55 | 1 | 1 |
-| BIO.02.L013.jak_komorka_kopiuje_dna | 24 | 1 | 4 |
-| BIO.02.L014.jak_komorki_ciala_powstaja_i | 61 | 1 | 2 |
-| BIO.02.L015.mejoza | 59 | 2 | 2 |
-| BIO.02.L016.co_sie_dzieje_gdy_podzialy | 18 | 1 | 3 |
-| BIO.02.L016A.zmiennosc_dlaczego_potomstwo_nie_jest | 17 | 1 | 2 |
-| BIO.02.L017.jak_przewidywac_dziedziczenie_jednej_cechy | 42 | 1 | 2 |
-| BIO.02.L018.jak_dziedziczy_sie_plec_i | 20 | 1 | 4 |
-| BIO.02.L019.dlaczego_grupy_krwi_nie_pasuja | 82 | 1 | 1 |
-| BIO.02.L020.czym_sa_mutacje_i_jakie | 83 | 1 | 1 |
-| BIO.02.L021.powtorka_genetyki | 86 | 2 | 1 |
-| BIO.02.L022.biotechnologia_i_inzynieria_genetyczna | 89 | 1 | 2 |
-| BIO.03.L030.czym_jest_ewolucja_i_jakie | 20 | 1 | 0 |
-| BIO.03.L031.jak_dziala_dobor_naturalny_i | 19 | 1 | 0 |
-| BIO.03.L032.powtorka_ewolucji | 15 | 2 | 1 |
-| BIO.04.L040.czym_jest_ekosystem_i_jakie | 30 | 1 | 0 |
-| BIO.04.L041.jak_zapisac_lancuchy_i_sieci | 19 | 1 | 0 |
-| BIO.04.L042.jakie_relacje_panuja_miedzy_organizmami | 19 | 1 | 0 |
-| BIO.04.L043.jak_czlowiek_wplywa_na_srodowisko | 21 | 1 | 0 |
-| BIO.04.L044.powtorka_ekologii | 14 | 2 | 1 |
-| BIO.05.L050.powtorka_roczna | 13 | 2 | 2 |
-| BIO.06.L090.extra_olimpijska | 19 | 2 | 2 |
-| BIO.06.L091.atp_jak_komorka_magazynuje_energie | 20 | 1 | 0 |
-| BIO.07.H01.homeostaza | 80 | 2 | 1 |
-| BIO.07.U01.skora_i_uklad_ruchu | 59 | 2 | 1 |
-| BIO.07.U03.uklad_pokarmowy_i_odzywianie | 106 | 3 | 1 |
-| BIO.07.U04.krazenie_krew_odpornosc | 90 | 2 | 1 |
-| BIO.07.U06.oddychanie_i_wydalanie | 81 | 3 | 1 |
-| BIO.07.U08.uklad_nerwowy_i_zmysly | 110 | 4 | 2 |
-| BIO.07.U10.uklad_dokrewny | 107 | 3 | 2 |
-| BIO.07.U11.rozmnazanie_i_rozwoj | 107 | 5 | 1 |
-| BIO.99.X00.system | 7 | 0 | 0 |
-| BIO.99.X01.szablon_lekcji | 61 | 0 | 1 |
-| BIO.99.X02.architektura_v52 | 0 | 0 | 0 |
-| BIO.99.X99.warstwy_audyt_backlog | 25 | 0 | 2 |
-
-Razem: 58 lekcji, 2580 KB.
+| id | plik | Co pokazuje | Opcje | Animacja | Lekcje |
+|---|---|---|---|---|---|
+| cykl-miesiaczkowy | `szablon/wizualizacje/cykl-miesiaczkowy.js` | Model cyklu miesiączkowego z suwakiem dnia 1–28: zmiany w jajniku, błonie śluzowej macicy i poziomie hormonów (dane przykładowe). | — | nie | B2f, U11 |
+| dobor-naturalny | `szablon/wizualizacje/dobor-naturalny.js` | Symulacja doboru naturalnego: ćmy jasne i ciemne na jasnej lub ciemnej korze (drapieżnik zjada lepiej widoczne) albo bakterie wrażliwe i oporne + antybiotyk; pokolenia, wykres udziału cechy | — | nie | L031, L032 |
+| drabina | `szablon/wizualizacje/drabina.js` | dwie nici antyrównoległe, cukry, fosforany, pary, wiązania | seq="ATGCCA" | nie | L010, L011 |
+| droga-pokarmu | `szablon/wizualizacje/droga-pokarmu.js` | Schemat układu pokarmowego: przewód pokarmowy (jama ustna, gardło, przełyk, żołądek, dwunastnica, jelito cienkie, jelito grube z wyrostkiem, odbytnica, odbyt) i gruczoły (ślinianki, wątroba z pęcherzykiem żółciowym, trzustka); kliknij narząd, „krok” prowadzi kęs drogą pokarmu, wybór składnika podświetla narządy, w których jest trawiony i wchłaniany | — | tak | B2b, U03 |
+| droga-zarodka | `szablon/wizualizacje/droga-zarodka.js` | Animacja drogi od owulacji do zagnieżdżenia: komórka jajowa w jajowodzie, zapłodnienie, zygota, bruzdkowanie i zagnieżdżenie w macicy. | — | tak | B2f, U11 |
+| endosymbioza | `szablon/wizualizacje/endosymbioza.js` | Teoria endosymbiozy w 4 krokach (wstecz/dalej): komórka-gospodarz pochłania bakterię tlenową (i sinicę) → bakteria żyje w pęcherzyku (dwie błony) → staje się mitochondrium (chloroplastem) z własnym kolistym DNA i rybosomami jak u bakterii; karty argumentów (cecha → obserwacja → wniosek) | — | tak | L001A |
+| energia-glukozy | `szablon/wizualizacje/energia-glukozy.js` | Oddychanie tlenowe vs fermentacja alkoholowa vs mlekowa: warunki, miejsce, produkty i ilość ATP z jednej cząsteczki glukozy (słupki) | — | nie | REV01, L007 |
+| energia-materia | `szablon/wizualizacje/energia-materia.js` | Ekosystem: przepływ energii (jednokierunkowy, od Słońca przez producentów i konsumentów, z ciepłem traconym na każdym poziomie, ok. 10% przechodzi dalej) i obieg materii (zamknięty: producenci → konsumenci → destruenci → związki mineralne → producenci); przełącznik energia / materia | — | nie | L040, L044 |
+| enzym-warunki | `szablon/wizualizacje/enzym-warunki.js` | Wykres aktywności enzymów (model szkolny, dane orientacyjne): tryb temperatury (amylaza ślinowa, 0–80 °C, optimum ok. 37 °C, denaturacja powyżej ok. 50 °C) i tryb pH (pepsyna ok. 2, amylaza ślinowa ok. 7, trypsyna ok. 8); suwak, odczyt aktywności i barwa próby z płynem Lugola po inkubacji skrobi z amylazą | — | tak | U03 |
+| etapy-zycia | `szablon/wizualizacje/etapy-zycia.js` | Pionowa oś czasu z dziesięcioma etapami życia człowieka, od okresu zarodkowego do starości; kliknięcie etapu pokazuje orientacyjny wiek i cechy. | — | nie | U11 |
+| eutrofizacja | `szablon/wizualizacje/eutrofizacja.js` | Eutrofizacja jeziora w 5 etapach (suwak): czysta woda → spływ nawozów (azotany, fosforany) → zakwit glonów → rozkład martwych glonów przez bakterie zużywające tlen → przyducha i śnięcie ryb; wskaźnik tlenu i przejrzystości wody na każdym etapie | — | nie | L043 |
+| fotosynteza-oddychanie | `szablon/wizualizacje/fotosynteza-oddychanie.js` | chloroplast ↔ mitochondrium: krążenie materii, przepływ energii, kropki w pętli, tryby fot/odd/oba + tabela | — | nie | REV01, L006, L007, L091 |
+| gdzie-dna | `szablon/wizualizacje/gdzie-dna.js` | jądro z jąderkiem, mitochondria (grzebienie, mtDNA), cpDNA, nukleoid, plazmidy, rybosomy, erytrocyt (góra + profil) i leukocyt | — | nie | L010 |
+| glukoza-wykres | `szablon/wizualizacje/glukoza-wykres.js` | Wykres stężenia glukozy we krwi po posiłku (dane przykładowe): osoba zdrowa vs osoba z cukrzycą; przełączniki serii, punkty z wartościami, zakres prawidłowy na czczo | — | nie | B2e, B2g, H01, U10 |
+| gruczoly-mapa | `szablon/wizualizacje/gruczoly-mapa.js` | Sylwetka człowieka z gruczołami dokrewnymi: podwzgórze, przysadka, szyszynka, tarczyca, przytarczyce, grasica, nadnercza, trzustka, jajniki albo jądra (przełącznik); kliknij gruczoł albo podpis — hormony, działanie, skutki niedoboru i nadmiaru; autoprzegląd gruczołów | — | tak | B2e, U10 |
+| hardy-weinberg | `szablon/wizualizacje/hardy-weinberg.js` | Prawo Hardy’ego–Weinberga: suwak częstości allelu recesywnego q (albo częstości chorych q²), obliczenia p = 1 − q, p², 2pq, q² krok po kroku, słupki genotypów AA, Aa, aa w populacji 10 000 osób; przykład choroby recesywnej (np. 1 chory na 2500 → ok. 1 nosiciel na 25) | — | nie | L090 |
+| helisa | `szablon/wizualizacje/helisa.js` | suwak drabina ↔ helisa, 2 nm, 3,4 nm / 10 par | seq, skret="0–100" | nie | L010, L011 |
+| homeostaza | `szablon/wizualizacje/homeostaza.js` | Homeostaza i ujemne sprzężenie zwrotne: poziom glukozy we krwi (posiłek → insulina, głód/wysiłek → glukagon, tryb cukrzycy typu 1) albo temperatura ciała (upał → pocenie i rozszerzenie naczyń, zimno → dreszcze i zwężenie naczyń); wykres w czasie z pasem normy i schemat pętli regulacji | — | nie | L002 |
+| klonowanie-genu | `szablon/wizualizacje/klonowanie-genu.js` | Animacja klonowania genu w pięciu krokach: enzym restrykcyjny wycina gen, ten sam enzym otwiera plazmid, ligaza wkleja gen, plazmid trafia do bakterii, która produkuje białko. | — | tak | L022 |
+| klucz-kregowce | `szablon/wizualizacje/klucz-kregowce.js` | Klucz dwudzielny do gromad kręgowców (ryby, płazy, gady, ptaki, ssaki): pytania tak/nie, ścieżka; tryb „rozpoznaj zwierzę” z przykładami | — | nie | REV02 |
+| kod-genetyczny | `szablon/wizualizacje/kod-genetyczny.js` | DNA (nić kodująca + matrycowa) → mRNA → aminokwasy; klik w zasadę = mutacja (cicha, zmiany sensu, nonsensowna, utrata START) | seq="ATG…" | nie | L011, L020, L021, L090 |
+| komorka-nakladki | `szablon/wizualizacje/komorka-nakladki.js` | Komórka z warstwami: wspólny rdzeń (błona, cytoplazma, rybosomy, DNA) + nakładki — jądro, mitochondria, chloroplasty, wakuola, ściana, plazmid; przyciski typów (bakteria, zwierzęca, roślinna, grzyb) i pojedynczych warstw; opcja start="rdzen|bakteria|zwierzeca|roslinna|grzyb" | — | nie | REV01, L001 |
+| konczyny-homologiczne | `szablon/wizualizacje/konczyny-homologiczne.js` | Kończyny przednie człowieka, kreta, wieloryba i nietoperza: te same grupy kości (ramienna, łokciowa i promieniowa, nadgarstek, śródręcze i paliczki) w tych samych kolorach, różne funkcje → narządy homologiczne; tryb „analogia”: skrzydło nietoperza obok skrzydła owada (ta sama funkcja, inna budowa) | — | nie | L030, L032 |
+| kontrola-podzialow | `szablon/wizualizacje/kontrola-podzialow.js` | Model tkanki (70 komórek): dawki UV uszkadzają DNA, „hamulce” naprawa DNA i apoptoza (wł./wył.) usuwają skutki; komórka z 3 mutacjami w genach kontroli dzieli się bez ograniczeń i zajmuje sąsiednie miejsca (guz); liczniki komórek zdrowych, zmutowanych i nowotworowych | — | nie | L009, L016 |
+| kosmek-jelitowy | `szablon/wizualizacje/kosmek-jelitowy.js` | Kosmek jelitowy w przekroju podłużnym: nabłonek jednowarstwowy z mikrokosmkami, sieć naczyń włosowatych (krew dopływająca i odpływająca do żyły wrotnej), centralne naczynie chłonne; wybór substancji (glukoza, aminokwasy, produkty trawienia tłuszczów, woda) pokazuje animowaną drogę do krwi albo limfy | — | tak | B2b, U03 |
+| krazenie-obiegi | `szablon/wizualizacje/krazenie-obiegi.js` | Serce (4 jamy, zastawki) + obieg mały i duży: krew odtlenowana (niebieska) i utlenowana (czerwona); kliknij element, „krok” prowadzi drogą krwi, przyciski podświetlają jeden obieg | — | tak | B10, U04 |
+| lancuch | `szablon/wizualizacje/lancuch.js` | łańcuch kroków A → B → C (+ czynniki z boku) | kroki="A\|opis > B", boki="x; y", wyroznij="n", pion="nie", ikony="nie" (ikony dobierane same: DNA/gen, RNA, białko, funkcja, cecha) | nie | REV01, L001, L004, L010, L015 |
+| lozysko-wymiana | `szablon/wizualizacje/lozysko-wymiana.js` | Schemat łożyska: krew matki opływa kosmki z naczyniami płodu; strzałki pokazują, co płynie do płodu, a co do matki. Pępowina ma dwie tętnice i jedną żyłę. | — | nie | B2f, U11 |
+| luk-odruchowy | `szablon/wizualizacje/luk-odruchowy.js` | Łuk odruchowy cofnięcia ręki od gorącego przedmiotu: receptor w skórze dłoni, neuron czuciowy (ciało w zwoju rdzeniowym), neuron pośredniczący w istocie szarej rdzenia, neuron ruchowy, efektor — mięsień ramienia; „krok” prowadzi impuls etapami, osobna droga do mózgu (czucie bólu); przełącznik uszkodzeń: przecięta droga ruchowa lub czuciowa | — | tak | B2d, U08 |
+| mikroskop-model | `szablon/wizualizacje/mikroskop-model.js` | Ta sama komórka liścia moczarki w dwóch widokach: obraz z mikroskopu świetlnego (rozmyty, widać ścianę, chloroplasty, wakuolę; jądro po barwieniu) i model szkolny ze wszystkimi strukturami podpisanymi; przełącznik barwienia; opcja start="mikroskop|model" | — | nie | REV01, L001, L008 |
+| nefron | `szablon/wizualizacje/nefron.js` | Schemat nefronu: tętniczka doprowadzająca, kłębuszek w torebce Bowmana, kanalik nerkowy (kręty, pętla nefronu), przewód zbiorczy, naczynia włosowate oplatające kanalik; wybór substancji (glukoza, aminokwasy, białka i krwinki, mocznik, sole, woda) animuje jej drogę — przefiltrowana czy nie, odzyskana do krwi czy w moczu; przełącznik ADH zmienia ilość i barwę moczu | — | tak | B2c, U06 |
+| nukleotyd | `szablon/wizualizacje/nukleotyd.js` | fosforan + deoksyryboza + zasada, 1′/3′/5′ | zasada="A" | nie | L010, L011 |
+| od-organizmu-do-genu | `szablon/wizualizacje/od-organizmu-do-genu.js` | organizm → komórka → jądro → chromosom → DNA → gen | start="gen" | nie | L010 |
+| oko-akomodacja | `szablon/wizualizacje/oko-akomodacja.js` | Przekrój gałki ocznej: rogówka, tęczówka ze źrenicą, soczewka z mięśniem rzęskowym, ciało szkliste, twardówka, naczyniówka, siatkówka z plamką żółtą i plamką ślepą, nerw wzrokowy; tryby: budowa (klik = opis), akomodacja (przedmiot blisko / daleko — soczewka grubieje lub się spłaszcza, promienie skupiają się na siatkówce), wady wzroku (krótkowzroczność — ognisko przed siatkówką, dalekowzroczność — za nią; włączenie okularów koryguje) | — | tak | U08 |
+| pary-zasad | `szablon/wizualizacje/pary-zasad.js` | A–T, G–C oraz błędne A–G, C–T, A–C (pierścienie, szerokość, wiązania) | — | nie | L010, L011 |
+| podzial-komorki | `szablon/wizualizacje/podzial-komorki.js` | mitoza i mejoza (2n=4) etapami, autostart + ◀ ▶; opcja `typ="mit\|mej"` | — | tak | L009, B2f, L014, L015, L050 |
+| pojemnosc | `szablon/wizualizacje/pojemnosc.js` | 4ⁿ vs 3ⁿ, suwak długości | n | nie | L010 |
+| poziomy-dna | `szablon/wizualizacje/poziomy-dna.js` | chromosom → histony → odcinek DNA (gen, regulator, niekodujące) | — | nie | L010, L012 |
+| proba-kontrolna | `szablon/wizualizacje/proba-kontrolna.js` | Planowanie doświadczenia: próba badawcza i kontrolna różnią się tylko jednym czynnikiem; przełączniki warunków, ocena planu (zmienna niezależna, zależna, stałe) | — | nie | REV01 |
+| przeobrazenie-owadow | `szablon/wizualizacje/przeobrazenie-owadow.js` | Przeobrażenie zupełne (motyl: jajo → gąsienica → poczwarka → motyl) i niezupełne (konik polny: jajo → larwa podobna do dorosłego → owad dorosły); klik = opis etapu; różnica: poczwarka | — | nie | REV02 |
+| przeobrazenie-plaza | `szablon/wizualizacje/przeobrazenie-plaza.js` | Rozwój złożony żaby: skrzek → kijanka (skrzela zewnętrzne) → kijanka z kończynami → młoda żaba (zanik ogona) → żaba; suwak etapów, oddychanie i środowisko na każdym etapie | — | nie | REV02 |
+| punnett | `szablon/wizualizacje/punnett.js` | szachownica Punnetta: A/a (Mendel), grupy krwi AB0, hemofilia (X); fenotypy i genotypy w % | tryb="A\|K\|X" | nie | B1b, L017, L018, L019, L021 |
+| relacje-ekologiczne | `szablon/wizualizacje/relacje-ekologiczne.js` | Zależności międzygatunkowe jako znaki wpływu na oba gatunki (+ korzyść, − strata, 0 bez wpływu): konkurencja, drapieżnictwo, roślinożerność, pasożytnictwo, mutualizm, komensalizm; tryb „rozpoznaj relację” na 12 przykładach | — | nie | L042, L044 |
+| sekwencje | `szablon/wizualizacje/sekwencje.js` | dwie sekwencje, różnice zaznaczone | a, b | nie | L010 |
+| siec-troficzna | `szablon/wizualizacje/siec-troficzna.js` | sieć troficzna lasu: co je / kto go je, poziomy, łańcuchy; tryb „usuń gatunek” | — | nie | L041, L050 |
+| skora-przekroj | `szablon/wizualizacje/skora-przekroj.js` | Przekrój skóry: naskórek (warstwa rogowa, melanina), skóra właściwa (naczynia, receptory, gruczoł potowy i łojowy, mieszek włosowy, mięsień przywłosowy), tkanka podskórna (tłuszcz); kliknij element | — | nie | B2a, U01 |
+| sprzezenie-zwrotne | `szablon/wizualizacje/sprzezenie-zwrotne.js` | Pętla regulacji: bodziec → receptor → ośrodek → efektor → odpowiedź; scenariusze temperatury, glukozy, wody (ujemne) i porodu (dodatnie); „krok” przechodzi pętlę, wskaźnik pokazuje parametr wobec normy | — | tak | B2e, B2g, H01, U10 |
+| staw-antagonizm | `szablon/wizualizacje/staw-antagonizm.js` | Ramię z kością ramienną, łokciem i przedramieniem: suwak kąta w stawie; biceps (zginacz) i triceps (prostownik) grubieją przy skurczu i cienieją przy rozkurczu; ścięgna, przyczepy; opis, który mięsień pracuje | — | tak | B2a, U01 |
+| synapsa | `szablon/wizualizacje/synapsa.js` | Animacja przekazania impulsu na synapsie chemicznej w pięciu krokach: impuls, uwolnienie neuroprzekaźnika, szczelina, receptory, nowy impuls. | — | tak | B2d, U08 |
+| szuflady-cech | `szablon/wizualizacje/szuflady-cech.js` | sortowanie: dziedziczna / nabyta / wieloczynnikowa | cechy="nazwa:d\|wyjaśnienie; …" | nie | L010 |
+| transfuzja | `szablon/wizualizacje/transfuzja.js` | Zgodność krwi w modelu szkolnym: wybierz grupę dawcy i biorcy (ABO, Rh); antygeny na krwinkach dawcy vs przeciwciała w osoczu biorcy → zgodna / aglutynacja; tabela wszystkich par | — | nie | L019, U04 |
+| transport-blona | `szablon/wizualizacje/transport-blona.js` | przekrój błony: dyfuzja prosta, ułatwiona, transport aktywny (ATP), osmoza + tabela porównawcza | start="dp\|du\|ta\|os" | nie | REV01, L001, L005 |
+| trener-nici | `szablon/wizualizacje/trener-nici.js` | dopisywanie nici DNA→DNA / DNA→RNA | seq, tryb="rna" | nie | L010, L013 |
+| ucho-droga | `szablon/wizualizacje/ucho-droga.js` | Schemat ucha: zewnętrzne (małżowina, przewód słuchowy), środkowe (błona bębenkowa, młoteczek, kowadełko, strzemiączko, trąbka słuchowa), wewnętrzne (ślimak, kanały półkoliste, przedsionek), nerw przedsionkowo-ślimakowy; kliknij część, „krok” prowadzi dźwięk od małżowiny do mózgu | — | tak | U08 |
+| uklad-rozrodczy | `szablon/wizualizacje/uklad-rozrodczy.js` | Schemat męskiego i żeńskiego układu rozrodczego z przełącznikiem; kliknięcie narządu pokazuje jego funkcję, zaznaczone jest miejsce zapłodnienia. | — | nie | B2f, U11 |
+| wdech-wydech | `szablon/wizualizacje/wdech-wydech.js` | Klatka piersiowa od przodu: tchawica, oskrzela, dwa płuca, żebra i kopuła przepony; przyciski wdech / wydech / oddychaj animują obniżanie i spłaszczanie przepony, unoszenie żeber, powiększanie płuc i kierunek przepływu powietrza; wskaźnik objętości klatki i ciśnienia w płucach względem atmosferycznego | — | tak | B2c, U06 |
+| wirus-bakteria | `szablon/wizualizacje/wirus-bakteria.js` | Wirus (kapsyd + DNA/RNA, ew. osłonka) obok komórki bakterii (ściana, błona, cytoplazma, rybosomy, nukleoid, plazmid, rzęska) w różnej skali; klik = opis; panel porównania (komórka? metabolizm? antybiotyk?) | — | nie | REV02 |
+| wymiana-gazowa | `szablon/wizualizacje/wymiana-gazowa.js` | Wymiana gazowa: tryb „w płucach” — pęcherzyk płucny nad naczyniem włosowatym, krew dopływa odtlenowana i odpływa utlenowana, tlen dyfunduje do krwi, CO₂ do pęcherzyka; tryb „w tkankach” — komórki nad naczyniem, kierunki odwrotne; słupki porównują ilość O₂ i CO₂ po obu stronach bariery; płynące erytrocyty | — | tak | B2c, U06 |
+| zrodla-zmiennosci | `szablon/wizualizacje/zrodla-zmiennosci.js` | Źródła zmienności rekombinacyjnej na modelu 3 par chromosomów: losowanie gamet matki i ojca (niezależna segregacja, 2³ = 8 rodzajów gamet), losowe zapłodnienie (64 kombinacje), opcjonalny crossing-over (mieszane odcinki); licznik różnych dzieci; dla człowieka 2²³ ≈ 8,4 mln gamet i ok. 70 bln kombinacji | — | nie | L016A |
