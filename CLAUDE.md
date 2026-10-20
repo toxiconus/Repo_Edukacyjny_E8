@@ -37,6 +37,9 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 ## Praca ciągła (każdy model, zwłaszcza Haiku)
 - Skończone zadanie → od razu następne z listy (`ZADANIA_HAIKU_SONNET.md`), bez pytania „czy dalej?”. Raport na końcu serii. Pytać tylko przy ryzyku utraty danych.
 
+## Bez planów czasowych i bez „supernauki” (od 2026-10-20)
+- Lekcje nie zawierają planów czasowych („Mapa (10 min)” itp.) ani ogólnych haseł motywacyjnych („10 zasad supernauki”, „10 zasad skutecznej nauki”). Takie bloki usuwamy z żywych lekcji; kopie idą do `niewykorzystane/`.
+
 ## Jedna najlepsza wersja (zasada stała, od 2026-10-20)
 - Każda lekcja, grafika i narzędzie ma w repo **jedną najlepszą wersję**. Przed utworzeniem czegoś sprawdź, czy już istnieje (`ls`, katalogi, KATALOG_GRAFIK_BIO); nie twórz drugiej wersji — rozbuduj istniejącą.
 - Dubel: porównaj (rozmiar, nagłówki, viz, data, zawartość); lepsza zostaje, unikalne treści gorszej dopisz do lepszej albo przenieś do `niewykorzystane/` (biologia/niewykorzystane, chemia/plany/niewykorzystane). Identyczne kopie usuwaj od razu. Nic nie ginie bez porównania.

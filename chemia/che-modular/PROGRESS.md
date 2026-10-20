@@ -263,3 +263,4 @@
 - 2026-10-20: H-D2 — N02 porównany z N01 starym: wszystkie wymienione treści już są w N02; brak dopisek. Archiwum N01 zostaje w niewykorzystane.
 - 2026-10-20: H-D3 — fragmenty: treść lekcyjna pokryta w sprint; notatki GFX (F01–F06, FIZ01) → KATALOG_WIZUALIZACJI.md, sekcja Luki.
 - 2026-10-20: usunięte bloki „10 zasad supernauki/skutecznej nauki” z 10 lekcji lekcje_md i N05 (gotowe); kopie w chemia/plany/niewykorzystane/supernauka_wyjete/. Bez planów czasowych.
+- 2026-10-20: H-D4 zamknięte (porównanie, brak unikalnych treści poza planami czasowymi — odrzucone); zasada bez planów czasowych w CLAUDE.md.
