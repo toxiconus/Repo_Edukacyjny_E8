@@ -17,6 +17,17 @@ ETAP = [
     ('R03', 'I'), ('R07', 'II'), ('REV01_powtorka', 'I'), ('X04', 'II'),
     ('B10', 'II'), ('B1b', 'III (genetyka)'), ('B2', 'II'), ('L010', 'III (DNA)'), ('REV01_org', 'I'), ('REV02', 'I'),
 ]
+# Warstwy treści w lekcji (znaczniki [[rodzaj:NAZWA]]): E8 = egzamin ósmoklasisty, trening/rozumienie, konkurs (LKO), ambitne = olimpiada/ponad zakres.
+WARSTWY = [('E8', re.compile(r'\[\[basic:')), ('rozum.', re.compile(r'\[\[understand:')),
+           ('konkurs', re.compile(r'\[\[(exam|contest):(?!EGZAMIN)', re.I)), ('ambitne', re.compile(r'\[\[extra:'))]
+def warstwy(t):
+    return ' · '.join(n for n, rx in WARSTWY if rx.search(t)) or '—'
+LEGENDA = ('Etap LKO = do którego etapu konkursu lekcja jest potrzebna: **I** = szkolny (biologia 21.10, chemia 23.10; 60 min, 40 pkt), '
+           '**II** = rejonowy (biologia 24.11, chemia 26.11; 90 min; obejmuje też etap I), **III** = wojewódzki (obejmuje I i II), '
+           '**poza LKO** = kurs E8/inny przedmiot. Warstwy w lekcji: **E8** (podstawa programowa) · **rozum.** (trening, rozumienie) · '
+           '**konkurs** (zadania i doświadczenia konkursowe) · **ambitne** (olimpiada, ponad zakres). Zakres źródłowy: `olimpiada/PRIORYTETY.md` §1.')
+PLANOWANE_BIO = [('B2h', 'Układ krążenia (krew, serce, naczynia, limfa)', 'II'), ('B2i', 'Układ odpornościowy (odporność, szczepionki, alergie)', 'II'),
+                 ('B2j', 'Arkusz próbny etapu II', 'II'), ('B3a–B3e', 'Mitoza i mejoza, mutacje, ewolucja, ekologia, różnorodność biologiczna', 'III')]
 def etap(nazwa):
     for p, e in ETAP:
         if nazwa.startswith(p): return e
@@ -31,20 +42,22 @@ ZRODLA = [
 ]
 out = ['# SPIS LEKCJI (generowany: `python3 narzedzia/spis_lekcji.py`)', '',
        'Stan: %s. KB = rozmiar pliku md. Wiz. = liczba @klocek/@model/@zlewka; @opis = liczba opisów (powinna być równa wiz.).' % datetime.date.today(),
-       'Listy tematów (plan) są osobno: `chemia/plany/CHE_SPIS_TRESCI.md`, `polski/POL_SPIS_TRESCI_v2.md`, `olimpiada/OLIMPIADA_8_MASTER.md`.', '']
+       'Listy tematów (plan) są osobno: `chemia/plany/CHE_SPIS_TRESCI.md`, `polski/POL_SPIS_TRESCI_v2.md`, `olimpiada/OLIMPIADA_8_MASTER.md`.', '', LEGENDA, '']
 tot = 0
 for nazwa, wz in ZRODLA:
     fs = sorted(glob.glob(wz))
     if not fs: continue
-    out += ['## %s (%d lekcji)' % (nazwa, len(fs)), '', '| plik | etap LKO 2026/27 | KB | wiz. | @opis | uwagi |', '|---|---|---:|---:|---:|---|']
+    out += ['## %s (%d lekcji)' % (nazwa, len(fs)), '', '| plik | etap LKO 2026/27 | warstwy | KB | wiz. | @opis | uwagi |', '|---|---|---|---:|---:|---:|---|']
     for f in fs:
         t = open(f, encoding='utf-8', errors='replace').read()
         v, o = len(WIZ.findall(t)), len(OPIS.findall(t)); kb = os.path.getsize(f) // 1024; tot += kb
         uw = 'dług @opis: %d (zob. narzedzia/opis_dlug.json)' % (v - o) if v > o else ''
         if re.search(r'poza zakresem LKO 2025/26', t): uw += (' ' if uw else '') + 'oznaczenia „poza zakresem 2025/26” — sprawdzić z 2026/27'
-        out.append('| `%s` | %s | %d | %d | %d | %s |' % (os.path.basename(f), etap(os.path.basename(f)[:-3]), kb, v, o, uw))
+        out.append('| `%s` | %s | %s | %d | %d | %d | %s |' % (os.path.basename(f), etap(os.path.basename(f)[:-3]), warstwy(t), kb, v, o, uw))
     out.append('')
-out.append('Razem: %d KB.' % tot)
+out += ['## biologia — planowane lekcje (brak plików; zakres w `biologia/plany/PLAN_BRAKUJACE_LEKCJE.md`)', '', '| kod | temat | etap LKO |', '|---|---|---|']
+out += ['| %s | %s | %s |' % x for x in PLANOWANE_BIO]
+out += ['', 'Razem: %d KB.' % tot]
 open('SPIS_LEKCJI.md', 'w', encoding='utf-8').write('\n'.join(out) + '\n')
 print('SPIS_LEKCJI.md', tot, 'KB')
 
@@ -72,18 +85,22 @@ def wiersze(wz, dist, baza):
         if h and os.path.exists(h): lnk = '<a href="%s">%s</a>' % (H.escape(os.path.relpath(h, baza)), H.escape(n))
         else: lnk = '<a href="%s">%s</a>' % (H.escape(os.path.relpath(f, baza)), H.escape(n)) + (' <span class="s">(md; html: zbuduj)</span>' if dist else '')
         uw = '<span class="w">dług @opis: %d</span>' % (v - o) if v > o else ''
-        r.append('<tr><td>%s</td><td>%s</td><td class="n">%d</td><td class="n">%d</td><td>%s</td></tr>' % (lnk, H.escape(etap(n)), kb, v, uw))
+        r.append('<tr><td>%s</td><td>%s</td><td class="s">%s</td><td class="n">%d</td><td class="n">%d</td><td>%s</td></tr>' % (lnk, H.escape(etap(n)), H.escape(warstwy(t)), kb, v, uw))
     return r
 def strona(tyt, sekcje, baza, kryt):
     h = ['<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>%s</title>%s</head><body><h1>%s</h1>' % (H.escape(tyt), CSS, H.escape(tyt)), TERM]
+    h.append('<div class="box s">%s</div>' % H.escape(LEGENDA.replace('**', '')))
     h.append('<p class="s">Generowane: <code>python3 narzedzia/spis_lekcji.py</code> (%s). Linki do html działają po zbudowaniu lekcji (katalogi dist/ nie są w repo).</p>' % datetime.date.today())
     for naz, wz, dist in sekcje:
         rw = wiersze(wz, dist, baza)
         if not rw: continue
-        h.append('<h2>%s (%d)</h2><table><tr><th>lekcja</th><th>etap LKO 2026/27</th><th class="n">KB</th><th class="n">wiz.</th><th>uwagi</th></tr>%s</table>' % (H.escape(naz), len(rw), ''.join(rw)))
+        h.append('<h2>%s (%d)</h2><table><tr><th>lekcja</th><th>etap LKO 2026/27</th><th>warstwy</th><th class="n">KB</th><th class="n">wiz.</th><th>uwagi</th></tr>%s</table>' % (H.escape(naz), len(rw), ''.join(rw)))
+    if kryt == 'biologia':
+        h.append('<h2>Planowane lekcje (brak plików)</h2><table><tr><th>kod</th><th>temat</th><th>etap LKO</th></tr>%s</table>' % ''.join(
+            '<tr><td>%s</td><td>%s</td><td>%s</td></tr>' % tuple(H.escape(y) for y in x) for x in PLANOWANE_BIO))
     return ''.join(h) + '</body></html>'
 for kat, tyt, sek in PRZEDMIOTY:
-    open(os.path.join(kat, 'INDEKS.html'), 'w', encoding='utf-8').write(strona('Indeks lekcji — ' + tyt, sek, kat, None))
+    open(os.path.join(kat, 'INDEKS.html'), 'w', encoding='utf-8').write(strona('Indeks lekcji — ' + tyt, sek, kat, kat))
 open('INDEKS.html', 'w', encoding='utf-8').write(strona('Indeks lekcji — wszystkie przedmioty', [x for _, _, s in PRZEDMIOTY for x in s], '.', None).replace(
     '</h1>', '</h1><p>Indeksy przedmiotów: <a href="chemia/INDEKS.html">chemia</a> · <a href="biologia/INDEKS.html">biologia</a> · <a href="polski/INDEKS.html">polski</a> · <a href="SPIS_LEKCJI.md">spis md</a></p>', 1))
 print('INDEKS.html + indeksy przedmiotów')

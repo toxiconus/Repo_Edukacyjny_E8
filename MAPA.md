@@ -3,7 +3,7 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (13 pl., 122 KB)
+## .  (14 pl., 134 KB)
 - (zwinięte; `ls .`)
 
 ## angielski  (9 pl., 1.8 MB)
@@ -31,7 +31,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIOLOGIA_L015_MEJOZA.html` 85 KB
 - ⚠`BIOLOGIA_L017_PUNNETT (2).html` 88 KB
 - ⚠`BIOLOGIA_PODSTAWA_PLUS_v3.9_working (5).md` 578 KB
-- `INDEKS.html` 3 KB
+- `INDEKS.html` 5 KB
 - ⚠`L000-INDEKS-ROKU_MASTER_v1.0 (8) (1).html` 54 KB
 - `STAN_LEKCJI_PODSTAWA_PLUS.md` 15 KB
 
@@ -39,7 +39,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `BIO_KATALOG.md` 3 KB
 - `PRZEKAZANIE.md` 3 KB
 
-## biologia/bio/md  (12 pl., 309 KB)
+## biologia/bio/md  (12 pl., 342 KB)
 - `B10_powtorka_uklady_czlowieka.md` 18 KB
 - `B1b_krzyzowki_mendel.md` 22 KB
 - `B2a_skora_i_uklad_ruchu.md` 18 KB
@@ -50,8 +50,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `B2f_rozmnazanie_i_rozwoj.md` 17 KB
 - `B2g_homeostaza.md` 31 KB
 - ⚠`L010_dna_od_zera.md` 51 KB
-- `REV01_organizacja_i_chemizm_zycia.md` 30 KB
-- ⚠`REV02_roznorodnosc_zycia.md` 55 KB
+- ⚠`REV01_organizacja_i_chemizm_zycia.md` 52 KB
+- ⚠`REV02_roznorodnosc_zycia.md` 66 KB
 
 ## biologia/bio/narzedzia  (2 pl., 10 KB)
 - `md2html_bio.py` 8 KB
@@ -71,7 +71,12 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`L014_jak_komorki_ciala_powstaja_i.md` 57 KB
 - ⚠`X01_szablon_lekcji.md` 60 KB
 
-## biologia/plany/audyty  (10 pl., 225 KB)
+## biologia/plany  (1 pl., 3 KB)
+- `PLAN_BRAKUJACE_LEKCJE.md` 3 KB
+
+## biologia/plany/audyty  (12 pl., 298 KB)
+- ⚠`W1_perplexity_REV01_chemizm_2026-10-19.md` 51 KB
+- `W1_perplexity_REV02_tura1_2026-10-20.md` 22 KB
 - `W1_zadanie10_B10_2026-10-18.md` 23 KB
 - `W1_zadanie17_genetyka_mendel_2026-10-18.md` 24 KB
 - `W1_zadanie7_bio_luki_REV01_REV02_2026-10-18.md` 33 KB
@@ -87,8 +92,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIO.010x.v01.00.html` 107 KB
 - `BIO.011w.v01.00.html` 27 KB
 
-## chemia  (2 pl., 7 KB)
-- `INDEKS.html` 7 KB
+## chemia  (2 pl., 9 KB)
+- `INDEKS.html` 9 KB
 - `PLAN_LEKCJI.md` 0 KB
 
 ## chemia/archiwum  (1 pl., 1 KB)
@@ -263,7 +268,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/engine/src/gfx/wspolne/widoki  (1 pl., 4 KB)
 - `che-test-silnika-v01.js` 4 KB
 
-## chemia/che-modular/engine/src/klocki  (41 pl., 249 KB)
+## chemia/che-modular/engine/src/klocki  (42 pl., 262 KB)
 - (zwinięte; `ls chemia/che-modular/engine/src/klocki`)
 
 ## chemia/che-modular/engine/src/klocki/dane  (1 pl., 11 KB)
@@ -517,13 +522,13 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `paczka_polski.py` 4 KB
 - `zbierz_lekcje.py` 17 KB
 
-## narzedzia  (8 pl., 52 KB)
+## narzedzia  (8 pl., 54 KB)
 - `audyt_do_kanonu.py` 5 KB
 - `latex2uni.py` 2 KB
 - `mapa.py` 2 KB
 - `opis_dlug.json` 0 KB
 - `opis_wizualizacji.py` 3 KB
-- `spis_lekcji.py` 7 KB
+- `spis_lekcji.py` 9 KB
 - `spis_polski.py` 9 KB
 - `szkielety_polski.py` 24 KB
 
