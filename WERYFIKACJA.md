@@ -428,3 +428,11 @@ Lekcje U01, U03, U04, U06, U08, U10, U11. Do zrobienia przez Sonneta — rozbie�
 - ROZBIEŻNOŚĆ (prędkość przewodzenia): B2d „ok. 40 m/s wobec ok. 8 m/s”, U08 „nawet ok. 100 m/s”. ZPE: 5–130 m/s dla nerwów obwodowych. Ujednolicić między B2d i U08 (lekcja B2d już oznacza wartości jako do potwierdzenia).
 - U03 (przełyk ok. 25 cm, dwunastnica 25–30 cm), U04 (tętno 60–80/min, 120/80 mmHg), U10 (Wadlow 272 cm), U11 (ciąża ok. 40 tygodni liczonych od OM, ok. 38 od zapłodnienia) — zgodne z podręcznikami; ZPE na tych stronach tych wartości nie podaje, więc zostają jako orientacyjne.
 - U01 (wiek i udział kości/mięśni) — tabela orientacyjna, bez źródła w ZPE; zostaje z dopiskiem orientacyjnie.
+
+## H-Z3 — partia 9: biochemia, estry, homeostaza (2026-10-20)
+
+Bez zmian w treści lekcji.
+
+- CHE.05.O13 (biochemia) — wartości energetyczne: lekcja „1 g tłuszczu = 38 kJ” wobec ZPE 39,4 kJ (9,4 kcal); białka i węglowodany 17,2 kJ (4,2 kcal) — lekcja podaje 4 kcal, zgodnie z ZPE po zaokrągleniu. Różnica 38 vs 39,4 kJ to zaokrąglenie podręcznikowe — do ujednolicenia przy kolejnej edycji (proponowane 39 kJ / 9 kcal).
+- CHE.05.O08 (estry) — estryfikacja równowagowa (strzałka ⇄), produkt kwasu etanowego z etanolem to etanian etylu (octan etylu) — zgodne. ZPE nie opisuje hydrolizy i zmydlania — lekcja zawiera je jako treść poza ZPE; zostaje.
+- BIO.02.B2g (homeostaza) — insulina obniża, glukagon podwyższa glikemię; ADH zwiększa wchłanianie wody w nerkach; prawidłowa temperatura ZPE 36,6 °C mieści się w zakresie lekcji (36,5–37,5 °C). ZPE nie nazywa sprzężenia zwrotnego ujemnego wprost — pojęcie zostaje (standard).
