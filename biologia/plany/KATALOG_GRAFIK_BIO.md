@@ -2,7 +2,7 @@
 
 Zasada: przed nowym rysunkiem sprawdź tę listę — używamy i ulepszamy istniejące (nowe i stare), nie dublujemy.
 
-## 1. Komponenty BIO (`biologia/bio/szablon/`: bio-viz.js legacy, bio-rysunki.js — małe komponenty z trybem podpisz, wizualizacje/ — biblioteka z gałęzi che-lekcje) — 80
+## 1. Komponenty BIO (`biologia/bio/szablon/`: bio-viz.js legacy, bio-rysunki.js — małe komponenty z trybem podpisz, wizualizacje/ — biblioteka z gałęzi che-lekcje) — 85
 
 | id | opis | plik | użyte w |
 |---|---|---|---|
@@ -38,6 +38,11 @@ Zasada: przed nowym rysunkiem sprawdź tę listę — używamy i ulepszamy istni
 | nablonki-rodzaje | Cztery rodzaje nabłonka na błonie podstawnej: płaski, sześcienny, walcowaty (z mikrokosmkami), urzęsiony; tryby poznaj / znajdź / podpisz | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
 | krew-skladniki | Składniki krwi: osocze, erytrocyty (bez jądra, dwuwklęsłe), leukocyty (z jądrem), płytki krwi; tryby poznaj / znajdź / podpisz | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
 | miesnie-trzy | Trzy rodzaje tkanki mięśniowej: szkieletowa (prążkowana, wielojądrowa), gładka (wrzecionowate komórki), sercowa (prążkowana, rozgałęziona, wstawki); tryby poznaj / znajdź | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
+| kwiat-budowa | Budowa kwiatu okrytonasiennego: działki kielicha, płatki korony, pręcik (nitka, pylnik), słupek (znamię, szyjka, zalążnia z zalążkiem), dno kwiatowe; tryby poznaj / znajd | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
+| polip-meduza | Dwie formy parzydełkowców: polip (osiadły, otworem gębowym do góry) i meduza (pływająca, otworem gębowym w dół); elementy: czułki, otwór gębowy, jama chłonąco-trawiąca, s | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
+| bezkregowce-sylwetki | Sylwetki bezkręgowców do rozpoznawania grup: gąbka, parzydełkowiec (polip), płaziniec, nicień, pierścienica, mięczak (ślimak), stawonóg; tryby poznaj / znajdź / podpisz | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
+| szyszki-iglaste | Szyszki i igły rodzimych roślin iglastych: sosna (igły po 2, szyszki zwisające), świerk (igły pojedyncze, szyszki zwisają), jodła (szyszki stoją), modrzew (igły w pęczkac | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
+| neurony-mielina | Dwa typy neuronów: z osłonką mielinową (impuls szybki, ok. 40 m/s i więcej, przewodzenie skokowe) i bez osłonki (wolniejszy, ok. 8 m/s); tryby poznaj / znajdź / podpisz | bio-rysunki.js | BIO.02.B2d.uklad_nerwowy_zmysly |
 | wentylacja | Mechanika oddychania: przepona, żebra, objętość klatki i płuc; animacja wdech ↔ wydech tam i z powrotem (autostart w widoku), suwak do ręcznego sterowania, opis fazy | bio-rysunki.js | BIO.02.B2c.oddychanie_wydalanie |
 | fotosynteza-oddychanie-krazenie | Chloroplast i mitochondrium: krążenie materii (glukoza, O₂, CO₂, H₂O) i przepływ energii (światło → ATP/ciepło); kropki płyną w pętli; tryby fotosynteza / oddychanie / ob | bio-rysunki.js | BIO.00.REV01.organizacja_i_chemizm_zycia |
 | podzial-komorki-skrot | Mitoza i mejoza (2n = 4) etap po etapie: chromosomy, chromatydy, liczba komórek; autostart w widoku (do przodu i od początku), strzałki ◀ ▶, przełącznik mitoza/mejoza; op | bio-rysunki.js | BIO.02.B2f.rozmnazanie_rozwoj [typ="mej"] |

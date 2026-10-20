@@ -35,6 +35,8 @@ Priorytet: biologia LKO etap szkolny, środa 21.10.2026, 9:00, 60 min. Nie pisa�
 - [ ] H-Z2. **To samo dla chemii** → `chemia/plany/MAPA_ZPE.md`; potem dla polskiego i fizyki, jeśli ZPE ma materiały.
 - [ ] H-Z3. **Sprawdzenie treści z ZPE:** dla lekcji z mapy porównać definicje i liczby z ZPE; rozbieżności i braki zakresu wpisać do `WERYFIKACJA.md`, oczywiste braki dopisać do lekcji (nie usuwając treści); wątpliwe zostawić Sonnetowi.
 
+- [ ] H-R1. **Zadania z rysunków arkuszy:** dla każdego nowego rysunku z `biologia/plany/ARKUSZE_RYSUNKI_POKRYCIE.md` dopisać do ćwiczeń właściwej lekcji 2–3 zadania w stylu konkursu (podpisz / przyporządkuj / oceń P–F) z kluczem; wzorce: arkusze w `olimpiada/` i `biologia/plany/ANALIZA_ARKUSZY_LKO_BIO.md`. Wątpliwe wypisać Sonnetowi.
+- [ ] H-R2. Sonnet: dorysować brakujące (sylwetki drzew i krzewów, mapa narządów człowieka) — zapisane w pliku pokrycia.
 - [ ] H-S1. **Skan reguł w biologii:** przejrzeć `biologia/bio/md/*.md` pod kątem (a) „10 zasad supernauki”, (b) planów czasowych (minuty/dni w planach powtórek), (c) sformułowań „do weryfikacji / do potwierdzenia”, (d) `@opis` brakujących przy `@rysunek`/`@klocek`. Wypisać listę (plik → linia → typ); poprawiać tylko (a) i (b) przez usunięcie, (c) i (d) zostawić Sonnetowi. Po kolei, bez pytania „dalej?”.
 - [ ] H-S2. **Spójność oznaczeń** w REV01/REV02: jednostki (kJ, kcal, %), pisownia pojęć (makroelementy, mikroelementy, sucha masa komórek), jednolity zapis wzorów. Poprawki mechaniczne, lista zmian w komentarzu commita.
 - [ ] H-S3. **Przepisanie kluczy zadań** w §12a REV01 na format punktacji LKO (kryterium → punkty) tam, gdzie klucz jest opisowy; nie zmieniać treści merytorycznej, wątpliwości wypisać.

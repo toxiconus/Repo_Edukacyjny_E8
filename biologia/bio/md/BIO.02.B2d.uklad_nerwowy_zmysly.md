@@ -73,6 +73,9 @@ Rdzeń przewodzi impulsy **w górę** (czuciowe, do mózgu) i **w dół** (rucho
 @viz neuron-budowa | Neuron — budowa | poznaj, znajdź, podpisz
 @opis Neuron z numerami: dendryty, ciało komórki z jądrem, akson, osłonka mielinowa, przewężenia Ranviera, zakończenia aksonu z kolbkami synaptycznymi. Wniosek: dendryty odbierają sygnał, akson przewodzi go dalej (szybciej dzięki osłonce, skokowo), a synapsa przekazuje go chemicznie następnej komórce.
 
+@viz neurony-mielina | Neuron bez osłonki i z osłonką mielinową | porównaj prędkość impulsu
+@opis Dwa neurony jeden pod drugim: górny ma gładki akson bez osłonki (impuls wolniejszy), dolny ma akson otoczony osłonką mielinową z przewężeniami Ranviera (impuls szybszy, przeskakuje między przewężeniami). Wniosek: mielina przyspiesza przewodzenie impulsu.
+
 **Neuron** to podstawowa jednostka układu nerwowego.
 
 - **Dendryty** — krótkie, rozgałęzione wypustki; przyjmują sygnały od innych neuronów lub receptorów.

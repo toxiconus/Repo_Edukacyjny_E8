@@ -297,6 +297,9 @@ Plemnie (anteridia) wytwarzają plemniki, rodnie (archegonia) — komórkę jajo
 
 ### 4.4 Nagonasienne {#nagonasienne}
 
+@viz szyszki-iglaste | Rodzime iglaste — igły i szyszki | kliknij, znajdź, podpisz
+@opis Pięć rodzimych roślin iglastych z charakterystycznymi szyszkami: sosna (igły po dwie, szyszki zwisające), świerk (długie zwisające szyszki), jodła (szyszki stojące), modrzew (małe szyszki, miękkie igły w pęczkach), jałowiec (szyszkojagody). Wniosek: gatunek rozpoznaje się po igłach i położeniu szyszek.
+
 ::: karta core | Sosna zwyczajna — budowa
 - **korzeń palowy** (głęboki) i boczne, **pień** z korą i żywicą, igły **po dwie** na krótkopędach;
 - **szyszki męskie** — wytwarzają pyłek (zapylanie przez **wiatr**);
@@ -315,6 +318,9 @@ Plemnie (anteridia) wytwarzają plemniki, rodnie (archegonia) — komórkę jajo
 **Znaczenie:** tworzą lasy iglaste (tlen, siedliska, ochrona gleby), drewno, papier, żywica, olejki; nasiona — pokarm zwierząt.
 
 ### 4.5 Okrytonasienne {#okrytonasienne}
+
+@viz kwiat-budowa | Budowa kwiatu | kliknij część, znajdź, podpisz
+@opis Przekrój podłużny przez kwiat: na dnie kwiatowym działki kielicha i płatki korony; po bokach pręciki (nitka z żółtym pylnikiem), pośrodku słupek (znamię, szyjka, zalążnia z zalążkami). Wniosek: pręcik jest męskim organem, słupek żeńskim, a z zalążni po zapłodnieniu powstaje owoc.
 
 @viz cykl {cykl="kwiat"} | Cykl okrytonasiennych | animacja startuje sama, kliknij etap
 @opis Pierścień: roślina z kwiatem (2n) → mejoza (pyłek, woreczek zalążkowy) → zapylenie → podwójne zapłodnienie (zygota 2n + bielmo 3n) → nasiono i owoc. Wniosek: gametofity są silnie uproszczone i ukryte w kwiecie, dominuje sporofit.
@@ -532,6 +538,9 @@ T6. a) Nabłonek walcowaty (jednowarstwowy); wchłanianie substancji odżywczych
 
 ### Gąbki i parzydełkowce {#gabki-parzydelkowce}
 
+@viz polip-meduza | Polip i meduza | kliknij część, znajdź, podpisz
+@opis Po lewej polip: walcowate ciało przytwierdzone stopą, u góry otwór gębowy otoczony czułkami. Po prawej meduza: galaretowaty parasol, z dołu ramiona gębowe i czułki. Wniosek: to ten sam plan budowy (dwie warstwy ciała, jeden otwór gębowy), tylko w formie osiadłej i pływającej.
+
 **Gąbki (Porifera)** — wodne zwierzęta osiadłe, bez prawdziwych tkanek i bez układu nerwowego. Woda wpływa do ciała przez pory, a wypływa przez większy otwór (osculum). Nie mają ust ani odbytu.
 
 **Parzydełkowce (Cnidaria)** — wodne zwierzęta z tkankami (nabłonkowa, mięśniowa, nerwowa), z jednym otworem pełniącym rolę ust i odbytu, otoczonym parzydełkami (knidocytami). Mają symetrię promienistą i występują jako polip (np. hydra, ukwiał) lub meduza.
@@ -643,6 +652,9 @@ Inne pasożytnicze nicienie: glista ludzka (niemyte warzywa i owoce), włosień 
 **Znaczenie:** pokarm, oczyszczanie wody przez małże, perły; ślimaki nagie niszczą uprawy; niektóre są żywicielami pośrednimi pasożytów.
 
 ### 7.6 Rozpoznawanie bezkręgowców {#rozpoznaj-bezkregowce}
+
+@viz bezkregowce-sylwetki | Sylwetki bezkręgowców — rozpoznaj grupę | kliknij, znajdź, podpisz
+@opis Siedem uproszczonych sylwetek: gąbka (bezkształtna z porami), parzydełkowiec (walec z czułkami), płaziniec (płaski listek), nicień (cienka nitka), pierścienica (ciało z pierścieniami), ślimak (muszla i noga), stawonóg (pancerz i odnóża). Wniosek: grupę rozpoznaje się po kształcie ciała i obecności segmentów, muszli lub odnóży.
 
 ::: karta core | Klucz — po jednej najważniejszej cesze
 - ciało płaskie jak listek lub taśma → **płaziniec**;

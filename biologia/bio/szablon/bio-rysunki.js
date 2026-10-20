@@ -460,6 +460,64 @@ mount:function(el){
     {n:'wstawki',m:[345,130],z:1,d:'Połączenia między komórkami mięśnia sercowego: przekazują pobudzenie, dzięki czemu komórki kurczą się zgodnie.',draw:function(g){[[290,40],[326,70],[320,100],[322,12]].forEach(function(p){g.appendChild(L(p[0],p[1]-8,p[0],p[1]+8,'#222',2.4))})}}
   ]}}})}});
 
+BIO.define('kwiat-budowa',{opis:'Budowa kwiatu okrytonasiennego: działki kielicha, płatki korony, pręcik (nitka, pylnik), słupek (znamię, szyjka, zalążnia z zalążkiem), dno kwiatowe; tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  lab(el,{get:function(){return{w:360,h:260,label:'Przekrój podłużny przez kwiat',parts:[
+    {n:'dno kwiatowe',m:[180,246],z:-2,d:'Rozszerzony koniec szypułki, do którego przyczepione są wszystkie części kwiatu.',draw:function(g){g.appendChild(E(180,214,34,10,'#cfe3b4','#4f7a2a',2));g.appendChild(P('M180,224 L180,258',null,'#4f7a2a',5))}},
+    {n:'działki kielicha',m:[100,222],d:'Zielone listki na zewnątrz kwiatu; chronią pąk, a po rozwinięciu podtrzymują koronę.',draw:function(g){g.appendChild(P('M150,212 Q116,214 104,186 Q132,196 156,208',"#8fcf7a",'#2e7d32',2));g.appendChild(P('M210,212 Q244,214 256,186 Q228,196 204,208',"#8fcf7a",'#2e7d32',2))}},
+    {n:'płatki korony',m:[84,150],d:'Barwne płatki; zwabiają owady zapylające (u roślin owadopylnych). Razem tworzą koronę.',draw:function(g){g.appendChild(P('M150,206 Q92,196 96,120 Q132,140 156,196',"#f6a9c6",'#b83f78',2));g.appendChild(P('M210,206 Q268,196 264,120 Q228,140 204,196',"#f6a9c6",'#b83f78',2))}},
+    {n:'nitka pręcika',m:[128,176],d:'Cienka „szypułka” pręcika, na której osadzony jest pylnik.',draw:function(g){g.appendChild(P('M146,206 L134,130',null,'#8a7a20',4));g.appendChild(P('M214,206 L226,130',null,'#8a7a20',4))}},
+    {n:'pylnik',m:[112,112],d:'Zgrubienie na końcu pręcika; w nim powstaje pyłek (męskie gametofity). Nitka + pylnik = pręcik, męski organ kwiatu.',draw:function(g){g.appendChild(E(134,122,11,16,'#ffe066','#b38f00',2,-10));g.appendChild(E(226,122,11,16,'#ffe066','#b38f00',2,10))}},
+    {n:'znamię słupka',m:[210,52],d:'Lepka powierzchnia na szczycie słupka; tu osiada pyłek podczas zapylenia.',draw:function(g){g.appendChild(E(180,60,17,9,'#f0a45a','#a85a10',2))}},
+    {n:'szyjka słupka',m:[218,100],d:'Cienki odcinek między znamieniem a zalążnią; przez nią rośnie łagiewka pyłkowa.',draw:function(g){g.appendChild(P('M180,68 L180,160',null,'#7aa63a',9))}},
+    {n:'zalążnia',m:[236,176],d:'Rozszerzona dolna część słupka; w środku są zalążki. Po zapłodnieniu z zalążni powstaje owoc, a z zalążków nasiona.',draw:function(g){g.appendChild(E(180,184,32,30,'#e3f0c8','#4f7a2a',2.4))}},
+    {n:'zalążek',m:[180,200],z:1,d:'Mały, owalny twór w zalążni; zawiera komórkę jajową. Po zapłodnieniu rozwija się w nasiono.',draw:function(g){g.appendChild(E(172,184,8,11,'#fff','#7a3fbf',2));g.appendChild(E(188,190,8,11,'#fff','#7a3fbf',2))}}
+  ]}}})}});
+
+BIO.define('polip-meduza',{opis:'Dwie formy parzydełkowców: polip (osiadły, otworem gębowym do góry) i meduza (pływająca, otworem gębowym w dół); elementy: czułki, otwór gębowy, jama chłonąco-trawiąca, stopa, parasol; tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  lab(el,{get:function(){return{w:360,h:240,label:'Polip i meduza',parts:[
+    {n:'polip',m:[40,224],z:-2,d:'Forma osiadła, walcowata; przytwierdzona stopą do podłoża, otwór gębowy z czułkami skierowany do góry (np. stułbia).',draw:function(g){g.appendChild(R(52,70,32,120,12,'#d7ecd0','#4f7a2a',2.2))}},
+    {n:'czułki z parzydełkami',m:[24,60],d:'Otaczają otwór gębowy; mają komórki parzydełkowe, którymi zwierzę paraliżuje zdobycz i się broni.',draw:function(g){[[52,70,30,34],[60,70,52,22],[76,70,84,22],[84,70,106,34]].forEach(function(p){g.appendChild(P('M'+p[0]+','+p[1]+' L'+p[2]+','+p[3],null,'#4f7a2a',3.4))})}},
+    {n:'otwór gębowy',m:[68,102],d:'Jedyny otwór prowadzący do jamy chłonąco-trawiącej; służy do pobierania pokarmu i usuwania resztek (brak odbytu).',draw:function(g){g.appendChild(E(68,72,9,5,'#8a3b3b','#5c1f1f',1.6))}},
+    {n:'jama chłonąco-trawiąca',m:[68,136],z:1,d:'Wnętrze ciała; pokarm trawiony jest w niej i wewnątrz komórek. Ściana ciała ma dwie warstwy: ektodermę i endodermę.',draw:function(g){g.appendChild(R(60,80,16,100,8,'#fff4d6','#b8860b',1.6))}},
+    {n:'stopa',m:[68,206],d:'Rozszerzone dolne zakończenie polipa; przytwierdza go do podłoża.',draw:function(g){g.appendChild(E(68,194,28,7,'#b9d4a8','#4f7a2a',2))}},
+    {n:'parasol (dzwon) meduzy',m:[260,34],d:'Galaretowaty dzwon meduzy; skurcze parasola napędzają pływanie. Meduza ma otwór gębowy skierowany w dół.',draw:function(g){g.appendChild(P('M200,100 Q260,20 320,100 Q260,86 200,100Z',"#cfe6f7",'#2a6f97',2.4))}},
+    {n:'ramiona gębowe i czułki meduzy',m:[320,150],d:'Zwisają z dolnej strony parasola; czułki mają parzydełka, ramiona gębowe doprowadzają pokarm do otworu gębowego.',draw:function(g){[214,236,260,284,306].forEach(function(x){g.appendChild(P('M'+x+',98 Q'+(x+8)+',130 '+x+',160',null,'#2a6f97',2.6))});g.appendChild(P('M260,98 L260,140',null,'#8a3b3b',5))}}
+  ]}}})}});
+
+BIO.define('bezkregowce-sylwetki',{opis:'Sylwetki bezkręgowców do rozpoznawania grup: gąbka, parzydełkowiec (polip), płaziniec, nicień, pierścienica, mięczak (ślimak), stawonóg; tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  lab(el,{get:function(){return{w:360,h:200,label:'Sylwetki bezkręgowców',parts:[
+    {n:'gąbka',m:[40,70],d:'Osiadła, asymetryczna, bez tkanek i narządów; w ścianie ciała pory i komórki z wiciami.',draw:function(g){g.appendChild(P('M24,100 Q20,50 36,44 Q52,52 56,44 Q70,50 66,100Z',"#e8d9a8",'#8a7a30',2));[[38,70],[52,78],[44,90]].forEach(function(p){g.appendChild(C(p[0],p[1],2.4,'#8a7a30','none',0))})}},
+    {n:'parzydełkowiec',m:[130,70],d:'Symetria promienista, dwie warstwy ciała, czułki z parzydełkami, jeden otwór gębowy.',draw:function(g){g.appendChild(R(112,50,22,50,8,'#d7ecd0','#4f7a2a',2));[[112,50,102,36],[120,50,116,34],[130,50,134,34],[134,50,146,36]].forEach(function(p){g.appendChild(P('M'+p[0]+','+p[1]+' L'+p[2]+','+p[3],null,'#4f7a2a',2.6))})}},
+    {n:'płaziniec',m:[230,56],d:'Ciało spłaszczone grzbietobrzusznie, niesegmentowane, bez jamy ciała; jeden otwór gębowy (np. wypławek, tasiemiec).',draw:function(g){g.appendChild(P('M190,60 Q230,46 270,60 Q240,80 190,60Z',"#d9c3e8",'#7a3fbf',2))}},
+    {n:'nicień',m:[320,56],d:'Walcowate, nitkowate ciało, niesegmentowane, zwężone na końcach; jama ciała pierwotna, układ pokarmowy z otworem gębowym i odbytem (glista ludzka).',draw:function(g){g.appendChild(P('M284,60 Q304,46 324,60 Q344,74 354,58',null,'#c98b5c',7))}},
+    {n:'pierścienica',m:[60,168],d:'Ciało podzielone na jednakowe pierścienie (segmenty); jama ciała wtórna, zamknięty układ krwionośny (dżdżownica, pijawka).',draw:function(g){g.appendChild(R(20,150,100,20,10,'#f0b8b0','#b5483a',2));for(var x=34;x<116;x+=11)g.appendChild(L(x,151,x,169,'#b5483a',1.4));g.appendChild(R(38,146,28,28,0,'none','none',0))}},
+    {n:'mięczak (ślimak)',m:[180,168],d:'Ciało miękkie, niesegmentowane: głowa, noga i worek trzewiowy; często muszla (ślimaki, małże, głowonogi).',draw:function(g){g.appendChild(P('M150,176 L210,176 Q214,168 204,166 L168,166Z',"#d9c8a8",'#8a6a30',2));g.appendChild(C(176,150,18,'#e8c898','#8a6a30',2));g.appendChild(P('M176,150 m-10,0 a10,10 0 1,1 10,10',null,'#8a6a30',1.4));g.appendChild(P('M150,170 L146,152',null,'#8a6a30',2))}},
+    {n:'stawonóg',m:[300,168],d:'Ciało okryte chitynowym pancerzem, podzielone na odcinki, odnóża stawowe (owady, pajęczaki, skorupiaki).',draw:function(g){g.appendChild(E(300,160,26,10,'#c9b38c','#6a5430',2));g.appendChild(C(268,158,8,'#c9b38c','#6a5430',2));[[290,170,284,190],[300,170,300,190],[312,170,318,190]].forEach(function(p){g.appendChild(P('M'+p[0]+','+p[1]+' L'+p[2]+','+p[3],null,'#6a5430',2))})}}
+  ]}}})}});
+
+BIO.define('szyszki-iglaste',{opis:'Szyszki i igły rodzimych roślin iglastych: sosna (igły po 2, szyszki zwisające), świerk (igły pojedyncze, szyszki zwisają), jodła (szyszki stoją), modrzew (igły w pęczkach, małe szyszki), jałowiec; tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  function cone(g,x,y,w,h,f,s,up){g.appendChild(E(x,y,w,h,f,s,2));for(var k=-1;k<=1;k++)g.appendChild(P('M'+(x-w)+','+(y+k*h*.5)+' Q'+x+','+(y+k*h*.5+(up?-5:5))+' '+(x+w)+','+(y+k*h*.5),null,s,1.2))}
+  lab(el,{get:function(){return{w:360,h:200,label:'Szyszki roślin iglastych',parts:[
+    {n:'sosna zwyczajna',m:[40,170],d:'Igły po dwie w krótkopędzie; szyszki jajowate, zwisające, drewniejące. Jedyny rodzimy gatunek z igłami po 2.',draw:function(g){cone(g,40,86,16,28,'#c9a06a','#6a4a20');g.appendChild(P('M40,58 L40,30',null,'#6a4a20',3));g.appendChild(P('M40,30 L24,8',null,'#2e7d32',1.8));g.appendChild(P('M42,30 L58,8',null,'#2e7d32',1.8))}},
+    {n:'świerk pospolity',m:[120,170],d:'Igły pojedyncze, kłujące, czworokanciaste; szyszki długie, walcowate, zwisają i opadają w całości.',draw:function(g){cone(g,120,92,14,38,'#b98856','#5a3a18');g.appendChild(P('M120,54 L120,26',null,'#5a3a18',3));[[-12,0],[12,0],[0,-10]].forEach(function(o){g.appendChild(P('M120,28 L'+(120+o[0]*2)+','+(10+o[1]),null,'#2e7d32',1.8))})}},
+    {n:'jodła pospolita',m:[200,170],d:'Igły płaskie z dwoma jasnymi paskami od spodu; szyszki stoją na gałęzi (pionowo) i rozpadają się na drzewie.',draw:function(g){cone(g,200,86,12,30,'#a99070','#4a3a28',true);g.appendChild(P('M200,116 L200,140',null,'#4a3a28',3));g.appendChild(P('M170,140 L230,140',null,'#2e7d32',4))}},
+    {n:'modrzew europejski',m:[274,170],d:'Igły miękkie, w pęczkach; opadają na zimę. Szyszki małe, jajowate, stoją.',draw:function(g){cone(g,274,98,10,16,'#c4a77a','#6a5030',true);[[250,60],[270,52],[290,60]].forEach(function(p){for(var a=-2;a<=2;a++)g.appendChild(P('M'+p[0]+','+p[1]+' L'+(p[0]+a*4)+','+(p[1]-18),null,'#7aa63a',1.4))})}},
+    {n:'jałowiec pospolity',m:[336,170],d:'Igły kłujące po 3 w okółkach; „szyszkojagody” — mięsiste, niebieskawe, bez łusek.',draw:function(g){g.appendChild(C(338,92,13,'#4a5a8a','#2a3a6a',2));g.appendChild(P('M338,106 L338,128',null,'#2e7d32',3));[[-12,-12],[12,-12],[-14,6],[14,6]].forEach(function(o){g.appendChild(P('M338,70 L'+(338+o[0]*1.5)+','+(50+o[1]),null,'#2e7d32',1.8))})}}
+  ]}}})}});
+
+BIO.define('neurony-mielina',{opis:'Dwa typy neuronów: z osłonką mielinową (impuls szybki, ok. 40 m/s i więcej, przewodzenie skokowe) i bez osłonki (wolniejszy, ok. 8 m/s); tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  lab(el,{get:function(){return{w:360,h:220,label:'Neuron bez osłonki i z osłonką mielinową',parts:[
+    {n:'neuron A — bez osłonki',m:[24,100],d:'Akson bez mieliny; impuls przesuwa się ciągle, krok po kroku — wolniej (rząd 1–10 m/s).',draw:function(g){g.appendChild(C(40,50,16,'#c4d0f2','#3f5aa8',2));g.appendChild(P('M56,50 L340,50',null,'#3f5aa8',4));g.appendChild(P('M24,40 L8,26',null,'#3f5aa8',3));g.appendChild(P('M24,60 L8,74',null,'#3f5aa8',3))}},
+    {n:'neuron B — z osłonką mielinową',m:[24,190],d:'Akson otoczony mieliną (komórki Schwanna); impuls „przeskakuje” między przewężeniami Ranviera — kilkanaście razy szybciej (np. 40–120 m/s).',draw:function(g){g.appendChild(C(40,150,16,'#c4d0f2','#3f5aa8',2));g.appendChild(P('M56,150 L340,150',null,'#3f5aa8',4));g.appendChild(P('M24,140 L8,126',null,'#3f5aa8',3));g.appendChild(P('M24,160 L8,174',null,'#3f5aa8',3))}},
+    {n:'osłonka mielinowa',m:[160,130],z:1,d:'Tłuszczowa „izolacja” aksonu — to ona umożliwia szybsze przewodzenie impulsu. Nazwa substancji: mielina.',draw:function(g){[0,1,2,3,4].forEach(function(i){g.appendChild(R(74+i*52,138,44,24,10,'#f3f0d0','#8a8450',1.8))})}},
+    {n:'przewężenie Ranviera',m:[236,176],d:'Odsłonięty fragment aksonu między odcinkami mieliny; w nim powstaje impuls, który przeskakuje do następnego przewężenia.',draw:function(g){[118,170,222,274].forEach(function(x){g.appendChild(R(x-3,142,6,16,2,'#ffcdd2','#c62828',1.6))})}}
+  ]}}})}});
+
 var OD=0;
 BIO.define('wentylacja',{opis:'Mechanika oddychania: przepona, żebra, objętość klatki i płuc; animacja wdech ↔ wydech tam i z powrotem (autostart w widoku), suwak do ręcznego sterowania, opis fazy',
 mount:function(el){
