@@ -50,6 +50,9 @@ Dwutlenek węgla z powietrza dostaje się do liścia głównie przez **aparaty s
 Korzenie pobierają również sole mineralne. Są one niezbędne do prawidłowego wzrostu i budowy wielu cząsteczek, ale nie stanowią głównego źródła węgla w suchej masie rośliny. Węgiel wbudowywany w cukry pochodzi przede wszystkim z CO₂, a nie z gleby.
 
 ## 5. Chloroplast, chlorofil i liść
+
+@viz liscie-rodzaje | Liść: blaszka, ogonek, nerwacja, liść złożony | kliknij, znajdź, podpisz
+@opis Rysunek pokazuje zieloną blaszkę z ogonkiem i nerwami, liść pojedynczy, liść złożony pierzasty (listki wzdłuż osi), liść złożony dłoniasty (listki z jednego punktu) oraz liść z równoległymi nerwami. Wniosek: liść złożony ma wiele listków na jednej osi, a rodzaj użyłkowania (siatkowate lub równoległe) wskazuje grupę roślin.
 Chloroplasty są organellami komórek roślinnych i glonów, w których przebiega fotosynteza. Chlorofil jest barwnikiem pochłaniającym energię światła; zielony kolor liści wynika z tego, że chlorofil pochłania część długości fal silniej, a część światła jest odbijana lub przepuszczana.
 
 Budowa liścia sprzyja fotosyntezie: duża powierzchnia ułatwia przechwytywanie światła, miękisz asymilacyjny zawiera liczne chloroplasty, aparaty szparkowe umożliwiają wymianę gazową, a wiązki przewodzące transportują wodę, sole mineralne i produkty organiczne.

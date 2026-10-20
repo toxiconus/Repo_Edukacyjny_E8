@@ -115,6 +115,9 @@ Przy większym powiększeniu zwykle widzimy mniejszy obszar preparatu. Dlatego o
 
 ## 10. Preparat mikroskopowy — od próbki do obrazu
 
+@viz preparat-mikroskopowy | Preparat ze skórki cebuli — elementy | poznaj, znajdź, podpisz
+@opis Przekrój boczny preparatu: na dole szkiełko podstawowe, na nim kropla wody ze skórką cebuli, nad nią cienkie szkiełko nakrywkowe; obok zakraplacz. Wniosek: obiekt leży w kropli wody między dwoma szkiełkami, a nakrywkowe przykłada się pod kątem, by uniknąć pęcherzyków powietrza.
+
 1. Przygotuj czyste szkiełko podstawowe i odpowiedni materiał.
 2. Jeśli wykonujesz preparat mokry, umieść małą kroplę wody i cienki fragment próbki.
 3. Opuszczaj szkiełko nakrywkowe pod kątem, aby ograniczyć pęcherzyki powietrza.

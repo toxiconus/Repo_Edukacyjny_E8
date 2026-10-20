@@ -2,7 +2,7 @@
 
 Zasada: przed nowym rysunkiem sprawdź tę listę — używamy i ulepszamy istniejące (nowe i stare), nie dublujemy.
 
-## 1. Komponenty BIO (`biologia/bio/szablon/`: bio-viz.js legacy, bio-rysunki.js — małe komponenty z trybem podpisz, wizualizacje/ — biblioteka z gałęzi che-lekcje) — 91
+## 1. Komponenty BIO (`biologia/bio/szablon/`: bio-viz.js legacy, bio-rysunki.js — małe komponenty z trybem podpisz, wizualizacje/ — biblioteka z gałęzi che-lekcje) — 93
 
 | id | opis | plik | użyte w |
 |---|---|---|---|
@@ -35,20 +35,22 @@ Zasada: przed nowym rysunkiem sprawdź tę listę — używamy i ulepszamy istni
 | krazenie | Obieg krwi: prawy przedsionek → prawa komora → płuca → lewy przedsionek → lewa komora → ciało → …; kropla krwi krąży sama (niebieska = odtlenowana, czerwona = utlenowana) | bio-rysunki.js | BIO.02.B10.powtorka_uklady_czlowieka |
 | neuron-budowa | Neuron: dendryty, ciało komórki, jądro, akson, osłonka mielinowa, przewężenia Ranviera, zakończenia aksonu (synapsa); tryby poznaj / znajdź / podpisz | bio-rysunki.js | BIO.02.B2d.uklad_nerwowy_zmysly |
 | nefron-budowa | Nefron: kłębuszek, torebka Bowmana, kanalik bliższy, pętla Henlego, kanalik dalszy, kanalik zbiorczy, tętniczki, naczynia okołokanalikowe; tryby poznaj / znajdź / podpisz | bio-rysunki.js | BIO.02.B2c.oddychanie_wydalanie |
-| nablonki-rodzaje | Cztery rodzaje nabłonka na błonie podstawnej: płaski, sześcienny, walcowaty (z mikrokosmkami), urzęsiony; tryby poznaj / znajdź / podpisz | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
-| krew-skladniki | Składniki krwi: osocze, erytrocyty (bez jądra, dwuwklęsłe), leukocyty (z jądrem), płytki krwi; tryby poznaj / znajdź / podpisz | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
-| miesnie-trzy | Trzy rodzaje tkanki mięśniowej: szkieletowa (prążkowana, wielojądrowa), gładka (wrzecionowate komórki), sercowa (prążkowana, rozgałęziona, wstawki); tryby poznaj / znajdź | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
+| nablonki-rodzaje | Cztery rodzaje nabłonka na błonie podstawnej: płaski, sześcienny, walcowaty (z mikrokosmkami), urzęsiony; tryby poznaj / znajdź / podpisz | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia; BIO.01.L004.organizacja_budowy_organizmu_od_komorki |
+| krew-skladniki | Składniki krwi: osocze, erytrocyty (bez jądra, dwuwklęsłe), leukocyty (z jądrem), płytki krwi; tryby poznaj / znajdź / podpisz | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia; BIO.07.U04.krazenie_krew_odpornosc |
+| miesnie-trzy | Trzy rodzaje tkanki mięśniowej: szkieletowa (prążkowana, wielojądrowa), gładka (wrzecionowate komórki), sercowa (prążkowana, rozgałęziona, wstawki); tryby poznaj / znajdź | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia; BIO.02.B2a.skora_uklad_ruchu; BIO.07.U01.skora_i_uklad_ruchu |
 | kwiat-budowa | Budowa kwiatu okrytonasiennego: działki kielicha, płatki korony, pręcik (nitka, pylnik), słupek (znamię, szyjka, zalążnia z zalążkiem), dno kwiatowe; tryby poznaj / znajd | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
 | polip-meduza | Dwie formy parzydełkowców: polip (osiadły, otworem gębowym do góry) i meduza (pływająca, otworem gębowym w dół); elementy: czułki, otwór gębowy, jama chłonąco-trawiąca, s | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
 | bezkregowce-sylwetki | Sylwetki bezkręgowców do rozpoznawania grup: gąbka, parzydełkowiec (polip), płaziniec, nicień, pierścienica, mięczak (ślimak), stawonóg; tryby poznaj / znajdź / podpisz | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
 | szyszki-iglaste | Szyszki i igły rodzimych roślin iglastych: sosna (igły po 2, szyszki zwisające), świerk (igły pojedyncze, szyszki zwisają), jodła (szyszki stoją), modrzew (igły w pęczkac | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
-| neurony-mielina | Dwa typy neuronów: z osłonką mielinową (impuls szybki, ok. 40 m/s i więcej, przewodzenie skokowe) i bez osłonki (wolniejszy, ok. 8 m/s); tryby poznaj / znajdź / podpisz | bio-rysunki.js | BIO.02.B2d.uklad_nerwowy_zmysly |
+| neurony-mielina | Dwa typy neuronów: z osłonką mielinową (impuls szybki, ok. 40 m/s i więcej, przewodzenie skokowe) i bez osłonki (wolniejszy, ok. 8 m/s); tryby poznaj / znajdź / podpisz | bio-rysunki.js | BIO.02.B2d.uklad_nerwowy_zmysly; BIO.07.U08.uklad_nerwowy_i_zmysly |
 | drzewa-krzewy | Sylwetki roślin drzewiastych: drzewo liściaste (jeden pień, korona), drzewo iglaste (stożkowata korona), krzew (wiele pędów od ziemi), pnącze; tryby poznaj / znajdź / pod | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
 | mapa-narzadow | Sylwetka człowieka z narządami układów: mózg, tchawica i płuca, serce, wątroba, żołądek, trzustka, nerki, jelito cienkie, jelito grube, pęcherz moczowy; tryby poznaj / zn | bio-rysunki.js | BIO.02.B10.powtorka_uklady_czlowieka |
-| preparat-mikroskopowy | Preparat mikroskopowy ze skórki liścia cebuli w przekroju bocznym: szkiełko podstawowe, kropla wody, skórka cebuli, szkiełko nakrywkowe, zakraplacz; tryby poznaj / znajdź | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
+| preparat-mikroskopowy | Preparat mikroskopowy ze skórki liścia cebuli w przekroju bocznym: szkiełko podstawowe, kropla wody, skórka cebuli, szkiełko nakrywkowe, zakraplacz; tryby poznaj / znajdź | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia; BIO.01.L008.mikroskop_jak_obserwowac_komorke_a |
 | przeksztalcenia-organow | Przekształcenia organów roślin: korzeń spichrzowy (marchew), bulwa pędowa (ziemniak z oczkami), kłącze, cebula, rozłogi truskawki, wąsy czepne grochu i ciernie berberysu; | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
 | nasiono-ziarniak | Budowa nasienia fasoli (łupina, dwa liścienie, zarodek: korzeń zarodkowy i pączek) i ziarniaka zboża (owocnia zrośnięta z łupiną, bielmo, tarczka, zarodek); tryby poznaj  | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
 | zboza-klosy | Rozpoznawanie zbóż po kwiatostanie: pszenica (kłos zwarty, krótkie ości lub bez), żyto (kłos wąski z długimi ościami), jęczmień (kłos gęsty z bardzo długimi ościami), owi | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
+| liscie-rodzaje | Liść: blaszka i ogonek, liść pojedynczy i złożony (pierzasty, dłoniasty), użyłkowanie siatkowate, równoległe; tryby poznaj / znajdź / podpisz | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia; BIO.01.L006.fotosynteza_skad_roslina_bierze_materie |
+| owoce-rozsiewanie | Rozsiewanie owoców i nasion: wiatr (skrzydlak klonu, puch mniszka), zwierzęta (owoc przyczepny łopianu, mięsisty owoc jarzębiny), woda, samorzutnie (strąk grochu, niecier | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
 | wentylacja | Mechanika oddychania: przepona, żebra, objętość klatki i płuc; animacja wdech ↔ wydech tam i z powrotem (autostart w widoku), suwak do ręcznego sterowania, opis fazy | bio-rysunki.js | BIO.02.B2c.oddychanie_wydalanie |
 | fotosynteza-oddychanie-krazenie | Chloroplast i mitochondrium: krążenie materii (glukoza, O₂, CO₂, H₂O) i przepływ energii (światło → ATP/ciepło); kropki płyną w pętli; tryby fotosynteza / oddychanie / ob | bio-rysunki.js | BIO.00.REV01.organizacja_i_chemizm_zycia |
 | podzial-komorki-skrot | Mitoza i mejoza (2n = 4) etap po etapie: chromosomy, chromatydy, liczba komórek; autostart w widoku (do przodu i od początku), strzałki ◀ ▶, przełącznik mitoza/mejoza; op | bio-rysunki.js | BIO.02.B2f.rozmnazanie_rozwoj [typ="mej"] |

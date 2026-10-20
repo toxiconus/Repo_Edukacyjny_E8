@@ -97,6 +97,9 @@ Uwaga: podział czynnościowy (somatyczny/autonomiczny) **nie biegnie po nerwach
 
 ## 3 | Neuron i impuls nerwowy [[basic:E8]] {#neuron}
 
+@viz neurony-mielina | Neuron bez osłonki i z osłonką mielinową | porównaj prędkość impulsu
+@opis Dwa neurony jeden pod drugim: górny ma gładki akson bez osłonki (impuls wolniejszy), dolny ma akson otoczony osłonką mielinową z przewężeniami Ranviera (impuls szybszy, przeskakuje między przewężeniami). Wniosek: mielina przyspiesza przewodzenie impulsu.
+
 | Część neuronu | Budowa | Funkcja |
 |---|---|---|
 | **ciało komórki** | jądro, cytoplazma, organelle | steruje życiem komórki, łączy sygnały |

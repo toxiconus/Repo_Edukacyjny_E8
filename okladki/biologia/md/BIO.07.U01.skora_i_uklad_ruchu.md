@@ -254,6 +254,9 @@ Chrząstka stawowa, podobnie jak naskórek, **nie ma naczyń krwionośnych** —
 
 ## 10 | Mięśnie i antagonizm [[basic:E8]] {#miesnie}
 
+@viz miesnie-trzy | Trzy rodzaje mięśni | kliknij część rysunku
+@opis Trzy panele: mięsień szkieletowy — długie prążkowane włókna z jądrami przy brzegu; mięsień gładki — wrzecionowate komórki bez prążków; mięsień sercowy — prążkowane, rozgałęzione komórki połączone ciemnymi wstawkami. Wniosek: prążkowanie mają szkieletowy i sercowy, ale tylko szkieletowy działa zależnie od woli.
+
 **Mięsień szkieletowy** zbudowany jest z długich, wielojądrowych **włókien mięśniowych** (tkanka mięśniowa poprzecznie prążkowana szkieletowa) i przyczepia się do kości **ścięgnami**: zwykle jednym końcem do kości, która się nie porusza (przyczep początkowy), drugim — do kości poruszanej (przyczep końcowy). Podczas **skurczu** mięsień skraca się i grubieje, a energię bierze z **ATP** (oddychanie komórkowe — REV01).
 
 @viz staw-antagonizm | Zginanie i prostowanie łokcia | przesuń suwak i obserwuj mięśnie

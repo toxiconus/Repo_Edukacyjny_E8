@@ -10,7 +10,7 @@ Liczenie: każde wystąpienie dyrektywy `@model`, `@viz`, `@klocek`, `@zlewka` (
 |---|---|---|---|
 | 381 | 208 | 89 | 84 |
 
-Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobnie literówki lub klucze pracowni): **45**: `-`, `bezkregowce-sylwetki`, `caoh2Co2`, `cuoH2so4`, `cuso4Naoh`, `cykl`, `drzewa-krzewy`, `f02-czastki-v01`, `f04-nuklid-v01`, `fecl3Naoh`, `fotosynteza-oddychanie-krazenie`, `hclNaOH`, `jajo-porownanie`, `jajo-ptaka`, `komorki-porownanie`, `krazenie`, `krew-skladniki`, `kwiat-budowa`, `mapa-narzadow`, `mgO2`, `miesnie-trzy`, `mikroskop-budowa`, `naH2o`, `nablonki-rodzaje`, `nasiono-ziarniak`, `nefron-budowa`, `neuron-budowa`, `neurony-mielina`, `podzial-komorki-skrot`, `polip-meduza`, `preparat-mikroskopowy`, `przeksztalcenia-organow`, `rx-ag-cl`, `rx-cu-naoh`, `rx-fe-cuso4`, `ryba-budowa`, `serce-budowa`, `stawonogi-budowa`, `szereg`, `szyszki-iglaste`, `tkanki-zwierzece`, `wentylacja`, `wlasciwosci`, `wykres-dane`, `zboza-klosy`
+Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobnie literówki lub klucze pracowni): **47**: `-`, `bezkregowce-sylwetki`, `caoh2Co2`, `cuoH2so4`, `cuso4Naoh`, `cykl`, `drzewa-krzewy`, `f02-czastki-v01`, `f04-nuklid-v01`, `fecl3Naoh`, `fotosynteza-oddychanie-krazenie`, `hclNaOH`, `jajo-porownanie`, `jajo-ptaka`, `komorki-porownanie`, `krazenie`, `krew-skladniki`, `kwiat-budowa`, `liscie-rodzaje`, `mapa-narzadow`, `mgO2`, `miesnie-trzy`, `mikroskop-budowa`, `naH2o`, `nablonki-rodzaje`, `nasiono-ziarniak`, `nefron-budowa`, `neuron-budowa`, `neurony-mielina`, `owoce-rozsiewanie`, `podzial-komorki-skrot`, `polip-meduza`, `preparat-mikroskopowy`, `przeksztalcenia-organow`, `rx-ag-cl`, `rx-cu-naoh`, `rx-fe-cuso4`, `ryba-budowa`, `serce-budowa`, `stawonogi-budowa`, `szereg`, `szyszki-iglaste`, `tkanki-zwierzece`, `wentylacja`, `wlasciwosci`, `wykres-dane`, `zboza-klosy`
 
 ## 2. Najczęściej używane (kandydaci do ulepszenia w pierwszej kolejności)
 
@@ -822,20 +822,20 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | angielski | ANG.01.L026.pisanie_email_i_list | — |
 | angielski | ANG.01.L027.slownictwo_tematyczne | — |
 | biologia | BIO.00.REV01.organizacja_i_chemizm_zycia | `energia-glukozy` ×1, `fotosynteza-oddychanie` ×1, `fotosynteza-oddychanie-krazenie` ×1, `komorka-nakladki` ×1, `komorki-porownanie` ×1, `lancuch` ×1, `mikroskop-model` ×1, `proba-kontrolna` ×1, `transport-blona` ×1, `wykres-dane` ×1 |
-| biologia | BIO.00.REV02.roznorodnosc_zycia | `bezkregowce-sylwetki` ×1, `cykl` ×6, `drzewa-krzewy` ×1, `jajo-porownanie` ×1, `jajo-ptaka` ×1, `klucz-kregowce` ×1, `krew-skladniki` ×1, `kwiat-budowa` ×1, `miesnie-trzy` ×1, `mikroskop-budowa` ×1, `nablonki-rodzaje` ×1, `nasiono-ziarniak` ×1, `polip-meduza` ×1, `preparat-mikroskopowy` ×1, `przeksztalcenia-organow` ×1, `przeobrazenie-owadow` ×1, `przeobrazenie-plaza` ×1, `ryba-budowa` ×1, `stawonogi-budowa` ×1, `szyszki-iglaste` ×1, `tkanki-zwierzece` ×1, `wirus-bakteria` ×1, `wykres-dane` ×1, `zboza-klosy` ×1 |
+| biologia | BIO.00.REV02.roznorodnosc_zycia | `bezkregowce-sylwetki` ×1, `cykl` ×6, `drzewa-krzewy` ×1, `jajo-porownanie` ×1, `jajo-ptaka` ×1, `klucz-kregowce` ×1, `krew-skladniki` ×1, `kwiat-budowa` ×1, `liscie-rodzaje` ×1, `miesnie-trzy` ×1, `mikroskop-budowa` ×1, `nablonki-rodzaje` ×1, `nasiono-ziarniak` ×1, `owoce-rozsiewanie` ×1, `polip-meduza` ×1, `preparat-mikroskopowy` ×1, `przeksztalcenia-organow` ×1, `przeobrazenie-owadow` ×1, `przeobrazenie-plaza` ×1, `ryba-budowa` ×1, `stawonogi-budowa` ×1, `szyszki-iglaste` ×1, `tkanki-zwierzece` ×1, `wirus-bakteria` ×1, `wykres-dane` ×1, `zboza-klosy` ×1 |
 | biologia | BIO.01.B1b.krzyzowki_mendel | `krzyzowka-mendla` ×2, `punnett` ×1 |
 | biologia | BIO.01.L001.komorka | `komorka-nakladki` ×1, `lancuch` ×1, `mikroskop-model` ×1, `transport-blona` ×1 |
 | biologia | BIO.01.L001A.dodatek_ambitny_od_komorki_do | `endosymbioza` ×1 |
 | biologia | BIO.01.L002.powtorka_czlowiek | `homeostaza` ×1 |
 | biologia | BIO.01.L003.diagnoza | — |
-| biologia | BIO.01.L004.organizacja_budowy_organizmu_od_komorki | `lancuch` ×2 |
+| biologia | BIO.01.L004.organizacja_budowy_organizmu_od_komorki | `lancuch` ×2, `nablonki-rodzaje` ×1 |
 | biologia | BIO.01.L005.blona_komorkowa_i_transport_substancji | `transport-blona` ×1 |
-| biologia | BIO.01.L006.fotosynteza_skad_roslina_bierze_materie | `fotosynteza-oddychanie` ×1 |
+| biologia | BIO.01.L006.fotosynteza_skad_roslina_bierze_materie | `fotosynteza-oddychanie` ×1, `liscie-rodzaje` ×1 |
 | biologia | BIO.01.L007.oddychanie_komorkowe_skad_komorka_bierze | `energia-glukozy` ×1, `fotosynteza-oddychanie` ×1 |
-| biologia | BIO.01.L008.mikroskop_jak_obserwowac_komorke_a | `mikroskop-model` ×1 |
+| biologia | BIO.01.L008.mikroskop_jak_obserwowac_komorke_a | `mikroskop-model` ×1, `preparat-mikroskopowy` ×1 |
 | biologia | BIO.01.L009.podzial_komorki_wzrost_regeneracja_i | `podzial-komorki` ×1 |
 | biologia | BIO.02.B10.powtorka_uklady_czlowieka | `krazenie` ×1, `krazenie-obiegi` ×1, `mapa-narzadow` ×1, `serce-budowa` ×1 |
-| biologia | BIO.02.B2a.skora_uklad_ruchu | `skora-przekroj` ×1, `staw-antagonizm` ×1, `tkanki-zwierzece` ×1 |
+| biologia | BIO.02.B2a.skora_uklad_ruchu | `miesnie-trzy` ×1, `skora-przekroj` ×1, `staw-antagonizm` ×1, `tkanki-zwierzece` ×1 |
 | biologia | BIO.02.B2b.uklad_pokarmowy | `droga-pokarmu` ×1, `kosmek-jelitowy` ×1 |
 | biologia | BIO.02.B2c.oddychanie_wydalanie | `nefron` ×1, `nefron-budowa` ×1, `petla-regulacji` ×1, `wdech-wydech` ×1, `wentylacja` ×1, `wymiana-gazowa` ×1 |
 | biologia | BIO.02.B2d.uklad_nerwowy_zmysly | `cykl` ×1, `luk-odruchowy` ×1, `neuron-budowa` ×1, `neurony-mielina` ×1, `synapsa` ×1, `tkanki-zwierzece` ×1 |
@@ -868,11 +868,11 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | biologia | BIO.06.L090.extra_olimpijska | `hardy-weinberg` ×1, `kod-genetyczny` ×1 |
 | biologia | BIO.06.L091.atp_jak_komorka_magazynuje_energie | `fotosynteza-oddychanie` ×1 |
 | biologia | BIO.07.H01.homeostaza | `glukoza-wykres` ×1, `sprzezenie-zwrotne` ×1 |
-| biologia | BIO.07.U01.skora_i_uklad_ruchu | `skora-przekroj` ×1, `staw-antagonizm` ×1 |
+| biologia | BIO.07.U01.skora_i_uklad_ruchu | `miesnie-trzy` ×1, `skora-przekroj` ×1, `staw-antagonizm` ×1 |
 | biologia | BIO.07.U03.uklad_pokarmowy_i_odzywianie | `droga-pokarmu` ×1, `enzym-warunki` ×1, `kosmek-jelitowy` ×1 |
-| biologia | BIO.07.U04.krazenie_krew_odpornosc | `krazenie-obiegi` ×1, `transfuzja` ×1 |
+| biologia | BIO.07.U04.krazenie_krew_odpornosc | `krazenie-obiegi` ×1, `krew-skladniki` ×1, `transfuzja` ×1 |
 | biologia | BIO.07.U06.oddychanie_i_wydalanie | `nefron` ×1, `wdech-wydech` ×1, `wymiana-gazowa` ×1 |
-| biologia | BIO.07.U08.uklad_nerwowy_i_zmysly | `luk-odruchowy` ×1, `oko-akomodacja` ×1, `synapsa` ×1, `ucho-droga` ×1 |
+| biologia | BIO.07.U08.uklad_nerwowy_i_zmysly | `luk-odruchowy` ×1, `neurony-mielina` ×1, `oko-akomodacja` ×1, `synapsa` ×1, `ucho-droga` ×1 |
 | biologia | BIO.07.U10.uklad_dokrewny | `glukoza-wykres` ×1, `gruczoly-mapa` ×1, `sprzezenie-zwrotne` ×1 |
 | biologia | BIO.07.U11.rozmnazanie_i_rozwoj | `cykl-miesiaczkowy` ×1, `droga-zarodka` ×1, `etapy-zycia` ×1, `lozysko-wymiana` ×1, `uklad-rozrodczy` ×1 |
 | chemia | A01 | — |

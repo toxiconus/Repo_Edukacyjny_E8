@@ -180,6 +180,9 @@ U roślin także występują komórki, tkanki i organy, np. korzeń, łodyga i l
 Wielokomórkowość nie oznacza automatycznie obecności tkanek i narządów. W biologii rozróżnia się m.in. organizmy jednokomórkowe, organizmy wielokomórkowe o prostej budowie oraz organizmy o wyraźnie zróżnicowanych tkankach i narządach. O klasyfikacji decyduje organizacja biologiczna, nie sam rozmiar organizmu.
 
 ### 7B. Tkanka to nie tylko „grupa identycznych komórek”
+
+@viz nablonki-rodzaje | Rodzaje nabłonka | kliknij część rysunku
+@opis Cztery rodzaje nabłonka jednowarstwowego na wspólnej błonie podstawnej: płaski (cienkie spłaszczone komórki — wymiana gazów), sześcienny (komórki o równych bokach — wydzielanie), walcowaty (wysokie komórki z mikrokosmkami — wchłanianie) i urzęsiony (komórki z rzęskami — przesuwanie śluzu). Wniosek: kształt komórek wynika z funkcji.
 Komórki w tkance mogą nie być zupełnie identyczne. Istotne jest ich współdziałanie, pochodzenie i organizacja, a także obecność substancji międzykomórkowej. Dlatego prosta definicja szkolna jest punktem wyjścia, nie pełnym opisem wszystkich tkanek.
 
 ### 7C. Narząd jest strukturą funkcjonalną

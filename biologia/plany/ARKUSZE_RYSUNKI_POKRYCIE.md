@@ -22,9 +22,15 @@ Stan na 2026-10-20. „Rysunek w lekcji" = komponent z trybem poznaj / znajdź /
 | budowa ryby | szkolny 25/26 z.1 | `ryba-budowa` | REV02 §8.1 |
 | bulwy ziemniaka, rozłogi, kłącze, przekształcenia organów | szkolny 23/24 z.9.2 | `przeksztalcenia-organow` (nowy) | REV02 „Przekształcenia organów roślin” |
 | ziarna zbóż, ziarniak, kiełkowanie (typowe zadania olimpijskie) | pomysł użytkownika; arkusze: nasiona lnu (rejonowy 23/24) | `nasiono-ziarniak`, `zboza-klosy` (nowe) | REV02 „Nasiono, ziarniak i zboża” |
+| liść: blaszka, ogonek, liść złożony, użyłkowanie | typowe w olimpiadach | `liscie-rodzaje` (nowy) | REV02, L006 |
+| owoce i rozsiewanie | typowe w olimpiadach | `owoce-rozsiewanie` (nowy) | REV02 |
+| len: azot a białko i olej | rejonowy 23/24 z.13 | zadanie Z4 (dane przykładowe) | REV02 „Nasiono, ziarniak i zboża” |
 | wykres z doświadczenia | oba rejonowe | `wykres-dane` | REV02 §11 D+ |
 
 ## Braki
 Brak znanych braków wobec 4 przeanalizowanych arkuszy.
 
 Zadania testowe z tych rysunków: tryb „podpisz" każdego komponentu odpowiada zadaniom „wpisz nazwy pod rysunkami"; zadania „przyporządkuj / oceń" dopisujemy do ćwiczeń lekcji.
+
+## Gdzie jeszcze użyto nowych rysunków (2026-10-20)
+`krew-skladniki` → U04 §5; `miesnie-trzy` → B2a §5, U01 §10; `neurony-mielina` → B2d, U08 §3; `preparat-mikroskopowy` → REV02, L008 §10; `liscie-rodzaje` → REV02, L006 §5; `nablonki-rodzaje` → REV02, L004 §7B. Bez dodatkowych lekcji: `kwiat-budowa`, `polip-meduza`, `szyszki-iglaste`, `przeksztalcenia-organow`, `nasiono-ziarniak`, `zboza-klosy`, `owoce-rozsiewanie`, `drzewa-krzewy` (tylko REV02; w lekcjach L040–L043 ekologii i genetyce L015 nie ma odpowiedniego miejsca).

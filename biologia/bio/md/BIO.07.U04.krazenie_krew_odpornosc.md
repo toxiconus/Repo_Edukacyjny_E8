@@ -223,6 +223,9 @@ Uczennica zmierzyła tętno w spoczynku: 72 uderzenia na minutę. Zaraz po 20 pr
 
 ## 5 | Krew — skład i funkcje [[basic:E8]] {#krew}
 
+@viz krew-skladniki | Składniki krwi | kliknij część rysunku
+@opis Rozmaz krwi: w żółtawym osoczu widać liczne czerwone, dwuwklęsłe erytrocyty bez jądra, jednego dużego leukocyta z płatowym jądrem i drobne fioletowe płytki krwi. Wniosek: erytrocyty przenoszą tlen, leukocyty bronią, płytki krzepią krew, a osocze je wszystkie transportuje.
+
 Krew to **tkanka łączna płynna**. Dorosły człowiek ma jej ok. 5 litrów (ok. 7–8% masy ciała; dane orientacyjne).
 
 | Składnik | Budowa | Funkcja | Gdzie powstaje |

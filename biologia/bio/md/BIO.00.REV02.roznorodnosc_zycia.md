@@ -335,6 +335,17 @@ Plemnie (anteridia) wytwarzają plemniki, rodnie (archegonia) — komórkę jajo
 | kwiat | **rozmnażanie płciowe** | — |
 | owoc | ochrona i **rozsiewanie nasion** | — |
 
+### Liść — budowa i rodzaje {#liscie}
+
+@viz liscie-rodzaje | Liść: blaszka, ogonek, nerwacja, liść złożony | kliknij, znajdź, podpisz
+@opis Rysunek pokazuje zieloną blaszkę z ogonkiem i nerwami, liść pojedynczy, liść złożony pierzasty (listki wzdłuż osi), liść złożony dłoniasty (listki z jednego punktu) oraz liść z równoległymi nerwami. Wniosek: liść złożony ma wiele listków na jednej osi, a rodzaj użyłkowania (siatkowate lub równoległe) wskazuje grupę roślin.
+
+Liść ma **blaszkę** (fotosynteza, wymiana gazowa) i zwykle **ogonek**. W blaszce biegną **nerwy** (wiązki przewodzące: drewno i łyko). Wzór nerwów to **użyłkowanie**: **siatkowate** (dwuliścienne — dąb, lipa) lub **równoległe** (jednoliścienne — trawy, zboża). **Liść pojedynczy** ma jedną blaszkę; **liść złożony** — kilka listków na wspólnej osi: **pierzasty** (jesion, robinia) lub **dłoniasty** (kasztanowiec).
+
+**Jak odróżnić liść złożony od gałązki z liśćmi?** Pąk (zaczątek pędu) jest w kącie ogonka **całego liścia**, nie przy każdym listku. Ten sam liść ma też aparaty szparkowe, głównie na stronie dolnej, i miękisz asymilacyjny.
+
+**Zadanie L1. (3 pkt)** Podaj nazwę: a) liścia z wieloma listkami na jednej osi; b) rodzaju użyłkowania liścia trawy; c) części blaszki, w której biegną wiązki przewodzące. **Klucz:** a) liść złożony (pierzasty); b) równoległe; c) nerwy.
+
 ### Przekształcenia organów roślin {#przeksztalcenia}
 
 @viz przeksztalcenia-organow | Przekształcone organy roślin | kliknij, znajdź, podpisz
@@ -410,8 +421,17 @@ Fasola ma dwa liścienie z zapasem, zboże — bielmo. Ziarno zboża to owoc!
 
 **Z3. (3 pkt)** Zaplanuj doświadczenie: czy do kiełkowania nasion fasoli potrzebny jest tlen? Wskaż próbę badawczą, kontrolną i czynniki, które utrzymasz jednakowe.
 
+**Z4. (2 pkt) — odczyt danych (nasiona lnu).** W doświadczeniu badano wpływ nawożenia azotem na skład nasion lnu (dane przykładowe zgodne z tendencją opisywaną w literaturze rolniczej):
+
+| Nawożenie azotem (kg/ha) | 0 | 40 | 80 | 120 |
+|---|---|---|---|---|
+| białko w nasionach (%) | 22 | 24 | 26 | 28 |
+| olej w nasionach (%) | 42 | 40 | 38 | 36 |
+
+a) Sformułuj wniosek. b) Podaj, które nasiona lepiej nadają się do tłoczenia oleju i dlaczego.
+
 ::: odp | Klucz Z1–Z3
-Z1. Bielmo — zapas skrobi i białka dla zarodka. Z2. Owies; wiecha. Z3. Badawcza: nasiona zalane wodą bez dostępu powietrza (np. woda przegotowana pod warstwą oleju); kontrolna: nasiona na wilgotnym podłożu z dostępem powietrza; jednakowe: liczba i odmiana nasion, temperatura, czas, światło; wynik: kiełkują nasiona z tlenem.
+Z1. Bielmo — zapas skrobi i białka dla zarodka. Z2. Owies; wiecha. Z4. a) Wraz ze wzrostem nawożenia azotem rośnie zawartość białka, a maleje zawartość oleju w nasionach lnu. b) Nasiona z mniejszą dawką azotu (0 kg/ha), bo mają najwięcej oleju. Z3. Badawcza: nasiona zalane wodą bez dostępu powietrza (np. woda przegotowana pod warstwą oleju); kontrolna: nasiona na wilgotnym podłożu z dostępem powietrza; jednakowe: liczba i odmiana nasion, temperatura, czas, światło; wynik: kiełkują nasiona z tlenem.
 :::
 
 ::: karta core | Budowa kwiatu i rozmnażanie
@@ -440,6 +460,13 @@ CW1. B, C, D, A, E (nasiono i owoc rozwijają się równolegle po zapłodnieniu)
 **Warunki kiełkowania:** woda, odpowiednia temperatura, tlen (u niektórych roślin także światło).
 **Rozsiewanie:** **wiatr** (puch mniszka, skrzydlaki klonu i brzozy), **zwierzęta** (zjadane owoce jarzębiny i czeremchy; owoce przyczepne łopianu), **woda** (olsza), **samorzutnie** — owoc pęka i wyrzuca nasiona (niecierpek, strąki grochu).
 :::
+
+@viz owoce-rozsiewanie | Jak rozprzestrzeniają się owoce i nasiona | kliknij, znajdź, podpisz
+@opis Pięć owoców: skrzydlak klonu i puch mniszka (wiatr), owoc przyczepny z haczykami łopianu (przyczepia się do sierści), czerwony owoc jarzębiny (zjadany przez ptaki) oraz strąk grochu, który pęka i wyrzuca nasiona. Wniosek: budowa owocu pasuje do sposobu rozsiewania.
+
+**Owoce — rodzaje.** Owoce **mięsiste** (jagoda — pomidor, winogrono; pestkowiec — wiśnia, śliwka; jabłko) i **suche** (orzech — leszczyna; strąk — fasola, groch; torebka — mak; ziarniak — zboża). Owoc powstaje z **zalążni** i chroni nasiona, a jego budowa służy **rozsiewaniu**.
+
+**Z1. (2 pkt)** Do każdego owocu dopasuj sposób rozsiewania i przystosowanie: skrzydlak klonu; owoc łopianu. **Klucz:** skrzydlak — wiatr (skrzydełko); łopian — zwierzęta (haczyki, przyczepianie się do sierści).
 
 | Rodzime liściaste | Rozpoznanie |
 |---|---|
