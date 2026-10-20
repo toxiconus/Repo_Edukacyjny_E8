@@ -2,7 +2,7 @@
 
 Zasada: przed nowym rysunkiem sprawdź tę listę — używamy i ulepszamy istniejące (nowe i stare), nie dublujemy.
 
-## 1. Komponenty BIO (`biologia/bio/szablon/`: bio-viz.js legacy, bio-rysunki.js — małe komponenty z trybem podpisz, wizualizacje/ — biblioteka z gałęzi che-lekcje) — 88
+## 1. Komponenty BIO (`biologia/bio/szablon/`: bio-viz.js legacy, bio-rysunki.js — małe komponenty z trybem podpisz, wizualizacje/ — biblioteka z gałęzi che-lekcje) — 91
 
 | id | opis | plik | użyte w |
 |---|---|---|---|
@@ -46,6 +46,9 @@ Zasada: przed nowym rysunkiem sprawdź tę listę — używamy i ulepszamy istni
 | drzewa-krzewy | Sylwetki roślin drzewiastych: drzewo liściaste (jeden pień, korona), drzewo iglaste (stożkowata korona), krzew (wiele pędów od ziemi), pnącze; tryby poznaj / znajdź / pod | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
 | mapa-narzadow | Sylwetka człowieka z narządami układów: mózg, tchawica i płuca, serce, wątroba, żołądek, trzustka, nerki, jelito cienkie, jelito grube, pęcherz moczowy; tryby poznaj / zn | bio-rysunki.js | BIO.02.B10.powtorka_uklady_czlowieka |
 | preparat-mikroskopowy | Preparat mikroskopowy ze skórki liścia cebuli w przekroju bocznym: szkiełko podstawowe, kropla wody, skórka cebuli, szkiełko nakrywkowe, zakraplacz; tryby poznaj / znajdź | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
+| przeksztalcenia-organow | Przekształcenia organów roślin: korzeń spichrzowy (marchew), bulwa pędowa (ziemniak z oczkami), kłącze, cebula, rozłogi truskawki, wąsy czepne grochu i ciernie berberysu; | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
+| nasiono-ziarniak | Budowa nasienia fasoli (łupina, dwa liścienie, zarodek: korzeń zarodkowy i pączek) i ziarniaka zboża (owocnia zrośnięta z łupiną, bielmo, tarczka, zarodek); tryby poznaj  | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
+| zboza-klosy | Rozpoznawanie zbóż po kwiatostanie: pszenica (kłos zwarty, krótkie ości lub bez), żyto (kłos wąski z długimi ościami), jęczmień (kłos gęsty z bardzo długimi ościami), owi | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
 | wentylacja | Mechanika oddychania: przepona, żebra, objętość klatki i płuc; animacja wdech ↔ wydech tam i z powrotem (autostart w widoku), suwak do ręcznego sterowania, opis fazy | bio-rysunki.js | BIO.02.B2c.oddychanie_wydalanie |
 | fotosynteza-oddychanie-krazenie | Chloroplast i mitochondrium: krążenie materii (glukoza, O₂, CO₂, H₂O) i przepływ energii (światło → ATP/ciepło); kropki płyną w pętli; tryby fotosynteza / oddychanie / ob | bio-rysunki.js | BIO.00.REV01.organizacja_i_chemizm_zycia |
 | podzial-komorki-skrot | Mitoza i mejoza (2n = 4) etap po etapie: chromosomy, chromatydy, liczba komórek; autostart w widoku (do przodu i od początku), strzałki ◀ ▶, przełącznik mitoza/mejoza; op | bio-rysunki.js | BIO.02.B2f.rozmnazanie_rozwoj [typ="mej"] |

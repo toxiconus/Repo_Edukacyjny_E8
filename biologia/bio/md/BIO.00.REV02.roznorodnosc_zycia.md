@@ -335,6 +335,85 @@ Plemnie (anteridia) wytwarzają plemniki, rodnie (archegonia) — komórkę jajo
 | kwiat | **rozmnażanie płciowe** | — |
 | owoc | ochrona i **rozsiewanie nasion** | — |
 
+### Przekształcenia organów roślin {#przeksztalcenia}
+
+@viz przeksztalcenia-organow | Przekształcone organy roślin | kliknij, znajdź, podpisz
+@opis Siedem przykładów w dwóch rzędach: marchew (korzeń spichrzowy), ziemniak z oczkami (bulwa pędowa), kłącze z liśćmi nadziemnymi, cebula (skrócony pęd z łuskami), rozłogi truskawki z młodymi roślinkami, wąsy czepne grochu i ciernie berberysu. Wniosek: ten sam organ (korzeń, łodyga, liść) może pełnić nową funkcję — spichrzową, rozmnażania lub podpierania i obrony.
+
+Roślina ma trzy organy wegetatywne: **korzeń**, **łodygę** (pęd) i **liść**. Wiele gatunków zmienia ich budowę, żeby spełniały nową funkcję — to **przekształcenie (modyfikacja) organu**. Kluczowe pytanie: **z jakiego organu powstało?**
+
+| Przekształcenie | Z czego powstało | Funkcja | Przykład |
+|---|---|---|---|
+| korzeń spichrzowy | **korzeń** | magazyn cukrów | marchew, burak, rzodkiewka |
+| bulwa korzeniowa | **korzeń** | magazyn skrobi | dalia, batat |
+| **bulwa pędowa** | **łodyga** | magazyn skrobi, rozmnażanie wegetatywne | **ziemniak**, topinambur |
+| **kłącze** | **łodyga** (podziemna) | zimowanie, magazyn, rozmnażanie wegetatywne | konwalia, perz, paprocie |
+| **cebula** | **łodyga** skrócona + liście spichrzowe | magazyn wody i cukrów | cebula, tulipan, czosnek |
+| **rozłogi** | **łodyga** (nadziemna, płożąca) | rozmnażanie wegetatywne | truskawka, jaskier rozłogowy |
+| wąsy czepne | **liść** (lub jego część) | wspinanie | groch, wyka |
+| ciernie | **liść** (lub jego część) | obrona | berberys, kłujące liście kaktusów |
+
+**Jak rozpoznać pęd?** Ma **węzły**, **pąki** i **łuskowate liście**. Dlatego ziemniak to bulwa **pędowa**: „oczka” to pąki z zaczątkami pędów, a nie korzeń. Korzeń nigdy nie ma pąków liściowych na swojej powierzchni (z wyjątkiem pędów przybyszowych).
+
+**Rozmnażanie wegetatywne** (bezpłciowe) daje potomstwo **identyczne genetycznie** z rośliną macierzystą: bulwa ziemniaka, rozłogi truskawki, kłącze, cebula. Nasiona są owocem rozmnażania **płciowego**.
+
+::: mnemonik
+Ziemniak je się pod ziemią, ale to PĘD (oczka = pąki). Marchew to KORZEŃ. Groch trzyma się LIŚCIEM, truskawka rośnie na ROZŁOGACH.
+:::
+
+**Typowy błąd:** „bulwa to zawsze korzeń” — ziemniak to łodyga. **Typowy błąd 2:** kolce róży to nie przekształcone liście, tylko wyrostki skórki (kolce); ciernie berberysu to liście.
+
+**Zadania w stylu LKO**
+
+**P1. (1 pkt)** Bulwy ziemniaka to modyfikacje: A. łodygi / B. liścia, służące: 1. do rozmnażania wegetatywnego i gromadzące substancje pokarmowe / 2. do rozmnażania płciowego i gromadzące substancje pokarmowe. Wybierz poprawne dokończenie (np. A1).
+
+**P2. (3 pkt)** Do każdej rośliny przyporządkuj organ, z którego powstało przekształcenie (korzeń / łodyga / liść): marchew; truskawka (rozłogi); groch (wąsy czepne).
+
+**P3. (2 pkt)** Wyjaśnij, dlaczego truskawki rozmnażane przez rozłogi są genetycznie takie same jak roślina macierzysta, a siewki z nasion — nie.
+
+**P4. (2 pkt)** Uczeń chce sprawdzić, czy „oczka” ziemniaka są potrzebne do wyrośnięcia nowej rośliny. Zaplanuj doświadczenie: próbę badawczą i kontrolną oraz przewidywany wynik.
+
+::: odp | Klucz P1–P4
+P1. A1. P2. Marchew — korzeń; rozłogi truskawki — łodyga; wąsy grochu — liść. P3. Rozłogi powstają przez podziały mitotyczne, bez łączenia gamet (rozmnażanie bezpłciowe, klon); nasiona powstają z zapłodnienia, które łączy materiał genetyczny dwóch roślin. P4. Badawcza: kawałki bulwy z oczkami; kontrolna: kawałki bez oczek, jednakowa wielkość, wilgotne podłoże, światło i temperatura; wynik: pędy wyrosną tylko z kawałków z oczkami.
+:::
+
+### Nasiono, ziarniak i zboża {#zboza}
+
+@viz nasiono-ziarniak | Nasiono fasoli i ziarniak pszenicy | kliknij, znajdź, podpisz
+@opis Po lewej nasiono fasoli: łupina, dwa duże liścienie z zapasem i zarodek (korzeń zarodkowy, pączek). Po prawej ziarniak pszenicy: zrośnięta owocnia z łupiną, duże bielmo ze skrobią i mały zarodek z tarczką. Wniosek: oba zawierają zarodek i zapas pokarmu, ale fasola trzyma zapas w liścieniach (dwuliścienna), a zboże w bielmie (jednoliścienna), a ziarniak jest owocem.
+
+@viz zboza-klosy | Zboża — jak odróżnić po kwiatostanie | kliknij, znajdź, podpisz
+@opis Cztery kwiatostany: kłos pszenicy (zwarty, krótkie ości), kłos żyta (długi, wąski, długie ości), kłos jęczmienia (gęsty, bardzo długie ości) i wiecha owsa (luźna, zwisające kłoski). Wniosek: pszenicę, żyto i jęczmień poznaje się po kłosie i długości ości, a owies po wiesze.
+
+**Zboża** to uprawne **trawy** (rodzina wiechlinowatych): pszenica, żyto, jęczmień, owies, kukurydza, ryż, proso. Są **jednoliścienne**, mają korzenie wiązkowe, kwiaty drobne, **wiatropylne**, a owoc to **ziarniak**.
+
+| Cecha | Fasola (dwuliścienna) | Pszenica (jednoliścienna) |
+|---|---|---|
+| owoc | strąk (nasiona w środku) | ziarniak (owocnia zrośnięta z łupiną) |
+| zapas w nasieniu | **liścienie** (2) | **bielmo** (liścień przekształcony w tarczkę) |
+| korzenie | system palowy | system wiązkowy |
+| liście | użyłkowanie siatkowate | użyłkowanie równoległe |
+
+**Kiełkowanie** wymaga **wody**, **tlenu** i odpowiedniej **temperatury**; światło zwykle nie jest konieczne. Zarodek zużywa zapas (hydroliza skrobi do cukrów), więc masa suchej masy nasiona w pierwszych dniach maleje, a świeża masa rośnie dzięki wodzie.
+
+::: mnemonik
+Fasola ma dwa liścienie z zapasem, zboże — bielmo. Ziarno zboża to owoc!
+:::
+
+**Typowy błąd:** „ziarno pszenicy to nasiono” — to ziarniak, czyli owoc z jednym nasionem zrośniętym z owocnią.
+
+**Zadania w stylu LKO**
+
+**Z1. (2 pkt)** Podpisz na schemacie ziarniaka: A — bielmo, B — zarodek, C — owocnia z łupiną. Podaj funkcję bielma.
+
+**Z2. (2 pkt)** Rozpoznaj zboże: kwiatostan luźny, z zwisającymi kłoskami; ziarno służy do płatków. Podaj nazwę i typ kwiatostanu.
+
+**Z3. (3 pkt)** Zaplanuj doświadczenie: czy do kiełkowania nasion fasoli potrzebny jest tlen? Wskaż próbę badawczą, kontrolną i czynniki, które utrzymasz jednakowe.
+
+::: odp | Klucz Z1–Z3
+Z1. Bielmo — zapas skrobi i białka dla zarodka. Z2. Owies; wiecha. Z3. Badawcza: nasiona zalane wodą bez dostępu powietrza (np. woda przegotowana pod warstwą oleju); kontrolna: nasiona na wilgotnym podłożu z dostępem powietrza; jednakowe: liczba i odmiana nasion, temperatura, czas, światło; wynik: kiełkują nasiona z tlenem.
+:::
+
 ::: karta core | Budowa kwiatu i rozmnażanie
 - **okwiat:** działki kielicha (ochrona pąka) i płatki korony (wabienie zapylaczy);
 - **pręcik:** nitka + **pylnik** (wytwarza **pyłek**);

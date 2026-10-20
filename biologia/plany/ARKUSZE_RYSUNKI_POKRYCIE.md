@@ -20,6 +20,8 @@ Stan na 2026-10-20. „Rysunek w lekcji" = komponent z trybem poznaj / znajdź /
 | preparat ze skórki cebuli, nazwy szkiełek | szkolny 25/26 z.6 | `preparat-mikroskopowy` (nowy), `mikroskop-budowa` | REV02 §11 D+, L008 |
 | budowa meduzy A–C (parasol, ramiona, czułki) | szkolny 25/26 z.13 | `polip-meduza` (ramiona i czułki rozdzielone) | REV02 §7 |
 | budowa ryby | szkolny 25/26 z.1 | `ryba-budowa` | REV02 §8.1 |
+| bulwy ziemniaka, rozłogi, kłącze, przekształcenia organów | szkolny 23/24 z.9.2 | `przeksztalcenia-organow` (nowy) | REV02 „Przekształcenia organów roślin” |
+| ziarna zbóż, ziarniak, kiełkowanie (typowe zadania olimpijskie) | pomysł użytkownika; arkusze: nasiona lnu (rejonowy 23/24) | `nasiono-ziarniak`, `zboza-klosy` (nowe) | REV02 „Nasiono, ziarniak i zboża” |
 | wykres z doświadczenia | oba rejonowe | `wykres-dane` | REV02 §11 D+ |
 
 ## Braki

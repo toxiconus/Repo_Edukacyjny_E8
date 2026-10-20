@@ -2638,6 +2638,40 @@ mount:function(el){
     {n:'zakraplacz',m:[300,50],d:'Służy do nanoszenia kropli wody na szkiełko podstawowe.',draw:function(g){g.appendChild(P('M250,24 L250,72',null,'#777',9));g.appendChild(P('M250,72 L250,96',null,'#2a7fb0',4));g.appendChild(E(250,16,12,12,'#d8d8d8','#777',2))}}
   ]}}})}});
 
+BIO.define('przeksztalcenia-organow',{opis:'Przekształcenia organów roślin: korzeń spichrzowy (marchew), bulwa pędowa (ziemniak z oczkami), kłącze, cebula, rozłogi truskawki, wąsy czepne grochu i ciernie berberysu; tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  lab(el,{get:function(){return{w:360,h:250,label:'Przekształcone organy roślin',parts:[
+    {n:'korzeń spichrzowy (marchew)',m:[34,116],d:'Przekształcony KORZEŃ: gruby, mięsisty, gromadzi substancje zapasowe (cukry). Roślina dwuletnia zużywa je w drugim roku do kwitnienia.',draw:function(g){g.appendChild(P('M20,24 L60,24 L44,110 L36,110Z',"#f0a45a",'#b5701a',2.4));g.appendChild(P('M40,24 L30,6 M40,24 L40,4 M40,24 L50,6',null,'#2e7d32',2.4))}},
+    {n:'bulwa pędowa (ziemniak)',m:[130,116],d:'Przekształcona ŁODYGA (pęd): rozrasta się pod ziemią i gromadzi skrobię. Ma „oczka” — pąki, z których wyrastają nowe pędy, dlatego służy do rozmnażania wegetatywnego.',draw:function(g){g.appendChild(E(112,70,32,22,'#d9b97a','#8a6a30',2.4,-15));[[100,64],[118,76],[126,62]].forEach(function(p){g.appendChild(C(p[0],p[1],2.6,'#6a4a20','none',0))})}},
+    {n:'kłącze',m:[210,116],d:'Podziemna ŁODYGA płożąca się poziomo, z łuskowatymi liśćmi i korzeniami przybyszowymi; zimuje i rozmnaża roślinę wegetatywnie (konwalia, perz, paproć).',draw:function(g){g.appendChild(P('M170,70 Q200,60 226,72 Q250,84 270,70',null,'#a8793a',9));[[186,66],[216,72],[246,80]].forEach(function(p){g.appendChild(P('M'+p[0]+','+p[1]+' L'+p[0]+','+(p[1]-24),null,'#2e7d32',2.6));g.appendChild(P('M'+p[0]+','+(p[1]+4)+' L'+(p[0]-4)+','+(p[1]+22),null,'#8a6a40',1.6))})}},
+    {n:'cebula',m:[320,116],d:'Skrócona, podziemna ŁODYGA (piętka) z mięsistymi liśćmi spichrzowymi (łuskami), które gromadzą wodę i cukry (cebula, tulipan).',draw:function(g){g.appendChild(E(318,66,24,30,'#f1dcc0','#a8722a',2.4));g.appendChild(P('M306,44 Q318,100 330,44',null,'#a8722a',1.4));g.appendChild(P('M318,36 L318,10',null,'#2e7d32',3));g.appendChild(P('M308,92 L304,112 M318,96 L318,114 M328,92 L332,112',null,'#8a6a40',1.6))}},
+    {n:'rozłogi (truskawka)',m:[70,226],d:'Cienkie, płożące się nadziemne ŁODYGI; w węzłach wyrastają korzenie i nowe rośliny — rozmnażanie wegetatywne.',draw:function(g){g.appendChild(P('M20,190 Q70,160 120,190 Q150,204 180,184',null,'#c46a6a',2.6));[[20,190],[120,190],[180,184]].forEach(function(p){g.appendChild(C(p[0],p[1],7,'#8fcf7a','#2e7d32',2));g.appendChild(P('M'+p[0]+','+(p[1]+6)+' L'+p[0]+','+(p[1]+18),null,'#8a6a40',1.8))})}},
+    {n:'wąsy czepne (groch)',m:[190,226],d:'Przekształcone LIŚCIE (części liścia): cienkie, skręcone, owijają się wokół podpory i podtrzymują roślinę.',draw:function(g){g.appendChild(P('M230,214 L230,168',null,'#2e7d32',3));g.appendChild(P('M230,180 Q258,170 258,188 Q256,204 244,198 Q236,192 244,186',null,'#2e7d32',2));g.appendChild(P('M230,196 Q204,190 206,174 Q210,162 222,168',null,'#2e7d32',2))}},
+    {n:'ciernie (berberys)',m:[320,226],d:'Przekształcone LIŚCIE (lub ich części): twarde, ostre, chronią przed zjadaniem. Uwaga: kolce róży to wytwory skórki, nie przekształcone liście.',draw:function(g){g.appendChild(P('M280,210 L350,210',null,'#6a4a28',5));[[292,210],[312,210],[334,210]].forEach(function(p){g.appendChild(P('M'+(p[0]-5)+',208 L'+p[0]+',178 L'+(p[0]+5)+',208Z',"#9a7a4a",'#6a4a28',1.8))})}}
+  ]}}})}});
+
+BIO.define('nasiono-ziarniak',{opis:'Budowa nasienia fasoli (łupina, dwa liścienie, zarodek: korzeń zarodkowy i pączek) i ziarniaka zboża (owocnia zrośnięta z łupiną, bielmo, tarczka, zarodek); tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  lab(el,{get:function(){return{w:360,h:210,label:'Nasiono fasoli i ziarniak pszenicy',parts:[
+    {n:'łupina nasienna fasoli',m:[40,196],z:-2,d:'Zewnętrzna osłona nasiona (powstaje z osłonek zalążka); chroni zarodek przed wysychaniem i uszkodzeniem.',draw:function(g){g.appendChild(P('M24,100 Q24,30 100,30 Q160,34 156,100 Q150,170 90,174 Q28,170 24,100Z',"#d9a3a3",'#8a3b3b',3))}},
+    {n:'liścienie fasoli',m:[88,196],z:-1,d:'Dwie mięsiste części zarodka; zawierają materiał zapasowy (skrobię, białko), z którego zarodek korzysta przy kiełkowaniu. Fasola jest dwuliścienna.',draw:function(g){g.appendChild(P('M36,100 Q36,44 96,44 Q146,48 144,100 Q140,160 92,162 Q40,160 36,100Z',"#f3e6c4",'#a8893a',2));g.appendChild(P('M90,48 Q96,100 90,160',null,'#a8893a',1.6))}},
+    {n:'korzeń zarodkowy',m:[136,196],z:1,d:'Najmłodszy korzeń zarodka; wyrasta jako pierwszy i wnika w podłoże.',draw:function(g){g.appendChild(P('M70,134 Q60,150 66,166',null,'#c08040',7))}},
+    {n:'pączek (zaczątek pędu)',m:[10,150],z:1,d:'Zaczątek pędu z liśćmi zarodkowymi; po wykiełkowaniu daje część nadziemną rośliny.',draw:function(g){g.appendChild(P('M96,110 Q104,86 112,70',null,'#4caf50',7))}},
+    {n:'owocnia i łupina ziarniaka',m:[250,196],z:-2,d:'U zbóż ziarniak to OWOC, w którym cienka owocnia jest zrośnięta z łupiną nasienną — dlatego nie da się ich rozdzielić (np. ziarno pszenicy).',draw:function(g){g.appendChild(P('M214,100 Q214,34 262,30 Q316,34 316,100 Q312,174 264,176 Q216,172 214,100Z',"#e2c07a",'#8a6a20',3))}},
+    {n:'bielmo',m:[330,150],z:-1,d:'Duża część ziarniaka wypełniona skrobią (mąka) i białkiem; zapas dla zarodka. Zboża są jednoliścienne: jeden liścień przekształcony w tarczkę.',draw:function(g){g.appendChild(P('M224,100 Q224,44 264,40 Q308,44 308,100 Q304,166 264,168 Q226,164 224,100Z',"#fbf3dc",'#b09a50',1.8))}},
+    {n:'zarodek zboża',m:[330,60],z:1,d:'Mały, u podstawy ziarniaka; ma korzeń zarodkowy, pączek i tarczkę (liścień), która przekazuje zapas z bielma.',draw:function(g){g.appendChild(E(240,150,12,16,'#a8d08a','#3f7a2a',2.2,20));g.appendChild(P('M236,162 L232,176',null,'#c08040',4))}}
+  ]}}})}});
+
+BIO.define('zboza-klosy',{opis:'Rozpoznawanie zbóż po kwiatostanie: pszenica (kłos zwarty, krótkie ości lub bez), żyto (kłos wąski z długimi ościami), jęczmień (kłos gęsty z bardzo długimi ościami), owies (wiecha); tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  function klos(g,x,top,len,w,aw,col){g.appendChild(P('M'+x+','+(top+len)+' L'+x+','+(top+len+70),null,'#c4a85a',3));for(var i=0;i<len/12;i++){var y=top+i*12;g.appendChild(E(x-w/2,y+6,w/2,6,col,'#8a6a20',1.4,-30));g.appendChild(E(x+w/2,y+6,w/2,6,col,'#8a6a20',1.4,30));if(aw){g.appendChild(P('M'+(x-w)+','+(y+4)+' L'+(x-w-aw*.4)+','+(y-aw),null,'#8a6a20',1));g.appendChild(P('M'+(x+w)+','+(y+4)+' L'+(x+w+aw*.4)+','+(y-aw),null,'#8a6a20',1))}}}
+  lab(el,{get:function(){return{w:360,h:230,label:'Kwiatostany zbóż',parts:[
+    {n:'pszenica',m:[44,222],d:'Kłos zwarty, jajowaty lub podłużny; ości krótkie albo ich brak. Ziarniaki do mąki i pieczywa.',draw:function(g){klos(g,52,24,110,10,6,'#e8cf78')}},
+    {n:'żyto',m:[134,222],d:'Kłos długi i wąski z długimi, cienkimi ościami; ziarno do chleba żytniego. Roślina o dużej tolerancji na ubogie gleby.',draw:function(g){klos(g,136,18,130,8,14,'#c9b46a')}},
+    {n:'jęczmień',m:[224,222],d:'Kłos gęsty, kwadratowy w przekroju, z bardzo długimi, sztywnymi ościami; ziarno na kasze, pasze i słód do piwa.',draw:function(g){klos(g,224,24,100,10,22,'#d6c070')}},
+    {n:'owies',m:[316,222],d:'Nie kłos, lecz WIECHA — luźny kwiatostan z zwisającymi kłoskami; ziarno na płatki i kasze.',draw:function(g){g.appendChild(P('M316,160 L316,60',null,'#c4a85a',3));[[316,70,290,90],[316,80,342,100],[316,100,290,124],[316,110,342,134]].forEach(function(p){g.appendChild(P('M'+p[0]+','+p[1]+' Q'+((p[0]+p[2])/2)+','+(p[1]-10)+' '+p[2]+','+p[3],null,'#c4a85a',1.6));g.appendChild(E(p[2],p[3]+8,5,10,'#e6dc9a','#8a6a20',1.4))})}}
+  ]}}})}});
+
 var OD=0;
 BIO.define('wentylacja',{opis:'Mechanika oddychania: przepona, żebra, objętość klatki i płuc; animacja wdech ↔ wydech tam i z powrotem (autostart w widoku), suwak do ręcznego sterowania, opis fazy',
 mount:function(el){

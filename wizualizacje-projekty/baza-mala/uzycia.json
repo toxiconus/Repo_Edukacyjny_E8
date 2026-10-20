@@ -1661,12 +1661,14 @@
   "mikroskop-budowa",
   "naH2o",
   "nablonki-rodzaje",
+  "nasiono-ziarniak",
   "nefron-budowa",
   "neuron-budowa",
   "neurony-mielina",
   "podzial-komorki-skrot",
   "polip-meduza",
   "preparat-mikroskopowy",
+  "przeksztalcenia-organow",
   "rx-ag-cl",
   "rx-cu-naoh",
   "rx-fe-cuso4",
@@ -1678,6 +1680,7 @@
   "tkanki-zwierzece",
   "wentylacja",
   "wlasciwosci",
-  "wykres-dane"
+  "wykres-dane",
+  "zboza-klosy"
  ]
 }
