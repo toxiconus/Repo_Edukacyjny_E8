@@ -11,6 +11,7 @@
 /* komórka */
 --cell-mem:#5c8a3a;--cell-cyto:#f4f9ef;--nucleus:#c9a8e8;--nucleus-bg:#f3ecfb;--mito:#e58b5a;--mito-bg:#fde9dc;--chloro:#4caf50;--chloro-bg:#e3f4e3;--wall:#9bbd6a;--dna-ink:#7a3fbf;
 --viz-ink:#1a2332;--viz-mut:#5d6b7a;--viz-line:#d5dee6;--viz-bg:#ffffff;--viz-bg2:#f6f8f7;
+--k1:#1f6fb2;--k1-bg:#e3effa;--k2:#178a6c;--k2-bg:#e0f3ec;--k3:#e09400;--k3-bg:#fff3d6;--k4:#c0392b;--k4-bg:#fdecea;--k5:#7a3fbf;--k5-bg:#f3ecfb;--k6:#5c8a3a;--k6-bg:#eef6e6;--nerve:#f2a900;--skin:#f1c9a5;
 }
 body{font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
 /* pasek górny */
@@ -122,7 +123,7 @@ animation:bio-drift 60s linear infinite}
 
 /* krew i grupy krwi (krazenie-obiegi, transfuzja) */
 :root{--blood-o2:#c62828;--blood-o2-bg:#fde8e8;--blood-co2:#1f5fae;--blood-co2-bg:#e7effb;--ag-a:#c2410c;--ag-b:#7c3aed;--ag-d:#0f766e}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--blood-o2:#f87171;--blood-o2-bg:#3a1616;--blood-co2:#7aa7ff;--blood-co2-bg:#14213a;--ag-a:#fb923c;--ag-b:#c4b5fd;--ag-d:#5eead4}}
-:root[data-theme=dark]{--blood-o2:#f87171;--blood-o2-bg:#3a1616;--blood-co2:#7aa7ff;--blood-co2-bg:#14213a;--ag-a:#fb923c;--ag-b:#c4b5fd;--ag-d:#5eead4}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--k1:#6fb1ee;--k1-bg:#14283d;--k2:#4fd0aa;--k2-bg:#0f2f27;--k3:#f2b84a;--k3-bg:#3a2e10;--k4:#f0857a;--k4-bg:#3a1a17;--k5:#b78cf0;--k5-bg:#2a1a3f;--k6:#8fcf6a;--k6-bg:#1b2e12;--skin:#a57a58;--blood-o2:#f87171;--blood-o2-bg:#3a1616;--blood-co2:#7aa7ff;--blood-co2-bg:#14213a;--ag-a:#fb923c;--ag-b:#c4b5fd;--ag-d:#5eead4}}
+:root[data-theme=dark]{--k1:#6fb1ee;--k1-bg:#14283d;--k2:#4fd0aa;--k2-bg:#0f2f27;--k3:#f2b84a;--k3-bg:#3a2e10;--k4:#f0857a;--k4-bg:#3a1a17;--k5:#b78cf0;--k5-bg:#2a1a3f;--k6:#8fcf6a;--k6-bg:#1b2e12;--skin:#a57a58;--blood-o2:#f87171;--blood-o2-bg:#3a1616;--blood-co2:#7aa7ff;--blood-co2-bg:#14213a;--ag-a:#fb923c;--ag-b:#c4b5fd;--ag-d:#5eead4}
 .kr-el.sel .kr-v{stroke-width:14}.kr-el{transition:opacity .25s}
 .pk .pk-tube.sel>*:first-child{stroke-width:var(--w)!important}.pk svg [data-k]{transition:opacity .25s}

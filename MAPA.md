@@ -111,9 +111,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIO.01.B1b.krzyzowki_mendel.html` 145 KB
 - ⚠`BIO.01.L001.komorka.html` 221 KB
 - ⚠`BIO.01.L001A.dodatek_ambitny_od_komorki_do.html` 155 KB
-- ⚠`BIO.01.L002.powtorka_czlowiek.html` 333 KB
-- ⚠`BIO.01.L003.diagnoza.html` 200 KB
-- ⚠`BIO.01.L004.organizacja_budowy_organizmu_od_komorki.html` 282 KB
+- ⚠`BIO.01.L002.powtorka_czlowiek.html` 334 KB
+- ⚠`BIO.01.L003.diagnoza.html` 201 KB
+- ⚠`BIO.01.L004.organizacja_budowy_organizmu_od_komorki.html` 283 KB
 
 ## biologia/niewykorzystane/archiwum_md  (3 pl., 46 KB)
 - `L001_komorka_jako_podstawowa_jednostka_zycia.md` 13 KB
@@ -781,9 +781,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIO.01.B1b.krzyzowki_mendel.html` 145 KB
 - ⚠`BIO.01.L001.komorka.html` 221 KB
 - ⚠`BIO.01.L001A.dodatek_ambitny_od_komorki_do.html` 155 KB
-- ⚠`BIO.01.L002.powtorka_czlowiek.html` 333 KB
-- ⚠`BIO.01.L003.diagnoza.html` 200 KB
-- ⚠`BIO.01.L004.organizacja_budowy_organizmu_od_komorki.html` 282 KB
+- ⚠`BIO.01.L002.powtorka_czlowiek.html` 334 KB
+- ⚠`BIO.01.L003.diagnoza.html` 201 KB
+- ⚠`BIO.01.L004.organizacja_budowy_organizmu_od_komorki.html` 283 KB
 
 ## okladki/biologia/md  (54 pl., 2.3 MB)
 - (zwinięte; `ls okladki/biologia/md`) — duże:
@@ -1137,7 +1137,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `lekcja.js` 5 KB
 - `ulepszenia.css` 15 KB
 
-## szablon/motywy  (5 pl., 20 KB)
+## szablon/motywy  (5 pl., 21 KB)
 - `ang.css` 2 KB
 - `bio.css` 12 KB
 - `che.css` 2 KB
