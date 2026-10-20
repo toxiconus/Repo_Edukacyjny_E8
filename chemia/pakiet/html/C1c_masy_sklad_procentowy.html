@@ -808,7 +808,7 @@ section[id],h2[id]{scroll-margin-top:72px}
 <tr><td>srebro</td><td>Ag</td><td>108</td></tr>
 </tbody></table></div>
 <p>Chlor ma masę 35,5, bo w przyrodzie występuje jako mieszanina izotopów o masach 35 i 37.</p>
-<div class="che-lesson-viz-ref lk-offline"><button type="button" disabled><b>Skąd się bierze masa atomowa: średnia ważona izotopów</b><span>Silnik CHE · otwiera się w oknie — model dostępny w pełnej wersji lekcji (z silnikiem CHE)</span></button></div>
+<figure class="lk-fig" data-klocek="izotopy" data-opt="{}"><div class="lk-fig-body"></div><figcaption>Skąd się bierze masa atomowa: średnia ważona izotopów</figcaption></figure>
 <!-- OPIS: Konstruktor atomu (protony, neutrony, elektrony) z dolnym panelem, w którym masa atomowa jest obliczana jako średnia ważona mas izotopów wybranego pierwiastka. Wniosek: ułamkowa masa atomowa z układu okresowego wynika z mieszaniny izotopów, a nie z jednego rodzaju atomów. -->
 <h3>2. Masa cząsteczkowa</h3>
 <p><strong>Masa cząsteczkowa</strong> M to suma mas atomowych wszystkich atomów w cząsteczce, z uwzględnieniem indeksów:</p>
@@ -1125,6 +1125,39 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
   ustaw(start);
   return {el: box, ustaw: ustaw};
 }
+
+/* ui_klocki.js — wspólne drobiazgi interfejsu dla klocków HTML/SVG (przyciski-chipy, suwak, autostart animacji w widoku).
+   KLOCKI.ui.btn(tekst, akcja) · .chip(tekst, aktywny, akcja) · .suwak(etykieta, min, max, krok, wartosc, akcja) · .anim(host, krok(dt, t)) → uchwyt {start, stop}. */
+(function () {
+  var BTN = 'font:inherit;font-size:13px;padding:5px 11px;border:1px solid var(--border-strong,#94a3b8);border-radius:999px;background:var(--surface,#fff);color:inherit;cursor:pointer;margin:2px';
+  var ui = {
+    BTN: BTN,
+    btn: function (t, f, tytul) { var b = document.createElement('button'); b.type = 'button'; b.style.cssText = BTN; b.innerHTML = t; if (tytul) b.title = tytul; b.addEventListener('click', f); return b; },
+    chip: function (t, on, f) { var b = ui.btn(t, f); ui.zaznacz(b, on); return b; },
+    zaznacz: function (b, on) { b.style.background = on ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)'; b.style.color = on ? '#fff' : 'inherit'; b.style.borderColor = on ? 'var(--accent,#0d6868)' : 'var(--border-strong,#94a3b8)'; },
+    suwak: function (et, mn, mx, st, w, f) {
+      var l = document.createElement('label'); l.style.cssText = 'display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:14px;margin:4px 0';
+      l.innerHTML = '<span style="min-width:120px">' + et + '</span><input type="range" min="' + mn + '" max="' + mx + '" step="' + st + '" value="' + w + '" style="flex:1;min-width:140px;accent-color:var(--accent,#0d6868)"><b class="sv" style="min-width:64px"></b>';
+      var i = l.querySelector('input'), v = l.querySelector('.sv');
+      i.addEventListener('input', function () { f(+i.value, v); }); f(+i.value, v); return l;
+    },
+    /* animacja startująca, gdy host jest widoczny; krok(dt_s, t_s). Reduced motion: jedna klatka. */
+    anim: function (host, krok) {
+      var raf = 0, t = 0, last = 0, on = false;
+      function p(now) { var dt = Math.min(.05, (now - last) / 1000); last = now; t += dt; krok(dt, t); raf = requestAnimationFrame(p); }
+      var h = {
+        start: function () { if (on) return; on = true; last = performance.now(); raf = requestAnimationFrame(p); },
+        stop: function () { on = false; cancelAnimationFrame(raf); },
+        t: function () { return t; }
+      };
+      if (typeof RM !== 'undefined' && RM) { krok(0, 0); return h; }
+      if ('IntersectionObserver' in window) new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? h.start() : h.stop(); }); }, {threshold: .05}).observe(host);
+      else h.start();
+      return h;
+    }
+  };
+  window.KLOCKI.ui = ui;
+})();
 
 /* NACZYNIA — wspólna geometria i wygląd szkła dla klocków (jedna probówka dla probowki, probowki-odczyn i kolejnych).
    Zgodna z gfx/chemia/naczynia/testTube.js: proste ścianki, półokrągłe dno, szerokość do 70 px (tu dowolna).
@@ -2611,6 +2644,338 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
       if ('IntersectionObserver' in window) {
         new IntersectionObserver(function (en) { en.forEach(function (x) { if (x.isIntersecting) start(); else stop(); }); }, {threshold: .3}).observe(host);
       } else start();
+    }
+  });
+})();
+
+/* KLOCEK: tabela-rozpuszczalnosci — tabela R/T/N soli i wodorotlenków (20 °C); klik w komórkę: wzór, nazwa, rozpuszczalność.
+   Dane: engine/src/dane/rozpuszczalnosc.json (SOLUBILITY_TABLE). Opcje: brak. */
+(function () {
+  var D = {"legend":{"R":"dobrze rozpuszczalny (> 1 g / 100 g H₂O)","T":"trudno rozpuszczalny (0,1–1 g)","N":"praktycznie nierozpuszczalny (< 0,1 g)","—":"nie istnieje w roztworze wodnym / rozkłada się"},"cations":[{"id":"Na","ion":"Na⁺"},{"id":"K","ion":"K⁺"},{"id":"NH4","ion":"NH₄⁺"},{"id":"Mg","ion":"Mg²⁺"},{"id":"Ca","ion":"Ca²⁺"},{"id":"Ba","ion":"Ba²⁺"},{"id":"Al","ion":"Al³⁺"},{"id":"Zn","ion":"Zn²⁺"},{"id":"Mn","ion":"Mn²⁺"},{"id":"Fe2","ion":"Fe²⁺"},{"id":"Fe3","ion":"Fe³⁺"},{"id":"Ni","ion":"Ni²⁺"},{"id":"Cu","ion":"Cu²⁺"},{"id":"Ag","ion":"Ag⁺"},{"id":"Pb","ion":"Pb²⁺"},{"id":"Sn","ion":"Sn²⁺"}],"anions":[{"id":"OH","ion":"OH⁻","name":"wodorotlenek","q":1},{"id":"Cl","ion":"Cl⁻","name":"chlorek","q":1},{"id":"Br","ion":"Br⁻","name":"bromek","q":1},{"id":"I","ion":"I⁻","name":"jodek","q":1},{"id":"NO3","ion":"NO₃⁻","name":"azotan(V)","q":1},{"id":"CH3COO","ion":"CH₃COO⁻","name":"octan","q":1},{"id":"SO4","ion":"SO₄²⁻","name":"siarczan(VI)","q":2},{"id":"SO3","ion":"SO₃²⁻","name":"siarczan(IV)","q":2},{"id":"CO3","ion":"CO₃²⁻","name":"węglan","q":2},{"id":"PO4","ion":"PO₄³⁻","name":"fosforan(V)","q":3},{"id":"S","ion":"S²⁻","name":"siarczek","q":2},{"id":"SiO3","ion":"SiO₃²⁻","name":"krzemian","q":2},{"id":"F","ion":"F⁻","name":"fluorek","q":1},{"id":"HCO3","ion":"HCO₃⁻","name":"wodorowęglan","q":1}],"table":{"OH":{"Na":"R","K":"R","NH4":"R","Mg":"N","Ca":"T","Ba":"R","Al":"N","Zn":"N","Mn":"N","Fe2":"N","Fe3":"N","Ni":"N","Cu":"N","Ag":"—","Pb":"N","Sn":"N"},"Cl":{"Na":"R","K":"R","NH4":"R","Mg":"R","Ca":"R","Ba":"R","Al":"R","Zn":"R","Mn":"R","Fe2":"R","Fe3":"R","Ni":"R","Cu":"R","Ag":"N","Pb":"T","Sn":"R"},"Br":{"Na":"R","K":"R","NH4":"R","Mg":"R","Ca":"R","Ba":"R","Al":"R","Zn":"R","Mn":"R","Fe2":"R","Fe3":"R","Ni":"R","Cu":"R","Ag":"N","Pb":"T","Sn":"R"},"I":{"Na":"R","K":"R","NH4":"R","Mg":"R","Ca":"R","Ba":"R","Al":"R","Zn":"R","Mn":"R","Fe2":"R","Fe3":"—","Ni":"R","Cu":"—","Ag":"N","Pb":"N","Sn":"R"},"NO3":{"Na":"R","K":"R","NH4":"R","Mg":"R","Ca":"R","Ba":"R","Al":"R","Zn":"R","Mn":"R","Fe2":"R","Fe3":"R","Ni":"R","Cu":"R","Ag":"R","Pb":"R","Sn":"—"},"CH3COO":{"Na":"R","K":"R","NH4":"R","Mg":"R","Ca":"R","Ba":"R","Al":"R","Zn":"R","Mn":"R","Fe2":"R","Fe3":"R","Ni":"R","Cu":"R","Ag":"T","Pb":"R","Sn":"—"},"SO4":{"Na":"R","K":"R","NH4":"R","Mg":"R","Ca":"T","Ba":"N","Al":"R","Zn":"R","Mn":"R","Fe2":"R","Fe3":"R","Ni":"R","Cu":"R","Ag":"T","Pb":"N","Sn":"R"},"SO3":{"Na":"R","K":"R","NH4":"R","Mg":"T","Ca":"N","Ba":"N","Al":"—","Zn":"N","Mn":"N","Fe2":"N","Fe3":"—","Ni":"N","Cu":"—","Ag":"N","Pb":"N","Sn":"—"},"CO3":{"Na":"R","K":"R","NH4":"R","Mg":"N","Ca":"N","Ba":"N","Al":"—","Zn":"N","Mn":"N","Fe2":"N","Fe3":"—","Ni":"N","Cu":"N","Ag":"N","Pb":"N","Sn":"—"},"PO4":{"Na":"R","K":"R","NH4":"R","Mg":"N","Ca":"N","Ba":"N","Al":"N","Zn":"N","Mn":"N","Fe2":"N","Fe3":"N","Ni":"N","Cu":"N","Ag":"N","Pb":"N","Sn":"N"},"S":{"Na":"R","K":"R","NH4":"R","Mg":"—","Ca":"—","Ba":"R","Al":"—","Zn":"N","Mn":"N","Fe2":"N","Fe3":"—","Ni":"N","Cu":"N","Ag":"N","Pb":"N","Sn":"N"},"SiO3":{"Na":"R","K":"R","NH4":"—","Mg":"N","Ca":"N","Ba":"N","Al":"N","Zn":"N","Mn":"N","Fe2":"N","Fe3":"—","Ni":"N","Cu":"N","Ag":"N","Pb":"N","Sn":"—"},"F":{"Na":"R","K":"R","NH4":"R","Mg":"N","Ca":"N","Ba":"T","Al":"T","Zn":"T","Mn":"T","Fe2":"T","Fe3":"T","Ni":"T","Cu":"T","Ag":"R","Pb":"T","Sn":"R"},"HCO3":{"Na":"R","K":"R","NH4":"R","Mg":"R","Ca":"R","Ba":"R","Al":"—","Zn":"—","Mn":"—","Fe2":"R","Fe3":"—","Ni":"—","Cu":"—","Ag":"—","Pb":"—","Sn":"—"}},"qc":{"Na":1,"K":1,"NH4":1,"Mg":2,"Ca":2,"Ba":2,"Al":3,"Zn":2,"Mn":2,"Fe2":2,"Fe3":3,"Ni":2,"Cu":2,"Ag":1,"Pb":2,"Sn":2},"gen":{"Na":"sodu","K":"potasu","NH4":"amonu","Mg":"magnezu","Ca":"wapnia","Ba":"baru","Al":"glinu","Zn":"cynku","Mn":"manganu(II)","Fe2":"żelaza(II)","Fe3":"żelaza(III)","Ni":"niklu(II)","Cu":"miedzi(II)","Ag":"srebra","Pb":"ołowiu(II)","Sn":"cyny(II)"}};
+  var SUB = '₀₁₂₃₄₅₆₇₈₉';
+  function pf(f) { return f.replace(/\d/g, function (c) { return SUB[+c]; }); }
+  function gcd(a, b) { return b ? gcd(b, a % b) : a; }
+  function zwiazek(cid, an) {
+    var A = D.anions.filter(function (a) { return a.id === an; })[0], qc = D.qc[cid], qa = A.q, k = gcd(qc, qa), nc = qa / k, na = qc / k;
+    var sym = /^Fe[23]$/.test(cid) ? 'Fe' : cid, mono = /^(Cl|Br|I|F|S)$/.test(an), f;
+    if (an === 'CH3COO') f = na > 1 ? '(CH3COO)' + na + sym : 'CH3COO' + sym;
+    else f = (sym === 'NH4' && nc > 1 ? '(NH4)' : sym) + (nc > 1 ? nc : '') + ((na > 1 && !mono) ? '(' + an + ')' + na : an + (na > 1 ? na : ''));
+    return {pretty: pf(f), name: A.name + ' ' + D.gen[cid], sol: D.table[an][cid]};
+  }
+  window.KLOCKI.rozp = {D: D, zwiazek: zwiazek};
+  var COL = {R: 'rgba(46,125,79,.16)', T: 'rgba(176,111,28,.2)', N: 'rgba(184,58,69,.18)', '—': 'rgba(100,116,139,.12)'};
+  KLOCKI.def('tabela-rozpuszczalnosci', {
+    opis: 'Tabela rozpuszczalności soli i wodorotlenków w 20 °C; kliknięcie komórki pokazuje wzór, nazwę i rozpuszczalność.',
+    domyslne: {},
+    html: function (host) {
+      var t = '<table style="border-collapse:collapse;font-size:12.5px;min-width:720px"><tr><th></th>' + D.cations.map(function (c) { return '<th style="padding:4px 5px">' + c.ion + '</th>'; }).join('') + '</tr>';
+      D.anions.forEach(function (a) {
+        t += '<tr><th style="padding:4px 6px;text-align:left;white-space:nowrap">' + a.ion + '</th>' + D.cations.map(function (c) {
+          var s = D.table[a.id][c.id] || '', k = zwiazek(c.id, a.id);
+          return '<td data-c="' + c.id + '" data-a="' + a.id + '" title="' + k.pretty + ' — ' + k.name + '" style="cursor:pointer;text-align:center;font-weight:800;padding:5px 4px;border:1px solid var(--border,#e2e8f0);background:' + (COL[s] || '') + '">' + s + '</td>';
+        }).join('') + '</tr>';
+      });
+      host.style.display = 'block';
+      host.innerHTML = '<div style="overflow-x:auto">' + t + '</table></div><div class="tr-info" style="margin-top:8px;font-size:14px">Kliknij komórkę tabeli.</div>' +
+        '<div style="margin-top:6px;font-size:13px"><b>R</b> — rozpuszczalny · <b>T</b> — trudno rozpuszczalny · <b>N</b> — praktycznie nierozpuszczalny (wytrąca się jako osad) · <b>—</b> — nie istnieje w wodzie lub rozkłada się. Wiersze F⁻ i SiO₃²⁻ — orientacyjnie.</div>';
+      var info = host.querySelector('.tr-info');
+      host.addEventListener('click', function (e) {
+        var td = e.target.closest('td[data-c]'); if (!td) return;
+        var k = zwiazek(td.dataset.c, td.dataset.a);
+        info.innerHTML = '<b style="font-size:16px">' + k.pretty + '</b> — ' + k.name + '<br>' + k.sol + ': ' + (D.legend[k.sol] || '') + ((k.sol === 'N' || k.sol === 'T') ? '<br><i>Powstaje jako osad w reakcji strącania.</i>' : '');
+      });
+    }
+  });
+})();
+
+/* KLOCEK: rownania-jonowe — wybór reakcji i trzy zapisy: cząsteczkowy, jonowy pełny, jonowy skrócony; jony obserwatorowe wyróżnione.
+   Opcje: reakcja (indeks startowy 0–11). Zapis jonowy liczony z listy jonów każdej substancji (osad, gaz, woda i tlenek zostają cząsteczkowo). */
+(function () {
+  var J = {
+    NaOH: [[1, 'Na⁺'], [1, 'OH⁻']], HCl: [[1, 'H⁺'], [1, 'Cl⁻']], NaCl: [[1, 'Na⁺'], [1, 'Cl⁻']], AgNO3: [[1, 'Ag⁺'], [1, 'NO₃⁻']],
+    NaNO3: [[1, 'Na⁺'], [1, 'NO₃⁻']], BaCl2: [[1, 'Ba²⁺'], [2, 'Cl⁻']], Na2SO4: [[2, 'Na⁺'], [1, 'SO₄²⁻']], CuSO4: [[1, 'Cu²⁺'], [1, 'SO₄²⁻']],
+    FeCl3: [[1, 'Fe³⁺'], [3, 'Cl⁻']], CaCl2: [[1, 'Ca²⁺'], [2, 'Cl⁻']], Na2CO3: [[2, 'Na⁺'], [1, 'CO₃²⁻']], MgCl2: [[1, 'Mg²⁺'], [2, 'Cl⁻']],
+    H2SO4: [[2, 'H⁺'], [1, 'SO₄²⁻']], ZnSO4: [[1, 'Zn²⁺'], [1, 'SO₄²⁻']], CuCl2: [[1, 'Cu²⁺'], [2, 'Cl⁻']], PbNO32: [[1, 'Pb²⁺'], [2, 'NO₃⁻']],
+    KI: [[1, 'K⁺'], [1, 'I⁻']], KNO3: [[1, 'K⁺'], [1, 'NO₃⁻']], CaOH2: [[1, 'Ca²⁺'], [2, 'OH⁻']], HNO3: [[1, 'H⁺'], [1, 'NO₃⁻']], CaNO32: [[1, 'Ca²⁺'], [2, 'NO₃⁻']]
+  };
+  var Z = {  // zapis cząsteczkowy (pretty) substancji nie-jonowych i jonowych
+    NaOH: 'NaOH', HCl: 'HCl', NaCl: 'NaCl', AgNO3: 'AgNO₃', NaNO3: 'NaNO₃', BaCl2: 'BaCl₂', Na2SO4: 'Na₂SO₄', CuSO4: 'CuSO₄', FeCl3: 'FeCl₃', CaCl2: 'CaCl₂',
+    Na2CO3: 'Na₂CO₃', MgCl2: 'MgCl₂', H2SO4: 'H₂SO₄', ZnSO4: 'ZnSO₄', CuCl2: 'CuCl₂', PbNO32: 'Pb(NO₃)₂', KI: 'KI', KNO3: 'KNO₃', CaOH2: 'Ca(OH)₂', HNO3: 'HNO₃', CaNO32: 'Ca(NO₃)₂',
+    AgCl: 'AgCl↓', BaSO4: 'BaSO₄↓', CuOH2: 'Cu(OH)₂↓', FeOH3: 'Fe(OH)₃↓', PbI2: 'PbI₂↓', CaCO3: 'CaCO₃', H2O: 'H₂O', CO2: 'CO₂↑', H2: 'H₂↑', Mg: 'Mg', Zn: 'Zn', CuO: 'CuO'
+  };
+  var R = [
+    ['Zobojętnianie: NaOH + HCl', [[1, 'NaOH'], [1, 'HCl']], [[1, 'NaCl'], [1, 'H2O']]],
+    ['Zobojętnianie: Ca(OH)₂ + HNO₃', [[1, 'CaOH2'], [2, 'HNO3']], [[1, 'CaNO32'], [2, 'H2O']]],
+    ['Strącanie AgCl: AgNO₃ + NaCl', [[1, 'AgNO3'], [1, 'NaCl']], [[1, 'AgCl'], [1, 'NaNO3']]],
+    ['Strącanie BaSO₄: BaCl₂ + Na₂SO₄', [[1, 'BaCl2'], [1, 'Na2SO4']], [[1, 'BaSO4'], [2, 'NaCl']]],
+    ['Strącanie Cu(OH)₂: CuSO₄ + NaOH', [[1, 'CuSO4'], [2, 'NaOH']], [[1, 'CuOH2'], [1, 'Na2SO4']]],
+    ['Strącanie Fe(OH)₃: FeCl₃ + NaOH', [[1, 'FeCl3'], [3, 'NaOH']], [[1, 'FeOH3'], [3, 'NaCl']]],
+    ['Strącanie PbI₂: Pb(NO₃)₂ + KI', [[1, 'PbNO32'], [2, 'KI']], [[1, 'PbI2'], [2, 'KNO3']]],
+    ['Węglan + kwas: Na₂CO₃ + HCl', [[1, 'Na2CO3'], [2, 'HCl']], [[2, 'NaCl'], [1, 'H2O'], [1, 'CO2']]],
+    ['Węglan + kwas: CaCO₃ + HCl', [[1, 'CaCO3'], [2, 'HCl']], [[1, 'CaCl2'], [1, 'H2O'], [1, 'CO2']]],
+    ['Metal + kwas: Mg + HCl', [[1, 'Mg'], [2, 'HCl']], [[1, 'MgCl2'], [1, 'H2']]],
+    ['Metal + kwas: Zn + H₂SO₄', [[1, 'Zn'], [1, 'H2SO4']], [[1, 'ZnSO4'], [1, 'H2']]],
+    ['Tlenek metalu + kwas: CuO + HCl', [[1, 'CuO'], [2, 'HCl']], [[1, 'CuCl2'], [1, 'H2O']]]
+  ];
+  function rozloz(lista) {   // → termy {c, t, jon}
+    var o = [];
+    lista.forEach(function (x) { var j = J[x[1]]; if (j) j.forEach(function (i) { o.push({c: i[0] * x[0], t: i[1], jon: true}); }); else o.push({c: x[0], t: Z[x[1]], jon: false}); });
+    return o;
+  }
+  function txt(ts, cl) { return ts.map(function (t) { return (t.c > 1 ? t.c + ' ' : '') + (cl && t.jon && cl[t.t] ? '<span style="opacity:.55;text-decoration:line-through">' + t.t + '</span>' : t.t); }).join(' + '); }
+  function czast(l) { return l.map(function (x) { return (x[0] > 1 ? x[0] + ' ' : '') + Z[x[1]]; }).join(' + '); }
+  function licz(r) {
+    var L = rozloz(r[1]), P = rozloz(r[2]), mL = {}, mP = {};
+    L.forEach(function (t) { if (t.jon) mL[t.t] = (mL[t.t] || 0) + t.c; }); P.forEach(function (t) { if (t.jon) mP[t.t] = (mP[t.t] || 0) + t.c; });
+    var obs = {}; Object.keys(mL).forEach(function (k) { if (mP[k]) obs[k] = Math.min(mL[k], mP[k]); });
+    function skroc(ts) { var left = {}; Object.keys(obs).forEach(function (k) { left[k] = obs[k]; }); var o = []; ts.forEach(function (t) { if (t.jon && left[t.t]) { var d = Math.min(left[t.t], t.c); left[t.t] -= d; if (t.c - d > 0) o.push({c: t.c - d, t: t.t, jon: true}); } else o.push({c: t.c, t: t.t, jon: t.jon}); }); return o; }
+    var sl = skroc(L), sp = skroc(P);
+    var g = sl.concat(sp).reduce(function (a, t) { var b = t.c; while (b) { var x = a % b; a = b; b = x; } return a; }, 0) || 1;
+    if (g > 1) { sl.forEach(function (t) { t.c /= g; }); sp.forEach(function (t) { t.c /= g; }); }
+    return {mol: czast(r[1]) + ' → ' + czast(r[2]), pelne: txt(L, obs) + ' → ' + txt(P, obs), skr: txt(sl) + ' → ' + txt(sp), obs: Object.keys(obs)};
+  }
+  KLOCKI.def('rownania-jonowe', {
+    opis: 'Równania jonowe: po wyborze reakcji pokazuje zapis cząsteczkowy, jonowy pełny z jonami obserwatorowymi i jonowy skrócony.',
+    domyslne: {reakcja: 0},
+    html: function (host, opc) {
+      host.style.display = 'block';
+      host.innerHTML = '<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px">' + R.map(function (r, i) { return '<button type="button" data-i="' + i + '" style="font:inherit;font-size:13px;padding:5px 10px;border:1px solid var(--border-strong,#94a3b8);border-radius:999px;background:var(--surface,#fff);color:inherit;cursor:pointer">' + r[0] + '</button>'; }).join('') + '</div><div class="rj-w" style="display:grid;gap:8px;font-size:15px"></div>';
+      var w = host.querySelector('.rj-w');
+      function poka(i) {
+        var o = licz(R[i]);
+        [].forEach.call(host.querySelectorAll('button'), function (b) { b.style.background = (+b.dataset.i === i) ? 'var(--accent-soft,#dbeafe)' : 'var(--surface,#fff)'; });
+        w.innerHTML = '<div><b>Cząsteczkowo:</b><br>' + o.mol + '</div><div><b>Jonowo (pełne):</b><br>' + o.pelne + '</div><div><b>Jonowo (skrócone):</b><br>' + o.skr + '</div>' +
+          '<div style="font-size:13px;opacity:.8">' + (o.obs.length ? 'Jony obserwatorowe (przekreślone): ' + o.obs.join(', ') + '.' : 'Brak jonów obserwatorowych — wszystkie jony biorą udział w przemianie.') + ' Osad (↓), gaz (↑), woda i tlenki zostają zapisane cząsteczkowo.</div>';
+      }
+      host.addEventListener('click', function (e) { var b = e.target.closest('button[data-i]'); if (b) poka(+b.dataset.i); });
+      poka(+opc.reakcja || 0);
+    }
+  });
+})();
+
+/* KLOCEK: izotopy — konstruktor atomu: dodawaj i zabieraj protony, neutrony, elektrony; model mówi, czy zmienił się pierwiastek, izotop czy ładunek;
+   niżej masa atomowa jako średnia ważona mas izotopów. Dane: engine/src/dane/pierwiastki.json (ELEMENTS_54, ISOTOPES). Opcje: z (17) — pierwiastek startowy. */
+(function () {
+  var DAT = {"1":["H","wodór",[[1,1.007825,99.985],[2,2.014102,0.015],[3,3.016049,0]]],"2":["He","hel",[[4,4.002603,99.9998],[3,3.016029,0.0002],[6,6.018889,0]]],"3":["Li","lit",[[7,7.016004,92.41],[6,6.015123,7.59]]],"4":["Be","beryl",[[9,9.012183,10000]]],"5":["B","bor",[[11,11.009305,8010.0],[10,10.012937,1990.0]]],"6":["C","węgiel",[[12,12,98.93],[13,13.003355,1.07],[14,14.003242,0]]],"7":["N","azot",[[14,14.003074,99.636],[15,15.000109,0.364]]],"8":["O","tlen",[[16,15.994915,99.757],[18,17.99916,0.205],[17,16.999132,0.038]]],"9":["F","fluor",[[19,18.998403,10000]]],"10":["Ne","neon",[[20,19.99244,90.48],[22,21.991385,9.25],[21,20.993846,0.27]]],"11":["Na","sód",[[23,22.98977,100],[24,23.990963,0]]],"12":["Mg","magnez",[[24,23.985042,78.99],[26,25.982593,11.01],[25,24.985837,10.0]]],"13":["Al","glin",[[27,26.981539,100]]],"14":["Si","krzem",[[28,27.976927,92.23],[29,28.976495,4.67],[30,29.97377,3.1]]],"15":["P","fosfor",[[31,30.973762,100],[32,31.973907,0]]],"16":["S","siarka",[[32,31.972071,94.99],[34,33.967867,4.25],[33,32.971459,0.75],[36,35.967081,0.01]]],"17":["Cl","chlor",[[35,34.968853,75.76],[37,36.965903,24.24]]],"18":["Ar","argon",[[40,39.962383,99.6],[36,35.967546,0.337],[38,37.962732,0.063]]],"19":["K","potas",[[39,38.963707,93.258],[41,40.961826,6.73],[40,39.963999,0.0117]]],"20":["Ca","wapń",[[40,39.962591,96.941],[44,43.955482,2.086]]],"21":["Sc","skand",[]],"22":["Ti","tytan",[]],"23":["V","wanad",[]],"24":["Cr","chrom",[]],"25":["Mn","mangan",[]],"26":["Fe","żelazo",[[56,55.934938,91.754],[54,53.939611,5.845],[57,56.935394,2.119]]],"27":["Co","kobalt",[]],"28":["Ni","nikiel",[]],"29":["Cu","miedź",[[63,62.929601,69.15],[65,64.927794,30.85]]],"30":["Zn","cynk",[[64,63.929142,49.15],[66,65.926034,27.73],[68,67.924845,18.45],[67,66.927129,4.04],[70,69.925325,0.61]]],"31":["Ga","gal",[]],"32":["Ge","german",[]],"33":["As","arsen",[]],"34":["Se","selen",[]],"35":["Br","brom",[[79,78.918337,50.65],[81,80.916291,49.35]]],"36":["Kr","krypton",[[84,83.911507,5700],[86,85.91061,1730.0],[82,81.913485,1159.3],[83,82.914136,1150.0],[80,79.916378,228.6],[78,77.920386,35.53]]],"37":["Rb","rubid",[[85,84.911789,7217.0],[87,86.909183,2783.0]]],"38":["Sr","stront",[[88,87.905614,8258.0],[86,85.909262,986.0],[87,86.908879,700],[84,83.913425,56.0]]],"39":["Y","itr",[[89,88.905848,10000]]],"40":["Zr","cyrkon",[[90,89.904704,5145.0],[94,93.906316,1738.0],[92,91.90504,1715.0],[91,90.905645,1122.0],[96,95.908273,280.0]]],"41":["Nb","niob",[[93,92.906378,10000]]],"42":["Mo","molibden",[[98,97.905406,2413.0],[96,95.904676,1668.0],[95,94.90584,1592.0],[92,91.90681,1484.0],[100,99.907477,963.0],[97,96.90602,955.0],[94,93.905087,925.0]]],"43":["Tc","technet",[]],"44":["Ru","ruten",[[102,101.904348,3160.0],[104,103.90543,1870.0],[101,100.905582,1700],[99,98.905939,1270.0],[100,99.90422,1260.0],[96,95.907598,552.0],[98,97.905287,188.0]]],"45":["Rh","rod",[[103,102.905503,10000]]],"46":["Pd","pallad",[[106,105.903483,2733.0],[108,107.903892,2646.0],[105,104.905084,2233.0],[110,109.905153,1172.0],[104,103.904035,1114.0],[102,101.905608,102.0]]],"47":["Ag","srebro",[[107,106.905097,51.84],[109,108.904752,48.16]]],"48":["Cd","kadm",[[114,113.903358,2873.0],[112,111.902757,2413.0],[111,110.904182,1280.0],[110,109.903005,1249.0],[113,112.904401,1222.0],[116,115.904756,749.0],[106,105.906459,125.0],[108,107.904184,89.0]]],"49":["In","ind",[[115,114.903878,9571.0],[113,112.904058,429.0]]],"50":["Sn","cyna",[[120,119.902197,3258.0],[118,117.901606,2422.0],[116,115.901744,1454.0],[119,118.903309,859.0],[117,116.902954,768.0],[124,123.905274,579.0],[122,121.90344,463.0],[112,111.904822,97.0],[114,113.902779,66.0],[115,114.903342,34.0]]],"51":["Sb","antymon",[[121,120.903818,5721.0],[123,122.904216,4279.0]]],"52":["Te","tellur",[[130,129.906224,3408.0],[128,127.904463,3174.0],[126,125.903312,1884.0],[125,124.90443,707.0],[124,123.902819,474.0],[122,121.903047,255.0],[123,122.904273,89.0],[120,119.90402,9.0]]],"53":["I","jod",[[127,126.904473,100],[131,130.906126,0]]],"54":["Xe","ksenon",[[132,131.904153,2691.0],[129,128.904779,2640.0],[131,130.905082,2123.0],[134,133.905395,1044.0],[136,135.90722,886.0],[130,129.903508,407.0],[128,127.90353,191.0],[124,123.905893,9.5],[126,125.904269,8.9]]]};
+  var START = [1, 6, 8, 11, 12, 17, 20];
+  var SUPD = '⁰¹²³⁴⁵⁶⁷⁸⁹', SUBD = '₀₁₂₃₄₅₆₇₈₉';
+  function supN(n) { return String(n).replace(/[0-9]/g, function (d) { return SUPD[d]; }); }
+  function subN(n) { return String(n).replace(/[0-9]/g, function (d) { return SUBD[d]; }); }
+  function chg(q) { return q === 0 ? '' : (Math.abs(q) > 1 ? supN(Math.abs(q)) : '') + (q > 0 ? '⁺' : '⁻'); }
+  function pl(x, d) { return x.toFixed(d).replace('.', ','); }
+  function atom(p, n, e) {
+    var W = 260, C = 130, N = p + n, svg = '<svg viewBox="0 0 260 260" width="100%" style="max-width:260px;display:block;margin:auto" role="img" aria-label="Model atomu: ' + p + ' p, ' + n + ' n, ' + e + ' e">';
+    for (var i = 0; i < N; i++) { var a = i * 2.39996, r = 4.2 * Math.sqrt(i + .5); svg += '<circle cx="' + (C + r * Math.cos(a)).toFixed(1) + '" cy="' + (C + r * Math.sin(a)).toFixed(1) + '" r="4.6" fill="' + (Math.floor((i + 1) * p / N) > Math.floor(i * p / N) ? '#d9534f' : '#7f8da0') + '" stroke="#fff" stroke-width=".6"/>'; }
+    svg += '<circle cx="130" cy="130" r="104" fill="none" stroke="#9aa6b6" stroke-dasharray="4 4"/>';
+    for (var k = 0; k < e; k++) { var b = k / e * 2 * Math.PI - Math.PI / 2; svg += '<circle cx="' + (C + 104 * Math.cos(b)).toFixed(1) + '" cy="' + (C + 104 * Math.sin(b)).toFixed(1) + '" r="5" fill="#2f7bd8"/>'; }
+    return svg + '</svg>';
+  }
+  var BTN = 'font:inherit;font-size:13px;padding:4px 10px;border:1px solid var(--border-strong,#94a3b8);border-radius:999px;background:var(--surface,#fff);color:inherit;cursor:pointer;margin:2px';
+  KLOCKI.def('izotopy', {
+    opis: 'Konstruktor atomu: protony, neutrony i elektrony zmieniane przyciskami; wskazuje zmianę pierwiastka, izotopu lub ładunku oraz liczy masę atomową jako średnią ważoną.',
+    domyslne: {z: 17},
+    html: function (host, opc) {
+      var z0 = +opc.z || 17, d0 = DAT[z0], s = {p: z0, n: d0[2][0][0] - z0, e: z0}, start = {p: s.p, n: s.n, e: s.e};
+      host.style.display = 'block';
+      host.innerHTML = '<div><b>Start:</b> ' + START.map(function (z) { return '<button type="button" data-z="' + z + '" style="' + BTN + '">' + DAT[z][0] + '</button>'; }).join('') + '</div><div style="margin:8px 0">' +
+        [['p', 'proton'], ['n', 'neutron'], ['e', 'elektron']].map(function (c) { return '<button type="button" data-d="' + c[0] + '" data-s="-1" style="' + BTN + '">− ' + c[1] + '</button><button type="button" data-d="' + c[0] + '" data-s="1" style="' + BTN + '">+ ' + c[1] + '</button>'; }).join('') +
+        '</div><div style="display:flex;flex-wrap:wrap;gap:16px"><div class="iz-p" style="flex:1;min-width:220px"></div><div class="iz-t" style="flex:1;min-width:240px;font-size:14px"></div></div><div class="iz-a"></div>';
+      var pic = host.querySelector('.iz-p'), txt = host.querySelector('.iz-t'), avg = host.querySelector('.iz-a');
+      function sym(z) { return DAT[z] ? DAT[z][0] : 'Z=' + z; }
+      function draw() {
+        var A = s.p + s.n, q = s.p - s.e, X = sym(s.p), d = DAT[s.p];
+        pic.innerHTML = atom(s.p, s.n, s.e) + '<div style="text-align:center;font-size:13px"><span style="color:#d9534f">●</span> proton &nbsp; <span style="color:#8a949e">●</span> neutron &nbsp; <span style="color:#2f7bd8">●</span> elektron <small>(elektrony na jednym okręgu — powłoki w F07)</small></div>';
+        var iso = d && d[2].filter(function (x) { return x[0] === A; })[0], zm = [];
+        if (s.p !== start.p) zm.push('<b>zmieniła się liczba protonów</b> → to już <b>inny pierwiastek</b> (' + sym(start.p) + ' → ' + X + ')');
+        else { if (s.n !== start.n) zm.push('zmieniła się liczba neutronów → <b>inny izotop</b> tego samego pierwiastka'); if (s.e !== start.e) zm.push('zmieniła się liczba elektronów → <b>jon</b>, pierwiastek ten sam'); }
+        txt.innerHTML = '<div style="font-size:22px;margin-bottom:6px">' + supN(A) + subN(s.p) + X + chg(q) + '</div><div><b>' + (d ? d[1] : X) + '</b> · Z = ' + s.p + ' · A = ' + A + '<br>p⁺ = ' + s.p + ' · n⁰ = A − Z = ' + s.n + ' · e⁻ = ' + s.e +
+          '<br><b>Ładunek</b> q = p − e = ' + (q > 0 ? '+' : '') + q + ' → ' + (q === 0 ? 'atom obojętny' : q > 0 ? '<b>kation</b> (oddał ' + q + ' e⁻)' : '<b>anion</b> (przyjął ' + (-q) + ' e⁻)') +
+          '<br><b>Izotop:</b> ' + (!d || !d[2].length ? '— (brak danych w modelu)' : iso ? (iso[2] > 0 ? 'naturalny, udział ' + pl(iso[2], iso[2] < 1 ? 3 : 2) + '%' : 'występuje śladowo / promieniotwórczy') : 'nieznany w przyrodzie — jądro nietrwałe lub nie istnieje') +
+          '</div><div style="margin-top:8px"><b>Co się zmieniło względem startu:</b><br>' + (zm.length ? zm.join('<br>') : 'nic — stan startowy (atom obojętny, najczęstszy izotop)') + '</div>';
+        if (!d || !d[2].length) { avg.innerHTML = ''; return; }
+        var rows = d[2].filter(function (x) { return x[2] > 0; }), M = 0, t = '';
+        rows.forEach(function (x) { var w = x[1] * x[2] / 100; M += w; t += '<tr><td>' + supN(x[0]) + d[0] + '</td><td>' + pl(x[1], 3) + ' u</td><td>' + pl(x[2], x[2] < 1 ? 3 : 2) + '%</td><td>' + pl(w, 3) + ' u</td><td><div style="height:10px;width:' + Math.max(1, x[2]).toFixed(0) + 'px;background:#2f7bd8;border-radius:3px"></div></td></tr>'; });
+        avg.innerHTML = '<div style="margin-top:10px"><b>Masa atomowa ' + d[0] + ' = średnia ważona mas izotopów</b> (masa × udział, potem suma):</div><div style="overflow-x:auto"><table style="border-collapse:collapse;font-size:13px"><thead><tr><th>izotop</th><th>masa</th><th>udział</th><th>wkład</th><th></th></tr></thead><tbody>' + t + '</tbody></table></div>' +
+          '<div style="margin-top:6px">Ar(' + d[0] + ') ≈ ' + pl(M, M < 100 ? 2 : 1) + ' u' + (rows.length > 1 ? ' — wynik leży między masami izotopów, bliżej najczęstszego' : ' — jeden trwały izotop, więc masa atomowa ≈ jego masa') + '</div>';
+      }
+      host.addEventListener('click', function (e) {
+        var b = e.target.closest('button'); if (!b) return;
+        if (b.dataset.z) { var z = +b.dataset.z, d = DAT[z]; s = {p: z, n: d[2][0][0] - z, e: z}; start = {p: s.p, n: s.n, e: s.e}; draw(); }
+        else if (b.dataset.d) { var k = b.dataset.d, st = +b.dataset.s, mx = k === 'p' ? 20 : k === 'n' ? 30 : 22, mn = k === 'p' ? 1 : 0; if (s[k] + st >= mn && s[k] + st <= mx) { s[k] += st; draw(); } }
+      });
+      draw();
+    }
+  });
+})();
+
+/* model_widok.js — mostek: pozwala klockowi zapisać się w starym kontrakcie CHE.VIEW.define(id, {build(host)}) (modele z rozszerzenia.js).
+   Każdy taki model staje się klockiem o tej samej nazwie (id) — bez silnika che-viz.js. Ładować przed plikiem modelu. */
+(function () {
+  var C = window.CHE = window.CHE || {};
+  if (C.VIEW && C.VIEW.define) return;
+  C.VIEW = {define: function (id, d) {
+    KLOCKI.def(id, {opis: d.hint || d.title || id, domyslne: {}, html: function (host) { host.style.display = 'block'; d.build(host); }});
+  }};
+})();
+
+/* KLOCKI (przeniesione z rozszerzenia.js §3–4): n05-wodorki-v01 (mapa wodorków) i n05-trendy-v01 (temperatury wrzenia). Mostek: model_widok.js. */
+(function(){
+var V=window.CHE.VIEW;
+function el(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e}
+var css=el('style');css.textContent=
+'.x5{font:14px/1.5 Inter,system-ui,sans-serif;color:inherit}.x5>*{width:100%;box-sizing:border-box}.x5 .bar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:4px 0 8px}.x5 .bar b{min-width:150px;font-size:13px}'+
+'.x5 button.o{border:1px solid var(--line,#d5dee6);background:var(--panel,#fff);color:inherit;border-radius:8px;padding:5px 10px;font:600 12.5px Inter,system-ui;cursor:pointer}.x5 button.o.on{background:#0d6868;color:#fff;border-color:#0d6868}'+
+'.x5 .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:12px;align-items:start}.x5 .eq{font:700 15px ui-monospace,Consolas,monospace;margin:4px 0 8px;overflow-wrap:anywhere}'+
+'.x5 .nt{border-left:3px solid #0d6868;background:var(--panel-2,#f1f5f8);padding:8px 10px;border-radius:6px;font-size:13.5px}.x5 .tch{color:#b83a45;font-weight:700}'+
+'.x5 .pt{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:4px;max-width:560px}.x5 .pt .h{font:700 10.5px system-ui;color:var(--mut,#667382);text-align:center;align-self:end}'+
+'.x5 .pt button{aspect-ratio:1;min-width:0;border-radius:8px;border:2px solid transparent;font:800 15px system-ui;cursor:pointer;padding:0;color:#18212b}.x5 .pt button small{display:block;font:600 9px system-ui;opacity:.75}'+
+'.x5 .pt button.on{border-color:#18212b;box-shadow:0 0 0 2px #fff inset}.x5 .t-jon{background:#fbd9b0}.x5 .t-kow{background:#bfe3e0}.x5 .t-pol{background:#d8e6c0}.x5 .t-met{background:#d4d9df}.x5 .t-pos{background:#e9d5f0}'+
+'.x5 .lg{display:flex;flex-wrap:wrap;gap:10px;font-size:12px;margin:8px 0}.x5 .lg span{display:inline-flex;align-items:center;gap:5px}.x5 .lg i{width:14px;height:14px;border-radius:4px;display:inline-block}'+
+'.x5 table.k{border-collapse:collapse;width:100%;font-size:13.5px}.x5 table.k td{padding:4px 6px;border-bottom:1px solid var(--line,#e2e8ee);vertical-align:top}.x5 table.k td:first-child{color:var(--mut,#667382);width:42%}'+
+'.x5 .en{height:10px;border-radius:5px;background:linear-gradient(90deg,#f0a35e,#e9e3c9 50%,#58b4ae);position:relative;margin:4px 0 14px}.x5 .en i{position:absolute;top:-4px;width:3px;height:18px;background:#1b2430}.x5 .en em{position:absolute;top:12px;font:600 10px system-ui;transform:translateX(-50%);font-style:normal;white-space:nowrap}'+
+'.x5 svg text{font:12px system-ui;fill:currentColor}.x5 .che-zoom-frame{width:100%!important;max-width:640px}.x5 .che-zoom-frame>svg{width:100%!important}';
+document.head.appendChild(css);
+/* ---------- 3. Mapa wodorków (typ, rola H, elektroujemność, właściwości) ---------- */
+/* [sym, grupa, okres, EN(Pauling), wzór, nazwa, typ, stopień utl. H, stan (20 °C), t. wrz. °C, w wodzie, uwaga] */
+var HY=[
+ ['Li',1,2,.98,'LiH','wodorek litu','jon','−I','stały','—','reaguje: LiH + H₂O → LiOH + H₂↑','LiAlH₄ — silny reduktor w syntezie organicznej'],
+ ['Na',1,3,.93,'NaH','wodorek sodu','jon','−I','stały','—','reaguje gwałtownie: NaH + H₂O → NaOH + H₂↑','mocna zasada w syntezie; zapala się w wilgotnym powietrzu'],
+ ['K',1,4,.82,'KH','wodorek potasu','jon','−I','stały','—','reaguje bardzo gwałtownie: KH + H₂O → KOH + H₂↑','najaktywniejszy z tej trójki'],
+ ['Mg',2,3,1.31,'MgH₂','wodorek magnezu','pos','−I','stały','—','reaguje powoli: MgH₂ + 2 H₂O → Mg(OH)₂ + 2 H₂↑','wiązania pośrednie (jonowo-kowalencyjne); magazyn wodoru (7,6% masy to H)'],
+ ['Ca',2,4,1.00,'CaH₂','wodorek wapnia','jon','−I','stały','—','reaguje: CaH₂ + 2 H₂O → Ca(OH)₂ + 2 H₂↑','osuszanie rozpuszczalników; przenośne źródło wodoru'],
+ ['B',13,2,2.04,'B₂H₆','diboran','kow','−I (formalnie)','gaz','−92,5','reaguje: B₂H₆ + 6 H₂O → 2 H₃BO₃ + 6 H₂↑','najprostszy borowodór (BH₃ nie istnieje jako trwała cząsteczka); samozapalny, trujący'],
+ ['C',14,2,2.55,'CH₄','metan','kow','+I','gaz','−161,5','nie rozpuszcza się, nie reaguje — obojętny','gaz ziemny, biogaz; najprostszy węglowodór'],
+ ['Si',14,3,1.90,'SiH₄','silan (krzemowodór)','kow','−I (formalnie)','gaz','−111,9','nie rozpuszcza się; w zasadach rozkłada się z wydzieleniem H₂','samozapalny w powietrzu; źródło czystego krzemu w elektronice'],
+ ['N',15,2,3.04,'NH₃','amoniak','kow','+I','gaz','−33,3','bardzo dobrze rozpuszczalny (ok. 700 obj. w 1 obj. wody); odczyn zasadowy','nawozy, kwas azotowy(V), chłodnictwo; synteza Habera–Boscha'],
+ ['P',15,3,2.19,'PH₃','fosforowodór (fosfan)','kow','+I (umownie; EN P ≈ EN H)','gaz','−87,7','słabo rozpuszczalny; odczyn praktycznie obojętny','bardzo trujący; zapach czosnku/zgniłych ryb'],
+ ['O',16,2,3.44,'H₂O','woda','kow','+I','ciecz','100,0','—','wiązania wodorowe → wyjątkowo wysoka t. wrzenia'],
+ ['S',16,3,2.58,'H₂S','siarkowodór','kow','+I','gaz','−60,3','umiarkowanie rozpuszczalny (ok. 2,6 obj.); słaby kwas siarkowodorowy','zapach zgniłych jaj; bardzo trujący'],
+ ['Se',16,4,2.55,'H₂Se','selenowodór','kow','+I','gaz','−41,3','kwas selenowodorowy — mocniejszy niż H₂S','bardzo trujący'],
+ ['F',17,2,3.98,'HF','fluorowodór','kow','+I','gaz (skrapla się w 19,5 °C)','19,5','kwas fluorowodorowy — słaby, ale bardzo niebezpieczny','trawi szkło: SiO₂ + 4 HF → SiF₄ + 2 H₂O'],
+ ['Cl',17,3,3.16,'HCl','chlorowodór','kow','+I','gaz','−85,1','bardzo dobrze rozpuszczalny (ok. 450 obj.); mocny kwas solny','kwas solny: przemysł, żołądek (ok. 0,1 mol/dm³)'],
+ ['Br',17,4,2.96,'HBr','bromowodór','kow','+I','gaz','−66,8','mocny kwas bromowodorowy','mocniejszy kwas niż HCl'],
+ ['I',17,5,2.66,'HI','jodowodór','kow','+I','gaz','−35,4','najmocniejszy z kwasów beztlenowych fluorowców','wiązanie H–I najdłuższe i najsłabsze'],
+ ['Ti','d',4,1.54,'TiH₂','wodorek tytanu','met','—','stały','—','nie reaguje z wodą w zwykłych warunkach','wodorek metaliczny (międzywęzłowy), skład bliski TiH₂'],
+ ['Pd','d',5,2.20,'PdHₓ','wodorek palladu','met','—','stały','—','—','pallad pochłania do ok. 900 objętości H₂; skład zmienny (x &lt; 1)']];
+var TN={jon:'jonowy (H⁻)',kow:'kowalencyjny',pos:'pośredni (jonowo-kowalencyjny)',met:'metaliczny (międzywęzłowy)'},TC={jon:'t-jon',kow:'t-kow',pos:'t-pos',met:'t-met'};
+V.define('n05-wodorki-v01',{title:'Mapa wodorków — typ, rola wodoru, właściwości',tag:'DANE',hint:'Kliknij pierwiastek: wzór i nazwa wodorku, typ wiązania, stopień utlenienia H, elektroujemność względem wodoru, stan, temperatura wrzenia i zachowanie w wodzie.',foot:'dane: rozszerzenia.js (N05); EN wg Paulinga, H = 2,20',
+ build:function(host){host.innerHTML='';host.classList.add('x5');
+  var cols=[1,2,13,14,15,16,17,'d'],pt=el('div','pt');cols.forEach(function(c){pt.appendChild(el('div','h',c==='d'?'d':c))});
+  var btn={};for(var p=2;p<=5;p++)cols.forEach(function(c){var h=HY.filter(function(x){return x[1]===c&&x[2]===p})[0];if(!h){pt.appendChild(el('div'));return}
+   var b=el('button',TC[h[6]],h[0]+'<small>'+h[4]+'</small>');b.type='button';b.title=h[5];b.onclick=function(){show(h)};btn[h[0]]=b;pt.appendChild(b)});
+  host.appendChild(pt);
+  host.appendChild(el('div','lg','<span><i class="t-jon"></i>jonowy</span><span><i class="t-pos"></i>pośredni</span><span><i class="t-kow"></i>kowalencyjny</span><span><i class="t-met"></i>metaliczny</span>'));
+  var card=el('div');host.appendChild(card);
+  function show(h){Object.keys(btn).forEach(function(k){btn[k].classList.toggle('on',k===h[0])});
+   var d=(h[3]-2.20),pos=function(v){return Math.max(0,Math.min(100,(v-0.7)/(4.0-0.7)*100))};
+   card.innerHTML='<div class="eq" style="font-size:20px">'+h[4]+' — '+h[5]+'</div>'+
+   '<div style="font-size:12px;color:var(--mut,#667382)">elektroujemność: '+h[0]+' '+h[3].toFixed(2).replace('.',',')+' · H 2,20 · różnica '+(d>=0?'+':'−')+Math.abs(d).toFixed(2).replace('.',',')+'</div>'+
+   '<div class="en"><i style="left:'+pos(h[3])+'%"></i><em style="left:'+pos(h[3])+'%">'+h[0]+'</em><i style="left:'+pos(2.2)+'%;background:#b83a45"></i><em style="left:'+pos(2.2)+'%;color:#b83a45">H</em></div>'+
+   '<table class="k"><tr><td>Typ wodorku</td><td><b>'+TN[h[6]]+'</b></td></tr><tr><td>Stopień utlenienia H</td><td>'+h[7]+'</td></tr><tr><td>Stan w 20 °C</td><td>'+h[8]+'</td></tr><tr><td>Temperatura wrzenia</td><td>'+(h[9]==='—'?'—':h[9]+' °C')+'</td></tr><tr><td>Z wodą / w wodzie</td><td>'+h[10]+'</td></tr><tr><td>Warto wiedzieć</td><td>'+h[11]+'</td></tr></table>'+
+   '<div class="nt" style="margin-top:8px">'+(h[6]==='jon'||h[6]==='pos'?'Partner <b>mniej elektroujemny</b> od wodoru i oddaje elektrony → wodór jako <b>H⁻</b> (−I). Taki wodorek z wodą daje <b>wodorotlenek + H₂</b>.':h[6]==='met'?'Atomy wodoru zajmują <b>luki w sieci metalu</b> — skład zmienny, przewodzi prąd jak metal.':h[7].indexOf('−I')===0?'Partner nieco mniej elektroujemny od H — formalnie H ma −I, ale wiązania są <b>kowalencyjne</b> (wspólne pary elektronów).':'Partner <b>bardziej elektroujemny</b> od wodoru → wiązanie kowalencyjne spolaryzowane w stronę partnera; H ma +I. '+(h[0]==='N'?'Azot ma jednak <b>wolną parę</b> elektronów, która przyłącza H⁺ — dlatego NH₃ jest zasadą.':h[0]==='C'?'Polaryzacja jest mała — metan nie oddaje ani nie przyjmuje H⁺ (obojętny).':h[0]==='O'?'Woda jest amfiprotyczna: może oddać H⁺ albo go przyjąć.':'Im większa polaryzacja i słabsze wiązanie E–H, tym łatwiej oddać H⁺ — roztwór kwasowy (zob. §11 Trendy).'))+'</div>'}
+  show(HY[8])}});
+
+/* ---------- 4. Temperatury wrzenia wodorków grup 14–17 (wiązania wodorowe) ---------- */
+var BP={14:['CH₄','SiH₄','GeH₄','SnH₄',[-161.5,-111.9,-88.5,-51.8],'#5b6675'],15:['NH₃','PH₃','AsH₃','SbH₃',[-33.3,-87.7,-62.5,-17.1],'#2f7fbf'],16:['H₂O','H₂S','H₂Se','H₂Te',[100,-60.3,-41.3,-2.2],'#0d6868'],17:['HF','HCl','HBr','HI',[19.5,-85.1,-66.8,-35.4],'#b06f1c']};
+V.define('n05-trendy-v01',{title:'Temperatury wrzenia wodorków — wiązania wodorowe',tag:'WYKRES',hint:'Wodorki grup 14–17 w okresach 2–5. W każdej grupie t. wrzenia rośnie z masą cząsteczki — poza H₂O, HF i NH₃, które wrą „za wysoko”.',foot:'dane: t. wrzenia pod ciśnieniem 1013 hPa',
+ build:function(host){host.innerHTML='';host.classList.add('x5');var on={14:1,15:1,16:1,17:1};var bar=el('div','bar','<b>Grupy:</b>');host.appendChild(bar);var box=el('div');host.appendChild(box);var info=el('div','nt');host.appendChild(info);
+  Object.keys(BP).forEach(function(g){var b=el('button','o on',g+' ('+BP[g][0]+'…)');b.type='button';b.onclick=function(){on[g]=!on[g];b.classList.toggle('on',!!on[g]);draw()};bar.appendChild(b)});
+  function draw(){var W=560,H=330,L=48,R=90,T=26,B=34,y0=-180,y1=110,X=function(i){return L+i*(W-L-R)/3},Y=function(v){return T+(y1-v)/(y1-y0)*(H-T-B)};
+   var s='<svg viewBox="0 0 '+W+' '+H+'" width="100%" style="max-width:640px;display:block" role="img" aria-label="Wykres temperatur wrzenia wodorków">';
+   for(var v=-150;v<=100;v+=50)s+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+Y(v)+'" y2="'+Y(v)+'" stroke="#cdd5dd" stroke-width="'+(v===0?1.4:.6)+'"/><text x="'+(L-6)+'" y="'+(Y(v)+4)+'" text-anchor="end">'+v+'</text>';
+   ['okres 2','okres 3','okres 4','okres 5'].forEach(function(t,i){s+='<text x="'+X(i)+'" y="'+(H-12)+'" text-anchor="middle">'+t+'</text>'});
+   s+='<text x="'+(L-6)+'" y="12" text-anchor="end" style="font-size:11px">°C</text>';
+   Object.keys(BP).forEach(function(g){if(!on[g])return;var d=BP[g],v=d[4],c=d[5],pts=v.map(function(y,i){return X(i)+','+Y(y)}).join(' ');
+    s+='<polyline points="'+pts+'" fill="none" stroke="'+c+'" stroke-width="2.5"/>';
+    v.forEach(function(y,i){var hot=i===0&&g!=='14';s+='<circle cx="'+X(i)+'" cy="'+Y(y)+'" r="'+(hot?6:4)+'" fill="'+(hot?'#fff':c)+'" stroke="'+c+'" stroke-width="2.5"><title>'+d[i]+': '+String(y).replace('.',',')+' °C</title></circle>'});
+    s+='<text x="'+(X(3)+10)+'" y="'+(Y(v[3])+4)+'" style="fill:'+c+';font-weight:700">'+d[3]+'</text><text x="'+(X(0)+8)+'" y="'+(Y(v[0])-8)+'" style="fill:'+c+';font-weight:700">'+d[0]+'</text>'});
+   box.innerHTML=s+'</svg>';
+   info.innerHTML='<b>Odczyt:</b> w grupie 14 (CH₄ → SnH₄) temperatura wrzenia rośnie równo z masą cząsteczek — działają tylko słabe oddziaływania międzycząsteczkowe. W grupach 15–17 pierwszy wodorek (puste kółko) wrze <b>znacznie wyżej</b>, niż wynikałoby z trendu: między cząsteczkami NH₃, H₂O i HF tworzą się <b>wiązania wodorowe</b> (H przy bardzo elektroujemnym N, O, F). Woda ma ich najwięcej (2 atomy H i 2 wolne pary na cząsteczkę) — dlatego jako jedyna z tych wodorków jest w 20 °C cieczą.'}
+  draw()}});
+})();
+
+/* KLOCEK: gra-klasyfikacja — kwas, zasada, sól czy tlenek? 10 losowych wzorów, po odpowiedzi wyjaśnienie. Opcje: rund (10). Wymaga ui_klocki.js. */
+(function () {
+  var Q = [
+    ['HCl', 'kwas', 'Cząsteczka z H na początku wzoru i resztą kwasową Cl — w wodzie daje H⁺ (H₃O⁺).'], ['H₂SO₄', 'kwas', 'H₂ + reszta kwasowa SO₄ — kwas tlenowy.'], ['HNO₃', 'kwas', 'H + reszta NO₃ — kwas tlenowy.'],
+    ['H₃PO₄', 'kwas', 'Trzy atomy H + reszta PO₄ — kwas trójprotonowy.'], ['H₂S', 'kwas', 'H₂ + reszta S — kwas beztlenowy (siarkowodorowy).'], ['CH₃COOH', 'kwas', 'Kwas octowy: H z grupy –COOH odszczepia się jako H⁺.'],
+    ['NaOH', 'zasada', 'Metal + grupa OH — wodorotlenek rozpuszczalny w wodzie, daje jony OH⁻.'], ['KOH', 'zasada', 'Metal + OH — wodorotlenek potasu.'], ['Ca(OH)₂', 'zasada', 'Metal + dwie grupy OH — wodorotlenek wapnia.'],
+    ['Ba(OH)₂', 'zasada', 'Metal + dwie grupy OH — wodorotlenek baru.'], ['Cu(OH)₂', 'zasada', 'Wodorotlenek metalu (nierozpuszczalny): wzór M(OH)ₙ.'], ['Al(OH)₃', 'zasada', 'Wodorotlenek metalu; amfoteryczny, ale wzór M(OH)ₙ.'],
+    ['NaCl', 'sól', 'Kation metalu + anion reszty kwasowej (Cl⁻).'], ['CaCO₃', 'sól', 'Kation Ca²⁺ + reszta CO₃ — węglan wapnia.'], ['K₂SO₄', 'sól', 'Dwa kationy K⁺ + reszta SO₄.'], ['CuSO₄', 'sól', 'Kation Cu²⁺ + reszta SO₄.'],
+    ['NH₄NO₃', 'sól', 'Kation amonowy NH₄⁺ + reszta NO₃ — sól bez metalu.'], ['FeCl₃', 'sól', 'Kation Fe³⁺ + trzy aniony Cl⁻.'], ['Na₃PO₄', 'sól', 'Trzy kationy Na⁺ + reszta PO₄.'], ['MgCl₂', 'sól', 'Kation Mg²⁺ + dwa aniony Cl⁻.'],
+    ['CO₂', 'tlenek', 'Dwa pierwiastki, jeden to tlen — tlenek węgla(IV).'], ['CaO', 'tlenek', 'Metal + tlen — tlenek wapnia.'], ['Fe₂O₃', 'tlenek', 'Żelazo + tlen — tlenek żelaza(III).'], ['SO₂', 'tlenek', 'Siarka + tlen — tlenek siarki(IV).'],
+    ['Na₂O', 'tlenek', 'Sód + tlen — tlenek sodu.'], ['H₂O', 'tlenek', 'Wodór + tlen — tlenek wodoru (woda).'], ['P₄O₁₀', 'tlenek', 'Fosfor + tlen — tlenek fosforu(V).'], ['CuO', 'tlenek', 'Miedź + tlen — tlenek miedzi(II).']
+  ];
+  var KAT = [['kwas', 'kwas'], ['zasada', 'zasada (wodorotlenek)'], ['sól', 'sól'], ['tlenek', 'tlenek']];
+  KLOCKI.def('gra-klasyfikacja', {
+    opis: 'Gra: pojawia się wzór substancji, a uczeń wybiera, czy to kwas, zasada, sól czy tlenek; po odpowiedzi widać uzasadnienie.',
+    domyslne: {rund: 10},
+    html: function (host, opc) {
+      var U = KLOCKI.ui, N = +opc.rund || 10, ord, i, ok, odp;
+      host.style.display = 'block';
+      host.innerHTML = '<div class="gk-t" style="display:flex;justify-content:space-between;font-size:14px"></div><div class="gk-w" style="font-size:44px;text-align:center;margin:10px 0;font-weight:700"></div><div class="gk-b" style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center"></div><div class="gk-o" style="margin:10px auto;max-width:560px;font-size:14px;min-height:44px"></div>';
+      var t = host.querySelector('.gk-t'), w = host.querySelector('.gk-w'), b = host.querySelector('.gk-b'), o = host.querySelector('.gk-o');
+      function start() { ord = Q.map(function (_, k) { return k; }).sort(function () { return Math.random() - .5; }).slice(0, N); i = 0; ok = 0; nast(); }
+      function nast() {
+        if (i >= ord.length) { w.textContent = ok + ' / ' + N; t.innerHTML = '<span>Koniec gry</span>'; b.innerHTML = ''; o.innerHTML = ok >= N * .8 ? 'Świetnie — klasyfikację masz opanowaną.' : 'Wróć do wskazówek: kwas zaczyna się od H, zasada kończy na OH, sól to metal (lub NH₄) + reszta kwasowa, tlenek to pierwiastek + O.'; b.appendChild(U.btn('Zagraj jeszcze raz', start)); return; }
+        var q = Q[ord[i]]; odp = false; w.innerHTML = q[0]; t.innerHTML = '<span>Pytanie ' + (i + 1) + ' / ' + N + '</span><span>Punkty: <b>' + ok + '</b></span>'; o.innerHTML = 'Wybierz kategorię.'; b.innerHTML = '';
+        KAT.forEach(function (k) { b.appendChild(U.btn(k[1], function () { if (odp) return; odp = true; var dob = k[0] === q[1]; if (dob) ok++; o.innerHTML = (dob ? '<b style="color:#16a34a">Dobrze.</b> ' : '<b style="color:#dc2626">To ' + (q[1] === 'zasada' ? 'zasada' : q[1] === 'sól' ? 'sól' : q[1]) + '.</b> ') + q[2]; t.innerHTML = '<span>Pytanie ' + (i + 1) + ' / ' + N + '</span><span>Punkty: <b>' + ok + '</b></span>'; b.appendChild(U.btn('Dalej →', function () { i++; nast(); })); })); });
+      }
+      start();
+    }
+  });
+})();
+
+/* KLOCEK: profil-energii — wykres energii reakcji: substraty → szczyt Eₐ → produkty; egzo- i endotermiczna, katalizator obniża Eₐ.
+   Animacja: kulka „przechodzi” reakcję w pętli, gdy figura jest widoczna. Opcje: typ (egzo | endo). Wymaga ui_klocki.js. */
+(function () {
+  var PRZ = {
+    egzo: {nazwa: 'Reakcja egzotermiczna', przyklad: '2 H₂ + O₂ → 2 H₂O  (ΔH = −572 kJ)', e0: 60, ea: 160, e1: 20, op: 'Produkty mają mniej energii niż substraty: różnica trafia do otoczenia jako ciepło (ΔH < 0).'},
+    endo: {nazwa: 'Reakcja endotermiczna', przyklad: 'CaCO₃ → CaO + CO₂  (ΔH = +178 kJ)', e0: 40, ea: 150, e1: 95, op: 'Produkty mają więcej energii niż substraty: reakcja pobiera ciepło z otoczenia (ΔH > 0).'}
+  };
+  function kr(e0, ep, e1, x) {   // krzywa: gładka gaussowska górka między e0 i e1
+    var base = e0 + (e1 - e0) * (1 / (1 + Math.exp(-14 * (x - .5))));
+    return base + (ep - Math.max(e0, e1)) * Math.exp(-Math.pow((x - .5) / .17, 2));
+  }
+  KLOCKI.def('profil-energii', {
+    opis: 'Profil energii reakcji: krzywa od substratów przez energię aktywacji do produktów; różnica poziomów to ΔH; katalizator obniża Eₐ.',
+    domyslne: {typ: 'egzo'},
+    html: function (host, opc) {
+      var U = KLOCKI.ui, typ = opc.typ === 'endo' ? 'endo' : 'egzo', kat = false;
+      host.style.display = 'block';
+      var bar = document.createElement('div'); bar.style.cssText = 'display:flex;flex-wrap:wrap;gap:4px;margin-bottom:6px';
+      var bE = U.chip('egzotermiczna', typ === 'egzo', function () { typ = 'egzo'; odsw(); }), bN = U.chip('endotermiczna', typ === 'endo', function () { typ = 'endo'; odsw(); });
+      var bK = U.chip('katalizator', false, function () { kat = !kat; odsw(); });
+      bar.append(bE, bN, bK);
+      var svg = document.createElement('div'), info = document.createElement('div'); info.style.cssText = 'font-size:14px;margin-top:6px';
+      host.append(bar, svg, info);
+      var W = 560, H = 300, L = 60, R = 30, T = 20, B = 40, bx = 0, by = 0;
+      function X(x) { return L + x * (W - L - R); } function Y(e) { return H - B - e / 200 * (H - B - T); }
+      function odsw() {
+        U.zaznacz(bE, typ === 'egzo'); U.zaznacz(bN, typ === 'endo'); U.zaznacz(bK, kat);
+        var p = PRZ[typ], ea = kat ? p.e0 + (p.ea - p.e0) * .55 : p.ea, pts = [];
+        for (var i = 0; i <= 80; i++) { var x = i / 80; pts.push(X(x).toFixed(1) + ',' + Y(kr(p.e0, ea, p.e1, x)).toFixed(1)); }
+        var yp = Y(ea);
+        svg.innerHTML = '<svg viewBox="0 0 ' + W + ' ' + H + '" width="100%" style="max-width:640px;display:block" role="img" aria-label="' + p.nazwa + ': wykres energii od postępu reakcji">' +
+          '<line x1="' + L + '" y1="' + T + '" x2="' + L + '" y2="' + (H - B) + '" stroke="currentColor"/><line x1="' + L + '" y1="' + (H - B) + '" x2="' + (W - R) + '" y2="' + (H - B) + '" stroke="currentColor"/>' +
+          '<text x="14" y="' + (T + 6) + '" font-size="12" fill="currentColor">energia</text><text x="' + (W - R - 110) + '" y="' + (H - 14) + '" font-size="12" fill="currentColor">postęp reakcji →</text>' +
+          '<line x1="' + X(0) + '" y1="' + Y(p.e0) + '" x2="' + X(.5) + '" y2="' + Y(p.e0) + '" stroke="#64748b" stroke-dasharray="4 4"/>' +
+          '<line x1="' + X(.5) + '" y1="' + Y(p.e1) + '" x2="' + X(1) + '" y2="' + Y(p.e1) + '" stroke="#64748b" stroke-dasharray="4 4"/>' +
+          '<polyline points="' + pts.join(' ') + '" fill="none" stroke="' + (kat ? '#16a34a' : '#2563eb') + '" stroke-width="3"/>' +
+          '<text x="' + (X(0) + 6) + '" y="' + (Y(p.e0) - 8) + '" font-size="13" fill="currentColor">substraty</text><text x="' + (X(.62)) + '" y="' + (Y(p.e1) - 8) + '" font-size="13" fill="currentColor">produkty</text>' +
+          '<line x1="' + X(.5) + '" y1="' + Y(p.e0 > p.e1 ? p.e0 : p.e1) + '" x2="' + X(.5) + '" y2="' + (yp + 2) + '" stroke="#dc2626" stroke-width="2" marker-end="url(#ar)"/>' +
+          '<text x="' + (X(.5) + 8) + '" y="' + ((yp + Y(Math.max(p.e0, p.e1))) / 2 + 4) + '" font-size="13" fill="#dc2626">Eₐ' + (kat ? ' (z katalizatorem)' : '') + '</text>' +
+          '<line x1="' + (X(.96)) + '" y1="' + Y(p.e0) + '" x2="' + X(.96) + '" y2="' + Y(p.e1) + '" stroke="#16a34a" stroke-width="2"/>' +
+          '<text x="' + (X(.96) - 64) + '" y="' + ((Y(p.e0) + Y(p.e1)) / 2 + 4) + '" font-size="13" fill="#16a34a">ΔH ' + (typ === 'egzo' ? '< 0' : '> 0') + '</text>' +
+          '<circle class="pe-k" r="7" fill="#f59e0b" stroke="#92400e" stroke-width="1.5"/></svg>';
+        info.innerHTML = '<b>' + p.nazwa + '</b> — ' + p.przyklad + '<br>' + p.op + (kat ? '<br>Katalizator obniża energię aktywacji Eₐ, ale <b>nie zmienia ΔH</b> ani położenia substratów i produktów.' : '');
+        bx = 0;
+      }
+      odsw();
+      U.anim(host, function (dt) {
+        bx = (bx + dt * .2) % 1.15; var x = Math.min(bx, 1), p = PRZ[typ], ea = kat ? p.e0 + (p.ea - p.e0) * .55 : p.ea, k = svg.querySelector('.pe-k');
+        if (k) { k.setAttribute('cx', X(x)); k.setAttribute('cy', Y(kr(p.e0, ea, p.e1, x)) - 7); }
+      });
     }
   });
 })();

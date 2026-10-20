@@ -635,6 +635,70 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 .rownanie{margin:12px 0;padding:12px 16px;border-radius:var(--r-md);background:var(--surface-soft);border:1px solid var(--border);font:600 17px/1.6 Inter,system-ui,sans-serif;text-align:center;overflow-x:auto;white-space:nowrap}
 .rownanie small{display:block;font-size:12px;font-weight:500;color:var(--text-muted);white-space:normal}
 
+/* Styl klocków laboratoryjnych (palniki, probówki, układ okresowy) — dobrany do motywu che:
+   jasna karta lekcji (--surface), akcent --accent, tekst --text. Scena z płótnem zostaje ciemna
+   (płomienie i poświaty wyglądają na ciemnym tle), reszta jak w sekcjach lekcji. */
+:root{--lab:#0e2326;--lab-tekst:var(--text,#1a2332);--lab-cisza:var(--text-muted,#8892a0);--lab-linia:var(--border,#e5e9ee)}
+.lab{background:var(--surface,#fff);color:var(--text,#1a2332);border:1px solid var(--border,#e5e9ee);border-radius:var(--r-lg,14px);padding:16px;box-shadow:var(--sh-sm,none);font-family:var(--tekst,Inter,system-ui,sans-serif)}
+.lab-pasek{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between;margin-bottom:12px}
+.lab-pasek .btn{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+.lab-cisza{color:var(--text-muted,#8892a0);font-size:14px}
+.btn{appearance:none;cursor:pointer;border:1px solid var(--accent,#0d6868);background:var(--accent,#0d6868);color:#fff;border-radius:var(--r-md,10px);padding:8px 14px;font:600 13px var(--tekst,Inter,sans-serif)}
+.btn.jasny{background:var(--surface,#fff);color:var(--accent,#0d6868)}
+.btn:hover{filter:brightness(1.08)}
+.btn:focus-visible{outline:2px solid var(--accent,#0d6868);outline-offset:2px}
+.btn[disabled]{opacity:.4;cursor:not-allowed}
+.stacje{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.st{display:flex;flex-direction:column;background:none;border:none;padding:0;min-width:0}
+.st-opis{margin-top:auto;display:flex;flex-direction:column;justify-content:flex-end}
+.st canvas,.rack canvas{display:block;width:100%;height:auto;cursor:pointer;background:var(--lab,#0e2326);border-radius:var(--r-md,10px);margin:6px 0 4px}
+.rack{margin:0 auto}
+.rack-kol{display:grid;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));gap:8px}
+.rack-ce{padding:0 6px;min-width:0;display:flex;flex-direction:column}
+.rack-ce.st-opis{justify-content:flex-end}
+.rack .wyb-gr{display:none}
+.rack .rown{font-size:14px}
+.rack-ce .btn,.st .btn{padding:6px 10px;font-size:12px}
+.st-opis{font-size:14px;color:var(--text,#1a2332)}
+.st-opis p{margin:0 0 6px}
+.rown{font:600 15px var(--naglowek,Inter,sans-serif);color:var(--text,#1a2332)}
+.obs{font-size:14px;color:var(--text-soft,#4a5568)}
+.meta{font-size:12.5px;color:var(--text-muted,#8892a0);display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-bottom:8px}
+.meta .pasek{background:var(--border,#e5e9ee);width:90px;height:8px;display:inline-block;vertical-align:middle;margin-left:6px;border-radius:99px;overflow:hidden}
+.meta .pasek i{display:block;height:100%;background:var(--accent,#0d6868)}
+.ostrz{color:var(--c-error,#b83a45);font-size:13px}
+.zak{display:flex;gap:10px;align-items:center;background:var(--c-warn-bg,#fcf4e6);border:1px solid var(--c-warn-line,#eed8a8);border-radius:var(--r-md,10px);padding:8px 10px;font-size:13px;line-height:1.35;margin:8px 0;color:var(--text,#1a2332)}
+.zak-ik{display:flex;gap:4px;flex:none}
+.el .tr{position:absolute;right:2px;bottom:2px;display:flex}
+.sz{position:relative}
+.sz .tr{position:absolute;top:2px;right:2px;display:flex}
+.tr2{display:flex;font-style:normal;margin-left:auto}
+.kol{display:flex;align-items:center;gap:10px;font-size:15px;color:var(--text,#1a2332)}
+.sw{width:20px;height:20px;border-radius:50%;flex:none;box-shadow:0 0 12px var(--glow,transparent)}
+.sw.pusty{border:2px dashed var(--border-strong,#cdd5dd)}
+.wyb-sym{position:relative;min-width:0}
+.wyb-sym>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:6px;font:700 15px var(--naglowek,Inter,sans-serif);color:var(--text,#1a2332);padding:4px 8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-sm,6px);background:var(--surface,#fff)}
+.wyb-sym>summary::-webkit-details-marker{display:none}
+.wyb-tri{display:inline-block;font-size:11px;color:var(--accent,#0d6868);transition:transform .15s}
+.wyb-sym[open] .wyb-tri{transform:rotate(90deg)}
+.wyb-lista{display:grid;gap:6px;margin:6px 0 8px;padding:8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-md,10px);background:var(--surface,#fff)}
+.wyb-g{display:block;font-size:11px;color:var(--text-muted,#8892a0);margin-bottom:3px}
+.wyb-sy{appearance:none;cursor:pointer;border:1px solid var(--border-strong,#cdd5dd);background:var(--surface-soft,#f6f8fa);color:var(--text,#1a2332);border-radius:var(--r-sm,6px);padding:4px 9px;margin:0 4px 4px 0;font:600 13px var(--naglowek,Inter,sans-serif)}
+.wyb-sy[aria-pressed="true"]{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+/* telefon: kilka stojaków obok siebie — węższy tekst, łamanie długich nazw */
+.kol{min-width:0}
+.kol b{overflow-wrap:anywhere;min-width:0}
+.st-opis{font-size:13px}
+.kol{font-size:14px}
+.stacje{gap:8px}
+.rack-kol{gap:6px}
+@media (max-width:480px){.st-opis .obs{font-size:12.5px}.st .btn,.rack-ce .btn{padding:5px 8px;font-size:12px}}
+.seria-przyciski{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+.seria-btn[aria-pressed="false"]{background:transparent;color:var(--accent,#0d6868)}
+.seria-btn[aria-pressed="true"]{background:var(--accent,#0d6868);color:#fff}
+.seria-opis{margin:0 0 10px;font-size:14px;color:var(--lab-cisza,#8892a0)}
+
+
 
 /* nawigacja.css — hamburger, zakładka, animowany nagłówek (lekcje CHE i „lite”). */
 /* pływający hamburger i wysuwany spis treści (lekcja.js) */
@@ -859,7 +923,7 @@ section[id],h2[id]{scroll-margin-top:72px}
 </ol>
 <p class="mini-note">W–K–S–K jest procedurą zapisu wzoru. Nie gwarantuje, że każdy taki wzór istnieje — to kontrola chemiczna.</p>
 </div>
-<div class="che-lesson-viz-ref lk-offline"><button type="button" disabled><b>Konstruktor wzoru tlenku (W–K–S–K) i sprawdzanie wzoru — stopnie utlenienia, nadtlenki, OF₂</b><span>CHE.OXIDES.build · oxState — model dostępny w pełnej wersji lekcji (z silnikiem CHE)</span></button></div>
+<figure class="lk-fig" data-klocek="konstruktor-tlenku" data-opt="{}"><div class="lk-fig-body"></div><figcaption>Konstruktor wzoru tlenku (W–K–S–K) i sprawdzanie wzoru — stopnie utlenienia, nadtlenki, OF₂</figcaption></figure>
 <!-- OPIS: Konstruktor wzoru tlenku: wybierasz pierwiastek i jego wartościowość, a model prowadzi przez metodę W–K–S–K (wartościowość, krzyżowanie, skracanie, kontrola) i sprawdza wpisany wzór. Wniosek: wzór tlenku wynika z wartościowości, a suma stopni utlenienia w związku musi wynosić zero. -->
 <div class="card card-core">
 <span class="card-label">Przykłady W–K–S–K</span>
@@ -919,9 +983,9 @@ To ogólny trend, a nie reguła bez wyjątków.</p>
 </div>
 <h3 class="merge-h">Sprawdź w układzie okresowym</h3>
 <p>Wybierz pierwiastek — zobacz wartościowość w tlenkach, wzór tlenku i jego charakter.</p>
-<div class="che-lesson-viz-ref lk-offline"><button type="button" disabled><b>Układ okresowy 1–54 — pierwiastek, wartościowość, tlenek i jego charakter</b><span>CHE.DATA.ELEMENTS · CHE.OXIDES — model dostępny w pełnej wersji lekcji (z silnikiem CHE)</span></button></div>
+<figure class="lk-fig" data-klocek="uklad-okresowy-54" data-opt="{&quot;tryb&quot;: &quot;tlenki&quot;, &quot;tryby&quot;: &quot;tlenki,adres,wal&quot;, &quot;wybrany&quot;: &quot;Al&quot;}"><div class="lk-fig-body"></div><figcaption>Układ okresowy 1–54 — pierwiastek, wartościowość, tlenek i jego charakter</figcaption></figure>
 <!-- OPIS: Układ okresowy 1–54: po wybraniu pierwiastka widać jego typowe wartościowości w tlenkach, wzory tlenków i ich charakter (zasadowy, kwasowy, amfoteryczny, obojętny). Wniosek: tlenki metali są zwykle zasadowe, niemetali — kwasowe, a metale przejściowe zależą od stopnia utlenienia. -->
-<div class="che-lesson-viz-ref lk-offline"><button type="button" disabled><b>Tlenek — trzy pytania: charakter, woda, kwas / zasada (detektor charakteru)</b><span>CHE.OXIDES · 39 tlenków — model dostępny w pełnej wersji lekcji (z silnikiem CHE)</span></button></div>
+<figure class="lk-fig" data-klocek="detektor-tlenku" data-opt="{}"><div class="lk-fig-body"></div><figcaption>Tlenek — trzy pytania: charakter, woda, kwas / zasada (detektor charakteru)</figcaption></figure>
 <!-- OPIS: Detektor charakteru tlenku: dla wybranego tlenku z bazy (39 tlenków) model odpowiada na trzy pytania — jaki ma charakter, czy reaguje z wodą, czy reaguje z kwasem i z zasadą — i pokazuje zlewkę ze wskaźnikiem uniwersalnym. Wniosek: charakter, reakcja z wodą i reakcje z kwasem i zasadą to trzy osobne sprawdzenia. -->
 <p class="mini-note">CO jest tlenkiem obojętnym, a CO₂ kwasowym, choć oba to tlenki węgla — dlaczego, wyjaśnia sekcja 13.</p>
 </section>
@@ -1046,8 +1110,8 @@ To ogólny trend, a nie reguła bez wyjątków.</p>
 <p class="mini-note"><strong>Katalizator</strong> przyspiesza reakcję i sam się w niej nie zużywa.</p>
 </div>
 <h3>9.3 Spalanie całkowite i niecałkowite</h3>
-<div class="che-lesson-viz-ref lk-offline"><button type="button" disabled><b>Otrzymywanie tlenków: spalanie pierwiastków i paliw — dopływ O₂ → CO₂ / CO / sadza</b><span>CHE.REACTION (spalanie całkowite i niecałkowite) — model dostępny w pełnej wersji lekcji (z silnikiem CHE)</span></button></div>
-<!-- OPIS: Model spalania: wybierasz pierwiastek lub paliwo i ilość tlenu. Przy pełnym dopływie O₂ powstaje CO₂ (spalanie całkowite), przy ograniczonym — CO lub sadza (spalanie niecałkowite). Wniosek: brak tlenu zmienia produkt; CO jest trujący. -->
+<figure class="lk-fig" data-klocek="palnik-gazowy" data-opt="{&quot;etap&quot;: &quot;2&quot;}"><div class="lk-fig-body"></div><figcaption>Otrzymywanie tlenków: spalanie pierwiastków i paliw — dopływ O₂ → CO₂ / CO / sadza</figcaption></figure>
+<!-- OPIS: Płomień metanu pod odwróconą zlewką: na ściance zbierają się krople wody, a gaz z płomienia po przepuszczeniu przez wodę wapienną powoduje jej zmętnienie. Wniosek: spalanie węglowodoru w tlenie daje tlenek węgla(IV) i wodę; przy ograniczonym dopływie tlenu powstaje także CO (czad) lub sadza — to spalanie niecałkowite. -->
 <div class="card card-warning">
 <span class="card-label">Spalanie niecałkowite</span>
 <p>Przy niedoborze tlenu zamiast CO₂ powstaje <strong>CO</strong> (tlenek węgla(II)) lub sadza (C).
@@ -1112,12 +1176,16 @@ To ogólny trend, a nie reguła bez wyjątków.</p>
 <p>Tlenek zasadowy i tlenek kwasowy mogą reagować bez wody, dając sól:
 <strong>Na₂O + SO₃ → Na₂SO₄</strong>.</p>
 </div>
-<div class="che-lesson-viz-ref lk-offline"><button type="button" disabled><b>Co powstanie? Tlenek + woda / kwas / zasada — przewiduj, potem sprawdź</b><span>CHE.OXIDES.predict · 7 kroków procedury — model dostępny w pełnej wersji lekcji (z silnikiem CHE)</span></button></div>
+<figure class="lk-fig" data-klocek="reaktor-tlenku" data-opt="{}"><div class="lk-fig-body"></div><figcaption>Co powstanie? Tlenek + woda / kwas / zasada — przewiduj, potem sprawdź</figcaption></figure>
 <!-- OPIS: Reaktor przewidywania: wybierasz tlenek i odczynnik (woda, kwas lub zasada), zapisujesz przewidywanie, a model pokazuje, czy reakcja zachodzi, jakie są produkty i równanie. Wniosek: przewidywanie opieraj na charakterze tlenku, potem sprawdź bilans i produkty. -->
 <h3 class="merge-h">10.5 Mapa przemian — łańcuchy</h3>
 <p>Pierwiastek → tlenek → wodorotlenek lub kwas → sól. To most do lekcji N02, N03, N04.</p>
-<div class="che-lesson-viz-ref lk-offline"><button type="button" disabled><b>Łańcuch przemian: pierwiastek → tlenek → wodorotlenek / kwas → sól</b><span>Na → Na₂O → NaOH → NaCl · S → SO₃ → H₂SO₄ → Na₂SO₄ · C → CO₂ → H₂CO₃ — model dostępny w pełnej wersji lekcji (z silnikiem CHE)</span></button></div>
-<!-- OPIS: Łańcuchy przemian: kolejne ogniwa to pierwiastek, tlenek, wodorotlenek lub kwas i sól, z równaniem każdego kroku. Wniosek: tlenek jest pomostem między pierwiastkiem a solą. -->
+<figure class="lk-fig" data-klocek="lancuch-przemian" data-opt="{&quot;wezly&quot;: &quot;Na,Na2O,NaOH,NaCl&quot;, &quot;etyk&quot;: &quot;A,B,C&quot;}"><div class="lk-fig-body"></div><figcaption>Łańcuch przemian: sód → tlenek → wodorotlenek → sól</figcaption></figure>
+<!-- OPIS: Cztery ogniwa połączone strzałkami z literami reakcji: Na, Na₂O, NaOH, NaCl; pod strzałkami litery A, B, C do wpisania równań. Wniosek: tlenek jest pomostem między pierwiastkiem a solą. -->
+<figure class="lk-fig" data-klocek="lancuch-przemian" data-opt="{&quot;wezly&quot;: &quot;S,SO3,H2SO4,Na2SO4&quot;, &quot;etyk&quot;: &quot;A,B,C&quot;}"><div class="lk-fig-body"></div><figcaption>Łańcuch przemian: siarka → tlenek → kwas → sól</figcaption></figure>
+<!-- OPIS: Cztery ogniwa połączone strzałkami z literami reakcji: S, SO₃, H₂SO₄, Na₂SO₄; pod strzałkami litery A, B, C. Wniosek: tlenek kwasowy z wodą daje kwas, a kwas z zasadą — sól. -->
+<figure class="lk-fig" data-klocek="lancuch-przemian" data-opt="{&quot;wezly&quot;: &quot;C,CO2,H2CO3,Na2CO3&quot;, &quot;etyk&quot;: &quot;A,B,C&quot;}"><div class="lk-fig-body"></div><figcaption>Łańcuch przemian: węgiel → tlenek → kwas → sól</figcaption></figure>
+<!-- OPIS: Cztery ogniwa połączone strzałkami z literami reakcji: C, CO₂, H₂CO₃, Na₂CO₃; pod strzałkami litery A, B, C. Wniosek: CO₂ z wodą daje nietrwały kwas węglowy, a jego sole to węglany. -->
 </section>
 <section id="zastosowania">
 <div class="part-heading"><span class="part-num">11</span> Zastosowania tlenków <span class="level-badge level-basic">E8</span></div>
@@ -1225,7 +1293,7 @@ SiO₂ + 2 NaOH →(Δ) Na₂SiO₃ + H₂O</p>
 <section id="trend">
 <div class="part-heading"><span class="part-num">14</span> Trend charakteru tlenków <span class="level-badge level-extra">AMBITNE</span></div>
 <p>W okresie od lewej do prawej charakter tlenków zmienia się od zasadowego, przez amfoteryczny, do kwasowego.</p>
-<div class="che-lesson-viz-ref lk-offline"><button type="button" disabled><b>Trend charakteru tlenków: w okresie i według stopnia utlenienia (Cr, Mn)</b><span>CHE.OXIDES.trend — model dostępny w pełnej wersji lekcji (z silnikiem CHE)</span></button></div>
+<figure class="lk-fig" data-klocek="trend-tlenkow" data-opt="{}"><div class="lk-fig-body"></div><figcaption>Trend charakteru tlenków: w okresie i według stopnia utlenienia (Cr, Mn)</figcaption></figure>
 <!-- OPIS: Trend charakteru tlenków: w okresie od lewej do prawej tlenki zmieniają się od zasadowych przez amfoteryczne do kwasowych, a dla jednego metalu (Cr, Mn) rosnący stopień utlenienia zwiększa charakter kwasowy. Wniosek: trend wyjaśnia się zmianą metaliczności i elektroujemności. -->
 <div class="card card-extra">
 <span class="card-label">Trend w okresie 3</span>
@@ -1313,7 +1381,7 @@ zasadowy → zasadowy (słabo) → amfoteryczny → kwasowy → kwasowy → kwas
 <span class="card-label">Reguła VSEPR</span>
 <p>Pary elektronowe (wiążące i wolne) odpychają się. Wolne pary zajmują więcej miejsca i zmniejszają kąty między wiązaniami.</p>
 </div>
-<div class="che-lesson-viz-ref lk-offline"><button type="button" disabled><b>Model 3D cząsteczek — CO₂, SO₂, SO₃, H₂O: geometria i kąty</b><span>CHE.MOLECULE · VSEPR — model dostępny w pełnej wersji lekcji (z silnikiem CHE)</span></button></div>
+<figure class="lk-fig" data-klocek="czasteczki-3d" data-opt="{&quot;mol&quot;: &quot;CO₂,SO₂,SO₃,H₂O&quot;}"><div class="lk-fig-body"></div><figcaption>Model 3D cząsteczek — CO₂, SO₂, SO₃, H₂O: geometria i kąty</figcaption></figure>
 <!-- OPIS: Trójwymiarowe modele cząsteczek CO₂, SO₂, SO₃ i H₂O z zaznaczonymi kątami: CO₂ liniowa (180°), SO₂ i H₂O kątowe, SO₃ płaska trójkątna. Wniosek: liczba wiązań i wolnych par decyduje o kształcie cząsteczki. -->
 <div class="card card-extra">
 <span class="card-label">Dlaczego H₂O i SO₂ są kątowe, a CO₂ liniowa?</span>
@@ -1492,9 +1560,9 @@ Obserwacja to to, co rejestrują zmysły. Wniosek to interpretacja (nazwa produk
 </div>
 <button class="che-prac-go lk-offline" type="button" disabled>Zobacz w zlewce (pracownia) — w pełnej wersji lekcji</button>
 <!-- OPIS: Czarny tlenek miedzi(II) w rozcieńczonym kwasie siarkowym(VI), lekko ogrzewany: proszek znika, roztwór barwi się na niebiesko. Wniosek: CuO + H₂SO₄ → CuSO₄ + H₂O. -->
-<div class="che-lesson-viz-ref lk-offline"><button type="button" disabled><b>Pracownia: doświadczenia z tlenkami — zlewka, równania, obserwacje, BHP</b><span>CHE.REACTION · CHE.IONIC — model dostępny w pełnej wersji lekcji (z silnikiem CHE)</span></button></div>
+<figure class="lk-fig" data-klocek="palenie" data-opt="{&quot;metal&quot;: &quot;Mg&quot;}"><div class="lk-fig-body"></div><figcaption>Pracownia: doświadczenia z tlenkami — zlewka, równania, obserwacje, BHP</figcaption></figure>
 <!-- OPIS: Pracownia doświadczeń z tlenkami: zlewki i probówki w animacji, przy każdym obserwacje, równanie reakcji i zasady BHP — m.in. spalanie magnezu, gaszenie CaO, woda wapienna, CuO z kwasem. Wniosek: obserwację i wniosek zapisuj osobno. -->
-<div class="che-lesson-viz-ref lk-offline"><button type="button" disabled><b>Wykrywanie CO₂: węglan + kwas → gaz → woda wapienna mętnieje</b><span>Scena doświadczenia — model dostępny w pełnej wersji lekcji (z silnikiem CHE)</span></button></div>
+<figure class="lk-fig" data-klocek="probowki-wybor" data-opt="{&quot;zestaw&quot;: &quot;kwas-weglan&quot;}"><div class="lk-fig-body"></div><figcaption>Wykrywanie CO₂: węglan + kwas → gaz → woda wapienna mętnieje</figcaption></figure>
 <!-- OPIS: Na węglan wapnia działa kwas: wydzielają się pęcherzyki gazu, który przepuszczony przez klarowną wodę wapienną powoduje jej zmętnienie. Wniosek: gazem jest CO₂, a test to zmętnienie wody wapiennej. -->
 <h3 class="merge-h">Obserwacja ≠ wniosek</h3>
 <div class="card card-error">
@@ -1845,6 +1913,1151 @@ Rdza jest porowata i odpada płatami, więc nie chroni żelaza.</p>
 <footer class="footer"><p><strong>CHEMIA N01 v7.0</strong> · Tlenki · 2026</p></footer>
 </main>
 <script>
+/* KLOCKI — lekkie komponenty wielokrotnego użytku dla lekcji (bez silnika).
+   Każdy klocek: KLOCKI.def(nazwa, {opis, dane, rysuj(canvas, stan, t)}) — rejestr,
+   KLOCKI.montuj(host, nazwa, opcje) — tworzy canvas, autostart gdy widoczny,
+   klik zatrzymuje/wznawia. Lekcja wymienia klocki w manifeście (klocki/manifest). */
+(function (g) {
+  var reg = {};
+  /* JEDEN zegar animacji dla wszystkich klocków: jedna pętla rAF, funkcje fn(now, dt); pętla stoi, gdy nikt nie gra. */
+  var zegar = (function () {
+    var fns = [], id = 0, ost = 0;
+    function petla(now) {
+      var dt = Math.min(0.05, (now - ost) / 1000); ost = now;
+      fns.slice().forEach(function (f) { try { f(now, dt); } catch (e) { } });
+      id = fns.length ? requestAnimationFrame(petla) : 0;
+    }
+    return {
+      dodaj: function (f) { if (fns.indexOf(f) < 0) fns.push(f); if (!id) { ost = performance.now(); id = requestAnimationFrame(petla); } },
+      usun: function (f) { var i = fns.indexOf(f); if (i >= 0) fns.splice(i, 1); },
+      liczba: function () { return fns.length; }
+    };
+  })();
+  var RM_ = !!(g.matchMedia && g.matchMedia('(prefers-reduced-motion: reduce)').matches);   // użytkownik prosi o brak animacji: bez autostartu
+  function def(nazwa, k) { reg[nazwa] = k; }
+  function montuj(host, nazwa, opc) {
+    var k = reg[nazwa];
+    if (!k) { host.textContent = 'Brak klocka: ' + nazwa; return null; }
+    opc = Object.assign({}, k.domyslne || {}, opc || {});
+    if (k.html) { host.innerHTML = ''; k.html(host, opc); return null; }
+    var c = document.createElement('canvas');
+    c.width = opc.szer || 480; c.height = opc.wys || 300;
+    c.style.width = '100%'; c.style.maxWidth = c.width + 'px'; c.style.height = 'auto';
+    c.setAttribute('role', 'img');
+    c.setAttribute('aria-label', (opc.opis || k.opis || nazwa));
+    host.innerHTML = ''; host.appendChild(c);
+    var stan = Object.assign({}, k.stan0 ? k.stan0(opc) : {}, {opc: opc});
+    var ctx = c.getContext('2d'), t0 = performance.now(), grane = false;   // start() dodaje klocek do wspólnego zegara (IO albo od razu)
+    function klatka(now) {
+      try { k.rysuj(ctx, c.width, c.height, stan, (now - t0) / 1000, opc); } catch (e) { }
+    }
+    function start() { if (!grane) { grane = true; t0 = performance.now() - (stan._t || 0) * 1000; zegar.dodaj(klatka); } }
+    function stop() { if (grane) { stan._t = (performance.now() - t0) / 1000; } grane = false; zegar.usun(klatka); }
+    c.addEventListener('click', function () { grane ? stop() : start(); });
+    if ('IntersectionObserver' in g && !RM_) {
+      var io = new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? start() : stop(); }); });
+      io.observe(c);
+    } else if (!RM_) { start(); }
+    k.rysuj(ctx, c.width, c.height, stan, 0, opc);
+    return {stop: stop, start: start, stan: stan, canvas: c};
+  }
+  g.KLOCKI = {def: def, montuj: montuj, zegar: zegar, nazwy: function () { return Object.keys(reg); }};
+})(window);
+
+/* KLOCKI — wspólne narzędzia (kolejność: pierwsze w manifeście). Wyciągnięte z animacji P01. */
+/* ---------------------------- narzędzia ---------------------------- */
+var RM = !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
+function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+function sm(v) { v = clamp(v, 0, 1); return v * v * (3 - 2 * v); }
+function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+function hex2rgb(h) { var n = parseInt(h.slice(1), 16); return [n >> 16 & 255, n >> 8 & 255, n & 255]; }
+function rgba(h, a) { var c = hex2rgb(h); return 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ',' + a + ')'; }
+function mixHex(a, b, k) {
+  var A = hex2rgb(a), B = hex2rgb(b);
+  return '#' + [0, 1, 2].map(function (i) { return ('0' + Math.round(A[i] + (B[i] - A[i]) * k).toString(16)).slice(-2); }).join('');
+}
+function rr(x, a, b, w, h, r) {
+  x.beginPath(); x.moveTo(a + r, b); x.arcTo(a + w, b, a + w, b + h, r); x.arcTo(a + w, b + h, a, b + h, r);
+  x.arcTo(a, b + h, a, b, r); x.arcTo(a, b, a + w, b, r); x.closePath();
+}
+
+
+/* ---------------------------- pętla animacji ---------------------------- */
+// jeden zegar: KLOCKI.zegar (klocki.js); uchwyt h ma metodę krok(dt)
+function wlacz(h) { if (!h._z) h._z = function (now, dt) { h.krok(dt); }; KLOCKI.zegar.dodaj(h._z); }
+function wylacz(h) { if (h._z) KLOCKI.zegar.usun(h._z); }
+function podepnij(canvas, h) {
+  h.rysuj();
+  if ('IntersectionObserver' in window && !RM) {
+    new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? wlacz(h) : wylacz(h); }); }, {threshold: .05}).observe(canvas);
+  } else if (!RM) wlacz(h);
+}
+
+
+function parsujListe(txt, dozwolone, domyslne) {
+  var l = String(txt || '').split(',').map(function (s) { return s.trim(); }).filter(function (s) { return dozwolone[s]; });
+  return (l.length ? l : domyslne).slice(0, 3);
+}
+
+
+/* Wybór pierwiastka: tylko symbole, a znacznik ▸ pokazuje, że lista się rozwija (bez pełnych nazw obok). */
+function wyborSymbole(grupy, start, onChange, etykieta) {
+  var box = el('details', 'wyb-sym'), sum = el('summary', null), cur = el('span', 'wyb-cur', start);
+  sum.appendChild(cur); sum.appendChild(el('span', 'wyb-tri', '▸')); box.appendChild(sum);
+  var lst = el('div', 'wyb-lista'), btns = [];
+  lst.setAttribute('role', 'listbox'); lst.setAttribute('aria-label', etykieta || 'Wybór pierwiastka');
+  var NAG = {1: 'Litowce', 2: 'Berylowce', 3: 'Tlenki berylowców'};
+  Object.keys(grupy).forEach(function (g) {
+    var w = el('div', 'wyb-grupa'); w.appendChild(el('span', 'wyb-g', NAG[g] || ('grupa ' + g)));
+    grupy[g].forEach(function (s) {
+      var b = el('button', 'wyb-sy', s); b.type = 'button'; b.setAttribute('data-sym', s);
+      b.setAttribute('title', cap(NAZ[SYM.indexOf(s)] || s));
+      b.addEventListener('click', function () { ustaw(s); box.open = false; onChange(s); });
+      w.appendChild(b); btns.push(b);
+    });
+    lst.appendChild(w);
+  });
+  box.appendChild(lst);
+  function ustaw(s) { cur.textContent = s; btns.forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-sym') === s ? 'true' : 'false'); }); }
+  ustaw(start);
+  return {el: box, ustaw: ustaw};
+}
+
+/* KLOCEK: karta-bhp — zasady pracy w pracowni i krótkie kroki pierwszej pomocy (karty do rozwinięcia).
+   Treść ogólna, szkolna; przy poważnym urazie wezwać nauczyciela i pogotowie 112/999. Opcje: otwarte = "1" rozwija wszystkie; zwiniete = "1" wszystkie zwinięte;
+   karty = "Ogrzewanie,Kwasy i zasady" pokazuje tylko wskazane karty (nazwy jak w nagłówkach). */
+(function () {
+  var KARTY = [
+    ['Przed doświadczeniem', ['Okulary ochronne i fartuch, długie włosy związane.', 'Czytaj opis do końca; nic nie próbuj, nie wąchaj bezpośrednio znad naczynia.', 'Odczynniki bierz w najmniejszej potrzebnej ilości, naczynia podpisuj.']],
+    ['Kwasy i zasady', ['Kwas wlewaj do wody (nie odwrotnie), cienkim strumieniem, mieszając.', 'Kontakt ze skórą lub oczami: płucz dużą ilością bieżącej wody przez co najmniej 15 minut i zawołaj nauczyciela.', 'Rozlany odczynnik zgłoś nauczycielowi, nie wycieraj go gołą ręką.']],
+    ['Ogrzewanie', ['Probówkę ogrzewaj ukośnie (ok. 45°), otworem od siebie i od innych osób, poruszając nią w płomieniu.', 'Nie zaglądaj do ogrzewanej probówki od góry.', 'Gorące naczynia chwytaj szczypcami lub łapaczem, stawiaj na podkładce.']],
+    ['Oparzenie i zranienie', ['Oparzenie: chłodź zimną wodą kilkanaście minut, nie smaruj tłuszczem, powiadom nauczyciela.', 'Skaleczenie szkłem: nie usuwaj odłamków z rany, zawołaj nauczyciela.', 'Wdychanie gazu: wyjdź na świeże powietrze i zgłoś to nauczycielowi.']]
+  ];
+  KLOCKI.def('karta-bhp', {
+    opis: 'Karta BHP: zasady pracy w pracowni i pierwsza pomoc.',
+    domyslne: {otwarte: 0},
+    html: function (host, opc) {
+      host.style.display = 'block';
+      var wyb = opc.karty ? String(opc.karty).split(',').map(function (z) { return z.trim(); }) : null;
+      host.innerHTML = KARTY.filter(function (k) { return !wyb || wyb.indexOf(k[0]) >= 0; }).map(function (k, i) {
+        return '<details' + (Number(opc.otwarte) || (i === 0 && !Number(opc.zwiniete)) ? ' open' : '') + ' style="border:1px solid var(--border,#cbd5e1);border-radius:8px;padding:6px 12px;margin:0 0 6px;background:var(--surface,#fff)">' +
+          '<summary style="cursor:pointer;font-weight:600;color:var(--accent,#0d6868)">' + k[0] + '</summary><ul style="margin:6px 0 4px;padding-left:20px;font-size:14px">' +
+          k[1].map(function (t) { return '<li>' + t + '</li>'; }).join('') + '</ul></details>';
+      }).join('');
+    }
+  });
+})();
+
+/* ui_klocki.js — wspólne drobiazgi interfejsu dla klocków HTML/SVG (przyciski-chipy, suwak, autostart animacji w widoku).
+   KLOCKI.ui.btn(tekst, akcja) · .chip(tekst, aktywny, akcja) · .suwak(etykieta, min, max, krok, wartosc, akcja) · .anim(host, krok(dt, t)) → uchwyt {start, stop}. */
+(function () {
+  var BTN = 'font:inherit;font-size:13px;padding:5px 11px;border:1px solid var(--border-strong,#94a3b8);border-radius:999px;background:var(--surface,#fff);color:inherit;cursor:pointer;margin:2px';
+  var ui = {
+    BTN: BTN,
+    btn: function (t, f, tytul) { var b = document.createElement('button'); b.type = 'button'; b.style.cssText = BTN; b.innerHTML = t; if (tytul) b.title = tytul; b.addEventListener('click', f); return b; },
+    chip: function (t, on, f) { var b = ui.btn(t, f); ui.zaznacz(b, on); return b; },
+    zaznacz: function (b, on) { b.style.background = on ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)'; b.style.color = on ? '#fff' : 'inherit'; b.style.borderColor = on ? 'var(--accent,#0d6868)' : 'var(--border-strong,#94a3b8)'; },
+    suwak: function (et, mn, mx, st, w, f) {
+      var l = document.createElement('label'); l.style.cssText = 'display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:14px;margin:4px 0';
+      l.innerHTML = '<span style="min-width:120px">' + et + '</span><input type="range" min="' + mn + '" max="' + mx + '" step="' + st + '" value="' + w + '" style="flex:1;min-width:140px;accent-color:var(--accent,#0d6868)"><b class="sv" style="min-width:64px"></b>';
+      var i = l.querySelector('input'), v = l.querySelector('.sv');
+      i.addEventListener('input', function () { f(+i.value, v); }); f(+i.value, v); return l;
+    },
+    /* animacja startująca, gdy host jest widoczny; krok(dt_s, t_s). Reduced motion: jedna klatka. */
+    anim: function (host, krok) {
+      var raf = 0, t = 0, last = 0, on = false;
+      function p(now) { var dt = Math.min(.05, (now - last) / 1000); last = now; t += dt; krok(dt, t); raf = requestAnimationFrame(p); }
+      var h = {
+        start: function () { if (on) return; on = true; last = performance.now(); raf = requestAnimationFrame(p); },
+        stop: function () { on = false; cancelAnimationFrame(raf); },
+        t: function () { return t; }
+      };
+      if (typeof RM !== 'undefined' && RM) { krok(0, 0); return h; }
+      if ('IntersectionObserver' in window) new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? h.start() : h.stop(); }); }, {threshold: .05}).observe(host);
+      else h.start();
+      return h;
+    }
+  };
+  window.KLOCKI.ui = ui;
+})();
+
+/* KLOCKI wstępu do chemii (F01–F03, N02): lancuch-poziomow (atom → cząsteczka → substancja → reakcja), zlewka-predykcja (hipoteza przed doświadczeniem),
+   mapa-mysli (odsłanianie gałęzi), czasteczki-3d (obrotowy model kulkowy z kątami), destylacja (kolba, chłodnica, odbieralnik). Wymaga ui_klocki.js. */
+(function () {
+  var CPK = {H: ['#f8fafc', 9], C: ['#475569', 14], O: ['#ef4444', 14], N: ['#3b82f6', 14], S: ['#eab308', 17], Cl: ['#22c55e', 16]};
+  function box(host) { host.style.display = 'block'; var a = document.createElement('div'), b = document.createElement('div'), c = document.createElement('div'); a.style.cssText = 'margin-bottom:4px'; c.style.cssText = 'font-size:14px;margin-top:6px;line-height:1.5'; host.append(a, b, c); return [a, b, c]; }
+  function at(x, y, s, r) { var a = CPK[s] || ['#94a3b8', 12]; return '<circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="' + (r || a[1]) + '" fill="' + a[0] + '" stroke="#334155" stroke-width="1.2"/>' + (r && r < 8 ? '' : '<text x="' + x.toFixed(1) + '" y="' + (y + 4).toFixed(1) + '" text-anchor="middle" font-size="' + ((r || a[1]) > 11 ? 12 : 9) + '" font-weight="700" fill="' + (a[0] === '#f8fafc' ? '#0f172a' : '#fff') + '">' + s + '</text>'); }
+
+  /* ---------- łańcuch poziomów opisu ---------- */
+  KLOCKI.def('lancuch-poziomow', {
+    opis: 'Cztery poziomy opisu tego samego obiektu: atom, cząsteczka, próbka substancji, reakcja — przełączane przyciskami lub automatycznie.',
+    domyslne: {},
+    html: function (host) {
+      var U = KLOCKI.ui, p = box(host), k = 0, t = 0;
+      var N = ['1. Atom', '2. Cząsteczka', '3. Substancja', '4. Reakcja'];
+      N.forEach(function (n, i) { p[0].appendChild(U.btn(n, function () { k = i; t = 0; })); });
+      var TX = ['<b>Atom</b> tlenu O: najmniejsza cząstka pierwiastka zachowująca jego właściwości chemiczne.', '<b>Cząsteczka</b> wody H₂O: atomy połączone wiązaniami; wzór mówi, ile atomów jakiego pierwiastka.', '<b>Substancja</b> (próbka wody): ogromna liczba jednakowych cząsteczek — to widać w zlewce, ma właściwości fizyczne (gęstość, temperaturę wrzenia).', '<b>Reakcja</b>: 2 H₂ + O₂ → 2 H₂O — atomy łączą się inaczej, powstaje nowa substancja. Liczba atomów każdego pierwiastka się nie zmienia.'];
+      function rys() {
+        [].forEach.call(p[0].children, function (b, i) { U.zaznacz(b, i === k); });
+        var s = '<svg viewBox="0 0 560 220" width="100%" style="max-width:620px;display:block" role="img" aria-label="Poziomy opisu: ' + N[k] + '">';
+        if (k === 0) s += at(280, 110, 'O', 30 + Math.sin(t * 2) * 1.5);
+        else if (k === 1) { var d = Math.sin(t * 1.5) * 2; s += '<line x1="280" y1="100" x2="236" y2="136" stroke="#334155" stroke-width="4"/><line x1="280" y1="100" x2="324" y2="136" stroke="#334155" stroke-width="4"/>' + at(236 + d, 136, 'H') + at(324 - d, 136, 'H') + at(280, 100, 'O'); }
+        else if (k === 2) { s += '<path d="M200 40 V170 Q200 190 220 190 H340 Q360 190 360 170 V40" fill="#bae6fd" fill-opacity=".45" stroke="#64748b" stroke-width="2"/>'; for (var i = 0; i < 18; i++) { var x = 222 + (i % 6) * 22 + Math.sin(t * 1.3 + i) * 3, y = 80 + Math.floor(i / 6) * 34 + Math.cos(t * 1.1 + i * 2) * 3; s += '<circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="6" fill="#ef4444"/><circle cx="' + (x - 6).toFixed(1) + '" cy="' + (y + 6).toFixed(1) + '" r="3.5" fill="#f8fafc" stroke="#334155" stroke-width=".6"/><circle cx="' + (x + 6).toFixed(1) + '" cy="' + (y + 6).toFixed(1) + '" r="3.5" fill="#f8fafc" stroke="#334155" stroke-width=".6"/>'; } }
+        else {
+          var ph = (t % 7) / 7, a = ph < .25 ? 0 : ph < .6 ? (ph - .25) / .35 : 1, e = a * a * (3 - 2 * a);
+          var A = [['H', 70, 90, 360, 130], ['H', 96, 90, 400, 130], ['H', 70, 150, 450, 130], ['H', 96, 150, 490, 130], ['O', 170, 120, 380, 100], ['O', 204, 120, 470, 100]];
+          s += '<text x="40" y="40" font-size="13" fill="currentColor">substraty: 2 H₂ + O₂</text><text x="340" y="40" font-size="13" fill="currentColor">produkty: 2 H₂O</text>';
+          var Pp = A.map(function (q) { return [q[1] + (q[3] - q[1]) * e, q[2] + (q[4] - q[2]) * e]; });
+          function bd(i, j, o) { return '<line x1="' + Pp[i][0].toFixed(1) + '" y1="' + Pp[i][1].toFixed(1) + '" x2="' + Pp[j][0].toFixed(1) + '" y2="' + Pp[j][1].toFixed(1) + '" stroke="#334155" stroke-width="4" opacity="' + o.toFixed(2) + '"/>'; }
+          s += bd(0, 1, 1 - e) + bd(2, 3, 1 - e) + bd(4, 5, 1 - e) + bd(4, 0, e) + bd(4, 1, e) + bd(5, 2, e) + bd(5, 3, e);
+          A.forEach(function (q) { s += at(q[1] + (q[3] - q[1]) * e, q[2] + (q[4] - q[2]) * e, q[0], q[0] === 'O' ? 13 : 9); });
+          s += '<text x="280" y="200" text-anchor="middle" font-size="16" fill="currentColor">2 H₂ + O₂ → 2 H₂O</text>';
+        }
+        p[1].innerHTML = s + '</svg>'; p[2].innerHTML = TX[k];
+      }
+      rys(); U.anim(host, function (dt) { t += dt; rys(); });
+    }
+  });
+
+  /* ---------- zlewka z predykcją ---------- */
+  var SC = [
+    ['Cynk + kwas solny', 'gaz', 'Zn + 2 HCl → ZnCl₂ + H₂↑', 'Wydzielają się pęcherzyki wodoru; metal powoli się roztwarza.', '#e0f2fe', 0],
+    ['AgNO₃ + NaCl', 'osad', 'AgNO₃ + NaCl → AgCl↓ + NaNO₃', 'Powstaje biały, serowaty osad AgCl.', '#e0f2fe', '#f4f4f0'],
+    ['CuSO₄ + NaOH', 'osad', 'CuSO₄ + 2 NaOH → Cu(OH)₂↓ + Na₂SO₄', 'Powstaje niebieski, galaretowaty osad Cu(OH)₂.', '#bfe3f7', '#4a90d9'],
+    ['Soda + ocet', 'gaz', 'NaHCO₃ + CH₃COOH → CH₃COONa + H₂O + CO₂↑', 'Burzliwe pienienie — wydziela się CO₂.', '#e8f6fb', 0],
+    ['NaOH + fenoloftaleina', 'barwa', 'NaOH(aq) + fenoloftaleina → roztwór malinowy', 'Roztwór zasadowy zabarwia fenoloftaleinę na malinowo.', '#f4c6e8', 0],
+    ['NaCl + woda', 'nic', 'NaCl(s) → Na⁺(aq) + Cl⁻(aq)', 'Nic nie widać prócz rozpuszczania; nie powstała nowa substancja.', '#e0f2fe', 0]
+  ];
+  var OBS = [['gaz', 'pęcherzyki gazu'], ['osad', 'osad (ciało stałe opada na dno)'], ['barwa', 'zmiana barwy roztworu'], ['nic', 'żadna widoczna zmiana']];
+  KLOCKI.def('zlewka-predykcja', {
+    opis: 'Najpierw wybierasz, czego spodziewasz się w zlewce, potem animacja pokazuje wynik i porównuje go z przewidywaniem.',
+    domyslne: {},
+    html: function (host) {
+      var U = KLOCKI.ui, p = box(host), i = 0, wyb = null, pokaz = false, t = 0;
+      function nast() { i = (i + 1) % SC.length; wyb = null; pokaz = false; t = 0; ui(); }
+      function ui() {
+        p[0].innerHTML = '<div style="font-weight:700;margin-bottom:6px">Doświadczenie: ' + SC[i][0] + '</div><div style="margin-bottom:4px">Czego się spodziewasz?</div>';
+        OBS.forEach(function (o) { var b = U.chip(o[1], wyb === o[0], function () { if (pokaz) return; wyb = o[0]; ui(); }); p[0].appendChild(b); });
+        p[0].appendChild(U.btn('Sprawdź →', function () { if (!wyb) { p[2].innerHTML = 'Najpierw wybierz hipotezę — dopiero potem doświadczenie.'; return; } pokaz = true; t = 0; ui(); }));
+        p[0].appendChild(U.btn('Następne doświadczenie', nast));
+        rys();
+      }
+      function rys() {
+        var s = SC[i], kol = s[4], ps = s[5], bub = '', os = '';
+        if (pokaz) { if (s[1] === 'gaz') for (var q = 0; q < 14; q++) { var f = ((t * .5 + q / 14) % 1); bub += '<circle cx="' + (170 + (q * 37) % 100) + '" cy="' + (190 - f * 120) + '" r="' + (2 + (q % 3)) + '" fill="#fff" stroke="#64748b" stroke-width=".8"/>'; } if (s[1] === 'osad') os = '<path d="M130 188 Q220 ' + (188 - 22 * Math.min(1, t / 3)) + ' 310 188 Z" fill="' + ps + '" stroke="#94a3b8"/>'; if (s[1] === 'osad') kol = mixc(kol, '#ffffff', .35); }
+        p[1].innerHTML = '<svg viewBox="0 0 440 230" width="100%" style="max-width:440px;display:block;margin:auto" role="img" aria-label="Zlewka: ' + s[0] + '"><path d="M110 30 V190 Q110 205 125 205 H315 Q330 205 330 190 V30" fill="' + kol + '" fill-opacity=".7" stroke="#64748b" stroke-width="3"/><rect x="112" y="30" width="216" height="20" fill="var(--surface,#fff)"/>' + os + bub + '</svg>';
+        if (pokaz) { var ok = wyb === s[1]; p[2].innerHTML = (ok ? '<b style="color:#16a34a">Hipoteza potwierdzona.</b> ' : '<b style="color:#dc2626">Hipoteza obalona</b> (oczekiwano: ' + OBS.filter(function (o) { return o[0] === wyb; })[0][1] + '). ') + s[3] + '<br><i>' + s[2] + '</i><br>Hipotezę formułuje się <b>przed</b> doświadczeniem; wynik ją wspiera albo obala.'; }
+        else if (!p[2].innerHTML || p[2].innerHTML.indexOf('Najpierw') < 0) p[2].innerHTML = 'Wybierz przewidywanie i naciśnij „Sprawdź”.';
+      }
+      function mixc(a, b, k) { return a; }
+      ui(); U.anim(host, function (dt) { t += dt; if (pokaz) rys(); });
+    }
+  });
+
+  /* ---------- mapa myśli ---------- */
+  KLOCKI.def('mapa-mysli', {
+    opis: 'Mapa myśli: centralne hasło i gałęzie; kliknięcie gałęzi odsłania jej pojęcia (do samodzielnego uzupełniania w pamięci przed odsłonięciem).',
+    domyslne: {centrum: 'CHEMIA', galezie: 'skład:pierwiastki,wzory;budowa:atomy,wiązania,kształt;właściwości:fizyczne,chemiczne;przemiany:zjawisko fizyczne,reakcja chemiczna;poziomy opisu:makro,cząsteczkowy,symboliczny,ilościowy;metoda:obserwacja,hipoteza,doświadczenie,wniosek'},
+    html: function (host, opc) {
+      var U = KLOCKI.ui, p = box(host), G = String(opc.galezie).split(';').map(function (x) { var a = x.split(':'); return [a[0], (a[1] || '').split(',')]; }), otw = {};
+      p[0].appendChild(U.btn('Pokaż wszystko', function () { G.forEach(function (g, i) { otw[i] = 1; }); rys(); })); p[0].appendChild(U.btn('Ukryj wszystko', function () { otw = {}; rys(); }));
+      function rys() {
+        var W = 560, H = 400, cx = 280, cy = 200, s = '<svg viewBox="0 0 560 400" width="100%" style="max-width:620px;display:block" role="img" aria-label="Mapa myśli: ' + opc.centrum + '">';
+        G.forEach(function (g, i) {
+          var a = i / G.length * 2 * Math.PI - Math.PI / 2, gx = cx + Math.cos(a) * 110, gy = cy + Math.sin(a) * 82;
+          s += '<line x1="' + cx + '" y1="' + cy + '" x2="' + gx.toFixed(1) + '" y2="' + gy.toFixed(1) + '" stroke="#94a3b8" stroke-width="2"/>';
+          g[1].forEach(function (c, j) { var b = a + (j - (g[1].length - 1) / 2) * (g[1].length > 2 ? .4 : .55), rr = 215, x = cx + Math.cos(b) * rr, y = cy + Math.sin(b) * rr * .78, wd = Math.max(80, 7 * (otw[i] ? c.length : 1) + 22); s += '<line x1="' + gx.toFixed(1) + '" y1="' + gy.toFixed(1) + '" x2="' + x.toFixed(1) + '" y2="' + y.toFixed(1) + '" stroke="#cbd5e1"/><rect x="' + (x - wd / 2).toFixed(1) + '" y="' + (y - 11).toFixed(1) + '" width="' + wd + '" height="22" rx="11" fill="' + (otw[i] ? 'var(--accent-soft,#dbeafe)' : 'var(--surface,#fff)') + '" stroke="#94a3b8"/><text x="' + x.toFixed(1) + '" y="' + (y + 4).toFixed(1) + '" text-anchor="middle" font-size="10.5" fill="currentColor">' + (otw[i] ? c : '?') + '</text>'; });
+          s += '<g data-i="' + i + '" style="cursor:pointer"><rect x="' + (gx - 48).toFixed(1) + '" y="' + (gy - 14).toFixed(1) + '" width="96" height="28" rx="14" fill="' + (otw[i] ? '#0d6868' : '#475569') + '"/><text x="' + gx.toFixed(1) + '" y="' + (gy + 5).toFixed(1) + '" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">' + g[0] + '</text></g>';
+        });
+        s += '<circle cx="280" cy="200" r="44" fill="#f59e0b" stroke="#92400e"/><text x="280" y="205" text-anchor="middle" font-size="14" font-weight="800" fill="#1c1917">' + opc.centrum + '</text>';
+        p[1].innerHTML = s + '</svg>'; p[2].innerHTML = 'Kliknij gałąź, aby odsłonić jej pojęcia. Zanim klikniesz — spróbuj je wymienić z pamięci.';
+        [].forEach.call(p[1].querySelectorAll('g[data-i]'), function (g) { g.addEventListener('click', function () { var i = +g.dataset.i; if (otw[i]) delete otw[i]; else otw[i] = 1; rys(); }); });
+      }
+      rys();
+    }
+  });
+
+  /* ---------- cząsteczki 3D ---------- */
+  var MOL = {
+    'O₂': {a: [['O', -.6, 0, 0], ['O', .6, 0, 0]], b: [[0, 1, 2]], k: 'liniowa (2 atomy), wiązanie podwójne', ang: null},
+    'O₃': {a: [['O', 0, 0, 0], ['O', -1.09, -.67, 0], ['O', 1.09, -.67, 0]], b: [[0, 1, 1], [0, 2, 1]], k: 'kątowa', ang: '117°'},
+    'H₂O': {a: [['O', 0, 0, 0], ['H', -.76, -.59, 0], ['H', .76, -.59, 0]], b: [[0, 1, 1], [0, 2, 1]], k: 'kątowa (2 wolne pary na O)', ang: '104,5°'},
+    'CO₂': {a: [['C', 0, 0, 0], ['O', -1.16, 0, 0], ['O', 1.16, 0, 0]], b: [[0, 1, 2], [0, 2, 2]], k: 'liniowa', ang: '180°'},
+    'SO₂': {a: [['S', 0, 0, 0], ['O', -1.23, -.72, 0], ['O', 1.23, -.72, 0]], b: [[0, 1, 2], [0, 2, 1]], k: 'kątowa (1 wolna para na S)', ang: '119°'},
+    'SO₃': {a: [['S', 0, 0, 0], ['O', 1.42, 0, 0], ['O', -.71, 1.23, 0], ['O', -.71, -1.23, 0]], b: [[0, 1, 2], [0, 2, 1], [0, 3, 1]], k: 'płaska trójkątna', ang: '120°'},
+    'NH₃': {a: [['N', 0, .38, 0], ['H', .94, -.12, 0], ['H', -.47, -.12, .81], ['H', -.47, -.12, -.81]], b: [[0, 1, 1], [0, 2, 1], [0, 3, 1]], k: 'piramidalna (1 wolna para na N)', ang: '107°'},
+    'CH₄': {a: [['C', 0, 0, 0], ['H', .63, .63, .63], ['H', -.63, -.63, .63], ['H', -.63, .63, -.63], ['H', .63, -.63, -.63]], b: [[0, 1, 1], [0, 2, 1], [0, 3, 1], [0, 4, 1]], k: 'czworościenna (tetraedr)', ang: '109,5°'}
+  };
+  KLOCKI.def('czasteczki-3d', {
+    opis: 'Obrotowy model kulkowy cząsteczki (przeciągnij, aby obrócić): O₂, O₃, H₂O, CO₂, SO₂, SO₃, NH₃, CH₄ z kątami między wiązaniami.',
+    domyslne: {mol: 'O₂,O₃,H₂O,CO₂'},
+    html: function (host, opc) {
+      var U = KLOCKI.ui, p = box(host), lista = String(opc.mol).split(',').filter(function (x) { return MOL[x]; }), k = 0, ay = .6, ax = .35, drag = null, auto = true;
+      var cv = document.createElement('canvas'); cv.width = 520; cv.height = 300; cv.style.cssText = 'width:100%;max-width:520px;display:block;margin:auto;touch-action:none;cursor:grab'; cv.setAttribute('role', 'img'); p[1].appendChild(cv);
+      lista.forEach(function (n, i) { p[0].appendChild(U.btn(n, function () { k = i; rys(); })); });
+      p[0].appendChild(U.btn('Obrót: włącz/wyłącz', function () { auto = !auto; }));
+      cv.addEventListener('pointerdown', function (e) { drag = [e.clientX, e.clientY]; auto = false; cv.setPointerCapture(e.pointerId); });
+      cv.addEventListener('pointermove', function (e) { if (!drag) return; ay += (e.clientX - drag[0]) * .01; ax += (e.clientY - drag[1]) * .01; drag = [e.clientX, e.clientY]; rys(); });
+      cv.addEventListener('pointerup', function () { drag = null; });
+      function rys() {
+        [].forEach.call(p[0].children, function (b, i) { if (i < lista.length) U.zaznacz(b, i === k); });
+        var m = MOL[lista[k]], c = cv.getContext('2d'), W = cv.width, H = cv.height, sc = 105, cy_ = Math.cos(ay), sy = Math.sin(ay), cx_ = Math.cos(ax), sx = Math.sin(ax);
+        c.clearRect(0, 0, W, H);
+        var P = m.a.map(function (a) { var x = a[1], y = a[2], z = a[3], x1 = x * cy_ + z * sy, z1 = -x * sy + z * cy_, y1 = y * cx_ - z1 * sx, z2 = y * sx + z1 * cx_; return {s: a[0], x: W / 2 + x1 * sc, y: H / 2 - y1 * sc, z: z2}; });
+        var ob = [];
+        m.b.forEach(function (b) { ob.push({z: (P[b[0]].z + P[b[1]].z) / 2 - .01, f: function () { var A = P[b[0]], B = P[b[1]], dx = B.x - A.x, dy = B.y - A.y, L = Math.hypot(dx, dy) || 1, nx = -dy / L * 4, ny = dx / L * 4; c.strokeStyle = '#475569'; c.lineWidth = 6; for (var q = 0; q < b[2]; q++) { var o = (q - (b[2] - 1) / 2) * 1.6; c.beginPath(); c.moveTo(A.x + nx * o, A.y + ny * o); c.lineTo(B.x + nx * o, B.y + ny * o); c.lineWidth = b[2] > 1 ? 4 : 6; c.stroke(); } }}); });
+        P.forEach(function (a) { ob.push({z: a.z, f: function () { var r = (CPK[a.s] || [0, 12])[1] * 1.5 * (1 + a.z * .05), g = c.createRadialGradient(a.x - r * .3, a.y - r * .3, r * .1, a.x, a.y, r); g.addColorStop(0, '#ffffff'); g.addColorStop(.35, CPK[a.s][0]); g.addColorStop(1, shade(CPK[a.s][0])); c.fillStyle = g; c.beginPath(); c.arc(a.x, a.y, r, 0, 6.2832); c.fill(); c.strokeStyle = '#334155'; c.lineWidth = 1; c.stroke(); c.fillStyle = a.s === 'H' ? '#0f172a' : '#fff'; c.font = '700 ' + (r > 11 ? 12 : 10) + 'px sans-serif'; c.textAlign = 'center'; c.fillText(a.s, a.x, a.y + 4); }}); });
+        ob.sort(function (u, v) { return u.z - v.z; }).forEach(function (o) { o.f(); });
+        cv.setAttribute('aria-label', 'Model 3D cząsteczki ' + lista[k]);
+        p[2].innerHTML = '<b>' + lista[k] + '</b> — ' + m.k + (m.ang ? ', kąt między wiązaniami ' + m.ang : '') + '. Liczba rodzajów atomów: <b>' + (new Set(m.a.map(function (a) { return a[0]; }))).size + '</b>; liczba atomów: <b>' + m.a.length + '</b>. Przeciągnij model, aby go obrócić.';
+      }
+      function shade(h) { var n = parseInt(h.slice(1), 16), r = (n >> 16 & 255) * .6, g = (n >> 8 & 255) * .6, b = (n & 255) * .6; return 'rgb(' + r + ',' + g + ',' + b + ')'; }
+      rys(); U.anim(host, function (dt) { if (auto) { ay += dt * .8; rys(); } });
+    }
+  });
+
+  /* ---------- destylacja ---------- */
+  KLOCKI.def('destylacja', {
+    opis: 'Zestaw do destylacji: kolba z cieczą ogrzewana palnikiem, chłodnica Liebiga (para się skrapla) i odbieralnik; destylat zbiera się w odbieralniku.',
+    domyslne: {},
+    html: function (host) {
+      var U = KLOCKI.ui, p = box(host), on = false, t = 0, ile = 0, temp = 20;
+      var b = U.btn('Włącz palnik', function () { on = !on; b.innerHTML = on ? 'Wyłącz palnik' : 'Włącz palnik'; }); p[0].append(b, U.btn('Od nowa', function () { ile = 0; temp = 20; on = false; b.innerHTML = 'Włącz palnik'; }));
+      function rys() {
+        var p2 = ile, par = temp > 76, kr = '';
+        if (par) for (var q = 0; q < 5; q++) { var f = ((t * .5 + q / 5) % 1); kr += '<circle cx="' + (190 + f * 140) + '" cy="84" r="3" fill="#bae6fd"/>'; }
+        if (par) for (var d = 0; d < 3; d++) { var g = ((t * .9 + d / 3) % 1); kr += '<circle cx="472" cy="' + (176 + g * 60) + '" r="3" fill="#38bdf8"/>'; }
+        p[1].innerHTML = '<svg viewBox="0 0 560 280" width="100%" style="max-width:620px;display:block" role="img" aria-label="Zestaw do destylacji">' +
+          '<path d="M150 110 L120 200 Q112 230 140 230 H210 Q238 230 230 200 L200 110 Z" fill="#fde68a" fill-opacity=".55" stroke="#64748b" stroke-width="2.5"/><rect x="166" y="74" width="18" height="40" fill="none" stroke="#64748b" stroke-width="2.5"/>' +
+          '<path d="M184 84 L330 84 L470 170" fill="none" stroke="#64748b" stroke-width="2.5"/><rect x="322" y="105" width="160" height="44" rx="6" fill="#bae6fd" fill-opacity=".4" stroke="#64748b" stroke-width="2" transform="rotate(31.6 402 127)"/>' +
+          '<path d="M450 205 H500 V262 H450 Z" fill="#e0f2fe" fill-opacity=".6" stroke="#64748b" stroke-width="2.5"/><rect x="450" y="' + (262 - Math.min(55, p2 * 55)) + '" width="50" height="' + Math.min(55, p2 * 55) + '" fill="#38bdf8" fill-opacity=".7"/>' +
+          '<text x="365" y="40" text-anchor="middle" font-size="12" fill="currentColor">chłodnica (woda chłodząca)</text><text x="175" y="258" text-anchor="middle" font-size="12" fill="currentColor">kolba z mieszaniną</text><text x="475" y="276" text-anchor="middle" font-size="12" fill="currentColor">odbieralnik</text>' +
+          '<path d="M165 244 q10 -22 20 0 q-10 -4 -20 0" fill="' + (on ? '#f97316' : '#cbd5e1') + '"/><rect x="140" y="244" width="70" height="8" rx="2" fill="#475569"/>' + kr +
+          '<text x="30" y="40" font-size="13" fill="currentColor">termometr: <tspan font-weight="700">' + Math.round(temp) + ' °C</tspan></text></svg>';
+        p[2].innerHTML = temp < 76 ? 'Mieszanina ogrzewa się. Składnik o <b>niższej temperaturze wrzenia</b> (np. etanol ≈ 78 °C) zacznie wrzeć pierwszy.' : 'Para składnika o niższej t. wrzenia przechodzi do chłodnicy, tam się <b>skrapla</b> i spływa do odbieralnika jako destylat. Destylacja = odparowanie + skroplenie.';
+      }
+      rys(); U.anim(host, function (dt) { t += dt; if (on) { temp = Math.min(82, temp + dt * 9); if (temp > 76) ile = Math.min(1, ile + dt * .06); } else temp = Math.max(20, temp - dt * 4); rys(); });
+    }
+  });
+})();
+
+/* NACZYNIA — wspólna geometria i wygląd szkła dla klocków (jedna probówka dla probowki, probowki-odczyn i kolejnych).
+   Zgodna z gfx/chemia/naczynia/testTube.js: proste ścianki, półokrągłe dno, szerokość do 70 px (tu dowolna).
+   KLOCKI.naczynia.probowkaPath(x, cx, top, dnoY, tw) — ścieżka korpusu (otwarta u góry); dnoY = środek łuku dna.
+   KLOCKI.naczynia.szklo(x, cx, top, dnoY, tw)         — obrys, połysk i brzeg (rysować po cieczy). */
+(function (g) {
+  var N = g.KLOCKI.naczynia = g.KLOCKI.naczynia || {};
+  N.probowkaPath = function (x, cx, top, dnoY, tw) {
+    var l = cx - tw / 2, r = cx + tw / 2;
+    x.beginPath(); x.moveTo(l, top); x.lineTo(l, dnoY); x.arc(cx, dnoY, tw / 2, Math.PI, 0, true); x.lineTo(r, top);
+  };
+  N.szklo = function (x, cx, top, dnoY, tw) {
+    var l = cx - tw / 2, r = cx + tw / 2, kol = '#64748b';
+    try { kol = getComputedStyle(x.canvas).getPropertyValue('--text-soft').trim() || kol; } catch (e) { }
+    x.save();
+    N.probowkaPath(x, cx, top, dnoY, tw);
+    x.strokeStyle = kol; x.lineWidth = 2; x.lineJoin = 'round'; x.stroke();
+    // połysk po lewej stronie ścianki
+    x.strokeStyle = 'rgba(255,255,255,.55)'; x.lineWidth = 2; x.lineCap = 'round';
+    x.beginPath(); x.moveTo(l + 5, top + 14); x.lineTo(l + 5, dnoY - 4); x.stroke();
+    // brzeg
+    x.strokeStyle = kol; x.lineWidth = 2.5;
+    x.beginPath(); x.moveTo(l - 3, top); x.lineTo(r + 3, top); x.stroke();
+    x.restore();
+  };
+})(window);
+
+/* KLOCEK: probowki-odczyn — probówki przed i po dodaniu odczynnika (barwa, osad, pęcherzyki gazu).
+   Opcja tuby: lista probówek oddzielona przecinkami; w każdej: etykieta:kolor_przed:kolor_po:efekt
+     kolory: czerwony, malinowy, zolty, brazowy, jasnozielony, blekitny, bezbarwny, pomaranczowy, mleczny, niebieski, szafirowy, bialy, fioletowy, zielony
+     efekt:  osad (cząstki opadają), gaz (pęcherzyki unoszą się), brak
+   Przykład: tuby="Kontrola:pomaranczowy:pomaranczowy:brak,Eten:pomaranczowy:bezbarwny:brak"
+   Opcja kat: pochylenie probówek w stopniach (np. 45 przy ogrzewaniu); poziom cieczy zostaje poziomy.
+   Animacja w cyklu 7 s: przed → przejście → po. Klik zatrzymuje/wznawia (montuj). */
+(function () {
+  var KOL = {
+    bezbarwny: '#e0f2fe', pomaranczowy: '#f97316', mleczny: '#cbd5e1', niebieski: '#60a5fa',
+    szafirowy: '#1e3a8a', bialy: '#f1f5f9', fioletowy: '#7e22ce', zielony: '#16a34a',
+    malinowy: '#be185d', czerwony: '#dc2626', zolty: '#facc15', brazowy: '#b45309', jasnozielony: '#bbf7d0', blekitny: '#93c5fd'
+  };
+  function hex(h) { var n = parseInt(h.slice(1), 16); return [n >> 16 & 255, n >> 8 & 255, n & 255]; }
+  function mieszaj(a, b, k) {
+    var A = hex(a), B = hex(b);
+    return 'rgb(' + [0, 1, 2].map(function (i) { return Math.round(A[i] + (B[i] - A[i]) * k); }).join(',') + ')';
+  }
+  function kol(n) { return KOL[n] || KOL.bezbarwny; }
+  function probowki(s) {
+    return String(s || '').split(',').map(function (t) {
+      var p = t.split(':').map(function (v) { return v.trim(); });
+      return {etyk: p[0] || '', przed: p[1] || 'bezbarwny', po: p[2] || p[1] || 'bezbarwny', efekt: p[3] || 'brak'};
+    }).filter(function (p) { return p.etyk; }).slice(0, 4);
+  }
+  var IND = {'0': '₀', '1': '₁', '2': '₂', '3': '₃', '4': '₄', '5': '₅', '6': '₆', '7': '₇', '8': '₈', '9': '₉'};
+  function indeksy(s) {
+    return String(s).replace(/([A-Za-z\)])(\d+)/g, function (_, a, d) {
+      return a + d.split('').map(function (c) { return IND[c]; }).join('');
+    });
+  }
+  function sm(v) { v = Math.max(0, Math.min(1, v)); return v * v * (3 - 2 * v); }
+
+  KLOCKI.def('probowki-odczyn', {
+    opis: 'Probówki przed i po dodaniu odczynnika: zmiana barwy, opadający osad lub pęcherzyki gazu.',
+    domyslne: {tuby: 'Kontrola:bezbarwny:bezbarwny:brak,Woda wapienna + CO₂:bezbarwny:mleczny:osad', szer: 480, wys: 300, kat: 0},
+    stan0: function () { return {}; },
+    rysuj: function (x, w, h, s, t, opc) {
+      var tuby = probowki(opc.tuby);
+      var n = tuby.length;
+      x.clearRect(0, 0, w, h);                       // tło przezroczyste: pasuje do jasnego i ciemnego motywu
+      var tekst = '#0f172a';
+      try { tekst = getComputedStyle(x.canvas).color || tekst; } catch (e) { }
+      if (!n) return;
+      var cykl = t % 7;
+      var p = sm((cykl - 2) / 1.5);                 // 0 = przed, 1 = po
+      var kz = Math.abs(Number(opc.kat) || 0) * Math.PI / 180;
+      var gap = 16 + (kz ? 60 * Math.sin(kz) : 0), tw = Math.min(96, (w - 30 - (n - 1) * gap) / n);
+      var top = 30, bot = h - 62, x0 = (w - (n * tw + (n - 1) * gap)) / 2;
+      x.textAlign = 'center'; x.textBaseline = 'middle';
+
+      x.fillStyle = tekst; x.globalAlpha = 0.7; x.font = '600 11px system-ui, sans-serif'; x.textAlign = 'left';
+      x.fillText(p < 0.5 ? 'PRZED' : 'PO', 8, 12); x.globalAlpha = 1; x.textAlign = 'center';
+      tuby.forEach(function (tb, i) {
+        var X = x0 + i * (tw + gap), rr = tw / 2;
+        var lvl = bot - (bot - top) * 0.6;
+        var barwa = mieszaj(kol(tb.przed), kol(tb.po), tb.efekt === 'osad' ? p * 0.35 : p);   // przy osadzie ciecz tylko lekko mętnieje
+        var pozostaje = (tb.efekt === 'osad' && p > 0.6) ? 0.9 : 0.85;
+        var ang = (Number(opc.kat) || 0) * Math.PI / 180;   // pochylenie probówki (np. 45 przy ogrzewaniu)
+        x.save();
+        if (ang) { x.translate(X + rr, (top + bot) / 2); x.rotate(ang); x.translate(-(X + rr), -(top + bot) / 2); }
+
+        // korpus probówki jako ścieżka (używana też do przycięcia cieczy)
+        function korpus() { KLOCKI.naczynia.probowkaPath(x, X + rr, top, bot - rr, tw); }
+
+        // ciecz przycięta do kształtu probówki
+        x.save(); korpus(); x.lineTo(X + tw - 1, top - 2); x.lineTo(X + 1, top - 2); x.closePath(); x.clip();
+        x.globalAlpha = pozostaje;
+        x.fillStyle = barwa;
+        if (ang) { x.save(); x.translate(X + rr, lvl); x.rotate(-ang); x.fillRect(-tw * 2, 0, tw * 4, h); x.restore(); }
+        else x.fillRect(X, lvl, tw, bot - lvl);
+        x.globalAlpha = 1;
+        x.restore();
+
+        // osad opadający na dno (kolor po reakcji)
+        if (tb.efekt === 'osad') {
+          x.fillStyle = kol(tb.po);
+          for (var k = 0; k < 12; k++) {
+            var px = X + 8 + ((k * 37 + i * 11) % Math.max(1, tw - 16));
+            var fr = Math.min(1, Math.max(0, p * 1.4 - (k % 4) * 0.08));
+            var yy = (lvl + 8) + (bot - 12 - (k % 3) * 3 - (lvl + 8)) * fr;
+            x.globalAlpha = 0.9;
+            x.beginPath(); x.arc(px, yy, 2.4, 0, 2 * Math.PI); x.fill(); x.strokeStyle = 'rgba(100,116,139,.6)'; x.lineWidth = 0.8; x.stroke();
+          }
+          x.globalAlpha = 1;
+        }
+
+        if (tb.efekt === 'osad' && p > 0.5) {          // zalegający osad: warstwa rośnie w miarę opadania cząstek
+          x.save(); korpus(); x.clip();
+          x.globalAlpha = 0.9 * Math.min(1, (p - 0.5) * 2); x.fillStyle = kol(tb.po);
+          x.fillRect(X - 2, bot - 10 * Math.min(1, (p - 0.5) * 2), tw + 4, 14);
+          x.strokeStyle = 'rgba(100,116,139,.55)'; x.lineWidth = 1; x.beginPath(); x.moveTo(X, bot - 10 * Math.min(1, (p - 0.5) * 2)); x.lineTo(X + tw, bot - 10 * Math.min(1, (p - 0.5) * 2)); x.stroke();
+          x.restore();
+        }
+
+        // pęcherzyki gazu unoszące się po reakcji
+        if (tb.efekt === 'gaz' && p > 0.1) {
+          x.fillStyle = 'rgba(255,255,255,.9)';
+          for (var b = 0; b < 10; b++) {
+            var bx = X + 10 + ((b * 29 + i * 7) % Math.max(1, tw - 20));
+            var by = bot - 6 - ((t * 38 + b * 23) % (bot - lvl - 10));
+            x.beginPath(); x.arc(bx, by, 2 + (b % 3) * 0.6, 0, 2 * Math.PI); x.fill();
+          }
+        }
+
+        // korpus probówki (zaokrąglone dno)
+        KLOCKI.naczynia.szklo(x, X + rr, top, bot - rr, tw);
+        x.restore();
+
+        // podpis
+        x.fillStyle = tekst; x.font = '12px system-ui, sans-serif';
+        x.fillText(indeksy(tb.etyk), X + rr, bot + 22);
+      });
+    }
+  });
+})();
+
+/* KLOCEK: probowki-wybor — kilka probówek naraz, uczeń wybiera odczynniki/metale (chipy).
+   Opcje: zestaw = metale-hcl | stracanie | kwas-weglan ; wybrane = lista kluczy po przecinku (domyślnie 3 pierwsze);
+          kat = pochylenie probówek (np. 45 przy ogrzewaniu). Animacja rusza sama (probowki-odczyn), wybór restartuje cykl.
+   Zależy od: klocki.js, pomocnicze.js, probowki_odczyn.js */
+(function () {
+  var ZESTAWY = {
+    'metale-hcl': {
+      tytul: 'Metal + kwas solny (HCl)',
+      pozycje: {
+        Mg: {et: 'Mg + HCl', przed: 'bezbarwny', po: 'bezbarwny', ef: 'gaz', rown: 'Mg + 2 H⁺ → Mg²⁺ + H₂↑'},
+        Zn: {et: 'Zn + HCl', przed: 'bezbarwny', po: 'bezbarwny', ef: 'gaz', rown: 'Zn + 2 H⁺ → Zn²⁺ + H₂↑'},
+        Fe: {et: 'Fe + HCl', przed: 'bezbarwny', po: 'jasnozielony', ef: 'gaz', rown: 'Fe + 2 H⁺ → Fe²⁺ + H₂↑'},
+        Cu: {et: 'Cu + HCl', przed: 'bezbarwny', po: 'bezbarwny', ef: 'brak', rown: 'Cu + HCl → brak reakcji (Cu stoi za wodorem w szeregu aktywności)'}
+      }
+    },
+    'stracanie': {
+      tytul: 'Strącanie osadów',
+      pozycje: {
+        AgCl: {et: 'Ag⁺ + Cl⁻', przed: 'bezbarwny', po: 'bialy', ef: 'osad', rown: 'Ag⁺ + Cl⁻ → AgCl↓ (biały)'},
+        BaSO4: {et: 'Ba²⁺ + SO4²⁻', przed: 'bezbarwny', po: 'bialy', ef: 'osad', rown: 'Ba²⁺ + SO₄²⁻ → BaSO₄↓ (biały)'},
+        CaCO3: {et: 'Ca²⁺ + CO3²⁻', przed: 'bezbarwny', po: 'bialy', ef: 'osad', rown: 'Ca²⁺ + CO₃²⁻ → CaCO₃↓ (biały)'},
+        CuOH2: {et: 'Cu²⁺ + OH⁻', przed: 'blekitny', po: 'niebieski', ef: 'osad', rown: 'Cu²⁺ + 2 OH⁻ → Cu(OH)₂↓ (niebieski)'},
+        FeOH3: {et: 'Fe³⁺ + OH⁻', przed: 'zolty', po: 'brazowy', ef: 'osad', rown: 'Fe³⁺ + 3 OH⁻ → Fe(OH)₃↓ (rdzawobrunatny)'}
+      }
+    },
+    'kwas-weglan': {
+      tytul: 'Kwas + węglan (wydziela się CO₂)',
+      pozycje: {
+        Na2CO3: {et: 'Na2CO3 + HCl', przed: 'bezbarwny', po: 'bezbarwny', ef: 'gaz', rown: 'CO₃²⁻ + 2 H⁺ → H₂O + CO₂↑'},
+        CaCO3: {et: 'CaCO3 + HCl', przed: 'mleczny', po: 'bezbarwny', ef: 'gaz', rown: 'CaCO₃ + 2 H⁺ → Ca²⁺ + H₂O + CO₂↑ (CaCO₃ nie jest jonem: nierozpuszczalny)'}
+      }
+    }
+  };
+  function lista(s) { return String(s || '').split(',').map(function (v) { return v.trim(); }).filter(Boolean); }
+
+  KLOCKI.def('probowki-wybor', {
+    opis: 'Kilka probówek naraz; uczeń wybiera metale lub odczynniki, a pod spodem widzi równanie jonowe skrócone.',
+    domyslne: {zestaw: 'metale-hcl', wybrane: '', kat: 0, max: 4, szer: 480, wys: 300},
+    html: function (host, opc) {
+      var Z = ZESTAWY[opc.zestaw] || ZESTAWY['metale-hcl'];
+      var klucze = Object.keys(Z.pozycje);
+      var wyb = lista(opc.wybrane).filter(function (k) { return Z.pozycje[k]; });
+      if (!wyb.length) wyb = klucze.slice(0, 3);
+      var max = Number(opc.max) || 4;
+      host.style.display = 'block';
+      var chipy = document.createElement('div');
+      chipy.style.cssText = 'display:flex;flex-wrap:wrap;gap:6px;margin:0 0 8px';
+      var scena = document.createElement('div');
+      var rown = document.createElement('div');
+      rown.style.cssText = 'font-size:14px;margin-top:8px;display:grid;gap:4px';
+      host.appendChild(chipy); host.appendChild(scena); host.appendChild(rown);
+      var przyciski = {};
+      klucze.forEach(function (k) {
+        var b = document.createElement('button');
+        b.type = 'button'; b.textContent = Z.pozycje[k].et.replace(/(\d)/g, function (d) { return '₀₁₂₃₄₅₆₇₈₉'[d]; });
+        b.style.cssText = 'border:1px solid var(--accent,#0d6868);border-radius:99px;padding:4px 12px;font:600 13px system-ui,sans-serif;cursor:pointer;background:var(--surface,#fff);color:var(--accent,#0d6868);min-height:0;height:auto;width:auto;min-width:0;flex:none;line-height:1.3;margin:0;box-shadow:none';
+        b.addEventListener('click', function () {
+          var i = wyb.indexOf(k);
+          if (i >= 0) { if (wyb.length > 1) wyb.splice(i, 1); }
+          else { if (wyb.length >= max) wyb.shift(); wyb.push(k); }
+          odswiez();
+        });
+        przyciski[k] = b; chipy.appendChild(b);
+      });
+      function odswiez() {
+        klucze.forEach(function (k) {
+          var on = wyb.indexOf(k) >= 0, b = przyciski[k];
+          b.style.background = on ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)';
+          b.style.color = on ? '#fff' : 'var(--accent,#0d6868)';
+          b.setAttribute('aria-pressed', on ? 'true' : 'false');
+        });
+        var tuby = wyb.map(function (k) {
+          var p = Z.pozycje[k]; return p.et + ':' + p.przed + ':' + p.po + ':' + p.ef;
+        }).join(',');
+        KLOCKI.montuj(scena, 'probowki-odczyn', {tuby: tuby, kat: opc.kat, szer: opc.szer, wys: opc.wys, opis: Z.tytul + ': ' + wyb.join(', ')});
+        rown.innerHTML = '';
+        wyb.forEach(function (k) {
+          var d = document.createElement('div'); d.textContent = Z.pozycje[k].rown; rown.appendChild(d);
+        });
+      }
+      odswiez();
+    }
+  });
+})();
+
+/* KLOCEK: palnik-gazowy — doświadczenie z płomieniem metanu (LKO-ORG01 §5).
+   Opcje (w lekcji): etap="0"  tylko płomień i zlewka odwrócona nad nim (bez kropli)
+                     etap="1"  krople H₂O na wewnętrznej stronie kopuły; zlewka kontrolna sucha
+                     etap="2"  jak 1 + woda wapienna mętnieje (CO₂ przepuszczony do probówki)
+                     anim="0"  stan końcowy bez animacji (domyślnie animacja; przy prefers-reduced-motion statycznie)
+   Rysunek bez odpowiedzi — uczeń wnioskuje sam. Płomień pod krawędzią zlewki (nie w niej). Scena ciemna (--lab). */
+(function () {
+  function cl(v, a, b) { return Math.max(a, Math.min(b, v)); }
+  function ss(v) { v = cl(v, 0, 1); return v * v * (3 - 2 * v); }
+  function ha(i) { var q = Math.sin(i * 127.1 + 311.7) * 43758.5453; return q - Math.floor(q); }
+  function lerp(a, b, k) { return a + (b - a) * k; }
+
+  KLOCKI.def('palnik-gazowy', {
+    opis: 'Palnik gazowy (metan): płomień pod zlewką odwróconą z kroplami H₂O, zlewka kontrolna i woda wapienna mętniejąca od CO₂.',
+    domyslne: {etap: 2, szer: 560, wys: 340, anim: 1},
+    stan0: function () { return {}; },
+    rysuj: function (x, w, h, s, t, opc) {
+      var et = Math.round(cl(Number(opc.etap) / 2, 0, 1) * 2);
+      var ruch = !RM && Number(opc.anim) !== 0, tf = RM ? 0 : (t || 0), tr = ruch ? t : 99;   // tf: migotanie, tr: oś czasu zjawisk
+      var X = function (v) { return v * w; }, Y = function (v) { return v * h; };
+      var JAS = '#cbd5e1', AMB = '#fbbf24';
+
+      // tło sceny i blat
+      var bg = x.createLinearGradient(0, 0, 0, h); bg.addColorStop(0, '#0e2326'); bg.addColorStop(1, '#0a1a1d');
+      x.fillStyle = bg; x.fillRect(0, 0, w, h);
+      x.fillStyle = '#16343a'; x.fillRect(0, Y(.93), w, h - Y(.93));
+      x.fillStyle = '#25505a'; x.fillRect(0, Y(.93), w, 2);
+      x.textBaseline = 'middle'; x.font = '14px system-ui, sans-serif'; x.textAlign = 'center';
+
+      // --- statyw: pręt i uchwyt przy zlewce
+      var L = X(.09), R = X(.41), TOP = Y(.10), RIM = Y(.60), YM = Y(.26), cx = X(.25);
+      x.fillStyle = '#64748b'; x.fillRect(X(.035), Y(.12), 5, Y(.81));
+      x.fillRect(X(.035), Y(.22), L - X(.035) + 2, 5);
+      x.fillStyle = '#475569'; x.fillRect(L - 3, Y(.205), 6, 14);
+      x.fillStyle = '#94a3b8'; x.fillRect(X(.02), Y(.925), X(.05), 5);
+
+      // --- palnik Bunsena
+      var bx = X(.25), yb = Y(.80);
+      x.strokeStyle = '#475569'; x.lineWidth = 6; x.lineCap = 'round';
+      x.beginPath(); x.moveTo(bx - 8, Y(.91)); x.bezierCurveTo(X(.16), Y(.93), X(.10), Y(.88), -4, Y(.90)); x.stroke(); x.lineCap = 'butt';
+      var gm = x.createLinearGradient(bx - 12, 0, bx + 12, 0); gm.addColorStop(0, '#64748b'); gm.addColorStop(.35, '#e2e8f0'); gm.addColorStop(1, '#475569');
+      x.fillStyle = gm; x.fillRect(bx - 7, yb, 14, Y(.90) - yb);
+      x.fillStyle = '#334155'; x.fillRect(bx - 10, Y(.835), 20, Y(.04));
+      x.fillStyle = '#0a1a1d'; x.fillRect(bx - 4, Y(.845), 3, 5); x.fillRect(bx + 2, Y(.845), 3, 5);
+      var bm = x.createLinearGradient(bx - 24, 0, bx + 24, 0); bm.addColorStop(0, '#475569'); bm.addColorStop(.4, '#94a3b8'); bm.addColorStop(1, '#334155');
+      x.fillStyle = bm; x.fillRect(bx - 24, Y(.895), 48, Y(.035));
+      x.fillStyle = JAS; x.fillText('palnik z metanem (CH₄)', bx, Y(.975));
+
+      // --- płomień: poświata, płaszcz zewnętrzny i stożek wewnętrzny (migotanie)
+      var fl = 1 + 0.05 * Math.sin(tf * 11) + 0.03 * Math.sin(tf * 17.3), dx = Math.sin(tf * 9) * 1.6 + Math.sin(tf * 5.3);
+      var tip = yb - (yb - Y(.645)) * fl;
+      x.globalCompositeOperation = 'lighter';
+      var gl = x.createRadialGradient(bx, yb - 20, 4, bx, yb - 20, 62); gl.addColorStop(0, 'rgba(96,165,250,.28)'); gl.addColorStop(1, 'rgba(96,165,250,0)');
+      x.fillStyle = gl; x.fillRect(bx - 70, yb - 90, 140, 120);
+      x.globalCompositeOperation = 'source-over';
+      var fg = x.createLinearGradient(0, yb, 0, tip); fg.addColorStop(0, 'rgba(37,99,235,.95)'); fg.addColorStop(.55, 'rgba(96,165,250,.9)'); fg.addColorStop(1, 'rgba(191,219,254,.25)');
+      x.beginPath(); x.moveTo(bx - 9, yb); x.bezierCurveTo(bx - 12, yb - 18, bx - 4 + dx, tip + 12, bx + dx, tip);
+      x.bezierCurveTo(bx + 4 + dx, tip + 12, bx + 12, yb - 18, bx + 9, yb); x.closePath(); x.fillStyle = fg; x.fill();
+      var ic = x.createLinearGradient(0, yb, 0, tip + 14); ic.addColorStop(0, 'rgba(224,242,254,.95)'); ic.addColorStop(1, 'rgba(147,197,253,.4)');
+      x.beginPath(); x.moveTo(bx - 4.5, yb); x.quadraticCurveTo(bx - 4, yb - 12, bx + dx * .6, yb - (yb - tip) * .52); x.quadraticCurveTo(bx + 4, yb - 12, bx + 4.5, yb); x.closePath();
+      x.fillStyle = ic; x.fill();
+
+      // --- zlewka odwrócona (dnem do góry): szkło, odblask, krawędź
+      function kopula() { x.beginPath(); x.moveTo(L, RIM); x.lineTo(L, YM); x.quadraticCurveTo(L, TOP, cx, TOP); x.quadraticCurveTo(R, TOP, R, YM); x.lineTo(R, RIM); }
+      var sg = x.createLinearGradient(L, 0, R, 0); sg.addColorStop(0, 'rgba(186,230,253,.20)'); sg.addColorStop(.5, 'rgba(186,230,253,.06)'); sg.addColorStop(1, 'rgba(186,230,253,.16)');
+      kopula(); x.fillStyle = sg; x.fill(); x.strokeStyle = 'rgba(203,213,225,.85)'; x.lineWidth = 2; x.stroke();
+      x.strokeStyle = 'rgba(255,255,255,.28)'; x.lineWidth = 3; x.lineCap = 'round'; x.beginPath(); x.moveTo(L + 8, Y(.30)); x.lineTo(L + 8, Y(.52)); x.stroke(); x.lineCap = 'butt';
+      x.strokeStyle = 'rgba(203,213,225,.95)'; x.lineWidth = 3; x.beginPath(); x.moveTo(L - 3, RIM); x.lineTo(R + 3, RIM); x.stroke();
+
+      // spaliny unoszące się pod kopułą (etap ≥ 1) i krople H₂O
+      if (et >= 1) {
+        for (var i = 0; i < 14; i++) {
+          var ph = (tf * .12 + ha(i)) % 1, py = RIM - 6 - ph * (RIM - TOP - 22), pxx = cx + (ha(i + 7) - .5) * (R - L) * (.35 + .5 * ph);
+          x.beginPath(); x.arc(pxx, py, 1.6 + ha(i + 3) * 1.6, 0, 7); x.fillStyle = 'rgba(203,213,225,' + (0.16 * (1 - ph)).toFixed(3) + ')'; x.fill();
+        }
+        for (var d = 0; d < 28; d++) {
+          var gx = L + 10 + ha(d) * (R - L - 20), u = Math.abs((gx - cx) / ((R - L) / 2)), yt = TOP + (YM - TOP) * Math.pow(u, 3);
+          var gy = yt + 9 + ha(d + 50) * (RIM - 44 - yt), gr = (2 + ha(d + 20) * 2.6) * ss((tr - .2 - ha(d + 90) * 1.6) / 1.8);
+          if (gr <= .2) continue;
+          x.beginPath(); x.ellipse(gx, gy + gr * .15, gr * .9, gr * 1.1, 0, 0, 7);
+          x.fillStyle = 'rgba(147,197,253,.55)'; x.fill(); x.strokeStyle = 'rgba(219,234,254,.9)'; x.lineWidth = .8; x.stroke();
+          x.beginPath(); x.arc(gx - gr * .3, gy - gr * .3, gr * .25, 0, 7); x.fillStyle = 'rgba(255,255,255,.85)'; x.fill();
+        }
+        if (ruch) for (var k = 0; k < 2; k++) {                       // spływające krople przy ściankach
+          var q = (tf * .16 + k * .5) % 1, yy = Y(.30) + q * (RIM - 14 - Y(.30)), xx = k ? R - 7 : L + 7;
+          x.strokeStyle = 'rgba(147,197,253,' + (0.35 * Math.sin(q * Math.PI)).toFixed(3) + ')'; x.lineWidth = 1.5;
+          x.beginPath(); x.moveTo(xx, yy - 12); x.lineTo(xx, yy); x.stroke();
+          x.beginPath(); x.arc(xx, yy, 2.6, 0, 7); x.fillStyle = 'rgba(147,197,253,' + (0.8 * Math.sin(q * Math.PI)).toFixed(3) + ')'; x.fill();
+        }
+        x.fillStyle = AMB; x.textAlign = 'left'; x.fillText('← krople H₂O', X(.44), Y(.16)); x.textAlign = 'center';
+      }
+      x.fillStyle = JAS; x.fillText('zlewka odwrócona', cx, Y(.555));
+
+      // --- zlewka kontrolna: stoi na blacie, sucha
+      var cL = X(.56), cR = X(.72), cT = Y(.55), cB = Y(.93);
+      x.beginPath(); x.moveTo(cL, cT); x.lineTo(cL, cB - 12); x.quadraticCurveTo(cL, cB, cL + 12, cB); x.lineTo(cR - 12, cB); x.quadraticCurveTo(cR, cB, cR, cB - 12); x.lineTo(cR, cT);
+      var cg = x.createLinearGradient(cL, 0, cR, 0); cg.addColorStop(0, 'rgba(186,230,253,.20)'); cg.addColorStop(.5, 'rgba(186,230,253,.05)'); cg.addColorStop(1, 'rgba(186,230,253,.15)');
+      x.fillStyle = cg; x.fill(); x.strokeStyle = 'rgba(203,213,225,.85)'; x.lineWidth = 2; x.stroke();
+      x.strokeStyle = 'rgba(255,255,255,.25)'; x.lineWidth = 3; x.lineCap = 'round'; x.beginPath(); x.moveTo(cL + 7, cT + 14); x.lineTo(cL + 7, cB - 26); x.stroke(); x.lineCap = 'butt';
+      x.fillStyle = JAS; x.fillText('kontrolna (sucha)', (cL + cR) / 2, Y(.50));
+
+      // --- rurka gazu: kopuła → probówka z wodą wapienną
+      var tx = X(.86), pL = X(.80), pR = X(.92), pT = Y(.36), pB = Y(.88), yl = Y(.52), te = Y(.72);
+      x.lineJoin = 'round';
+      [['rgba(148,163,184,.95)', 5], ['rgba(255,255,255,.22)', 2]].forEach(function (st) {
+        x.strokeStyle = st[0]; x.lineWidth = st[1]; x.beginPath(); x.moveTo(cx, TOP - 4); x.lineTo(cx, Y(.05)); x.lineTo(tx, Y(.05)); x.lineTo(tx, te); x.stroke();
+      });
+      x.fillStyle = '#7c3f1d'; x.beginPath(); x.roundRect ? x.roundRect(cx - 11, TOP - 6, 22, 10, 3) : x.rect(cx - 11, TOP - 6, 22, 10); x.fill();
+      function probowka() { x.beginPath(); x.moveTo(pL, pT); x.lineTo(pL, pB - 16); x.quadraticCurveTo(pL, pB, (pL + pR) / 2, pB); x.quadraticCurveTo(pR, pB, pR, pB - 16); x.lineTo(pR, pT); }
+      var mm = et >= 2 ? ss((tr - 1.2) / 3.2) : 0;                       // stopień zmętnienia
+      x.save(); probowka(); x.clip();
+      x.fillStyle = 'rgba(' + [lerp(147, 241, mm), lerp(197, 245, mm), lerp(253, 249, mm)].map(Math.round).join(',') + ',' + lerp(.32, .96, mm).toFixed(2) + ')';
+      x.fillRect(pL, yl, pR - pL, pB - yl); x.restore();
+      x.strokeStyle = 'rgba(255,255,255,' + lerp(.25, .5, mm).toFixed(2) + ')'; x.lineWidth = 1.5; x.beginPath(); x.moveTo(pL + 2, yl); x.lineTo(pR - 2, yl); x.stroke();
+      if (et >= 2 && ruch) for (var b = 0; b < 7; b++) {                  // pęcherzyki gazu z końca rurki
+        var bp = (tf * .55 + ha(b)) % 1, by = te - bp * (te - yl), bxx = tx + Math.sin(tf * 6 + b) * 3 + (ha(b + 3) - .5) * 9 * bp, br = 1.4 + ha(b + 9) * 2;
+        x.beginPath(); x.arc(bxx, by, br, 0, 7); x.fillStyle = 'rgba(255,255,255,.14)'; x.fill(); x.strokeStyle = 'rgba(255,255,255,.6)'; x.lineWidth = 1; x.stroke();
+      }
+      probowka(); x.strokeStyle = 'rgba(203,213,225,.85)'; x.lineWidth = 2; x.stroke();
+      x.strokeStyle = 'rgba(255,255,255,.25)'; x.lineWidth = 2.5; x.lineCap = 'round'; x.beginPath(); x.moveTo(pL + 5, pT + 10); x.lineTo(pL + 5, pB - 28); x.stroke(); x.lineCap = 'butt';
+      x.fillStyle = JAS; x.fillText('woda wapienna', tx, Y(.975));
+      if (et >= 2) { x.fillStyle = AMB; x.textAlign = 'left'; x.fillText('zmętnienie ⇒ CO₂', X(.60), Y(.30)); x.textAlign = 'center'; }
+    }
+  });
+})();
+
+/* KLOCEK: zbieranie-gazu — jak zbieramy gaz: wylotem do góry, wylotem do dołu albo nad wodą.
+   Animowana scena: kolba z reakcją → rurka → naczynie. Chipy wybierają gaz (H₂, O₂, CO₂, NH₃, HCl) i metodę; pod sceną werdykt
+   z gęstością względną d = M / 29 i rozpuszczalnością. Zły wybór pokazuje, jak gaz ucieka albo się rozpuszcza.
+   Opcje: gaz (H2), metoda (auto = pierwsza poprawna), gazy = "H2,O2,CO2,NH3,HCl" (które chipy pokazać).
+   Gazy są bezbarwne — na rysunku zaznaczone kropkami (powietrze: szare). Animacja startuje, gdy figura jest widoczna; prefers-reduced-motion: stan końcowy. */
+(function () {
+  var GAZY = {
+    H2:  {n: 'H₂',  M: 2,    roz: 'slabo',  r: 'Zn + 2 HCl → ZnCl₂ + H₂↑ (cynk w kwasie solnym)'},
+    O2:  {n: 'O₂',  M: 32,   roz: 'slabo',  r: '2 H₂O₂ → 2 H₂O + O₂↑ (katalizator MnO₂)'},
+    CO2: {n: 'CO₂', M: 44,   roz: 'czesc',  r: 'CaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂↑ (marmur w kwasie)'},
+    NH3: {n: 'NH₃', M: 17,   roz: 'bardzo', r: '2 NH₄Cl + Ca(OH)₂ → CaCl₂ + 2 NH₃↑ + 2 H₂O (ogrzewanie)'},
+    HCl: {n: 'HCl', M: 36.5, roz: 'bardzo', r: 'NaCl + H₂SO₄ → NaHSO₄ + HCl↑ (ogrzewanie, dygestorium)'}
+  };
+  var METODY = {gora: 'wylotem do góry', dol: 'wylotem do dołu', woda: 'nad wodą'};
+  var DOWOD = 29;
+  function fm(x) { return String(Math.round(x * 100) / 100).replace('.', ','); }
+  function ocena(g, m) {
+    var G = GAZY[g], d = G.M / DOWOD, ds = 'd = ' + fm(d);
+    if (m === 'gora') return d > 1
+      ? {ok: true, t: G.n + ' jest cięższy od powietrza (' + ds + '): opada na dno i wypycha powietrze ku górze. Zbieramy naczyniem wylotem do góry.'}
+      : {ok: false, t: G.n + ' jest lżejszy od powietrza (' + ds + '): ulatuje z naczynia ustawionego wylotem do góry.'};
+    if (m === 'dol') return d < 1
+      ? {ok: true, t: G.n + ' jest lżejszy od powietrza (' + ds + '): unosi się i gromadzi pod dnem odwróconego naczynia. Zbieramy wylotem do dołu.'}
+      : {ok: false, t: G.n + ' jest cięższy od powietrza (' + ds + '): opada i wypływa przez otwór naczynia wylotem do dołu.'};
+    return G.roz === 'slabo'
+      ? {ok: true, t: G.n + ' słabo rozpuszcza się w wodzie: zbiera się nad wodą i wypiera ją z naczynia (można też odczytać objętość).'}
+      : {ok: false, t: G.n + (G.roz === 'bardzo' ? ' bardzo dobrze' : ' częściowo') + ' rozpuszcza się w wodzie, więc nie zbieramy go nad wodą.'};
+  }
+  function los(n, z) { var v = Math.sin(n * 12.9898 + z * 78.233) * 43758.5453; return v - Math.floor(v); }
+  function dobra(g) { var d = GAZY[g].M / DOWOD; return d > 1 ? 'gora' : 'dol'; }
+  function esc(t) { return String(t).replace(/[&<>"]/g, function (c) { return {'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]; }); }
+
+  /* geometria: naczynie {x,y,w,h}, rurka (łamana), poziom wody w kuwecie */
+  var W = 520, H = 300;
+  function geom(m) {
+    if (m === 'gora') return {j: {x: 330, y: 100, w: 90, h: 150}, rur: [[82, 118], [82, 70], [375, 70], [375, 235]], wejscie: [375, 235], dir: 1};
+    if (m === 'dol') return {j: {x: 330, y: 100, w: 90, h: 150}, rur: [[82, 118], [82, 70], [215, 70], [215, 284], [375, 284], [375, 135]], wejscie: [375, 135], dir: -1};
+    return {j: {x: 330, y: 105, w: 90, h: 140}, rur: [[82, 118], [82, 70], [215, 70], [215, 284], [375, 284], [375, 240]], wejscie: [375, 240], dir: -1, woda: 232};
+  }
+
+  KLOCKI.def('zbieranie-gazu', {
+    opis: 'Zbieranie gazu: kolba z reakcją, rurka i naczynie ustawione wylotem do góry, do dołu albo nad wodą; werdykt zależy od gęstości i rozpuszczalności gazu.',
+    domyslne: {gaz: 'H2', metoda: 'auto', gazy: 'H2,O2,CO2,NH3,HCl'},
+    html: function (host, opc) {
+      host.style.display = 'block'; host.style.width = '100%';
+      var lista = String(opc.gazy || '').split(',').map(function (s) { return s.trim(); }).filter(function (s) { return GAZY[s]; });
+      if (!lista.length) lista = ['H2'];
+      var gaz = GAZY[opc.gaz] ? opc.gaz : lista[0];
+      if (lista.indexOf(gaz) < 0) lista.unshift(gaz);
+      var metoda = METODY[opc.metoda] ? opc.metoda : dobra(gaz);
+      var chipSt = 'padding:3px 10px;border:1.5px solid var(--border-strong,#94a3b8);border-radius:999px;background:var(--surface,#fff);cursor:pointer;font:inherit;font-size:13px';
+      host.innerHTML =
+        '<div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:0 0 6px"><span style="font-size:13px;color:var(--text-soft,#64748b)">Gaz:</span>' +
+        lista.map(function (g) { return '<button type="button" data-g="' + g + '" style="' + chipSt + '">' + GAZY[g].n + '</button>'; }).join('') + '</div>' +
+        '<div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:0 0 8px"><span style="font-size:13px;color:var(--text-soft,#64748b)">Zbieramy:</span>' +
+        Object.keys(METODY).map(function (m) { return '<button type="button" data-m="' + m + '" style="' + chipSt + '">' + METODY[m] + '</button>'; }).join('') + '</div>' +
+        '<canvas width="' + W + '" height="' + H + '" style="width:100%;max-width:' + W + 'px;height:auto;display:block;margin:0 auto" role="img"></canvas>' +
+        '<div class="zg-r" style="font-size:13px;text-align:center;color:var(--text-soft,#64748b);margin:4px 0 0"></div>' +
+        '<div class="zg-w" aria-live="polite" style="font-size:14px;margin:6px 2px 0;font-weight:600"></div>';
+      var cv = host.querySelector('canvas'), x = cv.getContext('2d'), rEl = host.querySelector('.zg-r'), wEl = host.querySelector('.zg-w');
+      var gB = [].slice.call(host.querySelectorAll('[data-g]')), mB = [].slice.call(host.querySelectorAll('[data-m]'));
+      var S = {t: 0, cykl: 0}, ruch = typeof RM !== 'undefined' && RM;
+
+      function ustaw() {
+        var o = ocena(gaz, metoda);
+        gB.forEach(function (b) { var a = b.getAttribute('data-g') === gaz; b.style.background = a ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)'; b.style.color = a ? '#fff' : 'inherit'; });
+        mB.forEach(function (b) { var a = b.getAttribute('data-m') === metoda; b.style.background = a ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)'; b.style.color = a ? '#fff' : 'inherit'; });
+        rEl.innerHTML = esc(GAZY[gaz].r);
+        wEl.style.color = o.ok ? 'var(--c-basic,#15803d)' : 'var(--c-error,#dc2626)';
+        wEl.textContent = (o.ok ? '✓ ' : '✗ ') + o.t;
+        cv.setAttribute('aria-label', 'Zbieranie gazu ' + GAZY[gaz].n + ' ' + METODY[metoda] + ': ' + (o.ok ? 'poprawnie' : 'błędnie') + '. ' + o.t);
+        S.t = 0; S.cykl = 0; rysuj();
+      }
+      gB.forEach(function (b) { b.addEventListener('click', function () { gaz = b.getAttribute('data-g'); ustaw(); }); });
+      mB.forEach(function (b) { b.addEventListener('click', function () { metoda = b.getAttribute('data-m'); ustaw(); }); });
+
+      /* ---- rysowanie ---- */
+      function kropka(px, py, r, kol) { x.beginPath(); x.arc(px, py, r, 0, 6.2832); x.fillStyle = kol; x.fill(); }
+      function linia(p, szer, kol) {
+        x.beginPath(); x.moveTo(p[0][0], p[0][1]); for (var i = 1; i < p.length; i++) x.lineTo(p[i][0], p[i][1]);
+        x.lineWidth = szer; x.strokeStyle = kol; x.lineJoin = 'round'; x.lineCap = 'round'; x.stroke();
+      }
+      function rysuj() {
+        var o = ocena(gaz, metoda), g = geom(metoda), j = g.j, t = S.t, GK = 'rgba(13,104,104,.85)', PK = 'rgba(100,116,139,.55)';
+        x.clearRect(0, 0, W, H);
+        /* postęp zbierania 0..1 (cykl: 7 s napełniania + 1,5 s pauzy), przy błędnym wyborze — brak gromadzenia */
+        var cyk = 8.5, ph = ruch ? 7 : (t % cyk), pr = o.ok ? Math.min(1, ph / 7) : 0;
+        /* kolba z reakcją */
+        x.fillStyle = 'rgba(148,163,184,.12)'; x.strokeStyle = '#94a3b8'; x.lineWidth = 2;
+        x.beginPath(); x.moveTo(66, 118); x.lineTo(66, 160); x.lineTo(30, 236); x.arcTo(24, 262, 50, 262, 14); x.lineTo(114, 262);
+        x.arcTo(140, 262, 134, 236, 14); x.lineTo(98, 160); x.lineTo(98, 118); x.stroke();
+        x.fillStyle = 'rgba(142,201,232,.35)'; x.beginPath(); x.moveTo(36, 222); x.lineTo(128, 222); x.lineTo(134, 236); x.arcTo(140, 262, 114, 262, 14); x.lineTo(50, 262); x.arcTo(24, 262, 30, 236, 14); x.closePath(); x.fill();
+        for (var b = 0; b < 7; b++) { var bt = ((t * .9 + b * .37) % 1), bx = 52 + ((b * 29) % 60) + Math.sin(t * 3 + b) * 3; kropka(bx, 255 - bt * 36, 2 + (b % 3) * .6, 'rgba(255,255,255,.8)'); }
+        x.fillStyle = '#b45309'; x.fillRect(62, 112, 40, 8);
+        /* naczynie */
+        if (g.woda) {
+          x.fillStyle = 'rgba(142,201,232,.3)'; x.fillRect(260, g.woda, 230, 284 - g.woda + 12); x.strokeStyle = '#94a3b8'; x.lineWidth = 2; x.strokeRect(260, g.woda - 8, 230, 296 - g.woda + 4);
+          var poz = j.y + (j.h) * pr;   /* poziom wody w naczyniu: z wodą do góry, gaz wypiera ją w dół */
+          x.fillStyle = 'rgba(142,201,232,.55)'; x.fillRect(j.x, Math.max(j.y, Math.min(g.woda, j.y + (g.woda - j.y) * pr)), j.w, g.woda - Math.max(j.y, Math.min(g.woda, j.y + (g.woda - j.y) * pr)));
+        }
+        /* gaz w naczyniu (kropki w pseudolosowych, ale stałych miejscach — bez „smug”) */
+        var szer = j.w - 6, lw = j.x + 3, ng = o.ok ? Math.round(34 * pr) : 0, i, drg = function (n) { return Math.sin(t * 1.7 + n * 2.3) * 2; };
+        var ox = function (n, z) { return lw + 6 + los(n, z) * (szer - 12) + drg(n); };
+        if (metoda === 'gora') {
+          var h = j.h * pr; x.fillStyle = 'rgba(13,104,104,.10)'; x.fillRect(lw, j.y + j.h - h, szer, h);
+          for (i = 0; i < ng; i++) kropka(ox(i, 1), j.y + j.h - 6 - los(i, 2) * Math.max(10, h - 8), 2.1, GK);
+          for (i = 0; i < 22; i++) { var yy = j.y + 6 + los(i, 4) * (j.h - 12); if (yy < j.y + j.h - h) kropka(ox(i, 3), yy, 2.1, PK); }
+        } else {
+          var hh = (metoda === 'woda' ? (g.woda - j.y) : j.h) * pr;
+          x.fillStyle = 'rgba(13,104,104,.10)'; x.fillRect(lw, j.y, szer, Math.max(0, hh));
+          for (i = 0; i < ng; i++) kropka(ox(i, 1), j.y + 6 + los(i, 2) * Math.max(10, hh - 8), 2.1, GK);
+          if (metoda === 'dol') for (i = 0; i < 22; i++) { var y2 = j.y + 6 + los(i, 4) * (j.h - 12); if (y2 > j.y + hh) kropka(ox(i, 3), y2, 2.1, PK); }
+        }
+        /* szkło naczynia: dla „do góry” otwarte u góry, dla „do dołu” i wody — otwarte u dołu */
+        x.strokeStyle = '#94a3b8'; x.lineWidth = 2.5; x.beginPath();
+        if (metoda === 'gora') { x.moveTo(j.x, j.y); x.lineTo(j.x, j.y + j.h - 8); x.arcTo(j.x, j.y + j.h, j.x + 10, j.y + j.h, 8); x.lineTo(j.x + j.w - 10, j.y + j.h); x.arcTo(j.x + j.w, j.y + j.h, j.x + j.w, j.y + j.h - 8, 8); x.lineTo(j.x + j.w, j.y); }
+        else { x.moveTo(j.x, j.y + j.h); x.lineTo(j.x, j.y + 8); x.arcTo(j.x, j.y, j.x + 10, j.y, 8); x.lineTo(j.x + j.w - 10, j.y); x.arcTo(j.x + j.w, j.y, j.x + j.w, j.y + 8, 8); x.lineTo(j.x + j.w, j.y + j.h); }
+        x.stroke();
+        /* rurka odprowadzająca */
+        linia(g.rur, 5, 'rgba(100,116,139,.35)'); linia(g.rur, 2, '#94a3b8');
+        /* gaz w rurce i uciekający / rozpuszczający się */
+        if (!ruch || true) {
+          var len = 0, seg = [], k;
+          for (k = 1; k < g.rur.length; k++) { var dl = Math.hypot(g.rur[k][0] - g.rur[k - 1][0], g.rur[k][1] - g.rur[k - 1][1]); seg.push(dl); len += dl; }
+          for (var m = 0; m < 9; m++) {
+            var u = ((t * .22 + m / 9) % 1) * len, s = 0; for (k = 0; k < seg.length && u > s + seg[k]; k++) s += seg[k];
+            var f = seg[k] ? (u - s) / seg[k] : 0; kropka(g.rur[k][0] + (g.rur[k + 1][0] - g.rur[k][0]) * f, g.rur[k][1] + (g.rur[k + 1][1] - g.rur[k][1]) * f, 2.4, GK);
+          }
+        }
+        var ex = g.wejscie[0], ey = g.wejscie[1];
+        if (!o.ok) {
+          /* gaz opuszcza naczynie: do góry (lekki w naczyniu „do góry”) albo w dół (ciężki w „do dołu”) */
+          var wyp = metoda === 'gora' ? -1 : (metoda === 'dol' ? 1 : 0);
+          if (metoda === 'woda') {
+            for (var bb = 0; bb < 7; bb++) { var bt2 = (t * .6 + bb * .21) % 1; kropka(ex + Math.sin(bb * 2 + t * 3) * 6, ey - bt2 * 60, 3.2 * (1 - bt2), 'rgba(13,104,104,' + (.8 - bt2 * .8) + ')'); }
+            x.fillStyle = 'rgba(100,116,139,.8)'; x.font = '12px system-ui'; x.fillText('gaz rozpuszcza się w wodzie', 262, 62);
+          } else for (var e = 0; e < 10; e++) { var te = (t * .5 + e * .1) % 1; kropka(ex + Math.sin(e * 2.1 + t * 2) * 12, (wyp < 0 ? j.y + 8 - te * 55 : j.y + j.h - 8 + te * 55), 2.2, 'rgba(13,104,104,' + (.9 - te * .8) + ')'); }
+        } else if (metoda === 'woda' && pr < 1) {
+          for (var bu = 0; bu < 5; bu++) { var bt3 = (t * .7 + bu * .2) % 1; kropka(ex + Math.sin(bu * 2 + t * 3) * 5, ey - bt3 * (ey - Math.max(j.y + 6, g.woda - 6 - (g.woda - j.y) * pr + 6)), 2.8, 'rgba(255,255,255,.9)'); }
+        }
+        x.fillStyle = 'rgba(100,116,139,.9)'; x.font = '12px system-ui'; x.textAlign = 'left';
+        x.fillStyle = GK; x.beginPath(); x.arc(24, 24, 3, 0, 6.2832); x.fill(); x.fillStyle = 'rgba(100,116,139,.9)'; x.fillText('gaz (bezbarwny, zaznaczony kropkami)', 34, 28);
+        x.fillStyle = PK; x.beginPath(); x.arc(24, 44, 3, 0, 6.2832); x.fill(); x.fillStyle = 'rgba(100,116,139,.9)'; x.fillText('powietrze', 34, 48);
+        if (!o.ok) { x.fillStyle = 'rgba(220,38,38,.9)'; x.font = '700 13px system-ui'; x.textAlign = 'center'; x.fillText('naczynie się nie napełnia', j.x + j.w / 2, j.y + j.h + 22); x.textAlign = 'left'; }
+        else if (pr >= 1) { x.fillStyle = 'rgba(21,128,61,.95)'; x.font = '700 13px system-ui'; x.textAlign = 'center'; x.fillText('naczynie pełne gazu', j.x + j.w / 2, j.y + j.h + 22); x.textAlign = 'left'; }
+      }
+      var h = {rysuj: rysuj, krok: function (dt) { S.t += dt; rysuj(); }};
+      ustaw();
+      if (typeof podepnij === 'function') podepnij(cv, h);
+    }
+  });
+})();
+
+/* KLOCEK: lancuch-przemian — schemat przemian: wzory substancji połączone strzałkami z literami reakcji.
+   Opcje (w lekcji): wezly="Ca,CaO,Ca(OH)2,CaCO3"  kolejne substancje; cyfry po literach zamieniane na indeksy dolne
+                     etyk="A,B,C"                  litery (lub krótkie etykiety) nad strzałkami, w kolejności
+                     zamkniety="1"                 obieg: ostatnia substancja wraca do pierwszej (układ kołowy)
+   Bez zamknięcia: układ liniowy. Strzałki i etykiety nie zawierają odpowiedzi — uczeń zapisuje równania sam. */
+(function () {
+  var IND = {'0': '₀', '1': '₁', '2': '₂', '3': '₃', '4': '₄', '5': '₅', '6': '₆', '7': '₇', '8': '₈', '9': '₉'};
+  function indeksy(s) {
+    return String(s).replace(/([A-Za-z\)])(\d+)/g, function (_, a, d) {
+      return a + d.split('').map(function (c) { return IND[c]; }).join('');
+    });
+  }
+  function przytnij(v) { return Math.max(0, Math.min(1, v)); }
+
+  // strzałka z grotem od (x1,y1) do (x2,y2); skrócona o zadany odstęp przy obu końcach
+  function strzalka(x, x1, y1, x2, y2, skr1, skr2) {
+    var dx = x2 - x1, dy = y2 - y1, d = Math.sqrt(dx * dx + dy * dy) || 1;
+    var ux = dx / d, uy = dy / d;
+    var ax = x1 + ux * skr1, ay = y1 + uy * skr1, bx = x2 - ux * skr2, by = y2 - uy * skr2;
+    x.beginPath(); x.moveTo(ax, ay); x.lineTo(bx, by); x.stroke();
+    var ang = Math.atan2(by - ay, bx - ax), g = 9;
+    x.beginPath(); x.moveTo(bx, by);
+    x.lineTo(bx - g * Math.cos(ang - 0.4), by - g * Math.sin(ang - 0.4));
+    x.lineTo(bx - g * Math.cos(ang + 0.4), by - g * Math.sin(ang + 0.4));
+    x.closePath(); x.fill();
+  }
+  // odstęp od środka prostokąta (bw × bh) do jego krawędzi w kierunku (ux, uy)
+  function wyjscie(ux, uy, bw, bh) {
+    var sx = Math.abs(ux) > 1e-6 ? (bw / 2) / Math.abs(ux) : Infinity;
+    var sy = Math.abs(uy) > 1e-6 ? (bh / 2) / Math.abs(uy) : Infinity;
+    return Math.min(sx, sy) + 5;
+  }
+
+  KLOCKI.def('lancuch-przemian', {
+    opis: 'Schemat przemian: wzory substancji połączone strzałkami z literami reakcji; układ liniowy albo obieg zamknięty.',
+    domyslne: {wezly: 'Ca,CaO,Ca(OH)2,CaCO3', etyk: 'A,B,C', zamkniety: 0, szer: 480, wys: 300},
+    stan0: function () { return {}; },
+    rysuj: function (x, w, h, s, t, opc) {
+      var wezly = String(opc.wezly || '').split(',').map(function (v) { return v.trim(); }).filter(Boolean).slice(0, 8);
+      var etyk = String(opc.etyk || '').split(',').map(function (v) { return v.trim(); });
+      var n = wezly.length;
+      x.fillStyle = '#ffffff'; x.fillRect(0, 0, w, h);
+      if (n < 2) return;
+      var BH = 36, cierne = Number(opc.zamkniety) === 1;
+      x.font = '16px system-ui, sans-serif'; x.textBaseline = 'middle'; x.textAlign = 'center';
+      var pos = [], bw;
+
+      if (cierne) {
+        // obieg: węzły na okręgu, pierwszy na górze
+        var cx = w / 2, cy = h / 2, R = Math.min(w, h) * 0.34;
+        bw = Math.min(118, w * 0.22);
+        for (var i = 0; i < n; i++) {
+          var a = -Math.PI / 2 + 2 * Math.PI * i / n;
+          pos.push({x: cx + R * Math.cos(a) * (w / h > 1.4 ? 1.25 : 1), y: cy + R * Math.sin(a)});
+        }
+      } else {
+        // łańcuch w jednym rzędzie
+        var gap = 34, maxBw = 120;
+        bw = Math.min(maxBw, (w - 30 - (n - 1) * gap) / n);
+        var total = n * bw + (n - 1) * gap, x0 = (w - total) / 2;
+        for (var j = 0; j < n; j++) pos.push({x: x0 + bw / 2 + j * (bw + gap), y: h * 0.45});
+      }
+
+      // strzałki i etykiety
+      var pary = cierne ? n : n - 1;
+      x.strokeStyle = '#334155'; x.fillStyle = '#334155'; x.lineWidth = 2;
+      for (var k = 0; k < pary; k++) {
+        var p1 = pos[k], p2 = pos[(k + 1) % n];
+        var dx = p2.x - p1.x, dy = p2.y - p1.y, d = Math.sqrt(dx * dx + dy * dy) || 1;
+        var ux = dx / d, uy = dy / d;
+        var s1 = wyjscie(ux, uy, bw, BH), s2 = wyjscie(-ux, -uy, bw, BH);
+        strzalka(x, p1.x, p1.y, p2.x, p2.y, s1, s2);
+        var mx = (p1.x + p2.x) / 2, my = (p1.y + p2.y) / 2;
+        var nx = cierne ? (mx - w / 2) : 0, ny = cierne ? (my - h / 2) : -22;
+        var nl = Math.sqrt(nx * nx + ny * ny) || 1;
+        var off = cierne ? 18 : 0;
+        var lx = mx + (nx / nl) * off, ly = my + (ny / nl) * off + (cierne ? 0 : 0);
+        if (!cierne) { lx = mx; ly = my - 22; }
+        x.fillStyle = '#b45309'; x.font = 'bold 15px system-ui, sans-serif';
+        x.fillText(etyk[k] || '', lx, ly);
+        x.fillStyle = '#334155'; x.font = '16px system-ui, sans-serif';
+      }
+
+      // węzły: prostokąty z wzorem
+      for (var q = 0; q < n; q++) {
+        var P = pos[q];
+        x.fillStyle = '#eef6ff'; x.strokeStyle = '#1e40af'; x.lineWidth = 1.5;
+        var bx = P.x - bw / 2, by = P.y - BH / 2;
+        x.beginPath();
+        if (x.roundRect) x.roundRect(bx, by, bw, BH, 8); else x.rect(bx, by, bw, BH);
+        x.fill(); x.stroke();
+        x.fillStyle = '#0f172a'; x.fillText(indeksy(wezly[q]), P.x, P.y);
+      }
+    }
+  });
+})();
+
+/* Klocek: palenie metalu w powietrzu. Każdy metal ma inną barwę płomienia i inne iskry:
+   magnez — jasny biały błysk i iskry, sód — żółty płomień, potas — fioletowy. */
+KLOCKI.def('palenie', {
+  opis: 'Palenie metalu: płomień i iskry w barwie zależnej od metalu.',
+  domyslne: {metal: 'Mg', szer: 480, wys: 300},
+  stan0: function () { return {}; },
+  rysuj: function (x, w, h, s, t, opc) {
+    var M = {
+      Mg: {nazwa: 'magnez — biały błysk', barwa: '#ffffff', otoczka: '#fde68a', iskry: 24, predk: 2.5},
+      Na: {nazwa: 'sód — żółty płomień', barwa: '#fde047', otoczka: '#f59e0b', iskry: 6, predk: 1},
+      K:  {nazwa: 'potas — fioletowy płomień', barwa: '#c4b5fd', otoczka: '#a78bfa', iskry: 4, predk: 1.2}
+    }[opc.metal] || {nazwa: opc.metal, barwa: '#fde047', otoczka: '#f59e0b', iskry: 6, predk: 1};
+    x.clearRect(0, 0, w, h);
+    var cx = w / 2, base = h * .85, H = h * .5;
+    var pulse = 1 + .08 * Math.sin(t * 9 * M.predk);
+    var g = x.createRadialGradient(cx, base - H * .5, 6, cx, base - H * .5, H * .9 * pulse);
+    g.addColorStop(0, M.barwa); g.addColorStop(.35, M.otoczka); g.addColorStop(1, M.otoczka.replace('#','').length==6 ? 'rgba(' + parseInt(M.otoczka.slice(1,3),16)+','+parseInt(M.otoczka.slice(3,5),16)+','+parseInt(M.otoczka.slice(5,7),16)+',0)' : 'rgba(0,0,0,0)');
+    x.globalAlpha = .9; x.fillStyle = g;
+    x.beginPath(); x.ellipse(cx, base - H * .5, H * .4 * pulse, H * .75 * pulse, 0, 0, 6.3); x.fill();
+    x.globalAlpha = 1;
+    x.fillStyle = '#334155'; x.fillRect(cx - 40, base, 80, h * .05);
+    x.fillStyle = '#e5e7eb'; x.strokeStyle = '#475569'; x.lineWidth = 1.5;
+    x.beginPath(); x.rect(cx - 16, base - 14, 32, 14); x.fill(); x.stroke();
+    for (var i = 0; i < M.iskry; i++) {
+      var p = (t * .7 * M.predk + i / M.iskry) % 1, sx = cx + Math.sin(i * 3.1) * 40 * p, sy = base - 14 - p * H * .95;
+      x.globalAlpha = 1 - p; x.fillStyle = i % 2 ? M.barwa : M.otoczka;
+      x.beginPath(); x.arc(sx, sy, 1.5 + (i % 3) * .5, 0, 6.3); x.fill();
+    }
+    x.globalAlpha = 1;
+    x.fillStyle = '#0f172a'; x.font = '600 15px sans-serif'; x.textAlign = 'center';
+    x.fillText(M.nazwa, cx, h * .08 + 12);
+  }
+});
+
+/* Klocek: próba płomieniowa. Płomień palnika najpierw ma barwę gazu (pomarańczową),
+   potem powoli przechodzi w barwę metalu (wzbudzone atomy wracają do stanu podstawowego). */
+function mieszajHex(a, b, k) {
+  var A = parseInt(a.slice(1), 16), B = parseInt(b.slice(1), 16), o = '#';
+  for (var sh = 16; sh >= 0; sh -= 8) {
+    var ca = (A >> sh) & 255, cb = (B >> sh) & 255;
+    o += ('0' + Math.round(ca + (cb - ca) * k).toString(16)).slice(-2);
+  }
+  return o;
+}
+KLOCKI.def('plomien', {
+  opis: 'Płomień palnika: barwa powoli zmienia się z pomarańczowej w barwę metalu.',
+  domyslne: {metal: 'Na', barwa: '#f59e0b', nazwa: 'Na — żółty', szer: 480, wys: 300},
+  stan0: function () { return {}; },
+  rysuj: function (x, w, h, s, t, opc) {
+    x.clearRect(0, 0, w, h);
+    var k = Math.min(1, t / 3), kol = mieszajHex('#fb923c', opc.barwa, k);
+    var cx = w / 2, base = h * .85, H = h * .55, fl = Math.sin(t * 6) * 4;
+    var g = x.createRadialGradient(cx, base - H * .4, 4, cx, base - H * .4, H * .7);
+    g.addColorStop(0, kol); g.addColorStop(1, 'rgba(' + parseInt(kol.slice(1,3),16)+','+parseInt(kol.slice(3,5),16)+','+parseInt(kol.slice(5,7),16)+',0)');
+    x.fillStyle = g; x.beginPath(); x.ellipse(cx, base - H * .4, H * .45, H * .7, 0, 0, 6.3); x.fill();
+    x.fillStyle = '#334155'; x.fillRect(cx - 14, base, 28, h * .08);
+    x.fillStyle = kol; x.beginPath(); x.moveTo(cx - 14, base);
+    x.quadraticCurveTo(cx - 20 + fl, base - H * .6, cx + fl, base - H);
+    x.quadraticCurveTo(cx + 20 - fl, base - H * .6, cx + 14, base); x.fill();
+    x.fillStyle = '#0f172a'; x.font = '600 16px sans-serif'; x.textAlign = 'center';
+    x.fillText(opc.nazwa, cx, h * .08 + 14);
+  }
+});
+
+/* KLOCKI układu okresowego i tlenków: uklad-okresowy-54 (tryby: okres/grupa, blok, e⁻ walencyjne, promień, elektroujemność, energia jonizacji, tlenki),
+   konstruktor-tlenku (W–K–S–K), detektor-tlenku (charakter, woda, kwas, zasada), reaktor-tlenku (przewiduj → sprawdź), trend-tlenkow.
+   Dane: engine/src/dane (pierwiastki.json, substancje.json) — skrót w DAT. Wymaga ui_klocki.js. */
+(function () {
+  var DAT = {"el":[[1,"H","Wodór",1.008,2.2,1,1,"nonmetal","s",[1],37,1312],[2,"He","Hel",4.003,null,18,1,"noble","s",[2],32,2372],[3,"Li","Lit",6.94,0.98,1,2,"metal","s",[2,1],128,520],[4,"Be","Beryl",9.012,1.57,2,2,"metal","s",[2,2],96,900],[5,"B","Bor",10.81,2.04,13,2,"metalloid","p",[2,3],84,801],[6,"C","Węgiel",12.011,2.55,14,2,"nonmetal","p",[2,4],76,1086],[7,"N","Azot",14.007,3.04,15,2,"nonmetal","p",[2,5],71,1402],[8,"O","Tlen",15.999,3.44,16,2,"nonmetal","p",[2,6],66,1314],[9,"F","Fluor",18.998,3.98,17,2,"halogen","p",[2,7],57,1681],[10,"Ne","Neon",20.18,null,18,2,"noble","p",[2,8],58,2081],[11,"Na","Sód",22.99,0.93,1,3,"metal","s",[2,8,1],166,496],[12,"Mg","Magnez",24.305,1.31,2,3,"metal","s",[2,8,2],141,738],[13,"Al","Glin",26.982,1.61,13,3,"metal","p",[2,8,3],121,578],[14,"Si","Krzem",28.085,1.9,14,3,"metalloid","p",[2,8,4],111,787],[15,"P","Fosfor",30.974,2.19,15,3,"nonmetal","p",[2,8,5],107,1012],[16,"S","Siarka",32.06,2.58,16,3,"nonmetal","p",[2,8,6],105,1000],[17,"Cl","Chlor",35.45,3.16,17,3,"halogen","p",[2,8,7],102,1251],[18,"Ar","Argon",39.948,null,18,3,"noble","p",[2,8,8],106,1521],[19,"K","Potas",39.098,0.82,1,4,"metal","s",[2,8,8,1],203,419],[20,"Ca","Wapń",40.078,1,2,4,"metal","s",[2,8,8,2],176,590],[21,"Sc","Skand",44.956,1.36,3,4,"metal","d",[2,8,9,2],170,633],[22,"Ti","Tytan",47.867,1.54,4,4,"metal","d",[2,8,10,2],160,659],[23,"V","Wanad",50.942,1.63,5,4,"metal","d",[2,8,11,2],153,651],[24,"Cr","Chrom",51.996,1.66,6,4,"metal","d",[2,8,13,1],139,653],[25,"Mn","Mangan",54.938,1.55,7,4,"metal","d",[2,8,13,2],161,717],[26,"Fe","Żelazo",55.845,1.83,8,4,"metal","d",[2,8,14,2],132,762],[27,"Co","Kobalt",58.933,1.88,9,4,"metal","d",[2,8,15,2],150,760],[28,"Ni","Nikiel",58.693,1.91,10,4,"metal","d",[2,8,16,2],124,737],[29,"Cu","Miedź",63.546,1.9,11,4,"metal","d",[2,8,18,1],132,745],[30,"Zn","Cynk",65.38,1.65,12,4,"metal","d",[2,8,18,2],122,906],[31,"Ga","Gal",69.723,1.81,13,4,"metal","p",[2,8,18,3],122,579],[32,"Ge","German",72.63,2.01,14,4,"metalloid","p",[2,8,18,4],120,762],[33,"As","Arsen",74.922,2.18,15,4,"metalloid","p",[2,8,18,5],119,944],[34,"Se","Selen",78.971,2.55,16,4,"nonmetal","p",[2,8,18,6],120,941],[35,"Br","Brom",79.904,2.96,17,4,"halogen","p",[2,8,18,7],120,1140],[36,"Kr","Krypton",83.798,3,18,4,"noble","p",[2,8,18,8],116,1351],[37,"Rb","Rubid",85.468,0.82,1,5,"metal","s",[2,8,18,8,1],220,403],[38,"Sr","Stront",87.62,0.95,2,5,"metal","s",[2,8,18,8,2],195,549],[39,"Y","Itr",88.906,1.22,3,5,"metal","d",[2,8,18,9,2],190,600],[40,"Zr","Cyrkon",91.224,1.33,4,5,"metal","d",[2,8,18,10,2],175,640],[41,"Nb","Niob",92.906,1.6,5,5,"metal","d",[2,8,18,12,1],164,652],[42,"Mo","Molibden",95.95,2.17,6,5,"metal","d",[2,8,18,13,1],154,684],[43,"Tc","Technet",98,1.9,7,5,"metal","d",[2,8,18,13,2],147,702],[44,"Ru","Ruten",101.07,2.2,8,5,"metal","d",[2,8,18,15,1],146,710],[45,"Rh","Rod",102.91,2.28,9,5,"metal","d",[2,8,18,16,1],142,720],[46,"Pd","Pallad",106.42,2.2,10,5,"metal","d",[2,8,18,18,0],139,804],[47,"Ag","Srebro",107.87,1.93,11,5,"metal","d",[2,8,18,18,1],145,731],[48,"Cd","Kadm",112.41,1.69,12,5,"metal","d",[2,8,18,18,2],144,868],[49,"In","Ind",114.82,1.78,13,5,"metal","p",[2,8,18,18,3],142,558],[50,"Sn","Cyna",118.71,1.96,14,5,"metal","p",[2,8,18,18,4],139,709],[51,"Sb","Antymon",121.76,2.05,15,5,"metalloid","p",[2,8,18,18,5],139,831],[52,"Te","Tellur",127.6,2.1,16,5,"metalloid","p",[2,8,18,18,6],138,869],[53,"I","Jod",126.9,2.66,17,5,"halogen","p",[2,8,18,18,7],139,1008],[54,"Xe","Ksenon",131.29,2.6,18,5,"noble","p",[2,8,18,18,8],140,1170]],"ox":{"Li2O":{"n":"tlenek litu","el":"Li","ox":1,"c":"zasadowy","b":"jonowy","w":"reaguje → LiOH","a":"tak (sól + woda)","z":"nie","col":"#f8fafc","cn":"biały","st":"s"},"Na2O":{"n":"tlenek sodu","el":"Na","ox":1,"c":"zasadowy","b":"jonowy","w":"reaguje → NaOH","a":"tak","z":"nie","col":"#f8fafc","cn":"biały","st":"s"},"K2O":{"n":"tlenek potasu","el":"K","ox":1,"c":"zasadowy","b":"jonowy","w":"reaguje → KOH","a":"tak","z":"nie","col":"#f8fafc","cn":"biały / jasnożółty","st":"s"},"MgO":{"n":"tlenek magnezu","el":"Mg","ox":2,"c":"zasadowy","b":"jonowy","w":"powoli i w niewielkim stopniu — Mg(OH)₂ trudno rozpuszczalny (fenoloftaleina słabo różowa)","a":"tak","z":"nie","col":"#f1f5f9","cn":"biały","st":"s"},"CaO":{"n":"tlenek wapnia (wapno palone)","el":"Ca","ox":2,"c":"zasadowy","b":"jonowy","w":"reaguje gwałtownie, egzotermicznie → Ca(OH)₂","a":"tak","z":"nie","col":"#e2e8f0","cn":"biały","st":"s"},"BeO":{"n":"tlenek berylu","el":"Be","ox":2,"c":"amfoteryczny","b":"jonowo-kowalencyjny","w":"nie","a":"tak","z":"tak (mocne zasady)","col":"#f8fafc","cn":"biały","st":"s"},"Al2O3":{"n":"tlenek glinu","el":"Al","ox":3,"c":"amfoteryczny","b":"jonowy (sieć)","w":"praktycznie nie","a":"tak","z":"tak — z mocnymi zasadami","col":"#f8fafc","cn":"biały","st":"s"},"ZnO":{"n":"tlenek cynku","el":"Zn","ox":2,"c":"amfoteryczny","b":"jonowo-kowalencyjny","w":"praktycznie nie","a":"tak","z":"tak — z mocnymi zasadami","col":"#f8fafc","cn":"biały (na gorąco żółty)","st":"s"},"FeO":{"n":"tlenek żelaza(II)","el":"Fe","ox":2,"c":"zasadowy","b":"jonowy","w":"praktycznie nie","a":"tak","z":"nie","col":"#1f2937","cn":"czarny","st":"s"},"Fe2O3":{"n":"tlenek żelaza(III)","el":"Fe","ox":3,"c":"zasadowy","b":"jonowy","w":"praktycznie nie","a":"tak","z":"nie (szkolnie)","col":"#9a3412","cn":"czerwonobrunatny (hematyt)","st":"s"},"Fe3O4":{"n":"tlenek żelaza(II,III)","el":"Fe","ox":null,"c":"mieszany","b":"jonowy","w":"nie","a":"tak","z":"nie","col":"#111827","cn":"czarny (magnetyt, magnetyczny)","st":"s"},"Cu2O":{"n":"tlenek miedzi(I)","el":"Cu","ox":1,"c":"zasadowy","b":"jonowy","w":"nie","a":"tak","z":"nie","col":"#b91c1c","cn":"czerwony (kupryt)","st":"s"},"CuO":{"n":"tlenek miedzi(II)","el":"Cu","ox":2,"c":"zasadowy","b":"jonowy","w":"praktycznie nie","a":"tak — roztwór niebieski (jony Cu²⁺)","z":"nie","col":"#1e293b","cn":"czarny","st":"s"},"Ag2O":{"n":"tlenek srebra(I)","el":"Ag","ox":1,"c":"zasadowy","b":"jonowy","w":"nie","a":"tak","z":"nie","col":"#3f3f46","cn":"brunatnoczarny","st":"s"},"HgO":{"n":"tlenek rtęci(II)","el":"Hg","ox":2,"c":"zasadowy","b":"jonowo-kowalencyjny","w":"nie","a":"tak","z":"nie","col":"#dc2626","cn":"czerwony lub żółty (zależnie od otrzymywania)","st":"s"},"PbO":{"n":"tlenek ołowiu(II)","el":"Pb","ox":2,"c":"amfoteryczny","b":"jonowo-kowalencyjny","w":"nie","a":"tak","z":"tak","col":"#eab308","cn":"żółty (masykot)","st":"s"},"MnO":{"n":"tlenek manganu(II)","el":"Mn","ox":2,"c":"zasadowy","b":"jonowy","w":"nie","a":"tak","z":"nie","col":"#4d7c0f","cn":"szarozielony","st":"s"},"MnO2":{"n":"tlenek manganu(IV)","el":"Mn","ox":4,"c":"amfoteryczny","b":"jonowy","w":"nie","a":"tak (redoks)","z":"słabo","col":"#3f3f46","cn":"brunatnoczarny","st":"s"},"CrO":{"n":"tlenek chromu(II)","el":"Cr","ox":2,"c":"zasadowy","b":"jonowy","w":"nie","a":"tak","z":"nie","col":"#111827","cn":"czarny","st":"s"},"Cr2O3":{"n":"tlenek chromu(III)","el":"Cr","ox":3,"c":"amfoteryczny","b":"jonowy","w":"nie","a":"tak","z":"tak","col":"#166534","cn":"zielony (pigment)","st":"s"},"CrO3":{"n":"tlenek chromu(VI)","el":"Cr","ox":6,"c":"kwasowy","b":"kowalencyjny","w":"reaguje → H₂CrO₄","a":"nie","z":"tak","col":"#b91c1c","cn":"ciemnoczerwony","st":"s"},"Mn2O7":{"n":"tlenek manganu(VII)","el":"Mn","ox":7,"c":"kwasowy","b":"kowalencyjny","w":"reaguje → HMnO₄","a":"nie","z":"tak","col":"#4c1d95","cn":"ciemnozielona oleista ciecz","st":"l"},"TiO2":{"n":"tlenek tytanu(IV) (biel tytanowa)","el":"Ti","ox":4,"c":"amfoteryczny","b":"jonowy","w":"nie","a":"bardzo słabo","z":"bardzo słabo","col":"#f8fafc","cn":"biały","st":"s"},"B2O3":{"n":"tlenek boru","el":"B","ox":3,"c":"kwasowy","b":"kowalencyjny","w":"reaguje powoli → H₃BO₃","a":"nie","z":"tak","col":"#f8fafc","cn":"bezbarwny / biały","st":"s"},"CO2":{"n":"tlenek węgla(IV)","el":"C","ox":4,"c":"kwasowy","b":"kowalencyjny","w":"reaguje słabo → H₂CO₃ (nietrwały)","a":"nie","z":"tak — produkt zależy od stosunku molowego","col":null,"cn":"bezbarwny gaz","st":"g"},"CO":{"n":"tlenek węgla(II) (czad)","el":"C","ox":2,"c":"obojętny","b":"kowalencyjny","w":"nie (model szkolny)","a":"nie","z":"nie","col":null,"cn":"bezbarwny, bezwonny gaz","st":"g"},"SiO2":{"n":"tlenek krzemu(IV) (krzemionka)","el":"Si","ox":4,"c":"kwasowy","b":"kowalencyjna sieć","w":"praktycznie nie","a":"tylko z HF","z":"tak — z mocnymi zasadami, zwykle po ogrzaniu (Δ)","col":"#f8fafc","cn":"bezbarwny (kwarc), biały (piasek)","st":"s"},"N2O":{"n":"tlenek azotu(I)","el":"N","ox":1,"c":"obojętny","b":"kowalencyjny","w":"nie (szkolnie)","a":"nie","z":"nie","col":null,"cn":"bezbarwny gaz","st":"g"},"NO":{"n":"tlenek azotu(II)","el":"N","ox":2,"c":"obojętny","b":"kowalencyjny","w":"nie (szkolnie)","a":"nie","z":"nie","col":null,"cn":"bezbarwny gaz","st":"g"},"N2O3":{"n":"tlenek azotu(III)","el":"N","ox":3,"c":"kwasowy","b":"kowalencyjny","w":"reaguje → HNO₂","a":"nie","z":"tak","col":"#1d4ed8","cn":"niebieska ciecz (w niskiej T)","st":"l"},"NO2":{"n":"tlenek azotu(IV)","el":"N","ox":4,"c":"kwasowy","b":"kowalencyjny","w":"reaguje (dysproporcjonowanie) → HNO₃ + NO","a":"nie","z":"tak","col":"#b45309","cn":"brunatny gaz","st":"g"},"N2O5":{"n":"tlenek azotu(V)","el":"N","ox":5,"c":"kwasowy","b":"kowalencyjny","w":"reaguje → HNO₃","a":"nie","z":"tak","col":"#f8fafc","cn":"bezbarwne kryształy","st":"s"},"P2O5":{"n":"tlenek fosforu(V) (zapis empiryczny)","el":"P","ox":5,"c":"kwasowy","b":"kowalencyjny","w":"reaguje gwałtownie → H₃PO₄","a":"nie","z":"tak","col":"#f8fafc","cn":"biały","st":"s"},"P4O10":{"n":"tlenek fosforu(V) (wzór cząsteczkowy)","el":"P","ox":5,"c":"kwasowy","b":"kowalencyjny","w":"reaguje → H₃PO₄","a":"nie","z":"tak","col":"#f8fafc","cn":"biały","st":"s"},"SO2":{"n":"tlenek siarki(IV)","el":"S","ox":4,"c":"kwasowy","b":"kowalencyjny","w":"reaguje → H₂SO₃","a":"nie","z":"tak","col":null,"cn":"bezbarwny gaz o duszącym zapachu","st":"g"},"SO3":{"n":"tlenek siarki(VI)","el":"S","ox":6,"c":"kwasowy","b":"kowalencyjny","w":"reaguje gwałtownie → H₂SO₄","a":"nie","z":"tak","col":"#f8fafc","cn":"biały (ciało stałe) / bezbarwna ciecz","st":"s"},"Cl2O7":{"n":"tlenek chloru(VII)","el":"Cl","ox":7,"c":"kwasowy","b":"kowalencyjny","w":"reaguje → HClO₄","a":"nie","z":"tak","col":null,"cn":"bezbarwna oleista ciecz","st":"l"},"H2O":{"n":"woda (tlenek wodoru)","el":"H","ox":1,"c":"obojętny","b":"kowalencyjny","w":"—","a":"—","z":"—","col":null,"cn":"bezbarwna ciecz","st":"l"}},"states":{"Li":[1],"Na":[1],"K":[1],"Be":[2],"Mg":[2],"Ca":[2],"Ba":[2],"Al":[3],"Zn":[2],"Fe":[2,3],"Cu":[1,2],"Ag":[1],"Hg":[2],"Pb":[2,4],"Mn":[2,4,7],"Cr":[2,3,6],"Ti":[4],"B":[3],"C":[2,4],"Si":[4],"N":[1,2,3,4,5],"P":[3,5],"S":[4,6],"Cl":[1,7],"H":[1]}};
+  var EL = {}; DAT.el.forEach(function (r) { EL[r[1]] = {z: r[0], s: r[1], n: r[2], m: r[3], en: r[4], g: r[5], p: r[6], t: r[7], b: r[8], sh: r[9], r: r[10], ie: r[11]}; });
+  [['Ba', 'Bar', 56], ['Hg', 'Rtęć', 80], ['Pb', 'Ołów', 82]].forEach(function (x) { EL[x[0]] = {z: x[2], s: x[0], n: x[1]}; });   // tylko nazwy (poza zakresem 1–54)
+  [['Ba', 'Bar', 56], ['Hg', 'Rtęć', 80], ['Pb', 'Ołów', 82]].forEach(function (x) { EL[x[0]] = {z: x[2], s: x[0], n: x[1]}; });   // tylko nazwy (poza zakresem 1–54)
+  var ORD = DAT.el.map(function (r) { return r[1]; });
+  var SUB = '₀₁₂₃₄₅₆₇₈₉', SUP = '⁰¹²³⁴⁵⁶⁷⁸⁹', RZ = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII'];
+  function pf(f) { return String(f).replace(/(\d)/g, function (c) { return SUB[c]; }); }
+  function gcd(a, b) { return b ? gcd(b, a % b) : a; }
+  function box(host) { host.style.display = 'block'; var a = document.createElement('div'), b = document.createElement('div'), c = document.createElement('div'); a.style.cssText = 'margin-bottom:6px'; c.style.cssText = 'font-size:14px;margin-top:8px;line-height:1.55'; host.append(a, b, c); return [a, b, c]; }
+  function wal(e) { if (e.s === 'He') return 2; if (e.g <= 2) return e.g; if (e.g >= 13) return e.g - 10; return null; }
+  var CCOL = {zasadowy: '#2e7d4f', kwasowy: '#2b5e9c', amfoteryczny: '#6b3fa0', 'obojętny': '#64748b', mieszany: '#b06f1c'};
+  var CLTXT = {zasadowy: '#dcfce7', kwasowy: '#dbeafe', amfoteryczny: '#ede9fe', 'obojętny': '#e2e8f0', mieszany: '#ffedd5'};
+  function oxEl(s) { return Object.keys(DAT.ox).filter(function (k) { return DAT.ox[k].el === s; }); }
+  function glowny(s) { var L = oxEl(s).filter(function (k) { return k !== 'P2O5'; }); if (!L.length) return null; return L.sort(function (a, b) { return (DAT.ox[a].ox || 0) - (DAT.ox[b].ox || 0); })[Math.floor((L.length - 1) / 2)]; }
+
+  function bohr(e, W) {
+    var sh = e.sh || [e.z], C = W / 2, s = '<svg viewBox="0 0 ' + W + ' ' + W + '" width="' + W + '" style="max-width:100%" role="img" aria-label="Model atomu ' + e.n + ': powłoki ' + sh.join(', ') + '">';
+    s += '<circle cx="' + C + '" cy="' + C + '" r="' + (9 + e.z * .08) + '" fill="#d9534f"/><text x="' + C + '" y="' + (C + 4) + '" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">' + e.z + '+</text>';
+    sh.forEach(function (n, i) { var R = 26 + i * (W / 2 - 34) / Math.max(1, sh.length - 1 || 1); if (sh.length === 1) R = 36; s += '<circle cx="' + C + '" cy="' + C + '" r="' + R.toFixed(1) + '" fill="none" stroke="#9aa6b6" stroke-dasharray="3 3"/>'; for (var k = 0; k < n; k++) { var a = k / n * 6.2832 - 1.5708 + i * .4; s += '<circle cx="' + (C + R * Math.cos(a)).toFixed(1) + '" cy="' + (C + R * Math.sin(a)).toFixed(1) + '" r="3.6" fill="' + (i === sh.length - 1 ? '#b85f00' : '#2f8a55') + '"/>'; } });
+    return s + '</svg>';
+  }
+
+  /* ---------- układ okresowy 1–54 ---------- */
+  var MODES = [['adres', 'okres i grupa'], ['blok', 'blok s / p / d'], ['wal', 'e⁻ walencyjne'], ['r', 'promień'], ['en', 'elektroujemność'], ['ie', 'energia jonizacji'], ['tlenki', 'tlenki']];
+  KLOCKI.def('uklad-okresowy-54', {
+    opis: 'Układ okresowy pierwiastków 1–54: komórki kolorowane wg okresu i grupy, bloku, elektronów walencyjnych, promienia, elektroujemności, energii jonizacji lub charakteru tlenku; kliknięcie pokazuje kartę pierwiastka z modelem atomu.',
+    domyslne: {tryb: 'adres', wybrany: 'Na', tryby: 'adres,blok,wal,r,en,ie,tlenki'},
+    html: function (host, opc) {
+      var U = KLOCKI.ui, p = box(host), tr = opc.tryb, sel = EL[opc.wybrany] ? opc.wybrany : 'Na', dozw = String(opc.tryby).split(',');
+      MODES.forEach(function (m) { if (dozw.indexOf(m[0]) >= 0) p[0].appendChild(U.btn(m[1], function () { tr = m[0]; rys(); })); });
+      var grid = document.createElement('div'); grid.style.cssText = 'display:grid;grid-template-columns:repeat(18,minmax(0,1fr));gap:2px;max-width:720px'; p[1].appendChild(grid);
+      var leg = document.createElement('div'); leg.style.cssText = 'font-size:12.5px;margin:6px 0;opacity:.85'; p[1].appendChild(leg); var card = document.createElement('div'); card.style.cssText = 'display:flex;flex-wrap:wrap;gap:14px;align-items:flex-start;border:1px solid rgba(127,127,127,.35);border-radius:10px;padding:10px 12px'; p[1].appendChild(card);
+      var rng = function (k) { var v = ORD.map(function (s) { return EL[s][k]; }).filter(function (x) { return x != null; }); return [Math.min.apply(0, v), Math.max.apply(0, v)]; };
+      function kol(e) {
+        var s = EL[sel];
+        if (tr === 'adres') return (e.p === s.p && e.g === s.g) ? '#f59e0b' : e.p === s.p ? '#fde68a' : e.g === s.g ? '#bae6fd' : 'var(--surface-soft,#f1f5f9)';
+        if (tr === 'blok') return {s: '#fecaca', p: '#bfdbfe', d: '#fde68a'}[e.b] || '#e2e8f0';
+        if (tr === 'wal') { var w = wal(e); return w == null ? '#e2e8f0' : 'hsl(' + (210 - w * 20) + ',70%,' + (88 - w * 5) + '%)'; }
+        if (tr === 'tlenki') { var o = glowny(e.s); return o ? CLTXT[DAT.ox[o].c] || '#e2e8f0' : '#f1f5f9'; }
+        var k = tr === 'r' ? 'r' : tr === 'en' ? 'en' : 'ie', v = e[k]; if (v == null) return '#e2e8f0'; var R = rng(k), f = (v - R[0]) / (R[1] - R[0]); return 'hsl(215,' + (30 + f * 50) + '%,' + (92 - f * 52) + '%)';
+      }
+      function rys() {
+        [].forEach.call(p[0].children, function (b, i) { var m = MODES.filter(function (x) { return dozw.indexOf(x[0]) >= 0; })[i]; U.zaznacz(b, m && m[0] === tr); });
+        var h = '', s = EL[sel];
+        for (var per = 1; per <= 5; per++) for (var g = 1; g <= 18; g++) { var e = ORD.map(function (x) { return EL[x]; }).filter(function (x) { return x.p === per && x.g === g; })[0]; if (!e) { h += '<div></div>'; continue; } h += '<button type="button" data-s="' + e.s + '" title="' + e.n + '" style="aspect-ratio:1;min-width:0;padding:0;border:' + (e.s === sel ? '2px solid #0f172a' : '1px solid rgba(100,116,139,.4)') + ';border-radius:5px;background:' + kol(e) + ';color:#0f172a;font:700 11px system-ui;cursor:pointer">' + e.s + '</button>'; }
+        grid.innerHTML = h;
+        var L = {adres: 'Pomarańczowy: wybrany pierwiastek; żółty: ten sam <b>okres</b> (wiersz = liczba powłok); niebieski: ta sama <b>grupa</b> (kolumna = podobna budowa zewnętrznej powłoki).', blok: 'Blok = typ podpowłoki obsadzanej na końcu: <b>s</b> (grupy 1–2 i He), <b>p</b> (13–18), <b>d</b> (3–12).', wal: 'Elektrony walencyjne w grupach głównych: grupy 1–2 → numer grupy, 13–18 → numer grupy − 10 (He: 2). Szare — metale przejściowe.', r: 'Promień kowalencyjny [pm]: rośnie w dół grupy, maleje w prawo okresu. Ciemniej = większy.', en: 'Elektroujemność (Pauling): rośnie w prawo i w górę. Ciemniej = większa.', ie: 'I energia jonizacji [kJ/mol]: rośnie w prawo i w górę. Ciemniej = większa.', tlenki: 'Charakter typowego tlenku pierwiastka: <span style="background:#dcfce7;padding:0 4px">zasadowy</span> <span style="background:#dbeafe;padding:0 4px">kwasowy</span> <span style="background:#ede9fe;padding:0 4px">amfoteryczny</span> <span style="background:#e2e8f0;padding:0 4px">obojętny</span>.'};
+        leg.innerHTML = L[tr];
+        var w = wal(s), ox = oxEl(s.s), st = DAT.states[s.s];
+        card.innerHTML = '<div>' + bohr(s, 150) + '</div><div style="flex:1;min-width:220px"><div style="font-size:20px;font-weight:700">' + s.s + ' — ' + s.n.toLowerCase() + '</div>Z = ' + s.z + ' · masa ' + String(s.m).replace('.', ',') + ' u · okres ' + s.p + ' · grupa ' + s.g + ' · blok ' + s.b + '<br>Powłoki: ' + (s.sh || []).join(' · ') + (w != null ? ' → <b>' + w + '</b> e⁻ walencyjne' : ' (metal przejściowy)') +
+          '<br>Elektroujemność: ' + (s.en != null ? String(s.en).replace('.', ',') : '—') + ' · promień kow.: ' + (s.r || '—') + ' pm · I energia jonizacji: ' + (s.ie || '—') + ' kJ/mol' +
+          (tr === 'tlenki' ? '<br><b>Tlenki:</b> ' + (ox.length ? ox.map(function (k) { var o = DAT.ox[k]; return pf(k) + ' (' + (o.ox != null ? RZ[o.ox] || o.ox : '—') + ', ' + o.c + ')'; }).join('; ') : 'brak w bazie') + (st ? '<br>Typowe stopnie utlenienia w tlenkach: ' + st.map(function (x) { return RZ[x]; }).join(', ') : '') : '') + '</div>';
+      }
+      grid.addEventListener('click', function (e) { var b = e.target.closest('button[data-s]'); if (b) { sel = b.dataset.s; rys(); } });
+      rys();
+    }
+  });
+
+  /* ---------- konstruktor wzoru tlenku (W–K–S–K) ---------- */
+  var KON = Object.keys(DAT.states).filter(function (s) { return s !== 'H'; });
+  KLOCKI.def('konstruktor-tlenku', {
+    opis: 'Konstruktor wzoru tlenku metodą W–K–S–K: wartościowość pierwiastka i tlenu, krzyżowanie, skracanie, kontrola sumy stopni utlenienia; można też sprawdzić własny wzór.',
+    domyslne: {el: 'Al'},
+    html: function (host, opc) {
+      var U = KLOCKI.ui, p = box(host), s = KON.indexOf(opc.el) >= 0 ? opc.el : 'Al', n = DAT.states[s][0];
+      var sel = document.createElement('select'); sel.style.cssText = 'font:inherit;margin:0 6px'; KON.forEach(function (x) { sel.add(new Option(x + ' — ' + EL[x].n.toLowerCase(), x)); }); sel.value = s;
+      var sw = document.createElement('select'); sw.style.cssText = 'font:inherit;margin:0 6px';
+      var inp = document.createElement('input'); inp.placeholder = 'twój wzór, np. Al2O3'; inp.style.cssText = 'font:inherit;padding:4px 8px;width:160px;border:1px solid var(--border-strong,#94a3b8);border-radius:6px;background:transparent;color:inherit;margin:0 6px';
+      p[0].append('Pierwiastek: ', sel, ' stopień utlenienia: ', sw, U.btn('Sprawdź mój wzór', function () { spr(); }), inp);
+      function wsw() { sw.innerHTML = ''; DAT.states[s].forEach(function (x) { sw.add(new Option(RZ[x] + ' (' + x + ')', x)); }); sw.value = n = DAT.states[s][0]; }
+      function rys() {
+        var x = 2 / gcd(n, 2), y = n / gcd(n, 2), kr = n + '', f = s + (x > 1 ? SUB[x] : '') + 'O' + (y > 1 ? SUB[y] : ''), fk = s + (n > 1 ? SUB[n] : '') + 'O' + (2 > 1 ? '₂' : ''), mn = gcd(n, 2), nazwa = 'tlenek ' + EL[s].n.toLowerCase() + (DAT.states[s].length > 1 ? '(' + RZ[n] + ')' : '');
+        var nm = Object.keys(DAT.ox).filter(function (k) { return DAT.ox[k].el === s && DAT.ox[k].ox === n && k !== 'P4O10'; })[0];
+        p[1].innerHTML = '<div style="display:grid;gap:6px;font-size:15px"><div><b>W</b> — wartościowość: ' + s + ' <b>' + RZ[n] + '</b>, tlen <b>II</b></div><div><b>K</b> — krzyżowanie: indeks przy ' + s + ' = 2, indeks przy O = ' + n + ' → <b>' + s + SUB[2] + 'O' + (n > 1 ? SUB[n] : '') + '</b></div><div><b>S</b> — skracanie: NWD(2; ' + n + ') = ' + mn + (mn > 1 ? ' → dzielimy indeksy przez ' + mn : ' → nie ma czego skracać') + ' → <b style="font-size:20px">' + pf(nm || f) + '</b></div><div><b>K</b> — kontrola: suma stopni utlenienia = ' + x + '·(+' + n + ') + ' + y + '·(−2) = <b>' + (x * n - y * 2) + '</b> ' + (x * n - y * 2 === 0 ? '✓' : '✗') + '</div></div>';
+        p[2].innerHTML = 'Nazwa: <b>' + (nm ? DAT.ox[nm].n : nazwa) + '</b>.' + (nm ? ' Charakter: ' + DAT.ox[nm].c + '.' : '') + (s === 'C' && n === 4 ? ' Uwaga: w CO₂ i innych tlenkach tlen ma stopień −II; w nadtlenkach (np. Na₂O₂) jest −I — to nie są tlenki.' : '');
+        sw.value = n;
+      }
+      function spr() { var v = inp.value.replace(/\s/g, '').replace(/[₀-₉]/g, function (c) { return SUB.indexOf(c); }); var x = 2 / gcd(n, 2), y = n / gcd(n, 2), dob = s + (x > 1 ? x : '') + 'O' + (y > 1 ? y : ''); p[2].innerHTML = (v === dob ? '<b style="color:#16a34a">Dobrze:</b> ' + pf(dob) + '.' : '<b style="color:#dc2626">Nie zgadza się.</b> Spróbuj: krzyżuj wartościowości (' + s + ' ' + RZ[n] + ', O II), potem skróć indeksy.'); }
+      sel.onchange = function () { s = sel.value; wsw(); rys(); }; sw.onchange = function () { n = +sw.value; rys(); }; wsw(); sw.value = n; rys();
+    }
+  });
+
+  /* ---------- detektor charakteru tlenku ---------- */
+  KLOCKI.def('detektor-tlenku', {
+    opis: 'Detektor tlenku: dla wybranego tlenku z bazy 38 tlenków odpowiada na trzy pytania — charakter, reakcja z wodą, reakcja z kwasem i z zasadą — i pokazuje zlewkę ze wskaźnikiem uniwersalnym.',
+    domyslne: {tlenek: 'SO2'},
+    html: function (host, opc) {
+      var U = KLOCKI.ui, p = box(host), k = DAT.ox[opc.tlenek] ? opc.tlenek : 'SO2', sel = document.createElement('select'); sel.style.cssText = 'font:inherit;margin:0 6px';
+      Object.keys(DAT.ox).forEach(function (x) { sel.add(new Option(pf(x) + ' — ' + DAT.ox[x].n, x)); }); sel.value = k; p[0].append('Tlenek: ', sel);
+      function rys() {
+        var o = DAT.ox[k], reaguje = /^(reaguje|powoli)/.test(o.w), pH = !reaguje ? 7 : o.c === 'kwasowy' ? 3 : o.c === 'zasadowy' ? 12 : 7, wk = pH < 6 ? '#ef4444' : pH > 9 ? '#7c3aed' : '#22c55e', woda = !reaguje ? '#e0f2fe' : wk;
+        p[1].innerHTML = '<div style="display:flex;flex-wrap:wrap;gap:18px;align-items:center"><svg viewBox="0 0 150 170" width="140" style="width:140px;max-width:100%" role="img" aria-label="Zlewka ze wskaźnikiem uniwersalnym po dodaniu tlenku ' + o.n + ' do wody"><path d="M30 20 V135 Q30 150 45 150 H105 Q120 150 120 135 V20" fill="' + woda + '" fill-opacity=".75" stroke="#64748b" stroke-width="3"/><rect x="32" y="20" width="86" height="22" fill="var(--surface,#fff)"/><text x="75" y="166" text-anchor="middle" font-size="11" fill="currentColor">wskaźnik uniwersalny</text></svg>' +
+          '<div style="flex:1;min-width:240px"><div style="font-size:22px;font-weight:700">' + pf(k) + ' <span style="font-size:14px;font-weight:400">' + o.n + '</span></div><div style="margin:4px 0"><span style="background:' + (CLTXT[o.c] || '#e2e8f0') + ';border:1px solid ' + (CCOL[o.c] || '#64748b') + ';border-radius:999px;padding:2px 10px;font-weight:700">' + o.c + '</span> · wiązanie: ' + o.b + ' · ' + o.cn + ' (' + ({s: 'ciało stałe', l: 'ciecz', g: 'gaz'}[o.st] || o.st) + ')</div></div></div>';
+        p[2].innerHTML = '<b>1. Charakter:</b> ' + o.c + '.<br><b>2. Z wodą:</b> ' + o.w + (reaguje ? ' — wskaźnik pokazuje odczyn ' + (pH < 6 ? 'kwasowy' : pH > 9 ? 'zasadowy' : 'obojętny') + '.' : '.') + '<br><b>3. Z kwasem:</b> ' + o.a + '. <b>Z zasadą:</b> ' + o.z + '.<br><span style="opacity:.8">Charakter, reakcja z wodą i reakcje z kwasem i zasadą to trzy osobne sprawdzenia: tlenek może mieć charakter zasadowy i nie reagować z wodą (np. CuO).</span>';
+      }
+      sel.onchange = function () { k = sel.value; rys(); }; rys();
+    }
+  });
+
+  /* ---------- reaktor: przewiduj, potem sprawdź ---------- */
+  KLOCKI.def('reaktor-tlenku', {
+    opis: 'Reaktor przewidywania: wybierasz tlenek i odczynnik (woda, kwas, zasada), zapisujesz przewidywanie, a model pokazuje, czy reakcja zachodzi, wraz z uzasadnieniem z charakteru tlenku.',
+    domyslne: {tlenek: 'CaO'},
+    html: function (host, opc) {
+      var U = KLOCKI.ui, p = box(host), k = DAT.ox[opc.tlenek] ? opc.tlenek : 'CaO', rea = 'w', pred = null, sel = document.createElement('select'); sel.style.cssText = 'font:inherit;margin:0 6px';
+      Object.keys(DAT.ox).forEach(function (x) { sel.add(new Option(pf(x) + ' — ' + DAT.ox[x].n, x)); }); sel.value = k;
+      var RE = [['w', 'woda'], ['a', 'kwas'], ['z', 'zasada (mocna)']], bts = [];
+      p[0].append('Tlenek: ', sel, ' odczynnik: '); RE.forEach(function (r) { var b = U.chip(r[1], r[0] === rea, function () { rea = r[0]; pred = null; rys(); }); bts.push(b); p[0].appendChild(b); });
+      function zachodzi(txt) { return /^(tak|reaguje|powoli|mn)/.test(txt) && !/^(nie|praktycznie nie|bardzo słabo)/.test(txt); }
+      function rys() {
+        var o = DAT.ox[k]; RE.forEach(function (r, i) { U.zaznacz(bts[i], r[0] === rea); });
+        var txt = o[rea], z = zachodzi(txt), nazwa = RE.filter(function (r) { return r[0] === rea; })[0][1];
+        p[1].innerHTML = '<div style="font-size:18px;margin:6px 0"><b>' + pf(k) + '</b> (' + o.c + ') + ' + nazwa + ' → ?</div>' +
+          (pred === null ? '<div>Przewidywanie (zanim zobaczysz wynik): czy reakcja zachodzi?</div>' : '');
+        p[1].appendChild(document.createElement('div'));
+        var bar = p[1].lastChild; if (pred === null) { bar.appendChild(U.btn('Zachodzi', function () { pred = true; rys(); })); bar.appendChild(U.btn('Nie zachodzi', function () { pred = false; rys(); })); }
+        p[2].innerHTML = pred === null ? 'Wskazówka: oprzyj się na charakterze tlenku (' + o.c + '): tlenki zasadowe reagują z kwasami, kwasowe z zasadami, amfoteryczne z jednymi i drugimi; z wodą reagują tylko te, które dają rozpuszczalny wodorotlenek lub kwas.' :
+          (pred === z ? '<b style="color:#16a34a">Przewidywanie trafne.</b> ' : '<b style="color:#dc2626">Przewidywanie chybione.</b> ') + 'Wynik: ' + (z ? '<b>reakcja zachodzi</b>' : '<b>brak reakcji</b>') + ' — ' + txt + '.<br>Sprawdź jeszcze: bilans atomów i ładunku oraz produkty (sól + woda z kwasem lub zasadą; wodorotlenek albo kwas z wodą).';
+      }
+      sel.onchange = function () { k = sel.value; pred = null; rys(); }; rys();
+    }
+  });
+
+  /* ---------- trend charakteru tlenków ---------- */
+  var TREND = {'okres 3': ['Na2O', 'MgO', 'Al2O3', 'SiO2', 'P4O10', 'SO3', 'Cl2O7'], 'chrom': ['CrO', 'Cr2O3', 'CrO3'], 'mangan': ['MnO', 'MnO2', 'Mn2O7']};
+  KLOCKI.def('trend-tlenkow', {
+    opis: 'Trend charakteru tlenków: w 3. okresie od zasadowych przez amfoteryczny do kwasowych oraz dla Cr i Mn — rosnący stopień utlenienia zwiększa charakter kwasowy.',
+    domyslne: {seria: 'okres 3'},
+    html: function (host, opc) {
+      var U = KLOCKI.ui, p = box(host), seria = TREND[opc.seria] ? opc.seria : 'okres 3', sel = null;
+      Object.keys(TREND).forEach(function (s) { p[0].appendChild(U.btn(s === 'okres 3' ? 'okres 3 (Na → Cl)' : s === 'chrom' ? 'chrom (II → VI)' : 'mangan (II → VII)', function () { seria = s; sel = null; rys(); })); });
+      function rys() {
+        [].forEach.call(p[0].children, function (b, i) { U.zaznacz(b, Object.keys(TREND)[i] === seria); });
+        var L = TREND[seria]; p[1].innerHTML = '<div style="display:flex;gap:4px;align-items:stretch">' + L.map(function (k) { var o = DAT.ox[k]; return '<button type="button" data-k="' + k + '" style="flex:1;min-width:0;border:' + (k === sel ? '3px solid #0f172a' : '1px solid rgba(100,116,139,.5)') + ';background:' + (CLTXT[o.c] || '#e2e8f0') + ';border-radius:8px;padding:8px 2px;cursor:pointer;color:#0f172a;font:inherit"><div style="font-weight:700">' + pf(k) + '</div><div style="font-size:11px">' + (o.ox != null ? RZ[o.ox] : '') + '</div><div style="font-size:11px;font-weight:700;color:' + (CCOL[o.c] || '#475569') + '">' + o.c + '</div></button>'; }).join('') + '</div><div style="font-size:12.5px;margin-top:4px;opacity:.85">← zasadowy · amfoteryczny · kwasowy →</div>';
+        p[2].innerHTML = (sel ? '<b>' + pf(sel) + '</b> (' + DAT.ox[sel].n + '): ' + DAT.ox[sel].c + '. Z wodą: ' + DAT.ox[sel].w + '.<br>' : 'Kliknij tlenek, aby zobaczyć szczegóły.<br>') + (seria === 'okres 3' ? 'W okresie: od lewej do prawej maleje metaliczność i rośnie elektroujemność — tlenki zmieniają się od zasadowych przez amfoteryczny (Al₂O₃) do kwasowych.' : 'Ten sam metal: im <b>wyższy stopień utlenienia</b>, tym bardziej kwasowy charakter tlenku (wiązanie staje się bardziej kowalencyjne).');
+        [].forEach.call(p[1].querySelectorAll('button[data-k]'), function (b) { b.onclick = function () { sel = b.dataset.k; rys(); }; });
+      }
+      rys();
+    }
+  });
+
+})();
+
+(function(){document.querySelectorAll('[data-klocek]').forEach(function(f){var o={};try{o=JSON.parse(f.getAttribute('data-opt')||'{}')}catch(e){}Object.keys(o).forEach(function(k){if(o[k]!==''&&!isNaN(Number(o[k])))o[k]=Number(o[k])});KLOCKI.montuj(f.querySelector('.lk-fig-body'),f.getAttribute('data-klocek'),o)})})();
 /* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
    postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
 (function(){

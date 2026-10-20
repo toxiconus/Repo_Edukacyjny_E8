@@ -32,7 +32,7 @@ Priorytet: biologia LKO etap szkolny, środa 21.10.2026, 9:00, 60 min. Nie pisa�
 - **H-D4 (starsze wersje BIO) — ZROBIONE 2026-10-20:** porównano 40 starych plików z nowymi (wg pogrubionych terminów). Prawie wszystko już jest. Jedyne braki: czasy w planach powtórek (L032, L044, L050) — ODRZUCONE, bo obowiązuje zasada „bez planów czasowych”; tagi `[konkurs]`/`[master]` — metadane, nie treść. Nic nie dopisywano. Stare pliki zostają w `biologia/niewykorzystane/starsze_wersje_lekcji/`.
 
 ## Droższe — Sonnet (merytoryka, decyzje)
-- [ ] S-S1. **Przenieść modele wymagające dużego silnika do klocków** (decyzja: silnik modułowy). Lista w CLAUDE.md (sekcja „Silnik chemii”); po jednym modelu: klocek w `engine/src/klocki/`, wpis w `manifest.json`, potem `python3 narzedzia/pakiety_okladki.py` i sprawdzenie, że lekcja nie ma już przycisku zastępczego.
+- [x] S-S1. **Przenieść modele wymagające dużego silnika do klocków** (decyzja: silnik modułowy). Lista w CLAUDE.md (sekcja „Silnik chemii”); po jednym modelu: klocek w `engine/src/klocki/`, wpis w `manifest.json`, potem `python3 narzedzia/pakiety_okladki.py` i sprawdzenie, że lekcja nie ma już przycisku zastępczego.
 - [ ] S-A. **REV02: tury 2–4 odpowiedzi Perplexity** (tura 1 wprowadzona 2026-10-20: tkanki 6.1, ryby, pasożyty, bezkręgowce, D+). Odrzucone z powodem w `WERYFIKACJA.md`. PRIORYTET przed środą.
 - [ ] S-F. Brakujące lekcje etapu II: **B2h Układ krążenia**, **B2i Układ odpornościowy**, B2j arkusz próbny — plan w `biologia/plany/PLAN_BRAKUJACE_LEKCJE.md`; przygotować paczki dla zewnętrznego AI.
 - [ ] S-B. Weryfikacja liczb REV01 (próg 0,01% makroelementów, ~60% wody, 2× energia z tłuszczu) i kluczy §12a.
@@ -41,5 +41,6 @@ Priorytet: biologia LKO etap szkolny, środa 21.10.2026, 9:00, 60 min. Nie pisa�
 - [ ] S-E. Gałęzie zdalne z niepowiązaną historią — decyzja użytkownika (wymaga „scal”).
 
 ## Zrobione
+- 2026-10-20: S-S1 — wszystkie modele chemii przeniesione na klocki (tabela rozpuszczalności, równania jonowe, osady, izotopy, reguła krzyżowa, układ okresowy 1–54, tlenki, elektrostatyka, F01–F03, jony w wodzie, profil energii, gra klasyfikacyjna); `lite.py` nie zgłasza modeli „tylko w pełnej wersji”; 0 błędów JS we wszystkich 74 lekcjach.
 - 2026-10-20: rysunki BIO (bio-rysunki.js): ryba, mikroskop, jajo ptaka, jajo-porownanie, tkanki, stawonogi, komórki, wykres, cykl (6 cykli) — wstawione w REV01/REV02; wstawianie do innych lekcji = H-G.
 - 2026-10-19/20: pakiety dla Perplexity (`eksport/out/bio_etap1/`, poza gitem); REV01 v1.2 wprowadzona (§1a Chemizm życia, §12a zadania LKO); push i scalenie `main` na polecenie.

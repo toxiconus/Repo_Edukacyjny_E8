@@ -275,3 +275,4 @@
 - 2026-10-20: S-S1 krok 4: klocki regula-krzyzowa (R03A), f02-czastki-v01 (F02), f04-nuklid-v01 (F04) przywrócone z 460a00c (utracone w scaleniu c0eda9c) + mostek model_widok.js; f02-magnes-fes-v01 też dostępny.
 - 2026-10-20: S-S1 krok 5: klocki ui_klocki, profil-energii, gra-klasyfikacja, dysocjacja-vs-jonizacja, przeniesienie-protonu, tester-przewodnictwa; n05-wodorki/trendy (z_n05_wodorki).
 - 2026-10-20: S-S1 krok 6: klocki elektrostatyki (6), chemia_wstep (lancuch-poziomow, zlewka-predykcja, mapa-mysli, czasteczki-3d, destylacja) w F01–F03.
+- 2026-10-20: S-S1 ZAKOŃCZONE: okresowy_tlenki.js (układ okresowy 1–54, tlenki); wszystkie modele chemii na klockach, 0 błędów JS w 74 lekcjach; spalanie metanu = istniejący palnik-gazowy.

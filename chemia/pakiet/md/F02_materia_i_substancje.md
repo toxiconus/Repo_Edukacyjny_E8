@@ -154,7 +154,7 @@ Właściwości związku **nie są sumą** właściwości pierwiastków. Wodór j
 
 Pierwiastek i związek klasyfikują **skład**; atom i cząsteczka opisują **cząstki**. Zdanie „tlen to atom” miesza poziomy: tlen to pierwiastek, a jego najmniejsza cząstka to atom O.
 
-@model molecule3d-merged | Model 3D: O₂, O₃, H₂O, CO₂ | jedna substancja prosta, dwie odmiany tlenu i dwa związki — ile rodzajów atomów widzisz?
+@klocek czasteczki-3d {mol="O₂,O₃,H₂O,CO₂"} | Model 3D: O₂, O₃, H₂O, CO₂
 @opis Trójwymiarowe modele cząsteczek: O₂ (2 atomy tlenu), O₃ (3 atomy tlenu), H₂O (2 atomy wodoru + 1 atom tlenu), CO₂ (1 atom węgla + 2 atomy tlenu); atomy pokazane jako kulki w kolorach pierwiastków. Wniosek: O₂ i O₃ to dwie substancje proste tego samego pierwiastka, a H₂O i CO₂ to związki — decyduje liczba rodzajów atomów, nie liczba atomów.
 
 ## 3 | Mieszanina [[basic:E8]] {#mieszanina}
@@ -247,7 +247,7 @@ Przykład: *woda z piaskiem* → mieszanina niejednorodna → dwie fazy, piasek 
 | O₂, O₃ | substancje proste | jeden pierwiastek; dwie różne substancje |
 | woda z lodem | substancja czysta | jedna substancja w dwóch fazach |
 
-@model f02-czastki-v01 | Model cząsteczkowy: substancja czysta czy mieszanina? | policz rodzaje drobin, atomów i fazy, potem sklasyfikuj
+@klocek f02-czastki-v01 | Model cząsteczkowy: substancja czysta czy mieszanina?
 @opis Prostokątne naczynie z kolorowymi kółkami — atomami (legenda pod spodem: O czerwony, H biały, N niebieski, Na fioletowy, Cl zielony, Fe szary, Ar pomarańczowy, He żółty, C ciemnoszary). Osiem próbek po kolei: żelazo (atomy Fe ułożone regularnie), tlen (pary O₂), woda (H₂O), woda z lodem (górna faza z uporządkowanymi H₂O, dolna z chaotycznymi), powietrze (N₂, O₂, Ar), roztwór soli (H₂O z jonami Na⁺ i Cl⁻), woda z olejem (dwie warstwy oddzielone przerywaną linią), hel z argonem. Uczeń wybiera: substancja prosta, związek, mieszanina jednorodna lub niejednorodna; odpowiedź jest oceniana z uzasadnieniem i licznikiem. Wniosek: o czystości decyduje liczba rodzajów drobin, o pierwiastku lub związku — liczba rodzajów atomów w drobinie, o jednorodności — liczba faz; woda z lodem to dwie fazy, ale substancja czysta.
 
 ## 6 | Symbol i wzór — pierwszy kontakt [[basic:E8]] {#symbol-wzor}

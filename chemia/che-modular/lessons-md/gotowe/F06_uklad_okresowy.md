@@ -351,7 +351,7 @@ Zadanie: porównaj Na i Na⁺ oraz Cl i Cl⁻. (Odp.: Na⁺ < Na; Cl⁻ > Cl.)
 Ogólnie **rośnie w dół i w lewo** układu: metale leżące nisko i po lewej najłatwiej oddają elektrony walencyjne. To trend jakościowy, nie mechaniczny „generator odpowiedzi”.
 :::
 
-@model periodic-54 | Układ okresowy 1–54 — okres i grupa, bloki, elektrony walencyjne, trendy | koloruj wg okresu i grupy, bloku, liczby elektronów walencyjnych, promienia, elektroujemności, energii jonizacji; kliknij pierwiastek — adres → elektrony → przewidywanie, tlenki i model atomu
+@klocek uklad-okresowy-54 {tryby="adres,blok,wal,r,en,ie" wybrany="Cl"} | Układ okresowy 1–54 — okres i grupa, bloki, elektrony walencyjne, trendy
 @opis Układ okresowy pierwiastków 1–54, którego komórki można kolorować według okresu i grupy, bloku (s, p, d), liczby elektronów walencyjnych, promienia atomowego, elektroujemności i energii jonizacji. Wniosek: właściwości zmieniają się regularnie — wzdłuż okresu i w dół grupy (trendy okresowe).
 
 ::: karta understand | Zadania predykcyjne — z samego położenia

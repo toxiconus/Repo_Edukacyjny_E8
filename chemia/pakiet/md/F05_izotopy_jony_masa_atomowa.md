@@ -181,7 +181,7 @@ Izotop, jon i atom innego pierwiastka odpowiadają na **różne pytania**. Nie w
 ³⁵Cl⁻ jest **jednocześnie** konkretnym nuklidem chloru, izotopem chloru (względem ³⁷Cl) i anionem. „Izotop” mówi o **jądrze** (neutrony), „jon” — o **bilansie elektronów**. To dwie niezależne cechy: ³⁷Cl⁻ ma 17 p⁺, 20 n⁰ i 18 e⁻.
 :::
 
-@model f05-izotopy-v01 | Izotop, jon czy inny pierwiastek? Konstruktor atomu i masa atomowa | dodawaj i zabieraj p, n, e — model nazywa zmianę; niżej średnia ważona izotopów
+@klocek izotopy | Izotop, jon czy inny pierwiastek? Konstruktor atomu i masa atomowa
 @opis Konstruktor atomu (ten sam rysunek co w atlasie): w środku jądro z czerwonych protonów i szarych neutronów — neutron ponad najczęstszy izotop ma pomarańczową obwódkę; wokół powłoki K, L, M (model szkolny 2, 8, 8) z podpisami „K · 2/2” itd. — elektrony wewnętrzne zielone, walencyjne pomarańczowe; w rogu lupa z powiększonym jądrem; przyciski + i − przy protonach, neutronach i elektronach. Gdy dodajesz lub zabierasz cząstki, model nazywa zmianę: inna liczba neutronów — izotop, inna liczba elektronów — jon, inna liczba protonów — inny pierwiastek. Niżej obliczenie masy atomowej jako średniej ważonej mas izotopów. Wniosek: o tym, jaki to pierwiastek, decyduje wyłącznie liczba protonów.
 
 > W modelu zmień najpierw tylko neutrony, potem tylko elektrony, na końcu protony. Za każdym razem przeczytaj: co się zmieniło, a co zostało?

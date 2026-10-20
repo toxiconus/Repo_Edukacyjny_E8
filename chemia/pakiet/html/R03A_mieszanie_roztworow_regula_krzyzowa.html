@@ -635,6 +635,70 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 .rownanie{margin:12px 0;padding:12px 16px;border-radius:var(--r-md);background:var(--surface-soft);border:1px solid var(--border);font:600 17px/1.6 Inter,system-ui,sans-serif;text-align:center;overflow-x:auto;white-space:nowrap}
 .rownanie small{display:block;font-size:12px;font-weight:500;color:var(--text-muted);white-space:normal}
 
+/* Styl klocków laboratoryjnych (palniki, probówki, układ okresowy) — dobrany do motywu che:
+   jasna karta lekcji (--surface), akcent --accent, tekst --text. Scena z płótnem zostaje ciemna
+   (płomienie i poświaty wyglądają na ciemnym tle), reszta jak w sekcjach lekcji. */
+:root{--lab:#0e2326;--lab-tekst:var(--text,#1a2332);--lab-cisza:var(--text-muted,#8892a0);--lab-linia:var(--border,#e5e9ee)}
+.lab{background:var(--surface,#fff);color:var(--text,#1a2332);border:1px solid var(--border,#e5e9ee);border-radius:var(--r-lg,14px);padding:16px;box-shadow:var(--sh-sm,none);font-family:var(--tekst,Inter,system-ui,sans-serif)}
+.lab-pasek{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between;margin-bottom:12px}
+.lab-pasek .btn{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+.lab-cisza{color:var(--text-muted,#8892a0);font-size:14px}
+.btn{appearance:none;cursor:pointer;border:1px solid var(--accent,#0d6868);background:var(--accent,#0d6868);color:#fff;border-radius:var(--r-md,10px);padding:8px 14px;font:600 13px var(--tekst,Inter,sans-serif)}
+.btn.jasny{background:var(--surface,#fff);color:var(--accent,#0d6868)}
+.btn:hover{filter:brightness(1.08)}
+.btn:focus-visible{outline:2px solid var(--accent,#0d6868);outline-offset:2px}
+.btn[disabled]{opacity:.4;cursor:not-allowed}
+.stacje{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.st{display:flex;flex-direction:column;background:none;border:none;padding:0;min-width:0}
+.st-opis{margin-top:auto;display:flex;flex-direction:column;justify-content:flex-end}
+.st canvas,.rack canvas{display:block;width:100%;height:auto;cursor:pointer;background:var(--lab,#0e2326);border-radius:var(--r-md,10px);margin:6px 0 4px}
+.rack{margin:0 auto}
+.rack-kol{display:grid;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));gap:8px}
+.rack-ce{padding:0 6px;min-width:0;display:flex;flex-direction:column}
+.rack-ce.st-opis{justify-content:flex-end}
+.rack .wyb-gr{display:none}
+.rack .rown{font-size:14px}
+.rack-ce .btn,.st .btn{padding:6px 10px;font-size:12px}
+.st-opis{font-size:14px;color:var(--text,#1a2332)}
+.st-opis p{margin:0 0 6px}
+.rown{font:600 15px var(--naglowek,Inter,sans-serif);color:var(--text,#1a2332)}
+.obs{font-size:14px;color:var(--text-soft,#4a5568)}
+.meta{font-size:12.5px;color:var(--text-muted,#8892a0);display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-bottom:8px}
+.meta .pasek{background:var(--border,#e5e9ee);width:90px;height:8px;display:inline-block;vertical-align:middle;margin-left:6px;border-radius:99px;overflow:hidden}
+.meta .pasek i{display:block;height:100%;background:var(--accent,#0d6868)}
+.ostrz{color:var(--c-error,#b83a45);font-size:13px}
+.zak{display:flex;gap:10px;align-items:center;background:var(--c-warn-bg,#fcf4e6);border:1px solid var(--c-warn-line,#eed8a8);border-radius:var(--r-md,10px);padding:8px 10px;font-size:13px;line-height:1.35;margin:8px 0;color:var(--text,#1a2332)}
+.zak-ik{display:flex;gap:4px;flex:none}
+.el .tr{position:absolute;right:2px;bottom:2px;display:flex}
+.sz{position:relative}
+.sz .tr{position:absolute;top:2px;right:2px;display:flex}
+.tr2{display:flex;font-style:normal;margin-left:auto}
+.kol{display:flex;align-items:center;gap:10px;font-size:15px;color:var(--text,#1a2332)}
+.sw{width:20px;height:20px;border-radius:50%;flex:none;box-shadow:0 0 12px var(--glow,transparent)}
+.sw.pusty{border:2px dashed var(--border-strong,#cdd5dd)}
+.wyb-sym{position:relative;min-width:0}
+.wyb-sym>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:6px;font:700 15px var(--naglowek,Inter,sans-serif);color:var(--text,#1a2332);padding:4px 8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-sm,6px);background:var(--surface,#fff)}
+.wyb-sym>summary::-webkit-details-marker{display:none}
+.wyb-tri{display:inline-block;font-size:11px;color:var(--accent,#0d6868);transition:transform .15s}
+.wyb-sym[open] .wyb-tri{transform:rotate(90deg)}
+.wyb-lista{display:grid;gap:6px;margin:6px 0 8px;padding:8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-md,10px);background:var(--surface,#fff)}
+.wyb-g{display:block;font-size:11px;color:var(--text-muted,#8892a0);margin-bottom:3px}
+.wyb-sy{appearance:none;cursor:pointer;border:1px solid var(--border-strong,#cdd5dd);background:var(--surface-soft,#f6f8fa);color:var(--text,#1a2332);border-radius:var(--r-sm,6px);padding:4px 9px;margin:0 4px 4px 0;font:600 13px var(--naglowek,Inter,sans-serif)}
+.wyb-sy[aria-pressed="true"]{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+/* telefon: kilka stojaków obok siebie — węższy tekst, łamanie długich nazw */
+.kol{min-width:0}
+.kol b{overflow-wrap:anywhere;min-width:0}
+.st-opis{font-size:13px}
+.kol{font-size:14px}
+.stacje{gap:8px}
+.rack-kol{gap:6px}
+@media (max-width:480px){.st-opis .obs{font-size:12.5px}.st .btn,.rack-ce .btn{padding:5px 8px;font-size:12px}}
+.seria-przyciski{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+.seria-btn[aria-pressed="false"]{background:transparent;color:var(--accent,#0d6868)}
+.seria-btn[aria-pressed="true"]{background:var(--accent,#0d6868);color:#fff}
+.seria-opis{margin:0 0 10px;font-size:14px;color:var(--lab-cisza,#8892a0)}
+
+
 
 /* nawigacja.css — hamburger, zakładka, animowany nagłówek (lekcje CHE i „lite”). */
 /* pływający hamburger i wysuwany spis treści (lekcja.js) */
@@ -820,7 +884,7 @@ m₁ · 20 + m₂ · 5 = (m₁ + m₂) · 10 → m₁ · 20 − m₁ · 10 = m�
 <span class="card-label">W skrócie — co znaczą „części”?</span>
 <p>Reguła krzyżowa daje <strong>stosunek mas</strong>, nie gramy. Stosunek 1 : 2 to równie dobrze 10 g i 20 g, 100 g i 200 g, 1 kg i 2 kg — każda para da 10%. Gramy pojawią się dopiero, gdy znasz <strong>masę całości</strong> (wtedy dzielisz ją na sumę części) albo <strong>masę jednego składnika</strong> (wtedy liczysz, ile gramów to jedna część). Pomylenie części z gramami to najczęstszy błąd w tym dziale.</p>
 </div>
-<div class="che-lesson-viz-ref lk-offline"><button type="button" disabled><b>Reguła krzyżowa i huśtawka — wpisz stężenia, zobacz masy</b><span>przykłady: 20% + 5%, rozcieńczanie wodą, dosypywanie substancji, hydrat — model dostępny w pełnej wersji lekcji (z silnikiem CHE)</span></button></div>
+<figure class="lk-fig" data-klocek="regula-krzyzowa" data-opt="{}"><div class="lk-fig-body"></div><figcaption>Reguła krzyżowa i huśtawka — wpisz stężenia, zobacz masy</figcaption></figure>
 <!-- OPIS: Interaktywny schemat: u góry pola na Cp₁ (mocniejszy), Cp₂ (słabszy, woda = 0%), Cp₃ (docelowy) i masę końcową oraz przyciski gotowych przykładów. Pod nimi krzyż: po lewej stężenia składników, pośrodku stężenie docelowe, dwie przecinające się kreski (czerwona i niebieska) prowadzą do różnic obliczonych po przekątnych, a przy każdej różnicy napis, do którego roztworu należy. Niżej „huśtawka”: pozioma deska od Cp₂ do Cp₁ z pomarańczową podpórką w Cp₃ i dwoma słupkami mas — wyższy słupek stoi na końcu bliższym podpórce. Pod rysunkiem: stosunek mas skrócony, masy w gramach i kontrola bilansem (ms obu składników, Cp mieszaniny). Gdy Cp₃ nie leży między składnikami, model wyświetla ostrzeżenie zamiast wyniku. Wniosek: masy roztworów są odwrotnie proporcjonalne do odległości ich stężeń od stężenia docelowego, a wynik zawsze da się sprawdzić bilansem substancji. -->
 </section>
 <section id="przyklady">
@@ -1121,6 +1185,300 @@ Przykład: 6,2 g Na₂O rozpuszczono w 93,8 g wody. Masy: Na₂O = 62 u, 2NaOH =
 <footer class="footer"><p><strong>CHEMIA R03A v1.0</strong> · Mieszanie roztworów i reguła krzyżowa · 2026</p></footer>
 </main>
 <script>
+/* KLOCKI — lekkie komponenty wielokrotnego użytku dla lekcji (bez silnika).
+   Każdy klocek: KLOCKI.def(nazwa, {opis, dane, rysuj(canvas, stan, t)}) — rejestr,
+   KLOCKI.montuj(host, nazwa, opcje) — tworzy canvas, autostart gdy widoczny,
+   klik zatrzymuje/wznawia. Lekcja wymienia klocki w manifeście (klocki/manifest). */
+(function (g) {
+  var reg = {};
+  /* JEDEN zegar animacji dla wszystkich klocków: jedna pętla rAF, funkcje fn(now, dt); pętla stoi, gdy nikt nie gra. */
+  var zegar = (function () {
+    var fns = [], id = 0, ost = 0;
+    function petla(now) {
+      var dt = Math.min(0.05, (now - ost) / 1000); ost = now;
+      fns.slice().forEach(function (f) { try { f(now, dt); } catch (e) { } });
+      id = fns.length ? requestAnimationFrame(petla) : 0;
+    }
+    return {
+      dodaj: function (f) { if (fns.indexOf(f) < 0) fns.push(f); if (!id) { ost = performance.now(); id = requestAnimationFrame(petla); } },
+      usun: function (f) { var i = fns.indexOf(f); if (i >= 0) fns.splice(i, 1); },
+      liczba: function () { return fns.length; }
+    };
+  })();
+  var RM_ = !!(g.matchMedia && g.matchMedia('(prefers-reduced-motion: reduce)').matches);   // użytkownik prosi o brak animacji: bez autostartu
+  function def(nazwa, k) { reg[nazwa] = k; }
+  function montuj(host, nazwa, opc) {
+    var k = reg[nazwa];
+    if (!k) { host.textContent = 'Brak klocka: ' + nazwa; return null; }
+    opc = Object.assign({}, k.domyslne || {}, opc || {});
+    if (k.html) { host.innerHTML = ''; k.html(host, opc); return null; }
+    var c = document.createElement('canvas');
+    c.width = opc.szer || 480; c.height = opc.wys || 300;
+    c.style.width = '100%'; c.style.maxWidth = c.width + 'px'; c.style.height = 'auto';
+    c.setAttribute('role', 'img');
+    c.setAttribute('aria-label', (opc.opis || k.opis || nazwa));
+    host.innerHTML = ''; host.appendChild(c);
+    var stan = Object.assign({}, k.stan0 ? k.stan0(opc) : {}, {opc: opc});
+    var ctx = c.getContext('2d'), t0 = performance.now(), grane = false;   // start() dodaje klocek do wspólnego zegara (IO albo od razu)
+    function klatka(now) {
+      try { k.rysuj(ctx, c.width, c.height, stan, (now - t0) / 1000, opc); } catch (e) { }
+    }
+    function start() { if (!grane) { grane = true; t0 = performance.now() - (stan._t || 0) * 1000; zegar.dodaj(klatka); } }
+    function stop() { if (grane) { stan._t = (performance.now() - t0) / 1000; } grane = false; zegar.usun(klatka); }
+    c.addEventListener('click', function () { grane ? stop() : start(); });
+    if ('IntersectionObserver' in g && !RM_) {
+      var io = new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? start() : stop(); }); });
+      io.observe(c);
+    } else if (!RM_) { start(); }
+    k.rysuj(ctx, c.width, c.height, stan, 0, opc);
+    return {stop: stop, start: start, stan: stan, canvas: c};
+  }
+  g.KLOCKI = {def: def, montuj: montuj, zegar: zegar, nazwy: function () { return Object.keys(reg); }};
+})(window);
+
+/* KLOCKI — wspólne narzędzia (kolejność: pierwsze w manifeście). Wyciągnięte z animacji P01. */
+/* ---------------------------- narzędzia ---------------------------- */
+var RM = !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
+function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+function sm(v) { v = clamp(v, 0, 1); return v * v * (3 - 2 * v); }
+function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+function hex2rgb(h) { var n = parseInt(h.slice(1), 16); return [n >> 16 & 255, n >> 8 & 255, n & 255]; }
+function rgba(h, a) { var c = hex2rgb(h); return 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ',' + a + ')'; }
+function mixHex(a, b, k) {
+  var A = hex2rgb(a), B = hex2rgb(b);
+  return '#' + [0, 1, 2].map(function (i) { return ('0' + Math.round(A[i] + (B[i] - A[i]) * k).toString(16)).slice(-2); }).join('');
+}
+function rr(x, a, b, w, h, r) {
+  x.beginPath(); x.moveTo(a + r, b); x.arcTo(a + w, b, a + w, b + h, r); x.arcTo(a + w, b + h, a, b + h, r);
+  x.arcTo(a, b + h, a, b, r); x.arcTo(a, b, a + w, b, r); x.closePath();
+}
+
+
+/* ---------------------------- pętla animacji ---------------------------- */
+// jeden zegar: KLOCKI.zegar (klocki.js); uchwyt h ma metodę krok(dt)
+function wlacz(h) { if (!h._z) h._z = function (now, dt) { h.krok(dt); }; KLOCKI.zegar.dodaj(h._z); }
+function wylacz(h) { if (h._z) KLOCKI.zegar.usun(h._z); }
+function podepnij(canvas, h) {
+  h.rysuj();
+  if ('IntersectionObserver' in window && !RM) {
+    new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? wlacz(h) : wylacz(h); }); }, {threshold: .05}).observe(canvas);
+  } else if (!RM) wlacz(h);
+}
+
+
+function parsujListe(txt, dozwolone, domyslne) {
+  var l = String(txt || '').split(',').map(function (s) { return s.trim(); }).filter(function (s) { return dozwolone[s]; });
+  return (l.length ? l : domyslne).slice(0, 3);
+}
+
+
+/* Wybór pierwiastka: tylko symbole, a znacznik ▸ pokazuje, że lista się rozwija (bez pełnych nazw obok). */
+function wyborSymbole(grupy, start, onChange, etykieta) {
+  var box = el('details', 'wyb-sym'), sum = el('summary', null), cur = el('span', 'wyb-cur', start);
+  sum.appendChild(cur); sum.appendChild(el('span', 'wyb-tri', '▸')); box.appendChild(sum);
+  var lst = el('div', 'wyb-lista'), btns = [];
+  lst.setAttribute('role', 'listbox'); lst.setAttribute('aria-label', etykieta || 'Wybór pierwiastka');
+  var NAG = {1: 'Litowce', 2: 'Berylowce', 3: 'Tlenki berylowców'};
+  Object.keys(grupy).forEach(function (g) {
+    var w = el('div', 'wyb-grupa'); w.appendChild(el('span', 'wyb-g', NAG[g] || ('grupa ' + g)));
+    grupy[g].forEach(function (s) {
+      var b = el('button', 'wyb-sy', s); b.type = 'button'; b.setAttribute('data-sym', s);
+      b.setAttribute('title', cap(NAZ[SYM.indexOf(s)] || s));
+      b.addEventListener('click', function () { ustaw(s); box.open = false; onChange(s); });
+      w.appendChild(b); btns.push(b);
+    });
+    lst.appendChild(w);
+  });
+  box.appendChild(lst);
+  function ustaw(s) { cur.textContent = s; btns.forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-sym') === s ? 'true' : 'false'); }); }
+  ustaw(start);
+  return {el: box, ustaw: ustaw};
+}
+
+/* KLOCEK: krzywe-rozpuszczalnosci — krzywe rozpuszczalności (g substancji na 100 g wody) od temperatury.
+   Dane: tabele A i B z LKO-KRZYWE (wartości tablicowe). Inne substancje dodawać w słowniku DANE.
+   Opcje (w lekcji): subst="KNO3,NaCl"  lista kluczy z DANE (pierwsza = substancja, dla której liczone są strefy)
+                     T="60"             temperatura odczytu, 20–80 °C
+                     m="120"            (opcjonalnie) masa rozpuszczonej substancji na 100 g wody — punkt (T, m)
+                     strefy="0"         wyłącza opisy stref (domyślnie włączone)
+   Strefy (zgodnie z lekcją): pod krzywą = nienasycony, na krzywej = nasycony, nad krzywą = nasycony z osadem. */
+(function () {
+  var DANE = {
+    'KNO3':    {nazwa: 'KNO₃',     kolor: '#dc2626', pkt: [[20, 32], [40, 62], [60, 110], [80, 167]]},
+    'KNO3-R03': {nazwa: 'KNO₃',   kolor: '#dc2626', pkt: [[0, 13], [20, 32], [40, 64], [60, 110], [80, 169]]},   // wartości jak w tabeli lekcji R03
+    'NaCl-R03': {nazwa: 'NaCl',    kolor: '#2563eb', pkt: [[0, 36], [20, 36], [40, 37], [60, 37], [80, 38]]},
+    'NaCl':    {nazwa: 'NaCl',     kolor: '#2563eb', pkt: [[20, 36], [40, 36.5], [60, 37], [80, 38]]},
+    'NH4Cl':   {nazwa: 'NH₄Cl',    kolor: '#16a34a', pkt: [[20, 37], [40, 46], [60, 55], [80, 66]]},
+    'Ca(OH)2': {nazwa: 'Ca(OH)₂',  kolor: '#9333ea', pkt: [[20, 0.16]]}
+  };
+  var TMAX = 100, MMAX = 200;
+
+  function interp(pkt, T) {
+    if (pkt.length === 1) return pkt[0][0] === T ? pkt[0][1] : null;
+    if (T < pkt[0][0] || T > pkt[pkt.length - 1][0]) return null;
+    for (var i = 0; i < pkt.length - 1; i++) {
+      var a = pkt[i], b = pkt[i + 1];
+      if (T >= a[0] && T <= b[0]) return a[1] + (b[1] - a[1]) * (T - a[0]) / (b[0] - a[0]);
+    }
+    return null;
+  }
+
+  KLOCKI.def('krzywe-rozpuszczalnosci', {
+    opis: 'Krzywe rozpuszczalności od temperatury (g na 100 g wody); przy wybranej T trzy strefy: nienasycony, nasycony, nasycony z osadem; opcjonalny punkt (T, m).',
+    domyslne: {subst: 'KNO3,NaCl,NH4Cl', T: 40, m: null, strefy: 1, szer: 480, wys: 300},
+    stan0: function () { return {}; },
+    rysuj: function (x, w, h, s, t, opc) {
+      var L = 60, R = w - 14, TOP = 14, B = h - 42;
+      var px = function (T) { return L + (T / TMAX) * (R - L); };
+      var py = function (m) { return B - (m / MMAX) * (B - TOP); };
+      var keys = String(opc.subst || 'KNO3').split(',').map(function (k) { return k.trim(); })
+        .filter(function (k) { return DANE[k]; });
+      var T = Number(opc.T); if (isNaN(T)) T = 40; T = Math.max(20, Math.min(80, T));
+      var m = (opc.m === null || opc.m === undefined || opc.m === '' || isNaN(Number(opc.m))) ? null : Number(opc.m);
+
+      x.fillStyle = '#ffffff'; x.fillRect(0, 0, w, h);
+      x.font = '12px system-ui, sans-serif'; x.textBaseline = 'middle';
+
+      // siatka i podziałka
+      x.strokeStyle = '#e5e7eb'; x.lineWidth = 1;
+      for (var T0 = 0; T0 <= TMAX; T0 += 20) {
+        x.beginPath(); x.moveTo(px(T0), TOP); x.lineTo(px(T0), B); x.stroke();
+        x.fillStyle = '#374151'; x.textAlign = 'center'; x.fillText(String(T0), px(T0), B + 14);
+      }
+      for (var M0 = 0; M0 <= MMAX; M0 += 40) {
+        x.beginPath(); x.moveTo(L, py(M0)); x.lineTo(R, py(M0)); x.stroke();
+        x.fillStyle = '#374151'; x.textAlign = 'right'; x.fillText(String(M0), L - 6, py(M0));
+      }
+
+      // osie z podpisami
+      x.strokeStyle = '#111827'; x.lineWidth = 1.5;
+      x.beginPath(); x.moveTo(L, TOP); x.lineTo(L, B); x.lineTo(R, B); x.stroke();
+      x.fillStyle = '#111827'; x.textAlign = 'center';
+      x.fillText('temperatura [°C]', (L + R) / 2, h - 12);
+      x.save(); x.translate(14, (TOP + B) / 2); x.rotate(-Math.PI / 2);
+      x.fillText('g substancji / 100 g wody', 0, 0); x.restore();
+
+      // pionowa linia dla wybranej temperatury
+      x.setLineDash([5, 4]); x.strokeStyle = '#6b7280'; x.lineWidth = 1;
+      x.beginPath(); x.moveTo(px(T), TOP); x.lineTo(px(T), B); x.stroke(); x.setLineDash([]);
+
+      // krzywe i punkty z tabeli
+      keys.forEach(function (k) {
+        var d = DANE[k];
+        x.strokeStyle = d.kolor; x.fillStyle = d.kolor; x.lineWidth = 2.5;
+        if (d.pkt.length > 1) {
+          x.beginPath();
+          d.pkt.forEach(function (p, i) { if (i) x.lineTo(px(p[0]), py(p[1])); else x.moveTo(px(p[0]), py(p[1])); });
+          x.stroke();
+        }
+        d.pkt.forEach(function (p) { x.beginPath(); x.arc(px(p[0]), py(p[1]), 3, 0, 2 * Math.PI); x.fill(); });
+        var c = interp(d.pkt, T);
+        if (c !== null) { x.beginPath(); x.arc(px(T), py(c), 5, 0, 2 * Math.PI); x.fill(); }
+      });
+
+      // legenda w lewym górnym rogu
+      x.textAlign = 'left';
+      keys.forEach(function (k, i) {
+        var yy = TOP + 12 + i * 17;
+        x.strokeStyle = DANE[k].kolor; x.lineWidth = 2.5;
+        x.beginPath(); x.moveTo(L + 10, yy); x.lineTo(L + 30, yy); x.stroke();
+        x.fillStyle = '#111827'; x.fillText(DANE[k].nazwa, L + 36, yy);
+      });
+
+      // strefy dla pierwszej substancji przy wybranej T — blok pod legendą, aktywna strefa pogrubiona
+      var c0 = keys.length ? interp(DANE[keys[0]].pkt, T) : null;
+      var aktywna = (c0 === null || m === null) ? -1 : (m < c0 - 0.5 ? 2 : (m > c0 + 0.5 ? 0 : 1));
+      if (c0 !== null && Number(opc.strefy) !== 0) {
+        var linie = ['nad krzywą: nasycony z osadem', 'na krzywej: nasycony', 'pod krzywą: nienasycony'];
+        x.textAlign = 'left';
+        linie.forEach(function (tx, i) {
+          x.font = (i === aktywna ? 'bold ' : '') + '12px system-ui, sans-serif';
+          x.fillStyle = i === aktywna ? '#111827' : '#4b5563';
+          x.fillText(tx, L + 10, TOP + 70 + i * 16);
+        });
+        x.font = '12px system-ui, sans-serif';
+      }
+
+      // punkt (T, m) z oceną położenia względem pierwszej krzywej
+      if (m !== null && c0 !== null) {
+        var stan = aktywna === 0 ? 'nad krzywą' : (aktywna === 2 ? 'pod krzywą' : 'na krzywej');
+        x.beginPath(); x.arc(px(T), py(m), 6, 0, 2 * Math.PI);
+        x.fillStyle = '#fbbf24'; x.fill(); x.strokeStyle = '#111827'; x.lineWidth = 1.5; x.stroke();
+        x.textAlign = 'left'; x.fillStyle = '#111827'; x.font = 'bold 12px system-ui, sans-serif';
+        x.fillText('punkt (' + T + ' °C, ' + m + ' g): ' + stan, L + 10, TOP + 70 + 3 * 16 + 8);
+        x.font = '12px system-ui, sans-serif';
+      }
+    }
+  });
+})();
+
+/* KLOCEK: regula-krzyzowa — mieszanie roztworów: krzyż (różnice po przekątnych), huśtawka mas, stosunek, gramy, kontrola bilansem. Opcje: brak.
+   Przywrócony z modelu r03-krzyz-v01 (commit 460a00c) jako klocek modułowy. */
+(function(){
+function f(x,d){var p=Math.pow(10,d==null?2:d);return (Math.round(x*p)/p).toString().replace('.',',')}
+function gcd(a,b){return b?gcd(b,a%b):a}
+var CSS='.kz{font:14px/1.5 Inter,system-ui,sans-serif;color:inherit}.kz .bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:6px 0}.kz label{display:flex;gap:6px;align-items:center}.kz input[type=number]{width:78px;padding:3px 6px;border:1px solid currentColor;border-radius:6px;background:transparent;color:inherit;font:inherit}.kz button{border:1px solid currentColor;background:transparent;color:inherit;border-radius:999px;padding:3px 10px;cursor:pointer;font:inherit;font-size:13px;opacity:.85}.kz button:hover{opacity:1}.kz .nt{border:1px solid rgba(127,127,127,.35);border-radius:10px;padding:8px 12px;margin-top:6px}.kz .bad{color:#dc2626}.kz .ok{color:#16a34a}.kz svg text{fill:currentColor;font-size:15px}.kz .mono{font-family:ui-monospace,monospace}';
+function css(){if(document.getElementById('kz-css'))return;var s=el('style');s.id='kz-css';s.textContent=CSS;document.head.appendChild(s)}
+var PRE=[['20% + 5% → 10%',20,5,10,300],['30% + woda → 20%',30,0,20,300],['15% + czysta subst. → 32%',100,15,32,250],['40% + 5% → 20%',40,5,20,900],['hydrat CuSO₄·5H₂O (64%) + woda → 16%',64,0,16,500]];
+KLOCKI.def('regula-krzyzowa',{opis:'Reguła krzyżowa i huśtawka mas: dla dwóch roztworów i stężenia docelowego pokazuje różnice po przekątnych, stosunek mas, masy w gramach i kontrolę bilansem.',domyslne:{},
+ html:function(host){css();host.innerHTML='';host.style.display='block';host.classList.add('kz');var hint=el('div','nt','Wpisz stężenia dwóch roztworów tej samej substancji i stężenie docelowe (musi leżeć między nimi). Woda = 0%, czysta substancja = 100%. Różnice odejmuj po przekątnych — każda liczba należy do roztworu z przeciwnego rogu.');host.appendChild(hint);var c1=20,c2=5,c3=10,M=300;
+  var bp=el('div','bar','<b>Przykłady:</b>');PRE.forEach(function(p){var b=el('button',null,p[0]);b.type='button';b.onclick=function(){c1=p[1];c2=p[2];c3=p[3];M=p[4];sync();draw()};bp.appendChild(b)});
+  var bi=el('div','bar');function num(lab,v,fn){var l=el('label',null,lab),i=el('input');i.type='number';i.min=0;i.max=100000;i.step='any';i.value=v;i.oninput=function(){var x=parseFloat(String(i.value).replace(',','.'));if(!isNaN(x)){fn(x);draw()}};l.appendChild(i);bi.appendChild(l);return i}
+  var i1=num('Cp₁ (mocniejszy) [%]',c1,function(x){c1=x}),i2=num('Cp₂ (słabszy) [%]',c2,function(x){c2=x}),i3=num('Cp₃ (docelowy) [%]',c3,function(x){c3=x}),iM=num('masa końcowa [g]',M,function(x){M=x});
+  function sync(){i1.value=c1;i2.value=c2;i3.value=c3;iM.value=M}
+  var box=el('div'),info=el('div','nt');host.appendChild(bp);host.appendChild(bi);host.appendChild(box);host.appendChild(info);
+  function draw(){var W=640,H=330,s='<svg viewBox="0 0 '+W+' '+H+'" width="100%" role="img" aria-label="Schemat reguły krzyżowej i huśtawka mas">';
+   if(!(c1>c3&&c3>c2&&c1<=100&&c2>=0)){box.innerHTML='';info.innerHTML='<b class="bad">Stężenie docelowe musi leżeć między stężeniami składników</b> (Cp₁ > Cp₃ > Cp₂, wszystkie od 0% do 100%). Z roztworów '+f(c1)+'% i '+f(c2)+'% otrzymasz tylko stężenie z przedziału ('+f(Math.min(c1,c2))+'%; '+f(Math.max(c1,c2))+'%).';return}
+   var d1=c3-c2,d2=c1-c3,sc=Math.pow(10,4),a=Math.round(d1*sc),b=Math.round(d2*sc),g=gcd(a,b),r1=a/g,r2=b/g,m1=M*d1/(d1+d2),m2=M-m1,s1=m1*c1/100,s2=m2*c2/100,cp=(s1+s2)/M*100;
+   var nm2=c2===0?'woda (0%)':f(c2)+'%',nm1=c1===100?'czysta substancja (100%)':f(c1)+'%';
+   // krzyż
+   s+='<text x="40" y="44" style="font-weight:700">'+nm1+'</text><text x="40" y="164" style="font-weight:700">'+nm2+'</text>';
+   s+='<text x="200" y="104" text-anchor="middle" style="font-weight:700;font-size:17px">'+f(c3)+'%</text>';
+   s+='<line x1="120" y1="40" x2="290" y2="150" stroke="#2563eb" stroke-width="2"/><line x1="120" y1="160" x2="290" y2="50" stroke="#dc2626" stroke-width="2"/>';
+   s+='<text x="300" y="44" style="fill:#dc2626">'+f(c3)+' − '+f(c2)+' = <tspan style="font-weight:700">'+f(d1)+'</tspan> cz. → '+nm1+'</text>';
+   s+='<text x="300" y="164" style="fill:#2563eb">'+f(c1)+' − '+f(c3)+' = <tspan style="font-weight:700">'+f(d2)+'</tspan> cz. → '+nm2+'</text>';
+   // huśtawka: oś od Cp2 do Cp1, podpora w Cp3
+   var L=60,R=580,y=262,X=function(c){return L+(c-c2)/(c1-c2)*(R-L)},xf=X(c3),k=70/Math.max(m1,m2),h1=Math.max(6,m1*k),h2=Math.max(6,m2*k);
+   s+='<line x1="'+L+'" y1="'+y+'" x2="'+R+'" y2="'+y+'" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>';
+   s+='<path d="M'+xf+' '+(y+2)+' l-14 26 h28 z" fill="#f59e0b"/><text x="'+xf+'" y="'+(y+46)+'" text-anchor="middle">'+f(c3)+'%</text>';
+   s+='<rect x="'+(R-22)+'" y="'+(y-2-h1)+'" width="44" height="'+h1+'" rx="4" fill="#dc2626" fill-opacity=".75"/><text x="'+R+'" y="'+(y-8-h1)+'" text-anchor="middle">'+f(m1,1)+' g</text><text x="'+R+'" y="'+(y+24)+'" text-anchor="middle">'+f(c1)+'%</text>';
+   s+='<rect x="'+(L-22)+'" y="'+(y-2-h2)+'" width="44" height="'+h2+'" rx="4" fill="#2563eb" fill-opacity=".75"/><text x="'+L+'" y="'+(y-8-h2)+'" text-anchor="middle">'+f(m2,1)+' g</text><text x="'+L+'" y="'+(y+24)+'" text-anchor="middle">'+f(c2)+'%</text>';
+   s+='<text x="'+((L+xf)/2)+'" y="'+(y-10)+'" text-anchor="middle" style="font-size:13px">'+f(d1)+'</text><text x="'+((xf+R)/2)+'" y="'+(y-10)+'" text-anchor="middle" style="font-size:13px">'+f(d2)+'</text>';
+   box.innerHTML=s+'</svg>';
+   info.innerHTML='<b>Stosunek mas</b> m('+nm1+') : m('+nm2+') = '+f(d1)+' : '+f(d2)+(g>1||r1+r2<20?' = <b>'+r1+' : '+r2+'</b>':'')+'.<br>'+
+    'Masa końcowa '+f(M,1)+' g → '+nm1+': <b>'+f(m1,2)+' g</b>, '+nm2+': <b>'+f(m2,2)+' g</b>.<br>'+
+    '<b>Huśtawka:</b> więcej potrzeba tego roztworu, który leży <i>bliżej</i> stężenia docelowego (masy odwrotnie proporcjonalne do odległości od '+f(c3)+'%).<br>'+
+    '<b>Kontrola bilansem:</b> ms = '+f(m1,2)+' · '+f(c1)+'% + '+f(m2,2)+' · '+f(c2)+'% = '+f(s1,2)+' g + '+f(s2,2)+' g = '+f(s1+s2,2)+' g; Cp = '+f(s1+s2,2)+' ÷ '+f(M,1)+' · 100% = <b class="ok">'+f(cp,2)+'%</b>.'}
+  draw()}});
+})();
+
+/* KLOCEK: karta-bhp — zasady pracy w pracowni i krótkie kroki pierwszej pomocy (karty do rozwinięcia).
+   Treść ogólna, szkolna; przy poważnym urazie wezwać nauczyciela i pogotowie 112/999. Opcje: otwarte = "1" rozwija wszystkie; zwiniete = "1" wszystkie zwinięte;
+   karty = "Ogrzewanie,Kwasy i zasady" pokazuje tylko wskazane karty (nazwy jak w nagłówkach). */
+(function () {
+  var KARTY = [
+    ['Przed doświadczeniem', ['Okulary ochronne i fartuch, długie włosy związane.', 'Czytaj opis do końca; nic nie próbuj, nie wąchaj bezpośrednio znad naczynia.', 'Odczynniki bierz w najmniejszej potrzebnej ilości, naczynia podpisuj.']],
+    ['Kwasy i zasady', ['Kwas wlewaj do wody (nie odwrotnie), cienkim strumieniem, mieszając.', 'Kontakt ze skórą lub oczami: płucz dużą ilością bieżącej wody przez co najmniej 15 minut i zawołaj nauczyciela.', 'Rozlany odczynnik zgłoś nauczycielowi, nie wycieraj go gołą ręką.']],
+    ['Ogrzewanie', ['Probówkę ogrzewaj ukośnie (ok. 45°), otworem od siebie i od innych osób, poruszając nią w płomieniu.', 'Nie zaglądaj do ogrzewanej probówki od góry.', 'Gorące naczynia chwytaj szczypcami lub łapaczem, stawiaj na podkładce.']],
+    ['Oparzenie i zranienie', ['Oparzenie: chłodź zimną wodą kilkanaście minut, nie smaruj tłuszczem, powiadom nauczyciela.', 'Skaleczenie szkłem: nie usuwaj odłamków z rany, zawołaj nauczyciela.', 'Wdychanie gazu: wyjdź na świeże powietrze i zgłoś to nauczycielowi.']]
+  ];
+  KLOCKI.def('karta-bhp', {
+    opis: 'Karta BHP: zasady pracy w pracowni i pierwsza pomoc.',
+    domyslne: {otwarte: 0},
+    html: function (host, opc) {
+      host.style.display = 'block';
+      var wyb = opc.karty ? String(opc.karty).split(',').map(function (z) { return z.trim(); }) : null;
+      host.innerHTML = KARTY.filter(function (k) { return !wyb || wyb.indexOf(k[0]) >= 0; }).map(function (k, i) {
+        return '<details' + (Number(opc.otwarte) || (i === 0 && !Number(opc.zwiniete)) ? ' open' : '') + ' style="border:1px solid var(--border,#cbd5e1);border-radius:8px;padding:6px 12px;margin:0 0 6px;background:var(--surface,#fff)">' +
+          '<summary style="cursor:pointer;font-weight:600;color:var(--accent,#0d6868)">' + k[0] + '</summary><ul style="margin:6px 0 4px;padding-left:20px;font-size:14px">' +
+          k[1].map(function (t) { return '<li>' + t + '</li>'; }).join('') + '</ul></details>';
+      }).join('');
+    }
+  });
+})();
+
+(function(){document.querySelectorAll('[data-klocek]').forEach(function(f){var o={};try{o=JSON.parse(f.getAttribute('data-opt')||'{}')}catch(e){}Object.keys(o).forEach(function(k){if(o[k]!==''&&!isNaN(Number(o[k])))o[k]=Number(o[k])});KLOCKI.montuj(f.querySelector('.lk-fig-body'),f.getAttribute('data-klocek'),o)})})();
 /* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
    postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
 (function(){

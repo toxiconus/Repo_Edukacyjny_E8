@@ -153,7 +153,7 @@ Wybierz pierwiastek i jego wartościowość w tym zadaniu, następnie dobierz tl
 
 > W–K–S–K jest procedurą zapisu wzoru. Nie gwarantuje, że każdy taki wzór istnieje — to kontrola chemiczna.
 :::
-@model n01-konstruktor-v01 | Konstruktor wzoru tlenku (W–K–S–K) i sprawdzanie wzoru — stopnie utlenienia, nadtlenki, OF₂ | CHE.OXIDES.build · oxState
+@klocek konstruktor-tlenku | Konstruktor wzoru tlenku (W–K–S–K) i sprawdzanie wzoru — stopnie utlenienia, nadtlenki, OF₂
 @opis Konstruktor wzoru tlenku: wybierasz pierwiastek i jego wartościowość, a model prowadzi przez metodę W–K–S–K (wartościowość, krzyżowanie, skracanie, kontrola) i sprawdza wpisany wzór. Wniosek: wzór tlenku wynika z wartościowości, a suma stopni utlenienia w związku musi wynosić zero.
 
 ::: karta core | Przykłady W–K–S–K
@@ -205,10 +205,10 @@ To ogólny trend, a nie reguła bez wyjątków.
 
 ### Sprawdź w układzie okresowym {.merge-h}
 Wybierz pierwiastek — zobacz wartościowość w tlenkach, wzór tlenku i jego charakter.
-@model periodic-54 | Układ okresowy 1–54 — pierwiastek, wartościowość, tlenek i jego charakter | CHE.DATA.ELEMENTS · CHE.OXIDES
+@klocek uklad-okresowy-54 {tryb="tlenki" tryby="tlenki,adres,wal" wybrany="Al"} | Układ okresowy 1–54 — pierwiastek, wartościowość, tlenek i jego charakter
 @opis Układ okresowy 1–54: po wybraniu pierwiastka widać jego typowe wartościowości w tlenkach, wzory tlenków i ich charakter (zasadowy, kwasowy, amfoteryczny, obojętny). Wniosek: tlenki metali są zwykle zasadowe, niemetali — kwasowe, a metale przejściowe zależą od stopnia utlenienia.
 
-@model n01-tlenki-v01 | Tlenek — trzy pytania: charakter, woda, kwas / zasada (detektor charakteru) | CHE.OXIDES · 39 tlenków
+@klocek detektor-tlenku | Tlenek — trzy pytania: charakter, woda, kwas / zasada (detektor charakteru)
 @opis Detektor charakteru tlenku: dla wybranego tlenku z bazy (39 tlenków) model odpowiada na trzy pytania — jaki ma charakter, czy reaguje z wodą, czy reaguje z kwasem i z zasadą — i pokazuje zlewkę ze wskaźnikiem uniwersalnym. Wniosek: charakter, reakcja z wodą i reakcje z kwasem i zasadą to trzy osobne sprawdzenia.
 
 > CO jest tlenkiem obojętnym, a CO₂ kwasowym, choć oba to tlenki węgla — dlaczego, wyjaśnia sekcja 13.
@@ -318,8 +318,8 @@ Każdy pierwiastek w związku spalanym w tlenie przechodzi w swój tlenek:
 :::
 
 ### 9.3 Spalanie całkowite i niecałkowite
-@model n01-spalanie-v01 | Otrzymywanie tlenków: spalanie pierwiastków i paliw — dopływ O₂ → CO₂ / CO / sadza | CHE.REACTION (spalanie całkowite i niecałkowite)
-@opis Model spalania: wybierasz pierwiastek lub paliwo i ilość tlenu. Przy pełnym dopływie O₂ powstaje CO₂ (spalanie całkowite), przy ograniczonym — CO lub sadza (spalanie niecałkowite). Wniosek: brak tlenu zmienia produkt; CO jest trujący.
+@klocek palnik-gazowy {etap="2"} | Otrzymywanie tlenków: spalanie pierwiastków i paliw — dopływ O₂ → CO₂ / CO / sadza
+@opis Płomień metanu pod odwróconą zlewką: na ściance zbierają się krople wody, a gaz z płomienia po przepuszczeniu przez wodę wapienną powoduje jej zmętnienie. Wniosek: spalanie węglowodoru w tlenie daje tlenek węgla(IV) i wodę; przy ograniczonym dopływie tlenu powstaje także CO (czad) lub sadza — to spalanie niecałkowite.
 
 ::: karta warning | Spalanie niecałkowite
 Przy niedoborze tlenu zamiast CO₂ powstaje **CO** (tlenek węgla(II)) lub sadza (C).
@@ -381,7 +381,7 @@ Tlenek zasadowy i tlenek kwasowy mogą reagować bez wody, dając sól:
 **Na₂O + SO₃ → Na₂SO₄**.
 :::
 
-@model n01-reaktor-v01 | Co powstanie? Tlenek + woda / kwas / zasada — przewiduj, potem sprawdź | CHE.OXIDES.predict · 7 kroków procedury
+@klocek reaktor-tlenku | Co powstanie? Tlenek + woda / kwas / zasada — przewiduj, potem sprawdź
 @opis Reaktor przewidywania: wybierasz tlenek i odczynnik (woda, kwas lub zasada), zapisujesz przewidywanie, a model pokazuje, czy reakcja zachodzi, jakie są produkty i równanie. Wniosek: przewidywanie opieraj na charakterze tlenku, potem sprawdź bilans i produkty.
 
 ### 10.5 Mapa przemian — łańcuchy {.merge-h}
@@ -482,7 +482,7 @@ MgO ma trwałą sieć jonową. Mały kation Mg²⁺ silnie przyciąga O²⁻, wi
 
 ## 14 | Trend charakteru tlenków [[extra:AMBITNE]] {#trend}
 W okresie od lewej do prawej charakter tlenków zmienia się od zasadowego, przez amfoteryczny, do kwasowego.
-@model n01-trend-v01 | Trend charakteru tlenków: w okresie i według stopnia utlenienia (Cr, Mn) | CHE.OXIDES.trend
+@klocek trend-tlenkow | Trend charakteru tlenków: w okresie i według stopnia utlenienia (Cr, Mn)
 @opis Trend charakteru tlenków: w okresie od lewej do prawej tlenki zmieniają się od zasadowych przez amfoteryczne do kwasowych, a dla jednego metalu (Cr, Mn) rosnący stopień utlenienia zwiększa charakter kwasowy. Wniosek: trend wyjaśnia się zmianą metaliczności i elektroujemności.
 
 ::: karta extra | Trend w okresie 3

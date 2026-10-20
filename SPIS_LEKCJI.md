@@ -17,8 +17,8 @@ Etap LKO = do którego etapu konkursu lekcja jest potrzebna: **I** = szkolny (bi
 | `C2w_wzor_elementarny_rzeczywisty.md` | III (hydraty poza LKO) | E8 · rozum. · konkurs | 16 | 3 | 3 |  |
 | `C3_rownania_i_obliczenia_z_rownan.md` | II | E8 · konkurs | 15 | 2 | 2 |  |
 | `C4_doswiadczenia_zbiorczo.md` | I | E8 · konkurs | 25 | 6 | 6 |  |
-| `F01_jak_mysli_chemik.md` | I | E8 · rozum. · ambitne | 62 | 11 | 11 |  |
-| `F02_materia_i_substancje.md` | I | E8 · rozum. · ambitne | 55 | 6 | 6 |  |
+| `F01_jak_mysli_chemik.md` | I | E8 · rozum. · ambitne | 61 | 11 | 11 |  |
+| `F02_materia_i_substancje.md` | I | E8 · rozum. · ambitne | 54 | 6 | 6 |  |
 | `F03_wlasciwosci_i_rozdzielanie.md` | I | E8 · rozum. · ambitne | 56 | 5 | 5 |  |
 | `F04_atom.md` | I | E8 · rozum. · ambitne | 40 | 3 | 3 |  |
 | `F05_izotopy_jony_masa_atomowa.md` | I | E8 · rozum. · ambitne | 46 | 1 | 1 |  |
@@ -32,7 +32,7 @@ Etap LKO = do którego etapu konkursu lekcja jest potrzebna: **I** = szkolny (bi
 | `F19_dossier_reakcji.md` | poza LKO | E8 · rozum. · ambitne | 18 | 0 | 0 |  |
 | `F20_klinika_bledow_fundamentow.md` | poza LKO | E8 · rozum. · ambitne | 33 | 0 | 0 |  |
 | `F21_zadania_transferowe_i_diagnostyka.md` | poza LKO | E8 · rozum. · ambitne | 26 | 0 | 0 |  |
-| `FIZ01_elektrostatyka.md` | poza LKO (fizyka) | E8 · rozum. · konkurs · ambitne | 108 | 15 | 15 |  |
+| `FIZ01_elektrostatyka.md` | poza LKO (fizyka) | E8 · rozum. · konkurs · ambitne | 107 | 15 | 15 |  |
 | `J03_rownania_jonowe_i_stracanie.md` | II | E8 · rozum. · konkurs · ambitne | 116 | 8 | 8 |  |
 | `J04_stracanie_osadow.md` | poza LKO | E8 · rozum. · ambitne | 12 | 0 | 0 |  |
 | `J05_amfoterycznosc.md` | poza LKO | E8 · rozum. · ambitne | 10 | 0 | 0 |  |
@@ -67,7 +67,7 @@ Etap LKO = do którego etapu konkursu lekcja jest potrzebna: **I** = szkolny (bi
 | `LKO_Z36_konfiguracje_do_z36.md` | poza LKO | E8 · rozum. · ambitne | 44 | 0 | 0 |  |
 | `LKO_pulapki_wapno_woda_wapienna.md` | poza LKO | E8 | 31 | 0 | 0 |  |
 | `N01_powietrze_i_gazy.md` | I | E8 · rozum. · konkurs · ambitne | 37 | 6 | 6 |  |
-| `N02_tlenki.md` | II | E8 · rozum. · konkurs · ambitne | 63 | 15 | 15 |  |
+| `N02_tlenki.md` | II | E8 · rozum. · konkurs · ambitne | 63 | 17 | 17 |  |
 | `N06_wodorki.md` | poza LKO | E8 · rozum. · ambitne | 40 | 0 | 0 |  |
 | `N07_systematyka_nieorganiczna.md` | poza LKO | — | 22 | 0 | 1 |  |
 | `N08_mapa_przemian.md` | poza LKO | — | 19 | 0 | 0 |  |
@@ -261,4 +261,4 @@ Etap LKO = do którego etapu konkursu lekcja jest potrzebna: **I** = szkolny (bi
 Lekcje właściwe dla etapu (do ćwiczenia z danym arkuszem): biologia etap I: BIO.00.REV01.organizacja_i_chemizm_zycia, BIO.00.REV02.roznorodnosc_zycia, BIO.01.B1b.krzyzowki_mendel, BIO.02.B10.powtorka_uklady_czlowieka, BIO.02.B2a.skora_uklad_ruchu, BIO.02.B2b.uklad_pokarmowy, BIO.02.B2c.oddychanie_wydalanie, BIO.02.B2d.uklad_nerwowy_zmysly, BIO.02.B2e.uklad_dokrewny, BIO.02.B2f.rozmnazanie_rozwoj, BIO.02.B2g.homeostaza, BIO.02.L010.dna_od_zera, BIO.02.L011.jak_dna_przechowuje_informacje, BIO.02.L012.jak_dna_jest_upakowane_w, BIO.02.L013.jak_komorka_kopiuje_dna, BIO.02.L014.jak_komorki_ciala_powstaja_i, BIO.02.L015.mejoza, BIO.02.L016.co_sie_dzieje_gdy_podzialy, BIO.02.L016A.zmiennosc_dlaczego_potomstwo_nie_jest, BIO.02.L017.jak_przewidywac_dziedziczenie_jednej_cechy, BIO.02.L018.jak_dziedziczy_sie_plec_i, BIO.02.L019.dlaczego_grupy_krwi_nie_pasuja, BIO.02.L020.czym_sa_mutacje_i_jakie, BIO.02.L021.powtorka_genetyki, BIO.02.L022.biotechnologia_i_inzynieria_genetyczna, BIO.03.L030.czym_jest_ewolucja_i_jakie, BIO.03.L031.jak_dziala_dobor_naturalny_i, BIO.03.L032.powtorka_ewolucji, BIO.04.L040.czym_jest_ekosystem_i_jakie, BIO.04.L041.jak_zapisac_lancuchy_i_sieci, BIO.04.L042.jakie_relacje_panuja_miedzy_organizmami, BIO.04.L043.jak_czlowiek_wplywa_na_srodowisko, BIO.04.L044.powtorka_ekologii, BIO.06.L090.extra_olimpijska, BIO.06.L091.atp_jak_komorka_magazynuje_energie, BIO.07.H01.homeostaza, BIO.07.U01.skora_i_uklad_ruchu, BIO.07.U03.uklad_pokarmowy_i_odzywianie, BIO.07.U04.krazenie_krew_odpornosc, BIO.07.U06.oddychanie_i_wydalanie, BIO.07.U08.uklad_nerwowy_i_zmysly, BIO.07.U10.uklad_dokrewny, BIO.07.U11.rozmnazanie_i_rozwoj; biologia etap II: BIO.01.B1b.krzyzowki_mendel, BIO.02.B10.powtorka_uklady_czlowieka, BIO.02.B2a.skora_uklad_ruchu, BIO.02.B2b.uklad_pokarmowy, BIO.02.B2c.oddychanie_wydalanie, BIO.02.B2d.uklad_nerwowy_zmysly, BIO.02.B2e.uklad_dokrewny, BIO.02.B2f.rozmnazanie_rozwoj, BIO.02.B2g.homeostaza, BIO.02.L010.dna_od_zera, BIO.02.L011.jak_dna_przechowuje_informacje, BIO.02.L012.jak_dna_jest_upakowane_w, BIO.02.L013.jak_komorka_kopiuje_dna, BIO.02.L014.jak_komorki_ciala_powstaja_i, BIO.02.L015.mejoza, BIO.02.L016.co_sie_dzieje_gdy_podzialy, BIO.02.L016A.zmiennosc_dlaczego_potomstwo_nie_jest, BIO.02.L017.jak_przewidywac_dziedziczenie_jednej_cechy, BIO.02.L018.jak_dziedziczy_sie_plec_i, BIO.02.L019.dlaczego_grupy_krwi_nie_pasuja, BIO.02.L020.czym_sa_mutacje_i_jakie, BIO.02.L021.powtorka_genetyki, BIO.02.L022.biotechnologia_i_inzynieria_genetyczna, BIO.03.L030.czym_jest_ewolucja_i_jakie, BIO.03.L031.jak_dziala_dobor_naturalny_i, BIO.03.L032.powtorka_ewolucji, BIO.04.L040.czym_jest_ekosystem_i_jakie, BIO.04.L041.jak_zapisac_lancuchy_i_sieci, BIO.04.L042.jakie_relacje_panuja_miedzy_organizmami, BIO.04.L043.jak_czlowiek_wplywa_na_srodowisko, BIO.04.L044.powtorka_ekologii, BIO.06.L090.extra_olimpijska, BIO.06.L091.atp_jak_komorka_magazynuje_energie, BIO.07.H01.homeostaza, BIO.07.U01.skora_i_uklad_ruchu, BIO.07.U03.uklad_pokarmowy_i_odzywianie, BIO.07.U04.krazenie_krew_odpornosc, BIO.07.U06.oddychanie_i_wydalanie, BIO.07.U08.uklad_nerwowy_i_zmysly, BIO.07.U10.uklad_dokrewny, BIO.07.U11.rozmnazanie_i_rozwoj; chemia etap I: C1c_konfiguracje_elektronowe, C1c_kwasy_zasady_sole, C1c_masy_sklad_procentowy, C1c_wodorki_typy_reakcji, C2m_mol_masa_molowa, C2w_wzor_elementarny_rzeczywisty, C3_rownania_i_obliczenia_z_rownan, C4_doswiadczenia_zbiorczo, F01_jak_mysli_chemik, F02_materia_i_substancje, F03_wlasciwosci_i_rozdzielanie, F04_atom, F05_izotopy_jony_masa_atomowa, F06_uklad_okresowy, J03_rownania_jonowe_i_stracanie, LKO_ORG01_alkany, LKO_ORG02_alkeny, LKO_ORG03_alkohole, LKO_ORG04_glicerol, LKO_ORG05_kwasy, LKO_ORG06_estry, LKO_ORG07_cukry, LKO_ORG08_mol_gazy, N01_powietrze_i_gazy, N02_tlenki, R03A_mieszanie_roztworow_regula_krzyzowa, R07_stechiometria_z_nadmiarem, X04_szereg_aktywnosci_metali; chemia etap II: C1c_kwasy_zasady_sole, C1c_masy_sklad_procentowy, C2m_mol_masa_molowa, C2w_wzor_elementarny_rzeczywisty, C3_rownania_i_obliczenia_z_rownan, J03_rownania_jonowe_i_stracanie, LKO_ORG01_alkany, LKO_ORG02_alkeny, LKO_ORG03_alkohole, LKO_ORG04_glicerol, LKO_ORG05_kwasy, LKO_ORG06_estry, LKO_ORG07_cukry, LKO_ORG08_mol_gazy, N02_tlenki, R07_stechiometria_z_nadmiarem, X04_szereg_aktywnosci_metali
 
 
-Razem: 6022 KB.
+Razem: 6019 KB.

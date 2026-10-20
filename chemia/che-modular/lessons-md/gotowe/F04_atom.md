@@ -187,7 +187,7 @@ Zapis: u góry liczba masowa A, u dołu liczba atomowa Z, obok symbol pierwiastk
 
 Z odczytasz z układu okresowego: numer pierwiastka to liczba protonów (szczegóły w F06).
 
-@model periodic-54 | Układ okresowy z modelami atomów (pierwiastki 1–54) | wybierz pierwiastek: Z, liczba elektronów, schemat atomu
+@klocek uklad-okresowy-54 {tryby="adres,blok" wybrany="Na"} | Układ okresowy z modelami atomów (pierwiastki 1–54)
 @opis Interaktywny układ okresowy pierwiastków od 1 do 54; po wybraniu pierwiastka widać jego liczbę atomową Z, liczbę elektronów i schemat atomu z elektronami rozmieszczonymi na powłokach. Wniosek: miejsce pierwiastka w tablicy wynika z liczby protonów i budowy powłok elektronowych.
 
 ## 4 | Atom obojętny i jon [[basic:E8]] {#jony}

@@ -56,7 +56,8 @@
     "gra_klasyfikacja.js": "gra: kwas, zasada, sól czy tlenek",
     "jony_w_wodzie.js": "dysocjacja vs jonizacja, przeniesienie protonu, tester przewodnictwa",
     "fizyka_elektrostatyka.js": "elektrostatyka: elektryzowanie, przewodnik-izolator, kule-ladunek, elektroskop, prawo-coulomba, linie-pola",
-    "chemia_wstep.js": "wstęp do chemii: lancuch-poziomow, zlewka-predykcja, mapa-mysli, czasteczki-3d, destylacja"
+    "chemia_wstep.js": "wstęp do chemii: lancuch-poziomow, zlewka-predykcja, mapa-mysli, czasteczki-3d, destylacja",
+    "okresowy_tlenki.js": "układ okresowy 1–54 (tryby), konstruktor/detektor/reaktor tlenku, trend tlenków"
   },
   "lekcje": {
     "P01": [
@@ -72,6 +73,7 @@
     "F06": [
       "klocki.js",
       "pomocnicze.js",
+      "ui_klocki.js",
       "naczynia.js",
       "dane/pierwiastki.js",
       "znaki.js",
@@ -79,7 +81,8 @@
       "palniki.js",
       "uklad_okresowy.js",
       "karta_bhp.js",
-      "diagram_bohra.js"
+      "diagram_bohra.js",
+      "okresowy_tlenki.js"
     ],
     "F07": [
       "klocki.js",
@@ -344,6 +347,7 @@
     ],
     "N02": [
       "klocki.js",
+      "pomocnicze.js",
       "karta_bhp.js",
       "ui_klocki.js",
       "chemia_wstep.js",
@@ -354,7 +358,8 @@
       "zbieranie_gazu.js",
       "lancuch_przemian.js",
       "palenie.js",
-      "plomien.js"
+      "plomien.js",
+      "okresowy_tlenki.js"
     ],
     "N04": [
       "klocki.js",
@@ -369,6 +374,7 @@
     ],
     "F02": [
       "klocki.js",
+      "pomocnicze.js",
       "model_widok.js",
       "z_f02_czastki.js",
       "z_f02_magnes_fes.js",
@@ -378,12 +384,14 @@
     ],
     "F03": [
       "klocki.js",
+      "pomocnicze.js",
       "karta_bhp.js",
       "ui_klocki.js",
       "chemia_wstep.js"
     ],
     "F01": [
       "klocki.js",
+      "pomocnicze.js",
       "karta_bhp.js",
       "ui_klocki.js",
       "chemia_wstep.js"
@@ -397,7 +405,9 @@
       "model_widok.js",
       "z_f04_nuklid.js",
       "pomocnicze.js",
-      "diagram_bohra.js"
+      "ui_klocki.js",
+      "diagram_bohra.js",
+      "okresowy_tlenki.js"
     ],
     "F05": [
       "klocki.js",

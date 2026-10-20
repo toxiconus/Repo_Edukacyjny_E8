@@ -183,9 +183,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (17 pl., 203 KB)
+## chemia/che-modular  (17 pl., 204 KB)
 - (zwinięte; `ls chemia/che-modular`) — duże:
-- ⚠`PROGRESS.md` 66 KB
+- ⚠`PROGRESS.md` 68 KB
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
 - `ARCHITEKTURA.md` 5 KB
@@ -325,7 +325,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/engine/src/gfx/wspolne/widoki  (1 pl., 4 KB)
 - `che-test-silnika-v01.js` 4 KB
 
-## chemia/che-modular/engine/src/klocki  (42 pl., 262 KB)
+## chemia/che-modular/engine/src/klocki  (58 pl., 391 KB)
 - (zwinięte; `ls chemia/che-modular/engine/src/klocki`)
 
 ## chemia/che-modular/engine/src/klocki/dane  (1 pl., 11 KB)
@@ -629,12 +629,12 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/pakiet  (1 pl., 24 KB)
 - `okladka.html` 24 KB
 
-## chemia/pakiet/html  (74 pl., 11.2 MB)
+## chemia/pakiet/html  (74 pl., 11.8 MB)
 - (zwinięte; `ls chemia/pakiet/html`) — duże:
-- ⚠`C1c_konfiguracje_elektronowe.html` 222 KB
-- ⚠`C1c_kwasy_zasady_sole.html` 225 KB
-- ⚠`C1c_masy_sklad_procentowy.html` 214 KB
-- ⚠`C1c_wodorki_typy_reakcji.html` 220 KB
+- ⚠`C1c_konfiguracje_elektronowe.html` 271 KB
+- ⚠`C1c_kwasy_zasady_sole.html` 274 KB
+- ⚠`C1c_masy_sklad_procentowy.html` 263 KB
+- ⚠`C1c_wodorki_typy_reakcji.html` 269 KB
 - ⚠`C2m_mol_masa_molowa.html` 134 KB
 - ⚠`C2w_wzor_elementarny_rzeczywisty.html` 130 KB
 - ⚠`C3_rownania_i_obliczenia_z_rownan.html` 132 KB
@@ -1163,12 +1163,12 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PRZEKAZANIE.md` 3 KB
 - ⚠`wzorcownia.html` 59 KB
 
-## wizualizacje-projekty/baza-mala  (5 pl., 145 KB)
+## wizualizacje-projekty/baza-mala  (5 pl., 153 KB)
 - `BRAKI_WIZUALIZACJI.md` 16 KB
-- `KATALOG_KLOCKOW.md` 27 KB
+- `KATALOG_KLOCKOW.md` 30 KB
 - `README.md` 3 KB
-- ⚠`UZYCIA_WIZUALIZACJI.md` 64 KB
-- `uzycia.json` 34 KB
+- ⚠`UZYCIA_WIZUALIZACJI.md` 67 KB
+- `uzycia.json` 36 KB
 
 ## wizualizacje-projekty/baza-mala/biblioteki/biologia  (1 pl., 8 KB)
 - `BIO_KATALOG.md` 8 KB
@@ -1264,7 +1264,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## wizualizacje-projekty/baza-mala/gfx/wspolne/widoki  (1 pl., 4 KB)
 - `che-test-silnika-v01.js` 4 KB
 
-## wizualizacje-projekty/baza-mala/klocki  (42 pl., 262 KB)
+## wizualizacje-projekty/baza-mala/klocki  (42 pl., 267 KB)
 - (zwinięte; `ls wizualizacje-projekty/baza-mala/klocki`)
 
 ## wizualizacje-projekty/baza-mala/klocki/dane  (1 pl., 11 KB)

@@ -67,3 +67,23 @@ W md wstawia się go linią `@klocek nazwa {opcja="wartość"} | Podpis`, a pod 
 - Animacja etapowa: `ss((t - t0 - k*dt)/czas)`; przy `RM` pokaż stan końcowy.
 - Siatka kółek: `siatka(m, W, H)` wybiera największe ułożenie m kółek w polu W×H.
 - Stan początkowy nie zakłada, że pętla już działa — `montuj` ją uruchamia sam (błąd `grane=true` naprawiony w `24c0083`).
+
+## Klocki dodane 2026-10-20 (S-S1, przeniesienie modeli z dużego silnika)
+
+| Klocek | Plik | Do czego |
+|---|---|---|
+| `tabela-rozpuszczalnosci` | tabela_rozpuszczalnosci.js | Tabela R/T/N (20 °C); klik: wzór, nazwa, rozpuszczalność; eksportuje `KLOCKI.rozp` |
+| `osady-dwie-sole` | osady_dwie_sole.js | Dwie sole → czy powstaje osad i jaki (wymaga tabeli rozpuszczalności) |
+| `rownania-jonowe` | rownania_jonowe.js | 12 reakcji: zapis cząsteczkowy, jonowy pełny i skrócony |
+| `izotopy` | izotopy.js | Konstruktor atomu p/n/e, izotop/jon/pierwiastek, masa atomowa jako średnia ważona |
+| `regula-krzyzowa` | regula_krzyzowa.js | Mieszanie roztworów: krzyż, huśtawka, bilans |
+| `f02-czastki-v01`, `f04-nuklid-v01`, `f02-magnes-fes-v01` | z_*.js + model_widok.js | Modele w starym kontrakcie CHE.VIEW.define (mostek `model_widok.js`) |
+| `n05-wodorki-v01`, `n05-trendy-v01` | z_n05_wodorki.js | Mapa wodorków, temperatury wrzenia |
+| `profil-energii` | profil_energii.js | Profil energii egzo/endo, katalizator |
+| `gra-klasyfikacja` | gra_klasyfikacja.js | Gra: kwas, zasada, sól, tlenek |
+| `dysocjacja-vs-jonizacja`, `przeniesienie-protonu`, `tester-przewodnictwa` | jony_w_wodzie.js | Jony w wodzie |
+| `elektryzowanie`, `przewodnik-izolator`, `kule-ladunek`, `elektroskop`, `prawo-coulomba`, `linie-pola` | fizyka_elektrostatyka.js | Elektrostatyka (FIZ-01) |
+| `lancuch-poziomow`, `zlewka-predykcja`, `mapa-mysli`, `czasteczki-3d`, `destylacja` | chemia_wstep.js | Wstęp do chemii (F01–F03, N02) |
+| `uklad-okresowy-54`, `konstruktor-tlenku`, `detektor-tlenku`, `reaktor-tlenku`, `trend-tlenkow` | okresowy_tlenki.js | Układ okresowy 1–54 (tryby) i tlenki |
+
+`ui_klocki.js` — wspólne przyciski, suwaki i autostart animacji (`KLOCKI.ui`); ładować w każdej lekcji używającej klocków HTML/SVG.

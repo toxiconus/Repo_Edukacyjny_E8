@@ -236,25 +236,45 @@
   "hyd-nh4cl": "CHE gfx/reakcje",
   "hyd-cuso4": "CHE gfx/reakcje",
   "metanSpalanie": "CHE gfx/sceny",
+  "lancuch-poziomow": "klocek",
+  "zlewka-predykcja": "klocek",
+  "mapa-mysli": "klocek",
+  "czasteczki-3d": "klocek",
+  "destylacja": "klocek",
+  "izotopy": "klocek",
   "krzywe-rozpuszczalnosci": "klocek",
   "trojkat-przeliczen": "klocek",
   "palenie": "klocek",
   "bilans-spalania": "klocek",
   "diagram-bohra": "klocek",
   "sklad-procentowy": "klocek",
+  "uklad-okresowy-54": "klocek",
+  "konstruktor-tlenku": "klocek",
+  "detektor-tlenku": "klocek",
+  "reaktor-tlenku": "klocek",
+  "trend-tlenkow": "klocek",
   "lancuch-przemian": "klocek",
   "karta-bhp": "klocek",
   "uklad-okresowy": "klocek",
   "molekula-2d": "klocek",
   "petla-regulacji": "klocek",
+  "profil-energii": "klocek",
+  "gra-klasyfikacja": "klocek",
   "haworth": "klocek",
   "krzyzowka-mendla": "klocek",
   "kalkulator-mola": "klocek",
   "plomien": "klocek",
   "probowki-odczyn": "klocek",
+  "regula-krzyzowa": "klocek",
   "schemat-przemian": "klocek",
   "konfiguracje": "klocek",
   "probowki-wybor": "klocek",
+  "elektryzowanie": "klocek",
+  "przewodnik-izolator": "klocek",
+  "kule-ladunek": "klocek",
+  "elektroskop": "klocek",
+  "prawo-coulomba": "klocek",
+  "linie-pola": "klocek",
   "zlewka": "klocek",
   "metal-woda": "klocek",
   "estryfikacja": "klocek",
@@ -264,8 +284,14 @@
   "palnik-gazowy": "klocek",
   "nadmiar-substratu": "klocek",
   "doswiadczenie": "klocek",
+  "rownania-jonowe": "klocek",
   "probowki": "klocek",
   "wzor-2d": "klocek",
+  "osady-dwie-sole": "klocek",
+  "tabela-rozpuszczalnosci": "klocek",
+  "dysocjacja-vs-jonizacja": "klocek",
+  "przeniesienie-protonu": "klocek",
+  "tester-przewodnictwa": "klocek",
   "gruczoly-mapa": "BIO",
   "kod-genetyczny": "BIO",
   "eutrofizacja": "BIO",
@@ -358,19 +384,14 @@
  },
  "uzycia": {
   "acid-calculator": {},
-  "acid-game": {
-   "C1c_kwasy_zasady_sole": 1
-  },
+  "acid-game": {},
   "acid-rain-v01": {
    "N04": 1
   },
   "acid-table": {},
-  "beaker-prediction-enhanced": {
-   "F01": 1
-  },
+  "beaker-prediction-enhanced": {},
   "carboxyl": {},
   "chain-scn": {
-   "N02": 1,
    "N05": 1
   },
   "che-spojnosc-v01": {},
@@ -379,39 +400,22 @@
   "compound-cards": {},
   "conj-pairs": {},
   "diss-three-levels": {},
-  "energy-profile": {
-   "C1c_wodorki_typy_reakcji": 1
-  },
+  "energy-profile": {},
   "env-balance": {},
   "equilibrium": {},
-  "fiz-coulomb-v01": {
-   "FIZ01": 3
-  },
-  "fiz-elektroskop-v01": {
-   "FIZ01": 3
-  },
-  "fiz-elektryzowanie-v01": {
-   "FIZ01": 3
-  },
-  "fiz-ladunek-v01": {
-   "FIZ01": 3
-  },
-  "fiz-przewodniki-v01": {
-   "FIZ01": 1
-  },
+  "fiz-coulomb-v01": {},
+  "fiz-elektroskop-v01": {},
+  "fiz-elektryzowanie-v01": {},
+  "fiz-ladunek-v01": {},
+  "fiz-przewodniki-v01": {},
   "flashcards-deck": {},
   "flow-egzamin-enhanced": {},
   "flow-naming": {},
   "gfx-scene-acidMetal": {
-   "N01": 1,
    "N04": 1
   },
-  "gfx-scene-carbonate": {
-   "N01": 1,
-   "N02": 1
-  },
+  "gfx-scene-carbonate": {},
   "gfx-scene-conductivity": {
-   "FIZ01": 1,
    "N04": 1,
    "N05": 1
   },
@@ -433,9 +437,7 @@
   "ion-map-v02": {
    "N05": 1
   },
-  "ion-vs-diss": {
-   "J03": 1
-  },
+  "ion-vs-diss": {},
   "ka-pka-table": {},
   "kinetics-v01": {},
   "kw-bufor-v01": {
@@ -445,7 +447,6 @@
    "N04": 11
   },
   "kw-dysocjacja-v01": {
-   "FIZ01": 1,
    "N04": 1
   },
   "kw-reszty-v01": {
@@ -453,52 +454,32 @@
    "N05": 1
   },
   "kw-szereg-metali-v01": {
-   "C1c_kwasy_zasady_sole": 1,
    "N04": 1,
-   "N05": 1,
-   "X04": 1
+   "N05": 1
   },
   "kw-wlasciwosci-v01": {
    "N04": 1
   },
   "lab-beaker-v102": {},
   "lab-library-v001": {},
-  "lab-stations-v102": {
-   "F03": 1
-  },
-  "live-cv": {
-   "F01": 1
-  },
-  "mind-map": {
-   "F01": 1
-  },
+  "lab-stations-v102": {},
+  "live-cv": {},
+  "mind-map": {},
   "molecule-2d": {},
   "molecule-cv": {},
   "molecule-electrons": {},
   "molecule-orbitals": {},
-  "molecule3d-merged": {
-   "F02": 1,
-   "N02": 1
-  },
+  "molecule3d-merged": {},
   "n01-doswiadczenia-v01": {
-   "N02": 4
+   "N02": 3
   },
-  "n01-konstruktor-v01": {
-   "N02": 1
-  },
-  "n01-reaktor-v01": {
-   "N02": 1
-  },
+  "n01-konstruktor-v01": {},
+  "n01-reaktor-v01": {},
   "n01-spalanie-v01": {
-   "N01": 1,
-   "N02": 2
-  },
-  "n01-tlenki-v01": {
    "N02": 1
   },
-  "n01-trend-v01": {
-   "N02": 1
-  },
+  "n01-tlenki-v01": {},
+  "n01-trend-v01": {},
   "n02-doswiadczenia-v01": {
    "N03": 8
   },
@@ -523,22 +504,13 @@
   "n02-zobojetnianie-v01": {
    "N03": 1
   },
-  "j03-osady-v01": {
-   "J03": 1
-  },
+  "j03-osady-v01": {},
   "naming-table": {},
   "neutralization": {},
   "obtaining-hcl-steps": {},
   "obtaining-three": {},
-  "f05-izotopy-v01": {
-   "C1c_masy_sklad_procentowy": 1,
-   "F05": 1
-  },
-  "periodic-54": {
-   "F04": 1,
-   "F06": 1,
-   "N02": 1
-  },
+  "f05-izotopy-v01": {},
+  "periodic-54": {},
   "ph-indicators-v03": {
    "N03": 2,
    "N04": 1
@@ -549,8 +521,6 @@
    "N04": 1
   },
   "rownania-jonowe-v01": {
-   "C1c_kwasy_zasady_sole": 1,
-   "J03": 2,
    "N03": 1,
    "N04": 1,
    "N05": 1
@@ -571,8 +541,6 @@
   },
   "substance": {},
   "tabela-rozpuszczalnosci-v01": {
-   "C1c_kwasy_zasady_sole": 1,
-   "J03": 2,
    "N03": 1,
    "N04": 1,
    "N05": 1
@@ -594,9 +562,7 @@
   "f17-bilans-v01": {
    "F17": 1
   },
-  "r03-krzyz-v01": {
-   "R03A_mieszanie_roztworow_regula_krzyzowa": 1
-  },
+  "r03-krzyz-v01": {},
   "fiz02-obwod-v01": {},
   "beaker": {},
   "zlewkaOdwrocona": {},
@@ -767,12 +733,34 @@
   },
   "hyd-cuso4": {},
   "metanSpalanie": {},
+  "lancuch-poziomow": {
+   "F01": 1
+  },
+  "zlewka-predykcja": {
+   "F01": 1
+  },
+  "mapa-mysli": {
+   "F01": 1
+  },
+  "czasteczki-3d": {
+   "F02": 1,
+   "N02": 1
+  },
+  "destylacja": {
+   "F03": 1
+  },
+  "izotopy": {
+   "C1c_masy_sklad_procentowy": 1,
+   "F05": 1
+  },
   "krzywe-rozpuszczalnosci": {},
   "trojkat-przeliczen": {
    "C2m_mol_masa_molowa": 2,
    "LKO_ORG08_mol_gazy": 2
   },
-  "palenie": {},
+  "palenie": {
+   "N02": 1
+  },
   "bilans-spalania": {
    "LKO_ORG01_alkany": 1
   },
@@ -784,7 +772,26 @@
   "sklad-procentowy": {
    "C1c_masy_sklad_procentowy": 1
   },
-  "lancuch-przemian": {},
+  "uklad-okresowy-54": {
+   "F04": 1,
+   "F06": 1,
+   "N02": 1
+  },
+  "konstruktor-tlenku": {
+   "N02": 1
+  },
+  "detektor-tlenku": {
+   "N02": 1
+  },
+  "reaktor-tlenku": {
+   "N02": 1
+  },
+  "trend-tlenkow": {
+   "N02": 1
+  },
+  "lancuch-przemian": {
+   "N02": 3
+  },
   "karta-bhp": {
    "C1c_kwasy_zasady_sole": 1,
    "C2w_wzor_elementarny_rzeczywisty": 1,
@@ -814,6 +821,12 @@
    "BIO.02.B2e.uklad_dokrewny": 1,
    "BIO.02.B2g.homeostaza": 1
   },
+  "profil-energii": {
+   "C1c_wodorki_typy_reakcji": 1
+  },
+  "gra-klasyfikacja": {
+   "C1c_kwasy_zasady_sole": 1
+  },
   "haworth": {
    "LKO_ORG07_cukry": 1
   },
@@ -833,6 +846,9 @@
    "LKO_ORG04_glicerol": 1,
    "LKO_ORG05_kwasy": 1
   },
+  "regula-krzyzowa": {
+   "R03A_mieszanie_roztworow_regula_krzyzowa": 1
+  },
   "schemat-przemian": {
    "C1c_kwasy_zasady_sole": 1
   },
@@ -840,7 +856,29 @@
    "C1c_konfiguracje_elektronowe": 1
   },
   "probowki-wybor": {
-   "J03": 1
+   "C1c_kwasy_zasady_sole": 1,
+   "J03": 1,
+   "N01": 1,
+   "N02": 1,
+   "X04": 1
+  },
+  "elektryzowanie": {
+   "FIZ01": 3
+  },
+  "przewodnik-izolator": {
+   "FIZ01": 1
+  },
+  "kule-ladunek": {
+   "FIZ01": 3
+  },
+  "elektroskop": {
+   "FIZ01": 3
+  },
+  "prawo-coulomba": {
+   "FIZ01": 2
+  },
+  "linie-pola": {
+   "FIZ01": 1
   },
   "zlewka": {},
   "metal-woda": {},
@@ -859,10 +897,12 @@
   },
   "zbieranie-gazu": {
    "LKO_ORG08_mol_gazy": 1,
-   "N01": 1
+   "N01": 2
   },
   "palnik-gazowy": {
-   "LKO_ORG01_alkany": 1
+   "LKO_ORG01_alkany": 1,
+   "N01": 1,
+   "N02": 1
   },
   "nadmiar-substratu": {
    "R07": 1
@@ -871,6 +911,10 @@
    "C1c_kwasy_zasady_sole": 1,
    "C4": 2,
    "X04": 1
+  },
+  "rownania-jonowe": {
+   "C1c_kwasy_zasady_sole": 1,
+   "J03": 2
   },
   "probowki": {
    "P01": 1
@@ -885,6 +929,22 @@
    "LKO_ORG05_kwasy": 1,
    "LKO_ORG06_estry": 2,
    "LKO_ORG07_cukry": 1
+  },
+  "osady-dwie-sole": {
+   "J03": 1
+  },
+  "tabela-rozpuszczalnosci": {
+   "C1c_kwasy_zasady_sole": 1,
+   "J03": 2
+  },
+  "dysocjacja-vs-jonizacja": {
+   "J03": 1
+  },
+  "przeniesienie-protonu": {
+   "FIZ01": 1
+  },
+  "tester-przewodnictwa": {
+   "FIZ01": 1
   },
   "gruczoly-mapa": {
    "BIO.02.B2e.uklad_dokrewny": 1,
@@ -1191,7 +1251,9 @@
  },
  "zero": [
   "acid-calculator",
+  "acid-game",
   "acid-table",
+  "beaker-prediction-enhanced",
   "carboxyl",
   "che-spojnosc-v01",
   "che-test-silnika-v01",
@@ -1199,28 +1261,47 @@
   "compound-cards",
   "conj-pairs",
   "diss-three-levels",
+  "energy-profile",
   "env-balance",
   "equilibrium",
+  "fiz-coulomb-v01",
+  "fiz-elektroskop-v01",
+  "fiz-elektryzowanie-v01",
+  "fiz-ladunek-v01",
+  "fiz-przewodniki-v01",
   "flashcards-deck",
   "flow-egzamin-enhanced",
   "flow-naming",
+  "gfx-scene-carbonate",
   "gfx-scene-gasCollection",
   "gfx-scene-heating",
   "gfx-scene-indicator",
   "gfx-scene-metanSpalanie",
   "hf-paradox",
+  "ion-vs-diss",
   "ka-pka-table",
   "kinetics-v01",
   "lab-beaker-v102",
   "lab-library-v001",
+  "lab-stations-v102",
+  "live-cv",
+  "mind-map",
   "molecule-2d",
   "molecule-cv",
   "molecule-electrons",
   "molecule-orbitals",
+  "molecule3d-merged",
+  "n01-konstruktor-v01",
+  "n01-reaktor-v01",
+  "n01-tlenki-v01",
+  "n01-trend-v01",
+  "j03-osady-v01",
   "naming-table",
   "neutralization",
   "obtaining-hcl-steps",
   "obtaining-three",
+  "f05-izotopy-v01",
+  "periodic-54",
   "ph-ladder",
   "reaction",
   "safety",
@@ -1231,6 +1312,7 @@
   "f09-trzy-liczby-v01",
   "f10-energia-h2-v01",
   "f15-dipol-v01",
+  "r03-krzyz-v01",
   "fiz02-obwod-v01",
   "beaker",
   "zlewkaOdwrocona",
@@ -1357,8 +1439,6 @@
   "hyd-cuso4",
   "metanSpalanie",
   "krzywe-rozpuszczalnosci",
-  "palenie",
-  "lancuch-przemian",
   "molekula-2d",
   "plomien",
   "zlewka",
@@ -1380,24 +1460,16 @@
   "f06I2Kbr"
  ],
  "jeden": [
-  "acid-game",
   "acid-rain-v01",
-  "beaker-prediction-enhanced",
-  "energy-profile",
-  "fiz-przewodniki-v01",
+  "chain-scn",
+  "gfx-scene-acidMetal",
   "gfx-scene-dilution",
   "gfx-scene-titration",
   "ion-map-v02",
-  "ion-vs-diss",
   "kw-bufor-v01",
+  "kw-dysocjacja-v01",
   "kw-wlasciwosci-v01",
-  "lab-stations-v102",
-  "live-cv",
-  "mind-map",
-  "n01-konstruktor-v01",
-  "n01-reaktor-v01",
-  "n01-tlenki-v01",
-  "n01-trend-v01",
+  "n01-spalanie-v01",
   "n02-dysocjacja-v01",
   "n02-otrzymywanie-v01",
   "n02-przeglad-v01",
@@ -1405,13 +1477,11 @@
   "n02-stracanie-v01",
   "n02-wzory-v01",
   "n02-zobojetnianie-v01",
-  "j03-osady-v01",
   "reakcje-kwasu-v03",
   "titration-merged",
   "n05-wodorki-v01",
   "n05-trendy-v01",
   "f17-bilans-v01",
-  "r03-krzyz-v01",
   "acidMetal",
   "indicator",
   "carbonate",
@@ -1423,17 +1493,33 @@
   "na2co3Hcl",
   "hyd-na2co3",
   "hyd-nh4cl",
+  "lancuch-poziomow",
+  "zlewka-predykcja",
+  "mapa-mysli",
+  "destylacja",
+  "palenie",
   "bilans-spalania",
   "sklad-procentowy",
+  "konstruktor-tlenku",
+  "detektor-tlenku",
+  "reaktor-tlenku",
+  "trend-tlenkow",
   "uklad-okresowy",
+  "profil-energii",
+  "gra-klasyfikacja",
   "haworth",
+  "regula-krzyzowa",
   "schemat-przemian",
   "konfiguracje",
-  "probowki-wybor",
+  "przewodnik-izolator",
+  "linie-pola",
   "estryfikacja",
-  "palnik-gazowy",
   "nadmiar-substratu",
   "probowki",
+  "osady-dwie-sole",
+  "dysocjacja-vs-jonizacja",
+  "przeniesienie-protonu",
+  "tester-przewodnictwa",
   "eutrofizacja",
   "sekwencje",
   "wirus-bakteria",
@@ -1465,25 +1551,13 @@
   "f06Br2Ki"
  ],
  "wiele": [
-  "chain-scn",
-  "fiz-coulomb-v01",
-  "fiz-elektroskop-v01",
-  "fiz-elektryzowanie-v01",
-  "fiz-ladunek-v01",
-  "gfx-scene-acidMetal",
-  "gfx-scene-carbonate",
   "gfx-scene-conductivity",
   "gfx-scene-indicatorRack",
   "kw-doswiadczenia-v01",
-  "kw-dysocjacja-v01",
   "kw-reszty-v01",
   "kw-szereg-metali-v01",
-  "molecule3d-merged",
   "n01-doswiadczenia-v01",
-  "n01-spalanie-v01",
   "n02-doswiadczenia-v01",
-  "f05-izotopy-v01",
-  "periodic-54",
   "ph-indicators-v03",
   "rownania-jonowe-v01",
   "sole-doswiadczenia-v01",
@@ -1492,18 +1566,30 @@
   "conductivity",
   "caoH2o",
   "cuso4Hydrate",
+  "czasteczki-3d",
+  "izotopy",
   "trojkat-przeliczen",
   "diagram-bohra",
+  "uklad-okresowy-54",
+  "lancuch-przemian",
   "karta-bhp",
   "petla-regulacji",
   "krzyzowka-mendla",
   "kalkulator-mola",
   "probowki-odczyn",
+  "probowki-wybor",
+  "elektryzowanie",
+  "kule-ladunek",
+  "elektroskop",
+  "prawo-coulomba",
   "palniki",
   "bilans-rownania",
   "zbieranie-gazu",
+  "palnik-gazowy",
   "doswiadczenie",
+  "rownania-jonowe",
   "wzor-2d",
+  "tabela-rozpuszczalnosci",
   "gruczoly-mapa",
   "kod-genetyczny",
   "drabina",
