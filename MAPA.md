@@ -3,7 +3,7 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (19 pl., 519 KB)
+## .  (19 pl., 520 KB)
 - (zwinięte; `ls .`) — duże:
 - ⚠`INDEKS.html` 55 KB
 - ⚠`SPIS_WSZYSTKICH.md` 61 KB
@@ -183,7 +183,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (17 pl., 202 KB)
+## chemia/che-modular  (17 pl., 203 KB)
 - (zwinięte; `ls chemia/che-modular`) — duże:
 - ⚠`PROGRESS.md` 66 KB
 
@@ -408,7 +408,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/lessons-md/archiwum  (1 pl., 58 KB)
 - ⚠`N06_wodorki_stary.md` 58 KB
 
-## chemia/che-modular/lessons-md/gotowe  (88 pl., 3.1 MB)
+## chemia/che-modular/lessons-md/gotowe  (85 pl., 2.7 MB)
 - (zwinięte; `ls chemia/che-modular/lessons-md/gotowe`) — duże:
 - ⚠`F01_jak_mysli_chemik.md` 62 KB
 - ⚠`F02_materia_i_substancje.md` 55 KB
@@ -533,7 +533,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/wizualizacje_r4  (1 pl., 35 KB)
 - `Wizualizacje_do_lekcji_R4.html` 35 KB
 
-## chemia/html  (126 pl., 13.9 MB)
+## chemia/html  (127 pl., 14.1 MB)
 - (zwinięte; `ls chemia/html`) — duże:
 - ⚠`C1c_konfiguracje_elektronowe.html` 202 KB
 - ⚠`C2m_mol_masa_molowa.html` 107 KB
@@ -601,8 +601,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE.07.K10.regula_le_chateliera.md` 14 KB
 - `CHE.07.K11.rownowaga_ilosciowa.md` 18 KB
 
-## chemia/lekcje_md/N  (6 pl., 402 KB)
-- `CHE.02.N01.powietrze_i_gazy.md` 33 KB
+## chemia/lekcje_md/N  (5 pl., 369 KB)
 - ⚠`CHE.02.N03.wodorotlenki.md` 134 KB
 - ⚠`CHE.02.N04.kwasy.md` 137 KB
 - ⚠`CHE.02.N05.sole.md` 89 KB
@@ -670,7 +669,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PILNE_F20_klinika_bledow_fundamentow.md` 21 KB
 - `PILNE_F21_zadania_transferowe_i_diagnostyka.md` 23 KB
 
-## chemia/plany  (28 pl., 827 KB)
+## chemia/plany  (28 pl., 828 KB)
 - (zwinięte; `ls chemia/plany`) — duże:
 - ⚠`BANK_PYTAN_CHE.md` 89 KB
 - ⚠`CHE_SPIS_TRESCI.md` 59 KB
@@ -725,17 +724,21 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE.06.X01-X09.redoks__supernauka.md` 1 KB
 - `N05_sole__zasady_blok.md` 1 KB
 
-## chemia/plany/niewykorzystane/wersje_gotowe  (2 pl., 55 KB)
+## chemia/plany/niewykorzystane/wersje_gotowe  (5 pl., 407 KB)
 - `F13_wzory_elektronowe_lewis.md` 20 KB
 - `F16_od_obserwacji_do_modelu_reakcji.md` 35 KB
+- ⚠`N03_wodorotlenki.md` 131 KB
+- ⚠`N04_kwasy.md` 135 KB
+- ⚠`N05_sole.md` 86 KB
 
-## chemia/plany/niewykorzystane/wersje_lekcje_md  (6 pl., 185 KB)
+## chemia/plany/niewykorzystane/wersje_lekcje_md  (7 pl., 218 KB)
 - `CHE.01.F01.jak_mysli_chemik.md` 22 KB
 - `CHE.01.F02.materia_i_substancje.md` 21 KB
 - `CHE.01.F03.wlasciwosci_i_rozdzielanie_mieszanin.md` 29 KB
 - `CHE.01.F04.atom.md` 21 KB
 - ⚠`CHE.01.F06.uklad_okresowy.md` 72 KB
 - `CHE.01.F10.dlaczego_atomy_sie_lacza.md` 20 KB
+- `CHE.02.N01.powietrze_i_gazy.md` 33 KB
 
 ## chemia/plany/paczki  (1 pl., 241 KB)
 - ⚠`GOTOWE_CHE_NASTEPNE_10.md` 241 KB

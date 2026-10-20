@@ -64,3 +64,4 @@ REV01|lekcje_md 123KB 2026-10-20 CHE.00.REV01.powtorka_klasy_7.md|gotowe 69KB 20
 - F13, F16 → lekcje_md (przegrane gotowe → chemia/plany/niewykorzystane/wersje_gotowe/)
 - 16 identycznych kopii → gotowe (kopie lekcje_md → niewykorzystane/identyczne_kopie_lekcje_md/)
 - Wybór zapisany w chemia/plany/WYBOR_WERSJI.json; builder: narzedzia/zbuduj_wszystkie.py che
+- N01 → gotowe; N03, N04, N05 → lekcje_md (przegrane gotowe → niewykorzystane/wersje_gotowe/, lekcje_md N01 → wersje_lekcje_md/)

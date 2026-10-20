@@ -801,6 +801,7 @@
    "LKO_ORG06_estry": 1,
    "LKO_ORG07_cukry": 1,
    "LKO_ORG08_mol_gazy": 1,
+   "N01": 1,
    "X04": 1
   },
   "uklad-okresowy": {
@@ -854,7 +855,8 @@
    "LKO_ORG06_estry": 1
   },
   "zbieranie-gazu": {
-   "LKO_ORG08_mol_gazy": 1
+   "LKO_ORG08_mol_gazy": 1,
+   "N01": 1
   },
   "palnik-gazowy": {
    "LKO_ORG01_alkany": 1
@@ -1426,7 +1428,6 @@
   "schemat-przemian",
   "konfiguracje",
   "estryfikacja",
-  "zbieranie-gazu",
   "palnik-gazowy",
   "nadmiar-substratu",
   "probowki",
@@ -1497,6 +1498,7 @@
   "probowki-odczyn",
   "palniki",
   "bilans-rownania",
+  "zbieranie-gazu",
   "doswiadczenie",
   "wzor-2d",
   "gruczoly-mapa",
