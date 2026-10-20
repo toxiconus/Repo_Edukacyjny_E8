@@ -255,3 +255,4 @@
 - 2026-10-20: H-A — odświeżone spisy: MAPA, BIO_KATALOG (tabela 58 lekcji, KB, @viz, audyty; katalog grafik zaktualizowany generatorem).
 - 2026-10-20: H-B — REV01/REV02 sprawdzone: wszystkie @viz/@klocek z @opis; naprawiony sklejony nagłówek AUDYT W19 (REV01). Brak LaTeX-a.
 - 2026-10-20: H-C — 7 lekcji BIO: etykieta zakresu „LKO biologia 2025/26” zmieniona na 2026/27 (treść bez zmian). Tkanki roślinne: wymienione w REV02 §4 (zakres etapu I); lekcje BIO.07 dotyczą człowieka, bez zmian.
+- 2026-10-20: H-D — ZIP przekazania zbudowany (eksport/out/PRZEKAZANIE_2026-10-20.zip, 226 md, 144 html, arkusze, olimpiada/).

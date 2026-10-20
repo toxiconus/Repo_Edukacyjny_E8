@@ -8,7 +8,7 @@ Priorytet: biologia LKO etap szkolny, środa 21.10.2026, 9:00, 60 min. Nie pisa�
 - [x] H-A. Odświeżyć spisy: `python3 narzedzia/mapa.py`, `biologia/bio/BIO_KATALOG.md` (KB, stan audytów), wpis w `chemia/che-modular/PROGRESS.md`.
 - [x] H-B. Sprawdzić REV01 po buildzie: każde `@viz`/`@klocek` ma `@opis`; brak sklejonych nagłówków „{#id}…” i LaTeX-a `\(`.
 - [x] H-C. Przeszukać lekcje biologii pod kątem „LKO 2025/26” i tkanek roślinnych jako wymogu (zakres 2026/27).
-- [ ] H-D. Zbudować ZIP przekazania (md + html + małe silniki + przekazanie + `olimpiada/` z datami).
+- [x] H-D. Zbudować ZIP przekazania (md + html + małe silniki + przekazanie + `olimpiada/` z datami).
 - [ ] H-E. Przed wklejeniem odpowiedzi Perplexity dla REV02: automatyczne naprawy formatu (sklejone nagłówki, LaTeX→Unicode `narzedzia/latex2uni.py`, frontmatter `---`).
 - [ ] H-F. Policzyć KB przed/po dla lekcji i wpisać do `WERYFIKACJA.md`.
 
