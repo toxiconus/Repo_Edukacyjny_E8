@@ -2552,6 +2552,21 @@ mount:function(el,o){
       {n:'wymiana z tkankami',m:[200,84],d:'Przez ścianę dyfundują: O₂ i substancje odżywcze → do tkanek; CO₂ i produkty przemiany materii → do krwi.',draw:function(g){g.appendChild(P('M150,100 L150,64 M144,72 L150,64 L156,72',null,'#2a6f97',3));g.appendChild(P('M210,64 L210,100 M204,92 L210,100 L216,92',null,'#8d6e63',3));g.appendChild(BIO.T(150,52,'O₂, glukoza',{s:9.5,w:700,f:'#2a6f97'}));g.appendChild(BIO.T(215,52,'CO₂',{s:9.5,w:700,f:'#8d6e63'}))}},
       {n:'tkanka',m:[24,190],z:-2,d:'Komórki otaczające naczynie pobierają z krwi tlen i składniki odżywcze, a oddają CO₂ i produkty przemiany materii.',draw:function(g){[[60,190],[150,196],[240,190],[310,196]].forEach(function(p){g.appendChild(E(p[0],p[1],26,16,'#fff3d6','#c9a227',1.5));g.appendChild(C(p[0],p[1],4,'#b8860b','none',0))})}}
     ]}}})}});
+/* =====================================================================
+   UKŁAD LIMFATYCZNY — schemat: płyn tkankowy → naczynia limfatyczne → węzeł → przewód piersiowy → żyła → serce
+   ===================================================================== */
+BIO.define('uklad-limfatyczny',{opis:'Układ limfatyczny: naczynia włosowate limfatyczne zbierają płyn tkankowy, węzły chłonne filtrują limfę, przewód piersiowy wpada do żyły podobojczykowej; tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  lab(el,{get:function(){return{w:360,h:230,label:'Układ limfatyczny — schemat',parts:[
+    {n:'tkanka',m:[60,206],z:-2,d:'Tkanka zbudowana z komórek. Płyn między komórkami (tkankowy) wypełnia przestrzenie międzykomórkowe i jest źródłem limfy.',draw:function(g){g.appendChild(R(20,150,150,70,8,'#fff8e1','#c9a227',1.2));[[46,170],[86,196],[130,172],[154,200]].forEach(function(p){g.appendChild(E(p[0],p[1],11,8,'#fff3d6','#c9a227',1.2))})}},
+    {n:'płyn tkankowy',m:[120,122],z:-1,d:'Płyn, który przesącza się z krwi do tkanek. Część tego płynu wchłaniają naczynia limfatyczne i zamienia go w limfę.',draw:function(g){[[100,138],[124,132],[146,140],[112,156],[138,160]].forEach(function(p){g.appendChild(C(p[0],p[1],2.5,'#4fa3d1','none',0))})}},
+    {n:'naczynia włosowate limfatyczne',m:[44,112],d:'Najcieńsze naczynia limfatyczne, ślepo zakończone. Płyn wnika do nich przez cienkie ściany, a nie przez pompowanie krwi.',draw:function(g){[[48,150,46,122],[68,150,72,126],[86,150,84,128]].forEach(function(l){g.appendChild(L(l[0],l[1],l[2],l[3],'#2a7f62',2))})}},
+    {n:'naczynie limfatyczne',m:[100,84],d:'Naczynie z zastawkami, które nie pozwalają limfie cofać się. Ruch limfy napędzają skurcze mięśni i ruchy ciała, a nie serce.',draw:function(g){g.appendChild(P('M52,118 C80,96 110,92 150,76 S206,56 238,44','none','#2a7f62',4.5));[[78,102],[120,90],[180,66]].forEach(function(p){g.appendChild(P('M'+(p[0]-5)+','+(p[1]+4)+' Q'+p[0]+','+(p[1]-6)+' '+(p[0]+5)+','+(p[1]+4),null,'#e8f5e9',2))})}},
+    {n:'węzeł chłonny',m:[160,66],d:'Mały narząd z tkanki limfatycznej na drodze naczynia. Filtruje limfę i wytwarza limfocyty; w infekcji węzły mogą się powiększać.',draw:function(g){[[150,74],[224,50]].forEach(function(p){g.appendChild(E(p[0],p[1],13,9,'#ffe0b2','#e65100',1.8));g.appendChild(C(p[0],p[1],3,'#e65100','none',0))})}},
+    {n:'przewód piersiowy',m:[268,126],d:'Największy przewód limfatyczny. Biegnie wzdłuż kręgosłupa i zbiera limfę z dolnej części ciała oraz lewej połowy klatki piersiowej i górnej części ciała.',draw:function(g){g.appendChild(P('M262,206 L262,160 Q262,110 266,70 Q268,50 272,40','none','#2a7f62',3.5,{'stroke-dasharray':'8 4'}))}},
+    {n:'żyła podobojczykowa',m:[300,50],d:'Duża żyła przy szyi. Limfa z przewodu piersiowego wpływa do krwi właśnie tutaj, dlatego płyn wraca do krwiobiegu.',draw:function(g){g.appendChild(P('M272,40 Q326,44 330,126','none','#5c6bc0',7))}},
+    {n:'serce',m:[326,156],d:'Pompuje krew do całego ciała. Limfa nie przepływa przez serce, ale wpływa do krwi tuż przed nim, w żyłach szyi.',draw:function(g){g.appendChild(P('M326,176 C300,156 300,128 316,128 C322,128 326,134 326,140 C326,134 330,128 336,128 C352,128 352,156 326,176Z','#f8d7da','#b71c1c',1.6))}}
+  ]}}})}});
 })();
 
 /* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,

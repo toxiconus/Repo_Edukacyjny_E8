@@ -297,6 +297,12 @@ Grupa ABO i czynnik Rh są ustalone przez geny i zwykle nie zmieniają się w ci
 
 ## 7 | Układ limfatyczny [[basic:E8]] {#limfa}
 
+@viz uklad-limfatyczny | Układ limfatyczny — schemat | kliknij, znajdź, podpisz
+@opis Schemat: płyn tkankowy przesącza się do naczyń włosowatych limfatycznych (ślepo zakończonych), płynie naczyniem z zastawkami przez węzeł chłonny do przewodu piersiowego, który wpada do żyły podobojczykowej przy szyi. Wniosek: limfa wraca do krwi, a węzły chłonne filtrują ją i wytwarzają limfocyty.
+
+**Zadanie (wskaż):** wskaż miejsce, w którym limfa wpada do krwi, i podaj nazwę naczynia, które ją tam doprowadza. **Odpowiedź:** żyła podobojczykowa przy szyi; doprowadza przewód piersiowy.
+
+
 Z naczyń włosowatych do tkanek stale przesącza się trochę osocza — powstaje **płyn tkankowy**, który obmywa komórki. Większość wraca do krwi, ale nadmiar zbierają cienkie **naczynia limfatyczne** — płyn nazywa się wtedy **limfą (chłonką)**. Naczynia limfatyczne uchodzą do dużych żył w okolicy serca, więc limfa wraca do krwi.
 
 | Element | Rola |
