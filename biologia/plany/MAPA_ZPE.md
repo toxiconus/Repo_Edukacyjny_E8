@@ -63,9 +63,14 @@ Kolumna „Do sprawdzenia” wskazuje, czego w ZPE szukać przy porównaniu tre�
 | BIO.07.H01 homeostaza | https://zpe.gov.pl/a/homeostaza-i-jej-znaczenie/D1CAWAqes · https://zpe.gov.pl/pdf/PG8n8vtiw · https://zpe.gov.pl/a/przeczytaj/DfLcNAjVd | Homeostaza i jej znaczenie; współdziałanie narządów w utrzymaniu homeostazy; rola skóry | dopasowanie | sprzężenie zwrotne ujemne |
 | BIO.07.U04 krążenie krwi i odporność | https://zpe.gov.pl/a/uklad-krazenia/DXdj9hKWi · https://zpe.gov.pl/a/budowa-ukladu-krwionosnego-i-krazenie-krwi/DCS5SXMQM · https://zpe.gov.pl/a/przeczytaj/DOvkdDfCz | Układ krążenia; budowa układu krwionośnego i krążenie krwi; duży i mały obieg krwi | dopasowanie | obiegi krwi; serce — jednostki czynnościowe |
 | BIO.04.L044 powtórka ekologii | https://zpe.gov.pl/a/funkcjonowanie-ekosystemu/D18nMx7t7 · https://zpe.gov.pl/a/ekosystem---struktura-i-zachodzace-w-nim-zmiany/DFQV8ORDU · https://zpe.gov.pl/watek/LP1AiS7FIG/3/b/ekologia-i-ochrona-srodowiska---podsumowanie/P1HXfFmRd | Funkcjonowanie ekosystemu; struktura ekosystemu; ekologia i ochrona środowiska — podsumowanie | dopasowanie | powtórka — przeglądowe |
+| BIO.02.L002 powtórka: człowiek | https://zpe.gov.pl/pdf/PC38JPLEn · https://zpe.gov.pl/a/sprawdzian-wiadomosci/D1ADy6z72 | Powtórzenie i sprawdzenie wiadomości o budowie i funkcjonowaniu układów; sprawdzian wiadomości | dopasowanie (powtórka) | zakres: układy człowieka z lekcji B2a–B2g |
+| BIO.01.L003 diagnoza | https://zpe.gov.pl/a/sprawdzian-wiadomosci/DiX2fuqw0 | Sprawdzian wiadomości (diagnoza — wstępny) | dopasowanie (diagnoza) | diagnoza nie ma treści merytorycznej |
+| BIO.02.L021 powtórka genetyki | https://zpe.gov.pl/a/istota-dziedziczenia/DooFvjn64 · https://zpe.gov.pl/a/dziedziczenie-wybranych-cech-u-czlowieka/D12GJxnZT · https://zpe.gov.pl/watek/LP6JF4B5G1/47/a/chromosomowa-teoria-dziedziczenia-i-geny-sprzezone/DD84M2KOH · https://zpe.gov.pl/a/dziedziczenie-wielogenowe/D6CPNSC3Q | Istota dziedziczenia; dziedziczenie wybranych cech u człowieka; chromosomowa teoria dziedziczenia; dziedziczenie wielogenowe | dopasowanie (powtórka) | zakres: L010–L020 |
+| BIO.05.L050 powtórka roczna | https://zpe.gov.pl/a/sprawdzian-wiadomosci/D1ADy6z72 · https://zpe.gov.pl/watek/LP39PsV0tl/51/a/podsumujmy-zdobyta-wiedze/DMThRIvnY | Sprawdzian wiadomości; podsumowanie: od genu do ewolucji życia | dopasowanie (powtórka roczna) | zakres: cały rok |
+| BIO.06.L090 extra olimpijska | https://zpe.gov.pl/b/konkurs-przedmiotowy-biologia-czesc-1/PN4XTdqo9 | Konkurs przedmiotowy z biologii — część 1 | dopasowanie (olimpiada) | zadania konkursowe, poziom olimpijski |
 
 ## Uwagi
 
 - Wyniki wyszukiwania zwracają czasem te same materiały dla kilku tematów; zostały przypisane do najbliższej lekcji.
-- Bez wierszy (brak wyników wyszukiwania): BIO.01.L002, BIO.01.L003, BIO.02.L016A, BIO.02.L021, BIO.05.L050, BIO.06.L090.
+- Wszystkie lekcje z BIO mają wiersz (powtórki i diagnoza — materiały przeglądowe).
 - Materiały ZPE nie są kopiowane do lekcji; służą jako źródło do porównania (H-Z3).
