@@ -32,7 +32,7 @@ Priorytet: biologia LKO etap szkolny, środa 21.10.2026, 9:00, 60 min. Nie pisa�
 - **H-D4 (starsze wersje BIO) — ZROBIONE 2026-10-20:** porównano 40 starych plików z nowymi (wg pogrubionych terminów). Prawie wszystko już jest. Jedyne braki: czasy w planach powtórek (L032, L044, L050) — ODRZUCONE, bo obowiązuje zasada „bez planów czasowych”; tagi `[konkurs]`/`[master]` — metadane, nie treść. Nic nie dopisywano. Stare pliki zostają w `biologia/niewykorzystane/starsze_wersje_lekcji/`.
 
 - [~] H-Z1. **Mapa ZPE dla biologii:** dla każdej lekcji z `SPIS_LEKCJI.md` (BIO) znaleźć na zpe.gov.pl (WebSearch „zpe.gov.pl <temat>”, WebFetch strony e-materiału) odpowiadające e-materiały; zapisać w `biologia/plany/MAPA_ZPE.md`: lekcja → URL → temat ZPE → status (pokryte / brak w lekcji: co). Po 10 lekcjach commit. Bez pytania „dalej?”.
-  - Postęp (2026-10-20): 51 lekcji w `MAPA_ZPE.md` (trzy partie, commity e271bbf, e442ec8, bbc1387). Bez wierszy: BIO.01.L002, L003, L001A, BIO.02.L016/L016A, B1b, L021, BIO.04.L044, L050, BIO.06.L090, BIO.07.H01, U04 (szczegóły w pliku).
+  - Postęp (2026-10-20): 57 wierszy w `MAPA_ZPE.md` (commity e271bbf, e442ec8, bbc1387 i kolejny). Bez wierszy: BIO.01.L002, L003, BIO.02.L016A, L021, BIO.05.L050, BIO.06.L090 (do wyszukania lub oznaczenia jako powtórki bez ZPE).
 - [ ] H-Z2. **To samo dla chemii** → `chemia/plany/MAPA_ZPE.md`; potem dla polskiego i fizyki, jeśli ZPE ma materiały.
 - [ ] H-Z3. **Sprawdzenie treści z ZPE:** dla lekcji z mapy porównać definicje i liczby z ZPE; rozbieżności i braki zakresu wpisać do `WERYFIKACJA.md`, oczywiste braki dopisać do lekcji (nie usuwając treści); wątpliwe zostawić Sonnetowi.
 
