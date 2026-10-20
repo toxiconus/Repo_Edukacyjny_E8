@@ -145,7 +145,7 @@ $$\text{BaCl}_2 + \text{Na}_2\text{SO}_4 \rightarrow \text{BaSO}_4\downarrow + 2
 
 Jonowa skrócona dla AgNO₃ + NaCl: **Ag⁺ + Cl⁻ → AgCl↓**.
 
-@model kw-szereg-metali-v01 | Szereg aktywności: metale w kwasie solnym | Silnik CHE · otwiera się w oknie
+@klocek probowki-wybor {zestaw="metale-hcl" wybrane="Mg,Zn,Fe,Cu" max="4"} | Szereg aktywności: metale w kwasie solnym
 @opis Cztery probówki z kwasem solnym i metalami Mg, Zn, Fe, Cu obok siebie: magnez reaguje najgwałtowniej, cynk wyraźnie, żelazo powoli, miedź wcale (brak pęcherzyków). Pod probówkami równania reakcji. Wniosek: z kwasów wodór wypierają tylko metale aktywniejsze od wodoru — szereg aktywności Mg > Zn > Fe > (H) > Cu.
 
 ### 4. Reguła NPSW — kiedy reakcja zachodzi

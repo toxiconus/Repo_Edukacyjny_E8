@@ -87,7 +87,7 @@ Z rozcieńczonymi kwasami (np. HCl) reagują tylko metale przed wodorem. Wypiera
 
 Uwaga: stężony kwas siarkowy(VI) i kwas azotowy(V) są kwasami utleniającymi. Reagują także z miedzią i srebrem, ale nie wydzielają wodoru. Ten temat wykracza poza etap szkolny (do potwierdzenia).
 
-@model kw-szereg-metali-v01 | Szereg aktywności: metale w kwasie solnym | Silnik CHE · otwiera się w oknie
+@klocek probowki-wybor {zestaw="metale-hcl" wybrane="Mg,Zn,Fe,Cu" max="4"} | Szereg aktywności: metale w kwasie solnym
 @opis Cztery probówki z kwasem solnym i metalami Mg, Zn, Fe, Cu obok siebie: magnez reaguje najgwałtowniej, cynk wyraźnie, żelazo powoli, miedź wcale (brak pęcherzyków). Pod probówkami równania reakcji. Wniosek: z kwasów wodór wypierają tylko metale aktywniejsze od wodoru — szereg aktywności Mg > Zn > Fe > (H) > Cu.
 
 @klocek doswiadczenie {tytul="Metale z kwasem solnym" cel="Sprawdzić, które metale stoją przed wodorem w szeregu aktywności." sprzet="probówki, rozcieńczony kwas solny HCl, Mg, Zn, Cu" bhp="Przed doświadczeniem,Kwasy i zasady" scena="probowki-wybor" s_zestaw="metale-hcl" s_wybrane="Mg,Zn,Cu" rownanie="Mg + 2HCl -> MgCl2 + H2"} | Wybierz metale: które reagują z HCl i co powstaje

@@ -269,3 +269,4 @@
 - 2026-10-20: H-D1 — decyzje dla F06, F10 (gotowe), F13, F16 (lekcje_md); przegrane w niewykorzystane/wersje_*.
 - 2026-10-20: H-D1 zakończone: wszystkie 52 pary rozstrzygnięte (16 identycznych, F/N/K/J/R/REV wg decyzji i reguły większa wersja). Builder che: 127 lekcji.
 - 2026-10-20: silnik chemii = modułowy (lite.py + klocki); pakiety i okładki na lite; duży che-viz.js poza buildem. 15 lekcji ma przyciski zastępcze dla 12 modeli (zadanie S-S1).
+- 2026-10-20: S-S1 krok 1: kw-szereg-metali-v01 zastąpiony klockiem probowki-wybor {metale-hcl} w X04 i C1c (bez błędów JS).
