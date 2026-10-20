@@ -152,3 +152,13 @@ Efekty, naczynia i reakcje to warstwy wspólne silnika (panel efektów i sceny j
 | wspolne / efekty | 5 | 3.3 |
 | wspolne / naczynia | 2 | 0.4 |
 | wspolne / widoki | 1 | 4.5 |
+
+## Luki z archiwum fragmentów (2026-10-20, H-D3)
+Pomysły z wersji main, których nie ma jeszcze w silniku. Budować jako komponenty wielokrotnego użytku (zasada z CLAUDE.md), nie jednorazowo w lekcji.
+- F01 — magnes przy mieszaninie Fe + S (przyciąga opiłki przed reakcją, nie przyciąga FeS); lód pływający w wodzie (topnienie); osad i para w parownicy (`evapDish` ich nie rysuje — odparowanie pokazywać w zlewce).
+- F02 — zlewka z dwiema warstwami cieczy (olej na wodzie); lód pływający w wodzie; magnes wyciągający opiłki żelaza z mieszaniny; wiązka światła w koloidzie (efekt Tyndalla); drzewo klasyfikacji próbki („Rozpoznaj próbkę”, V002).
+- F03 — lejek z sączkiem i przesączem (sączenie krok po kroku); zestaw do destylacji z odbieralnikiem i termometrem; rozdzielacz z dwiema warstwami; chromatografia bibułowa (pasma barwników); magnes zbierający opiłki; kolumna destylacji frakcyjnej ropy.
+- F04 — „Atom zoom” (V003): jądro z licznikiem p/n, elektrony, przełącznik skali schematyczna/rzeczywista; konstruktor atomu i jonu (dodaj/zabierz proton, neutron, elektron — widać zmianę pierwiastka, izotopu albo ładunku); animacja doświadczenia Rutherforda.
+- F06 — dane z silnika: `ELEMENTS_54`, `ATOM_META`, `ATOMIC_PROPS`, `FIRST_IONIZATION_ENERGY`; brakujące promienie kowalencyjne (34 pierwiastki) z `COVALENT_RADIUS_EXT` (do weryfikacji); tryby rozszerzają `periodic-54`.
+- FIZ01 — mapa myśli, checklista i plan powtórek (sekcja 14a): już w lekcji; w wersji main była dłuższa, do porównania przy następnej edycji.
+Źródło: `chemia/plany/niewykorzystane/*__fragmenty_*`.
