@@ -411,3 +411,11 @@ Bez zmian w treści lekcji. Źródła ZPE z mapy.
 - BIO.02.B2b (trzustka 95% egzokrynnej / 5% endokrynnej; wątroba ok. 1,5 kg; kcal/g) — ZPE nie podaje tych liczb. Zostaje jako wiedza podręcznikowa; do potwierdzenia przy kolejnej weryfikacji.
 - BIO.02.B2c (pęcherzyki płucne) — ROZBIEŻNOŚĆ: lekcja „ok. 300–500 mln”, ZPE „ok. 600 mln” i powierzchnia wymiany „90 m²”. Do decyzji Sonneta (oba źródła podają różne przedziały, zapisać w lekcji wartość z przypisem albo zaokrąglić). Skład powietrza wdychanego (21% O₂, 0,04% CO₂) zgodny; ZPE podaje wydychane O₂ 16%, CO₂ 4% (ilustracja 4,5%) — lekcja podaje powietrze pęcherzykowe 5,3% CO₂, nieobecne w ZPE.
 - BIO.02.B2d (potencjał spoczynkowy −70 mV, próg −55 mV, szczyt +30 mV) — ZPE na tej stronie nie podaje wartości potencjałów. Prędkości przewodzenia: ZPE 5–130 m/s dla nerwów obwodowych — zgodne z zakresem w lekcji (8 i 40 m/s), które lekcja już oznacza jako „do potwierdzenia”.
+
+## H-Z3 — partia 7: chemia (stężenia, węglowodory, polimery) (2026-10-20)
+
+Bez zmian w treści lekcji. Źródła ZPE z `chemia/plany/MAPA_ZPE.md`.
+
+- CHE.03.R03 (stężenia) — Cm = n/V (mol/dm³), n = m/M, Cp = ms/mr·100%, przeliczenie Cp → Cm z gęstością — zgodne z ZPE. ZPE nie zawiera wzoru c₁V₁ = c₂V₂ (rozcieńczanie); lekcja go podaje jako standard szkolny — zostaje.
+- CHE.05.O01 (węglowodory) — wzory ogólne CₙH₂ₙ₊₂, CₙH₂ₙ, CₙH₂ₙ₋₂ oraz stan skupienia według długości łańcucha zgodne z ZPE. ZPE jest niespójny co do wpływu rozgałęzień na temperaturę wrzenia (raz podnosi, raz obniża) — lekcja o tym nie pisze, więc nie ma sprzeczności; wiedza podręcznikowa: rozgałęzienie obniża temperaturę wrzenia. Do rozważenia przy dopisywaniu. ZPE nie opisuje spalania; lekcja zawiera spalanie — zostaje.
+- CHE.05.O21 (polimery) — ZPE nie opisuje polikondensacji mechanizmowo, nie podaje monomerów PE/PVC/PET ani HCl z PVC. Lekcja zawiera te treści (standard szkolny) — zostają. Uwaga: w nagłówku lekcji zapisano „W1 nieprzeprowadzony — wartości liczb” — do uzupełnienia przy kolejnej weryfikacji liczb.
