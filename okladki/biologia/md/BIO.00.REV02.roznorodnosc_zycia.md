@@ -469,11 +469,17 @@ Zbieraj tylko grzyby, które znasz na pewno; w razie wątpliwości — do sanepi
 | działanie | zależne od woli | niezależne od woli | niezależne od woli |
 | gdzie | mięśnie przyczepione do kości | ściany jelit, naczyń, żołądka | ściana serca |
 
+@viz miesnie-trzy | Trzy rodzaje mięśni | kliknij część rysunku
+@opis Trzy panele: mięsień szkieletowy — długie prążkowane włókna z jądrami przy brzegu; mięsień gładki — wrzecionowate komórki bez prążków; mięsień sercowy — prążkowane, rozgałęzione komórki połączone ciemnymi wstawkami. Wniosek: prążkowanie mają szkieletowy i sercowy, ale tylko szkieletowy działa zależnie od woli.
+
 **Typowy błąd:** „prążkowana” nie znaczy „zależna od woli” — tkanka sercowa jest prążkowana, a pracuje bez udziału woli.
 
 **Nerwowa.** Neuron ma ciało komórki z jądrem, krótkie **dendryty** (odbierają sygnały) i długi **akson** (przewodzi impuls dalej). Długie wypustki pozwalają przekazywać informację na odległość. Tkanka nerwowa tworzy mózg, rdzeń kręgowy i nerwy.
 
 **Nabłonek — rodzaje.** Kształt komórek podpowiada zadanie: **płaski** (cienka warstwa, szybka wymiana substancji — pęcherzyki płucne, ściany naczyń), **sześcienny** (wydzielanie i wchłanianie — kanaliki nerkowe, gruczoły), **walcowaty** (wchłanianie, często z mikrokosmkami — jelito cienkie), **urzęsiony** (przesuwanie śluzu i zanieczyszczeń — drogi oddechowe). Nabłonek może być jednowarstwowy (wymiana) albo wielowarstwowy (ochrona przed ścieraniem — naskórek). Nie ma w nim naczyń krwionośnych: odżywia się z leżącej pod nim tkanki łącznej.
+
+@viz nablonki-rodzaje | Rodzaje nabłonka | kliknij część rysunku
+@opis Cztery rodzaje nabłonka jednowarstwowego na wspólnej błonie podstawnej: płaski (cienkie spłaszczone komórki — wymiana gazów), sześcienny (komórki o równych bokach — wydzielanie), walcowaty (wysokie komórki z mikrokosmkami — wchłanianie) i urzęsiony (komórki z rzęskami — przesuwanie śluzu). Wniosek: kształt komórek wynika z funkcji.
 
 **Krew — co zawiera.**
 
@@ -483,6 +489,9 @@ Zbieraj tylko grzyby, które znasz na pewno; w razie wątpliwości — do sanepi
 | erytrocyty (krwinki czerwone) | bez jądra, dwuwklęsłe, z hemoglobiną | transport tlenu |
 | leukocyty (krwinki białe) | z jądrem, różne rodzaje | obrona przed drobnoustrojami |
 | trombocyty (płytki krwi) | fragmenty komórek | krzepnięcie krwi |
+
+@viz krew-skladniki | Składniki krwi | kliknij część rysunku
+@opis Rozmaz krwi: w żółtawym osoczu widać liczne czerwone, dwuwklęsłe erytrocyty bez jądra, jednego dużego leukocyta z płatowym jądrem i drobne fioletowe płytki krwi. Wniosek: erytrocyty przenoszą tlen, leukocyty bronią, płytki krzepią krew, a osocze je wszystkie transportuje.
 
 **Kość.** Substancja międzykomórkowa składa się z **soli wapnia i fosforu** (twardość, wytrzymałość na ściskanie) oraz z **włókien kolagenowych** (sprężystość, odporność na złamanie). Kość zbita jest gęsta i wytrzymała, kość gąbczasta ma beleczki i jest lżejsza.
 

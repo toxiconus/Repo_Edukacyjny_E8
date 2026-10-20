@@ -2,7 +2,7 @@
 
 Zasada: przed nowym rysunkiem sprawdź tę listę — używamy i ulepszamy istniejące (nowe i stare), nie dublujemy.
 
-## 1. Komponenty BIO (`biologia/bio/szablon/`: bio-viz.js legacy, bio-rysunki.js — małe komponenty z trybem podpisz, wizualizacje/ — biblioteka z gałęzi che-lekcje) — 77
+## 1. Komponenty BIO (`biologia/bio/szablon/`: bio-viz.js legacy, bio-rysunki.js — małe komponenty z trybem podpisz, wizualizacje/ — biblioteka z gałęzi che-lekcje) — 80
 
 | id | opis | plik | użyte w |
 |---|---|---|---|
@@ -35,6 +35,9 @@ Zasada: przed nowym rysunkiem sprawdź tę listę — używamy i ulepszamy istni
 | krazenie | Obieg krwi: prawy przedsionek → prawa komora → płuca → lewy przedsionek → lewa komora → ciało → …; kropla krwi krąży sama (niebieska = odtlenowana, czerwona = utlenowana) | bio-rysunki.js | BIO.02.B10.powtorka_uklady_czlowieka |
 | neuron-budowa | Neuron: dendryty, ciało komórki, jądro, akson, osłonka mielinowa, przewężenia Ranviera, zakończenia aksonu (synapsa); tryby poznaj / znajdź / podpisz | bio-rysunki.js | BIO.02.B2d.uklad_nerwowy_zmysly |
 | nefron-budowa | Nefron: kłębuszek, torebka Bowmana, kanalik bliższy, pętla Henlego, kanalik dalszy, kanalik zbiorczy, tętniczki, naczynia okołokanalikowe; tryby poznaj / znajdź / podpisz | bio-rysunki.js | BIO.02.B2c.oddychanie_wydalanie |
+| nablonki-rodzaje | Cztery rodzaje nabłonka na błonie podstawnej: płaski, sześcienny, walcowaty (z mikrokosmkami), urzęsiony; tryby poznaj / znajdź / podpisz | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
+| krew-skladniki | Składniki krwi: osocze, erytrocyty (bez jądra, dwuwklęsłe), leukocyty (z jądrem), płytki krwi; tryby poznaj / znajdź / podpisz | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
+| miesnie-trzy | Trzy rodzaje tkanki mięśniowej: szkieletowa (prążkowana, wielojądrowa), gładka (wrzecionowate komórki), sercowa (prążkowana, rozgałęziona, wstawki); tryby poznaj / znajdź | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
 | wentylacja | Mechanika oddychania: przepona, żebra, objętość klatki i płuc; animacja wdech ↔ wydech tam i z powrotem (autostart w widoku), suwak do ręcznego sterowania, opis fazy | bio-rysunki.js | BIO.02.B2c.oddychanie_wydalanie |
 | fotosynteza-oddychanie-krazenie | Chloroplast i mitochondrium: krążenie materii (glukoza, O₂, CO₂, H₂O) i przepływ energii (światło → ATP/ciepło); kropki płyną w pętli; tryby fotosynteza / oddychanie / ob | bio-rysunki.js | BIO.00.REV01.organizacja_i_chemizm_zycia |
 | podzial-komorki-skrot | Mitoza i mejoza (2n = 4) etap po etapie: chromosomy, chromatydy, liczba komórek; autostart w widoku (do przodu i od początku), strzałki ◀ ▶, przełącznik mitoza/mejoza; op | bio-rysunki.js | BIO.02.B2f.rozmnazanie_rozwoj [typ="mej"] |

@@ -1655,6 +1655,35 @@ mount:function(el){
     {n:'naczynia okołokanalikowe',m:[16,196],z:-2,d:'Sieć naczyń włosowatych oplatająca kanaliki; przejmuje z nich wchłaniane zwrotnie substancje (woda, glukoza, jony).',draw:function(g){g.appendChild(P('M138,24 Q150,110 120,150 Q60,190 56,150 Q40,200 90,230 Q126,270 140,246 Q180,200 200,160',null,'#e57373',2.4,{'stroke-dasharray':'5 3'}));g.insertBefore(P('M138,24 Q150,110 120,150 Q60,190 56,150 Q40,200 90,230 Q126,270 140,246 Q180,200 200,160',null,'transparent',12),g.firstChild)}}
   ]}}})}});
 
+BIO.define('nablonki-rodzaje',{opis:'Cztery rodzaje nabłonka na błonie podstawnej: płaski, sześcienny, walcowaty (z mikrokosmkami), urzęsiony; tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  lab(el,{get:function(){return{w:360,h:200,label:'Rodzaje nabłonka jednowarstwowego',parts:[
+    {n:'błona podstawna',m:[180,184],z:-2,d:'Cienka warstwa, na której leży nabłonek; oddziela go od tkanki łącznej, z której nabłonek jest odżywiany (nie ma własnych naczyń krwionośnych).',draw:function(g){g.appendChild(L(8,160,352,160,'#8a8450',4))}},
+    {n:'nabłonek płaski',m:[44,126],d:'Cienkie, spłaszczone komórki. Krótka droga dla gazów i substancji: pęcherzyki płucne, ściany naczyń włosowatych.',draw:function(g){for(var i=0;i<3;i++)g.appendChild(R(10+i*26,148,26,10,4,'#f6d9c8','#b5694a',1.6))}},
+    {n:'nabłonek sześcienny',m:[132,126],d:'Komórki o podobnej wysokości i szerokości. Wydzielanie i wchłanianie: kanaliki nerkowe, gruczoły.',draw:function(g){for(var i=0;i<3;i++){g.appendChild(R(98+i*26,134,26,26,3,'#d7e4f7','#3f5aa8',1.6));g.appendChild(C(111+i*26,147,4,'#3f5aa8','none',0))}}},
+    {n:'nabłonek walcowaty',m:[224,86],d:'Wysokie, wąskie komórki, często z mikrokosmkami na szczycie, które zwiększają powierzchnię wchłaniania: jelito cienkie.',draw:function(g){for(var i=0;i<3;i++){var x=190+i*20;g.appendChild(R(x,98,20,62,3,'#dff0d8','#2e7d32',1.6));g.appendChild(C(x+10,140,4,'#2e7d32','none',0));for(var k=0;k<4;k++)g.appendChild(L(x+3+k*4.5,98,x+3+k*4.5,90,'#2e7d32',1.4))}}},
+    {n:'mikrokosmki',m:[246,66],z:1,d:'Drobne wypustki błony komórkowej na szczycie komórek jelita; zwiększają powierzchnię wchłaniania pokarmu.',draw:function(g){g.appendChild(L(190,84,250,84,'#2e7d32',1,{'stroke-dasharray':'2 3'}))}},
+    {n:'nabłonek urzęsiony',m:[318,72],d:'Komórki z rzęskami, które poruszają się rytmicznie i przesuwają śluz wraz z zanieczyszczeniami: drogi oddechowe.',draw:function(g){for(var i=0;i<3;i++){var x=268+i*26;g.appendChild(R(x,108,26,52,3,'#f3e1ef','#8e3f86',1.6));g.appendChild(C(x+13,140,4,'#8e3f86','none',0));for(var k=0;k<3;k++)g.appendChild(P('M'+(x+5+k*8)+',108 q-3,-8 2,-16',null,'#8e3f86',1.4))}}}
+  ]}}})}});
+
+BIO.define('krew-skladniki',{opis:'Składniki krwi: osocze, erytrocyty (bez jądra, dwuwklęsłe), leukocyty (z jądrem), płytki krwi; tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  lab(el,{get:function(){return{w:360,h:200,label:'Rozmaz krwi i jego składniki',parts:[
+    {n:'osocze',m:[330,176],z:-2,d:'Płynna część krwi (ok. 55%): woda z białkami, solami, glukozą i hormonami. Transportuje substancje i ciepło.',draw:function(g){g.appendChild(R(6,10,348,180,14,'#fff4d6','#d9b24c',1.5))}},
+    {n:'erytrocyty',m:[60,40],d:'Krwinki czerwone: bez jądra, dwuwklęsłe, wypełnione hemoglobiną. Przenoszą tlen (i część CO₂). Najliczniejsze komórki krwi.',draw:function(g){[[50,60],[110,120],[70,150],[170,50],[250,150],[300,60],[210,110]].forEach(function(p){g.appendChild(C(p[0],p[1],18,'#e57373','#b23b3b',1.8));g.appendChild(C(p[0],p[1],7,'#f4a6a6','none',0))})}},
+    {n:'leukocyt',m:[190,172],d:'Krwinka biała: duża, z jądrem (często płatowym). Broni organizm przed bakteriami, wirusami i obcymi komórkami. Jest ich znacznie mniej niż erytrocytów.',draw:function(g){g.appendChild(C(150,100,26,'#e8eaf6','#3f5aa8',2));g.appendChild(C(142,96,10,'#5c4fa8','none',0));g.appendChild(C(160,104,10,'#5c4fa8','none',0));g.appendChild(C(150,112,8,'#5c4fa8','none',0))}},
+    {n:'płytki krwi',m:[290,100],d:'Trombocyty: małe fragmenty komórek, bez jądra. Biorą udział w krzepnięciu krwi i zatrzymaniu krwawienia.',draw:function(g){[[260,100],[275,88],[318,118],[236,56],[100,86]].forEach(function(p){g.appendChild(E(p[0],p[1],7,4,'#c9a0dc','#7a3fbf',1.4,30))})}}
+  ]}}})}});
+
+BIO.define('miesnie-trzy',{opis:'Trzy rodzaje tkanki mięśniowej: szkieletowa (prążkowana, wielojądrowa), gładka (wrzecionowate komórki), sercowa (prążkowana, rozgałęziona, wstawki); tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  lab(el,{get:function(){return{w:360,h:200,label:'Trzy rodzaje tkanki mięśniowej',parts:[
+    {n:'mięsień szkieletowy',m:[60,40],d:'Długie, wielojądrowe włókna z poprzecznym prążkowaniem; jądra przy brzegu. Praca zależna od woli; przyczepiony do kości.',draw:function(g){[34,60,86].forEach(function(y){g.appendChild(R(8,y-10,110,20,9,'#f4c7c0','#b5483a',1.6));for(var x=18;x<112;x+=9)g.appendChild(L(x,y-8,x,y+8,'#b5483a',1.1));[28,60,92].forEach(function(x){g.appendChild(E(x,y-7,4,2.4,'#7a2a20','none',0))})})}},
+    {n:'mięsień gładki',m:[180,40],d:'Wrzecionowate komórki z jednym jądrem, bez prążkowania. Praca niezależna od woli, wolna i długotrwała: ściany jelit, żołądka, naczyń.',draw:function(g){[[150,48],[196,40],[168,86],[214,82],[152,124],[200,128]].forEach(function(p){g.appendChild(E(p[0],p[1],34,8,'#e1d3f0','#7a3fbf',1.6,-12));g.appendChild(E(p[0],p[1],6,3,'#4a2a7a','none',0,-12))})}},
+    {n:'mięsień sercowy',m:[270,66],d:'Prążkowane, rozgałęzione komórki połączone wstawkami (łącznikami); jedno-, dwujądrowe. Praca niezależna od woli, rytmiczna, bez zmęczenia.',draw:function(g){g.appendChild(P('M262,40 L300,40 L318,70 L346,70',null,'#b5483a',14));g.appendChild(P('M300,40 L318,12 L346,12',null,'#b5483a',14));g.appendChild(P('M318,70 L330,110 L346,120',null,'#b5483a',14));[[274,40],[330,70],[332,12],[330,100]].forEach(function(p){g.appendChild(E(p[0],p[1],3.5,2.6,'#f4c7c0','none',0))});for(var x=268;x<296;x+=7)g.appendChild(L(x,33,x,47,'#f4c7c0',1.2))}},
+    {n:'wstawki',m:[345,130],z:1,d:'Połączenia między komórkami mięśnia sercowego: przekazują pobudzenie, dzięki czemu komórki kurczą się zgodnie.',draw:function(g){[[290,40],[326,70],[320,100],[322,12]].forEach(function(p){g.appendChild(L(p[0],p[1]-8,p[0],p[1]+8,'#222',2.4))})}}
+  ]}}})}});
+
 var OD=0;
 BIO.define('wentylacja',{opis:'Mechanika oddychania: przepona, żebra, objętość klatki i płuc; animacja wdech ↔ wydech tam i z powrotem (autostart w widoku), suwak do ręcznego sterowania, opis fazy',
 mount:function(el){
