@@ -22,6 +22,11 @@ Priorytet: biologia LKO etap szkolny, środa 21.10.2026, 9:00, 60 min. Nie pisa�
   - `ryba-budowa`, `stawonogi-budowa` → tylko REV02 (już wstawione); inne lekcje: pominąć.
   Raport końcowy: lista (lekcja → id → sekcja) i wynik testu; wątpliwe miejsca zostawić bez rysunku i wypisać.
 
+- **H-D1 (dubel źródeł chemii):** lekcje chemii mają dwa źródła md: `chemia/che-modular/lessons-md/gotowe/` (build che-modular → dist) i `chemia/lekcje_md/<grupa>/CHE.*.md` (zbuduj_wszystkie.py che → chemia/html). 16 plików jest identycznych (np. F05, F12, J07–J10, K01, N02, N06, P01), reszta różni się. Zasada: porównaj parami (rozmiar, nagłówki `grep -o '^#\+ '`, `git log`), zostaw lepszą wersję w jednym katalogu, unikalne sekcje dopisz do niej, gorszą przenieś do `chemia/plany/niewykorzystane/`; ustal jedną ścieżkę i zapisz w CLAUDE.md. Nie kasuj bez porównania.
+- **H-D2 (N02_tlenki):** do `chemia/che-modular/lessons-md/gotowe/N02_tlenki.md` dopisz sekcje obecne tylko w `chemia/plany/niewykorzystane/N01_tlenki__wersja_pelna_main_2026-10-20.md` (czad CO i BHP tlenków, smog/kwaśne deszcze/efekt cieplarniany osobno, tlenki mieszane, nadtlenki, ponadtlenki, OF₂, CO vs CO₂, SiO₂, MgO, „Jak rozpoznać w 10 sekund”). Dodaj `@opis` pod wizualizacjami; po scaleniu usuń plik z niewykorzystane.
+- **H-D3 (fragmenty z niewykorzystane):** przejrzyj `chemia/plany/niewykorzystane/*__fragmenty_*` (F01–F06, FIZ01, J03, F17) i wstaw do właściwych lekcji to, czego brak; resztę zostaw.
+- **H-D4 (starsze wersje BIO):** `biologia/niewykorzystane/starsze_wersje_lekcji/` (L001–L050, X00–X99 w starym układzie) — dla każdej lekcji sprawdź zadania/fiszki/ciekawostki nieobecne w `biologia/bio/md/BIO.*` i dopisz je do nowej; dopiero potem usuń stary plik (ważne zwłaszcza L031, L001A, L002).
+
 ## Droższe — Sonnet (merytoryka, decyzje)
 - [ ] S-A. **REV02: tury 2–4 odpowiedzi Perplexity** (tura 1 wprowadzona 2026-10-20: tkanki 6.1, ryby, pasożyty, bezkręgowce, D+). Odrzucone z powodem w `WERYFIKACJA.md`. PRIORYTET przed środą.
 - [ ] S-F. Brakujące lekcje etapu II: **B2h Układ krążenia**, **B2i Układ odpornościowy**, B2j arkusz próbny — plan w `biologia/plany/PLAN_BRAKUJACE_LEKCJE.md`; przygotować paczki dla zewnętrznego AI.
