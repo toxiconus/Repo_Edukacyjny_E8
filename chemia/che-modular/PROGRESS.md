@@ -260,3 +260,4 @@
 - 2026-10-20: H-F — KB przed/po dla zmienionych lekcji BIO wpisane do WERYFIKACJA.md.
 - 2026-10-20: H-G — rysunki BIO wstawione do 7 miejsc (B2a, B2d, B2f×3, L010, REV01); raport w ZADANIA_HAIKU_SONNET.md. Test: 55 OK, opisy 0 braków.
 - 2026-10-20: H-D1 — wstrzymane: dwa buldy chemii (lekcje_md 93 vs gotowe 90); usunięcie duble wymaga najpierw zmiany buildera che. Opisane w ZADANIA_HAIKU_SONNET.md.
+- 2026-10-20: H-D2 — N02 porównany z N01 starym: wszystkie wymienione treści już są w N02; brak dopisek. Archiwum N01 zostaje w niewykorzystane.
