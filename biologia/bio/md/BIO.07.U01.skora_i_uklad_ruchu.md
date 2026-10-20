@@ -252,6 +252,13 @@ Nie pisz: „ocet dodaje kości elastyczności”. Ocet niczego nie dodaje — *
 | **obrotowy** | szczytowo-obrotowy (pierwszy i drugi kręg szyjny — „nie” głową), między kością promieniową a łokciową | obrót wokół osi |
 | **siodełkowy** | u podstawy kciuka | ruch w dwóch płaszczyznach (kciuk przeciwstawny) |
 
+@viz staw-czaszka | Staw kolanowy i czaszka | kliknij, znajdź, podpisz
+@opis Schemat po lewej: przekrój stawu kolanowego — kość udowa i kość piszczelowa, chrząstka stawowa na ich końcach, maź stawowa w jamie stawowej, torebka stawowa obejmująca staw i więzadło poboczne. Po prawej: czaszka z boku — kości czołowa, ciemieniowa, skroniowa i potyliczna oraz żuchwa połączona z kością skroniową stawem skroniowo-żuchwowym.
+
+**Zadanie (podpisz):** wskaż chrząstkę stawową i maź stawową. **Odpowiedź:** chrząstka stawowa pokrywa końce kości i jest gładka, zmniejsza tarcie; maź stawowa to płyn w jamie stawowej, czyli „smar” stawu.
+
+**Zadanie (znajdź):** wskaż kość, która w stawie skroniowo-żuchwowym łączy się z żuchwą. **Odpowiedź:** kość skroniowa.
+
 ::: karta understand | W skrócie — dlaczego chrząstkę łatwo uszkodzić, a trudno naprawić
 Chrząstka stawowa, podobnie jak naskórek, **nie ma naczyń krwionośnych** — odżywia się tylko dyfuzją składników z mazi stawowej. Ruch pomaga: gdy staw pracuje, maź wprasowuje się w chrząstkę i odżywia ją. Dlatego długie siedzenie bez ruchu i jednocześnie przeciążenia (skoki na twardym, nadwaga) szkodzą chrząstce, a urazy goją się bardzo powoli — naczyń, które dostarczyłyby materiał do naprawy, po prostu nie ma. Regularny, rozsądny ruch to najlepsze „smarowanie” stawów.
 :::

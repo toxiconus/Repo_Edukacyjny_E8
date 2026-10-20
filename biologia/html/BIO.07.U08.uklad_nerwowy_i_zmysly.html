@@ -3075,6 +3075,24 @@ mount:function(el){
     {n:'żyła podobojczykowa',m:[300,50],d:'Duża żyła przy szyi. Limfa z przewodu piersiowego wpływa do krwi właśnie tutaj, dlatego płyn wraca do krwiobiegu.',draw:function(g){g.appendChild(P('M272,40 Q326,44 330,126','none','#5c6bc0',7))}},
     {n:'serce',m:[326,156],d:'Pompuje krew do całego ciała. Limfa nie przepływa przez serce, ale wpływa do krwi tuż przed nim, w żyłach szyi.',draw:function(g){g.appendChild(P('M326,176 C300,156 300,128 316,128 C322,128 326,134 326,140 C326,134 330,128 336,128 C352,128 352,156 326,176Z','#f8d7da','#b71c1c',1.6))}}
   ]}}})}});
+/* ---- staw-czaszka (H-V4): przekrój stawu kolanowego i czaszka z boku ---- */
+BIO.define('staw-czaszka',{opis:'Staw kolanowy w przekroju (kość udowa, chrząstka stawowa, torebka stawowa, maź stawowa, więzadło) i czaszka z boku (kości czaszki, szwy, żuchwa, staw skroniowo-żuchwowy); tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  lab(el,{get:function(){return{w:360,h:230,label:'Staw kolanowy i czaszka — schemat',parts:[
+    {n:'kość udowa',m:[70,30],z:-2,d:'Najdłuższa kość kończyny dolnej. Jej końcowa część tworzy staw kolanowy.',draw:function(g){g.appendChild(R(40,14,64,80,10,'#fff8e1','#c9a227',1.2))}},
+    {n:'kość piszczelowa',m:[70,200],z:-2,d:'Grubsza kość podudzia; od góry tworzy z kością udową staw kolanowy.',draw:function(g){g.appendChild(R(40,120,64,96,10,'#fff8e1','#c9a227',1.2))}},
+    {n:'chrząstka stawowa',fix:1,m:[118,90],z:-1,d:'Gładka warstwa chrząstki pokrywająca końce kości w stawie; zmniejsza tarcie i amortyzuje obciążenia.',draw:function(g){g.appendChild(R(40,94,64,8,3,'#e1f5fe','#64b5f6',1));g.appendChild(R(40,112,64,8,3,'#e1f5fe','#64b5f6',1))}},
+    {n:'maź stawowa (płyn stawowy)',fix:1,m:[120,114],z:-1,d:'Lepki płyn w jamie stawowej. Odżywia chrząstkę i zmniejsza tarcie między powierzchniami stawowymi.',draw:function(g){g.appendChild(E(70,106,32,6,'#e3f2fd','#64b5f6',1))}},
+    {n:'torebka stawowa',fix:1,m:[128,80],d:'Zewnętrzna osłona stawu z tkanki łącznej; otacza jamę stawową i łączy kości.',draw:function(g){g.appendChild(R(32,88,80,36,14,'none','#5c6bc0',1.6))}},
+    {n:'więzadło poboczne',fix:1,m:[16,150],d:'Pas tkanki łącznej wzmacniający staw z boku; ogranicza nadmierne ruchy w stawie.',draw:function(g){g.appendChild(L(30,20,30,200,'#8d6e63',4))}},
+    {n:'czaszka (zarys)',m:[272,120],z:-2,d:'Kości czaszki chronią mózg. Zarys z boku: sklepienie czaszki i podstawa z oczodołem.',draw:function(g){g.appendChild(P('M196,140 C192,80 226,30 280,28 C322,28 342,62 342,108 C342,150 332,180 300,190 L212,190 C202,180 198,160 196,140 Z','#fafafa','#51606e',1.6))}},
+    {n:'kość czołowa',m:[228,64],z:-1,d:'Przednia kość sklepienia czaszki; tworzy czoło i górną część oczodołów.',draw:function(g){g.appendChild(P('M200,140 C196,84 220,46 258,36 L262,84 C246,92 230,108 226,140 Z','none','#8d8d8d',1.2))}},
+    {n:'kość ciemieniowa',m:[296,60],z:-1,d:'Parzysta kość sklepienia czaszki, leży po bokach i na szczycie czaszki; łączy się z kością czołową szwem wieńcowym.',draw:function(g){g.appendChild(P('M262,36 C290,30 316,40 332,70 L326,110 C300,100 276,96 262,84 Z','none','#8d8d8d',1.2))}},
+    {n:'kość skroniowa',m:[266,160],z:-1,d:'Kość boczna czaszki; zawiera ucho wewnętrzne i tworzy staw skroniowo-żuchwowy.',draw:function(g){g.appendChild(P('M226,140 C240,114 290,114 316,132 L318,166 C300,180 260,182 226,176 Z','none','#8d8d8d',1.2))}},
+    {n:'kość potyliczna',m:[320,160],z:-1,d:'Tylna kość czaszki; ma otwór wielki, przez który przechodzi rdzeń kręgowy.',draw:function(g){g.appendChild(P('M318,132 C334,130 342,116 342,108 C342,150 332,176 318,182 Z','none','#8d8d8d',1.2))}},
+    {n:'żuchwa',m:[260,212],d:'Jedyna ruchoma kość czaszki; łączy się z kością skroniową przez staw skroniowo-żuchwowy.',draw:function(g){g.appendChild(P('M222,190 L304,190 L310,212 L226,212 Z','none','#8d8d8d',1.4))}},
+    {n:'staw skroniowo-żuchwowy',m:[224,186],d:'Staw między kością skroniową a żuchwą; umożliwia otwieranie i zamykanie ust.',draw:function(g){g.appendChild(C(224,184,5,'#fff9c4','#c9a227',1.2))}}
+  ]}}})}});
 })();
 
 /* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,

@@ -463,3 +463,14 @@ Sprawdzono nazwy części z kodu `bio-rysunki.js` (każdy blok osobno) i opisy; 
 - piramida-ekologiczna, obieg-wegla — reguła 10%: ZPE na stronie „Łańcuch pokarmowy i sieć” jej nie podaje (jakościowo: duża część energii jako ciepło) — zostaje jako wiedza podręcznikowa; poziomy troficzne zgodne z ZPE (producenci, konsumenci I–III rzędu, destruenci).
 - drzewo-filogenetyczne, rodowod — układ kręgowców i trzy typy dziedziczenia rodowodowego zgodne z podstawą; ZPE na sprawdzonych stronach nie ma drzewa.
 - odpowiedz-immunologiczna — wykres pierwotnej i wtórnej odpowiedzi (pamięć immunologiczna) — poprawny merytorycznie, bez części do nazwania.
+
+## H-V4 — rysunek staw-czaszka (2026-10-20)
+
+Nowy rysunek `staw-czaszka` w `bio-rysunki.js` (13 części: kość udowa, piszczelowa, chrząstka stawowa, maź stawowa, torebka stawowa, więzadło poboczne; czaszka z boku: zarys, czołowa, ciemieniowa, skroniowa, potyliczna, żuchwa, staw skroniowo-żuchwowy). Wstawiony do U01 §9 z dwoma zadaniami i kluczem. Build 0, checker 0 FAIL. Test w przeglądarce: rysunek renderuje się, 13 numerów widocznych, brak błędów JS (zrzut obejrzany; poprawiono zasłanianie numerów 3–5 przez ustawienie `fix:1`).
+
+Weryfikacja treści:
+- staw (chrząstka, maź, torebka, więzadło, jama stawowa) — zgodne z podręcznikową budową stawu; ZPE (strona „Układ ruchu i skóra”) wymienia te elementy tylko w ćwiczeniu bez klucza — zostają.
+- czaszka — ZPE nie nazywa kości czaszki ani stawu skroniowo-żuchwowego. Nazwy kości i położenia (czołowa, ciemieniowa, skroniowa, potyliczna, żuchwa) są podręcznikowe; kształt zarysu jest schematyczny, nie anatomiczny — w opisie lekcji zaznaczono „schemat”.
+- Do dopracowania (grafik/Sonnet): kształty kości czaszki są uproszczone; ewentualnie dodać szwy jako osobną część.
+
+Dyfuzja (z PLAN_RYSUNKOW_BIO): już istnieje `transport-blona` — nie dublowano. Układ limfatyczny: zrobiony wcześniej (U04 §7).
