@@ -345,4 +345,58 @@ mount:function(el,o){
   if(reduce){paused=true;lab();return}
   if('IntersectionObserver'in window){new IntersectionObserver(function(es){vis=es[0].isIntersecting},{threshold:0.4}).observe(el)}else vis=true;
   tm=setInterval(function(){if(!document.body.contains(el)){clearInterval(tm);return}tick()},2800)}});
+
+/* =====================================================================
+   10. SERCE — budowa (lab) i obieg krwi (animowany pierścień)
+   ===================================================================== */
+var BL='#cfe3f7',BLs='#2a6fb0',RD='#f6cccc',RDs='#b23b3b';
+BIO.define('serce-budowa',{opis:'Serce człowieka w przekroju: przedsionki, komory, przegroda, zastawki, naczynia (niebieskie = krew odtlenowana, czerwone = utlenowana); tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  lab(el,{get:function(){return{w:360,h:270,label:'Serce w przekroju z oznaczonymi częściami',parts:[
+    {n:'prawy przedsionek',m:[102,106],d:'Odbiera krew ODTLENOWANĄ z całego ciała żyłami głównymi. Ściana cienka. Krew przechodzi przez zastawkę trójdzielną do prawej komory.',draw:function(g){g.appendChild(R(98,90,62,60,20,BL,BLs,2))}},
+    {n:'lewy przedsionek',m:[258,106],d:'Odbiera krew UTLENOWANĄ z płuc żyłami płucnymi. Krew przechodzi przez zastawkę dwudzielną do lewej komory.',draw:function(g){g.appendChild(R(202,90,62,60,20,RD,RDs,2))}},
+    {n:'prawa komora',m:[104,226],d:'Pompuje krew odtlenowaną do płuc (krążenie małe). Ściana cieńsza niż po lewej — droga krótka, opór mały.',draw:function(g){g.appendChild(R(98,158,74,80,28,BL,BLs,2))}},
+    {n:'lewa komora',m:[268,236],d:'Pompuje krew utlenowaną do całego ciała (krążenie duże). Ściana najgrubsza — długa droga i duży opór.',draw:function(g){g.appendChild(R(188,158,88,90,34,'#e79a9a',RDs,2));g.appendChild(R(204,170,56,66,22,RD,RDs,1.2))}},
+    {n:'przegroda międzykomorowa',m:[181,214],d:'Mięsień oddzielający prawą (odtlenowaną) od lewej (utlenowanej) strony serca; krew się nie miesza.',draw:function(g){g.appendChild(R(172,158,16,86,3,'#b9b0a4','#6f665a',1.5))}},
+    {n:'zastawka trójdzielna',m:[126,172],d:'Między prawym przedsionkiem a prawą komorą; trzy płatki. Zamyka się przy skurczu komory i zapobiega cofaniu krwi do przedsionka.',draw:function(g){g.appendChild(P('M104,152 L128,170 L156,152','none','#51606e',3))}},
+    {n:'zastawka dwudzielna (mitralna)',m:[232,172],d:'Między lewym przedsionkiem a lewą komorą; dwa płatki. Zapobiega cofaniu krwi do lewego przedsionka.',draw:function(g){g.appendChild(P('M208,152 L234,170 L260,152','none','#51606e',3))}},
+    {n:'tętnica płucna (pień płucny)',m:[150,34],d:'Wyprowadza krew z prawej komory do płuc. To tętnica, która niesie krew ODTLENOWANĄ.',draw:function(g){g.appendChild(P('M170,158 L170,64 Q170,40 130,38',null,BLs,13))}},
+    {n:'aorta',m:[316,38],d:'Największa tętnica. Wyprowadza krew UTLENOWANĄ z lewej komory do całego ciała; zaraz za zastawką odchodzą od niej tętnice wieńcowe zasilające serce.',draw:function(g){g.appendChild(P('M190,158 L190,64 Q190,34 232,34 L300,38',null,RDs,13))}},
+    {n:'żyły główne',m:[96,50],d:'Górna i dolna doprowadzają krew odtlenowaną z ciała do prawego przedsionka.',draw:function(g){g.appendChild(P('M118,92 L118,24',null,BLs,13))}},
+    {n:'żyły płucne',m:[316,116],d:'Doprowadzają krew utlenowaną z płuc do lewego przedsionka. To żyły, które niosą krew UTLENOWANĄ.',draw:function(g){g.appendChild(P('M264,118 L326,118',null,RDs,13))}},
+    {n:'zastawki półksiężycowate',m:[181,142],z:2,d:'Przy wyjściu z komór do tętnic (pień płucny i aorta). Zapobiegają cofaniu się krwi do komór w czasie rozkurczu.',draw:function(g){g.appendChild(P('M165,162 q5,-10 10,0',null,'#51606e',3));g.appendChild(P('M185,162 q5,-10 10,0',null,'#51606e',3))}}
+  ]}}})}});
+
+var KR={n:[['prawy przedsionek','krew odtlenowana',0],['prawa komora','krew odtlenowana',0],['płuca','wymiana gazowa',2],['lewy przedsionek','krew utlenowana',1],['lewa komora','krew utlenowana',1],['ciało','tkanki: oddają O₂',2]],
+ d:['Krew ODTLENOWANA spływa z prawego przedsionka do prawej komory przez zastawkę trójdzielną.','Prawa komora pompuje krew odtlenowaną pniem płucnym (zastawka półksiężycowata) do płuc — POCZĄTEK krążenia małego (płucnego).','W płucach krew oddaje CO₂ i pobiera O₂. Żyłami płucnymi wraca UTLENOWANA do lewego przedsionka — KONIEC krążenia małego.','Krew utlenowana przechodzi przez zastawkę dwudzielną do lewej komory.','Lewa komora pompuje krew utlenowaną aortą (zastawka półksiężycowata) do całego ciała — POCZĄTEK krążenia dużego.','W tkankach krew oddaje O₂ i pobiera CO₂. Żyłami głównymi wraca ODTLENOWANA do prawego przedsionka — KONIEC krążenia dużego.'],
+ col:['#cfe3f7','#cfe3f7','#e6dcf3','#f6cccc','#f6cccc','#e6dcf3']};
+var KUID=0;
+BIO.define('krazenie',{opis:'Obieg krwi: prawy przedsionek → prawa komora → płuca → lewy przedsionek → lewa komora → ciało → …; kropla krwi krąży sama (niebieska = odtlenowana, czerwona = utlenowana); filtr: oba krążenia / małe / duże; klik = wyjaśnienie',
+mount:function(el){
+  var uid='kr'+(++KUID),n=6,cx=180,cy=160,rx=118,ry=108,cur=0,paused=false,vis=false,filt='oba',ang=0,last=0,reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var svg=BIO.svg(360,320,'Obieg krwi w sercu i krążeniach'),fb=H('div','bw-seg bv-tools'),bar=H('div','bw-seg bv-tools'),out=H('div','bv-info bw-out'),pb=H('button','bv-btn');pb.type='button';svg.setAttribute('class','bw-svg');out.setAttribute('aria-live','polite');
+  [fb,svg,bar,out].forEach(function(e){el.appendChild(e)});bar.appendChild(pb);
+  svg.appendChild(S('defs',{},[['b',BLs],['r',RDs]].map(function(m){return S('marker',{id:uid+m[0],viewBox:'0 0 10 10',refX:8,refY:5,markerWidth:7,markerHeight:7,orient:'auto'},[S('path',{d:'M0,0L10,5L0,10z',fill:m[1]})])})));
+  var step=2*Math.PI/n;function pt(a){return [cx+rx*Math.cos(a),cy+ry*Math.sin(a)]}
+  var AR=[],ND=[],circ=['m','m','m','d','d','d'];  // segment i: od węzła i do i+1; krążenie małe: RV→płuca→LA (1,2), duże: LV→ciało→RA (4,5)
+  var CIR=[null,'m','m',null,'d','d'];
+  for(var i=0;i<n;i++){var a1=-Math.PI/2+i*step+0.3,a2=-Math.PI/2+(i+1)*step-0.3,p1=pt(a1),p2=pt(a2),blue=(i===0||i===1||i===5),ar=P('M'+p1[0].toFixed(1)+','+p1[1].toFixed(1)+' A'+rx+','+ry+' 0 0 1 '+p2[0].toFixed(1)+','+p2[1].toFixed(1),'none',blue?BLs:RDs,3.2,{'marker-end':'url(#'+uid+(blue?'b':'r')+')'});svg.appendChild(ar);AR[i]=ar}
+  var lbl=[['zastawka trójdzielna',0],['pień płucny',1],['żyły płucne',2],['zastawka dwudzielna',3],['aorta',4],['żyły główne',5]];
+  lbl.forEach(function(l,i){var a=-Math.PI/2+(i+0.5)*step,p=[cx+(rx+0)*Math.cos(a),cy+(ry+0)*Math.sin(a)],ox=Math.cos(a)*14,oy=Math.sin(a)*12;svg.appendChild(BIO.T(p[0]+ox*1.0,p[1]+oy*1.0,l[0],{s:8.4,w:600,a:Math.cos(a)>0.3?'start':Math.cos(a)<-0.3?'end':'middle',f:'var(--viz-mut,#5d6b7a)'}))});
+  KR.n.forEach(function(nn,i){var p=pt(-Math.PI/2+i*step),g=S('g',{'class':'bv-hit',role:'button',tabindex:'0','aria-label':nn[0]});var fill=KR.col[i];
+    g.appendChild(R(p[0]-46,p[1]-19,92,38,10,fill,nn[2]===0?BLs:nn[2]===1?RDs:'#7a5fa0',1.8));g.appendChild(BIO.T(p[0],p[1]-5,nn[0],{s:10,w:700}));g.appendChild(BIO.T(p[0],p[1]+9,nn[1],{s:8.4,w:500,f:'var(--viz-mut,#5d6b7a)'}));
+    function pick(){paused=true;show(i);lab()}g.addEventListener('click',pick);g.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();pick()}});ND[i]=g;svg.appendChild(g)});
+  svg.appendChild(BIO.T(cx,cy-6,'Krążenie krwi',{s:12,w:700}));svg.appendChild(BIO.T(cx,cy+9,'mniejsze = serce → płuca → serce',{s:8.4,w:500,f:'var(--viz-mut,#5d6b7a)'}));svg.appendChild(BIO.T(cx,cy+21,'duże = serce → ciało → serce',{s:8.4,w:500,f:'var(--viz-mut,#5d6b7a)'}));
+  var dot=C(0,0,6.5,'#fff',BLs,3);svg.appendChild(dot);
+  function show(i){cur=i;ND.forEach(function(g,j){g.firstChild.setAttribute('stroke-width',j===i?3.6:1.8)});AR.forEach(function(a,j){a.setAttribute('stroke-width',j===i?5.2:3.2)});
+    out.innerHTML='<b>'+(i+1)+'. '+KR.n[i][0]+' → '+KR.n[(i+1)%n][0]+'</b><span>'+KR.d[i]+'</span>'}
+  function applyF(){AR.forEach(function(a,j){a.style.opacity=filt==='oba'||CIR[j]===filt?1:0.18});ND.forEach(function(g,j){var c=CIR[j],c2=CIR[(j+n-1)%n];g.style.opacity=filt==='oba'||c===filt||c2===filt||(filt==='m'&&(j===2||j===3||j===1))||(filt==='d'&&(j===4||j===5||j===0))?1:0.3});
+    clr(fb);[['oba','oba krążenia'],['m','małe (płucne)'],['d','duże']].forEach(function(f){var b=H('button','bv-btn'+(f[0]===filt?' on':''));b.type='button';b.textContent=f[1];b.onclick=function(){filt=f[0];applyF()};fb.appendChild(b)})}
+  function lab(){pb.textContent=paused?'▶ wznów krążenie':'❚❚ pauza'}
+  pb.onclick=function(){paused=!paused;lab()};
+  function place(){var seg=((ang%(2*Math.PI))+2*Math.PI)%(2*Math.PI),i=Math.floor(seg/step)%n,a=-Math.PI/2+seg,p=pt(a),blue=(i===0||i===1||i===5);dot.setAttribute('cx',p[0]);dot.setAttribute('cy',p[1]);dot.setAttribute('stroke',blue?BLs:RDs);dot.setAttribute('fill',blue?'#7fb2e6':'#e57373');if(!paused&&i!==cur)show(i)}
+  function loop(t){if(!document.body.contains(el))return;if(vis&&!paused&&!reduce){ang+=(t-(last||t))/1000*(2*Math.PI/14);place()}last=t;requestAnimationFrame(loop)}
+  show(0);lab();applyF();ang=0.35;place();
+  if('IntersectionObserver'in window)new IntersectionObserver(function(es){vis=es[0].isIntersecting},{threshold:0.4}).observe(el);else vis=true;
+  if(reduce){paused=true;lab()}requestAnimationFrame(loop)}});
 })();

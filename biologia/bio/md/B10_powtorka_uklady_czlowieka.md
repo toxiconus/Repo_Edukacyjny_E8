@@ -63,6 +63,12 @@ Ten sposób opisu stosujemy zawsze:
 - **Zależność:** ściana pęcherzyka ma ok. 1 μm, jest ich 300–500 mln, a łączna powierzchnia wynosi ok. 70 m². Dzięki temu krew przechodzi przez naczynia oplatające pęcherzyk w czasie rzędu sekundy i zdąża się nasycić tlenem.
 
 ### 2.5 Układ krwionośny
+
+@viz serce-budowa | Serce — budowa | poznaj, znajdź, podpisz
+@opis Przekrój serca z numerami: prawy i lewy przedsionek, prawa i lewa komora, przegroda, zastawki trójdzielna, dwudzielna i półksiężycowate, tętnica płucna, aorta, żyły główne i płucne. Niebieski = krew odtlenowana (prawa strona), czerwony = utlenowana (lewa). Wniosek: lewa komora ma najgrubszą ścianę, bo pompuje krew do całego ciała, a zastawki wymuszają jeden kierunek przepływu.
+
+@viz krazenie | Droga krwi: krążenie małe i duże | kropla krąży sama, kliknij etap
+@opis Pierścień sześciu etapów: prawy przedsionek → prawa komora → płuca → lewy przedsionek → lewa komora → ciało → z powrotem; kropla krwi krąży sama, niebieska gdy krew jest odtlenowana, czerwona po utlenowaniu w płucach. Przyciski pokazują krążenie małe (serce–płuca–serce) lub duże (serce–ciało–serce). Wniosek: krew przepływa przez serce dwa razy w jednym obiegu; tętnice płucne niosą krew odtlenowaną, a żyły płucne utlenowaną.
 - **Budowa:** serce (dwa przedsionki, dwie komory), tętnice, żyły, naczynia włosowate; krew z osoczem i elementami morfotycznymi (erytrocyty, leukocyty, trombocyty).
 - **Funkcje:** transport O₂, CO₂, glukozy, aminokwasów, hormonów i ciepła; obrona (leukocyty, przeciwciała); krzepnięcie.
 - **Zależność:** hemoglobina (4 podjednostki, 4 jony Fe²⁺) wiąże O₂ w płucach i oddaje w tkankach. Tętnice mają grubą warstwę mięśniową, która wytrzymuje ciśnienie. Żyły mają zastawki, które zapobiegają cofaniu się krwi. Naczynia włosowate mają cienką ścianę, aby możliwa była wymiana.

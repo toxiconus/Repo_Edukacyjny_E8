@@ -16,6 +16,7 @@ Priorytet: biologia LKO etap szkolny, środa 21.10.2026, 9:00, 60 min. Nie pisa�
   - `komorki-porownanie` → L010 (gdzie jest DNA: jądro vs nukleoid) i B1b (jeśli jest sekcja o komórce).
   - `wykres-dane` → REV01 §9.1 (metoda naukowa) i B2g (homeostaza, jeśli są wykresy).
   - `mikroskop-budowa` → REV01 (dział o komórce/preparatach), jeśli jest wzmianka o mikroskopie.
+  - `serce-budowa`, `krazenie` → B10 §2.5 (wstawione); docelowo B2h Układ krążenia.
   - `cykl {cykl="zaba|tasiemiec|mech|paproc|kwiat|faga"}` → B2f (płazy/rozwój), L010 (faga — jeśli jest wirus), REV02 już ma.
   - `ryba-budowa`, `stawonogi-budowa` → tylko REV02 (już wstawione); inne lekcje: pominąć.
   Raport końcowy: lista (lekcja → id → sekcja) i wynik testu; wątpliwe miejsca zostawić bez rysunku i wypisać.
