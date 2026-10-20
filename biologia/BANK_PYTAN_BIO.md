@@ -182,3 +182,9 @@ Każdy plan: problem, hipoteza, zmienna niezależna i zależna, stałe, próba k
 - **Pytanie 53 (wysiłek a tętno):** zmienna niezależna — wysiłek (marsz lub bieg 2 min); zależna — tętno w uderzeniach na minutę; stałe — czas pomiaru, pozycja ciała. Próba kontrolna: pomiar spoczynkowy. Powtórzenie po odpoczynku pokazuje powrót do normy.
 - **Pytanie 54 (wysiłek a częstość oddechów):** jak 53, zależna — liczba oddechów na minutę (liczenie unoszeń klatki piersiowej). Próba kontrolna: pomiar w spoczynku.
 - **Pytanie 60 (łańcuch trawa → zając → lis):** nie wymaga doświadczenia. Pełna odpowiedź: producent — trawa; konsument I rzędu — zając; konsument II rzędu — lis. Energia maleje, bo na każdym poziomie część jest tracona jako ciepło i na oddychanie, więc dla wyższych ogniw zostaje jej mniej.
+
+### Szablon planowania doświadczenia i przykład odpowiedzi niepełnej
+
+Szablon (do wklejenia w zadaniach [D]): Planując doświadczenie, podaj: problem badawczy, hipotezę, badany czynnik, sposób pomiaru wyniku, warunki utrzymywane jednakowo, porównywane próby oraz sposób wykonania powtórzeń. Zapisz, jaki wynik przemawiałby za hipotezą, a jaki jej nie potwierdzał. Nie przedstawiaj przewidywanego wyniku jako wyniku już otrzymanego.
+
+Przykład odpowiedzi niepełnej: „Zmieniam warunki i obserwuję, co się stanie”. Dlaczego nie wystarcza: nie wskazuje badanego czynnika, sposobu pomiaru ani warunków porównania.

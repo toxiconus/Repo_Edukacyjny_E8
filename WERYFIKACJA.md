@@ -308,3 +308,26 @@ Zasada: po każdym audycie surowa odpowiedź trafia do `<przedmiot>/plany/audyty
 **Do zweryfikacji (nie zmieniono):**
 - Określenie „obowiązkowe” przy doświadczeniach w LKO — porównać z załącznikiem wymagań 2026/27.
 - Procedury BHP (NaOH, siarczan miedzi(II), ogrzewanie, wykrywanie gazów) — pełna weryfikacja warunków i nadzoru, nie tylko z odczytu.
+
+## Weryfikacja — Comet, tura 2 (uwagi ogólne do sposobu pracy, 2026-10-20)
+
+**Wprowadzone:**
+- 3.1 Szablon planowania doświadczenia i 3.3 przykład odpowiedzi niepełnej — dopisane do `BANK_PYTAN_BIO.md`.
+- 3.2 Kryteria punktowe: pozostawiono 6 elementów (w tym hipoteza jako osobny punkt), zgodnie z zasadą „uczeń wie, za co dostaje punkty”. Propozycja Comet (5 kryteriów) jest zbliżona; różnica to osobny punkt za hipotezę.
+
+**Przyjęte jako zasada pracy (bez zmiany treści):**
+- 1.1 Sprawdzać „ścieżkę odpowiedzi” równolegle: lekcja, podpis ilustracji, fiszka, pytanie testowe, klucz. Poprawkę wpisywać w każdym miejscu osobno.
+- 1.2 Trzy kategorie uwag: „Błąd”, „Doprecyzowanie”, „Rozszerzenie dydaktyczne”.
+- 1.3 Kontrola zachowania treści przez zestawienie (zachowane / zmienione / dodane / usunięte), a nie tylko przez rozmiar KB.
+- 5 Czego nie dodawać na siłę: nowych fiszek powtarzających pytania, ciekawostek bez związku z procesem, animacji tam, gdzie wystarcza schemat, rozszerzeń bez oznaczenia.
+
+**Do wdrożenia przy kolejnych lekcjach (zadania):**
+- 2.1 Miniwykłady prowadzone pytaniem (pytanie → wyjaśnienie → przykład → wniosek) — tylko przed najbardziej skrótowymi tabelami. Przykładowe pytania: skąd roślina bierze materiał; po co błona; co łączy pokarm, oddychanie i pracę komórki; dlaczego sam wynik nie wystarcza do wniosku.
+- 2.2 Ramki „Nie myl tych pojęć” z zadaniem porównawczym i wzorcową odpowiedzią. Pary do sprawdzenia w repo: substrat–warunek, obserwacja–wniosek, wynik–interpretacja, próba kontrolna–zmienna kontrolowana, materiał budulcowy–materiał zapasowy, oddychanie komórkowe–wymiana gazowa.
+- 2.3 Pytania zamknięte z drugą częścią („uzasadnij”, „popraw błędną odpowiedź”) — dodać bez kasowania testów.
+- 2.4 Zadanie „Znajdź i popraw błąd” przy trudnych zagadnieniach; klucz w trzech częściach (błąd, poprawione zdanie, uzasadnienie). Wypowiedzi do poprawienia przygotować po sprawdzeniu pełnego HTML.
+- 4.1 Wykresy jako 5 pytań (odczyt, porównanie, zależność, wniosek, granice interpretacji).
+- 4.2 Oddzielić opis ilustracji od instrukcji obsługi („Obsługa / Co przedstawiono / Wniosek”). Instrukcja „kliknij” nie może być jedynym tekstem przy wizualizacji.
+- 4.3 Przy animacjach „tam i z powrotem” dopisać uwagę, że cofnięcie służy ponownemu prześledzeniu schematu, a nie odwróceniu procesu.
+
+**Uwaga o pewności:** odpowiedź Comet sama zastrzega, że lokalizacje i cytaty z pierwszej tury nie były w pełni potwierdzone. Zanim cokolwiek z tych uwag trafi do lekcji, trzeba je porównać z właściwym HTML.
