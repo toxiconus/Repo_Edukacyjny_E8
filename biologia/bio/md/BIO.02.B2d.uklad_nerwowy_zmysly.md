@@ -79,7 +79,7 @@ Rdzeń przewodzi impulsy **w górę** (czuciowe, do mózgu) i **w dół** (rucho
 @viz neurony-mielina | Neuron bez osłonki i z osłonką mielinową | porównaj prędkość impulsu
 @opis Dwa neurony jeden pod drugim: górny ma gładki akson bez osłonki (impuls wolniejszy), dolny ma akson otoczony osłonką mielinową z przewężeniami Ranviera (impuls szybszy, przeskakuje między przewężeniami). Wniosek: mielina przyspiesza przewodzenie impulsu.
 
-**Zadanie (porównaj):** który neuron przewodzi impuls szybciej: A (bez osłonki) czy B (z osłonką mielinową)? Uzasadnij. **Odpowiedź:** B — impuls przeskakuje po przewężeniach Ranviera (skokowo), a nie płynie po całej długości włókna. Wartości prędkości (ok. 40 m/s wobec ok. 8 m/s) do potwierdzenia przed użyciem w testach.
+**Zadanie (porównaj):** który neuron przewodzi impuls szybciej: A (bez osłonki) czy B (z osłonką mielinową)? Uzasadnij. **Odpowiedź:** B — impuls przeskakuje po przewężeniach Ranviera (skokowo), a nie płynie po całej długości włókna. Przykładowe wartości: ok. 40 m/s z mieliną wobec ok. 8 m/s bez niej; w nerwach obwodowych człowieka prędkość wynosi od ok. 5 do ok. 130 m/s, zależnie od grubości włókna i obecności mieliny (ZPE).
 
 **Zadanie (wnioskuj):** jaką rolę pełnią przewężenia Ranviera? **Odpowiedź:** są miejscami, w których impuls jest wzmacniany; dzięki nim przeskok jest szybki.
 

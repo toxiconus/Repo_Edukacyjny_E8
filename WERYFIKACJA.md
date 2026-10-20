@@ -474,3 +474,11 @@ Weryfikacja treści:
 - Do dopracowania (grafik/Sonnet): kształty kości czaszki są uproszczone; ewentualnie dodać szwy jako osobną część.
 
 Dyfuzja (z PLAN_RYSUNKOW_BIO): już istnieje `transport-blona` — nie dublowano. Układ limfatyczny: zrobiony wcześniej (U04 §7).
+
+## S-decyzje — rozbieżności z H-Z3 (2026-10-20, Sonnet)
+- Pęcherzyki płucne: ujednolicone na „setki milionów (ok. 300–600 mln, zależnie od źródła)”, powierzchnia ok. 70–90 m² (B2c, B10, U06).
+- Prędkość przewodzenia: B2d i U08 podają zakres z ZPE 5–130 m/s; wartości 40 i 8 m/s zostają jako przykład; usunięto dopisek „do potwierdzenia”.
+- Warstwy skóry (B2a): zostają trzy (naskórek, skóra właściwa, tkanka podskórna), dodano zdanie o ujęciu dwuwarstwowym (ZPE).
+- Implantacja (B2f): „ok. 6–10 (według części źródeł do 12)”.
+- L009/L016 „80% naprawy DNA”: opis oznaczony jako parametr symulacji, nie wynik badań.
+- Zostaje bez zmian, z powodem: trzustka 95/5% i potencjały neuronu (wiedza podręcznikowa, ZPE nie podaje); tłuszcz 38 kJ/g w REV01 (zaokrąglenie 9 kcal/g; chemia O13 ma wartość dokładniejszą — różnica to zaokrąglenie); L001A „1,5–2 mld lat” (oznaczone orientacyjnie); wiersz „tlenki” w MAPA_ZPE bez pliku lekcji (lekcja N02 tlenki istnieje w chemia/che-modular — wiersz do powiązania przy kolejnym przeglądzie).

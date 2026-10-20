@@ -68,7 +68,7 @@ Ten sposób opisu stosujemy zawsze:
 ### 2.4 Układ oddechowy
 - **Budowa:** jama nosowa, gardło, krtań, tchawica, oskrzela, oskrzeliki, pęcherzyki płucne, płuca z opłucną.
 - **Funkcje:** wentylacja, wymiana gazowa (O₂ do krwi, CO₂ z krwi), mowa (struny głosowe).
-- **Zależność:** ściana pęcherzyka ma ok. 1 μm, jest ich 300–500 mln, a łączna powierzchnia wynosi ok. 70 m². Dzięki temu krew przechodzi przez naczynia oplatające pęcherzyk w czasie rzędu sekundy i zdąża się nasycić tlenem.
+- **Zależność:** ściana pęcherzyka ma ok. 1 μm, jest ich setki milionów (ok. 300–600 mln, zależnie od źródła), a łączna powierzchnia wynosi kilkadziesiąt m² (ok. 70–90 m²). Dzięki temu krew przechodzi przez naczynia oplatające pęcherzyk w czasie rzędu sekundy i zdąża się nasycić tlenem.
 
 ### 2.5 Układ krwionośny
 

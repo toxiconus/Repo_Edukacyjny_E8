@@ -42,7 +42,7 @@ Powietrze przechodzi przez osiem elementów, od góry do dołu:
 4. **Tchawica** — ok. 10–12 cm; chrząstki w kształcie podkowy zabezpieczają ją przed zapadnięciem.
 5. **Oskrzela główne** — prawe i lewe; dzielą się dalej w płucach.
 6. **Oskrzeliki** — drobne, bez chrząstek; prowadzą do pęcherzyków.
-7. **Pęcherzyki płucne** — ok. 300–500 mln w obu płucach; to tu zachodzi wymiana gazowa.
+7. **Pęcherzyki płucne** — setki milionów w obu płucach (ok. 300–600 mln, zależnie od źródła); to tu zachodzi wymiana gazowa.
 8. **Płuca** — prawe ma 3 płaty, lewe 2 (miejsce na serce). Otacza je **opłucna** z płynem, który zmniejsza tarcie.
 
 Drogi oddechowe (1–6) służą tylko do przewodzenia powietrza. Wymiana gazów odbywa się wyłącznie w pęcherzykach.
@@ -269,7 +269,7 @@ d) białka
 
 ## Do potwierdzenia z zakresem etapu
 
-- Liczba pęcherzyków płucnych (300–500 mln) i powierzchnia wymiany (ok. 70 m²).
+- Liczba pęcherzyków płucnych (ok. 300–600 mln, zależnie od źródła) i powierzchnia wymiany (ok. 70–90 m²).
 - Grubość bariery pęcherzyk–naczynie (ok. 1 μm).
 - Zakres wentylacji minutowej przy wysiłku.
 - Czy wymagane są nazwy podjednostek α i β oraz enzymu anhydrazy węglanowej.
