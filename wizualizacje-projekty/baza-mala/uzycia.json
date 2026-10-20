@@ -1133,6 +1133,7 @@
    "BIO.00.REV02.roznorodnosc_zycia": 1
   },
   "kontrola-podzialow": {
+   "BIO.01.L009.podzial_komorki_wzrost_regeneracja_i": 1,
    "BIO.02.L016.co_sie_dzieje_gdy_podzialy": 1
   },
   "skora-przekroj": {
@@ -1167,6 +1168,7 @@
    "BIO.02.L013.jak_komorka_kopiuje_dna": 1
   },
   "transfuzja": {
+   "BIO.02.L019.dlaczego_grupy_krwi_nie_pasuja": 1,
    "BIO.07.U04.krazenie_krew_odpornosc": 1
   },
   "oko-akomodacja": {
@@ -1536,10 +1538,8 @@
   "klonowanie-genu",
   "hardy-weinberg",
   "klucz-kregowce",
-  "kontrola-podzialow",
   "szuflady-cech",
   "gdzie-dna",
-  "transfuzja",
   "oko-akomodacja",
   "przeobrazenie-owadow",
   "rozbior-zdania",
@@ -1620,12 +1620,14 @@
   "nukleotyd",
   "wymiana-gazowa",
   "lozysko-wymiana",
+  "kontrola-podzialow",
   "skora-przekroj",
   "transport-blona",
   "kosmek-jelitowy",
   "energia-materia",
   "dobor-naturalny",
   "trener-nici",
+  "transfuzja",
   "pary-zasad",
   "f01-doswiadczenia-v01",
   "f03-rozdzielanie-v01",
@@ -1660,12 +1662,14 @@
   "mgO2",
   "miesnie-trzy",
   "mikroskop-budowa",
+  "mutacje-punktowe",
   "naH2o",
   "nablonki-rodzaje",
   "nasiono-ziarniak",
   "nefron-budowa",
   "neuron-budowa",
   "neurony-mielina",
+  "osmoza-komorka",
   "owoce-rozsiewanie",
   "podzial-komorki-skrot",
   "polip-meduza",

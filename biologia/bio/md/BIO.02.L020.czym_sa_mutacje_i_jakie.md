@@ -278,6 +278,9 @@ c) (1 pkt) dawka jest mała i kontrolowana, a korzyść diagnostyczna przewyższ
 
 ## 6 | Dla olimpijczyka — klasyfikacja mutacji i kod genetyczny {#olimpijczyk} [[exam:KONKURS]] [[extra:AMBITNE]]
 
+@viz mutacje-punktowe | Mutacje punktowe: co zmienia się w białku? | wybierz rodzaj mutacji
+@opis Na górze zapis mRNA podzielony na kodony z nazwami aminokwasów, pod nim ten sam fragment po mutacji z podświetlonymi zmianami. Przyciski: substytucja cicha, zmiany sensu, nonsensowna, insercja i delecja. Wniosek: substytucje zmieniają co najwyżej jeden kodon, a insercja lub delecja przesuwa ramkę odczytu i zmienia wszystkie kolejne aminokwasy.
+
 Ta sekcja wykracza poza podstawę programową — a właśnie stąd biorą się zadania konkursowe. Przeczytaj ją dwukrotnie: najpierw dla obrazu całości, potem dla detali.
 
 **Trzy poziomy zmian.** Mutacje klasyfikuje się według skali: (1) **punktowe (genowe)** — zmiany w pojedynczych nukleotydach genu; (2) **chromosomalne (strukturalne)** — zmiany budowy całych odcinków chromosomów; (3) **genomowe** — zmiany liczby chromosomów w komórce. Ta trójka to szkielet większości zadań klasyfikacyjnych.

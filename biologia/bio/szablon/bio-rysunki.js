@@ -610,6 +610,52 @@ mount:function(el){
     {n:'strąk grochu (samorzutnie)',m:[336,190],d:'Wysychający strąk pęka i skręca się, wyrzucając nasiona (autochoria); podobnie niecierpek.',draw:function(g){g.appendChild(P('M320,150 Q336,120 352,150 Q336,172 320,150Z',"#9fd27a",'#3f7a2a',2));[[328,148],[336,144],[344,148]].forEach(function(p){g.appendChild(C(p[0],p[1],3,'#4f7a2a','none',0))})}}
   ]}}})}});
 
+BIO.define('osmoza-komorka',{opis:'Osmoza: komórka roślinna i erytrocyt w wodzie destylowanej (roztwór hipotoniczny), w 0,9% NaCl (izotoniczny) i w stężonym roztworze soli (hipertoniczny); turgor, plazmoliza, hemoliza, pomarszczenie; przełączniki roztworu i komórki',
+mount:function(el){
+  var sol='hipo',cell='roslina';
+  var svg=BIO.svg(360,220,'Komórka w roztworze o różnym stężeniu'),b1=H('div','bw-seg bv-tools'),b2=H('div','bw-seg bv-tools'),out=H('div','bv-info bw-out');
+  svg.setAttribute('class','bw-svg');out.setAttribute('aria-live','polite');[b1,b2,svg,out].forEach(function(e){el.appendChild(e)});
+  function seg(box,items,cur,cb){clr(box);items.forEach(function(it){var b=H('button','bv-btn'+(it[0]===cur?' on':''));b.type='button';b.setAttribute('aria-pressed',String(it[0]===cur));b.textContent=it[1];b.onclick=function(){cb(it[0])};box.appendChild(b)})}
+  function draw(){clr(svg);var g=S('g',{});svg.appendChild(g);
+    var bg={hipo:'#e3f2fb',izo:'#eef4f7',hiper:'#d6e4ee'}[sol];g.appendChild(R(4,4,352,212,10,bg,'#9fb8c8',1.5));
+    var cx=180,cy=112,txt,inw=sol==='hipo',none=sol==='izo';
+    if(cell==='roslina'){
+      g.appendChild(R(120,52,120,120,10,'none','#4f7a2a',5));
+      var k={hipo:50,izo:44,hiper:30}[sol];
+      g.appendChild(R(cx-k,cy-k,2*k,2*k,10,'#d7efc4','#3f7a2a',2));
+      g.appendChild(R(cx-k*0.62,cy-k*0.62,k*1.24,k*1.24,8,'#bfe0f5','#2a7fb0',1.6));
+      g.appendChild(C(cx+k*0.7,cy-k*0.7,4,'#4caf50','none',0));
+      txt={hipo:'<b>Roztwór hipotoniczny (np. woda destylowana)</b><span>Stężenie substancji w roztworze jest mniejsze niż w komórce, więc woda wnika do komórki (osmoza). Komórka roślinna pęcznieje, wakuola rośnie i protoplast przyciska się do ściany: <i>turgor</i>. Ściana zapobiega pęknięciu.</span>',izo:'<b>Roztwór izotoniczny</b><span>Stężenia są zbliżone, więc woda wnika i wychodzi w podobnym tempie. Objętość komórki nie zmienia się istotnie.</span>',hiper:'<b>Roztwór hipertoniczny (stężony roztwór soli lub cukru)</b><span>Stężenie w roztworze jest większe niż w komórce, więc woda wychodzi z komórki. Protoplast kurczy się i odstaje od ściany: <i>plazmoliza</i>. Roślina więdnie. W czystej wodzie plazmoliza jest odwracalna (deplazmoliza).</span>'}[sol]
+    }else{
+      var r={hipo:52,izo:42,hiper:34}[sol];
+      if(sol==='hiper'){var pts=[];for(var i=0;i<16;i++){var a=i*Math.PI/8,rr=i%2?r:r+10;pts.push((cx+Math.cos(a)*rr).toFixed(1)+','+(cy+Math.sin(a)*rr).toFixed(1))}g.appendChild(PL(pts.join(' '),'#b23b3b',2.2));g.lastChild.setAttribute('fill','#e57373')}
+      else{g.appendChild(C(cx,cy,r,'#e57373','#b23b3b',2.4));if(sol==='izo'){g.appendChild(E(cx,cy,r*0.5,r*0.28,'#f4a6a6','none',0))}else{g.appendChild(P('M'+(cx+r*0.6)+','+(cy-r*0.8)+' l10,-10 M'+(cx+r*0.85)+','+(cy-r*0.4)+' l12,-4',null,'#b23b3b',2));g.appendChild(P('M'+(cx-r*0.9)+','+(cy+r*0.3)+' l-12,4',null,'#b23b3b',2))}}
+      txt={hipo:'<b>Roztwór hipotoniczny</b><span>Woda wnika do erytrocytu, bo w komórce jest więcej substancji rozpuszczonych. Erytrocyt nie ma ściany komórkowej, więc pęcznieje i może pęknąć: <i>hemoliza</i>.</span>',izo:'<b>Roztwór izotoniczny (0,9% NaCl — „sól fizjologiczna”)</b><span>Stężenie jak w osoczu: erytrocyt zachowuje kształt dwuwklęsły. Dlatego krople dożylne przygotowuje się na soli fizjologicznej.</span>',hiper:'<b>Roztwór hipertoniczny</b><span>Woda wychodzi z erytrocytu; komórka się kurczy i marszczy (<i>krenacja</i>).</span>'}[sol]
+    }
+    var ar=sol==='hipo'?1:sol==='hiper'?-1:0;
+    if(ar){[[-1,-1],[1,-1],[-1,1],[1,1]].forEach(function(o){var xo=cx+o[0]*110,yo=cy+o[1]*62,xi=cx+o[0]*76,yi=cy+o[1]*42;var a=ar>0?[xo,yo,xi,yi]:[xi,yi,xo,yo];g.appendChild(L(a[0],a[1],a[2],a[3],'#2a7fb0',2.6));var dx=a[2]-a[0],dy=a[3]-a[1],l=Math.sqrt(dx*dx+dy*dy);dx/=l;dy/=l;g.appendChild(P('M'+a[2]+','+a[3]+' l'+(-dx*8+dy*4)+','+(-dy*8-dx*4)+' M'+a[2]+','+a[3]+' l'+(-dx*8-dy*4)+','+(-dy*8+dx*4),null,'#2a7fb0',2.6))})}
+    g.appendChild(BIO.T(180,206,{hipo:'woda wnika do komórki',izo:'bez wypadkowego przepływu wody',hiper:'woda wychodzi z komórki'}[sol],{s:11,w:700,f:'#2a6f97'}));
+    out.innerHTML=txt}
+  function ui(){seg(b1,[['hipo','hipotoniczny'],['izo','izotoniczny'],['hiper','hipertoniczny']],sol,function(v){sol=v;ui()});seg(b2,[['roslina','komórka roślinna'],['krwinka','erytrocyt']],cell,function(v){cell=v;ui()});draw()}
+  ui()}});
+
+BIO.define('mutacje-punktowe',{opis:'Mutacje punktowe na krótkim mRNA: cicha, zmiany sensu, nonsensowna, wstawienie i delecja z przesunięciem ramki odczytu; porównanie łańcucha aminokwasów przed i po zmianie',
+mount:function(el){
+  var CT='UUU F UUC F UUA L UUG L CUU L CUC L CUA L CUG L AUU I AUC I AUA I AUG M GUU V GUC V GUA V GUG V UCU S UCC S UCA S UCG S CCU P CCC P CCA P CCG P ACU T ACC T ACA T ACG T GCU A GCC A GCA A GCG A UAU Y UAC Y UAA * UAG * CAU H CAC H CAA Q CAG Q AAU N AAC N AAA K AAG K GAU D GAC D GAA E GAG E UGU C UGC C UGA * UGG W CGU R CGC R CGA R CGG R AGU S AGC S AGA R AGG R GGU G GGC G GGA G GGG G'.split(' '),T={};for(var i=0;i<CT.length;i+=2)T[CT[i]]=CT[i+1];
+  var NM={F:'Phe',L:'Leu',I:'Ile',M:'Met',V:'Val',S:'Ser',P:'Pro',T:'Thr',A:'Ala',Y:'Tyr',H:'His',Q:'Gln',N:'Asn',K:'Lys',D:'Asp',E:'Glu',C:'Cys',W:'Trp',R:'Arg',G:'Gly','*':'STOP'};
+  var ORG='AUGGAACUCAAAUGA',types={
+    cicha:{n:'substytucja cicha',s:ORG.slice(0,5)+'G'+ORG.slice(6),d:'Zmiana jednej zasady (GAA → GAG) nie zmienia aminokwasu (nadal Glu), bo kod genetyczny jest zdegenerowany. Białko bez zmian.'},
+    sens:{n:'substytucja zmiany sensu',s:ORG.slice(0,4)+'U'+ORG.slice(5),d:'GAA → GUA: zamiast Glu pojawia się Val. Jeden aminokwas się zmienia; skutek zależy od jego roli w białku (np. anemia sierpowata).'},
+    nonsens:{n:'substytucja nonsensowna',s:ORG.slice(0,3)+'U'+ORG.slice(4),d:'GAA → UAA: powstaje kodon STOP w środku genu, więc synteza białka kończy się za wcześnie (białko skrócone).'},
+    ins:{n:'insercja (wstawienie nukleotydu)',s:ORG.slice(0,3)+'A'+ORG.slice(3),d:'Dodanie jednej zasady przesuwa ramkę odczytu: wszystkie kodony za miejscem mutacji są odczytane inaczej (mutacja zmiany ramki).'},
+    del:{n:'delecja (utrata nukleotydu)',s:ORG.slice(0,3)+ORG.slice(4),d:'Utrata jednej zasady także przesuwa ramkę odczytu i zwykle zmienia całe białko za miejscem mutacji.'}
+  },cur='cicha';
+  var bar=H('div','bw-seg bv-tools'),box=H('div','bw-mut'),out=H('div','bv-info bw-out');box.style.cssText='font:600 14px/1.9 ui-monospace,Menlo,monospace;overflow-x:auto';out.setAttribute('aria-live','polite');[bar,box,out].forEach(function(e){el.appendChild(e)});
+  function chips(seq,ref){var h='',aa='',stop=false;for(var i=0;i+3<=seq.length;i+=3){var c=seq.substr(i,3),a=T[c]||'?',rc=ref&&ref.substr(i,3),ch=ref&&rc!==c;h+='<span style="padding:1px 6px;margin:1px;border-radius:6px;border:1px solid '+(ch?'#c62828':'#9fb0bd')+';background:'+(ch?'#ffe3e3':'transparent')+'">'+c+'</span>';aa+='<span style="display:inline-block;min-width:50px;text-align:center;margin:1px;padding:1px 4px;border-radius:6px;background:'+(a==='*'?'#ffd0d0':'#e6f1ea')+'">'+NM[a]+'</span>';if(a==='*')break}
+    var rest=seq.length%3?' <span style="color:#888">+'+(seq.length%3)+' nt</span>':'';return '<div>'+h+rest+'</div><div style="font-size:12px;font-weight:500">'+aa+'</div>'}
+  function draw(){var t=types[cur];box.innerHTML='<div style="font:700 12px system-ui;color:#51606e">mRNA przed zmianą</div>'+chips(ORG)+'<div style="font:700 12px system-ui;color:#c62828;margin-top:6px">po mutacji: '+t.n+'</div>'+chips(t.s,ORG);out.innerHTML='<b>'+t.n+'</b><span>'+t.d+'</span>';clr(bar);Object.keys(types).forEach(function(k){var b=H('button','bv-btn'+(k===cur?' on':''));b.type='button';b.setAttribute('aria-pressed',String(k===cur));b.textContent=types[k].n;b.onclick=function(){cur=k;draw()};bar.appendChild(b)})}
+  draw()}});
+
 var OD=0;
 BIO.define('wentylacja',{opis:'Mechanika oddychania: przepona, żebra, objętość klatki i płuc; animacja wdech ↔ wydech tam i z powrotem (autostart w widoku), suwak do ręcznego sterowania, opis fazy',
 mount:function(el){

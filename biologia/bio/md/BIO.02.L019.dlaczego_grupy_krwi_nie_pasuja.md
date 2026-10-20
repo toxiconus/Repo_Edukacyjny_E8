@@ -286,6 +286,9 @@ d) (1 pkt) niezgodność grup pozwala wykluczyć pokrewieństwo (pewnie, w ramac
 
 ## 5 | Rh — osobny układ i konflikt serologiczny {#rh} [[understand:ROZUMIENIE]]
 
+@viz transfuzja | Zgodność krwi dawcy i biorcy | wybierz grupy ABO i Rh
+@opis U góry dwa rzędy przycisków: grupa dawcy (0, A, B, AB, Rh+ / Rh−) i grupa biorcy. Pod nimi prostokąt podzielony na dwie części: po lewej krwinki dawcy (czerwone owale) z antygenami na brzegach — trójkąt A, kwadrat B, kółko D; po prawej przeciwciała biorcy w kształcie litery Y z podpisami anty-A, anty-B (i anty-D przy biorcy Rh−, z uwagą, że powstają dopiero po uczuleniu). Gdy krew jest zgodna, krwinki są rozproszone i pojawia się zielony napis „krwinki pływają swobodnie”; gdy niezgodna — krwinki są stłoczone w grudkę i czerwony napis „aglutynacja”. Pod rysunkiem wyjaśnienie, które przeciwciało rozpoznało który antygen, i tabela 4 × 4 wszystkich par dawca–biorca w układzie ABO (✔ / ✘). Wniosek: o zgodności decyduje para „antygen dawcy — przeciwciało biorcy”; grupa 0 nie ma antygenów A i B, a AB nie ma przeciwciał anty-A i anty-B — w praktyce przetacza się jednak krew tej samej grupy po próbie krzyżowej.
+
 Gdy w banku krwi czytasz wynik „A Rh+”, litera A mówi o układzie ABO, a „Rh+” — o zupełnie innym układzie. **Rh** to układ antygenów kontrolowany przez inny gen (inne locus): jeśli na krwinkach jest antygen D — osoba jest **Rh+**; jeśli go nie ma — **Rh−**. W modelu szkolnymRh ma dwa allele: D (dominujący) i d (recesywny). Genotypy DD i Dd dają Rh+, a tylko dd daje Rh−. Czyli: Rh− zawsze oznacza homozygotę dd, a Rh+ może kryć DD albo Dd — znowu fenotyp nie zdradza pełnego genotypu.
 
 ::: karta core | Dwa układy — dwie tabele, nigdy jedna szachownica

@@ -35,3 +35,9 @@ Wszystkie nowe komponenty: wpis w `biologia/bio/BIO_KATALOG.md` i test `node bio
 ## Stan realizacji (2026-10-20)
 Zrobione (`szablon/bio-rysunki.js`, wstawione w REV01/REV02): wykres-dane, komorki-porownanie, ryba-budowa, mikroskop-budowa, jajo-ptaka, tkanki-zwierzece, stawonogi-budowa + dodatkowo jajo-porownanie (jajo u różnych grup, ścieżka ewolucyjna).
 Zrobione też: komponent `cykl` (żaba, tasiemiec, mech, paproć, kwiat, faga). Do zrobienia: preparat-krok, szyszki-igly; etap II: serce-obieg, krew, naczynia, neuron-odruch, przepona, nefron, trawienie, skóra, staw-czaszka.
+
+## Stan 2026-10-20 (wieczorem) — aktualizacja
+Etap I i II zrobione (większość pozycji jest w `bio-rysunki.js` i w bibliotece `wizualizacje/`): m.in. preparat-mikroskopowy, szyszki-iglaste, kwiat-budowa, serce, krew, naczynia, neuron, nefron, przewód pokarmowy, skóra, staw.
+Dodane dziś z arkuszy i brakujących tematów: nablonki-rodzaje, krew-skladniki, miesnie-trzy, polip-meduza, bezkregowce-sylwetki, drzewa-krzewy, mapa-narzadow, liscie-rodzaje, owoce-rozsiewanie, przeksztalcenia-organow, nasiono-ziarniak, zboza-klosy, neurony-mielina, osmoza-komorka, mutacje-punktowe.
+Rozstawienie w lekcjach wyrównane: transfuzja → L019, kontrola-podzialow → L009, mapa-narzadow → L002, osmoza → L005, mutacje → L020.
+Do zrobienia (luki): lekcje bez żadnej wizualizacji (L003 diagnoza, X01 szablon — celowo); kolejne tematy z olimpiady: dyfuzja (prosty model), chromosomy i kariotyp, drzewo rodowodowe, budowa DNA→chromosom (jest poziomy-dna), fotosynteza doświadczenie (próba kontrolna jest), układ limfatyczny, oko (jest), staw-czaszka.

@@ -102,6 +102,9 @@ Dlaczego krew jednych ludzi jest „zgodna”, a innych nie?
 
 ## 6. Wyjaśnienie od podstaw (warstwa podręcznikowa)
 
+@viz mapa-narzadow | Narządy człowieka — do jakiego układu należą? | kliknij, znajdź, podpisz
+@opis Sylwetka człowieka z zaznaczonymi narządami: mózg w głowie, płuca i serce w klatce piersiowej, wątroba, żołądek, trzustka, jelita, nerki i pęcherz moczowy w jamie brzusznej. Wniosek: każdy narząd należy do układu, w którym pełni swoją funkcję (np. trzustka — pokarmowy i dokrewny).
+
 Cechy organizmu wynikają z komórek, a komórki działają według informacji zapisanej w DNA. Geny w jądrze kodują białka, które budują i regulują organizm.
 
 **Układy istotne dla genetyki:**

@@ -56,6 +56,9 @@ Małe cząsteczki niepolarne, np. tlen i dwutlenek węgla, mogą stosunkowo łat
 Transport ułatwiony jest wybiórczy: konkretne białko nie przewodzi dowolnej substancji. Może też ulegać nasyceniu, gdy wszystkie dostępne białka transportujące są zajęte.
 
 ## 6. Osmoza i wpływ roztworu na komórkę
+
+@viz osmoza-komorka | Osmoza: komórka roślinna i erytrocyt w trzech roztworach | wybierz roztwór i typ komórki
+@opis Dwa rzędy przycisków: roztwór hipotoniczny, izotoniczny, hipertoniczny oraz komórka roślinna lub erytrocyt. Pod nimi rysunek komórki w niebieskim roztworze ze strzałkami wody: w hipotonicznym woda wnika (komórka roślinna z turgorem, erytrocyt pęcznieje), w izotonicznym brak wypadkowego ruchu, w hipertonicznym woda wychodzi (plazmoliza, pomarszczony erytrocyt). Wniosek: kierunek ruchu wody zależy od stężenia roztworu w porównaniu z wnętrzem komórki.
 Osmoza dotyczy **wody**, a nie soli czy cukru. Aby przewidzieć kierunek ruchu wody, trzeba wiedzieć, które substancje mogą przejść przez błonę. W szkolnych modelach porównuje się zwykle roztwory, których rozpuszczone cząsteczki nie przechodzą swobodnie przez błonę.
 
 - **Roztwór hipotoniczny względem komórki:** woda napływa do komórki netto. Komórka roślinna zwiększa turgor; komórka zwierzęca może pęcznieć, ponieważ nie ma sztywnej ściany komórkowej.
