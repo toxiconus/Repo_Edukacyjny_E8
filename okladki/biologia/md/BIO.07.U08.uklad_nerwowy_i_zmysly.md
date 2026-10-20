@@ -192,6 +192,9 @@ Punktacja: po 1 pkt za wiersz (0,5 pkt za każdą odpowiedź TAK/NIE) — razem 
 
 ## 6 | Mózgowie [[basic:E8]] {#mozgowie}
 
+@viz mozg-budowa | Mózg — budowa | kliknij, znajdź, podpisz
+@opis Przekrój boczny mózgu: duża pofałdowana półkula (kresomózgowie), pod nią wzgórze i podwzgórze, z tyłu móżdżek, a w dół pień mózgu przechodzący w rdzeń kręgowy. Wniosek: kresomózgowie odpowiada za myślenie, móżdżek za koordynację ruchów, a pień mózgu za podstawowe czynności życiowe.
+
 | Część | Najważniejsze funkcje |
 |---|---|
 | **mózg (kresomózgowie)** — dwie półkule pokryte pofałdowaną **korą** | świadomość, myślenie, pamięć, uczenie się, mowa, planowanie, **ruchy dowolne**, odbieranie i rozpoznawanie wrażeń zmysłowych, emocje |

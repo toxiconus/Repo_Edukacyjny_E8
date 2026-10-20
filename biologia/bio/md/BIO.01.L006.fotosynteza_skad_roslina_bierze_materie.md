@@ -51,6 +51,9 @@ Korzenie pobierają również sole mineralne. Są one niezbędne do prawidłoweg
 
 ## 5. Chloroplast, chlorofil i liść
 
+@viz organelle-energetyczne | Mitochondrium i chloroplast | kliknij, znajdź, podpisz
+@opis Po lewej mitochondrium z gładką błoną zewnętrzną i pofałdowaną wewnętrzną (grzebienie) oraz macierzą; po prawej chloroplast z dwiema błonami, stosami tylakoidów (gran) i stromą. Wniosek: oba organelle mają dwie błony i własne DNA, mitochondrium zajmuje się oddychaniem, chloroplast fotosyntezą.
+
 @viz liscie-rodzaje | Liść: blaszka, ogonek, nerwacja, liść złożony | kliknij, znajdź, podpisz
 @opis Rysunek pokazuje zieloną blaszkę z ogonkiem i nerwami, liść pojedynczy, liść złożony pierzasty (listki wzdłuż osi), liść złożony dłoniasty (listki z jednego punktu) oraz liść z równoległymi nerwami. Wniosek: liść złożony ma wiele listków na jednej osi, a rodzaj użyłkowania (siatkowate lub równoległe) wskazuje grupę roślin.
 Chloroplasty są organellami komórek roślinnych i glonów, w których przebiega fotosynteza. Chlorofil jest barwnikiem pochłaniającym energię światła; zielony kolor liści wynika z tego, że chlorofil pochłania część długości fal silniej, a część światła jest odbijana lub przepuszczana.

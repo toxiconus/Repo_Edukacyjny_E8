@@ -43,6 +43,9 @@ Po lekcji wyjaśnisz, dlaczego odruch kolanowy jest szybszy niż świadomy ruch,
 
 ## 2 | Mózgowie — cztery główne części {#mozgowie}
 
+@viz mozg-budowa | Mózg — budowa | kliknij, znajdź, podpisz
+@opis Przekrój boczny mózgu: duża pofałdowana półkula (kresomózgowie), pod nią wzgórze i podwzgórze, z tyłu móżdżek, a w dół pień mózgu przechodzący w rdzeń kręgowy. Wniosek: kresomózgowie odpowiada za myślenie, móżdżek za koordynację ruchów, a pień mózgu za podstawowe czynności życiowe.
+
 1. **Kora mózgowa** — największa część półkul (kora i istota biała to ok. 80% masy mózgu). Dzieli się na 4 płaty:
    - **czołowy** — myślenie, planowanie, ruch dowolny, ośrodek mowy (Broki),
    - **ciemieniowy (parietalny)** — czucie, orientacja przestrzenna,

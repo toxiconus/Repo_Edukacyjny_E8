@@ -3249,6 +3249,173 @@ mount:function(el){
   function draw(){var t=types[cur];box.innerHTML='<div style="font:700 12px system-ui;color:#51606e">mRNA przed zmianą</div>'+chips(ORG)+'<div style="font:700 12px system-ui;color:#c62828;margin-top:6px">po mutacji: '+t.n+'</div>'+chips(t.s,ORG);out.innerHTML='<b>'+t.n+'</b><span>'+t.d+'</span>';clr(bar);Object.keys(types).forEach(function(k){var b=H('button','bv-btn'+(k===cur?' on':''));b.type='button';b.setAttribute('aria-pressed',String(k===cur));b.textContent=types[k].n;b.onclick=function(){cur=k;draw()};bar.appendChild(b)})}
   draw()}});
 
+BIO.define('replikacja-dna',{opis:'Widełki replikacyjne: helikaza rozplata podwójną helisę, polimeraza DNA dobudowuje nowe nici (wiodąca ciągle, opóźniona fragmentami Okazaki), starter RNA, nić matrycowa; replikacja semikonserwatywna; tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  lab(el,{get:function(){return{w:360,h:230,label:'Widełki replikacyjne',parts:[
+    {n:'podwójna helisa (przed rozplecieniem)',m:[30,116],d:'Dwie nici DNA związane wiązaniami wodorowymi między komplementarnymi zasadami (A–T, G–C). Replikacja zaczyna się w miejscu startu replikacji.',draw:function(g){g.appendChild(P('M6,104 L120,116',null,'#3f5aa8',4));g.appendChild(P('M6,128 L120,116',null,'#c0392b',4))}},
+    {n:'helikaza',m:[128,116],z:1,d:'Enzym, który rozplata podwójną helisę i rozrywa wiązania wodorowe, tworząc widełki replikacyjne.',draw:function(g){g.appendChild(C(124,116,12,'#ffe066','#b38f00',2.4))}},
+    {n:'nić matrycowa (kierunek 3′→5′)',m:[200,26],d:'Nić, według której dobudowywana jest nowa nić — dzięki komplementarności powstaje wierna kopia.',draw:function(g){g.appendChild(P('M136,108 L350,40',null,'#3f5aa8',4))}},
+    {n:'nić wiodąca',m:[300,66],d:'Nowa nić syntetyzowana w sposób ciągły w kierunku rozwidlenia — polimeraza DNA dobudowuje nukleotydy do końca 3′.',draw:function(g){g.appendChild(P('M140,98 L330,36',null,'#e09400',4));g.appendChild(P('M330,36 l-8,0 M330,36 l-3,8',null,'#e09400',3))}},
+    {n:'polimeraza DNA',m:[220,70],z:1,d:'Enzym łączący nukleotydy zgodnie z kolejnością na matrycy. Potrafi dobudowywać tylko do końca 3′ nowej nici.',draw:function(g){g.appendChild(E(240,72,12,9,'#d1c4e9','#6a3fb0',2.4,-20))}},
+    {n:'nić opóźniona',m:[300,190],d:'Nowa nić syntetyzowana nieciągle, krótkimi odcinkami (fragmentami Okazaki), bo polimeraza pracuje w kierunku przeciwnym do ruchu widełek.',draw:function(g){g.appendChild(P('M136,126 L350,196',null,'#c0392b',4));[[330,190,300,180],[284,176,254,166],[238,160,208,150]].forEach(function(p){g.appendChild(P('M'+p[0]+','+p[1]+' L'+p[2]+','+p[3],null,'#f0a45a',4))})}},
+    {n:'fragmenty Okazaki',m:[250,206],d:'Krótkie odcinki nowej nici opóźnionej; później łączy je enzym ligaza w jedną ciągłą nić.',draw:function(g){[[330,190,300,180],[284,176,254,166],[238,160,208,150]].forEach(function(p){g.appendChild(P('M'+p[0]+','+p[1]+' L'+p[2]+','+p[3],null,'#f0a45a',5))})}},
+    {n:'starter (primer) RNA',m:[326,152],d:'Krótki odcinek RNA, od którego polimeraza zaczyna syntezę nowej nici (polimeraza DNA nie zaczyna od zera).',draw:function(g){[[340,196],[292,180],[246,164]].forEach(function(p){g.appendChild(R(p[0]-4,p[1]-3,8,6,2,'#8e3f86','none',0))})}}
+  ]}}})}});
+
+BIO.define('kariotyp',{opis:'Kariotyp człowieka: 22 pary autosomów i jedna para chromosomów płci (XX lub XY); chromosom jako dwie chromatydy z centromerem; trisomia 21; tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  function chr(g,x,y,h,col){g.appendChild(R(x-3,y,6,h*0.45,3,col,'#333',1));g.appendChild(R(x-3,y+h*0.5,6,h*0.45,3,col,'#333',1))}
+  lab(el,{get:function(){return{w:360,h:230,label:'Kariotyp człowieka',parts:[
+    {n:'autosomy (22 pary)',m:[120,52],d:'Chromosomy niezwiązane z płcią; w komórce somatycznej człowieka występują w 22 parach homologicznych (2n = 46 razem z chromosomami płci).',draw:function(g){for(var i=0;i<11;i++){var h=44-i*2;chr(g,20+i*20,20,h,'#b9d6f2');chr(g,30+i*20,20,h,'#b9d6f2')}for(var i=0;i<11;i++){var h=32-i*1.2;chr(g,20+i*20,84,h,'#b9d6f2');chr(g,30+i*20,84,h,'#b9d6f2')}}},
+    {n:'chromosomy płci',m:[300,170],d:'Ostatnia, 23. para: XX u kobiet, XY u mężczyzn. Chromosom Y jest mniejszy niż X.',draw:function(g){g.appendChild(R(240,130,96,62,10,'#fff4d6','#b8860b',1.6));chr(g,270,140,44,'#f0a45a');chr(g,310,152,30,'#7aa63a')}},
+    {n:'chromosom X',m:[270,114],z:1,d:'Duży chromosom płci; kobieta ma dwa (XX), mężczyzna jeden (XY). Zawiera wiele genów niezwiązanych z płcią.',draw:function(g){g.appendChild(R(266,140,8,44,3,'none','#c46a00',2))}},
+    {n:'chromosom Y',m:[330,114],z:1,d:'Mały chromosom płci, obecny tylko u mężczyzn (gen SRY inicjuje rozwój męski).',draw:function(g){g.appendChild(R(306,152,8,30,3,'none','#2e7d32',2))}},
+    {n:'chromosom 21 (trisomia — zespół Downa)',m:[44,206],d:'Trzy kopie chromosomu 21 zamiast dwóch (2n + 1 = 47) to zespół Downa; powstaje przez nierozdzielenie chromosomów w mejozie.',draw:function(g){chr(g,30,150,40,'#f4a6c6');chr(g,50,150,40,'#f4a6c6');chr(g,70,150,40,'#f4a6c6')}},
+    {n:'chromatydy siostrzane i centromer',m:[110,206],d:'Chromosom po replikacji ma dwie chromatydy siostrzane połączone w centromerze (przewężeniu).',draw:function(g){g.appendChild(P('M120,150 Q108,166 120,190',null,'#555',6));g.appendChild(P('M132,150 Q144,166 132,190',null,'#555',6));g.appendChild(C(126,170,4,'#c62828','none',0))}}
+  ]}}})}});
+
+BIO.define('szkielet-czlowieka',{opis:'Szkielet człowieka: czaszka, żebra, mostek, kręgosłup, obojczyk, łopatka, kość ramienna, kości przedramienia (promieniowa, łokciowa), miednica, kość udowa, piszczel, strzałka; tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  var B='#efe6d2',BS='#8a7a50';
+  lab(el,{get:function(){return{w:360,h:300,label:'Szkielet człowieka',parts:[
+    {n:'czaszka',m:[180,24],d:'Chroni mózg; zbudowana z kości mózgoczaszki i trzewioczaszki (żuchwa jest jedyną ruchomą kością czaszki).',draw:function(g){g.appendChild(E(180,28,22,24,B,BS,2));g.appendChild(R(166,46,28,10,3,B,BS,1.6))}},
+    {n:'kręgosłup',m:[180,100],d:'Kolumna 33–34 kręgów (szyjne, piersiowe, lędźwiowe, krzyżowe, guziczne); chroni rdzeń kręgowy, ma dwa wygięcia kifotyczne i dwa lordotyczne.',draw:function(g){for(var i=0;i<14;i++)g.appendChild(R(176,58+i*10,8,8,2,B,BS,1.2))}},
+    {n:'żebra i mostek',m:[180,100],z:1,d:'12 par żeber tworzy klatkę piersiową z mostkiem; chroni serce i płuca i uczestniczy w wentylacji.',draw:function(g){g.appendChild(R(178,70,4,44,2,B,BS,1.4));[0,1,2,3,4].forEach(function(i){g.appendChild(P('M178,'+(74+i*8)+' Q138,'+(78+i*8)+' 140,'+(112+i*5),null,BS,2));g.appendChild(P('M182,'+(74+i*8)+' Q222,'+(78+i*8)+' 220,'+(112+i*5),null,BS,2))})}},
+    {n:'obojczyk i łopatka',m:[240,66],d:'Pas kończyny górnej: łączy kość ramienną z tułowiem (obojczyk łączy się z mostkiem).',draw:function(g){g.appendChild(P('M178,66 L128,64 M182,66 L232,64',null,BS,4));g.appendChild(P('M128,66 L122,92 L138,84Z',B,BS,1.6));g.appendChild(P('M232,66 L238,92 L222,84Z',B,BS,1.6))}},
+    {n:'kość ramienna',m:[100,120],d:'Długa kość ramienia; łączy się z łopatką (staw ramienny) i kośćmi przedramienia (staw łokciowy).',draw:function(g){g.appendChild(R(112,66,8,60,4,B,BS,1.8));g.appendChild(R(240,66,8,60,4,B,BS,1.8))}},
+    {n:'kości przedramienia',m:[96,158],d:'Promieniowa (po stronie kciuka) i łokciowa (po stronie małego palca); pozwalają na obrót przedramienia.',draw:function(g){[[108,128],[236,128]].forEach(function(p){g.appendChild(R(p[0],p[1],5,56,2,B,BS,1.6));g.appendChild(R(p[0]+7,p[1],5,56,2,B,BS,1.6))})}},
+    {n:'miednica',m:[180,184],d:'Kości biodrowe, kulszowe i łonowe połączone z kością krzyżową; chroni narządy jamy brzusznej i łączy szkielet z kończynami dolnymi.',draw:function(g){g.appendChild(P('M140,196 Q130,172 150,164 L210,164 Q230,172 220,196 Q196,208 180,198 Q164,208 140,196Z',B,BS,2))}},
+    {n:'kość udowa',m:[140,230],d:'Najdłuższa i najmocniejsza kość ciała; głowa kości udowej tworzy staw biodrowy z panewką miednicy.',draw:function(g){g.appendChild(R(150,198,10,58,5,B,BS,1.8));g.appendChild(R(200,198,10,58,5,B,BS,1.8))}},
+    {n:'piszczel i strzałka',m:[150,280],d:'Kości podudzia: piszczel (większa, przenosi ciężar ciała) i strzałka; łączą się z kością udową w stawie kolanowym.',draw:function(g){[[150,262],[200,262]].forEach(function(p){g.appendChild(R(p[0],p[1],8,36,3,B,BS,1.6));g.appendChild(R(p[0]+(p[0]<180?-6:10),p[1]+2,4,32,2,B,BS,1.4))})}}
+  ]}}})}});
+
+BIO.define('mozg-budowa',{opis:'Mózg człowieka w przekroju bocznym: kresomózgowie (półkula z płatami), międzymózgowie (wzgórze, podwzgórze), pień mózgu (śródmózgowie, most, rdzeń przedłużony), móżdżek, rdzeń kręgowy; tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  lab(el,{get:function(){return{w:360,h:250,label:'Przekrój boczny mózgu',parts:[
+    {n:'kresomózgowie (półkula z korą)',m:[180,40],z:-2,d:'Największa część mózgu; kora mózgowa (istota szara) odpowiada za myślenie, pamięć, świadome ruchy i odbieranie wrażeń. Dwie półkule połączone ciałem modzelowatym.',draw:function(g){g.appendChild(P('M60,130 Q40,40 150,26 Q250,16 300,70 Q326,110 290,150 L90,160Z','#f4b8c8','#b83f78',3))}},
+    {n:'płat czołowy',m:[88,70],d:'Przedni płat kory: planowanie, podejmowanie decyzji, osobowość, ruchy dowolne (ośrodek ruchowy).',draw:function(g){g.appendChild(P('M60,130 Q40,60 110,34 L150,32 L156,140Z','none','#b83f78',1.6,{'stroke-dasharray':'4 3'}))}},
+    {n:'ciało modzelowate',m:[180,80],z:1,d:'Pasmo włókien nerwowych łączące obie półkule mózgu.',draw:function(g){g.appendChild(P('M110,100 Q180,76 250,100',null,'#fff',6))}},
+    {n:'wzgórze i podwzgórze',m:[190,112],z:1,d:'Międzymózgowie: wzgórze to stacja przekaźnikowa bodźców czuciowych; podwzgórze steruje homeostazą (temperatura, głód, pragnienie) i przysadką.',draw:function(g){g.appendChild(E(180,112,24,14,'#c9a0dc','#6a3fb0',2))}},
+    {n:'móżdżek',m:[250,186],d:'Koordynuje ruchy, utrzymuje równowagę i napięcie mięśni; ma pofałdowaną powierzchnię.',draw:function(g){g.appendChild(P('M214,176 Q250,150 296,176 Q300,206 256,212 Q216,208 214,176Z','#b9d6f2','#3f5aa8',2.4));[186,194,202].forEach(function(y){g.appendChild(P('M222,'+y+' Q256,'+(y-8)+' 290,'+y,null,'#3f5aa8',1.2))})}},
+    {n:'pień mózgu (śródmózgowie, most, rdzeń przedłużony)',m:[168,200],d:'Łączy mózg z rdzeniem kręgowym; w rdzeniu przedłużonym ośrodki oddychania, krążenia i odruchów (kaszel, połykanie).',draw:function(g){g.appendChild(P('M158,140 L200,140 L204,176 L194,236 L168,236 L160,176Z','#ffe0b2','#b5701a',2.4))}},
+    {n:'rdzeń kręgowy',m:[184,246],d:'Przedłużenie pnia mózgu w kanale kręgowym; przewodzi impulsy i jest ośrodkiem odruchów (np. odruch kolanowy).',draw:function(g){g.appendChild(R(172,230,22,20,4,'#fff4d6','#b8860b',2))}}
+  ]}}})}});
+
+BIO.define('uklad-oddechowy',{opis:'Drogi oddechowe człowieka: jama nosowa, gardło, krtań, tchawica, oskrzela, oskrzeliki, pęcherzyki płucne, płuca, przepona; tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  lab(el,{get:function(){return{w:360,h:280,label:'Układ oddechowy',parts:[
+    {n:'jama nosowa',m:[180,22],d:'Powietrze jest tu ogrzewane, oczyszczane (rzęski, śluz) i nawilżane.',draw:function(g){g.appendChild(E(180,28,26,18,'#ffe0cc','#b5694a',2))}},
+    {n:'gardło i krtań',m:[222,64],d:'Gardło to wspólna droga pokarmu i powietrza; w krtani są struny głosowe, a nagłośnia zamyka drogi oddechowe podczas połykania.',draw:function(g){g.appendChild(R(168,46,24,26,6,'#f3d2c8','#a8604a',2))}},
+    {n:'tchawica',m:[222,100],d:'Rura wzmocniona chrzęstnymi półpierścieniami (nie zapada się); wyściela ją nabłonek urzęsiony z komórkami śluzowymi.',draw:function(g){g.appendChild(R(172,72,16,50,4,'#cfe3f5','#2a6f97',2));for(var y=78;y<120;y+=8)g.appendChild(L(172,y,188,y,'#2a6f97',1.4))}},
+    {n:'oskrzela',m:[250,134],d:'Dwie gałęzie tchawicy prowadzące do płuc; rozgałęziają się w oskrzeliki.',draw:function(g){g.appendChild(P('M180,122 L132,150 M180,122 L228,150',null,'#2a6f97',6))}},
+    {n:'płuca',m:[100,190],z:-1,d:'Prawe (3 płaty) i lewe (2 płaty) płuco; miejsce wymiany gazowej. Otoczone opłucną.',draw:function(g){g.appendChild(P('M126,140 Q70,160 76,234 Q110,260 150,230 Q160,170 144,142Z',"#f9c9c9",'#b23b3b',2.4));g.appendChild(P('M234,140 Q290,160 284,234 Q250,260 210,230 Q200,170 216,142Z',"#f9c9c9",'#b23b3b',2.4))}},
+    {n:'oskrzeliki',fix:1,m:[117,172],z:1,d:'Cienkie, rozgałęzione drogi oddechowe bez chrząstek; kończą się pęcherzykami.',draw:function(g){['M132,152 L108,176 L96,200','M132,152 L124,186 L120,214','M228,152 L252,176 L264,200','M228,152 L236,186 L240,214'].forEach(function(d){g.appendChild(P(d,null,'#2a6f97',2.4))})}},
+    {n:'pęcherzyki płucne',fix:1,m:[140,216],z:1,d:'Maleńkie pęcherzyki o cienkiej ścianie otoczone naczyniami włosowatymi; tu zachodzi wymiana gazowa (ok. 300 mln w płucach).',draw:function(g){[[96,200],[120,214],[264,200],[240,214]].forEach(function(p){for(var k=0;k<3;k++)g.appendChild(C(p[0]+(k-1)*7,p[1]+8+(k%2)*5,5,'#fff','#b23b3b',1.4))})}},
+    {n:'przepona',m:[180,262],d:'Mięsień oddzielający klatkę piersiową od jamy brzusznej; jej skurcz powoduje wdech.',draw:function(g){g.appendChild(P('M70,252 Q180,226 290,252',null,'#c0602c',8))}}
+  ]}}})}});
+
+BIO.define('organelle-energetyczne',{opis:'Budowa mitochondrium (błona zewnętrzna i wewnętrzna z grzebieniami, macierz) i chloroplastu (błony, tylakoidy w gran, stroma); tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  lab(el,{get:function(){return{w:360,h:220,label:'Mitochondrium i chloroplast',parts:[
+    {n:'błona zewnętrzna mitochondrium',fix:1,m:[24,110],z:-2,d:'Gładka błona otaczająca mitochondrium; przepuszcza małe cząsteczki.',draw:function(g){g.appendChild(E(90,110,74,48,'#fde9dc','#e58b5a',3))}},
+    {n:'grzebienie mitochondrialne (błona wewnętrzna)',fix:1,m:[60,96],d:'Pofałdowana błona wewnętrzna; na niej działa łańcuch oddechowy i syntaza ATP, a fałdy zwiększają powierzchnię.',draw:function(g){g.appendChild(P('M46,100 Q60,100 60,120 Q60,138 46,138 M70,76 Q86,76 86,100 Q86,128 70,138 M100,72 Q116,72 116,96 Q116,124 100,140 M126,90 Q138,92 138,114 Q138,130 124,134',null,'#c06a30',2.6))}},
+    {n:'macierz mitochondrium',fix:1,m:[130,128],z:-1,d:'Wnętrze mitochondrium: zachodzą tu cykl Krebsa i etapy oddychania tlenowego; ma własne DNA i rybosomy.',draw:function(g){g.appendChild(E(90,112,62,36,'#fff4e8','none',0))}},
+    {n:'błony chloroplastu',fix:1,m:[188,110],z:-2,d:'Dwie błony otaczające chloroplast; wnętrze wypełnia stroma.',draw:function(g){g.appendChild(E(260,110,80,50,'#e3f4e3','#4caf50',3))}},
+    {n:'tylakoidy w gran',fix:1,m:[260,86],d:'Płaskie woreczki ułożone w stosy (gran); w ich błonach jest chlorofil — zachodzi faza zależna od światła.',draw:function(g){[[230,100],[262,92],[290,112],[240,128]].forEach(function(p){for(var k=0;k<4;k++)g.appendChild(R(p[0],p[1]+k*5,24,4,2,'#66bb6a','#2e7d32',1))})}},
+    {n:'stroma',fix:1,m:[318,132],z:-1,d:'Płyn wypełniający chloroplast poza tylakoidami; tu przebiega cykl Calvina (wiązanie CO₂ w cukry); ma własne DNA.',draw:function(g){g.appendChild(E(260,110,70,40,'#cfe9cf','none',0))}}
+  ]}}})}});
+
+BIO.define('zab-budowa',{opis:'Budowa zęba człowieka: korona, szyjka, korzeń, szkliwo, zębina, miazga, cement, dziąsło, kość szczęki; tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  lab(el,{get:function(){return{w:360,h:260,label:'Przekrój zęba',parts:[
+    {n:'szkliwo',m:[130,40],d:'Najtwardsza tkanka ciała (głównie hydroksyapatyt); pokrywa koronę, nie odnawia się.',draw:function(g){g.appendChild(P('M110,100 Q108,30 180,28 Q252,30 250,100 Q180,92 110,100Z','#fff','#8a8a8a',3))}},
+    {n:'zębina',m:[240,64],z:-1,d:'Żółtawa tkanka kostna pod szkliwem, tworzy większość zęba; jest wrażliwa, bo zawiera kanaliki z włóknami nerwowymi.',draw:function(g){g.appendChild(P('M118,98 Q118,40 180,38 Q242,40 242,98 L226,226 Q180,246 134,226Z','#f6e7b4','#b59a3a',2))}},
+    {n:'miazga (jama zęba)',m:[180,110],z:1,d:'Wnętrze zęba z naczyniami krwionośnymi i nerwami; odżywia ząb i odpowiada za czucie bólu.',draw:function(g){g.appendChild(P('M156,92 Q156,64 180,64 Q204,64 204,92 L198,196 L180,212 L162,196Z','#f4a6a6','#b23b3b',2))}},
+    {n:'korona zęba',m:[96,50],z:-3,d:'Część zęba wystająca ponad dziąsło; pokryta szkliwem.',draw:function(g){g.appendChild(R(104,22,152,84,0,'none','none',0));g.appendChild(L(86,106,274,106,'#7aa63a',1.2,{'stroke-dasharray':'4 3'}))}},
+    {n:'dziąsło',m:[300,110],z:-2,d:'Tkanka okrywająca szyjkę zęba; chroni miejsce wejścia zęba w kość.',draw:function(g){g.appendChild(P('M20,106 Q110,92 120,110 L120,150 L20,160Z','#ffb3b3','#c46a6a',2));g.appendChild(P('M340,106 Q250,92 240,110 L240,150 L340,160Z','#ffb3b3','#c46a6a',2))}},
+    {n:'cement',m:[240,190],z:-1,d:'Cienka warstwa tkanki kostnej pokrywająca korzeń; osadza ząb w zębodole za pomocą włókien ozębnej.',draw:function(g){g.appendChild(P('M120,110 L134,230 Q180,252 226,230 L240,110',null,'#c9a06a',5))}},
+    {n:'kość szczęki (zębodół)',m:[60,200],z:-3,d:'Kość, w której osadzony jest korzeń zęba; łączy się z zębem więzadłem (ozębna).',draw:function(g){g.appendChild(P('M20,160 L120,150 L134,230 Q180,252 226,230 L240,150 L340,160 L340,256 L20,256Z','#efe6d2','#8a7a50',2))}}
+  ]}}})}});
+
+BIO.define('piramida-ekologiczna',{opis:'Piramida energii (reguła 10%): producenci, konsumenci I, II i III rzędu; ilość energii maleje ok. 10-krotnie na każdym poziomie; tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  function lv(g,i,w,col){g.appendChild(R(180-w/2,196-i*46,w,40,6,col,'#555',1.6))}
+  lab(el,{get:function(){return{w:360,h:246,label:'Piramida energii',parts:[
+    {n:'producenci (rośliny, glony)',fix:1,m:[46,216],d:'Pierwszy poziom troficzny: autotrofy wiążące energię światła w fotosyntezie. Mają najwięcej energii (np. 10 000 kJ).',draw:function(g){lv(g,0,300,'#a5d6a7');g.appendChild(BIO.T(180,216,'10 000 kJ',{s:10,w:700}))}},
+    {n:'konsumenci I rzędu (roślinożercy)',fix:1,m:[88,170],d:'Zjadają producentów. Dociera do nich ok. 10% energii z poprzedniego poziomu (np. 1000 kJ).',draw:function(g){lv(g,1,220,'#fff59d');g.appendChild(BIO.T(180,170,'1000 kJ',{s:10,w:700}))}},
+    {n:'konsumenci II rzędu (drapieżniki, mięsożercy)',fix:1,m:[132,124],d:'Zjadają roślinożerców; ok. 100 kJ. Reszta energii jest zużyta na oddychanie, ruch i ciepło.',draw:function(g){lv(g,2,140,'#ffcc80');g.appendChild(BIO.T(180,124,'100 kJ',{s:10,w:700}))}},
+    {n:'konsumenci III rzędu (szczytowy drapieżnik)',fix:1,m:[158,78],d:'Ostatnie ogniwo łańcucha: ok. 10 kJ. Dlatego łańcuchy pokarmowe są krótkie (zwykle 4–5 ogniw).',draw:function(g){lv(g,3,70,'#ef9a9a');g.appendChild(BIO.T(180,78,'10 kJ',{s:10,w:700}))}},
+    {n:'reguła 10% (strata energii)',m:[320,120],z:1,d:'Tylko ok. 10% energii przechodzi na wyższy poziom; reszta zostaje zużyta w procesach życiowych i rozproszona jako ciepło. Dlatego piramida energii zawsze zwęża się ku górze.',draw:function(g){g.appendChild(P('M280,190 L320,190 L320,56 L280,56',null,'#c0392b',2.4,{'stroke-dasharray':'5 3'}));g.appendChild(BIO.T(334,124,'÷10',{s:12,w:800,f:'#c0392b'}))}}
+  ]}}})}});
+
+BIO.define('obieg-wegla',{opis:'Obieg węgla w przyrodzie: CO₂ w atmosferze, fotosynteza, oddychanie, łańcuch pokarmowy, rozkład przez destruentów, paliwa kopalne i ich spalanie; tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  function box(g,x,y,w,h,f,s,t){g.appendChild(R(x,y,w,h,8,f,s,2));g.appendChild(BIO.T(x+w/2,y+h/2,t,{s:10.5,w:700}))}
+  function ar(g,x1,y1,x2,y2,c){g.appendChild(L(x1,y1,x2,y2,c||'#555',2.4));var dx=x2-x1,dy=y2-y1,l=Math.sqrt(dx*dx+dy*dy);dx/=l;dy/=l;g.appendChild(P('M'+x2+','+y2+' l'+(-dx*8+dy*4)+','+(-dy*8-dx*4)+' M'+x2+','+y2+' l'+(-dx*8-dy*4)+','+(-dy*8+dx*4),null,c||'#555',2.4))}
+  lab(el,{get:function(){return{w:360,h:250,label:'Obieg węgla',parts:[
+    {n:'CO₂ w atmosferze',fix:1,m:[118,12],d:'Główny nieorganiczny zasób węgla dla roślin; stężenie rośnie przez spalanie paliw kopalnych (efekt cieplarniany).',draw:function(g){box(g,110,6,140,32,'#e3f2fd','#2a7fb0','CO₂ w atmosferze')}},
+    {n:'fotosynteza',fix:1,m:[116,70],d:'Producenci wiążą CO₂ w związki organiczne (glukoza); to wejście węgla do łańcucha pokarmowego.',draw:function(g){ar(g,150,38,80,100,'#2e7d32');g.appendChild(BIO.T(84,68,'fotosynteza',{s:9.5,w:700,f:'#2e7d32',a:'end'}))}},
+    {n:'oddychanie',fix:1,m:[254,72],d:'Wszystkie organizmy utleniają związki organiczne i uwalniają CO₂ do atmosfery.',draw:function(g){ar(g,278,110,230,38,'#c0602c');g.appendChild(BIO.T(290,70,'oddychanie',{s:9.5,w:700,f:'#c0602c',a:'start'}))}},
+    {n:'producenci (rośliny)',fix:1,m:[28,106],d:'Zawierają węgiel w tkankach (celuloza, skrobia); są pokarmem roślinożerców.',draw:function(g){box(g,20,100,100,34,'#c8e6c9','#2e7d32','producenci')}},
+    {n:'konsumenci',fix:1,m:[138,136],d:'Zwierzęta zjadają materię organiczną; część węgla zostaje w ich ciele, część wraca jako CO₂ (oddychanie).',draw:function(g){box(g,130,130,100,34,'#fff59d','#b59a00','konsumenci');ar(g,120,118,130,140,'#555')}},
+    {n:'destruenci (rozkład)',fix:1,m:[208,196],d:'Bakterie i grzyby rozkładają szczątki i odchody; węgiel wraca do atmosfery (CO₂) lub do gleby (próchnica).',draw:function(g){box(g,200,190,120,34,'#d7ccc8','#6d4c41','destruenci');ar(g,180,164,230,190,'#555')}},
+    {n:'paliwa kopalne',fix:1,m:[18,196],d:'Węgiel zmagazynowany w ciągu milionów lat (węgiel kamienny, ropa, gaz) — spalanie uwalnia go jako CO₂.',draw:function(g){box(g,10,190,120,34,'#cfd8dc','#455a64','paliwa kopalne');ar(g,70,190,120,30,'#8d6e63')}}
+  ]}}})}});
+
+BIO.define('drzewo-filogenetyczne',{opis:'Drzewo filogenetyczne kręgowców: wspólny przodek, ryby, płazy, gady, ptaki, ssaki; owodniowce; czytanie pokrewieństwa po węzłach; tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  function lf(g,y,t){g.appendChild(BIO.T(346,y,t,{s:10.5,w:700,a:'end'}))}
+  lab(el,{get:function(){return{w:360,h:230,label:'Drzewo filogenetyczne kręgowców',parts:[
+    {n:'wspólny przodek wszystkich kręgowców',m:[24,118],z:1,d:'Najstarszy węzeł: od niego odchodzą wszystkie gałęzie. Węzeł to wspólny przodek wszystkich gałęzi, które z niego wyrastają.',draw:function(g){g.appendChild(C(24,118,6,'#c0392b','#fff',1.6));g.appendChild(L(24,118,24,30,'#555',3));g.appendChild(L(24,30,64,30,'#555',3))}},
+    {n:'ryby',m:[290,30],d:'Najstarsza gałąź kręgowców szczęk; skrzela, płetwy, jaja w wodzie.',draw:function(g){g.appendChild(L(64,30,250,30,'#555',3));lf(g,22,'ryby')}},
+    {n:'płazy',m:[290,70],d:'Gałąź czworonogów związana z wodą w rozmnażaniu (jaja bez skorupy, skrzek); oddychanie skrzelami i płucami.',draw:function(g){g.appendChild(L(24,118,70,118,'#555',3));g.appendChild(L(70,118,70,70,'#555',3));g.appendChild(L(70,70,250,70,'#555',3));lf(g,62,'płazy')}},
+    {n:'owodniowce (wspólny przodek gadów, ptaków i ssaków)',m:[110,128],z:1,d:'Węzeł grupy, która wytwarza jaja z owodnią lub rozwija się w owodni: niezależnie od wody. Wspólny przodek gadów, ptaków i ssaków.',draw:function(g){g.appendChild(C(100,150,5,'#c0392b','#fff',1.6));g.appendChild(L(70,118,70,150,'#555',3));g.appendChild(L(70,150,100,150,'#555',3))}},
+    {n:'gady',m:[290,110],d:'Pokryte łuskami, jaja ze skorupą (lub żyworodne); ptaki są ich bliskimi krewnymi.',draw:function(g){g.appendChild(L(100,150,100,110,'#555',3));g.appendChild(L(100,110,250,110,'#555',3));lf(g,102,'gady')}},
+    {n:'ptaki',m:[290,150],d:'Wyewoluowały z gadów (dinozaurów); pióra, skrzydła, jaja ze skorupą wapienną.',draw:function(g){g.appendChild(L(100,150,250,150,'#555',3));lf(g,142,'ptaki')}},
+    {n:'ssaki',m:[290,192],d:'Gruczoły mlekowe, sierść, stałocieplność; wspólny przodek z gadami i ptakami to owodniowiec.',draw:function(g){g.appendChild(L(100,150,100,192,'#555',3));g.appendChild(L(100,192,250,192,'#555',3));lf(g,184,'ssaki')}}
+  ]}}})}});
+
+BIO.define('rodowod',{opis:'Rodowód rodziny: kwadrat to mężczyzna, koło to kobieta, zaczernione symbole to osoby chore; trzy przypadki — dziedziczenie autosomalne recesywne, autosomalne dominujące i recesywne sprzężone z X; klik w osobę pokazuje genotyp; wskazówki, jak rozpoznać typ dziedziczenia',
+mount:function(el){
+  var cur='ar';
+  var M={
+    ar:{n:'autosomalne recesywne',tip:'Zdrowi rodzice mają chore dziecko → cecha jest recesywna (rodzice są nosicielami Aa). Chorują zwykle osoby w różnych pokoleniach, równie często chłopcy i dziewczynki.',
+      P:[['I-1','m',0,0,'Aa (nosiciel)'],['I-2','f',0,1,'Aa (nosicielka)'],['II-1','f',1,0,'aa (chora)'],['II-2','m',1,1,'AA lub Aa'],['II-3','f',1,2,'AA lub Aa']]},
+    ad:{n:'autosomalne dominujące',tip:'Chore dziecko ma zawsze chorego rodzica → cecha jest dominująca. Chora osoba zwykle ma chorego rodzica w każdym pokoleniu; chorują obie płcie.',
+      P:[['I-1','m',0,1,'Aa (chory)'],['I-2','f',0,0,'aa (zdrowa)'],['II-1','f',1,1,'Aa (chora)'],['II-2','m',1,0,'aa (zdrowy)'],['II-3','f',1,1,'Aa (chora)']]},
+    x:{n:'recesywne sprzężone z X',tip:'Zdrowa matka-nosicielka (X^A X^a) i zdrowy ojciec mogą mieć chorego syna (X^a Y). Chorują głównie mężczyźni, bo mają jeden chromosom X; chory ojciec przekazuje allel córkom, nie synom.',
+      P:[['I-1','m',0,0,'X^A Y (zdrowy)'],['I-2','f',0,0,'X^A X^a (nosicielka)'],['II-1','m',1,1,'X^a Y (chory)'],['II-2','f',1,0,'X^A X^A lub X^A X^a'],['II-3','m',1,0,'X^A Y (zdrowy)']]}
+  };
+  var bar=H('div','bw-seg bv-tools'),svgh=H('div'),out=H('div','bv-info bw-out');out.setAttribute('aria-live','polite');[bar,svgh,out].forEach(function(e){el.appendChild(e)});
+  var sel=-1;
+  function draw(){clr(bar);Object.keys(M).forEach(function(k){var b=H('button','bv-btn'+(k===cur?' on':''));b.type='button';b.setAttribute('aria-pressed',String(k===cur));b.textContent=M[k].n;b.onclick=function(){cur=k;sel=-1;draw()};bar.appendChild(b)});
+    clr(svgh);var svg=BIO.svg(360,230,'Rodowód: '+M[cur].n);svg.setAttribute('class','bw-svg');svgh.appendChild(svg);var d=M[cur].P;
+    var pos=d.map(function(p){var gen=p[0].indexOf('II-')===0?1:0;var idx=gen===0?(p[1]==='m'?0:1):['II-1','II-2','II-3'].indexOf(p[0]);var x=gen===0?(p[1]==='m'?120:240):(60+idx*120);var y=gen===0?50:160;return[x,y]});
+    svg.appendChild(L(120,50,240,50,'#555',2));svg.appendChild(L(180,50,180,105,'#555',2));svg.appendChild(L(60,105,300,105,'#555',2));[60,180,300].forEach(function(x){svg.appendChild(L(x,105,x,160-20,'#555',2))});
+    d.forEach(function(p,i){var aff=/chor/.test(p[4]),x=pos[i][0],y=pos[i][1],g=S('g',{'class':'bv-hit',role:'button',tabindex:'0','aria-label':p[0]});
+      var sh=p[1]==='m'?R(x-18,y-18,36,36,2,aff?'#444':'#fff','#333',2.4):C(x,y,19,aff?'#444':'#fff','#333',2.4);
+      if(/nosiciel/.test(p[4]))g.appendChild(C(x,y,4,'#333','none',0));
+      g.appendChild(sh);if(/nosiciel/.test(p[4]))g.appendChild(C(x,y,4.5,'#333','none',0));
+      g.appendChild(BIO.T(x,y+34,p[0],{s:10.5,w:700,f:'var(--viz-mut,#5d6b7a)'}));
+      g.onclick=function(){sel=i;show()};g.onkeydown=function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();sel=i;show()}};svg.appendChild(g)});
+    svg.appendChild(BIO.T(10,12,'I',{s:12,w:800,a:'start'}));svg.appendChild(BIO.T(10,122,'II',{s:12,w:800,a:'start'}));
+    svg.appendChild(BIO.T(180,224,'kwadrat — mężczyzna · koło — kobieta · zaczernione — osoba chora',{s:9.5,w:500,f:'var(--viz-mut,#5d6b7a)'}));show()}
+  function show(){var d=M[cur];out.innerHTML=(sel<0?'<b>Rodowód — '+d.n+'</b><span>Kliknij osobę, aby zobaczyć jej genotyp.</span><span>'+d.tip+'</span>':'<b>'+d.P[sel][0]+' — '+d.P[sel][4]+'</b><span>'+d.tip+'</span>')}
+  draw()}});
+
+BIO.define('odpowiedz-immunologiczna',{opis:'Wykres odpowiedzi odpornościowej: poziom przeciwciał w czasie po pierwszym kontakcie z antygenem (wolna, słaba) i po drugim kontakcie (szybka, silna — pamięć immunologiczna); przełączniki pokazują pierwotną, wtórną lub obie odpowiedzi',
+mount:function(el){
+  var mode='obie';var bar=H('div','bw-seg bv-tools'),svgh=H('div'),out=H('div','bv-info bw-out');out.setAttribute('aria-live','polite');[bar,svgh,out].forEach(function(e){el.appendChild(e)});
+  function curve(x0,lag,pk,w,col){var pts=[];for(var d=0;d<=40;d++){var x=x0+d,y=0;if(d>lag){var t=(d-lag)/w;y=pk*t*Math.exp(1-t)}pts.push([40+d*7.3,190-y*1.55])}return pts.map(function(p){return p[0].toFixed(1)+','+p[1].toFixed(1)}).join(' ')}
+  function draw(){clr(bar);[['pierwotna','pierwszy kontakt'],['wtorna','drugi kontakt'],['obie','porównaj']].forEach(function(it){var b=H('button','bv-btn'+(it[0]===mode?' on':''));b.type='button';b.setAttribute('aria-pressed',String(it[0]===mode));b.textContent=it[1];b.onclick=function(){mode=it[0];draw()};bar.appendChild(b)});
+    clr(svgh);var svg=BIO.svg(360,230,'Poziom przeciwciał po pierwszym i drugim kontakcie z antygenem');svg.setAttribute('class','bw-svg');svgh.appendChild(svg);
+    svg.appendChild(L(40,190,340,190,'#555',2));svg.appendChild(L(40,190,40,20,'#555',2));svg.appendChild(BIO.T(190,216,'czas od kontaktu z antygenem (dni)',{s:10.5,w:600,f:'var(--viz-mut,#5d6b7a)'}));svg.appendChild(BIO.T(14,105,'poziom przeciwciał',{s:10.5,w:600,f:'var(--viz-mut,#5d6b7a)'})).setAttribute('transform','rotate(-90 14 105)');
+    if(mode!=='wtorna'){svg.appendChild(S('polyline',{points:curve(0,7,45,10),fill:'none',stroke:'#3f5aa8','stroke-width':3}));svg.appendChild(L(150,46,172,46,'#3f5aa8',3));svg.appendChild(BIO.T(178,49,'pierwotna: opóźniona, słabsza',{s:10,w:700,f:'#3f5aa8',a:'start'}))}
+    if(mode!=='pierwotna'){svg.appendChild(S('polyline',{points:curve(0,2,100,8),fill:'none',stroke:'#c0392b','stroke-width':3}));svg.appendChild(L(150,28,172,28,'#c0392b',3));svg.appendChild(BIO.T(178,31,'wtórna: szybka, silna',{s:10,w:700,f:'#c0392b',a:'start'}))}
+    svg.appendChild(L(40,190,40,184,'#555',2));[0,10,20,30,40].forEach(function(d){svg.appendChild(BIO.T(40+d*7.3,201,String(d),{s:9,w:500,f:'var(--viz-mut,#5d6b7a)'}))});
+    out.innerHTML=mode==='pierwotna'?'<b>Odpowiedź pierwotna</b><span>Przy pierwszym kontakcie z antygenem limfocyty B potrzebują kilku dni na namnożenie i produkcję przeciwciał. Poziom jest niski, a organizm zwykle zachoruje.</span>':mode==='wtorna'?'<b>Odpowiedź wtórna</b><span>Przy ponownym kontakcie działają komórki pamięci immunologicznej: reakcja jest szybsza i silniejsza. Na tym opiera się działanie szczepionek.</span>':'<b>Pamięć immunologiczna</b><span>Drugi kontakt z tym samym antygenem (zakażenie lub dawka przypominająca szczepionki) daje znacznie szybszą i silniejszą odpowiedź niż pierwszy.</span>'}
+  draw()}});
+
 var OD=0;
 BIO.define('wentylacja',{opis:'Mechanika oddychania: przepona, żebra, objętość klatki i płuc; animacja wdech ↔ wydech tam i z powrotem (autostart w widoku), suwak do ręcznego sterowania, opis fazy',
 mount:function(el){

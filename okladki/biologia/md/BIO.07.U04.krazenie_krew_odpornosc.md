@@ -320,6 +320,9 @@ Limfa nie krąży w osobnym, zamkniętym obiegu jak krew. Naczynia limfatyczne z
 
 ## 8 | Odporność [[basic:E8]] {#odpornosc}
 
+@viz odpowiedz-immunologiczna | Odpowiedź immunologiczna — pierwszy i drugi kontakt | wybierz widok
+@opis Wykres poziomu przeciwciał w czasie: niebieska krzywa (pierwszy kontakt) rośnie z opóźnieniem do niskiego szczytu, czerwona (drugi kontakt) rośnie szybko i znacznie wyżej. Wniosek: pamięć immunologiczna daje szybszą i silniejszą odpowiedź, co wykorzystują szczepionki.
+
 | Cecha | Odporność wrodzona (nieswoista) | Odporność nabyta (swoista) |
 |---|---|---|
 | od kiedy | od urodzenia | rozwija się w ciągu życia, po kontakcie z antygenem |

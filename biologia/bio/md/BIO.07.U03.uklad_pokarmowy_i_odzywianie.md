@@ -163,6 +163,9 @@ Układ pokarmowy tworzą **przewód pokarmowy** (rura, przez którą przechodzi 
 
 ## 5 | Jama ustna: zęby i ślina [[basic:E8]] {#jama-ustna}
 
+@viz zab-budowa | Budowa zęba | kliknij, znajdź, podpisz
+@opis Przekrój zęba: korona pokryta białym szkliwem, pod nim żółta zębina, w środku czerwona miazga z naczyniami i nerwami, korzeń okryty cementem i osadzony w kości szczęki, dziąsło wokół szyjki. Wniosek: ząb składa się z kilku tkanek, a ból pojawia się, gdy próchnica dochodzi do miazgi.
+
 W jamie ustnej pokarm jest **rozdrabniany**, **mieszany ze śliną**, formowany w **kęs** i zaczyna się **trawienie skrobi**. Język miesza pokarm i przesuwa go do gardła, a kubki smakowe rozpoznają smak (słodki, słony, kwaśny, gorzki, umami). Ślinę wydzielają **trzy pary dużych ślinianek** — przyuszne, podżuchwowe i podjęzykowe — oraz liczne drobne gruczoły w błonie śluzowej jamy ustnej.
 
 **Zęby.** Rozdrobnienie zwiększa powierzchnię pokarmu — enzymy działają szybciej.

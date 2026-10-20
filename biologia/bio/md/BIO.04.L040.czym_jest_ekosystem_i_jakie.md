@@ -132,6 +132,9 @@ Drapieżnictwo i konkurencja to relacje ważne, ale ekosystem nie jest wojną. M
 
 ## 4 | Poziomy troficzne — kto z czego żyje {#troficzne}
 
+@viz piramida-ekologiczna | Piramida energii | kliknij, znajdź, podpisz
+@opis Cztery pasy piramidy, najszerszy na dole: producenci (10 000 kJ), konsumenci I rzędu (1000 kJ), II rzędu (100 kJ) i III rzędu (10 kJ). Przerywany nawias pokazuje regułę 10%. Wniosek: na każdym poziomie ok. 90% energii jest tracone, więc łańcuchy pokarmowe są krótkie.
+
 Organizmy w ekosystemie ustawiamy według tego, co jedzą. Takie „piętra” nazywamy **poziomami troficznymi** (od greckiego *trophe* — pokarm).
 
 | Poziom | Kto | Jak zdobywa energię | Przykład (łąka) |
@@ -169,6 +172,9 @@ W prawdziwym ekosystemie jeden gatunek zjada wiele innych, a sam bywa zjadany pr
 :::
 
 ## 5 | Przepływ energii i obieg materii {#przeplyw}
+
+@viz obieg-wegla | Obieg węgla | kliknij, znajdź, podpisz
+@opis Schemat: CO₂ z atmosfery wiązany w fotosyntezie przez producentów, przekazywany konsumentom, uwalniany w oddychaniu, a szczątki rozkładane przez destruentów; osobno paliwa kopalne, których spalanie zwiększa ilość CO₂. Wniosek: węgiel krąży między atmosferą a organizmami, a spalanie paliw kopalnych zaburza ten obieg.
 
 To najważniejsza różnica w tej lekcji. Energia i materia zachowują się w ekosystemie zupełnie inaczej.
 

@@ -41,3 +41,6 @@ Etap I i II zrobione (większość pozycji jest w `bio-rysunki.js` i w bibliotec
 Dodane dziś z arkuszy i brakujących tematów: nablonki-rodzaje, krew-skladniki, miesnie-trzy, polip-meduza, bezkregowce-sylwetki, drzewa-krzewy, mapa-narzadow, liscie-rodzaje, owoce-rozsiewanie, przeksztalcenia-organow, nasiono-ziarniak, zboza-klosy, neurony-mielina, osmoza-komorka, mutacje-punktowe.
 Rozstawienie w lekcjach wyrównane: transfuzja → L019, kontrola-podzialow → L009, mapa-narzadow → L002, osmoza → L005, mutacje → L020.
 Do zrobienia (luki): lekcje bez żadnej wizualizacji (L003 diagnoza, X01 szablon — celowo); kolejne tematy z olimpiady: dyfuzja (prosty model), chromosomy i kariotyp, drzewo rodowodowe, budowa DNA→chromosom (jest poziomy-dna), fotosynteza doświadczenie (próba kontrolna jest), układ limfatyczny, oko (jest), staw-czaszka.
+
+## Aktualizacja 2026-10-20 (2) — kolejne braki wizualizacji
+Dodane rysunki (lab: poznaj/znajdź/podpisz) i wstawione do lekcji: replikacja-dna (L013), kariotyp (L012), szkielet-czlowieka (U01, B2a), mozg-budowa (U08, B2d), uklad-oddechowy (U06, B2c), organelle-energetyczne (L007, L006), zab-budowa (U03, B2b), piramida-ekologiczna i obieg-wegla (L040), drzewo-filogenetyczne (L030), rodowod (L017; 3 typy dziedziczenia), odpowiedz-immunologiczna (U04 §8).

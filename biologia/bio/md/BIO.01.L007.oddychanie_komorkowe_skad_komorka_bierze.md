@@ -49,6 +49,9 @@ ATP nie jest jedyną cząsteczką uczestniczącą w przekazywaniu energii i elek
 **Ważne:** ATP nie jest paliwem ani magazynem energii organizmu — jest szybko zużywane i szybko odtwarzane (ciekawostka: człowiek „przerabia” w ciągu doby masę ATP porównywalną z masą własnego ciała, a w danej chwili ma go tylko kilkadziesiąt gramów — wartości orientacyjne; ATP jest jak waluta w stałym obiegu, nie jak skarbonka). Długoterminowe magazyny energii to m.in. tłuszcze i glikogen.
 
 ## 4. Gdzie zachodzi oddychanie?
+
+@viz organelle-energetyczne | Mitochondrium i chloroplast | kliknij, znajdź, podpisz
+@opis Po lewej mitochondrium z gładką błoną zewnętrzną i pofałdowaną wewnętrzną (grzebienie) oraz macierzą; po prawej chloroplast z dwiema błonami, stosami tylakoidów (gran) i stromą. Wniosek: oba organelle mają dwie błony i własne DNA, mitochondrium zajmuje się oddychaniem, chloroplast fotosyntezą.
 U organizmów eukariotycznych **glikoliza** — pierwszy etap rozkładu glukozy — zachodzi w cytozolu. Dalsze główne etapy oddychania tlenowego są związane z mitochondriami: w macierzy mitochondrialnej zachodzą m.in. reakcje utleniania pirogronianu i cykl kwasu cytrynowego, a w wewnętrznej błonie mitochondrialnej działa łańcuch transportu elektronów i syntaza ATP.
 
 **Mnemotechnika: „Cytoplazma zaczyna, mitochondrium dokańcza.”** **Uproszczona kolejność etapów u eukariontów:** glukoza → **glikoliza** (cytozol) → pirogronian → **utlenianie pirogronianu i cykl kwasu cytrynowego** (macierz mitochondrium) → **łańcuch transportu elektronów** (wewnętrzna błona mitochondrium) → większość ATP. To model uproszczony — bez cząsteczek pośrednich, enzymów i regulacji.

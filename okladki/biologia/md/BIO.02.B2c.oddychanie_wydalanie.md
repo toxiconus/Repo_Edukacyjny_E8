@@ -31,6 +31,9 @@ Po lekcji wyjaśnisz, dlaczego klatka piersiowa rozszerza się przy wdechu, dlac
 
 ## 1 | Układ oddechowy — budowa {#budowa}
 
+@viz uklad-oddechowy | Układ oddechowy | kliknij, znajdź, podpisz
+@opis Od góry: jama nosowa, gardło i krtań, tchawica z chrzęstnymi półpierścieniami, dwa oskrzela, rozgałęziające się oskrzeliki i pęcherzyki płucne w dwóch płucach, na dole przepona. Wniosek: powietrze przechodzi kolejno przez drogi oddechowe do pęcherzyków, gdzie zachodzi wymiana gazowa.
+
 Powietrze przechodzi przez osiem elementów, od góry do dołu:
 
 1. **Jama nosowa** — ogrzewa, nawilża i filtruje powietrze (śluz i rzęski).

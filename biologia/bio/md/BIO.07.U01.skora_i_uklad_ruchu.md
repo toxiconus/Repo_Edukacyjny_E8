@@ -148,6 +148,9 @@ Pot to woda. Gdy organizmowi brakuje wody, ogranicza pocenie, żeby nie tracić 
 
 ## 6 | Układ ruchu i szkielet [[basic:E8]] {#szkielet}
 
+@viz szkielet-czlowieka | Szkielet człowieka | kliknij, znajdź, podpisz
+@opis Sylwetka szkieletu: czaszka u góry, kręgosłup i klatka piersiowa z żebrami i mostkiem, obojczyki i łopatki, kości ramienne i przedramion, miednica oraz kości udowe, piszczele i strzałki. Wniosek: szkielet osiowy (czaszka, kręgosłup, klatka) chroni narządy, a szkielet kończyn umożliwia ruch.
+
 **Układ ruchu** = część **bierna** (kości i ich połączenia) + część **czynna** (mięśnie szkieletowe ze ścięgnami).
 
 **Funkcje:** utrzymanie kształtu i postawy ciała, ruch, **ochrona narządów** (czaszka — mózg, klatka piersiowa — serce i płuca, kręgosłup — rdzeń kręgowy), **magazyn soli mineralnych** (wapń, fosfor), **wytwarzanie krwinek** (czerwony szpik), magazyn tłuszczu (żółty szpik).

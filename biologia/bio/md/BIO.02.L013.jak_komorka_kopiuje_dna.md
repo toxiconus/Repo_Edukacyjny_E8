@@ -118,6 +118,9 @@ Jak skopiować DNA wiernie — tak, by błędy były jak najrzadsze?
 
 ## 6. Jak to działa?  · **[PODSTAWA E8]**
 
+@viz replikacja-dna | Replikacja DNA — widełki replikacyjne | kliknij, znajdź, podpisz
+@opis Schemat widełek: z lewej podwójna helisa, w miejscu rozplatania helikaza, od niej dwie nowe nici na matrycach. Nić wiodąca (pomarańczowa) rośnie ciągle w kierunku widełek, nić opóźniona powstaje z krótkich fragmentów Okazaki, każdy zaczyna się od startera RNA. Wniosek: każda nowa cząsteczka ma jedną nić starą i jedną nową (replikacja semikonserwatywna).
+
 ### 6.1. Dlaczego to działa? (rdzeń)
 
 1. DNA ma **dwie komplementarne nici**.

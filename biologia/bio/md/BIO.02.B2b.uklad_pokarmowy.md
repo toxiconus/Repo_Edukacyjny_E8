@@ -38,6 +38,9 @@ Nauczysz się budowy układu pokarmowego, procesu trawienia i wchłaniania, oraz
 
 ## 1 | Budowa przewodu pokarmowego {#s1}
 
+@viz zab-budowa | Budowa zęba | kliknij, znajdź, podpisz
+@opis Przekrój zęba: korona pokryta białym szkliwem, pod nim żółta zębina, w środku czerwona miazga z naczyniami i nerwami, korzeń okryty cementem i osadzony w kości szczęki, dziąsło wokół szyjki. Wniosek: ząb składa się z kilku tkanek, a ból pojawia się, gdy próchnica dochodzi do miazgi.
+
 @viz droga-pokarmu | Droga pokarmu | „krok” prowadzi kęs
 @opis Schemat układu pokarmowego: przewód pokarmowy (jama ustna, gardło, przełyk, żołądek, dwunastnica, jelito cienkie, jelito grube z wyrostkiem, odbytnica, odbyt) i gruczoły (ślinianki, wątroba z pęcherzykiem żółciowym, trzustka); kliknij narząd, „krok” prowadzi kęs drogą pokarmu, wybór składnika podświetla narządy, w których jest trawiony i wchłaniany Wniosek: kliknij elementy i przejdź kroki, aby sprawdzić, jak budowa wynika z funkcji.
 

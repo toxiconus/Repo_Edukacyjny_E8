@@ -93,6 +93,9 @@ Układ oddechowy doprowadza tlen tylko do **płuc**. Do mitochondriów w palcu s
 
 ## 3 | Drogi oddechowe [[basic:E8]] {#drogi}
 
+@viz uklad-oddechowy | Układ oddechowy | kliknij, znajdź, podpisz
+@opis Od góry: jama nosowa, gardło i krtań, tchawica z chrzęstnymi półpierścieniami, dwa oskrzela, rozgałęziające się oskrzeliki i pęcherzyki płucne w dwóch płucach, na dole przepona. Wniosek: powietrze przechodzi kolejno przez drogi oddechowe do pęcherzyków, gdzie zachodzi wymiana gazowa.
+
 | Odcinek | Budowa | Funkcja |
 |---|---|---|
 | **jama nosowa** | włoski, małżowiny nosowe, błona śluzowa z naczyniami i śluzem, receptory węchowe | oczyszcza, ogrzewa i nawilża powietrze; węch |

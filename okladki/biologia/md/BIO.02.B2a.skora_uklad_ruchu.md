@@ -61,6 +61,9 @@ Witamina D nie jest w zasadzie witaminą „z diety". Dieta dostarcza ją tylko 
 
 ## 2 | Układ ruchu — przegląd {#przeglad}
 
+@viz szkielet-czlowieka | Szkielet człowieka | kliknij, znajdź, podpisz
+@opis Sylwetka szkieletu: czaszka u góry, kręgosłup i klatka piersiowa z żebrami i mostkiem, obojczyki i łopatki, kości ramienne i przedramion, miednica oraz kości udowe, piszczele i strzałki. Wniosek: szkielet osiowy (czaszka, kręgosłup, klatka) chroni narządy, a szkielet kończyn umożliwia ruch.
+
 Układ ruchu składa się z trzech elementów:
 1. **Szkielet** — 206 kości (część bierna).
 2. **Mięśnie szkieletowe** — ok. 600 mięśni (część czynna).

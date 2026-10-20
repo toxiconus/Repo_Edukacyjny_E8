@@ -2,7 +2,7 @@
 
 Zasada: przed nowym rysunkiem sprawdź tę listę — używamy i ulepszamy istniejące (nowe i stare), nie dublujemy.
 
-## 1. Komponenty BIO (`biologia/bio/szablon/`: bio-viz.js legacy, bio-rysunki.js — małe komponenty z trybem podpisz, wizualizacje/ — biblioteka z gałęzi che-lekcje) — 95
+## 1. Komponenty BIO (`biologia/bio/szablon/`: bio-viz.js legacy, bio-rysunki.js — małe komponenty z trybem podpisz, wizualizacje/ — biblioteka z gałęzi che-lekcje) — 107
 
 | id | opis | plik | użyte w |
 |---|---|---|---|
@@ -53,6 +53,18 @@ Zasada: przed nowym rysunkiem sprawdź tę listę — używamy i ulepszamy istni
 | owoce-rozsiewanie | Rozsiewanie owoców i nasion: wiatr (skrzydlak klonu, puch mniszka), zwierzęta (owoc przyczepny łopianu, mięsisty owoc jarzębiny), woda, samorzutnie (strąk grochu, niecier | bio-rysunki.js | BIO.00.REV02.roznorodnosc_zycia |
 | osmoza-komorka | Osmoza: komórka roślinna i erytrocyt w wodzie destylowanej (roztwór hipotoniczny), w 0,9% NaCl (izotoniczny) i w stężonym roztworze soli (hipertoniczny); turgor, plazmoli | bio-rysunki.js | BIO.01.L005.blona_komorkowa_i_transport_substancji |
 | mutacje-punktowe | Mutacje punktowe na krótkim mRNA: cicha, zmiany sensu, nonsensowna, wstawienie i delecja z przesunięciem ramki odczytu; porównanie łańcucha aminokwasów przed i po zmianie | bio-rysunki.js | BIO.02.L020.czym_sa_mutacje_i_jakie |
+| replikacja-dna | Widełki replikacyjne: helikaza rozplata podwójną helisę, polimeraza DNA dobudowuje nowe nici (wiodąca ciągle, opóźniona fragmentami Okazaki), starter RNA, nić matrycowa;  | bio-rysunki.js | BIO.02.L013.jak_komorka_kopiuje_dna |
+| kariotyp | Kariotyp człowieka: 22 pary autosomów i jedna para chromosomów płci (XX lub XY); chromosom jako dwie chromatydy z centromerem; trisomia 21; tryby poznaj / znajdź / podpis | bio-rysunki.js | BIO.02.L012.jak_dna_jest_upakowane_w |
+| szkielet-czlowieka | Szkielet człowieka: czaszka, żebra, mostek, kręgosłup, obojczyk, łopatka, kość ramienna, kości przedramienia (promieniowa, łokciowa), miednica, kość udowa, piszczel, strz | bio-rysunki.js | BIO.02.B2a.skora_uklad_ruchu; BIO.07.U01.skora_i_uklad_ruchu |
+| mozg-budowa | Mózg człowieka w przekroju bocznym: kresomózgowie (półkula z płatami), międzymózgowie (wzgórze, podwzgórze), pień mózgu (śródmózgowie, most, rdzeń przedłużony), móżdżek,  | bio-rysunki.js | BIO.02.B2d.uklad_nerwowy_zmysly; BIO.07.U08.uklad_nerwowy_i_zmysly |
+| uklad-oddechowy | Drogi oddechowe człowieka: jama nosowa, gardło, krtań, tchawica, oskrzela, oskrzeliki, pęcherzyki płucne, płuca, przepona; tryby poznaj / znajdź / podpisz | bio-rysunki.js | BIO.02.B2c.oddychanie_wydalanie; BIO.07.U06.oddychanie_i_wydalanie |
+| organelle-energetyczne | Budowa mitochondrium (błona zewnętrzna i wewnętrzna z grzebieniami, macierz) i chloroplastu (błony, tylakoidy w gran, stroma); tryby poznaj / znajdź / podpisz | bio-rysunki.js | BIO.01.L006.fotosynteza_skad_roslina_bierze_materie; BIO.01.L007.oddychanie_komorkowe_skad_komorka_bierze |
+| zab-budowa | Budowa zęba człowieka: korona, szyjka, korzeń, szkliwo, zębina, miazga, cement, dziąsło, kość szczęki; tryby poznaj / znajdź / podpisz | bio-rysunki.js | BIO.02.B2b.uklad_pokarmowy; BIO.07.U03.uklad_pokarmowy_i_odzywianie |
+| piramida-ekologiczna | Piramida energii (reguła 10%): producenci, konsumenci I, II i III rzędu; ilość energii maleje ok. 10-krotnie na każdym poziomie; tryby poznaj / znajdź / podpisz | bio-rysunki.js | BIO.04.L040.czym_jest_ekosystem_i_jakie |
+| obieg-wegla | Obieg węgla w przyrodzie: CO₂ w atmosferze, fotosynteza, oddychanie, łańcuch pokarmowy, rozkład przez destruentów, paliwa kopalne i ich spalanie; tryby poznaj / znajdź /  | bio-rysunki.js | BIO.04.L040.czym_jest_ekosystem_i_jakie |
+| drzewo-filogenetyczne | Drzewo filogenetyczne kręgowców: wspólny przodek, ryby, płazy, gady, ptaki, ssaki; owodniowce; czytanie pokrewieństwa po węzłach; tryby poznaj / znajdź / podpisz | bio-rysunki.js | BIO.03.L030.czym_jest_ewolucja_i_jakie |
+| rodowod | Rodowód rodziny: kwadrat to mężczyzna, koło to kobieta, zaczernione symbole to osoby chore; trzy przypadki — dziedziczenie autosomalne recesywne, autosomalne dominujące i | bio-rysunki.js | BIO.02.L017.jak_przewidywac_dziedziczenie_jednej_cechy |
+| odpowiedz-immunologiczna | Wykres odpowiedzi odpornościowej: poziom przeciwciał w czasie po pierwszym kontakcie z antygenem (wolna, słaba) i po drugim kontakcie (szybka, silna — pamięć immunologicz | bio-rysunki.js | BIO.07.U04.krazenie_krew_odpornosc |
 | wentylacja | Mechanika oddychania: przepona, żebra, objętość klatki i płuc; animacja wdech ↔ wydech tam i z powrotem (autostart w widoku), suwak do ręcznego sterowania, opis fazy | bio-rysunki.js | BIO.02.B2c.oddychanie_wydalanie |
 | fotosynteza-oddychanie-krazenie | Chloroplast i mitochondrium: krążenie materii (glukoza, O₂, CO₂, H₂O) i przepływ energii (światło → ATP/ciepło); kropki płyną w pętli; tryby fotosynteza / oddychanie / ob | bio-rysunki.js | BIO.00.REV01.organizacja_i_chemizm_zycia |
 | podzial-komorki-skrot | Mitoza i mejoza (2n = 4) etap po etapie: chromosomy, chromatydy, liczba komórek; autostart w widoku (do przodu i od początku), strzałki ◀ ▶, przełącznik mitoza/mejoza; op | bio-rysunki.js | BIO.02.B2f.rozmnazanie_rozwoj [typ="mej"] |
