@@ -271,3 +271,4 @@
 - 2026-10-20: silnik chemii = modułowy (lite.py + klocki); pakiety i okładki na lite; duży che-viz.js poza buildem. 15 lekcji ma przyciski zastępcze dla 12 modeli (zadanie S-S1).
 - 2026-10-20: S-S1 krok 1: kw-szereg-metali-v01 zastąpiony klockiem probowki-wybor {metale-hcl} w X04 i C1c (bez błędów JS).
 - 2026-10-20: S-S1 krok 2: nowe klocki tabela-rozpuszczalnosci, rownania-jonowe (12 reakcji), osady-dwie-sole zastąpiły 3 modele z dużego silnika w J03 i C1c.
+- 2026-10-20: S-S1 krok 3: klocek izotopy (F05, C1c_masy) zamiast f05-izotopy-v01.

@@ -1,0 +1,54 @@
+/* KLOCEK: izotopy — konstruktor atomu: dodawaj i zabieraj protony, neutrony, elektrony; model mówi, czy zmienił się pierwiastek, izotop czy ładunek;
+   niżej masa atomowa jako średnia ważona mas izotopów. Dane: engine/src/dane/pierwiastki.json (ELEMENTS_54, ISOTOPES). Opcje: z (17) — pierwiastek startowy. */
+(function () {
+  var DAT = {"1":["H","wodór",[[1,1.007825,99.985],[2,2.014102,0.015],[3,3.016049,0]]],"2":["He","hel",[[4,4.002603,99.9998],[3,3.016029,0.0002],[6,6.018889,0]]],"3":["Li","lit",[[7,7.016004,92.41],[6,6.015123,7.59]]],"4":["Be","beryl",[[9,9.012183,10000]]],"5":["B","bor",[[11,11.009305,8010.0],[10,10.012937,1990.0]]],"6":["C","węgiel",[[12,12,98.93],[13,13.003355,1.07],[14,14.003242,0]]],"7":["N","azot",[[14,14.003074,99.636],[15,15.000109,0.364]]],"8":["O","tlen",[[16,15.994915,99.757],[18,17.99916,0.205],[17,16.999132,0.038]]],"9":["F","fluor",[[19,18.998403,10000]]],"10":["Ne","neon",[[20,19.99244,90.48],[22,21.991385,9.25],[21,20.993846,0.27]]],"11":["Na","sód",[[23,22.98977,100],[24,23.990963,0]]],"12":["Mg","magnez",[[24,23.985042,78.99],[26,25.982593,11.01],[25,24.985837,10.0]]],"13":["Al","glin",[[27,26.981539,100]]],"14":["Si","krzem",[[28,27.976927,92.23],[29,28.976495,4.67],[30,29.97377,3.1]]],"15":["P","fosfor",[[31,30.973762,100],[32,31.973907,0]]],"16":["S","siarka",[[32,31.972071,94.99],[34,33.967867,4.25],[33,32.971459,0.75],[36,35.967081,0.01]]],"17":["Cl","chlor",[[35,34.968853,75.76],[37,36.965903,24.24]]],"18":["Ar","argon",[[40,39.962383,99.6],[36,35.967546,0.337],[38,37.962732,0.063]]],"19":["K","potas",[[39,38.963707,93.258],[41,40.961826,6.73],[40,39.963999,0.0117]]],"20":["Ca","wapń",[[40,39.962591,96.941],[44,43.955482,2.086]]],"21":["Sc","skand",[]],"22":["Ti","tytan",[]],"23":["V","wanad",[]],"24":["Cr","chrom",[]],"25":["Mn","mangan",[]],"26":["Fe","żelazo",[[56,55.934938,91.754],[54,53.939611,5.845],[57,56.935394,2.119]]],"27":["Co","kobalt",[]],"28":["Ni","nikiel",[]],"29":["Cu","miedź",[[63,62.929601,69.15],[65,64.927794,30.85]]],"30":["Zn","cynk",[[64,63.929142,49.15],[66,65.926034,27.73],[68,67.924845,18.45],[67,66.927129,4.04],[70,69.925325,0.61]]],"31":["Ga","gal",[]],"32":["Ge","german",[]],"33":["As","arsen",[]],"34":["Se","selen",[]],"35":["Br","brom",[[79,78.918337,50.65],[81,80.916291,49.35]]],"36":["Kr","krypton",[[84,83.911507,5700],[86,85.91061,1730.0],[82,81.913485,1159.3],[83,82.914136,1150.0],[80,79.916378,228.6],[78,77.920386,35.53]]],"37":["Rb","rubid",[[85,84.911789,7217.0],[87,86.909183,2783.0]]],"38":["Sr","stront",[[88,87.905614,8258.0],[86,85.909262,986.0],[87,86.908879,700],[84,83.913425,56.0]]],"39":["Y","itr",[[89,88.905848,10000]]],"40":["Zr","cyrkon",[[90,89.904704,5145.0],[94,93.906316,1738.0],[92,91.90504,1715.0],[91,90.905645,1122.0],[96,95.908273,280.0]]],"41":["Nb","niob",[[93,92.906378,10000]]],"42":["Mo","molibden",[[98,97.905406,2413.0],[96,95.904676,1668.0],[95,94.90584,1592.0],[92,91.90681,1484.0],[100,99.907477,963.0],[97,96.90602,955.0],[94,93.905087,925.0]]],"43":["Tc","technet",[]],"44":["Ru","ruten",[[102,101.904348,3160.0],[104,103.90543,1870.0],[101,100.905582,1700],[99,98.905939,1270.0],[100,99.90422,1260.0],[96,95.907598,552.0],[98,97.905287,188.0]]],"45":["Rh","rod",[[103,102.905503,10000]]],"46":["Pd","pallad",[[106,105.903483,2733.0],[108,107.903892,2646.0],[105,104.905084,2233.0],[110,109.905153,1172.0],[104,103.904035,1114.0],[102,101.905608,102.0]]],"47":["Ag","srebro",[[107,106.905097,51.84],[109,108.904752,48.16]]],"48":["Cd","kadm",[[114,113.903358,2873.0],[112,111.902757,2413.0],[111,110.904182,1280.0],[110,109.903005,1249.0],[113,112.904401,1222.0],[116,115.904756,749.0],[106,105.906459,125.0],[108,107.904184,89.0]]],"49":["In","ind",[[115,114.903878,9571.0],[113,112.904058,429.0]]],"50":["Sn","cyna",[[120,119.902197,3258.0],[118,117.901606,2422.0],[116,115.901744,1454.0],[119,118.903309,859.0],[117,116.902954,768.0],[124,123.905274,579.0],[122,121.90344,463.0],[112,111.904822,97.0],[114,113.902779,66.0],[115,114.903342,34.0]]],"51":["Sb","antymon",[[121,120.903818,5721.0],[123,122.904216,4279.0]]],"52":["Te","tellur",[[130,129.906224,3408.0],[128,127.904463,3174.0],[126,125.903312,1884.0],[125,124.90443,707.0],[124,123.902819,474.0],[122,121.903047,255.0],[123,122.904273,89.0],[120,119.90402,9.0]]],"53":["I","jod",[[127,126.904473,100],[131,130.906126,0]]],"54":["Xe","ksenon",[[132,131.904153,2691.0],[129,128.904779,2640.0],[131,130.905082,2123.0],[134,133.905395,1044.0],[136,135.90722,886.0],[130,129.903508,407.0],[128,127.90353,191.0],[124,123.905893,9.5],[126,125.904269,8.9]]]};
+  var START = [1, 6, 8, 11, 12, 17, 20];
+  var SUPD = '⁰¹²³⁴⁵⁶⁷⁸⁹', SUBD = '₀₁₂₃₄₅₆₇₈₉';
+  function supN(n) { return String(n).replace(/[0-9]/g, function (d) { return SUPD[d]; }); }
+  function subN(n) { return String(n).replace(/[0-9]/g, function (d) { return SUBD[d]; }); }
+  function chg(q) { return q === 0 ? '' : (Math.abs(q) > 1 ? supN(Math.abs(q)) : '') + (q > 0 ? '⁺' : '⁻'); }
+  function pl(x, d) { return x.toFixed(d).replace('.', ','); }
+  function atom(p, n, e) {
+    var W = 260, C = 130, N = p + n, svg = '<svg viewBox="0 0 260 260" width="100%" style="max-width:260px;display:block;margin:auto" role="img" aria-label="Model atomu: ' + p + ' p, ' + n + ' n, ' + e + ' e">';
+    for (var i = 0; i < N; i++) { var a = i * 2.39996, r = 4.2 * Math.sqrt(i + .5); svg += '<circle cx="' + (C + r * Math.cos(a)).toFixed(1) + '" cy="' + (C + r * Math.sin(a)).toFixed(1) + '" r="4.6" fill="' + (Math.floor((i + 1) * p / N) > Math.floor(i * p / N) ? '#d9534f' : '#7f8da0') + '" stroke="#fff" stroke-width=".6"/>'; }
+    svg += '<circle cx="130" cy="130" r="104" fill="none" stroke="#9aa6b6" stroke-dasharray="4 4"/>';
+    for (var k = 0; k < e; k++) { var b = k / e * 2 * Math.PI - Math.PI / 2; svg += '<circle cx="' + (C + 104 * Math.cos(b)).toFixed(1) + '" cy="' + (C + 104 * Math.sin(b)).toFixed(1) + '" r="5" fill="#2f7bd8"/>'; }
+    return svg + '</svg>';
+  }
+  var BTN = 'font:inherit;font-size:13px;padding:4px 10px;border:1px solid var(--border-strong,#94a3b8);border-radius:999px;background:var(--surface,#fff);color:inherit;cursor:pointer;margin:2px';
+  KLOCKI.def('izotopy', {
+    opis: 'Konstruktor atomu: protony, neutrony i elektrony zmieniane przyciskami; wskazuje zmianę pierwiastka, izotopu lub ładunku oraz liczy masę atomową jako średnią ważoną.',
+    domyslne: {z: 17},
+    html: function (host, opc) {
+      var z0 = +opc.z || 17, d0 = DAT[z0], s = {p: z0, n: d0[2][0][0] - z0, e: z0}, start = {p: s.p, n: s.n, e: s.e};
+      host.style.display = 'block';
+      host.innerHTML = '<div><b>Start:</b> ' + START.map(function (z) { return '<button type="button" data-z="' + z + '" style="' + BTN + '">' + DAT[z][0] + '</button>'; }).join('') + '</div><div style="margin:8px 0">' +
+        [['p', 'proton'], ['n', 'neutron'], ['e', 'elektron']].map(function (c) { return '<button type="button" data-d="' + c[0] + '" data-s="-1" style="' + BTN + '">− ' + c[1] + '</button><button type="button" data-d="' + c[0] + '" data-s="1" style="' + BTN + '">+ ' + c[1] + '</button>'; }).join('') +
+        '</div><div style="display:flex;flex-wrap:wrap;gap:16px"><div class="iz-p" style="flex:1;min-width:220px"></div><div class="iz-t" style="flex:1;min-width:240px;font-size:14px"></div></div><div class="iz-a"></div>';
+      var pic = host.querySelector('.iz-p'), txt = host.querySelector('.iz-t'), avg = host.querySelector('.iz-a');
+      function sym(z) { return DAT[z] ? DAT[z][0] : 'Z=' + z; }
+      function draw() {
+        var A = s.p + s.n, q = s.p - s.e, X = sym(s.p), d = DAT[s.p];
+        pic.innerHTML = atom(s.p, s.n, s.e) + '<div style="text-align:center;font-size:13px"><span style="color:#d9534f">●</span> proton &nbsp; <span style="color:#8a949e">●</span> neutron &nbsp; <span style="color:#2f7bd8">●</span> elektron <small>(elektrony na jednym okręgu — powłoki w F07)</small></div>';
+        var iso = d && d[2].filter(function (x) { return x[0] === A; })[0], zm = [];
+        if (s.p !== start.p) zm.push('<b>zmieniła się liczba protonów</b> → to już <b>inny pierwiastek</b> (' + sym(start.p) + ' → ' + X + ')');
+        else { if (s.n !== start.n) zm.push('zmieniła się liczba neutronów → <b>inny izotop</b> tego samego pierwiastka'); if (s.e !== start.e) zm.push('zmieniła się liczba elektronów → <b>jon</b>, pierwiastek ten sam'); }
+        txt.innerHTML = '<div style="font-size:22px;margin-bottom:6px">' + supN(A) + subN(s.p) + X + chg(q) + '</div><div><b>' + (d ? d[1] : X) + '</b> · Z = ' + s.p + ' · A = ' + A + '<br>p⁺ = ' + s.p + ' · n⁰ = A − Z = ' + s.n + ' · e⁻ = ' + s.e +
+          '<br><b>Ładunek</b> q = p − e = ' + (q > 0 ? '+' : '') + q + ' → ' + (q === 0 ? 'atom obojętny' : q > 0 ? '<b>kation</b> (oddał ' + q + ' e⁻)' : '<b>anion</b> (przyjął ' + (-q) + ' e⁻)') +
+          '<br><b>Izotop:</b> ' + (!d || !d[2].length ? '— (brak danych w modelu)' : iso ? (iso[2] > 0 ? 'naturalny, udział ' + pl(iso[2], iso[2] < 1 ? 3 : 2) + '%' : 'występuje śladowo / promieniotwórczy') : 'nieznany w przyrodzie — jądro nietrwałe lub nie istnieje') +
+          '</div><div style="margin-top:8px"><b>Co się zmieniło względem startu:</b><br>' + (zm.length ? zm.join('<br>') : 'nic — stan startowy (atom obojętny, najczęstszy izotop)') + '</div>';
+        if (!d || !d[2].length) { avg.innerHTML = ''; return; }
+        var rows = d[2].filter(function (x) { return x[2] > 0; }), M = 0, t = '';
+        rows.forEach(function (x) { var w = x[1] * x[2] / 100; M += w; t += '<tr><td>' + supN(x[0]) + d[0] + '</td><td>' + pl(x[1], 3) + ' u</td><td>' + pl(x[2], x[2] < 1 ? 3 : 2) + '%</td><td>' + pl(w, 3) + ' u</td><td><div style="height:10px;width:' + Math.max(1, x[2]).toFixed(0) + 'px;background:#2f7bd8;border-radius:3px"></div></td></tr>'; });
+        avg.innerHTML = '<div style="margin-top:10px"><b>Masa atomowa ' + d[0] + ' = średnia ważona mas izotopów</b> (masa × udział, potem suma):</div><div style="overflow-x:auto"><table style="border-collapse:collapse;font-size:13px"><thead><tr><th>izotop</th><th>masa</th><th>udział</th><th>wkład</th><th></th></tr></thead><tbody>' + t + '</tbody></table></div>' +
+          '<div style="margin-top:6px">Ar(' + d[0] + ') ≈ ' + pl(M, M < 100 ? 2 : 1) + ' u' + (rows.length > 1 ? ' — wynik leży między masami izotopów, bliżej najczęstszego' : ' — jeden trwały izotop, więc masa atomowa ≈ jego masa') + '</div>';
+      }
+      host.addEventListener('click', function (e) {
+        var b = e.target.closest('button'); if (!b) return;
+        if (b.dataset.z) { var z = +b.dataset.z, d = DAT[z]; s = {p: z, n: d[2][0][0] - z, e: z}; start = {p: s.p, n: s.n, e: s.e}; draw(); }
+        else if (b.dataset.d) { var k = b.dataset.d, st = +b.dataset.s, mx = k === 'p' ? 20 : k === 'n' ? 30 : 22, mn = k === 'p' ? 1 : 0; if (s[k] + st >= mn && s[k] + st <= mx) { s[k] += st; draw(); } }
+      });
+      draw();
+    }
+  });
+})();

@@ -56,7 +56,7 @@ Wartości zaokrąglone zgodnie z tablicą etapu szkolnego (Cl: 35,5). Są zgodne
 
 Chlor ma masę 35,5, bo w przyrodzie występuje jako mieszanina izotopów o masach 35 i 37.
 
-@model f05-izotopy-v01 | Skąd się bierze masa atomowa: średnia ważona izotopów | Silnik CHE · otwiera się w oknie
+@klocek izotopy | Skąd się bierze masa atomowa: średnia ważona izotopów
 @opis Konstruktor atomu (protony, neutrony, elektrony) z dolnym panelem, w którym masa atomowa jest obliczana jako średnia ważona mas izotopów wybranego pierwiastka. Wniosek: ułamkowa masa atomowa z układu okresowego wynika z mieszaniny izotopów, a nie z jednego rodzaju atomów.
 
 ### 2. Masa cząsteczkowa

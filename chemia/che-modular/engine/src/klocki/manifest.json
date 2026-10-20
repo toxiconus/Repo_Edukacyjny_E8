@@ -43,7 +43,8 @@
     "zbieranie_gazu.js": "Zbieranie gazu: wylotem do góry, do dołu albo nad wodą (kolba, rurka, naczynie); werdykt z gęstością względną i rozpuszczalnością",
     "tabela_rozpuszczalnosci.js": "tabela rozpuszczalności R/T/N (20 °C), klik w komórkę: wzór, nazwa, rozpuszczalność",
     "rownania_jonowe.js": "równania jonowe: cząsteczkowy, jonowy pełny i skrócony dla 12 reakcji",
-    "osady_dwie_sole.js": "dwie sole → czy powstaje osad (tabela rozpuszczalności, barwa osadu)"
+    "osady_dwie_sole.js": "dwie sole → czy powstaje osad (tabela rozpuszczalności, barwa osadu)",
+    "izotopy.js": "konstruktor atomu (p, n, e), izotop/jon/pierwiastek, masa atomowa jako średnia ważona"
   },
   "lekcje": {
     "P01": [
@@ -249,7 +250,8 @@
       "karta_bhp.js",
       "schemat_przemian.js",
       "tabela_rozpuszczalnosci.js",
-      "rownania_jonowe.js"
+      "rownania_jonowe.js",
+      "izotopy.js"
     ],
     "C2m": [
       "klocki.js",
@@ -350,6 +352,11 @@
       "klocki.js",
       "pomocnicze.js",
       "diagram_bohra.js"
+    ],
+    "F05": [
+      "klocki.js",
+      "pomocnicze.js",
+      "izotopy.js"
     ]
   },
   "css": [
