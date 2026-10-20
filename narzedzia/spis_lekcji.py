@@ -9,14 +9,9 @@ OPIS = re.compile(r'^@opis\b', re.M)
 
 # Etap konkursu LKO 2026/27, do którego należy treść lekcji (wg pakietu: chemia pkt I–V = etap I, I–VIII = etap II, organika i genetyka = etap III).
 # Dopasowanie po nazwie pliku (prefiks). Lekcje bez etapu w konkursie (fizyka, polski, angielski) → „poza LKO”.
-ETAP = [
-    ('C1c_konfiguracje', 'I (rozszerzenie)'), ('C1c_wodorki', 'I (typy reakcji) + II (wodorki)'), ('C1c_kwasy', 'II'),
-    ('C1c_masy', 'II'), ('C2m', 'III'), ('C2w', 'III (hydraty poza LKO)'), ('C3', 'II'), ('C4', 'I'),
-    ('F01', 'I'), ('F02', 'I'), ('F03', 'I'), ('F04', 'I'), ('F05', 'I'), ('F06', 'I'), ('J03', 'II'),
-    ('LKO_ORG', 'III'), ('N01', 'I'), ('N02', 'II'), ('N03', 'II'), ('N04', 'II'), ('N05', 'II'),
-    ('R03', 'I'), ('R07', 'II'), ('REV01_powtorka', 'I'), ('X04', 'II'),
-    ('B10', 'II'), ('B1b', 'III (genetyka)'), ('B2', 'II'), ('L010', 'III (DNA)'), ('REV01_org', 'I'), ('REV02', 'I'),
-]
+import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from etap_lko import ETAP, etap
 # Warstwy treści w lekcji (znaczniki [[rodzaj:NAZWA]]): E8 = egzamin ósmoklasisty, trening/rozumienie, konkurs (LKO), ambitne = olimpiada/ponad zakres.
 WARSTWY = [('E8', re.compile(r'\[\[basic:')), ('rozum.', re.compile(r'\[\[understand:')),
            ('konkurs', re.compile(r'\[\[(exam|contest):(?!EGZAMIN)', re.I)), ('ambitne', re.compile(r'\[\[extra:'))]
@@ -28,11 +23,7 @@ LEGENDA = ('Etap LKO = do którego etapu konkursu lekcja jest potrzebna: **I** =
            '**konkurs** (zadania i doświadczenia konkursowe) · **ambitne** (olimpiada, ponad zakres). Zakres źródłowy: `olimpiada/PRIORYTETY.md` §1.')
 PLANOWANE_BIO = [('B2h', 'Układ krążenia (krew, serce, naczynia, limfa)', 'II'), ('B2i', 'Układ odpornościowy (odporność, szczepionki, alergie)', 'II'),
                  ('B2j', 'Arkusz próbny etapu II', 'II'), ('B3a–B3e', 'Mitoza i mejoza, mutacje, ewolucja, ekologia, różnorodność biologiczna', 'III')]
-def etap(nazwa):
-    for p, e in ETAP:
-        if nazwa.startswith(p): return e
-    if nazwa.startswith('FIZ'): return 'poza LKO (fizyka)'
-    return 'poza LKO'
+
 
 ZRODLA = [
     ('chemia (che-modular)', 'chemia/che-modular/lessons-md/gotowe/*.md'),
@@ -43,6 +34,25 @@ ZRODLA = [
 out = ['# SPIS LEKCJI (generowany: `python3 narzedzia/spis_lekcji.py`)', '',
        'Stan: %s. KB = rozmiar pliku md. Wiz. = liczba @klocek/@model/@zlewka; @opis = liczba opisów (powinna być równa wiz.).' % datetime.date.today(),
        'Listy tematów (plan) są osobno: `chemia/plany/CHE_SPIS_TRESCI.md`, `polski/POL_SPIS_TRESCI_v2.md`, `olimpiada/OLIMPIADA_8_MASTER.md`.', '', LEGENDA, '']
+
+# ---- archiwalne arkusze (olimpiada/zrodla/archiwum_arkuszy.json)
+import json
+ARCH = json.load(open('olimpiada/zrodla/archiwum_arkuszy.json', encoding='utf-8'))
+ETAPY = {'I': 'I — szkolny', 'II': 'II — rejonowy', 'III': 'III — wojewódzki'}
+def lekcje_etapu(przedmiot, et):
+    zr = {'biologia': 'biologia/bio/md/*.md', 'chemia': 'chemia/che-modular/lessons-md/gotowe/*.md'}[przedmiot]
+    return [os.path.basename(f)[:-3] for f in sorted(glob.glob(zr)) if etap(os.path.basename(f)[:-3]).startswith(et)]
+def arch_md():
+    o = ['', '## Archiwalne arkusze LKO (pliki w repo; w ZIP przekazania: `archiwum_arkuszy/<przedmiot>/<etap>/<rok>/` z OPIS_ROKU.md)', '',
+         '| przedmiot | etap | rok | zadań | czas | arkusz | klucz | opis roku |', '|---|---|---|---:|---:|---|---|---|']
+    for x in sorted(ARCH['wpisy'], key=lambda x: (x['przedmiot'], x['etap'], x['rok'])):
+        kl = ('[plik](%s)' % x['klucz_plik']) if x.get('klucz_plik') else x['klucz']
+        o.append('| %s | %s | %s | %s | %s | [plik](%s) | %s | %s |' % (x['przedmiot'], ETAPY[x['etap']], x['rok'], x['zadania'] or '—', x['czas_min'], x['plik'], kl, x['opis']))
+    for b in ARCH['brak']:
+        o.append('| %s | — | %s | — | — | brak pliku | — | %s |' % (b['przedmiot'], b['rok'], b['opis']))
+    o += ['', 'Lekcje właściwe dla etapu (do ćwiczenia z danym arkuszem): ' + '; '.join(
+        '%s etap %s: %s' % (pr, et, ', '.join(lekcje_etapu(pr, et)) or '—') for pr in ('biologia', 'chemia') for et in ('I', 'II')), '']
+    return o
 tot = 0
 for nazwa, wz in ZRODLA:
     fs = sorted(glob.glob(wz))
@@ -57,6 +67,7 @@ for nazwa, wz in ZRODLA:
     out.append('')
 out += ['## biologia — planowane lekcje (brak plików; zakres w `biologia/plany/PLAN_BRAKUJACE_LEKCJE.md`)', '', '| kod | temat | etap LKO |', '|---|---|---|']
 out += ['| %s | %s | %s |' % x for x in PLANOWANE_BIO]
+out += arch_md()
 out += ['', 'Razem: %d KB.' % tot]
 open('SPIS_LEKCJI.md', 'w', encoding='utf-8').write('\n'.join(out) + '\n')
 print('SPIS_LEKCJI.md', tot, 'KB')
@@ -87,6 +98,19 @@ def wiersze(wz, dist, baza):
         uw = '<span class="w">dług @opis: %d</span>' % (v - o) if v > o else ''
         r.append('<tr><td>%s</td><td>%s</td><td class="s">%s</td><td class="n">%d</td><td class="n">%d</td><td>%s</td></tr>' % (lnk, H.escape(etap(n)), H.escape(warstwy(t)), kb, v, uw))
     return r
+PRZ_ARCH = {'chemia': ('chemia',), 'biologia': ('biologia',), 'polski': ()}
+def arch_html(przedmioty, baza):
+    r = []
+    for x in sorted(ARCH['wpisy'], key=lambda x: (x['przedmiot'], x['etap'], x['rok'])):
+        if x['przedmiot'] not in przedmioty: continue
+        a = '<a href="%s">arkusz</a>' % H.escape(os.path.relpath(x['plik'], baza))
+        kl = ('<a href="%s">klucz</a>' % H.escape(os.path.relpath(x['klucz_plik'], baza))) if x.get('klucz_plik') else H.escape(x['klucz'])
+        r.append('<tr><td>%s</td><td>%s</td><td>%s</td><td class="n">%s</td><td>%s · %s</td><td class="s">%s</td></tr>' % (
+            H.escape(x['przedmiot']), H.escape(ETAPY[x['etap']]), H.escape(x['rok']), x['zadania'] or '—', a, kl, H.escape(x['opis'])))
+    for b in ARCH['brak']:
+        if not any(pz in b['przedmiot'] for pz in przedmioty): continue
+        r.append('<tr><td>%s</td><td>—</td><td>%s</td><td></td><td>brak pliku</td><td class="s">%s</td></tr>' % (H.escape(b['przedmiot']), H.escape(b['rok']), H.escape(b['opis'])))
+    return ('<h2>Archiwalne arkusze LKO</h2><table><tr><th>przedmiot</th><th>etap</th><th>rok</th><th class="n">zad.</th><th>pliki</th><th>opis roku</th></tr>%s</table>' % ''.join(r)) if r else ''
 def strona(tyt, sekcje, baza, kryt):
     h = ['<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>%s</title>%s</head><body><h1>%s</h1>' % (H.escape(tyt), CSS, H.escape(tyt)), TERM]
     h.append('<div class="box s">%s</div>' % H.escape(LEGENDA.replace('**', '')))
@@ -95,12 +119,13 @@ def strona(tyt, sekcje, baza, kryt):
         rw = wiersze(wz, dist, baza)
         if not rw: continue
         h.append('<h2>%s (%d)</h2><table><tr><th>lekcja</th><th>etap LKO 2026/27</th><th>warstwy</th><th class="n">KB</th><th class="n">wiz.</th><th>uwagi</th></tr>%s</table>' % (H.escape(naz), len(rw), ''.join(rw)))
+    h.append(arch_html(PRZ_ARCH.get(kryt, ('biologia', 'chemia')), baza))
     if kryt == 'biologia':
         h.append('<h2>Planowane lekcje (brak plików)</h2><table><tr><th>kod</th><th>temat</th><th>etap LKO</th></tr>%s</table>' % ''.join(
             '<tr><td>%s</td><td>%s</td><td>%s</td></tr>' % tuple(H.escape(y) for y in x) for x in PLANOWANE_BIO))
     return ''.join(h) + '</body></html>'
 for kat, tyt, sek in PRZEDMIOTY:
     open(os.path.join(kat, 'INDEKS.html'), 'w', encoding='utf-8').write(strona('Indeks lekcji — ' + tyt, sek, kat, kat))
-open('INDEKS.html', 'w', encoding='utf-8').write(strona('Indeks lekcji — wszystkie przedmioty', [x for _, _, s in PRZEDMIOTY for x in s], '.', None).replace(
+open('INDEKS.html', 'w', encoding='utf-8').write(strona('Indeks lekcji — wszystkie przedmioty', [x for _, _, s in PRZEDMIOTY for x in s], '.', 'wszystkie').replace(
     '</h1>', '</h1><p>Indeksy przedmiotów: <a href="chemia/INDEKS.html">chemia</a> · <a href="biologia/INDEKS.html">biologia</a> · <a href="polski/INDEKS.html">polski</a> · <a href="SPIS_LEKCJI.md">spis md</a></p>', 1))
 print('INDEKS.html + indeksy przedmiotów')

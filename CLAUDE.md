@@ -44,6 +44,8 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 
 ## Eksport do analizy (Perplexity)
 - Rejestr weryfikacji: `WERYFIKACJA.md` (W1 = treść wysłanego zapisu, W2 = zakres). Po każdym audycie: surowa odpowiedź do `chemia/plany/audyty/` (lub `<przedmiot>/plany/audyty/`), poprawki do lekcji gotowej albo jako sekcja „AUDYT W1” do kanonu, wiersz w rejestrze. LaTeX z odpowiedzi → Unicode: `narzedzia/latex2uni.py`. Dla lekcji z kanonu (niegotowych) jednym poleceniem: `python3 narzedzia/audyt_do_kanonu.py <odpowiedź> [--uwaga KOD "tekst"]` (zapis surowy + sekcja AUDYT W1 + wiersz rejestru).
+- **Archiwalne arkusze konkursów:** rejestr `olimpiada/zrodla/archiwum_arkuszy.json` (przedmiot, rok, etap I/II/III, plik, klucz, opis roku; `brak` = czego nie mamy). Nowy arkusz → wpis w JSON + `python3 narzedzia/spis_lekcji.py` (linki w `SPIS_LEKCJI.md` i we wszystkich `INDEKS.html`, kolumna „etap LKO” z legendą). Etap lekcji: `narzedzia/etap_lko.py`.
+- **ZIP przekazania:** `python3 eksport/zip_przekazania.py` → `eksport/out/PRZEKAZANIE_<data>.zip`: `lekcje/<przedmiot>/<etap>/` (md+html), `archiwum_arkuszy/<przedmiot>/<etap>/<rok>/` (arkusz, klucz, OPIS_ROKU.md), `olimpiada/` (cała), `silniki/`, `przekazanie/`. Wysyłać na prośbę lub co 10 zmian.
 - `python3 eksport/zbierz_lekcje.py` → `eksport/out/PERPLEXITY_<PRZEDMIOT>.md` (prompt na początku + wszystkie lekcje, jedna najnowsza wersja każdej). Katalog `out/` jest poza gitem.
 
 ## Polski — lekcje podstawowe (priorytet)

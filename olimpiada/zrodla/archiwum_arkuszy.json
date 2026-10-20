@@ -1,0 +1,93 @@
+{
+ "wpisy": [
+  {
+   "przedmiot": "biologia",
+   "rok": "2022/23",
+   "etap": "I",
+   "plik": "olimpiada/zrodla/arkusze_LKO_biologia_archiwum/LKO_BIO_szkolny_2022_2023.txt",
+   "opis": "Etap pierwszy (szkolny). 19 zadań, głównie P/F, uzupełnianie zdań, rysunki (szyszki, tkanki), jedno zadanie obliczeniowe (powiększenie mikroskopu), doświadczenie z moczarką. Kuratorium Oświaty w Lublinie (konkursy przedmiotowe dla szkół podstawowych).",
+   "klucz": "w pliku (model odpowiedzi i schemat oceniania)",
+   "zadania": 19,
+   "czas_min": 60
+  },
+  {
+   "przedmiot": "biologia",
+   "rok": "2023/24",
+   "etap": "I",
+   "plik": "olimpiada/zrodla/arkusze_LKO_biologia_archiwum/LKO_BIO_szkolny_2023_2024.txt",
+   "opis": "Etap pierwszy (szkolny). 17 zadań: mikroskop, metoda naukowa, mchy/paprotniki, budowa jaja ptaka, stawonogi, protisty, grzyby. Kuratorium Oświaty w Lublinie (konkursy przedmiotowe dla szkół podstawowych).",
+   "klucz": "w pliku (model odpowiedzi i schemat oceniania)",
+   "zadania": 17,
+   "czas_min": 60
+  },
+  {
+   "przedmiot": "biologia",
+   "rok": "2025/26",
+   "etap": "I",
+   "plik": "olimpiada/zrodla/pakiet_2026-10-09/arkusze_LKO/LKO_BIOLOGIA_SZKOLNY_2025_2026_PEŁNY.txt",
+   "opis": "Etap szkolny. 17 zadań, 40 pkt: ryba (płetwy), samożywne/cudzożywne, Linneusz, gady, oddychanie P/F, preparat mikroskopowy, żaba. Klucz osobno. Kuratorium Oświaty w Lublinie (konkursy przedmiotowe dla szkół podstawowych).",
+   "klucz": "osobny plik: LKO_BIOLOGIA_KLUCZ_SZKOLNY_2025_2026.txt",
+   "zadania": 17,
+   "czas_min": 60,
+   "klucz_plik": "olimpiada/zrodla/pakiet_2026-10-09/arkusze_LKO/LKO_BIOLOGIA_KLUCZ_SZKOLNY_2025_2026.txt"
+  },
+  {
+   "przedmiot": "biologia",
+   "rok": "2022/23",
+   "etap": "II",
+   "plik": "olimpiada/zrodla/arkusze_LKO_biologia_archiwum/LKO_BIO_rejonowy_2022_2023.txt",
+   "opis": "Etap drugi (rejonowy). 17 zadań: serce, krew, limfa, skóra, neurony, rdzeń, glukoza, trawienie, królestwa, cykl mchu. Kuratorium Oświaty w Lublinie (konkursy przedmiotowe dla szkół podstawowych).",
+   "klucz": "w pliku (model odpowiedzi i schemat oceniania)",
+   "zadania": 17,
+   "czas_min": 90
+  },
+  {
+   "przedmiot": "biologia",
+   "rok": "2023/24",
+   "etap": "II",
+   "plik": "olimpiada/zrodla/arkusze_LKO_biologia_archiwum/LKO_BIO_rejonowy_2023_2024.txt",
+   "opis": "Etap drugi (rejonowy). 17 zadań: cykl okrytonasiennych, parzydełkowce, rak, odruchy, układ oddechowy, odporność, hormony, czaszka, mięśnie antagonistyczne, aktywność fizyczna. Kuratorium Oświaty w Lublinie (konkursy przedmiotowe dla szkół podstawowych).",
+   "klucz": "w pliku (model odpowiedzi i schemat oceniania)",
+   "zadania": 17,
+   "czas_min": 90
+  },
+  {
+   "przedmiot": "biologia",
+   "rok": "2025/26",
+   "etap": "II",
+   "plik": "olimpiada/zrodla/pakiet_2026-10-09/arkusze_LKO/LKO_REJON_2025_2026_fragmenty.md",
+   "opis": "Etap rejonowy: tylko fragmenty (15 zadań, 90 min) odzyskane z podglądów — NIE pełna transkrypcja. Kuratorium Oświaty w Lublinie (konkursy przedmiotowe dla szkół podstawowych).",
+   "klucz": "brak",
+   "zadania": 15,
+   "czas_min": 90
+  },
+  {
+   "przedmiot": "chemia",
+   "rok": "2025/26",
+   "etap": "I",
+   "plik": "olimpiada/zrodla/pakiet_2026-10-09/arkusze_LKO/LKO_CHEMIA_SZKOLNY_2025_2026_PEŁNY.txt",
+   "opis": "Etap szkolny (20.10.2025). Zakres: podstawa pkt I–VII. Klucz osobno. Kuratorium Oświaty w Lublinie (konkursy przedmiotowe dla szkół podstawowych).",
+   "klucz": "osobny plik: LKO_CHEMIA_KLUCZ_SZKOLNY_2025_2026.txt",
+   "zadania": null,
+   "czas_min": 60,
+   "klucz_plik": "olimpiada/zrodla/pakiet_2026-10-09/arkusze_LKO/LKO_CHEMIA_KLUCZ_SZKOLNY_2025_2026.txt"
+  },
+  {
+   "przedmiot": "chemia",
+   "rok": "2025/26",
+   "etap": "II",
+   "plik": "olimpiada/zrodla/LKO/Chemia_etap_rejonowy_2025_2026.txt.md",
+   "opis": "Etap rejonowy (26.11.2025). Tekst z PDF (oryginał: Chemia_etap_rejonowy_2025_2026.pdf). Kuratorium Oświaty w Lublinie (konkursy przedmiotowe dla szkół podstawowych).",
+   "klucz": "sprawdzić w pliku",
+   "zadania": null,
+   "czas_min": 90
+  }
+ ],
+ "brak": [
+  {
+   "przedmiot": "biologia i chemia",
+   "rok": "2024/25",
+   "opis": "Kuratorium publikuje komplet zestawów i kluczy (w tym etap szkolny): kuratorium.lublin.pl/?akc=akt&id=13802 — pliku nie mamy w repo; do pobrania."
+  }
+ ]
+}

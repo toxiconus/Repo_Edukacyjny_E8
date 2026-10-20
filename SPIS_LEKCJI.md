@@ -58,8 +58,8 @@ Etap LKO = do którego etapu konkursu lekcja jest potrzebna: **I** = szkolny (bi
 | `B2f_rozmnazanie_i_rozwoj.md` | II | E8 · rozum. · konkurs · ambitne | 17 | 0 | 0 |  |
 | `B2g_homeostaza.md` | II | E8 · rozum. · konkurs · ambitne | 30 | 1 | 1 |  |
 | `L010_dna_od_zera.md` | III (DNA) | E8 · rozum. · konkurs · ambitne | 51 | 0 | 12 |  |
-| `REV01_organizacja_i_chemizm_zycia.md` | I | E8 · rozum. · konkurs · ambitne | 51 | 0 | 1 |  |
-| `REV02_roznorodnosc_zycia.md` | I | E8 · rozum. · konkurs · ambitne | 65 | 0 | 0 |  |
+| `REV01_organizacja_i_chemizm_zycia.md` | I | E8 · rozum. · konkurs · ambitne | 53 | 0 | 1 |  |
+| `REV02_roznorodnosc_zycia.md` | I | E8 · rozum. · konkurs · ambitne | 70 | 0 | 0 |  |
 
 ## polski (lekcje) (32 lekcji)
 
@@ -135,4 +135,21 @@ Etap LKO = do którego etapu konkursu lekcja jest potrzebna: **I** = szkolny (bi
 | B2j | Arkusz próbny etapu II | II |
 | B3a–B3e | Mitoza i mejoza, mutacje, ewolucja, ekologia, różnorodność biologiczna | III |
 
-Razem: 1968 KB.
+## Archiwalne arkusze LKO (pliki w repo; w ZIP przekazania: `archiwum_arkuszy/<przedmiot>/<etap>/<rok>/` z OPIS_ROKU.md)
+
+| przedmiot | etap | rok | zadań | czas | arkusz | klucz | opis roku |
+|---|---|---|---:|---:|---|---|---|
+| biologia | I — szkolny | 2022/23 | 19 | 60 | [plik](olimpiada/zrodla/arkusze_LKO_biologia_archiwum/LKO_BIO_szkolny_2022_2023.txt) | w pliku (model odpowiedzi i schemat oceniania) | Etap pierwszy (szkolny). 19 zadań, głównie P/F, uzupełnianie zdań, rysunki (szyszki, tkanki), jedno zadanie obliczeniowe (powiększenie mikroskopu), doświadczenie z moczarką. Kuratorium Oświaty w Lublinie (konkursy przedmiotowe dla szkół podstawowych). |
+| biologia | I — szkolny | 2023/24 | 17 | 60 | [plik](olimpiada/zrodla/arkusze_LKO_biologia_archiwum/LKO_BIO_szkolny_2023_2024.txt) | w pliku (model odpowiedzi i schemat oceniania) | Etap pierwszy (szkolny). 17 zadań: mikroskop, metoda naukowa, mchy/paprotniki, budowa jaja ptaka, stawonogi, protisty, grzyby. Kuratorium Oświaty w Lublinie (konkursy przedmiotowe dla szkół podstawowych). |
+| biologia | I — szkolny | 2025/26 | 17 | 60 | [plik](olimpiada/zrodla/pakiet_2026-10-09/arkusze_LKO/LKO_BIOLOGIA_SZKOLNY_2025_2026_PEŁNY.txt) | [plik](olimpiada/zrodla/pakiet_2026-10-09/arkusze_LKO/LKO_BIOLOGIA_KLUCZ_SZKOLNY_2025_2026.txt) | Etap szkolny. 17 zadań, 40 pkt: ryba (płetwy), samożywne/cudzożywne, Linneusz, gady, oddychanie P/F, preparat mikroskopowy, żaba. Klucz osobno. Kuratorium Oświaty w Lublinie (konkursy przedmiotowe dla szkół podstawowych). |
+| biologia | II — rejonowy | 2022/23 | 17 | 90 | [plik](olimpiada/zrodla/arkusze_LKO_biologia_archiwum/LKO_BIO_rejonowy_2022_2023.txt) | w pliku (model odpowiedzi i schemat oceniania) | Etap drugi (rejonowy). 17 zadań: serce, krew, limfa, skóra, neurony, rdzeń, glukoza, trawienie, królestwa, cykl mchu. Kuratorium Oświaty w Lublinie (konkursy przedmiotowe dla szkół podstawowych). |
+| biologia | II — rejonowy | 2023/24 | 17 | 90 | [plik](olimpiada/zrodla/arkusze_LKO_biologia_archiwum/LKO_BIO_rejonowy_2023_2024.txt) | w pliku (model odpowiedzi i schemat oceniania) | Etap drugi (rejonowy). 17 zadań: cykl okrytonasiennych, parzydełkowce, rak, odruchy, układ oddechowy, odporność, hormony, czaszka, mięśnie antagonistyczne, aktywność fizyczna. Kuratorium Oświaty w Lublinie (konkursy przedmiotowe dla szkół podstawowych). |
+| biologia | II — rejonowy | 2025/26 | 15 | 90 | [plik](olimpiada/zrodla/pakiet_2026-10-09/arkusze_LKO/LKO_REJON_2025_2026_fragmenty.md) | brak | Etap rejonowy: tylko fragmenty (15 zadań, 90 min) odzyskane z podglądów — NIE pełna transkrypcja. Kuratorium Oświaty w Lublinie (konkursy przedmiotowe dla szkół podstawowych). |
+| chemia | I — szkolny | 2025/26 | — | 60 | [plik](olimpiada/zrodla/pakiet_2026-10-09/arkusze_LKO/LKO_CHEMIA_SZKOLNY_2025_2026_PEŁNY.txt) | [plik](olimpiada/zrodla/pakiet_2026-10-09/arkusze_LKO/LKO_CHEMIA_KLUCZ_SZKOLNY_2025_2026.txt) | Etap szkolny (20.10.2025). Zakres: podstawa pkt I–VII. Klucz osobno. Kuratorium Oświaty w Lublinie (konkursy przedmiotowe dla szkół podstawowych). |
+| chemia | II — rejonowy | 2025/26 | — | 90 | [plik](olimpiada/zrodla/LKO/Chemia_etap_rejonowy_2025_2026.txt.md) | sprawdzić w pliku | Etap rejonowy (26.11.2025). Tekst z PDF (oryginał: Chemia_etap_rejonowy_2025_2026.pdf). Kuratorium Oświaty w Lublinie (konkursy przedmiotowe dla szkół podstawowych). |
+| biologia i chemia | — | 2024/25 | — | — | brak pliku | — | Kuratorium publikuje komplet zestawów i kluczy (w tym etap szkolny): kuratorium.lublin.pl/?akc=akt&id=13802 — pliku nie mamy w repo; do pobrania. |
+
+Lekcje właściwe dla etapu (do ćwiczenia z danym arkuszem): biologia etap I: B10_powtorka_uklady_czlowieka, B1b_krzyzowki_mendel, B2a_skora_i_uklad_ruchu, B2b_uklad_pokarmowy_i_odzywianie, B2c_oddychanie_i_wydalanie, B2d_uklad_nerwowy_i_zmysly, B2e_uklad_dokrewny, B2f_rozmnazanie_i_rozwoj, B2g_homeostaza, L010_dna_od_zera, REV01_organizacja_i_chemizm_zycia, REV02_roznorodnosc_zycia; biologia etap II: B10_powtorka_uklady_czlowieka, B1b_krzyzowki_mendel, B2a_skora_i_uklad_ruchu, B2b_uklad_pokarmowy_i_odzywianie, B2c_oddychanie_i_wydalanie, B2d_uklad_nerwowy_i_zmysly, B2e_uklad_dokrewny, B2f_rozmnazanie_i_rozwoj, B2g_homeostaza, L010_dna_od_zera; chemia etap I: C1c_konfiguracje_elektronowe, C1c_kwasy_zasady_sole, C1c_masy_sklad_procentowy, C1c_wodorki_typy_reakcji, C2m_mol_masa_molowa, C2w_wzor_elementarny_rzeczywisty, C3_rownania_i_obliczenia_z_rownan, C4_doswiadczenia_zbiorczo, F01_jak_mysli_chemik, F02_materia_i_substancje, F03_wlasciwosci_i_rozdzielanie, F04_atom, F05_izotopy_jony_masa_atomowa, F06_uklad_okresowy, J03_rownania_jonowe_i_stracanie, LKO_ORG01_alkany, LKO_ORG02_alkeny, LKO_ORG03_alkohole, LKO_ORG04_glicerol, LKO_ORG05_kwasy, LKO_ORG06_estry, LKO_ORG07_cukry, LKO_ORG08_mol_gazy, N01_powietrze_i_gazy, N01_tlenki, N02_wodorotlenki, N03_kwasy, N04_sole, N05_wodorki, R03_woda_roztwory_stezenie_procentowe, R07_stechiometria_z_nadmiarem, REV01_powtorka_klasy_7, X04_szereg_aktywnosci_metali; chemia etap II: C1c_kwasy_zasady_sole, C1c_masy_sklad_procentowy, C2m_mol_masa_molowa, C2w_wzor_elementarny_rzeczywisty, C3_rownania_i_obliczenia_z_rownan, J03_rownania_jonowe_i_stracanie, LKO_ORG01_alkany, LKO_ORG02_alkeny, LKO_ORG03_alkohole, LKO_ORG04_glicerol, LKO_ORG05_kwasy, LKO_ORG06_estry, LKO_ORG07_cukry, LKO_ORG08_mol_gazy, N02_wodorotlenki, N03_kwasy, N04_sole, N05_wodorki, R07_stechiometria_z_nadmiarem, X04_szereg_aktywnosci_metali
+
+
+Razem: 1975 KB.
