@@ -257,7 +257,7 @@ Nie zawsze. Pojedyncza destylacja mieszaniny etanolu z wodą daje destylat **wzb
 - **Uzdatnianie wody** — sedymentacja w osadnikach, sączenie przez złoża piasku, dezynfekcja.
 - **Produkcja cukru** — sączenie soku, zatężanie, krystalizacja. **Wzbogacanie rud** — flotacja i rozdział magnetyczny.
 
-@model lab-stations-v102 | Stanowiska laboratoryjne: zlewka, gaz, chłodnica, palnik | sprzęt do destylacji — kolba, chłodnica, odbieralnik
+@klocek destylacja | Stanowiska laboratoryjne: zlewka, gaz, chłodnica, palnik
 @opis Zestaw do destylacji: kolba z cieczą ogrzewana palnikiem, chłodnica, w której para się skrapla, i odbieralnik, do którego spływa destylat. Wniosek: destylacja to odparowanie i skroplenie — odzyskuje się składnik o niższej temperaturze wrzenia.
 
 @klocek karta-bhp {} | Zasady pracy i pierwsza pomoc

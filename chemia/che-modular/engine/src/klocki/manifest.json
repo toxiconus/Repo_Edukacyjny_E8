@@ -55,7 +55,8 @@
     "profil_energii.js": "profil energii reakcji (egzo/endo, katalizator)",
     "gra_klasyfikacja.js": "gra: kwas, zasada, sól czy tlenek",
     "jony_w_wodzie.js": "dysocjacja vs jonizacja, przeniesienie protonu, tester przewodnictwa",
-    "fizyka_elektrostatyka.js": "elektrostatyka: elektryzowanie, przewodnik-izolator, kule-ladunek, elektroskop, prawo-coulomba, linie-pola"
+    "fizyka_elektrostatyka.js": "elektrostatyka: elektryzowanie, przewodnik-izolator, kule-ladunek, elektroskop, prawo-coulomba, linie-pola",
+    "chemia_wstep.js": "wstęp do chemii: lancuch-poziomow, zlewka-predykcja, mapa-mysli, czasteczki-3d, destylacja"
   },
   "lekcje": {
     "P01": [
@@ -338,7 +339,9 @@
     ],
     "N02": [
       "klocki.js",
-      "karta_bhp.js"
+      "karta_bhp.js",
+      "ui_klocki.js",
+      "chemia_wstep.js"
     ],
     "N04": [
       "klocki.js",
@@ -356,15 +359,21 @@
       "model_widok.js",
       "z_f02_czastki.js",
       "z_f02_magnes_fes.js",
-      "karta_bhp.js"
+      "karta_bhp.js",
+      "ui_klocki.js",
+      "chemia_wstep.js"
     ],
     "F03": [
       "klocki.js",
-      "karta_bhp.js"
+      "karta_bhp.js",
+      "ui_klocki.js",
+      "chemia_wstep.js"
     ],
     "F01": [
       "klocki.js",
-      "karta_bhp.js"
+      "karta_bhp.js",
+      "ui_klocki.js",
+      "chemia_wstep.js"
     ],
     "REV01": [
       "klocki.js",

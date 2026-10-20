@@ -274,3 +274,4 @@
 - 2026-10-20: S-S1 krok 3: klocek izotopy (F05, C1c_masy) zamiast f05-izotopy-v01.
 - 2026-10-20: S-S1 krok 4: klocki regula-krzyzowa (R03A), f02-czastki-v01 (F02), f04-nuklid-v01 (F04) przywrócone z 460a00c (utracone w scaleniu c0eda9c) + mostek model_widok.js; f02-magnes-fes-v01 też dostępny.
 - 2026-10-20: S-S1 krok 5: klocki ui_klocki, profil-energii, gra-klasyfikacja, dysocjacja-vs-jonizacja, przeniesienie-protonu, tester-przewodnictwa; n05-wodorki/trendy (z_n05_wodorki).
+- 2026-10-20: S-S1 krok 6: klocki elektrostatyki (6), chemia_wstep (lancuch-poziomow, zlewka-predykcja, mapa-mysli, czasteczki-3d, destylacja) w F01–F03.

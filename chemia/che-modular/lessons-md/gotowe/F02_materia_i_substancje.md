@@ -154,7 +154,7 @@ Właściwości związku **nie są sumą** właściwości pierwiastków. Wodór j
 
 Pierwiastek i związek klasyfikują **skład**; atom i cząsteczka opisują **cząstki**. Zdanie „tlen to atom” miesza poziomy: tlen to pierwiastek, a jego najmniejsza cząstka to atom O.
 
-@model molecule3d-merged | Model 3D: O₂, O₃, H₂O, CO₂ | jedna substancja prosta, dwie odmiany tlenu i dwa związki — ile rodzajów atomów widzisz?
+@klocek czasteczki-3d {mol="O₂,O₃,H₂O,CO₂"} | Model 3D: O₂, O₃, H₂O, CO₂
 @opis Trójwymiarowe modele cząsteczek: O₂ (2 atomy tlenu), O₃ (3 atomy tlenu), H₂O (2 atomy wodoru + 1 atom tlenu), CO₂ (1 atom węgla + 2 atomy tlenu); atomy pokazane jako kulki w kolorach pierwiastków. Wniosek: O₂ i O₃ to dwie substancje proste tego samego pierwiastka, a H₂O i CO₂ to związki — decyduje liczba rodzajów atomów, nie liczba atomów.
 
 ## 3 | Mieszanina [[basic:E8]] {#mieszanina}

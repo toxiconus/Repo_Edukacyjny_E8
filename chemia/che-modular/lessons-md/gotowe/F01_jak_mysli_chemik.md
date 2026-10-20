@@ -161,7 +161,7 @@ Chemik patrzy na to samo zjawisko na czterech poziomach. Dobra odpowiedź umie p
 Roztwór **mętnieje** (makro) → powstaje trudno rozpuszczalna substancja, której drobiny łączą się w ziarna osadu (cząsteczkowy) → zapisujemy ją wzorem, np. CaCO₃ (symboliczny) → obliczamy, ile osadu powstanie (ilościowy — od klasy 8 i LO).
 :::
 
-@model live-cv | Łańcuch chemii: atom → cząsteczka → substancja → reakcja | jak jeden obiekt wygląda na kolejnych poziomach opisu
+@klocek lancuch-poziomow | Łańcuch chemii: atom → cząsteczka → substancja → reakcja
 @opis Łańcuch czterech poziomów opisu: pojedynczy atom → cząsteczka z połączonych atomów → próbka substancji → reakcja, w której atomy łączą się w nowe cząsteczki. Wniosek: ten sam obiekt można opisać na różnych poziomach — od cząstek do tego, co widać w probówce.
 
 ## 3 | Obserwacja, wniosek, hipoteza [[basic:E8]] {#obserwacja}
@@ -447,7 +447,7 @@ BHP: wykonuje nauczyciel pod wyciągiem; przy ogrzewaniu siarki może powstawać
 :::
 
 ::: karta understand | Przewiduj, potem sprawdź
-@model beaker-prediction-enhanced | Zlewka z predykcją | wybierz obserwację, której się spodziewasz, i sprawdź wynik — trening „hipoteza przed doświadczeniem”
+@klocek zlewka-predykcja | Zlewka z predykcją
 @opis Zlewka z doświadczeniem i listą możliwych obserwacji: najpierw wybierasz, czego się spodziewasz, potem animacja pokazuje wynik i porównuje go z twoim przewidywaniem. Wniosek: hipotezę formułuje się przed doświadczeniem, a wynik ją wspiera albo obala.
 :::
 
@@ -753,7 +753,7 @@ Trzy pomiary masy osadu: 2,31 g; 2,28 g; 2,35 g. Podaj wartość średnią i oce
 → *zasady nauki*: próbuj · mów · rysuj · powtarzaj · testuj się
 :::
 
-@model mind-map | Mapy myśli MASTER | mapa myśli chemii do samodzielnego uzupełniania
+@klocek mapa-mysli | Mapy myśli MASTER
 @opis Mapa myśli z pojęciami lekcji ułożonymi wokół centralnego hasła, z gałęziami do samodzielnego uzupełniania. Wniosek: pojęcia z lekcji łączą się w jedną sieć, a nie są osobnymi definicjami do wykucia.
 
 ## 15 | Fiszki {#fiszki}
