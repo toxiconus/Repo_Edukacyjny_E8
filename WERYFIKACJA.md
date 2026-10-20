@@ -262,3 +262,12 @@ Zasada: po każdym audycie surowa odpowiedź trafia do `<przedmiot>/plany/audyty
 | chemia | LKO-ORG07 | Cukry | 2026-10-14 (kolejny zewnętrzny audyt) | bez zmian treści — sześć pułapek z audytu było w lekcji | `chemia/plany/audyty/LKO_ORG07_ORG08_audyt_kolejny_2026-10-14.md` | — |
 | chemia | LKO-ORG07 | Cukry | 2026-10-14 (wynik audytu zewnętrznego) | oznaczenie W1 FULL nieprzyjęte — brak pełnego przeglądu; sprawdzono masy molowe, nazwę „węglowodany”, próby; bez zmian treści | `chemia/plany/audyty/LKO_ORG07_wynik_audytu_2026-10-14.md` | bez audytu W1 |
 | chemia | LKO-ORG08 | Mol i gazy | 2026-10-14 (wynik audytu zewnętrznego) | W1 FULL nieprzyjęte — brak pełnego przeglądu; sprawdzono zależności, Vₘ, gęstości, wzór elementarny, zadanie łańcuchowe (38,4 g); bez zmian treści | `chemia/plany/audyty/LKO_ORG08_wynik_audytu_2026-10-14.md` | bez audytu W1 |
+
+## KB przed/po — zmiany 2026-10-20 (biologia, baza: 3bad086)
+
+| Lekcja | przed KB | po KB |
+|---|---:|---:|
+| BIO.00.REV01.organizacja_i_chemizm_zycia | 66 | 66 |
+| BIO.01.B1b.krzyzowki_mendel | 22 | 22 |
+| BIO.02.B2e.uklad_dokrewny | 15 | 18 |
+| BIO.02.B2g.homeostaza | 30 | 32 |

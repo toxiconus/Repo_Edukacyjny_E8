@@ -257,3 +257,4 @@
 - 2026-10-20: H-C — 7 lekcji BIO: etykieta zakresu „LKO biologia 2025/26” zmieniona na 2026/27 (treść bez zmian). Tkanki roślinne: wymienione w REV02 §4 (zakres etapu I); lekcje BIO.07 dotyczą człowieka, bez zmian.
 - 2026-10-20: H-D — ZIP przekazania zbudowany (eksport/out/PRZEKAZANIE_2026-10-20.zip, 226 md, 144 html, arkusze, olimpiada/).
 - 2026-10-20: H-E — dodany narzedzia/popraw_odpowiedz_ai.py (LaTeX→Unicode, sklejone nagłówki, czyszczenie odstępów); test na REV02: bez zmian w treści poza tymi poprawkami.
+- 2026-10-20: H-F — KB przed/po dla zmienionych lekcji BIO wpisane do WERYFIKACJA.md.

@@ -10,7 +10,7 @@ Priorytet: biologia LKO etap szkolny, środa 21.10.2026, 9:00, 60 min. Nie pisa�
 - [x] H-C. Przeszukać lekcje biologii pod kątem „LKO 2025/26” i tkanek roślinnych jako wymogu (zakres 2026/27).
 - [x] H-D. Zbudować ZIP przekazania (md + html + małe silniki + przekazanie + `olimpiada/` z datami).
 - [x] H-E. (zrobione: `narzedzia/popraw_odpowiedz_ai.py`) Przed wklejeniem odpowiedzi Perplexity dla REV02: automatyczne naprawy formatu (sklejone nagłówki, LaTeX→Unicode `narzedzia/latex2uni.py`, frontmatter `---`).
-- [ ] H-F. Policzyć KB przed/po dla lekcji i wpisać do `WERYFIKACJA.md`.
+- [x] H-F. Policzyć KB przed/po dla lekcji i wpisać do `WERYFIKACJA.md`.
 
 - [ ] H-G. **Wstawić gotowe rysunki BIO do innych lekcji** (tylko tam, gdzie pomagają zrozumieć; nie jako ozdoba). Składnia: `@viz <id> {opcja="wartość"} | Tytuł | podpis`, zaraz pod nią obowiązkowa linia `@opis …` (co widać + wniosek). Po zmianach: `python3 biologia/bio/narzedzia/md2html_bio.py` i `node biologia/bio/narzedzia/sprawdz_bio.js` (0 FAIL). Katalog: `biologia/bio/BIO_KATALOG.md`, kod: `biologia/bio/szablon/bio-rysunki.js`. NIE zmieniać kodu rysunków ani treści lekcji, tylko dodawać `@viz`+`@opis`; jeden rysunek raz na lekcję. Dostępne id i gdzie je zaproponować:
   - `tkanki-zwierzece` → B2a (§5 tkanka mięśniowa, §3–4 kość i chrząstka jako tkanka łączna), B2d (neuron = tkanka nerwowa).
