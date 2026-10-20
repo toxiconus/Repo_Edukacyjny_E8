@@ -473,6 +473,27 @@ Zbieraj tylko grzyby, które znasz na pewno; w razie wątpliwości — do sanepi
 
 **Nerwowa.** Neuron ma ciało komórki z jądrem, krótkie **dendryty** (odbierają sygnały) i długi **akson** (przewodzi impuls dalej). Długie wypustki pozwalają przekazywać informację na odległość. Tkanka nerwowa tworzy mózg, rdzeń kręgowy i nerwy.
 
+**Nabłonek — rodzaje.** Kształt komórek podpowiada zadanie: **płaski** (cienka warstwa, szybka wymiana substancji — pęcherzyki płucne, ściany naczyń), **sześcienny** (wydzielanie i wchłanianie — kanaliki nerkowe, gruczoły), **walcowaty** (wchłanianie, często z mikrokosmkami — jelito cienkie), **urzęsiony** (przesuwanie śluzu i zanieczyszczeń — drogi oddechowe). Nabłonek może być jednowarstwowy (wymiana) albo wielowarstwowy (ochrona przed ścieraniem — naskórek). Nie ma w nim naczyń krwionośnych: odżywia się z leżącej pod nim tkanki łącznej.
+
+**Krew — co zawiera.**
+
+| Składnik | Budowa | Funkcja |
+|---|---|---|
+| osocze | woda z białkami, solami, glukozą | transport substancji, ciepła, hormonów |
+| erytrocyty (krwinki czerwone) | bez jądra, dwuwklęsłe, z hemoglobiną | transport tlenu |
+| leukocyty (krwinki białe) | z jądrem, różne rodzaje | obrona przed drobnoustrojami |
+| trombocyty (płytki krwi) | fragmenty komórek | krzepnięcie krwi |
+
+**Kość.** Substancja międzykomórkowa składa się z **soli wapnia i fosforu** (twardość, wytrzymałość na ściskanie) oraz z **włókien kolagenowych** (sprężystość, odporność na złamanie). Kość zbita jest gęsta i wytrzymała, kość gąbczasta ma beleczki i jest lżejsza.
+
+**Mięśnie — skąd energia.** Skurcz wymaga energii z ATP, dlatego w komórkach mięśniowych jest dużo mitochondriów. Mięśnie szkieletowe działają parami przeciwstawnie (np. zginacz i prostownik ramienia): jeden się kurczy, drugi rozluźnia.
+
+**Nerwowa — rodzaje neuronów.** Neurony **czuciowe** przewodzą impulsy od receptorów do ośrodków nerwowych, **ruchowe** — z ośrodków do narządów wykonawczych (mięśni, gruczołów), **kontaktowe** łączą neurony w mózgu i rdzeniu. Impuls przechodzi z neuronu na neuron lub na mięsień przez **synapsę**.
+
+::: mnemonik
+Czuciowy czuje, ruchowy rusza, kontaktowy łączy.
+:::
+
 **Zadania w stylu LKO**
 
 **T1. (2 pkt)** Tkanka ma komórki ułożone ściśle, mało substancji międzykomórkowej i wyścieła jelito cienkie. Podaj jej nazwę i jedną funkcję wynikającą z budowy.
@@ -485,8 +506,17 @@ Zbieraj tylko grzyby, które znasz na pewno; w razie wątpliwości — do sanepi
 
 **T5. (3 pkt)** Podaj trzy cechy pozwalające odróżnić mięśnie szkieletowe od gładkich.
 
-::: odp | Klucz T1–T5
+**T6. (3 pkt) — odczyt schematu.** Schemat opisuje przekrój przez jelito cienkie: wewnętrzną powierzchnię pokrywa jedna warstwa wysokich, wąskich komórek z licznymi wypustkami na szczycie; pod nią widać luźną tkankę z naczyniami krwionośnymi, a głębiej dwie warstwy komórek wrzecionowatych bez prążkowania. a) Nazwij tkankę pokrywającą powierzchnię i podaj jej funkcję. b) Wyjaśnij, po co komórki mają wypustki na szczycie. c) Nazwij tkankę mięśniową z głębszych warstw i napisz, czy jest zależna od woli.
+
+**T7. (4 pkt) — planowanie doświadczenia.** Uczeń sprawdza, jaką rolę w kości odgrywają sole mineralne, a jaką substancje organiczne. Ma dwie jednakowe kości kurze, ocet, wodę i słoiki. a) Sformułuj problem badawczy. b) Wskaż próbę badawczą i kontrolną. c) Podaj, co należy utrzymać jednakowe w obu próbach. d) Przewidź obserwację dla kości z octu i wyjaśnij ją.
+
+**T8. (3 pkt) — wnioskowanie.** Pacjent ma mało erytrocytów, ale prawidłową liczbę leukocytów i płytek. Podaj, której funkcji krwi dotyczy ten niedobór, i jedną objawową konsekwencję.
+
+**T9. (3 pkt) — dopasowanie budowy do funkcji.** Uzasadnij, dlaczego: a) pęcherzyki płucne wyścieła nabłonek płaski, b) tchawicę nabłonek urzęsiony, c) ścięgna zawierają dużo włókien kolagenowych.
+
+::: odp | Klucz T1–T9
 T1. Tkanka nabłonkowa; ochrona albo wchłanianie substancji odżywczych. T2. 1B, 2C, 3D, 4A. T3. 1P, 2F, 3P, 4F, 5P. T4. Wypustki umożliwiają odbieranie sygnałów (dendryty) i przewodzenie impulsu na odległość (akson). T5. Szkieletowe: prążkowane, długie wielojądrowe włókna, zależne od woli; gładkie: bez prążkowania, komórki wrzecionowate, niezależne od woli (dowolne trzy poprawne różnice).
+T6. a) Nabłonek walcowaty (jednowarstwowy); wchłanianie substancji odżywczych. b) Wypustki (mikrokosmki) zwiększają powierzchnię wchłaniania. c) Mięśniowa gładka; niezależna od woli. T7. a) Jaką rolę w kości odgrywają sole mineralne? b) Badawcza: kość w occie; kontrolna: kość w wodzie. c) Taką samą ilość płynu, czas, temperaturę i rodzaj kości. d) Kość z octu staje się giętka, bo ocet rozpuszcza sole wapnia, a zostają włókna organiczne (kolagen). T8. Transport tlenu; osłabienie, szybkie męczenie się, bladość. T9. a) Cienka, jednowarstwowa ściana ułatwia szybką wymianę gazową. b) Rzęski przesuwają śluz z zanieczyszczeniami ku górze. c) Kolagen daje wytrzymałość na rozciąganie przy łączeniu mięśni z kośćmi.
 :::
 
 ## 7 | Bezkręgowce [[basic:E8]] {#bezkregowce}

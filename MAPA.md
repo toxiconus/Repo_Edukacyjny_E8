@@ -3,7 +3,7 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (19 pl., 519 KB)
+## .  (19 pl., 521 KB)
 - (zwinięte; `ls .`) — duże:
 - ⚠`INDEKS.html` 52 KB
 - ⚠`SPIS_WSZYSTKICH.md` 61 KB
@@ -76,7 +76,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## biologia/bio/md  (58 pl., 2.6 MB)
 - (zwinięte; `ls biologia/bio/md`) — duże:
 - ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.md` 67 KB
-- ⚠`BIO.00.REV02.roznorodnosc_zycia.md` 86 KB
+- ⚠`BIO.00.REV02.roznorodnosc_zycia.md` 90 KB
 - ⚠`BIO.01.L001.komorka.md` 81 KB
 - ⚠`BIO.01.L002.powtorka_czlowiek.md` 76 KB
 - ⚠`BIO.01.L003.diagnoza.md` 77 KB
@@ -787,7 +787,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## okladki/biologia/md  (54 pl., 2.3 MB)
 - (zwinięte; `ls okladki/biologia/md`) — duże:
 - ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.md` 67 KB
-- ⚠`BIO.00.REV02.roznorodnosc_zycia.md` 86 KB
+- ⚠`BIO.00.REV02.roznorodnosc_zycia.md` 90 KB
 - ⚠`BIO.01.L001.komorka.md` 81 KB
 - ⚠`BIO.01.L002.powtorka_czlowiek.md` 76 KB
 - ⚠`BIO.01.L003.diagnoza.md` 77 KB
