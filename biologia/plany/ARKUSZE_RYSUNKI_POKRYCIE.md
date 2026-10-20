@@ -1,4 +1,4 @@
-# Rysunki w arkuszach konkursu (szkolny/rejonowy 2022/23, 2023/24) a rysunki w lekcjach
+# Rysunki w arkuszach konkursu (szkolny/rejonowy 2022/23, 2023/24, szkolny 2025/26) a rysunki w lekcjach
 
 Stan na 2026-10-20. „Rysunek w lekcji" = komponent z trybem poznaj / znajdź / podpisz (`bio-rysunki.js`), z którego można brać zadania do testów.
 
@@ -17,6 +17,9 @@ Stan na 2026-10-20. „Rysunek w lekcji" = komponent z trybem poznaj / znajdź /
 | skóra — budowa | rejonowy 22/23 | `skora-przekroj` | B2a |
 | narządy układów (A–H: nerwowy, wydalniczy, pokarmowy) | rejonowy 23/24 z.12 | `mapa-narzadow` (nowy), `przewod-pokarmowy`, `gruczoly-mapa` | B10, B2b, B2e |
 | schemat transportu gazów | rejonowy 23/24 | `wymiana-gazowa`, `krazenie-obiegi` | B2c |
+| preparat ze skórki cebuli, nazwy szkiełek | szkolny 25/26 z.6 | `preparat-mikroskopowy` (nowy), `mikroskop-budowa` | REV02 §11 D+, L008 |
+| budowa meduzy A–C (parasol, ramiona, czułki) | szkolny 25/26 z.13 | `polip-meduza` (ramiona i czułki rozdzielone) | REV02 §7 |
+| budowa ryby | szkolny 25/26 z.1 | `ryba-budowa` | REV02 §8.1 |
 | wykres z doświadczenia | oba rejonowe | `wykres-dane` | REV02 §11 D+ |
 
 ## Braki

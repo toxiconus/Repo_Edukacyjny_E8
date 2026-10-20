@@ -990,6 +990,9 @@ D4. Problem: Czy nawóz wpływa na wzrost rzeżuchy? Hipoteza: nawóz zwiększa 
 D5. a) Roślina w ciemnej szafce (tu zmieniamy badany czynnik — odbieramy światło). b) Roślina przy oknie (warunki wyjściowe, bez zabiegu). c) Dostęp do światła. d) Np. liczba pęcherzyków tlenu u rośliny wodnej, przyrost masy, obecność skrobi w liściach. (Zasada w tym kursie: **badawcza** = próba z zabiegiem, czyli ze zmienionym badanym czynnikiem; **kontrolna** = próba bez zabiegu, w warunkach wyjściowych. Jeśli treść zadania definiuje próby inaczej, stosuj jej definicję.)
 :::
 
+@viz preparat-mikroskopowy | Preparat ze skórki cebuli — elementy | poznaj, znajdź, podpisz
+@opis Przekrój boczny preparatu: na dole szkiełko podstawowe, na nim kropla wody ze skórką cebuli, nad nią cienkie szkiełko nakrywkowe; obok zakraplacz. Wniosek: obiekt leży w kropli wody między dwoma szkiełkami, a nakrywkowe przykłada się pod kątem, by uniknąć pęcherzyków powietrza.
+
 **Preparat ze skórki cebuli — kolejność:** 1) przygotuj zestaw (szkiełko podstawowe i nakrywkowe, zakraplacz, woda, igła preparacyjna); 2) nanieś kroplę wody na szkiełko podstawowe; 3) umieść w niej fragment skórki cebuli; 4) przyłóż szkiełko nakrywkowe, opuszczając je pod kątem (bez pęcherzyków powietrza); 5) umieść preparat na stoliku mikroskopu; 6) obserwuj, zaczynając od najmniejszego powiększenia.
 
 **M1. (2 pkt)** Podaj nazwy szkiełek: a) na którym leży materiał, b) które przykrywa preparat.

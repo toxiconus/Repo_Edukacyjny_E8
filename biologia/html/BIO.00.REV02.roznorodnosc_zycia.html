@@ -1612,6 +1612,8 @@ D3. a) C. b) O 10 gatunków. c) Nie — liczba gatunków to bogactwo gatunkowe, 
 D4. Problem: Czy nawóz wpływa na wzrost rzeżuchy? Hipoteza: nawóz zwiększa wzrost rzeżuchy. Badawcza: nasiona podlewane roztworem nawozu. Kontrolna: nasiona podlewane taką samą ilością wody bez nawozu. Zmienna niezależna: obecność (stężenie) nawozu. Warunki stałe (dowolne dwa): gatunek i liczba nasion, podłoże, ilość wody, temperatura, czas, dostęp światła.
 D5. a) Roślina w ciemnej szafce (tu zmieniamy badany czynnik — odbieramy światło). b) Roślina przy oknie (warunki wyjściowe, bez zabiegu). c) Dostęp do światła. d) Np. liczba pęcherzyków tlenu u rośliny wodnej, przyrost masy, obecność skrobi w liściach. (Zasada w tym kursie: <strong>badawcza</strong> = próba z zabiegiem, czyli ze zmienionym badanym czynnikiem; <strong>kontrolna</strong> = próba bez zabiegu, w warunkach wyjściowych. Jeśli treść zadania definiuje próby inaczej, stosuj jej definicję.)</p>
 </details>
+<figure class="lk-fig bio-fig" data-bio-viz="preparat-mikroskopowy" data-opt="{}"><div class="lk-fig-body bio-fig-body"></div><figcaption><b>Preparat ze skórki cebuli — elementy</b> <span>poznaj, znajdź, podpisz</span></figcaption></figure>
+<!-- OPIS: Przekrój boczny preparatu: na dole szkiełko podstawowe, na nim kropla wody ze skórką cebuli, nad nią cienkie szkiełko nakrywkowe; obok zakraplacz. Wniosek: obiekt leży w kropli wody między dwoma szkiełkami, a nakrywkowe przykłada się pod kątem, by uniknąć pęcherzyków powietrza. -->
 <p><strong>Preparat ze skórki cebuli — kolejność:</strong> 1) przygotuj zestaw (szkiełko podstawowe i nakrywkowe, zakraplacz, woda, igła preparacyjna); 2) nanieś kroplę wody na szkiełko podstawowe; 3) umieść w niej fragment skórki cebuli; 4) przyłóż szkiełko nakrywkowe, opuszczając je pod kątem (bez pęcherzyków powietrza); 5) umieść preparat na stoliku mikroskopu; 6) obserwuj, zaczynając od najmniejszego powiększenia.</p>
 <p><strong>M1. (2 pkt)</strong> Podaj nazwy szkiełek: a) na którym leży materiał, b) które przykrywa preparat.</p>
 <p><strong>M2. (1 pkt)</strong> Ułóż w kolejności: A — skórka cebuli w kropli wody; B — przygotowanie zestawu; C — szkiełko nakrywkowe; D — kropla wody; E — obserwacja.</p>
@@ -2450,7 +2452,8 @@ mount:function(el){
     {n:'jama chłonąco-trawiąca',m:[68,136],z:1,d:'Wnętrze ciała; pokarm trawiony jest w niej i wewnątrz komórek. Ściana ciała ma dwie warstwy: ektodermę i endodermę.',draw:function(g){g.appendChild(R(60,80,16,100,8,'#fff4d6','#b8860b',1.6))}},
     {n:'stopa',m:[68,206],d:'Rozszerzone dolne zakończenie polipa; przytwierdza go do podłoża.',draw:function(g){g.appendChild(E(68,194,28,7,'#b9d4a8','#4f7a2a',2))}},
     {n:'parasol (dzwon) meduzy',m:[260,34],d:'Galaretowaty dzwon meduzy; skurcze parasola napędzają pływanie. Meduza ma otwór gębowy skierowany w dół.',draw:function(g){g.appendChild(P('M200,100 Q260,20 320,100 Q260,86 200,100Z',"#cfe6f7",'#2a6f97',2.4))}},
-    {n:'ramiona gębowe i czułki meduzy',m:[320,150],d:'Zwisają z dolnej strony parasola; czułki mają parzydełka, ramiona gębowe doprowadzają pokarm do otworu gębowego.',draw:function(g){[214,236,260,284,306].forEach(function(x){g.appendChild(P('M'+x+',98 Q'+(x+8)+',130 '+x+',160',null,'#2a6f97',2.6))});g.appendChild(P('M260,98 L260,140',null,'#8a3b3b',5))}}
+    {n:'ramiona gębowe meduzy',m:[320,170],d:'Zwisają w środku dolnej strony parasola wokół otworu gębowego; doprowadzają pokarm do ust.',draw:function(g){g.appendChild(P('M260,98 L260,150',null,'#8a3b3b',5))}},
+    {n:'czułki meduzy',m:[200,150],d:'Cienkie wypustki na brzegu parasola z komórkami parzydełkowymi; służą do chwytania i unieszkodliwiania zdobyczy.',draw:function(g){[214,236,284,306].forEach(function(x){g.appendChild(P('M'+x+',98 Q'+(x+8)+',130 '+x+',160',null,'#2a6f97',2.6))})}}
   ]}}})}});
 
 BIO.define('bezkregowce-sylwetki',{opis:'Sylwetki bezkręgowców do rozpoznawania grup: gąbka, parzydełkowiec (polip), płaziniec, nicień, pierścienica, mięczak (ślimak), stawonóg; tryby poznaj / znajdź / podpisz',
@@ -2508,6 +2511,16 @@ mount:function(el){
     {n:'jelito cienkie',m:[132,206],z:1,d:'Układ pokarmowy. Dokończenie trawienia i wchłanianie substancji odżywczych (kosmki jelitowe).',draw:function(g){g.appendChild(P('M160,200 Q200,196 200,208 Q160,212 162,222 Q202,222 198,234 Q160,236 168,244',null,'#e09a5a',7))}},
     {n:'jelito grube',m:[232,214],z:0,d:'Układ pokarmowy. Wchłanianie wody i soli mineralnych, formowanie kału.',draw:function(g){g.appendChild(P('M146,244 L146,198 L214,198 L214,244',null,'#8a6a40',6))}},
     {n:'pęcherz moczowy',m:[132,262],z:1,d:'Układ wydalniczy. Gromadzi mocz przed wydaleniem.',draw:function(g){g.appendChild(E(180,262,10,12,'#f0e08a','#a8941a',2))}}
+  ]}}})}});
+
+BIO.define('preparat-mikroskopowy',{opis:'Preparat mikroskopowy ze skórki liścia cebuli w przekroju bocznym: szkiełko podstawowe, kropla wody, skórka cebuli, szkiełko nakrywkowe, zakraplacz; tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  lab(el,{get:function(){return{w:360,h:220,label:'Preparat mikroskopowy — elementy',parts:[
+    {n:'szkiełko podstawowe',m:[40,196],d:'Większe, prostokątne szkiełko, na którym kładzie się obiekt (etap 3) i kroplę wody (etap 2). Stanowi podstawę preparatu.',draw:function(g){g.appendChild(R(40,150,280,16,2,'#e4f1f8','#5a8aa8',2.4))}},
+    {n:'kropla wody',m:[90,136],d:'Nanosi się ją zakraplaczem na szkiełko podstawowe, aby obiekt nie wysechł i dobrze przylegał do szkiełka.',draw:function(g){g.appendChild(E(180,146,76,8,'#bfe4f7','#2a7fb0',1.8))}},
+    {n:'skórka liścia cebuli',m:[180,184],z:1,d:'Cienki fragment (jedna warstwa komórek) położony w kropli wody; po rozprostowaniu bez fałd jest przezroczysty i nadaje się do obserwacji.',draw:function(g){g.appendChild(R(130,142,100,6,1,'#e9c9a0','#a8722a',1.6))}},
+    {n:'szkiełko nakrywkowe',m:[300,100],d:'Małe, cienkie szkiełko, które przykłada się pod kątem (żeby nie powstały pęcherzyki powietrza) i opuszcza na kroplę z obiektem (etap 6).',draw:function(g){g.appendChild(R(120,126,120,8,1,'#f6fbff','#5a8aa8',2.2))}},
+    {n:'zakraplacz',m:[300,50],d:'Służy do nanoszenia kropli wody na szkiełko podstawowe.',draw:function(g){g.appendChild(P('M250,24 L250,72',null,'#777',9));g.appendChild(P('M250,72 L250,96',null,'#2a7fb0',4));g.appendChild(E(250,16,12,12,'#d8d8d8','#777',2))}}
   ]}}})}});
 
 var OD=0;

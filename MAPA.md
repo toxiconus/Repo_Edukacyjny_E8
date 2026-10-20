@@ -89,10 +89,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `md2html_bio.py` 8 KB
 - `sprawdz_bio.js` 2 KB
 
-## biologia/bio/szablon  (7 pl., 257 KB)
+## biologia/bio/szablon  (7 pl., 259 KB)
 - `baza-wspolna.css` 45 KB
 - `bio-core.js` 18 KB
-- ⚠`bio-rysunki.js` 119 KB
+- ⚠`bio-rysunki.js` 121 KB
 - ⚠`bio-viz.js` 61 KB
 - `bio-warstwa.css` 11 KB
 - `index.html` 1 KB
@@ -106,8 +106,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 
 ## biologia/html  (55 pl., 10.0 MB)
 - (zwinięte; `ls biologia/html`) — duże:
-- ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 339 KB
-- ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 361 KB
+- ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 340 KB
+- ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 364 KB
 - ⚠`BIO.01.B1b.krzyzowki_mendel.html` 145 KB
 - ⚠`BIO.01.L001.komorka.html` 221 KB
 - ⚠`BIO.01.L001A.dodatek_ambitny_od_komorki_do.html` 155 KB
@@ -130,7 +130,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## biologia/plany  (6 pl., 43 KB)
 - `ANALIZA_ARKUSZY_LKO_BIO.md` 4 KB
 - `ARKUSZE_RYSUNKI_POKRYCIE.md` 2 KB
-- `KATALOG_GRAFIK_BIO.md` 25 KB
+- `KATALOG_GRAFIK_BIO.md` 26 KB
 - `PLAN_BRAKUJACE_LEKCJE.md` 3 KB
 - `PLAN_RYSUNKOW_BIO.md` 5 KB
 - `POMINIETE_BIO_L030-L043_L091_szkielety.md` 2 KB
@@ -774,10 +774,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`ANG.01.L006.czasowniki_modalne_i_have_to.md` 79 KB
 - ⚠`ANG.01.L007.tryb_rozkazujacy_stative_phrasal_verbs.md` 55 KB
 
-## okladki/biologia/html  (54 pl., 9.9 MB)
+## okladki/biologia/html  (54 pl., 10.0 MB)
 - (zwinięte; `ls okladki/biologia/html`) — duże:
-- ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 339 KB
-- ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 361 KB
+- ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 340 KB
+- ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 364 KB
 - ⚠`BIO.01.B1b.krzyzowki_mendel.html` 145 KB
 - ⚠`BIO.01.L001.komorka.html` 221 KB
 - ⚠`BIO.01.L001A.dodatek_ambitny_od_komorki_do.html` 155 KB
