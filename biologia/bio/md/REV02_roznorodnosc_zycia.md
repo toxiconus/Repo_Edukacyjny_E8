@@ -8,7 +8,7 @@ lead: Etap szkolny konkursu biologicznego obejmuje organizację i chemizm życia
 lead: od zasad klasyfikacji, przez wirusy i bakterie, rośliny i grzyby, po bezkręgowce i kręgowce — zawsze w parze „budowa → funkcja → przystosowanie → znaczenie”.
 plakietki: [[basic:E8]][[understand:TRENING]][[exam:KONKURS]][[extra:AMBITNE]]
 uwaga: Zakres wg konkursu biologicznego LKO 2026/27 (etap I: pkt I i II podstawy programowej). Część „Organizacja i chemizm życia” (komórka, fotosynteza, oddychanie) — lekcja REV01 BIO. Od 2026/27 w etapie I nie ma tkanek roślinnych (zostają mchy, paprociowe, nagonasienne, okrytonasienne).
-stopka: **BIOLOGIA REV02 v1.0** · Różnorodność życia — powtórka · 2026
+stopka: **BIOLOGIA REV02 v1.1** · Różnorodność życia — powtórka · 2026
 ---
 ::: minimum | Muszę umieć — 12 punktów
 1. **Kolejność rang:** królestwo → typ → gromada → rząd → rodzina → rodzaj → **gatunek**. Nazwa gatunku jest **dwuczłonowa** (rodzaj + epitet), np. *Canis lupus*.
@@ -191,7 +191,7 @@ Terapia fagowa była rozwijana w Instytucie Eliava w Tbilisi (Gruzja) już w lat
 - **cewki** (tracheidy) — martwe, wydłużone komórki z obramowanymi jamkami; woda przepływa przez jamki z cewki do cewki. Występują we wszystkich roślinach naczyniowych; u iglastych są głównym elementem drewna,
 - **naczynia** (tracheje) — rurki z martwych komórek, których poprzeczne ściany zanikły; przewodzą wodę szybciej, występują u okrytonasiennych.
 
-**Pułapka:** cewki i naczynia to **drewno** (ksylem). Łyko (floem) przewodzi produkty fotosyntezy z liści w dół. Liściaste mają także cewki, więc hasło „iglaste — cewki, liściaste — naczynia" jest uproszczeniem.
+**Pułapka:** cewki i naczynia to **drewno** (ksylem). Łyko (floem) przewodzi produkty fotosyntezy z liści (źródło) do miejsc, gdzie są zużywane lub magazynowane — korzeni, owoców, kwiatów, młodych liści; kierunek zależy od położenia źródła i odbiorcy (często „w dół”, ale nie zawsze). Liściaste mają także cewki, więc hasło „iglaste — cewki, liściaste — naczynia" jest uproszczeniem.
 
 ::: mnemonik
 **Drewno to ksylem: woda w górę (cewki i naczynia), łyko to floem: cukier w dół.**
@@ -339,7 +339,7 @@ Wierzba była znana w medycynie od starożytności. Jej kora zawiera salicynę, 
 | Czynność | Grzyby |
 |---|---|
 | Odżywianie | **saprotrofy** (rozkładają szczątki — destruenci), **pasożyty** (rdze, sporysz, grzybice), **symbionty** — mikoryza z korzeniami drzew, porosty |
-| Oddychanie | tlenowe; drożdże w warunkach beztlenowych przeprowadzają **fermentację alkoholową** |
+| Oddychanie | tlenowe; drożdże w warunkach beztlenowych przeprowadzają **fermentację alkoholową** (produkty: etanol i CO₂; fermentacja nie wymaga tlenu) |
 | Środowisko | gleba, ściółka, drewno, żywność, organizmy; **porosty** na korze, skałach, glebie |
 
 ::: karta extra | Porosty
@@ -358,8 +358,60 @@ Zbieraj tylko grzyby, które znasz na pewno; w razie wątpliwości — do sanepi
 |---|---|---|---|
 | **nabłonkowa** | komórki ściśle przylegają, mało substancji międzykomórkowej | ochrona, wydzielanie, wchłanianie | naskórek, wyściółka jelita, gruczoły |
 | **mięśniowa** | komórki wydłużone, kurczliwe | ruch | gładka (narządy wewnętrzne — niezależna od woli), poprzecznie prążkowana szkieletowa (zależna od woli), sercowa |
-| **łączna** | dużo substancji międzykomórkowej | podpora, łączenie, transport, magazyn | kostna, chrzęstna, tłuszczowa, **krew** |
+| **łączna** | komórki zwykle luźno rozmieszczone w dużej ilości substancji międzykomórkowej | podpora, łączenie, transport, magazynowanie, obrona | łączna właściwa, tłuszczowa, chrzęstna, kostna, **krew** i limfa |
 | **nerwowa** | **neurony** z wypustkami | odbieranie i przewodzenie bodźców | mózg, rdzeń, nerwy |
+
+### 6.1 Tkanki zwierzęce — od zera {#tkanki-zwierzece-szczegolowo}
+
+::: karta understand | Intuicja → termin → przykład
+**Tkanka** to grupa komórek o podobnej budowie i wspólnym pochodzeniu, które wykonują to samo zadanie. Kształt komórek, wypustki, włókna i ilość **substancji międzykomórkowej** (wypełnienia między komórkami) mówią, do czego tkanka służy. W organizmie człowieka są cztery podstawowe rodzaje tkanek: nabłonkowa, łączna, mięśniowa i nerwowa.
+**Typowy błąd:** narząd nie jest tkanką. Serce to narząd zbudowany z kilku tkanek (mięśniowej sercowej, łącznej, nerwowej, nabłonkowej).
+:::
+
+**Nabłonkowa.** Komórki ściśle przylegają do siebie i pokrywają powierzchnie ciała lub wyścielają narządy. Naskórek chroni, nabłonek jelita cienkiego wchłania substancje odżywcze, nabłonek dróg oddechowych ma rzęski i komórki śluzowe — śluz z zanieczyszczeniami jest przesuwany ku górze.
+
+**Łączna.** Wspólna cecha: dużo substancji międzykomórkowej. Jej rodzaje różnią się składem:
+
+| Rodzaj | Substancja międzykomórkowa | Funkcja | Przykład |
+|---|---|---|---|
+| łączna właściwa | włókna (kolagen) w galarecie | łączenie, wypełnianie, podpora | ścięgna, więzadła, tkanka pod skórą |
+| tłuszczowa | niewiele; komórki z kroplą tłuszczu | zapas energii, izolacja cieplna, amortyzacja | tłuszcz podskórny, wokół nerek |
+| chrzęstna | elastyczna, sprężysta | amortyzacja, podpora | małżowina uszna, nos, powierzchnie stawów |
+| kostna | twarda (sole wapnia i fosforu) | podpora, ochrona, magazyn wapnia | kości szkieletu |
+| krew i limfa | płynna (osocze) | transport, obrona | erytrocyty, leukocyty, płytki krwi |
+
+::: mnemonik
+Łączna łączy, kostna podpiera, tłuszczowa zapas odkłada, krew krąży.
+:::
+
+**Mięśniowa.** Komórki mają białka kurczliwe, więc potrafią się skracać.
+
+| Cecha | Szkieletowa | Gładka | Sercowa |
+|---|---|---|---|
+| prążkowanie | poprzeczne | brak | poprzeczne |
+| kształt komórek | długie włókna wielojądrowe | wrzecionowate | rozgałęzione, połączone |
+| działanie | zależne od woli | niezależne od woli | niezależne od woli |
+| gdzie | mięśnie przyczepione do kości | ściany jelit, naczyń, żołądka | ściana serca |
+
+**Typowy błąd:** „prążkowana” nie znaczy „zależna od woli” — tkanka sercowa jest prążkowana, a pracuje bez udziału woli.
+
+**Nerwowa.** Neuron ma ciało komórki z jądrem, krótkie **dendryty** (odbierają sygnały) i długi **akson** (przewodzi impuls dalej). Długie wypustki pozwalają przekazywać informację na odległość. Tkanka nerwowa tworzy mózg, rdzeń kręgowy i nerwy.
+
+**Zadania w stylu LKO**
+
+**T1. (2 pkt)** Tkanka ma komórki ułożone ściśle, mało substancji międzykomórkowej i wyścieła jelito cienkie. Podaj jej nazwę i jedną funkcję wynikającą z budowy.
+
+**T2. (4 pkt)** Dopasuj rodzaj tkanki (A — kostna, B — tłuszczowa, C — nerwowa, D — mięśniowa gładka) do opisu: 1) magazynuje energię i chroni przed utratą ciepła; 2) odbiera i przewodzi impulsy; 3) buduje ściany jelita; 4) tworzy twarde rusztowanie ciała.
+
+**T3. (3 pkt)** Oceń (P/F): 1) krew jest tkanką łączną; 2) tkanka sercowa jest zależna od woli; 3) tkanka kostna ma twardą substancję międzykomórkową; 4) neuron jest komórką tkanki nabłonkowej; 5) tkanka tłuszczowa może izolować cieplnie.
+
+**T4. (2 pkt)** Wyjaśnij związek między budową neuronu a jego funkcją.
+
+**T5. (3 pkt)** Podaj trzy cechy pozwalające odróżnić mięśnie szkieletowe od gładkich.
+
+::: odp | Klucz T1–T5
+T1. Tkanka nabłonkowa; ochrona albo wchłanianie substancji odżywczych. T2. 1B, 2C, 3D, 4A. T3. 1P, 2F, 3P, 4F, 5P. T4. Wypustki umożliwiają odbieranie sygnałów (dendryty) i przewodzenie impulsu na odległość (akson). T5. Szkieletowe: prążkowane, długie wielojądrowe włókna, zależne od woli; gładkie: bez prążkowania, komórki wrzecionowate, niezależne od woli (dowolne trzy poprawne różnice).
+:::
 
 ## 7 | Bezkręgowce [[basic:E8]] {#bezkregowce}
 
@@ -394,6 +446,22 @@ Zbieraj tylko grzyby, które znasz na pewno; w razie wątpliwości — do sanepi
 **Profilaktyka:** nie jeść surowego ani niedogotowanego mięsa, kupować mięso z kontroli weterynaryjnej, myć ręce.
 :::
 
+#### Pasożyty — tabela i zadania {#pasozyty-szczegolowo}
+
+| Pasożyt | Żywiciel pośredni | Żywiciel ostateczny | Jak dochodzi do zakażenia |
+|---|---|---|---|
+| tasiemiec uzbrojony | świnia | człowiek | surowe lub niedogotowane mięso wieprzowe z wągrami |
+| tasiemiec nieuzbrojony | bydło | człowiek | surowe lub niedogotowane mięso wołowe z wągrami |
+| glista ludzka | brak | człowiek | niemyte warzywa i owoce, brudne ręce (jaja dojrzewają w glebie) |
+
+**P1. (3 pkt)** Podaj żywiciela pośredniego tasiemca uzbrojonego i nieuzbrojonego oraz drogę zakażenia człowieka glistą ludzką.
+
+**P2. (2 pkt)** Wyjaśnij, dlaczego tasiemiec nie ma układu pokarmowego.
+
+::: odp | Klucz P1–P2
+P1. Uzbrojony — świnia; nieuzbrojony — bydło; glistą ludzką człowiek zaraża się, połykając jaja z niemytymi warzywami i owocami lub z brudnych rąk. P2. Żyje w jelicie żywiciela i wchłania już strawiony pokarm całą powierzchnią ciała.
+:::
+
 ### 7.2 Nicienie {#nicienie}
 
 **Cechy wspólne:** ciało **wydłużone, obłe, niepodzielone na segmenty**, pokryte oskórkiem; rozdzielnopłciowe. Wiele żyje w glebie i wodzie, część to pasożyty.
@@ -424,6 +492,8 @@ Inne pasożytnicze nicienie: glista ludzka (niemyte warzywa i owoce), włosień 
 | Oddychanie | skrzela | tchawki | płucotchawki lub tchawki |
 | Środowisko | głównie woda (stonoga — ląd) | wszystkie środowiska | głównie ląd |
 | Przykłady | rak, krab, stonoga | pszczoła, motyl, chrząszcz | pająk krzyżak, kleszcz |
+
+**Wije** (stonoga, krocionóg) to osobna grupa stawonogów: ciało z wielu jednakowych segmentów, każdy z parą odnóży (krocionóg — z dwiema), jedna para czułków, oddychanie tchawkami; żyją w wilgotnej glebie i ściółce.
 
 ::: karta understand | Przeobrażenie owadów
 **Zupełne:** jajo → larwa → **poczwarka** → owad dorosły (motyl, chrząszcz, mucha, pszczoła). **Niezupełne:** jajo → larwa podobna do dorosłego → owad dorosły, **bez poczwarki** (konik polny, ważka, pluskwiak).
@@ -461,6 +531,18 @@ Inne pasożytnicze nicienie: glista ludzka (niemyte warzywa i owoce), włosień 
 - ciało miękkie, noga, zwykle muszla → **mięczak**.
 :::
 
+#### Bezkręgowce — zadania {#bezkregowce-zadania}
+
+**B1. (4 pkt)** Dopasuj grupę (pajęczaki, pierścienice, małże, owady) do opisu: 1) cztery pary odnóży i brak czułków; 2) ciało podzielone na segmenty, oddychanie przez wilgotną skórę; 3) dwie skorupki, odżywianie przez filtrowanie wody; 4) trzy pary odnóży i jedna para czułków.
+
+**B2. (2 pkt)** Wyjaśnij, dlaczego dżdżownice są pożyteczne w glebie.
+
+**B3. (2 pkt)** Podaj kolejność etapów przeobrażenia zupełnego motyla.
+
+::: odp | Klucz B1–B3
+B1. 1 — pajęczaki, 2 — pierścienice, 3 — małże, 4 — owady. B2. Drążą korytarze, spulchniają i napowietrzają glebę, mieszają ją ze szczątkami organicznymi. B3. Jajo → larwa (gąsienica) → poczwarka → owad dorosły.
+:::
+
 ## 8 | Kręgowce [[basic:E8]] {#kregowce}
 
 **Kręgowce** mają szkielet wewnętrzny z **kręgosłupem**. Ryby, płazy i gady są **zmiennocieplne** (temperatura ciała zależy od otoczenia), ptaki i ssaki — **stałocieplne**.
@@ -468,11 +550,29 @@ Inne pasożytnicze nicienie: glista ludzka (niemyte warzywa i owoce), włosień 
 ### 8.1 Ryby {#ryby}
 Środowisko wodne. **Przystosowania:** opływowy kształt, **łuski** pokryte śluzem, **płetwy** (parzyste — sterowanie, nieparzyste — napęd i stabilizacja), **skrzela** (pobieranie tlenu rozpuszczonego w wodzie), **pęcherz pławny** (unoszenie się na różnej głębokości), **linia boczna** (wyczuwanie ruchów wody). **Rozmnażanie:** zwykle **zapłodnienie zewnętrzne** w wodzie, jaja — **ikra**, rozwój prosty (narybek). **Znaczenie:** pokarm człowieka i zwierząt, ogniwo łańcuchów pokarmowych.
 
+#### Ryby — płetwy i rozpoznawanie {#ryby-szczegolowo}
+
+| Płetwa | Parzysta / nieparzysta | Rola |
+|---|---|---|
+| piersiowa | parzysta (PP) | sterowanie, hamowanie |
+| brzuszna | parzysta (PP) | stabilizacja, sterowanie |
+| grzbietowa | nieparzysta (P) | stabilizacja ciała |
+| odbytowa | nieparzysta (P) | stabilizacja ciała |
+| ogonowa | nieparzysta (P) | napęd |
+
+**R1. (4 pkt)** Wypisz płetwy: piersiową, grzbietową, brzuszną, ogonową, odbytową i przyporządkuj je do parzystych lub nieparzystych.
+
+**R2. (2 pkt)** Wyjaśnij, dlaczego opływowy kształt ciała i śluz na łuskach ułatwiają pływanie.
+
+::: odp | Klucz R1–R2
+R1. Parzyste: piersiowa i brzuszna; nieparzyste: grzbietowa, ogonowa i odbytowa. R2. Opływowy kształt zmniejsza opór wody, a śluz zmniejsza tarcie skóry o wodę.
+:::
+
 ### 8.2 Płazy {#plazy}
 **Bezogonowe** (żaba, ropucha, rzekotka) i **ogoniaste** (traszka, salamandra). Żyją w wodzie i na lądzie. **Skóra** cienka, wilgotna, z gruczołami śluzowymi — **oddychanie skórą** i **płucami** (kijanki — skrzelami). Kończyny — u żaby tylne skoczne z błoną pływną. **Rozmnażanie:** u bezogonowych **zapłodnienie zewnętrzne** w wodzie, jaja w osłonkach (**skrzek**); **rozwój złożony z przeobrażeniem**: kijanka (skrzela, ogon, życie w wodzie) → młoda żaba. Zimują w odrętwieniu. **W Polsce wszystkie płazy są chronione.** **Znaczenie:** zjadają owady (także szkodniki), są pokarmem innych zwierząt, świadczą o czystości środowiska.
 
 ### 8.3 Gady {#gady}
-**Przystosowania do lądu:** sucha skóra pokryta **rogowymi łuskami** lub tarczkami (chroni przed utratą wody; linienie), oddychanie **płucami**, **zapłodnienie wewnętrzne**, jaja z dużą ilością żółtka w **skórzastej lub wapiennej osłonce** składane na lądzie, **rozwój prosty**. **W Polsce:** jaszczurka zwinka, padalec (beznoga jaszczurka), **żmija zygzakowata** (jedyny jadowity wąż w Polsce), zaskroniec (żółte plamy na głowie), żółw błotny. Wszystkie gady w Polsce są chronione. **Znaczenie:** zjadają owady i gryzonie.
+**Przystosowania do lądu:** sucha skóra pokryta **rogowymi łuskami** lub tarczkami (chroni przed utratą wody; linienie), oddychanie **płucami**, **zapłodnienie wewnętrzne**, jaja z dużą ilością żółtka w **skórzastej lub wapiennej osłonce** składane na lądzie, **rozwój prosty**. **W Polsce:** jaszczurka zwinka, padalec (beznoga jaszczurka), **żmija zygzakowata** (jedyny jadowity wąż w Polsce), zaskroniec (żółte plamy na głowie), żółw błotny. W Polsce wszystkie rodzime gatunki gadów podlegają ochronie gatunkowej (zakres wynika z aktualnych przepisów — do weryfikacji w rozporządzeniu). **Znaczenie:** zjadają owady i gryzonie.
 
 ### 8.4 Ptaki {#ptaki}
 **Przystosowania do lotu:** **pióra** (lot, ochrona przed utratą ciepła), kończyny przednie przekształcone w **skrzydła**, lekkie **kości pneumatyczne** (wypełnione powietrzem), **mostek z grzebieniem** (przyczep silnych mięśni lotnych), **worki powietrzne** wspomagające wydajne oddychanie płucami, dziób bez zębów. **Stałocieplne.** **Rozmnażanie:** zapłodnienie wewnętrzne, **jaja z wapienną skorupką** wysiadywane w gniazdach, opieka nad potomstwem. **Zagniazdowniki** — pisklęta nagie i ślepe, długo w gnieździe (wróbel, sikora); **gniazdowniki** — pisklęta opierzone, szybko samodzielne (kura, kaczka). Kształt dzioba i nóg zależy od pokarmu i środowiska. **Znaczenie:** zjadają owady i gryzonie, rozsiewają nasiona, drób.
@@ -482,7 +582,7 @@ Inne pasożytnicze nicienie: glista ludzka (niemyte warzywa i owoce), włosień 
 **Pułapka:** wymiana gazowa zachodzi w płucach, nie w workach powietrznych.
 
 ::: ciekawostka
-Gęsi gęgawe przelatują nad Himalajami na dużych wysokościach. Dane o najwyższych lotach do weryfikacji.
+Ptaki nie mają zębów: pokarm rozdrabnia **żołądek mięśniowy**, w którym pomagają połknięte drobne kamyki (gastrolity).
 :::
 
 ### 8.5 Ssaki łożyskowe {#ssaki}
@@ -613,7 +713,55 @@ BHP: brak szczególnych zagrożeń; po doświadczeniu umyć ręce.
 17. Uczeń sprawdzał, czy temperatura wpływa na kiełkowanie nasion rzeżuchy. W szalce A (20°C) wykiełkowało 18 z 20 nasion, w szalce B (5°C) — 3 z 20. a) Sformułuj problem badawczy. b) Która próba jest kontrolna? c) Podaj dwa warunki, które musiały być jednakowe. d) Oblicz procent wykiełkowanych nasion w obu próbach. e) Sformułuj wniosek.
 
 ::: odp | Pokaż odpowiedzi
-a) Czy temperatura wpływa na kiełkowanie nasion rzeżuchy? b) A — 20°C (warunki optymalne, pokojowe). c) Np. ta sama liczba nasion tego samego gatunku, takie samo podłoże i ilość wody, dostęp światła, czas trwania. d) A: 18/20 = 90%; B: 3/20 = 15%. e) Niska temperatura hamuje kiełkowanie nasion rzeżuchy — w 20°C kiełkuje ich znacznie więcej niż w 5°C.
+a) Czy temperatura wpływa na kiełkowanie nasion rzeżuchy? b) A — 20°C (warunki odniesienia, standardowe; temperaturę zmieniono tylko w B). Zawsze sprawdź, jak zadanie określa próbę odniesienia. c) Np. ta sama liczba nasion tego samego gatunku, takie samo podłoże i ilość wody, dostęp światła, czas trwania. d) A: 18/20 = 90%; B: 3/20 = 15%. e) Niska temperatura hamuje kiełkowanie nasion rzeżuchy — w 20°C kiełkuje ich znacznie więcej niż w 5°C.
+:::
+
+### D+. Wykresy, diagramy i mikroskopowanie {#analiza-danych}
+
+::: karta core | Jak analizować dane
+1. Przeczytaj tytuł i jednostki. 2. Sprawdź, co jest na osi poziomej i pionowej (w tabeli: co w wierszach i kolumnach). 3. Odczytuj wartości, nie zgaduj między podziałkami. 4. Porównaj grupy. 5. Napisz wniosek tylko o badanym czynniku.
+:::
+
+**D1. (3 pkt)** Sprawdzano wpływ temperatury na kiełkowanie po 20 nasion:
+
+| Temperatura | 5°C | 15°C | 25°C | 35°C |
+|---|---|---|---|---|
+| wykiełkowało (z 20) | 3 | 12 | 18 | 7 |
+
+a) W jakiej temperaturze wykiełkowało najwięcej nasion? b) Oblicz odsetek wykiełkowanych nasion w 15°C. c) Sformułuj wniosek.
+
+**D2. (3 pkt)** Liczba bakterii na dłoni przed i po umyciu:
+
+| Osoba | przed | po |
+|---|---|---|
+| A | 80 | 40 |
+| B | 60 | 30 |
+| C | 100 | 25 |
+
+a) U której osoby liczba bakterii zmniejszyła się najbardziej? b) O ile procent zmniejszyła się u osoby C? c) Podaj badany czynnik.
+
+**D3. (3 pkt)** Liczba gatunków roślin na powierzchniach: A — 12, B — 8, C — 15, D — 5. a) Która powierzchnia ma największą różnorodność gatunkową? b) O ile gatunków więcej ma C niż D? c) Czy z samej liczby gatunków można określić liczbę wszystkich osobników? Uzasadnij.
+
+**D4. (4 pkt)** Planujesz doświadczenie o wpływie nawozu na wzrost rzeżuchy. Zapisz: problem badawczy, hipotezę, próbę badawczą, próbę kontrolną, zmienną niezależną i dwa warunki stałe.
+
+**D5. (4 pkt)** Dwie jednakowe rośliny tego samego gatunku: jedna przy oknie, druga w ciemnej szafce; obie podlewane tak samo. Wskaż: a) próbę badawczą, b) próbę kontrolną, c) zmienną niezależną, d) jeden mierzalny wynik.
+
+::: odp | Klucz D1–D5
+D1. a) 25°C. b) 12/20 · 100% = 60%. c) W badanym zakresie temperatura wpływa na kiełkowanie; najwięcej nasion kiełkuje w 25°C, mniej w 5°C i 35°C.
+D2. a) U C — o 75 bakterii. b) (100−25)/100 · 100% = 75%. c) Mycie rąk.
+D3. a) C. b) O 10 gatunków. c) Nie — liczba gatunków to bogactwo gatunkowe, nie liczebność osobników.
+D4. Problem: Czy nawóz wpływa na wzrost rzeżuchy? Hipoteza: nawóz zwiększa wzrost rzeżuchy. Badawcza: nasiona podlewane roztworem nawozu. Kontrolna: nasiona podlewane taką samą ilością wody bez nawozu. Zmienna niezależna: obecność (stężenie) nawozu. Warunki stałe (dowolne dwa): gatunek i liczba nasion, podłoże, ilość wody, temperatura, czas, dostęp światła.
+D5. a) Roślina przy oknie (z badanym czynnikiem — światłem). b) Roślina w ciemności (bez badanego czynnika). c) Dostęp do światła. d) Np. liczba pęcherzyków tlenu u rośliny wodnej, przyrost masy, obecność skrobi w liściach. (Konwencja: badawcza — z badanym czynnikiem, kontrolna — bez niego lub w warunkach odniesienia; zawsze sprawdź, jak definiuje je treść zadania.)
+:::
+
+**Preparat ze skórki cebuli — kolejność:** 1) przygotuj zestaw (szkiełko podstawowe i nakrywkowe, zakraplacz, woda, igła preparacyjna); 2) nanieś kroplę wody na szkiełko podstawowe; 3) umieść w niej fragment skórki cebuli; 4) przyłóż szkiełko nakrywkowe, opuszczając je pod kątem (bez pęcherzyków powietrza); 5) umieść preparat na stoliku mikroskopu; 6) obserwuj, zaczynając od najmniejszego powiększenia.
+
+**M1. (2 pkt)** Podaj nazwy szkiełek: a) na którym leży materiał, b) które przykrywa preparat.
+
+**M2. (1 pkt)** Ułóż w kolejności: A — skórka cebuli w kropli wody; B — przygotowanie zestawu; C — szkiełko nakrywkowe; D — kropla wody; E — obserwacja.
+
+::: odp | Klucz M1–M2
+M1. a) Szkiełko podstawowe. b) Szkiełko nakrywkowe. M2. B, D, A, C, E.
 :::
 
 ## 12 | Test końcowy {#test}
