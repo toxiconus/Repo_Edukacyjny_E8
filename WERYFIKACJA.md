@@ -450,3 +450,16 @@ Bez zmian w treści lekcji. Rozbieżności do decyzji Sonneta.
 - TLENKI (wiersz w mapie „N01/N02”) — ZPE: kwasowe (CO₂, SO₃, P₄O₁₀), zasadowe (Na₂O, MgO, CaO), amfoteryczne (Al₂O₃, ZnO) — zgodne. UWAGA: w repo NIE MA lekcji o tlenkach (ani md, ani HTML) — wiersz mapy opisuje temat bez pliku. Trzeba ustalić, czy temat ma powstać, czy wiersz usunąć.
 - BIO.04.L044 (powtórka ekologii) — „destruent” zgodnie z ZPE; reguła 10% — ZPE jej nie podaje (jakościowo: duża część energii rozprasza się jako ciepło); lekcja zawiera 10% jako wiedzę podręcznikową — zostaje.
 - BIO.02.L002, L003, L021, L050, BIO.06.L090 — powtórki i diagnoza, bez wierszy w mapie. Zestawiają treści z lekcji już sprawdzonych; osobnego porównania z ZPE nie wykonano (brak wyszukań). Do decyzji: dodać wyszukania albo uznać za niewymagające weryfikacji.
+
+## H-V1 — weryfikacja 12 nowych rysunków (2026-10-20)
+
+Sprawdzono nazwy części z kodu `bio-rysunki.js` (każdy blok osobno) i opisy; wybrane liczby z ZPE.
+
+- kariotyp — 22 pary autosomów + para płci, XX/XY, centromer — zgodne z ZPE. Trisomia 21 nie jest wymieniona na stronie ZPE (podręcznikowo poprawne, zostaje).
+- replikacja-dna — części (helikaza, nić wiodąca i opóźniona, fragmenty Okazaki, starter RNA, nić matrycowa 3′→5′) zgodne z ZPE i z lekcją L013.
+- szkielet-czlowieka, mozg-budowa, uklad-oddechowy — nazwy części zgodne z podstawą (kl. 8). ZPE nie podaje ich szczegółowo na sprawdzonych stronach — zostają.
+- organelle-energetyczne — budowa mitochondrium i chloroplastu (błony, grzebienie, macierz, tylakoidy, stroma) — podręcznikowo poprawne; sprawdzona strona ZPE tego nie opisuje.
+- zab-budowa — BŁĄD OPISU, POPRAWIONO: opis wymieniał „szyjkę” i „korzeń”, których rysunek nie ma (brak części). Opis skrócono do części, które są narysowane. DO DOROBIENIA (Sonnet/grafik): części „szyjka zęba” i „korzeń zęba” w `d:`/`draw`.
+- piramida-ekologiczna, obieg-wegla — reguła 10%: ZPE na stronie „Łańcuch pokarmowy i sieć” jej nie podaje (jakościowo: duża część energii jako ciepło) — zostaje jako wiedza podręcznikowa; poziomy troficzne zgodne z ZPE (producenci, konsumenci I–III rzędu, destruenci).
+- drzewo-filogenetyczne, rodowod — układ kręgowców i trzy typy dziedziczenia rodowodowego zgodne z podstawą; ZPE na sprawdzonych stronach nie ma drzewa.
+- odpowiedz-immunologiczna — wykres pierwotnej i wtórnej odpowiedzi (pamięć immunologiczna) — poprawny merytorycznie, bez części do nazwania.
