@@ -419,3 +419,12 @@ Bez zmian w treści lekcji. Źródła ZPE z `chemia/plany/MAPA_ZPE.md`.
 - CHE.03.R03 (stężenia) — Cm = n/V (mol/dm³), n = m/M, Cp = ms/mr·100%, przeliczenie Cp → Cm z gęstością — zgodne z ZPE. ZPE nie zawiera wzoru c₁V₁ = c₂V₂ (rozcieńczanie); lekcja go podaje jako standard szkolny — zostaje.
 - CHE.05.O01 (węglowodory) — wzory ogólne CₙH₂ₙ₊₂, CₙH₂ₙ, CₙH₂ₙ₋₂ oraz stan skupienia według długości łańcucha zgodne z ZPE. ZPE jest niespójny co do wpływu rozgałęzień na temperaturę wrzenia (raz podnosi, raz obniża) — lekcja o tym nie pisze, więc nie ma sprzeczności; wiedza podręcznikowa: rozgałęzienie obniża temperaturę wrzenia. Do rozważenia przy dopisywaniu. ZPE nie opisuje spalania; lekcja zawiera spalanie — zostaje.
 - CHE.05.O21 (polimery) — ZPE nie opisuje polikondensacji mechanizmowo, nie podaje monomerów PE/PVC/PET ani HCl z PVC. Lekcja zawiera te treści (standard szkolny) — zostają. Uwaga: w nagłówku lekcji zapisano „W1 nieprzeprowadzony — wartości liczb” — do uzupełnienia przy kolejnej weryfikacji liczb.
+
+## H-Z3 — partia 8: układy człowieka U01–U11 — spójność wewnętrzna (2026-10-20)
+
+Lekcje U01, U03, U04, U06, U08, U10, U11. Do zrobienia przez Sonneta — rozbieżności między lekcjami i ZPE.
+
+- ROZBIEŻNOŚĆ (pęcherzyki płucne): B2c „ok. 300–500 mln”, U06 „ok. 300 mln”, ZPE „ok. 600 mln i 90 m² powierzchni”. Trzy lekcje, trzy wartości — ujednolicić (proponowane: podać ZPE z przypisem, albo „setki milionów”).
+- ROZBIEŻNOŚĆ (prędkość przewodzenia): B2d „ok. 40 m/s wobec ok. 8 m/s”, U08 „nawet ok. 100 m/s”. ZPE: 5–130 m/s dla nerwów obwodowych. Ujednolicić między B2d i U08 (lekcja B2d już oznacza wartości jako do potwierdzenia).
+- U03 (przełyk ok. 25 cm, dwunastnica 25–30 cm), U04 (tętno 60–80/min, 120/80 mmHg), U10 (Wadlow 272 cm), U11 (ciąża ok. 40 tygodni liczonych od OM, ok. 38 od zapłodnienia) — zgodne z podręcznikami; ZPE na tych stronach tych wartości nie podaje, więc zostają jako orientacyjne.
+- U01 (wiek i udział kości/mięśni) — tabela orientacyjna, bez źródła w ZPE; zostaje z dopiskiem orientacyjnie.
