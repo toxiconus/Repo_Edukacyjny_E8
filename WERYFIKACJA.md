@@ -436,3 +436,17 @@ Bez zmian w treści lekcji.
 - CHE.05.O13 (biochemia) — wartości energetyczne: lekcja „1 g tłuszczu = 38 kJ” wobec ZPE 39,4 kJ (9,4 kcal); białka i węglowodany 17,2 kJ (4,2 kcal) — lekcja podaje 4 kcal, zgodnie z ZPE po zaokrągleniu. Różnica 38 vs 39,4 kJ to zaokrąglenie podręcznikowe — do ujednolicenia przy kolejnej edycji (proponowane 39 kJ / 9 kcal).
 - CHE.05.O08 (estry) — estryfikacja równowagowa (strzałka ⇄), produkt kwasu etanowego z etanolem to etanian etylu (octan etylu) — zgodne. ZPE nie opisuje hydrolizy i zmydlania — lekcja zawiera je jako treść poza ZPE; zostaje.
 - BIO.02.B2g (homeostaza) — insulina obniża, glukagon podwyższa glikemię; ADH zwiększa wchłanianie wody w nerkach; prawidłowa temperatura ZPE 36,6 °C mieści się w zakresie lekcji (36,5–37,5 °C). ZPE nie nazywa sprzężenia zwrotnego ujemnego wprost — pojęcie zostaje (standard).
+
+## H-Z3 — partia 10 (domknięcie): B2a, B2e, B2f, O09, O10, O14, tlenki, L044 (2026-10-20)
+
+Bez zmian w treści lekcji. Rozbieżności do decyzji Sonneta.
+
+- BIO.02.B2a (skóra) — ROZBIEŻNOŚĆ: lekcja „3 warstwy skóry (naskórek, skóra właściwa, tkanka podskórna)”; ZPE „2 warstwy” (naskórek, skóra właściwa), tkankę podskórną opisuje jako osobną, nie warstwę skóry. Podręcznikowo tkanka podskórna bywa liczona jako trzecia warstwa — zostawić z dopiskiem albo ujednolicić z ZPE. Liczby z lekcji (2 m², 4 kg, pH 4,5–5,5) nie są w ZPE — zostają jako orientacyjne.
+- BIO.02.B2f (rozwój) — ZPE wewnętrznie niespójne: implantacja „7. dzień” (podpis), „8.–12. dzień” (tekst); lekcja „ok. 6.–10. dnia”. Zakres lekcji mieści się w szerszym rozrzucie; do potwierdzenia w podręczniku. Długość ciąży 40 tygodni (ZPE: 280 dni = 40 tygodni) — zgodne.
+- BIO.02.B2e (układ dokrewny) — ZPE nie wymienia kortyzolu i aldosteronu (nadnercza: tylko adrenalina), nie opisuje β-komórek; podwzgórze w ZPE nie jest gruczołem. Lekcja zgodna z podręcznikiem — zostaje. Insulina i glukagon z trzustki — zgodne.
+- CHE.05.O09 (fenole) — kwasowość fenolu i fenolany z Na i NaOH/KOH — zgodne. ZPE nie podaje pKa; lekcja „pKa ≈ 10” — wartość podręcznikowa, zostaje.
+- CHE.05.O10 (aldehydy i ketony) — próby Tollensa i Trommera, utlenianie aldehydów, redukcja, Cannizzaro — zgodne z ZPE.
+- CHE.05.O14 (aminy) — ZPE opisuje grupę aminową, ale nie zasadowość amin — lekcja (zasadowość) zostaje jako standard.
+- TLENKI (wiersz w mapie „N01/N02”) — ZPE: kwasowe (CO₂, SO₃, P₄O₁₀), zasadowe (Na₂O, MgO, CaO), amfoteryczne (Al₂O₃, ZnO) — zgodne. UWAGA: w repo NIE MA lekcji o tlenkach (ani md, ani HTML) — wiersz mapy opisuje temat bez pliku. Trzeba ustalić, czy temat ma powstać, czy wiersz usunąć.
+- BIO.04.L044 (powtórka ekologii) — „destruent” zgodnie z ZPE; reguła 10% — ZPE jej nie podaje (jakościowo: duża część energii rozprasza się jako ciepło); lekcja zawiera 10% jako wiedzę podręcznikową — zostaje.
+- BIO.02.L002, L003, L021, L050, BIO.06.L090 — powtórki i diagnoza, bez wierszy w mapie. Zestawiają treści z lekcji już sprawdzonych; osobnego porównania z ZPE nie wykonano (brak wyszukań). Do decyzji: dodać wyszukania albo uznać za niewymagające weryfikacji.
