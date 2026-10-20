@@ -54,7 +54,8 @@
     "ui_klocki.js": "wspólne drobiazgi UI klocków HTML (przyciski, suwak, animacja w widoku)",
     "profil_energii.js": "profil energii reakcji (egzo/endo, katalizator)",
     "gra_klasyfikacja.js": "gra: kwas, zasada, sól czy tlenek",
-    "jony_w_wodzie.js": "dysocjacja vs jonizacja, przeniesienie protonu, tester przewodnictwa"
+    "jony_w_wodzie.js": "dysocjacja vs jonizacja, przeniesienie protonu, tester przewodnictwa",
+    "fizyka_elektrostatyka.js": "elektrostatyka: elektryzowanie, przewodnik-izolator, kule-ladunek, elektroskop, prawo-coulomba, linie-pola"
   },
   "lekcje": {
     "P01": [
@@ -392,7 +393,8 @@
       "klocki.js",
       "pomocnicze.js",
       "ui_klocki.js",
-      "jony_w_wodzie.js"
+      "jony_w_wodzie.js",
+      "fizyka_elektrostatyka.js"
     ]
   },
   "css": [
