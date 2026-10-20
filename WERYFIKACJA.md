@@ -378,3 +378,11 @@ Lekcje: BIO.01.L001 (komórka), L005 (transport przez błony), L006 (fotosynteza
 - L001 — definicja komórki i różnice zwierzę/roślina/grzyb zgodne (ściana, chloroplasty, chityna grzybów). ZPE nie podaje wielkości komórek w µm, a lekcja podaje 1–10 µm (prokariota) i 10–100 µm (eukariota) — wartości podręcznikowe; do potwierdzenia w podręczniku, bez zmian.
 - L013 — replikacja semikonserwatywna zgodna; ZPE na stronie wprowadzającej nie podaje enzymów ani nici wiodącej/opóźnionej (szczegóły na stronie „Przeczytaj”, D4hjgLsVr — nieskontrolowane). Lekcja zawiera helikazę, polimerazę, startery RNA i fragmenty Okazaki — zgodne z ogólną wiedzą; do dopięcia po sprawdzeniu strony „Przeczytaj”.
 - Ogólnie: w tej partii nie ma rozbieżności wymagających zmiany treści. Część wartości w lekcjach pochodzi z podręczników, nie z ZPE — oznaczone wyżej.
+
+## H-Z3 — partia 3: zgodność z ZPE (2026-10-20)
+
+Lekcje: BIO.01.L004 (poziomy organizacji — brak liczb do sprawdzenia), BIO.01.L008 (mikroskop), BIO.01.L009 (podział komórki). Bez zmian w treści lekcji.
+
+- L008 — rozdzielczość mikroskopu świetlnego 0,2 µm zgodna z ZPE; ZPE podaje maksymalne powiększenie ok. 1000× (lekcja: przykład ×400 w modelu — zgodne jako przykład). Wirusy niewidoczne w mikroskopie świetlnym — zgodne. Dodatkowo ZPE opisuje mikroskop sił atomowych (AFM, <1 nm) — w lekcji nieobecny, poza zakresem E8.
+- L009 — cztery fazy mitozy (profaza, metafaza, anafaza, telofaza) i cytokineza zgodne z ZPE; ZPE mówi o „pięciu fazach” przy wyliczeniu czterech (cytokineza) — lekcja opisuje to poprawnie. Replikacja w fazie S i efekt mitozy (2n → 2n + 2n) zgodne.
+- WĄTPLIWE (dla Sonneta): L009, model „cykl podziałów” — zdanie „przy włączonej naprawie DNA ok. 80% uszkodzeń znika” nie pochodzi z ZPE ani z podręcznika; to parametr symulacji. Do decyzji: podać źródło, zamienić na ogólne sformułowanie („większość uszkodzeń jest naprawiana”) albo zostawić z dopiskiem „w modelu”.
