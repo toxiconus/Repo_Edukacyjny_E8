@@ -322,6 +322,9 @@ Brak widoczności struktury pod mikroskopem **nie oznacza**, że jej nie ma — 
 
 ## 3 | Budowa komórki — organelle [[basic:E8]] {#organelle}
 
+@viz komorki-porownanie | Komórka zwierzęca, roślinna, grzyba i bakterii | przełączaj typ komórki
+@opis Cztery rysunki komórek z numerami organelli i tabelą cech: zwierzęca (jądro, mitochondria, ER, Golgi, lizosom), roślinna (ściana, wakuola, chloroplasty), drożdże (ściana chitynowa, pączek), bakteria (nukleoid, plazmid, wić, bez jądra i mitochondriów). Wniosek: eukarionty mają jądro, prokarionty nie; ściana i chloroplasty odróżniają komórkę roślinną od zwierzęcej.
+
 | Struktura | Funkcja | Występuje u |
 |---|---|---|
 | **jądro** | przechowuje DNA, kieruje pracą komórki | eukarionty (rośliny, zwierzęta, grzyby, protisty) |

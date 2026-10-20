@@ -31,3 +31,7 @@ Wspólny tryb **„podpisz”** (dla wszystkich schematów anatomicznych): numer
 3. Animacje cykli (#3, 4, 10, 11, 12, 14) na wspólnym silniku kroków (`lancuch` już istnieje — rozszerzyć o oś czasu i auto-powtarzanie).
 4. Do czasu powstania rysunków: w md pisać `@opis` (słowny opis schematu) i dołączać pełny opis w paczkach dla zewnętrznego AI.
 Wszystkie nowe komponenty: wpis w `biologia/bio/BIO_KATALOG.md` i test `node biologia/bio/narzedzia/sprawdz_bio.js`.
+
+## Stan realizacji (2026-10-20)
+Zrobione (`szablon/bio-rysunki.js`, wstawione w REV01/REV02): wykres-dane, komorki-porownanie, ryba-budowa, mikroskop-budowa, jajo-ptaka, tkanki-zwierzece, stawonogi-budowa + dodatkowo jajo-porownanie (jajo u różnych grup, ścieżka ewolucyjna).
+Do zrobienia: preparat-krok, kwiat-cykl, cykl-zaby, cykl-tasiemca, cykl-mchu-paproci, szyszki-igly, faga-cykl (animacje); etap II: serce-obieg, krew, naczynia, neuron-odruch, przepona, nefron, trawienie, skóra, staw-czaszka.

@@ -409,6 +409,9 @@ Zbieraj tylko grzyby, które znasz na pewno; w razie wątpliwości — do sanepi
 
 ### 6.1 Tkanki zwierzęce — od zera {#tkanki-zwierzece-szczegolowo}
 
+@viz tkanki-zwierzece | Cztery tkanki zwierzęce | rozpoznaj po budowie
+@opis Cztery kwadraty: nabłonkowa (ściśle przylegające komórki na błonie podstawnej), łączna (mało komórek, dużo włókien), mięśniowa (długie włókna z prążkami i jądrami przy brzegu), nerwowa (neuron z dendrytami i długim aksonem). Wniosek: budowa wynika z funkcji — gęste komórki chronią, włókna łączą, prążki kurczą, wypustki przewodzą impuls.
+
 ::: karta understand | Intuicja → termin → przykład
 **Tkanka** to grupa komórek o podobnej budowie i wspólnym pochodzeniu, które wykonują to samo zadanie. Kształt komórek, wypustki, włókna i ilość **substancji międzykomórkowej** (wypełnienia między komórkami) mówią, do czego tkanka służy. W organizmie człowieka są cztery podstawowe rodzaje tkanek: nabłonkowa, łączna, mięśniowa i nerwowa.
 **Typowy błąd:** narząd nie jest tkanką. Serce to narząd zbudowany z kilku tkanek (mięśniowej sercowej, łącznej, nerwowej, nabłonkowej).
@@ -527,6 +530,9 @@ Inne pasożytnicze nicienie: glista ludzka (niemyte warzywa i owoce), włosień 
 
 ### 7.4 Stawonogi {#stawonogi}
 
+@viz stawonogi-budowa | Owad, pajęczak, skorupiak | porównaj tagmy i odnóża
+@opis Trzy rysunki do przełączania: owad (głowa, tułów, odwłok, 3 pary odnóży, czułki, skrzydła), pająk (głowotułów, odwłok, 4 pary odnóży, brak czułków) i rak (głowotułów, odwłok, kleszcze, 2 pary czułków, wachlarz ogonowy), z tabelą porównawczą. Wniosek: liczba tagm, odnóży i czułków oraz sposób oddychania pozwalają rozpoznać gromadę stawonogów.
+
 **Cechy wspólne:** **odnóża członowane**, **szkielet zewnętrzny** z chityny (pancerz) — dlatego zwierzę rośnie skokowo, przez **linienie**; ciało podzielone na odcinki. To najliczniejsza w gatunki grupa zwierząt.
 
 | | Skorupiaki | Owady | Pajęczaki |
@@ -594,6 +600,9 @@ B1. 1 — pajęczaki, 2 — pierścienice, 3 — małże, 4 — owady. B2. Drą�
 **Kręgowce** mają szkielet wewnętrzny z **kręgosłupem**. Ryby, płazy i gady są **zmiennocieplne** (temperatura ciała zależy od otoczenia), ptaki i ssaki — **stałocieplne**.
 
 ### 8.1 Ryby {#ryby}
+
+@viz ryba-budowa | Ryba kostnoszkieletowa — części ciała | ćwicz w trzech trybach
+@opis Rysunek ryby z numerami: łuski, płetwy (ogonowa, grzbietowa, odbytowa — nieparzyste; piersiowa, brzuszna — parzyste), pokrywa skrzelowa, linia boczna, pęcherz pławny, oko. Kliknięcie części daje nazwę i funkcję; tryby „znajdź” i „podpisz” sprawdzają wiedzę. Wniosek: płetwy parzyste sterują, nieparzyste stabilizują, ogonowa napędza; pęcherz pławny reguluje wyporność, a oddychanie odbywa się skrzelami.
 Środowisko wodne. **Przystosowania:** opływowy kształt, **łuski** pokryte śluzem, **płetwy** (parzyste — sterowanie, nieparzyste — napęd i stabilizacja), **skrzela** (pobieranie tlenu rozpuszczonego w wodzie), **pęcherz pławny** (unoszenie się na różnej głębokości), **linia boczna** (wyczuwanie ruchów wody). **Rozmnażanie:** zwykle **zapłodnienie zewnętrzne** w wodzie, jaja — **ikra**, rozwój prosty (narybek). **Znaczenie:** pokarm człowieka i zwierząt, ogniwo łańcuchów pokarmowych.
 
 #### Ryby — płetwy i rozpoznawanie {#ryby-szczegolowo}
@@ -621,6 +630,9 @@ R1. Parzyste: piersiowa i brzuszna; nieparzyste: grzbietowa, ogonowa i odbytowa.
 **Przystosowania do lądu:** sucha skóra pokryta **rogowymi łuskami** lub tarczkami (chroni przed utratą wody; linienie), oddychanie **płucami**, **zapłodnienie wewnętrzne**, jaja z dużą ilością żółtka w **skórzastej lub wapiennej osłonce** składane na lądzie, **rozwój prosty**. **W Polsce:** jaszczurka zwinka, padalec (beznoga jaszczurka), **żmija zygzakowata** (jedyny jadowity wąż w Polsce), zaskroniec (żółte plamy na głowie), żółw błotny. W Polsce wszystkie rodzime gatunki gadów podlegają ochronie gatunkowej (zakres wynika z aktualnych przepisów — do weryfikacji w rozporządzeniu). **Znaczenie:** zjadają owady i gryzonie.
 
 ### 8.4 Ptaki {#ptaki}
+
+@viz jajo-ptaka | Jajo ptaka w przekroju | poznaj, znajdź, podpisz
+@opis Przekrój jaja ptaka z numerami: skorupa, błony podskorupowe, komora powietrzna na tępym końcu, białko, żółtko w błonie żółtkowej, tarczka zarodkowa na żółtku, chalazy. Wniosek: skorupa chroni i przepuszcza gazy, żółtko jest zapasem pokarmu, tarczka to miejsce rozwoju zarodka, a chalazy utrzymują żółtko pośrodku.
 **Przystosowania do lotu:** **pióra** (lot, ochrona przed utratą ciepła), kończyny przednie przekształcone w **skrzydła**, lekkie **kości pneumatyczne** (wypełnione powietrzem), **mostek z grzebieniem** (przyczep silnych mięśni lotnych), **worki powietrzne** wspomagające wydajne oddychanie płucami, dziób bez zębów. **Stałocieplne.** **Rozmnażanie:** zapłodnienie wewnętrzne, **jaja z wapienną skorupką** wysiadywane w gniazdach, opieka nad potomstwem. **Zagniazdowniki** — pisklęta nagie i ślepe, długo w gnieździe (wróbel, sikora); **gniazdowniki** — pisklęta opierzone, szybko samodzielne (kura, kaczka). Kształt dzioba i nóg zależy od pokarmu i środowiska. **Znaczenie:** zjadają owady i gryzonie, rozsiewają nasiona, drób.
 
 **Oddychanie ptaków.** Płuca ptaków są przepływowe. Powietrze przepływa przez nie w jednym kierunku, a wymiana gazowa zachodzi w płucach. Worki powietrzne (przednie i tylne) magazynują powietrze i nie wymieniają gazów. W jednym pełnym cyklu oddechowym powietrze przechodzi przez płuca dwukrotnie, co zwiększa wydajność oddychania. (Dokładną kolejność przepływu do potwierdzenia z podręcznikiem.)
@@ -654,6 +666,9 @@ J1. Zapas pokarmu — żółtko; powietrze — komora powietrzna. J2. Mają twar
 **Cechy wspólne:** **sierść** (włosy), gruczoły skórne — potowe, łojowe i **mlekowe** (karmienie młodych **mlekiem**), **zróżnicowane zęby** (siekacze, kły, przedtrzonowe, trzonowe — dostosowane do pokarmu), płuca i **przepona**, dobrze rozwinięty mózg, **stałocieplność**. **Rozmnażanie:** zapłodnienie wewnętrzne, zarodek rozwija się w **macicy**, odżywiany przez **łożysko**; **żyworodne**; opieka nad potomstwem. **Różnorodność:** ląd (sarna), woda (delfin, foka), powietrze (nietoperz), gleba (kret). **Znaczenie:** pokarm, praca, odzież, towarzysze człowieka; rozsiewanie nasion; niektóre wyrządzają szkody (gryzonie w uprawach).
 
 ### Rozmnażanie kręgowców — jajorodność i żyworodność
+
+@viz jajo-porownanie | Jajo u różnych zwierząt — co z czego wynika | kliknij grupę
+@opis Tabela porównawcza jaja ryb i płazów, owadów, gadów, ptaków i ssaków łożyskowych (środowisko, żółtko, osłonki, błony płodowe, źródło pokarmu, opieka) oraz ścieżka ewolucyjna: jajo w wodzie → jajo owodniowe → ptaki i ssaki. Wniosek: skorupa i błony płodowe uniezależniły rozmnażanie od wody; u ssaków łożyskowych żółtko zanikło, bo pokarm daje łożysko; jajo owadów to analogia, nie pokrewieństwo.
 
 | Tryb | Gdzie rozwija się zarodek | Skąd zarodek bierze pokarm | Przykłady |
 |---|---|---|---|
@@ -782,6 +797,12 @@ a) Czy temperatura wpływa na kiełkowanie nasion rzeżuchy? b) A — 20°C (war
 :::
 
 ### D+. Wykresy, diagramy i mikroskopowanie {#analiza-danych}
+
+@viz wykres-dane | Jak czytać wykres z doświadczenia | kliknij elementy, użyj suwaka
+@opis Wykres z tytułem, osiami, skalą i punktami (lub słupkami), do wyboru trzy zestawy danych: amylaza i temperatura, osmoza w ziemniaku, kiełkowanie nasion. Kliknięcie elementu wyjaśnia jego rolę; suwak odczytuje kolejne pomiary i opisuje trend. Wniosek: oś pozioma to zmienna niezależna (zmieniana), pionowa — zależna (mierzona), obie z jednostkami.
+
+@viz mikroskop-budowa | Mikroskop świetlny — części | poznaj, znajdź, podpisz
+@opis Mikroskop z numerami: okular, tubus, rewolwer, obiektyw, stolik, preparat, kondensor z diafragmą, źródło światła, śruby makro- i mikrometryczna, ramię, podstawa. Wniosek: powiększenie = okular × obiektyw, ostrość zaczynamy od małego powiększenia i śruby makro, a kończymy mikro.
 
 ::: karta core | Jak analizować dane
 1. Przeczytaj tytuł i jednostki. 2. Sprawdź, co jest na osi poziomej i pionowej (w tabeli: co w wierszach i kolumnach). 3. Odczytuj wartości, nie zgaduj między podziałkami. 4. Porównaj grupy. 5. Napisz wniosek tylko o badanym czynniku.

@@ -34,7 +34,8 @@ def _bio_open(path, *a, **k):
     # parser dokleja szablon/rozszerzenia.js + szablon/lekcja.js — u nas rozszerzenia = biblioteka grafik
     if os.path.dirname(os.path.abspath(path)) == SZ:
         b = os.path.basename(path)
-        if b == 'rozszerzenia.js': path = os.path.join(SZ, 'bio-viz.js')
+        if b == 'rozszerzenia.js':
+            return io.StringIO(''.join(_open(os.path.join(SZ, f), encoding='utf-8').read() + '\n' for f in ('bio-viz.js', 'bio-rysunki.js')))
         elif b == 'lekcja.css':  # baza wspólna z chemią + warstwa bio
             return io.StringIO(''.join(_open(os.path.join(SZ, f), encoding='utf-8').read() + '\n' for f in ('baza-wspolna.css', 'bio-warstwa.css')))
     return _open(path, *a, **k)
