@@ -10,7 +10,7 @@ import opis_wizualizacji as OPIS
 R = L.REPO
 ZRODLA = {
     'pol': ('polski/html', ['polski/lekcje_md/*.md', 'polski/podstawy/*.md', 'polski/do_uzupelnienia/*.md', 'polski/blok_D/lekcje/*.md']),
-    'bio': ('biologia/html', ['biologia/md/BIO.*.md', 'biologia/bio/md/*.md']),
+    'bio': ('biologia/html', ['biologia/bio/md/*.md']),
     'che': ('chemia/html', ['chemia/lekcje_md/*/*.md']),
     'ang': ('angielski/html', ['angielski/lekcje_md/*.md']),
     'oli': ('olimpiada/html', ['olimpiada/do_uzupelnienia/OLI.*.md']),

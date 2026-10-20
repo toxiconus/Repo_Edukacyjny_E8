@@ -133,8 +133,9 @@ if __name__ == '__main__':
     args = sys.argv[1:] or sorted(os.path.join(mdd, f) for f in os.listdir(mdd) if f.endswith('.md'))
     OPIS.egzekwuj(args)  # brak @opis w nowej lekcji = błąd
     for p in args:
-        meta, doc = build(p)
         fn = os.path.splitext(os.path.basename(p))[0]
+        try: meta, doc = build(p)
+        except Exception as e: print('POMIN (dialekt lekcji obsługuje build kanoniczny narzedzia/zbuduj_wszystkie.py):', fn, type(e).__name__); continue
         _open(os.path.join(dist, fn + '.html'), 'w', encoding='utf-8').write(doc)
         print('ok', fn, len(doc))
     allm = [(f[:-3], m.front(_open(os.path.join(mdd, f), encoding='utf-8').read())[0]) for f in sorted(os.listdir(mdd)) if f.endswith('.md')]
