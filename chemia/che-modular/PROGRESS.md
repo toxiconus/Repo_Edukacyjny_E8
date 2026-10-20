@@ -258,3 +258,4 @@
 - 2026-10-20: H-D — ZIP przekazania zbudowany (eksport/out/PRZEKAZANIE_2026-10-20.zip, 226 md, 144 html, arkusze, olimpiada/).
 - 2026-10-20: H-E — dodany narzedzia/popraw_odpowiedz_ai.py (LaTeX→Unicode, sklejone nagłówki, czyszczenie odstępów); test na REV02: bez zmian w treści poza tymi poprawkami.
 - 2026-10-20: H-F — KB przed/po dla zmienionych lekcji BIO wpisane do WERYFIKACJA.md.
+- 2026-10-20: H-G — rysunki BIO wstawione do 7 miejsc (B2a, B2d, B2f×3, L010, REV01); raport w ZADANIA_HAIKU_SONNET.md. Test: 55 OK, opisy 0 braków.

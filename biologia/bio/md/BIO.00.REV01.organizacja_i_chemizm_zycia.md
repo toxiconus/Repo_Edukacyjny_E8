@@ -507,6 +507,10 @@ BHP: ostrożnie z gorącą wodą i szkłem laboratoryjnym.
 
 ### 9.1 Metoda naukowa — krok po kroku {#metoda-naukowa}
 
+@viz wykres-dane | Jak czytać wykres z doświadczenia | kliknij elementy, użyj suwaka
+@opis Wykres z tytułem, osiami, skalą i punktami (lub słupkami), do wyboru trzy zestawy danych: amylaza i temperatura, osmoza w ziemniaku, kiełkowanie nasion. Kliknięcie elementu wyjaśnia jego rolę; suwak odczytuje kolejne pomiary i opisuje trend. Wniosek: oś pozioma to zmienna niezależna (zmieniana), pionowa — zależna (mierzona), obie z jednostkami.
+
+
 **Obserwacja → problem badawczy → hipoteza → doświadczenie → wyniki → wniosek.** Hipotezę można sprawdzić albo obalić; wniosek musi wynikać z wyników.
 
 | Pojęcie | Znaczenie | Przykład: światło a fotosynteza |

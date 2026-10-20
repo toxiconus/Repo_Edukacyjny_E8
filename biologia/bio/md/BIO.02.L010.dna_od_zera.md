@@ -273,6 +273,10 @@ Przechowuje informację biologiczną, ale samo nie jest „żywym organizmem”.
 :::
 
 ## 8 | Gdzie jest DNA? [[basic:E8]] {#gdzie}
+
+@viz komorki-porownanie | Komórka zwierzęca, roślinna, grzyba i bakterii | przełączaj typ komórki
+@opis Cztery rysunki komórek z numerami organelli i tabelą cech: zwierzęca (jądro, mitochondria, ER, Golgi, lizosom), roślinna (ściana, wakuola, chloroplasty), drożdże (ściana chitynowa, pączek), bakteria (nukleoid, plazmid, wić, bez jądra i mitochondriów). Wniosek: eukarionty mają jądro, prokarionty nie; ściana i chloroplasty odróżniają komórkę roślinną od zwierzęcej.
+
 | Organizm | Gdzie jest DNA? |
 |---|---|
 | Zwierzęta, grzyby (eukarionty) | głównie w **jądrze komórkowym**; niewielka ilość w **mitochondriach** (mtDNA) |
