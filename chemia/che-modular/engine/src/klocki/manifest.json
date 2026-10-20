@@ -334,14 +334,27 @@
     "N01": [
       "klocki.js",
       "pomocnicze.js",
+      "ui_klocki.js",
       "zbieranie_gazu.js",
-      "karta_bhp.js"
+      "karta_bhp.js",
+      "naczynia.js",
+      "probowki_odczyn.js",
+      "probowki_wybor.js",
+      "palnik_gazowy.js"
     ],
     "N02": [
       "klocki.js",
       "karta_bhp.js",
       "ui_klocki.js",
-      "chemia_wstep.js"
+      "chemia_wstep.js",
+      "naczynia.js",
+      "probowki_odczyn.js",
+      "probowki_wybor.js",
+      "palnik_gazowy.js",
+      "zbieranie_gazu.js",
+      "lancuch_przemian.js",
+      "palenie.js",
+      "plomien.js"
     ],
     "N04": [
       "klocki.js",

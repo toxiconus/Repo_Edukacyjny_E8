@@ -386,8 +386,14 @@ Tlenek zasadowy i tlenek kwasowy mogą reagować bez wody, dając sól:
 
 ### 10.5 Mapa przemian — łańcuchy {.merge-h}
 Pierwiastek → tlenek → wodorotlenek lub kwas → sól. To most do lekcji N02, N03, N04.
-@model chain-scn | Łańcuch przemian: pierwiastek → tlenek → wodorotlenek / kwas → sól | Na → Na₂O → NaOH → NaCl · S → SO₃ → H₂SO₄ → Na₂SO₄ · C → CO₂ → H₂CO₃
-@opis Łańcuchy przemian: kolejne ogniwa to pierwiastek, tlenek, wodorotlenek lub kwas i sól, z równaniem każdego kroku. Wniosek: tlenek jest pomostem między pierwiastkiem a solą.
+@klocek lancuch-przemian {wezly="Na,Na2O,NaOH,NaCl" etyk="A,B,C"} | Łańcuch przemian: sód → tlenek → wodorotlenek → sól
+@opis Cztery ogniwa połączone strzałkami z literami reakcji: Na, Na₂O, NaOH, NaCl; pod strzałkami litery A, B, C do wpisania równań. Wniosek: tlenek jest pomostem między pierwiastkiem a solą.
+
+@klocek lancuch-przemian {wezly="S,SO3,H2SO4,Na2SO4" etyk="A,B,C"} | Łańcuch przemian: siarka → tlenek → kwas → sól
+@opis Cztery ogniwa połączone strzałkami z literami reakcji: S, SO₃, H₂SO₄, Na₂SO₄; pod strzałkami litery A, B, C. Wniosek: tlenek kwasowy z wodą daje kwas, a kwas z zasadą — sól.
+
+@klocek lancuch-przemian {wezly="C,CO2,H2CO3,Na2CO3" etyk="A,B,C"} | Łańcuch przemian: węgiel → tlenek → kwas → sól
+@opis Cztery ogniwa połączone strzałkami z literami reakcji: C, CO₂, H₂CO₃, Na₂CO₃; pod strzałkami litery A, B, C. Wniosek: CO₂ z wodą daje nietrwały kwas węglowy, a jego sole to węglany.
 
 ## 11 | Zastosowania tlenków [[basic:E8]] {#zastosowania}
 ::: karta basic
@@ -555,7 +561,7 @@ Kształt **cząsteczki** zależy od liczby chmur elektronowych wokół atomu cen
 ::: karta understand | Reguła VSEPR
 Pary elektronowe (wiążące i wolne) odpychają się. Wolne pary zajmują więcej miejsca i zmniejszają kąty między wiązaniami.
 :::
-@model molecule3d-merged | Model 3D cząsteczek — CO₂, SO₂, SO₃, H₂O: geometria i kąty | CHE.MOLECULE · VSEPR
+@klocek czasteczki-3d {mol="CO₂,SO₂,SO₃,H₂O"} | Model 3D cząsteczek — CO₂, SO₂, SO₃, H₂O: geometria i kąty
 @opis Trójwymiarowe modele cząsteczek CO₂, SO₂, SO₃ i H₂O z zaznaczonymi kątami: CO₂ liniowa (180°), SO₂ i H₂O kątowe, SO₃ płaska trójkątna. Wniosek: liczba wiązań i wolnych par decyduje o kształcie cząsteczki.
 
 ::: karta extra | Dlaczego H₂O i SO₂ są kątowe, a CO₂ liniowa?
@@ -720,10 +726,10 @@ Obserwacja to to, co rejestrują zmysły. Wniosek to interpretacja (nazwa produk
 @zlewka n01-doswiadczenia-v01 cuoH2so4 | Zobacz w zlewce (pracownia)
 @opis Czarny tlenek miedzi(II) w rozcieńczonym kwasie siarkowym(VI), lekko ogrzewany: proszek znika, roztwór barwi się na niebiesko. Wniosek: CuO + H₂SO₄ → CuSO₄ + H₂O.
 
-@model n01-doswiadczenia-v01 | Pracownia: doświadczenia z tlenkami — zlewka, równania, obserwacje, BHP | CHE.REACTION · CHE.IONIC
+@klocek palenie {metal="Mg"} | Pracownia: doświadczenia z tlenkami — zlewka, równania, obserwacje, BHP
 @opis Pracownia doświadczeń z tlenkami: zlewki i probówki w animacji, przy każdym obserwacje, równanie reakcji i zasady BHP — m.in. spalanie magnezu, gaszenie CaO, woda wapienna, CuO z kwasem. Wniosek: obserwację i wniosek zapisuj osobno.
 
-@model gfx-scene-carbonate | Wykrywanie CO₂: węglan + kwas → gaz → woda wapienna mętnieje | Scena doświadczenia
+@klocek probowki-wybor {zestaw="kwas-weglan"} | Wykrywanie CO₂: węglan + kwas → gaz → woda wapienna mętnieje
 @opis Na węglan wapnia działa kwas: wydzielają się pęcherzyki gazu, który przepuszczony przez klarowną wodę wapienną powoduje jej zmętnienie. Wniosek: gazem jest CO₂, a test to zmętnienie wody wapiennej.
 
 ### Obserwacja ≠ wniosek {.merge-h}

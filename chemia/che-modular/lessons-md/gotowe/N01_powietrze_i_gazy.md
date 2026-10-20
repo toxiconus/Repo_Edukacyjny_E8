@@ -155,7 +155,7 @@ Hel, neon, argon, krypton, ksenon, radon — grupa 18. Mają **trwałą konfigur
 
 **Zastosowania:** gaśnice, napoje gazowane, suchy lód (chłodzenie, efekty sceniczne), substrat fotosyntezy (szklarnie). **Zagrożenie:** w zamkniętych, nisko położonych pomieszczeniach (piwnice, studnie, fermentownie) może wypierać powietrze. Jest głównym gazem cieplarnianym związanym z działalnością człowieka.
 
-@model gfx-scene-carbonate | Węglan wapnia + kwas → CO₂ i woda wapienna | zobacz otrzymywanie i wykrywanie tlenku węgla(IV)
+@klocek probowki-wybor {zestaw="kwas-weglan"} | Węglan wapnia + kwas → CO₂ i woda wapienna
 @opis Scena doświadczenia: na węglan wapnia (kreda, marmur) działa kwas — wydzielają się pęcherzyki gazu, który przepuszczony przez klarowną wodę wapienną powoduje jej zmętnienie (biały osad CaCO₃). Wniosek: powstaje tlenek węgla(IV), a zmętnienie wody wapiennej to jego próba identyfikacyjna.
 @zlewka f01-doswiadczenia-v01 f01WodaWapienna | Zobacz w zlewce: woda wapienna + CO₂
 @opis Tlenek węgla(IV) wprowadzany do klarownej wody wapiennej: woda mętnieje, pojawia się biała zawiesina węglanu wapnia. Wniosek: zmętnienie wody wapiennej to test wykrywający CO₂.
@@ -188,7 +188,7 @@ Równanie:: Zn + 2HCl → ZnCl₂ + H₂↑
 BHP: okulary, rękawice; kwas solny jest żrący; z wodorem pracujemy z daleka od otwartego ognia, tylko z małymi ilościami gazu.
 :::
 
-@model gfx-scene-acidMetal | Metal + kwas solny → wodór (próba „pyk!”) | zobacz otrzymywanie i wykrywanie wodoru
+@klocek zbieranie-gazu {gaz="H2" gazy="H2"} | Metal + kwas solny → wodór (próba „pyk!”)
 @opis Scena doświadczenia: do kwasu solnego wrzucono metal (np. cynk) — metal roztwarza się, wydzielają się pęcherzyki gazu zbierane w probówce; zbliżona do płomienia probówka z gazem daje charakterystyczny dźwięk „pyk”. Wniosek: w reakcji metalu z kwasem powstaje wodór, a odgłos przy płomieniu to jego próba identyfikacyjna.
 
 **Zastosowania:** paliwo przyszłości (spalanie daje tylko wodę), ogniwa paliwowe, paliwo rakietowe, utwardzanie tłuszczów roślinnych (margaryna), produkcja amoniaku. Dawniej wypełniano nim sterowce — wodór jest palny, dlatego dziś używa się helu.
@@ -230,7 +230,7 @@ Fosfor biały samoczynnie zapala się w powietrzu już ok. 30 °C (wartość do 
 :::
 :::
 
-@model n01-spalanie-v01 | Spalanie pierwiastków i paliw w tlenie | wybierz substancję — produkt, obserwacje, równanie
+@klocek palnik-gazowy {etap="2"} | Spalanie pierwiastków i paliw w tlenie
 @opis Pracownia spalania: po wybraniu substancji (np. węgla, siarki, magnezu, wodoru, metanu) widać przebieg spalania w tlenie — barwę płomienia i inne obserwacje, produkt oraz równanie reakcji. Wniosek: spalanie to reakcja z tlenem, której produktami są tlenki (paliwa organiczne dają CO₂ i H₂O).
 
 ## 9 | Korozja [[basic:E8]] {#korozja}
