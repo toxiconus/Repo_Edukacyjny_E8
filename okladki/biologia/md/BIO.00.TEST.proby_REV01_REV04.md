@@ -4,7 +4,7 @@ uid: BIO.00.TEST.proby_REV01_REV04
 tytul: Test próbny — Konkurs Biologiczny LKO
 opis: organizacja i chemizm życia · różnorodność życia · organizm człowieka · genetyka · ewolucja · ekologia
 kicker: BIOLOGIA · TEST PRÓBNY · 40 PUNKTÓW (WARIANT) · 60 MINUT
-lead: Arkusz próbny w formacie etapu szkolnego LKO: 15 zadań (49 pkt w pełnym arkuszu); wariant 40-punktowy to 12 wybranych zadań, 60 minut.
+lead: Arkusz próbny w formacie etapu szkolnego LKO: 16 zadań (53 pkt w pełnym arkuszu); wariant 40-punktowy to 12 wybranych zadań, 60 minut.
 plakietki: [[exam:KONKURS]][[understand:TRENING]]
 uwaga: Zadania obejmują REV01–REV04. Rozwiązuj bez materiałów pomocniczych. Po rozwiązaniu sprawdź klucz i policz punkty.
 stopka: **BIOLOGIA — TEST PRÓBNY v1.0** · REV01–REV04 · 2026
@@ -251,6 +251,24 @@ c) Bakterie lub grzyby rozkładające martwą materię.
 d) Na wyższych poziomach troficznych mniej energii jest dostępne, ponieważ część energii jest tracona jako ciepło; dlatego konsumentów wyższego rzędu może być mniej.
 :::
 
+## Zadanie 16. (4 punkty) — planowanie doświadczenia i analiza danych [D]
+
+Uczeń bada, jak temperatura wpływa na fermentację drożdży. Do probówek z wodą i cukrem dodał po tyle samo drożdży i mierzył czas, po którym pojawiły się pierwsze pęcherzyki gazu:
+
+**10°C — 25 min; 20°C — 15 min; 30°C — 8 min; 40°C — 14 min; 50°C — brak pęcherzyków**
+
+a) Sformułuj problem badawczy i hipotezę. **(1 pkt)**  
+b) Wskaż zmienną niezależną, zmienną zależną i wielkości, które należy utrzymać stałe. **(1 pkt)**  
+c) Wskaż próbę kontrolną. **(1 pkt)**  
+d) Sformułuj wniosek z tabeli. **(1 pkt)**
+
+::: odp | Klucz
+a) Problem: Czy temperatura wpływa na szybkość fermentacji drożdży? Hipoteza: wyższa temperatura (do pewnego momentu) przyspiesza fermentację, a bardzo wysoka ją hamuje.  
+b) Zmienna niezależna: temperatura. Zmienna zależna: czas do pojawienia się pęcherzyków. Stałe: ilość drożdży, ilość cukru, objętość wody.  
+c) Np. probówka z wodą i cukrem bez drożdży, w tej samej temperaturze — pokazuje, czy pęcherzyki pochodzą od drożdży.  
+d) Najszybsza fermentacja przy ok. 30°C; przy 40°C jest wolniejsza, a przy 50°C nie zachodzi — enzymy drożdży tracą aktywność, a w bardzo wysokiej temperaturze ulegają denaturacji.
+:::
+
 ## Klucz punktacji
 
 | Zadanie | Maksymalna liczba punktów |
@@ -270,20 +288,20 @@ d) Na wyższych poziomach troficznych mniej energii jest dostępne, ponieważ cz
 | 13 | 3 |
 | 14 | 3 |
 | 15 | 4 |
-| **Razem** | **49** |
+| 16 | 4 |
+| **Razem** | **53** |
 
 ::: karta warning | Uwaga do punktacji
-Pełny arkusz (15 zadań) ma 49 punktów, aby umożliwić trening z zapasem trudności. Dla formatu LKO 40 punktów można przyjąć przeliczenie: **wynik/49 × 40** albo rozwiązać wariant 40-punktowy (poniżej, 12 zadań).
+Pełny arkusz ma 53 punkty, aby umożliwić trening z zapasem trudności. Dla formatu LKO 40 punktów można przyjąć przeliczenie: **wynik/53 × 40**, albo rozwiązać wariant 40-punktowy (poniżej, 12 zadań).
 :::
 
 ## Propozycja wersji 40-punktowej
 
-Aby uzyskać dokładnie 40 punktów, rozwiąż zadania: **1, 2, 4, 5, 6, 7, 8, 10, 11, 12, 13, 15**.
+Aby uzyskać dokładnie 40 punktów, rozwiąż zadania: **1, 4, 5, 6, 7, 8, 10, 11, 12, 13, 15, 16**.
 
 | Zadanie | Punkty |
 |---|---|
 | 1 | 3 |
-| 2 | 4 |
 | 4 | 4 |
 | 5 | 3 |
 | 6 | 3 |
@@ -294,6 +312,7 @@ Aby uzyskać dokładnie 40 punktów, rozwiąż zadania: **1, 2, 4, 5, 6, 7, 8, 1
 | 12 | 4 |
 | 13 | 3 |
 | 15 | 4 |
+| 16 | 4 |
 | **Razem** | **40** |
 
 ::: karta core | Jak analizować wynik

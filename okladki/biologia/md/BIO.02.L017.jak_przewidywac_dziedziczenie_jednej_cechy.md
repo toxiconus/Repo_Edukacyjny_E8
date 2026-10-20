@@ -227,6 +227,7 @@ To konwencja, nie prawo natury. W innych podręcznikach mogą być inne litery (
 @opis Trzy rodowody do wyboru. Kwadrat to mężczyzna, koło kobieta, zaczernione symbole to osoby chore. W każdym rodzicami są osoby I-1 i I-2, a dziećmi II-1 do II-3. Klik w osobę pokazuje jej genotyp. Wniosek: zdrowi rodzice z chorym dzieckiem wskazują cechę recesywną, a choroba w każdym pokoleniu cechę dominującą.
 
 **Zadanie (rozpoznaj):** w rodowodzie, w którym chore są dzieci zdrowych rodziców, jaki typ dziedziczenia jest najbardziej prawdopodobny? **Odpowiedź:** autosomalne recesywne (rodzice są nosicielami Aa).
+
 **Zadanie (wnioskuj):** dlaczego choroba w każdym pokoleniu wskazuje na dominację? **Odpowiedź:** dominujący allel ujawnia się już przy jednej kopii, więc chory rodzic przekazuje cechę dzieciom.
 
 

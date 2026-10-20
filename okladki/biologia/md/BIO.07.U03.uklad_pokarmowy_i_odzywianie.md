@@ -167,6 +167,7 @@ Układ pokarmowy tworzą **przewód pokarmowy** (rura, przez którą przechodzi 
 @opis Przekrój zęba: korona pokryta białym szkliwem, pod nim żółta zębina, w środku czerwona miazga z naczyniami i nerwami, korzeń okryty cementem i osadzony w kości szczęki, dziąsło wokół szyjki. Wniosek: ząb składa się z kilku tkanek, a ból pojawia się, gdy próchnica dochodzi do miazgi.
 
 **Zadanie (podpisz):** który element zęba jest najtwardszy i dlaczego ból pojawia się dopiero w miazdze? **Odpowiedź:** szkliwo (1) jest najtwardsze; ból czuje miazga (3), bo zawiera nerwy, a szkliwo i zębina ich nie mają.
+
 **Zadanie (wskaż):** która tkanka mocuje ząb w kości? **Odpowiedź:** cement (6) pokrywa korzeń, a zębodół (7) to kość, w której osadzony jest ząb.
 
 

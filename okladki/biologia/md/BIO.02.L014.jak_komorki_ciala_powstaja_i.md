@@ -135,6 +135,9 @@ komórka (46) → faza S (46 chromosomów, 92 chromatydy) → mitoza → 2 × ko
 
 ### 6A. Dlaczego?
 
+@viz replikacja-dna | Replikacja DNA — widełki replikacyjne | kliknij, znajdź, podpisz
+@opis Schemat widełek: z lewej podwójna helisa, w miejscu rozplatania helikaza, od niej dwie nowe nici na matrycach. Nić wiodąca rośnie ciągle w kierunku widełek, nić opóźniona powstaje z krótkich fragmentów Okazaki, każdy zaczyna się od startera RNA. Wniosek: każda nowa cząsteczka ma jedną nić starą i jedną nową (replikacja semikonserwatywna); dzieje się to przed podziałem komórki.
+
 1. **Dlaczego mitoza zachowuje liczbę zestawów?**  
    Chromatydy siostrzane rozchodzą się do dwóch biegunów — każda komórka potomna dostaje **pełny** zestaw.
 

@@ -97,6 +97,7 @@ Układ oddechowy doprowadza tlen tylko do **płuc**. Do mitochondriów w palcu s
 @opis Od góry: jama nosowa, gardło i krtań, tchawica z chrzęstnymi półpierścieniami, dwa oskrzela, rozgałęziające się oskrzeliki i pęcherzyki płucne w dwóch płucach, na dole przepona. Wniosek: powietrze przechodzi kolejno przez drogi oddechowe do pęcherzyków, gdzie zachodzi wymiana gazowa.
 
 **Zadanie (ułóż drogę):** wymień kolejno struktury, przez które przechodzi powietrze od nosa do pęcherzyków. **Odpowiedź:** jama nosowa (1) → gardło i krtań (2) → tchawica (3) → oskrzela (4) → oskrzeliki (6) → pęcherzyki płucne (7).
+
 **Zadanie (wnioskuj):** dlaczego pęcherzyki płucne są tak liczne? **Odpowiedź:** zwiększają powierzchnię wymiany gazowej; w płucach jest ich ok. 300 mln.
 
 

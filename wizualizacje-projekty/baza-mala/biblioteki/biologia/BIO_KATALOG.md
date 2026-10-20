@@ -1,110 +1,69 @@
-# Katalog grafik BIO (`szablon/bio-viz.js` v0.1)
+# Katalog grafik BIO (`szablon/wizualizacje/<id>.js`)
 
-Użycie w md lekcji: `@viz <id> {opcja="wartość"} | Tytuł | podpis`. Nowa grafika: `BIO.define('id',{opis,mount(el,opt)})` w `bio-viz.js`, potem wpis tutaj.
-Zasady: statyczny widok + kliknięcie = wyjaśnienie (`BIO.fx.info`); ruch tylko na żądanie ucznia (suwak/przycisk). Kolory tylko ze zmiennych CSS (`--nt-A`, `--sugar`, `--nucleus`…). Tylko tryb dzienny.
+Każda grafika to osobny plik; lekcja dołącza do swojego HTML tylko grafiki, których używa (`@viz`) plus rdzeń `szablon/bio-core.js`.
+Wspólne narzędzia (S, H, svg, T, btn, chain, ICO…) są w rdzeniu jako `BIO.Lh["<grupa>.<nazwa>"]`; grafika dostaje je aliasami na górze pliku.
+Użycie w md lekcji: `@viz <id> {opcja="wartość"} | Tytuł | podpis` + linia `@opis` (obowiązkowa).
+Nowa grafika: plik `szablon/wizualizacje/<id>.js` z `BIO.define('<id>',{opis:'…',mount(el,opt,fig){…}})`, potem `python3 biologia/bio/narzedzia/katalog_wizualizacji.py`.
+Zasady: statyczny widok + kliknięcie = wyjaśnienie (`BIO.fx.info`); ruch tylko na żądanie ucznia lub autoodtwarzanie (`BIO.fx.auto`, „animacja: tak”). Kolory tylko ze zmiennych CSS (`--nt-A`, `--sugar`, `--nucleus`…). Tylko tryb dzienny.
 
-| id | Co pokazuje | Opcje | Lekcje |
-|---|---|---|---|
-| lancuch | łańcuch kroków A → B → C (+ czynniki z boku) | kroki="A\|opis > B", boki="x; y", wyroznij="n", pion="nie", ikony="nie" (ikony dobierane same: DNA/gen, RNA, białko, funkcja, cecha) | L010 |
-| od-organizmu-do-genu | organizm → komórka → jądro → chromosom → DNA → gen | start="gen" | L010 |
-| szuflady-cech | sortowanie: dziedziczna / nabyta / wieloczynnikowa | cechy="nazwa:d\|wyjaśnienie; …" | L010 |
-| gdzie-dna | jądro z jąderkiem, mitochondria (grzebienie, mtDNA), cpDNA, nukleoid, plazmidy, rybosomy, erytrocyt (góra + profil) i leukocyt | — | L010 |
-| poziomy-dna | chromosom → histony → odcinek DNA (gen, regulator, niekodujące) | — | L010 |
-| nukleotyd | fosforan + deoksyryboza + zasada, 1′/3′/5′ | zasada="A" | L010 |
-| pary-zasad | A–T, G–C oraz błędne A–G, C–T, A–C (pierścienie, szerokość, wiązania) | — | L010 |
-| drabina | dwie nici antyrównoległe, cukry, fosforany, pary, wiązania | seq="ATGCCA" | L010 |
-| helisa | suwak drabina ↔ helisa, 2 nm, 3,4 nm / 10 par | seq, skret="0–100" | L010 |
-| sekwencje | dwie sekwencje, różnice zaznaczone | a, b | L010 |
-| pojemnosc | 4ⁿ vs 3ⁿ, suwak długości | n | L010 |
-| trener-nici | dopisywanie nici DNA→DNA / DNA→RNA | seq, tryb="rna" | L010 |
-| kod-genetyczny | DNA (nić kodująca + matrycowa) → mRNA → aminokwasy; klik w zasadę = mutacja (cicha, zmiany sensu, nonsensowna, utrata START) | seq="ATG…" | (L011, L020) |
-| punnett | szachownica Punnetta: A/a (Mendel), grupy krwi AB0, hemofilia (X); fenotypy i genotypy w % | tryb="A\|K\|X" | (L017–L019) |
-| transport-blona | przekrój błony: dyfuzja prosta, ułatwiona, transport aktywny (ATP), osmoza + tabela porównawcza | start="dp\|du\|ta\|os" | (L005) |
-| siec-troficzna | sieć troficzna lasu: co je / kto go je, poziomy, łańcuchy; tryb „usuń gatunek” | — | (L041–L042) |
-| ryba-budowa | ryba kostnoszkieletowa: płetwy, skrzela, linia boczna, pęcherz pławny; tryby poznaj/znajdź/podpisz | — | REV02 §8.1 |
-| mikroskop-budowa | mikroskop świetlny: 12 części; 3 tryby | — | REV02 D+ |
-| jajo-ptaka | przekrój jaja ptaka: skorupa, błony, komora, białko, żółtko, tarczka, chalazy | — | REV02 §8.4 |
-| jajo-porownanie | jajo ryb/płazów, owadów, gadów, ptaków, ssaków: tabela + ścieżka ewolucyjna | — | REV02 §8.5 |
-| tkanki-zwierzece | 4 tkanki zwierzęce, rozpoznawanie po budowie; 3 tryby | — | REV02 §6.1 |
-| stawonogi-budowa | owad / pająk / rak: tagmy, odnóża, czułki + tabela; 3 tryby | — | REV02 §7.4 |
-| komorki-porownanie | komórka zwierzęca / roślinna / drożdży / bakterii + tabela cech; 3 tryby | — | REV01 §3 |
-| wykres-dane | czytanie wykresu: osie, skala, punkty, suwak odczytu, 3 zestawy danych | — | REV02 D+ |
-| serce-budowa | serce w przekroju: komory, przedsionki, zastawki, naczynia; 3 tryby | — | B10 §2.5 (docelowo B2h) |
-| krazenie | obieg krwi: pierścień z krążącą kroplą (niebieska/czerwona), filtr małe/duże, klik = wyjaśnienie | — | B10 §2.5 (docelowo B2h) |
-| neuron-budowa | neuron: dendryty, ciało, akson, osłonka, Ranvier, synapsa; 3 tryby | — | B2d §4 |
-| nefron-budowa | nefron: kłębuszek, torebka, kanaliki, pętla Henlego, naczynia; 3 tryby | — | B2c §6 |
-| wentylacja | wdech/wydech: przepona i żebra, animacja tam i z powrotem + suwak | — | B2c §2 |
-| fotosynteza-oddychanie | chloroplast ↔ mitochondrium: krążenie materii, przepływ energii, kropki w pętli, tryby fot/odd/oba + tabela | — | REV01 §7 |
-| podzial-komorki | mitoza i mejoza (2n=4) etapami, autostart + ◀ ▶; opcja `typ="mit\|mej"` | — | B2f §4 |
-| cykl | cykl życiowy jako pierścień etapów, autostart w widoku (do przodu i od początku), klik = wyjaśnienie + pauza; opcja `cykl="zaba\|tasiemiec\|mech\|paproc\|kwiat\|faga"` (dane w `CY` w bio-rysunki.js) | — | REV02 §2.1, 4.2, 4.3, 4.5, 7.1, 8.2 |
-
-Silnik rysunków z podpisami: `szablon/bio-rysunki.js` (`BIO.lab`, tryby poznaj / znajdź / podpisz; opcja `typ=` wybiera wariant). Plan dalszych: `plany/PLAN_RYSUNKOW_BIO.md`.
-
-Prymitywy (`BIO.g`): `ring` (puryna 6+5 / pirymidyna 6), `hbonds`, `sugar`, `phos`, `miniHelix`, `squiggle` (chromatyna), `chromosome`. Ikony: `BIO.ICO` (organizm, komorka, jadro, chromosom, dna, rna, bialko, funkcja, gen). Efekty: `BIO.fx.info`, `fx.toggle`, odsłanianie figur przy przewijaniu.
-
-Kontenery md tylko w BIO: `::: mity` (linie `mit || poprawka`), `::: drzewo` (mapa pojęć z wcięć).
-
-## Stan lekcji (2026-10-20, generowane z biologia/bio/md)
-
-| Lekcja | KB | @viz | audyty |
-|---|---:|---:|---:|
-| BIO.00.REV01.organizacja_i_chemizm_zycia | 66 | 9 | 1 |
-| BIO.00.REV02.roznorodnosc_zycia | 85 | 17 | 2 |
-| BIO.01.B1b.krzyzowki_mendel | 22 | 1 | 0 |
-| BIO.01.L001.komorka | 81 | 4 | 0 |
-| BIO.01.L001A.dodatek_ambitny_od_komorki_do | 45 | 1 | 1 |
-| BIO.01.L002.powtorka_czlowiek | 75 | 1 | 1 |
-| BIO.01.L003.diagnoza | 76 | 0 | 0 |
-| BIO.01.L004.organizacja_budowy_organizmu_od_komorki | 37 | 2 | 2 |
-| BIO.01.L005.blona_komorkowa_i_transport_substancji | 29 | 1 | 2 |
-| BIO.01.L006.fotosynteza_skad_roslina_bierze_materie | 30 | 1 | 2 |
-| BIO.01.L007.oddychanie_komorkowe_skad_komorka_bierze | 35 | 2 | 3 |
-| BIO.01.L008.mikroskop_jak_obserwowac_komorke_a | 28 | 1 | 2 |
-| BIO.01.L009.podzial_komorki_wzrost_regeneracja_i | 26 | 1 | 2 |
-| BIO.02.B10.powtorka_uklady_czlowieka | 19 | 3 | 0 |
-| BIO.02.B2a.skora_uklad_ruchu | 18 | 2 | 0 |
-| BIO.02.B2b.uklad_pokarmowy | 19 | 2 | 0 |
-| BIO.02.B2c.oddychanie_wydalanie | 17 | 5 | 0 |
-| BIO.02.B2d.uklad_nerwowy_zmysly | 20 | 4 | 0 |
-| BIO.02.B2e.uklad_dokrewny | 18 | 3 | 0 |
-| BIO.02.B2f.rozmnazanie_rozwoj | 19 | 6 | 0 |
-| BIO.02.B2g.homeostaza | 32 | 2 | 0 |
-| BIO.02.L010.dna_od_zera | 64 | 12 | 3 |
-| BIO.02.L011.jak_dna_przechowuje_informacje | 41 | 5 | 1 |
-| BIO.02.L012.jak_dna_jest_upakowane_w | 55 | 1 | 1 |
-| BIO.02.L013.jak_komorka_kopiuje_dna | 24 | 1 | 4 |
-| BIO.02.L014.jak_komorki_ciala_powstaja_i | 61 | 1 | 2 |
-| BIO.02.L015.mejoza | 59 | 2 | 2 |
-| BIO.02.L016.co_sie_dzieje_gdy_podzialy | 18 | 1 | 3 |
-| BIO.02.L016A.zmiennosc_dlaczego_potomstwo_nie_jest | 17 | 1 | 2 |
-| BIO.02.L017.jak_przewidywac_dziedziczenie_jednej_cechy | 42 | 1 | 2 |
-| BIO.02.L018.jak_dziedziczy_sie_plec_i | 20 | 1 | 4 |
-| BIO.02.L019.dlaczego_grupy_krwi_nie_pasuja | 82 | 1 | 1 |
-| BIO.02.L020.czym_sa_mutacje_i_jakie | 83 | 1 | 1 |
-| BIO.02.L021.powtorka_genetyki | 86 | 2 | 1 |
-| BIO.02.L022.biotechnologia_i_inzynieria_genetyczna | 89 | 1 | 2 |
-| BIO.03.L030.czym_jest_ewolucja_i_jakie | 20 | 1 | 0 |
-| BIO.03.L031.jak_dziala_dobor_naturalny_i | 19 | 1 | 0 |
-| BIO.03.L032.powtorka_ewolucji | 15 | 2 | 1 |
-| BIO.04.L040.czym_jest_ekosystem_i_jakie | 30 | 1 | 0 |
-| BIO.04.L041.jak_zapisac_lancuchy_i_sieci | 19 | 1 | 0 |
-| BIO.04.L042.jakie_relacje_panuja_miedzy_organizmami | 19 | 1 | 0 |
-| BIO.04.L043.jak_czlowiek_wplywa_na_srodowisko | 21 | 1 | 0 |
-| BIO.04.L044.powtorka_ekologii | 14 | 2 | 1 |
-| BIO.05.L050.powtorka_roczna | 13 | 2 | 2 |
-| BIO.06.L090.extra_olimpijska | 19 | 2 | 2 |
-| BIO.06.L091.atp_jak_komorka_magazynuje_energie | 20 | 1 | 0 |
-| BIO.07.H01.homeostaza | 80 | 2 | 1 |
-| BIO.07.U01.skora_i_uklad_ruchu | 59 | 2 | 1 |
-| BIO.07.U03.uklad_pokarmowy_i_odzywianie | 106 | 3 | 1 |
-| BIO.07.U04.krazenie_krew_odpornosc | 90 | 2 | 1 |
-| BIO.07.U06.oddychanie_i_wydalanie | 81 | 3 | 1 |
-| BIO.07.U08.uklad_nerwowy_i_zmysly | 110 | 4 | 2 |
-| BIO.07.U10.uklad_dokrewny | 107 | 3 | 2 |
-| BIO.07.U11.rozmnazanie_i_rozwoj | 107 | 5 | 1 |
-| BIO.99.X00.system | 7 | 0 | 0 |
-| BIO.99.X01.szablon_lekcji | 61 | 0 | 1 |
-| BIO.99.X02.architektura_v52 | 0 | 0 | 0 |
-| BIO.99.X99.warstwy_audyt_backlog | 25 | 0 | 2 |
-
-Razem: 58 lekcji, 2580 KB.
+| id | plik | Co pokazuje | Opcje | Animacja | Lekcje |
+|---|---|---|---|---|---|
+| cykl-miesiaczkowy | `szablon/wizualizacje/cykl-miesiaczkowy.js` | `szablon/wizualizacje/cykl-miesiaczkowy.js` | `szablon/wizualizacje/cykl-miesiaczkowy.js` | nie | B2f, U11 |
+| dobor-naturalny | `szablon/wizualizacje/dobor-naturalny.js` | `szablon/wizualizacje/dobor-naturalny.js` | `szablon/wizualizacje/dobor-naturalny.js` | nie | L031, L032 |
+| drabina | `szablon/wizualizacje/drabina.js` | `szablon/wizualizacje/drabina.js` | `szablon/wizualizacje/drabina.js` | nie | L010, L011 |
+| droga-pokarmu | `szablon/wizualizacje/droga-pokarmu.js` | `szablon/wizualizacje/droga-pokarmu.js` | `szablon/wizualizacje/droga-pokarmu.js` | tak | B2b, U03 |
+| droga-zarodka | `szablon/wizualizacje/droga-zarodka.js` | `szablon/wizualizacje/droga-zarodka.js` | `szablon/wizualizacje/droga-zarodka.js` | tak | B2f, U11 |
+| endosymbioza | `szablon/wizualizacje/endosymbioza.js` | `szablon/wizualizacje/endosymbioza.js` | `szablon/wizualizacje/endosymbioza.js` | tak | L001A |
+| energia-glukozy | `szablon/wizualizacje/energia-glukozy.js` | `szablon/wizualizacje/energia-glukozy.js` | `szablon/wizualizacje/energia-glukozy.js` | nie | REV01, L007 |
+| energia-materia | `szablon/wizualizacje/energia-materia.js` | `szablon/wizualizacje/energia-materia.js` | `szablon/wizualizacje/energia-materia.js` | nie | L040, L044 |
+| enzym-warunki | `szablon/wizualizacje/enzym-warunki.js` | `szablon/wizualizacje/enzym-warunki.js` | `szablon/wizualizacje/enzym-warunki.js` | tak | U03 |
+| etapy-zycia | `szablon/wizualizacje/etapy-zycia.js` | `szablon/wizualizacje/etapy-zycia.js` | `szablon/wizualizacje/etapy-zycia.js` | nie | U11 |
+| eutrofizacja | `szablon/wizualizacje/eutrofizacja.js` | `szablon/wizualizacje/eutrofizacja.js` | `szablon/wizualizacje/eutrofizacja.js` | nie | L043 |
+| fotosynteza-oddychanie | `szablon/wizualizacje/fotosynteza-oddychanie.js` | `szablon/wizualizacje/fotosynteza-oddychanie.js` | `szablon/wizualizacje/fotosynteza-oddychanie.js` | nie | REV01, L006, L007, L091 |
+| gdzie-dna | `szablon/wizualizacje/gdzie-dna.js` | `szablon/wizualizacje/gdzie-dna.js` | `szablon/wizualizacje/gdzie-dna.js` | nie | L010 |
+| glukoza-wykres | `szablon/wizualizacje/glukoza-wykres.js` | `szablon/wizualizacje/glukoza-wykres.js` | `szablon/wizualizacje/glukoza-wykres.js` | nie | B2e, B2g, H01, U10 |
+| gruczoly-mapa | `szablon/wizualizacje/gruczoly-mapa.js` | `szablon/wizualizacje/gruczoly-mapa.js` | `szablon/wizualizacje/gruczoly-mapa.js` | tak | B2e, U10 |
+| hardy-weinberg | `szablon/wizualizacje/hardy-weinberg.js` | `szablon/wizualizacje/hardy-weinberg.js` | `szablon/wizualizacje/hardy-weinberg.js` | nie | L090 |
+| helisa | `szablon/wizualizacje/helisa.js` | `szablon/wizualizacje/helisa.js` | `szablon/wizualizacje/helisa.js` | nie | L010, L011 |
+| homeostaza | `szablon/wizualizacje/homeostaza.js` | `szablon/wizualizacje/homeostaza.js` | `szablon/wizualizacje/homeostaza.js` | nie | L002 |
+| klonowanie-genu | `szablon/wizualizacje/klonowanie-genu.js` | `szablon/wizualizacje/klonowanie-genu.js` | `szablon/wizualizacje/klonowanie-genu.js` | tak | L022 |
+| klucz-kregowce | `szablon/wizualizacje/klucz-kregowce.js` | `szablon/wizualizacje/klucz-kregowce.js` | `szablon/wizualizacje/klucz-kregowce.js` | nie | REV02 |
+| kod-genetyczny | `szablon/wizualizacje/kod-genetyczny.js` | `szablon/wizualizacje/kod-genetyczny.js` | `szablon/wizualizacje/kod-genetyczny.js` | nie | L011, L020, L021, L090 |
+| komorka-nakladki | `szablon/wizualizacje/komorka-nakladki.js` | `szablon/wizualizacje/komorka-nakladki.js` | `szablon/wizualizacje/komorka-nakladki.js` | nie | REV01, L001 |
+| konczyny-homologiczne | `szablon/wizualizacje/konczyny-homologiczne.js` | `szablon/wizualizacje/konczyny-homologiczne.js` | `szablon/wizualizacje/konczyny-homologiczne.js` | nie | L030, L032 |
+| kontrola-podzialow | `szablon/wizualizacje/kontrola-podzialow.js` | `szablon/wizualizacje/kontrola-podzialow.js` | `szablon/wizualizacje/kontrola-podzialow.js` | nie | L009, L016 |
+| kosmek-jelitowy | `szablon/wizualizacje/kosmek-jelitowy.js` | `szablon/wizualizacje/kosmek-jelitowy.js` | `szablon/wizualizacje/kosmek-jelitowy.js` | tak | B2b, U03 |
+| krazenie-obiegi | `szablon/wizualizacje/krazenie-obiegi.js` | `szablon/wizualizacje/krazenie-obiegi.js` | `szablon/wizualizacje/krazenie-obiegi.js` | tak | B10, U04 |
+| lancuch | `szablon/wizualizacje/lancuch.js` | `szablon/wizualizacje/lancuch.js` | `szablon/wizualizacje/lancuch.js` | nie | REV01, L001, L004, L010, L015 |
+| lozysko-wymiana | `szablon/wizualizacje/lozysko-wymiana.js` | `szablon/wizualizacje/lozysko-wymiana.js` | `szablon/wizualizacje/lozysko-wymiana.js` | nie | B2f, U11 |
+| luk-odruchowy | `szablon/wizualizacje/luk-odruchowy.js` | `szablon/wizualizacje/luk-odruchowy.js` | `szablon/wizualizacje/luk-odruchowy.js` | tak | B2d, U08 |
+| mikroskop-model | `szablon/wizualizacje/mikroskop-model.js` | `szablon/wizualizacje/mikroskop-model.js` | `szablon/wizualizacje/mikroskop-model.js` | nie | REV01, L001, L008 |
+| nefron | `szablon/wizualizacje/nefron.js` | `szablon/wizualizacje/nefron.js` | `szablon/wizualizacje/nefron.js` | tak | B2c, U06 |
+| nukleotyd | `szablon/wizualizacje/nukleotyd.js` | `szablon/wizualizacje/nukleotyd.js` | `szablon/wizualizacje/nukleotyd.js` | nie | L010, L011 |
+| od-organizmu-do-genu | `szablon/wizualizacje/od-organizmu-do-genu.js` | `szablon/wizualizacje/od-organizmu-do-genu.js` | `szablon/wizualizacje/od-organizmu-do-genu.js` | nie | L010 |
+| oko-akomodacja | `szablon/wizualizacje/oko-akomodacja.js` | `szablon/wizualizacje/oko-akomodacja.js` | `szablon/wizualizacje/oko-akomodacja.js` | tak | U08 |
+| pary-zasad | `szablon/wizualizacje/pary-zasad.js` | `szablon/wizualizacje/pary-zasad.js` | `szablon/wizualizacje/pary-zasad.js` | nie | L010, L011 |
+| podzial-komorki | `szablon/wizualizacje/podzial-komorki.js` | `szablon/wizualizacje/podzial-komorki.js` | `szablon/wizualizacje/podzial-komorki.js` | tak | L009, B2f, L014, L015, L050 |
+| pojemnosc | `szablon/wizualizacje/pojemnosc.js` | `szablon/wizualizacje/pojemnosc.js` | `szablon/wizualizacje/pojemnosc.js` | nie | L010 |
+| poziomy-dna | `szablon/wizualizacje/poziomy-dna.js` | `szablon/wizualizacje/poziomy-dna.js` | `szablon/wizualizacje/poziomy-dna.js` | nie | L010, L012 |
+| proba-kontrolna | `szablon/wizualizacje/proba-kontrolna.js` | `szablon/wizualizacje/proba-kontrolna.js` | `szablon/wizualizacje/proba-kontrolna.js` | nie | REV01 |
+| przeobrazenie-owadow | `szablon/wizualizacje/przeobrazenie-owadow.js` | `szablon/wizualizacje/przeobrazenie-owadow.js` | `szablon/wizualizacje/przeobrazenie-owadow.js` | nie | REV02 |
+| przeobrazenie-plaza | `szablon/wizualizacje/przeobrazenie-plaza.js` | `szablon/wizualizacje/przeobrazenie-plaza.js` | `szablon/wizualizacje/przeobrazenie-plaza.js` | nie | REV02 |
+| punnett | `szablon/wizualizacje/punnett.js` | `szablon/wizualizacje/punnett.js` | `szablon/wizualizacje/punnett.js` | nie | B1b, L017, L018, L019, L021 |
+| relacje-ekologiczne | `szablon/wizualizacje/relacje-ekologiczne.js` | `szablon/wizualizacje/relacje-ekologiczne.js` | `szablon/wizualizacje/relacje-ekologiczne.js` | nie | L042, L044 |
+| sekwencje | `szablon/wizualizacje/sekwencje.js` | `szablon/wizualizacje/sekwencje.js` | `szablon/wizualizacje/sekwencje.js` | nie | L010 |
+| siec-troficzna | `szablon/wizualizacje/siec-troficzna.js` | `szablon/wizualizacje/siec-troficzna.js` | `szablon/wizualizacje/siec-troficzna.js` | nie | L041, L050 |
+| skora-przekroj | `szablon/wizualizacje/skora-przekroj.js` | `szablon/wizualizacje/skora-przekroj.js` | `szablon/wizualizacje/skora-przekroj.js` | nie | B2a, U01 |
+| sprzezenie-zwrotne | `szablon/wizualizacje/sprzezenie-zwrotne.js` | `szablon/wizualizacje/sprzezenie-zwrotne.js` | `szablon/wizualizacje/sprzezenie-zwrotne.js` | tak | B2e, B2g, H01, U10 |
+| staw-antagonizm | `szablon/wizualizacje/staw-antagonizm.js` | `szablon/wizualizacje/staw-antagonizm.js` | `szablon/wizualizacje/staw-antagonizm.js` | tak | B2a, U01 |
+| synapsa | `szablon/wizualizacje/synapsa.js` | `szablon/wizualizacje/synapsa.js` | `szablon/wizualizacje/synapsa.js` | tak | B2d, U08 |
+| szuflady-cech | `szablon/wizualizacje/szuflady-cech.js` | `szablon/wizualizacje/szuflady-cech.js` | `szablon/wizualizacje/szuflady-cech.js` | nie | L010 |
+| transfuzja | `szablon/wizualizacje/transfuzja.js` | `szablon/wizualizacje/transfuzja.js` | `szablon/wizualizacje/transfuzja.js` | nie | L019, U04 |
+| transport-blona | `szablon/wizualizacje/transport-blona.js` | `szablon/wizualizacje/transport-blona.js` | `szablon/wizualizacje/transport-blona.js` | nie | REV01, L001, L005 |
+| trener-nici | `szablon/wizualizacje/trener-nici.js` | `szablon/wizualizacje/trener-nici.js` | `szablon/wizualizacje/trener-nici.js` | nie | L010, L013 |
+| ucho-droga | `szablon/wizualizacje/ucho-droga.js` | `szablon/wizualizacje/ucho-droga.js` | `szablon/wizualizacje/ucho-droga.js` | tak | U08 |
+| uklad-rozrodczy | `szablon/wizualizacje/uklad-rozrodczy.js` | `szablon/wizualizacje/uklad-rozrodczy.js` | `szablon/wizualizacje/uklad-rozrodczy.js` | nie | B2f, U11 |
+| wdech-wydech | `szablon/wizualizacje/wdech-wydech.js` | `szablon/wizualizacje/wdech-wydech.js` | `szablon/wizualizacje/wdech-wydech.js` | tak | B2c, U06 |
+| wirus-bakteria | `szablon/wizualizacje/wirus-bakteria.js` | `szablon/wizualizacje/wirus-bakteria.js` | `szablon/wizualizacje/wirus-bakteria.js` | nie | REV02 |
+| wymiana-gazowa | `szablon/wizualizacje/wymiana-gazowa.js` | `szablon/wizualizacje/wymiana-gazowa.js` | `szablon/wizualizacje/wymiana-gazowa.js` | tak | B2c, U06 |
+| zrodla-zmiennosci | `szablon/wizualizacje/zrodla-zmiennosci.js` | `szablon/wizualizacje/zrodla-zmiennosci.js` | `szablon/wizualizacje/zrodla-zmiennosci.js` | nie | L016A |

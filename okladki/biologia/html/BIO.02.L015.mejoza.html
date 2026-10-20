@@ -1421,7 +1421,7 @@ animation:bio-drift 60s linear infinite}
 </ul>
 </div>
 <div class="lk-czesc">17. Mapa pojęć</div>
-<figure class="lk-fig bio-fig" data-bio-viz="lancuch" data-opt="{&quot;kroki&quot;: &quot;2n = 46|komórka diploidalna &gt; replikacja|faza S: 46 → 92 chromatydy (L013) &gt; mejoza I|rozdział par homologicznych &gt; mejoza II|rozdział chromatyd siostrzanych &gt; 4 komórki n = 23|gamety haploidalne &gt; zapłodnienie|23 + 23 = 46 → zygota 2n&quot;, &quot;boki&quot;: &quot;zmienność: crossing-over; niezależna segregacja; losowe zapłodnienie&quot;}"><div class="lk-fig-body bio-fig-body"></div><figcaption><b>Mejoza w jednym łańcuchu</b> <span>kliknij krok, aby zobaczyć wyjaśnienie</span></figcaption></figure>
+<figure class="lk-fig bio-fig" data-bio-viz="lancuch" data-opt="{&quot;kroki&quot;: &quot;2n = 46|komórka diploidalna &gt; replikacja|faza S: 46 → 92 chromatydy (L013) &gt; mejoza I|rozdział par homologicznych &gt; mejoza II|rozdział chromatyd siostrzanych &gt; 4 komórki n = 23|gamety haploidalne &gt; zapłodnienie|23 + 23 = 46 → zygota 2n&quot;, &quot;opisy&quot;: &quot;Komórka diploidalna ma dwa komplety chromosomów: 46 u człowieka. &gt; Replikacja DNA w fazie S: każdy chromosom składa się z dwóch chromatyd. &gt; Mejoza I: rozdział par homologicznych chromosomów; liczba chromosomów spada do połowy. &gt; Mejoza II: rozdział chromatyd siostrzanych; powstają cztery komórki haploidalne. &gt; Gamety haploidalne (n = 23) mają jeden komplet chromosomów. &gt; Zapłodnienie łączy dwie gamety; zygota ma znów 46 chromosomów (2n).&quot;, &quot;boki&quot;: &quot;zmienność: crossing-over; niezależna segregacja; losowe zapłodnienie&quot;}"><div class="lk-fig-body bio-fig-body"></div><figcaption><b>Mejoza w jednym łańcuchu</b> <span>kliknij krok, aby zobaczyć wyjaśnienie</span></figcaption></figure>
 <!-- OPIS: Łańcuch kroków: komórka 2n (46) → replikacja w fazie S (92 chromatydy) → mejoza I rozdziela pary homologiczne → mejoza II rozdziela chromatydy → 4 gamety n = 23 → zapłodnienie przywraca 2n = 46; z boku trzy źródła zmienności. Wniosek: mejoza zmniejsza liczbę chromosomów o połowę, a zapłodnienie ją przywraca. -->
 <p>Mapa pojęć L015 — od mejozy przez 3 źródła zmienności do unikalności genetycznej.</p>
 <div class="lk-czesc">18. Co dalej? Jak się uczyć?</div>
@@ -2093,10 +2093,24 @@ mount:function(el,o){var tryb=o.start==='mejoza'?'mejoza':'mitoza',k=0,M='#d6454
 'use strict';
 var BIO=window.BIO;
 var ICO=BIO.Lh["A.ICO"],chain=BIO.Lh["A.chain"],H=BIO.Lh["A.H"];
-BIO.define('lancuch',{opis:'Łańcuch kroków A → B → C; opcje: kroki="A|opis > B > C", boki="środowisko; rozwój", wyroznij="nr" (od 1)',
+BIO.define('lancuch',{opis:'Łańcuch kroków A → B → C; opcje: kroki="A|opis > B > C", opisy="opis A > opis B > opis C" (po kliknięciu poziomu), boki="środowisko; rozwój", wyroznij="nr" (od 1)',
 mount:function(el,o){var k=+(o.wyroznij||0);
   function pick(t){t=t.toLowerCase();return/rna/.test(t)?ICO.rna():/dna|gen\b/.test(t)?ICO.dna():/białk/.test(t)?ICO.bialko():/funkc|enzym/.test(t)?ICO.funkcja():/cech|cesz|fenotyp|organizm/.test(t)?ICO.organizm():null}
-  chain(el,(o.kroki||'').split('>').map(function(s,i){var p=s.split('|');return{b:p[0].trim(),s:(p[1]||'').trim(),k:k===i+1,ico:o.ikony==='nie'?null:pick(p[0])}}),o);
+  var names=[],opisy=(o.opisy||'').split('>').map(function(s){return s.trim()});
+  var c=chain(el,(o.kroki||'').split('>').map(function(s,i){var p=s.split('|');names.push((p[0]||'').trim());return{b:p[0].trim(),s:(p[1]||'').trim(),k:k===i+1,key:'n'+i,ico:o.ikony==='nie'?null:pick(p[0])}}),o);
+  if(opisy.some(Boolean)){
+    var box=H('div','bv-info','Kliknij poziom, aby zobaczyć opis.');el.appendChild(box);
+    [].forEach.call(c.querySelectorAll('.bv-node'),function(d,i){
+      function show(){
+        [].forEach.call(c.querySelectorAll('.bv-node'),function(x){x.style.outline='';x.setAttribute('aria-pressed','false')});
+        d.style.outline='2px solid var(--accent)';d.setAttribute('aria-pressed','true');
+        box.textContent=names[i]+': '+(opisy[i]||'');
+      }
+      d.setAttribute('role','button');d.setAttribute('tabindex','0');d.style.cursor='pointer';
+      d.addEventListener('click',show);
+      d.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();show()}});
+    });
+  }
   if(o.boki){var sd=H('div','bv-side');o.boki.split(';').forEach(function(s){if(s.trim())sd.appendChild(H('span',null,s.trim()))});el.appendChild(sd)}}});
 })();
 

@@ -70,7 +70,7 @@ Fragment DNA może być **genem**. Bardzo długa cząsteczka DNA wraz z białkam
 :::
 
 ::: karta extra | Ciekawostka — 2 metry w kilku mikrometrach
-DNA z jednej ludzkiej komórki, rozwinięte i ułożone w linii, miałoby ok. **2 m** długości — a mieści się w jądrze o średnicy kilku mikrometrów, bo jest ciasno nawinięte na białka (L012). To ok. **6 miliardów par zasad**; zapisane literami dałyby tekst rzędu kilku tysięcy grubych książek. DNA ze wszystkich komórek ciała razem to dziesiątki miliardów kilometrów (szacunek).
+DNA z jednej ludzkiej komórki, rozwinięte i ułożone w linii, miałoby ok. **2 m** długości — a mieści się w jądrze o średnicy kilku mikrometrów, bo jest ciasno nawinięte na białka (L012). To ok. **6 miliardów par zasad** (dwa zestawy genomu po ok. 3 mld; jeden zestaw to ok. 3 mld); zapisane literami dałyby tekst rzędu kilku tysięcy grubych książek. DNA ze wszystkich komórek ciała razem to dziesiątki miliardów kilometrów (szacunek).
 :::
 
 ## 2 | Pytanie przewodnie i cele [[basic:E8]] {#cele}
@@ -196,7 +196,7 @@ Na koniec ważne zastrzeżenie: DNA to nie „wyrok”. Wiele cech — wzrost, m
 
 ## 6 | Od genu do cechy [[basic:E8]] {#gen-cecha}
 ### 6.1. Model podstawowy
-@viz lancuch {kroki="DNA (gen)|odcinek z informacją > RNA|kopia robocza > białko|produkt genu > funkcja w komórce|np. enzym, barwnik > udział w cesze|fenotyp" boki="+ środowisko; + rozwój" wyroznij="5"} | Od genu do cechy | model uproszczony
+@viz lancuch {kroki="DNA (gen)|odcinek z informacją > RNA|kopia robocza > białko|produkt genu > funkcja w komórce|np. enzym, barwnik > udział w cesze|fenotyp" opisy="Odcinek DNA z informacją o produkcie; kolejność zasad jest zapisem tej informacji. > Kopia robocza informacji z genu, powstająca w transkrypcji. > Łańcuch aminokwasów; powstaje w translacji na podstawie RNA. > Białko pełni funkcję, np. enzymu, który przyspiesza reakcje w komórce. > Efekt działania białka na poziomie cechy, np. barwnik wpływa na kolor. > Cecha widoczna lub mierzalna u organizmu (fenotyp); zależy też od środowiska." boki="+ środowisko; + rozwój" wyroznij="5"} | Od genu do cechy | model uproszczony
 @opis Łańcuch od genu do cechy: DNA (gen, odcinek z informacją) → RNA (kopia robocza) → białko (produkt genu) → funkcja w komórce (np. enzym, barwnik) → udział w cesze (fenotyp, krok wyróżniony); z boku dopisek „+ środowisko; + rozwój”. Wniosek: gen nie jest cechą — wpływa na nią przez białko, a na wynik działa też środowisko.
 
 To jest **model podstawowy**. W rzeczywistości:

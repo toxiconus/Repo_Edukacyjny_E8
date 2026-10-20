@@ -7,7 +7,7 @@ kicker: REV02 · BIOLOGIA · POWTÓRKA KL. 5–6 · KONKURS ETAP SZKOLNY
 lead: Etap szkolny konkursu biologicznego obejmuje organizację i chemizm życia oraz całą różnorodność życia z klas 5–6. Ta lekcja zbiera różnorodność w jednym miejscu:
 lead: od zasad klasyfikacji, przez wirusy i bakterie, rośliny i grzyby, po bezkręgowce i kręgowce — zawsze w parze „budowa → funkcja → przystosowanie → znaczenie”.
 plakietki: [[basic:E8]][[understand:TRENING]][[exam:KONKURS]][[extra:AMBITNE]]
-uwaga: Zakres wg konkursu biologicznego LKO 2026/27 (etap I: pkt I i II podstawy programowej). Część „Organizacja i chemizm życia” (komórka, fotosynteza, oddychanie) — lekcja REV01 BIO.
+uwaga: Zakres wg konkursu biologicznego LKO 2026/27 (etap I: pkt I i II podstawy programowej). Zakres tej powtórki odpowiada działowi II „Różnorodność życia”; dział I „Organizacja i chemizm życia” opracowano w REV01. Zgodność z regulaminem i wykazem literatury LKO 2026/27 wymaga porównania z aktualnym dokumentem organizatora.
 stopka: **BIOLOGIA REV02 v1.0** · Różnorodność życia — powtórka · 2026
 ---
 ::: minimum | Muszę umieć — 12 punktów
@@ -70,7 +70,7 @@ stopka: **BIOLOGIA REV02 v1.0** · Różnorodność życia — powtórka · 2026
 ## 0.3 | Wykład — mapa różnorodności życia {#wyklad}
 
 ::: karta understand | Wykład — jak uporządkować miliony gatunków
-Na Ziemi opisano ponad 1,5 miliona gatunków organizmów, a szacuje się, że żyje ich wielokrotnie więcej (orientacyjnie). Żeby się w tym nie pogubić, biolodzy **klasyfikują** organizmy — łączą je w grupy według wspólnych cech i pokrewieństwa. Podstawową jednostką jest **gatunek** — organizmy podobne do siebie, które w naturze krzyżują się i mają płodne potomstwo. Gatunki łączymy w rodzaje, rodzaje w rodziny, dalej rzędy, gromady, typy i królestwa. Każdy gatunek ma dwuczłonową nazwę łacińską (np. *Homo sapiens*) — to pomysł Karola Linneusza.
+Na Ziemi opisano ok. 1,5 miliona gatunków organizmów (liczba zależy od bazy danych i daty zliczenia), a szacuje się, że żyje ich wielokrotnie więcej (orientacyjnie). Żeby się w tym nie pogubić, biolodzy **klasyfikują** organizmy — łączą je w grupy według wspólnych cech i pokrewieństwa. Podstawową jednostką jest **gatunek** — organizmy podobne do siebie, które w naturze krzyżują się i mają płodne potomstwo. Gatunki łączymy w rodzaje, rodzaje w rodziny, dalej rzędy, gromady, typy i królestwa. Każdy gatunek ma dwuczłonową nazwę łacińską (np. *Homo sapiens*) — to pomysł Karola Linneusza.
 
 W szkole najczęściej używamy podziału na **pięć królestw**: **bakterie** (komórki bez jądra), **protisty** (głównie jednokomórkowe eukarionty, np. pantofelek, glony), **grzyby** (cudzożywne, ze ścianą z chityny), **rośliny** (samożywne, z chloroplastami i ścianą z celulozy) i **zwierzęta** (cudzożywne, bez ściany komórkowej). Osobno stoją **wirusy** — nie mają budowy komórkowej, nie przeprowadzają przemiany materii i namnażają się tylko wewnątrz cudzych komórek. Dlatego nie zalicza się ich do żadnego królestwa.
 
@@ -95,6 +95,8 @@ Klasyfikacja porządkuje organizmy w grupy (**jednostki systematyczne, rangi**) 
 
 ::: regula
 **Gatunek** — grupa organizmów podobnych do siebie, które w naturze krzyżują się ze sobą i wydają **płodne potomstwo**. **Nazwa gatunku jest dwuczłonowa** (nazewnictwo binominalne, Karol Linneusz): pierwszy człon to nazwa rodzaju (wielką literą), drugi — epitet gatunkowy (małą literą). Pies i wilk należą do tego samego rodzaju *Canis*, ale lis rudy — do rodzaju *Vulpes*.
+
+> Ta definicja jest szkolnym przybliżeniem, dotyczącym głównie organizmów rozmnażających się płciowo. Nie wystarcza do klasyfikowania bakterii ani skamieniałości. Klucz do królestw służy typowym przykładom; nie jest uniwersalnym algorytmem dla wszystkich organizmów.
 :::
 
 **Pięć królestw (model szkolny):** bakterie · protisty · grzyby · rośliny · zwierzęta. **Wirusy** nie należą do żadnego królestwa.
@@ -124,16 +126,16 @@ Klasyfikacja porządkuje organizmy w grupy (**jednostki systematyczne, rangi**) 
 
 | Typ | Skąd energia i materia | Przykłady |
 |---|---|---|
-| samożywne (autotrofy) | same wytwarzają związki organiczne w fotosyntezie | rośliny, glony, sinice |
+| samożywne (autotrofy) | wytwarzają związki organiczne z substancji nieorganicznych, wykorzystując energię światła lub reakcji chemicznych | rośliny, glony, sinice |
 | cudzożywne (heterotrofy) | pobierają gotowe związki organiczne | zwierzęta, grzyby, większość bakterii |
 | – roślinożerne | rośliny | zając, krowa, jeleń |
 | – mięsożerne | zwierzęta | wilk, ryś, sowa |
 | – wszystkożerne | rośliny i zwierzęta | dzik, niedźwiedź, człowiek |
-| – saprofity (rozkładające) | martwa materia organiczna | grzyby, bakterie rozkładające |
+| – saprotrofy (rozkładające martwą materię) | martwa materia organiczna | grzyby, bakterie rozkładające |
 | – pasożyty | tkanki lub pokarm żywiciela | tasiemiec, kleszcz, wesz |
 | – symbionty | pożytek dla obu stron | mikoryza, bakterie brodawkowe |
 
-**Mieszane:** rosiczka (roślina) fotosyntetyzuje, a dodatkowo trawi owady — dlatego jest samożywna, mimo „drapieżnych” liści; euglena (oczlik) na świetle fotosyntetyzuje, w ciemności pobiera gotowe związki.
+**Mieszane:** rosiczka (roślina) fotosyntetyzuje, a dodatkowo trawi owady — dlatego jest samożywna, mimo „drapieżnych” liści; euglena zielona na świetle fotosyntetyzuje, w ciemności pobiera gotowe związki.
 
 **Typowy błąd:** „roślina mięsożerna jest cudzożywna” — nie; ma chloroplasty i fotosyntezę, owady to dodatkowe źródło azotu.
 
@@ -153,8 +155,8 @@ Klasyfikacja porządkuje organizmy w grupy (**jednostki systematyczne, rangi**) 
 | ospa wietrzna | kropelkowo i przez kontakt z wykwitami | szczepienie, izolacja chorego |
 | różyczka | drogą kropelkową; groźna dla płodu (zakażenie kobiety w ciąży) | szczepienie |
 | świnka (nagminne zapalenie przyusznic) | drogą kropelkową | szczepienie |
-| odra | drogą kropelkową, bardzo zaraźliwa | szczepienie |
-| AIDS (wirus HIV) | przez krew, kontakty płciowe, z matki na dziecko — **nie** przez komary, uścisk, wspólne naczynia, powietrze | nieużywanie cudzych igieł i przyborów z krwią, zabezpieczenie, badanie krwi |
+| odra | drogą powietrzną (wdychanie zakaźnego aerozolu), bardzo zaraźliwa | szczepienie |
+| zakażenie HIV (bez skutecznego leczenia może prowadzić do AIDS) | przez krew, kontakty płciowe, z matki na dziecko — **nie** przez komary, uścisk, wspólne naczynia, powietrze | nieużywanie cudzych igieł i przyborów z krwią, zabezpieczenie, badanie krwi |
 
 ::: karta warning | Antybiotyki a wirusy
 Antybiotyki działają na **bakterie**, nie na wirusy. Grypy nie leczy się antybiotykiem — przed chorobami wirusowymi chronią przede wszystkim **szczepienia** i higiena.
@@ -195,13 +197,13 @@ Terapia fagowa była rozwijana w Instytucie Eliava w Tbilisi (Gruzja) już w lat
 | Czynność | Bakterie |
 |---|---|
 | Odżywianie | **samożywne** (np. sinice — fotosynteza) lub **cudzożywne**: saprotrofy (rozkładają martwą materię), pasożyty, symbionty |
-| Oddychanie | tlenowe albo beztlenowe (fermentacja) |
+| Oddychanie | tlenowe, beztlenowe albo fermentacja (fermentacja nie jest tym samym co oddychanie beztlenowe) |
 | Rozmnażanie | **podział komórki** — w dobrych warunkach bardzo szybko |
 | Niekorzystne warunki | niektóre tworzą **przetrwalniki** odporne na wysuszenie i temperaturę |
 
 | Choroba bakteryjna | Jak się szerzy | Profilaktyka |
 |---|---|---|
-| gruźlica | drogą kropelkową | szczepienie, unikanie kontaktu z chorym, wietrzenie |
+| gruźlica | drogą powietrzną (wdychanie zakaźnego aerozolu) | szczepienie, unikanie kontaktu z chorym, wietrzenie |
 | borelioza | przez ukłucie zakażonego **kleszcza** | odpowiedni ubiór w lesie, repelenty, oglądanie skóry, szybkie usunięcie kleszcza |
 | tężec | przez rany zanieczyszczone ziemią | szczepienie, oczyszczanie ran |
 | salmonelloza | przez zakażoną żywność (jaja, drób, lody) | higiena, przechowywanie w chłodzie, dokładne gotowanie i smażenie |
@@ -211,19 +213,19 @@ Terapia fagowa była rozwijana w Instytucie Eliava w Tbilisi (Gruzja) już w lat
 **Szkodliwe:** choroby ludzi, zwierząt i roślin; psucie żywności.
 :::
 
-### 3.1 Protisty — organizmy z jądrem, ale bez tkanek {#protisty}
+### 3.1 Protisty — umowna grupa eukariontów {#protisty}
 
-Protisty to organizmy **eukariotyczne** (mają jądro), jednokomórkowe lub proste wielokomórkowe, bez tkanek. Żyją w wodzie lub wilgotnym środowisku.
+Protisty to organizmy **eukariotyczne** (mają jądro), jednokomórkowe lub proste wielokomórkowe, zwykle bez tkanek; to umowna, bardzo zróżnicowana grupa. Żyją w wodzie lub wilgotnym środowisku.
 
 | Grupa | Cechy | Przykłady |
 |---|---|---|
 | pierwotniaki (cudzożywne) | ruch: nibynóżki, rzęski lub wić; **wodniczka tętniąca** usuwa nadmiar wody | ameba (nibynóżki), pantofelek (rzęski), świdrowiec (wić) |
 | pierwotniaki pasożytnicze | pasożytują w organizmie człowieka | zarodziec malarii (przenoszony przez komary widliszki), pełzak czerwonki, lamblia |
 | glony jednokomórkowe (samożywne) | chloroplasty, fotosynteza | okrzemki, chlorella |
-| glony wielokomórkowe | plecha bez tkanek i organów | zielenice (spirogira, chlamydomonas), brunatnice (morszczyn), krasnorosty |
-| mieszane | fotosynteza + pobieranie pokarmu | euglena (oczlik zielony) |
+| glony wielokomórkowe | plecha bez tkanek i organów | zielenice (spirogira — nitkowata), brunatnice (morszczyn), krasnorosty |
+| mieszane | fotosynteza + pobieranie pokarmu | euglena zielona |
 
-**Zapamiętaj:** glony to nie rośliny — nie mają tkanek ani organów (korzenia, łodygi, liścia); ich ciało to **plecha**.
+**Zapamiętaj:** „glony” to nie jedna grupa systematyczna i nie są to rośliny w ścisłym sensie. Większość z nich nie ma tkanek ani organów (korzenia, łodygi, liścia); ich ciało to **plecha**.
 
 @viz wirus-bakteria | Wirus a bakteria — budowa | kliknij część, aby zobaczyć opis
 @opis Po lewej mały sześciokątny wirus: niebieski białkowy kapsyd, w środku fioletowa nitka materiału genetycznego (DNA albo RNA), wokół przerywana linia osłonki (nie u wszystkich wirusów); podpis „ok. 0,1 µm, powiększony bardziej”. Po prawej duża pałeczka bakterii (ok. 2 µm): gruba zielona ściana komórkowa, żółta błona, cytoplazma z szarymi kropkami rybosomów, fioletowy nukleoid, czerwony kolisty plazmid i rzęska. Kliknięcie części pokazuje jej opis. Wniosek: bakteria jest komórką z własną przemianą materii i rybosomami (antybiotyki mogą na nią działać), a wirus to cząstka bez budowy komórkowej — kapsyd z DNA lub RNA, namnaża się tylko w komórce gospodarza; antybiotyki na wirusy nie działają.
@@ -238,7 +240,9 @@ Protisty to organizmy **eukariotyczne** (mają jądro), jednokomórkowe lub pros
 | **okrywająca** | skórka liścia i łodygi, skórka korzenia z **włośnikami**, korek | ochrona; w skórce liścia **aparaty szparkowe** (wymiana gazowa, transpiracja); włośniki pobierają wodę |
 | **miękiszowa** | wnętrze liści, łodyg, korzeni, owoców | **asymilacyjny** — fotosynteza; **spichrzowy** — magazyn (skrobia w bulwie ziemniaka); powietrzny, wodny |
 | **wzmacniająca** | łodygi, ogonki liściowe | utrzymanie kształtu i sztywności |
-| **przewodząca** | wiązki przewodzące | **drewno** — woda z solami mineralnymi z korzeni **w górę** (martwe komórki); **łyko** — produkty fotosyntezy do wszystkich części rośliny (żywe komórki) |
+| **przewodząca** | wiązki przewodzące | **drewno** — woda z solami mineralnymi z korzeni **w górę** (martwe elementy przewodzące); **łyko** — produkty fotosyntezy do wszystkich części rośliny (żywe komórki) |
+
+Tkanka twórcza dostarcza nowych komórek przez podziały; wydłużanie komórek także uczestniczy we wzroście. Włośnik jest wydłużoną komórką skórki korzenia, zwiększającą powierzchnię pobierania wody i soli mineralnych. Miękisz asymilacyjny zawiera chloroplasty. Martwe elementy przewodzące drewna tworzą drogę transportu wody, a żywe elementy sitowe łyka transportują związki organiczne.
 
 **Drewno (ksylem) roślin naczyniowych:** dwa typy elementów przewodzących wodę z solami z korzeni do liści:
 - **cewki** (tracheidy) — martwe, wydłużone komórki z obramowanymi jamkami; woda przepływa przez jamki z cewki do cewki. Występują we wszystkich roślinach naczyniowych; u iglastych są głównym elementem drewna,
@@ -247,8 +251,10 @@ Protisty to organizmy **eukariotyczne** (mają jądro), jednokomórkowe lub pros
 **Pułapka:** cewki i naczynia to **drewno** (ksylem). Łyko (floem) przewodzi produkty fotosyntezy z liści (źródło) do miejsc, gdzie są zużywane lub magazynowane — korzeni, owoców, kwiatów, młodych liści; kierunek zależy od położenia źródła i odbiorcy (często „w dół”, ale nie zawsze). Liściaste mają także cewki, więc hasło „iglaste — cewki, liściaste — naczynia" jest uproszczeniem.
 
 ::: mnemonik
-**Drewno to ksylem: woda w górę (cewki i naczynia), łyko to floem: cukier w dół.**
+**Drewno to ksylem: woda w górę (cewki i naczynia), łyko to floem: związki organiczne od źródła do odbiorcy, nie zawsze w dół.**
 :::
+
+**Zadanie (wykryj błąd):** uczeń napisał: „Drewno przewodzi wodę w górę, a łyko zawsze przewodzi cukry w dół”. Wskaż nieprawidłową część zdania i popraw ją, odwołując się do źródła oraz odbiorcy związków organicznych. **Odpowiedź (2 pkt):** 1 pkt za odrzucenie słowa „zawsze” w opisie kierunku transportu łykiem; 1 pkt za wyjaśnienie, że łyko transportuje związki organiczne od źródła do miejsca ich zużycia lub magazynowania, które może być wyżej albo niżej.
 
 ### 4.2 Mchy {#mchy}
 
@@ -257,7 +263,7 @@ Protisty to organizmy **eukariotyczne** (mają jądro), jednokomórkowe lub pros
 
 ::: karta core | Mchy — cechy
 - **Środowisko:** miejsca wilgotne i zacienione (lasy, torfowiska, kamienie, pnie).
-- **Budowa:** niewielkie; **chwytniki** zamiast korzeni (tylko przytwierdzają), łodyżka, listki (zwykle jedna warstwa komórek); brak tkanek przewodzących typowych dla roślin naczyniowych.
+- **Budowa:** niewielkie; **chwytniki** zamiast korzeni (głównie przytwierdzają; wodę pobierają przede wszystkim powierzchnią), łodyżka, listki (zwykle jedna warstwa komórek); brak tkanek przewodzących typowych dla roślin naczyniowych.
 - **Rozmnażanie:** z zapłodnionej komórki jajowej wyrasta osadzona na roślinie **puszka z zarodnikami** na wydłużonej secie; z zarodników rozwijają się nowe mchy. **Do zapłodnienia potrzebna jest woda.**
 - **Przykłady:** płonnik, torfowiec, bielistka.
 :::
@@ -287,7 +293,7 @@ Do paprociowych należą **paprocie**, **skrzypy** i **widłaki**.
 |---|---|---|
 | Stadium dominujące | gametofit (n) — zielona roślina | sporofit (2n) — duża paproć |
 | Stadium zredukowane | sporofit (2n) — mały, na gametoficie | przedrośle (n) — drobne, sercowate |
-| Przedrośle | nitkowate (zielona nitka) | sercowate |
+| Młody gametofit (u mchów splątek, u paproci przedrośle) | nitkowaty splątek (zielona nitka) | przedrośle, u wielu paproci sercowate |
 | Narządy płciowe | plemnie (męskie) i rodnie (żeńskie) na gametoficie | plemnie i rodnie na przedroślu |
 | Woda do zapłodnienia | tak | tak |
 
@@ -355,20 +361,27 @@ Liść ma **blaszkę** (fotosynteza, wymiana gazowa) i zwykle **ogonek**. W blas
 @viz przeksztalcenia-organow | Przekształcone organy roślin | kliknij, znajdź, podpisz
 @opis Siedem przykładów w dwóch rzędach: marchew (korzeń spichrzowy), ziemniak z oczkami (bulwa pędowa), kłącze z liśćmi nadziemnymi, cebula (skrócony pęd z łuskami), rozłogi truskawki z młodymi roślinkami, wąsy czepne grochu i ciernie berberysu. Wniosek: ten sam organ (korzeń, łodyga, liść) może pełnić nową funkcję — spichrzową, rozmnażania lub podpierania i obrony.
 
-Roślina ma trzy organy wegetatywne: **korzeń**, **łodygę** (pęd) i **liść**. Wiele gatunków zmienia ich budowę, żeby spełniały nową funkcję — to **przekształcenie (modyfikacja) organu**. Kluczowe pytanie: **z jakiego organu powstało?**
+**Zadanie (przyporządkuj):** który organ jest przekształcony w każdym przypadku: marchew (korzeń spichrzowy), ziemniak (bulwa pędowa), kłącze, rozłogi truskawki? **Odpowiedź:** marchew — korzeń; ziemniak, kłącze i rozłogi — pęd (łodyga).
+
+**Zadanie (wnioskuj):** dlaczego ziemniak jest pędem, a nie korzeniem? **Odpowiedź:** na bulwie widać oczka (pąki), a pąki wyrastają z węzłów pędu, nie z korzeni. Cebula i ciernie berberysu: do potwierdzenia w ZPE przed użyciem w testach.
+
+
+Roślina ma trzy organy wegetatywne: **korzeń**, **łodygę** i **liść**. Pęd to łodyga wraz z liśćmi i pąkami. Wiele gatunków zmienia ich budowę, żeby spełniały nową funkcję — to **przekształcenie (modyfikacja) organu**. Kluczowe pytanie: **z jakiego organu powstało?**
 
 | Przekształcenie | Z czego powstało | Funkcja | Przykład |
 |---|---|---|---|
-| korzeń spichrzowy | **korzeń** | magazyn cukrów | marchew, burak, rzodkiewka |
-| bulwa korzeniowa | **korzeń** | magazyn skrobi | dalia, batat |
-| **bulwa pędowa** | **łodyga** | magazyn skrobi, rozmnażanie wegetatywne | **ziemniak**, topinambur |
+| korzeń spichrzowy | **korzeń** | magazyn cukrów | marchew; burak i rzodkiewka — część organu to hipokotyl (proporcje do potwierdzenia) |
+| bulwa korzeniowa | **korzeń** | magazyn substancji zapasowych | dalia (inulina), batat (skrobia) |
+| **bulwa pędowa** | **łodyga** | magazyn substancji zapasowych, rozmnażanie wegetatywne | **ziemniak** (skrobia), topinambur (inulina) |
 | **kłącze** | **łodyga** (podziemna) | zimowanie, magazyn, rozmnażanie wegetatywne | konwalia, perz, paprocie |
 | **cebula** | **łodyga** skrócona + liście spichrzowe | magazyn wody i cukrów | cebula, tulipan, czosnek |
 | **rozłogi** | **łodyga** (nadziemna, płożąca) | rozmnażanie wegetatywne | truskawka, jaskier rozłogowy |
 | wąsy czepne | **liść** (lub jego część) | wspinanie | groch, wyka |
-| ciernie | **liść** (lub jego część) | obrona | berberys, kłujące liście kaktusów |
+| ciernie | **liść** (ciernie liściowe, np. kaktusy) lub **pęd** (ciernie pędowe, np. głóg) | obrona | kaktusy, głóg |
 
-**Jak rozpoznać pęd?** Ma **węzły**, **pąki** i **łuskowate liście**. Dlatego ziemniak to bulwa **pędowa**: „oczka” to pąki z zaczątkami pędów, a nie korzeń. Korzeń nigdy nie ma pąków liściowych na swojej powierzchni (z wyjątkiem pędów przybyszowych).
+**Jak rozpoznać pęd?** Ma **węzły**, **pąki** i **łuskowate liście**. Dlatego ziemniak to bulwa **pędowa**: „oczka” to pąki z zaczątkami pędów, a nie korzeń. Korzeń nie ma typowych węzłów, międzywęźli i liści; u niektórych roślin mogą na nim powstawać pąki przybyszowe.
+
+**Pod ziemią nie znaczy korzeń.** Bulwa ziemniaka jest przekształconą łodygą; jej oczka to pąki, z których wyrastają pędy.
 
 **Rozmnażanie wegetatywne** (bezpłciowe) daje potomstwo **identyczne genetycznie** z rośliną macierzystą: bulwa ziemniaka, rozłogi truskawki, kłącze, cebula. Nasiona są owocem rozmnażania **płciowego**.
 
@@ -376,7 +389,7 @@ Roślina ma trzy organy wegetatywne: **korzeń**, **łodygę** (pęd) i **liść
 Ziemniak je się pod ziemią, ale to PĘD (oczka = pąki). Marchew to KORZEŃ. Groch trzyma się LIŚCIEM, truskawka rośnie na ROZŁOGACH.
 :::
 
-**Typowy błąd:** „bulwa to zawsze korzeń” — ziemniak to łodyga. **Typowy błąd 2:** kolce róży to nie przekształcone liście, tylko wyrostki skórki (kolce); ciernie berberysu to liście.
+**Typowy błąd:** „bulwa to zawsze korzeń” — ziemniak to łodyga. **Typowy błąd 2:** kolce róży to nie przekształcone liście, tylko wyrostki skórki (kolce); ciernie kaktusów to liście, a ciernie głogu to pędy (przy konkretnych gatunkach — do potwierdzenia).
 
 **Zadania w stylu LKO**
 
@@ -425,7 +438,7 @@ Fasola ma dwa liścienie z zapasem, zboże — bielmo. Ziarno zboża to owoc!
 
 **Z3. (3 pkt)** Zaplanuj doświadczenie: czy do kiełkowania nasion fasoli potrzebny jest tlen? Wskaż próbę badawczą, kontrolną i czynniki, które utrzymasz jednakowe.
 
-**Z4. (2 pkt) — odczyt danych (nasiona lnu).** W doświadczeniu badano wpływ nawożenia azotem na skład nasion lnu (dane przykładowe zgodne z tendencją opisywaną w literaturze rolniczej):
+**Z4. (2 pkt) — odczyt danych (nasiona lnu).** W doświadczeniu badano wpływ nawożenia azotem na skład nasion lnu (fikcyjny zestaw danych dydaktycznych; wartości nie pochodzą z konkretnego badania):
 
 | Nawożenie azotem (kg/ha) | 0 | 40 | 80 | 120 |
 |---|---|---|---|---|
@@ -491,7 +504,7 @@ CW1. B, C, D, A, E (nasiono i owoc rozwijają się równolegle po zapłodnieniu)
 |---|---|---|---|---|
 | korzenie | brak (chwytniki) | są (przybyszowe) | są | są |
 | tkanki przewodzące | brak typowych | są | są | są |
-| kwiaty | brak | brak | brak (szyszki) | **są** |
+| kwiaty | brak | brak | zredukowane, jednopłciowe kwiaty bez okwiatu (u iglastych tworzą szyszki) | **są** (z zalążnią) |
 | nasiona | brak | brak | **nagie** (na łuskach) | **w owocu** |
 | rozmnażanie | zarodniki | zarodniki | nasiona | nasiona |
 | woda do zapłodnienia | potrzebna | potrzebna | niepotrzebna | niepotrzebna |
@@ -500,6 +513,11 @@ CW1. B, C, D, A, E (nasiono i owoc rozwijają się równolegle po zapłodnieniu)
 
 @viz drzewa-krzewy | Drzewo, krzew, pnącze — pokrój | kliknij, znajdź, podpisz
 @opis Cztery sylwetki: drzewo liściaste (jeden pień i szeroka korona), drzewo iglaste (stożkowata korona), krzew (wiele pędów od ziemi) i pnącze (cienki pęd oplatający podporę). Wniosek: drzewo ma jeden pień, krzew wiele pędów od podstawy, a pnącze potrzebuje podpory.
+
+**Zadanie (porównaj):** podaj dwie cechy, po których odróżnisz drzewo od krzewu. **Odpowiedź:** drzewo ma jeden wyraźny pień i jest wyższe; krzew ma kilka pni wyrastających z podstawy i jest niższy.
+
+**Zadanie (rozpoznaj):** czym różni się pnącze od krzewu? **Odpowiedź:** pnącze nie utrzymuje się samo — rośnie w górę, opierając się o podpory, a krzew stoi samodzielnie na kilku pniach.
+
 
 Cztery drzewa liściaste często występujące przy wodzie i w wilgotnych lasach:
 
@@ -538,20 +556,43 @@ Wierzba była znana w medycynie od starożytności. Jej kora zawiera salicynę, 
 **Porost** to trwały związek (symbioza) **grzyba** z **glonem lub sinicą**: grzyb daje wodę, sole i ochronę, glon — produkty fotosyntezy. Porosty są wrażliwe na zanieczyszczenie powietrza (zwłaszcza SO₂), dlatego służą jako **wskaźniki czystości powietrza** (skala porostowa).
 :::
 
+**Jak grzyb pobiera pokarm?** Grzyb nie zjada pokarmu tak jak zwierzę. Wydziela do otoczenia enzymy, które rozkładają duże cząsteczki substancji organicznych na mniejsze. Następnie wchłania produkty tego rozkładu przez powierzchnię komórek — to **trawienie zewnętrzne**. Dlatego grzybnia może przerastać podłoże będące źródłem pokarmu, na przykład ściółkę lub drewno. Owocnik służy przede wszystkim wytwarzaniu i rozsiewaniu zarodników, a nie pobieraniu pokarmu.
+
+**Pytanie sprawdzające:** dlaczego rozległa, silnie rozgałęziona grzybnia ułatwia grzybowi odżywianie? **Odpowiedź (1 pkt):** zwiększa powierzchnię kontaktu z podłożem, do którego wydzielane są enzymy i z którego wchłaniane są produkty trawienia.
+
+**Mikoryza** to związek grzyba z korzeniami rośliny. Strzępki grzyba zwiększają zasięg pobierania wody i soli mineralnych, między innymi związków fosforu. Roślina przekazuje grzybowi część związków organicznych powstałych w fotosyntezie. Korzyści obu partnerów wynikają z wymiany różnych zasobów: grzyb pomaga pozyskiwać wodę i składniki mineralne, a roślina dostarcza mu związki organiczne.
+
+::: mnemonik
+**Mikoryza: od grzyba — woda i sole; od rośliny — związki organiczne.**
+:::
+
 **Znaczenie:** pożyteczne — rozkład materii organicznej, mikoryza, pożywienie (pieczarka, borowik), drożdże (pieczywo, fermentacja), pleśnie *Penicillium* — **penicylina** i sery pleśniowe; szkodliwe — grzyby trujące (**muchomor sromotnikowy** — śmiertelnie trujący), choroby roślin, grzybice ludzi, psucie żywności, toksyny pleśni.
 
 ::: karta warning | Grzybobranie
 Zbieraj tylko grzyby, które znasz na pewno; w razie wątpliwości — do sanepidu. Młody muchomor sromotnikowy bywa mylony z pieczarką i gąską zielonką: ma **białe blaszki**, **pierścień** i **pochwę** u nasady trzonu.
 :::
 
+**Zadanie [D] (planowanie i analiza danych): mikoryza a wzrost roślin.** Badano dwie grupy siewek tego samego gatunku, o podobnej początkowej wielkości. Jedna grupa rosła z grzybem mikoryzowym, druga bez niego. Pozostałe warunki utrzymano jednakowe. Każdy wariant obejmował kilka niezależnych doniczek. Dane są fikcyjnym zestawem dydaktycznym.
+
+| Wariant | Średnia sucha masa siewki |
+|---|---:|
+| Bez grzyba mikoryzowego | 1,2 g |
+| Z grzybem mikoryzowym | 1,8 g |
+
+a) Wskaż zmienną niezależną i zależną. b) Zaproponuj podpisy osi wykresu słupkowego. c) Sformułuj wniosek. d) Wyjaśnij, dlaczego wynik nie dowodzi, że mikoryza zawsze zwiększa wzrost każdej rośliny.
+
+**Odpowiedź (5 pkt):** 1) zmienna niezależna: obecność grzyba mikoryzowego (1 pkt); 2) zmienna zależna: średnia sucha masa siewki (1 pkt); 3) oś pozioma: wariant doświadczenia, pionowa: średnia sucha masa siewki [g] (1 pkt); 4) w badanych warunkach siewki z grzybem osiągnęły większą średnią suchą masę (1 pkt); 5) zbadano określony gatunek i określone warunki, więc wyniku nie można uogólniać na wszystkie rośliny i środowiska (1 pkt).
+
 ## 6 | Tkanki zwierzęce (na przykładzie człowieka) [[basic:E8]] {#tkanki-zwierzece}
+
+W tej lekcji organizm człowieka służy przede wszystkim do poznawania tkanek oraz związku ich budowy z funkcją. Szczegółowa anatomia układów narządów stanowi osobny dział kursu.
 
 | Tkanka | Budowa / przystosowanie | Funkcja | Przykład |
 |---|---|---|---|
 | **nabłonkowa** | komórki ściśle przylegają, mało substancji międzykomórkowej | ochrona, wydzielanie, wchłanianie | naskórek, wyściółka jelita, gruczoły |
 | **mięśniowa** | komórki wydłużone, kurczliwe | ruch | gładka (narządy wewnętrzne — niezależna od woli), poprzecznie prążkowana szkieletowa (zależna od woli), sercowa |
-| **łączna** | komórki zwykle luźno rozmieszczone w dużej ilości substancji międzykomórkowej | podpora, łączenie, transport, magazynowanie, obrona | łączna właściwa, tłuszczowa, chrzęstna, kostna, **krew** i limfa |
-| **nerwowa** | **neurony** z wypustkami | odbieranie i przewodzenie bodźców | mózg, rdzeń, nerwy |
+| **łączna** | komórki zwykle luźno rozmieszczone w zwykle dużej ilości substancji międzykomórkowej | podpora, łączenie, transport, magazynowanie, obrona | łączna właściwa, tłuszczowa, chrzęstna, kostna, **krew** i limfa |
+| **nerwowa** | **neurony** z wypustkami (oraz komórki glejowe — podporowe i odżywcze) | odbieranie i przewodzenie bodźców | mózg, rdzeń, nerwy |
 
 ### 6.1 Tkanki zwierzęce — od zera {#tkanki-zwierzece-szczegolowo}
 
@@ -573,7 +614,8 @@ Zbieraj tylko grzyby, które znasz na pewno; w razie wątpliwości — do sanepi
 | tłuszczowa | niewiele; komórki z kroplą tłuszczu | zapas energii, izolacja cieplna, amortyzacja | tłuszcz podskórny, wokół nerek |
 | chrzęstna | elastyczna, sprężysta | amortyzacja, podpora | małżowina uszna, nos, powierzchnie stawów |
 | kostna | twarda (sole wapnia i fosforu) | podpora, ochrona, magazyn wapnia | kości szkieletu |
-| krew i limfa | płynna (osocze) | transport, obrona | erytrocyty, leukocyty, płytki krwi |
+| krew | płynna (osocze) | transport, obrona | erytrocyty, leukocyty, płytki krwi |
+| limfa | płynna (osocze limfy) | transport, odpływ płynu z tkanek, obrona | limfocyty i inne leukocyty; brak erytrocytów i płytek |
 
 ::: mnemonik
 Łączna łączy, kostna podpiera, tłuszczowa zapas odkłada, krew krąży.
@@ -654,6 +696,11 @@ T6. a) Nabłonek walcowaty (jednowarstwowy); wchłanianie substancji odżywczych
 @viz polip-meduza | Polip i meduza | kliknij część, znajdź, podpisz
 @opis Po lewej polip: walcowate ciało przytwierdzone stopą, u góry otwór gębowy otoczony czułkami. Po prawej meduza: galaretowaty parasol, z dołu ramiona gębowe i czułki. Wniosek: to ten sam plan budowy (dwie warstwy ciała, jeden otwór gębowy), tylko w formie osiadłej i pływającej.
 
+**Zadanie (przyporządkuj):** które elementy należą do meduzy, a które do polipa? Podaj po dwa. **Odpowiedź:** meduza — parasol (dzwon), ramiona gębowe, czułki meduzy; polip — stopa przytwierdzona do podłoża, czułki z parzydełkami wokół otworu gębowego.
+
+**Zadanie (wnioskuj):** które z tych dwóch form jest bardziej przystosowana do pływania, a która do życia osiadłego? **Odpowiedź:** meduza (swobodne pływanie), polip (przytwierdzony stopą do podłoża).
+
+
 **Gąbki (Porifera)** — wodne zwierzęta osiadłe, bez prawdziwych tkanek i bez układu nerwowego. Woda wpływa do ciała przez pory, a wypływa przez większy otwór (osculum). Nie mają ust ani odbytu.
 
 **Parzydełkowce (Cnidaria)** — wodne zwierzęta z tkankami (nabłonkowa, mięśniowa, nerwowa), z jednym otworem pełniącym rolę ust i odbytu, otoczonym parzydełkami (knidocytami). Mają symetrię promienistą i występują jako polip (np. hydra, ukwiał) lub meduza.
@@ -667,7 +714,7 @@ T6. a) Nabłonek walcowaty (jednowarstwowy); wchłanianie substancji odżywczych
 | Parzydełka | brak | są |
 | Przykłady | gąbka kąpielowa | hydra, meduza, koral |
 
-**Pułapka:** gąbki nie mają symetrii promienistej, bo są asymetryczne. Symetria promienista jest u parzydełkowców.
+**Pułapka:** większość gąbek jest asymetryczna; niektóre mają kształt o symetrii promienistej (do potwierdzenia w źródle zoologicznym). Symetria promienista jest typowa dla parzydełkowców.
 
 **Pytanie kontrolne:** podaj trzy cechy, które odróżniają gąbki od parzydełkowców.
 
@@ -681,7 +728,7 @@ T6. a) Nabłonek walcowaty (jednowarstwowy); wchłanianie substancji odżywczych
 ::: karta core | Tasiemiec — przystosowania do pasożytnictwa
 - **główka (skoleks) z przyssawkami** (u tasiemca uzbrojonego także **haki**) — przytwierdzanie do jelita;
 - **brak układu pokarmowego** — wchłania strawiony pokarm całą powierzchnią ciała;
-- ciało z członów; każdy człon jest obojnakiem i wytwarza **ogromną liczbę jaj** — zwiększa szansę zakażenia żywiciela.
+- ciało z członów; dojrzałe człony zawierają męskie i żeńskie narządy rozrodcze, a w członach macicznych gromadzą się **liczne jaja**. Zjedzenie wieprzowiny z żywymi wągrami prowadzi do dorosłego tasiemca w jelicie; połknięcie jaj tasiemca uzbrojonego może prowadzić do wągrzycy (larwy w tkankach człowieka).
 **Cykl:** człowiek (żywiciel ostateczny) ← zjada surowe lub niedogotowane mięso z **wągrami** (larwami) ← świnia (t. uzbrojony) lub bydło (t. nieuzbrojony) jako żywiciel pośredni.
 **Profilaktyka:** nie jeść surowego ani niedogotowanego mięsa, kupować mięso z kontroli weterynaryjnej, myć ręce.
 :::
@@ -736,7 +783,7 @@ Inne pasożytnicze nicienie: glista ludzka (niemyte warzywa i owoce), włosień 
 | Środowisko | głównie woda (stonoga — ląd) | wszystkie środowiska | głównie ląd |
 | Przykłady | rak, krab, stonoga | pszczoła, motyl, chrząszcz | pająk krzyżak, kleszcz |
 
-**Wije** (stonoga, krocionóg) to osobna grupa stawonogów: ciało z wielu jednakowych segmentów, każdy z parą odnóży (krocionóg — z dwiema), jedna para czułków, oddychanie tchawkami; żyją w wilgotnej glebie i ściółce.
+**Wije** (wij drewniak, krocionóg) to osobna grupa stawonogów: ciało z wielu jednakowych segmentów, każdy z parą odnóży (krocionóg — dwie pary na większości segmentów), jedna para czułków, oddychanie tchawkami; żyją w wilgotnej glebie i ściółce.
 
 ::: karta understand | Przeobrażenie owadów
 **Zupełne:** jajo → larwa → **poczwarka** → owad dorosły (motyl, chrząszcz, mucha, pszczoła). **Niezupełne:** jajo → larwa podobna do dorosłego → owad dorosły, **bez poczwarki** (konik polny, ważka, pluskwiak).
@@ -751,7 +798,7 @@ Inne pasożytnicze nicienie: glista ludzka (niemyte warzywa i owoce), włosień 
 **Pytanie kontrolne:** wymień trzy funkcje szkieletu zewnętrznego i wyjaśnij, dlaczego stawonogi się liniają.
 
 ::: mnemonik
-**Owady mają 6 nóg, pajęczaki 8, skorupiaki 10 lub więcej.**
+**Owady mają 6 nóg, pajęczaki 8, rak 10.** Dorosły owad ma 3 pary odnóży krocznych, pająk 4, rak 5 par (rak jest przykładem skorupiaków, a nie całą grupą).
 :::
 
 ### 7.5 Mięczaki {#mieczaki}
@@ -772,6 +819,11 @@ Inne pasożytnicze nicienie: glista ludzka (niemyte warzywa i owoce), włosień 
 
 @viz bezkregowce-sylwetki | Sylwetki bezkręgowców — rozpoznaj grupę | kliknij, znajdź, podpisz
 @opis Siedem uproszczonych sylwetek: gąbka (bezkształtna z porami), parzydełkowiec (walec z czułkami), płaziniec (płaski listek), nicień (cienka nitka), pierścienica (ciało z pierścieniami), ślimak (muszla i noga), stawonóg (pancerz i odnóża). Wniosek: grupę rozpoznaje się po kształcie ciała i obecności segmentów, muszli lub odnóży.
+
+**Zadanie (przyporządkuj):** podaj grupę bezkręgowca dla każdej z cech: ciało spłaszczone; ciało obłe; ciało segmentowane; miękkie ciało z nogą; stawowane odnóża. **Odpowiedź:** płazińce; nicienie; pierścienice; mięczaki; stawonogi.
+
+**Zadanie (rozpoznaj):** które z sylwetek ma symetrię dwustronną, a które nie? **Odpowiedź:** gąbka nie ma symetrii; pozostałe wymienione grupy mają symetrię dwustronną (poza parzydełkowcami, które mają symetrię promienistą).
+
 
 ::: karta core | Klucz — po jednej najważniejszej cesze
 - ciało płaskie jak listek lub taśma → **płaziniec**;
@@ -833,6 +885,8 @@ R1. Parzyste: piersiowa i brzuszna; nieparzyste: grzbietowa, ogonowa i odbytowa.
 @opis Pierścień: jaja w wodzie → kijanka ze skrzelami → kijanka z odnóżami i płucami → młoda żaba → dorosła żaba. Wniosek: płazy mają rozwój z przeobrażeniem i potrzebują wody do rozmnażania.
 **Bezogonowe** (żaba, ropucha, rzekotka) i **ogoniaste** (traszka, salamandra). Żyją w wodzie i na lądzie. **Skóra** cienka, wilgotna, z gruczołami śluzowymi — **oddychanie skórą** i **płucami** (kijanki — skrzelami). Kończyny — u żaby tylne skoczne z błoną pływną. **Rozmnażanie:** u bezogonowych **zapłodnienie zewnętrzne** w wodzie, jaja w osłonkach (**skrzek**); **rozwój złożony z przeobrażeniem**: kijanka (skrzela, ogon, życie w wodzie) → młoda żaba. Zimują w odrętwieniu. **W Polsce wszystkie płazy są chronione.** **Znaczenie:** zjadają owady (także szkodniki), są pokarmem innych zwierząt, świadczą o czystości środowiska.
 
+Rozwój żaby nie opisuje wszystkich płazów. U traszek i salamander zapłodnienie jest zwykle wewnętrzne. Larwy płazów ogoniastych mają skrzela zewnętrzne i są przeważnie drapieżne. Ogon pozostaje u dorosłych płazów ogoniastych, a u żab zanika podczas przeobrażenia. Szczegóły dotyczące salamandry plamistej i rodzenia larw wymagają potwierdzenia w atlasie krajowych płazów.
+
 ### 8.3 Gady {#gady}
 **Przystosowania do lądu:** sucha skóra pokryta **rogowymi łuskami** lub tarczkami (chroni przed utratą wody; linienie), oddychanie **płucami**, **zapłodnienie wewnętrzne**, jaja z dużą ilością żółtka w **skórzastej lub wapiennej osłonce** składane na lądzie, **rozwój prosty**. **W Polsce:** jaszczurka zwinka, padalec (beznoga jaszczurka), **żmija zygzakowata** (jedyny jadowity wąż w Polsce), zaskroniec (żółte plamy na głowie), żółw błotny. W Polsce wszystkie rodzime gatunki gadów podlegają ochronie gatunkowej (zakres wynika z aktualnych przepisów — do weryfikacji w rozporządzeniu). **Znaczenie:** zjadają owady i gryzonie.
 
@@ -842,7 +896,7 @@ R1. Parzyste: piersiowa i brzuszna; nieparzyste: grzbietowa, ogonowa i odbytowa.
 @opis Przekrój jaja ptaka z numerami: skorupa, błony podskorupowe, komora powietrzna na tępym końcu, białko, żółtko w błonie żółtkowej, tarczka zarodkowa na żółtku, chalazy. Wniosek: skorupa chroni i przepuszcza gazy, żółtko jest zapasem pokarmu, tarczka to miejsce rozwoju zarodka, a chalazy utrzymują żółtko pośrodku.
 **Przystosowania do lotu:** **pióra** (lot, ochrona przed utratą ciepła), kończyny przednie przekształcone w **skrzydła**, lekkie **kości pneumatyczne** (wypełnione powietrzem), **mostek z grzebieniem** (przyczep silnych mięśni lotnych), **worki powietrzne** wspomagające wydajne oddychanie płucami, dziób bez zębów. **Stałocieplne.** **Rozmnażanie:** zapłodnienie wewnętrzne, **jaja z wapienną skorupką** wysiadywane w gniazdach, opieka nad potomstwem. **Zagniazdowniki** — pisklęta nagie i ślepe, długo w gnieździe (wróbel, sikora); **gniazdowniki** — pisklęta opierzone, szybko samodzielne (kura, kaczka). Kształt dzioba i nóg zależy od pokarmu i środowiska. **Znaczenie:** zjadają owady i gryzonie, rozsiewają nasiona, drób.
 
-**Oddychanie ptaków.** Płuca ptaków są przepływowe. Powietrze przepływa przez nie w jednym kierunku, a wymiana gazowa zachodzi w płucach. Worki powietrzne (przednie i tylne) magazynują powietrze i nie wymieniają gazów. W jednym pełnym cyklu oddechowym powietrze przechodzi przez płuca dwukrotnie, co zwiększa wydajność oddychania. (Dokładną kolejność przepływu do potwierdzenia z podręcznikiem.)
+**Oddychanie ptaków.** Płuca ptaków są przepływowe. Powietrze przepływa przez nie w jednym kierunku, a wymiana gazowa zachodzi w płucach. Worki powietrzne (przednie i tylne) magazynują powietrze i nie wymieniają gazów. W jednym pełnym cyklu oddechowym (wdech i wydech) powietrze przechodzi przez płuca dwukrotnie — za każdym razem inna porcja powietrza; to zwiększa wydajność oddychania. (Dokładną kolejność przepływu do potwierdzenia z podręcznikiem.)
 
 **Pułapka:** wymiana gazowa zachodzi w płucach, nie w workach powietrznych.
 
@@ -875,7 +929,7 @@ J1. Zapas pokarmu — żółtko; powietrze — komora powietrzna. J2. Mają twar
 ### Rozmnażanie kręgowców — jajorodność i żyworodność
 
 @viz jajo-porownanie | Jajo u różnych zwierząt — co z czego wynika | kliknij grupę
-@opis Tabela porównawcza jaja ryb i płazów, owadów, gadów, ptaków i ssaków łożyskowych (środowisko, żółtko, osłonki, błony płodowe, źródło pokarmu, opieka) oraz ścieżka ewolucyjna: jajo w wodzie → jajo owodniowe → ptaki i ssaki. Wniosek: skorupa i błony płodowe uniezależniły rozmnażanie od wody; u ssaków łożyskowych żółtko zanikło, bo pokarm daje łożysko; jajo owadów to analogia, nie pokrewieństwo.
+@opis Tabela porównawcza jaja ryb i płazów, owadów, gadów, ptaków i ssaków łożyskowych (środowisko, żółtko, osłonki, błony płodowe, źródło pokarmu, opieka) oraz rozgałęzienie od wspólnych przodków owodniowców: linia ssacza oraz linia gadzia obejmująca ptaki. Wniosek: skorupa i błony płodowe uniezależniły rozmnażanie od wody; u ssaków łożyskowych żółtko zanikło, bo pokarm daje łożysko; jajo owadów to analogia, nie pokrewieństwo.
 
 | Tryb | Gdzie rozwija się zarodek | Skąd zarodek bierze pokarm | Przykłady |
 |---|---|---|---|
@@ -912,10 +966,14 @@ Osuszanie terenów podmokłych i zanieczyszczenie wód (płazy, ryby), przegradz
 @opis Klucz w postaci kolejnych pytań tak/nie: czy ma pióra (ptaki), czy ma sierść i karmi mlekiem (ssaki), czy przez całe życie oddycha skrzelami i ma płetwy (ryby), czy skóra jest naga i wilgotna (płazy), czy ma suche rogowe łuski (gady). Udzielone odpowiedzi tworzą numerowaną ścieżkę, a na końcu pojawia się nazwa gromady. Przycisk „rozpoznaj zwierzę” losuje przykład (np. delfin, nietoperz, pingwin, konik morski, żółw) i sprawdza wynik z wyjaśnieniem pułapki. Wniosek: gromadę kręgowców rozpoznajemy po cechach budowy (pokrycie ciała, sposób oddychania, karmienie młodych), a nie po wyglądzie czy środowisku życia.
 
 ::: mnemonik
-**R P G P S** — Ryby Pływają, Gady Suną, Ptaki Szybują, Ssaki Ssą.
+**R P G P S** — Ryby Pływają, Płazy Pełzają, Gady Suną, Ptaki Szybują, Ssaki Ssą.
 :::
 
 ## 9 | Doświadczenia biologiczne — jak je planować [[exam:KONKURS]] {#doswiadczenia}
+
+Za wykiełkowane uznaj nasiono z widocznym korzeniem zarodkowym. W każdym wariancie stosuj kilka niezależnych pojemników; wiele nasion w jednym pojemniku nie zastępuje niezależnych powtórzeń. Porównuj warianty przy jednakowych warunkach i wspólnym kryterium zakończenia obserwacji.
+
+Nie jedz badanego materiału i nie wąchaj pleśni. Kości i ocet stosuj pod nadzorem osoby dorosłej; nie ogrzewaj kości ani kwasu. Zadanie o bakteriach na dłoni wykonuj na dostarczonych danych, bez domowej hodowli nieznanych drobnoustrojów.
 
 ::: karta core | Schemat doświadczenia
 1. **Problem badawczy** — pytanie, np. „Czy woda jest potrzebna do kiełkowania nasion fasoli?”
@@ -923,7 +981,7 @@ Osuszanie terenów podmokłych i zanieczyszczenie wód (płazy, ryby), przegradz
 3. **Próba badawcza** — warunki zmienione w **jednym** badanym czynniku (nasiona bez wody).
 4. **Próba kontrolna** — **wszystkie warunki takie same** jak w badawczej, ale badany czynnik **niezmieniony** (nasiona z wodą). Służy do porównania wyników.
 5. **Wyniki** — obserwacje i pomiary (tabela, wykres); kilka powtórzeń, ta sama liczba nasion.
-6. **Wniosek** — odpowiedź na problem; potwierdza albo obala hipotezę.
+6. **Wniosek** — odpowiedź na problem; wspiera hipotezę, jest z nią niezgodny albo nie rozstrzyga problemu.
 :::
 
 ::: nie-myl
@@ -941,7 +999,7 @@ BHP: brak szczególnych zagrożeń; po doświadczeniu umyć ręce.
 :::
 
 ::: karta understand | Trzy pułapki w zadaniach o doświadczeniach
-- Próba kontrolna **nie** jest „próbą bez niczego” — to próba z badanym czynnikiem w warunkach naturalnych / optymalnych.
+- Próba kontrolna **nie** jest „próbą bez niczego” — to punkt odniesienia; zależnie od pytania może obejmować brak czynnika, jego obecność lub ustaloną wartość odniesienia.
 - W dwóch próbach może różnić się **tylko jeden** czynnik.
 - Wniosek musi dotyczyć **badanego** czynnika i badanego organizmu — nie uogólniaj na „wszystkie rośliny”.
 :::
@@ -1006,7 +1064,7 @@ Ułóż prosty dwudzielny klucz (3 kroki) pozwalający rozróżnić: mech, papro
 „Wirusy to najmniejsze bakterie.” || Wirusy nie mają budowy komórkowej i nie są organizmami; bakterie są komórkami.
 „Grypę leczy się antybiotykiem.” || Antybiotyki działają na bakterie, nie na wirusy.
 „Wszystkie bakterie są chorobotwórcze.” || Większość jest pożyteczna lub obojętna: rozkład, wiązanie azotu, fermentacja mlekowa, bakterie jelitowe.
-„Mchy mają korzenie.” || Mają chwytniki, które tylko przytwierdzają roślinę.
+„Mchy mają korzenie.” || Mają chwytniki, które głównie przytwierdzają roślinę; wodę pobierają przede wszystkim powierzchnią.
 „Paprocie rozmnażają się przez nasiona.” || Paprociowe rozmnażają się przez zarodniki; nasiona mają dopiero nagonasienne i okrytonasienne.
 „Grzyby to rośliny bez liści.” || Grzyby to osobne królestwo: brak chlorofilu, ściana z chityny, cudzożywność.
 „Pająk to owad.” || Pająk to pajęczak: 4 pary odnóży, brak czułków, głowotułów i odwłok.
@@ -1073,7 +1131,7 @@ a) Czy temperatura wpływa na kiełkowanie nasion rzeżuchy? b) A — 20°C (war
 @opis Mikroskop z numerami: okular, tubus, rewolwer, obiektyw, stolik, preparat, kondensor z diafragmą, źródło światła, śruby makro- i mikrometryczna, ramię, podstawa. Wniosek: powiększenie = okular × obiektyw, ostrość zaczynamy od małego powiększenia i śruby makro, a kończymy mikro.
 
 ::: karta core | Jak analizować dane
-1. Przeczytaj tytuł i jednostki. 2. Sprawdź, co jest na osi poziomej i pionowej (w tabeli: co w wierszach i kolumnach). 3. Odczytuj wartości, nie zgaduj między podziałkami. 4. Porównaj grupy. 5. Napisz wniosek tylko o badanym czynniku.
+1. Przeczytaj tytuł i jednostki. 2. Sprawdź, co jest na osi poziomej i pionowej (w tabeli: co w wierszach i kolumnach). 3. Odczytuj wartości z uwzględnieniem skali; między podziałkami szacuj i zaznacz, że wartość jest przybliżona. 4. Porównaj grupy. 5. Napisz wniosek tylko o badanym czynniku.
 :::
 
 **D1. (3 pkt)** Sprawdzano wpływ temperatury na kiełkowanie po 20 nasion:
@@ -1110,6 +1168,11 @@ D5. a) Roślina w ciemnej szafce (tu zmieniamy badany czynnik — odbieramy świ
 
 @viz preparat-mikroskopowy | Preparat ze skórki cebuli — elementy | poznaj, znajdź, podpisz
 @opis Przekrój boczny preparatu: na dole szkiełko podstawowe, na nim kropla wody ze skórką cebuli, nad nią cienkie szkiełko nakrywkowe; obok zakraplacz. Wniosek: obiekt leży w kropli wody między dwoma szkiełkami, a nakrywkowe przykłada się pod kątem, by uniknąć pęcherzyków powietrza.
+
+**Zadanie (ułóż kolejność):** ułóż w kolejności przygotowania preparatu: szkiełko nakrywkowe, skórka liścia cebuli, kropla wody, szkiełko podstawowe. **Odpowiedź:** szkiełko podstawowe → kropla wody (zakraplacz) → skórka liścia cebuli → szkiełko nakrywkowe.
+
+**Zadanie (wnioskuj):** po co dodajemy kroplę wody? **Odpowiedź:** woda chroni komórki przed wysychaniem i pozwala lepiej rozłożyć preparat pod szkiełkiem nakrywkowym.
+
 
 **Preparat ze skórki cebuli — kolejność:** 1) przygotuj zestaw (szkiełko podstawowe i nakrywkowe, zakraplacz, woda, igła preparacyjna); 2) nanieś kroplę wody na szkiełko podstawowe; 3) umieść w niej fragment skórki cebuli; 4) przyłóż szkiełko nakrywkowe, opuszczając je pod kątem (bez pęcherzyków powietrza); 5) umieść preparat na stoliku mikroskopu; 6) obserwuj, zaczynając od najmniejszego powiększenia.
 
@@ -1242,7 +1305,7 @@ Tkanka twórcza | dzieli się — wzrost rośliny (wierzchołki pędu i korzenia
 Drewno | przewodzi wodę z solami w górę | basic:rosliny
 Łyko | przewodzi produkty fotosyntezy | basic:rosliny
 Aparaty szparkowe | w skórce liścia — wymiana gazowa i transpiracja | basic:rosliny
-Chwytniki | „korzenie” mchów — tylko przytwierdzają | basic:rosliny
+Chwytniki | „korzenie” mchów — głównie przytwierdzają; wodę pobierają przede wszystkim powierzchnią | basic:rosliny
 Kupki zarodni | skupienia zarodni na spodzie liści paproci | basic:rosliny
 Kłącze | podziemna łodyga paproci | basic:rosliny
 Dlaczego „nagonasienne”? | nasiona nieosłonięte owocem, na łuskach szyszek | basic:rosliny

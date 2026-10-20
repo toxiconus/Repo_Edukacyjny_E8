@@ -77,7 +77,7 @@ Fotosynteza i oddychanie to dwie strony jednego obiegu. Rośliny wiążą energi
 
 ## 1 | Poziomy organizacji organizmów [[basic:E8]] {#poziomy}
 
-@viz lancuch {kroki="komórka|podstawowa jednostka > tkanka|komórki o podobnej budowie i funkcji > narząd|kilka tkanek, wspólna funkcja > układ narządów|narządy współpracujące > organizm|całość"} | Od komórki do organizmu | kliknij poziom
+@viz lancuch {kroki="komórka|podstawowa jednostka > tkanka|komórki o podobnej budowie i funkcji > narząd|kilka tkanek, wspólna funkcja > układ narządów|narządy współpracujące > organizm|całość" opisy="Najmniejsza jednostka życia: ma błonę, cytoplazmę i materiał genetyczny; sama może żyć i się rozmnażać. > Grupa komórek o podobnej budowie i wspólnej funkcji, np. tkanka mięśniowa. > Kilka różnych tkanek współpracujących przy jednej funkcji, np. serce. > Narządy współpracujące w jednym procesie, np. układ pokarmowy. > Całość złożona z układów, zdolna do samodzielnego życia."} | Od komórki do organizmu | kliknij poziom
 @opis Łańcuch hierarchii organizmu: komórka → tkanka → narząd → układ narządów → organizm. Kliknięcie poziomu pokazuje, co go tworzy. Wniosek: każdy wyższy poziom składa się z elementów niższego i ma nową funkcję.
 
 Komórki o podobnej budowie i funkcji tworzą **tkanki**, tkanki budują **narządy**, narządy współtworzą **układy narządów**. Na początku hierarchii stoją **atomy** i **cząsteczki** (np. atom węgla w cząsteczce glukozy). W konwencji olimpijskiej atom jest pierwszym poziomem organizacji życia: atom → cząsteczka → organelle → komórka → tkanka → narząd → układ narządów → organizm → populacja → biocenoza → ekosystem → biosfera (konwencję poziomów do potwierdzenia z materiałami etapu). **Nie każdy organizm ma wszystkie poziomy:** bakteria jest jedną komórką, a mchy nie mają prawdziwych tkanek przewodzących (ksylemu i floemu) takich jak rośliny naczyniowe.
@@ -165,7 +165,7 @@ Woda jest najliczniejszym składnikiem większości organizmów. U dorosłego cz
 
 - **Glukoza** to najważniejszy cukier prosty: z niej komórki uzyskują energię w oddychaniu.
 - **Skrobia** to zapas glukozy u roślin, np. w ziemniaku, ziarnie pszenicy czy nasionach fasoli.
-- **Glikogen** to zapas glukozy u zwierząt i grzybów, głównie w wątrobie i mięśniach.
+- **Glikogen** to zapas glukozy u zwierząt i grzybów. U człowieka jest magazynowany przede wszystkim w wątrobie i mięśniach szkieletowych.
 - **Celuloza** buduje ściany komórkowe roślin. Człowiek nie trawi jej enzymami, ale pełni rolę błonnika — wspomaga pracę jelit.
 
 ::: mnemonik
@@ -178,7 +178,7 @@ Krowa nie trawi celulozy sama. Robią to za nią mikroorganizmy żyjące w żwac
 
 ### 1a.3 Lipidy — tłuszcze, oleje i woski {#lipidy}
 
-**Lipidy** to grupa związków hydrofobowych, czyli nie mieszających się z wodą. Do lipidów należą tłuszcze, oleje, fosfolipidy, woski i steroidy.
+**Lipidy** to zróżnicowana grupa związków organicznych, na ogół słabo rozpuszczalnych w wodzie. Do lipidów należą tłuszcze, oleje, fosfolipidy, woski i steroidy. Fosfolipidy mają część hydrofilową, oddziałującą z wodą, oraz część hydrofobową, unikającą kontaktu z wodą.
 
 | Rodzaj | Funkcja | Przykład |
 |---|---|---|
@@ -365,7 +365,7 @@ Mitochondria i chloroplasty mają **własne DNA** (mtDNA, cpDNA) i rybosomy podo
 | wakuola | brak | duża | małe lub brak | są |
 | rybosomy | są | są | są | są |
 
-::: karta core | Typ komórki w 10 sekund
+::: karta core | Jak rozpoznać typ komórki
 1. Brak jądra → **bakteria** (lub dojrzały erytrocyt ssaka w zadaniu o krwi).
 2. Jest chloroplast → **roślina** (lub glon).
 3. Ściana bez chloroplastu → **grzyb** albo niezielona tkanka rośliny (np. skórka cebuli, korzeń) — rozstrzyga skład ściany.
@@ -380,6 +380,8 @@ Mitochondria i chloroplasty mają **własne DNA** (mtDNA, cpDNA) i rybosomy podo
 ## 5 | Błona komórkowa i transport [[understand:TRENING]] {#blona}
 
 Błona oddziela komórkę od otoczenia, ale nie jest szczelna — jest **selektywnie przepuszczalna** (jedne substancje przechodzą łatwiej, inne trudniej).
+
+Podstawą błony jest **dwuwarstwa fosfolipidowa**: hydrofilowe główki fosfolipidów są zwrócone do wody po obu stronach błony, a hydrofobowe ogony — do wnętrza dwuwarstwy. **Białka błonowe** umożliwiają transport substancji, które nie przechodzą swobodnie przez lipidowe wnętrze.
 
 | Proces | Co to jest | Przykład |
 |---|---|---|
@@ -404,12 +406,14 @@ $$ 6CO₂ + 6H₂O —(światło, chlorofil)→ C₆H₁₂O₆ + 6O₂$$
 
 Słownie: dwutlenek węgla + woda → glukoza + tlen. To zapis **sumaryczny** — w rzeczywistości proces ma wiele etapów.
 
+Roślina nie pobiera z gleby gotowego pokarmu w postaci cukrów. Z gleby pobiera wodę i sole mineralne, a dwutlenek węgla pobiera z otoczenia. Węgiel zawarty w powstających podczas fotosyntezy związkach organicznych pochodzi z dwutlenku węgla. Glukoza może następnie służyć do wytwarzania materiałów budulcowych i zapasowych.
+
 | Element | Skąd / dokąd |
 |---|---|
 | CO₂ | z powietrza przez **aparaty szparkowe** liścia |
 | H₂O | z gleby przez korzenie (włośniki), drewnem do liści |
 | światło | energia; pochłania ją chlorofil |
-| glukoza | budulec (celuloza ściany), materiał zapasowy (skrobia), „paliwo” do oddychania; rozprowadzana łykiem |
+| glukoza | zużywana w oddychaniu oraz do budowy celulozy (ściany) i skrobi (zapas); w roślinie transportowana łykiem głównie jako sacharoza |
 | O₂ | uwalniany do atmosfery przez aparaty szparkowe; częściowo zużywany w oddychaniu |
 
 **Czynniki wpływające na intensywność fotosyntezy:** natężenie światła, stężenie CO₂, temperatura, dostęp do wody. Zbyt wysoka temperatura obniża intensywność procesu, ponieważ może uszkadzać białka i enzymy uczestniczące w procesie.
@@ -419,7 +423,7 @@ Słownie: dwutlenek węgla + woda → glukoza + tlen. To zapis **sumaryczny** �
 @viz fotosynteza-oddychanie | Fotosynteza i oddychanie w komórce liścia | suwak światła
 @opis Komórka liścia: chloroplast (fotosynteza) i mitochondrium (oddychanie) z wymianą substancji; suwak światła → bilans gazów liścia (oddychanie stale, fotosynteza zależna od światła) Wniosek: kliknij elementy i przejdź kroki, aby sprawdzić, jak budowa wynika z funkcji.
 
-@viz fotosynteza-oddychanie-krazenie | Fotosynteza i oddychanie — krążenie materii i energii | przełączaj tryb, kropki płyną same
+@viz fotosynteza-oddychanie-krazenie | Fotosynteza i oddychanie — obieg materii i przepływ energii | przełączaj tryb, kropki płyną same
 @opis Chloroplast po lewej i mitochondrium po prawej; kropki płyną po strzałkach: światło i CO₂ + H₂O do chloroplastu, glukoza i O₂ do mitochondrium, CO₂ + H₂O z powrotem, ATP na zewnątrz. Przyciski wyróżniają fotosyntezę, oddychanie lub oba procesy; pod spodem tabela porównawcza. Wniosek: produkty jednego procesu są substratami drugiego, materia krąży, a energia przepływa (światło → ATP i ciepło).
 
 ::: regula
@@ -792,6 +796,8 @@ b) Sformułuj wniosek dotyczący wpływu temperatury na aktywność amylazy. **(
 c) Wyjaśnij, dlaczego w temperaturze 90°C nie zaobserwowano rozkładu skrobi. **(1 pkt)**
 
 ::: odp | Klucz
+Kryteria punktacji (4 pkt): a) 2 pkt — 1 pkt za poprawne osie i opisy, 1 pkt za punkty połączone linią i oznaczenie 70 i 90 °C jako brak reakcji; b) 1 pkt — wniosek o optimum ok. 37 °C; c) 1 pkt — denaturacja białka enzymatycznego.
+
 a) Wykres: punkty połączone linią; najniższy czas przy 37°C, wzrost czasu po obu stronach optimum; dla 70°C i 90°C brak punktu lub oznaczenie „brak reakcji”.  
 b) Aktywność amylazy zależy od temperatury: enzym działa najszybciej przy około 37°C, a przy niższych i wyższych temperaturach jego aktywność maleje.  
 c) Wysoka temperatura denaturuje białko enzymatyczne — amylaza traci strukturę przestrzenną i nie może rozkładać skrobi.
@@ -807,6 +813,8 @@ c) Zaprojektuj doświadczenie: wskaż próbę badawczą i próbę kontrolną. **
 d) Zapisz możliwą obserwację i wniosek. **(1 pkt)**
 
 ::: odp | Klucz
+Kryteria punktacji (5 pkt): a) 1 pkt — problem badawczy; b) 1 pkt — hipoteza sprawdzalna; c) 2 pkt — 1 pkt próba badawcza, 1 pkt próba kontrolna; d) 1 pkt — obserwacja i wniosek.
+
 a) Czy nasiona fasoli zawierają tłuszcz?  
 b) Nasiona fasoli zawierają tłuszcz / nie zawierają tłuszczu — hipoteza musi być sprawdzalna.  
 c) Próba badawcza: rozgniecione nasiona fasoli na papierze sączkowym. Próba kontrolna: kropla wody na papierze sączkowym; dodatkowo można użyć nasion słonecznika jako próby porównawczej z dodatnim wynikiem.  
@@ -825,6 +833,8 @@ Uzupełnij tabelę, wpisując nazwę związku organicznego oraz wyjaśnienie zwi
 | DNA w jądrze komórkowym | … | … |
 
 ::: odp | Klucz
+Kryteria punktacji (4 pkt): po 1 pkt za każdy wiersz — poprawny związek organiczny i uzasadnienie związku budowy z funkcją.
+
 - Hemoglobina — białko; ma miejsce wiążące żelazo, które umożliwia transport tlenu we krwi.  
 - Celuloza — węglowodan (wielocukier); długie, wytrzymałe włókna tworzą sztywną ścianę komórkową, chroniącą komórkę i nadając jej kształt.  
 - Fosfolipid — lipid; ma hydrofilową „głowę” i hydrofobowe „ogony”, dlatego tworzy dwuwarstwę błony komórkowej, która oddziela wnętrze komórki od otoczenia.  
