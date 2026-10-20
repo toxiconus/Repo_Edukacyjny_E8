@@ -640,7 +640,10 @@ R1. Parzyste: piersiowa i brzuszna; nieparzyste: grzbietowa, ogonowa i odbytowa.
 
 ### 8.2 Płazy {#plazy}
 
-@viz cykl {cykl="zaba"} | Rozwój żaby | animacja startuje sama, kliknij etap
+@viz przeobrazenie-plaza | Rozwój żaby | suwak etapów
+@opis Rozwój złożony żaby: skrzek → kijanka (skrzela zewnętrzne) → kijanka z kończynami → młoda żaba (zanik ogona) → żaba; suwak etapów, oddychanie i środowisko na każdym etapie Wniosek: kliknij elementy i przejdź kroki, aby sprawdzić, jak budowa wynika z funkcji.
+
+@viz cykl {cykl="zaba"} | Rozwój żaby — pierścień automatyczny | animacja startuje sama, kliknij etap
 @opis Pierścień: jaja w wodzie → kijanka ze skrzelami → kijanka z odnóżami i płucami → młoda żaba → dorosła żaba. Wniosek: płazy mają rozwój z przeobrażeniem i potrzebują wody do rozmnażania.
 **Bezogonowe** (żaba, ropucha, rzekotka) i **ogoniaste** (traszka, salamandra). Żyją w wodzie i na lądzie. **Skóra** cienka, wilgotna, z gruczołami śluzowymi — **oddychanie skórą** i **płucami** (kijanki — skrzelami). Kończyny — u żaby tylne skoczne z błoną pływną. **Rozmnażanie:** u bezogonowych **zapłodnienie zewnętrzne** w wodzie, jaja w osłonkach (**skrzek**); **rozwój złożony z przeobrażeniem**: kijanka (skrzela, ogon, życie w wodzie) → młoda żaba. Zimują w odrętwieniu. **W Polsce wszystkie płazy są chronione.** **Znaczenie:** zjadają owady (także szkodniki), są pokarmem innych zwierząt, świadczą o czystości środowiska.
 

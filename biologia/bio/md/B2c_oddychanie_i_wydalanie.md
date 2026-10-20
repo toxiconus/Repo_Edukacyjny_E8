@@ -46,7 +46,10 @@ Drogi oddechowe (1–6) służą tylko do przewodzenia powietrza. Wymiana gazów
 
 ## 2 | Mechanika wentylacji {#wentylacja}
 
-@viz wentylacja | Wdech i wydech — przepona i żebra | animacja tam i z powrotem, suwak = ręcznie
+@viz wdech-wydech | Wdech i wydech — przepona i żebra | przyciski wdech / wydech / oddychaj
+@opis Klatka piersiowa od przodu: tchawica, oskrzela, dwa płuca, żebra i kopuła przepony; przyciski wdech / wydech / oddychaj animują obniżanie i spłaszczanie przepony, unoszenie żeber, powiększanie płuc i kierunek przepływu powietrza; wskaźnik objętości klatki i ciśnienia w płucach względem atmosferycznego Wniosek: kliknij elementy i przejdź kroki, aby sprawdzić, jak budowa wynika z funkcji.
+
+@viz wentylacja | Wdech i wydech — animacja automatyczna (skrót) | animacja tam i z powrotem, suwak = ręcznie
 @opis Przekrój klatki piersiowej: płuca, przepona (kopuła), żebra. Animacja na przemian powiększa i zmniejsza klatkę: przy wdechu przepona się spłaszcza, a żebra unoszą; przy wydechu wracają. Suwak steruje ręcznie, pod rysunkiem opis fazy. Wniosek: wdech jest czynny (skurcz mięśni), spokojny wydech bierny; zmiana objętości klatki zmienia ciśnienie i wywołuje przepływ powietrza.
 
 **Wdech (inspiracja):**
@@ -67,6 +70,10 @@ Drogi oddechowe (1–6) służą tylko do przewodzenia powietrza. Wymiana gazów
 @opis Pętla z pięciu pól: rośnie CO₂ we krwi, chemoreceptory w rdzeniu i tętnicach to wykrywają, ośrodek oddechowy w rdzeniu przedłużonym reaguje, przepona i mięśnie międzyżebrowe przyspieszają oddech, CO₂ spada. Impuls krąży po strzałkach. Pokazuje sprzężenie ujemne w oddychaniu.
 
 ## 3 | Wymiana gazowa w pęcherzykach {#wymiana}
+
+@viz wymiana-gazowa | Wymiana gazowa w płucach i tkankach | przełącz tryb
+@opis Wymiana gazowa: tryb „w płucach” — pęcherzyk płucny nad naczyniem włosowatym, krew dopływa odtlenowana i odpływa utlenowana, tlen dyfunduje do krwi, CO₂ do pęcherzyka; tryb „w tkankach” — komórki nad naczyniem, kierunki odwrotne; słupki porównują ilość O₂ i CO₂ po obu stronach bariery; płynące erytrocyty Wniosek: kliknij elementy i przejdź kroki, aby sprawdzić, jak budowa wynika z funkcji.
+
 
 Ściana pęcherzyka i ściana naczynia włosowatego razem tworzą barierę o grubości rzędu **1 μm**. Gazy przechodzą przez nią dyfuzją, z miejsca o wyższym stężeniu do niższego.
 
@@ -113,6 +120,10 @@ Powietrze atmosferyczne zawiera ok. 21% O₂ i 0,04% CO₂. Powietrze pęcherzyk
 **Wątroba nie wydala**, ale przekształca toksyczny amoniak w mocznik (cykl mocznikowy, zwany też ornitynowym). Mocznik wydalają dopiero nerki.
 
 ## 6 | Budowa nerki i nefron {#nefron}
+
+@viz nefron | Nefron — filtracja i wchłanianie zwrotne | wybierz substancję
+@opis Schemat nefronu: tętniczka doprowadzająca, kłębuszek w torebce Bowmana, kanalik nerkowy (kręty, pętla nefronu), przewód zbiorczy, naczynia włosowate oplatające kanalik; wybór substancji (glukoza, aminokwasy, białka i krwinki, mocznik, sole, woda) animuje jej drogę — przefiltrowana czy nie, odzyskana do krwi czy w moczu; przełącznik ADH zmienia ilość i barwę moczu Wniosek: kliknij elementy i przejdź kroki, aby sprawdzić, jak budowa wynika z funkcji.
+
 
 @viz nefron-budowa | Nefron — części | poznaj, znajdź, podpisz
 @opis Schemat nefronu z numerami: torebka Bowmana, kłębuszek, tętniczki doprowadzająca i odprowadzająca, kanalik bliższy, pętla Henlego, kanalik dalszy, kanalik zbiorczy i naczynia okołokanalikowe. Wniosek: w kłębuszku zachodzi filtracja, w kanalikach wchłanianie zwrotne i wydzielanie, a mocz ostateczny spływa kanalikiem zbiorczym do miedniczki.

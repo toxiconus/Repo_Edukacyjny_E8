@@ -38,6 +38,10 @@ Nauczysz się budowy układu pokarmowego, procesu trawienia i wchłaniania, oraz
 
 ## 1 | Budowa przewodu pokarmowego {#s1}
 
+@viz droga-pokarmu | Droga pokarmu | „krok” prowadzi kęs
+@opis Schemat układu pokarmowego: przewód pokarmowy (jama ustna, gardło, przełyk, żołądek, dwunastnica, jelito cienkie, jelito grube z wyrostkiem, odbytnica, odbyt) i gruczoły (ślinianki, wątroba z pęcherzykiem żółciowym, trzustka); kliknij narząd, „krok” prowadzi kęs drogą pokarmu, wybór składnika podświetla narządy, w których jest trawiony i wchłaniany Wniosek: kliknij elementy i przejdź kroki, aby sprawdzić, jak budowa wynika z funkcji.
+
+
 **7 odcinków:**
 
 1. **Jama ustna** — zęby (32 u dorosłego), język (smak, mieszanie), ślinianki (3 pary: przyuszne, podżuchwowe, podjęzykowe). Ślina zawiera **amylazę ślinową** (ptyalinę), która zaczyna trawienie skrobi.
@@ -95,6 +99,10 @@ Trzy mechanizmy ochrony:
 Dodatkowo: nabłonek żołądka **odnawia się co 3–5 dni** — więc uszkodzenia są szybko naprawiane.
 
 ## 5 | Kosmki, mikrokosmki i wchłanianie {#s5}
+
+@viz kosmek-jelitowy | Kosmek jelitowy | wybierz substancję
+@opis Kosmek jelitowy w przekroju podłużnym: nabłonek jednowarstwowy z mikrokosmkami, sieć naczyń włosowatych (krew dopływająca i odpływająca do żyły wrotnej), centralne naczynie chłonne; wybór substancji (glukoza, aminokwasy, produkty trawienia tłuszczów, woda) pokazuje animowaną drogę do krwi albo limfy Wniosek: kliknij elementy i przejdź kroki, aby sprawdzić, jak budowa wynika z funkcji.
+
 
 **Kosmki (villi)** — palczaste wypusty błony śluzowej jelita cienkiego, ok. 1 mm długości. Są w nich:
 - naczynia krwionośne (włosowate) — wchłaniają aminokwasy, cukry,

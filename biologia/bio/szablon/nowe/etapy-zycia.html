@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VIZ — podgląd grafiki</title>
+<style>
+:root{--accent:#1d6b4f;--accent-soft:#e7f3ec;--surface:#fff;--surface-soft:#f3f7f4;--text:#1a2332;--text-soft:#5d6b7a;--border:#d5dee6;--border-strong:#b8c4cf;
+--viz-ink:#1a2332;--viz-mut:#5d6b7a;--viz-line:#d5dee6;--viz-bg:#fff;--viz-bg2:#f6f8f7;
+--c-basic:#2e7d32;--c-basic-bg:#e8f5e9;--c-error:#c62828;--c-error-bg:#fdecea;--c-warn:#b26a00;--c-warn-bg:#fff4e0;
+--k1:#1f6fb2;--k1-bg:#e3effa;--k2:#178a6c;--k2-bg:#e0f3ec;--k3:#e09400;--k3-bg:#fff3d6;--k4:#c0392b;--k4-bg:#fdecea;--k5:#7a3fbf;--k5-bg:#f3ecfb;--k6:#5c8a3a;--k6-bg:#eef6e6;
+--blood-o2:#d32f2f;--blood-o2-bg:#fde8e8;--blood-co2:#3949ab;--blood-co2-bg:#e8eaf8;--nerve:#f2a900;--bone:#efe6d2;--muscle:#c0574b;--skin:#f1c9a5;--fat:#f7e3a6}
+body{font:15px/1.5 Inter,system-ui,sans-serif;color:var(--text);background:#f8faf8;margin:0;padding:16px;max-width:900px}
+figure{margin:0 0 24px;background:var(--viz-bg);border:1px solid var(--border);border-radius:12px;padding:12px}
+figcaption{font-weight:700;margin-bottom:8px} svg{width:100%;height:auto;display:block}
+.vz-tools{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 10px}
+.vz-btn{border:1px solid var(--border-strong);background:var(--surface);color:var(--text);border-radius:8px;padding:6px 11px;font:700 12.5px Inter,system-ui,sans-serif;cursor:pointer;min-height:34px}
+.vz-btn:hover{border-color:var(--accent);color:var(--accent)} .vz-btn.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.vz-info{margin-top:10px;padding:10px 12px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:8px;font-size:13.5px;min-height:44px}
+.vz-info b{display:block;margin-bottom:2px} .vz-info.ok{border-left-color:var(--c-basic);background:var(--c-basic-bg)} .vz-info.bad{border-left-color:var(--c-error);background:var(--c-error-bg)}
+.vz-hit{cursor:pointer} .vz-hit:hover,.vz-hit:focus{filter:brightness(.93);outline:none} .vz-hit.sel{filter:drop-shadow(0 0 3px var(--accent))}
+input[type=range]{width:100%;accent-color:var(--accent)}
+</style></head><body>
+<script>
+/* ===== VIZ — mała biblioteka (taka sama jak w kursie). NIE ZMIENIAJ tego bloku. ===== */
+(function(){var VIZ=window.VIZ={},REG={},NS='http://www.w3.org/2000/svg';
+VIZ.define=function(id,d){REG[id]=d};
+function set(e,at){for(var k in at){var v=at[k];if(v==null)continue;if((k==='fill'||k==='stroke'||k==='stop-color')&&String(v).indexOf('var(')>=0)e.style.setProperty(k,v);else e.setAttribute(k,v)}}
+function add(e,kids){(kids||[]).forEach(function(c){if(c==null||c===false)return;e.appendChild(typeof c==='string'||typeof c==='number'?document.createTextNode(String(c)):c)});return e}
+VIZ.S=function(tag,at,kids){var e=document.createElementNS(NS,tag);set(e,at||{});return add(e,kids)};
+VIZ.H=function(tag,cls,html,kids){var e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.innerHTML=html;return add(e,kids)};
+VIZ.svg=function(w,h,label,kids){return VIZ.S('svg',{viewBox:'0 0 '+w+' '+h,role:'img','aria-label':label||'',preserveAspectRatio:'xMidYMid meet'},kids)};
+VIZ.T=function(x,y,t,o){o=o||{};return VIZ.S('text',{x:x,y:y,'text-anchor':o.a||'middle','dominant-baseline':o.b||'middle','font-size':o.s||12,'font-weight':o.w||600,fill:o.f||'var(--viz-ink)'},[t])};
+VIZ.btn=function(label,on){var b=VIZ.H('button','vz-btn');b.type='button';b.textContent=label;if(on)b.onclick=on;return b};
+var fx=VIZ.fx={};
+/* elementy z atrybutem data-k → kliknięcie / Enter pokazuje map[k] = ['Tytuł','opis'] w polu box */
+fx.info=function(root,box,map,first){function show(k,el){var d=map[k];if(!d)return;root.querySelectorAll('.vz-hit.sel').forEach(function(x){x.classList.remove('sel')});if(el)el.classList.add('sel');box.className='vz-info';box.innerHTML='<b>'+d[0]+'</b>'+d[1]}
+ root.querySelectorAll('[data-k]').forEach(function(el){el.classList.add('vz-hit');el.setAttribute('tabindex','0');el.setAttribute('role','button');el.addEventListener('click',function(){show(el.getAttribute('data-k'),el)});el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();show(el.getAttribute('data-k'),el)}})});
+ if(first)show(first,root.querySelector('[data-k="'+first+'"]'));return show};
+fx.infoBox=function(t){return VIZ.H('div','vz-info',t||'Kliknij element grafiki, aby zobaczyć wyjaśnienie.')};
+/* autoodtwarzanie: step() co ms, tylko gdy grafika widoczna; klik w grafikę zatrzymuje, przycisk wznawia */
+fx.auto=function(el,step,ms,o){o=o||{};var on=!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches),vis=false,tm=null,bar=VIZ.H('div','vz-tools'),b=VIZ.H('button','vz-btn');b.type='button';
+ function lab(){b.textContent=on?'⏸ zatrzymaj animację':'▶ odtwarzaj automatycznie';b.classList.toggle('on',on)}function halt(){if(tm){clearInterval(tm);tm=null}}
+ function run(){if(tm||!on||!vis||document.hidden)return;if(o.now)step();tm=setInterval(function(){if(document.hidden||!vis){halt();return}step()},ms)}
+ b.onclick=function(){on=!on;lab();if(on)run();else halt()};bar.appendChild(b);el.insertBefore(bar,el.firstChild);lab();
+ el.addEventListener('pointerdown',function(e){if(bar.contains(e.target)||!on)return;on=false;halt();lab()},true);
+ if('IntersectionObserver' in window)new IntersectionObserver(function(es){es.forEach(function(e){vis=e.isIntersecting;if(vis)run();else halt()})},{threshold:.35}).observe(el);else{vis=true;run()}
+ return{stop:function(){on=false;halt();lab()}}};
+fx.toggle=function(btns,i){btns.forEach(function(b,j){b.classList.toggle('on',j===i)})};
+VIZ.mountAll=function(){document.querySelectorAll('[data-viz]').forEach(function(f){var d=REG[f.dataset.viz],body=f.querySelector('.viz-body');var opt={};try{opt=JSON.parse(f.dataset.opt||'{}')}catch(e){}
+ if(!d){body.textContent='Brak grafiki '+f.dataset.viz;return}d.mount(body,opt,f)})};
+})();
+</script>
+
+<script>
+/* >>> VIZ etapy-zycia */
+VIZ.define('etapy-zycia',{opis:'Pionowa oś czasu z dziesięcioma etapami życia człowieka, od okresu zarodkowego do starości; kliknięcie etapu pokazuje orientacyjny wiek i cechy.',
+mount:function(el,opt){
+  var S=VIZ.S,T=VIZ.T,box=VIZ.fx.infoBox('Kliknij etap życia na osi czasu, aby zobaczyć jego wiek i najważniejsze cechy.');
+  /* klucz, nazwa, wiek, kolor, grupa, wysokość ikony, opis */
+  var ST=[
+    ['zarodkowy','Okres zarodkowy','od zapłodnienia do ok. 8. tygodnia ciąży','k5','prenatalny',8,'Od zapłodnienia do ok. 8. tygodnia ciąży (orientacyjnie). Zarodek zagnieżdża się w macicy i powstają zawiązki wszystkich narządów. To czas największej wrażliwości na szkodliwe czynniki.'],
+    ['plodowy','Okres płodowy','od ok. 9. tygodnia ciąży do porodu','k5','prenatalny',18,'Od ok. 9. tygodnia ciąży do porodu (orientacyjnie). Płód rośnie, a narządy dojrzewają i zaczynają działać. Tlen i pokarm dostaje przez łożysko.'],
+    ['noworodkowy','Okres noworodkowy','do ok. 4 tygodni po urodzeniu','k1','dzieciństwo',22,'Pierwsze ok. 4 tygodnie po urodzeniu (orientacyjnie). Dziecko przystosowuje się do życia poza macicą: zaczyna oddychać płucami i ssie pokarm (odruch ssania).'],
+    ['niemowlecy','Okres niemowlęcy','do ok. 1 roku życia','k1','dzieciństwo',26,'Do ok. 1. roku życia. Bardzo szybki wzrost i przyrost masy ciała. Pojawiają się pierwsze ząbki, dziecko uczy się siadać i raczkować.'],
+    ['poniemowlecy','Okres poniemowlęcy','ok. 1–3 lata','k1','dzieciństwo',30,'Ok. 1–3 lata. Dziecko zaczyna samodzielnie chodzić i szybko uczy się mówić: od pojedynczych słów do prostych zdań.'],
+    ['przedszkolny','Okres przedszkolny','ok. 3–6 lat','k1','dzieciństwo',34,'Ok. 3–6 lat. Dziecko dużo się bawi, rozwija mowę i uczy się samodzielności (ubieranie się, jedzenie). Rośnie wolniej niż niemowlę.'],
+    ['szkolny','Okres szkolny','ok. 7–12 lat','k1','dzieciństwo',40,'Ok. 7–12 lat (orientacyjnie). Dziecko uczy się czytać, pisać i liczyć, a wzrost jest dość równomierny. Zęby mleczne wymieniają się na stałe.'],
+    ['dojrzewanie','Okres dojrzewania','ok. 12–18 lat','k3','dorastanie',46,'Ok. 12–18 lat (orientacyjnie); u dziewcząt zwykle zaczyna się wcześniej niż u chłopców. Pod wpływem hormonów następuje skok wzrostu, rozwijają się drugorzędowe cechy płciowe i organizm osiąga zdolność do rozrodu.'],
+    ['dojrzalosc','Okres dojrzałości','ok. 18–60 lat','k2','dorosłość',50,'Od ok. 18 do ok. 60 lat (orientacyjnie). Organizm ma pełną sprawność. Człowiek zwykle pracuje i zakłada rodzinę, a z czasem procesy życiowe zaczynają się powoli spowalniać.'],
+    ['starosc','Starość','po ok. 60–65 latach','k6','starość',46,'Po ok. 60–65 latach (orientacyjnie). Maleje masa mięśniowa i gęstość kości, pogarszają się wzrok i słuch, a regeneracja organizmu trwa dłużej.']];
+  var INFO={};ST.forEach(function(s){INFO[s[0]]=[s[1]+' ('+s[2]+')',s[6]]});
+  function C(x,y,r,f,s,w){return S('circle',{cx:x,cy:y,r:r,fill:f,stroke:s,'stroke-width':w})}
+  function man(x,y,H,i){
+    if(i===0)return[C(x,y,4,'var(--skin)','var(--viz-mut)',1.2)];
+    var r=H*.17,top=y-H/2;
+    return[C(x,top+r,r,'var(--skin)','var(--viz-mut)',1.2),S('rect',{x:x-H*.15,y:top+2*r+1,width:H*.3,height:H*.55,rx:3,fill:'var(--skin)',stroke:'var(--viz-mut)','stroke-width':1.2})]}
+  var kids=[S('line',{x1:90,y1:36,x2:90,y2:36+9*52,stroke:'var(--viz-line)','stroke-width':4})];
+  ST.forEach(function(s,i){
+    var y=36+i*52,c='var(--'+s[3]+')',cb='var(--'+s[3]+'-bg)';
+    kids.push(S('g',{'data-k':s[0],'aria-label':s[1]+', '+s[2]},[
+      S('rect',{x:110,y:y-21,width:360,height:42,rx:8,fill:cb,stroke:c,'stroke-width':2}),
+      C(90,y,8,c,'var(--viz-bg)',2)].concat(man(40,y,s[5],i),[
+      T(126,y-8,s[1],{a:'start',s:14,w:700}),
+      T(126,y+10,s[2],{a:'start',s:12,w:500,f:'var(--viz-mut)'}),
+      T(462,y-8,s[4],{a:'end',s:11,w:600,f:'var(--viz-mut)'})])))});
+  kids.push(T(240,528,'Wiek jest orientacyjny; granice okresów bywają podawane nieco inaczej.',{s:11,w:500,f:'var(--viz-mut)'}));
+  var sv=VIZ.svg(480,540,'Oś czasu: etapy życia człowieka od okresu zarodkowego do starości',kids);
+  el.appendChild(sv);el.appendChild(box);
+  VIZ.fx.info(el,box,INFO,opt&&INFO[opt.start]?opt.start:null);
+}});
+/* <<< VIZ */
+</script>
+
+<figure data-viz="etapy-zycia" data-opt='{}'><figcaption>Podgląd: etapy-zycia</figcaption><div class="viz-body"></div></figure>
+<script>VIZ.mountAll()</script>
+</body></html>

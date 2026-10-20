@@ -30,12 +30,17 @@ _ks = importlib.util.spec_from_file_location('che_modular_md2html', _KM)
 CHK = importlib.util.module_from_spec(_ks); _ks.loader.exec_module(CHK)
 
 _open = open
+_USED = set()   # id grafik użytych w budowanej lekcji (ustawia build)
 def _bio_open(path, *a, **k):
     # parser dokleja szablon/rozszerzenia.js + szablon/lekcja.js — u nas rozszerzenia = biblioteka grafik
     if os.path.dirname(os.path.abspath(path)) == SZ:
         b = os.path.basename(path)
         if b == 'rozszerzenia.js':
-            return io.StringIO(''.join(_open(os.path.join(SZ, f), encoding='utf-8').read() + '\n' for f in ('bio-viz.js', 'bio-rysunki.js')))
+            # rdzeń (bio-core.js) + TYLKO użyte wizualizacje/<id>.js + małe komponenty rysunków (bio-rysunki.js)
+            parts = [os.path.join(SZ, 'bio-core.js')]
+            parts += [os.path.join(SZ, 'wizualizacje', i + '.js') for i in sorted(_USED) if os.path.exists(os.path.join(SZ, 'wizualizacje', i + '.js'))]
+            parts.append(os.path.join(SZ, 'bio-rysunki.js'))
+            return io.StringIO(''.join(_open(f, encoding='utf-8').read() + '\n' for f in parts))
         elif b == 'lekcja.css':  # baza wspólna z chemią + warstwa bio
             return io.StringIO(''.join(_open(os.path.join(SZ, f), encoding='utf-8').read() + '\n' for f in ('baza-wspolna.css', 'bio-warstwa.css')))
     return _open(path, *a, **k)
@@ -108,6 +113,8 @@ BAR = ('<div class="bio-bar" role="toolbar" aria-label="Narzędzia lekcji">'
 
 def build(path):
     src = _open(path, encoding='utf-8').read()
+    global _USED
+    _USED = set(re.findall(r'^@viz ([\w-]+)', src, re.M))
     tmp = tempfile.NamedTemporaryFile('w', suffix='.md', delete=False, encoding='utf-8')
     tmp.write(preprocess(src)); tmp.close()
     try: meta, doc = m.render(tmp.name)

@@ -31,6 +31,10 @@ Po lekcji wyjaśnisz, dlaczego skóra jest narządem, a nie tylko „okryciem", 
 
 ## 1 | Skóra — budowa i funkcje [[basic:E8]] {#skora}
 
+@viz skora-przekroj | Przekrój skóry | kliknij warstwę
+@opis Przekrój skóry: naskórek (warstwa rogowa, melanina), skóra właściwa (naczynia, receptory, gruczoł potowy i łojowy, mieszek włosowy, mięsień przywłosowy), tkanka podskórna (tłuszcz); kliknij element Wniosek: kliknij elementy i przejdź kroki, aby sprawdzić, jak budowa wynika z funkcji.
+
+
 Skóra to **największy narząd** człowieka: u dorosłego ok. 2 m², masa około 4 kg. Składa się z trzech warstw.
 
 **Naskórek** (epidermis) jest zbudowany z **nabłonka wielowarstwowego rogowaciejącego**. Nie ma własnych naczyń krwionośnych, odżywia się przez dyfuzję ze skóry właściwej. W najgłębszej warstwie (podstawnej) znajdują się melanocyty produkujące melaninę. Najpłytsza warstwa to martwe, spłaszczone komórki wypełnione keratyną. Naskórek odnawia się mniej więcej co 4 tygodnie.
@@ -152,6 +156,10 @@ Kolejność zdarzeń:
 **Opis schematu sarkomeru (tekst zastępujący rysunek):** sarkomer leży między dwiema liniami Z. Cienkie filamenty aktynowe są przyczepione do linii Z, a grube filamenty miozynowe leżą pośrodku. Po pobudzeniu odsłonięte główki miozyny wiążą się z aktyną i ciągną ją w stronę środka sarkomeru. Wniosek: sarkomer się skraca, a filamenty nie zmieniają długości.
 
 ## 7 | Stawy ruchome — sześć typów {#stawy}
+
+@viz staw-antagonizm | Mięśnie antagonistyczne w stawie łokciowym | suwak kąta
+@opis Ramię z kością ramienną, łokciem i przedramieniem: suwak kąta w stawie; biceps (zginacz) i triceps (prostownik) grubieją przy skurczu i cienieją przy rozkurczu; ścięgna, przyczepy; opis, który mięsień pracuje Wniosek: kliknij elementy i przejdź kroki, aby sprawdzić, jak budowa wynika z funkcji.
+
 
 Staw ruchomy (synowialny) ma **jamę stawową** wypełnioną mazią stawową, **chrząstkę stawową** na powierzchniach kości i **torebkę stawową** z tkanki łącznej.
 

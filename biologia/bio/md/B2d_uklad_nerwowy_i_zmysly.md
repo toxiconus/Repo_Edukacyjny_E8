@@ -105,6 +105,10 @@ Rdzeń przewodzi impulsy **w górę** (czuciowe, do mózgu) i **w dół** (rucho
 
 ## 6 | Synapsa chemiczna {#synapsa}
 
+@viz synapsa | Synapsa chemiczna | kliknij elementy
+@opis Animacja przekazania impulsu na synapsie chemicznej w pięciu krokach: impuls, uwolnienie neuroprzekaźnika, szczelina, receptory, nowy impuls. Wniosek: kliknij elementy i przejdź kroki, aby sprawdzić, jak budowa wynika z funkcji.
+
+
 Synapsa to połączenie między neuronem a kolejnym neuronem lub efektorem. Ma trzy części:
 1. **błona presynaptyczna** — zakończenie aksonu z pęcherzykami neuroprzekaźnika,
 2. **szczelina synaptyczna** — przerwa rzędu 20 nm,
@@ -137,7 +141,10 @@ Synapsa działa **jednokierunkowo**: impuls płynie od błony presynaptycznej do
 
 ## 8 | Odruchy {#odruchy}
 
-@viz cykl {cykl="odruch"} | Łuk odruchowy — odruch kolanowy | animacja startuje sama, kliknij etap
+@viz luk-odruchowy | Łuk odruchowy | „krok” prowadzi impuls
+@opis Łuk odruchowy cofnięcia ręki od gorącego przedmiotu: receptor w skórze dłoni, neuron czuciowy (ciało w zwoju rdzeniowym), neuron pośredniczący w istocie szarej rdzenia, neuron ruchowy, efektor — mięsień ramienia; „krok” prowadzi impuls etapami, osobna droga do mózgu (czucie bólu); przełącznik uszkodzeń: przecięta droga ruchowa lub czuciowa Wniosek: kliknij elementy i przejdź kroki, aby sprawdzić, jak budowa wynika z funkcji.
+
+@viz cykl {cykl="odruch"} | Łuk odruchowy — odruch kolanowy (skrót) | animacja startuje sama, kliknij etap
 @opis Pięć etapów łuku odruchowego: receptor → neuron czuciowy → rdzeń kręgowy → neuron ruchowy → efektor (mięsień); podświetlenie przesuwa się samo i zaczyna od początku. Wniosek: impuls jest przełączany w rdzeniu bez udziału mózgu, dlatego odruch jest szybki, wrodzony i niezależny od woli.
 
 **Odruch bezwarunkowy** — wrodzony, stały, niezależny od doświadczenia. Przykłady: odruch kolanowy, mruganie, odruch ssania u noworodka.

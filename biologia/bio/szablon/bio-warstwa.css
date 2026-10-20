@@ -116,3 +116,8 @@ animation:bio-drift 60s linear infinite}
 .hero{background:linear-gradient(135deg,var(--surface),var(--accent-soft))}
 @media(min-width:640px){.flashcard-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .level-contest{background:var(--c-warn-bg);color:var(--c-warn)}
+
+/* krew i grupy krwi (krazenie-obiegi, transfuzja, kosmek, łożysko) — z biblioteki wizualizacje/ (gałąź che-lekcje) */
+:root{--blood-o2:#c62828;--blood-o2-bg:#fde8e8;--blood-co2:#1f5fae;--blood-co2-bg:#e7effb;--ag-a:#c2410c;--ag-b:#7c3aed;--ag-d:#0f766e}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--blood-o2:#f87171;--blood-o2-bg:#3a1616;--blood-co2:#7aa7ff;--blood-co2-bg:#14213a;--ag-a:#fb923c;--ag-b:#c4b5fd;--ag-d:#5eead4}}
+:root[data-theme=dark]{--blood-o2:#f87171;--blood-o2-bg:#3a1616;--blood-co2:#7aa7ff;--blood-co2-bg:#14213a;--ag-a:#fb923c;--ag-b:#c4b5fd;--ag-d:#5eead4}

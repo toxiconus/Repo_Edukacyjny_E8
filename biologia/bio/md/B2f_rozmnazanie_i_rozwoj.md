@@ -31,6 +31,10 @@ Po lekcji opiszesz, co dzieje się w jajniku w pierwszej i drugiej połowie cykl
 
 ## 1 | Układ rozrodczy męski {#uklad-meski}
 
+@viz uklad-rozrodczy | Układy rozrodcze | przełącz układ
+@opis Schemat męskiego i żeńskiego układu rozrodczego z przełącznikiem; kliknięcie narządu pokazuje jego funkcję, zaznaczone jest miejsce zapłodnienia. Wniosek: kliknij elementy i przejdź kroki, aby sprawdzić, jak budowa wynika z funkcji.
+
+
 - **jądra** (2, w mosznie) — produkują plemniki w kanalikach nasiennych i testosteron w komórkach śródmiąższowych (Leydiga),
 - **najądrza** — dojrzewanie i magazynowanie plemników,
 - **nasieniowody** — transportują plemniki podczas wytrysku,
@@ -58,6 +62,10 @@ Po lekcji opiszesz, co dzieje się w jajniku w pierwszej i drugiej połowie cykl
 **Komórka jajowa** (oocyt) — największa komórka człowieka (ok. 0,1 mm, widoczna gołym okiem). Otoczona jest **osłoną przejrzystą** i **wieńcem komórek** (listkami pęcherzyka).
 
 ## 3 | Cykl menstruacyjny {#cykl}
+
+@viz cykl-miesiaczkowy | Cykl menstruacyjny | suwak dnia cyklu
+@opis Model cyklu miesiączkowego z suwakiem dnia 1–28: zmiany w jajniku, błonie śluzowej macicy i poziomie hormonów (dane przykładowe). Wniosek: kliknij elementy i przejdź kroki, aby sprawdzić, jak budowa wynika z funkcji.
+
 
 Cykl trwa średnio **28 dni** (u różnych kobiet od ok. 21 do 35 dni). Poniżej przykład dla 28 dni.
 
@@ -88,7 +96,10 @@ Cykl trwa średnio **28 dni** (u różnych kobiet od ok. 21 do 35 dni). Poniżej
 
 ## 4 | Zapłodnienie {#zaplodnienie}
 
-@viz podzial-komorki {typ="mej"} | Mejoza — skąd się biorą gamety (i porównanie z mitozą) | etapy zmieniają się same, ◀ ▶ ręcznie
+@viz podzial-komorki {start="mejoza"} | Mitoza i mejoza — skąd się biorą gamety | krok po kroku
+@opis Mitoza i mejoza krok po kroku na modelu 2n = 4 (dwie pary homologów: matczyne czerwone, ojcowskie niebieskie, długie i krótkie); chromatydy, crossing-over, liczby chromosomów i chromatyd w każdej fazie (model i człowiek) Wniosek: kliknij elementy i przejdź kroki, aby sprawdzić, jak budowa wynika z funkcji.
+
+@viz podzial-komorki-skrot {typ="mej"} | Mejoza i mitoza — wersja skrócona | etapy zmieniają się same, ◀ ▶ ręcznie
 @opis Etapy mejozy dla komórki 2n = 4: interfaza, profaza I z crossing-over, metafaza I, anafaza I, koniec I, anafaza II, cztery gamety n = 2; przycisk „mitoza” pokazuje podział na dwie komórki identyczne 2n = 4. Wniosek: mejoza zmniejsza liczbę chromosomów o połowę i tworzy różne gamety, a mitoza daje dwie identyczne komórki (wzrost, regeneracja).
 
 Zapłodnienie zachodzi w **jajowodzie**, zwykle w jego najszerszej części (ampuli).
@@ -102,6 +113,10 @@ Zapłodnienie zachodzi w **jajowodzie**, zwykle w jego najszerszej części (amp
 7. Powstaje **zygota** (2n = 46 chromosomów).
 
 ## 5 | Rozwój zarodkowy — pierwsze dwa tygodnie {#zarodek}
+
+@viz droga-zarodka | Droga zarodka | animacja etapów
+@opis Animacja drogi od owulacji do zagnieżdżenia: komórka jajowa w jajowodzie, zapłodnienie, zygota, bruzdkowanie i zagnieżdżenie w macicy. Wniosek: kliknij elementy i przejdź kroki, aby sprawdzić, jak budowa wynika z funkcji.
+
 
 | Etap | Kiedy (dni po zapłodnieniu) | Cechy |
 |---|---|---|
@@ -135,6 +150,10 @@ Podczas gastrulacji z zarodka powstają trzy listki, z których rozwijają się 
 **Trzeci trymestr (tydz. 28–40):** wzrost masy i dojrzewanie płuc. Surfaktant zaczyna być produkowany ok. 24.–28. tygodnia. Donoszony noworodek ma zwykle ok. 50 cm i ok. 3,3–3,5 kg.
 
 ## 8 | Łożysko {#lozysko}
+
+@viz lozysko-wymiana | Łożysko — wymiana substancji | kliknij elementy
+@opis Schemat łożyska: krew matki opływa kosmki z naczyniami płodu; strzałki pokazują, co płynie do płodu, a co do matki. Pępowina ma dwie tętnice i jedną żyłę. Wniosek: kliknij elementy i przejdź kroki, aby sprawdzić, jak budowa wynika z funkcji.
+
 
 **Łożysko** (placenta) to narząd tymczasowy, rozwijający się z trofoblastu zarodka i endometrium matki. Jest w pełni funkcjonalne od ok. 12. tygodnia.
 

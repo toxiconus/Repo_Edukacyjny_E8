@@ -67,7 +67,10 @@ Ten sposób opisu stosujemy zawsze:
 @viz serce-budowa | Serce — budowa | poznaj, znajdź, podpisz
 @opis Przekrój serca z numerami: prawy i lewy przedsionek, prawa i lewa komora, przegroda, zastawki trójdzielna, dwudzielna i półksiężycowate, tętnica płucna, aorta, żyły główne i płucne. Niebieski = krew odtlenowana (prawa strona), czerwony = utlenowana (lewa). Wniosek: lewa komora ma najgrubszą ścianę, bo pompuje krew do całego ciała, a zastawki wymuszają jeden kierunek przepływu.
 
-@viz krazenie | Droga krwi: krążenie małe i duże | kropla krąży sama, kliknij etap
+@viz krazenie-obiegi | Serce i obiegi krwi | krok po kroku, przyciski obiegów
+@opis Serce (4 jamy, zastawki) + obieg mały i duży: krew odtlenowana (niebieska) i utlenowana (czerwona); kliknij element, „krok” prowadzi drogą krwi, przyciski podświetlają jeden obieg Wniosek: kliknij elementy i przejdź kroki, aby sprawdzić, jak budowa wynika z funkcji.
+
+@viz krazenie | Droga krwi: krążenie małe i duże (skrót) | kropla krąży sama, kliknij etap
 @opis Pierścień sześciu etapów: prawy przedsionek → prawa komora → płuca → lewy przedsionek → lewa komora → ciało → z powrotem; kropla krwi krąży sama, niebieska gdy krew jest odtlenowana, czerwona po utlenowaniu w płucach. Przyciski pokazują krążenie małe (serce–płuca–serce) lub duże (serce–ciało–serce). Wniosek: krew przepływa przez serce dwa razy w jednym obiegu; tętnice płucne niosą krew odtlenowaną, a żyły płucne utlenowaną.
 - **Budowa:** serce (dwa przedsionki, dwie komory), tętnice, żyły, naczynia włosowate; krew z osoczem i elementami morfotycznymi (erytrocyty, leukocyty, trombocyty).
 - **Funkcje:** transport O₂, CO₂, glukozy, aminokwasów, hormonów i ciepła; obrona (leukocyty, przeciwciała); krzepnięcie.

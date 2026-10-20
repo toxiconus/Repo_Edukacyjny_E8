@@ -8,7 +8,8 @@ out = ['# KATALOG GRAFIK BIOLOGII — wygenerowany (`python3 narzedzia/katalog_g
        'Zasada: przed nowym rysunkiem sprawdź tę listę — używamy i ulepszamy istniejące (nowe i stare), nie dublujemy.', '']
 # 1. komponenty BIO
 defs = collections.OrderedDict()
-for f in ('bio-viz.js', 'bio-rysunki.js'):
+srcs = ['bio-viz.js', 'bio-rysunki.js'] + ['wizualizacje/' + x for x in sorted(os.listdir(os.path.join(B, 'bio/szablon/wizualizacje')))] if os.path.isdir(os.path.join(B, 'bio/szablon/wizualizacje')) else ['bio-viz.js', 'bio-rysunki.js']
+for f in srcs:
     s = open(os.path.join(B, 'bio/szablon', f), encoding='utf-8').read()
     for m in re.finditer(r"BIO\.define\('([\w-]+)',\{opis:'((?:[^'\\]|\\.)*)'", s):
         defs[m.group(1)] = (m.group(2).replace("\\'", "'"), f)
@@ -19,7 +20,7 @@ for f in sorted(glob.glob(os.path.join(B, 'bio/md/*.md'))):
     s = open(f, encoding='utf-8').read(); n = os.path.basename(f)[:-3]
     for m in re.finditer(r'^@viz ([\w-]+)(?:\s*\{([^}]*)\})?', s, re.M):
         use[m.group(1)].append(n + (' [' + m.group(2).strip() + ']' if m.group(2) else ''))
-out += ['## 1. Komponenty BIO (nowe, `biologia/bio/szablon/`) — %d' % len(defs), '', '| id | opis | plik | użyte w |', '|---|---|---|---|']
+out += ['## 1. Komponenty BIO (`biologia/bio/szablon/`: bio-viz.js legacy, bio-rysunki.js — małe komponenty z trybem podpisz, wizualizacje/ — biblioteka z gałęzi che-lekcje) — %d' % len(defs), '', '| id | opis | plik | użyte w |', '|---|---|---|---|']
 for k, (o, f) in defs.items():
     u = '; '.join(use.get(k, [])) or '**nieużyte**'
     out.append('| %s | %s | %s | %s |' % (k, o[:170].replace('|', '\\|'), f, u.replace('|', '\\|')[:200]))

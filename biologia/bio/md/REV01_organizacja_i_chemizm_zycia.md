@@ -299,6 +299,10 @@ Próba kontrolna różni się od próby badawczej **tylko brakiem badanego skła
 
 ## 2 | Mikroskop — jak obserwować [[basic:E8]] {#mikroskop}
 
+@viz mikroskop-model | Obraz z mikroskopu a model komórki | przełącz widok
+@opis Ta sama komórka liścia moczarki w dwóch widokach: obraz z mikroskopu świetlnego (rozmyty, widać ścianę, chloroplasty, wakuolę; jądro po barwieniu) i model szkolny ze wszystkimi strukturami podpisanymi; przełącznik barwienia; opcja start="mikroskop|model" Wniosek: kliknij elementy i przejdź kroki, aby sprawdzić, jak budowa wynika z funkcji.
+
+
 ::: karta core | Procedura obserwacji
 1. Przygotuj preparat (np. skórka cebuli w kropli wody pod szkiełkiem nakrywkowym).
 2. Umieść go na stoliku, oświetl.
@@ -398,7 +402,10 @@ Słownie: dwutlenek węgla + woda → glukoza + tlen. To zapis **sumaryczny** �
 
 ## 7 | Oddychanie komórkowe i fermentacja [[basic:E8]] {#oddychanie}
 
-@viz fotosynteza-oddychanie | Fotosynteza i oddychanie — krążenie materii | przełączaj tryb, kropki płyną same
+@viz fotosynteza-oddychanie | Fotosynteza i oddychanie w komórce liścia | suwak światła
+@opis Komórka liścia: chloroplast (fotosynteza) i mitochondrium (oddychanie) z wymianą substancji; suwak światła → bilans gazów liścia (oddychanie stale, fotosynteza zależna od światła) Wniosek: kliknij elementy i przejdź kroki, aby sprawdzić, jak budowa wynika z funkcji.
+
+@viz fotosynteza-oddychanie-krazenie | Fotosynteza i oddychanie — krążenie materii i energii | przełączaj tryb, kropki płyną same
 @opis Chloroplast po lewej i mitochondrium po prawej; kropki płyną po strzałkach: światło i CO₂ + H₂O do chloroplastu, glukoza i O₂ do mitochondrium, CO₂ + H₂O z powrotem, ATP na zewnątrz. Przyciski wyróżniają fotosyntezę, oddychanie lub oba procesy; pod spodem tabela porównawcza. Wniosek: produkty jednego procesu są substratami drugiego, materia krąży, a energia przepływa (światło → ATP i ciepło).
 
 ::: regula
