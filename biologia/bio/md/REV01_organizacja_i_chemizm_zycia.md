@@ -475,6 +475,31 @@ BHP: ostrożnie z gorącą wodą i szkłem laboratoryjnym.
 - Wynik jest wiarygodniejszy przy **powtórzeniach** i większej liczbie organizmów.
 :::
 
+### 9.1 Metoda naukowa — krok po kroku {#metoda-naukowa}
+
+**Obserwacja → problem badawczy → hipoteza → doświadczenie → wyniki → wniosek.** Hipotezę można sprawdzić albo obalić; wniosek musi wynikać z wyników.
+
+| Pojęcie | Znaczenie | Przykład: światło a fotosynteza |
+|---|---|---|
+| zmienna niezależna | czynnik, który zmieniamy | natężenie światła |
+| zmienna zależna | to, co mierzymy | liczba pęcherzyków tlenu na minutę |
+| warunki stałe | takie same we wszystkich próbach | temperatura, gatunek, ilość CO₂ |
+| próba badawcza | próba z **zabiegiem** — zmienionym badanym czynnikiem | roślina zaciemniona |
+| próba kontrolna | próba **bez zabiegu**, w warunkach wyjściowych | roślina oświetlona |
+| powtórzenia | zmniejszają wpływ przypadku | kilka pomiarów, średnia |
+
+**Zasada w tym kursie:** badawcza = ze zmienionym czynnikiem, kontrolna = bez zmiany (odniesienie). Gdy treść zadania definiuje próby inaczej, stosuj jej definicję.
+
+**Jak czytać wykres:** tytuł → osie i jednostki → odczyt wartości → trend (rośnie, maleje, maksimum) → wniosek tylko o badanym czynniku.
+
+**Typowe błędy:** wniosek szerszy niż dane; zmieniono dwa czynniki naraz; brak próby kontrolnej; obserwacja (to, co widać) pomylona z wnioskiem (co z tego wynika).
+
+**MN1. (2 pkt)** Uczeń chce sprawdzić, czy nawóz przyspiesza wzrost rzeżuchy. Wskaż zmienną niezależną i zależną. **MN2. (2 pkt)** Podaj dwa warunki, które powinny być jednakowe w obu próbach. **MN3. (1 pkt)** Wskaż próbę kontrolną.
+
+::: odp | Klucz MN1–MN3
+MN1. Niezależna: obecność (stężenie) nawozu; zależna: wysokość lub masa rzeżuchy. MN2. Np. gatunek i liczba nasion, ilość wody, podłoże, temperatura, światło. MN3. Nasiona podlewane wodą bez nawozu.
+:::
+
 ## 10 | Klinika błędów {#klinika}
 
 ::: mity

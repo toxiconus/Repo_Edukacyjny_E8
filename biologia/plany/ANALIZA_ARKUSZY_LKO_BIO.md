@@ -8,7 +8,7 @@
 | hierarchia budowy organizmu | z.1 | z.12 (rej.) | z.7 | REV01 §1 |
 | czynności życiowe (definicje) | z.2 | z.11 | z.2 | REV01 §8 |
 | mikroskop: powiększenie, preparat, nazwy szkiełek | z.4, z.5 | z.1 | z.6 | REV01 §2, REV02 D+ |
-| doświadczenie / metoda naukowa (kontrola, wykres) | z.3 | z.2 | — | REV01 §9, REV02 D+ — **brak osobnego wykładu „metoda naukowa”** |
+| doświadczenie / metoda naukowa (kontrola, wykres) | z.3 | z.2 | — | REV01 §9, REV02 D+ — REV02 §9 i nowa REV01 §9.1 „Metoda naukowa” (zmienne, próba badawcza/kontrolna, wykres) |
 | związki chemiczne organizmów | z.6 | z.4 | — | REV01 §1a (nowe) |
 | budowa komórek (P/F) | — | z.5 | z.5 | REV01 §3–4 |
 | odżywianie, oddychanie (P/F) | z.7 | — | z.2, z.5 | REV01 §6–7 |
@@ -33,7 +33,9 @@ Powtarza się: schemat/rysunek serca i krwi (elementy morfotyczne, 22/23 z.6, z.
 
 **Luki w lekcjach etapu II potwierdzone arkuszami:** krążenie (serce, krew, limfa) — brak lekcji (B2h); odporność i choroby, szczepionki — brak (B2i); odruchy bezwarunkowe/warunkowe — w B2d (sprawdzić głębię); czaszka — mało; aktywność fizyczna a organizm — 0 wzmianek.
 
-## Dodać przed 21.10 (etap I) — lista dla Perplexity / S-A
+## Dodane 2026-10-20 (REV01 v1.3 / REV02 v1.2): metoda naukowa, cykl okrytonasiennych, jajo ptaka, protisty, typy odżywiania, HIV; plan rysunków: `PLAN_RYSUNKOW_BIO.md`
+
+## Lista z analizy (stan wyjściowy)
 1. Mini-wykład „Metoda naukowa i doświadczenie” (problem → hipoteza → próba badawcza i kontrolna → obserwacja → wniosek; wykres).
 2. Cykl rozwojowy okrytonasiennych (zapylenie, zapłodnienie, nasiono, owoc) + rozpoznawanie organów roślinnych i szyszek.
 3. Budowa jaja ptaka (rysunek opisany słownie, funkcje: żółtko, białko, skorupa, komora powietrzna, tarczka zarodkowa).

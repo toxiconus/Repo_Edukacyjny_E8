@@ -104,6 +104,23 @@ Klasyfikacja porządkuje organizmy w grupy (**jednostki systematyczne, rangi**) 
 6. Pozostałe proste organizmy z jądrem (często jednokomórkowe) → **protisty**.
 :::
 
+### 1.1 Typy odżywiania {#typy-odzywiania}
+
+| Typ | Skąd energia i materia | Przykłady |
+|---|---|---|
+| samożywne (autotrofy) | same wytwarzają związki organiczne w fotosyntezie | rośliny, glony, sinice |
+| cudzożywne (heterotrofy) | pobierają gotowe związki organiczne | zwierzęta, grzyby, większość bakterii |
+| – roślinożerne | rośliny | zając, krowa, jeleń |
+| – mięsożerne | zwierzęta | wilk, ryś, sowa |
+| – wszystkożerne | rośliny i zwierzęta | dzik, niedźwiedź, człowiek |
+| – saprofity (rozkładające) | martwa materia organiczna | grzyby, bakterie rozkładające |
+| – pasożyty | tkanki lub pokarm żywiciela | tasiemiec, kleszcz, wesz |
+| – symbionty | pożytek dla obu stron | mikoryza, bakterie brodawkowe |
+
+**Mieszane:** rosiczka (roślina) fotosyntetyzuje, a dodatkowo trawi owady — dlatego jest samożywna, mimo „drapieżnych” liści; euglena (oczlik) na świetle fotosyntetyzuje, w ciemności pobiera gotowe związki.
+
+**Typowy błąd:** „roślina mięsożerna jest cudzożywna” — nie; ma chloroplasty i fotosyntezę, owady to dodatkowe źródło azotu.
+
 ## 2 | Wirusy — bezkomórkowe formy materii [[basic:E8]] {#wirusy}
 
 **Budowa:** materiał genetyczny (**DNA albo RNA**) zamknięty w **białkowym płaszczu (kapsydzie)**; niektóre mają dodatkową osłonkę. Wirus nie ma cytoplazmy, rybosomów ani własnej przemiany materii.
@@ -121,7 +138,7 @@ Klasyfikacja porządkuje organizmy w grupy (**jednostki systematyczne, rangi**) 
 | różyczka | drogą kropelkową; groźna dla płodu (zakażenie kobiety w ciąży) | szczepienie |
 | świnka (nagminne zapalenie przyusznic) | drogą kropelkową | szczepienie |
 | odra | drogą kropelkową, bardzo zaraźliwa | szczepienie |
-| AIDS (wirus HIV) | przez krew, kontakty płciowe, z matki na dziecko | nieużywanie cudzych igieł i przyborów z krwią, zabezpieczenie, badanie krwi |
+| AIDS (wirus HIV) | przez krew, kontakty płciowe, z matki na dziecko — **nie** przez komary, uścisk, wspólne naczynia, powietrze | nieużywanie cudzych igieł i przyborów z krwią, zabezpieczenie, badanie krwi |
 
 ::: karta warning | Antybiotyki a wirusy
 Antybiotyki działają na **bakterie**, nie na wirusy. Grypy nie leczy się antybiotykiem — przed chorobami wirusowymi chronią przede wszystkim **szczepienia** i higiena.
@@ -174,6 +191,20 @@ Terapia fagowa była rozwijana w Instytucie Eliava w Tbilisi (Gruzja) już w lat
 **Pożyteczne:** rozkładają szczątki organizmów i zamykają **obieg materii**; bakterie brodawkowe na korzeniach roślin bobowatych **wiążą azot** z powietrza; fermentacja mlekowa — jogurty, kefiry, kiszonki; bakterie jelitowe wytwarzają m.in. witaminę K; oczyszczalnie ścieków; produkcja leków (np. insuliny) w biotechnologii.
 **Szkodliwe:** choroby ludzi, zwierząt i roślin; psucie żywności.
 :::
+
+### 3.1 Protisty — organizmy z jądrem, ale bez tkanek {#protisty}
+
+Protisty to organizmy **eukariotyczne** (mają jądro), jednokomórkowe lub proste wielokomórkowe, bez tkanek. Żyją w wodzie lub wilgotnym środowisku.
+
+| Grupa | Cechy | Przykłady |
+|---|---|---|
+| pierwotniaki (cudzożywne) | ruch: nibynóżki, rzęski lub wić; **wodniczka tętniąca** usuwa nadmiar wody | ameba (nibynóżki), pantofelek (rzęski), świdrowiec (wić) |
+| pierwotniaki pasożytnicze | pasożytują w organizmie człowieka | zarodziec malarii (przenoszony przez komary widliszki), pełzak czerwonki, lamblia |
+| glony jednokomórkowe (samożywne) | chloroplasty, fotosynteza | okrzemki, chlorella |
+| glony wielokomórkowe | plecha bez tkanek i organów | zielenice (spirogira, chlamydomonas), brunatnice (morszczyn), krasnorosty |
+| mieszane | fotosynteza + pobieranie pokarmu | euglena (oczlik zielony) |
+
+**Zapamiętaj:** glony to nie rośliny — nie mają tkanek ani organów (korzenia, łodygi, liścia); ich ciało to **plecha**.
 
 ## 4 | Rośliny — różnorodność i jedność [[basic:E8]] {#rosliny}
 
@@ -276,6 +307,21 @@ Plemnie (anteridia) wytwarzają plemniki, rodnie (archegonia) — komórkę jajo
 - **pręcik:** nitka + **pylnik** (wytwarza **pyłek**);
 - **słupek:** **znamię** (przyjmuje pyłek), szyjka, **zalążnia** z zalążkami.
 **Zapylenie** = przeniesienie pyłku na znamię słupka (przez owady, wiatr, rzadziej wodę). Po **zapłodnieniu**: **zalążek → nasiono**, **zalążnia → owoc**. Nasiono: łupina + zarodek + materiał zapasowy.
+:::
+
+**Cykl rozwojowy okrytonasiennych — kolejność:**
+1. **Zapylenie** — pyłek z pylnika trafia na znamię słupka (owady, wiatr).
+2. Z ziarna pyłku wyrasta **łagiewka pyłkowa** przez szyjkę do zalążni.
+3. **Zapłodnienie** — jedno jądro plemnikowe łączy się z komórką jajową (powstaje zygota → zarodek), drugie z komórką środkową woreczka zalążkowego (powstaje bielmo) — to **zapłodnienie podwójne**, typowe dla okrytonasiennych.
+4. **Zalążek → nasiono** (łupina, zarodek, materiał zapasowy), **zalążnia → owoc**.
+5. **Rozsiewanie** owoców i nasion, **kiełkowanie** nasiona w sprzyjających warunkach i wzrost nowej rośliny.
+
+**Zapamiętaj:** nasiono rozwija się z **zalążka**, owoc — z **zalążni** (u nagonasiennych nasiona leżą odsłonięte na łuskach szyszki).
+
+**CW1. (3 pkt)** Ułóż w kolejności: A — powstaje nasiono; B — pyłek trafia na znamię; C — rozwija się łagiewka pyłkowa; D — zapłodnienie; E — zalążnia przekształca się w owoc. **CW2. (1 pkt)** Z której części kwiatu powstaje owoc?
+
+::: odp | Klucz CW1–CW2
+CW1. B, C, D, A, E (nasiono i owoc rozwijają się równolegle po zapłodnieniu). CW2. Ze słupka — z zalążni.
 :::
 
 ::: karta understand | Kiełkowanie i rozsiewanie
@@ -585,6 +631,25 @@ R1. Parzyste: piersiowa i brzuszna; nieparzyste: grzbietowa, ogonowa i odbytowa.
 Ptaki nie mają zębów: pokarm rozdrabnia **żołądek mięśniowy**, w którym pomagają połknięte drobne kamyki (gastrolity).
 :::
 
+**Budowa jaja ptaka (wyrażona słownie — rysunek z arkuszy):**
+
+| Część | Funkcja |
+|---|---|
+| skorupa (wapienna, z porami) | ochrona, przepuszcza gazy |
+| błony podskorupowe | bariera dla drobnoustrojów; między nimi powstaje **komora powietrzna** (zapas powietrza dla zarodka) |
+| białko | woda i białka — pokarm i amortyzacja |
+| chalazy (sznury białkowe) | utrzymują żółtko w środku |
+| żółtko | zapas pokarmu dla zarodka |
+| tarczka zarodkowa | miejsce rozwoju zarodka (na żółtku) |
+
+**Zapamiętaj:** jajo ptaka to „zestaw przetrwania”: osłony chronią zarodek, żółtko go żywi, pory pozwalają oddychać. **Jajo płazów** nie ma skorupy — dlatego musi być składane w wodzie.
+
+**J1. (2 pkt)** Wskaż w jaju ptaka część, w której znajduje się zapas pokarmu, i część zawierającą powietrze. **J2. (1 pkt)** Wyjaśnij, dlaczego jaja ptaków mogą być składane na lądzie.
+
+::: odp | Klucz J1–J2
+J1. Zapas pokarmu — żółtko; powietrze — komora powietrzna. J2. Mają twardą skorupę i błony chroniące przed wyschnięciem i drobnoustrojami, a pory umożliwiają wymianę gazową.
+:::
+
 ### 8.5 Ssaki łożyskowe {#ssaki}
 **Cechy wspólne:** **sierść** (włosy), gruczoły skórne — potowe, łojowe i **mlekowe** (karmienie młodych **mlekiem**), **zróżnicowane zęby** (siekacze, kły, przedtrzonowe, trzonowe — dostosowane do pokarmu), płuca i **przepona**, dobrze rozwinięty mózg, **stałocieplność**. **Rozmnażanie:** zapłodnienie wewnętrzne, zarodek rozwija się w **macicy**, odżywiany przez **łożysko**; **żyworodne**; opieka nad potomstwem. **Różnorodność:** ląd (sarna), woda (delfin, foka), powietrze (nietoperz), gleba (kret). **Znaczenie:** pokarm, praca, odzież, towarzysze człowieka; rozsiewanie nasion; niektóre wyrządzają szkody (gryzonie w uprawach).
 
@@ -751,7 +816,7 @@ D1. a) 25°C. b) 12/20 · 100% = 60%. c) W badanym zakresie temperatura wpływa 
 D2. a) U C — o 75 bakterii. b) (100−25)/100 · 100% = 75%. c) Mycie rąk.
 D3. a) C. b) O 10 gatunków. c) Nie — liczba gatunków to bogactwo gatunkowe, nie liczebność osobników.
 D4. Problem: Czy nawóz wpływa na wzrost rzeżuchy? Hipoteza: nawóz zwiększa wzrost rzeżuchy. Badawcza: nasiona podlewane roztworem nawozu. Kontrolna: nasiona podlewane taką samą ilością wody bez nawozu. Zmienna niezależna: obecność (stężenie) nawozu. Warunki stałe (dowolne dwa): gatunek i liczba nasion, podłoże, ilość wody, temperatura, czas, dostęp światła.
-D5. a) Roślina przy oknie (z badanym czynnikiem — światłem). b) Roślina w ciemności (bez badanego czynnika). c) Dostęp do światła. d) Np. liczba pęcherzyków tlenu u rośliny wodnej, przyrost masy, obecność skrobi w liściach. (Konwencja: badawcza — z badanym czynnikiem, kontrolna — bez niego lub w warunkach odniesienia; zawsze sprawdź, jak definiuje je treść zadania.)
+D5. a) Roślina w ciemnej szafce (tu zmieniamy badany czynnik — odbieramy światło). b) Roślina przy oknie (warunki wyjściowe, bez zabiegu). c) Dostęp do światła. d) Np. liczba pęcherzyków tlenu u rośliny wodnej, przyrost masy, obecność skrobi w liściach. (Zasada w tym kursie: **badawcza** = próba z zabiegiem, czyli ze zmienionym badanym czynnikiem; **kontrolna** = próba bez zabiegu, w warunkach wyjściowych. Jeśli treść zadania definiuje próby inaczej, stosuj jej definicję.)
 :::
 
 **Preparat ze skórki cebuli — kolejność:** 1) przygotuj zestaw (szkiełko podstawowe i nakrywkowe, zakraplacz, woda, igła preparacyjna); 2) nanieś kroplę wody na szkiełko podstawowe; 3) umieść w niej fragment skórki cebuli; 4) przyłóż szkiełko nakrywkowe, opuszczając je pod kątem (bez pęcherzyków powietrza); 5) umieść preparat na stoliku mikroskopu; 6) obserwuj, zaczynając od najmniejszego powiększenia.
