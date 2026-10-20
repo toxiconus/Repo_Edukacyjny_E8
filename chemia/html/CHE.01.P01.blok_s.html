@@ -1080,6 +1080,21 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
    klik zatrzymuje/wznawia. Lekcja wymienia klocki w manifeście (klocki/manifest). */
 (function (g) {
   var reg = {};
+  /* JEDEN zegar animacji dla wszystkich klocków: jedna pętla rAF, funkcje fn(now, dt); pętla stoi, gdy nikt nie gra. */
+  var zegar = (function () {
+    var fns = [], id = 0, ost = 0;
+    function petla(now) {
+      var dt = Math.min(0.05, (now - ost) / 1000); ost = now;
+      fns.slice().forEach(function (f) { try { f(now, dt); } catch (e) { } });
+      id = fns.length ? requestAnimationFrame(petla) : 0;
+    }
+    return {
+      dodaj: function (f) { if (fns.indexOf(f) < 0) fns.push(f); if (!id) { ost = performance.now(); id = requestAnimationFrame(petla); } },
+      usun: function (f) { var i = fns.indexOf(f); if (i >= 0) fns.splice(i, 1); },
+      liczba: function () { return fns.length; }
+    };
+  })();
+  var RM_ = !!(g.matchMedia && g.matchMedia('(prefers-reduced-motion: reduce)').matches);   // użytkownik prosi o brak animacji: bez autostartu
   function def(nazwa, k) { reg[nazwa] = k; }
   function montuj(host, nazwa, opc) {
     var k = reg[nazwa];
@@ -1093,22 +1108,21 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
     c.setAttribute('aria-label', (opc.opis || k.opis || nazwa));
     host.innerHTML = ''; host.appendChild(c);
     var stan = Object.assign({}, k.stan0 ? k.stan0(opc) : {}, {opc: opc});
-    var ctx = c.getContext('2d'), t0 = performance.now(), grane = false, id = null;   // pętla rusza przez start() (IO albo od razu)
+    var ctx = c.getContext('2d'), t0 = performance.now(), grane = false;   // start() dodaje klocek do wspólnego zegara (IO albo od razu)
     function klatka(now) {
       try { k.rysuj(ctx, c.width, c.height, stan, (now - t0) / 1000, opc); } catch (e) { }
-      if (grane) id = requestAnimationFrame(klatka);
     }
-    function start() { if (!grane) { grane = true; t0 = performance.now() - (stan._t || 0) * 1000; id = requestAnimationFrame(klatka); } }
-    function stop() { grane = false; if (id) cancelAnimationFrame(id); }
+    function start() { if (!grane) { grane = true; t0 = performance.now() - (stan._t || 0) * 1000; zegar.dodaj(klatka); } }
+    function stop() { if (grane) { stan._t = (performance.now() - t0) / 1000; } grane = false; zegar.usun(klatka); }
     c.addEventListener('click', function () { grane ? stop() : start(); });
-    if ('IntersectionObserver' in g) {
+    if ('IntersectionObserver' in g && !RM_) {
       var io = new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? start() : stop(); }); });
       io.observe(c);
-    } else { start(); }
+    } else if (!RM_) { start(); }
     k.rysuj(ctx, c.width, c.height, stan, 0, opc);
     return {stop: stop, start: start, stan: stan, canvas: c};
   }
-  g.KLOCKI = {def: def, montuj: montuj, nazwy: function () { return Object.keys(reg); }};
+  g.KLOCKI = {def: def, montuj: montuj, zegar: zegar, nazwy: function () { return Object.keys(reg); }};
 })(window);
 
 /* KLOCKI — wspólne narzędzia (kolejność: pierwsze w manifeście). Wyciągnięte z animacji P01. */
@@ -1131,19 +1145,14 @@ function rr(x, a, b, w, h, r) {
 
 
 /* ---------------------------- pętla animacji ---------------------------- */
-var uchwyty = [], rafId = 0, ostatni = 0;
-function petla(now) {
-  var dt = Math.min(.05, (now - ostatni) / 1000); ostatni = now;
-  for (var i = 0; i < uchwyty.length; i++) uchwyty[i].krok(dt);
-  rafId = uchwyty.length ? requestAnimationFrame(petla) : 0;
-}
-function wlacz(h) { if (uchwyty.indexOf(h) < 0) uchwyty.push(h); if (!rafId) { ostatni = performance.now(); rafId = requestAnimationFrame(petla); } }
-function wylacz(h) { var i = uchwyty.indexOf(h); if (i >= 0) uchwyty.splice(i, 1); }
+// jeden zegar: KLOCKI.zegar (klocki.js); uchwyt h ma metodę krok(dt)
+function wlacz(h) { if (!h._z) h._z = function (now, dt) { h.krok(dt); }; KLOCKI.zegar.dodaj(h._z); }
+function wylacz(h) { if (h._z) KLOCKI.zegar.usun(h._z); }
 function podepnij(canvas, h) {
   h.rysuj();
-  if ('IntersectionObserver' in window) {
+  if ('IntersectionObserver' in window && !RM) {
     new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? wlacz(h) : wylacz(h); }); }, {threshold: .05}).observe(canvas);
-  } else wlacz(h);
+  } else if (!RM) wlacz(h);
 }
 
 
@@ -1175,6 +1184,32 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
   ustaw(start);
   return {el: box, ustaw: ustaw};
 }
+
+/* NACZYNIA — wspólna geometria i wygląd szkła dla klocków (jedna probówka dla probowki, probowki-odczyn i kolejnych).
+   Zgodna z gfx/chemia/naczynia/testTube.js: proste ścianki, półokrągłe dno, szerokość do 70 px (tu dowolna).
+   KLOCKI.naczynia.probowkaPath(x, cx, top, dnoY, tw) — ścieżka korpusu (otwarta u góry); dnoY = środek łuku dna.
+   KLOCKI.naczynia.szklo(x, cx, top, dnoY, tw)         — obrys, połysk i brzeg (rysować po cieczy). */
+(function (g) {
+  var N = g.KLOCKI.naczynia = g.KLOCKI.naczynia || {};
+  N.probowkaPath = function (x, cx, top, dnoY, tw) {
+    var l = cx - tw / 2, r = cx + tw / 2;
+    x.beginPath(); x.moveTo(l, top); x.lineTo(l, dnoY); x.arc(cx, dnoY, tw / 2, Math.PI, 0, true); x.lineTo(r, top);
+  };
+  N.szklo = function (x, cx, top, dnoY, tw) {
+    var l = cx - tw / 2, r = cx + tw / 2, kol = '#64748b';
+    try { kol = getComputedStyle(x.canvas).getPropertyValue('--text-soft').trim() || kol; } catch (e) { }
+    x.save();
+    N.probowkaPath(x, cx, top, dnoY, tw);
+    x.strokeStyle = kol; x.lineWidth = 2; x.lineJoin = 'round'; x.stroke();
+    // połysk po lewej stronie ścianki
+    x.strokeStyle = 'rgba(255,255,255,.55)'; x.lineWidth = 2; x.lineCap = 'round';
+    x.beginPath(); x.moveTo(l + 5, top + 14); x.lineTo(l + 5, dnoY - 4); x.stroke();
+    // brzeg
+    x.strokeStyle = kol; x.lineWidth = 2.5;
+    x.beginPath(); x.moveTo(l - 3, top); x.lineTo(r + 3, top); x.stroke();
+    x.restore();
+  };
+})(window);
 
 /* Dane pierwiastków I i II grupy do klocków (wspólne dla palników, probówek i tablicy).
    Barwy płomieni i zachowanie w wodzie to wartości poglądowe — patrz klocki/EFEKTY.md (do sprawdzenia w W1). */
@@ -1376,8 +1411,7 @@ function Rurka(x, ox, sym, wsk) {
   }
 
   function tubePath() {
-    var l = P.cx - P.tw / 2, rr_ = P.cx + P.tw / 2;
-    x.beginPath(); x.moveTo(l, P.top); x.lineTo(l, P.bot); x.arc(P.cx, P.bot, P.tw / 2, Math.PI, 0, true); x.lineTo(rr_, P.top);
+    KLOCKI.naczynia.probowkaPath(x, P.cx, P.top, P.bot, P.tw);
   }
   function metal(mx, my, R, d, rot) {
     var g = x.createRadialGradient(mx - R * .35, my - R * .35, R * .1, mx, my, R * 1.15);
