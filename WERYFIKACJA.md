@@ -393,3 +393,11 @@ Lekcje: BIO.02.L016 (nowotwory i podziały), BIO.01.L001A (dodatek: endosymbioza
 
 - L016 — mechanizm (protoonkogen → onkogen, geny supresorowe, naprawa DNA, apoptoza, utrata checkpointów) zgodny z ZPE. ZPE wymienia też geny stabilizujące (naprawa DNA) — w lekcji obecne jako „naprawa DNA”. Liczby z ZPE („TP53 — ponad 50% mutacji w nowotworach”) nie są w lekcji — nie trzeba ich dodawać. Uwaga dla przyszłych zmian: liczba „90%” w ZPE dotyczy raka szyjki macicy związanego z HPV, a nie nowotworów dziedzicznych — nie mylić przy ewentualnym dopisywaniu.
 - L001A — argumenty za endosymbiozą (własny DNA kolisty, rybosomy 70S, podział, rozmiar, podobieństwo błony) zgodne z ZPE. Mitochondria od proteobakterii, chloroplasty od cyjanobakterii — zgodne. Brak w ZPE: nazwisko autora teorii i daty. Lekcja podaje „ok. 1,5–2 mld lat, orientacyjnie” dla pochodzenia mitochondriów — nie ma tego w ZPE; do potwierdzenia w podręczniku (wartość orientacyjna, zostaje z dopiskiem).
+
+## H-Z3 — partia 5 (chemia): zgodność z ZPE (2026-10-20)
+
+Lekcje: CHE.04.J02 (odczyn i pH), CHE.02.N04 (kwasy). Źródła ZPE z `chemia/plany/MAPA_ZPE.md`. Bez zmian w treści.
+
+- J02 — wzory pH = −log[H₃O⁺], pOH, pKw = 14 przy 25 °C, pH = 7 jako obojętny — zgodne z ZPE. Lekcja podaje „przy ~25 °C” i przybliżenie szkolne dla rozcieńczonych roztworów; ZPE tego przybliżenia wprost nie omawia (zakłada pełną dysocjację mocnych elektrolitów), ale nie ma sprzeczności — dopisek w lekcji wystarczy.
+- N04 — podział kwasów (mocne: HCl, HBr, HI, HNO₃, H₂SO₄, HClO₄; słabe: m.in. H₃PO₄, CH₃COOH) zgodny z przyjętą klasyfikacją szkolną. ZPE w tym materiale nie podaje pełnej listy — niezgodności brak.
+- Przykłady liczbowe ZPE (HA 0,02 mol/dm³ → pH 1,699; [H₃O⁺]=0,2 → pH 0,70; zmieszanie HCl/NaOH → pH 12,7) są spójne ze wzorami. Wątpliwe tylko w ZPE: przykład NaOH 0,5250 g w 0,5 dm³ bez końcowego pH — nie dotyczy naszych lekcji.
