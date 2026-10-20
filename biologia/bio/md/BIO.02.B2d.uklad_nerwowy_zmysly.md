@@ -222,6 +222,36 @@ Dawna „mapa smaków" (słodki na czubku języka, gorzki z tyłu) jest dziś uz
 - receptory węchowe to neurony, z których każdy reaguje na określone cząsteczki zapachowe; u człowieka jest kilkaset typów receptorów (do potwierdzenia dokładna liczba),
 - sygnał trafia do **opuszki węchowej**, a stamtąd do kory węchowej w płacie skroniowym.
 
+### 9.5 Węch i dotyk {#wech-dotyk}
+
+- **Węch:** receptory węchowe leżą w nabłonku węchowym w górnej części jamy nosowej; cząsteczki zapachowe rozpuszczają się w śluzie, a impulsy biegną do opuszki węchowej w mózgowiu.
+- **Dotyk, ucisk, temperatura, ból:** receptory leżą w skórze (głównie w skórze właściwej); jest ich najwięcej tam, gdzie czucie jest najdokładniejsze — w opuszkach palców i na wargach.
+
+### 9.6 Droga światła w oku i akomodacja {#akomodacja}
+
+Światło przechodzi kolejno przez **rogówkę, ciecz wodnistą, źrenicę, soczewkę i ciało szkliste** i tworzy na **siatkówce** obraz rzeczywisty, odwrócony i pomniejszony; mózg „odwraca” go z powrotem.
+**Akomodacja** to zmiana kształtu soczewki: przy patrzeniu z bliska mięśnie rzęskowe się kurczą i soczewka staje się bardziej wypukła; przy patrzeniu w dal mięśnie się rozluźniają, a soczewka się spłaszcza. Źrenica zwęża się w jasnym świetle i rozszerza w ciemności (odruch źrenicowy).
+
+### 9.7 Wady i choroby oka {#wady-wzroku}
+
+| Wada / choroba | Co się dzieje | Korekcja / uwaga |
+|---|---|---|
+| krótkowzroczność | obraz ostrych odległych przedmiotów powstaje przed siatkówką (gałka zbyt długa lub załamywanie zbyt silne) | soczewki rozpraszające (wklęsłe) |
+| dalekowzroczność | obraz powstaje za siatkówką (gałka zbyt krótka) | soczewki skupiające (wypukłe) |
+| astygmatyzm | nierówna krzywizna rogówki — obraz zniekształcony | soczewki cylindryczne |
+| daltonizm | wada czopków — trudność w rozróżnianiu barw (np. czerwonej i zielonej); sprzężony z chromosomem X, częstszy u mężczyzn | brak leczenia |
+| zaćma | zmętnienie soczewki | operacyjna wymiana soczewki |
+| jaskra | podwyższone ciśnienie w gałce ocznej uszkadza nerw wzrokowy | leczenie farmakologiczne lub operacyjne; ważna kontrola |
+
+### 9.8 Higiena zmysłów {#higiena-zmyslow}
+
+- **Oko:** dobre oświetlenie, przerwy w pracy przy ekranie, okulary przeciwsłoneczne z filtrem UV.
+- **Ucho:** długotrwały hałas niszczy komórki rzęsate w ślimaku — ubytek słuchu jest trwały; nie czyść przewodu słuchowego głęboko patyczkami. Infekcje z gardła mogą przejść przez trąbkę Eustachiusza do ucha środkowego (zapalenie ucha).
+
+::: pulapka
+**Pułapka:** przy krótkowzroczności obraz tworzy się **przed** siatkówką, przy dalekowzroczności **za** nią. Mnemonik: krótkowzroczny — „kłopot z dali”, korekcja szkłem **wklęsłym** (rozpraszającym).
+:::
+
 ## Ciekawostki i mnemotechniki
 
 ::: mnemonik
