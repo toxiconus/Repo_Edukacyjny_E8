@@ -917,7 +917,9 @@ Inhibitor :: substancja hamująca działanie enzymu
 - Lugol = skrobia; biuret = białko; Trommer/Benedict = cukry redukujące; Sudan III = tłuszcz.
 :::
 
-**Co dalej:** REV02 Różnorodność życia (druga część etapu szkolnego); na etapie rejonowym — organizm człowieka i homeostaza.## AUDYT W19 — chemizm życia i klucze (2026-10-09, GPT-6)
+**Co dalej:** REV02 Różnorodność życia (druga część etapu szkolnego); na etapie rejonowym — organizm człowieka i homeostaza.
+
+## AUDYT W19 — chemizm życia i klucze (2026-10-09, GPT-6)
 
 **Zakres:** kontrola celowana równania fotosyntezy i częstych uogólnień.
 
