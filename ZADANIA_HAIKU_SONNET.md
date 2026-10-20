@@ -35,7 +35,8 @@ Priorytet: biologia LKO etap szkolny, środa 21.10.2026, 9:00, 60 min. Nie pisa�
   - Postęp (2026-10-20): 57 wierszy w `MAPA_ZPE.md` (commity e271bbf, e442ec8, bbc1387 i kolejny). Bez wierszy: BIO.01.L002, L003, BIO.02.L016A, L021, BIO.05.L050, BIO.06.L090 (do wyszukania lub oznaczenia jako powtórki bez ZPE).
 - [x] H-Z2. **To samo dla chemii** → `chemia/plany/MAPA_ZPE.md`; potem dla polskiego i fizyki, jeśli ZPE ma materiały.
   - Postęp (2026-10-20): `chemia/plany/MAPA_ZPE.md` — 28 wierszy (cała chemia poza F00, C2w, F16 — do wyszukania). Zob. plik.
-- [ ] H-Z3. **Sprawdzenie treści z ZPE:** dla lekcji z mapy porównać definicje i liczby z ZPE; rozbieżności i braki zakresu wpisać do `WERYFIKACJA.md`, oczywiste braki dopisać do lekcji (nie usuwając treści); wątpliwe zostawić Sonnetowi.
+- [~] H-Z3. **Sprawdzenie treści z ZPE:** dla lekcji z mapy porównać definicje i liczby z ZPE; rozbieżności i braki zakresu wpisać do `WERYFIKACJA.md`, oczywiste braki dopisać do lekcji (nie usuwając treści); wątpliwe zostawić Sonnetowi.
+  - Postęp (2026-10-20): pilotaż (L015, L010) oraz partia 2 (L001, L005, L006, L007, L013) zapisane w `WERYFIKACJA.md`. Pozostałe lekcje z mapy — do sprawdzenia.
 
 - [x] H-R1. **Zadania z rysunków arkuszy:** dla każdego nowego rysunku z `biologia/plany/ARKUSZE_RYSUNKI_POKRYCIE.md` dopisać do ćwiczeń właściwej lekcji 2–3 zadania w stylu konkursu (podpisz / przyporządkuj / oceń P–F) z kluczem; wzorce: arkusze w `olimpiada/` i `biologia/plany/ANALIZA_ARKUSZY_LKO_BIO.md`. Wątpliwe wypisać Sonnetowi.
   Zrobione: po 2 zadania z kluczem przy: polip-meduza, bezkregowce-sylwetki, przeksztalcenia-organow, drzewa-krzewy, preparat-mikroskopowy (REV02); neurony-mielina (U08, B2d); mapa-narzadow (B10, L002). Do potwierdzenia dla Sonneta: cebula i ciernie berberysu (przeksztalcenia), wartości prędkości impulsu (neurony), zestawienie „symetria” (bezkręgowce). Nie zrobione: preparat z ZPE i wykres-dane (sprawdzić osobno).
