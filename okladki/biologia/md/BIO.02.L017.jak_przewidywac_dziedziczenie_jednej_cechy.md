@@ -226,6 +226,10 @@ To konwencja, nie prawo natury. W innych podręcznikach mogą być inne litery (
 @viz rodowod | Rodowód — jak rozpoznać typ dziedziczenia | wybierz typ, kliknij osobę
 @opis Trzy rodowody do wyboru. Kwadrat to mężczyzna, koło kobieta, zaczernione symbole to osoby chore. W każdym rodzicami są osoby I-1 i I-2, a dziećmi II-1 do II-3. Klik w osobę pokazuje jej genotyp. Wniosek: zdrowi rodzice z chorym dzieckiem wskazują cechę recesywną, a choroba w każdym pokoleniu cechę dominującą.
 
+**Zadanie (rozpoznaj):** w rodowodzie, w którym chore są dzieci zdrowych rodziców, jaki typ dziedziczenia jest najbardziej prawdopodobny? **Odpowiedź:** autosomalne recesywne (rodzice są nosicielami Aa).
+**Zadanie (wnioskuj):** dlaczego choroba w każdym pokoleniu wskazuje na dominację? **Odpowiedź:** dominujący allel ujawnia się już przy jednej kopii, więc chory rodzic przekazuje cechę dzieciom.
+
+
 ### 6.1. Po co w ogóle Punnett? (logika narzędzia)
 
 Wyobraź sobie, że masz dwie monety. Każda może wypaść orłem (O) lub reszką (R). Chcesz wiedzieć, **jakie są możliwe wyniki rzutu dwiema monetami**:
@@ -888,17 +892,7 @@ DZIEDZICZENIE 1 GENU
 4. Ćwiczenia A i B.
 5. Fiszki.
 6. Test.
-7. Powtórka za 1 dzień, 3 dni, tydzień.
 
-### System powtórek (spaced)
-
-| Kiedy | Co | Czas |
-|---|---|---|
-| Po lekcji | ściąga + 5 fiszek | 15–20 min |
-| +1 dzień | fiszki bloku | 10 min |
-| +3 dni | klinika + 3 zadania treningowe | 15 min |
-| +1 tydzień | mini-test bloku | 20 min |
-| +1 miesiąc | mapa pojęć + pułapki | 15 min |
 
 ---
 

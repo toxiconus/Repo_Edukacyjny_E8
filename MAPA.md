@@ -3,9 +3,9 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (19 pl., 522 KB)
+## .  (19 pl., 524 KB)
 - (zwinięte; `ls .`) — duże:
-- ⚠`INDEKS.html` 52 KB
+- ⚠`INDEKS.html` 53 KB
 - ⚠`SPIS_WSZYSTKICH.md` 61 KB
 - ⚠`WERYFIKACJA.md` 78 KB
 - ⚠`przeglad_lekcji.json` 146 KB
@@ -73,13 +73,13 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `U10_krzywe_glukozy.svg` 10 KB
 - `U10_os_tarczycowa.svg` 10 KB
 
-## biologia/bio/md  (58 pl., 2.6 MB)
+## biologia/bio/md  (61 pl., 2.6 MB)
 - (zwinięte; `ls biologia/bio/md`) — duże:
 - ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.md` 67 KB
 - ⚠`BIO.00.REV02.roznorodnosc_zycia.md` 103 KB
 - ⚠`BIO.01.L001.komorka.md` 81 KB
 - ⚠`BIO.01.L002.powtorka_czlowiek.md` 76 KB
-- ⚠`BIO.01.L003.diagnoza.md` 77 KB
+- ⚠`BIO.01.L003.diagnoza.md` 76 KB
 - ⚠`BIO.02.L010.dna_od_zera.md` 65 KB
 - ⚠`BIO.02.L012.jak_dna_jest_upakowane_w.md` 56 KB
 - ⚠`BIO.02.L014.jak_komorki_ciala_powstaja_i.md` 61 KB
@@ -104,16 +104,16 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## biologia/bio/szablon/wizualizacje  (59 pl., 300 KB)
 - (zwinięte; `ls biologia/bio/szablon/wizualizacje`)
 
-## biologia/html  (55 pl., 13.5 MB)
+## biologia/html  (58 pl., 13.8 MB)
 - (zwinięte; `ls biologia/html`) — duże:
 - ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 392 KB
-- ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 427 KB
+- ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 428 KB
+- ⚠`BIO.00.REV03.organizm_czlowieka_i_homeostaza.html` 130 KB
+- ⚠`BIO.00.REV04.genetyka_ewolucja_ekologia.html` 120 KB
+- ⚠`BIO.00.TEST.proby_REV01_REV04.html` 112 KB
 - ⚠`BIO.01.B1b.krzyzowki_mendel.html` 145 KB
 - ⚠`BIO.01.L001.komorka.html` 221 KB
 - ⚠`BIO.01.L001A.dodatek_ambitny_od_komorki_do.html` 155 KB
-- ⚠`BIO.01.L002.powtorka_czlowiek.html` 364 KB
-- ⚠`BIO.01.L003.diagnoza.html` 201 KB
-- ⚠`BIO.01.L004.organizacja_budowy_organizmu_od_komorki.html` 313 KB
 
 ## biologia/niewykorzystane/archiwum_md  (3 pl., 46 KB)
 - `L001_komorka_jako_podstawowa_jednostka_zycia.md` 13 KB
@@ -132,7 +132,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `ARKUSZE_RYSUNKI_POKRYCIE.md` 4 KB
 - `KATALOG_GRAFIK_BIO.md` 31 KB
 - `PLAN_BRAKUJACE_LEKCJE.md` 3 KB
-- `PLAN_RYSUNKOW_BIO.md` 6 KB
+- `PLAN_RYSUNKOW_BIO.md` 7 KB
 - `POMINIETE_BIO_L030-L043_L091_szkielety.md` 2 KB
 
 ## biologia/plany/audyty  (57 pl., 1.8 MB)
@@ -747,10 +747,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `fix_encoding_v2.ps1` 5 KB
 - `replace_gereb_card.ps1` 5 KB
 
-## okladki  (7 pl., 212 KB)
-- ⚠`index.html` 104 KB
+## okladki  (7 pl., 215 KB)
+- ⚠`index.html` 106 KB
 - `okladka_angielski.html` 12 KB
-- `okladka_biologia.html` 22 KB
+- `okladka_biologia.html` 23 KB
 - `okladka_chemia.html` 29 KB
 - `okladka_lko.html` 9 KB
 - `okladka_olimpiada.html` 5 KB
@@ -777,12 +777,12 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## okladki/biologia/html  (54 pl., 13.4 MB)
 - (zwinięte; `ls okladki/biologia/html`) — duże:
 - ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 392 KB
-- ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 427 KB
+- ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 428 KB
 - ⚠`BIO.01.B1b.krzyzowki_mendel.html` 145 KB
 - ⚠`BIO.01.L001.komorka.html` 221 KB
 - ⚠`BIO.01.L001A.dodatek_ambitny_od_komorki_do.html` 155 KB
-- ⚠`BIO.01.L002.powtorka_czlowiek.html` 364 KB
-- ⚠`BIO.01.L003.diagnoza.html` 201 KB
+- ⚠`BIO.01.L002.powtorka_czlowiek.html` 363 KB
+- ⚠`BIO.01.L003.diagnoza.html` 200 KB
 - ⚠`BIO.01.L004.organizacja_budowy_organizmu_od_komorki.html` 313 KB
 
 ## okladki/biologia/md  (54 pl., 2.3 MB)
@@ -791,7 +791,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIO.00.REV02.roznorodnosc_zycia.md` 103 KB
 - ⚠`BIO.01.L001.komorka.md` 81 KB
 - ⚠`BIO.01.L002.powtorka_czlowiek.md` 76 KB
-- ⚠`BIO.01.L003.diagnoza.md` 77 KB
+- ⚠`BIO.01.L003.diagnoza.md` 76 KB
 - ⚠`BIO.02.L010.dna_od_zera.md` 65 KB
 - ⚠`BIO.02.L012.jak_dna_jest_upakowane_w.md` 56 KB
 - ⚠`BIO.02.L014.jak_komorki_ciala_powstaja_i.md` 61 KB

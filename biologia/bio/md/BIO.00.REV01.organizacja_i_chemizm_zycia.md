@@ -792,6 +792,8 @@ b) Sformułuj wniosek dotyczący wpływu temperatury na aktywność amylazy. **(
 c) Wyjaśnij, dlaczego w temperaturze 90°C nie zaobserwowano rozkładu skrobi. **(1 pkt)**
 
 ::: odp | Klucz
+Kryteria punktacji (4 pkt): a) 2 pkt — 1 pkt za poprawne osie i opisy, 1 pkt za punkty połączone linią i oznaczenie 70 i 90 °C jako brak reakcji; b) 1 pkt — wniosek o optimum ok. 37 °C; c) 1 pkt — denaturacja białka enzymatycznego.
+
 a) Wykres: punkty połączone linią; najniższy czas przy 37°C, wzrost czasu po obu stronach optimum; dla 70°C i 90°C brak punktu lub oznaczenie „brak reakcji”.  
 b) Aktywność amylazy zależy od temperatury: enzym działa najszybciej przy około 37°C, a przy niższych i wyższych temperaturach jego aktywność maleje.  
 c) Wysoka temperatura denaturuje białko enzymatyczne — amylaza traci strukturę przestrzenną i nie może rozkładać skrobi.
@@ -807,6 +809,8 @@ c) Zaprojektuj doświadczenie: wskaż próbę badawczą i próbę kontrolną. **
 d) Zapisz możliwą obserwację i wniosek. **(1 pkt)**
 
 ::: odp | Klucz
+Kryteria punktacji (5 pkt): a) 1 pkt — problem badawczy; b) 1 pkt — hipoteza sprawdzalna; c) 2 pkt — 1 pkt próba badawcza, 1 pkt próba kontrolna; d) 1 pkt — obserwacja i wniosek.
+
 a) Czy nasiona fasoli zawierają tłuszcz?  
 b) Nasiona fasoli zawierają tłuszcz / nie zawierają tłuszczu — hipoteza musi być sprawdzalna.  
 c) Próba badawcza: rozgniecione nasiona fasoli na papierze sączkowym. Próba kontrolna: kropla wody na papierze sączkowym; dodatkowo można użyć nasion słonecznika jako próby porównawczej z dodatnim wynikiem.  
@@ -825,6 +829,8 @@ Uzupełnij tabelę, wpisując nazwę związku organicznego oraz wyjaśnienie zwi
 | DNA w jądrze komórkowym | … | … |
 
 ::: odp | Klucz
+Kryteria punktacji (4 pkt): po 1 pkt za każdy wiersz — poprawny związek organiczny i uzasadnienie związku budowy z funkcją.
+
 - Hemoglobina — białko; ma miejsce wiążące żelazo, które umożliwia transport tlenu we krwi.  
 - Celuloza — węglowodan (wielocukier); długie, wytrzymałe włókna tworzą sztywną ścianę komórkową, chroniącą komórkę i nadając jej kształt.  
 - Fosfolipid — lipid; ma hydrofilową „głowę” i hydrofobowe „ogony”, dlatego tworzy dwuwarstwę błony komórkowej, która oddziela wnętrze komórki od otoczenia.  

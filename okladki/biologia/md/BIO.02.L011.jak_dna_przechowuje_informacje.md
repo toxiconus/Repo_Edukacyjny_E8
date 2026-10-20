@@ -850,15 +850,6 @@ DNA
 6. Test końcowy.
 7. Wróć do Kliniki błędów przy pomyłkach.
 
-### System powtórek (spaced)
-
-| Kiedy | Co | Czas |
-|---|---|---|
-| Po lekcji | ściąga + 5 fiszek | 15–20 min |
-| +1 dzień | fiszki bloku | 10 min |
-| +3 dni | klinika + 3 zadania treningowe | 15 min |
-| +1 tydzień | mini-test bloku | 20 min |
-| +1 miesiąc | mapa pojęć + pułapki | 15 min |
 
 ---
 

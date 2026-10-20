@@ -1240,7 +1240,6 @@ Wszystkie komórki ciała mają ten sam zestaw DNA, ale różnie odczytują geny
 5. **Ćwiczenia (13):** zrób mini-check, potem ćwiczenia A i B. Potem C, jeśli masz czas. Na końcu D (ambitne).
 6. **Fiszki (15):** przejrzyj wszystkie fiszki. Zaznacz te, których nie pamiętasz.
 7. **Test (16):** rozwiąż test końcowy. Sprawdź odpowiedzi.
-8. **Powtórki:** wróć do materiału po 1 dniu, po 3 dniach, po tygodniu, po miesiącu.
 
 :::
 
@@ -1255,14 +1254,6 @@ Wszystkie komórki ciała mają ten sam zestaw DNA, ale różnie odczytują geny
 :::
 
 ::: karta basic | Powtórki rozłożone w czasie (spaced repetition)
-
-| Kiedy | Co |
-|---|---|
-| Po lekcji | ściąga + 5 fiszek |
-| +1 dzień | fiszki + tabela typów komórek |
-| +3 dni | Klinika błędów + algorytm rozpoznawania |
-| +1 tydzień | test + powtórka fiszek |
-| +1 miesiąc | mapa pojęć + zadania z życia |
 
 **Zasada 3 pytań po powtórce:**
 

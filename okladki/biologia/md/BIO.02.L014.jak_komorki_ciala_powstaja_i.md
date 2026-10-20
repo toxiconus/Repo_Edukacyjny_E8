@@ -1621,19 +1621,8 @@ Dlaczego rodzeństwo (poza bliźniakami jednojajowymi) nie jest identyczne? Poda
 
 - Test końcowy.
 
-- Powtórka za 1 dzień, 3 dni, tydzień.
 
 
-### Powtórki rozłożone w czasie
-
-
-    | Kiedy | Co | Czas |
-| --- | --- | --- |
-| Po lekcji | ściąga + 5 fiszek | 15–20 min |
-| +1 dzień | fiszki bloku | 10 min |
-| +3 dni | klinika + 3 zadania treningowe | 15 min |
-| +1 tydzień | mini-test bloku | 20 min |
-| +1 miesiąc | mapa pojęć + pułapki | 15 min |
 
 
 ## 19. Słownik

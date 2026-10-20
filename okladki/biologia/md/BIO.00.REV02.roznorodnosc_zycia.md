@@ -116,6 +116,10 @@ Klasyfikacja porządkuje organizmy w grupy (**jednostki systematyczne, rangi**) 
 6. Pozostałe proste organizmy z jądrem (często jednokomórkowe) → **protisty**.
 :::
 
+::: mnemonik
+**D K T G R R R G** — Dobra Koleżanka Tangramu Gubi Różowe Rękawiczki Rano Gdzieś (domena, królestwo, typ, gromada, rząd, rodzina, rodzaj, gatunek).
+:::
+
 ### 1.1 Typy odżywiania {#typy-odzywiania}
 
 | Typ | Skąd energia i materia | Przykłady |
@@ -746,6 +750,10 @@ Inne pasożytnicze nicienie: glista ludzka (niemyte warzywa i owoce), włosień 
 
 **Pytanie kontrolne:** wymień trzy funkcje szkieletu zewnętrznego i wyjaśnij, dlaczego stawonogi się liniają.
 
+::: mnemonik
+**Owady mają 6 nóg, pajęczaki 8, skorupiaki 10 lub więcej.**
+:::
+
 ### 7.5 Mięczaki {#mieczaki}
 
 **Cechy wspólne:** ciało **miękkie, niesegmentowane**: **noga** (ruch), **worek trzewiowy** z narządami; **płaszcz** wytwarzający zwykle **wapienną muszlę**.
@@ -902,6 +910,10 @@ Osuszanie terenów podmokłych i zanieczyszczenie wód (płazy, ryby), przegradz
 
 @viz klucz-kregowce | Klucz dwudzielny: do której gromady należy zwierzę? | odpowiadaj tak / nie
 @opis Klucz w postaci kolejnych pytań tak/nie: czy ma pióra (ptaki), czy ma sierść i karmi mlekiem (ssaki), czy przez całe życie oddycha skrzelami i ma płetwy (ryby), czy skóra jest naga i wilgotna (płazy), czy ma suche rogowe łuski (gady). Udzielone odpowiedzi tworzą numerowaną ścieżkę, a na końcu pojawia się nazwa gromady. Przycisk „rozpoznaj zwierzę” losuje przykład (np. delfin, nietoperz, pingwin, konik morski, żółw) i sprawdza wynik z wyjaśnieniem pułapki. Wniosek: gromadę kręgowców rozpoznajemy po cechach budowy (pokrycie ciała, sposób oddychania, karmienie młodych), a nie po wyglądzie czy środowisku życia.
+
+::: mnemonik
+**R P G P S** — Ryby Pływają, Gady Suną, Ptaki Szybują, Ssaki Ssą.
+:::
 
 ## 9 | Doświadczenia biologiczne — jak je planować [[exam:KONKURS]] {#doswiadczenia}
 

@@ -823,6 +823,9 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | angielski | ANG.01.L027.slownictwo_tematyczne | — |
 | biologia | BIO.00.REV01.organizacja_i_chemizm_zycia | `energia-glukozy` ×1, `fotosynteza-oddychanie` ×1, `fotosynteza-oddychanie-krazenie` ×1, `komorka-nakladki` ×1, `komorki-porownanie` ×1, `lancuch` ×1, `mikroskop-model` ×1, `proba-kontrolna` ×1, `transport-blona` ×1, `wykres-dane` ×1 |
 | biologia | BIO.00.REV02.roznorodnosc_zycia | `bezkregowce-sylwetki` ×1, `cykl` ×6, `drzewa-krzewy` ×1, `jajo-porownanie` ×1, `jajo-ptaka` ×1, `klucz-kregowce` ×1, `krew-skladniki` ×1, `kwiat-budowa` ×1, `liscie-rodzaje` ×1, `miesnie-trzy` ×1, `mikroskop-budowa` ×1, `nablonki-rodzaje` ×1, `nasiono-ziarniak` ×1, `owoce-rozsiewanie` ×1, `polip-meduza` ×1, `preparat-mikroskopowy` ×1, `przeksztalcenia-organow` ×1, `przeobrazenie-owadow` ×1, `przeobrazenie-plaza` ×1, `ryba-budowa` ×1, `stawonogi-budowa` ×1, `szyszki-iglaste` ×1, `tkanki-zwierzece` ×1, `wirus-bakteria` ×1, `wykres-dane` ×1, `zboza-klosy` ×1 |
+| biologia | BIO.00.REV03.organizm_czlowieka_i_homeostaza | — |
+| biologia | BIO.00.REV04.genetyka_ewolucja_ekologia | — |
+| biologia | BIO.00.TEST.proby_REV01_REV04 | — |
 | biologia | BIO.01.B1b.krzyzowki_mendel | `krzyzowka-mendla` ×2, `punnett` ×1 |
 | biologia | BIO.01.L001.komorka | `komorka-nakladki` ×1, `lancuch` ×1, `mikroskop-model` ×1, `transport-blona` ×1 |
 | biologia | BIO.01.L001A.dodatek_ambitny_od_komorki_do | `endosymbioza` ×1 |

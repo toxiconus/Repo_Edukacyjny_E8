@@ -1063,16 +1063,6 @@ Proces kopiowania DNA przed podziałem — jak nazywa się to pojęcie? | **Repl
 
 :::
 
-### System powtórek — diagnoza
-
-| Kiedy | Co |
-|---|---|
-| Ten sam dzień | fiszki startowe |
-| +2 dni | pytania, które były błędne |
-| +7 dni | krótka powtórka diagnozy (mikropunkty startowe) |
-| Po L013 | wróć do pytań o DNA / 46 / replikację |
-| Po L017 | allel, genotyp, fenotyp |
-| Po L021 | cała diagnoza (Etap 3) jako „czy blok genetyki siedzi" |
 
 ::: karta understand | Zasada 3 pytań po powtórce
 1. Co już umiem?
@@ -1121,7 +1111,6 @@ Kliknij punkt na osi, aby zobaczyć opis odkrycia.
 
 ::: karta understand | Plan nauki
 1. **Zapisz swoje 3 największe luki** — do tabeli „Moje luki".
-2. **Zaplanuj powtórki** (ten sam dzień, +2 dni, +7 dni, po L013, po L017, po L021).
 3. **Zacznij od L010** — cechy i zmienność.
 4. **Wracaj do diagnozy** po każdym bloku (L013, L017, L021).
 
@@ -1616,15 +1605,6 @@ Klucz: 1 jądro  2 46  3 2n  4 powstawania gamet / redukcji  5 wersja genu  6 ce
 ---
 
 #### 22. SYSTEM POWTÓREK (diagnoza)
-
-| Kiedy | Co |
-|-------|-----|
-| Ten sam dzień | fiszki startowe (sekcja 5) |
-| +2 dni | pytania, które były błędne |
-| +7 dni | pełna diagnoza jeszcze raz (inne sformułowania z cz. 18) |
-| Po L013 | wróć do pytań o DNA / 46 / replikację |
-| Po L017 | allel, genotyp, fenotyp |
-| Po L021 | cała diagnoza jako „czy blok genetyki siedzi” |
 
 ---
 
