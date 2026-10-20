@@ -1,0 +1,7 @@
+{
+  "_opis": "Wybór wersji lekcji chemii, gdy ten sam temat jest w chemia/lekcje_md i chemia/che-modular/lessons-md/gotowe. Klucz = kod (np. F01, LKO_ORG01). Wartość: 'gotowe' | 'lekcje_md'. Brak wpisu: przy identycznych treściach lekcje_md, inaczej lekcje_md (stare zachowanie). Przegrana kopia idzie do chemia/plany/niewykorzystane/.",
+  "F01": "gotowe",
+  "F02": "gotowe",
+  "F03": "gotowe",
+  "F04": "gotowe"
+}

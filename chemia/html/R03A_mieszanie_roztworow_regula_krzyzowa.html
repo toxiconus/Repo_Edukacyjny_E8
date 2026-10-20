@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="pl" data-przedmiot="che">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>R03A · Mieszanie roztworów i reguła krzyżowa</title>
+<style id="lekcja-css">
+/* baza.css — wspólna baza lekcji wszystkich przedmiotów (styl lekcji silnika CHE v0_57). Nie edytować — zmiany wspólne w ulepszenia.css, przedmiotowe w motywy/<kod>.css. */
+
+
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+--bg:#fafbfc;--surface:#ffffff;--surface-soft:#f6f8fa;--surface-warm:#fdfaf4;--border:#e5e9ee;--border-strong:#cdd5dd;
+--text:#1a2332;--text-soft:#4a5568;--text-muted:#8892a0;--text-faint:#b4bcc6;
+--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,0.15);
+--c-basic:#2e7d4f;--c-basic-bg:#eaf6ee;--c-basic-line:#b8dcc4;
+--c-understand:#2b5e9c;--c-understand-bg:#eaf1f9;--c-understand-line:#bcd0e5;
+--c-warn:#b06f1c;--c-warn-bg:#fcf4e6;--c-warn-line:#eed8a8;
+--c-error:#b83a45;--c-error-bg:#fbeced;--c-error-line:#e8b5b9;
+--c-extra:#6b3fa0;--c-extra-bg:#f3ecfa;--c-extra-line:#d3bde8;
+--c-new:#0d7d7d;--c-new-bg:#e6f4f4;--c-new-line:#b0dcdc;
+--c-exam:#a86a00;--c-exam-bg:#fdf5e0;--c-exam-line:#eed49c;
+--sh-sm:0 1px 2px rgba(26,35,50,0.04);--sh-md:0 4px 12px rgba(26,35,50,0.06);--sh-lg:0 12px 32px rgba(26,35,50,0.10);--sh-xl:0 20px 48px rgba(26,35,50,0.14);
+--r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;
+--header-h:56px;
+--ease:cubic-bezier(0.4,0,0.2,1);--ease-out:cubic-bezier(0.16,1,0.3,1);
+--hl-key:#0d6868;--hl-key-bg:#d8ecea;--hl-warn:#b83a45;--hl-warn-bg:#fbe0e2;--hl-new:#6b3fa0;--hl-new-bg:#ede0f8;--hl-formula:#084848;--hl-formula-bg:#e0eeed;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;padding:calc(var(--header-h) + 12px) 0 88px;min-height:100vh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+@media(min-width:600px){body{padding:calc(var(--header-h) + 18px) 12px 96px;}}
+@media(min-width:768px){body{padding:calc(var(--header-h) + 24px) 20px 100px;}}
+@media(min-width:1100px){body{padding:calc(var(--header-h) + 28px) 32px 110px;}}
+.fab{position:fixed;top:12px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);background:rgba(255,255,255,0.94);color:var(--text);cursor:pointer;border-radius:var(--r-md);padding:0;transition:all 0.2s var(--ease);z-index:1200;box-shadow:var(--sh-sm);backdrop-filter:blur(8px);}
+.fab:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);box-shadow:var(--sh-md);transform:translateY(-1px);}
+.fab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.fab-left{left:6px;}.fab-right{right:6px;}
+@media(min-width:600px){.fab-left{left:10px;}.fab-right{right:10px;}}
+@media(min-width:768px){.fab-left{left:14px;}.fab-right{right:14px;}}
+.fab-left::after{content:'';width:16px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;border-radius:1px;transition:transform 0.25s var(--ease);}
+.fab-left.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.fab-left.is-open::after{width:16px;height:2px;background:currentColor;box-shadow:none;transform:rotate(45deg);}
+.fab-left.is-open::before{content:'';position:absolute;width:16px;height:2px;background:currentColor;transform:rotate(-45deg);border-radius:1px;}
+.fab-right::after{content:'';display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:8px solid currentColor;transition:transform 0.35s var(--ease-out);}
+.fab-right.is-hidden::after{transform:rotate(0deg);}
+.fab-right:not(.is-hidden)::after{transform:rotate(180deg);}
+.header-wrapper{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);transform:translateY(0);transition:transform 0.45s var(--ease-out),box-shadow 0.3s var(--ease);box-shadow:var(--sh-sm);}
+.header-wrapper.is-hidden{transform:translateY(-100%);box-shadow:none;}
+.header-bar{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:0 16px;height:var(--header-h);}
+@media(min-width:768px){.header-bar{padding:0 24px;}}
+.header-subject{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:1px;padding:4px 10px;background:var(--accent-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;}
+.header-title{font-size:15px;font-weight:700;color:var(--text);letter-spacing:-0.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1 1 auto;min-width:0;}
+.header-lesson{font-size:10px;font-weight:800;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.7px;padding:4px 9px;background:var(--surface-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;font-family:'JetBrains Mono',monospace;}
+.header-nav{display:flex;gap:2px;flex-shrink:0;align-items:center;}
+.header-nav a,.header-nav button{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;border-radius:var(--r-sm);font-size:16px;font-weight:500;transition:all 0.2s var(--ease);border:1px solid transparent;background:transparent;cursor:pointer;padding:0;font-family:inherit;}
+.header-nav a:hover,.header-nav button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.header-resume-btn.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.header-resume-btn::before{content:'▮';font-size:14px;line-height:1;}
+.header-panel{display:none;border-top:1px solid var(--border);background:linear-gradient(180deg,var(--surface) 0%,var(--surface-soft) 100%);padding:20px 16px 24px;}
+@media(min-width:768px){.header-panel{padding:24px 24px 28px;}}
+.header-panel.is-open{display:block;}
+.header-panel-inner{max-width:900px;margin:0 auto;}
+.header-kicker{font-size:11px;color:var(--text-muted);text-transform:uppercase;font-weight:800;letter-spacing:1px;margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.header-kicker::before{content:'';width:24px;height:2px;background:var(--accent);display:inline-block;border-radius:1px;}
+.header-h1{font-size:32px;font-weight:800;color:var(--text);letter-spacing:-1px;margin-bottom:10px;line-height:1.1;}
+.header-subtitle{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:18px;max-width:720px;}
+.header-modes{display:flex;gap:6px;flex-wrap:wrap;}
+.mode-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 15px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);font-family:inherit;}
+.mode-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
+.mode-btn:hover:not(.active){background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.resume-dropdown{display:none;position:fixed;top:calc(var(--header-h) + 6px);right:14px;z-index:1050;width:min(300px,calc(100vw - 30px));padding:14px;border:1px solid var(--border-strong);border-radius:12px;background:#fff;box-shadow:var(--sh-lg);}
+.resume-dropdown.is-open{display:block;}
+.resume-dropdown h4{margin:0 0 5px;color:var(--text);font-size:.85rem;}
+.resume-dropdown p{margin:0 0 12px;color:var(--text-muted);font-size:.75rem;line-height:1.5;}
+.resume-actions{display:flex;gap:6px;}
+.resume-actions button{flex:1;padding:8px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text-soft);font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.resume-actions .resume-save{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toc-overlay{position:fixed;inset:0;background:rgba(26,35,50,0.34);backdrop-filter:blur(3px);z-index:1100;opacity:0;visibility:hidden;transition:opacity 0.3s var(--ease),visibility 0.3s var(--ease);}
+.toc-overlay.is-visible{opacity:1;visibility:visible;}
+.toc-wrapper{position:fixed;left:0;top:0;width:320px;max-width:86vw;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:1150;transform:translateX(-100%);transition:transform 0.4s var(--ease-out);padding-top:64px;box-shadow:var(--sh-xl);}
+.toc-wrapper.is-open{transform:translateX(0);}
+.toc-content{padding:12px 14px 100px;}
+.toc-header{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);padding:4px 12px 12px;}
+.toc-item{margin-bottom:4px;border-radius:var(--r-md);overflow:hidden;}
+.toc-summary{padding:10px 12px;font-size:13px;font-weight:700;color:var(--text);cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;border-radius:var(--r-sm);transition:background 0.2s var(--ease),color 0.2s var(--ease);user-select:none;}
+.toc-summary:hover{background:var(--accent-soft);color:var(--accent);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::marker{content:'';}
+.toc-summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);opacity:0.5;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);opacity:1;}
+.toc-links{padding:4px 0 8px 28px;display:flex;flex-direction:column;gap:1px;}
+.toc-link{display:block;padding:6px 10px;font-size:12.5px;color:var(--text-soft);text-decoration:none;border-radius:4px;transition:all 0.2s var(--ease);border-left:2px solid transparent;}
+.toc-link:hover{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);}
+.container{max-width:820px;margin:0 auto;background:var(--surface);border-radius:0;box-shadow:none;padding:18px 12px;border:none;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+@media(min-width:600px){.container{border-radius:var(--r-lg);box-shadow:var(--sh-md);border:1px solid var(--border);padding:22px 18px;}}
+@media(min-width:768px){.container{padding:36px 36px;border-radius:var(--r-xl);}}
+@media(min-width:1100px){.container{max-width:840px;padding:40px 40px;}}
+h1,h2,h3,h4,h5{font-weight:800;color:var(--text);letter-spacing:-0.3px;line-height:1.3;}
+h2{font-size:24px;margin-top:44px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+h3{font-size:17px;margin-top:32px;margin-bottom:12px;font-weight:800;}
+h4{font-size:15px;margin-top:24px;margin-bottom:10px;font-weight:800;}
+h5{font-size:13px;margin-top:16px;margin-bottom:8px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-soft);}
+p{margin-bottom:12px;}
+ul,ol{padding-left:24px;margin-bottom:14px;}
+li{margin-bottom:6px;padding-left:4px;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s var(--ease);}
+a:hover{border-bottom-color:var(--accent);}
+strong{font-weight:700;color:var(--text);}
+.hl{background:var(--hl-key-bg);color:var(--hl-key);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-warn{background:var(--hl-warn-bg);color:var(--hl-warn);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-new{background:var(--hl-new-bg);color:var(--hl-new);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.formula{display:inline-block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:14px;font-weight:600;color:var(--hl-formula);background:var(--hl-formula-bg);padding:4px 12px;border-radius:var(--r-sm);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:3px 2px;white-space:nowrap;}
+.formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
+code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
+pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
+.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
+.mnemonic b{color:#78350f;}
+.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
+@media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
+.card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
+.card-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:10px;padding:3px 9px;background:var(--accent-soft);border-radius:4px;}
+.card-core{background:var(--accent-soft);border-color:var(--accent-line);border-left-color:var(--accent);}
+.card-basic{background:var(--c-basic-bg);border-color:var(--c-basic-line);border-left-color:var(--c-basic);}
+.card-basic .card-label{background:rgba(46,125,79,0.12);color:var(--c-basic);}
+.card-understand{background:var(--c-understand-bg);border-color:var(--c-understand-line);border-left-color:var(--c-understand);}
+.card-understand .card-label{background:rgba(43,94,156,0.12);color:var(--c-understand);}
+.card-warning{background:var(--c-warn-bg);border-color:var(--c-warn-line);border-left-color:var(--c-warn);}
+.card-warning .card-label{background:rgba(176,111,28,0.12);color:var(--c-warn);}
+.card-error{background:var(--c-error-bg);border-color:var(--c-error-line);border-left-color:var(--c-error);}
+.card-error .card-label{background:rgba(184,58,69,0.12);color:var(--c-error);}
+.card-extra{background:var(--c-extra-bg);border-color:var(--c-extra-line);border-left-color:var(--c-extra);}
+.card-extra .card-label{background:rgba(107,63,160,0.12);color:var(--c-extra);}
+.card-new{background:var(--c-new-bg);border-color:var(--c-new-line);border-left-color:var(--c-new);}
+.card-new .card-label{background:rgba(13,125,125,0.12);color:var(--c-new);}
+.card-exam{background:var(--c-exam-bg);border-color:var(--c-exam-line);border-left-color:var(--c-exam);}
+.card-exam .card-label{background:rgba(168,106,0,0.12);color:var(--c-exam);}
+.card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0;}
+details.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent-line);border-radius:var(--r-sm);padding:10px 14px;margin:10px 0;transition:all 0.2s var(--ease);}
+details.answer[open]{background:var(--accent-soft);border-left-color:var(--accent);}
+details.answer summary{cursor:pointer;font-weight:700;color:var(--text-soft);font-size:13px;list-style:none;user-select:none;display:flex;align-items:center;gap:10px;transition:color 0.2s var(--ease);}
+details.answer summary::-webkit-details-marker{display:none;}
+details.answer summary::marker{content:'';}
+details.answer summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer[open] summary{color:var(--accent);}
+details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}
+.part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}
+@media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}
+.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
+@media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}
+.table-wrap th,.table-wrap td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px;}
+@media(min-width:600px){.table-wrap th,.table-wrap td{padding:10px 12px;font-size:13.5px;}}
+.table-wrap th{background:var(--surface-soft);font-weight:800;color:var(--text-soft);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;}
+@media(min-width:600px){.table-wrap th{font-size:11px;letter-spacing:0.7px;white-space:nowrap;}}
+.table-wrap.table-compact td,.table-wrap.table-compact th{padding:7px 6px;font-size:12.5px;}
+.table-wrap tr:last-child td{border-bottom:none;}
+.table-wrap tr:hover td{background:var(--accent-soft);}
+.table-wrap .error-row{background:var(--c-error-bg);}
+.table-wrap .ok-row{background:var(--c-basic-bg);}
+.def-list{display:flex;flex-direction:column;gap:8px;margin:14px 0;}
+.def-item{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px 16px;}
+.def-item dt{font-weight:800;color:var(--text);font-size:13.5px;margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+.def-item dt::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;}
+.def-item dd{color:var(--text-soft);font-size:13.5px;line-height:1.6;margin:0;padding-left:11px;}
+.minimum-card{background:linear-gradient(135deg,var(--surface-soft) 0%,var(--accent-soft) 100%);border:1px solid var(--accent-line);border-radius:var(--r-lg);padding:20px 22px;margin:8px 0 28px;box-shadow:var(--sh-sm);position:relative;overflow:hidden;}
+@media(min-width:768px){.minimum-card{padding:28px 34px;margin-bottom:36px;}}
+.minimum-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:var(--accent);}
+.minimum-card h3{color:var(--accent);margin:0 0 16px;font-size:16px;letter-spacing:0.2px;display:flex;align-items:center;gap:10px;}
+.minimum-card h3::before{content:'★';font-size:16px;}
+.minimum-card ol{margin:0;padding-left:0;list-style:none;counter-reset:min-list;}
+.minimum-card li{counter-increment:min-list;padding-left:36px;position:relative;margin-bottom:12px;font-size:14px;line-height:1.6;}
+.minimum-card li::before{content:counter(min-list);position:absolute;left:0;top:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--surface);color:var(--accent);border:2px solid var(--accent-line);border-radius:50%;font-size:12px;font-weight:800;}
+.minimum-card li:last-child{margin-bottom:0;}
+.level-badge{display:inline-block;font-size:9.5px;font-weight:800;text-transform:uppercase;padding:2px 9px;border-radius:12px;vertical-align:middle;letter-spacing:0.5px;line-height:1.6;margin-left:8px;}
+.level-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.level-understand{background:var(--c-understand-bg);color:var(--c-understand);}
+.level-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.level-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.level-new{background:var(--c-new-bg);color:var(--c-new);}
+.rule-box{background:var(--c-understand-bg);border:1px solid var(--c-understand-line);border-radius:var(--r-md);padding:14px 18px;margin:14px 0;font-size:14px;line-height:1.65;}
+.rule-box b{color:var(--c-understand);}
+.step-flow{background:var(--text);color:#fff;padding:16px 18px;border-radius:var(--r-md);font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:12.5px;line-height:1.9;margin:14px 0;overflow-x:auto;white-space:pre;}
+@media(min-width:768px){.step-flow{font-size:13.5px;padding:16px 20px;}}
+.footer{margin-top:56px;padding-top:24px;border-top:2px solid var(--border);text-align:center;font-size:12.5px;color:var(--text-muted);letter-spacing:0.2px;}
+.footer p{margin-bottom:4px;}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:6px;border:2px solid var(--bg);}
+::-webkit-scrollbar-thumb:hover{background:var(--text-muted);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.bottom-nav{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:1100;width:min(700px,calc(100vw - 24px));font-size:.78rem;}
+.bottom-nav__toggle{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;padding:8px 14px;border:1px solid var(--border-strong);border-radius:999px;background:rgba(255,255,255,.97);color:var(--text-soft);font:700 .72rem inherit;box-shadow:0 5px 18px rgba(15,23,42,.14);cursor:pointer;backdrop-filter:blur(10px);font-family:inherit;}
+.bottom-nav__panel{display:none;margin-bottom:7px;padding:10px;border:1px solid var(--border-strong);border-radius:14px;background:rgba(255,255,255,.98);box-shadow:0 10px 28px rgba(15,23,42,.16);backdrop-filter:blur(12px);}
+.bottom-nav.is-open .bottom-nav__panel{display:block;}
+.bottom-nav__primary{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.bottom-nav a,.bottom-nav button.nav-more{min-height:36px;display:flex;align-items:center;justify-content:center;padding:6px 8px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--text-soft);text-decoration:none;font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.bottom-nav a:hover,.bottom-nav button.nav-more:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+@media(max-width:420px){
+  .bottom-nav{font-size:.7rem;width:calc(100vw - 12px);}
+  .bottom-nav a,.bottom-nav button.nav-more{padding:6px 4px;font-size:.65rem;}
+}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
+.widget{background:var(--surface);border:2px solid var(--border);border-radius:var(--r-md);padding:14px;margin:14px 0;box-shadow:var(--sh-sm);}
+@media(min-width:768px){.widget{padding:22px 26px;margin:20px 0;border-radius:var(--r-lg);}}
+.widget h4{margin:0 0 8px;color:var(--text);font-size:15px;font-weight:800;}
+@media(min-width:768px){.widget h4{font-size:16px;}}
+.widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
+.bld-pool{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.bld-pool button{padding:6px 12px;border:1px solid var(--border);border-radius:20px;background:#fff;font:600 0.8rem inherit;cursor:pointer;font-family:inherit;color:var(--text);}
+.bld-pool button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bld-workspace{min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;}
+.bld-feedback,.re-result,.st-feedback,.ch-feedback{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;line-height:1.5;}
+.bld-feedback.ok,.re-result.ok,.st-feedback.ok,.ch-feedback.ok{background:var(--c-basic-bg);color:var(--c-basic);border:1px solid var(--c-basic-line);}
+.bld-feedback.bad,.re-result.bad,.st-feedback.bad,.ch-feedback.bad{background:var(--c-error-bg);color:var(--c-error);border:1px solid var(--c-error-line);}
+.bld-feedback.info,.re-result.info,.st-feedback.info,.ch-feedback.info{background:var(--c-understand-bg);color:var(--c-understand);border:1px solid var(--c-understand-line);}
+.bld-feedback.warn,.re-result.warn,.st-feedback.warn,.ch-feedback.warn{background:var(--c-warn-bg);color:var(--c-warn);border:1px solid var(--c-warn-line);}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);color:var(--text);font-family:inherit;}
+.btn:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent);}
+.btn-primary:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+.btn-sm{padding:6px 10px;font-size:12px;}
+.flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}
+@media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--border);border-radius:var(--r-md);background:#fff;color:var(--text);font:inherit;text-align:center;cursor:pointer;box-shadow:var(--sh-sm);transition:all 0.2s var(--ease);position:relative;font-family:inherit;}
+.flashcard:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-3px);box-shadow:var(--sh-md);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:90px;}
+.flashcard .front{font-weight:700;font-size:14.5px;line-height:1.5;}
+.flashcard .back{display:none;color:var(--text-soft);font-size:13.5px;line-height:1.6;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:8px;right:8px;font-size:9px;text-transform:uppercase;background:var(--surface-soft);padding:2px 8px;border-radius:10px;color:var(--text-muted);font-weight:800;letter-spacing:0.4px;}
+.flashcard .card-tag.tag-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.flashcard .card-tag.tag-error{background:var(--c-error-bg);color:var(--c-error);}
+.flashcard .card-tag.tag-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.flashcard .card-tag.tag-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.checklist{background:#fff;border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.checklist h4{color:var(--c-basic);margin:0 0 12px;font-size:15px;}
+.checklist ul{list-style:none;padding-left:0;margin:0;}
+.checklist li{padding:7px 0;font-size:13.5px;border-bottom:1px dashed var(--c-basic-line);display:flex;align-items:flex-start;gap:10px;line-height:1.55;}
+.checklist li:last-child{border-bottom:none;}
+.checklist li::before{content:'☐';color:var(--c-basic);font-weight:700;font-size:1.15rem;flex-shrink:0;line-height:1.2;}
+.core-path{background:linear-gradient(135deg,var(--c-basic-bg) 0%,#dcefe2 100%);border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:800;color:var(--c-basic);font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.core-path .cp-title::before{content:'▶';font-size:12px;}
+.core-path ol{margin:0;padding-left:22px;}
+.core-path li{margin-bottom:6px;font-size:13.5px;line-height:1.6;}
+.audit-panel{background:var(--surface-soft);border:2px solid var(--border-strong);border-radius:var(--r-lg);padding:16px 18px;margin:16px 0;}
+.audit-panel h4{margin:0 0 12px;color:var(--text);}
+.audit-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px;}
+@media(min-width:600px){.audit-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}}
+.audit-item{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:10px 12px;font-size:12.5px;line-height:1.55;}
+.mini-note{font-size:12.5px;color:var(--text-muted);font-style:italic;margin-top:8px;line-height:1.55;}
+.layer-legend{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:12px 14px;margin:12px 0;display:grid;grid-template-columns:1fr;gap:8px 18px;}
+@media(min-width:600px){.layer-legend{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;}}
+.layer-legend .layer-row{display:flex;gap:10px;align-items:center;font-size:12.5px;line-height:1.5;}
+.layer-legend .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.e8{background:var(--c-basic);}
+.layer-legend .dot.understand{background:var(--c-understand);}
+.layer-legend .dot.extra{background:var(--c-extra);}
+.layer-legend .dot.contest{background:var(--c-warn);}
+.klinika-table td.col-blad{color:var(--c-error);font-weight:700;}
+.klinika-table td.col-blad::before{content:'✕ ';font-weight:900;margin-right:4px;color:var(--c-error);}
+.klinika-table td.col-ok{color:var(--c-basic);font-weight:700;}
+.klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}
+.map-card{position:relative;}
+.map-expand-btn{position:absolute;top:10px;right:10px;z-index:3;padding:6px 12px;border:1px solid var(--accent-line);background:rgba(255,255,255,0.95);color:var(--accent);border-radius:var(--r-sm);font-size:12px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:var(--sh-sm);transition:all 0.15s var(--ease);}
+.map-expand-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.map-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(26,35,50,0.85);backdrop-filter:blur(6px);}
+.map-overlay.is-open{display:block;}
+.map-overlay-inner{position:absolute;inset:12px;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-xl);}
+.map-overlay-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface-soft);gap:8px;flex-wrap:wrap;}
+.map-overlay-title{font-weight:800;font-size:14px;color:var(--text);}
+.map-overlay-actions{display:flex;gap:6px;}
+.map-overlay-actions button{padding:6px 12px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;color:var(--text-soft);transition:all 0.15s var(--ease);}
+.map-overlay-actions button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.map-overlay-actions .map-close{background:var(--c-error);color:#fff;border-color:var(--c-error);}
+.map-overlay-canvas{flex:1;overflow:hidden;position:relative;background:#fff;cursor:grab;touch-action:none;}
+.map-overlay-canvas svg{display:block;position:absolute;top:0;left:0;transform-origin:0 0;}
+@media print{
+.fab,.toc-wrapper,.toc-overlay,.header-wrapper,.bottom-nav,.resume-dropdown,.map-overlay,.map-expand-btn{display:none !important;}
+body{padding:0;background:#fff;}
+.container{box-shadow:none;border:none;padding:0;max-width:100%;}
+details.answer{page-break-inside:avoid;}
+details.answer > *:not(summary){display:block !important;}
+details.answer summary{display:none;}
+.card{page-break-inside:avoid;}
+.widget{page-break-inside:avoid;}
+}
+@media (prefers-reduced-motion: reduce){
+*{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+html{scroll-behavior:auto;}
+}
+html,body{max-width:100%;overflow-x:hidden;}
+.table-scroll-hint{display:none;align-items:center;justify-content:space-between;gap:8px;padding:7px 11px;margin-top:0;margin-bottom:8px;border:1px solid var(--border);border-bottom:0;border-radius:var(--r-sm) var(--r-sm) 0 0;background:var(--surface-soft);color:var(--text-muted);font-size:11px;font-weight:700;}
+.table-wrap.is-scrollable + .table-scroll-hint{display:flex;}
+.table-scroll-hint .scroll-arrow{font-size:13px;letter-spacing:2px;color:var(--accent);}
+.timeline-anim{border-color:var(--c-understand-line);}
+.ta-stage{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 14px;min-height:280px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.ta-scene{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;animation:taFade 0.6s ease-out;width:100%;}
+@keyframes taFade{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.ta-scene .ta-year{font-size:1.7rem;font-weight:800;color:var(--accent);font-family:'JetBrains Mono',monospace;letter-spacing:1px;}
+.ta-scene .ta-who{font-size:1.05rem;font-weight:800;color:var(--text);}
+.ta-scene .ta-desc{font-size:13.5px;color:var(--text-soft);max-width:600px;line-height:1.65;}
+.ta-dots{display:flex;justify-content:center;gap:8px;margin:14px 0 8px;}
+.ta-dot{width:12px;height:12px;border-radius:50%;background:var(--border-strong);border:2px solid transparent;cursor:pointer;padding:0;transition:all 0.2s var(--ease);}
+.ta-dot.active{background:var(--accent);transform:scale(1.25);box-shadow:0 0 0 3px var(--accent-glow);}
+.ta-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;}
+.ta-nav{padding:8px 14px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-weight:700;color:var(--text-soft);cursor:pointer;font-size:12.5px;transition:all 0.15s var(--ease);}
+.ta-nav:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.ta-progress{font-size:12.5px;color:var(--text-muted);font-weight:700;font-family:'JetBrains Mono',monospace;}
+.eq-player{background:linear-gradient(180deg,#f8fafc,#eef6f5);border:2px solid var(--accent-line);border-radius:var(--r-lg);padding:16px 18px;margin:14px 0;}
+.eq-stage{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.15rem;padding:12px;background:#fff;border-radius:var(--r-md);border:1px solid var(--border);}
+.eq-term{display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border);opacity:0;}
+.eq-term.show{opacity:1;animation:reaction-flow 0.7s ease-out;}
+.eq-term.reactant{background:#e0f2fe;border-color:#7dd3fc;color:#0c4a6e;}
+.eq-term.product{background:#dcfce7;border-color:#86efac;color:#14532d;}
+.eq-arrow{opacity:0;color:var(--accent);font-size:1.4rem;}
+.eq-arrow.show{opacity:1;}
+.eq-balance{margin-top:10px;font-size:13px;color:var(--text-soft);display:none;}
+.eq-balance.show{display:block;}
+@keyframes reaction-flow{0%{opacity:.25;transform:scale(.92)}55%{opacity:1}100%{opacity:1;transform:scale(1)}}
+.ion-assembly{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;padding:18px 12px;background:#fff;border:1px solid var(--border);border-radius:var(--r-md);margin:10px 0;}
+.ion-chip{padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid var(--border);}
+.ion-chip.cation{background:#e0f2fe;border-color:#38bdf8;color:#0c4a6e;}
+.ion-chip.anion{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.ion-chip.product{background:#dcfce7;border-color:#4ade80;color:#14532d;}
+.ion-plus,.ion-join{font-size:1.4rem;font-weight:800;color:var(--text-muted);}
+.hero{max-width:900px;margin:0 auto 22px;padding:26px;border:1px solid var(--border);border-radius:var(--r-xl);background:linear-gradient(135deg,#fff,var(--accent-soft));box-shadow:var(--sh-md);}
+.hero h1{font-size:clamp(32px,6vw,52px);margin:4px 0 8px;}
+.hero-kicker{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--accent);text-transform:uppercase;}
+.lead{font-size:16px;color:var(--text-soft);max-width:720px;}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;}
+.page{max-width:900px;margin:0 auto;}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+@media(max-width:720px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px;}
+.metric-grid>div,.result-card,.step-card{padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);}
+.metric-grid b{display:block;font-size:10px;text-transform:uppercase;color:var(--text-muted);}
+.metric-grid strong{display:block;margin-top:3px;}
+@media(max-width:700px){.metric-grid{grid-template-columns:1fr;}}
+.controls,.button-grid{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;}
+.controls button,.button-grid button,.quiz-opt{padding:8px 12px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;cursor:pointer;}
+.particle-stage{height:120px;display:flex;align-items:center;justify-content:center;gap:70px;border:1px dashed var(--border-strong);border-radius:10px;margin-top:12px;}
+.particle{font-size:30px;font-weight:800;}
+.p-h3o{color:var(--accent);}
+.p-cl{color:#b83a45;}
+.ph-scale{display:flex;justify-content:space-between;margin-top:6px;font:700 11px 'JetBrains Mono',monospace;}
+.buffer-tank{height:28px;border:1px solid var(--border-strong);border-radius:999px;overflow:hidden;margin:14px 0;background:var(--surface-soft);}
+#bufferFill{height:100%;width:100%;background:var(--accent);transition:width .2s;}
+.quiz-wrap{margin:16px 0;}
+.quiz-q{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:14px 16px;margin-bottom:12px;}
+.quiz-q h5{margin:0 0 10px;font-size:14.5px;color:var(--text);text-transform:none;letter-spacing:0;line-height:1.45;}
+.quiz-q .q-tag{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:10px;margin-bottom:8px;background:var(--surface-soft);color:var(--text-muted);}
+.quiz-opts{display:flex;flex-direction:column;gap:8px;}
+.quiz-opt{display:block;width:100%;text-align:left;padding:10px 12px;border:2px solid var(--border);border-radius:var(--r-sm);background:#fff;font:inherit;font-size:13.5px;cursor:pointer;transition:all 0.15s var(--ease);color:var(--text);}
+.quiz-opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft);}
+.quiz-opt.correct{border-color:var(--c-basic);background:var(--c-basic-bg);color:var(--c-basic);font-weight:700;}
+.quiz-opt.wrong{border-color:var(--c-error);background:var(--c-error-bg);color:var(--c-error);}
+.quiz-opt:disabled{cursor:default;opacity:0.95;}
+.quiz-fb{margin-top:8px;font-size:13px;line-height:1.5;display:none;padding:8px 10px;border-radius:var(--r-sm);}
+.quiz-fb.show{display:block;}
+.quiz-fb.ok{background:var(--c-basic-bg);color:var(--c-basic);}
+.quiz-fb.bad{background:var(--c-error-bg);color:var(--c-error);}
+.quiz-score{text-align:center;padding:14px;background:var(--surface-soft);border-radius:var(--r-md);margin-top:16px;font-weight:800;color:var(--accent);display:none;}
+.quiz-score.show{display:block;}
+.lab-bridge{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 28px;padding:14px 16px;border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);background:linear-gradient(135deg,var(--surface-soft),var(--accent-soft));}
+.lab-bridge strong{display:block;color:var(--accent-dark);}
+.lab-bridge span{display:block;margin-top:3px;color:var(--text-soft);font-size:13px;}
+.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;}
+.lab-bridge-btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
+@media(max-width:600px){.lab-bridge{align-items:flex-start;flex-direction:column;}.lab-bridge-btn{width:100%;text-align:center;}}
+.exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}
+.exp-card h5{margin:0 0 10px;color:var(--c-basic);font-size:14px;text-transform:none;letter-spacing:0;}
+.exp-grid{display:grid;grid-template-columns:1fr;gap:6px;font-size:13.5px;line-height:1.55;}
+@media(min-width:600px){.exp-grid{grid-template-columns:110px 1fr;}}
+.exp-grid b{color:var(--text-soft);font-size:11px;text-transform:uppercase;letter-spacing:0.4px;}
+
+.js-reveal .card:not(.in),.js-reveal .widget:not(.in){opacity:0;transform:translateY(14px)}
+.js-reveal .card,.js-reveal .widget{transition:opacity .55s var(--ease),transform .55s var(--ease)}
+
+
+.ion-svg{width:100%;height:auto;display:block;background:radial-gradient(ellipse at 50% 40%,#fff,var(--surface-soft));border:1px solid var(--border);border-radius:var(--r-md);margin-top:10px}
+.ion-svg .mv{transition:transform .9s cubic-bezier(.65,0,.35,1);transform-box:fill-box}
+.ion-svg text{font-family:'JetBrains Mono',monospace;font-weight:800;text-anchor:middle;dominant-baseline:central}
+.ion-svg .fade{opacity:0;transition:opacity .6s ease .35s}
+.ion-svg[data-s="1"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="1"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="1"] .d1,.ion-svg[data-s="2"] .d1{opacity:1}
+.ion-svg[data-s="2"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="2"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="2"] .proton{transform:translate(120px,-40px)}
+.ion-svg[data-s="2"] .arrow{opacity:1}
+.ion-svg[data-s="3"] .g-hcl{transform:translateX(10px)}
+.ion-svg[data-s="3"] .g-w{transform:translateX(-10px)}
+.ion-svg[data-s="3"] .proton{transform:translate(230px,-38px)}
+.ion-svg[data-s="3"] .d3{opacity:1}
+.ion-svg[data-s="3"] .glow{animation:ionGlow 1.6s ease-in-out infinite}
+@keyframes ionGlow{0%,100%{filter:drop-shadow(0 0 2px rgba(13,104,104,.3))}50%{filter:drop-shadow(0 0 10px rgba(13,104,104,.8))}}
+
+
+.ph-bar{position:relative;height:18px;border-radius:999px;margin:10px 0 4px;border:1px solid var(--border-strong);
+background:linear-gradient(90deg,#e5262e 0%,#ef5a28 14%,#f6a21e 28%,#d7d93a 43%,#5cb85c 50%,#21a89a 57%,#2f7fc1 71%,#4a4bb5 86%,#6b2d8f 100%)}
+.ph-marker{position:absolute;top:-6px;width:0;height:0;left:0;transform:translateX(-50%);transition:left .35s var(--ease)}
+.ph-marker::before{content:'';position:absolute;left:-7px;top:0;border:7px solid transparent;border-top:10px solid var(--text)}
+.ph-marker::after{content:attr(data-v);position:absolute;left:0;top:-22px;transform:translateX(-50%);background:var(--text);color:#fff;font:800 11px 'JetBrains Mono',monospace;padding:2px 6px;border-radius:5px;white-space:nowrap}
+.ph-flask{display:inline-block;width:22px;height:22px;border-radius:0 0 8px 8px;border:2px solid var(--text-soft);vertical-align:middle;margin-right:6px;transition:background .35s}
+
+
+.titr-wrap{position:relative}
+#titrationCanvas{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--r-md);background:#fff}
+.titr-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.titr-row input[type=range]{flex:1 1 200px}
+.titr-flask{width:34px;height:42px;border:2px solid var(--text-soft);border-radius:2px 2px 12px 12px;transition:background .3s;flex-shrink:0;position:relative}
+.titr-flask::after{content:'';position:absolute;left:-2px;right:-2px;top:-8px;height:6px;border:2px solid var(--text-soft);border-bottom:0;border-radius:3px 3px 0 0}
+
+
+.buffer-tank{position:relative;height:34px}
+#bufferFill{transition:width .4s var(--ease),background .4s;background-size:28px 28px;background-image:linear-gradient(45deg,rgba(255,255,255,.22) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.22) 75%,transparent 75%)}
+.buffer-tank.pulse{animation:bufPulse .45s ease}
+.buffer-tank.dead{animation:bufDead .5s ease 2}
+@keyframes bufPulse{50%{transform:scale(1.02);box-shadow:0 0 0 4px var(--accent-glow)}}
+@keyframes bufDead{50%{box-shadow:0 0 0 4px rgba(184,58,69,.35)}}
+
+
+.rx-stage{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:12px 0;padding:14px;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md)}
+.rx-beaker{position:relative;width:120px;height:150px;border:3px solid var(--text-soft);border-top:0;border-radius:0 0 18px 18px;background:rgba(255,255,255,.55);overflow:visible;flex-shrink:0}
+.rx-liquid{position:absolute;left:0;right:0;bottom:0;height:100px;border-radius:0 0 14px 14px;background:rgba(220,235,240,.65);transition:background 2.2s ease}
+.rx-solid{position:absolute;left:36px;bottom:2px;width:48px;height:24px;border-radius:40% 40% 8px 8px;opacity:0;transition:height 3.5s ease,opacity .5s,transform 3.5s ease}
+.rx-bubbles,.rx-precip,.rx-fumes{position:absolute;left:0;right:0;bottom:0;height:150px;pointer-events:none;overflow:hidden}
+.rx-fumes{overflow:visible;bottom:100px;height:70px}
+.rx-b{position:absolute;bottom:14px;border-radius:50%;background:rgba(255,255,255,.85);border:1px solid rgba(13,104,104,.45);animation:rxRise 2.2s ease-in forwards}
+@keyframes rxRise{to{transform:translate(var(--dx,0),-92px);opacity:0}}
+.rx-p{position:absolute;top:50px;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #cbd5e1;animation:rxFall 2.4s ease-in forwards}
+@keyframes rxFall{to{transform:translateY(90px)}}
+.rx-cloud{position:absolute;bottom:0;left:6px;right:6px;height:0;background:#fff;border-radius:10px 10px 0 0;box-shadow:0 0 0 1px #e2e8f0;transition:height 4s ease;opacity:.95}
+.rx-f{position:absolute;bottom:0;width:26px;height:26px;border-radius:50%;background:rgba(150,75,20,.55);filter:blur(7px);animation:rxFume 3s ease-out forwards}
+@keyframes rxFume{to{transform:translate(var(--dx,0),-70px) scale(2.2);opacity:0}}
+
+
+.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.rx-label{flex:1 1 200px;font-size:13px;color:var(--text-soft);line-height:1.5}
+.rx-label b{color:var(--text);font-family:'JetBrains Mono',monospace}
+@media print{.js-reveal .card,.js-reveal .widget{opacity:1!important;transform:none!important}}
+
+
+/* ulepszenia.css — warstwa wspólna nad baza.css: pasek lekcji, postęp czytania, spis z podświetleniem,
+   tryb ciemny, komponenty wspólne (mity, drzewo, cytat, dialog, słówka, figura), druk, dostępność.
+   Kolejność w lekcji: baza.css → ulepszenia.css → motywy/<przedmiot>.css. Edytuj tylko tutaj. */
+
+:root{--header-h:52px;--serif:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Charter,Georgia,serif}
+
+/* ---------- pasek lekcji (zamiast nagłówka aplikacji) ---------- */
+.lk-bar{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 12px;
+  background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--border)}
+.lk-subj{flex:none;display:inline-flex;align-items:center;gap:7px;font:800 12.5px/1 Inter,system-ui,sans-serif;color:var(--accent);text-decoration:none;
+  padding:6px 10px 6px 8px;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+.lk-subj i{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+.lk-title{flex:1;min-width:0;font:600 13px/1.25 Inter,system-ui,sans-serif;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lk-btn{flex:none;min-width:36px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);background:var(--surface);
+  color:var(--text);border-radius:9px;padding:0 10px;font:700 12.5px Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+.lk-btn:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.lk-prog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
+@media (max-width:520px){.lk-title{display:none}.lk-bar{justify-content:space-between}}
+
+/* ---------- nagłówek lekcji ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+.hero::after{content:"";position:absolute;inset:-10% -6% -10% 52%;z-index:-1;opacity:.12;pointer-events:none;background:var(--motyw-wzor,none) right center/auto 100% repeat-y}
+.hero h1{text-wrap:balance}
+.hero-kicker{color:var(--accent);text-transform:none;letter-spacing:0;font-size:13px}
+.page{padding:0 16px}
+.lk-btn svg{width:16px;height:16px;display:block}
+.lk-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:12.5px;color:var(--text-muted)}
+.lk-meta b{color:var(--text-soft);font-weight:700}
+
+/* ---------- spis treści: aktywna sekcja ---------- */
+@media (min-width:800px){.toc-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));column-gap:12px}}
+.toc-link.on{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);font-weight:700}
+section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
+
+/* ---------- komponenty wspólne ---------- */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:12px 0}
+.myth-head{grid-column:1/-1;font-weight:800;font-size:14px}
+.myth{border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow:hidden}
+.myth p{margin:0;padding:9px 12px;font-size:13.5px;line-height:1.5}
+.myth p span{display:block;font:800 11px Inter,system-ui;margin-bottom:2px}
+.myth-x{background:var(--c-error-bg)}.myth-x span{color:var(--c-error)}.myth-ok span{color:var(--c-basic)}
+
+.lk-tree{margin:12px 0;font-size:14px;overflow-x:auto}
+.lk-tree ul{list-style:none;margin:0;padding-left:18px}.lk-tree>ul{padding-left:0}
+.lk-tree li{position:relative;padding:3px 0 3px 14px}
+.lk-tree ul ul li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--accent-line)}
+.lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
+.lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
+.lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+
+/* cytat z tekstu (lektura, źródło, wypowiedź) */
+.lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
+.lk-quote blockquote{margin:0;font:400 17px/1.65 var(--serif);color:var(--text)}
+.lk-quote blockquote p{margin:0 0 6px;color:inherit}
+.lk-quote figcaption{margin-top:6px;font-size:12.5px;color:var(--text-muted)}
+
+/* dialog (role A/B, rozmowa, scenka) */
+.lk-dialog{margin:14px 0;display:flex;flex-direction:column;gap:8px}
+.lk-line{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.lk-who{min-width:30px;height:30px;padding:0 8px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font:800 12px Inter,system-ui;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line)}
+.lk-line.b .lk-who{background:var(--surface-soft);color:var(--text-soft);border-color:var(--border)}
+.lk-say{padding:8px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font-size:14.5px;line-height:1.55}
+.lk-say small{display:block;color:var(--text-muted);font-size:12.5px;margin-top:2px}
+
+/* słówka: wyraz — znaczenie — przykład */
+.lk-vocab{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.lk-vocab th{text-align:left;font-size:12px;color:var(--text-muted);font-weight:700;padding:6px 10px;border-bottom:2px solid var(--border)}
+.lk-vocab td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+.lk-vocab td:first-child{font-weight:800;color:var(--accent);white-space:nowrap}
+.lk-vocab td:last-child{color:var(--text-soft);font-style:italic}
+@media (max-width:560px){.lk-vocab thead{display:none}.lk-vocab tr{display:block;padding:8px 0;border-bottom:1px solid var(--border)}
+  .lk-vocab td{display:block;border:0;padding:1px 4px}}
+
+/* figura z biblioteki grafik przedmiotu */
+.lk-fig{margin:16px 0;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);overflow:hidden}
+.lk-fig figcaption{padding:9px 14px;border-top:1px solid var(--border);background:var(--surface-soft);font-size:13px;line-height:1.5;color:var(--text-soft)}
+.lk-fig figcaption b{color:var(--text);margin-right:4px}
+.lk-fig-body{padding:12px}
+.lk-fig svg{display:block;width:100%;height:auto}
+
+/* z chemii (lekcja.css): treści akademickie, plakietki */
+details.adv{border:1px dashed var(--c-warn-line,#eed8a8);border-radius:10px;background:var(--surface-soft,#f6f8fa);margin:10px 0;padding:0 12px}details.adv>summary{cursor:pointer;font-weight:700;color:var(--c-warn,#b06f1c);padding:9px 0;list-style:none}details.adv>summary::-webkit-details-marker{display:none}details.adv>summary::before{content:"▸ "}details.adv[open]>summary::before{content:"▾ "}.adv-tag{font-weight:600;font-size:11px;opacity:.75;margin-left:6px}.adv-body{padding:0 0 10px;font-size:13.5px;line-height:1.6}.adv-body table{font-size:12.5px}.adv-toggle{margin-top:10px;border:1px solid var(--c-warn-line,#eed8a8);background:var(--c-warn-bg,#fcf4e6);color:var(--c-warn,#b06f1c);border-radius:999px;padding:6px 12px;font:700 12px Inter,system-ui,sans-serif;cursor:pointer}.bio-tag{display:inline-block;font:800 10px Inter,system-ui;letter-spacing:.04em;padding:2px 7px;border-radius:99px;background:rgba(46,125,79,.12);color:#2e7d4f;margin-left:6px;vertical-align:middle}.v15{display:inline-block;font:800 9.5px Inter,system-ui;padding:1px 6px;border-radius:99px;background:rgba(13,125,125,.12);color:#0d7d7d;margin-left:6px;vertical-align:middle}@media print{details.adv{display:block}details.adv>.adv-body{display:block}}
+/* z chemii (lekcja.css): telefon, tabele */
+.exp-card{min-width:0;max-width:100%;box-sizing:border-box}.exp-grid>*{min-width:0;overflow-wrap:anywhere}
+@media (max-width:600px){.exp-grid{grid-template-columns:minmax(0,1fr)!important}.exp-grid>b{margin-top:4px}}
+.table-wrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+
+/* klinika błędów (::: klinika) — tabela, na telefonie karty */
+.klinika-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden}
+.klinika-table th{text-align:left;padding:9px 12px;background:var(--surface-soft);color:var(--text-soft);font-size:12px;font-weight:800;border-bottom:1px solid var(--border)}
+.klinika-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.klinika-table tr:last-child td{border-bottom:0}
+@media (max-width:600px){.klinika-table thead{display:none}.klinika-table tr{display:block;padding:8px 12px;border-bottom:1px solid var(--border)}
+  .klinika-table td{display:block;border:0;padding:2px 0}.klinika-table td:not(.col-blad):not(.col-ok){color:var(--text-soft)}}
+
+.lk-pre{margin:12px 0;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-soft);overflow-x:auto;font:12.5px/1.55 ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;color:var(--text-soft);white-space:pre}
+.lk-pre code{font:inherit;background:none;padding:0;color:inherit}
+.lk-hr{border:0;border-top:1px solid var(--border);margin:28px 0}
+
+/* ---------- dostępność ---------- */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;z-index:60;background:var(--surface);color:var(--accent);padding:8px 12px;border-radius:8px}
+.skip-link:focus{left:8px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- tryb ciemny: automatycznie albo przyciskiem (data-theme) ---------- */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme=dark]{
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}
+/* elementy bazy z białym tłem na sztywno */
+html[data-ciemny] :is(.flashcard,.checklist,.audit-item,.layer-legend,.quiz-q,.quiz-opt,.btn,.controls button,.eq-stage,.ion-assembly,.bld-workspace,.bld-pool button,.resume-dropdown,.ta-nav){background:var(--surface);color:var(--text)}
+html[data-ciemny] .hero{background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.active,.step-flow){color:var(--bg)}
+@media (max-width:600px){.hero::after{opacity:.07}}
+
+/* ---------- druk ---------- */
+@media print{
+  .lk-bar,.adv-toggle,.toc-item,.fab,.bottom-nav{display:none!important}
+  body{padding:0;background:#fff;color:#000}
+  .hero::after{display:none}.hero{background:none;box-shadow:none}
+  details.adv,details.answer{display:block}details>*{display:block}
+  .card,.minimum-card,.lk-fig,.myth,.quiz-q{break-inside:avoid;box-shadow:none}
+  a{color:inherit;text-decoration:none}
+}
+
+/* === Dopracowanie czytelności (2026-10-11; z wersji „ulepszonej” U03 użytkownika, uogólnione na wszystkie przedmioty, zgodne z trybem ciemnym) === */
+body{line-height:1.74}
+main{isolation:isolate}
+.hero{border-color:var(--accent-line)}
+.hero::before{content:"";position:absolute;right:-42px;top:-56px;width:180px;height:180px;z-index:-1;pointer-events:none;
+ border:1px solid var(--accent-line);border-radius:50%;opacity:.45;
+ box-shadow:0 0 0 22px var(--accent-glow),0 0 0 44px var(--accent-glow)}
+.part-heading{padding:0 0 12px;border-bottom:1px solid var(--border);align-items:flex-start}
+.part-num{margin-top:1px}
+section[id]{scroll-margin-top:calc(var(--header-h,56px) + 20px)}
+section p{max-width:78ch}
+section ul,section ol{padding-left:1.35rem}
+.card,.exp-card,.widget,.table-wrap{box-shadow:0 2px 8px rgba(24,49,59,.045)}
+.table-wrap{max-width:100%}
+.table-wrap table{line-height:1.55}
+.table-wrap td strong{color:var(--text)}
+.table-wrap tbody tr:nth-child(even) td{background:var(--surface-soft)}
+.table-wrap tbody tr:hover td{background:var(--accent-soft)}
+.mini-note{max-width:80ch}
+:is(button,a,summary,[tabindex]):focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:520px){.hero{padding:20px 16px}.part-heading{font-size:19px;gap:11px}
+ .table-wrap table{font-size:12.5px}.table-wrap th,.table-wrap td{padding:8px 9px}}
+@media(hover:none){.card:hover,.flashcard:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media print{.hero::before{display:none}.card,.exp-card,.table-wrap{break-inside:avoid;box-shadow:none}}
+
+/* fiszki: część ukryta do rozwinięcia (lekcja.js); przy druku — wszystkie */
+.flashcard[hidden]{display:none!important}
+.fz-more{display:block;width:100%;margin:-6px 0 18px;padding:12px 16px;border:2px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent;color:var(--text,#1d2a30);font-family:inherit;font-weight:600;font-size:15px;line-height:1.3;cursor:pointer;text-align:center}
+.fz-more:hover,.fz-more:focus-visible{background:var(--surface-2,rgba(0,0,0,.04))}
+@media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
+.quiz-q[hidden]{display:none!important}
+@media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
+
+/* motyw che (Chemia) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,.15);--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 104 180%27%3E%3Cg fill=%27none%27 stroke=%27%230d6868%27 stroke-width=%273%27%3E%3Cpath d=%27M52 10l40 23v46l-40 23-40-23V33z%27/%3E%3Cpath d=%27M52 100l40 23v46l-40 23-40-23v-46z%27/%3E%3Cpath d=%27M52 22v8M92 56h8M12 56H4%27/%3E%3C/g%3E%3Cg fill=%27%230d6868%27%3E%3Ccircle cx=%2752%27 cy=%2710%27 r=%275%27/%3E%3Ccircle cx=%2792%27 cy=%2779%27 r=%275%27/%3E%3Ccircle cx=%2712%27 cy=%27123%27 r=%275%27/%3E%3C/g%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}}
+:root[data-theme=dark]{--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}
+
+/* równanie reakcji w osobnej linii: ::: div.rownanie */
+.rownanie{margin:12px 0;padding:12px 16px;border-radius:var(--r-md);background:var(--surface-soft);border:1px solid var(--border);font:600 17px/1.6 Inter,system-ui,sans-serif;text-align:center;overflow-x:auto;white-space:nowrap}
+.rownanie small{display:block;font-size:12px;font-weight:500;color:var(--text-muted);white-space:normal}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+<header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">R03A Mieszanie roztworów i reguła krzyżowa</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<main class="page" id="main">
+<section class="hero card"><div class="hero-kicker">R03A · ROZTWORY · POGŁĘBIENIE R03 · KONKURS I OLIMPIADA</div><h1>Mieszanie roztworów i reguła krzyżowa</h1><p class="lead">Gdy mieszasz dwa roztwory, dodają się masy roztworów i masy substancji — nigdy stężenia. Reguła krzyżowa to szybki skrót tego bilansu, ulubione narzędzie zadań konkursowych.</p><p class="lead">Lekcja zakłada znajomość wzoru Cp = ms ÷ mr · 100% z lekcji R03 — dla porządku przypominamy go na początku.</p><div class="tag-row"><span class="level-badge level-basic">E8</span><span class="level-badge level-understand">ROZUMIENIE</span><span class="level-badge level-exam">KONKURS</span><span class="level-badge level-extra">AMBITNE</span></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button><p class="mini-note">Pogłębienie lekcji R03 (stężenie procentowe) — zakres R03 kanonu: mieszanie roztworów. Hydraty, substancje reagujące z wodą i gęstość — warstwa ambitna (etap rejonowy i wyżej). Materiał wyjściowy: lekcja Perplexity z 2026-10-11, sprawdzony i rozbudowany.</p></section>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#minimum">Minimum E8</a><a class="toc-link" href="#jak-pracowac">0.1. Jak pracować z lekcją</a><a class="toc-link" href="#diagnoza">0.2. Diagnoza</a><a class="toc-link" href="#przypomnienie">1. Przypomnienie: stężenie procentowe</a><a class="toc-link" href="#wyklad">2. Wykład — co się dzieje, gdy mieszamy roztwory</a><a class="toc-link" href="#krzyz">3. Reguła krzyżowa krok po kroku</a><a class="toc-link" href="#przyklady">4. Przykłady prowadzone</a><a class="toc-link" href="#woda-substancja">5. Woda (0%) i czysta substancja (100%)</a><a class="toc-link" href="#granice">6. Kiedy reguły krzyżowej nie wolno używać wprost</a><a class="toc-link" href="#konkurs">7. Zadania konkursowe</a><a class="toc-link" href="#ambitne">8. Warstwa ambitna: hydraty, reakcja z wodą, objętości</a><a class="toc-link" href="#klinika">9. Klinika błędów</a><a class="toc-link" href="#cwiczenia">10. Ćwiczenia</a><a class="toc-link" href="#ciekawostki">11. Ciekawostki</a><a class="toc-link" href="#mnemotechniki">12. Sposoby pamięciowe</a><a class="toc-link" href="#test">13. Test końcowy</a><a class="toc-link" href="#fiszki">14. Fiszki</a><a class="toc-link" href="#slownik">15. Słownik</a><a class="toc-link" href="#sciaga">16. Ściąga</a><a class="toc-link" href="#dalej">17. Co dalej?</a><a class="toc-link" href="#audyt">Pochodzenie i sprawdzenie treści</a></nav></details>
+<section id="minimum" class="minimum-card"><h3>Muszę umieć — 10 punktów</h3>
+<ol>
+<li><strong>Cp = ms ÷ mr · 100%</strong>, gdzie <strong>mr = ms + mw</strong> (masa roztworu = masa substancji + masa wody).</li>
+<li>Przekształcenia: <strong>ms = Cp · mr ÷ 100%</strong>, <strong>mr = ms · 100% ÷ Cp</strong>.</li>
+<li><strong>Przy mieszaniu dodają się masy substancji i masy roztworów</strong> — stężeń się nie dodaje: Cp₃ = (ms₁ + ms₂) ÷ (mr₁ + mr₂) · 100%.</li>
+<li>Bilans: <strong>m₁ · Cp₁ + m₂ · Cp₂ = (m₁ + m₂) · Cp₃</strong> (m — masy roztworów).</li>
+<li>Stężenie po zmieszaniu <strong>zawsze leży między</strong> stężeniami składników — bliżej tego, którego jest więcej.</li>
+<li><strong>Reguła krzyżowa:</strong> m₁ : m₂ = (Cp₃ − Cp₂) : (Cp₁ − Cp₃) — odejmuj po przekątnych, liczba należy do roztworu z przeciwnego rogu.</li>
+<li><strong>Woda = 0%</strong>, <strong>czysta substancja = 100%</strong> — dzięki temu rozcieńczanie i dosypywanie to też „mieszanie”.</li>
+<li><strong>Rozcieńczanie i odparowanie</strong> nie zmieniają ms: m₁ · Cp₁ = m₂ · Cp₂.</li>
+<li>Reguła daje <strong>stosunek mas (części)</strong> — na gramy przeliczasz dopiero przez masę całości lub jednego składnika.</li>
+<li><strong>Kontrola:</strong> policz ms przed i po — musi się zgadzać.</li>
+</ol>
+</section>
+<div class="layer-legend">
+<div class="layer-row"><span class="dot e8"></span><span><b>Podstawa:</b> Cp, rozcieńczanie, zatężanie, mieszanie dwóch roztworów tej samej substancji</span></div>
+<div class="layer-row"><span class="dot understand"></span><span><b>Rozumienie:</b> skąd bierze się reguła krzyżowa (bilans), „huśtawka” stężeń, dlaczego wynik leży między składnikami</span></div>
+<div class="layer-row"><span class="dot contest"></span><span><b>Konkurs:</b> zadania odwrotne, trzy roztwory, dosypywanie substancji, roztwór nasycony, woda utleniona z perhydrolu</span></div>
+<div class="layer-row"><span class="dot extra"></span><span><b>Ambitne:</b> hydraty (CuSO₄·5H₂O), tlenek reagujący z wodą (Na₂O → NaOH), objętość i gęstość, nieaddytywność objętości</span></div>
+</div>
+<div id="rdzen" class="core-path">
+<div class="cp-title">Rdzeń lekcji — najpierw to</div>
+<ol>
+<li><strong><a href="#diagnoza">§0.2</a></strong> — diagnoza.</li>
+<li><strong><a href="#przypomnienie">§1</a>–<a href="#wyklad">§2</a></strong> — przypomnienie Cp i wykład o mieszaniu.</li>
+<li><strong><a href="#krzyz">§3</a>–<a href="#woda-substancja">§5</a></strong> — reguła krzyżowa, przykłady, woda i czysta substancja; potem <strong><a href="#cwiczenia">§10</a></strong> część A i B.</li>
+<li><strong><a href="#konkurs">§7</a></strong> — zadania konkursowe, <strong><a href="#klinika">§9</a></strong> — klinika błędów.</li>
+</ol>
+</div>
+<section id="jak-pracowac">
+<div class="part-heading"><span class="part-num">0.1</span> Jak pracować z lekcją</div>
+<div class="card card-understand">
+<ul>
+<li><strong>Najpierw bilans, potem skrót.</strong> Każde zadanie z tej lekcji da się rozwiązać „na piechotę”: policz ms każdego roztworu, dodaj, podziel przez masę całości. Reguła krzyżowa to przyspieszenie — nie zastępuje zrozumienia.</li>
+<li><strong>Zawsze sprawdź przedział.</strong> Zanim zaczniesz liczyć, oszacuj: wynik musi leżeć między stężeniami składników.</li>
+<li><strong>Pisz jednostki przy każdej liczbie</strong> — „części”, „g”, „%”. Większość błędów w tym dziale to pomylenie części z gramami albo masy wody z masą roztworu.</li>
+<li><strong>Wracaj do zadań po kilku dniach.</strong> Reguła krzyżowa łatwo się myli „na skróty” — utrwala ją dopiero kilkukrotne samodzielne rozwiązanie.</li>
+</ul>
+</div>
+</section>
+<section id="diagnoza">
+<div class="part-heading"><span class="part-num">0.2</span> Diagnoza</div>
+<div class="card card-understand">
+<span class="card-label">Odpowiedz najpierw sam</span>
+<ol>
+<li>W 185 g wody rozpuszczono 15 g soli. Jakie jest stężenie procentowe?</li>
+<li>Ile gramów soli zawiera 250 g roztworu 8%?</li>
+<li>Zmieszano 100 g roztworu 10% i 100 g roztworu 20%. Jakie jest stężenie? A gdyby roztworu 10% było 300 g?</li>
+<li>Czy mieszając roztwory 20% i 5%, można otrzymać roztwór 25%?</li>
+<li>Do roztworu dolano wody. Co się zmieniło: ms, mr, Cp?</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li>mr = 200 g; Cp = 7,5%. · 2. 20 g. · 3. 15% (równe masy); przy 300 g roztworu 10%: (30 + 20) ÷ 400 · 100% = 12,5% — bliżej 10%, bo tego roztworu jest więcej. · 4. Nie — wynik musi leżeć między 5% a 20%. · 5. ms bez zmian, mr rośnie, Cp maleje.</li>
+</ol>
+<p><strong>Interpretacja:</strong> 0–2 — zacznij od <a href="#przypomnienie">§1</a> i lekcji R03; 3–4 — przeczytaj <a href="#wyklad">§2</a> uważnie; 5 — przejdź do <a href="#krzyz">§3</a> i <a href="#konkurs">§7</a>.</p>
+</details>
+</div>
+<p><strong>Pytanie przewodnie:</strong> jak obliczyć, ile dwóch roztworów trzeba zmieszać, aby otrzymać roztwór o określonym stężeniu — i jak szybko sprawdzić, czy wynik ma sens?</p>
+</section>
+<section id="przypomnienie">
+<div class="part-heading"><span class="part-num">1</span> Przypomnienie: stężenie procentowe <span class="level-badge level-basic">E8</span></div>
+<p>Roztwór składa się z <strong>substancji rozpuszczonej</strong> (np. soli, cukru) i <strong>rozpuszczalnika</strong> (najczęściej wody).</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Oznaczenie</th><th>Znaczenie</th></tr></thead>
+<tbody>
+<tr><td>ms</td><td>masa substancji rozpuszczonej</td></tr>
+<tr><td>mw</td><td>masa rozpuszczalnika (wody)</td></tr>
+<tr><td>mr</td><td>masa roztworu: <strong>mr = ms + mw</strong></td></tr>
+<tr><td>Cp</td><td>stężenie procentowe: <strong>Cp = ms ÷ mr · 100%</strong></td></tr>
+</tbody></table></div>
+<p><strong>Stężenie 10%</strong> znaczy: w każdych <strong>100 g roztworu</strong> jest 10 g substancji (a nie: 10 g w 100 g wody!). Przykład: 30 g soli w 200 g roztworu → Cp = 30 ÷ 200 · 100% = <strong>15%</strong>. A 20 g soli w 80 g wody → mr = 100 g → <strong>20%</strong>, nie 25%.</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie — dlaczego masa roztworu to suma?</span>
+<p>Sól wsypana do wody nie znika — jej drobiny rozpraszają się między cząsteczkami wody. Jeśli nic nie wylejesz i nic nie odparuje, waga pokaże masę wody + masę soli. To prawo zachowania masy, to samo co w równaniach reakcji. Dlatego <strong>mr = ms + mw</strong> zawsze — nawet wtedy, gdy objętość roztworu nie jest sumą objętości (patrz ciekawostki).</p>
+</div>
+</section>
+<section id="wyklad">
+<div class="part-heading"><span class="part-num">2</span> Wykład — co się dzieje, gdy mieszamy roztwory</div>
+<p>Wyobraź sobie dwa dzbanki lemoniady. W pierwszym 100 g lemoniady bardzo słodkiej — 20%, czyli 20 g cukru. W drugim 200 g lemoniady ledwo słodkiej — 5%, czyli 10 g cukru. Wlewasz obie do jednej wazy. Co jest w wazie?</p>
+<p>Cukier nie znika ani nie przybywa: <strong>20 g + 10 g = 30 g cukru</strong>. Lemoniady też tyle, ile wlałeś: <strong>100 g + 200 g = 300 g</strong>. Stężenie w wazie: 30 ÷ 300 · 100% = <strong>10%</strong>.</p>
+<p>Zauważ dwie rzeczy. Po pierwsze, <strong>nie</strong> wyszło (20% + 5%) = 25% ani średnia (20% + 5%) ÷ 2 = 12,5%. Stężeń nie wolno dodawać ani uśredniać „na ślepo” — trzeba ważyć je masami. Po drugie, 10% leży <strong>między</strong> 5% a 20% i to <strong>bliżej 5%</strong> — bo słabej lemoniady było więcej. Tak jest zawsze: mieszanka nie może być słodsza od najsłodszego składnika ani mniej słodka od najmniej słodkiego, a „przeciąga” ją ten składnik, którego jest więcej.</p>
+<p>To wszystko zapisuje jedno zdanie — <strong>bilans masy substancji rozpuszczonej</strong>:</p>
+<regula>
+<p><strong>m₁ · Cp₁ + m₂ · Cp₂ = (m₁ + m₂) · Cp₃</strong>
+(cukier z pierwszego dzbanka + cukier z drugiego = cukier w wazie; procenty możesz wpisywać jako zwykłe liczby, bo „÷ 100%” skraca się po obu stronach)</p>
+</regula>
+<p>Teraz odwróćmy pytanie — i to jest typowe zadanie konkursowe: <strong>mamy roztwory 20% i 5%; w jakim stosunku je zmieszać, żeby dostać 10%?</strong> Z bilansu:
+m₁ · 20 + m₂ · 5 = (m₁ + m₂) · 10 → m₁ · 20 − m₁ · 10 = m₂ · 10 − m₂ · 5 → m₁ · 10 = m₂ · 5 → <strong>m₁ : m₂ = 5 : 10 = 1 : 2</strong>.</p>
+<p>Spójrz, skąd wzięły się liczby: <strong>5 = 10 − 5</strong> (o ile docelowe przewyższa słabszy) i <strong>10 = 20 − 10</strong> (o ile mocniejszy przewyższa docelowe). I co ciekawe — różnica „przy słabszym” trafia do <strong>mocniejszego</strong>, i odwrotnie. To jest właśnie <strong>reguła krzyżowa</strong>: rachunek, który zawsze robi się tak samo, można więc zapisać jako schemat i liczyć w pamięci.</p>
+<p><strong>Analogia huśtawki.</strong> Połóż oś stężeń jak deskę huśtawki: na jednym końcu 5%, na drugim 20%, a podpórkę ustaw w 10%. Podpórka jest 5 „jednostek” od lewego końca i 10 od prawego. Żeby huśtawka była w równowadze, na krótszym ramieniu musi siedzieć <strong>cięższy</strong> — na końcu 5% (bliżej podpórki) potrzeba dwa razy więcej masy niż na końcu 20%. <strong>Więcej bierzesz tego roztworu, który jest bliżej stężenia docelowego</strong> — to cała intuicja reguły krzyżowej.</p>
+</section>
+<section id="krzyz">
+<div class="part-heading"><span class="part-num">3</span> Reguła krzyżowa krok po kroku <span class="level-badge level-basic">E8</span></div>
+<regula>
+<p>Dla Cp₁ > Cp₃ > Cp₂ (mocniejszy, docelowy, słabszy):
+<strong>m₁ : m₂ = (Cp₃ − Cp₂) : (Cp₁ − Cp₃)</strong></p>
+</regula>
+<p><strong>Schemat krzyża</strong> (odejmujemy po przekątnych, zawsze <strong>większe minus mniejsze</strong>):</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Roztwór</th><th></th><th>Różnica po przekątnej</th><th>Należy do</th></tr></thead>
+<tbody>
+<tr><td><strong>Cp₁</strong> (mocniejszy, u góry)</td><td>↘</td><td>Cp₃ − Cp₂</td><td><strong>roztworu Cp₁</strong> (liczba w jego wierszu)</td></tr>
+<tr><td></td><td><strong>Cp₃</strong> (pośrodku)</td><td></td><td></td></tr>
+<tr><td><strong>Cp₂</strong> (słabszy, na dole)</td><td>↗</td><td>Cp₁ − Cp₃</td><td><strong>roztworu Cp₂</strong></td></tr>
+</tbody></table></div>
+<regula>
+<p><strong>Algorytm (7 kroków):</strong>
+1. Sprawdź, czy Cp₃ leży <strong>między</strong> Cp₁ a Cp₂ — jeśli nie, zadanie jest sprzeczne albo coś źle odczytałeś.
+2. Większe stężenie <strong>u góry</strong>, mniejsze <strong>na dole</strong>, docelowe <strong>pośrodku</strong>.
+3. Odejmij <strong>po przekątnych</strong> (większe − mniejsze).
+4. Liczbę z prawej strony wiersza przypisz roztworowi <strong>z tego samego wiersza</strong>.
+5. <strong>Skróć</strong> stosunek (jak ułamek).
+6. Przelicz <strong>części na gramy</strong> (masa całości ÷ suma części albo masa znanego składnika ÷ jego części).
+7. <strong>Sprawdź bilansem</strong> ms — to zajmuje chwilę i wyłapuje pomylone przekątne.</p>
+</regula>
+<div class="card card-understand">
+<span class="card-label">W skrócie — co znaczą „części”?</span>
+<p>Reguła krzyżowa daje <strong>stosunek mas</strong>, nie gramy. Stosunek 1 : 2 to równie dobrze 10 g i 20 g, 100 g i 200 g, 1 kg i 2 kg — każda para da 10%. Gramy pojawią się dopiero, gdy znasz <strong>masę całości</strong> (wtedy dzielisz ją na sumę części) albo <strong>masę jednego składnika</strong> (wtedy liczysz, ile gramów to jedna część). Pomylenie części z gramami to najczęstszy błąd w tym dziale.</p>
+</div>
+<div class="che-lesson-viz-ref" data-che-lesson-viz="r03-krzyz-v01"><button type="button" data-che-open-viz="r03-krzyz-v01" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'r03-krzyz-v01',lessonId:'R03A'},'*')"><b>Reguła krzyżowa i huśtawka — wpisz stężenia, zobacz masy</b><span>przykłady: 20% + 5%, rozcieńczanie wodą, dosypywanie substancji, hydrat</span></button></div>
+<!-- OPIS: Interaktywny schemat: u góry pola na Cp₁ (mocniejszy), Cp₂ (słabszy, woda = 0%), Cp₃ (docelowy) i masę końcową oraz przyciski gotowych przykładów. Pod nimi krzyż: po lewej stężenia składników, pośrodku stężenie docelowe, dwie przecinające się kreski (czerwona i niebieska) prowadzą do różnic obliczonych po przekątnych, a przy każdej różnicy napis, do którego roztworu należy. Niżej „huśtawka”: pozioma deska od Cp₂ do Cp₁ z pomarańczową podpórką w Cp₃ i dwoma słupkami mas — wyższy słupek stoi na końcu bliższym podpórce. Pod rysunkiem: stosunek mas skrócony, masy w gramach i kontrola bilansem (ms obu składników, Cp mieszaniny). Gdy Cp₃ nie leży między składnikami, model wyświetla ostrzeżenie zamiast wyniku. Wniosek: masy roztworów są odwrotnie proporcjonalne do odległości ich stężeń od stężenia docelowego, a wynik zawsze da się sprawdzić bilansem substancji. -->
+</section>
+<section id="przyklady">
+<div class="part-heading"><span class="part-num">4</span> Przykłady prowadzone <span class="level-badge level-basic">E8</span></div>
+<h3>Przykład 1 — 20% i 5% → 300 g roztworu 10%</h3>
+<div class="table-wrap"><table>
+<thead><tr><th></th><th></th><th>różnica</th><th></th></tr></thead>
+<tbody>
+<tr><td>20%</td><td></td><td>10 − 5 = <strong>5</strong> cz.</td><td>→ roztwór 20%</td></tr>
+<tr><td></td><td><strong>10%</strong></td><td></td><td></td></tr>
+<tr><td>5%</td><td></td><td>20 − 10 = <strong>10</strong> cz.</td><td>→ roztwór 5%</td></tr>
+</tbody></table></div>
+<p>Stosunek 5 : 10 = <strong>1 : 2</strong>; suma 3 części; 1 część = 300 g ÷ 3 = 100 g → <strong>100 g roztworu 20% i 200 g roztworu 5%</strong>.
+Kontrola: 20 g + 10 g = 30 g substancji w 300 g → 10% ✔.</p>
+<h3>Przykład 2 — 30% i 10% → 400 g roztworu 20%</h3>
+<p>Różnice: 20 − 10 = 10 (dla 30%) i 30 − 20 = 10 (dla 10%) → <strong>1 : 1</strong> → po <strong>200 g</strong>. Gdy docelowe leży dokładnie pośrodku, bierzemy równe masy — i tylko wtedy wolno „uśrednić”.</p>
+<h3>Przykład 3 — 40% i 5% → 900 g roztworu 20%</h3>
+<p>Różnice: 20 − 5 = 15 (dla 40%), 40 − 20 = 20 (dla 5%) → 15 : 20 = <strong>3 : 4</strong>; 1 część = 900 ÷ 7 ≈ 128,57 g → <strong>≈ 385,7 g roztworu 40%</strong> i <strong>≈ 514,3 g roztworu 5%</strong>.
+Kontrola: 385,71 · 0,40 + 514,29 · 0,05 ≈ 154,29 + 25,71 = 180,00 g; 180 ÷ 900 · 100% = 20% ✔. Wyniki nie muszą być „okrągłe” — na konkursie podaj je z sensownym zaokrągleniem.</p>
+<h3>Przykład 4 — znana masa jednego składnika</h3>
+<p>Ile gramów roztworu 5% trzeba dodać do 200 g roztworu 25%, aby otrzymać 10%?
+Różnice: 10 − 5 = 5 (dla 25%), 25 − 10 = 15 (dla 5%) → 1 : 3. 200 g roztworu 25% to <strong>1 część</strong>, więc 1 część = 200 g → roztworu 5%: 3 · 200 = <strong>600 g</strong>.
+Kontrola: 50 g + 30 g = 80 g w 800 g → 10% ✔.</p>
+<h3>Przykład 5 — stosunek znany, szukamy stężenia</h3>
+<p>Zmieszano roztwory 40% i 10% w stosunku masowym 1 : 2. Jakie jest stężenie?
+Weź 1 g i 2 g (części wystarczą): ms = 0,4 + 0,2 = 0,6 g w 3 g → <strong>20%</strong>. Tu reguła krzyżowa „od tyłu” jest zbędna — wystarczy bilans.</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie — pełny bilans zamiast krzyża</span>
+<p>Z bilansu m₁ · Cp₁ + m₂ · Cp₂ = (m₁ + m₂) · Cp₃ po przeniesieniu wyrazów: m₁ · (Cp₁ − Cp₃) = m₂ · (Cp₃ − Cp₂), czyli <strong>m₁ ÷ m₂ = (Cp₃ − Cp₂) ÷ (Cp₁ − Cp₃)</strong> — dokładnie reguła krzyżowa. Krzyż nie jest więc osobnym „prawem chemii”, tylko gotowym wynikiem tego przekształcenia. Gdy zapomnisz, w którą stronę idą przekątne, wyprowadź go z bilansu w trzech linijkach.</p>
+</div>
+</section>
+<section id="woda-substancja">
+<div class="part-heading"><span class="part-num">5</span> Woda (0%) i czysta substancja (100%) <span class="level-badge level-basic">E8</span></div>
+<p>Dwie sztuczki, które zamieniają każde zadanie z R03 w zadanie z mieszania:
+- <strong>Dolewanie wody</strong> = mieszanie z „roztworem 0%” (w wodzie nie ma substancji).
+- <strong>Dosypywanie substancji</strong> = mieszanie z „roztworem 100%” (czysta substancja to sama substancja).</p>
+<h3>Rozcieńczanie — dwa sposoby</h3>
+<p>Ile wody trzeba dodać do 200 g roztworu 30%, aby otrzymać 20%?
+- <strong>Bilans:</strong> ms = 200 · 0,30 = 60 g (bez zmian) → mr₂ = 60 ÷ 0,20 = 300 g → wody 300 − 200 = <strong>100 g</strong>.
+- <strong>Krzyż:</strong> 30% i 0% → 20%: różnice 20 − 0 = 20 (dla 30%) i 30 − 20 = 10 (dla wody) → <strong>2 : 1</strong> → 200 g to 2 części → woda = 1 część = <strong>100 g</strong> ✔.</p>
+<h3>Zatężanie przez odparowanie</h3>
+<p>Ile wody odparować z 500 g roztworu 12%, aby otrzymać 20%? ms = 60 g → mr₂ = 60 ÷ 0,20 = 300 g → odparować <strong>200 g</strong>. Zasada rozcieńczania i odparowania: <strong>m₁ · Cp₁ = m₂ · Cp₂</strong> (masa substancji się nie zmienia).</p>
+<h3>Dosypywanie substancji</h3>
+<p>Ile soli dosypać do 300 g roztworu 10%, aby otrzymać 25%?
+Krzyż: 100% (sól) i 10% → 25%: różnice 25 − 10 = 15 (dla soli) i 100 − 25 = 75 (dla roztworu) → <strong>1 : 5</strong> → 300 g to 5 części → sól = 1 część = <strong>60 g</strong>.
+Kontrola: (30 + 60) ÷ (300 + 60) · 100% = 90 ÷ 360 · 100% = 25% ✔. Uwaga: po dosypaniu rośnie <strong>i</strong> ms, <strong>i</strong> mr.</p>
+<div class="card card-warning">
+<span class="card-label">BHP — kwas do wody, nie odwrotnie</span>
+<p>Rozcieńczając stężone kwasy (zwłaszcza kwas siarkowy(VI)), <strong>zawsze wlewaj kwas do wody</strong> — powoli, mieszając. Rozcieńczanie wydziela dużo ciepła; gdy wlejesz wodę do kwasu, pierwsze krople mogą zawrzeć i wyrzucić kwas. Rymowanka: „Pamiętaj, chemiku młody, wlewaj zawsze kwas do wody”.</p>
+</div>
+</section>
+<section id="granice">
+<div class="part-heading"><span class="part-num">6</span> Kiedy reguły krzyżowej nie wolno używać wprost</div>
+<p>Reguła działa, gdy: mieszasz roztwory <strong>tej samej substancji</strong>, stężenia są <strong>procentowe masowe</strong>, masz <strong>masy</strong> roztworów i <strong>nic nie reaguje</strong>.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Sytuacja</th><th>Co zrobić</th></tr></thead>
+<tbody>
+<tr><td>podano <strong>objętości</strong> roztworów</td><td>przelicz na masy: <strong>m = d · V</strong> (potrzebna gęstość)</td></tr>
+<tr><td>substancje <strong>reagują</strong> ze sobą (np. kwas + zasada)</td><td>najpierw równanie reakcji i obliczenia z równania (F17)</td></tr>
+<tr><td>roztwory <strong>różnych</strong> substancji</td><td>liczyć osobno ms każdej substancji; stężenie każdej w masie całości</td></tr>
+<tr><td>stężenia <strong>molowe</strong></td><td>inne obliczenia (poziom liceum)</td></tr>
+<tr><td>dosypana substancja <strong>nie rozpuszcza się w całości</strong> (roztwór nasycony)</td><td>sprawdź rozpuszczalność (R03) — nadmiar nie wchodzi do roztworu</td></tr>
+<tr><td>rozpuszczamy <strong>hydrat</strong> lub substancję <strong>reagującą z wodą</strong></td><td>patrz <a href="#ambitne">§8</a></td></tr>
+</tbody></table></div>
+</section>
+<section id="konkurs">
+<div class="part-heading"><span class="part-num">7</span> Zadania konkursowe <span class="level-badge level-exam">KONKURS</span></div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 1 (2 pkt) — woda utleniona z perhydrolu</span>
+<p>Perhydrol to 30% roztwór nadtlenku wodoru, a woda utleniona z apteki — 3%. Ile gramów perhydrolu i ile wody potrzeba do przygotowania 300 g wody utlenionej?</p>
+<details class="answer"><summary>Pokaż rozwiązanie</summary>
+<p>Krzyż 30% i 0% → 3%: różnice 3 (dla perhydrolu) i 27 (dla wody) → 1 : 9 → 1 część = 30 g → <strong>30 g perhydrolu i 270 g wody</strong> (1 pkt stosunek, 1 pkt masy). Kontrola: 9 g H₂O₂ w 300 g → 3% ✔.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 2 (3 pkt) — trzy roztwory</span>
+<p>Zmieszano 100 g roztworu 10%, 200 g roztworu 20% i 100 g wody. Oblicz stężenie końcowe.</p>
+<details class="answer"><summary>Pokaż rozwiązanie</summary>
+<p>ms = 10 + 40 + 0 = 50 g (1 pkt); mr = 400 g (1 pkt); Cp = 50 ÷ 400 · 100% = <strong>12,5%</strong> (1 pkt). Przy trzech składnikach krzyż nie wystarcza — liczy się bilans.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 3 (2 pkt) — znajdź błąd</span>
+<p>Uczeń zmieszał 20 g roztworu 30% z 80 g wody i zapisał: Cp = 30% · 20% + 0% · 80% = 6%. Wynik jest dobry — czy rozwiązanie też?</p>
+<details class="answer"><summary>Pokaż rozwiązanie</summary>
+<p>Nie (1 pkt): pomnożył stężenia przez „procenty mas”, czyli przypadkiem użył udziałów 20 g i 80 g w 100 g całości. Zadziałało tylko dlatego, że suma mas wyniosła 100 g. Poprawnie: ms = 20 · 0,30 = 6 g; mr = 100 g; Cp = 6% (1 pkt). Przy 40 g + 80 g ten „sposób” dałby błędny wynik.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 4 (3 pkt) — roztwór nasycony</span>
+<p>Rozpuszczalność NaCl w 20°C wynosi ok. 36 g w 100 g wody. a) Oblicz stężenie roztworu nasyconego. b) Ile wody trzeba dodać do 136 g tego roztworu, aby otrzymać 10%?</p>
+<details class="answer"><summary>Pokaż rozwiązanie</summary>
+<p>a) Cp = 36 ÷ 136 · 100% ≈ <strong>26,5%</strong> (1 pkt). b) ms = 36 g; mr₂ = 36 ÷ 0,10 = 360 g (1 pkt); wody 360 − 136 = <strong>224 g</strong> (1 pkt).</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 5 (3 pkt) — objętość i gęstość</span>
+<p>Stężony kwas solny ma stężenie 36% i gęstość 1,18 g/cm³. Ile gramów wody trzeba dodać do 100 cm³ tego kwasu, aby otrzymać roztwór 10%?</p>
+<details class="answer"><summary>Pokaż rozwiązanie</summary>
+<p>m = d · V = 1,18 · 100 = 118 g (1 pkt); ms = 118 · 0,36 = 42,48 g; mr₂ = 42,48 ÷ 0,10 = 424,8 g (1 pkt); wody 424,8 − 118 = <strong>306,8 g</strong> (1 pkt). Pamiętaj o BHP: kwas wlewamy do wody.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 6 (2 pkt) — odparowanie</span>
+<p>Ile wody trzeba odparować z 600 g roztworu 10%, aby otrzymać 15%?</p>
+<details class="answer"><summary>Pokaż rozwiązanie</summary>
+<p>ms = 60 g → mr₂ = 60 ÷ 0,15 = 400 g → odparować <strong>200 g</strong> wody. Krzyżem nie da się tu „dodać” wody — odparowanie to odwrotność rozcieńczania, więc licz bilansem m₁ · Cp₁ = m₂ · Cp₂.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 7 (3 pkt) — mieszanie dwóch roztworów w danych proporcjach</span>
+<p>Zmieszano 150 g roztworu cukru o nieznanym stężeniu z 50 g roztworu 40% i otrzymano roztwór 25%. Oblicz nieznane stężenie.</p>
+<details class="answer"><summary>Pokaż rozwiązanie</summary>
+<p>Bilans: 150 · x + 50 · 40 = 200 · 25 (1 pkt) → 150x + 2000 = 5000 → 150x = 3000 (1 pkt) → x = <strong>20%</strong> (1 pkt). Kontrola: 25% leży między 20% a 40%, bliżej 20% — bo tego roztworu jest więcej ✔.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 8 (2 pkt) — prawda czy fałsz</span>
+<ol>
+<li>Mieszając roztwory 10% i 30%, można otrzymać roztwór 35%.</li>
+<li>Reguła krzyżowa podaje od razu masy roztworów w gramach.</li>
+<li>Przy dolewaniu wody masa substancji rozpuszczonej się nie zmienia.</li>
+<li>Mieszając równe masy roztworów 10% i 30%, otrzymamy roztwór 20%.</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>1 F · 2 F (podaje stosunek mas) · 3 P · 4 P (równe masy — wtedy wynik to średnia). Po 0,5 pkt.</p>
+</details>
+</div>
+</section>
+<section id="ambitne">
+<div class="part-heading"><span class="part-num">8</span> Warstwa ambitna: hydraty, reakcja z wodą, objętości <span class="level-badge level-extra">AMBITNE</span></div>
+<details class="adv"><summary>Hydrat — sól z wodą krystalizacyjną <span class="adv-tag">etap rejonowy i wyżej</span></summary><div class="adv-body">
+<p>Niebieski siarczan(VI) miedzi(II) w słoiku to <strong>hydrat CuSO₄·5H₂O</strong> — w kryształach na każdą „cząsteczkę” CuSO₄ przypada 5 cząsteczek wody. Gdy go rozpuszczasz, ta woda przechodzi do roztworu i <strong>zwiększa mw</strong>, a substancją rozpuszczoną jest tylko CuSO₄.
+Masy: CuSO₄ = 64 + 32 + 4 · 16 = 160 u; 5H₂O = 90 u; hydrat = 250 u. Hydrat zawiera więc 160 ÷ 250 · 100% = <strong>64% CuSO₄</strong> — można go traktować jak „roztwór 64%”.
+Przykład: ile hydratu i wody potrzeba na 200 g roztworu 8% CuSO₄? ms = 16 g CuSO₄ → hydratu 16 · 250 ÷ 160 = <strong>25 g</strong>, wody 200 − 25 = <strong>175 g</strong>. Krzyżem: 64% i 0% → 8%: 8 : 56 = 1 : 7 → 25 g i 175 g ✔.
+Typowy błąd: liczyć 16 g hydratu, jakby był bezwodny — wtedy roztwór miałby tylko 16 · 0,64 ≈ 10,2 g CuSO₄, czyli ok. 5%.</p>
+</div></details>
+<details class="adv"><summary>Substancja, która reaguje z wodą <span class="adv-tag">etap rejonowy i wyżej</span></summary><div class="adv-body">
+<p>Gdy do wody wrzucasz <strong>tlenek sodu</strong>, w roztworze nie ma Na₂O, tylko NaOH: <strong>Na₂O + H₂O → 2NaOH</strong>. Substancją rozpuszczoną jest produkt reakcji — liczysz go z równania (lekcja F17).
+Przykład: 6,2 g Na₂O rozpuszczono w 93,8 g wody. Masy: Na₂O = 62 u, 2NaOH = 80 u → z 6,2 g powstaje <strong>8 g NaOH</strong>. mr = 6,2 + 93,8 = 100 g (masa się nie zmienia — woda, która przereagowała, i tak jest w roztworze, tylko w NaOH). Cp(NaOH) = <strong>8%</strong>, choć wsypano tylko 6,2 g substancji. Podobnie SO₃ + H₂O → H₂SO₄ albo sód: 2Na + 2H₂O → 2NaOH + H₂↑ — wtedy uchodzący wodór <strong>zmniejsza</strong> mr.</p>
+</div></details>
+<details class="adv"><summary>Objętości się nie dodają <span class="adv-tag">liceum</span></summary><div class="adv-body">
+<p>Masy roztworów zawsze się dodają, objętości — nie zawsze. 50 cm³ etanolu + 50 cm³ wody daje ok. 96–97 cm³ roztworu (dane orientacyjne): cząsteczki wody i alkoholu „upakowują się” ciaśniej niż każda ciecz osobno. Dlatego w zadaniach z objętościami przeliczamy wszystko na masy (m = d · V) i dopiero mieszamy.</p>
+</div></details>
+</section>
+<section id="klinika">
+<div class="part-heading"><span class="part-num">9</span> Klinika błędów</div>
+<table class="klinika-table"><thead><tr><th>Błąd</th><th>Poprawnie</th><th>Dlaczego?</th></tr></thead><tbody><tr class="error-row"><td class="col-blad" data-label="Błąd">20% + 5% = 25%</td><td class="col-ok" data-label="Poprawa">wynik między 5% a 20%</td><td data-label="Dlaczego">Stężeń się nie dodaje — dodaje się ms i mr.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„10% i 30% → zawsze 20%”</td><td class="col-ok" data-label="Poprawa">20% tylko przy równych masach</td><td data-label="Dlaczego">Średnią zwykłą wolno liczyć wyłącznie dla równych mas; w ogólności średnia ważona masami.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Liczba z krzyża przypisana do roztworu z przeciwnego wiersza</td><td class="col-ok" data-label="Poprawa">liczba należy do roztworu ze <strong>swojego</strong> wiersza</td><td data-label="Dlaczego">Różnica przy słabszym (Cp₃ − Cp₂) trafia do mocniejszego. Sprawdź bilansem.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Części potraktowane jak gramy</td><td class="col-ok" data-label="Poprawa">części × (masa całości ÷ suma części)</td><td data-label="Dlaczego">Stosunek 1 : 2 nie znaczy „1 g i 2 g”.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Cp liczone na masę wody</td><td class="col-ok" data-label="Poprawa">Cp = ms ÷ <strong>mr</strong></td><td data-label="Dlaczego">10 g w 90 g wody to 10%, nie 11,1%.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Po dosypaniu soli: „mr bez zmian”</td><td class="col-ok" data-label="Poprawa">rośnie i ms, i mr</td><td data-label="Dlaczego">Dosypana sól też jest częścią roztworu.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Objętości dodane jak masy</td><td class="col-ok" data-label="Poprawa">m = d · V, potem bilans mas</td><td data-label="Dlaczego">Bez gęstości nie ma masy; objętości mogą się nie sumować.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Krzyż dla kwasu i zasady</td><td class="col-ok" data-label="Poprawa">najpierw reakcja (F17)</td><td data-label="Dlaczego">Substancje reagujące zmieniają się — bilans jednej substancji nie obowiązuje.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Hydrat liczony jak bezwodna sól</td><td class="col-ok" data-label="Poprawa">w hydracie tylko 64% to CuSO₄</td><td data-label="Dlaczego">Woda krystalizacyjna przechodzi do rozpuszczalnika.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Rozcieńczanie zmniejsza ilość substancji”</td><td class="col-ok" data-label="Poprawa">ms bez zmian</td><td data-label="Dlaczego">Dolewamy tylko wodę.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Dosypanie ponad rozpuszczalność</td><td class="col-ok" data-label="Poprawa">nadmiar zostaje na dnie</td><td data-label="Dlaczego">Roztwór nasycony nie przyjmie więcej substancji (R03).</td></tr></tbody></table>
+</section>
+<section id="cwiczenia">
+<div class="part-heading"><span class="part-num">10</span> Ćwiczenia</div>
+<h3>A. Podstawy <span class="level-badge level-basic">E8</span></h3>
+<div class="card card-basic">
+<span class="card-label">A1–A6</span>
+<ol>
+<li>Ile gramów roztworu 25% można otrzymać z 50 g substancji?</li>
+<li>Zmieszano 50 g roztworu 8% i 150 g roztworu 4%. Oblicz Cp.</li>
+<li>Do 150 g roztworu 24% dolano wodę i otrzymano 12%. Ile wody dolano?</li>
+<li>Ile wody trzeba dodać do 80 g roztworu 25%, aby otrzymać 10%?</li>
+<li>Do 200 g roztworu 15% dosypano 50 g substancji (całkowicie się rozpuściła). Oblicz Cp.</li>
+<li>Z 250 g roztworu 6% odparowano 100 g wody. Oblicz Cp.</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li>50 · 100 ÷ 25 = <strong>200 g</strong>. · 2. ms = 4 + 6 = 10 g; mr = 200 g → <strong>5%</strong>. · 3. ms = 36 g → mr₂ = 300 g → <strong>150 g</strong> wody. · 4. ms = 20 g → mr₂ = 200 g → <strong>120 g</strong> wody (krzyż 25 i 0 → 10: 10 : 15 = 2 : 3; 80 g = 2 cz. → woda 3 cz. = 120 g). · 5. ms = 30 + 50 = 80 g; mr = 250 g → <strong>32%</strong> (krzyż 100 i 15 → 32: 17 : 68 = 1 : 4 ✔). · 6. ms = 15 g; mr = 150 g → <strong>10%</strong>.</li>
+</ol>
+</details>
+</div>
+<h3>B. Reguła krzyżowa <span class="level-badge level-basic">E8</span></h3>
+<div class="card card-basic">
+<span class="card-label">B1–B5</span>
+<ol>
+<li>W jakim stosunku masowym zmieszać roztwory 50% i 10%, aby otrzymać 20%?</li>
+<li>Ile gramów roztworu 60% i ile wody potrzeba na 600 g roztworu 15%?</li>
+<li>Ile gramów roztworu 2% dodać do 100 g roztworu 12%, aby otrzymać 5%?</li>
+<li>Ile soli dosypać do 400 g roztworu 5%, aby otrzymać 24%?</li>
+<li>Zmieszano 300 g roztworu 10% i 100 g roztworu 50%. Oblicz Cp i sprawdź „huśtawką”, do którego składnika wynik jest bliżej.</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li>50%: 20 − 10 = 10; 10%: 50 − 20 = 30 → <strong>1 : 3</strong>. · 2. 60% i 0% → 15%: 15 : 45 = 1 : 3 → <strong>150 g roztworu 60% i 450 g wody</strong>. · 3. 12%: 5 − 2 = 3; 2%: 12 − 5 = 7 → 3 : 7; 100 g = 3 cz. → 1 cz. ≈ 33,33 g → roztworu 2%: <strong>≈ 233,3 g</strong> (kontrola: 12 + 4,67 = 16,67 g w 333,3 g → 5% ✔). · 4. 100% i 5% → 24%: 19 : 76 = 1 : 4; 400 g = 4 cz. → sól <strong>100 g</strong> (kontrola: 120 ÷ 500 = 24% ✔). · 5. ms = 30 + 50 = 80 g; mr = 400 g → <strong>20%</strong> — bliżej 10%, bo roztworu 10% jest 3 razy więcej (odległości 10 i 30 w stosunku 1 : 3).</li>
+</ol>
+</details>
+</div>
+<h3>C. Konkursowe i ambitne <span class="level-badge level-exam">KONKURS</span></h3>
+<div class="card card-exam">
+<span class="card-label">C1–C4</span>
+<ol>
+<li>Ile gramów CuSO₄·5H₂O i wody trzeba użyć, aby otrzymać 500 g roztworu 16% CuSO₄?</li>
+<li>W 87,6 g wody rozpuszczono 12,4 g tlenku sodu. Oblicz stężenie NaOH. (Na = 23, O = 16, H = 1)</li>
+<li>Ile cm³ roztworu 20% (gęstość 1,1 g/cm³) potrzeba, aby po rozcieńczeniu wodą otrzymać 440 g roztworu 5%?</li>
+<li>Z 400 g roztworu 10% odparowano część wody, a potem dosypano 20 g substancji i otrzymano 300 g roztworu. Oblicz Cp końcowe i masę odparowanej wody.</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li>ms = 80 g CuSO₄ → hydratu 80 · 250 ÷ 160 = <strong>125 g</strong>, wody <strong>375 g</strong> (krzyż 64 i 0 → 16: 16 : 48 = 1 : 3 ✔).</li>
+<li>Na₂O + H₂O → 2NaOH; 62 g → 80 g, więc 12,4 g → 16 g NaOH; mr = 100 g → <strong>16%</strong>.</li>
+<li>ms = 440 · 0,05 = 22 g → roztworu 20%: 22 ÷ 0,20 = 110 g → V = m ÷ d = 110 ÷ 1,1 = <strong>100 cm³</strong>.</li>
+<li>ms = 40 + 20 = 60 g w 300 g → <strong>20%</strong>; masa przed dosypaniem = 300 − 20 = 280 g → odparowano 400 − 280 = <strong>120 g</strong> wody.</li>
+</ol>
+</details>
+</div>
+</section>
+<section id="ciekawostki">
+<div class="part-heading"><span class="part-num">11</span> Ciekawostki</div>
+<div class="card card-extra">
+<span class="card-label">Kwadrat Pearsona w mleczarni i paszarni</span>
+<p>Reguła krzyżowa w krajach anglojęzycznych nazywa się <strong>kwadratem Pearsona</strong> (Pearson square). Mleczarnie używają jej, by ze śmietanki i mleka chudego otrzymać mleko o dokładnie ustalonej zawartości tłuszczu (np. 3,2%), a hodowcy — by z dwóch pasz o różnej zawartości białka przygotować mieszankę o zadanym procencie białka. To ten sam rachunek co w tej lekcji: „stężeniem” jest procent tłuszczu albo białka.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Sól fizjologiczna i morza</span>
+<p>Sól fizjologiczna, podawana w kroplówkach, to roztwór <strong>0,9%</strong> NaCl — ma podobne stężenie soli jak płyny ustrojowe, więc nie niszczy krwinek. Woda oceaniczna zawiera średnio ok. <strong>3,5%</strong> soli, Bałtyk tylko kilka promili, a Morze Martwe ok. <strong>34%</strong> (dane orientacyjne) — dlatego unosi człowieka jak dmuchany materac.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Woda utleniona i perhydrol</span>
+<p>Apteczna woda utleniona to 3% roztwór nadtlenku wodoru. Perhydrol (30%) jest dziesięć razy mocniejszy i parzy skórę — rozcieńcza się go w proporcji 1 : 9. Fryzjerzy używają do rozjaśniania włosów roztworów pośrednich, np. 6–12%, przygotowanych dokładnie tym rachunkiem.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Akumulator samochodowy</span>
+<p>Elektrolitem w klasycznym akumulatorze ołowiowym jest kwas siarkowy(VI) o stężeniu ok. 35–37% (orientacyjnie). Podczas rozładowania kwas zużywa się w reakcji i stężenie maleje — dlatego dawniej stan naładowania sprawdzało się, mierząc gęstość elektrolitu areometrem.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">50 + 50 ≠ 100</span>
+<p>Zmieszaj 50 cm³ spirytusu z 50 cm³ wody — otrzymasz wyraźnie mniej niż 100 cm³ (ok. 96–97 cm³). Masa za to zgadza się co do grama. To dobry argument, dlaczego chemicy liczą stężenia procentowe <strong>masowo</strong>, a nie objętościowo.</p>
+</div>
+</section>
+<section id="mnemotechniki">
+<div class="part-heading"><span class="part-num">12</span> Sposoby pamięciowe</div>
+<wskazowki>
+<ul>
+<li><strong>„Dodaję gramy, nie procenty.”</strong> ms do ms, mr do mr — stężenie liczę na końcu.</li>
+<li><strong>„Wynik w środku”</strong> — mieszanka zawsze między składnikami; bliżej tego, którego więcej.</li>
+<li><strong>„Krzyż: większe minus mniejsze, po skosie”</strong> — a liczba zostaje w <strong>swoim</strong> wierszu.</li>
+<li><strong>„Huśtawka”:</strong> bliżej podpórki siedzi ten, kogo więcej — więcej bierzesz roztworu bliższego stężeniu docelowemu.</li>
+<li><strong>„Woda zero, sól sto.”</strong> Dolewanie wody i dosypywanie substancji to też mieszanie.</li>
+<li><strong>„Części to nie gramy.”</strong> Najpierw części, potem 1 część = całość ÷ suma części.</li>
+<li><strong>„Kwas do wody.”</strong> Pamiętaj, chemiku młody, wlewaj zawsze kwas do wody.</li>
+<li><strong>„Hydrat to roztwór 64%”</strong> — dla CuSO₄·5H₂O.</li>
+</ul>
+</wskazowki>
+</section>
+<section id="test">
+<div class="part-heading"><span class="part-num">13</span> Test końcowy</div>
+<div class="che-quiz" id="quizWrap"><div class="quiz-q" data-ok="2" data-fb="ms = 20 + 10 = 30 g; mr = 300 g."><h5>1. Zmieszano 100 g roztworu 20% i 200 g roztworu 5%. Stężenie końcowe wynosi:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">25%</button><button type="button" class="quiz-opt" data-a="1">12,5%</button><button type="button" class="quiz-opt" data-a="2">10%</button><button type="button" class="quiz-opt" data-a="3">15%</button></div></div><div class="quiz-q" data-ok="3" data-fb="Wynik musi leżeć między 5% a 20%."><h5>2. Z roztworów 20% i 5% NIE da się otrzymać roztworu:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">6%</button><button type="button" class="quiz-opt" data-a="1">12%</button><button type="button" class="quiz-opt" data-a="2">19%</button><button type="button" class="quiz-opt" data-a="3">22%</button></div></div><div class="quiz-q" data-ok="0" data-fb="15 − 10 = 5 (dla 30%), 30 − 15 = 15 (dla 10%) → 5 : 15 = 1 : 3."><h5>3. Reguła krzyżowa dla 30% i 10% → 15% daje stosunek m(30%) : m(10%):</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">1 : 3</button><button type="button" class="quiz-opt" data-a="1">3 : 1</button><button type="button" class="quiz-opt" data-a="2">1 : 2</button><button type="button" class="quiz-opt" data-a="3">2 : 1</button></div></div><div class="quiz-q" data-ok="0" data-fb="W wodzie nie ma substancji rozpuszczonej."><h5>4. Woda w regule krzyżowej to roztwór o stężeniu:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">0%</button><button type="button" class="quiz-opt" data-a="1">100%</button><button type="button" class="quiz-opt" data-a="2">1%</button><button type="button" class="quiz-opt" data-a="3">zależnym od temperatury</button></div></div><div class="quiz-q" data-ok="2" data-fb="ms = 40 g → mr₂ = 400 g → wody 300 g."><h5>5. Ile wody trzeba dodać do 100 g roztworu 40%, aby otrzymać 10%?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">100 g</button><button type="button" class="quiz-opt" data-a="1">200 g</button><button type="button" class="quiz-opt" data-a="2">300 g</button><button type="button" class="quiz-opt" data-a="3">400 g</button></div></div><div class="quiz-q" data-ok="2" data-fb="Dosypana sól jest i substancją, i częścią roztworu."><h5>6. Po dosypaniu soli do roztworu:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">rośnie tylko ms</button><button type="button" class="quiz-opt" data-a="1">rośnie tylko mr</button><button type="button" class="quiz-opt" data-a="2">rosną ms i mr, rośnie Cp</button><button type="button" class="quiz-opt" data-a="3">ms rośnie, a mr maleje</button></div></div><div class="quiz-q" data-ok="1" data-fb="Przy równych masach — średnia: (12 + 28) ÷ 2."><h5>7. Mieszając równe masy roztworów 12% i 28%, otrzymamy:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">16%</button><button type="button" class="quiz-opt" data-a="1">20%</button><button type="button" class="quiz-opt" data-a="2">24%</button><button type="button" class="quiz-opt" data-a="3">40%</button></div></div><div class="quiz-q" data-ok="1" data-fb="Gramy liczy się dopiero z masy całości lub jednego składnika."><h5>8. Reguła krzyżowa daje:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">masy roztworów w gramach</button><button type="button" class="quiz-opt" data-a="1">stosunek mas roztworów</button><button type="button" class="quiz-opt" data-a="2">objętości roztworów</button><button type="button" class="quiz-opt" data-a="3">stężenie końcowe</button></div></div><div class="quiz-q" data-ok="1" data-fb="160 ÷ 250 · 100% = 64%."><h5>9. Ile procent CuSO₄ zawiera hydrat CuSO₄·5H₂O? (CuSO₄ = 160 u, H₂O = 18 u)</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">36%</button><button type="button" class="quiz-opt" data-a="1">64%</button><button type="button" class="quiz-opt" data-a="2">50%</button><button type="button" class="quiz-opt" data-a="3">100%</button></div></div><div class="quiz-q" data-ok="1" data-fb="Stężenie procentowe jest masowe; potrzebna gęstość."><h5>10. Gdy podano objętości roztworów, przed użyciem reguły krzyżowej trzeba:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">dodać objętości</button><button type="button" class="quiz-opt" data-a="1">przeliczyć je na masy (m = d · V)</button><button type="button" class="quiz-opt" data-a="2">pomnożyć je przez stężenia</button><button type="button" class="quiz-opt" data-a="3">nic — reguła działa na objętościach</button></div></div></div><div class="quiz-score" id="quizScore"></div>
+</section>
+<section id="fiszki">
+<div class="part-heading"><span class="part-num">14</span> Fiszki</div>
+<div id="flashcards" class="flashcard-grid"><button class="flashcard" type="button"><span class="front">Cp</span><span class="back">ms ÷ mr · 100%</span><span class="card-tag tag-basic">roztwory</span></button><button class="flashcard" type="button"><span class="front">mr</span><span class="back">ms + mw</span><span class="card-tag tag-basic">roztwory</span></button><button class="flashcard" type="button"><span class="front">Mieszanie — co się dodaje?</span><span class="back">masy substancji i masy roztworów (nie stężenia!)</span><span class="card-tag tag-basic">mieszanie</span></button><button class="flashcard" type="button"><span class="front">Bilans mieszania</span><span class="back">m₁·Cp₁ + m₂·Cp₂ = (m₁ + m₂)·Cp₃</span><span class="card-tag tag-basic">mieszanie</span></button><button class="flashcard" type="button"><span class="front">Reguła krzyżowa</span><span class="back">m₁ : m₂ = (Cp₃ − Cp₂) : (Cp₁ − Cp₃)</span><span class="card-tag tag-exam">konkurs</span></button><button class="flashcard" type="button"><span class="front">Gdzie leży wynik?</span><span class="back">między stężeniami składników, bliżej tego, którego więcej</span><span class="card-tag tag-basic">mieszanie</span></button><button class="flashcard" type="button"><span class="front">Woda / czysta substancja</span><span class="back">0% / 100%</span><span class="card-tag tag-basic">mieszanie</span></button><button class="flashcard" type="button"><span class="front">Rozcieńczanie i odparowanie</span><span class="back">m₁·Cp₁ = m₂·Cp₂ (ms stała)</span><span class="card-tag tag-basic">mieszanie</span></button><button class="flashcard" type="button"><span class="front">Części → gramy</span><span class="back">1 część = masa całości ÷ suma części</span><span class="card-tag tag-basic">mieszanie</span></button><button class="flashcard" type="button"><span class="front">Huśtawka stężeń</span><span class="back">masy odwrotnie proporcjonalne do odległości od Cp₃</span><span class="card-tag tag-understand">rozumienie</span></button><button class="flashcard" type="button"><span class="front">Objętość → masa</span><span class="back">m = d · V</span><span class="card-tag tag-extra">ambitne</span></button><button class="flashcard" type="button"><span class="front">Hydrat CuSO₄·5H₂O</span><span class="back">64% CuSO₄</span><span class="card-tag tag-extra">ambitne</span></button><button class="flashcard" type="button"><span class="front">Na₂O w wodzie</span><span class="back">Na₂O + H₂O → 2NaOH — liczymy Cp NaOH</span><span class="card-tag tag-extra">ambitne</span></button><button class="flashcard" type="button"><span class="front">BHP rozcieńczania kwasu</span><span class="back">kwas do wody</span><span class="card-tag tag-basic">bhp</span></button><button class="flashcard" type="button"><span class="front">Sól fizjologiczna</span><span class="back">0,9% NaCl</span><span class="card-tag tag-basic">roztwory</span></button></div>
+</section>
+<section id="slownik">
+<div class="part-heading"><span class="part-num">15</span> Słownik</div>
+<dl><div class="def-item"><dt>Stężenie procentowe</dt><dd>liczba gramów substancji rozpuszczonej w 100 g roztworu</dd></div><div class="def-item"><dt>Rozcieńczanie</dt><dd>zmniejszanie stężenia przez dodanie rozpuszczalnika</dd></div><div class="def-item"><dt>Zatężanie</dt><dd>zwiększanie stężenia przez odparowanie rozpuszczalnika lub dodanie substancji</dd></div><div class="def-item"><dt>Bilans substancji</dt><dd>równanie mówiące, że masa substancji rozpuszczonej przed zmieszaniem równa się masie po zmieszaniu</dd></div><div class="def-item"><dt>Reguła krzyżowa</dt><dd>skrócony sposób obliczania stosunku mas dwóch mieszanych roztworów (kwadrat Pearsona)</dd></div><div class="def-item"><dt>Hydrat</dt><dd>związek zawierający w kryształach wodę krystalizacyjną, np. CuSO₄·5H₂O</dd></div><div class="def-item"><dt>Woda krystalizacyjna</dt><dd>woda związana w kryształach soli, uwalniana przy rozpuszczaniu lub prażeniu</dd></div><div class="def-item"><dt>Gęstość</dt><dd>masa jednostki objętości, d = m ÷ V</dd></div><div class="def-item"><dt>Perhydrol</dt><dd>30% roztwór nadtlenku wodoru</dd></div></dl>
+</section>
+<section id="sciaga">
+<div class="part-heading"><span class="part-num">16</span> Ściąga</div>
+<div class="card card-core">
+<ul>
+<li>Cp = ms ÷ mr · 100% · mr = ms + mw · ms = Cp · mr ÷ 100%.</li>
+<li><strong>Mieszanie:</strong> dodaj ms i mr; Cp₃ = Σms ÷ Σmr · 100%; wynik między składnikami.</li>
+<li><strong>Krzyż:</strong> mocniejszy u góry, słabszy na dole, docelowy pośrodku; odejmij po skosie (większe − mniejsze); liczba należy do swojego wiersza; skróć; przelicz części na gramy; sprawdź bilansem.</li>
+<li><strong>Woda = 0%, substancja = 100%.</strong> Rozcieńczanie i odparowanie: m₁·Cp₁ = m₂·Cp₂.</li>
+<li>Objętości → masy (m = d · V). Reakcja → najpierw równanie (F17). Hydrat → licz tylko sól bezwodną.</li>
+</ul>
+</div>
+<checklista>
+<ul>
+<li>[ ] obliczam Cp, ms i mr i odróżniam masę roztworu od masy wody</li>
+<li>[ ] mieszam dwa i trzy roztwory bilansem</li>
+<li>[ ] stosuję regułę krzyżową i przeliczam części na gramy</li>
+<li>[ ] traktuję wodę jako 0%, a czystą substancję jako 100%</li>
+<li>[ ] rozcieńczam i zatężam roztwory</li>
+<li>[ ] sprawdzam, czy wynik leży między stężeniami składników</li>
+<li>[ ] rozwiązuję zadanie bez krzyża, samym bilansem</li>
+<li>[ ] (ambitne) przeliczam objętość na masę, liczę hydraty i substancje reagujące z wodą</li>
+</ul>
+</checklista>
+</section>
+<section id="dalej">
+<div class="part-heading"><span class="part-num">17</span> Co dalej?</div>
+<ul>
+<li>Wróć do <a href="#rdzen">R03</a> — krzywe rozpuszczalności i roztwór nasycony łączą się z mieszaniem w zadaniach konkursowych.</li>
+<li>Obliczenia z równań reakcji — lekcja F17 (potrzebne przy Na₂O, SO₃ i reagujących roztworach).</li>
+<li>Stężenie molowe i mieszanie roztworów molowych — poziom liceum (R05).</li>
+</ul>
+</section>
+<section id="audyt">
+<div class="part-heading">Pochodzenie i sprawdzenie treści</div>
+<p class="mini-note">Materiał wyjściowy: lekcja Perplexity „Mieszanie roztworów i reguła krzyżowa” (2026-10-11), zapis surowy <code>chemia/plany/audyty/W1_perplexity_R03A_regula_krzyzowa_2026-10-11.md</code>. Lekcja jeszcze nie przeszła W1 (pełnego audytu z promptem) — do paczki W1.</p>
+<p><strong>Przyjęte (po sprawdzeniu rachunków):</strong> wzory i oznaczenia, wykład z lemoniadą, reguła krzyżowa z wyprowadzeniem z bilansu, algorytm 7 kroków, przykłady 20% + 5%, rozcieńczanie i zatężanie, woda 0% i substancja 100%, lista sytuacji, gdy krzyża nie wolno stosować, mini-wykłady (wynik między stężeniami, „części”, masa roztworu jako suma), zadania 1–10 (rozdzielone między §4, §5, §7 i §10), pułapki egzaminacyjne (→ klinika), ściąga, karta samooceny (→ checklista).</p>
+<p><strong>Poprawione względem propozycji:</strong>
+- Wzór z pierwszej odpowiedzi m₁ : m₂ = (Cp₂ − Cp₃) : (Cp₃ − Cp₁) daje dobry stosunek tylko przez dwie ujemne liczby — w lekcji zapis bez znaków ujemnych (Cp₃ − Cp₂) : (Cp₁ − Cp₃) i zasada „większe minus mniejsze”.
+- W wykładzie różnice podano w kolejności myląco odwrotnej do stosunku — przepisane z wyjaśnieniem, która różnica należy do którego roztworu, plus analogia huśtawki.
+- „Ciekawostki” 1–5 propozycji były w istocie pułapkami i wzorami — przeniesione do kliniki i ściągi; ciekawostki napisane od nowa (kwadrat Pearsona, sól fizjologiczna, perhydrol, akumulator, kontrakcja objętości).
+- Przykład zatężania przez odparowanie rozwiązywany bilansem — krzyż nie opisuje odejmowania wody.</p>
+<p><strong>Dodane (zakres konkursowy i olimpijski):</strong> trzy roztwory, dosypywanie substancji krzyżem (100%), roztwór nasycony, objętość i gęstość, nieznane stężenie z bilansu, hydraty, substancja reagująca z wodą, BHP rozcieńczania kwasów, model <code>r03-krzyz-v01</code>.</p>
+<p><strong>Nieprzyjęte:</strong> schematy w blokach kodu (```text) — zastąpione tabelami, bo dialekt lekcji nie ma bloków kodu; numer „CHE.01R.06” z propozycji — w kanonie R06 to objętość molowa gazów, lekcja dostała kod R03A (pogłębienie R03).</p>
+</section>
+<footer class="footer"><p><strong>CHEMIA R03A v1.0</strong> · Mieszanie roztworów i reguła krzyżowa · 2026</p></footer>
+</main>
+<script>
+/* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
+   postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
+(function(){
+var html=document.documentElement;
+function ciemny(){var t=html.getAttribute('data-theme');return t?t==='dark':!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function oznacz(){if(ciemny())html.setAttribute('data-ciemny','');else html.removeAttribute('data-ciemny')}
+try{var z=localStorage.getItem('lekcja-motyw');if(z)html.setAttribute('data-theme',z)}catch(e){}
+oznacz();if(window.matchMedia)try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',oznacz)}catch(e){}
+
+function start(){
+var root=document;
+root.querySelectorAll('.flashcard').forEach(function(b){if(b.dataset.lkFz)return;b.dataset.lkFz=1;b.removeAttribute('onclick');b.setAttribute('aria-pressed','false');
+ b.addEventListener('click',function(){var on=b.classList.toggle('flipped');b.setAttribute('aria-pressed',on?'true':'false')})});
+root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibling,ok=0,n=0,all=w.querySelectorAll('.quiz-q').length;
+ if(sc&&sc.classList.contains('quiz-score'))sc.setAttribute('aria-live','polite');
+ w.querySelectorAll('.quiz-q').forEach(function(d){var good=+d.dataset.ok;d.querySelectorAll('.quiz-opt').forEach(function(b){b.onclick=function(){if(d.dataset.done)return;d.dataset.done=1;n++;if(+b.dataset.a===good)ok++;
+  d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
+  if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
+  if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var b=root.querySelector('#advToggle');
+if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
+ if(!k)b.style.display='none';
+ b.textContent='Pokaż treści akademickie ('+k+')';
+ b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';adv().forEach(function(d){d.open=on});b.setAttribute('aria-pressed',on?'true':'false');b.textContent=(on?'Ukryj':'Pokaż')+' treści akademickie ('+k+')'}}
+// spis zwinięty na telefonie
+var sp=root.querySelector('#spis');if(sp&&window.innerWidth<700)sp.removeAttribute('open');
+// przełącznik jasny/ciemny
+var tb=root.querySelector('#lkMotyw');
+if(tb)tb.onclick=function(){var t=ciemny()?'light':'dark';html.setAttribute('data-theme',t);try{localStorage.setItem('lekcja-motyw',t)}catch(e){}oznacz()};
+// postęp czytania + aktywna sekcja w spisie
+var bar=root.querySelector('.lk-prog'),links={},secs=[];
+root.querySelectorAll('.toc-link[href^="#"]').forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1));if(s){links[s.id]=a;secs.push(s)}});
+var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+ if(bar)bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';
+ var cur=null,lim=(parseInt(getComputedStyle(h).getPropertyValue('--header-h'))||52)+40;
+ for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
+ for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// fiszki: pokazuje pierwsze N (domyślnie 6, atrybut data-fz-pierwsze="N"), reszta po wyraźnym przycisku
+root.querySelectorAll('.flashcard-grid').forEach(function(g){
+ var cards=[].slice.call(g.querySelectorAll('.flashcard')),N=+(g.getAttribute('data-fz-pierwsze')||6);
+ if(!(N>0)||cards.length<=N)return;
+ var ukryte=cards.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more';
+ function lab(on){ukryte.forEach(function(c){c.hidden=!on});
+  b.textContent=on?'▲ Zwiń fiszki':'▼ Pokaż pozostałe '+ile+' fiszek (razem '+cards.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ g.insertAdjacentElement('afterend',b);
+});
+// testy: pokazuje pierwsze N pytań (domyślnie 5, atrybut data-q-pierwsze), reszta po wyraźnym przycisku
+root.querySelectorAll('.che-quiz').forEach(function(w){
+ var qs=[].slice.call(w.querySelectorAll('.quiz-q')),N=+(w.getAttribute('data-q-pierwsze')||5);
+ if(!(N>0)||qs.length<=N)return;
+ var ukryte=qs.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more q-more';
+ function lab(on){ukryte.forEach(function(q){q.hidden=!on});
+  b.textContent=on?'▲ Zwiń pytania':'▼ Pokaż pozostałe '+ile+(ile===1?' pytanie':(ile<5?' pytania':' pytań'))+' (razem '+qs.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ var sc=w.nextElementSibling;(sc&&sc.classList.contains('quiz-score')?sc:w).insertAdjacentElement('afterend',b);
+});
+// grafiki przedmiotu
+if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
+if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();
+
+</script>
+</body>
+</html>

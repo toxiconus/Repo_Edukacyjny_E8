@@ -265,3 +265,4 @@
 - 2026-10-20: usunięte bloki „10 zasad supernauki/skutecznej nauki” z 10 lekcji lekcje_md i N05 (gotowe); kopie w chemia/plany/niewykorzystane/supernauka_wyjete/. Bez planów czasowych.
 - 2026-10-20: H-D4 zamknięte (porównanie, brak unikalnych treści poza planami czasowymi — odrzucone); zasada bez planów czasowych w CLAUDE.md.
 - 2026-10-20: H-D1 — zestawienie 52 par lekcji chemii (16 identycznych, 36 różnych) w chemia/plany/H-D1_pary_chemia.md; bez zmian w lekcjach.
+- 2026-10-20: H-D1 krok 1–2: builder chemii czyta wybór z chemia/plany/WYBOR_WERSJI.json (lekcje_md + gotowe, 127 lekcji), czyści nieaktualne HTML; F01–F04 → gotowe; 16 identycznych kopii z lekcje_md przeniesione do niewykorzystane.

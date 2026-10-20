@@ -1,0 +1,1547 @@
+<!DOCTYPE html>
+<html lang="pl" data-przedmiot="che">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>F01 · Jak myśli chemik</title>
+<style id="lekcja-css">
+/* baza.css — wspólna baza lekcji wszystkich przedmiotów (styl lekcji silnika CHE v0_57). Nie edytować — zmiany wspólne w ulepszenia.css, przedmiotowe w motywy/<kod>.css. */
+
+
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+--bg:#fafbfc;--surface:#ffffff;--surface-soft:#f6f8fa;--surface-warm:#fdfaf4;--border:#e5e9ee;--border-strong:#cdd5dd;
+--text:#1a2332;--text-soft:#4a5568;--text-muted:#8892a0;--text-faint:#b4bcc6;
+--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,0.15);
+--c-basic:#2e7d4f;--c-basic-bg:#eaf6ee;--c-basic-line:#b8dcc4;
+--c-understand:#2b5e9c;--c-understand-bg:#eaf1f9;--c-understand-line:#bcd0e5;
+--c-warn:#b06f1c;--c-warn-bg:#fcf4e6;--c-warn-line:#eed8a8;
+--c-error:#b83a45;--c-error-bg:#fbeced;--c-error-line:#e8b5b9;
+--c-extra:#6b3fa0;--c-extra-bg:#f3ecfa;--c-extra-line:#d3bde8;
+--c-new:#0d7d7d;--c-new-bg:#e6f4f4;--c-new-line:#b0dcdc;
+--c-exam:#a86a00;--c-exam-bg:#fdf5e0;--c-exam-line:#eed49c;
+--sh-sm:0 1px 2px rgba(26,35,50,0.04);--sh-md:0 4px 12px rgba(26,35,50,0.06);--sh-lg:0 12px 32px rgba(26,35,50,0.10);--sh-xl:0 20px 48px rgba(26,35,50,0.14);
+--r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;
+--header-h:56px;
+--ease:cubic-bezier(0.4,0,0.2,1);--ease-out:cubic-bezier(0.16,1,0.3,1);
+--hl-key:#0d6868;--hl-key-bg:#d8ecea;--hl-warn:#b83a45;--hl-warn-bg:#fbe0e2;--hl-new:#6b3fa0;--hl-new-bg:#ede0f8;--hl-formula:#084848;--hl-formula-bg:#e0eeed;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;padding:calc(var(--header-h) + 12px) 0 88px;min-height:100vh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+@media(min-width:600px){body{padding:calc(var(--header-h) + 18px) 12px 96px;}}
+@media(min-width:768px){body{padding:calc(var(--header-h) + 24px) 20px 100px;}}
+@media(min-width:1100px){body{padding:calc(var(--header-h) + 28px) 32px 110px;}}
+.fab{position:fixed;top:12px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);background:rgba(255,255,255,0.94);color:var(--text);cursor:pointer;border-radius:var(--r-md);padding:0;transition:all 0.2s var(--ease);z-index:1200;box-shadow:var(--sh-sm);backdrop-filter:blur(8px);}
+.fab:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);box-shadow:var(--sh-md);transform:translateY(-1px);}
+.fab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.fab-left{left:6px;}.fab-right{right:6px;}
+@media(min-width:600px){.fab-left{left:10px;}.fab-right{right:10px;}}
+@media(min-width:768px){.fab-left{left:14px;}.fab-right{right:14px;}}
+.fab-left::after{content:'';width:16px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;border-radius:1px;transition:transform 0.25s var(--ease);}
+.fab-left.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.fab-left.is-open::after{width:16px;height:2px;background:currentColor;box-shadow:none;transform:rotate(45deg);}
+.fab-left.is-open::before{content:'';position:absolute;width:16px;height:2px;background:currentColor;transform:rotate(-45deg);border-radius:1px;}
+.fab-right::after{content:'';display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:8px solid currentColor;transition:transform 0.35s var(--ease-out);}
+.fab-right.is-hidden::after{transform:rotate(0deg);}
+.fab-right:not(.is-hidden)::after{transform:rotate(180deg);}
+.header-wrapper{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);transform:translateY(0);transition:transform 0.45s var(--ease-out),box-shadow 0.3s var(--ease);box-shadow:var(--sh-sm);}
+.header-wrapper.is-hidden{transform:translateY(-100%);box-shadow:none;}
+.header-bar{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:0 16px;height:var(--header-h);}
+@media(min-width:768px){.header-bar{padding:0 24px;}}
+.header-subject{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:1px;padding:4px 10px;background:var(--accent-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;}
+.header-title{font-size:15px;font-weight:700;color:var(--text);letter-spacing:-0.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1 1 auto;min-width:0;}
+.header-lesson{font-size:10px;font-weight:800;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.7px;padding:4px 9px;background:var(--surface-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;font-family:'JetBrains Mono',monospace;}
+.header-nav{display:flex;gap:2px;flex-shrink:0;align-items:center;}
+.header-nav a,.header-nav button{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;border-radius:var(--r-sm);font-size:16px;font-weight:500;transition:all 0.2s var(--ease);border:1px solid transparent;background:transparent;cursor:pointer;padding:0;font-family:inherit;}
+.header-nav a:hover,.header-nav button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.header-resume-btn.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.header-resume-btn::before{content:'▮';font-size:14px;line-height:1;}
+.header-panel{display:none;border-top:1px solid var(--border);background:linear-gradient(180deg,var(--surface) 0%,var(--surface-soft) 100%);padding:20px 16px 24px;}
+@media(min-width:768px){.header-panel{padding:24px 24px 28px;}}
+.header-panel.is-open{display:block;}
+.header-panel-inner{max-width:900px;margin:0 auto;}
+.header-kicker{font-size:11px;color:var(--text-muted);text-transform:uppercase;font-weight:800;letter-spacing:1px;margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.header-kicker::before{content:'';width:24px;height:2px;background:var(--accent);display:inline-block;border-radius:1px;}
+.header-h1{font-size:32px;font-weight:800;color:var(--text);letter-spacing:-1px;margin-bottom:10px;line-height:1.1;}
+.header-subtitle{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:18px;max-width:720px;}
+.header-modes{display:flex;gap:6px;flex-wrap:wrap;}
+.mode-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 15px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);font-family:inherit;}
+.mode-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
+.mode-btn:hover:not(.active){background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.resume-dropdown{display:none;position:fixed;top:calc(var(--header-h) + 6px);right:14px;z-index:1050;width:min(300px,calc(100vw - 30px));padding:14px;border:1px solid var(--border-strong);border-radius:12px;background:#fff;box-shadow:var(--sh-lg);}
+.resume-dropdown.is-open{display:block;}
+.resume-dropdown h4{margin:0 0 5px;color:var(--text);font-size:.85rem;}
+.resume-dropdown p{margin:0 0 12px;color:var(--text-muted);font-size:.75rem;line-height:1.5;}
+.resume-actions{display:flex;gap:6px;}
+.resume-actions button{flex:1;padding:8px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text-soft);font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.resume-actions .resume-save{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toc-overlay{position:fixed;inset:0;background:rgba(26,35,50,0.34);backdrop-filter:blur(3px);z-index:1100;opacity:0;visibility:hidden;transition:opacity 0.3s var(--ease),visibility 0.3s var(--ease);}
+.toc-overlay.is-visible{opacity:1;visibility:visible;}
+.toc-wrapper{position:fixed;left:0;top:0;width:320px;max-width:86vw;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:1150;transform:translateX(-100%);transition:transform 0.4s var(--ease-out);padding-top:64px;box-shadow:var(--sh-xl);}
+.toc-wrapper.is-open{transform:translateX(0);}
+.toc-content{padding:12px 14px 100px;}
+.toc-header{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);padding:4px 12px 12px;}
+.toc-item{margin-bottom:4px;border-radius:var(--r-md);overflow:hidden;}
+.toc-summary{padding:10px 12px;font-size:13px;font-weight:700;color:var(--text);cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;border-radius:var(--r-sm);transition:background 0.2s var(--ease),color 0.2s var(--ease);user-select:none;}
+.toc-summary:hover{background:var(--accent-soft);color:var(--accent);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::marker{content:'';}
+.toc-summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);opacity:0.5;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);opacity:1;}
+.toc-links{padding:4px 0 8px 28px;display:flex;flex-direction:column;gap:1px;}
+.toc-link{display:block;padding:6px 10px;font-size:12.5px;color:var(--text-soft);text-decoration:none;border-radius:4px;transition:all 0.2s var(--ease);border-left:2px solid transparent;}
+.toc-link:hover{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);}
+.container{max-width:820px;margin:0 auto;background:var(--surface);border-radius:0;box-shadow:none;padding:18px 12px;border:none;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+@media(min-width:600px){.container{border-radius:var(--r-lg);box-shadow:var(--sh-md);border:1px solid var(--border);padding:22px 18px;}}
+@media(min-width:768px){.container{padding:36px 36px;border-radius:var(--r-xl);}}
+@media(min-width:1100px){.container{max-width:840px;padding:40px 40px;}}
+h1,h2,h3,h4,h5{font-weight:800;color:var(--text);letter-spacing:-0.3px;line-height:1.3;}
+h2{font-size:24px;margin-top:44px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+h3{font-size:17px;margin-top:32px;margin-bottom:12px;font-weight:800;}
+h4{font-size:15px;margin-top:24px;margin-bottom:10px;font-weight:800;}
+h5{font-size:13px;margin-top:16px;margin-bottom:8px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-soft);}
+p{margin-bottom:12px;}
+ul,ol{padding-left:24px;margin-bottom:14px;}
+li{margin-bottom:6px;padding-left:4px;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s var(--ease);}
+a:hover{border-bottom-color:var(--accent);}
+strong{font-weight:700;color:var(--text);}
+.hl{background:var(--hl-key-bg);color:var(--hl-key);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-warn{background:var(--hl-warn-bg);color:var(--hl-warn);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-new{background:var(--hl-new-bg);color:var(--hl-new);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.formula{display:inline-block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:14px;font-weight:600;color:var(--hl-formula);background:var(--hl-formula-bg);padding:4px 12px;border-radius:var(--r-sm);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:3px 2px;white-space:nowrap;}
+.formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
+code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
+pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
+.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
+.mnemonic b{color:#78350f;}
+.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
+@media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
+.card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
+.card-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:10px;padding:3px 9px;background:var(--accent-soft);border-radius:4px;}
+.card-core{background:var(--accent-soft);border-color:var(--accent-line);border-left-color:var(--accent);}
+.card-basic{background:var(--c-basic-bg);border-color:var(--c-basic-line);border-left-color:var(--c-basic);}
+.card-basic .card-label{background:rgba(46,125,79,0.12);color:var(--c-basic);}
+.card-understand{background:var(--c-understand-bg);border-color:var(--c-understand-line);border-left-color:var(--c-understand);}
+.card-understand .card-label{background:rgba(43,94,156,0.12);color:var(--c-understand);}
+.card-warning{background:var(--c-warn-bg);border-color:var(--c-warn-line);border-left-color:var(--c-warn);}
+.card-warning .card-label{background:rgba(176,111,28,0.12);color:var(--c-warn);}
+.card-error{background:var(--c-error-bg);border-color:var(--c-error-line);border-left-color:var(--c-error);}
+.card-error .card-label{background:rgba(184,58,69,0.12);color:var(--c-error);}
+.card-extra{background:var(--c-extra-bg);border-color:var(--c-extra-line);border-left-color:var(--c-extra);}
+.card-extra .card-label{background:rgba(107,63,160,0.12);color:var(--c-extra);}
+.card-new{background:var(--c-new-bg);border-color:var(--c-new-line);border-left-color:var(--c-new);}
+.card-new .card-label{background:rgba(13,125,125,0.12);color:var(--c-new);}
+.card-exam{background:var(--c-exam-bg);border-color:var(--c-exam-line);border-left-color:var(--c-exam);}
+.card-exam .card-label{background:rgba(168,106,0,0.12);color:var(--c-exam);}
+.card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0;}
+details.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent-line);border-radius:var(--r-sm);padding:10px 14px;margin:10px 0;transition:all 0.2s var(--ease);}
+details.answer[open]{background:var(--accent-soft);border-left-color:var(--accent);}
+details.answer summary{cursor:pointer;font-weight:700;color:var(--text-soft);font-size:13px;list-style:none;user-select:none;display:flex;align-items:center;gap:10px;transition:color 0.2s var(--ease);}
+details.answer summary::-webkit-details-marker{display:none;}
+details.answer summary::marker{content:'';}
+details.answer summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer[open] summary{color:var(--accent);}
+details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}
+.part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}
+@media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}
+.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
+@media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}
+.table-wrap th,.table-wrap td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px;}
+@media(min-width:600px){.table-wrap th,.table-wrap td{padding:10px 12px;font-size:13.5px;}}
+.table-wrap th{background:var(--surface-soft);font-weight:800;color:var(--text-soft);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;}
+@media(min-width:600px){.table-wrap th{font-size:11px;letter-spacing:0.7px;white-space:nowrap;}}
+.table-wrap.table-compact td,.table-wrap.table-compact th{padding:7px 6px;font-size:12.5px;}
+.table-wrap tr:last-child td{border-bottom:none;}
+.table-wrap tr:hover td{background:var(--accent-soft);}
+.table-wrap .error-row{background:var(--c-error-bg);}
+.table-wrap .ok-row{background:var(--c-basic-bg);}
+.def-list{display:flex;flex-direction:column;gap:8px;margin:14px 0;}
+.def-item{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px 16px;}
+.def-item dt{font-weight:800;color:var(--text);font-size:13.5px;margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+.def-item dt::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;}
+.def-item dd{color:var(--text-soft);font-size:13.5px;line-height:1.6;margin:0;padding-left:11px;}
+.minimum-card{background:linear-gradient(135deg,var(--surface-soft) 0%,var(--accent-soft) 100%);border:1px solid var(--accent-line);border-radius:var(--r-lg);padding:20px 22px;margin:8px 0 28px;box-shadow:var(--sh-sm);position:relative;overflow:hidden;}
+@media(min-width:768px){.minimum-card{padding:28px 34px;margin-bottom:36px;}}
+.minimum-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:var(--accent);}
+.minimum-card h3{color:var(--accent);margin:0 0 16px;font-size:16px;letter-spacing:0.2px;display:flex;align-items:center;gap:10px;}
+.minimum-card h3::before{content:'★';font-size:16px;}
+.minimum-card ol{margin:0;padding-left:0;list-style:none;counter-reset:min-list;}
+.minimum-card li{counter-increment:min-list;padding-left:36px;position:relative;margin-bottom:12px;font-size:14px;line-height:1.6;}
+.minimum-card li::before{content:counter(min-list);position:absolute;left:0;top:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--surface);color:var(--accent);border:2px solid var(--accent-line);border-radius:50%;font-size:12px;font-weight:800;}
+.minimum-card li:last-child{margin-bottom:0;}
+.level-badge{display:inline-block;font-size:9.5px;font-weight:800;text-transform:uppercase;padding:2px 9px;border-radius:12px;vertical-align:middle;letter-spacing:0.5px;line-height:1.6;margin-left:8px;}
+.level-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.level-understand{background:var(--c-understand-bg);color:var(--c-understand);}
+.level-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.level-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.level-new{background:var(--c-new-bg);color:var(--c-new);}
+.rule-box{background:var(--c-understand-bg);border:1px solid var(--c-understand-line);border-radius:var(--r-md);padding:14px 18px;margin:14px 0;font-size:14px;line-height:1.65;}
+.rule-box b{color:var(--c-understand);}
+.step-flow{background:var(--text);color:#fff;padding:16px 18px;border-radius:var(--r-md);font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:12.5px;line-height:1.9;margin:14px 0;overflow-x:auto;white-space:pre;}
+@media(min-width:768px){.step-flow{font-size:13.5px;padding:16px 20px;}}
+.footer{margin-top:56px;padding-top:24px;border-top:2px solid var(--border);text-align:center;font-size:12.5px;color:var(--text-muted);letter-spacing:0.2px;}
+.footer p{margin-bottom:4px;}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:6px;border:2px solid var(--bg);}
+::-webkit-scrollbar-thumb:hover{background:var(--text-muted);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.bottom-nav{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:1100;width:min(700px,calc(100vw - 24px));font-size:.78rem;}
+.bottom-nav__toggle{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;padding:8px 14px;border:1px solid var(--border-strong);border-radius:999px;background:rgba(255,255,255,.97);color:var(--text-soft);font:700 .72rem inherit;box-shadow:0 5px 18px rgba(15,23,42,.14);cursor:pointer;backdrop-filter:blur(10px);font-family:inherit;}
+.bottom-nav__panel{display:none;margin-bottom:7px;padding:10px;border:1px solid var(--border-strong);border-radius:14px;background:rgba(255,255,255,.98);box-shadow:0 10px 28px rgba(15,23,42,.16);backdrop-filter:blur(12px);}
+.bottom-nav.is-open .bottom-nav__panel{display:block;}
+.bottom-nav__primary{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.bottom-nav a,.bottom-nav button.nav-more{min-height:36px;display:flex;align-items:center;justify-content:center;padding:6px 8px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--text-soft);text-decoration:none;font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.bottom-nav a:hover,.bottom-nav button.nav-more:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+@media(max-width:420px){
+  .bottom-nav{font-size:.7rem;width:calc(100vw - 12px);}
+  .bottom-nav a,.bottom-nav button.nav-more{padding:6px 4px;font-size:.65rem;}
+}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
+.widget{background:var(--surface);border:2px solid var(--border);border-radius:var(--r-md);padding:14px;margin:14px 0;box-shadow:var(--sh-sm);}
+@media(min-width:768px){.widget{padding:22px 26px;margin:20px 0;border-radius:var(--r-lg);}}
+.widget h4{margin:0 0 8px;color:var(--text);font-size:15px;font-weight:800;}
+@media(min-width:768px){.widget h4{font-size:16px;}}
+.widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
+.bld-pool{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.bld-pool button{padding:6px 12px;border:1px solid var(--border);border-radius:20px;background:#fff;font:600 0.8rem inherit;cursor:pointer;font-family:inherit;color:var(--text);}
+.bld-pool button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bld-workspace{min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;}
+.bld-feedback,.re-result,.st-feedback,.ch-feedback{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;line-height:1.5;}
+.bld-feedback.ok,.re-result.ok,.st-feedback.ok,.ch-feedback.ok{background:var(--c-basic-bg);color:var(--c-basic);border:1px solid var(--c-basic-line);}
+.bld-feedback.bad,.re-result.bad,.st-feedback.bad,.ch-feedback.bad{background:var(--c-error-bg);color:var(--c-error);border:1px solid var(--c-error-line);}
+.bld-feedback.info,.re-result.info,.st-feedback.info,.ch-feedback.info{background:var(--c-understand-bg);color:var(--c-understand);border:1px solid var(--c-understand-line);}
+.bld-feedback.warn,.re-result.warn,.st-feedback.warn,.ch-feedback.warn{background:var(--c-warn-bg);color:var(--c-warn);border:1px solid var(--c-warn-line);}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);color:var(--text);font-family:inherit;}
+.btn:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent);}
+.btn-primary:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+.btn-sm{padding:6px 10px;font-size:12px;}
+.flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}
+@media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--border);border-radius:var(--r-md);background:#fff;color:var(--text);font:inherit;text-align:center;cursor:pointer;box-shadow:var(--sh-sm);transition:all 0.2s var(--ease);position:relative;font-family:inherit;}
+.flashcard:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-3px);box-shadow:var(--sh-md);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:90px;}
+.flashcard .front{font-weight:700;font-size:14.5px;line-height:1.5;}
+.flashcard .back{display:none;color:var(--text-soft);font-size:13.5px;line-height:1.6;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:8px;right:8px;font-size:9px;text-transform:uppercase;background:var(--surface-soft);padding:2px 8px;border-radius:10px;color:var(--text-muted);font-weight:800;letter-spacing:0.4px;}
+.flashcard .card-tag.tag-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.flashcard .card-tag.tag-error{background:var(--c-error-bg);color:var(--c-error);}
+.flashcard .card-tag.tag-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.flashcard .card-tag.tag-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.checklist{background:#fff;border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.checklist h4{color:var(--c-basic);margin:0 0 12px;font-size:15px;}
+.checklist ul{list-style:none;padding-left:0;margin:0;}
+.checklist li{padding:7px 0;font-size:13.5px;border-bottom:1px dashed var(--c-basic-line);display:flex;align-items:flex-start;gap:10px;line-height:1.55;}
+.checklist li:last-child{border-bottom:none;}
+.checklist li::before{content:'☐';color:var(--c-basic);font-weight:700;font-size:1.15rem;flex-shrink:0;line-height:1.2;}
+.core-path{background:linear-gradient(135deg,var(--c-basic-bg) 0%,#dcefe2 100%);border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:800;color:var(--c-basic);font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.core-path .cp-title::before{content:'▶';font-size:12px;}
+.core-path ol{margin:0;padding-left:22px;}
+.core-path li{margin-bottom:6px;font-size:13.5px;line-height:1.6;}
+.audit-panel{background:var(--surface-soft);border:2px solid var(--border-strong);border-radius:var(--r-lg);padding:16px 18px;margin:16px 0;}
+.audit-panel h4{margin:0 0 12px;color:var(--text);}
+.audit-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px;}
+@media(min-width:600px){.audit-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}}
+.audit-item{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:10px 12px;font-size:12.5px;line-height:1.55;}
+.mini-note{font-size:12.5px;color:var(--text-muted);font-style:italic;margin-top:8px;line-height:1.55;}
+.layer-legend{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:12px 14px;margin:12px 0;display:grid;grid-template-columns:1fr;gap:8px 18px;}
+@media(min-width:600px){.layer-legend{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;}}
+.layer-legend .layer-row{display:flex;gap:10px;align-items:center;font-size:12.5px;line-height:1.5;}
+.layer-legend .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.e8{background:var(--c-basic);}
+.layer-legend .dot.understand{background:var(--c-understand);}
+.layer-legend .dot.extra{background:var(--c-extra);}
+.layer-legend .dot.contest{background:var(--c-warn);}
+.klinika-table td.col-blad{color:var(--c-error);font-weight:700;}
+.klinika-table td.col-blad::before{content:'✕ ';font-weight:900;margin-right:4px;color:var(--c-error);}
+.klinika-table td.col-ok{color:var(--c-basic);font-weight:700;}
+.klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}
+.map-card{position:relative;}
+.map-expand-btn{position:absolute;top:10px;right:10px;z-index:3;padding:6px 12px;border:1px solid var(--accent-line);background:rgba(255,255,255,0.95);color:var(--accent);border-radius:var(--r-sm);font-size:12px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:var(--sh-sm);transition:all 0.15s var(--ease);}
+.map-expand-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.map-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(26,35,50,0.85);backdrop-filter:blur(6px);}
+.map-overlay.is-open{display:block;}
+.map-overlay-inner{position:absolute;inset:12px;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-xl);}
+.map-overlay-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface-soft);gap:8px;flex-wrap:wrap;}
+.map-overlay-title{font-weight:800;font-size:14px;color:var(--text);}
+.map-overlay-actions{display:flex;gap:6px;}
+.map-overlay-actions button{padding:6px 12px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;color:var(--text-soft);transition:all 0.15s var(--ease);}
+.map-overlay-actions button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.map-overlay-actions .map-close{background:var(--c-error);color:#fff;border-color:var(--c-error);}
+.map-overlay-canvas{flex:1;overflow:hidden;position:relative;background:#fff;cursor:grab;touch-action:none;}
+.map-overlay-canvas svg{display:block;position:absolute;top:0;left:0;transform-origin:0 0;}
+@media print{
+.fab,.toc-wrapper,.toc-overlay,.header-wrapper,.bottom-nav,.resume-dropdown,.map-overlay,.map-expand-btn{display:none !important;}
+body{padding:0;background:#fff;}
+.container{box-shadow:none;border:none;padding:0;max-width:100%;}
+details.answer{page-break-inside:avoid;}
+details.answer > *:not(summary){display:block !important;}
+details.answer summary{display:none;}
+.card{page-break-inside:avoid;}
+.widget{page-break-inside:avoid;}
+}
+@media (prefers-reduced-motion: reduce){
+*{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+html{scroll-behavior:auto;}
+}
+html,body{max-width:100%;overflow-x:hidden;}
+.table-scroll-hint{display:none;align-items:center;justify-content:space-between;gap:8px;padding:7px 11px;margin-top:0;margin-bottom:8px;border:1px solid var(--border);border-bottom:0;border-radius:var(--r-sm) var(--r-sm) 0 0;background:var(--surface-soft);color:var(--text-muted);font-size:11px;font-weight:700;}
+.table-wrap.is-scrollable + .table-scroll-hint{display:flex;}
+.table-scroll-hint .scroll-arrow{font-size:13px;letter-spacing:2px;color:var(--accent);}
+.timeline-anim{border-color:var(--c-understand-line);}
+.ta-stage{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 14px;min-height:280px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.ta-scene{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;animation:taFade 0.6s ease-out;width:100%;}
+@keyframes taFade{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.ta-scene .ta-year{font-size:1.7rem;font-weight:800;color:var(--accent);font-family:'JetBrains Mono',monospace;letter-spacing:1px;}
+.ta-scene .ta-who{font-size:1.05rem;font-weight:800;color:var(--text);}
+.ta-scene .ta-desc{font-size:13.5px;color:var(--text-soft);max-width:600px;line-height:1.65;}
+.ta-dots{display:flex;justify-content:center;gap:8px;margin:14px 0 8px;}
+.ta-dot{width:12px;height:12px;border-radius:50%;background:var(--border-strong);border:2px solid transparent;cursor:pointer;padding:0;transition:all 0.2s var(--ease);}
+.ta-dot.active{background:var(--accent);transform:scale(1.25);box-shadow:0 0 0 3px var(--accent-glow);}
+.ta-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;}
+.ta-nav{padding:8px 14px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-weight:700;color:var(--text-soft);cursor:pointer;font-size:12.5px;transition:all 0.15s var(--ease);}
+.ta-nav:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.ta-progress{font-size:12.5px;color:var(--text-muted);font-weight:700;font-family:'JetBrains Mono',monospace;}
+.eq-player{background:linear-gradient(180deg,#f8fafc,#eef6f5);border:2px solid var(--accent-line);border-radius:var(--r-lg);padding:16px 18px;margin:14px 0;}
+.eq-stage{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.15rem;padding:12px;background:#fff;border-radius:var(--r-md);border:1px solid var(--border);}
+.eq-term{display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border);opacity:0;}
+.eq-term.show{opacity:1;animation:reaction-flow 0.7s ease-out;}
+.eq-term.reactant{background:#e0f2fe;border-color:#7dd3fc;color:#0c4a6e;}
+.eq-term.product{background:#dcfce7;border-color:#86efac;color:#14532d;}
+.eq-arrow{opacity:0;color:var(--accent);font-size:1.4rem;}
+.eq-arrow.show{opacity:1;}
+.eq-balance{margin-top:10px;font-size:13px;color:var(--text-soft);display:none;}
+.eq-balance.show{display:block;}
+@keyframes reaction-flow{0%{opacity:.25;transform:scale(.92)}55%{opacity:1}100%{opacity:1;transform:scale(1)}}
+.ion-assembly{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;padding:18px 12px;background:#fff;border:1px solid var(--border);border-radius:var(--r-md);margin:10px 0;}
+.ion-chip{padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid var(--border);}
+.ion-chip.cation{background:#e0f2fe;border-color:#38bdf8;color:#0c4a6e;}
+.ion-chip.anion{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.ion-chip.product{background:#dcfce7;border-color:#4ade80;color:#14532d;}
+.ion-plus,.ion-join{font-size:1.4rem;font-weight:800;color:var(--text-muted);}
+.hero{max-width:900px;margin:0 auto 22px;padding:26px;border:1px solid var(--border);border-radius:var(--r-xl);background:linear-gradient(135deg,#fff,var(--accent-soft));box-shadow:var(--sh-md);}
+.hero h1{font-size:clamp(32px,6vw,52px);margin:4px 0 8px;}
+.hero-kicker{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--accent);text-transform:uppercase;}
+.lead{font-size:16px;color:var(--text-soft);max-width:720px;}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;}
+.page{max-width:900px;margin:0 auto;}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+@media(max-width:720px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px;}
+.metric-grid>div,.result-card,.step-card{padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);}
+.metric-grid b{display:block;font-size:10px;text-transform:uppercase;color:var(--text-muted);}
+.metric-grid strong{display:block;margin-top:3px;}
+@media(max-width:700px){.metric-grid{grid-template-columns:1fr;}}
+.controls,.button-grid{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;}
+.controls button,.button-grid button,.quiz-opt{padding:8px 12px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;cursor:pointer;}
+.particle-stage{height:120px;display:flex;align-items:center;justify-content:center;gap:70px;border:1px dashed var(--border-strong);border-radius:10px;margin-top:12px;}
+.particle{font-size:30px;font-weight:800;}
+.p-h3o{color:var(--accent);}
+.p-cl{color:#b83a45;}
+.ph-scale{display:flex;justify-content:space-between;margin-top:6px;font:700 11px 'JetBrains Mono',monospace;}
+.buffer-tank{height:28px;border:1px solid var(--border-strong);border-radius:999px;overflow:hidden;margin:14px 0;background:var(--surface-soft);}
+#bufferFill{height:100%;width:100%;background:var(--accent);transition:width .2s;}
+.quiz-wrap{margin:16px 0;}
+.quiz-q{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:14px 16px;margin-bottom:12px;}
+.quiz-q h5{margin:0 0 10px;font-size:14.5px;color:var(--text);text-transform:none;letter-spacing:0;line-height:1.45;}
+.quiz-q .q-tag{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:10px;margin-bottom:8px;background:var(--surface-soft);color:var(--text-muted);}
+.quiz-opts{display:flex;flex-direction:column;gap:8px;}
+.quiz-opt{display:block;width:100%;text-align:left;padding:10px 12px;border:2px solid var(--border);border-radius:var(--r-sm);background:#fff;font:inherit;font-size:13.5px;cursor:pointer;transition:all 0.15s var(--ease);color:var(--text);}
+.quiz-opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft);}
+.quiz-opt.correct{border-color:var(--c-basic);background:var(--c-basic-bg);color:var(--c-basic);font-weight:700;}
+.quiz-opt.wrong{border-color:var(--c-error);background:var(--c-error-bg);color:var(--c-error);}
+.quiz-opt:disabled{cursor:default;opacity:0.95;}
+.quiz-fb{margin-top:8px;font-size:13px;line-height:1.5;display:none;padding:8px 10px;border-radius:var(--r-sm);}
+.quiz-fb.show{display:block;}
+.quiz-fb.ok{background:var(--c-basic-bg);color:var(--c-basic);}
+.quiz-fb.bad{background:var(--c-error-bg);color:var(--c-error);}
+.quiz-score{text-align:center;padding:14px;background:var(--surface-soft);border-radius:var(--r-md);margin-top:16px;font-weight:800;color:var(--accent);display:none;}
+.quiz-score.show{display:block;}
+.lab-bridge{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 28px;padding:14px 16px;border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);background:linear-gradient(135deg,var(--surface-soft),var(--accent-soft));}
+.lab-bridge strong{display:block;color:var(--accent-dark);}
+.lab-bridge span{display:block;margin-top:3px;color:var(--text-soft);font-size:13px;}
+.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;}
+.lab-bridge-btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
+@media(max-width:600px){.lab-bridge{align-items:flex-start;flex-direction:column;}.lab-bridge-btn{width:100%;text-align:center;}}
+.exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}
+.exp-card h5{margin:0 0 10px;color:var(--c-basic);font-size:14px;text-transform:none;letter-spacing:0;}
+.exp-grid{display:grid;grid-template-columns:1fr;gap:6px;font-size:13.5px;line-height:1.55;}
+@media(min-width:600px){.exp-grid{grid-template-columns:110px 1fr;}}
+.exp-grid b{color:var(--text-soft);font-size:11px;text-transform:uppercase;letter-spacing:0.4px;}
+
+.js-reveal .card:not(.in),.js-reveal .widget:not(.in){opacity:0;transform:translateY(14px)}
+.js-reveal .card,.js-reveal .widget{transition:opacity .55s var(--ease),transform .55s var(--ease)}
+
+
+.ion-svg{width:100%;height:auto;display:block;background:radial-gradient(ellipse at 50% 40%,#fff,var(--surface-soft));border:1px solid var(--border);border-radius:var(--r-md);margin-top:10px}
+.ion-svg .mv{transition:transform .9s cubic-bezier(.65,0,.35,1);transform-box:fill-box}
+.ion-svg text{font-family:'JetBrains Mono',monospace;font-weight:800;text-anchor:middle;dominant-baseline:central}
+.ion-svg .fade{opacity:0;transition:opacity .6s ease .35s}
+.ion-svg[data-s="1"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="1"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="1"] .d1,.ion-svg[data-s="2"] .d1{opacity:1}
+.ion-svg[data-s="2"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="2"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="2"] .proton{transform:translate(120px,-40px)}
+.ion-svg[data-s="2"] .arrow{opacity:1}
+.ion-svg[data-s="3"] .g-hcl{transform:translateX(10px)}
+.ion-svg[data-s="3"] .g-w{transform:translateX(-10px)}
+.ion-svg[data-s="3"] .proton{transform:translate(230px,-38px)}
+.ion-svg[data-s="3"] .d3{opacity:1}
+.ion-svg[data-s="3"] .glow{animation:ionGlow 1.6s ease-in-out infinite}
+@keyframes ionGlow{0%,100%{filter:drop-shadow(0 0 2px rgba(13,104,104,.3))}50%{filter:drop-shadow(0 0 10px rgba(13,104,104,.8))}}
+
+
+.ph-bar{position:relative;height:18px;border-radius:999px;margin:10px 0 4px;border:1px solid var(--border-strong);
+background:linear-gradient(90deg,#e5262e 0%,#ef5a28 14%,#f6a21e 28%,#d7d93a 43%,#5cb85c 50%,#21a89a 57%,#2f7fc1 71%,#4a4bb5 86%,#6b2d8f 100%)}
+.ph-marker{position:absolute;top:-6px;width:0;height:0;left:0;transform:translateX(-50%);transition:left .35s var(--ease)}
+.ph-marker::before{content:'';position:absolute;left:-7px;top:0;border:7px solid transparent;border-top:10px solid var(--text)}
+.ph-marker::after{content:attr(data-v);position:absolute;left:0;top:-22px;transform:translateX(-50%);background:var(--text);color:#fff;font:800 11px 'JetBrains Mono',monospace;padding:2px 6px;border-radius:5px;white-space:nowrap}
+.ph-flask{display:inline-block;width:22px;height:22px;border-radius:0 0 8px 8px;border:2px solid var(--text-soft);vertical-align:middle;margin-right:6px;transition:background .35s}
+
+
+.titr-wrap{position:relative}
+#titrationCanvas{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--r-md);background:#fff}
+.titr-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.titr-row input[type=range]{flex:1 1 200px}
+.titr-flask{width:34px;height:42px;border:2px solid var(--text-soft);border-radius:2px 2px 12px 12px;transition:background .3s;flex-shrink:0;position:relative}
+.titr-flask::after{content:'';position:absolute;left:-2px;right:-2px;top:-8px;height:6px;border:2px solid var(--text-soft);border-bottom:0;border-radius:3px 3px 0 0}
+
+
+.buffer-tank{position:relative;height:34px}
+#bufferFill{transition:width .4s var(--ease),background .4s;background-size:28px 28px;background-image:linear-gradient(45deg,rgba(255,255,255,.22) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.22) 75%,transparent 75%)}
+.buffer-tank.pulse{animation:bufPulse .45s ease}
+.buffer-tank.dead{animation:bufDead .5s ease 2}
+@keyframes bufPulse{50%{transform:scale(1.02);box-shadow:0 0 0 4px var(--accent-glow)}}
+@keyframes bufDead{50%{box-shadow:0 0 0 4px rgba(184,58,69,.35)}}
+
+
+.rx-stage{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:12px 0;padding:14px;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md)}
+.rx-beaker{position:relative;width:120px;height:150px;border:3px solid var(--text-soft);border-top:0;border-radius:0 0 18px 18px;background:rgba(255,255,255,.55);overflow:visible;flex-shrink:0}
+.rx-liquid{position:absolute;left:0;right:0;bottom:0;height:100px;border-radius:0 0 14px 14px;background:rgba(220,235,240,.65);transition:background 2.2s ease}
+.rx-solid{position:absolute;left:36px;bottom:2px;width:48px;height:24px;border-radius:40% 40% 8px 8px;opacity:0;transition:height 3.5s ease,opacity .5s,transform 3.5s ease}
+.rx-bubbles,.rx-precip,.rx-fumes{position:absolute;left:0;right:0;bottom:0;height:150px;pointer-events:none;overflow:hidden}
+.rx-fumes{overflow:visible;bottom:100px;height:70px}
+.rx-b{position:absolute;bottom:14px;border-radius:50%;background:rgba(255,255,255,.85);border:1px solid rgba(13,104,104,.45);animation:rxRise 2.2s ease-in forwards}
+@keyframes rxRise{to{transform:translate(var(--dx,0),-92px);opacity:0}}
+.rx-p{position:absolute;top:50px;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #cbd5e1;animation:rxFall 2.4s ease-in forwards}
+@keyframes rxFall{to{transform:translateY(90px)}}
+.rx-cloud{position:absolute;bottom:0;left:6px;right:6px;height:0;background:#fff;border-radius:10px 10px 0 0;box-shadow:0 0 0 1px #e2e8f0;transition:height 4s ease;opacity:.95}
+.rx-f{position:absolute;bottom:0;width:26px;height:26px;border-radius:50%;background:rgba(150,75,20,.55);filter:blur(7px);animation:rxFume 3s ease-out forwards}
+@keyframes rxFume{to{transform:translate(var(--dx,0),-70px) scale(2.2);opacity:0}}
+
+
+.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.rx-label{flex:1 1 200px;font-size:13px;color:var(--text-soft);line-height:1.5}
+.rx-label b{color:var(--text);font-family:'JetBrains Mono',monospace}
+@media print{.js-reveal .card,.js-reveal .widget{opacity:1!important;transform:none!important}}
+
+
+/* ulepszenia.css — warstwa wspólna nad baza.css: pasek lekcji, postęp czytania, spis z podświetleniem,
+   tryb ciemny, komponenty wspólne (mity, drzewo, cytat, dialog, słówka, figura), druk, dostępność.
+   Kolejność w lekcji: baza.css → ulepszenia.css → motywy/<przedmiot>.css. Edytuj tylko tutaj. */
+
+:root{--header-h:52px;--serif:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Charter,Georgia,serif}
+
+/* ---------- pasek lekcji (zamiast nagłówka aplikacji) ---------- */
+.lk-bar{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 12px;
+  background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--border)}
+.lk-subj{flex:none;display:inline-flex;align-items:center;gap:7px;font:800 12.5px/1 Inter,system-ui,sans-serif;color:var(--accent);text-decoration:none;
+  padding:6px 10px 6px 8px;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+.lk-subj i{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+.lk-title{flex:1;min-width:0;font:600 13px/1.25 Inter,system-ui,sans-serif;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lk-btn{flex:none;min-width:36px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);background:var(--surface);
+  color:var(--text);border-radius:9px;padding:0 10px;font:700 12.5px Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+.lk-btn:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.lk-prog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
+@media (max-width:520px){.lk-title{display:none}.lk-bar{justify-content:space-between}}
+
+/* ---------- nagłówek lekcji ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+.hero::after{content:"";position:absolute;inset:-10% -6% -10% 52%;z-index:-1;opacity:.12;pointer-events:none;background:var(--motyw-wzor,none) right center/auto 100% repeat-y}
+.hero h1{text-wrap:balance}
+.hero-kicker{color:var(--accent);text-transform:none;letter-spacing:0;font-size:13px}
+.page{padding:0 16px}
+.lk-btn svg{width:16px;height:16px;display:block}
+.lk-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:12.5px;color:var(--text-muted)}
+.lk-meta b{color:var(--text-soft);font-weight:700}
+
+/* ---------- spis treści: aktywna sekcja ---------- */
+@media (min-width:800px){.toc-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));column-gap:12px}}
+.toc-link.on{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);font-weight:700}
+section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
+
+/* ---------- komponenty wspólne ---------- */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:12px 0}
+.myth-head{grid-column:1/-1;font-weight:800;font-size:14px}
+.myth{border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow:hidden}
+.myth p{margin:0;padding:9px 12px;font-size:13.5px;line-height:1.5}
+.myth p span{display:block;font:800 11px Inter,system-ui;margin-bottom:2px}
+.myth-x{background:var(--c-error-bg)}.myth-x span{color:var(--c-error)}.myth-ok span{color:var(--c-basic)}
+
+.lk-tree{margin:12px 0;font-size:14px;overflow-x:auto}
+.lk-tree ul{list-style:none;margin:0;padding-left:18px}.lk-tree>ul{padding-left:0}
+.lk-tree li{position:relative;padding:3px 0 3px 14px}
+.lk-tree ul ul li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--accent-line)}
+.lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
+.lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
+.lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+
+/* cytat z tekstu (lektura, źródło, wypowiedź) */
+.lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
+.lk-quote blockquote{margin:0;font:400 17px/1.65 var(--serif);color:var(--text)}
+.lk-quote blockquote p{margin:0 0 6px;color:inherit}
+.lk-quote figcaption{margin-top:6px;font-size:12.5px;color:var(--text-muted)}
+
+/* dialog (role A/B, rozmowa, scenka) */
+.lk-dialog{margin:14px 0;display:flex;flex-direction:column;gap:8px}
+.lk-line{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.lk-who{min-width:30px;height:30px;padding:0 8px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font:800 12px Inter,system-ui;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line)}
+.lk-line.b .lk-who{background:var(--surface-soft);color:var(--text-soft);border-color:var(--border)}
+.lk-say{padding:8px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font-size:14.5px;line-height:1.55}
+.lk-say small{display:block;color:var(--text-muted);font-size:12.5px;margin-top:2px}
+
+/* słówka: wyraz — znaczenie — przykład */
+.lk-vocab{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.lk-vocab th{text-align:left;font-size:12px;color:var(--text-muted);font-weight:700;padding:6px 10px;border-bottom:2px solid var(--border)}
+.lk-vocab td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+.lk-vocab td:first-child{font-weight:800;color:var(--accent);white-space:nowrap}
+.lk-vocab td:last-child{color:var(--text-soft);font-style:italic}
+@media (max-width:560px){.lk-vocab thead{display:none}.lk-vocab tr{display:block;padding:8px 0;border-bottom:1px solid var(--border)}
+  .lk-vocab td{display:block;border:0;padding:1px 4px}}
+
+/* figura z biblioteki grafik przedmiotu */
+.lk-fig{margin:16px 0;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);overflow:hidden}
+.lk-fig figcaption{padding:9px 14px;border-top:1px solid var(--border);background:var(--surface-soft);font-size:13px;line-height:1.5;color:var(--text-soft)}
+.lk-fig figcaption b{color:var(--text);margin-right:4px}
+.lk-fig-body{padding:12px}
+.lk-fig svg{display:block;width:100%;height:auto}
+
+/* z chemii (lekcja.css): treści akademickie, plakietki */
+details.adv{border:1px dashed var(--c-warn-line,#eed8a8);border-radius:10px;background:var(--surface-soft,#f6f8fa);margin:10px 0;padding:0 12px}details.adv>summary{cursor:pointer;font-weight:700;color:var(--c-warn,#b06f1c);padding:9px 0;list-style:none}details.adv>summary::-webkit-details-marker{display:none}details.adv>summary::before{content:"▸ "}details.adv[open]>summary::before{content:"▾ "}.adv-tag{font-weight:600;font-size:11px;opacity:.75;margin-left:6px}.adv-body{padding:0 0 10px;font-size:13.5px;line-height:1.6}.adv-body table{font-size:12.5px}.adv-toggle{margin-top:10px;border:1px solid var(--c-warn-line,#eed8a8);background:var(--c-warn-bg,#fcf4e6);color:var(--c-warn,#b06f1c);border-radius:999px;padding:6px 12px;font:700 12px Inter,system-ui,sans-serif;cursor:pointer}.bio-tag{display:inline-block;font:800 10px Inter,system-ui;letter-spacing:.04em;padding:2px 7px;border-radius:99px;background:rgba(46,125,79,.12);color:#2e7d4f;margin-left:6px;vertical-align:middle}.v15{display:inline-block;font:800 9.5px Inter,system-ui;padding:1px 6px;border-radius:99px;background:rgba(13,125,125,.12);color:#0d7d7d;margin-left:6px;vertical-align:middle}@media print{details.adv{display:block}details.adv>.adv-body{display:block}}
+/* z chemii (lekcja.css): telefon, tabele */
+.exp-card{min-width:0;max-width:100%;box-sizing:border-box}.exp-grid>*{min-width:0;overflow-wrap:anywhere}
+@media (max-width:600px){.exp-grid{grid-template-columns:minmax(0,1fr)!important}.exp-grid>b{margin-top:4px}}
+.table-wrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+
+/* klinika błędów (::: klinika) — tabela, na telefonie karty */
+.klinika-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden}
+.klinika-table th{text-align:left;padding:9px 12px;background:var(--surface-soft);color:var(--text-soft);font-size:12px;font-weight:800;border-bottom:1px solid var(--border)}
+.klinika-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.klinika-table tr:last-child td{border-bottom:0}
+@media (max-width:600px){.klinika-table thead{display:none}.klinika-table tr{display:block;padding:8px 12px;border-bottom:1px solid var(--border)}
+  .klinika-table td{display:block;border:0;padding:2px 0}.klinika-table td:not(.col-blad):not(.col-ok){color:var(--text-soft)}}
+
+.lk-pre{margin:12px 0;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-soft);overflow-x:auto;font:12.5px/1.55 ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;color:var(--text-soft);white-space:pre}
+.lk-pre code{font:inherit;background:none;padding:0;color:inherit}
+.lk-hr{border:0;border-top:1px solid var(--border);margin:28px 0}
+
+/* ---------- dostępność ---------- */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;z-index:60;background:var(--surface);color:var(--accent);padding:8px 12px;border-radius:8px}
+.skip-link:focus{left:8px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- tryb ciemny: automatycznie albo przyciskiem (data-theme) ---------- */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme=dark]{
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}
+/* elementy bazy z białym tłem na sztywno */
+html[data-ciemny] :is(.flashcard,.checklist,.audit-item,.layer-legend,.quiz-q,.quiz-opt,.btn,.controls button,.eq-stage,.ion-assembly,.bld-workspace,.bld-pool button,.resume-dropdown,.ta-nav){background:var(--surface);color:var(--text)}
+html[data-ciemny] .hero{background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.active,.step-flow){color:var(--bg)}
+@media (max-width:600px){.hero::after{opacity:.07}}
+
+/* ---------- druk ---------- */
+@media print{
+  .lk-bar,.adv-toggle,.toc-item,.fab,.bottom-nav{display:none!important}
+  body{padding:0;background:#fff;color:#000}
+  .hero::after{display:none}.hero{background:none;box-shadow:none}
+  details.adv,details.answer{display:block}details>*{display:block}
+  .card,.minimum-card,.lk-fig,.myth,.quiz-q{break-inside:avoid;box-shadow:none}
+  a{color:inherit;text-decoration:none}
+}
+
+/* === Dopracowanie czytelności (2026-10-11; z wersji „ulepszonej” U03 użytkownika, uogólnione na wszystkie przedmioty, zgodne z trybem ciemnym) === */
+body{line-height:1.74}
+main{isolation:isolate}
+.hero{border-color:var(--accent-line)}
+.hero::before{content:"";position:absolute;right:-42px;top:-56px;width:180px;height:180px;z-index:-1;pointer-events:none;
+ border:1px solid var(--accent-line);border-radius:50%;opacity:.45;
+ box-shadow:0 0 0 22px var(--accent-glow),0 0 0 44px var(--accent-glow)}
+.part-heading{padding:0 0 12px;border-bottom:1px solid var(--border);align-items:flex-start}
+.part-num{margin-top:1px}
+section[id]{scroll-margin-top:calc(var(--header-h,56px) + 20px)}
+section p{max-width:78ch}
+section ul,section ol{padding-left:1.35rem}
+.card,.exp-card,.widget,.table-wrap{box-shadow:0 2px 8px rgba(24,49,59,.045)}
+.table-wrap{max-width:100%}
+.table-wrap table{line-height:1.55}
+.table-wrap td strong{color:var(--text)}
+.table-wrap tbody tr:nth-child(even) td{background:var(--surface-soft)}
+.table-wrap tbody tr:hover td{background:var(--accent-soft)}
+.mini-note{max-width:80ch}
+:is(button,a,summary,[tabindex]):focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:520px){.hero{padding:20px 16px}.part-heading{font-size:19px;gap:11px}
+ .table-wrap table{font-size:12.5px}.table-wrap th,.table-wrap td{padding:8px 9px}}
+@media(hover:none){.card:hover,.flashcard:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media print{.hero::before{display:none}.card,.exp-card,.table-wrap{break-inside:avoid;box-shadow:none}}
+
+/* fiszki: część ukryta do rozwinięcia (lekcja.js); przy druku — wszystkie */
+.flashcard[hidden]{display:none!important}
+.fz-more{display:block;width:100%;margin:-6px 0 18px;padding:12px 16px;border:2px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent;color:var(--text,#1d2a30);font-family:inherit;font-weight:600;font-size:15px;line-height:1.3;cursor:pointer;text-align:center}
+.fz-more:hover,.fz-more:focus-visible{background:var(--surface-2,rgba(0,0,0,.04))}
+@media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
+.quiz-q[hidden]{display:none!important}
+@media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
+
+/* motyw che (Chemia) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,.15);--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 104 180%27%3E%3Cg fill=%27none%27 stroke=%27%230d6868%27 stroke-width=%273%27%3E%3Cpath d=%27M52 10l40 23v46l-40 23-40-23V33z%27/%3E%3Cpath d=%27M52 100l40 23v46l-40 23-40-23v-46z%27/%3E%3Cpath d=%27M52 22v8M92 56h8M12 56H4%27/%3E%3C/g%3E%3Cg fill=%27%230d6868%27%3E%3Ccircle cx=%2752%27 cy=%2710%27 r=%275%27/%3E%3Ccircle cx=%2792%27 cy=%2779%27 r=%275%27/%3E%3Ccircle cx=%2712%27 cy=%27123%27 r=%275%27/%3E%3C/g%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}}
+:root[data-theme=dark]{--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}
+
+/* równanie reakcji w osobnej linii: ::: div.rownanie */
+.rownanie{margin:12px 0;padding:12px 16px;border-radius:var(--r-md);background:var(--surface-soft);border:1px solid var(--border);font:600 17px/1.6 Inter,system-ui,sans-serif;text-align:center;overflow-x:auto;white-space:nowrap}
+.rownanie small{display:block;font-size:12px;font-weight:500;color:var(--text-muted);white-space:normal}
+
+/* Styl klocków laboratoryjnych (palniki, probówki, układ okresowy) — dobrany do motywu che:
+   jasna karta lekcji (--surface), akcent --accent, tekst --text. Scena z płótnem zostaje ciemna
+   (płomienie i poświaty wyglądają na ciemnym tle), reszta jak w sekcjach lekcji. */
+:root{--lab:#0e2326;--lab-tekst:var(--text,#1a2332);--lab-cisza:var(--text-muted,#8892a0);--lab-linia:var(--border,#e5e9ee)}
+.lab{background:var(--surface,#fff);color:var(--text,#1a2332);border:1px solid var(--border,#e5e9ee);border-radius:var(--r-lg,14px);padding:16px;box-shadow:var(--sh-sm,none);font-family:var(--tekst,Inter,system-ui,sans-serif)}
+.lab-pasek{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between;margin-bottom:12px}
+.lab-pasek .btn{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+.lab-cisza{color:var(--text-muted,#8892a0);font-size:14px}
+.btn{appearance:none;cursor:pointer;border:1px solid var(--accent,#0d6868);background:var(--accent,#0d6868);color:#fff;border-radius:var(--r-md,10px);padding:8px 14px;font:600 13px var(--tekst,Inter,sans-serif)}
+.btn.jasny{background:var(--surface,#fff);color:var(--accent,#0d6868)}
+.btn:hover{filter:brightness(1.08)}
+.btn:focus-visible{outline:2px solid var(--accent,#0d6868);outline-offset:2px}
+.btn[disabled]{opacity:.4;cursor:not-allowed}
+.stacje{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.st{display:flex;flex-direction:column;background:none;border:none;padding:0;min-width:0}
+.st-opis{margin-top:auto;display:flex;flex-direction:column;justify-content:flex-end}
+.st canvas,.rack canvas{display:block;width:100%;height:auto;cursor:pointer;background:var(--lab,#0e2326);border-radius:var(--r-md,10px);margin:6px 0 4px}
+.rack{margin:0 auto}
+.rack-kol{display:grid;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));gap:8px}
+.rack-ce{padding:0 6px;min-width:0;display:flex;flex-direction:column}
+.rack-ce.st-opis{justify-content:flex-end}
+.rack .wyb-gr{display:none}
+.rack .rown{font-size:14px}
+.rack-ce .btn,.st .btn{padding:6px 10px;font-size:12px}
+.st-opis{font-size:14px;color:var(--text,#1a2332)}
+.st-opis p{margin:0 0 6px}
+.rown{font:600 15px var(--naglowek,Inter,sans-serif);color:var(--text,#1a2332)}
+.obs{font-size:14px;color:var(--text-soft,#4a5568)}
+.meta{font-size:12.5px;color:var(--text-muted,#8892a0);display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-bottom:8px}
+.meta .pasek{background:var(--border,#e5e9ee);width:90px;height:8px;display:inline-block;vertical-align:middle;margin-left:6px;border-radius:99px;overflow:hidden}
+.meta .pasek i{display:block;height:100%;background:var(--accent,#0d6868)}
+.ostrz{color:var(--c-error,#b83a45);font-size:13px}
+.zak{display:flex;gap:10px;align-items:center;background:var(--c-warn-bg,#fcf4e6);border:1px solid var(--c-warn-line,#eed8a8);border-radius:var(--r-md,10px);padding:8px 10px;font-size:13px;line-height:1.35;margin:8px 0;color:var(--text,#1a2332)}
+.zak-ik{display:flex;gap:4px;flex:none}
+.el .tr{position:absolute;right:2px;bottom:2px;display:flex}
+.sz{position:relative}
+.sz .tr{position:absolute;top:2px;right:2px;display:flex}
+.tr2{display:flex;font-style:normal;margin-left:auto}
+.kol{display:flex;align-items:center;gap:10px;font-size:15px;color:var(--text,#1a2332)}
+.sw{width:20px;height:20px;border-radius:50%;flex:none;box-shadow:0 0 12px var(--glow,transparent)}
+.sw.pusty{border:2px dashed var(--border-strong,#cdd5dd)}
+.wyb-sym{position:relative;min-width:0}
+.wyb-sym>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:6px;font:700 15px var(--naglowek,Inter,sans-serif);color:var(--text,#1a2332);padding:4px 8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-sm,6px);background:var(--surface,#fff)}
+.wyb-sym>summary::-webkit-details-marker{display:none}
+.wyb-tri{display:inline-block;font-size:11px;color:var(--accent,#0d6868);transition:transform .15s}
+.wyb-sym[open] .wyb-tri{transform:rotate(90deg)}
+.wyb-lista{display:grid;gap:6px;margin:6px 0 8px;padding:8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-md,10px);background:var(--surface,#fff)}
+.wyb-g{display:block;font-size:11px;color:var(--text-muted,#8892a0);margin-bottom:3px}
+.wyb-sy{appearance:none;cursor:pointer;border:1px solid var(--border-strong,#cdd5dd);background:var(--surface-soft,#f6f8fa);color:var(--text,#1a2332);border-radius:var(--r-sm,6px);padding:4px 9px;margin:0 4px 4px 0;font:600 13px var(--naglowek,Inter,sans-serif)}
+.wyb-sy[aria-pressed="true"]{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+/* telefon: kilka stojaków obok siebie — węższy tekst, łamanie długich nazw */
+.kol{min-width:0}
+.kol b{overflow-wrap:anywhere;min-width:0}
+.st-opis{font-size:13px}
+.kol{font-size:14px}
+.stacje{gap:8px}
+.rack-kol{gap:6px}
+@media (max-width:480px){.st-opis .obs{font-size:12.5px}.st .btn,.rack-ce .btn{padding:5px 8px;font-size:12px}}
+.seria-przyciski{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+.seria-btn[aria-pressed="false"]{background:transparent;color:var(--accent,#0d6868)}
+.seria-btn[aria-pressed="true"]{background:var(--accent,#0d6868);color:#fff}
+.seria-opis{margin:0 0 10px;font-size:14px;color:var(--lab-cisza,#8892a0)}
+
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+<header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">F01 Jak myśli chemik</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<main class="page" id="main">
+<section class="hero card"><div class="hero-kicker">F01 · FUNDAMENTY · MASTER v1.1</div><h1>Jak myśli chemik</h1><p class="lead">Pierwsza lekcja bloku fundamentów: jak z pojedynczej obserwacji dojść do poprawnego modelu chemicznego i zapisu. Uczysz się odróżniać to, co widzisz, od tego, co z tego wnioskujesz, przechodzić między poziomem makro, cząsteczkowym, symbolicznym i ilościowym oraz sprawdzać, czy wyjaśnienie zgadza się z danymi.</p><div class="tag-row"><span class="level-badge level-basic">E8</span><span class="level-badge level-understand">ROZUMIENIE</span><span class="level-badge level-extra">AMBITNE (LO)</span></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#minimum">Minimum E8</a><a class="toc-link" href="#jak-pracowac">0.1. Jak pracować z lekcją</a><a class="toc-link" href="#cele">0.2. Cele lekcji i pytanie przewodnie</a><a class="toc-link" href="#kompas">0.3. Kompas — co trzeba wiedzieć wcześniej</a><a class="toc-link" href="#diagnoza">0.4. Diagnoza startowa</a><a class="toc-link" href="#wyklad">0.5. Wykład — jak myśli chemik od zera</a><a class="toc-link" href="#chemia">1. Czym zajmuje się chemia</a><a class="toc-link" href="#poziomy">2. Cztery poziomy opisu</a><a class="toc-link" href="#obserwacja">3. Obserwacja, wniosek, hipoteza</a><a class="toc-link" href="#piec-pytan">4. Pięć pytań chemika</a><a class="toc-link" href="#przyklady">5. Trzy przykłady: obserwacja → model</a><a class="toc-link" href="#jezyk">6. Język chemii: symbol, wzór, równanie</a><a class="toc-link" href="#model">7. Model to nie rzeczywistość</a><a class="toc-link" href="#poprawnosc">8. Cztery poziomy poprawności odpowiedzi</a><a class="toc-link" href="#zasady">9. Jak uczyć się chemii — 10 zasad</a><a class="toc-link" href="#protokol">9.1. Mini-protokół dobrego testu</a><a class="toc-link" href="#bhp">9.2. BHP w pracowni — sześć reguł</a><a class="toc-link" href="#doswiadczenia">10. Doświadczenia</a><a class="toc-link" href="#klinika">11. Klinika błędów</a><a class="toc-link" href="#cwiczenia">12. Ćwiczenia</a><a class="toc-link" href="#ciekawostki-plus">12.5. Ciekawostki</a><a class="toc-link" href="#olimpijska">12.6. Warstwa olimpijska — Dla olimpijczyka</a><a class="toc-link" href="#test">13. Test</a><a class="toc-link" href="#powtorka">14. Karta szybkiego powtórzenia i mapa myśli</a><a class="toc-link" href="#fiszki">15. Fiszki</a><a class="toc-link" href="#slownik">16. Słownik</a><a class="toc-link" href="#checklista">17. Checklista</a><a class="toc-link" href="#powtorki">18. System powtórek</a><a class="toc-link" href="#mosty">A. Dodatek A — mosty i co dalej</a><a class="toc-link" href="#modele">Modele silnika w tej lekcji</a></nav></details>
+<section id="minimum" class="minimum-card"><h3>Muszę umieć na E8 — 15 punktów</h3>
+<ol>
+<li><strong>Chemia</strong> bada skład, budowę, właściwości i przemiany substancji.</li>
+<li><strong>Obserwacja</strong> to to, co widzę, słyszę, czuję lub mierzę — bez przyczyny: „wydzielają się pęcherzyki gazu”.</li>
+<li><strong>Wniosek</strong> to interpretacja obserwacji: „powstaje CO₂” jest wnioskiem, który trzeba potwierdzić testem (woda wapienna mętnieje).</li>
+<li><strong>Hipoteza</strong> to sprawdzalne przypuszczenie, zapisane <strong>przed</strong> doświadczeniem.</li>
+<li><strong>Zjawisko fizyczne</strong> nie tworzy nowej substancji (topnienie lodu, rozpuszczanie soli); <strong>reakcja chemiczna</strong> tworzy nową substancję (spalanie magnezu → MgO).</li>
+<li>Rozpuszczona sól <strong>nie znika</strong> — jest w roztworze; odzyskasz ją przez odparowanie wody.</li>
+<li>Jedna zmiana wyglądu (barwa, zmętnienie) <strong>nie wystarczy</strong>, żeby uznać zjawisko za reakcję — potrzebny jest dowód nowej substancji.</li>
+<li><strong>Symbol</strong> pierwiastka ma jedną lub dwie litery (H, O, Na, Cl); <strong>wzór</strong> zapisuje skład substancji: H₂O = 2 atomy H i 1 atom O.</li>
+<li>W <strong>równaniu reakcji</strong> liczba atomów każdego pierwiastka po obu stronach jest taka sama: 2 H₂ + O₂ → 2 H₂O.</li>
+<li><strong>Model</strong> (np. atom jako kulka) to uproszczenie rzeczywistości — przydatne, ale z ograniczeniami.</li>
+<li>Umiesz oddzielić <strong>obserwację → hipotezę → test → wynik → wniosek</strong> i wskazać, który fragment jest dowodem.</li>
+<li>Umiesz powiedzieć, <strong>co zmieniasz, co obserwujesz i co utrzymujesz stałe</strong>, gdy projektujesz prosty test.</li>
+<li>Umiesz zapisać odpowiedź w schemacie <strong>twierdzenie → dowód → wyjaśnienie</strong>, zamiast podawać samą etykietę („to reakcja”, „to CO₂”).</li>
+<li>Umiesz zaznaczyć <strong>pewność i ograniczenie</strong>: „dane wspierają hipotezę” nie zawsze znaczy „udowodniono ją raz na zawsze”.</li>
+<li>Umiesz przejść w obie strony: <strong>obserwacja → model</strong> oraz <strong>model → przewidywanie → test</strong>.</li>
+</ol>
+</section>
+<div class="layer-legend">
+<div class="layer-row"><span class="dot e8"></span><span><b>E8:</b> obserwacja, wniosek, hipoteza; zjawisko fizyczne vs reakcja; symbol, wzór, równanie jako język chemii; pięć pytań chemika; doświadczenia „co naprawdę się zmieniło?”</span></div>
+<div class="layer-row"><span class="dot understand"></span><span><b>Rozumienie:</b> cztery poziomy opisu (makro, cząsteczkowy, symboliczny, ilościowy) i przechodzenie między nimi; model a rzeczywistość; cztery poziomy poprawności odpowiedzi</span></div>
+<div class="layer-row"><span class="dot extra"></span><span><b>Ambitne (LO):</b> zakres stosowalności modeli (kulki → Bohr → orbitale), reguły szkolne jako przybliżenia, wiedza proceduralna a rozumienie</span></div>
+<div class="layer-row"><span class="dot contest"></span><span><b>Ponad LO:</b> rozwijane bloki „poziom akademicki” — przycisk w nagłówku lekcji</span></div>
+</div>
+<div id="rdzen" class="core-path">
+<div class="cp-title">Rdzeń lekcji — najpierw to (ok. 30 min)</div>
+<ol>
+<li><strong><a href="#diagnoza">§0.4</a></strong> — diagnoza: spróbuj odpowiedzieć, zanim zaczniesz czytać.</li>
+<li><strong><a href="#chemia">§1</a>–<a href="#obserwacja">§3</a></strong> — czym zajmuje się chemia; obserwacja, wniosek i hipoteza.</li>
+<li><strong><a href="#piec-pytan">§4</a>–<a href="#przyklady">§5</a></strong> — pięć pytań chemika i trzy przykłady „obserwacja → model”.</li>
+<li><strong><a href="#jezyk">§6</a></strong> — symbol, wzór i równanie: jak czytać zapis na poziomie cząstek.</li>
+<li><strong><a href="#doswiadczenia">§10</a>–<a href="#klinika">§11</a></strong> — doświadczenia i najczęstsze błędy.</li>
+</ol>
+</div>
+<section id="jak-pracowac">
+<div class="part-heading"><span class="part-num">0.1</span> Jak pracować z lekcją</div>
+<div class="card card-understand">
+<ul>
+<li><strong>Najpierw próbuj, potem czytaj.</strong> Zrób diagnozę w <a href="#diagnoza">§0.4</a> — błąd przed nauką uczy więcej niż dziesięć poprawnych przykładów.</li>
+<li><strong>Mów na głos.</strong> Czytaj wzory („H-dwa-O”) i reguły („obserwacja, potem wniosek”).</li>
+<li><strong>Rysuj.</strong> Szkic zlewki, cząstek, strzałek — ręka porządkuje myśli.</li>
+<li><strong>Powtarzaj w odstępach:</strong> dziś → jutro → za 3 dni → za tydzień (<a href="#powtorki">§18</a>).</li>
+<li>Plakietki: <strong>E8</strong> — obowiązkowe; <strong>ROZUMIENIE</strong> — wyjaśnia „dlaczego”; <strong>AMBITNE</strong> — poziom LO; bloki „poziom akademicki” — dla chętnych.</li>
+</ul>
+</div>
+</section>
+<section id="cele">
+<div class="part-heading"><span class="part-num">0.2</span> Cele lekcji i pytanie przewodnie <span class="level-badge level-basic">E8</span></div>
+<div class="card card-basic">
+<span class="card-label">Po tej lekcji potrafisz</span>
+<ul>
+<li>odróżnić obserwację od wniosku i zapisać hipotezę przed doświadczeniem,</li>
+<li>rozpoznać zjawisko fizyczne i reakcję chemiczną na podstawie dowodu nowej substancji,</li>
+<li>odczytać symbol, wzór i proste równanie na poziomie cząstek,</li>
+<li>zastosować pięć pytań chemika do nowej sytuacji,</li>
+<li>zaplanować prosty test: zmienna, obserwacja/pomiar, warunki stałe i kryterium wyniku,</li>
+<li>uzasadnić wniosek dowodem zamiast samą nazwą substancji lub reakcją,</li>
+<li>(rozumienie) przejść między czterema poziomami opisu,</li>
+<li>(ambitnie) wskazać ograniczenia modelu i zaproponować przewidywanie, które odróżni dwa modele.</li>
+</ul>
+</div>
+<div class="card card-exam">
+<span class="card-label">Pytanie przewodnie</span>
+<p>Jak z pojedynczej obserwacji dojść do poprawnego modelu chemicznego i zapisu?</p>
+</div>
+<div class="card card-core">
+<span class="card-label">Model całej lekcji</span>
+<p><strong>obserwacja → hipoteza → test → wniosek → model cząstek → zapis chemiczny → sprawdzenie z danymi</strong></p>
+</div>
+</section>
+<section id="kompas">
+<div class="part-heading"><span class="part-num">0.3</span> Kompas — co trzeba wiedzieć wcześniej</div>
+<p>To pierwsza lekcja bloku F — nie wymaga wcześniejszych lekcji. Wystarczą rzeczy z przyrody i klasy 7:
+- stany skupienia (ciało stałe, ciecz, gaz) i ich zmiany,
+- że substancje są zbudowane z drobin (cząstek),
+- kilka symboli pierwiastków (H, O, C, Na, Cl, Fe).</p>
+<div class="card card-core">
+<span class="card-label">Gdzie jesteś — blok F w pięciu fazach</span>
+<p><strong>F to fundamenty: 21 lekcji, jeden łańcuch.</strong> Każda lekcja daje wynik, który jest wejściem do następnej.
+- <strong>A. Co badamy?</strong> F01 jak myśli chemik · F02 materia i substancje · F03 właściwości i rozdzielanie
+- <strong>B. Z czego to wynika?</strong> F04 atom · F05 izotopy i jony · F06 układ okresowy · F07 konfiguracja · F08 konfiguracja ↔ układ · F09 wartościowość, ładunek, stopień utlenienia
+- <strong>C. Jak powstaje struktura?</strong> F10 dlaczego atomy się łączą · F11 typy wiązań · F12 wzory · F13 wzory elektronowe · F14 geometria (LO) · F15 polarność
+- <strong>D. Jak opisujemy przemianę?</strong> F16 od obserwacji do modelu reakcji · F17 równania
+- <strong>E. Integracja:</strong> F18 dossier substancji · F19 dossier reakcji · F20 klinika błędów · F21 transfer</p>
+<p>Po bloku F: chemia nieorganiczna (N01–N08) i kolejne działy.</p>
+</div>
+</section>
+<section id="diagnoza">
+<div class="part-heading"><span class="part-num">0.4</span> Diagnoza startowa</div>
+<div class="card card-understand">
+<span class="card-label">Odpowiedz najpierw sam</span>
+<ol>
+<li>„Roztwór zmienił barwę z bezbarwnej na żółtą” — to obserwacja czy wniosek?</li>
+<li>Czy H₂O to nazwa, wzór czy model?</li>
+<li>Co oznacza symbol Cl?</li>
+<li>Kryształy soli w wodzie „zniknęły”. Czy zaszła reakcja chemiczna?</li>
+<li>Po co zapisuje się hipotezę przed doświadczeniem?</li>
+<li>Jak sprawdzić, czy model jest dobry?</li>
+<li>Uczeń mówi: „Powstał CO₂, bo były pęcherzyki”. Co w jego odpowiedzi jest obserwacją, a czego jeszcze brakuje?</li>
+<li>Chcesz sprawdzić, czy temperatura wpływa na szybkość rozpuszczania soli. Co zmieniasz, co mierzysz/obserwujesz i co powinno pozostać takie samo?</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz i interpretację</summary>
+<ol>
+<li><strong>Obserwacja</strong> — opis zmiany bez podania przyczyny.</li>
+<li><strong>Wzór</strong> — zapis składu: 2 atomy wodoru i 1 atom tlenu. Nazwa to „woda”.</li>
+<li><strong>Pierwiastek chlor</strong>; w konkretnym zapisie symbol może oznaczać jeden atom chloru.</li>
+<li><strong>Nie na podstawie samego zniknięcia kryształów.</strong> To rozpuszczanie; sól pozostaje w roztworze i można ją odzyskać przez odparowanie.</li>
+<li>Żeby przewidywanie było sformułowane <strong>przed wynikiem</strong> i można było zaplanować test, który je wesprze albo podważy.</li>
+<li>Porównać <strong>przewidywania modelu z danymi</strong>: obserwacjami, pomiarami i wynikami testów.</li>
+<li>„Pęcherzyki gazu” to obserwacja. „CO₂” to <strong>hipoteza/wniosek</strong>, który wymaga testu, np. przepuszczenia gazu przez wodę wapienną.</li>
+<li>Zmieniasz <strong>temperaturę</strong>; mierzysz np. czas rozpuszczenia; utrzymujesz takie same ilość i rodzaj soli, wielkość kryształków, objętość wody, mieszanie i naczynie. To przykład kontrolowania zmiennych.</li>
+</ol>
+<p><strong>Interpretacja:</strong> <strong>0–2/8</strong> → przejdź przez rdzeń razem z przykładami · <strong>3–5/8</strong> → rdzeń + klinika błędów · <strong>6–7/8</strong> → ćwiczenia transferowe · <strong>8/8</strong> → możesz przejść szybko do <a href="#model">§7</a>–<a href="#poprawnosc">§8</a>, ale nadal wykonaj test końcowy.</p>
+</details>
+</div>
+</section>
+<section id="wyklad">
+<div class="part-heading"><span class="part-num">0.5</span> Wykład — jak myśli chemik od zera</div>
+<div class="card card-understand">
+<span class="card-label">Wykład — jak myśli chemik od zera</span>
+<p>Chemia zaczyna się od patrzenia. Zapalasz świeczkę: wosk mięknie, knot czernieje, nad płomieniem drga gorące powietrze. Każdy to widzi — ale chemik zadaje pytania. Co się zmieniło? Czy powstała nowa substancja? Skąd się wzięła? Ta lekcja uczy właśnie takiego <strong>sposobu myślenia</strong>, bo bez niego wzory i równania będą tylko szyfrem do wykucia.</p>
+<p>Pierwsza umiejętność to odróżnienie <strong>obserwacji</strong> od <strong>wniosku</strong>. Obserwacja to to, co rejestrujesz zmysłami lub przyrządem: „ciecz zmieniła barwę na różową”, „wydzielają się pęcherzyki gazu”. Wniosek to wyjaśnienie tego, co widzisz: „powstała zasada”, „zachodzi reakcja chemiczna”. <strong>Hipoteza</strong> to przypuszczenie, które da się sprawdzić doświadczeniem. Na egzaminie ten podział wraca w każdym zadaniu doświadczalnym — kto w rubryce „obserwacje” wpisze wniosek, traci punkt.</p>
+<p>Druga umiejętność to patrzenie na to samo zjawisko na kilku <strong>poziomach opisu</strong>. Na poziomie <strong>makroskopowym</strong> opisujemy to, co widać: wrzenie wody, rdzewienie gwoździa. Na poziomie <strong>cząsteczkowym</strong> — to, czego nie widać: cząsteczki wody oddalają się od siebie, atomy żelaza łączą się z tlenem. Na poziomie <strong>symbolicznym</strong> zapisujemy to wzorami i równaniami: H₂O(c) → H₂O(g). Chemik płynnie przechodzi między tymi poziomami, a ty nauczysz się tego krok po kroku przez cały kurs.</p>
+<p>Trzecia umiejętność to praca z <strong>modelami</strong>. Atom narysowany jako kulka, cząsteczka jako „patyczki i kulki” — to modele: uproszczenia, które pomagają myśleć, ale nie są samą rzeczywistością. Dobry chemik wie, do czego model się nadaje i gdzie przestaje działać.</p>
+<p>Chemia to też <strong>język</strong>: symbol pierwiastka (Fe), wzór (H₂O), równanie reakcji (2 H₂ + O₂ → 2 H₂O). Te znaki pozwalają chemikom na całym świecie porozumieć się bez tłumacza. I wreszcie — <strong>bezpieczeństwo</strong>: myśleć jak chemik to także przewidywać zagrożenia, czytać piktogramy i wiedzieć, czego w laboratorium nie wolno robić nigdy.</p>
+</div>
+</section>
+<section id="chemia">
+<div class="part-heading"><span class="part-num">1</span> Czym zajmuje się chemia <span class="level-badge level-basic">E8</span></div>
+<p>Chemia bada <strong>skład, budowę, właściwości i przemiany</strong> substancji oraz zależności między nimi. To jedno zdanie zawiera cały kurs.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Pytanie</th><th>Co opisuje</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td><strong>Skład</strong> — z czego?</td><td>pierwiastki i ich proporcje</td><td>woda: wodór i tlen, H₂O</td></tr>
+<tr><td><strong>Budowa</strong> — jak połączone?</td><td>które atomy z którymi, w jakim kształcie</td><td>cząsteczka wody jest kątowa</td></tr>
+<tr><td><strong>Właściwości</strong> — jak się zachowuje?</td><td>fizyczne (barwa, gęstość, t. wrzenia) i chemiczne (palność, reaktywność)</td><td>woda wrze w 100 °C (przy ciśnieniu normalnym)</td></tr>
+<tr><td><strong>Przemiany</strong> — jak się zmienia?</td><td>zjawiska fizyczne i reakcje chemiczne</td><td>lód topnieje · metan spala się do CO₂ i H₂O</td></tr>
+</tbody></table></div>
+<div class="card card-core">
+<span class="card-label">Najważniejsza myśl kursu</span>
+<p><strong>Właściwości wynikają z budowy.</strong> Diament i grafit to ten sam pierwiastek (węgiel), ale inna budowa — dlatego diament jest twardy, a grafit miękki. Woda wrze w 100 °C, a podobny siarkowodór H₂S w około −60 °C, bo cząsteczki wody silniej się przyciągają (wiązania wodorowe — F15).</p>
+</div>
+</section>
+<section id="poziomy">
+<div class="part-heading"><span class="part-num">2</span> Cztery poziomy opisu <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<p>Chemik patrzy na to samo zjawisko na czterech poziomach. Dobra odpowiedź umie przejść między nimi.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Poziom</th><th>Co tu jest</th><th>Przykład: woda się gotuje</th></tr></thead>
+<tbody>
+<tr><td><strong>makroskopowy</strong></td><td>to, co widzimy i mierzymy</td><td>pęcherzyki, para, 100 °C</td></tr>
+<tr><td><strong>cząsteczkowy</strong></td><td>atomy, jony, cząsteczki (model!)</td><td>cząsteczki H₂O odrywają się od cieczy i przechodzą w gaz</td></tr>
+<tr><td><strong>symboliczny</strong></td><td>symbole, wzory, równania</td><td>H₂O(c) → H₂O(g)</td></tr>
+<tr><td><strong>ilościowy</strong></td><td>masy, objętości, mole</td><td>z 18 g wody powstaje 18 g pary — masa się nie zmienia</td></tr>
+</tbody></table></div>
+<div class="card card-understand">
+<span class="card-label">Przykład przejścia przez cztery poziomy</span>
+<p>Roztwór <strong>mętnieje</strong> (makro) → powstaje trudno rozpuszczalna substancja, której drobiny łączą się w ziarna osadu (cząsteczkowy) → zapisujemy ją wzorem, np. CaCO₃ (symboliczny) → obliczamy, ile osadu powstanie (ilościowy — od klasy 8 i LO).</p>
+</div>
+<div class="che-lesson-viz-ref" data-che-lesson-viz="live-cv"><button type="button" data-che-open-viz="live-cv" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'live-cv',lessonId:'F01'},'*')"><b>Łańcuch chemii: atom → cząsteczka → substancja → reakcja</b><span>jak jeden obiekt wygląda na kolejnych poziomach opisu</span></button></div>
+<!-- OPIS: Łańcuch czterech poziomów opisu: pojedynczy atom → cząsteczka z połączonych atomów → próbka substancji → reakcja, w której atomy łączą się w nowe cząsteczki. Wniosek: ten sam obiekt można opisać na różnych poziomach — od cząstek do tego, co widać w probówce. -->
+</section>
+<section id="obserwacja">
+<div class="part-heading"><span class="part-num">3</span> Obserwacja, wniosek, hipoteza <span class="level-badge level-basic">E8</span></div>
+<div class="card card-basic">
+<span class="card-label">Trzy różne rzeczy</span>
+<ul>
+<li><strong>Obserwacja</strong> — to, co rejestrują zmysły lub przyrząd: barwa, zapach, osad, gaz, zmiana temperatury, wynik pomiaru. <em>„Na dnie pojawił się biały osad.”</em></li>
+<li><strong>Hipoteza</strong> — sprawdzalne przypuszczenie przed doświadczeniem. <em>„Jeśli w probówce powstaje CO₂, to woda wapienna zmętnieje.”</em></li>
+<li><strong>Wniosek</strong> — interpretacja wyników, oparta na obserwacji <strong>i</strong> teście. <em>„Woda wapienna zmętniała, więc wydzielał się CO₂.”</em></li>
+</ul>
+</div>
+<div class="card card-warning">
+<span class="card-label">Uwaga — słowa, które zdradzają wniosek</span>
+<p>W obserwacji nie ma nazw produktów ani przyczyn. „Wydziela się <strong>wodór</strong>”, „powstał <strong>jod</strong>”, „zaszła <strong>reakcja</strong>” — to już wnioski. Obserwacja brzmi: „wydzielają się pęcherzyki bezbarwnego gazu”, „roztwór zabarwił się na brązowo”.</p>
+</div>
+<div class="card card-core">
+<span class="card-label">Po czym poznać reakcję chemiczną? (objawy)</span>
+<p>Zmiana barwy · wydzielanie gazu · powstawanie osadu · wydzielanie lub pochłanianie ciepła lub światła · zmiana zapachu.
+<strong>Żaden objaw sam w sobie nie jest dowodem powstania nowej substancji.</strong> Barwa może się zmienić przy rozcieńczaniu, pęcherzyki mogą pochodzić z wrzenia lub wydzielania rozpuszczonego gazu. Silny wniosek wymaga <strong>testu właściwości produktu</strong> albo innego niezależnego dowodu. Odwracalność nie jest definicją reakcji: istnieją reakcje odwracalne (np. uwodnienie i odwodnienie CuSO₄). Jedyne kryterium zjawiska chemicznego: <strong>czy powstała substancja o nowych właściwościach?</strong> Odzyskanie substancji wyjściowej bywa pomocniczym testem (np. odparowanie roztworu soli), ale nie rozstrzyga samo w sobie.</p>
+</div>
+<div class="card card-core">
+<span class="card-label">Schemat analizy doświadczenia — 6 pytań</span>
+<ol>
+<li>Co było na początku (substancje, warunki)?</li>
+<li>Co zmieniono (dodano, ogrzano, zmieszano)?</li>
+<li>Co zaobserwowano (bez nazw produktów)?</li>
+<li>Czy powstała nowa substancja?</li>
+<li>Jakie dane lub test potwierdzają wniosek?</li>
+<li>Jak zapisać przemianę równaniem?</li>
+</ol>
+<p><strong>Przykład.</strong> Do kwasu solnego dodano wiórki magnezu.
+Obserwacje: magnez stopniowo znika, wydzielają się pęcherzyki bezbarwnego gazu, probówka się ogrzewa.
+Hipoteza: jeśli gaz to wodór, to zbliżona do wylotu probówki zapalona łuczynka da krótkie „pyk”.
+Test: zbliżyć zapaloną łuczynkę do wylotu probówki.
+Obserwacja z testu: słychać krótkie „pyk”.
+Wniosek: gaz to wodór (H₂); zaszła reakcja chemiczna — powstały nowe substancje: chlorek magnezu w roztworze i wodór.</p>
+<div class="formula-lg">Mg + 2 HCl → MgCl₂ + H₂↑</div>
+<p class="mini-note">„Magnez zniknął” nie znaczy „został zniszczony” — jego atomy są teraz w jonach Mg²⁺ w roztworze (prawo zachowania masy).</p>
+</div>
+<div class="card card-basic">
+<span class="card-label">Testy na gazy — test → wynik → wniosek</span>
+<div class="table-wrap"><table>
+<thead><tr><th>Gaz</th><th>Test</th><th>Wynik</th><th>Wniosek</th></tr></thead>
+<tbody>
+<tr><td>CO₂</td><td>przepuścić przez wodę wapienną</td><td>zmętnienie (osad CaCO₃)</td><td>obecny CO₂ — w tych warunkach (zob. zastrzeżenie niżej)</td></tr>
+<tr><td>H₂</td><td>zbliżyć zapaloną łuczynkę do wylotu probówki</td><td>krótkie „pyk”</td><td>obecny wodór</td></tr>
+<tr><td>O₂</td><td>wprowadzić żarzącą się drzazgę</td><td>drzazga rozżarza się (zapala)</td><td>obecny tlen</td></tr>
+</tbody></table></div>
+<p><strong>Zastrzeżenie:</strong> SO₂ też mąci wodę wapienną. Test na CO₂ jest wiarygodny, gdy wiemy, że SO₂ nie powstaje (np. nie spalano siarki). Nadmiar CO₂ rozpuszcza osad — woda się klaruje.</p>
+</div>
+</section>
+<section id="piec-pytan">
+<div class="part-heading"><span class="part-num">4</span> Pięć pytań chemika <span class="level-badge level-basic">E8</span></div>
+<p>Uniwersalne narzędzie — stosuj je do każdego nowego zagadnienia, w każdej lekcji.</p>
+<ol>
+<li><strong>Co dokładnie obserwuję?</strong> — czysta obserwacja, bez przyczyny.</li>
+<li><strong>Czy to właściwość, zjawisko fizyczne czy reakcja?</strong> — czy powstała substancja o nowych właściwościach? (pomocniczo: czy da się odzyskać wyjściową?)</li>
+<li><strong>Jaki model cząstek to wyjaśnia?</strong> — atomy, jony, cząsteczki; co się z nimi dzieje.</li>
+<li><strong>Jaki zapis chemiczny odpowiada modelowi?</strong> — symbol, wzór, równanie.</li>
+<li><strong>Jak sprawdzę, że wyjaśnienie zgadza się z danymi?</strong> — test, pomiar, bilans atomów.</li>
+</ol>
+<div class="card card-understand">
+<span class="card-label">Skąd wiadomo, że pytania działają?</span>
+<p>Każde pytanie zatrzymuje jeden typowy błąd: 1 — dopisywanie przyczyny do obserwacji; 2 — uznawanie każdej zmiany za reakcję; 3 — uczenie się zapisu bez rozumienia; 4 — błędne wzory i równania; 5 — wiara w model bez sprawdzenia.</p>
+</div>
+<div class="card card-core">
+<span class="card-label">Twierdzenie → dowód → wyjaśnienie</span>
+<p>Gdy odpowiadasz „co się stało?”, nie kończ na nazwie zjawiska.</p>
+<p><strong>Twierdzenie:</strong> „Prawdopodobnie powstał CO₂.”
+<strong>Dowód:</strong> „Gaz przepuszczony przez wodę wapienną spowodował zmętnienie i powstanie osadu CaCO₃.”
+<strong>Wyjaśnienie:</strong> „CO₂ reaguje z Ca(OH)₂, tworząc trudno rozpuszczalny CaCO₃.”</p>
+<p>To rozdziela trzy rzeczy: <strong>co twierdzę, na czym to opieram i dlaczego dane wspierają mój wniosek</strong>. Ten schemat będzie wracał w dalszych lekcjach.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">Model → przewidywanie → test</span>
+<p>Chemia nie działa tylko w kierunku „zobaczyłem → nazwałem”. Dobry model pozwala zrobić krok w drugą stronę:</p>
+<p><strong>model → przewidywanie → doświadczenie → dane → sprawdzenie modelu.</strong></p>
+<p>Jeżeli model przewiduje wynik, którego doświadczenie nie daje, nie „naginamy” danych do modelu. Sprawdzamy warunki, pomiar i zakres stosowalności modelu.</p>
+</div>
+</section>
+<section id="przyklady">
+<div class="part-heading"><span class="part-num">5</span> Trzy przykłady: obserwacja → model <span class="level-badge level-basic">E8</span></div>
+<div class="card card-basic">
+<span class="card-label">Przykład 1 — sól w wodzie</span>
+<p><strong>Obserwacja:</strong> kryształy po chwili przestają być widoczne, roztwór jest przezroczysty.
+<strong>Błędny wniosek:</strong> „sól zniknęła”.
+<strong>Model:</strong> drobiny soli (naładowane drobiny: Na⁺ i Cl⁻ — jony, F05) rozproszyły się między cząsteczkami wody.
+<strong>Test:</strong> odparowanie wody → na dnie zostają kryształy soli.
+<strong>Wniosek:</strong> rozpuszczanie to <strong>zjawisko fizyczne</strong> — substancja nie powstała ani nie zniknęła.</p>
+</div>
+<div class="card card-basic">
+<span class="card-label">Przykład 2 — kwas i zasada</span>
+<p><strong>Obserwacja:</strong> roztwór wodorotlenku sodu z fenoloftaleiną jest malinowy; po dodaniu kwasu solnego kroplami barwa znika (roztwór lekko się ogrzewa).
+<strong>Model:</strong> jony pochodzące z kwasu i z zasady łączą się w cząsteczki wody (zapis szkolny upraszcza to do H⁺ + OH⁻ → H₂O).
+<strong>Zapis:</strong></p>
+<div class="formula-lg">HCl + NaOH → NaCl + H₂O</div>
+<p><strong>Test:</strong> odparować część roztworu → na dnie zostają kryształy o innych właściwościach niż wyjściowe roztwory; pH papierkiem uniwersalnym ≈ 7 (obojętny). Samo odbarwienie fenoloftaleiny nie wystarczy — jest tylko objawem zmiany pH.
+<strong>Wniosek:</strong> powstała nowa substancja (sól i woda) — to <strong>reakcja chemiczna</strong> (zobojętnianie). Więcej w N02 i N03.</p>
+</div>
+<div class="card card-basic">
+<span class="card-label">Przykład 3 — żelazo i siarka</span>
+<p><strong>Obserwacja 1:</strong> żółty proszek siarki i szare opiłki żelaza po zmieszaniu dają szarożółtą mieszaninę; magnes wyciąga opiłki.
+<strong>Model:</strong> to <strong>mieszanina</strong> — każdy składnik zachowuje swoje właściwości.
+<strong>Obserwacja 2 (pokaz, nauczyciel):</strong> po ogrzaniu mieszanina rozżarza się, powstaje czarna, krucha substancja; magnes już jej nie przyciąga.
+<strong>Model:</strong> atomy żelaza i siarki połączyły się w nowy związek — siarczek żelaza(II).</p>
+<div class="formula-lg">Fe + S → FeS</div>
+<p><strong>Wniosek:</strong> ten sam zestaw składników może dać <strong>mieszaninę</strong> (bez reakcji) albo <strong>związek</strong> (po reakcji). Rozstrzyga test właściwości.</p>
+</div>
+</section>
+<section id="jezyk">
+<div class="part-heading"><span class="part-num">6</span> Język chemii: symbol, wzór, równanie <span class="level-badge level-basic">E8</span></div>
+<div class="table-wrap"><table>
+<thead><tr><th>Zapis</th><th>Co znaczy na poziomie cząstek</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td><strong>symbol</strong></td><td>pierwiastek albo jeden jego atom</td><td>Na — sód; Cl — chlor</td></tr>
+<tr><td><strong>wzór</strong></td><td>skład substancji: jakie atomy i ile</td><td>H₂O — 2 atomy H i 1 atom O; CO₂ — 1 atom C i 2 atomy O</td></tr>
+<tr><td><strong>indeks</strong> (mała cyfra)</td><td>liczba atomów w jednej cząsteczce albo w jednostce wzoru (związki jonowe, np. NaCl, nie tworzą cząsteczek)</td><td>H₂ — cząsteczka z dwóch atomów; CaCl₂ — 1 Ca²⁺ na 2 Cl⁻</td></tr>
+<tr><td><strong>współczynnik</strong> (duża cyfra przed wzorem)</td><td>liczba cząsteczek lub jednostek wzoru (na poziomie LO także moli)</td><td>2 H₂O — dwie cząsteczki wody; 2 NaCl — dwie jednostki wzoru</td></tr>
+<tr><td><strong>równanie</strong></td><td>przemiana substratów w produkty, z zachowaniem atomów</td><td>2 H₂ + O₂ → 2 H₂O</td></tr>
+</tbody></table></div>
+<p><strong>Znaki w równaniach:</strong></p>
+<div class="table-wrap"><table>
+<thead><tr><th>Znak</th><th>Znaczy</th></tr></thead>
+<tbody>
+<tr><td>→</td><td>przemiana substratów w produkty</td></tr>
+<tr><td>↑</td><td>gaz ucieka z mieszaniny reakcyjnej</td></tr>
+<tr><td>↓</td><td>osad (trudno rozpuszczalna substancja) wypada z roztworu</td></tr>
+<tr><td>(s), (c), (g), (aq)</td><td>stan skupienia: stały (solid), ciekły (ciecz), gazowy (gas), roztwór wodny (aqueous)</td></tr>
+</tbody></table></div>
+<div class="card card-core">
+<span class="card-label">Odczytaj równanie na głos</span>
+<p>2 H₂ + O₂ → 2 H₂O: „dwie cząsteczki wodoru reagują z jedną cząsteczką tlenu i powstają dwie cząsteczki wody”. Policz: po lewej 4 atomy H i 2 atomy O, po prawej też 4 H i 2 O — atomy się nie tworzą i nie znikają.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Wzór to nie nazwa</span>
+<p>H₂O to <strong>wzór</strong> (zapis składu), „woda” to <strong>nazwa</strong>. Wzór mówi więcej niż nazwa — z niego odczytasz skład. Szczegółowo: wzory — F12, równania — F17.</p>
+</div>
+</section>
+<section id="model">
+<div class="part-heading"><span class="part-num">7</span> Model to nie rzeczywistość <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<p>Model to <strong>uproszczenie</strong>, które wyjaśnia obserwacje i pozwala przewidywać nowe. Nie jest zdjęciem rzeczywistości.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Model</th><th>Do czego się nadaje</th><th>Czego nie opisuje</th></tr></thead>
+<tbody>
+<tr><td>atom jako kulka</td><td>liczenie atomów, budowa cząsteczek „z klocków”</td><td>rozmieszczenia elektronów</td></tr>
+<tr><td>model Bohra (powłoki)</td><td>elektrony walencyjne, układ okresowy (F06–F08)</td><td>elektron nie krąży po torze jak planeta</td></tr>
+<tr><td>wiązanie jonowe jako „przekazanie elektronu”</td><td>sole, wzory jonowe (F11)</td><td>częściowo kowalencyjnego charakteru wiązań</td></tr>
+<tr><td>reguła oktetu</td><td>wiele prostych związków (F10)</td><td>wyjątków: BF₃, PCl₅, SF₆</td></tr>
+</tbody></table></div>
+<div class="card card-core">
+<span class="card-label">Zasada</span>
+<p>Używaj modelu <strong>adekwatnego do pytania</strong>. Na E8 wystarczają kulki i powłoki; w LO dochodzą orbitale. Wszystkie opisują tę samą rzeczywistość z różną dokładnością.</p>
+</div>
+<details class="adv"><summary>Dlaczego chemia mówi o modelach, a nie o „prawdzie”? <span class="adv-tag">poziom akademicki</span></summary><div class="adv-body">
+<p>Model naukowy ocenia się po tym, czy poprawnie przewiduje wyniki pomiarów w swoim zakresie stosowalności. Gdy pojawiają się dane, których nie wyjaśnia, zastępuje się go modelem dokładniejszym (od kulek Daltona, przez model Bohra, do mechaniki kwantowej). Prawa zachowania (masy, ładunku) są natomiast bardzo dobrze potwierdzone i obowiązują we wszystkich modelach.</p>
+</div></details>
+</section>
+<section id="poprawnosc">
+<div class="part-heading"><span class="part-num">8</span> Cztery poziomy poprawności odpowiedzi <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<p>Sprawdzaj każdą odpowiedź na czterech poziomach:</p>
+<ul>
+<li><strong>językowym</strong> — poprawna nazwa i symbol (Cl, nie CL);</li>
+<li><strong>strukturalnym</strong> — poprawny wzór lub model cząstki (CO₂, nie CO2 ani C₂O);</li>
+<li><strong>ilościowym</strong> — zgadzają się liczby atomów, elektronów, ładunków (bilans równania);</li>
+<li><strong>chemicznym</strong> — wynik zgadza się z właściwościami i warunkami (czy ta reakcja w ogóle zachodzi?).</li>
+</ul>
+<div class="card card-extra">
+<span class="card-label">Pułapka „reguła zawsze działa” <span class="level-badge level-extra">AMBITNE</span></span>
+<p>Reguły szkolne są modelami z zakresem stosowalności. „Metal tworzy kation, niemetal anion” to dobre pierwsze przybliżenie dla związków jonowych, ale nie definicja wszystkich wiązań. „Metal + kwas → sól + wodór” wymaga sprawdzenia aktywności metalu (miedź z kwasem solnym nie reaguje — N03).</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Wiedza proceduralna a rozumienie <span class="level-badge level-extra">AMBITNE</span></span>
+<p>Jeśli znasz wynik, ale nie umiesz powiedzieć, z którego modelu wynika — wiedza jest jeszcze proceduralna. Jeśli znasz regułę, ale nie rozpoznajesz sytuacji, w której jej użyć — potrzebujesz zadań transferowych (F21), a nie kolejnej listy definicji.</p>
+</div>
+</section>
+<section id="zasady">
+<div class="part-heading"><span class="part-num">9</span> Jak uczyć się chemii — 10 zasad <span class="level-badge level-basic">E8</span></div>
+<div class="card card-understand">
+<ol>
+<li><strong>Najpierw próbuj, potem czytaj</strong> — diagnoza przed wykładem.</li>
+<li><strong>Mów na głos</strong> — wzory, reguły, definicje.</li>
+<li><strong>Rysuj</strong> — zlewki, cząstki, mapy myśli.</li>
+<li><strong>Powtarzaj w odstępach</strong> — dziś, jutro, za 3 dni, za tydzień.</li>
+<li><strong>Mieszaj tematy</strong> — 5 zadań z różnych działów uczy więcej niż 20 z jednego.</li>
+<li><strong>Testuj się</strong> — fiszki i pytania to nauka, nie strata czasu.</li>
+<li><strong>Tłumacz komuś</strong> — jeśli nie umiesz wytłumaczyć, jeszcze nie rozumiesz.</li>
+<li><strong>Łap moment „aha!”</strong> — zapisz własnymi słowami, co zrozumiałeś.</li>
+<li><strong>Śpij</strong> — sen utrwala wiedzę; krótka powtórka rano działa najlepiej.</li>
+<li><strong>Bądź ciekawy</strong> — „dlaczego?” to najlepsze pytanie w chemii.</li>
+</ol>
+</div>
+</section>
+<section id="protokol">
+<div class="part-heading"><span class="part-num">9.1</span> Mini-protokół dobrego testu</div>
+<div class="card card-understand">
+<span class="card-label">Zanim wykonasz doświadczenie</span>
+<p>Każdy prosty test możesz rozpisać w sześciu krokach:</p>
+<ol>
+<li><strong>Pytanie:</strong> co chcę rozstrzygnąć?</li>
+<li><strong>Hipoteza:</strong> jaki wynik przewiduję i dlaczego?</li>
+<li><strong>Zmienna:</strong> co celowo zmieniam?</li>
+<li><strong>Kontrola:</strong> co utrzymuję takie samo?</li>
+<li><strong>Pomiar/obserwacja:</strong> co dokładnie zapisuję, bez interpretacji?</li>
+<li><strong>Kryterium wniosku:</strong> jaki wynik wesprze hipotezę, a jaki ją osłabi?</li>
+</ol>
+<p><strong>Przykład:</strong> „Czy cieplejsza woda przyspiesza rozpuszczanie soli?” — temperatura jest zmienną, czas rozpuszczenia wynikiem, a ilość soli, objętość wody, sposób mieszania i wielkość kryształków powinny być porównywalne.</p>
+<p>Nie każde doświadczenie wymaga skomplikowanej kontroli, ale każde powinno mieć <strong>jasne pytanie i określony sposób rozstrzygnięcia</strong>.</p>
+</div>
+</section>
+<section id="bhp">
+<div class="part-heading"><span class="part-num">9.2</span> BHP w pracowni — sześć reguł</div>
+<div class="card card-basic">
+<span class="card-label">Sześć reguł</span>
+<ol>
+<li><strong>Okulary ochronne i fartuch</strong> — zawsze, także przy „niegroźnych” doświadczeniach.</li>
+<li><strong>Zapach sprawdzamy ruchem dłoni</strong> znad naczynia — nigdy nosem nad probówką.</li>
+<li><strong>Wylot probówki kierujemy od siebie i od innych</strong> — mieszanina może wytrysnąć.</li>
+<li><strong>Ogrzewanie probówki:</strong> wypełnij ją najwyżej do 1/3 objętości i mieszaj płomieniem.</li>
+<li><strong>Nic nie smakujemy</strong> — ani soli, ani cukru z pracowni.</li>
+<li><strong>Piktogramy GHS</strong> czytamy przed pracą: żrący, toksyczny, drażniący, palny, utleniający, szkodliwy dla środowiska.</li>
+</ol>
+</div>
+<figure class="lk-fig" data-klocek="karta-bhp" data-opt="{}"><div class="lk-fig-body"></div><figcaption>Zasady pracy i pierwsza pomoc</figcaption></figure>
+<!-- OPIS: Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela. -->
+</section>
+<section id="doswiadczenia">
+<div class="part-heading"><span class="part-num">10</span> Doświadczenia</div>
+<div class="che-lesson-viz-ref" data-che-lesson-viz="f01-doswiadczenia-v01"><button type="button" data-che-open-viz="f01-doswiadczenia-v01" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'f01-doswiadczenia-v01',lessonId:'F01'},'*')"><b>Pracownia: co naprawdę się zmieniło?</b><span>zjawiska fizyczne i reakcje w zlewce, parownicy, probówce i tyglu — obserwacja, wniosek, BHP</span></button></div>
+<!-- OPIS: Pracownia z doświadczeniami w zlewce, parownicy, probówce i tyglu: rozpuszczanie soli, odparowanie roztworu, soda z octem, woda wapienna z CO₂, żelazo z siarką po ogrzaniu, spalanie magnezu; przy każdym obserwacje, wniosek i zasady BHP. Wniosek: tylko część zmian to reakcje chemiczne — rozstrzyga, czy powstała nowa substancja. -->
+<div class="exp-card"><h5>Doświadczenie 1 — Co naprawdę się zmieniło? (trzy naczynia)</h5><div class="exp-grid"><b>Problem</b><span>W którym naczyniu zachodzi reakcja chemiczna, a w którym zjawisko fizyczne?</span><b>Hipoteza</b><span>Reakcja zachodzi tam, gdzie powstaje substancja o nowych właściwościach. Pomocniczo: w zjawisku fizycznym substancję wyjściową da się odzyskać prostymi metodami.</span><b>Sprzęt</b><span>trzy zlewki, łyżeczka, bagietka, parownica, palnik lub płyta grzejna; lód, sól kuchenna, woda, soda oczyszczona (NaHCO₃), ocet.</span><b>Przebieg</b><span>(a) kostka lodu w zlewce w temperaturze pokojowej; (b) łyżeczka soli w wodzie, mieszanie, potem część roztworu odparować w parownicy; (c) łyżeczka sody, dolać octu.</span><b>Obserwacja</b><span>(a) lód topnieje, powstaje ciecz; (b) kryształy przestają być widoczne; po odparowaniu na parownicy zostaje biała krystaliczna pozostałość; (c) burzliwe wydzielanie pęcherzyków bezbarwnego gazu, soda znika.</span><b>Wniosek</b><span>(a) i (b) — zjawiska fizyczne (pomocniczo: substancję wyjściową da się odzyskać — zamrozić, odparować); (c) — bardzo prawdopodobnie reakcja chemiczna (soda znika, nie odzyskujemy jej przez odparowanie, wydziela się gaz); tożsamość gazu sprawdzimy w Doświadczeniu 2.</span><b>Równanie</b><span class="formula">NaHCO₃ + CH₃COOH → CH₃COONa + H₂O + CO₂↑</span><b>BHP</b><span>okulary ochronne; nie smakujemy substancji; parownicę po ogrzaniu chwytamy szczypcami — jest gorąca; ocet nie do oczu.</span></div><button class="che-prac-go" data-k="f01SolWoda" data-prac="f01-doswiadczenia-v01" type="button">Zobacz w zlewce: sól w wodzie</button>
+<!-- OPIS: Sól wsypana do wody w zlewce: kryształy stopniowo znikają, powstaje klarowny, bezbarwny roztwór. Wniosek: to rozpuszczanie, czyli zjawisko fizyczne — sól można odzyskać, odparowując wodę. -->
+<button class="che-prac-go" data-k="f01Odparowanie" data-prac="f01-doswiadczenia-v01" type="button">Zobacz w zlewce: odparowanie roztworu soli</button>
+<!-- OPIS: Parownica z roztworem soli ogrzewana palnikiem: woda paruje, na dnie zostają białe kryształy soli. Wniosek: rozpuszczona sól nie zniknęła — odparowanie oddziela substancję stałą od lotnego rozpuszczalnika i jest zjawiskiem fizycznym. -->
+<button class="che-prac-go" data-k="f01SodaOcet" data-prac="f01-doswiadczenia-v01" type="button">Zobacz w zlewce: soda + ocet</button>
+<!-- OPIS: Do sody oczyszczonej dodano ocet: mieszanina pieni się i intensywnie wydziela pęcherzyki bezbarwnego gazu. Wniosek: bardzo prawdopodobnie zachodzi reakcja chemiczna — powstaje nowa substancja gazowa; jej tożsamość sprawdzamy w Doświadczeniu 2. --></div>
+<div class="exp-card"><h5>Doświadczenie 2 — Czy ten gaz to naprawdę CO₂?</h5><div class="exp-grid"><b>Problem</b><span>Jak sprawdzić wniosek „w naczyniu (c) wydziela się dwutlenek węgla”?</span><b>Hipoteza</b><span>Jeśli gaz to CO₂, to po przepuszczeniu przez wodę wapienną roztwór zmętnieje.</span><b>Sprzęt</b><span>probówka z korkiem i rurką odprowadzającą, druga probówka z wodą wapienną (nasycony roztwór Ca(OH)₂); soda oczyszczona, ocet lub kwas solny rozcieńczony.</span><b>Przebieg</b><span>W probówce z sodą dodać ocet, szybko zamknąć korkiem z rurką, koniec rurki zanurzyć w wodzie wapiennej.</span><b>Obserwacja</b><span>Woda wapienna mętnieje (biały osad).</span><b>Wniosek</b><span>zmętnienie wskazuje na CO₂ w tych warunkach (bez SO₂ i nadmiaru CO₂) — tym razem wniosek ma dowód, a nie tylko obserwację „bąbelków”. Ambitnie: przy nadmiarze CO₂ osad znika, bo powstaje rozpuszczalny wodorowęglan wapnia Ca(HCO₃)₂.</span><b>Równanie</b><span class="formula">Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O</span><b>BHP</b><span>okulary; woda wapienna jest zasadowa i drażni oczy oraz skórę; rurka nie może być zatkana (rosnące ciśnienie).</span></div><button class="che-prac-go" data-k="f01WodaWapienna" data-prac="f01-doswiadczenia-v01" type="button">Zobacz w zlewce: woda wapienna i CO₂</button>
+<!-- OPIS: Tlenek węgla(IV) wprowadzany do klarownej wody wapiennej: woda mętnieje, pojawia się biała zawiesina węglanu wapnia. Wniosek: zmętnienie wody wapiennej wskazuje na CO₂ w tych warunkach; nadmiar CO₂ rozpuszcza osad i woda się klaruje. --></div>
+<div class="exp-card"><h5>Doświadczenie 3 — Spalanie magnezu (pokaz)</h5><div class="exp-grid"><b>Problem</b><span>Czy zmiana wyglądu wstążki magnezu w płomieniu to zjawisko fizyczne, czy reakcja?</span><b>Hipoteza</b><span>Jeśli powstaje nowa substancja, będzie miała inne właściwości niż magnez (barwa, połysk, kruchość).</span><b>Sprzęt</b><span>szczypce metalowe, palnik, płytka ceramiczna; wstążka magnezu (ok. 3 cm).</span><b>Przebieg</b><span>Nauczyciel wkłada koniec wstążki do płomienia, a po zapłonie trzyma ją nad płytką.</span><b>Obserwacja</b><span>Magnez spala się oślepiająco jasnym, białym płomieniem; powstaje biały, kruchy proszek bez metalicznego połysku.</span><b>Wniosek</b><span>powstała nowa substancja — tlenek magnezu; to reakcja chemiczna (objawy: światło, ciepło, nowa substancja o innych właściwościach). Dowód ilościowy: masa tlenku jest większa niż masa wyjściowego magnezu, bo do magnezu przyłączył się tlen z powietrza.</span><b>Równanie</b><span class="formula">2 Mg + O₂ → 2 MgO</span><b>BHP</b><span>wykonuje nauczyciel; <strong>nie patrzeć bezpośrednio w płomień</strong> (bardzo jasne światło); płonącego magnezu nie gasić wodą; okulary, płytka ceramiczna pod spodem.</span></div><button class="che-prac-go" data-k="f01Mg" data-prac="f01-doswiadczenia-v01" type="button">Zobacz na płytce ceramicznej: spalanie magnezu</button>
+<!-- OPIS: Wstążka magnezu spalana nad płytką ceramiczną: oślepiająco jasny, biały płomień, po spaleniu zostaje biały proszek (tlenek magnezu). Wniosek: zaszła reakcja chemiczna 2 Mg + O₂ → 2 MgO; w płomień nie patrzymy bezpośrednio. --></div>
+<div class="exp-card"><h5>Doświadczenie 4 — Mieszanina czy związek? Żelazo i siarka (pokaz)</h5><div class="exp-grid"><b>Problem</b><span>Czy zmieszanie żelaza z siarką to to samo co ich reakcja?</span><b>Hipoteza</b><span>W mieszaninie magnes oddzieli żelazo; po reakcji powstanie związek, z którego magnes żelaza nie wyciągnie.</span><b>Sprzęt</b><span>magnes w woreczku foliowym, szalka, probówka ze szkła trudnotopliwego, statyw, palnik; opiłki żelaza, siarka (proszek).</span><b>Przebieg</b><span>(1) Zmieszać opiłki z siarką na szalce, zbliżyć magnes. (2) Nauczyciel ogrzewa część mieszaniny w probówce, aż zacznie się żarzyć; po ostygnięciu zbliża magnes do produktu.</span><b>Obserwacja</b><span>(1) Magnes przyciąga szare opiłki, żółta siarka zostaje. (2) Mieszanina rozżarza się (także po odsunięciu palnika); powstaje czarna, krucha substancja, magnes jej nie przyciąga.</span><b>Wniosek</b><span>(1) mieszanina — składniki zachowują właściwości; (2) reakcja chemiczna — powstał siarczek żelaza(II) o nowych właściwościach. Stosunek masowy Fe : S w FeS to 56 : 32 = 7 : 4, więc substraty reagują w takich proporcjach; nadmiar siarki pali się do trującego SO₂.</span><b>Równanie</b><span class="formula">Fe + S → FeS</span><b>BHP</b><span>wykonuje nauczyciel pod wyciągiem; przy ogrzewaniu siarki może powstawać trujący SO₂ — nie wąchać; gorąca probówka może pęknąć — okulary, szczypce.</span></div><button class="che-prac-go" data-k="f01FeS" data-prac="f01-doswiadczenia-v01" type="button">Zobacz w probówce: Fe + S po ogrzaniu</button>
+<!-- OPIS: Probówka z mieszaniną opiłków żelaza i siarki po ogrzaniu: mieszanina rozżarza się, powstaje czarna, krucha substancja (siarczek żelaza(II)), której magnes już nie przyciąga. Wniosek: powstała nowa substancja o innych właściwościach — reakcja chemiczna Fe + S → FeS. --></div>
+<div class="card card-understand">
+<span class="card-label">Przewiduj, potem sprawdź</span>
+<div class="che-lesson-viz-ref" data-che-lesson-viz="beaker-prediction-enhanced"><button type="button" data-che-open-viz="beaker-prediction-enhanced" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'beaker-prediction-enhanced',lessonId:'F01'},'*')"><b>Zlewka z predykcją</b><span>wybierz obserwację, której się spodziewasz, i sprawdź wynik — trening „hipoteza przed doświadczeniem”</span></button></div>
+<!-- OPIS: Zlewka z doświadczeniem i listą możliwych obserwacji: najpierw wybierasz, czego się spodziewasz, potem animacja pokazuje wynik i porównuje go z twoim przewidywaniem. Wniosek: hipotezę formułuje się przed doświadczeniem, a wynik ją wspiera albo obala. -->
+</div>
+</section>
+<section id="klinika">
+<div class="part-heading"><span class="part-num">11</span> Klinika błędów</div>
+<table class="klinika-table"><thead><tr><th>Błąd</th><th>Poprawnie</th><th>Dlaczego?</th></tr></thead><tbody><tr class="error-row"><td class="col-blad" data-label="Błąd">„Obserwacja: wydziela się wodór.”</td><td class="col-ok" data-label="Poprawa">„Obserwacja: wydzielają się pęcherzyki bezbarwnego gazu.”</td><td data-label="Dlaczego">Nazwa gazu to wniosek — wymaga testu (np. próba „pyk!”).</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Sól zniknęła w wodzie.”</td><td class="col-ok" data-label="Poprawa">„Sól rozpuściła się — jest w roztworze.”</td><td data-label="Dlaczego">Substancja nie znika; odzyskasz ją przez odparowanie.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Roztwór się rozjaśnił, więc zaszła reakcja.”</td><td class="col-ok" data-label="Poprawa">„Rozjaśnienie może wynikać z rozcieńczenia — potrzebny dowód nowej substancji.”</td><td data-label="Dlaczego">Jeden objaw nie wystarcza.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„H₂O to nazwa wody.”</td><td class="col-ok" data-label="Poprawa">„H₂O to wzór wody; nazwa to »woda«.”</td><td data-label="Dlaczego">Wzór zapisuje skład, nazwa tylko identyfikuje substancję.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Atom wygląda jak kulka.”</td><td class="col-ok" data-label="Poprawa">„W modelu przedstawiamy atom jako kulkę.”</td><td data-label="Dlaczego">Model to uproszczenie, nie zdjęcie.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Hipoteza: powstał CO₂.” (zapisana po doświadczeniu)</td><td class="col-ok" data-label="Poprawa">„Hipoteza: jeśli powstaje CO₂, woda wapienna zmętnieje.” (przed)</td><td data-label="Dlaczego">Hipoteza ma być sprawdzalna i zapisana przed wynikiem.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„W 2 H₂O są 2 atomy wodoru.”</td><td class="col-ok" data-label="Poprawa">„W 2 H₂O są 4 atomy wodoru i 2 atomy tlenu.”</td><td data-label="Dlaczego">Współczynnik mnoży cały wzór.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Są pęcherzyki, więc na pewno zaszła reakcja.”</td><td class="col-ok" data-label="Poprawa">„Pęcherzyki są obserwacją; trzeba ustalić ich pochodzenie i sprawdzić produkt.”</td><td data-label="Dlaczego">Gaz może pojawić się także bez reakcji chemicznej.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Doświadczenie udowodniło hipotezę na zawsze.”</td><td class="col-ok" data-label="Poprawa">„Wynik wsparł hipotezę w danych warunkach.”</td><td data-label="Dlaczego">Model i hipoteza mają zakres stosowalności; nowe dane mogą wymagać korekty.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Model nie pasuje, więc doświadczenie jest błędne.”</td><td class="col-ok" data-label="Poprawa">„Najpierw sprawdź warunki, pomiar i zakres modelu.”</td><td data-label="Dlaczego">Nie wolno dopasowywać danych do oczekiwanego wyniku.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Zmieniałem temperaturę i ilość soli naraz.”</td><td class="col-ok" data-label="Poprawa">„Zmieniam jedną główną zmienną, pozostałe warunki kontroluję.”</td><td data-label="Dlaczego">Inaczej nie wiadomo, co spowodowało różnicę.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Nie widać żadnych zmian, więc reakcja nie zachodzi.”</td><td class="col-ok" data-label="Poprawa">„Brak widocznych zmian nie wyklucza reakcji — potrzebny test lub pomiar.”</td><td data-label="Dlaczego">Niektóre reakcje przebiegają powoli albo bez objawów widocznych gołym okiem (np. zobojętnianie bezbarwnych roztworów — widać je dopiero ze wskaźnikiem).</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Zrobiło się ciepło (zimno), więc zaszła reakcja.”</td><td class="col-ok" data-label="Poprawa">„Zmiana temperatury to objaw; trzeba sprawdzić, czy powstała nowa substancja.”</td><td data-label="Dlaczego">Temperatura zmienia się też przy rozpuszczaniu (np. saletra amonowa chłodzi wodę), topnieniu, parowaniu.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Powstał osad, więc na pewno zaszła reakcja.”</td><td class="col-ok" data-label="Poprawa">„Osad może powstać w reakcji albo po zmianie rozpuszczalności (np. krystalizacja po ochłodzeniu).”</td><td data-label="Dlaczego">Objaw ≠ dowód.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„H₂O to rysunek cząsteczki wody.”</td><td class="col-ok" data-label="Poprawa">„H₂O to wzór — zapis składu: rodzaj atomów i ich stosunek.”</td><td data-label="Dlaczego">Wzór sumaryczny nie pokazuje kształtu ani wiązań.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Powącham, żeby sprawdzić, co powstało.”</td><td class="col-ok" data-label="Poprawa">„Zapach sprawdzamy tylko ruchem dłoni znad naczynia, nigdy bezpośrednio.”</td><td data-label="Dlaczego">Wiele gazów jest trujących lub drażniących (BHP).</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Substancja, materia, próbka, ciało — to to samo.”</td><td class="col-ok" data-label="Poprawa">„Substancja to rodzaj materii; próbka to porcja substancji lub mieszaniny; ciało to przedmiot.”</td><td data-label="Dlaczego">Gwóźdź (ciało) jest z żelaza (substancja); szczegóły — F02.</td></tr></tbody></table>
+</section>
+<section id="cwiczenia">
+<div class="part-heading"><span class="part-num">12</span> Ćwiczenia</div>
+<div class="card card-exam">
+<span class="card-label">A. Podstawa (4 pkt)</span>
+<ol>
+<li>Wymień cztery rzeczy, które bada chemia.</li>
+<li>Czym różni się obserwacja od wniosku? Podaj przykład każdego.</li>
+<li>Podaj pięć pytań chemika.</li>
+<li>Co oznacza zapis 3 O₂?</li>
+</ol>
+<details class="answer"><summary>Pokaż odpowiedzi</summary>
+<ol>
+<li>Skład, budowę, właściwości i przemiany substancji.</li>
+<li>Obserwacja — to, co widzę lub mierzę („pęcherzyki gazu”); wniosek — interpretacja („wydziela się CO₂”, wsparte testem).</li>
+<li>Co obserwuję? Właściwość, zjawisko czy reakcja? Jaki model cząstek? Jaki zapis? Jak sprawdzę z danymi?</li>
+<li>Trzy cząsteczki tlenu, każda z dwóch atomów — razem 6 atomów tlenu.</li>
+</ol>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">B. Trening (4 pkt)</span>
+<ol start="5">
+<li>Dla każdej obserwacji zapisz <strong>hipotezę</strong> i <strong>test</strong>, który ją sprawdzi: a) roztwór zmienił barwę z bezbarwnej na żółtą; b) na dnie pojawił się biały osad; c) wydzielają się pęcherzyki gazu.</li>
+<li>Popraw zdanie „sól zniknęła w wodzie” i uzasadnij.</li>
+<li>Podaj po jednym przykładzie zjawiska fizycznego i reakcji chemicznej z kuchni.</li>
+<li>Policz atomy każdego pierwiastka po obu stronach: 2 Mg + O₂ → 2 MgO. Czy równanie jest poprawne?</li>
+</ol>
+<details class="answer"><summary>Pokaż odpowiedzi</summary>
+<ol start="5">
+<li>a) Hipoteza: zaszła reakcja i powstała barwna substancja — <strong>albo</strong> dodano barwną substancję, która się rozpuściła. Test: próba kontrolna (ta sama ciecz bez drugiego odczynnika lub samo rozcieńczenie barwnika); właściwości produktu (np. pH, rozpuszczalność); czy barwa wraca po zmianie warunków. Odzyskanie substancji wyjściowej to tylko pomocniczy test. b) Hipoteza: powstała trudno rozpuszczalna substancja. Test: odsączyć osad i zbadać jego właściwości (czy rozpuszcza się w wodzie, w kwasie). c) Hipoteza: powstaje gaz, np. CO₂. Test: woda wapienna (mętnieje → CO₂); dla wodoru — próba „pyk!”; dla tlenu — tląca się drzazga.</li>
+<li>Sól rozpuściła się — jej drobiny rozproszyły się w wodzie; po odparowaniu wody kryształy wracają.</li>
+<li>Fizyczne: topnienie masła, wrzenie wody. Reakcja: spalanie gazu w kuchence, pieczenie ciasta (powstaje CO₂ z proszku do pieczenia), czernienie przypalonego cukru.</li>
+<li>Lewa: 2 Mg, 2 O; prawa: 2 Mg, 2 O — poprawne.</li>
+</ol>
+</details>
+</div>
+<div class="card card-extra">
+<span class="card-label">C. Ambitne <span class="level-badge level-extra">AMBITNE</span></span>
+<ol start="9">
+<li>Dlaczego model „kulek” jest użyteczny, mimo że nie opisuje elektronów?</li>
+<li>Podaj dwa modele z chemii i ich ograniczenia.</li>
+<li>Opisz wrzenie wody na czterech poziomach opisu.</li>
+<li>Dlaczego ten sam zestaw atomów (Fe, S) może tworzyć mieszaninę albo związek?</li>
+</ol>
+<details class="answer"><summary>Pokaż odpowiedzi</summary>
+<ol start="9">
+<li>Pozwala liczyć atomy, budować cząsteczki i bilansować równania — do tych zadań szczegóły elektronów nie są potrzebne.</li>
+<li>Model Bohra — elektron nie krąży po torze; reguła oktetu — wyjątki (BF₃, SF₆); „przekazanie elektronu” w wiązaniu jonowym — wiązania mają też charakter częściowo kowalencyjny.</li>
+<li>Makro: pęcherzyki pary i temperatura wrzenia (np. 100 °C przy ciśnieniu normalnym). Cząsteczkowy: cząsteczki H₂O pokonują przyciąganie i przechodzą w gaz, nie rozpadają się. Symboliczny: H₂O(c) → H₂O(g). Ilościowy: masa wody w zamkniętym naczyniu się nie zmienia.</li>
+<li>W mieszaninie atomy Fe i S są w osobnych drobinach swoich substancji; w reakcji powstają wiązania między Fe i S — nowa substancja FeS o innych właściwościach.</li>
+</ol>
+</details>
+</div>
+<div class="card card-extra">
+<span class="card-label">D. Zaawansowane <span class="level-badge level-extra">AMBITNE</span></span>
+<ol start="13">
+<li>Kiedy używać modelu kulek, a kiedy orbitali?</li>
+<li>Uczeń zapisał: „Obserwacja: magnez utlenił się do MgO”. Wskaż wszystkie błędy i popraw.</li>
+<li>Zaproponuj doświadczenie, które odróżni roztwór soli od wody destylowanej, bez smakowania.</li>
+<li>Dlaczego w chemii mówimy o „modelach”, a o prawie zachowania masy — jako o prawie?</li>
+</ol>
+<details class="answer"><summary>Pokaż odpowiedzi</summary>
+<ol start="13">
+<li>Kulki — liczenie atomów, budowa i bilans; orbitale — wyjaśnianie wiązań, kształtów i właściwości (LO).</li>
+<li>„Utlenił się” i „MgO” to wnioski. Obserwacja: „wstążka spala się jasnym białym płomieniem, powstaje biały, kruchy proszek”. Wniosek (osobno): „powstał tlenek magnezu”.</li>
+<li>Odparować obie próbki na parownicach (woda destylowana i woda z solą) — po roztworze soli zostaje biała krystaliczna pozostałość, po wodzie destylowanej praktycznie nic (kranówka zostawia nalot twardości, dlatego bierzemy destylowaną). Albo zbadać przewodnictwo prądu (roztwór soli przewodzi — N04).</li>
+<li>Modele to uproszczenia wymieniane na dokładniejsze; prawo zachowania masy potwierdzono w niezliczonych pomiarach i obowiązuje we wszystkich modelach.</li>
+</ol>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">E. Transfer — myślenie chemika (4 pkt)</span>
+<ol start="17">
+<li>Uczeń bada dwie próbki. A zmienia barwę, B wydziela gaz. Czy na tej podstawie możesz już powiedzieć, że w obu zaszły reakcje? Napisz, czego jeszcze potrzebujesz.</li>
+<li>Zaprojektuj test rozróżniający dwa wyjaśnienia: „gaz powstał w reakcji” oraz „gaz był wcześniej rozpuszczony w cieczy”.</li>
+<li>Otrzymujesz wynik sprzeczny z przewidywaniem modelu. Podaj trzy rzeczy, które sprawdzisz przed odrzuceniem modelu.</li>
+<li>Napisz krótką odpowiedź według schematu <strong>twierdzenie → dowód → wyjaśnienie</strong> dla dowolnego doświadczenia z tej lekcji.</li>
+</ol>
+<details class="answer"><summary>Przykładowy kierunek</summary>
+<ol start="17">
+<li>Nie. Potrzebny jest test właściwości produktu lub inne dane wskazujące na powstanie nowej substancji.</li>
+<li>Próba kontrolna: tę samą ciecz bez drugiego odczynnika ogrzej lub zamieszaj — jeśli też wydziela pęcherzyki, gaz mógł być rozpuszczony (np. woda gazowana). Albo użyj cieczy wcześniej przegotowanej i ostudzonej. Jeśli gaz pojawia się tylko po dodaniu odczynnika, a test (np. woda wapienna) wykrywa nowy gaz — to wsparcie hipotezy reakcji.</li>
+<li>Sprawdź: warunki doświadczenia, poprawność pomiaru oraz zakres stosowalności modelu.</li>
+<li>Odpowiedź musi zawierać osobno <strong>twierdzenie</strong>, konkretny <strong>dowód z danych</strong> i <strong>wyjaśnienie</strong>, dlaczego ten dowód wspiera wniosek.</li>
+</ol>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">F. Bilansowanie i poziomy poprawności (5 pkt)</span>
+<ol start="21">
+<li>Policz atomy każdego pierwiastka: a) w 2 Ca(OH)₂; b) w 3 H₂SO₄; c) w Al₂(SO₄)₃.</li>
+<li>Które równania są poprawne? a) H₂ + O₂ → H₂O; b) Fe + S → FeS; c) 2 H₂ + O₂ → 2 H₂O.</li>
+<li>Dobierz współczynniki: a) Na + Cl₂ → NaCl; b) H₂ + Cl₂ → HCl.</li>
+<li>Uzupełnij stany skupienia w równaniu CaCl₂ + Na₂CO₃ → CaCO₃ + 2 NaCl (osad CaCO₃ wypada z roztworu) i sprawdź bilans.</li>
+<li>Podaj poziom błędu: a) „CL” zamiast Cl; b) „CO2” zapisane bez indeksu w formie C₂O; c) „2 H₂ + O₂ → H₂O”; d) „Cu + HCl → CuCl₂ + H₂”.</li>
+</ol>
+<details class="answer"><summary>Pokaż odpowiedzi</summary>
+<ol start="21">
+<li>a) 2 Ca, 4 O, 4 H; b) 6 H, 3 S, 12 O; c) 2 Al, 3 S, 12 O.</li>
+<li>a) niepoprawne — po prawej 2 H i 1 O, po lewej 2 H i 2 O; poprawnie 2 H₂ + O₂ → 2 H₂O; b) poprawne (1 Fe, 1 S); c) poprawne (4 H, 2 O po obu stronach).</li>
+<li>a) 2 Na + Cl₂ → 2 NaCl; b) H₂ + Cl₂ → 2 HCl.</li>
+<li>CaCl₂(aq) + Na₂CO₃(aq) → CaCO₃(s)↓ + 2 NaCl(aq). Bilans: Ca 1 = 1, C 1 = 1, O 3 = 3, Na 2 = 2, Cl 2 = 2.</li>
+<li>a) poziom językowy (symbol Cl); b) poziom strukturalny (zły wzór: CO₂, nie C₂O); c) poziom ilościowy (bilans: 2 O po lewej, 1 po prawej); d) poziom chemiczny (miedź nie wypiera wodoru z kwasu solnego — N03).</li>
+</ol>
+</details>
+</div>
+</section>
+<section id="ciekawostki-plus">
+<div class="part-heading"><span class="part-num">12.5</span> Ciekawostki</div>
+<div class="card card-extra">
+<span class="card-label">Alchemicy i pierwsze laboratoria</span>
+<p>Przez stulecia alchemicy szukali „kamienia filozoficznego”, który miał zamieniać ołów w złoto. Złota nie wytworzyli, ale wynaleźli wiele naczyń i metod (destylację, krystalizację), których chemicy używają do dziś.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Lavoisier i waga</span>
+<p>Antoine Lavoisier w XVIII w. (w dziele „Traité élémentaire de chimie”, 1789) zaczął dokładnie ważyć substancje przed i po reakcji. Dzięki temu sformułował prawo zachowania masy i obalił teorię „flogistonu”. Waga stała się najważniejszym przyrządem chemika.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">118 pierwiastków, setki milionów substancji</span>
+<p>Znamy 118 pierwiastków. Rejestry chemiczne opisują dziś setki milionów substancji, a nowe wpisy przybywają co roku.</p>
+</div>
+</section>
+<section id="olimpijska">
+<div class="part-heading"><span class="part-num">12.6</span> Warstwa olimpijska — Dla olimpijczyka</div>
+<p><em>(Warstwa ponad E8 — zadania w stylu konkursów chemicznych.)</em></p>
+<div class="card card-understand">
+<span class="card-label">Dla olimpijczyka — jak myśli chemik głębiej</span>
+<p><strong>Obserwacja zależy od przyrządu</strong> — gołym okiem nie zobaczysz zmiany pH, ale wskaźnik pokaże ją barwą; termometr „widzi” efekt cieplny. <strong>Jedna zmienna naraz</strong> — w dobrze zaplanowanym doświadczeniu zmieniasz tylko jeden czynnik, a resztę utrzymujesz stałą. <strong>Wniosek nie wychodzi poza dane</strong> — z doświadczenia w temperaturach 20–60 °C nie wiesz, co będzie w 90 °C. <strong>Powtarzalność</strong> — wynik jednego pomiaru może być przypadkiem; chemik powtarza doświadczenie i porównuje wyniki.</p>
+</div>
+<details class="adv"><summary>Zadanie O1 (4 pkt) — obserwacja czy wniosek? <span class="adv-tag">poziom ambitny (konkurs)</span></summary><div class="adv-body">
+<p>Oceń, czy zdanie jest obserwacją (O) czy wnioskiem (W): 1) Roztwór zabarwił się na malinowo po dodaniu fenoloftaleiny. 2) W probówce powstała zasada. 3) Wydzielały się pęcherzyki bezbarwnego gazu. 4) Wydzielał się wodór.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>1 — O; 2 — W; 3 — O; 4 — W (nazwa gazu to wniosek — wodoru nie rozpoznasz po wyglądzie). Po 1 pkt.</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie O2 (4 pkt) — zaplanuj doświadczenie <span class="adv-tag">poziom ambitny (konkurs)</span></summary><div class="adv-body">
+<p>Zaplanuj doświadczenie: „Czy temperatura wody wpływa na szybkość rozpuszczania cukru?”. Podaj zmienną niezależną, zależną, dwie wielkości stałe, próbę kontrolną i liczbę powtórzeń.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>niezależna: temperatura wody (1 pkt); zależna: czas rozpuszczenia (1 pkt); stałe: masa cukru, objętość wody, sposób mieszania (1 pkt za dwie); kontrolna: woda w temperaturze pokojowej (1 pkt); powtórzenia: co najmniej 3 pomiary, by ocenić rozrzut (wliczone w punkt za wielkości stałe).</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie O3 (3 pkt) — trzy z czterech poziomów opisu <span class="adv-tag">poziom ambitny (konkurs)</span></summary><div class="adv-body">
+<p>Opisz topnienie lodu na trzech z czterech poziomów opisu (makroskopowym, cząsteczkowym, symbolicznym, ilościowym).</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>makro: lód zamienia się w wodę ciekłą (1 pkt); cząsteczkowy: cząsteczki wody zaczynają się przemieszczać względem siebie, słabną oddziaływania utrzymujące je w sieci (1 pkt); symbolicznie: H₂O(s) → H₂O(c) (1 pkt).</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie O4 (3 pkt) — krytyka protokołu <span class="adv-tag">poziom ambitny (konkurs)</span></summary><div class="adv-body">
+<p>Uczeń zapisał: „Obserwacja: sól zniknęła. Wniosek: zaszła reakcja, bo roztwór jest bezbarwny. Hipoteza: powstanie gaz.” Znajdź 3 błędy i popraw każdy.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>1) „sól zniknęła” to wniosek; obserwacja: kryształy przestały być widoczne (1 pkt). 2) bezbarwność nie dowodzi reakcji — może to być zwykłe rozpuszczanie (1 pkt). 3) hipoteza „powstanie gaz” nie ma warunku sprawdzalności; poprawnie: „jeśli…, to…” (1 pkt).</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie O5 (3 pkt) — test rozróżniający hipotezy <span class="adv-tag">poziom ambitny (konkurs)</span></summary><div class="adv-body">
+<p>Dwie hipotezy: H1 — w probówce z sodą i octem powstaje CO₂; H2 — w użytej wodzie gazowanej był rozpuszczony CO₂, który się tylko wydobywa. Zaproponuj test rozróżniający i przewidywany wynik dla każdej hipotezy.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>Test: (a) wodę gazowaną ogrzać lub zamieszać bez dodatku reagentów, przepuszczając wydzielany gaz przez wodę wapienną — (1 pkt); H1: wydzielanie gazu i zmętnienie tylko po dodaniu octu do sody (1 pkt); H2: gaz wydobywa się także bez reagentów (1 pkt).</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie O6 (2 pkt) — niepewność i powtarzalność <span class="adv-tag">poziom ambitny (konkurs)</span></summary><div class="adv-body">
+<p>Trzy pomiary masy osadu: 2,31 g; 2,28 g; 2,35 g. Podaj wartość średnią i oceń, czy rozrzut wyników pozwala ufać wnioskowi.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>średnia: 2,31 g (1 pkt); rozrzut 0,07 g, czyli ok. 3 % — wynik jest powtarzalny, więc wniosek o masie osadu jest wiarygodny w tej dokładności (1 pkt).</p>
+</details>
+</div></details>
+</section>
+<section id="test">
+<div class="part-heading"><span class="part-num">13</span> Test</div>
+<div class="che-quiz" id="quizWrap"><div class="quiz-q" data-ok="1" data-fb="Obserwacja nie zawiera nazwy produktu ani przyczyny."><h5>1. Które zdanie jest obserwacją?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Wydziela się tlen.</button><button type="button" class="quiz-opt" data-a="1">Wydzielają się pęcherzyki bezbarwnego gazu.</button><button type="button" class="quiz-opt" data-a="2">Zaszła reakcja rozkładu.</button></div></div><div class="quiz-q" data-ok="1" data-fb="Cukier jest w roztworze; można go odzyskać przez odparowanie."><h5>2. Kryształy cukru w herbacie przestały być widoczne. To:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">reakcja chemiczna,</button><button type="button" class="quiz-opt" data-a="1">zjawisko fizyczne (rozpuszczanie),</button><button type="button" class="quiz-opt" data-a="2">zniknięcie substancji.</button></div></div><div class="quiz-q" data-ok="1" data-fb="Współczynnik 2 mnoży całą cząsteczkę."><h5>3. Co oznacza zapis 2 H₂O?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">2 atomy wodoru i 1 atom tlenu</button><button type="button" class="quiz-opt" data-a="1">dwie cząsteczki wody: 4 atomy H i 2 atomy O</button><button type="button" class="quiz-opt" data-a="2">dwa atomy wody</button></div></div><div class="quiz-q" data-ok="0" data-fb="Hipoteza musi być sprawdzalna i zapisana przed wynikiem."><h5>4. Hipotezę zapisuje się:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">przed doświadczeniem, tak żeby dało się ją sprawdzić</button><button type="button" class="quiz-opt" data-a="1">po doświadczeniu, żeby zgadzała się z wynikiem</button><button type="button" class="quiz-opt" data-a="2">tylko wtedy, gdy wynik jest niepewny</button></div></div><div class="quiz-q" data-ok="2" data-fb="Powstaje nowa substancja — MgO."><h5>5. Które zjawisko jest reakcją chemiczną?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">topnienie lodu</button><button type="button" class="quiz-opt" data-a="1">rozpuszczanie soli</button><button type="button" class="quiz-opt" data-a="2">spalanie magnezu</button><button type="button" class="quiz-opt" data-a="3">parowanie wody</button></div></div><div class="quiz-q" data-ok="1" data-fb="Zmętnienie wskazuje na CO₂ w tych warunkach (bez SO₂ i nadmiaru CO₂): powstaje osad CaCO₃."><h5>6. Woda wapienna mętnieje. Jaki wniosek jest uzasadniony?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">wydzielał się wodór</button><button type="button" class="quiz-opt" data-a="1">gaz zawierał CO₂</button><button type="button" class="quiz-opt" data-a="2">wydzielał się tlen</button></div></div><div class="quiz-q" data-ok="2" data-fb="Zapis H₂O(c) → H₂O(g) używa wzorów i strzałki — to poziom symboliczny."><h5>7. Który poziom opisu reprezentuje zapis H₂O(c) → H₂O(g)?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">makroskopowy</button><button type="button" class="quiz-opt" data-a="1">ilościowy</button><button type="button" class="quiz-opt" data-a="2">symboliczny</button></div></div><div class="quiz-q" data-ok="1" data-fb="Model upraszcza rzeczywistość i ma swój zakres stosowalności."><h5>8. Model atomu jako kulki:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">jest dokładnym obrazem atomu</button><button type="button" class="quiz-opt" data-a="1">jest uproszczeniem przydatnym do liczenia atomów</button><button type="button" class="quiz-opt" data-a="2">jest błędny i nie należy go używać</button></div></div><div class="quiz-q" data-ok="2" data-fb="3 cząsteczki × 2 atomy O."><h5>9. Ile atomów tlenu jest w zapisie 3 CO₂?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">3</button><button type="button" class="quiz-opt" data-a="1">5</button><button type="button" class="quiz-opt" data-a="2">6</button></div></div><div class="quiz-q" data-ok="2" data-fb="Pojedyncze objawy mogą mieć inne przyczyny."><h5>10. Co jest najlepszym dowodem, że zaszła reakcja chemiczna?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">zmiana barwy</button><button type="button" class="quiz-opt" data-a="1">wydzielenie ciepła</button><button type="button" class="quiz-opt" data-a="2">powstanie substancji o nowych właściwościach</button></div></div><div class="quiz-q" data-ok="1" data-fb="Obserwacja to to, co widać; nazwę gazu ustala się testem (np. „pyk”)."><h5>11. Uczeń zapisał: „Obserwacja: wydziela się wodór.” Co jest błędem?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">nic, to poprawna obserwacja</button><button type="button" class="quiz-opt" data-a="1">nazwa gazu jest wnioskiem, nie obserwacją</button><button type="button" class="quiz-opt" data-a="2">brakuje wzoru</button></div></div><div class="quiz-q" data-ok="1" data-fb="Tlen podtrzymuje żarzenie; wodór daje „pyk”, CO₂ mąci wodę wapienną."><h5>12. Który wynik wskazuje na tlen?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">krótkie „pyk”</button><button type="button" class="quiz-opt" data-a="1">tląca się drzazga rozżarza się</button><button type="button" class="quiz-opt" data-a="2">woda wapienna mętnieje</button></div></div><div class="quiz-q" data-ok="1" data-fb="Dwie jednostki × 2 atomy H w każdej."><h5>13. Ile atomów wodoru jest w zapisie 2 Ca(OH)₂?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">2</button><button type="button" class="quiz-opt" data-a="1">4</button><button type="button" class="quiz-opt" data-a="2">6</button></div></div><div class="quiz-q" data-ok="1" data-fb="Mieszanina zachowuje właściwości składników; związek ma nowe właściwości."><h5>14. Fe i S zmieszane i rozdzielone magnesem — jaki wniosek?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">to związek, bo składniki są widoczne</button><button type="button" class="quiz-opt" data-a="1">mieszanina, bo magnes oddziela żelazo</button><button type="button" class="quiz-opt" data-a="2">związek, bo są dwa pierwiastki</button></div></div><div class="quiz-q" data-ok="1" data-fb="Probówkę mieszamy płomieniem; nigdy nie wlewamy po brzegi."><h5>15. Ile wynosi bezpieczna część probówki do ogrzewania?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">cała</button><button type="button" class="quiz-opt" data-a="1">około 1/3 objętości</button><button type="button" class="quiz-opt" data-a="2">do pełna</button></div></div><div class="quiz-q" data-ok="1" data-fb="Wiele gazów jest trujących lub drażniących."><h5>16. Jak sprawdzić zapach gazu?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">bezpośrednio nosem</button><button type="button" class="quiz-opt" data-a="1">ruchem dłoni znad naczynia</button><button type="button" class="quiz-opt" data-a="2">nigdy nie sprawdzamy</button></div></div></div><div class="quiz-score" id="quizScore"></div>
+</section>
+<section id="powtorka">
+<div class="part-heading"><span class="part-num">14</span> Karta szybkiego powtórzenia i mapa myśli</div>
+<div class="card card-core">
+<span class="card-label">Na jednej stronie</span>
+<ul>
+<li><strong>Chemia:</strong> skład · budowa · właściwości · przemiany. Właściwości wynikają z budowy.</li>
+<li><strong>Cztery poziomy:</strong> makro (widzę) · cząsteczkowy (model) · symboliczny (zapis) · ilościowy (liczby).</li>
+<li><strong>Obserwacja ≠ wniosek.</strong> Hipoteza — przed doświadczeniem, sprawdzalna.</li>
+<li><strong>Zjawisko fizyczne</strong> (bez nowej substancji; wyjściową często da się odzyskać prostymi metodami) <strong>vs reakcja</strong> (powstaje substancja o nowych właściwościach). Jeden objaw to nie dowód.</li>
+<li><strong>Symbol</strong> — pierwiastek/atom · <strong>wzór</strong> — skład · <strong>indeks</strong> — atomy w cząsteczce · <strong>współczynnik</strong> — liczba cząsteczek · <strong>równanie</strong> — atomy się zgadzają.</li>
+<li><strong>Pięć pytań chemika:</strong> co obserwuję → jaki typ zmiany → jaki model → jaki zapis → jak sprawdzę.</li>
+<li><strong>Dobre uzasadnienie:</strong> twierdzenie → dowód → wyjaśnienie.</li>
+<li><strong>Dobry test:</strong> pytanie → hipoteza → zmienna → kontrola → obserwacja/pomiar → kryterium wniosku.</li>
+<li><strong>Model ≠ rzeczywistość</strong> — wybieraj model adekwatny do pytania i sprawdzaj jego przewidywania.</li>
+</ul>
+</div>
+<div class="card card-understand">
+<span class="card-label">Mapa myśli</span>
+<p><strong>CHEMIA</strong> → <em>skład</em> (pierwiastki, wzory) · <em>budowa</em> (wiązania, kształt — F10–F15) · <em>właściwości</em> (fizyczne, chemiczne) · <em>przemiany</em> (zjawiska fizyczne, reakcje — F16–F17)
+→ <em>poziomy opisu</em>: makro → cząsteczkowy → symboliczny → ilościowy
+→ <em>metoda</em>: obserwacja → hipoteza → test → wniosek → model → zapis → sprawdzenie
+→ <em>zasady nauki</em>: próbuj · mów · rysuj · powtarzaj · testuj się</p>
+</div>
+<div class="che-lesson-viz-ref" data-che-lesson-viz="mind-map"><button type="button" data-che-open-viz="mind-map" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'mind-map',lessonId:'F01'},'*')"><b>Mapy myśli MASTER</b><span>mapa myśli chemii do samodzielnego uzupełniania</span></button></div>
+<!-- OPIS: Mapa myśli z pojęciami lekcji ułożonymi wokół centralnego hasła, z gałęziami do samodzielnego uzupełniania. Wniosek: pojęcia z lekcji łączą się w jedną sieć, a nie są osobnymi definicjami do wykucia. -->
+</section>
+<section id="fiszki">
+<div class="part-heading"><span class="part-num">15</span> Fiszki</div>
+<div id="flashcards" class="flashcard-grid"><button class="flashcard" type="button"><span class="front">Co bada chemia?</span><span class="back">skład, budowę, właściwości i przemiany substancji</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Obserwacja</span><span class="back">to, co widzę, słyszę, czuję lub mierzę — bez przyczyny</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Wniosek</span><span class="back">interpretacja obserwacji, wsparta danymi z testu</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Hipoteza</span><span class="back">sprawdzalne przypuszczenie zapisane przed doświadczeniem</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Zjawisko fizyczne</span><span class="back">zmiana bez powstania nowej substancji (topnienie, rozpuszczanie)</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Reakcja chemiczna</span><span class="back">przemiana, w której powstaje nowa substancja</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Objawy reakcji</span><span class="back">barwa, gaz, osad, ciepło lub światło, zapach — żaden sam nie jest dowodem</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Test na CO₂</span><span class="back">woda wapienna mętnieje (CaCO₃↓) — wskazuje na CO₂ w tych warunkach</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Test na H₂</span><span class="back">zbliżona łuczynka daje krótkie „pyk”</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Test na O₂</span><span class="back">tląca się drzazga rozżarza się</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Piktogram GHS</span><span class="back">graficzny znak zagrożenia, np. żrący, toksyczny, palny</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Jak odzyskać rozpuszczoną sól?</span><span class="back">odparować wodę</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Indeks a współczynnik</span><span class="back">indeks — atomy w cząsteczce; współczynnik — liczba cząsteczek</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Cztery poziomy opisu</span><span class="back">makroskopowy, cząsteczkowy, symboliczny, ilościowy</span><span class="card-tag tag-understand">rozumienie</span></button><button class="flashcard" type="button"><span class="front">Pięć pytań chemika</span><span class="back">co obserwuję? jaki typ zmiany? jaki model? jaki zapis? jak sprawdzę?</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Model</span><span class="back">uproszczenie rzeczywistości z zakresem stosowalności</span><span class="card-tag tag-understand">rozumienie</span></button><button class="flashcard" type="button"><span class="front">Cztery poziomy poprawności</span><span class="back">językowy, strukturalny, ilościowy, chemiczny</span><span class="card-tag tag-understand">rozumienie</span></button><button class="flashcard" type="button"><span class="front">próba kontrolna</span><span class="back">próba bez zmienianego czynnika, do porównania z próbą badawczą</span><span class="card-tag tag-olimpijski">metoda</span></button><button class="flashcard" type="button"><span class="front">jedna zmienna naraz — dlaczego?</span><span class="back">bo tylko wtedy wiadomo, co wywołało różnicę</span><span class="card-tag tag-olimpijski">metoda</span></button><button class="flashcard" type="button"><span class="front">SO₂ też mąci wodę wapienną</span><span class="back">dlatego test na CO₂ wymaga wykluczenia SO₂</span><span class="card-tag tag-olimpijski">metoda</span></button><button class="flashcard" type="button"><span class="front">„wydzielił się wodór”</span><span class="back">to wniosek, nie obserwacja</span><span class="card-tag tag-olimpijski">metoda</span></button></div>
+</section>
+<section id="slownik">
+<div class="part-heading"><span class="part-num">16</span> Słownik</div>
+<dl><div class="def-item"><dt>Chemia</dt><dd>nauka o składzie, budowie, właściwościach i przemianach substancji</dd></div><div class="def-item"><dt>Obserwacja</dt><dd>informacja zebrana zmysłami lub przyrządem, bez interpretacji</dd></div><div class="def-item"><dt>Hipoteza</dt><dd>sprawdzalne przypuszczenie sformułowane przed doświadczeniem</dd></div><div class="def-item"><dt>Wniosek</dt><dd>interpretacja wyników doświadczenia</dd></div><div class="def-item"><dt>Zjawisko fizyczne</dt><dd>przemiana, w której nie powstaje nowa substancja</dd></div><div class="def-item"><dt>Reakcja chemiczna</dt><dd>przemiana, w której powstają nowe substancje</dd></div><div class="def-item"><dt>Model</dt><dd>uproszczony opis rzeczywistości, który wyjaśnia obserwacje i pozwala przewidywać</dd></div><div class="def-item"><dt>Symbol chemiczny</dt><dd>jedna lub dwie litery oznaczające pierwiastek (pierwsza wielka)</dd></div><div class="def-item"><dt>Wzór chemiczny</dt><dd>zapis składu substancji za pomocą symboli i indeksów</dd></div><div class="def-item"><dt>Równanie reakcji</dt><dd>zapis przemiany substratów w produkty z zachowaniem liczby atomów</dd></div><div class="def-item"><dt>Substrat</dt><dd>substancja wyjściowa reakcji (po lewej stronie równania)</dd></div><div class="def-item"><dt>Produkt</dt><dd>substancja powstająca w reakcji (po prawej stronie równania)</dd></div><div class="def-item"><dt>Objaw reakcji</dt><dd>zmiana widoczna w trakcie przemiany (barwa, gaz, osad); sama nie dowodzi reakcji</dd></div><div class="def-item"><dt>Indeks</dt><dd>mała cyfra we wzorze — liczba atomów w cząsteczce lub jednostce wzoru</dd></div><div class="def-item"><dt>Współczynnik</dt><dd>duża cyfra przed wzorem — liczba cząsteczek lub jednostek wzoru</dd></div><div class="def-item"><dt>Wzór a nazwa</dt><dd>wzór zapisuje skład substancji, nazwa jedynie ją identyfikuje</dd></div><div class="def-item"><dt>Próba kontrolna</dt><dd>próba bez zmienianego czynnika, do porównania z próbą badawczą</dd></div><div class="def-item"><dt>Zmienna niezależna</dt><dd>czynnik celowo zmieniany przez doświadczającego</dd></div><div class="def-item"><dt>Zmienna zależna</dt><dd>wielkość mierzona lub obserwowana jako wynik</dd></div><div class="def-item"><dt>Poziomy opisu</dt><dd>makroskopowy, cząsteczkowy, symboliczny, ilościowy</dd></div><div class="def-item"><dt>Pozostałość krystaliczna</dt><dd>substancja stała, która zostaje po odparowaniu roztworu</dd></div><div class="def-item"><dt>Mieszanina i związek</dt><dd>mieszanina zachowuje właściwości składników, związek ma nowe właściwości (więcej w F02)</dd></div></dl>
+</section>
+<section id="checklista">
+<div class="part-heading"><span class="part-num">17</span> Checklista</div>
+<div class="card card-basic">
+<span class="card-label">Umiem…</span>
+<ul>
+<li>☐ odróżnić obserwację od wniosku i poprawić zdanie, w którym są pomylone,</li>
+<li>☐ zapisać hipotezę przed doświadczeniem i dobrać test, który ją sprawdzi,</li>
+<li>☐ rozpoznać zjawisko fizyczne i reakcję chemiczną po dowodzie nowej substancji,</li>
+<li>☐ wykryć CO₂ wodą wapienną,</li>
+<li>☐ odczytać symbol, wzór, indeks, współczynnik i proste równanie,</li>
+<li>☐ zastosować pięć pytań chemika do nowego zjawiska,</li>
+<li>☐ zaplanować prosty test i wskazać zmienną oraz warunki kontrolne,</li>
+<li>☐ uzasadnić wniosek schematem twierdzenie → dowód → wyjaśnienie,</li>
+<li>☐ (rozumienie) opisać zjawisko na czterech poziomach,</li>
+<li>☐ (ambitnie) podać ograniczenia dwóch modeli i przewidywanie wynikające z modelu.</li>
+</ul>
+</div>
+</section>
+<section id="powtorki">
+<div class="part-heading"><span class="part-num">18</span> System powtórek</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Kiedy</th><th>Ile</th><th>Co</th></tr></thead>
+<tbody>
+<tr><td>po lekcji</td><td>20 min</td><td>przeczytaj kartę z <a href="#powtorka">§14</a> i zrób ćwiczenia A</td></tr>
+<tr><td>po 1 dniu</td><td>10 min</td><td>fiszki</td></tr>
+<tr><td>po 3 dniach</td><td>15 min</td><td>ćwiczenia B</td></tr>
+<tr><td>po tygodniu</td><td>20 min</td><td>test z <a href="#test">§13</a></td></tr>
+<tr><td>po 2 tygodniach</td><td>10 min</td><td>fiszki</td></tr>
+<tr><td>po miesiącu</td><td>25 min</td><td>całość + ćwiczenia C–D</td></tr>
+</tbody></table></div>
+</section>
+<section id="mosty">
+<div class="part-heading"><span class="part-num">A</span> Dodatek A — mosty i co dalej</div>
+<div class="card card-understand">
+<span class="card-label">Powiązania</span>
+<ul>
+<li><strong>F02 Materia i substancje</strong> — następna lekcja: co dokładnie nazywamy substancją, pierwiastkiem, związkiem i mieszaniną.</li>
+<li><strong>F03 Właściwości i rozdzielanie</strong> — zjawisko fizyczne vs reakcja w pełnym ujęciu, metody rozdzielania mieszanin.</li>
+<li><strong>F12 Wzory · F17 Równania</strong> — pełne zasady zapisu, które tu tylko odczytujemy.</li>
+<li><strong>F16 Od obserwacji do modelu reakcji</strong> — rozwinięcie metody obserwacja → hipoteza → test → wniosek → model dla reakcji.</li>
+<li><strong>F20 Klinika błędów</strong> — późniejszy powrót do procedury rozpoznawania, gdzie dokładnie powstał błąd: obserwacja, model, zapis czy wniosek.</li>
+<li><strong>F21 Transfer</strong> — zastosowanie tej samej procedury w nowych, mieszanych sytuacjach.</li>
+<li><strong>F15 Polarność</strong> — dlaczego woda wrze wyżej niż H₂S.</li>
+<li><strong>N02, N03</strong> — zobojętnianie; <strong>N01</strong> — tlenki (spalanie magnezu).</li>
+</ul>
+</div>
+</section>
+<section id="modele">
+<div class="part-heading"><span class="part-num">↻</span> Modele silnika w tej lekcji</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Sekcja</th><th>Model</th><th>Co pokazuje</th></tr></thead>
+<tbody>
+<tr><td><a href="#poziomy">§2</a></td><td><code>live-cv</code></td><td>łańcuch atom → cząsteczka → substancja → reakcja</td></tr>
+<tr><td><a href="#doswiadczenia">§10</a></td><td><code>f01-doswiadczenia-v01</code> · <code>f01SolWoda</code>, <code>f01Odparowanie</code>, <code>f01SodaOcet</code>, <code>f01WodaWapienna</code>, <code>f01Mg</code>, <code>f01FeS</code></td><td>pracownia F01: zjawiska fizyczne vs reakcje</td></tr>
+<tr><td><a href="#doswiadczenia">§10</a></td><td><code>beaker-prediction-enhanced</code></td><td>przewiduj obserwację, potem sprawdź</td></tr>
+<tr><td><a href="#powtorka">§14</a></td><td><code>mind-map</code></td><td>mapa myśli</td></tr>
+</tbody></table></div>
+<details class="lk-log"><summary>AUDYT W1 — audyt 01 (2026-10-13)</summary>
+<h3>AUDYT W1 — audyt 01 (2026-10-13)</h3>
+<p>Wprowadzono: A1–A10 (pierwiastek/substancja, przykład HCl + NaOH z testem, Mg z hipotezą i testem, jedno kryterium reakcji, Dośw. 1–4, woda wapienna, poziomy opisu, barwa FeS, tygiel → płytka), B1–B13 (symbole ↑↓(s)(c)(g)(aq), BHP, tabela testów na gazy, bilanse i poziomy poprawności, słownik, fiszki, test rozszerzony o 7 pytań i <code>!</code>, warstwa olimpijska O4–O6), C (N01–N08, link F15, klinika → F02, ciekawostki), D (usunięto changelog i notatkę deweloperską; scalono <code>lead</code>; zaktualizowano <code>stan</code>).</p>
+<p>Nieprzyjęte:
+- A11 — zamiana <code>(c)</code> na <code>(l)</code>: odrzucone. Kurs stosuje <code>(c)</code> dla cieczy (ok. 234 wystąpień w gotowych lekcjach, <code>(l)</code> — 25); F01 ujednolicono do <code>(c)</code>.
+- Sekcja D — <code>$$ równanie</code> bez zamknięcia oraz <code>Równanie::</code>: składnia silnika stosowana w kilkunastu lekcjach kursu; zostaje.
+- Sekcja D — kolizje kotwic (<code>#test</code>, <code>#powtorka</code> itd.): odrzucone. Każda lekcja buduje osobny HTML, więc kotwice są lokalne.
+- Kicker <code>MASTER v1.1</code>: zostaje, zgodny z wersją lekcji.</p>
+<p>Poprawione względem propozycji:
+- Ciekawostka o liczbie związków: zamiast „ponad sto milionów” — „setki milionów substancji w rejestrach” (liczba rośnie; „orientacyjnie” usunięte).
+- Ćw. O2/O3: punktacja zachowana; uzupełnienia nie zmieniają sumy punktów.</p>
+</details>
+</section>
+<footer class="footer"><p><strong>CHEMIA F01 v1.1 MASTER</strong> · Jak myśli chemik · 2026</p></footer>
+</main>
+<script>
+/* KLOCKI — lekkie komponenty wielokrotnego użytku dla lekcji (bez silnika).
+   Każdy klocek: KLOCKI.def(nazwa, {opis, dane, rysuj(canvas, stan, t)}) — rejestr,
+   KLOCKI.montuj(host, nazwa, opcje) — tworzy canvas, autostart gdy widoczny,
+   klik zatrzymuje/wznawia. Lekcja wymienia klocki w manifeście (klocki/manifest). */
+(function (g) {
+  var reg = {};
+  /* JEDEN zegar animacji dla wszystkich klocków: jedna pętla rAF, funkcje fn(now, dt); pętla stoi, gdy nikt nie gra. */
+  var zegar = (function () {
+    var fns = [], id = 0, ost = 0;
+    function petla(now) {
+      var dt = Math.min(0.05, (now - ost) / 1000); ost = now;
+      fns.slice().forEach(function (f) { try { f(now, dt); } catch (e) { } });
+      id = fns.length ? requestAnimationFrame(petla) : 0;
+    }
+    return {
+      dodaj: function (f) { if (fns.indexOf(f) < 0) fns.push(f); if (!id) { ost = performance.now(); id = requestAnimationFrame(petla); } },
+      usun: function (f) { var i = fns.indexOf(f); if (i >= 0) fns.splice(i, 1); },
+      liczba: function () { return fns.length; }
+    };
+  })();
+  var RM_ = !!(g.matchMedia && g.matchMedia('(prefers-reduced-motion: reduce)').matches);   // użytkownik prosi o brak animacji: bez autostartu
+  function def(nazwa, k) { reg[nazwa] = k; }
+  function montuj(host, nazwa, opc) {
+    var k = reg[nazwa];
+    if (!k) { host.textContent = 'Brak klocka: ' + nazwa; return null; }
+    opc = Object.assign({}, k.domyslne || {}, opc || {});
+    if (k.html) { host.innerHTML = ''; k.html(host, opc); return null; }
+    var c = document.createElement('canvas');
+    c.width = opc.szer || 480; c.height = opc.wys || 300;
+    c.style.width = '100%'; c.style.maxWidth = c.width + 'px'; c.style.height = 'auto';
+    c.setAttribute('role', 'img');
+    c.setAttribute('aria-label', (opc.opis || k.opis || nazwa));
+    host.innerHTML = ''; host.appendChild(c);
+    var stan = Object.assign({}, k.stan0 ? k.stan0(opc) : {}, {opc: opc});
+    var ctx = c.getContext('2d'), t0 = performance.now(), grane = false;   // start() dodaje klocek do wspólnego zegara (IO albo od razu)
+    function klatka(now) {
+      try { k.rysuj(ctx, c.width, c.height, stan, (now - t0) / 1000, opc); } catch (e) { }
+    }
+    function start() { if (!grane) { grane = true; t0 = performance.now() - (stan._t || 0) * 1000; zegar.dodaj(klatka); } }
+    function stop() { if (grane) { stan._t = (performance.now() - t0) / 1000; } grane = false; zegar.usun(klatka); }
+    c.addEventListener('click', function () { grane ? stop() : start(); });
+    if ('IntersectionObserver' in g && !RM_) {
+      var io = new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? start() : stop(); }); });
+      io.observe(c);
+    } else if (!RM_) { start(); }
+    k.rysuj(ctx, c.width, c.height, stan, 0, opc);
+    return {stop: stop, start: start, stan: stan, canvas: c};
+  }
+  g.KLOCKI = {def: def, montuj: montuj, zegar: zegar, nazwy: function () { return Object.keys(reg); }};
+})(window);
+
+/* KLOCEK: karta-bhp — zasady pracy w pracowni i krótkie kroki pierwszej pomocy (karty do rozwinięcia).
+   Treść ogólna, szkolna; przy poważnym urazie wezwać nauczyciela i pogotowie 112/999. Opcje: otwarte = "1" rozwija wszystkie; zwiniete = "1" wszystkie zwinięte;
+   karty = "Ogrzewanie,Kwasy i zasady" pokazuje tylko wskazane karty (nazwy jak w nagłówkach). */
+(function () {
+  var KARTY = [
+    ['Przed doświadczeniem', ['Okulary ochronne i fartuch, długie włosy związane.', 'Czytaj opis do końca; nic nie próbuj, nie wąchaj bezpośrednio znad naczynia.', 'Odczynniki bierz w najmniejszej potrzebnej ilości, naczynia podpisuj.']],
+    ['Kwasy i zasady', ['Kwas wlewaj do wody (nie odwrotnie), cienkim strumieniem, mieszając.', 'Kontakt ze skórą lub oczami: płucz dużą ilością bieżącej wody przez co najmniej 15 minut i zawołaj nauczyciela.', 'Rozlany odczynnik zgłoś nauczycielowi, nie wycieraj go gołą ręką.']],
+    ['Ogrzewanie', ['Probówkę ogrzewaj ukośnie (ok. 45°), otworem od siebie i od innych osób, poruszając nią w płomieniu.', 'Nie zaglądaj do ogrzewanej probówki od góry.', 'Gorące naczynia chwytaj szczypcami lub łapaczem, stawiaj na podkładce.']],
+    ['Oparzenie i zranienie', ['Oparzenie: chłodź zimną wodą kilkanaście minut, nie smaruj tłuszczem, powiadom nauczyciela.', 'Skaleczenie szkłem: nie usuwaj odłamków z rany, zawołaj nauczyciela.', 'Wdychanie gazu: wyjdź na świeże powietrze i zgłoś to nauczycielowi.']]
+  ];
+  KLOCKI.def('karta-bhp', {
+    opis: 'Karta BHP: zasady pracy w pracowni i pierwsza pomoc.',
+    domyslne: {otwarte: 0},
+    html: function (host, opc) {
+      host.style.display = 'block';
+      var wyb = opc.karty ? String(opc.karty).split(',').map(function (z) { return z.trim(); }) : null;
+      host.innerHTML = KARTY.filter(function (k) { return !wyb || wyb.indexOf(k[0]) >= 0; }).map(function (k, i) {
+        return '<details' + (Number(opc.otwarte) || (i === 0 && !Number(opc.zwiniete)) ? ' open' : '') + ' style="border:1px solid var(--border,#cbd5e1);border-radius:8px;padding:6px 12px;margin:0 0 6px;background:var(--surface,#fff)">' +
+          '<summary style="cursor:pointer;font-weight:600;color:var(--accent,#0d6868)">' + k[0] + '</summary><ul style="margin:6px 0 4px;padding-left:20px;font-size:14px">' +
+          k[1].map(function (t) { return '<li>' + t + '</li>'; }).join('') + '</ul></details>';
+      }).join('');
+    }
+  });
+})();
+
+(function(){document.querySelectorAll('[data-klocek]').forEach(function(f){var o={};try{o=JSON.parse(f.getAttribute('data-opt')||'{}')}catch(e){}Object.keys(o).forEach(function(k){if(o[k]!==''&&!isNaN(Number(o[k])))o[k]=Number(o[k])});KLOCKI.montuj(f.querySelector('.lk-fig-body'),f.getAttribute('data-klocek'),o)})})();
+/* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
+   postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
+(function(){
+var html=document.documentElement;
+function ciemny(){var t=html.getAttribute('data-theme');return t?t==='dark':!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function oznacz(){if(ciemny())html.setAttribute('data-ciemny','');else html.removeAttribute('data-ciemny')}
+try{var z=localStorage.getItem('lekcja-motyw');if(z)html.setAttribute('data-theme',z)}catch(e){}
+oznacz();if(window.matchMedia)try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',oznacz)}catch(e){}
+
+function start(){
+var root=document;
+root.querySelectorAll('.flashcard').forEach(function(b){if(b.dataset.lkFz)return;b.dataset.lkFz=1;b.removeAttribute('onclick');b.setAttribute('aria-pressed','false');
+ b.addEventListener('click',function(){var on=b.classList.toggle('flipped');b.setAttribute('aria-pressed',on?'true':'false')})});
+root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibling,ok=0,n=0,all=w.querySelectorAll('.quiz-q').length;
+ if(sc&&sc.classList.contains('quiz-score'))sc.setAttribute('aria-live','polite');
+ w.querySelectorAll('.quiz-q').forEach(function(d){var good=+d.dataset.ok;d.querySelectorAll('.quiz-opt').forEach(function(b){b.onclick=function(){if(d.dataset.done)return;d.dataset.done=1;n++;if(+b.dataset.a===good)ok++;
+  d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
+  if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
+  if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var b=root.querySelector('#advToggle');
+if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
+ if(!k)b.style.display='none';
+ b.textContent='Pokaż treści akademickie ('+k+')';
+ b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';adv().forEach(function(d){d.open=on});b.setAttribute('aria-pressed',on?'true':'false');b.textContent=(on?'Ukryj':'Pokaż')+' treści akademickie ('+k+')'}}
+// spis zwinięty na telefonie
+var sp=root.querySelector('#spis');if(sp&&window.innerWidth<700)sp.removeAttribute('open');
+// przełącznik jasny/ciemny
+var tb=root.querySelector('#lkMotyw');
+if(tb)tb.onclick=function(){var t=ciemny()?'light':'dark';html.setAttribute('data-theme',t);try{localStorage.setItem('lekcja-motyw',t)}catch(e){}oznacz()};
+// postęp czytania + aktywna sekcja w spisie
+var bar=root.querySelector('.lk-prog'),links={},secs=[];
+root.querySelectorAll('.toc-link[href^="#"]').forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1));if(s){links[s.id]=a;secs.push(s)}});
+var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+ if(bar)bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';
+ var cur=null,lim=(parseInt(getComputedStyle(h).getPropertyValue('--header-h'))||52)+40;
+ for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
+ for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// fiszki: pokazuje pierwsze N (domyślnie 6, atrybut data-fz-pierwsze="N"), reszta po wyraźnym przycisku
+root.querySelectorAll('.flashcard-grid').forEach(function(g){
+ var cards=[].slice.call(g.querySelectorAll('.flashcard')),N=+(g.getAttribute('data-fz-pierwsze')||6);
+ if(!(N>0)||cards.length<=N)return;
+ var ukryte=cards.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more';
+ function lab(on){ukryte.forEach(function(c){c.hidden=!on});
+  b.textContent=on?'▲ Zwiń fiszki':'▼ Pokaż pozostałe '+ile+' fiszek (razem '+cards.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ g.insertAdjacentElement('afterend',b);
+});
+// testy: pokazuje pierwsze N pytań (domyślnie 5, atrybut data-q-pierwsze), reszta po wyraźnym przycisku
+root.querySelectorAll('.che-quiz').forEach(function(w){
+ var qs=[].slice.call(w.querySelectorAll('.quiz-q')),N=+(w.getAttribute('data-q-pierwsze')||5);
+ if(!(N>0)||qs.length<=N)return;
+ var ukryte=qs.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more q-more';
+ function lab(on){ukryte.forEach(function(q){q.hidden=!on});
+  b.textContent=on?'▲ Zwiń pytania':'▼ Pokaż pozostałe '+ile+(ile===1?' pytanie':(ile<5?' pytania':' pytań'))+' (razem '+qs.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ var sc=w.nextElementSibling;(sc&&sc.classList.contains('quiz-score')?sc:w).insertAdjacentElement('afterend',b);
+});
+// grafiki przedmiotu
+if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
+if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();
+
+</script>
+</body>
+</html>

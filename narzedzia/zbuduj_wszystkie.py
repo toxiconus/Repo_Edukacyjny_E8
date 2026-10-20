@@ -31,13 +31,38 @@ def index(p, out, rows):
         L.PRZEDMIOTY[p], acc, L.PRZEDMIOTY[p], len(rows), karty)
     open(os.path.join(out, 'index.html'), 'w', encoding='utf-8').write(doc)
 
+def klucz_chemii(f):
+    b = os.path.basename(f)
+    if b.startswith('LKO_'): return re.match(r'(LKO_ORG\d+)', b).group(1) if re.match(r'LKO_ORG\d+', b) else b
+    m = re.match(r'CHE\.\d+\.([A-Z]+\d+[A-Za-z]?)', b) or re.match(r'([A-Z]+\d+[A-Za-z]?)_', b)
+    return m.group(1) if m else b
+
+def pliki_chemii():
+    """Jedna wersja każdej lekcji: wybór z chemia/plany/WYBOR_WERSJI.json, domyślnie lekcje_md; lekcje tylko w gotowe/ dołączane."""
+    import json
+    wyb = json.load(open(os.path.join(R, 'chemia/plany/WYBOR_WERSJI.json'), encoding='utf-8'))
+    grupy = {}
+    for f in sorted(glob.glob(os.path.join(R, 'chemia/lekcje_md/*/*.md'))) + sorted(glob.glob(os.path.join(R, 'chemia/che-modular/lessons-md/gotowe/*.md'))):
+        if os.path.basename(f).startswith('README') or '.99.X' in os.path.basename(f): continue
+        grupy.setdefault(klucz_chemii(f), []).append(f)
+    wynik = []
+    for k, lista in grupy.items():
+        zrodlo = wyb.get(k, 'lekcje_md')
+        wybrane = [f for f in lista if (('chemia/che-modular' in f) == (zrodlo == 'gotowe'))]
+        if not wybrane: wybrane = lista[:1]
+        wynik.append(wybrane[0])
+    return sorted(wynik)
+
 def main():
     wyb = sys.argv[1:] or list(ZRODLA)
     zle = 0
     for p in wyb:
         outrel, wz = ZRODLA[p]
         out = os.path.join(R, outrel); os.makedirs(out, exist_ok=True)
-        pliki = [f for w in wz for f in sorted(glob.glob(os.path.join(R, w))) if not os.path.basename(f).startswith('README') and '.99.X' not in os.path.basename(f)]
+        if p == 'che':
+            pliki = pliki_chemii()
+        else:
+            pliki = [f for w in wz for f in sorted(glob.glob(os.path.join(R, w))) if not os.path.basename(f).startswith('README') and '.99.X' not in os.path.basename(f)]
         OPIS.egzekwuj(pliki, wyjdz=False)
         rows = []
         for f in pliki:
@@ -47,6 +72,10 @@ def main():
             fn = os.path.splitext(os.path.basename(f))[0] + '.html'
             open(os.path.join(out, fn), 'w', encoding='utf-8').write(doc)
             rows.append((fn, meta.get('kod', ''), re.sub(r'<[^>]+>', '', L.m.inline(meta.get('tytul', '') or fn))))
+        wygenerowane = {r[0] for r in rows} | {'index.html'}
+        for stary in glob.glob(os.path.join(out, '*.html')):
+            if os.path.basename(stary) not in wygenerowane:
+                os.remove(stary)  # nieaktualna nazwa po zmianie wyboru wersji
         index(p, out, rows)
         print('%s: %d lekcji → %s/' % (p, len(rows), outrel))
     sys.exit(1 if zle else 0)
