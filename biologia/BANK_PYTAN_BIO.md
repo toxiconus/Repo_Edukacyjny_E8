@@ -169,3 +169,16 @@ Układ ruchu; układ wydalniczy; genetyka (mitoza, mejoza, allele, krzyżówki);
 58. genotypy: 1 AA : 2 Aa : 1 aa; fenotypy: 3 dominujące : 1 recesywne
 59. naturalny — wybiera środowisko; sztuczny — wybiera człowiek
 60. producent: trawa; konsument I: zając; konsument II: lis; energia jest tracona jako ciepło
+
+### Wzorcowe plany do pytań [D] — kryteria punktowe
+
+Każdy plan: problem, hipoteza, zmienna niezależna i zależna, stałe, próba kontrolna, powtórzenia, wynik. Punktacja: 1 pkt za każdy element poprawnie podany (pełny plan = 6 pkt); w pytaniach krótszych skalować proporcjonalnie.
+
+- **Pytanie 15 (tłuszcz w nasionach słonecznika):** problem — czy nasiona słonecznika zawierają tłuszcz; hipoteza — zawierają; metoda — rozgniecenie nasiona na papierze, odczekanie, obserwacja półprzezroczystego śladu. Próba kontrolna: kropla wody na papierze. Stałe: ten sam papier, ta sama ilość materiału. Wynik: trwały półprzezroczysty ślad = tłuszcz.
+- **Pytanie 24 (natężenie światła a fotosynteza moczarki):** zmienna niezależna — odległość od lampy (natężenie światła); zależna — liczba pęcherzyków O₂ w minutę; stałe — temperatura wody, ta sama masa gałązki, ten sam CO₂, czas pomiaru. Próba kontrolna: gałązka w ciemności lub w tej samej wodzie bez światła. Powtórzenia: co najmniej 3 pomiary każdej odległości, wynik jako średnia.
+- **Pytanie 25 (drożdże i CO₂):** próba badawcza — cukier + drożdże + woda; kontrolna — cukier bez drożdży (lub woda z drożdżami bez cukru). Zmienna zależna: pęcherzyki lub mętnienie wody wapiennej. Wniosek: drożdże w obecności cukru wydzielają CO₂ w procesie fermentacji.
+- **Pytanie 38 (światło a rozmieszczenie dżdżownic):** zmienna niezależna — oświetlenie połowy pudełka; zależna — liczba dżdżownic w każdej części po 10 min; stałe — wilgotność, gleba, liczba dżdżownic. Próba kontrolna: pudełko bez różnicy oświetlenia. Wniosek: dżdżownice wybierają ciemniejszą, wilgotniejszą część.
+- **Pytanie 39 (tłuszcz w nasionach fasoli):** jak 15, z fasolą zamiast słonecznika. Próba kontrolna: woda. Dodatkowo można użyć nasion słonecznika jako próby dodatniej.
+- **Pytanie 53 (wysiłek a tętno):** zmienna niezależna — wysiłek (marsz lub bieg 2 min); zależna — tętno w uderzeniach na minutę; stałe — czas pomiaru, pozycja ciała. Próba kontrolna: pomiar spoczynkowy. Powtórzenie po odpoczynku pokazuje powrót do normy.
+- **Pytanie 54 (wysiłek a częstość oddechów):** jak 53, zależna — liczba oddechów na minutę (liczenie unoszeń klatki piersiowej). Próba kontrolna: pomiar w spoczynku.
+- **Pytanie 60 (łańcuch trawa → zając → lis):** nie wymaga doświadczenia. Pełna odpowiedź: producent — trawa; konsument I rzędu — zając; konsument II rzędu — lis. Energia maleje, bo na każdym poziomie część jest tracona jako ciepło i na oddychanie, więc dla wyższych ogniw zostaje jej mniej.

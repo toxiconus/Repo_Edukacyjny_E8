@@ -257,6 +257,14 @@ Obserwacja: W miejscu rzadziej uczęszczanym jest więcej gatunków i osobników
 Wniosek: Intensywność ruchu wpływa na liczebność roślin.
 :::
 
+::: karta extra | Zadanie [D] — planowanie obserwacji i analiza danych: dżdżownice a rodzaj gleby
+Zaplanuj obserwację, czy liczba dżdżownic zależy od rodzaju gleby (piasek kontra próchnica). Podaj problem, hipotezę, zmienne, próbę kontrolną, liczbę powtórzeń i sposób zliczania. Następnie wskaż, jak zapisać wynik w tabeli.
+:::
+
+::: odp | Klucz
+Problem: Czy rodzaj gleby wpływa na liczbę dżdżownic? Hipoteza: w glebie próchnicznej (bogatszej w materię organiczną) jest więcej dżdżownic niż w piasku. Zmienna niezależna: rodzaj gleby. Zmienna zależna: liczba dżdżownic po 15 min. Stałe: wilgotność, masa gleby, pojemnik, liczba dżdżownic na starcie, czas. Próba kontrolna: pojemnik z gliną lub ziemią ogrodową o znanej zawartości. Powtórzenia: co najmniej 3 pojemniki każdej gleby. Tabela: kolumny — rodzaj gleby, numer powtórzenia, liczba dżdżownic; na końcu średnia dla każdej gleby.
+:::
+
 ## 11 | Test końcowy {#test}
 
 ::: test

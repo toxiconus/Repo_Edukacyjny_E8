@@ -288,6 +288,14 @@ Obserwacja: Po wysiłku liczba oddechów na minutę jest większa.
 Wniosek: Wysiłek zwiększa częstość oddechów, aby dostarczyć więcej tlenu i usunąć nadmiar CO₂.
 :::
 
+::: karta extra | Zadanie [D] — planowanie doświadczenia: chłodzenie przez parowanie (model potu)
+Zaplanuj doświadczenie sprawdzające, czy wiatr zwiększa tempo ochładzania się mokrej skóry (model pocenia się). Podaj: problem, hipotezę, zmienną niezależną i zależną, próbę kontrolną oraz co utrzymujesz stałe.
+:::
+
+::: odp | Klucz
+Problem: Czy wiatr przyspiesza ochładzanie mokrej powierzchni? Hipoteza: wiatr zwiększa parowanie, więc temperatura spada szybciej. Zmienna niezależna: wiatr (wentylator włączony / wyłączony). Zmienna zależna: temperatura mokrej bibuły mierzona termometrem co 2 min. Stałe: ilość wody, wielkość bibuły, temperatura początkowa, czas, odległość od wentylatora. Próba kontrolna: identyczna mokra bibuła bez wiatru. Wniosek: szybszy spadek temperatury przy wietrze potwierdza, że parowanie chłodzi, tak jak parowanie potu chłodzi skórę.
+:::
+
 ## 14 | Test końcowy {#test}
 
 ::: test
