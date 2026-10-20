@@ -34,9 +34,17 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 - Praca OLI: najpierw `olimpiada/PRZEKAZANIE.md`; `OLIMPIADA_8_MASTER.md` czytać tylko potrzebną sekcję (`grep -n '^#'`).
 - Lekcje są wspólne z kursem E8: jeden plik MD, warstwy poziomów 2–4 dopisywane w tej samej lekcji — nie kopiować treści do `olimpiada/`.
 
+## Jedna najlepsza wersja (zasada stała, od 2026-10-20)
+- Każda lekcja, grafika i narzędzie ma w repo **jedną najlepszą wersję**. Przed utworzeniem czegoś sprawdź, czy już istnieje (`ls`, katalogi, KATALOG_GRAFIK_BIO); nie twórz drugiej wersji — rozbuduj istniejącą.
+- Dubel: porównaj (rozmiar, nagłówki, viz, data, zawartość); lepsza zostaje, unikalne treści gorszej dopisz do lepszej albo przenieś do `niewykorzystane/` (biologia/niewykorzystane, chemia/plany/niewykorzystane). Identyczne kopie usuwaj od razu. Nic nie ginie bez porównania.
+- Po zmianach: `python3 narzedzia/odswiez_wszystko.py`.
+
+## Push i scalanie bez pytania (zasada stała, od 2026-10-20)
+- Mogę sam robić commit, push na dowolną gałąź i scalać (też do `main`) bez polecenia, **jeśli nie tracimy danych**: scalanie bez przegranych treści (konflikty rozwiązane zasadą wyżej), build i testy bez błędów, brak `--force` i kasowania historii. Przy ryzyku utraty danych — najpierw zachować (niewykorzystane/), potem scalać.
+
 ## Git
 - Klon: `git clone --depth 1` (jeden naraz, długi timeout); przy pracy nad jednym przedmiotem `git sparse-checkout set <folder>`.
-- Gałąź pracy (CHE, BIO, wizualizacje): `claude/che-lekcje` — zbiorcza, opis w `PRZEKAZANIE.md`. Push tylko na gałęzie `claude/...` (push na `main` kończy się 403).
+- Gałąź pracy (CHE, BIO, wizualizacje): `claude/che-lekcje` — zbiorcza, opis w `PRZEKAZANIE.md`. Push na `main` działa (sprawdzone 2026-10-20).
 - Po każdym zamkniętym etapie: commit i push, krótki wpis w `chemia/che-modular/PROGRESS.md`.
 
 ## Wizualizacje i obrazy — opis obowiązkowy (zawsze, każdy przedmiot)
