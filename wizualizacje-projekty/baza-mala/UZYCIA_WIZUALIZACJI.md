@@ -8,7 +8,7 @@ Liczenie: każde wystąpienie dyrektywy `@model`, `@viz`, `@klocek`, `@zlewka` (
 
 | Liczba wizualizacji w bazie | Użyte 0 razy | Użyte 1 raz | Użyte 2 lub więcej razy |
 |---|---|---|---|
-| 355 | 189 | 82 | 84 |
+| 355 | 188 | 83 | 84 |
 
 Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobnie literówki lub klucze pracowni): **31**: `-`, `caoh2Co2`, `cuoH2so4`, `cuso4Naoh`, `cykl`, `f02-czastki-v01`, `f04-nuklid-v01`, `fecl3Naoh`, `fotosynteza-oddychanie-krazenie`, `hclNaOH`, `jajo-porownanie`, `jajo-ptaka`, `komorki-porownanie`, `krazenie`, `mgO2`, `mikroskop-budowa`, `naH2o`, `nefron-budowa`, `neuron-budowa`, `podzial-komorki-skrot`, `rx-ag-cl`, `rx-cu-naoh`, `rx-fe-cuso4`, `ryba-budowa`, `serce-budowa`, `stawonogi-budowa`, `szereg`, `tkanki-zwierzece`, `wentylacja`, `wlasciwosci`, `wykres-dane`
 
@@ -16,7 +16,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 
 | # | Identyfikator | Biblioteka | Użycia | Lekcje (liczba użyć) |
 |---|---|---|---|---|
-| 1 | `karta-bhp` | klocek | **17** | C1c_kwasy_zasady_sole ×1, C2w_wzor_elementarny_rzeczywisty ×1, C4 ×1, F01 ×1, F02 ×1, F03 ×1, F06 ×1, LKO_ORG01_alkany ×1, LKO_ORG02_alkeny ×1, LKO_ORG03_alkohole ×1, LKO_ORG04_glicerol ×1, LKO_ORG05_kwasy ×1, LKO_ORG06_estry ×1, LKO_ORG07_cukry ×1, LKO_ORG08_mol_gazy ×1, N01 ×1, X04 ×1 |
+| 1 | `karta-bhp` | klocek | **18** | C1c_kwasy_zasady_sole ×1, C2w_wzor_elementarny_rzeczywisty ×1, C4 ×1, F01 ×1, F02 ×1, F03 ×1, F06 ×1, J03 ×1, LKO_ORG01_alkany ×1, LKO_ORG02_alkeny ×1, LKO_ORG03_alkohole ×1, LKO_ORG04_glicerol ×1, LKO_ORG05_kwasy ×1, LKO_ORG06_estry ×1, LKO_ORG07_cukry ×1, LKO_ORG08_mol_gazy ×1, N01 ×1, X04 ×1 |
 | 2 | `wzor-2d` | klocek | **16** | C1c_wodorki_typy_reakcji ×3, C1c_kwasy_zasady_sole ×2, LKO_ORG01_alkany ×2, LKO_ORG02_alkeny ×2, LKO_ORG04_glicerol ×2, LKO_ORG06_estry ×2, LKO_ORG03_alkohole ×1, LKO_ORG05_kwasy ×1, LKO_ORG07_cukry ×1 |
 | 3 | `sole-doswiadczenia-v01` | CHE model | **15** | N05 ×14, C2w_wzor_elementarny_rzeczywisty ×1 |
 | 4 | `f01-doswiadczenia-v01` | CHE pracownia (lite) | **12** | F01 ×7, F02 ×3, F17 ×1, N01 ×1 |
@@ -24,12 +24,12 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | 6 | `n02-doswiadczenia-v01` | CHE model | **8** | N03 ×8 |
 | 7 | `probowki-odczyn` | klocek | **8** | C4 ×3, C2w_wzor_elementarny_rzeczywisty ×1, LKO_ORG02_alkeny ×1, LKO_ORG03_alkohole ×1, LKO_ORG04_glicerol ×1, LKO_ORG05_kwasy ×1 |
 | 8 | `lancuch` | BIO | **6** | BIO.01.L004.organizacja_budowy_organizmu_od_komorki ×2, BIO.00.REV01.organizacja_i_chemizm_zycia ×1, BIO.01.L001.komorka ×1, BIO.02.L010.dna_od_zera ×1, BIO.02.L015.mejoza ×1 |
-| 9 | `stech-kalkulator-v01` | CHE model | **6** | C2m_mol_masa_molowa ×1, C3 ×1, F17 ×1, N02 ×1, N05 ×1, R07 ×1 |
-| 10 | `f06-doswiadczenia-v01` | CHE pracownia (lite) | **5** | F06 ×5 |
-| 11 | `podzial-komorki` | BIO | **5** | BIO.01.L009.podzial_komorki_wzrost_regeneracja_i ×1, BIO.02.B2f.rozmnazanie_rozwoj ×1, BIO.02.L014.jak_komorki_ciala_powstaja_i ×1, BIO.02.L015.mejoza ×1, BIO.05.L050.powtorka_roczna ×1 |
-| 12 | `punnett` | BIO | **5** | BIO.01.B1b.krzyzowki_mendel ×1, BIO.02.L017.jak_przewidywac_dziedziczenie_jednej_cechy ×1, BIO.02.L018.jak_dziedziczy_sie_plec_i ×1, BIO.02.L019.dlaczego_grupy_krwi_nie_pasuja ×1, BIO.02.L021.powtorka_genetyki ×1 |
-| 13 | `rownania-jonowe-v01` | CHE model | **5** | C1c_kwasy_zasady_sole ×1, J03 ×1, N03 ×1, N04 ×1, N05 ×1 |
-| 14 | `tabela-rozpuszczalnosci-v01` | CHE model | **5** | C1c_kwasy_zasady_sole ×1, J03 ×1, N03 ×1, N04 ×1, N05 ×1 |
+| 9 | `rownania-jonowe-v01` | CHE model | **6** | J03 ×2, C1c_kwasy_zasady_sole ×1, N03 ×1, N04 ×1, N05 ×1 |
+| 10 | `stech-kalkulator-v01` | CHE model | **6** | C2m_mol_masa_molowa ×1, C3 ×1, F17 ×1, N02 ×1, N05 ×1, R07 ×1 |
+| 11 | `tabela-rozpuszczalnosci-v01` | CHE model | **6** | J03 ×2, C1c_kwasy_zasady_sole ×1, N03 ×1, N04 ×1, N05 ×1 |
+| 12 | `f06-doswiadczenia-v01` | CHE pracownia (lite) | **5** | F06 ×5 |
+| 13 | `podzial-komorki` | BIO | **5** | BIO.01.L009.podzial_komorki_wzrost_regeneracja_i ×1, BIO.02.B2f.rozmnazanie_rozwoj ×1, BIO.02.L014.jak_komorki_ciala_powstaja_i ×1, BIO.02.L015.mejoza ×1, BIO.05.L050.powtorka_roczna ×1 |
+| 14 | `punnett` | BIO | **5** | BIO.01.B1b.krzyzowki_mendel ×1, BIO.02.L017.jak_przewidywac_dziedziczenie_jednej_cechy ×1, BIO.02.L018.jak_dziedziczy_sie_plec_i ×1, BIO.02.L019.dlaczego_grupy_krwi_nie_pasuja ×1, BIO.02.L021.powtorka_genetyki ×1 |
 | 15 | `bilans-rownania` | klocek | **4** | C1c_wodorki_typy_reakcji ×1, C3 ×1, LKO_ORG05_kwasy ×1, LKO_ORG06_estry ×1 |
 | 16 | `doswiadczenie` | klocek | **4** | C4 ×2, C1c_kwasy_zasady_sole ×1, X04 ×1 |
 | 17 | `fotosynteza-oddychanie` | BIO | **4** | BIO.00.REV01.organizacja_i_chemizm_zycia ×1, BIO.01.L006.fotosynteza_skad_roslina_bierze_materie ×1, BIO.01.L007.oddychanie_komorkowe_skad_komorka_bierze ×1, BIO.06.L091.atp_jak_komorka_magazynuje_energie ×1 |
@@ -168,6 +168,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 - `pojemnosc` (BIO) → BIO.02.L010.dna_od_zera
 - `proba-kontrolna` (BIO) → BIO.00.REV01.organizacja_i_chemizm_zycia
 - `probowki` (klocek) → P01
+- `probowki-wybor` (klocek) → J03
 - `przeobrazenie-owadow` (BIO) → BIO.00.REV02.roznorodnosc_zycia
 - `przeobrazenie-plaza` (BIO) → BIO.00.REV02.roznorodnosc_zycia
 - `r03-krzyz-v01` (CHE model) → R03A_mieszanie_roztworow_regula_krzyzowa
@@ -335,7 +336,6 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 - `plume` (CHE gfx/efekty: chemia)
 - `pop` (CHE gfx/efekty: chemia)
 - `precipitate` (CHE gfx/efekty: chemia)
-- `probowki-wybor` (klocek: probowki_wybor.js)
 - `reaction` (CHE model: Reakcja)
 - `ringMark` (CHE gfx/efekty: chemia)
 - `ripples` (CHE gfx/efekty: chemia)
@@ -545,7 +545,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | `kH2o` | CHE gfx/reakcje | 1 | F06 ×1 |
 | `ka-pka-table` | CHE model | 0 | — |
 | `kalkulator-mola` | klocek | 2 | C2m_mol_masa_molowa ×1, LKO_ORG08_mol_gazy ×1 |
-| `karta-bhp` | klocek | 17 | C1c_kwasy_zasady_sole ×1, C2w_wzor_elementarny_rzeczywisty ×1, C4 ×1, F01 ×1, F02 ×1, F03 ×1, F06 ×1, LKO_ORG01_alkany ×1, LKO_ORG02_alkeny ×1, LKO_ORG03_alkohole ×1, LKO_ORG04_glicerol ×1, LKO_ORG05_kwasy ×1, LKO_ORG06_estry ×1, LKO_ORG07_cukry ×1, LKO_ORG08_mol_gazy ×1, N01 ×1, X04 ×1 |
+| `karta-bhp` | klocek | 18 | C1c_kwasy_zasady_sole ×1, C2w_wzor_elementarny_rzeczywisty ×1, C4 ×1, F01 ×1, F02 ×1, F03 ×1, F06 ×1, J03 ×1, LKO_ORG01_alkany ×1, LKO_ORG02_alkeny ×1, LKO_ORG03_alkohole ×1, LKO_ORG04_glicerol ×1, LKO_ORG05_kwasy ×1, LKO_ORG06_estry ×1, LKO_ORG07_cukry ×1, LKO_ORG08_mol_gazy ×1, N01 ×1, X04 ×1 |
 | `kinetics-v01` | CHE model | 0 | — |
 | `klonowanie-genu` | BIO | 1 | BIO.02.L022.biotechnologia_i_inzynieria_genetyczna ×1 |
 | `klucz-kregowce` | BIO | 1 | BIO.00.REV02.roznorodnosc_zycia ×1 |
@@ -659,7 +659,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | `proba-kontrolna` | BIO | 1 | BIO.00.REV01.organizacja_i_chemizm_zycia ×1 |
 | `probowki` | klocek | 1 | P01 ×1 |
 | `probowki-odczyn` | klocek | 8 | C2w_wzor_elementarny_rzeczywisty ×1, C4 ×3, LKO_ORG02_alkeny ×1, LKO_ORG03_alkohole ×1, LKO_ORG04_glicerol ×1, LKO_ORG05_kwasy ×1 |
-| `probowki-wybor` | klocek | 0 | — |
+| `probowki-wybor` | klocek | 1 | J03 ×1 |
 | `przeobrazenie-owadow` | BIO | 1 | BIO.00.REV02.roznorodnosc_zycia ×1 |
 | `przeobrazenie-plaza` | BIO | 1 | BIO.00.REV02.roznorodnosc_zycia ×1 |
 | `punnett` | BIO | 5 | BIO.01.B1b.krzyzowki_mendel ×1, BIO.02.L017.jak_przewidywac_dziedziczenie_jednej_cechy ×1, BIO.02.L018.jak_dziedziczy_sie_plec_i ×1, BIO.02.L019.dlaczego_grupy_krwi_nie_pasuja ×1, BIO.02.L021.powtorka_genetyki ×1 |
@@ -670,7 +670,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | `ringMark` | CHE gfx/efekty | 0 | — |
 | `ripples` | CHE gfx/efekty | 0 | — |
 | `roundFlask` | CHE gfx/naczynia | 0 | — |
-| `rownania-jonowe-v01` | CHE model | 5 | C1c_kwasy_zasady_sole ×1, J03 ×1, N03 ×1, N04 ×1, N05 ×1 |
+| `rownania-jonowe-v01` | CHE model | 6 | C1c_kwasy_zasady_sole ×1, J03 ×2, N03 ×1, N04 ×1, N05 ×1 |
 | `rozbior-zdania` | POL | 1 | POL.02.G12.czesci_zdania ×1 |
 | `safety` | CHE model | 0 | — |
 | `scale` | CHE gfx/efekty | 0 | — |
@@ -703,7 +703,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | `substance` | CHE model | 0 | — |
 | `synapsa` | BIO | 2 | BIO.02.B2d.uklad_nerwowy_zmysly ×1, BIO.07.U08.uklad_nerwowy_i_zmysly ×1 |
 | `szuflady-cech` | BIO | 1 | BIO.02.L010.dna_od_zera ×1 |
-| `tabela-rozpuszczalnosci-v01` | CHE model | 5 | C1c_kwasy_zasady_sole ×1, J03 ×1, N03 ×1, N04 ×1, N05 ×1 |
+| `tabela-rozpuszczalnosci-v01` | CHE model | 6 | C1c_kwasy_zasady_sole ×1, J03 ×2, N03 ×1, N04 ×1, N05 ×1 |
 | `tap` | CHE gfx/efekty | 0 | — |
 | `testTube` | CHE gfx/naczynia | 0 | — |
 | `thermometer` | CHE gfx/naczynia | 0 | — |
@@ -870,7 +870,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | chemia | J00 | — |
 | chemia | J01 | — |
 | chemia | J02 | — |
-| chemia | J03 | `ion-vs-diss` ×1, `j03-osady-v01` ×1, `rownania-jonowe-v01` ×1, `tabela-rozpuszczalnosci-v01` ×1 |
+| chemia | J03 | `ion-vs-diss` ×1, `j03-osady-v01` ×1, `karta-bhp` ×1, `probowki-wybor` ×1, `rownania-jonowe-v01` ×2, `tabela-rozpuszczalnosci-v01` ×2 |
 | chemia | J04 | — |
 | chemia | J05 | — |
 | chemia | J06 | — |

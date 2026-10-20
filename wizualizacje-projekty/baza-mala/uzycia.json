@@ -550,7 +550,7 @@
   },
   "rownania-jonowe-v01": {
    "C1c_kwasy_zasady_sole": 1,
-   "J03": 1,
+   "J03": 2,
    "N03": 1,
    "N04": 1,
    "N05": 1
@@ -572,7 +572,7 @@
   "substance": {},
   "tabela-rozpuszczalnosci-v01": {
    "C1c_kwasy_zasady_sole": 1,
-   "J03": 1,
+   "J03": 2,
    "N03": 1,
    "N04": 1,
    "N05": 1
@@ -793,6 +793,7 @@
    "F02": 1,
    "F03": 1,
    "F06": 1,
+   "J03": 1,
    "LKO_ORG01_alkany": 1,
    "LKO_ORG02_alkeny": 1,
    "LKO_ORG03_alkohole": 1,
@@ -838,7 +839,9 @@
   "konfiguracje": {
    "C1c_konfiguracje_elektronowe": 1
   },
-  "probowki-wybor": {},
+  "probowki-wybor": {
+   "J03": 1
+  },
   "zlewka": {},
   "metal-woda": {},
   "estryfikacja": {
@@ -1358,7 +1361,6 @@
   "lancuch-przemian",
   "molekula-2d",
   "plomien",
-  "probowki-wybor",
   "zlewka",
   "metal-woda",
   "id",
@@ -1427,6 +1429,7 @@
   "haworth",
   "schemat-przemian",
   "konfiguracje",
+  "probowki-wybor",
   "estryfikacja",
   "palnik-gazowy",
   "nadmiar-substratu",

@@ -65,3 +65,5 @@ REV01|lekcje_md 123KB 2026-10-20 CHE.00.REV01.powtorka_klasy_7.md|gotowe 69KB 20
 - 16 identycznych kopii → gotowe (kopie lekcje_md → niewykorzystane/identyczne_kopie_lekcje_md/)
 - Wybór zapisany w chemia/plany/WYBOR_WERSJI.json; builder: narzedzia/zbuduj_wszystkie.py che
 - N01 → gotowe; N03, N04, N05 → lekcje_md (przegrane gotowe → niewykorzystane/wersje_gotowe/, lekcje_md N01 → wersje_lekcje_md/)
+- K02–K05 → gotowe. Pozostałe pary (użytkownik: „wszystkie rekomendowane”) wg reguły: większa wersja wygrywa. Lekcje_md: J01, J02, K06, K08, R03, R04, REV01, F07, F08, F11, F14. Gotowe: J03, J04, J05, J06, N07, N08, R01, R02, F19.
+- Uwaga: R03 i R04 to w części inne tematy pod tym samym kodem (stężenie procentowe vs regułę krzyżową; mol vs stechiometria). Przegrane są w niewykorzystane/, więc można je przywrócić.

@@ -3,9 +3,9 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (19 pl., 520 KB)
+## .  (19 pl., 516 KB)
 - (zwinięte; `ls .`) — duże:
-- ⚠`INDEKS.html` 55 KB
+- ⚠`INDEKS.html` 52 KB
 - ⚠`SPIS_WSZYSTKICH.md` 61 KB
 - ⚠`WERYFIKACJA.md` 77 KB
 - ⚠`przeglad_lekcji.json` 146 KB
@@ -149,8 +149,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIO.010x.v01.00.html` 107 KB
 - `BIO.011w.v01.00.html` 27 KB
 
-## chemia  (2 pl., 21 KB)
-- `INDEKS.html` 21 KB
+## chemia  (2 pl., 18 KB)
+- `INDEKS.html` 18 KB
 - `PLAN_LEKCJI.md` 0 KB
 
 ## chemia/archiwum  (1 pl., 1 KB)
@@ -408,7 +408,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/lessons-md/archiwum  (1 pl., 58 KB)
 - ⚠`N06_wodorki_stary.md` 58 KB
 
-## chemia/che-modular/lessons-md/gotowe  (85 pl., 2.7 MB)
+## chemia/che-modular/lessons-md/gotowe  (74 pl., 2.5 MB)
 - (zwinięte; `ls chemia/che-modular/lessons-md/gotowe`) — duże:
 - ⚠`F01_jak_mysli_chemik.md` 62 KB
 - ⚠`F02_materia_i_substancje.md` 55 KB
@@ -533,7 +533,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/wizualizacje_r4  (1 pl., 35 KB)
 - `Wizualizacje_do_lekcji_R4.html` 35 KB
 
-## chemia/html  (127 pl., 14.1 MB)
+## chemia/html  (115 pl., 13.1 MB)
 - (zwinięte; `ls chemia/html`) — duże:
 - ⚠`C1c_konfiguracje_elektronowe.html` 202 KB
 - ⚠`C2m_mol_masa_molowa.html` 107 KB
@@ -568,7 +568,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE.06.E05.korozja.md` 4 KB
 - `CHE.06.E06.zrodla_energii_akumulatory.md` 4 KB
 
-## chemia/lekcje_md/F  (8 pl., 369 KB)
+## chemia/lekcje_md/F  (7 pl., 356 KB)
 - `CHE.01.F00.wspolne_bloku_F.md` 34 KB
 - ⚠`CHE.01.F07.konfiguracja_elektronowa.md` 55 KB
 - ⚠`CHE.01.F08.konfiguracja_uklad_okresowy.md` 55 KB
@@ -576,24 +576,15 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE.01.F13.wzory_elektronowe_lewis.md` 35 KB
 - ⚠`CHE.01.F14.geometria_czasteczek_vsepr.md` 66 KB
 - `CHE.01.F16.od_obserwacji_do_modelu_reakcji.md` 47 KB
-- `CHE.01.F19.dossier_reakcji.md` 13 KB
 
-## chemia/lekcje_md/J  (9 pl., 198 KB)
+## chemia/lekcje_md/J  (5 pl., 53 KB)
 - `CHE.04.J00.mapa_bloku_J.md` 8 KB
 - `CHE.04.J01.dysocjacja_elektrolityczna.md` 22 KB
 - `CHE.04.J02.odczyn_i_ph.md` 14 KB
-- ⚠`CHE.04.J03.reakcje_jonowe.md` 115 KB
-- `CHE.04.J04.stracanie_osadow.md` 10 KB
-- `CHE.04.J05.amfoterycznosc.md` 10 KB
-- `CHE.04.J06.rownowagi_kwasowo_zasadowe.md` 11 KB
 - `CHE.04.J11.identyfikacja_jonow.md` 5 KB
 - `CHE.04.J12.miareczkowanie.md` 5 KB
 
-## chemia/lekcje_md/K  (10 pl., 158 KB)
-- `CHE.07.K02.entalpia.md` 9 KB
-- `CHE.07.K03.kalorymetria_i_przemiany_fazowe.md` 16 KB
-- `CHE.07.K04.szybkosc_reakcji.md` 33 KB
-- `CHE.07.K05.czynniki_szybkosci.md` 3 KB
+## chemia/lekcje_md/K  (6 pl., 96 KB)
 - `CHE.07.K06.zderzenia_energia_aktywacji.md` 16 KB
 - `CHE.07.K07.kataliza.md` 20 KB
 - `CHE.07.K08.rownowaga_dynamiczna.md` 14 KB
@@ -601,12 +592,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE.07.K10.regula_le_chateliera.md` 14 KB
 - `CHE.07.K11.rownowaga_ilosciowa.md` 18 KB
 
-## chemia/lekcje_md/N  (5 pl., 369 KB)
+## chemia/lekcje_md/N  (3 pl., 360 KB)
 - ⚠`CHE.02.N03.wodorotlenki.md` 134 KB
 - ⚠`CHE.02.N04.kwasy.md` 137 KB
 - ⚠`CHE.02.N05.sole.md` 89 KB
-- `CHE.02.N07.systematyka_nieorganiczna.md` 4 KB
-- `CHE.02.N08.mapa_przemian.md` 5 KB
 
 ## chemia/lekcje_md/O  (9 pl., 121 KB)
 - `CHE.05.O01-O07.weglowodory.md` 40 KB
@@ -626,9 +615,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE.01.P05.zwiazki_charakterystyczne_pierwiastkow.md` 1 KB
 - `CHE.01.P06.trend_wasciwosc_reaktywnosc.md` 1 KB
 
-## chemia/lekcje_md/R  (5 pl., 89 KB)
-- `CHE.03.R01.woda_i_roztwory.md` 5 KB
-- `CHE.03.R02.rozpuszczalnosc.md` 5 KB
+## chemia/lekcje_md/R  (3 pl., 79 KB)
 - `CHE.03.R03+R05.stezenia.md` 34 KB
 - `CHE.03.R04+R07-R09.stechiometria.md` 41 KB
 - `CHE.03.R06.gazy_objetosc_molowa.md` 4 KB
@@ -669,7 +656,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PILNE_F20_klinika_bledow_fundamentow.md` 21 KB
 - `PILNE_F21_zadania_transferowe_i_diagnostyka.md` 23 KB
 
-## chemia/plany  (28 pl., 828 KB)
+## chemia/plany  (28 pl., 829 KB)
 - (zwinięte; `ls chemia/plany`) — duże:
 - ⚠`BANK_PYTAN_CHE.md` 89 KB
 - ⚠`CHE_SPIS_TRESCI.md` 59 KB
@@ -724,21 +711,17 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE.06.X01-X09.redoks__supernauka.md` 1 KB
 - `N05_sole__zasady_blok.md` 1 KB
 
-## chemia/plany/niewykorzystane/wersje_gotowe  (5 pl., 407 KB)
-- `F13_wzory_elektronowe_lewis.md` 20 KB
-- `F16_od_obserwacji_do_modelu_reakcji.md` 35 KB
+## chemia/plany/niewykorzystane/wersje_gotowe  (16 pl., 686 KB)
+- (zwinięte; `ls chemia/plany/niewykorzystane/wersje_gotowe`) — duże:
 - ⚠`N03_wodorotlenki.md` 131 KB
 - ⚠`N04_kwasy.md` 135 KB
 - ⚠`N05_sole.md` 86 KB
+- ⚠`REV01_powtorka_klasy_7.md` 70 KB
 
-## chemia/plany/niewykorzystane/wersje_lekcje_md  (7 pl., 218 KB)
-- `CHE.01.F01.jak_mysli_chemik.md` 22 KB
-- `CHE.01.F02.materia_i_substancje.md` 21 KB
-- `CHE.01.F03.wlasciwosci_i_rozdzielanie_mieszanin.md` 29 KB
-- `CHE.01.F04.atom.md` 21 KB
+## chemia/plany/niewykorzystane/wersje_lekcje_md  (20 pl., 457 KB)
+- (zwinięte; `ls chemia/plany/niewykorzystane/wersje_lekcje_md`) — duże:
 - ⚠`CHE.01.F06.uklad_okresowy.md` 72 KB
-- `CHE.01.F10.dlaczego_atomy_sie_lacza.md` 20 KB
-- `CHE.02.N01.powietrze_i_gazy.md` 33 KB
+- ⚠`CHE.04.J03.reakcje_jonowe.md` 115 KB
 
 ## chemia/plany/paczki  (1 pl., 241 KB)
 - ⚠`GOTOWE_CHE_NASTEPNE_10.md` 241 KB
