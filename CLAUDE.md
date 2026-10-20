@@ -37,6 +37,9 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 ## Praca ciągła (każdy model, zwłaszcza Haiku)
 - Skończone zadanie → od razu następne z listy (`ZADANIA_HAIKU_SONNET.md`), bez pytania „czy dalej?”. Raport na końcu serii. Pytać tylko przy ryzyku utraty danych.
 
+## Weryfikacja z ZPE (zasada stała, od 2026-10-20)
+Każdy model (Haiku, Sonnet, zewnętrzne AI) przy tworzeniu i audycie lekcji **mapuje temat na materiały Zintegrowanej Platformy Edukacyjnej (zpe.gov.pl)** i sprawdza z nimi treść: definicje, progi, liczby, zakres podstawy programowej, kolejność tematów. Braki zakresu dopisujemy do lekcji; rozbieżności rozstrzyga się drugim źródłem i zapisuje w `WERYFIKACJA.md` (lekcja, miejsce, źródło, wynik). Mapa lekcja → odpowiedniki ZPE: `biologia/plany/MAPA_ZPE.md`, `chemia/plany/MAPA_ZPE.md` (osobno per przedmiot, URL + temat + status). ZPE zastępuje tylko „do weryfikacji”, nie wykład: zostaje nasz styl i pełny wykład od zera.
+
 ## Bez planów czasowych i bez „supernauki” (od 2026-10-20)
 - Lekcje nie zawierają planów czasowych („Mapa (10 min)” itp.) ani ogólnych haseł motywacyjnych („10 zasad supernauki”, „10 zasad skutecznej nauki”). Takie bloki usuwamy z żywych lekcji; kopie idą do `niewykorzystane/`.
 
