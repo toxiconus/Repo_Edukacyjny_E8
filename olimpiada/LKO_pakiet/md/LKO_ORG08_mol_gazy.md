@@ -71,9 +71,6 @@ To lekcja-rachmistrz serii: bez jej narzędzi zadania wojewódzkie z ORG01–ORG
 
 ## 1 | Wykład — trójkąt konwersji: m–n–N–V {#trojkat}
 
-@klocek trojkat-przeliczen {wzor="gaz"} | Trójkąt konwersji: masa, mole i objętość gazu
-@opis Wierzchołki: masa m u góry, liczba moli n w lewym dolnym rogu, objętość gazu V w prawym. Lewy bok to masa molowa (÷ M z masy, × M do masy), dolny bok to objętość molowa (× Vₘ z moli do objętości, ÷ Vₘ z powrotem). Wniosek: dla gazów objętość liczymy przez mole, nie bezpośrednio z masy.
-
 R04 dało ci trzy wierzchołki: masa **m** (g), liczba moli **n** (mol), liczba cząstek **N**. Etap III dokłada czwarty: objętość gazu **V** (dm³). Cztery wzory łączą wszystkie pary przez mol:
 
 | Z | Do | Wzór | Uwagi |
@@ -91,6 +88,15 @@ Drogi „na przełaj" — m → N i m → V — zawsze przez mol (dwa kroki). Ob
 
 **Liczba Avogadro:** N_A = 6,02·10²³ mol⁻¹ w rachunkach szkolnych; od reformy SI 2019 r. wartość dokładna: **6,02214076·10²³ mol⁻¹** (mol zdefiniowano właśnie przez tę liczbę — bez uzależnienia od masy wzorca).
 
+### Najczęstsze pułapki
+
+- Masa molowa to nie masa próbki: M w g/mol, m w gramach — najpierw n = m/M, dopiero potem reszta.
+- 22,4 dm³/mol tylko dla gazów w warunkach normalnych (0 °C, ok. 1013 hPa); nie stosuj go do cieczy ani do innych warunków.
+- Pomijanie współczynników z równania: liczby moli i objętości gazów przeliczamy przez współczynniki.
+- Objętość przed liczbą moli: najpierw n z danych, potem V = n·Vₘ.
+- Wydajność stosujemy do właściwego etapu i właściwego produktu teoretycznego.
+- Brak sprawdzenia reagenta ograniczającego: przed liczeniem produktu porównaj liczby moli substratów z równania (ten, którego mniej w stosunku do współczynników, ogranicza reakcję).
+
 ::: karta understand | W skrócie — mapa konwersji w jednej karcie
 Gramy → mole: dziel przez M. Mole → gramy: mnoż przez M. Mole → cząstki: mnoż przez 6,02·10²³. Cząstki → mole: dziel przez 6,02·10²³. Mole → dm³ (gaz!): mnoż przez 22,4. dm³ → mole: dziel przez 22,4. Każde „dalekie" przejście = dwa kroki przez mol. Kontrola błędów: jednostki na każdym kroku i rząd wielkości (mol gazu to zawsze dziesiątki dm³, masa mola — dziesiątki–setki gramów).
 :::
@@ -106,6 +112,12 @@ Gramy → mole: dziel przez M. Mole → gramy: mnoż przez M. Mole → cząstki:
 ::: karta extra | Skąd wzięła się nazwa „mol”
 Słowo „mol” wprowadził niemiecki chemik fizyczny Wilhelm Ostwald (ok. 1893 r.), od łac. *moles* — „masa, ilość”. Amedeo Avogadro sformułował swoją hipotezę o równych liczbach cząsteczek w równych objętościach gazów już w 1811 r., ale uznanie jej przyszło dopiero po Kongresie w Karlsruhe (1860), gdy Stanislao Cannizzaro przekonał środowisko do spójnych mas atomowych i cząsteczkowych. Dziś to zwykła praca laboratorium: jedna wielka liczba, nazwana na cześć człowieka, który na nią nie zdążył. (Daty do weryfikacji.)
 :::
+
+@klocek kalkulator-mola {subst="1"} | Kalkulator mola: m, n, N, V gazu
+@opis Pola masy molowej, masy, liczby moli i objętości gazu dla wybranej substancji (H₂O, CO₂, O₂, CH₄, NaCl): zmiana jednej wartości przelicza pozostałe, a pod polami stoją wzory n = m/M, N = n·N_A i V = n·22,4 dm³/mol; objętość dotyczy gazów w warunkach normalnych (0 °C, 1013 hPa).
+
+@klocek trojkat-przeliczen {wzor="mol"} | Trójkąt: m, n, M
+@opis Trójkąt z trzema polami: masa m u góry, liczba moli n i masa molowa M na dole; zasłonięcie jednej wielkości pokazuje wzór na jej obliczenie.
 
 ## 2 | Wykład — objętość molowa i stosunki objętościowe {#objestosc}
 
@@ -143,6 +155,9 @@ Odczyt odwrotny: **M = d · M(wzorca)** — gaz o d = 1,52 względem powietrza m
 ::: karta error | Objętość molowa dla cieczy — klasyczny fałszywy krok
 „1 mol wody ma 22,4 dm³" — błąd. Vₘ = 22,4 dm³/mol działa **wyłącznie dla gazów**. 1 mol wody to 18 g i ok. 18 cm³ (gęstość 1 g/cm³); 1 mol glukozy — ok. 120 cm³ (M = 180, gęstość ~1,5 g/cm³ — orientacyjnie). Objętość cieczy/ciała stałego zależy od upakowania cząsteczek; objętość gazu — tylko od ich liczby. W zadaniach: V = n·22,4 piszemy tylko przy symbolu gazu (CO₂(g), H₂(g), NH₃(g)).
 :::
+
+@klocek trojkat-przeliczen {wzor="gaz"} | Trójkąt: V, n, Vm
+@opis Trójkąt dla gazu w warunkach normalnych (0 °C, 1013 hPa): objętość V u góry, liczba moli n i objętość molowa 22,4 dm³/mol na dole; V = n · 22,4 i n = V / 22,4.
 
 ## 3 | Wykład — wzory elementarne i rzeczywiste: procedura procentów {#wzory}
 
@@ -187,6 +202,12 @@ Elementarny = proporcja (CH₂O); rzeczywisty = substancja (C₂H₄O₂). Bez M
 :::
 
 ## 4 | Doświadczenie {#dosw}
+
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie), pierwsza pomoc (oparzenie, skaleczenie, wdychanie gazu). Wniosek: zasady są takie same przy każdym doświadczeniu i trzeba je znać przed rozpoczęciem pracy.
+
+@klocek zbieranie-gazu {gaz="H2" metoda="woda" gazy="H2,O2,CO2"} | Zbieranie wodoru nad wodą (i porównanie z innymi metodami)
+@opis Scena zbierania gazu: po lewej kolba z reakcją (pęcherzyki w cieczy, nad nią korek), z niej rurka odprowadzająca prowadzi do naczynia po prawej. Gaz jest bezbarwny, więc zaznaczono go ciemnozielonymi kropkami, a powietrze — szarymi. Chipy wybierają gaz i sposób zbierania: naczynie wylotem do góry (gaz cięższy od powietrza opada na dno i wypycha powietrze), wylotem do dołu (gaz lżejszy zbiera się pod dnem) albo nad wodą (gaz wypiera wodę z odwróconego naczynia). Poprawny wybór napełnia naczynie i pokazuje zielony werdykt; zły — gaz ucieka z naczynia albo rozpuszcza się w wodzie, a werdykt jest czerwony. Wniosek: o sposobie zbierania decyduje gęstość względna d = M/29 (cięższy czy lżejszy od powietrza) i rozpuszczalność w wodzie.
 
 ::: dosw | Doświadczenie 1 — Wytworzenie i pomiar wodoru: kontrola objętości molowej (demonstracja)
 **Problem:** Czy z odważonej porcji cynku można przewidzieć objętość wodoru — i czy pomiar potwierdzi Vₘ = 22,4 dm³/mol?
@@ -351,8 +372,6 @@ gęstość absolutna :: masa jednostki objętości gazu: ρ = M/22,4 g/dm³ (war
 
 ## Do weryfikacji
 
-
-- **WIZUALIZACJA ORG08 (§2 objętość molowa, stosunki objętościowe): BRAK klocka.** Potrzebny klocek `objetosci-gazow`: słupki substratów i produktów w jednej skali, wg współczynników równania (np. propan + 5 O₂ → 3 CO₂ + 4 H₂O(ciecz)), z suwakiem objętości substratu. Priorytet: średni. Do zrobienia po zatwierdzeniu.
 - **ORG08:** Vₘ = 22,4 dm³/mol i warunki normalne (0 °C, 1013,25 hPa) — wartości standardowe podręcznikowe; objętość molowa przy ~20 °C „ok. 24 dm³/mol" — orientacyjne, oznaczone.
 - **ORG08:** M powietrza ≈ 29 g/mol — średnia standardowa (dokładniej 28,96); d metanu 0,55 (16/29 = 0,5517), propanu 1,52 (44/29 = 1,517), chloroetanu 2,22 (64,5/29 = 2,224) — zaokrąglenia spójne.
 - **ORG08:** liczba Loschmidta 2,69·10¹⁹/cm³ — zaokrąglona, oznaczona (dokładna 2,6868·10¹⁹ przy 22,414 dm³/mol).
@@ -362,3 +381,23 @@ gęstość absolutna :: masa jednostki objętości gazu: ρ = M/22,4 g/dm³ (war
 - **ORG08:** adv 6f — poprawna suma 38,4 g (29,025 + 9,4); „ok. 45 g" ucznia pozostawione jako celowy błąd do wykrycia (bez wskazania źródła błędu — klucz dopuszcza interpretację); rachunki: 0,45·64,5 = 29,025 ✔; 0,05·188 = 9,4 ✔; 29,025 + 9,4 = 38,425 ≈ 38,4 ✔.
 - **ORG08:** M(Br₂) = 160 g/mol — wartość podręcznikowa spoza listy B1 (Br = 80), oznaczona (jak w ORG02).
 - **SERIA ORG01–ORG08:** wszystkie odwołania do Vₘ = 22,4 dm³/mol domknięte wykładem ORG08; w ORG01–07 przy scalaniu można dodać odnośniki do sekcji 1–2 ORG08.
+
+## AUDYT W1/W2 — zewnętrzny, blok organiczny (2026-10-14)
+
+Zastosowano: dodano sekcję „Najczęstsze pułapki” z pięcioma punktami (masa molowa a masa próbki, Vₘ tylko dla gazów w warunkach normalnych, współczynniki, kolejność n → V, wydajność na właściwym etapie).
+
+Nieprzyjęte: wzory n = m/M, N = n·N_A, V = n·Vₘ, Vₘ = 22,4 dm³/mol w warunkach normalnych są w lekcji; pułapka wzorów elementarnych i pary wodnej jest już w ćwiczeniach.
+
+## AUDYT W1/W2 — kolejny przebieg zewnętrzny (2026-10-14)
+
+Zastosowano: dodano pułapkę „brak sprawdzenia reagenta ograniczającego” do listy pułapek.
+
+Nieprzyjęte (sprawdzone w pliku): procedura zadania (zbilansuj, przelicz na mole, użyj współczynników, przelicz na jednostkę, sprawdź fazę) jest w lekcji jako kroki przy zadaniu z gazami; zasada, że woda w warunkach normalnych jest cieczą, jest w lekcji; wzory n = m/M, N = n·N_A, V = n·Vₘ są poprawne.
+
+Do osobnego zadania (nie w tej lekcji): test przekrojowy ORG01–ORG08 i zestaw mieszany — poza zakresem tego audytu.
+
+## AUDYT W1/W2 — wynik zewnętrzny, kolejny przebieg (2026-10-14)
+
+Zastosowano: brak zmian treści.
+
+Nieprzyjęte: oznaczenie „W1 FULL” nie zostało wprowadzone — pełny przegląd linia po linii nie był wykonany, stan lekcji pozostaje „bez audytu W1”. Sprawdzone w pliku: zależności n = m/M, N = nN_A, V = nVₘ; Vₘ = 22,4 dm³/mol tylko dla gazów w warunkach normalnych; gęstości względne (CH₄ ≈ 0,55; C₂H₅Cl ≈ 2,22); wzór elementarny CH₂O i rzeczywisty C₂H₄O₂ (k = 2); stosunki objętościowe propanu; zadanie łańcuchowe z etenem (0,5 mol, 0,45 mol chloroetanu, 29,0 g; Br₂ 8,0 g; produkty ok. 38,4 g) jest w lekcji z kontrolą uczniowskiego błędu „45 g”. Zapis „CH₄?” nie występuje w pliku.

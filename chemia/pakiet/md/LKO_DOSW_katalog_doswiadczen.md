@@ -73,6 +73,11 @@ Przeczytaj §1 (schemat i reguły R1–R6), potem katalogi §2–§3 jako „kar
 
 ## 1 | Wykład — Schemat opisu i język obserwacji {#wyklad-schemat}
 
+::: karta understand | W skrócie — obserwacja a wniosek
+- Obserwacja: „powstał biały osad”.
+- Wniosek: „badana substancja zawierała jon chlorkowy” (z próby z AgNO₃ — wniosek trzeba uzasadnić obserwacją i kontrolą).
+:::
+
 ### 1.1 Siedem elementów (to jest rubryka punktowania arkusza)
 
 | # | Element | Co zawiera | Jak mierzy się na LKO |
@@ -535,3 +540,9 @@ Mgiełka :: drobne kropelki cieczy rozproszone w powietrzu
 Dym :: drobne cząstki stałe rozproszone w powietrzu (np. NH₄Cl)
 Lakmus :: wskaźnik: czerwieni w kwasie, sinieje w zasadzie
 :::
+
+## AUDYT W1/W2 — zewnętrzny, blok status LKO (2026-10-14)
+
+Zastosowano: dopisano kartę „W skrócie” z parą obserwacja („powstał biały osad”) i wniosek („badana substancja zawierała jon chlorkowy”).
+
+Nieprzyjęte: suplement ma już jednolity schemat opisu i zasadę obserwacja ≠ wniosek w sekcjach 1 i 5.

@@ -71,9 +71,6 @@ Ta lekcja ma jedno centrum — **wiązanie podwójne C=C** — i wszystko w niej
 :::
 
 ## 1 | Wykład — alkeny: jedna podwójna linia zmienia charakter {#definicja}
-@klocek wzor-2d {smiles="C=C", grupa="C=C"} | Eten C₂H₄: wiązanie podwójne C=C w ramce
-@opis Dwa atomy węgla połączone dwiema kreskami (wiązanie podwójne); wodory przy węglach są pominięte w szkielecie. Ramka obejmuje C=C. Wniosek: to właśnie podwójne wiązanie jest miejscem, w którym alkeny przyłączają inne cząsteczki (addycja).
-
 
 ::: karta understand | Przypomnienie — węgiel, wodór i wiązanie podwójne
 Węgiel tworzy cztery wiązania, wodór jedno (ORG01). Wiązanie podwójne to dwie pary wspólnych elektronów między dwoma węglami zamiast jednej — zajmuje więc dwa z czterech „miejsc" każdego węgla.
@@ -158,6 +155,12 @@ Porównaj dwa równania. (1) C₂H₄ + Br₂ → C₂H₄Br₂ — z dwóch sub
 ::: karta extra | Margaryna: uwodornienie na skalę przemysłową
 Oleje roślinne są ciekłe, bo ich cząsteczki mają wiele podwójnych wiązań C=C. Uwodornienie (addycja H₂ przy katalizatorze niklowym) zamienia część tych wiązań na pojedyncze — cząsteczki prostują się, siły między nimi rosną, a olej przechodzi w **twardy tłuszcz**. Tak powstaje twardy tłuszcz do margaryn. To ta sama reakcja, co addycja H₂ do etenu — tylko w wersji wielowiązaniowej i kuchennej. Przy częściowym uwodornieniu mogą powstawać tłuszcze trans, których nadmiar jest niekorzystny dla zdrowia.
 :::
+
+@klocek wzor-2d {smiles="C=C"} | Eten: wzór strukturalny z wiązaniem podwójnym
+@opis Wzór strukturalny etenu: dwa atomy węgla połączone wiązaniem podwójnym, każdy z dwoma atomami wodoru; wiązanie podwójne to miejsce addycji.
+
+@klocek wzor-2d {smiles="CC=C"} | Propen: wzór strukturalny
+@opis Wzór strukturalny propenu: trzy atomy węgla, wiązanie podwójne między pierwszym i drugim; niesymetryczny alken, dla którego obowiązuje reguła Markownikowa.
 
 ## 3 | Wykład — reguła Markownikowa: dokąd idzie H {#markownikow}
 
@@ -246,9 +249,6 @@ Z etenu w przemyśle robi się etanol (hydratacja), polietylen (polimeryzacja), 
 
 **Hipoteza:** Eten ma wiązanie C=C i doda brom bez żadnych warunków — woda bromowa odbarwi się; metan (tylko wiązania pojedyncze) nie zareaguje bez światła.
 
-@klocek probowki-odczyn {tuby="Kontrola:pomaranczowy:pomaranczowy:brak,Eten:pomaranczowy:bezbarwny:brak,Metan:pomaranczowy:pomaranczowy:brak"} | Woda bromowa po przepuszczeniu gazów: eten odbarwia, metan nie
-@opis Trzy probówki z pomarańczową wodą bromową: kontrolna i z metanem zachowują barwę, z etenem roztwór odbarwia się. Wniosek: odbarwienie wody bromowej to dowód wiązania wielokrotnego, bo eten przyłącza brom (addycja), a metan nie reaguje.
-
 **Sprzęt:** trzy probówki z wodą bromową, dwie butle z gazami (metan, eten), okulary i rękawice, wyciąg. Doświadczenie wykonuje wyłącznie osoba przygotowana, pod wyciągiem; uczący się samodzielnie analizuje jego opis.
 
 **Przebieg:**
@@ -270,6 +270,12 @@ Z etenu w przemyśle robi się etanol (hydratacja), polietylen (polimeryzacja), 
 4. Co zobaczysz po dodaniu wody bromowej do etenu, a co po dodaniu do propanu?
 5. Dlaczego odbarwienie wody bromowej nie dowodzi, że to eten (a nie np. etyn)?
 :::
+
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
+@klocek probowki-odczyn {tuby="Alkan + woda bromowa:pomaranczowy:pomaranczowy:brak,Alken + woda bromowa:pomaranczowy:bezbarwny:brak"} | Próba wody bromowej: alkan nie odbarwia, alken odbarwia
+@opis Dwie probówki z pomarańczową wodą bromową: do pierwszej dodano alkan — barwa pozostaje pomarańczowa; do drugiej alken — roztwór odbarwia się, bo brom ulega addycji do wiązania podwójnego. Znacznik PRZED/PO pokazuje fazę próby.
 
 ## 5 | Zadania {#zadania}
 

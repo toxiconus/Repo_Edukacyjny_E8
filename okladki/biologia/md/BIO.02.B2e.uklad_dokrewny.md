@@ -76,6 +76,9 @@ Po lekcji wymienisz gruczoły dokrewne i ich główne hormony, wyjaśnisz, dlacz
 
 **Szyszynka** (epifiza) — **melatonina**, reguluje cykl dobowy i sen.
 
+@viz gruczoly-mapa | Gdzie są gruczoły dokrewne | kliknij gruczoł albo jego nazwę; przełącz ciało kobiety / mężczyzny
+@opis Szara sylwetka człowieka widziana z przodu z kolorowymi punktami gruczołów i przerywanymi liniami prowadzącymi do podpisów w kolumnie po prawej. W głowie: szyszynka (granatowa kropka w głębi mózgu), podwzgórze i tuż pod nim przysadka (fioletowe kropki u podstawy mózgu). Na szyi pomarańczowa, dwuczęściowa tarczyca i przy niej mała czerwona kropka przytarczyc; za mostkiem morska grasica. W jamie brzusznej dwa przerywane obrysy nerek z pomarańczowymi „czapeczkami” nadnerczy na szczytach oraz żółta, podłużna trzustka. W miednicy dwie różowe kropki jajników (ciało kobiety) albo w mosznie dwie niebieskie kropki jąder (ciało mężczyzny) — zależnie od przełącznika. Kliknięcie gruczołu lub podpisu pokazuje jego hormony, działanie oraz skutki niedoboru i nadmiaru; grafika sama przechodzi kolejno przez wszystkie gruczoły, dopóki użytkownik jej nie kliknie. Wniosek: gruczoły dokrewne leżą w różnych miejscach ciała i nie są ze sobą połączone przewodami — tworzą jeden układ, bo wszystkie wysyłają hormony do krwi, a najwyżej w hierarchii stoją podwzgórze i przysadka w mózgu.
+
 ## 4 | Mechanizm działania hormonów {#mechanizm}
 
 ### 4.1 Hormony steroidowe (lipofilne)
@@ -109,6 +112,9 @@ Podwzgórze i przysadka sterują gruczołami obwodowymi, a te z kolei wpływają
 
 @klocek petla-regulacji {zestaw="tarczyca"} | Sprzężenie zwrotne ujemne na przykładzie tarczycy
 @opis Pętla z pięciu pól: rośnie poziom tyroksyny, podwzgórze i przysadka go wykrywają, przysadka wydziela mniej TSH, tarczyca produkuje mniej hormonu, poziom wraca do normy. Impuls krąży po strzałkach; pośrodku napis „sprzężenie ujemne”. Pokazuje, że hormon hamuje własne wydzielanie.
+
+@viz sprzezenie-zwrotne {start="ty"} | Pętla regulacji hormonalnej | wybierz sytuację: oś tarczycy, wapń, glukoza; przejdź pętlę przyciskiem „krok”
+@opis Pętla z pięciu pól połączonych strzałkami w koło: bodziec → receptor → ośrodek → efektor → odpowiedź, z przyciskami sytuacji u góry (m.in. „tyroksyna ↓ (oś tarczycy)”, „wapń ↓”, „glukoza ↑”, „glukoza ↓”, temperatura i woda) i wskaźnikiem pokazującym, czy regulowany parametr jest poniżej, w normie czy powyżej. W scenariuszu osi tarczycy: mało tyroksyny we krwi → wyczuwają to podwzgórze i przysadka → podwzgórze pobudza przysadkę → przysadka wydziela TSH do tarczycy → tarczyca wydziela więcej tyroksyny, a gdy jej stężenie wróci do normy, sama hamuje podwzgórze i przysadkę. W scenariuszu wapnia: mało wapnia → przytarczyce → parathormon działa na kości i nerki → wapń wraca do normy. Przycisk „krok” podświetla kolejne pola i dopisuje opis; po pełnym obiegu wskaźnik wraca do normy, a opis podkreśla, że odpowiedź zmniejsza odchylenie. Wniosek: w sprzężeniu zwrotnym ujemnym skutek działania hormonu wyłącza jego dalsze wydzielanie — dlatego stężenia wahają się wokół normy zamiast rosnąć bez końca.
 
 ## 6 | Tabela hormonów — szybkie przypomnienie {#tabela}
 
@@ -152,6 +158,9 @@ Cukrzyca typu 1 to brak insuliny, wynikający z zniszczenia β-komórek. Cukrzyc
 ::: ciekawostka
 Tarczyca potrzebuje **jodu** do produkcji T3 i T4. Jego niedobór prowadzi do powiększenia tarczycy, czyli wola tarczycowego. Dlatego w wielu krajach, w tym w Polsce, sól kuchenna jest jodowana (data wprowadzenia do potwierdzenia).
 :::
+
+@viz glukoza-wykres | Stężenie glukozy po posiłku: osoba zdrowa i osoba z cukrzycą | kliknij punkt, przełączaj krzywe
+@opis Wykres liniowy: oś pozioma — czas po posiłku od 0 do 180 minut, oś pionowa — stężenie glukozy we krwi w mg/dl, z zielonkawym pasem zakresu prawidłowego na czczo (orientacyjnie 70–99). Krzywa osoby zdrowej (zielona) startuje ok. 85, osiąga szczyt ok. 135 po 30 minutach i wraca do ok. 86 po 180 minutach. Krzywa osoby z cukrzycą (czerwona) startuje już ok. 130, rośnie wyżej i później (ok. 240 po 60 minutach) i powoli opada, po 180 minutach wciąż ok. 165. Przyciski włączają i wyłączają każdą krzywą, kliknięcie punktu pokazuje wartość i wyjaśnienie (np. „insulina działa — stężenie spada”). Wniosek: u osoby zdrowej insulina szybko sprowadza glukozę do normy, a przy cukrzycy stężenie jest wysokie już na czczo i długo nie wraca do normy.
 
 ## 8 | Pułapki i typowe błędy {#pulapki}
 

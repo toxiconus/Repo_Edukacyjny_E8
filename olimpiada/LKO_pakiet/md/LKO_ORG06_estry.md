@@ -10,9 +10,9 @@ poglebia: "LKO-ORG07; LKO-ORG08"
 wlasciciel: "chemia olimpijska LKO"
 zrodla: "Zakres olimpiady kuratoryjnej (etap III) + podstawa programowa"
 opis: "Estry jako produkty kwasów i alkoholi: estryfikacja z odszczepieniem wody, rola H₂SO₄ stężonego, zapachy owoców, hydroliza i mydlenie tłuszczów."
-stan: "W1 FULL — Perplexity, 2026-10-13"
+stan: "W1 FULL — Perplexity, 2026-10-13; uzupełnienie zewnętrznego audytu i brakujących rachunków — Claude Haiku 5.5, 2026-10-14"
 kicker: "ORG06 · estry"
-lead: "Zapach banana, ananasa i gruszki to chemia: kwas + alkohol − woda = ester. Reakcja, która pachnie owocami i myje ręce mydłem."
+lead: "Zapachy banana, ananasa i gruszki w dużej mierze pochodzą od estrów: kwas + alkohol − woda = ester. Reakcja, która pachnie owocami i myje ręce mydłem."
 plakietki: ["estry", "estryfikacja"]
 stopka: "LKO-ORG06 · v1.1"
 ---
@@ -69,9 +69,6 @@ Estryfikacja to reakcja równowagowa: jedna z reakcji z obowiązkową strzałką
 :::
 
 ## 1 | Wykład — estry: definicja i nazewnictwo {#definicja}
-@klocek wzor-2d {smiles="CC(=O)OCC", grupa="ester"} | Octan etylu: grupa estrowa –COO– w ramce
-@opis Dwie części cząsteczki: fragment kwasowy CH₃–C(=O)– i fragment alkoholowy –O–CH₂CH₃. Ramka obejmuje grupę estrową –COO–. Wniosek: nazwa estru to nazwa kwasu z końcówką „-an” i grupy alkilowej z alkoholu, np. octan etylu.
-
 
 **Ester** to związek organiczny powstały z **kwasu karboksylowego i alkoholu** przez połączenie obu cząsteczek **z odszczepieniem cząsteczki wody**. Schemat ogólny:
 
@@ -85,11 +82,15 @@ Reszta alkilowa to fragment alkoholu bez grupy –OH: z etanolu — etylowa (–
 
 **Nazewnictwo** działa jak nazwy soli: najpierw nazwa „solna" kwasu (octan, mrówczan, maślan), potem nazwa grupy alkilowej z alkoholu (etylowy, metylowy, izoamylowy):
 
+Tabela nazw (zwyczajowa — systematyczna): kwas octowy — kwas etanowy; octan etylu — etanian etylu; kwas masłowy — kwas butanowy; **maślan etylu — butanian etylu** (CH₃CH₂CH₂COOCH₂CH₃).
+
+Przykład do zapisania: octan propylu powstaje z kwasu octowego i propan-1-olu: CH₃COOH + CH₃CH₂CH₂OH ⇌ CH₃COOCH₂CH₂CH₃ + H₂O (stężony H₂SO₄, ogrzewanie).
+
 | Kwas | Alkohol | Ester | Zapach |
 |---|---|---|---|
 | octowy | etanol | **octan etylu** | rozpuszczalnik, klej |
 | octowy | izoamylol (3-metylobutanol) | **octan izoamylu** | banan |
-| butanowy (masłowy) | etanol | **maślan etylu** | ananas |
+| butanowy (masłowy) | etanol | **maślan etylu** | zapach kojarzony z ananasem |
 | butanowy | metanol | **maślan metylu** | jabłko |
 
 Estry są nazywane „aromatami owoców": lotne estry to główni nośniki zapachów owoców, kwiatów i perfum; przemysł spożywczy dodaje syntetyczne estry do cukierków i napojów jako substancje zapachowe.
@@ -112,6 +113,12 @@ Zapach banana w syntetycznych aromatach to niemal zawsze **octan izoamylu** — 
 Najstarsze opisy mydła pochodzą ze starożytnego Babilonu (ok. 4–5 tys. lat temu — daty różnią się między źródłami); Rzymianie znali mydło głównie jako środek do włosów i lek; do mycia ciała częściej używali oliwy i skrobaczki. Chemicznie przez cały ten czas działa ta sama reakcja: **hydroliza tłuszczu z zasadą** — trójetster glicerolu + NaOH → glicerol + sole kwasów tłuszczowych. Cząsteczka mydła ma niepolarny „ogon" (rozpuszcza tłuszcz — R01) i polarną „głowę" (rozpuszcza się w wodzie) — dokładnie ta budowa, którą opisywaliśmy dla detergentów w R01, tylko wyprodukowana z masła i popiołu.
 :::
 
+@klocek wzor-2d {smiles="CC(=O)OCC"} | Octan etylu: wzór strukturalny estru
+@opis Wzór strukturalny octanu etylu: część kwasowa CH₃–CO– połączona przez atom tlenu z grupą etylową; wiązanie estrowe –COO–.
+
+@klocek wzor-2d {smiles="CCC(=O)OC"} | Propanian metylu: izomer octanu etylu
+@opis Wzór strukturalny propanianu metylu: część kwasowa propanianowa (CH₃CH₂–CO–) połączona przez tlen z grupą metylową; ma ten sam wzór sumaryczny C₄H₈O₂ co octan etylu, ale inną budowę — izomer estrowy.
+
 ## 2 | Wykład — estryfikacja krok po kroku {#estryfikacja}
 
 Reakcja wzorcowa — kwas octowy + etanol:
@@ -133,7 +140,7 @@ Własności fizyczne estrów: niskie estry są lotnymi cieczami o owocowym zapac
 Spalanie estru: CH₃COOC₂H₅ + 5O₂ → 4CO₂ + 4H₂O (C: 4 = 4 ✔; H: 8 = 8 ✔; O: 2 + 10 = 12 = 8 + 4 ✔).
 
 ::: karta understand | W skrócie — estryfikacja w pięciu kontrolach
-(1) Strzałka ⇌. (2) Katalizator: H₂SO₄ stężony. (3) Produkty: ester **i woda** — bez wody równanie uznaje się za niepełne. (4) Bilans masy: suma M substratów = suma M produktów (60 + 46 = 88 + 18). (5) Ograniczający substrat: licz mole obu — ten, którego jest mniej w stosunku 1 : 1, wyznacza maksimum estru (R08).
+(1) Strzałka ⇌. (2) Katalizator: H₂SO₄ stężony — przyspiesza reakcję i wiąże część wody; nie zużywa się stechiometrycznie. (3) Produkty: ester **i woda** — bez wody równanie uznaje się za niepełne. (4) Bilans masy: suma M substratów = suma M produktów (60 + 46 = 88 + 18). (5) Ograniczający substrat: licz mole obu — ten, którego jest mniej w stosunku 1 : 1, wyznacza maksimum estru (R08).
 :::
 
 ::: karta error | „Reakcja zaszła do końca, bo tak pisze równanie"
@@ -148,7 +155,15 @@ Najczęstszy błąd pojęciowy: traktowanie „→" lub zapisu bez strzałek jak
 - Mylenie estrów (R–COO–R′) z eterami (R–O–R′).
 - Zapis mydła jako soli kwasu octowego — mydło to sole kwasów tłuszczowych.
 - Pominięcie współczynnika 3 przy NaOH w mydleniu.
+- Nazwa „etylan octanu” zamiast **octan etylu** — najpierw reszta kwasowa, potem alkilowa.
+- Nie każda substancja o zapachu owocowym jest czystym estrem — naturalne aromaty to mieszaniny wielu związków.
 :::
+
+@klocek estryfikacja {ester="octan-etylu"} | Estryfikacja krok po kroku: skąd bierze się woda
+@opis Animacja w pętli: obok siebie stoją kwas octowy (CH₃C(=O)–OH) i etanol (H–O–C₂H₅). Grupa –OH kwasu (czerwona) i atom H alkoholu (niebieski) zostają podświetlone, schodzą w dół i łączą się w wodę, a reszty kwasu i alkoholu zbliżają się i tworzą wiązanie estrowe –CO–O–. Na końcu widać octan etylu i wodę oraz informację, że reakcja jest odwracalna. Pokazuje, że woda pochodzi z –OH kwasu i H alkoholu.
+
+@klocek bilans-rownania {rownanie="CH3COOH + C2H5OH -> CH3COOC2H5 + H2O" przyklady="CH3COOH + C2H5OH -> CH3COOC2H5 + H2O; HCOOH + CH3OH -> HCOOCH3 + H2O"} | Estryfikacja: bilans atomów po obu stronach
+@opis Równanie estryfikacji (kwas octowy + etanol → octan etylu + woda) z przyciskami − i + przy współczynnikach i tabelą liczby atomów C, H i O po obu stronach; reakcja jest zbilansowana przy wszystkich współczynnikach równych 1 — każda cząsteczka kwasu łączy się z jedną cząsteczką alkoholu i oddaje jedną cząsteczkę wody. Drugi przykład: kwas mrówkowy z metanolem.
 
 ## 3 | Wykład — hydroliza: estryfikacja odwrócona {#hydroliza}
 
@@ -157,6 +172,8 @@ Skoro estryfikacja jest odwracalna, to reakcja odwrotna też istnieje i ma włas
 **CH₃COOC₂H₅ + H₂O ⇌ CH₃COOH + C₂H₅OH** (estr → kwas + alkohol)
 
 Hydrolizę przyspieszają katalizatory: kwas lub zasada. Hydroliza **kwasowa** jest odwracalna (⇌) — to dokładne odwrócenie estryfikacji. Hydroliza **zasadowa** jest **nieodwracalna** (→), bo powstały kwas zostaje od razu zobojętniony do soli — i to ona ma ważne zastosowanie na tłuszczach:
+
+**Mydlenie prostego estru (model):** CH₃COOC₂H₅ + NaOH →(ogrzewanie) CH₃COONa + C₂H₅OH. Produktem jest sól kwasu octowego, a nie wolny kwas — dlatego reakcja jest nieodwracalna.
 
 **tłuszcz (trójester glicerolu) + 3NaOH →(ogrzewanie) glicerol + 3 sole kwasów tłuszczowych (mydło)**
 
@@ -171,6 +188,8 @@ Olej roślinny (np. rzepakowy) **odbarwia wodę bromową**, bo zawiera wiązania
 
 ::: karta understand | Dlaczego mydło nie lubi twardej wody
 Twarda woda zawiera jony wapnia i magnezu. Z mydłem tworzą nierozpuszczalne sole, które wytrącają się jako szary osad (kamień mydlany): 2C₁₇H₃₅COONa + Ca²⁺ → (C₁₇H₃₅COO)₂Ca↓ + 2Na⁺. Mydło „ginie” w osadzie i słabo się pieni. Detergenty syntetyczne tworzą z Ca²⁺ sole rozpuszczalne w wodzie, więc w twardej wodzie działają lepiej.
+
+Zapis jonowy reakcji mydła z jonami wapnia: 2C₁₇H₃₅COO⁻ + Ca²⁺ → (C₁₇H₃₅COO)₂Ca↓.
 
 Mydło sodowe (z NaOH) jest twarde, a potasowe (z KOH) — miękkie, maziste.
 :::
@@ -208,6 +227,9 @@ Tłuszcz + 3CH₃OH ⇌(kat. zasada) 3 estry metylowe kwasów tłuszczowych + gl
 
 ## 4 | Doświadczenie {#dosw}
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie), pierwsza pomoc (oparzenie, skaleczenie, wdychanie gazu). Wniosek: zasady są takie same przy każdym doświadczeniu i trzeba je znać przed rozpoczęciem pracy.
+
 ::: dosw | Doświadczenie 1 — Otrzymywanie octanu etylu: zapach rozpuszczalnika (do analizy na podstawie opisu)
 **Problem:** Jak otrzymać ester i rozpoznać go po właściwościach?
 
@@ -227,6 +249,25 @@ Tłuszcz + 3CH₃OH ⇌(kat. zasada) 3 estry metylowe kwasów tłuszczowych + gl
 **Wniosek:** CH₃COOH + C₂H₅OH ⇌(H₂SO₄ stęż.) CH₃COOC₂H₅ + H₂O — estryfikacja przebiegła: kondensacja z odszczepieniem wody, katalizowana i przesunięta ku produktom przez H₂SO₄ stężony (wiąże wodę). Ester potwierdzony zapachem i własnościami fizycznymi (warstwa na wodzie). To doświadczenie nie wykazuje bezpośrednio powstania wody — wynika ona z bilansu równania.
 
 **Bezpieczeństwo:** H₂SO₄ stężony — silnie żrący, dolewać powoli do alkoholu (nie odwrotnie!), przy stole z wyciągiem; etanol i ester — palne, lotne ciecze; zero otwartego ognia, łaźnia wodna zamiast palnika nad probówką; pary estrów nie wdychać bezpośrednio; mieszankę po doświadczeniu najpierw zneutralizować (np. sodą), a dopiero potem zutylizować do pojemnika na odpady organiczne; H₂SO₄ rozcieńczać przez powolne wlewanie kwasu do wody.
+:::
+
+## 4a | Bilans masy, wydajność i rachunki
+
+::: karta exam | Przykład — masa estru
+Zmieszano 6,0 g kwasu octowego i 4,6 g etanolu. Załóż pełne przereagowanie substratu ograniczającego.
+n(CH₃COOH) = 6,0/60 = 0,10 mol; n(C₂H₅OH) = 4,6/46 = 0,10 mol. Stosunek 1:1, więc powstaje 0,10 mol octanu etylu.
+m(estru) = 0,10 · 88 = **8,8 g**; m(wody) = 0,10 · 18 = **1,8 g**.
+Kontrola: 8,8 + 1,8 = 10,6 g = 6,0 + 4,6 ✓.
+:::
+
+::: karta core | Wydajność
+W praktyce estryfikacja nie zachodzi całkowicie. Wydajność: η = m_rzeczywista / m_teoretyczna · 100%. Można też używać moli, jeśli porównujemy tę samą substancję.
+:::
+
+::: karta exam | Przykład — wydajność
+Teoretycznie można otrzymać 8,8 g octanu etylu, a rzeczywiście otrzymano 6,6 g.
+η = 6,6/8,8 · 100% = **75%**.
+Pozostałe kwas i alkohol nie muszą oznaczać błędu: część substratów została, bo reakcja jest odwracalna.
 :::
 
 ## 5 | Zadania {#zadania}
@@ -342,6 +383,14 @@ W wodzie zawierającej 0,01 mol CaCl₂ rozpuszczono nadmiar stearynianu sodu C�
 (a) 2C₁₇H₃₅COONa + CaCl₂ → (C₁₇H₃₅COO)₂Ca↓ + 2NaCl (1 pkt). (b) n = 0,02 mol; m = 0,02 · 306 = 6,12 g (1 pkt). (c) n(osadu) = 0,01 mol; m = 0,01 · 606 = 6,06 g (2 pkt). (d) Jony Ca²⁺ wiążą anion mydła w nierozpuszczalną sól, więc mydło ubywa z roztworu (1 pkt).
 :::
 
+::: adv | Zadanie 7 — wydajność i bilans | poziom ambitny
+W reakcji 12,0 g kwasu octowego z 9,2 g etanolu otrzymano 14,08 g octanu etylu. Oblicz wydajność reakcji.
+
+::: odp | Pokaż klucz
+n(kwasu) = 0,20 mol, n(etanolu) = 0,20 mol → teoretycznie 0,20 mol estru = 0,20 · 88 = 17,6 g. η = 14,08/17,6 · 100% = **80%**.
+:::
+:::
+
 ## 7 | Fiszki
 
 ::: fiszki
@@ -403,6 +452,14 @@ Kwas butanowy vs octan etylu? | izomery funkcjonalne — wspólny wzór C₄H₈
 ! Kwas ma grupę –COOH, która tworzy wiązania wodorowe; ester ich nie tworzy z sobą, więc wrze niżej.
 :::
 
+## 8a | Dodatkowe pułapki
+
+::: karta error | Pułapki rachunkowe
+- Obliczanie substratu ograniczającego na podstawie mas zamiast moli.
+- Mylenie hydrolizy estru z jego spalaniem.
+- Założenie, że każda estryfikacja daje 100% produktu.
+:::
+
 ## 9 | Słownik
 
 ::: slownik
@@ -446,3 +503,27 @@ Zastosowano uwagi z audytu Perplexity:
 - Propozycja nazwy „izopentyl” — nieprzyjęta: zostaje „izoamyl” jako nazwa zwyczajowa (zgodna z tabelą lekcji); nazwa systematyczna podana w „Do weryfikacji”.
 - Mechanizm estryfikacji — zostawiono wersję szkolną z dopiskiem o ¹⁸O; pogłębienie mechanizmu jako decyzja autora (nie wprowadzono w tekst ucznia).
 - Zalecenie „przy skalowaniu nazewnictwa” — poza zakresem tej lekcji; pozostawione w „Do weryfikacji”.
+
+### AUDYT W1 — zewnętrzny, weryfikacja 2026-10-14 (Claude Haiku 5.5)
+
+Surowa odpowiedź: `chemia/plany/audyty/LKO_ORG06_audyt_W1_2026-10-14.md`.
+
+**Wprowadzono:** lead doprecyzowany (zapachy pochodzą głównie od estrów, nie od jednego); „maślan etylu” w tabeli — „zapach kojarzony z ananasem”; katalizator H₂SO₄ — przyspiesza i wiąże wodę, nie zużywa się stechiometrycznie; równanie mydlenia prostego estru (CH₃COOC₂H₅ + NaOH → CH₃COONa + C₂H₅OH); dwie pułapki w błędach (etylan octanu; zapach owocowy ≠ czysty ester).
+
+**Już w lekcji (zarzut nieaktualny):** zastrzeżenie o mechanizmie estryfikacji (odchodzi OH z –COOH i H z alkoholu, z doświadczeniem ¹⁸O); ograniczający substrat liczony z moli; równanie hydrolizy octanu etylu z ⇌; równanie mydlenia tłuszczu z 3NaOH; bilans masy 60 + 46 = 88 + 18.
+
+**Nieprzyjęte:** brak „równania hydrolizy octanu etylu” — jest w §3 i w zadaniu 3; założenie wydajności — zadania mają już założenie „reakcja do końca względem substratu ograniczającego”.
+
+**Dotyczy innej lekcji:** „brak treści LKO-ORG07” — plik `LKO_ORG07_cukry.md` istnieje i zawiera fermentację; nie audytowano go w tej rundzie.
+
+## AUDYT W1/W2 — zewnętrzny, LKO-ORG06 (2026-10-14, uzupełnienie)
+
+Zastosowano: dodano tabelę nazw zwyczajowych i systematycznych (w tym maślan etylu = butanian etylu); dodano zapis octanu propylu z kwasem octowym i propan-1-olem; dodano zapis jonowy reakcji stearynianu z jonami wapnia.
+
+Nieprzyjęte (sprawdzone w pliku): schemat kwas + alkohol ⇌ ester + woda i rozdzielenie estryfikacji, hydrolizy kwasowej i zasadowej są już w lekcji; sformułowanie o solach sodowych i potasowych (mydła twarde i miękkie) jest; cząsteczkowe równanie twardej wody jest; spalanie 17,6 g octanu etylu (0,2 mol, 1 mol O₂, 35,2 g CO₂) jest poprawne; zasada mnożenia wydajności etapów szeregowych jest już w zadaniu o zmydleniu i w pułapkach.
+
+## AUDYT W1/W2 — zewnętrzny, blok organiczny (2026-10-14)
+
+Zastosowano: brak zmian treści.
+
+Nieprzyjęte (sprawdzone w pliku): Równanie estryfikacji z H₂SO₄ jako katalizatorem i pochłaniaczem wody, nazwy estrów i zapis reakcji twardej wody są w lekcji. Nic do zmiany.

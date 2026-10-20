@@ -12,7 +12,7 @@ V.define('kinetics-v01',{title:'Szybkość reakcji: metal + kwas solny (pomiar o
   var bar3=el('div','r');host.appendChild(bar3);var go=el('button',null,'▶ zmierz');go.type='button';var clr=el('button',null,'wyczyść wykres');clr.type='button';bar3.append(go,clr);
   var grid=el('div');grid.style.cssText='display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:10px;align-items:start';host.appendChild(grid);
   var left=el('div'),right=el('div');grid.append(left,right);
-  var ch=el('canvas');ch.style.cssText='width:100%;height:260px;display:block;border-radius:10px;background:var(--surface-soft,#f1f5f9)';right.appendChild(ch);var leg=el('div','note');right.appendChild(leg);var note=el('div','note');host.appendChild(note);
+  var ch=el('canvas');ch.style.cssText='width:100%;height:260px;display:block;border-radius:10px;background:var(--surface-soft,#f6f8fa)';right.appendChild(ch);var leg=el('div','note');right.appendChild(leg);var note=el('div','note');host.appendChild(note);
   function model(){var me=METAL[st.metal],f=FORM[st.form],T=st.T+273.15,k=me.base*Math.exp(-me.Ea*1000/R*(1/T-1/298.15))*(st.cat&&st.metal==='Zn'?3:1);
    var nM=st.m/me.M,nH=st.c*st.Vacid/1000,nH2=Math.min(nM,nH/2),Vm=R*T/101.325,Vmax=nH2*Vm*1000;return{k:k,v0:k*f.S*st.c*0.9,nM:nM,nH:nH,Vmax:Vmax,lim:nM<=nH/2?'metal':'kwas',Vm:Vm,frac:Math.exp(-me.Ea*1000/(R*T))/Math.exp(-me.Ea*1000/(R*298.15))}}
   function info(){var m=model(),me=METAL[st.metal],eq='';try{eq=C.LAB.GFX.rx.info(me.rx).eq}catch(_){}

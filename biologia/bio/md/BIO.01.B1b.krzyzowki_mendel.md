@@ -118,6 +118,9 @@ Opis szachownicy: tabelka 2×2 z nagłówkami. Kolumny to gamety jednego rodzica
 @klocek krzyzowka-mendla {krzyzowki="AA×aa,Aa×Aa,Aa×aa,AA×Aa" start="1" cechy="gładkie:pomarszczone"} | Szachownica Punnetta: wybierz krzyżówkę i klikaj pola
 @opis Szachownica 2 × 2 dla czterech krzyżówek (AA × aa, Aa × Aa, Aa × aa, AA × Aa): u góry gamety jednego rodzica, z lewej drugiego, w polach znak zapytania odsłaniany kliknięciem; allele wielkie i małe mają różne barwy. Pod tabelą stosunek genotypów i fenotypów, np. dla Aa × Aa genotypy 1 AA : 2 Aa : 1 aa i fenotypy 3 : 1 (gładkie : pomarszczone).
 
+@viz punnett {tryb="A"} | Szachownica Punnetta | wybierz genotypy rodziców
+@opis Szachownica 2×2: gamety jednego rodzica w wierszach, drugiego w kolumnach, w polach genotypy potomstwa (AA, Aa, aa), pod spodem udział genotypów i fenotypów w procentach. Wniosek: przy krzyżówce Aa × Aa stosunek fenotypów wynosi 3 : 1, a genotypów 1 : 2 : 1.
+
 ### 7. Krzyżówka dihybrydowa — 9 : 3 : 3 : 1 (poza zakresem LKO 2026/27)
 
 Dwie cechy naraz: kolor nasion (A — żółte, a — zielone) i kształt nasion (B — gładkie, b — pomarszczone).

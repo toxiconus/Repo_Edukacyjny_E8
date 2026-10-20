@@ -31,7 +31,7 @@ stopka: **CHEMIA F03 v1.1 MASTER** · Właściwości i rozdzielanie mieszanin ·
 - contest | <b>Ponad LO:</b> rozwijane bloki „poziom akademicki” — przycisk w nagłówku lekcji
 :::
 
-::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to (ok. 35 min)
 1. **[§0.4](#diagnoza)** — diagnoza: odpowiedz, zanim zaczniesz czytać.
 2. **[§1](#wlasciwosci)–[§3](#zjawisko-reakcja)** — właściwości, stany skupienia, zjawisko a reakcja.
 3. **[§5](#metody)–[§6](#dobor)** — metody rozdzielania i procedura doboru metody.
@@ -201,6 +201,12 @@ Składniki mieszaniny zachowują swoje właściwości (F02), więc każda **ró�
 | **sublimacja** | jeden składnik sublimuje (przechodzi w gaz), drugi nie | pary składnika zbierane na zimnej powierzchni | jod z piaskiem; chlorek amonu z piaskiem |
 | **wirowanie** | różna gęstość, przyspieszone opadanie | osad na dnie probówki | składniki krwi |
 
+**Ciecze niemieszające się — układ warstw.** Gdy w rozdzielaczu zmieszamy dwie ciecze, które się nie mieszają, ułożą się w dwie warstwy: **ciecz o mniejszej gęstości jest na górze, o większej — na dole**. Przyczyna: cięższa ciecz działa większą siłą ciężkości na tę samą objętość, a lżejsza „pływa" po niej jak korek po wodzie. Przykłady: woda (ρ = 1,00 g/cm³) i olej roślinny (ρ ≈ 0,92 g/cm³) — olej na górze; chloroform (ρ ≈ 1,49 g/cm³) i woda — chloroform na dole. Woda i etanol (ρ ≈ 0,79 g/cm³) mieszają się w każdym stosunku, więc nie tworzą warstw — gęstość tu nie decyduje, potrzebna jest destylacja.
+
+**Mini-zadanie:** do cylindra wlano 30 cm³ wody i 50 cm³ oleju (ρ = 0,92 g/cm³). Która warstwa jest na górze? Olej (0,92 < 1,00). Masa oleju: 0,92 g/cm³ · 50 cm³ = 46 g; masa wody: 1,00 g/cm³ · 30 cm³ = 30 g.
+
+**Mnemonik:** „Cięższe dół, lżejsze góra".
+
 **Sączenie a destylacja:** sączenie oddziela ciało stałe od cieczy; destylacja rozdziela ciecze lub odzyskuje rozpuszczalnik z roztworu. **Odparowanie a destylacja:** obie usuwają lotny rozpuszczalnik, ale tylko destylacja go **odzyskuje** — para jest chłodzona w chłodnicy, skrapla się i spływa do odbieralnika.
 
 > Sublimację jodu prowadzimy wyłącznie jako pokaz pod wyciągiem — pary jodu są szkodliwe.
@@ -253,6 +259,9 @@ Nie zawsze. Pojedyncza destylacja mieszaniny etanolu z wodą daje destylat **wzb
 
 @model lab-stations-v102 | Stanowiska laboratoryjne: zlewka, gaz, chłodnica, palnik | sprzęt do destylacji — kolba, chłodnica, odbieralnik
 @opis Zestaw do destylacji: kolba z cieczą ogrzewana palnikiem, chłodnica, w której para się skrapla, i odbieralnik, do którego spływa destylat. Wniosek: destylacja to odparowanie i skroplenie — odzyskuje się składnik o niższej temperaturze wrzenia.
+
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
 
 ## 8 | Doświadczenia {#doswiadczenia}
 
@@ -742,13 +751,13 @@ Destylacja frakcyjna :: wielokrotne destylowanie w kolumnie, rozdział wielu sk�
 
 ## 16 | System powtórek {#powtorki}
 
-Kolejność powtórki (we własnym tempie):
-
-1. karta z [§12](#powtorka) i ćwiczenia A
-2. fiszki
-3. ćwiczenia B
-4. test z [§11](#test)
-5. F01 + F02 + F03 razem — zestaw przekrojowy z F21
+| Kiedy | Ile | Co |
+|---|---|---|
+| po lekcji | 20 min | karta z [§12](#powtorka) i ćwiczenia A |
+| po 1 dniu | 10 min | fiszki |
+| po 3 dniach | 15 min | ćwiczenia B |
+| po tygodniu | 20 min | test z [§11](#test) |
+| po F03 | 25 min | F01 + F02 + F03 razem — zestaw przekrojowy z F21 |
 
 ## A | Dodatek A — mosty i co dalej {#mosty}
 

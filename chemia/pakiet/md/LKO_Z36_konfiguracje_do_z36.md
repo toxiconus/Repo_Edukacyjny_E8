@@ -676,3 +676,7 @@ Ogólna wiedza o jonach i izoelektronowości (sekcje 2 i 2.3) pochodzi z przyję
 
 **Nieprzyjęte z odpowiedzi:** nic — wszystkie tematy zachowano. Propozycja „gen_f00: wiersz LKO-Z36 w sekcji Uzupełnienia" i „POWIAZANIA_CHE: F07 → LKO-Z36 (EXPAND), LKO-Z36 → F09/F12 (APPLY)" zapisana jako zadania poza tą lekcją.
 :::
+
+## AUDYT W1/W2 — zewnętrzny, blok status LKO (2026-10-14)
+
+Nieprzyjęte: konfiguracje Br, Ga, S²⁻/Ar, K₂S i GaCl₃ są w lekcji i poprawne; ostrzeżenie przed regułą „powłoka M — 8 elektronów” jest w lekcji (pkt 4); metale przejściowe Fe i Mn są już w zadaniu „G. Ambitne” oznaczonym poziomem ambitnym, a nie w rdzeniu.

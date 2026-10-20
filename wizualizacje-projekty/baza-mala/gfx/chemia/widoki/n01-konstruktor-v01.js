@@ -5,9 +5,9 @@ V.define('n01-konstruktor-v01',{title:'Konstruktor wzoru tlenku (W–K–S–K) 
   var bar=el('div','r');host.appendChild(bar);var eB=[];Object.keys(S).filter(function(e){return e!=='H'}).forEach(function(e){var b=btn(bar,e,function(){st.el=e;st.ox=S[e][S[e].length-1];st.t0=performance.now();eB.forEach(function(q){q.classList.toggle('on',q===b)});oxBar();upd()});eB.push(b);if(e===st.el)b.classList.add('on')});
   var ob=el('div','r');host.appendChild(ob);
   function oxBar(){ob.innerHTML='<span style="font:600 13px system-ui;margin-right:6px">stopień utlenienia:</span>';(S[st.el]||[]).forEach(function(x){var b=btn(ob,'+'+['','I','II','III','IV','V','VI','VII'][x],function(){st.ox=x;st.t0=performance.now();oxBar();upd()});if(x===st.ox)b.classList.add('on')})}
-  var cv=el('canvas');cv.style.cssText='width:100%;height:220px;display:block;border-radius:12px;background:var(--surface-soft,#f1f5f9)';host.appendChild(cv);var info=el('div','note');host.appendChild(info);
-  var chk=el('div');chk.style.cssText='margin-top:10px;border:1px solid var(--line,#d5dee6);border-radius:12px;padding:10px';host.appendChild(chk);
-  chk.innerHTML='<b>Sprawdź wzór</b> — czy to tlenek i jaki stopień utlenienia? <div class="r" style="margin-top:6px"><input id="n01f" value="Mn2O7" style="padding:7px 10px;border:1px solid #cbd5e1;border-radius:8px;font:600 15px ui-monospace,monospace;width:140px"></div><div id="n01r" class="note"></div>';
+  var cv=el('canvas');cv.style.cssText='width:100%;height:220px;display:block;border-radius:12px;background:var(--surface-soft,#f6f8fa)';host.appendChild(cv);var info=el('div','note');host.appendChild(info);
+  var chk=el('div');chk.style.cssText='margin-top:10px;border:1px solid var(--line,#cdd5dd);border-radius:12px;padding:10px';host.appendChild(chk);
+  chk.innerHTML='<b>Sprawdź wzór</b> — czy to tlenek i jaki stopień utlenienia? <div class="r" style="margin-top:6px"><input id="n01f" value="Mn2O7" style="padding:7px 10px;border:1px solid #cdd5dd;border-radius:8px;font:600 15px ui-monospace,monospace;width:140px"></div><div id="n01r" class="note"></div>';
   var inp=chk.querySelector('#n01f'),res=chk.querySelector('#n01r'),qb=chk.querySelector('.r');
   ['Fe2O3','Fe3O4','Na2O2','H2O2','OF2','KO2','Mn2O7','P4O10','CO'].forEach(function(f){btn(qb,A.pretty(f),function(){inp.value=f;check()})});btn(qb,'Sprawdź',check,'on');inp.oninput=check;
   function check(){var f=inp.value.trim(),r=A.oxState(f);if(!r){res.innerHTML='—';return}if(r.error){res.innerHTML='<b style="color:#b91c1c">'+r.error+'</b>';return}

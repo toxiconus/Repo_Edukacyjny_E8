@@ -316,3 +316,7 @@ Zwyczaj z LKO-A1 obowiązuje: trzy najdroższe błędy na kartkę A6, kartka idz
 3. Zadanie 7d (wydajność) jest świadomie „poza mapą" z notatką — punkt łatwo odzyskiwalny, ale nie jest wymaganiem rozszerzenia 7; uczeń w słabszym dniu pomija go bez straty rytmu.
 5. **Wartość bazowa KNO₃:** 110 g/100 g wody w 60 °C (tablice rozpuszczalności) — ta sama wartość w LKO-KRZYWE i LKO-A1. Odczyt z wykresu dopuszcza 108–112 g.
 4. Jeśli wynik ≥32/40 i rejestracja OCJ aktywna: most do OCJ II (termin do potwierdzenia) — cykliczne, halogenopochodne, eliminacja — wchodzi bez obaw o LKO II.
+
+## AUDYT W1/W2 — zewnętrzny, blok status LKO (2026-10-14)
+
+Uwaga: symulacja nie była sprawdzona punkt po punkcie w tym audycie; kontrola spójności z lekcjami bazowymi do osobnego przebiegu.

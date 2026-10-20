@@ -10,7 +10,7 @@ poglebia: "LKO-ORG06; LKO-ORG07; LKO-ORG08"
 wlasciciel: "chemia olimpijska LKO"
 zrodla: "Zakres olimpiady kuratoryjnej (etap III) + podstawa programowa"
 opis: "Kwasy karboksylowe C1–C3: grupa –COOH, słaba dysocjacja i kwaśny odczyn, cztery drogi reakcji (metale, tlenki, zasady, węglany) — z pełną stechiometrią."
-stan: "W1 FULL — Perplexity, 2026-10-13"
+stan: "W1 FULL — Perplexity, 2026-10-13; uzupełnienie 2026-10-14 (weryfikacja drugiego audytu, przykład stechiometryczny)"
 kicker: "ORG05 · kwasy karboksylowe"
 lead: "Grupa –COOH łączy wiązanie C=O i grupę –OH na jednym węglu. Kwas octowy reaguje z metalami, tlenkami, zasadami i węglanami — ale nie z miedzią. Sprawdź dlaczego."
 plakietki: ["kwasy karboksylowe", "kwas octowy"]
@@ -75,10 +75,6 @@ Ta lekcja odpowiada na pytanie, które brzmi paradoksalnie: **czym różni się 
 
 Zapis strukturalny grupy: **R–C(=O)–OH** — atom węgla grupy –COOH łączy podwójne wiązanie z tlenem (grupa **karbonylowa** C=O), pojedyncze wiązanie z grupą **hydroksylową** –OH i wiązanie z resztą R. Kwas octowy w zapisie strukturalnym: CH₃–C(=O)–OH. Grupa –COOH jest kwaśna, bo sąsiedztwo C=O osłabia wiązanie O–H.
 
-@klocek wzor-2d {smiles="CC(=O)O", grupa="COOH", kwas="1"} | Kwas octowy CH₃COOH: –COOH w ramce, kwaśny H wskazany
-@opis Cząsteczka kwasu octowego: trzy wodory przy węglu CH₃ oraz grupa –COOH (węgiel z podwójnym wiązaniem do tlenu i pojedynczym do –OH) w fioletowej przerywanej ramce. Czerwony pierścień otacza tylko wodór z –OH grupy karboksylowej. Wniosek: proton oddaje wyłącznie wodór z –COOH, a wodory przy CH₃ są związane z węglem i nie dysocjują.
-
-
 Wzór ogólny kwasów monokarboksylowych nasyconych: **CₙH₂ₙ₊₁COOH**, gdzie n to liczba atomów węgla w reszcie węglowodorowej (dla kwasu metanowego n = 0, dla octowego n = 1). Jeśli policzysz **wszystkie** atomy węgla, wzór to CₙH₂ₙO₂ (np. kwas octowy: C₂H₄O₂).
 
 Pierwsi członkowie szeregu:
@@ -101,11 +97,16 @@ Pułapka na równość mas: **kwas metanowy i etanol mają tę samą masę molow
 Kwas metanowy (mrówkowy) zawdzięcza nazwę historii: po raz pierwszy wyodrębniono go z destylacji mrówek — użądlenie mrówki i parzący kontakt z włoskami pokrzywy wiąże się m.in. z działaniem tego kwasu na skórę. To przykład, jak nazwy zwyczajowe chemii organicznej zapisują dawne obserwacje naturalistów: mrówkowy, octowy (z octu!), masłowy (zapach zjełczałego masła) — każda nazwa to zapis miejsca znalezienia kwasu.
 :::
 
+@klocek wzor-2d {smiles="CC(=O)O"} | Kwas octowy: wzór strukturalny z grupą –COOH
+@opis Wzór strukturalny kwasu octowego: grupa metylowa połączona z grupą karboksylową –COOH, w której atom węgla ma wiązanie podwójne z tlenem i grupę –OH.
+
 ## 2 | Wykład — słaby kwas, kwaśny odczyn {#odczyn}
 
 Roztwory kwasów karboksylowych mają **odczyn kwaśny**: lakmus czerwienieje, fenoloftaleina pozostaje bezbarwna, wskaźnik uniwersalny przechodzi w żółto-pomarańczowo-czerwone odcienie. Za kwasowość odpowiada atom wodoru z grupy –COOH — w wodzie może odłączać się jako **kation H⁺**:
 
 **CH₃COOH ⇌ CH₃COO⁻ + H⁺**
+
+W roztworze wodnym proton przyłącza się do cząsteczki wody i powstaje jon hydroniowy H₃O⁺: CH₃COOH + H₂O ⇌ CH₃COO⁻ + H₃O⁺. Zapis z H⁺ jest uproszczeniem stosowanym w zadaniach; oba zapisy oznaczają to samo.
 
 Dwie kluczowe cechy tej dysocjacji:
 
@@ -122,6 +123,14 @@ Słabość kwasu dotyczy **stopnia dysocjacji**, nie siły działania. Kwas octo
 Czysty (bezwodny) kwas octowy krzepnie już w temperaturze ok. 17 °C (dokładnie ok. 16,6 °C) — w nieogrzewanym laboratorium zimą butelka zamienia się w blok przypominający lód, stąd historyczna nazwa **kwas octowy lodowaty** (glacjalny). To wygodna puenta własności fizycznych: nie każda „kwaśna" ciecz jest taka sama — ocet stołowy (roztwór kilku–kilkunastu procent) zamarza dopiero w zamrażarce, bo woda obniża temperaturę krzepnięcia (przypomnij wykresy R02 — analogia dla roztworów).
 :::
 
+::: karta understand | W skrócie — kwas słaby, mocny i etanol
+| Substancja | Czy oddaje H⁺? | Odczyn | Przewodnictwo |
+|---|---|---|---|
+| Kwas octowy | częściowo | kwasowy | słabe |
+| Kwas solny (HCl) | prawie całkowicie | kwasowy | dobre |
+| Etanol | praktycznie nie | obojętny | bardzo słabe |
+:::
+
 ## 3 | Wykład — cztery drogi reakcji kwasu octowego {#reakcje}
 
 Kwas octowy reaguje jak typowy kwas — z czterema klasami partnerów. Każda droga to osobne równanie do pamięci:
@@ -134,6 +143,9 @@ Liczba reszt octanowych zrównuje ładunek kationu: Na⁺ → CH₃COONa; Mg²�
 
 Mg + 2CH₃COOH → (CH₃COO)₂Mg + H₂↑
 Zn + 2CH₃COOH → (CH₃COO)₂Zn + H₂↑
+
+@klocek bilans-rownania {rownanie="Mg + CH3COOH -> Mg(CH3COO)2 + H2" przyklady="Zn + CH3COOH -> Zn(CH3COO)2 + H2; Na + CH3COOH -> CH3COONa + H2"} | Bilans atomów: magnez i kwas octowy
+@opis Tabela bilansu atomów reakcji Mg + CH₃COOH → Mg(CH₃COO)₂ + H₂: liczba atomów Mg, C, H i O po obu stronach. Magnez oddaje kationy, reszta octanowa dwukrotnie — współczynnik 2 przy kwasie uzgadnia bilans. Wniosek: reszta octanowa bierze udział w reakcji, a wodór wychodzi jako cząsteczkowy H₂.
 
 Reagują tylko metale **aktywniejsze od wodoru** (szereg aktywności: K, Na, Ca, Mg, Al, Zn, Fe...). **Miedź, srebro i złoto nie reagują** — są mniej aktywne od wodoru i nie wypierają go z kwasu. Cu nie wypiera wodoru z kwasu, więc równanie Cu + 2CH₃COOH → (CH₃COO)₂Cu + H₂↑ jest fałszywe — to najczęstszy fałszywy zapis w zadaniach. (Powolne zazielenienie miedzi w occie na powietrzu to inna reakcja — z udziałem tlenu, nie wypieranie wodoru.)
 
@@ -180,6 +192,12 @@ Wspólny produkt: **octan** — reszta CH₃COO⁻ z kationem partnera. Przed na
 - Zapis dysocjacji kwasu słabego bez strzałki odwracalnej ⇌.
 - Mylenie octanów (soli) z estrami octanowymi (ORG06) — octan sodu to sól, octan etylu to ester.
 :::
+
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
+@klocek probowki-odczyn {tuby="CH3COOH + Mg:bezbarwny:bezbarwny:gaz,CH3COOH + Na2CO3:bezbarwny:bezbarwny:gaz,CH3COOH + oranż metylowy:zolty:czerwony:brak"} | Reakcje kwasu octowego: metal, węglan, wskaźnik
+@opis Trzy probówki z kwasem octowym: z magnezem wydziela się wodór, z węglanem sodu — dwutlenek węgla (pęcherzyki gazu), a oranż metylowy zmienia barwę z żółtej na czerwoną, co świadczy o odczynie kwasowym.
 
 ## 4 | Wykład — spalanie i otrzymywanie kwasu octowego {#spalanie}
 
@@ -454,6 +472,24 @@ kwasy tłuszczowe :: dalsze homologi kwasów karboksylowych (np. stearynowy C₁
 - **ORG05:** rysunek grupy –COOH zamieniony na zapis strukturalny w tekście (bez grafiki); ewentualną grafikę z opisem @viz — do decyzji autora przy scalaniu.
 - **ORG05:** zakładana pozycja kart `odp` jako siostrzanych po kartach zadań (konwencja N01/REV01) — przy scalaniu dostosować.
 
+## Własne przykłady (W1, 2026-10-14)
+
+::: karta exam | Przykład W1-1 (E8) — kwas octowy i wodorotlenek sodu: ile octanu?
+Do 12 g kwasu octowego dodano nadmiar wodorotlenku sodu. Oblicz masę powstałego octanu sodu. Zapisz równanie i wszystkie kroki.
+:::
+
+::: odp | Pokaż klucz
+CH₃COOH + NaOH → CH₃COONa + H₂O. M(CH₃COOH) = 60 g/mol → n = 12 / 60 = 0,2 mol. Stosunek kwasu do octanu 1 : 1, więc n(CH₃COONa) = 0,2 mol. M(CH₃COONa) = 82 g/mol → m = 0,2 · 82 = **16,4 g** (3 pkt: n kwasu, stosunek 1 : 1, masa octanu).
+:::
+
+::: karta exam | Przykład W1-2 (ambitny) — dwa sposoby na ten sam wynik
+Ten sam kwas octowy (12 g) reaguje z nadmiarem węglanu sodu. Ile dm³ CO₂ (warunki normalne) wydzieli się? Porównaj z wynikiem z przykładu W1-1: dlaczego ilości różnią się?
+:::
+
+::: odp | Pokaż klucz
+2CH₃COOH + Na₂CO₃ → 2CH₃COONa + H₂O + CO₂. n(CH₃COOH) = 0,2 mol → n(CO₂) = 0,1 mol (stosunek 2 : 1) → V = 0,1 · 22,4 = **2,24 dm³** (3 pkt). Różnica: w przykładzie W1-1 kwas reaguje z zasadą bez wydzielania gazu, tu z węglanem gaz się wydziela, a stosunek reagentów jest inny (2 : 1, nie 1 : 1).
+:::
+
 ## AUDYT W1 — audyt 05 (2026-10-13)
 
 Zastosowano uwagi z audytu Perplexity:
@@ -467,3 +503,23 @@ Zastosowano uwagi z audytu Perplexity:
 - Propozycja zmiany warstwy „Mg, NaHCO₃” na „Mg, Na₂CO₃” — nieprzyjęta: zamiast tego NaHCO₃ wprowadzono w treści (U5), więc warstwa zgodna z lekcją.
 - Rysunek ASCII — zamieniony na zapis strukturalny w tekście, nie na grafikę z @viz (decyzja do podjęcia przy scalaniu; w pliku nie ma już bloku kodu).
 - Uwaga „0,5 pkt niezgodne z CKE” — przyjęta w wersji całkowitej punktacji; przy zadaniu 5 (c) i (d) połączono w jeden punkt.
+
+## AUDYT W1 — uzupełnienie, weryfikacja drugiego audytu (Claude Haiku 5.5, 2026-10-14)
+
+- Sprawdzono równania, masy molowe i rachunki z drugiego audytu: poprawne (bilans spalania CH₃COOH + 2O₂ → 2CO₂ + 2H₂O, fermentacja octowa, 16,4 g octanu sodu, Zadanie 2 z Mg i kwasem solnym/octowym).
+- Dodano: przykłady W1-1 (12 g kwasu → 16,4 g octanu sodu) i W1-2 (wydzielanie CO₂ z węglanem sodu, 2,24 dm³).
+- Już obecne w lekcji (nie dodawano): wzór CₙH₂ₙO₂, pułapka mas molowych kwasu metanowego i etanolu, karta obserwacja–wniosek, typowe błędy.
+- Nieprzyjęte: pełny mechanizm dysocjacji kwasów karboksylowych i fermentacji octowej — poza rdzeniem lekcji.
+- Nic nie usunięto.
+
+## AUDYT W1/W2 — zewnętrzny, LKO-ORG05 (2026-10-14)
+
+Zastosowano: dopisano zapis dysocjacji z jonem hydroniowym H₃O⁺ (z zastrzeżeniem, że zapis z H⁺ jest uproszczeniem); dodano kartę „W skrócie” z tabelą kwas octowy – kwas solny – etanol (oddawanie H⁺, odczyn, przewodnictwo).
+
+Nieprzyjęte (sprawdzone w pliku): wzór ogólny CₙH₂ₙ₊₁COOH jest już w lekcji (wraz z wyjaśnieniem n); uwaga o miedzi i zazielenieniu (powolne utlenianie z udziałem tlenu, nie wypieranie wodoru) jest już w sekcji o metalach; octan miedzi (CH₃COO)₂Cu i równania Mg i Zn są poprawne; równanie Cu + CH₃COOH nie jest zapisane jako reakcja, tylko jako zapis fałszywy.
+
+## AUDYT W1/W2 — zewnętrzny, blok organiczny (2026-10-14)
+
+Zastosowano: brak zmian treści.
+
+Nieprzyjęte (sprawdzone w pliku): Cztery schematy reakcji kwasu (z metalem, wodorotlenkiem, tlenkiem, węglanem) i uwaga o nazwach systematycznych (etanowy = octowy, butanowy = masłowy) są w lekcji. Nic do zmiany.

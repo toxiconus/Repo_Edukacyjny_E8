@@ -1,13 +1,13 @@
 ---
 kod: FIZ-01
-uid: CHE.FIZ.01.elektrostatyka
+uid: 
 tytul: Elektrostatyka
 opis: Ładunek i jego budowa atomowa · elektryzowanie przez tarcie, dotyk i indukcję · przewodniki i izolatory · elektroskop i uziemienie · prawo Coulomba i pole elektryczne · warstwa konkursowa
-stan: W1 FULL — Claude Sonnet 5.5 (paczka GOTOWE), 2026-10-12; wczytane skryptem bez ręcznych zmian
+stan: W1 FULL — Claude Haiku 5.5, 2026-10-14 (pełny przegląd linia po linii; poprawki w AUDYCIE W1 FULL na końcu; audyt W2 zewnętrzny — poprawki 2026-10-14)
 kicker: FIZ-01 · FIZYKA · MASTER LAB v1.4
-lead: Ładunek i jego budowa atomowa, elektryzowanie (tarcie, dotyk, indukcja), oddziaływanie ładunków, przewodniki i izolatory, elektroskop, uziemienie i zastosowania; dla chętnych i LO: prawo Coulomba, pole elektryczne. Animacje i liczby z silnika CHE.FIZ.ELEKTRO. Warstwa konkursowa: pary do odróżniania, trudne przypadki i zadania ambitne.
-plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:E8+ / LO]][[exam:KONKURS]]
-stopka: **FIZYKA FIZ-01 v1.4 MASTER LAB** · Elektrostatyka · 2026
+lead: Ładunek i jego budowa atomowa, elektryzowanie (tarcie, dotyk, indukcja), oddziaływanie ładunków, przewodniki i izolatory, elektroskop, uziemienie i zastosowania; dla chętnych i LO: prawo Coulomba, pole elektryczne. Animacje i liczby z silnika CHE.FIZ.ELEKTRO.
+plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:E8+ / LO]]
+stopka: 
 ---
 ::: minimum | Muszę umieć na E8 — 10 faktów
 1. Atom ma **protony (+)** w jądrze i **elektrony (−)** wokół jądra. Ciało **obojętne** ma ich tyle samo.
@@ -49,7 +49,7 @@ stopka: **FIZYKA FIZ-01 v1.4 MASTER LAB** · Elektrostatyka · 2026
 <table><thead><tr><th>Wielkość</th><th>Wzór</th><th>Jednostka</th><th>Kiedy używać</th></tr></thead><tbody><tr><td>ładunek ciała</td><td>q = n · e</td><td>C (kulomb)</td><td>n — liczba nadmiarowych (−) lub brakujących (+) elektronów</td></tr><tr><td>liczba elektronów</td><td>n = q / e</td><td>—</td><td>ile elektronów przeszło</td></tr><tr><td>dotyk 2 identycznych kul</td><td>q′ = (q₁ + q₂) / 2</td><td>C</td><td>zasada zachowania ładunku</td></tr><tr><td>prawo Coulomba (E8+)</td><td>F = k · |q₁ · q₂| / r²</td><td>N</td><td>siła między ładunkami punktowymi</td></tr><tr><td>w ośrodku (LO)</td><td>F = k · |q₁q₂| / (εr · r²)</td><td>N</td><td>woda: εr ≈ 80</td></tr><tr><td>natężenie pola (LO)</td><td>E = F / q ;  E = k · Q / r²</td><td>N/C = V/m</td><td>pole ładunku punktowego</td></tr><tr><td>napięcie (LO)</td><td>U = W / q</td><td>V = J/C</td><td>praca przy przenoszeniu ładunku</td></tr><tr><td>pojemność (LO)</td><td>C = Q / U</td><td>F (farad)</td><td>kondensator</td></tr></tbody></table>
 :::
 
-> Stałe z silnika: e = <span data-fiz="e">1,602·10⁻¹⁹ C</span> · k = <span data-fiz="k">8,99·10⁹ N·m²/C²</span> · 1 C ≈ 6,24·10¹⁸ e · przedrostki: 1 mC = 10⁻³ C, 1 µC = 10⁻⁶ C, 1 nC = 10⁻⁹ C · k = 1/(4π·ε₀), gdzie ε₀ ≈ 8,85·10⁻¹² F/m.
+> Stałe z silnika: e = <span data-fiz="e">1,602·10⁻¹⁹ C</span> · k = <span data-fiz="k">8,99·10⁹ N·m²/C²</span> · 1 C ≈ 6,24·10¹⁸ e · przedrostki: 1 mC = 10⁻³ C, 1 µC = 10⁻⁶ C, 1 nC = 10⁻⁹ C.
 :::
 
 ::: karta basic | Definicje jednym zdaniem
@@ -66,10 +66,9 @@ Pole elektryczne :: przestrzeń wokół ładunku, w której na inne ładunki dzi
 :::
 
 ::: karta understand | Mnemotechniki
-::: wskazowki
 - <b>„Plus to brak”</b> — ciało dodatnie <b>nie dostało protonów</b>, tylko <b>straciło elektrony</b>. Przemieszczają się tylko elektrony.
 - <b>„Jednakowi się nie lubią”</b> — ładunki jednoimienne się odpychają, różnoimienne przyciągają.
-- <b>„Szkło w jedwabiu — plus, ebonit w suknie — minus”</b>: szkło + jedwab → szkło (+); ebonit + sukno → ebonit (−).
+- <b>„Szkło w jedwabiu — plus, ebonit z suknem — minus”</b>: szkło + jedwab → szkło (+); ebonit + sukno → ebonit (−).
 - <b>„Dwa razy dalej — cztery razy słabiej”</b> (siła ∝ 1/r²): 3× dalej → 9× słabiej.
 - <b>„Listki mówią ILE, nie JAKI”</b> — elektroskop pokazuje wielkość ładunku, nie znak.
 - <b>Indukcja — 4 kroki „ZUZO”</b>: <b>Z</b>bliż pręt → <b>U</b>ziem → <b>Z</b>abierz palec → <b>O</b>ddal pręt ⇒ ładunek przeciwny do pręta.
@@ -79,14 +78,13 @@ Pole elektryczne :: przestrzeń wokół ładunku, w której na inne ładunki dzi
 - <b>„Przed = po”</b> — przy każdym zadaniu z kulami sprawdź na końcu: suma ładunków przed zetknięciem równa się sumie po zetknięciu.
 - <b>„Mikro to milionowa, nano to miliardowa”</b> — 1 µC = 10⁻⁶ C, 1 nC = 10⁻⁹ C; zamień na kulomby, zanim policzysz elektrony.
 :::
-:::
 
 ## 0b | Wykład — elektrostatyka od zera [[basic:E8]] {#s0b}
 
 ::: karta core | Część 1 — czym jest ładunek elektryczny
 Wszystko wokół ciebie — powietrze, szkło, plastik, twoje ciało — składa się z atomów. W środku atomu jest maleńkie **jądro** z **protonami** i **neutronami**, a dookoła jądra poruszają się **elektrony**. Proton i elektron mają cechę, której nie ma neutron: **ładunek elektryczny**. Ładunek to właściwość cząstki, przez którą cząstka oddziałuje z innymi naładowanymi cząstkami — odpycha je albo przyciąga, nawet jeśli się nie dotykają.
 
-Są dwa rodzaje ładunku. Umówiono się (konwencja z XVIII wieku, którą ustalił Benjamin Franklin), że proton ma ładunek **dodatni (+)**, a elektron **ujemny (−)**. Wartości są równe: proton ma +e, elektron −e, gdzie e ≈ 1,6·10⁻¹⁹ C to **ładunek elementarny**. Neutron ma ładunek 0. Zwykły atom ma tyle samo protonów co elektronów, więc ładunki się znoszą i atom jest **obojętny**.
+Są dwa rodzaje ładunku. Benjamin Franklin w XVIII wieku nazwał jeden rodzaj ładunku dodatnim, a drugi ujemnym (chodziło o naelektryzowane szkło i żywicę). Dopiero później, gdy odkryto cząstki, przypisano tę konwencję: proton ma ładunek **dodatni (+)**, a elektron **ujemny (−)**. Wartości są równe: proton ma +e, elektron −e, gdzie e ≈ 1,6·10⁻¹⁹ C to **ładunek elementarny**. Neutron ma ładunek 0. Zwykły atom ma tyle samo protonów co elektronów, więc ładunki się znoszą i atom jest **obojętny**.
 
 Ciało obojętne **nie jest ciałem bez ładunków** — ma ich ogromnie dużo, ale dodatnie i ujemne dokładnie się równoważą, jak wpłaty i wypłaty, które dają saldo zero. „Naelektryzować ciało” znaczy zaburzyć tę równowagę, czyli zmienić saldo.
 :::
@@ -97,7 +95,7 @@ Protony siedzą głęboko w jądrach i trzymają je siły jądrowe — zwykłe d
 - Ciało, które **przyjęło** elektrony, ma ich więcej niż protonów → ładunek **ujemny**.
 - Ciało, które **oddało** elektrony, ma więcej protonów niż elektronów → ładunek **dodatni**, choć nie dostało żadnego protonu.
 
-Wielkość ładunku wynika z liczby nadmiarowych albo brakujących elektronów: q = n · e. Ponieważ nie ma „pół elektronu”, ładunek ciała jest zawsze całkowitą wielokrotnością e. Jednostką jest **kulomb (1 C)** — to ładunek ok. 6,24·10¹⁸ elektronów, więc w doświadczeniach szkolnych mamy do czynienia z nanokulombami (10⁻⁹ C) i mikrokulombami (10⁻⁶ C).
+Wielkość ładunku wynika z liczby nadmiarowych albo brakujących elektronów: q = n · e. W szkolnym opisie ciało zyskuje lub traci całkowitą liczbę elektronów, dlatego jego ładunek jest całkowitą wielokrotnością e. Jednostką jest **kulomb (1 C)** — to ładunek ok. 6,24·10¹⁸ elektronów, więc w doświadczeniach szkolnych mamy do czynienia z nanokulombami (10⁻⁹ C) i mikrokulombami (10⁻⁶ C).
 :::
 
 ::: karta core | Część 3 — trzy sposoby elektryzowania i jedna ważna zasada
@@ -115,13 +113,13 @@ We wszystkich trzech sposobach działa **zasada zachowania ładunku**: w układz
 
 Naelektryzowane ciało przyciąga też ciała **obojętne** (skrawki papieru, strumień wody). Jego ładunek przesuwa ładunki w obojętnym ciele — w przewodniku swobodne elektrony (indukcja), w izolatorze ładunki wewnątrz cząsteczek (polaryzacja). Bliższy koniec dostaje ładunek przeciwny, więc przyciąganie (bliżej, więc silniej) wygrywa z odpychaniem (dalej, więc słabiej).
 
-To, jak łatwo ładunek się przemieszcza, zależy od materiału. W **przewodniku** (metale, grafit, roztwory soli, ciało człowieka) są swobodne nośniki ładunku i ładunek rozpływa się po całym ciele. W **izolatorze** (szkło, guma, plastik, suche powietrze) nośników swobodnych nie ma i ładunek zostaje tam, gdzie powstał — dlatego izolatory elektryzuje się łatwo przez tarcie.
+To, jak łatwo ładunek się przemieszcza, zależy od materiału. W **przewodniku** (metale, grafit, roztwory soli, ciało człowieka) są swobodne nośniki ładunku i w stanie równowagi nadmiarowy ładunek rozmieszcza się na powierzchni przewodnika. W **izolatorze** (szkło, guma, plastik, suche powietrze) nośników swobodnych nie ma i ładunek zostaje tam, gdzie powstał — dlatego izolatory elektryzuje się łatwo przez tarcie.
 
-**Elektroskop** to przyrząd, w którym dwa metalowe listki dostają ładunek tego samego znaku i odpychają się — im większy ładunek, tym większe rozchylenie. Pokazuje *ile*, ale nie *jaki* znak. **Uziemienie** to połączenie z ziemią: Ziemia jest tak wielkim przewodnikiem, że przejmuje ładunek ciała i zostawia je obojętnym.
+**Elektroskop** to przyrząd, w którym dwa metalowe listki dostają ładunek tego samego znaku i odpychają się — im większy ładunek, tym większe rozchylenie. Pokazuje *ile*, ale nie *jaki* znak; znak ustala się przez porównanie z ciałem o znanym ładunku. **Uziemienie** to połączenie z ziemią: Ziemia jest tak wielkim zbiornikiem ładunku, że może oddać ciału elektrony albo je przyjąć, a ciało po uziemieniu zostaje praktycznie rozładowane (ma potencjał Ziemi).
 :::
 
 ::: karta understand | Część 5 — dla chętnych: pole elektryczne
-Skoro ładunki działają na siebie na odległość, fizycy mówią, że każdy ładunek wytwarza wokół siebie **pole elektryczne**: w każdym punkcie przestrzeni można ustalić, jaka siła działałaby na jednostkowy dodatni ładunek próbny. Ta siła na jednostkę ładunku to **natężenie pola** E = F/q (jednostka N/C). Dla ładunku punktowego E = k·Q/r². Prawo Coulomba i natężenie pola opisują to samo zjawisko: pierwsze mówi, co dzieje się między dwoma ładunkami, drugie — co każdy z nich robi z przestrzenią wokół siebie.
+Skoro ładunki działają na siebie na odległość, fizycy mówią, że każdy ładunek wytwarza wokół siebie **pole elektryczne**: w każdym punkcie przestrzeni można ustalić, jaka siła działałaby na jednostkowy dodatni ładunek próbny. Ta siła na jednostkę ładunku to **natężenie pola** E = F/q (jednostka N/C). Dla ładunku punktowego |E| = k·|Q|/r². Prawo Coulomba i natężenie pola opisują to samo zjawisko: pierwsze mówi, co dzieje się między dwoma ładunkami, drugie — co każdy z nich robi z przestrzenią wokół siebie.
 :::
 
 ::: karta basic | Jak pracować z lekcją
@@ -144,7 +142,7 @@ Protony są w jądrze uwięzione, elektrony zewnętrzne łatwo się odrywają. D
 :::
 
 ::: karta basic | Ładunek elementarny i kulomb
-Najmniejszy swobodny ładunek to **ładunek elementarny**: e = <span data-fiz="e">1,602·10⁻¹⁹ C</span>. Elektron ma ładunek −e, proton +e. Każdy ładunek ciała jest jego wielokrotnością:
+**Ładunek elementarny** jest podstawową jednostką kwantowania ładunku: ładunki swobodnych cząstek są całkowitymi wielokrotnościami e, a nie „najmniejszym swobodnym ładunkiem” w każdym kontekście: e = <span data-fiz="e">1,602·10⁻¹⁹ C</span>. Elektron ma ładunek −e, proton +e. Każdy ładunek ciała jest jego wielokrotnością:
 
 $$ q = n · e
 
@@ -158,15 +156,7 @@ $$ q = n · e
 :::
 
 @model kw-dysocjacja-v01 | Chemia: jony w roztworze — przeniesienie protonu H⁺ | Lekcja Kwasy · ten sam silnik
-@opis Model z lekcji o kwasach: cząsteczki kwasu w wodzie przekazują proton H⁺ cząsteczkom wody — powstają jony H₃O⁺ i aniony reszty kwasowej, oznaczone znakami ładunku. Wniosek: ładunki elektryczne w chemii to te same ładunki co w elektrostatyce — jony powstają przez przeniesienie cząstek naładowanych.
-
-::: karta understand | W skrócie — ładunek elektryczny
-Są dwa rodzaje ładunku: dodatni (proton) i ujemny (elektron). Ciało obojętne ma ich po równo. Naelektryzowane ma nadmiar albo niedobór **elektronów** — protony stoją w miejscu. Wielkość ładunku to liczba elektronów razy e: q = n·e. Samego ładunku nie widać; widać jego skutki: odpychanie, przyciąganie, iskry.
-:::
-
-::: karta extra | Ciekawostka — dlaczego „elektryczność” kojarzy się z bursztynem
-Słowo „elektryczność” pochodzi od greckiego *elektron*, czyli **bursztyn**. Już starożytni Grecy (według tradycji — Tales z Miletu, ok. VI w. p.n.e.) zauważyli, że potarty bursztyn przyciąga puch i drobne słomki. Termin „elektryczność” w nowożytnej nauce upowszechnił angielski lekarz William Gilbert w dziele z 1600 roku (orientacyjnie: daty i autorstwo w tradycji bywają uproszczone).
-:::
+@opis Schemat cząsteczki kwasu w wodzie: po kliknięciu widać, jak jon H⁺ (proton) przeskakuje z cząsteczki kwasu na cząsteczkę wody, tworząc jon H₃O⁺ i jon reszty kwasowej. Wniosek: kwas oddaje proton, a woda go przyjmuje; to ten sam ruch ładunku dodatniego, który w elektrostatyce nie jest przenoszeniem elektronów.
 
 ## 2 | Elektryzowanie przez tarcie {#s2}
 
@@ -191,11 +181,7 @@ Materiał stojący **wcześniej** oddaje elektrony materiałowi stojącemu **dal
 :::
 
 @model fiz-elektryzowanie-v01 | Pocieraj i sprawdź: kto oddaje elektrony + wahadełko elektrostatyczne | Szereg tryboelektryczny z silnika · animacja przepływu elektronów
-@opis Para materiałów do pocierania wybierana z szeregu tryboelektrycznego; animacja pokazuje przepływ elektronów (−) z materiału, który łatwiej je oddaje, do drugiego, po czym jedno ciało ma nadmiar elektronów (−), a drugie niedobór (+); obok wahadełko z lekką kulką reaguje na naelektryzowane ciało. Wniosek: przy tarciu przenoszone są tylko elektrony, a który materiał naelektryzuje się ujemnie, zależy od ich miejsca w szeregu.
-
-::: karta understand | W skrócie — tarcie i szereg tryboelektryczny
-Przy tarciu dwóch różnych materiałów elektrony przechodzą z jednego na drugi. **Kto stoi wcześniej w szeregu (bliżej „+”), ten oddaje elektrony i ładuje się dodatnio**; kto stoi dalej, przyjmuje je i ładuje się ujemnie. Ładunki obu ciał są równe co do wartości i przeciwne co do znaku, więc ich suma to 0. Uwaga: w zadaniach szereg bywa zapisany w obie strony — sprawdź, gdzie jest „+”, zanim cokolwiek rozstrzygniesz. Im dalej od siebie stoją materiały w szeregu, tym zwykle silniejsze elektryzowanie (orientacyjnie).
-:::
+@opis Dwa ciała pocierane o siebie: strzałki pokazują, które ciało oddaje elektrony, a które je przyjmuje, oraz przy wahadełku widać, jak naładowany przedmiot przyciąga lekką kulkę. Wniosek: tarcie przenosi elektrony, a ciało, które je traci, staje się dodatnie.
 
 ## 3 | Oddziaływanie ładunków {#s3}
 
@@ -216,12 +202,12 @@ Przy tarciu dwóch różnych materiałów elektrony przechodzą z jednego na dru
 :::
 
 @model fiz-elektryzowanie-v01 | Wahadełko: przyciąganie obojętnej kulki, dotyk, odpychanie | Silnik CHE · fizyka · otwiera się w oknie
-@opis Wahadełko z obojętną kulką zbliżane do naelektryzowanej pałeczki: kulka najpierw jest przyciągana (polaryzacja), po dotknięciu przejmuje część ładunku i zostaje odepchnięta. Wniosek: ciało naelektryzowane przyciąga też ciała obojętne, a po zetknięciu ciała o ładunkach tego samego znaku się odpychają.
+@opis Wahadełko elektrostatyczne: naładowany pręt przyciąga obojętną kulkę, po dotknięciu kulka odchyla się od pręta (odpycha się). Wniosek: po zetknięciu kulka ma ładunek tego samego znaku co pręt, a odpychanie dowodzi jednakowego znaku ładunków.
 
 ## 4 | Przewodniki i izolatory {#s4}
 
 ::: karta core | Różnica
-**Przewodnik** zawiera swobodne nośniki ładunku: w metalach i graficie — **elektrony swobodne**, w roztworach i w ciele człowieka — **jony**. Ładunek rozpływa się po całym przewodniku.
+**Przewodnik** zawiera swobodne nośniki ładunku: w metalach i graficie — **elektrony swobodne**, w roztworach i w ciele człowieka — **jony**. W stanie równowagi nadmiarowy ładunek przewodnika znajduje się na jego powierzchni; największa gęstość jest przy ostrzach.
 
 **Izolator** (dielektryk) nie ma swobodnych nośników — ładunek zostaje tam, gdzie go umieszczono (dlatego tarciem łatwo elektryzować izolatory).
 
@@ -237,13 +223,13 @@ Przy tarciu dwóch różnych materiałów elektrony przechodzą z jednego na dru
 :::
 
 @model fiz-przewodniki-v01 | Przewodnik czy izolator? Rozpływ ładunku w pręcie | ρ z silnika · czas rozpływu ładunku
-@opis Pręt z wybieranego materiału z ładunkiem dostarczonym na jednym końcu; animacja pokazuje, jak ładunek rozpływa się wzdłuż pręta — w metalu prawie natychmiast, w izolatorze zostaje w miejscu; czas rozpływu liczony z oporu właściwego ρ. Wniosek: przewodnik rozprowadza ładunek po całej powierzchni, izolator zatrzymuje go tam, gdzie powstał.
+@opis Pręt przewodnika i pręt izolatora z naładowanym końcem: na przewodniku ładunek szybko rozpływa się po całej długości, na izolatorze pozostaje w miejscu dotyku. Wykres pokazuje czas rozpływu. Wniosek: przewodnik szybko przewodzi ładunek, izolator go nie przewodzi.
 
 @model gfx-scene-conductivity | Chemia: przewodzenie prądu przez roztwory (elektrolity) | Lekcja Kwasy · tester przewodnictwa
 @opis Model z lekcji o kwasach: tester przewodnictwa (bateria, żarówka, dwie elektrody) zanurzany w różnych roztworach — żarówka świeci w roztworach elektrolitów, a w wodzie destylowanej czy roztworze cukru nie. Wniosek: w roztworach ładunek przenoszą jony, więc przewodzą tylko roztwory, w których są jony.
 
 ::: karta understand | W skrócie — przewodnik czy izolator?
-Pytanie rozstrzygające: **czy w materiale są swobodne nośniki ładunku?** Tak (elektrony swobodne w metalach i graficie, jony w roztworach i w ciele człowieka) — to przewodnik, a ładunek rozpływa się po całym ciele. Nie — to izolator i ładunek zostaje w miejscu. Różnica jest ogromna: opór właściwy miedzi i teflonu dzieli ok. 30 rzędów wielkości. Półprzewodniki (krzem) są pośrodku, a ich przewodnictwo można kształtować domieszkami.
+Pytanie rozstrzygające: **czy w materiale są swobodne nośniki ładunku?** Tak (elektrony swobodne w metalach i graficie, jony w roztworach i w ciele człowieka) — to przewodnik, a nadmiarowy ładunek rozmieszcza się na powierzchni ciała. Nie — to izolator i ładunek zostaje w miejscu. Różnica jest ogromna: opór właściwy miedzi i teflonu dzieli ok. 30 rzędów wielkości. Półprzewodniki (krzem) są pośrodku, a ich przewodnictwo można kształtować domieszkami.
 :::
 
 ## 5 | Elektryzowanie przez dotyk. Zasada zachowania ładunku {#s5}
@@ -264,7 +250,7 @@ $$ q′ = (q₁ + q₂) / 2
 Przykład: +6 nC i −2 nC → po zetknięciu każda ma +2 nC (suma +4 nC przed i po).
 
 @model fiz-ladunek-v01 | Kule: dotyk, uziemienie, zasada zachowania, liczba elektronów | CHE.PHYS.electro.share · n = q/e
-@opis Dwie metalowe kule z ładunkami: dotknięcie wyrównuje ładunek między nimi, uziemienie zeruje ładunek kuli; licznik pokazuje sumę ładunków przed i po oraz liczbę elektronów n = q/e. Wniosek: ładunek nie znika ani nie powstaje, tylko się przemieszcza, a każdy ładunek to całkowita wielokrotność ładunku elementarnego.
+@opis Dwie kule z ładunkami: po dotknięciu ładunek dzieli się między nimi. Przy identycznych kulach dzieli się po równo; przy różnych proporcjonalnie do promienia. Pokazano też uziemienie i liczbę elektronów (n = q / e). Wniosek: w każdym zdarzeniu ładunek jest zachowany, zmienia się tylko jego rozkład.
 :::
 
 ::: karta extra | Uziemienie
@@ -278,7 +264,7 @@ Prawo, które tu stosujemy, to **zasada zachowania ładunku elektrycznego**: w u
 
 $$ q₁ + q₂ + … = q₁′ + q₂′ + … = const
 
-> „Zasady zachowania potencjału” nie ma. Z potencjałem wiąże się inna reguła: gdy zetkniesz przewodniki, elektrony płyną tak długo, aż **potencjały się wyrównają** (rozszerzenie LO poniżej). To ona wyjaśnia, dlaczego identyczne kule dzielą się ładunkiem po równo, a uziemienie rozładowuje ciało.
+> Przy zetknięciu przewodników elektrony płyną tak długo, aż **potencjały się wyrównają** (rozszerzenie LO poniżej). To ona wyjaśnia, dlaczego identyczne kule dzielą się ładunkiem po równo, a uziemienie rozładowuje ciało.
 :::
 
 ::: karta basic | Ładunek to liczba ze znakiem i jednostką
@@ -365,7 +351,7 @@ Procedura: 1) zapisz ładunki ze znakiem, 2) dodaj je (suma), 3) podziel sumę p
 :::
 
 @model fiz-ladunek-v01 | Bilans ładunku: dotyk, uziemienie, zapis „przed → po”, kafelki + i −, liczba elektronów | CHE.PHYS.electro.contact · ground · transfer · jednostki C, mC, µC, nC, e
-@opis Ten sam model kul w trybie bilansu: kafelki + i − pokazują ładunki, zapis „przed → po” dla dotyku, uziemienia i przeniesienia elektronów, przełączane jednostki C, mC, µC, nC i e. Wniosek: suma ładunków układu izolowanego jest stała — to podstawa rozwiązywania zadań z dotykaniem kul.
+@opis Bilans ładunku dla dwóch kul: stan „przed” i „po” pokazany kafelkami + i − oraz liczbą elektronów, która przeszła z jednej kuli na drugą (dotyk, uziemienie). Wniosek: suma ładunków przed i po jest taka sama, a zmienia się tylko ich rozmieszczenie.
 :::
 
 ::: karta extra | Uziemienie — gdzie znika ładunek?
@@ -435,16 +421,12 @@ Ziemia ma promień ok. 6400 km, więc przy „zetknięciu” z małym ciałem pr
 :::
 
 @model fiz-elektroskop-v01 | Elektroskop: dotyk, indukcja, uziemienie (scenariusz krok po kroku) | Model rozkładu ładunku z silnika
-@opis Elektroskop (kulka, pręt, dwie listki) z rozkładem ładunku pokazanym znakami + i −; scenariusz krok po kroku: dotknięcie naelektryzowaną pałeczką, zbliżenie bez dotyku (indukcja), uziemienie. Listki rozchylają się, gdy mają ładunek tego samego znaku. Wniosek: rozchylenie listków świadczy o ładunku, a indukcja rozdziela ładunki w przewodniku bez ich przenoszenia z pałeczki.
-
-::: karta understand | W skrócie — elektroskop
-Elektroskop to „licznik ładunku”: metalowa kulka, pręt i dwa listki. Ładunek dostarczony na kulkę rozpływa się po pręcie i listkach, a listki — mając ładunek tego samego znaku — się odpychają. Większy ładunek → większy kąt. Znaku ładunku elektroskop nie podaje. Jeśli naładowany elektroskop zbliżysz do ciała o **znanym** ładunku, rozchylenie rośnie przy ładunku jednoimiennym i maleje przy różnoimiennym — ale uważaj na duże ładunki: pręt o dużym ładunku różnoimiennym najpierw sprowadzi listki do zera, a potem rozchyli je znów (sekcja 12b).
-:::
+@opis Elektroskop z listkami: po naładowaniu listki odchylają się od siebie, a przy dotknięciu uziemionego przewodnika opadają. Wykres i wskazania pokazują rozkład ładunku. Wniosek: odchylenie listków świadczy o obecności ładunku, ale nie pokazuje jego znaku.
 
 ## 7 | Indukcja elektrostatyczna (elektryzowanie przez wpływ) {#s7}
 
 ::: karta core | Zjawisko
-Po **zbliżeniu** (bez dotykania) naładowanego ciała do przewodnika elektrony swobodne w przewodniku przesuwają się: ujemny pręt je odpycha, dodatni — przyciąga. Na bliższym końcu powstaje ładunek **przeciwnego** znaku, na dalszym — **tego samego**. Ładunek całkowity przewodnika się nie zmienia (= 0, jeśli przewodnik był obojętny). Po oddaleniu pręta wszystko wraca do stanu początkowego.
+Po **zbliżeniu** (bez dotykania) naładowanego ciała do przewodnika elektrony swobodne w przewodniku przesuwają się: ujemny pręt je odpycha, dodatni — przyciąga. Na bliższym końcu powstaje ładunek **przeciwnego** znaku, na dalszym — **tego samego**. Ładunek całkowity przewodnika się nie zmienia (= 0). Po oddaleniu pręta wszystko wraca do stanu początkowego.
 :::
 
 ::: karta basic | Trwałe naelektryzowanie przez indukcję — 4 kroki
@@ -456,20 +438,12 @@ Po **zbliżeniu** (bez dotykania) naładowanego ciała do przewodnika elektrony 
 
 ::: karta extra | Zastosowania i skutki
 ::: div.table-wrap
-<table><thead><tr><th>Gdzie</th><th>Co się dzieje</th></tr></thead><tbody><tr><td>piorunochron</td><td>chmura indukuje ładunek w ostrzu; wyładowanie trafia w piorunochron i spływa przewodem do ziemi — budynek jest chroniony</td></tr><tr><td>burza</td><td>ładunki rozdzielają się w chmurze (zderzenia kryształków lodu); piorun przenosi zwykle kilka–kilkadziesiąt kulombów (orientacyjnie) w ułamku sekundy</td></tr><tr><td>kserograf, drukarka laserowa</td><td>naelektryzowany bęben przyciąga toner tylko w miejscach obrazu</td></tr><tr><td>filtry elektrostatyczne</td><td>pył w kominie elektrowni zostaje naładowany i osiada na elektrodach</td></tr><tr><td>malowanie proszkowe / natryskowe</td><td>naładowane krople farby lecą do uziemionego elementu i pokrywają go równo, także od tyłu</td></tr><tr><td>stacja paliw, cysterna</td><td>iskra może zapalić opary — cysterny i dystrybutory się uziemia</td></tr><tr><td>elektronika</td><td>wyładowanie z ciała (kilka tysięcy woltów — orientacyjnie!) niszczy układy scalone — opaska antystatyczna, uziemione stanowisko</td></tr><tr><td>klatka Faradaya</td><td>wewnątrz zamkniętego przewodnika pole elektryczne jest zerowe — samochód chroni przed piorunem, mikrofalówka zatrzymuje fale</td></tr></tbody></table>
+<table><thead><tr><th>Gdzie</th><th>Co się dzieje</th></tr></thead><tbody><tr><td>piorunochron</td><td>chmura indukuje ładunek w ostrzu; wyładowanie trafia w piorunochron i spływa przewodem do ziemi — to kontrolowana droga prądu; piorunochron nie gwarantuje trafienia w każde wyładowanie, a instalację projektuje się zgodnie z normami</td></tr><tr><td>burza</td><td>ładunki rozdzielają się w chmurze (zderzenia kryształków lodu); piorun przenosi zwykle kilka–kilkadziesiąt kulombów (orientacyjnie) w ułamku sekundy</td></tr><tr><td>kserograf, drukarka laserowa</td><td>naelektryzowany bęben przyciąga toner tylko w miejscach obrazu</td></tr><tr><td>filtry elektrostatyczne</td><td>pył w kominie elektrowni zostaje naładowany i osiada na elektrodach</td></tr><tr><td>malowanie proszkowe / natryskowe</td><td>naładowane krople farby lecą do uziemionego elementu i pokrywają go równo, także od tyłu</td></tr><tr><td>stacja paliw, cysterna</td><td>iskra może zapalić opary — cysterny i dystrybutory się uziemia</td></tr><tr><td>elektronika</td><td>wyładowanie z ciała (kilka tysięcy woltów — orientacyjnie!) niszczy układy scalone — opaska antystatyczna, uziemione stanowisko</td></tr><tr><td>klatka Faradaya</td><td>wewnątrz zamkniętego przewodnika pole elektryczne jest zerowe — samochód chroni przed piorunem, mikrofalówka zatrzymuje fale</td></tr></tbody></table>
 :::
 :::
 
 @model fiz-elektroskop-v01 | Scenariusz: elektryzowanie przez indukcję w 5 krokach | Silnik CHE · fizyka · otwiera się w oknie
-@opis Elektroskop w pięciu krokach: zbliżenie pałeczki (ładunki się rozdzielają, listki się rozchylają), uziemienie (część elektronów odpływa lub dopływa), odłączenie uziemienia, odsunięcie pałeczki, rozchylone listki na końcu. Wniosek: przez indukcję elektroskop zyskuje ładunek przeciwnego znaku niż pałeczka, choć jej nie dotknął.
-
-::: karta understand | W skrócie — indukcja
-Indukcja to rozdzielenie ładunków w przewodniku **bez dotykania**: bliższy koniec dostaje ładunek przeciwny do zbliżonego pręta, dalszy — taki sam, a suma pozostaje taka, jaka była (zwykle 0). Po odsunięciu pręta ładunki wracają. Trwały ładunek powstaje dopiero po uziemieniu i odłączeniu uziemienia przed oddaleniem pręta — i jest **przeciwny** do ładunku pręta. Dotyk daje ładunek tego samego znaku co pręt, indukcja z uziemieniem — przeciwnego.
-:::
-
-::: karta extra | Ciekawostka — dwaj wynalazcy piorunochronu
-Benjamin Franklin opisał ochronę budynków ostrym metalowym prętem połączonym przewodem z ziemią w połowie XVIII wieku. Niezależnie, w 1754 roku, czeski ksiądz Prokop Diviš ustawił podobne urządzenie przy swojej plebanii w Přímětících (orientacyjnie: daty bywają podawane z rozrzutem kilku lat). Obaj wykorzystali to, co znamy z doświadczeń elektrostatycznych: ostrze zbiera ładunek, a uziemienie pozwala mu spłynąć do ziemi.
-:::
+@opis Pięć kroków elektryzowania przez indukcję: naładowany pręt zbliża się do elektroskopu, uziemienie odprowadza ładunek jednego znaku, uziemienie zostaje usunięte i pręt oddalony. Na końcu elektroskop ma ładunek przeciwnego znaku niż pręt. Wniosek: indukcja pozwala naładować ciało bez dotyku, a elektrony przechodzą tylko przez uziemienie.
 
 ## 8 | Prawo Coulomba [[extra:E8+ / LO]] {#s8}
 
@@ -495,8 +469,13 @@ $$ F = 8,99·10⁹ · 2·10⁻⁶ · 3·10⁻⁶ / 0,3² ≈ 0,6 N
 W ośrodku o przenikalności względnej ε<sub>r</sub> siła maleje ε<sub>r</sub> razy: F = k·|q₁q₂| / (ε<sub>r</sub>·r²). Dla wody ε<sub>r</sub> ≈ <span data-fiz="epsr-woda">80</span> — dlatego woda tak skutecznie **rozdziela jony** kryształu soli (dysocjacja, lekcja Sole).
 :::
 
+::: karta extra | Jak czytać wzór Coulomba?
+
+Wzór F = k·|q₁·q₂|/r² podaje wartość siły. Moduły ładunków są w wartości bezwzględnej, więc wynik F jest zawsze dodatni. Rodzaj oddziaływania określa znak iloczynu q₁·q₂: dodatni — odpychanie, ujemny — przyciąganie. Nie wpisuj ujemnej wartości siły tylko dlatego, że ładunki się przyciągają.
+:::
+
 @model fiz-coulomb-v01 | Prawo Coulomba: siły, linie pola, ośrodek, wykres F(r) | k i εr z silnika
-@opis Dwa ładunki punktowe z regulowaną wartością, znakiem i odległością r: strzałki sił (równe, przeciwnie skierowane), linie pola, wybór ośrodka (εr) i wykres F(r). Wniosek: siła rośnie z iloczynem ładunków, maleje z kwadratem odległości (dwa razy dalej — cztery razy słabiej) i jest mniejsza w ośrodku niż w próżni.
+@opis Wykres siły Coulomba F(r) dla dwóch ładunków: siła maleje z kwadratem odległości, a zmiana ośrodka (εr) osłabia oddziaływanie. Suwaki zmieniają wartości ładunków i odległość. Wniosek: F = k·q₁·q₂ / (εr·r²) i siła rośnie, gdy ładunki rosną, a maleje, gdy odległość rośnie.
 
 ::: adv | Elektryczność kontra grawitacja | poziom akademicki · poza maturą rozszerzoną
 Dla protonu i elektronu stosunek siły elektrycznej do grawitacyjnej F<sub>e</sub>/F<sub>g</sub> = k·e² / (G·m<sub>e</sub>·m<sub>p</sub>) ≈ 2,3·10³⁹ — niezależnie od odległości (obie siły ∝ 1/r²). W atomie wodoru (r ≈ 5,3·10⁻¹¹ m) F<sub>e</sub> ≈ 8,2·10⁻⁸ N. Grawitacja dominuje w kosmosie tylko dlatego, że ciała są prawie idealnie obojętne.
@@ -506,14 +485,6 @@ Dla protonu i elektronu stosunek siły elektrycznej do grawitacyjnej F<sub>e</su
 F⃗₁₂ = k·q₁q₂/r² · r̂₁₂. Siła od kilku ładunków jest **sumą wektorową** sił od każdego z osobna. Przykład: ładunek w połowie odległości między dwoma identycznymi ładunkami — siła wypadkowa 0.
 :::
 
-::: karta understand | W skrócie — prawo Coulomba
-Siła między dwoma ładunkami punktowymi zależy od trzech rzeczy: od wartości ładunków (iloczyn q₁·q₂ — podwojenie jednego ładunku podwaja siłę), od odległości (kwadrat r — dwa razy dalej to cztery razy słabiej) i od ośrodka (w wodzie siła jest ok. 80 razy mniejsza niż w powietrzu). Stała k = 1/(4π·ε₀) ≈ 8,99·10⁹ N·m²/C², gdzie ε₀ ≈ 8,85·10⁻¹² F/m. Znaki ładunków mówią tylko, czy siła jest odpychaniem, czy przyciąganiem — do wzoru wstawiamy same wartości bezwzględne. Obie siły są równe co do wartości, nawet gdy ładunki są różne.
-:::
-
-::: karta extra | Ciekawostka — waga skręceń Coulomba
-Charles Coulomb w 1785 roku zmierzył siłę między naładowanymi kulkami **wagą skręceń**: cienkie włókno było skręcane przez siłę elektryczną, a kąt skręcenia mierzył siłę. Dzięki temu pokazał, że siła maleje z kwadratem odległości. Siły były bardzo małe, więc włókno musiało być cienkie i czułe (orientacyjnie: szczegóły aparatury bywają opisywane różnie).
-:::
-
 ## 9 | Pole elektryczne [[extra:LO]] {#s9}
 
 ::: karta core | Natężenie pola
@@ -521,7 +492,7 @@ Charles Coulomb w 1785 roku zmierzył siłę między naładowanymi kulkami **wag
 
 $$ E = F / q   [N/C = V/m]
 
-Dla ładunku punktowego: E = k·Q / r². **Linie pola** zaczynają się na ładunkach dodatnich i kończą na ujemnych; gęstsze linie — silniejsze pole.
+Dla ładunku punktowego |E| = k·|Q| / r²; zwrot pola: od ładunku dodatniego, ku ujemnemu. **Linie pola** zaczynają się na ładunkach dodatnich i kończą na ujemnych; gęstsze linie — silniejsze pole.
 :::
 
 ::: karta basic | Rodzaje pól
@@ -531,7 +502,7 @@ Dla ładunku punktowego: E = k·Q / r². **Linie pola** zaczynają się na ładu
 :::
 
 @model fiz-coulomb-v01 | Linie pola dwóch ładunków (włącz/wyłącz) | Silnik CHE · fizyka · otwiera się w oknie
-@opis Linie pola dwóch ładunków, włączane przyciskiem: dla ładunków różnoimiennych biegną od + do −, dla jednoimiennych rozchodzą się, a między ładunkami jest obszar bez linii. Wniosek: linie pola pokazują kierunek siły działającej na dodatni ładunek próbny.
+@opis Linie pola dwóch ładunków, które można włączać i wyłączać: linie wychodzą z ładunku dodatniego i wchodzą do ujemnego, a ich gęstość pokazuje siłę pola. Wniosek: linie pola pokazują kierunek i względną wartość siły działającej na ładunek próbny.
 
 ::: adv | Potencjał, napięcie, kondensator, elektronowolt | poziom akademicki · poza maturą rozszerzoną
 **Potencjał** V = k·Q/r [V = J/C]; **napięcie** U = V<sub>A</sub> − V<sub>B</sub> = W/q. **Kondensator**: C = Q/U [F]; płaski: C = ε₀ε<sub>r</sub>S/d, energia W = ½CU². **Elektronowolt**: 1 eV = 1,602·10⁻¹⁹ J — energia elektronu przyspieszonego napięciem 1 V. Prawo Gaussa: strumień E przez powierzchnię zamkniętą = Q<sub>wewn</sub>/ε₀.
@@ -545,88 +516,72 @@ Pole to sposób opisu: zamiast pytać, jak ładunek A działa na B, pytamy, jaki
 W 1909 roku Robert Millikan obserwował naładowane kropelki oleju w polu elektrycznym: dobierał takie natężenie pola, przy którym kropla wisiała w miejscu (siła elektryczna równoważyła ciężar). Ładunki kropel okazywały się **całkowitymi wielokrotnościami** tej samej, najmniejszej wartości — ładunku elementarnego e. Za badania nad ładunkiem elementarnym dostał Nagrodę Nobla w 1923 roku.
 :::
 
+> **BHP ogólne:** nie wykonuj doświadczeń z wysokim napięciem, iskrami, paliwami i rozpuszczalnikami bez nadzoru dorosłego i odpowiedniego wyposażenia. Nie zbliżaj naładowanych przedmiotów do instalacji elektrycznej, urządzeń medycznych ani łatwopalnych oparów.
+
+::: karta understand | Gdzie gromadzi się ładunek?
+
+W stanie równowagi elektrostatycznej nadmiar ładunku przewodnika leży na jego powierzchni, a wewnątrz pole jest zerowe. Na ostrzach i w miejscach o małym promieniu krzywizny gęstość ładunku jest większa niż na płaskich powierzchniach, dlatego ostre końcówki łatwo jonizują powietrze.
+
+Nie oznacza to, że cały ładunek zawsze skupia się na samym ostrzu. Rozkład zależy od kształtu przewodnika i od obecności innych ładunków.
+:::
+
 ## 10 | Doświadczenia {#s10}
 
 @model fiz-elektryzowanie-v01 | Pracownia: tarcie i wahadełko | Silnik CHE · fizyka · otwiera się w oknie
-@opis Pracownia otwierana w oknie: wybór materiałów do pocierania z animacją przepływu elektronów i wahadełko pokazujące przyciąganie i odpychanie. Wniosek: do samodzielnego sprawdzenia, który materiał oddaje elektrony i jak naelektryzowane ciało działa na kulkę.
+@opis Pracownia tarcia i wahadełka: wybierz materiały, pocieraj je i sprawdzaj, które ciało się naładowało i jak zachowuje się wahadełko. Wniosek: znak ładunku zależy od pary materiałów, a przenoszą się elektrony.
 
 @model fiz-elektroskop-v01 | Pracownia: elektroskop | Silnik CHE · fizyka · otwiera się w oknie
-@opis Pracownia otwierana w oknie: elektroskop z dotykiem, indukcją i uziemieniem, z ładunkami pokazanymi znakami + i − oraz rozchyleniem listków. Wniosek: do samodzielnego przećwiczenia elektryzowania przez dotyk i przez indukcję.
+@opis Pracownia elektroskopu: można naładować elektroskop dotykiem lub indukcją, uziemić go i obserwować odchylenie listków. Wniosek: odchylenie listków zależy od ilości i rozmieszczenia ładunku, a nie od jego znaku.
 
 ::: dosw | Doświadczenie 1 — Balon i skrawki papieru
 Problem: Czy naelektryzowany balon przyciąga lekkie ciała?
-Hipoteza: Balon potarty o włosy przyciągnie skrawki papieru, a balon nienaelektryzowany — nie.
 Sprzęt: balon, wełniany sweter lub suche włosy, skrawki papieru
-Przebieg: Pocieraj balon o włosy, zbliż do skrawków. Próba kontrolna: zbliż do skrawków ten sam balon przed potarciem (nienaelektryzowany).
-Obserwacja: Skrawki podskakują i przyklejają się do balonu, po chwili część odpada. Przy balonie nienaelektryzowanym skrawki leżą nieruchomo.
+Przebieg: Pocieraj balon o włosy, zbliż do skrawków.
+Obserwacja: Skrawki podskakują i przyklejają się do balonu, po chwili część odpada.
 Wniosek: Balon naelektryzował się (−); skrawki są przyciągane przez polaryzację. Po dotyku przejmują ładunek i odpadają (odpychanie).
-BHP: Doświadczenie bezpieczne. Nie zbliżaj balonu do oczu i rób je z dala od otwartego ognia.
 :::
 
 ::: dosw | Doświadczenie 2 — Grzebień i strumień wody
 Problem: Czy ładunek działa na ciecz?
-Hipoteza: Strumień wody wygnie się w stronę naelektryzowanego grzebienia.
-Sprzęt: plastikowy grzebień lub linijka, suche włosy lub wełna, kran z cienkim strumieniem wody
-Przebieg: Naelektryzowany grzebień zbliż do cienkiego strumienia wody z kranu. Próba kontrolna: zbliż do strumienia nienaelektryzowany grzebień.
-Obserwacja: Strumień wyraźnie się wygina w stronę grzebienia; przy grzebieniu nienaelektryzowanym płynie prosto.
+Przebieg: Naelektryzowany grzebień zbliż do cienkiego strumienia wody z kranu.
+Obserwacja: Strumień wyraźnie się wygina w stronę grzebienia.
 Wniosek: Ładunek grzebienia przesuwa ładunki w wodzie (cząsteczki H₂O są polarne, woda z kranu zawiera jony) — strumień jest przyciągany.
-BHP: Uważaj, by woda nie dostała się na gniazdka i urządzenia elektryczne; nie dotykaj ich mokrymi rękami.
 :::
 
 ::: dosw | Doświadczenie 3 — Elektroskop ze słoika
-Problem: Czy z domowych materiałów można zrobić przyrząd wykrywający ładunek?
-Hipoteza: Paski folii zawieszone na przewodniku rozchylą się, gdy zbliżymy naelektryzowany balon.
 Sprzęt: słoik, plastikowa pokrywka (izolator), drut miedziany, folia aluminiowa
-Przebieg: Drut przebij przez pokrywkę, u góry kulka z folii, na dole zagięty haczyk z dwoma paskami cienkiej folii. Test: zbliż naelektryzowany balon — paski się rozchylają (indukcja); dotknij — zostają rozchylone (dotyk). Próba kontrolna: zbliż balon nienaelektryzowany.
-Obserwacja: Przy naelektryzowanym balonie paski się rozchylają, po dotknięciu kulki zostają rozchylone; przy balonie nienaelektryzowanym wiszą swobodnie.
-Wniosek: Domowy elektroskop wykrywa ładunek — paski mają ładunek tego samego znaku i się odpychają. Znaku ładunku nie pokazuje.
-BHP: Uważaj na szkło słoika i ostre końce drutu; pokrywkę przebijaj na twardej podkładce.
+Wykonanie: Drut przebij przez pokrywkę, u góry kulka z folii, na dole zagięty haczyk z dwoma paskami cienkiej folii.
+Test: Zbliż naelektryzowany balon — paski się rozchylają (indukcja); dotknij — zostają rozchylone (dotyk).
 :::
 
 ::: dosw | Doświadczenie 4 — Wahadełko elektrostatyczne
-Problem: Jak naelektryzowane ciało działa na kulkę obojętną, a jak na kulkę, która się z nim zetknęła?
-Hipoteza: Kulka najpierw zostanie przyciągnięta, a po dotknięciu prętem — odepchnięta.
 Sprzęt: kulka z folii aluminiowej na nitce, naelektryzowany pręt (ebonit, PVC, balon)
-Przebieg: Zbliż pręt do kulki bez dotykania, a następnie dotknij nim kulki. Próba kontrolna: zbliż do kulki pręt nienaelektryzowany.
-Obserwacja: Kulka najpierw jest przyciągana, po dotknięciu — gwałtownie odpychana. Pręt nienaelektryzowany nie wywołuje ruchu.
+Obserwacja: Kulka najpierw jest przyciągana, po dotknięciu — gwałtownie odpychana.
 Wniosek: Przyciąganie obojętnej kulki → indukcja; po dotyku kulka ma ładunek tego samego znaku → odpychanie.
-BHP: Doświadczenie bezpieczne; wykonuj je w pomieszczeniu bez przeciągu, który wychylałby kulkę.
 :::
 
 ::: dosw | Doświadczenie 5 — Puszka toczona balonem
-Problem: Czy naelektryzowany balon może poruszyć metalowy przedmiot, którego nie dotyka?
-Hipoteza: Puszka potoczy się za balonem.
-Sprzęt: pusta puszka aluminiowa, balon, suche włosy lub wełna, gładki stół
-Przebieg: Pustą puszkę aluminiową połóż na stole, zbliż naelektryzowany balon (bez dotykania). Próba kontrolna: zbliż do puszki balon nienaelektryzowany.
-Obserwacja: Puszka toczy się za balonem; za balonem nienaelektryzowanym stoi w miejscu.
+Przebieg: Pustą puszkę aluminiową połóż na stole, zbliż naelektryzowany balon (bez dotykania).
+Obserwacja: Puszka toczy się za balonem.
 Wniosek: Indukcja w metalu: bliższa strona puszki ma ładunek przeciwny do balonu.
-BHP: Użyj czystej puszki bez ostrych krawędzi.
 :::
 
 ::: dosw | Doświadczenie 6 — Przewodnik czy izolator?
-Problem: Które przedmioty odprowadzają ładunek z elektroskopu?
-Hipoteza: Ładunek odprowadzą przewodniki (metal, grafit, wilgotny sznurek), a izolatory nie.
-Sprzęt: naładowany elektroskop, drut, plastikowa linijka, ołówek (grafit), suchy i wilgotny sznurek
-Przebieg: Naładuj elektroskop, a następnie dotykaj kulki: drutem trzymanym w ręce, plastikową linijką, ołówkiem (grafit), suchym i wilgotnym sznurkiem. Próba kontrolna: obserwuj listki bez dotykania kulki — czy same opadają.
-Obserwacja: Drut, grafit i wilgotny sznurek rozładowują elektroskop (listki opadają), linijka i suchy sznurek — nie. Bez dotykania kąt prawie się nie zmienia.
+Przebieg: Naładuj elektroskop, a następnie dotykaj kulki: drutem trzymanym w ręce, plastikową linijką, ołówkiem (grafit), suchym i wilgotnym sznurkiem.
+Obserwacja: Drut, grafit i wilgotny sznurek rozładowują elektroskop (listki opadają), linijka i suchy sznurek — nie.
 Wniosek: Przewodniki odprowadzają ładunek do ziemi przez nasze ciało; woda w sznurku przewodzi dzięki jonom.
-BHP: Używaj wyłącznie elektroskopu i ładunku statycznego; nie dotykaj gniazdek ani urządzeń sieciowych.
 :::
 
 ::: dosw | Doświadczenie 7 — Elektryzowanie elektroskopu przez indukcję
-Problem: Czy można naelektryzować elektroskop, nie dotykając go naelektryzowanym ciałem?
-Hipoteza: Tak — indukcja z uziemieniem da elektroskopowi ładunek przeciwny do ładunku pręta.
-Sprzęt: elektroskop, naelektryzowany pręt (np. ebonit potarty suknem), własny palec do uziemienia
-Przebieg: 4 kroki z rozdziału 7: zbliż pręt, dotknij kulki palcem, zabierz palec, oddal pręt. Sprawdzenie znaku: zbliż ponownie ten sam pręt. Próba kontrolna: powtórz doświadczenie bez kroku 2 (bez uziemienia).
-Obserwacja: Na końcu listki rozchylone, mimo że pręt nigdy nie dotknął elektroskopu. Przy ponownym zbliżeniu pręta listki opadają. Bez uziemienia po oddaleniu pręta listki opadają.
-Wniosek: Ładunek elektroskopu jest przeciwny do ładunku pręta (listki opadają, więc ładunki są różnoimienne); bez uziemienia ładunek tylko się rozsuwa i trwałego ładunku nie ma.
-BHP: Doświadczenie bezpieczne; wykonuj je w suchym powietrzu i bez otwartego ognia.
+Przebieg: 4 kroki z rozdziału 7.
+Obserwacja: Na końcu listki rozchylone, mimo że pręt nigdy nie dotknął elektroskopu.
+Sprawdzenie znaku: Zbliż ponownie ten sam pręt — listki opadają, więc ładunek elektroskopu jest przeciwny do ładunku pręta.
 :::
 
 ::: karta extra | BHP i praktyka
 - Doświadczenia elektrostatyczne wychodzą w **suchym** powietrzu (zimą) — wilgoć rozładowuje ciała.
 - Nie wykonuj doświadczeń przy otwartych oparach paliw i rozpuszczalników.
-- Maszyna elektrostatyczna i generator Van de Graaffa — tylko w pracowni lub pod opieką osoby dorosłej (wyładowania są bezpieczne dla zdrowej osoby, ale bolesne; niebezpieczne dla osób z rozrusznikiem).
+- Maszyna elektrostatyczna i generator Van de Graaffa — tylko pod okiem nauczyciela (wyładowania są bezpieczne dla zdrowej osoby, ale bolesne; niebezpieczne dla osób z rozrusznikiem).
 - Podczas burzy: nie stój pod samotnym drzewem, nie kąp się, w samochodzie jesteś bezpieczny (klatka Faradaya).
 :::
 
@@ -650,17 +605,11 @@ BHP: Doświadczenie bezpieczne; wykonuj je w suchym powietrzu i bez otwartego og
 | „Ładunek elementarny e jest ujemny, bo to ładunek elektronu.” | e ≈ 1,6·10⁻¹⁹ C jest dodatnie; ładunek elektronu to −e. | e to wartość najmniejszego ładunku, a znak dopisujemy osobno. |
 | „1 nC = 10⁻⁶ C.” | 1 nC = 10⁻⁹ C, a 10⁻⁶ C to 1 µC. | Nano to miliardowa część, mikro — milionowa; zamień na kulomby przed liczeniem elektronów. |
 | „W przewodniku ładunek zbiera się w środku.” | W równowadze ładunek siedzi na powierzchni, najgęściej na ostrzach. | Ładunki jednoimienne się odpychają i oddalają się od siebie tak daleko, jak się da. |
+| „Wewnątrz każdego przewodnika zawsze nie ma pola.” | W przewodniku w stanie równowagi elektrostatycznej pole wewnątrz jest zerowe, ale tylko w równowadze. | Swobodne ładunki przesuwają się, aż zrównoważą pole wewnątrz. |
+| „Uziemienie zawsze zabiera elektrony.” | Elektrony mogą odpływać do Ziemi albo napływać z Ziemi. | Kierunek zależy od znaku ciała (metoda ZUZO). |
+| „Ujemna wartość siły oznacza przyciąganie.” | Wartość siły jest dodatnia; rodzaj oddziaływania wynika ze znaku iloczynu q₁·q₂. | Wzór Coulomba podaje moduł siły. |
 | „Listki opadły po zbliżeniu pręta, więc pręt jest ujemny.” | Opadnięcie listków oznacza ładunek różnoimienny względem elektroskopu — o znaku pręta decyduje znak ładunku elektroskopu. | Znak pręta trzeba wywnioskować ze znaku ładunku elektroskopu i z zachowania listków. |
 :::
-:::
-
-::: mity
-„Gumowe podeszwy chronią przed piorunem.” || Nie chronią: piorun pokonuje kilometry powietrza, które jest izolatorem, więc cienka guma niczego nie zmienia. Bezpiecznie jest w budynku z instalacją odgromową lub w zamkniętym samochodzie z metalową karoserią (klatka Faradaya).
-„Elektryczność statyczna jest zawsze niegroźna.” || Wyładowanie może zapalić opary paliw i pyły, a także zniszczyć układy scalone — dlatego uziemia się cysterny, a przy elektronice używa się opasek antystatycznych.
-„Zimą ciała elektryzują się, bo jest zimno.” || Ważne jest suche powietrze, nie zimno: wilgoć odprowadza ładunek z powierzchni ciał, dlatego iskry z klamki najczęściej widzimy w suche, zimowe dni.
-„Ładunek dodatni jest mocniejszy od ujemnego.” || Znak ładunku to umowa (konwencja Franklina). Dodatni i ujemny ładunek o tej samej wartości działają z tą samą siłą — różni je tylko to, czy się przyciągają, czy odpychają.
-„Ładunek elektryczny to to samo co energia elektryczna.” || Ładunek mierzymy w kulombach, energię w dżulach. Energia zależy od ładunku i napięcia: W = q·U.
-„W samochodzie podczas burzy chronią opony, bo są gumowe.” || Chroni metalowa karoseria, która działa jak klatka Faradaya i odprowadza ładunek po zewnątrz; opony nie mają znaczenia.
 :::
 
 ## 11a | Przykłady prowadzone krok po kroku {#s11a}
@@ -680,7 +629,7 @@ BHP: Doświadczenie bezpieczne; wykonuj je w suchym powietrzu i bez otwartego og
 4. Odpowiedź: 3 nadmiarowe elektrony (ładunek ujemny = nadmiar).
 :::
 
-::: karta basic | Przykład 2 (E8) — dotyk dwóch kul
+::: karta basic | Przykład 2 (E8) — dotyk trzech kul
 1. Kule identyczne: A = +9 nC, B = −3 nC. Dotykamy A z B.
 2. Suma: +9 + (−3) = +6 nC → po zetknięciu po +3 nC.
 3. Kontrola: przed 6 nC, po 3 + 3 = 6 nC ✓ (zasada zachowania).
@@ -705,7 +654,7 @@ BHP: Doświadczenie bezpieczne; wykonuj je w suchym powietrzu i bez otwartego og
 :::
 
 @model fiz-ladunek-v01 | Sprawdź przykład 2 na modelu kul | Silnik CHE · fizyka · otwiera się w oknie
-@opis Model kul ustawiony do przykładu 2: dwie kule o danych ładunkach dotykają się i przyjmują ładunek równy połowie sumy; licznik pokazuje bilans i liczbę przeniesionych elektronów. Wniosek: wynik z modelu ma się zgadzać z rachunkiem z zasady zachowania ładunku.
+@opis Model kul dla przykładu 2: uczeń ustawia kule, dotyka ich i porównuje ładunki przed i po. Wniosek: w każdym kroku ładunek całkowity jest zachowany.
 
 @model fiz-coulomb-v01 | Sprawdź przykłady 3–5 w modelu Coulomba | Silnik CHE · fizyka · otwiera się w oknie
 @opis Model Coulomba do przykładów 3–5: ustawiając ładunki i odległość z treści, odczytuje się siłę i sprawdza wpływ zmiany r i ośrodka na wykresie F(r). Wniosek: rachunek z prawa Coulomba i odczyt z modelu mają dać ten sam wynik.
@@ -715,7 +664,7 @@ BHP: Doświadczenie bezpieczne; wykonuj je w suchym powietrzu i bez otwartego og
 ::: nie-myl | Pojęcia z poziomu E8
 - Ciało obojętne ≠ ciało bez ładunków — obojętne ma ładunki, ale ich suma wynosi 0; test rozstrzygający: policz protony i elektrony (jest ich tyle samo) albo zsumuj ładunki ze znakami.
 - Elektryzowanie przez dotyk ≠ elektryzowanie przez indukcję — przy dotyku ciała się stykają i końcowy znak jest taki sam jak znak ciała naładowanego, przy indukcji nie ma styku, a po uziemieniu znak jest przeciwny; test rozstrzygający: czy ciała się dotykały i jaki jest znak końcowy względem pręta?
-- Przewodnik ≠ izolator — przewodnik ma swobodne nośniki, więc ładunek rozpływa się po całym ciele, a izolator trzyma ładunek w miejscu; test rozstrzygający: czy elektroskop rozładuje się po dotknięciu go tym przedmiotem trzymanym w ręce?
+- Przewodnik ≠ izolator — przewodnik ma swobodne nośniki, więc ładunek rozpływa się po przewodniku i w równowadze gromadzi się na jego powierzchni, a izolator trzyma ładunek w miejscu; test rozstrzygający: czy elektroskop rozładuje się po dotknięciu go tym przedmiotem trzymanym w ręce?
 - Polaryzacja ≠ indukcja — polaryzacja to przesunięcie ładunków wewnątrz cząsteczek izolatora, indukcja to ruch swobodnych elektronów po przewodniku; test rozstrzygający: czy materiał ma swobodne nośniki ładunku?
 - Dowód odpychaniem ≠ dowód przyciąganiem — odpychanie dowodzi ładunków tego samego znaku, a przyciąganie zachodzi też z ciałem obojętnym; test rozstrzygający: czy ciała odpychają się po zetknięciu lub przy zbliżeniu drugim ciałem o znanym znaku?
 - Uziemienie ≠ odizolowanie — uziemienie to połączenie przewodzące z ziemią, które pozwala ładunkowi odpłynąć lub napłynąć; test rozstrzygający: czy istnieje ścieżka przewodząca do ziemi?
@@ -875,10 +824,18 @@ BHP: Doświadczenie bezpieczne; wykonuj je w suchym powietrzu i bez otwartego og
 
 <li>E = 0 — wektory natężeń od obu ładunków mają równe wartości i przeciwne zwroty (superpozycja).</li>
 
-<li>Siła przyciągania Na⁺ i Cl⁻ maleje εr razy; w wodzie ~80× — energia cieplna i hydratacja wystarczają, by rozdzielić jony; w benzynie siła prawie się nie zmienia.</li>
+<li>Siła przyciągania Na⁺ i Cl⁻ maleje εr razy; w wodzie ~80× — energia cieplna i hydratacja wystarczają, by rozdzielić jony; w benzynie (εr ≈ 2) siła spada tylko ok. 2 razy, a cząsteczki benzyny nie są polarne i nie otaczają jonów, więc sól się nie rozpuszcza.</li>
 :::
 :::
 :::
+
+### Dodatkowe zadania — trzy ładunki, przyciąganie, jednostki (W1, 2026-10-14)
+
+1. Ładunki leżą na prostej: q₁ = +2 µC w punkcie 0, q₂ = +2 µC w punkcie 0,3 m, q₃ = −2 µC w punkcie 0,6 m. Oblicz siłę wypadkową na ładunek q₂. **Klucz:** od q₁ odpychanie w prawo, F₁₂ = 8,99·10⁹·(2·10⁻⁶)²/0,3² ≈ 0,40 N; od q₃ przyciąganie w prawo, też ≈ 0,40 N. Wypadkowa ≈ 0,80 N, w prawo.
+2. Naelektryzowana pałeczka przyciąga kawałek papieru. Czy papier jest naelektryzowany? **Klucz:** nie wiadomo. Przyciąganie wystarcza, by wykryć obcy ładunek lub polaryzację obojętnego ciała, ale nie dowodzi naelektryzowania papieru.
+3. Zamień na kulomby: 3 µC, 250 nC, 4 pC. **Klucz:** 3·10⁻⁶ C; 2,5·10⁻⁷ C; 4·10⁻¹² C.
+
+---
 
 ## 12a | Zadania egzaminacyjne E8 — typy i wzorcowe odpowiedzi {#s12a}
 
@@ -973,7 +930,7 @@ b) Siła wzrośnie 9 razy (1 pkt), bo F ∝ 1/r², a (1/3)⁻² = 9.
 :::
 
 ::: karta exam | Zadanie 6 (4 pkt) — Zaplanuj doświadczenie
-Uczeń chce sprawdzić, czy rodzaj materiału, którym potrze balon, wpływa na to, ile skrawków papieru balon przyciągnie.
+Uczeń chce sprawdzić, czy rodzaj materiału, którym pociera się balon, wpływa na to, ile skrawków papieru balon przyciągnie.
 
 a) Sformułuj problem badawczy. (1 pkt)
 b) Wskaż zmienną niezależną i zmienną zależną. (1 pkt)
@@ -1146,102 +1103,70 @@ Uzasadnienie: wynik jest całkowitą wielokrotnością e, co potwierdza kwantyza
 ## 14a | Mapa myśli, checklista i kolejność powtórek {#s14a}
 
 ::: karta basic | Mapa myśli
-::: drzewo
-ELEKTROSTATYKA
-  ŁADUNEK
-    proton +e, elektron −e, neutron 0 · q = n·e · 1 C ≈ 6,24·10¹⁸ e
-    ciało obojętne (suma 0), dodatnie (niedobór elektronów), ujemne (nadmiar elektronów)
-  ELEKTRYZOWANIE
-    tarcie → szereg tryboelektryczny (ładunki przeciwne, równe co do wartości)
-    dotyk → ładunek tego samego znaku · (q₁+q₂)/2 dla identycznych kul
-    indukcja → ZUZO → ładunek przeciwny do pręta
-  ZASADA ZACHOWANIA ŁADUNKU
-    suma ładunków ze znakami przed = po · uziemienie: układ ciało + Ziemia
-  ODDZIAŁYWANIE
-    jednoimienne ↔ odpychanie, różnoimienne ↔ przyciąganie
-    F = k·q₁·q₂/r² (E8+) · 2× dalej → ¼
-    ciało obojętne przyciągane (polaryzacja, indukcja)
-  MATERIAŁY
-    przewodniki (elektrony swobodne, jony) · izolatory · półprzewodniki
-  PRZYRZĄDY I ZASTOSOWANIA
-    elektroskop (ILE, nie JAKI) · uziemienie
-    piorunochron · ksero · filtry · malowanie · klatka Faradaya
-  LO
-    pole E = F/q · linie pola · potencjał · napięcie · kondensator
-  WARSTWA KONKURSOWA
-    kule różnej wielkości (q ∝ R) · superpozycja · pole zerowe · kwantyzacja ładunku
-    trudne przypadki: elektroskop i duży ładunek, izolator zamiast przewodnika
-:::
+<pre style="font:13px/1.5 ui-monospace,Consolas,monospace;white-space:pre-wrap;background:var(--surface-soft,#f6f8fa);padding:12px;border-radius:10px">ELEKTROSTATYKA
+├── ŁADUNEK: proton +e, elektron −e · q = n·e · 1 C
+├── ELEKTRYZOWANIE
+│   ├── tarcie → szereg tryboelektryczny (ładunki przeciwne)
+│   ├── dotyk → ładunek tego samego znaku · (q₁+q₂)/2
+│   └── indukcja → ZUZO → ładunek przeciwny
+├── ODDZIAŁYWANIE: jednoimienne ↔ odpychanie, różnoimienne ↔ przyciąganie
+│   └── F = k·|q₁q₂|/r² (E8+) · 2× dalej → ¼
+├── MATERIAŁY: przewodniki (e⁻ swobodne, jony) · izolatory · półprzewodniki
+├── PRZYRZĄDY: elektroskop (ILE, nie JAKI) · uziemienie
+├── ZASTOSOWANIA: piorunochron · ksero · filtry · malowanie · klatka Faradaya
+└── LO: pole E = F/q · linie pola · potencjał · napięcie · kondensator</pre>
 :::
 
 ::: karta core | Checklista — umiem…
-::: checklista
-- [ ] umiem wyjaśnić, skąd ciało ma ładunek (nadmiar / niedobór elektronów)
-- [ ] umiem liczyć q = n·e i n = q/e
-- [ ] umiem przewidzieć znaki ładunków po tarciu (szereg)
-- [ ] umiem stosować zasadę zachowania ładunku przy dotyku
-- [ ] umiem opisać budowę i działanie elektroskopu
-- [ ] umiem wyjaśnić przyciąganie ciała obojętnego (polaryzacja/indukcja)
-- [ ] umiem opisać 4 kroki elektryzowania przez indukcję
-- [ ] umiem podać 3 przewodniki i 3 izolatory oraz przykłady zastosowań i zagrożeń
-- [ ] umiem (E8+) obliczyć siłę z prawa Coulomba i jej zmianę
-- [ ] umiem (LO) obliczyć natężenie pola ładunku punktowego
-- [ ] umiem zamieniać nC, µC i mC na kulomby
-- [ ] umiem odróżnić dotyk od indukcji i podać znak ładunku po każdej z tych metod
-- [ ] umiem uzasadnić, dlaczego odpychanie dowodzi ładunku, a przyciąganie nie
-- [ ] umiem (konkurs) podzielić ładunek między kule o różnych promieniach
+::: ul {style="list-style:none;padding:0"}
+<li>☐ wyjaśniam, skąd ciało ma ładunek (nadmiar / niedobór elektronów)</li>
+
+<li>☐ liczę q = n·e i n = q/e</li>
+
+<li>☐ przewiduję znaki ładunków po tarciu (szereg)</li>
+
+<li>☐ stosuję zasadę zachowania ładunku przy dotyku</li>
+
+<li>☐ opisuję budowę i działanie elektroskopu</li>
+
+<li>☐ wyjaśniam przyciąganie ciała obojętnego (polaryzacja/indukcja)</li>
+
+<li>☐ opisuję 4 kroki elektryzowania przez indukcję</li>
+
+<li>☐ podaję 3 przewodniki i 3 izolatory oraz przykłady zastosowań i zagrożeń</li>
+
+<li>☐ (E8+) obliczam siłę z prawa Coulomba i jej zmianę</li>
+
+<li>☐ (LO) obliczam natężenie pola ładunku punktowego</li>
 :::
 :::
 
-::: karta understand | Co powtórzyć i w jakiej kolejności
-1. Sekcja 0 (wzory i definicje) oraz mnemotechniki.
-2. Fiszki i diagnoza startowa (sekcja 0a).
-3. Przykłady prowadzone (sekcja 11a) — najpierw spróbuj rozwiązać bez zaglądania w rozwiązanie.
-4. Ćwiczenia A–B i test.
-5. Zadania egzaminacyjne E8 (sekcja 12a) oraz klinika błędów (sekcja 11).
-6. Warstwa konkursowa: pary do odróżniania (11b), wykład pogłębiony (12b), zadania ambitne (12c) i fiszki olimpijskie.
+::: karta understand | Plan powtórek (krzywa zapominania)
+::: div.table-wrap
+<table><thead><tr><th>Kiedy</th><th>Co</th><th>Ile</th></tr></thead><tbody><tr><td>dziś</td><td>sekcja 0 + mnemotechniki</td><td>10 min</td></tr><tr><td>jutro</td><td>fiszki + diagnoza startowa</td><td>5 min</td></tr><tr><td>za 3 dni</td><td>przykłady prowadzone (bez patrzenia)</td><td>15 min</td></tr><tr><td>za tydzień</td><td>ćwiczenia A–B + test</td><td>20 min</td></tr><tr><td>za 3 tygodnie</td><td>zadania egzaminacyjne 12a</td><td>20 min</td></tr></tbody></table>
+:::
 :::
 
 ## 13 | Fiszki {#s13}
 
 ::: fiszki
-Ładunek elementarny | e ≈ 1,6·10⁻¹⁹ C | basic:ladunek
-1 C to ile elektronów? | ok. 6,24·10¹⁸ | basic:jednostki
-Ciało naelektryzowane ujemnie | nadmiar elektronów | basic:ladunek
-Ciało naelektryzowane dodatnio | niedobór elektronów | basic:ladunek
-Co się przemieszcza przy elektryzowaniu? | tylko elektrony | basic:elektryzowanie
-3 sposoby elektryzowania | tarcie, dotyk, indukcja (wpływ) | basic:elektryzowanie
-Zasada zachowania ładunku | w układzie izolowanym suma ładunków jest stała | basic:zachowanie
-Szkło + jedwab | szkło +, jedwab − | basic:tarcie
-Ebonit + sukno | ebonit −, sukno + | basic:tarcie
-Przewodnik | ma swobodne nośniki ładunku (elektrony lub jony) | basic:materialy
-Izolator | brak swobodnych nośników; ładunek zostaje w miejscu | basic:materialy
-Elektroskop | wykrywa ładunek; listki odpychają się jednoimiennie; nie pokazuje znaku | basic:elektroskop
-Uziemienie | połączenie z ziemią — rozładowuje ciało | basic:uziemienie
-Prawo Coulomba | F = k·q₁·q₂ / r² (moduły ładunków), k ≈ 9·10⁹ N·m²/C² | extra:coulomb
-2× większa odległość | siła 4× mniejsza | understand:coulomb
-Natężenie pola | E = F/q [N/C] | extra:pole
-Klatka Faradaya | wewnątrz przewodnika pole = 0 | extra:pole
-Ciało obojętne | tyle samo protonów i elektronów; suma ładunków 0 | basic:ladunek
-Przedrostki ładunku | 1 mC = 10⁻³ C, 1 µC = 10⁻⁶ C, 1 nC = 10⁻⁹ C | basic:jednostki
-Dotyk dwóch identycznych kul | q′ = (q₁ + q₂) / 2 | understand:dotyk
-4 kroki indukcji (ZUZO) | zbliż pręt, uziem, zabierz palec, oddal pręt → ładunek przeciwny do pręta | understand:indukcja
-Polaryzacja | przesunięcie ładunków wewnątrz cząsteczek izolatora | understand:indukcja
-Półprzewodnik | przewodzi słabo; lepiej po domieszkowaniu i w wyższej temperaturze (np. krzem) | understand:materialy
-Kto oddaje elektrony w szeregu tryboelektrycznym? | materiał stojący wcześniej (bliżej „+”) | understand:tarcie
-Dowód ładunku jednoimiennego | odpychanie; przyciąganie może zachodzić też z ciałem obojętnym | understand:oddzialywanie
-Uziemiony ładunek dodatni | elektrony napływają z ziemi i uzupełniają niedobór | understand:uziemienie
-Przenikalność względna wody | εr ≈ 80 — siła Coulomba w wodzie jest 80× mniejsza niż w próżni | extra:coulomb
-Siła na ładunek w polu | F = q·E | extra:pole
-Linie pola elektrycznego | od „+” do „−”; gęstsze linie — silniejsze pole | extra:pole
-Ładunek swobodnej cząstki | całkowita wielokrotność e (kwarki ±⅓e, ±⅔e nie występują swobodnie) | olimpijski:ladunek
-Doświadczenie Millikana | wisząca kropla oleju: qE = mg → ładunek jest wielokrotnością e | olimpijski:ladunek
-Kule o różnych promieniach po zetknięciu | wyrównanie potencjałów: q₁/R₁ = q₂/R₂, suma stała | olimpijski:dotyk
-Stała k przez ε₀ | k = 1/(4π·ε₀), ε₀ ≈ 8,85·10⁻¹² F/m | olimpijski:coulomb
-Siła elektryczna do grawitacyjnej dla protonu i elektronu | ok. 2,3·10³⁹, niezależnie od odległości | olimpijski:coulomb
-Superpozycja | siła i pole od wielu ładunków to suma wektorowa wkładów | olimpijski:pole
-Siła na ciało obojętne w polu | pojawia się tylko w polu niejednorodnym, w stronę pola silniejszego | olimpijski:oddzialywanie
-Gdzie ładunek jest najgęstszy? | na ostrzach, bo gęstość powierzchniowa σ ∝ 1/R | olimpijski:pole
+Ładunek elementarny | e ≈ 1,6·10⁻¹⁹ C
+1 C to ile elektronów? | ok. 6,24·10¹⁸
+Ciało naelektryzowane ujemnie | nadmiar elektronów
+Ciało naelektryzowane dodatnio | niedobór elektronów
+Co się przemieszcza przy elektryzowaniu? | tylko elektrony
+3 sposoby elektryzowania | tarcie, dotyk, indukcja (wpływ)
+Zasada zachowania ładunku | w układzie izolowanym suma ładunków jest stała
+Szkło + jedwab | szkło +, jedwab −
+Ebonit + sukno | ebonit −, sukno +
+Przewodnik | ma swobodne nośniki ładunku (elektrony lub jony)
+Izolator | brak swobodnych nośników; ładunek zostaje w miejscu
+Elektroskop | wykrywa ładunek; listki odpychają się jednoimiennie; nie pokazuje znaku
+Uziemienie | połączenie z ziemią — rozładowuje ciało
+Prawo Coulomba | F = k·|q₁q₂| / r², k ≈ 9·10⁹ N·m²/C²
+2× większa odległość | siła 4× mniejsza
+Natężenie pola | E = F/q [N/C]
+Klatka Faradaya | wewnątrz przewodnika pole = 0
 :::
 
 ## 14 | Test {#s14}
@@ -1251,141 +1176,51 @@ Gdzie ładunek jest najgęstszy? | na ostrzach, bo gęstość powierzchniowa σ 
 - protony
 + elektrony
 - neutrony
-- jądra atomów
-! Przemieszczają się tylko elektrony; protony i neutrony tkwią w jądrach i nie opuszczają atomów.
 
 ? Ciało naelektryzowane dodatnio ma…
-- dodatkowe protony, które otrzymało przy elektryzowaniu
+- nadmiar protonów
 + niedobór elektronów
 - nadmiar elektronów
-- więcej neutronów niż protonów
-! Ciało dodatnie oddało elektrony; protony się nie przemieszczały i żadnych nie dostało.
 
 ? Ebonit pocierany suknem ładuje się…
 - dodatnio
 + ujemnie
 - nie elektryzuje się
-- tak samo jak sukno
-! Sukno stoi w szeregu wcześniej, więc oddaje elektrony ebonitowi; ebonit przyjmuje je i ma ładunek ujemny.
 
 ? Który materiał jest przewodnikiem?
 - guma
 + grafit
 - szkło
-- suche drewno
-! Grafit ma swobodne elektrony; guma, szkło i suche drewno to izolatory.
 
 ? Dwie identyczne kulki: +4 nC i 0. Po zetknięciu każda ma…
 - +4 nC
 + +2 nC
 - 0
-- +8 nC
-! q′ = (4 + 0)/2 = 2 nC; suma ładunków (4 nC) jest taka sama przed i po.
 
 ? Listki elektroskopu się rozchylają, bo…
 - mają ładunki różnoimienne
 + mają ładunki jednoimienne
 - są obojętne
-- są przyciągane przez ziemię
-! Ładunki tego samego znaku się odpychają; im większy ładunek, tym większy kąt.
 
 ? Odległość między ładunkami wzrosła 2 razy. Siła…
 - zmalała 2 razy
 + zmalała 4 razy
 - wzrosła 4 razy
-- wzrosła 2 razy
-! F ∝ 1/r², więc podwojenie odległości zmniejsza siłę 4 razy.
 
 ? Naelektryzowany grzebień przyciąga skrawki papieru, bo…
 - papier jest naelektryzowany ujemnie
 + w papierze następuje polaryzacja ładunków
 - działa grawitacja
-- papier jest przewodnikiem, więc elektrony z niego uciekają
-! Ładunek grzebienia przesuwa ładunki w papierze; bliższy ładunek jest przeciwny, więc przyciąganie jest silniejsze niż odpychanie.
 
 ? Ładunek 1 C to ok.…
 + 6,24·10¹⁸ elektronów
 - 1,6·10⁻¹⁹ elektronów
 - 1000 elektronów
-- 6,24·10⁻¹⁸ elektronów
-! 1 C / 1,6·10⁻¹⁹ C ≈ 6,24·10¹⁸.
 
 ? Piorunochron…
 - przyciąga burzę
 + odprowadza ładunek wyładowania do ziemi
 - izoluje dach
-- zatrzymuje ładunek chmury na dachu
-! Przewód uziemiający odprowadza ładunek wyładowania do ziemi, więc budynek jest chroniony.
-
-? Kulki identyczne: A = −8 nC, B = +2 nC. Po zetknięciu A ma…
-+ −3 nC
-- +3 nC
-- −5 nC
-- −6 nC
-! q′ = (−8 + 2)/2 = −3 nC; każda kulka ma −3 nC.
-
-? Szklaną pałeczkę potarto jedwabiem. Jedwab ma ładunek…
-+ ujemny
-- dodatni
-- zerowy
-- zależny od długości pocierania
-! Szkło stoi wcześniej w szeregu i oddaje elektrony jedwabiowi, który ładuje się ujemnie.
-
-? Ciało ma ładunek −4,8·10⁻¹⁹ C. Ile ma nadmiarowych elektronów (e = 1,6·10⁻¹⁹ C)?
-+ 3
-- 30
-- 0,3
-- 4,8
-! n = |q|/e = 4,8·10⁻¹⁹ / 1,6·10⁻¹⁹ = 3.
-
-? Do kulki elektroskopu naładowanego dodatnio zbliżono pręt o nieznanym ładunku i listki rozchyliły się bardziej. Pręt ma ładunek…
-+ dodatni
-- ujemny
-- zerowy
-- nie da się tego ustalić
-! Rozchylenie rośnie, gdy ładunek pręta jest jednoimienny z ładunkiem elektroskopu.
-
-? Odległość między dwoma ładunkami zmalała 3 razy. Siła…
-+ wzrosła 9 razy
-- wzrosła 3 razy
-- zmalała 9 razy
-- wzrosła 6 razy
-! F ∝ 1/r², więc (1/3)⁻² = 9.
-
-? Ładunek +q działa na ładunek +4q siłą F. Siła, z jaką +4q działa na +q, wynosi…
-+ F
-- 4F
-- F/4
-- 0
-! Siły są wzajemne i równe co do wartości (III zasada dynamiki).
-
-? Kula o promieniu 1 cm ma +6 nC i dotyka obojętnej kuli o promieniu 2 cm. Ładunek większej kuli po zetknięciu to…
-+ +4 nC
-- +3 nC
-- +2 nC
-- +6 nC
-! Potencjały się wyrównują: q ∝ R, więc q₂ = 6 · 2/3 = 4 nC, a q₁ = 2 nC.
-
-? Pole elektryczne wewnątrz zamkniętej metalowej powłoki w równowadze (bez ładunków wewnątrz) jest…
-+ równe zero
-- takie samo jak na zewnątrz
-- skierowane do środka
-- zależne od grubości powłoki
-! W przewodniku w równowadze E = 0, a wnętrze pustej powłoki jest osłonięte (klatka Faradaya).
-
-? Kulka A odpycha pręt naelektryzowany ujemnie, a kulka B go przyciąga. Co można wywnioskować?
-+ A ma ładunek ujemny, a B jest dodatnia albo obojętna
-- A jest dodatnia, a B ujemna
-- A i B są obojętne
-- A jest ujemna, a B na pewno dodatnia
-! Odpychanie dowodzi ładunku tego samego znaku; przyciąganie zachodzi także z ciałem obojętnym.
-
-? Kropla oleju o masie m wisi w polu o natężeniu E. Jej ładunek (wartość) wynosi…
-+ m·g/E
-- m·E/g
-- E/(m·g)
-- m·g·E
-! Warunek równowagi: |q|·E = m·g, więc |q| = m·g/E.
 :::
 
 ## 15 | Słownik i mosty {#s15}
@@ -1393,26 +1228,12 @@ Gdzie ładunek jest najgęstszy? | na ostrzach, bo gęstość powierzchniowa σ 
 ::: karta -
 ::: slownik
 Ładunek elektryczny q :: wielkość opisująca oddziaływania elektryczne; jednostka 1 C
-Ładunek elementarny e :: najmniejszy swobodny ładunek, ≈ 1,6·10⁻¹⁹ C
+Ładunek elementarny e :: wartość bezwzględna ładunku elektronu, ≈ 1,6·10⁻¹⁹ C; ładunki swobodnych cząstek są jej całkowitymi wielokrotnościami
 Indukcja elektrostatyczna :: przesunięcie ładunków w przewodniku pod wpływem zewnętrznego ładunku
 Polaryzacja :: przesunięcie ładunków w cząsteczkach izolatora
 Uziemienie :: połączenie ciała z ziemią przewodnikiem
 Elektroskop :: przyrząd do wykrywania ładunku
 Szereg tryboelektryczny :: kolejność materiałów wg skłonności do oddawania elektronów
-Kulomb (C) :: jednostka ładunku w układzie SI; 1 C to ładunek ok. 6,24·10¹⁸ elektronów
-Jon :: atom lub grupa atomów, które oddały albo przyjęły elektrony i mają ładunek elektryczny
-Dielektryk :: izolator elektryczny, w którym pod wpływem pola następuje polaryzacja
-Przenikalność elektryczna względna εr :: liczba mówiąca, ile razy w danym ośrodku siła między ładunkami jest mniejsza niż w próżni
-Natężenie pola elektrycznego E :: siła działająca na jednostkowy dodatni ładunek próbny; E = F/q, jednostka N/C = V/m
-Ładunek próbny :: mały dodatni ładunek używany do badania pola, który nie zaburza pola źródła
-Linie pola :: wyobrażone linie wskazujące kierunek siły na dodatni ładunek próbny; wychodzą z ładunków dodatnich, a kończą się na ujemnych
-Zasada superpozycji :: siła (lub pole) od kilku ładunków jest sumą wektorową wkładów każdego z nich
-Klatka Faradaya :: zamknięta przewodząca obudowa, wewnątrz której pole elektryczne jest zerowe
-Piorunochron :: instalacja z ostrzem i przewodem uziemiającym, która odprowadza ładunek wyładowania do ziemi
-Potencjał elektryczny :: energia potencjalna jednostkowego ładunku w danym punkcie pola; V = k·Q/r, jednostka V = J/C
-Napięcie elektryczne :: różnica potencjałów między dwoma punktami; U = W/q
-Kondensator :: układ dwóch przewodników rozdzielonych izolatorem, gromadzący ładunek; C = Q/U
-Tryboelektryczność :: elektryzowanie ciał przy ich zetknięciu i rozdzieleniu, zwłaszcza przy tarciu
 :::
 :::
 
@@ -1507,3 +1328,82 @@ Tryboelektryczność :: elektryzowanie ciał przy ich zetknięciu i rozdzieleniu
 | §12b, trudny przypadek 1 | animacja „do przodu i od początku” | naładowany elektroskop i powoli zbliżany pręt o dużym ładunku jednoimiennym przeciwnym; zmiana rozkładu ładunków i kąta listków | Najpierw listki opadają, potem rozchylają się ponownie, choć całkowity ładunek się nie zmienia. | Pręt ujemny zbliżany do elektroskopu naładowanego dodatnio: listki opadają, a potem znowu się rozchylają, przy czym znaki ładunków na listkach się zmieniają. Wniosek: o znaku pręta wnioskujemy z początku zbliżania, nie z końca. |
 | §9 lub §12b | schemat z podpisami do klikania | przewodząca powłoka w polu zewnętrznym: ładunki indukowane na powierzchni, wnętrze bez pola | Wewnątrz przewodnika w równowadze pole jest zerowe. | Zamknięta metalowa powłoka w jednorodnym polu: linie pola kończą się na ładunkach indukowanych na powierzchni, a wnętrze jest bez linii. Wniosek: klatka Faradaya osłania wnętrze od pola elektrycznego. |
 | §15, historia odkryć | oś czasu | daty i postacie od Talesa do Millikana | Kolejne odkrycia budowały obraz ładunku jako wielkości o dwóch znakach i najmniejszej porcji. | Oś czasu z wydarzeniami: bursztyn Talesa, Gilbert, Gray, du Fay, Franklin, Coulomb, Faraday, Thomson, Millikan. Wniosek: elektrostatyka rozwijała się od jakościowych obserwacji do pomiarów ładunku. |
+
+### AUDYT W1 — zewnętrzny, weryfikacja 2026-10-14 (Claude Haiku 5.5)
+
+Surowa odpowiedź i tabela weryfikacji: `chemia/plany/audyty/FIZ01_audyt_W1_2026-10-14.md`.
+
+**Wprowadzono:** ładunek elementarny (zdanie o „najmniejszym swobodnym ładunku”); rozmieszczenie ładunku w przewodniku na powierzchni (dwa miejsca); zwrot i wartość natężenia pola; piorunochron (bez gwarancji); usunięto zdanie polemiczne „Zasady zachowania potencjału nie ma”; blok BHP ogólny; dodatkowe zadania z kluczem (trzy ładunki, przyciąganie, jednostki).
+
+**Nieprzyjęte:** cytaty „Jon to atom…”, „Czas rozpływu…”, „Im większy ładunek…”, „Ziemia przejmuje…”, „Wewnątrz zamkniętego przewodnika…”, „Samochód chroni…”, „Wyładowanie trafia…” nie występują w tym pliku (audyt dotyczył innej wersji); definicja jonu już poprawna; dysocjacja kwasu już podaje H₃O⁺; `$$` i `:::` są poprawną składnią silnika; tabela oporu już podaje 20 °C.
+
+**Odłożone:** zadanie „elektroskop z ciałem wzorcowym” i „listki opadają i rozchylają się” — w lekcji są przykłady (§10, §6), wymagają osobnej weryfikacji; sekcja „obserwacja ≠ wniosek” — do dopisania w następnej turze.
+
+## Luki, poszerzenie i własne przykłady (W1 FULL, 2026-10-14)
+
+**Obserwacja ≠ wniosek (brak w lekcji, dodano):** listki elektroskopu się rozchyliły. Obserwacja to fakt: listki się odsunęły. Wniosek, który wymaga sprawdzenia: ciało jest naelektryzowane. Rozchylenie nie mówi jeszcze, jakim ładunkiem — do tego potrzebny jest ładunek wzorcowy (sekcja 6).
+
+**Typowe błędy uczniów (poza lekcją):** utożsamienie „nadmiaru ładunku” z „nadmiarem protonów” (w elektryzowaniu przemieszczają się wyłącznie elektrony); przyjęcie, że przyciąganie = naelektryzowanie (patrz przykład W1-3); mnożenie ładunku przez odległość zamiast kwadratu odległości w prawie Coulomba.
+
+**Horyzont — mosty międzyprzedmiotowe:**
+- biologia: impulsy nerwowe to ruch jonów przez błonę komórkową — to elektryczność w organizmie (bez tego nerw nie przewodziłby sygnału);
+- chemia: roztwory elektrolitów przewodzą prąd, bo zawierają jony (dysocjacja — lekcja o kwasach);
+- technika i bezpieczeństwo: uziemienie instalacji i opaska antystatyczna przy elektronice (ten sam mechanizm, który poznałeś w sekcji 5).
+
+**Dla ambitnych:** prawo Coulomba w zadaniach — iloczyn ładunków w liczniku, kwadrat odległości w mianowniku; zawsze licz wartość bezwzględną, a zwrot siły określaj jakościowo (jednoimienne odpychają, różnoimienne przyciągają).
+
+::: karta exam | Przykład W1-1 (E8) — zetknięcie dwóch identycznych kul
+Kula A ma ładunek +6 µC, kula B ma −2 µC. Kule zetknięto, a potem rozdzielono. Oblicz ładunek każdej kuli po rozdzieleniu.
+:::
+
+::: odp | Pokaż klucz
+Całkowity ładunek układu: (+6 µC) + (−2 µC) = +4 µC (zasada zachowania ładunku). Kule identyczne, więc dzielą ładunek po równo: q′ = +4 µC / 2 = **+2 µC** każda (3 pkt: suma, zachowanie, podział).
+:::
+
+::: karta exam | Przykład W1-2 (ambitny) — ile elektronów w ciele
+Ciało ma nadmiarowy ładunek −3,2 nC. Ile nadmiarowych elektronów ma to ciało? (e = 1,6·10⁻¹⁹ C)
+:::
+
+::: odp | Pokaż klucz
+n = q / e = 3,2·10⁻⁹ C / 1,6·10⁻¹⁹ C = **2,0·10¹⁰ elektronów** (2 pkt: wzór n = q/e, wynik z jednostką). Zauważ: wynik jest całkowity, co potwierdza kwantowanie ładunku.
+:::
+
+::: karta exam | Przykład W1-3 (pułapka) — przyciąganie a naelektryzowanie
+Naelektryzowana pałeczka przyciąga kawałek papieru. Czy można stąd wnioskować, że papier jest naelektryzowany? Uzasadnij.
+:::
+
+::: odp | Pokaż klucz
+Nie. Obojętne ciało przyciąga się do naelektryzowanego przez indukcję lub polaryzację: bliższy koniec dostaje ładunek przeciwny, więc przyciąganie jest silniejsze niż odpychanie dalszego końca. Naelektryzowanie papieru wymagałoby sprawdzenia ładunkiem wzorcowym (2 pkt).
+:::
+
+::: karta exam | Przykład W1-4 (ambitny) — siła między dwiema kulami
+Dwie małe kule o ładunkach +4 µC i −4 µC znajdują się w odległości 0,20 m. Oblicz wartość siły oddziaływania i określ, czy kule się przyciągają, czy odpychają. (k = 8,99·10⁹ N·m²/C²)
+:::
+
+::: odp | Pokaż klucz
+F = k·|q₁q₂|/r² = 8,99·10⁹ · (4·10⁻⁶)² / (0,20)² = 8,99·10⁹ · 1,6·10⁻¹¹ / 0,04 ≈ **3,6 N**. Ładunki różnoimienne, więc kule się **przyciągają** (3 pkt: wzór, wynik, zwrot).
+:::
+
+**Bez uwag:** pozostałe rachunki (0,60 N w przykładzie Coulomba, 6,24·10¹⁸ elektronów w 1 C) sprawdzone — poprawne.
+
+### AUDYT W1 FULL — Claude Haiku 5.5, 2026-10-14
+
+**Błędy poprawione:** konwencja znaków przypisana Franklinowi (poprawiono: Franklin nazwał ładunki, przypisanie do protonu i elektronu jest późniejsze); E = k·Q/r² bez modułu (poprawiono na |E| = k·|Q|/r²); uziemienie jako „przejmuje ładunek” (doprecyzowano: Ziemia jako zbiornik ładunku, ciało ma potencjał Ziemi).
+
+**Luki:** obserwacja ≠ wniosek (dodano), typowe błędy uczniów (opisane), wiedza wstępna — polaryzacja i prawo Coulomba z zadań, uzupełniono w 0b.
+
+**Poszerzenie:** mosty do biologii (impulsy nerwowe), chemii (elektrolity, dysocjacja) i techniki (uziemienie); wykład 0b i 5a, 9 mini-wykładów „W skrócie” i 4 ciekawostki — zostawione.
+
+**Własne przykłady:** 4 nowe (zetknięcie kul, elektrony w ciele, przyciąganie a naelektryzowanie, siła Coulomba) z kluczem.
+
+**Bez uwag:** pozostałe fragmenty przeglądano sekcjami (0b, 1–5 ćwiczenia, 9–12 klucze, ZUZO) — brak dodatkowych błędów merytorycznych. Pełny przegląd linia po linii wykonano 2026-10-14 (§0–§15 i „Luki”). Poprawki: „ebonit z suknem” (ściąga), „potrze balon” → „pociera się balon” (zadanie 6), benzyna (εr ≈ 2: siła spada ok. 2×, sól się nie rozpuszcza), definicja ładunku elementarnego w słowniku. Sprawdzone bez zmian: rachunki w §5a, §8–§12c, klucze, test, fiszki, mosty, historia. Zapisy „$$ wzór” w jednej linii są poprawnym formatem md2html (nie wymagają zamknięcia).
+
+### AUDYT W2 — zewnętrzny, weryfikacja 2026-10-14 (Claude Haiku 5.5)
+
+Surowa odpowiedź: `chemia/plany/audyty/FIZ01_audyt_W2_2026-10-14.md`.
+
+**Wprowadzono:** zdanie o ładunku wielokrotności e bez „pół elektronu” (uczciwiej dla szkoły); „pokazuje ile, nie jaki” z porównaniem do ciała o znanym ładunku; przewodnik — ładunek na powierzchni w równowadze zamiast „po całym ciele”; karta „Gdzie gromadzi się ładunek?” (ostrza, zastrzeżenie o kształcie); karta „Jak czytać wzór Coulomba?” (moduły, znak iloczynu); trzy pozycje do kliniki (pole wewnątrz w równowadze, uziemienie a kierunek, ujemna wartość siły).
+
+**Już w lekcji (zarzut nieaktualny):** „najmniejszy swobodny ładunek”, „Ziemia przejmuje ładunek” (jest „zbiornik ładunku”), równe dzielenie kul (klinika i zadanie 9), zmiana odległości ×3 (test i zadanie 5b).
+
+**Nieprzyjęte jako dubel:** karta „Klatka Faradaya” z przykładami — treść i ograniczenie do pola magnetycznego są już w §11b i w słowniku; karta „Nie myl pojęć: indukcja/polaryzacja” — jest w §11b.

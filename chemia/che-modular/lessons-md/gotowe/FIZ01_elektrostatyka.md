@@ -78,7 +78,6 @@ Pole elektryczne :: przestrzeń wokół ładunku, w której na inne ładunki dzi
 - <b>„Przed = po”</b> — przy każdym zadaniu z kulami sprawdź na końcu: suma ładunków przed zetknięciem równa się sumie po zetknięciu.
 - <b>„Mikro to milionowa, nano to miliardowa”</b> — 1 µC = 10⁻⁶ C, 1 nC = 10⁻⁹ C; zamień na kulomby, zanim policzysz elektrony.
 :::
-:::
 
 ## 0b | Wykład — elektrostatyka od zera [[basic:E8]] {#s0b}
 

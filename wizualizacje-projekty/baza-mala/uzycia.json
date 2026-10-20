@@ -32,6 +32,7 @@
   "gfx-scene-heating": "CHE model",
   "gfx-scene-indicator": "CHE model",
   "gfx-scene-indicatorRack": "CHE model",
+  "gfx-scene-metanSpalanie": "CHE model",
   "gfx-scene-titration": "CHE model",
   "hf-paradox": "CHE model",
   "ion-map-v02": "CHE model",
@@ -98,6 +99,7 @@
   "r03-krzyz-v01": "CHE model",
   "fiz02-obwod-v01": "CHE model",
   "beaker": "CHE gfx/naczynia",
+  "zlewkaOdwrocona": "CHE gfx/naczynia",
   "testTube": "CHE gfx/naczynia",
   "cylinder": "CHE gfx/naczynia",
   "flask": "CHE gfx/naczynia",
@@ -233,13 +235,37 @@
   "hyd-na2co3": "CHE gfx/reakcje",
   "hyd-nh4cl": "CHE gfx/reakcje",
   "hyd-cuso4": "CHE gfx/reakcje",
+  "metanSpalanie": "CHE gfx/sceny",
+  "krzywe-rozpuszczalnosci": "klocek",
+  "trojkat-przeliczen": "klocek",
   "palenie": "klocek",
+  "bilans-spalania": "klocek",
+  "diagram-bohra": "klocek",
+  "sklad-procentowy": "klocek",
+  "lancuch-przemian": "klocek",
+  "karta-bhp": "klocek",
   "uklad-okresowy": "klocek",
+  "molekula-2d": "klocek",
+  "petla-regulacji": "klocek",
+  "haworth": "klocek",
+  "krzyzowka-mendla": "klocek",
+  "kalkulator-mola": "klocek",
   "plomien": "klocek",
+  "probowki-odczyn": "klocek",
+  "schemat-przemian": "klocek",
+  "konfiguracje": "klocek",
+  "probowki-wybor": "klocek",
   "zlewka": "klocek",
   "metal-woda": "klocek",
+  "estryfikacja": "klocek",
   "palniki": "klocek",
+  "bilans-rownania": "klocek",
+  "zbieranie-gazu": "klocek",
+  "palnik-gazowy": "klocek",
+  "nadmiar-substratu": "klocek",
+  "doswiadczenie": "klocek",
   "probowki": "klocek",
+  "wzor-2d": "klocek",
   "gruczoly-mapa": "BIO",
   "kod-genetyczny": "BIO",
   "eutrofizacja": "BIO",
@@ -332,7 +358,9 @@
  },
  "uzycia": {
   "acid-calculator": {},
-  "acid-game": {},
+  "acid-game": {
+   "C1c_kwasy_zasady_sole": 1
+  },
   "acid-rain-v01": {
    "N04": 1
   },
@@ -349,7 +377,9 @@
   "compound-cards": {},
   "conj-pairs": {},
   "diss-three-levels": {},
-  "energy-profile": {},
+  "energy-profile": {
+   "C1c_wodorki_typy_reakcji": 1
+  },
   "env-balance": {},
   "equilibrium": {},
   "fiz-coulomb-v01": {
@@ -393,6 +423,7 @@
    "N03": 1,
    "N04": 1
   },
+  "gfx-scene-metanSpalanie": {},
   "gfx-scene-titration": {
    "N04": 1
   },
@@ -420,8 +451,10 @@
    "N05": 1
   },
   "kw-szereg-metali-v01": {
+   "C1c_kwasy_zasady_sole": 1,
    "N04": 1,
-   "N05": 1
+   "N05": 1,
+   "X04": 1
   },
   "kw-wlasciwosci-v01": {
    "N04": 1
@@ -489,6 +522,7 @@
   "obtaining-hcl-steps": {},
   "obtaining-three": {},
   "f05-izotopy-v01": {
+   "C1c_masy_sklad_procentowy": 1,
    "F05": 1
   },
   "periodic-54": {
@@ -505,6 +539,7 @@
    "N04": 1
   },
   "rownania-jonowe-v01": {
+   "C1c_kwasy_zasady_sole": 1,
    "J03": 1,
    "N03": 1,
    "N04": 1,
@@ -512,16 +547,21 @@
   },
   "safety": {},
   "sole-doswiadczenia-v01": {
+   "C2w_wzor_elementarny_rzeczywisty": 1,
    "N05": 14
   },
   "species-v01": {},
   "stech-kalkulator-v01": {
+   "C2m_mol_masa_molowa": 1,
+   "C3": 1,
    "F17": 1,
    "N02": 1,
-   "N05": 1
+   "N05": 1,
+   "R07": 1
   },
   "substance": {},
   "tabela-rozpuszczalnosci-v01": {
+   "C1c_kwasy_zasady_sole": 1,
    "J03": 1,
    "N03": 1,
    "N04": 1,
@@ -531,8 +571,12 @@
   "titration-merged": {
    "N04": 1
   },
-  "n05-wodorki-v01": {},
-  "n05-trendy-v01": {},
+  "n05-wodorki-v01": {
+   "C1c_wodorki_typy_reakcji": 1
+  },
+  "n05-trendy-v01": {
+   "C1c_wodorki_typy_reakcji": 1
+  },
   "n05-doswiadczenia-v01": {},
   "f09-trzy-liczby-v01": {},
   "f10-energia-h2-v01": {},
@@ -545,6 +589,7 @@
   },
   "fiz02-obwod-v01": {},
   "beaker": {},
+  "zlewkaOdwrocona": {},
   "testTube": {},
   "cylinder": {},
   "flask": {},
@@ -700,6 +745,7 @@
    "N05": 1
   },
   "cuso4Hydrate": {
+   "C2w_wzor_elementarny_rzeczywisty": 1,
    "N05": 1
   },
   "hyd-nacl": {},
@@ -710,21 +756,117 @@
    "N05": 1
   },
   "hyd-cuso4": {},
+  "metanSpalanie": {},
+  "krzywe-rozpuszczalnosci": {},
+  "trojkat-przeliczen": {
+   "C2m_mol_masa_molowa": 2,
+   "LKO_ORG08_mol_gazy": 2
+  },
   "palenie": {},
+  "bilans-spalania": {
+   "LKO_ORG01_alkany": 1
+  },
+  "diagram-bohra": {
+   "C1c_konfiguracje_elektronowe": 1
+  },
+  "sklad-procentowy": {
+   "C1c_masy_sklad_procentowy": 1
+  },
+  "lancuch-przemian": {},
+  "karta-bhp": {
+   "C1c_kwasy_zasady_sole": 1,
+   "C2w_wzor_elementarny_rzeczywisty": 1,
+   "C4": 1,
+   "LKO_ORG01_alkany": 1,
+   "LKO_ORG02_alkeny": 1,
+   "LKO_ORG03_alkohole": 1,
+   "LKO_ORG04_glicerol": 1,
+   "LKO_ORG05_kwasy": 1,
+   "LKO_ORG06_estry": 1,
+   "LKO_ORG07_cukry": 1,
+   "LKO_ORG08_mol_gazy": 1,
+   "X04": 1
+  },
   "uklad-okresowy": {
    "P01": 1
   },
+  "molekula-2d": {},
+  "petla-regulacji": {
+   "BIO.02.B2c.oddychanie_wydalanie": 1,
+   "BIO.02.B2e.uklad_dokrewny": 1,
+   "BIO.02.B2g.homeostaza": 1
+  },
+  "haworth": {
+   "LKO_ORG07_cukry": 1
+  },
+  "krzyzowka-mendla": {
+   "BIO.01.B1b.krzyzowki_mendel": 2
+  },
+  "kalkulator-mola": {
+   "C2m_mol_masa_molowa": 1,
+   "LKO_ORG08_mol_gazy": 1
+  },
   "plomien": {},
+  "probowki-odczyn": {
+   "C2w_wzor_elementarny_rzeczywisty": 1,
+   "C4": 3,
+   "LKO_ORG02_alkeny": 1,
+   "LKO_ORG03_alkohole": 1,
+   "LKO_ORG04_glicerol": 1,
+   "LKO_ORG05_kwasy": 1
+  },
+  "schemat-przemian": {
+   "C1c_kwasy_zasady_sole": 1
+  },
+  "konfiguracje": {
+   "C1c_konfiguracje_elektronowe": 1
+  },
+  "probowki-wybor": {},
   "zlewka": {},
   "metal-woda": {},
+  "estryfikacja": {
+   "LKO_ORG06_estry": 1
+  },
   "palniki": {
    "F07": 1,
    "P01": 1
   },
+  "bilans-rownania": {
+   "C1c_wodorki_typy_reakcji": 1,
+   "C3": 1,
+   "LKO_ORG05_kwasy": 1,
+   "LKO_ORG06_estry": 1
+  },
+  "zbieranie-gazu": {
+   "LKO_ORG08_mol_gazy": 1
+  },
+  "palnik-gazowy": {
+   "LKO_ORG01_alkany": 1
+  },
+  "nadmiar-substratu": {
+   "R07": 1
+  },
+  "doswiadczenie": {
+   "C1c_kwasy_zasady_sole": 1,
+   "C4": 2,
+   "X04": 1
+  },
   "probowki": {
    "P01": 1
   },
+  "wzor-2d": {
+   "C1c_kwasy_zasady_sole": 2,
+   "C1c_wodorki_typy_reakcji": 3,
+   "LKO_ORG01_alkany": 2,
+   "LKO_ORG02_alkeny": 2,
+   "LKO_ORG03_alkohole": 1,
+   "LKO_ORG04_glicerol": 2,
+   "LKO_ORG05_kwasy": 1,
+   "LKO_ORG06_estry": 2,
+   "LKO_ORG07_cukry": 1
+  },
   "gruczoly-mapa": {
+   "BIO.02.B2e.uklad_dokrewny": 1,
    "BIO.07.U10.uklad_dokrewny": 1
   },
   "kod-genetyczny": {
@@ -741,9 +883,11 @@
    "BIO.02.L011.jak_dna_przechowuje_informacje": 1
   },
   "krazenie-obiegi": {
+   "BIO.02.B10.powtorka_uklady_czlowieka": 1,
    "BIO.07.U04.krazenie_krew_odpornosc": 1
   },
   "wdech-wydech": {
+   "BIO.02.B2c.oddychanie_wydalanie": 1,
    "BIO.07.U06.oddychanie_i_wydalanie": 1
   },
   "lancuch": {
@@ -757,6 +901,8 @@
    "BIO.02.L010.dna_od_zera": 1
   },
   "sprzezenie-zwrotne": {
+   "BIO.02.B2e.uklad_dokrewny": 1,
+   "BIO.02.B2g.homeostaza": 1,
    "BIO.07.H01.homeostaza": 1,
    "BIO.07.U10.uklad_dokrewny": 1
   },
@@ -771,9 +917,11 @@
    "BIO.02.L012.jak_dna_jest_upakowane_w": 1
   },
   "nefron": {
+   "BIO.02.B2c.oddychanie_wydalanie": 1,
    "BIO.07.U06.oddychanie_i_wydalanie": 1
   },
   "droga-pokarmu": {
+   "BIO.02.B2b.uklad_pokarmowy": 1,
    "BIO.07.U03.uklad_pokarmowy_i_odzywianie": 1
   },
   "ucho-droga": {
@@ -781,6 +929,7 @@
   },
   "podzial-komorki": {
    "BIO.01.L009.podzial_komorki_wzrost_regeneracja_i": 1,
+   "BIO.02.B2f.rozmnazanie_rozwoj": 1,
    "BIO.02.L014.jak_komorki_ciala_powstaja_i": 1,
    "BIO.02.L015.mejoza": 1,
    "BIO.05.L050.powtorka_roczna": 1
@@ -804,6 +953,7 @@
    "BIO.01.L002.powtorka_czlowiek": 1
   },
   "luk-odruchowy": {
+   "BIO.02.B2d.uklad_nerwowy_zmysly": 1,
    "BIO.07.U08.uklad_nerwowy_i_zmysly": 1
   },
   "relacje-ekologiczne": {
@@ -821,10 +971,13 @@
    "BIO.00.REV01.organizacja_i_chemizm_zycia": 1
   },
   "glukoza-wykres": {
+   "BIO.02.B2e.uklad_dokrewny": 1,
+   "BIO.02.B2g.homeostaza": 1,
    "BIO.07.H01.homeostaza": 1,
    "BIO.07.U10.uklad_dokrewny": 1
   },
   "synapsa": {
+   "BIO.02.B2d.uklad_nerwowy_zmysly": 1,
    "BIO.07.U08.uklad_nerwowy_i_zmysly": 1
   },
   "fotosynteza-oddychanie": {
@@ -838,15 +991,18 @@
    "BIO.01.L007.oddychanie_komorkowe_skad_komorka_bierze": 1
   },
   "cykl-miesiaczkowy": {
+   "BIO.02.B2f.rozmnazanie_rozwoj": 1,
    "BIO.07.U11.rozmnazanie_i_rozwoj": 1
   },
   "punnett": {
+   "BIO.01.B1b.krzyzowki_mendel": 1,
    "BIO.02.L017.jak_przewidywac_dziedziczenie_jednej_cechy": 1,
    "BIO.02.L018.jak_dziedziczy_sie_plec_i": 1,
    "BIO.02.L019.dlaczego_grupy_krwi_nie_pasuja": 1,
    "BIO.02.L021.powtorka_genetyki": 1
   },
   "staw-antagonizm": {
+   "BIO.02.B2a.skora_uklad_ruchu": 1,
    "BIO.07.U01.skora_i_uklad_ruchu": 1
   },
   "helisa": {
@@ -857,6 +1013,7 @@
    "BIO.02.L016A.zmiennosc_dlaczego_potomstwo_nie_jest": 1
   },
   "uklad-rozrodczy": {
+   "BIO.02.B2f.rozmnazanie_rozwoj": 1,
    "BIO.07.U11.rozmnazanie_i_rozwoj": 1
   },
   "etapy-zycia": {
@@ -867,6 +1024,7 @@
    "BIO.01.L001.komorka": 1
   },
   "droga-zarodka": {
+   "BIO.02.B2f.rozmnazanie_rozwoj": 1,
    "BIO.07.U11.rozmnazanie_i_rozwoj": 1
   },
   "nukleotyd": {
@@ -877,12 +1035,14 @@
    "BIO.02.L010.dna_od_zera": 1
   },
   "wymiana-gazowa": {
+   "BIO.02.B2c.oddychanie_wydalanie": 1,
    "BIO.07.U06.oddychanie_i_wydalanie": 1
   },
   "klonowanie-genu": {
    "BIO.02.L022.biotechnologia_i_inzynieria_genetyczna": 1
   },
   "lozysko-wymiana": {
+   "BIO.02.B2f.rozmnazanie_rozwoj": 1,
    "BIO.07.U11.rozmnazanie_i_rozwoj": 1
   },
   "hardy-weinberg": {
@@ -895,6 +1055,7 @@
    "BIO.02.L016.co_sie_dzieje_gdy_podzialy": 1
   },
   "skora-przekroj": {
+   "BIO.02.B2a.skora_uklad_ruchu": 1,
    "BIO.07.U01.skora_i_uklad_ruchu": 1
   },
   "szuflady-cech": {
@@ -906,6 +1067,7 @@
    "BIO.01.L005.blona_komorkowa_i_transport_substancji": 1
   },
   "kosmek-jelitowy": {
+   "BIO.02.B2b.uklad_pokarmowy": 1,
    "BIO.07.U03.uklad_pokarmowy_i_odzywianie": 1
   },
   "gdzie-dna": {
@@ -988,7 +1150,6 @@
  },
  "zero": [
   "acid-calculator",
-  "acid-game",
   "acid-table",
   "beaker-prediction-enhanced",
   "carboxyl",
@@ -998,7 +1159,6 @@
   "compound-cards",
   "conj-pairs",
   "diss-three-levels",
-  "energy-profile",
   "env-balance",
   "equilibrium",
   "flashcards-deck",
@@ -1007,6 +1167,7 @@
   "gfx-scene-gasCollection",
   "gfx-scene-heating",
   "gfx-scene-indicator",
+  "gfx-scene-metanSpalanie",
   "hf-paradox",
   "ka-pka-table",
   "kinetics-v01",
@@ -1029,14 +1190,13 @@
   "species-v01",
   "substance",
   "timeline",
-  "n05-wodorki-v01",
-  "n05-trendy-v01",
   "n05-doswiadczenia-v01",
   "f09-trzy-liczby-v01",
   "f10-energia-h2-v01",
   "f15-dipol-v01",
   "fiz02-obwod-v01",
   "beaker",
+  "zlewkaOdwrocona",
   "testTube",
   "cylinder",
   "flask",
@@ -1158,8 +1318,13 @@
   "sio2Naoh",
   "hyd-nacl",
   "hyd-cuso4",
+  "metanSpalanie",
+  "krzywe-rozpuszczalnosci",
   "palenie",
+  "lancuch-przemian",
+  "molekula-2d",
   "plomien",
+  "probowki-wybor",
   "zlewka",
   "metal-woda",
   "id",
@@ -1185,7 +1350,9 @@
   "f06I2Kbr"
  ],
  "jeden": [
+  "acid-game",
   "acid-rain-v01",
+  "energy-profile",
   "fiz-przewodniki-v01",
   "gfx-scene-dilution",
   "gfx-scene-titration",
@@ -1206,9 +1373,10 @@
   "n02-wzory-v01",
   "n02-zobojetnianie-v01",
   "j03-osady-v01",
-  "f05-izotopy-v01",
   "reakcje-kwasu-v03",
   "titration-merged",
+  "n05-wodorki-v01",
+  "n05-trendy-v01",
   "f17-bilans-v01",
   "r03-krzyz-v01",
   "acidMetal",
@@ -1220,44 +1388,38 @@
   "bacl2Na2so4",
   "cacl2Na2co3",
   "na2co3Hcl",
-  "cuso4Hydrate",
   "hyd-na2co3",
   "hyd-nh4cl",
+  "bilans-spalania",
+  "diagram-bohra",
+  "sklad-procentowy",
   "uklad-okresowy",
+  "haworth",
+  "schemat-przemian",
+  "konfiguracje",
+  "estryfikacja",
+  "zbieranie-gazu",
+  "palnik-gazowy",
+  "nadmiar-substratu",
   "probowki",
-  "gruczoly-mapa",
   "eutrofizacja",
-  "krazenie-obiegi",
-  "wdech-wydech",
   "sekwencje",
   "wirus-bakteria",
   "endosymbioza",
-  "nefron",
-  "droga-pokarmu",
   "ucho-droga",
   "od-organizmu-do-genu",
   "enzym-warunki",
   "homeostaza",
-  "luk-odruchowy",
   "przeobrazenie-plaza",
   "proba-kontrolna",
-  "synapsa",
-  "cykl-miesiaczkowy",
-  "staw-antagonizm",
   "zrodla-zmiennosci",
-  "uklad-rozrodczy",
   "etapy-zycia",
-  "droga-zarodka",
   "pojemnosc",
-  "wymiana-gazowa",
   "klonowanie-genu",
-  "lozysko-wymiana",
   "hardy-weinberg",
   "klucz-kregowce",
   "kontrola-podzialow",
-  "skora-przekroj",
   "szuflady-cech",
-  "kosmek-jelitowy",
   "gdzie-dna",
   "transfuzja",
   "oko-akomodacja",
@@ -1287,6 +1449,7 @@
   "n01-doswiadczenia-v01",
   "n01-spalanie-v01",
   "n02-doswiadczenia-v01",
+  "f05-izotopy-v01",
   "periodic-54",
   "ph-indicators-v03",
   "rownania-jonowe-v01",
@@ -1295,25 +1458,50 @@
   "tabela-rozpuszczalnosci-v01",
   "conductivity",
   "caoH2o",
+  "cuso4Hydrate",
+  "trojkat-przeliczen",
+  "karta-bhp",
+  "petla-regulacji",
+  "krzyzowka-mendla",
+  "kalkulator-mola",
+  "probowki-odczyn",
   "palniki",
+  "bilans-rownania",
+  "doswiadczenie",
+  "wzor-2d",
+  "gruczoly-mapa",
   "kod-genetyczny",
   "drabina",
+  "krazenie-obiegi",
+  "wdech-wydech",
   "lancuch",
   "sprzezenie-zwrotne",
   "poziomy-dna",
+  "nefron",
+  "droga-pokarmu",
   "podzial-komorki",
   "mikroskop-model",
   "konczyny-homologiczne",
+  "luk-odruchowy",
   "relacje-ekologiczne",
   "siec-troficzna",
   "glukoza-wykres",
+  "synapsa",
   "fotosynteza-oddychanie",
   "energia-glukozy",
+  "cykl-miesiaczkowy",
   "punnett",
+  "staw-antagonizm",
   "helisa",
+  "uklad-rozrodczy",
   "komorka-nakladki",
+  "droga-zarodka",
   "nukleotyd",
+  "wymiana-gazowa",
+  "lozysko-wymiana",
+  "skora-przekroj",
   "transport-blona",
+  "kosmek-jelitowy",
   "energia-materia",
   "dobor-naturalny",
   "trener-nici",
@@ -1326,14 +1514,30 @@
   "caoh2Co2",
   "cuoH2so4",
   "cuso4Naoh",
+  "cykl",
   "fecl3Naoh",
+  "fotosynteza-oddychanie-krazenie",
   "hclNaOH",
+  "jajo-porownanie",
+  "jajo-ptaka",
+  "komorki-porownanie",
+  "krazenie",
   "mgO2",
+  "mikroskop-budowa",
   "naH2o",
+  "nefron-budowa",
+  "neuron-budowa",
+  "podzial-komorki-skrot",
   "rx-ag-cl",
   "rx-cu-naoh",
   "rx-fe-cuso4",
+  "ryba-budowa",
+  "serce-budowa",
+  "stawonogi-budowa",
   "szereg",
-  "wlasciwosci"
+  "tkanki-zwierzece",
+  "wentylacja",
+  "wlasciwosci",
+  "wykres-dane"
  ]
 }

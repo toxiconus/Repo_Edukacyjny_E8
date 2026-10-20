@@ -3,7 +3,7 @@ kod: F04
 uid: CHE.01.F04.atom
 tytul: Atom
 opis: Jądro i elektrony · proton, neutron, elektron · liczba atomowa Z i masowa A · zapis nuklidu · atom obojętny i jon · modele atomu
-kicker: F04 · FUNDAMENTY · MASTER v1.1
+kicker: F04 · FUNDAMENTY · MASTER v1.0
 lead: Pierwsza lekcja fazy B — „z czego to wynika?”. Schodzimy z poziomu substancji do atomu: z jakich cząstek się składa,
 lead: która liczba definiuje pierwiastek i jak z zapisu nuklidu bez zgadywania policzyć protony, neutrony i elektrony — w atomie i w jonie.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
@@ -32,7 +32,7 @@ stopka: **CHEMIA F04 v1.1 MASTER** · Atom · 2026
 - contest | <b>Ponad LO:</b> rozwijane bloki „poziom akademicki” — przycisk w nagłówku lekcji
 :::
 
-::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to (ok. 30 min)
 1. **[§0.4](#diagnoza)** — diagnoza: odpowiedz, zanim zaczniesz czytać.
 2. **[§1](#czastki)–[§3](#nuklid)** — cząstki atomu, liczby Z i A, zapis nuklidu.
 3. **[§4](#jony)** — atom obojętny i jon: procedura liczenia elektronów.
@@ -207,6 +207,9 @@ $$ q = p − e → e = Z − q
 
 $$ Na → Na⁺ + e⁻ · Cl + e⁻ → Cl⁻
 
+@klocek diagram-bohra {z="11"} | Atom i jon w modelu Bohra: oddaj lub przyjmij elektron
+@opis Model Bohra: pośrodku czerwone jądro z napisem „Zp” (liczba protonów), wokół niego przerywane okręgi powłok K, L, M (i N) z kropkami-elektronami; kropki powłoki zewnętrznej (walencyjnej) są w kolorze akcentu, wewnętrzne szare. Suwak Z zmienia pierwiastek, przyciski dodają lub odbierają elektron: kation oddaje elektron z powłoki zewnętrznej (kropka odlatuje), anion przyjmuje elektron (kropka dolatuje). Obok liczby protonów, elektronów, ładunek i liczba elektronów na powłokach. Wniosek: Na ma 2, 8, 1 elektronów, po oddaniu jednego ma 2, 8 (jak Ne); Cl ma 2, 8, 7, po przyjęciu jednego 2, 8, 8 (jak Ar); liczba protonów się nie zmienia.
+
 ::: karta core | Reguła: kation oddał, anion przyjął
 **Kation** (ładunek dodatni) — elektronów **mniej** niż protonów. **Anion** (ładunek ujemny) — elektronów **więcej** niż protonów. Uwaga na znak: dla O²⁻ e = 8 − (−2) = 10, a nie 6.
 :::
@@ -313,23 +316,6 @@ BHP: brak — doświadczenie modelowe.
 | „Zamieniam elektron na proton, żeby zrobić jon.” | Jon powstaje przez zmianę liczby elektronów; zmiana protonu zmienia pierwiastek. | Proton jest w jądrze i nie zmienia się w reakcji chemicznej. |
 | „Atom jest niepodzielny.” | Atom składa się z jądra (protony, neutrony) i elektronów; w reakcjach chemicznych się nie dzieli, ale nie jest niepodzielny. | „átomos” to nazwa historyczna (Demokryt, Dalton). |
 | „Liczba masowa to masa atomowa.” | A to liczba protonów i neutronów jednego nuklidu (liczba całkowita); masa atomowa to średnia ważona mas izotopów. | Cl: A = 35 lub 37, a masa atomowa ≈ 35,5 u. |
-:::
-
-## 8.5 | Nie myl! {#nie-myl}
-
-::: nie-myl | Pojęcia, które łatwo pomylić
-| Para | Dlaczego łatwo pomylić | Jak rozstrzygnąć |
-|---|---|---|
-| liczba masowa A / masa atomowa | obie „o masie” | A — liczba całkowita (p + n) jednego nuklidu; masa atomowa — średnia ważona izotopów (np. Cl ≈ 35,45 u) |
-| kation / anion | oba to jony | kation (+) oddał elektrony; anion (−) przyjął elektrony |
-| izotopy / izobary | podobne nazwy | izotopy — to samo Z, różne A; izobary — to samo A, różne Z |
-| jon / izotop | oba „ten sam pierwiastek, coś inne” | jon — inna liczba elektronów; izotop — inna liczba neutronów |
-| Z / numer okresu | oba w układzie okresowym | Z — numer pierwiastka (protony); okres — numer wiersza |
-| e = Z − q dla O²⁻ | łatwo odjąć zamiast dodać | q = −2, więc e = 8 − (−2) = 10, nie 6 |
-:::
-
-::: karta understand | W skrócie — trzy pytania kontrolne przy każdym zapisie
-Zanim zapiszesz odpowiedź, zadaj trzy pytania. **1) Czy protony zgadzają się z symbolem?** Symbol i Z to to samo — jeśli wyszło ci 10 protonów dla glinu, popełniłeś błąd. **2) Czy neutrony są liczbą nieujemną i całkowitą?** n = A − Z; dla ¹H wychodzi 0 i to poprawne. **3) Czy p − e daje podany ładunek?** Dla Al³⁺: 13 − 10 = +3 ✓; dla S²⁻: 16 − 18 = −2 ✓. Jeśli któraś kontrola nie wychodzi, wróć do wzoru, zamiast poprawiać liczby „na oko”.
 :::
 
 ## 9 | Ćwiczenia {#cwiczenia}
@@ -644,11 +630,6 @@ Zmiana Z / n / e | inny pierwiastek / izotop / jon | understand:rozumienie
 Jednostka u | 1/12 masy atomu ¹²C ≈ 1,66 · 10⁻²⁴ g | extra:ambitne
 Izobary | ten sam A, różne Z (⁴⁰Ar, ⁴⁰Ca) | extra:ambitne
 Doświadczenie Rutherforda | odkrycie małego, dodatniego jądra | extra:ambitne
-Jony izoelektronowe | ta sama liczba elektronów, np. O²⁻, F⁻, Na⁺, Mg²⁺ — po 10 e⁻ | olimpijski:atom
-Izotony | ta sama liczba neutronów (¹³C i ¹⁴N — po 7) | olimpijski:atom
-X²⁻ z 18 e⁻ — jaki pierwiastek? | Z = 16 → siarka | olimpijski:atom
-H⁺ | goły proton — 0 elektronów | olimpijski:atom
-Kto odkrył neutron? | James Chadwick, 1932 | olimpijski:atom
 :::
 
 ## 13 | Słownik {#slownik}
@@ -689,13 +670,13 @@ Model atomu :: uproszczony obraz budowy atomu, np. Rutherforda lub Bohra
 
 ## 15 | System powtórek {#powtorki}
 
-Kolejność powtórki (we własnym tempie):
-
-1. karta z [§11](#powtorka) i ćwiczenia A,
-2. fiszki,
-3. ćwiczenia B,
-4. test z [§10](#test),
-5. po F05 — F02 + F03 + F04 + F05 razem: zestaw przekrojowy z F21.
+| Kiedy | Ile | Co |
+|---|---|---|
+| po lekcji | 20 min | karta z [§11](#powtorka) i ćwiczenia A |
+| po 1 dniu | 10 min | fiszki |
+| po 3 dniach | 15 min | ćwiczenia B |
+| po tygodniu | 20 min | test z [§10](#test) |
+| po F05 | 25 min | F02 + F03 + F04 + F05 razem — zestaw przekrojowy z F21 |
 
 ## A | Dodatek A — mosty i co dalej {#mosty}
 

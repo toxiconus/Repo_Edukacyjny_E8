@@ -139,7 +139,7 @@ Pozostałe alkany C2–C5 — wszystkie zbilansowane, sprawdź każdy samodzieln
 
 Zauważ regularność: dla alkana CₙH₂ₙ₊₂ pełne spalanie potrzebuje O₂ w ilości n + (2n+2)/4 moli na mol paliwa (metan: 1 + 1 = 2 ✔; propan: 3 + 2 = 5 ✔; pentan: 5 + 3 = 8 ✔). W konkursie to przyspiesza rachunek objętości.
 
-**Spalanie niecałkowite** — gdy tlenu brakuje: obok (lub zamiast) CO₂ powstają **tlenek węgla CO** i **sadza C**; płomień jest żółty i kopcący (porównaj: spalanie całkowite daje płomień niebieski, bez dymu). Zapisy: 2CH₄ + 3O₂ → 2CO + 4H₂O; CH₄ + O₂ → C + 2H₂O. Niebezpieczeństwo CO — bezbarwny, bezwonny, trujący (blokuje transport tlenu we krwi — szczegóły w N01).
+**Spalanie niecałkowite** — gdy tlenu brakuje: obok (lub zamiast) CO₂ powstają **tlenek węgla CO** i **sadza C**; płomień jest żółty i kopcący (porównaj: spalanie całkowite daje płomień niebieski, bez dymu). Ilość tlenu decyduje o produkcie: przy umiarkowanym niedoborze powstaje głównie CO, przy dużym — sadza (węgiel). Zapisy: 2CH₄ + 3O₂ → 2CO + 4H₂O; CH₄ + O₂ → C + 2H₂O. Niebezpieczeństwo CO — bezbarwny, bezwonny, trujący (blokuje transport tlenu we krwi — szczegóły w N01).
 
 ::: karta understand | W skrócie — trzy jednostki spalania propanu
 Zadanie z wojewódzkiego zwykle chce wszystkich trzech: **moli, gramów i dm³**. Przykład: 11 g propanu (0,25 mol; M = 44).
@@ -152,6 +152,9 @@ Konwencja: na egzaminie używaj wartości Vₘ podanej w arkuszu. Wartość 22,4
 ::: karta error | Tlen bilansujemy ostatni, wodór przed nim
 Najczęstsza przyczyna niepotrzebnych ułamków: startowanie od O₂. Zawsze: najpierw C, potem H, **na końcu O** — wtedy współczynnik przy O₂ wyjdzie sam. Druga pułapka: ułamkowe współczynniki. Zapis „C₂H₆ + 3,5O₂ → 2CO₂ + 3H₂O" jest chemicznie poprawny (O: 7 = 4 + 3), ale konkurs i egzamin oczekują liczb całkowitych — mnożymy wszystko przez 2: **2C₂H₆ + 7O₂ → 4CO₂ + 6H₂O**.
 :::
+
+@klocek bilans-spalania {n="3"} | Bilans atomów C, H, O przy spalaniu alkanu
+@opis Równanie spalania alkanu z kolorowymi współczynnikami i bilansem atomów węgla, wodoru i tlenu po obu stronach; zmiana liczby atomów węgla n pokazuje, jak rosną współczynniki dla kolejnych alkanów.
 
 ## 3 | Wykład — halogenowanie: substytucja, nie addycja {#halogenowanie}
 
@@ -247,6 +250,15 @@ C1–C3: po jednym (brak izomerii). C4: **2**. C5: **3**. Te liczby trzeba znać
 5. Ile izomerów ma C₅H₁₂? Zapisz ich nazwy.
 :::
 
+@klocek wzor-2d {smiles="CCCC" grupa="none"} | Butan: wzór strukturalny
+@opis Wzór strukturalny butanu: łańcuch czterech atomów węgla z pojedynczymi wiązaniami i atomami wodoru; izomer prosty (n-butan).
+
+@klocek wzor-2d {smiles="CC(C)C" grupa="none"} | Izobutan (metylopropan): wzór strukturalny
+@opis Wzór strukturalny izobutanu: trzy atomy węgla połączone wokół środkowego, rozgałęzienie CH₃; ten sam wzór sumaryczny C₄H₁₀ co butan, inna budowa — izomer.
+
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
 ## 5 | Doświadczenie — dwa dowody z płomienia metanu {#dosw}
 
 ::: dosw | Doświadczenie 1 — Produkty spalania metanu: zlewka i woda wapienna
@@ -269,6 +281,9 @@ C1–C3: po jednym (brak izomerii). C4: **2**. C5: **3**. Te liczby trzeba znać
 
 **Bezpieczeństwo:** metan z powietrzem tworzy mieszaninę wybuchową w pewnych proporcjach — pracować tylko z upływającym strumieniem z palnika (nigdy z gazem z butli wypuszczanym bez kontroli), w przewietrzanym pomieszczeniu, bez otwartego ognia poza płomieniem palnika; zlewkę chwytać szczypcami; sprawdzić szczelność połączeń.
 :::
+
+@klocek palnik-gazowy {etap="2"} | Dwa dowody z płomienia metanu: woda i CO₂
+@opis Palnik gazowy z płomieniem metanu i odwróconą zlewką nad nim: na jej ściankach skrapla się para wodna (kropelki), a gaz przepuszczony do probówki z wodą wapienną powoduje jej zmętnienie; kontrola sucha. Wniosek: spalanie metanu daje wodę (stąd wodór) i CO₂ (stąd węgiel).
 
 ## 6 | Zadania {#zadania}
 
@@ -468,3 +483,9 @@ Zastosowano wszystkie uwagi z audytu Perplexity (P1–P16, braki, typy zadań, p
 - Test: poprawna odpowiedź przestawiona w pięciu pytaniach; dodano dwa pytania (U9).
 - Poprawione względem propozycji: suma spalin w zadaniu 6(d) to 284,5 dm³ (przy 79% N₂), a nie 282 dm³ (przy 78%, z poprzedniej wersji).
 - Nieprzyjęte: brak odrzuceń. Do decyzji zostaje wariant 78% vs 79% N₂ (patrz „Do weryfikacji").
+
+## AUDYT W1/W2 — zewnętrzny, LKO-ORG01 (2026-10-14)
+
+Zastosowano: dopisano, że przy umiarkowanym niedoborze tlenu powstaje głównie CO, a przy dużym — sadza (spalanie niecałkowite).
+
+Nieprzyjęte (sprawdzone w pliku): izomery pentanu są już pełne — n-pentan, izopentan (2-metylobutan) i neopentan (2,2-dimetylopropan), z zasadą liczenia izomerów; temperatura wrzenia neopentanu nie występuje w lekcji, więc nie ma czego poprawiać; przykład 11 g propanu jest poprawny (0,25 mol; 0,75 mol CO₂ = 33 g; 1 mol H₂O; 1,25 mol O₂ = 40 g) i jest w karcie „W skrócie”; światło (dzienne lub UV) jest podane przy reakcji; kolejne produkty chlorowania (CH₃Cl → CH₂Cl₂ → CHCl₃ → CCl₄) są opisane jako kolejne podstawienia; wzory z indeksami dolnymi są już zapisane.

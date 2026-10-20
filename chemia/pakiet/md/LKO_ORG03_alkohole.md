@@ -10,7 +10,7 @@ poglebia: "LKO-ORG04; LKO-ORG07; LKO-ORG08"
 wlasciciel: "chemia olimpijska LKO"
 zrodla: "Zakres olimpiady kuratoryjnej (etap III) + podstawa programowa"
 opis: "Alkohole C1–C3: grupa hydroksylowa, odczyn obojętny, reakcja z sodem jako dowód –OH oraz spalanie — z pełną stechiometrią mol, gram, dm³."
-stan: "pełna struktura — 2026-10-13, bez audytu W1"
+stan: "W1 FULL — Claude Haiku 5.5, 2026-10-14 (wykład od zera 0c + sekcje 1–4, 4 mini-wykłady, 4 ciekawostki, 4 własne przykłady)"
 kicker: "ORG03 · alkohole"
 lead: "Grupa –OH zmienia węglowodór w zupełnie nową rodzinę: miesza się z wodą, reaguje z sodem i pali się czystym niebieskim płomieniem."
 plakietki: ["alkohole", "etanol"]
@@ -69,6 +69,30 @@ Rdzeniem tej lekcji jest **grupa hydroksylowa –OH**: ona decyduje o rozpuszcza
 **Rozliczenie:** 5 pkt — selektywnie przez rdzeń, prosto do zadań exam; 3–4 pkt — pełna praca, nacisk na sód i spalanie; 0–2 pkt — najpierw R01 (dipole, wiązania wodorowe) i LKO-ORG01 (szereg), potem lekcja od początku.
 :::
 
+## 0c | Wykład od zera — alkohole w jednej rozmowie {#wyklad-od-zera}
+
+Wyobraź sobie węglowodór jak pociąg bez lokomotywy: łańcuch atomów węgla z wodorami, który sam prawie nie reaguje z wodą. Alkohol to ten sam pociąg z **doczepioną lokomotywą** — grupą **–OH** (jeden atom tlenu i jeden wodór). To ona decyduje o wszystkim, co alkohol potrafi, a reszta łańcucha tylko tę charakterystykę modyfikuje.
+
+Zacznijmy od budowy. Grupa –OH jest **polarna**: tlen mocniej przyciąga wspólne elektrony niż wodór, więc na cząsteczce powstaje mały biegun dodatni i ujemny. Dzięki temu alkohol potrafi połączyć się z cząsteczkami wody wiązaniami wodorowymi — tak jak woda łączy się sama ze sobą. Dlatego metanol, etanol i propan-1-ol mieszają się z wodą w każdej proporcji. Jeśli łańcuch węglowy się wydłuża, rośnie część niepolarna i rozpuszczalność maleje; przy długich łańcuchach woda „przegrywa” z tłustym ogonem.
+
+Druga ważna sprawa to **odczyn**. Alkohole nie dysocjują na jony, bo –OH jest przyczepione do węgla wiązaniem kowalencyjnym. Jon OH⁻ z wodorotlenku sodu jest zupełnie czymś innym, więc roztwór etanolu nie zmienia barwy wskaźników. Litery te same, chemia inna — to najczęstsza pułapka.
+
+Trzecia rzecz to **reakcja z sodem**. Sód odbiera atom wodoru z grupy –OH i zostawia resztę cząsteczki. Powstaje alkoholan sodu i wodór. Wodór pochodzi z lokomotywy, a nie z wagonów — dlatego reakcja jest dowodem na obecność –OH. Liczenie jest proste, jeśli pamiętasz stosunek: **dwie cząsteczki alkoholu dają jedną cząsteczkę H₂**.
+
+::: karta understand | W skrócie — ile H₂ daje mol alkoholu
+| Alkohol | Liczba grup –OH | H₂ z 1 mola alkoholu |
+|---|---|---|
+| etanol | 1 | 0,5 mola |
+| glikol etylenowy | 2 | 1 mol |
+| glicerol | 3 | 1,5 mola |
+
+Każda grupa –OH daje z sodem połowę mola H₂, dlatego liczymy mole grup –OH, a nie mole cząsteczek.
+:::
+
+Czwarta to **spalanie**. Alkohole palą się niebiesko, wydzielając dwutlenek węgla i wodę. Każde równanie bilansujesz w tej kolejności: węgiel, wodór, na końcu tlen. Gdy wyjdzie ułamek, mnożysz wszystko przez 2.
+
+Najczęstsza pułapka: zdanie „etanol ma grupę OH, więc jest zasadą”. Nie jest — zasada to związek, który oddaje jony OH⁻; etanol tego nie robi. Druga pułapka: liczenie atomów wodoru w C₂H₅OH — jest ich **sześć** (pięć w grupie etylowej i jeden w –OH).
+
 ## 1 | Wykład — alkohole: węglowodór z grupą –OH {#definicja}
 
 **Alkohol** powstaje, gdy w węglowodorze (albo w jego pochodnej) **jeden atom wodoru zostaje zastąpiony grupą hydroksylową –OH** przyłączoną do atomu węgla. Grupa –OH to cecha rodzajowa całej rodziny — decyduje o chemii, która łączy wszystkie alkohole.
@@ -99,12 +123,15 @@ Wspólny fragment „–OH" bywa mylący: wodorotlenek sodu NaOH to **zasada** (
 :::
 
 ::: karta extra | Alkohol drzewny — najstarsze ostrzeżenie
-Metanol otrzymywał się dawniej z suchego rozpuszczania drewna (stąd nazwa: **alkohol drzewny**). Jest silnie trujący: picie nawet niewielkiej ilości prowadzi do uszkodzenia nerwu wzrokowego (ślepota) i śmierci; truje też przez skórę i pary. W laboratorium i w zadaniach: metanol opisujemy wzorem i własnościami, ale nigdy nie postulujemy doświadczeń „smakowych" — chemia organiczna nie testuje substancji na sobie.
+Metanol otrzymywano dawniej z **suchej destylacji drewna** (stąd nazwa: **alkohol drzewny**). Jest silnie trujący: picie nawet niewielkiej ilości prowadzi do uszkodzenia nerwu wzrokowego (ślepota) i śmierci; truje też przez skórę i pary. W laboratorium i w zadaniach: metanol opisujemy wzorem i własnościami, ale nigdy nie postulujemy doświadczeń „smakowych" — chemia organiczna nie testuje substancji na sobie.
 :::
 
 ::: karta extra | Denaturat — etanol celowo popsuty
 Aby uczynić etanol techniczny nieprzydatnym do picia (i nieopodatkowanym jako surowiec), dodaje się do niego substancje **denaturujące**: gorzkie i trujące domieszki, czasem barwniki. Taki produkt to **denaturat** — własności chemiczne (spalanie, reakcja z sodem) pozostają alkoholowe, ale pitność świadomie zniszczono. Denaturat wciąż jest paliwem i rozpuszczalnikiem — i wciąż jest trujący.
 :::
+
+@klocek wzor-2d {smiles="CCO"} | Etanol: wzór strukturalny z grupą –OH
+@opis Wzór strukturalny etanolu: dwa atomy węgla w łańcuchu i grupa hydroksylowa –OH przy końcowym węglu; grupa –OH jest odpowiedzialna za własności alkoholu.
 
 ## 2 | Wykład — własności fizyczne i obojętny odczyn {#wlasnosci-odczyn}
 
@@ -121,6 +148,9 @@ Rozpuszczalność w wodzie, wysoka temperatura wrzenia, obojętny odczyn — za 
 ::: karta extra | Biopaliwa: etanol do baku
 Etanol świetnie się spala — i jest odnawialny, bo powstaje z fermentacji cukrów roślinnych (ORG07). W wielu krajach benzyna zawiera etanol (paliwa typu E10 — ok. 10% etanolu; w Brazylii stosuje się znacznie wyższe stężenia — do weryfikacji). Zalety: odnawialne źródło, wyższa liczba oktanowa; ograniczenia: mniejsza wartość opałowa niż benzyna i zużycie upraw na paliwo. Chemia spalania z tej lekcji działa w silniku dokładnie tak, jak w zlewce — tylko szybciej.
 :::
+
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
 
 ## 3 | Wykład — reakcja z sodem: dowód na grupę –OH {#sod}
 
@@ -144,6 +174,9 @@ Reaguje z –OH, nie z łańcuchem węglowym → dowód obecności grupy hydroks
 Bez współczynników równanie jest niezbalansowane (H: 6 po lewej, 5+2=7 po prawej). Sód musi pojawić się w produkcie (etanolan sodu — C₂H₅ONa), bo zniknąłby z bilansu. I wreszcie stosunek: pojedyncze cząsteczki dają pół cząsteczki H₂ — dlatego równanie piszemy z dwójkami: 2C₂H₅OH + 2Na → 2C₂H₅ONa + H₂↑. Kontrola H: 12 = 10 + 2 ✔.
 :::
 
+@klocek probowki-odczyn {tuby="Etanol + Na:bezbarwny:bezbarwny:gaz"} | Etanol + sód: wydziela się wodór
+@opis Probówka z etanolem i kawałkiem sodu: po wrzuceniu sodu unoszą się pęcherzyki gazu (wodoru); reakcja zachodzi z grupą –OH i jest dowodem jej obecności.
+
 ## 4 | Wykład — spalanie i drogi otrzymywania etanolu {#spalanie-otrzymywanie}
 
 **Spalanie całkowite** — reakcja charakterystyczna i energetyczna (alkohole są paliwami):
@@ -152,7 +185,7 @@ Bez współczynników równanie jest niezbalansowane (H: 6 po lewej, 5+2=7 po pr
 - **2CH₃OH + 3O₂ → 2CO₂ + 4H₂O** (H: 8 = 8 ✔; O: 2 + 6 = 8 = 4 + 4 ✔)
 - **2C₃H₇OH + 9O₂ → 6CO₂ + 8H₂O** (H: 16 = 16 ✔; O: 2 + 18 = 20 = 12 + 8 ✔)
 
-Płomień etanolu jest niebieski, mało świetlący — mniej węgla w cząsteczce niż w benzynie, więc spalanie przebiega czysto.
+Płomień etanolu jest niebieski i mało świetlący: cząsteczka zawiera tlen, więc spala się bardziej zupełnie niż benzyna i powstaje mniej sadzy.
 
 **Dwie drogi do etanolu** (obie już znasz lub poznasz):
 
@@ -240,7 +273,7 @@ Uczeń zapisał: „C₂H₅OH + Na → C₂H₅O + H₂↑. Reakcja jest gwałt
 :::
 
 ::: adv | Zadanie 6 (7 pkt) — Łańcuch: eten → etanol → sód → wodór | poziom ambitny
-Do reaktora hydratacji wprowadzono **5,6 dm³ etenu** (warunki normalne; Vₘ = 22,4 dm³/mol). Reakcja: CH₂=CH₂ + H₂O →(kat.) C₂H₅OH; wydajność **80%**. Otrzymany etanol całkowicie zadziałano z sodem (2C₂H₅OH + 2Na → 2C₂H₅ONa + H₂↑; M(C₂H₅OH) = 46 g/mol).
+Do reaktora hydratacji wprowadzono **5,6 dm³ etenu** (warunki normalne; Vₘ = 22,4 dm³/mol). Reakcja: CH₂=CH₂ + H₂O →(kat.) C₂H₅OH; wydajność **80%**. Otrzymany etanol całkowicie zużyto w reakcji z sodem (2C₂H₅OH + 2Na → 2C₂H₅ONa + H₂↑; M(C₂H₅OH) = 46 g/mol).
 (a) Oblicz liczbę moli etenu.
 (b) Oblicz liczbę moli i masę rzeczywistą otrzymanego etanolu.
 (c) Oblicz objętość H₂ (warunki normalne) wydzielonego w reakcji z sodem.
@@ -290,7 +323,7 @@ Czym jest denaturat? | etanol z dodanymi trującymi/gorzkimi domieszkami — cel
 - etanol zawiera wiązanie podwójne
 
 ? Roztwór etanolu w wodzie wobec wskaźników:
-+ nie zmienia barw — odczyn oboje
++ nie zmienia barw — odczyn obojętny
 - zmienia lakmus na niebieski
 - barwi fenoloftaleinę na malinowo
 
@@ -300,7 +333,7 @@ Czym jest denaturat? | etanol z dodanymi trującymi/gorzkimi domieszkami — cel
 - 5 moli O₂
 
 ? Metanol różni się od etanolu tym, że:
-+ jest silnie trujący (uszkodzenie wzroku) i ma krótszy łańcuch o CH₂
++ jest silnie trujący (uszkodzenie wzroku) i ma o jeden atom węgla (o grupę CH₂) mniej
 - ma dwie grupy –OH
 - nie pali się
 :::
@@ -309,7 +342,7 @@ Czym jest denaturat? | etanol z dodanymi trującymi/gorzkimi domieszkami — cel
 
 ::: slownik
 alkohol :: związek organiczny z grupą hydroksylową –OH przyłączoną do atomu węgla.
-grupa hydroksylowa (–OH) :: grupa polarne, decydująca o własnościach alkoholi: rozpuszczalności w wodzie, wiązaniach wodorowych, reakcji z sodem.
+grupa hydroksylowa (–OH) :: grupa polarna, decydująca o własnościach alkoholi: rozpuszczalności w wodzie, wiązaniach wodorowych, reakcji z sodem.
 metanol (alkohol metylowy) :: CH₃OH — ciecz, M = 32 g/mol; silnie trujący; dawniej z suchego destylowania drewna (alkohol drzewny).
 etanol (alkohol etylowy) :: C₂H₅OH — M = 46 g/mol; paliwo, rozpuszczalnik, produkt fermentacji; trujący w stężeniu.
 propan-1-ol :: CH₃–CH₂–CH₂–OH — –OH przy węglu końcowym.
@@ -330,3 +363,92 @@ wskaźnik obojętności :: lakmus, fenoloftaleina, uniwersalny — w roztworze a
 - **ORG03:** sód w dosw — świadomie jako demonstracja nauczycielska; jeśli standard repo przewiduje uczniowskie wykonanie, dopisać ograniczenia.
 - **ORG03:** „płomień wodorkowy prawie niewidoczny" w dosw — opis jakościowy klasycznej próby; dopuszczalny wariant kluczowy: powtórna próba z zapłonem resztkowego gazu w probówce.
 
+## Zadania z błędami i procedura bilansowania (W1, 2026-10-14)
+
+**Zadanie B — znajdź błędy.** Uczeń zapisał: $$C_2H_5OH+Na\rightarrow C_2H_5O+H$$.
+
+Błędy: zniknął sód; produkt organiczny nie zawiera sodu; wodór zapisano jako atom $$H$$ zamiast cząsteczki $$H_2$$; równanie nie jest zbilansowane. Poprawnie: $$2C_2H_5OH+2Na\rightarrow2C_2H_5ONa+H_2$$.
+
+**Procedura bilansowania spalania:** 1) zbilansuj węgiel; 2) zbilansuj wodór; 3) tlen zostaw na końcu; 4) jeśli wyjdzie ułamek, pomnóż wszystkie współczynniki przez 2.
+
+Przykład: $$C_2H_5OH+xO_2\rightarrow2CO_2+3H_2O$$. Po prawej jest 7 atomów tlenu; jeden pochodzi z etanolu, więc z $$O_2$$ trzeba dostarczyć 6 atomów, czyli $$x=6/2=3$$: $$C_2H_5OH+3O_2\rightarrow2CO_2+3H_2O$$.
+
+**Typowa pułapka:** „etanol ma grupę OH, więc jest zasadą” — błędny wniosek. O właściwościach decyduje wiązanie grupy OH: w NaOH jest jonem $$OH^-$$, w etanolu jest związana kowalencyjnie z węglem.
+
+### AUDYT W1 — zewnętrzny, weryfikacja 2026-10-14 (Claude Haiku 5.5)
+
+Surowa odpowiedź i tabela weryfikacji: `chemia/plany/audyty/LKO_ORG03_audyt_W1_2026-10-14.md`.
+
+**Wprowadzono:** zadanie B (znajdź błędy); procedurę bilansowania z przykładem $$x=3$$; wyjaśnienie pułapki „OH = zasada”.
+
+**Sprawdzono bez zmian (poprawne):** wzory i masy molowe (32, 46, 60 g/mol); bilanse spalania metanolu, etanolu i propanolu; stechiometria etanolu (96 g $$O_2$$, 88 g $$CO_2$$, 54 g $$H_2O$$; 67,2 i 44,8 dm³); zadanie A (0,20 mola etanolu, 2,24 dm³ $$H_2$$); fiszki.
+
+**Nieprzyjęte:** brak treści usuwającej materiał; wykład (sekcje 1–4), 4 mini-wykłady i 4 ciekawostki są już w lekcji (odpowiedź zewnętrzna ich nie uwzględniła) — pełna tura W1 FULL z promptem jeszcze do wykonania; mechanizm reakcji z sodem i nomenklatura rozgałęzionych — poza zakresem C1–C3.
+
+## Luki w zakresie i poszerzenie (W1 FULL, 2026-10-14)
+
+- **Zakres:** zgodny z pozycją „alkohole (odczyn, Na, spalanie)” z zakresu LKO etapu III (`PRIORYTETY.md` §1). Utlenianie alkoholi nie jest w tym zakresie — nie dodawano.
+- **Brakujący typ zadania:** P/F (prawda/fałsz) z uzasadnieniem — zakres LKO przewiduje takie zadania. Dodano poniżej.
+- **Typowe błędy uczniów, których lekcja wprost nie omawiała:** liczenie 5 zamiast 6 atomów H w C₂H₅OH; mylenie wzoru z zapisem „C₂H₅O” (rodnik) z cząsteczką etanolu; przeniesienie „dwa alkohole → jeden H₂” na inne substancje (np. glikol — ORG04 ma inny stosunek).
+- **Wiedza wstępna:** polarność i wiązania wodorowe (R01) — przypomnienie w diagnozie; dla spalania — bilans atomów (R09).
+- **Mosty międzyprzedmiotowe:**
+  - biologia: fermentacja alkoholowa to praca drożdży — ten sam proces, który uczeń zna z wypieku chleba i piwa;
+  - zdrowie: etanol metabolizuje się w organizmie w wątrobie do aldehydu octowego — dlatego trucizna przy dawce metanolu działa tak podstępnie (metanol przechodzi przez podobną drogę do kwasu mrówkowego; to temat dla lekcji biologii o wątrobie).
+
+## Własne przykłady (W1 FULL, 2026-10-14)
+
+::: karta exam | Przykład W1-1 (E8) — P/F z uzasadnieniem
+Oceń zdania i uzasadnij każde (P — prawda, F — fałsz):
+(a) Alkohole są zasadami, bo mają grupę –OH.
+(b) Metanol i etanol mieszają się z wodą w każdej proporcji.
+(c) Z 1 mola etanolu w spalaniu powstaje 3 mole CO₂.
+(d) Z 2 moli etanolu z sodem powstaje 1 mol H₂.
+:::
+
+::: odp | Pokaż klucz
+(a) F — grupa –OH w alkoholu jest przyłączona kowalencyjnie; alkohole nie oddają jonów OH⁻ (1 pkt). (b) P — grupa –OH tworzy wiązania wodorowe z wodą; przy krótkim łańcuchu rozpuszczalność jest nieograniczona (1 pkt). (c) F — powstają 2 mole CO₂ (C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O) (1 pkt). (d) P — stosunek 2 : 1 (2C₂H₅OH + 2Na → 2C₂H₅ONa + H₂↑) (1 pkt).
+:::
+
+::: karta exam | Przykład W1-2 (ambitny) — mieszanina alkoholi z sodem
+Mieszanina 0,1 mola metanolu i 0,1 mola etanolu reaguje z nadmiarem sodu. Oblicz objętość wydzielonego H₂ w warunkach normalnych. Uzasadnij, dlaczego wynik nie zależy od tego, który alkohol był pierwszy.
+:::
+
+::: odp | Pokaż klucz
+Z każdego alkoholu powstaje po 0,5 mola H₂ na mol alkoholu: n(H₂) = 0,1 · 0,5 + 0,1 · 0,5 = 0,1 mol; V = 0,1 · 22,4 = **2,24 dm³** (2 pkt). Wynik zależy tylko od łącznej liczby moli grup –OH, a nie od kolejności, bo obie grupy reagują tak samo (1 pkt).
+:::
+
+::: karta exam | Przykład W1-3 (ambitny) — odwrotne obliczenie ze spalania
+Ile gramów etanolu trzeba spalić całkowicie, aby otrzymać 88 g dwutlenku węgla? Podaj równanie i tok rozumowania.
+:::
+
+::: odp | Pokaż klucz
+m(CO₂) = 88 g → n(CO₂) = 88 / 44 = 2 mole. Z równania C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O: 1 mol etanolu daje 2 mole CO₂, więc n(C₂H₅OH) = 1 mol; m = 1 · 46 = **46 g** (3 pkt: 1 mole CO₂, 1 stosunek, 1 masa).
+:::
+
+::: karta exam | Przykład W1-4 (E8) — porównanie spalania
+Porównaj metanol i etanol: ile moli tlenu potrzeba do spalenia 1 mola każdego z nich? Który alkohol wymaga więcej tlenu i dlaczego?
+:::
+
+::: odp | Pokaż klucz
+Metanol: 2CH₃OH + 3O₂ → …, więc na 1 mol potrzeba 1,5 mola O₂. Etanol: 3 mole O₂ na 1 mol. Więcej tlenu wymaga etanol, bo ma o jeden atom węgla i dwa atomy wodoru więcej w łańcuchu (2 C i 6 H wobec 1 C i 4 H) (2 pkt).
+:::
+
+### AUDYT W1 FULL — Claude Haiku 5.5, 2026-10-14
+
+**Błędy poprawione:** alkohol drzewny — „suchej destylacji” zamiast „suchego rozpuszczania”; uzasadnienie czystego płomienia (tlen w cząsteczce); test: „obojętny” zamiast „oboje”; słownik: „polarna”; wyjaśnienie różnicy metanolu (o jeden atom węgla mniej); „zużyto” zamiast „zadziałano”.
+
+**Luki:** P/F z uzasadnieniem (dodano), typowe błędy (dodano w luki), wykład „od zera” w 0c, mosty do biologii i zdrowia.
+
+**Poszerzenie:** ciekawostki (4 karty extra) i mini-wykłady (4 karty W skrócie) — zostawione; wykład sekcje 1–4 zostawiony.
+
+**Własne przykłady:** 4 nowe (P/F, mieszanina, odwrotne obliczenie, porównanie spalania) z kluczem.
+
+**Nieprzyjęte:** brak. Odpowiedź zewnętrzna nie wskazała błędów merytorycznych w treści, poza uzupełnieniami powyżej.
+
+**Bez uwag:** pozostałe rachunki, bilanse i równania sprawdzone — poprawne.
+
+## AUDYT W1/W2 — zewnętrzny, blok organiczny (2026-10-14)
+
+Zastosowano: dodano kartę „W skrócie” z tabelą liczby grup –OH i ilości H₂ z 1 mola alkoholu (etanol 0,5, glikol 1, glicerol 1,5 mola).
+
+Nieprzyjęte (sprawdzone w pliku): pułapka „grupa –OH to nie jon OH⁻ / alkohol nie jest zasadą” jest w lekcji; warunek BHP i demonstracja nauczycielska sodu są w doświadczeniu; ostrzeżenie o metanolu jest w celach i w karcie o toksyczności.

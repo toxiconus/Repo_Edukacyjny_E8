@@ -156,6 +156,12 @@ Porównaj dwa równania. (1) C₂H₄ + Br₂ → C₂H₄Br₂ — z dwóch sub
 Oleje roślinne są ciekłe, bo ich cząsteczki mają wiele podwójnych wiązań C=C. Uwodornienie (addycja H₂ przy katalizatorze niklowym) zamienia część tych wiązań na pojedyncze — cząsteczki prostują się, siły między nimi rosną, a olej przechodzi w **twardy tłuszcz**. Tak powstaje twardy tłuszcz do margaryn. To ta sama reakcja, co addycja H₂ do etenu — tylko w wersji wielowiązaniowej i kuchennej. Przy częściowym uwodornieniu mogą powstawać tłuszcze trans, których nadmiar jest niekorzystny dla zdrowia.
 :::
 
+@klocek wzor-2d {smiles="C=C"} | Eten: wzór strukturalny z wiązaniem podwójnym
+@opis Wzór strukturalny etenu: dwa atomy węgla połączone wiązaniem podwójnym, każdy z dwoma atomami wodoru; wiązanie podwójne to miejsce addycji.
+
+@klocek wzor-2d {smiles="CC=C"} | Propen: wzór strukturalny
+@opis Wzór strukturalny propenu: trzy atomy węgla, wiązanie podwójne między pierwszym i drugim; niesymetryczny alken, dla którego obowiązuje reguła Markownikowa.
+
 ## 3 | Wykład — reguła Markownikowa: dokąd idzie H {#markownikow}
 
 Przy **symetrycznym** alkienie (eten) nie ma dylematu: oba węgle C=C są identyczne. Ale przy **propenie** (CH₂=CH–CH₃) węgle podwójnego wiązania są różne: jeden ma dwa wodory (CH₂=), drugi — tylko jeden (=CH–CH₃).
@@ -264,6 +270,12 @@ Z etenu w przemyśle robi się etanol (hydratacja), polietylen (polimeryzacja), 
 4. Co zobaczysz po dodaniu wody bromowej do etenu, a co po dodaniu do propanu?
 5. Dlaczego odbarwienie wody bromowej nie dowodzi, że to eten (a nie np. etyn)?
 :::
+
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
+@klocek probowki-odczyn {tuby="Alkan + woda bromowa:pomaranczowy:pomaranczowy:brak,Alken + woda bromowa:pomaranczowy:bezbarwny:brak"} | Próba wody bromowej: alkan nie odbarwia, alken odbarwia
+@opis Dwie probówki z pomarańczową wodą bromową: do pierwszej dodano alkan — barwa pozostaje pomarańczowa; do drugiej alken — roztwór odbarwia się, bo brom ulega addycji do wiązania podwójnego. Znacznik PRZED/PO pokazuje fazę próby.
 
 ## 5 | Zadania {#zadania}
 

@@ -60,20 +60,6 @@ stan: "pełna struktura — 2026-10-13, bez audytu W1"
 :::
 :::
 
-## 0.5 | Wykład — powietrze i gazy od zera {#wyklad}
-
-::: karta understand | Wykład — co to znaczy, że powietrze jest mieszaniną
-Powietrze nie jest jedną substancją. To mieszanina gazów: w przybliżeniu 78% azotu, 21% tlenu, prawie 1% argonu i około 0,04% dwutlenku węgla. Do tego dochodzi zmienna para wodna i śladowe gazy. Składniki zachowują swoje właściwości, więc mieszaninę można rozdzielić metodami fizycznymi (np. skraplaniem i destylacją frakcyjną).
-
-Dlaczego to ważne? Tlen potrzebny jest do oddychania i spalania, azot działa jak obojętny „rozcieńczalnik”, a dwutlenek węgla wpływa na klimat i na odczyn wody. Cała lekcja to opis tych gazów przez ich reakcje i sposoby ich wykrywania.
-:::
-
-::: karta understand | W skrócie — trzy próby na gazy
-- **Tlen** — żarząca się drzazga wzbudza się i rozżarza się.
-- **Wodór** — zapalona łuczynka przy wylocie daje trzask (pop).
-- **Dwutlenek węgla** — przepuszczony przez wodę wapienną mąci ją (biały osad węglanu wapnia).
-:::
-
 ## 1 | Powietrze — mieszanina gazów [[basic:E8]] {#sklad}
 
 | Składnik | Udział objętościowy (ok.) | Uwagi |
@@ -147,6 +133,9 @@ Hel, neon, argon, krypton, ksenon, radon — grupa 18. Mają **trwałą konfigur
 | neon Ne | świeci czerwono-pomarańczowo w rurach wyładowczych | reklamy świetlne |
 | argon Ar | najczęstszy w powietrzu z gazów szlachetnych | atmosfera ochronna przy spawaniu, wypełnianie żarówek |
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
 ## 5 | Tlenek węgla(IV) — dwutlenek węgla [[basic:E8]] {#co2}
 
 **Otrzymywanie:**
@@ -213,6 +202,9 @@ BHP: okulary, rękawice; kwas solny jest żrący; z wodorem pracujemy z daleka o
 | tlenek węgla(IV) CO₂ | woda wapienna; płonące łuczywo | woda **mętnieje**; łuczywo **gaśnie** | wylotem **do góry** (cięższy) |
 | azot N₂ | płonące łuczywo | gaśnie, woda wapienna **nie** mętnieje | — |
 
+@klocek zbieranie-gazu {gaz="H2" gazy="H2,O2,CO2"} | Jak zbieramy gaz? Wybierz gaz i sposób, a potem sprawdź werdykt
+@opis Scena zbierania gazu: po lewej kolba z reakcją (pęcherzyki w cieczy, nad nią korek), z niej rurka odprowadzająca prowadzi do naczynia po prawej. Gaz jest bezbarwny, więc zaznaczono go ciemnozielonymi kropkami, a powietrze — szarymi. Chipy wybierają gaz i sposób zbierania: naczynie wylotem do góry (gaz cięższy od powietrza opada na dno i wypycha powietrze), wylotem do dołu (gaz lżejszy zbiera się pod dnem) albo nad wodą (gaz wypiera wodę z odwróconego naczynia). Poprawny wybór napełnia naczynie i pokazuje zielony werdykt; zły — gaz ucieka z naczynia albo rozpuszcza się w wodzie, a werdykt jest czerwony. Wniosek: o sposobie zbierania decyduje gęstość względna d = M/29 (cięższy czy lżejszy od powietrza) i rozpuszczalność w wodzie.
+
 ::: karta warning | Uwaga na „gaśnie”
 Płonące łuczywo gaśnie zarówno w CO₂, jak i w azocie. **Odróżnia je woda wapienna** — mętnieje tylko z CO₂.
 :::
@@ -229,6 +221,13 @@ Płonące łuczywo gaśnie zarówno w CO₂, jak i w azocie. **Odróżnia je wod
 
 ::: karta extra | Spalanie całkowite i niecałkowite
 Przy dostatecznej ilości tlenu węgiel spala się do **CO₂** (C + O₂ → CO₂). Przy **niedoborze tlenu** powstaje **tlenek węgla(II), CO — czad**: 2C + O₂ → 2CO. Czad jest bezbarwny i bezwonny, łączy się z hemoglobiną i blokuje transport tlenu — dlatego potrzebne są sprawne przewody kominowe, wentylacja i czujniki czadu.
+:::
+
+::: karta extra | Spalanie siarki i fosforu — tlenki kwasowe
+Siarka pali się niebieskim płomieniem, a fosfor żółtym: **S + O₂ → SO₂** oraz **4 P + 5 O₂ → 2 P₂O₅**. Oba tlenki są **kwasowe** — w wodzie tworzą roztwory o odczynie kwasowym: **SO₂ + H₂O ⇌ H₂SO₃** (kwas siarkawy), **P₂O₅ + 3 H₂O → 2 H₃PO₄** (kwas fosforowy). Tlenek węgla(II) **CO** i tlenek azotu(II) **NO** z wodą nie reagują — to tlenki obojętne.
+::: ciekawostka
+Fosfor biały samoczynnie zapala się w powietrzu już ok. 30 °C (wartość do weryfikacji), dlatego przechowuje się go pod wodą. Fosfor czerwony jest znacznie trwalszy.
+:::
 :::
 
 @model n01-spalanie-v01 | Spalanie pierwiastków i paliw w tlenie | wybierz substancję — produkt, obserwacje, równanie

@@ -304,3 +304,7 @@ O₃ (Mr = 48) tworzy się w stratosferze z O₂ pod wpływem promieniowania UV.
 ## Notatka dla prowadzącego: granice
 
 Celowo poza zestawami (zgodnie z granicami plików źródłowych): wydajność reakcji i zanieczyszczenia (R09 — jeśli w arkuszu pojawi się „90% teoretycznie", to jedna proporcja ×0,9 — pokaż przy SYM-A2), objętości gazów (etap III), cykliczne węglowodory i halogenopochodne (tor OCJ, nie LKO), metale Sn/Pb/Hg w szeregach (OLIMP w LKO-METALE), analiza jakościowa kationów w systemie (etap III). Wynik wskazówkowy (procent sumy punktów zestawu): ≥75% — gotowość na symulację; 50–74% — powtórka wskazanych plików z post-mortem przed symulacją; <50% — wróć do wykładów plików źródłowych (zestaw jest testem treści, nie naprawą).
+
+## AUDYT W1/W2 — zewnętrzny, blok status LKO (2026-10-14)
+
+Uwaga: zestawy treningowe nie były sprawdzone punkt po punkcie w tym audycie; kontrola kluczy, punktacji i spójności z kanonem do osobnego przebiegu.

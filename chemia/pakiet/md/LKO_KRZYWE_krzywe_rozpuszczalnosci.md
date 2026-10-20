@@ -540,3 +540,7 @@ Osad nad krzywą :: nadmiar substancji stałej, który nie zmieścił się w roz
 
 **Do sprawdzenia:** wartości z tabel A i B (zgodne z ogólnie znanymi danymi, nie pobrane z osobnego źródła w tej sesji); numeracja sesji S6–S7 względem planu Sprintu A; ciekawostki poza tabelą źródłową.
 :::
+
+## AUDYT W1/W2 — zewnętrzny, blok status LKO (2026-10-14)
+
+Nieprzyjęte: trzy kroki (odczyt, skalowanie do masy wody, odjęcie ilości pozostającej) są w lekcji; przykład 110 → 32 g na 100 g wody daje 78 g (poprawnie); pułapka „110%” jest w lekcji.

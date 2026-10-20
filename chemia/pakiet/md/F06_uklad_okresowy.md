@@ -3,7 +3,7 @@ kod: F06
 uid: CHE.01.F06.uklad_okresowy
 tytul: Układ okresowy
 opis: Okres, grupa, blok · elektrony walencyjne grup głównych · metale, niemetale, półmetale · rodziny · wodór · trendy: promień, elektroujemność, energia jonizacji, charakter metaliczny
-kicker: F06 · FUNDAMENTY · MASTER v1.1
+kicker: F06 · FUNDAMENTY · MASTER v1.0
 lead: Trzecia lekcja fazy B. Wiesz już, że pierwiastek wyznacza liczba protonów Z (F04, F05). Teraz uczymy się czytać układ okresowy jak mapę:
 lead: z „adresu” pierwiastka — okresu i grupy — odczytujemy budowę zewnętrznej powłoki i przewidujemy, jak pierwiastek się zachowa.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
@@ -30,7 +30,7 @@ stopka: **CHEMIA F06 v1.1 MASTER** · Układ okresowy · 2026
 - contest | <b>Ponad LO:</b> rozwijane bloki „poziom akademicki” — przycisk w nagłówku lekcji
 :::
 
-::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to (ok. 35 min)
 1. **[§0.4](#diagnoza)** — diagnoza: odpowiedz, zanim zaczniesz czytać.
 2. **[§1](#mapa)–[§3](#walencyjne)** — układ jako mapa, okres i grupa, elektrony walencyjne.
 3. **[§4](#metale)–[§5](#rodziny)** — metale, niemetale, półmetale i rodziny.
@@ -214,6 +214,9 @@ Zn — cynk (gr. 12, okres 4) · Br — brom (17, 4) · I — jod (17, 5) · Ag 
 | 17 | 7 | fluorowce (halogeny) | I (wobec metali i wodoru); Cl wobec tlenu: I, III, IV, VI, VII | F⁻, Cl⁻ |
 | 18 | 8 (He: 2) | gazy szlachetne (helowce) | w szkolnym modelu nie tworzą związków (Xe i Kr tworzą nieliczne, np. XeF₂) | brak |
 
+@klocek diagram-bohra {z="17"} | Elektrony walencyjne na powłoce zewnętrznej: wybierz pierwiastek suwakiem Z
+@opis Model Bohra: pośrodku czerwone jądro z napisem „Zp” (liczba protonów), wokół niego przerywane okręgi powłok K, L, M (i N) z kropkami-elektronami; kropki powłoki zewnętrznej (walencyjnej) są w kolorze akcentu, wewnętrzne szare. Suwak Z zmienia pierwiastek, przyciski dodają lub odbierają elektron: kation oddaje elektron z powłoki zewnętrznej (kropka odlatuje), anion przyjmuje elektron (kropka dolatuje). Obok liczby protonów, elektronów, ładunek i liczba elektronów na powłokach. Wniosek: Na ma 2, 8, 1 elektronów, po oddaniu jednego ma 2, 8 (jak Ne); Cl ma 2, 8, 7, po przyjęciu jednego 2, 8, 8 (jak Ar); liczba protonów się nie zmienia.
+
 ::: karta core | Elektrony walencyjne → kierunek tworzenia jonu
 Metale grup głównych **oddają** elektrony walencyjne → **kation** o ładunku = liczbie oddanych elektronów (Na → Na⁺, Mg → Mg²⁺, Al → Al³⁺). Niemetale grup 15–17 w związkach z metalami **przyjmują** brakujące do oktetu elektrony → **anion** (Cl: 7 + 1 = 8 → Cl⁻; O: 6 + 2 → O²⁻). Liczenie elektronów w jonie: e = Z − q (F05).
 :::
@@ -382,6 +385,9 @@ W okresie 2 energia jonizacji nie rośnie równo: **Be (899 kJ/mol) > B (801)** 
 **Metale przejściowe mają zmienne stopnie utlenienia** (Fe²⁺/Fe³⁺, Cu⁺/Cu²⁺, Mn od +II do +VII), bo mają elektrony na dwóch podpowłokach — ns i (n−1)d — o zbliżonych energiach; w wiązaniach mogą uczestniczyć elektrony obu. Dlatego reguła „elektrony walencyjne = numer grupy − 10” ich nie obejmuje.
 :::
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
 ## 9 | Doświadczenia — podobieństwo w grupie i trend reaktywności [[basic:E8]] {#doswiadczenia}
 
 ::: dosw | Doświadczenie 1 — Reaktywność litowców z wodą (pokaz nauczyciela)
@@ -425,23 +431,6 @@ BHP: woda chlorowa i bromowa — pod dygestorium, w rękawicach i okularach; chl
 ::: karta understand | Obserwacja ≠ wniosek
 - **Obserwacja:** sód „biega” po wodzie, wydziela się gaz, fenoloftaleina malinowieje.
 - **Wniosek:** sód reaguje z wodą, powstaje zasada (NaOH) i wodór. Nazwa gazu to wniosek — potwierdza go próba palności („pyk”).
-:::
-
-## 9.5 | Nie myl! {#nie-myl}
-
-::: nie-myl | Pojęcia, które łatwo pomylić
-| Para | Dlaczego łatwo pomylić | Jak rozstrzygnąć |
-|---|---|---|
-| okres / grupa | oba „numery” w układzie | okres — wiersz, liczba powłok; grupa — kolumna, (dla grup głównych) elektrony walencyjne |
-| numer grupy / liczba e⁻ walencyjnych | w grupach 13–18 nie są równe | e⁻ walencyjne = numer grupy − 10 (Cl, gr. 17 → 7) |
-| Z / masa atomowa | obie liczby w polu pierwiastka | Z — liczba całkowita (protony), porządkuje układ; masa atomowa — średnia (u) |
-| metal / niemetal | granica nie jest ostra | metale — po lewej, przewodzą prąd; niemetale — prawy górny róg; półmetale na granicy |
-| wodór / litowce | ta sama grupa 1 | wodór to niemetal i gaz; litowce to metale |
-| promień w grupie / w okresie | trendy w różne strony | w dół grupy rośnie (więcej powłok); w prawo okresu maleje (silniejsze przyciąganie jądra) |
-:::
-
-::: karta understand | W skrócie — jak to zastosować w zadaniu
-Z samego położenia pierwiastka wyciągniesz cztery informacje. **Okres** → liczba powłok (S, okres 3 → 3 powłoki). **Grupa** → elektrony walencyjne (S, grupa 16 → 6). **Położenie względem „schodków”** → metal czy niemetal (S — niemetal). **Elektrony walencyjne** → typowy jon: metale grup 1–2 i glin oddają elektrony (Na⁺, Mg²⁺, Al³⁺), niemetale grup 15–17 przyjmują do oktetu (N³⁻, O²⁻, S²⁻, Cl⁻). Sprawdzenie: jon ma zwykle konfigurację najbliższego gazu szlachetnego (Na⁺ jak Ne, Cl⁻ jak Ar).
 :::
 
 ## 10 | Klinika błędów {#klinika}
@@ -963,13 +952,13 @@ Skala Paulinga :: skala elektroujemności
 
 ## 17 | System powtórek {#powtorki}
 
-Kolejność powtórki (we własnym tempie):
-
-1. karta z [§13](#powtorka) i ćwiczenia A
-2. fiszki
-3. ćwiczenia B i model układu: tryby „e⁻ walencyjne” i „promień atomu”
-4. test z [§12](#test)
-5. F06 + F07 + F08 razem — położenie ↔ konfiguracja
+| Kiedy | Ile | Co |
+|---|---|---|
+| po lekcji | 20 min | karta z [§13](#powtorka) i ćwiczenia A |
+| po 1 dniu | 10 min | fiszki |
+| po 3 dniach | 15 min | ćwiczenia B i model układu: tryby „e⁻ walencyjne” i „promień atomu” |
+| po tygodniu | 20 min | test z [§12](#test) |
+| po F08 | 25 min | F06 + F07 + F08 razem — położenie ↔ konfiguracja |
 
 ## A | Dodatek A — mosty i co dalej {#mosty}
 

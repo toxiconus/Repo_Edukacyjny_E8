@@ -10,7 +10,7 @@ poglebia: "LKO-ORG06; LKO-ORG08"
 wlasciciel: "chemia olimpijska LKO"
 zrodla: "Zakres olimpiady kuratoryjnej (etap III) + podstawa programowa"
 opis: "Cukry proste i złożone: glukoza, sacharoza, skrobia — fotosynteza, fermentacja alkoholowa, hydroliza oraz próby rozróżniające (Trommera, jodowa)."
-stan: "pełna struktura — 2026-10-13, bez audytu W1"
+stan: "pełna struktura — 2026-10-13; uzupełnienie treści (aldoza/ketoza, sacharoza, fermentacja mlekowa, CO₂, wydajność, pułapki) — 2026-10-14, bez audytu W1"
 kicker: "ORG07 · cukry"
 lead: "Trzy drogi jednej cząsteczki: glukoza powstaje w liściu, daje energię komórce i zamienia się w wino — wszystko trzema zbilansowanymi równaniami."
 plakietki: ["cukry", "fermentacja"]
@@ -69,9 +69,6 @@ Lekcja spina serię organiki: fermentacja zamyka drogę glukoza → etanol → k
 :::
 
 ## 1 | Wykład — cukry: klasyfikacja, wzory, „węglowodany" {#klasyfikacja}
-@klocek wzor-2d {smiles="OCC(O)C(O)C(O)C(O)C=O", grupa="CHO"} | Glukoza C₆H₁₂O₆ w formie łańcuchowej: grupa aldehydowa i pięć grup –OH
-@opis Sześć węgli w łańcuchu, na jednym końcu grupa –CHO, na pozostałych pięć grup –OH. Ramka obejmuje grupę aldehydową. Wniosek: liczne grupy –OH czynią glukozę dobrze rozpuszczalną w wodzie; grupa –CHO odpowiada za redukcję Cu(OH)₂ w próbie Trommera. Rysunek przedstawia formę łańcuchową; w roztworze dominuje forma pierścieniowa.
-
 
 **Cukry (sacharydy, węglowodany)** to związki organiczne zbudowane z węgla, wodoru i tlenu, o wzorach, w których H i O zwykle stoją w stosunku jak w wodzie. Stąd historyczna nazwa: **Cₙ(H₂O)ₘ** — „węgle + woda". Nazwa to relikt: w cukrze **nie ma** wolnego węgla ani cząsteczek wody — jest tylko proporcja atomów. Glukoza: C₆(H₂O)₆ = **C₆H₁₂O₆**; sacharoza: C₁₂(H₂O)₁₁ = **C₁₂H₂₂O₁₁**. Wzór formalny nie może mylić: sacharoza ma **22** atomy H, a nie 24 (1H₂O) — odszczepienie wody przy łączeniu dwóch cukrów prostych kosztowało dwa wodoru i jeden tlen.
 
@@ -97,6 +94,20 @@ Jeśli zadanie pyta „ile wody jest w glukozie" — odpowiedź brzmi: **żadnej
 ::: karta extra | Celuloza — rekordzista planety
 Celuloza jest uważana za **najliczniejszy związek organiczny Ziemi**: ściany komórkowe wszystkich roślin, drewno, bawełna (niemal czysta celuloza), papier. Człowiek jej **nie trawi** — brakuje enzymu celulazy, więc „błonnik" przechodzi przez nas bez strawienia (choć pożytecznie dla jelit). Przeżuwacze radzą sobie dzięki symbiotycznym mikroorganizmom w żołądku — krowa odzyskuje energię z trawy dzięki najemcom enzymatycznym. Ten sam polimer: papierowy zeszyt i krowi żołądek.
 :::
+
+::: karta understand | Aldoza, ketoza i budowa glukozy
+Monosacharydy dzielimy na **aldozy** (mają grupę aldehydową –CHO, np. glukoza — aldoheksoza) i **ketozy** (mają grupę ketonową, np. fruktoza — ketoheksoza). Glukoza w formie łańcuchowej ma grupę aldehydową i pięć grup –OH; w roztworze wodnym występuje głównie w formach pierścieniowych. Niewielka część formy łańcuchowej pozostaje w równowadze i dzięki niej daje dodatnią próbę Trommera. Nie pisz, że każda cząsteczka glukozy ma stale wolną grupę aldehydową.
+:::
+
+::: karta understand | Dlaczego sacharoza nie redukuje
+W sacharozie wiązanie glikozydowe łączy oba atomy węgla anomerycznego glukozy i fruktozy. Nie ma więc wolnej grupy hemiacetalowej, która mogłaby otworzyć pierścień do formy aldehydowej. Dlatego sacharoza nie daje dodatniej próby Trommera ani Tollensa, dopóki nie zostanie zhydrolizowana.
+:::
+
+@klocek wzor-2d {smiles="OCC(O)C(O)C(O)C(O)C=O"} | Glukoza w formie łańcuchowej: grupa aldehydowa i pięć grup –OH
+@opis Wzór strukturalny glukozy w formie łańcuchowej: sześć atomów węgla w łańcuchu, grupa aldehydowa –CHO na jednym końcu i grupy –OH przy pozostałych atomach węgla (poza pierwszym); forma łańcuchowa tłumaczy własności aldehydowe glukozy w próbach redukcyjnych.
+
+@klocek haworth {cukier="alfa-glukoza"} | Forma pierścieniowa cukrów (wzór Hawortha): α i β glukoza, fruktoza — ilustracja pomocnicza
+@opis Pierścień cukru narysowany w perspektywie (pogrubiona krawędź jest z przodu), z tlenem w pierścieniu zaznaczonym na czerwono i grupami –OH, –H oraz –CH₂OH nad i pod płaszczyzną. Przyciski przełączają α-D-glukopiranozę (OH przy C1 w dół), β-D-glukopiranozę (OH przy C1 w górę) i β-D-fruktofuranozę (pierścień pięcioczłonowy); formy α i β różnią się tylko położeniem –OH przy węglu anomerycznym. Ilustracja pomocnicza do zrozumienia, że glukoza w roztworze występuje głównie w postaci pierścieniowej.
 
 ## 2 | Wykład — trzy drogi glukozy: fotosynteza, oddychanie, fermentacja {#trzy-drogi}
 
@@ -143,6 +154,14 @@ Fermentacja to metabolizm **beztlenowy**: drożdże w osypanych powietrzem warun
 Miód to w przeważającej części **glukoza i fruktoza** — czyli produkt hydrolizy sacharozy („inwersja"). W ulu enzym (inwertaza) i lekko kwaśne środowisko rozkładają nektarową sacharozę; imię „cukier inwertowany" nosi też przemysłowy odpowiednik w syropach i miodach sztucznych. Skutek praktyczny: glukoza i fruktoza są lepiej rozpuszczalne i słodsze — miód nie krystalizuje (a jeśli tak — czysta krystalizacja glukozy, wystarczy ciepła łaźnia wodna).
 :::
 
+::: karta extra | Drugi ważny typ fermentacji — mlekowa
+W fermentacji mlekowej glukoza przekształca się w kwas mlekowy: C₆H₁₂O₆ → 2C₃H₆O₃. Zachodzi m.in. przy produkcji jogurtu i kiszeniu kapusty oraz ogórków. Nie powstaje wtedy etanol ani CO₂ jako główne produkty.
+:::
+
+::: karta understand | Jak wykryć CO₂ — woda wapienna
+CO₂ + Ca(OH)₂ → CaCO₃↓ + H₂O. Woda wapienna mętnieje. Mętnienie wskazuje na CO₂, ale wynik interpretujemy w kontekście doświadczenia. Zapach ani sam gaz nie wystarczają do identyfikacji.
+:::
+
 ## 3 | Wykład — hydroliza cukrów i próby rozróżniające {#hydroliza-proby}
 
 **Hydroliza** — rozkład wodą (katalizowany kwasem lub enzymem) — jest dla disacharydów i polisacharydów drogą **do cukrów prostych**:
@@ -183,7 +202,18 @@ Trzy kategorie — trzy różne próby. Skrobia: próbę Trommera **przechodzi n
 Laktoza (cukier mleczny) to disacharyd zbudowany z glukozy i galaktozy. U niemowląt enzym (laktaza) rozkłada ją bez trudu; u znacznej części dorosłych produkcja laktazy zanika — spożycie mleka kończy się dyskomfortem trawiennym (nietolerancja laktozy; częstość w populacjach różni się między regionami świata — wartości rozbieżne w źródłach; do weryfikacji). Chemia ta sama, enzymologia — różna: znowu dowód, że o trawieniu decyduje katalizator, nie substrat.
 :::
 
+::: karta understand | W skrócie — fruktoza i próba Trommera (pułapka)
+Fruktoza ma grupę ketonową, ale w środowisku zasadowym przechodzi przez formy enolowe w związki zawierające grupę aldehydową. Dlatego daje dodatnią próbę Trommera mimo ketonowej budowy w formie łańcuchowej — to typowa pułapka konkursowa.
+:::
+
+::: karta warning | Czego nie wnioskować z próby Trommera?
+Dodatnia próba Trommera nie dowodzi, że substancja to glukoza. Dają ją także fruktoza, maltoza, laktoza i inne cukry redukujące. Próba wskazuje właściwości redukujące, a nie identyfikuje jednego konkretnego cukru.
+:::
+
 ## 4 | Doświadczenie {#dosw}
+
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie), pierwsza pomoc (oparzenie, skaleczenie, wdychanie gazu). Wniosek: zasady są takie same przy każdym doświadczeniu i trzeba je znać przed rozpoczęciem pracy.
 
 ::: dosw | Doświadczenie 1 — Sacharoza przed i po hydrolizie: próba Trommera jako detektyw
 **Problem:** Jak udowodnić w probówce, że sacharoza pod wpływem kwasu i ciepła ulega hydrolizie do cukrów redukujących?
@@ -271,6 +301,36 @@ Z **34,2 g sacharozy** (M = 342 g/mol) przeprowadzono pełną hydrolizę (wydajn
 (e) Substraty: 34,2 g sacharozy + woda 0,1 mol · 18 = 1,8 g → 36 g. Produkty rzeczywiste: 13,8 g etanolu + 13,2 g CO₂ = 27 g; nierozłożona reszta (25% cukrów) = 0,1 mol · 180 = 9 g. Suma: 27 + 9 = 36 g ✔ — bilans domyka się dokładnie (1 pkt).
 :::
 
+## 6a | Rachunki fermentacyjne — CO₂ i wydajność
+
+::: karta exam | Przykład — masa etanolu i objętość CO₂
+Z 18,0 g glukozy (M = 180 g/mol): n = 18,0/180 = 0,10 mol. Z równania: 1 mol glukozy → 2 mol etanolu + 2 mol CO₂, więc n(etanolu) = 0,20 mol, n(CO₂) = 0,20 mol.
+Masa etanolu: 0,20 · 46 = **9,2 g**. Objętość CO₂ (warunki normalne): 0,20 · 22,4 = **4,48 dm³**.
+:::
+
+::: karta understand | Rzeczywisty proces fermentacji
+Fermentacja rzadko daje ilość teoretyczną, ponieważ część cukru pozostaje nieprzereagowana, drożdże zużywają część substratu na własne procesy życiowe, etanol może parować, a proces hamuje zbyt wysokie stężenie alkoholu. Jeżeli otrzymano m_rzecz etanolu zamiast m_teor, wydajność wynosi η = m_rzecz/m_teor · 100%.
+:::
+
+::: adv | Zadanie D — rachunek z fermentacji | poziom ambitny
+Z 90 g glukozy otrzymano 18,4 g etanolu. Oblicz wydajność procesu.
+
+::: odp | Pokaż klucz
+n(glukozy) = 90/180 = 0,50 mol → teoretycznie 2 · 0,50 = 1,00 mol etanolu → m_teor = 46 g. η = 18,4/46 · 100% = **40%**.
+:::
+:::
+
+::: adv | Zadanie E — hydroliza i próba Trommera | poziom ambitny
+Sacharoza nie daje dodatniej próby Trommera. Po hydrolizie próbkę zobojętniono i ponownie wykonano próbę.
+a) Co zaobserwujesz po hydrolizie?
+b) Dlaczego trzeba zobojętnić próbkę przed próbą Trommera?
+
+::: odp | Pokaż klucz
+a) Po hydrolizie powstają glukoza i fruktoza, więc po ogrzaniu pojawia się ceglastoczerwony osad Cu₂O.
+b) Hydrolizę prowadzi się często w środowisku kwaśnym, a próba Trommera wymaga środowiska zasadowego. Nadmiar kwasu trzeba więc usunąć przez zobojętnienie.
+:::
+:::
+
 ## 7 | Fiszki
 
 ::: fiszki
@@ -340,6 +400,19 @@ płyn Lugola :: roztwór jodu (z jodkiem potasu) — próba na skrobię: granato
 fotosynteza :: endotermiczne budowanie glukozy z CO₂ i wody na świetle, przy chlorofilu; źródło tlenu atmosferycznego.
 :::
 
+## 10 | Pułapki konkursowe — uzupełnienie
+
+::: karta error | Dopisane pułapki
+- Każdy cukier redukujący jest glukozą — nieprawda; redukują także fruktoza, maltoza i laktoza.
+- Fruktoza nie redukuje, bo jest ketozą — nieprawda w środowisku zasadowym.
+- Sacharoza daje próbę Trommera — nie przed hydrolizą.
+- W fermentacji powstaje tlen — powstają etanol i CO₂.
+- Jedna glukoza daje jedną cząsteczkę etanolu — współczynnik wynosi 2.
+- Woda wapienna wykrywa każdy gaz — mętnienie wskazuje na CO₂, a wynik zależy od kontekstu.
+- Próba Trommera jest dodatnia w środowisku kwaśnym — przed próbą trzeba zapewnić środowisko zasadowe.
+- Fermentacja i oddychanie są tym samym procesem — fermentacja nie prowadzi do pełnego utlenienia glukozy, oddychanie tlenowe do CO₂ i H₂O.
+:::
+
 ## Do weryfikacji
 
 - **ORG07:** stosunki słodkości cukrów — w lekcji tylko jakościowo; liczby różnią się między źródłami, świadomie niepodane.
@@ -348,3 +421,27 @@ fotosynteza :: endotermiczne budowanie glukozy z CO₂ i wody na świetle, przy 
 - **ORG07:** zapis próby Trommera dla glukozy („glukonian" schematycznie) — produkt utlenienia glukozy dokładniej to glukonian miedzi(I)/kwas glukonowy zależnie od warunków; na poziomie konkursu wystarcza obserwacja Cu₂O — nazwa produktu organicznego świadomie niewymagana w kluczu.
 - **ORG07:** rachunki: 90 g → 46 g etanolu, 22,4 dm³ CO₂; adv5: 1,5 mol → 2,1 mol etanolu (96,6 g), 47,04 dm³ CO₂; adv6: 0,1 mol sacharozy → 0,4 mol etanolu teor → 0,3 mol (13,8 g), 6,72 dm³, 13,2 g CO₂; bilans łańcucha 36 g = 27 + 9 ✔ — wszystkie sprawdzone.
 - **ORG07:** M(Cu₂O) = 144 g/mol (Cu 64 z B1) ✔; jednostka skrobi 162 = 72 + 10 + 80 ✔.
+
+## AUDYT W1/W2 — zewnętrzny, LKO-ORG07 (2026-10-14)
+
+Zastosowano: brak zmian treści.
+
+Nieprzyjęte (sprawdzone w pliku): próba Trommera wymaga świeżo strąconego Cu(OH)₂, ogrzewania i daje ceglastoczerwony Cu₂O — jest w sekcji o próbach; sacharoza przed hydrolizą nie redukuje Cu(OH)₂ — jest w karcie „Dlaczego sacharoza nie redukuje”; fruktoza jako ketoza przechodzi w środowisku zasadowym w formy enolowe z grupą aldehydową, więc daje dodatnią próbę — jest w lekcji; fermentacja mlekowa jest w karcie rozszerzenia; rozróżnienie trzech prób (jod, Trommer, hydroliza) i tabela „Cukier — próba Trommera — dlaczego” są w lekcji; zadanie z próbami podaje obserwacje, nie tylko „dodatnia/ujemna”.
+
+## AUDYT W1/W2 — zewnętrzny, blok organiczny (2026-10-14)
+
+Zastosowano: brak zmian treści.
+
+Nieprzyjęte (sprawdzone w pliku): Sześć punktów audytu (obserwacja/wniosek, ogrzewanie w próbie Trommera, sacharoza przed hydrolizą, glukoza i fruktoza po hydrolizie, próba jodowa dla skrobi, wydajność względem właściwego produktu) jest spełnionych w lekcji: wydajność 80% stosowano do obu produktów (etanol 73,6 g, CO₂ 35,84 dm³). Nic do zmiany.
+
+## AUDYT W1/W2 — kolejny przebieg zewnętrzny (2026-10-14)
+
+Zastosowano: brak zmian treści.
+
+Nieprzyjęte (sprawdzone w pliku): sześć pułapek z audytu jest w lekcji — próba jodowa dla skrobi, sacharoza nieredukująca przed hydrolizą, hydroliza do glukozy i fruktozy, Trommer z ogrzewaniem i zmianą osadu, bilans atomów w fermentacji, fotosynteza osobno w karcie „trzy drogi glukozy”. Rozdzielenie poziomu podstawowego i ambitnego jest w lekcji (poziomy E8/contest). Do osobnego przebiegu: pełna kontrola kluczy zadań.
+
+## AUDYT W1/W2 — wynik zewnętrzny (2026-10-14)
+
+Zastosowano: brak zmian treści.
+
+Nieprzyjęte: oznaczenie „W1 FULL” nie zostało wprowadzone — pełny przegląd linia po linii nie był wykonany, a stan lekcji pozostaje „bez audytu W1”. Sprawdzone: masy molowe glukozy (180 g/mol) i sacharozy (342 g/mol), nazwa „węglowodany” z wyjaśnieniem wzoru Cₙ(H₂O)ₘ, próba Trommera i próba jodowa.

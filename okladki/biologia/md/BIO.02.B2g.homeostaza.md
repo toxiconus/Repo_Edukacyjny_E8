@@ -76,6 +76,9 @@ Każda regulacja homeostatyczna działa w **pętli zamkniętej** z 5 elementami:
 @klocek petla-regulacji {zestaw="temperatura"} | Pętla regulacji z pięciu elementów: przykład temperatury ciała
 @opis Pięć pól ułożonych w pętlę ze strzałkami: bodziec (temperatura rośnie), receptor (termoreceptory), ośrodek (podwzgórze), efektor (gruczoły potowe i naczynia skórne), efekt (oddawanie ciepła, temperatura spada), po którym pętla wraca do bodźca. Impuls krąży po strzałkach, a pośrodku napis „sprzężenie ujemne — efekt cofa odchylenie”. Pokazuje budowę pętli z tej lekcji.
 
+@viz sprzezenie-zwrotne | Pętla sprzężenia zwrotnego | wybierz sytuację i przejdź pętlę przyciskiem „krok”
+@opis U góry przyciski siedmiu sytuacji: temperatura ↑, temperatura ↓, glukoza ↑, glukoza ↓, wody za mało, wody za dużo i poród (dodatnie). Pod nimi pięć zaokrąglonych prostokątów połączonych w pętlę: 1. bodziec, 2. receptor, 3. ośrodek, 4. efektor, 5. odpowiedź; ostatnia, przerywana strzałka wraca do bodźca — zielona przy sprzężeniu ujemnym, czerwona przy dodatnim — z napisem „ujemne: odpowiedź przeciwdziała zmianie” albo „dodatnie: odpowiedź nasila zmianę”. Pod pętlą poziomy pasek z kreską „norma” i kropką oznaczającą parametr (np. temperaturę ciała): przy sprzężeniu ujemnym kropka po kolejnych krokach wraca do normy, przy dodatnim — oddala się coraz bardziej. Przycisk „krok” podświetla kolejne elementy i pokazuje opis: konkretny receptor, ośrodek, efektor i odpowiedź dla wybranej sytuacji. Dla porodu: bodziec — nacisk główki na szyjkę macicy; receptor — receptory rozciągnięcia w szyjce; ośrodek — podwzgórze; efektor — mięsień macicy; odpowiedź — silniejsze skurcze, które zwiększają nacisk (dodatnie). Wniosek: wszystkie regulacje homeostazy mają ten sam schemat pięciu elementów, a w ujemnym sprzężeniu zwrotnym odpowiedź cofa zmianę, która ją wywołała; w dodatnim — wzmacnia ją aż do zakończenia procesu.
+
 ## 3 | Sprzężenie ujemne vs dodatnie {#s3}
 
 **Sprzężenie zwrotne ujemne** (negative feedback) — odchylenie od normy wywołuje **reakcję przeciwną** która przywraca normę. To **główny mechanizm homeostazy** — większość procesów organizmu.
@@ -188,6 +191,9 @@ Każda regulacja homeostatyczna działa w **pętli zamkniętej** z 5 elementami:
 ::: mnemonik
 **Insulina = I-dół (obniża). Glukagon = Góra (podnosi).** Insulina uwalniana po posiłku („bo cukru za dużo"), glukagon w głodzie („bo cukru za mało"). To reguła klasyczna z lekcji B2e — tu się z nią zgadzamy, nie powtarzamy szczegółów.
 :::
+
+@viz glukoza-wykres | Stężenie glukozy po posiłku: osoba zdrowa i osoba z cukrzycą | kliknij punkt, przełączaj krzywe
+@opis Wykres liniowy: oś pozioma — czas po posiłku od 0 do 180 minut, oś pionowa — stężenie glukozy we krwi w mg/dl, z zielonkawym pasem zakresu prawidłowego na czczo (orientacyjnie 70–99). Krzywa osoby zdrowej (zielona) startuje ok. 85, osiąga szczyt ok. 135 po 30 minutach i wraca do ok. 86 po 180 minutach. Krzywa osoby z cukrzycą (czerwona) startuje już ok. 130, rośnie wyżej i później (ok. 240 po 60 minutach) i powoli opada, po 180 minutach wciąż ok. 165. Przyciski włączają i wyłączają każdą krzywą, kliknięcie punktu pokazuje wartość i wyjaśnienie (np. „insulina działa — stężenie spada”). Wniosek: u osoby zdrowej insulina szybko sprowadza glukozę do normy, a przy cukrzycy stężenie jest wysokie już na czczo i długo nie wraca do normy.
 
 ## 7 | Regulacja wody {#s7}
 

@@ -30,7 +30,7 @@ stopka: **CHEMIA REV01 v1.0** · Powtórka fundamentów z klasy 7 · 2026
 - extra | <b>Dla ambitnych:</b> trendy okresowe, elektroujemność i polaryzacja, rozpuszczalność, zapis jonowy, podpowłoki, izobary, P₄O₁₀, wyjątki od oktetu, alotropia
 :::
 
-::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to (ok. 45 min)
 1. **[§0.4](#diagnoza)** — diagnoza: odpowiedz, zanim zaczniesz czytać.
 2. **[§2](#atom)–[§3](#uklad)** — atom, jon, układ okresowy.
 3. **[§4](#wartosciowosc)–[§5](#wzory)** — wartościowość i wzory (kluczowy temat).
@@ -100,22 +100,6 @@ Atom może tworzyć wiązania. **Wartościowość mówi, iloma „rękami” ato
 :::
 :::
 
-## 0.5 | Wykład — chemia od zera {#wyklad}
-
-::: karta understand | Wykład — po co chemikowi słownik i reguły
-Chemia opisuje substancje (ich skład i właściwości) oraz przemiany, w których jedne substancje zamieniają się w inne. Żeby o tym mówić precyzyjnie, potrzebujemy kilku pojęć: pierwiastek to rodzaj atomów o tej samej liczbie protonów, związek to substancja złożona z różnych pierwiastków w stałym stosunku, a mieszanina to zlepek substancji, które nie łączą się chemicznie.
-
-Ta powtórka porządkuje to, co wiesz z klasy 7: bezpieczeństwo w pracowni, budowę atomu, układ okresowy, wartościowość, wzory i równania. Każdy z tych tematów jest szczegółowo rozwinięty w kolejnych lekcjach bloku F.
-:::
-
-::: karta understand | W skrócie — pięć kroków przy każdym zadaniu chemicznym
-1. Nazwij, czego dotyczy zadanie (substancja, reakcja, obliczenie).
-2. Zapisz dane i jednostki.
-3. Wybierz regułę (wartościowość, oktet, bilans masy).
-4. Wykonaj obliczenie lub zapis.
-5. Sprawdź wynik: czy masa się zgadza, czy suma stopni jest zerem, czy sens fizyczny jest poprawny.
-:::
-
 ## 1 | BHP i szkło laboratoryjne [[basic:E8]] {#bhp}
 
 ::: karta core | Zasady obowiązkowe
@@ -151,10 +135,6 @@ Rozcieńczanie kwasu wydziela dużo ciepła. Woda wlana do stężonego kwasu mo�
 | Moździerz | rozdrabnianie substancji stałych |
 | Eksykator | przechowywanie w suchym środowisku |
 | Chłodnica | skraplanie par w destylacji |
-
-::: karta understand | W skrócie: po co atomowi dwie liczby
-Liczba atomowa Z mówi, ile jest protonów, a więc jaki to pierwiastek. Liczba masowa A to suma protonów i neutronów, czyli to, ile „waży” jądro. Te dwie liczby nie są tym samym: ten sam pierwiastek może mieć różną liczbę neutronów (izotopy).
-:::
 
 ## 2 | Budowa atomu, izotopy, jony [[basic:E8]] {#atom}
 
@@ -235,10 +215,6 @@ To wyjaśnia, dlaczego metale oddają elektrony, a niemetale je przyjmują.
 :::
 
 **Skąd nazwy:** *atomos* (gr.) — „niepodzielny”; *ion* — „wędrujący” (jony wędrują w roztworze podczas przepływu prądu); kation — idzie ku katodzie (+), anion — ku anodzie (−); alkaliczne — od alkaliów (zasad: NaOH, KOH); fluorowce (halogeny) — „tworzące sole” (NaCl); chalkogeny — „tworzące rudy”; gazy szlachetne — dawniej uważane za niemal niereaktywne.
-
-::: karta understand | W skrócie: wartościowość to liczba „haczyków”
-Każdy atom ma tyle „haczyków” do łączenia się z innymi, ile wynosi jego wartościowość. Gdy połączysz dwa atomy, haczyki się łączą. Dlatego w wzorze NaCl sód i chlor mają po jednym haczyku, a w H₂O tlen ma dwa, bo łączy się z dwoma atomami wodoru.
-:::
 
 ## 4 | Wartościowość — kluczowy temat [[basic:E8]] {#wartosciowosc}
 
@@ -413,10 +389,13 @@ W szkolnym modelu atomy tworzą wiązania, bo układ elektronów w związku jest
 ::: karta extra | Elektroujemność i polaryzacja
 **Elektroujemność** — miara zdolności atomu do przyciągania elektronów w wiązaniu; ogólnie rośnie w prawo i w górę, największa — **fluor**. To trend, nie automat: duża różnica elektroujemności **zwykle sprzyja** wiązaniu o silnym charakterze jonowym, mała — kowalencyjnemu; to wskazówka, nie test rozstrzygający. W klasie 7/8 najpierw stosuj prostszą regułę (metal + niemetal → jonowe; niemetale → kowalencyjne).
 Polaryzacja: niespolaryzowane — takie same atomy (H₂, Cl₂); spolaryzowane — różne niemetale (HCl, H₂O): para elektronowa silniej przyciągana przez jeden atom.
-:::
 
-::: karta understand | W skrócie: równanie to bilans, jak rachunek w sklepie
-Po obu stronach strzałki musi być tyle samo każdego pierwiastka, jak w rachunku: ile wchodzi, tyle wychodzi. Nie zmieniamy indeksów we wzorach (to tak, jakby zmienić cenę towaru); dopisujemy tylko współczynniki (ile sztuk bierzemy).
+**Progi szkolne (skala Paulinga, Δχ = różnica elektroujemności dwóch atomów w wiązaniu):**
+- **Δχ < 0,4** — wiązanie niepolarne kowalencyjne. Przykład: H₂ (Δχ = 0). CH₄: Δχ(C–H) = 2,55 − 2,20 = 0,35, czyli też niepolarne.
+- **0,4 ≤ Δχ ≤ 1,7** — wiązanie spolaryzowane kowalencyjne. Przykłady: HCl (Δχ = 3,16 − 2,20 = 0,96), H₂O (Δχ(O–H) = 3,44 − 2,20 = 1,24).
+- **Δχ > 1,7** — wiązanie jonowe. Przykład: NaCl (Δχ = 3,16 − 0,93 = 2,23).
+
+Skąd progi: próg 0,4 oddziela wiązania „prawie równe" od „przesuniętych" (powstają bieguny); próg 1,7 oddziela „przesunięte" od „oddanych" (elektron przechodzi w całości). Progi są umowne — skala szkolna, nie ostra granica fizyczna.
 :::
 
 ## 7 | Równania reakcji [[basic:E8]] {#rownania}
@@ -648,7 +627,7 @@ Poprawka wzoru jest słuszna, ale to **nie** bilansowanie. Wzór Ca(OH)₂ wynik
 ## 12 | Obliczenia i doświadczenia konkursowe [[exam:KONKURS]] {#konkurs}
 
 ::: karta exam | Jak wygląda arkusz etapu szkolnego
-Konkurs chemiczny Lubelskiego Kuratora Oświaty (zakres 2025/26, punkt odniesienia): etap szkolny — **60 minut, 40 punktów**, treści podstawy programowej pkt I–VII (substancje, budowa materii, reakcje, tlen i wodór, woda i roztwory, wodorotlenki i kwasy, sole), prosty kalkulator dozwolony. Typy zadań: zamknięte, prawda–fałsz, dobieranie, luki, otwarte, **obliczeniowe i problemowe, opis doświadczeń** (przebieg, warunki, obserwacje, wnioski). Zakres 2026/27 — do sprawdzenia w regulaminie.
+Konkurs chemiczny Lubelskiego Kuratora Oświaty (zakres 2026/27, oficjalny): etap szkolny 23.10.2026, 9:00 — **60 minut, 40 punktów**, treści podstawy programowej pkt I–V (substancje, budowa materii, reakcje, tlen i wodór, woda i roztwory) oraz konfiguracje elektronowe, typy reakcji i wzory z wartościowości; wodorotlenki, kwasy i sole są od 2026/27 na etapie rejonowym (pkt I–VIII). Prosty kalkulator dozwolony. Typy zadań: zamknięte, prawda–fałsz, dobieranie, luki, otwarte, **obliczeniowe i problemowe, opis doświadczeń** (przebieg, warunki, obserwacje, wnioski). Terminarz i zakres: `olimpiada/PRIORYTETY.md` §1.
 :::
 
 ### 12.1 Zawartość procentowa i stosunek masowy {#procent}
@@ -698,6 +677,9 @@ Konkurs chemiczny Lubelskiego Kuratora Oświaty (zakres 2025/26, punkt odniesien
 ::: nie-myl
 **Obserwacja** — to, co widzisz, czujesz, mierzysz (barwa, osad, gaz, zmętnienie, ciepło). **Wniosek** — co z tego wynika (jaka substancja powstała, jaka reakcja zaszła). „Wydziela się wodór” to wniosek; „wydzielają się pęcherzyki bezbarwnego gazu” — obserwacja.
 :::
+
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie), pierwsza pomoc (oparzenie, skaleczenie, wdychanie gazu). Wniosek: zasady są takie same przy każdym doświadczeniu i trzeba je znać przed rozpoczęciem pracy.
 
 ::: dosw | Doświadczenie 1 — Wykrywanie tlenku węgla(IV) wodą wapienną
 Problem: Jak wykazać, że w wydychanym powietrzu (albo w produktach spalania) jest tlenek węgla(IV)?

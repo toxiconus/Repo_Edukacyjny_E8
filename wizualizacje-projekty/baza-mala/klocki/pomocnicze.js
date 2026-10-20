@@ -18,19 +18,14 @@ function rr(x, a, b, w, h, r) {
 
 
 /* ---------------------------- pętla animacji ---------------------------- */
-var uchwyty = [], rafId = 0, ostatni = 0;
-function petla(now) {
-  var dt = Math.min(.05, (now - ostatni) / 1000); ostatni = now;
-  for (var i = 0; i < uchwyty.length; i++) uchwyty[i].krok(dt);
-  rafId = uchwyty.length ? requestAnimationFrame(petla) : 0;
-}
-function wlacz(h) { if (uchwyty.indexOf(h) < 0) uchwyty.push(h); if (!rafId) { ostatni = performance.now(); rafId = requestAnimationFrame(petla); } }
-function wylacz(h) { var i = uchwyty.indexOf(h); if (i >= 0) uchwyty.splice(i, 1); }
+// jeden zegar: KLOCKI.zegar (klocki.js); uchwyt h ma metodę krok(dt)
+function wlacz(h) { if (!h._z) h._z = function (now, dt) { h.krok(dt); }; KLOCKI.zegar.dodaj(h._z); }
+function wylacz(h) { if (h._z) KLOCKI.zegar.usun(h._z); }
 function podepnij(canvas, h) {
   h.rysuj();
-  if ('IntersectionObserver' in window) {
+  if ('IntersectionObserver' in window && !RM) {
     new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? wlacz(h) : wylacz(h); }); }, {threshold: .05}).observe(canvas);
-  } else wlacz(h);
+  } else if (!RM) wlacz(h);
 }
 
 

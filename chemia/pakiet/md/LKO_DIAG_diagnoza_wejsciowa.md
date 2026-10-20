@@ -329,3 +329,7 @@ Ostatnia kategoria jest ważna: nie każdy problem w autorskim arkuszu jest bł�
 
 **Liczby:** 10 zadań, 20 punktów (sprawdzone: A 3 + B 6 + C 4 + D 2 + E 3 + F 2 = 20), 30 minut.
 :::
+
+## AUDYT W1/W2 — zewnętrzny, blok status LKO (2026-10-14)
+
+Nieprzyjęte: 10 zadań, 20 punktów, 30 minut, klucz i progi są w lekcji; zastrzeżenie, że progi i czasy są autorską procedurą, a nie oficjalną kwalifikacją, jest w karcie „Zasady tego zestawu”.

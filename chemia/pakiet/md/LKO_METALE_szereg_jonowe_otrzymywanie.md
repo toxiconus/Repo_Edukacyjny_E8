@@ -183,7 +183,7 @@ H⁺ + OH⁻ → H₂O opisuje zobojętnianie mocnego kwasu mocną zasadą w prz
 
 - **Tlenek metalu + woda** (cząsteczkowo): Na₂O + H₂O → 2NaOH · CaO + H₂O → Ca(OH)₂.
 - **Strącanie wodorotlenku nierozpuszczalnego**: jonowo Fe³⁺ + 3OH⁻ → Fe(OH)₃↓ (z FeCl₃ + 3NaOH).
-- **Klasyk syntezowy — NaOH z sody:** Na₂CO₃ + Ca(OH)₂ → CaCO₃↓ + 2NaOH; jonowo: **Ca²⁺ + CO₃²⁻ → CaCO₃↓** (Na⁺ i OH⁻ zostają w roztworze jako widma — a produktem użytecznym jest właśnie NaOH). Sączenie usuwa CaCO₃ z roztworu NaOH.
+- **Klasyk syntezowy — NaOH z sody:** Na₂CO₃ + Ca(OH)₂ → CaCO₃↓ + 2NaOH; jonowo: **Ca²⁺ + CO₃²⁻ → CaCO₃↓** (Na⁺ i OH⁻ zostają w roztworze jako widma — a produktem użytecznym jest właśnie NaOH). Sączenie usuwa CaCO₃ z roztworu NaOH. Uwaga BHP: NaOH jest silnie żrący. Zagęszczanie przesączu (odparowanie wody) wymaga nadzoru i odpowiedniego sprzętu — w klasie jest pokazem nauczyciela, nie czynnością ucznia.
 
 ### 3.3 Sole — katalog metod (rozszerzenie 2)
 
@@ -462,3 +462,13 @@ Miedziany drut wsunięty do roztworu azotanu(V) srebra obrasta srebrnymi kryszta
 Suma punktów w zestawie zadań: 45 (zestaw ćwiczeniowy, nie próbny etapu II = 40 pkt — prowadzący wybiera podzbiór).
 
 Świadomie poza etapem II: potencjały standardowe (E02 — tu pojawiają się w LO jako uzasadnienie szeregu), redoks-bilansowanie (X03 — tu tylko rozpoznanie wypierania), amfoteryczność Al/Zn z NaOH (J05 — jedna linijka jako OLIMP), kwas azotowy jako utleniacz w pełnej systematyce produktów (X02 — wystarczy reguła „HNO₃ nie daje H₂"), elektroliza soli (E04). Tabela rozpuszczalności celowo bez PbSO₄-ów niuansów poza głównym katalogiem — na etapie II decydują AgCl, BaSO₄, osady węglanów i wodorotlenków. Cykl miedzi to wzorzec: analogiczne cykle (Fe, Ca, Zn) uczeń trenuje w zestawach B — nie dopisuj ich do suplementu, żeby nie rozwadniać.
+
+## AUDYT W1/W2 — zewnętrzny, LKO-METALE (2026-10-14)
+
+Zastosowano: dopisano uwagę BHP przy zagęszczaniu przesączu z NaOH (produkt reakcji Na₂CO₃ + Ca(OH)₂).
+
+Nieprzyjęte (sprawdzone w pliku): sód w roztworze CuSO₄ — lekcja już zapisuje sekwencję 2Na + 2H₂O → 2NaOH + H₂↑, a potem 2NaOH + CuSO₄ → Cu(OH)₂↓ + Na₂SO₄ i wyraźnie zaznacza, że metaliczna miedź nie powstaje; warunki w cyklu miedzi (Δ/t) są podane przy każdym etapie; magnez z gorącą wodą jest w głównym tekście i w tabeli; tabela metal – woda – kwas – wypieranie jest w lekcji; równanie jonowe ma pełny przykład od formy cząsteczkowej do skróconej (CuSO₄ + 2NaOH → Cu²⁺ + 2OH⁻ → Cu(OH)₂↓). Rozdzielenie części obowiązkowej i olimpijskiej nie wprowadzono — lekcja ma oznaczenia poziomów; do rozważenia przy przebudowie.
+
+## AUDYT W1/W2 — zewnętrzny, blok status LKO (2026-10-14)
+
+Uwaga: klucze tej lekcji były sprawdzone w osobnym audycie z tego samego dnia (sekcja „AUDYT W1/W2 — zewnętrzny, LKO-METALE”); ten blok nie zmienia treści.

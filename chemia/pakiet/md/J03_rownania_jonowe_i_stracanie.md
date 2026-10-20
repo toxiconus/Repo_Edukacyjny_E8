@@ -42,9 +42,14 @@ stan: ULEPSZONA — Perplexity, 2026-10-13; do sprawdzenia
 - [§8](#wykrywanie) — Wykrywanie jonów i kontrola zakłóceń.
 - [§10](#zadania-konkurs) — Zadania konkursowe.
 - [§16](#test) — Test końcowy.
+
+@model tabela-rozpuszczalnosci-v01 | Tabela rozpuszczalności soli i wodorotlenków (20 °C) | Silnik CHE · otwiera się w oknie
+@opis Tabela: w kolumnach kationy, w wierszach aniony, w komórkach litery R (rozpuszczalny, zielone tło), T (trudno rozpuszczalny, żółte), N (praktycznie nierozpuszczalny, czerwone) i „—” (nie istnieje w wodzie lub rozkłada się). Kliknięcie komórki pokazuje wzór i nazwę związku, a dla osadów ich barwę. Wniosek: osad powstaje, gdy w roztworze spotkają się jony dające związek N lub T — tabela rozstrzyga, czy reakcja strąceniowa zajdzie.
+
 :::
 
-## 0.1 | Jak pracować z lekcją {#jak-pracowac}
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
 
 Cel lekcji: samodzielnie zapisywać reakcje między jonami w roztworach wodnych, przewidywać powstawanie osadów oraz projektować otrzymywanie soli i wykrywanie jonów.
 
@@ -98,7 +103,12 @@ Interpretacja wyniku:
 - 3–4 pkt — pracuj kolejno z lekcją, zwracając uwagę na zagadnienia, w których pojawił się błąd.
 - 0–2 pkt — zacznij od wykładu i spokojnie przećwicz każdy krok zapisu równania.
 
-## 1 | Wykład — teatr chemiczny: aktorzy, widzowie i trzy tłumaczenia sceny {#wyklad} [[basic:E8]]
+@model rownania-jonowe-v01 | Równania jonowe: wybierz reakcję i zobacz trzy zapisy | Silnik CHE · otwiera się w oknie
+@opis Wybierasz reakcję (zobojętnianie, strącanie osadów, węglany, metale z kwasami); model pokazuje ten sam proces jako równanie cząsteczkowe, jonowe pełne i jonowe skrócone, a obok animację w probówce. W zapisie jonowym osad (↓), gaz (↑) i woda są zapisane cząsteczkowo, a jony widzowe występują po obu stronach i są pomijane w zapisie skróconym. Wniosek: zapis skrócony pokazuje, co faktycznie reaguje.
+
+
+@klocek probowki-wybor {zestaw="stracanie" wybrane="AgCl,BaSO4,CuOH2"} | Wybierz parę jonów i zobacz osad
+@opis Trzy probówki z bezbarwnym lub barwnym roztworem; po dodaniu odczynnika tworzy się osad opadający na dno: biały AgCl i BaSO₄, niebieski Cu(OH)₂, rdzawobrunatny Fe(OH)₃ albo biały CaCO₃. Przyciski pozwalają zmienić zestaw. Pod probówkami jest równanie jonowe skrócone: zawiera tylko jony, które tworzą osad.
 
 Wyobraź sobie dwie probówki. W pierwszej znajduje się roztwór chlorku sodu, NaCl, a w drugiej roztwór azotanu(V) srebra, AgNO₃. Oba roztwory są przezroczyste. Po ich zmieszaniu, przy odpowiednich stężeniach, pojawia się mlecznobiałe zmętnienie i biały osad chlorku srebra, AgCl. Przezroczyste roztwory dały substancję stałą — zaszła reakcja strącania.
 

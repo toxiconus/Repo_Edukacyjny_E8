@@ -1,6 +1,6 @@
 # Katalog klocków — baza mała E8
 
-Wygenerowano: 2026-10-14 przez `wizualizacje-projekty/narzedzia/zbuduj_baze_mala.py`. **Nie edytować ręcznie** — źródłem jest duża baza (`chemia/che-modular/engine`, `biologia/bio`, `polski/szablon`).
+Wygenerowano: 2026-10-20 przez `wizualizacje-projekty/narzedzia/zbuduj_baze_mala.py`. **Nie edytować ręcznie** — źródłem jest duża baza (`chemia/che-modular/engine`, `biologia/bio`, `polski/szablon`).
 
 Ta paczka zawiera kopie tego, co już działa w lekcjach. Zewnętrzny model może z niej wziąć gotowy element zamiast budować go od zera. Spis braków: `BRAKI_WIZUALIZACJI.md`.
 
@@ -8,16 +8,16 @@ Ta paczka zawiera kopie tego, co już działa w lekcjach. Zewnętrzny model moż
 
 | Folder | Zawartość | Rozmiar |
 |---|---|---|
-| `klocki` | kopia folderu | 110 KB |
+| `klocki` | kopia folderu | 309 KB |
 | `klocki/lite` | kopia folderu | 36 KB |
-| `gfx` | kopia folderu | 720 KB |
+| `gfx` | kopia folderu | 729 KB |
 | `tablice` | kopia folderu | 1612 KB |
-| `biblioteki/chemia/rozszerzenia.js` | kopia pliku | 129 KB |
-| `biblioteki/chemia/KATALOG_MODELI.md` | kopia pliku | 12 KB |
+| `biblioteki/chemia/rozszerzenia.js` | kopia pliku | 87 KB |
+| `biblioteki/chemia/KATALOG_MODELI.md` | kopia pliku | 13 KB |
 | `biblioteki/polski/pol-viz.js` | kopia pliku | 21 KB |
 | `biblioteki/polski/POL_KATALOG_GRAFIK.md` | kopia pliku | 1 KB |
 | `biblioteki/biologia/wizualizacje` | kopia folderu | 299 KB |
-| `biblioteki/biologia/BIO_KATALOG.md` | kopia pliku | 13 KB |
+| `biblioteki/biologia/BIO_KATALOG.md` | kopia pliku | 4 KB |
 
 ## 2. Klocki laboratoryjne (`klocki/`) — mała baza
 
@@ -35,13 +35,76 @@ Ta paczka zawiera kopie tego, co już działa w lekcjach. Zewnętrzny model moż
 | `znaki.js` | znaki promieniowania i zakazu |
 | `palniki.js` | palniki obok siebie (1–4 pierwiastki) |
 | `EFEKTY.md` | dokumentacja efektów i danych |
+| `krzywe_rozpuszczalnosci.js` | krzywe rozpuszczalności (g/100 g wody od T): trzy strefy, punkt (T, m); dane tabel A i B LKO-KRZYWE |
+| `lancuch_przemian.js` | łańcuch lub obieg przemian: wzory + strzałki z literami reakcji (bez odpowiedzi) |
+| `trojkat_przeliczen.js` | trójkąt konwersji m–n–N (wzor=mol) lub m–n–V (wzor=gaz) z operacjami ÷/× M, N_A, Vₘ |
+| `probowki_odczyn.js` | probówki przed/po odczynniku: zmiana barwy, osad, pęcherzyki gazu; opcja tuby |
+| `molekula_2d.js` | model cząsteczki 2D (SVG): kwas-octowy, eten, etanol; grupa do wyróżnienia; kwaśny H |
+| `c2d_core.js` | chemia 2D (v3, moduł): parser SMILES, układ współrzędnych, geometria VSEPR, wzór i masa |
+| `c2d_grupy.js` | wykrywanie grup funkcyjnych: COOH, ester, CHO, C=O, OH, eter, NH₂, NH, NR, X, C≡N, C=C, C≡C, Ar |
+| `c2d_wzor.js` | rysunek 2D: szkielet (domyślnie), model kulkowy, kąty, wolne pary, ramki grup |
+| `c2d_klocek.js` | klocek wzor-2d: wzór strukturalny z SMILES, opcja grupa=..., kulki, kat, pary |
+| `palnik_gazowy.js` | palnik gazowy (metan): płomień, zlewka odwrócona z kroplami H₂O, kontrolna, woda wapienna (LKO-ORG01 §5) |
+| `bilans_spalania.js` | bilans spalania całkowitego alkanu CₙH₂ₙ₊₂: współczynniki i bilans atomów C, H, O (LKO-ORG01 §2) |
+| `c2d_prosta.js` | prosty renderer wzorów 2D (z molekula_prosta): wszystkie atomy, zygzak, ramki grup; domyślny dla wzor-2d |
+| `probowki_wybor.js` | Wybór metali/odczynników: kilka probówek naraz z równaniami (zestawy: metale-hcl, stracanie, kwas-weglan) |
+| `konfiguracje.js` | Konfiguracje elektronowe Z ≤ 36: suwak, pudełka orbitali, powłoki K–N, zapis pełny i skrócony |
+| `kalkulator_mola.js` | Kalkulator mola: m, n, M, N, V gazu dla dowolnej substancji |
+| `krzyzowka_mendla.js` | Szachownica Punnetta: jedna cecha i dihybryda 4×4, stosunek genotypów i fenotypów |
+| `karta_bhp.js` | Karta BHP: zasady pracy w pracowni i pierwsza pomoc (rozwijane karty) |
+| `sklad_procentowy.js` | Masa cząsteczkowa i skład procentowy wg wzoru (masy jak w lekcji C1c masy) |
+| `bilans_rownania.js` | Dobieranie współczynników: przyciski −/+ i tabela bilansu atomów |
+| `nadmiar_substratu.js` | Nadmiar substratu: suwaki mas, współczynniki przereagowania, paski, produkty |
+| `naczynia.js` | Wspólna geometria i wygląd szkła (probówka) dla klocków probowki, probowki-odczyn |
+| `haworth.js` | Wzór Hawortha: α/β-D-glukopiranoza i β-D-fruktofuranoza (przełączane chipami) |
+| `estryfikacja.js` | Animacja estryfikacji: kwas + alkohol → ester + woda (pętla, autostart) |
+| `petla_regulacji.js` | Pętla sprzężenia ujemnego z 5 elementów z krążącym impulsem (biologia) |
+| `doswiadczenie.js` | Wspólny układ doświadczenia: cel, sprzęt, BHP, scena (inny klocek), równanie, obserwacje |
+| `diagram_bohra.js` | Model Bohra atomu i jonu: jądro (p), powłoki K–N, suwak Z, oddawanie/przyjmowanie elektronu z animacją |
+| `schemat_przemian.js` | Schemat dróg: kilka sposobów otrzymania tego samego typu substancji (substraty → strzałka → produkty), kliknięcie pokazuje uwagę |
+| `zbieranie_gazu.js` | Zbieranie gazu: wylotem do góry, do dołu albo nad wodą (kolba, rurka, naczynie); werdykt z gęstością względną i rozpuszczalnością |
 
 Lekcje i pliki, które wymieniają (`manifest.json` → `lekcje`):
 
-- **P01**: `klocki.js`, `pomocnicze.js`, `dane/pierwiastki.js`, `znaki.js`, `probowki.js`, `palniki.js`, `uklad_okresowy.js`
-- **F06**: `klocki.js`, `pomocnicze.js`, `dane/pierwiastki.js`, `znaki.js`, `probowki.js`, `palniki.js`, `uklad_okresowy.js`
-- **F07**: `klocki.js`, `pomocnicze.js`, `dane/pierwiastki.js`, `znaki.js`, `probowki.js`, `palniki.js`, `uklad_okresowy.js`
-- **N03**: `klocki.js`, `pomocnicze.js`, `dane/pierwiastki.js`, `znaki.js`, `probowki.js`, `palniki.js`, `uklad_okresowy.js`
+- **P01**: `klocki.js`, `pomocnicze.js`, `naczynia.js`, `dane/pierwiastki.js`, `znaki.js`, `probowki.js`, `palniki.js`, `uklad_okresowy.js`
+- **F06**: `klocki.js`, `pomocnicze.js`, `naczynia.js`, `dane/pierwiastki.js`, `znaki.js`, `probowki.js`, `palniki.js`, `uklad_okresowy.js`, `karta_bhp.js`, `diagram_bohra.js`
+- **F07**: `klocki.js`, `pomocnicze.js`, `naczynia.js`, `dane/pierwiastki.js`, `znaki.js`, `probowki.js`, `palniki.js`, `uklad_okresowy.js`
+- **N03**: `klocki.js`, `pomocnicze.js`, `naczynia.js`, `dane/pierwiastki.js`, `znaki.js`, `probowki.js`, `palniki.js`, `uklad_okresowy.js`, `karta_bhp.js`, `schemat_przemian.js`
+- **LKO-KRZYWE**: `klocki.js`, `pomocnicze.js`, `krzywe_rozpuszczalnosci.js`
+- **LKO-A1**: `klocki.js`, `pomocnicze.js`, `lancuch_przemian.js`
+- **LKO-METALE**: `klocki.js`, `pomocnicze.js`, `naczynia.js`, `metal_woda.js`, `lancuch_przemian.js`, `probowki_odczyn.js`
+- **LKO-STECH**: `klocki.js`, `pomocnicze.js`, `trojkat_przeliczen.js`
+- **LKO-ORG08**: `klocki.js`, `pomocnicze.js`, `trojkat_przeliczen.js`, `kalkulator_mola.js`, `zbieranie_gazu.js`, `karta_bhp.js`
+- **LKO-ORG02**: `klocki.js`, `pomocnicze.js`, `naczynia.js`, `probowki_odczyn.js`, `c2d_core.js`, `c2d_grupy.js`, `c2d_wzor.js`, `c2d_prosta.js`, `c2d_klocek.js`, `karta_bhp.js`
+- **LKO-ORG04**: `klocki.js`, `pomocnicze.js`, `naczynia.js`, `probowki_odczyn.js`, `c2d_core.js`, `c2d_grupy.js`, `c2d_wzor.js`, `c2d_prosta.js`, `c2d_klocek.js`, `karta_bhp.js`
+- **LKO-PUŁAPKI-WAPNO**: `klocki.js`, `pomocnicze.js`, `naczynia.js`, `probowki_odczyn.js`
+- **LKO-ORG05**: `klocki.js`, `pomocnicze.js`, `naczynia.js`, `probowki_odczyn.js`, `bilans_rownania.js`, `c2d_core.js`, `c2d_grupy.js`, `c2d_wzor.js`, `c2d_prosta.js`, `c2d_klocek.js`, `karta_bhp.js`
+- **LKO-ORG03**: `klocki.js`, `pomocnicze.js`, `naczynia.js`, `probowki_odczyn.js`, `c2d_core.js`, `c2d_grupy.js`, `c2d_wzor.js`, `c2d_prosta.js`, `c2d_klocek.js`, `karta_bhp.js`
+- **LKO-ORG06**: `klocki.js`, `pomocnicze.js`, `c2d_core.js`, `c2d_grupy.js`, `c2d_wzor.js`, `c2d_prosta.js`, `c2d_klocek.js`, `estryfikacja.js`, `karta_bhp.js`
+- **LKO-ORG01**: `klocki.js`, `pomocnicze.js`, `c2d_core.js`, `c2d_grupy.js`, `c2d_wzor.js`, `c2d_prosta.js`, `c2d_klocek.js`, `bilans_spalania.js`, `palnik_gazowy.js`, `karta_bhp.js`
+- **LKO-ORG07**: `klocki.js`, `pomocnicze.js`, `c2d_core.js`, `c2d_grupy.js`, `c2d_wzor.js`, `c2d_prosta.js`, `c2d_klocek.js`, `haworth.js`, `karta_bhp.js`
+- **X04**: `klocki.js`, `pomocnicze.js`, `naczynia.js`, `probowki_odczyn.js`, `probowki_wybor.js`, `doswiadczenie.js`, `karta_bhp.js`
+- **J03**: `klocki.js`, `pomocnicze.js`, `naczynia.js`, `probowki_odczyn.js`, `probowki_wybor.js`, `doswiadczenie.js`, `karta_bhp.js`
+- **C1c**: `klocki.js`, `pomocnicze.js`, `naczynia.js`, `probowki_odczyn.js`, `probowki_wybor.js`, `c2d_core.js`, `c2d_grupy.js`, `c2d_wzor.js`, `c2d_prosta.js`, `c2d_klocek.js`, `konfiguracje.js`, `diagram_bohra.js`, `sklad_procentowy.js`, `doswiadczenie.js`, `karta_bhp.js`, `schemat_przemian.js`
+- **C2m**: `klocki.js`, `pomocnicze.js`, `trojkat_przeliczen.js`, `kalkulator_mola.js`
+- **C4**: `klocki.js`, `pomocnicze.js`, `naczynia.js`, `probowki_odczyn.js`, `probowki_wybor.js`, `karta_bhp.js`, `doswiadczenie.js`
+- **B1b**: `klocki.js`, `pomocnicze.js`, `krzyzowka_mendla.js`
+- **R03**: `klocki.js`, `pomocnicze.js`, `krzywe_rozpuszczalnosci.js`, `karta_bhp.js`
+- **C2w**: `klocki.js`, `pomocnicze.js`, `naczynia.js`, `probowki_odczyn.js`, `karta_bhp.js`
+- **C3**: `klocki.js`, `pomocnicze.js`, `bilans_rownania.js`
+- **R07**: `klocki.js`, `pomocnicze.js`, `nadmiar_substratu.js`
+- **B2c**: `klocki.js`, `pomocnicze.js`, `petla_regulacji.js`
+- **B2e**: `klocki.js`, `pomocnicze.js`, `petla_regulacji.js`
+- **B2g**: `klocki.js`, `pomocnicze.js`, `petla_regulacji.js`
+- **N01**: `klocki.js`, `pomocnicze.js`, `zbieranie_gazu.js`, `karta_bhp.js`
+- **N02**: `klocki.js`, `karta_bhp.js`
+- **N04**: `klocki.js`, `karta_bhp.js`
+- **N05**: `klocki.js`, `pomocnicze.js`, `bilans_rownania.js`, `zbieranie_gazu.js`, `karta_bhp.js`
+- **F02**: `klocki.js`, `karta_bhp.js`
+- **F03**: `klocki.js`, `karta_bhp.js`
+- **F01**: `klocki.js`, `karta_bhp.js`
+- **REV01**: `klocki.js`, `karta_bhp.js`
+- **F04**: `klocki.js`, `pomocnicze.js`, `diagram_bohra.js`
 
 Lekkie silniki (`klocki/lite/`): `che-lite.js` (rejestr modeli), `rx-lite.js` (naczynia SVG), `stech-lite.js` (kalkulator stechiometryczny), `lab-dane.json` (dane zlewek).
 
@@ -82,6 +145,7 @@ Pełna tabela z `KATALOG_MODELI.md` (id, tytuł w silniku, lekcje). Model wywoł
 | `gfx-scene-heating` | Ogrzewanie cieczy na trójnogu (palnik Bunsena) |  |
 | `gfx-scene-indicator` | Wskaźnik kwasowo-zasadowy w roztworze |  |
 | `gfx-scene-indicatorRack` | Wskaźnik w siedmiu roztworach (statyw) | N02, N03 |
+| `gfx-scene-metanSpalanie` | Spalanie metanu — zlewka odwrócona (H₂O) i woda wapienna (CO₂) | ORG01 |
 | `gfx-scene-titration` | Zobojętnianie: miareczkowanie HCl zasadą NaOH | N03 |
 | `hf-paradox` | Paradoks HF — dlaczego słaby |  |
 | `ion-map-v02` | Mapa jonów — ładunek, pochodzenie, wykrywanie, sole | N04 |
@@ -159,66 +223,39 @@ Sceny i naczynia GFX (`gfx/`): pełny spis w `gfx/KATALOG.md`, indeks maszynowy 
 
 Każda grafika to osobny plik `wizualizacje/<id>.js`. Spis z `BIO_KATALOG.md`:
 
-| id | plik | Co pokazuje | Opcje | Animacja | Lekcje |
-| cykl-miesiaczkowy | `szablon/wizualizacje/cykl-miesiaczkowy.js` | cykl 1–28 dni: jajnik (pęcherzyk → owulacja → ciałko żółte), błona śluzowa macicy, estrogeny i progesteron; suwak dnia | dzien="1–28" | nie | U11 |
-| dobor-naturalny | `szablon/wizualizacje/dobor-naturalny.js` | symulacja doboru: ćmy jasne/ciemne na korze (przełącznik tła) albo bakterie wrażliwe/oporne + antybiotyk; pokolenia, wykres udziału cechy | start="cmy\|bakterie" | nie | — |
-| drabina | `szablon/wizualizacje/drabina.js` | dwie nici antyrównoległe, cukry, fosforany, pary, wiązania | seq="ATGCCA" | nie | L010 |
-| droga-pokarmu | `szablon/wizualizacje/droga-pokarmu.js` | schemat układu pokarmowego: narządy przewodu i gruczoły (klik = funkcje), „krok” prowadzi kęs 9 odcinkami, wybór składnika (skrobia, białka, tłuszcze, woda i sole, błonnik) podświetla stacje trawienia i wchłaniania | — | tak | U03 |
-| droga-zarodka | `szablon/wizualizacje/droga-zarodka.js` | od owulacji do zagnieżdżenia: jajnik, jajowód, macica + powiększenie komórek (10 etapów), animacja do przodu | krok="0–9" | tak | U11 |
-| endosymbioza | `szablon/wizualizacje/endosymbioza.js` | teoria endosymbiozy w 4 krokach (pochłonięcie bakterii i sinicy → 2 błony → mitochondrium/chloroplast) + karty argumentów obserwacja → wniosek | — | tak | — |
-| energia-glukozy | `szablon/wizualizacje/energia-glukozy.js` | oddychanie tlenowe vs fermentacja alkoholowa i mlekowa: warunki, miejsce, produkty, słupki ATP (ok. 38 / 2 / 2) | start="tl\|al\|ml" | nie | REV01 |
-| energia-materia | `szablon/wizualizacje/energia-materia.js` | ekosystem: przepływ energii (Słońce → poziomy, ciepło, ok. 10%) i obieg materii (pętla przez destruentów i związki mineralne); przełącznik warstw | start="materia\|oba" | nie | — |
-| enzym-warunki | `szablon/wizualizacje/enzym-warunki.js` | aktywność enzymu: tryb temperatury (amylaza, denaturacja) i pH (pepsyna, amylaza, trypsyna), suwak, probówka z Lugolem | tryb="T"\|"pH" | tak | U03 |
-| etapy-zycia | `szablon/wizualizacje/etapy-zycia.js` | pionowa oś czasu 10 okresów życia (zarodkowy → starość) z wiekiem orientacyjnym, klik = cechy | start="zarodkowy|…|starosc" | nie | U11 |
-| eutrofizacja | `szablon/wizualizacje/eutrofizacja.js` | jezioro w 5 etapach (suwak): biogeny z pól → zakwit → rozkład przez bakterie → przyducha; paski tlenu i przejrzystości | etap="0–4" | nie | — |
-| fotosynteza-oddychanie | `szablon/wizualizacje/fotosynteza-oddychanie.js` | komórka liścia: chloroplast + mitochondrium, suwak światła → bilans gazów (noc, równowaga, przewaga fotosyntezy) | swiatlo="0–100" | nie | REV01 |
-| gdzie-dna | `szablon/wizualizacje/gdzie-dna.js` | jądro z jąderkiem, mitochondria (grzebienie, mtDNA), cpDNA, nukleoid, plazmidy, rybosomy, erytrocyt (góra + profil) i leukocyt | — | nie | L010 |
-| glukoza-wykres | `szablon/wizualizacje/glukoza-wykres.js` | stężenie glukozy po posiłku: osoba zdrowa vs z cukrzycą (dane przykładowe), zakres na czczo, klik w punkt = opis | — | nie | H01, U10 |
-| gruczoly-mapa | `szablon/wizualizacje/gruczoly-mapa.js` | sylwetka z gruczołami dokrewnymi (podwzgórze, przysadka, szyszynka, tarczyca, przytarczyce, grasica, nadnercza, trzustka, jajniki/jądra), klik = hormony i skutki; autoprzegląd | plec="k"\|"m" | tak | U10 |
-| hardy-weinberg | `szablon/wizualizacje/hardy-weinberg.js` | suwak q albo częstości chorych q² → p, p², 2pq, q² krok po kroku, słupki genotypów w populacji 10 000 | — | nie | — |
-| helisa | `szablon/wizualizacje/helisa.js` | suwak drabina ↔ helisa, 2 nm, 3,4 nm / 10 par | seq, skret="0–100" | nie | L010 |
-| homeostaza | `szablon/wizualizacje/homeostaza.js` | ujemne sprzężenie zwrotne: glukoza (insulina/glukagon, tryb cukrzycy t. 1) albo temperatura (pocenie/dreszcze); wykres z pasem normy + pętla regulacji | start="temperatura" | nie | — |
-| klonowanie-genu | `szablon/wizualizacje/klonowanie-genu.js` | klonowanie genu w 5 krokach: wycięcie genu enzymem → otwarcie plazmidu tym samym enzymem → wklejenie ligazą → wgranie do bakterii → produkcja białka; animacja do przodu | krok="0–4" | tak | L022 |
-| klucz-kregowce | `szablon/wizualizacje/klucz-kregowce.js` | klucz dwudzielny tak/nie do 5 gromad kręgowców + tryb „rozpoznaj zwierzę” (delfin, nietoperz, pingwin…) | — | nie | REV02 |
-| kod-genetyczny | `szablon/wizualizacje/kod-genetyczny.js` | DNA (nić kodująca + matrycowa) → mRNA → aminokwasy; klik w zasadę = mutacja (cicha, zmiany sensu, nonsensowna, utrata START) | seq="ATG…" | nie | L020 |
-| komorka-nakladki | `szablon/wizualizacje/komorka-nakladki.js` | komórka: wspólny rdzeń + nakładki (jądro, mitochondria, chloroplasty, wakuola, ściana, plazmid); przyciski typów i warstw, rozpoznanie typu | start="rdzen\|bakteria\|zwierzeca\|roslinna\|grzyb" | nie | REV01 |
-| konczyny-homologiczne | `szablon/wizualizacje/konczyny-homologiczne.js` | kończyny przednie człowieka, kreta, wieloryba, nietoperza — te same grupy kości w kolorach (homologia); tryb analogii: skrzydło nietoperza vs owada | start="analogia" | nie | — |
-| kontrola-podzialow | `szablon/wizualizacje/kontrola-podzialow.js` | model tkanki 70 komórek: dawki UV, naprawa DNA i apoptoza (wł./wył.), komórka z 3 mutacjami dzieli się bez kontroli → guz; liczniki | — | nie | — |
-| kosmek-jelitowy | `szablon/wizualizacje/kosmek-jelitowy.js` | kosmek: nabłonek z mikrokosmkami, kapilary (→ żyła wrotna), naczynie chłonne; animacja drogi glukozy, aminokwasów, tłuszczów, wody do krwi lub limfy | — | tak | U03 |
-| krazenie-obiegi | `szablon/wizualizacje/krazenie-obiegi.js` | serce od przodu (4 jamy, zastawki trójdzielna i dwudzielna), obieg mały i duży, krew odtlenowana / utlenowana; „krok” prowadzi drogą krwi (12 miejsc), przyciski podświetlają jeden obieg | start="maly\|duzy" | tak | U04 |
-| lancuch | `szablon/wizualizacje/lancuch.js` | łańcuch kroków A → B → C (+ czynniki z boku) | kroki="A\|opis > B", boki="x; y", wyroznij="n", pion="nie", ikony="nie" (ikony dobierane same: DNA/gen, RNA, białko, funkcja, cecha) | nie | REV01, L010 |
-| lozysko-wymiana | `szablon/wizualizacje/lozysko-wymiana.js` | łożysko: krew matki opływa kosmki płodu, strzałki wymiany O₂/składników i CO₂/produktów przemiany, pępowina (2 tętnice, 1 żyła), klik = opis | — | nie | U11 |
-| luk-odruchowy | `szablon/wizualizacje/luk-odruchowy.js` | łuk odruchowy cofnięcia ręki: receptor, neuron czuciowy (zwój), pośredniczący w istocie szarej, ruchowy, mięsień, droga do mózgu; „krok” z impulsem; przełącznik przerwania drogi czuciowej/ruchowej | — | tak | U08 |
-| mikroskop-model | `szablon/wizualizacje/mikroskop-model.js` | ta sama komórka: obraz z mikroskopu świetlnego (×400, barwienie) vs model szkolny z podpisami | start="mikroskop\|model" | nie | REV01 |
-| nefron | `szablon/wizualizacje/nefron.js` | nefron: kłębuszek, torebka, kanalik, pętla, przewód zbiorczy, kapilary; animacja drogi 6 substancji (filtracja / wchłanianie zwrotne / mocz), przełącznik ADH z ilością i barwą moczu | — | tak | U06 |
-| nukleotyd | `szablon/wizualizacje/nukleotyd.js` | fosforan + deoksyryboza + zasada, 1′/3′/5′ | zasada="A" | nie | L010 |
-| od-organizmu-do-genu | `szablon/wizualizacje/od-organizmu-do-genu.js` | organizm → komórka → jądro → chromosom → DNA → gen | start="gen" | nie | L010 |
-| oko-akomodacja | `szablon/wizualizacje/oko-akomodacja.js` | przekrój oka (klik = opis), akomodacja blisko/daleko z promieniami, krótko- i dalekowzroczność z korekcją okularami | tryb="budowa"\|"akom"\|"wady" | tak | U08 |
-| pary-zasad | `szablon/wizualizacje/pary-zasad.js` | A–T, G–C oraz błędne A–G, C–T, A–C (pierścienie, szerokość, wiązania) | — | nie | L010 |
-| podzial-komorki | `szablon/wizualizacje/podzial-komorki.js` | mitoza i mejoza krok po kroku (model 2n = 4, homologi czerwone/niebieskie, chromatydy, crossing-over, wrzeciono); liczby chromosomów i chromatyd w każdej fazie (model i człowiek) | start="mitoza\|mejoza" | tak | — |
-| pojemnosc | `szablon/wizualizacje/pojemnosc.js` | 4ⁿ vs 3ⁿ, suwak długości | n | nie | L010 |
-| poziomy-dna | `szablon/wizualizacje/poziomy-dna.js` | chromosom → histony → odcinek DNA (gen, regulator, niekodujące) | — | nie | L010 |
-| proba-kontrolna | `szablon/wizualizacje/proba-kontrolna.js` | planowanie doświadczenia: przełączniki warunków w próbie badawczej i kontrolnej, ocena planu (jeden czynnik) | start="mocz\|drozdze" | nie | REV01 |
-| przeobrazenie-owadow | `szablon/wizualizacje/przeobrazenie-owadow.js` | przeobrażenie zupełne (motyl, z poczwarką) i niezupełne (konik polny, bez poczwarki); klik = opis etapu | — | nie | REV02 |
-| przeobrazenie-plaza | `szablon/wizualizacje/przeobrazenie-plaza.js` | rozwój złożony żaby: skrzek → kijanka → kijanka z kończynami → młoda żaba → żaba; suwak, oddychanie i środowisko | etap="0–4" | nie | REV02 |
-| punnett | `szablon/wizualizacje/punnett.js` | szachownica Punnetta: A/a (Mendel), grupy krwi AB0, hemofilia (X); fenotypy i genotypy w % | tryb="A\|K\|X" | nie | L019 |
-| relacje-ekologiczne | `szablon/wizualizacje/relacje-ekologiczne.js` | zależności międzygatunkowe jako znaki wpływu (+/−/0): konkurencja, drapieżnictwo, roślinożerność, pasożytnictwo, mutualizm, komensalizm; tryb „rozpoznaj relację” (12 przykładów, wynik) | start="quiz" | nie | — |
-| sekwencje | `szablon/wizualizacje/sekwencje.js` | dwie sekwencje, różnice zaznaczone | a, b | nie | L010 |
-| siec-troficzna | `szablon/wizualizacje/siec-troficzna.js` | sieć troficzna lasu: co je / kto go je, poziomy, łańcuchy; tryb „usuń gatunek” | — | nie | — |
-| skora-przekroj | `szablon/wizualizacje/skora-przekroj.js` | przekrój skóry: naskórek (rogowa, melanina), skóra właściwa (naczynia, receptory, gruczoł potowy i łojowy, mieszek, włos, mięsień przywłosowy), tkanka podskórna; klik = opis | — | nie | U01 |
-| sprzezenie-zwrotne | `szablon/wizualizacje/sprzezenie-zwrotne.js` | pętla bodziec → receptor → ośrodek → efektor → odpowiedź; 7 sytuacji (temperatura ↑↓, glukoza ↑↓, woda za mało/za dużo, poród — dodatnie); „krok”, wskaźnik parametru wobec normy | start="tg\|td\|gg\|gd\|wd\|wg\|po" | tak | H01, U10 |
-| staw-antagonizm | `szablon/wizualizacje/staw-antagonizm.js` | staw łokciowy: suwak kąta, biceps (zginacz) i triceps (prostownik) grubieją/cienieją przy skurczu, przyczepy, opis ruchu | kat="60" | tak | U01 |
-| synapsa | `szablon/wizualizacje/synapsa.js` | synapsa chemiczna w 5 krokach: impuls → pęcherzyki → neuroprzekaźnik w szczelinie → receptory → nowy impuls; animacja do przodu | krok="0–4" | tak | U08 |
-| szuflady-cech | `szablon/wizualizacje/szuflady-cech.js` | sortowanie: dziedziczna / nabyta / wieloczynnikowa | cechy="nazwa:d\|wyjaśnienie; …" | nie | L010 |
-| transfuzja | `szablon/wizualizacje/transfuzja.js` | zgodność dawca → biorca (ABO + Rh): antygeny na krwinkach, przeciwciała w osoczu, aglutynacja, uczulenie Rh−; tabela 4 × 4 | dawca="A", biorca="B" | nie | U04 |
-| transport-blona | `szablon/wizualizacje/transport-blona.js` | przekrój błony: dyfuzja prosta, ułatwiona, transport aktywny (ATP), osmoza + tabela porównawcza | start="dp\|du\|ta\|os" | nie | REV01 |
-| trener-nici | `szablon/wizualizacje/trener-nici.js` | dopisywanie nici DNA→DNA / DNA→RNA | seq, tryb="rna" | nie | L010 |
-| ucho-droga | `szablon/wizualizacje/ucho-droga.js` | ucho zewnętrzne, środkowe, wewnętrzne (klik = opis), „krok” prowadzi dźwięk od małżowiny do nerwu | — | tak | U08 |
-| uklad-rozrodczy | `szablon/wizualizacje/uklad-rozrodczy.js` | schemat męskiego i żeńskiego układu rozrodczego (przełącznik), klik = funkcja narządu; zaznaczone miejsce zapłodnienia | start="meski|zenski" | nie | U11 |
-| wdech-wydech | `szablon/wizualizacje/wdech-wydech.js` | klatka piersiowa: przepona, żebra, płuca; animacja wdechu i wydechu, objętość klatki i ciśnienie w płucach, kroki obu faz | — | tak | U06 |
-| wirus-bakteria | `szablon/wizualizacje/wirus-bakteria.js` | wirus (kapsyd, DNA/RNA, osłonka) obok bakterii (ściana, błona, rybosomy, nukleoid, plazmid, rzęska); klik = opis; antybiotyki | — | nie | REV02 |
-| wymiana-gazowa | `szablon/wizualizacje/wymiana-gazowa.js` | dyfuzja O₂ i CO₂: tryb pęcherzyk–krew i krew–komórki, płynące erytrocyty, słupki ilości gazów, klik = opis (hemoglobina, transport CO₂) | tryb="pl"\|"tk" | tak | U06 |
-| zrodla-zmiennosci | `szablon/wizualizacje/zrodla-zmiennosci.js` | losowanie gamet (3 pary chromosomów, 8 gamet, 64 kombinacje), zapłodnienie, crossing-over wł./wył., licznik różnych dzieci; człowiek 2²³ i ok. 70 bln | — | nie | — |
+| id | Co pokazuje | Opcje | Lekcje |
+| lancuch | łańcuch kroków A → B → C (+ czynniki z boku) | kroki="A\|opis > B", boki="x; y", wyroznij="n", pion="nie", ikony="nie" (ikony dobierane same: DNA/gen, RNA, białko, funkcja, cecha) | L010 |
+| od-organizmu-do-genu | organizm → komórka → jądro → chromosom → DNA → gen | start="gen" | L010 |
+| szuflady-cech | sortowanie: dziedziczna / nabyta / wieloczynnikowa | cechy="nazwa:d\|wyjaśnienie; …" | L010 |
+| gdzie-dna | jądro z jąderkiem, mitochondria (grzebienie, mtDNA), cpDNA, nukleoid, plazmidy, rybosomy, erytrocyt (góra + profil) i leukocyt | — | L010 |
+| poziomy-dna | chromosom → histony → odcinek DNA (gen, regulator, niekodujące) | — | L010 |
+| nukleotyd | fosforan + deoksyryboza + zasada, 1′/3′/5′ | zasada="A" | L010 |
+| pary-zasad | A–T, G–C oraz błędne A–G, C–T, A–C (pierścienie, szerokość, wiązania) | — | L010 |
+| drabina | dwie nici antyrównoległe, cukry, fosforany, pary, wiązania | seq="ATGCCA" | L010 |
+| helisa | suwak drabina ↔ helisa, 2 nm, 3,4 nm / 10 par | seq, skret="0–100" | L010 |
+| sekwencje | dwie sekwencje, różnice zaznaczone | a, b | L010 |
+| pojemnosc | 4ⁿ vs 3ⁿ, suwak długości | n | L010 |
+| trener-nici | dopisywanie nici DNA→DNA / DNA→RNA | seq, tryb="rna" | L010 |
+| kod-genetyczny | DNA (nić kodująca + matrycowa) → mRNA → aminokwasy; klik w zasadę = mutacja (cicha, zmiany sensu, nonsensowna, utrata START) | seq="ATG…" | (L011, L020) |
+| punnett | szachownica Punnetta: A/a (Mendel), grupy krwi AB0, hemofilia (X); fenotypy i genotypy w % | tryb="A\|K\|X" | (L017–L019) |
+| transport-blona | przekrój błony: dyfuzja prosta, ułatwiona, transport aktywny (ATP), osmoza + tabela porównawcza | start="dp\|du\|ta\|os" | (L005) |
+| siec-troficzna | sieć troficzna lasu: co je / kto go je, poziomy, łańcuchy; tryb „usuń gatunek” | — | (L041–L042) |
+| ryba-budowa | ryba kostnoszkieletowa: płetwy, skrzela, linia boczna, pęcherz pławny; tryby poznaj/znajdź/podpisz | — | REV02 §8.1 |
+| mikroskop-budowa | mikroskop świetlny: 12 części; 3 tryby | — | REV02 D+ |
+| jajo-ptaka | przekrój jaja ptaka: skorupa, błony, komora, białko, żółtko, tarczka, chalazy | — | REV02 §8.4 |
+| jajo-porownanie | jajo ryb/płazów, owadów, gadów, ptaków, ssaków: tabela + ścieżka ewolucyjna | — | REV02 §8.5 |
+| tkanki-zwierzece | 4 tkanki zwierzęce, rozpoznawanie po budowie; 3 tryby | — | REV02 §6.1 |
+| stawonogi-budowa | owad / pająk / rak: tagmy, odnóża, czułki + tabela; 3 tryby | — | REV02 §7.4 |
+| komorki-porownanie | komórka zwierzęca / roślinna / drożdży / bakterii + tabela cech; 3 tryby | — | REV01 §3 |
+| wykres-dane | czytanie wykresu: osie, skala, punkty, suwak odczytu, 3 zestawy danych | — | REV02 D+ |
+| serce-budowa | serce w przekroju: komory, przedsionki, zastawki, naczynia; 3 tryby | — | B10 §2.5 (docelowo B2h) |
+| krazenie | obieg krwi: pierścień z krążącą kroplą (niebieska/czerwona), filtr małe/duże, klik = wyjaśnienie | — | B10 §2.5 (docelowo B2h) |
+| neuron-budowa | neuron: dendryty, ciało, akson, osłonka, Ranvier, synapsa; 3 tryby | — | B2d §4 |
+| nefron-budowa | nefron: kłębuszek, torebka, kanaliki, pętla Henlego, naczynia; 3 tryby | — | B2c §6 |
+| wentylacja | wdech/wydech: przepona i żebra, animacja tam i z powrotem + suwak | — | B2c §2 |
+| fotosynteza-oddychanie | chloroplast ↔ mitochondrium: krążenie materii, przepływ energii, kropki w pętli, tryby fot/odd/oba + tabela | — | REV01 §7 |
+| podzial-komorki | mitoza i mejoza (2n=4) etapami, autostart + ◀ ▶; opcja `typ="mit\|mej"` | — | B2f §4 |
+| cykl | cykl życiowy jako pierścień etapów, autostart w widoku (do przodu i od początku), klik = wyjaśnienie + pauza; opcja `cykl="zaba\|tasiemiec\|mech\|paproc\|kwiat\|faga"` (dane w `CY` w bio-rysunki.js) | — | REV02 §2.1, 4.2, 4.3, 4.5, 7.1, 8.2 |
 
 ## 5. Polski (`biblioteki/polski/`)
 
@@ -250,4 +287,4 @@ Zbiory JSON z danymi referencyjnymi (pierwiastki, substancje, reakcje, rozpuszcz
 
 ## 7. Gfx — liczba wpisów
 
-Wpisów w `gfx/index.json`: **176**. Podział: chemia 156, fizyka 12, wspolne 8.
+Wpisów w `gfx/index.json`: **178**. Podział: chemia 158, fizyka 12, wspolne 8.

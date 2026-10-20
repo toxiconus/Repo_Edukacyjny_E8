@@ -50,9 +50,6 @@ Podane czasy, punktacja i progi interpretacji wyniku są zasadami tego autorskie
 
 ### 1.1 Zasada
 
-@klocek trojkat-przeliczen {wzor="mol"} | Trójkąt przeliczeń: masa, mole, cząstki
-@opis Trzy wierzchołki: masa m u góry, liczba moli n w lewym dolnym rogu, liczba cząstek N w prawym. Strzałki przy bokach pokazują działanie: z masy do moli dzielimy przez M, z moli do masy mnożymy przez M, a z moli do cząstek mnożymy przez N_A. Wniosek: każdą konwersję robimy przez mole, a masa molowa jest mostem między gramami a molami.
-
 **Mr = suma mas atomowych z uwzględnieniem indeksów (i nawiasów).** Mas atomowych nie uczysz się na pamięć całościowo — na zawodach są w tablicach; rdzeń, który warto mieć w głowie: **H 1 · C 12 · N 14 · O 16 · Na 23 · S 32 · Cl 35,5 · Ca 40 · Fe 56 · Cu 64 · Zn 65 · Ag 108 · Ba 137 · Pb 207**.
 
 Przykłady z nawiasami:
@@ -431,3 +428,7 @@ Antoine Lavoisier w XVIII wieku pokazał, że w zamkniętym naczyniu masa substr
 ## Notatka dla prowadzącego: granice
 
 Świadomie poza etapem II i poza tym plikiem: **mol, Avogadro, masa molowa jako liczba, objętość molowa gazów** — to rozszerzenie 10 etapu III (pełne wersje: R04, R06); metoda „podziel przez masę atomową" to ich przedsmak, nazwy nie używamy. **Wydajność reakcji i zanieczyszczenia** — poza rozszerzeniem 7 (R09); jeśli w arkuszu pojawi się „otrzymano 90% teoretycznej masy", wystarczy jedna dodatkowa proporcja (×0,9) — pokaż przy okazji zestawów B, nie tutaj. **Objętości gazów w zadaniach** — etap II formułuje wyłącznie obliczenia masowe; gdyby w arkuszu pojawił się litr gazu, to sygnał, że zakres poszerzono — wtedy R06 wchodzi awaryjnie. Wartości mas atomowych w kompendium pokrywają wszystkie zadania tego suplementu i symulacji A2; na zawodach i tak będą w tablicach. Uwaga scalająca: przykład z N06 (10,7 g NH₄Cl → 3,4 g NH₃, zadanie 10) jest tą samą metodą — uczniowi warto pokazać, że „już to umiał", tylko bez nazwy.
+
+## AUDYT W1/W2 — zewnętrzny, blok status LKO (2026-10-14)
+
+Nieprzyjęte: zalecenie dopisania mnożenia wydajności etapów nie zostało wprowadzone — lekcja świadomie wyłącza wydajność i zanieczyszczenia (notatka dla prowadzącego: rozszerzenie 7, R09). Zasada η = η₁·η₂ jest w LKO-ORG06 i LKO-ORG07, gdzie występują reakcje wieloetapowe.

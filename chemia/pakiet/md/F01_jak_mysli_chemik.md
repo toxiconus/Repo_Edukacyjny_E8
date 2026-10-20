@@ -34,7 +34,7 @@ stopka: **CHEMIA F01 v1.1 MASTER** · Jak myśli chemik · 2026
 - contest | <b>Ponad LO:</b> rozwijane bloki „poziom akademicki” — przycisk w nagłówku lekcji
 :::
 
-::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to (ok. 30 min)
 1. **[§0.4](#diagnoza)** — diagnoza: spróbuj odpowiedzieć, zanim zaczniesz czytać.
 2. **[§1](#chemia)–[§3](#obserwacja)** — czym zajmuje się chemia; obserwacja, wniosek i hipoteza.
 3. **[§4](#piec-pytan)–[§5](#przyklady)** — pięć pytań chemika i trzy przykłady „obserwacja → model”.
@@ -377,6 +377,10 @@ Nie każde doświadczenie wymaga skomplikowanej kontroli, ale każde powinno mie
 6. **Piktogramy GHS** czytamy przed pracą: żrący, toksyczny, drażniący, palny, utleniający, szkodliwy dla środowiska.
 :::
 
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
+
+
 ## 10 | Doświadczenia {#doswiadczenia}
 
 @model f01-doswiadczenia-v01 | Pracownia: co naprawdę się zmieniło? | zjawiska fizyczne i reakcje w zlewce, parownicy, probówce i tyglu — obserwacja, wniosek, BHP
@@ -445,23 +449,6 @@ BHP: wykonuje nauczyciel pod wyciągiem; przy ogrzewaniu siarki może powstawać
 ::: karta understand | Przewiduj, potem sprawdź
 @model beaker-prediction-enhanced | Zlewka z predykcją | wybierz obserwację, której się spodziewasz, i sprawdź wynik — trening „hipoteza przed doświadczeniem”
 @opis Zlewka z doświadczeniem i listą możliwych obserwacji: najpierw wybierasz, czego się spodziewasz, potem animacja pokazuje wynik i porównuje go z twoim przewidywaniem. Wniosek: hipotezę formułuje się przed doświadczeniem, a wynik ją wspiera albo obala.
-:::
-
-## 10.5 | Nie myl! {#nie-myl}
-
-::: nie-myl | Pojęcia, które łatwo pomylić
-| Para | Dlaczego łatwo pomylić | Jak rozstrzygnąć |
-|---|---|---|
-| obserwacja / wniosek | oba „o doświadczeniu” | obserwacja — co widać, słychać, czuć (bez wyjaśnień); wniosek — wyjaśnienie i odpowiedź na problem |
-| hipoteza / wniosek | oba to zdania o wyniku | hipoteza — przed doświadczeniem, przypuszczenie; wniosek — po doświadczeniu, potwierdzony wynikiem |
-| model / rzeczywistość | rysunek wygląda „jak naprawdę” | model upraszcza; ma zakres stosowalności |
-| poziom makro / mikro | oba opisują to samo zjawisko | makro — to, co widać; mikro — cząstki, których nie widać |
-| symbol / wzór | oba to litery | symbol — pierwiastek (O); wzór — substancja (O₂, H₂O) |
-| próba badawcza / kontrolna | obie w tym samym doświadczeniu | badawcza — zmieniamy czynnik; kontrolna — bez zmiany, do porównania |
-:::
-
-::: karta understand | W skrócie — jak to zastosować w zadaniu
-Gdy dostajesz zadanie doświadczalne, wypełniaj rubryki w stałej kolejności i każdą innym rodzajem zdania. **Problem** to pytanie („Czy temperatura wpływa na…?”). **Hipoteza** to przypuszczenie w trybie przewidywania („Przypuszczam, że w cieplejszej wodzie…”). **Obserwacje** to wyłącznie zmiany widoczne: barwa, osad, gaz, zapach, temperatura — bez słów „powstał”, „zaszła reakcja”. **Wniosek** odpowiada na problem i może zawierać wyjaśnienie. Sprawdzian: jeśli w obserwacji pojawia się nazwa substancji, której nie widzisz bezpośrednio („wydzielił się wodór”), to już jest wniosek.
 :::
 
 ## 11 | Klinika błędów {#klinika}
@@ -839,14 +826,14 @@ Mieszanina i związek :: mieszanina zachowuje właściwości składników, zwią
 
 ## 18 | System powtórek {#powtorki}
 
-Kolejność powtórki (we własnym tempie):
-
-1. przeczytaj kartę z [§14](#powtorka) i zrób ćwiczenia A
-2. fiszki
-3. ćwiczenia B
-4. test z [§13](#test)
-5. fiszki
-6. całość + ćwiczenia C–D
+| Kiedy | Ile | Co |
+|---|---|---|
+| po lekcji | 20 min | przeczytaj kartę z [§14](#powtorka) i zrób ćwiczenia A |
+| po 1 dniu | 10 min | fiszki |
+| po 3 dniach | 15 min | ćwiczenia B |
+| po tygodniu | 20 min | test z [§13](#test) |
+| po 2 tygodniach | 10 min | fiszki |
+| po miesiącu | 25 min | całość + ćwiczenia C–D |
 
 ## A | Dodatek A — mosty i co dalej {#mosty}
 

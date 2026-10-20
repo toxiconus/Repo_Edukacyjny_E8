@@ -46,6 +46,9 @@ Nie przeglądaj repo „na wszelki wypadek”. Nie czytaj `.specstory/`, `biolog
 - Każdy nowy skrypt md→HTML (inne przedmioty) ma wołać `OPIS.egzekwuj()` i zamieniać `@opis` przez `OPIS.komentarz()`.
 - Cel: treść czytelna bez grafiki (eksport do Perplexity/LLM, czytniki ekranu, druk).
 
+## Generowane katalogi
+- Po zmianach lekcji jedno polecenie: `python3 narzedzia/odswiez_wszystko.py` (HTML wszystkich przedmiotów, pakiety i okładki, spisy, katalog grafik BIO, opisy, baza mała wizualizacji, MAPA). `--szybko` pomija budowę HTML. Kopie w `okladki/`, `chemia/pakiet/`, `olimpiada/LKO_pakiet/`, `wizualizacje-projekty/baza-mala/` są generowane — nie edytować ręcznie.
+
 ## Eksport do analizy (Perplexity)
 - Rejestr weryfikacji: `WERYFIKACJA.md` (W1 = treść wysłanego zapisu, W2 = zakres). Po każdym audycie: surowa odpowiedź do `chemia/plany/audyty/` (lub `<przedmiot>/plany/audyty/`), poprawki do lekcji gotowej albo jako sekcja „AUDYT W1” do kanonu, wiersz w rejestrze. LaTeX z odpowiedzi → Unicode: `narzedzia/latex2uni.py`. Dla lekcji z kanonu (niegotowych) jednym poleceniem: `python3 narzedzia/audyt_do_kanonu.py <odpowiedź> [--uwaga KOD "tekst"]` (zapis surowy + sekcja AUDYT W1 + wiersz rejestru).
 - **Archiwalne arkusze konkursów:** rejestr `olimpiada/zrodla/archiwum_arkuszy.json` (przedmiot, rok, etap I/II/III, plik, klucz, opis roku; `brak` = czego nie mamy). Nowy arkusz → wpis w JSON + `python3 narzedzia/spis_lekcji.py` (linki w `SPIS_LEKCJI.md` i we wszystkich `INDEKS.html`, kolumna „etap LKO” z legendą). Etap lekcji: `narzedzia/etap_lko.py`.

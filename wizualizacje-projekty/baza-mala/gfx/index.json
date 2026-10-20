@@ -9,6 +9,13 @@
   },
   {
    "kind": "naczynia",
+   "id": "zlewkaOdwrocona",
+   "subject": "chemia",
+   "file": "chemia/naczynia/zlewkaOdwrocona.js",
+   "bytes": 490
+  },
+  {
+   "kind": "naczynia",
    "id": "testTube",
    "subject": "chemia",
    "file": "chemia/naczynia/testTube.js",
@@ -993,6 +1000,13 @@
    "subject": "chemia",
    "file": "chemia/reakcje/hyd-cuso4.js",
    "bytes": 281
+  },
+  {
+   "kind": "sceny",
+   "id": "metanSpalanie",
+   "subject": "chemia",
+   "file": "chemia/sceny/metanSpalanie.js",
+   "bytes": 1674
   }
  ],
  "che-visual-library-v001": [
@@ -1227,6 +1241,12 @@
    "file": "wspolne/widoki/che-test-silnika-v01.js",
    "bytes": 4604
   },
-    {"kind": "widoki", "id": "j03-osady-v01", "subject": "chemia", "file": "chemia/widoki/j03-osady-v01.js", "bytes": 3142}
+  {
+   "kind": "widoki",
+   "id": "j03-osady-v01",
+   "subject": "chemia",
+   "file": "chemia/widoki/j03-osady-v01.js",
+   "bytes": 3142
+  }
  ]
 }

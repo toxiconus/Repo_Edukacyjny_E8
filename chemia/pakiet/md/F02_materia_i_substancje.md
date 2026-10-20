@@ -31,7 +31,7 @@ stopka: **CHEMIA F02 v1.1 MASTER** · Materia i substancje · 2026
 - contest | <b>Ponad LO:</b> rozwijane bloki „poziom akademicki” — przycisk w nagłówku lekcji
 :::
 
-::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to (ok. 30 min)
 1. **[§0.4](#diagnoza)** — diagnoza: odpowiedz, zanim zaczniesz czytać.
 2. **[§1](#materia)–[§3](#mieszanina)** — materia, substancja czysta, pierwiastek, związek, mieszanina.
 3. **[§4](#jednorodnosc)–[§5](#procedura)** — jednorodna i niejednorodna; procedura klasyfikacji bez zgadywania.
@@ -176,9 +176,6 @@ Przykłady: powietrze (mieszanina gazów), woda z piaskiem, herbata, mleko, woda
 | właściwości składników | zachowane | nowe, inne niż pierwiastków |
 | rozdzielanie | metody fizyczne | tylko reakcja chemiczna |
 | przykład z Fe i S | szary proszek z żółtymi drobinkami; magnes wyciąga Fe | FeS — czarna masa, magnes nie przyciąga |
-
-@model f02-magnes-fes-v01 | Magnes: mieszanina Fe + S czy związek FeS? | zbliż magnes do obu próbek
-@opis Dwa szkiełka zegarkowe obok siebie. Po lewej mieszanina: szare podłużne opiłki żelaza i żółte kuleczki siarki, widoczne osobno. Po prawej siarczek żelaza(II): jednolite czarne grudki. Nad każdym szkiełkiem czerwony magnes w woreczku; przycisk „Zbliż magnes” opuszcza magnesy — z mieszaniny opiłki żelaza odrywają się i przyczepiają do magnesu, a żółta siarka zostaje na szkiełku; z FeS nic się nie unosi. Panel pod rysunkiem podsumowuje wynik. Wniosek: w mieszaninie składniki zachowują swoje właściwości i można je rozdzielić metodą fizyczną (magnesem), a w związku chemicznym powstaje nowa substancja o innych właściwościach.
 :::
 
 ## 4 | Jednorodna i niejednorodna. Faza [[basic:E8]] {#jednorodnosc}
@@ -436,6 +433,9 @@ Powietrze — mieszanina jednorodna (gazowa), rozdzielenie skraplaniem i destyla
 4. Fałsz. „Substancja złożona” to związek chemiczny — substancja czysta o stałym składzie, a nie mieszanina.
 :::
 :::
+
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
 
 ## 11 | Doświadczenia {#doswiadczenia}
 
@@ -740,13 +740,13 @@ Metoda fizyczna :: sposób rozdzielania mieszaniny bez tworzenia nowych substanc
 
 ## 17 | System powtórek {#powtorki}
 
-Kolejność powtórki (we własnym tempie):
-
-1. karta z [§13](#powtorka) i ćwiczenia A
-2. fiszki
-3. ćwiczenia B + powtórka F01
-4. test z [§12](#test)
-5. F01 + F02 + F03 razem — zestaw przekrojowy z F21
+| Kiedy | Ile | Co |
+|---|---|---|
+| po lekcji | 20 min | karta z [§13](#powtorka) i ćwiczenia A |
+| po 1 dniu | 10 min | fiszki |
+| po 3 dniach | 15 min | ćwiczenia B + powtórka F01 |
+| po tygodniu | 20 min | test z [§12](#test) |
+| po F03 | 25 min | F01 + F02 + F03 razem — zestaw przekrojowy z F21 |
 
 ## A | Dodatek A — mosty i co dalej {#mosty}
 

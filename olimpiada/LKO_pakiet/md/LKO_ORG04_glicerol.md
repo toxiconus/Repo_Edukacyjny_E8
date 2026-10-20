@@ -70,9 +70,6 @@ Lekcja jest krótka, ale ma dwa twarde punkty: **próba z Cu(OH)₂** (obserwacj
 :::
 
 ## 1 | Wykład — alkohole wielowodorotlenowe: dwa wzory do pamięci {#definicja}
-@klocek wzor-2d {smiles="OCC(O)CO", grupa="OH"} | Glicerol C₃H₈O₃: trzy grupy –OH w ramkach
-@opis Trzy atomy węgla w łańcuchu, każdy z grupą –OH (trzy ramki). Węgle pośrodku i na końcach są pominięte w rysunku szkieletowym, widać tylko grupy. Wniosek: trzy grupy –OH obok siebie tłumaczą dobrą rozpuszczalność w wodzie i zdolność do tworzenia kompleksu z Cu²⁺.
-
 
 ::: karta understand | Przypomnienie — co daje Cu²⁺ w roztworze
 Jon Cu²⁺ w roztworze wodnym jest niebieski. Po dodaniu zasady wytrąca się niebieski, galaretowaty osad Cu(OH)₂ (reakcja strąceniowa — N03). Ta barwa jest punktem odniesienia dla całej próby z tej lekcji.
@@ -88,6 +85,16 @@ Dwa związki do pamięci:
 | glicerol (gliceryna) | propan-1,2,3-triol | C₃H₅(OH)₃ | 3·12 + 8·1 + 3·16 = **92 g/mol** | 3 |
 
 Wzory strukturalne: glikol HO–CH₂–CH₂–OH (dwie grupy –OH przy sąsiednich węglach); glicerol HO–CH₂–CH(OH)–CH₂–OH (grupa –OH przy **każdym** węglu łańcucha). Ogólnie nasycone dioli mają wzór CₙH₂ₙ(OH)₂ (dla n = 2: C₂H₄(OH)₂ — glikol jest pierwszym diolem tej serii).
+
+Wzór ogólny dioli (nasyconych, acyklicznych): CₙH₂ₙ₊₂O₂. Dla glikolu n = 2: C₂H₆O₂ = C₂H₄(OH)₂.
+
+::: karta understand | W skrócie — liczba grup –OH i wynik próby z Cu(OH)₂
+| Substancja | Liczba grup –OH | Wynik próby z Cu(OH)₂ |
+|---|---|---|
+| etanol | 1 | osad pozostaje |
+| glikol etylenowy | 2 (przy sąsiednich C) | osad rozpuszcza się, roztwór szafirowy |
+| glicerol | 3 | osad rozpuszcza się, roztwór szafirowy |
+:::
 
 **Glicerol jest szkieletem tłuszczów** — w naturalnych tłuszczach każda z trzech grup –OH jest połączona esterem z kwasem tłuszczowym (pełny wykład: ORG06; tu zapamiętaj: tłuszcz = glicerol + 3 kwasy tłuszczowe). Glicerol reaguje też z kwasami mineralnymi i tłuszczowymi, tworząc estry.
 
@@ -112,6 +119,12 @@ W małych dawkach nitrogliceryna jest lekiem na dusznicę bolesną — rozszerza
 ::: karta extra | Scheele i oliwa (1779)
 Glicerol odkrył szwedzki chemik Carl Wilhelm Scheele w 1779 roku: ogrzewając oliwę z tlenkiem ołowiu(II), otrzymał słodką, gęstą ciecz. To, co nazwano „słodką zasadą oliwy”, po latach okazało się alkoholem o trzech grupach –OH. Mydlenie tłuszczów (ORG06) to ta sama droga, którą dziś pozyskuje się glicerol przemysłowo — obok produkcji biodiesla.
 :::
+
+@klocek wzor-2d {smiles="OCCO" grupa="none"} | Glikol etylenowy (etano-1,2-diol)
+@opis Wzór strukturalny glikolu etylenowego: dwa sąsiednie atomy węgla, każdy z grupą –OH.
+
+@klocek wzor-2d {smiles="OCC(O)CO" grupa="none"} | Glicerol (propano-1,2,3-triol)
+@opis Wzór strukturalny glicerolu: trzy atomy węgla w łańcuchu, każdy z grupą –OH.
 
 ## 2 | Wykład — własności fizyczne: suma grup –OH {#wlasnosci}
 
@@ -150,6 +163,9 @@ Glicerol jest składnikiem fosfolipidów, z których zbudowane są błony komór
 ::: karta extra | Biodiesel — glicerol jako produkt uboczny
 Przy produkcji biodiesla z oleju roślinnego powstaje glicerol jako produkt uboczny. Gdy go przybywa, jego cena spada — dziś szuka się sposobów przerobu tego nadmiaru (np. na paliwo, kosmetyki). To przykład, że chemia odpadu bywa równie ważna co chemia produktu.
 :::
+
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Cztery rozwijane karty: przed doświadczeniem (okulary, fartuch, czytanie opisu), kwasy i zasady (kwas do wody, płukanie 15 minut), ogrzewanie (probówka ukośnie, otworem od siebie) oraz oparzenie i zranienie; przy poważnym urazie wołamy nauczyciela.
 
 ## 3 | Wykład — próba z wodorotlenkiem miedzi(II): charakterystyka {#proba-cu}
 
@@ -191,6 +207,9 @@ Do związania miedzi(II) w rozpuszczalny kompleks potrzebne są **dwa atomy tlen
 - Zakładanie, że glikol i glicerol dają wyraźnie różne objętości H₂ na tej samej masie (różnica ok. 1%).
 :::
 
+@klocek probowki-odczyn {tuby="Etanol + Cu(OH)₂:blekitny:blekitny:osad,Glicerol + Cu(OH)₂:blekitny:szafirowy:brak"} | Próba z Cu(OH)₂: osad zostaje albo się rozpuszcza
+@opis Dwie probówki ze świeżo strąconym niebieskim osadem Cu(OH)₂: po dodaniu etanolu osad pozostaje bez zmian, a po dodaniu glicerolu rozpuszcza się i powstaje intensywnie niebieski (szafirowy) roztwór. Próba jest charakterystyczna dla alkoholi wielowodorotlenowych.
+
 ## 4 | Wykład — sód i spalanie: stosunki molowe na trzech poziomach {#sod-spalanie}
 
 **Reakcja z sodem.** Każda grupa –OH oddaje sódowi po jednym H; atomy H łączą się parami w H₂:
@@ -231,15 +250,14 @@ Zadanie „ile H₂ z sodu": najpierw policz mole alkoholu (n = m/M), potem pomn
 
 **Hipoteza:** Świeży osad Cu(OH)₂ rozpuści się w obecności glicerolu (dwie–trzy sąsiednie grupy –OH wiążą Cu²⁺ w rozpuszczalny kompleks), a w etanolu pozostanie niezmieniony.
 
-@klocek probowki-odczyn {tuby="Etanol:niebieski:niebieski:osad,Glicerol:niebieski:szafirowy:brak"} | Cu(OH)₂ w etanolu (osad pozostaje) i w glicerolu (osad znika, roztwór szafirowy)
-@opis Dwie probówki z niebieskim osadem wodorotlenku miedzi(II): w etanolu osad zostaje bez zmian, w glicerolu znika, a roztwór przyjmuje szafirową barwę. Wniosek: glicerol, mający trzy grupy –OH obok siebie, tworzy z jonami Cu²⁺ rozpuszczalny kompleks; etanol z jedną grupą –OH tego nie robi.
-
 **Sprzęt:** dwie probówki, roztwór CuSO₄, roztwór NaOH, etanol, glicerol, pipety, okulary i rękawice. Doświadczenie wykonuje osoba przygotowana; uczący się samodzielnie analizuje jego opis.
 
 **Przebieg:**
 1. Do obu probówek wlej po ok. 2 cm³ CuSO₄ i dodaj NaOH (w niewielkim nadmiarze) — w obu powstaje niebieski osad Cu(OH)₂.
 2. Do pierwszej probówki dodaj ok. 1 cm³ etanolu, do drugiej tyleż glicerolu; wstrząśnij obie.
 3. Obserwuj probówki przez kilka minut, wstrząsając. **Nie ogrzewaj** — ogrzany osad Cu(OH)₂ czernieje, bo przechodzi w czarny tlenek miedzi(II) CuO; nie myl tego z brakiem reakcji.
+
+Ogrzany osad czernieje, bo Cu(OH)₂ rozkłada się do tlenku — to osobna reakcja, nie wynik działania glicerolu: Cu(OH)₂ →(Δ) CuO + H₂O.
 
 **Obserwacje:** probówka z etanolem — niebieski osad bez zmian, ciecz nad osadem bezbarwna; probówka z glicerolem — osad stopniowo rozpuszcza się i roztwór przyjmuje intensywnie niebieską (szafirową) barwę.
 
@@ -429,3 +447,15 @@ E422 :: numer glicerolu jako dodatku do żywności (zagęstnik, nawilżacz).
 Zastosowano uwagi z audytu Perplexity: szafirowy zamiast „jasnoniebieskiego" w całej lekcji (błąd 1); zmiana zalecenia o H₂ jako rozróżniaczu glikolu i glicerolu — U2 i U3 (błąd 2); mieszalność (3); płyny spryskiwaczy — etanol/propan-2-ol (4); t.w. glikolu dodana, „do weryfikacji" usunięte z tekstu (5); ogrzewanie osadu i czernienie — usunięte z przebiegu, dopisane ostrzeżenie (6); „świeży osad" i nadmiar NaOH (7); korekta wniosku z tempem w zadaniu 5(d) (8); zadanie 6 przeredagowane (9); słownik nazw soli (10); tabela 0,5 : 1 : 1,5 w warstwach (11); karty extra: Nobel, Scheele, „Glyceros" (retytułowana, e-papierosy usunięte) (12–14); literówki (15–18); punktacja exam (zadania 1–2) całkowita, zadania adv bez zmian (19); test: poprawna odpowiedź przestawiona w pięciu pytaniach, dodane dwa pytania (20). Braki: odczyn glicerolu (w akapicie i tabeli), wzór ogólny dioli, propano-1,2-diol i cukroalkohole (karta), estryfikacja glicerolu (zdanie w sekcji 1), plan doświadczenia (zadanie B), typy zadań (test, zadanie F: sód i glicerol), typowe błędy (karta error), wiedza wstępna (karta przypomnienia), zastrzeżenie o cukrach (sekcja 3), poszerzenie horyzontu (biologia, medycyna, biodiesel).
 - Poprawione względem propozycji: w zadaniu 5(d) propozycja audytu mówiła o „gwałtowniej" → przyjęto, że tempo nie wynika z liczby grup –OH, zostawiono ostrożne „raczej wolniej" (glicerol syropowaty).
 - Nieprzyjęte: (1) mnemotechnika „di/tri" — już obecna w karcie o liczbie –OH (liczba grup = numer seryjny), nie dodano duplikatu; (2) zmiana nazwy „glicerynian" na wyłącznie systematyczną — przyjęto w słowniku, ale zwyczajowa nazwa „glicerynian miedzi(II)" zostaje w karcie błędów jako przykład błędnego zapisu.
+
+## AUDYT W1/W2 — zewnętrzny, LKO-ORG04 (2026-10-14)
+
+Zastosowano: dopisano wyraźne ostrzeżenie z równaniem Cu(OH)₂ →(Δ) CuO + H₂O (czernienie ogrzanego osadu nie jest efektem działania glicerolu); dopisano wzór ogólny dioli CₙH₂ₙ₊₂O₂ z przykładem glikolu; dodano kartę „W skrócie” z tabelą liczby grup –OH i wyniku próby.
+
+Nieprzyjęte (sprawdzone w pliku): warunek „dwie lub więcej grup –OH przy sąsiednich atomach węgla” jest już w lekcji; barwa „szafirowa” jest już wszędzie, a określenie „jasnoniebieski” nie występuje; ogrzewanie nie jest częścią próby; sformułowanie o szybkości reakcji zależnej od liczby grup –OH nie występuje w lekcji, więc nie ma czego usuwać; zastrzeżenie, że próba nie rozróżnia każdego alkoholu w każdych warunkach, jest już w sekcji o wnioskach.
+
+## AUDYT W1/W2 — zewnętrzny, blok organiczny (2026-10-14)
+
+Zastosowano: brak zmian treści.
+
+Nieprzyjęte (sprawdzone w pliku): Spalanie 2C₃H₈O₃ + 7O₂ → 6CO₂ + 8H₂O jest zbilansowane (C 6, H 16, O 20), próba Cu(OH)₂ z zastrzeżeniem o sąsiednich grupach OH jest w lekcji. Nic do zmiany.

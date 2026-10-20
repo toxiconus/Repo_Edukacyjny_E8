@@ -105,9 +105,6 @@ Przy wprowadzaniu CO₂ do mleka wapiennego najpierw obserwujesz mętnienie (CaC
 
 ## 2 | Wykład — dlaczego mętnienie to nie zawsze CO₂ {#wykl-metnienie}
 
-@klocek probowki-odczyn {tuby="Woda wapienna:bezbarwny:bezbarwny:brak,+ CO2:bezbarwny:mleczny:osad,+ nadmiar CO2:mleczny:bezbarwny:brak"} | Woda wapienna: mętnieje od CO₂, a nadmiar CO₂ rozpuszcza osad
-@opis Trzy probówki z wodą wapienną pokazane po kolei: w pierwszej ciecz przezroczysta, w drugiej po przepuszczeniu CO₂ biały osad (mętnienie), w trzeciej po nadmiarze CO₂ mleczność znika. Wniosek: biały osad to CaCO₃; nadmiar CO₂ zamienia go w rozpuszczalny wodorowęglan, więc długie przepuszczanie gazu znosi mętnienie.
-
 ::: karta understand | Wykład — dwie przyczyny tej samej obserwacji
 Obserwacja „woda wapienna zmętniała" ma co najmniej dwie przyczyny:
 - **Chemiczna:** CO₂ reaguje z Ca(OH)₂ i tworzy CaCO₃, który jest nierozpuszczalny. Ta reakcja zachodzi w temperaturze pokojowej.
@@ -399,3 +396,7 @@ Kwaśne gleby neutralizuje się wapnem — węglanem wapnia lub wodorotlenkiem w
 
 **Do sprawdzenia przed W1:** reakcje z ogólnej wiedzy szkolnej (pkt 3 źródeł); rozpuszczalność 0,16 g z jednego źródła (w innych opracowaniach spotyka się 0,17); klucz P4 — równanie rozpuszczania osadu w nadmiarze CO₂.
 :::
+
+## AUDYT W1/W2 — zewnętrzny, blok status LKO (2026-10-14)
+
+Nieprzyjęte: pięć par pojęć (woda wapienna – mleko wapienne, wapno palone – gaszone, kreda – wapień) jest w numerowanej liście pkt 1–5, a nie w tabeli, ale treść jest pełna; równanie Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O jest w pkt 6.

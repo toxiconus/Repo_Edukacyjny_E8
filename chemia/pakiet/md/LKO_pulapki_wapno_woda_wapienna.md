@@ -396,3 +396,7 @@ Kwaśne gleby neutralizuje się wapnem — węglanem wapnia lub wodorotlenkiem w
 
 **Do sprawdzenia przed W1:** reakcje z ogólnej wiedzy szkolnej (pkt 3 źródeł); rozpuszczalność 0,16 g z jednego źródła (w innych opracowaniach spotyka się 0,17); klucz P4 — równanie rozpuszczania osadu w nadmiarze CO₂.
 :::
+
+## AUDYT W1/W2 — zewnętrzny, blok status LKO (2026-10-14)
+
+Nieprzyjęte: pięć par pojęć (woda wapienna – mleko wapienne, wapno palone – gaszone, kreda – wapień) jest w numerowanej liście pkt 1–5, a nie w tabeli, ale treść jest pełna; równanie Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O jest w pkt 6.

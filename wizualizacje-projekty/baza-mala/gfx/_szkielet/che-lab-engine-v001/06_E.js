@@ -71,6 +71,7 @@ const txt=(c,s,x,y,col,al,sz,w)=>{c.fillStyle=col;c.textAlign=al||'left';font(c,
 
 const rc=(c,x,y,w,h,r)=>{c.beginPath();c.moveTo(x,y);c.lineTo(x,y+h-r);c.quadraticCurveTo(x,y+h,x+r,y+h);c.lineTo(x+w-r,y+h);c.quadraticCurveTo(x+w,y+h,x+w,y+h-r);c.lineTo(x+w,y)};
 /*@@GFX naczynia/beaker@@*/
+/*@@GFX naczynia/zlewkaOdwrocona@@*/
 /*@@GFX naczynia/testTube@@*/
 /*@@GFX naczynia/cylinder@@*/
 /*@@GFX naczynia/flask@@*/

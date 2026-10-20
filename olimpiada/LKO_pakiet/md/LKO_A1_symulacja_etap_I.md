@@ -307,10 +307,6 @@ c) *(otwarte krótkie)* Rozpuszczalność NaCl prawie nie zależy od temperatury
 
 Schemat przedstawia cykl przemian wapnia. Do każdej strzałki zapisz równanie reakcji z warunkami (A: spalanie wapnia w tlenie; B: reakcja tlenku z wodą; C: działanie dwutlenkiem węgla na roztwór) oraz podaj obserwację dla przemiany C.
 
-
-@klocek lancuch-przemian {wezly="Ca,CaO,Ca(OH)2,CaCO3", etyk="A,B,C"} | Cykl przemian wapnia: Ca → CaO → Ca(OH)₂ → CaCO₃
-@opis Cztery substancje w jednym rzędzie, łączone trzema strzałkami z literami A, B, C. Wniosek: każda strzałka to osobna reakcja, którą trzeba opisać równaniem z warunkami; wzór po lewej jest substratem, po prawej produktem.
-
   Ca —A→ CaO —B→ Ca(OH)₂ —C→ CaCO₃
 
 a) równanie A ____ · b) równanie B ____ · c) równanie C ____ · d) obserwacja w C ____
