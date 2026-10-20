@@ -2081,7 +2081,21 @@ function lab(el,sp){
       gs[i]=g;svg.appendChild(g)});
     D.parts.forEach(function(p,i){var m=S('g',{'pointer-events':'none'},[S('circle',{cx:p.m[0],cy:p.m[1],r:9,fill:'var(--accent,#3f7a28)',stroke:'#fff','stroke-width':1.5}),BIO.T(p.m[0],p.m[1]+.5,String(i+1),{s:10,w:800,f:'#fff'})]);mk[i]=m;svg.appendChild(m)});
     clr(extra);if(sp.after){var a=sp.after(vk);if(a)extra.appendChild(a)}
-    sel=-1;intro();refresh()}
+    sel=-1;intro();refresh();place(svg,0)}
+  /* automatyczne ustawienie numerów: środek obrysu części (małe części), z unikaniem nakładania; duże tła zostają na ręcznym m */
+  function place(svg,n){
+    if(!svg.isConnected||!D){if(n<12)setTimeout(function(){place(svg,n+1)},250);return}
+    var pos=[],ok=true;
+    D.parts.forEach(function(p,i){
+      var b;try{b=gs[i].getBBox()}catch(e){ok=false;return}
+      if(!b||(!b.width&&!b.height)){ok=false;return}
+      var x=p.m[0],y=p.m[1];
+      if(!p.fix&&b.width<=200&&b.height<=140){x=b.x+b.width/2;y=b.y+b.height/2}
+      else if(!p.fix){x=Math.min(Math.max(p.m[0],b.x+10),b.x+b.width-10);y=Math.min(Math.max(p.m[1],b.y+10),b.y+b.height-10)}
+      for(var t=0;t<14;t++){var hit=pos.some(function(q){return Math.abs(q[0]-x)<20&&Math.abs(q[1]-y)<20});if(!hit)break;var a=t*2.4;x=x+Math.cos(a)*9;y=y+Math.sin(a)*9}
+      x=Math.min(Math.max(x,10),D.w-10);y=Math.min(Math.max(y,10),D.h-10);pos[i]=[x,y]});
+    if(!ok){if(n<12)setTimeout(function(){place(svg,n+1)},250);return}
+    pos.forEach(function(q,i){var m=mk[i];if(!m)return;var c=m.querySelector('circle'),t=m.querySelector('text');c.setAttribute('cx',q[0]);c.setAttribute('cy',q[1]);if(t){t.setAttribute('x',q[0]);t.setAttribute('y',q[1]+.5)}})}
   function intro(){if(mode==='poznaj')say('<b>Kliknij część rysunku lub numer pod nim</b><span>Zobaczysz nazwę i do czego służy. Potem sprawdź się w trybach „znajdź” i „podpisz”.</span>')}
   function refresh(){
     gs.forEach(function(g,i){g.classList.toggle('sel',i===sel&&mode==='poznaj')});
@@ -2650,7 +2664,7 @@ mount:function(el){
     {n:'puch mniszka (wiatr)',m:[120,190],d:'Owoc z puchem (puchem kielichowym) unoszony przez wiatr; bardzo lekki (anemochoria).',draw:function(g){g.appendChild(P('M130,110 L130,70',null,'#8a7a40',2));g.appendChild(E(130,114,3,6,'#c9a06a','#6a4a20',1.4));for(var a=-70;a<=70;a+=20){var r=a*Math.PI/180;g.appendChild(P('M130,70 L'+(130+Math.sin(r)*28)+','+(70-Math.cos(r)*28),null,'#bbb',1.2))}}},
     {n:'owoc przyczepny (łopian)',m:[210,190],d:'Okrywa z haczykami przyczepia się do sierści zwierząt i ubrań (epizoochoria).',draw:function(g){g.appendChild(C(210,80,18,'#8a8a50','#4a4a20',2));for(var a=0;a<360;a+=30){var r=a*Math.PI/180;g.appendChild(P('M'+(210+Math.cos(r)*18)+','+(80+Math.sin(r)*18)+' l'+(Math.cos(r)*8)+','+(Math.sin(r)*8),null,'#4a4a20',1.6))}}},
     {n:'owoc mięsisty (jarzębina)',m:[286,190],d:'Barwny, soczysty owoc zwabia ptaki; nasiona przechodzą przez przewód pokarmowy i trafiają daleko (endozoochoria).',draw:function(g){[[276,70],[294,78],[284,90],[302,62]].forEach(function(p){g.appendChild(C(p[0],p[1],8,'#e55a4a','#8a2a20',1.8))});g.appendChild(P('M286,100 L286,130',null,'#6a4a28',3))}},
-    {n:'strąk grochu (samorzutnie)',m:[336,190],d:'Wysychający strąk pęka i skręca się, wyrzucając nasiona (autochoria); podobnie niecierpek.',draw:function(g){g.appendChild(P('M320,150 Q336,120 352,150 Q336,172 320,150Z',"#9fd27a",'#3f7a2a',2));[[328,148],[336,144],[344,148]].forEach(function(p){g.appendChild(C(p[0],p[1],3,'#4f7a2a','none',0))})}}
+    {n:'strąk grochu (samorzutnie)',m:[336,190],d:'Wysychający strąk pęka i skręca się, wyrzucając nasiona (autochoria); podobnie niecierpek.',draw:function(g){g.appendChild(P('M308,100 Q328,64 348,100 Q328,124 308,100Z',"#9fd27a",'#3f7a2a',2));[[318,98],[328,94],[338,98]].forEach(function(p){g.appendChild(C(p[0],p[1],3,'#4f7a2a','none',0))})}}
   ]}}})}});
 
 BIO.define('osmoza-komorka',{opis:'Osmoza: komórka roślinna i erytrocyt w wodzie destylowanej (roztwór hipotoniczny), w 0,9% NaCl (izotoniczny) i w stężonym roztworze soli (hipertoniczny); turgor, plazmoliza, hemoliza, pomarszczenie; przełączniki roztworu i komórki',

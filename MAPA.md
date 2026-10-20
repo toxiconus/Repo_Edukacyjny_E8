@@ -89,10 +89,10 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `md2html_bio.py` 8 KB
 - `sprawdz_bio.js` 2 KB
 
-## biologia/bio/szablon  (7 pl., 279 KB)
+## biologia/bio/szablon  (7 pl., 280 KB)
 - `baza-wspolna.css` 45 KB
 - `bio-core.js` 18 KB
-- ⚠`bio-rysunki.js` 141 KB
+- ⚠`bio-rysunki.js` 142 KB
 - ⚠`bio-viz.js` 61 KB
 - `bio-warstwa.css` 11 KB
 - `index.html` 1 KB
@@ -106,14 +106,14 @@ Pominięte: .specstory/, .vscode/, .claude/
 
 ## biologia/html  (55 pl., 11.4 MB)
 - (zwinięte; `ls biologia/html`) — duże:
-- ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 360 KB
-- ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 396 KB
+- ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 362 KB
+- ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 397 KB
 - ⚠`BIO.01.B1b.krzyzowki_mendel.html` 145 KB
 - ⚠`BIO.01.L001.komorka.html` 221 KB
 - ⚠`BIO.01.L001A.dodatek_ambitny_od_komorki_do.html` 155 KB
-- ⚠`BIO.01.L002.powtorka_czlowiek.html` 332 KB
+- ⚠`BIO.01.L002.powtorka_czlowiek.html` 333 KB
 - ⚠`BIO.01.L003.diagnoza.html` 200 KB
-- ⚠`BIO.01.L004.organizacja_budowy_organizmu_od_komorki.html` 281 KB
+- ⚠`BIO.01.L004.organizacja_budowy_organizmu_od_komorki.html` 282 KB
 
 ## biologia/niewykorzystane/archiwum_md  (3 pl., 46 KB)
 - `L001_komorka_jako_podstawowa_jednostka_zycia.md` 13 KB
@@ -776,14 +776,14 @@ Pominięte: .specstory/, .vscode/, .claude/
 
 ## okladki/biologia/html  (54 pl., 11.4 MB)
 - (zwinięte; `ls okladki/biologia/html`) — duże:
-- ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 360 KB
-- ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 396 KB
+- ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 362 KB
+- ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 397 KB
 - ⚠`BIO.01.B1b.krzyzowki_mendel.html` 145 KB
 - ⚠`BIO.01.L001.komorka.html` 221 KB
 - ⚠`BIO.01.L001A.dodatek_ambitny_od_komorki_do.html` 155 KB
-- ⚠`BIO.01.L002.powtorka_czlowiek.html` 332 KB
+- ⚠`BIO.01.L002.powtorka_czlowiek.html` 333 KB
 - ⚠`BIO.01.L003.diagnoza.html` 200 KB
-- ⚠`BIO.01.L004.organizacja_budowy_organizmu_od_komorki.html` 281 KB
+- ⚠`BIO.01.L004.organizacja_budowy_organizmu_od_komorki.html` 282 KB
 
 ## okladki/biologia/md  (54 pl., 2.3 MB)
 - (zwinięte; `ls okladki/biologia/md`) — duże:
