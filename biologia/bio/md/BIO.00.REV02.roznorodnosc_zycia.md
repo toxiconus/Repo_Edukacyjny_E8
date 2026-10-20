@@ -388,6 +388,9 @@ CW1. B, C, D, A, E (nasiono i owoc rozwijają się równolegle po zapłodnieniu)
 
 ### 4.7 Drzewa liściaste przy wodzie {#drzewa-liscie}
 
+@viz drzewa-krzewy | Drzewo, krzew, pnącze — pokrój | kliknij, znajdź, podpisz
+@opis Cztery sylwetki: drzewo liściaste (jeden pień i szeroka korona), drzewo iglaste (stożkowata korona), krzew (wiele pędów od ziemi) i pnącze (cienki pęd oplatający podporę). Wniosek: drzewo ma jeden pień, krzew wiele pędów od podstawy, a pnącze potrzebuje podpory.
+
 Cztery drzewa liściaste często występujące przy wodzie i w wilgotnych lasach:
 
 | Drzewo | Nazwa łacińska | Liść | Siedlisko | Ważna cecha |

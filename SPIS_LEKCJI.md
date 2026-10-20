@@ -89,7 +89,7 @@ Etap LKO = do którego etapu konkursu lekcja jest potrzebna: **I** = szkolny (bi
 | plik | etap LKO 2026/27 | warstwy | KB | wiz. | @opis | uwagi |
 |---|---|---|---:|---:|---:|---|
 | `BIO.00.REV01.organizacja_i_chemizm_zycia.md` | I | E8 · rozum. · konkurs · ambitne | 66 | 0 | 10 |  |
-| `BIO.00.REV02.roznorodnosc_zycia.md` | I | E8 · rozum. · konkurs · ambitne | 92 | 0 | 24 |  |
+| `BIO.00.REV02.roznorodnosc_zycia.md` | I | E8 · rozum. · konkurs · ambitne | 92 | 0 | 25 |  |
 | `BIO.01.B1b.krzyzowki_mendel.md` | III (genetyka) | E8 · rozum. · konkurs | 22 | 2 | 3 |  |
 | `BIO.01.L001.komorka.md` | poza LKO | E8 · rozum. · konkurs · ambitne | 81 | 0 | 7 |  |
 | `BIO.01.L001A.dodatek_ambitny_od_komorki_do.md` | poza LKO | — | 45 | 0 | 2 |  |
@@ -101,7 +101,7 @@ Etap LKO = do którego etapu konkursu lekcja jest potrzebna: **I** = szkolny (bi
 | `BIO.01.L007.oddychanie_komorkowe_skad_komorka_bierze.md` | poza LKO | konkurs | 35 | 0 | 3 |  |
 | `BIO.01.L008.mikroskop_jak_obserwowac_komorke_a.md` | poza LKO | konkurs | 28 | 0 | 2 |  |
 | `BIO.01.L009.podzial_komorki_wzrost_regeneracja_i.md` | poza LKO | konkurs | 26 | 0 | 2 |  |
-| `BIO.02.B10.powtorka_uklady_czlowieka.md` | II | E8 · rozum. · konkurs · ambitne | 19 | 0 | 3 |  |
+| `BIO.02.B10.powtorka_uklady_czlowieka.md` | II | E8 · rozum. · konkurs · ambitne | 19 | 0 | 4 |  |
 | `BIO.02.B2a.skora_uklad_ruchu.md` | II | E8 · rozum. · konkurs · ambitne | 18 | 0 | 3 |  |
 | `BIO.02.B2b.uklad_pokarmowy.md` | II | E8 · rozum. · konkurs · ambitne | 19 | 0 | 2 |  |
 | `BIO.02.B2c.oddychanie_wydalanie.md` | II | E8 · rozum. · konkurs · ambitne | 17 | 1 | 6 |  |

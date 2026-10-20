@@ -2309,6 +2309,31 @@ mount:function(el){
     {n:'przewężenie Ranviera',m:[236,176],d:'Odsłonięty fragment aksonu między odcinkami mieliny; w nim powstaje impuls, który przeskakuje do następnego przewężenia.',draw:function(g){[118,170,222,274].forEach(function(x){g.appendChild(R(x-3,142,6,16,2,'#ffcdd2','#c62828',1.6))})}}
   ]}}})}});
 
+BIO.define('drzewa-krzewy',{opis:'Sylwetki roślin drzewiastych: drzewo liściaste (jeden pień, korona), drzewo iglaste (stożkowata korona), krzew (wiele pędów od ziemi), pnącze; tryby poznaj / znajdź / podpisz',
+mount:function(el){
+  lab(el,{get:function(){return{w:360,h:220,label:'Pokrój drzew i krzewów',parts:[
+    {n:'drzewo liściaste',m:[44,206],d:'Jeden wyraźny pień i szeroka, kulista lub owalna korona z liśćmi (dąb, lipa, brzoza). Pień ma kilka metrów i więcej.',draw:function(g){g.appendChild(R(40,120,10,70,2,'#8a6a40','#5a3a18',2));g.appendChild(C(45,84,38,'#8fcf7a','#2e7d32',2.4))}},
+    {n:'drzewo iglaste',m:[134,206],d:'Prosty pień i korona stożkowata (świerk, jodła) lub parasolowata (sosna); igły zamiast liści.',draw:function(g){g.appendChild(R(130,160,8,30,2,'#8a6a40','#5a3a18',2));g.appendChild(P('M134,24 L170,100 L98,100Z',"#5c9a5c",'#2e5a2e',2.2));g.appendChild(P('M134,60 L180,150 L88,150Z',"#5c9a5c",'#2e5a2e',2.2))}},
+    {n:'krzew',m:[226,206],d:'Wiele równorzędnych pędów wyrastających od ziemi, niski (zwykle poniżej kilku metrów): leszczyna, bez, dzika róża, jałowiec.',draw:function(g){[[-30,70],[-14,50],[0,44],[14,50],[30,70]].forEach(function(o){g.appendChild(P('M226,190 L'+(226+o[0])+','+(190-o[1]*1.3),null,'#6a4a28',3))});g.appendChild(E(226,126,42,30,'#9fd27a','#3f7a2a',2.2));g.appendChild(P('M226,190 L226,150',null,'#6a4a28',3))}},
+    {n:'pnącze',m:[318,206],d:'Cienkie pędy, które wspinają się po podporze (wąsy, korzenie przybyszowe, owijanie): bluszcz, chmiel, dzikie wino.',draw:function(g){g.appendChild(R(306,40,8,150,1,'#b9b9b9','#777',1.6));g.appendChild(P('M310,190 Q336,160 312,130 Q290,100 314,70 Q334,50 312,30',null,'#3f7a2a',3));[[330,164],[294,116],[330,88],[300,56]].forEach(function(p){g.appendChild(E(p[0],p[1],9,6,'#8fcf7a','#2e7d32',1.6,30))})}}
+  ]}}})}});
+
+BIO.define('mapa-narzadow',{opis:'Sylwetka człowieka z narządami układów: mózg, tchawica i płuca, serce, wątroba, żołądek, trzustka, nerki, jelito cienkie, jelito grube, pęcherz moczowy; tryby poznaj / znajdź / podpisz (przypisz układ)',
+mount:function(el){
+  lab(el,{get:function(){return{w:360,h:300,label:'Narządy człowieka',parts:[
+    {n:'sylwetka ciała',m:[336,286],z:-3,d:'Kontur ciała człowieka, na którym zaznaczono położenie narządów.',draw:function(g){g.appendChild(C(180,30,22,'#f3e6d6','#b09070',2));g.appendChild(P('M150,60 Q130,70 130,120 L130,200 Q132,240 150,286 L174,286 L180,230 L186,286 L210,286 Q228,240 230,200 L230,120 Q230,70 210,60Z',"#f3e6d6",'#b09070',2))}},
+    {n:'mózg',m:[216,22],z:1,d:'Układ nerwowy. Ośrodek sterowania: przetwarza informacje i wydaje polecenia.',draw:function(g){g.appendChild(E(180,26,15,12,'#f4a6c6','#b83f78',1.8))}},
+    {n:'płuca',m:[132,98],z:1,d:'Układ oddechowy. Wymiana gazowa: pobranie O₂ i oddanie CO₂ w pęcherzykach płucnych.',draw:function(g){g.appendChild(E(162,96,16,28,'#9ecbf0','#2a6f97',2));g.appendChild(E(198,96,16,28,'#9ecbf0','#2a6f97',2));g.appendChild(P('M180,62 L180,86',null,'#2a6f97',3))}},
+    {n:'serce',m:[216,114],z:2,d:'Układ krążenia. Pompuje krew do płuc i do całego ciała.',draw:function(g){g.appendChild(P('M184,98 Q196,88 202,100 Q206,114 184,128 Q170,114 172,102 Q176,92 184,98Z',"#e57373",'#b23b3b',2))}},
+    {n:'wątroba',m:[134,138],z:1,d:'Układ pokarmowy (gruczoł). Wytwarza żółć, magazynuje glikogen, odtruwa krew.',draw:function(g){g.appendChild(P('M140,132 Q170,124 190,134 L186,152 Q160,158 142,150Z',"#a8643c",'#6a3a18',2))}},
+    {n:'żołądek',m:[222,142],z:2,d:'Układ pokarmowy. Wstępne trawienie białek (sok żołądkowy z kwasem solnym i pepsyną).',draw:function(g){g.appendChild(P('M190,138 Q214,132 214,152 Q210,168 192,160 Q184,150 190,138Z',"#f0b878",'#b5701a',2))}},
+    {n:'trzustka',m:[132,166],z:1,d:'Układ pokarmowy (gruczoł) i dokrewny. Wytwarza sok trzustkowy (enzymy) oraz insulinę i glukagon.',draw:function(g){g.appendChild(P('M150,164 Q176,158 200,166 Q178,174 152,172Z',"#e6d36a",'#a8941a',2))}},
+    {n:'nerki',m:[236,176],z:1,d:'Układ wydalniczy. Filtrują krew i wytwarzają mocz.',draw:function(g){g.appendChild(E(152,184,7,13,'#c46a6a','#7a2a2a',2));g.appendChild(E(208,184,7,13,'#c46a6a','#7a2a2a',2))}},
+    {n:'jelito cienkie',m:[132,206],z:1,d:'Układ pokarmowy. Dokończenie trawienia i wchłanianie substancji odżywczych (kosmki jelitowe).',draw:function(g){g.appendChild(P('M160,200 Q200,196 200,208 Q160,212 162,222 Q202,222 198,234 Q160,236 168,244',null,'#e09a5a',7))}},
+    {n:'jelito grube',m:[232,214],z:0,d:'Układ pokarmowy. Wchłanianie wody i soli mineralnych, formowanie kału.',draw:function(g){g.appendChild(P('M146,244 L146,198 L214,198 L214,244',null,'#8a6a40',6))}},
+    {n:'pęcherz moczowy',m:[132,262],z:1,d:'Układ wydalniczy. Gromadzi mocz przed wydaleniem.',draw:function(g){g.appendChild(E(180,262,10,12,'#f0e08a','#a8941a',2))}}
+  ]}}})}});
+
 var OD=0;
 BIO.define('wentylacja',{opis:'Mechanika oddychania: przepona, żebra, objętość klatki i płuc; animacja wdech ↔ wydech tam i z powrotem (autostart w widoku), suwak do ręcznego sterowania, opis fazy',
 mount:function(el){

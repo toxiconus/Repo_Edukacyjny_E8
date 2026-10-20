@@ -42,6 +42,9 @@ Ten sposób opisu stosujemy zawsze:
 
 ## 2 | Dziesięć układów w skrócie {#uklady}
 
+@viz mapa-narzadow | Narządy człowieka — do jakiego układu należą? | kliknij, znajdź, podpisz
+@opis Sylwetka człowieka z zaznaczonymi narządami: mózg w głowie, płuca i serce w klatce piersiowej, wątroba, żołądek, trzustka, jelita, nerki i pęcherz moczowy w jamie brzusznej. Wniosek: każdy narząd należy do układu, w którym pełni swoją funkcję (np. trzustka — pokarmowy i dokrewny).
+
 ### 2.1 Skóra — układ powłokowy
 - **Budowa:** naskórek (nabłonek wielowarstwowy rogowaciejący), skóra właściwa (tkanka łączna z naczyniami, nerwami, gruczołami i mieszkami), tkanka podskórna (tłuszcz).
 - **Funkcje:** ochrona, termoregulacja, czucie, synteza witaminy D.
