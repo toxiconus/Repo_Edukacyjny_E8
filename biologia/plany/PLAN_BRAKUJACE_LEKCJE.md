@@ -16,8 +16,8 @@ Istnieją: B2a skóra i ruch · B2b pokarmowy · B2c oddychanie i wydalanie · B
 
 | Kod | Proponowana lekcja | Zakres (do napisania) | Priorytet |
 |---|---|---|---|
-| **B2h** | Układ krążenia — etap rejonowy | skład i funkcje krwi (erytrocyty, leukocyty, płytki, osocze), grupy krwi AB0 i Rh (podstawy), budowa serca i obieg (mały i duży), naczynia (tętnice, żyły, naczynia włosowate), tętno i ciśnienie, cykl pracy serca, układ limfatyczny, choroby (miażdżyca, nadciśnienie), zadania z wykresem EKG/ciśnienia | wysoki — brak całkowicie |
-| **B2i** | Układ odpornościowy — etap rejonowy | odporność nieswoista i swoista, bariery, leukocyty, antygeny i przeciwciała, odporność czynna/bierna, szczepionki i surowice, alergie, choroby autoimmunologiczne i AIDS (HIV), przeszczepy, zadania z krzywą odpowiedzi immunologicznej | wysoki — brak całkowicie (fragmenty w B10 i B2b) |
+| **B2h** (pokryte: BIO.07.U04 §2–§7, §10–§11) | Układ krążenia — etap rejonowy | skład i funkcje krwi (erytrocyty, leukocyty, płytki, osocze), grupy krwi AB0 i Rh (podstawy), budowa serca i obieg (mały i duży), naczynia (tętnice, żyły, naczynia włosowate), tętno i ciśnienie, cykl pracy serca, układ limfatyczny, choroby (miażdżyca, nadciśnienie), zadania z wykresem EKG/ciśnienia | wysoki — brak całkowicie |
+| **B2i** (pokryte: BIO.07.U04 §8–§10) | Układ odpornościowy — etap rejonowy | odporność nieswoista i swoista, bariery, leukocyty, antygeny i przeciwciała, odporność czynna/bierna, szczepionki i surowice, alergie, choroby autoimmunologiczne i AIDS (HIV), przeszczepy, zadania z krzywą odpowiedzi immunologicznej | wysoki — brak całkowicie (fragmenty w B10 i B2b) |
 | B2j | Powtórka etapu II — zadania w stylu LKO | arkusz próbny 90 min / 40 pkt na materiale B2a–B2i: tabele, schematy do podpisania, planowanie doświadczeń na układach (np. tętno po wysiłku, pomiar pojemności płuc) | średni — po B2h/B2i |
 | B2k | Narządy zmysłów — rozszerzenie (opcjonalne) | jeśli B2d za krótkie: oko, ucho, skóra, smak, węch; ćwiczenia z rysunkiem | niski |
 
@@ -26,6 +26,6 @@ Genetyka (L010, B1b są), brak: **B3a** budowa chromosomu, mitoza i mejoza, hapl
 
 ## Kolejność i sposób
 1. REV02 — wprowadzić tury 2–4 Perplexity (przed 21.10).
-2. B2h, B2i — paczki dla zewnętrznego AI (szkielet z zakresem + wzorce zadań z arkuszy), po jednej lekcji na turę; stan po audycie W1/W2.
+2. B2h, B2i — pokryte przez BIO.07.U04 (układ krążenia, krew, odporność, szczepienia, choroby). Do zrobienia: audyt W1/W2 U04 i uzupełnienie zadań w stylu arkuszy (krzywa odpowiedzi immunologicznej, tętno po wysiłku).
 3. B2j — arkusz próbny po B2h/B2i.
 4. B3a–B3e — po rejonie.
