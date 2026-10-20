@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="pl" data-przedmiot="oli">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>LKO-STECH · &quot;Masy cząsteczkowe i stechiometria równań — metoda masowa z nadmiarem (LKO etap II, rozszerzenia 6–7)&quot;</title>
+<style id="lekcja-css">
+/* baza.css — wspólna baza lekcji wszystkich przedmiotów (styl lekcji silnika CHE v0_57). Nie edytować — zmiany wspólne w ulepszenia.css, przedmiotowe w motywy/<kod>.css. */
+
+
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+--bg:#fafbfc;--surface:#ffffff;--surface-soft:#f6f8fa;--surface-warm:#fdfaf4;--border:#e5e9ee;--border-strong:#cdd5dd;
+--text:#1a2332;--text-soft:#4a5568;--text-muted:#8892a0;--text-faint:#b4bcc6;
+--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,0.15);
+--c-basic:#2e7d4f;--c-basic-bg:#eaf6ee;--c-basic-line:#b8dcc4;
+--c-understand:#2b5e9c;--c-understand-bg:#eaf1f9;--c-understand-line:#bcd0e5;
+--c-warn:#b06f1c;--c-warn-bg:#fcf4e6;--c-warn-line:#eed8a8;
+--c-error:#b83a45;--c-error-bg:#fbeced;--c-error-line:#e8b5b9;
+--c-extra:#6b3fa0;--c-extra-bg:#f3ecfa;--c-extra-line:#d3bde8;
+--c-new:#0d7d7d;--c-new-bg:#e6f4f4;--c-new-line:#b0dcdc;
+--c-exam:#a86a00;--c-exam-bg:#fdf5e0;--c-exam-line:#eed49c;
+--sh-sm:0 1px 2px rgba(26,35,50,0.04);--sh-md:0 4px 12px rgba(26,35,50,0.06);--sh-lg:0 12px 32px rgba(26,35,50,0.10);--sh-xl:0 20px 48px rgba(26,35,50,0.14);
+--r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;
+--header-h:56px;
+--ease:cubic-bezier(0.4,0,0.2,1);--ease-out:cubic-bezier(0.16,1,0.3,1);
+--hl-key:#0d6868;--hl-key-bg:#d8ecea;--hl-warn:#b83a45;--hl-warn-bg:#fbe0e2;--hl-new:#6b3fa0;--hl-new-bg:#ede0f8;--hl-formula:#084848;--hl-formula-bg:#e0eeed;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;padding:calc(var(--header-h) + 12px) 0 88px;min-height:100vh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+@media(min-width:600px){body{padding:calc(var(--header-h) + 18px) 12px 96px;}}
+@media(min-width:768px){body{padding:calc(var(--header-h) + 24px) 20px 100px;}}
+@media(min-width:1100px){body{padding:calc(var(--header-h) + 28px) 32px 110px;}}
+.fab{position:fixed;top:12px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);background:rgba(255,255,255,0.94);color:var(--text);cursor:pointer;border-radius:var(--r-md);padding:0;transition:all 0.2s var(--ease);z-index:1200;box-shadow:var(--sh-sm);backdrop-filter:blur(8px);}
+.fab:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);box-shadow:var(--sh-md);transform:translateY(-1px);}
+.fab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.fab-left{left:6px;}.fab-right{right:6px;}
+@media(min-width:600px){.fab-left{left:10px;}.fab-right{right:10px;}}
+@media(min-width:768px){.fab-left{left:14px;}.fab-right{right:14px;}}
+.fab-left::after{content:'';width:16px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;border-radius:1px;transition:transform 0.25s var(--ease);}
+.fab-left.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.fab-left.is-open::after{width:16px;height:2px;background:currentColor;box-shadow:none;transform:rotate(45deg);}
+.fab-left.is-open::before{content:'';position:absolute;width:16px;height:2px;background:currentColor;transform:rotate(-45deg);border-radius:1px;}
+.fab-right::after{content:'';display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:8px solid currentColor;transition:transform 0.35s var(--ease-out);}
+.fab-right.is-hidden::after{transform:rotate(0deg);}
+.fab-right:not(.is-hidden)::after{transform:rotate(180deg);}
+.header-wrapper{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);transform:translateY(0);transition:transform 0.45s var(--ease-out),box-shadow 0.3s var(--ease);box-shadow:var(--sh-sm);}
+.header-wrapper.is-hidden{transform:translateY(-100%);box-shadow:none;}
+.header-bar{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:0 16px;height:var(--header-h);}
+@media(min-width:768px){.header-bar{padding:0 24px;}}
+.header-subject{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:1px;padding:4px 10px;background:var(--accent-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;}
+.header-title{font-size:15px;font-weight:700;color:var(--text);letter-spacing:-0.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1 1 auto;min-width:0;}
+.header-lesson{font-size:10px;font-weight:800;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.7px;padding:4px 9px;background:var(--surface-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;font-family:'JetBrains Mono',monospace;}
+.header-nav{display:flex;gap:2px;flex-shrink:0;align-items:center;}
+.header-nav a,.header-nav button{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;border-radius:var(--r-sm);font-size:16px;font-weight:500;transition:all 0.2s var(--ease);border:1px solid transparent;background:transparent;cursor:pointer;padding:0;font-family:inherit;}
+.header-nav a:hover,.header-nav button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.header-resume-btn.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.header-resume-btn::before{content:'▮';font-size:14px;line-height:1;}
+.header-panel{display:none;border-top:1px solid var(--border);background:linear-gradient(180deg,var(--surface) 0%,var(--surface-soft) 100%);padding:20px 16px 24px;}
+@media(min-width:768px){.header-panel{padding:24px 24px 28px;}}
+.header-panel.is-open{display:block;}
+.header-panel-inner{max-width:900px;margin:0 auto;}
+.header-kicker{font-size:11px;color:var(--text-muted);text-transform:uppercase;font-weight:800;letter-spacing:1px;margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.header-kicker::before{content:'';width:24px;height:2px;background:var(--accent);display:inline-block;border-radius:1px;}
+.header-h1{font-size:32px;font-weight:800;color:var(--text);letter-spacing:-1px;margin-bottom:10px;line-height:1.1;}
+.header-subtitle{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:18px;max-width:720px;}
+.header-modes{display:flex;gap:6px;flex-wrap:wrap;}
+.mode-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 15px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);font-family:inherit;}
+.mode-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
+.mode-btn:hover:not(.active){background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.resume-dropdown{display:none;position:fixed;top:calc(var(--header-h) + 6px);right:14px;z-index:1050;width:min(300px,calc(100vw - 30px));padding:14px;border:1px solid var(--border-strong);border-radius:12px;background:#fff;box-shadow:var(--sh-lg);}
+.resume-dropdown.is-open{display:block;}
+.resume-dropdown h4{margin:0 0 5px;color:var(--text);font-size:.85rem;}
+.resume-dropdown p{margin:0 0 12px;color:var(--text-muted);font-size:.75rem;line-height:1.5;}
+.resume-actions{display:flex;gap:6px;}
+.resume-actions button{flex:1;padding:8px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text-soft);font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.resume-actions .resume-save{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toc-overlay{position:fixed;inset:0;background:rgba(26,35,50,0.34);backdrop-filter:blur(3px);z-index:1100;opacity:0;visibility:hidden;transition:opacity 0.3s var(--ease),visibility 0.3s var(--ease);}
+.toc-overlay.is-visible{opacity:1;visibility:visible;}
+.toc-wrapper{position:fixed;left:0;top:0;width:320px;max-width:86vw;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:1150;transform:translateX(-100%);transition:transform 0.4s var(--ease-out);padding-top:64px;box-shadow:var(--sh-xl);}
+.toc-wrapper.is-open{transform:translateX(0);}
+.toc-content{padding:12px 14px 100px;}
+.toc-header{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);padding:4px 12px 12px;}
+.toc-item{margin-bottom:4px;border-radius:var(--r-md);overflow:hidden;}
+.toc-summary{padding:10px 12px;font-size:13px;font-weight:700;color:var(--text);cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;border-radius:var(--r-sm);transition:background 0.2s var(--ease),color 0.2s var(--ease);user-select:none;}
+.toc-summary:hover{background:var(--accent-soft);color:var(--accent);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::marker{content:'';}
+.toc-summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);opacity:0.5;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);opacity:1;}
+.toc-links{padding:4px 0 8px 28px;display:flex;flex-direction:column;gap:1px;}
+.toc-link{display:block;padding:6px 10px;font-size:12.5px;color:var(--text-soft);text-decoration:none;border-radius:4px;transition:all 0.2s var(--ease);border-left:2px solid transparent;}
+.toc-link:hover{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);}
+.container{max-width:820px;margin:0 auto;background:var(--surface);border-radius:0;box-shadow:none;padding:18px 12px;border:none;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+@media(min-width:600px){.container{border-radius:var(--r-lg);box-shadow:var(--sh-md);border:1px solid var(--border);padding:22px 18px;}}
+@media(min-width:768px){.container{padding:36px 36px;border-radius:var(--r-xl);}}
+@media(min-width:1100px){.container{max-width:840px;padding:40px 40px;}}
+h1,h2,h3,h4,h5{font-weight:800;color:var(--text);letter-spacing:-0.3px;line-height:1.3;}
+h2{font-size:24px;margin-top:44px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+h3{font-size:17px;margin-top:32px;margin-bottom:12px;font-weight:800;}
+h4{font-size:15px;margin-top:24px;margin-bottom:10px;font-weight:800;}
+h5{font-size:13px;margin-top:16px;margin-bottom:8px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-soft);}
+p{margin-bottom:12px;}
+ul,ol{padding-left:24px;margin-bottom:14px;}
+li{margin-bottom:6px;padding-left:4px;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s var(--ease);}
+a:hover{border-bottom-color:var(--accent);}
+strong{font-weight:700;color:var(--text);}
+.hl{background:var(--hl-key-bg);color:var(--hl-key);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-warn{background:var(--hl-warn-bg);color:var(--hl-warn);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-new{background:var(--hl-new-bg);color:var(--hl-new);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.formula{display:inline-block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:14px;font-weight:600;color:var(--hl-formula);background:var(--hl-formula-bg);padding:4px 12px;border-radius:var(--r-sm);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:3px 2px;white-space:nowrap;}
+.formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
+code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
+pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
+.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
+.mnemonic b{color:#78350f;}
+.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
+@media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
+.card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
+.card-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:10px;padding:3px 9px;background:var(--accent-soft);border-radius:4px;}
+.card-core{background:var(--accent-soft);border-color:var(--accent-line);border-left-color:var(--accent);}
+.card-basic{background:var(--c-basic-bg);border-color:var(--c-basic-line);border-left-color:var(--c-basic);}
+.card-basic .card-label{background:rgba(46,125,79,0.12);color:var(--c-basic);}
+.card-understand{background:var(--c-understand-bg);border-color:var(--c-understand-line);border-left-color:var(--c-understand);}
+.card-understand .card-label{background:rgba(43,94,156,0.12);color:var(--c-understand);}
+.card-warning{background:var(--c-warn-bg);border-color:var(--c-warn-line);border-left-color:var(--c-warn);}
+.card-warning .card-label{background:rgba(176,111,28,0.12);color:var(--c-warn);}
+.card-error{background:var(--c-error-bg);border-color:var(--c-error-line);border-left-color:var(--c-error);}
+.card-error .card-label{background:rgba(184,58,69,0.12);color:var(--c-error);}
+.card-extra{background:var(--c-extra-bg);border-color:var(--c-extra-line);border-left-color:var(--c-extra);}
+.card-extra .card-label{background:rgba(107,63,160,0.12);color:var(--c-extra);}
+.card-new{background:var(--c-new-bg);border-color:var(--c-new-line);border-left-color:var(--c-new);}
+.card-new .card-label{background:rgba(13,125,125,0.12);color:var(--c-new);}
+.card-exam{background:var(--c-exam-bg);border-color:var(--c-exam-line);border-left-color:var(--c-exam);}
+.card-exam .card-label{background:rgba(168,106,0,0.12);color:var(--c-exam);}
+.card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0;}
+details.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent-line);border-radius:var(--r-sm);padding:10px 14px;margin:10px 0;transition:all 0.2s var(--ease);}
+details.answer[open]{background:var(--accent-soft);border-left-color:var(--accent);}
+details.answer summary{cursor:pointer;font-weight:700;color:var(--text-soft);font-size:13px;list-style:none;user-select:none;display:flex;align-items:center;gap:10px;transition:color 0.2s var(--ease);}
+details.answer summary::-webkit-details-marker{display:none;}
+details.answer summary::marker{content:'';}
+details.answer summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer[open] summary{color:var(--accent);}
+details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}
+.part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}
+@media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}
+.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
+@media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}
+.table-wrap th,.table-wrap td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px;}
+@media(min-width:600px){.table-wrap th,.table-wrap td{padding:10px 12px;font-size:13.5px;}}
+.table-wrap th{background:var(--surface-soft);font-weight:800;color:var(--text-soft);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;}
+@media(min-width:600px){.table-wrap th{font-size:11px;letter-spacing:0.7px;white-space:nowrap;}}
+.table-wrap.table-compact td,.table-wrap.table-compact th{padding:7px 6px;font-size:12.5px;}
+.table-wrap tr:last-child td{border-bottom:none;}
+.table-wrap tr:hover td{background:var(--accent-soft);}
+.table-wrap .error-row{background:var(--c-error-bg);}
+.table-wrap .ok-row{background:var(--c-basic-bg);}
+.def-list{display:flex;flex-direction:column;gap:8px;margin:14px 0;}
+.def-item{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px 16px;}
+.def-item dt{font-weight:800;color:var(--text);font-size:13.5px;margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+.def-item dt::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;}
+.def-item dd{color:var(--text-soft);font-size:13.5px;line-height:1.6;margin:0;padding-left:11px;}
+.minimum-card{background:linear-gradient(135deg,var(--surface-soft) 0%,var(--accent-soft) 100%);border:1px solid var(--accent-line);border-radius:var(--r-lg);padding:20px 22px;margin:8px 0 28px;box-shadow:var(--sh-sm);position:relative;overflow:hidden;}
+@media(min-width:768px){.minimum-card{padding:28px 34px;margin-bottom:36px;}}
+.minimum-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:var(--accent);}
+.minimum-card h3{color:var(--accent);margin:0 0 16px;font-size:16px;letter-spacing:0.2px;display:flex;align-items:center;gap:10px;}
+.minimum-card h3::before{content:'★';font-size:16px;}
+.minimum-card ol{margin:0;padding-left:0;list-style:none;counter-reset:min-list;}
+.minimum-card li{counter-increment:min-list;padding-left:36px;position:relative;margin-bottom:12px;font-size:14px;line-height:1.6;}
+.minimum-card li::before{content:counter(min-list);position:absolute;left:0;top:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--surface);color:var(--accent);border:2px solid var(--accent-line);border-radius:50%;font-size:12px;font-weight:800;}
+.minimum-card li:last-child{margin-bottom:0;}
+.level-badge{display:inline-block;font-size:9.5px;font-weight:800;text-transform:uppercase;padding:2px 9px;border-radius:12px;vertical-align:middle;letter-spacing:0.5px;line-height:1.6;margin-left:8px;}
+.level-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.level-understand{background:var(--c-understand-bg);color:var(--c-understand);}
+.level-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.level-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.level-new{background:var(--c-new-bg);color:var(--c-new);}
+.rule-box{background:var(--c-understand-bg);border:1px solid var(--c-understand-line);border-radius:var(--r-md);padding:14px 18px;margin:14px 0;font-size:14px;line-height:1.65;}
+.rule-box b{color:var(--c-understand);}
+.step-flow{background:var(--text);color:#fff;padding:16px 18px;border-radius:var(--r-md);font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:12.5px;line-height:1.9;margin:14px 0;overflow-x:auto;white-space:pre;}
+@media(min-width:768px){.step-flow{font-size:13.5px;padding:16px 20px;}}
+.footer{margin-top:56px;padding-top:24px;border-top:2px solid var(--border);text-align:center;font-size:12.5px;color:var(--text-muted);letter-spacing:0.2px;}
+.footer p{margin-bottom:4px;}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:6px;border:2px solid var(--bg);}
+::-webkit-scrollbar-thumb:hover{background:var(--text-muted);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.bottom-nav{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:1100;width:min(700px,calc(100vw - 24px));font-size:.78rem;}
+.bottom-nav__toggle{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;padding:8px 14px;border:1px solid var(--border-strong);border-radius:999px;background:rgba(255,255,255,.97);color:var(--text-soft);font:700 .72rem inherit;box-shadow:0 5px 18px rgba(15,23,42,.14);cursor:pointer;backdrop-filter:blur(10px);font-family:inherit;}
+.bottom-nav__panel{display:none;margin-bottom:7px;padding:10px;border:1px solid var(--border-strong);border-radius:14px;background:rgba(255,255,255,.98);box-shadow:0 10px 28px rgba(15,23,42,.16);backdrop-filter:blur(12px);}
+.bottom-nav.is-open .bottom-nav__panel{display:block;}
+.bottom-nav__primary{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.bottom-nav a,.bottom-nav button.nav-more{min-height:36px;display:flex;align-items:center;justify-content:center;padding:6px 8px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--text-soft);text-decoration:none;font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.bottom-nav a:hover,.bottom-nav button.nav-more:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+@media(max-width:420px){
+  .bottom-nav{font-size:.7rem;width:calc(100vw - 12px);}
+  .bottom-nav a,.bottom-nav button.nav-more{padding:6px 4px;font-size:.65rem;}
+}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
+.widget{background:var(--surface);border:2px solid var(--border);border-radius:var(--r-md);padding:14px;margin:14px 0;box-shadow:var(--sh-sm);}
+@media(min-width:768px){.widget{padding:22px 26px;margin:20px 0;border-radius:var(--r-lg);}}
+.widget h4{margin:0 0 8px;color:var(--text);font-size:15px;font-weight:800;}
+@media(min-width:768px){.widget h4{font-size:16px;}}
+.widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
+.bld-pool{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.bld-pool button{padding:6px 12px;border:1px solid var(--border);border-radius:20px;background:#fff;font:600 0.8rem inherit;cursor:pointer;font-family:inherit;color:var(--text);}
+.bld-pool button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bld-workspace{min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;}
+.bld-feedback,.re-result,.st-feedback,.ch-feedback{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;line-height:1.5;}
+.bld-feedback.ok,.re-result.ok,.st-feedback.ok,.ch-feedback.ok{background:var(--c-basic-bg);color:var(--c-basic);border:1px solid var(--c-basic-line);}
+.bld-feedback.bad,.re-result.bad,.st-feedback.bad,.ch-feedback.bad{background:var(--c-error-bg);color:var(--c-error);border:1px solid var(--c-error-line);}
+.bld-feedback.info,.re-result.info,.st-feedback.info,.ch-feedback.info{background:var(--c-understand-bg);color:var(--c-understand);border:1px solid var(--c-understand-line);}
+.bld-feedback.warn,.re-result.warn,.st-feedback.warn,.ch-feedback.warn{background:var(--c-warn-bg);color:var(--c-warn);border:1px solid var(--c-warn-line);}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);color:var(--text);font-family:inherit;}
+.btn:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent);}
+.btn-primary:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+.btn-sm{padding:6px 10px;font-size:12px;}
+.flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}
+@media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--border);border-radius:var(--r-md);background:#fff;color:var(--text);font:inherit;text-align:center;cursor:pointer;box-shadow:var(--sh-sm);transition:all 0.2s var(--ease);position:relative;font-family:inherit;}
+.flashcard:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-3px);box-shadow:var(--sh-md);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:90px;}
+.flashcard .front{font-weight:700;font-size:14.5px;line-height:1.5;}
+.flashcard .back{display:none;color:var(--text-soft);font-size:13.5px;line-height:1.6;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:8px;right:8px;font-size:9px;text-transform:uppercase;background:var(--surface-soft);padding:2px 8px;border-radius:10px;color:var(--text-muted);font-weight:800;letter-spacing:0.4px;}
+.flashcard .card-tag.tag-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.flashcard .card-tag.tag-error{background:var(--c-error-bg);color:var(--c-error);}
+.flashcard .card-tag.tag-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.flashcard .card-tag.tag-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.checklist{background:#fff;border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.checklist h4{color:var(--c-basic);margin:0 0 12px;font-size:15px;}
+.checklist ul{list-style:none;padding-left:0;margin:0;}
+.checklist li{padding:7px 0;font-size:13.5px;border-bottom:1px dashed var(--c-basic-line);display:flex;align-items:flex-start;gap:10px;line-height:1.55;}
+.checklist li:last-child{border-bottom:none;}
+.checklist li::before{content:'☐';color:var(--c-basic);font-weight:700;font-size:1.15rem;flex-shrink:0;line-height:1.2;}
+.core-path{background:linear-gradient(135deg,var(--c-basic-bg) 0%,#dcefe2 100%);border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:800;color:var(--c-basic);font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.core-path .cp-title::before{content:'▶';font-size:12px;}
+.core-path ol{margin:0;padding-left:22px;}
+.core-path li{margin-bottom:6px;font-size:13.5px;line-height:1.6;}
+.audit-panel{background:var(--surface-soft);border:2px solid var(--border-strong);border-radius:var(--r-lg);padding:16px 18px;margin:16px 0;}
+.audit-panel h4{margin:0 0 12px;color:var(--text);}
+.audit-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px;}
+@media(min-width:600px){.audit-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}}
+.audit-item{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:10px 12px;font-size:12.5px;line-height:1.55;}
+.mini-note{font-size:12.5px;color:var(--text-muted);font-style:italic;margin-top:8px;line-height:1.55;}
+.layer-legend{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:12px 14px;margin:12px 0;display:grid;grid-template-columns:1fr;gap:8px 18px;}
+@media(min-width:600px){.layer-legend{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;}}
+.layer-legend .layer-row{display:flex;gap:10px;align-items:center;font-size:12.5px;line-height:1.5;}
+.layer-legend .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.e8{background:var(--c-basic);}
+.layer-legend .dot.understand{background:var(--c-understand);}
+.layer-legend .dot.extra{background:var(--c-extra);}
+.layer-legend .dot.contest{background:var(--c-warn);}
+.klinika-table td.col-blad{color:var(--c-error);font-weight:700;}
+.klinika-table td.col-blad::before{content:'✕ ';font-weight:900;margin-right:4px;color:var(--c-error);}
+.klinika-table td.col-ok{color:var(--c-basic);font-weight:700;}
+.klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}
+.map-card{position:relative;}
+.map-expand-btn{position:absolute;top:10px;right:10px;z-index:3;padding:6px 12px;border:1px solid var(--accent-line);background:rgba(255,255,255,0.95);color:var(--accent);border-radius:var(--r-sm);font-size:12px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:var(--sh-sm);transition:all 0.15s var(--ease);}
+.map-expand-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.map-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(26,35,50,0.85);backdrop-filter:blur(6px);}
+.map-overlay.is-open{display:block;}
+.map-overlay-inner{position:absolute;inset:12px;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-xl);}
+.map-overlay-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface-soft);gap:8px;flex-wrap:wrap;}
+.map-overlay-title{font-weight:800;font-size:14px;color:var(--text);}
+.map-overlay-actions{display:flex;gap:6px;}
+.map-overlay-actions button{padding:6px 12px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;color:var(--text-soft);transition:all 0.15s var(--ease);}
+.map-overlay-actions button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.map-overlay-actions .map-close{background:var(--c-error);color:#fff;border-color:var(--c-error);}
+.map-overlay-canvas{flex:1;overflow:hidden;position:relative;background:#fff;cursor:grab;touch-action:none;}
+.map-overlay-canvas svg{display:block;position:absolute;top:0;left:0;transform-origin:0 0;}
+@media print{
+.fab,.toc-wrapper,.toc-overlay,.header-wrapper,.bottom-nav,.resume-dropdown,.map-overlay,.map-expand-btn{display:none !important;}
+body{padding:0;background:#fff;}
+.container{box-shadow:none;border:none;padding:0;max-width:100%;}
+details.answer{page-break-inside:avoid;}
+details.answer > *:not(summary){display:block !important;}
+details.answer summary{display:none;}
+.card{page-break-inside:avoid;}
+.widget{page-break-inside:avoid;}
+}
+@media (prefers-reduced-motion: reduce){
+*{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+html{scroll-behavior:auto;}
+}
+html,body{max-width:100%;overflow-x:hidden;}
+.table-scroll-hint{display:none;align-items:center;justify-content:space-between;gap:8px;padding:7px 11px;margin-top:0;margin-bottom:8px;border:1px solid var(--border);border-bottom:0;border-radius:var(--r-sm) var(--r-sm) 0 0;background:var(--surface-soft);color:var(--text-muted);font-size:11px;font-weight:700;}
+.table-wrap.is-scrollable + .table-scroll-hint{display:flex;}
+.table-scroll-hint .scroll-arrow{font-size:13px;letter-spacing:2px;color:var(--accent);}
+.timeline-anim{border-color:var(--c-understand-line);}
+.ta-stage{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 14px;min-height:280px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.ta-scene{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;animation:taFade 0.6s ease-out;width:100%;}
+@keyframes taFade{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.ta-scene .ta-year{font-size:1.7rem;font-weight:800;color:var(--accent);font-family:'JetBrains Mono',monospace;letter-spacing:1px;}
+.ta-scene .ta-who{font-size:1.05rem;font-weight:800;color:var(--text);}
+.ta-scene .ta-desc{font-size:13.5px;color:var(--text-soft);max-width:600px;line-height:1.65;}
+.ta-dots{display:flex;justify-content:center;gap:8px;margin:14px 0 8px;}
+.ta-dot{width:12px;height:12px;border-radius:50%;background:var(--border-strong);border:2px solid transparent;cursor:pointer;padding:0;transition:all 0.2s var(--ease);}
+.ta-dot.active{background:var(--accent);transform:scale(1.25);box-shadow:0 0 0 3px var(--accent-glow);}
+.ta-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;}
+.ta-nav{padding:8px 14px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-weight:700;color:var(--text-soft);cursor:pointer;font-size:12.5px;transition:all 0.15s var(--ease);}
+.ta-nav:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.ta-progress{font-size:12.5px;color:var(--text-muted);font-weight:700;font-family:'JetBrains Mono',monospace;}
+.eq-player{background:linear-gradient(180deg,#f8fafc,#eef6f5);border:2px solid var(--accent-line);border-radius:var(--r-lg);padding:16px 18px;margin:14px 0;}
+.eq-stage{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.15rem;padding:12px;background:#fff;border-radius:var(--r-md);border:1px solid var(--border);}
+.eq-term{display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border);opacity:0;}
+.eq-term.show{opacity:1;animation:reaction-flow 0.7s ease-out;}
+.eq-term.reactant{background:#e0f2fe;border-color:#7dd3fc;color:#0c4a6e;}
+.eq-term.product{background:#dcfce7;border-color:#86efac;color:#14532d;}
+.eq-arrow{opacity:0;color:var(--accent);font-size:1.4rem;}
+.eq-arrow.show{opacity:1;}
+.eq-balance{margin-top:10px;font-size:13px;color:var(--text-soft);display:none;}
+.eq-balance.show{display:block;}
+@keyframes reaction-flow{0%{opacity:.25;transform:scale(.92)}55%{opacity:1}100%{opacity:1;transform:scale(1)}}
+.ion-assembly{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;padding:18px 12px;background:#fff;border:1px solid var(--border);border-radius:var(--r-md);margin:10px 0;}
+.ion-chip{padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid var(--border);}
+.ion-chip.cation{background:#e0f2fe;border-color:#38bdf8;color:#0c4a6e;}
+.ion-chip.anion{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.ion-chip.product{background:#dcfce7;border-color:#4ade80;color:#14532d;}
+.ion-plus,.ion-join{font-size:1.4rem;font-weight:800;color:var(--text-muted);}
+.hero{max-width:900px;margin:0 auto 22px;padding:26px;border:1px solid var(--border);border-radius:var(--r-xl);background:linear-gradient(135deg,#fff,var(--accent-soft));box-shadow:var(--sh-md);}
+.hero h1{font-size:clamp(32px,6vw,52px);margin:4px 0 8px;}
+.hero-kicker{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--accent);text-transform:uppercase;}
+.lead{font-size:16px;color:var(--text-soft);max-width:720px;}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;}
+.page{max-width:900px;margin:0 auto;}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+@media(max-width:720px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px;}
+.metric-grid>div,.result-card,.step-card{padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);}
+.metric-grid b{display:block;font-size:10px;text-transform:uppercase;color:var(--text-muted);}
+.metric-grid strong{display:block;margin-top:3px;}
+@media(max-width:700px){.metric-grid{grid-template-columns:1fr;}}
+.controls,.button-grid{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;}
+.controls button,.button-grid button,.quiz-opt{padding:8px 12px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;cursor:pointer;}
+.particle-stage{height:120px;display:flex;align-items:center;justify-content:center;gap:70px;border:1px dashed var(--border-strong);border-radius:10px;margin-top:12px;}
+.particle{font-size:30px;font-weight:800;}
+.p-h3o{color:var(--accent);}
+.p-cl{color:#b83a45;}
+.ph-scale{display:flex;justify-content:space-between;margin-top:6px;font:700 11px 'JetBrains Mono',monospace;}
+.buffer-tank{height:28px;border:1px solid var(--border-strong);border-radius:999px;overflow:hidden;margin:14px 0;background:var(--surface-soft);}
+#bufferFill{height:100%;width:100%;background:var(--accent);transition:width .2s;}
+.quiz-wrap{margin:16px 0;}
+.quiz-q{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:14px 16px;margin-bottom:12px;}
+.quiz-q h5{margin:0 0 10px;font-size:14.5px;color:var(--text);text-transform:none;letter-spacing:0;line-height:1.45;}
+.quiz-q .q-tag{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:10px;margin-bottom:8px;background:var(--surface-soft);color:var(--text-muted);}
+.quiz-opts{display:flex;flex-direction:column;gap:8px;}
+.quiz-opt{display:block;width:100%;text-align:left;padding:10px 12px;border:2px solid var(--border);border-radius:var(--r-sm);background:#fff;font:inherit;font-size:13.5px;cursor:pointer;transition:all 0.15s var(--ease);color:var(--text);}
+.quiz-opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft);}
+.quiz-opt.correct{border-color:var(--c-basic);background:var(--c-basic-bg);color:var(--c-basic);font-weight:700;}
+.quiz-opt.wrong{border-color:var(--c-error);background:var(--c-error-bg);color:var(--c-error);}
+.quiz-opt:disabled{cursor:default;opacity:0.95;}
+.quiz-fb{margin-top:8px;font-size:13px;line-height:1.5;display:none;padding:8px 10px;border-radius:var(--r-sm);}
+.quiz-fb.show{display:block;}
+.quiz-fb.ok{background:var(--c-basic-bg);color:var(--c-basic);}
+.quiz-fb.bad{background:var(--c-error-bg);color:var(--c-error);}
+.quiz-score{text-align:center;padding:14px;background:var(--surface-soft);border-radius:var(--r-md);margin-top:16px;font-weight:800;color:var(--accent);display:none;}
+.quiz-score.show{display:block;}
+.lab-bridge{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 28px;padding:14px 16px;border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);background:linear-gradient(135deg,var(--surface-soft),var(--accent-soft));}
+.lab-bridge strong{display:block;color:var(--accent-dark);}
+.lab-bridge span{display:block;margin-top:3px;color:var(--text-soft);font-size:13px;}
+.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;}
+.lab-bridge-btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
+@media(max-width:600px){.lab-bridge{align-items:flex-start;flex-direction:column;}.lab-bridge-btn{width:100%;text-align:center;}}
+.exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}
+.exp-card h5{margin:0 0 10px;color:var(--c-basic);font-size:14px;text-transform:none;letter-spacing:0;}
+.exp-grid{display:grid;grid-template-columns:1fr;gap:6px;font-size:13.5px;line-height:1.55;}
+@media(min-width:600px){.exp-grid{grid-template-columns:110px 1fr;}}
+.exp-grid b{color:var(--text-soft);font-size:11px;text-transform:uppercase;letter-spacing:0.4px;}
+
+.js-reveal .card:not(.in),.js-reveal .widget:not(.in){opacity:0;transform:translateY(14px)}
+.js-reveal .card,.js-reveal .widget{transition:opacity .55s var(--ease),transform .55s var(--ease)}
+
+
+.ion-svg{width:100%;height:auto;display:block;background:radial-gradient(ellipse at 50% 40%,#fff,var(--surface-soft));border:1px solid var(--border);border-radius:var(--r-md);margin-top:10px}
+.ion-svg .mv{transition:transform .9s cubic-bezier(.65,0,.35,1);transform-box:fill-box}
+.ion-svg text{font-family:'JetBrains Mono',monospace;font-weight:800;text-anchor:middle;dominant-baseline:central}
+.ion-svg .fade{opacity:0;transition:opacity .6s ease .35s}
+.ion-svg[data-s="1"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="1"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="1"] .d1,.ion-svg[data-s="2"] .d1{opacity:1}
+.ion-svg[data-s="2"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="2"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="2"] .proton{transform:translate(120px,-40px)}
+.ion-svg[data-s="2"] .arrow{opacity:1}
+.ion-svg[data-s="3"] .g-hcl{transform:translateX(10px)}
+.ion-svg[data-s="3"] .g-w{transform:translateX(-10px)}
+.ion-svg[data-s="3"] .proton{transform:translate(230px,-38px)}
+.ion-svg[data-s="3"] .d3{opacity:1}
+.ion-svg[data-s="3"] .glow{animation:ionGlow 1.6s ease-in-out infinite}
+@keyframes ionGlow{0%,100%{filter:drop-shadow(0 0 2px rgba(13,104,104,.3))}50%{filter:drop-shadow(0 0 10px rgba(13,104,104,.8))}}
+
+
+.ph-bar{position:relative;height:18px;border-radius:999px;margin:10px 0 4px;border:1px solid var(--border-strong);
+background:linear-gradient(90deg,#e5262e 0%,#ef5a28 14%,#f6a21e 28%,#d7d93a 43%,#5cb85c 50%,#21a89a 57%,#2f7fc1 71%,#4a4bb5 86%,#6b2d8f 100%)}
+.ph-marker{position:absolute;top:-6px;width:0;height:0;left:0;transform:translateX(-50%);transition:left .35s var(--ease)}
+.ph-marker::before{content:'';position:absolute;left:-7px;top:0;border:7px solid transparent;border-top:10px solid var(--text)}
+.ph-marker::after{content:attr(data-v);position:absolute;left:0;top:-22px;transform:translateX(-50%);background:var(--text);color:#fff;font:800 11px 'JetBrains Mono',monospace;padding:2px 6px;border-radius:5px;white-space:nowrap}
+.ph-flask{display:inline-block;width:22px;height:22px;border-radius:0 0 8px 8px;border:2px solid var(--text-soft);vertical-align:middle;margin-right:6px;transition:background .35s}
+
+
+.titr-wrap{position:relative}
+#titrationCanvas{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--r-md);background:#fff}
+.titr-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.titr-row input[type=range]{flex:1 1 200px}
+.titr-flask{width:34px;height:42px;border:2px solid var(--text-soft);border-radius:2px 2px 12px 12px;transition:background .3s;flex-shrink:0;position:relative}
+.titr-flask::after{content:'';position:absolute;left:-2px;right:-2px;top:-8px;height:6px;border:2px solid var(--text-soft);border-bottom:0;border-radius:3px 3px 0 0}
+
+
+.buffer-tank{position:relative;height:34px}
+#bufferFill{transition:width .4s var(--ease),background .4s;background-size:28px 28px;background-image:linear-gradient(45deg,rgba(255,255,255,.22) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.22) 75%,transparent 75%)}
+.buffer-tank.pulse{animation:bufPulse .45s ease}
+.buffer-tank.dead{animation:bufDead .5s ease 2}
+@keyframes bufPulse{50%{transform:scale(1.02);box-shadow:0 0 0 4px var(--accent-glow)}}
+@keyframes bufDead{50%{box-shadow:0 0 0 4px rgba(184,58,69,.35)}}
+
+
+.rx-stage{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:12px 0;padding:14px;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md)}
+.rx-beaker{position:relative;width:120px;height:150px;border:3px solid var(--text-soft);border-top:0;border-radius:0 0 18px 18px;background:rgba(255,255,255,.55);overflow:visible;flex-shrink:0}
+.rx-liquid{position:absolute;left:0;right:0;bottom:0;height:100px;border-radius:0 0 14px 14px;background:rgba(220,235,240,.65);transition:background 2.2s ease}
+.rx-solid{position:absolute;left:36px;bottom:2px;width:48px;height:24px;border-radius:40% 40% 8px 8px;opacity:0;transition:height 3.5s ease,opacity .5s,transform 3.5s ease}
+.rx-bubbles,.rx-precip,.rx-fumes{position:absolute;left:0;right:0;bottom:0;height:150px;pointer-events:none;overflow:hidden}
+.rx-fumes{overflow:visible;bottom:100px;height:70px}
+.rx-b{position:absolute;bottom:14px;border-radius:50%;background:rgba(255,255,255,.85);border:1px solid rgba(13,104,104,.45);animation:rxRise 2.2s ease-in forwards}
+@keyframes rxRise{to{transform:translate(var(--dx,0),-92px);opacity:0}}
+.rx-p{position:absolute;top:50px;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #cbd5e1;animation:rxFall 2.4s ease-in forwards}
+@keyframes rxFall{to{transform:translateY(90px)}}
+.rx-cloud{position:absolute;bottom:0;left:6px;right:6px;height:0;background:#fff;border-radius:10px 10px 0 0;box-shadow:0 0 0 1px #e2e8f0;transition:height 4s ease;opacity:.95}
+.rx-f{position:absolute;bottom:0;width:26px;height:26px;border-radius:50%;background:rgba(150,75,20,.55);filter:blur(7px);animation:rxFume 3s ease-out forwards}
+@keyframes rxFume{to{transform:translate(var(--dx,0),-70px) scale(2.2);opacity:0}}
+
+
+.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.rx-label{flex:1 1 200px;font-size:13px;color:var(--text-soft);line-height:1.5}
+.rx-label b{color:var(--text);font-family:'JetBrains Mono',monospace}
+@media print{.js-reveal .card,.js-reveal .widget{opacity:1!important;transform:none!important}}
+
+
+/* ulepszenia.css — warstwa wspólna nad baza.css: pasek lekcji, postęp czytania, spis z podświetleniem,
+   tryb ciemny, komponenty wspólne (mity, drzewo, cytat, dialog, słówka, figura), druk, dostępność.
+   Kolejność w lekcji: baza.css → ulepszenia.css → motywy/<przedmiot>.css. Edytuj tylko tutaj. */
+
+:root{--header-h:52px;--serif:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Charter,Georgia,serif}
+
+/* ---------- pasek lekcji (zamiast nagłówka aplikacji) ---------- */
+.lk-bar{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 12px;
+  background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--border)}
+.lk-subj{flex:none;display:inline-flex;align-items:center;gap:7px;font:800 12.5px/1 Inter,system-ui,sans-serif;color:var(--accent);text-decoration:none;
+  padding:6px 10px 6px 8px;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+.lk-subj i{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+.lk-title{flex:1;min-width:0;font:600 13px/1.25 Inter,system-ui,sans-serif;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lk-btn{flex:none;min-width:36px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);background:var(--surface);
+  color:var(--text);border-radius:9px;padding:0 10px;font:700 12.5px Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+.lk-btn:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.lk-prog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
+@media (max-width:520px){.lk-title{display:none}.lk-bar{justify-content:space-between}}
+
+/* ---------- nagłówek lekcji ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+.hero::after{content:"";position:absolute;inset:-10% -6% -10% 52%;z-index:-1;opacity:.12;pointer-events:none;background:var(--motyw-wzor,none) right center/auto 100% repeat-y}
+.hero h1{text-wrap:balance}
+.hero-kicker{color:var(--accent);text-transform:none;letter-spacing:0;font-size:13px}
+.page{padding:0 16px}
+.lk-btn svg{width:16px;height:16px;display:block}
+.lk-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:12.5px;color:var(--text-muted)}
+.lk-meta b{color:var(--text-soft);font-weight:700}
+
+/* ---------- spis treści: aktywna sekcja ---------- */
+@media (min-width:800px){.toc-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));column-gap:12px}}
+.toc-link.on{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);font-weight:700}
+section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
+
+/* ---------- komponenty wspólne ---------- */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:12px 0}
+.myth-head{grid-column:1/-1;font-weight:800;font-size:14px}
+.myth{border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow:hidden}
+.myth p{margin:0;padding:9px 12px;font-size:13.5px;line-height:1.5}
+.myth p span{display:block;font:800 11px Inter,system-ui;margin-bottom:2px}
+.myth-x{background:var(--c-error-bg)}.myth-x span{color:var(--c-error)}.myth-ok span{color:var(--c-basic)}
+
+.lk-tree{margin:12px 0;font-size:14px;overflow-x:auto}
+.lk-tree ul{list-style:none;margin:0;padding-left:18px}.lk-tree>ul{padding-left:0}
+.lk-tree li{position:relative;padding:3px 0 3px 14px}
+.lk-tree ul ul li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--accent-line)}
+.lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
+.lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
+.lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+
+/* cytat z tekstu (lektura, źródło, wypowiedź) */
+.lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
+.lk-quote blockquote{margin:0;font:400 17px/1.65 var(--serif);color:var(--text)}
+.lk-quote blockquote p{margin:0 0 6px;color:inherit}
+.lk-quote figcaption{margin-top:6px;font-size:12.5px;color:var(--text-muted)}
+
+/* dialog (role A/B, rozmowa, scenka) */
+.lk-dialog{margin:14px 0;display:flex;flex-direction:column;gap:8px}
+.lk-line{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.lk-who{min-width:30px;height:30px;padding:0 8px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font:800 12px Inter,system-ui;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line)}
+.lk-line.b .lk-who{background:var(--surface-soft);color:var(--text-soft);border-color:var(--border)}
+.lk-say{padding:8px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font-size:14.5px;line-height:1.55}
+.lk-say small{display:block;color:var(--text-muted);font-size:12.5px;margin-top:2px}
+
+/* słówka: wyraz — znaczenie — przykład */
+.lk-vocab{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.lk-vocab th{text-align:left;font-size:12px;color:var(--text-muted);font-weight:700;padding:6px 10px;border-bottom:2px solid var(--border)}
+.lk-vocab td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+.lk-vocab td:first-child{font-weight:800;color:var(--accent);white-space:nowrap}
+.lk-vocab td:last-child{color:var(--text-soft);font-style:italic}
+@media (max-width:560px){.lk-vocab thead{display:none}.lk-vocab tr{display:block;padding:8px 0;border-bottom:1px solid var(--border)}
+  .lk-vocab td{display:block;border:0;padding:1px 4px}}
+
+/* figura z biblioteki grafik przedmiotu */
+.lk-fig{margin:16px 0;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);overflow:hidden}
+.lk-fig figcaption{padding:9px 14px;border-top:1px solid var(--border);background:var(--surface-soft);font-size:13px;line-height:1.5;color:var(--text-soft)}
+.lk-fig figcaption b{color:var(--text);margin-right:4px}
+.lk-fig-body{padding:12px}
+.lk-fig svg{display:block;width:100%;height:auto}
+
+/* z chemii (lekcja.css): treści akademickie, plakietki */
+details.adv{border:1px dashed var(--c-warn-line,#eed8a8);border-radius:10px;background:var(--surface-soft,#f6f8fa);margin:10px 0;padding:0 12px}details.adv>summary{cursor:pointer;font-weight:700;color:var(--c-warn,#b06f1c);padding:9px 0;list-style:none}details.adv>summary::-webkit-details-marker{display:none}details.adv>summary::before{content:"▸ "}details.adv[open]>summary::before{content:"▾ "}.adv-tag{font-weight:600;font-size:11px;opacity:.75;margin-left:6px}.adv-body{padding:0 0 10px;font-size:13.5px;line-height:1.6}.adv-body table{font-size:12.5px}.adv-toggle{margin-top:10px;border:1px solid var(--c-warn-line,#eed8a8);background:var(--c-warn-bg,#fcf4e6);color:var(--c-warn,#b06f1c);border-radius:999px;padding:6px 12px;font:700 12px Inter,system-ui,sans-serif;cursor:pointer}.bio-tag{display:inline-block;font:800 10px Inter,system-ui;letter-spacing:.04em;padding:2px 7px;border-radius:99px;background:rgba(46,125,79,.12);color:#2e7d4f;margin-left:6px;vertical-align:middle}.v15{display:inline-block;font:800 9.5px Inter,system-ui;padding:1px 6px;border-radius:99px;background:rgba(13,125,125,.12);color:#0d7d7d;margin-left:6px;vertical-align:middle}@media print{details.adv{display:block}details.adv>.adv-body{display:block}}
+/* z chemii (lekcja.css): telefon, tabele */
+.exp-card{min-width:0;max-width:100%;box-sizing:border-box}.exp-grid>*{min-width:0;overflow-wrap:anywhere}
+@media (max-width:600px){.exp-grid{grid-template-columns:minmax(0,1fr)!important}.exp-grid>b{margin-top:4px}}
+.table-wrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+
+/* klinika błędów (::: klinika) — tabela, na telefonie karty */
+.klinika-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden}
+.klinika-table th{text-align:left;padding:9px 12px;background:var(--surface-soft);color:var(--text-soft);font-size:12px;font-weight:800;border-bottom:1px solid var(--border)}
+.klinika-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.klinika-table tr:last-child td{border-bottom:0}
+@media (max-width:600px){.klinika-table thead{display:none}.klinika-table tr{display:block;padding:8px 12px;border-bottom:1px solid var(--border)}
+  .klinika-table td{display:block;border:0;padding:2px 0}.klinika-table td:not(.col-blad):not(.col-ok){color:var(--text-soft)}}
+
+.lk-pre{margin:12px 0;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-soft);overflow-x:auto;font:12.5px/1.55 ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;color:var(--text-soft);white-space:pre}
+.lk-pre code{font:inherit;background:none;padding:0;color:inherit}
+.lk-hr{border:0;border-top:1px solid var(--border);margin:28px 0}
+
+/* ---------- dostępność ---------- */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;z-index:60;background:var(--surface);color:var(--accent);padding:8px 12px;border-radius:8px}
+.skip-link:focus{left:8px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- tryb ciemny: automatycznie albo przyciskiem (data-theme) ---------- */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme=dark]{
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}
+/* elementy bazy z białym tłem na sztywno */
+html[data-ciemny] :is(.flashcard,.checklist,.audit-item,.layer-legend,.quiz-q,.quiz-opt,.btn,.controls button,.eq-stage,.ion-assembly,.bld-workspace,.bld-pool button,.resume-dropdown,.ta-nav){background:var(--surface);color:var(--text)}
+html[data-ciemny] .hero{background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.active,.step-flow){color:var(--bg)}
+@media (max-width:600px){.hero::after{opacity:.07}}
+
+/* ---------- druk ---------- */
+@media print{
+  .lk-bar,.adv-toggle,.toc-item,.fab,.bottom-nav{display:none!important}
+  body{padding:0;background:#fff;color:#000}
+  .hero::after{display:none}.hero{background:none;box-shadow:none}
+  details.adv,details.answer{display:block}details>*{display:block}
+  .card,.minimum-card,.lk-fig,.myth,.quiz-q{break-inside:avoid;box-shadow:none}
+  a{color:inherit;text-decoration:none}
+}
+
+/* === Dopracowanie czytelności (2026-10-11; z wersji „ulepszonej” U03 użytkownika, uogólnione na wszystkie przedmioty, zgodne z trybem ciemnym) === */
+body{line-height:1.74}
+main{isolation:isolate}
+.hero{border-color:var(--accent-line)}
+.hero::before{content:"";position:absolute;right:-42px;top:-56px;width:180px;height:180px;z-index:-1;pointer-events:none;
+ border:1px solid var(--accent-line);border-radius:50%;opacity:.45;
+ box-shadow:0 0 0 22px var(--accent-glow),0 0 0 44px var(--accent-glow)}
+.part-heading{padding:0 0 12px;border-bottom:1px solid var(--border);align-items:flex-start}
+.part-num{margin-top:1px}
+section[id]{scroll-margin-top:calc(var(--header-h,56px) + 20px)}
+section p{max-width:78ch}
+section ul,section ol{padding-left:1.35rem}
+.card,.exp-card,.widget,.table-wrap{box-shadow:0 2px 8px rgba(24,49,59,.045)}
+.table-wrap{max-width:100%}
+.table-wrap table{line-height:1.55}
+.table-wrap td strong{color:var(--text)}
+.table-wrap tbody tr:nth-child(even) td{background:var(--surface-soft)}
+.table-wrap tbody tr:hover td{background:var(--accent-soft)}
+.mini-note{max-width:80ch}
+:is(button,a,summary,[tabindex]):focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:520px){.hero{padding:20px 16px}.part-heading{font-size:19px;gap:11px}
+ .table-wrap table{font-size:12.5px}.table-wrap th,.table-wrap td{padding:8px 9px}}
+@media(hover:none){.card:hover,.flashcard:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media print{.hero::before{display:none}.card,.exp-card,.table-wrap{break-inside:avoid;box-shadow:none}}
+
+/* fiszki: część ukryta do rozwinięcia (lekcja.js); przy druku — wszystkie */
+.flashcard[hidden]{display:none!important}
+.fz-more{display:block;width:100%;margin:-6px 0 18px;padding:12px 16px;border:2px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent;color:var(--text,#1d2a30);font-family:inherit;font-weight:600;font-size:15px;line-height:1.3;cursor:pointer;text-align:center}
+.fz-more:hover,.fz-more:focus-visible{background:var(--surface-2,rgba(0,0,0,.04))}
+@media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
+.quiz-q[hidden]{display:none!important}
+@media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
+
+/* motyw oli (Olimpiada) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#8a5a00;--accent-dark:#5f3e00;--accent-soft:#fbf1dd;--accent-line:#ecd29a;--accent-glow:rgba(138,90,0,.15);--hl-key:#8a5a00;--hl-key-bg:#f8e9c8;--hl-formula:#5f3e00;--hl-formula-bg:#fbf1dd;--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 120 200%27%3E%3Cg fill=%27%238a5a00%27%3E%3Cpath d=%27M60 20l8 17 19 2-14 13 4 19-17-10-17 10 4-19-14-13 19-2z%27/%3E%3C/g%3E%3Cg fill=%27none%27 stroke=%27%238a5a00%27 stroke-width=%274%27 stroke-linecap=%27round%27%3E%3Cpath d=%27M30 110c-6 30 6 56 30 70M90 110c6 30-6 56-30 70%27/%3E%3C/g%3E%3Cg fill=%27%238a5a00%27%3E%3Cellipse cx=%2726%27 cy=%27128%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-60 26 128%29%27/%3E%3Cellipse cx=%2730%27 cy=%27150%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-40 30 150%29%27/%3E%3Cellipse cx=%2742%27 cy=%27168%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-20 42 168%29%27/%3E%3Cellipse cx=%2794%27 cy=%27128%27 rx=%279%27 ry=%275%27 transform=%27rotate%2860 94 128%29%27/%3E%3Cellipse cx=%2790%27 cy=%27150%27 rx=%279%27 ry=%275%27 transform=%27rotate%2840 90 150%29%27/%3E%3Cellipse cx=%2778%27 cy=%27168%27 rx=%279%27 ry=%275%27 transform=%27rotate%2820 78 168%29%27/%3E%3C/g%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#e9b85a;--accent-dark:#f5d79a;--accent-soft:#2b2312;--accent-line:#5c4a22;--accent-glow:rgba(233,184,90,.2);--hl-key:#efc677;--hl-key-bg:#33290f;--hl-formula:#f5d79a;--hl-formula-bg:#2b2312;}}
+:root[data-theme=dark]{--accent:#e9b85a;--accent-dark:#f5d79a;--accent-soft:#2b2312;--accent-line:#5c4a22;--accent-glow:rgba(233,184,90,.2);--hl-key:#efc677;--hl-key-bg:#33290f;--hl-formula:#f5d79a;--hl-formula-bg:#2b2312;}
+
+/* poziomy olimpijskie 2–4 (wspólne lekcje E8: warstwy dopisane w tej samej lekcji) */
+.poz{display:inline-flex;align-items:center;gap:5px;font:800 11.5px/1 Inter,system-ui;padding:4px 9px;border-radius:999px;border:1px solid var(--accent-line);background:var(--accent-soft);color:var(--accent);vertical-align:middle}
+.poz::before{content:"";width:22px;height:6px;border-radius:3px;background:linear-gradient(90deg,var(--accent) var(--poz-w,33%),var(--accent-line) 0)}
+.poz-2{--poz-w:33%}.poz-3{--poz-w:66%}.poz-4{--poz-w:100%}
+.zad-konk{border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:12px 16px;margin:14px 0;background:var(--surface)}
+.zad-konk>b:first-child{display:flex;justify-content:space-between;gap:10px;margin-bottom:6px}
+.zad-konk .pkt{font:800 12px Inter,system-ui;color:var(--accent);white-space:nowrap}
+
+/* Styl klocków laboratoryjnych (palniki, probówki, układ okresowy) — dobrany do motywu che:
+   jasna karta lekcji (--surface), akcent --accent, tekst --text. Scena z płótnem zostaje ciemna
+   (płomienie i poświaty wyglądają na ciemnym tle), reszta jak w sekcjach lekcji. */
+:root{--lab:#0e2326;--lab-tekst:var(--text,#1a2332);--lab-cisza:var(--text-muted,#8892a0);--lab-linia:var(--border,#e5e9ee)}
+.lab{background:var(--surface,#fff);color:var(--text,#1a2332);border:1px solid var(--border,#e5e9ee);border-radius:var(--r-lg,14px);padding:16px;box-shadow:var(--sh-sm,none);font-family:var(--tekst,Inter,system-ui,sans-serif)}
+.lab-pasek{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between;margin-bottom:12px}
+.lab-pasek .btn{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+.lab-cisza{color:var(--text-muted,#8892a0);font-size:14px}
+.btn{appearance:none;cursor:pointer;border:1px solid var(--accent,#0d6868);background:var(--accent,#0d6868);color:#fff;border-radius:var(--r-md,10px);padding:8px 14px;font:600 13px var(--tekst,Inter,sans-serif)}
+.btn.jasny{background:var(--surface,#fff);color:var(--accent,#0d6868)}
+.btn:hover{filter:brightness(1.08)}
+.btn:focus-visible{outline:2px solid var(--accent,#0d6868);outline-offset:2px}
+.btn[disabled]{opacity:.4;cursor:not-allowed}
+.stacje{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.st{display:flex;flex-direction:column;background:none;border:none;padding:0;min-width:0}
+.st-opis{margin-top:auto;display:flex;flex-direction:column;justify-content:flex-end}
+.st canvas,.rack canvas{display:block;width:100%;height:auto;cursor:pointer;background:var(--lab,#0e2326);border-radius:var(--r-md,10px);margin:6px 0 4px}
+.rack{margin:0 auto}
+.rack-kol{display:grid;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));gap:8px}
+.rack-ce{padding:0 6px;min-width:0;display:flex;flex-direction:column}
+.rack-ce.st-opis{justify-content:flex-end}
+.rack .wyb-gr{display:none}
+.rack .rown{font-size:14px}
+.rack-ce .btn,.st .btn{padding:6px 10px;font-size:12px}
+.st-opis{font-size:14px;color:var(--text,#1a2332)}
+.st-opis p{margin:0 0 6px}
+.rown{font:600 15px var(--naglowek,Inter,sans-serif);color:var(--text,#1a2332)}
+.obs{font-size:14px;color:var(--text-soft,#4a5568)}
+.meta{font-size:12.5px;color:var(--text-muted,#8892a0);display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-bottom:8px}
+.meta .pasek{background:var(--border,#e5e9ee);width:90px;height:8px;display:inline-block;vertical-align:middle;margin-left:6px;border-radius:99px;overflow:hidden}
+.meta .pasek i{display:block;height:100%;background:var(--accent,#0d6868)}
+.ostrz{color:var(--c-error,#b83a45);font-size:13px}
+.zak{display:flex;gap:10px;align-items:center;background:var(--c-warn-bg,#fcf4e6);border:1px solid var(--c-warn-line,#eed8a8);border-radius:var(--r-md,10px);padding:8px 10px;font-size:13px;line-height:1.35;margin:8px 0;color:var(--text,#1a2332)}
+.zak-ik{display:flex;gap:4px;flex:none}
+.el .tr{position:absolute;right:2px;bottom:2px;display:flex}
+.sz{position:relative}
+.sz .tr{position:absolute;top:2px;right:2px;display:flex}
+.tr2{display:flex;font-style:normal;margin-left:auto}
+.kol{display:flex;align-items:center;gap:10px;font-size:15px;color:var(--text,#1a2332)}
+.sw{width:20px;height:20px;border-radius:50%;flex:none;box-shadow:0 0 12px var(--glow,transparent)}
+.sw.pusty{border:2px dashed var(--border-strong,#cdd5dd)}
+.wyb-sym{position:relative;min-width:0}
+.wyb-sym>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:6px;font:700 15px var(--naglowek,Inter,sans-serif);color:var(--text,#1a2332);padding:4px 8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-sm,6px);background:var(--surface,#fff)}
+.wyb-sym>summary::-webkit-details-marker{display:none}
+.wyb-tri{display:inline-block;font-size:11px;color:var(--accent,#0d6868);transition:transform .15s}
+.wyb-sym[open] .wyb-tri{transform:rotate(90deg)}
+.wyb-lista{display:grid;gap:6px;margin:6px 0 8px;padding:8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-md,10px);background:var(--surface,#fff)}
+.wyb-g{display:block;font-size:11px;color:var(--text-muted,#8892a0);margin-bottom:3px}
+.wyb-sy{appearance:none;cursor:pointer;border:1px solid var(--border-strong,#cdd5dd);background:var(--surface-soft,#f6f8fa);color:var(--text,#1a2332);border-radius:var(--r-sm,6px);padding:4px 9px;margin:0 4px 4px 0;font:600 13px var(--naglowek,Inter,sans-serif)}
+.wyb-sy[aria-pressed="true"]{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+/* telefon: kilka stojaków obok siebie — węższy tekst, łamanie długich nazw */
+.kol{min-width:0}
+.kol b{overflow-wrap:anywhere;min-width:0}
+.st-opis{font-size:13px}
+.kol{font-size:14px}
+.stacje{gap:8px}
+.rack-kol{gap:6px}
+@media (max-width:480px){.st-opis .obs{font-size:12.5px}.st .btn,.rack-ce .btn{padding:5px 8px;font-size:12px}}
+.seria-przyciski{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+.seria-btn[aria-pressed="false"]{background:transparent;color:var(--accent,#0d6868)}
+.seria-btn[aria-pressed="true"]{background:var(--accent,#0d6868);color:#fff}
+.seria-opis{margin:0 0 10px;font-size:14px;color:var(--lab-cisza,#8892a0)}
+
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+<header class="lk-bar"><span class="lk-subj"><i></i>Olimpiada</span><span class="lk-title">LKO-STECH &quot;Masy cząsteczkowe i stechiometria równań — metoda masowa z nadmiarem (LKO etap II, rozszerzenia 6–7)&quot;</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<main class="page" id="main">
+<section class="hero card"><div class="hero-kicker">"LKO-STECH · II etap"</div><h1>"Masy cząsteczkowe i stechiometria równań — metoda masowa z nadmiarem (LKO etap II, rozszerzenia 6–7)"</h1><p class="lead">"Ile gramów powstanie z danej masy substratu? Liczymy Mr, pilnujemy pierwiastków cząsteczkowych, a gdy podano dwie masy — najpierw ustalamy, kto ogranicza reakcję."</p><div class="tag-row"><span class="level-badge level-basic">E8</span><span class="level-badge level-understand">ROZUMIENIE</span><span class="level-badge level-extra">LKO II / OLIMP</span></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#minimum">Minimum E8</a><a class="toc-link" href="#s1">Lustro i most</a><a class="toc-link" href="#s2">1. Wykład — Masa cząsteczkowa: procedura i pułapka pierwiastków</a><a class="toc-link" href="#s3">2. Wykład — Stechiometria wzoru: procenty w obie strony</a><a class="toc-link" href="#s4">3. Wykład — Stechiometria równania: proporcja masowa w czterech krokach</a><a class="toc-link" href="#s5">4. Wykład — Niestechiometria: reagent ograniczający (trzy kroki + kontrola)</a><a class="toc-link" href="#s6">KOMPENDIUM — ściąga wynikowa</a><a class="toc-link" href="#zadania">5. Zadania — karty exam i adv</a><a class="toc-link" href="#s7">BŁĘDY TYPOWE (klinika)</a><a class="toc-link" href="#fiszki">6. Fiszki</a><a class="toc-link" href="#slownik">7. Słownik</a><a class="toc-link" href="#test">8. Test</a><a class="toc-link" href="#s8">Ciekawostki</a><a class="toc-link" href="#s9">Notatka dla prowadzącego: granice</a></nav></details>
+<div class="card card-understand">
+<span class="card-label">Zasady tego zestawu — co jest autorskie</span>
+<p>Oznaczenie „podstawa” odnosi się w tym materiale do szkolnych podstaw chemii, a nie do osobnego egzaminu ósmoklasisty z chemii. Zadania i punktacja są autorskie, chyba że jednoznacznie wskazano autentyczny arkusz. Wymagania konkretnego konkursu lub olimpiady należy sprawdzić w jego aktualnym programie.
+Podane czasy, punktacja i progi interpretacji wyniku są zasadami tego autorskiego zestawu. Nie stanowią potwierdzenia zasad rzeczywistego konkursu. Informacje o terminach, wyposażeniu i zakresie etapów wymagają sprawdzenia w dokumentach organizatora.</p>
+</div>
+<section id="minimum" class="minimum-card"><h3>Muszę umieć na LKO II — 10 punktów</h3>
+<ol>
+<li><strong>Mr:</strong> sumuj masy atomowe; pierwiastki cząsteczkowe (H₂, N₂, O₂, Cl₂) liczymy jako cząsteczki (H₂ = 2, O₂ = 32).</li>
+<li><strong>Procenty:</strong> %pierwiastka = (liczba atomów · masa atomowa) ÷ Mr · 100%.</li>
+<li><strong>Wzór z procentów:</strong> dziel procenty przez masy atomowe, potem przez najmniejszą liczbę.</li>
+<li><strong>Proporcja masowa:</strong> masowo pod równaniem, wynik z jednostką — zapis punktowany.</li>
+<li><strong>Nadmiar:</strong> najpierw ustal ograniczający (liczba moli lub masa), dopiero potem produkt od niego.</li>
+</ol>
+</section>
+<section id="s1">
+<div class="part-heading">Lustro i most</div>
+<div class="table-wrap"><table>
+<thead><tr><th></th><th></th></tr></thead>
+<tbody>
+<tr><td><strong>Było (F12, R03)</strong></td><td>masa cząsteczkowa pojedynczych związków, skład procentowy — fragmentarycznie; stężenie % z etapu I</td></tr>
+<tr><td><strong>Teraz</strong></td><td>pełna metoda masowa: proporcja przez Mr×współczynnik, pierwiastki cząsteczkowe jako osobna pułapka, <strong>reagent ograniczający bez słowa „mol"</strong>, zadania zespolone (stężenie % + stechiometria)</td></tr>
+<tr><td><strong>Będzie (etap III / LO)</strong></td><td>mol, Avogadro, masa molowa jako liczba, objętość molowa 22,4 dm³ (R04, R06); wtedy te same zadania skrócą się o połowę</td></tr>
+<tr><td><strong>Olimpijsko</strong></td><td>reagent ograniczający to codzienność przemysłu (nigdy nie płacisz za nadmiar bez powodu); kontrola zachowania masy jako darmowe sprawdzenie wyniku</td></tr>
+</tbody></table></div>
+<p><strong>Cel ucznia.</strong> Po tym suplemencie uczeń: (1) liczy Mr związków — także z nawiasami i dla pierwiastków cząsteczkowych — bez pomyłki; (2) porównuje gęstości gazów przez Mr; (3) liczy skład % i ustala wzór z danych procentowych; (4) prowadzi proporcję masową przez równanie z pełnym zapisem; (5) rozwiązuje zadania z nadmiarem trójkrokową procedurą i <strong>sprawdza wynik</strong> zachowaniem masy; (6) łączy stechiometrię ze stężeniem % w jednym zadaniu.</p>
+<hr class="lk-hr"/>
+</section>
+<section id="s2">
+<div class="part-heading"><span class="part-num">1</span> Wykład — Masa cząsteczkowa: procedura i pułapka pierwiastków</div>
+<h3>1.1 Zasada</h3>
+<figure class="lk-fig" data-klocek="trojkat-przeliczen" data-opt="{&quot;wzor&quot;: &quot;mol&quot;}"><div class="lk-fig-body"></div><figcaption>Trójkąt przeliczeń: masa, mole, cząstki</figcaption></figure>
+<!-- OPIS: Trzy wierzchołki: masa m u góry, liczba moli n w lewym dolnym rogu, liczba cząstek N w prawym. Strzałki przy bokach pokazują działanie: z masy do moli dzielimy przez M, z moli do masy mnożymy przez M, a z moli do cząstek mnożymy przez N_A. Wniosek: każdą konwersję robimy przez mole, a masa molowa jest mostem między gramami a molami. -->
+<p><strong>Mr = suma mas atomowych z uwzględnieniem indeksów (i nawiasów).</strong> Mas atomowych nie uczysz się na pamięć całościowo — na zawodach są w tablicach; rdzeń, który warto mieć w głowie: <strong>H 1 · C 12 · N 14 · O 16 · Na 23 · S 32 · Cl 35,5 · Ca 40 · Fe 56 · Cu 64 · Zn 65 · Ag 108 · Ba 137 · Pb 207</strong>.</p>
+<p>Przykłady z nawiasami:</p>
+<p>Al₂(SO₄)₃ = 2·27 + 3·(32 + 4·16) = 54 + 288 = <strong>342</strong>
+Ca(OH)₂ = 40 + 2·17 = <strong>74</strong></p>
+<h3>1.2 PUŁAPKA nr 1 — pierwiastek ≠ atom</h3>
+<p>Zakres etapu II mówi wprost: „masy cząsteczkowe <strong>pierwiastków występujących w formie cząsteczek</strong>". Wodór, azot, tlen i fluorowce w warunkach normalnych to <strong>cząsteczki dwuatomowe</strong>:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Cząsteczka</th><th>H₂</th><th>N₂</th><th>O₂</th><th>F₂</th><th>Cl₂</th><th>Br₂</th><th>I₂</th><th>P₄</th><th>S₈</th><th>O₃</th></tr></thead>
+<tbody>
+<tr><td>Mr</td><td><strong>2</strong></td><td><strong>28</strong></td><td><strong>32</strong></td><td>38</td><td><strong>71</strong></td><td>160</td><td>254</td><td>124</td><td>256</td><td>48</td></tr>
+</tbody></table></div>
+<p>Najdroższa pomyłka konkursowa: <strong>Mr(O₂) = 32, nie 16</strong> (16 to masa ATOMU). Podobnie Cl₂ = 71, nie 35,5.</p>
+<div class="card card-understand">
+<span class="card-label">Mr, masa cząsteczki i masa molowa — trzy różne pojęcia</span>
+<p>Względna masa cząsteczkowa Mr jest bez jednostki. Masa cząsteczki jest wyrażana w u. Masa molowa M jest wyrażana np. w g/mol.
+Dla H₂O: Mr ≈ 18, masa cząsteczki ≈ 18 u, M ≈ 18 g/mol. Dla NaCl, CaCO₃ i innych kryształów jonowych nie zakładaj istnienia odrębnych cząsteczek: mów o jednostce wzoru.</p>
+</div>
+<h3>1.3 Zastosowanie natychmiastowe: „który gaz cięższy?"</h3>
+<p>Gęstości gazów w tych samych warunkach są <strong>proporcjonalne do Mr</strong>. Porównanie = dzielenie:</p>
+<p>„Ile razy SO₂ jest cięższe od O₂?" → Mr(SO₂)/Mr(O₂) = 64/32 = <strong>2 razy</strong>
+„Ile razy H₂S cięższy od H₂?" → 34/2 = <strong>17 razy</strong>
+„NH₃ czy HCl jest gęstszy od powietrza (Mr ≈ 29)?" → 17 &lt; 29 (lżejszy, zbieranie dnem do góry) · 36,5 > 29 (cięższy, dnem do dołu) — dokładnie tabela z N06, teraz z liczbowym uzasadnieniem.</p>
+<hr class="lk-hr"/>
+<div class="card card-understand">
+<span class="card-label">W skrócie — cząsteczka czy atom?</span>
+<p>Mr pierwiastka w równaniu liczymy dla cząsteczki, jeśli jest dwuatomowa: H₂ = 2, O₂ = 32, N₂ = 28, Cl₂ = 71. Dla metali i gazów szlachetnych — atom. Pułapka pojawia się przy każdym gazie w zadaniu.</p>
+</div>
+</section>
+<section id="s3">
+<div class="part-heading"><span class="part-num">2</span> Wykład — Stechiometria wzoru: procenty w obie strony</div>
+<h3>2.1 Skład procentowy</h3>
+<p>%X = m(X) w próbce / masa próbki × 100%</p>
+<p>Dla związku: %X = (masa X w Mr) / Mr × 100%:</p>
+<p>%Fe w Fe₂O₃ = (2·56)/160 × 100% = 112/160 × 100% = <strong>70%</strong>  (kontrola: %O = 30%, suma 100% ✓)
+%H w H₂O = 2/18 × 100% ≈ 11,1%
+%H w H₂O₂ = 2/34 × 100% ≈ 5,9% — ta sama para pierwiastków, inny wzór, inny procent: <strong>wzór decyduje</strong>.</p>
+<p>Masa składnika w próbce: 8 g MgO zawiera m(O) = 8 × 16/40 = <strong>3,2 g</strong> tlenu.</p>
+<h3>2.2 Od procentów do wzoru (ustalanie wzoru z obliczeń)</h3>
+<p>Skład procentowy pozwala wyznaczyć najprostszy stosunek liczby atomów, czyli <strong>wzór empiryczny</strong>. Do ustalenia wzoru cząsteczkowego związku molekularnego potrzebna jest dodatkowo masa cząsteczkowa lub molowa.</p>
+<div class="card card-understand">
+<span class="card-label">Przykład: od procentów do wzoru cząsteczkowego</span>
+<p>Związek zawiera 40,0% C, 6,7% H i 53,3% O. Dla 100 g próbki: C: 40/12 ≈ 3,33 · H: 6,7/1 = 6,7 · O: 53,3/16 ≈ 3,33. Stosunek ≈ 1:2:1, więc wzór empiryczny to <strong>CH₂O</strong>.
+Jeżeli M związku wynosi 180 g/mol, masa molowa odpowiadająca CH₂O wynosi 30 g/mol. Mnożnik: 180/30 = 6. Wzór cząsteczkowy: <strong>C₆H₁₂O₆</strong>.</p>
+</div>
+<p><em>Tlenek żelaza zawiera 70% Fe. Ustal wzór.</em></p>
+<ol>
+<li>Przyjmij 100 g tlenku: m(Fe) = 70 g, m(O) = 30 g.</li>
+<li><strong>Podziel każdą masę przez masę atomową</strong> — dostajesz stosunek liczb atomów:</li>
+</ol>
+<p>Fe: 70/56 = 1,25 · O: 30/16 = 1,875</p>
+<ol start="3">
+<li>Podziel przez mniejszą: 1,25 : 1,875 = <strong>1 : 1,5</strong>.</li>
+<li>Sprowadź do liczb całkowitych (×2): <strong>2 : 3 → Fe₂O₃</strong>.</li>
+</ol>
+<p>To jest po cichu metoda moli — nazwa przyjdzie na etapie III; na konkursie wystarczy „stosunek liczb atomów". Błąd typowy: dzielenie przez <strong>wartościowość</strong> zamiast przez masę atomową (patrz błędy typowe 8).</p>
+<hr class="lk-hr"/>
+</section>
+<section id="s4">
+<div class="part-heading"><span class="part-num">3</span> Wykład — Stechiometria równania: proporcja masowa w czterech krokach</div>
+<h3>3.1 Serce metody</h3>
+<p><strong>Kluczowa reguła:</strong> w proporcji masowej używamy <strong>Mr × współczynnik stechiometryczny</strong> („masa molowa razy współczynnik" — bez słowa mol):</p>
+<p>2Cu + O₂ → 2CuO
+masowo: 2·64 = 128 g Cu → 2·80 = 160 g CuO (i 32 g O₂)</p>
+<h3>3.2 Procedura czterech kroków (pełny zapis — tak piszemy na zawodach)</h3>
+<p><em>Ile tlenku miedzi(II) powstanie ze spalania 8 g miedzi?</em></p>
+<ol>
+<li><strong>Równanie zbilansowane:</strong> 2Cu + O₂ → 2CuO.</li>
+<li><strong>Masowo pod równaniem:</strong> 128 g Cu → 160 g CuO.</li>
+<li><strong>Proporcja:</strong> 128 g Cu — 160 g CuO · 8 g Cu — x g CuO</li>
+<li><strong>Wynik z jednostką:</strong> x = 8 × 160/128 = <strong>10 g CuO</strong>.</li>
+</ol>
+<p>Kalkulator prosty jest dozwolony — liczenie 8 × 160/128 na zawodach jest w porządku.</p>
+<h3>3.3 Drugi przykład (wodór jako produkt)</h3>
+<p><em>Ile wodoru wydzieli się z 13 g cynku i nadmiaru kwasu solnego?</em></p>
+<p>Zn + 2HCl → ZnCl₂ + H₂↑ → masowo: 65 g Zn → 2 g H₂
+x = 13 × 2/65 = <strong>0,4 g H₂</strong></p>
+<p>Słowo „nadmiar" w treści zadania = licz od cynku, nie myśl o kwasie. Gdy nadmiaru nie ma w treści — patrz WYKŁAD 4.</p>
+<hr class="lk-hr"/>
+<div class="card card-understand">
+<span class="card-label">W skrócie — kto ogranicza?</span>
+<p>Gdy podano masy dwóch substratów, policz, ile moli każdego jest potrzebne do przereagowania drugiego. Ten, którego brakuje, ogranicza reakcję; produkt liczysz od niego, nigdy od substratu w nadmiarze.</p>
+</div>
+</section>
+<section id="s5">
+<div class="part-heading"><span class="part-num">4</span> Wykład — Niestechiometria: reagent ograniczający (trzy kroki + kontrola)</div>
+<h3>4.1 Kiedy trzeba myśleć o nadmiarze</h3>
+<p>Gdy zadanie podaje <strong>masy obu substratów</strong> — nie wolno zakładać stechiometrii. Podanie dwóch mas nie gwarantuje nadmiaru: możliwy jest też przypadek dokładnie stechiometryczny, w którym obie ilości odpowiadają równaniu i żaden substrat nie zostaje. Jeden substrat skończy się pierwszy (<strong>ograniczający</strong>), drugi zostanie (<strong>nadmiar</strong>). Produkt liczymy <strong>zawsze od ograniczającego</strong>.</p>
+<h3>4.2 Procedura trzech kroków</h3>
+<p><em>10 g węglanu wapnia reaguje z 10 g chlorowodoru. Ile CO₂ powstanie?</em></p>
+<ol>
+<li><strong>Równanie i proporcje masowe:</strong> CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂↑
+masowo: 100 g CaCO₃ — 73 g HCl — (— 44 g CO₂)</li>
+<li><strong>Przelicz obie strony</strong> (ile potrzeba jednego dla drugiego):
+10 g CaCO₃ potrzebuje: 10 × 73/100 = <strong>7,3 g HCl</strong> (mamy 10 g → HCl jest w NADMIARZE)
+(kontrola z drugiej strony: 10 g HCl potrzebuje 100 × 10/73 ≈ 13,7 g CaCO₃ — mamy 10 g → brakuje ✓)
+<strong>Ograniczający: CaCO₃.</strong></li>
+<li><strong>Licz produkt od ograniczającego:</strong> m(CO₂) = 10 × 44/100 = <strong>4,4 g</strong>.</li>
+</ol>
+<p><strong>Kontrola pozostałości nadmiaru</strong> (droga do pełnych punktów): zużyto 7,3 g HCl → pozostało 10 − 7,3 = <strong>2,7 g HCl</strong>. Pozostałość zawsze da się policzyć — to darmowy punkt i samocheck.</p>
+<h3>4.3 Zespolenie z etapem I: nadmiar w roztworze % (najczęstszy format konkursowy)</h3>
+<p><em>Do 200 g roztworu kwasu solnego o stężeniu 7,3% wrzucono 25 g węglanu wapnia. Oblicz masę wydzielonego CO₂.</em></p>
+<ol>
+<li><strong>Najpierw czysty substrat:</strong> m(HCl) = 7,3% × 200 g = <strong>14,6 g HCl</strong> (zawsze krok 1 — masa roztworu NIE wchodzi do proporcji!).</li>
+<li><strong>Kto ogranicza?</strong> 25 g CaCO₃ potrzebuje: 25 × 73/100 = <strong>18,25 g HCl</strong> > 14,6 g → <strong>ograniczający: HCl</strong>.</li>
+<li><strong>Produkt od HCl:</strong> m(CO₂) = 14,6 × 44/73 = <strong>8,8 g</strong>.
+(Pozostałość: zużyto CaCO₃ = 14,6 × 100/73 = 20 g → <strong>5 g CaCO₃ leży na dnie</strong>.)</li>
+</ol>
+<p><strong>Zapis wzorcowy pięciu linijek</strong> (tak wygląda „przejrzysty zapis" oceniany w LKO):</p>
+<p>m(HCl) = 0,073 × 200 g = 14,6 g
+25 g CaCO₃ → 18,25 g HCl > 14,6 g ⇒ HCl — ograniczający
+CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂↑ (100 : 73 : 44)
+m(CO₂) = 14,6 g × 44/73 = 8,8 g
+(kontrola: 14,6 g HCl zużyje 20 g CaCO₃; zostaje 5 g)</p>
+<h3>4.4 Kontrola-matka: zachowanie masy</h3>
+<p>Suma mas substratów = suma mas produktów (+ pozostającego nadmiaru). Dla spalania metanu:</p>
+<p>CH₄ + 2O₂ → CO₂ + 2H₂O (16 : 64 : 44 : 36)
+8 g CH₄ + 32 g O₂ → 22 g CO₂ + 18 g H₂O → kontrola: 8 + 32 = 40 = 22 + 18 ✓</p>
+<p>Zgodny bilans mas jest konieczną kontrolą, ale sam nie dowodzi poprawności rozwiązania. Trzeba również sprawdzić wzory, współczynniki, stosunki stechiometryczne i wskazanie ograniczającego reagenta. Trzymaj ten test przy każdym zadaniu F.</p>
+<hr class="lk-hr"/>
+<div class="card card-understand">
+<span class="card-label">Ważna luka dla klasy 9: n = m/M</span>
+<p>Metoda masowa i molowa opisują ten sam stosunek stechiometryczny. Możesz najpierw nauczyć się proporcji masowych, ale później powinieneś rozumieć, dlaczego one działają: <strong>n = m/M</strong>, gdzie n to liczba moli, m — masa, M — masa molowa. Mol nie jest ukrytą „metodą po cichu”, tylko jawnym sposobem liczenia tej samej proporcji.</p>
+</div>
+</section>
+<section id="s6">
+<div class="part-heading">KOMPENDIUM — ściąga wynikowa</div>
+<p><strong>Mr — zestaw podstawowy:</strong> H₂O 18 · CO₂ 44 · CH₄ 16 · NH₃ 17 · HCl 36,5 · H₂SO₄ 98 · NaCl 58,5 · CaCO₃ 100 · CaO 56 · Ca(OH)₂ 74 · CuO 80 · Cu 64 · Fe 56 · Fe₂O₃ 160 · Al₂O₃ 102 · Zn 65 · MgO 40 · SO₂ 64 · SO₃ 80 · FeS 88 · H₂S 34 · NH₄Cl 53,5 · AgCl 143,5 · BaSO₄ 233 · <strong>H₂ 2 · N₂ 28 · O₂ 32 · Cl₂ 71 · O₃ 48 · P₄ 124 · S₈ 256</strong></p>
+<p><strong>Wzory:</strong> %X = m(X)/m(próbki) × 100% · %X w związku = (masa X w Mr)/Mr × 100% · gęstość gazu ∝ Mr</p>
+<p><strong>Proporcja masowa:</strong> Mr × współczynnik (128→160 dla 2Cu→2CuO; NIE „Mr bez współczynnika")</p>
+<p><strong>Nadmiar — trzy kroki:</strong> 1) równanie + proporcje masowe · 2) przelicz obie strony, wybierz ograniczający · 3) produkt od ograniczającego + policz pozostałość</p>
+<p><strong>Zespolenie z %:</strong> najpierw m czystego składnika = Cp × m roztworu, dopiero potem proporcja</p>
+<p><strong>Kontrola:</strong> suma % = 100% · zachowanie masy (substraty = produkty + nadmiar)</p>
+<hr class="lk-hr"/>
+</section>
+<section id="zadania">
+<div class="part-heading"><span class="part-num">5</span> Zadania — karty exam i adv</div>
+<p><em>Mapowanie: WYKŁAD 1 → A1–A3, B4, D1 · WYKŁAD 2 → B5, C1, E1, E3, F2 · WYKŁAD 3 → B2, C2, C4, E2, E4, F3 · WYKŁAD 4 → A4, A5, B3, B6, C3, E5, F1.</em></p>
+<div class="card card-exam">
+<span class="card-label">A. Zamknięte (5 pkt)</span>
+<p><strong>A1.</strong> Mr tlenku glinu Al₂O₃ wynosi:
+a) 43  b) 75  c) 102  d) 150</p>
+<p><strong>A2.</strong> Stosunek masy cząsteczkowej SO₃ do SO₂ wynosi:
+a) 0,8  b) 1  c) 1,25  d) 1,6</p>
+<p><strong>A3.</strong> Zawartość procentowa żelaza w Fe₂O₃ wynosi:
+a) 30%  b) 56%  c) 70%  d) 112%</p>
+<p><strong>A4.</strong> Z 10 g CaCO₃ i <strong>nadmiaru</strong> kwasu solnego wydzieli się CO₂:
+a) 2,2 g  b) 4,4 g  c) 10 g  d) 44 g</p>
+<p><strong>A5.</strong> 8 g CuO zredukowano 3 g wodoru (CuO + H₂ → Cu + H₂O). Masa miedzi:
+a) 6,4 g  b) 8 g  c) 2,4 g  d) 64 g</p>
+</div>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>A1 — <strong>c</strong> [1]
+A2 — <strong>c</strong> (80/64) [1]
+A3 — <strong>c</strong> [1]
+A4 — <strong>b</strong> (100:44 → 4,4) [1]
+A5 — <strong>a</strong> — H₂ w ogromnym nadmiarze (potrzeba 0,2 g), liczymy od CuO: 8 × 64/80 = 6,4 g [1]</p>
+</details>
+<div class="card card-exam">
+<span class="card-label">B. Prawda–fałsz (6 pkt)</span>
+<p><strong>B1.</strong> Mr azotu cząsteczkowego N₂ wynosi 28.
+<strong>B2.</strong> Ze spalenia 4 g wodoru w 32 g tlenu powstanie 36 g wody.
+<strong>B3.</strong> W zadaniu z nadmiarem produkt oblicza się od substratu nadmiarowego.
+<strong>B4.</strong> Mr cząsteczki tlenu wynosi 16.
+<strong>B5.</strong> Zawartość procentowa wodoru w H₂O₂ wynosi około 5,9%.
+<strong>B6.</strong> Jeżeli kwas podano jako „200 g roztworu 7,3%", do proporcji stechiometrycznej wstawiamy 14,6 g.</p>
+</div>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>B1 — <strong>P</strong> [1]
+B2 — <strong>P</strong> (stosunek dokładnie stechiometryczny 4:32) [1]
+B3 — <strong>F</strong> (od ograniczającego!) [1]
+B4 — <strong>F</strong> (atomu — cząsteczka to 32) [1]
+B5 — <strong>P</strong> [1]
+B6 — <strong>P</strong> (0,073 × 200 = 14,6 g czystego HCl) [1]</p>
+</details>
+<div class="card card-exam">
+<span class="card-label">C. Luki (4 pkt)</span>
+<p><strong>C1.</strong> Mr(MgO) = ____ ; zawartość % magnezu w nim = ____ %.
+<strong>C2.</strong> CH₄ + 2O₂ → CO₂ + 2H₂O: ze spalenia 8 g metanu powstanie ____ g CO₂.
+<strong>C3.</strong> 10 g CaCO₃ reaguje z 10 g HCl. Substratem ograniczającym jest ____.
+<strong>C4.</strong> Fe + CuSO₄ → FeSO₄ + Cu: z 5,6 g żelaza powstanie ____ g miedzi.</p>
+</div>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>C1 — 40; 60 [po 0,5]
+C2 — 22 (16→44: 8 × 44/16) [1]
+C3 — <strong>CaCO₃</strong> (10 g potrzebuje 7,3 g HCl &lt; 10 g — HCl w nadmiarze) [1]
+C4 — 6,4 (56→64) [1]</p>
+</details>
+<div class="card card-exam">
+<span class="card-label">D. Dobieranie (5 pkt)</span>
+<p><strong>D1.</strong> Dopasuj Mr (dwie wartości są zbędne): <strong>CH₄ · O₃ · Ca(OH)₂ · Al₂(SO₄)₃ · NH₃</strong>
+pula: 16 · 17 · 32 · 48 · 64 · 74 · 342</p>
+</div>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>D1 — CH₄→16 · O₃→48 · Ca(OH)₂→74 · Al₂(SO₄)₃→342 · NH₃→17; zbędne: 32 (O₂), 64 (SO₂) [po 1]</p>
+</details>
+<div class="card card-exam">
+<span class="card-label">E. Otwarte krótkie (8 pkt)</span>
+<p><strong>E1.</strong> Oblicz zawartość procentową tlenu w Al₂O₃.
+<strong>E2.</strong> Ile razy siarkowodór jest cięższy od wodoru?
+<strong>E3.</strong> Tlenek glinu zawiera 52,9% Al (reszta to tlen). Ustal wzór tego tlenku.
+<strong>E4.</strong> 6,4 g CuO zredukowano wodorem. Oblicz masę otrzymanej miedzi. Pokaż obliczenie.
+<strong>E5.</strong> 13 g cynku wprowadzono do 15 g czystego HCl. Który substrat jest w nadmiarze i o ile gramów? Ile wodoru wydzieli się?</p>
+</div>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>E1 — 48/102 × 100% ≈ <strong>47,1%</strong> [1 (zapis 0,5, wynik 0,5)]
+E2 — 34/2 = <strong>17 razy</strong> [1]
+E3 — 100 g: Al 52,9/27 ≈ 1,96; O 47,1/16 ≈ 2,94; stosunek ≈ 2:3 → <strong>Al₂O₃</strong> [2 (podział przez M 1, wzór 1)]
+E4 — 80:64 → 6,4 × 64/80 = <strong>5,12 g</strong> [1 (proporcja 0,5, wynik 0,5)]
+E5 — Zn potrzebuje 13 × 73/65 = 14,6 g HCl &lt; 15 g → <strong>HCl w nadmiarze o 0,4 g</strong>; m(H₂) = 13 × 2/65 = <strong>0,4 g</strong> (liczone od Zn — ograniczający) [3 (kto nadmiar 1, o ile 1, H₂ 1)]</p>
+</details>
+<details class="adv"><summary>F1. Roztwór HCl i węglan wapnia (4 pkt) <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p><strong>F1.</strong> Do 200 g roztworu kwasu solnego o stężeniu 7,3% dodano 25 g węglanu wapnia. Oblicz: (a) masę wydzielonego CO₂, (b) masę substratu, który pozostał w nadmiarze. We wszystkich krokach pokaż obliczenia.</p>
+</div></details>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>F1a — m(HCl) = 0,073 × 200 = 14,6 g (1 pkt); dla 25 g CaCO₃ potrzeba 18,25 g HCl > 14,6 → ograniczający HCl (1); m(CO₂) = 14,6 × 44/73 = <strong>8,8 g</strong> (1) [3]
+F1b — zużyto CaCO₃ = 14,6 × 100/73 = 20 g → <strong>pozostało 5 g CaCO₃</strong> [1]</p>
+</details>
+<details class="adv"><summary>F2–F3. Skład tlenku i spalanie metanu (6 pkt) <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p><strong>F2.</strong> Próbka tlenku żelaza o masie 40 g zawiera 70% Fe. (a) Oblicz masy Fe i O w próbce. (b) Ustal wzór tlenku. (c) Sprawdź, czy suma procentów wynosi 100%.</p>
+<p><strong>F3.</strong> Spalono 8 g metanu. (a) Oblicz masę tlenu potrzebną do całkowitego spalania. (b) Oblicz masy CO₂ i H₂O. (c) Wykaż zapisem, że wyniki spełniają prawo zachowania masy.</p>
+</div></details>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>F2 — m(Fe) = 0,7 × 40 = <strong>28 g</strong>, m(O) = <strong>12 g</strong> (1); Fe: 28/56 = 0,5; O: 12/16 = 0,75; 0,5:0,75 = 2:3 → <strong>Fe₂O₃</strong> (1,5); 70% + 30% = 100% ✓ (0,5) [3]
+F3 — 16:64:44:36 → m(O₂) = 8 × 64/16 = <strong>32 g</strong> (1); m(CO₂) = <strong>22 g</strong>, m(H₂O) = <strong>18 g</strong> (1); 8 + 32 = 40 = 22 + 18 ✓ (1) [3]</p>
+</details>
+<hr class="lk-hr"/>
+</section>
+<section id="s7">
+<div class="part-heading">BŁĘDY TYPOWE (klinika)</div>
+<ol>
+<li><strong>Mr(H₂) = 1, Mr(O₂) = 16, Mr(Cl₂) = 35,5</strong> → to masy ATOMÓW. Cząsteczki: 2 / 32 / 71. Przy każdym Mr pierwiastka pytaj: „atom czy cząsteczka?".</li>
+<li><strong>Mr bez współczynnika w proporcji</strong> → 2Cu + O₂ → 2CuO liczy się 128 : 160, nie 64 : 80 przecięte z innym współczynnikiem. Zawsze pisz „masowo pod równaniem" PRZED proporcją.</li>
+<li><strong>Produkt od substratu nadmiarowego</strong> → klasyk zadania A5: 3 g H₂ nie da 96 g miedzi; produkt liczysz od CuO. Trzy kroki nadmiaru są obowiązkowe, nie opcjonalne.</li>
+<li><strong>Masa roztworu wstawiona do proporcji</strong> → „200 g roztworu 7,3%" = 14,6 g czystego HCl + 185,4 g wody; w zadaniu CaCO₃/HCl woda jest rozpuszczalnikiem i nie jest zużywanym reagentem. To nie jest reguła ogólna: woda bywa substratem, np. w reakcji CaO + H₂O → Ca(OH)₂.</li>
+<li><strong>Brak kontroli sumy procentów</strong> → %Fe + %O musi dać 100; jeśli nie — błąd w odczycie albo w liczeniu, szukaj PRZED ustalaniem wzoru.</li>
+<li><strong>Wynik bez jednostki i bez zapisu</strong> → na LKO ocenia się przejrzysty zapis: równanie, „masowo pod równaniem", proporcja, wynik z jednostką. Cztery linijki albo strata punktów.</li>
+<li><strong>„Nadmiar" w treści zadania zignorowany</strong> → gdy zadanie pisze „w nadmiarze kwasu", nie licz masy kwasu w ogóle; ograniczający jest wskazany wprost.</li>
+<li><strong>Dzielenie przez wartościowość zamiast masy atomowej przy ustalaniu wzoru</strong> → w E3 dzielimy 52,9/27, nie 52,9/III. Wartościowość służy do budowy wzorów z ładunków, nie do analizy procentów.</li>
+<li><strong>Zakładanie stechiometrii tam, gdzie są dwie masy</strong> → każde zadanie z dwoma substratami zaczyna się od pytania „kto ogranicza?", nawet jeśli odpowiedź brzmi „dokładnie stechiometrycznie" (wtedy oboje).</li>
+<li><strong>Nieużywana kontrola zachowania masy</strong> → 30 sekund dzielenia/dodawania ratuje cały wynik w zadaniu F3-typu. Zapisz kontrolę wprost — bywa też osobnym punktem rubryki.</li>
+</ol>
+<hr class="lk-hr"/>
+</section>
+<section id="fiszki">
+<div class="part-heading"><span class="part-num">6</span> Fiszki</div>
+<div id="flashcards" class="flashcard-grid"><button class="flashcard" type="button"><span class="front">Mr cząsteczki O₂</span><span class="back">32 (nie 16 — to masa atomu)</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Mr Al₂O₃</span><span class="back">102 (2·27 + 3·16)</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Ile procent tlenu jest w Al₂O₃?</span><span class="back">48/102 ≈ 47,1%</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Jak ustalić wzór z procentów?</span><span class="back">dzielimy procenty przez masy atomowe, potem przez najmniejszą liczbę</span><span class="card-tag tag-understand">rozumienie</span></button><button class="flashcard" type="button"><span class="front">Jaki jest pierwszy krok zadania z nadmiarem?</span><span class="back">ustal substrat ograniczający</span><span class="card-tag tag-understand">rozumienie</span></button><button class="flashcard" type="button"><span class="front">Ile razy H₂S jest cięższy od H₂?</span><span class="back">34/2 = 17</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Co liczy się w proporcji masowej?</span><span class="back">masy pod równaniem (iloczyny mol · M z współczynnikami)</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Dlaczego woda w roztworze nie wchodzi do proporcji?</span><span class="back">w zadaniu CaCO₃/HCl jest rozpuszczalnikiem, nie zużywanym reagentem; woda bywa substratem, np. CaO + H₂O → Ca(OH)₂</span><span class="card-tag tag-understand">rozumienie</span></button></div>
+</section>
+<section id="slownik">
+<div class="part-heading"><span class="part-num">7</span> Słownik</div>
+<dl><div class="def-item"><dt>Masa cząsteczkowa (Mr)</dt><dd>suma mas atomowych atomów w cząsteczce, bez jednostki</dd></div><div class="def-item"><dt>Substrat ograniczający</dt><dd>substrat, który przereaguje pierwszy i wyznacza ilość produktu</dd></div><div class="def-item"><dt>Skład procentowy</dt><dd>udział masy danego pierwiastka w masie związku, w procentach</dd></div><div class="def-item"><dt>Proporcja masowa</dt><dd>stosunek mas substratów i produktów wynikający z równania z uwzględnieniem współczynników</dd></div><div class="def-item"><dt>Pierwiastek cząsteczkowy</dt><dd>pierwiastek, którego cząsteczki składają się z dwóch lub więcej atomów (H₂, O₂, N₂, Cl₂)</dd></div></dl>
+</section>
+<section id="test">
+<div class="part-heading"><span class="part-num">8</span> Test</div>
+<div class="che-quiz" id="quizWrap"><div class="quiz-q" data-ok="1" data-fb="O₂ to cząsteczka dwuatomowa: 2·16 = 32."><h5>1. Mr O₂ wynosi:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">16</button><button type="button" class="quiz-opt" data-a="1">32</button><button type="button" class="quiz-opt" data-a="2">64</button><button type="button" class="quiz-opt" data-a="3">8</button></div></div><div class="quiz-q" data-ok="1" data-fb="48/102 · 100% ≈ 47%."><h5>2. Zawartość procentowa tlenu w Al₂O₃ wynosi około:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">33%</button><button type="button" class="quiz-opt" data-a="1">47%</button><button type="button" class="quiz-opt" data-a="2">53%</button><button type="button" class="quiz-opt" data-a="3">68%</button></div></div><div class="quiz-q" data-ok="2" data-fb="8 · 44/16 = 22 g."><h5>3. Z 8 g CH₄ (metan, spalanie całkowite) powstanie CO₂ o masie:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">4,4 g</button><button type="button" class="quiz-opt" data-a="1">8 g</button><button type="button" class="quiz-opt" data-a="2">22 g</button><button type="button" class="quiz-opt" data-a="3">44 g</button></div></div><div class="quiz-q" data-ok="1" data-fb="Bez tego kroku wynik jest zawsze podejrzany."><h5>4. W zadaniu z dwiema masami substratów pierwszy krok to:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">policzyć produkt</button><button type="button" class="quiz-opt" data-a="1">ustalić substrat ograniczający</button><button type="button" class="quiz-opt" data-a="2">zsumować masy</button><button type="button" class="quiz-opt" data-a="3">pominąć współczynniki</button></div></div><div class="quiz-q" data-ok="1" data-fb="Woda jest rozpuszczalnikiem w zadaniu z roztworem HCl; nie jest to reguła ogólna."><h5>5. Woda w roztworze 7,3% HCl (200 g):</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">wchodzi do proporcji w całości</button><button type="button" class="quiz-opt" data-a="1">nie wchodzi do proporcji, liczymy tylko 14,6 g HCl</button><button type="button" class="quiz-opt" data-a="2">zmienia Mr kwasu</button><button type="button" class="quiz-opt" data-a="3">trzeba ją odjąć od wyniku</button></div></div></div><div class="quiz-score" id="quizScore"></div>
+</section>
+<section id="s8">
+<div class="part-heading">Ciekawostki</div>
+<div class="card card-extra">
+<span class="card-label">Dlaczego gazy porównujemy przez Mr</span>
+<p>Przy tej samej temperaturze i ciśnieniu równe objętości różnych gazów zawierają równą liczbę cząsteczek (prawo Avogadra). Stąd gęstość gazu rośnie dokładnie tak, jak jego masa cząsteczkowa — dlatego „który gaz cięższy" da się policzyć bez wagi.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Rdza w liczbach</span>
+<p>W tlenku Fe₂O₃ żelaza jest 70%. Rdza to głównie uwodniony tlenek żelaza, więc procent żelaza w rdzy jest niższy niż w czystym tlenku. Zadania o „ile żelaza w rdzy" wymagają więc założenia o składzie — to już wiedza ponad etap II.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Lavoisier i zachowanie masy</span>
+<p>Antoine Lavoisier w XVIII wieku pokazał, że w zamkniętym naczyniu masa substratów równa się masie produktów. To jego sprawdzian — kontrola bilansu w zadaniu F3 wykorzystuje tę samą zasadę.</p>
+</div>
+</section>
+<section id="s9">
+<div class="part-heading">Notatka dla prowadzącego: granice</div>
+<p>Świadomie poza etapem II i poza tym plikiem: <strong>mol, Avogadro, masa molowa jako liczba, objętość molowa gazów</strong> — to rozszerzenie 10 etapu III (pełne wersje: R04, R06); metoda „podziel przez masę atomową" to ich przedsmak, nazwy nie używamy. <strong>Wydajność reakcji i zanieczyszczenia</strong> — poza rozszerzeniem 7 (R09); jeśli w arkuszu pojawi się „otrzymano 90% teoretycznej masy", wystarczy jedna dodatkowa proporcja (×0,9) — pokaż przy okazji zestawów B, nie tutaj. <strong>Objętości gazów w zadaniach</strong> — etap II formułuje wyłącznie obliczenia masowe; gdyby w arkuszu pojawił się litr gazu, to sygnał, że zakres poszerzono — wtedy R06 wchodzi awaryjnie. Wartości mas atomowych w kompendium pokrywają wszystkie zadania tego suplementu i symulacji A2; na zawodach i tak będą w tablicach. Uwaga scalająca: przykład z N06 (10,7 g NH₄Cl → 3,4 g NH₃, zadanie 10) jest tą samą metodą — uczniowi warto pokazać, że „już to umiał", tylko bez nazwy.</p>
+</section>
+<footer class="footer"><p>"<strong>LKO-STECH</strong> · Masy cząsteczkowe i stechiometria · 2026"</p></footer>
+</main>
+<script>
+/* KLOCKI — lekkie komponenty wielokrotnego użytku dla lekcji (bez silnika).
+   Każdy klocek: KLOCKI.def(nazwa, {opis, dane, rysuj(canvas, stan, t)}) — rejestr,
+   KLOCKI.montuj(host, nazwa, opcje) — tworzy canvas, autostart gdy widoczny,
+   klik zatrzymuje/wznawia. Lekcja wymienia klocki w manifeście (klocki/manifest). */
+(function (g) {
+  var reg = {};
+  function def(nazwa, k) { reg[nazwa] = k; }
+  function montuj(host, nazwa, opc) {
+    var k = reg[nazwa];
+    if (!k) { host.textContent = 'Brak klocka: ' + nazwa; return null; }
+    opc = Object.assign({}, k.domyslne || {}, opc || {});
+    if (k.html) { host.innerHTML = ''; k.html(host, opc); return null; }
+    var c = document.createElement('canvas');
+    c.width = opc.szer || 480; c.height = opc.wys || 300;
+    c.style.width = '100%'; c.style.maxWidth = c.width + 'px'; c.style.height = 'auto';
+    c.setAttribute('role', 'img');
+    c.setAttribute('aria-label', (opc.opis || k.opis || nazwa));
+    host.innerHTML = ''; host.appendChild(c);
+    var stan = Object.assign({}, k.stan0 ? k.stan0(opc) : {}, {opc: opc});
+    var ctx = c.getContext('2d'), t0 = performance.now(), grane = false, id = null;   // pętla rusza przez start() (IO albo od razu)
+    function klatka(now) {
+      try { k.rysuj(ctx, c.width, c.height, stan, (now - t0) / 1000, opc); } catch (e) { }
+      if (grane) id = requestAnimationFrame(klatka);
+    }
+    function start() { if (!grane) { grane = true; t0 = performance.now() - (stan._t || 0) * 1000; id = requestAnimationFrame(klatka); } }
+    function stop() { grane = false; if (id) cancelAnimationFrame(id); }
+    c.addEventListener('click', function () { grane ? stop() : start(); });
+    if ('IntersectionObserver' in g) {
+      var io = new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? start() : stop(); }); });
+      io.observe(c);
+    } else { start(); }
+    k.rysuj(ctx, c.width, c.height, stan, 0, opc);
+    return {stop: stop, start: start, stan: stan, canvas: c};
+  }
+  g.KLOCKI = {def: def, montuj: montuj, nazwy: function () { return Object.keys(reg); }};
+})(window);
+
+/* KLOCKI — wspólne narzędzia (kolejność: pierwsze w manifeście). Wyciągnięte z animacji P01. */
+/* ---------------------------- narzędzia ---------------------------- */
+var RM = !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
+function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+function sm(v) { v = clamp(v, 0, 1); return v * v * (3 - 2 * v); }
+function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+function hex2rgb(h) { var n = parseInt(h.slice(1), 16); return [n >> 16 & 255, n >> 8 & 255, n & 255]; }
+function rgba(h, a) { var c = hex2rgb(h); return 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ',' + a + ')'; }
+function mixHex(a, b, k) {
+  var A = hex2rgb(a), B = hex2rgb(b);
+  return '#' + [0, 1, 2].map(function (i) { return ('0' + Math.round(A[i] + (B[i] - A[i]) * k).toString(16)).slice(-2); }).join('');
+}
+function rr(x, a, b, w, h, r) {
+  x.beginPath(); x.moveTo(a + r, b); x.arcTo(a + w, b, a + w, b + h, r); x.arcTo(a + w, b + h, a, b + h, r);
+  x.arcTo(a, b + h, a, b, r); x.arcTo(a, b, a + w, b, r); x.closePath();
+}
+
+
+/* ---------------------------- pętla animacji ---------------------------- */
+var uchwyty = [], rafId = 0, ostatni = 0;
+function petla(now) {
+  var dt = Math.min(.05, (now - ostatni) / 1000); ostatni = now;
+  for (var i = 0; i < uchwyty.length; i++) uchwyty[i].krok(dt);
+  rafId = uchwyty.length ? requestAnimationFrame(petla) : 0;
+}
+function wlacz(h) { if (uchwyty.indexOf(h) < 0) uchwyty.push(h); if (!rafId) { ostatni = performance.now(); rafId = requestAnimationFrame(petla); } }
+function wylacz(h) { var i = uchwyty.indexOf(h); if (i >= 0) uchwyty.splice(i, 1); }
+function podepnij(canvas, h) {
+  h.rysuj();
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? wlacz(h) : wylacz(h); }); }, {threshold: .05}).observe(canvas);
+  } else wlacz(h);
+}
+
+
+function parsujListe(txt, dozwolone, domyslne) {
+  var l = String(txt || '').split(',').map(function (s) { return s.trim(); }).filter(function (s) { return dozwolone[s]; });
+  return (l.length ? l : domyslne).slice(0, 3);
+}
+
+
+/* Wybór pierwiastka: tylko symbole, a znacznik ▸ pokazuje, że lista się rozwija (bez pełnych nazw obok). */
+function wyborSymbole(grupy, start, onChange, etykieta) {
+  var box = el('details', 'wyb-sym'), sum = el('summary', null), cur = el('span', 'wyb-cur', start);
+  sum.appendChild(cur); sum.appendChild(el('span', 'wyb-tri', '▸')); box.appendChild(sum);
+  var lst = el('div', 'wyb-lista'), btns = [];
+  lst.setAttribute('role', 'listbox'); lst.setAttribute('aria-label', etykieta || 'Wybór pierwiastka');
+  var NAG = {1: 'Litowce', 2: 'Berylowce', 3: 'Tlenki berylowców'};
+  Object.keys(grupy).forEach(function (g) {
+    var w = el('div', 'wyb-grupa'); w.appendChild(el('span', 'wyb-g', NAG[g] || ('grupa ' + g)));
+    grupy[g].forEach(function (s) {
+      var b = el('button', 'wyb-sy', s); b.type = 'button'; b.setAttribute('data-sym', s);
+      b.setAttribute('title', cap(NAZ[SYM.indexOf(s)] || s));
+      b.addEventListener('click', function () { ustaw(s); box.open = false; onChange(s); });
+      w.appendChild(b); btns.push(b);
+    });
+    lst.appendChild(w);
+  });
+  box.appendChild(lst);
+  function ustaw(s) { cur.textContent = s; btns.forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-sym') === s ? 'true' : 'false'); }); }
+  ustaw(start);
+  return {el: box, ustaw: ustaw};
+}
+
+/* KLOCEK: trojkat-przeliczen — trójkąt konwersji masa ↔ liczba moli ↔ cząstki lub objętość gazu.
+   Opcje (w lekcji): wzor="mol"  (domyślnie) — wierzchołki: m [g], n [mol], N [cząstki]; N = n · N_A
+                     wzor="gaz"  — wierzchołki: m [g], n [mol], V [dm³]; V = n · Vₘ (22,4 dm³/mol)
+   Strzałki: góra → lewo ÷ M, lewo → góra × M; lewo ↔ prawo: × / ÷ N_A (lub Vₘ). Bok góra–prawo nie ma operacji.
+   Wzory konwersji są wypisane w rogu. Klik zatrzymuje/wznawia (zachowanie montuj). */
+(function () {
+  var SZABLON = {
+    mol: {R: 'N [cząstki]', kR: 'N_A', wzory: ['m = n · M', 'n = m / M', 'N = n · N_A']},
+    gaz: {R: 'V [dm³]', kR: 'Vₘ', wzory: ['m = n · M', 'n = m / M', 'V = n · Vₘ']}
+  };
+
+  // odcinek A→B przesunięty o off wzdłuż normalnej, skrócony przy węzłach; grot na końcu
+  function strzalka(x, A, B, off, skrA, skrB) {
+    var dx = B.x - A.x, dy = B.y - A.y, d = Math.sqrt(dx * dx + dy * dy) || 1;
+    var ux = dx / d, uy = dy / d, px = -uy, py = ux;
+    var ax = A.x + px * off + ux * skrA, ay = A.y + py * off + uy * skrA;
+    var bx = B.x + px * off - ux * skrB, by = B.y + py * off - uy * skrB;
+    x.beginPath(); x.moveTo(ax, ay); x.lineTo(bx, by); x.stroke();
+    var ang = Math.atan2(by - ay, bx - ax), g = 9;
+    x.beginPath(); x.moveTo(bx, by);
+    x.lineTo(bx - g * Math.cos(ang - 0.4), by - g * Math.sin(ang - 0.4));
+    x.lineTo(bx - g * Math.cos(ang + 0.4), by - g * Math.sin(ang + 0.4));
+    x.closePath(); x.fill();
+    return {x: (A.x + B.x) / 2 + px * off, y: (A.y + B.y) / 2 + py * off, px: px, py: py};
+  }
+  function wyjscie(ux, uy, bw, bh) {
+    var sx = Math.abs(ux) > 1e-6 ? (bw / 2) / Math.abs(ux) : Infinity;
+    var sy = Math.abs(uy) > 1e-6 ? (bh / 2) / Math.abs(uy) : Infinity;
+    return Math.min(sx, sy) + 5;
+  }
+  function skrot(A, B, bw, bh) {
+    var dx = B.x - A.x, dy = B.y - A.y, d = Math.sqrt(dx * dx + dy * dy) || 1;
+    var ux = dx / d, uy = dy / d;
+    return [wyjscie(ux, uy, bw, bh), wyjscie(-ux, -uy, bw, bh)];
+  }
+
+  KLOCKI.def('trojkat-przeliczen', {
+    opis: 'Trójkąt konwersji: masa, liczba moli i cząstki (lub objętość gazu) ze strzałkami operacji ÷/× M, N_A lub Vₘ.',
+    domyslne: {wzor: 'mol', szer: 480, wys: 300},
+    stan0: function () { return {}; },
+    rysuj: function (x, w, h, s, t, opc) {
+      var sz = SZABLON[opc.wzor] || SZABLON.mol;
+      var T = {x: w / 2, y: 46}, Lw = {x: w / 2 - 160, y: h - 64}, Rw = {x: w / 2 + 160, y: h - 64};
+      var BW = 124, BH = 34;
+      x.fillStyle = '#ffffff'; x.fillRect(0, 0, w, h);
+      x.font = '14px system-ui, sans-serif'; x.textBaseline = 'middle'; x.textAlign = 'center';
+
+      // krawędzie trójkąta
+      x.strokeStyle = '#94a3b8'; x.lineWidth = 2;
+      [[T, Lw], [Lw, Rw], [Rw, T]].forEach(function (e) {
+        x.beginPath(); x.moveTo(e[0].x, e[0].y); x.lineTo(e[1].x, e[1].y); x.stroke();
+      });
+
+      // strzałki operacji: dwie na każdym boku z operacją
+      x.strokeStyle = '#334155'; x.fillStyle = '#334155'; x.lineWidth = 2;
+      var etyk = [];
+      function para(A, B, opA, opB, bokA, bokB) {
+        var sk1 = skrot(A, B, BW, BH);
+        var a1 = strzalka(x, A, B, 9, sk1[0], sk1[1]);
+        etyk.push({x: a1.x + a1.px * 16, y: a1.y + a1.py * 16, t: opA});
+        var sk2 = skrot(B, A, BW, BH);
+        var a2 = strzalka(x, B, A, 9, sk2[0], sk2[1]);
+        etyk.push({x: a2.x + a2.px * 16, y: a2.y + a2.py * 16, t: opB});
+      }
+      para(T, Lw, '÷ M ↓', '× M ↑');
+      para(Lw, Rw, '× ' + sz.kR + ' →', '← ÷ ' + sz.kR);
+
+      // etykiety operacji
+      x.fillStyle = '#b45309'; x.font = 'bold 13px system-ui, sans-serif';
+      etyk.forEach(function (e) { x.fillText(e.t, e.x, e.y); });
+
+      // węzły
+      var wez = [[T, 'm [g]'], [Lw, 'n [mol]'], [Rw, sz.R]];
+      wez.forEach(function (p) {
+        x.fillStyle = '#eef6ff'; x.strokeStyle = '#1e40af'; x.lineWidth = 1.5;
+        x.beginPath();
+        if (x.roundRect) x.roundRect(p[0].x - BW / 2, p[0].y - BH / 2, BW, BH, 8); else x.rect(p[0].x - BW / 2, p[0].y - BH / 2, BW, BH);
+        x.fill(); x.stroke();
+        x.fillStyle = '#0f172a'; x.font = '15px system-ui, sans-serif';
+        x.fillText(p[1], p[0].x, p[0].y);
+      });
+
+      // wzory konwersji w prawym górnym rogu
+      x.textAlign = 'right'; x.textBaseline = 'top'; x.fillStyle = '#111827'; x.font = '13px system-ui, sans-serif';
+      sz.wzory.forEach(function (f, i) { x.fillText(f, w - 10, 12 + i * 17); });
+    }
+  });
+})();
+
+(function(){document.querySelectorAll('[data-klocek]').forEach(function(f){var o={};try{o=JSON.parse(f.getAttribute('data-opt')||'{}')}catch(e){}Object.keys(o).forEach(function(k){if(o[k]!==''&&!isNaN(Number(o[k])))o[k]=Number(o[k])});KLOCKI.montuj(f.querySelector('.lk-fig-body'),f.getAttribute('data-klocek'),o)})})();
+/* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
+   postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
+(function(){
+var html=document.documentElement;
+function ciemny(){var t=html.getAttribute('data-theme');return t?t==='dark':!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function oznacz(){if(ciemny())html.setAttribute('data-ciemny','');else html.removeAttribute('data-ciemny')}
+try{var z=localStorage.getItem('lekcja-motyw');if(z)html.setAttribute('data-theme',z)}catch(e){}
+oznacz();if(window.matchMedia)try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',oznacz)}catch(e){}
+
+function start(){
+var root=document;
+root.querySelectorAll('.flashcard').forEach(function(b){if(b.dataset.lkFz)return;b.dataset.lkFz=1;b.removeAttribute('onclick');b.setAttribute('aria-pressed','false');
+ b.addEventListener('click',function(){var on=b.classList.toggle('flipped');b.setAttribute('aria-pressed',on?'true':'false')})});
+root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibling,ok=0,n=0,all=w.querySelectorAll('.quiz-q').length;
+ if(sc&&sc.classList.contains('quiz-score'))sc.setAttribute('aria-live','polite');
+ w.querySelectorAll('.quiz-q').forEach(function(d){var good=+d.dataset.ok;d.querySelectorAll('.quiz-opt').forEach(function(b){b.onclick=function(){if(d.dataset.done)return;d.dataset.done=1;n++;if(+b.dataset.a===good)ok++;
+  d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
+  if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
+  if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var b=root.querySelector('#advToggle');
+if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
+ if(!k)b.style.display='none';
+ b.textContent='Pokaż treści akademickie ('+k+')';
+ b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';adv().forEach(function(d){d.open=on});b.setAttribute('aria-pressed',on?'true':'false');b.textContent=(on?'Ukryj':'Pokaż')+' treści akademickie ('+k+')'}}
+// spis zwinięty na telefonie
+var sp=root.querySelector('#spis');if(sp&&window.innerWidth<700)sp.removeAttribute('open');
+// przełącznik jasny/ciemny
+var tb=root.querySelector('#lkMotyw');
+if(tb)tb.onclick=function(){var t=ciemny()?'light':'dark';html.setAttribute('data-theme',t);try{localStorage.setItem('lekcja-motyw',t)}catch(e){}oznacz()};
+// postęp czytania + aktywna sekcja w spisie
+var bar=root.querySelector('.lk-prog'),links={},secs=[];
+root.querySelectorAll('.toc-link[href^="#"]').forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1));if(s){links[s.id]=a;secs.push(s)}});
+var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+ if(bar)bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';
+ var cur=null,lim=(parseInt(getComputedStyle(h).getPropertyValue('--header-h'))||52)+40;
+ for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
+ for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// fiszki: pokazuje pierwsze N (domyślnie 6, atrybut data-fz-pierwsze="N"), reszta po wyraźnym przycisku
+root.querySelectorAll('.flashcard-grid').forEach(function(g){
+ var cards=[].slice.call(g.querySelectorAll('.flashcard')),N=+(g.getAttribute('data-fz-pierwsze')||6);
+ if(!(N>0)||cards.length<=N)return;
+ var ukryte=cards.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more';
+ function lab(on){ukryte.forEach(function(c){c.hidden=!on});
+  b.textContent=on?'▲ Zwiń fiszki':'▼ Pokaż pozostałe '+ile+' fiszek (razem '+cards.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ g.insertAdjacentElement('afterend',b);
+});
+// testy: pokazuje pierwsze N pytań (domyślnie 5, atrybut data-q-pierwsze), reszta po wyraźnym przycisku
+root.querySelectorAll('.che-quiz').forEach(function(w){
+ var qs=[].slice.call(w.querySelectorAll('.quiz-q')),N=+(w.getAttribute('data-q-pierwsze')||5);
+ if(!(N>0)||qs.length<=N)return;
+ var ukryte=qs.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more q-more';
+ function lab(on){ukryte.forEach(function(q){q.hidden=!on});
+  b.textContent=on?'▲ Zwiń pytania':'▼ Pokaż pozostałe '+ile+(ile===1?' pytanie':(ile<5?' pytania':' pytań'))+' (razem '+qs.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ var sc=w.nextElementSibling;(sc&&sc.classList.contains('quiz-score')?sc:w).insertAdjacentElement('afterend',b);
+});
+// grafiki przedmiotu
+if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
+if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();
+
+</script>
+</body>
+</html>

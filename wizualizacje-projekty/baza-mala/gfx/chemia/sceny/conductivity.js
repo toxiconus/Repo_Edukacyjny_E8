@@ -1,0 +1,7 @@
+sceneReg('conductivity',{label:'Przewodzenie prądu: elektrolity i dysocjacja',lesson:'kwasy',desc:'Tester z żarówką + model cząsteczkowy roztworu (jony z ładunkami).',height:340,aspect:1.7,
+ init:()=>({sol:'HCl',cond:0}),
+ parts:[{id:'conductivity',x:.02,y:.1,w:.5,h:.88,get:S=>({cond:S.cond,el:CSOL[S.sol].el||null,liquid:S.sol==='sugar'?[226,232,236]:WATER,level:.6,label:CSOL[S.sol].f})},
+  {id:'molTank',x:.56,y:.14,w:.42,h:.82,get:S=>({phase:'liquid',mol:CSOL[S.sol].mol,T:25})}],
+ tick(S,dt){S.cond+=(CSOL[S.sol].cond-S.cond)*Math.min(1,dt*3)},
+ overlay(c,W,H,S,t,T){head(c,T,W,'Czy roztwór przewodzi prąd?',CSOL[S.sol].n+' — '+CSOL[S.sol].f)},
+ ui(h,S,m){const r=UI.row(h);UI.sel(r,Object.keys(CSOL).map(k=>[k,CSOL[k].n+' '+CSOL[k].f]),S.sol,v=>{S.sol=v;m.reset()},'Roztwór');const n=UI.note(h);return S=>{const E=CSOL[S.sol].el;n.innerHTML='<b>'+CSOL[S.sol].t+'.</b> Prąd w roztworze przenoszą <b>jony</b>: kationy wędrują do <b>katody (−)</b>, aniony do <b>anody (+)</b> — im więcej jonów, tym jaśniej świeci żarówka.'+(E?'<br><b>Na elektrodach zachodzi elektroliza</b> (prąd stały): '+E.eq+'. Przy baterii 4,5 V i elektrodach grafitowych gazu jest mało — pęcherzyki widać po chwili.':'<br>Brak jonów — brak prądu, więc na elektrodach nic się nie wydziela.')}}});

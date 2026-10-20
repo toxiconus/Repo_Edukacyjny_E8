@@ -1,0 +1,1 @@
+P('caoH2o',{n:'CaO + H₂O (wapno palone, + fenoloftaleina)',solid:{col:ox,eq:4,end:.35,t:'powder',shape:'powder'},l0:php,l1:pink,out:['barwa'],turb:.55,heat:2.2,T:80,schl:1,teacher:1,why:'Silne ogrzanie, syk; powstaje mleko wapienne (zawiesina Ca(OH)₂), fenoloftaleina malinowa.'});

@@ -115,6 +115,7 @@ const GRX={H2:{n:'Zn + 2HCl → ZnCl₂ + H₂↑',sol:{col:[154,167,179],t:'met
 /*@@GFX sceny/carbonate@@*/
 
 /*@@GFX sceny/heating@@*/
+/*@@GFX sceny/metanSpalanie@@*/
 
 const RX={};
  

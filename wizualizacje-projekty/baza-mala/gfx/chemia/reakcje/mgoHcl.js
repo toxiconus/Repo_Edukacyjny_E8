@@ -1,0 +1,1 @@
+P('mgoHcl',{n:'MgO + HCl',solid:pw(wh),out:['nic'],heat:.5,T:32,why:'Biały MgO znika — tlenek zasadowy reaguje z kwasem, choć z wodą prawie nie.'});

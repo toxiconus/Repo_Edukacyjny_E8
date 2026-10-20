@@ -1,0 +1,1 @@
+P('cuso4Hydrate',{n:'CuSO₄ (bezwodny) + H₂O',solid:pw(wh),l1:'ion-cu2',out:['barwa'],heat:.6,T:36,why:'Biały, bezwodny CuSO₄ po dodaniu wody niebieszczeje i lekko się ogrzewa — powstaje hydrat CuSO₄·5H₂O (tak wykrywa się wodę).'});

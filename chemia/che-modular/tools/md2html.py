@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """md → HTML lekcji CHE (format: SZABLON_LEKCJI.md).
-Użycie: python3 md2html.py md/N04_sole.md [...]   → dist/N04_sole.html (+ dist/index.html)
+Użycie: python3 md2html.py md/N05_sole.md [...]   → dist/N05_sole.html (+ dist/index.html)
 Wspólne: engine/src/lekcja/lekcja.css, lekcja.js (wklejane do każdej lekcji), dist/che-viz.js (z modułów: tools/silnik.py)."""
 import os, re, sys, json, html as H
 

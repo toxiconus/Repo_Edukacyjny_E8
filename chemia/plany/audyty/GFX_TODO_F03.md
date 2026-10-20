@@ -1,0 +1,1 @@
+> Do zbudowania w GFX (nowe elementy): lejek z sączkiem i przesączem (sączenie krok po kroku), zestaw do destylacji z odbieralnikiem i termometrem, rozdzielacz z dwiema warstwami cieczy, pasek bibuły z pasmami barwników (chromatografia), magnes zbierający opiłki, kolumna destylacji frakcyjnej ropy.

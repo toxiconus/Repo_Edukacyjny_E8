@@ -1,0 +1,1 @@
+vessel('spiritLamp',{custom:spiritLamp});

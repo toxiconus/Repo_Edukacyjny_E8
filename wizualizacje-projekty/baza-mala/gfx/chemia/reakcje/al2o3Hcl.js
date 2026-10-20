@@ -1,0 +1,1 @@
+P('al2o3Hcl',{n:'Al₂O₃ + HCl (na gorąco)',solid:Object.assign(pw(wh),{end:.45}),out:['nic'],T:60,why:'Reakcja powolna, przyspiesza ogrzewanie; tlenek amfoteryczny reaguje z kwasem.'});

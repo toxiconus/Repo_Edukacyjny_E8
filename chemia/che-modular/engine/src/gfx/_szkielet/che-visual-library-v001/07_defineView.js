@@ -285,4 +285,5 @@ function rxCard(k){var H=HY(),d=(D().REACTION_DATA||{})[k]||{},J=null;try{J=C.IO
 /*@@GFX widoki/n02-dysocjacja-v01@@*/
 
 /*@@GFX widoki/n02-reaktor-v01@@*/
+/*@@GFX widoki/j03-osady-v01@@*/
 })();

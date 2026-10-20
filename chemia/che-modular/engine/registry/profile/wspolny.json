@@ -410,10 +410,9 @@
   "F04_atom",
   "F05_izotopy_jony_masa_atomowa",
   "FIZ01_elektrostatyka",
-  "N01_tlenki",
-  "N02_wodorotlenki",
-  "N03_kwasy",
-  "N04_sole",
-  "N05_wodorki"
+  "N02_tlenki",
+  "N03_wodorotlenki",
+  "N04_kwasy",
+  "N05_sole"
  ]
 }

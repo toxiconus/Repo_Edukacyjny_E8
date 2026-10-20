@@ -1,0 +1,1 @@
+P('znso4Naoh',{n:'ZnSO₄ + NaOH (bez nadmiaru)',ppt:'ppt-zn-oh-2',out:['osad'],why:'Biały osad Zn(OH)₂ — w nadmiarze NaOH znika.'});

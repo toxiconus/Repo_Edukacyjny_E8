@@ -1,0 +1,1 @@
+vessel('pendulum',{custom:(c,r,st,env)=>{const t=performance.now()/1000,phi=st.phi==null?.35*Math.sin(t*2.2):st.phi;ELX.pendulum(c,r.x+r.w/2,r.y+10,r.h-34,phi,{q:st.q==null?-3:st.q,th:env.th})}});

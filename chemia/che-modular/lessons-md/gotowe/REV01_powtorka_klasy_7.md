@@ -7,6 +7,7 @@ kicker: REV01 · POWTÓRKA · START KLASY 8 · KONKURS ETAP SZKOLNY
 lead: Jedna lekcja, która spina fundamenty klasy 7: atom → jon → wartościowość → wzór → wiązanie → równanie.
 lead: Kluczowy temat to wartościowość — bez niej nie ułożysz poprawnych wzorów w klasie 8. Na końcu: obliczenia i doświadczenia w stylu konkursu kuratoryjnego.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]][[extra:AMBITNE]]
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 stopka: **CHEMIA REV01 v1.0** · Powtórka fundamentów z klasy 7 · 2026
 ---
 ::: minimum | Muszę umieć — 10 punktów
@@ -702,6 +703,49 @@ Równanie:: 2CuO + C → 2Cu + CO₂↑
 BHP: pokaz nauczyciela; po zakończeniu ogrzewania najpierw wyjmujemy rurkę z wody wapiennej, dopiero potem gasimy palnik (zapobiega cofnięciu się cieczy do gorącej probówki).
 :::
 
+::: karta exam | Zadanie 1 (4 pkt) — Mieszaniny i metody ich rozdzielania
+Przyporządkuj każdej mieszaninie najlepszą metodę rozdzielania (jedna metoda może się powtórzyć) i uzasadnij wybór jednym zdaniem:
+(a) woda z piaskiem, (b) roztwór soli kuchennej w wodzie (chcemy odzyskać sól), (c) opiłki żelaza z piaskiem, (d) spirytus z wodą.
+:::
+
+::: odp | Pokaż klucz
+(a) sączenie (filtracja) — piasek to nierozpuszczalne drobiny, zatrzyma je sączek (1 pkt). (b) odparowanie/krystalizacja — woda ucieka, sól zostaje i krystalizuje; dopuszczalna destylacja, jeśli chcemy odzyskać i wodę (1 pkt). (c) separacja magnetyczna (magnes) — żelazo jest magnetyczne, piasek nie (1 pkt). (d) destylacja — składniki różnią się temperaturą wrzenia (etanol ok. 78 °C, woda 100 °C) (1 pkt).
+:::
+
+::: karta exam | Zadanie 2 (4 pkt) — Prawo zachowania masy w praktyce
+(a) Sformułuj prawo zachowania masy. (b) Spalono całkowicie 12 g węgla w 32 g tlenu. Oblicz masę powstałego dwutlenku węgla i uzasadnij. (c) Ta sama reakcja w otwartym naczyniu: czy masa naczynia z zawartością zmieni się i dlaczego? (d) Rozłożono 10 g węglanu wapnia; otrzymano 5,6 g tlenku wapnia i 4,4 g dwutlenku węgla. Sprawdź prawem zachowania masy.
+:::
+
+::: odp | Pokaż klucz
+(a) Masa substratów równa się masie produktów reakcji (atomy nie powstają i nie znikają — tylko się łączą na nowo) (1 pkt). (b) m(CO₂) = 12 g + 32 g = 44 g — spalanie całkowite węgla: węgiel + tlen → dwutlenek węgla, wszystkie substraty przechodzą w produkt (1 pkt). (c) W układzie zamkniętym masa się nie zmienia. W otwartym naczyniu masa zawartości może się zmienić: tlen może wejść z powietrza, a CO₂ może uciec — dlatego prawo zachowania masy dotyczy układu zamkniętego (1 pkt). (d) 5,6 g + 4,4 g = 10 g = masa substratu — prawo zachowania masy spełnione ✔ (1 pkt).
+:::
+
+::: karta exam | Zadanie 3 (4 pkt) — Pierwiastek, związek czy mieszanina?
+(a) Sklasyfikuj każdą substancję: żelazo, woda, powietrze, sól kuchenna, siarka, dwutlenek węgla — jako pierwiastek, związek chemiczny lub mieszaninę. (b) Korzystając z wartościowości (Mg — II, Al — III, tlen — II), ułóż wzory: tlenek magnezu i tlenek glinu.
+:::
+
+::: odp | Pokaż klucz
+(a) żelazo — pierwiastek (0,5 pkt); woda — związek chemiczny (0,5 pkt); powietrze — mieszanina (0,5 pkt); sól kuchenna — związek chemiczny (0,5 pkt); siarka — pierwiastek (0,5 pkt); dwutlenek węgla — związek chemiczny (0,5 pkt). (b) MgO — wartościowości II:II dają stosunek 1:1 (0,5 pkt); Al₂O₃ — III i II: 2 atomy Al (2·III = VI) i 3 atomy O (3·II = VI), suma wartościowości się równa (0,5 pkt).
+:::
+
+::: adv | Zadanie 4 (5 pkt) — „Prawo zachowania masy nie działa!" | poziom ambitny
+Uczeń spalił 6 g magnezu w otwartym tyglu i zważył produkt: 10 g tlenku magnezu. W sprawozdaniu napisał: „Z 6 g magnezu wyszło 10 g produktu — masa wzrosła, więc prawo zachowania masy zostało naruszone."
+(a) Wskaż błąd w rozumowaniu ucznia. (b) Spalanie magnezu: 2Mg + O₂ → 2MgO. Oblicz z stosunku masowego, ile gramów tlenu połączyło się z magnezem, i sprawdź, że bilans się zgadza. (c) Wyjaśnij, co zmierzyłby uczeń w zamkniętym naczyniu.
+:::
+
+::: odp | Pokaż klucz
+(a) Uczeń porównał masę produktu z masą **jednego** substratu; prawo zachowania masy mówi o masie **wszystkich** substratów — tlen pochodził z powietrza i nie był zważony (2 pkt). (b) Stosunek masowy z równania: 2Mg + O₂ → 2MgO daje Mg : O₂ = (2·24) : 32 = 48 : 32 = 3 : 2. Na 6 g magnezu przypada 6 · (2/3) = 4 g tlenu (1,5 pkt). Bilans: 6 g + 4 g = 10 g = masa MgO ✔ (0,5 pkt). (c) W zamkniętym naczyniu masa całkowita przed i po reakcji byłaby **taka sama** — powietrze z tlenu jest częścią układu zamkniętego (1 pkt).
+:::
+
+::: adv | Zadanie 5 (6 pkt) — Skład mieszaniny cynku i miedzi | poziom ambitny
+Mieszaninę cynku i miedzi o masie 13 g zadziałano nadmiarem kwasu solnego. Cynk reaguje (cynk + kwas solny → chlorek cynku + wodór), a miedź — nie. Wydzieliło się 0,2 g wodoru. Współczynniki równania dają stosunek masowy Zn : H₂ = 65 : 2.
+(a) Oblicz masę cynku, który zareagował. (b) Oblicz masę miedzi w mieszaninie. (c) Podaj zawartość procentową obu metali w mieszaninie. (d) Wyjaśnij, dlaczego kwas był w nadmiarze — co to gwarantuje dla poprawności obliczeń?
+:::
+
+::: odp | Pokaż klucz
+(a) Stosunek 65 : 2 → na 0,2 g H₂ przypada 0,2 · (65/2) = 0,2 · 32,5 = 6,5 g Zn (2 pkt). (b) m(Cu) = 13 − 6,5 = 6,5 g (1 pkt). (c) Zn: 6,5/13 · 100% = 50%; Cu: 50% (po 0,5 pkt). (d) Nadmiar kwasu gwarantuje, że **cały** cynk zareagował — więc cały wydzielony wodór pochodzi z całości cynku, a stosunek masowy można odnieść do całości próbki; gdyby kwasu brakło, część cynku by nie zareagowała i 6,5 g byłoby zaniżone (2 pkt).
+:::
+
 ## 13 | Rozszerzenie i dla ambitnych [[extra:AMBITNE]] {#ambitne}
 
 ::: karta extra | Powłoki i podpowłoki
@@ -911,7 +955,19 @@ Wiązanie kowalencyjne :: wiązanie przez uwspólnienie par elektronowych międz
 Wiązanie metaliczne :: dodatnie jony metalu w „morzu” zdelokalizowanych elektronów
 Elektroujemność :: zdolność atomu do przyciągania elektronów w wiązaniu
 Masa cząsteczkowa :: suma mas atomowych wszystkich atomów w cząsteczce
-Alotropia :: występowanie pierwiastka w różnych postaciach o różnej budowie i właściwościach
+Alotropia :: występowanie pierwiastka w różnych postaciach o różnej budowie i właściwościachmieszanina jednorodna :: mieszanina, w której nie widzimy granic składników i skład jest wszędzie taki sam (roztwór soli, powietrze, stal).
+mieszanina niejednorodna :: mieszanina o widocznych granicach składników lub różnych obszarach (piasek z wodą, mgła).
+pierwiastek chemiczny :: substancja złożona z atomów o jednakowej liczbie atomowej (jednego rodzaju); nie da się go rozłożyć na prostsze substancje metodami chemicznymi.
+związek chemiczny :: substancja złożona z atomów co najmniej dwóch różnych pierwiastków połączonych wiązaniami chemicznymi o stałym stosunku (woda, sól kuchenna).
+cząsteczka :: cząstka zbudowana z dwóch lub więcej atomów połączonych wiązaniami (O₂, H₂O, CO₂).
+reakcja chemiczna :: proces, w którym z substratów powstają produkty o nowych własnościach (zmienia się sposób połączenia atomów).
+prawo zachowania masy :: masa substratów równa się masie produktów; atomy nie powstają i nie znikają, tylko zmieniają połączenia.
+synteza :: reakcja, w której z dwóch lub więcej substratów powstaje jeden produkt (A + B → AB).
+analiza :: reakcja, w której jeden substrat rozkłada się na dwa lub więcej produktów (AB → A + B).
+tlenek :: związek tlenu z jednym innym pierwiastkiem (MgO, CO₂).
+filtracja (sączenie) :: rozdzielanie mieszaniny niejednorodnej ciała stałego od cieczy za pomocą sączka.
+destylacja :: rozdzielanie mieszaniny cieczy (lub cieczy od ciała stałego) przez odparowanie i skroplenie, na różnicy temperatur wrzenia.
+katalizator :: substancja przyspieszająca reakcję, sama nie ulegając trwałej przemianie (MnO₂ przy rozkładzie nadtlenku wodoru).
 :::
 
 ## 18 | Checklista, powtórki i mapy myśli {#podsumowanie}

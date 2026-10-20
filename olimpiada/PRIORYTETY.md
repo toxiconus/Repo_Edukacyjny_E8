@@ -22,6 +22,11 @@ Pakiet 2026/27 dostarczony przez użytkownika 2026-10-19: terminarz, część II
 **Co się zmieniło w biologii 2026/27:** w etapie I nie ma już „tkanek roślinnych” (jest: mchy, paprociowe, nagonasienne, okrytonasienne; tkanki zwierzęce zostały). Pozostałe punkty (etap II: człowiek, skóra … homeostaza; etap III: genetyka, ewolucja, ekologia + poszerzenia: białka, transport, ATP, oddychanie komórkowe, transkrypcja/translacja, chloroplasty–mitochondria, azotowe produkty przemiany materii, protisty, porosty, widłaki i skrzypy) bez zmian.
 
 **Skutki dla lekcji (do zrobienia):** C1c konfiguracje i typy reakcji = etap I (priorytet na 23.10); kwasy/zasady/sole, szereg aktywności, wodorki = etap II (rejon 26.11); ORG = etap III. Sprawdzić w lekcjach oznaczenia „poza zakresem LKO 2025/26” i dopisać zakres 2026/27 (zadanie H6 w `chemia/che-modular/PRZEKAZANIE_HAIKU_SONNET.md`).
+| | chemia 2025/26 | biologia 2025/26 | 2026/27 (pośrednio, niepotwierdzone) |
+|---|---|---|---|
+| etap szkolny | 20.10.2025, 60 min | 16.10.2025, 60 min | **chem 23.10.2026, 9:00, 60 min** (terminarz LKO 2026/27) · bio 21.10.2026 |
+| rejonowy | 26.11.2025, 90 min | 24.11.2025, 90 min | **chem 26.11.2026, 9:00, 90 min** · bio 24.11.2026 |
+| wojewódzki | 10.02.2026, 90 min | 06.02.2026, 90 min | **chem 26.02.2027, 10:00, 90 min** · bio 24.02.2027 |
 
 **Zakresy 2025/26 (oficjalne, OCR: `zrodla/LKO/Zakresy_2025_2026_chemia_biologia_OCR.md`)**
 
@@ -39,6 +44,12 @@ Pakiet 2026/27 dostarczony przez użytkownika 2026-10-19: terminarz, część II
 **Uwaga:** od 2026/27 wchodzi nowa podstawa programowa — zakres 2026/27 może się zmienić; do czasu publikacji pracujemy wg 2025/26.
 
 **Do zrobienia przez użytkownika:** (zakresy 2025/26 i arkusz rejonowy chemii 2025/26 — już w `zrodla/LKO/`) pobrać z kuratorium.lublin.pl (strona blokuje pobieranie automatyczne) arkusze **etapu szkolnego chemii i biologii 2024/25** z kluczami (publikacja id=13802), PDF zakresów 2025/26 i — gdy wyjdzie — pakiet 2026/27; wrzucić do rozmowy → trafią do `olimpiada/zrodla/` i banku zadań.
+
+## 1a. PRIORYTET angielski (decyzja użytkownika 2026-10-11; polski i matematyka przeniesione na koniec kolejki 2026-10-13)
+- **Polski — na koniec kolejki (decyzja 2026-10-13):** lekcja szkolna już była wczoraj, więc kolejne etapy są w sekcji 3. Poniższe pozycje zostają w kolejności, gdy wrócą do kolejki.
+- **Polski (kolejność, gdy wróci):** najpierw przysłówek (G07) i przydawka (G12 części zdania), potem pozostałe podstawy: przymiotnik, rzeczownik, czasownik, liczebnik, zaimek, imiesłowy, przyimek, spójnik, związki wyrazowe.
+- **Angielski:** czasy — L004 (teraźniejsze i przeszłe), L005 (Present Perfect), L006 (Past Simple/Continuous), L012 (przyszłość), dalej L003 (stative) i L002 (operatory).
+- Paczki z warstwą olimpijską (`paczka_ai.py … --olimpiada`, dodatek `eksport/OLIMPIADA_DODATEK.md`), **jedna lekcja na paczkę, ≤ ok. 50 KB** (model z Multi-AI Chat czytał tylko ok. 50 KB — dłuższe urywał). Gotowe 2026-10-11: G07, G12, L004 (W1 FULL), L005 (FULL do §8). Kolejność wysyłki: `ANG_L006_past_simple_continuous` → `ANG_L005_reszta` → `ANG_L012_future` → `POL_G03_przymiotnik` → `POL_G01_rzeczownik` → `ANG_L003_stative_imperative` → `POL_G02…G13` → `ANG_L002_operatory_cz1–3`. Długie lekcje dzieli `eksport/podziel_lekcje.py`.
 
 ## 2. Kolejka lekcji — teraz (do etapów szkolnych)
 ### Chemia (do 23.10)
@@ -61,6 +72,8 @@ Pakiet 2026/27 dostarczony przez użytkownika 2026-10-19: terminarz, część II
 | B2 | człowiek + homeostaza (kl. 7) | etap rejonowy | [ ] |
 
 ## 3. Kolejka — później (oceny bieżące, kolejność szkolna kl. 8)
+- **Polski** (przeniesiony z sekcji 1a, 2026-10-13): przysłówek G07, przydawka G12, potem pozostałe podstawy wg sekcji 1a.
+- **Matematyka** (2026-10-13): lekcja szkolna była dzisiaj, więc na koniec kolejki. Zakres i kolejność do ustalenia, gdy matematyka wróci do priorytetów.
 - Chemia: (etap szkolny nie obejmuje organicznej) po solach → **węglowodory** (O01–O07, materiał `lekcje_md/O/CHE.05.O01-O07.weglowodory.md`) → pochodne węglowodorów (O08–O13) → substancje o znaczeniu biologicznym (O15–O20).
 - Biologia: genetyka → ewolucja → ekologia.
 

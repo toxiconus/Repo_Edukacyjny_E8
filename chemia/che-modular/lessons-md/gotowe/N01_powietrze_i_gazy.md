@@ -9,6 +9,7 @@ lead: Tlen podtrzymuje spalanie, wodór się pali, tlenek węgla(IV) gasi płomi
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]][[extra:AMBITNE]]
 uwaga: Dział IV podstawy programowej (tlen, wodór i ich właściwości; powietrze). Wymaga: F02, F03, F16. Następne: N02 Tlenki (plik N01_tlenki.md — numeracja sprzed kanonu v0.3).
 stopka: **CHEMIA N01 v1.0** · Powietrze i gazy · 2026
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 ---
 ::: minimum | Muszę umieć — 10 punktów
 1. **Powietrze jest mieszaniną** gazów: ok. **78% azotu**, **21% tlenu**, ok. **1% argonu**, ok. **0,04% tlenku węgla(IV)** (objętościowo) oraz zmienna ilość pary wodnej.
@@ -79,6 +80,10 @@ Przebieg: Zapaloną świecę ustawiamy w krystalizatorze z wodą i nakrywamy odw
 Obserwacja: Świeca po chwili gaśnie, a poziom wody w cylindrze podnosi się — zajmuje mniej więcej 1/5 objętości.
 Wniosek: Spalanie zużywa tlen; tlen stanowi ok. 1/5 powietrza, a pozostały gaz (głównie azot) nie podtrzymuje spalania.
 BHP: ostrożnie z ogniem; doświadczenie jest przybliżone — część efektu wynika z ochładzania się gazów i powstawania CO₂, dlatego wynik jest orientacyjny.
+:::
+
+::: karta extra | Jak z powietrza robi się ciekły azot
+W przemyśle powietrze najpierw spręża się i schładza aż do skroplenia, a potem poddaje destylacji frakcyjnej: przy powolnym ogrzewaniu cieczy jako pierwsza odparowuje składnik o najniższej temperaturze wrzenia — azot (ok. −195,8 °C), później tlen (ok. −183 °C; wartości podręcznikowe). W ten sposób z powietrza wydziela się czysty azot, tlen i argon — bez żadnej reakcji chemicznej. To przemysłowy dowód tezy z tej lekcji: powietrze jest mieszaniną, a mieszaninę można rozdzielić samymi metodami fizycznymi.
 :::
 
 ## 2 | Tlen [[basic:E8]] {#tlen}
@@ -321,6 +326,58 @@ Gazy cieplarniane (para wodna, CO₂, metan) przepuszczają światło słoneczne
 :::
 :::
 
+## 12b | Zadania konkursowe — karty egzaminacyjne {#zadania-exam}
+
+::: karta exam | Zadanie 1 (4 pkt) — Skład powietrza i dowód na mieszaninę
+(a) Podaj skład powietrza w procentach objętościowych: azot, tlen, argon (gazy szlachetne łącznie), dwutlenek węgla.
+(b) Podaj dwa niezależne argumenty, że powietrze jest mieszaniną, a nie związkiem chemicznym.
+:::
+
+::: odp | Pokaż klucz
+(a) N₂ ok. 78% obj., O₂ ok. 21%, Ar (gazy szlachetne razem) ok. 0,9–1%, CO₂ ok. 0,04% (w starszych podręcznikach 0,03%) (2 pkt: po 1 pkt za parę N₂/O₂ i za parę Ar/CO₂).
+(b) dowolne dwa po 1 pkt: skład powietrza jest zmienny (para wodna, CO₂, zanieczyszczenia — związek ma stały skład); składniki da się rozdzielić metodami fizycznymi (skraplanie i destylacja frakcyjna powietrza ciekłego); każdy składnik zachowuje własności (O₂ podtrzymuje spalanie także w powietrzu, N₂ pozostaje obojętny); między składnikami nie ma stałego stosunku stechiometrycznego.
+:::
+
+::: karta exam | Zadanie 2 (4 pkt) — Świeca pod kloszem
+Do naczynia z wodą wstawiono płonącą świecę i przykryto ją odwróconym kloszem. (a) Co zaobserwujesz? (b) Dlaczego płomień gaśnie? (c) Dlaczego po zgaśnięciu woda wstępuje pod klosz? (d) Dlaczego przy świecy woda wstępuje zwykle mniej niż 1/5 objętości powietrza, a w klasycznym doświadczeniu ze spalaniem białego fosforu — właśnie ok. 1/5?
+:::
+
+::: odp | Pokaż klucz
+(a) Płomień stopniowo gaśnie, a poziom wody w kloszu rośnie (1 pkt). (b) W zamkniętej objętości zużywa się tlen — gdy go zabraknie, spalanie ustaje, bo tlen jest podtrzymaczem spalania (1 pkt). (c) Zużycie O₂ zmniejsza ilość gazu pod kloszem, ciśnienie tam spada i ciśnienie atmosferyczne z zewnątrz wpycha wodę w górę (1 pkt). (d) Świeca wytwarza gazowy CO₂, który częściowo zajmuje objętość zużytego tlenu (częściowo rozpuszcza się w wodzie); fosfor tworzy stały P₂O₅ rozpuszczający się w wodzie (4P + 5O₂ → 2P₂O₅), więc tlen jest usuwany bez gazowego produktu i woda wypełnia całą jego objętość (1 pkt).
+:::
+
+::: karta exam | Zadanie 3 (4 pkt) — Dwutlenek węgla: właściwości i wykrywanie
+(a) Podaj trzy fizyczne własności CO₂. (b) Opisz próbę pozwalającą wykryć CO₂ i zapisz równanie reakcji. (c) Dlaczego CO₂ nadaje się do gaszenia pożarów, ale nie ugasi płonącego magnezu?
+:::
+
+::: odp | Pokaż klucz
+(a) dowolne trzy z: bezbarwny, bezwonny, cięższy od powietrza (ok. 1,5 raza), rozpuszczalny w wodzie (powstaje słaby kwas węglowy) (1 pkt). (b) Przepuszczenie gazu przez wodę wapienną — mętnienie wskazuje na CO₂ (1 pkt): Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O (1 pkt). (c) CO₂ jest cięższy od powietrza i nie podtrzymuje spalania — pokrywa płomień warstwą odcinającą tlen (0,5 pkt). Palący się magnez jest jednak tak reaktywny, że kontynuuje spalanie kosztem tlenu z CO₂: 2Mg + CO₂ → 2MgO + C (0,5 pkt).
+:::
+
+::: karta exam | Zadanie 4 (4 pkt) — Spalanie całkowite i niecałkowite metanu
+(a) Zapisz równanie całkowitego spalania metanu. (b) Zapisz równanie niecałkowitego spalania metanu, w którym powstaje tlenek węgla. (c) Wyjaśnij, dlaczego tlenek węgla CO jest niebezpieczny dla człowieka. (d) Podaj dwa objawy lub warunki świadczące o spalaniu niecałkowitym.
+:::
+
+::: odp | Pokaż klucz
+(a) CH₄ + 2O₂ → CO₂ + 2H₂O (1 pkt). (b) 2CH₄ + 3O₂ → 2CO + 4H₂O (1 pkt). (c) CO jest bezbarwny i bezwonny (nie da się go zauważyć), a przy wdychaniu wiąże się z hemoglobiną znacznie silniej niż tlen — blokuje transport tlenu we krwi; nawet małe stężenia grożą zatruciem (1 pkt). (d) dowolne dwa z: żółty, kopiący płomień; sadza (czarny nalot) na naczyniu; niedobór tlenu (zamknięte pomieszczenie, przytłumiony palnik) (1 pkt).
+:::
+
+::: adv | Zadanie 5 (5 pkt) — Gdzie uczeń podzielił przez złą liczbę? | poziom ambitny
+W doświadczeniu pobrano 200 cm³ powietrza nad wodą do zamkniętego naczynia z kawałkiem białego fosforu. Po zakończeniu spalania i ochłodzeniu naczynia woda wstąpiła o 42 cm³. Uczeń rozwiązując zadanie napisał: „Woda wstąpiła o 42 cm³, więc w próbce było 42 cm³ tlenu. Zawartość tlenu: 42/100 · 100% = 42%. Pozostały gaz to czysty azot." Wskaż oba błędy w tym rozwiązaniu, popraw obliczenie i podaj poprawny opis gazu resztkowego. Wyjaśnij też, dlaczego fosfor daje miarodajny odczyt, a świeca — zwykle zaniżony.
+:::
+
+::: odp | Pokaż klucz
+Błąd 1 (2 pkt): uczeń podzielił przez 100 cm³, choć próbka powietrza miała 200 cm³ — procent objętościowy liczy się względem objętości całej próby. Poprawne obliczenie (1 pkt): 42/200 · 100% = 21%. Błąd 2 (1 pkt): gaz resztkowy to nie czysty azot — oprócz N₂ (ok. 78% obj. powietrza) zostają gazy szlachetne, głównie argon (ok. 0,9–1%). Wyjaśnienie (1 pkt): fosfor tworzy stały, rozpuszczalny w wodzie P₂O₅ (4P + 5O₂ → 2P₂O₅), więc zużyty tlen nie zostawia gazowego następcy; świeca wytwarza CO₂, który częściowo wypełnia objętość zużytego tlenu (częściowo się rozpuszcza) — dlatego woda wstępuje mniej.
+:::
+
+::: adv | Zadanie 6 (6 pkt) — Węgiel w zamkniętym naczyniu: nadmiar i wydajność | poziom ambitny
+W zamkniętym naczyniu spalano 12 g węgla w 40 g tlenu (reakcja: C + O₂ → CO₂). (a) Wykaż obliczeniem (w molach), który substrat był w nadmiarze, i podaj masę tego nadmiaru. (b) Oblicz teoretyczną masę CO₂, jaka mogła powstać. (c) Po doświadczeniu zebrano 39,6 g CO₂ — oblicz wydajność reakcji. (d) Podaj masę i nazwę gazu pozostałego w naczyniu po reakcji.
+:::
+
+::: odp | Pokaż klucz
+(a) n(C) = 12 g / 12 g/mol = 1 mol; n(O₂) = 40 g / 32 g/mol = 1,25 mol (1 pkt). Stosunek stechiometryczny 1 : 1 → węgiel wyczerpie się pierwszy; zużyto 1 mol O₂ = 32 g, zostaje 40 − 32 = 8 g tlenu w nadmiarze (1 pkt). (b) n(CO₂) = 1 mol; M(CO₂) = 12 + 2·16 = 44 g/mol → m teoretyczna = 44 g (1 pkt). (c) wydajność = 39,6 g / 44 g · 100% = 90% (1,5 pkt). (d) Pozostaje nadmiarowy tlen, 8 g (1,5 pkt).
+:::
+
 ## 13 | Test końcowy {#test}
 
 ::: test
@@ -452,6 +509,13 @@ Korozja :: niszczenie metali pod wpływem czynników środowiska
 Efekt cieplarniany :: zatrzymywanie ciepła przy powierzchni Ziemi przez gazy cieplarniane
 Kwaśne deszcze :: opady zawierające kwasy powstałe z tlenków siarki i azotu
 Sublimacja :: przejście substancji ze stanu stałego bezpośrednio w gazowy
+azot (N₂) :: bezbarwny i bezwonny gaz, główny składnik powietrza; słabo reaktywny — rozcieńcza tlen i tłumi spalanie.
+gazy szlachetne :: hel, neon, argon, krypton, ksenon, radon — gazy jednoatomowe o bardzo małej aktywności chemicznej.
+woda wapienna :: przejrzysty roztwór wodorotlenku wapnia Ca(OH)₂; mętnieje w obecności CO₂ (biały osad CaCO₃) — klasyczna próba na ten gaz.
+spalanie całkowite :: spalanie przy dobrym dostępie tlenu; produktami są CO₂ i H₂O.
+spalanie niecałkowite :: spalanie przy niedoborze tlenu; produktami są tlenek węgla CO i/lub sadza (C).
+tlenek węgla (CO) :: bezbarwny, bezwonny, silnie trujący gaz; produkt niecałkowitego spalania.
+zanieczyszczenia powietrza :: substancje szkodliwe wprowadzane do atmosfery przez człowieka: pyły, CO, SO₂, tlenki azotu, lotne związki organiczne.
 :::
 
 ## 16 | Ściąga {#sciaga}

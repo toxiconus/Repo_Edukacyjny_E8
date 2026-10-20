@@ -1,0 +1,1 @@
+P('naohHno3',{n:'NaOH + HNO₃ (+ fenoloftaleina)',l0:pink,l1:php,out:['barwa'],heat:.4,T:31,why:'Zanik barwy malinowej.'});

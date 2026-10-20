@@ -3,17 +3,17 @@ kod: F03
 uid: CHE.01.F03.wlasciwosci_i_rozdzielanie
 tytul: Właściwości i rozdzielanie mieszanin
 opis: Właściwości fizyczne i chemiczne · stany skupienia · zjawisko a reakcja · dobór metody rozdzielania do różnicy właściwości
-kicker: F03 · FUNDAMENTY · MASTER v1.0
-lead: Trzecia lekcja bloku fundamentów: jak właściwość substancji staje się narzędziem — do rozpoznania próbki, odróżnienia zjawiska od reakcji
-lead: i rozdzielenia mieszaniny. Najważniejsza reguła: metoda rozdzielania jest konsekwencją różnicy właściwości, a nie nazwy mieszaniny.
+kicker: F03 · FUNDAMENTY · MASTER v1.1
+lead: Trzecia lekcja bloku fundamentów: jak właściwość substancji staje się narzędziem — do rozpoznania próbki, odróżnienia zjawiska od reakcji i rozdzielenia mieszaniny. Najważniejsza reguła: metoda rozdzielania jest konsekwencją różnicy właściwości, a nie nazwy mieszaniny.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
-stopka: **CHEMIA F03 v1.0 MASTER** · Właściwości i rozdzielanie mieszanin · 2026
+stan: "W1 (audyt 03) wprowadzony — 2026-10-13"
+stopka: **CHEMIA F03 v1.1 MASTER** · Właściwości i rozdzielanie mieszanin · 2026
 ---
 ::: minimum | Muszę umieć na E8 — 12 punktów
 1. **Właściwość fizyczna** można zmierzyć lub zaobserwować bez zmiany substancji: stan skupienia, barwa, gęstość, temperatura topnienia i wrzenia, rozpuszczalność, przewodnictwo.
 2. **Właściwość chemiczna** to zdolność do przemiany w inną substancję: palność, reakcja z kwasem, z tlenem, rdzewienie.
 3. **Zjawisko fizyczne** nie tworzy nowej substancji (topnienie, parowanie, rozpuszczanie, mieszanie); **reakcja chemiczna** — tworzy.
-4. Objawy reakcji (gaz, osad, barwa, ciepło, światło) to **dowód pośredni** — wrzenie też daje pęcherzyki, a nie jest reakcją.
+4. Objawy reakcji (gaz, osad, barwa, ciepło, światło) to **przesłanki, nie dowód** — wrzenie też daje pęcherzyki, a nie jest reakcją. Dowodem jest nowa substancja.
 5. **Stany skupienia:** ciało stałe — własny kształt i objętość; ciecz — własna objętość, kształt naczynia; gaz — kształt i objętość naczynia.
 6. Przejścia: topnienie, krzepnięcie, parowanie, skraplanie, sublimacja, resublimacja — to zjawiska fizyczne.
 7. **Gęstość** ρ = m / V (g/cm³); woda ok. 1 g/cm³ — co ma mniejszą gęstość, pływa.
@@ -93,6 +93,20 @@ stopka: **CHEMIA F03 v1.0 MASTER** · Właściwości i rozdzielanie mieszanin ·
 :::
 :::
 
+## 0.5 | Wykład — właściwości i rozdzielanie od zera {#wyklad}
+
+::: karta understand | Wykład — właściwości i rozdzielanie od zera
+Każda substancja ma swój „dowód osobisty” — zestaw **właściwości**. Część z nich możesz sprawdzić, nie zmieniając substancji: barwę, zapach, stan skupienia, gęstość, temperaturę topnienia i wrzenia, rozpuszczalność w wodzie, przewodnictwo prądu. To **właściwości fizyczne**. Inne ujawniają się dopiero, gdy substancja reaguje i zamienia się w coś nowego: czy się pali, czy rdzewieje, jak reaguje z kwasem. To **właściwości chemiczne**.
+
+Ta sama różnica dzieli zmiany na dwa rodzaje. **Zjawisko fizyczne** zmienia formę, ale nie skład: lód topnieje w wodę, cukier rozpuszcza się w herbacie, gałąź łamie się na pół — nadal jest to ta sama substancja. **Reakcja chemiczna** prowadzi do powstania nowej substancji: drewno spala się na popiół i gazy, żelazo rdzewieje, mleko kwaśnieje. Sygnały reakcji to zmiana barwy, wydzielanie gazu, powstawanie osadu, efekt cieplny lub świetlny, nowy zapach — ale uwaga: same sygnały nie są dowodem (woda też „wydziela gaz”, gdy wrze).
+
+**Stany skupienia** — stały, ciekły i gazowy — to formy substancji; ich **przemiany** (topnienie, parowanie, sublimacja) to zjawiska fizyczne. Przemiany mają nazwy, które warto znać na pamięć: topnienie i krzepnięcie, parowanie (wrzenie) i skraplanie, sublimacja (ciało stałe → gaz, np. suchy lód) i resublimacja (gaz → ciało stałe, np. szron).
+
+Właściwości fizyczne to też klucz do **rozdzielania mieszanin**. Wybierasz metodę według tego, czym składniki się różnią. Różna wielkość cząstek i nierozpuszczalność — **sączenie** (piasek z wody). Różna gęstość — **dekantacja** albo rozdzielacz (woda i olej). Rozpuszczona substancja stała — **odparowanie** lub **krystalizacja** (sól z wody). Różne temperatury wrzenia — **destylacja** (alkohol z wody). Właściwości magnetyczne — **magnes** (opiłki żelaza z siarki). Różne „przyczepianie się” do bibuły — **chromatografia** (barwniki w atramencie).
+
+Na egzaminie z tej lekcji najczęściej pojawia się zadanie typu: „zaproponuj sposób rozdzielenia mieszaniny i uzasadnij” — odpowiedź zawsze buduj według wzoru: **metoda + właściwość, która na to pozwala**.
+:::
+
 ## 1 | Właściwości fizyczne i chemiczne [[basic:E8]] {#wlasciwosci}
 
 | Właściwości fizyczne | Właściwości chemiczne |
@@ -114,7 +128,9 @@ stopka: **CHEMIA F03 v1.0 MASTER** · Właściwości i rozdzielanie mieszanin ·
 
 $$ ρ = m / V → m = ρ · V → V = m / ρ
 
-Jednostki: g/cm³ lub kg/m³ (1 g/cm³ = 1000 kg/m³). Woda: ok. 1 g/cm³; olej: ok. 0,9 g/cm³ — pływa na wodzie; żelazo: ok. 7,9 g/cm³ (dane do weryfikacji). Przed podstawieniem sprawdź, czy jednostki do siebie pasują.
+Jednostki: g/cm³ lub kg/m³ (1 g/cm³ = 1000 kg/m³). Woda: ok. 1 g/cm³; olej: ok. 0,9 g/cm³ — pływa na wodzie; żelazo: 7,87 g/cm³. Przed podstawieniem sprawdź, czy jednostki do siebie pasują.
+
+**Przykład:** kostka ma masę 54 g i objętość 20 cm³: ρ = 54 g : 20 cm³ = 2,7 g/cm³ = 2700 kg/m³ (np. glin). Lód pływa, bo ma gęstość ok. 0,92 g/cm³ — mniejszą niż woda. Powietrze ma ok. 1,2 kg/m³: wodór (ok. 0,09 kg/m³) jest od niego lżejszy, a dwutlenek węgla (ok. 1,8 kg/m³) — cięższy.
 
 ### Właściwość diagnostyczna [[understand:ROZUMIENIE]]
 
@@ -136,6 +152,10 @@ Nie każda właściwość nadaje się do rozpoznania substancji. Bezbarwna ciecz
 
 Wszystkie przemiany fazowe to **zjawiska fizyczne** — cząsteczki H₂O w lodzie, wodzie i parze są takie same; zmienia się tylko ich ułożenie i ruch.
 
+::: karta understand | Stała temperatura podczas przemiany
+Podczas topnienia lodu temperatura wynosi 0 °C, mimo że ciepło jest dostarczane — energia zmienia ułożenie cząstek, a nie ich temperaturę. Podczas wrzenia wody temperatura to 100 °C przy ciśnieniu normalnym. Na wykresie temperatury w czasie przemiany widać poziome odcinki: to narzędzie sprawdzania czystości (F02, ćw. D.1). Mieszanina topi się i wrze w zakresie temperatur.
+:::
+
 ### Dyfuzja [[understand:ROZUMIENIE]]
 
 **Dyfuzja** to samorzutne mieszanie się substancji wynikające z ruchu cząstek: zapach perfum rozchodzi się po pokoju, kropla atramentu barwi wodę bez mieszania. Najszybsza w gazach, wolniejsza w cieczach, bardzo powolna w ciałach stałych; przyspiesza w wyższej temperaturze. Jest jednym z dowodów, że cząstki są w ciągłym ruchu.
@@ -148,9 +168,9 @@ Wszystkie przemiany fazowe to **zjawiska fizyczne** — cząsteczki H₂O w lodz
 |---|---|---|
 | nowa substancja | nie powstaje | powstaje |
 | przykłady | topnienie, parowanie, rozpuszczanie, mieszanie, rozdrabnianie, rozdzielanie mieszanin | spalanie, rdzewienie, fermentacja, reakcja sody z octem, ścinanie białka |
-| odwracalność | zwykle prostymi metodami fizycznymi | zwykle tylko inną reakcją |
+| wskazówka | odzyskanie substancji prostą metodą fizyczną sugeruje zjawisko fizyczne, ale nie rozstrzyga | reakcje bywają też odwracalne (CuSO₄·5H₂O ⇄ CuSO₄ + 5H₂O); rozstrzyga nowa substancja |
 
-**Objawy reakcji** — gaz, osad, trwała zmiana barwy, ciepło lub światło, nowy zapach — są **dowodem pośrednim**. Wrzenie daje pęcherzyki, rozcieńczanie zmienia barwę, rozpuszczanie niektórych soli ochładza roztwór — a żadne z nich nie jest reakcją. Rozstrzyga **dowód nowej substancji**: nowe właściwości, test (woda wapienna mętnieje → CO₂). Pełną metodę „od objawu do modelu reakcji” rozwija F16.
+**Objawy reakcji** — gaz, osad, trwała zmiana barwy, ciepło lub światło, nowy zapach — są **przesłankami, nie dowodem**. Wrzenie daje pęcherzyki, rozcieńczanie zmienia barwę, rozpuszczanie niektórych soli ochładza roztwór — a żadne z nich nie jest reakcją. Rozstrzyga **dowód nowej substancji**: nowe właściwości, test (woda wapienna mętnieje → CO₂). Pełną metodę „od objawu do modelu reakcji” rozwija F16.
 
 ::: karta warning | Rozpuszczanie to nie znikanie
 „Sól zniknęła” — błąd. Sól jest w roztworze, a po odparowaniu wody wraca. Zniknięcie z pola widzenia nie oznacza zniszczenia substancji.
@@ -158,7 +178,7 @@ Wszystkie przemiany fazowe to **zjawiska fizyczne** — cząsteczki H₂O w lodz
 
 ## 4 | Właściwości jako podstawa rozdzielania [[basic:E8]] {#podstawa}
 
-Składniki mieszaniny zachowują swoje właściwości ([F02](#mosty)), więc każda **różnica** właściwości może posłużyć do rozdzielenia. Rozdzielanie jest zjawiskiem fizycznym — nie tworzy nowych substancji.
+Składniki mieszaniny zachowują swoje właściwości (F02), więc każda **różnica** właściwości może posłużyć do rozdzielenia. Rozdzielanie jest zjawiskiem fizycznym — nie tworzy nowych substancji.
 
 ::: karta core | Najważniejsza reguła lekcji
 **Metoda rozdzielania jest konsekwencją różnicy właściwości.** Jeżeli nie potrafisz wskazać tej różnicy, wybierasz metodę na pamięć.
@@ -178,6 +198,7 @@ Składniki mieszaniny zachowują swoje właściwości ([F02](#mosty)), więc ka�
 | **magnes** | właściwości magnetyczne (żelazo, nikiel, kobalt — nie każdy metal: glin i miedź nie są przyciągane) | składnik magnetyczny na magnesie | opiłki żelaza i siarka lub piasek |
 | **przesiewanie (sito)** | różna wielkość ziaren | grubsze ziarna na sicie, drobne przechodzą | piasek i żwir, mąka z grudkami |
 | **chromatografia** | różne powinowactwo składników do fazy nieruchomej (bibuła) i ruchomej (rozpuszczalnik) | barwniki w różnych miejscach bibuły | barwniki tuszu |
+| **sublimacja** | jeden składnik sublimuje (przechodzi w gaz), drugi nie | pary składnika zbierane na zimnej powierzchni | jod z piaskiem; chlorek amonu z piaskiem |
 | **wirowanie** | różna gęstość, przyspieszone opadanie | osad na dnie probówki | składniki krwi |
 
 **Ciecze niemieszające się — układ warstw.** Gdy w rozdzielaczu zmieszamy dwie ciecze, które się nie mieszają, ułożą się w dwie warstwy: **ciecz o mniejszej gęstości jest na górze, o większej — na dole**. Przyczyna: cięższa ciecz działa większą siłą ciężkości na tę samą objętość, a lżejsza „pływa" po niej jak korek po wodzie. Przykłady: woda (ρ = 1,00 g/cm³) i olej roślinny (ρ ≈ 0,92 g/cm³) — olej na górze; chloroform (ρ ≈ 1,49 g/cm³) i woda — chloroform na dole. Woda i etanol (ρ ≈ 0,79 g/cm³) mieszają się w każdym stosunku, więc nie tworzą warstw — gęstość tu nie decyduje, potrzebna jest destylacja.
@@ -188,17 +209,25 @@ Składniki mieszaniny zachowują swoje właściwości ([F02](#mosty)), więc ka�
 
 **Sączenie a destylacja:** sączenie oddziela ciało stałe od cieczy; destylacja rozdziela ciecze lub odzyskuje rozpuszczalnik z roztworu. **Odparowanie a destylacja:** obie usuwają lotny rozpuszczalnik, ale tylko destylacja go **odzyskuje** — para jest chłodzona w chłodnicy, skrapla się i spływa do odbieralnika.
 
+> Sublimację jodu prowadzimy wyłącznie jako pokaz pod wyciągiem — pary jodu są szkodliwe.
+
 @model f03-rozdzielanie-v01 | Pracownia: rozdzielanie mieszanin | zawiesiny i roztwór w zlewce — sedymentacja, sączenie, odparowanie; jaką różnicę właściwości wykorzystujesz?
 @opis Zlewki z zawiesinami i roztworem pokazane w kolejnych metodach: sedymentacja (osad opada na dno), sączenie (osad zostaje na sączku, klarowny przesącz spływa do zlewki), odparowanie (w parownicy zostaje substancja stała). Wniosek: metodę rozdzielania dobiera się do różnicy właściwości składników mieszaniny.
 
 ## 6 | Procedura doboru metody [[basic:E8]] {#dobor}
 
-::: karta core | Pięć pytań przed wyborem metody
+::: karta core | Pięć kroków wyboru metody
 1. **Jakie składniki** chcę rozdzielić i czy chcę odzyskać wszystkie?
 2. Czy któryś składnik jest **nierozpuszczalnym ciałem stałym**? → sedymentacja, dekantacja, sączenie.
 3. Czy któryś jest **rozpuszczony**? → odparowanie, krystalizacja; chcę odzyskać też rozpuszczalnik → destylacja.
 4. Czy to **dwie ciecze**? Mieszają się → destylacja; nie mieszają się → rozdzielacz.
 5. Czy któryś jest **magnetyczny** albo to **barwniki**? → magnes, chromatografia.
+:::
+
+::: karta understand | Dwa nierozpuszczalne ciała stałe
+- **Piasek + trociny:** wrzuć do wody — trociny wypłyną, piasek opadnie (różnica gęstości).
+- **Piasek + żwir:** przesiewanie — różna wielkość ziaren.
+- **Mieszaniny gazowe** (ambitnie): skraplanie powietrza — składniki o różnych temperaturach wrzenia rozdziela się destylacją frakcyjną.
 :::
 
 ### Mieszanina kilku składników — kolejność ma znaczenie
@@ -211,7 +240,9 @@ Składniki mieszaniny zachowują swoje właściwości ([F02](#mosty)), więc ka�
 4. **odparowanie** (lub krystalizacja) przesączu — zostaje sól; chcąc odzyskać wodę — **destylacja**.
 
 ::: karta understand | Dlaczego taka kolejność?
-Magnes przed wodą — mokre opiłki trudniej wyciągnąć i zaczynają rdzewieć. Sączenie przed odparowaniem — inaczej piasek zostałby razem z solą. Każdy krok usuwa jeden składnik dzięki jednej różnicy właściwości.
+Magnes wykonujemy najpierw, bo po zalaniu wodą i sączeniu opiłki zostałyby razem z piaskiem na sączku — najprościej usunąć żelazo od razu. Sączenie przed odparowaniem — inaczej piasek zostałby razem z solą. Każdy krok usuwa jeden składnik dzięki jednej różnicy właściwości.
+
+> **Czy jest inna poprawna kolejność?** Tak: woda → sączenie → wysuszony osad → magnes (wtedy magnes odciąga opiłki z osadu na sączku). Ambitnie: uzasadnij, dlaczego obie kolejności działają.
 :::
 
 ::: adv | Czy rozdzielanie zawsze daje czyste składniki? | poziom akademicki
@@ -234,11 +265,13 @@ Nie zawsze. Pojedyncza destylacja mieszaniny etanolu z wodą daje destylat **wzb
 
 ## 8 | Doświadczenia {#doswiadczenia}
 
+Zasady BHP obowiązują we wszystkich doświadczeniach tej lekcji — sześć reguł z F01 (§9.2): okulary, fartuch, wąchanie ruchem dłoni, gorące szkło, nic nie smakujemy.
+
 ::: dosw | Doświadczenie 1 — Rozdzielanie piasku i wody
 Problem: Jak oddzielić piasek od wody?
 Hipoteza: Piasek nie rozpuszcza się w wodzie, więc zatrzyma się na sączku, a woda przejdzie.
 Sprzęt: zlewki, lejek, sączek z bibuły, statyw z kółkiem, bagietka, mieszanina piasku z wodą.
-Przebieg: Odstaw mieszaninę na kilka minut. Zlej część wody znad osadu (dekantacja). Resztę przelej po bagietce na sączek w lejku.
+Przebieg: Odstaw mieszaninę na kilka minut. Zlej część wody znad osadu (dekantacja). Technika: złóż sączek w czworokąt, włóż do lejka i zwilż wodą; lejek oprzyj końcówką o ściankę zlewki; resztę przelej po bagietce na sączek.
 Obserwacja: Piasek opada na dno; na sączku zostaje piasek (osad), do zlewki spływa klarowna ciecz (przesącz).
 Wniosek: Sedymentacja, dekantacja i sączenie rozdzielają nierozpuszczalne ciało stałe od cieczy. Proces fizyczny — brak równania reakcji.
 BHP: okulary; szkło — ostrożnie; ciecz wlewamy po bagietce, nie przebijamy sączka.
@@ -258,6 +291,10 @@ BHP: okulary; gorąca parownica — tylko szczypcami; pod koniec odparowania kry
 
 @zlewka f03-rozdzielanie-v01 f01Odparowanie | Zobacz w parownicy: odparowanie roztworu soli
 @opis Parownica z roztworem soli ogrzewana palnikiem: woda paruje, na dnie zostają białe kryształy soli. Wniosek: rozpuszczona sól nie zniknęła — odparowanie oddziela substancję stałą od lotnego rozpuszczalnika i jest zjawiskiem fizycznym.
+:::
+
+::: adv | Krystalizacja a prażenie do sucha | poziom akademicki
+Przy odparowaniu roztworu siarczanu(VI) miedzi(II) odparowujemy tylko do pojawienia się kryształów. Prażenie do sucha usuwa wodę z kryształów (hydrat bieleje) — to inna przemiana niż krystalizacja; szczegóły w lekcjach R.
 :::
 
 ::: dosw | Doświadczenie 3 — Opiłki żelaza, piasek i sól
@@ -282,37 +319,68 @@ BHP: brak szczególnych zagrożeń; linia ołówkiem (grafit nie wędruje), nie 
 
 ::: dosw | Doświadczenie 5 — Destylacja wody z roztworu (pokaz)
 Problem: Jak odzyskać czystą wodę z roztworu soli z barwnikiem?
-Hipoteza: Woda ma niższą temperaturę wrzenia niż sól — odparuje, skropli się w chłodnicy i spłynie czysta do odbieralnika.
+Hipoteza: Sól jest nielotna — tylko woda odparuje, skropli się w chłodnicy i spłynie czysta do odbieralnika.
 Sprzęt: kolba destylacyjna z kamyczkami wrzennymi, termometr, chłodnica, odbieralnik, palnik, statyw.
-Przebieg: Nauczyciel ogrzewa roztwór w kolbie; para przechodzi przez chłodnicę z płynącą wodą.
-Obserwacja: Termometr pokazuje ok. 100 °C; do odbieralnika kapie bezbarwna ciecz; w kolbie roztwór gęstnieje i ciemnieje.
+Przebieg: Nauczyciel ogrzewa roztwór w kolbie; para przechodzi przez chłodnicę z płynącą wodą — woda chłodząca płynie od dołu do góry. Bańka termometru na wysokości wylotu pary do chłodnicy (mierzymy temperaturę pary). Nie odparowujemy do sucha (pęknięcie kolby, rozkład osadu).
+Obserwacja: Termometr pokazuje ok. 100 °C (dla roztworu soli bywa nieco wyżej); do odbieralnika kapie bezbarwna ciecz; w kolbie roztwór gęstnieje i ciemnieje.
 Wniosek: Destylacja rozdziela składniki o różnych temperaturach wrzenia i odzyskuje rozpuszczalnik; destylat to woda destylowana.
 BHP: pokaz nauczyciela; kamyczki wrzenne zapobiegają gwałtownemu wrzeniu; nie ogrzewać zamkniętego układu; gorące szkło.
+:::
+
+::: dosw | Doświadczenie 6 — Gęstość ciała stałego metodą wypierania wody
+Problem: Jak zmierzyć gęstość kamyka o nieregularnym kształcie?
+Hipoteza: Objętość kamyka równa się objętości wody, którą wypiera.
+Sprzęt: cylinder miarowy z wodą, waga, kamyk, nitka.
+Przebieg: Zmierz masę kamyka. Odczytaj objętość wody w cylindrze, wsuń kamyk na nitce, odczytaj nowy poziom. Różnica to objętość kamyka.
+Obserwacja: Przykład: masa 27 g; woda 10,0 cm³ → 20,0 cm³ po zanurzeniu. Objętość kamyka 10 cm³.
+Wniosek: ρ = m / V = 27 g : 10 cm³ = 2,7 g/cm³. Metoda działa dla ciał, które nie rozpuszczają się w wodzie.
+BHP: okulary; cylinder ostrożnie; nie zanurzać przedmiotów, które reagują z wodą.
+:::
+
+## 8.5 | Nie myl! {#nie-myl}
+
+::: nie-myl | Pojęcia, które łatwo pomylić
+| Para | Dlaczego łatwo pomylić | Jak rozstrzygnąć |
+|---|---|---|
+| zjawisko fizyczne / reakcja chemiczna | oba to „zmiany” | fizyczne — ta sama substancja; reakcja — powstaje nowa |
+| parowanie / wrzenie | oba to ciecz → gaz | parowanie — z powierzchni, w każdej temperaturze; wrzenie — w całej objętości, w temperaturze wrzenia |
+| sublimacja / resublimacja | podobne nazwy | sublimacja — stały → gaz; resublimacja — gaz → stały |
+| sączenie / dekantacja | obie oddzielają ciało stałe od cieczy | sączenie — przez sączek; dekantacja — zlanie cieczy znad osadu |
+| odparowanie / destylacja | obie z ogrzewaniem | odparowanie — odzyskujemy substancję stałą, ciecz ucieka; destylacja — odzyskujemy też ciecz (skraplamy ją) |
+| rozpuszczanie / topnienie | „cukier znika”, „lód znika” | rozpuszczanie — w rozpuszczalniku; topnienie — pod wpływem ciepła, bez rozpuszczalnika |
+:::
+
+::: karta understand | W skrócie — jak to zastosować w zadaniu
+Każdą odpowiedź „jak rozdzielić?” buduj w trzech krokach. **1)** Nazwij składniki i ustal, czym się różnią (rozpuszczalność, gęstość, temperatura wrzenia, magnetyzm, wielkość cząstek). **2)** Dobierz metodę do tej różnicy. **3)** Gdy składników jest więcej niż dwa, ustal kolejność: np. piasek + sól + woda → najpierw **sączenie** (zostaje piasek na sączku), potem **odparowanie** przesączu (zostaje sól). Uzasadnienie zawsze zawiera właściwość: „sączenie, bo piasek nie rozpuszcza się w wodzie”, a nie samo „sączenie”.
 :::
 
 ## 9 | Klinika błędów {#klinika}
 
 ::: klinika | Błąd | Poprawnie | Dlaczego?
-| „Sączenie oddzieli sól od wody.” | Sól rozpuszczoną odzyskuje się odparowaniem, krystalizacją lub destylacją. | Rozpuszczona sól przechodzi przez sączek razem z wodą. |
+| „Sączenie oddzieli sól od wody.” | Sól rozpuszczoną odzyskuje się odparowaniem lub krystalizacją; destylacją odzyskasz wodę, a sól zostaje w kolbie. | Rozpuszczona sól przechodzi przez sączek razem z wodą. |
 | „Destylacja i sączenie to to samo.” | Sączenie: ciało stałe + ciecz; destylacja: różne temperatury wrzenia. | Wykorzystują inne różnice właściwości. |
 | „Odparowanie i destylacja to to samo.” | Tylko destylacja odzyskuje rozpuszczalnik. | W odparowaniu para ucieka do powietrza. |
 | „Woda wrze, więc zachodzi reakcja.” | Wrzenie to zjawisko fizyczne. | Cząsteczki H₂O w parze są te same co w cieczy. |
-| „Każde wydzielanie gazu to reakcja.” | Trzeba sprawdzić, czy powstała nowa substancja. | Objaw to dowód pośredni. |
+| „Każde wydzielanie gazu to reakcja.” | Trzeba sprawdzić, czy powstała nowa substancja. | Objaw to przesłanka; dowodem jest nowa substancja. |
 | „Barwa identyfikuje substancję.” | Potrzebny zestaw właściwości diagnostycznych. | Wiele substancji ma tę samą barwę. |
 | „Sól zniknęła w wodzie.” | Sól jest w roztworze. | Po odparowaniu wody wraca. |
-| „Najpierw wsypię wszystko do wody, potem użyję magnesu.” | Magnes przed dodaniem wody. | Mokre opiłki trudno wyciągnąć, zaczynają rdzewieć. |
+| „Najpierw wsypię wszystko do wody, a potem użyję magnesu.” | Po zalaniu wodą i sączeniu opiłki zostają razem z piaskiem; magnes wykonujemy najpierw. | Kolejność wynika z tego, gdzie znajdzie się składnik po każdym kroku. |
 | „Temperatura wrzenia wody to zawsze 100 °C.” | 100 °C pod ciśnieniem normalnym. | W górach (niższe ciśnienie) woda wrze niżej. |
-| „Rozpuszczanie to zawsze zjawisko fizyczne.” | Zwykle tak (sól, cukier), ale niektóre substancje reagują z wodą podczas „rozpuszczania” (CaO → Ca(OH)₂, sód → NaOH + H₂). | Sprawdź, czy po odparowaniu wody odzyskasz tę samą substancję. |
+| „Rozpuszczanie to zawsze zjawisko fizyczne.” | Zwykle tak (sól, cukier), ale niektóre substancje reagują z wodą podczas „rozpuszczania” (CaO → Ca(OH)₂, sód → NaOH + H₂ — równania w lekcjach N). | Sprawdź, czy po odparowaniu wody odzyskasz tę samą substancję. |
 | „Krystalizacja daje zawsze czystą substancję.” | Krystalizacja oczyszcza, ale część zanieczyszczeń może zostać w kryształach — czasem powtarza się ją kilka razy. | Czystość potwierdza się pomiarem (np. temperatura topnienia). |
 | „Magnes oddzieli każdy metal.” | Tylko substancje ferromagnetyczne (Fe, Ni, Co). | Glin i miedź nie są przyciągane przez magnes. |
 | „Destylacja to odparowanie cieczy.” | Destylacja = odparowanie **i skroplenie** pary w chłodnicy. | Dlatego odzyskuje się rozpuszczalnik (destylat). |
 | „Lejkiem rozdzielającym rozdzielę wodę i alkohol.” | Woda i etanol mieszają się — potrzebna destylacja. | Rozdzielacz działa tylko dla cieczy niemieszających się. |
+| „Gęstsze znaczy cięższe.” | Gęstość porównujemy dla tej samej objętości; 1 kg pierza i 1 kg ołowiu mają tę samą masę. | Masa zależy od objętości, gęstość — nie. |
+| „Para wodna to chmury.” | Para jest niewidzialna; chmury to skroplone kropelki wody. | Skraplanie tworzy widoczną mgiełkę. |
+| „Sączek zatrzyma wszystko, co mętne.” | Sączek zatrzymuje ciała stałe większe od porów; roztwór i koloid przechodzą. | Mętność nie decyduje o sączeniu. |
+| „Destylat to osad.” | Destylat to ciecz zebrana w odbieralniku; osad to ciało stałe. | Mylenie nazw metod. |
 :::
 
 ## 10 | Ćwiczenia {#cwiczenia}
 
-::: karta basic | A. Podstawa
-1. Podziel na właściwości fizyczne i chemiczne: gęstość, palność, barwa, rdzewienie, temperatura wrzenia, reakcja z kwasem, rozpuszczalność.
+::: karta exam | A. Podstawa — właściwości i zjawiska (4 pkt)
+1. Podziel na właściwości fizyczne i chemiczne: gęstość, palność, barwa, skłonność do rdzewienia, temperatura wrzenia, reakcja z kwasem, rozpuszczalność.
 2. Zjawisko czy reakcja: topnienie masła, spalanie świecy, rozpuszczanie cukru, kwaśnienie mleka, parowanie wody, rdzewienie gwoździa.
 3. Dobierz metodę: a) piasek + woda, b) sól + woda (chcę sól), c) etanol + woda, d) barwniki w tuszu, e) woda + olej, f) opiłki żelaza + siarka.
 4. Nazwij przemiany: lód → woda, woda → para, para → woda, suchy lód → gaz.
@@ -325,7 +393,7 @@ BHP: pokaz nauczyciela; kamyczki wrzenne zapobiegają gwałtownemu wrzeniu; nie 
 :::
 :::
 
-::: karta understand | B. Trening
+::: karta exam | B. Trening — rozumowanie i test (4 pkt)
 1. Wyjaśnij, dlaczego sączenie nie rozdzieli soli od wody, a rozdzieli kredę od wody.
 2. Podaj dwie różnice między odparowaniem a destylacją.
 3. Oblicz masę 50 cm³ oleju o gęstości 0,92 g/cm³.
@@ -356,8 +424,8 @@ BHP: pokaz nauczyciela; kamyczki wrzenne zapobiegają gwałtownemu wrzeniu; nie 
 2. Dlaczego woda destylowana przewodzi prąd bardzo słabo, a woda z kranu wyraźnie lepiej?
 
 ::: odp | Pokaż odpowiedzi
-1. Obserwacje: bezbarwna, miesza się z wodą, palna; pomiary: gęstość, temperatura wrzenia. Kandydat: etanol (dane do weryfikacji z tablicami). Dodatkowo: dokładny pomiar temperatury wrzenia, zapach (ostrożnie, „machając dłonią”), porównanie z wzorcem.
-2. Woda destylowana zawiera bardzo mało jonów; woda z kranu ma rozpuszczone sole, które dysocjują na jony przewodzące prąd (rozwinięcie: J01).
+1. Obserwacje: bezbarwna, miesza się z wodą, palna; pomiary: gęstość, temperatura wrzenia. Kandydat: etanol (gęstość 0,789 g/cm³, temperatura wrzenia 78,4 °C). Dodatkowo: dokładny pomiar temperatury wrzenia, zapach (ostrożnie, „machając dłonią”), porównanie z wzorcem.
+2. Woda destylowana zawiera bardzo mało jonów; woda z kranu ma rozpuszczone sole, które dysocjują na naładowane drobiny przewodzące prąd (rozwinięcie: F05, J01).
 :::
 :::
 
@@ -369,7 +437,7 @@ Rozpuszczenie w wodzie → sączenie (osad: składnik nierozpuszczalny) → dest
 :::
 :::
 
-::: karta basic | F. Utrwalenie — dobór metody
+::: karta exam | F. Utrwalenie — dobór metody (4 pkt)
 1. Dobierz metodę: kreda i woda, olej i woda, sól i woda, opiłki żelaza i siarka.
 2. Wyjaśnij, dlaczego sączenie nie oddzieli soli rozpuszczonej w wodzie.
 3. Które przemiany są zjawiskami fizycznymi: topnienie lodu, spalanie drewna, wrzenie wody, rdzewienie żelaza?
@@ -377,9 +445,92 @@ Rozpuszczenie w wodzie → sączenie (osad: składnik nierozpuszczalny) → dest
 
 ::: odp | Pokaż odpowiedzi
 1. Kreda i woda — sączenie (lub sedymentacja i dekantacja); olej i woda — rozdzielacz; sól i woda — odparowanie lub krystalizacja; żelazo i siarka — magnes (tylko w mieszaninie; po ogrzaniu powstaje siarczek żelaza(II) i magnes już nie rozdzieli).
-2. Jony soli są dużo mniejsze od porów sączka i przechodzą razem z wodą do przesączu.
+2. Jony soli (naładowane drobiny — więcej w F05, J01) są dużo mniejsze od porów sączka i przechodzą razem z wodą do przesączu.
 3. Topnienie lodu i wrzenie wody — zjawiska fizyczne; spalanie drewna i rdzewienie żelaza — reakcje chemiczne.
 4. Odparować część wody, ostudzić roztwór (krystalizacja), oddzielić kryształy sączeniem i wysuszyć.
+:::
+:::
+
+::: karta exam | G. Gęstość i ekstrakcja (6 pkt)
+1. Ciało ma masę 150 g i objętość 50 cm³. Oblicz gęstość.
+2. Ile waży 250 cm³ substancji o gęstości 0,8 g/cm³?
+3. Zamień 1,2 kg/m³ na g/cm³.
+4. Dlaczego kamyk tonie, a drewno pływa w wodzie?
+5. Herbatę zaparzasz w gorącej i w zimnej wodzie. Co szybciej przechodzi do napoju i dlaczego?
+6. Zaproponuj sposób wyekstrahowania barwnika z rośliny do wody.
+
+::: odp | Pokaż odpowiedzi
+1. ρ = 150 : 50 = 3 g/cm³. 2. m = 0,8 · 250 = 200 g. 3. 1,2 kg/m³ = 1,2 g/dm³ = 0,0012 g/cm³. 4. Gęstość kamyka jest większa od gęstości wody (ponad 1 g/cm³), a drewna — mniejsza. 5. Gorąca woda — szybciej, bo wyższa temperatura przyspiesza rozpuszczanie i dyfuzję. 6. Zalać rozdrobnioną roślinę ciepłą wodą, odczekać, odcedzić — składnik przechodzi do wody (ekstrakcja).
+:::
+:::
+
+## 10.5 | Ciekawostki {#ciekawostki-plus}
+
+::: karta extra | Suchy lód nie topnieje
+Zestalony dwutlenek węgla („suchy lód”) pod zwykłym ciśnieniem nie przechodzi w ciecz, tylko od razu w gaz — sublimuje w temperaturze ok. −78 °C. Dlatego używa się go do chłodzenia i efektów „dymu” na scenie.
+:::
+
+::: karta extra | Destylacja: od wody po perfumy
+Destylację znano już w starożytności; dzięki niej otrzymuje się wodę destylowaną, alkohol, olejki eteryczne do perfum, a w rafineriach rozdziela się ropę naftową na benzynę, naftę i olej napędowy.
+:::
+
+::: karta extra | Chromatografia — „pisanie kolorem”
+Nazwa chromatografii pochodzi od greckich słów „barwa” i „pisać”. Wymyślił ją rosyjski botanik Michaił Cwiet (ur. we Włoszech) na początku XX w., rozdzielając barwniki liści.
+:::
+
+## 10.6 | Warstwa olimpijska — Dla olimpijczyka {#olimpijska}
+
+*(Warstwa ponad E8 — zadania w stylu konkursów chemicznych.)*
+
+::: karta understand | Dla olimpijczyka — właściwości i rozdzielanie głębiej
+**Temperatura wrzenia zależy od ciśnienia** — wysoko w górach woda wrze poniżej 100 °C, a w szybkowarze (wyższe ciśnienie) powyżej. **Gęstość pozwala identyfikować substancje** — złoto (19,3 g/cm³) jest znacznie gęstsze od podróbki z mosiądzu (ok. 8,5 g/cm³; orientacyjnie). **Mieszaniny azeotropowe** — niektórych cieczy (np. etanolu i wody, ok. 96%) nie da się rozdzielić do końca zwykłą destylacją. **Krystalizacja a odparowanie** — powolne chłodzenie roztworu nasyconego daje ładne kryształy; szybkie odparowanie — drobny proszek.
+:::
+
+::: adv | Zadanie O1 (4 pkt) — zjawisko czy reakcja? | poziom ambitny (konkurs)
+Rozstrzygnij i uzasadnij: a) rozpuszczanie soli w wodzie, b) spalanie świecy (knota i wosku), c) topnienie wosku, d) ciemnienie przekrojonego jabłka.
+
+::: odp | Pokaż klucz
+a) zjawisko fizyczne — po odparowaniu odzyskujemy sól; b) reakcja — powstają CO₂ i woda; c) zjawisko fizyczne — wosk pozostaje woskiem; d) reakcja — powstają nowe, brązowe substancje. Po 1 pkt.
+:::
+:::
+
+::: adv | Zadanie O2 (4 pkt) — rozdziel trzy składniki | poziom ambitny (konkurs)
+Masz mieszaninę: piasek, sól kuchenna, opiłki żelaza, olej i wodę. Zaplanuj rozdzielenie i uzasadnij każdy etap; podaj dwie poprawne kolejności.
+
+::: odp | Pokaż klucz
+1) magnes — odciąga opiłki żelaza (właściwości magnetyczne) (1 pkt); 2) dodanie wody — sól się rozpuszcza, piasek nie (1 pkt); 3) sączenie — piasek zostaje na sączku (1 pkt); 4) odparowanie przesączu — zostaje sól (1 pkt). Dla mieszaniny z olejem: najpierw rozdzielacz (olej jest lżejszy i nie miesza się z wodą), potem sączenie i odparowanie. Dwie poprawne kolejności: (a) magnes → woda z olejem w rozdzielaczu → sączenie piasku → odparowanie; (b) woda → rozdzielacz → sączenie (piasek i opiłki na sączku) → magnes na osadzie → odparowanie przesączu.
+:::
+:::
+
+::: adv | Zadanie O3 (3 pkt) — gęstość | poziom ambitny (konkurs)
+Kostka o objętości 2 cm³ (±0,1 cm³) ma masę 21,4 g. Oblicz gęstość i oceń, czy może być z czystego złota (19,3 g/cm³) czy ze srebra (10,5 g/cm³). Oceń niepewność wyniku.
+
+::: odp | Pokaż klucz
+d = 21,4 g : 2 cm³ = 10,7 g/cm³ (2 pkt); najbliżej srebra — to nie jest czyste złoto (1 pkt). Niepewność objętości ±0,1 cm³ to ok. ±5%, czyli gęstość 10,7 ± 0,5 g/cm³: wynik jest bliski srebra, ale przy tej dokładności nie wykluczamy stopu (pytanie o dokładność pomiaru).
+:::
+:::
+
+::: adv | Zadanie O4 (3 pkt) — destylacja roztworu soli | poziom ambitny (konkurs)
+Destylujesz 500 g roztworu soli o zawartości 10% soli. Odebrano 300 g destylatu. Ile gramów wody zostało w kolbie? Ile wynosi stężenie soli w kolbie?
+
+::: odp | Pokaż klucz
+sól: 10% z 500 g = 50 g (1 pkt); woda w kolbie: 450 g − 300 g = 150 g (1 pkt); w kolbie 50 g soli + 150 g wody = 200 g, stężenie 25% (1 pkt).
+:::
+:::
+
+::: adv | Zadanie O5 (4 pkt) — rozdzielanie czterech składników | poziom ambitny (konkurs)
+Mieszanina: opiłki żelaza, piasek, sól kuchenna, olej. Zaplanuj kolejność czterech etapów i uzasadnij każdy właściwością.
+
+::: odp | Pokaż klucz
+1) magnes — opiłki (właściwość magnetyczna) (1 pkt); 2) dodanie wody i rozdzielacz — olej (niemieszający się, lżejszy) (1 pkt); 3) sączenie — piasek zostaje na sączku (1 pkt); 4) odparowanie przesączu — zostaje sól (1 pkt).
+:::
+:::
+
+::: adv | Zadanie O6 (2 pkt) — niepewność gęstości | poziom ambitny (konkurs)
+Trzy pomiary masy kostki o objętości 1,00 cm³ (±0,01 cm³): 2,70 g; 2,68 g; 2,72 g. Podaj gęstość średnią i oceń niepewność.
+
+::: odp | Pokaż klucz
+średnia 2,70 g/cm³ (1 pkt); rozrzut ±0,02 g (ok. ±0,7%) oraz błąd objętości ±1% — wynik 2,70 ± 0,03 g/cm³ (1 pkt).
 :::
 :::
 
@@ -398,29 +549,34 @@ Rozpuszczenie w wodzie → sączenie (osad: składnik nierozpuszczalny) → dest
 + topnienie lodu
 - rdzewienie żelaza
 - fermentacja
+! Topnienie zmienia postać, nie skład.
 
 ? Którą metodą oddzielisz piasek od wody?
 + sączeniem
 - destylacją
 - chromatografią
 - magnesem
+! Nierozpuszczalne ciało stałe zostaje na sączku.
 
 ? Sól rozpuszczoną w wodzie odzyskasz:
 - sączeniem
 + odparowaniem lub krystalizacją
 - dekantacją
 - magnesem
+! Sól przechodzi przez sączek i wraca po odparowaniu wody.
 
 ? Destylacja wykorzystuje różnicę:
 - gęstości
 - magnetyzmu
 + temperatur wrzenia
 - barwy
+! Różne temperatury wrzenia składników.
 
 ? Czym różni się destylacja od odparowania?
 + destylacja odzyskuje rozpuszczalnik
 - odparowanie wymaga chłodnicy
 - nie ma różnicy
+! Chłodnica i odbieralnik odzyskują rozpuszczalnik.
 
 ? Woda i olej — najlepsza metoda:
 - sączenie
@@ -428,22 +584,71 @@ Rozpuszczenie w wodzie → sączenie (osad: składnik nierozpuszczalny) → dest
 - chromatografia
 ! Ciecze nie mieszają się i mają różną gęstość.
 
-? Mieszanina piasku, soli i opiłków żelaza. Pierwszy krok:
+? Mieszanina piasku, soli i opiłków żelaza. Najprostszy pierwszy krok:
 + magnes
 - dodanie wody
 - odparowanie
-! Magnes na sucho, zanim opiłki zamokną.
+! Magnes usuwa żelazo, zanim wszystko zostanie zmieszane z wodą i sączone razem z piaskiem.
 
 ? Sublimacja to przejście:
 - ciecz → gaz
 + ciało stałe → gaz
 - gaz → ciecz
+! Sublimacja omija stan ciekły.
 
 ? Masa 20 cm³ substancji o gęstości 2,5 g/cm³ wynosi:
 - 8 g
 + 50 g
 - 22,5 g
 ! m = ρ · V = 2,5 · 20.
+
+? Parowanie różni się od wrzenia tym, że:
+- zachodzi tylko w temperaturze 100 °C
++ zachodzi z powierzchni cieczy w każdej temperaturze
+- zachodzi tylko w gazie
+! Wrzenie zachodzi w całej objętości w temperaturze wrzenia.
+
+? Dyfuzja jest najszybsza w:
+- ciałach stałych
++ gazach
+- cieczach
+! Cząstki gazu poruszają się najswobodniej.
+
+? Chromatografia rozdziela barwniki, bo:
++ mają różne powinowactwo do bibuły i rozpuszczalnika
+- mają różną gęstość
+- mają różną barwę
+! Różne składniki wędrują z różną szybkością.
+
+? Jod z piaskiem rozdzielisz:
+- sączeniem
++ sublimacją (jod przechodzi w gaz, piasek nie)
+- magnesem
+! Pary jodu zbieramy na zimnej powierzchni; to pokaz pod wyciągiem.
+
+? Pęcherzyki w napoju gazowanym pojawiają się, bo:
++ rozpuszczony CO₂ wydostaje się z roztworu (zjawisko fizyczne)
+- zaszła reakcja chemiczna
+- woda się rozkłada
+! Ten gaz wydostaje się też bez reakcji, więc sam pęcherzyk nie jest dowodem reakcji.
+
+? Kostka ma masę 54 g i objętość 20 cm³. Jej gęstość to:
+- 0,37 g/cm³
++ 2,7 g/cm³
+- 1080 g/cm³
+! ρ = m / V = 54 : 20 = 2,7 g/cm³.
+
+? Ekstrakcja to:
++ przeprowadzenie składnika do rozpuszczalnika, w którym lepiej się rozpuszcza
+- sączenie osadu
+- rozdział według wielkości ziaren
+! Np. parzenie herbaty.
+
+? Dekantacja polega na:
++ zlaniu cieczy znad osadu
+- przepuszczeniu przez sączek
+- ogrzaniu do wrzenia
+! Osad zostaje w naczyniu.
 :::
 
 ## 12 | Karta szybkiego powtórzenia i mapa myśli {#powtorka}
@@ -477,9 +682,20 @@ Woda + olej | rozdzielacz | basic:podstawa
 Barwniki tuszu | chromatografia | basic:podstawa
 Żelazo + siarka | magnes | basic:podstawa
 Osad i przesącz | osad zostaje na sączku, przesącz przechodzi | basic:podstawa
+Parowanie a wrzenie | parowanie z powierzchni w każdej temperaturze; wrzenie w całej objętości w temperaturze wrzenia | basic:podstawa
+Skraplanie | gaz → ciecz (para w chłodnicy) | basic:podstawa
+Topnienie | ciało stałe → ciecz | basic:podstawa
+Dekantacja | zlanie cieczy znad osadu | basic:podstawa
+Wirowanie | przyspieszone opadanie cząstek (składniki krwi) | basic:podstawa
+Przesiewanie | rozdzielanie ziaren różnej wielkości na sicie | basic:podstawa
+Destylat | ciecz zebrana w odbieralniku po destylacji | basic:podstawa
 Dyfuzja | samorzutne mieszanie wynikające z ruchu cząstek | understand:rozumienie
 Właściwość diagnostyczna | właściwość, która różni kandydatów i da się ją zmierzyć | understand:rozumienie
 Destylacja frakcyjna | rozdział wielu cieczy w kolumnie (ropa naftowa) | extra:ambitne
+Krzywa ogrzewania | w czasie przemiany temperatura stała (narzędzie sprawdzania czystości) | olimpijski:wlasciwosci
+temperatura wrzenia a ciśnienie | niższe ciśnienie — niższa temperatura wrzenia (góry) | olimpijski:wlasciwosci
+azeotrop | mieszanina, której nie rozdzielisz do końca destylacją (etanol ok. 96%) | olimpijski:wlasciwosci
+Gęstość a identyfikacja | d = m : V — porównaj z wartością tablicową | olimpijski:wlasciwosci
 :::
 
 ## 14 | Słownik {#slownik}
@@ -501,6 +717,22 @@ Destylacja :: rozdzielanie cieczy przez odparowanie i skroplenie, wykorzystując
 Destylat :: ciecz zebrana w odbieralniku po destylacji
 Chromatografia :: rozdzielanie składników dzięki różnemu powinowactwu do fazy ruchomej i nieruchomej
 Ekstrakcja :: przeprowadzenie składnika do rozpuszczalnika, w którym lepiej się rozpuszcza
+Stan skupienia :: forma substancji: stała, ciekła lub gazowa
+Topnienie :: przemiana ciała stałego w ciecz
+Krzepnięcie :: przemiana cieczy w ciało stałe
+Parowanie :: przemiana cieczy w gaz z jej powierzchni, w każdej temperaturze
+Wrzenie :: przemiana cieczy w gaz w całej objętości, w temperaturze wrzenia
+Skraplanie :: przemiana gazu (pary) w ciecz
+Sublimacja :: przemiana ciała stałego bezpośrednio w gaz
+Resublimacja :: przemiana gazu bezpośrednio w ciało stałe
+Osad :: dowolne ciało stałe zebrane na dnie lub na sączku, niezależnie od pochodzenia (zawiesina, produkt reakcji strącania)
+Rozdzielacz :: szklane naczynie z kranem do rozdziału cieczy niemieszających się
+Wirowanie :: rozdzielanie przez przyspieszone opadanie cząstek w wirówce
+Przesiewanie :: rozdzielanie ziaren różnej wielkości na sicie
+Właściwość diagnostyczna :: właściwość, która różni kandydatów i da się ją bezpiecznie zmierzyć
+Azeotrop :: mieszanina, której składu nie zmienia się zwykłą destylacją (np. etanol–woda ok. 96%)
+Faza ruchoma / nieruchoma :: w chromatografii: rozpuszczalnik przesuwający składniki / bibuła, na której składniki się zatrzymują
+Destylacja frakcyjna :: wielokrotne destylowanie w kolumnie, rozdział wielu składników według temperatur wrzenia
 :::
 
 ## 15 | Checklista {#checklista}
@@ -542,7 +774,18 @@ Ekstrakcja :: przeprowadzenie składnika do rozpuszczalnika, w którym lepiej si
 
 | Sekcja | Model | Co pokazuje |
 |---|---|---|
-| [§5](#metody) | `f03-rozdzielanie-v01` · `f03PiasekWoda`, `f03KredaWoda`, `f01SolWoda`, `f01Odparowanie` | pracownia F03: zawiesiny i roztwór, sedymentacja, sączenie, odparowanie |
+| [§5](#metody) | `f03-rozdzielanie-v01` · `f03PiasekWoda`, `f01Odparowanie` | pracownia F03: zawiesina i roztwór, sedymentacja, sączenie, odparowanie |
 | [§7](#przemysl) | `lab-stations-v102` | stanowiska laboratoryjne — chłodnica i palnik do destylacji |
 
-> Do zbudowania w GFX (nowe elementy): lejek z sączkiem i przesączem (sączenie krok po kroku), zestaw do destylacji z odbieralnikiem i termometrem, rozdzielacz z dwiema warstwami cieczy, pasek bibuły z pasmami barwników (chromatografia), magnes zbierający opiłki, kolumna destylacji frakcyjnej ropy.
+## AUDYT W1 — audyt 03 (2026-10-13)
+
+Wprowadzono: A1 (kryterium odwracalności zastąpione wskazówką; rozstrzyga nowa substancja), A2 (objaw = przesłanka, nie dowód), A3 (uzasadnienie kolejności magnes/sączenie + ramka „inna poprawna kolejność”; test i klinika), A4 (model CuSO₄ usunięty z Dośw. 2, prażenie w ramce ambitnej), A5 (tabela modeli zsynchronizowana z tekstem), A6 (destylacja odzyskuje wodę, nie sól), A7 (słownik: osad), A8 (stany to formy, przemiany to zjawiska), A9 (warunki destylacji), A10 (nazwa „Pięć kroków wyboru metody”), A11 (skłonność do rdzewienia), A12 (O2 z dwiema kolejnościami), A13 (niepewność gęstości), A14 (wartości zweryfikowane, bez „dane do weryfikacji”); B1 (sublimacja w tabeli metod, BHP jodu), B2 (ciała stałe o różnej gęstości, przesiewanie), B3 (przykład, wypieranie wody, zadania G), B4 (krzywa ogrzewania), B5 (technika sączenia), B6 (ekstrakcja w G), B7 (test: `!` przy wszystkich pytaniach, +8 pytań), B8 (słownik +16 haseł), B9 (fiszki bez dubletów, +8), B10 (klinika +5 wierszy), B11 (olimpijska O4–O6), B12 (BHP odsyłacz), B13 (jony z odsyłaczem do F05); C (lead scalone, changelog i notatka GFX usunięte, odsyłacze do F02 jako zwykły tekst, stopka v1.1).
+
+Nieprzyjęte:
+- C — `$$ ρ = m / V → …` w jednej linii: zostaje (konwencja silnika, jak w F01 i F02).
+- C — kicker/stopka: ujednolicone do v1.1 zamiast zmiany kickera.
+
+Poprawione względem propozycji:
+- Gęstość kamyka w Dośw. 6: przykład 27 g / 10 cm³ = 2,7 g/cm³ zamiast ogólnego opisu.
+- Azeotrop etanol–woda: 96% (w lekcji) — zachowano; w słowniku zapisano ok. 96%, zgodnie z treścią.
+- Ćw. O3: niepewność wyliczona jako ±0,5 g/cm³ (±5%) zamiast „dużego błędu”.

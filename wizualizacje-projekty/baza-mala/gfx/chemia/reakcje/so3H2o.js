@@ -1,0 +1,1 @@
+P('so3H2o',{n:'SO₃ + H₂O (+ wskaźnik uniwersalny)',solid:pw(wh),l0:u(7),l1:u(1.5),out:['barwa'],heat:1.4,T:50,teacher:1,why:'Reakcja silnie egzotermiczna; powstaje H₂SO₄ — wskaźnik czerwony (odczyn silnie kwasowy).'});

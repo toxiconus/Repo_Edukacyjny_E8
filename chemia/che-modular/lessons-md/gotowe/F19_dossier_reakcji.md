@@ -6,6 +6,7 @@ opis: Jak zapisać reakcję jako rekord — substraty, produkty, warunki, obserw
 kicker: F19 · FUNDAMENTY · NOWA WERSJA
 lead: F18 opisywał substancję. Teraz opisujemy przemianę. Dossier reakcji to rekord, w którym każde pole ma swoje miejsce: co wchodzi, co powstaje, w jakich warunkach, co widzimy, co zapisujemy w równaniu i jak się przed tym zabezpieczyć.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
+stan: "pełna struktura — 2026-10-13, bez audytu W1"
 stopka: **CHEMIA F19 v1.0** · Dossier reakcji · 2026
 ---
 
@@ -178,36 +179,52 @@ Pominięcie BHP przy kwasie i zasadzie | BHP: okulary, kontrola odczynników | D
 
 ## 5 | Ćwiczenia {#cwiczenia}
 
-::: karta basic | A. Podstawa — pola rekordu
+::: karta exam | A. Podstawa — pola rekordu (3 pkt)
 Dla reakcji `Mg + 2HCl → MgCl₂ + H₂` wskaż substraty, produkty i jedną obserwację.
-
-::: odp | Pokaż odpowiedź
-Substraty: Mg, HCl. Produkty: MgCl₂, H₂. Obserwacja: wydzielanie gazu, metal się rozpuszcza. (Wniosek „to wodór” wymaga próby z płonącym łuczywem.)
-:::
 :::
 
-::: karta understand | B. Trening — bilans i warunki
+::: odp | Pokaż klucz
+Substraty: Mg, HCl (1 pkt). Produkty: MgCl₂, H₂ (1 pkt). Obserwacja: wydzielanie gazu, metal się rozpuszcza (1 pkt). Wniosek „to wodór” wymaga próby z płonącym łuczywkiem — nie jest częścią obserwacji.
+:::
+
+::: karta exam | B. Trening — bilans i warunki (3 pkt)
 Zbilansuj równanie spalania metanu `CH₄ + O₂ → CO₂ + H₂O` i zapisz warunek (ogrzewanie, dostęp powietrza) w osobnym polu.
-
-::: odp | Pokaż odpowiedź
-`CH₄ + 2O₂ → CO₂ + 2H₂O`. Warunek: zapłon, nadmiar tlenu do spalania całkowitego. Warunek nie idzie do wzoru.
-:::
 :::
 
-::: karta understand | C. Trening — obserwacja a wniosek
+::: odp | Pokaż klucz
+`CH₄ + 2O₂ → CO₂ + 2H₂O` (2 pkt). Warunek: zapłon, dostęp tlenu; nadmiar tlenu daje spalanie całkowite (1 pkt). Warunek nie idzie do wzoru równania.
+:::
+
+::: karta exam | C. Trening — obserwacja a wniosek (3 pkt)
 W probówce z roztworem AgNO₃ dodajemy roztwór NaCl i obserwujemy biały, serowaty osad. Napisz: (a) obserwację, (b) wniosek, (c) próbę, która go potwierdza.
-
-::: odp | Pokaż odpowiedź
-(a) Biały, serowaty osad. (b) Powstał AgCl (jony Ag⁺ i Cl⁻ tworzą trudno rozpuszczalny osad). (c) Osad nie rozpuszcza się w kwasie azotowym(V) i ciemnieje na świetle — to potwierdza AgCl.
-:::
 :::
 
-::: karta extra | D. Ambitne — zadanie transferowe
+::: odp | Pokaż klucz
+(a) Biały, serowaty osad (1 pkt). (b) Powstał AgCl — jony Ag⁺ i Cl⁻ tworzą trudno rozpuszczalny osad (1 pkt). (c) Osad nie rozpuszcza się w kwasie azotowym(V) i ciemnieje na świetle — to potwierdza AgCl (1 pkt).
+:::
+
+::: karta exam | D. Trening — rekord wypierania (3 pkt)
+Dla reakcji `Ca + 2H₂O → Ca(OH)₂ + H₂` wypełnij: typ reakcji, obserwację po dodaniu fenoloftaleiny do wody z reakcji, jedno zdanie BHP.
+:::
+
+::: odp | Pokaż klucz
+Typ: wypieranie wodoru z wody (1 pkt). Obserwacja: wydzielanie gazu; roztwór z fenoloftaleiną barwi się malinowo — powstała zasada (1 pkt). BHP: nie zbliżać się do naczynia z wapniem, pracować w okularach (1 pkt).
+:::
+
+::: adv | E. Ambitne — zadanie transferowe (3 pkt) | poziom ambitny
 Reakcja Fe + CuSO₄ → FeSO₄ + Cu. Wypełnij rekord: typ reakcji, równanie jonowe skrócone, obserwacja (po wrzuceniu żelaznego gwoździa), BHP i jedno ograniczenie modelu.
+:::
 
-::: odp | Pokaż odpowiedź
+::: odp | Pokaż klucz
 Typ: wypieranie (wymiana pojedyncza). Równanie jonowe: `Fe + Cu²⁺ → Fe²⁺ + Cu`. Obserwacja: na gwoździu osadza się czerwony metal, niebieska barwa roztworu blednie. BHP: okulary, nie wylewać odczynników do zlewu bez zgody nauczyciela, miedź w odpadach. Ograniczenie: model nie opisuje szybkości ani wydajności reakcji.
 :::
+
+::: adv | F. Ambitne — zobojętnianie w rekordzie (3 pkt) | poziom ambitny
+Dla reakcji `H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O` do roztworu NaOH z fenoloftaleiną dolewamy kwas do odbarwienia. Wypełnij rekord: obserwację, odczyn końcowy, równanie jonowe skrócone i wniosek.
+:::
+
+::: odp | Pokaż klucz
+Obserwacja: malinowe zabarwienie znika (1 pkt). Odczyn końcowy: obojętny (1 pkt). Równanie jonowe skrócone: `H⁺ + OH⁻ → H₂O` (0,5 pkt). Wniosek: zobojętnianie — kwas i zasada wzajemnie się znoszą (0,5 pkt).
 :::
 
 ## 6 | Fiszki {#fiszki}

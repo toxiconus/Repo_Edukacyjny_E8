@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="pl" data-przedmiot="oli">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>LKO-PUŁAPKI-WAPNO · Pułapki konkursowe — woda wapienna, wapno palone, kreda i inne nazwy, które się mylą</title>
+<style id="lekcja-css">
+/* baza.css — wspólna baza lekcji wszystkich przedmiotów (styl lekcji silnika CHE v0_57). Nie edytować — zmiany wspólne w ulepszenia.css, przedmiotowe w motywy/<kod>.css. */
+
+
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+--bg:#fafbfc;--surface:#ffffff;--surface-soft:#f6f8fa;--surface-warm:#fdfaf4;--border:#e5e9ee;--border-strong:#cdd5dd;
+--text:#1a2332;--text-soft:#4a5568;--text-muted:#8892a0;--text-faint:#b4bcc6;
+--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,0.15);
+--c-basic:#2e7d4f;--c-basic-bg:#eaf6ee;--c-basic-line:#b8dcc4;
+--c-understand:#2b5e9c;--c-understand-bg:#eaf1f9;--c-understand-line:#bcd0e5;
+--c-warn:#b06f1c;--c-warn-bg:#fcf4e6;--c-warn-line:#eed8a8;
+--c-error:#b83a45;--c-error-bg:#fbeced;--c-error-line:#e8b5b9;
+--c-extra:#6b3fa0;--c-extra-bg:#f3ecfa;--c-extra-line:#d3bde8;
+--c-new:#0d7d7d;--c-new-bg:#e6f4f4;--c-new-line:#b0dcdc;
+--c-exam:#a86a00;--c-exam-bg:#fdf5e0;--c-exam-line:#eed49c;
+--sh-sm:0 1px 2px rgba(26,35,50,0.04);--sh-md:0 4px 12px rgba(26,35,50,0.06);--sh-lg:0 12px 32px rgba(26,35,50,0.10);--sh-xl:0 20px 48px rgba(26,35,50,0.14);
+--r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;
+--header-h:56px;
+--ease:cubic-bezier(0.4,0,0.2,1);--ease-out:cubic-bezier(0.16,1,0.3,1);
+--hl-key:#0d6868;--hl-key-bg:#d8ecea;--hl-warn:#b83a45;--hl-warn-bg:#fbe0e2;--hl-new:#6b3fa0;--hl-new-bg:#ede0f8;--hl-formula:#084848;--hl-formula-bg:#e0eeed;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;padding:calc(var(--header-h) + 12px) 0 88px;min-height:100vh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+@media(min-width:600px){body{padding:calc(var(--header-h) + 18px) 12px 96px;}}
+@media(min-width:768px){body{padding:calc(var(--header-h) + 24px) 20px 100px;}}
+@media(min-width:1100px){body{padding:calc(var(--header-h) + 28px) 32px 110px;}}
+.fab{position:fixed;top:12px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);background:rgba(255,255,255,0.94);color:var(--text);cursor:pointer;border-radius:var(--r-md);padding:0;transition:all 0.2s var(--ease);z-index:1200;box-shadow:var(--sh-sm);backdrop-filter:blur(8px);}
+.fab:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);box-shadow:var(--sh-md);transform:translateY(-1px);}
+.fab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.fab-left{left:6px;}.fab-right{right:6px;}
+@media(min-width:600px){.fab-left{left:10px;}.fab-right{right:10px;}}
+@media(min-width:768px){.fab-left{left:14px;}.fab-right{right:14px;}}
+.fab-left::after{content:'';width:16px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;border-radius:1px;transition:transform 0.25s var(--ease);}
+.fab-left.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.fab-left.is-open::after{width:16px;height:2px;background:currentColor;box-shadow:none;transform:rotate(45deg);}
+.fab-left.is-open::before{content:'';position:absolute;width:16px;height:2px;background:currentColor;transform:rotate(-45deg);border-radius:1px;}
+.fab-right::after{content:'';display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:8px solid currentColor;transition:transform 0.35s var(--ease-out);}
+.fab-right.is-hidden::after{transform:rotate(0deg);}
+.fab-right:not(.is-hidden)::after{transform:rotate(180deg);}
+.header-wrapper{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);transform:translateY(0);transition:transform 0.45s var(--ease-out),box-shadow 0.3s var(--ease);box-shadow:var(--sh-sm);}
+.header-wrapper.is-hidden{transform:translateY(-100%);box-shadow:none;}
+.header-bar{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:0 16px;height:var(--header-h);}
+@media(min-width:768px){.header-bar{padding:0 24px;}}
+.header-subject{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:1px;padding:4px 10px;background:var(--accent-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;}
+.header-title{font-size:15px;font-weight:700;color:var(--text);letter-spacing:-0.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1 1 auto;min-width:0;}
+.header-lesson{font-size:10px;font-weight:800;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.7px;padding:4px 9px;background:var(--surface-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;font-family:'JetBrains Mono',monospace;}
+.header-nav{display:flex;gap:2px;flex-shrink:0;align-items:center;}
+.header-nav a,.header-nav button{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;border-radius:var(--r-sm);font-size:16px;font-weight:500;transition:all 0.2s var(--ease);border:1px solid transparent;background:transparent;cursor:pointer;padding:0;font-family:inherit;}
+.header-nav a:hover,.header-nav button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.header-resume-btn.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.header-resume-btn::before{content:'▮';font-size:14px;line-height:1;}
+.header-panel{display:none;border-top:1px solid var(--border);background:linear-gradient(180deg,var(--surface) 0%,var(--surface-soft) 100%);padding:20px 16px 24px;}
+@media(min-width:768px){.header-panel{padding:24px 24px 28px;}}
+.header-panel.is-open{display:block;}
+.header-panel-inner{max-width:900px;margin:0 auto;}
+.header-kicker{font-size:11px;color:var(--text-muted);text-transform:uppercase;font-weight:800;letter-spacing:1px;margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.header-kicker::before{content:'';width:24px;height:2px;background:var(--accent);display:inline-block;border-radius:1px;}
+.header-h1{font-size:32px;font-weight:800;color:var(--text);letter-spacing:-1px;margin-bottom:10px;line-height:1.1;}
+.header-subtitle{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:18px;max-width:720px;}
+.header-modes{display:flex;gap:6px;flex-wrap:wrap;}
+.mode-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 15px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);font-family:inherit;}
+.mode-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
+.mode-btn:hover:not(.active){background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.resume-dropdown{display:none;position:fixed;top:calc(var(--header-h) + 6px);right:14px;z-index:1050;width:min(300px,calc(100vw - 30px));padding:14px;border:1px solid var(--border-strong);border-radius:12px;background:#fff;box-shadow:var(--sh-lg);}
+.resume-dropdown.is-open{display:block;}
+.resume-dropdown h4{margin:0 0 5px;color:var(--text);font-size:.85rem;}
+.resume-dropdown p{margin:0 0 12px;color:var(--text-muted);font-size:.75rem;line-height:1.5;}
+.resume-actions{display:flex;gap:6px;}
+.resume-actions button{flex:1;padding:8px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text-soft);font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.resume-actions .resume-save{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toc-overlay{position:fixed;inset:0;background:rgba(26,35,50,0.34);backdrop-filter:blur(3px);z-index:1100;opacity:0;visibility:hidden;transition:opacity 0.3s var(--ease),visibility 0.3s var(--ease);}
+.toc-overlay.is-visible{opacity:1;visibility:visible;}
+.toc-wrapper{position:fixed;left:0;top:0;width:320px;max-width:86vw;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:1150;transform:translateX(-100%);transition:transform 0.4s var(--ease-out);padding-top:64px;box-shadow:var(--sh-xl);}
+.toc-wrapper.is-open{transform:translateX(0);}
+.toc-content{padding:12px 14px 100px;}
+.toc-header{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);padding:4px 12px 12px;}
+.toc-item{margin-bottom:4px;border-radius:var(--r-md);overflow:hidden;}
+.toc-summary{padding:10px 12px;font-size:13px;font-weight:700;color:var(--text);cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;border-radius:var(--r-sm);transition:background 0.2s var(--ease),color 0.2s var(--ease);user-select:none;}
+.toc-summary:hover{background:var(--accent-soft);color:var(--accent);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::marker{content:'';}
+.toc-summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);opacity:0.5;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);opacity:1;}
+.toc-links{padding:4px 0 8px 28px;display:flex;flex-direction:column;gap:1px;}
+.toc-link{display:block;padding:6px 10px;font-size:12.5px;color:var(--text-soft);text-decoration:none;border-radius:4px;transition:all 0.2s var(--ease);border-left:2px solid transparent;}
+.toc-link:hover{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);}
+.container{max-width:820px;margin:0 auto;background:var(--surface);border-radius:0;box-shadow:none;padding:18px 12px;border:none;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+@media(min-width:600px){.container{border-radius:var(--r-lg);box-shadow:var(--sh-md);border:1px solid var(--border);padding:22px 18px;}}
+@media(min-width:768px){.container{padding:36px 36px;border-radius:var(--r-xl);}}
+@media(min-width:1100px){.container{max-width:840px;padding:40px 40px;}}
+h1,h2,h3,h4,h5{font-weight:800;color:var(--text);letter-spacing:-0.3px;line-height:1.3;}
+h2{font-size:24px;margin-top:44px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+h3{font-size:17px;margin-top:32px;margin-bottom:12px;font-weight:800;}
+h4{font-size:15px;margin-top:24px;margin-bottom:10px;font-weight:800;}
+h5{font-size:13px;margin-top:16px;margin-bottom:8px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-soft);}
+p{margin-bottom:12px;}
+ul,ol{padding-left:24px;margin-bottom:14px;}
+li{margin-bottom:6px;padding-left:4px;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s var(--ease);}
+a:hover{border-bottom-color:var(--accent);}
+strong{font-weight:700;color:var(--text);}
+.hl{background:var(--hl-key-bg);color:var(--hl-key);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-warn{background:var(--hl-warn-bg);color:var(--hl-warn);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-new{background:var(--hl-new-bg);color:var(--hl-new);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.formula{display:inline-block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:14px;font-weight:600;color:var(--hl-formula);background:var(--hl-formula-bg);padding:4px 12px;border-radius:var(--r-sm);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:3px 2px;white-space:nowrap;}
+.formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
+code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
+pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
+.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
+.mnemonic b{color:#78350f;}
+.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
+@media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
+.card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
+.card-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:10px;padding:3px 9px;background:var(--accent-soft);border-radius:4px;}
+.card-core{background:var(--accent-soft);border-color:var(--accent-line);border-left-color:var(--accent);}
+.card-basic{background:var(--c-basic-bg);border-color:var(--c-basic-line);border-left-color:var(--c-basic);}
+.card-basic .card-label{background:rgba(46,125,79,0.12);color:var(--c-basic);}
+.card-understand{background:var(--c-understand-bg);border-color:var(--c-understand-line);border-left-color:var(--c-understand);}
+.card-understand .card-label{background:rgba(43,94,156,0.12);color:var(--c-understand);}
+.card-warning{background:var(--c-warn-bg);border-color:var(--c-warn-line);border-left-color:var(--c-warn);}
+.card-warning .card-label{background:rgba(176,111,28,0.12);color:var(--c-warn);}
+.card-error{background:var(--c-error-bg);border-color:var(--c-error-line);border-left-color:var(--c-error);}
+.card-error .card-label{background:rgba(184,58,69,0.12);color:var(--c-error);}
+.card-extra{background:var(--c-extra-bg);border-color:var(--c-extra-line);border-left-color:var(--c-extra);}
+.card-extra .card-label{background:rgba(107,63,160,0.12);color:var(--c-extra);}
+.card-new{background:var(--c-new-bg);border-color:var(--c-new-line);border-left-color:var(--c-new);}
+.card-new .card-label{background:rgba(13,125,125,0.12);color:var(--c-new);}
+.card-exam{background:var(--c-exam-bg);border-color:var(--c-exam-line);border-left-color:var(--c-exam);}
+.card-exam .card-label{background:rgba(168,106,0,0.12);color:var(--c-exam);}
+.card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0;}
+details.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent-line);border-radius:var(--r-sm);padding:10px 14px;margin:10px 0;transition:all 0.2s var(--ease);}
+details.answer[open]{background:var(--accent-soft);border-left-color:var(--accent);}
+details.answer summary{cursor:pointer;font-weight:700;color:var(--text-soft);font-size:13px;list-style:none;user-select:none;display:flex;align-items:center;gap:10px;transition:color 0.2s var(--ease);}
+details.answer summary::-webkit-details-marker{display:none;}
+details.answer summary::marker{content:'';}
+details.answer summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer[open] summary{color:var(--accent);}
+details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}
+.part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}
+@media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}
+.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
+@media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}
+.table-wrap th,.table-wrap td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px;}
+@media(min-width:600px){.table-wrap th,.table-wrap td{padding:10px 12px;font-size:13.5px;}}
+.table-wrap th{background:var(--surface-soft);font-weight:800;color:var(--text-soft);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;}
+@media(min-width:600px){.table-wrap th{font-size:11px;letter-spacing:0.7px;white-space:nowrap;}}
+.table-wrap.table-compact td,.table-wrap.table-compact th{padding:7px 6px;font-size:12.5px;}
+.table-wrap tr:last-child td{border-bottom:none;}
+.table-wrap tr:hover td{background:var(--accent-soft);}
+.table-wrap .error-row{background:var(--c-error-bg);}
+.table-wrap .ok-row{background:var(--c-basic-bg);}
+.def-list{display:flex;flex-direction:column;gap:8px;margin:14px 0;}
+.def-item{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px 16px;}
+.def-item dt{font-weight:800;color:var(--text);font-size:13.5px;margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+.def-item dt::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;}
+.def-item dd{color:var(--text-soft);font-size:13.5px;line-height:1.6;margin:0;padding-left:11px;}
+.minimum-card{background:linear-gradient(135deg,var(--surface-soft) 0%,var(--accent-soft) 100%);border:1px solid var(--accent-line);border-radius:var(--r-lg);padding:20px 22px;margin:8px 0 28px;box-shadow:var(--sh-sm);position:relative;overflow:hidden;}
+@media(min-width:768px){.minimum-card{padding:28px 34px;margin-bottom:36px;}}
+.minimum-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:var(--accent);}
+.minimum-card h3{color:var(--accent);margin:0 0 16px;font-size:16px;letter-spacing:0.2px;display:flex;align-items:center;gap:10px;}
+.minimum-card h3::before{content:'★';font-size:16px;}
+.minimum-card ol{margin:0;padding-left:0;list-style:none;counter-reset:min-list;}
+.minimum-card li{counter-increment:min-list;padding-left:36px;position:relative;margin-bottom:12px;font-size:14px;line-height:1.6;}
+.minimum-card li::before{content:counter(min-list);position:absolute;left:0;top:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--surface);color:var(--accent);border:2px solid var(--accent-line);border-radius:50%;font-size:12px;font-weight:800;}
+.minimum-card li:last-child{margin-bottom:0;}
+.level-badge{display:inline-block;font-size:9.5px;font-weight:800;text-transform:uppercase;padding:2px 9px;border-radius:12px;vertical-align:middle;letter-spacing:0.5px;line-height:1.6;margin-left:8px;}
+.level-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.level-understand{background:var(--c-understand-bg);color:var(--c-understand);}
+.level-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.level-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.level-new{background:var(--c-new-bg);color:var(--c-new);}
+.rule-box{background:var(--c-understand-bg);border:1px solid var(--c-understand-line);border-radius:var(--r-md);padding:14px 18px;margin:14px 0;font-size:14px;line-height:1.65;}
+.rule-box b{color:var(--c-understand);}
+.step-flow{background:var(--text);color:#fff;padding:16px 18px;border-radius:var(--r-md);font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:12.5px;line-height:1.9;margin:14px 0;overflow-x:auto;white-space:pre;}
+@media(min-width:768px){.step-flow{font-size:13.5px;padding:16px 20px;}}
+.footer{margin-top:56px;padding-top:24px;border-top:2px solid var(--border);text-align:center;font-size:12.5px;color:var(--text-muted);letter-spacing:0.2px;}
+.footer p{margin-bottom:4px;}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:6px;border:2px solid var(--bg);}
+::-webkit-scrollbar-thumb:hover{background:var(--text-muted);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.bottom-nav{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:1100;width:min(700px,calc(100vw - 24px));font-size:.78rem;}
+.bottom-nav__toggle{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;padding:8px 14px;border:1px solid var(--border-strong);border-radius:999px;background:rgba(255,255,255,.97);color:var(--text-soft);font:700 .72rem inherit;box-shadow:0 5px 18px rgba(15,23,42,.14);cursor:pointer;backdrop-filter:blur(10px);font-family:inherit;}
+.bottom-nav__panel{display:none;margin-bottom:7px;padding:10px;border:1px solid var(--border-strong);border-radius:14px;background:rgba(255,255,255,.98);box-shadow:0 10px 28px rgba(15,23,42,.16);backdrop-filter:blur(12px);}
+.bottom-nav.is-open .bottom-nav__panel{display:block;}
+.bottom-nav__primary{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.bottom-nav a,.bottom-nav button.nav-more{min-height:36px;display:flex;align-items:center;justify-content:center;padding:6px 8px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--text-soft);text-decoration:none;font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.bottom-nav a:hover,.bottom-nav button.nav-more:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+@media(max-width:420px){
+  .bottom-nav{font-size:.7rem;width:calc(100vw - 12px);}
+  .bottom-nav a,.bottom-nav button.nav-more{padding:6px 4px;font-size:.65rem;}
+}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
+.widget{background:var(--surface);border:2px solid var(--border);border-radius:var(--r-md);padding:14px;margin:14px 0;box-shadow:var(--sh-sm);}
+@media(min-width:768px){.widget{padding:22px 26px;margin:20px 0;border-radius:var(--r-lg);}}
+.widget h4{margin:0 0 8px;color:var(--text);font-size:15px;font-weight:800;}
+@media(min-width:768px){.widget h4{font-size:16px;}}
+.widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
+.bld-pool{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.bld-pool button{padding:6px 12px;border:1px solid var(--border);border-radius:20px;background:#fff;font:600 0.8rem inherit;cursor:pointer;font-family:inherit;color:var(--text);}
+.bld-pool button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bld-workspace{min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;}
+.bld-feedback,.re-result,.st-feedback,.ch-feedback{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;line-height:1.5;}
+.bld-feedback.ok,.re-result.ok,.st-feedback.ok,.ch-feedback.ok{background:var(--c-basic-bg);color:var(--c-basic);border:1px solid var(--c-basic-line);}
+.bld-feedback.bad,.re-result.bad,.st-feedback.bad,.ch-feedback.bad{background:var(--c-error-bg);color:var(--c-error);border:1px solid var(--c-error-line);}
+.bld-feedback.info,.re-result.info,.st-feedback.info,.ch-feedback.info{background:var(--c-understand-bg);color:var(--c-understand);border:1px solid var(--c-understand-line);}
+.bld-feedback.warn,.re-result.warn,.st-feedback.warn,.ch-feedback.warn{background:var(--c-warn-bg);color:var(--c-warn);border:1px solid var(--c-warn-line);}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);color:var(--text);font-family:inherit;}
+.btn:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent);}
+.btn-primary:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+.btn-sm{padding:6px 10px;font-size:12px;}
+.flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}
+@media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--border);border-radius:var(--r-md);background:#fff;color:var(--text);font:inherit;text-align:center;cursor:pointer;box-shadow:var(--sh-sm);transition:all 0.2s var(--ease);position:relative;font-family:inherit;}
+.flashcard:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-3px);box-shadow:var(--sh-md);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:90px;}
+.flashcard .front{font-weight:700;font-size:14.5px;line-height:1.5;}
+.flashcard .back{display:none;color:var(--text-soft);font-size:13.5px;line-height:1.6;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:8px;right:8px;font-size:9px;text-transform:uppercase;background:var(--surface-soft);padding:2px 8px;border-radius:10px;color:var(--text-muted);font-weight:800;letter-spacing:0.4px;}
+.flashcard .card-tag.tag-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.flashcard .card-tag.tag-error{background:var(--c-error-bg);color:var(--c-error);}
+.flashcard .card-tag.tag-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.flashcard .card-tag.tag-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.checklist{background:#fff;border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.checklist h4{color:var(--c-basic);margin:0 0 12px;font-size:15px;}
+.checklist ul{list-style:none;padding-left:0;margin:0;}
+.checklist li{padding:7px 0;font-size:13.5px;border-bottom:1px dashed var(--c-basic-line);display:flex;align-items:flex-start;gap:10px;line-height:1.55;}
+.checklist li:last-child{border-bottom:none;}
+.checklist li::before{content:'☐';color:var(--c-basic);font-weight:700;font-size:1.15rem;flex-shrink:0;line-height:1.2;}
+.core-path{background:linear-gradient(135deg,var(--c-basic-bg) 0%,#dcefe2 100%);border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:800;color:var(--c-basic);font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.core-path .cp-title::before{content:'▶';font-size:12px;}
+.core-path ol{margin:0;padding-left:22px;}
+.core-path li{margin-bottom:6px;font-size:13.5px;line-height:1.6;}
+.audit-panel{background:var(--surface-soft);border:2px solid var(--border-strong);border-radius:var(--r-lg);padding:16px 18px;margin:16px 0;}
+.audit-panel h4{margin:0 0 12px;color:var(--text);}
+.audit-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px;}
+@media(min-width:600px){.audit-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}}
+.audit-item{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:10px 12px;font-size:12.5px;line-height:1.55;}
+.mini-note{font-size:12.5px;color:var(--text-muted);font-style:italic;margin-top:8px;line-height:1.55;}
+.layer-legend{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:12px 14px;margin:12px 0;display:grid;grid-template-columns:1fr;gap:8px 18px;}
+@media(min-width:600px){.layer-legend{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;}}
+.layer-legend .layer-row{display:flex;gap:10px;align-items:center;font-size:12.5px;line-height:1.5;}
+.layer-legend .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.e8{background:var(--c-basic);}
+.layer-legend .dot.understand{background:var(--c-understand);}
+.layer-legend .dot.extra{background:var(--c-extra);}
+.layer-legend .dot.contest{background:var(--c-warn);}
+.klinika-table td.col-blad{color:var(--c-error);font-weight:700;}
+.klinika-table td.col-blad::before{content:'✕ ';font-weight:900;margin-right:4px;color:var(--c-error);}
+.klinika-table td.col-ok{color:var(--c-basic);font-weight:700;}
+.klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}
+.map-card{position:relative;}
+.map-expand-btn{position:absolute;top:10px;right:10px;z-index:3;padding:6px 12px;border:1px solid var(--accent-line);background:rgba(255,255,255,0.95);color:var(--accent);border-radius:var(--r-sm);font-size:12px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:var(--sh-sm);transition:all 0.15s var(--ease);}
+.map-expand-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.map-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(26,35,50,0.85);backdrop-filter:blur(6px);}
+.map-overlay.is-open{display:block;}
+.map-overlay-inner{position:absolute;inset:12px;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-xl);}
+.map-overlay-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface-soft);gap:8px;flex-wrap:wrap;}
+.map-overlay-title{font-weight:800;font-size:14px;color:var(--text);}
+.map-overlay-actions{display:flex;gap:6px;}
+.map-overlay-actions button{padding:6px 12px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;color:var(--text-soft);transition:all 0.15s var(--ease);}
+.map-overlay-actions button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.map-overlay-actions .map-close{background:var(--c-error);color:#fff;border-color:var(--c-error);}
+.map-overlay-canvas{flex:1;overflow:hidden;position:relative;background:#fff;cursor:grab;touch-action:none;}
+.map-overlay-canvas svg{display:block;position:absolute;top:0;left:0;transform-origin:0 0;}
+@media print{
+.fab,.toc-wrapper,.toc-overlay,.header-wrapper,.bottom-nav,.resume-dropdown,.map-overlay,.map-expand-btn{display:none !important;}
+body{padding:0;background:#fff;}
+.container{box-shadow:none;border:none;padding:0;max-width:100%;}
+details.answer{page-break-inside:avoid;}
+details.answer > *:not(summary){display:block !important;}
+details.answer summary{display:none;}
+.card{page-break-inside:avoid;}
+.widget{page-break-inside:avoid;}
+}
+@media (prefers-reduced-motion: reduce){
+*{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+html{scroll-behavior:auto;}
+}
+html,body{max-width:100%;overflow-x:hidden;}
+.table-scroll-hint{display:none;align-items:center;justify-content:space-between;gap:8px;padding:7px 11px;margin-top:0;margin-bottom:8px;border:1px solid var(--border);border-bottom:0;border-radius:var(--r-sm) var(--r-sm) 0 0;background:var(--surface-soft);color:var(--text-muted);font-size:11px;font-weight:700;}
+.table-wrap.is-scrollable + .table-scroll-hint{display:flex;}
+.table-scroll-hint .scroll-arrow{font-size:13px;letter-spacing:2px;color:var(--accent);}
+.timeline-anim{border-color:var(--c-understand-line);}
+.ta-stage{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 14px;min-height:280px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.ta-scene{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;animation:taFade 0.6s ease-out;width:100%;}
+@keyframes taFade{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.ta-scene .ta-year{font-size:1.7rem;font-weight:800;color:var(--accent);font-family:'JetBrains Mono',monospace;letter-spacing:1px;}
+.ta-scene .ta-who{font-size:1.05rem;font-weight:800;color:var(--text);}
+.ta-scene .ta-desc{font-size:13.5px;color:var(--text-soft);max-width:600px;line-height:1.65;}
+.ta-dots{display:flex;justify-content:center;gap:8px;margin:14px 0 8px;}
+.ta-dot{width:12px;height:12px;border-radius:50%;background:var(--border-strong);border:2px solid transparent;cursor:pointer;padding:0;transition:all 0.2s var(--ease);}
+.ta-dot.active{background:var(--accent);transform:scale(1.25);box-shadow:0 0 0 3px var(--accent-glow);}
+.ta-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;}
+.ta-nav{padding:8px 14px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-weight:700;color:var(--text-soft);cursor:pointer;font-size:12.5px;transition:all 0.15s var(--ease);}
+.ta-nav:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.ta-progress{font-size:12.5px;color:var(--text-muted);font-weight:700;font-family:'JetBrains Mono',monospace;}
+.eq-player{background:linear-gradient(180deg,#f8fafc,#eef6f5);border:2px solid var(--accent-line);border-radius:var(--r-lg);padding:16px 18px;margin:14px 0;}
+.eq-stage{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.15rem;padding:12px;background:#fff;border-radius:var(--r-md);border:1px solid var(--border);}
+.eq-term{display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border);opacity:0;}
+.eq-term.show{opacity:1;animation:reaction-flow 0.7s ease-out;}
+.eq-term.reactant{background:#e0f2fe;border-color:#7dd3fc;color:#0c4a6e;}
+.eq-term.product{background:#dcfce7;border-color:#86efac;color:#14532d;}
+.eq-arrow{opacity:0;color:var(--accent);font-size:1.4rem;}
+.eq-arrow.show{opacity:1;}
+.eq-balance{margin-top:10px;font-size:13px;color:var(--text-soft);display:none;}
+.eq-balance.show{display:block;}
+@keyframes reaction-flow{0%{opacity:.25;transform:scale(.92)}55%{opacity:1}100%{opacity:1;transform:scale(1)}}
+.ion-assembly{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;padding:18px 12px;background:#fff;border:1px solid var(--border);border-radius:var(--r-md);margin:10px 0;}
+.ion-chip{padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid var(--border);}
+.ion-chip.cation{background:#e0f2fe;border-color:#38bdf8;color:#0c4a6e;}
+.ion-chip.anion{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.ion-chip.product{background:#dcfce7;border-color:#4ade80;color:#14532d;}
+.ion-plus,.ion-join{font-size:1.4rem;font-weight:800;color:var(--text-muted);}
+.hero{max-width:900px;margin:0 auto 22px;padding:26px;border:1px solid var(--border);border-radius:var(--r-xl);background:linear-gradient(135deg,#fff,var(--accent-soft));box-shadow:var(--sh-md);}
+.hero h1{font-size:clamp(32px,6vw,52px);margin:4px 0 8px;}
+.hero-kicker{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--accent);text-transform:uppercase;}
+.lead{font-size:16px;color:var(--text-soft);max-width:720px;}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;}
+.page{max-width:900px;margin:0 auto;}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+@media(max-width:720px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px;}
+.metric-grid>div,.result-card,.step-card{padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);}
+.metric-grid b{display:block;font-size:10px;text-transform:uppercase;color:var(--text-muted);}
+.metric-grid strong{display:block;margin-top:3px;}
+@media(max-width:700px){.metric-grid{grid-template-columns:1fr;}}
+.controls,.button-grid{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;}
+.controls button,.button-grid button,.quiz-opt{padding:8px 12px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;cursor:pointer;}
+.particle-stage{height:120px;display:flex;align-items:center;justify-content:center;gap:70px;border:1px dashed var(--border-strong);border-radius:10px;margin-top:12px;}
+.particle{font-size:30px;font-weight:800;}
+.p-h3o{color:var(--accent);}
+.p-cl{color:#b83a45;}
+.ph-scale{display:flex;justify-content:space-between;margin-top:6px;font:700 11px 'JetBrains Mono',monospace;}
+.buffer-tank{height:28px;border:1px solid var(--border-strong);border-radius:999px;overflow:hidden;margin:14px 0;background:var(--surface-soft);}
+#bufferFill{height:100%;width:100%;background:var(--accent);transition:width .2s;}
+.quiz-wrap{margin:16px 0;}
+.quiz-q{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:14px 16px;margin-bottom:12px;}
+.quiz-q h5{margin:0 0 10px;font-size:14.5px;color:var(--text);text-transform:none;letter-spacing:0;line-height:1.45;}
+.quiz-q .q-tag{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:10px;margin-bottom:8px;background:var(--surface-soft);color:var(--text-muted);}
+.quiz-opts{display:flex;flex-direction:column;gap:8px;}
+.quiz-opt{display:block;width:100%;text-align:left;padding:10px 12px;border:2px solid var(--border);border-radius:var(--r-sm);background:#fff;font:inherit;font-size:13.5px;cursor:pointer;transition:all 0.15s var(--ease);color:var(--text);}
+.quiz-opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft);}
+.quiz-opt.correct{border-color:var(--c-basic);background:var(--c-basic-bg);color:var(--c-basic);font-weight:700;}
+.quiz-opt.wrong{border-color:var(--c-error);background:var(--c-error-bg);color:var(--c-error);}
+.quiz-opt:disabled{cursor:default;opacity:0.95;}
+.quiz-fb{margin-top:8px;font-size:13px;line-height:1.5;display:none;padding:8px 10px;border-radius:var(--r-sm);}
+.quiz-fb.show{display:block;}
+.quiz-fb.ok{background:var(--c-basic-bg);color:var(--c-basic);}
+.quiz-fb.bad{background:var(--c-error-bg);color:var(--c-error);}
+.quiz-score{text-align:center;padding:14px;background:var(--surface-soft);border-radius:var(--r-md);margin-top:16px;font-weight:800;color:var(--accent);display:none;}
+.quiz-score.show{display:block;}
+.lab-bridge{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 28px;padding:14px 16px;border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);background:linear-gradient(135deg,var(--surface-soft),var(--accent-soft));}
+.lab-bridge strong{display:block;color:var(--accent-dark);}
+.lab-bridge span{display:block;margin-top:3px;color:var(--text-soft);font-size:13px;}
+.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;}
+.lab-bridge-btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
+@media(max-width:600px){.lab-bridge{align-items:flex-start;flex-direction:column;}.lab-bridge-btn{width:100%;text-align:center;}}
+.exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}
+.exp-card h5{margin:0 0 10px;color:var(--c-basic);font-size:14px;text-transform:none;letter-spacing:0;}
+.exp-grid{display:grid;grid-template-columns:1fr;gap:6px;font-size:13.5px;line-height:1.55;}
+@media(min-width:600px){.exp-grid{grid-template-columns:110px 1fr;}}
+.exp-grid b{color:var(--text-soft);font-size:11px;text-transform:uppercase;letter-spacing:0.4px;}
+
+.js-reveal .card:not(.in),.js-reveal .widget:not(.in){opacity:0;transform:translateY(14px)}
+.js-reveal .card,.js-reveal .widget{transition:opacity .55s var(--ease),transform .55s var(--ease)}
+
+
+.ion-svg{width:100%;height:auto;display:block;background:radial-gradient(ellipse at 50% 40%,#fff,var(--surface-soft));border:1px solid var(--border);border-radius:var(--r-md);margin-top:10px}
+.ion-svg .mv{transition:transform .9s cubic-bezier(.65,0,.35,1);transform-box:fill-box}
+.ion-svg text{font-family:'JetBrains Mono',monospace;font-weight:800;text-anchor:middle;dominant-baseline:central}
+.ion-svg .fade{opacity:0;transition:opacity .6s ease .35s}
+.ion-svg[data-s="1"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="1"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="1"] .d1,.ion-svg[data-s="2"] .d1{opacity:1}
+.ion-svg[data-s="2"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="2"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="2"] .proton{transform:translate(120px,-40px)}
+.ion-svg[data-s="2"] .arrow{opacity:1}
+.ion-svg[data-s="3"] .g-hcl{transform:translateX(10px)}
+.ion-svg[data-s="3"] .g-w{transform:translateX(-10px)}
+.ion-svg[data-s="3"] .proton{transform:translate(230px,-38px)}
+.ion-svg[data-s="3"] .d3{opacity:1}
+.ion-svg[data-s="3"] .glow{animation:ionGlow 1.6s ease-in-out infinite}
+@keyframes ionGlow{0%,100%{filter:drop-shadow(0 0 2px rgba(13,104,104,.3))}50%{filter:drop-shadow(0 0 10px rgba(13,104,104,.8))}}
+
+
+.ph-bar{position:relative;height:18px;border-radius:999px;margin:10px 0 4px;border:1px solid var(--border-strong);
+background:linear-gradient(90deg,#e5262e 0%,#ef5a28 14%,#f6a21e 28%,#d7d93a 43%,#5cb85c 50%,#21a89a 57%,#2f7fc1 71%,#4a4bb5 86%,#6b2d8f 100%)}
+.ph-marker{position:absolute;top:-6px;width:0;height:0;left:0;transform:translateX(-50%);transition:left .35s var(--ease)}
+.ph-marker::before{content:'';position:absolute;left:-7px;top:0;border:7px solid transparent;border-top:10px solid var(--text)}
+.ph-marker::after{content:attr(data-v);position:absolute;left:0;top:-22px;transform:translateX(-50%);background:var(--text);color:#fff;font:800 11px 'JetBrains Mono',monospace;padding:2px 6px;border-radius:5px;white-space:nowrap}
+.ph-flask{display:inline-block;width:22px;height:22px;border-radius:0 0 8px 8px;border:2px solid var(--text-soft);vertical-align:middle;margin-right:6px;transition:background .35s}
+
+
+.titr-wrap{position:relative}
+#titrationCanvas{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--r-md);background:#fff}
+.titr-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.titr-row input[type=range]{flex:1 1 200px}
+.titr-flask{width:34px;height:42px;border:2px solid var(--text-soft);border-radius:2px 2px 12px 12px;transition:background .3s;flex-shrink:0;position:relative}
+.titr-flask::after{content:'';position:absolute;left:-2px;right:-2px;top:-8px;height:6px;border:2px solid var(--text-soft);border-bottom:0;border-radius:3px 3px 0 0}
+
+
+.buffer-tank{position:relative;height:34px}
+#bufferFill{transition:width .4s var(--ease),background .4s;background-size:28px 28px;background-image:linear-gradient(45deg,rgba(255,255,255,.22) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.22) 75%,transparent 75%)}
+.buffer-tank.pulse{animation:bufPulse .45s ease}
+.buffer-tank.dead{animation:bufDead .5s ease 2}
+@keyframes bufPulse{50%{transform:scale(1.02);box-shadow:0 0 0 4px var(--accent-glow)}}
+@keyframes bufDead{50%{box-shadow:0 0 0 4px rgba(184,58,69,.35)}}
+
+
+.rx-stage{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:12px 0;padding:14px;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md)}
+.rx-beaker{position:relative;width:120px;height:150px;border:3px solid var(--text-soft);border-top:0;border-radius:0 0 18px 18px;background:rgba(255,255,255,.55);overflow:visible;flex-shrink:0}
+.rx-liquid{position:absolute;left:0;right:0;bottom:0;height:100px;border-radius:0 0 14px 14px;background:rgba(220,235,240,.65);transition:background 2.2s ease}
+.rx-solid{position:absolute;left:36px;bottom:2px;width:48px;height:24px;border-radius:40% 40% 8px 8px;opacity:0;transition:height 3.5s ease,opacity .5s,transform 3.5s ease}
+.rx-bubbles,.rx-precip,.rx-fumes{position:absolute;left:0;right:0;bottom:0;height:150px;pointer-events:none;overflow:hidden}
+.rx-fumes{overflow:visible;bottom:100px;height:70px}
+.rx-b{position:absolute;bottom:14px;border-radius:50%;background:rgba(255,255,255,.85);border:1px solid rgba(13,104,104,.45);animation:rxRise 2.2s ease-in forwards}
+@keyframes rxRise{to{transform:translate(var(--dx,0),-92px);opacity:0}}
+.rx-p{position:absolute;top:50px;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #cbd5e1;animation:rxFall 2.4s ease-in forwards}
+@keyframes rxFall{to{transform:translateY(90px)}}
+.rx-cloud{position:absolute;bottom:0;left:6px;right:6px;height:0;background:#fff;border-radius:10px 10px 0 0;box-shadow:0 0 0 1px #e2e8f0;transition:height 4s ease;opacity:.95}
+.rx-f{position:absolute;bottom:0;width:26px;height:26px;border-radius:50%;background:rgba(150,75,20,.55);filter:blur(7px);animation:rxFume 3s ease-out forwards}
+@keyframes rxFume{to{transform:translate(var(--dx,0),-70px) scale(2.2);opacity:0}}
+
+
+.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.rx-label{flex:1 1 200px;font-size:13px;color:var(--text-soft);line-height:1.5}
+.rx-label b{color:var(--text);font-family:'JetBrains Mono',monospace}
+@media print{.js-reveal .card,.js-reveal .widget{opacity:1!important;transform:none!important}}
+
+
+/* ulepszenia.css — warstwa wspólna nad baza.css: pasek lekcji, postęp czytania, spis z podświetleniem,
+   tryb ciemny, komponenty wspólne (mity, drzewo, cytat, dialog, słówka, figura), druk, dostępność.
+   Kolejność w lekcji: baza.css → ulepszenia.css → motywy/<przedmiot>.css. Edytuj tylko tutaj. */
+
+:root{--header-h:52px;--serif:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Charter,Georgia,serif}
+
+/* ---------- pasek lekcji (zamiast nagłówka aplikacji) ---------- */
+.lk-bar{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 12px;
+  background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--border)}
+.lk-subj{flex:none;display:inline-flex;align-items:center;gap:7px;font:800 12.5px/1 Inter,system-ui,sans-serif;color:var(--accent);text-decoration:none;
+  padding:6px 10px 6px 8px;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+.lk-subj i{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+.lk-title{flex:1;min-width:0;font:600 13px/1.25 Inter,system-ui,sans-serif;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lk-btn{flex:none;min-width:36px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);background:var(--surface);
+  color:var(--text);border-radius:9px;padding:0 10px;font:700 12.5px Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+.lk-btn:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.lk-prog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
+@media (max-width:520px){.lk-title{display:none}.lk-bar{justify-content:space-between}}
+
+/* ---------- nagłówek lekcji ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+.hero::after{content:"";position:absolute;inset:-10% -6% -10% 52%;z-index:-1;opacity:.12;pointer-events:none;background:var(--motyw-wzor,none) right center/auto 100% repeat-y}
+.hero h1{text-wrap:balance}
+.hero-kicker{color:var(--accent);text-transform:none;letter-spacing:0;font-size:13px}
+.page{padding:0 16px}
+.lk-btn svg{width:16px;height:16px;display:block}
+.lk-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:12.5px;color:var(--text-muted)}
+.lk-meta b{color:var(--text-soft);font-weight:700}
+
+/* ---------- spis treści: aktywna sekcja ---------- */
+@media (min-width:800px){.toc-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));column-gap:12px}}
+.toc-link.on{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);font-weight:700}
+section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
+
+/* ---------- komponenty wspólne ---------- */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:12px 0}
+.myth-head{grid-column:1/-1;font-weight:800;font-size:14px}
+.myth{border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow:hidden}
+.myth p{margin:0;padding:9px 12px;font-size:13.5px;line-height:1.5}
+.myth p span{display:block;font:800 11px Inter,system-ui;margin-bottom:2px}
+.myth-x{background:var(--c-error-bg)}.myth-x span{color:var(--c-error)}.myth-ok span{color:var(--c-basic)}
+
+.lk-tree{margin:12px 0;font-size:14px;overflow-x:auto}
+.lk-tree ul{list-style:none;margin:0;padding-left:18px}.lk-tree>ul{padding-left:0}
+.lk-tree li{position:relative;padding:3px 0 3px 14px}
+.lk-tree ul ul li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--accent-line)}
+.lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
+.lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
+.lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+
+/* cytat z tekstu (lektura, źródło, wypowiedź) */
+.lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
+.lk-quote blockquote{margin:0;font:400 17px/1.65 var(--serif);color:var(--text)}
+.lk-quote blockquote p{margin:0 0 6px;color:inherit}
+.lk-quote figcaption{margin-top:6px;font-size:12.5px;color:var(--text-muted)}
+
+/* dialog (role A/B, rozmowa, scenka) */
+.lk-dialog{margin:14px 0;display:flex;flex-direction:column;gap:8px}
+.lk-line{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.lk-who{min-width:30px;height:30px;padding:0 8px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font:800 12px Inter,system-ui;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line)}
+.lk-line.b .lk-who{background:var(--surface-soft);color:var(--text-soft);border-color:var(--border)}
+.lk-say{padding:8px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font-size:14.5px;line-height:1.55}
+.lk-say small{display:block;color:var(--text-muted);font-size:12.5px;margin-top:2px}
+
+/* słówka: wyraz — znaczenie — przykład */
+.lk-vocab{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.lk-vocab th{text-align:left;font-size:12px;color:var(--text-muted);font-weight:700;padding:6px 10px;border-bottom:2px solid var(--border)}
+.lk-vocab td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+.lk-vocab td:first-child{font-weight:800;color:var(--accent);white-space:nowrap}
+.lk-vocab td:last-child{color:var(--text-soft);font-style:italic}
+@media (max-width:560px){.lk-vocab thead{display:none}.lk-vocab tr{display:block;padding:8px 0;border-bottom:1px solid var(--border)}
+  .lk-vocab td{display:block;border:0;padding:1px 4px}}
+
+/* figura z biblioteki grafik przedmiotu */
+.lk-fig{margin:16px 0;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);overflow:hidden}
+.lk-fig figcaption{padding:9px 14px;border-top:1px solid var(--border);background:var(--surface-soft);font-size:13px;line-height:1.5;color:var(--text-soft)}
+.lk-fig figcaption b{color:var(--text);margin-right:4px}
+.lk-fig-body{padding:12px}
+.lk-fig svg{display:block;width:100%;height:auto}
+
+/* z chemii (lekcja.css): treści akademickie, plakietki */
+details.adv{border:1px dashed var(--c-warn-line,#eed8a8);border-radius:10px;background:var(--surface-soft,#f6f8fa);margin:10px 0;padding:0 12px}details.adv>summary{cursor:pointer;font-weight:700;color:var(--c-warn,#b06f1c);padding:9px 0;list-style:none}details.adv>summary::-webkit-details-marker{display:none}details.adv>summary::before{content:"▸ "}details.adv[open]>summary::before{content:"▾ "}.adv-tag{font-weight:600;font-size:11px;opacity:.75;margin-left:6px}.adv-body{padding:0 0 10px;font-size:13.5px;line-height:1.6}.adv-body table{font-size:12.5px}.adv-toggle{margin-top:10px;border:1px solid var(--c-warn-line,#eed8a8);background:var(--c-warn-bg,#fcf4e6);color:var(--c-warn,#b06f1c);border-radius:999px;padding:6px 12px;font:700 12px Inter,system-ui,sans-serif;cursor:pointer}.bio-tag{display:inline-block;font:800 10px Inter,system-ui;letter-spacing:.04em;padding:2px 7px;border-radius:99px;background:rgba(46,125,79,.12);color:#2e7d4f;margin-left:6px;vertical-align:middle}.v15{display:inline-block;font:800 9.5px Inter,system-ui;padding:1px 6px;border-radius:99px;background:rgba(13,125,125,.12);color:#0d7d7d;margin-left:6px;vertical-align:middle}@media print{details.adv{display:block}details.adv>.adv-body{display:block}}
+/* z chemii (lekcja.css): telefon, tabele */
+.exp-card{min-width:0;max-width:100%;box-sizing:border-box}.exp-grid>*{min-width:0;overflow-wrap:anywhere}
+@media (max-width:600px){.exp-grid{grid-template-columns:minmax(0,1fr)!important}.exp-grid>b{margin-top:4px}}
+.table-wrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+
+/* klinika błędów (::: klinika) — tabela, na telefonie karty */
+.klinika-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden}
+.klinika-table th{text-align:left;padding:9px 12px;background:var(--surface-soft);color:var(--text-soft);font-size:12px;font-weight:800;border-bottom:1px solid var(--border)}
+.klinika-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.klinika-table tr:last-child td{border-bottom:0}
+@media (max-width:600px){.klinika-table thead{display:none}.klinika-table tr{display:block;padding:8px 12px;border-bottom:1px solid var(--border)}
+  .klinika-table td{display:block;border:0;padding:2px 0}.klinika-table td:not(.col-blad):not(.col-ok){color:var(--text-soft)}}
+
+.lk-pre{margin:12px 0;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-soft);overflow-x:auto;font:12.5px/1.55 ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;color:var(--text-soft);white-space:pre}
+.lk-pre code{font:inherit;background:none;padding:0;color:inherit}
+.lk-hr{border:0;border-top:1px solid var(--border);margin:28px 0}
+
+/* ---------- dostępność ---------- */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;z-index:60;background:var(--surface);color:var(--accent);padding:8px 12px;border-radius:8px}
+.skip-link:focus{left:8px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- tryb ciemny: automatycznie albo przyciskiem (data-theme) ---------- */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme=dark]{
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}
+/* elementy bazy z białym tłem na sztywno */
+html[data-ciemny] :is(.flashcard,.checklist,.audit-item,.layer-legend,.quiz-q,.quiz-opt,.btn,.controls button,.eq-stage,.ion-assembly,.bld-workspace,.bld-pool button,.resume-dropdown,.ta-nav){background:var(--surface);color:var(--text)}
+html[data-ciemny] .hero{background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.active,.step-flow){color:var(--bg)}
+@media (max-width:600px){.hero::after{opacity:.07}}
+
+/* ---------- druk ---------- */
+@media print{
+  .lk-bar,.adv-toggle,.toc-item,.fab,.bottom-nav{display:none!important}
+  body{padding:0;background:#fff;color:#000}
+  .hero::after{display:none}.hero{background:none;box-shadow:none}
+  details.adv,details.answer{display:block}details>*{display:block}
+  .card,.minimum-card,.lk-fig,.myth,.quiz-q{break-inside:avoid;box-shadow:none}
+  a{color:inherit;text-decoration:none}
+}
+
+/* === Dopracowanie czytelności (2026-10-11; z wersji „ulepszonej” U03 użytkownika, uogólnione na wszystkie przedmioty, zgodne z trybem ciemnym) === */
+body{line-height:1.74}
+main{isolation:isolate}
+.hero{border-color:var(--accent-line)}
+.hero::before{content:"";position:absolute;right:-42px;top:-56px;width:180px;height:180px;z-index:-1;pointer-events:none;
+ border:1px solid var(--accent-line);border-radius:50%;opacity:.45;
+ box-shadow:0 0 0 22px var(--accent-glow),0 0 0 44px var(--accent-glow)}
+.part-heading{padding:0 0 12px;border-bottom:1px solid var(--border);align-items:flex-start}
+.part-num{margin-top:1px}
+section[id]{scroll-margin-top:calc(var(--header-h,56px) + 20px)}
+section p{max-width:78ch}
+section ul,section ol{padding-left:1.35rem}
+.card,.exp-card,.widget,.table-wrap{box-shadow:0 2px 8px rgba(24,49,59,.045)}
+.table-wrap{max-width:100%}
+.table-wrap table{line-height:1.55}
+.table-wrap td strong{color:var(--text)}
+.table-wrap tbody tr:nth-child(even) td{background:var(--surface-soft)}
+.table-wrap tbody tr:hover td{background:var(--accent-soft)}
+.mini-note{max-width:80ch}
+:is(button,a,summary,[tabindex]):focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:520px){.hero{padding:20px 16px}.part-heading{font-size:19px;gap:11px}
+ .table-wrap table{font-size:12.5px}.table-wrap th,.table-wrap td{padding:8px 9px}}
+@media(hover:none){.card:hover,.flashcard:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media print{.hero::before{display:none}.card,.exp-card,.table-wrap{break-inside:avoid;box-shadow:none}}
+
+/* fiszki: część ukryta do rozwinięcia (lekcja.js); przy druku — wszystkie */
+.flashcard[hidden]{display:none!important}
+.fz-more{display:block;width:100%;margin:-6px 0 18px;padding:12px 16px;border:2px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent;color:var(--text,#1d2a30);font-family:inherit;font-weight:600;font-size:15px;line-height:1.3;cursor:pointer;text-align:center}
+.fz-more:hover,.fz-more:focus-visible{background:var(--surface-2,rgba(0,0,0,.04))}
+@media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
+.quiz-q[hidden]{display:none!important}
+@media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
+
+/* motyw oli (Olimpiada) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#8a5a00;--accent-dark:#5f3e00;--accent-soft:#fbf1dd;--accent-line:#ecd29a;--accent-glow:rgba(138,90,0,.15);--hl-key:#8a5a00;--hl-key-bg:#f8e9c8;--hl-formula:#5f3e00;--hl-formula-bg:#fbf1dd;--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 120 200%27%3E%3Cg fill=%27%238a5a00%27%3E%3Cpath d=%27M60 20l8 17 19 2-14 13 4 19-17-10-17 10 4-19-14-13 19-2z%27/%3E%3C/g%3E%3Cg fill=%27none%27 stroke=%27%238a5a00%27 stroke-width=%274%27 stroke-linecap=%27round%27%3E%3Cpath d=%27M30 110c-6 30 6 56 30 70M90 110c6 30-6 56-30 70%27/%3E%3C/g%3E%3Cg fill=%27%238a5a00%27%3E%3Cellipse cx=%2726%27 cy=%27128%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-60 26 128%29%27/%3E%3Cellipse cx=%2730%27 cy=%27150%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-40 30 150%29%27/%3E%3Cellipse cx=%2742%27 cy=%27168%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-20 42 168%29%27/%3E%3Cellipse cx=%2794%27 cy=%27128%27 rx=%279%27 ry=%275%27 transform=%27rotate%2860 94 128%29%27/%3E%3Cellipse cx=%2790%27 cy=%27150%27 rx=%279%27 ry=%275%27 transform=%27rotate%2840 90 150%29%27/%3E%3Cellipse cx=%2778%27 cy=%27168%27 rx=%279%27 ry=%275%27 transform=%27rotate%2820 78 168%29%27/%3E%3C/g%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#e9b85a;--accent-dark:#f5d79a;--accent-soft:#2b2312;--accent-line:#5c4a22;--accent-glow:rgba(233,184,90,.2);--hl-key:#efc677;--hl-key-bg:#33290f;--hl-formula:#f5d79a;--hl-formula-bg:#2b2312;}}
+:root[data-theme=dark]{--accent:#e9b85a;--accent-dark:#f5d79a;--accent-soft:#2b2312;--accent-line:#5c4a22;--accent-glow:rgba(233,184,90,.2);--hl-key:#efc677;--hl-key-bg:#33290f;--hl-formula:#f5d79a;--hl-formula-bg:#2b2312;}
+
+/* poziomy olimpijskie 2–4 (wspólne lekcje E8: warstwy dopisane w tej samej lekcji) */
+.poz{display:inline-flex;align-items:center;gap:5px;font:800 11.5px/1 Inter,system-ui;padding:4px 9px;border-radius:999px;border:1px solid var(--accent-line);background:var(--accent-soft);color:var(--accent);vertical-align:middle}
+.poz::before{content:"";width:22px;height:6px;border-radius:3px;background:linear-gradient(90deg,var(--accent) var(--poz-w,33%),var(--accent-line) 0)}
+.poz-2{--poz-w:33%}.poz-3{--poz-w:66%}.poz-4{--poz-w:100%}
+.zad-konk{border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:12px 16px;margin:14px 0;background:var(--surface)}
+.zad-konk>b:first-child{display:flex;justify-content:space-between;gap:10px;margin-bottom:6px}
+.zad-konk .pkt{font:800 12px Inter,system-ui;color:var(--accent);white-space:nowrap}
+
+/* Styl klocków laboratoryjnych (palniki, probówki, układ okresowy) — dobrany do motywu che:
+   jasna karta lekcji (--surface), akcent --accent, tekst --text. Scena z płótnem zostaje ciemna
+   (płomienie i poświaty wyglądają na ciemnym tle), reszta jak w sekcjach lekcji. */
+:root{--lab:#0e2326;--lab-tekst:var(--text,#1a2332);--lab-cisza:var(--text-muted,#8892a0);--lab-linia:var(--border,#e5e9ee)}
+.lab{background:var(--surface,#fff);color:var(--text,#1a2332);border:1px solid var(--border,#e5e9ee);border-radius:var(--r-lg,14px);padding:16px;box-shadow:var(--sh-sm,none);font-family:var(--tekst,Inter,system-ui,sans-serif)}
+.lab-pasek{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between;margin-bottom:12px}
+.lab-pasek .btn{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+.lab-cisza{color:var(--text-muted,#8892a0);font-size:14px}
+.btn{appearance:none;cursor:pointer;border:1px solid var(--accent,#0d6868);background:var(--accent,#0d6868);color:#fff;border-radius:var(--r-md,10px);padding:8px 14px;font:600 13px var(--tekst,Inter,sans-serif)}
+.btn.jasny{background:var(--surface,#fff);color:var(--accent,#0d6868)}
+.btn:hover{filter:brightness(1.08)}
+.btn:focus-visible{outline:2px solid var(--accent,#0d6868);outline-offset:2px}
+.btn[disabled]{opacity:.4;cursor:not-allowed}
+.stacje{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.st{display:flex;flex-direction:column;background:none;border:none;padding:0;min-width:0}
+.st-opis{margin-top:auto;display:flex;flex-direction:column;justify-content:flex-end}
+.st canvas,.rack canvas{display:block;width:100%;height:auto;cursor:pointer;background:var(--lab,#0e2326);border-radius:var(--r-md,10px);margin:6px 0 4px}
+.rack{margin:0 auto}
+.rack-kol{display:grid;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));gap:8px}
+.rack-ce{padding:0 6px;min-width:0;display:flex;flex-direction:column}
+.rack-ce.st-opis{justify-content:flex-end}
+.rack .wyb-gr{display:none}
+.rack .rown{font-size:14px}
+.rack-ce .btn,.st .btn{padding:6px 10px;font-size:12px}
+.st-opis{font-size:14px;color:var(--text,#1a2332)}
+.st-opis p{margin:0 0 6px}
+.rown{font:600 15px var(--naglowek,Inter,sans-serif);color:var(--text,#1a2332)}
+.obs{font-size:14px;color:var(--text-soft,#4a5568)}
+.meta{font-size:12.5px;color:var(--text-muted,#8892a0);display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-bottom:8px}
+.meta .pasek{background:var(--border,#e5e9ee);width:90px;height:8px;display:inline-block;vertical-align:middle;margin-left:6px;border-radius:99px;overflow:hidden}
+.meta .pasek i{display:block;height:100%;background:var(--accent,#0d6868)}
+.ostrz{color:var(--c-error,#b83a45);font-size:13px}
+.zak{display:flex;gap:10px;align-items:center;background:var(--c-warn-bg,#fcf4e6);border:1px solid var(--c-warn-line,#eed8a8);border-radius:var(--r-md,10px);padding:8px 10px;font-size:13px;line-height:1.35;margin:8px 0;color:var(--text,#1a2332)}
+.zak-ik{display:flex;gap:4px;flex:none}
+.el .tr{position:absolute;right:2px;bottom:2px;display:flex}
+.sz{position:relative}
+.sz .tr{position:absolute;top:2px;right:2px;display:flex}
+.tr2{display:flex;font-style:normal;margin-left:auto}
+.kol{display:flex;align-items:center;gap:10px;font-size:15px;color:var(--text,#1a2332)}
+.sw{width:20px;height:20px;border-radius:50%;flex:none;box-shadow:0 0 12px var(--glow,transparent)}
+.sw.pusty{border:2px dashed var(--border-strong,#cdd5dd)}
+.wyb-sym{position:relative;min-width:0}
+.wyb-sym>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:6px;font:700 15px var(--naglowek,Inter,sans-serif);color:var(--text,#1a2332);padding:4px 8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-sm,6px);background:var(--surface,#fff)}
+.wyb-sym>summary::-webkit-details-marker{display:none}
+.wyb-tri{display:inline-block;font-size:11px;color:var(--accent,#0d6868);transition:transform .15s}
+.wyb-sym[open] .wyb-tri{transform:rotate(90deg)}
+.wyb-lista{display:grid;gap:6px;margin:6px 0 8px;padding:8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-md,10px);background:var(--surface,#fff)}
+.wyb-g{display:block;font-size:11px;color:var(--text-muted,#8892a0);margin-bottom:3px}
+.wyb-sy{appearance:none;cursor:pointer;border:1px solid var(--border-strong,#cdd5dd);background:var(--surface-soft,#f6f8fa);color:var(--text,#1a2332);border-radius:var(--r-sm,6px);padding:4px 9px;margin:0 4px 4px 0;font:600 13px var(--naglowek,Inter,sans-serif)}
+.wyb-sy[aria-pressed="true"]{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+/* telefon: kilka stojaków obok siebie — węższy tekst, łamanie długich nazw */
+.kol{min-width:0}
+.kol b{overflow-wrap:anywhere;min-width:0}
+.st-opis{font-size:13px}
+.kol{font-size:14px}
+.stacje{gap:8px}
+.rack-kol{gap:6px}
+@media (max-width:480px){.st-opis .obs{font-size:12.5px}.st .btn,.rack-ce .btn{padding:5px 8px;font-size:12px}}
+.seria-przyciski{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+.seria-btn[aria-pressed="false"]{background:transparent;color:var(--accent,#0d6868)}
+.seria-btn[aria-pressed="true"]{background:var(--accent,#0d6868);color:#fff}
+.seria-opis{margin:0 0 10px;font-size:14px;color:var(--lab-cisza,#8892a0)}
+
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+<header class="lk-bar"><span class="lk-subj"><i></i>Olimpiada</span><span class="lk-title">LKO-PUŁAPKI-WAPNO Pułapki konkursowe — woda wapienna, wapno palone, kreda i inne nazwy, które się mylą</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<main class="page" id="main">
+<section class="hero card"><div class="hero-kicker">LKO · PUŁAPKI · I–II etap</div><h1>Pułapki konkursowe — woda wapienna, wapno palone, kreda i inne nazwy, które się mylą</h1><p class="lead">Na konkursie nazwy często wyglądają podobnie, a ich wzory i zachowanie są różne. Ta lekcja zbiera pary, które się mylą najczęściej, i pokazuje, jak je rozróżnić po wzorze, stanie skupienia i reakcji.</p><div class="tag-row"><span class="level-badge level-basic">E8</span><span class="level-badge level-olimp">LKO</span></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#minimum">Minimum E8</a><a class="toc-link" href="#jak-pracowac">0.1. Jak pracować z lekcją</a><a class="toc-link" href="#diagnoza">0.2. Diagnoza</a><a class="toc-link" href="#s1">Pojęcia i oznaczenia</a><a class="toc-link" href="#wykl-dwie-wody">1. Wykład — dwie „wody" i dwa „wapna"</a><a class="toc-link" href="#s2">Wykład — mleko wapienne: zawiesina, nie roztwór</a><a class="toc-link" href="#wykl-metnienie">2. Wykład — dlaczego mętnienie to nie zawsze CO₂</a><a class="toc-link" href="#s3">3. Wykład — dwie soda i dwa wapnie, których nie wolno zamieniać</a><a class="toc-link" href="#klinika">4. Klinika — pary, które się mylą</a><a class="toc-link" href="#zadania">5. Ćwiczenia — formy konkursu LKO</a><a class="toc-link" href="#s4">6. Doświadczenie modelowe — rozróżnij woda wapienną od mleka wapiennego</a><a class="toc-link" href="#s5">7. Mity</a><a class="toc-link" href="#s6">8. Słownik</a><a class="toc-link" href="#fiszki">Fiszki</a><a class="toc-link" href="#test">Test krótki</a><a class="toc-link" href="#s7">Ciekawostki</a><a class="toc-link" href="#s8">9. Źródła</a></nav></details>
+<div class="card card-understand">
+<span class="card-label">Zasady tego zestawu — co jest autorskie</span>
+<p>Oznaczenie „podstawa” odnosi się w tym materiale do szkolnych podstaw chemii, a nie do osobnego egzaminu ósmoklasisty z chemii. Zadania i punktacja są autorskie, chyba że jednoznacznie wskazano autentyczny arkusz. Wymagania konkretnego konkursu lub olimpiady należy sprawdzić w jego aktualnym programie.
+Podane czasy, punktacja i progi interpretacji wyniku są zasadami tego autorskiego zestawu. Nie stanowią potwierdzenia zasad rzeczywistego konkursu. Informacje o terminach, wyposażeniu i zakresie etapów wymagają sprawdzenia w dokumentach organizatora.</p>
+</div>
+<section id="minimum" class="minimum-card"><h3>Muszę umieć na konkursie — 8 punktów</h3>
+<ol>
+<li><strong>Woda wapienna</strong> = klarowny roztwór wodorotlenku wapnia Ca(OH)₂ w wodzie (roztwór, często nasycony w określonej temperaturze).</li>
+<li><strong>Mleko wapienne</strong> = zawiesina Ca(OH)₂ w wodzie (mętna, osad na dnie) — to nie to samo co woda wapienna.</li>
+<li><strong>Wapno palone</strong> = tlenek wapnia CaO. Powstaje z wapienia (CaCO₃) przez prażenie.</li>
+<li><strong>Wapno gaszone</strong> = wodorotlenek wapnia Ca(OH)₂. Powstaje z CaO i wody: CaO + H₂O → Ca(OH)₂ (reakcja silnie egzotermiczna).</li>
+<li><strong>Kreda, wapień, marmur</strong> = węglan wapnia CaCO₃ (różna forma, ten sam związek).</li>
+<li>Test na CO₂: wprowadzony do wody wapiennej daje <strong>biały osad</strong> (mętnienie): Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O.</li>
+<li>Nadmiar CO₂ rozpuszcza osad z powrotem (tworzy się rozpuszczalny wodorowęglan wapnia), więc przy długim przepuszczaniu gazu mętność znika.</li>
+<li>Mętnienie wody wapiennej może mieć też przyczynę termiczną: Ca(OH)₂ ma malejącą rozpuszczalność, więc po podgrzaniu wysadza się osad (patrz LKO-KRZYWE, szablon 3 i F3).</li>
+</ol>
+</section>
+<div class="layer-legend">
+<div class="layer-row"><span class="dot e8"></span><span><b>Podstawa:</b> nazwy i wzory: woda wapienna, mleko wapienne, wapno palone i gaszone, kreda.</span></div>
+<div class="layer-row"><span class="dot understand"></span><span><b>Rozumienie:</b> dlaczego mętnienie ma dwie przyczyny (CO₂ albo podgrzanie) i dlaczego nadmiar CO₂ rozpuszcza osad.</span></div>
+<div class="layer-row"><span class="dot contest"></span><span><b>Konkurs:</b> wybór zawiesiny, prawda–fałsz o wzorach, wniosek z obserwacji bez pułapki.</span></div>
+<div class="layer-row"><span class="dot extra"></span><span><b>Ambitne:</b> obliczenie osadu i masy wody z rozpuszczalności (zadania dodatkowe A i B).</span></div>
+</div>
+<div class="core-path">
+<div class="cp-title">Rdzeń lekcji — najpierw to</div>
+<ul>
+<li><a href="#wykl-dwie-wody">§1</a> — woda wapienna = roztwór, mleko wapienne = zawiesina.</li>
+<li><a href="#wykl-metnienie">§2</a> — dwie przyczyny mętnienia: CO₂ albo podgrzanie.</li>
+<li><a href="#klinika">§4</a> — dziewięć par, które się mylą.</li>
+<li><a href="#zadania">ZADANIA</a> — P1–P5 z kluczem i dwa zadania ambitne.</li>
+</ul>
+</div>
+<section id="jak-pracowac">
+<div class="part-heading"><span class="part-num">0.1</span> Jak pracować z lekcją</div>
+<p>Przeczytaj minimum, potem §1 i §2 (tu jest sedno: zawiesina vs roztwór i dwie przyczyny mętnienia). Klinikę (§4) przejrzyj jako listę pułapek. Zadania rób bez zaglądania do kluczy; po każdym wniosku sprawdź, czy wykluczyłeś podgrzanie.</p>
+</section>
+<section id="diagnoza">
+<div class="part-heading"><span class="part-num">0.2</span> Diagnoza</div>
+<p>Odpowiedz pisemnie, zanim zaczniesz lekcję — to sprawdzi, ile z tej lekcji już Cię nie zaskoczy.</p>
+<ol>
+<li>Przyporządkuj wzory do nazw: CaO, Ca(OH)₂, CaCO₃ — wapno palone, wapno gaszone, kreda.</li>
+<li>Zapisz równanie mętnienia wody wapiennej pod wpływem CO₂.</li>
+<li>Prawda czy fałsz: „Kreda i gips to dwie nazwy tej samej substancji." Uzasadnij wzorami.</li>
+<li>Czym różni się woda wapienna od mleka wapiennego?</li>
+<li>Dlaczego gaszenie dużej porcji wapna palonego wodą jest niebezpieczne?</li>
+</ol>
+<details class="answer"><summary>Klucz diagnozy</summary>
+<ol>
+<li>CaO — wapno palone; Ca(OH)₂ — wapno gaszone; CaCO₃ — kreda (1 pkt).</li>
+<li>Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O (1 pkt; akceptowany zapis „biały osad węglanu wapnia" bez strzałki — bez punktu za ↓).</li>
+<li>Fałsz: kreda to CaCO₃ (węglan wapnia), gips to CaSO₄·2H₂O (siarczan wapnia) — dwie różne sole (1 pkt).</li>
+<li>Woda wapienna to przejrzysty roztwór Ca(OH)₂; mleko wapienne to mętna zawiesina Ca(OH)₂ w wodzie (1 pkt).</li>
+<li>Reakcja gaszenia jest silnie egzotermiczna — woda może zagotować się i pryskać żrącą zawiesiną; CaO i Ca(OH)₂ są żrące (1 pkt).</li>
+</ol>
+<p><strong>Rozliczenie:</strong> 5 pkt — jedź z wykładem bez powtórek, użyj rdzenia jako trasy powtórek; 3–4 pkt — pracuj od rdzenia i wróć do punktów, w których zabrakło odpowiedzi; 0–2 pkt — najpierw powtórka podstaw (mieszaniny i rozdzielanie, tlenki, reakcja kwasu z węglanem — np. REV01, F03), potem lekcja od początku.</p>
+</details>
+<div class="card card-exam">
+<span class="card-label">Pytanie przewodnie</span>
+<p>Po czym poznać, że dwie nazwy z konkursu dotyczą innych substancji, zanim zaczniesz liczyć albo pisać równanie?</p>
+</div>
+</section>
+<section id="s1">
+<div class="part-heading">Pojęcia i oznaczenia</div>
+<ul>
+<li><strong>Roztwór</strong> — jednorodna mieszanina substancji rozpuszczonej w rozpuszczalniku (tu: woda); klarowna, bez osadu.</li>
+<li><strong>Zawiesina</strong> — mieszanina, w której ciało stałe jest rozproszone w cieczy i z czasem opada; mętna.</li>
+<li><strong>Tlenek</strong> — związek pierwiastka z tlenem, np. CaO (tlenek wapnia).</li>
+<li><strong>Wodorotlenek</strong> — związek metalu z grupą OH⁻, np. Ca(OH)₂.</li>
+<li><strong>Węglan</strong> — sól kwasu węglowego, zawierająca jon CO₃²⁻, np. CaCO₃.</li>
+<li><strong>Wodorowęglan</strong> — sól zawierająca jon HCO₃⁻, np. Ca(HCO₃)₂; rozpuszczalna w wodzie.</li>
+<li><strong>Egzotermiczna</strong> — reakcja, w której wydziela się ciepło (naczynie się ogrzewa).</li>
+<li><strong>Wzór sumaryczny</strong> — zapis składu związku, np. CaO, Ca(OH)₂, CaCO₃.</li>
+</ul>
+</section>
+<section id="wykl-dwie-wody">
+<div class="part-heading"><span class="part-num">1</span> Wykład — dwie „wody" i dwa „wapna"</div>
+<div class="card card-understand">
+<span class="card-label">Wykład — dlaczego „woda wapienna" nie jest wodą wapienną z kredy</span>
+<p>Nazwa „woda wapienna" nie znaczy, że to woda zawierająca wapień. To roztwór, który powstaje przez rozpuszczenie w wodzie wodorotlenku wapnia Ca(OH)₂. Ponieważ Ca(OH)₂ rozpuszcza się słabo (w 20 °C około 0,16 g na 100 g wody), roztwór nasycony jest bardzo rozcieńczony i klarowny. Dlatego woda wapienna dobrze nadaje się do wykrywania CO₂: kiedy gaz wejdzie do roztworu, tworzy się nierozpuszczalny CaCO₃, który robi biały osad.</p>
+<p>Dzieci często myślą, że „mleko wapienne" i „woda wapienna" to dwie nazwy na to samo. Różnica jest w ilości substancji. Mleko wapienne to zawiesina: za dużo Ca(OH)₂ jak na jego rozpuszczalność, więc część stoi w wodzie jako osad i całość jest mętna. Woda wapienna to roztwór: wszystko, co się rozpuściło, jest w cieczy, a nadmiar zostaje na dnie.</p>
+<p>Podobnie z „wapnem". Wapno palone (CaO) to ciało stałe, które reaguje z wodą gwałtownie i z wydzielaniem ciepła; po zgaszeniu staje się wapnem gaszonym Ca(OH)₂. Wapno palone nie jest wodorotlenkiem — ma wzór tlenku i jest jego reakcją z wodą zapisaną jako CaO + H₂O → Ca(OH)₂.</p>
+</div>
+</section>
+<section id="s2">
+<div class="part-heading"><span class="part-num">1b</span> Wykład — mleko wapienne: zawiesina, nie roztwór</div>
+<div class="card card-understand">
+<span class="card-label">Wykład — co zmienia się, gdy dosypujesz więcej wodorotlenku wapnia</span>
+<p>Weź wodę, dosypuj do niej wodorotlenek wapnia Ca(OH)₂ i mieszaj. Przez chwilę cała porcja znika w wodzie — powstaje roztwór, czyli klarowna woda wapienna. Ale rozpuszczalność Ca(OH)₂ jest mała: w 20 °C rozpuszcza się około 0,16 g na 100 g wody. Gdy dosypiesz więcej, nadmiar nie zniknie. Leży na dnie jako biały proszek, a ciecz nad nim jest mętna. Taka mieszanina to <strong>mleko wapienne</strong>.</p>
+<p>Ta sama substancja, ta sama woda — różnica tkwi tylko w ilości. Mleko wapienne to <strong>zawiesina</strong>: ciało stałe rozproszone w cieczy, które z czasem opada. Woda wapienna to <strong>roztwór</strong>: w pełni rozpuszczona substancja, klarowna, bez osadu. Dlatego nie wolno mówić „woda wapienna jest mętna" — mętność oznacza zawiesinę.</p>
+<p>Mleko wapienne ma zastosowania praktyczne. Bieli się nim ściany (dawna farba wapienna), a z wapna gaszonego, piasku i wody robi się zaprawę murarską. Zaprawa twardnieje, bo Ca(OH)₂ reaguje z CO₂ z powietrza: Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O. Ten sam CaCO₃ tworzy trwałą powłokę.</p>
+<p>Przy wprowadzaniu CO₂ do mleka wapiennego najpierw obserwujesz mętnienie (CaCO₃↓). Dalszy nadmiar CO₂ rozpuszcza osad jako wodorowęglan wapnia, Ca(HCO₃)₂, i mieszanina klaruje się. Wniosek konkursowy: klarowanie po nadmiarze CO₂ nie świadczy, że w probówce było „coś innego niż wapno".</p>
+</div>
+</section>
+<section id="wykl-metnienie">
+<div class="part-heading"><span class="part-num">2</span> Wykład — dlaczego mętnienie to nie zawsze CO₂</div>
+<figure class="lk-fig" data-klocek="probowki-odczyn" data-opt="{&quot;tuby&quot;: &quot;Woda wapienna:bezbarwny:bezbarwny:brak,+ CO2:bezbarwny:mleczny:osad,+ nadmiar CO2:mleczny:bezbarwny:brak&quot;}"><div class="lk-fig-body"></div><figcaption>Woda wapienna: mętnieje od CO₂, a nadmiar CO₂ rozpuszcza osad</figcaption></figure>
+<!-- OPIS: Trzy probówki z wodą wapienną pokazane po kolei: w pierwszej ciecz przezroczysta, w drugiej po przepuszczeniu CO₂ biały osad (mętnienie), w trzeciej po nadmiarze CO₂ mleczność znika. Wniosek: biały osad to CaCO₃; nadmiar CO₂ zamienia go w rozpuszczalny wodorowęglan, więc długie przepuszczanie gazu znosi mętnienie. -->
+<div class="card card-understand">
+<span class="card-label">Wykład — dwie przyczyny tej samej obserwacji</span>
+<p>Obserwacja „woda wapienna zmętniała" ma co najmniej dwie przyczyny:
+- <strong>Chemiczna:</strong> CO₂ reaguje z Ca(OH)₂ i tworzy CaCO₃, który jest nierozpuszczalny. Ta reakcja zachodzi w temperaturze pokojowej.
+- <strong>Termiczna:</strong> rozpuszczalność Ca(OH)₂ maleje z temperaturą. Po podgrzaniu nadmiar wodorotlenku przestaje się mieścić w roztworze i wysadza się jako drobny osad. Nie ma tu żadnego CO₂.</p>
+<p>Dlatego konkurs pyta w takich zadaniach: „Czy wiesz, co było przyczyną?". Wniosek „zachodzi reakcja z CO₂" jest poprawny tylko wtedy, gdy wykluczono podgrzewanie i gdy gaz faktycznie dopływał do roztworu. Przykład z lekcji LKO-KRZYWE (F3) pokazuje, że w zamkniętym naczyniu bez CO₂ mętnienie też może wystąpić.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — zawiesina czy roztwór?</span>
+<p>Zasada: jeśli po chwili z cieczy opada osad i ciecz jest mętna, to zawiesina. Jeśli ciecz jest klarowna, to roztwór — nawet gdy coś w niej rozpuszczono bardzo mało.</p>
+</div>
+</section>
+<section id="s3">
+<div class="part-heading"><span class="part-num">3</span> Wykład — dwie soda i dwa wapnie, których nie wolno zamieniać</div>
+<div class="card card-understand">
+<span class="card-label">Wykład — nazwy zwyczajowe a wzory</span>
+<p>Na konkursie nazwy zwyczajowe są mylące, więc zawsze odwołuj się do wzoru:
+- <strong>Kreda, wapień, marmur</strong> — to CaCO₃ w różnych postaciach (kreda jest miękka i porowata, marmur powstaje z wapienia w wysokiej temperaturze i ciśnieniu). W szkolnym zadaniu kredę można modelować jako czysty CaCO₃, jeżeli wyraźnie przyjęto takie założenie; osad CaCO₃ z probówki nie staje się przez to naturalną kredą.
+- <strong>Wapno palone (CaO)</strong> i <strong>wapno gaszone (Ca(OH)₂)</strong> — dwa różne związki; pierwszy to tlenek, drugi wodorotlenek.
+- <strong>Soda oczyszczona</strong> — wodorowęglan sodu NaHCO₃ (lekko zasadowy roztwór w wodzie, stosowany jako środek spożywczy); <strong>soda kalcynowana</strong> — węglan sodu Na₂CO₃ (silniej zasadowa). Zamiana nazw to typowa pułapka.
+- <strong>Wapń</strong> (pierwiastek Ca) to nie to samo co <strong>wapno</strong> (związek). Pytanie „z czego zbudowany jest związek?" wymaga wzoru, nie nazwy.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — mętnienie: zanim wpiszesz CO₂, wykluczyć podgrzanie</span>
+<p>Zanim napiszesz wniosek „to CO₂", zadaj dwa pytania: czy gaz faktycznie dopływał do roztworu i czy roztwór był podgrzewany? Jeśli na którekolwiek odpowiedź nie znasz — wniosek jest niepełny.</p>
+</div>
+</section>
+<section id="klinika">
+<div class="part-heading"><span class="part-num">4</span> Klinika — pary, które się mylą</div>
+<table class="klinika-table"><thead><tr><th>Pozór</th><th>Prawda</th><th>Dlaczego?</th></tr></thead><tbody><tr class="error-row"><td class="col-blad" data-label="Błąd">„Woda wapienna to woda z kredy."</td><td class="col-ok" data-label="Poprawa">Woda wapienna to roztwór Ca(OH)₂.</td><td data-label="Dlaczego">Nazwa pochodzi od wapnia, nie od węglanu.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Mleko wapienne i woda wapienna to to samo."</td><td class="col-ok" data-label="Poprawa">Mleko to zawiesina (mętna, osad), woda to roztwór (klarowna).</td><td data-label="Dlaczego">Różni je nadmiar substancji nad rozpuszczalnością.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Wapno palone to wodorotlenek."</td><td class="col-ok" data-label="Poprawa">Wapno palone to CaO (tlenek).</td><td data-label="Dlaczego">Wodorotlenek powstaje dopiero po zgaszeniu wodą.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Wapno palone i gaszone to jedna substancja."</td><td class="col-ok" data-label="Poprawa">Różnią się wzorem: CaO i Ca(OH)₂.</td><td data-label="Dlaczego">Zgaszenie jest reakcją z wodą.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Każde mętnienie wody wapiennej to CO₂."</td><td class="col-ok" data-label="Poprawa">Mętnienie może mieć przyczynę termiczną (Ca(OH)₂ jest mniej rozpuszczalny w cieple).</td><td data-label="Dlaczego">Wykluczyć podgrzewanie przed wnioskiem.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Po dłuższym przepuszczaniu CO₂ osad zostaje."</td><td class="col-ok" data-label="Poprawa">Osad znika, bo tworzy się rozpuszczalny Ca(HCO₃)₂.</td><td data-label="Dlaczego">Nadmiar CO₂ działa odwrotnie niż mała ilość.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Kreda, wapień i marmur to trzy różne związki."</td><td class="col-ok" data-label="Poprawa">To CaCO₃ w różnych postaciach.</td><td data-label="Dlaczego">Nazwa zależy od formy i pochodzenia, nie od wzoru.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Soda oczyszczona to Na₂CO₃."</td><td class="col-ok" data-label="Poprawa">Soda oczyszczona to NaHCO₃; Na₂CO₃ to soda kalcynowana.</td><td data-label="Dlaczego">Pomylenie nazw zmienia wzór i odczyn.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Wapń i wapno to to samo."</td><td class="col-ok" data-label="Poprawa">Wapń to pierwiastek Ca, wapno to związek wapnia.</td><td data-label="Dlaczego">Pytaj o wzór, nie o nazwę.</td></tr></tbody></table>
+<div class="exp-card"><h5>Doświadczenie 1 — Obieg wapna: trzy stacje jednego łańcucha</h5><div class="exp-grid"></div><p><strong>Problem:</strong> Czy jednym łańcuchem reakcji można wykazać, że wapno palone, wapno gaszone, woda wapienna i kreda to cztery mylące nazwy trzech powiązanych substancji?</p>
+<p><strong>Hipoteza:</strong> Wapno palone po dolaniu wody mocno się nagrzewa i przechodzi w wodorotlenek wapnia; jego roztwór mętnieje pod wpływem CO₂ (z oddechu albo z reakcji kredy z kwasem), tworząc biały osad węglanu wapnia.</p>
+<p><strong>Tryb:</strong> demonstracja nauczycielska (bez samodzielnego wykonywania przez ucznia; bez kontaktu ust z odczynnikami; nie ogrzewaj szczelnie zamkniętej zwykłej probówki).</p>
+<p><strong>Sprzęt:</strong> dwie zlewki, probówka, słomka, szklana różdżka, termometr, mała porcja wapna palonego, woda destylowana, rozcieńczony kwas solny, kawałek kredy, okulary i rękawice ochronne.</p>
+<p><strong>Przebieg:</strong>
+1. Do zlewki z małą porcją wapna palonego dolej kilka mililitrów wody; włóż termometr i obserwuj bez pochylania się nad naczyniem.
+2. Po ostygnięciu dolej resztę wody, zamieszaj i przesącz — przesącz to woda wapienna.
+3. (demonstracja nauczycielska) Przepuść przez przesącz gaz z wydychanego powietrza, kierując go rurką do osobnej probówki z wodą wapienną, i obserwuj. Uczeń nie wykonuje tej części samodzielnie i nie ma kontaktu ust z odczynnikami.
+4. W drugiej probówce wrzuć kawałek kredy i dodaj kilka kropel kwasu solnego; wydzielający się gaz kieruj do świeżej porcji wody wapiennej.</p>
+<p><strong>Obserwacje:</strong> (1) przy gaszeniu woda gwałtownie się nagrzewa, tworzy się para, grudki pękają — wapno „pali"; (2) przesącz jest przejrzysty; (3) oddech wywołuje mleczne mętnienie; (4) nad kredą w kwasie lecą bąbelki, a woda wapienna mętnieje.</p>
+<p><strong>Wniosek:</strong> CaO + H₂O → Ca(OH)₂ (egzotermiczna); Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O; CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂↑. Trzy różne substancje (CaO, Ca(OH)₂, CaCO₃) kryją się pod czterema mylącymi nazwami, a obieg można zamknąć: kreda → wapno palone → wapno gaszone → kreda.</p>
+<p><strong>Bezpieczeństwo:</strong> CaO i Ca(OH)₂ są żrące; gaszenie wydziela dużo ciepła i może pryskać — tylko mała porcja, okulary i rękawice, twarz z dala od zlewki; pyłu wapna nie wdychać; z kwasem pracować ostrożnie; po doświadczeniu dokładnie umyć ręce.</p></div>
+</section>
+<section id="zadania">
+<div class="part-heading"><span class="part-num">5</span> Ćwiczenia — formy konkursu LKO</div>
+<div class="card card-exam">
+<span class="card-label">Zadania P1–P2 (3 pkt) — wybór i prawda–fałsz</span>
+<p><strong>P1. Wybór (1 pkt).</strong> Która substancja jest zawiesiną, a nie roztworem?
+a) woda wapienna  b) mleko wapienne  c) roztwór soli kuchennej  d) woda destylowana</p>
+<p><strong>P2. Prawda–fałsz (2 pkt).</strong>
+a) Wapno palone ma wzór Ca(OH)₂. ____
+b) Mętnienie wody wapiennej po podgrzaniu nie musi być spowodowane CO₂. ____</p>
+</div>
+<details class="answer"><summary>Klucz — P1–P2</summary>
+<p>P1: <strong>b</strong> (mleko wapienne — zawiesina; woda wapienna i sól kuchenna to roztwory, woda destylowana to czysta substancja). P2: a) <strong>fałsz</strong> (wzór CaO); b) <strong>prawda</strong> (rozpuszczalność Ca(OH)₂ maleje z temperaturą).</p>
+</details>
+<div class="card card-exam">
+<span class="card-label">Zadania P3–P5 (5 pkt) — równania, obserwacje, analiza wniosku</span>
+<p><strong>P3. Otwarte krótkie (2 pkt).</strong> Zapisz równanie reakcji wapna palonego z wodą i określ, czy reakcja wydziela ciepło.</p>
+<p><strong>P4. Opis obserwacji (2 pkt).</strong> Do wody wapiennej przepuszczano CO₂ tak długo, aż osad zniknął. Opisz obserwacje i zapisz równanie reakcji, która spowodowała zniknięcie osadu.</p>
+<p><strong>P5. Analiza zdania (1 pkt).</strong> Uczeń napisał: „Woda wapienna zmętniała, więc w probówce był wapień." Wskaż błąd w tym wniosku.</p>
+</div>
+<details class="answer"><summary>Klucz — P3–P5</summary>
+<p>P3: CaO + H₂O → Ca(OH)₂; reakcja <strong>egzotermiczna</strong> (wydziela ciepło). P4: najpierw biały osad CaCO₃ (Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O); w nadmiarze CO₂ osad znika, bo powstaje rozpuszczalny wodorowęglan (CaCO₃ + CO₂ + H₂O → Ca(HCO₃)₂). P5: wniosek o wapieniu nie wynika z mętnienia — mętnienie wskazuje na CO₂ (lub podgrzanie), a nie na obecność węglanu w probówce.</p>
+</details>
+<div class="card card-exam">
+<span class="card-label">Zadanie P6 (5 pkt) — Trójka wapna: nazwy, wzory, równania</span>
+<p>(a) Przyporządkuj wzory do nazw: CaO, Ca(OH)₂, CaCO₃ — wapno palone, wapno gaszone, kreda.
+(b) Zapisz równanie wypalania wapienia.
+(c) Zapisz równanie gaszenia wapna palonego i podaj zjawisko towarzyszące.
+(d) Zapisz równanie mętnienia wody wapiennej i nazwij osad.</p>
+</div>
+<details class="answer"><summary>Klucz — P6</summary>
+<p>(a) CaO — wapno palone; Ca(OH)₂ — wapno gaszone; CaCO₃ — kreda (1,5 pkt: po 0,5 za parę).
+(b) CaCO₃ → CaO + CO₂↑ (1 pkt).
+(c) CaO + H₂O → Ca(OH)₂; reakcja silnie egzotermiczna — mieszanina mocno się nagrzewa (1 pkt: 0,5 równanie, 0,5 efekt cieplny).
+(d) Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O; osad to węglan wapnia (kreda) (1,5 pkt: 1 równanie, 0,5 nazwa osadu).</p>
+</details>
+<div class="card card-exam">
+<span class="card-label">Zadanie P7 (4 pkt) — Rozstrzyganie mylących nazw: kreda, gips, mleko wapienne</span>
+<p>(a) Czym różni się woda wapienna od mleka wapiennego?
+(b) Kreda, wapień i marmur — podaj wspólny wzór i wyjaśnij jednym zdaniem, czym te skały się różnią.
+(c) Rozstrzygnij: „Kreda i gips to ta sama substancja" — podaj wzory obu.
+(d) Masz dwa białe proszki: kredę i gips. Zaprojektuj próbę chemiczną, która je odróżni, i opisz obserwację dla obu.</p>
+</div>
+<details class="answer"><summary>Klucz — P7</summary>
+<p>(a) Woda wapienna — przejrzysty roztwór Ca(OH)₂; mleko wapienne — mętna zawiesina Ca(OH)₂ (po zamieszaniu zawiesina jest mętna; po opadnięciu części stałej ciecz nad osadem może być klarowna) (1 pkt).
+(b) Wszystkie to CaCO₃; różnią się pochodzeniem i budową (kreda miękka, marmur twardy, zbudowany z kryształów) (1 pkt: 0,5 wzór, 0,5 różnice).
+(c) Fałsz: kreda to węglan wapnia CaCO₃, gips to siarczan(VI) wapnia CaSO₄·2H₂O — dwie różne sole (1 pkt).
+(d) Do obu proszków dodać rozcieńczony kwas solny: kreda — intensywne bąbelki CO₂ (CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂↑); gips — brak bąbelków (1 pkt).</p>
+</details>
+<details class="adv"><summary>Zadanie dodatkowe A (3 pkt) — woda czy mleko wapienne? <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Do 100 g wody wsypano 0,20 g wodorotlenku wapnia Ca(OH)₂. Rozpuszczalność Ca(OH)₂ w 20 °C wynosi 0,16 g na 100 g wody.
+(a) Czy otrzymano wodę wapienną, czy mleko wapienne? Uzasadnij liczbami. (b) Oblicz masę Ca(OH)₂, która pozostanie jako osad. (c) Ile gramów wody należy dolać, aby cały Ca(OH)₂ się rozpuścił?</p>
+</div></details>
+<details class="answer"><summary>Klucz — zadanie dodatkowe A</summary>
+<p>(a) 0,20 g > 0,16 g — nadmiar nie rozpuści się, więc powstaje <strong>mleko wapienne</strong> (zawiesina) (1 pkt). (b) 0,20 − 0,16 = <strong>0,04 g</strong> osadu (1 pkt). (c) Na 0,20 g potrzeba 0,20 · 100 ÷ 0,16 = 125 g wody — dolać <strong>25 g</strong> (1 pkt). <em>Uwaga: wynik zależy od przyjętej wartości rozpuszczalności; przy innym tablicowym zaokrągleniu wynik zmienia się w drugiej cyfrze znaczącej.</em></p>
+</details>
+<details class="adv"><summary>Zadanie dodatkowe B (3 pkt) — zmętnienie bez gazu <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Uczeń podgrzał nasyconą w 20 °C wodę wapienną do 60 °C w zamkniętej probówce, bez wprowadzania gazu. Roztwór zmętniał. Zapisał wniosek: „W probówce był CO₂ z powietrza, więc zaszła reakcja z Ca(OH)₂."
+(a) Podaj prawdziwą przyczynę mętnienia. (b) Uzasadnij, dlaczego ta przyczyna jest możliwa. (c) Zaproponuj dwie próby, które odróżnią obie przyczyny.</p>
+</div></details>
+<details class="answer"><summary>Klucz — zadanie dodatkowe B</summary>
+<p>(a) Przyczyna <strong>termiczna</strong>: rozpuszczalność Ca(OH)₂ maleje z temperaturą, więc nadmiar wysadza się jako osad (1 pkt). (b) Roztwór był nasycony w 20 °C; w wyższej temperaturze nie mieści już tyle Ca(OH)₂, więc nadmiar wypada — bez udziału CO₂ (1 pkt). (c) Próba A: nasycona woda wapienna ogrzana bez gazu — mętnienie potwierdza przyczynę termiczną; próba B: woda wapienna w temperaturze pokojowej z CO₂ — mętnienie potwierdza reakcję z CO₂ (1 pkt).</p>
+</details>
+<details class="adv"><summary>Zadanie dodatkowe C (5 pkt) — Gdzie uczeń zgubił węgiel? <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Uczeń wyjaśnił mętnienie wody wapiennej tak: „CO₂ zamienia wodorotlenek wapnia w wapno palone, które jest nierozpuszczalne i wypada jako osad: Ca(OH)₂ + CO₂ → CaO↓ + H₂O."
+(a) Sprawdź bilans atomów w zapisie ucznia — którego pierwiastka brakuje po stronie produktów i jak to się ma do prawa zachowania masy?
+(b) Zapisz poprawne równanie i podaj właściwą nazwę osadu.
+(c) Wyjaśnij, która para nazw się pomieszała i dlaczego CaO nie może powstać w tych warunkach.
+(d) Zaproponuj próbę potwierdzającą tożsamość osadu i opisz oczekiwaną obserwację (dla osadu prawdziwego i dla „osadu" ucznia).</p>
+</div></details>
+<details class="answer"><summary>Klucz — zadanie dodatkowe C</summary>
+<p>(a) Po lewej stronie jest 1 atom węgla (w CO₂), po prawej — 0. Równanie ucznia narusza prawo zachowania masy: węgiel „zniknął" (2 pkt: 1 wskazanie braku C, 1 policzenie bilansu).
+(b) Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O; osad to węglan wapnia (kreda) (1 pkt).
+(c) Uczeń pomieszał wapno palone (CaO) z kredą/węglanem (CaCO₃). CaO powstaje w wysokiej temperaturze pieca wapiennego (wypalanie wapienia) — nie może wytrącić się z zimnego roztworu wodnego (1 pkt).
+(d) Do osadu dodać kwas solny: prawdziwy osad (CaCO₃) bąbelkuje — wydziela się CO₂; gdyby osadem było CaO, rozpuściłby się bez bąbelków (CaO + 2HCl → CaCl₂ + H₂O) (1 pkt).</p>
+</details>
+<details class="adv"><summary>Zadanie dodatkowe D (7 pkt) — Obieg wapna od kredy do kredy <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Dane (masy molowe, do korzystania): M(CaCO₃) = 100; M(CaO) = 56; M(Ca(OH)₂) = 74; M(CO₂) = 44; M(H₂O) = 18 g/mol. Stosunki masowe w równaniach wynikają z tych liczb.
+Równania: (1) CaCO₃ → CaO + CO₂↑ (wypalanie); (2) CaO + H₂O → Ca(OH)₂ (gaszenie); (3) Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O (mętnienie).
+Całkowicie wypalono 25 g czystej kredy.
+(a) Ze stosunku masowego równania (1) oblicz masę otrzymanego CaO i masę uciekłego CO₂.
+(b) CaO zagaszono. Ze stosunku masowego równania (2) oblicz masę wapna gaszonego i masę pochłoniętej wody. Wyjaśnij, dlaczego masa materiału wzrosła.
+(c) Całe wapno gaszone przerobiono na mleko wapienne i przepuszczono dokładnie 11 g CO₂. Ze stosunku masowego równania (3) oblicz masę powstałego osadu CaCO₃.
+(d) W jednym–dwóch zdaniach podsumuj cykl: z jakiej masy do jakiej masy „wróciła" substancja i co to mówi o obiegu wapna.</p>
+</div></details>
+<details class="answer"><summary>Klucz — zadanie dodatkowe D</summary>
+<p>(a) Stosunek 100 : 56 : 44. Z 25 g: CaO = 25 · 56/100 = <strong>14 g</strong>; CO₂ = 25 · 44/100 = <strong>11 g</strong> (2 pkt: po 1). Sprawdzenie: 14 + 11 = 25 ✔.
+(b) Stosunek 56 : 18 : 74. Z 14 g CaO: H₂O = 14 · 18/56 = <strong>4,5 g</strong>; Ca(OH)₂ = 14 · 74/56 = <strong>18,5 g</strong> (2 pkt: po 0,75 za masy, 0,5 za wyjaśnienie). Masa wzrosła o masę wody włączonej w skład wodorotlenku (14 + 4,5 = 18,5 ✔).
+(c) Stosunek 74 : 44 : 100. Z 18,5 g Ca(OH)₂ potrzeba CO₂ = 18,5 · 44/74 = <strong>11 g</strong> (dokładnie tyle, ile uciekło przy wypalaniu) i powstaje CaCO₃ = 18,5 · 100/74 = <strong>25 g</strong> (2 pkt).
+(d) Z 25 g kredy po pełnym cyklu otrzymano z powrotem 25 g CaCO₃ — obieg zamknął się: kreda → wapno palone → wapno gaszone → kreda; CO₂ z wypalania dokładnie wystarczył do wytrącenia węglanu z powrotem (1 pkt).</p>
+<p><em>Notka na przyszłość (bez wymogu znajomości): przy nadmiarze CO₂ osad zaczęłoby się rozpuszczać, bo powstaje rozpuszczalny wodorowęglan wapnia (CaCO₃ + CO₂ + H₂O → Ca(HCO₃)₂) — wodorowęglany poznasz w kolejnych etapach.</em></p>
+</details>
+</section>
+<section id="s4">
+<div class="part-heading"><span class="part-num">6</span> Doświadczenie modelowe — rozróżnij woda wapienną od mleka wapiennego</div>
+<div class="card card-core">
+<span class="card-label">Doświadczenie modelowe (opis, bez wykonywania)</span>
+<p><strong>Cel:</strong> odróżnić roztwór od zawiesiny po wyglądzie i zachowaniu.
+<strong>Odczynniki:</strong> woda wapienna (klarowna), mleko wapienne (mętne).
+<strong>Przebieg:</strong> przelać każdy płyn do probówki; obserwować po 5 minutach; przepuścić CO₂ do obu.
+<strong>Obserwacje:</strong> woda wapienna pozostaje klarowna i mętnieje po CO₂; mleko wapienne jest mętne od początku, a osad zostaje na dnie.
+<strong>Wniosek:</strong> wytrącenie drobnej fazy stałej powoduje, że cała zawartość naczynia nie jest już jednorodnym roztworem — może to być zawiesina lub układ roztwór + osad. Sama mętność nie identyfikuje jednak rodzaju substancji. Woda wapienna jest roztworem; mleko wapienne zawiesiną.</p>
+</div>
+</section>
+<section id="s5">
+<div class="part-heading"><span class="part-num">7</span> Mity</div>
+<div class="myth-grid"><div class="myth"><p class="myth-x"><span>Mit</span>„Woda wapienna zawsze mętnieje, gdy jest w niej wapień."</p><p class="myth-ok"><span>Poprawnie</span>Mętnienie wynika z CO₂ lub z podgrzania, nie z obecności wapienia w roztworze.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Wapno palone i gaszone to dwie nazwy jednej substancji."</p><p class="myth-ok"><span>Poprawnie</span>CaO to tlenek, Ca(OH)₂ to wodorotlenek; to dwa różne związki.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Mętna woda zawsze jest zawiesiną."</p><p class="myth-ok"><span>Poprawnie</span>Mętność może być też efektem wysadzania się osadu po podgrzaniu roztworu nasyconego.</p></div></div>
+</section>
+<section id="s6">
+<div class="part-heading"><span class="part-num">8</span> Słownik</div>
+<dl><div class="def-item"><dt>Woda wapienna</dt><dd>roztwór wodorotlenku wapnia Ca(OH)₂ w wodzie, klarowny; służy do wykrywania CO₂</dd></div><div class="def-item"><dt>Mleko wapienne</dt><dd>zawiesina Ca(OH)₂ w wodzie; mętna, z osadem na dnie</dd></div><div class="def-item"><dt>Wapno palone</dt><dd>tlenek wapnia CaO, powstający z prażenia wapienia</dd></div><div class="def-item"><dt>Wapno gaszone</dt><dd>wodorotlenek wapnia Ca(OH)₂, powstający z CaO i wody</dd></div><div class="def-item"><dt>Kreda, wapień, marmur</dt><dd>węglan wapnia CaCO₃ w różnych formach</dd></div><div class="def-item"><dt>Wodorowęglan wapnia</dt><dd>związek Ca(HCO₃)₂; rozpuszczalny w wodzie, tworzy się przy nadmiarze CO₂</dd></div><div class="def-item"><dt>Soda oczyszczona</dt><dd>wodorowęglan sodu NaHCO₃</dd></div><div class="def-item"><dt>Soda kalcynowana</dt><dd>węglan sodu Na₂CO₃</dd></div><div class="def-item"><dt>Gips</dt><dd>siarczan(VI) wapnia CaSO₄·2H₂O (wodzian); z kwasem solnym nie bąbelkuje — odróżnienie od kredy.</dd></div><div class="def-item"><dt>Wypalanie wapienia</dt><dd>rozkład termiczny węglanu wapnia: CaCO₃ → CaO + CO₂↑ (w piecu wapiennym).</dd></div><div class="def-item"><dt>Próba na CO₂</dt><dd>mętnienie wody wapiennej po przepuszczeniu gazu — potwierdza obecność CO₂.</dd></div><div class="def-item"><dt>Osad</dt><dd>nierozpuszczalny produkt reakcji wydzielający się z roztworu; w równaniach oznacza się strzałką w dół (↓).</dd></div><div class="def-item"><dt>Żywe srebro</dt><dd>potoczna nazwa rtęci — jedynego metalu ciekłego w temperaturze pokojowej.</dd></div><div class="def-item"><dt>Grafit</dt><dd>pierwiastkowa odmiana węgla; rdzeń ołówka — nazwa „ołówek” jest historycznie myląca.</dd></div></dl>
+<div class="card card-understand">
+<span class="card-label">Uzupełnienie: dwa możliwe osady</span>
+<p>Po wprowadzeniu CO₂ do wody wapiennej powstaje CaCO₃: Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O.
+Przy ogrzaniu nasyconego roztworu, bez dopływu CO₂, może natomiast wydzielić się Ca(OH)₂, ponieważ jego rozpuszczalność maleje z temperaturą. To inna substancja i inna przyczyna mętności.
+Nie wystarczy zapisać „biały osad”. Trzeba ustalić warunki jego powstania.</p>
+</div>
+</section>
+<section id="fiszki">
+<div class="part-heading">Fiszki</div>
+<div id="flashcards" class="flashcard-grid"><button class="flashcard" type="button"><span class="front">Woda wapienna</span><span class="back">roztwór Ca(OH)₂ w wodzie, klarowny</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Mleko wapienne</span><span class="back">zawiesina Ca(OH)₂ w wodzie: mętna, z osadem na dnie</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Wapno palone</span><span class="back">CaO — tlenek wapnia</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Wapno gaszone</span><span class="back">Ca(OH)₂ — wodorotlenek, powstaje z CaO i wody</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Kreda, wapień, marmur</span><span class="back">CaCO₃ w różnych formach</span><span class="card-tag tag-basic">podstawa</span></button><button class="flashcard" type="button"><span class="front">Mętnienie wody wapiennej</span><span class="back">przyczyna chemiczna (CO₂) albo termiczna (podgrzanie)</span><span class="card-tag tag-understand">ROZUMIENIE</span></button><button class="flashcard" type="button"><span class="front">Nadmiar CO₂ w wodzie wapiennej</span><span class="back">osad znika: powstaje rozpuszczalny Ca(HCO₃)₂</span><span class="card-tag tag-understand">ROZUMIENIE</span></button><button class="flashcard" type="button"><span class="front">Soda oczyszczona vs kalcynowana</span><span class="back">NaHCO₃ vs Na₂CO₃</span><span class="card-tag tag-exam">KONKURS</span></button><button class="flashcard" type="button"><span class="front">Jak otrzymuje się wapno palone?</span><span class="back">wypalanie wapienia/kredy: CaCO₃ → CaO + CO₂↑</span><span class="card-tag tag-wapno"></span></button><button class="flashcard" type="button"><span class="front">Równanie mętnienia wody wapiennej?</span><span class="back">Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O</span><span class="card-tag tag-gazy"></span></button><button class="flashcard" type="button"><span class="front">Jak odróżnić kredę od gipsu?</span><span class="back">kwas solny: kreda (CaCO₃) bąbelkuje CO₂, gips (siarczan wapnia) nie</span><span class="card-tag tag-nazwy"></span></button><button class="flashcard" type="button"><span class="front">Co jest w rdzeniu ołówka?</span><span class="back">grafit — pierwiastkowa odmiana węgla; „ołów” to myląca nazwa historyczna</span><span class="card-tag tag-nazwy"></span></button><button class="flashcard" type="button"><span class="front">Wzór sody oczyszczonej?</span><span class="back">NaHCO₃ — wodorowęglan sodu (soda oczyszczona; proszek do pieczenia jest mieszaniną, zwykle zawierającą także składniki kwaśne i skrobię)</span><span class="card-tag tag-nazwy"></span></button><button class="flashcard" type="button"><span class="front">Wzór sody kalcynowanej?</span><span class="back">Na₂CO₃ — węglan sodu</span><span class="card-tag tag-nazwy"></span></button></div>
+</section>
+<section id="test">
+<div class="part-heading">Test krótki</div>
+<p>? Która substancja jest zawiesiną?
++ mleko wapienne
+- woda wapienna
+- roztwór soli kuchennej
+- woda destylowana</p>
+<p>? Wzór wapna palonego:
++ CaO
+- Ca(OH)₂
+- CaCO₃
+- Ca</p>
+<p>? Mętnienie wody wapiennej po podgrzaniu:
++ może mieć przyczynę termiczną
+- zawsze wynika z CO₂
+- zawsze wynika z obecności wapienia
+- nigdy nie występuje</p>
+<p>? Soda oczyszczona to:
++ NaHCO₃
+- Na₂CO₃
+- NaOH
+- Na₂SO₄</p>
+<p>? Po długim przepuszczaniu CO₂ przez wodę wapienną osad:
++ znika
+- pogrubia się
+- zmienia barwę na niebieską
+- nie zmienia się</p>
+</section>
+<section id="s7">
+<div class="part-heading">Ciekawostki</div>
+<div class="card card-extra">
+<span class="card-label">Błonka na wodzie wapiennej</span>
+<p>Woda wapienna wystawiona na powietrze pokrywa się cienką błonką węglanu wapnia. Dlatego do doświadczenia bierze się świeżo przygotowaną wodę wapienną, a nie stary roztwór ze stojącego naczynia.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Gaszenie wapna może doprowadzić do wrzenia wody</span>
+<p>Wapno palone CaO reaguje z wodą gwałtownie i mocno się przy tym nagrzewa, i potrafi zagotować wodę przy większej ilości. Stąd nazwa „gaszenie wapna": tlenek zostaje „ugaszony" wodą w wodorotlenek.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Wapnowanie gleb</span>
+<p>Kwaśne gleby neutralizuje się wapnem — węglanem wapnia lub wodorotlenkiem wapnia — by podnieść pH. Ten sam chemizm, co w probówce: kwasowość neutralizują zasadowe składniki materiału wapnującego, np. węglany i wodorotlenki. Sam jon Ca²⁺ nie jest zasadą zobojętniającą H⁺.</p>
+</div>
+</section>
+<section id="s8">
+<div class="part-heading"><span class="part-num">9</span> Źródła</div>
+<div class="card card-core">
+<span class="card-label">Źródła</span>
+<ol>
+<li><strong>LibreTexts, „Calcium Hydroxide"</strong> (pobrane 2026-10-13): rozpuszczalność Ca(OH)₂ w 20 °C — 0,16 g / 100 g wody; rozpuszczalność maleje ze wzrostem temperatury.</li>
+<li><strong>Wynik wyszukiwania: LibreTexts, „Crystallization of Sodium Acetate from a Supersaturated Solution"</strong> — nie pobrano pełnego tekstu; wskazuje na podobną logikę zjawisk przesycenia (w tej lekcji nieużyta).</li>
+<li>Reakcje CaO + H₂O, Ca(OH)₂ + CO₂, osad rozpuszczający się w nadmiarze CO₂ i rozkład wodorowęglanów — <strong>ogólna wiedza chemiczna szkolna</strong>, nie potwierdzona osobnym źródłem w tej sesji; do sprawdzenia w podręczniku przed użyciem na konkursie.</li>
+</ol>
+</div>
+<details class="lk-log"><summary>LOG ZMIANY — 2026-10-13</summary>
+<p><strong>Źródło:</strong> zapis na prośbę autora — pułapki z pytań, które uczniowie najczęściej mylą (woda wapienna, mleko wapienne, wapno palone i gaszone, kreda, soda, wapń/wapno).</p>
+<p><strong>Zawiera:</strong> minimum (8 pkt), pytanie przewodnie, pojęcia, dwa wykłady (dwie wody i dwa wapna; dwie przyczyny mętnienia), wykład o nazwach zwyczajowych, klinikę (9 pozycji), pięć zadań z kluczem, doświadczenie modelowe, mity, słownik, źródła.</p>
+<p><strong>Do sprawdzenia przed W1:</strong> reakcje z ogólnej wiedzy szkolnej (pkt 3 źródeł); rozpuszczalność 0,16 g z jednego źródła (w innych opracowaniach spotyka się 0,17); klucz P4 — równanie rozpuszczania osadu w nadmiarze CO₂.</p>
+</details>
+</section>
+<footer class="footer"><p><strong>CHEMIA LKO-PUŁAPKI · 2026-10-13 · bez audytu W1</strong></p></footer>
+</main>
+<script>
+/* KLOCKI — lekkie komponenty wielokrotnego użytku dla lekcji (bez silnika).
+   Każdy klocek: KLOCKI.def(nazwa, {opis, dane, rysuj(canvas, stan, t)}) — rejestr,
+   KLOCKI.montuj(host, nazwa, opcje) — tworzy canvas, autostart gdy widoczny,
+   klik zatrzymuje/wznawia. Lekcja wymienia klocki w manifeście (klocki/manifest). */
+(function (g) {
+  var reg = {};
+  function def(nazwa, k) { reg[nazwa] = k; }
+  function montuj(host, nazwa, opc) {
+    var k = reg[nazwa];
+    if (!k) { host.textContent = 'Brak klocka: ' + nazwa; return null; }
+    opc = Object.assign({}, k.domyslne || {}, opc || {});
+    if (k.html) { host.innerHTML = ''; k.html(host, opc); return null; }
+    var c = document.createElement('canvas');
+    c.width = opc.szer || 480; c.height = opc.wys || 300;
+    c.style.width = '100%'; c.style.maxWidth = c.width + 'px'; c.style.height = 'auto';
+    c.setAttribute('role', 'img');
+    c.setAttribute('aria-label', (opc.opis || k.opis || nazwa));
+    host.innerHTML = ''; host.appendChild(c);
+    var stan = Object.assign({}, k.stan0 ? k.stan0(opc) : {}, {opc: opc});
+    var ctx = c.getContext('2d'), t0 = performance.now(), grane = false, id = null;   // pętla rusza przez start() (IO albo od razu)
+    function klatka(now) {
+      try { k.rysuj(ctx, c.width, c.height, stan, (now - t0) / 1000, opc); } catch (e) { }
+      if (grane) id = requestAnimationFrame(klatka);
+    }
+    function start() { if (!grane) { grane = true; t0 = performance.now() - (stan._t || 0) * 1000; id = requestAnimationFrame(klatka); } }
+    function stop() { grane = false; if (id) cancelAnimationFrame(id); }
+    c.addEventListener('click', function () { grane ? stop() : start(); });
+    if ('IntersectionObserver' in g) {
+      var io = new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? start() : stop(); }); });
+      io.observe(c);
+    } else { start(); }
+    k.rysuj(ctx, c.width, c.height, stan, 0, opc);
+    return {stop: stop, start: start, stan: stan, canvas: c};
+  }
+  g.KLOCKI = {def: def, montuj: montuj, nazwy: function () { return Object.keys(reg); }};
+})(window);
+
+/* KLOCKI — wspólne narzędzia (kolejność: pierwsze w manifeście). Wyciągnięte z animacji P01. */
+/* ---------------------------- narzędzia ---------------------------- */
+var RM = !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
+function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+function sm(v) { v = clamp(v, 0, 1); return v * v * (3 - 2 * v); }
+function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+function hex2rgb(h) { var n = parseInt(h.slice(1), 16); return [n >> 16 & 255, n >> 8 & 255, n & 255]; }
+function rgba(h, a) { var c = hex2rgb(h); return 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ',' + a + ')'; }
+function mixHex(a, b, k) {
+  var A = hex2rgb(a), B = hex2rgb(b);
+  return '#' + [0, 1, 2].map(function (i) { return ('0' + Math.round(A[i] + (B[i] - A[i]) * k).toString(16)).slice(-2); }).join('');
+}
+function rr(x, a, b, w, h, r) {
+  x.beginPath(); x.moveTo(a + r, b); x.arcTo(a + w, b, a + w, b + h, r); x.arcTo(a + w, b + h, a, b + h, r);
+  x.arcTo(a, b + h, a, b, r); x.arcTo(a, b, a + w, b, r); x.closePath();
+}
+
+
+/* ---------------------------- pętla animacji ---------------------------- */
+var uchwyty = [], rafId = 0, ostatni = 0;
+function petla(now) {
+  var dt = Math.min(.05, (now - ostatni) / 1000); ostatni = now;
+  for (var i = 0; i < uchwyty.length; i++) uchwyty[i].krok(dt);
+  rafId = uchwyty.length ? requestAnimationFrame(petla) : 0;
+}
+function wlacz(h) { if (uchwyty.indexOf(h) < 0) uchwyty.push(h); if (!rafId) { ostatni = performance.now(); rafId = requestAnimationFrame(petla); } }
+function wylacz(h) { var i = uchwyty.indexOf(h); if (i >= 0) uchwyty.splice(i, 1); }
+function podepnij(canvas, h) {
+  h.rysuj();
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? wlacz(h) : wylacz(h); }); }, {threshold: .05}).observe(canvas);
+  } else wlacz(h);
+}
+
+
+function parsujListe(txt, dozwolone, domyslne) {
+  var l = String(txt || '').split(',').map(function (s) { return s.trim(); }).filter(function (s) { return dozwolone[s]; });
+  return (l.length ? l : domyslne).slice(0, 3);
+}
+
+
+/* Wybór pierwiastka: tylko symbole, a znacznik ▸ pokazuje, że lista się rozwija (bez pełnych nazw obok). */
+function wyborSymbole(grupy, start, onChange, etykieta) {
+  var box = el('details', 'wyb-sym'), sum = el('summary', null), cur = el('span', 'wyb-cur', start);
+  sum.appendChild(cur); sum.appendChild(el('span', 'wyb-tri', '▸')); box.appendChild(sum);
+  var lst = el('div', 'wyb-lista'), btns = [];
+  lst.setAttribute('role', 'listbox'); lst.setAttribute('aria-label', etykieta || 'Wybór pierwiastka');
+  var NAG = {1: 'Litowce', 2: 'Berylowce', 3: 'Tlenki berylowców'};
+  Object.keys(grupy).forEach(function (g) {
+    var w = el('div', 'wyb-grupa'); w.appendChild(el('span', 'wyb-g', NAG[g] || ('grupa ' + g)));
+    grupy[g].forEach(function (s) {
+      var b = el('button', 'wyb-sy', s); b.type = 'button'; b.setAttribute('data-sym', s);
+      b.setAttribute('title', cap(NAZ[SYM.indexOf(s)] || s));
+      b.addEventListener('click', function () { ustaw(s); box.open = false; onChange(s); });
+      w.appendChild(b); btns.push(b);
+    });
+    lst.appendChild(w);
+  });
+  box.appendChild(lst);
+  function ustaw(s) { cur.textContent = s; btns.forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-sym') === s ? 'true' : 'false'); }); }
+  ustaw(start);
+  return {el: box, ustaw: ustaw};
+}
+
+/* KLOCEK: probowki-odczyn — probówki przed i po dodaniu odczynnika (barwa, osad, pęcherzyki gazu).
+   Opcja tuby: lista probówek oddzielona przecinkami; w każdej: etykieta:kolor_przed:kolor_po:efekt
+     kolory: bezbarwny, pomaranczowy, mleczny, niebieski, szafirowy, bialy, fioletowy, zielony
+     efekt:  osad (cząstki opadają), gaz (pęcherzyki unoszą się), brak
+   Przykład: tuby="Kontrola:pomaranczowy:pomaranczowy:brak,Eten:pomaranczowy:bezbarwny:brak"
+   Animacja w cyklu 7 s: przed → przejście → po. Klik zatrzymuje/wznawia (montuj). */
+(function () {
+  var KOL = {
+    bezbarwny: '#e0f2fe', pomaranczowy: '#f97316', mleczny: '#cbd5e1', niebieski: '#60a5fa',
+    szafirowy: '#1e3a8a', bialy: '#f8fafc', fioletowy: '#7e22ce', zielony: '#16a34a'
+  };
+  function hex(h) { var n = parseInt(h.slice(1), 16); return [n >> 16 & 255, n >> 8 & 255, n & 255]; }
+  function mieszaj(a, b, k) {
+    var A = hex(a), B = hex(b);
+    return 'rgb(' + [0, 1, 2].map(function (i) { return Math.round(A[i] + (B[i] - A[i]) * k); }).join(',') + ')';
+  }
+  function kol(n) { return KOL[n] || KOL.bezbarwny; }
+  function probowki(s) {
+    return String(s || '').split(',').map(function (t) {
+      var p = t.split(':').map(function (v) { return v.trim(); });
+      return {etyk: p[0] || '', przed: p[1] || 'bezbarwny', po: p[2] || p[1] || 'bezbarwny', efekt: p[3] || 'brak'};
+    }).filter(function (p) { return p.etyk; }).slice(0, 4);
+  }
+  var IND = {'0': '₀', '1': '₁', '2': '₂', '3': '₃', '4': '₄', '5': '₅', '6': '₆', '7': '₇', '8': '₈', '9': '₉'};
+  function indeksy(s) {
+    return String(s).replace(/([A-Za-z\)])(\d+)/g, function (_, a, d) {
+      return a + d.split('').map(function (c) { return IND[c]; }).join('');
+    });
+  }
+  function sm(v) { v = Math.max(0, Math.min(1, v)); return v * v * (3 - 2 * v); }
+
+  KLOCKI.def('probowki-odczyn', {
+    opis: 'Probówki przed i po dodaniu odczynnika: zmiana barwy, opadający osad lub pęcherzyki gazu.',
+    domyslne: {tuby: 'Kontrola:bezbarwny:bezbarwny:brak,Woda wapienna + CO₂:bezbarwny:mleczny:osad', szer: 480, wys: 300},
+    stan0: function () { return {}; },
+    rysuj: function (x, w, h, s, t, opc) {
+      var tuby = probowki(opc.tuby);
+      var n = tuby.length;
+      x.fillStyle = '#ffffff'; x.fillRect(0, 0, w, h);
+      if (!n) return;
+      var cykl = t % 7;
+      var p = sm((cykl - 2) / 1.5);                 // 0 = przed, 1 = po
+      var gap = 16, tw = Math.min(96, (w - 30 - (n - 1) * gap) / n);
+      var top = 30, bot = h - 62, x0 = (w - (n * tw + (n - 1) * gap)) / 2;
+      x.textAlign = 'center'; x.textBaseline = 'middle';
+
+      tuby.forEach(function (tb, i) {
+        var X = x0 + i * (tw + gap), rr = tw / 2;
+        var lvl = bot - (bot - top) * 0.6;
+        var barwa = mieszaj(kol(tb.przed), kol(tb.po), p);
+        var pozostaje = (tb.efekt === 'osad' && p > 0.6) ? 0.9 : 0.85;
+
+        // korpus probówki jako ścieżka (używana też do przycięcia cieczy)
+        function korpus() {
+          x.beginPath();
+          x.moveTo(X, top); x.lineTo(X, bot - rr);
+          x.arc(X + rr, bot - rr, rr, Math.PI, 0, true);
+          x.lineTo(X + tw, top);
+        }
+
+        // ciecz przycięta do kształtu probówki
+        x.save(); korpus(); x.lineTo(X + tw - 1, top - 2); x.lineTo(X + 1, top - 2); x.closePath(); x.clip();
+        x.globalAlpha = pozostaje;
+        x.fillStyle = barwa;
+        x.fillRect(X, lvl, tw, bot - lvl);
+        x.globalAlpha = 1;
+        x.restore();
+
+        // osad opadający na dno (kolor po reakcji)
+        if (tb.efekt === 'osad') {
+          x.fillStyle = kol(tb.po);
+          for (var k = 0; k < 12; k++) {
+            var px = X + 8 + ((k * 37 + i * 11) % Math.max(1, tw - 16));
+            var fr = Math.min(1, Math.max(0, p * 1.4 - (k % 4) * 0.08));
+            var yy = (lvl + 8) + (bot - 12 - (k % 3) * 3 - (lvl + 8)) * fr;
+            x.globalAlpha = 0.9;
+            x.beginPath(); x.arc(px, yy, 2.2, 0, 2 * Math.PI); x.fill();
+          }
+          x.globalAlpha = 1;
+        }
+
+        // pęcherzyki gazu unoszące się po reakcji
+        if (tb.efekt === 'gaz' && p > 0.1) {
+          x.fillStyle = 'rgba(255,255,255,.9)';
+          for (var b = 0; b < 10; b++) {
+            var bx = X + 10 + ((b * 29 + i * 7) % Math.max(1, tw - 20));
+            var by = bot - 6 - ((t * 38 + b * 23) % (bot - lvl - 10));
+            x.beginPath(); x.arc(bx, by, 2 + (b % 3) * 0.6, 0, 2 * Math.PI); x.fill();
+          }
+        }
+
+        // korpus probówki (zaokrąglone dno)
+        x.strokeStyle = '#64748b'; x.lineWidth = 2;
+        korpus(); x.stroke();
+
+        // podpis
+        x.fillStyle = '#0f172a'; x.font = '12px system-ui, sans-serif';
+        x.fillText(indeksy(tb.etyk), X + rr, bot + 22);
+      });
+    }
+  });
+})();
+
+(function(){document.querySelectorAll('[data-klocek]').forEach(function(f){var o={};try{o=JSON.parse(f.getAttribute('data-opt')||'{}')}catch(e){}Object.keys(o).forEach(function(k){if(o[k]!==''&&!isNaN(Number(o[k])))o[k]=Number(o[k])});KLOCKI.montuj(f.querySelector('.lk-fig-body'),f.getAttribute('data-klocek'),o)})})();
+/* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
+   postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
+(function(){
+var html=document.documentElement;
+function ciemny(){var t=html.getAttribute('data-theme');return t?t==='dark':!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function oznacz(){if(ciemny())html.setAttribute('data-ciemny','');else html.removeAttribute('data-ciemny')}
+try{var z=localStorage.getItem('lekcja-motyw');if(z)html.setAttribute('data-theme',z)}catch(e){}
+oznacz();if(window.matchMedia)try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',oznacz)}catch(e){}
+
+function start(){
+var root=document;
+root.querySelectorAll('.flashcard').forEach(function(b){if(b.dataset.lkFz)return;b.dataset.lkFz=1;b.removeAttribute('onclick');b.setAttribute('aria-pressed','false');
+ b.addEventListener('click',function(){var on=b.classList.toggle('flipped');b.setAttribute('aria-pressed',on?'true':'false')})});
+root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibling,ok=0,n=0,all=w.querySelectorAll('.quiz-q').length;
+ if(sc&&sc.classList.contains('quiz-score'))sc.setAttribute('aria-live','polite');
+ w.querySelectorAll('.quiz-q').forEach(function(d){var good=+d.dataset.ok;d.querySelectorAll('.quiz-opt').forEach(function(b){b.onclick=function(){if(d.dataset.done)return;d.dataset.done=1;n++;if(+b.dataset.a===good)ok++;
+  d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
+  if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
+  if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var b=root.querySelector('#advToggle');
+if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
+ if(!k)b.style.display='none';
+ b.textContent='Pokaż treści akademickie ('+k+')';
+ b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';adv().forEach(function(d){d.open=on});b.setAttribute('aria-pressed',on?'true':'false');b.textContent=(on?'Ukryj':'Pokaż')+' treści akademickie ('+k+')'}}
+// spis zwinięty na telefonie
+var sp=root.querySelector('#spis');if(sp&&window.innerWidth<700)sp.removeAttribute('open');
+// przełącznik jasny/ciemny
+var tb=root.querySelector('#lkMotyw');
+if(tb)tb.onclick=function(){var t=ciemny()?'light':'dark';html.setAttribute('data-theme',t);try{localStorage.setItem('lekcja-motyw',t)}catch(e){}oznacz()};
+// postęp czytania + aktywna sekcja w spisie
+var bar=root.querySelector('.lk-prog'),links={},secs=[];
+root.querySelectorAll('.toc-link[href^="#"]').forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1));if(s){links[s.id]=a;secs.push(s)}});
+var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+ if(bar)bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';
+ var cur=null,lim=(parseInt(getComputedStyle(h).getPropertyValue('--header-h'))||52)+40;
+ for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
+ for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// fiszki: pokazuje pierwsze N (domyślnie 6, atrybut data-fz-pierwsze="N"), reszta po wyraźnym przycisku
+root.querySelectorAll('.flashcard-grid').forEach(function(g){
+ var cards=[].slice.call(g.querySelectorAll('.flashcard')),N=+(g.getAttribute('data-fz-pierwsze')||6);
+ if(!(N>0)||cards.length<=N)return;
+ var ukryte=cards.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more';
+ function lab(on){ukryte.forEach(function(c){c.hidden=!on});
+  b.textContent=on?'▲ Zwiń fiszki':'▼ Pokaż pozostałe '+ile+' fiszek (razem '+cards.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ g.insertAdjacentElement('afterend',b);
+});
+// testy: pokazuje pierwsze N pytań (domyślnie 5, atrybut data-q-pierwsze), reszta po wyraźnym przycisku
+root.querySelectorAll('.che-quiz').forEach(function(w){
+ var qs=[].slice.call(w.querySelectorAll('.quiz-q')),N=+(w.getAttribute('data-q-pierwsze')||5);
+ if(!(N>0)||qs.length<=N)return;
+ var ukryte=qs.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more q-more';
+ function lab(on){ukryte.forEach(function(q){q.hidden=!on});
+  b.textContent=on?'▲ Zwiń pytania':'▼ Pokaż pozostałe '+ile+(ile===1?' pytanie':(ile<5?' pytania':' pytań'))+' (razem '+qs.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ var sc=w.nextElementSibling;(sc&&sc.classList.contains('quiz-score')?sc:w).insertAdjacentElement('afterend',b);
+});
+// grafiki przedmiotu
+if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
+if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();
+
+</script>
+</body>
+</html>

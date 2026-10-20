@@ -1,0 +1,15 @@
+# Fragmenty z wersji main nieobecne w wersji olimpiada-8-sprint (do ewentualnego włączenia do lekcji)
+
+@opis Tester przewodnictwa z żarówką zanurzony w roztworze elektrolitu: żarówka świeci, gdy w roztworze są swobodne jony. Wniosek: roztwory soli i kwasów przewodzą prąd dzięki jonom, a woda destylowana prawie nie.
+<table><thead><tr><th>Gdzie</th><th>Co się dzieje</th></tr></thead><tbody><tr><td>piorunochron</td><td>chmura indukuje ładunek w ostrzu; wyładowanie trafia w piorunochron i spływa przewodem do ziemi — budynek jest chroniony</td></tr><tr><td>burza</td><td>ładunki rozdzielają się w chmurze (zderzenia kryształków lodu); piorun przenosi kilka–kilkadziesiąt kulombów w ułamku sekundy</td></tr><tr><td>kserograf, drukarka laserowa</td><td>naelektryzowany bęben przyciąga toner tylko w miejscach obrazu</td></tr><tr><td>filtry elektrostatyczne</td><td>pył w kominie elektrowni zostaje naładowany i osiada na elektrodach</td></tr><tr><td>malowanie proszkowe / natryskowe</td><td>naładowane krople farby lecą do uziemionego elementu i pokrywają go równo, także od tyłu</td></tr><tr><td>stacja paliw, cysterna</td><td>iskra może zapalić opary — cysterny i dystrybutory się uziemia</td></tr><tr><td>elektronika</td><td>wyładowanie z ciała (kilka tysięcy woltów!) niszczy układy scalone — opaska antystatyczna, uziemione stanowisko</td></tr><tr><td>klatka Faradaya</td><td>wewnątrz zamkniętego przewodnika pole elektryczne jest zerowe — samochód chroni przed piorunem, mikrofalówka zatrzymuje fale</td></tr></tbody></table>
+| Przy pocieraniu przechodzą protony. | Przechodzą tylko elektrony. | Protony są uwięzione w jądrach atomów. |
+| Ciało dodatnie ma nadmiar protonów, które dostało. | Ciało dodatnie ma niedobór elektronów. | Liczba protonów się nie zmienia — ciało oddało elektrony. |
+| Tarcie wytwarza ładunek. | Tarcie rozdziela ładunek. | Zasada zachowania ładunku: ile jedno ciało ma +, tyle drugie −. |
+| Skoro ciała się przyciągają, oba są naelektryzowane. | Przyciąganie może zachodzić między ciałem naładowanym i obojętnym. | Polaryzacja / indukcja. Pewnym dowodem jest tylko odpychanie. |
+| Elektroskop pokazuje, czy ładunek jest + czy −. | Elektroskop pokazuje tylko, czy (i ile) ładunku jest. | Znak ustala się ciałem o znanym ładunku. |
+| 2× większa odległość → siła 2× mniejsza. | 2× większa odległość → siła 4× mniejsza. | F ∝ 1/r² (prawo Coulomba). |
+| Metalu nie da się naelektryzować przez tarcie. | Da się, jeśli jest odizolowany (trzymany za izolującą rączkę). | W ręce ładunek natychmiast spływa przez ciało do ziemi. |
+| Piorunochron przyciąga pioruny, więc jest niebezpieczny. | Piorunochron chroni budynek. | Bezpiecznie odprowadza ładunek wyładowania przewodem do ziemi. |
+| Przy indukcji przewodnik zyskuje ładunek. | Przy indukcji ładunek tylko się rozsuwa (suma = 0). | Trwały ładunek pojawia się dopiero po uziemieniu i jego odłączeniu. |
+@opis Model Coulomba dla przykładów 3–5: uczeń zmienia ładunki, odległość i ośrodek, a model pokazuje nową wartość siły. Wniosek: siła zmienia się zgodnie z prawem Coulomba, a ośrodek ją osłabia.
+## 14a | Mapa myśli, checklista i plan powtórek {#s14a}

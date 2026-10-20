@@ -1,0 +1,1 @@
+P('mgoH2o',{n:'MgO + H₂O (+ fenoloftaleina)',solid:{col:ox,eq:4,end:.9,t:'powder',shape:'powder'},l0:php,l1:['ind-fenoloftaleina',9.6],out:['barwa'],turb:.25,why:'Reakcja bardzo powolna — tylko słabo różowa barwa przy osadzie (Mg(OH)₂ trudno rozpuszczalny).'});

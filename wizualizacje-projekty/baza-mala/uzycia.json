@@ -1,0 +1,1339 @@
+{
+ "biblioteka": {
+  "acid-calculator": "CHE model",
+  "acid-game": "CHE model",
+  "acid-rain-v01": "CHE model",
+  "acid-table": "CHE model",
+  "beaker-prediction-enhanced": "CHE model",
+  "carboxyl": "CHE model",
+  "chain-scn": "CHE model",
+  "che-spojnosc-v01": "CHE model",
+  "che-test-silnika-v01": "CHE model",
+  "chem-profile10": "CHE model",
+  "compound-cards": "CHE model",
+  "conj-pairs": "CHE model",
+  "diss-three-levels": "CHE model",
+  "energy-profile": "CHE model",
+  "env-balance": "CHE model",
+  "equilibrium": "CHE model",
+  "fiz-coulomb-v01": "CHE model",
+  "fiz-elektroskop-v01": "CHE model",
+  "fiz-elektryzowanie-v01": "CHE model",
+  "fiz-ladunek-v01": "CHE model",
+  "fiz-przewodniki-v01": "CHE model",
+  "flashcards-deck": "CHE model",
+  "flow-egzamin-enhanced": "CHE model",
+  "flow-naming": "CHE model",
+  "gfx-scene-acidMetal": "CHE model",
+  "gfx-scene-carbonate": "CHE model",
+  "gfx-scene-conductivity": "CHE model",
+  "gfx-scene-dilution": "CHE model",
+  "gfx-scene-gasCollection": "CHE model",
+  "gfx-scene-heating": "CHE model",
+  "gfx-scene-indicator": "CHE model",
+  "gfx-scene-indicatorRack": "CHE model",
+  "gfx-scene-titration": "CHE model",
+  "hf-paradox": "CHE model",
+  "ion-map-v02": "CHE model",
+  "ion-vs-diss": "CHE model",
+  "ka-pka-table": "CHE model",
+  "kinetics-v01": "CHE model",
+  "kw-bufor-v01": "CHE model",
+  "kw-doswiadczenia-v01": "CHE model",
+  "kw-dysocjacja-v01": "CHE model",
+  "kw-reszty-v01": "CHE model",
+  "kw-szereg-metali-v01": "CHE model",
+  "kw-wlasciwosci-v01": "CHE model",
+  "lab-beaker-v102": "CHE model",
+  "lab-library-v001": "CHE model",
+  "lab-stations-v102": "CHE model",
+  "live-cv": "CHE model",
+  "mind-map": "CHE model",
+  "molecule-2d": "CHE model",
+  "molecule-cv": "CHE model",
+  "molecule-electrons": "CHE model",
+  "molecule-orbitals": "CHE model",
+  "molecule3d-merged": "CHE model",
+  "n01-doswiadczenia-v01": "CHE model",
+  "n01-konstruktor-v01": "CHE model",
+  "n01-reaktor-v01": "CHE model",
+  "n01-spalanie-v01": "CHE model",
+  "n01-tlenki-v01": "CHE model",
+  "n01-trend-v01": "CHE model",
+  "n02-doswiadczenia-v01": "CHE model",
+  "n02-dysocjacja-v01": "CHE model",
+  "n02-otrzymywanie-v01": "CHE model",
+  "n02-przeglad-v01": "CHE model",
+  "n02-reaktor-v01": "CHE model",
+  "n02-stracanie-v01": "CHE model",
+  "n02-wzory-v01": "CHE model",
+  "n02-zobojetnianie-v01": "CHE model",
+  "j03-osady-v01": "CHE model",
+  "naming-table": "CHE model",
+  "neutralization": "CHE model",
+  "obtaining-hcl-steps": "CHE model",
+  "obtaining-three": "CHE model",
+  "f05-izotopy-v01": "CHE model",
+  "periodic-54": "CHE model",
+  "ph-indicators-v03": "CHE model",
+  "ph-ladder": "CHE model",
+  "reaction": "CHE model",
+  "reakcje-kwasu-v03": "CHE model",
+  "rownania-jonowe-v01": "CHE model",
+  "safety": "CHE model",
+  "sole-doswiadczenia-v01": "CHE model",
+  "species-v01": "CHE model",
+  "stech-kalkulator-v01": "CHE model",
+  "substance": "CHE model",
+  "tabela-rozpuszczalnosci-v01": "CHE model",
+  "timeline": "CHE model",
+  "titration-merged": "CHE model",
+  "n05-wodorki-v01": "CHE model",
+  "n05-trendy-v01": "CHE model",
+  "n05-doswiadczenia-v01": "CHE model",
+  "f09-trzy-liczby-v01": "CHE model",
+  "f10-energia-h2-v01": "CHE model",
+  "f15-dipol-v01": "CHE model",
+  "f17-bilans-v01": "CHE model",
+  "r03-krzyz-v01": "CHE model",
+  "fiz02-obwod-v01": "CHE model",
+  "beaker": "CHE gfx/naczynia",
+  "testTube": "CHE gfx/naczynia",
+  "cylinder": "CHE gfx/naczynia",
+  "flask": "CHE gfx/naczynia",
+  "roundFlask": "CHE gfx/naczynia",
+  "volFlask": "CHE gfx/naczynia",
+  "funnel": "CHE gfx/naczynia",
+  "petri": "CHE gfx/naczynia",
+  "evapDish": "CHE gfx/naczynia",
+  "crucible": "CHE gfx/naczynia",
+  "watchGlass": "CHE gfx/naczynia",
+  "dropFunnel": "CHE gfx/naczynia",
+  "heatGlow": "CHE gfx/efekty",
+  "liquid": "CHE gfx/efekty",
+  "meniscus": "CHE gfx/efekty",
+  "precipitate": "CHE gfx/efekty",
+  "plume": "CHE gfx/efekty",
+  "turbidity": "CHE gfx/efekty",
+  "solids": "CHE gfx/efekty",
+  "bubbles": "CHE gfx/efekty",
+  "foam": "CHE gfx/efekty",
+  "ripples": "CHE gfx/efekty",
+  "dropMix": "CHE gfx/efekty",
+  "schlieren": "CHE gfx/efekty",
+  "stirBar": "CHE gfx/efekty",
+  "condensation": "CHE gfx/efekty",
+  "fumes": "CHE gfx/efekty",
+  "steam": "CHE gfx/efekty",
+  "heatConvection": "CHE gfx/efekty",
+  "splash": "CHE gfx/efekty",
+  "scale": "CHE gfx/efekty",
+  "label": "CHE gfx/efekty",
+  "stopper": "CHE gfx/efekty",
+  "tap": "CHE gfx/efekty",
+  "flame": "CHE gfx/efekty",
+  "sparks": "CHE gfx/efekty",
+  "metalBurn": "CHE gfx/efekty",
+  "explosion": "CHE gfx/efekty",
+  "flash": "CHE gfx/efekty",
+  "stage": "CHE gfx/naczynia",
+  "splint": "CHE gfx/efekty",
+  "pop": "CHE gfx/efekty",
+  "anchor": "CHE gfx/naczynia",
+  "burner": "CHE gfx/naczynia",
+  "cooler": "CHE gfx/naczynia",
+  "stand": "CHE gfx/naczynia",
+  "tripod": "CHE gfx/naczynia",
+  "spiritLamp": "CHE gfx/naczynia",
+  "hotplate": "CHE gfx/naczynia",
+  "dropper": "CHE gfx/naczynia",
+  "gasCollect": "CHE gfx/naczynia",
+  "tubeRack": "CHE gfx/naczynia",
+  "conductivity": "CHE gfx/naczynia",
+  "pHscale": "CHE gfx/naczynia",
+  "pHmeter": "CHE gfx/naczynia",
+  "thermometer": "CHE gfx/naczynia",
+  "burette": "CHE gfx/naczynia",
+  "ringMark": "CHE gfx/efekty",
+  "pipette": "CHE gfx/naczynia",
+  "balance": "CHE gfx/naczynia",
+  "paper": "CHE gfx/naczynia",
+  "molTank": "CHE gfx/naczynia",
+  "electroscope": "CHE gfx/naczynia",
+  "chargedRod": "CHE gfx/naczynia",
+  "pendulum": "CHE gfx/naczynia",
+  "fieldMap": "CHE gfx/naczynia",
+  "chargeBar": "CHE gfx/naczynia",
+  "discharge": "CHE gfx/efekty",
+  "acidMetal": "CHE gfx/sceny",
+  "indicator": "CHE gfx/sceny",
+  "indicatorRack": "CHE gfx/sceny",
+  "titration": "CHE gfx/sceny",
+  "dilution": "CHE gfx/sceny",
+  "gasCollection": "CHE gfx/sceny",
+  "carbonate": "CHE gfx/sceny",
+  "heating": "CHE gfx/sceny",
+  "liH2o": "CHE gfx/reakcje",
+  "kH2o": "CHE gfx/reakcje",
+  "caH2o": "CHE gfx/reakcje",
+  "mgH2oHot": "CHE gfx/reakcje",
+  "na2oH2o": "CHE gfx/reakcje",
+  "k2oH2o": "CHE gfx/reakcje",
+  "li2oH2o": "CHE gfx/reakcje",
+  "caoH2o": "CHE gfx/reakcje",
+  "mgoH2o": "CHE gfx/reakcje",
+  "baoH2o": "CHE gfx/reakcje",
+  "mgcl2Naoh": "CHE gfx/reakcje",
+  "alcl3Naoh": "CHE gfx/reakcje",
+  "znso4Naoh": "CHE gfx/reakcje",
+  "feso4Naoh": "CHE gfx/reakcje",
+  "cucl2Naoh": "CHE gfx/reakcje",
+  "niso4Naoh": "CHE gfx/reakcje",
+  "mnso4Naoh": "CHE gfx/reakcje",
+  "pbno32Naoh": "CHE gfx/reakcje",
+  "cacl2Naoh": "CHE gfx/reakcje",
+  "agno3Naoh": "CHE gfx/reakcje",
+  "caoh2Hcl": "CHE gfx/reakcje",
+  "kohHcl": "CHE gfx/reakcje",
+  "kohHno3": "CHE gfx/reakcje",
+  "naohHno3": "CHE gfx/reakcje",
+  "baoh2H2so4": "CHE gfx/reakcje",
+  "cuoh2H2so4": "CHE gfx/reakcje",
+  "cuoh2Hcl": "CHE gfx/reakcje",
+  "feoh3Hcl": "CHE gfx/reakcje",
+  "znoh2Hcl": "CHE gfx/reakcje",
+  "aloh3Naoh": "CHE gfx/reakcje",
+  "znoh2Naoh": "CHE gfx/reakcje",
+  "baoh2Co2": "CHE gfx/reakcje",
+  "cuoh2Heat": "CHE gfx/reakcje",
+  "feoh2O2": "CHE gfx/reakcje",
+  "caoh2Na2co3": "CHE gfx/reakcje",
+  "nh4clNaoh": "CHE gfx/reakcje",
+  "so3H2o": "CHE gfx/reakcje",
+  "so2H2o": "CHE gfx/reakcje",
+  "co2H2o": "CHE gfx/reakcje",
+  "p4o10H2o": "CHE gfx/reakcje",
+  "caoHcl": "CHE gfx/reakcje",
+  "mgoHcl": "CHE gfx/reakcje",
+  "znoHcl": "CHE gfx/reakcje",
+  "al2o3Hcl": "CHE gfx/reakcje",
+  "fe2o3Hcl": "CHE gfx/reakcje",
+  "fe2o3H2so4": "CHE gfx/reakcje",
+  "so2Naoh": "CHE gfx/reakcje",
+  "so3Naoh": "CHE gfx/reakcje",
+  "naohCo2": "CHE gfx/reakcje",
+  "al2o3NaohAq": "CHE gfx/reakcje",
+  "znoNaohAq": "CHE gfx/reakcje",
+  "sio2Naoh": "CHE gfx/reakcje",
+  "bacl2Na2so4": "CHE gfx/reakcje",
+  "cacl2Na2co3": "CHE gfx/reakcje",
+  "na2co3Hcl": "CHE gfx/reakcje",
+  "cuso4Hydrate": "CHE gfx/reakcje",
+  "hyd-nacl": "CHE gfx/reakcje",
+  "hyd-na2co3": "CHE gfx/reakcje",
+  "hyd-nh4cl": "CHE gfx/reakcje",
+  "hyd-cuso4": "CHE gfx/reakcje",
+  "palenie": "klocek",
+  "uklad-okresowy": "klocek",
+  "plomien": "klocek",
+  "zlewka": "klocek",
+  "metal-woda": "klocek",
+  "palniki": "klocek",
+  "probowki": "klocek",
+  "gruczoly-mapa": "BIO",
+  "kod-genetyczny": "BIO",
+  "eutrofizacja": "BIO",
+  "drabina": "BIO",
+  "krazenie-obiegi": "BIO",
+  "wdech-wydech": "BIO",
+  "lancuch": "BIO",
+  "sekwencje": "BIO",
+  "sprzezenie-zwrotne": "BIO",
+  "wirus-bakteria": "BIO",
+  "endosymbioza": "BIO",
+  "poziomy-dna": "BIO",
+  "nefron": "BIO",
+  "droga-pokarmu": "BIO",
+  "ucho-droga": "BIO",
+  "podzial-komorki": "BIO",
+  "mikroskop-model": "BIO",
+  "od-organizmu-do-genu": "BIO",
+  "konczyny-homologiczne": "BIO",
+  "enzym-warunki": "BIO",
+  "homeostaza": "BIO",
+  "luk-odruchowy": "BIO",
+  "relacje-ekologiczne": "BIO",
+  "przeobrazenie-plaza": "BIO",
+  "siec-troficzna": "BIO",
+  "proba-kontrolna": "BIO",
+  "glukoza-wykres": "BIO",
+  "synapsa": "BIO",
+  "fotosynteza-oddychanie": "BIO",
+  "energia-glukozy": "BIO",
+  "cykl-miesiaczkowy": "BIO",
+  "punnett": "BIO",
+  "staw-antagonizm": "BIO",
+  "helisa": "BIO",
+  "zrodla-zmiennosci": "BIO",
+  "uklad-rozrodczy": "BIO",
+  "etapy-zycia": "BIO",
+  "komorka-nakladki": "BIO",
+  "droga-zarodka": "BIO",
+  "nukleotyd": "BIO",
+  "pojemnosc": "BIO",
+  "wymiana-gazowa": "BIO",
+  "klonowanie-genu": "BIO",
+  "lozysko-wymiana": "BIO",
+  "hardy-weinberg": "BIO",
+  "klucz-kregowce": "BIO",
+  "kontrola-podzialow": "BIO",
+  "skora-przekroj": "BIO",
+  "szuflady-cech": "BIO",
+  "transport-blona": "BIO",
+  "kosmek-jelitowy": "BIO",
+  "gdzie-dna": "BIO",
+  "energia-materia": "BIO",
+  "dobor-naturalny": "BIO",
+  "trener-nici": "BIO",
+  "transfuzja": "BIO",
+  "oko-akomodacja": "BIO",
+  "pary-zasad": "BIO",
+  "przeobrazenie-owadow": "BIO",
+  "id": "POL",
+  "rozbior-zdania": "POL",
+  "wykres-zdania": "POL",
+  "wykres-zlozonego": "POL",
+  "f01-doswiadczenia-v01": "CHE pracownia (lite)",
+  "f03-rozdzielanie-v01": "CHE pracownia (lite)",
+  "f06-doswiadczenia-v01": "CHE pracownia (lite)",
+  "cah2H2o": "CHE zlewka (lite)",
+  "nahH2o": "CHE zlewka (lite)",
+  "nh4clCaoh2": "CHE zlewka (lite)",
+  "naclH2so4": "CHE zlewka (lite)",
+  "fesHcl": "CHE zlewka (lite)",
+  "nh3H2oPhp": "CHE zlewka (lite)",
+  "hclH2oOranz": "CHE zlewka (lite)",
+  "h2sH2oUni": "CHE zlewka (lite)",
+  "nh3Hcl": "CHE zlewka (lite)",
+  "h2sPbac": "CHE zlewka (lite)",
+  "h2sCuso4": "CHE zlewka (lite)",
+  "f01SolWoda": "CHE zlewka (lite)",
+  "f01Odparowanie": "CHE zlewka (lite)",
+  "f01SodaOcet": "CHE zlewka (lite)",
+  "f01WodaWapienna": "CHE zlewka (lite)",
+  "f01Mg": "CHE zlewka (lite)",
+  "f01FeS": "CHE zlewka (lite)",
+  "f03PiasekWoda": "CHE zlewka (lite)",
+  "f03KredaWoda": "CHE zlewka (lite)",
+  "f06Cl2Kbr": "CHE zlewka (lite)",
+  "f06Cl2Ki": "CHE zlewka (lite)",
+  "f06Br2Ki": "CHE zlewka (lite)",
+  "f06I2Kbr": "CHE zlewka (lite)"
+ },
+ "uzycia": {
+  "acid-calculator": {},
+  "acid-game": {},
+  "acid-rain-v01": {
+   "N04": 1
+  },
+  "acid-table": {},
+  "beaker-prediction-enhanced": {},
+  "carboxyl": {},
+  "chain-scn": {
+   "N02": 1,
+   "N05": 1
+  },
+  "che-spojnosc-v01": {},
+  "che-test-silnika-v01": {},
+  "chem-profile10": {},
+  "compound-cards": {},
+  "conj-pairs": {},
+  "diss-three-levels": {},
+  "energy-profile": {},
+  "env-balance": {},
+  "equilibrium": {},
+  "fiz-coulomb-v01": {
+   "FIZ01": 3
+  },
+  "fiz-elektroskop-v01": {
+   "FIZ01": 3
+  },
+  "fiz-elektryzowanie-v01": {
+   "FIZ01": 3
+  },
+  "fiz-ladunek-v01": {
+   "FIZ01": 3
+  },
+  "fiz-przewodniki-v01": {
+   "FIZ01": 1
+  },
+  "flashcards-deck": {},
+  "flow-egzamin-enhanced": {},
+  "flow-naming": {},
+  "gfx-scene-acidMetal": {
+   "N01": 1,
+   "N04": 1
+  },
+  "gfx-scene-carbonate": {
+   "N01": 1,
+   "N02": 1
+  },
+  "gfx-scene-conductivity": {
+   "FIZ01": 1,
+   "N04": 1,
+   "N05": 1
+  },
+  "gfx-scene-dilution": {
+   "N04": 1
+  },
+  "gfx-scene-gasCollection": {},
+  "gfx-scene-heating": {},
+  "gfx-scene-indicator": {},
+  "gfx-scene-indicatorRack": {
+   "N03": 1,
+   "N04": 1
+  },
+  "gfx-scene-titration": {
+   "N04": 1
+  },
+  "hf-paradox": {},
+  "ion-map-v02": {
+   "N05": 1
+  },
+  "ion-vs-diss": {
+   "J03": 1
+  },
+  "ka-pka-table": {},
+  "kinetics-v01": {},
+  "kw-bufor-v01": {
+   "N04": 1
+  },
+  "kw-doswiadczenia-v01": {
+   "N04": 11
+  },
+  "kw-dysocjacja-v01": {
+   "FIZ01": 1,
+   "N04": 1
+  },
+  "kw-reszty-v01": {
+   "N04": 1,
+   "N05": 1
+  },
+  "kw-szereg-metali-v01": {
+   "N04": 1,
+   "N05": 1
+  },
+  "kw-wlasciwosci-v01": {
+   "N04": 1
+  },
+  "lab-beaker-v102": {},
+  "lab-library-v001": {},
+  "lab-stations-v102": {},
+  "live-cv": {},
+  "mind-map": {},
+  "molecule-2d": {},
+  "molecule-cv": {},
+  "molecule-electrons": {},
+  "molecule-orbitals": {},
+  "molecule3d-merged": {
+   "N02": 1
+  },
+  "n01-doswiadczenia-v01": {
+   "N02": 4
+  },
+  "n01-konstruktor-v01": {
+   "N02": 1
+  },
+  "n01-reaktor-v01": {
+   "N02": 1
+  },
+  "n01-spalanie-v01": {
+   "N01": 1,
+   "N02": 2
+  },
+  "n01-tlenki-v01": {
+   "N02": 1
+  },
+  "n01-trend-v01": {
+   "N02": 1
+  },
+  "n02-doswiadczenia-v01": {
+   "N03": 8
+  },
+  "n02-dysocjacja-v01": {
+   "N03": 1
+  },
+  "n02-otrzymywanie-v01": {
+   "N03": 1
+  },
+  "n02-przeglad-v01": {
+   "N03": 1
+  },
+  "n02-reaktor-v01": {
+   "N03": 1
+  },
+  "n02-stracanie-v01": {
+   "N03": 1
+  },
+  "n02-wzory-v01": {
+   "N03": 1
+  },
+  "n02-zobojetnianie-v01": {
+   "N03": 1
+  },
+  "j03-osady-v01": {
+   "J03": 1
+  },
+  "naming-table": {},
+  "neutralization": {},
+  "obtaining-hcl-steps": {},
+  "obtaining-three": {},
+  "f05-izotopy-v01": {
+   "F05": 1
+  },
+  "periodic-54": {
+   "F06": 1,
+   "N02": 1
+  },
+  "ph-indicators-v03": {
+   "N03": 2,
+   "N04": 1
+  },
+  "ph-ladder": {},
+  "reaction": {},
+  "reakcje-kwasu-v03": {
+   "N04": 1
+  },
+  "rownania-jonowe-v01": {
+   "J03": 1,
+   "N03": 1,
+   "N04": 1,
+   "N05": 1
+  },
+  "safety": {},
+  "sole-doswiadczenia-v01": {
+   "N05": 14
+  },
+  "species-v01": {},
+  "stech-kalkulator-v01": {
+   "F17": 1,
+   "N02": 1,
+   "N05": 1
+  },
+  "substance": {},
+  "tabela-rozpuszczalnosci-v01": {
+   "J03": 1,
+   "N03": 1,
+   "N04": 1,
+   "N05": 1
+  },
+  "timeline": {},
+  "titration-merged": {
+   "N04": 1
+  },
+  "n05-wodorki-v01": {},
+  "n05-trendy-v01": {},
+  "n05-doswiadczenia-v01": {},
+  "f09-trzy-liczby-v01": {},
+  "f10-energia-h2-v01": {},
+  "f15-dipol-v01": {},
+  "f17-bilans-v01": {
+   "F17": 1
+  },
+  "r03-krzyz-v01": {
+   "R03A_mieszanie_roztworow_regula_krzyzowa": 1
+  },
+  "fiz02-obwod-v01": {},
+  "beaker": {},
+  "testTube": {},
+  "cylinder": {},
+  "flask": {},
+  "roundFlask": {},
+  "volFlask": {},
+  "funnel": {},
+  "petri": {},
+  "evapDish": {},
+  "crucible": {},
+  "watchGlass": {},
+  "dropFunnel": {},
+  "heatGlow": {},
+  "liquid": {},
+  "meniscus": {},
+  "precipitate": {},
+  "plume": {},
+  "turbidity": {},
+  "solids": {},
+  "bubbles": {},
+  "foam": {},
+  "ripples": {},
+  "dropMix": {},
+  "schlieren": {},
+  "stirBar": {},
+  "condensation": {},
+  "fumes": {},
+  "steam": {},
+  "heatConvection": {},
+  "splash": {},
+  "scale": {},
+  "label": {},
+  "stopper": {},
+  "tap": {},
+  "flame": {},
+  "sparks": {},
+  "metalBurn": {},
+  "explosion": {},
+  "flash": {},
+  "stage": {},
+  "splint": {},
+  "pop": {},
+  "anchor": {},
+  "burner": {},
+  "cooler": {},
+  "stand": {},
+  "tripod": {},
+  "spiritLamp": {},
+  "hotplate": {},
+  "dropper": {},
+  "gasCollect": {},
+  "tubeRack": {},
+  "conductivity": {
+   "N04": 2
+  },
+  "pHscale": {},
+  "pHmeter": {},
+  "thermometer": {},
+  "burette": {},
+  "ringMark": {},
+  "pipette": {},
+  "balance": {},
+  "paper": {},
+  "molTank": {},
+  "electroscope": {},
+  "chargedRod": {},
+  "pendulum": {},
+  "fieldMap": {},
+  "chargeBar": {},
+  "discharge": {},
+  "acidMetal": {
+   "N04": 1
+  },
+  "indicator": {
+   "N04": 1
+  },
+  "indicatorRack": {},
+  "titration": {},
+  "dilution": {},
+  "gasCollection": {},
+  "carbonate": {
+   "N04": 1
+  },
+  "heating": {},
+  "liH2o": {
+   "F06": 1
+  },
+  "kH2o": {
+   "F06": 1
+  },
+  "caH2o": {},
+  "mgH2oHot": {},
+  "na2oH2o": {},
+  "k2oH2o": {},
+  "li2oH2o": {},
+  "caoH2o": {
+   "N02": 1,
+   "N03": 1,
+   "N05": 1
+  },
+  "mgoH2o": {},
+  "baoH2o": {},
+  "mgcl2Naoh": {},
+  "alcl3Naoh": {},
+  "znso4Naoh": {},
+  "feso4Naoh": {},
+  "cucl2Naoh": {},
+  "niso4Naoh": {},
+  "mnso4Naoh": {},
+  "pbno32Naoh": {},
+  "cacl2Naoh": {},
+  "agno3Naoh": {},
+  "caoh2Hcl": {},
+  "kohHcl": {},
+  "kohHno3": {},
+  "naohHno3": {},
+  "baoh2H2so4": {},
+  "cuoh2H2so4": {},
+  "cuoh2Hcl": {},
+  "feoh3Hcl": {},
+  "znoh2Hcl": {},
+  "aloh3Naoh": {
+   "N03": 1
+  },
+  "znoh2Naoh": {},
+  "baoh2Co2": {},
+  "cuoh2Heat": {},
+  "feoh2O2": {},
+  "caoh2Na2co3": {},
+  "nh4clNaoh": {},
+  "so3H2o": {},
+  "so2H2o": {},
+  "co2H2o": {},
+  "p4o10H2o": {},
+  "caoHcl": {},
+  "mgoHcl": {},
+  "znoHcl": {},
+  "al2o3Hcl": {},
+  "fe2o3Hcl": {},
+  "fe2o3H2so4": {},
+  "so2Naoh": {},
+  "so3Naoh": {},
+  "naohCo2": {},
+  "al2o3NaohAq": {},
+  "znoNaohAq": {},
+  "sio2Naoh": {},
+  "bacl2Na2so4": {
+   "N05": 1
+  },
+  "cacl2Na2co3": {
+   "N05": 1
+  },
+  "na2co3Hcl": {
+   "N05": 1
+  },
+  "cuso4Hydrate": {
+   "N05": 1
+  },
+  "hyd-nacl": {},
+  "hyd-na2co3": {
+   "N05": 1
+  },
+  "hyd-nh4cl": {
+   "N05": 1
+  },
+  "hyd-cuso4": {},
+  "palenie": {},
+  "uklad-okresowy": {
+   "P01": 1
+  },
+  "plomien": {},
+  "zlewka": {},
+  "metal-woda": {},
+  "palniki": {
+   "F07": 1,
+   "P01": 1
+  },
+  "probowki": {
+   "P01": 1
+  },
+  "gruczoly-mapa": {
+   "BIO.07.U10.uklad_dokrewny": 1
+  },
+  "kod-genetyczny": {
+   "BIO.02.L011.jak_dna_przechowuje_informacje": 1,
+   "BIO.02.L020.czym_sa_mutacje_i_jakie": 1,
+   "BIO.02.L021.powtorka_genetyki": 1,
+   "BIO.06.L090.extra_olimpijska": 1
+  },
+  "eutrofizacja": {
+   "BIO.04.L043.jak_czlowiek_wplywa_na_srodowisko": 1
+  },
+  "drabina": {
+   "BIO.02.L010.dna_od_zera": 1,
+   "BIO.02.L011.jak_dna_przechowuje_informacje": 1
+  },
+  "krazenie-obiegi": {
+   "BIO.07.U04.krazenie_krew_odpornosc": 1
+  },
+  "wdech-wydech": {
+   "BIO.07.U06.oddychanie_i_wydalanie": 1
+  },
+  "lancuch": {
+   "BIO.00.REV01.organizacja_i_chemizm_zycia": 1,
+   "BIO.01.L001.komorka": 1,
+   "BIO.01.L004.organizacja_budowy_organizmu_od_komorki": 2,
+   "BIO.02.L010.dna_od_zera": 1,
+   "BIO.02.L015.mejoza": 1
+  },
+  "sekwencje": {
+   "BIO.02.L010.dna_od_zera": 1
+  },
+  "sprzezenie-zwrotne": {
+   "BIO.07.H01.homeostaza": 1,
+   "BIO.07.U10.uklad_dokrewny": 1
+  },
+  "wirus-bakteria": {
+   "BIO.00.REV02.roznorodnosc_zycia": 1
+  },
+  "endosymbioza": {
+   "BIO.01.L001A.dodatek_ambitny_od_komorki_do": 1
+  },
+  "poziomy-dna": {
+   "BIO.02.L010.dna_od_zera": 1,
+   "BIO.02.L012.jak_dna_jest_upakowane_w": 1
+  },
+  "nefron": {
+   "BIO.07.U06.oddychanie_i_wydalanie": 1
+  },
+  "droga-pokarmu": {
+   "BIO.07.U03.uklad_pokarmowy_i_odzywianie": 1
+  },
+  "ucho-droga": {
+   "BIO.07.U08.uklad_nerwowy_i_zmysly": 1
+  },
+  "podzial-komorki": {
+   "BIO.01.L009.podzial_komorki_wzrost_regeneracja_i": 1,
+   "BIO.02.L014.jak_komorki_ciala_powstaja_i": 1,
+   "BIO.02.L015.mejoza": 1,
+   "BIO.05.L050.powtorka_roczna": 1
+  },
+  "mikroskop-model": {
+   "BIO.00.REV01.organizacja_i_chemizm_zycia": 1,
+   "BIO.01.L001.komorka": 1,
+   "BIO.01.L008.mikroskop_jak_obserwowac_komorke_a": 1
+  },
+  "od-organizmu-do-genu": {
+   "BIO.02.L010.dna_od_zera": 1
+  },
+  "konczyny-homologiczne": {
+   "BIO.03.L030.czym_jest_ewolucja_i_jakie": 1,
+   "BIO.03.L032.powtorka_ewolucji": 1
+  },
+  "enzym-warunki": {
+   "BIO.07.U03.uklad_pokarmowy_i_odzywianie": 1
+  },
+  "homeostaza": {
+   "BIO.01.L002.powtorka_czlowiek": 1
+  },
+  "luk-odruchowy": {
+   "BIO.07.U08.uklad_nerwowy_i_zmysly": 1
+  },
+  "relacje-ekologiczne": {
+   "BIO.04.L042.jakie_relacje_panuja_miedzy_organizmami": 1,
+   "BIO.04.L044.powtorka_ekologii": 1
+  },
+  "przeobrazenie-plaza": {
+   "BIO.00.REV02.roznorodnosc_zycia": 1
+  },
+  "siec-troficzna": {
+   "BIO.04.L041.jak_zapisac_lancuchy_i_sieci": 1,
+   "BIO.05.L050.powtorka_roczna": 1
+  },
+  "proba-kontrolna": {
+   "BIO.00.REV01.organizacja_i_chemizm_zycia": 1
+  },
+  "glukoza-wykres": {
+   "BIO.07.H01.homeostaza": 1,
+   "BIO.07.U10.uklad_dokrewny": 1
+  },
+  "synapsa": {
+   "BIO.07.U08.uklad_nerwowy_i_zmysly": 1
+  },
+  "fotosynteza-oddychanie": {
+   "BIO.00.REV01.organizacja_i_chemizm_zycia": 1,
+   "BIO.01.L006.fotosynteza_skad_roslina_bierze_materie": 1,
+   "BIO.01.L007.oddychanie_komorkowe_skad_komorka_bierze": 1,
+   "BIO.06.L091.atp_jak_komorka_magazynuje_energie": 1
+  },
+  "energia-glukozy": {
+   "BIO.00.REV01.organizacja_i_chemizm_zycia": 1,
+   "BIO.01.L007.oddychanie_komorkowe_skad_komorka_bierze": 1
+  },
+  "cykl-miesiaczkowy": {
+   "BIO.07.U11.rozmnazanie_i_rozwoj": 1
+  },
+  "punnett": {
+   "BIO.02.L017.jak_przewidywac_dziedziczenie_jednej_cechy": 1,
+   "BIO.02.L018.jak_dziedziczy_sie_plec_i": 1,
+   "BIO.02.L019.dlaczego_grupy_krwi_nie_pasuja": 1,
+   "BIO.02.L021.powtorka_genetyki": 1
+  },
+  "staw-antagonizm": {
+   "BIO.07.U01.skora_i_uklad_ruchu": 1
+  },
+  "helisa": {
+   "BIO.02.L010.dna_od_zera": 1,
+   "BIO.02.L011.jak_dna_przechowuje_informacje": 1
+  },
+  "zrodla-zmiennosci": {
+   "BIO.02.L016A.zmiennosc_dlaczego_potomstwo_nie_jest": 1
+  },
+  "uklad-rozrodczy": {
+   "BIO.07.U11.rozmnazanie_i_rozwoj": 1
+  },
+  "etapy-zycia": {
+   "BIO.07.U11.rozmnazanie_i_rozwoj": 1
+  },
+  "komorka-nakladki": {
+   "BIO.00.REV01.organizacja_i_chemizm_zycia": 1,
+   "BIO.01.L001.komorka": 1
+  },
+  "droga-zarodka": {
+   "BIO.07.U11.rozmnazanie_i_rozwoj": 1
+  },
+  "nukleotyd": {
+   "BIO.02.L010.dna_od_zera": 1,
+   "BIO.02.L011.jak_dna_przechowuje_informacje": 1
+  },
+  "pojemnosc": {
+   "BIO.02.L010.dna_od_zera": 1
+  },
+  "wymiana-gazowa": {
+   "BIO.07.U06.oddychanie_i_wydalanie": 1
+  },
+  "klonowanie-genu": {
+   "BIO.02.L022.biotechnologia_i_inzynieria_genetyczna": 1
+  },
+  "lozysko-wymiana": {
+   "BIO.07.U11.rozmnazanie_i_rozwoj": 1
+  },
+  "hardy-weinberg": {
+   "BIO.06.L090.extra_olimpijska": 1
+  },
+  "klucz-kregowce": {
+   "BIO.00.REV02.roznorodnosc_zycia": 1
+  },
+  "kontrola-podzialow": {
+   "BIO.02.L016.co_sie_dzieje_gdy_podzialy": 1
+  },
+  "skora-przekroj": {
+   "BIO.07.U01.skora_i_uklad_ruchu": 1
+  },
+  "szuflady-cech": {
+   "BIO.02.L010.dna_od_zera": 1
+  },
+  "transport-blona": {
+   "BIO.00.REV01.organizacja_i_chemizm_zycia": 1,
+   "BIO.01.L001.komorka": 1,
+   "BIO.01.L005.blona_komorkowa_i_transport_substancji": 1
+  },
+  "kosmek-jelitowy": {
+   "BIO.07.U03.uklad_pokarmowy_i_odzywianie": 1
+  },
+  "gdzie-dna": {
+   "BIO.02.L010.dna_od_zera": 1
+  },
+  "energia-materia": {
+   "BIO.04.L040.czym_jest_ekosystem_i_jakie": 1,
+   "BIO.04.L044.powtorka_ekologii": 1
+  },
+  "dobor-naturalny": {
+   "BIO.03.L031.jak_dziala_dobor_naturalny_i": 1,
+   "BIO.03.L032.powtorka_ewolucji": 1
+  },
+  "trener-nici": {
+   "BIO.02.L010.dna_od_zera": 1,
+   "BIO.02.L013.jak_komorka_kopiuje_dna": 1
+  },
+  "transfuzja": {
+   "BIO.07.U04.krazenie_krew_odpornosc": 1
+  },
+  "oko-akomodacja": {
+   "BIO.07.U08.uklad_nerwowy_i_zmysly": 1
+  },
+  "pary-zasad": {
+   "BIO.02.L010.dna_od_zera": 1,
+   "BIO.02.L011.jak_dna_przechowuje_informacje": 1
+  },
+  "przeobrazenie-owadow": {
+   "BIO.00.REV02.roznorodnosc_zycia": 1
+  },
+  "id": {},
+  "rozbior-zdania": {
+   "POL.02.G12.czesci_zdania": 1
+  },
+  "wykres-zdania": {
+   "POL.02.G12.czesci_zdania": 1
+  },
+  "wykres-zlozonego": {
+   "POL.02.G15.zdania_wspolrzedne": 1
+  },
+  "f01-doswiadczenia-v01": {
+   "F17": 1,
+   "N01": 1
+  },
+  "f03-rozdzielanie-v01": {},
+  "f06-doswiadczenia-v01": {
+   "F06": 5
+  },
+  "cah2H2o": {},
+  "nahH2o": {},
+  "nh4clCaoh2": {},
+  "naclH2so4": {},
+  "fesHcl": {},
+  "nh3H2oPhp": {},
+  "hclH2oOranz": {},
+  "h2sH2oUni": {},
+  "nh3Hcl": {},
+  "h2sPbac": {},
+  "h2sCuso4": {},
+  "f01SolWoda": {},
+  "f01Odparowanie": {},
+  "f01SodaOcet": {},
+  "f01WodaWapienna": {
+   "N01": 1
+  },
+  "f01Mg": {
+   "F17": 1
+  },
+  "f01FeS": {},
+  "f03PiasekWoda": {},
+  "f03KredaWoda": {},
+  "f06Cl2Kbr": {
+   "F06": 1
+  },
+  "f06Cl2Ki": {},
+  "f06Br2Ki": {
+   "F06": 1
+  },
+  "f06I2Kbr": {}
+ },
+ "zero": [
+  "acid-calculator",
+  "acid-game",
+  "acid-table",
+  "beaker-prediction-enhanced",
+  "carboxyl",
+  "che-spojnosc-v01",
+  "che-test-silnika-v01",
+  "chem-profile10",
+  "compound-cards",
+  "conj-pairs",
+  "diss-three-levels",
+  "energy-profile",
+  "env-balance",
+  "equilibrium",
+  "flashcards-deck",
+  "flow-egzamin-enhanced",
+  "flow-naming",
+  "gfx-scene-gasCollection",
+  "gfx-scene-heating",
+  "gfx-scene-indicator",
+  "hf-paradox",
+  "ka-pka-table",
+  "kinetics-v01",
+  "lab-beaker-v102",
+  "lab-library-v001",
+  "lab-stations-v102",
+  "live-cv",
+  "mind-map",
+  "molecule-2d",
+  "molecule-cv",
+  "molecule-electrons",
+  "molecule-orbitals",
+  "naming-table",
+  "neutralization",
+  "obtaining-hcl-steps",
+  "obtaining-three",
+  "ph-ladder",
+  "reaction",
+  "safety",
+  "species-v01",
+  "substance",
+  "timeline",
+  "n05-wodorki-v01",
+  "n05-trendy-v01",
+  "n05-doswiadczenia-v01",
+  "f09-trzy-liczby-v01",
+  "f10-energia-h2-v01",
+  "f15-dipol-v01",
+  "fiz02-obwod-v01",
+  "beaker",
+  "testTube",
+  "cylinder",
+  "flask",
+  "roundFlask",
+  "volFlask",
+  "funnel",
+  "petri",
+  "evapDish",
+  "crucible",
+  "watchGlass",
+  "dropFunnel",
+  "heatGlow",
+  "liquid",
+  "meniscus",
+  "precipitate",
+  "plume",
+  "turbidity",
+  "solids",
+  "bubbles",
+  "foam",
+  "ripples",
+  "dropMix",
+  "schlieren",
+  "stirBar",
+  "condensation",
+  "fumes",
+  "steam",
+  "heatConvection",
+  "splash",
+  "scale",
+  "label",
+  "stopper",
+  "tap",
+  "flame",
+  "sparks",
+  "metalBurn",
+  "explosion",
+  "flash",
+  "stage",
+  "splint",
+  "pop",
+  "anchor",
+  "burner",
+  "cooler",
+  "stand",
+  "tripod",
+  "spiritLamp",
+  "hotplate",
+  "dropper",
+  "gasCollect",
+  "tubeRack",
+  "pHscale",
+  "pHmeter",
+  "thermometer",
+  "burette",
+  "ringMark",
+  "pipette",
+  "balance",
+  "paper",
+  "molTank",
+  "electroscope",
+  "chargedRod",
+  "pendulum",
+  "fieldMap",
+  "chargeBar",
+  "discharge",
+  "indicatorRack",
+  "titration",
+  "dilution",
+  "gasCollection",
+  "heating",
+  "caH2o",
+  "mgH2oHot",
+  "na2oH2o",
+  "k2oH2o",
+  "li2oH2o",
+  "mgoH2o",
+  "baoH2o",
+  "mgcl2Naoh",
+  "alcl3Naoh",
+  "znso4Naoh",
+  "feso4Naoh",
+  "cucl2Naoh",
+  "niso4Naoh",
+  "mnso4Naoh",
+  "pbno32Naoh",
+  "cacl2Naoh",
+  "agno3Naoh",
+  "caoh2Hcl",
+  "kohHcl",
+  "kohHno3",
+  "naohHno3",
+  "baoh2H2so4",
+  "cuoh2H2so4",
+  "cuoh2Hcl",
+  "feoh3Hcl",
+  "znoh2Hcl",
+  "znoh2Naoh",
+  "baoh2Co2",
+  "cuoh2Heat",
+  "feoh2O2",
+  "caoh2Na2co3",
+  "nh4clNaoh",
+  "so3H2o",
+  "so2H2o",
+  "co2H2o",
+  "p4o10H2o",
+  "caoHcl",
+  "mgoHcl",
+  "znoHcl",
+  "al2o3Hcl",
+  "fe2o3Hcl",
+  "fe2o3H2so4",
+  "so2Naoh",
+  "so3Naoh",
+  "naohCo2",
+  "al2o3NaohAq",
+  "znoNaohAq",
+  "sio2Naoh",
+  "hyd-nacl",
+  "hyd-cuso4",
+  "palenie",
+  "plomien",
+  "zlewka",
+  "metal-woda",
+  "id",
+  "f03-rozdzielanie-v01",
+  "cah2H2o",
+  "nahH2o",
+  "nh4clCaoh2",
+  "naclH2so4",
+  "fesHcl",
+  "nh3H2oPhp",
+  "hclH2oOranz",
+  "h2sH2oUni",
+  "nh3Hcl",
+  "h2sPbac",
+  "h2sCuso4",
+  "f01SolWoda",
+  "f01Odparowanie",
+  "f01SodaOcet",
+  "f01FeS",
+  "f03PiasekWoda",
+  "f03KredaWoda",
+  "f06Cl2Ki",
+  "f06I2Kbr"
+ ],
+ "jeden": [
+  "acid-rain-v01",
+  "fiz-przewodniki-v01",
+  "gfx-scene-dilution",
+  "gfx-scene-titration",
+  "ion-map-v02",
+  "ion-vs-diss",
+  "kw-bufor-v01",
+  "kw-wlasciwosci-v01",
+  "molecule3d-merged",
+  "n01-konstruktor-v01",
+  "n01-reaktor-v01",
+  "n01-tlenki-v01",
+  "n01-trend-v01",
+  "n02-dysocjacja-v01",
+  "n02-otrzymywanie-v01",
+  "n02-przeglad-v01",
+  "n02-reaktor-v01",
+  "n02-stracanie-v01",
+  "n02-wzory-v01",
+  "n02-zobojetnianie-v01",
+  "j03-osady-v01",
+  "f05-izotopy-v01",
+  "reakcje-kwasu-v03",
+  "titration-merged",
+  "f17-bilans-v01",
+  "r03-krzyz-v01",
+  "acidMetal",
+  "indicator",
+  "carbonate",
+  "liH2o",
+  "kH2o",
+  "aloh3Naoh",
+  "bacl2Na2so4",
+  "cacl2Na2co3",
+  "na2co3Hcl",
+  "cuso4Hydrate",
+  "hyd-na2co3",
+  "hyd-nh4cl",
+  "uklad-okresowy",
+  "probowki",
+  "gruczoly-mapa",
+  "eutrofizacja",
+  "krazenie-obiegi",
+  "wdech-wydech",
+  "sekwencje",
+  "wirus-bakteria",
+  "endosymbioza",
+  "nefron",
+  "droga-pokarmu",
+  "ucho-droga",
+  "od-organizmu-do-genu",
+  "enzym-warunki",
+  "homeostaza",
+  "luk-odruchowy",
+  "przeobrazenie-plaza",
+  "proba-kontrolna",
+  "synapsa",
+  "cykl-miesiaczkowy",
+  "staw-antagonizm",
+  "zrodla-zmiennosci",
+  "uklad-rozrodczy",
+  "etapy-zycia",
+  "droga-zarodka",
+  "pojemnosc",
+  "wymiana-gazowa",
+  "klonowanie-genu",
+  "lozysko-wymiana",
+  "hardy-weinberg",
+  "klucz-kregowce",
+  "kontrola-podzialow",
+  "skora-przekroj",
+  "szuflady-cech",
+  "kosmek-jelitowy",
+  "gdzie-dna",
+  "transfuzja",
+  "oko-akomodacja",
+  "przeobrazenie-owadow",
+  "rozbior-zdania",
+  "wykres-zdania",
+  "wykres-zlozonego",
+  "f01WodaWapienna",
+  "f01Mg",
+  "f06Cl2Kbr",
+  "f06Br2Ki"
+ ],
+ "wiele": [
+  "chain-scn",
+  "fiz-coulomb-v01",
+  "fiz-elektroskop-v01",
+  "fiz-elektryzowanie-v01",
+  "fiz-ladunek-v01",
+  "gfx-scene-acidMetal",
+  "gfx-scene-carbonate",
+  "gfx-scene-conductivity",
+  "gfx-scene-indicatorRack",
+  "kw-doswiadczenia-v01",
+  "kw-dysocjacja-v01",
+  "kw-reszty-v01",
+  "kw-szereg-metali-v01",
+  "n01-doswiadczenia-v01",
+  "n01-spalanie-v01",
+  "n02-doswiadczenia-v01",
+  "periodic-54",
+  "ph-indicators-v03",
+  "rownania-jonowe-v01",
+  "sole-doswiadczenia-v01",
+  "stech-kalkulator-v01",
+  "tabela-rozpuszczalnosci-v01",
+  "conductivity",
+  "caoH2o",
+  "palniki",
+  "kod-genetyczny",
+  "drabina",
+  "lancuch",
+  "sprzezenie-zwrotne",
+  "poziomy-dna",
+  "podzial-komorki",
+  "mikroskop-model",
+  "konczyny-homologiczne",
+  "relacje-ekologiczne",
+  "siec-troficzna",
+  "glukoza-wykres",
+  "fotosynteza-oddychanie",
+  "energia-glukozy",
+  "punnett",
+  "helisa",
+  "komorka-nakladki",
+  "nukleotyd",
+  "transport-blona",
+  "energia-materia",
+  "dobor-naturalny",
+  "trener-nici",
+  "pary-zasad",
+  "f01-doswiadczenia-v01",
+  "f06-doswiadczenia-v01"
+ ],
+ "nie_w_bazie": [
+  "-",
+  "caoh2Co2",
+  "cuoH2so4",
+  "cuso4Naoh",
+  "fecl3Naoh",
+  "hclNaOH",
+  "mgO2",
+  "naH2o",
+  "rx-ag-cl",
+  "rx-cu-naoh",
+  "rx-fe-cuso4",
+  "szereg",
+  "wlasciwosci"
+ ]
+}

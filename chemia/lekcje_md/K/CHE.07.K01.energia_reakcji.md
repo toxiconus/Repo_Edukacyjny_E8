@@ -1,456 +1,608 @@
 ---
-kod: "K01"
-tytul: "Energia reakcji"
-poziom: E8+LO
-wymaga: "F16; F17"
-poglebia: "K02; K06; K07"
-opis: "Pełna lekcja E8+LO+olimpiada: egzo- i endoenergetyczne, wykres energetyczny, energia aktywacji, związek z obserwacją, analiza błędów, warstwa konkursowa."
-stan: W24 — Grok, 2026-10-09; pełna przebudowa do standardu 20–30 KB (wykład, analizy, ciekawostki, E8/LO/olimpiada); W1 nieprzeprowadzony — wartości liczbowe do weryfikacji
+kod: K01
+tytul: Energia reakcji
+opis: reakcje egzoenergetyczne · reakcje endoenergetyczne · układ i otoczenie · ciepło · energia wewnętrzna · zmiana energii ΔE · energia aktywacji Ea · wykres energetyczny · katalizator · obserwacja temperatury
+uid: CHE.07.K01.energia_reakcji
+kicker: K01 · CHEMIA · Energetyka · NOWA WERSJA · SZKOŁA / KONKURS
+lead: Reakcja może oddawać ciepło, może je pobierać, a mimo to wymaga startu. Ta lekcja pokazuje, jak z obserwacji — naczynie się nagrzewa albo ochładza — przejść do wykresu energetycznego, na którym widać zarówno zysk lub stratę energii, jak i barierę do pokonania.
+plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE]][[extra:LO]]
+uwaga: Plakietka E8 oznacza podstawową warstwę kursu, nie zakres egzaminu ósmoklasisty z chemii. W tej lekcji energia reakcji jest rozpatrywana jakościowo oraz w warstwie rozszerzonej jako ΔE. Energia aktywacji dotyczy bariery między substratami a produktem, a nie różnicy energii między substratami a produktami. Katalizator obniża energię aktywacji, ale nie zmienia ΔE reakcji.
+stopka: CHEMIA K01 · Energia reakcji · Materiał do samodzielnej nauki · 2026
+stan: ULEPSZONA — Perplexity, 2026-10-13; do sprawdzenia
 ---
 
-# K01 — Energia reakcji
 
-**Dział:** Energetyka, kinetyka i równowaga (blok K)  
-**Poziomy:** [PODSTAWA E8] · [LO] · [[extra:OLIMPIADA]]  
-**Poprzednia:** F16 (od obserwacji do modelu reakcji), F17 (równania)  
-**Następna:** K02 (entalpia ΔH), K06 (zderzenia i E_a)
+::: minimum | Muszę umieć — 10 punktów
+1. Rozróżniam układ chemiczny i otoczenie.
+2. Wyjaśniam, że reakcja egzoenergetyczna oddaje energię do otoczenia, a reakcja endoenergetyczna pobiera energię z otoczenia.
+3. Na podstawie obserwacji rozpoznaję efekt energetyczny: nagrzewanie otoczenia wskazuje zwykle na reakcję egzoenergetyczną, a ochładzanie — na endoenergetyczną.
+4. Zapisuję, że dla reakcji egzoenergetycznej ΔE < 0, a dla endoenergetycznej ΔE > 0.
+5. Na wykresie energetycznym zaznaczam poziomy energii substratów i produktów oraz szczyt odpowiadający energii aktywacji.
+6. Wyjaśniam, że energia aktywacji Ea to minimalna energia potrzebna do rozpoczęcia reakcji.
+7. Wyjaśniam, że katalizator obniża energię aktywacji, ale nie zmienia ΔE reakcji.
+8. Rozróżniam energię aktywacji Ea od zmiany energii reakcji ΔE.
+9. Podaję przykłady reakcji egzoenergetycznej, na przykład spalanie, oraz endoenergetycznej, na przykład rozkład węglanu wapnia.
+10. Sprawdzam wniosek o efekcie energetycznym, łącząc obserwację temperatury z kierunkiem przepływu energii między układem a otoczeniem.
+:::
 
----
+::: warstwy
+- e8 | <b>Podstawa:</b> rozpoznawanie reakcji egzo- i endoenergetycznych z obserwacji, pojęcie układu i otoczenia, proste przykłady oraz jakościowy wykres energetyczny.
+- understand | <b>Rozumienie:</b> dlaczego reakcja egzoenergetyczna może wymagać rozpoczęcia, czym różni się ΔE od Ea oraz dlaczego katalizator przyspiesza reakcję, nie zmieniając jej bilansu energetycznego.
+- contest | <b>Konkurs:</b> analiza wykresów, porównywanie Ea i ΔE, przewidywanie wpływu katalizatora, rozpoznawanie błędnych opisów wykresu oraz łączenie obserwacji z modelem energetycznym.
+- extra | <b>Ambitne:</b> energia aktywacji jako bariera, wpływ temperatury na liczbę zderzeń skutecznych, katalizator jako obniżenie bariery oraz granice wnioskowania z samej obserwacji temperatury.
+:::
 
-## 0. Mapa lekcji (gdzie jesteś)
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
+- [§1](#wyklad) — Wykład od zera: skąd bierze się ciepło albo chłód w reakcji.
+- [§2](#wykres) — Wykres energetyczny: substraty, produkty, Ea i ΔE.
+- [§3](#katalizator) — Katalizator i energia aktywacji.
+- [§4](#przyklady) — Przykłady prowadzone.
+- [§5](#klinika) — Klinika błędów.
+- [§6](#cwiczenia) — Ćwiczenia z kluczem.
+- [§7](#ciekawostki) — Ciekawostki.
+- [§8](#slownik) — Słownik.
+- [§9](#test) — Test końcowy.
+- [§10](#checklista) — Checklista.
+:::
 
-| Warstwa | Sekcje | Dla kogo |
-|---------|--------|----------|
-| Przypomnienie | 3 | po F16/F17 |
-| **Podstawa E8** | 1–2, 5–6, 8–9, 11–12 | egzamin ósmoklasisty / klasa 7–8 |
-| Trening | 7, 10, 13 | utrwalenie |
-| LO | 6D, 7 (część), 14 | liceum |
-| Olimpiada | 15, [[extra]] | konkursy |
+## 0.1 | Jak pracować z lekcją {#jak-pracowac}
 
----
+Po tej lekcji potrafisz:
 
-## 1. Pytanie przewodnie
+- nazwać reakcję egzo- lub endoenergetyczną na podstawie obserwacji i wykresu;
+- narysować jakościowy wykres energetyczny z barierą Ea;
+- wskazać, gdzie układ traci, a gdzie zyskuje energię;
+- połączyć obserwację ciepła z modelem energetycznym;
+- wyjaśnić działanie katalizatora.
 
-**Skąd się bierze ciepło (albo zimno) w reakcji chemicznej — i jak to narysować, zanim w ogóle policzymy ΔH?**
+Kolejność pracy:
 
-Po tej lekcji umiesz:
-- rozróżnić reakcję egzo- i endoenergetyczną na podstawie obserwacji i wykresu,
-- narysować i odczytać jakościowy wykres energetyczny (z energią aktywacji),
-- wyjaśnić, dlaczego nawet reakcja „wydzielająca ciepło” nie zachodzi od razu w każdej temperaturze,
-- uniknąć pułapek: energia ≠ szybkość, ΔE ≠ E_a.
+1. Zacznij od diagnozy w [§0.4](#diagnoza).
+2. Przeczytaj wykład w [§1](#wyklad). Obraz przewodni to przepływ energii między układem a otoczeniem.
+3. W [§2](#wykres) narysuj własny wykres energetyczny, zanim porównasz go z opisem.
+4. W [§3](#katalizator) zwróć uwagę na różnicę między Ea a ΔE.
+5. Przykłady w [§4](#przyklady) rozwiązuj samodzielnie przed sprawdzeniem klucza.
+6. Test i ćwiczenia rozwiązuj bez zaglądania do treści. Błędne odpowiedzi wskażą zagadnienie do powtórki.
 
----
+Przydatne wcześniej: reakcja jako zjawisko z F03 i F16, równanie reakcji oraz substraty i produkty z F17, pojęcie układu i otoczenia z F01, temperatura jako miara ruchu cząsteczek z przyrody i fizyki.
 
-## 2. Cele (+ 80/20)
+## 0.2 | Cele i pytanie przewodnie {#cele}
 
-**Po lekcji uczeń:**
+Pytanie przewodnie: **Skąd bierze się ciepło albo chłód w reakcji chemicznej i jak to przedstawić na wykresie?**
 
-**[PODSTAWA E8]**
-- nazywa reakcję egzoenergetyczną / endoenergetyczną i podaje przykłady,
-- rysuje i interpretuje wykres energetyczny (poziomy substrateów i produktów, bariera E_a),
-- wskazuje na wykresie, gdzie układ traci, a gdzie zyskuje energię,
-- łączy obserwację (nagrzewanie naczynia, spadek T) z modelem energetycznym.
+Po tej lekcji potrafisz:
 
-**[LO]**
-- wiąże jakościowy wykres z pojęciem ΔE (i przygotowuje grunt pod ΔH w K02),
-- wyjaśnia rolę energii aktywacji bez wchodzenia w teorię zderzeń (to K06),
-- rozróżnia zmianę energii układu od bariery kinetycznej.
+- rozróżnić układ i otoczenie;
+- rozpoznać reakcję egzo- i endoenergetyczną;
+- narysować wykres energetyczny;
+- wskazać energię aktywacji i zmianę energii;
+- wyjaśnić wpływ katalizatora.
 
-**[[extra:OLIMPIADA]]**
-- analizuje profile energetyczne wieloetapowe, związki z ΔU/ΔH, jakościowy wpływ katalizatora na profil.
+## 0.3 | Kompas — co trzeba wiedzieć wcześniej {#kompas}
 
-**80/20 (to, co zbiera punkty na E8 i na wejściu do LO):**
-1. Egzo = produkty niżej na wykresie; endo = produkty wyżej.  
-2. E_a to „góra” do pokonania — jest też w reakcjach egzo.  
-3. Obserwacja ciepła ≠ automatycznie „reakcja szybka”.
+- **Reakcja jako zjawisko** — F03, F16.
+- **Równanie reakcji, substraty i produkty** — F17.
+- **Pojęcie układu i otoczenia** — F01.
+- **Temperatura jako miara ruchu cząsteczek** — przyroda, fizyka.
+- **Ciepło i znak efektu energetycznego** — K01, K02.
+- **Temperatura i różnica temperatur** — F03, K01.
 
----
+## 0.4 | Diagnoza startowa {#diagnoza}
 
-## 3. Co trzeba wiedzieć wcześniej (kompas)
+Odpowiedz najpierw samodzielnie.
 
-| Pojęcie | Skąd | Po co tu |
-|---------|------|----------|
-| Reakcja vs zjawisko | F03, F16 | odróżniamy reakcję chemiczną |
-| Równanie reakcji | F17 | wiemy, co jest substratem, a co produktem |
-| Układ i otoczenie | F01 (poziomy opisu) | energia układu vs otoczenia |
-| Temperatura jako przejaw energii kinetycznej | przyroda / fizyka | obserwacja „nagrzewa się” / „ochładza” |
+1. Zapisz wzór na ciepło potrzebne do ogrzania substancji bez przemiany fazowej.
+2. Co to jest ciepło właściwe?
+3. Co dzieje się z temperaturą podczas topnienia czystej substancji pod stałym ciśnieniem?
+4. Zapisz wzór na ciepło topnienia.
+5. Ile ciepła potrzeba, aby ogrzać 100 g wody o 10 °C, jeżeli c = 4,2 J/(g·°C)?
 
-Jeśli coś z tego jest niepewne — wróć do ściąg F16/F17, zanim przejdziesz dalej.
+::: odp | Klucz diagnozy i interpretacja
+1. (1 pkt) Q = m·c·ΔT.
 
----
+2. (1 pkt) Ciepło właściwe to ilość ciepła potrzebna do ogrzania 1 g substancji o 1 °C.
 
-## 4. Zacznij od problemu (hipoteza ucznia)
+3. (1 pkt) Temperatura pozostaje stała.
 
-**Sytuacja 1.** Do zlewki z wodą wrzucasz tabletkę musującą. Naczynie robi się wyraźnie chłodniejsze.  
-**Hipoteza przed lekcją:** „Reakcja zużywa ciepło, więc jest endoenergetyczna.”  
+4. (1 pkt) Q = m·qt.
 
-**Sytuacja 2.** Spalasz magnez. Oślepiający błysk, dużo ciepła.  
-**Hipoteza:** „To egzoenergetyczna — energia się wydziela.”
+5. (1 pkt) Q = 100·4,2·10 = 4200 J = 4,2 kJ.
 
-**Po lekcji** obie hipotezy okażą się w dobrym kierunku, ale dodasz precyzję:
-- w (1) układ **pobiera** energię z otoczenia → temperatura otoczenia (wody) spada,
-- w (2) układ **oddaje** energię do otoczenia → temperatura otoczenia rośnie,
-- w obu przypadkach na wykresie energetycznym widać, czy produkty leżą niżej, czy wyżej niż substraty,
-- oraz że do startu reakcji i tak potrzebna jest bariera E_a (dlatego magnez nie zapala się sam w powietrzu w temperaturze pokojowej bez inicjacji).
+Interpretacja wyniku: 5 pkt — przejdź do wykresu i bilansu; 3–4 pkt — przeczytaj punkty 1–2; 0–2 pkt — zacznij od rdzenia.
+:::
 
----
+## 1 | Wykład — skąd bierze się ciepło albo chłód? {#wyklad} [[basic:E8]]
 
-## 5. Ściąga — poziom podstawowy E8
+Każda reakcja chemiczna polega na przekształceniu substratów w produkty. Podczas tego procesu zmienia się sposób, w jaki atomy są połączone. Ponieważ wiązania i oddziaływania między cząsteczkami mają energię, produkty mogą mieć inną energię wewnętrzną niż substraty.
 
-| Pojęcie | Definicja / reguła | Jak rozpoznać |
-|---------|-------------------|---------------|
-| **Reakcja egzoenergetyczna** | Układ oddaje energię do otoczenia | Naczynie się nagrzewa; produkty **niżej** na wykresie |
-| **Reakcja endoenergetyczna** | Układ pobiera energię z otoczenia | Naczynie się ochładza; produkty **wyżej** na wykresie |
-| **Wykres energetyczny** | Energia układu wzdłuż przebiegu reakcji | Oś Y: energia; oś X: postęp reakcji |
-| **Energia aktywacji E_a** | Minimalna energia, którą układ musi „mieć”, by reakcja ruszyła | Wysokość bariery od poziomu substrateów do „góry” |
-| **ΔE (jakościowo)** | Różnica energii produktów i substrateów | ΔE < 0 → egzo; ΔE > 0 → endo |
+Rozróżnij dwa pojęcia:
 
-**Mnemotechniki**
-- **Egzo = energia WYCHODZI** z układu (egzo- jak „ex” = na zewnątrz).  
-- **Endo = energia WCHODZI** do układu.  
-- **Góra na wykresie = E_a** — bez niej nawet „opłacalna” energetycznie reakcja nie startuje.
+- **Układ** — substancje, których przemianę badamy.
+- **Otoczenie** — wszystko poza układem, na przykład probówka, powietrze, woda w zlewce albo dłoń ucznia.
 
-**Przykłady E8 (zapamiętaj 2+2)**  
-Egzo: spalanie (węgla, metanu, magnezu), zobojętnianie mocnego kwasu mocną zasadą, reakcja Zn + HCl (nagrzewanie).  
-Endo: rozkład węglanu wapnia (w piecu), fotosynteza (energia ze światła), rozpuszczanie niektórych soli (np. NH₄NO₃ — ochłodzenie).
+Energia może przepływać między układem a otoczeniem. Jeżeli układ oddaje energię, otoczenie ją pobiera. Jeżeli układ pobiera energię, otoczenie ją oddaje.
 
----
+**Reakcja egzoenergetyczna** oddaje energię do otoczenia. Otoczenie się nagrzewa. W szkolnym zapisie zmiana energii układu jest ujemna:
 
-## 6. Wyjaśnienie od podstaw
+ΔE < 0
 
-### 6A. Dlaczego w ogóle mówimy o „energii reakcji”?
+**Reakcja endoenergetyczna** pobiera energię z otoczenia. Otoczenie się ochładza. Zmiana energii układu jest dodatnia:
 
-**Zasada zachowania energii:** energia nie znika i nie powstaje z niczego — tylko przechodzi między układem a otoczeniem (oraz zmienia formę: np. energia chemiczna ↔ ciepło).
+ΔE > 0
 
-Każda reakcja chemiczna to przebudowa wiązań: jedne pękają, inne powstają.  
-Pękanie wiązań **wymaga** energii (jak rozdzielanie magnesów — Khan); powstawanie wiązań **uwalnia** energię.  
-Wypadkowa decyduje, czy układ na końcu ma mniej, czy więcej energii niż na początku.
+Przykład reakcji egzoenergetycznej to spalanie wodoru w powietrzu:
 
-- Jeśli produkty mają **mniej** energii niż substraty → nadmiar idzie do otoczenia → **egzoenergetyczna**.  
-- Jeśli produkty mają **więcej** energii → brak trzeba pokryć z otoczenia → **endoenergetyczna**.
+2H₂ + O₂ → 2H₂O
 
-To nadal opis **jakościowy**. Dokładne liczby (ΔH, kJ/mol) wchodzą w K02. Tu uczymy się **czytać i rysować obraz**.
+Reakcja wydziela dużo ciepła. Płomień, gorące naczynie i nagrzane powietrze są obserwacjami przekazu energii do otoczenia.
 
-**Ilość vs szybkość (ważne rozróżnienie):**  
-Więcej substrateów → większa **ilość** ciepła wymienionego (więcej moli = więcej energii).  
-Temperatura, stężenie, katalizator → wpływają na **szybkość** (jak szybko to ciepło się pojawi), nie na znak ΔE. To dwa różne pokrętła.
+Przykład reakcji endoenergetycznej to rozkład węglanu wapnia w piecu wapienniczym:
 
-### 6B. Układ i otoczenie — kto komu oddaje energię?
+CaCO₃ → CaO + CO₂
 
-**Układ** = reagujące substancje (to, co zapisujemy w równaniu).  
-**Otoczenie** = wszystko wokół (naczynie, powietrze, woda w zlewce, termometr).
+Aby reakcja przebiegała, trzeba dostarczyć energię. Układ pobiera ją z otoczenia.
 
-| Typ reakcji | Energia układu | Obserwacja w otoczeniu |
-|-------------|----------------|------------------------|
-| Egzoenergetyczna | maleje | temperatura otoczenia **rośnie** (naczynie gorące) |
-| Endoenergetyczna | rośnie | temperatura otoczenia **maleje** (naczynie zimne) |
+Uwaga: obserwacja „naczynie się nagrzewa” nie zawsze dowodzi reakcji egzoenergetycznej. Jeżeli do zimnej wody wlejesz gorącą wodę, temperatura wzrośnie, ale nie dlatego, że zaszła reakcja chemiczna. Wniosek o efekcie energetycznym wymaga ustalenia, czy rzeczywiście zachodzi przemiana chemiczna.
 
-Ważne: obserwujemy zwykle **otoczenie** (dotykamy zlewki, patrzymy na termometr w wodzie). Wniosek o układzie wyciągamy z reguły: jeśli otoczenie się nagrzewa, układ oddał energię.
+Druga ostrożność: reakcja egzoenergetyczna może wymagać rozpoczęcia. Drewno spala się egzoenergetycznie, ale nie zapala się samo od siebie w zwykłych warunkach. Potrzebna jest energia początkowa, na przykład od zapałki. Ta energia pomaga pokonać barierę energetyczną, nazywaną energią aktywacji.
 
-### 6C. Wykres energetyczny — krok po kroku
+::: karta understand | W skrócie — układ i otoczenie
+Układ to substancje biorące udział w reakcji. Otoczenie to wszystko poza układem. W reakcji egzoenergetycznej energia przepływa z układu do otoczenia, a w endoenergetycznej — z otoczenia do układu.
+:::
 
-Rysujemy:
+::: karta core | Najważniejsze — znak ΔE
+Reakcja egzoenergetyczna: ΔE < 0. Reakcja endoenergetyczna: ΔE > 0. Znak opisuje zmianę energii układu, a nie temperaturę otoczenia.
+:::
 
-```
-Energia
-  ↑
-  │         *
-  │        / \          ← bariera = energia aktywacji E_a
-  │       /   \
-  │   S  /     \        ← S = poziom substrateów
-  │  ———/       \
-  │              \  P   ← P = poziom produktów (tu: niżej = egzo)
-  │               ———
-  └──────────────────→ postęp reakcji
-```
+::: karta warning | Uwaga — nagrzewanie nie zawsze oznacza reakcję
+Zmiana temperatury może wynikać z mieszania substancji o różnych temperaturach, ogrzewania zewnętrznego albo przemiany fizycznej. Wniosek o reakcji egzoenergetycznej wymaga potwierdzenia, że zaszła przemiana chemiczna.
+:::
 
-**Jak czytać:**
-1. Poziom S — energia substrateów.  
-2. „Góra” — **kompleks aktywny** (stan przejściowy); różnica wysokości S → góra = **E_a**.  
-3. Poziom P — energia produktów.  
-4. Różnica S → P: jeśli P niżej → egzo (ΔE < 0); jeśli P wyżej → endo (ΔE > 0).
+## 0.4a | Problem wyjściowy — dwie reakcje, dwa znaki {#problem}
 
-**Reakcja endoenergetyczna** — ten sam schemat, tylko P leży **powyżej** S:
+::: karta understand | Dwie reakcje, dwa znaki
+**Sytuacja 1:** do zlewki z wodą wrzucasz tabletkę musującą. Naczynie robi się chłodniejsze.
+**Sytuacja 2:** spalasz magnez. Jasny błysk, dużo ciepła.
 
-```
-Energia
-  ↑
-  │         *
-  │        / \          ← E_a (od S do góry — nadal jest!)
-  │       /   \
-  │      /     \  P     ← P powyżej S = endo
-  │     /       ———
-  │  S /
-  │  ———
-  └──────────────────→ postęp reakcji
-```
+Przed lekcją zapisz swoją hipotezę. Po lekcji wiesz, że w (1) układ **pobiera** energię z otoczenia, a w (2) **oddaje** ją do otoczenia. Dodatkowo: magnez nie zapali się sam w temperaturze pokojowej, bo potrzebuje inicjacji — tu działa bariera E_a.
+:::
 
-Bariera E_a istnieje **zawsze** — także gdy reakcja jest egzoenergetyczna.
+## 1a | Ściąga — egzo, endo i wykres {#sciaga}
 
-### 6D. Dlaczego E_a jest potrzebna nawet w reakcji egzo? [LO + most do K06]
+| Pojęcie | Reguła | Jak rozpoznać |
+|---|---|---|
+| Reakcja egzoenergetyczna | układ oddaje energię do otoczenia | naczynie się nagrzewa; produkty **niżej** na wykresie |
+| Reakcja endoenergetyczna | układ pobiera energię z otoczenia | naczynie się ochładza; produkty **wyżej** na wykresie |
+| Wykres energetyczny | energia układu w funkcji postępu reakcji | oś Y: energia; oś X: przebieg reakcji |
+| Energia aktywacji E_a | minimalna energia, by reakcja ruszyła | wysokość bariery nad poziomem substratów |
+| ΔE (jakościowo) | energia produktów minus energia substratów | ΔE < 0 → egzo; ΔE > 0 → endo |
 
-Wyobraź sobie kulkę w dolinie. Obok jest niższa dolina (produkty — „opłacalne” energetycznie). Żeby kulka się tam stoczyła, musi najpierw wtoczyć się na pagórek między dolinami. Ten pagórek to E_a.
+::: regula
+**Egzo = energia wychodzi z układu. Endo = energia wchodzi do układu.**
+**Góra na wykresie = E_a.** Nawet egzoenergetyczna reakcja potrzebuje tej góry, by ruszyć.
+:::
 
-Dlatego:
-- mieszanina H₂ i O₂ może stać w temperaturze pokojowej — reakcja jest silnie egzoenergetyczna, ale E_a jest wysoka;
-- iskra / płomień / katalizator dostarcza lub obniża barierę — i reakcja rusza (czasem wybuchowo).
+**Przykłady E8:** egzo — spalanie (węgla, metanu, magnezu), zobojętnianie mocnego kwasu mocną zasadą; endo — rozkład węglanu wapnia w piecu, fotosynteza (energia ze światła), rozpuszczanie azotanu(V) amonu NH₄NO₃ (ochłodzenie).
 
-**Wniosek E8/LO:**  
-**Energia reakcji (czy egzo/endo) ≠ szybkość reakcji.**  
-Szybkość zależy od tego, jak łatwo pokonać E_a i jak często cząsteczki zderzają się skutecznie (K05, K06).
+## 2 | Wykres energetyczny — substraty, produkty, Ea i ΔE {#wykres} [[understand:ROZUMIENIE]]
 
-### 6E. Jak z obserwacji przejść do wykresu? (analiza)
+Wykres energetyczny przedstawia zmianę energii układu podczas reakcji. Na osi poziomej umieszcza się przebieg reakcji, a na osi pionowej energię.
 
-| Obserwacja | Wniosek o układzie | Wykres |
-|------------|--------------------|--------|
-| Naczynie się nagrzewa | układ oddaje energię | P poniżej S |
-| Naczynie się ochładza | układ pobiera energię | P powyżej S |
-| Reakcja „nie chce” ruszyć bez podgrzania / iskry | istnieje istotna E_a | wysoka bariera |
-| Po dodaniu katalizatora reakcja idzie w niższej T | katalizator obniża E_a | niższa „góra” (profil się zmienia — K07) |
+Dla reakcji egzoenergetycznej:
 
-### 6F. Ciekawostki i kontekst (żeby zapamiętać)
+- substraty znajdują się wyżej;
+- produkty znajdują się niżej;
+- między nimi występuje szczyt — stan przejściowy;
+- wysokość szczytu nad substratami to energia aktywacji Ea;
+- różnica energii produktów i substratów jest ujemna: ΔE < 0.
 
-1. **Ogrzewacz do rąk** — utlenianie żelaza (proszek Fe + O₂ + katalizator solny). Silnie egzoenergetyczne; energia idzie w ciepło, które czujesz.  
-2. **Okłady chłodzące** (sportowe) — często rozpuszczanie NH₄NO₃ lub podobnej soli w wodzie: proces endoenergetyczny, temperatura spada o kilkanaście stopni.  
-3. **Fotosynteza** — klasyczny przykład endoenergetyczny w skali planety: energia światła „wchodzi” w układ (CO₂ + H₂O → cukier + O₂).  
-4. **Spalanie metanu w kuchence** — egzoenergetyczne; kontrolujemy dopływ substratu i zapłon, bo E_a jest pokonywana lokalnie przy płomieniu.  
-5. **Dlaczego lodówka „grzeje z tyłu”?** — nie jest to reakcja chemiczna w sensie K01, ale ten sam pomysł: ciepło zabrane z wnętrza (układ) trafia na zewnątrz (otoczenie). Pomaga utrwalić układ/otoczenie.
+Dla reakcji endoenergetycznej:
 
----
+- substraty znajdują się niżej;
+- produkty znajdują się wyżej;
+- między nimi również występuje szczyt;
+- energia aktywacji Ea to wysokość szczytu nad substratami;
+- różnica energii produktów i substratów jest dodatnia: ΔE > 0.
 
-## 7. Poziom LO — doprecyzowania
+Ważna zasada: **Ea mierzy się od poziomu substratów do szczytu, a nie od poziomu produktów do szczytu.**
 
-### 7A. ΔE a to, co później nazwiesz ΔH
+ΔE oblicza się jako:
 
-W K01 mówimy jakościowo o zmianie energii układu.  
-W K02 wejdzie **entalpia** ΔH — ciepło reakcji przy stałym ciśnieniu (najczęstszy warunek w labie i w tabelach).  
-Dla większości szkolnych reakcji w roztworze znak ΔE i ΔH jest ten sam: ujemny = egzo, dodatni = endo.  
-Nie mieszaj jeszcze wzorów — tu wystarczy: **wykres i znak**.
+ΔE = E(produkty) − E(substraty)
 
-### 7B. Katalizator na wykresie (zapowiedź K07)
+Dla reakcji egzoenergetycznej produkty mają mniej energii niż substraty, więc ΔE < 0. Dla reakcji endoenergetycznej produkty mają więcej energii, więc ΔE > 0.
 
-Katalizator **nie zmienia** poziomu S ani P (nie zmienia ΔE / ΔH).  
-Zmienia **drogę**: obniża barierę E_a.  
-Na wykresie: ta sama dolina substrateów i produktów, ale niższy pagórek pośrodku.
+Wyobraź sobie wspinaczkę po górskim przełęczy. Substraty są w dolinie po jednej stronie, produkty w dolinie po drugiej. Szczyt przełęczy to stan przejściowy. Energia aktywacji to wysokość, którą trzeba wspiąć się z doliny substratów. ΔE to różnica wysokości między doliną produktów a doliną substratów.
 
-### 7C. Reakcje odwracalne (most do K08)
+Metafora ma granice: cząsteczki nie „wspinają się” świadomie, a reakcja nie przebiega po jednej ustalonej ścieżce. Pomaga jednak odróżnić barierę startu od bilansu energetycznego.
 
-Jeśli reakcja jest odwracalna, wykres ma sens w obie strony.  
-E_a „w przód” i E_a „wstecz” są różne:  
-E_a(wstecz) = E_a(w przód) − ΔE (dla egzo ΔE ujemne, więc bariera wstecz jest wyższa).  
-To później łączy się z regułą Le Chateliera i stałą równowagi.
+::: karta understand | W skrócie — Ea i ΔE
+Ea to wysokość bariery od substratów do szczytu. ΔE to różnica energii między produktami a substratami. Reakcja może mieć małą Ea i jednocześnie duży efekt energetyczny, albo odwrotnie.
+:::
 
----
+::: nie-myl | Egzoenergetyczna, endoenergetyczna i wymagająca rozpoczęcia
+- Egzoenergetyczna ≠ natychmiastowa — spalanie jest egzoenergetyczne, ale może wymagać zapłonu; test rozstrzygający: sprawdź znak ΔE, a nie to, czy reakcja zaczyna się sama.
+- Endoenergetyczna ≠ niemożliwa — reakcja endoenergetyczna może zachodzić, jeżeli pobiera energię z otoczenia; test rozstrzygający: sprawdź, czy produkty mają więcej energii niż substraty.
+- Ea ≠ ΔE — Ea to bariera startu, ΔE bilans energetyczny; test rozstrzygający: Ea mierzysz od substratów do szczytu, ΔE między produktem a substratem.
+:::
 
-## 8. Klinika błędów
+::: karta warning | Uwaga — Ea mierzysz od substratów
+Częstym błędem jest mierzenie energii aktywacji od poziomu produktów do szczytu. Energia aktywacji to wysokość bariery nad substratami, ponieważ to substraty muszą ją pokonać, aby reakcja mogła się rozpocząć.
+:::
 
-| Błąd ucznia | Co jest nie tak | Popraw | Reguła |
-|-------------|-----------------|--------|--------|
-| „Egzo = zawsze szybka” | Mylenie energii z kinetyką | Egzo mówi o ΔE, nie o E_a | Energia ≠ szybkość |
-| „Skoro naczynie zimne, reakcja nie zachodzi” | Zachodzi, ale pobiera ciepło | Endo: układ bierze energię z otoczenia | Obserwuj otoczenie |
-| Brak E_a na wykresie egzo | Bariera zawsze jest | Rysuj „górę” nawet gdy P < S | E_a ≠ 0 |
-| „Produkty wyżej = egzo” | Odwrotnie | Wyżej = endo | P vs S |
-| Katalizator „dodaje energii” | Nie — obniża barierę | Profil z niższą E_a | ΔE bez zmian |
-| Mieszanie ΔE z temperaturą reakcji | T to warunek, ΔE to wynik | Najpierw wykres, potem warunki | |
+## 3 | Katalizator i energia aktywacji {#katalizator} [[understand:ROZUMIENIE]] [[extra:AMBITNE]]
 
-**Klinika 2.0 — przećwicz**  
-1. Znajdź błąd w zdaniu: „Reakcja egzoenergetyczna nie potrzebuje energii aktywacji.”  
-2. Popraw.  
-3. Nazwij regułę.  
-4. Podaj kontrprzykład (H₂ + O₂).
+Katalizator to substancja, która zwiększa szybkość reakcji, ale sama nie ulega trwałemu zużyciu w jej przebiegu. Działa między innymi przez obniżenie energii aktywacji.
 
----
+Na wykresie energetycznym katalizator obniża szczyt. Poziomy substratów i produktów pozostają takie same. Dlatego:
 
-## 9. Obserwacja / model (do sali lub domowego eksperymentu myślowego)
+- Ea maleje;
+- ΔE pozostaje bez zmian;
+- reakcja przebiega szybciej;
+- bilans energetyczny reakcji się nie zmienia.
 
-**Problem:** Która reakcja jest egzo, a która endo — i jak to zobaczyć na wykresie?
+Jeżeli reakcja jest egzoenergetyczna, pozostaje egzoenergetyczna. Jeżeli jest endoenergetyczna, pozostaje endoenergetyczna. Katalizator nie zamienia reakcji endoenergetycznej w egzoenergetyczną.
 
-**Wariant A (bezpieczny, szkolny):**  
-Rozpuszczanie NaOH w wodzie (ostrożnie — żrące) vs rozpuszczanie NH₄NO₃ lub mocznika.  
-- NaOH: naczynie gorące → egzo (w sensie procesu rozpuszczania).  
-- NH₄NO₃: naczynie zimne → endo.
+Dlaczego obniżenie Ea przyspiesza reakcję? Cząsteczki zderzają się z różnymi energiami. Im niższa bariera, tym większa liczba zderzeń ma wystarczającą energię, aby doprowadzić do reakcji. Wzrost temperatury również zwiększa liczbę zderzeń o odpowiedniej energii, ale działa inaczej niż katalizator: nie obniża bariery, lecz zwiększa energię cząsteczek.
 
-**Wariant B (tylko pokaz nauczyciela):**  
-Spalanie taśmy magnezowej — intensywne światło i ciepło → egzo; wysoka E_a (trzeba zainicjować).
+Katalizator może działać na różne sposoby. Może tworzyć przejściowe połączenie z substratami, zapewniać inną ścieżkę reakcji albo ułatwiać rozpad cząsteczek. Po reakcji wraca do postaci wyjściowej.
 
-**Model na kartce:**  
-Narysuj dwa wykresy obok siebie: lewy egzo (P nisko), prawy endo (P wysoko). Na obu zaznacz E_a.  
-Podpisz: „układ oddaje” / „układ pobiera”.
+::: karta understand | W skrócie — katalizator
+Katalizator obniża energię aktywacji, dzięki czemu więcej zderzeń prowadzi do reakcji. Nie zmienia ΔE, więc nie zmienia tego, czy reakcja jest egzo- czy endoenergetyczna.
+:::
 
-**BHP:**  
-- Nie wąchać oparów.  
-- NaOH — okulary, rękawice; nie dotykać stałego NaOH wilgotnymi rękami.  
-- Magnez — tylko pod wyciągiem / na zewnątrz, ochrona wzroku; nie patrzeć w płomień.
+::: karta warning | Uwaga — katalizator nie zmienia bilansu energetycznego
+Jeżeli ktoś twierdzi, że katalizator zmniejsza ΔE reakcji, popełnia błąd. Katalizator obniża Ea, a poziomy substratów i produktów pozostają bez zmian.
+:::
 
----
+## 4 | Przykłady prowadzone {#przyklady} [[basic:E8]] [[extra:LO]]
 
-## 10. Ćwiczenia (z kluczem)
+**Przykład 1 — spalanie wodoru.**
 
-### 10A. Podstawa E8
+2H₂ + O₂ → 2H₂O
 
-1. Uzupełnij: Reakcja egzoenergetyczna — układ …… energię do otoczenia; na wykresie produkty leżą …… niż substraty.  
-2. Narysuj jakościowy wykres energetyczny reakcji endoenergetycznej i zaznacz E_a.  
-3. Podaj po dwa przykłady reakcji egzo i endo (z życia lub z lekcji chemii).  
-4. Dlaczego mieszanina gazu ziemnego z powietrzem nie zapala się sama w temperaturze pokojowej, mimo że spalanie jest egzoenergetyczne?
+Reakcja wydziela ciepło. Jest egzoenergetyczna:
 
-### 10B. Trening
+ΔE < 0
 
-5. W zlewce po zmieszaniu reagentów temperatura wzrosła o 8 °C. Co możesz powiedzieć o znaku zmiany energii układu? Narysuj odpowiadający wykres (jakościowo).  
-6. Na wykresie energia substrateów = „poziom 5”, energia produktów = „poziom 2”, szczyt bariery = „poziom 8” (umowne jednostki). Ile wynosi E_a? Jaki jest znak ΔE?  
-7. Uczeń napisał: „Reakcja endoenergetyczna zawsze przebiega powoli.” Oceń i popraw.
+Na wykresie produkty znajdują się niżej niż substraty. Mimo to reakcja może wymagać zapłonu, ponieważ istnieje energia aktywacji Ea.
 
-### 10C. LO / transfer
+**Przykład 2 — rozpuszczanie chlorku amonu.**
 
-8. Wyjaśnij jednym zdaniem różnicę między ΔE a E_a.  
-9. Katalizator obniża E_a o 30 % (umownie). Czy zmienia to położenie produktów na wykresie? Co się zmienia w praktyce?  
-10. Zaprojektuj prosty test (obserwacja + wniosek), który pozwoli zaklasyfikować nieznaną reakcję jako egzo- lub endoenergetyczną w warunkach szkolnych.
+Po rozpuszczeniu NH₄Cl w wodzie zlewka może wyraźnie się ochładzać. Układ pobiera energię z otoczenia. Proces jest endoenergetyczny:
 
-### Klucz
+ΔE > 0
 
-1. oddaje; niżej.  
-2. S nisko → bariera → P wyżej niż S; E_a = od S do szczytu.  
-3. Egzo: spalanie Mg, Zn+HCl, zobojętnianie HCl+NaOH. Endo: rozkład CaCO₃, fotosynteza, rozpuszczanie NH₄NO₃.  
-4. Wysoka energia aktywacji — bez iskry/płomienia bariera nie jest pokonywana.  
-5. Układ oddał energię → egzo → P poniżej S; wykres jak w 6C.  
-6. E_a = 8−5 = 3; ΔE = 2−5 = −3 → egzo.  
-7. Fałsz. Szybkość zależy od E_a i warunków, nie od samego znaku ΔE. Endo może być szybka przy wysokiej T lub niskiej E_a.  
-8. ΔE = różnica energii produktów i substrateów; E_a = wysokość bariery do pokonania.  
-9. Nie zmienia położenia P (ani ΔE); obniża barierę → więcej cząstek pokonuje E_a → reakcja szybsza / możliwa w niższej T.  
-10. Np. zmieszać reagenty w zlewce z termometrem / dotykiem: wzrost T → egzo; spadek T → endo. (Uwzględnić BHP i czy proces w ogóle zachodzi.)
+**Przykład 3 — rozkład węglanu wapnia.**
 
----
+CaCO₃ → CaO + CO₂
 
-## 11. Test końcowy (3+2+2+1)
+Reakcja wymaga dostarczenia energii. Jest endoenergetyczna:
 
-**A. (3 pkt)**  
-1. Zdefiniuj reakcję egzoenergetyczną i endoenergetyczną.  
-2. Narysuj wykres energetyczny reakcji egzo z zaznaczoną E_a.  
-3. Podaj jeden przykład egzo i jeden endo.
+ΔE > 0
 
-**B. (2 pkt)** Prawda / fałsz:  
-a) W reakcji egzoenergetycznej energia aktywacji jest zawsze równa zeru.  
-b) Jeśli naczynie się ochładza, układ pobiera energię z otoczenia.
+**Przykład 4 — kwas solny i magnez.**
 
-**C. (2 pkt)**  
-Na wykresie substraty mają energię „10”, produkty „4”, szczyt bariery „15”.  
-Oblicz E_a i ΔE (umowne jednostki). Określ typ reakcji.
+Mg + 2HCl → MgCl₂ + H₂↑
 
-**D. (1 pkt)**  
-Dlaczego nie wolno utożsamiać „reakcja egzoenergetyczna” z „reakcja szybka”?
+Probówka się nagrzewa. Reakcja jest egzoenergetyczna:
 
-**Klucz**  
-A1: egzo — układ oddaje energię; endo — układ pobiera.  
-A2: S → góra (E_a) → P poniżej S.  
-A3: np. spalanie / fotosynteza.  
-B: a) F; b) P.  
-C: E_a = 5; ΔE = −6; egzo.  
-D: Szybkość zależy od E_a i warunków zderzeń, nie od samego znaku ΔE.
+ΔE < 0
 
----
+Aby przyspieszyć reakcję bez zmiany jej znaku energetycznego, można zwiększyć stężenie kwasu, rozdrobnić magnez albo delikatnie podgrzać układ. Znak ΔE pozostaje ujemny.
 
-## 12. Checklista
+**Przykład 5 — katalizator w reakcji egzoenergetycznej.**
 
-- [ ] Rozróżniam egzo / endo po obserwacji i po wykresie.  
-- [ ] Rysuję wykres z E_a (także dla egzo).  
-- [ ] Wiem, że P niżej = egzo, P wyżej = endo.  
-- [ ] Nie mylę ΔE z E_a ani z szybkością.  
-- [ ] Podaję po ≥2 przykłady każdej kategorii.  
-- [ ] (LO) Wiem, że katalizator zmienia E_a, nie ΔE.
+Po dodaniu katalizatora szczyt Ea obniża się. Poziomy substratów i produktów pozostają bez zmian. Reakcja przebiega szybciej, ale nadal jest egzoenergetyczna:
 
----
+ΔE < 0
 
-## 13. Mapa pojęć
+::: karta basic | Po tej lekcji potrafisz
+- nazwać reakcję egzo- lub endoenergetyczną na podstawie obserwacji i wykresu;
+- narysować jakościowy wykres energetyczny z barierą Ea;
+- wskazać, gdzie układ traci, a gdzie zyskuje energię;
+- połączyć obserwację ciepła z modelem energetycznym.
+:::
 
-```
-Energia reakcji
-├── Egzoenergetyczna (P < S, układ oddaje)
-├── Endoenergetyczna (P > S, układ pobiera)
-├── Wykres energetyczny
-│     ├── poziom S
-│     ├── bariera E_a
-│     └── poziom P
-└── To nie jest kinetyka
-      ├── E_a wpływa na szybkość (K06)
-      └── katalizator obniża E_a (K07)
-```
+::: karta exam | Zadanie 1 (3 pkt) — Egzo czy endo?
+Oceń, czy reakcja jest egzo- czy endoenergetyczna:
 
----
+a) spalanie wodoru w powietrzu (1 pkt)
 
-## 14. Słownik
+b) rozpuszczanie NH₄Cl w wodzie, gdy zlewka mocno się ochładza (1 pkt)
 
-| Termin | Definicja |
-|--------|-----------|
-| Reakcja egzoenergetyczna | Reakcja, w której układ oddaje energię do otoczenia |
-| Reakcja endoenergetyczna | Reakcja, w której układ pobiera energię z otoczenia |
-| Wykres energetyczny | Wykres energii układu w funkcji postępu reakcji |
-| Energia aktywacji E_a | Minimalna energia potrzebna do zainicjowania reakcji (wysokość bariery od S do kompleksu aktywnego) |
-| Kompleks aktywny | Nietrwały stan przejściowy o wysokiej energii; powstaje przy zderzeniu efektywnym (ZPE / LO) |
-| Układ | Reagujące substancje (to, co w równaniu) |
-| Otoczenie | Wszystko poza układem (naczynie, powietrze, rozpuszczalnik jako „tło”) |
-| ΔE (jakościowo) | Różnica energii produktów i substrateów (efekt energetyczny) |
-| Zderzenie efektywne | Zderzenie z energią ≥ E_a i właściwą orientacją (most do K06) |
+c) rozkład CaCO₃ w piecu wapienniczym (1 pkt)
 
----
+::: odp | Pokaż klucz
+a) (1 pkt) Egzoenergetyczna. Reakcja oddaje ciepło do otoczenia; ΔE < 0.
 
-## 15. [[extra:OLIMPIADA]] — warstwa konkursowa
+b) (1 pkt) Endoenergetyczna. Układ pobiera energię z otoczenia; ΔE > 0.
 
-### 15A. Profil wieloetapowy
-Reakcja może mieć kilka barier (kilka stanów przejściowych). Etap z najwyższą E_a jest zwykle etapem limitującym szybkość. Na wykresie: kilka „górek”; o kinetyce decyduje najwyższa.
+c) (1 pkt) Endoenergetyczna. Reakcja wymaga dostarczenia energii; ΔE > 0.
+:::
+:::
 
-### 15B. Związek z I zasadą termodynamiki
-ΔU = Q + W (konwencje znaków zależą od podręcznika).  
-Przy stałej objętości Q_V = ΔU. Przy stałym ciśnieniu Q_p = ΔH.  
-W szkolnym K01 wystarczy jakość; na olimpiadzie bywa wymagane przejście: obserwowane ciepło ↔ ΔU/ΔH w określonych warunkach.
+::: adv | Zadanie 2 (4 pkt) — Katalizator na wykresie | poziom ambitny
+Do reakcji egzoenergetycznej dodano katalizator.
 
-### 15C. Jakościowy wpływ T na to, „czy reakcja idzie”
-Nawet przy ΔE < 0 niska T może oznaczać, że prawie żadna cząstka nie ma energii ≥ E_a (rozkład Boltzmanna). Stąd „mieszanina stabilna kinetycznie, niestabilna termodynamicznie” — motyw często wracający w zadaniach konkursowych.
+a) Co dzieje się z energią aktywacji Ea? (1 pkt)
 
-### 15D. Zadanie olimpijskie (wzorcowe)
-Dano profil energetyczny z dwiema barierami (E_a1 = 80, E_a2 = 120, ΔE = −40, umowne kJ/mol).  
-a) Który etap limituje szybkość?  
-b) Czy reakcja jest egzoenergetyczna?  
-c) Jak zmieni się profil po wprowadzeniu katalizatora działającego tylko na etap 2?  
-**Szkic odpowiedzi:** a) etap 2 (wyższa bariera); b) tak (ΔE < 0); c) obniży się druga góra, pierwsza bez zmian; limitujący może się zmienić.
+b) Co dzieje się ze zmianą energii ΔE? (1 pkt)
 
----
+c) Narysuj lub opisz wykres przed i po dodaniu katalizatora. (1 pkt)
 
-## 16. Co dalej?
+d) Wyjaśnij, dlaczego katalizator przyspiesza reakcję. (1 pkt)
 
-- **K02** — entalpia ΔH, prawo Hessa, liczby w kJ/mol.  
-- **K06** — dlaczego E_a w ogóle istnieje (zderzenia, orientacja).  
-- **K07** — jak katalizator zmienia wykres.  
-- Powtórka: narysuj z pamięci wykres egzo i endo z E_a w 60 sekund.
+::: odp | Pokaż klucz
+a) (1 pkt) Energia aktywacji maleje.
 
----
+b) (1 pkt) ΔE pozostaje bez zmian.
 
-## 17. Jak się uczyć tej lekcji?
+c) (1 pkt) Poziomy substratów i produktów pozostają takie same. Szczyt bariery obniża się. Ponieważ reakcja jest egzoenergetyczna, produkty znajdują się niżej niż substraty.
 
-1. Narysuj oba wykresy (egzo/endo) z podpisami — bez patrzenia.  
-2. Do każdego wykresu dopisz jedną obserwację z życia.  
-3. Rozwiąż test końcowy na czas.  
-4. W klinice błędów zakryj kolumnę „Popraw” i sam popraw zdania.  
-5. (LO) Wyjaśnij komuś różnicę ΔE vs E_a na przykładzie H₂+O₂.
+d) (1 pkt) Niższa Ea oznacza, że większa liczba zderzeń cząsteczek ma wystarczającą energię do przejścia przez barierę, więc reakcja przebiega szybciej.
+:::
+:::
 
----
+## 5 | Klinika błędów {#klinika} [[basic:E8]] [[understand:ROZUMIENIE]]
 
-## AUDYT Grok — 2026-10-09 (W24) + re-audyt po inspiracjach
+::: klinika | Błąd | Poprawnie | Dlaczego?
+| „Reakcja egzoenergetyczna zawsze zaczyna się natychmiast.” | Reakcja egzoenergetyczna może wymagać energii początkowej. | Energia aktywacji jest barierą startu, niezależnie od znaku ΔE. |
+| „Ea to różnica energii produktów i substratów.” | ΔE to różnica energii produktów i substratów. | Ea to wysokość bariery nad substratami. |
+| „Katalizator zmienia ΔE.” | Katalizator obniża Ea, a ΔE pozostaje bez zmian. | Katalizator zmienia ścieżkę reakcji i wysokość bariery, nie bilans energetyczny. |
+| „Nagrzewanie probówki zawsze dowodzi reakcji egzoenergetycznej.” | Nagrzewanie może wynikać z reakcji, ale wymaga potwierdzenia przemiany chemicznej. | Zmiana temperatury może też wynikać z mieszania substancji o różnych temperaturach. |
+| „Reakcja endoenergetyczna jest niemożliwa.” | Reakcja endoenergetyczna może zachodzić, pobierając energię z otoczenia. | Produkty mają wtedy więcej energii niż substraty. |
+| „W reakcji egzoenergetycznej produkty mają więcej energii.” | W reakcji egzoenergetycznej produkty mają mniej energii niż substraty. | Nadmiar energii jest oddawany do otoczenia. |
+| „Wzrost temperatury obniża Ea.” | Wzrost temperatury zwiększa energię cząsteczek, ale nie obniża Ea. | Katalizator obniża barierę, a temperatura zwiększa liczbę zderzeń o wystarczającej energii. |
+| „ΔE mierzy się od substratów do szczytu.” | Ea mierzy się od substratów do szczytu. | ΔE to różnica energii produktów i substratów. |
+| „Reakcja endoenergetyczna zawsze zachodzi bez dostarczania energii.” | Reakcja endoenergetyczna wymaga pobrania energii z otoczenia. | Bez dopływu energii nie może przebiegać samorzutnie w prostym układzie. |
+| „Katalizator zużywa się w reakcji.” | Katalizator nie ulega trwałemu zużyciu w przebiegu reakcji. | Po reakcji wraca do postaci, w której może działać ponownie. |
+:::
 
-**Co zrobiono (pierwsza wersja W24):**  
-Pełna przebudowa z ~2,8 KB: pytanie przewodnie, cele warstwowe E8/LO/olimpiada, kompas, problem wejściowy, ściąga, wykład 6A–6F, ciekawostki, LO, klinika, model/BHP, ćwiczenia 10A–C, test, checklista, mapa, słownik, [[extra:OLIMPIADA]].
+::: mity
+„Reakcja egzoenergetyczna zawsze jest gwałtowna.” || Reakcja może oddawać energię powoli. Tempo zależy między innymi od energii aktywacji, temperatury i powierzchni kontaktu substratów.
 
-**Re-audyt + uzupełnienia (ten krok):**  
-Porównanie z Khan Academy (system/surroundings, bond breaking = energy in / forming = energy out, energy diagrams, amount vs rate) oraz ZPE.gov.pl (kompleks aktywny, zderzenie efektywne, efekt energetyczny ΔE, wykresy egzo/endo z E_a).
+„Reakcja endoenergetyczna zawsze wymaga płomienia.” || Może pobierać energię z otoczenia, na przykład z wody w zlewce, przez co roztwór się ochładza.
 
-**Dodane / wzmocnione:**
-1. Zasada zachowania energii (explicit) w 6A.  
-2. Model „pękanie magnesów” (Khan) — pękanie wiązań wymaga energii.  
-3. Rozróżnienie **ilość ciepła** vs **szybkość** (Khan middle-school sequence).  
-4. Termin **kompleks aktywny** na wykresie i w słowniku (wymóg ZPE / LO).  
-5. Osobny schemat ASCII dla reakcji **endo** (wcześniej tylko opis słowny).  
-6. Zderzenie efektywne w słowniku (most do K06 bez dublowania teorii zderzeń).
+„Katalizator jest źródłem energii.” || Katalizator obniża barierę energetyczną, ale nie dostarcza energii reakcji.
 
-**Bez dublowania K02:** liczby ΔH, prawo Hessa, tablice — zostają w K02.  
-**Bez dublowania K06:** pełna teoria zderzeń i rozkład Boltzmanna — w K06.  
-**Otwarte:** recenzja merytoryczna; arkusze CKE (brak w paczce).
+„Im wyższa temperatura, tym mniejsza energia aktywacji.” || Temperatura zwiększa energię cząsteczek, ale nie zmienia wysokości bariery Ea.
 
-**Status:** UZUPEŁNIONE + zrevidowane — gotowe.
+„Jeżeli probówka się nagrzewa, na pewno zaszła reakcja chemiczna.” | Zmiana temperatury może wynikać także z procesu fizycznego. | Wniosek wymaga potwierdzenia przemiany chemicznej.
+
+„ΔE można zmienić, stosując lepszy katalizator.” || Katalizator zmienia Ea, ale nie zmienia energii substratów ani produktów, więc nie zmienia ΔE.
+:::
+
+## 6 | Ćwiczenia z kluczem {#cwiczenia} [[basic:E8]] [[extra:LO]]
+
+**Ćwiczenie 1.** Oceń, czy reakcja jest egzo- czy endoenergetyczna: spalanie wodoru w powietrzu.
+
+::: odp | Klucz
+Egzoenergetyczna. Reakcja oddaje ciepło do otoczenia; ΔE < 0.
+:::
+
+**Ćwiczenie 2.** Narysuj jakościowy wykres energetyczny reakcji endoenergetycznej i zaznacz S, P, Ea oraz ΔE.
+
+::: odp | Klucz
+Poziom substratów S znajduje się niżej. Poziom produktów P znajduje się wyżej. Szczyt znajduje się nad S. Ea to wysokość szczytu ponad S. ΔE = E(P) − E(S) > 0.
+:::
+
+**Ćwiczenie 3.** Probówka z kwasem solnym i magnezem się nagrzewa. Zapisz typ reakcji, wniosek o znaku ΔE oraz sposób przyspieszenia reakcji bez zmiany znaku.
+
+::: odp | Klucz
+Reakcja jest egzoenergetyczna. ΔE < 0. Można zwiększyć stężenie kwasu, rozdrobnić magnez albo delikatnie podgrzać układ. Znak ΔE pozostaje ujemny.
+:::
+
+**Ćwiczenie 4.** Do reakcji egzoenergetycznej dodano katalizator. Jak zmieni się wykres i ΔE?
+
+::: odp | Klucz
+Szczyt Ea obniża się. Poziomy substratów i produktów pozostają bez zmian. Reakcja przebiega szybciej, a ΔE nadal jest ujemne.
+:::
+
+**Ćwiczenie 5 — mini-test samodzielny.** Odpowiedz bez zaglądania do lekcji: 1) Zapisz wzór na ciepło ogrzewania. 2) Co to jest ciepło właściwe? 3) Co dzieje się z temperaturą podczas topnienia? 4) Zapisz wzór na ciepło topnienia. 5) Ile ciepła potrzeba, aby ogrzać 100 g wody o 10 °C, jeżeli c = 4,2 J/(g·°C)? Potem sprawdź odpowiedzi w diagnozie.
+
+## 7 | Ciekawostki {#ciekawostki} [[extra:AMBITNE]]
+
+::: karta extra | Dlaczego pH krwi nie może się bardzo zmienić?
+Prawidłowe pH krwi mieści się w wąskim zakresie około 7,35–7,45. Odchylenia poza ten zakres są groźne dla zdrowia. Organizm wykorzystuje bufory, płuca usuwające nadmiar CO₂ oraz nerki regulujące skład jonowy krwi. (źródło: materiały fizjologiczne, orientacyjnie)
+:::
+
+::: karta extra | Bufory w akwarium i basenie
+Akwaryści i operatorzy basenów stosują preparaty buforujące, aby pH wody nie zmieniało się gwałtownie po dodaniu nawozów lub środków dezynfekcyjnych. Działają one na tej samej zasadzie co bufor w laboratorium.
+:::
+
+::: karta extra | Katalizatory w samochodzie
+W katalizatorach samochodowych zachodzą reakcje zmniejszające ilość szkodliwych składników spalin. Katalizator obniża bariery energetyczne reakcji, ale nie jest trwale zużywany podczas normalnej pracy.
+:::
+
+::: karta extra | Dlaczego drewno nie zapala się samo?
+Spalanie drewna jest egzoenergetyczne, ale wymaga pokonania energii aktywacji. Zapałka, iskra albo wysoka temperatura dostarczają energii początkowej. Po rozpoczęciu reakcji wydzielane ciepło może podtrzymywać dalsze spalanie.
+:::
+
+## 8 | Słownik {#slownik} [[understand:ROZUMIENIE]]
+
+::: slownik
+Układ :: substancje, których przemianę badamy.
+Otoczenie :: wszystko poza układem, mogące wymieniać z nim energię.
+Reakcja egzoenergetyczna :: reakcja oddająca energię do otoczenia; ΔE < 0.
+Reakcja endoenergetyczna :: reakcja pobierająca energię z otoczenia; ΔE > 0.
+Energia wewnętrzna :: energia związana z cząsteczkami układu i oddziaływaniami między nimi.
+Zmiana energii ΔE :: różnica energii produktów i substratów.
+Energia aktywacji Ea :: minimalna energia potrzebna do rozpoczęcia reakcji.
+Stan przejściowy :: stan o najwyższej energii na prostej ścieżce reakcji.
+Katalizator :: substancja zwiększająca szybkość reakcji przez obniżenie energii aktywacji, bez trwałego zużycia.
+Wykres energetyczny :: wykres przedstawiający zmianę energii układu podczas reakcji.
+Ciepło :: energia przekazywana między układem a otoczeniem wskutek różnicy temperatur.
+Temperatura :: miara średniej energii ruchu cząsteczek.
+Spalanie :: reakcja z tlenem, zwykle egzoenergetyczna.
+Rozkład :: reakcja, w której z jednego substratu powstają dwa lub więcej produktów.
+Bilans energetyczny :: porównanie energii układu przed i po reakcji.
+:::
+
+## 9 | Test {#test} [[basic:E8]] [[extra:LO]]
+
+::: test
+? Które zdanie jest poprawne?
++ Reakcja egzoenergetyczna oddaje energię do otoczenia.
+- Reakcja egzoenergetyczna pobiera energię z otoczenia.
+- Reakcja egzoenergetyczna zawsze zachodzi natychmiast.
+- Reakcja egzoenergetyczna ma ΔE > 0.
+! W reakcji egzoenergetycznej układ oddaje energię, więc ΔE < 0.
+
+? Dla reakcji endoenergetycznej:
++ ΔE > 0
+- ΔE < 0
+- ΔE = 0
+- Ea = 0
+! Produkty mają więcej energii niż substraty, więc zmiana energii jest dodatnia.
+
+? Energia aktywacji Ea to:
++ minimalna energia potrzebna do rozpoczęcia reakcji
+- różnica energii produktów i substratów
+- energia oddana do otoczenia
+- energia katalizatora
+! Ea to wysokość bariery energetycznej nad substratami.
+
+? Katalizator:
++ obniża energię aktywacji, ale nie zmienia ΔE
+- zwiększa energię aktywacji
+- zmienia ΔE reakcji
+- zużywa się trwale w reakcji
+! Katalizator obniża barierę energetyczną, nie zmieniając poziomów substratów i produktów.
+
+? Na wykresie reakcji egzoenergetycznej produkty znajdują się:
++ niżej niż substraty
+- wyżej niż substraty
+- na tym samym poziomie co substraty
+- zawsze na szczycie wykresu
+! Produkty mają mniej energii niż substraty, dlatego nadmiar energii jest oddawany do otoczenia.
+
+? Probówka z kwasem solnym i magnezem się nagrzewa. Reakcja jest:
++ egzoenergetyczna
+- endoenergetyczna
+- obojętna energetycznie
+- niemożliwa do określenia
+! Nagrzewanie otoczenia wskazuje na oddawanie energii przez układ, więc ΔE < 0.
+? Reakcja egzoenergetyczna to reakcja, w której:
++ układ oddaje energię do otoczenia
+- układ pobiera energię z otoczenia
+- nie zmienia się energia
+- powstaje katalizator
+! Egzo = energia wychodzi.
+
+? Naczynie po reakcji jest zimne. Reakcja jest:
+- egzoenergetyczna
++ endoenergetyczna
+- katalityczna
+- bez wymiany energii
+! Otoczenie się ochłodziło, więc układ pobrał energię.
+
+? Na wykresie energetycznym E_a to:
+- różnica poziomów produktów i substratów
++ wysokość szczytu nad poziomem substratów
+- wysokość szczytu nad poziomem produktów
+- stężenie substratów
+! Bariera musi zostać pokonana.
+
+? Katalizator w reakcji egzoenergetycznej:
+- zmienia znak ΔE
++ obniża E_a
+- podnosi poziom produktów
+- zużywa się w równaniu
+! Zmienia szybkość, nie bilans energii.
+
+? Które zdanie jest prawdziwe?
+- Reakcja egzo nie potrzebuje E_a.
++ Reakcja egzo również potrzebuje E_a, by ruszyć.
+- E_a występuje tylko w endo.
+- Egzo oznacza pochłanianie ciepła.
+! Bariera jest niezależna od znaku ΔE.
+
+? Które zjawisko jest przykładem reakcji endoenergetycznej?
++ rozpuszczanie NH₄NO₃ w wodzie (ochłodzenie)
+- spalanie metanu
+- zobojętnianie HCl przez NaOH
+- reakcja magnezu z kwasem
+! Otoczenie się ochładza.
+:::
+
+## 8a | Fiszki {#fiszki}
+
+::: fiszki
+Co oznacza egzoenergetyczna? | układ oddaje energię do otoczenia | basic:podstawa
+Co oznacza endoenergetyczna? | układ pobiera energię z otoczenia | basic:podstawa
+Czym jest E_a? | bariera energetyczna do pokonania przed reakcją | basic:podstawa
+Jak zachowuje się otoczenie przy egzo? | nagrzewa się | basic:podstawa
+Czy katalizator zmienia ΔE? | nie — obniża E_a | understand:rozumienie
+Czy reakcja egzo potrzebuje E_a? | tak | understand:rozumienie
+Gdzie na wykresie leży produkt przy endo? | wyżej niż substraty | extra:ambitne
+:::
+
+## 7a | Poziom LO — co dalej (zarys) {#lo}
+
+- ΔE dla reakcji w warunkach standardowych nazywa się **entalpią reakcji ΔH** (K02): ΔH < 0 dla egzo, ΔH > 0 dla endo; wartości podajemy w kJ/mol.
+- E_a wiąże się z teorią zderzeń (K06): tylko zderzenia o energii nie mniejszej niż E_a prowadzą do reakcji.
+- Przy wielu etapach wykres ma kilka szczytów; najwyższy szczyt wyznacza etap najwolniejszy.
+
+## 10 | Checklista {#checklista} [[basic:E8]] [[understand:ROZUMIENIE]]
+
+::: checklista
+- [ ] umiem rozróżnić układ i otoczenie
+- [ ] umiem rozpoznać reakcję egzoenergetyczną
+- [ ] umiem rozpoznać reakcję endoenergetyczną
+- [ ] umiem narysować wykres energetyczny
+- [ ] umiem wskazać Ea i ΔE
+- [ ] umiem wyjaśnić działanie katalizatora
+- [ ] umiem odróżnić Ea od ΔE
+- [ ] umiem połączyć obserwację temperatury z kierunkiem przepływu energii
+- [ ] umiem wskazać przykłady reakcji egzo- i endoenergetycznych
+- [ ] umiem wyjaśnić, dlaczego reakcja egzoenergetyczna może wymagać rozpoczęcia
+:::
+
+### AUDYT — Perplexity, 2026-10-13 {#audyt-ulepsz}
+
+**Poprawione:**
+- Frontmatter: dodano uid, uzupełniono opis, kicker, plakietki i stopkę; zmieniono stan na „ULEPSZONA — Perplexity, 2026-10-13; do sprawdzenia”.
+- Frontmatter i wykład: „energia reakcji” jako pojęcie nieostre → rozróżnienie ΔE oraz Ea.
+- Minimum: „reakcja egzoenergetyczna oddaje ciepło” → doprecyzowano przekaz energii między układem a otoczeniem.
+- Minimum: „ΔE < 0 dla egzoenergetycznej” → zachowano, ale dodano definicję ΔE = E(produkty) − E(substraty).
+- Wykład: „reakcja może oddawać ciepło, może je pobierać” → dodano warunek potwierdzenia, że zachodzi przemiana chemiczna.
+- Wykład: „reakcja wymaga startu” → wyjaśniono energię aktywacji jako barierę, a nie energię zużywaną bezpowrotnie.
+- Wykres: „Ea to wysokość szczytu” → doprecyzowano, że Ea mierzy się od poziomu substratów.
+- Katalizator: „zmienia ścieżkę reakcji” → doprecyzowano, że obniża Ea i nie zmienia ΔE.
+- Test: poprawiono sformułowania dystraktorów i wyjaśnienia, aby nie sugerowały, że temperatura sama obniża Ea.
+- Wszystkie wzory zapisano w Unicode, bez LaTeX-a.
+
+**Dodane:**
+- §0.1–§0.4: cel, kompas, diagnoza z kluczem i interpretacją wyniku.
+- §1: pełny wykład od zera, rozróżnienie układu i otoczenia, przykłady oraz ostrzeżenia o granicach obserwacji.
+- §2: opis wykresu energetycznego, metafora przełęczy z zaznaczeniem jej granic oraz para „nie-myl”.
+- §3: mechanizm katalizatora, wpływ temperatury i porównanie z katalizą.
+- §4: pięć przykładów prowadzonych.
+- §5: klinika 10 błędów i 6 mitów.
+- §6: ćwiczenia z kluczem i mini-test samodzielny.
+- §7: cztery ciekawostki.
+- §8: słownik 15 haseł.
+- §9: test 6 pytań.
+- §10: checklista.
+
+**Niepewne / do weryfikacji:**
+- Zakres konkretnego konkursu chemicznego nie został określony w paczce, dlatego wymagania konkursowe opisano ogólnie.
+- W lekcji stosowano uproszczony zapis ΔE. W bardziej zaawansowanej termochemii podstawową wielkością jest zmiana entalpii ΔH; rozróżnienie warto wprowadzić w kolejnym poziomie.
+- Opis działania katalizatora jest ogólny; konkretny mechanizm zależy od rodzaju katalizatora i reakcji.
+
+**Proponuję usunąć:**
+- Brak.
+
+**Źródła:**
+- Dostarczona paczka: lekcja K01.
+- Zintegrowana Platforma Edukacyjna — materiały o reakcjach egzo- i endoenergetycznych, energii aktywacji i katalizie.
+
+**Grafiki do zrobienia:**
+
+| Gdzie | Rodzaj | Co pokazuje | Wniosek | @opis |
+|---|---|---|---|---|
+| §1, po rozróżnieniu układu i otoczenia | schemat statyczny | probówka jako układ, powietrze i naczynie jako otoczenie, strzałki przepływu energii | Energia przepływa między układem a otoczeniem | W środku znajduje się probówka oznaczona jako układ. Wokół niej znajdują się naczynie i powietrze oznaczone jako otoczenie. Strzałka na zewnątrz oznacza reakcję egzoenergetyczną, strzałka do środka — endoenergetyczną. |
+| §2, po wykresie egzoenergetycznym | wykres liniowy | poziomy substratów i produktów, szczyt stanu przejściowego, Ea i ΔE | Ea to bariera startu, a ΔE bilans energetyczny | Poziom substratów znajduje się wyżej niż poziom produktów. Szczyt znajduje się nad substratami. Ea jest zaznaczona od substratów do szczytu, a ΔE między produktem a substratem. |
+| §2, po wykresie endoenergetycznym | wykres liniowy | poziomy substratów i produktów, szczyt stanu przejściowego, Ea i ΔE | Reakcja endoenergetyczna wymaga pobrania energii | Poziom substratów znajduje się niżej niż poziom produktów. Szczyt znajduje się nad substratami. Ea jest zaznaczona od substratów do szczytu, a ΔE między produktem a substratem. |
+| §3, przy katalizatorze | animacja „do przodu i od początku” | wykres bez katalizatora i z katalizatorem | Katalizator obniża Ea, ale nie zmienia ΔE | Dwa wykresy mają te same poziomy substratów i produktów. Wykres z katalizatorem ma niższy szczyt. Oznaczenia Ea przed i po dodaniu katalizatora pokazują obniżenie bariery. |

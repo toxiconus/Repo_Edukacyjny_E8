@@ -1,0 +1,1 @@
+effect('heatConvection',{layer:'front',label:'Konwekcja ciepła',draw:e=>{if(!(e.st.heat>2.2))return;const c=e.c,r=e.r;for(let i=0;i<5;i++){const f=((e.t/1500)+rnd(i+20))%1;c.beginPath();c.arc(r.x+r.w*(.2+.15*i)+Math.sin(e.t/500+i)*8,r.y-f*50,8+f*14,0,7);c.fillStyle='rgba(235,240,245,'+.45*(1-f)+')';c.fill()}}});

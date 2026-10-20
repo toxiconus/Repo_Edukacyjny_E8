@@ -71,41 +71,42 @@ def pick(code, md_item, html_path):
     return title, best[1], best[2]
 
 
-PROMPT = """# PROMPT DLA PERPLEXITY — analiza lekcji: {przedmiot} (klasa 8, egzamin ósmoklasisty)
+PROMPT = """# ZBIÓR LEKCJI — {przedmiot} (kurs E8, klasa 8, Repo_Edukacyjny_E8)
 
-> Skopiuj tę sekcję jako polecenie, a cały plik dołącz jako załącznik.
+## O co chodzi
+Ten plik zawiera wszystkie gotowe lekcji z przedmiotu **{przedmiot_dop}** ({liczba} lekcji), każdą w jednej, najnowszej wersji. Kurs jest przeznaczony do **samodzielnej nauki we własnym tempie** przez ucznia klasy 8 — przygotowuje do egzaminu ósmoklasisty (E8) i pozwala iść dalej (MASTER/ROZUMIENIE → KONKURS → OLIMPIADA).
 
-**Rola:** Jesteś doświadczonym nauczycielem {przedmiot_dop} i egzaminatorem CKE. Analizujesz materiał kursu „Podstawa Plus” dla ucznia klasy 8 (Polska), który przygotowuje się do egzaminu ósmoklasisty (E8) i chce pójść dalej (poziomy: E8 → MASTER/ROZUMIENIE → KONKURS → OLIMPIADA).
+## Po co
+Chcemy, żeby lekcje były **poprawne, pełne i zrozumiałe bez nauczyciela**. Twoja odpowiedź ma:
+- wskazać błędy merytoryczne i nieprecyzyjne sformułowania,
+- wskazać brakujące treści względem podstawy programowej i zadań CKE/konkursów,
+- dać gotowe treści do wstawienia (nie całe nowe lekcje).
 
-**Kontekst pliku:** Poniżej są wszystkie lekcje z tego przedmiotu, które już mają treść ({liczba} lekcji). Każda lekcja to jedna, najnowsza wersja tekstu. Pliki HTML zostały spłaszczone do tekstu, więc **brak grafik, animacji i interaktywnych quizów to nie błąd** — nie zgłaszaj tego. Znaczniki typu `::: minimum`, `[[basic:E8]]`, `[UI: …]` to techniczne oznaczenia bloków — pomiń je. Linie `@opis …` oraz `> [Wizualizacja]` / `> [Obraz]` to słowne opisy grafik — oceń je jak treść (czy są poprawne i wystarczające bez obrazka).
-{kontekst}
+## Jak
+1. **Ulepszaj, nie usuwaj.** Zachowaj wszystkie dobre dane, przykłady, zadania, tabele i wykresy. Usuwaj tylko dokładne duplikaty albo treść, której usunięcie jest konieczne (błąd, którego nie da się naprawić bez usunięcia) — i zawsze to uzasadnij. Jeśli treść jest dobra — pomiń ją i nic nie pisz.
+2. **Nie przepisuj całych lekcji.** Podawaj tylko to, co się zmienia, w trzech kategoriach:
+   - *zamieniona* — co (cytat lub numer sekcji) → na co zamienić → powód i źródło;
+   - *dodana* — gotowa treść do wklejenia i miejsce wstawienia (po której sekcji);
+   - *ulepszona* — co i jak poprawić, z gotowym fragmentem, bez powtarzania nieruchomej treści.
+3. **Każda lekcja ma mieć:** pełny wykład „od zera” (uczeń rozumie temat bez innych źródeł), 1–3 mini-wykłady w suchych miejscach (karty „W skrócie”) i 3–5 sprawdzonych ciekawostek. Jeśli czegoś brakuje — dopisz.
+4. **Fakty sprawdzaj** w aktualnych źródłach: podstawa programowa MEN (klasy 7–8), informator CKE o egzaminie ósmoklasisty, arkusze CKE 2019–2026, wymagania konkursów kuratoryjnych i olimpiad. Liczby i dane oznaczaj „do weryfikacji”, jeśli nie są pewne.
+5. **Lekcje oznaczone [W1 …]** przeszły już weryfikację treści — sprawdzaj je tylko pod kątem zakresu i spójności.
+6. **Grafiki i animacje** w plikach są spłaszczone do tekstu — brak grafik nie jest błędem. Każda wizualizacja ma jednak opis słowny; brak opisu zgłoś.
+7. **Brak limitów czasu, planów dnia i zadań domowych** — uczeń uczy się we własnym tempie.
+8. Pisz po polsku, konkretnie, bez wstępów.
 
-**Zadania (korzystaj z aktualnych źródeł w internecie: podstawa programowa MEN dla klas 7–8, informator CKE o egzaminie ósmoklasisty 2027, arkusze CKE z lat 2019–2026, wymagania konkursów kuratoryjnych woj. lubelskiego i olimpiad przedmiotowych):**
+## Format odpowiedzi
+- **A. Błędy:** `Lekcja | cytat → poprawka → źródło`.
+- **B. Braki w zakresie:** `Lekcja | czego brakuje | treść do wklejenia (krótko)`.
+- **C. Ulepszenia i ciekawostki:** tylko sprawdzone, `Lekcja | propozycja`.
+- **D. Nowe lekcje** (tylko jeśli brakuje tematu z podstawy): tytuł, zakres, wymagania.
+- **E. Spójność:** sprzeczności i powtórzenia między lekcjami.
 
-1. **Błędy merytoryczne.** Znajdź twierdzenia, definicje, dane liczbowe, przykłady i odpowiedzi do zadań, które są błędne, nieprecyzyjne albo niezgodne z tym, czego wymaga CKE. Dla każdego: cytat (krótki) → poprawna wersja → źródło.
-2. **Pokrycie podstawy programowej.** Zestaw wymagania szczegółowe podstawy programowej (klasy 7–8) i informatora CKE z tym, co jest w lekcjach. Wypisz wymagania **niepokryte lub pokryte słabo**, z numerem wymagania i priorytetem (wysoki = często na egzaminie).
-3. **Co uzupełnić w istniejących lekcjach.** Dla każdej lekcji: czego brakuje (pojęcia, typowe pułapki egzaminacyjne, typy zadań CKE, zadania otwarte z kluczem i punktacją, powtórka), co jest zbędne lub za trudne dla poziomu E8 (ale może zostać jako MASTER/KONKURS).
-4. **Nowe lekcje.** Zaproponuj listę brakujących lekcji w kolejności realizacji (tytuł, zakres, wymagania podstawy, szacowana liczba godzin).
-5. **Lekcje oznaczone [W1 …]** przeszły już weryfikację treści — sprawdź je tylko pod kątem zakresu i spójności, nie powtarzaj poprawek treści.
-6. **Spójność.** Wskaż sprzeczności między lekcjami (np. różne definicje lub oznaczenia tego samego) i powtórzenia.
-
-7. **Szkielety** (jeśli są na końcu pliku): dla każdego zaproponuj treść i zadania z kluczem.
-
-**Format odpowiedzi:**
-- A. Tabela per lekcja: `Lekcja | Błędy (cytat → poprawka → źródło) | Braki do uzupełnienia | Do skrócenia/przeniesienia`.
-- B. Lista wymagań podstawy niepokrytych (numer, treść, priorytet).
-- C. Plan nowych lekcji (tabela).
-- D. 10 najważniejszych poprawek do zrobienia najpierw.
-- E. Szkielety: propozycja treści per szkielet.
-Pisz po polsku, konkretnie, bez przepisywania całych lekcji. Każdą poprawkę merytoryczną poprzyj źródłem.
-
----
-
-## Spis lekcji w pliku
-
+## Spis lekcji w tym pliku
 {spis}
 
 ---
+Kontekst techniczny: {kontekst}
 """
 
 
@@ -146,7 +147,7 @@ def build(nazwa, przedmiot, przedmiot_dop, kontekst, lessons, pomin, szkielety=(
         parts.append(f"\n\n---\n\n# ZAŁĄCZNIK: {tyt}\n\n_Plik: {plik}_ — użyj do oceny, czy lekcje przygotowują do takich zadań.\n\n"
                      + (ROOT / plik).read_text(encoding="utf-8", errors="replace") + "\n")
     parts.append(f"\n\n---\n_Plik wygenerowany automatycznie {DZIS} skryptem eksport/zbierz_lekcje.py._\n")
-    out = OUT / f"PERPLEXITY_{nazwa}.md"
+    out = OUT / f"{nazwa}_wszystkie.md"
     out.write_text("".join(parts), encoding="utf-8")
     return out, len(lessons)
 

@@ -1,0 +1,1 @@
+vessel('stage',{custom:(c,r,st,env)=>{const T=env.th,ax=r.x+r.w/2,ay=r.y+r.h*.72,fy=r.y+r.h-8;c.strokeStyle=T.glass;c.lineWidth=4;c.lineCap='round';c.beginPath();c.moveTo(r.x+r.w*.12,fy);c.lineTo(r.x+r.w*.88,fy);c.stroke();c.fillStyle=T.dark?'#475569':'#94a3b8';c.fillRect(ax-3,ay+4,6,fy-ay-4);return{x:ax,y:ay}}});

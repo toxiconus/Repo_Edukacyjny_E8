@@ -1,0 +1,1 @@
+vessel('watchGlass',{path:(c,r)=>{const x0=r.x+r.w*.04,x1=r.x+r.w*.96,y0=r.y+r.h*.55;c.beginPath();c.moveTo(x0,y0);c.quadraticCurveTo(r.x+r.w/2,r.y+r.h*1.02,x1,y0)},hmax:.2,pad:r=>r.h*.22,lw:3,shadow:1});

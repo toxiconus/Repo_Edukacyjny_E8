@@ -1,0 +1,1 @@
+P('na2oH2o',{n:'Na₂O + H₂O (+ fenoloftaleina)',solid:{col:ox,eq:4,end:0,t:'powder',shape:'powder'},l0:php,l1:pink,out:['barwa'],heat:1.2,T:45,why:'Biały Na₂O znika, roztwór się ogrzewa i malinowieje — powstaje NaOH.'});

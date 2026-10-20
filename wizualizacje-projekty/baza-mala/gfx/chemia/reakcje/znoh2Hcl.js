@@ -1,0 +1,1 @@
+P('znoh2Hcl',{n:'Zn(OH)₂ + HCl',solid:{col:'ppt-zn-oh-2',eq:4,end:0,t:'powder',shape:'powder'},out:['nic'],why:'Biały osad znika, roztwór bezbarwny.'});

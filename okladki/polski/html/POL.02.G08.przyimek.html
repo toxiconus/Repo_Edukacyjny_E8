@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="pl" data-przedmiot="pol">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>G08 · Przyimek</title>
+<style id="lekcja-css">
+/* baza.css — wspólna baza lekcji wszystkich przedmiotów (styl lekcji silnika CHE v0_57). Nie edytować — zmiany wspólne w ulepszenia.css, przedmiotowe w motywy/<kod>.css. */
+
+
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+--bg:#fafbfc;--surface:#ffffff;--surface-soft:#f6f8fa;--surface-warm:#fdfaf4;--border:#e5e9ee;--border-strong:#cdd5dd;
+--text:#1a2332;--text-soft:#4a5568;--text-muted:#8892a0;--text-faint:#b4bcc6;
+--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,0.15);
+--c-basic:#2e7d4f;--c-basic-bg:#eaf6ee;--c-basic-line:#b8dcc4;
+--c-understand:#2b5e9c;--c-understand-bg:#eaf1f9;--c-understand-line:#bcd0e5;
+--c-warn:#b06f1c;--c-warn-bg:#fcf4e6;--c-warn-line:#eed8a8;
+--c-error:#b83a45;--c-error-bg:#fbeced;--c-error-line:#e8b5b9;
+--c-extra:#6b3fa0;--c-extra-bg:#f3ecfa;--c-extra-line:#d3bde8;
+--c-new:#0d7d7d;--c-new-bg:#e6f4f4;--c-new-line:#b0dcdc;
+--c-exam:#a86a00;--c-exam-bg:#fdf5e0;--c-exam-line:#eed49c;
+--sh-sm:0 1px 2px rgba(26,35,50,0.04);--sh-md:0 4px 12px rgba(26,35,50,0.06);--sh-lg:0 12px 32px rgba(26,35,50,0.10);--sh-xl:0 20px 48px rgba(26,35,50,0.14);
+--r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;
+--header-h:56px;
+--ease:cubic-bezier(0.4,0,0.2,1);--ease-out:cubic-bezier(0.16,1,0.3,1);
+--hl-key:#0d6868;--hl-key-bg:#d8ecea;--hl-warn:#b83a45;--hl-warn-bg:#fbe0e2;--hl-new:#6b3fa0;--hl-new-bg:#ede0f8;--hl-formula:#084848;--hl-formula-bg:#e0eeed;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;padding:calc(var(--header-h) + 12px) 0 88px;min-height:100vh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+@media(min-width:600px){body{padding:calc(var(--header-h) + 18px) 12px 96px;}}
+@media(min-width:768px){body{padding:calc(var(--header-h) + 24px) 20px 100px;}}
+@media(min-width:1100px){body{padding:calc(var(--header-h) + 28px) 32px 110px;}}
+.fab{position:fixed;top:12px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);background:rgba(255,255,255,0.94);color:var(--text);cursor:pointer;border-radius:var(--r-md);padding:0;transition:all 0.2s var(--ease);z-index:1200;box-shadow:var(--sh-sm);backdrop-filter:blur(8px);}
+.fab:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);box-shadow:var(--sh-md);transform:translateY(-1px);}
+.fab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.fab-left{left:6px;}.fab-right{right:6px;}
+@media(min-width:600px){.fab-left{left:10px;}.fab-right{right:10px;}}
+@media(min-width:768px){.fab-left{left:14px;}.fab-right{right:14px;}}
+.fab-left::after{content:'';width:16px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;border-radius:1px;transition:transform 0.25s var(--ease);}
+.fab-left.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.fab-left.is-open::after{width:16px;height:2px;background:currentColor;box-shadow:none;transform:rotate(45deg);}
+.fab-left.is-open::before{content:'';position:absolute;width:16px;height:2px;background:currentColor;transform:rotate(-45deg);border-radius:1px;}
+.fab-right::after{content:'';display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:8px solid currentColor;transition:transform 0.35s var(--ease-out);}
+.fab-right.is-hidden::after{transform:rotate(0deg);}
+.fab-right:not(.is-hidden)::after{transform:rotate(180deg);}
+.header-wrapper{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);transform:translateY(0);transition:transform 0.45s var(--ease-out),box-shadow 0.3s var(--ease);box-shadow:var(--sh-sm);}
+.header-wrapper.is-hidden{transform:translateY(-100%);box-shadow:none;}
+.header-bar{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:0 16px;height:var(--header-h);}
+@media(min-width:768px){.header-bar{padding:0 24px;}}
+.header-subject{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:1px;padding:4px 10px;background:var(--accent-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;}
+.header-title{font-size:15px;font-weight:700;color:var(--text);letter-spacing:-0.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1 1 auto;min-width:0;}
+.header-lesson{font-size:10px;font-weight:800;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.7px;padding:4px 9px;background:var(--surface-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;font-family:'JetBrains Mono',monospace;}
+.header-nav{display:flex;gap:2px;flex-shrink:0;align-items:center;}
+.header-nav a,.header-nav button{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;border-radius:var(--r-sm);font-size:16px;font-weight:500;transition:all 0.2s var(--ease);border:1px solid transparent;background:transparent;cursor:pointer;padding:0;font-family:inherit;}
+.header-nav a:hover,.header-nav button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.header-resume-btn.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.header-resume-btn::before{content:'▮';font-size:14px;line-height:1;}
+.header-panel{display:none;border-top:1px solid var(--border);background:linear-gradient(180deg,var(--surface) 0%,var(--surface-soft) 100%);padding:20px 16px 24px;}
+@media(min-width:768px){.header-panel{padding:24px 24px 28px;}}
+.header-panel.is-open{display:block;}
+.header-panel-inner{max-width:900px;margin:0 auto;}
+.header-kicker{font-size:11px;color:var(--text-muted);text-transform:uppercase;font-weight:800;letter-spacing:1px;margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.header-kicker::before{content:'';width:24px;height:2px;background:var(--accent);display:inline-block;border-radius:1px;}
+.header-h1{font-size:32px;font-weight:800;color:var(--text);letter-spacing:-1px;margin-bottom:10px;line-height:1.1;}
+.header-subtitle{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:18px;max-width:720px;}
+.header-modes{display:flex;gap:6px;flex-wrap:wrap;}
+.mode-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 15px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);font-family:inherit;}
+.mode-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
+.mode-btn:hover:not(.active){background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.resume-dropdown{display:none;position:fixed;top:calc(var(--header-h) + 6px);right:14px;z-index:1050;width:min(300px,calc(100vw - 30px));padding:14px;border:1px solid var(--border-strong);border-radius:12px;background:#fff;box-shadow:var(--sh-lg);}
+.resume-dropdown.is-open{display:block;}
+.resume-dropdown h4{margin:0 0 5px;color:var(--text);font-size:.85rem;}
+.resume-dropdown p{margin:0 0 12px;color:var(--text-muted);font-size:.75rem;line-height:1.5;}
+.resume-actions{display:flex;gap:6px;}
+.resume-actions button{flex:1;padding:8px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text-soft);font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.resume-actions .resume-save{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toc-overlay{position:fixed;inset:0;background:rgba(26,35,50,0.34);backdrop-filter:blur(3px);z-index:1100;opacity:0;visibility:hidden;transition:opacity 0.3s var(--ease),visibility 0.3s var(--ease);}
+.toc-overlay.is-visible{opacity:1;visibility:visible;}
+.toc-wrapper{position:fixed;left:0;top:0;width:320px;max-width:86vw;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:1150;transform:translateX(-100%);transition:transform 0.4s var(--ease-out);padding-top:64px;box-shadow:var(--sh-xl);}
+.toc-wrapper.is-open{transform:translateX(0);}
+.toc-content{padding:12px 14px 100px;}
+.toc-header{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);padding:4px 12px 12px;}
+.toc-item{margin-bottom:4px;border-radius:var(--r-md);overflow:hidden;}
+.toc-summary{padding:10px 12px;font-size:13px;font-weight:700;color:var(--text);cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;border-radius:var(--r-sm);transition:background 0.2s var(--ease),color 0.2s var(--ease);user-select:none;}
+.toc-summary:hover{background:var(--accent-soft);color:var(--accent);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::marker{content:'';}
+.toc-summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);opacity:0.5;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);opacity:1;}
+.toc-links{padding:4px 0 8px 28px;display:flex;flex-direction:column;gap:1px;}
+.toc-link{display:block;padding:6px 10px;font-size:12.5px;color:var(--text-soft);text-decoration:none;border-radius:4px;transition:all 0.2s var(--ease);border-left:2px solid transparent;}
+.toc-link:hover{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);}
+.container{max-width:820px;margin:0 auto;background:var(--surface);border-radius:0;box-shadow:none;padding:18px 12px;border:none;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+@media(min-width:600px){.container{border-radius:var(--r-lg);box-shadow:var(--sh-md);border:1px solid var(--border);padding:22px 18px;}}
+@media(min-width:768px){.container{padding:36px 36px;border-radius:var(--r-xl);}}
+@media(min-width:1100px){.container{max-width:840px;padding:40px 40px;}}
+h1,h2,h3,h4,h5{font-weight:800;color:var(--text);letter-spacing:-0.3px;line-height:1.3;}
+h2{font-size:24px;margin-top:44px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+h3{font-size:17px;margin-top:32px;margin-bottom:12px;font-weight:800;}
+h4{font-size:15px;margin-top:24px;margin-bottom:10px;font-weight:800;}
+h5{font-size:13px;margin-top:16px;margin-bottom:8px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-soft);}
+p{margin-bottom:12px;}
+ul,ol{padding-left:24px;margin-bottom:14px;}
+li{margin-bottom:6px;padding-left:4px;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s var(--ease);}
+a:hover{border-bottom-color:var(--accent);}
+strong{font-weight:700;color:var(--text);}
+.hl{background:var(--hl-key-bg);color:var(--hl-key);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-warn{background:var(--hl-warn-bg);color:var(--hl-warn);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-new{background:var(--hl-new-bg);color:var(--hl-new);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.formula{display:inline-block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:14px;font-weight:600;color:var(--hl-formula);background:var(--hl-formula-bg);padding:4px 12px;border-radius:var(--r-sm);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:3px 2px;white-space:nowrap;}
+.formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
+code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
+pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
+.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
+.mnemonic b{color:#78350f;}
+.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
+@media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
+.card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
+.card-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:10px;padding:3px 9px;background:var(--accent-soft);border-radius:4px;}
+.card-core{background:var(--accent-soft);border-color:var(--accent-line);border-left-color:var(--accent);}
+.card-basic{background:var(--c-basic-bg);border-color:var(--c-basic-line);border-left-color:var(--c-basic);}
+.card-basic .card-label{background:rgba(46,125,79,0.12);color:var(--c-basic);}
+.card-understand{background:var(--c-understand-bg);border-color:var(--c-understand-line);border-left-color:var(--c-understand);}
+.card-understand .card-label{background:rgba(43,94,156,0.12);color:var(--c-understand);}
+.card-warning{background:var(--c-warn-bg);border-color:var(--c-warn-line);border-left-color:var(--c-warn);}
+.card-warning .card-label{background:rgba(176,111,28,0.12);color:var(--c-warn);}
+.card-error{background:var(--c-error-bg);border-color:var(--c-error-line);border-left-color:var(--c-error);}
+.card-error .card-label{background:rgba(184,58,69,0.12);color:var(--c-error);}
+.card-extra{background:var(--c-extra-bg);border-color:var(--c-extra-line);border-left-color:var(--c-extra);}
+.card-extra .card-label{background:rgba(107,63,160,0.12);color:var(--c-extra);}
+.card-new{background:var(--c-new-bg);border-color:var(--c-new-line);border-left-color:var(--c-new);}
+.card-new .card-label{background:rgba(13,125,125,0.12);color:var(--c-new);}
+.card-exam{background:var(--c-exam-bg);border-color:var(--c-exam-line);border-left-color:var(--c-exam);}
+.card-exam .card-label{background:rgba(168,106,0,0.12);color:var(--c-exam);}
+.card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0;}
+details.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent-line);border-radius:var(--r-sm);padding:10px 14px;margin:10px 0;transition:all 0.2s var(--ease);}
+details.answer[open]{background:var(--accent-soft);border-left-color:var(--accent);}
+details.answer summary{cursor:pointer;font-weight:700;color:var(--text-soft);font-size:13px;list-style:none;user-select:none;display:flex;align-items:center;gap:10px;transition:color 0.2s var(--ease);}
+details.answer summary::-webkit-details-marker{display:none;}
+details.answer summary::marker{content:'';}
+details.answer summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer[open] summary{color:var(--accent);}
+details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}
+.part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}
+@media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}
+.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
+@media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}
+.table-wrap th,.table-wrap td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px;}
+@media(min-width:600px){.table-wrap th,.table-wrap td{padding:10px 12px;font-size:13.5px;}}
+.table-wrap th{background:var(--surface-soft);font-weight:800;color:var(--text-soft);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;}
+@media(min-width:600px){.table-wrap th{font-size:11px;letter-spacing:0.7px;white-space:nowrap;}}
+.table-wrap.table-compact td,.table-wrap.table-compact th{padding:7px 6px;font-size:12.5px;}
+.table-wrap tr:last-child td{border-bottom:none;}
+.table-wrap tr:hover td{background:var(--accent-soft);}
+.table-wrap .error-row{background:var(--c-error-bg);}
+.table-wrap .ok-row{background:var(--c-basic-bg);}
+.def-list{display:flex;flex-direction:column;gap:8px;margin:14px 0;}
+.def-item{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px 16px;}
+.def-item dt{font-weight:800;color:var(--text);font-size:13.5px;margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+.def-item dt::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;}
+.def-item dd{color:var(--text-soft);font-size:13.5px;line-height:1.6;margin:0;padding-left:11px;}
+.minimum-card{background:linear-gradient(135deg,var(--surface-soft) 0%,var(--accent-soft) 100%);border:1px solid var(--accent-line);border-radius:var(--r-lg);padding:20px 22px;margin:8px 0 28px;box-shadow:var(--sh-sm);position:relative;overflow:hidden;}
+@media(min-width:768px){.minimum-card{padding:28px 34px;margin-bottom:36px;}}
+.minimum-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:var(--accent);}
+.minimum-card h3{color:var(--accent);margin:0 0 16px;font-size:16px;letter-spacing:0.2px;display:flex;align-items:center;gap:10px;}
+.minimum-card h3::before{content:'★';font-size:16px;}
+.minimum-card ol{margin:0;padding-left:0;list-style:none;counter-reset:min-list;}
+.minimum-card li{counter-increment:min-list;padding-left:36px;position:relative;margin-bottom:12px;font-size:14px;line-height:1.6;}
+.minimum-card li::before{content:counter(min-list);position:absolute;left:0;top:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--surface);color:var(--accent);border:2px solid var(--accent-line);border-radius:50%;font-size:12px;font-weight:800;}
+.minimum-card li:last-child{margin-bottom:0;}
+.level-badge{display:inline-block;font-size:9.5px;font-weight:800;text-transform:uppercase;padding:2px 9px;border-radius:12px;vertical-align:middle;letter-spacing:0.5px;line-height:1.6;margin-left:8px;}
+.level-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.level-understand{background:var(--c-understand-bg);color:var(--c-understand);}
+.level-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.level-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.level-new{background:var(--c-new-bg);color:var(--c-new);}
+.rule-box{background:var(--c-understand-bg);border:1px solid var(--c-understand-line);border-radius:var(--r-md);padding:14px 18px;margin:14px 0;font-size:14px;line-height:1.65;}
+.rule-box b{color:var(--c-understand);}
+.step-flow{background:var(--text);color:#fff;padding:16px 18px;border-radius:var(--r-md);font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:12.5px;line-height:1.9;margin:14px 0;overflow-x:auto;white-space:pre;}
+@media(min-width:768px){.step-flow{font-size:13.5px;padding:16px 20px;}}
+.footer{margin-top:56px;padding-top:24px;border-top:2px solid var(--border);text-align:center;font-size:12.5px;color:var(--text-muted);letter-spacing:0.2px;}
+.footer p{margin-bottom:4px;}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:6px;border:2px solid var(--bg);}
+::-webkit-scrollbar-thumb:hover{background:var(--text-muted);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.bottom-nav{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:1100;width:min(700px,calc(100vw - 24px));font-size:.78rem;}
+.bottom-nav__toggle{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;padding:8px 14px;border:1px solid var(--border-strong);border-radius:999px;background:rgba(255,255,255,.97);color:var(--text-soft);font:700 .72rem inherit;box-shadow:0 5px 18px rgba(15,23,42,.14);cursor:pointer;backdrop-filter:blur(10px);font-family:inherit;}
+.bottom-nav__panel{display:none;margin-bottom:7px;padding:10px;border:1px solid var(--border-strong);border-radius:14px;background:rgba(255,255,255,.98);box-shadow:0 10px 28px rgba(15,23,42,.16);backdrop-filter:blur(12px);}
+.bottom-nav.is-open .bottom-nav__panel{display:block;}
+.bottom-nav__primary{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.bottom-nav a,.bottom-nav button.nav-more{min-height:36px;display:flex;align-items:center;justify-content:center;padding:6px 8px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--text-soft);text-decoration:none;font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.bottom-nav a:hover,.bottom-nav button.nav-more:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+@media(max-width:420px){
+  .bottom-nav{font-size:.7rem;width:calc(100vw - 12px);}
+  .bottom-nav a,.bottom-nav button.nav-more{padding:6px 4px;font-size:.65rem;}
+}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
+.widget{background:var(--surface);border:2px solid var(--border);border-radius:var(--r-md);padding:14px;margin:14px 0;box-shadow:var(--sh-sm);}
+@media(min-width:768px){.widget{padding:22px 26px;margin:20px 0;border-radius:var(--r-lg);}}
+.widget h4{margin:0 0 8px;color:var(--text);font-size:15px;font-weight:800;}
+@media(min-width:768px){.widget h4{font-size:16px;}}
+.widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
+.bld-pool{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.bld-pool button{padding:6px 12px;border:1px solid var(--border);border-radius:20px;background:#fff;font:600 0.8rem inherit;cursor:pointer;font-family:inherit;color:var(--text);}
+.bld-pool button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bld-workspace{min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;}
+.bld-feedback,.re-result,.st-feedback,.ch-feedback{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;line-height:1.5;}
+.bld-feedback.ok,.re-result.ok,.st-feedback.ok,.ch-feedback.ok{background:var(--c-basic-bg);color:var(--c-basic);border:1px solid var(--c-basic-line);}
+.bld-feedback.bad,.re-result.bad,.st-feedback.bad,.ch-feedback.bad{background:var(--c-error-bg);color:var(--c-error);border:1px solid var(--c-error-line);}
+.bld-feedback.info,.re-result.info,.st-feedback.info,.ch-feedback.info{background:var(--c-understand-bg);color:var(--c-understand);border:1px solid var(--c-understand-line);}
+.bld-feedback.warn,.re-result.warn,.st-feedback.warn,.ch-feedback.warn{background:var(--c-warn-bg);color:var(--c-warn);border:1px solid var(--c-warn-line);}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);color:var(--text);font-family:inherit;}
+.btn:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent);}
+.btn-primary:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+.btn-sm{padding:6px 10px;font-size:12px;}
+.flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}
+@media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--border);border-radius:var(--r-md);background:#fff;color:var(--text);font:inherit;text-align:center;cursor:pointer;box-shadow:var(--sh-sm);transition:all 0.2s var(--ease);position:relative;font-family:inherit;}
+.flashcard:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-3px);box-shadow:var(--sh-md);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:90px;}
+.flashcard .front{font-weight:700;font-size:14.5px;line-height:1.5;}
+.flashcard .back{display:none;color:var(--text-soft);font-size:13.5px;line-height:1.6;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:8px;right:8px;font-size:9px;text-transform:uppercase;background:var(--surface-soft);padding:2px 8px;border-radius:10px;color:var(--text-muted);font-weight:800;letter-spacing:0.4px;}
+.flashcard .card-tag.tag-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.flashcard .card-tag.tag-error{background:var(--c-error-bg);color:var(--c-error);}
+.flashcard .card-tag.tag-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.flashcard .card-tag.tag-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.checklist{background:#fff;border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.checklist h4{color:var(--c-basic);margin:0 0 12px;font-size:15px;}
+.checklist ul{list-style:none;padding-left:0;margin:0;}
+.checklist li{padding:7px 0;font-size:13.5px;border-bottom:1px dashed var(--c-basic-line);display:flex;align-items:flex-start;gap:10px;line-height:1.55;}
+.checklist li:last-child{border-bottom:none;}
+.checklist li::before{content:'☐';color:var(--c-basic);font-weight:700;font-size:1.15rem;flex-shrink:0;line-height:1.2;}
+.core-path{background:linear-gradient(135deg,var(--c-basic-bg) 0%,#dcefe2 100%);border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:800;color:var(--c-basic);font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.core-path .cp-title::before{content:'▶';font-size:12px;}
+.core-path ol{margin:0;padding-left:22px;}
+.core-path li{margin-bottom:6px;font-size:13.5px;line-height:1.6;}
+.audit-panel{background:var(--surface-soft);border:2px solid var(--border-strong);border-radius:var(--r-lg);padding:16px 18px;margin:16px 0;}
+.audit-panel h4{margin:0 0 12px;color:var(--text);}
+.audit-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px;}
+@media(min-width:600px){.audit-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}}
+.audit-item{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:10px 12px;font-size:12.5px;line-height:1.55;}
+.mini-note{font-size:12.5px;color:var(--text-muted);font-style:italic;margin-top:8px;line-height:1.55;}
+.layer-legend{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:12px 14px;margin:12px 0;display:grid;grid-template-columns:1fr;gap:8px 18px;}
+@media(min-width:600px){.layer-legend{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;}}
+.layer-legend .layer-row{display:flex;gap:10px;align-items:center;font-size:12.5px;line-height:1.5;}
+.layer-legend .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.e8{background:var(--c-basic);}
+.layer-legend .dot.understand{background:var(--c-understand);}
+.layer-legend .dot.extra{background:var(--c-extra);}
+.layer-legend .dot.contest{background:var(--c-warn);}
+.klinika-table td.col-blad{color:var(--c-error);font-weight:700;}
+.klinika-table td.col-blad::before{content:'✕ ';font-weight:900;margin-right:4px;color:var(--c-error);}
+.klinika-table td.col-ok{color:var(--c-basic);font-weight:700;}
+.klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}
+.map-card{position:relative;}
+.map-expand-btn{position:absolute;top:10px;right:10px;z-index:3;padding:6px 12px;border:1px solid var(--accent-line);background:rgba(255,255,255,0.95);color:var(--accent);border-radius:var(--r-sm);font-size:12px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:var(--sh-sm);transition:all 0.15s var(--ease);}
+.map-expand-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.map-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(26,35,50,0.85);backdrop-filter:blur(6px);}
+.map-overlay.is-open{display:block;}
+.map-overlay-inner{position:absolute;inset:12px;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-xl);}
+.map-overlay-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface-soft);gap:8px;flex-wrap:wrap;}
+.map-overlay-title{font-weight:800;font-size:14px;color:var(--text);}
+.map-overlay-actions{display:flex;gap:6px;}
+.map-overlay-actions button{padding:6px 12px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;color:var(--text-soft);transition:all 0.15s var(--ease);}
+.map-overlay-actions button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.map-overlay-actions .map-close{background:var(--c-error);color:#fff;border-color:var(--c-error);}
+.map-overlay-canvas{flex:1;overflow:hidden;position:relative;background:#fff;cursor:grab;touch-action:none;}
+.map-overlay-canvas svg{display:block;position:absolute;top:0;left:0;transform-origin:0 0;}
+@media print{
+.fab,.toc-wrapper,.toc-overlay,.header-wrapper,.bottom-nav,.resume-dropdown,.map-overlay,.map-expand-btn{display:none !important;}
+body{padding:0;background:#fff;}
+.container{box-shadow:none;border:none;padding:0;max-width:100%;}
+details.answer{page-break-inside:avoid;}
+details.answer > *:not(summary){display:block !important;}
+details.answer summary{display:none;}
+.card{page-break-inside:avoid;}
+.widget{page-break-inside:avoid;}
+}
+@media (prefers-reduced-motion: reduce){
+*{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+html{scroll-behavior:auto;}
+}
+html,body{max-width:100%;overflow-x:hidden;}
+.table-scroll-hint{display:none;align-items:center;justify-content:space-between;gap:8px;padding:7px 11px;margin-top:0;margin-bottom:8px;border:1px solid var(--border);border-bottom:0;border-radius:var(--r-sm) var(--r-sm) 0 0;background:var(--surface-soft);color:var(--text-muted);font-size:11px;font-weight:700;}
+.table-wrap.is-scrollable + .table-scroll-hint{display:flex;}
+.table-scroll-hint .scroll-arrow{font-size:13px;letter-spacing:2px;color:var(--accent);}
+.timeline-anim{border-color:var(--c-understand-line);}
+.ta-stage{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 14px;min-height:280px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.ta-scene{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;animation:taFade 0.6s ease-out;width:100%;}
+@keyframes taFade{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.ta-scene .ta-year{font-size:1.7rem;font-weight:800;color:var(--accent);font-family:'JetBrains Mono',monospace;letter-spacing:1px;}
+.ta-scene .ta-who{font-size:1.05rem;font-weight:800;color:var(--text);}
+.ta-scene .ta-desc{font-size:13.5px;color:var(--text-soft);max-width:600px;line-height:1.65;}
+.ta-dots{display:flex;justify-content:center;gap:8px;margin:14px 0 8px;}
+.ta-dot{width:12px;height:12px;border-radius:50%;background:var(--border-strong);border:2px solid transparent;cursor:pointer;padding:0;transition:all 0.2s var(--ease);}
+.ta-dot.active{background:var(--accent);transform:scale(1.25);box-shadow:0 0 0 3px var(--accent-glow);}
+.ta-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;}
+.ta-nav{padding:8px 14px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-weight:700;color:var(--text-soft);cursor:pointer;font-size:12.5px;transition:all 0.15s var(--ease);}
+.ta-nav:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.ta-progress{font-size:12.5px;color:var(--text-muted);font-weight:700;font-family:'JetBrains Mono',monospace;}
+.eq-player{background:linear-gradient(180deg,#f8fafc,#eef6f5);border:2px solid var(--accent-line);border-radius:var(--r-lg);padding:16px 18px;margin:14px 0;}
+.eq-stage{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.15rem;padding:12px;background:#fff;border-radius:var(--r-md);border:1px solid var(--border);}
+.eq-term{display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border);opacity:0;}
+.eq-term.show{opacity:1;animation:reaction-flow 0.7s ease-out;}
+.eq-term.reactant{background:#e0f2fe;border-color:#7dd3fc;color:#0c4a6e;}
+.eq-term.product{background:#dcfce7;border-color:#86efac;color:#14532d;}
+.eq-arrow{opacity:0;color:var(--accent);font-size:1.4rem;}
+.eq-arrow.show{opacity:1;}
+.eq-balance{margin-top:10px;font-size:13px;color:var(--text-soft);display:none;}
+.eq-balance.show{display:block;}
+@keyframes reaction-flow{0%{opacity:.25;transform:scale(.92)}55%{opacity:1}100%{opacity:1;transform:scale(1)}}
+.ion-assembly{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;padding:18px 12px;background:#fff;border:1px solid var(--border);border-radius:var(--r-md);margin:10px 0;}
+.ion-chip{padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid var(--border);}
+.ion-chip.cation{background:#e0f2fe;border-color:#38bdf8;color:#0c4a6e;}
+.ion-chip.anion{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.ion-chip.product{background:#dcfce7;border-color:#4ade80;color:#14532d;}
+.ion-plus,.ion-join{font-size:1.4rem;font-weight:800;color:var(--text-muted);}
+.hero{max-width:900px;margin:0 auto 22px;padding:26px;border:1px solid var(--border);border-radius:var(--r-xl);background:linear-gradient(135deg,#fff,var(--accent-soft));box-shadow:var(--sh-md);}
+.hero h1{font-size:clamp(32px,6vw,52px);margin:4px 0 8px;}
+.hero-kicker{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--accent);text-transform:uppercase;}
+.lead{font-size:16px;color:var(--text-soft);max-width:720px;}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;}
+.page{max-width:900px;margin:0 auto;}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+@media(max-width:720px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px;}
+.metric-grid>div,.result-card,.step-card{padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);}
+.metric-grid b{display:block;font-size:10px;text-transform:uppercase;color:var(--text-muted);}
+.metric-grid strong{display:block;margin-top:3px;}
+@media(max-width:700px){.metric-grid{grid-template-columns:1fr;}}
+.controls,.button-grid{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;}
+.controls button,.button-grid button,.quiz-opt{padding:8px 12px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;cursor:pointer;}
+.particle-stage{height:120px;display:flex;align-items:center;justify-content:center;gap:70px;border:1px dashed var(--border-strong);border-radius:10px;margin-top:12px;}
+.particle{font-size:30px;font-weight:800;}
+.p-h3o{color:var(--accent);}
+.p-cl{color:#b83a45;}
+.ph-scale{display:flex;justify-content:space-between;margin-top:6px;font:700 11px 'JetBrains Mono',monospace;}
+.buffer-tank{height:28px;border:1px solid var(--border-strong);border-radius:999px;overflow:hidden;margin:14px 0;background:var(--surface-soft);}
+#bufferFill{height:100%;width:100%;background:var(--accent);transition:width .2s;}
+.quiz-wrap{margin:16px 0;}
+.quiz-q{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:14px 16px;margin-bottom:12px;}
+.quiz-q h5{margin:0 0 10px;font-size:14.5px;color:var(--text);text-transform:none;letter-spacing:0;line-height:1.45;}
+.quiz-q .q-tag{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:10px;margin-bottom:8px;background:var(--surface-soft);color:var(--text-muted);}
+.quiz-opts{display:flex;flex-direction:column;gap:8px;}
+.quiz-opt{display:block;width:100%;text-align:left;padding:10px 12px;border:2px solid var(--border);border-radius:var(--r-sm);background:#fff;font:inherit;font-size:13.5px;cursor:pointer;transition:all 0.15s var(--ease);color:var(--text);}
+.quiz-opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft);}
+.quiz-opt.correct{border-color:var(--c-basic);background:var(--c-basic-bg);color:var(--c-basic);font-weight:700;}
+.quiz-opt.wrong{border-color:var(--c-error);background:var(--c-error-bg);color:var(--c-error);}
+.quiz-opt:disabled{cursor:default;opacity:0.95;}
+.quiz-fb{margin-top:8px;font-size:13px;line-height:1.5;display:none;padding:8px 10px;border-radius:var(--r-sm);}
+.quiz-fb.show{display:block;}
+.quiz-fb.ok{background:var(--c-basic-bg);color:var(--c-basic);}
+.quiz-fb.bad{background:var(--c-error-bg);color:var(--c-error);}
+.quiz-score{text-align:center;padding:14px;background:var(--surface-soft);border-radius:var(--r-md);margin-top:16px;font-weight:800;color:var(--accent);display:none;}
+.quiz-score.show{display:block;}
+.lab-bridge{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 28px;padding:14px 16px;border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);background:linear-gradient(135deg,var(--surface-soft),var(--accent-soft));}
+.lab-bridge strong{display:block;color:var(--accent-dark);}
+.lab-bridge span{display:block;margin-top:3px;color:var(--text-soft);font-size:13px;}
+.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;}
+.lab-bridge-btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
+@media(max-width:600px){.lab-bridge{align-items:flex-start;flex-direction:column;}.lab-bridge-btn{width:100%;text-align:center;}}
+.exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}
+.exp-card h5{margin:0 0 10px;color:var(--c-basic);font-size:14px;text-transform:none;letter-spacing:0;}
+.exp-grid{display:grid;grid-template-columns:1fr;gap:6px;font-size:13.5px;line-height:1.55;}
+@media(min-width:600px){.exp-grid{grid-template-columns:110px 1fr;}}
+.exp-grid b{color:var(--text-soft);font-size:11px;text-transform:uppercase;letter-spacing:0.4px;}
+
+.js-reveal .card:not(.in),.js-reveal .widget:not(.in){opacity:0;transform:translateY(14px)}
+.js-reveal .card,.js-reveal .widget{transition:opacity .55s var(--ease),transform .55s var(--ease)}
+
+
+.ion-svg{width:100%;height:auto;display:block;background:radial-gradient(ellipse at 50% 40%,#fff,var(--surface-soft));border:1px solid var(--border);border-radius:var(--r-md);margin-top:10px}
+.ion-svg .mv{transition:transform .9s cubic-bezier(.65,0,.35,1);transform-box:fill-box}
+.ion-svg text{font-family:'JetBrains Mono',monospace;font-weight:800;text-anchor:middle;dominant-baseline:central}
+.ion-svg .fade{opacity:0;transition:opacity .6s ease .35s}
+.ion-svg[data-s="1"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="1"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="1"] .d1,.ion-svg[data-s="2"] .d1{opacity:1}
+.ion-svg[data-s="2"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="2"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="2"] .proton{transform:translate(120px,-40px)}
+.ion-svg[data-s="2"] .arrow{opacity:1}
+.ion-svg[data-s="3"] .g-hcl{transform:translateX(10px)}
+.ion-svg[data-s="3"] .g-w{transform:translateX(-10px)}
+.ion-svg[data-s="3"] .proton{transform:translate(230px,-38px)}
+.ion-svg[data-s="3"] .d3{opacity:1}
+.ion-svg[data-s="3"] .glow{animation:ionGlow 1.6s ease-in-out infinite}
+@keyframes ionGlow{0%,100%{filter:drop-shadow(0 0 2px rgba(13,104,104,.3))}50%{filter:drop-shadow(0 0 10px rgba(13,104,104,.8))}}
+
+
+.ph-bar{position:relative;height:18px;border-radius:999px;margin:10px 0 4px;border:1px solid var(--border-strong);
+background:linear-gradient(90deg,#e5262e 0%,#ef5a28 14%,#f6a21e 28%,#d7d93a 43%,#5cb85c 50%,#21a89a 57%,#2f7fc1 71%,#4a4bb5 86%,#6b2d8f 100%)}
+.ph-marker{position:absolute;top:-6px;width:0;height:0;left:0;transform:translateX(-50%);transition:left .35s var(--ease)}
+.ph-marker::before{content:'';position:absolute;left:-7px;top:0;border:7px solid transparent;border-top:10px solid var(--text)}
+.ph-marker::after{content:attr(data-v);position:absolute;left:0;top:-22px;transform:translateX(-50%);background:var(--text);color:#fff;font:800 11px 'JetBrains Mono',monospace;padding:2px 6px;border-radius:5px;white-space:nowrap}
+.ph-flask{display:inline-block;width:22px;height:22px;border-radius:0 0 8px 8px;border:2px solid var(--text-soft);vertical-align:middle;margin-right:6px;transition:background .35s}
+
+
+.titr-wrap{position:relative}
+#titrationCanvas{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--r-md);background:#fff}
+.titr-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.titr-row input[type=range]{flex:1 1 200px}
+.titr-flask{width:34px;height:42px;border:2px solid var(--text-soft);border-radius:2px 2px 12px 12px;transition:background .3s;flex-shrink:0;position:relative}
+.titr-flask::after{content:'';position:absolute;left:-2px;right:-2px;top:-8px;height:6px;border:2px solid var(--text-soft);border-bottom:0;border-radius:3px 3px 0 0}
+
+
+.buffer-tank{position:relative;height:34px}
+#bufferFill{transition:width .4s var(--ease),background .4s;background-size:28px 28px;background-image:linear-gradient(45deg,rgba(255,255,255,.22) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.22) 75%,transparent 75%)}
+.buffer-tank.pulse{animation:bufPulse .45s ease}
+.buffer-tank.dead{animation:bufDead .5s ease 2}
+@keyframes bufPulse{50%{transform:scale(1.02);box-shadow:0 0 0 4px var(--accent-glow)}}
+@keyframes bufDead{50%{box-shadow:0 0 0 4px rgba(184,58,69,.35)}}
+
+
+.rx-stage{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:12px 0;padding:14px;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md)}
+.rx-beaker{position:relative;width:120px;height:150px;border:3px solid var(--text-soft);border-top:0;border-radius:0 0 18px 18px;background:rgba(255,255,255,.55);overflow:visible;flex-shrink:0}
+.rx-liquid{position:absolute;left:0;right:0;bottom:0;height:100px;border-radius:0 0 14px 14px;background:rgba(220,235,240,.65);transition:background 2.2s ease}
+.rx-solid{position:absolute;left:36px;bottom:2px;width:48px;height:24px;border-radius:40% 40% 8px 8px;opacity:0;transition:height 3.5s ease,opacity .5s,transform 3.5s ease}
+.rx-bubbles,.rx-precip,.rx-fumes{position:absolute;left:0;right:0;bottom:0;height:150px;pointer-events:none;overflow:hidden}
+.rx-fumes{overflow:visible;bottom:100px;height:70px}
+.rx-b{position:absolute;bottom:14px;border-radius:50%;background:rgba(255,255,255,.85);border:1px solid rgba(13,104,104,.45);animation:rxRise 2.2s ease-in forwards}
+@keyframes rxRise{to{transform:translate(var(--dx,0),-92px);opacity:0}}
+.rx-p{position:absolute;top:50px;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #cbd5e1;animation:rxFall 2.4s ease-in forwards}
+@keyframes rxFall{to{transform:translateY(90px)}}
+.rx-cloud{position:absolute;bottom:0;left:6px;right:6px;height:0;background:#fff;border-radius:10px 10px 0 0;box-shadow:0 0 0 1px #e2e8f0;transition:height 4s ease;opacity:.95}
+.rx-f{position:absolute;bottom:0;width:26px;height:26px;border-radius:50%;background:rgba(150,75,20,.55);filter:blur(7px);animation:rxFume 3s ease-out forwards}
+@keyframes rxFume{to{transform:translate(var(--dx,0),-70px) scale(2.2);opacity:0}}
+
+
+.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.rx-label{flex:1 1 200px;font-size:13px;color:var(--text-soft);line-height:1.5}
+.rx-label b{color:var(--text);font-family:'JetBrains Mono',monospace}
+@media print{.js-reveal .card,.js-reveal .widget{opacity:1!important;transform:none!important}}
+
+
+/* ulepszenia.css — warstwa wspólna nad baza.css: pasek lekcji, postęp czytania, spis z podświetleniem,
+   tryb ciemny, komponenty wspólne (mity, drzewo, cytat, dialog, słówka, figura), druk, dostępność.
+   Kolejność w lekcji: baza.css → ulepszenia.css → motywy/<przedmiot>.css. Edytuj tylko tutaj. */
+
+:root{--header-h:52px;--serif:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Charter,Georgia,serif}
+
+/* ---------- pasek lekcji (zamiast nagłówka aplikacji) ---------- */
+.lk-bar{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 12px;
+  background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--border)}
+.lk-subj{flex:none;display:inline-flex;align-items:center;gap:7px;font:800 12.5px/1 Inter,system-ui,sans-serif;color:var(--accent);text-decoration:none;
+  padding:6px 10px 6px 8px;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+.lk-subj i{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+.lk-title{flex:1;min-width:0;font:600 13px/1.25 Inter,system-ui,sans-serif;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lk-btn{flex:none;min-width:36px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);background:var(--surface);
+  color:var(--text);border-radius:9px;padding:0 10px;font:700 12.5px Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+.lk-btn:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.lk-prog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
+@media (max-width:520px){.lk-title{display:none}.lk-bar{justify-content:space-between}}
+
+/* ---------- nagłówek lekcji ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+.hero::after{content:"";position:absolute;inset:-10% -6% -10% 52%;z-index:-1;opacity:.12;pointer-events:none;background:var(--motyw-wzor,none) right center/auto 100% repeat-y}
+.hero h1{text-wrap:balance}
+.hero-kicker{color:var(--accent);text-transform:none;letter-spacing:0;font-size:13px}
+.page{padding:0 16px}
+.lk-btn svg{width:16px;height:16px;display:block}
+.lk-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:12.5px;color:var(--text-muted)}
+.lk-meta b{color:var(--text-soft);font-weight:700}
+
+/* ---------- spis treści: aktywna sekcja ---------- */
+@media (min-width:800px){.toc-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));column-gap:12px}}
+.toc-link.on{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);font-weight:700}
+section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
+
+/* ---------- komponenty wspólne ---------- */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:12px 0}
+.myth-head{grid-column:1/-1;font-weight:800;font-size:14px}
+.myth{border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow:hidden}
+.myth p{margin:0;padding:9px 12px;font-size:13.5px;line-height:1.5}
+.myth p span{display:block;font:800 11px Inter,system-ui;margin-bottom:2px}
+.myth-x{background:var(--c-error-bg)}.myth-x span{color:var(--c-error)}.myth-ok span{color:var(--c-basic)}
+
+.lk-tree{margin:12px 0;font-size:14px;overflow-x:auto}
+.lk-tree ul{list-style:none;margin:0;padding-left:18px}.lk-tree>ul{padding-left:0}
+.lk-tree li{position:relative;padding:3px 0 3px 14px}
+.lk-tree ul ul li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--accent-line)}
+.lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
+.lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
+.lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+
+/* cytat z tekstu (lektura, źródło, wypowiedź) */
+.lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
+.lk-quote blockquote{margin:0;font:400 17px/1.65 var(--serif);color:var(--text)}
+.lk-quote blockquote p{margin:0 0 6px;color:inherit}
+.lk-quote figcaption{margin-top:6px;font-size:12.5px;color:var(--text-muted)}
+
+/* dialog (role A/B, rozmowa, scenka) */
+.lk-dialog{margin:14px 0;display:flex;flex-direction:column;gap:8px}
+.lk-line{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.lk-who{min-width:30px;height:30px;padding:0 8px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font:800 12px Inter,system-ui;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line)}
+.lk-line.b .lk-who{background:var(--surface-soft);color:var(--text-soft);border-color:var(--border)}
+.lk-say{padding:8px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font-size:14.5px;line-height:1.55}
+.lk-say small{display:block;color:var(--text-muted);font-size:12.5px;margin-top:2px}
+
+/* słówka: wyraz — znaczenie — przykład */
+.lk-vocab{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.lk-vocab th{text-align:left;font-size:12px;color:var(--text-muted);font-weight:700;padding:6px 10px;border-bottom:2px solid var(--border)}
+.lk-vocab td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+.lk-vocab td:first-child{font-weight:800;color:var(--accent);white-space:nowrap}
+.lk-vocab td:last-child{color:var(--text-soft);font-style:italic}
+@media (max-width:560px){.lk-vocab thead{display:none}.lk-vocab tr{display:block;padding:8px 0;border-bottom:1px solid var(--border)}
+  .lk-vocab td{display:block;border:0;padding:1px 4px}}
+
+/* figura z biblioteki grafik przedmiotu */
+.lk-fig{margin:16px 0;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);overflow:hidden}
+.lk-fig figcaption{padding:9px 14px;border-top:1px solid var(--border);background:var(--surface-soft);font-size:13px;line-height:1.5;color:var(--text-soft)}
+.lk-fig figcaption b{color:var(--text);margin-right:4px}
+.lk-fig-body{padding:12px}
+.lk-fig svg{display:block;width:100%;height:auto}
+
+/* z chemii (lekcja.css): treści akademickie, plakietki */
+details.adv{border:1px dashed var(--c-warn-line,#eed8a8);border-radius:10px;background:var(--surface-soft,#f6f8fa);margin:10px 0;padding:0 12px}details.adv>summary{cursor:pointer;font-weight:700;color:var(--c-warn,#b06f1c);padding:9px 0;list-style:none}details.adv>summary::-webkit-details-marker{display:none}details.adv>summary::before{content:"▸ "}details.adv[open]>summary::before{content:"▾ "}.adv-tag{font-weight:600;font-size:11px;opacity:.75;margin-left:6px}.adv-body{padding:0 0 10px;font-size:13.5px;line-height:1.6}.adv-body table{font-size:12.5px}.adv-toggle{margin-top:10px;border:1px solid var(--c-warn-line,#eed8a8);background:var(--c-warn-bg,#fcf4e6);color:var(--c-warn,#b06f1c);border-radius:999px;padding:6px 12px;font:700 12px Inter,system-ui,sans-serif;cursor:pointer}.bio-tag{display:inline-block;font:800 10px Inter,system-ui;letter-spacing:.04em;padding:2px 7px;border-radius:99px;background:rgba(46,125,79,.12);color:#2e7d4f;margin-left:6px;vertical-align:middle}.v15{display:inline-block;font:800 9.5px Inter,system-ui;padding:1px 6px;border-radius:99px;background:rgba(13,125,125,.12);color:#0d7d7d;margin-left:6px;vertical-align:middle}@media print{details.adv{display:block}details.adv>.adv-body{display:block}}
+/* z chemii (lekcja.css): telefon, tabele */
+.exp-card{min-width:0;max-width:100%;box-sizing:border-box}.exp-grid>*{min-width:0;overflow-wrap:anywhere}
+@media (max-width:600px){.exp-grid{grid-template-columns:minmax(0,1fr)!important}.exp-grid>b{margin-top:4px}}
+.table-wrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+
+/* klinika błędów (::: klinika) — tabela, na telefonie karty */
+.klinika-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden}
+.klinika-table th{text-align:left;padding:9px 12px;background:var(--surface-soft);color:var(--text-soft);font-size:12px;font-weight:800;border-bottom:1px solid var(--border)}
+.klinika-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.klinika-table tr:last-child td{border-bottom:0}
+@media (max-width:600px){.klinika-table thead{display:none}.klinika-table tr{display:block;padding:8px 12px;border-bottom:1px solid var(--border)}
+  .klinika-table td{display:block;border:0;padding:2px 0}.klinika-table td:not(.col-blad):not(.col-ok){color:var(--text-soft)}}
+
+.lk-pre{margin:12px 0;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-soft);overflow-x:auto;font:12.5px/1.55 ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;color:var(--text-soft);white-space:pre}
+.lk-pre code{font:inherit;background:none;padding:0;color:inherit}
+.lk-hr{border:0;border-top:1px solid var(--border);margin:28px 0}
+
+/* ---------- dostępność ---------- */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;z-index:60;background:var(--surface);color:var(--accent);padding:8px 12px;border-radius:8px}
+.skip-link:focus{left:8px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- tryb ciemny: automatycznie albo przyciskiem (data-theme) ---------- */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme=dark]{
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}
+/* elementy bazy z białym tłem na sztywno */
+html[data-ciemny] :is(.flashcard,.checklist,.audit-item,.layer-legend,.quiz-q,.quiz-opt,.btn,.controls button,.eq-stage,.ion-assembly,.bld-workspace,.bld-pool button,.resume-dropdown,.ta-nav){background:var(--surface);color:var(--text)}
+html[data-ciemny] .hero{background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.active,.step-flow){color:var(--bg)}
+@media (max-width:600px){.hero::after{opacity:.07}}
+
+/* ---------- druk ---------- */
+@media print{
+  .lk-bar,.adv-toggle,.toc-item,.fab,.bottom-nav{display:none!important}
+  body{padding:0;background:#fff;color:#000}
+  .hero::after{display:none}.hero{background:none;box-shadow:none}
+  details.adv,details.answer{display:block}details>*{display:block}
+  .card,.minimum-card,.lk-fig,.myth,.quiz-q{break-inside:avoid;box-shadow:none}
+  a{color:inherit;text-decoration:none}
+}
+
+/* === Dopracowanie czytelności (2026-10-11; z wersji „ulepszonej” U03 użytkownika, uogólnione na wszystkie przedmioty, zgodne z trybem ciemnym) === */
+body{line-height:1.74}
+main{isolation:isolate}
+.hero{border-color:var(--accent-line)}
+.hero::before{content:"";position:absolute;right:-42px;top:-56px;width:180px;height:180px;z-index:-1;pointer-events:none;
+ border:1px solid var(--accent-line);border-radius:50%;opacity:.45;
+ box-shadow:0 0 0 22px var(--accent-glow),0 0 0 44px var(--accent-glow)}
+.part-heading{padding:0 0 12px;border-bottom:1px solid var(--border);align-items:flex-start}
+.part-num{margin-top:1px}
+section[id]{scroll-margin-top:calc(var(--header-h,56px) + 20px)}
+section p{max-width:78ch}
+section ul,section ol{padding-left:1.35rem}
+.card,.exp-card,.widget,.table-wrap{box-shadow:0 2px 8px rgba(24,49,59,.045)}
+.table-wrap{max-width:100%}
+.table-wrap table{line-height:1.55}
+.table-wrap td strong{color:var(--text)}
+.table-wrap tbody tr:nth-child(even) td{background:var(--surface-soft)}
+.table-wrap tbody tr:hover td{background:var(--accent-soft)}
+.mini-note{max-width:80ch}
+:is(button,a,summary,[tabindex]):focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:520px){.hero{padding:20px 16px}.part-heading{font-size:19px;gap:11px}
+ .table-wrap table{font-size:12.5px}.table-wrap th,.table-wrap td{padding:8px 9px}}
+@media(hover:none){.card:hover,.flashcard:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media print{.hero::before{display:none}.card,.exp-card,.table-wrap{break-inside:avoid;box-shadow:none}}
+
+/* fiszki: część ukryta do rozwinięcia (lekcja.js); przy druku — wszystkie */
+.flashcard[hidden]{display:none!important}
+.fz-more{display:block;width:100%;margin:-6px 0 18px;padding:12px 16px;border:2px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent;color:var(--text,#1d2a30);font-family:inherit;font-weight:600;font-size:15px;line-height:1.3;cursor:pointer;text-align:center}
+.fz-more:hover,.fz-more:focus-visible{background:var(--surface-2,rgba(0,0,0,.04))}
+@media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
+.quiz-q[hidden]{display:none!important}
+@media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
+
+/* motyw pol (Język polski) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#7a2848;--accent-dark:#561a32;--accent-soft:#f6e9ee;--accent-line:#e2c3cf;--accent-glow:rgba(122,40,72,.15);--hl-key:#7a2848;--hl-key-bg:#f3dfe7;--hl-formula:#561a32;--hl-formula-bg:#f6e9ee;--bg:#fbfafa;--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 140 200%27%3E%3Ctext x=%276%27 y=%27120%27 font-family=%27Georgia,serif%27 font-size=%27150%27 fill=%27%237a2848%27%3E%E2%80%9E%3C/text%3E%3Ctext x=%2760%27 y=%27190%27 font-family=%27Georgia,serif%27 font-size=%2770%27 font-style=%27italic%27 fill=%27%237a2848%27%3EAa%3C/text%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#e58aa8;--accent-dark:#f4bcd0;--accent-soft:#2e1a22;--accent-line:#5a3242;--accent-glow:rgba(229,138,168,.2);--hl-key:#f0a3bd;--hl-key-bg:#38202a;--hl-formula:#f4bcd0;--hl-formula-bg:#2e1a22;}}
+:root[data-theme=dark]{--accent:#e58aa8;--accent-dark:#f4bcd0;--accent-soft:#2e1a22;--accent-line:#5a3242;--accent-glow:rgba(229,138,168,.2);--hl-key:#f0a3bd;--hl-key-bg:#38202a;--hl-formula:#f4bcd0;--hl-formula-bg:#2e1a22;}
+
+/* przykłady i cytaty literackie krojem szeryfowym */
+.hero h1{font-family:var(--serif);font-weight:700;letter-spacing:-.2px}
+.part-heading{font-family:var(--serif);letter-spacing:0}
+.przyklad,.lk-quote blockquote{font-family:var(--serif)}
+.przyklad{display:block;margin:8px 0;padding:6px 0 6px 14px;border-left:2px solid var(--accent-line);font-size:16.5px;line-height:1.7}
+/* części zdania — szkolne oznaczenia (podkreślenia) */
+.z-pod{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+.z-orz{text-decoration:underline double;text-decoration-thickness:1.5px;text-underline-offset:4px}
+.z-prz{text-decoration:underline wavy;text-decoration-thickness:1.5px;text-underline-offset:4px}
+.z-dop{text-decoration:underline dashed;text-decoration-thickness:2px;text-underline-offset:4px}
+.z-oko{text-decoration:underline dotted;text-decoration-thickness:2.5px;text-underline-offset:5px}
+.z-leg{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--text-soft);margin:6px 0 12px}
+.z-pod,.z-orz,.z-prz,.z-dop,.z-oko{text-decoration-color:var(--accent)}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+<header class="lk-bar"><span class="lk-subj"><i></i>Język polski</span><span class="lk-title">G08 Przyimek</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<main class="page" id="main">
+<section class="hero card"><div class="hero-kicker">Język polski, lekcja G08</div><h1>Przyimek</h1><p class="lead">Mały wyraz, wielka władza: w, na, do, spod, zza — przyimek rządzi przypadkiem i tworzy wyrażenie przyimkowe.</p><div class="tag-row"><span class="level-badge level-basic">E8</span><span class="level-badge level-understand">ROZUMIENIE</span><span class="level-badge level-exam">KONKURS</span></div><div class="lk-meta"><span><b>Zakres:</b> gramatyka — części mowy i składnia; powiązania: L002, G01, G12, G13</span></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#cele">1. Cel i kryteria gotowości</a><a class="toc-link" href="#start">2. Sprawdź się przed nauką</a><a class="toc-link" href="#wyklad">3. Wykład — mały wyraz, wielka władza</a><a class="toc-link" href="#definicja">4. Definicja i rodzaje przyimków</a><a class="toc-link" href="#procedura">5. Jak rozpoznać przyimek — procedura</a><a class="toc-link" href="#przypadki">6. Przyimek rządzi przypadkiem</a><a class="toc-link" href="#formy">7. Formy wariantowe: we, ze, nade…</a><a class="toc-link" href="#funkcje">8. Funkcja wyrażenia przyimkowego w zdaniu</a><a class="toc-link" href="#rekcja">9. Rekcja — przyimek zamieszkany w czasowniku</a><a class="toc-link" href="#pisownia">10. Pisownia i interpunkcja</a><a class="toc-link" href="#trojka">11. Przyimek, przedrostek, przysłówek — trójka do rozróżnienia</a><a class="toc-link" href="#lekture">12. Przykłady z lektur</a><a class="toc-link" href="#nie-myl">13. Pary do odróżniania</a><a class="toc-link" href="#klinika">14. Klinika błędów</a><a class="toc-link" href="#mnemotechniki">15. Mnemotechniki</a><a class="toc-link" href="#olimpijczyk">16. Dla olimpijczyka</a><a class="toc-link" href="#cw-a">17. Ćwiczenia A — podstawa</a><a class="toc-link" href="#cw-b">18. Ćwiczenia B — trening i zadania w stylu CKE</a><a class="toc-link" href="#test">19. Test sprawdź się</a><a class="toc-link" href="#fiszki">20. Fiszki</a><a class="toc-link" href="#slownik">21. Słownik</a><a class="toc-link" href="#ciekawostki">22. Ciekawostki</a><a class="toc-link" href="#grafiki">23. Wizualizacja</a><a class="toc-link" href="#checklista">24. Samokontrola — checklista</a><a class="toc-link" href="#drzewo">25. Mapa pojęć</a></nav></details>
+<section id="cele">
+<div class="part-heading"><span class="part-num">1</span> Cel i kryteria gotowości <span class="level-badge level-basic">E8</span></div>
+<p>Potrafię rozpoznać przyimek i wyrażenie przyimkowe.
+Potrafię wskazać przypadek, którego wymaga przyimek, i dobrać poprawną formę rzeczownika.
+Potrafię użyć form <em>we, ze, nade, przede, ode</em> tam, gdzie są potrzebne.
+Potrafię odróżnić przyimek od przedrostka i od przysłówka.
+Potrafię zapisać przyimki złożone (<em>spod, zza, sprzed</em>) i wyrażenia przyimkowe (<em>na pewno, z powrotem</em>).</p>
+</section>
+<section id="start">
+<div class="part-heading"><span class="part-num">2</span> Sprawdź się przed nauką</div>
+<div class="card card-understand">
+<span class="card-label">Sprawdź się przed nauką — 3 szybkie pytania</span>
+<ol>
+<li>Czy „pod" w „podpisał" to przyimek?</li>
+<li>Jakiego przypadku wymaga przyimek „dzięki"?</li>
+<li>Jak piszemy: „na pewno" czy „napewno"?</li>
+</ol>
+<details class="answer"><summary>Odpowiedzi</summary>
+<ol>
+<li>Nie — to przedrostek; przyimek stoi osobno przed wyrazem („pod stołem").</li>
+<li>Celownika: dzięki pomocy, dzięki przyjaciołom.</li>
+<li>Rozdzielnie: „na pewno"; „napewno" to błąd.</li>
+</ol>
+</details>
+<p>To nie jest test na ocenę — pokazuje, co już wiesz.</p>
+</div>
+</section>
+<section id="wyklad">
+<div class="part-heading"><span class="part-num">3</span> Wykład — mały wyraz, wielka władza</div>
+<div class="card card-understand">
+<span class="card-label">Wykład — mały wyraz, wielka władza</span>
+<p>Spróbuj wypowiedzieć samo „pod". Zatrzymujesz się w pół słowa — słuchacz czeka na dokończenie. Przyimek jest jak haczyk: sam niczego nie niesie, ale musi coś zaczepić. Dlatego gramatyka mówi, że przyimek <strong>nie występuje samodzielnie</strong>: łączy się z rzeczownikiem, zaimkiem albo liczebnikiem, a razem tworzą <strong>wyrażenie przyimkowe</strong> — <em>pod stołem, do szkoły, o przyjaźni, bez niego</em>. I właśnie to wyrażenie, nie sam przyimek, pracuje w zdaniu: może być okolicznikiem (<em>gdzie? kiedy? dlaczego?</em>), dopełnieniem (<em>o czym? na kogo czekasz?</em>) albo przydawką (<em>jaki?</em> — dom z czerwonej cegły).</p>
+<p>Ten malutki wyraz ma jednak wielką władzę: <strong>wybiera przypadek towarzysza</strong>. <em>Bez, od, do, dla, u, z</em> — dopełniacz (<em>bez strachu, do domu</em>). <em>Ku, dzięki, wbrew</em> — celownik (<em>dzięki pomocy</em>). <em>Przez</em>, a także <em>na</em> i <em>w</em>, gdy pytamy <em>dokąd?</em> — biernik (<em>przez las, na górę, w drogę</em>). <em>Z</em> (z kim?), <em>pod, nad, przed, za</em> (gdzie?) — narzędnik (<em>z bratem, pod stołem</em>). <em>O, przy</em>, a także <em>w</em> i <em>na</em>, gdy pytamy <em>gdzie?</em> — miejscownik (<em>w lesie, na stole, o przyjaźni</em>). Najciekawsze, że część przyimków ma kilka uprawnień i sama wybiera przypadek według znaczenia: <em>idę na górę</em> (dokąd? — biernik), ale <em>jestem na górze</em> (gdzie? — miejscownik); <em>wyszedł z domu</em> (skąd? — dopełniacz), ale <em>idzie z bratem</em> (z kim? — narzędnik). Wniosek praktyczny: nie ucz się przyimka w izolacji — zawsze z przypadkiem i całym przykładem.</p>
+<p>Przyimek bywa też kameleonem pisowni. Przed niektórymi zbitkami spółgłosek <strong>wydłuża się</strong>: <em>we wtorek, ze szkoły, nade mną, przede wszystkim</em>. Łączy się w wyrazy złożone: <em>spod, zza, znad, sprzed, spoza</em> — nigdy „z pod", „z za", „z przed". Z rzeczownikami tworzy utarte <strong>wyrażenia pisane rozdzielnie</strong>: <em>na pewno, z powrotem, w ogóle</em> — a ich kuzyni-przysłówki piszemy <strong>łącznie</strong>: <em>naprawdę, nadal, wkrótce</em>. Na tej właśnie granicy gubione są egzaminacyjne punkty.</p>
+<p>Na egzaminie przyimek sprawdza się w trzech rolach: musisz go <strong>rozpoznać</strong> (i odróżnić od przedrostka w <em>podpisać</em> oraz przysłówka w <em>mieszkam blisko</em>), <strong>dobrać poprawną formę</strong> wyrazu po nim (<em>spod łóżka</em>, nie „z pod łóżka") i <strong>nazwać funkcję</strong> całego wyrażenia w zdaniu. A w wypracowaniu każdy błąd typu „w każdym bądź razie" kosztuje punkty za poprawność językową. Dlatego cała lekcja trenuje patrzenie na <strong>parę</strong>: przyimek + wyraz w przypadku — bo dopiero para znaczy.</p>
+</div>
+</section>
+<section id="definicja">
+<div class="part-heading"><span class="part-num">4</span> Definicja i rodzaje przyimków <span class="level-badge level-basic">E8</span></div>
+<div class="card card-basic">
+<span class="card-label">Definicja</span>
+<p><strong>Przyimek</strong> — nieodmienna część mowy, która <strong>nie występuje samodzielnie</strong>: łączy się z rzeczownikiem (lub zaimkiem, liczebnikiem) i razem z nim tworzy <strong>wyrażenie przyimkowe</strong> (<em>pod stołem, do szkoły, o przyjaźni</em>). Przyimek określa relacje: miejsca, czasu, przyczyny, celu, sposobu.</p>
+<p>Przyimek nie odpowiada na pytanie — odpowiada <strong>całe wyrażenie przyimkowe</strong>: <em>gdzie? — pod stołem</em>.</p>
+</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Rodzaj</th><th>Przykłady</th></tr></thead>
+<tbody>
+<tr><td>proste (jeden wyraz)</td><td>w, na, do, z, od, o, po, za, pod, nad, przed, przez, przy, bez, dla, u, ku, obok, wśród, mimo, według, dzięki</td></tr>
+<tr><td>złożone (z dwóch przyimków)</td><td>spod (z + pod), zza (z + za), znad, sprzed, spoza, sponad, spomiędzy, ponad, poprzez, poza</td></tr>
+<tr><td>wtórne (z innych części mowy)</td><td>blisko, wzdłuż, dookoła, naprzeciw, zamiast, wskutek; utarte zestawienia: w czasie, z powodu</td></tr>
+</tbody></table></div>
+<div class="card card-warning">
+<span class="card-label">Uwaga do „wtórnych"</span>
+<p><em>W czasie, z powodu</em> to utarte zestawienia przyimek + rzeczownik (w dopełniaczu), które w praktyce działają jak jeden przyimek. <em>Zamiast</em> i <em>naprzeciw</em> bywają też przysłówkami — rozstrzyga kontekst (patrz sekcja 11).</p>
+</div>
+</section>
+<section id="procedura">
+<div class="part-heading"><span class="part-num">5</span> Jak rozpoznać przyimek — procedura <span class="level-badge level-basic">E8</span></div>
+<ol>
+<li>Sprawdź, czy wyraz stoi <strong>przed rzeczownikiem lub zaimkiem</strong> i nie ma sensu bez niego: <em>na…?</em> — <em>na stole</em>.</li>
+<li>Sprawdź, czy wyraz jest <strong>nieodmienny</strong> i <strong>osobny</strong> (nie jest częścią innego wyrazu).</li>
+<li>Zadaj pytanie do całego wyrażenia: <em>gdzie? kiedy? o czym? z kim?</em></li>
+<li>Odróżnij od <strong>przedrostka</strong>: przedrostek jest częścią wyrazu (<em>podpisać, przejść, wynieść</em>), przyimek — osobnym wyrazem (<em>pod stołem, przez las</em>).</li>
+<li>Odróżnij od <strong>przysłówka</strong>: <em>Mieszka <strong>blisko</strong>.</em> (przysłówek, nic po nim nie stoi) — <em>Mieszka <strong>blisko szkoły</strong>.</em> (przyimek wtórny + dopełniacz).</li>
+</ol>
+</section>
+<section id="przypadki">
+<div class="part-heading"><span class="part-num">6</span> Przyimek rządzi przypadkiem <span class="level-badge level-basic">E8</span></div>
+<div class="card card-core">
+<span class="card-label">Tabela główna: przyimek → przypadek</span>
+<div class="table-wrap"><table>
+<thead><tr><th>Przypadek</th><th>Przyimki</th><th>Przykłady</th></tr></thead>
+<tbody>
+<tr><td><strong>dopełniacz</strong></td><td>do, od, bez, dla, u, z/ze (skąd?), według, mimo, obok, wśród, wskutek, zamiast, naprzeciw, spod, zza, znad, sponad, sprzed, spoza, spomiędzy</td><td>do domu, bez strachu, z lasu, u babci, sprzed szkoły, spod stołu</td></tr>
+<tr><td><strong>celownik</strong></td><td>ku, dzięki, wbrew, przeciw</td><td>ku morzu, dzięki przyjaciołom, wbrew radom, przeciw komuś</td></tr>
+<tr><td><strong>biernik</strong></td><td>przez, na (dokąd?), w (dokąd?), o (prosić o), za (dokąd? i czas: za godzinę), pod (dokąd?), nad (dokąd?), po (cel: po zakupy)</td><td>przez las, na górę, w drogę, prosić o pomoc, za godzinę, nad rzekę</td></tr>
+<tr><td><strong>narzędnik</strong></td><td>z/ze (z kim? z czym?), za (gdzie?), pod (gdzie?), nad (gdzie?), między, <strong>przed — zawsze</strong></td><td>z kolegą, pod stołem, nad rzeką, przed domem, przed lekcją (także w czasie)</td></tr>
+<tr><td><strong>miejscownik</strong></td><td>o (o czym?), w (gdzie?), na (gdzie?), przy — zawsze, po</td><td>o przyjaźni, w lesie, na stole, przy oknie, po lekcjach</td></tr>
+</tbody></table></div>
+</div>
+<div class="card card-basic">
+<span class="card-label">Ten sam przyimek — różne przypadki</span>
+<ul>
+<li><em>idę <strong>na górę</strong></em> (dokąd? — biernik) / <em>jestem <strong>na górze</strong></em> (gdzie? — miejscownik)</li>
+<li><em>wyszedł <strong>z domu</strong></em> (skąd? — dopełniacz) / <em>idzie <strong>z bratem</strong></em> (z kim? — narzędnik)</li>
+<li><strong><em>nad rzekę</strong></em> (biernik) / <strong><em>nad rzeką</strong></em> (narzędnik)</li>
+<li><strong><em>o książce</strong></em> (o czym mówicie — miejscownik) / <strong><em>o książkę</strong></em> (troszczyć się o coś — biernik)</li>
+<li><strong><em>pod łóżko</strong></em> (biernik) / <strong><em>pod łóżkiem</strong></em> (narzędnik)</li>
+<li><strong><em>za granicę</strong></em> (biernik) / <strong><em>za granicą</strong></em> (narzędnik) / <strong><em>za godzinę</strong></em> (biernik, czas)</li>
+</ul>
+</div>
+<div class="card card-warning">
+<span class="card-label">To zestaw typowy, nie słownik</span>
+<p>Tabela podaje połączenia typowe, a nie kompletny słownik łączliwości (rekcji). Przypadek zależy od przyimka <strong>i znaczenia</strong>; wątpliwe przykłady sprawdzaj w słowniku poprawnej polszczyzny.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — ruch czy położenie?</span>
+<p>Przyimki <em>w, na, za, pod, nad, przed</em> mają dwie twarze. Myślisz o <strong>ruchu</strong> (<em>dokąd?</em>) — celujesz w biernik: <em>wskoczył w kałużę, wgramolił się na dach, schował za szafę</em>. Myślisz o <strong>położeniu</strong> (<em>gdzie?</em>) — sięgasz po miejscownik (<em>siedzi w kałuży</em>) albo narzędnik (<em>przysiadł pod dachem, stał za szafą</em>). Wskazówka nie jest jednak automat: <em>za godzinę</em> to czas, nie ruch, a mimo to biernik; <em>iść po zakupy</em> to cel. Gdy wątpisz, zadaj pytanie do całego wyrażenia i sprawdź formę w słowniku.</p>
+</div>
+</section>
+<section id="formy">
+<div class="part-heading"><span class="part-num">7</span> Formy wariantowe: we, ze, nade… <span class="level-badge level-basic">E8</span></div>
+<ul>
+<li><strong>we</strong> — przed <em>w-, f-</em> + spółgłoska: <em>we wtorek, we Wrocławiu, we Francji, we mnie, we śnie</em>.</li>
+<li><strong>ze</strong> — przed <em>s-, z-, ś-, ź-, ż-, sz-, rz-</em> + spółgłoska oraz przed <em>mn-</em>: <em>ze szkoły, ze snu, ze złości, ze środka, ze mną</em>.</li>
+<li><strong>nade, pode, przede, ode, beze</strong> — głównie z zaimkiem <em>mnie / mną</em> i w utartych zwrotach: <em>nade mną, pode mną, przede wszystkim, ode mnie, beze mnie</em>.</li>
+<li><strong>przeze</strong> — przed <em>mnie</em>: <em>przeze mnie</em>.</li>
+</ul>
+<div class="card card-warning">
+<span class="card-label">Nie wstawiaj mechanicznie</span>
+<p>Formy z -e służą wygodnej wymowie; kieruj się normą i naturalnością: <em>w Warszawie</em> (po <em>w</em> następuje samogłoska), ale <em>we wtorek</em>. Nie ma formy „pode stołem" — tylko <em>pod stołem</em>.</p>
+</div>
+<p>Przyimki <strong>złożone</strong> piszemy łącznie: <em>spod, zza, znad, sprzed, spoza, sponad, spomiędzy</em>. Odróżnij je od połączeń osobnych przyimków z rzeczownikiem: <em>z powodu, na skutek, w związku z</em>.</p>
+</section>
+<section id="funkcje">
+<div class="part-heading"><span class="part-num">8</span> Funkcja wyrażenia przyimkowego w zdaniu <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<p>Przyimek <strong>sam nie jest częścią zdania</strong> — częścią zdania jest całe wyrażenie przyimkowe:</p>
+<ul>
+<li><strong>okolicznik</strong>: <em>Bilbo schował się <strong>za beczką</strong>.</em> (gdzie?) / <em>Wyruszyli <strong>o świcie</strong>.</em> (kiedy?) / <em>Drżał <strong>ze strachu</strong>.</em> (dlaczego?)</li>
+<li><strong>dopełnienie</strong>: <em>Łucja opowiadała <strong>o Narnii</strong>.</em> (o czym?) / <em>Edmund myślał <strong>o rachatłukum</strong>.</em> (o czym?)</li>
+<li><strong>przydawka</strong>: <em>Dom <strong>z czerwonej cegły</strong> stał na rogu.</em> (jaki dom?) / <em>Klucz <strong>do szafy</strong> zginął.</em> (jaki klucz?)</li>
+</ul>
+<p>Uwaga: nie każde wyrażenie przyimkowe to okolicznik — gdy przyimek narzuca czasownik (rekcja), całe wyrażenie jest dopełnieniem. Patrz sekcja 9.</p>
+</section>
+<section id="rekcja">
+<div class="part-heading"><span class="part-num">9</span> Rekcja — przyimek zamieszkany w czasowniku</div>
+<div class="card card-core">
+<span class="card-label">Rekcja — poznaj parę, nie wyraz</span>
+<p>Niektóre czasowniki (i przymiotniki) wymagają <strong>konkretnego przyimka i przypadku</strong> — ta łączliwość nazywa się rekcją: <em>czekać <strong>na</strong> kogoś/coś</em> (biernik), <em>rozmawiać <strong>o</strong> czymś</em> (miejscownik), <em>zależeć <strong>od</strong> czegoś</em> (dopełniacz), <em>wziąć udział <strong>w</strong> czymś</em> (miejscownik), <em>mieć wpływ <strong>na</strong> coś</em> (biernik), <em>być przekonanym <strong>o</strong> czymś</em> (miejscownik); <em>przyglądać się czemuś</em> — celownik <strong>bez przyimka</strong>.</p>
+<p>Dlatego w zdaniu <em>Czekam na autobus</em> wyrażenie <em>na autobus</em> to <strong>dopełnienie</strong> wymagane przez czasownik, a nie okolicznik miejsca. Nie zastępuj przyimka „na podobieństwo znaczeń" — sprawdź całe połączenie, najlepiej w słowniku.</p>
+</div>
+</section>
+<section id="pisownia">
+<div class="part-heading"><span class="part-num">10</span> Pisownia i interpunkcja <span class="level-badge level-basic">E8</span></div>
+<div class="card card-core">
+<span class="card-label">Cztery drogi pisowni</span>
+<ul>
+<li>Przyimki <strong>proste</strong> — <strong>osobno</strong>: <em>z domu, na górze, w lesie, do widzenia</em>.</li>
+<li>Przyimki <strong>złożone</strong> — <strong>łącznie</strong>: <em>spod, zza, znad, sprzed, spoza, sponad, spomiędzy, ponad, poprzez</em> (błędy: <em>z pod, z za, z przed</em>).</li>
+<li><strong>Wyrażenia przyimkowe</strong> o znaczeniu przysłówkowym — <strong>osobno</strong>: <em>na pewno, na razie, w ogóle, z powrotem, po polsku, do góry, z powodu, na skutek, w związku z</em>.</li>
+<li><strong>Przysłówki</strong> powstałe z wyrażeń — <strong>łącznie</strong>: <em>naprawdę, nadal, wkrótce, zamiast, dookoła, naprzeciwko, przedtem</em>.</li>
+</ul>
+</div>
+<div class="card card-warning">
+<span class="card-label">Interpunkcja: przecinek nigdy po przyimku</span>
+<p>Przyimek nie wymaga przecinka; przecinek stoi <strong>przed przyimkiem</strong>, gdy od niego zaczyna się zdanie podrzędne: <em>Książka, <strong>o której</strong> mówiłeś, zginęła.</em> (nigdy: <em>o, której</em>).</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — trzy pytania do pisowni</span>
+<ol>
+<li>Czy to <strong>jeden przyimek z dwóch</strong> (<em>s + pod, z + za, s + przed</em>)? → pisz <strong>łącznie</strong>: <em>spod stołu, zza drzewa, sprzed domu</em>.</li>
+<li>Czy to <strong>utarte wyrażenie</strong> przyimek + rzeczownik, działające jak jeden przyimek? → pisz <strong>rozdzielnie</strong>: <em>na pewno, z powrotem, z powodu</em>.</li>
+<li>Czy wyraz odpowiada na pytanie <em>jak?</em> i <strong>stoi sam</strong>? → to przysłówek, pisz <strong>łącznie</strong>: <em>naprawdę, nadal, wkrótce</em>.</li>
+</ol>
+</div>
+<div class="card card-warning">
+<span class="card-label">Przed tym czy przedtem?</span>
+<p><em>Przedtem</em> (przysłówek „wcześniej") — łącznie: <em>Przedtem było ciszej.</em> <em>Przed tym</em> (przyimek + zaimek) — rozdzielnie: <em>Przed tym wydarzeniem ostrzegano nas.</em> Porównaj: <em>przed tym budynkiem</em> (przyimek + zaimek wskazujący).</p>
+</div>
+</section>
+<section id="trojka">
+<div class="part-heading"><span class="part-num">11</span> Przyimek, przedrostek, przysłówek — trójka do rozróżnienia <span class="level-badge level-basic">E8</span></div>
+<div class="card card-core">
+<span class="card-label">Trzy losy tego samego brzmienia</span>
+<ul>
+<li><em>pod stołem</em> — <strong>przyimek</strong>: łączy się z rzeczownikiem w narzędniku, tworzy wyrażenie przyimkowe.</li>
+<li><em>podskoczył</em> — <strong>przedrostek</strong>: część wyrazu (budowa czasownika), nie osobny wyraz.</li>
+<li><em>Wyszedł na zewnątrz</em> / <em>Zewnątrz było zimno</em> — <em>na</em> to przyimek (w wyrażeniu); <em>zewnątrz</em> działa jak przysłówek, gdy stoi samotnie.</li>
+<li><em>Mieszka blisko</em> (przysłówek) / <em>Mieszka blisko lasu</em> (przyimek wtórny + dopełniacz).</li>
+</ul>
+</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie — kontekst rozstrzyga</span>
+<p>Te same brzmienia bywają raz przyimkami, raz przysłówkami. Test jednopunktowy: <strong>czy bezpośrednio za wyrazem stoi rzeczownik lub zaimek w przypadku?</strong> Jest — przyimek (<em>naprzeciw domu, zamiast cukru, blisko lasu</em>); nie ma — przysłówek (<em>stanął naprzeciw, słodzimy zamiast, mieszkam blisko</em>). Etykiety słownikowe („przysłówek", „przyimek wtórny") czytaj zawsze razem z przykładem.</p>
+</div>
+<p><strong>Pytanie kontrolne:</strong> czy wyraz jest samodzielny i łączy się z innym wyrazem, tworząc wyrażenie przyimkowe, czy stanowi część innego wyrazu?</p>
+</section>
+<section id="lekture">
+<div class="part-heading"><span class="part-num">12</span> Przykłady z lektur <span class="level-badge level-basic">E8</span></div>
+<ol>
+<li>Łucja weszła <strong>do</strong> szafy i wyszła <strong>w</strong> zimowym lesie. („Lew, czarownica i stara szafa") → <em>do</em> + D. (dokąd?), <em>w</em> + Ms. (gdzie?).</li>
+<li>Krasnoludy chciały odzyskać skarb <strong>spod</strong> Samotnej Góry. („Hobbit") → przyimek złożony, łącznie.</li>
+<li>Scrooge zobaczył ducha <strong>przy</strong> swoim łóżku. („Opowieść wigilijna") → <em>przy</em> + Ms., okolicznik miejsca.</li>
+<li>Mały Książę przybył <strong>na</strong> Ziemię <strong>z</strong> maleńkiej planety. → <em>na</em> + B. (dokąd?), <em>z</em> + D. (skąd?).</li>
+<li><strong>Dzięki</strong> odwadze Alka Rudy został odbity. („Kamienie na szaniec") → <em>dzięki</em> + C., okolicznik przyczyny.</li>
+<li>Chłopcy walczyli <strong>o</strong> plac. („Chłopcy z Placu Broni") → <em>o</em> + B., dopełnienie.</li>
+<li><strong>Ze</strong> wzgórza Staś zobaczył pustynię. („W pustyni i w puszczy") → forma <em>ze</em> przed <em>wz-</em>.</li>
+</ol>
+<p>(Parafrazy treści lektur.)</p>
+</section>
+<section id="nie-myl">
+<div class="part-heading"><span class="part-num">13</span> Pary do odróżniania</div>
+<nie-myl>
+<p><strong>przyimek</strong> || <strong>przedrostek</strong> — test: przyimek to osobny wyraz przed rzeczownikiem (<em>pod oknem</em>); przedrostek to część wyrazu (<em>podskoczył</em>). Usuń rzeczownik: po przyimku nic nie zostaje, wyraz z przedrostkiem ma sens.
+<strong>przyimek</strong> || <strong>przysłówek</strong> — test: czy za wyrazem stoi wyraz w przypadku? <em>blisko lasu</em> (przyimek) / <em>mieszkam blisko</em> (przysłówek).
+<strong>na pewno</strong> || <strong>naprawdę</strong> — test: <em>na pewno</em> to wyrażenie przyimkowe — rozdzielnie; <em>naprawdę</em> to przysłówek (z dawnego „na prawdę") — łącznie.
+<strong>przed tym</strong> || <strong>przedtem</strong> — test: <em>przed tym</em> + rzeczownik/zaimek (przyimek, rozdzielnie); <em>przedtem</em> = „wcześniej" (przysłówek, łącznie).
+<strong>dzięki</strong> || <strong>z powodu</strong> — test znaczenia i przypadku: <em>dzięki</em> + celownik dla przyczyny dobrej (<em>dzięki pomocy</em>); <em>z powodu</em> + dopełniacz dla przyczyny złej (<em>z powodu burzy</em>).
+<strong>z lasu</strong> || <strong>z bratem</strong> — test pytania: <em>skąd?</em> → dopełniacz; <em>z kim?</em> → narzędnik. Ta sama litera, dwa przypadki.</p>
+</nie-myl>
+</section>
+<section id="klinika">
+<div class="part-heading"><span class="part-num">14</span> Klinika błędów</div>
+<table class="klinika-table"><thead><tr><th>Błąd</th><th>Poprawnie</th><th>Dlaczego?</th></tr></thead><tbody><tr class="error-row"><td class="col-blad" data-label="Błąd">w każdym bądź razie</td><td class="col-ok" data-label="Poprawa">w każdym razie</td><td data-label="Dlaczego">kontaminacja z „bądź co bądź"</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">z pod stołu, z za drzewa, z przed domu</td><td class="col-ok" data-label="Poprawa">spod stołu, zza drzewa, sprzed domu</td><td data-label="Dlaczego">przyimki złożone — łącznie</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">z szkoły, w wtorek</td><td class="col-ok" data-label="Poprawa">ze szkoły, we wtorek</td><td data-label="Dlaczego">przed zbitką spółgłosek — forma z -e</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">ze sokiem</td><td class="col-ok" data-label="Poprawa">z sokiem</td><td data-label="Dlaczego"><em>ze</em> tylko przed grupą spółgłosek</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">w oparciu o regulamin</td><td class="col-ok" data-label="Poprawa">na podstawie regulaminu</td><td data-label="Dlaczego">błędne wyrażenie przyimkowe</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">dzięki chorobie nie przyszedł</td><td class="col-ok" data-label="Poprawa">z powodu choroby nie przyszedł</td><td data-label="Dlaczego"><em>dzięki</em> — tylko przyczyny pozytywne</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">dla mi</td><td class="col-ok" data-label="Poprawa">dla mnie</td><td data-label="Dlaczego">po przyimku zaimek w formie długiej</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">na przeciwko</td><td class="col-ok" data-label="Poprawa">naprzeciwko</td><td data-label="Dlaczego">przysłówek / przyimek wtórny — łącznie</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">przed lekcji</td><td class="col-ok" data-label="Poprawa">przed lekcją</td><td data-label="Dlaczego"><em>przed</em> zawsze + narzędnik, także w czasie</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">napewno</td><td class="col-ok" data-label="Poprawa">na pewno</td><td data-label="Dlaczego">wyrażenie przyimkowe pisane rozdzielnie</td></tr></tbody></table>
+</section>
+<section id="mnemotechniki">
+<div class="part-heading"><span class="part-num">15</span> Mnemotechniki</div>
+<wskazowki>
+<ul>
+<li><strong>S- na początku = scalone:</strong> <em>spod, zza, znad, sprzed, spoza, sponad</em> — widzisz „s-" przed spółgłoską? Piszesz łącznie.</li>
+<li><strong>Dziękujesz komu?</strong> — <em>dzięki</em> wymaga celownika, bo dziękujemy <em>komu</em>.</li>
+<li><strong>Ruch — biernik, położenie — narzędnik/miejscownik:</strong> „leć do celu" (B.) / „stoi jak słup" (N., Ms.).</li>
+<li><strong>na pewno — „na" osobno; naprawdę — razem jak prawda.</strong></li>
+<li><strong>Gęsta spółgłoska? Wydłuż przyimek:</strong> <em>we wtorek, ze szkoły, nade mną, przede wszystkim</em>.</li>
+<li><strong>Rekcję ucz w parach:</strong> nie „czekać", tylko „czekać na + biernik"; nie „rozmawiać", tylko „rozmawiać o + miejscownik".</li>
+</ul>
+</wskazowki>
+</section>
+<section id="olimpijczyk">
+<div class="part-heading"><span class="part-num">16</span> Dla olimpijczyka</div>
+<details class="adv"><summary>Dla olimpijczyka — granice kategorii przyimka <span class="adv-tag">poziom ambitny (konkurs)</span></summary><div class="adv-body">
+<p>Trzy zagadnienia poza podręcznikiem, a obecne w zadaniach konkursowych:</p>
+<ol>
+<li><strong>Dopełnienie czy okolicznik?</strong> Przy wyrażeniach wymaganych przez czasownik (rekcja: <em>czekać na kogoś, wierzyć w coś</em>) szkoła mówi zwykle o <strong>dopełnieniu</strong>, ale klasyfikacje się różnią i część opracowań opisuje je jako okolicznik — w odpowiedzi konkursowej zawsze nazwij i uzasadnij przyjętą konwencję.</li>
+<li><strong>Przyimki wtórne od rzeczowników i imiesłowów:</strong> <em>w trakcie, w celu, wskutek, włącznie z, wyłączając, licząc na</em> — rozstrzygaj testem „czy stoi za nim wyraz w przypadku". Wymagają dopełniacza: <em>w trakcie pracy, w celu obrony, wskutek burzy</em>.</li>
+<li><strong>Formy zastygłe:</strong> <em>mną, mnie</em> w <em>ze mną, nade mną</em> niosą skamieniałą końcówkę dawnej odmiany zaimka — przyimek „przejął" dawną formę (źródło: gramatyki historyczne języka polskiego; orientacyjnie). Relikt pokrewny: gwarowe <em>zemną</em>.</li>
+</ol>
+<p>Do weryfikacji z wymaganiami konkretnego konkursu — w paczce nie ma dokumentu wymagań.</p>
+</div></details>
+</section>
+<section id="cw-a">
+<div class="part-heading"><span class="part-num">17</span> Ćwiczenia A — podstawa <span class="level-badge level-basic">E8</span></div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 1 (6 pkt) — Wyrażenia przyimkowe</span>
+<p><strong>A1.</strong> Podkreśl wyrażenia przyimkowe: <em>Po lekcjach poszliśmy z Olą do parku nad rzeką.</em>
+<strong>D2.</strong> Wskaż wyrażenia przyimkowe: <em>Wczoraj wróciliśmy późno, ale dziś przed lekcją spotkamy się przed szkołą.</em></p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>A1 (po 1 pkt): Po lekcjach, z Olą, do parku, nad rzeką. D2 (po 1 pkt): <em>przed lekcją</em>, <em>przed szkołą</em> — oba wyrażenia przyimkowe o różnych funkcjach (czas / miejsce).</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 2 (11 pkt) — Uzupełnij formy i przypadki</span>
+<p><strong>A2.</strong> Uzupełnij: <em>bez (cukier), dzięki (pomoc), przez (las), z (brat), o (przyjaźń)</em>.
+<strong>Zestaw B.</strong> Uzupełnij przypadek: (a) na ___ (stół — kierunek); (b) na ___ (stół — miejsce); (c) pod ___ (łóżko — kierunek); (d) pod ___ (łóżko — miejsce); (e) spod ___ (drzewo); (f) przed ___ (klasa).</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>A2 (po 1 pkt): bez cukru, dzięki pomocy, przez las, z bratem, o przyjaźni. Zestaw B (po 1 pkt): (a) na stół — biernik; (b) na stole — miejscownik; (c) pod łóżko — biernik; (d) pod łóżkiem — narzędnik; (e) spod drzewa — dopełniacz; (f) przed klasą — narzędnik.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 3 (5 pkt) — z/ze, w/we</span>
+<p>Wstaw <em>z</em> albo <em>ze</em>, <em>w</em> albo <em>we</em>: <em>… szkoły, … sokiem, … wtorek, … Warszawie, … mną</em>.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>ze szkoły (1); z sokiem (1); we wtorek (1); w Warszawie (1); ze mną (1).</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 4 (6 pkt) — Przyimek, przedrostek, przypadek</span>
+<p><strong>A4.</strong> Przyimek czy przedrostek? <em>podskoczył, pod oknem, przeczytał, przez okno</em>.
+<strong>A6.</strong> Jaki przypadek? <em>Idę na plażę.</em> / <em>Jestem na plaży.</em></p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>A4 (po 1 pkt): przedrostek; przyimek; przedrostek; przyimek. A6 (po 1 pkt): biernik (dokąd?); miejscownik (gdzie?).</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 5 (10 pkt) — Popraw pisownię</span>
+<p><strong>A5.</strong> <em>z pod łóżka, z za szafy, na prawdę, na pewno</em>.
+<strong>D3.</strong> <em>z poza domu, z pod łóżka, na pewno, zpowrotem, przedewszystkim</em>.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>A5 (po 1 pkt): spod łóżka; zza szafy; naprawdę; na pewno (bez zmian). D3 (po 1 pkt): spoza domu; spod łóżka; na pewno; z powrotem; przede wszystkim.</p>
+</details>
+</div>
+</section>
+<section id="cw-b">
+<div class="part-heading"><span class="part-num">18</span> Ćwiczenia B — trening i zadania w stylu CKE</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 6 (3 pkt) — Funkcja wyrażenia przyimkowego</span>
+<p>Określ funkcję: <em>Bilbo czytał mapę przy świecy.</em> / <em>Mapa z runami była stara.</em> / <em>Krasnoludy marzyły o złocie.</em></p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>okolicznik miejsca (gdzie? — 1 pkt); przydawka (jaka mapa? — 1 pkt); dopełnienie (o czym? — 1 pkt).</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 7 (4 pkt) — Blisko i z: kontekst decyduje</span>
+<p><strong>B2.</strong> Wyjaśnij różnicę: <em>Mieszkam blisko.</em> — <em>Mieszkam blisko lasu.</em>
+<strong>D4.</strong> Wyjaśnij różnicę: <em>z kolegą</em> / <em>z miasta</em>.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>B2 (2 pkt): w pierwszym <em>blisko</em> to przysłówek (okolicznik); w drugim — przyimek wtórny z dopełniaczem. D4 (2 pkt): <em>z kolegą</em> — towarzyszenie, narzędnik; <em>z miasta</em> — pochodzenie/oddalenie, dopełniacz.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 8 (2 pkt) — Dzięki i z powodu</span>
+<p>Popraw i uzasadnij: <em>Dzięki burzy nie pojechaliśmy na wycieczkę.</em></p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p><em>Z powodu burzy…</em> — <em>dzięki</em> wskazuje przyczynę korzystną (2 pkt).</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 9 (6 pkt) — Kierunek czy położenie? Funkcja?</span>
+<p><strong>D5.</strong> Ułóż po jednym zdaniu z <em>w</em> wymagającym biernika i miejscownika; nazwij różnicę znaczenia.
+<strong>Zestaw C.</strong> Określ funkcję: <em>Czekam na kolegę.</em> / <em>Wrócimy po obiedzie.</em> / <em>Kot schował się pod stołem.</em> / <em>Myślę o wakacjach.</em></p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>D5 (2 pkt): np. <em>Wszedł w las</em> — kierunek, biernik; <em>Spacerował w lesie</em> — miejsce, miejscownik. Zestaw C (po 1 pkt): dopełnienie (rekcja czasownika); okolicznik czasu; okolicznik miejsca; dopełnienie — klasyfikacja szkolna może się różnić, uzasadnij konwencję.</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 10 (2 pkt) — Przedtem czy przed tym?</span>
+<p>Uzupełnij: <em>… poszedłem spać.</em> (znaczenie: wcześniej) / <em>… budynkiem stoi pomnik.</em></p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p><em>Przedtem poszedłem spać</em> — przysłówek, łącznie (1 pkt); <em>Przed tym budynkiem</em> — przyimek + zaimek, rozdzielnie (1 pkt).</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 11 (4 pkt) — Zadanie przekrojowe</span>
+<p>„Po powrocie z wycieczki usiedliśmy przy stole, a potem rozmawialiśmy o drodze przez las". Wskaż wyrażenia przyimkowe, przypadki i funkcje.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p><em>z wycieczki</em> — dopełniacz (1); <em>przy stole</em> — miejscownik (1); <em>o drodze</em> — miejscownik (1); <em>przez las</em> — biernik (1). Funkcje: <em>po powrocie z wycieczki</em> — czas; <em>przy stole</em> — miejsce; <em>o drodze przez las</em> — dopełnienie czasownika <em>rozmawialiśmy</em> (z określeniem <em>przez las</em>).</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 12 (6 pkt) — W stylu CKE</span>
+<ol>
+<li>(0–1) W którym zdaniu wyraz <em>pod</em> jest przyimkiem? A. Podpisał list. B. Kot schował się pod stołem. C. Podszedł bliżej.</li>
+<li>(0–2) Popraw dwa błędy: <em>W każdym bądź razie wyszliśmy z przed szkoły o ósmej.</em></li>
+<li>(0–1) Uzupełnij: <em>Rozmawialiśmy ……… (z / ze) mną i ……… (z / ze) Szymonem.</em></li>
+<li>(0–2) Napisz zdanie z wyrażeniem przyimkowym w funkcji przydawki i nazwij przypadek rzeczownika.</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li>B (1 pkt). 2. W każdym razie (1); sprzed szkoły (1). 3. ze mną; z Szymonem (1 pkt za obie). 4. np. <em>Książka o smokach leżała na półce.</em> — <em>o smokach</em>, miejscownik (1 za zdanie, 1 za przypadek).</li>
+</ol>
+</details>
+</div>
+</section>
+<section id="test">
+<div class="part-heading"><span class="part-num">19</span> Test sprawdź się</div>
+<div class="che-quiz" id="quizWrap"><div class="quiz-q" data-ok="0" data-fb="Za wyrazem stoi dopełniacz („szkoły&quot;) — razem tworzą wyrażenie przyimkowe; samodzielnie („Mieszkam blisko.&quot;) byłoby to przysłówkiem."><h5>1. Wyraz „blisko" w zdaniu „Mieszkam blisko szkoły." to:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">przyimek wtórny</button><button type="button" class="quiz-opt" data-a="1">przysłówek</button><button type="button" class="quiz-opt" data-a="2">przedrostek</button><button type="button" class="quiz-opt" data-a="3">partykuła</button></div></div><div class="quiz-q" data-ok="0" data-fb="Wbrew radom, wbrew radzie — celownik (podobnie: ku, dzięki)."><h5>2. Którego przypadku wymaga przyimek „wbrew"?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">celownika</button><button type="button" class="quiz-opt" data-a="1">dopełniacza</button><button type="button" class="quiz-opt" data-a="2">biernika</button><button type="button" class="quiz-opt" data-a="3">narzędnika</button></div></div><div class="quiz-q" data-ok="0" data-fb="Przyimek złożony (z + przed) piszemy łącznie: sprzed; podobnie spod, zza, spoza."><h5>3. Który zapis jest poprawny?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">sprzed domu</button><button type="button" class="quiz-opt" data-a="1">z przed domu</button><button type="button" class="quiz-opt" data-a="2">przed domu</button><button type="button" class="quiz-opt" data-a="3">przedem domu</button></div></div><div class="quiz-q" data-ok="0" data-fb="Zdanie podrzędne zaczyna się od przyimka, więc przecinek stoi przed nim; po przyimku przecinka nigdy nie stawiamy (błąd: „o, której&quot;)."><h5>4. W zdaniu „Książka, o której mówiłeś, zginęła." przecinek stoi:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">przed przyimkiem</button><button type="button" class="quiz-opt" data-a="1">po przyimku</button><button type="button" class="quiz-opt" data-a="2">jest zbędny</button><button type="button" class="quiz-opt" data-a="3">tylko na końcu zdania</button></div></div><div class="quiz-q" data-ok="0" data-fb="Czasownik „czekać na&quot; wymaga biernika — wyrażenie wymagane przez czasownik to dopełnienie, nie okolicznik."><h5>5. W zdaniu „Czekam na autobus." wyrażenie „na autobus" pełni funkcję:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">dopełnienia (rekcja czasownika)</button><button type="button" class="quiz-opt" data-a="1">okolicznika miejsca</button><button type="button" class="quiz-opt" data-a="2">okolicznika celu</button><button type="button" class="quiz-opt" data-a="3">przydawki</button></div></div><div class="quiz-q" data-ok="0" data-fb="„Dzięki&quot; wymaga celownika (dzięki twojemu wsparciu); przyczynę ujemną zapiszemy „z powodu twojego wsparcia&quot; (dopełniacz)."><h5>6. (olimpijski) Które połączenie jest poprawne?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">dzięki twojemu wsparciu</button><button type="button" class="quiz-opt" data-a="1">dzięki twojego wsparcia</button><button type="button" class="quiz-opt" data-a="2">z powodu twojemu wsparciu</button><button type="button" class="quiz-opt" data-a="3">dzięki twoje wsparcie</button></div></div></div><div class="quiz-score" id="quizScore"></div>
+</section>
+<section id="fiszki">
+<div class="part-heading"><span class="part-num">20</span> Fiszki</div>
+<div id="flashcards" class="flashcard-grid"><button class="flashcard" type="button"><span class="front">Czy przyimek jest częścią zdania?</span><span class="back">Nie — częścią zdania jest całe wyrażenie przyimkowe (przyimek + wyraz w przypadku)</span><span class="card-tag tag-basic">przyimek</span></button><button class="flashcard" type="button"><span class="front">bez + jaki przypadek?</span><span class="back">Dopełniacz: bez strachu, bez cukru</span><span class="card-tag tag-basic">przyimek</span></button><button class="flashcard" type="button"><span class="front">dzięki + jaki przypadek?</span><span class="back">Celownik: dzięki pomocy, dzięki przyjaciołom</span><span class="card-tag tag-basic">przyimek</span></button><button class="flashcard" type="button"><span class="front">przez + jaki przypadek?</span><span class="back">Biernik: przez las, przez most</span><span class="card-tag tag-basic">przyimek</span></button><button class="flashcard" type="button"><span class="front">na górę / na górze — przypadki?</span><span class="back">Biernik (dokąd? — ruch) / miejscownik (gdzie? — położenie)</span><span class="card-tag tag-basic">przyimek</span></button><button class="flashcard" type="button"><span class="front">przed + jaki przypadek?</span><span class="back">Zawsze narzędnik, także w czasie: przed domem, przed lekcją</span><span class="card-tag tag-basic">przyimek</span></button><button class="flashcard" type="button"><span class="front">przy + jaki przypadek?</span><span class="back">Zawsze miejscownik: przy oknie, przy stole</span><span class="card-tag tag-basic">przyimek</span></button><button class="flashcard" type="button"><span class="front">Kiedy „ze"?</span><span class="back">Przed grupą spółgłosek s-, z-, ś-, ź-, ż-, sz-, rz- i przed mną: ze szkoły, ze snu, ze mną</span><span class="card-tag tag-basic">przyimek</span></button><button class="flashcard" type="button"><span class="front">Kiedy „we"?</span><span class="back">Przed w-, f- + spółgłoska: we wtorek, we Wrocławiu, we Francji, we mnie</span><span class="card-tag tag-basic">przyimek</span></button><button class="flashcard" type="button"><span class="front">z pod czy spod?</span><span class="back">spod — przyimki złożone piszemy łącznie (zza, znad, sprzed, spoza)</span><span class="card-tag tag-basic">przyimek</span></button><button class="flashcard" type="button"><span class="front">w każdym bądź razie — poprawne?</span><span class="back">Nie: w każdym razie (kontaminacja z „bądź co bądź")</span><span class="card-tag tag-basic">przyimek</span></button><button class="flashcard" type="button"><span class="front">Przyimek a przedrostek?</span><span class="back">Przyimek to osobny wyraz przed rzeczownikiem (pod oknem); przedrostek jest częścią wyrazu (podskoczył)</span><span class="card-tag tag-basic">przyimek</span></button><button class="flashcard" type="button"><span class="front">Przecinek przy „o którym"?</span><span class="back">Przed przyimkiem: Książka, o której mówiłeś, zginęła</span><span class="card-tag tag-basic">przyimek</span></button><button class="flashcard" type="button"><span class="front">naprzeciwko — pisownia?</span><span class="back">Łącznie; po nim wyraz w dopełniaczu (naprzeciwko szkoły)</span><span class="card-tag tag-basic">przyimek</span></button><button class="flashcard" type="button"><span class="front">dzięki czy z powodu przy przyczynie złej?</span><span class="back">z powodu (dzięki — tylko przyczyna pozytywna)</span><span class="card-tag tag-basic">przyimek</span></button><button class="flashcard" type="button"><span class="front">na pewno czy napewno?</span><span class="back">Rozdzielnie: na pewno; napewno to błąd</span><span class="card-tag tag-basic">przyimek</span></button><button class="flashcard" type="button"><span class="front">dla mnie czy dla mi?</span><span class="back">dla mnie — po przyimku zaimek w formie długiej (dla mnie, beze mnie)</span><span class="card-tag tag-basic">przyimek</span></button><button class="flashcard" type="button"><span class="front">Co to rekcja?</span><span class="back">Łąliwość czasownika (przymiotnika) z określonym przyimkiem i przypadkiem: czekać na + biernik, rozmawiać o + miejscownik</span><span class="card-tag tag-olimpijski">przyimek</span></button><button class="flashcard" type="button"><span class="front">przedtem czy przed tym?</span><span class="back">przedtem = przysłówek „wcześniej" (łącznie); przed tym = przyimek + zaimek (rozdzielnie)</span><span class="card-tag tag-olimpijski">przyimek</span></button><button class="flashcard" type="button"><span class="front">w oparciu o — poprawne?</span><span class="back">Nie: na podstawie (czego? — dopełniacz)</span><span class="card-tag tag-olimpijski">przyimek</span></button><button class="flashcard" type="button"><span class="front">wskutek + jaki przypadek?</span><span class="back">Dopełniacz: wskutek burzy (przyczyna, zwykle negatywna)</span><span class="card-tag tag-olimpijski">przyimek</span></button></div>
+</section>
+<section id="slownik">
+<div class="part-heading"><span class="part-num">21</span> Słownik</div>
+<dl><div class="def-item"><dt>przyimek</dt><dd>nieodmienna część mowy, która nie występuje samodzielnie; łączy się z rzeczownikiem, zaimkiem lub liczebnikiem, tworząc wyrażenie przyimkowe</dd></div><div class="def-item"><dt>wyrażenie przyimkowe</dt><dd>połączenie przyimka z wyrazem w odpowiednim przypadku (pod stołem, do szkoły); to ono pełni funkcję w zdaniu</dd></div><div class="def-item"><dt>przyimek prosty</dt><dd>przyimek będący jednym wyrazem (w, na, do, z, bez)</dd></div><div class="def-item"><dt>przyimek złożony</dt><dd>przyimek utworzony z dwóch przyimków, pisany łącznie (spod, zza, sprzed, spoza, spomiędzy)</dd></div><div class="def-item"><dt>przyimek wtórny</dt><dd>wyraz z innej części mowy użyty jako przyimek (blisko lasu, zamiast cukru, wzdłuż rzeki)</dd></div><div class="def-item"><dt>forma wariantowa przyimka</dt><dd>dłuższa forma ułatwiająca wymowę: we, ze, nade, pode, przede, ode, beze, przeze</dd></div><div class="def-item"><dt>rekcja</dt><dd>łączliwość czasownika lub przymiotnika wymagająca określonego przyimka i przypadku (czekać na kogoś, zależeć od czegoś)</dd></div><div class="def-item"><dt>przedrostek</dt><dd>cząstka dodana przed podstawą wyrazu w słowotwórstwie (pod-, prze-, wy-); nie jest osobnym wyrazem</dd></div><div class="def-item"><dt>przysłówek</dt><dd>nieodmienna część mowy odpowiadająca na pytania jak? gdzie? kiedy?; stoi samotnie, nie łączy się z przypadkiem</dd></div><div class="def-item"><dt>okolicznik</dt><dd>część zdania określająca okoliczności: gdzie? kiedy? dlaczego? jak? po co?</dd></div><div class="def-item"><dt>dopełnienie</dt><dd>część zdania wymagana przez czasownik, odpowiadająca na przypadki zależne (kogo? co? o czym? na kogo?)</dd></div></dl>
+</section>
+<section id="ciekawostki">
+<div class="part-heading"><span class="part-num">22</span> Ciekawostki</div>
+<div class="card card-extra">
+<span class="card-label">Klocki LEGO polszczyzny</span>
+<p>Polskie przyimki złożone powstają przez „sklejenie" dwóch przyimków: s-pod, z-za, s-przed, s-ponad, s-poza, z-nad, s-pomiędzy. Najdłuższym z nich jest prawdopodobnie „spomiędzy" — sklejka trzech elementów (z + po + między): <em>wyciągnęła list spomiędzy książek</em>. (orientacyjnie)</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Jednoliterowcy</span>
+<p><em>W, z, o, u</em> to najkrótsze wyrazy polszczyzny — a jednocześnie należą do najczęściej używanych słów w tekstach pisanych. Drobny wyraz ogromnej wagi: od jego wyboru zależy przypadek całej frazy. (frekwencja — orientacyjnie; źródło: korpusy języka polskiego)</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">„Dzięki" — historia jednego przyimka</span>
+<p>„Dzięki" dawniej było imiesłowem czasownika „dziękować" („dziękując twojej pomocy, przyszedłem…"). Z czasem skrystalizowało się jako przyimek z celownikiem. Ten proces zamiany jednej części mowy w drugą nazywa się gramatykalizacją — podobnie powstały „wskutek", „zamiast", „wzdłuż". (źródło: gramatyki akademickie języka polskiego) (konkurs)</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Rekcja po polsku, po angielsku, po niemiecku</span>
+<p>Most międzyprzedmiotowy: łączliwość przyimków różni się między językami i stąd typowe błędy. Polski „czekać na kogoś" to angielskie <em>wait <strong>for</strong></em>, a „pytać o coś" — <em>ask <strong>about</strong></em>. W niemieckim przyimek decyduje o przypadku rzeczownika (<em>mit <strong>dem</strong> Freund</em> — narzędnik, <em>für <strong>den</strong> Freund</em> — biernik), zupełnie jak polskie <em>z bratem</em> / <em>dla brata</em>. Ucząc się języka obcego, ucz przyimka zawsze razem z przypadkiem.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Życie po różach — gdzie przetrwało „przede"</span>
+<p>Dawna forma „przede" (obok „przed") żyje dziś głównie w utartych zwrotach: <strong>przede wszystkim</strong>, <strong>przede mną</strong>. Podobnie „nade" — praktycznie tylko z <em>mną</em> i w poezji („nadzieja nade wszystko"). Język trzyma niektóre formy tylko w muzeum frazeologii. (orientacyjnie)</p>
+</div>
+</section>
+<section id="grafiki">
+<div class="part-heading"><span class="part-num">23</span> Wizualizacja</div>
+<p><strong>Grafika 1:</strong> Pudełko i kotek: kotek w różnych położeniach względem pudełka (w, na, pod, nad, za, przed, obok, między) z podpisami i przypadkiem.</p>
+<!-- OPIS: Rysunek pudełka i ośmiu małych kotków ustawionych wokół: w środku („w pudełku” — Ms.), na wierzchu („na pudełku” — Ms.), pod spodem („pod pudełkiem” — N.), nad nim, za, przed, obok, między dwoma pudełkami. Strzałka ruchu przy jednym kotku pokazuje zmianę na biernik („wskakuje do pudełka / pod pudełko”). Wniosek: przyimek określa relację w przestrzeni, a ruch i położenie mogą wymagać różnych przypadków. -->
+<p><strong>Grafika 2:</strong> Tabela „przyimek → przypadek” w pięciu kolorowych kolumnach (D., C., B., N., Ms.) z przyimkami dwuprzypadkowymi w dwóch kolumnach naraz.</p>
+<!-- OPIS: Pięć kolumn przypadków; przyimki takie jak *na, w, za, pod, o, z* pojawiają się w dwóch kolumnach z dopiskiem pytania (dokąd? / gdzie?, skąd? / z kim?). Wniosek: o przypadku decyduje przyimek i znaczenie całego wyrażenia. -->
+<div class="card card-understand">
+<span class="card-label">Uzupełnienia z poprzedniej wersji (zachowane)</span>
+<p><strong>C2.</strong> Podaj dwa zdania z przyimkiem <em>za</em>: jedno z biernikiem, drugie z narzędnikiem, i wyjaśnij różnicę znaczenia.
+<strong>Klucz:</strong> <em>Schował się za drzewo.</em> (dokąd? — ruch, biernik) / <em>Stał za drzewem.</em> (gdzie? — położenie, narzędnik).</p>
+<ul>
+<li><em>Idę <strong>do szkoły</strong></em> — kierunek, dopełniacz.</li>
+<li><em>Jestem <strong>w szkole</strong></em> — miejsce, miejscownik.</li>
+<li><em>Kładę książkę <strong>na biurko</strong></em> — ruch/kierunek, biernik.</li>
+<li><em>Książka leży <strong>na biurku</strong></em> — położenie, miejscownik.</li>
+<li><em>Kot wszedł <strong>pod łóżko</strong></em> — kierunek, biernik.</li>
+<li><em>Kot śpi <strong>pod łóżkiem</strong></em> — miejsce, narzędnik.</li>
+<li><em>Przed lekcją</em> (kiedy?) — narzędnik; <em>przed nauczycielem</em> (przed kim? w przestrzeni) — narzędnik.</li>
+</ul>
+<p><strong>Klucz:</strong> na stół — biernik; na stole — miejscownik; pod łóżko — biernik; pod łóżkiem — narzędnik.</p>
+<p><strong>D2.</strong> Wskaż wyrażenia przyimkowe: <em>Wczoraj wróciliśmy późno, ale dziś przed lekcją spotkamy się przed szkołą.</em>
+<strong>Klucz:</strong> <em>przed lekcją</em>, <em>przed szkołą</em>; oba są wyrażeniami przyimkowymi, lecz pełnią różne funkcje znaczeniowe.</p>
+<p>Reguła „biernik = ruch, miejscownik/narzędnik = miejsce” jest użyteczną wskazówką, ale nie obejmuje wszystkich znaczeń: <em>włożyć do szuflady</em> (kierunek), <em>być w szufladzie</em> (miejsce), <em>iść po zakupy</em> (cel), <em>stać po drugiej stronie</em> (miejsce). Zawsze analizuj całe połączenie i wymagany przypadek.</p>
+</div>
+</section>
+<section id="checklista">
+<div class="part-heading"><span class="part-num">24</span> Samokontrola — checklista</div>
+<checklista>
+<ul>
+<li>[ ] Rozpoznaję całe wyrażenie przyimkowe (przyimek + wyraz w przypadku).</li>
+<li>[ ] Dobieram przypadek zgodnie z przyimkiem i znaczeniem.</li>
+<li>[ ] Odróżniam kierunek (biernik) od miejsca (miejscownik/narzędnik) bez mechanicznego stosowania reguły.</li>
+<li>[ ] Rozpoznaję rekcję czasownika (czekać na, rozmawiać o, zależeć od) i nie zamieniam przyimka na podobieństwo znaczeń.</li>
+<li>[ ] Nazwę funkcję całego wyrażenia: okolicznik, dopełnienie albo przydawka.</li>
+<li>[ ] Odróżniam przyimek od przedrostka i od przysłówka testem kontekstowym.</li>
+<li>[ ] Prawidłowo zapisuję przyimki złożone (spod, zza, sprzed) i wyrażenia (na pewno, z powrotem, przede wszystkim).</li>
+<li>[ ] Poprawnie używam form we, ze, nade, przede, ode, beze.</li>
+<li>[ ] Pamiętam, że przecinek stoi przed przyimkiem (o, której — błąd), nigdy po nim.</li>
+</ul>
+</checklista>
+</section>
+<section id="drzewo">
+<div class="part-heading"><span class="part-num">25</span> Mapa pojęć</div>
+<div class="lk-tree"><ul><li><span>Przyimek</span><ul><li><span>nieodmienny; sam nie pełni funkcji w zdaniu</span></li><li><span>rodzaje: prosty (w, do) / złożony (spod, zza, sprzed) / wtórny (blisko, zamiast, wzdłuż)</span></li><li><span>łączy się z wyrazem w przypadku → wyrażenie przyimkowe</span></li><li><span>przypadek zależy od przyimka i znaczenia</span><ul><li><span>ruch: na górę, pod łóżko, za granicę — biernik</span></li><li><span>miejsce: na górze, pod łóżkiem, za granicą — miejscownik / narzędnik</span></li></ul></li><li><span>formy wariantowe: we wtorek, ze szkoły, nade mną, przede wszystkim</span></li><li><span>pisownia</span><ul><li><span>proste — osobno: z domu, na górze</span></li><li><span>złożone — łącznie: spod, zza, znad, sprzed, spoza</span></li><li><span>wyrażenia przysłówkowe — rozdzielnie: na pewno, z powrotem</span></li><li><span>przysłówki pochodne — łącznie: naprawdę, nadal, przedtem</span></li></ul></li><li><span>funkcja wyrażenia: okolicznik / dopełnienie (rekcja) / przydawka</span></li><li><span>nie mylić: przedrostek (podskoczył), przysłówek (mieszkam blisko)</span></li></ul></li></ul></div>
+<details class="lk-log"><summary>AUDYT W1 (ULEPSZ, Perplexity, 2026-10-11)</summary>
+<h3>AUDYT W1 (ULEPSZ, Perplexity, 2026-10-11)</h3>
+<ul>
+<li>Odpowiedź w 3 częściach, model widział cały plik (surowo: <code>polski/plany/audyty/ULEPSZ_PPLX_G08_cz1–3_2026-10-11.md</code>). Przyjęto nową wersję 4.0: scalone duplikaty (§13–14), wykład, 3 mini-wykłady, sprawdź się, rekcja, nie-myl, klinika (10), mnemotechniki, Dla olimpijczyka, ćwiczenia i zadania CKE w blokach, test, fiszki (21), słownik (11), ciekawostki (5), checklista, mapa pojęć. Przyjęto poprawkę P1 (<em>przed lekcją</em> — narzędnik).</li>
+<li>Poprawione względem propozycji: P5 odrzucone — „Ruda został odbity” błędne; poprawnie <em>Dzięki odwadze Alka Rudy został odbity</em> (Rudy — pseudonim, podmiot); przywrócono sekcję Wizualizacja z dwoma opisami <code>@opis</code> (model zamienił je na „propozycje” — licznik spadł do 0); przywrócono ćwiczenie C2, przykłady 13.3, D1–D2 i uwagę o regule „biernik = ruch” (karta „Uzupełnienia z poprzedniej wersji”).</li>
+<li>Nieprzyjęte: usunięcie notek audytowych zgodnie z propozycją modelu (historia wersji jest w gicie i w audytach).</li>
+</ul>
+</details>
+</section>
+
+</main>
+<script>
+/* pol-viz.js — grafiki interaktywne lekcji języka polskiego (wklejane przez narzedzia/lekcja_html.py -p pol).
+   Użycie w md:  @viz <id> {opcja="wartość"} | Tytuł | podpis   + obowiązkowa linia @opis.
+   Katalog: polski/szablon/POL_KATALOG_GRAFIK.md. Nowa grafika: POL.define('id',{opis,mount(el,opt)}).
+   Zasady: działa offline, na telefonie (od 360 px), klawiatura (Tab/Enter), kolory z motywu + stałe kolory części zdania. */
+(function(){
+if(window.POL)return;var POL=window.POL={},REG={};
+POL.define=function(id,d){REG[id]=d};
+function H(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e}
+function btn(t,f,c){var b=H('button','pv-btn'+(c?' '+c:''),t);b.type='button';if(f)b.onclick=f;return b}
+POL.H=H;POL.btn=btn;
+var css=H('style');css.id='pol-viz-css';css.textContent=
+'.pv{font:15px/1.5 Inter,system-ui,sans-serif;color:var(--text,#1f2328)}.pv *{box-sizing:border-box}'+
+'.pv-bar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:4px 0 10px}.pv-bar b{margin-right:4px}'+
+'.pv-btn{font:600 13.5px/1.2 Inter,system-ui,sans-serif;padding:7px 11px;border-radius:9px;border:1px solid var(--border,#d0d7de);background:var(--surface,#fff);color:inherit;cursor:pointer;min-height:36px}'+
+'.pv-btn:hover{border-color:var(--accent,#7a2848)}.pv-btn.on{background:var(--accent,#7a2848);border-color:var(--accent,#7a2848);color:#fff}.pv-btn:focus-visible{outline:3px solid var(--accent-glow,rgba(122,40,72,.3));outline-offset:2px}'+
+'.pv-info{margin-top:10px;padding:10px 12px;border-left:4px solid var(--accent,#7a2848);background:var(--surface-soft,#f6f8fa);border-radius:8px;font-size:14px;line-height:1.55}'+
+'.pv-info.ok{border-left-color:#1f883d}.pv-info.bad{border-left-color:#cf222e}'+
+'.pv-zd{display:flex;flex-wrap:wrap;gap:24px 4px;align-items:flex-end;font:500 20px/1.3 Georgia,"Times New Roman",serif;padding:14px 6px 18px;background:var(--surface,#fff);border:1px solid var(--border,#d0d7de);border-radius:12px;justify-content:center}'+
+'.pv-w{padding:2px 4px 7px;border-radius:6px;cursor:pointer;position:relative;background-repeat:no-repeat;background-position:0 100%;background-size:100% 7px;border:1px dashed transparent}'+
+'.pv-w:hover{background-color:var(--accent-soft,#f6e9ee)}.pv-w.dot{font-weight:400}.pv-w:focus-visible{outline:2px solid var(--accent,#7a2848)}'+
+'.pv-w.ok{background-color:#dafbe1}.pv-w.zle{background-color:#ffebe9;border-color:#cf222e}'+
+'.pv-w small{position:absolute;left:50%;transform:translateX(-50%);top:-15px;font:600 10.5px/1 Inter,system-ui,sans-serif;white-space:nowrap;color:var(--text-soft,#57606a)}'+
+'.pv-leg{display:flex;flex-wrap:wrap;gap:6px}.pv-leg .pv-btn{display:flex;flex-direction:column;align-items:center;gap:3px}.pv-leg i{display:block;width:44px;height:7px;background-repeat:no-repeat;background-size:100% 7px}'+
+'.pv-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;font-size:14px;margin-bottom:6px}'+
+'.pv-tab{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}.pv-tab td,.pv-tab th{padding:5px 7px;border-bottom:1px solid var(--border,#d0d7de);text-align:left}'+
+'.pv-svg{width:100%;height:auto;display:block}.pv-svg text{font-family:Inter,system-ui,sans-serif}'+
+'@media(max-width:520px){.pv-zd{font-size:17px}.pv-btn{padding:6px 9px;font-size:13px}.pv-tab{font-size:12.5px}.pv-tab td,.pv-tab th{padding:4px 3px}}.pv-hint{display:none;font-size:12px;color:var(--text-soft,#57606a);text-align:center}@media(max-width:520px){.pv-hint{display:block}}.pv-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}.pv-scroll .pv-svg{min-width:min(540px,100%)}@media(max-width:520px){.pv-scroll .pv-svg{min-width:520px}}';
+document.head.appendChild(css);
+
+/* ---------- części zdania: role, kolory, podkreślenia szkolne ---------- */
+var R={P:{n:'podmiot',k:'#0969da',kr:'kto? co?'},O:{n:'orzeczenie',k:'#cf222e',kr:'co robi? co się z nim dzieje? jaki jest? kim jest?'},
+ Prz:{n:'przydawka',k:'#1a7f37',kr:'jaki? który? czyj? ile? z czego?'},D:{n:'dopełnienie',k:'#8250df',kr:'pytania przypadków zależnych: kogo? czego? komu? kim? czym? o czym?…'},
+ Ok:{n:'okolicznik',k:'#bc4c00',kr:'gdzie? kiedy? jak? dlaczego? po co? w jakim stopniu?'}};
+var ROLE=['P','O','Prz','D','Ok'];
+function svgUrl(s){return 'url("data:image/svg+xml,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="7" viewBox="0 0 24 7">'+s+'</svg>')+'")'}
+function linia(r){var k=R[r].k;return{   // podkreślenia jak w szkole: podmiot —, orzeczenie ═, przydawka ~, dopełnienie - - -, okolicznik -·-·
+ P:svgUrl('<line x1="0" y1="5" x2="24" y2="5" stroke="'+k+'" stroke-width="2"/>'),
+ O:svgUrl('<line x1="0" y1="2" x2="24" y2="2" stroke="'+k+'" stroke-width="1.6"/><line x1="0" y1="6" x2="24" y2="6" stroke="'+k+'" stroke-width="1.6"/>'),
+ Prz:svgUrl('<path d="M0 4 Q3 1 6 4 T12 4 T18 4 T24 4" fill="none" stroke="'+k+'" stroke-width="1.8"/>'),
+ D:svgUrl('<line x1="1" y1="5" x2="9" y2="5" stroke="'+k+'" stroke-width="2"/><line x1="13" y1="5" x2="21" y2="5" stroke="'+k+'" stroke-width="2"/>'),
+ Ok:svgUrl('<line x1="1" y1="5" x2="10" y2="5" stroke="'+k+'" stroke-width="2"/><circle cx="15" cy="5" r="1.4" fill="'+k+'"/><line x1="19" y1="5" x2="24" y2="5" stroke="'+k+'" stroke-width="2"/>')}[r]}
+POL.R=R;POL.linia=linia;
+function podkresl(e,r){e.style.backgroundImage=r?linia(r):'';e.style.backgroundRepeat=r==='O'||r==='P'?'no-repeat':'repeat-x';e.style.backgroundSize=r==='O'||r==='P'?'100% 7px':'24px 7px'}
+
+/* Zdania: [tekst, rola, wyraz nadrzędny, pytanie, grupa?]; uwaga = zdanie pod rozwiązaniem. Przykłady to parafrazy sytuacji z lektur. */
+var ZD=[
+ {z:'Wczoraj młodsza siostra szybko przeczytała ciekawą książkę w pokoju.',w:[['Wczoraj','Ok','przeczytała','kiedy?'],['młodsza','Prz','siostra','która?'],['siostra','P','przeczytała','kto?'],['szybko','Ok','przeczytała','jak?'],['przeczytała','O'],['ciekawą','Prz','książkę','jaką?'],['książkę','D','przeczytała','co?'],['w pokoju','Ok','przeczytała','gdzie?']],u:'Wzór rozbioru z lekcji: najpierw orzeczenie, potem podmiot, potem określenia zależne.'},
+ {n:1,z:'Mały Książę uważnie słuchał opowieści lisa.',l:'„Mały Książę”',w:[['Mały Książę','P','słuchał','kto?'],['uważnie','Ok','słuchał','jak?'],['słuchał','O'],['opowieści','D','słuchał','czego?'],['lisa','Prz','opowieści','czyjej?']],u:'„Mały Książę” to imię bohatera (nazwa własna) — cała nazwa jest podmiotem. „Lisa” określa rzeczownik „opowieści”, więc jest przydawką, nie dopełnieniem.'},
+ {z:'Skąpy Scrooge liczył pieniądze w zimnym kantorze.',l:'„Opowieść wigilijna”',w:[['Skąpy','Prz','Scrooge','jaki?'],['Scrooge','P','liczył','kto?'],['liczył','O'],['pieniądze','D','liczył','co?'],['w','Ok','liczył','gdzie?',1],['zimnym','Prz','kantorze','w jakim?'],['kantorze','Ok','liczył','gdzie?',1]],u:'„W kantorze” to jeden okolicznik miejsca (wyrażenie przyimkowe), a „zimnym” — przydawka wewnątrz niego.'},
+ {z:'Nie było Nemeczka na Placu Broni.',l:'„Chłopcy z Placu Broni”',w:[['Nie','O',null,null,1],['było','O',null,null,1],['Nemeczka','P','nie było','kogo nie było?'],['na Placu Broni','Ok','nie było','gdzie?']],u:'W tradycyjnej analizie szkolnej „Nemeczka” (dopełniacz) to <b>podmiot logiczny</b> — przy zaprzeczonym „być” podmiot przechodzi do dopełniacza (por. „Nemeczek był na placu”). Orzeczenie: „nie było”. Część opracowań uznaje to zdanie za bezpodmiotowe — na egzaminie podaj przyjętą konwencję.'},
+ {n:1,z:'Balladyna została królową.',l:'„Balladyna”',w:[['Balladyna','P','została królową','kto?'],['została','O',null,null,1],['królową','O',null,null,1]],u:'<b>Orzeczenie imienne</b>: łącznik „została” + orzecznik „królową”. Podkreślamy oba wyrazy jako jedno orzeczenie.'},
+ {n:1,z:'Rudy był odważnym harcerzem.',l:'„Kamienie na szaniec”',w:[['Rudy','P','był harcerzem','kto?'],['był','O',null,null,1],['odważnym','Prz','harcerzem','jakim?'],['harcerzem','O',null,null,1]],u:'Orzeczenie imienne „był harcerzem”; „odważnym” określa orzecznik „harcerzem”, więc jest przydawką.'},
+ {z:'Wieczorem wróciłem do zamku.',w:[['Wieczorem','Ok','wróciłem','kiedy?'],['wróciłem','O'],['do zamku','Ok','wróciłem','dokąd?']],u:'Podmiotu nie ma w zdaniu, ale da się go odtworzyć z formy czasownika: <b>podmiot domyślny „ja”</b>. To nie jest zdanie bezpodmiotowe.'},
+ {z:'Nad Soplicowem zmierzchało.',l:'„Pan Tadeusz”',w:[['Nad Soplicowem','Ok','zmierzchało','gdzie?'],['zmierzchało','O']],u:'<b>Zdanie bezpodmiotowe</b>: czasownik „zmierzchało” nazywa zjawisko bez wykonawcy — podmiotu nie da się dodać.'},
+ {n:1,z:'Boka czekał na kolegów przed szkołą.',l:'„Chłopcy z Placu Broni”',w:[['Boka','P','czekał','kto?'],['czekał','O'],['na kolegów','D','czekał','na kogo?'],['przed szkołą','Ok','czekał','gdzie?']],u:'Pułapka: „na kolegów” wygląda jak miejsce, ale czasownik „czekać” <b>wymaga</b> dopełnienia „na kogo? na co?”. „Przed szkołą” — okolicznik miejsca.'},
+ {n:1,z:'Hrabia rozmawiał z Telimeną o sztuce.',l:'„Pan Tadeusz”',w:[['Hrabia','P','rozmawiał','kto?'],['rozmawiał','O'],['z Telimeną','D','rozmawiał','z kim?'],['o sztuce','D','rozmawiał','o czym?']],u:'Oba wyrażenia przyimkowe są dopełnieniami: odpowiadają na pytania przypadków (z kim? o czym?) i uzupełniają czasownik „rozmawiać”.'},
+ {n:1,z:'Bilbo bardzo bał się smoka.',l:'„Hobbit”',w:[['Bilbo','P','bał się','kto?'],['bardzo','Ok','bał się','w jakim stopniu?'],['bał','O',null,null,1],['się','O',null,null,1],['smoka','D','bał się','kogo?']],u:'„Bał się” — orzeczenie z zaimkiem zwrotnym „się” (podkreślamy razem). „Bardzo” — okolicznik stopnia.'},
+ {z:'Stary latarnik czytał wieczorem polską książkę.',l:'„Latarnik”',w:[['Stary','Prz','latarnik','jaki?'],['latarnik','P','czytał','kto?'],['czytał','O'],['wieczorem','Ok','czytał','kiedy?'],['polską','Prz','książkę','jaką?'],['książkę','D','czytał','co?']],u:'Dwie przydawki określają dwa różne rzeczowniki: „stary” — podmiot, „polską” — dopełnienie.'}];
+POL.ZDANIA=ZD;
+function grupy(z){var g=[],m={};z.w.forEach(function(w,i){var key=w[4]?'g'+w[4]:'i'+i;if(!(key in m)){m[key]=g.length;g.push({i:[i],r:w[1],t:[w[0]],h:w[2],q:w[3]})}else{var x=g[m[key]];x.i.push(i);x.t.push(w[0]);if(w[2]&&!x.h){x.h=w[2];x.q=w[3]}}});return g}
+
+/* ---------- 1. trener rozbioru: wybierz część zdania i kliknij wyrazy ---------- */
+POL.define('rozbior-zdania',{opis:'Trener rozbioru: wybierz część zdania (kolor + podkreślenie szkolne) i kliknij wyrazy; sprawdzenie, pytania od wyrazu nadrzędnego, pułapki',
+mount:function(el,o){el.classList.add('pv');var nr=+(o.start||0)%ZD.length,role='O',ans={},ok=0,all=0,checked=false;
+ var top=H('div','pv-top'),leg=H('div','pv-leg'),zd=H('div','pv-zd'),bar=H('div','pv-bar'),out=H('div','pv-info');el.append(top,leg,zd,bar,out);
+ ROLE.forEach(function(r){var b=btn('<span>'+R[r].n+'</span><i></i>',function(){role=r;rys()});b.dataset.r=r;b.querySelector('i').style.backgroundImage=linia(r);if(r!=='O'&&r!=='P'){b.querySelector('i').style.backgroundRepeat='repeat-x';b.querySelector('i').style.backgroundSize='24px 7px'}b.title=R[r].kr;leg.appendChild(b)});
+ var gumka=btn('<span>gumka</span><i></i>',function(){role='';rys()});gumka.dataset.r='';leg.appendChild(gumka);
+ bar.append(btn('Sprawdź',spr,'on'),btn('Pokaż rozwiązanie',function(){var z=ZD[nr];grupy(z).forEach(function(g){g.i.forEach(function(i){ans[i]=g.r})});checked=true;rys(true)}),btn('Wyczyść',function(){ans={};checked=false;rys()}),btn('Następne zdanie →',function(){nr=(nr+1)%ZD.length;ans={};checked=false;rys()}));
+ function rys(pokaz){var z=ZD[nr],G=grupy(z);[].forEach.call(leg.children,function(b){b.classList.toggle('on',b.dataset.r===role)});
+  top.innerHTML='<span>Zdanie <b>'+(nr+1)+'</b> z '+ZD.length+(z.l?' · <i>'+z.l+'</i>':'')+'</span><span>Wynik: <b>'+ok+' / '+all+'</b></span>';
+  zd.innerHTML='';z.w.forEach(function(w,i){var s=H('span','pv-w',w[0]);s.tabIndex=0;s.setAttribute('role','button');var r=ans[i];podkresl(s,r);
+   if(r)s.setAttribute('aria-label',w[0]+' — '+R[r].n);
+   if(checked){var g=G.filter(function(x){return x.i.indexOf(i)>=0})[0];s.classList.add(r===g.r?'ok':'zle');if(pokaz||r!==g.r)s.appendChild(H('small',null,R[g.r].n))}
+   function klik(){var g=G.filter(function(x){return x.i.indexOf(i)>=0})[0];g.i.forEach(function(j){if(role)ans[j]=role;else delete ans[j]});checked=false;rys()}
+   s.onclick=klik;s.onkeydown=function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();klik()}};zd.appendChild(s);zd.appendChild(document.createTextNode(' '))});
+  if(!checked){out.className='pv-info';out.innerHTML='<b>Krok 1:</b> wybierz <b>orzeczenie</b> i kliknij wyraz, który mówi, co się dzieje. <b>Krok 2:</b> zapytaj od orzeczenia <i>kto? co?</i> — to podmiot. <b>Krok 3:</b> od orzeczenia i rzeczowników zadawaj kolejne pytania. Wyrażenie przyimkowe („w pokoju”) zaznaczasz jednym kliknięciem.'}}
+ function spr(){var z=ZD[nr],G=grupy(z),dob=0,brak=[];G.forEach(function(g){if(ans[g.i[0]]===g.r)dob++;else brak.push(g)});all++;if(dob===G.length)ok++;checked=true;rys();
+  var pyt=G.filter(function(g){return g.q}).map(function(g){return '<tr><td>'+(g.h||'')+'</td><td><i>'+g.q+'</i></td><td><b>'+g.t.join(' ')+'</b></td><td style="color:'+R[g.r].k+'">'+R[g.r].n+'</td></tr>'}).join('');
+  out.className='pv-info '+(dob===G.length?'ok':'bad');
+  out.innerHTML=(dob===G.length?'<b>Wszystko dobrze!</b> ':'<b>Dobrze: '+dob+' z '+G.length+'.</b> Czerwone ramki — popraw. ')+(z.u?z.u:'')+
+   '<table class="pv-tab"><tr><th>od wyrazu</th><th>pytanie</th><th>odpowiedź</th><th>część zdania</th></tr>'+pyt+'</table>'}
+ rys()}});
+
+/* ---------- 2. wykres zdania krok po kroku ---------- */
+POL.define('wykres-zdania',{opis:'Wykres zdania pojedynczego: związek główny (podmiot ═ orzeczenie) na górze, określenia pod wyrazami nadrzędnymi, na liniach pytania; odsłanianie krok po kroku',
+mount:function(el,o){el.classList.add('pv');var nr=+(o.start||0)%ZD.length,krok=99;
+ var bar=H('div','pv-bar'),wyb=H('select');wyb.className='pv-btn';wyb.setAttribute('aria-label','Wybierz zdanie');ZD.forEach(function(z,i){var op=H('option',null,(i+1)+'. '+z.z);op.value=i;wyb.appendChild(op)});wyb.value=nr;wyb.style.maxWidth='100%';
+ var nast=btn('Następny krok ▶',function(){krok++;rys()}),od=btn('Od początku',function(){krok=1;rys()}),cale=btn('Cały wykres',function(){krok=99;rys()});
+ bar.append(wyb,od,nast,cale);var pic=H('div','pv-scroll'),hint=H('div','pv-hint','↔ przesuń wykres w bok'),out=H('div','pv-info');el.append(bar,pic,hint,out);wyb.onchange=function(){nr=+wyb.value;krok=1;rys()};
+ function drzewo(z){var G=grupy(z),txt=function(g){var t=g.t.join(' ');return g.i[0]===0&&!z.n?t.charAt(0).toLowerCase()+t.slice(1):t},O=G.filter(function(g){return g.r==='O'})[0],P=G.filter(function(g){return g.r==='P'})[0];
+  var nodes=G.map(function(g){return{g:g,t:txt(g),kids:[]}}),byT={};nodes.forEach(function(n){byT[n.t.toLowerCase()]=n});
+  nodes.forEach(function(n){if(n.g.r==='O'||n.g.r==='P')return;var h=(n.g.h||'').toLowerCase();if(!h)return;if(byT[h]){byT[h].kids.push(n);return}
+   var hh=nodes.filter(function(x){var t=x.t.toLowerCase();return x!==n&&(t.split(' ').indexOf(h)>=0||h.split(' ').indexOf(t.split(' ')[0])>=0&&t.split(' ')[0].length>2)})[0];if(hh)hh.kids.push(n)});
+  return{O:O&&byT[txt(O).toLowerCase()],P:P&&byT[txt(P).toLowerCase()],G:G}}
+ function rys(){var z=ZD[nr],T=drzewo(z),W=0,poz=[];
+  // układ: szerokość poddrzewa, kolejność odsłaniania: O, P, potem wszerz
+  var kol=[];if(T.O)kol.push(T.O);if(T.P)kol.push(T.P);for(var q=0;q<kol.length;q++)kol[q].kids.forEach(function(k){if(kol.indexOf(k)<0)kol.push(k)});
+  var widac=kol.slice(0,Math.max(1,krok));
+  function szer(n){var w=Math.max(n.t.length*8.6+24,70);n.w=w;var s=0;n.kids.forEach(function(k){s+=szer(k)+14});n.sw=Math.max(w,s-14);return n.sw}
+  function uloz(n,x,y){n.x=x+n.sw/2;n.y=y;var cx=x+(n.sw-(n.kids.reduce(function(a,k){return a+k.sw+14},0)-14))/2;n.kids.forEach(function(k){uloz(k,cx,y+92);cx+=k.sw+14})}
+  var top=[T.P,T.O].filter(Boolean),x=10;top.forEach(function(n){szer(n);uloz(n,x,24);x+=n.sw+120});W=Math.max(320,x-110);
+  var Hh=0;kol.forEach(function(n){Hh=Math.max(Hh,n.y+40)});
+  var s='<svg class="pv-svg" style="max-width:'+Math.round(W*1.15)+'px;margin:0 auto" viewBox="0 0 '+W+' '+(Hh+14)+'" role="img" aria-label="Wykres zdania: '+z.z.replace(/"/g,'')+'">';
+  if(T.P&&T.O&&widac.indexOf(T.P)>=0)s+='<line x1="'+(T.P.x+T.P.w/2)+'" y1="'+(T.P.y+14)+'" x2="'+(T.O.x-T.O.w/2)+'" y2="'+(T.O.y+14)+'" stroke="#57606a" stroke-width="1.6"/><line x1="'+(T.P.x+T.P.w/2)+'" y1="'+(T.P.y+19)+'" x2="'+(T.O.x-T.O.w/2)+'" y2="'+(T.O.y+19)+'" stroke="#57606a" stroke-width="1.6"/><text x="'+((T.P.x+T.P.w/2+T.O.x-T.O.w/2)/2)+'" y="'+(T.P.y+8)+'" text-anchor="middle" font-size="10.5" fill="#57606a">związek główny</text>';
+  kol.forEach(function(n){n.kids.forEach(function(k){if(widac.indexOf(k)<0)return;s+='<line x1="'+n.x+'" y1="'+(n.y+34)+'" x2="'+k.x+'" y2="'+(k.y)+'" stroke="#8c959f" stroke-width="1.4"/><text x="'+((n.x+k.x)/2+(k.x>=n.x?6:-6))+'" y="'+((n.y+34+k.y)/2+4)+'" text-anchor="'+(k.x>=n.x?'start':'end')+'" font-size="12" font-style="italic" fill="#57606a">'+(k.g.q||'')+'</text>'})});
+  widac.forEach(function(n){var k=R[n.g.r].k;s+='<rect x="'+(n.x-n.w/2)+'" y="'+n.y+'" width="'+n.w+'" height="34" rx="8" fill="#fff" stroke="'+k+'" stroke-width="2"/><text x="'+n.x+'" y="'+(n.y+16)+'" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1f2328">'+n.t+'</text><text x="'+n.x+'" y="'+(n.y+29)+'" text-anchor="middle" font-size="10" fill="'+k+'">'+R[n.g.r].n+'</text>'});
+  s+='</svg>';pic.innerHTML=s;
+  var n=widac[widac.length-1],koniec=widac.length>=kol.length;nast.disabled=koniec;
+  out.innerHTML=koniec?('<b>Gotowe.</b> '+(z.u||'')+(T.P?'':' <br><b>Brak podmiotu na wykresie</b> — zobacz uwagę wyżej (podmiot domyślny albo zdanie bezpodmiotowe).')):
+   (widac.length===1?'<b>Krok 1. Orzeczenie:</b> „'+n.t+'” — mówi, co się dzieje. Od niego zaczynamy.':n===T.P?'<b>Krok 2. Podmiot:</b> pytamy od orzeczenia <i>'+(n.g.q||'kto? co?')+'</i> → „'+n.t+'”. Podmiot i orzeczenie tworzą <b>związek główny</b> (dwie kreski).':'<b>Krok '+widac.length+'.</b> Od wyrazu „'+(n.g.h||'')+'” pytamy <i>'+(n.g.q||'')+'</i> → „'+n.t+'” — '+R[n.g.r].n+'.')}
+ krok=o.krok==='caly'?99:1;rys()}});
+
+/* ---------- 3. schemat zdania złożonego: współrzędne obok siebie, podrzędne pod spodem ---------- */
+POL.define('wykres-zlozonego',{opis:'Schemat blokowy zdania złożonego: zdania współrzędne w jednym rzędzie ze strzałkami relacji, zdanie podrzędne pod nadrzędnym ze strzałką-pytaniem; warianty do przełączania',
+mount:function(el,o){
+ var W=[
+  {n:'współrzędne (3 zdania)',z:'Zadzwoniłem do kolegi, ale on nie odebrał, więc wysłałem wiadomość.',
+   r:[['Zadzwoniłem do kolegi'],['on nie odebrał','ale','przeciwstawne'],['wysłałem wiadomość','więc','wynikowe']],
+   i:'Trzy zdania składowe stoją <b>obok siebie</b> — każde można wypowiedzieć osobno. Strzałki są poziome: <i>ale</i> — przeciwstawienie, <i>więc</i> — skutek.'},
+  {n:'bezspójnikowe',z:'Słońce zaszło, ulice opustoszały.',
+   r:[['Słońce zaszło'],['ulice opustoszały',',','łączne / wynikowe?']],
+   i:'Brak spójnika — relację ustalasz <b>próbnym spójnikiem</b>: „i” (łączne) albo „więc” (wynikowe). Przecinek tylko oddziela zdania.'},
+  {n:'mieszane',z:'Nie odrobiłem pracy, ponieważ zabrakło czasu, ale przygotowałem się do odpowiedzi.',
+   r:[['Nie odrobiłem pracy'],['przygotowałem się do odpowiedzi','ale','przeciwstawne']],
+   d:['zabrakło czasu','ponieważ','dlaczego?'],
+   i:'Zdanie <i>ponieważ zabrakło czasu</i> odpowiada na pytanie <b>dlaczego?</b> zadane od pierwszego — stoi <b>pod</b> nim (podrzędność). Zdanie z <i>ale</i> stoi obok (współrzędność).'}];
+ var H=POL.H,cur=+(o.start||0),bar=H('div','pv-bar'),box=H('div'),zd=H('div','pv-info'),info=H('div','pv-info');
+ bar.appendChild(H('b',null,'Wariant:'));
+ var bs=W.map(function(w,k){var b=POL.btn(w.n,function(){cur=k;draw()});bar.appendChild(b);return b});
+ var st='display:inline-block;padding:8px 10px;border:2px solid var(--accent,#7a2848);border-radius:10px;background:var(--surface,#fff);font:500 15px/1.3 Georgia,serif;max-width:220px;text-align:center';
+ function draw(){var w=W[cur];bs.forEach(function(b,k){b.classList.toggle('on',k===cur)});
+  zd.innerHTML='<b>Zdanie:</b> '+w.z;
+  var h='<div style="display:flex;flex-wrap:wrap;align-items:center;gap:6px">';
+  w.r.forEach(function(x,k){if(k)h+='<span style="display:inline-flex;flex-direction:column;align-items:center;font:600 12px/1.2 Inter,sans-serif;color:var(--text-soft,#57606a);padding:0 2px"><span>'+x[1]+'</span><span style="font-size:20px;line-height:1">⟷</span><span>'+x[2]+'</span></span>';
+   h+='<span style="'+st+'"><small style="display:block;font:600 11px Inter,sans-serif;color:var(--text-soft,#57606a)">zdanie '+(k+1)+'</small>'+x[0]+'</span>'});
+  h+='</div>';
+  if(w.d)h+='<div style="margin:2px 0 0 30px;font:600 12px/1.3 Inter,sans-serif;color:var(--text-soft,#57606a)"><span style="font-size:20px">↓</span> '+w.d[2]+' ('+w.d[1]+')</div><div style="margin-left:14px"><span style="'+st+';border-style:dashed"><small style="display:block;font:600 11px Inter,sans-serif;color:var(--text-soft,#57606a)">zdanie podrzędne</small>'+w.d[0]+'</span></div>';
+  box.innerHTML=h;info.innerHTML=w.i}
+ el.appendChild(bar);el.appendChild(zd);el.appendChild(box);el.appendChild(info);draw()}});
+
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mountAll);else mountAll();
+function mountAll(){document.querySelectorAll('figure[data-viz]').forEach(function(f){if(f.dataset.on)return;f.dataset.on=1;var id=f.getAttribute('data-viz'),d=REG[id],body=f.querySelector('.lk-fig-body')||f,o={};
+ try{o=JSON.parse(f.getAttribute('data-opt')||'{}')}catch(e){}if(!d){body.textContent='Brak grafiki „'+id+'” w pol-viz.js';return}body.style.padding='12px';d.mount(body,o)})}
+POL.mountAll=mountAll;
+})();
+
+/* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
+   postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
+(function(){
+var html=document.documentElement;
+function ciemny(){var t=html.getAttribute('data-theme');return t?t==='dark':!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function oznacz(){if(ciemny())html.setAttribute('data-ciemny','');else html.removeAttribute('data-ciemny')}
+try{var z=localStorage.getItem('lekcja-motyw');if(z)html.setAttribute('data-theme',z)}catch(e){}
+oznacz();if(window.matchMedia)try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',oznacz)}catch(e){}
+
+function start(){
+var root=document;
+root.querySelectorAll('.flashcard').forEach(function(b){if(b.dataset.lkFz)return;b.dataset.lkFz=1;b.removeAttribute('onclick');b.setAttribute('aria-pressed','false');
+ b.addEventListener('click',function(){var on=b.classList.toggle('flipped');b.setAttribute('aria-pressed',on?'true':'false')})});
+root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibling,ok=0,n=0,all=w.querySelectorAll('.quiz-q').length;
+ if(sc&&sc.classList.contains('quiz-score'))sc.setAttribute('aria-live','polite');
+ w.querySelectorAll('.quiz-q').forEach(function(d){var good=+d.dataset.ok;d.querySelectorAll('.quiz-opt').forEach(function(b){b.onclick=function(){if(d.dataset.done)return;d.dataset.done=1;n++;if(+b.dataset.a===good)ok++;
+  d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
+  if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
+  if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var b=root.querySelector('#advToggle');
+if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
+ if(!k)b.style.display='none';
+ b.textContent='Pokaż treści akademickie ('+k+')';
+ b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';adv().forEach(function(d){d.open=on});b.setAttribute('aria-pressed',on?'true':'false');b.textContent=(on?'Ukryj':'Pokaż')+' treści akademickie ('+k+')'}}
+// spis zwinięty na telefonie
+var sp=root.querySelector('#spis');if(sp&&window.innerWidth<700)sp.removeAttribute('open');
+// przełącznik jasny/ciemny
+var tb=root.querySelector('#lkMotyw');
+if(tb)tb.onclick=function(){var t=ciemny()?'light':'dark';html.setAttribute('data-theme',t);try{localStorage.setItem('lekcja-motyw',t)}catch(e){}oznacz()};
+// postęp czytania + aktywna sekcja w spisie
+var bar=root.querySelector('.lk-prog'),links={},secs=[];
+root.querySelectorAll('.toc-link[href^="#"]').forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1));if(s){links[s.id]=a;secs.push(s)}});
+var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+ if(bar)bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';
+ var cur=null,lim=(parseInt(getComputedStyle(h).getPropertyValue('--header-h'))||52)+40;
+ for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
+ for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// fiszki: pokazuje pierwsze N (domyślnie 6, atrybut data-fz-pierwsze="N"), reszta po wyraźnym przycisku
+root.querySelectorAll('.flashcard-grid').forEach(function(g){
+ var cards=[].slice.call(g.querySelectorAll('.flashcard')),N=+(g.getAttribute('data-fz-pierwsze')||6);
+ if(!(N>0)||cards.length<=N)return;
+ var ukryte=cards.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more';
+ function lab(on){ukryte.forEach(function(c){c.hidden=!on});
+  b.textContent=on?'▲ Zwiń fiszki':'▼ Pokaż pozostałe '+ile+' fiszek (razem '+cards.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ g.insertAdjacentElement('afterend',b);
+});
+// testy: pokazuje pierwsze N pytań (domyślnie 5, atrybut data-q-pierwsze), reszta po wyraźnym przycisku
+root.querySelectorAll('.che-quiz').forEach(function(w){
+ var qs=[].slice.call(w.querySelectorAll('.quiz-q')),N=+(w.getAttribute('data-q-pierwsze')||5);
+ if(!(N>0)||qs.length<=N)return;
+ var ukryte=qs.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more q-more';
+ function lab(on){ukryte.forEach(function(q){q.hidden=!on});
+  b.textContent=on?'▲ Zwiń pytania':'▼ Pokaż pozostałe '+ile+(ile===1?' pytanie':(ile<5?' pytania':' pytań'))+' (razem '+qs.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ var sc=w.nextElementSibling;(sc&&sc.classList.contains('quiz-score')?sc:w).insertAdjacentElement('afterend',b);
+});
+// grafiki przedmiotu
+if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
+if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();
+
+</script>
+</body>
+</html>

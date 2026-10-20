@@ -1,0 +1,1278 @@
+{
+ "ACID_SYSTEMS": {
+  "HCl": {
+   "id": "HCl",
+   "formula": "HCl",
+   "species": [
+    "HCl",
+    "Cl⁻"
+   ],
+   "pKa": [
+    -7
+   ],
+   "Ka": [
+    null
+   ],
+   "strong": true,
+   "anion": "Cl⁻"
+  },
+  "HNO3": {
+   "id": "HNO3",
+   "formula": "HNO₃",
+   "species": [
+    "HNO₃",
+    "NO₃⁻"
+   ],
+   "pKa": [
+    -1.4
+   ],
+   "Ka": [
+    null
+   ],
+   "strong": true,
+   "anion": "NO₃⁻"
+  },
+  "H2SO4": {
+   "id": "H2SO4",
+   "formula": "H₂SO₄",
+   "species": [
+    "H₂SO₄",
+    "HSO₄⁻",
+    "SO₄²⁻"
+   ],
+   "pKa": [
+    -3,
+    1.99
+   ],
+   "Ka": [
+    null,
+    0.0102
+   ],
+   "strong": false,
+   "strongFirst": true,
+   "anion": "HSO₄⁻",
+   "note": "mocny tylko w I stopniu; HSO₄⁻ pKa 1,99"
+  },
+  "H3PO4": {
+   "id": "H3PO4",
+   "formula": "H₃PO₄",
+   "species": [
+    "H₃PO₄",
+    "H₂PO₄⁻",
+    "HPO₄²⁻",
+    "PO₄³⁻"
+   ],
+   "pKa": [
+    2.16,
+    7.21,
+    12.32
+   ],
+   "Ka": [
+    0.0069,
+    6.2e-08,
+    4.8e-13
+   ],
+   "strong": false,
+   "anion": "H₂PO₄⁻",
+   "note": "średniej mocy (α₁ ≈ 0,23 dla 0,1 mol/dm³)"
+  },
+  "HF": {
+   "id": "HF",
+   "formula": "HF",
+   "species": [
+    "HF",
+    "F⁻"
+   ],
+   "pKa": [
+    3.2
+   ],
+   "Ka": [
+    0.00063
+   ],
+   "strong": false,
+   "anion": "F⁻",
+   "note": "słaby mimo dużej elektroujemności F"
+  },
+  "HCOOH": {
+   "id": "HCOOH",
+   "formula": "HCOOH",
+   "species": [
+    "HCOOH",
+    "HCOO⁻"
+   ],
+   "pKa": [
+    3.75
+   ],
+   "Ka": [
+    0.000178
+   ],
+   "strong": false,
+   "anion": "HCOO⁻"
+  },
+  "CH3COOH": {
+   "id": "CH3COOH",
+   "formula": "CH₃COOH",
+   "species": [
+    "CH₃COOH",
+    "CH₃COO⁻"
+   ],
+   "pKa": [
+    4.756
+   ],
+   "Ka": [
+    1.75e-05
+   ],
+   "strong": false,
+   "anion": "CH₃COO⁻",
+   "ref": "PUBCHEM-ACETIC-PKA-25C"
+  },
+  "H2CO3": {
+   "id": "H2CO3",
+   "formula": "H₂CO₃",
+   "species": [
+    "H₂CO₃",
+    "HCO₃⁻",
+    "CO₃²⁻"
+   ],
+   "pKa": [
+    6.35,
+    10.33
+   ],
+   "Ka": [
+    4.47e-07,
+    4.68e-11
+   ],
+   "strong": false,
+   "anion": "HCO₃⁻",
+   "note": "stała „pozorna” — dotyczy CO₂(aq) + H₂CO₃"
+  },
+  "HCN": {
+   "id": "HCN",
+   "formula": "HCN",
+   "species": [
+    "HCN",
+    "CN⁻"
+   ],
+   "pKa": [
+    9.21
+   ],
+   "Ka": [
+    6.2e-10
+   ],
+   "strong": false,
+   "anion": "CN⁻"
+  },
+  "HBr": {
+   "id": "HBr",
+   "formula": "HBr",
+   "species": [
+    "HBr",
+    "Br⁻"
+   ],
+   "pKa": [
+    -9
+   ],
+   "Ka": [
+    null
+   ],
+   "strong": true,
+   "anion": "Br⁻"
+  },
+  "HI": {
+   "id": "HI",
+   "formula": "HI",
+   "species": [
+    "HI",
+    "I⁻"
+   ],
+   "pKa": [
+    -10
+   ],
+   "Ka": [
+    null
+   ],
+   "strong": true,
+   "anion": "I⁻"
+  },
+  "HClO4": {
+   "id": "HClO4",
+   "formula": "HClO₄",
+   "species": [
+    "HClO₄",
+    "ClO₄⁻"
+   ],
+   "pKa": [
+    -10
+   ],
+   "Ka": [
+    null
+   ],
+   "strong": true,
+   "anion": "ClO₄⁻"
+  },
+  "H2SO3": {
+   "id": "H2SO3",
+   "formula": "H₂SO₃",
+   "species": [
+    "H₂SO₃",
+    "HSO₃⁻",
+    "SO₃²⁻"
+   ],
+   "pKa": [
+    1.85,
+    7.2
+   ],
+   "Ka": [
+    0.014,
+    6.3e-08
+   ],
+   "strong": false,
+   "anion": "HSO₃⁻",
+   "note": "średniej mocy; nietrwały (SO₂ + H₂O)"
+  },
+  "HNO2": {
+   "id": "HNO2",
+   "formula": "HNO₂",
+   "species": [
+    "HNO₂",
+    "NO₂⁻"
+   ],
+   "pKa": [
+    3.35
+   ],
+   "Ka": [
+    0.00045
+   ],
+   "strong": false,
+   "anion": "NO₂⁻"
+  },
+  "H2S": {
+   "id": "H2S",
+   "formula": "H₂S",
+   "species": [
+    "H₂S",
+    "HS⁻"
+   ],
+   "pKa": [
+    7
+   ],
+   "Ka": [
+    1e-07
+   ],
+   "strong": false,
+   "anion": "HS⁻",
+   "protonsFormal": 2,
+   "note": "formalnie dwuprotonowy; II stopień praktycznie nie zachodzi (pKa₂ w literaturze 12–19)"
+  },
+  "H3PO3": {
+   "id": "H3PO3",
+   "formula": "H₃PO₃",
+   "species": [
+    "H₃PO₃",
+    "H₂PO₃⁻",
+    "HPO₃²⁻"
+   ],
+   "pKa": [
+    1.3,
+    6.7
+   ],
+   "Ka": [
+    0.05,
+    2e-07
+   ],
+   "strong": false,
+   "anion": "H₂PO₃⁻",
+   "note": "dwuprotonowy (jeden H związany z P)"
+  },
+  "C3H6O3": {
+   "id": "C3H6O3",
+   "formula": "CH₃CH(OH)COOH",
+   "species": [
+    "kwas mlekowy",
+    "mleczan"
+   ],
+   "pKa": [
+    3.86
+   ],
+   "Ka": [
+    0.000138
+   ],
+   "strong": false,
+   "anion": "CH₃CH(OH)COO⁻"
+  },
+  "C6H8O7": {
+   "id": "C6H8O7",
+   "formula": "C₆H₈O₇",
+   "species": [
+    "H₃Cit",
+    "H₂Cit⁻",
+    "HCit²⁻",
+    "Cit³⁻"
+   ],
+   "pKa": [
+    3.13,
+    4.76,
+    6.4
+   ],
+   "Ka": [
+    0.00074,
+    1.7e-05,
+    4e-07
+   ],
+   "strong": false,
+   "anion": "H₂Cit⁻"
+  }
+ },
+ "ACIDS": {
+  "HCl": {
+   "formula": "HCl",
+   "name": "kwas chlorowodorowy",
+   "type": "strong",
+   "Ka": [],
+   "pKa": [
+    -7
+   ],
+   "protons": 1,
+   "note": null
+  },
+  "HNO3": {
+   "formula": "HNO₃",
+   "name": "kwas azotowy(V)",
+   "type": "strong",
+   "Ka": [],
+   "pKa": [
+    -1.4
+   ],
+   "protons": 1,
+   "note": null
+  },
+  "H2SO4": {
+   "formula": "H₂SO₄",
+   "name": "kwas siarkowy(VI)",
+   "type": "polyprotic",
+   "Ka": [
+    0.0102
+   ],
+   "pKa": [
+    -3,
+    1.99
+   ],
+   "protons": 2,
+   "note": "mocny tylko w I stopniu; HSO₄⁻ pKa 1,99"
+  },
+  "H3PO4": {
+   "formula": "H₃PO₄",
+   "name": "kwas fosforowy(V)",
+   "type": "polyprotic",
+   "Ka": [
+    0.0069,
+    6.2e-08,
+    4.8e-13
+   ],
+   "pKa": [
+    2.16,
+    7.21,
+    12.32
+   ],
+   "protons": 3,
+   "note": "średniej mocy (α₁ ≈ 0,23 dla 0,1 mol/dm³)"
+  },
+  "HF": {
+   "formula": "HF",
+   "name": "kwas fluorowodorowy",
+   "type": "weak",
+   "Ka": [
+    0.00063
+   ],
+   "pKa": [
+    3.2
+   ],
+   "protons": 1,
+   "note": "słaby mimo dużej elektroujemności F"
+  },
+  "HCOOH": {
+   "formula": "HCOOH",
+   "name": "kwas mrówkowy",
+   "type": "weak",
+   "Ka": [
+    0.000178
+   ],
+   "pKa": [
+    3.75
+   ],
+   "protons": 1,
+   "note": null
+  },
+  "CH3COOH": {
+   "formula": "CH₃COOH",
+   "name": "kwas octowy",
+   "type": "weak",
+   "Ka": [
+    1.75e-05
+   ],
+   "pKa": [
+    4.756
+   ],
+   "protons": 1,
+   "note": null
+  },
+  "H2CO3": {
+   "formula": "H₂CO₃",
+   "name": "kwas węglowy",
+   "type": "polyprotic",
+   "Ka": [
+    4.47e-07,
+    4.68e-11
+   ],
+   "pKa": [
+    6.35,
+    10.33
+   ],
+   "protons": 2,
+   "note": "stała „pozorna” — dotyczy CO₂(aq) + H₂CO₃"
+  },
+  "HCN": {
+   "formula": "HCN",
+   "name": "cyjanowodór",
+   "type": "weak",
+   "Ka": [
+    6.2e-10
+   ],
+   "pKa": [
+    9.21
+   ],
+   "protons": 1,
+   "note": null
+  },
+  "HBr": {
+   "formula": "HBr",
+   "name": "kwas bromowodorowy",
+   "type": "strong",
+   "Ka": [],
+   "pKa": [
+    -9
+   ],
+   "protons": 1,
+   "note": null
+  },
+  "HI": {
+   "formula": "HI",
+   "name": "kwas jodowodorowy",
+   "type": "strong",
+   "Ka": [],
+   "pKa": [
+    -10
+   ],
+   "protons": 1,
+   "note": null
+  },
+  "HClO4": {
+   "formula": "HClO₄",
+   "name": "kwas chlorowy(VII)",
+   "type": "strong",
+   "Ka": [],
+   "pKa": [
+    -10
+   ],
+   "protons": 1,
+   "note": null
+  },
+  "H2SO3": {
+   "formula": "H₂SO₃",
+   "name": "kwas siarkowy(IV)",
+   "type": "polyprotic",
+   "Ka": [
+    0.014,
+    6.3e-08
+   ],
+   "pKa": [
+    1.85,
+    7.2
+   ],
+   "protons": 2,
+   "note": "średniej mocy; nietrwały (SO₂ + H₂O)"
+  },
+  "HNO2": {
+   "formula": "HNO₂",
+   "name": "kwas azotowy(III)",
+   "type": "weak",
+   "Ka": [
+    0.00045
+   ],
+   "pKa": [
+    3.35
+   ],
+   "protons": 1,
+   "note": null
+  },
+  "H2S": {
+   "formula": "H₂S",
+   "name": "siarkowodór",
+   "type": "weak",
+   "Ka": [
+    1e-07
+   ],
+   "pKa": [
+    7
+   ],
+   "protons": 2,
+   "note": "formalnie dwuprotonowy; II stopień praktycznie nie zachodzi (pKa₂ w literaturze 12–19)"
+  },
+  "H3PO3": {
+   "formula": "H₃PO₃",
+   "name": "kwas fosforowy(III)",
+   "type": "polyprotic",
+   "Ka": [
+    0.05,
+    2e-07
+   ],
+   "pKa": [
+    1.3,
+    6.7
+   ],
+   "protons": 2,
+   "note": "dwuprotonowy (jeden H związany z P)"
+  },
+  "C3H6O3": {
+   "formula": "CH₃CH(OH)COOH",
+   "name": "kwas mlekowy",
+   "type": "weak",
+   "Ka": [
+    0.000138
+   ],
+   "pKa": [
+    3.86
+   ],
+   "protons": 1,
+   "note": null
+  },
+  "C6H8O7": {
+   "formula": "C₆H₈O₇",
+   "name": "kwas cytrynowy",
+   "type": "polyprotic",
+   "Ka": [
+    0.00074,
+    1.7e-05,
+    4e-07
+   ],
+   "pKa": [
+    3.13,
+    4.76,
+    6.4
+   ],
+   "protons": 3,
+   "note": null
+  }
+ },
+ "INDICATORS": [
+  {
+   "name": "oranż metylowy",
+   "lo": 3.1,
+   "hi": 4.4,
+   "cLo": "#dc2626",
+   "cHi": "#facc15"
+  },
+  {
+   "name": "lakmus",
+   "lo": 4.5,
+   "hi": 8.3,
+   "cLo": "#dc2626",
+   "cHi": "#2563eb"
+  },
+  {
+   "name": "błękit bromotymolowy",
+   "lo": 6,
+   "hi": 7.6,
+   "cLo": "#facc15",
+   "cHi": "#2563eb"
+  },
+  {
+   "name": "fenoloftaleina",
+   "lo": 8.2,
+   "hi": 10,
+   "cLo": "transparent",
+   "cHi": "#db2777"
+  }
+ ],
+ "INDICATOR_RANGES": [
+  {
+   "name": "oranż metylowy",
+   "lo": 3.1,
+   "hi": 4.4
+  },
+  {
+   "name": "lakmus",
+   "lo": 4.5,
+   "hi": 8.3
+  },
+  {
+   "name": "błękit bromotymolowy",
+   "lo": 6,
+   "hi": 7.6
+  },
+  {
+   "name": "fenoloftaleina",
+   "lo": 8.2,
+   "hi": 10
+  }
+ ],
+ "METAL_SERIES": [
+  "K",
+  "Ca",
+  "Na",
+  "Mg",
+  "Al",
+  "Zn",
+  "Fe",
+  "Sn",
+  "Pb",
+  "H",
+  "Cu",
+  "Ag",
+  "Au"
+ ],
+ "METAL_ACTIVE": [
+  "K",
+  "Ca",
+  "Na",
+  "Mg",
+  "Al",
+  "Zn",
+  "Fe",
+  "Sn",
+  "Pb"
+ ],
+ "ACID_STRENGTH": [
+  {
+   "n": "HCl",
+   "a": 1,
+   "c": "mocny"
+  },
+  {
+   "n": "HBr",
+   "a": 1,
+   "c": "mocny"
+  },
+  {
+   "n": "HI",
+   "a": 1,
+   "c": "mocny"
+  },
+  {
+   "n": "HNO₃",
+   "a": 1,
+   "c": "mocny"
+  },
+  {
+   "n": "H₂SO₄ (I)",
+   "a": 1,
+   "c": "mocny"
+  },
+  {
+   "n": "H₃PO₄",
+   "a": 0.23,
+   "c": "średni"
+  },
+  {
+   "n": "HF",
+   "a": 0.079,
+   "c": "średni"
+  },
+  {
+   "n": "CH₃COOH",
+   "a": 0.013,
+   "c": "słaby"
+  },
+  {
+   "n": "H₂CO₃",
+   "a": 0.0021,
+   "c": "słaby"
+  },
+  {
+   "n": "H₂S",
+   "a": 0.001,
+   "c": "słaby"
+  }
+ ],
+ "PROJECT_KNOWLEDGE_BASE": {
+  "architecture": {
+   "status": "VERIFIED",
+   "engine": "single common engine + common central data",
+   "canonicalGraph": "CHE.STRUCTURE",
+   "molecule": "CHE.MOLECULE is adapter/compatibility layer; not a second chemistry engine",
+   "auditVersion": "2.82"
+  },
+  "elements": {
+   "inventory": 118,
+   "status": "VERIFIED",
+   "sourceLayer": "ELEMENTS_118"
+  },
+  "atomicWeights": {
+   "records": 118,
+   "point": 70,
+   "interval": 14,
+   "noStandard": 34,
+   "status": "VERIFIED",
+   "source": "CIAAW_AW_2024",
+   "policy": "does not overwrite legacy ELEMENTS_118.mass"
+  },
+  "firstIonizationEnergy": {
+   "records": 118,
+   "referenceCandidates": 99,
+   "estimated": 19,
+   "status": "VERIFIED_CONTRACT",
+   "policy": "19 superheavy values remain explicitly estimated"
+  },
+  "isotopeReference": {
+   "records": 43,
+   "elements": 17,
+   "sourceComplete": 43,
+   "status": "REFERENCE_CONTRACT",
+   "source": "NUBASE2020 + CIAAW_ISO_2024",
+   "gateReady": false,
+   "normalizedPackage": "2.82"
+  },
+  "thermochemistry": {
+   "contractRecords": 16,
+   "verifiedReferenceRecords": 8,
+   "status": "PARTIAL_REFERENCE",
+   "source": "NIST_WEBBOOK",
+   "verifiedIds": [
+    "NIST-H2O-L-29815",
+    "NIST-H2O-G-29815",
+    "NIST-CO2-G-29815",
+    "NIST-H2S-G-29815",
+    "NIST-SO2-G-29815",
+    "NIST-HCN-G-29815",
+    "NIST-H2O2-G-29815",
+    "NIST-CO-G-29815"
+   ]
+  },
+  "equilibria": {
+   "verifiedRecords": 3,
+   "computedRecords": 2,
+   "status": "PARTIAL_REFERENCE",
+   "source": "PubChem + cited underlying references",
+   "records": [
+    "PUBCHEM-ACETIC-PKA-25C",
+    "PUBCHEM-AMMONIA-PKB-25C",
+    "PUBCHEM-CACO3-KSP-25C"
+   ]
+  },
+  "electrochemistry": {
+   "contractRecords": 22,
+   "verifiedRecordLevel": 1,
+   "status": "PARTIAL_REFERENCE"
+  },
+  "reactions": {
+   "canonicalRecords": 13,
+   "lessonCandidates": 500,
+   "unresolvedQueueCandidates": 428,
+   "status": "PARTIAL_REFERENCE",
+   "policy": "do not promote lesson candidates without record-level verification",
+   "verificationQueueVersion": "2.82",
+   "promotionReady": 0
+  },
+  "regression": {
+   "lastVersion": "2.82",
+   "status": "PASS_PENDING_RUNTIME",
+   "syntax": "PASS via vm.Script; browser runtime remains separate"
+  },
+  "scientificGate": {
+   "status": "BLOCKED",
+   "reason": "reference-grade completeness is not reached"
+  }
+ },
+ "HYDROXIDES": [
+  {
+   "f": "LiOH",
+   "name": "wodorotlenek litu",
+   "metal": "Li",
+   "q": 1,
+   "cid": null,
+   "hex": "#f8fafc",
+   "color": "biały",
+   "strength": "mocna",
+   "amph": false,
+   "level": "AMB",
+   "rx": {
+    "oxide": "li2oH2o",
+    "metal": "liH2o"
+   },
+   "notes": [
+    "najmniej rozpuszczalny z wodorotlenków litowców, ale nadal dobrze rozpuszczalny"
+   ],
+   "dHsol": -23.6,
+   "phSat": null,
+   "sg": 12.8,
+   "sOwn": "R",
+   "pretty": "LiOH",
+   "cation": "Li⁺"
+  },
+  {
+   "f": "NaOH",
+   "name": "wodorotlenek sodu",
+   "metal": "Na",
+   "q": 1,
+   "cid": "Na",
+   "hex": "#f8fafc",
+   "color": "biały",
+   "strength": "mocna",
+   "amph": false,
+   "level": "E8",
+   "rx": {
+    "oxide": "na2oH2o",
+    "metal": "naH2o",
+    "acid": "hclNaOH",
+    "co2": "naohCo2"
+   },
+   "notes": [
+    "higroskopijny — „rozpływa się” na powietrzu",
+    "żrący; roztwór = zasada sodowa (ług sodowy)",
+    "rozpuszczanie silnie egzotermiczne"
+   ],
+   "dHsol": -44.5,
+   "phSat": null,
+   "sg": 109,
+   "sOwn": null,
+   "pretty": "NaOH",
+   "cation": "Na⁺"
+  },
+  {
+   "f": "KOH",
+   "name": "wodorotlenek potasu",
+   "metal": "K",
+   "q": 1,
+   "cid": "K",
+   "hex": "#f8fafc",
+   "color": "biały",
+   "strength": "mocna",
+   "amph": false,
+   "level": "E8",
+   "rx": {
+    "oxide": "k2oH2o",
+    "metal": "kH2o",
+    "acid": "kohHcl",
+    "co2": "co2Koh"
+   },
+   "notes": [
+    "higroskopijny, żrący; jeszcze lepiej rozpuszczalny niż NaOH",
+    "mydła potasowe (płynne), baterie alkaliczne"
+   ],
+   "dHsol": -57.6,
+   "phSat": null,
+   "sg": 112,
+   "sOwn": null,
+   "pretty": "KOH",
+   "cation": "K⁺"
+  },
+  {
+   "f": "Ca(OH)2",
+   "name": "wodorotlenek wapnia",
+   "metal": "Ca",
+   "q": 2,
+   "cid": "Ca",
+   "hex": "#f1f5f9",
+   "color": "biały",
+   "strength": "mocna",
+   "amph": false,
+   "level": "E8",
+   "rx": {
+    "oxide": "caoH2o",
+    "metal": "caH2o",
+    "precip": "cacl2Naoh",
+    "acid": "caoh2Hcl",
+    "heat": "caoh2Heat",
+    "co2": "caoh2Co2"
+   },
+   "notes": [
+    "wapno gaszone; mleko wapienne = zawiesina, woda wapienna = klarowny roztwór nasycony",
+    "słabo rozpuszczalny, ale rozpuszczona część dysocjuje praktycznie całkowicie"
+   ],
+   "dHsol": -16.7,
+   "phSat": 12.4,
+   "sg": 0.173,
+   "sOwn": null,
+   "pretty": "Ca(OH)₂",
+   "cation": "Ca²⁺"
+  },
+  {
+   "f": "Ba(OH)2",
+   "name": "wodorotlenek baru",
+   "metal": "Ba",
+   "q": 2,
+   "cid": "Ba",
+   "hex": "#f8fafc",
+   "color": "biały",
+   "strength": "mocna",
+   "amph": false,
+   "level": "AMB",
+   "rx": {
+    "oxide": "baoH2o",
+    "metal": "baH2o",
+    "acid": "baoh2Hcl",
+    "co2": "baoh2Co2"
+   },
+   "notes": [
+    "związki baru są trujące — nie do doświadczeń uczniowskich",
+    "rozpuszczalność ok. 3,9 g/100 g (jako hydrat Ba(OH)₂·8H₂O)"
+   ],
+   "dHsol": null,
+   "phSat": null,
+   "sg": 3.9,
+   "sOwn": null,
+   "pretty": "Ba(OH)₂",
+   "cation": "Ba²⁺"
+  },
+  {
+   "f": "Mg(OH)2",
+   "name": "wodorotlenek magnezu",
+   "metal": "Mg",
+   "q": 2,
+   "cid": "Mg",
+   "hex": "#f8fafc",
+   "color": "biały",
+   "strength": "—",
+   "amph": false,
+   "level": "E8",
+   "rx": {
+    "oxide": "mgoH2o",
+    "metal": "mgH2oHot",
+    "precip": "mgcl2Naoh",
+    "acid": "mgoh2Hcl",
+    "heat": "mgoh2Heat"
+   },
+   "notes": [
+    "mleko magnezowe — lek zobojętniający kwas żołądkowy",
+    "MgO reaguje z wodą bardzo powoli"
+   ],
+   "dHsol": null,
+   "phSat": 10.4,
+   "sg": 0.0009,
+   "sOwn": null,
+   "pretty": "Mg(OH)₂",
+   "cation": "Mg²⁺"
+  },
+  {
+   "f": "Al(OH)3",
+   "name": "wodorotlenek glinu",
+   "metal": "Al",
+   "q": 3,
+   "cid": "Al",
+   "hex": "#f8fafc",
+   "color": "biały, galaretowaty",
+   "strength": "—",
+   "amph": true,
+   "level": "E8",
+   "rx": {
+    "precip": "alcl3Naoh",
+    "acid": "aloh3Hcl",
+    "base": "aloh3Naoh",
+    "heat": "aloh3Heat"
+   },
+   "notes": [
+    "amfoteryczny: reaguje z kwasami i z mocnymi zasadami",
+    "leki na zgagę; uzdatnianie wody"
+   ],
+   "dHsol": null,
+   "phSat": null,
+   "sg": 0.0001,
+   "sOwn": null,
+   "pretty": "Al(OH)₃",
+   "cation": "Al³⁺"
+  },
+  {
+   "f": "Zn(OH)2",
+   "name": "wodorotlenek cynku",
+   "metal": "Zn",
+   "q": 2,
+   "cid": "Zn",
+   "hex": "#f8fafc",
+   "color": "biały",
+   "strength": "—",
+   "amph": true,
+   "level": "E8",
+   "rx": {
+    "precip": "znso4Naoh",
+    "acid": "znoh2Hcl",
+    "base": "znoh2Naoh",
+    "heat": "znoh2Heat"
+   },
+   "notes": [
+    "amfoteryczny"
+   ],
+   "dHsol": null,
+   "phSat": null,
+   "sg": 0.0001,
+   "sOwn": null,
+   "pretty": "Zn(OH)₂",
+   "cation": "Zn²⁺"
+  },
+  {
+   "f": "Fe(OH)2",
+   "name": "wodorotlenek żelaza(II)",
+   "metal": "Fe",
+   "q": 2,
+   "cid": "Fe2",
+   "hex": "#9cbf8f",
+   "color": "zielonkawy (brunatnieje na powietrzu)",
+   "strength": "—",
+   "amph": false,
+   "level": "E8",
+   "rx": {
+    "precip": "feso4Naoh",
+    "air": "feoh2O2"
+   },
+   "notes": [
+    "na powietrzu utlenia się do Fe(OH)₃"
+   ],
+   "dHsol": null,
+   "phSat": null,
+   "sg": 0.0001,
+   "sOwn": null,
+   "pretty": "Fe(OH)₂",
+   "cation": "Fe²⁺"
+  },
+  {
+   "f": "Fe(OH)3",
+   "name": "wodorotlenek żelaza(III)",
+   "metal": "Fe",
+   "q": 3,
+   "cid": "Fe3",
+   "hex": "#8b4513",
+   "color": "rdzawobrunatny",
+   "strength": "—",
+   "amph": false,
+   "level": "E8",
+   "rx": {
+    "precip": "fecl3Naoh",
+    "acid": "feoh3Hcl",
+    "heat": "feoh3Heat"
+   },
+   "notes": [
+    "składnik rdzy"
+   ],
+   "dHsol": null,
+   "phSat": null,
+   "sg": 1e-05,
+   "sOwn": null,
+   "pretty": "Fe(OH)₃",
+   "cation": "Fe³⁺"
+  },
+  {
+   "f": "Cu(OH)2",
+   "name": "wodorotlenek miedzi(II)",
+   "metal": "Cu",
+   "q": 2,
+   "cid": "Cu",
+   "hex": "#4f9fe0",
+   "color": "niebieski, galaretowaty",
+   "strength": "—",
+   "amph": false,
+   "level": "E8",
+   "rx": {
+    "precip": "cuso4Naoh",
+    "acid": "cuoh2H2so4",
+    "heat": "cuoh2Heat"
+   },
+   "notes": [
+    "po ogrzaniu czernieje (CuO)"
+   ],
+   "dHsol": null,
+   "phSat": null,
+   "sg": 0.0001,
+   "sOwn": null,
+   "pretty": "Cu(OH)₂",
+   "cation": "Cu²⁺"
+  },
+  {
+   "f": "Ni(OH)2",
+   "name": "wodorotlenek niklu(II)",
+   "metal": "Ni",
+   "q": 2,
+   "cid": "Ni",
+   "hex": "#7fd38a",
+   "color": "jasnozielony",
+   "strength": "—",
+   "amph": false,
+   "level": "AMB",
+   "rx": {
+    "precip": "niso4Naoh"
+   },
+   "notes": [
+    "akumulatory Ni-MH"
+   ],
+   "dHsol": null,
+   "phSat": null,
+   "sg": 0.0001,
+   "sOwn": null,
+   "pretty": "Ni(OH)₂",
+   "cation": "Ni²⁺"
+  },
+  {
+   "f": "Mn(OH)2",
+   "name": "wodorotlenek manganu(II)",
+   "metal": "Mn",
+   "q": 2,
+   "cid": "Mn",
+   "hex": "#efe6d2",
+   "color": "biały / beżowy (brunatnieje)",
+   "strength": "—",
+   "amph": false,
+   "level": "AMB",
+   "rx": {
+    "precip": "mnso4Naoh"
+   },
+   "notes": [
+    "na powietrzu utlenia się (brunatnieje)"
+   ],
+   "dHsol": null,
+   "phSat": null,
+   "sg": 0.0003,
+   "sOwn": null,
+   "pretty": "Mn(OH)₂",
+   "cation": "Mn²⁺"
+  },
+  {
+   "f": "Pb(OH)2",
+   "name": "wodorotlenek ołowiu(II)",
+   "metal": "Pb",
+   "q": 2,
+   "cid": "Pb",
+   "hex": "#f8fafc",
+   "color": "biały",
+   "strength": "—",
+   "amph": true,
+   "level": "AMB",
+   "rx": {
+    "precip": "pbno32Naoh",
+    "base": "pboh2Naoh"
+   },
+   "notes": [
+    "amfoteryczny; związki ołowiu trujące"
+   ],
+   "dHsol": null,
+   "phSat": null,
+   "sg": 0.0001,
+   "sOwn": null,
+   "pretty": "Pb(OH)₂",
+   "cation": "Pb²⁺"
+  },
+  {
+   "f": "Sn(OH)2",
+   "name": "wodorotlenek cyny(II)",
+   "metal": "Sn",
+   "q": 2,
+   "cid": "Sn",
+   "hex": "#f8fafc",
+   "color": "biały",
+   "strength": "—",
+   "amph": true,
+   "level": "LO",
+   "rx": {},
+   "notes": [
+    "amfoteryczny"
+   ],
+   "dHsol": null,
+   "phSat": null,
+   "sg": 0.0001,
+   "sOwn": null,
+   "pretty": "Sn(OH)₂",
+   "cation": "Sn²⁺"
+  },
+  {
+   "f": "Cr(OH)3",
+   "name": "wodorotlenek chromu(III)",
+   "metal": "Cr",
+   "q": 3,
+   "cid": null,
+   "hex": "#6b8f71",
+   "color": "szarozielony",
+   "strength": "—",
+   "amph": true,
+   "level": "LO",
+   "rx": {},
+   "notes": [
+    "amfoteryczny"
+   ],
+   "dHsol": null,
+   "phSat": null,
+   "sg": 0.0001,
+   "sOwn": "N",
+   "pretty": "Cr(OH)₃",
+   "cation": "Cr³⁺"
+  },
+  {
+   "f": "AgOH",
+   "name": "wodorotlenek srebra(I)",
+   "metal": "Ag",
+   "q": 1,
+   "cid": "Ag",
+   "hex": "#4a3426",
+   "color": "— (od razu brunatny Ag₂O)",
+   "strength": "—",
+   "amph": false,
+   "level": "AMB",
+   "rx": {
+    "precip": "agno3Naoh",
+    "heat": "agohDec"
+   },
+   "notes": [
+    "nietrwały: 2AgOH → Ag₂O + H₂O; nie mów „nie istnieje” — to zbyt duże uproszczenie"
+   ],
+   "dHsol": null,
+   "phSat": null,
+   "sg": null,
+   "sOwn": null,
+   "pretty": "AgOH",
+   "cation": "Ag⁺"
+  },
+  {
+   "f": "CuOH",
+   "name": "wodorotlenek miedzi(I)",
+   "metal": "Cu",
+   "q": 1,
+   "cid": null,
+   "hex": "#b45309",
+   "color": "— (przechodzi w Cu₂O)",
+   "strength": "—",
+   "amph": false,
+   "level": "LO",
+   "rx": {
+    "heat": "cuohDec"
+   },
+   "notes": [
+    "nietrwały: 2CuOH → Cu₂O + H₂O"
+   ],
+   "dHsol": null,
+   "phSat": null,
+   "sg": null,
+   "sOwn": "—",
+   "pretty": "CuOH",
+   "cation": "Cu⁺"
+  },
+  {
+   "f": "NH4OH",
+   "name": "„wodorotlenek amonu” (zapis szkolny)",
+   "metal": "NH4",
+   "q": 1,
+   "cid": "NH4",
+   "hex": "#f8fafc",
+   "color": "— (roztwór)",
+   "strength": "słaba",
+   "amph": false,
+   "level": "AMB",
+   "rx": {},
+   "notes": [
+    "tradycyjny skrót: dokładniej NH₃ + H₂O ⇌ NH₄⁺ + OH⁻ — nie ma trwałej cząsteczki NH₄OH",
+    "woda amoniakalna ma odczyn zasadowy"
+   ],
+   "dHsol": null,
+   "phSat": 11.1,
+   "sg": null,
+   "sOwn": null,
+   "pretty": "NH₄OH",
+   "cation": "NH₄⁺"
+  }
+ ]
+}

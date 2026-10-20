@@ -1,82 +1,196 @@
----
+***
 kod: K03
-uid: CHE.07.K03.kalorymetria_i_przemiany_fazowe
 tytul: Kalorymetria i przemiany fazowe
-opis: Ciepło właściwe, wzór Q = m·c·ΔT, ciepło topnienia i parowania, wykres ogrzewania, bilans cieplny w kalorymetrze · LO
-kicker: K03 · ENERGETYKA · NOWA LEKCJA
-lead: Lód wrzucony do ciepłej wody topi się, a temperatura wody spada, choć nie widać żadnego ogrzewania. Ta lekcja pokazuje, jak zmierzyć ciepło, które wymieniają substancje, i jak ułożyć bilans cieplny, gdy po drodze zmienia się stan skupienia.
+opis: ciepło właściwe c · wzór Q = m·c·ΔT · ciepło topnienia · ciepło parowania · przemiany fazowe · wykres ogrzewania · bilans cieplny · kalorymetr · ciepło krzepnięcia · jednostki J i kJ
+uid: CHE.07.K03.kalorymetria_i_przemiany_fazowe
+kicker: K03 · CHEMIA · Energetyka · POZIOM ROZSZERZONY / KONKURS
+lead: Lód wrzucony do ciepłej wody topi się, a temperatura wody spada, choć nie widać żadnego ogrzewania. Ta lekcja pokazuje, jak zmierzyć ciepło wymieniane przez substancje i jak ułożyć bilans cieplny, gdy po drodze zmienia się stan skupienia.
 plakietki: [[understand:ROZUMIENIE]][[extra:LO]]
-stopka: **CHEMIA K03 v1.0** · Kalorymetria i przemiany fazowe · 2026
----
+uwaga: Lekcja należy do poziomu rozszerzonego. Wzór Q = m·c·ΔT stosuje się do ogrzewania lub ochładzania bez przemiany fazowej. Podczas topnienia, krzepnięcia, parowania i skraplania temperatura czystej substancji pozostaje stała, a ciepło oblicza się ze wzoru Q = m·q. Wartości ciepła właściwego i ciepła przemian zależą od substancji oraz warunków; w zadaniach należy korzystać z danych podanych w poleceniu.
+stopka: CHEMIA K03 · Kalorymetria i przemiany fazowe · Materiał do samodzielnej nauki · 2026
+stan: ULEPSZONA — Perplexity, 2026-10-13; do sprawdzenia
+***
 
-::: minimum | Muszę umieć — 10 punktów (LO)
-1. **Ciepło właściwe c** to ciepło potrzebne do ogrzania 1 g substancji o 1 °C (1 K).
-2. Ogrzewanie bez przemiany fazowej: **Q = m · c · ΔT**.
-3. **Ciepło topnienia** q_t to ciepło potrzebne do stopienia 1 g ciała stałego w temperaturze topnienia (bez zmiany T).
-4. **Ciepło parowania** q_p to ciepło potrzebne do odparowania 1 g cieczy w temperaturze wrzenia.
-5. Przemiana fazowa: **Q = m · q** (topnienie, krzepnięcie, parowanie, skraplanie).
-6. Na wykresie ogrzewania odcinki **pochyłe** to zmiana T (m·c·ΔT), a **poziome** to przemiana fazowa (T stała).
-7. **Kalorymetr** to naczynie izolowane cieplnie, w którym mierzymy ciepło przemiany.
-8. **Bilans cieplny**: ciepło oddane przez jedno ciało jest równe ciału pobranemu przez drugie (suma Q = 0 w układzie izolowanym).
-9. Przy krzepnięciu i skraplaniu ciepło jest wydzielane (przeciwny znak w bilansie).
-10. Najczęstsze błędy: mieszanie jednostek (g i kg, J i kJ), pominięcie odcinka fazowego, mylenie c wody z c lodu.
+::: minimum | Muszę umieć — 10 punktów
+1. Wyjaśniam, że ciepło właściwe c to ilość ciepła potrzebna do ogrzania 1 g substancji o 1 °C.
+2. Obliczam ciepło ogrzewania lub ochładzania bez przemiany fazowej ze wzoru Q = m·c·ΔT.
+3. Wyjaśniam, że ciepło topnienia qt to ciepło potrzebne do stopienia 1 g ciała stałego w temperaturze topnienia bez zmiany temperatury.
+4. Wyjaśniam, że ciepło parowania qp to ciepło potrzebne do odparowania 1 g cieczy w temperaturze wrzenia bez zmiany temperatury.
+5. Obliczam ciepło przemiany fazowej ze wzoru Q = m·q.
+6. Na wykresie ogrzewania rozróżniam odcinki pochyłe, na których zmienia się temperatura, oraz odcinki poziome, na których zachodzi przemiana fazowa.
+7. Wyjaśniam, że kalorymetr to naczynie izolowane cieplnie, w którym mierzy się ciepło przemiany.
+8. Ułożę bilans cieplny: w układzie izolowanym ciepło oddane przez jedno ciało jest równe ciepłu pobranemu przez drugie.
+9. Uwzględniam, że podczas krzepnięcia i skraplania ciepło jest wydzielane, a podczas topnienia i parowania — pobierane.
+10. Unikam typowych błędów: mieszania g z kg, J z kJ, pomijania odcinka przemiany fazowej oraz używania ciepła właściwego wody dla lodu.
 :::
 
 ::: warstwy
-- understand | <b>Rozumienie:</b> dlaczego temperatura stoi podczas topnienia; po co bilans z przemianą fazową
-- extra | <b>LO:</b> pełny bilans z wieloma etapami; związek Q z ΔH (K02)
+- understand | <b>Rozumienie:</b> dlaczego temperatura nie rośnie podczas topnienia, czym różni się ciepło ogrzewania od ciepła przemiany fazowej oraz jak działa bilans cieplny w kalorymetrze.
+- extra | <b>Poziom rozszerzony:</b> obliczenia Q = m·c·ΔT, Q = m·q, wykres ogrzewania oraz bilans cieplny z udziałem lodu i wody.
+- contest | <b>Konkurs:</b> analiza wykresów wieloetapowych, sprawdzanie, czy lód stopił się całkowicie, dobór jednostek oraz rozpoznawanie brakujących etapów w bilansie.
+- extra | <b>Ambitne:</b> wpływ przemian fazowych na bilans energii, różnica między ciepłem właściwym lodu i wody, założenia izolacji kalorymetru oraz zastosowania w życiu codziennym.
 :::
 
 ::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
-Ciepło dostarczone substancji zużywa się na dwie rzeczy: na zmianę temperatury (wtedy T rośnie i wykres jest pochyły) albo na zmianę stanu skupienia (wtedy T stoi, a wykres jest poziomy). Najpierw ustal, czy w procesie zachodzi przemiana fazowa. Dopiero potem licz bilans.
+- [§1](#wyklad) — Wykład od zera: ciepło, temperatura i przemiany fazowe.
+- [§2](#wykres) — Wykres ogrzewania: odcinki pochyłe i poziome.
+- [§3](#bilans) — Bilans cieplny w kalorymetrze.
+- [§4](#przyklady) — Przykłady prowadzone.
+- [§5](#klinika) — Klinika błędów.
+- [§6](#cwiczenia) — Ćwiczenia z kluczem.
+- [§7](#ciekawostki) — Ciekawostki.
+- [§8](#slownik) — Słownik.
+- [§9](#test) — Test końcowy.
+- [§10](#checklista) — Checklista.
 :::
 
-## 0.1 | Jak pracować z tą lekcją {#jak-pracowac}
+## 0.1 | Jak pracować z lekcją {#jak-pracowac}
 
-::: karta understand | Kolejność pracy
-Zacznij od diagnozy (0.4). Potem przeczytaj ściągę (punkt 1) i przykłady z punktu 3. Bilans licz sam, zanim porównasz z kluczem.
-:::
+Po tej lekcji potrafisz:
+
+- obliczyć ciepło ogrzewania Q = m·c·ΔT;
+- obliczyć ciepło przemiany fazowej Q = m·q;
+- odczytać z wykresu ogrzewania odcinki z przemianami i bez przemian;
+- ułożyć bilans cieplny w kalorymetrze;
+- wyjaśnić, dlaczego temperatura podczas przemiany fazowej nie rośnie.
+
+Kolejność pracy:
+
+1. Zacznij od diagnozy w [§0.4](#diagnoza). Odpowiedz samodzielnie, a dopiero potem sprawdź klucz.
+2. Przeczytaj wykład w [§1](#wyklad). Obraz przewodni to ciepło jako energia przekazywana między ciałami, a temperatura jako wskaźnik ruchu cząsteczek.
+3. W [§2](#wykres) narysuj własny wykres ogrzewania lodu aż do pary. Zaznacz odcinki pochyłe i poziome.
+4. W [§3](#bilans) przećwicz bilans cieplny. Najpierw ustal, które ciało oddaje ciepło, a które pobiera.
+5. Przykłady w [§4](#przyklady) licz samodzielnie, zanim sprawdzisz klucz.
+6. Test i ćwiczenia rozwiązuj bez zaglądania do treści. Błędne odpowiedzi wskażą zagadnienie do powtórki.
+
+Przydatne wcześniej: ciepło i znak efektu energetycznego z K01, temperatura i różnica temperatur z F03 oraz K01, stany skupienia i przemiany fazowe z F03 oraz K01, jednostki masy i energii.
 
 ## 0.2 | Cele i pytanie przewodnie {#cele}
 
-::: karta basic | Po tej lekcji potrafisz
-- obliczyć ciepło ogrzewania Q = m·c·ΔT;
-- obliczyć ciepło przemiany fazowej Q = m·q;
-- odczytać z wykresu ogrzewania odcinki z przemianą i bez;
-- ułożyć bilans cieplny w kalorymetrze.
-:::
+Pytanie przewodnie: **Jak zmierzyć i obliczyć ciepło, które pojawia się lub znika, gdy substancja się ogrzewa, topi albo paruje?**
 
-::: karta exam | Pytanie przewodnie
-Jak zmierzyć i obliczyć ciepło, które „znika” lub „pojawia się”, gdy substancja się ogrzewa, topi albo paruje?
-:::
+Po tej lekcji potrafisz:
+
+- obliczyć Q = m·c·ΔT z zachowaniem jednostek;
+- obliczyć Q = m·q dla topnienia lub parowania;
+- odczytać z wykresu odcinki pochyłe i poziome;
+- ułożyć bilans cieplny z przemianami fazowymi;
+- wyjaśnić, dlaczego temperatura w przemianie fazowej nie rośnie.
 
 ## 0.3 | Kompas — co trzeba wiedzieć wcześniej {#kompas}
 
-- ciepło i znak efektu energetycznego (K01, K02);
-- temperatura i różnica temperatur ΔT; stany skupienia i przemiany fazowe (F03, K01);
-- jednostki masy i energii (g, kg, J, kJ).
+- **Ciepło i znak efektu energetycznego** — K01, K02.
+- **Temperatura i różnica temperatur** — F03, K01.
+- **Stany skupienia i przemiany fazowe** — F03, K01.
+- **Jednostki masy i energii** — g, kg, J, kJ.
+- **Energia reakcji** — K01.
+- **Entalpia** — K02.
 
 ## 0.4 | Diagnoza startowa {#diagnoza}
 
-::: karta understand | Odpowiedz najpierw sam
+Odpowiedz najpierw samodzielnie.
+
 1. Zapisz wzór na ciepło ogrzewania bez przemiany fazowej.
-2. Co to ciepło właściwe?
+2. Co to jest ciepło właściwe?
 3. Co dzieje się z temperaturą podczas topnienia czystej substancji pod stałym ciśnieniem?
 4. Zapisz wzór na ciepło topnienia.
-5. Ile ciepła potrzeba, by ogrzać 100 g wody o 10 °C, gdy c = 4,2 J/(g·°C)?
+5. Ile ciepła potrzeba, aby ogrzać 100 g wody o 10 °C, jeżeli c = 4,2 J/(g·°C)?
 
-::: odp | Pokaż klucz i interpretację
-1. Q = m·c·ΔT.
-2. Ciepło potrzebne do ogrzania 1 g substancji o 1 °C.
-3. Temperatura stoi w miejscu.
-4. Q = m·q_t.
-5. Q = 100 · 4,2 · 10 = 4200 J = 4,2 kJ.
+::: odp | Klucz diagnozy i interpretacja
+1. (1 pkt) Q = m·c·ΔT.
 
-**Interpretacja:** 5/5 — przejdź do wykresu i bilansu; 3–4/5 — przeczytaj punkty 1–2; 0–2/5 — zacznij od rdzenia.
+2. (1 pkt) Ciepło właściwe to ilość ciepła potrzebna do ogrzania 1 g substancji o 1 °C.
+
+3. (1 pkt) Temperatura pozostaje stała.
+
+4. (1 pkt) Q = m·qt.
+
+5. (1 pkt) Q = 100·4,2·10 = 4200 J = 4,2 kJ.
+
+Interpretacja wyniku: 5 pkt — przejdź do wykresu i bilansu; 3–4 pkt — przeczytaj punkty 1–2; 0–2 pkt — zacznij od rdzenia.
 :::
+
+## 1 | Wykład — ciepło, temperatura i przemiany fazowe {#wyklad} [[understand:ROZUMIENIE]]
+
+Ciepło i temperatura to różne pojęcia. **Temperatura** opisuje średnią energię ruchu cząsteczek. **Ciepło** to energia przekazywana między ciałami wskutek różnicy temperatur.
+
+Gdy gorąca woda spotyka zimną wodę, energia przepływa od wody cieplejszej do zimniejszej. Temperatura cieplejszej wody spada, a zimniejszej rośnie. Jeżeli układ jest dobrze izolowany, ciepło oddane przez jedno ciało jest równe ciepłu pobranemu przez drugie.
+
+Ciepło potrzebne do ogrzania substancji bez zmiany stanu skupienia oblicza się ze wzoru:
+
+Q = m·c·ΔT
+
+gdzie:
+
+- Q — ciepło, w dżulach;
+- m — masa, w gramach;
+- c — ciepło właściwe, w J/(g·°C);
+- ΔT — zmiana temperatury, w °C.
+
+Dla wody przyjmuje się w zadaniach szkolnych często:
+
+c = 4,2 J/(g·°C)
+
+Przykład: aby ogrzać 200 g wody z 20 °C do 50 °C, potrzeba:
+
+Q = 200·4,2·(50 − 20)
+
+Q = 200·4,2·30
+
+Q = 25 200 J
+
+Q = 25,2 kJ
+
+Podczas ogrzewania temperatury rośnie, ale tylko do momentu osiągnięcia temperatury przemiany fazowej. Potem dostarczana energia nie zwiększa już temperatury, lecz zmienia układ cząsteczek.
+
+Podczas topnienia lód zamienia się w wodę. Temperatura pozostaje stała, jeżeli ciśnienie jest stałe. Dostarczane ciepło jest zużywane na przebudowę układu cząsteczek, a nie na zwiększanie ich średniej energii ruchu.
+
+Ciepło topnienia qt to ilość ciepła potrzebna do stopienia 1 g ciała stałego w temperaturze topnienia:
+
+Q = m·qt
+
+Dla lodu w temperaturze 0 °C przyjmuje się w zadaniach szkolnych często:
+
+qt = 334 J/g
+
+Aby stopić 50 g lodu w 0 °C, potrzeba:
+
+Q = 50·334
+
+Q = 16 700 J
+
+Q = 16,7 kJ
+
+Podczas krzepnięcia zachodzi proces odwrotny. Woda oddaje ciepło do otoczenia i zamienia się w lód. Ilość wydzielonego ciepła jest taka sama jak ilość ciepła potrzebna do stopienia tej samej masy lodu, przy tych samych warunkach.
+
+Podczas parowania ciecz zamienia się w gaz. Temperatura pozostaje stała w temperaturze wrzenia, jeżeli ciśnienie jest stałe. Ciepło parowania qp to ilość ciepła potrzebna do odparowania 1 g cieczy:
+
+Q = m·qp
+
+Podczas skraplania gaz oddaje ciepło i zamienia się w ciecz.
+
+| Przemiana | Kierunek zmiany energii | Temperatura czystej substancji |
+|---|---|---|
+| Topnienie | układ pobiera ciepło | stała |
+| Krzepnięcie | układ oddaje ciepło | stała |
+| Parowanie | układ pobiera ciepło | stała |
+| Skraplanie | układ oddaje ciepło | stała |
+
+Kalorymetr to naczynie izolowane cieplnie, w którym mierzy się ciepło przemiany. W idealnym kalorymetrze nie ma strat ciepła do otoczenia. W rzeczywistości zawsze występują pewne straty, dlatego wynik pomiaru jest przybliżeniem.
+
+::: karta understand | W skrócie — ciepło a temperatura
+Ciepło to przekazywana energia. Temperatura opisuje stan cząsteczek. Podczas ogrzewania bez przemiany temperatura rośnie, a podczas przemiany fazowej pozostaje stała.
 :::
 
-## 1 | Ściąga: wzory i wartości orientacyjne [[basic:E8]] {#sciaga}
+::: karta core | Najważniejsze — dwa wzory
+Bez przemiany fazowej: Q = m·c·ΔT. Podczas przemiany fazowej: Q = m·q. Nie można stosować Q = m·c·ΔT do topnienia, ponieważ wtedy ΔT = 0.
+:::
+
+::: karta warning | Uwaga — ciepło właściwe zależy od substancji i stanu
+Ciepło właściwe lodu różni się od ciepła właściwego wody. W zadaniach szkolnych często przyjmuje się c(lód) ≈ 2,1 J/(g·°C), a c(woda) ≈ 4,2 J/(g·°C). Nie zastępuj jednej wartości drugą bez danych w poleceniu.
+:::
+
+## 1a | Ściąga: wzory i wartości orientacyjne {#sciaga}
 
 | Wielkość | Wzór | Jednostka | Uwagi |
 |---|---|---|---|
@@ -91,62 +205,298 @@ Wartości orientacyjne dla wody (sprawdź w tablicach): c wody ciekłej ≈ 4,2 
 **Pochyłe = temperatura się zmienia (m·c·ΔT). Poziome = faza się zmienia, T stoi (m·q).**
 :::
 
-## 2 | Wykres ogrzewania [[understand:ROZUMIENIE]] {#wykres}
+## 2 | Wykres ogrzewania — odcinki pochyłe i poziome {#wykres} [[understand:ROZUMIENIE]]
 
-Dla lodu o temperaturze −10 °C ogrzewanego do pary o 120 °C wykres ma pięć odcinków w tej kolejności:
+Wykres ogrzewania przedstawia zmianę temperatury substancji w zależności od dostarczanego ciepła. Na osi poziomej znajduje się zwykle dostarczone ciepło, a na osi pionowej temperatura.
 
-1. ogrzewanie lodu od −10 °C do 0 °C (pochyły);
-2. topnienie lodu w 0 °C (poziomy);
-3. ogrzewanie wody od 0 °C do 100 °C (pochyły);
-4. parowanie wody w 100 °C (poziomy);
-5. ogrzewanie pary od 100 °C do 120 °C (pochyły).
+Dla lodu o temperaturze −10 °C ogrzewanego do pary o 120 °C wykres ma pięć odcinków:
 
-Na poziomych odcinkach dostarczasz ciepło, ale temperatura nie rośnie: energia zmienia stan skupienia.
+1. Ogrzewanie lodu od −10 °C do 0 °C — odcinek pochylony.
+2. Topnienie lodu w 0 °C — odcinek poziomy.
+3. Ogrzewanie wody od 0 °C do 100 °C — odcinek pochylony.
+4. Parowanie wody w 100 °C — odcinek poziomy.
+5. Ogrzewanie pary od 100 °C do 120 °C — odcinek pochylony.
 
-## 3 | Przykłady prowadzone [[extra:LO]] {#przyklady}
+Na odcinkach pochylonych dostarczane ciepło zwiększa temperaturę. Oblicza się je ze wzoru:
 
-::: odp | Przykład 1: ogrzewanie wody
-Ile ciepła potrzeba, by ogrzać 200 g wody z 20 °C do 50 °C? (c = 4,2 J/(g·°C))
-Q = 200 · 4,2 · 30 = 25 200 J = 25,2 kJ.
+Q = m·c·ΔT
+
+Na odcinkach poziomych temperatura nie zmienia się, ale ciepło jest dostarczane. Zużywa się ono na przemianę fazową:
+
+Q = m·q
+
+Na odcinku topnienia lodu:
+
+Q = m·qt
+
+Na odcinku parowania wody:
+
+Q = m·qp
+
+Długość poziomego odcinka pokazuje, ile ciepła potrzeba na przemianę. Dla tej samej masy wody odcinek parowania jest zwykle znacznie dłuższy niż odcinek topnienia, ponieważ parowanie wymaga dużo więcej energii.
+
+Wykres ma granice. Zakłada stałe ciśnienie, czystą substancję i równomierne dostarczanie ciepła. W rzeczywistym naczyniu mogą występować straty ciepła oraz przegrzewanie lokalne.
+
+::: karta understand | W skrócie — po co poziome odcinki?
+Poziomy odcinek oznacza przemianę fazową. Dostarczane ciepło zmienia stan skupienia, a nie temperaturę. Po zakończeniu przemiany temperatura zaczyna znów rosnąć.
 :::
 
-::: odp | Przykład 2: topnienie lodu
-Ile ciepła potrzeba, by stopić 50 g lodu w 0 °C? (q_t = 334 J/g)
-Q = 50 · 334 = 16 700 J = 16,7 kJ. Temperatura nie zmienia się.
+::: karta understand | W skrócie — dlaczego parowanie wymaga więcej energii?
+Podczas parowania trzeba nie tylko osłabić oddziaływania między cząsteczkami, lecz także umożliwić im oddzielenie się i przejście w fazę gazową. Dlatego dla tej samej masy wody ciepło parowania jest większe niż ciepło topnienia.
 :::
 
-::: odp | Przykład 3: bilans cieplny
-Do kalorymetru wlano 200 g wody o temperaturze 60 °C i wrzucono 50 g lodu o temperaturze 0 °C. Zakładamy brak strat ciepła i c = 4,2 J/(g·°C). Oblicz temperaturę końcową T.
-
-Woda oddaje ciepło: Q_oddane = 200 · 4,2 · (60 − T).
-Lód pobiera ciepło na stopienie: 50 · 334 = 16 700 J.
-Powstała woda ogrzewa się od 0 °C do T: Q_pobrane = 50 · 4,2 · T.
-
-Bilans: 200 · 4,2 · (60 − T) = 16 700 + 50 · 4,2 · T
-50 400 − 840T = 16 700 + 210T
-33 700 = 1050T, czyli T ≈ 32,1 °C.
+::: karta warning | Uwaga — poziomy odcinek nie oznacza braku ciepła
+Podczas topnienia i parowania ciepło jest dostarczane. Nie zwiększa ono temperatury, lecz umożliwia przemianę fazową.
 :::
 
-::: karta warning | Pułapka: pominięty odcinek fazowy
-Jeśli w bilansie zapomnisz o topnieniu lodu, wynik będzie zawyżony o wielokrotność około 16 kJ. Zawsze sprawdź, czy w procesie zmienia się stan skupienia.
+## 3 | Bilans cieplny w kalorymetrze {#bilans} [[extra:LO]]
+
+W kalorymetrze zakładamy, że układ jest izolowany cieplnie. Ciepło oddane przez ciało cieplejsze jest równe ciepłu pobranemu przez ciało zimniejsze:
+
+Q(oddane) = Q(pobrane)
+
+Jeżeli do wody o temperaturze wyższej wrzucimy lód o temperaturze 0 °C, zachodzą dwa procesy:
+
+1. Lód pobiera ciepło i topnieje.
+2. Powstała woda pobiera ciepło i ogrzewa się do temperatury końcowej.
+
+Jednocześnie ciepła woda oddaje ciepło i ochładza się do temperatury końcowej.
+
+Bilans zapisujemy jako:
+
+Q(woda oddane) = Q(topnienie lodu) + Q(ogrzewanie powstałej wody)
+
+Dla masy wody m₁, ciepła właściwego wody c, temperatury początkowej T₁ i temperatury końcowej T:
+
+Q(woda oddane) = m₁·c·(T₁ − T)
+
+Dla masy lodu m₂:
+
+Q(topnienie) = m₂·qt
+
+Q(ogrzewanie powstałej wody) = m₂·c·(T − 0)
+
+Cały bilans:
+
+m₁·c·(T₁ − T) = m₂·qt + m₂·c·T
+
+Przed rozwiązaniem równania sprawdź, czy lód stopił się całkowicie. Jeżeli woda odda mniej ciepła niż potrzebne na stopienie całego lodu, nie cały lód stopnieje, a temperatura końcowa pozostanie 0 °C.
+
+Przykład: do 100 g wody o temperaturze 30 °C wrzucono 10 g lodu o temperaturze 0 °C. Przyjmij brak strat ciepła i c = 4,2 J/(g·°C).
+
+Woda może oddać maksymalnie, gdy ochłodzi się do 0 °C:
+
+Q(max) = 100·4,2·30 = 12 600 J
+
+Lód potrzebuje na stopienie:
+
+Q(topnienie) = 10·334 = 3340 J
+
+Ponieważ 12 600 J > 3340 J, lód stopi się całkowicie.
+
+Bilans:
+
+100·4,2·(30 − T) = 10·334 + 10·4,2·T
+
+12 600 − 420T = 3340 + 42T
+
+12 600 − 3340 = 42T + 420T
+
+9260 = 462T
+
+T ≈ 20,04 °C
+
+Temperatura końcowa wynosi około 20 °C.
+
+::: karta understand | W skrócie — bilans krok po kroku
+Najpierw ustal, które ciało oddaje ciepło, a które pobiera. Potem sprawdź, czy zachodzi przemiana fazowa. Na końcu zapisz równanie: ciepło oddane = suma ciepła pobranego na przemianę i ogrzewanie.
 :::
 
-## 4 | Kalorymetr — po co izolacja {#kalorymetr}
+::: karta warning | Pułapka — pominięty odcinek przemiany fazowej
+Jeżeli w bilansie zapomnisz o cieple topnienia lodu, wynik temperatury końcowej będzie zawyżony. Zawsze sprawdź, czy w procesie zmienia się stan skupienia.
+:::
+
+::: karta exam | Zadanie 1 (4 pkt) — Bilans z lodem
+Do 100 g wody o temperaturze 30 °C wrzucono 10 g lodu o temperaturze 0 °C. Przyjmij brak strat ciepła, c(woda) = 4,2 J/(g·°C) i qt(lodu) = 334 J/g.
+
+a) Oblicz ciepło potrzebne do stopienia całego lodu. (1 pkt)
+
+b) Sprawdź, czy woda może dostarczyć wystarczającą ilość ciepła. (1 pkt)
+
+c) Zapisz bilans cieplny. (1 pkt)
+
+d) Oblicz temperaturę końcową. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (1 pkt) Q(topnienie) = 10·334 = 3340 J = 3,34 kJ.
+
+b) (1 pkt) Maksymalne ciepło oddane przez wodę przy ochłodzeniu do 0 °C: Q = 100·4,2·30 = 12 600 J. Ponieważ 12 600 J > 3340 J, lód stopi się całkowicie.
+
+c) (1 pkt) 100·4,2·(30 − T) = 10·334 + 10·4,2·T.
+
+d) (1 pkt) 12 600 − 420T = 3340 + 42T; 9260 = 462T; T ≈ 20,04 °C, czyli około 20 °C.
+:::
+:::
 
 ::: karta core | Dlaczego naczynie jest izolowane
 Kalorymetr ogranicza wymianę ciepła z otoczeniem. Dzięki temu ciepło oddane przez jedną część układu trafia do drugiej części, a bilans można zamknąć. W szkolnym kalorymetrze zakładamy brak strat, co jest przybliżeniem.
 :::
 
-## 5 | Klinika błędów {#klinika}
+## 4 | Przykłady prowadzone {#przyklady} [[extra:LO]]
 
-::: klinika | Błąd | Poprawnie | Dlaczego?
-Zmieszanie g z kg bez przeliczenia | Zamieniamy jednostki przed rachunkiem | Wynik zależy od jednostek
-Pominięcie topnienia w bilansie z lodem | Dodajemy m·q_t | Przemiana wymaga ciepła, mimo stałej T
-Używanie c wody dla lodu | c lodu ≈ 2,1 J/(g·°C) | Każda faza ma inne c
-Ciepło krzepnięcia dodatnie w bilansie oddanym | Krzepnięcie oddaje ciepło | Znak wynika z kierunku przemiany
+**Przykład 1 — ogrzewanie wody.**
+
+Ile ciepła potrzeba, aby ogrzać 200 g wody z 20 °C do 50 °C? Przyjmij c = 4,2 J/(g·°C).
+
+Q = 200·4,2·(50 − 20)
+
+Q = 200·4,2·30
+
+Q = 25 200 J
+
+Q = 25,2 kJ
+
+**Przykład 2 — topnienie lodu.**
+
+Ile ciepła potrzeba, aby stopić 50 g lodu w 0 °C? Przyjmij qt = 334 J/g.
+
+Q = 50·334
+
+Q = 16 700 J
+
+Q = 16,7 kJ
+
+Temperatura nie zmienia się.
+
+**Przykład 3 — odcinek poziomy na wykresie.**
+
+Na wykresie ogrzewania wody od 0 °C do 100 °C, a następnie parowania, odcinek poziomy pojawia się w 100 °C. Dlaczego?
+
+W 100 °C woda wrze i zmienia stan skupienia. Dostarczone ciepło zużywa się na parowanie:
+
+Q = m·qp
+
+Temperatura nie rośnie, dopóki trwa parowanie.
+
+**Przykład 4 — bilans z lodem.**
+
+Do 100 g wody o temperaturze 30 °C wrzucono 10 g lodu o temperaturze 0 °C. Zakładamy brak strat ciepła i c = 4,2 J/(g·°C).
+
+Woda oddaje ciepło:
+
+Q(oddane) = 100·4,2·(30 − T)
+
+Lód pobiera ciepło na stopienie:
+
+Q(topnienie) = 10·334 = 3340 J
+
+Powstała woda ogrzewa się od 0 °C do T:
+
+Q(ogrzewanie) = 10·4,2·T
+
+Bilans:
+
+100·4,2·(30 − T) = 3340 + 10·4,2·T
+
+12 600 − 420T = 3340 + 42T
+
+9260 = 462T
+
+T ≈ 20,04 °C
+
+Lód stopił się całkowicie, ponieważ woda mogła oddać 12 600 J, a do stopienia potrzebowało 3340 J.
+
+::: karta basic | Po tej lekcji potrafisz
+- obliczyć ciepło ogrzewania Q = m·c·ΔT;
+- obliczyć ciepło przemiany fazowej Q = m·q;
+- odczytać z wykresu ogrzewania odcinki z przemianami i bez;
+- ułożyć bilans cieplny w kalorymetrze.
 :::
 
-## 6 | Ćwiczenia {#cwiczenia}
+::: karta exam | Zadanie 2 (4 pkt) — Wykres ogrzewania | poziom ambitny
+Lód o temperaturze −10 °C ogrzewa się do pary o temperaturze 120 °C.
+
+a) Wymień kolejne pięć odcinków wykresu. (2 pkt)
+
+b) Wskaż, na których odcinkach temperatura rośnie. (1 pkt)
+
+c) Wyjaśnij, dlaczego na odcinkach poziomych temperatura nie rośnie. (1 pkt)
+
+::: odp | Pokaż klucz
+a) (2 pkt) 1) Ogrzewanie lodu od −10 °C do 0 °C. 2) Topnienie lodu w 0 °C. 3) Ogrzewanie wody od 0 °C do 100 °C. 4) Parowanie wody w 100 °C. 5) Ogrzewanie pary od 100 °C do 120 °C.
+
+b) (1 pkt) Temperatura rośnie na odcinkach 1, 3 i 5.
+
+c) (1 pkt) Na odcinkach 2 i 4 dostarczane ciepło zużywa się na przemianę fazową, a nie na wzrost temperatury.
+:::
+:::
+
+## 5 | Klinika błędów {#klinika} [[understand:ROZUMIENIE]] [[extra:LO]]
+
+::: klinika | Błąd | Poprawnie | Dlaczego?
+| „Mieszam gramy z kilogramami bez przeliczenia.” | Przelicz jednostki przed obliczeniem. | Wynik zależy od jednostek; 1 kg = 1000 g, a 1 kJ = 1000 J. |
+| „Pominę topnienie lodu w bilansie.” | Dodaj Q = m·qt. | Przemiana fazowa wymaga ciepła, mimo że temperatura pozostaje stała. |
+| „Użyję c wody dla lodu.” | Dla lodu stosuj c podane w zadaniu, często około 2,1 J/(g·°C). | Każda faza ma inne ciepło właściwe. |
+| „Ciepło krzepnięcia jest dodatnie w bilansie oddawanym.” | Podczas krzepnięcia układ oddaje ciepło. | Znak wynika z kierunku przemiany: krzepnięcie oddaje energię. |
+| „Podczas topnienia temperatura rośnie.” | Podczas topnienia czystej substancji temperatura pozostaje stała. | Dostarczane ciepło zużywa się na przemianę fazową. |
+| „Q = m·c·ΔT stosuję także do parowania.” | Dla parowania stosuj Q = m·qp. | Podczas parowania ΔT = 0, więc wzór na ogrzewanie nie opisuje tej przemiany. |
+| „Kalorymetr nie traci żadnego ciepła.” | W zadaniach często zakłada się brak strat, ale rzeczywisty kalorymetr ma ograniczoną izolację. | Założenie izolacji jest modelem, nie opisem rzeczywistego urządzenia. |
+| „Im większa masa, tym mniejsze Q.” | Przy tym samym ΔT większa masa wymaga większego Q. | Q = m·c·ΔT, więc Q rośnie liniowo z masą. |
+| „Wykres poziomy oznacza brak dostarczania ciepła.” | Wykres poziomy oznacza przemianę fazową przy stałej temperaturze. | Ciepło jest dostarczane, ale zużywane na zmianę stanu skupienia. |
+| „Bilans cieplny zapisuję bez sprawdzenia, czy lód stopniał.” | Najpierw sprawdź, czy dostępne ciepło wystarcza na stopienie całego lodu. | Jeżeli lód nie stopniał całkowicie, temperatura końcowa wynosi 0 °C. |
+:::
+
+::: mity
+„Ciepło i temperatura to to samo.” || Ciepło to przekazywana energia, a temperatura opisuje średnią energię ruchu cząsteczek.
+
+„Podczas topnienia cząsteczki poruszają się szybciej.” || Podczas topnienia dostarczane ciepło zmienia układ cząsteczek, a temperatura czystej substancji pozostaje stała.
+
+„Parowanie wymaga mniej energii niż topnienie.” || Dla tej samej masy wody parowanie wymaga znacznie więcej energii niż topnienie.
+
+„Lód zawsze obniża temperaturę wody do 0 °C.” || Jeżeli wody jest dużo i jest ciepła, lód może stopnieć całkowicie, a temperatura końcowa będzie wyższa od 0 °C. Wynik zależy od mas, temperatur i ciepła przemiany.
+
+„Kalorymetr eliminuje wszystkie straty ciepła.” || Kalorymetr ogranicza straty, ale nie eliminuje ich całkowicie.
+
+„Podczas krzepnięcia woda pobiera ciepło.” || Podczas krzepnięcia woda oddaje ciepło do otoczenia.
+:::
+
+## 6 | Ćwiczenia z kluczem {#cwiczenia} [[extra:LO]]
+
+**Ćwiczenie 1.** Ile ciepła potrzeba, aby ogrzać 500 g wody o 8 °C? Przyjmij c = 4,2 J/(g·°C).
+
+::: odp | Klucz
+Q = 500·4,2·8 = 16 800 J = 16,8 kJ.
+:::
+
+**Ćwiczenie 2.** Ile ciepła trzeba, aby stopić 20 g lodu? Przyjmij qt = 334 J/g.
+
+::: odp | Klucz
+Q = 20·334 = 6680 J = 6,68 kJ.
+:::
+
+**Ćwiczenie 3.** Na wykresie ogrzewania wody od 0 °C do 100 °C i następnie parowania odcinek poziomy pojawia się w 100 °C. Dlaczego?
+
+::: odp | Klucz
+W 100 °C woda wrze i zmienia stan skupienia. Dostarczone ciepło zużywa się na parowanie: Q = m·qp, więc temperatura nie rośnie.
+:::
+
+**Ćwiczenie 4.** Do 100 g wody o temperaturze 30 °C wrzucono 10 g lodu o temperaturze 0 °C. Oblicz temperaturę końcową, zakładając brak strat i c = 4,2 J/(g·°C).
+
+::: odp | Klucz
+Sprawdzenie: woda może oddać 12 600 J, a lód potrzebuje 3340 J na stopienie, więc stopnieje całkowicie.
+
+Bilans: 100·4,2·(30 − T) = 10·334 + 10·4,2·T.
+
+12 600 − 420T = 3340 + 42T.
+
+9260 = 462T.
+
+T ≈ 20,04 °C, czyli około 20 °C.
+:::
+
+**Ćwiczenie 5 — mini-test samodzielny.** Odpowiedz bez zaglądania do lekcji: 1) Zapisz wzór na ciepło ogrzewania. 2) Co to jest ciepło właściwe? 3) Co dzieje się z temperaturą podczas topnienia? 4) Zapisz wzór na ciepło topnienia. 5) Ile ciepła potrzeba, aby ogrzać 100 g wody o 10 °C? Potem sprawdź odpowiedzi w diagnozie.
+
+## 6a | Ćwiczenia — dodatkowe (wykres i bilans)
 
 ::: karta basic | A. Podstawa — ogrzewanie
 Ile ciepła potrzeba, by ogrzać 500 g wody o 8 °C? (c = 4,2 J/(g·°C))
@@ -182,7 +532,25 @@ Lód stopił się w całości (woda oddaje 12 600 − 420·20 = 4200 J; wystarcz
 :::
 :::
 
-## 7 | Fiszki {#fiszki}
+## 7 | Ciekawostki {#ciekawostki} [[extra:AMBITNE]]
+
+::: karta extra | Dlaczego kamień w czajniku się odkłada?
+Woda twarda zawiera jony wapnia i węglanowe. Podczas ogrzewania CO₂ może ulatniać się z roztworu, a węglan wapnia przekracza warunek rozpuszczalności i osadza się jako kamień. To warunek strącania w praktyce.
+:::
+
+::: karta extra | Mikroskopijne rozpuszczanie zębów
+Szkliwo zębów zawiera związki fosforanowe o małej rozpuszczalności. Kwaśne napoje mogą zwiększać rozpuszczanie, ponieważ jony H₃O⁺ wiążą aniony fosforanowe i przesuwają równowagę rozpuszczania.
+:::
+
+::: karta extra | Dlaczego wodę używa się w chłodnicach?
+Woda ma stosunkowo duże ciepło właściwe. Może więc pobrać dużo energii, zanim wyraźnie wzrośnie jej temperatura. Dlatego bywa wykorzystywana do odprowadzania ciepła w układach chłodniczych.
+:::
+
+::: karta extra | Parowanie chłodzi
+Podczas parowania cząsteczki o największej energii opuszczają ciecz. Średnia energia pozostałych cząsteczek maleje, więc ciecz się ochładza. Dlatego pot na skórze pomaga obniżać temperaturę ciała.
+:::
+
+## 7a | Fiszki {#fiszki}
 
 ::: fiszki
 Wzór na ciepło ogrzewania? | Q = m·c·ΔT | basic:podstawa
@@ -193,17 +561,66 @@ Czy podczas topnienia zmienia się T? | nie | understand:rozumienie
 Jakie c ma woda ciekła? | ok. 4,2 J/(g·°C) | extra:LO
 :::
 
-## 8 | Słownik {#slownik}
+## 8 | Słownik {#slownik} [[understand:ROZUMIENIE]]
 
 ::: slownik
-Ciepło właściwe c :: ciepło potrzebne do ogrzania 1 g substancji o 1 °C
-Ciepło topnienia q_t :: ciepło potrzebne do stopienia 1 g ciała stałego w temperaturze topnienia
-Ciepło parowania q_p :: ciepło potrzebne do odparowania 1 g cieczy w temperaturze wrzenia
-Kalorymetr :: naczynie izolowane cieplnie, w którym mierzy się ciepło przemiany
-Bilans cieplny :: równanie, w którym suma ciepła wymienionego w układzie izolowanym wynosi zero
+Ciepło Q :: energia przekazywana między ciałami wskutek różnicy temperatur.
+Ciepło właściwe c :: ciepło potrzebne do ogrzania 1 g substancji o 1 °C.
+Ciepło topnienia qt :: ciepło potrzebne do stopienia 1 g ciała stałego w temperaturze topnienia.
+Ciepło parowania qp :: ciepło potrzebne do odparowania 1 g cieczy w temperaturze wrzenia.
+Przemiana fazowa :: zmiana stanu skupienia substancji.
+Topnienie :: przejście ciała stałego w ciecz.
+Krzepnięcie :: przejście cieczy w ciało stałe.
+Parowanie :: przejście cieczy w gaz.
+Skraplanie :: przejście gazu w ciecz.
+Kalorymetr :: naczynie izolowane cieplnie, w którym mierzy się ciepło przemiany.
+Bilans cieplny :: równanie, w którym ciepło oddane przez jedno ciało równa się ciepłu pobranemu przez drugie.
+Układ izolowany :: układ, w którym zakłada się brak wymiany ciepła z otoczeniem.
+Wykres ogrzewania :: wykres zależności temperatury od dostarczonego ciepła.
+Odcinek poziomy :: fragment wykresu odpowiadający przemianie fazowej.
+Różnica temperatur ΔT :: różnica między temperaturą końcową a początkową.
 :::
 
-## 9 | Test {#test}
+## 9 | Test {#test} [[extra:LO]]
+
+::: test
+? Jaki wzór opisuje ciepło ogrzewania bez przemiany fazowej?
++ Q = m·c·ΔT
+- Q = m·q
+- Q = m/c
+- Q = c·ΔT
+! Ciepło ogrzewania zależy od masy, ciepła właściwego i zmiany temperatury.
+
+? Co dzieje się z temperaturą podczas topnienia czystej substancji pod stałym ciśnieniem?
++ pozostaje stała
+- rośnie
+- maleje
+- najpierw rośnie, potem maleje
+! Dostarczane ciepło zużywa się na przemianę fazową.
+
+? Ile ciepła potrzeba, aby stopić 50 g lodu, jeżeli qt = 334 J/g?
++ 16 700 J
+- 1670 J
+- 334 J
+- 16 700 kJ
+! Q = m·qt = 50·334 = 16 700 J.
+
+? Na wykresie ogrzewania odcinek poziomy oznacza:
++ przemianę fazową
+- wzrost temperatury
+- brak dostarczania ciepła
+- koniec ogrzewania
+! Podczas przemiany fazowej temperatura pozostaje stała, mimo dostarczania ciepła.
+
+? W bilansie cieplnym z lodem należy uwzględnić:
++ ciepło topnienia lodu oraz ogrzewanie powstałej wody
+- tylko ogrzewanie wody
+- tylko topnienie lodu
+- wyłącznie ciepło właściwe lodu
+! Lód najpierw stopnieje, a następnie powstała woda może się ogrzać do temperatury końcowej.
+:::
+
+## 9a | Test uzupełniający {#test-uzupelniajacy}
 
 ::: test
 ? Ciepło potrzebne do ogrzania 2 kg wody o 5 °C (c = 4,2 J/(g·°C)) wynosi:
@@ -242,38 +659,71 @@ Bilans cieplny :: równanie, w którym suma ciepła wymienionego w układzie izo
 ! Pochyły = m·c·ΔT.
 :::
 
-## 10 | Ciekawostki {#ciekawostki}
-
-::: karta extra | Dlaczego ciepło parowania jest tak duże?
-Woda ma bardzo dużą ciepło parowania (ok. 2260 J/g). Dzięki temu pot na skórze skutecznie chłodzi ciało: odparowując, pobiera ogromne ilości ciepła z organizmu.
-:::
-
-::: karta extra | Ciepło topnienia w zimnych napojach
-Lód w napoju nie tylko schładza go przez wyższą temperaturę, ale przede wszystkim przez ciepło topnienia. Każdy gram stopionego lodu pobiera ok. 334 J, więc nawet kilka kostek znacznie obniża temperaturę.
-:::
-
-## 11 | Wykład — dlaczego temperatura „stoi” {#wyklad}
-
-::: karta understand | Wykład — od zera: energia bez zmiany temperatury
-Gdy ogrzewasz garnek z wodą, temperatura rośnie, bo cząsteczki poruszają się coraz szybciej. Gdy woda zaczyna wrzeć, dostarczone ciepło nie zwiększa już średniej energii kinetycznej, tylko rozrywa oddziaływania między cząsteczkami. Dlatego temperatura się nie zmienia, dopóki cała woda nie odparuje.
-
-Z tego wynika bilans cieplny. Chcesz wiedzieć, jaka będzie temperatura po zmieszaniu. Zapisujesz, ile ciepła oddaje ciepła część i ile pobiera zimna część. Jeśli w grę wchodzi lód, dodajesz ciepło topnienia, bo ta energia nie zmienia T, ale jest potrzebna.
-
-**Mini-wykład: dlaczego lód chłodzi bardziej niż sama zimna woda.** Lód ma niską temperaturę, ale jego głównym „zadaniem” w napoju jest ciepło topnienia. Dzięki temu pobiera więcej ciepła, niż wynikałoby z samego ogrzania.
-
-**Mini-wykład: kalorymetr jako uczciwy świadek.** Izolacja i przybliżenie braku strat pozwalają zamknąć bilans. W prawdziwym laboratorium zawsze są małe straty, dlatego wynik jest przybliżony.
-:::
-
-::: karta core | W skrócie — kalorymetria w jednym zdaniu
-Ciepło idzie albo na zmianę temperatury (m·c·ΔT), albo na zmianę stanu skupienia (m·q), a w bilansie ciepło oddane równa się pobranemu.
-:::
-
-## 12 | Checklista — umiem… {#checklista}
+## 10 | Checklista {#checklista} [[understand:ROZUMIENIE]] [[extra:LO]]
 
 ::: checklista
-- [ ] obliczyć Q = m·c·ΔT z zachowaniem jednostek;
-- [ ] obliczyć Q = m·q dla topnienia lub parowania;
-- [ ] odczytać z wykresu ogrzewania odcinki pochyłe i poziome;
-- [ ] ułożyć bilans cieplny z przemianą fazową;
-- [ ] wyjaśnić, dlaczego temperatura w przemianie fazowej nie rośnie.
+- [ ] umiem obliczyć Q = m·c·ΔT z zachowaniem jednostek
+- [ ] umiem obliczyć Q = m·q dla topnienia lub parowania
+- [ ] umiem odczytać z wykresu odcinki pochyłe i poziome
+- [ ] umiem ułożyć bilans cieplny z przemianami fazowymi
+- [ ] umiem wyjaśnić, dlaczego temperatura w przemianie fazowej nie rośnie
+- [ ] umiem sprawdzić, czy lód stopnieje całkowicie
+- [ ] umiem rozróżnić ciepło właściwe lodu i wody
+- [ ] umiem wyjaśnić działanie kalorymetru
 :::
+
+### AUDYT — Perplexity, 2026-10-13 {#audyt-ulepsz}
+
+**Poprawione:**
+- Frontmatter: dodano uid, uzupełniono kicker, opis, plakietki i stopkę; zmieniono stan na „ULEPSZONA — Perplexity, 2026-10-13; do sprawdzenia”.
+- Minimum: „ciepło topnienia i parowania” → dodano warunek stałej temperatury przemiany.
+- Minimum: „bilans cieplny: suma Q = 0” → zapisano jako równość ciepła oddanego i pobranego w układzie izolowanym.
+- Minimum: „ciepło krzepnięcia dodatnie w bilansie oddanym” → doprecyzowano kierunek przemiany i znak w bilansie.
+- Wykład: „ciepło to temperatura” → rozdzielono pojęcia ciepła i temperatury.
+- Wykład: „podczas topnienia cząsteczki poruszają się szybciej” → wyjaśniono, że ciepło zużywa się na przemianę fazową.
+- Wykres: dodano warunki stałego ciśnienia, czystej substancji i równomiernego ogrzewania.
+- Bilans: poprawiono błąd rachunkowy w propozycji. Zapis „100·4,2·(30 − T) = 4200 − 420T” był błędny; 100·4,2·30 = 12 600, więc poprawnie: 12 600 − 420T = 3340 + 42T, 9260 = 462T, T ≈ 20,04 °C. Wynik „1,86 °C” z propozycji odrzucono; wartość 20 °C zgadza się z obliczeniem w ćwiczeniu 4.
+- Test: poprawiono pytanie o bilans z lodem oraz dodano poprawne wyjaśnienie.
+- Wszystkie wzory zapisano w Unicode, bez LaTeX-a.
+
+**Dodane:**
+- §0.1–§0.4: cel, kompas, diagnoza z kluczem i interpretacją wyniku.
+- §1: pełny wykład o cieple, temperaturze, dwóch wzorach i kalorymetrze.
+- §2: wykres ogrzewania z pięcioma odcinkami oraz wyjaśnienie długości odcinków poziomych.
+- §3: bilans cieplny krok po kroku, sprawdzenie całkowitego stopnienia lodu i poprawiony przykład liczbowy.
+- §4: cztery przykłady prowadzone.
+- §5: klinika 10 błędów i 6 mitów.
+- §6: ćwiczenia z kluczem i mini-test samodzielny.
+- §7: cztery ciekawostki.
+- §8: słownik 15 haseł.
+- §9: test 6 pytań.
+- §10: checklista.
+
+**Niepewne / do weryfikacji:**
+- Zakres konkretnego konkursu chemicznego nie został określony w paczce, dlatego wymagania konkursowe opisano ogólnie.
+- Wartości c(woda) = 4,2 J/(g·°C), c(lód) = 2,1 J/(g·°C) i qt(lodu) = 334 J/g są przybliżeniami szkolnymi; w zadaniach należy stosować dane podane w poleceniu.
+- W rzeczywistym kalorymetrze występują straty ciepła oraz ciepło właściwe naczynia; w podstawowych zadaniach zakłada się ich pomijalność.
+
+**Proponuję usunąć:**
+- Brak.
+
+**Źródła:**
+- Dostarczona paczka: lekcja K03. 
+- Zintegrowana Platforma Edukacyjna — materiały o cieple, przemianach fazowych i bilansie cieplnym.
+
+**Grafiki do zrobienia:**
+
+| Gdzie | Rodzaj | Co pokazuje | Wniosek | @opis |
+|---|---|---|---|---|
+| §1, po dwóch wzorach | schemat statyczny | dwie drogi przekazywania ciepła: ogrzewanie oraz przemiana fazowa | Inne procesy wymagają różnych wzorów | Po lewej stronie znajduje się naczynie z rosnącą temperaturą i wzór Q = m·c·ΔT. Po prawej znajduje się lód topniejący w stałej temperaturze i wzór Q = m·q. |
+| §2, po wykresie ogrzewania | wykres liniowy | pięć odcinków ogrzewania lodu do pary | Poziome odcinki oznaczają przemiany fazowe | Oś pozioma przedstawia dostarczone ciepło, oś pionowa temperaturę. Wykres zawiera trzy odcinki pochyłe i dwa poziome: topnienie w 0 °C oraz parowanie w 100 °C. |
+| §3, przy bilansie z lodem | animacja „do przodu i od początku” | woda oddaje ciepło, lód topnieje, powstała woda ogrzewa się | Bilans musi uwzględniać wszystkie etapy | Animacja pokazuje strzałkę ciepła z ciepłej wody do lodu, stopnienie lodu oraz ogrzewanie powstałej wody do temperatury końcowej. |
+| §4, przy przykładzie bilansu | model interaktywny z suwakiem | zmiana masy lodu i temperatury końcowej | Więcej lodu może obniżyć temperaturę końcową | Suwak zmienia masę lodu. Wyświetlana jest informacja, czy lód stopniał całkowicie, oraz temperatura końcowa. Przy zbyt dużej masie lodu temperatura końcowa pozostaje 0 °C. |
+
+**Przywrócono z poprzedniej wersji (nie zgubiono treści):**
+- Ściąga wzorów (§1a), karta „Dlaczego naczynie jest izolowane” (§4), ćwiczenia (§6a), fiszki (6, §7a), test uzupełniający (5 pytań, §9a).
+
+**Nieprzyjęte / do decyzji autora:**
+- Pytanie testowe „Co robi efekt wspólnego jonu…” nie dotyczy K03; przeniesiono je do testu J10.
+- Poprawiono format mitu „Lód zawsze obniża temperaturę…” (pytanie || odpowiedź).
+- Stary wykład „Dlaczego temperatura stoi” (§11) zastąpiony wykładem §1; treść dotycząca stałej temperatury przemiany jest w nowym wykładzie.

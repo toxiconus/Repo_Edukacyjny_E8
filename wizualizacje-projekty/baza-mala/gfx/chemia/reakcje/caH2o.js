@@ -1,0 +1,1 @@
+P('caH2o',{n:'Ca + H₂O (+ fenoloftaleina)',solid:{col:'metal-ca',eq:4,end:.2,t:'metal',shape:'granule'},l0:php,l1:pink,out:['gaz','barwa'],gas:'H2',bubN:1.2,turb:.35,heat:.8,T:35,why:'Wapń tonie i wydziela wodór; roztwór mętnieje (słabo rozpuszczalny Ca(OH)₂) i malinowieje.'});

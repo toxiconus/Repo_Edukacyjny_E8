@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="pl" data-przedmiot="oli">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>LKO-ORG08 · &quot;Mol, objętość molowa i wzory elementarne — rachunkowa puenta serii&quot;</title>
+<style id="lekcja-css">
+/* baza.css — wspólna baza lekcji wszystkich przedmiotów (styl lekcji silnika CHE v0_57). Nie edytować — zmiany wspólne w ulepszenia.css, przedmiotowe w motywy/<kod>.css. */
+
+
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+--bg:#fafbfc;--surface:#ffffff;--surface-soft:#f6f8fa;--surface-warm:#fdfaf4;--border:#e5e9ee;--border-strong:#cdd5dd;
+--text:#1a2332;--text-soft:#4a5568;--text-muted:#8892a0;--text-faint:#b4bcc6;
+--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,0.15);
+--c-basic:#2e7d4f;--c-basic-bg:#eaf6ee;--c-basic-line:#b8dcc4;
+--c-understand:#2b5e9c;--c-understand-bg:#eaf1f9;--c-understand-line:#bcd0e5;
+--c-warn:#b06f1c;--c-warn-bg:#fcf4e6;--c-warn-line:#eed8a8;
+--c-error:#b83a45;--c-error-bg:#fbeced;--c-error-line:#e8b5b9;
+--c-extra:#6b3fa0;--c-extra-bg:#f3ecfa;--c-extra-line:#d3bde8;
+--c-new:#0d7d7d;--c-new-bg:#e6f4f4;--c-new-line:#b0dcdc;
+--c-exam:#a86a00;--c-exam-bg:#fdf5e0;--c-exam-line:#eed49c;
+--sh-sm:0 1px 2px rgba(26,35,50,0.04);--sh-md:0 4px 12px rgba(26,35,50,0.06);--sh-lg:0 12px 32px rgba(26,35,50,0.10);--sh-xl:0 20px 48px rgba(26,35,50,0.14);
+--r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;
+--header-h:56px;
+--ease:cubic-bezier(0.4,0,0.2,1);--ease-out:cubic-bezier(0.16,1,0.3,1);
+--hl-key:#0d6868;--hl-key-bg:#d8ecea;--hl-warn:#b83a45;--hl-warn-bg:#fbe0e2;--hl-new:#6b3fa0;--hl-new-bg:#ede0f8;--hl-formula:#084848;--hl-formula-bg:#e0eeed;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;padding:calc(var(--header-h) + 12px) 0 88px;min-height:100vh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+@media(min-width:600px){body{padding:calc(var(--header-h) + 18px) 12px 96px;}}
+@media(min-width:768px){body{padding:calc(var(--header-h) + 24px) 20px 100px;}}
+@media(min-width:1100px){body{padding:calc(var(--header-h) + 28px) 32px 110px;}}
+.fab{position:fixed;top:12px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);background:rgba(255,255,255,0.94);color:var(--text);cursor:pointer;border-radius:var(--r-md);padding:0;transition:all 0.2s var(--ease);z-index:1200;box-shadow:var(--sh-sm);backdrop-filter:blur(8px);}
+.fab:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);box-shadow:var(--sh-md);transform:translateY(-1px);}
+.fab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.fab-left{left:6px;}.fab-right{right:6px;}
+@media(min-width:600px){.fab-left{left:10px;}.fab-right{right:10px;}}
+@media(min-width:768px){.fab-left{left:14px;}.fab-right{right:14px;}}
+.fab-left::after{content:'';width:16px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;border-radius:1px;transition:transform 0.25s var(--ease);}
+.fab-left.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.fab-left.is-open::after{width:16px;height:2px;background:currentColor;box-shadow:none;transform:rotate(45deg);}
+.fab-left.is-open::before{content:'';position:absolute;width:16px;height:2px;background:currentColor;transform:rotate(-45deg);border-radius:1px;}
+.fab-right::after{content:'';display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:8px solid currentColor;transition:transform 0.35s var(--ease-out);}
+.fab-right.is-hidden::after{transform:rotate(0deg);}
+.fab-right:not(.is-hidden)::after{transform:rotate(180deg);}
+.header-wrapper{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);transform:translateY(0);transition:transform 0.45s var(--ease-out),box-shadow 0.3s var(--ease);box-shadow:var(--sh-sm);}
+.header-wrapper.is-hidden{transform:translateY(-100%);box-shadow:none;}
+.header-bar{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:0 16px;height:var(--header-h);}
+@media(min-width:768px){.header-bar{padding:0 24px;}}
+.header-subject{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:1px;padding:4px 10px;background:var(--accent-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;}
+.header-title{font-size:15px;font-weight:700;color:var(--text);letter-spacing:-0.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1 1 auto;min-width:0;}
+.header-lesson{font-size:10px;font-weight:800;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.7px;padding:4px 9px;background:var(--surface-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;font-family:'JetBrains Mono',monospace;}
+.header-nav{display:flex;gap:2px;flex-shrink:0;align-items:center;}
+.header-nav a,.header-nav button{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;border-radius:var(--r-sm);font-size:16px;font-weight:500;transition:all 0.2s var(--ease);border:1px solid transparent;background:transparent;cursor:pointer;padding:0;font-family:inherit;}
+.header-nav a:hover,.header-nav button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.header-resume-btn.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.header-resume-btn::before{content:'▮';font-size:14px;line-height:1;}
+.header-panel{display:none;border-top:1px solid var(--border);background:linear-gradient(180deg,var(--surface) 0%,var(--surface-soft) 100%);padding:20px 16px 24px;}
+@media(min-width:768px){.header-panel{padding:24px 24px 28px;}}
+.header-panel.is-open{display:block;}
+.header-panel-inner{max-width:900px;margin:0 auto;}
+.header-kicker{font-size:11px;color:var(--text-muted);text-transform:uppercase;font-weight:800;letter-spacing:1px;margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.header-kicker::before{content:'';width:24px;height:2px;background:var(--accent);display:inline-block;border-radius:1px;}
+.header-h1{font-size:32px;font-weight:800;color:var(--text);letter-spacing:-1px;margin-bottom:10px;line-height:1.1;}
+.header-subtitle{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:18px;max-width:720px;}
+.header-modes{display:flex;gap:6px;flex-wrap:wrap;}
+.mode-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 15px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);font-family:inherit;}
+.mode-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
+.mode-btn:hover:not(.active){background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.resume-dropdown{display:none;position:fixed;top:calc(var(--header-h) + 6px);right:14px;z-index:1050;width:min(300px,calc(100vw - 30px));padding:14px;border:1px solid var(--border-strong);border-radius:12px;background:#fff;box-shadow:var(--sh-lg);}
+.resume-dropdown.is-open{display:block;}
+.resume-dropdown h4{margin:0 0 5px;color:var(--text);font-size:.85rem;}
+.resume-dropdown p{margin:0 0 12px;color:var(--text-muted);font-size:.75rem;line-height:1.5;}
+.resume-actions{display:flex;gap:6px;}
+.resume-actions button{flex:1;padding:8px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text-soft);font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.resume-actions .resume-save{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toc-overlay{position:fixed;inset:0;background:rgba(26,35,50,0.34);backdrop-filter:blur(3px);z-index:1100;opacity:0;visibility:hidden;transition:opacity 0.3s var(--ease),visibility 0.3s var(--ease);}
+.toc-overlay.is-visible{opacity:1;visibility:visible;}
+.toc-wrapper{position:fixed;left:0;top:0;width:320px;max-width:86vw;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:1150;transform:translateX(-100%);transition:transform 0.4s var(--ease-out);padding-top:64px;box-shadow:var(--sh-xl);}
+.toc-wrapper.is-open{transform:translateX(0);}
+.toc-content{padding:12px 14px 100px;}
+.toc-header{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);padding:4px 12px 12px;}
+.toc-item{margin-bottom:4px;border-radius:var(--r-md);overflow:hidden;}
+.toc-summary{padding:10px 12px;font-size:13px;font-weight:700;color:var(--text);cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;border-radius:var(--r-sm);transition:background 0.2s var(--ease),color 0.2s var(--ease);user-select:none;}
+.toc-summary:hover{background:var(--accent-soft);color:var(--accent);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::marker{content:'';}
+.toc-summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);opacity:0.5;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);opacity:1;}
+.toc-links{padding:4px 0 8px 28px;display:flex;flex-direction:column;gap:1px;}
+.toc-link{display:block;padding:6px 10px;font-size:12.5px;color:var(--text-soft);text-decoration:none;border-radius:4px;transition:all 0.2s var(--ease);border-left:2px solid transparent;}
+.toc-link:hover{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);}
+.container{max-width:820px;margin:0 auto;background:var(--surface);border-radius:0;box-shadow:none;padding:18px 12px;border:none;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+@media(min-width:600px){.container{border-radius:var(--r-lg);box-shadow:var(--sh-md);border:1px solid var(--border);padding:22px 18px;}}
+@media(min-width:768px){.container{padding:36px 36px;border-radius:var(--r-xl);}}
+@media(min-width:1100px){.container{max-width:840px;padding:40px 40px;}}
+h1,h2,h3,h4,h5{font-weight:800;color:var(--text);letter-spacing:-0.3px;line-height:1.3;}
+h2{font-size:24px;margin-top:44px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+h3{font-size:17px;margin-top:32px;margin-bottom:12px;font-weight:800;}
+h4{font-size:15px;margin-top:24px;margin-bottom:10px;font-weight:800;}
+h5{font-size:13px;margin-top:16px;margin-bottom:8px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-soft);}
+p{margin-bottom:12px;}
+ul,ol{padding-left:24px;margin-bottom:14px;}
+li{margin-bottom:6px;padding-left:4px;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s var(--ease);}
+a:hover{border-bottom-color:var(--accent);}
+strong{font-weight:700;color:var(--text);}
+.hl{background:var(--hl-key-bg);color:var(--hl-key);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-warn{background:var(--hl-warn-bg);color:var(--hl-warn);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-new{background:var(--hl-new-bg);color:var(--hl-new);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.formula{display:inline-block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:14px;font-weight:600;color:var(--hl-formula);background:var(--hl-formula-bg);padding:4px 12px;border-radius:var(--r-sm);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:3px 2px;white-space:nowrap;}
+.formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
+code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
+pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
+.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
+.mnemonic b{color:#78350f;}
+.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
+@media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
+.card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
+.card-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:10px;padding:3px 9px;background:var(--accent-soft);border-radius:4px;}
+.card-core{background:var(--accent-soft);border-color:var(--accent-line);border-left-color:var(--accent);}
+.card-basic{background:var(--c-basic-bg);border-color:var(--c-basic-line);border-left-color:var(--c-basic);}
+.card-basic .card-label{background:rgba(46,125,79,0.12);color:var(--c-basic);}
+.card-understand{background:var(--c-understand-bg);border-color:var(--c-understand-line);border-left-color:var(--c-understand);}
+.card-understand .card-label{background:rgba(43,94,156,0.12);color:var(--c-understand);}
+.card-warning{background:var(--c-warn-bg);border-color:var(--c-warn-line);border-left-color:var(--c-warn);}
+.card-warning .card-label{background:rgba(176,111,28,0.12);color:var(--c-warn);}
+.card-error{background:var(--c-error-bg);border-color:var(--c-error-line);border-left-color:var(--c-error);}
+.card-error .card-label{background:rgba(184,58,69,0.12);color:var(--c-error);}
+.card-extra{background:var(--c-extra-bg);border-color:var(--c-extra-line);border-left-color:var(--c-extra);}
+.card-extra .card-label{background:rgba(107,63,160,0.12);color:var(--c-extra);}
+.card-new{background:var(--c-new-bg);border-color:var(--c-new-line);border-left-color:var(--c-new);}
+.card-new .card-label{background:rgba(13,125,125,0.12);color:var(--c-new);}
+.card-exam{background:var(--c-exam-bg);border-color:var(--c-exam-line);border-left-color:var(--c-exam);}
+.card-exam .card-label{background:rgba(168,106,0,0.12);color:var(--c-exam);}
+.card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0;}
+details.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent-line);border-radius:var(--r-sm);padding:10px 14px;margin:10px 0;transition:all 0.2s var(--ease);}
+details.answer[open]{background:var(--accent-soft);border-left-color:var(--accent);}
+details.answer summary{cursor:pointer;font-weight:700;color:var(--text-soft);font-size:13px;list-style:none;user-select:none;display:flex;align-items:center;gap:10px;transition:color 0.2s var(--ease);}
+details.answer summary::-webkit-details-marker{display:none;}
+details.answer summary::marker{content:'';}
+details.answer summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer[open] summary{color:var(--accent);}
+details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}
+.part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}
+@media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}
+.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
+@media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}
+.table-wrap th,.table-wrap td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px;}
+@media(min-width:600px){.table-wrap th,.table-wrap td{padding:10px 12px;font-size:13.5px;}}
+.table-wrap th{background:var(--surface-soft);font-weight:800;color:var(--text-soft);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;}
+@media(min-width:600px){.table-wrap th{font-size:11px;letter-spacing:0.7px;white-space:nowrap;}}
+.table-wrap.table-compact td,.table-wrap.table-compact th{padding:7px 6px;font-size:12.5px;}
+.table-wrap tr:last-child td{border-bottom:none;}
+.table-wrap tr:hover td{background:var(--accent-soft);}
+.table-wrap .error-row{background:var(--c-error-bg);}
+.table-wrap .ok-row{background:var(--c-basic-bg);}
+.def-list{display:flex;flex-direction:column;gap:8px;margin:14px 0;}
+.def-item{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px 16px;}
+.def-item dt{font-weight:800;color:var(--text);font-size:13.5px;margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+.def-item dt::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;}
+.def-item dd{color:var(--text-soft);font-size:13.5px;line-height:1.6;margin:0;padding-left:11px;}
+.minimum-card{background:linear-gradient(135deg,var(--surface-soft) 0%,var(--accent-soft) 100%);border:1px solid var(--accent-line);border-radius:var(--r-lg);padding:20px 22px;margin:8px 0 28px;box-shadow:var(--sh-sm);position:relative;overflow:hidden;}
+@media(min-width:768px){.minimum-card{padding:28px 34px;margin-bottom:36px;}}
+.minimum-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:var(--accent);}
+.minimum-card h3{color:var(--accent);margin:0 0 16px;font-size:16px;letter-spacing:0.2px;display:flex;align-items:center;gap:10px;}
+.minimum-card h3::before{content:'★';font-size:16px;}
+.minimum-card ol{margin:0;padding-left:0;list-style:none;counter-reset:min-list;}
+.minimum-card li{counter-increment:min-list;padding-left:36px;position:relative;margin-bottom:12px;font-size:14px;line-height:1.6;}
+.minimum-card li::before{content:counter(min-list);position:absolute;left:0;top:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--surface);color:var(--accent);border:2px solid var(--accent-line);border-radius:50%;font-size:12px;font-weight:800;}
+.minimum-card li:last-child{margin-bottom:0;}
+.level-badge{display:inline-block;font-size:9.5px;font-weight:800;text-transform:uppercase;padding:2px 9px;border-radius:12px;vertical-align:middle;letter-spacing:0.5px;line-height:1.6;margin-left:8px;}
+.level-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.level-understand{background:var(--c-understand-bg);color:var(--c-understand);}
+.level-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.level-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.level-new{background:var(--c-new-bg);color:var(--c-new);}
+.rule-box{background:var(--c-understand-bg);border:1px solid var(--c-understand-line);border-radius:var(--r-md);padding:14px 18px;margin:14px 0;font-size:14px;line-height:1.65;}
+.rule-box b{color:var(--c-understand);}
+.step-flow{background:var(--text);color:#fff;padding:16px 18px;border-radius:var(--r-md);font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:12.5px;line-height:1.9;margin:14px 0;overflow-x:auto;white-space:pre;}
+@media(min-width:768px){.step-flow{font-size:13.5px;padding:16px 20px;}}
+.footer{margin-top:56px;padding-top:24px;border-top:2px solid var(--border);text-align:center;font-size:12.5px;color:var(--text-muted);letter-spacing:0.2px;}
+.footer p{margin-bottom:4px;}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:6px;border:2px solid var(--bg);}
+::-webkit-scrollbar-thumb:hover{background:var(--text-muted);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.bottom-nav{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:1100;width:min(700px,calc(100vw - 24px));font-size:.78rem;}
+.bottom-nav__toggle{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;padding:8px 14px;border:1px solid var(--border-strong);border-radius:999px;background:rgba(255,255,255,.97);color:var(--text-soft);font:700 .72rem inherit;box-shadow:0 5px 18px rgba(15,23,42,.14);cursor:pointer;backdrop-filter:blur(10px);font-family:inherit;}
+.bottom-nav__panel{display:none;margin-bottom:7px;padding:10px;border:1px solid var(--border-strong);border-radius:14px;background:rgba(255,255,255,.98);box-shadow:0 10px 28px rgba(15,23,42,.16);backdrop-filter:blur(12px);}
+.bottom-nav.is-open .bottom-nav__panel{display:block;}
+.bottom-nav__primary{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.bottom-nav a,.bottom-nav button.nav-more{min-height:36px;display:flex;align-items:center;justify-content:center;padding:6px 8px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--text-soft);text-decoration:none;font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.bottom-nav a:hover,.bottom-nav button.nav-more:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+@media(max-width:420px){
+  .bottom-nav{font-size:.7rem;width:calc(100vw - 12px);}
+  .bottom-nav a,.bottom-nav button.nav-more{padding:6px 4px;font-size:.65rem;}
+}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
+.widget{background:var(--surface);border:2px solid var(--border);border-radius:var(--r-md);padding:14px;margin:14px 0;box-shadow:var(--sh-sm);}
+@media(min-width:768px){.widget{padding:22px 26px;margin:20px 0;border-radius:var(--r-lg);}}
+.widget h4{margin:0 0 8px;color:var(--text);font-size:15px;font-weight:800;}
+@media(min-width:768px){.widget h4{font-size:16px;}}
+.widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
+.bld-pool{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.bld-pool button{padding:6px 12px;border:1px solid var(--border);border-radius:20px;background:#fff;font:600 0.8rem inherit;cursor:pointer;font-family:inherit;color:var(--text);}
+.bld-pool button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bld-workspace{min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;}
+.bld-feedback,.re-result,.st-feedback,.ch-feedback{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;line-height:1.5;}
+.bld-feedback.ok,.re-result.ok,.st-feedback.ok,.ch-feedback.ok{background:var(--c-basic-bg);color:var(--c-basic);border:1px solid var(--c-basic-line);}
+.bld-feedback.bad,.re-result.bad,.st-feedback.bad,.ch-feedback.bad{background:var(--c-error-bg);color:var(--c-error);border:1px solid var(--c-error-line);}
+.bld-feedback.info,.re-result.info,.st-feedback.info,.ch-feedback.info{background:var(--c-understand-bg);color:var(--c-understand);border:1px solid var(--c-understand-line);}
+.bld-feedback.warn,.re-result.warn,.st-feedback.warn,.ch-feedback.warn{background:var(--c-warn-bg);color:var(--c-warn);border:1px solid var(--c-warn-line);}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);color:var(--text);font-family:inherit;}
+.btn:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent);}
+.btn-primary:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+.btn-sm{padding:6px 10px;font-size:12px;}
+.flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}
+@media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--border);border-radius:var(--r-md);background:#fff;color:var(--text);font:inherit;text-align:center;cursor:pointer;box-shadow:var(--sh-sm);transition:all 0.2s var(--ease);position:relative;font-family:inherit;}
+.flashcard:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-3px);box-shadow:var(--sh-md);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:90px;}
+.flashcard .front{font-weight:700;font-size:14.5px;line-height:1.5;}
+.flashcard .back{display:none;color:var(--text-soft);font-size:13.5px;line-height:1.6;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:8px;right:8px;font-size:9px;text-transform:uppercase;background:var(--surface-soft);padding:2px 8px;border-radius:10px;color:var(--text-muted);font-weight:800;letter-spacing:0.4px;}
+.flashcard .card-tag.tag-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.flashcard .card-tag.tag-error{background:var(--c-error-bg);color:var(--c-error);}
+.flashcard .card-tag.tag-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.flashcard .card-tag.tag-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.checklist{background:#fff;border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.checklist h4{color:var(--c-basic);margin:0 0 12px;font-size:15px;}
+.checklist ul{list-style:none;padding-left:0;margin:0;}
+.checklist li{padding:7px 0;font-size:13.5px;border-bottom:1px dashed var(--c-basic-line);display:flex;align-items:flex-start;gap:10px;line-height:1.55;}
+.checklist li:last-child{border-bottom:none;}
+.checklist li::before{content:'☐';color:var(--c-basic);font-weight:700;font-size:1.15rem;flex-shrink:0;line-height:1.2;}
+.core-path{background:linear-gradient(135deg,var(--c-basic-bg) 0%,#dcefe2 100%);border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:800;color:var(--c-basic);font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.core-path .cp-title::before{content:'▶';font-size:12px;}
+.core-path ol{margin:0;padding-left:22px;}
+.core-path li{margin-bottom:6px;font-size:13.5px;line-height:1.6;}
+.audit-panel{background:var(--surface-soft);border:2px solid var(--border-strong);border-radius:var(--r-lg);padding:16px 18px;margin:16px 0;}
+.audit-panel h4{margin:0 0 12px;color:var(--text);}
+.audit-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px;}
+@media(min-width:600px){.audit-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}}
+.audit-item{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:10px 12px;font-size:12.5px;line-height:1.55;}
+.mini-note{font-size:12.5px;color:var(--text-muted);font-style:italic;margin-top:8px;line-height:1.55;}
+.layer-legend{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:12px 14px;margin:12px 0;display:grid;grid-template-columns:1fr;gap:8px 18px;}
+@media(min-width:600px){.layer-legend{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;}}
+.layer-legend .layer-row{display:flex;gap:10px;align-items:center;font-size:12.5px;line-height:1.5;}
+.layer-legend .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.e8{background:var(--c-basic);}
+.layer-legend .dot.understand{background:var(--c-understand);}
+.layer-legend .dot.extra{background:var(--c-extra);}
+.layer-legend .dot.contest{background:var(--c-warn);}
+.klinika-table td.col-blad{color:var(--c-error);font-weight:700;}
+.klinika-table td.col-blad::before{content:'✕ ';font-weight:900;margin-right:4px;color:var(--c-error);}
+.klinika-table td.col-ok{color:var(--c-basic);font-weight:700;}
+.klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}
+.map-card{position:relative;}
+.map-expand-btn{position:absolute;top:10px;right:10px;z-index:3;padding:6px 12px;border:1px solid var(--accent-line);background:rgba(255,255,255,0.95);color:var(--accent);border-radius:var(--r-sm);font-size:12px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:var(--sh-sm);transition:all 0.15s var(--ease);}
+.map-expand-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.map-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(26,35,50,0.85);backdrop-filter:blur(6px);}
+.map-overlay.is-open{display:block;}
+.map-overlay-inner{position:absolute;inset:12px;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-xl);}
+.map-overlay-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface-soft);gap:8px;flex-wrap:wrap;}
+.map-overlay-title{font-weight:800;font-size:14px;color:var(--text);}
+.map-overlay-actions{display:flex;gap:6px;}
+.map-overlay-actions button{padding:6px 12px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;color:var(--text-soft);transition:all 0.15s var(--ease);}
+.map-overlay-actions button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.map-overlay-actions .map-close{background:var(--c-error);color:#fff;border-color:var(--c-error);}
+.map-overlay-canvas{flex:1;overflow:hidden;position:relative;background:#fff;cursor:grab;touch-action:none;}
+.map-overlay-canvas svg{display:block;position:absolute;top:0;left:0;transform-origin:0 0;}
+@media print{
+.fab,.toc-wrapper,.toc-overlay,.header-wrapper,.bottom-nav,.resume-dropdown,.map-overlay,.map-expand-btn{display:none !important;}
+body{padding:0;background:#fff;}
+.container{box-shadow:none;border:none;padding:0;max-width:100%;}
+details.answer{page-break-inside:avoid;}
+details.answer > *:not(summary){display:block !important;}
+details.answer summary{display:none;}
+.card{page-break-inside:avoid;}
+.widget{page-break-inside:avoid;}
+}
+@media (prefers-reduced-motion: reduce){
+*{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+html{scroll-behavior:auto;}
+}
+html,body{max-width:100%;overflow-x:hidden;}
+.table-scroll-hint{display:none;align-items:center;justify-content:space-between;gap:8px;padding:7px 11px;margin-top:0;margin-bottom:8px;border:1px solid var(--border);border-bottom:0;border-radius:var(--r-sm) var(--r-sm) 0 0;background:var(--surface-soft);color:var(--text-muted);font-size:11px;font-weight:700;}
+.table-wrap.is-scrollable + .table-scroll-hint{display:flex;}
+.table-scroll-hint .scroll-arrow{font-size:13px;letter-spacing:2px;color:var(--accent);}
+.timeline-anim{border-color:var(--c-understand-line);}
+.ta-stage{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 14px;min-height:280px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.ta-scene{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;animation:taFade 0.6s ease-out;width:100%;}
+@keyframes taFade{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.ta-scene .ta-year{font-size:1.7rem;font-weight:800;color:var(--accent);font-family:'JetBrains Mono',monospace;letter-spacing:1px;}
+.ta-scene .ta-who{font-size:1.05rem;font-weight:800;color:var(--text);}
+.ta-scene .ta-desc{font-size:13.5px;color:var(--text-soft);max-width:600px;line-height:1.65;}
+.ta-dots{display:flex;justify-content:center;gap:8px;margin:14px 0 8px;}
+.ta-dot{width:12px;height:12px;border-radius:50%;background:var(--border-strong);border:2px solid transparent;cursor:pointer;padding:0;transition:all 0.2s var(--ease);}
+.ta-dot.active{background:var(--accent);transform:scale(1.25);box-shadow:0 0 0 3px var(--accent-glow);}
+.ta-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;}
+.ta-nav{padding:8px 14px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-weight:700;color:var(--text-soft);cursor:pointer;font-size:12.5px;transition:all 0.15s var(--ease);}
+.ta-nav:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.ta-progress{font-size:12.5px;color:var(--text-muted);font-weight:700;font-family:'JetBrains Mono',monospace;}
+.eq-player{background:linear-gradient(180deg,#f8fafc,#eef6f5);border:2px solid var(--accent-line);border-radius:var(--r-lg);padding:16px 18px;margin:14px 0;}
+.eq-stage{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.15rem;padding:12px;background:#fff;border-radius:var(--r-md);border:1px solid var(--border);}
+.eq-term{display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border);opacity:0;}
+.eq-term.show{opacity:1;animation:reaction-flow 0.7s ease-out;}
+.eq-term.reactant{background:#e0f2fe;border-color:#7dd3fc;color:#0c4a6e;}
+.eq-term.product{background:#dcfce7;border-color:#86efac;color:#14532d;}
+.eq-arrow{opacity:0;color:var(--accent);font-size:1.4rem;}
+.eq-arrow.show{opacity:1;}
+.eq-balance{margin-top:10px;font-size:13px;color:var(--text-soft);display:none;}
+.eq-balance.show{display:block;}
+@keyframes reaction-flow{0%{opacity:.25;transform:scale(.92)}55%{opacity:1}100%{opacity:1;transform:scale(1)}}
+.ion-assembly{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;padding:18px 12px;background:#fff;border:1px solid var(--border);border-radius:var(--r-md);margin:10px 0;}
+.ion-chip{padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid var(--border);}
+.ion-chip.cation{background:#e0f2fe;border-color:#38bdf8;color:#0c4a6e;}
+.ion-chip.anion{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.ion-chip.product{background:#dcfce7;border-color:#4ade80;color:#14532d;}
+.ion-plus,.ion-join{font-size:1.4rem;font-weight:800;color:var(--text-muted);}
+.hero{max-width:900px;margin:0 auto 22px;padding:26px;border:1px solid var(--border);border-radius:var(--r-xl);background:linear-gradient(135deg,#fff,var(--accent-soft));box-shadow:var(--sh-md);}
+.hero h1{font-size:clamp(32px,6vw,52px);margin:4px 0 8px;}
+.hero-kicker{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--accent);text-transform:uppercase;}
+.lead{font-size:16px;color:var(--text-soft);max-width:720px;}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;}
+.page{max-width:900px;margin:0 auto;}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+@media(max-width:720px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px;}
+.metric-grid>div,.result-card,.step-card{padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);}
+.metric-grid b{display:block;font-size:10px;text-transform:uppercase;color:var(--text-muted);}
+.metric-grid strong{display:block;margin-top:3px;}
+@media(max-width:700px){.metric-grid{grid-template-columns:1fr;}}
+.controls,.button-grid{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;}
+.controls button,.button-grid button,.quiz-opt{padding:8px 12px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;cursor:pointer;}
+.particle-stage{height:120px;display:flex;align-items:center;justify-content:center;gap:70px;border:1px dashed var(--border-strong);border-radius:10px;margin-top:12px;}
+.particle{font-size:30px;font-weight:800;}
+.p-h3o{color:var(--accent);}
+.p-cl{color:#b83a45;}
+.ph-scale{display:flex;justify-content:space-between;margin-top:6px;font:700 11px 'JetBrains Mono',monospace;}
+.buffer-tank{height:28px;border:1px solid var(--border-strong);border-radius:999px;overflow:hidden;margin:14px 0;background:var(--surface-soft);}
+#bufferFill{height:100%;width:100%;background:var(--accent);transition:width .2s;}
+.quiz-wrap{margin:16px 0;}
+.quiz-q{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:14px 16px;margin-bottom:12px;}
+.quiz-q h5{margin:0 0 10px;font-size:14.5px;color:var(--text);text-transform:none;letter-spacing:0;line-height:1.45;}
+.quiz-q .q-tag{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:10px;margin-bottom:8px;background:var(--surface-soft);color:var(--text-muted);}
+.quiz-opts{display:flex;flex-direction:column;gap:8px;}
+.quiz-opt{display:block;width:100%;text-align:left;padding:10px 12px;border:2px solid var(--border);border-radius:var(--r-sm);background:#fff;font:inherit;font-size:13.5px;cursor:pointer;transition:all 0.15s var(--ease);color:var(--text);}
+.quiz-opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft);}
+.quiz-opt.correct{border-color:var(--c-basic);background:var(--c-basic-bg);color:var(--c-basic);font-weight:700;}
+.quiz-opt.wrong{border-color:var(--c-error);background:var(--c-error-bg);color:var(--c-error);}
+.quiz-opt:disabled{cursor:default;opacity:0.95;}
+.quiz-fb{margin-top:8px;font-size:13px;line-height:1.5;display:none;padding:8px 10px;border-radius:var(--r-sm);}
+.quiz-fb.show{display:block;}
+.quiz-fb.ok{background:var(--c-basic-bg);color:var(--c-basic);}
+.quiz-fb.bad{background:var(--c-error-bg);color:var(--c-error);}
+.quiz-score{text-align:center;padding:14px;background:var(--surface-soft);border-radius:var(--r-md);margin-top:16px;font-weight:800;color:var(--accent);display:none;}
+.quiz-score.show{display:block;}
+.lab-bridge{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 28px;padding:14px 16px;border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);background:linear-gradient(135deg,var(--surface-soft),var(--accent-soft));}
+.lab-bridge strong{display:block;color:var(--accent-dark);}
+.lab-bridge span{display:block;margin-top:3px;color:var(--text-soft);font-size:13px;}
+.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;}
+.lab-bridge-btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
+@media(max-width:600px){.lab-bridge{align-items:flex-start;flex-direction:column;}.lab-bridge-btn{width:100%;text-align:center;}}
+.exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}
+.exp-card h5{margin:0 0 10px;color:var(--c-basic);font-size:14px;text-transform:none;letter-spacing:0;}
+.exp-grid{display:grid;grid-template-columns:1fr;gap:6px;font-size:13.5px;line-height:1.55;}
+@media(min-width:600px){.exp-grid{grid-template-columns:110px 1fr;}}
+.exp-grid b{color:var(--text-soft);font-size:11px;text-transform:uppercase;letter-spacing:0.4px;}
+
+.js-reveal .card:not(.in),.js-reveal .widget:not(.in){opacity:0;transform:translateY(14px)}
+.js-reveal .card,.js-reveal .widget{transition:opacity .55s var(--ease),transform .55s var(--ease)}
+
+
+.ion-svg{width:100%;height:auto;display:block;background:radial-gradient(ellipse at 50% 40%,#fff,var(--surface-soft));border:1px solid var(--border);border-radius:var(--r-md);margin-top:10px}
+.ion-svg .mv{transition:transform .9s cubic-bezier(.65,0,.35,1);transform-box:fill-box}
+.ion-svg text{font-family:'JetBrains Mono',monospace;font-weight:800;text-anchor:middle;dominant-baseline:central}
+.ion-svg .fade{opacity:0;transition:opacity .6s ease .35s}
+.ion-svg[data-s="1"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="1"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="1"] .d1,.ion-svg[data-s="2"] .d1{opacity:1}
+.ion-svg[data-s="2"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="2"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="2"] .proton{transform:translate(120px,-40px)}
+.ion-svg[data-s="2"] .arrow{opacity:1}
+.ion-svg[data-s="3"] .g-hcl{transform:translateX(10px)}
+.ion-svg[data-s="3"] .g-w{transform:translateX(-10px)}
+.ion-svg[data-s="3"] .proton{transform:translate(230px,-38px)}
+.ion-svg[data-s="3"] .d3{opacity:1}
+.ion-svg[data-s="3"] .glow{animation:ionGlow 1.6s ease-in-out infinite}
+@keyframes ionGlow{0%,100%{filter:drop-shadow(0 0 2px rgba(13,104,104,.3))}50%{filter:drop-shadow(0 0 10px rgba(13,104,104,.8))}}
+
+
+.ph-bar{position:relative;height:18px;border-radius:999px;margin:10px 0 4px;border:1px solid var(--border-strong);
+background:linear-gradient(90deg,#e5262e 0%,#ef5a28 14%,#f6a21e 28%,#d7d93a 43%,#5cb85c 50%,#21a89a 57%,#2f7fc1 71%,#4a4bb5 86%,#6b2d8f 100%)}
+.ph-marker{position:absolute;top:-6px;width:0;height:0;left:0;transform:translateX(-50%);transition:left .35s var(--ease)}
+.ph-marker::before{content:'';position:absolute;left:-7px;top:0;border:7px solid transparent;border-top:10px solid var(--text)}
+.ph-marker::after{content:attr(data-v);position:absolute;left:0;top:-22px;transform:translateX(-50%);background:var(--text);color:#fff;font:800 11px 'JetBrains Mono',monospace;padding:2px 6px;border-radius:5px;white-space:nowrap}
+.ph-flask{display:inline-block;width:22px;height:22px;border-radius:0 0 8px 8px;border:2px solid var(--text-soft);vertical-align:middle;margin-right:6px;transition:background .35s}
+
+
+.titr-wrap{position:relative}
+#titrationCanvas{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--r-md);background:#fff}
+.titr-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.titr-row input[type=range]{flex:1 1 200px}
+.titr-flask{width:34px;height:42px;border:2px solid var(--text-soft);border-radius:2px 2px 12px 12px;transition:background .3s;flex-shrink:0;position:relative}
+.titr-flask::after{content:'';position:absolute;left:-2px;right:-2px;top:-8px;height:6px;border:2px solid var(--text-soft);border-bottom:0;border-radius:3px 3px 0 0}
+
+
+.buffer-tank{position:relative;height:34px}
+#bufferFill{transition:width .4s var(--ease),background .4s;background-size:28px 28px;background-image:linear-gradient(45deg,rgba(255,255,255,.22) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.22) 75%,transparent 75%)}
+.buffer-tank.pulse{animation:bufPulse .45s ease}
+.buffer-tank.dead{animation:bufDead .5s ease 2}
+@keyframes bufPulse{50%{transform:scale(1.02);box-shadow:0 0 0 4px var(--accent-glow)}}
+@keyframes bufDead{50%{box-shadow:0 0 0 4px rgba(184,58,69,.35)}}
+
+
+.rx-stage{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:12px 0;padding:14px;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md)}
+.rx-beaker{position:relative;width:120px;height:150px;border:3px solid var(--text-soft);border-top:0;border-radius:0 0 18px 18px;background:rgba(255,255,255,.55);overflow:visible;flex-shrink:0}
+.rx-liquid{position:absolute;left:0;right:0;bottom:0;height:100px;border-radius:0 0 14px 14px;background:rgba(220,235,240,.65);transition:background 2.2s ease}
+.rx-solid{position:absolute;left:36px;bottom:2px;width:48px;height:24px;border-radius:40% 40% 8px 8px;opacity:0;transition:height 3.5s ease,opacity .5s,transform 3.5s ease}
+.rx-bubbles,.rx-precip,.rx-fumes{position:absolute;left:0;right:0;bottom:0;height:150px;pointer-events:none;overflow:hidden}
+.rx-fumes{overflow:visible;bottom:100px;height:70px}
+.rx-b{position:absolute;bottom:14px;border-radius:50%;background:rgba(255,255,255,.85);border:1px solid rgba(13,104,104,.45);animation:rxRise 2.2s ease-in forwards}
+@keyframes rxRise{to{transform:translate(var(--dx,0),-92px);opacity:0}}
+.rx-p{position:absolute;top:50px;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #cbd5e1;animation:rxFall 2.4s ease-in forwards}
+@keyframes rxFall{to{transform:translateY(90px)}}
+.rx-cloud{position:absolute;bottom:0;left:6px;right:6px;height:0;background:#fff;border-radius:10px 10px 0 0;box-shadow:0 0 0 1px #e2e8f0;transition:height 4s ease;opacity:.95}
+.rx-f{position:absolute;bottom:0;width:26px;height:26px;border-radius:50%;background:rgba(150,75,20,.55);filter:blur(7px);animation:rxFume 3s ease-out forwards}
+@keyframes rxFume{to{transform:translate(var(--dx,0),-70px) scale(2.2);opacity:0}}
+
+
+.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.rx-label{flex:1 1 200px;font-size:13px;color:var(--text-soft);line-height:1.5}
+.rx-label b{color:var(--text);font-family:'JetBrains Mono',monospace}
+@media print{.js-reveal .card,.js-reveal .widget{opacity:1!important;transform:none!important}}
+
+
+/* ulepszenia.css — warstwa wspólna nad baza.css: pasek lekcji, postęp czytania, spis z podświetleniem,
+   tryb ciemny, komponenty wspólne (mity, drzewo, cytat, dialog, słówka, figura), druk, dostępność.
+   Kolejność w lekcji: baza.css → ulepszenia.css → motywy/<przedmiot>.css. Edytuj tylko tutaj. */
+
+:root{--header-h:52px;--serif:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Charter,Georgia,serif}
+
+/* ---------- pasek lekcji (zamiast nagłówka aplikacji) ---------- */
+.lk-bar{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 12px;
+  background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--border)}
+.lk-subj{flex:none;display:inline-flex;align-items:center;gap:7px;font:800 12.5px/1 Inter,system-ui,sans-serif;color:var(--accent);text-decoration:none;
+  padding:6px 10px 6px 8px;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+.lk-subj i{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+.lk-title{flex:1;min-width:0;font:600 13px/1.25 Inter,system-ui,sans-serif;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lk-btn{flex:none;min-width:36px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);background:var(--surface);
+  color:var(--text);border-radius:9px;padding:0 10px;font:700 12.5px Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+.lk-btn:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.lk-prog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
+@media (max-width:520px){.lk-title{display:none}.lk-bar{justify-content:space-between}}
+
+/* ---------- nagłówek lekcji ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+.hero::after{content:"";position:absolute;inset:-10% -6% -10% 52%;z-index:-1;opacity:.12;pointer-events:none;background:var(--motyw-wzor,none) right center/auto 100% repeat-y}
+.hero h1{text-wrap:balance}
+.hero-kicker{color:var(--accent);text-transform:none;letter-spacing:0;font-size:13px}
+.page{padding:0 16px}
+.lk-btn svg{width:16px;height:16px;display:block}
+.lk-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:12.5px;color:var(--text-muted)}
+.lk-meta b{color:var(--text-soft);font-weight:700}
+
+/* ---------- spis treści: aktywna sekcja ---------- */
+@media (min-width:800px){.toc-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));column-gap:12px}}
+.toc-link.on{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);font-weight:700}
+section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
+
+/* ---------- komponenty wspólne ---------- */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:12px 0}
+.myth-head{grid-column:1/-1;font-weight:800;font-size:14px}
+.myth{border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow:hidden}
+.myth p{margin:0;padding:9px 12px;font-size:13.5px;line-height:1.5}
+.myth p span{display:block;font:800 11px Inter,system-ui;margin-bottom:2px}
+.myth-x{background:var(--c-error-bg)}.myth-x span{color:var(--c-error)}.myth-ok span{color:var(--c-basic)}
+
+.lk-tree{margin:12px 0;font-size:14px;overflow-x:auto}
+.lk-tree ul{list-style:none;margin:0;padding-left:18px}.lk-tree>ul{padding-left:0}
+.lk-tree li{position:relative;padding:3px 0 3px 14px}
+.lk-tree ul ul li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--accent-line)}
+.lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
+.lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
+.lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+
+/* cytat z tekstu (lektura, źródło, wypowiedź) */
+.lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
+.lk-quote blockquote{margin:0;font:400 17px/1.65 var(--serif);color:var(--text)}
+.lk-quote blockquote p{margin:0 0 6px;color:inherit}
+.lk-quote figcaption{margin-top:6px;font-size:12.5px;color:var(--text-muted)}
+
+/* dialog (role A/B, rozmowa, scenka) */
+.lk-dialog{margin:14px 0;display:flex;flex-direction:column;gap:8px}
+.lk-line{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.lk-who{min-width:30px;height:30px;padding:0 8px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font:800 12px Inter,system-ui;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line)}
+.lk-line.b .lk-who{background:var(--surface-soft);color:var(--text-soft);border-color:var(--border)}
+.lk-say{padding:8px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font-size:14.5px;line-height:1.55}
+.lk-say small{display:block;color:var(--text-muted);font-size:12.5px;margin-top:2px}
+
+/* słówka: wyraz — znaczenie — przykład */
+.lk-vocab{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.lk-vocab th{text-align:left;font-size:12px;color:var(--text-muted);font-weight:700;padding:6px 10px;border-bottom:2px solid var(--border)}
+.lk-vocab td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+.lk-vocab td:first-child{font-weight:800;color:var(--accent);white-space:nowrap}
+.lk-vocab td:last-child{color:var(--text-soft);font-style:italic}
+@media (max-width:560px){.lk-vocab thead{display:none}.lk-vocab tr{display:block;padding:8px 0;border-bottom:1px solid var(--border)}
+  .lk-vocab td{display:block;border:0;padding:1px 4px}}
+
+/* figura z biblioteki grafik przedmiotu */
+.lk-fig{margin:16px 0;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);overflow:hidden}
+.lk-fig figcaption{padding:9px 14px;border-top:1px solid var(--border);background:var(--surface-soft);font-size:13px;line-height:1.5;color:var(--text-soft)}
+.lk-fig figcaption b{color:var(--text);margin-right:4px}
+.lk-fig-body{padding:12px}
+.lk-fig svg{display:block;width:100%;height:auto}
+
+/* z chemii (lekcja.css): treści akademickie, plakietki */
+details.adv{border:1px dashed var(--c-warn-line,#eed8a8);border-radius:10px;background:var(--surface-soft,#f6f8fa);margin:10px 0;padding:0 12px}details.adv>summary{cursor:pointer;font-weight:700;color:var(--c-warn,#b06f1c);padding:9px 0;list-style:none}details.adv>summary::-webkit-details-marker{display:none}details.adv>summary::before{content:"▸ "}details.adv[open]>summary::before{content:"▾ "}.adv-tag{font-weight:600;font-size:11px;opacity:.75;margin-left:6px}.adv-body{padding:0 0 10px;font-size:13.5px;line-height:1.6}.adv-body table{font-size:12.5px}.adv-toggle{margin-top:10px;border:1px solid var(--c-warn-line,#eed8a8);background:var(--c-warn-bg,#fcf4e6);color:var(--c-warn,#b06f1c);border-radius:999px;padding:6px 12px;font:700 12px Inter,system-ui,sans-serif;cursor:pointer}.bio-tag{display:inline-block;font:800 10px Inter,system-ui;letter-spacing:.04em;padding:2px 7px;border-radius:99px;background:rgba(46,125,79,.12);color:#2e7d4f;margin-left:6px;vertical-align:middle}.v15{display:inline-block;font:800 9.5px Inter,system-ui;padding:1px 6px;border-radius:99px;background:rgba(13,125,125,.12);color:#0d7d7d;margin-left:6px;vertical-align:middle}@media print{details.adv{display:block}details.adv>.adv-body{display:block}}
+/* z chemii (lekcja.css): telefon, tabele */
+.exp-card{min-width:0;max-width:100%;box-sizing:border-box}.exp-grid>*{min-width:0;overflow-wrap:anywhere}
+@media (max-width:600px){.exp-grid{grid-template-columns:minmax(0,1fr)!important}.exp-grid>b{margin-top:4px}}
+.table-wrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+
+/* klinika błędów (::: klinika) — tabela, na telefonie karty */
+.klinika-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden}
+.klinika-table th{text-align:left;padding:9px 12px;background:var(--surface-soft);color:var(--text-soft);font-size:12px;font-weight:800;border-bottom:1px solid var(--border)}
+.klinika-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.klinika-table tr:last-child td{border-bottom:0}
+@media (max-width:600px){.klinika-table thead{display:none}.klinika-table tr{display:block;padding:8px 12px;border-bottom:1px solid var(--border)}
+  .klinika-table td{display:block;border:0;padding:2px 0}.klinika-table td:not(.col-blad):not(.col-ok){color:var(--text-soft)}}
+
+.lk-pre{margin:12px 0;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-soft);overflow-x:auto;font:12.5px/1.55 ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;color:var(--text-soft);white-space:pre}
+.lk-pre code{font:inherit;background:none;padding:0;color:inherit}
+.lk-hr{border:0;border-top:1px solid var(--border);margin:28px 0}
+
+/* ---------- dostępność ---------- */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;z-index:60;background:var(--surface);color:var(--accent);padding:8px 12px;border-radius:8px}
+.skip-link:focus{left:8px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- tryb ciemny: automatycznie albo przyciskiem (data-theme) ---------- */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme=dark]{
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}
+/* elementy bazy z białym tłem na sztywno */
+html[data-ciemny] :is(.flashcard,.checklist,.audit-item,.layer-legend,.quiz-q,.quiz-opt,.btn,.controls button,.eq-stage,.ion-assembly,.bld-workspace,.bld-pool button,.resume-dropdown,.ta-nav){background:var(--surface);color:var(--text)}
+html[data-ciemny] .hero{background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.active,.step-flow){color:var(--bg)}
+@media (max-width:600px){.hero::after{opacity:.07}}
+
+/* ---------- druk ---------- */
+@media print{
+  .lk-bar,.adv-toggle,.toc-item,.fab,.bottom-nav{display:none!important}
+  body{padding:0;background:#fff;color:#000}
+  .hero::after{display:none}.hero{background:none;box-shadow:none}
+  details.adv,details.answer{display:block}details>*{display:block}
+  .card,.minimum-card,.lk-fig,.myth,.quiz-q{break-inside:avoid;box-shadow:none}
+  a{color:inherit;text-decoration:none}
+}
+
+/* === Dopracowanie czytelności (2026-10-11; z wersji „ulepszonej” U03 użytkownika, uogólnione na wszystkie przedmioty, zgodne z trybem ciemnym) === */
+body{line-height:1.74}
+main{isolation:isolate}
+.hero{border-color:var(--accent-line)}
+.hero::before{content:"";position:absolute;right:-42px;top:-56px;width:180px;height:180px;z-index:-1;pointer-events:none;
+ border:1px solid var(--accent-line);border-radius:50%;opacity:.45;
+ box-shadow:0 0 0 22px var(--accent-glow),0 0 0 44px var(--accent-glow)}
+.part-heading{padding:0 0 12px;border-bottom:1px solid var(--border);align-items:flex-start}
+.part-num{margin-top:1px}
+section[id]{scroll-margin-top:calc(var(--header-h,56px) + 20px)}
+section p{max-width:78ch}
+section ul,section ol{padding-left:1.35rem}
+.card,.exp-card,.widget,.table-wrap{box-shadow:0 2px 8px rgba(24,49,59,.045)}
+.table-wrap{max-width:100%}
+.table-wrap table{line-height:1.55}
+.table-wrap td strong{color:var(--text)}
+.table-wrap tbody tr:nth-child(even) td{background:var(--surface-soft)}
+.table-wrap tbody tr:hover td{background:var(--accent-soft)}
+.mini-note{max-width:80ch}
+:is(button,a,summary,[tabindex]):focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:520px){.hero{padding:20px 16px}.part-heading{font-size:19px;gap:11px}
+ .table-wrap table{font-size:12.5px}.table-wrap th,.table-wrap td{padding:8px 9px}}
+@media(hover:none){.card:hover,.flashcard:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media print{.hero::before{display:none}.card,.exp-card,.table-wrap{break-inside:avoid;box-shadow:none}}
+
+/* fiszki: część ukryta do rozwinięcia (lekcja.js); przy druku — wszystkie */
+.flashcard[hidden]{display:none!important}
+.fz-more{display:block;width:100%;margin:-6px 0 18px;padding:12px 16px;border:2px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent;color:var(--text,#1d2a30);font-family:inherit;font-weight:600;font-size:15px;line-height:1.3;cursor:pointer;text-align:center}
+.fz-more:hover,.fz-more:focus-visible{background:var(--surface-2,rgba(0,0,0,.04))}
+@media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
+.quiz-q[hidden]{display:none!important}
+@media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
+
+/* motyw oli (Olimpiada) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#8a5a00;--accent-dark:#5f3e00;--accent-soft:#fbf1dd;--accent-line:#ecd29a;--accent-glow:rgba(138,90,0,.15);--hl-key:#8a5a00;--hl-key-bg:#f8e9c8;--hl-formula:#5f3e00;--hl-formula-bg:#fbf1dd;--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 120 200%27%3E%3Cg fill=%27%238a5a00%27%3E%3Cpath d=%27M60 20l8 17 19 2-14 13 4 19-17-10-17 10 4-19-14-13 19-2z%27/%3E%3C/g%3E%3Cg fill=%27none%27 stroke=%27%238a5a00%27 stroke-width=%274%27 stroke-linecap=%27round%27%3E%3Cpath d=%27M30 110c-6 30 6 56 30 70M90 110c6 30-6 56-30 70%27/%3E%3C/g%3E%3Cg fill=%27%238a5a00%27%3E%3Cellipse cx=%2726%27 cy=%27128%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-60 26 128%29%27/%3E%3Cellipse cx=%2730%27 cy=%27150%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-40 30 150%29%27/%3E%3Cellipse cx=%2742%27 cy=%27168%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-20 42 168%29%27/%3E%3Cellipse cx=%2794%27 cy=%27128%27 rx=%279%27 ry=%275%27 transform=%27rotate%2860 94 128%29%27/%3E%3Cellipse cx=%2790%27 cy=%27150%27 rx=%279%27 ry=%275%27 transform=%27rotate%2840 90 150%29%27/%3E%3Cellipse cx=%2778%27 cy=%27168%27 rx=%279%27 ry=%275%27 transform=%27rotate%2820 78 168%29%27/%3E%3C/g%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#e9b85a;--accent-dark:#f5d79a;--accent-soft:#2b2312;--accent-line:#5c4a22;--accent-glow:rgba(233,184,90,.2);--hl-key:#efc677;--hl-key-bg:#33290f;--hl-formula:#f5d79a;--hl-formula-bg:#2b2312;}}
+:root[data-theme=dark]{--accent:#e9b85a;--accent-dark:#f5d79a;--accent-soft:#2b2312;--accent-line:#5c4a22;--accent-glow:rgba(233,184,90,.2);--hl-key:#efc677;--hl-key-bg:#33290f;--hl-formula:#f5d79a;--hl-formula-bg:#2b2312;}
+
+/* poziomy olimpijskie 2–4 (wspólne lekcje E8: warstwy dopisane w tej samej lekcji) */
+.poz{display:inline-flex;align-items:center;gap:5px;font:800 11.5px/1 Inter,system-ui;padding:4px 9px;border-radius:999px;border:1px solid var(--accent-line);background:var(--accent-soft);color:var(--accent);vertical-align:middle}
+.poz::before{content:"";width:22px;height:6px;border-radius:3px;background:linear-gradient(90deg,var(--accent) var(--poz-w,33%),var(--accent-line) 0)}
+.poz-2{--poz-w:33%}.poz-3{--poz-w:66%}.poz-4{--poz-w:100%}
+.zad-konk{border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:12px 16px;margin:14px 0;background:var(--surface)}
+.zad-konk>b:first-child{display:flex;justify-content:space-between;gap:10px;margin-bottom:6px}
+.zad-konk .pkt{font:800 12px Inter,system-ui;color:var(--accent);white-space:nowrap}
+
+/* Styl klocków laboratoryjnych (palniki, probówki, układ okresowy) — dobrany do motywu che:
+   jasna karta lekcji (--surface), akcent --accent, tekst --text. Scena z płótnem zostaje ciemna
+   (płomienie i poświaty wyglądają na ciemnym tle), reszta jak w sekcjach lekcji. */
+:root{--lab:#0e2326;--lab-tekst:var(--text,#1a2332);--lab-cisza:var(--text-muted,#8892a0);--lab-linia:var(--border,#e5e9ee)}
+.lab{background:var(--surface,#fff);color:var(--text,#1a2332);border:1px solid var(--border,#e5e9ee);border-radius:var(--r-lg,14px);padding:16px;box-shadow:var(--sh-sm,none);font-family:var(--tekst,Inter,system-ui,sans-serif)}
+.lab-pasek{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between;margin-bottom:12px}
+.lab-pasek .btn{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+.lab-cisza{color:var(--text-muted,#8892a0);font-size:14px}
+.btn{appearance:none;cursor:pointer;border:1px solid var(--accent,#0d6868);background:var(--accent,#0d6868);color:#fff;border-radius:var(--r-md,10px);padding:8px 14px;font:600 13px var(--tekst,Inter,sans-serif)}
+.btn.jasny{background:var(--surface,#fff);color:var(--accent,#0d6868)}
+.btn:hover{filter:brightness(1.08)}
+.btn:focus-visible{outline:2px solid var(--accent,#0d6868);outline-offset:2px}
+.btn[disabled]{opacity:.4;cursor:not-allowed}
+.stacje{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.st{display:flex;flex-direction:column;background:none;border:none;padding:0;min-width:0}
+.st-opis{margin-top:auto;display:flex;flex-direction:column;justify-content:flex-end}
+.st canvas,.rack canvas{display:block;width:100%;height:auto;cursor:pointer;background:var(--lab,#0e2326);border-radius:var(--r-md,10px);margin:6px 0 4px}
+.rack{margin:0 auto}
+.rack-kol{display:grid;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));gap:8px}
+.rack-ce{padding:0 6px;min-width:0;display:flex;flex-direction:column}
+.rack-ce.st-opis{justify-content:flex-end}
+.rack .wyb-gr{display:none}
+.rack .rown{font-size:14px}
+.rack-ce .btn,.st .btn{padding:6px 10px;font-size:12px}
+.st-opis{font-size:14px;color:var(--text,#1a2332)}
+.st-opis p{margin:0 0 6px}
+.rown{font:600 15px var(--naglowek,Inter,sans-serif);color:var(--text,#1a2332)}
+.obs{font-size:14px;color:var(--text-soft,#4a5568)}
+.meta{font-size:12.5px;color:var(--text-muted,#8892a0);display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-bottom:8px}
+.meta .pasek{background:var(--border,#e5e9ee);width:90px;height:8px;display:inline-block;vertical-align:middle;margin-left:6px;border-radius:99px;overflow:hidden}
+.meta .pasek i{display:block;height:100%;background:var(--accent,#0d6868)}
+.ostrz{color:var(--c-error,#b83a45);font-size:13px}
+.zak{display:flex;gap:10px;align-items:center;background:var(--c-warn-bg,#fcf4e6);border:1px solid var(--c-warn-line,#eed8a8);border-radius:var(--r-md,10px);padding:8px 10px;font-size:13px;line-height:1.35;margin:8px 0;color:var(--text,#1a2332)}
+.zak-ik{display:flex;gap:4px;flex:none}
+.el .tr{position:absolute;right:2px;bottom:2px;display:flex}
+.sz{position:relative}
+.sz .tr{position:absolute;top:2px;right:2px;display:flex}
+.tr2{display:flex;font-style:normal;margin-left:auto}
+.kol{display:flex;align-items:center;gap:10px;font-size:15px;color:var(--text,#1a2332)}
+.sw{width:20px;height:20px;border-radius:50%;flex:none;box-shadow:0 0 12px var(--glow,transparent)}
+.sw.pusty{border:2px dashed var(--border-strong,#cdd5dd)}
+.wyb-sym{position:relative;min-width:0}
+.wyb-sym>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:6px;font:700 15px var(--naglowek,Inter,sans-serif);color:var(--text,#1a2332);padding:4px 8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-sm,6px);background:var(--surface,#fff)}
+.wyb-sym>summary::-webkit-details-marker{display:none}
+.wyb-tri{display:inline-block;font-size:11px;color:var(--accent,#0d6868);transition:transform .15s}
+.wyb-sym[open] .wyb-tri{transform:rotate(90deg)}
+.wyb-lista{display:grid;gap:6px;margin:6px 0 8px;padding:8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-md,10px);background:var(--surface,#fff)}
+.wyb-g{display:block;font-size:11px;color:var(--text-muted,#8892a0);margin-bottom:3px}
+.wyb-sy{appearance:none;cursor:pointer;border:1px solid var(--border-strong,#cdd5dd);background:var(--surface-soft,#f6f8fa);color:var(--text,#1a2332);border-radius:var(--r-sm,6px);padding:4px 9px;margin:0 4px 4px 0;font:600 13px var(--naglowek,Inter,sans-serif)}
+.wyb-sy[aria-pressed="true"]{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+/* telefon: kilka stojaków obok siebie — węższy tekst, łamanie długich nazw */
+.kol{min-width:0}
+.kol b{overflow-wrap:anywhere;min-width:0}
+.st-opis{font-size:13px}
+.kol{font-size:14px}
+.stacje{gap:8px}
+.rack-kol{gap:6px}
+@media (max-width:480px){.st-opis .obs{font-size:12.5px}.st .btn,.rack-ce .btn{padding:5px 8px;font-size:12px}}
+.seria-przyciski{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+.seria-btn[aria-pressed="false"]{background:transparent;color:var(--accent,#0d6868)}
+.seria-btn[aria-pressed="true"]{background:var(--accent,#0d6868);color:#fff}
+.seria-opis{margin:0 0 10px;font-size:14px;color:var(--lab-cisza,#8892a0)}
+
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+<header class="lk-bar"><span class="lk-subj"><i></i>Olimpiada</span><span class="lk-title">LKO-ORG08 &quot;Mol, objętość molowa i wzory elementarne — rachunkowa puenta serii&quot;</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<main class="page" id="main">
+<section class="hero card"><div class="hero-kicker">"ORG08 · mol i gazy"</div><h1>"Mol, objętość molowa i wzory elementarne — rachunkowa puenta serii"</h1><p class="lead">"Cztery wzory, jeden trójkąt konwersji i procedura ustalania wzorów z procentów — narzędzia, na których stoi każdy arkusz wojewódzki."</p><div class="tag-row">["mol", "objętość molowa"]</div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#minimum">Minimum E8</a><a class="toc-link" href="#jak-pracowac">0.1. Jak pracować z lekcją</a><a class="toc-link" href="#diagnoza">0.2. Diagnoza</a><a class="toc-link" href="#trojkat">1. Wykład — trójkąt konwersji: m–n–N–V</a><a class="toc-link" href="#objestosc">2. Wykład — objętość molowa i stosunki objętościowe</a><a class="toc-link" href="#wzory">3. Wykład — wzory elementarne i rzeczywiste: procedura procentów</a><a class="toc-link" href="#dosw">4. Doświadczenie</a><a class="toc-link" href="#zadania">5. Zadania</a><a class="toc-link" href="#zadania-adv">6. Zadania konkursowe</a><a class="toc-link" href="#s1">7. Fiszki</a><a class="toc-link" href="#s2">8. Test kontrolny</a><a class="toc-link" href="#s3">9. Słownik</a><a class="toc-link" href="#s4">Do weryfikacji</a></nav></details>
+<section id="minimum" class="minimum-card"><h3>Muszę umieć — 10 punktów</h3>
+<ol>
+<li>Zdefiniować mol (liczność) i podać liczbę Avogadra (6,02·10²³ mol⁻¹; dokładnie 6,02214076·10²³).</li>
+<li>Stosować cztery wzory konwersji: n = m/M; m = n·M; N = n·N_A; V = n·Vₘ (i odwrotnie).</li>
+<li>Podać objętość molową gazów Vₘ = 22,4 dm³/mol w warunkach normalnych (0 °C, p ≈ 1013 hPa) i stosować ją do gazów.</li>
+<li>Stosować prawo Avogadra i wniosek: w reakcjach gaz–gaz stosunki objętościowe = stosunki współczynników (bez liczenia moli!).</li>
+<li>Obliczać gęstość względną gazów: d = M/M(wzorca); względem powietrza M ≈ 29, względem wodoru M = 2.</li>
+<li>Ustalać wzór rzeczywisty gazów z gęstości względnej (M = d · M(wzorca)).</li>
+<li>Rozróżniać wzór elementarny (najprostszy stosunek atomów) i rzeczywisty (rzeczywista liczba atomów); związek: M = k · M(elementarnego).</li>
+<li>Przeprowadzać pełną procedurę: % masowe → liczby moli atomów → stosunek elementarny → (z M) wzór rzeczywisty.</li>
+<li>Wskazywać pułapki: wzory elementarne wspólne dla wielu związków (CH₂O → C₂H₄O₂ i C₆H₁₂O₆); objętości — tylko dla gazów.</li>
+<li>Liczyć zadania łańcuchowe łączące objętości, masy i wydajność (R09) — na związkach z całej serii organiki.</li>
+</ol>
+</section>
+<div class="layer-legend">
+
+</div>
+<div class="core-path">
+<div class="cp-title">Rdzeń lekcji — najpierw to</div>
+<ol>
+<li><a href="#trojkat">Trójkąt konwersji m–n–N–V</a> — cztery wzory i ich kierunki.</li>
+<li><a href="#objestosc">Objętość molowa i stosunki objętościowe</a> — prawo Avogadra, gaz–gaz bez moli.</li>
+<li><a href="#gestosc">Gęstość względna</a> — d = M/M(wzorca), odczytywanie M gazów.</li>
+<li><a href="#wzory">Wzory elementarne i rzeczywiste</a> — pełna procedura procentów.</li>
+<li><a href="#zadania">Zadania exam</a> i <a href="#zadania-adv">zadania adv</a>.</li>
+</ol>
+</div>
+<section id="jak-pracowac">
+<div class="part-heading"><span class="part-num">0.1</span> Jak pracować z lekcją</div>
+<p>To lekcja-rachmistrz serii: bez jej narzędzi zadania wojewódzkie z ORG01–ORG07 zatrzymują się w połowie. Fundament masz z R04 (mol, masa molowa) — tu dochodzą dwie nowości: <strong>objętość molowa gazów</strong> i <strong>wzory elementarne</strong>. Każdą procedurę przećwicz na przykładach z lekcji, a potem na zadanach; kontroluj zawsze jednostki (g, mol, dm³) i rząd wielkości. Karty <code>odp</code> otwieraj po własnym zapisie — rachunku nie da się zrozumieć czytając klucz.</p>
+</section>
+<section id="diagnoza">
+<div class="part-heading"><span class="part-num">0.2</span> Diagnoza</div>
+<ol>
+<li>Ile moli stanowi 88 g CO₂ (M = 44 g/mol)?</li>
+<li>Ile dm³ zajmuje ten gaz w warunkach normalnych?</li>
+<li>Względem czego porównujemy gęstość gazów i jaki wzór stosujemy dla powietrza (M ≈ 29)?</li>
+<li>Czym różni się wzór elementarny od rzeczywistego? Podaj przykład pary związków o wspólnym wzorze elementarnym.</li>
+<li>Związek zawiera 40% C, 6,7% H, 53,3% O (masowe). Podaj wzór elementarny.</li>
+</ol>
+<details class="answer"><summary>Klucz diagnozy</summary>
+<ol>
+<li>n = 88/44 = <strong>2 mol</strong> (1 pkt).</li>
+<li>V = 2 · 22,4 = <strong>44,8 dm³</strong> (1 pkt).</li>
+<li>Względem wzorca (powietrze M ≈ 29, wodór M = 2); d = M(gazu)/M(powietrza) (1 pkt).</li>
+<li>Elementarny — najprostszy stosunek atomów; rzeczywisty — rzeczywista liczba atomów w cząsteczce; przykład: CH₂O wspólne dla kwasu octowego C₂H₄O₂ i glukozy C₆H₁₂O₆ (1 pkt).</li>
+<li>CH₂O (1 pkt; procedura w sekcji 4).</li>
+</ol>
+<p><strong>Rozliczenie:</strong> 5 pkt — prosto do zadań exam; 3–4 pkt — pełna praca przez rdzeń; 0–2 pkt — najpierw R04 i R09, potem lekcja od początku.</p>
+</details>
+</section>
+<section id="trojkat">
+<div class="part-heading"><span class="part-num">1</span> Wykład — trójkąt konwersji: m–n–N–V</div>
+<figure class="lk-fig" data-klocek="trojkat-przeliczen" data-opt="{&quot;wzor&quot;: &quot;gaz&quot;}"><div class="lk-fig-body"></div><figcaption>Trójkąt konwersji: masa, mole i objętość gazu</figcaption></figure>
+<!-- OPIS: Wierzchołki: masa m u góry, liczba moli n w lewym dolnym rogu, objętość gazu V w prawym. Lewy bok to masa molowa (÷ M z masy, × M do masy), dolny bok to objętość molowa (× Vₘ z moli do objętości, ÷ Vₘ z powrotem). Wniosek: dla gazów objętość liczymy przez mole, nie bezpośrednio z masy. -->
+<p>R04 dało ci trzy wierzchołki: masa <strong>m</strong> (g), liczba moli <strong>n</strong> (mol), liczba cząstek <strong>N</strong>. Etap III dokłada czwarty: objętość gazu <strong>V</strong> (dm³). Cztery wzory łączą wszystkie pary przez mol:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Z</th><th>Do</th><th>Wzór</th><th>Uwagi</th></tr></thead>
+<tbody>
+<tr><td>m (g)</td><td>n (mol)</td><td><strong>n = m/M</strong></td><td>M w g/mol, z masy atomowej i wzoru</td></tr>
+<tr><td>n (mol)</td><td>m (g)</td><td><strong>m = n·M</strong></td><td>odwrotność</td></tr>
+<tr><td>n (mol)</td><td>N (cząstki)</td><td><strong>N = n·N_A</strong></td><td>N_A = 6,02·10²³ mol⁻¹</td></tr>
+<tr><td>N (cząstki)</td><td>n (mol)</td><td><strong>n = N/N_A</strong></td><td>odwrotność</td></tr>
+<tr><td>n (mol)</td><td>V (dm³)</td><td><strong>V = n·Vₘ</strong></td><td><strong>tylko gazy</strong>; Vₘ = 22,4 dm³/mol</td></tr>
+<tr><td>V (dm³)</td><td>n (mol)</td><td><strong>n = V/Vₘ</strong></td><td>tylko gazy, warunki normalne</td></tr>
+</tbody></table></div>
+<p>Drogi „na przełaj" — m → N i m → V — zawsze przez mol (dwa kroki). Objętość nie działa dla cieczy i ciał stałych (tam jest własnością indywidualną, nie stałą porcji — porównaj 1 mol wody: 18 g, ale tylko ok. 18 cm³!).</p>
+<p><strong>Warunki normalne</strong> to umowny punkt odniesienia: temperatura 0 °C i ciśnienie ≈ 1013 hPa (1 atm). Przy tych warunkach <strong>każdy gaz</strong> zajmuje Vₘ = 22,4 dm³ na mol — niezależnie, czy to metan, CO₂ czy mieszanina. Przy temperaturze pokojowej objętość molowa jest większa (ok. 24 dm³/mol — wartość orientacyjna; w zadaniach konkursowych domyślnie 22,4).</p>
+<p><strong>Liczba Avogadro:</strong> N_A = 6,02·10²³ mol⁻¹ w rachunkach szkolnych; od reformy SI 2019 r. wartość dokładna: <strong>6,02214076·10²³ mol⁻¹</strong> (mol zdefiniowano właśnie przez tę liczbę — bez uzależnienia od masy wzorca).</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie — mapa konwersji w jednej karcie</span>
+<p>Gramy → mole: dziel przez M. Mole → gramy: mnoż przez M. Mole → cząstki: mnoż przez 6,02·10²³. Cząstki → mole: dziel przez 6,02·10²³. Mole → dm³ (gaz!): mnoż przez 22,4. dm³ → mole: dziel przez 22,4. Każde „dalekie" przejście = dwa kroki przez mol. Kontrola błędów: jednostki na każdym kroku i rząd wielkości (mol gazu to zawsze dziesiątki dm³, masa mola — dziesiątki–setki gramów).</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Sześcian molowy — 22,4 dm³ w rękach</span>
+<p>22,4 dm³ to sześcian o boku ok. 28,2 cm (∛22400 ≈ 28,2) — klasyczna kostka do gry. W takiej przestrzeni, w warunkach normalnych, mieści się dokładnie 6,02·10²³ cząsteczek <strong>dowolnego</strong> gazu. W 1 cm³ tego samego gazu „upchnięto"by ok. 2,7·10¹⁹ cząsteczek (6,02·10²³/22400 ≈ 2,69·10¹⁹ — tzw. liczba Loschmidta; wartość zaokrąglona, do weryfikacji): to rząd wielkości 10¹⁹ cząsteczek.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Cząsteczki w kropli — rachunek, który robi wrażenie</span>
+<p>1 cm³ wody = 1 g = 1/18 mol = 0,0556 mol → N = 0,0556 · 6,02·10²³ ≈ <strong>3,3·10²² cząsteczek</strong>. Kropla (ok. 0,05 cm³ — zależnie od pipety; do weryfikacji) zawiera więc rzędu 10²¹ cząsteczek. Liczby atomowe w chemii są ogromne dlatego, że cząsteczki są mikroskopijne — mol to porcja skalowana pod odważanie, nie pod wyobraźnię.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Skąd wzięła się nazwa „mol”</span>
+<p>Słowo „mol” wprowadził niemiecki chemik fizyczny Wilhelm Ostwald (ok. 1893 r.), od łac. <em>moles</em> — „masa, ilość”. Amedeo Avogadro sformułował swoją hipotezę o równych liczbach cząsteczek w równych objętościach gazów już w 1811 r., ale uznanie jej przyszło dopiero po Kongresie w Karlsruhe (1860), gdy Stanislao Cannizzaro przekonał środowisko do spójnych mas atomowych i cząsteczkowych. Dziś to zwykła praca laboratorium: jedna wielka liczba, nazwana na cześć człowieka, który na nią nie zdążył. (Daty do weryfikacji.)</p>
+</div>
+</section>
+<section id="objestosc">
+<div class="part-heading"><span class="part-num">2</span> Wykład — objętość molowa i stosunki objętościowe</div>
+<p><strong>Prawo Avogadro:</strong> w równych objętościach różnych gazów (te same T i p) jest <strong>ta sama liczba cząsteczek</strong>. Skąd to wiadomo? Z tysięcy pomiarów reakcji gazowych — i właśnie to prawo wyjaśnia najpraktyczniejszy wniosek olimpijski:</p>
+<p><strong>W reakcji, w której substraty i produkty są gazami, stosunek objętości = stosunek współczynników równania.</strong></p>
+<p>Nie trzeba liczyć moli, mas ani objętości molowych — objętości zachowują się jak współczynniki:</p>
+<ul>
+<li>spalanie propanu: C₃H₈ + 5O₂ → 3CO₂ + 4H₂O(ł) → na <strong>1 dm³</strong> propanu: <strong>5 dm³</strong> O₂ i <strong>3 dm³</strong> CO₂ (para wodna po ochłodzeniu — ciecz, jej objętości nie liczymy w gazach spalin);</li>
+<li>synteza amoniaku: N₂ + 3H₂ → 2NH₃ → z 10 dm³ N₂ i 30 dm³ H₂: <strong>20 dm³</strong> NH₃ (spadek objętości 40 → 20 dm³ — typowe pytanie o zmianę objętości);</li>
+<li>addycja HCl do propenu (ORG02): 1 : 1 — z 5,6 dm³ propenu przy 5,6 dm³ HCl: 5,6 dm³ chloropropanu (1 cząsteczka → 1 cząsteczka).</li>
+</ul>
+<p>Kontrola sensu: objętości się <strong>nie zmieniają w stosunku mas</strong> — masa gazu w 22,4 dm³ zależy od M (metan 16 g, CO₂ 44 g); objętość mówi tylko o liczbie cząstek.</p>
+<p><strong>Gęstość względna</strong> — sposób na M nieznanego gazu:</p>
+<p><strong>d = M(gazu) / M(wzorca)</strong> — „ile razy gaz cięższy od wzorca".</p>
+<p>Wzorce i ich M: <strong>powietrze ≈ 29 g/mol</strong> (średnia mieszaniny 78% N₂ — 28, 21% O₂ — 32; wartość przybliżona standardowa), <strong>wodór = 2 g/mol</strong>. Przykłady:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Gaz</th><th>M</th><th>d wzgl. powietrza (÷29)</th><th>d wzgl. wodoru (÷2)</th></tr></thead>
+<tbody>
+<tr><td>metan CH₄</td><td>16</td><td>0,55 (lżejszy)</td><td>8</td></tr>
+<tr><td>eten C₂H₄</td><td>28</td><td>0,97 (na granicy)</td><td>14</td></tr>
+<tr><td>propan C₃H₈</td><td>44</td><td>1,52 (cięższy)</td><td>22</td></tr>
+<tr><td>CO₂</td><td>44</td><td>1,52</td><td>22</td></tr>
+</tbody></table></div>
+<p>Odczyt odwrotny: <strong>M = d · M(wzorca)</strong> — gaz o d = 1,52 względem powietrza ma M = 1,52 · 29 ≈ 44. To brama do wzorów rzeczywistych (sekcja 4).</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie — gaz–gaz w trzech krokach bez moli</span>
+<p>(1) Zbilansuj równanie. (2) Objętości gazów przepisz proporcjonalnie do współczynników (dm³ jak mole). (3) Para wodna po ochłodzeniu — ciecz: wyłącz ją z bilansu objętości. Przykład: 10 dm³ butanu (2C₄H₁₀ + 13O₂ → 8CO₂ + 10H₂O): O₂ = 10·13/2 = 65 dm³; CO₂ = 10·8/2 = 40 dm³; H₂O — pomijamy w objętościach.</p>
+</div>
+<div class="card card-error">
+<span class="card-label">Objętość molowa dla cieczy — klasyczny fałszywy krok</span>
+<p>„1 mol wody ma 22,4 dm³" — błąd. Vₘ = 22,4 dm³/mol działa <strong>wyłącznie dla gazów</strong>. 1 mol wody to 18 g i ok. 18 cm³ (gęstość 1 g/cm³); 1 mol glukozy — ok. 120 cm³ (M = 180, gęstość ~1,5 g/cm³ — orientacyjnie). Objętość cieczy/ciała stałego zależy od upakowania cząsteczek; objętość gazu — tylko od ich liczby. W zadaniach: V = n·22,4 piszemy tylko przy symbolu gazu (CO₂(g), H₂(g), NH₃(g)).</p>
+</div>
+</section>
+<section id="wzory">
+<div class="part-heading"><span class="part-num">3</span> Wykład — wzory elementarne i rzeczywiste: procedura procentów</div>
+<p><strong>Wzór elementarny</strong> to najprostszy całkowity stosunek atomów w związku. <strong>Wzór rzeczywisty (sumaryczny)</strong> — rzeczywista liczba atomów w cząsteczce. Zawsze:</p>
+<p><strong>M(rzeczywisty) = k · M(elementarnego)</strong>, gdzie k = 1, 2, 3, ...</p>
+<p>Procedura z procentów masowych (klasyka wojewódzka — krok po kroku):</p>
+<ol>
+<li>Przyjmij <strong>100 g</strong> związku → procenty stają się gramami.</li>
+<li>Przelicz masy pierwiastków na <strong>mole atomów</strong>: n = m/A (A — masa atomowa).</li>
+<li>Podziel wszystkie wyniki przez <strong>najmniejszy</strong> → stosunek elementarny (zaokrąglaj do bliskich liczb całkowitych; 0,5 lub 0,33/0,67 podpowiedzi mnożenie ×2/×3).</li>
+<li>Zapisz <strong>wzór elementarny</strong> i policz M(elementarnego).</li>
+<li>Jeśli masz <strong>M rzeczywiste</strong> (z gęstości względnej albo danych) → k = M/M(el.) → <strong>wzór rzeczywisty</strong>.</li>
+</ol>
+<p><strong>Przykład 1 — domknięcie ORG05.</strong> Związek: 40,0% C, 6,7% H, 53,3% O; M = 60 g/mol.</p>
+<ol>
+<li>100 g → m(C) = 40 g; m(H) = 6,7 g; m(O) = 53,3 g.</li>
+<li>n(C) = 40/12 = 3,33 mol; n(H) = 6,7/1 = 6,7 mol; n(O) = 53,3/16 = 3,33 mol.</li>
+<li>Dziel przez 3,33: C — 1; H — 2,01 → 2; O — 1,00.</li>
+<li>Wzór elementarny: <strong>CH₂O</strong>; M(el.) = 12 + 2 + 16 = 30 g/mol.</li>
+<li>k = 60/30 = 2 → wzór rzeczywisty: <strong>C₂H₄O₂</strong> — kwas octowy (albo mrówczan metylu HCOOCH₃ — izomery funkcjonalne, ORG06).</li>
+</ol>
+<p><strong>Przykład 2 — domknięcie ORG07.</strong> Te same procenty (40,0/6,7/53,3), ale M = 180 g/mol:</p>
+<p>k = 180/30 = 6 → <strong>C₆H₁₂O₆</strong> — glukoza!</p>
+<p>Ten sam wzór elementarny, dwa różne rzeczywiste — CH₂O to wspólny „przodek" kwasu octowego i glukozy; sam w sobie jest tylko proporcją, nie substancją.</p>
+<p><strong>Przykład 3 — domknięcie ORG02.</strong> Węglowodór: 85,7% C, 14,3% H; gęstość względem powietrza d ≈ 1,93.</p>
+<p>1–3. n(C) = 85,7/12 = 7,14; n(H) = 14,3/1 = 14,3 → dziel przez 7,14: C 1; H 2 → <strong>CH₂</strong>; M(el.) = 14.
+4. M = 1,93 · 29 ≈ 56 g/mol.
+5. k = 56/14 = 4 → <strong>C₄H₈</strong> — buten (alken; CₙH₂ₙ ✔).</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie — wzór elementarny vs rzeczywisty w trzech liniach</span>
+<p>Elementarny = proporcja (CH₂O); rzeczywisty = substancja (C₂H₄O₂). Bez M rzeczywistego nie ma wzoru rzeczywistego — procenty dają tylko proporcję. Jeden elementarny, wiele rzeczywistych: CH₂O → C₂H₄O₂ (k = 2, np. kwas octowy) albo C₆H₁₂O₆ (k = 6, glukoza); każde k daje inną substancję. Na konkursie: policz elementarny, sprawdź, czy M się zgadza z k = 1 — jeśli nie, dopiero wtedy mnoż.</p>
+</div>
+<div class="card card-error">
+<span class="card-label">Odczytywanie M z gęstości — dwa typowe błędy</span>
+<p>(1) Pomnożenie przez złego wzorca: d względem <strong>wodoru</strong> wymaga M = d · 2, względem <strong>powietrza</strong> — M = d · 29; w zadaniu zawsze jest napisane „względem czego". (2) Trzymanie się d jako „gęstości w g/dm³": gęstość względna jest <strong>liczbą bez jednostki</strong> (porównanie dwóch gęstości); gęstość absolutna gazu w warunkach normalnych to M/22,4 g/dm³ — to inna wielkość. Przykład: CO₂ — d(powietrze) = 1,52, ale ρ = 44/22,4 ≈ 1,96 g/dm³.</p>
+</div>
+</section>
+<section id="dosw">
+<div class="part-heading"><span class="part-num">4</span> Doświadczenie</div>
+<div class="exp-card"><h5>Doświadczenie 1 — Wytworzenie i pomiar wodoru: kontrola objętości molowej (demonstracja)</h5><div class="exp-grid"></div><p><strong>Problem:</strong> Czy z odważonej porcji cynku można przewidzieć objętość wodoru — i czy pomiar potwierdzi Vₘ = 22,4 dm³/mol?</p>
+<p><strong>Hipoteza:</strong> Zn + 2HCl → ZnCl₂ + H₂↑; z 3,25 g cynku (0,05 mol) powstanie 0,05 mol H₂, czyli teoretycznie 0,05 · 22,4 = 1,12 dm³ — pomiar odwróconym cylindrem nad wanienką powinien dać wartość bliską (poprawki: temperatura pokojowa zwiększy objętość, rozpuszczalność H₂ w wodzie minimalnie zmniejszy; porównujemy rzędy wielkości).</p>
+<p><strong>Sprzęt:</strong> kolba z korkiem i rurką odprowadzającą, odwrócony cylinder miarowy (lub butelka z podziałką) nad wanienką wodną, cynk granulowany (3,25 g — odważone), rozcieńczony kwas solny, okulary i rękawice — <strong>demonstracja nauczycielska</strong>.</p>
+<p><strong>Przebieg:</strong>
+1. Wypełnij cylinder wodą, odwróć nad wanienką (koniec nie może się wynurzyć).
+2. Do kolby wsyp cynk, wlej kwas, zamknij korkiem z rurką prowadzącą pod cylinder.
+3. Gazy zbieraj nad wodą; po ustaniu reakcji odczytaj objętość H₂ przy wyrównaniu poziomów wody.
+4. Porównaj z przewidywaniem (1,12 dm³ — warunki normalne; przy ~20 °C oczekuj ok. 7% więcej (293/273) — jakościowo).</p>
+<p><strong>Obserwacje:</strong> na cynku intensywne bąbelki; cylinder wypełnia się gazem; objętość końcowa rzędu ~1,1–1,2 dm³ (zależnie od warunków pomiaru).</p>
+<p><strong>Wniosek:</strong> 3,25 g Zn = 0,05 mol → 0,05 mol H₂ → teoretycznie 1,12 dm³ (Vₘ = 22,4 dm³/mol). Pomiar potwierdza rząd wielkości i ideę: masa substratu → mole → objętość gazu. Różnice rzędu kilku % to temperatura pomiaru, ciśnienie pary wodnej nad wodą i rozpuszczalność H₂ — dokładna analiza poprawek poza zakresem.</p>
+<p><strong>Bezpieczeństwo:</strong> H₂ — palny (próba zapłonu dopiero po zdjęciu cylindra, mała probówka, strona od twarzy); kwas — rękawice i okulary; sprawdzić szczelność przed startem; nie prowadzić przy otwartym ogniu.</p></div>
+</section>
+<section id="zadania">
+<div class="part-heading"><span class="part-num">5</span> Zadania</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 1 (4 pkt) — Trójkąt konwersji na CO₂</span>
+<p>Dla <strong>88 g CO₂</strong> (M = 44 g/mol) oblicz: (a) liczbę moli; (b) liczbę cząsteczek; (c) objętość w warunkach normalnych; (d) gęstość względną względem powietrza (M ≈ 29) i wniosek o zbieraniu gazu.</p>
+</div>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>(a) n = 88/44 = <strong>2 mol</strong> (1 pkt). (b) N = 2 · 6,02·10²³ = <strong>1,204·10²⁴ cząsteczek</strong> (1 pkt). (c) V = 2 · 22,4 = <strong>44,8 dm³</strong> (1 pkt). (d) d = 44/29 ≈ <strong>1,52</strong> — CO₂ cięższy od powietrza (można zbierać wypieraniem powietrza do zlewki „dnem w dół" — gaz opada) (1 pkt).</p>
+</details>
+<div class="card card-exam">
+<span class="card-label">Zadanie 2 (5 pkt) — Stosunki objętościowe: spalanie propanu</span>
+<p>Spalano <strong>5 dm³ propanu</strong> (C₃H₈ + 5O₂ → 3CO₂ + 4H₂O). Oblicz: (a) objętość O₂ potrzebną do spalania; (b) objętość CO₂ powstającą; (c) objętość powietrza (21% O₂ — N01); (d) dlaczego pary wodnej nie uwzględnia się w objętościach spalin; (e) ile moli propanu odpowiada 5 dm³ (warunki normalne) i jaką masę ma ta porcja?</p>
+</div>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>(a) Stosunek 1 : 5 → <strong>25 dm³</strong> (1 pkt). (b) 1 : 3 → <strong>15 dm³</strong> (1 pkt). (c) 25/0,21 ≈ <strong>119 dm³</strong> (1 pkt; dokładnie 119,05). (d) Po ochłodzeniu H₂O jest cieczą — z bilansu gazów wypada (1 pkt). (e) n = 5/22,4 ≈ 0,223 mol; m ≈ 0,223 · 44 ≈ <strong>9,8 g</strong> (1 pkt).</p>
+</details>
+<div class="card card-exam">
+<span class="card-label">Zadanie 3 (5 pkt) — Wzór elementarny z procentów</span>
+<p>Związek zawiera 85,7% C i 14,3% H (masowo); jego gęstość względem powietrza wynosi d ≈ 1,45 (M ≈ 42 g/mol). (a) Przeprowadź procedurę: masy → mole atomów → stosunek elementarny. (b) Podaj wzór elementarny i jego M. (c) Oblicz k i wzór rzeczywisty. (d) Do jakiej grupy węglowodorów należy ten związek (wzór ogólny)? (e) Podaj dwie możliwe tożsamości (nazwy) związku.</p>
+</div>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>(a) 100 g: n(C) = 85,7/12 = 7,14; n(H) = 14,3/1 = 14,3 → dziel przez 7,14: C 1,00; H 2,00 → stosunek C : H = 1 : 2 (1,5 pkt). (b) Wzór elementarny <strong>CH₂</strong>; M(el.) = 14 g/mol (0,5 pkt). (c) k = 42/14 = 3 → <strong>C₃H₆</strong> (2 pkt: 1 k, 1 wzór). (d) CₙH₂ₙ — alkeny (0,5 pkt). (e) Propen (propylen); ewentualnie cyklopropan (izomer C₃H₆ bez wiązania podwójnego — nazwa nieobowiązkowa) (0,5 pkt).</p>
+</details>
+<div class="card card-exam">
+<span class="card-label">Zadanie 4 (4 pkt) — Gęstość względna w obie strony</span>
+<p>(a) Oblicz d metanu (CH₄) względem powietrza (M ≈ 29) i wniosek o zbieraniu nad cieczą/powietrzem. (b) Gaz ma d = 2,22 względem powietrza — oblicz jego M i zaproponuj tożsamość (z serii organiki; M ∈ {58, 64,5}). (c) Ile waży 1 dm³ tego gazu w warunkach normalnych (gęstość absolutna)? (d) Dlaczego d jest liczbą bez jednostki?</p>
+</div>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>(a) d = 16/29 ≈ <strong>0,55</strong> — metan lżejszy od powietrza (można zbierać naczyniem dnem do góry lub nad cieczą) (1 pkt). (b) M = 2,22 · 29 ≈ <strong>64,5 g/mol</strong> → chloroetan C₂H₅Cl (24 + 5 + 35,5 = 64,5) (1,5 pkt). (c) ρ = M/Vₘ = 64,5/22,4 ≈ <strong>2,88 g/dm³</strong> (1 pkt). (d) To iloraz dwóch gęstości w tych samych jednostkach — jednostki się skracają (0,5 pkt).</p>
+</details>
+</section>
+<section id="zadania-adv">
+<div class="part-heading"><span class="part-num">6</span> Zadania konkursowe</div>
+<details class="adv"><summary>Zadanie 5 (6 pkt) — Wzór rzeczywisty z gęstości: pełny łańcuch <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Związek organiczny zawiera 40,0% C, 6,7% H i 53,3% O (masowo); jego gęstość względem powietrza wynosi d ≈ 2,07.
+(a) Ustal wzór elementarny (pełna procedura).
+(b) Oblicz M rzeczywiste z gęstości względnej (M powietrza ≈ 29).
+(c) Ustal wzór rzeczywisty.
+(d) Podaj <strong>dwie</strong> możliwe tożsamości związku (z serii organiki) i rozstrzygnij, jaką jedną próbą je rozróżnisz.
+(e) Uczeń stwierdził: „wzór elementarny CH₂O to formaldehyd". Oceń — co jest nie tak?</p>
+</div></details>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>(a) 100 g → 40/12 = 3,33; 6,7/1 = 6,7; 53,3/16 = 3,33 → 1 : 2 : 1 → <strong>CH₂O</strong> (M(el.) = 30) (2 pkt).
+(b) M = 2,07 · 29 ≈ <strong>60 g/mol</strong> (1 pkt).
+(c) k = 60/30 = 2 → <strong>C₂H₄O₂</strong> (1 pkt).
+(d) Dwie tożsamości C₂H₄O₂: <strong>kwas octowy</strong> CH₃COOH i <strong>mrówczan metylu</strong> HCOOCH₃ (izomery funkcjonalne: kwas i ester, ORG06). Rozróżnienie: lakmus — kwas octowy czerwieni lakmus, mrówczan metylu jest obojętny (1,5 pkt: 0,5 × 2 tożsamości, 0,5 próba).
+(e) Formaldehyd to CH₂O rzeczywisty (M = 30) — wzór elementarny równy rzeczywistemu tylko, gdy k = 1; nasz związek ma M = 60, więc CH₂O jest tylko proporcją (1 pkt).</p>
+</details>
+<details class="adv"><summary>Zadanie 6 (7 pkt) — Eten przez trzy reaktory: objętości, wydajność, gęstość <span class="adv-tag">poziom ambitny</span></summary><div class="adv-body">
+<p>Do instalacji wchodzi <strong>11,2 dm³ etenu</strong> (warunki normalne; Vₘ = 22,4 dm³/mol). Etap 1 — addycja HCl (wydajność 90%): CH₂=CH₂ + HCl → CH₃CH₂Cl. Etap 2 — reszta etenu (nieprzekształcona) przechodzi addycję Br₂ (1 : 1; M(Br₂) = 160 g/mol — wartość podręcznikowa). M(C₂H₅Cl) = 64,5 g/mol.
+(a) Oblicz liczbę moli etenu na wejściu.
+(b) Oblicz liczbę moli i masę chloroetanu z etapu 1.
+(c) Oblicz gęstość względną chloroetanu względem powietrza (M ≈ 29) i porównaj z CO₂ — który jest cięższy?
+(d) Oblicz masę Br₂ zużytą w etapie 2.
+(e) Oblicz łączną objętość H₂ (warunki normalne), jaka wystarczyłaby, by uwodornić do etanu <strong>cały</strong> eten wejściowy (kontrola bilansu materiałowego instalacji).
+(f) Uczeń podsumował: „z 11,2 dm³ etenu wyszło łącznie ok. 45 g produktów organicznych". Sprawdź rachunek (chloroetan + dibromoetan).</p>
+</div></details>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>(a) n(C₂H₄) = 11,2/22,4 = <strong>0,5 mol</strong> (1 pkt).
+(b) n(C₂H₅Cl) = 0,9 · 0,5 = <strong>0,45 mol</strong>; m = 0,45 · 64,5 = <strong>29,025 g ≈ 29,0 g</strong> (2 pkt: 1 wydajność, 1 masa).
+(c) d = 64,5/29 ≈ <strong>2,22</strong>; CO₂: 44/29 ≈ 1,52 — chloroetan <strong>cięższy</strong> (1 pkt).
+(d) Eten na etap 2: 0,5 − 0,45 = 0,05 mol → n(Br₂) = 0,05 mol → m = 0,05 · 160 = <strong>8 g</strong> (1,5 pkt).
+(e) Uwodornienie 1 : 1 na całość: 0,5 mol H₂ → V = 0,5 · 22,4 = <strong>11,2 dm³</strong> (0,5 pkt).
+(f) Dibromoetan: 0,05 mol · 188 = 9,4 g; razem produkty: 29,0 + 9,4 = <strong>38,4 g</strong>. Wynik ucznia (ok. 45 g) jest zawyżony — błąd w rachunku masy (1 pkt).</p>
+</details>
+</section>
+<section id="s1">
+<div class="part-heading"><span class="part-num">7</span> Fiszki</div>
+<div id="flashcards" class="flashcard-grid"><button class="flashcard" type="button"><span class="front">Definicja mola?</span><span class="back">porcja 6,02·10²³ cząstek (atomów, cząsteczek, jonów)</span><span class="card-tag tag-definicje"></span></button><button class="flashcard" type="button"><span class="front">Liczba Avogadra (szkolna i dokładna)?</span><span class="back">6,02·10²³ mol⁻¹; dokładnie 6,02214076·10²³ (SI 2019)</span><span class="card-tag tag-definicje"></span></button><button class="flashcard" type="button"><span class="front">Wzory konwersji m–n?</span><span class="back">n = m/M; m = n·M</span><span class="card-tag tag-rachunek"></span></button><button class="flashcard" type="button"><span class="front">Wzory konwersji n–N?</span><span class="back">N = n·N_A; n = N/N_A</span><span class="card-tag tag-rachunek"></span></button><button class="flashcard" type="button"><span class="front">Wzory konwersji n–V (gazy)?</span><span class="back">V = n·22,4; n = V/22,4 — tylko gazy!</span><span class="card-tag tag-rachunek"></span></button><button class="flashcard" type="button"><span class="front">Vₘ i warunki normalne?</span><span class="back">22,4 dm³/mol przy 0 °C i ≈1013 hPa</span><span class="card-tag tag-gazy"></span></button><button class="flashcard" type="button"><span class="front">Stosunki objętościowe gaz–gaz?</span><span class="back">równe stosunkom współczynników równania (prawo Avogadro) — bez liczenia moli</span><span class="card-tag tag-gazy"></span></button><button class="flashcard" type="button"><span class="front">Gęstość względna — wzory?</span><span class="back">d = M/M(wzorca); M = d·29 (powietrze) lub d·2 (wodór)</span><span class="card-tag tag-gazy"></span></button><button class="flashcard" type="button"><span class="front">M powietrza (średnia)?</span><span class="back">ok. 29 g/mol (78% N₂ + 21% O₂)</span><span class="card-tag tag-gazy"></span></button><button class="flashcard" type="button"><span class="front">Wzór elementarny?</span><span class="back">najprostszy całkowity stosunek atomów (CH₂O)</span><span class="card-tag tag-wzory"></span></button><button class="flashcard" type="button"><span class="front">Wzór rzeczywisty?</span><span class="back">rzeczywista liczba atomów; M = k · M(elementarnego)</span><span class="card-tag tag-wzory"></span></button><button class="flashcard" type="button"><span class="front">Procedura procentów — krok 2?</span><span class="back">przelicz masy na mole atomów: n = m/A, potem dziel przez najmniejsze</span><span class="card-tag tag-wzory"></span></button><button class="flashcard" type="button"><span class="front">CH₂O — o którym związku mówi?</span><span class="back">o proporcji; rzeczywiście: C₂H₄O₂ (kwas octowy, M = 60) i C₆H₁₂O₆ (glukoza, M = 180)</span><span class="card-tag tag-wzory"></span></button><button class="flashcard" type="button"><span class="front">1 mol wody — ile g i ile cm³?</span><span class="back">18 g; ok. 18 cm³ (Vₘ = 22,4 tylko dla gazów!)</span><span class="card-tag tag-pułapki"></span></button><button class="flashcard" type="button"><span class="front">Para wodna w spalinach — objętość?</span><span class="back">nie liczy się (po ochłodzeniu ciecz)</span><span class="card-tag tag-pułapki"></span></button></div>
+</section>
+<section id="s2">
+<div class="part-heading"><span class="part-num">8</span> Test kontrolny</div>
+<div class="che-quiz" id="quizWrap"><div class="quiz-q" data-ok="0"><h5>1. Objętość molowa gazu w warunkach normalnych wynosi:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">22,4 dm³/mol</button><button type="button" class="quiz-opt" data-a="1">22,4 cm³/mol</button><button type="button" class="quiz-opt" data-a="2">24 mol/dm³</button></div></div><div class="quiz-q" data-ok="0"><h5>2. Z 10 dm³ propanu po spalaniu powstanie (C₃H₈ + 5O₂ → 3CO₂ + 4H₂O):</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">30 dm³ CO₂</button><button type="button" class="quiz-opt" data-a="1">15 dm³ CO₂</button><button type="button" class="quiz-opt" data-a="2">50 dm³ CO₂</button></div></div><div class="quiz-q" data-ok="0"><h5>3. Gaz o gęstości względnej d = 0,55 względem powietrza jest:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">lżejszy od powietrza (możliwy metan)</button><button type="button" class="quiz-opt" data-a="1">cięższy od powietrza (możliwy propan)</button><button type="button" class="quiz-opt" data-a="2">niemożliwy do ustalenia bez próby</button></div></div><div class="quiz-q" data-ok="0"><h5>4. Wzór elementarny CH₂O odpowiada rzeczywistemu:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">C₂H₄O₂ (kwas octowy) przy M = 60 g/mol</button><button type="button" class="quiz-opt" data-a="1">wyłącznie formaldehydowi, zawsze</button><button type="button" class="quiz-opt" data-a="2">C₃H₆O₃ przy M = 60 g/mol</button></div></div><div class="quiz-q" data-ok="0"><h5>5. Do ustalenia wzoru rzeczywistego oprócz procentów masowych potrzebne jest:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">masa molowa (np. z gęstości względnej)</button><button type="button" class="quiz-opt" data-a="1">objętość próbki</button><button type="button" class="quiz-opt" data-a="2">temperatura topnienia</button></div></div></div><div class="quiz-score" id="quizScore"></div>
+</section>
+<section id="s3">
+<div class="part-heading"><span class="part-num">9</span> Słownik</div>
+<dl><div class="def-item"><dt>mol</dt><dd>jednostka liczności: porcja 6,02214076·10²³ cząstek (skrótowo 6,02·10²³).</dd></div><div class="def-item"><dt>liczba Avogadra (N_A)</dt><dd>liczba cząstek w molu; 6,02·10²³ mol⁻¹ (dokładna od reformy SI 2019 r.).</dd></div><div class="def-item"><dt>masa molowa (M)</dt><dd>masa jednego mola w g/mol; liczbowo równa masie cząsteczkowej/atomowej.</dd></div><div class="def-item"><dt>objętość molowa (Vₘ)</dt><dd>objętość jednego mola gazu: 22,4 dm³/mol w warunkach normalnych — tylko dla gazów.</dd></div><div class="def-item"><dt>warunki normalne</dt><dd>0 °C i ciśnienie ≈ 1013 hPa; punkt odniesienia Vₘ = 22,4 dm³/mol.</dd></div><div class="def-item"><dt>prawo Avogadro</dt><dd>w równych objętościach gazów (te T, p) jest ta sama liczba cząsteczek; stąd stosunki objętościowe = stosunki molowe.</dd></div><div class="def-item"><dt>stosunek objętościowy</dt><dd>proporcja objętości gazów w reakcji, równa proporcji współczynników równania.</dd></div><div class="def-item"><dt>gęstość względna (d)</dt><dd>stosunek gęstości gazu do gęstości wzorca (powietrze M ≈ 29, wodór M = 2); d = M/M(wzorca), liczba bez jednostki.</dd></div><div class="def-item"><dt>wzór elementarny</dt><dd>najprostszy całkowity stosunek atomów w związku (CH₂O); niekoniecznie wzór cząsteczki.</dd></div><div class="def-item"><dt>wzór rzeczywisty (sumaryczny)</dt><dd>rzeczywista liczba atomów w cząsteczce (C₂H₄O₂); M = k · M(elementarnego).</dd></div><div class="def-item"><dt>stosunek molowy</dt><dd>proporcja moli substratów/produktów wynikająca ze współczynników równania.</dd></div><div class="def-item"><dt>liczba Loschmidta</dt><dd>liczba cząsteczek gazu w 1 cm³ w warunkach normalnych (ok. 2,7·10¹⁹ — zaokrąglona).</dd></div><div class="def-item"><dt>gęstość absolutna</dt><dd>masa jednostki objętości gazu: ρ = M/22,4 g/dm³ (warunki normalne) — odróżniać od d.</dd></div></dl>
+</section>
+<section id="s4">
+<div class="part-heading">Do weryfikacji</div>
+<ul>
+<li><strong>WIZUALIZACJA ORG08 (§2 objętość molowa, stosunki objętościowe): BRAK klocka.</strong> Potrzebny klocek <code>objetosci-gazow</code>: słupki substratów i produktów w jednej skali, wg współczynników równania (np. propan + 5 O₂ → 3 CO₂ + 4 H₂O(ciecz)), z suwakiem objętości substratu. Priorytet: średni. Do zrobienia po zatwierdzeniu.</li>
+<li><strong>ORG08:</strong> Vₘ = 22,4 dm³/mol i warunki normalne (0 °C, 1013,25 hPa) — wartości standardowe podręcznikowe; objętość molowa przy ~20 °C „ok. 24 dm³/mol" — orientacyjne, oznaczone.</li>
+<li><strong>ORG08:</strong> M powietrza ≈ 29 g/mol — średnia standardowa (dokładniej 28,96); d metanu 0,55 (16/29 = 0,5517), propanu 1,52 (44/29 = 1,517), chloroetanu 2,22 (64,5/29 = 2,224) — zaokrąglenia spójne.</li>
+<li><strong>ORG08:</strong> liczba Loschmidta 2,69·10¹⁹/cm³ — zaokrąglona, oznaczona (dokładna 2,6868·10¹⁹ przy 22,414 dm³/mol).</li>
+<li><strong>ORG08:</strong> kropla wody „ok. 0,05 cm³" — zależnie od pipety, oznaczone; 1 cm³ wody → 3,34·10²² cząsteczek (1/18 · 6,02·10²³ = 3,344·10²²) ✔.</li>
+<li><strong>ORG08:</strong> exam 3 — dane poprawiono względem wersji roboczej (92,3% C / 7,7% H dawało stosunek 1 : 1 i M = 42, niepodzielne przez 13); teraz 85,7% C / 14,3% H → CH₂, k = 3, C₃H₆ — rachunek dokładny.</li>
+<li><strong>ORG08:</strong> adv 5d — tożsamości C₂H₄O₂: kwas octowy i mrówczan metylu (ester, izomer funkcjonalny); wcześniejsza notka o glikolaldehydzie usunięta.</li>
+<li><strong>ORG08:</strong> adv 6f — poprawna suma 38,4 g (29,025 + 9,4); „ok. 45 g" ucznia pozostawione jako celowy błąd do wykrycia (bez wskazania źródła błędu — klucz dopuszcza interpretację); rachunki: 0,45·64,5 = 29,025 ✔; 0,05·188 = 9,4 ✔; 29,025 + 9,4 = 38,425 ≈ 38,4 ✔.</li>
+<li><strong>ORG08:</strong> M(Br₂) = 160 g/mol — wartość podręcznikowa spoza listy B1 (Br = 80), oznaczona (jak w ORG02).</li>
+<li><strong>SERIA ORG01–ORG08:</strong> wszystkie odwołania do Vₘ = 22,4 dm³/mol domknięte wykładem ORG08; w ORG01–07 przy scalaniu można dodać odnośniki do sekcji 1–2 ORG08.</li>
+</ul>
+</section>
+<footer class="footer"><p>"LKO-ORG08 · pełna struktura"</p></footer>
+</main>
+<script>
+/* KLOCKI — lekkie komponenty wielokrotnego użytku dla lekcji (bez silnika).
+   Każdy klocek: KLOCKI.def(nazwa, {opis, dane, rysuj(canvas, stan, t)}) — rejestr,
+   KLOCKI.montuj(host, nazwa, opcje) — tworzy canvas, autostart gdy widoczny,
+   klik zatrzymuje/wznawia. Lekcja wymienia klocki w manifeście (klocki/manifest). */
+(function (g) {
+  var reg = {};
+  function def(nazwa, k) { reg[nazwa] = k; }
+  function montuj(host, nazwa, opc) {
+    var k = reg[nazwa];
+    if (!k) { host.textContent = 'Brak klocka: ' + nazwa; return null; }
+    opc = Object.assign({}, k.domyslne || {}, opc || {});
+    if (k.html) { host.innerHTML = ''; k.html(host, opc); return null; }
+    var c = document.createElement('canvas');
+    c.width = opc.szer || 480; c.height = opc.wys || 300;
+    c.style.width = '100%'; c.style.maxWidth = c.width + 'px'; c.style.height = 'auto';
+    c.setAttribute('role', 'img');
+    c.setAttribute('aria-label', (opc.opis || k.opis || nazwa));
+    host.innerHTML = ''; host.appendChild(c);
+    var stan = Object.assign({}, k.stan0 ? k.stan0(opc) : {}, {opc: opc});
+    var ctx = c.getContext('2d'), t0 = performance.now(), grane = false, id = null;   // pętla rusza przez start() (IO albo od razu)
+    function klatka(now) {
+      try { k.rysuj(ctx, c.width, c.height, stan, (now - t0) / 1000, opc); } catch (e) { }
+      if (grane) id = requestAnimationFrame(klatka);
+    }
+    function start() { if (!grane) { grane = true; t0 = performance.now() - (stan._t || 0) * 1000; id = requestAnimationFrame(klatka); } }
+    function stop() { grane = false; if (id) cancelAnimationFrame(id); }
+    c.addEventListener('click', function () { grane ? stop() : start(); });
+    if ('IntersectionObserver' in g) {
+      var io = new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? start() : stop(); }); });
+      io.observe(c);
+    } else { start(); }
+    k.rysuj(ctx, c.width, c.height, stan, 0, opc);
+    return {stop: stop, start: start, stan: stan, canvas: c};
+  }
+  g.KLOCKI = {def: def, montuj: montuj, nazwy: function () { return Object.keys(reg); }};
+})(window);
+
+/* KLOCKI — wspólne narzędzia (kolejność: pierwsze w manifeście). Wyciągnięte z animacji P01. */
+/* ---------------------------- narzędzia ---------------------------- */
+var RM = !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
+function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+function sm(v) { v = clamp(v, 0, 1); return v * v * (3 - 2 * v); }
+function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+function hex2rgb(h) { var n = parseInt(h.slice(1), 16); return [n >> 16 & 255, n >> 8 & 255, n & 255]; }
+function rgba(h, a) { var c = hex2rgb(h); return 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ',' + a + ')'; }
+function mixHex(a, b, k) {
+  var A = hex2rgb(a), B = hex2rgb(b);
+  return '#' + [0, 1, 2].map(function (i) { return ('0' + Math.round(A[i] + (B[i] - A[i]) * k).toString(16)).slice(-2); }).join('');
+}
+function rr(x, a, b, w, h, r) {
+  x.beginPath(); x.moveTo(a + r, b); x.arcTo(a + w, b, a + w, b + h, r); x.arcTo(a + w, b + h, a, b + h, r);
+  x.arcTo(a, b + h, a, b, r); x.arcTo(a, b, a + w, b, r); x.closePath();
+}
+
+
+/* ---------------------------- pętla animacji ---------------------------- */
+var uchwyty = [], rafId = 0, ostatni = 0;
+function petla(now) {
+  var dt = Math.min(.05, (now - ostatni) / 1000); ostatni = now;
+  for (var i = 0; i < uchwyty.length; i++) uchwyty[i].krok(dt);
+  rafId = uchwyty.length ? requestAnimationFrame(petla) : 0;
+}
+function wlacz(h) { if (uchwyty.indexOf(h) < 0) uchwyty.push(h); if (!rafId) { ostatni = performance.now(); rafId = requestAnimationFrame(petla); } }
+function wylacz(h) { var i = uchwyty.indexOf(h); if (i >= 0) uchwyty.splice(i, 1); }
+function podepnij(canvas, h) {
+  h.rysuj();
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? wlacz(h) : wylacz(h); }); }, {threshold: .05}).observe(canvas);
+  } else wlacz(h);
+}
+
+
+function parsujListe(txt, dozwolone, domyslne) {
+  var l = String(txt || '').split(',').map(function (s) { return s.trim(); }).filter(function (s) { return dozwolone[s]; });
+  return (l.length ? l : domyslne).slice(0, 3);
+}
+
+
+/* Wybór pierwiastka: tylko symbole, a znacznik ▸ pokazuje, że lista się rozwija (bez pełnych nazw obok). */
+function wyborSymbole(grupy, start, onChange, etykieta) {
+  var box = el('details', 'wyb-sym'), sum = el('summary', null), cur = el('span', 'wyb-cur', start);
+  sum.appendChild(cur); sum.appendChild(el('span', 'wyb-tri', '▸')); box.appendChild(sum);
+  var lst = el('div', 'wyb-lista'), btns = [];
+  lst.setAttribute('role', 'listbox'); lst.setAttribute('aria-label', etykieta || 'Wybór pierwiastka');
+  var NAG = {1: 'Litowce', 2: 'Berylowce', 3: 'Tlenki berylowców'};
+  Object.keys(grupy).forEach(function (g) {
+    var w = el('div', 'wyb-grupa'); w.appendChild(el('span', 'wyb-g', NAG[g] || ('grupa ' + g)));
+    grupy[g].forEach(function (s) {
+      var b = el('button', 'wyb-sy', s); b.type = 'button'; b.setAttribute('data-sym', s);
+      b.setAttribute('title', cap(NAZ[SYM.indexOf(s)] || s));
+      b.addEventListener('click', function () { ustaw(s); box.open = false; onChange(s); });
+      w.appendChild(b); btns.push(b);
+    });
+    lst.appendChild(w);
+  });
+  box.appendChild(lst);
+  function ustaw(s) { cur.textContent = s; btns.forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-sym') === s ? 'true' : 'false'); }); }
+  ustaw(start);
+  return {el: box, ustaw: ustaw};
+}
+
+/* KLOCEK: trojkat-przeliczen — trójkąt konwersji masa ↔ liczba moli ↔ cząstki lub objętość gazu.
+   Opcje (w lekcji): wzor="mol"  (domyślnie) — wierzchołki: m [g], n [mol], N [cząstki]; N = n · N_A
+                     wzor="gaz"  — wierzchołki: m [g], n [mol], V [dm³]; V = n · Vₘ (22,4 dm³/mol)
+   Strzałki: góra → lewo ÷ M, lewo → góra × M; lewo ↔ prawo: × / ÷ N_A (lub Vₘ). Bok góra–prawo nie ma operacji.
+   Wzory konwersji są wypisane w rogu. Klik zatrzymuje/wznawia (zachowanie montuj). */
+(function () {
+  var SZABLON = {
+    mol: {R: 'N [cząstki]', kR: 'N_A', wzory: ['m = n · M', 'n = m / M', 'N = n · N_A']},
+    gaz: {R: 'V [dm³]', kR: 'Vₘ', wzory: ['m = n · M', 'n = m / M', 'V = n · Vₘ']}
+  };
+
+  // odcinek A→B przesunięty o off wzdłuż normalnej, skrócony przy węzłach; grot na końcu
+  function strzalka(x, A, B, off, skrA, skrB) {
+    var dx = B.x - A.x, dy = B.y - A.y, d = Math.sqrt(dx * dx + dy * dy) || 1;
+    var ux = dx / d, uy = dy / d, px = -uy, py = ux;
+    var ax = A.x + px * off + ux * skrA, ay = A.y + py * off + uy * skrA;
+    var bx = B.x + px * off - ux * skrB, by = B.y + py * off - uy * skrB;
+    x.beginPath(); x.moveTo(ax, ay); x.lineTo(bx, by); x.stroke();
+    var ang = Math.atan2(by - ay, bx - ax), g = 9;
+    x.beginPath(); x.moveTo(bx, by);
+    x.lineTo(bx - g * Math.cos(ang - 0.4), by - g * Math.sin(ang - 0.4));
+    x.lineTo(bx - g * Math.cos(ang + 0.4), by - g * Math.sin(ang + 0.4));
+    x.closePath(); x.fill();
+    return {x: (A.x + B.x) / 2 + px * off, y: (A.y + B.y) / 2 + py * off, px: px, py: py};
+  }
+  function wyjscie(ux, uy, bw, bh) {
+    var sx = Math.abs(ux) > 1e-6 ? (bw / 2) / Math.abs(ux) : Infinity;
+    var sy = Math.abs(uy) > 1e-6 ? (bh / 2) / Math.abs(uy) : Infinity;
+    return Math.min(sx, sy) + 5;
+  }
+  function skrot(A, B, bw, bh) {
+    var dx = B.x - A.x, dy = B.y - A.y, d = Math.sqrt(dx * dx + dy * dy) || 1;
+    var ux = dx / d, uy = dy / d;
+    return [wyjscie(ux, uy, bw, bh), wyjscie(-ux, -uy, bw, bh)];
+  }
+
+  KLOCKI.def('trojkat-przeliczen', {
+    opis: 'Trójkąt konwersji: masa, liczba moli i cząstki (lub objętość gazu) ze strzałkami operacji ÷/× M, N_A lub Vₘ.',
+    domyslne: {wzor: 'mol', szer: 480, wys: 300},
+    stan0: function () { return {}; },
+    rysuj: function (x, w, h, s, t, opc) {
+      var sz = SZABLON[opc.wzor] || SZABLON.mol;
+      var T = {x: w / 2, y: 46}, Lw = {x: w / 2 - 160, y: h - 64}, Rw = {x: w / 2 + 160, y: h - 64};
+      var BW = 124, BH = 34;
+      x.fillStyle = '#ffffff'; x.fillRect(0, 0, w, h);
+      x.font = '14px system-ui, sans-serif'; x.textBaseline = 'middle'; x.textAlign = 'center';
+
+      // krawędzie trójkąta
+      x.strokeStyle = '#94a3b8'; x.lineWidth = 2;
+      [[T, Lw], [Lw, Rw], [Rw, T]].forEach(function (e) {
+        x.beginPath(); x.moveTo(e[0].x, e[0].y); x.lineTo(e[1].x, e[1].y); x.stroke();
+      });
+
+      // strzałki operacji: dwie na każdym boku z operacją
+      x.strokeStyle = '#334155'; x.fillStyle = '#334155'; x.lineWidth = 2;
+      var etyk = [];
+      function para(A, B, opA, opB, bokA, bokB) {
+        var sk1 = skrot(A, B, BW, BH);
+        var a1 = strzalka(x, A, B, 9, sk1[0], sk1[1]);
+        etyk.push({x: a1.x + a1.px * 16, y: a1.y + a1.py * 16, t: opA});
+        var sk2 = skrot(B, A, BW, BH);
+        var a2 = strzalka(x, B, A, 9, sk2[0], sk2[1]);
+        etyk.push({x: a2.x + a2.px * 16, y: a2.y + a2.py * 16, t: opB});
+      }
+      para(T, Lw, '÷ M ↓', '× M ↑');
+      para(Lw, Rw, '× ' + sz.kR + ' →', '← ÷ ' + sz.kR);
+
+      // etykiety operacji
+      x.fillStyle = '#b45309'; x.font = 'bold 13px system-ui, sans-serif';
+      etyk.forEach(function (e) { x.fillText(e.t, e.x, e.y); });
+
+      // węzły
+      var wez = [[T, 'm [g]'], [Lw, 'n [mol]'], [Rw, sz.R]];
+      wez.forEach(function (p) {
+        x.fillStyle = '#eef6ff'; x.strokeStyle = '#1e40af'; x.lineWidth = 1.5;
+        x.beginPath();
+        if (x.roundRect) x.roundRect(p[0].x - BW / 2, p[0].y - BH / 2, BW, BH, 8); else x.rect(p[0].x - BW / 2, p[0].y - BH / 2, BW, BH);
+        x.fill(); x.stroke();
+        x.fillStyle = '#0f172a'; x.font = '15px system-ui, sans-serif';
+        x.fillText(p[1], p[0].x, p[0].y);
+      });
+
+      // wzory konwersji w prawym górnym rogu
+      x.textAlign = 'right'; x.textBaseline = 'top'; x.fillStyle = '#111827'; x.font = '13px system-ui, sans-serif';
+      sz.wzory.forEach(function (f, i) { x.fillText(f, w - 10, 12 + i * 17); });
+    }
+  });
+})();
+
+(function(){document.querySelectorAll('[data-klocek]').forEach(function(f){var o={};try{o=JSON.parse(f.getAttribute('data-opt')||'{}')}catch(e){}Object.keys(o).forEach(function(k){if(o[k]!==''&&!isNaN(Number(o[k])))o[k]=Number(o[k])});KLOCKI.montuj(f.querySelector('.lk-fig-body'),f.getAttribute('data-klocek'),o)})})();
+/* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
+   postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
+(function(){
+var html=document.documentElement;
+function ciemny(){var t=html.getAttribute('data-theme');return t?t==='dark':!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function oznacz(){if(ciemny())html.setAttribute('data-ciemny','');else html.removeAttribute('data-ciemny')}
+try{var z=localStorage.getItem('lekcja-motyw');if(z)html.setAttribute('data-theme',z)}catch(e){}
+oznacz();if(window.matchMedia)try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',oznacz)}catch(e){}
+
+function start(){
+var root=document;
+root.querySelectorAll('.flashcard').forEach(function(b){if(b.dataset.lkFz)return;b.dataset.lkFz=1;b.removeAttribute('onclick');b.setAttribute('aria-pressed','false');
+ b.addEventListener('click',function(){var on=b.classList.toggle('flipped');b.setAttribute('aria-pressed',on?'true':'false')})});
+root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibling,ok=0,n=0,all=w.querySelectorAll('.quiz-q').length;
+ if(sc&&sc.classList.contains('quiz-score'))sc.setAttribute('aria-live','polite');
+ w.querySelectorAll('.quiz-q').forEach(function(d){var good=+d.dataset.ok;d.querySelectorAll('.quiz-opt').forEach(function(b){b.onclick=function(){if(d.dataset.done)return;d.dataset.done=1;n++;if(+b.dataset.a===good)ok++;
+  d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
+  if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
+  if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var b=root.querySelector('#advToggle');
+if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
+ if(!k)b.style.display='none';
+ b.textContent='Pokaż treści akademickie ('+k+')';
+ b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';adv().forEach(function(d){d.open=on});b.setAttribute('aria-pressed',on?'true':'false');b.textContent=(on?'Ukryj':'Pokaż')+' treści akademickie ('+k+')'}}
+// spis zwinięty na telefonie
+var sp=root.querySelector('#spis');if(sp&&window.innerWidth<700)sp.removeAttribute('open');
+// przełącznik jasny/ciemny
+var tb=root.querySelector('#lkMotyw');
+if(tb)tb.onclick=function(){var t=ciemny()?'light':'dark';html.setAttribute('data-theme',t);try{localStorage.setItem('lekcja-motyw',t)}catch(e){}oznacz()};
+// postęp czytania + aktywna sekcja w spisie
+var bar=root.querySelector('.lk-prog'),links={},secs=[];
+root.querySelectorAll('.toc-link[href^="#"]').forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1));if(s){links[s.id]=a;secs.push(s)}});
+var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+ if(bar)bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';
+ var cur=null,lim=(parseInt(getComputedStyle(h).getPropertyValue('--header-h'))||52)+40;
+ for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
+ for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// fiszki: pokazuje pierwsze N (domyślnie 6, atrybut data-fz-pierwsze="N"), reszta po wyraźnym przycisku
+root.querySelectorAll('.flashcard-grid').forEach(function(g){
+ var cards=[].slice.call(g.querySelectorAll('.flashcard')),N=+(g.getAttribute('data-fz-pierwsze')||6);
+ if(!(N>0)||cards.length<=N)return;
+ var ukryte=cards.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more';
+ function lab(on){ukryte.forEach(function(c){c.hidden=!on});
+  b.textContent=on?'▲ Zwiń fiszki':'▼ Pokaż pozostałe '+ile+' fiszek (razem '+cards.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ g.insertAdjacentElement('afterend',b);
+});
+// testy: pokazuje pierwsze N pytań (domyślnie 5, atrybut data-q-pierwsze), reszta po wyraźnym przycisku
+root.querySelectorAll('.che-quiz').forEach(function(w){
+ var qs=[].slice.call(w.querySelectorAll('.quiz-q')),N=+(w.getAttribute('data-q-pierwsze')||5);
+ if(!(N>0)||qs.length<=N)return;
+ var ukryte=qs.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more q-more';
+ function lab(on){ukryte.forEach(function(q){q.hidden=!on});
+  b.textContent=on?'▲ Zwiń pytania':'▼ Pokaż pozostałe '+ile+(ile===1?' pytanie':(ile<5?' pytania':' pytań'))+' (razem '+qs.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ var sc=w.nextElementSibling;(sc&&sc.classList.contains('quiz-score')?sc:w).insertAdjacentElement('afterend',b);
+});
+// grafiki przedmiotu
+if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
+if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();
+
+</script>
+</body>
+</html>

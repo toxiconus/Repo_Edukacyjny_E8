@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="pl" data-przedmiot="che">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>K04 · </title>
+<style id="lekcja-css">
+/* baza.css — wspólna baza lekcji wszystkich przedmiotów (styl lekcji silnika CHE v0_57). Nie edytować — zmiany wspólne w ulepszenia.css, przedmiotowe w motywy/<kod>.css. */
+
+
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+--bg:#fafbfc;--surface:#ffffff;--surface-soft:#f6f8fa;--surface-warm:#fdfaf4;--border:#e5e9ee;--border-strong:#cdd5dd;
+--text:#1a2332;--text-soft:#4a5568;--text-muted:#8892a0;--text-faint:#b4bcc6;
+--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,0.15);
+--c-basic:#2e7d4f;--c-basic-bg:#eaf6ee;--c-basic-line:#b8dcc4;
+--c-understand:#2b5e9c;--c-understand-bg:#eaf1f9;--c-understand-line:#bcd0e5;
+--c-warn:#b06f1c;--c-warn-bg:#fcf4e6;--c-warn-line:#eed8a8;
+--c-error:#b83a45;--c-error-bg:#fbeced;--c-error-line:#e8b5b9;
+--c-extra:#6b3fa0;--c-extra-bg:#f3ecfa;--c-extra-line:#d3bde8;
+--c-new:#0d7d7d;--c-new-bg:#e6f4f4;--c-new-line:#b0dcdc;
+--c-exam:#a86a00;--c-exam-bg:#fdf5e0;--c-exam-line:#eed49c;
+--sh-sm:0 1px 2px rgba(26,35,50,0.04);--sh-md:0 4px 12px rgba(26,35,50,0.06);--sh-lg:0 12px 32px rgba(26,35,50,0.10);--sh-xl:0 20px 48px rgba(26,35,50,0.14);
+--r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;
+--header-h:56px;
+--ease:cubic-bezier(0.4,0,0.2,1);--ease-out:cubic-bezier(0.16,1,0.3,1);
+--hl-key:#0d6868;--hl-key-bg:#d8ecea;--hl-warn:#b83a45;--hl-warn-bg:#fbe0e2;--hl-new:#6b3fa0;--hl-new-bg:#ede0f8;--hl-formula:#084848;--hl-formula-bg:#e0eeed;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;padding:calc(var(--header-h) + 12px) 0 88px;min-height:100vh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+@media(min-width:600px){body{padding:calc(var(--header-h) + 18px) 12px 96px;}}
+@media(min-width:768px){body{padding:calc(var(--header-h) + 24px) 20px 100px;}}
+@media(min-width:1100px){body{padding:calc(var(--header-h) + 28px) 32px 110px;}}
+.fab{position:fixed;top:12px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);background:rgba(255,255,255,0.94);color:var(--text);cursor:pointer;border-radius:var(--r-md);padding:0;transition:all 0.2s var(--ease);z-index:1200;box-shadow:var(--sh-sm);backdrop-filter:blur(8px);}
+.fab:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);box-shadow:var(--sh-md);transform:translateY(-1px);}
+.fab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.fab-left{left:6px;}.fab-right{right:6px;}
+@media(min-width:600px){.fab-left{left:10px;}.fab-right{right:10px;}}
+@media(min-width:768px){.fab-left{left:14px;}.fab-right{right:14px;}}
+.fab-left::after{content:'';width:16px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;border-radius:1px;transition:transform 0.25s var(--ease);}
+.fab-left.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.fab-left.is-open::after{width:16px;height:2px;background:currentColor;box-shadow:none;transform:rotate(45deg);}
+.fab-left.is-open::before{content:'';position:absolute;width:16px;height:2px;background:currentColor;transform:rotate(-45deg);border-radius:1px;}
+.fab-right::after{content:'';display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:8px solid currentColor;transition:transform 0.35s var(--ease-out);}
+.fab-right.is-hidden::after{transform:rotate(0deg);}
+.fab-right:not(.is-hidden)::after{transform:rotate(180deg);}
+.header-wrapper{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);transform:translateY(0);transition:transform 0.45s var(--ease-out),box-shadow 0.3s var(--ease);box-shadow:var(--sh-sm);}
+.header-wrapper.is-hidden{transform:translateY(-100%);box-shadow:none;}
+.header-bar{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:0 16px;height:var(--header-h);}
+@media(min-width:768px){.header-bar{padding:0 24px;}}
+.header-subject{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:1px;padding:4px 10px;background:var(--accent-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;}
+.header-title{font-size:15px;font-weight:700;color:var(--text);letter-spacing:-0.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1 1 auto;min-width:0;}
+.header-lesson{font-size:10px;font-weight:800;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.7px;padding:4px 9px;background:var(--surface-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;font-family:'JetBrains Mono',monospace;}
+.header-nav{display:flex;gap:2px;flex-shrink:0;align-items:center;}
+.header-nav a,.header-nav button{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;border-radius:var(--r-sm);font-size:16px;font-weight:500;transition:all 0.2s var(--ease);border:1px solid transparent;background:transparent;cursor:pointer;padding:0;font-family:inherit;}
+.header-nav a:hover,.header-nav button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.header-resume-btn.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.header-resume-btn::before{content:'▮';font-size:14px;line-height:1;}
+.header-panel{display:none;border-top:1px solid var(--border);background:linear-gradient(180deg,var(--surface) 0%,var(--surface-soft) 100%);padding:20px 16px 24px;}
+@media(min-width:768px){.header-panel{padding:24px 24px 28px;}}
+.header-panel.is-open{display:block;}
+.header-panel-inner{max-width:900px;margin:0 auto;}
+.header-kicker{font-size:11px;color:var(--text-muted);text-transform:uppercase;font-weight:800;letter-spacing:1px;margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.header-kicker::before{content:'';width:24px;height:2px;background:var(--accent);display:inline-block;border-radius:1px;}
+.header-h1{font-size:32px;font-weight:800;color:var(--text);letter-spacing:-1px;margin-bottom:10px;line-height:1.1;}
+.header-subtitle{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:18px;max-width:720px;}
+.header-modes{display:flex;gap:6px;flex-wrap:wrap;}
+.mode-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 15px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);font-family:inherit;}
+.mode-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
+.mode-btn:hover:not(.active){background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.resume-dropdown{display:none;position:fixed;top:calc(var(--header-h) + 6px);right:14px;z-index:1050;width:min(300px,calc(100vw - 30px));padding:14px;border:1px solid var(--border-strong);border-radius:12px;background:#fff;box-shadow:var(--sh-lg);}
+.resume-dropdown.is-open{display:block;}
+.resume-dropdown h4{margin:0 0 5px;color:var(--text);font-size:.85rem;}
+.resume-dropdown p{margin:0 0 12px;color:var(--text-muted);font-size:.75rem;line-height:1.5;}
+.resume-actions{display:flex;gap:6px;}
+.resume-actions button{flex:1;padding:8px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text-soft);font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.resume-actions .resume-save{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toc-overlay{position:fixed;inset:0;background:rgba(26,35,50,0.34);backdrop-filter:blur(3px);z-index:1100;opacity:0;visibility:hidden;transition:opacity 0.3s var(--ease),visibility 0.3s var(--ease);}
+.toc-overlay.is-visible{opacity:1;visibility:visible;}
+.toc-wrapper{position:fixed;left:0;top:0;width:320px;max-width:86vw;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:1150;transform:translateX(-100%);transition:transform 0.4s var(--ease-out);padding-top:64px;box-shadow:var(--sh-xl);}
+.toc-wrapper.is-open{transform:translateX(0);}
+.toc-content{padding:12px 14px 100px;}
+.toc-header{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);padding:4px 12px 12px;}
+.toc-item{margin-bottom:4px;border-radius:var(--r-md);overflow:hidden;}
+.toc-summary{padding:10px 12px;font-size:13px;font-weight:700;color:var(--text);cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;border-radius:var(--r-sm);transition:background 0.2s var(--ease),color 0.2s var(--ease);user-select:none;}
+.toc-summary:hover{background:var(--accent-soft);color:var(--accent);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::marker{content:'';}
+.toc-summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);opacity:0.5;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);opacity:1;}
+.toc-links{padding:4px 0 8px 28px;display:flex;flex-direction:column;gap:1px;}
+.toc-link{display:block;padding:6px 10px;font-size:12.5px;color:var(--text-soft);text-decoration:none;border-radius:4px;transition:all 0.2s var(--ease);border-left:2px solid transparent;}
+.toc-link:hover{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);}
+.container{max-width:820px;margin:0 auto;background:var(--surface);border-radius:0;box-shadow:none;padding:18px 12px;border:none;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+@media(min-width:600px){.container{border-radius:var(--r-lg);box-shadow:var(--sh-md);border:1px solid var(--border);padding:22px 18px;}}
+@media(min-width:768px){.container{padding:36px 36px;border-radius:var(--r-xl);}}
+@media(min-width:1100px){.container{max-width:840px;padding:40px 40px;}}
+h1,h2,h3,h4,h5{font-weight:800;color:var(--text);letter-spacing:-0.3px;line-height:1.3;}
+h2{font-size:24px;margin-top:44px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+h3{font-size:17px;margin-top:32px;margin-bottom:12px;font-weight:800;}
+h4{font-size:15px;margin-top:24px;margin-bottom:10px;font-weight:800;}
+h5{font-size:13px;margin-top:16px;margin-bottom:8px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-soft);}
+p{margin-bottom:12px;}
+ul,ol{padding-left:24px;margin-bottom:14px;}
+li{margin-bottom:6px;padding-left:4px;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s var(--ease);}
+a:hover{border-bottom-color:var(--accent);}
+strong{font-weight:700;color:var(--text);}
+.hl{background:var(--hl-key-bg);color:var(--hl-key);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-warn{background:var(--hl-warn-bg);color:var(--hl-warn);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-new{background:var(--hl-new-bg);color:var(--hl-new);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.formula{display:inline-block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:14px;font-weight:600;color:var(--hl-formula);background:var(--hl-formula-bg);padding:4px 12px;border-radius:var(--r-sm);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:3px 2px;white-space:nowrap;}
+.formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
+code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
+pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
+.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
+.mnemonic b{color:#78350f;}
+.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
+@media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
+.card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
+.card-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:10px;padding:3px 9px;background:var(--accent-soft);border-radius:4px;}
+.card-core{background:var(--accent-soft);border-color:var(--accent-line);border-left-color:var(--accent);}
+.card-basic{background:var(--c-basic-bg);border-color:var(--c-basic-line);border-left-color:var(--c-basic);}
+.card-basic .card-label{background:rgba(46,125,79,0.12);color:var(--c-basic);}
+.card-understand{background:var(--c-understand-bg);border-color:var(--c-understand-line);border-left-color:var(--c-understand);}
+.card-understand .card-label{background:rgba(43,94,156,0.12);color:var(--c-understand);}
+.card-warning{background:var(--c-warn-bg);border-color:var(--c-warn-line);border-left-color:var(--c-warn);}
+.card-warning .card-label{background:rgba(176,111,28,0.12);color:var(--c-warn);}
+.card-error{background:var(--c-error-bg);border-color:var(--c-error-line);border-left-color:var(--c-error);}
+.card-error .card-label{background:rgba(184,58,69,0.12);color:var(--c-error);}
+.card-extra{background:var(--c-extra-bg);border-color:var(--c-extra-line);border-left-color:var(--c-extra);}
+.card-extra .card-label{background:rgba(107,63,160,0.12);color:var(--c-extra);}
+.card-new{background:var(--c-new-bg);border-color:var(--c-new-line);border-left-color:var(--c-new);}
+.card-new .card-label{background:rgba(13,125,125,0.12);color:var(--c-new);}
+.card-exam{background:var(--c-exam-bg);border-color:var(--c-exam-line);border-left-color:var(--c-exam);}
+.card-exam .card-label{background:rgba(168,106,0,0.12);color:var(--c-exam);}
+.card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0;}
+details.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent-line);border-radius:var(--r-sm);padding:10px 14px;margin:10px 0;transition:all 0.2s var(--ease);}
+details.answer[open]{background:var(--accent-soft);border-left-color:var(--accent);}
+details.answer summary{cursor:pointer;font-weight:700;color:var(--text-soft);font-size:13px;list-style:none;user-select:none;display:flex;align-items:center;gap:10px;transition:color 0.2s var(--ease);}
+details.answer summary::-webkit-details-marker{display:none;}
+details.answer summary::marker{content:'';}
+details.answer summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer[open] summary{color:var(--accent);}
+details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}
+.part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}
+@media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}
+.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
+@media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}
+.table-wrap th,.table-wrap td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px;}
+@media(min-width:600px){.table-wrap th,.table-wrap td{padding:10px 12px;font-size:13.5px;}}
+.table-wrap th{background:var(--surface-soft);font-weight:800;color:var(--text-soft);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;}
+@media(min-width:600px){.table-wrap th{font-size:11px;letter-spacing:0.7px;white-space:nowrap;}}
+.table-wrap.table-compact td,.table-wrap.table-compact th{padding:7px 6px;font-size:12.5px;}
+.table-wrap tr:last-child td{border-bottom:none;}
+.table-wrap tr:hover td{background:var(--accent-soft);}
+.table-wrap .error-row{background:var(--c-error-bg);}
+.table-wrap .ok-row{background:var(--c-basic-bg);}
+.def-list{display:flex;flex-direction:column;gap:8px;margin:14px 0;}
+.def-item{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px 16px;}
+.def-item dt{font-weight:800;color:var(--text);font-size:13.5px;margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+.def-item dt::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;}
+.def-item dd{color:var(--text-soft);font-size:13.5px;line-height:1.6;margin:0;padding-left:11px;}
+.minimum-card{background:linear-gradient(135deg,var(--surface-soft) 0%,var(--accent-soft) 100%);border:1px solid var(--accent-line);border-radius:var(--r-lg);padding:20px 22px;margin:8px 0 28px;box-shadow:var(--sh-sm);position:relative;overflow:hidden;}
+@media(min-width:768px){.minimum-card{padding:28px 34px;margin-bottom:36px;}}
+.minimum-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:var(--accent);}
+.minimum-card h3{color:var(--accent);margin:0 0 16px;font-size:16px;letter-spacing:0.2px;display:flex;align-items:center;gap:10px;}
+.minimum-card h3::before{content:'★';font-size:16px;}
+.minimum-card ol{margin:0;padding-left:0;list-style:none;counter-reset:min-list;}
+.minimum-card li{counter-increment:min-list;padding-left:36px;position:relative;margin-bottom:12px;font-size:14px;line-height:1.6;}
+.minimum-card li::before{content:counter(min-list);position:absolute;left:0;top:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--surface);color:var(--accent);border:2px solid var(--accent-line);border-radius:50%;font-size:12px;font-weight:800;}
+.minimum-card li:last-child{margin-bottom:0;}
+.level-badge{display:inline-block;font-size:9.5px;font-weight:800;text-transform:uppercase;padding:2px 9px;border-radius:12px;vertical-align:middle;letter-spacing:0.5px;line-height:1.6;margin-left:8px;}
+.level-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.level-understand{background:var(--c-understand-bg);color:var(--c-understand);}
+.level-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.level-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.level-new{background:var(--c-new-bg);color:var(--c-new);}
+.rule-box{background:var(--c-understand-bg);border:1px solid var(--c-understand-line);border-radius:var(--r-md);padding:14px 18px;margin:14px 0;font-size:14px;line-height:1.65;}
+.rule-box b{color:var(--c-understand);}
+.step-flow{background:var(--text);color:#fff;padding:16px 18px;border-radius:var(--r-md);font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:12.5px;line-height:1.9;margin:14px 0;overflow-x:auto;white-space:pre;}
+@media(min-width:768px){.step-flow{font-size:13.5px;padding:16px 20px;}}
+.footer{margin-top:56px;padding-top:24px;border-top:2px solid var(--border);text-align:center;font-size:12.5px;color:var(--text-muted);letter-spacing:0.2px;}
+.footer p{margin-bottom:4px;}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:6px;border:2px solid var(--bg);}
+::-webkit-scrollbar-thumb:hover{background:var(--text-muted);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.bottom-nav{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:1100;width:min(700px,calc(100vw - 24px));font-size:.78rem;}
+.bottom-nav__toggle{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;padding:8px 14px;border:1px solid var(--border-strong);border-radius:999px;background:rgba(255,255,255,.97);color:var(--text-soft);font:700 .72rem inherit;box-shadow:0 5px 18px rgba(15,23,42,.14);cursor:pointer;backdrop-filter:blur(10px);font-family:inherit;}
+.bottom-nav__panel{display:none;margin-bottom:7px;padding:10px;border:1px solid var(--border-strong);border-radius:14px;background:rgba(255,255,255,.98);box-shadow:0 10px 28px rgba(15,23,42,.16);backdrop-filter:blur(12px);}
+.bottom-nav.is-open .bottom-nav__panel{display:block;}
+.bottom-nav__primary{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.bottom-nav a,.bottom-nav button.nav-more{min-height:36px;display:flex;align-items:center;justify-content:center;padding:6px 8px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--text-soft);text-decoration:none;font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.bottom-nav a:hover,.bottom-nav button.nav-more:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+@media(max-width:420px){
+  .bottom-nav{font-size:.7rem;width:calc(100vw - 12px);}
+  .bottom-nav a,.bottom-nav button.nav-more{padding:6px 4px;font-size:.65rem;}
+}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
+.widget{background:var(--surface);border:2px solid var(--border);border-radius:var(--r-md);padding:14px;margin:14px 0;box-shadow:var(--sh-sm);}
+@media(min-width:768px){.widget{padding:22px 26px;margin:20px 0;border-radius:var(--r-lg);}}
+.widget h4{margin:0 0 8px;color:var(--text);font-size:15px;font-weight:800;}
+@media(min-width:768px){.widget h4{font-size:16px;}}
+.widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
+.bld-pool{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.bld-pool button{padding:6px 12px;border:1px solid var(--border);border-radius:20px;background:#fff;font:600 0.8rem inherit;cursor:pointer;font-family:inherit;color:var(--text);}
+.bld-pool button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bld-workspace{min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;}
+.bld-feedback,.re-result,.st-feedback,.ch-feedback{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;line-height:1.5;}
+.bld-feedback.ok,.re-result.ok,.st-feedback.ok,.ch-feedback.ok{background:var(--c-basic-bg);color:var(--c-basic);border:1px solid var(--c-basic-line);}
+.bld-feedback.bad,.re-result.bad,.st-feedback.bad,.ch-feedback.bad{background:var(--c-error-bg);color:var(--c-error);border:1px solid var(--c-error-line);}
+.bld-feedback.info,.re-result.info,.st-feedback.info,.ch-feedback.info{background:var(--c-understand-bg);color:var(--c-understand);border:1px solid var(--c-understand-line);}
+.bld-feedback.warn,.re-result.warn,.st-feedback.warn,.ch-feedback.warn{background:var(--c-warn-bg);color:var(--c-warn);border:1px solid var(--c-warn-line);}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);color:var(--text);font-family:inherit;}
+.btn:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent);}
+.btn-primary:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+.btn-sm{padding:6px 10px;font-size:12px;}
+.flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}
+@media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--border);border-radius:var(--r-md);background:#fff;color:var(--text);font:inherit;text-align:center;cursor:pointer;box-shadow:var(--sh-sm);transition:all 0.2s var(--ease);position:relative;font-family:inherit;}
+.flashcard:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-3px);box-shadow:var(--sh-md);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:90px;}
+.flashcard .front{font-weight:700;font-size:14.5px;line-height:1.5;}
+.flashcard .back{display:none;color:var(--text-soft);font-size:13.5px;line-height:1.6;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:8px;right:8px;font-size:9px;text-transform:uppercase;background:var(--surface-soft);padding:2px 8px;border-radius:10px;color:var(--text-muted);font-weight:800;letter-spacing:0.4px;}
+.flashcard .card-tag.tag-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.flashcard .card-tag.tag-error{background:var(--c-error-bg);color:var(--c-error);}
+.flashcard .card-tag.tag-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.flashcard .card-tag.tag-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.checklist{background:#fff;border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.checklist h4{color:var(--c-basic);margin:0 0 12px;font-size:15px;}
+.checklist ul{list-style:none;padding-left:0;margin:0;}
+.checklist li{padding:7px 0;font-size:13.5px;border-bottom:1px dashed var(--c-basic-line);display:flex;align-items:flex-start;gap:10px;line-height:1.55;}
+.checklist li:last-child{border-bottom:none;}
+.checklist li::before{content:'☐';color:var(--c-basic);font-weight:700;font-size:1.15rem;flex-shrink:0;line-height:1.2;}
+.core-path{background:linear-gradient(135deg,var(--c-basic-bg) 0%,#dcefe2 100%);border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:800;color:var(--c-basic);font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.core-path .cp-title::before{content:'▶';font-size:12px;}
+.core-path ol{margin:0;padding-left:22px;}
+.core-path li{margin-bottom:6px;font-size:13.5px;line-height:1.6;}
+.audit-panel{background:var(--surface-soft);border:2px solid var(--border-strong);border-radius:var(--r-lg);padding:16px 18px;margin:16px 0;}
+.audit-panel h4{margin:0 0 12px;color:var(--text);}
+.audit-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px;}
+@media(min-width:600px){.audit-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}}
+.audit-item{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:10px 12px;font-size:12.5px;line-height:1.55;}
+.mini-note{font-size:12.5px;color:var(--text-muted);font-style:italic;margin-top:8px;line-height:1.55;}
+.layer-legend{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:12px 14px;margin:12px 0;display:grid;grid-template-columns:1fr;gap:8px 18px;}
+@media(min-width:600px){.layer-legend{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;}}
+.layer-legend .layer-row{display:flex;gap:10px;align-items:center;font-size:12.5px;line-height:1.5;}
+.layer-legend .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.e8{background:var(--c-basic);}
+.layer-legend .dot.understand{background:var(--c-understand);}
+.layer-legend .dot.extra{background:var(--c-extra);}
+.layer-legend .dot.contest{background:var(--c-warn);}
+.klinika-table td.col-blad{color:var(--c-error);font-weight:700;}
+.klinika-table td.col-blad::before{content:'✕ ';font-weight:900;margin-right:4px;color:var(--c-error);}
+.klinika-table td.col-ok{color:var(--c-basic);font-weight:700;}
+.klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}
+.map-card{position:relative;}
+.map-expand-btn{position:absolute;top:10px;right:10px;z-index:3;padding:6px 12px;border:1px solid var(--accent-line);background:rgba(255,255,255,0.95);color:var(--accent);border-radius:var(--r-sm);font-size:12px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:var(--sh-sm);transition:all 0.15s var(--ease);}
+.map-expand-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.map-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(26,35,50,0.85);backdrop-filter:blur(6px);}
+.map-overlay.is-open{display:block;}
+.map-overlay-inner{position:absolute;inset:12px;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-xl);}
+.map-overlay-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface-soft);gap:8px;flex-wrap:wrap;}
+.map-overlay-title{font-weight:800;font-size:14px;color:var(--text);}
+.map-overlay-actions{display:flex;gap:6px;}
+.map-overlay-actions button{padding:6px 12px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;color:var(--text-soft);transition:all 0.15s var(--ease);}
+.map-overlay-actions button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.map-overlay-actions .map-close{background:var(--c-error);color:#fff;border-color:var(--c-error);}
+.map-overlay-canvas{flex:1;overflow:hidden;position:relative;background:#fff;cursor:grab;touch-action:none;}
+.map-overlay-canvas svg{display:block;position:absolute;top:0;left:0;transform-origin:0 0;}
+@media print{
+.fab,.toc-wrapper,.toc-overlay,.header-wrapper,.bottom-nav,.resume-dropdown,.map-overlay,.map-expand-btn{display:none !important;}
+body{padding:0;background:#fff;}
+.container{box-shadow:none;border:none;padding:0;max-width:100%;}
+details.answer{page-break-inside:avoid;}
+details.answer > *:not(summary){display:block !important;}
+details.answer summary{display:none;}
+.card{page-break-inside:avoid;}
+.widget{page-break-inside:avoid;}
+}
+@media (prefers-reduced-motion: reduce){
+*{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+html{scroll-behavior:auto;}
+}
+html,body{max-width:100%;overflow-x:hidden;}
+.table-scroll-hint{display:none;align-items:center;justify-content:space-between;gap:8px;padding:7px 11px;margin-top:0;margin-bottom:8px;border:1px solid var(--border);border-bottom:0;border-radius:var(--r-sm) var(--r-sm) 0 0;background:var(--surface-soft);color:var(--text-muted);font-size:11px;font-weight:700;}
+.table-wrap.is-scrollable + .table-scroll-hint{display:flex;}
+.table-scroll-hint .scroll-arrow{font-size:13px;letter-spacing:2px;color:var(--accent);}
+.timeline-anim{border-color:var(--c-understand-line);}
+.ta-stage{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 14px;min-height:280px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.ta-scene{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;animation:taFade 0.6s ease-out;width:100%;}
+@keyframes taFade{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.ta-scene .ta-year{font-size:1.7rem;font-weight:800;color:var(--accent);font-family:'JetBrains Mono',monospace;letter-spacing:1px;}
+.ta-scene .ta-who{font-size:1.05rem;font-weight:800;color:var(--text);}
+.ta-scene .ta-desc{font-size:13.5px;color:var(--text-soft);max-width:600px;line-height:1.65;}
+.ta-dots{display:flex;justify-content:center;gap:8px;margin:14px 0 8px;}
+.ta-dot{width:12px;height:12px;border-radius:50%;background:var(--border-strong);border:2px solid transparent;cursor:pointer;padding:0;transition:all 0.2s var(--ease);}
+.ta-dot.active{background:var(--accent);transform:scale(1.25);box-shadow:0 0 0 3px var(--accent-glow);}
+.ta-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;}
+.ta-nav{padding:8px 14px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-weight:700;color:var(--text-soft);cursor:pointer;font-size:12.5px;transition:all 0.15s var(--ease);}
+.ta-nav:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.ta-progress{font-size:12.5px;color:var(--text-muted);font-weight:700;font-family:'JetBrains Mono',monospace;}
+.eq-player{background:linear-gradient(180deg,#f8fafc,#eef6f5);border:2px solid var(--accent-line);border-radius:var(--r-lg);padding:16px 18px;margin:14px 0;}
+.eq-stage{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.15rem;padding:12px;background:#fff;border-radius:var(--r-md);border:1px solid var(--border);}
+.eq-term{display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border);opacity:0;}
+.eq-term.show{opacity:1;animation:reaction-flow 0.7s ease-out;}
+.eq-term.reactant{background:#e0f2fe;border-color:#7dd3fc;color:#0c4a6e;}
+.eq-term.product{background:#dcfce7;border-color:#86efac;color:#14532d;}
+.eq-arrow{opacity:0;color:var(--accent);font-size:1.4rem;}
+.eq-arrow.show{opacity:1;}
+.eq-balance{margin-top:10px;font-size:13px;color:var(--text-soft);display:none;}
+.eq-balance.show{display:block;}
+@keyframes reaction-flow{0%{opacity:.25;transform:scale(.92)}55%{opacity:1}100%{opacity:1;transform:scale(1)}}
+.ion-assembly{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;padding:18px 12px;background:#fff;border:1px solid var(--border);border-radius:var(--r-md);margin:10px 0;}
+.ion-chip{padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid var(--border);}
+.ion-chip.cation{background:#e0f2fe;border-color:#38bdf8;color:#0c4a6e;}
+.ion-chip.anion{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.ion-chip.product{background:#dcfce7;border-color:#4ade80;color:#14532d;}
+.ion-plus,.ion-join{font-size:1.4rem;font-weight:800;color:var(--text-muted);}
+.hero{max-width:900px;margin:0 auto 22px;padding:26px;border:1px solid var(--border);border-radius:var(--r-xl);background:linear-gradient(135deg,#fff,var(--accent-soft));box-shadow:var(--sh-md);}
+.hero h1{font-size:clamp(32px,6vw,52px);margin:4px 0 8px;}
+.hero-kicker{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--accent);text-transform:uppercase;}
+.lead{font-size:16px;color:var(--text-soft);max-width:720px;}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;}
+.page{max-width:900px;margin:0 auto;}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+@media(max-width:720px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px;}
+.metric-grid>div,.result-card,.step-card{padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);}
+.metric-grid b{display:block;font-size:10px;text-transform:uppercase;color:var(--text-muted);}
+.metric-grid strong{display:block;margin-top:3px;}
+@media(max-width:700px){.metric-grid{grid-template-columns:1fr;}}
+.controls,.button-grid{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;}
+.controls button,.button-grid button,.quiz-opt{padding:8px 12px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;cursor:pointer;}
+.particle-stage{height:120px;display:flex;align-items:center;justify-content:center;gap:70px;border:1px dashed var(--border-strong);border-radius:10px;margin-top:12px;}
+.particle{font-size:30px;font-weight:800;}
+.p-h3o{color:var(--accent);}
+.p-cl{color:#b83a45;}
+.ph-scale{display:flex;justify-content:space-between;margin-top:6px;font:700 11px 'JetBrains Mono',monospace;}
+.buffer-tank{height:28px;border:1px solid var(--border-strong);border-radius:999px;overflow:hidden;margin:14px 0;background:var(--surface-soft);}
+#bufferFill{height:100%;width:100%;background:var(--accent);transition:width .2s;}
+.quiz-wrap{margin:16px 0;}
+.quiz-q{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:14px 16px;margin-bottom:12px;}
+.quiz-q h5{margin:0 0 10px;font-size:14.5px;color:var(--text);text-transform:none;letter-spacing:0;line-height:1.45;}
+.quiz-q .q-tag{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:10px;margin-bottom:8px;background:var(--surface-soft);color:var(--text-muted);}
+.quiz-opts{display:flex;flex-direction:column;gap:8px;}
+.quiz-opt{display:block;width:100%;text-align:left;padding:10px 12px;border:2px solid var(--border);border-radius:var(--r-sm);background:#fff;font:inherit;font-size:13.5px;cursor:pointer;transition:all 0.15s var(--ease);color:var(--text);}
+.quiz-opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft);}
+.quiz-opt.correct{border-color:var(--c-basic);background:var(--c-basic-bg);color:var(--c-basic);font-weight:700;}
+.quiz-opt.wrong{border-color:var(--c-error);background:var(--c-error-bg);color:var(--c-error);}
+.quiz-opt:disabled{cursor:default;opacity:0.95;}
+.quiz-fb{margin-top:8px;font-size:13px;line-height:1.5;display:none;padding:8px 10px;border-radius:var(--r-sm);}
+.quiz-fb.show{display:block;}
+.quiz-fb.ok{background:var(--c-basic-bg);color:var(--c-basic);}
+.quiz-fb.bad{background:var(--c-error-bg);color:var(--c-error);}
+.quiz-score{text-align:center;padding:14px;background:var(--surface-soft);border-radius:var(--r-md);margin-top:16px;font-weight:800;color:var(--accent);display:none;}
+.quiz-score.show{display:block;}
+.lab-bridge{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 28px;padding:14px 16px;border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);background:linear-gradient(135deg,var(--surface-soft),var(--accent-soft));}
+.lab-bridge strong{display:block;color:var(--accent-dark);}
+.lab-bridge span{display:block;margin-top:3px;color:var(--text-soft);font-size:13px;}
+.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;}
+.lab-bridge-btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
+@media(max-width:600px){.lab-bridge{align-items:flex-start;flex-direction:column;}.lab-bridge-btn{width:100%;text-align:center;}}
+.exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}
+.exp-card h5{margin:0 0 10px;color:var(--c-basic);font-size:14px;text-transform:none;letter-spacing:0;}
+.exp-grid{display:grid;grid-template-columns:1fr;gap:6px;font-size:13.5px;line-height:1.55;}
+@media(min-width:600px){.exp-grid{grid-template-columns:110px 1fr;}}
+.exp-grid b{color:var(--text-soft);font-size:11px;text-transform:uppercase;letter-spacing:0.4px;}
+
+.js-reveal .card:not(.in),.js-reveal .widget:not(.in){opacity:0;transform:translateY(14px)}
+.js-reveal .card,.js-reveal .widget{transition:opacity .55s var(--ease),transform .55s var(--ease)}
+
+
+.ion-svg{width:100%;height:auto;display:block;background:radial-gradient(ellipse at 50% 40%,#fff,var(--surface-soft));border:1px solid var(--border);border-radius:var(--r-md);margin-top:10px}
+.ion-svg .mv{transition:transform .9s cubic-bezier(.65,0,.35,1);transform-box:fill-box}
+.ion-svg text{font-family:'JetBrains Mono',monospace;font-weight:800;text-anchor:middle;dominant-baseline:central}
+.ion-svg .fade{opacity:0;transition:opacity .6s ease .35s}
+.ion-svg[data-s="1"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="1"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="1"] .d1,.ion-svg[data-s="2"] .d1{opacity:1}
+.ion-svg[data-s="2"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="2"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="2"] .proton{transform:translate(120px,-40px)}
+.ion-svg[data-s="2"] .arrow{opacity:1}
+.ion-svg[data-s="3"] .g-hcl{transform:translateX(10px)}
+.ion-svg[data-s="3"] .g-w{transform:translateX(-10px)}
+.ion-svg[data-s="3"] .proton{transform:translate(230px,-38px)}
+.ion-svg[data-s="3"] .d3{opacity:1}
+.ion-svg[data-s="3"] .glow{animation:ionGlow 1.6s ease-in-out infinite}
+@keyframes ionGlow{0%,100%{filter:drop-shadow(0 0 2px rgba(13,104,104,.3))}50%{filter:drop-shadow(0 0 10px rgba(13,104,104,.8))}}
+
+
+.ph-bar{position:relative;height:18px;border-radius:999px;margin:10px 0 4px;border:1px solid var(--border-strong);
+background:linear-gradient(90deg,#e5262e 0%,#ef5a28 14%,#f6a21e 28%,#d7d93a 43%,#5cb85c 50%,#21a89a 57%,#2f7fc1 71%,#4a4bb5 86%,#6b2d8f 100%)}
+.ph-marker{position:absolute;top:-6px;width:0;height:0;left:0;transform:translateX(-50%);transition:left .35s var(--ease)}
+.ph-marker::before{content:'';position:absolute;left:-7px;top:0;border:7px solid transparent;border-top:10px solid var(--text)}
+.ph-marker::after{content:attr(data-v);position:absolute;left:0;top:-22px;transform:translateX(-50%);background:var(--text);color:#fff;font:800 11px 'JetBrains Mono',monospace;padding:2px 6px;border-radius:5px;white-space:nowrap}
+.ph-flask{display:inline-block;width:22px;height:22px;border-radius:0 0 8px 8px;border:2px solid var(--text-soft);vertical-align:middle;margin-right:6px;transition:background .35s}
+
+
+.titr-wrap{position:relative}
+#titrationCanvas{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--r-md);background:#fff}
+.titr-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.titr-row input[type=range]{flex:1 1 200px}
+.titr-flask{width:34px;height:42px;border:2px solid var(--text-soft);border-radius:2px 2px 12px 12px;transition:background .3s;flex-shrink:0;position:relative}
+.titr-flask::after{content:'';position:absolute;left:-2px;right:-2px;top:-8px;height:6px;border:2px solid var(--text-soft);border-bottom:0;border-radius:3px 3px 0 0}
+
+
+.buffer-tank{position:relative;height:34px}
+#bufferFill{transition:width .4s var(--ease),background .4s;background-size:28px 28px;background-image:linear-gradient(45deg,rgba(255,255,255,.22) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.22) 75%,transparent 75%)}
+.buffer-tank.pulse{animation:bufPulse .45s ease}
+.buffer-tank.dead{animation:bufDead .5s ease 2}
+@keyframes bufPulse{50%{transform:scale(1.02);box-shadow:0 0 0 4px var(--accent-glow)}}
+@keyframes bufDead{50%{box-shadow:0 0 0 4px rgba(184,58,69,.35)}}
+
+
+.rx-stage{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:12px 0;padding:14px;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md)}
+.rx-beaker{position:relative;width:120px;height:150px;border:3px solid var(--text-soft);border-top:0;border-radius:0 0 18px 18px;background:rgba(255,255,255,.55);overflow:visible;flex-shrink:0}
+.rx-liquid{position:absolute;left:0;right:0;bottom:0;height:100px;border-radius:0 0 14px 14px;background:rgba(220,235,240,.65);transition:background 2.2s ease}
+.rx-solid{position:absolute;left:36px;bottom:2px;width:48px;height:24px;border-radius:40% 40% 8px 8px;opacity:0;transition:height 3.5s ease,opacity .5s,transform 3.5s ease}
+.rx-bubbles,.rx-precip,.rx-fumes{position:absolute;left:0;right:0;bottom:0;height:150px;pointer-events:none;overflow:hidden}
+.rx-fumes{overflow:visible;bottom:100px;height:70px}
+.rx-b{position:absolute;bottom:14px;border-radius:50%;background:rgba(255,255,255,.85);border:1px solid rgba(13,104,104,.45);animation:rxRise 2.2s ease-in forwards}
+@keyframes rxRise{to{transform:translate(var(--dx,0),-92px);opacity:0}}
+.rx-p{position:absolute;top:50px;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #cbd5e1;animation:rxFall 2.4s ease-in forwards}
+@keyframes rxFall{to{transform:translateY(90px)}}
+.rx-cloud{position:absolute;bottom:0;left:6px;right:6px;height:0;background:#fff;border-radius:10px 10px 0 0;box-shadow:0 0 0 1px #e2e8f0;transition:height 4s ease;opacity:.95}
+.rx-f{position:absolute;bottom:0;width:26px;height:26px;border-radius:50%;background:rgba(150,75,20,.55);filter:blur(7px);animation:rxFume 3s ease-out forwards}
+@keyframes rxFume{to{transform:translate(var(--dx,0),-70px) scale(2.2);opacity:0}}
+
+
+.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.rx-label{flex:1 1 200px;font-size:13px;color:var(--text-soft);line-height:1.5}
+.rx-label b{color:var(--text);font-family:'JetBrains Mono',monospace}
+@media print{.js-reveal .card,.js-reveal .widget{opacity:1!important;transform:none!important}}
+
+
+/* ulepszenia.css — warstwa wspólna nad baza.css: pasek lekcji, postęp czytania, spis z podświetleniem,
+   tryb ciemny, komponenty wspólne (mity, drzewo, cytat, dialog, słówka, figura), druk, dostępność.
+   Kolejność w lekcji: baza.css → ulepszenia.css → motywy/<przedmiot>.css. Edytuj tylko tutaj. */
+
+:root{--header-h:52px;--serif:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Charter,Georgia,serif}
+
+/* ---------- pasek lekcji (zamiast nagłówka aplikacji) ---------- */
+.lk-bar{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 12px;
+  background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--border)}
+.lk-subj{flex:none;display:inline-flex;align-items:center;gap:7px;font:800 12.5px/1 Inter,system-ui,sans-serif;color:var(--accent);text-decoration:none;
+  padding:6px 10px 6px 8px;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+.lk-subj i{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+.lk-title{flex:1;min-width:0;font:600 13px/1.25 Inter,system-ui,sans-serif;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lk-btn{flex:none;min-width:36px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);background:var(--surface);
+  color:var(--text);border-radius:9px;padding:0 10px;font:700 12.5px Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+.lk-btn:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.lk-prog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
+@media (max-width:520px){.lk-title{display:none}.lk-bar{justify-content:space-between}}
+
+/* ---------- nagłówek lekcji ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+.hero::after{content:"";position:absolute;inset:-10% -6% -10% 52%;z-index:-1;opacity:.12;pointer-events:none;background:var(--motyw-wzor,none) right center/auto 100% repeat-y}
+.hero h1{text-wrap:balance}
+.hero-kicker{color:var(--accent);text-transform:none;letter-spacing:0;font-size:13px}
+.page{padding:0 16px}
+.lk-btn svg{width:16px;height:16px;display:block}
+.lk-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:12.5px;color:var(--text-muted)}
+.lk-meta b{color:var(--text-soft);font-weight:700}
+
+/* ---------- spis treści: aktywna sekcja ---------- */
+@media (min-width:800px){.toc-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));column-gap:12px}}
+.toc-link.on{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);font-weight:700}
+section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
+
+/* ---------- komponenty wspólne ---------- */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:12px 0}
+.myth-head{grid-column:1/-1;font-weight:800;font-size:14px}
+.myth{border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow:hidden}
+.myth p{margin:0;padding:9px 12px;font-size:13.5px;line-height:1.5}
+.myth p span{display:block;font:800 11px Inter,system-ui;margin-bottom:2px}
+.myth-x{background:var(--c-error-bg)}.myth-x span{color:var(--c-error)}.myth-ok span{color:var(--c-basic)}
+
+.lk-tree{margin:12px 0;font-size:14px;overflow-x:auto}
+.lk-tree ul{list-style:none;margin:0;padding-left:18px}.lk-tree>ul{padding-left:0}
+.lk-tree li{position:relative;padding:3px 0 3px 14px}
+.lk-tree ul ul li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--accent-line)}
+.lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
+.lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
+.lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+
+/* cytat z tekstu (lektura, źródło, wypowiedź) */
+.lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
+.lk-quote blockquote{margin:0;font:400 17px/1.65 var(--serif);color:var(--text)}
+.lk-quote blockquote p{margin:0 0 6px;color:inherit}
+.lk-quote figcaption{margin-top:6px;font-size:12.5px;color:var(--text-muted)}
+
+/* dialog (role A/B, rozmowa, scenka) */
+.lk-dialog{margin:14px 0;display:flex;flex-direction:column;gap:8px}
+.lk-line{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.lk-who{min-width:30px;height:30px;padding:0 8px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font:800 12px Inter,system-ui;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line)}
+.lk-line.b .lk-who{background:var(--surface-soft);color:var(--text-soft);border-color:var(--border)}
+.lk-say{padding:8px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font-size:14.5px;line-height:1.55}
+.lk-say small{display:block;color:var(--text-muted);font-size:12.5px;margin-top:2px}
+
+/* słówka: wyraz — znaczenie — przykład */
+.lk-vocab{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.lk-vocab th{text-align:left;font-size:12px;color:var(--text-muted);font-weight:700;padding:6px 10px;border-bottom:2px solid var(--border)}
+.lk-vocab td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+.lk-vocab td:first-child{font-weight:800;color:var(--accent);white-space:nowrap}
+.lk-vocab td:last-child{color:var(--text-soft);font-style:italic}
+@media (max-width:560px){.lk-vocab thead{display:none}.lk-vocab tr{display:block;padding:8px 0;border-bottom:1px solid var(--border)}
+  .lk-vocab td{display:block;border:0;padding:1px 4px}}
+
+/* figura z biblioteki grafik przedmiotu */
+.lk-fig{margin:16px 0;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);overflow:hidden}
+.lk-fig figcaption{padding:9px 14px;border-top:1px solid var(--border);background:var(--surface-soft);font-size:13px;line-height:1.5;color:var(--text-soft)}
+.lk-fig figcaption b{color:var(--text);margin-right:4px}
+.lk-fig-body{padding:12px}
+.lk-fig svg{display:block;width:100%;height:auto}
+
+/* z chemii (lekcja.css): treści akademickie, plakietki */
+details.adv{border:1px dashed var(--c-warn-line,#eed8a8);border-radius:10px;background:var(--surface-soft,#f6f8fa);margin:10px 0;padding:0 12px}details.adv>summary{cursor:pointer;font-weight:700;color:var(--c-warn,#b06f1c);padding:9px 0;list-style:none}details.adv>summary::-webkit-details-marker{display:none}details.adv>summary::before{content:"▸ "}details.adv[open]>summary::before{content:"▾ "}.adv-tag{font-weight:600;font-size:11px;opacity:.75;margin-left:6px}.adv-body{padding:0 0 10px;font-size:13.5px;line-height:1.6}.adv-body table{font-size:12.5px}.adv-toggle{margin-top:10px;border:1px solid var(--c-warn-line,#eed8a8);background:var(--c-warn-bg,#fcf4e6);color:var(--c-warn,#b06f1c);border-radius:999px;padding:6px 12px;font:700 12px Inter,system-ui,sans-serif;cursor:pointer}.bio-tag{display:inline-block;font:800 10px Inter,system-ui;letter-spacing:.04em;padding:2px 7px;border-radius:99px;background:rgba(46,125,79,.12);color:#2e7d4f;margin-left:6px;vertical-align:middle}.v15{display:inline-block;font:800 9.5px Inter,system-ui;padding:1px 6px;border-radius:99px;background:rgba(13,125,125,.12);color:#0d7d7d;margin-left:6px;vertical-align:middle}@media print{details.adv{display:block}details.adv>.adv-body{display:block}}
+/* z chemii (lekcja.css): telefon, tabele */
+.exp-card{min-width:0;max-width:100%;box-sizing:border-box}.exp-grid>*{min-width:0;overflow-wrap:anywhere}
+@media (max-width:600px){.exp-grid{grid-template-columns:minmax(0,1fr)!important}.exp-grid>b{margin-top:4px}}
+.table-wrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+
+/* klinika błędów (::: klinika) — tabela, na telefonie karty */
+.klinika-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden}
+.klinika-table th{text-align:left;padding:9px 12px;background:var(--surface-soft);color:var(--text-soft);font-size:12px;font-weight:800;border-bottom:1px solid var(--border)}
+.klinika-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.klinika-table tr:last-child td{border-bottom:0}
+@media (max-width:600px){.klinika-table thead{display:none}.klinika-table tr{display:block;padding:8px 12px;border-bottom:1px solid var(--border)}
+  .klinika-table td{display:block;border:0;padding:2px 0}.klinika-table td:not(.col-blad):not(.col-ok){color:var(--text-soft)}}
+
+.lk-pre{margin:12px 0;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-soft);overflow-x:auto;font:12.5px/1.55 ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;color:var(--text-soft);white-space:pre}
+.lk-pre code{font:inherit;background:none;padding:0;color:inherit}
+.lk-hr{border:0;border-top:1px solid var(--border);margin:28px 0}
+
+/* ---------- dostępność ---------- */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;z-index:60;background:var(--surface);color:var(--accent);padding:8px 12px;border-radius:8px}
+.skip-link:focus{left:8px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- tryb ciemny: automatycznie albo przyciskiem (data-theme) ---------- */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme=dark]{
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}
+/* elementy bazy z białym tłem na sztywno */
+html[data-ciemny] :is(.flashcard,.checklist,.audit-item,.layer-legend,.quiz-q,.quiz-opt,.btn,.controls button,.eq-stage,.ion-assembly,.bld-workspace,.bld-pool button,.resume-dropdown,.ta-nav){background:var(--surface);color:var(--text)}
+html[data-ciemny] .hero{background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.active,.step-flow){color:var(--bg)}
+@media (max-width:600px){.hero::after{opacity:.07}}
+
+/* ---------- druk ---------- */
+@media print{
+  .lk-bar,.adv-toggle,.toc-item,.fab,.bottom-nav{display:none!important}
+  body{padding:0;background:#fff;color:#000}
+  .hero::after{display:none}.hero{background:none;box-shadow:none}
+  details.adv,details.answer{display:block}details>*{display:block}
+  .card,.minimum-card,.lk-fig,.myth,.quiz-q{break-inside:avoid;box-shadow:none}
+  a{color:inherit;text-decoration:none}
+}
+
+/* === Dopracowanie czytelności (2026-10-11; z wersji „ulepszonej” U03 użytkownika, uogólnione na wszystkie przedmioty, zgodne z trybem ciemnym) === */
+body{line-height:1.74}
+main{isolation:isolate}
+.hero{border-color:var(--accent-line)}
+.hero::before{content:"";position:absolute;right:-42px;top:-56px;width:180px;height:180px;z-index:-1;pointer-events:none;
+ border:1px solid var(--accent-line);border-radius:50%;opacity:.45;
+ box-shadow:0 0 0 22px var(--accent-glow),0 0 0 44px var(--accent-glow)}
+.part-heading{padding:0 0 12px;border-bottom:1px solid var(--border);align-items:flex-start}
+.part-num{margin-top:1px}
+section[id]{scroll-margin-top:calc(var(--header-h,56px) + 20px)}
+section p{max-width:78ch}
+section ul,section ol{padding-left:1.35rem}
+.card,.exp-card,.widget,.table-wrap{box-shadow:0 2px 8px rgba(24,49,59,.045)}
+.table-wrap{max-width:100%}
+.table-wrap table{line-height:1.55}
+.table-wrap td strong{color:var(--text)}
+.table-wrap tbody tr:nth-child(even) td{background:var(--surface-soft)}
+.table-wrap tbody tr:hover td{background:var(--accent-soft)}
+.mini-note{max-width:80ch}
+:is(button,a,summary,[tabindex]):focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:520px){.hero{padding:20px 16px}.part-heading{font-size:19px;gap:11px}
+ .table-wrap table{font-size:12.5px}.table-wrap th,.table-wrap td{padding:8px 9px}}
+@media(hover:none){.card:hover,.flashcard:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media print{.hero::before{display:none}.card,.exp-card,.table-wrap{break-inside:avoid;box-shadow:none}}
+
+/* fiszki: część ukryta do rozwinięcia (lekcja.js); przy druku — wszystkie */
+.flashcard[hidden]{display:none!important}
+.fz-more{display:block;width:100%;margin:-6px 0 18px;padding:12px 16px;border:2px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent;color:var(--text,#1d2a30);font-family:inherit;font-weight:600;font-size:15px;line-height:1.3;cursor:pointer;text-align:center}
+.fz-more:hover,.fz-more:focus-visible{background:var(--surface-2,rgba(0,0,0,.04))}
+@media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
+.quiz-q[hidden]{display:none!important}
+@media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
+
+/* motyw che (Chemia) — kolory, wzór nagłówka, komponenty przedmiotu */
+:root{--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,.15);--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 104 180%27%3E%3Cg fill=%27none%27 stroke=%27%230d6868%27 stroke-width=%273%27%3E%3Cpath d=%27M52 10l40 23v46l-40 23-40-23V33z%27/%3E%3Cpath d=%27M52 100l40 23v46l-40 23-40-23v-46z%27/%3E%3Cpath d=%27M52 22v8M92 56h8M12 56H4%27/%3E%3C/g%3E%3Cg fill=%27%230d6868%27%3E%3Ccircle cx=%2752%27 cy=%2710%27 r=%275%27/%3E%3Ccircle cx=%2792%27 cy=%2779%27 r=%275%27/%3E%3Ccircle cx=%2712%27 cy=%27123%27 r=%275%27/%3E%3C/g%3E%3C/svg%3E")}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}}
+:root[data-theme=dark]{--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}
+
+/* równanie reakcji w osobnej linii: ::: div.rownanie */
+.rownanie{margin:12px 0;padding:12px 16px;border-radius:var(--r-md);background:var(--surface-soft);border:1px solid var(--border);font:600 17px/1.6 Inter,system-ui,sans-serif;text-align:center;overflow-x:auto;white-space:nowrap}
+.rownanie small{display:block;font-size:12px;font-weight:500;color:var(--text-muted);white-space:normal}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+<header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">K04 </span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<main class="page" id="main">
+<section class="hero card"><div class="hero-kicker">Chemia, lekcja K04</div><h1></h1><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#minimum">Minimum E8</a><a class="toc-link" href="#jak-pracowac">0.1. Jak pracować z lekcją</a><a class="toc-link" href="#cele">0.2. Cele i pytanie przewodnie</a><a class="toc-link" href="#kompas">0.3. Kompas — co trzeba wiedzieć wcześniej</a><a class="toc-link" href="#diagnoza">0.4. Diagnoza startowa</a><a class="toc-link" href="#s1">0.5. Przypomnienie z poprzedniej lekcji</a><a class="toc-link" href="#s2">Jednostki i przeliczanie</a><a class="toc-link" href="#s3">Metody pomiaru szybkości</a><a class="toc-link" href="#s4">Przykłady obliczeniowe krok po kroku</a><a class="toc-link" href="#s5">Ćwiczenia — dodatkowe</a><a class="toc-link" href="#s6">Fiszki</a><a class="toc-link" href="#s7">Test uzupełniający</a><a class="toc-link" href="#s8">Mnemotechniki</a><a class="toc-link" href="#s9">Mosty</a><a class="toc-link" href="#s10">Ciekawostki</a></nav></details>
+<hr class="lk-hr"/>
+<p>kod: K04
+tytul: Szybkość reakcji
+opis: szybkość reakcji · szybkość średnia · szybkość chwilowa · wykres stężenie–czas · jednostki szybkości · stechiometria szybkości · metody pomiaru · wpływ temperatury · wpływ stężenia · wpływ powierzchni kontaktu · katalizator · wstęp do równania kinetycznego
+uid: CHE.07.K04.szybkosc_reakcji
+kicker: K04 · CHEMIA · Kinetyka · NOWA WERSJA · SZKOŁA / KONKURS
+lead: Dlaczego jedna reakcja kończy się w ułamku sekundy, a inna trwa lata? Odpowiedź leży w szybkości — czyli w tym, jak szybko zmienia się skład układu w czasie. Ta lekcja uczy ją mierzyć, odczytywać z wykresu i przeliczać.
+plakietki: <span class="level-badge level-basic">E8</span><span class="level-badge level-understand">ROZUMIENIE</span><span class="level-badge level-extra">AMBITNE</span><span class="level-badge level-extra">LO</span>
+uwaga: Plakietka E8 oznacza podstawową warstwę kursu, nie zakres egzaminu ósmoklasisty z chemii. Szybkość reakcji jest wielkością dodatnią. Dla substratów stężenie maleje, dla produktów rośnie, dlatego w obliczeniach stosuje się wartość bezwzględną zmiany stężenia. Równanie kinetyczne przedstawiono jako wstęp; jego pełne zastosowanie wymaga danych doświadczalnych.
+stopka: CHEMIA K04 · Szybkość reakcji · Materiał do samodzielnej nauki · 2026
+stan: ULEPSZONA — Perplexity, 2026-10-13; do sprawdzenia</p>
+<hr class="lk-hr"/>
+<section id="minimum" class="minimum-card"><h3>Muszę umieć — 10 punktów</h3>
+<ol>
+<li>Definiuję szybkość reakcji jako zmianę stężenia substratu lub produktu w jednostce czasu.</li>
+<li>Obliczam szybkość średnią ze wzoru v = Δc/Δt, stosując wartość bezwzględną zmiany stężenia.</li>
+<li>Odczytuję szybkość średnią z tabeli pomiarowej oraz z wykresu stężenie–czas.</li>
+<li>Rozróżniam szybkość średnią na odcinku czasu od szybkości chwilowej w danym momencie.</li>
+<li>Podaję jednostki szybkości reakcji, na przykład mol/(dm³·s).</li>
+<li>Łączę szybkości zaniku substratów i powstawania produktów ze współczynnikami stechiometrycznymi równania.</li>
+<li>Wskazuję czynniki wpływające na szybkość reakcji: stężenie, temperaturę, powierzchnię kontaktu, katalizator oraz — dla reakcji gazowych — ciśnienie.</li>
+<li>Wyjaśniam, że zwiększenie temperatury zwiększa energię cząsteczek i liczbę zderzeń skutecznych.</li>
+<li>Wyjaśniam, że katalizator obniża energię aktywacji, ale nie zmienia równania reakcji ani jej bilansu energetycznego.</li>
+<li>Zapisuję wstępne równanie kinetyczne dla reakcji jednosubstratowej: v = k·[A]ⁿ, gdzie k to stała szybkości, a n rząd reakcji względem A.</li>
+</ol>
+</section>
+<div class="layer-legend">
+<div class="layer-row"><span class="dot e8"></span><span><b>Podstawa:</b> pojęcie szybkości reakcji, szybkość średnia, odczyt z tabeli i wykresu, czynniki wpływające na szybkość oraz proste przykłady.</span></div>
+<div class="layer-row"><span class="dot understand"></span><span><b>Rozumienie:</b> dlaczego dla substratu stężenie maleje, a dla produktu rośnie, dlaczego szybkość jest dodatnia oraz jak stechiometria łączy szybkości różnych substancji.</span></div>
+<div class="layer-row"><span class="dot extra"></span><span><b>Poziom rozszerzony:</b> szybkość chwilowa, jednostki, stechiometria szybkości oraz wstęp do równania kinetycznego.</span></div>
+<div class="layer-row"><span class="dot contest"></span><span><b>Konkurs:</b> analiza wykresów, porównywanie szybkości w różnych momentach, projektowanie doświadczeń, wpływ warunków oraz granice wnioskowania z jednego pomiaru.</span></div>
+<div class="layer-row"><span class="dot extra"></span><span><b>Ambitne:</b> teoria zderzeń, energia aktywacji, katalizator, rząd reakcji oraz różnica między szybkością chwilową a średnią.</span></div>
+</div>
+<div id="rdzen" class="core-path">
+<div class="cp-title">Rdzeń lekcji — najpierw to</div>
+<ul>
+<li><a href="#wyklad">§1</a> — Wykład od zera: co to znaczy, że reakcja jest szybka.</li>
+<li><a href="#srednia-chwilowa">§2</a> — Szybkość średnia i chwilowa.</li>
+<li><a href="#stechiometria">§3</a> — Stechiometria szybkości reakcji.</li>
+<li><a href="#czynniki">§4</a> — Czynniki wpływające na szybkość.</li>
+<li><a href="#kinetyka">§5</a> — Wstęp do równania kinetycznego.</li>
+<li><a href="#przyklady">§6</a> — Przykłady prowadzone.</li>
+<li><a href="#klinika">§7</a> — Klinika błędów.</li>
+<li><a href="#cwiczenia">§8</a> — Ćwiczenia z kluczem.</li>
+<li><a href="#slownik">§9</a> — Słownik.</li>
+<li><a href="#test">§10</a> — Test końcowy.</li>
+<li><a href="#checklista">§11</a> — Checklista.</li>
+</ul>
+</div>
+<section id="jak-pracowac">
+<div class="part-heading"><span class="part-num">0.1</span> Jak pracować z lekcją</div>
+<p>Ta lekcja uczy, jak mierzyć i opisywać szybkość reakcji. Po jej przejściu umiesz:</p>
+<ul>
+<li>obliczyć szybkość średnią z tabeli;</li>
+<li>odczytać szybkość chwilową z wykresu;</li>
+<li>przeliczyć jednostki;</li>
+<li>powiązać szybkości różnych substancji ze współczynnikami reakcji;</li>
+<li>wyjaśnić wpływ warunków na tempo przemiany.</li>
+</ul>
+<p>Kolejność pracy:</p>
+<ol>
+<li>Zacznij od diagnozy w <a href="#diagnoza">§0.4</a>. Odpowiedz samodzielnie, a dopiero potem sprawdź klucz.</li>
+<li>Przeczytaj wykład w <a href="#wyklad">§1</a>. Obraz przewodni to zderzenia cząsteczek: nie każde zderzenie prowadzi do reakcji.</li>
+<li>W <a href="#srednia-chwilowa">§2</a> rozwiąż przykłady szybkości średniej i chwilowej. Zwróć uwagę na znak zmiany stężenia.</li>
+<li>W <a href="#stechiometria">§3</a> połącz szybkości substratów i produktów ze współczynnikami równania.</li>
+<li>W <a href="#czynniki">§4</a> przeanalizuj wpływ warunków. Nie myl wpływu temperatury z wpływem katalizatora.</li>
+<li>Równanie kinetyczne w <a href="#kinetyka">§5</a> traktuj jako wstęp. Rząd reakcji ustala się na podstawie danych doświadczalnych, nie na podstawie współczynników równania.</li>
+</ol>
+<p>Przydatne wcześniej: reakcja jako zjawisko z F03 i F16, równanie reakcji oraz substraty i produkty z F17, energia aktywacji z K01, stężenie i jednostki stężeń.</p>
+</section>
+<section id="cele">
+<div class="part-heading"><span class="part-num">0.2</span> Cele i pytanie przewodnie</div>
+<p>Pytanie przewodnie: <strong>Jak zmierzyć, opisać i przewidzieć tempo przemiany chemicznej?</strong></p>
+<p>Po tej lekcji potrafisz:</p>
+<ul>
+<li>zdefiniować szybkość reakcji;</li>
+<li>obliczyć szybkość średnią;</li>
+<li>odczytać szybkość chwilową z wykresu;</li>
+<li>powiązać szybkości substratów i produktów;</li>
+<li>wyjaśnić wpływ temperatury, stężenia, powierzchni kontaktu i katalizatora.</li>
+</ul>
+</section>
+<section id="kompas">
+<div class="part-heading"><span class="part-num">0.3</span> Kompas — co trzeba wiedzieć wcześniej</div>
+<ul>
+<li><strong>Reakcja jako zjawisko</strong> — F03, F16.</li>
+<li><strong>Równanie reakcji, substraty i produkty</strong> — F17.</li>
+<li><strong>Stężenie i jednostki stężeń</strong> — J01.</li>
+<li><strong>Energia aktywacji i katalizator</strong> — K01.</li>
+<li><strong>Temperatura jako miara ruchu cząsteczek</strong> — przyroda, fizyka.</li>
+<li><strong>Wykresy i odczyt danych</strong> — matematyka.</li>
+</ul>
+</section>
+<section id="diagnoza">
+<div class="part-heading"><span class="part-num">0.4</span> Diagnoza startowa</div>
+<p>Odpowiedz najpierw samodzielnie.</p>
+<ol>
+<li>Co to jest szybkość reakcji?</li>
+<li>Jak oblicza się szybkość średnią?</li>
+<li>Jaka jest jednostka szybkości, jeżeli stężenie podaje się w mol/dm³, a czas w sekundach?</li>
+<li>Co się dzieje ze stężeniem substratu podczas reakcji?</li>
+<li>Jak katalizator wpływa na szybkość reakcji?</li>
+</ol>
+<details class="answer"><summary>Klucz diagnozy i interpretacja</summary>
+<ol>
+<li>(1 pkt) Szybkość reakcji to zmiana stężenia substratu lub produktu w jednostce czasu.</li>
+</ol>
+<ol start="2">
+<li>(1 pkt) v = Δc/Δt, przy czym dla substratu stosuje się wartość bezwzględną zmiany stężenia.</li>
+</ol>
+<ol start="3">
+<li>(1 pkt) mol/(dm³·s).</li>
+</ol>
+<ol start="4">
+<li>(1 pkt) Stężenie substratu maleje.</li>
+</ol>
+<ol start="5">
+<li>(1 pkt) Katalizator zwiększa szybkość reakcji, między innymi przez obniżenie energii aktywacji.</li>
+</ol>
+<p>Interpretacja wyniku: 5 pkt — przejdź do przykładów; 3–4 pkt — przeczytaj punkty 2 i 3; 0–2 pkt — zacznij od rdzenia.</p>
+</details>
+</section>
+<section id="s1">
+<div class="part-heading"><span class="part-num">0.5</span> Przypomnienie z poprzedniej lekcji</div>
+<p>Zanim przeczytasz dalej, odpowiedz na dwa pytania z R05 (bez zaglądania):</p>
+<ol>
+<li>Ile moli znajduje się w 0,5 dm³ roztworu o stężeniu 0,2 mol/dm³?</li>
+<li>Co oznacza zapis „mol/dm³”?</li>
+</ol>
+<div class="card card-understand">
+<span class="card-label">Klucz do przypomnienia</span>
+<ol>
+<li>n = c · V = 0,2 · 0,5 = 0,1 mol. Jeśli wynik wyszedł inny, wróć do R05 przed dalszą lekcją.</li>
+<li>Liczba moli substancji w jednym decymetrze sześciennym roztworu. Ta jednostka wróci w każdym wzorze tej lekcji.</li>
+</ol>
+</div>
+<section id="minimum" class="minimum-card"><h3>Muszę umieć — 6 punktów</h3>
+<ol>
+<li>Szybkość reakcji to zmiana stężenia w jednostce czasu. Jednostka: mol/(dm³·s).</li>
+<li>Szybkość średnią liczymy jako moduł(Δc)/Δt dla przedziału czasu.</li>
+<li>Szybkość chwilowa to nachylenie stycznej do wykresu c(t).</li>
+<li>Dla substratu Δc jest ujemne, dlatego bierzemy moduł albo stawiamy minus.</li>
+<li>Współczynniki reakcji łączą szybkości różnych składników.</li>
+<li>Gaz mierzymy w warunkach normalnych (1 mol = 22,4 dm³) albo przeliczamy wynik.</li>
+</ol>
+</section>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">1</span> Wykład — co to znaczy, że reakcja jest szybka? {#wyklad} <span class="level-badge level-basic">E8</span></div>
+<p>Niektóre reakcje zachodzą niemal natychmiast. Inne trwają sekundy, godziny, lata, a nawet dłużej. Rdzewienie żelaza może trwać miesiącami, spalanie magnezu — ułamki sekundy, a wytrącanie osadu po zmieszaniu odpowiednich roztworów często zachodzi bardzo szybko.</p>
+<p><strong>Szybkość reakcji</strong> opisuje, jak szybko zmienia się skład układu w czasie. W najprostszym przypadku mierzy się zmianę stężenia jednego substratu albo jednego produktu.</p>
+<p>Dla substratu A:</p>
+<p>v = −Δ[A]/Δt</p>
+<p>Stężenie substratu maleje, więc Δ[A] jest ujemne. Znak minus sprawia, że szybkość v pozostaje dodatnia.</p>
+<p>Dla produktu B:</p>
+<p>v = Δ[B]/Δt</p>
+<p>Stężenie produktu rośnie, więc Δ[B] jest dodatnie. Szybkość również pozostaje dodatnia.</p>
+<p>W praktyce często zapisuje się:</p>
+<p>v = |Δc|/Δt</p>
+<p>gdzie Δc to zmiana stężenia, a Δt — zmiana czasu.</p>
+<p>Jednostka szybkości zależy od jednostek stężenia i czasu. Jeżeli stężenie podajemy w mol/dm³, a czas w sekundach, to:</p>
+<p>v = mol/(dm³·s)</p>
+<p>Obraz przewodni lekcji to zderzenia cząsteczek. Aby reakcja mogła zajść, cząsteczki muszą się zderzyć z odpowiednią energią i odpowiednim ustawieniem. Nie każde zderzenie jest skuteczne.</p>
+<p>Zwiększenie stężenia oznacza więcej cząsteczek w tej samej objętości, więc zderzenia występują częściej. Zwiększenie temperatury zwiększa energię cząsteczek, więc większa liczba zderzeń ma wystarczającą energię, aby pokonać barierę energetyczną.</p>
+<p>Katalizator działa inaczej. Nie zwiększa energii cząsteczek, lecz obniża barierę energetyczną — energię aktywacji. Dzięki temu więcej zderzeń prowadzi do reakcji.</p>
+<p>Szybkość reakcji nie jest stała przez cały czas. Na początku, gdy substratów jest dużo, reakcja może przebiegać szybko. W miarę zużywania substratu szybkość zwykle maleje. Dlatego rozróżnia się szybkość średnią i szybkość chwilową.</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie — szybkość w jednym zdaniu</span>
+<p>Szybkość reakcji to tempo zmiany stężenia substratu lub produktu w czasie. Dla substratu stężenie maleje, dla produktu rośnie, a szybkość zawsze zapisujemy jako liczbę dodatnią.</p>
+</div>
+<div class="card card-core">
+<span class="card-label">Najważniejsze — zderzenia i bariera</span>
+<p>Reakcja zachodzi, gdy cząsteczki zderzą się z odpowiednią energią i ustawieniem. Stężenie, temperatura, powierzchnia kontaktu i katalizator wpływają na liczbę skutecznych zderzeń.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Uwaga — szybkość nie jest stała</span>
+<p>Szybkość reakcji zwykle maleje w miarę zużywania substratu. Dlatego nie należy przypisywać jednej wartości szybkości całej reakcji bez podania przedziału czasu albo momentu pomiaru.</p>
+</div>
+</section>
+<section id="s2">
+<div class="part-heading"><span class="part-num">1a</span> Jednostki i przeliczanie</div>
+<p>Jednostka szybkości wynika z definicji: stężenie w mol/dm³ dzielone przez czas. Najczęściej w zadaniach spotkasz mol/(dm³·s). Jeśli czas podano w minutach, przelicz go na sekundy przed obliczeniem albo zapisz wynik w mol/(dm³·min) i wyraźnie to zaznacz.</p>
+<p>Przykład przeliczenia: zmiana stężenia o 0,6 mol/dm³ w ciągu 2 minut to 0,6/120 = 0,005 mol/(dm³·s). Ta sama szybkość w mol/(dm³·min) wynosi 0,6/2 = 0,3 mol/(dm³·min). Obie wartości opisują to samo zjawisko, tylko w innych jednostkach.</p>
+<div class="card card-warning">
+<span class="card-label">Pułapka: mieszanie minut i sekund</span>
+<p>Najczęstszy błąd rachunkowy to podzielenie zmiany stężenia przez czas podany w minutach, a potem zapisanie wyniku jako mol/(dm³·s). Zawsze sprawdź, co jest w mianowniku. Jeśli nie jest to sekunda, przelicz.</p>
+</div>
+<div class="card card-understand">
+<span class="card-label">W skrócie: różne zapisy w literaturze</span>
+<p>Podręczniki i strony z zadaniami nie zawsze podają jednostkę w tym samym zapisie. Spotkasz mol/(dm³·s), mol·dm⁻³·s⁻¹, a przy stałych szybkości także min⁻¹ czy l·mol⁻¹·s⁻¹. To ten sam pomysł zapisany inaczej. W tej lekcji trzymamy się mol/(dm³·s).</p>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">2</span> Szybkość średnia i chwilowa {#srednia-chwilowa} <span class="level-badge level-understand">ROZUMIENIE</span> <span class="level-badge level-extra">LO</span></div>
+<p><strong>Szybkość średnia</strong> opisuje zmianę stężenia na określonym odcinku czasu:</p>
+<p>v(średnia) = |Δc|/Δt</p>
+<p>Przykład: jeżeli stężenie substratu spadło z 0,80 mol/dm³ do 0,60 mol/dm³ w czasie 20 s, to:</p>
+<p>Δc = 0,60 − 0,80 = −0,20 mol/dm³</p>
+<p>v = |−0,20|/20</p>
+<p>v = 0,010 mol/(dm³·s)</p>
+<p><strong>Szybkość chwilowa</strong> opisuje tempo reakcji w konkretnym momencie. Na wykresie stężenie–czas jest to nachylenie stycznej do krzywej w danym punkcie.</p>
+<p>Na początku reakcji krzywa może być stroma, co oznacza dużą szybkość chwilową. Pod koniec reakcji krzywa staje się łagodniejsza, co oznacza mniejszą szybkość. Gdy reakcja się zakończy, stężenie substratu przestaje się zmieniać, a szybkość netto spada do zera.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Pojęcie</th><th>Co opisuje?</th><th>Jak je wyznaczyć?</th></tr></thead>
+<tbody>
+<tr><td>Szybkość średnia</td><td>Zmianę stężenia na odcinku czasu</td><td>v =</td><td>Δc</td><td>/Δt</td></tr>
+<tr><td>Szybkość chwilowa</td><td>Tempo w konkretnym momencie</td><td>Nachylenie stycznej do wykresu</td></tr>
+<tr><td>Początkowa szybkość</td><td>Tempo na początku reakcji</td><td>Nachylenie stycznej w punkcie startowym</td></tr>
+</tbody></table></div>
+<p>Szybkość chwilową trudniej obliczyć dokładnie z tabeli, ponieważ wymaga danych w bardzo krótkich odstępach czasu albo wykresu. W szkolnych zadaniach często wystarczy oszacowanie nachylenia stycznej.</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie — średnia czy chwilowa?</span>
+<p>Szybkość średnia opisuje cały odcinek czasu. Szybkość chwilowa opisuje jeden moment. Na wykresie pierwszą oblicza się ze zmiany stężenia i czasu, a drugą z nachylenia stycznej.</p>
+</div>
+<nie-myl>
+<summary>Szybkość, zmiana stężenia i czas</summary>
+<ul>
+<li>Szybkość ≠ zmiana stężenia — szybkość to zmiana stężenia podzielona przez czas; test rozstrzygający: sprawdź, czy w obliczeniu występuje dzielenie przez Δt.</li>
+<li>Szybkość substratu ≠ szybkość produktu — dla substratu stężenie maleje, dla produktu rośnie; test rozstrzygający: zastosuj wartość bezwzględną i uwzględnij współczynniki stechiometryczne.</li>
+<li>Duża zmiana stężenia ≠ duża szybkość — jeżeli zmiana nastąpiła w bardzo długim czasie, szybkość może być mała; test rozstrzygający: podziel zmianę stężenia przez czas.</li>
+</ul>
+</nie-myl>
+<div class="card card-exam">
+<span class="card-label">Zadanie 1 (3 pkt) — Szybkość średnia</span>
+<p>Stężenie substratu A zmienia się w czasie:</p>
+<p>t = 0 s, [A] = 0,80 mol/dm³</p>
+<p>t = 20 s, [A] = 0,60 mol/dm³</p>
+<p>a) Oblicz zmianę stężenia Δ[A]. (1 pkt)</p>
+<p>b) Oblicz szybkość średnią reakcji. (1 pkt)</p>
+<p>c) Podaj jednostkę szybkości. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) Δ[A] = 0,60 − 0,80 = −0,20 mol/dm³.</p>
+<p>b) (1 pkt) v = |Δ[A]|/Δt = 0,20/20 = 0,010 mol/(dm³·s).</p>
+<p>c) (1 pkt) mol/(dm³·s).</p>
+</details>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">3</span> Stechiometria szybkości reakcji {#stechiometria} <span class="level-badge level-understand">ROZUMIENIE</span> <span class="level-badge level-extra">LO</span></div>
+<p>Dla reakcji:</p>
+<p>aA + bB → cC + dD</p>
+<p>szybkość reakcji można zapisać za pomocą zmian stężeń:</p>
+<p>v = −(1/a)·Δ[A]/Δt = −(1/b)·Δ[B]/Δt = (1/c)·Δ[C]/Δt = (1/d)·Δ[D]/Δt</p>
+<p>Znaki minus przy substratach wynikają z tego, że ich stężenia maleją. Dzielenie przez współczynniki stechiometryczne jest konieczne, ponieważ różne substancje mogą zmieniać stężenie w różnym tempie.</p>
+<p>Przykład dla reakcji:</p>
+<p>N₂ + 3H₂ → 2NH₃</p>
+<p>szybkość można zapisać jako:</p>
+<p>v = −Δ[N₂]/Δt = −(1/3)·Δ[H₂]/Δt = (1/2)·Δ[NH₃]/Δt</p>
+<p>Jeżeli azot znika z szybkością 0,010 mol/(dm³·s), to wodór znika trzy razy szybciej:</p>
+<p>v(H₂) = 3·0,010 = 0,030 mol/(dm³·s)</p>
+<p>Amoniak powstaje dwa razy szybciej niż znika azot:</p>
+<p>v(NH₃) = 2·0,010 = 0,020 mol/(dm³·s)</p>
+<p>Nie należy mylić współczynników stechiometrycznych z rzędem reakcji. Współczynniki opisują proporcje substratów i produktów. Rząd reakcji ustala się doświadczalnie.</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie — współczynniki w szybkości</span>
+<p>Współczynniki stechiometryczne mówią, w jakiej proporcji zmieniają się stężenia. Przy obliczaniu jednej wspólnej szybkości reakcji dzieli się zmianę stężenia przez współczynnik danej substancji.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Uwaga — współczynnik stechiometryczny nie jest rzędem reakcji</span>
+<p>Rząd reakcji względem substratu ustala się z danych doświadczalnych. Współczynnik w równaniu może być inny niż rząd reakcji.</p>
+</div>
+</section>
+<section id="s3">
+<div class="part-heading"><span class="part-num">3a</span> Metody pomiaru szybkości</div>
+<p>Każda metoda pomiaru ma swoje ograniczenia. Gdy wydziela się gaz, masa układu maleje, bo gaz ucieka. Gdy powstaje osad, roztwór mętnieje i trudniej mierzyć barwę. Dlatego przy projektowaniu doświadczenia wybieramy cechę, która jest proporcjonalna do przebiegu reakcji i łatwa do odczytania.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Metoda</th><th>Co mierzymy</th><th>Przykład reakcji</th><th>Kiedy stosować</th></tr></thead>
+<tbody>
+<tr><td>Objętość gazu</td><td>Objętość wydzielonego gazu w stałej temperaturze i ciśnieniu</td><td>Mg + 2HCl → MgCl₂ + H₂↑</td><td>reakcje z wydzielaniem gazu</td></tr>
+<tr><td>Masa układu</td><td>Ubytek masy, gdy gaz ucieka z otwartego naczynia</td><td>CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂↑</td><td>gdy gaz ucieka, a naczynie stoi na wadze</td></tr>
+<tr><td>Barwa roztworu</td><td>Zmiana intensywności barwy</td><td>reakcje z udziałem jodu</td><td>reakcje zmieniające kolor</td></tr>
+<tr><td>Przewodnictwo</td><td>Zmiana liczby jonów w roztworze</td><td>reakcje tworzące lub zużywające jony</td><td>reakcje w roztworach wodnych</td></tr>
+<tr><td>Ciśnienie</td><td>Ciśnienie w zamkniętym naczyniu</td><td>reakcje gazowe przy stałej objętości</td><td>układy gazowe</td></tr>
+<tr><td>pH</td><td>Zmiana stężenia jonów H⁺</td><td>reakcje z udziałem kwasów lub zasad</td><td>roztwory o zmiennym odczynie</td></tr>
+</tbody></table></div>
+<p>Metody pobierania próbek są inne: w stałej temperaturze pobieramy porcje mieszaniny, zatrzymujemy w nich reakcję (np. szybkim ochłodzeniem) i oznaczamy stężenie, np. miareczkowaniem. Podobnie działa pomiar absorpcji światła w spektrofotometrze. Źródło tej listy podajemy w sekcji „Źródła” na końcu lekcji.</p>
+<h3>6.1 Pomiar objętości gazu — opis doświadczenia</h3>
+<p>Probówkę z roztworem kwasu solnego łączymy wężykiem z cylindrem wypełnionym wodą, odwróconym do góry dnem. Do kwasu dodajemy kawałek magnezu i szybko zatykamy probówkę. Wydzielający się wodór wypiera wodę z cylindra; co kilkanaście sekund notujemy objętość gazu. Po przeliczeniu objętości na liczbę moli i uwzględnieniu stechiometrii odczytujemy zmianę ilości magnezu lub kwasu.</p>
+<p>Ważne: objętość gazu zależy od temperatury i ciśnienia, dlatego pomiar robimy w tych samych warunkach albo przeliczamy wynik do warunków normalnych (0 °C, 1013 hPa, gdzie 1 mol gazu zajmuje 22,4 dm³). Gdy tego nie zrobisz, wyniki z kolejnych prób będą niespójne.</p>
+<div class="card card-warning">
+<span class="card-label">BHP przy pomiarach z gazami i kwasami</span>
+<p>Kwas solny jest żrący, więc pracujemy w okularach i rękawicach. Wodór jest łatwopalny, więc nie zbliżamy do niego płomienia. Gdy reakcja wydziela CO₂, pracujemy w dobrze wentylowanym pomieszczeniu. Układ z zatyczką nie może być całkowicie szczelny podczas wydzielania gazu, bo może pęknąć.</p>
+</div>
+<h3>6.2 Pomiar ubytku masy — opis doświadczenia</h3>
+<p>Kolbkę z węglanem wagę pokazuje na początku. Dodajemy kwas i co kilkanaście sekund odczytujemy masę. Ubytek masy odpowiada gazowi, który uciekł (CO₂). Metoda jest prosta, ale gdy gaz ucieka zbyt szybko, wynik jest obarczony błędem. Dlatego w doświadczeniu szkolnym warto zapisać kilka prób i porównać przebieg.</p>
+<div class="card card-understand">
+<span class="card-label">Mini-wykład: po co powtarzać pomiar</span>
+<p>Pojedynczy pomiar jest jak jedna fotografia. Gdy powtórzysz doświadczenie kilka razy i wyniki będą się różnić o kilka procent, wiesz, że błąd jest rzędu kilku procent. Powtarzanie pomiaru to sposób na uczciwą ocenę, jak bardzo możesz ufać swojej liczbie.</p>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">4</span> Czynniki wpływające na szybkość {#czynniki} <span class="level-badge level-basic">E8</span> <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<p>Na szybkość reakcji wpływają między innymi:</p>
+<ol>
+<li><strong>Stężenie substratów</strong> — większe stężenie oznacza więcej cząsteczek w tej samej objętości i częstsze zderzenia.</li>
+<li><strong>Temperatura</strong> — wyższa temperatura zwiększa energię cząsteczek i liczbę zderzeń o wystarczającej energii.</li>
+<li><strong>Powierzchnia kontaktu</strong> — rozdrobnienie ciała stałego zwiększa powierzchnię, na której mogą zachodzić zderzenia.</li>
+<li><strong>Katalizator</strong> — obniża energię aktywacji, dzięki czemu więcej zderzeń prowadzi do reakcji.</li>
+<li><strong>Ciśnienie</strong> — dla reakcji gazowych zwiększenie ciśnienia zwykle zwiększa stężenie gazów i częstotliwość zderzeń.</li>
+</ol>
+<div class="table-wrap"><table>
+<thead><tr><th>Czynnik</th><th>Co się zmienia?</th><th>Efekt na szybkość</th></tr></thead>
+<tbody>
+<tr><td>Większe stężenie</td><td>Więcej cząsteczek w objętości</td><td>Zderzenia częstsze, szybkość rośnie</td></tr>
+<tr><td>Wyższa temperatura</td><td>Większa energia cząsteczek</td><td>Więcej zderzeń skutecznych, szybkość rośnie</td></tr>
+<tr><td>Większa powierzchnia kontaktu</td><td>Więcej miejsca reakcji</td><td>Szybkość rośnie</td></tr>
+<tr><td>Katalizator</td><td>Niższa energia aktywacji</td><td>Szybkość rośnie</td></tr>
+<tr><td>Większe ciśnienie gazu</td><td>Większe stężenie gazu</td><td>Szybkość zwykle rośnie</td></tr>
+</tbody></table></div>
+<p>Przykład: magnez w postaci granulek reaguje z kwasem wolniej niż magnez w postaci proszku. Proszek ma większą powierzchnię kontaktu z kwasem.</p>
+<p>Przykład: zwiększenie temperatury zwykle przyspiesza reakcję, ale nie zmienia jej bilansu energetycznego. Reakcja egzotermiczna pozostaje egzotermiczna, a endotermiczna — endotermiczna.</p>
+<p>Przykład: katalizator obniża energię aktywacji. Nie zmienia równania reakcji ani ΔH. Po reakcji katalizator wraca do postaci, w której może działać dalej.</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie — cztery drogi przyspieszenia</span>
+<p>Można zwiększyć stężenie, podnieść temperaturę, zwiększyć powierzchnię kontaktu albo dodać katalizator. Każdy z tych sposobów zwiększa liczbę skutecznych zderzeń, ale działa innym mechanizmem.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Uwaga — temperatura nie obniża energii aktywacji</span>
+<p>Wyższa temperatura zwiększa energię cząsteczek, więc więcej zderzeń ma wystarczającą energię. Katalizator natomiast obniża samą barierę energetyczną.</p>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">5</span> Wstęp do równania kinetycznego {#kinetyka} <span class="level-badge level-extra">LO</span> <span class="level-badge level-extra">AMBITNE</span></div>
+<p>Dla reakcji jednosubstratowej:</p>
+<p>A → produkty</p>
+<p>można zapisać wstępne równanie kinetyczne:</p>
+<p>v = k·[A]ⁿ</p>
+<p>gdzie:</p>
+<ul>
+<li>v — szybkość reakcji;</li>
+<li>k — stała szybkości;</li>
+<li>[A] — stężenie substratu A;</li>
+<li>n — rząd reakcji względem A.</li>
+</ul>
+<p>Rząd reakcji n ustala się na podstawie danych doświadczalnych. Nie wynika automatycznie ze współczynnika w równaniu reakcji.</p>
+<p>Jeżeli n = 0, to:</p>
+<p>v = k</p>
+<p>Szybkość nie zależy od stężenia A.</p>
+<p>Jeżeli n = 1, to:</p>
+<p>v = k·[A]</p>
+<p>Podwojenie stężenia podwaja szybkość.</p>
+<p>Jeżeli n = 2, to:</p>
+<p>v = k·[A]²</p>
+<p>Podwojenie stężenia zwiększa szybkość czterokrotnie.</p>
+<p>Stała szybkości k zależy od temperatury oraz od obecności katalizatora. Nie jest bezwymiarowa: jej jednostka zależy od rzędu reakcji.</p>
+<p>Dla reakcji wielosubstratowej równanie może mieć postać:</p>
+<p>v = k·[A]ᵐ·[B]ⁿ</p>
+<p>Rzędy m i n również ustala się doświadczalnie.</p>
+<div class="card card-understand">
+<span class="card-label">W skrócie — równanie kinetyczne</span>
+<p>Równanie kinetyczne łączy szybkość reakcji ze stężeniami substratów. Stała k oraz rzędy reakcji poznaje się z doświadczenia, a nie z samego równania stechiometrycznego.</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Uwaga — rząd reakcji ustala doświadczenie</span>
+<p>Nie zakładaj, że rząd reakcji względem A jest równy współczynnikowi przy A w równaniu reakcji. To częsty błąd w kinetyce.</p>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">6</span> Przykłady prowadzone {#przyklady} <span class="level-badge level-basic">E8</span> <span class="level-badge level-extra">LO</span></div>
+<p><strong>Przykład 1 — szybkość średnia z tabeli.</strong></p>
+<div class="table-wrap"><table>
+<thead><tr><th>t, s</th><th>[A], mol/dm³</th></tr></thead>
+<tbody>
+<tr><td>0</td><td>0,80</td></tr>
+<tr><td>20</td><td>0,60</td></tr>
+</tbody></table></div>
+<p>v = |0,60 − 0,80|/20</p>
+<p>v = 0,010 mol/(dm³·s)</p>
+<p><strong>Przykład 2 — szybkość produktu.</strong></p>
+<p>Dla reakcji:</p>
+<p>A → B</p>
+<p>jeżeli stężenie B wzrosło z 0 do 0,40 mol/dm³ w czasie 10 s, to:</p>
+<p>v = Δ[B]/Δt</p>
+<p>v = 0,40/10</p>
+<p>v = 0,040 mol/(dm³·s)</p>
+<p><strong>Przykład 3 — stechiometria szybkości.</strong></p>
+<p>Dla reakcji:</p>
+<p>2A → B</p>
+<p>jeżeli A znika z szybkością 0,060 mol/(dm³·s), to B powstaje z szybkością:</p>
+<p>v(B) = 0,060/2</p>
+<p>v(B) = 0,030 mol/(dm³·s)</p>
+<p><strong>Przykład 4 — wpływ rozdrobnienia.</strong></p>
+<p>Magnez w postaci proszku reaguje z kwasem szybciej niż w postaci granulek, ponieważ proszek ma większą powierzchnię kontaktu z kwasem.</p>
+<p><strong>Przykład 5 — wpływ temperatury.</strong></p>
+<p>Zwiększenie temperatury zwiększa energię cząsteczek. Więcej zderzeń ma energię wystarczającą do pokonania energii aktywacji, więc reakcja przebiega szybciej.</p>
+<div class="card card-basic">
+<span class="card-label">Po tej lekcji potrafisz</span>
+<ul>
+<li>obliczyć szybkość średnią;</li>
+<li>odczytać szybkość z wykresu;</li>
+<li>powiązać szybkości substratów i produktów;</li>
+<li>wyjaśnić wpływ warunków na szybkość reakcji.</li>
+</ul>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 2 (4 pkt) — Stechiometria szybkości</span>
+<p>Dla reakcji:</p>
+<p>N₂ + 3H₂ → 2NH₃</p>
+<p>azot znika z szybkością 0,010 mol/(dm³·s).</p>
+<p>a) Zapisz zależność między szybkościami N₂, H₂ i NH₃. (1 pkt)</p>
+<p>b) Oblicz szybkość zaniku H₂. (1 pkt)</p>
+<p>c) Oblicz szybkość powstawania NH₃. (1 pkt)</p>
+<p>d) Wyjaśnij, dlaczego szybkości są różne. (1 pkt)</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) (1 pkt) v = −Δ[N₂]/Δt = −(1/3)·Δ[H₂]/Δt = (1/2)·Δ[NH₃]/Δt.</p>
+<p>b) (1 pkt) v(H₂) = 3·0,010 = 0,030 mol/(dm³·s).</p>
+<p>c) (1 pkt) v(NH₃) = 2·0,010 = 0,020 mol/(dm³·s).</p>
+<p>d) (1 pkt) Szybkości są różne, ponieważ ze stechiometrii wynika, że na 1 mol N₂ przypada 3 mole H₂ i 2 mole NH₃.</p>
+</details>
+</div>
+</section>
+<section id="s4">
+<div class="part-heading"><span class="part-num">6a</span> Przykłady obliczeniowe krok po kroku</div>
+<p>Każdy przykład rozwiąż najpierw sam, zanim zajrzysz do rozwiązania. Przed każdym krokiem zatrzymaj się i zapytaj: co zrobię i dlaczego? Po rozwiązaniu wyjaśnij własnymi słowami, dlaczego wynik ma taki znak i jednostkę.</p>
+<h3>7.1 Przykład 1 — szybkość średnia z kilku pomiarów</h3>
+<p>Stężenie substancji A w reakcji A → produkty mierzono w kolejnych chwilach: t = 0 s, c = 0,50 mol/dm³; t = 30 s, c = 0,35 mol/dm³; t = 90 s, c = 0,05 mol/dm³. Oblicz szybkość średnią w przedziale 0–30 s, 30–90 s i 0–90 s.</p>
+<div class="card card-core">
+<span class="card-label">Rozwiązanie krok po kroku</span>
+<p>Krok 1. Dla przedziału 0–30 s oblicz |Δc| i Δt. Co wychodzi? (Odpowiedź: |Δc| = 0,15 mol/dm³, Δt = 30 s.)
+Krok 2. Podziel: v = 0,15/30 = 0,0050 mol/(dm³·s).
+Krok 3. Powtórz dla 30–90 s: |Δc| = 0,30, Δt = 60 s, v = 0,30/60 = 0,0050 mol/(dm³·s).
+Krok 4. Dla 0–90 s: |Δc| = 0,45, Δt = 90 s, v = 0,45/90 = 0,0050 mol/(dm³·s).
+Pytanie do przemyślenia: dlaczego wszystkie trzy wyniki są równe? To dane wyjątkowe — w prawdziwej reakcji szybkość średnia zwykle maleje z czasem.</p>
+</div>
+<h3>7.2 Przykład 2 — porównanie dwóch przedziałów</h3>
+<p>Stężenie B: w chwili 0 s wynosi 1,00 mol/dm³, w chwili 20 s wynosi 0,80 mol/dm³, w chwili 60 s wynosi 0,40 mol/dm³. Porównaj szybkości średnie w przedziałach 0–20 s i 20–60 s.</p>
+<div class="card card-core">
+<span class="card-label">Rozwiązanie krok po kroku</span>
+<p>Krok 1. Przedział 0–20 s: |Δc| = 0,20, v = 0,20/20 = 0,010 mol/(dm³·s).
+Krok 2. Przedział 20–60 s: |Δc| = 0,40, Δt = 40 s, v = 0,40/40 = 0,010 mol/(dm³·s).
+Krok 3. Wyjaśnij własnymi słowami: dlaczego w drugim przedziale spadek stężenia był dwa razy większy, a szybkość taka sama? (Odpowiedź: czas trwania przedziału był też dwa razy dłuższy.)</p>
+</div>
+<h3>7.3 Przykład 3 — z szybkości produktu do szybkości substratu</h3>
+<p>Reakcja 3A → 2C. Szybkość tworzenia C w pewnym przedziale wynosi 0,024 mol/(dm³·s). Oblicz szybkość ubywania A w tym samym przedziale.</p>
+<div class="card card-core">
+<span class="card-label">Rozwiązanie krok po kroku</span>
+<p>Krok 1. Z równania: na 2 mole C zużywa się 3 mole A. Stosunek szybkości ubywania A do tworzenia C wynosi 3/2.
+Krok 2. Oblicz: (3/2) · 0,024 = 0,036 mol/(dm³·s) co do wartości bezwzględnej. Ze znakiem minus jako zmiana stężenia substratu.
+Krok 3. Wyjaśnij, dlaczego A nie może mieć szybkości równej szybkości C. (Odpowiedź: współczynniki stechiometryczne są różne.)</p>
+</div>
+<h3>7.4 Przykład 4 — szybkość wydzielania gazu (warunki normalne)</h3>
+<p>W doświadczeniu z magnezem zebrano 120 cm³ wodoru w czasie 60 s, w warunkach normalnych, w których 1 mol gazu zajmuje 22,4 dm³. Oblicz szybkość wydzielania wodoru w mol/s.</p>
+<div class="card card-core">
+<span class="card-label">Rozwiązanie krok po kroku</span>
+<p>Krok 1. Zamień jednostki: 120 cm³ = 0,120 dm³.
+Krok 2. Oblicz liczbę moli: n = 0,120/22,4 ≈ 0,00536 mol.
+Krok 3. Podziel przez czas: 0,00536/60 ≈ 0,000089 mol/s.
+Krok 4. Wyjaśnij, czego ta szybkość dotyczy. (Odpowiedź: tworzenia wodoru, a nie zmiany stężenia w roztworze, więc nie porównujemy jej wprost z tabelą c(t) bez przeliczenia.)</p>
+</div>
+<div class="card card-warning">
+<span class="card-label">Uwaga przy objętości gazu</span>
+<p>Objętość gazu zależy od warunków. Ta sama liczba moli zajmuje inną objętość w innej temperaturze i przy innym ciśnieniu. W zadaniach szkolnych podaje się zwykle warunki normalne (22,4 dm³/mol) albo jednoznacznie określoną objętość molową.</p>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">7</span> Klinika błędów {#klinika} <span class="level-badge level-basic">E8</span> <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<table class="klinika-table"><thead><tr><th>Błąd</th><th>Poprawnie</th><th>Dlaczego?</th></tr></thead><tbody><tr class="error-row"><td class="col-blad" data-label="Błąd">„Szybkość reakcji może być ujemna.”</td><td class="col-ok" data-label="Poprawa">Szybkość reakcji jest wielkością dodatnią.</td><td data-label="Dlaczego">Dla substratu stężenie maleje, dlatego stosuje się wartość bezwzględną zmiany stężenia.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Szybkość to zmiana stężenia.”</td><td class="col-ok" data-label="Poprawa">Szybkość to zmiana stężenia podzielona przez czas.</td><td data-label="Dlaczego">Bez podziału przez Δt otrzymuje się zmianę stężenia, nie szybkość.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Szybkość reakcji jest stała przez cały czas.”</td><td class="col-ok" data-label="Poprawa">Szybkość zwykle maleje w miarę zużywania substratu.</td><td data-label="Dlaczego">Na początku substratów jest więcej, więc zderzenia skuteczne występują częściej.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Współczynnik stechiometryczny to rząd reakcji.”</td><td class="col-ok" data-label="Poprawa">Rząd reakcji ustala się doświadczalnie.</td><td data-label="Dlaczego">Współczynnik opisuje proporcje substratów i produktów, nie zależność szybkości od stężenia.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Katalizator zwiększa energię cząsteczek.”</td><td class="col-ok" data-label="Poprawa">Katalizator obniża energię aktywacji.</td><td data-label="Dlaczego">Większa energia cząsteczek wynika z podwyższenia temperatury.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Wyższa temperatura obniża energię aktywacji.”</td><td class="col-ok" data-label="Poprawa">Wyższa temperatura zwiększa energię cząsteczek.</td><td data-label="Dlaczego">Katalizator obniża barierę, a temperatura zwiększa liczbę zderzeń skutecznych.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Proszek reaguje wolniej niż granulki.”</td><td class="col-ok" data-label="Poprawa">Proszek zwykle reaguje szybciej niż granulki.</td><td data-label="Dlaczego">Proszek ma większą powierzchnię kontaktu z drugim substratem.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Szybkość produktu jest zawsze równa szybkości substratu.”</td><td class="col-ok" data-label="Poprawa">Szybkości łączy się przez współczynniki stechiometryczne.</td><td data-label="Dlaczego">Przy różnych współczynnikach stężenia zmieniają się w różnych proporcjach.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Rząd reakcji można odczytać z równania reakcji.”</td><td class="col-ok" data-label="Poprawa">Rząd reakcji ustala się na podstawie danych doświadczalnych.</td><td data-label="Dlaczego">Równanie stechiometryczne nie określa mechanizmu ani rzędu reakcji.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Jednostka szybkości zawsze wynosi mol/(dm³·s).”</td><td class="col-ok" data-label="Poprawa">Jednostka zależy od jednostek stężenia i czasu.</td><td data-label="Dlaczego">Jeżeli czas podano w minutach, jednostką będzie mol/(dm³·min).</td></tr></tbody></table>
+<div class="myth-grid"><div class="myth"><p class="myth-x"><span>Mit</span>„Szybka reakcja zawsze wydziela dużo ciepła.”</p><p class="myth-ok"><span>Poprawnie</span>Szybkość i efekt energetyczny to różne cechy. Reakcja może być szybka i endotermiczna albo wolna i egzotermiczna.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Katalizator zużywa się w reakcji.”</p><p class="myth-ok"><span>Poprawnie</span>Katalizator nie ulega trwałemu zużyciu w przebiegu reakcji.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Większe stężenie zawsze oznacza większą szybkość.”</p><p class="myth-ok"><span>Poprawnie</span>W wielu reakcjach tak, ale zależność musi być potwierdzona danymi doświadczalnymi.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Temperatura zmienia tylko szybkość, nigdy równowagę.”</p><p class="myth-ok"><span>Poprawnie</span>Temperatura wpływa zarówno na szybkość, jak i na położenie równowagi. W tej lekcji skupiamy się na szybkości.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Reakcja kończy się, gdy szybkość osiągnie zero.”</p><p class="myth-ok"><span>Poprawnie</span>W układzie otwartym reakcja może się zakończyć po zużyciu substratu. W układzie zamkniętym reakcje odwracalne osiągają stan równowagi. Szybkość netto może spaść do zera w równowadze, mimo że reakcje elementarne nadal zachodzą w obu kierunkach.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Powierzchnia kontaktu nie ma znaczenia dla cieczy i gazów.”</p><p class="myth-ok"><span>Poprawnie</span>Dla cieczy i gazów mieszanie oraz dyfuzja mogą mieć duże znaczenie. Powierzchnia kontaktu jest szczególnie ważna, gdy jednym z substratów jest ciało stałe.</p></div></div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">8</span> Ćwiczenia z kluczem {#cwiczenia} <span class="level-badge level-basic">E8</span> <span class="level-badge level-extra">LO</span></div>
+<p><strong>Ćwiczenie 1.</strong> Stężenie substratu spadło z 0,50 mol/dm³ do 0,30 mol/dm³ w czasie 10 s. Oblicz szybkość średnią.</p>
+<details class="answer"><summary>Klucz</summary>
+<p>v = |0,30 − 0,50|/10 = 0,020 mol/(dm³·s).</p>
+</details>
+<p><strong>Ćwiczenie 2.</strong> Stężenie produktu wzrosło z 0 do 0,25 mol/dm³ w czasie 5 s. Oblicz szybkość powstawania produktu.</p>
+<details class="answer"><summary>Klucz</summary>
+<p>v = 0,25/5 = 0,050 mol/(dm³·s).</p>
+</details>
+<p><strong>Ćwiczenie 3.</strong> Dla reakcji 2A → B substrat A znika z szybkością 0,080 mol/(dm³·s). Oblicz szybkość powstawania B.</p>
+<details class="answer"><summary>Klucz</summary>
+<p>v(B) = 0,080/2 = 0,040 mol/(dm³·s).</p>
+</details>
+<p><strong>Ćwiczenie 4.</strong> Dlaczego magnez w proszku reaguje z kwasem szybciej niż w postaci granulek?</p>
+<details class="answer"><summary>Klucz</summary>
+<p>Proszek ma większą powierzchnię kontaktu z kwasem, więc zderzenia skuteczne zachodzą częściej.</p>
+</details>
+<p><strong>Ćwiczenie 5 — mini-test samodzielny.</strong> Odpowiedz bez zaglądania do lekcji: 1) Co to jest szybkość reakcji? 2) Jak oblicza się szybkość średnią? 3) Jaka jest jednostka szybkości? 4) Co się dzieje ze stężeniem substratu? 5) Jak katalizator wpływa na szybkość? Potem sprawdź odpowiedzi w diagnozie.</p>
+</section>
+<section id="s5">
+<div class="part-heading"><span class="part-num">8a</span> Ćwiczenia — dodatkowe</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 1 (2 pkt) — szybkość średnia</span>
+<p>Stężenie substancji A w reakcji A → produkty spadło z 0,40 mol/dm³ do 0,10 mol/dm³ w czasie 60 s. Oblicz szybkość średnią tej reakcji i podaj jednostkę.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>v_śr = moduł(Δc)/Δt = (0,40 − 0,10)/60 = 0,30/60 = 0,005. Jednostka: mol/(dm³·s). (1 pkt za wynik, 1 pkt za jednostkę)</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 2 (2 pkt) — wykres c(t)</span>
+<p>Na wykresie stężenia substratu od czasu nachylenie krzywej w 10 s jest większe niż w 50 s. Co to mówi o szybkości? Uzasadnij.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>Szybkość chwilowa jest większa w 10 s niż w 50 s, bo nachylenie stycznej (szybkość zmiany stężenia) jest większe. Reakcja zwalnia, gdy substratu ubywa. (1 pkt za wniosek, 1 pkt za uzasadnienie odwołujące się do nachylenia)</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 3 (3 pkt) — produkt i substrat</span>
+<p>W reakcji 2A → B szybkość tworzenia B wynosi 0,010 mol/(dm³·s). Oblicz szybkość zmiany stężenia A i podaj wynik ze znakiem. Wyjaśnij, dlaczego wynik różni się od szybkości B.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>Z równania: na 1 mol B zużywa się 2 mole A, więc ubywanie A jest dwa razy szybsze: Δc(A)/Δt = −2 · 0,010 = −0,020 mol/(dm³·s). Wynik ujemny, bo A ubywa. (1 pkt za zależność od współczynnika, 1 pkt za wartość, 1 pkt za znak i wyjaśnienie)</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 4 (3 pkt) — przeliczanie jednostek</span>
+<p>W pewnym przedziale stężenie substratu zmniejszyło się o 0,18 mol/dm³ w ciągu 3 minut. Oblicz szybkość średnią w mol/(dm³·min) i w mol/(dm³·s).</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>W mol/(dm³·min): 0,18/3 = 0,060 mol/(dm³·min). W mol/(dm³·s): czas 3 min = 180 s, więc 0,18/180 = 0,0010 mol/(dm³·s). Sprawdzenie: 0,060/60 = 0,0010. (1 pkt za wynik w min, 1 pkt za przeliczenie czasu, 1 pkt za wynik w s)</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 5 (3 pkt) — z tabeli do wniosku</span>
+<p>Dane pomiarowe dla reakcji D → E: t = 0 s, c(D) = 0,80; t = 10 s, c(D) = 0,60; t = 20 s, c(D) = 0,45; t = 30 s, c(D) = 0,35 (mol/dm³). Oblicz szybkość średnią w każdym z trzech przedziałów i sformułuj wniosek o zmianie szybkości w czasie.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>0–10 s: 0,20/10 = 0,020; 10–20 s: 0,15/10 = 0,015; 20–30 s: 0,10/10 = 0,010 mol/(dm³·s). Wniosek: szybkość maleje w czasie, bo kolejne przedziały dają coraz mniejsze wartości. (1 pkt za każdy przedział, 1 pkt za wniosek)</p>
+</details>
+</div>
+<div class="card card-exam">
+<span class="card-label">Zadanie 6 (3 pkt) — pomiar gazu w warunkach normalnych</span>
+<p>W doświadczeniu zebrano w czasie 40 s objętość H₂ równą 56 cm³ (warunki normalne, 1 mol = 22,4 dm³). Oblicz liczbę moli H₂ i szybkość wydzielania w mol/s. Zapisz, czego ta szybkość dotyczy.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>56 cm³ = 0,056 dm³; n = 0,056/22,4 = 0,0025 mol. Szybkość: 0,0025/40 = 0,0000625 mol/s, czyli 6,25 · 10⁻⁵ mol/s. Dotyczy wydzielania wodoru (tworzenia produktu), a nie zmiany stężenia substratu w roztworze. (1 pkt za moli, 1 pkt za szybkość, 1 pkt za interpretację)</p>
+</details>
+</div>
+<h3>11.1 Zadanie transferowe — szybkość w nowym kontekście</h3>
+<div class="card card-exam">
+<span class="card-label">Zadanie 7 (4 pkt) — tabletka musująca</span>
+<p>Tabletkę musującą wrzucono do wody i zmierzono objętość wydzielonego CO₂ w warunkach normalnych: po 20 s — 0,224 dm³, po 40 s — 0,336 dm³, po 60 s — 0,392 dm³. Oblicz liczbę moli CO₂ po 60 s, szybkość średnią wydzielania w każdym z przedziałów 0–20 s, 20–40 s i 40–60 s, a potem wyjaśnij, czy szybkość rośnie, czy maleje, i dlaczego może tak być.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>Po 60 s: n = 0,392/22,4 = 0,0175 mol. Przedziały (w mol/s): 0–20 s: 0,224/22,4 = 0,0100 mol, czyli 0,0100/20 = 0,00050 mol/s; 20–40 s: (0,336 − 0,224)/22,4 = 0,0050 mol, czyli 0,00025 mol/s; 40–60 s: (0,392 − 0,336)/22,4 = 0,0025 mol, czyli 0,000125 mol/s. Wniosek: szybkość maleje, bo substrat się zużywa. (1 pkt za moli, 1 pkt za każdy przedział po ½ pkt, 1 pkt za wniosek i uzasadnienie)</p>
+</details>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">9</span> Słownik {#slownik} <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<dl><div class="def-item"><dt>Szybkość reakcji</dt><dd>zmiana stężenia substratu lub produktu w jednostce czasu.</dd></div><div class="def-item"><dt>Szybkość średnia</dt><dd>zmiana stężenia na określonym odcinku czasu.</dd></div><div class="def-item"><dt>Szybkość chwilowa</dt><dd>tempo reakcji w konkretnym momencie.</dd></div><div class="def-item"><dt>Szybkość początkowa</dt><dd>szybkość reakcji na jej początku.</dd></div><div class="def-item"><dt>Stężenie</dt><dd>ilość substancji w określonej objętości roztworu lub gazu.</dd></div><div class="def-item"><dt>Stała szybkości k</dt><dd>współczynnik w równaniu kinetycznym, zależny między innymi od temperatury.</dd></div><div class="def-item"><dt>Rząd reakcji</dt><dd>wykładnik przy stężeniu substratu w równaniu kinetycznym, ustalany doświadczalnie.</dd></div><div class="def-item"><dt>Równanie kinetyczne</dt><dd>zależność szybkości reakcji od stężeń substratów.</dd></div><div class="def-item"><dt>Energia aktywacji</dt><dd>minimalna energia potrzebna do rozpoczęcia reakcji.</dd></div><div class="def-item"><dt>Katalizator</dt><dd>substancja zwiększająca szybkość reakcji przez obniżenie energii aktywacji.</dd></div><div class="def-item"><dt>Zderzenie skuteczne</dt><dd>zderzenie cząsteczek prowadzące do reakcji.</dd></div><div class="def-item"><dt>Powierzchnia kontaktu</dt><dd>powierzchnia, na której mogą zderzać się substraty, szczególnie gdy jednym z nich jest ciało stałe.</dd></div><div class="def-item"><dt>Teoria zderzeń</dt><dd>model wyjaśniający reakcję przez zderzenia cząsteczek o odpowiedniej energii i orientacji.</dd></div><div class="def-item"><dt>Stechiometria</dt><dd>zależność ilościowa między substratami i produktami reakcji.</dd></div><div class="def-item"><dt>Równowaga</dt><dd>stan, w którym szybkości reakcji przeciwnych są równe.</dd></div><div class="def-item"><dt>Wykres stężenie–czas</dt><dd>zależność stężenia od czasu, z której odczytujemy szybkość</dd></div><div class="def-item"><dt>Styczna</dt><dd>prosta dotykająca krzywej w jednym punkcie, o tym samym kierunku co krzywa w tym punkcie</dd></div><div class="def-item"><dt>Jednostka szybkości</dt><dd>mol/(dm³·s) (w tej lekcji)</dd></div><div class="def-item"><dt>Metoda pomiaru</dt><dd>sposób odczytu zmiany układu, np. objętości gazu lub barwy roztworu</dd></div><div class="def-item"><dt>Substrat</dt><dd>substancja, która się zużywa w reakcji</dd></div><div class="def-item"><dt>Produkt</dt><dd>substancja, która powstaje w reakcji</dd></div><div class="def-item"><dt>Stechiometria szybkości</dt><dd>związek szybkości różnych składników reakcji przez współczynniki</dd></div><div class="def-item"><dt>Wydajność</dt><dd>ilość produktu w stanie końcowym, niezależna od tego, jak szybko powstał</dd></div><div class="def-item"><dt>Warunki normalne</dt><dd>0 °C i 1013 hPa, w których 1 mol gazu zajmuje 22,4 dm³</dd></div></dl>
+</section>
+<section id="s6">
+<div class="part-heading"><span class="part-num">9b</span> Fiszki</div>
+<div id="flashcards" class="flashcard-grid"><button class="flashcard" type="button"><span class="front">Czym jest szybkość reakcji?</span><span class="back">Zmiana stężenia reagenta w jednostce czasu</span><span class="card-tag tag-basic">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Jaki wzór ma szybkość średnia?</span><span class="back">v_śr = moduł(Δc)/Δt</span><span class="card-tag tag-basic">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Jaka jest jednostka szybkości?</span><span class="back">mol/(dm³·s)</span><span class="card-tag tag-basic">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Czym różni się szybkość chwilowa od średniej?</span><span class="back">Chwilowa to jeden punkt (styczna), średnia to przedział</span><span class="card-tag tag-understand">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Co oznacza nachylenie stycznej na wykresie c(t)?</span><span class="back">Szybkość chwilową reakcji</span><span class="card-tag tag-understand">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Dlaczego szybkość substratu ma znak minus?</span><span class="back">Bo stężenie substratu maleje, więc Δc &lt; 0</span><span class="card-tag tag-understand">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Jak zmienia się szybkość w miarę zużywania substratów?</span><span class="back">Zwykle maleje</span><span class="card-tag tag-basic">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Co mierzymy przy wydzielaniu gazu?</span><span class="back">Objętość gazu lub ubytek masy</span><span class="card-tag tag-basic">pomiar</span></button><button class="flashcard" type="button"><span class="front">Co zmienia się w reakcji jodowego zegara?</span><span class="back">Barwa roztworu (pojawia się granatowa)</span><span class="card-tag tag-extra">pomiar</span></button><button class="flashcard" type="button"><span class="front">Jak przeliczyć minuty na sekundy?</span><span class="back">Mnożymy przez 60</span><span class="card-tag tag-basic">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Co wynika ze współczynników?</span><span class="back">Szybkość zmiany substratu zależy od jego współczynnika</span><span class="card-tag tag-understand">stechiometria</span></button><button class="flashcard" type="button"><span class="front">Czym jest szybkość a wydajność?</span><span class="back">Szybkość mówi jak szybko, wydajność ile produktu w końcu</span><span class="card-tag tag-understand">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Dlaczego porównujemy szybkości przez czas, nie przez Δc?</span><span class="back">Bo dwa przedziały o różnych Δt mogą mieć tę samą szybkość</span><span class="card-tag tag-understand">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Jaka objętość zajmuje 1 mol gazu w warunkach normalnych?</span><span class="back">22,4 dm³</span><span class="card-tag tag-basic">pomiar</span></button><button class="flashcard" type="button"><span class="front">Co to styczna?</span><span class="back">Prosta dotykająca krzywej w jednym punkcie</span><span class="card-tag tag-basic">kinetyka</span></button><button class="flashcard" type="button"><span class="front">Czym jest stała szybkości k?</span><span class="back">Współczynnikiem w równaniu kinetycznym v = k[A]ᵐ[B]ⁿ</span><span class="card-tag tag-adv">kinetyka</span></button></div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">10</span> Test {#test} <span class="level-badge level-basic">E8</span> <span class="level-badge level-extra">LO</span></div>
+<div class="che-quiz" id="quizWrap"><div class="quiz-q" data-ok="0" data-fb="Szybkość opisuje tempo zmiany składu układu w czasie."><h5>1. Co to jest szybkość reakcji?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">zmiana stężenia substratu lub produktu w jednostce czasu</button><button type="button" class="quiz-opt" data-a="1">zmiana temperatury w czasie</button><button type="button" class="quiz-opt" data-a="2">ilość substratu w probówce</button><button type="button" class="quiz-opt" data-a="3">energia aktywacji reakcji</button></div></div><div class="quiz-q" data-ok="0" data-fb="v = |0,40 − 0,60|/10 = 0,020 mol/(dm³·s)."><h5>2. Stężenie substratu spadło z 0,60 mol/dm³ do 0,40 mol/dm³ w czasie 10 s. Szybkość średnia wynosi:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">0,020 mol/(dm³·s)</button><button type="button" class="quiz-opt" data-a="1">0,20 mol/(dm³·s)</button><button type="button" class="quiz-opt" data-a="2">0,0020 mol/(dm³·s)</button><button type="button" class="quiz-opt" data-a="3">0,60 mol/(dm³·s)</button></div></div><div class="quiz-q" data-ok="0" data-fb="Substrat jest zużywany podczas reakcji."><h5>3. Podczas reakcji stężenie substratu:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">maleje</button><button type="button" class="quiz-opt" data-a="1">rośnie</button><button type="button" class="quiz-opt" data-a="2">pozostaje zawsze stałe</button><button type="button" class="quiz-opt" data-a="3">najpierw rośnie, potem maleje</button></div></div><div class="quiz-q" data-ok="0" data-fb="Na 1 mol N₂ przypada 3 mole H₂, więc wodór znika trzy razy szybciej."><h5>4. Dla reakcji N₂ + 3H₂ → 2NH₃, jeżeli N₂ znika z szybkością 0,010 mol/(dm³·s), to H₂ znika z szybkością:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">0,030 mol/(dm³·s)</button><button type="button" class="quiz-opt" data-a="1">0,010 mol/(dm³·s)</button><button type="button" class="quiz-opt" data-a="2">0,020 mol/(dm³·s)</button><button type="button" class="quiz-opt" data-a="3">0,0033 mol/(dm³·s)</button></div></div><div class="quiz-q" data-ok="0" data-fb="Katalizator obniża barierę energetyczną. Temperatura zwiększa energię cząsteczek."><h5>5. Który czynnik obniża energię aktywacji?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">katalizator</button><button type="button" class="quiz-opt" data-a="1">wyższa temperatura</button><button type="button" class="quiz-opt" data-a="2">większe stężenie</button><button type="button" class="quiz-opt" data-a="3">większa masa substratu</button></div></div><div class="quiz-q" data-ok="0" data-fb="Rząd reakcji opisuje zależność szybkości od stężenia i ustala się go doświadczalnie."><h5>6. Które zdanie o rzędzie reakcji jest poprawne?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">rząd reakcji ustala się na podstawie danych doświadczalnych</button><button type="button" class="quiz-opt" data-a="1">rząd reakcji zawsze równa się współczynnikowi stechiometrycznemu</button><button type="button" class="quiz-opt" data-a="2">rząd reakcji zależy wyłącznie od temperatury</button><button type="button" class="quiz-opt" data-a="3">rząd reakcji zawsze wynosi 1</button></div></div></div><div class="quiz-score" id="quizScore"></div>
+</section>
+<section id="s7">
+<div class="part-heading"><span class="part-num">10a</span> Test uzupełniający</div>
+<div class="che-quiz" id="quizWrap"><div class="quiz-q" data-ok="0" data-fb="Szybkość to zmiana stężenia w czasie, więc jednostka to stężenie podzielone przez czas."><h5>1. Jednostka szybkości reakcji, gdy stężenia podajemy w mol/dm³, a czas w sekundach, to:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">mol/(dm³·s)</button><button type="button" class="quiz-opt" data-a="1">mol/dm³</button><button type="button" class="quiz-opt" data-a="2">s/mol</button><button type="button" class="quiz-opt" data-a="3">dm³/(mol·s)</button></div></div><div class="quiz-q" data-ok="0" data-fb="Bez minusa lub modułu wynik dla substratu wyszedłby ujemny, a szybkość jest wielkością dodatnią."><h5>2. Dla substratu Δc jest ujemne, więc szybkość średnią liczymy tak, że:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">stosujemy moduł albo minus przed Δc, bo stężenie substratu maleje</button><button type="button" class="quiz-opt" data-a="1">bierzemy Δc bez zmian, bo wynik ma być ujemny</button><button type="button" class="quiz-opt" data-a="2">dzielimy przez stężenie zamiast przez czas</button><button type="button" class="quiz-opt" data-a="3">zakładamy, że Δc zawsze rośnie</button></div></div><div class="quiz-q" data-ok="0" data-fb="Styczna opisuje lokalną zmianę stężenia, czyli szybkość chwilową."><h5>3. Na wykresie stężenia substratu od czasu nachylenie stycznej w chwili t mówi o:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">szybkości chwilowej w tej chwili</button><button type="button" class="quiz-opt" data-a="1">szybkości średniej w całym przedziale</button><button type="button" class="quiz-opt" data-a="2">wydajności reakcji</button><button type="button" class="quiz-opt" data-a="3">masie produktu</button></div></div><div class="quiz-q" data-ok="0" data-fb="Na 1 mol B zużywa się 2 mole A, więc A ubywa dwa razy szybciej."><h5>4. W reakcji 2A → B szybkość tworzenia B wynosi 0,010 mol/(dm³·s). Szybkość ubywania A wynosi:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">0,020 mol/(dm³·s) co do wartości bezwzględnej</button><button type="button" class="quiz-opt" data-a="1">0,005 mol/(dm³·s)</button><button type="button" class="quiz-opt" data-a="2">0,010 mol/(dm³·s) bez zmian</button><button type="button" class="quiz-opt" data-a="3">0,040 mol/(dm³·s)</button></div></div><div class="quiz-q" data-ok="0" data-fb="n = V/22,4 = 0,224/22,4 = 0,010 mol. Warunki normalne podają objętość molową 22,4 dm³/mol."><h5>5. Przy wydzielaniu gazu w warunkach normalnych 0,224 dm³ CO₂ to:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">0,010 mol</button><button type="button" class="quiz-opt" data-a="1">0,224 mol</button><button type="button" class="quiz-opt" data-a="2">0,0022 mol</button><button type="button" class="quiz-opt" data-a="3">0,100 mol</button></div></div></div><div class="quiz-score" id="quizScore"></div>
+</section>
+<section id="s8">
+<div class="part-heading"><span class="part-num">10b</span> Mnemotechniki</div>
+<div class="card card-understand">
+<span class="card-label">Sposoby pamięciowe</span>
+<p>Ubywa — minus, przybywa — plus. Zapamiętaj: znak minus dla substratu, który się zużywa; bez minusa dla produktu, który powstaje.
+Mianownik to zawsze czas. Jednostka szybkości zaczyna się od stężenia, a kończy na sekundzie: mol/(dm³·s). Jeśli czas jest w minutach, zatrzymaj się i przelicz.
+Współczynnik dzieli, nie mnoży. Przy 2A → B szybkość ubywania A dzielimy przez 2, by porównać ją z szybkością B.</p>
+</div>
+</section>
+<section id="s9">
+<div class="part-heading"><span class="part-num">10c</span> Mosty</div>
+<ul>
+<li>Przed tą lekcją: R05 (stężenia i obliczenia z nimi).</li>
+<li>Dalej: K05 (czynniki: stężenie, temperatura, rozdrobnienie), K06 (zderzenia i energia aktywacji), K08 (równowaga dynamiczna: szybkość w przód i wstecz).</li>
+</ul>
+</section>
+<section id="s10">
+<div class="part-heading"><span class="part-num">10d</span> Ciekawostki</div>
+<div class="card card-extra">
+<span class="card-label">Reakcja zegarowa</span>
+<p>W reakcji jodowego zegara roztwór po chwili nagle zmienia barwę z bezbarwnej na granatową. Przyczyną jest utworzony jod, który reaguje ze skrobią. Dodając tiosiarczan sodu, opóźniamy moment zmiany barwy o czas proporcjonalny do ilości użytego reagenta. Szkolny pokaz zamienia się w pomiar szybkości.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Rdza jako reakcja, którą widzimy po latach</span>
+<p>Rdzewienie żelaza to reakcja utleniania z tlenem i wodą, ale w temperaturze pokojowej przebiega bardzo wolno. Stalowe konstrukcje stoją dekady, zanim zauważymy zmiany. W wilgotnym, słonym powietrzu szybkość rośnie, bo woda i sól przyspieszają reakcje elektrochemiczne.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Lodówka to kinetyka</span>
+<p>Dlaczego żywność w lodówce psuje się wolniej? Niższa temperatura zmniejsza szybkość reakcji i procesów rozkładu, które wywołują bakterie i enzymy. Ta sama zasada działa w odwrotną stronę: po podgrzaniu produkty psują się szybciej.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Szybkość a wydajność w praktyce</span>
+<p>Reakcja może być bardzo szybka, a mieć małą wydajność (gdy ustala się równowaga), i odwrotnie: wolna reakcja może dać wysoką wydajność, jeśli będzie dość czasu. Dlatego przemysł osobno optymalizuje szybkość (temperatura, katalizator) i wydajność (ciśnienie, usuwanie produktu).</p>
+</div>
+</section>
+<section>
+<div class="part-heading"><span class="part-num">11</span> Checklista {#checklista} <span class="level-badge level-basic">E8</span> <span class="level-badge level-understand">ROZUMIENIE</span></div>
+<checklista>
+<ul>
+<li>[ ] umiem zdefiniować szybkość reakcji</li>
+<li>[ ] umiem obliczyć szybkość średnią z tabeli</li>
+<li>[ ] umiem odczytać szybkość chwilową z wykresu</li>
+<li>[ ] umiem podać jednostkę szybkości</li>
+<li>[ ] umiem powiązać szybkości substratów i produktów</li>
+<li>[ ] umiem wyjaśnić wpływ stężenia na szybkość</li>
+<li>[ ] umiem wyjaśnić wpływ temperatury na szybkość</li>
+<li>[ ] umiem wyjaśnić wpływ powierzchni kontaktu</li>
+<li>[ ] umiem wyjaśnić działanie katalizatora</li>
+<li>[ ] umiem odróżnić współczynnik stechiometryczny od rzędu reakcji</li>
+</ul>
+</checklista>
+<h3 id="audyt-ulepsz">AUDYT — Perplexity, 2026-10-13</h3>
+<p><strong>Poprawione:</strong>
+- Frontmatter: dodano uid, uzupełniono kicker, opis, plakietki i stopkę; zmieniono stan na „ULEPSZONA — Perplexity, 2026-10-13; do sprawdzenia”.
+- Minimum: „szybkość reakcji” → dodano definicję przez zmianę stężenia w jednostce czasu.
+- Minimum: „v = Δc/Δt” → doprecyzowano stosowanie wartości bezwzględnej dla substratów.
+- Minimum: „czynniki wpływające na szybkość” → dodano zastrzeżenie, że wpływ ciśnienia dotyczy przede wszystkim reakcji gazowych.
+- Wykład: „nie każde zderzenie prowadzi do reakcji” → rozwinięto o energię i orientację zderzenia.
+- Wykład: „szybkość maleje w miarę zużywania substratu” → dodano zastrzeżenie o reakcjach odwracalnych i równowadze.
+- Stechiometria: poprawiono zapis szybkości przez współczynniki stechiometryczne.
+- Kinetyka: doprecyzowano, że rząd reakcji ustala się doświadczalnie, a nie z równania stechiometrycznego.
+- Test: poprawiono odpowiedzi i wyjaśnienia dotyczące katalizatora oraz rzędu reakcji.
+- Wszystkie wzory zapisano w Unicode, bez LaTeX-a.</p>
+<p><strong>Dodane:</strong>
+- §0.1–§0.4: cel, kompas, diagnoza z kluczem i interpretacją wyniku.
+- §1: pełny wykład od zera, teoria zderzeń, znak szybkości i jednostki.
+- §2: szybkość średnia, chwilowa i początkowa oraz tabela porównawcza.
+- §3: stechiometria szybkości z przykładem N₂ + 3H₂ → 2NH₃.
+- §4: czynniki wpływające na szybkość i tabela porównawcza.
+- §5: wstęp do równania kinetycznego, rzędy 0, 1 i 2.
+- §6: pięć przykładów prowadzonych.
+- §7: klinika 10 błędów i 6 mitów.
+- §8: ćwiczenia z kluczem i mini-test samodzielny.
+- §9: słownik 15 haseł.
+- §10: test 6 pytań.
+- §11: checklista.</p>
+<p><strong>Niepewne / do weryfikacji:</strong>
+- Zakres konkretnego konkursu chemicznego nie został określony w paczce, dlatego wymagania konkursowe opisano ogólnie.
+- Rząd reakcji i stała szybkości wymagają danych doświadczalnych; w lekcji przedstawiono je jako wstęp, a nie gotową metodę rozwiązywania każdego zadania.
+- Wpływ ciśnienia na szybkość jest najbardziej jednoznaczny dla reakcji gazowych; dla roztworów należy mówić przede wszystkim o stężeniu.</p>
+<p><strong>Proponuję usunąć:</strong>
+- Brak.</p>
+<p><strong>Źródła:</strong>
+- Dostarczona paczka: lekcja K04.
+- Zintegrowana Platforma Edukacyjna — materiały o kinetyce chemicznej, szybkości reakcji i czynnikach ją wpływających.</p>
+<p><strong>Grafiki do zrobienia:</strong></p>
+<div class="table-wrap"><table>
+<thead><tr><th>Gdzie</th><th>Rodzaj</th><th>Co pokazuje</th><th>Wniosek</th><th>@opis</th></tr></thead>
+<tbody>
+<tr><td>§1, po wykładzie o zderzeniach</td><td>animacja „do przodu i od początku”</td><td>zderzenia cząsteczek o różnej energii i orientacji</td><td>Reakcję powodują tylko zderzenia skuteczne</td><td>Cząsteczki A i B zbliżają się do siebie. Zderzenie o zbyt małej energii nie prowadzi do reakcji, a zderzenie o energii co najmniej Ea i właściwej orientacji prowadzi do powstania produktu.</td></tr>
+<tr><td>§2, po szybkości średniej i chwilowej</td><td>wykres liniowy</td><td>krzywa stężenia substratu w czasie, odcinek średniej i styczna w punkcie</td><td>Szybkość chwilowa to nachylenie stycznej</td><td>Oś pozioma przedstawia czas, oś pionowa stężenie A. Krzywa opada coraz łagodniej. Odcinek między dwoma punktami pokazuje szybkość średnią, a styczna w wybranym punkcie — szybkość chwilową.</td></tr>
+<tr><td>§3, przy stechiometrii szybkości</td><td>schemat statyczny</td><td>reakcja N₂ + 3H₂ → 2NH₃ i proporcje zmian stężeń</td><td>Szybkości różnych substancji łączy stechiometria</td><td>Jeden jon N₂ odpowiada trzem H₂ i dwóm NH₃. Strzałki pokazują, że H₂ znika trzy razy szybciej niż N₂, a NH₃ powstaje dwa razy szybciej niż znika N₂.</td></tr>
+<tr><td>§4, przy czynnikach szybkości</td><td>model interaktywny z suwakiem</td><td>wpływ stężenia, temperatury, powierzchni kontaktu i katalizatora</td><td>Każdy czynnik zwiększa liczbę zderzeń skutecznych innym mechanizmem</td><td>Cztery przełączniki zmieniają stężenie, temperaturę, stopień rozdrobnienia oraz obecność katalizatora. Wyświetlana jest względna liczba zderzeń skutecznych i szybkość reakcji.</td></tr>
+</tbody></table></div>
+<p><strong>Przywrócono z poprzedniej wersji (nie zgubiono treści):</strong>
+- Przypomnienie z poprzedniej lekcji (§0.5), jednostki i przeliczanie (§1a), metody pomiaru szybkości (§3a), przykłady krok po kroku (§6a), ćwiczenia dodatkowe (§8a), fiszki (§9b), test uzupełniający (§10a), mnemotechniki (§10b), mosty (§10c), ciekawostki (§10d).
+- Brakujące hasła słownika: wykres stężenie–czas, styczna, jednostka szybkości, metoda pomiaru, substrat, produkt, stechiometria szybkości, wydajność, warunki normalne.</p>
+<p><strong>Poprawione względem propozycji:</strong>
+- Mit „Reakcja kończy się, gdy szybkość osiągnie zero” miał zły format (trzy pola zamiast „pytanie || odpowiedź”); poprawiono.</p>
+<p><strong>Nieprzyjęte:</strong>
+- Stare wykłady 2, 3 i 5 (średnia, chwilowa, stechiometria) zastąpiono krótszymi sekcjami §2 i §3; treść pojęć jest w nowym wykładzie i w tych sekcjach.
+- Stary wstęp do równania kinetycznego i stara klinika (10 pozycji w nowej wersji) zastąpione nowymi sekcjami §5 i §7.</p>
+</section>
+
+</main>
+<script>
+/* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
+   postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
+(function(){
+var html=document.documentElement;
+function ciemny(){var t=html.getAttribute('data-theme');return t?t==='dark':!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function oznacz(){if(ciemny())html.setAttribute('data-ciemny','');else html.removeAttribute('data-ciemny')}
+try{var z=localStorage.getItem('lekcja-motyw');if(z)html.setAttribute('data-theme',z)}catch(e){}
+oznacz();if(window.matchMedia)try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',oznacz)}catch(e){}
+
+function start(){
+var root=document;
+root.querySelectorAll('.flashcard').forEach(function(b){if(b.dataset.lkFz)return;b.dataset.lkFz=1;b.removeAttribute('onclick');b.setAttribute('aria-pressed','false');
+ b.addEventListener('click',function(){var on=b.classList.toggle('flipped');b.setAttribute('aria-pressed',on?'true':'false')})});
+root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibling,ok=0,n=0,all=w.querySelectorAll('.quiz-q').length;
+ if(sc&&sc.classList.contains('quiz-score'))sc.setAttribute('aria-live','polite');
+ w.querySelectorAll('.quiz-q').forEach(function(d){var good=+d.dataset.ok;d.querySelectorAll('.quiz-opt').forEach(function(b){b.onclick=function(){if(d.dataset.done)return;d.dataset.done=1;n++;if(+b.dataset.a===good)ok++;
+  d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
+  if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
+  if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var b=root.querySelector('#advToggle');
+if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
+ if(!k)b.style.display='none';
+ b.textContent='Pokaż treści akademickie ('+k+')';
+ b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';adv().forEach(function(d){d.open=on});b.setAttribute('aria-pressed',on?'true':'false');b.textContent=(on?'Ukryj':'Pokaż')+' treści akademickie ('+k+')'}}
+// spis zwinięty na telefonie
+var sp=root.querySelector('#spis');if(sp&&window.innerWidth<700)sp.removeAttribute('open');
+// przełącznik jasny/ciemny
+var tb=root.querySelector('#lkMotyw');
+if(tb)tb.onclick=function(){var t=ciemny()?'light':'dark';html.setAttribute('data-theme',t);try{localStorage.setItem('lekcja-motyw',t)}catch(e){}oznacz()};
+// postęp czytania + aktywna sekcja w spisie
+var bar=root.querySelector('.lk-prog'),links={},secs=[];
+root.querySelectorAll('.toc-link[href^="#"]').forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1));if(s){links[s.id]=a;secs.push(s)}});
+var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+ if(bar)bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';
+ var cur=null,lim=(parseInt(getComputedStyle(h).getPropertyValue('--header-h'))||52)+40;
+ for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
+ for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// fiszki: pokazuje pierwsze N (domyślnie 6, atrybut data-fz-pierwsze="N"), reszta po wyraźnym przycisku
+root.querySelectorAll('.flashcard-grid').forEach(function(g){
+ var cards=[].slice.call(g.querySelectorAll('.flashcard')),N=+(g.getAttribute('data-fz-pierwsze')||6);
+ if(!(N>0)||cards.length<=N)return;
+ var ukryte=cards.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more';
+ function lab(on){ukryte.forEach(function(c){c.hidden=!on});
+  b.textContent=on?'▲ Zwiń fiszki':'▼ Pokaż pozostałe '+ile+' fiszek (razem '+cards.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ g.insertAdjacentElement('afterend',b);
+});
+// testy: pokazuje pierwsze N pytań (domyślnie 5, atrybut data-q-pierwsze), reszta po wyraźnym przycisku
+root.querySelectorAll('.che-quiz').forEach(function(w){
+ var qs=[].slice.call(w.querySelectorAll('.quiz-q')),N=+(w.getAttribute('data-q-pierwsze')||5);
+ if(!(N>0)||qs.length<=N)return;
+ var ukryte=qs.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more q-more';
+ function lab(on){ukryte.forEach(function(q){q.hidden=!on});
+  b.textContent=on?'▲ Zwiń pytania':'▼ Pokaż pozostałe '+ile+(ile===1?' pytanie':(ile<5?' pytania':' pytań'))+' (razem '+qs.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ var sc=w.nextElementSibling;(sc&&sc.classList.contains('quiz-score')?sc:w).insertAdjacentElement('afterend',b);
+});
+// grafiki przedmiotu
+if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
+if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();
+
+</script>
+</body>
+</html>

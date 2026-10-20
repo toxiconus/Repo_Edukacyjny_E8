@@ -20,3 +20,35 @@ Format: lekcja źródłowa → lekcja docelowa — co z czego wynika.
 - F04 → F05 — izotopy, jony i masa atomowa jako średnia ważona.
 - F04 → F06–F09 — układ okresowy i konfiguracja z liczby protonów i elektronów.
 - F04 → F07 — model powłokowy przechodzi w podpowłoki i orbitale.
+- X04 → LKO-METALE — rozszerzenie szeregu aktywności o reguły zadań etapu II (EXPAND).
+- J03 → LKO-METALE — równania jonowe w trzech formach i katalog skróconych (EXPAND).
+- J04 → LKO-METALE — strącanie osadów i tabela rozpuszczalności w zadaniach LKO (EXPAND).
+- N05 → LKO-METALE — metody otrzymywania soli jako katalog syntez (APPLY).
+- N06 → LKO-METALE — H₂ jako reduktor w cyklu miedzi; H₂S w katalogu soli (APPLY).
+- N06 → J01 — mocny/słaby: HCl dysocjuje całkowicie, H₂S częściowo (APPLY).
+- N06 → J04 — zapowiedź wykrywania jonów: AgCl↓ dla Cl⁻, PbS↓ dla S²⁻ (zapowiedź).
+- N06 → LKO-SYM-A2 — wodorki i ich wykrywanie jako materiał symulacji (zasilanie).
+- LKO-METALE → LKO-SYM-A2 — szereg, jony i synteza jako materiał symulacji (zasilanie).
+- LKO-KRZYWE → LKO-A1 — te same dane rozpuszczalności w zadaniach symulacji (zasilanie).
+- LKO-Z36 → F04 — konfiguracje do Z=36 jako rozszerzenie modelu powłokowego (pogłębienie).
+- LKO-PUŁAPKI-WAPNO → N02 — wapno gaszone i woda wapienna jako zasady i wodorotlenki (pogłębienie).
+- R08 → LKO-STECH — stechiometria masowa z nadmiarem jako rozszerzenie zadań molowych (EXPAND-masowo).
+- LKO-STECH → LKO-METALE — równania z szeregu i syntez jako materiał do obliczeń masowych (APPLY).
+- LKO-STECH → LKO-SYM-A2 — obliczenia z nadmiarem i zespolenie ze stężeniem % (zasilanie).
+- LKO-STECH → R04 — zapowiedź mola: metoda masowa bez mola przechodzi w pełną wersję (zapowiedź).
+- F16 → LKO-DOSW — obserwacja vs wniosek i schemat opisu doświadczenia (EXPAND).
+- LKO-DOSW → LKO-A1 — wzorce zadań doświadczalnych w zestawie A1 (zasilanie).
+- LKO-METALE → LKO-DOSW — HCl vs CuO/Cu i szereg aktywności w matrycach (APPLY).
+- N06 → LKO-DOSW — karty gazów (APPLY).
+- LKO-DOSW → J11 — analiza jakościowa jako zapowiedź (zapowiedź).
+- LKO-METALE → LKO-B1+B2 — zadania z szeregu i równań jonowych w zestawie B1 (APPLY).
+- N06 → LKO-B1+B2 — wodorki i ich testy w zestawie B2 (APPLY).
+- LKO-STECH → LKO-B1+B2 — stechiometria z nadmiarem i przypadek graniczny w B2 (APPLY).
+- LKO-DOSW → LKO-B1+B2 — planowanie doświadczenia i obserwacja vs wniosek w B2 (APPLY).
+- LKO-B1+B2 → LKO-SYM-A2 — trening przed symulacją (przygotowuje).
+- LKO-SYM-A2 → LKO-DOSW — zadanie 9: analiza cudzego opisu doświadczenia (APPLY-test)
+- LKO-SYM-A2 → LKO-METALE — zadania 5–6: szereg aktywności i równania jonowe (APPLY-test)
+- LKO-SYM-A2 → LKO-Z36 — zadanie 2: konfiguracje i jony, kumulatywnie z etapem I (APPLY-test)
+- LKO-KRZYWE → LKO-SYM-A2 — zadania 1 i 10: krzywe i S/(100+S) (APPLY-test)
+- LKO-Z36 → LKO-SYM-A2 — zadanie 2: konfiguracje do Z=36 (APPLY-test)
+- F17 → LKO-SYM-A2 — zadanie 3: typy reakcji i dobór współczynników (APPLY-test)

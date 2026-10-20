@@ -1,0 +1,1606 @@
+<!DOCTYPE html>
+<html lang="pl" data-przedmiot="bio">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>REV01 · Organizacja i chemizm życia — powtórka do konkursu</title>
+<style id="lekcja-css">
+/* baza.css — wspólna baza lekcji wszystkich przedmiotów (styl lekcji silnika CHE v0_57). Nie edytować — zmiany wspólne w ulepszenia.css, przedmiotowe w motywy/<kod>.css. */
+
+
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+--bg:#fafbfc;--surface:#ffffff;--surface-soft:#f6f8fa;--surface-warm:#fdfaf4;--border:#e5e9ee;--border-strong:#cdd5dd;
+--text:#1a2332;--text-soft:#4a5568;--text-muted:#8892a0;--text-faint:#b4bcc6;
+--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,0.15);
+--c-basic:#2e7d4f;--c-basic-bg:#eaf6ee;--c-basic-line:#b8dcc4;
+--c-understand:#2b5e9c;--c-understand-bg:#eaf1f9;--c-understand-line:#bcd0e5;
+--c-warn:#b06f1c;--c-warn-bg:#fcf4e6;--c-warn-line:#eed8a8;
+--c-error:#b83a45;--c-error-bg:#fbeced;--c-error-line:#e8b5b9;
+--c-extra:#6b3fa0;--c-extra-bg:#f3ecfa;--c-extra-line:#d3bde8;
+--c-new:#0d7d7d;--c-new-bg:#e6f4f4;--c-new-line:#b0dcdc;
+--c-exam:#a86a00;--c-exam-bg:#fdf5e0;--c-exam-line:#eed49c;
+--sh-sm:0 1px 2px rgba(26,35,50,0.04);--sh-md:0 4px 12px rgba(26,35,50,0.06);--sh-lg:0 12px 32px rgba(26,35,50,0.10);--sh-xl:0 20px 48px rgba(26,35,50,0.14);
+--r-sm:6px;--r-md:10px;--r-lg:14px;--r-xl:20px;
+--header-h:56px;
+--ease:cubic-bezier(0.4,0,0.2,1);--ease-out:cubic-bezier(0.16,1,0.3,1);
+--hl-key:#0d6868;--hl-key-bg:#d8ecea;--hl-warn:#b83a45;--hl-warn-bg:#fbe0e2;--hl-new:#6b3fa0;--hl-new-bg:#ede0f8;--hl-formula:#084848;--hl-formula-bg:#e0eeed;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.7;padding:calc(var(--header-h) + 12px) 0 88px;min-height:100vh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+@media(min-width:600px){body{padding:calc(var(--header-h) + 18px) 12px 96px;}}
+@media(min-width:768px){body{padding:calc(var(--header-h) + 24px) 20px 100px;}}
+@media(min-width:1100px){body{padding:calc(var(--header-h) + 28px) 32px 110px;}}
+.fab{position:fixed;top:12px;width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);background:rgba(255,255,255,0.94);color:var(--text);cursor:pointer;border-radius:var(--r-md);padding:0;transition:all 0.2s var(--ease);z-index:1200;box-shadow:var(--sh-sm);backdrop-filter:blur(8px);}
+.fab:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);box-shadow:var(--sh-md);transform:translateY(-1px);}
+.fab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.fab-left{left:6px;}.fab-right{right:6px;}
+@media(min-width:600px){.fab-left{left:10px;}.fab-right{right:10px;}}
+@media(min-width:768px){.fab-left{left:14px;}.fab-right{right:14px;}}
+.fab-left::after{content:'';width:16px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;border-radius:1px;transition:transform 0.25s var(--ease);}
+.fab-left.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.fab-left.is-open::after{width:16px;height:2px;background:currentColor;box-shadow:none;transform:rotate(45deg);}
+.fab-left.is-open::before{content:'';position:absolute;width:16px;height:2px;background:currentColor;transform:rotate(-45deg);border-radius:1px;}
+.fab-right::after{content:'';display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:8px solid currentColor;transition:transform 0.35s var(--ease-out);}
+.fab-right.is-hidden::after{transform:rotate(0deg);}
+.fab-right:not(.is-hidden)::after{transform:rotate(180deg);}
+.header-wrapper{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);transform:translateY(0);transition:transform 0.45s var(--ease-out),box-shadow 0.3s var(--ease);box-shadow:var(--sh-sm);}
+.header-wrapper.is-hidden{transform:translateY(-100%);box-shadow:none;}
+.header-bar{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:0 16px;height:var(--header-h);}
+@media(min-width:768px){.header-bar{padding:0 24px;}}
+.header-subject{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;letter-spacing:1px;padding:4px 10px;background:var(--accent-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;}
+.header-title{font-size:15px;font-weight:700;color:var(--text);letter-spacing:-0.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1 1 auto;min-width:0;}
+.header-lesson{font-size:10px;font-weight:800;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.7px;padding:4px 9px;background:var(--surface-soft);border-radius:4px;white-space:nowrap;flex-shrink:0;font-family:'JetBrains Mono',monospace;}
+.header-nav{display:flex;gap:2px;flex-shrink:0;align-items:center;}
+.header-nav a,.header-nav button{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;border-radius:var(--r-sm);font-size:16px;font-weight:500;transition:all 0.2s var(--ease);border:1px solid transparent;background:transparent;cursor:pointer;padding:0;font-family:inherit;}
+.header-nav a:hover,.header-nav button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.header-resume-btn.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.header-resume-btn::before{content:'▮';font-size:14px;line-height:1;}
+.header-panel{display:none;border-top:1px solid var(--border);background:linear-gradient(180deg,var(--surface) 0%,var(--surface-soft) 100%);padding:20px 16px 24px;}
+@media(min-width:768px){.header-panel{padding:24px 24px 28px;}}
+.header-panel.is-open{display:block;}
+.header-panel-inner{max-width:900px;margin:0 auto;}
+.header-kicker{font-size:11px;color:var(--text-muted);text-transform:uppercase;font-weight:800;letter-spacing:1px;margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.header-kicker::before{content:'';width:24px;height:2px;background:var(--accent);display:inline-block;border-radius:1px;}
+.header-h1{font-size:32px;font-weight:800;color:var(--text);letter-spacing:-1px;margin-bottom:10px;line-height:1.1;}
+.header-subtitle{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:18px;max-width:720px;}
+.header-modes{display:flex;gap:6px;flex-wrap:wrap;}
+.mode-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 15px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);font-family:inherit;}
+.mode-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
+.mode-btn:hover:not(.active){background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.resume-dropdown{display:none;position:fixed;top:calc(var(--header-h) + 6px);right:14px;z-index:1050;width:min(300px,calc(100vw - 30px));padding:14px;border:1px solid var(--border-strong);border-radius:12px;background:#fff;box-shadow:var(--sh-lg);}
+.resume-dropdown.is-open{display:block;}
+.resume-dropdown h4{margin:0 0 5px;color:var(--text);font-size:.85rem;}
+.resume-dropdown p{margin:0 0 12px;color:var(--text-muted);font-size:.75rem;line-height:1.5;}
+.resume-actions{display:flex;gap:6px;}
+.resume-actions button{flex:1;padding:8px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text-soft);font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.resume-actions .resume-save{background:var(--accent);color:#fff;border-color:var(--accent);}
+.toc-overlay{position:fixed;inset:0;background:rgba(26,35,50,0.34);backdrop-filter:blur(3px);z-index:1100;opacity:0;visibility:hidden;transition:opacity 0.3s var(--ease),visibility 0.3s var(--ease);}
+.toc-overlay.is-visible{opacity:1;visibility:visible;}
+.toc-wrapper{position:fixed;left:0;top:0;width:320px;max-width:86vw;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:1150;transform:translateX(-100%);transition:transform 0.4s var(--ease-out);padding-top:64px;box-shadow:var(--sh-xl);}
+.toc-wrapper.is-open{transform:translateX(0);}
+.toc-content{padding:12px 14px 100px;}
+.toc-header{font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);padding:4px 12px 12px;}
+.toc-item{margin-bottom:4px;border-radius:var(--r-md);overflow:hidden;}
+.toc-summary{padding:10px 12px;font-size:13px;font-weight:700;color:var(--text);cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;border-radius:var(--r-sm);transition:background 0.2s var(--ease),color 0.2s var(--ease);user-select:none;}
+.toc-summary:hover{background:var(--accent-soft);color:var(--accent);}
+.toc-summary::-webkit-details-marker{display:none;}
+.toc-summary::marker{content:'';}
+.toc-summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);opacity:0.5;}
+.toc-item[open] .toc-summary::before{transform:rotate(90deg);opacity:1;}
+.toc-links{padding:4px 0 8px 28px;display:flex;flex-direction:column;gap:1px;}
+.toc-link{display:block;padding:6px 10px;font-size:12.5px;color:var(--text-soft);text-decoration:none;border-radius:4px;transition:all 0.2s var(--ease);border-left:2px solid transparent;}
+.toc-link:hover{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);}
+.container{max-width:820px;margin:0 auto;background:var(--surface);border-radius:0;box-shadow:none;padding:18px 12px;border:none;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+@media(min-width:600px){.container{border-radius:var(--r-lg);box-shadow:var(--sh-md);border:1px solid var(--border);padding:22px 18px;}}
+@media(min-width:768px){.container{padding:36px 36px;border-radius:var(--r-xl);}}
+@media(min-width:1100px){.container{max-width:840px;padding:40px 40px;}}
+h1,h2,h3,h4,h5{font-weight:800;color:var(--text);letter-spacing:-0.3px;line-height:1.3;}
+h2{font-size:24px;margin-top:44px;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);}
+h3{font-size:17px;margin-top:32px;margin-bottom:12px;font-weight:800;}
+h4{font-size:15px;margin-top:24px;margin-bottom:10px;font-weight:800;}
+h5{font-size:13px;margin-top:16px;margin-bottom:8px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-soft);}
+p{margin-bottom:12px;}
+ul,ol{padding-left:24px;margin-bottom:14px;}
+li{margin-bottom:6px;padding-left:4px;}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color 0.2s var(--ease);}
+a:hover{border-bottom-color:var(--accent);}
+strong{font-weight:700;color:var(--text);}
+.hl{background:var(--hl-key-bg);color:var(--hl-key);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-warn{background:var(--hl-warn-bg);color:var(--hl-warn);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.hl-new{background:var(--hl-new-bg);color:var(--hl-new);padding:1px 6px;border-radius:4px;font-weight:700;white-space:nowrap;}
+.formula{display:inline-block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:14px;font-weight:600;color:var(--hl-formula);background:var(--hl-formula-bg);padding:4px 12px;border-radius:var(--r-sm);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:3px 2px;white-space:nowrap;}
+.formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
+code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
+pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
+.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
+.mnemonic b{color:#78350f;}
+.card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
+@media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
+.card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
+.card-label{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--accent);margin-bottom:10px;padding:3px 9px;background:var(--accent-soft);border-radius:4px;}
+.card-core{background:var(--accent-soft);border-color:var(--accent-line);border-left-color:var(--accent);}
+.card-basic{background:var(--c-basic-bg);border-color:var(--c-basic-line);border-left-color:var(--c-basic);}
+.card-basic .card-label{background:rgba(46,125,79,0.12);color:var(--c-basic);}
+.card-understand{background:var(--c-understand-bg);border-color:var(--c-understand-line);border-left-color:var(--c-understand);}
+.card-understand .card-label{background:rgba(43,94,156,0.12);color:var(--c-understand);}
+.card-warning{background:var(--c-warn-bg);border-color:var(--c-warn-line);border-left-color:var(--c-warn);}
+.card-warning .card-label{background:rgba(176,111,28,0.12);color:var(--c-warn);}
+.card-error{background:var(--c-error-bg);border-color:var(--c-error-line);border-left-color:var(--c-error);}
+.card-error .card-label{background:rgba(184,58,69,0.12);color:var(--c-error);}
+.card-extra{background:var(--c-extra-bg);border-color:var(--c-extra-line);border-left-color:var(--c-extra);}
+.card-extra .card-label{background:rgba(107,63,160,0.12);color:var(--c-extra);}
+.card-new{background:var(--c-new-bg);border-color:var(--c-new-line);border-left-color:var(--c-new);}
+.card-new .card-label{background:rgba(13,125,125,0.12);color:var(--c-new);}
+.card-exam{background:var(--c-exam-bg);border-color:var(--c-exam-line);border-left-color:var(--c-exam);}
+.card-exam .card-label{background:rgba(168,106,0,0.12);color:var(--c-exam);}
+.card p:last-child,.card ul:last-child,.card ol:last-child{margin-bottom:0;}
+details.answer{background:var(--surface-soft);border:1px solid var(--border);border-left:3px solid var(--accent-line);border-radius:var(--r-sm);padding:10px 14px;margin:10px 0;transition:all 0.2s var(--ease);}
+details.answer[open]{background:var(--accent-soft);border-left-color:var(--accent);}
+details.answer summary{cursor:pointer;font-weight:700;color:var(--text-soft);font-size:13px;list-style:none;user-select:none;display:flex;align-items:center;gap:10px;transition:color 0.2s var(--ease);}
+details.answer summary::-webkit-details-marker{display:none;}
+details.answer summary::marker{content:'';}
+details.answer summary::before{content:'';width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:5px solid currentColor;flex-shrink:0;transition:transform 0.25s var(--ease);}
+details.answer[open] summary::before{transform:rotate(90deg);}
+details.answer[open] summary{color:var(--accent);}
+details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}
+.part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}
+@media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}
+.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
+@media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}
+.table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}
+.table-wrap th,.table-wrap td{padding:8px 8px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;font-size:13px;}
+@media(min-width:600px){.table-wrap th,.table-wrap td{padding:10px 12px;font-size:13.5px;}}
+.table-wrap th{background:var(--surface-soft);font-weight:800;color:var(--text-soft);font-size:10px;text-transform:uppercase;letter-spacing:0.5px;}
+@media(min-width:600px){.table-wrap th{font-size:11px;letter-spacing:0.7px;white-space:nowrap;}}
+.table-wrap.table-compact td,.table-wrap.table-compact th{padding:7px 6px;font-size:12.5px;}
+.table-wrap tr:last-child td{border-bottom:none;}
+.table-wrap tr:hover td{background:var(--accent-soft);}
+.table-wrap .error-row{background:var(--c-error-bg);}
+.table-wrap .ok-row{background:var(--c-basic-bg);}
+.def-list{display:flex;flex-direction:column;gap:8px;margin:14px 0;}
+.def-item{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:12px 16px;}
+.def-item dt{font-weight:800;color:var(--text);font-size:13.5px;margin-bottom:4px;display:flex;align-items:center;gap:8px;}
+.def-item dt::before{content:'';width:3px;height:14px;background:var(--accent);border-radius:2px;}
+.def-item dd{color:var(--text-soft);font-size:13.5px;line-height:1.6;margin:0;padding-left:11px;}
+.minimum-card{background:linear-gradient(135deg,var(--surface-soft) 0%,var(--accent-soft) 100%);border:1px solid var(--accent-line);border-radius:var(--r-lg);padding:20px 22px;margin:8px 0 28px;box-shadow:var(--sh-sm);position:relative;overflow:hidden;}
+@media(min-width:768px){.minimum-card{padding:28px 34px;margin-bottom:36px;}}
+.minimum-card::before{content:'';position:absolute;top:0;left:0;width:5px;height:100%;background:var(--accent);}
+.minimum-card h3{color:var(--accent);margin:0 0 16px;font-size:16px;letter-spacing:0.2px;display:flex;align-items:center;gap:10px;}
+.minimum-card h3::before{content:'★';font-size:16px;}
+.minimum-card ol{margin:0;padding-left:0;list-style:none;counter-reset:min-list;}
+.minimum-card li{counter-increment:min-list;padding-left:36px;position:relative;margin-bottom:12px;font-size:14px;line-height:1.6;}
+.minimum-card li::before{content:counter(min-list);position:absolute;left:0;top:0;width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--surface);color:var(--accent);border:2px solid var(--accent-line);border-radius:50%;font-size:12px;font-weight:800;}
+.minimum-card li:last-child{margin-bottom:0;}
+.level-badge{display:inline-block;font-size:9.5px;font-weight:800;text-transform:uppercase;padding:2px 9px;border-radius:12px;vertical-align:middle;letter-spacing:0.5px;line-height:1.6;margin-left:8px;}
+.level-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.level-understand{background:var(--c-understand-bg);color:var(--c-understand);}
+.level-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.level-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.level-new{background:var(--c-new-bg);color:var(--c-new);}
+.rule-box{background:var(--c-understand-bg);border:1px solid var(--c-understand-line);border-radius:var(--r-md);padding:14px 18px;margin:14px 0;font-size:14px;line-height:1.65;}
+.rule-box b{color:var(--c-understand);}
+.step-flow{background:var(--text);color:#fff;padding:16px 18px;border-radius:var(--r-md);font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:12.5px;line-height:1.9;margin:14px 0;overflow-x:auto;white-space:pre;}
+@media(min-width:768px){.step-flow{font-size:13.5px;padding:16px 20px;}}
+.footer{margin-top:56px;padding-top:24px;border-top:2px solid var(--border);text-align:center;font-size:12.5px;color:var(--text-muted);letter-spacing:0.2px;}
+.footer p{margin-bottom:4px;}
+::-webkit-scrollbar{width:10px;height:10px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:6px;border:2px solid var(--bg);}
+::-webkit-scrollbar-thumb:hover{background:var(--text-muted);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px;}
+.bottom-nav{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:1100;width:min(700px,calc(100vw - 24px));font-size:.78rem;}
+.bottom-nav__toggle{display:flex;align-items:center;justify-content:center;gap:8px;margin:0 auto;padding:8px 14px;border:1px solid var(--border-strong);border-radius:999px;background:rgba(255,255,255,.97);color:var(--text-soft);font:700 .72rem inherit;box-shadow:0 5px 18px rgba(15,23,42,.14);cursor:pointer;backdrop-filter:blur(10px);font-family:inherit;}
+.bottom-nav__panel{display:none;margin-bottom:7px;padding:10px;border:1px solid var(--border-strong);border-radius:14px;background:rgba(255,255,255,.98);box-shadow:0 10px 28px rgba(15,23,42,.16);backdrop-filter:blur(12px);}
+.bottom-nav.is-open .bottom-nav__panel{display:block;}
+.bottom-nav__primary{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.bottom-nav a,.bottom-nav button.nav-more{min-height:36px;display:flex;align-items:center;justify-content:center;padding:6px 8px;border:1px solid var(--border);border-radius:8px;background:#fff;color:var(--text-soft);text-decoration:none;font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
+.bottom-nav a:hover,.bottom-nav button.nav-more:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+@media(max-width:420px){
+  .bottom-nav{font-size:.7rem;width:calc(100vw - 12px);}
+  .bottom-nav a,.bottom-nav button.nav-more{padding:6px 4px;font-size:.65rem;}
+}
+button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px;}
+.widget{background:var(--surface);border:2px solid var(--border);border-radius:var(--r-md);padding:14px;margin:14px 0;box-shadow:var(--sh-sm);}
+@media(min-width:768px){.widget{padding:22px 26px;margin:20px 0;border-radius:var(--r-lg);}}
+.widget h4{margin:0 0 8px;color:var(--text);font-size:15px;font-weight:800;}
+@media(min-width:768px){.widget h4{font-size:16px;}}
+.widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
+.bld-pool{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+.bld-pool button{padding:6px 12px;border:1px solid var(--border);border-radius:20px;background:#fff;font:600 0.8rem inherit;cursor:pointer;font-family:inherit;color:var(--text);}
+.bld-pool button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bld-workspace{min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;}
+.bld-feedback,.re-result,.st-feedback,.ch-feedback{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;line-height:1.5;}
+.bld-feedback.ok,.re-result.ok,.st-feedback.ok,.ch-feedback.ok{background:var(--c-basic-bg);color:var(--c-basic);border:1px solid var(--c-basic-line);}
+.bld-feedback.bad,.re-result.bad,.st-feedback.bad,.ch-feedback.bad{background:var(--c-error-bg);color:var(--c-error);border:1px solid var(--c-error-line);}
+.bld-feedback.info,.re-result.info,.st-feedback.info,.ch-feedback.info{background:var(--c-understand-bg);color:var(--c-understand);border:1px solid var(--c-understand-line);}
+.bld-feedback.warn,.re-result.warn,.st-feedback.warn,.ch-feedback.warn{background:var(--c-warn-bg);color:var(--c-warn);border:1px solid var(--c-warn-line);}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);color:var(--text);font-family:inherit;}
+.btn:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent);}
+.btn-primary:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+.btn-sm{padding:6px 10px;font-size:12px;}
+.flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}
+@media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}
+.flashcard{min-height:120px;padding:16px;border:2px solid var(--border);border-radius:var(--r-md);background:#fff;color:var(--text);font:inherit;text-align:center;cursor:pointer;box-shadow:var(--sh-sm);transition:all 0.2s var(--ease);position:relative;font-family:inherit;}
+.flashcard:hover{border-color:var(--accent);background:var(--accent-soft);transform:translateY(-3px);box-shadow:var(--sh-md);}
+.flashcard .front,.flashcard .back{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;min-height:90px;}
+.flashcard .front{font-weight:700;font-size:14.5px;line-height:1.5;}
+.flashcard .back{display:none;color:var(--text-soft);font-size:13.5px;line-height:1.6;}
+.flashcard.flipped .front{display:none;}
+.flashcard.flipped .back{display:flex;}
+.flashcard .card-tag{position:absolute;top:8px;right:8px;font-size:9px;text-transform:uppercase;background:var(--surface-soft);padding:2px 8px;border-radius:10px;color:var(--text-muted);font-weight:800;letter-spacing:0.4px;}
+.flashcard .card-tag.tag-extra{background:var(--c-extra-bg);color:var(--c-extra);}
+.flashcard .card-tag.tag-error{background:var(--c-error-bg);color:var(--c-error);}
+.flashcard .card-tag.tag-basic{background:var(--c-basic-bg);color:var(--c-basic);}
+.flashcard .card-tag.tag-exam{background:var(--c-exam-bg);color:var(--c-exam);}
+.checklist{background:#fff;border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.checklist h4{color:var(--c-basic);margin:0 0 12px;font-size:15px;}
+.checklist ul{list-style:none;padding-left:0;margin:0;}
+.checklist li{padding:7px 0;font-size:13.5px;border-bottom:1px dashed var(--c-basic-line);display:flex;align-items:flex-start;gap:10px;line-height:1.55;}
+.checklist li:last-child{border-bottom:none;}
+.checklist li::before{content:'☐';color:var(--c-basic);font-weight:700;font-size:1.15rem;flex-shrink:0;line-height:1.2;}
+.core-path{background:linear-gradient(135deg,var(--c-basic-bg) 0%,#dcefe2 100%);border:2px solid var(--c-basic);border-radius:var(--r-lg);padding:18px 20px;margin:16px 0;}
+.core-path .cp-title{font-weight:800;color:var(--c-basic);font-size:15px;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.core-path .cp-title::before{content:'▶';font-size:12px;}
+.core-path ol{margin:0;padding-left:22px;}
+.core-path li{margin-bottom:6px;font-size:13.5px;line-height:1.6;}
+.audit-panel{background:var(--surface-soft);border:2px solid var(--border-strong);border-radius:var(--r-lg);padding:16px 18px;margin:16px 0;}
+.audit-panel h4{margin:0 0 12px;color:var(--text);}
+.audit-grid{display:grid;grid-template-columns:1fr;gap:10px;margin-top:12px;}
+@media(min-width:600px){.audit-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}}
+.audit-item{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:10px 12px;font-size:12.5px;line-height:1.55;}
+.mini-note{font-size:12.5px;color:var(--text-muted);font-style:italic;margin-top:8px;line-height:1.55;}
+.layer-legend{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:12px 14px;margin:12px 0;display:grid;grid-template-columns:1fr;gap:8px 18px;}
+@media(min-width:600px){.layer-legend{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 18px;}}
+.layer-legend .layer-row{display:flex;gap:10px;align-items:center;font-size:12.5px;line-height:1.5;}
+.layer-legend .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;}
+.layer-legend .dot.e8{background:var(--c-basic);}
+.layer-legend .dot.understand{background:var(--c-understand);}
+.layer-legend .dot.extra{background:var(--c-extra);}
+.layer-legend .dot.contest{background:var(--c-warn);}
+.klinika-table td.col-blad{color:var(--c-error);font-weight:700;}
+.klinika-table td.col-blad::before{content:'✕ ';font-weight:900;margin-right:4px;color:var(--c-error);}
+.klinika-table td.col-ok{color:var(--c-basic);font-weight:700;}
+.klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}
+.map-card{position:relative;}
+.map-expand-btn{position:absolute;top:10px;right:10px;z-index:3;padding:6px 12px;border:1px solid var(--accent-line);background:rgba(255,255,255,0.95);color:var(--accent);border-radius:var(--r-sm);font-size:12px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:var(--sh-sm);transition:all 0.15s var(--ease);}
+.map-expand-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.map-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(26,35,50,0.85);backdrop-filter:blur(6px);}
+.map-overlay.is-open{display:block;}
+.map-overlay-inner{position:absolute;inset:12px;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-xl);}
+.map-overlay-bar{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--border);background:var(--surface-soft);gap:8px;flex-wrap:wrap;}
+.map-overlay-title{font-weight:800;font-size:14px;color:var(--text);}
+.map-overlay-actions{display:flex;gap:6px;}
+.map-overlay-actions button{padding:6px 12px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-size:12px;font-weight:700;cursor:pointer;color:var(--text-soft);transition:all 0.15s var(--ease);}
+.map-overlay-actions button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
+.map-overlay-actions .map-close{background:var(--c-error);color:#fff;border-color:var(--c-error);}
+.map-overlay-canvas{flex:1;overflow:hidden;position:relative;background:#fff;cursor:grab;touch-action:none;}
+.map-overlay-canvas svg{display:block;position:absolute;top:0;left:0;transform-origin:0 0;}
+@media print{
+.fab,.toc-wrapper,.toc-overlay,.header-wrapper,.bottom-nav,.resume-dropdown,.map-overlay,.map-expand-btn{display:none !important;}
+body{padding:0;background:#fff;}
+.container{box-shadow:none;border:none;padding:0;max-width:100%;}
+details.answer{page-break-inside:avoid;}
+details.answer > *:not(summary){display:block !important;}
+details.answer summary{display:none;}
+.card{page-break-inside:avoid;}
+.widget{page-break-inside:avoid;}
+}
+@media (prefers-reduced-motion: reduce){
+*{animation-duration:0.01ms!important;transition-duration:0.01ms!important;}
+html{scroll-behavior:auto;}
+}
+html,body{max-width:100%;overflow-x:hidden;}
+.table-scroll-hint{display:none;align-items:center;justify-content:space-between;gap:8px;padding:7px 11px;margin-top:0;margin-bottom:8px;border:1px solid var(--border);border-bottom:0;border-radius:var(--r-sm) var(--r-sm) 0 0;background:var(--surface-soft);color:var(--text-muted);font-size:11px;font-weight:700;}
+.table-wrap.is-scrollable + .table-scroll-hint{display:flex;}
+.table-scroll-hint .scroll-arrow{font-size:13px;letter-spacing:2px;color:var(--accent);}
+.timeline-anim{border-color:var(--c-understand-line);}
+.ta-stage{background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md);padding:18px 14px;min-height:280px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.ta-scene{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;animation:taFade 0.6s ease-out;width:100%;}
+@keyframes taFade{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.ta-scene .ta-year{font-size:1.7rem;font-weight:800;color:var(--accent);font-family:'JetBrains Mono',monospace;letter-spacing:1px;}
+.ta-scene .ta-who{font-size:1.05rem;font-weight:800;color:var(--text);}
+.ta-scene .ta-desc{font-size:13.5px;color:var(--text-soft);max-width:600px;line-height:1.65;}
+.ta-dots{display:flex;justify-content:center;gap:8px;margin:14px 0 8px;}
+.ta-dot{width:12px;height:12px;border-radius:50%;background:var(--border-strong);border:2px solid transparent;cursor:pointer;padding:0;transition:all 0.2s var(--ease);}
+.ta-dot.active{background:var(--accent);transform:scale(1.25);box-shadow:0 0 0 3px var(--accent-glow);}
+.ta-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;}
+.ta-nav{padding:8px 14px;border:1px solid var(--border-strong);border-radius:var(--r-sm);background:#fff;font-family:inherit;font-weight:700;color:var(--text-soft);cursor:pointer;font-size:12.5px;transition:all 0.15s var(--ease);}
+.ta-nav:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
+.ta-progress{font-size:12.5px;color:var(--text-muted);font-weight:700;font-family:'JetBrains Mono',monospace;}
+.eq-player{background:linear-gradient(180deg,#f8fafc,#eef6f5);border:2px solid var(--accent-line);border-radius:var(--r-lg);padding:16px 18px;margin:14px 0;}
+.eq-stage{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.15rem;padding:12px;background:#fff;border-radius:var(--r-md);border:1px solid var(--border);}
+.eq-term{display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border);opacity:0;}
+.eq-term.show{opacity:1;animation:reaction-flow 0.7s ease-out;}
+.eq-term.reactant{background:#e0f2fe;border-color:#7dd3fc;color:#0c4a6e;}
+.eq-term.product{background:#dcfce7;border-color:#86efac;color:#14532d;}
+.eq-arrow{opacity:0;color:var(--accent);font-size:1.4rem;}
+.eq-arrow.show{opacity:1;}
+.eq-balance{margin-top:10px;font-size:13px;color:var(--text-soft);display:none;}
+.eq-balance.show{display:block;}
+@keyframes reaction-flow{0%{opacity:.25;transform:scale(.92)}55%{opacity:1}100%{opacity:1;transform:scale(1)}}
+.ion-assembly{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;padding:18px 12px;background:#fff;border:1px solid var(--border);border-radius:var(--r-md);margin:10px 0;}
+.ion-chip{padding:12px 16px;border-radius:999px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:1.1rem;border:2px solid var(--border);}
+.ion-chip.cation{background:#e0f2fe;border-color:#38bdf8;color:#0c4a6e;}
+.ion-chip.anion{background:#fef3c7;border-color:#fcd34d;color:#78350f;}
+.ion-chip.product{background:#dcfce7;border-color:#4ade80;color:#14532d;}
+.ion-plus,.ion-join{font-size:1.4rem;font-weight:800;color:var(--text-muted);}
+.hero{max-width:900px;margin:0 auto 22px;padding:26px;border:1px solid var(--border);border-radius:var(--r-xl);background:linear-gradient(135deg,#fff,var(--accent-soft));box-shadow:var(--sh-md);}
+.hero h1{font-size:clamp(32px,6vw,52px);margin:4px 0 8px;}
+.hero-kicker{font-size:11px;font-weight:800;letter-spacing:1px;color:var(--accent);text-transform:uppercase;}
+.lead{font-size:16px;color:var(--text-soft);max-width:720px;}
+.tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px;}
+.page{max-width:900px;margin:0 auto;}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+@media(max-width:720px){.grid-2,.grid-3{grid-template-columns:1fr;}}
+.metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:12px;}
+.metric-grid>div,.result-card,.step-card{padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);}
+.metric-grid b{display:block;font-size:10px;text-transform:uppercase;color:var(--text-muted);}
+.metric-grid strong{display:block;margin-top:3px;}
+@media(max-width:700px){.metric-grid{grid-template-columns:1fr;}}
+.controls,.button-grid{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px;}
+.controls button,.button-grid button,.quiz-opt{padding:8px 12px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;cursor:pointer;}
+.particle-stage{height:120px;display:flex;align-items:center;justify-content:center;gap:70px;border:1px dashed var(--border-strong);border-radius:10px;margin-top:12px;}
+.particle{font-size:30px;font-weight:800;}
+.p-h3o{color:var(--accent);}
+.p-cl{color:#b83a45;}
+.ph-scale{display:flex;justify-content:space-between;margin-top:6px;font:700 11px 'JetBrains Mono',monospace;}
+.buffer-tank{height:28px;border:1px solid var(--border-strong);border-radius:999px;overflow:hidden;margin:14px 0;background:var(--surface-soft);}
+#bufferFill{height:100%;width:100%;background:var(--accent);transition:width .2s;}
+.quiz-wrap{margin:16px 0;}
+.quiz-q{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:14px 16px;margin-bottom:12px;}
+.quiz-q h5{margin:0 0 10px;font-size:14.5px;color:var(--text);text-transform:none;letter-spacing:0;line-height:1.45;}
+.quiz-q .q-tag{display:inline-block;font-size:10px;font-weight:800;padding:2px 8px;border-radius:10px;margin-bottom:8px;background:var(--surface-soft);color:var(--text-muted);}
+.quiz-opts{display:flex;flex-direction:column;gap:8px;}
+.quiz-opt{display:block;width:100%;text-align:left;padding:10px 12px;border:2px solid var(--border);border-radius:var(--r-sm);background:#fff;font:inherit;font-size:13.5px;cursor:pointer;transition:all 0.15s var(--ease);color:var(--text);}
+.quiz-opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft);}
+.quiz-opt.correct{border-color:var(--c-basic);background:var(--c-basic-bg);color:var(--c-basic);font-weight:700;}
+.quiz-opt.wrong{border-color:var(--c-error);background:var(--c-error-bg);color:var(--c-error);}
+.quiz-opt:disabled{cursor:default;opacity:0.95;}
+.quiz-fb{margin-top:8px;font-size:13px;line-height:1.5;display:none;padding:8px 10px;border-radius:var(--r-sm);}
+.quiz-fb.show{display:block;}
+.quiz-fb.ok{background:var(--c-basic-bg);color:var(--c-basic);}
+.quiz-fb.bad{background:var(--c-error-bg);color:var(--c-error);}
+.quiz-score{text-align:center;padding:14px;background:var(--surface-soft);border-radius:var(--r-md);margin-top:16px;font-weight:800;color:var(--accent);display:none;}
+.quiz-score.show{display:block;}
+.lab-bridge{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 28px;padding:14px 16px;border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);background:linear-gradient(135deg,var(--surface-soft),var(--accent-soft));}
+.lab-bridge strong{display:block;color:var(--accent-dark);}
+.lab-bridge span{display:block;margin-top:3px;color:var(--text-soft);font-size:13px;}
+.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;}
+.lab-bridge-btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
+@media(max-width:600px){.lab-bridge{align-items:flex-start;flex-direction:column;}.lab-bridge-btn{width:100%;text-align:center;}}
+.exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}
+.exp-card h5{margin:0 0 10px;color:var(--c-basic);font-size:14px;text-transform:none;letter-spacing:0;}
+.exp-grid{display:grid;grid-template-columns:1fr;gap:6px;font-size:13.5px;line-height:1.55;}
+@media(min-width:600px){.exp-grid{grid-template-columns:110px 1fr;}}
+.exp-grid b{color:var(--text-soft);font-size:11px;text-transform:uppercase;letter-spacing:0.4px;}
+
+.js-reveal .card:not(.in),.js-reveal .widget:not(.in){opacity:0;transform:translateY(14px)}
+.js-reveal .card,.js-reveal .widget{transition:opacity .55s var(--ease),transform .55s var(--ease)}
+
+
+.ion-svg{width:100%;height:auto;display:block;background:radial-gradient(ellipse at 50% 40%,#fff,var(--surface-soft));border:1px solid var(--border);border-radius:var(--r-md);margin-top:10px}
+.ion-svg .mv{transition:transform .9s cubic-bezier(.65,0,.35,1);transform-box:fill-box}
+.ion-svg text{font-family:'JetBrains Mono',monospace;font-weight:800;text-anchor:middle;dominant-baseline:central}
+.ion-svg .fade{opacity:0;transition:opacity .6s ease .35s}
+.ion-svg[data-s="1"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="1"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="1"] .d1,.ion-svg[data-s="2"] .d1{opacity:1}
+.ion-svg[data-s="2"] .g-hcl{transform:translateX(75px)}
+.ion-svg[data-s="2"] .g-w{transform:translateX(-55px)}
+.ion-svg[data-s="2"] .proton{transform:translate(120px,-40px)}
+.ion-svg[data-s="2"] .arrow{opacity:1}
+.ion-svg[data-s="3"] .g-hcl{transform:translateX(10px)}
+.ion-svg[data-s="3"] .g-w{transform:translateX(-10px)}
+.ion-svg[data-s="3"] .proton{transform:translate(230px,-38px)}
+.ion-svg[data-s="3"] .d3{opacity:1}
+.ion-svg[data-s="3"] .glow{animation:ionGlow 1.6s ease-in-out infinite}
+@keyframes ionGlow{0%,100%{filter:drop-shadow(0 0 2px rgba(13,104,104,.3))}50%{filter:drop-shadow(0 0 10px rgba(13,104,104,.8))}}
+
+
+.ph-bar{position:relative;height:18px;border-radius:999px;margin:10px 0 4px;border:1px solid var(--border-strong);
+background:linear-gradient(90deg,#e5262e 0%,#ef5a28 14%,#f6a21e 28%,#d7d93a 43%,#5cb85c 50%,#21a89a 57%,#2f7fc1 71%,#4a4bb5 86%,#6b2d8f 100%)}
+.ph-marker{position:absolute;top:-6px;width:0;height:0;left:0;transform:translateX(-50%);transition:left .35s var(--ease)}
+.ph-marker::before{content:'';position:absolute;left:-7px;top:0;border:7px solid transparent;border-top:10px solid var(--text)}
+.ph-marker::after{content:attr(data-v);position:absolute;left:0;top:-22px;transform:translateX(-50%);background:var(--text);color:#fff;font:800 11px 'JetBrains Mono',monospace;padding:2px 6px;border-radius:5px;white-space:nowrap}
+.ph-flask{display:inline-block;width:22px;height:22px;border-radius:0 0 8px 8px;border:2px solid var(--text-soft);vertical-align:middle;margin-right:6px;transition:background .35s}
+
+
+.titr-wrap{position:relative}
+#titrationCanvas{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:var(--r-md);background:#fff}
+.titr-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:10px}
+.titr-row input[type=range]{flex:1 1 200px}
+.titr-flask{width:34px;height:42px;border:2px solid var(--text-soft);border-radius:2px 2px 12px 12px;transition:background .3s;flex-shrink:0;position:relative}
+.titr-flask::after{content:'';position:absolute;left:-2px;right:-2px;top:-8px;height:6px;border:2px solid var(--text-soft);border-bottom:0;border-radius:3px 3px 0 0}
+
+
+.buffer-tank{position:relative;height:34px}
+#bufferFill{transition:width .4s var(--ease),background .4s;background-size:28px 28px;background-image:linear-gradient(45deg,rgba(255,255,255,.22) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.22) 50%,rgba(255,255,255,.22) 75%,transparent 75%)}
+.buffer-tank.pulse{animation:bufPulse .45s ease}
+.buffer-tank.dead{animation:bufDead .5s ease 2}
+@keyframes bufPulse{50%{transform:scale(1.02);box-shadow:0 0 0 4px var(--accent-glow)}}
+@keyframes bufDead{50%{box-shadow:0 0 0 4px rgba(184,58,69,.35)}}
+
+
+.rx-stage{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:12px 0;padding:14px;background:var(--surface-soft);border:1px solid var(--border);border-radius:var(--r-md)}
+.rx-beaker{position:relative;width:120px;height:150px;border:3px solid var(--text-soft);border-top:0;border-radius:0 0 18px 18px;background:rgba(255,255,255,.55);overflow:visible;flex-shrink:0}
+.rx-liquid{position:absolute;left:0;right:0;bottom:0;height:100px;border-radius:0 0 14px 14px;background:rgba(220,235,240,.65);transition:background 2.2s ease}
+.rx-solid{position:absolute;left:36px;bottom:2px;width:48px;height:24px;border-radius:40% 40% 8px 8px;opacity:0;transition:height 3.5s ease,opacity .5s,transform 3.5s ease}
+.rx-bubbles,.rx-precip,.rx-fumes{position:absolute;left:0;right:0;bottom:0;height:150px;pointer-events:none;overflow:hidden}
+.rx-fumes{overflow:visible;bottom:100px;height:70px}
+.rx-b{position:absolute;bottom:14px;border-radius:50%;background:rgba(255,255,255,.85);border:1px solid rgba(13,104,104,.45);animation:rxRise 2.2s ease-in forwards}
+@keyframes rxRise{to{transform:translate(var(--dx,0),-92px);opacity:0}}
+.rx-p{position:absolute;top:50px;width:6px;height:6px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #cbd5e1;animation:rxFall 2.4s ease-in forwards}
+@keyframes rxFall{to{transform:translateY(90px)}}
+.rx-cloud{position:absolute;bottom:0;left:6px;right:6px;height:0;background:#fff;border-radius:10px 10px 0 0;box-shadow:0 0 0 1px #e2e8f0;transition:height 4s ease;opacity:.95}
+.rx-f{position:absolute;bottom:0;width:26px;height:26px;border-radius:50%;background:rgba(150,75,20,.55);filter:blur(7px);animation:rxFume 3s ease-out forwards}
+@keyframes rxFume{to{transform:translate(var(--dx,0),-70px) scale(2.2);opacity:0}}
+
+
+.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.rx-label{flex:1 1 200px;font-size:13px;color:var(--text-soft);line-height:1.5}
+.rx-label b{color:var(--text);font-family:'JetBrains Mono',monospace}
+@media print{.js-reveal .card,.js-reveal .widget{opacity:1!important;transform:none!important}}
+
+
+/* ulepszenia.css — warstwa wspólna nad baza.css: pasek lekcji, postęp czytania, spis z podświetleniem,
+   tryb ciemny, komponenty wspólne (mity, drzewo, cytat, dialog, słówka, figura), druk, dostępność.
+   Kolejność w lekcji: baza.css → ulepszenia.css → motywy/<przedmiot>.css. Edytuj tylko tutaj. */
+
+:root{--header-h:52px;--serif:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Charter,Georgia,serif}
+
+/* ---------- pasek lekcji (zamiast nagłówka aplikacji) ---------- */
+.lk-bar{position:fixed;top:0;left:0;right:0;z-index:50;height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 12px;
+  background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:saturate(1.4) blur(8px);-webkit-backdrop-filter:saturate(1.4) blur(8px);
+  border-bottom:1px solid var(--border)}
+.lk-subj{flex:none;display:inline-flex;align-items:center;gap:7px;font:800 12.5px/1 Inter,system-ui,sans-serif;color:var(--accent);text-decoration:none;
+  padding:6px 10px 6px 8px;border-radius:999px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+.lk-subj i{width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none}
+.lk-title{flex:1;min-width:0;font:600 13px/1.25 Inter,system-ui,sans-serif;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lk-btn{flex:none;min-width:36px;height:34px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);background:var(--surface);
+  color:var(--text);border-radius:9px;padding:0 10px;font:700 12.5px Inter,system-ui,sans-serif;text-decoration:none;cursor:pointer}
+.lk-btn:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.lk-prog{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--accent);transform-origin:0 50%;transform:scaleX(0)}
+@media (max-width:520px){.lk-title{display:none}.lk-bar{justify-content:space-between}}
+
+/* ---------- nagłówek lekcji ---------- */
+.hero{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+.hero::after{content:"";position:absolute;inset:-10% -6% -10% 52%;z-index:-1;opacity:.12;pointer-events:none;background:var(--motyw-wzor,none) right center/auto 100% repeat-y}
+.hero h1{text-wrap:balance}
+.hero-kicker{color:var(--accent);text-transform:none;letter-spacing:0;font-size:13px}
+.page{padding:0 16px}
+.lk-btn svg{width:16px;height:16px;display:block}
+.lk-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:12.5px;color:var(--text-muted)}
+.lk-meta b{color:var(--text-soft);font-weight:700}
+
+/* ---------- spis treści: aktywna sekcja ---------- */
+@media (min-width:800px){.toc-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));column-gap:12px}}
+.toc-link.on{color:var(--accent);background:var(--accent-soft);border-left-color:var(--accent);font-weight:700}
+section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
+
+/* ---------- komponenty wspólne ---------- */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:12px 0}
+.myth-head{grid-column:1/-1;font-weight:800;font-size:14px}
+.myth{border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow:hidden}
+.myth p{margin:0;padding:9px 12px;font-size:13.5px;line-height:1.5}
+.myth p span{display:block;font:800 11px Inter,system-ui;margin-bottom:2px}
+.myth-x{background:var(--c-error-bg)}.myth-x span{color:var(--c-error)}.myth-ok span{color:var(--c-basic)}
+
+.lk-tree{margin:12px 0;font-size:14px;overflow-x:auto}
+.lk-tree ul{list-style:none;margin:0;padding-left:18px}.lk-tree>ul{padding-left:0}
+.lk-tree li{position:relative;padding:3px 0 3px 14px}
+.lk-tree ul ul li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--accent-line)}
+.lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
+.lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
+.lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+
+/* cytat z tekstu (lektura, źródło, wypowiedź) */
+.lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
+.lk-quote blockquote{margin:0;font:400 17px/1.65 var(--serif);color:var(--text)}
+.lk-quote blockquote p{margin:0 0 6px;color:inherit}
+.lk-quote figcaption{margin-top:6px;font-size:12.5px;color:var(--text-muted)}
+
+/* dialog (role A/B, rozmowa, scenka) */
+.lk-dialog{margin:14px 0;display:flex;flex-direction:column;gap:8px}
+.lk-line{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start}
+.lk-who{min-width:30px;height:30px;padding:0 8px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font:800 12px Inter,system-ui;background:var(--accent-soft);color:var(--accent);border:1px solid var(--accent-line)}
+.lk-line.b .lk-who{background:var(--surface-soft);color:var(--text-soft);border-color:var(--border)}
+.lk-say{padding:8px 12px;border-radius:12px;background:var(--surface);border:1px solid var(--border);font-size:14.5px;line-height:1.55}
+.lk-say small{display:block;color:var(--text-muted);font-size:12.5px;margin-top:2px}
+
+/* słówka: wyraz — znaczenie — przykład */
+.lk-vocab{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+.lk-vocab th{text-align:left;font-size:12px;color:var(--text-muted);font-weight:700;padding:6px 10px;border-bottom:2px solid var(--border)}
+.lk-vocab td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+.lk-vocab td:first-child{font-weight:800;color:var(--accent);white-space:nowrap}
+.lk-vocab td:last-child{color:var(--text-soft);font-style:italic}
+@media (max-width:560px){.lk-vocab thead{display:none}.lk-vocab tr{display:block;padding:8px 0;border-bottom:1px solid var(--border)}
+  .lk-vocab td{display:block;border:0;padding:1px 4px}}
+
+/* figura z biblioteki grafik przedmiotu */
+.lk-fig{margin:16px 0;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);overflow:hidden}
+.lk-fig figcaption{padding:9px 14px;border-top:1px solid var(--border);background:var(--surface-soft);font-size:13px;line-height:1.5;color:var(--text-soft)}
+.lk-fig figcaption b{color:var(--text);margin-right:4px}
+.lk-fig-body{padding:12px}
+.lk-fig svg{display:block;width:100%;height:auto}
+
+/* z chemii (lekcja.css): treści akademickie, plakietki */
+details.adv{border:1px dashed var(--c-warn-line,#eed8a8);border-radius:10px;background:var(--surface-soft,#f6f8fa);margin:10px 0;padding:0 12px}details.adv>summary{cursor:pointer;font-weight:700;color:var(--c-warn,#b06f1c);padding:9px 0;list-style:none}details.adv>summary::-webkit-details-marker{display:none}details.adv>summary::before{content:"▸ "}details.adv[open]>summary::before{content:"▾ "}.adv-tag{font-weight:600;font-size:11px;opacity:.75;margin-left:6px}.adv-body{padding:0 0 10px;font-size:13.5px;line-height:1.6}.adv-body table{font-size:12.5px}.adv-toggle{margin-top:10px;border:1px solid var(--c-warn-line,#eed8a8);background:var(--c-warn-bg,#fcf4e6);color:var(--c-warn,#b06f1c);border-radius:999px;padding:6px 12px;font:700 12px Inter,system-ui,sans-serif;cursor:pointer}.bio-tag{display:inline-block;font:800 10px Inter,system-ui;letter-spacing:.04em;padding:2px 7px;border-radius:99px;background:rgba(46,125,79,.12);color:#2e7d4f;margin-left:6px;vertical-align:middle}.v15{display:inline-block;font:800 9.5px Inter,system-ui;padding:1px 6px;border-radius:99px;background:rgba(13,125,125,.12);color:#0d7d7d;margin-left:6px;vertical-align:middle}@media print{details.adv{display:block}details.adv>.adv-body{display:block}}
+/* z chemii (lekcja.css): telefon, tabele */
+.exp-card{min-width:0;max-width:100%;box-sizing:border-box}.exp-grid>*{min-width:0;overflow-wrap:anywhere}
+@media (max-width:600px){.exp-grid{grid-template-columns:minmax(0,1fr)!important}.exp-grid>b{margin-top:4px}}
+.table-wrap{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+
+/* klinika błędów (::: klinika) — tabela, na telefonie karty */
+.klinika-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden}
+.klinika-table th{text-align:left;padding:9px 12px;background:var(--surface-soft);color:var(--text-soft);font-size:12px;font-weight:800;border-bottom:1px solid var(--border)}
+.klinika-table td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+.klinika-table tr:last-child td{border-bottom:0}
+@media (max-width:600px){.klinika-table thead{display:none}.klinika-table tr{display:block;padding:8px 12px;border-bottom:1px solid var(--border)}
+  .klinika-table td{display:block;border:0;padding:2px 0}.klinika-table td:not(.col-blad):not(.col-ok){color:var(--text-soft)}}
+
+.lk-pre{margin:12px 0;padding:12px 14px;border:1px solid var(--border);border-radius:var(--r-md);background:var(--surface-soft);overflow-x:auto;font:12.5px/1.55 ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;color:var(--text-soft);white-space:pre}
+.lk-pre code{font:inherit;background:none;padding:0;color:inherit}
+.lk-hr{border:0;border-top:1px solid var(--border);margin:28px 0}
+
+/* ---------- dostępność ---------- */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.skip-link{position:absolute;left:-999px;top:8px;z-index:60;background:var(--surface);color:var(--accent);padding:8px 12px;border-radius:8px}
+.skip-link:focus{left:8px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ---------- tryb ciemny: automatycznie albo przyciskiem (data-theme) ---------- */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}}
+:root[data-theme=dark]{
+  --bg:#11161c;--surface:#19212a;--surface-soft:#1f2832;--surface-warm:#211f1a;--border:#2c3743;--border-strong:#3c4956;
+  --text:#e6ebf0;--text-soft:#b7c1cc;--text-muted:#8b97a4;--text-faint:#5f6b78;
+  --c-basic:#6fcf97;--c-basic-bg:#16281f;--c-basic-line:#2f5b43;--c-understand:#8fb8ec;--c-understand-bg:#172333;--c-understand-line:#2e4a6b;
+  --c-warn:#e8b067;--c-warn-bg:#2a2216;--c-warn-line:#5c4824;--c-error:#f08a93;--c-error-bg:#2c1a1d;--c-error-line:#5e3036;
+  --c-extra:#c3a2ee;--c-extra-bg:#241b30;--c-extra-line:#4a3864;--c-new:#6fd1d1;--c-new-bg:#142828;--c-new-line:#2a5656;
+  --c-exam:#e9c063;--c-exam-bg:#2a2414;--c-exam-line:#5a4a20;
+  --sh-sm:none;--sh-md:0 4px 14px rgba(0,0,0,.35);--sh-lg:0 12px 32px rgba(0,0,0,.45);color-scheme:dark}
+/* elementy bazy z białym tłem na sztywno */
+html[data-ciemny] :is(.flashcard,.checklist,.audit-item,.layer-legend,.quiz-q,.quiz-opt,.btn,.controls button,.eq-stage,.ion-assembly,.bld-workspace,.bld-pool button,.resume-dropdown,.ta-nav){background:var(--surface);color:var(--text)}
+html[data-ciemny] .hero{background:linear-gradient(135deg,var(--surface) 30%,var(--accent-soft))}
+html[data-ciemny] :is(.lk-tree>ul>li>span,.part-num,.btn-primary,.mode-btn.active,.step-flow){color:var(--bg)}
+@media (max-width:600px){.hero::after{opacity:.07}}
+
+/* ---------- druk ---------- */
+@media print{
+  .lk-bar,.adv-toggle,.toc-item,.fab,.bottom-nav{display:none!important}
+  body{padding:0;background:#fff;color:#000}
+  .hero::after{display:none}.hero{background:none;box-shadow:none}
+  details.adv,details.answer{display:block}details>*{display:block}
+  .card,.minimum-card,.lk-fig,.myth,.quiz-q{break-inside:avoid;box-shadow:none}
+  a{color:inherit;text-decoration:none}
+}
+
+/* === Dopracowanie czytelności (2026-10-11; z wersji „ulepszonej” U03 użytkownika, uogólnione na wszystkie przedmioty, zgodne z trybem ciemnym) === */
+body{line-height:1.74}
+main{isolation:isolate}
+.hero{border-color:var(--accent-line)}
+.hero::before{content:"";position:absolute;right:-42px;top:-56px;width:180px;height:180px;z-index:-1;pointer-events:none;
+ border:1px solid var(--accent-line);border-radius:50%;opacity:.45;
+ box-shadow:0 0 0 22px var(--accent-glow),0 0 0 44px var(--accent-glow)}
+.part-heading{padding:0 0 12px;border-bottom:1px solid var(--border);align-items:flex-start}
+.part-num{margin-top:1px}
+section[id]{scroll-margin-top:calc(var(--header-h,56px) + 20px)}
+section p{max-width:78ch}
+section ul,section ol{padding-left:1.35rem}
+.card,.exp-card,.widget,.table-wrap{box-shadow:0 2px 8px rgba(24,49,59,.045)}
+.table-wrap{max-width:100%}
+.table-wrap table{line-height:1.55}
+.table-wrap td strong{color:var(--text)}
+.table-wrap tbody tr:nth-child(even) td{background:var(--surface-soft)}
+.table-wrap tbody tr:hover td{background:var(--accent-soft)}
+.mini-note{max-width:80ch}
+:is(button,a,summary,[tabindex]):focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:520px){.hero{padding:20px 16px}.part-heading{font-size:19px;gap:11px}
+ .table-wrap table{font-size:12.5px}.table-wrap th,.table-wrap td{padding:8px 9px}}
+@media(hover:none){.card:hover,.flashcard:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media print{.hero::before{display:none}.card,.exp-card,.table-wrap{break-inside:avoid;box-shadow:none}}
+
+/* fiszki: część ukryta do rozwinięcia (lekcja.js); przy druku — wszystkie */
+.flashcard[hidden]{display:none!important}
+.fz-more{display:block;width:100%;margin:-6px 0 18px;padding:12px 16px;border:2px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent;color:var(--text,#1d2a30);font-family:inherit;font-weight:600;font-size:15px;line-height:1.3;cursor:pointer;text-align:center}
+.fz-more:hover,.fz-more:focus-visible{background:var(--surface-2,rgba(0,0,0,.04))}
+@media print{.flashcard[hidden]{display:revert!important}.fz-more{display:none}}
+.quiz-q[hidden]{display:none!important}
+@media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
+/* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
+details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+@media print{details.lk-log{display:none}}
+
+/* motyw bio (Biologia) — warstwa BIO: kolory, helisa w nagłówku, grafiki bio-viz. Wspólne rzeczy w ../ulepszenia.css */
+:root{
+--header-h:48px;
+--accent:#1d6b4f;--accent-dark:#124632;--accent-soft:#e7f3ec;--accent-line:#b9dbc7;--accent-glow:rgba(29,107,79,0.16);
+--hl-key:#1d6b4f;--hl-key-bg:#dcefe3;--hl-formula:#124632;--hl-formula-bg:#e3f0e8;
+--bg:#f8faf8;--surface-soft:#f3f7f4;
+/* nukleotydy i budowa DNA — jedna paleta dla całej biologii */
+--nt-A:#2f9e44;--nt-A-bg:#d3f9d8;--nt-T:#e03131;--nt-T-bg:#ffe3e3;--nt-C:#1971c2;--nt-C-bg:#d0ebff;--nt-G:#7048e8;--nt-G-bg:#e5dbff;--nt-U:#e8590c;--nt-U-bg:#ffe8cc;
+--sugar:#3b8fd0;--sugar-bg:#e3f1fc;--phos:#e09400;--phos-bg:#fff3d6;--hbond:#8a97a6;
+--strand1:#1f6fb2;--strand2:#178a6c;
+/* komórka */
+--cell-mem:#5c8a3a;--cell-cyto:#f4f9ef;--nucleus:#c9a8e8;--nucleus-bg:#f3ecfb;--mito:#e58b5a;--mito-bg:#fde9dc;--chloro:#4caf50;--chloro-bg:#e3f4e3;--wall:#9bbd6a;--dna-ink:#7a3fbf;
+--viz-ink:#1a2332;--viz-mut:#5d6b7a;--viz-line:#d5dee6;--viz-bg:#ffffff;--viz-bg2:#f6f8f7;
+}
+body{font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
+/* pasek górny */
+.bio-bar{position:fixed;top:0;left:0;right:0;height:var(--header-h);display:flex;align-items:center;gap:10px;padding:0 12px;background:color-mix(in srgb,var(--surface) 92%,transparent);border-bottom:1px solid var(--border);backdrop-filter:blur(8px);z-index:1200}
+.bio-bar-title{flex:1;min-width:0;font:700 13px/1.2 Inter,system-ui,sans-serif;color:var(--text-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bio-bar-btn{flex:none;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:8px;padding:6px 11px;font:700 12.5px Inter,system-ui,sans-serif;cursor:pointer;text-decoration:none}
+.bio-bar-btn:hover{border-color:var(--accent-line);color:var(--accent);background:var(--accent-soft)}
+.page{max-width:900px;margin:0 auto;padding:0 14px}
+@media(min-width:600px){.page{padding:0 8px}}
+/* nagłówek lekcji: spokojne tło z helisą */
+.hero{position:relative;overflow:hidden;isolation:isolate}
+.hero::after{content:"";position:absolute;inset:-20% -10% -20% 45%;z-index:-1;opacity:.13;pointer-events:none;
+background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 240'%3E%3Cg fill='none' stroke-width='5' stroke-linecap='round'%3E%3Cpath d='M20 0C100 30 100 90 20 120S-60 210 20 240' stroke='%231f6fb2'/%3E%3Cpath d='M100 0C20 30 20 90 100 120S180 210 100 240' stroke='%23178a6c'/%3E%3C/g%3E%3Cg stroke='%237a8a99' stroke-width='3'%3E%3Cpath d='M38 18H82M28 42H92M38 66H82M60 90V90M38 138H82M28 162H92M38 186H82'/%3E%3C/g%3E%3C/svg%3E") repeat-y right top/120px 240px;
+animation:bio-drift 60s linear infinite}
+@keyframes bio-drift{to{background-position:right 240px}}
+@media (prefers-reduced-motion:reduce){.hero::after{animation:none}}
+.hero-kicker{color:var(--accent)}
+/* poziomy */
+.level-badge{white-space:nowrap}
+/* figura z biblioteki */
+.bio-fig{margin:16px 0;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--viz-bg);overflow:hidden;box-shadow:var(--sh-sm)}
+.bio-fig figcaption{padding:9px 14px;border-top:1px solid var(--border);background:var(--surface-soft);font-size:13px;line-height:1.5;color:var(--text-soft)}
+.bio-fig figcaption b{color:var(--text);margin-right:4px}
+.bio-fig-body{padding:12px;color:var(--viz-ink)}
+.bio-fig svg{display:block;width:100%;height:auto;max-width:100%}
+.bio-fig svg text{font-family:Inter,system-ui,sans-serif;fill:var(--viz-ink)}
+.bio-err{color:var(--c-error);font-size:13px}
+/* elementy wspólne grafik */
+.bv-tools{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 10px}
+.bv-btn{border:1px solid var(--border-strong);background:var(--surface);color:var(--text);border-radius:8px;padding:6px 11px;font:700 12.5px Inter,system-ui,sans-serif;cursor:pointer;min-height:34px}
+.bv-btn:hover{border-color:var(--accent);color:var(--accent)}
+.bv-btn.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.bv-info{margin-top:10px;padding:10px 12px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:8px;font-size:13.5px;line-height:1.55;min-height:44px}
+.bv-info b{display:block;margin-bottom:2px;color:var(--text)}
+.bv-info.ok{border-left-color:var(--c-basic);background:var(--c-basic-bg)}
+.bv-info.bad{border-left-color:var(--c-error);background:var(--c-error-bg)}
+.bv-hit{cursor:pointer}
+.bv-hit:hover>*:first-child,.bv-hit.sel>*:first-child{filter:drop-shadow(0 0 3px var(--accent-glow))}
+.bv-hit.sel>*:first-child{stroke:var(--accent)!important;stroke-width:3!important}
+.bv-hit:focus-visible{outline:none}.bv-hit:focus-visible>*:first-child{stroke:var(--accent)!important;stroke-width:3!important}
+.bv-legend{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;font-size:12.5px;color:var(--text-soft)}
+.bv-legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+.bv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:10px}
+.bv-tile{border:1px solid var(--border);border-radius:12px;background:var(--viz-bg2);padding:10px;min-width:0}
+.bv-tile h6{margin:0 0 6px;font:800 13px/1.3 Inter,system-ui,sans-serif;color:var(--text)}
+.bv-tile p{margin:6px 0 0;font-size:12.5px;line-height:1.5;color:var(--text-soft)}
+/* łańcuch (flow / zoom) */
+.bv-chain{display:flex;flex-wrap:wrap;align-items:stretch;gap:6px}
+.bv-node{flex:1 1 120px;min-width:0;border:1px solid var(--border);border-radius:12px;background:var(--viz-bg2);padding:9px 10px;text-align:center;font-size:13px;line-height:1.35}
+.bv-node b{display:block;font-size:14px;color:var(--text)}
+.bv-node small{display:block;color:var(--text-muted);font-size:11.5px;margin-top:2px}
+.bv-node svg.bv-ico{max-width:110px;margin:0 auto 4px}.bv-node svg{margin:0 auto}
+.bv-arrow{flex:0 0 auto;align-self:center;color:var(--accent);font:800 18px/1 system-ui}
+.bv-node.k{border-color:var(--accent-line);background:var(--accent-soft)}
+.bv-side{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end}
+.bv-side span{border:1px dashed var(--accent-line);border-radius:99px;padding:3px 10px;font-size:12px;color:var(--accent)}
+@media (max-width:560px){.bv-chain.v{flex-direction:column;gap:2px}.bv-chain.v .bv-arrow{transform:rotate(90deg);margin:-3px auto;font-size:15px}.bv-chain.v .bv-node{flex-basis:auto}.bv-chain.v .bv-node:has(svg.bv-ico){display:grid;grid-template-columns:76px 1fr;grid-template-rows:auto auto;column-gap:10px;text-align:left;align-items:center;padding:6px 10px}.bv-chain.v .bv-node svg.bv-ico{grid-row:1/3;width:76px;margin:0}.bv-chain.v .bv-node b{align-self:end}.bv-chain.v .bv-node small{align-self:start}}
+.bv-grid.c2{grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr))}
+/* sekwencje i trener */
+.bv-seq{display:flex;flex-wrap:wrap;gap:4px;align-items:center;font:800 16px/1 ui-monospace,Consolas,monospace}
+.bv-nt{width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;border-radius:8px;border:2px solid;font:800 16px/1 ui-monospace,Consolas,monospace}
+.bv-nt.A{color:var(--nt-A);background:var(--nt-A-bg);border-color:var(--nt-A)}.bv-nt.T{color:var(--nt-T);background:var(--nt-T-bg);border-color:var(--nt-T)}
+.bv-nt.C{color:var(--nt-C);background:var(--nt-C-bg);border-color:var(--nt-C)}.bv-nt.G{color:var(--nt-G);background:var(--nt-G-bg);border-color:var(--nt-G)}
+.bv-nt.U{color:var(--nt-U);background:var(--nt-U-bg);border-color:var(--nt-U)}
+.bv-nt.q{border-style:dashed;color:var(--text-muted);border-color:var(--border-strong);background:var(--surface)}
+.bv-nt.e{border-color:transparent;color:var(--text-faint);background:transparent}
+.bv-nt.diff{box-shadow:0 0 0 3px var(--c-warn)}
+.bv-end{font:700 12px ui-monospace,Consolas,monospace;color:var(--text-muted);width:20px;text-align:center}
+.bv-hb{width:34px;height:14px;display:inline-flex;flex-direction:column;justify-content:center;gap:2px}
+.bv-hb i{display:block;height:0;border-top:2px dashed var(--hbond);margin:0 6px}
+.bv-pick{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 0}
+.bv-pick .bv-nt{cursor:pointer;width:44px;height:44px;font-size:18px}
+.bv-pick .bv-nt:disabled{opacity:.3;cursor:default}
+.bv-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px}
+/* sortowanie cech */
+.bv-sort{display:flex;flex-direction:column;gap:8px}
+.bv-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;padding:8px 10px;border:1px solid var(--border);border-radius:10px;background:var(--viz-bg2)}
+.bv-row>b{flex:1 1 150px;font-size:14px}
+.bv-row .bv-btn{padding:5px 9px;font-size:12px;min-height:32px}
+.bv-row.ok{border-color:var(--c-basic-line);background:var(--c-basic-bg)}
+.bv-row.bad{border-color:var(--c-error-line);background:var(--c-error-bg)}
+.bv-row .why{flex-basis:100%;font-size:12.5px;color:var(--text-soft)}
+.bv-score{font:700 13px Inter,system-ui;color:var(--text-soft);margin-top:4px}
+/* mity */
+.myth-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:10px;margin:12px 0}
+.myth-head{grid-column:1/-1;font-weight:800;font-size:14px}
+.myth{border:1px solid var(--border);border-radius:12px;background:var(--surface);overflow:hidden}
+.myth p{margin:0;padding:9px 12px;font-size:13.5px;line-height:1.5}
+.myth p span{display:block;font:800 10.5px Inter,system-ui;letter-spacing:.06em;text-transform:uppercase;margin-bottom:2px}
+.myth-x{background:var(--c-error-bg);color:var(--text)}.myth-x span{color:var(--c-error)}
+.myth-ok span{color:var(--c-basic)}
+/* mapa pojęć z listy */
+.bio-tree{margin:12px 0;font-size:14px;overflow-x:auto}
+.bio-tree ul{list-style:none;margin:0;padding-left:18px;position:relative}
+.bio-tree>ul{padding-left:0}
+.bio-tree li{position:relative;padding:3px 0 3px 14px}
+.bio-tree ul ul li::before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px solid var(--accent-line)}
+.bio-tree ul ul li:last-child::before{bottom:auto;height:16px}
+.bio-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
+.bio-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
+.bio-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+@media print{.bio-bar{display:none}body{padding-top:0}.hero::after{display:none}}
+.hero{background:linear-gradient(135deg,var(--surface),var(--accent-soft))}
+@media(min-width:640px){.flashcard-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.level-contest{background:var(--c-warn-bg);color:var(--c-warn)}
+
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#6fcf9f;--accent-dark:#a8e6c6;--accent-soft:#16281f;--accent-line:#2c5541;--accent-glow:rgba(111,207,159,.2);--hl-key:#86d9ad;--hl-key-bg:#1a3226;--hl-formula:#a8e6c6;--hl-formula-bg:#16281f;--viz-ink:#e6ebf0;--viz-mut:#9aa6b2;--viz-line:#34404c;--viz-bg:#19212a;--viz-bg2:#1f2832;}}
+:root[data-theme=dark]{--accent:#6fcf9f;--accent-dark:#a8e6c6;--accent-soft:#16281f;--accent-line:#2c5541;--accent-glow:rgba(111,207,159,.2);--hl-key:#86d9ad;--hl-key-bg:#1a3226;--hl-formula:#a8e6c6;--hl-formula-bg:#16281f;--viz-ink:#e6ebf0;--viz-mut:#9aa6b2;--viz-line:#34404c;--viz-bg:#19212a;--viz-bg2:#1f2832;}
+
+/* krew i grupy krwi (krazenie-obiegi, transfuzja) */
+:root{--blood-o2:#c62828;--blood-o2-bg:#fde8e8;--blood-co2:#1f5fae;--blood-co2-bg:#e7effb;--ag-a:#c2410c;--ag-b:#7c3aed;--ag-d:#0f766e}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--blood-o2:#f87171;--blood-o2-bg:#3a1616;--blood-co2:#7aa7ff;--blood-co2-bg:#14213a;--ag-a:#fb923c;--ag-b:#c4b5fd;--ag-d:#5eead4}}
+:root[data-theme=dark]{--blood-o2:#f87171;--blood-o2-bg:#3a1616;--blood-co2:#7aa7ff;--blood-co2-bg:#14213a;--ag-a:#fb923c;--ag-b:#c4b5fd;--ag-d:#5eead4}
+.kr-el.sel .kr-v{stroke-width:14}.kr-el{transition:opacity .25s}
+.pk .pk-tube.sel>*:first-child{stroke-width:var(--w)!important}.pk svg [data-k]{transition:opacity .25s}
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+<header class="lk-bar"><span class="lk-subj"><i></i>Biologia</span><span class="lk-title">REV01 Organizacja i chemizm życia — powtórka do konkursu</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<main class="page" id="main">
+<section class="hero card"><div class="hero-kicker">REV01 · BIOLOGIA · POWTÓRKA · KONKURS ETAP SZKOLNY</div><h1>Organizacja i chemizm życia — powtórka do konkursu</h1><p class="lead">Pierwsza część zakresu etapu szkolnego: jak zbudowane są organizmy i skąd biorą materię i energię.</p><p class="lead">Komórka jako mapa (jądro = DNA, mitochondrium = ATP, chloroplast = fotosynteza), fotosynteza i oddychanie jako dwa różne procesy oraz dwa obowiązkowe doświadczenia — ze światłem i z drożdżami.</p><div class="tag-row"><span class="level-badge level-basic">E8</span><span class="level-badge level-understand">TRENING</span><span class="level-badge level-exam">KONKURS</span><span class="level-badge level-extra">AMBITNE</span></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button><p class="mini-note">Zakres wg konkursu biologicznego LKO 2025/26 (etap I, pkt I podstawy programowej). Druga część zakresu — REV02 Różnorodność życia. Rozwinięcie komórki i DNA — L010.</p></section>
+<details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#minimum">Minimum E8</a><a class="toc-link" href="#jak-pracowac">0.1. Jak pracować z tą lekcją</a><a class="toc-link" href="#diagnoza">0.2. Diagnoza — test wstępny</a><a class="toc-link" href="#wyklad">0.3. Wykład — od cząsteczki do organizmu</a><a class="toc-link" href="#poziomy">1. Poziomy organizacji organizmów</a><a class="toc-link" href="#mikroskop">2. Mikroskop — jak obserwować</a><a class="toc-link" href="#organelle">3. Budowa komórki — organelle</a><a class="toc-link" href="#typy-komorek">4. Typy komórek</a><a class="toc-link" href="#blona">5. Błona komórkowa i transport</a><a class="toc-link" href="#fotosynteza">6. Fotosynteza</a><a class="toc-link" href="#oddychanie">7. Oddychanie komórkowe i fermentacja</a><a class="toc-link" href="#czynnosci">8. Czynności życiowe organizmów</a><a class="toc-link" href="#doswiadczenia">9. Doświadczenia obowiązkowe</a><a class="toc-link" href="#ciekawostki-plus">9.5. Ciekawostki</a><a class="toc-link" href="#olimpijska">9.6. Warstwa olimpijska — Dla olimpijczyka</a><a class="toc-link" href="#klinika">10. Klinika błędów</a><a class="toc-link" href="#cwiczenia">11. Ćwiczenia</a><a class="toc-link" href="#test">12. Test końcowy</a><a class="toc-link" href="#fiszki">13. Fiszki</a><a class="toc-link" href="#slownik">14. Słownik</a><a class="toc-link" href="#sciaga">15. Ściąga</a><a class="toc-link" href="#s1">Ulepszenie — Claude, 2026-10-11</a></nav></details>
+<section id="minimum" class="minimum-card"><h3>Muszę umieć — 10 punktów</h3>
+<ol>
+<li><strong>Poziomy organizacji:</strong> komórka → tkanka → narząd → układ narządów → organizm. Nie każdy organizm ma tkanki (bakteria — jedna komórka).</li>
+<li><strong>Komórka</strong> to najmniejsza jednostka życia zdolna do czynności życiowych. <strong>Wirusy nie są komórkami.</strong></li>
+<li><strong>Organelle:</strong> jądro — DNA, kieruje pracą komórki; mitochondrium — oddychanie, <strong>ATP</strong>; chloroplast — <strong>fotosynteza</strong>; błona — granica i transport; ściana — ochrona i kształt; wakuola — magazyn, turgor; rybosomy — synteza białek.</li>
+<li><strong>Roślinna</strong> = ściana z celulozy + chloroplasty + duża wakuola; <strong>zwierzęca</strong> = bez ściany i chloroplastów; <strong>grzyba</strong> = ściana z chityny, bez chloroplastów; <strong>bakterii</strong> = bez jądra (nukleoid), bez mitochondriów i chloroplastów.</li>
+<li><strong>Mikroskop:</strong> zaczynamy od najmniejszego powiększenia; powiększenie = okular × obiektyw.</li>
+<li><strong>Fotosynteza:</strong> w uproszczonym równaniu sumarycznym: <strong>6CO₂ + 6H₂O —(energia światła)→ C₆H₁₂O₆ + 6O₂</strong>; u roślin zachodzi w chloroplastach. Równanie pokazuje bilans sumaryczny, nie wszystkie etapy procesu.</li>
+<li><strong>Oddychanie tlenowe:</strong> glukoza + tlen → dwutlenek węgla + woda + energia (ATP); u eukariontów pierwszy etap (glikoliza) zachodzi w cytoplazmie, a dalsze etapy — w mitochondriach; <strong>zachodzi stale</strong>, także u roślin i w dzień.</li>
+<li><strong>Fermentacja</strong> — uzyskiwanie energii z glukozy bez udziału tlenu, z niepełnym rozkładem substratu; drożdże: glukoza → alkohol etylowy + dwutlenek węgla + energia (mniej niż w oddychaniu tlenowym).</li>
+<li><strong>Czynności życiowe:</strong> odżywianie, oddychanie, wydalanie, ruch, reagowanie na bodźce, wzrost i rozwój, rozmnażanie.</li>
+<li><strong>Doświadczenie:</strong> próba kontrolna różni się od badawczej tylko badanym czynnikiem; obserwacja ≠ wniosek.</li>
+</ol>
+</section>
+<div class="layer-legend">
+<div class="layer-row"><span class="dot e8"></span><span><b>Podstawa:</b> poziomy organizacji, organelle i ich funkcje, typy komórek, fotosynteza i oddychanie (substraty, produkty, warunki), czynności życiowe</span></div>
+<div class="layer-row"><span class="dot understand"></span><span><b>Trening:</b> rozpoznawanie typu komórki po cechach, porównanie fotosyntezy i oddychania, błona — dyfuzja i osmoza</span></div>
+<div class="layer-row"><span class="dot contest"></span><span><b>Konkurs:</b> planowanie doświadczeń (światło a fotosynteza, drożdże a CO₂), analiza wyników, wykresy</span></div>
+<div class="layer-row"><span class="dot extra"></span><span><b>Ambitne:</b> składniki chemiczne organizmów, prokarionty a eukarionty, mtDNA i endosymbioza, glikoliza</span></div>
+</div>
+<div id="rdzen" class="core-path">
+<div class="cp-title">Rdzeń lekcji — najpierw to</div>
+<ol>
+<li><strong><a href="#diagnoza">§0.2</a></strong> — diagnoza.</li>
+<li><strong><a href="#poziomy">§1</a>–<a href="#typy-komorek">§4</a></strong> — poziomy organizacji, mikroskop, organelle, typy komórek.</li>
+<li><strong><a href="#fotosynteza">§6</a>–<a href="#oddychanie">§7</a></strong> — fotosynteza, oddychanie, fermentacja; potem <strong><a href="#doswiadczenia">§9</a></strong>.</li>
+<li><strong><a href="#klinika">§10</a></strong> i <strong><a href="#cwiczenia">§11</a></strong>.</li>
+</ol>
+</div>
+<section id="jak-pracowac">
+<div class="part-heading"><span class="part-num">0.1</span> Jak pracować z tą lekcją</div>
+<div class="card card-understand">
+<ul>
+<li><strong>Komórka jako miasto:</strong> jądro — ratusz z biblioteką przepisów (DNA), mitochondria — elektrownie (ATP), chloroplasty — kuchnie słoneczne (fotosynteza), błona — mur z bramami (transport), ściana — dodatkowy zewnętrzny pancerz.</li>
+<li><strong>Fotosynteza i oddychanie zawsze porównuj w tabeli:</strong> co wchodzi, co wychodzi, gdzie, kiedy, skąd energia.</li>
+<li><strong>W zadaniach z doświadczeniem</strong> najpierw wskaż badany czynnik, potem próbę kontrolną i badawczą.</li>
+</ul>
+</div>
+</section>
+<section id="diagnoza">
+<div class="part-heading"><span class="part-num">0.2</span> Diagnoza — test wstępny</div>
+<div class="card card-understand">
+<span class="card-label">Odpowiedz najpierw sam</span>
+<ol>
+<li>Ułóż od najprostszego: narząd, komórka, organizm, tkanka, układ narządów.</li>
+<li>W którym organellum znajduje się większość DNA komórki eukariotycznej?</li>
+<li>Wymień trzy struktury, które ma komórka roślinna, a nie ma zwierzęca.</li>
+<li>Jakie są substraty i produkty fotosyntezy?</li>
+<li>Czy roślina oddycha w dzień?</li>
+<li>Jaki gaz wydzielają drożdże podczas fermentacji i jak go wykryć?</li>
+</ol>
+<details class="answer"><summary>Pokaż klucz</summary>
+<ol>
+<li>Komórka → tkanka → narząd → układ narządów → organizm. 2. W jądrze. 3. Ściana komórkowa (celulozowa), chloroplasty, duża wakuola. 4. Substraty: CO₂ i H₂O (+ energia światła); produkty: glukoza i O₂. 5. Tak — oddychanie zachodzi stale, w dzień i w nocy. 6. Dwutlenek węgla; wodą wapienną (mętnieje).</li>
+</ol>
+</details>
+</div>
+</section>
+<section id="wyklad">
+<div class="part-heading"><span class="part-num">0.3</span> Wykład — od cząsteczki do organizmu</div>
+<div class="card card-understand">
+<span class="card-label">Wykład — jak zbudowane jest życie i skąd bierze energię</span>
+<p>Wszystko, co żyje, zbudowane jest z <strong>komórek</strong> — od jednokomórkowej bakterii po wieloryba. Komórka to najmniejsza jednostka, która sama potrafi wykonywać wszystkie czynności życiowe: odżywiać się, oddychać, wydalać, rozmnażać i reagować na bodźce. W organizmach wielokomórkowych komórki łączą się w coraz wyższe <strong>poziomy organizacji</strong>: komórki tworzą <strong>tkanki</strong>, tkanki — <strong>narządy</strong>, narządy — <strong>układy narządów</strong>, a układy — <strong>organizm</strong>. Każdy poziom ma właściwości, których nie ma poziom niższy: pojedyncza komórka mięśniowa się kurczy, ale dopiero serce pompuje krew.</p>
+<p>Wnętrze komórki to fabryka z wyspecjalizowanymi działami — <strong>organellami</strong>. <strong>Jądro</strong> przechowuje DNA i kieruje pracą komórki. <strong>Mitochondria</strong> to elektrownie: w nich zachodzi <strong>oddychanie komórkowe</strong>, które z glukozy i tlenu uwalnia energię (zmagazynowaną w ATP). Komórki roślin mają dodatkowo <strong>chloroplasty</strong>, w których zachodzi <strong>fotosynteza</strong>: z dwutlenku węgla i wody, dzięki energii światła, powstaje glukoza i tlen. Roślinę od zwierzęcia odróżnia też <strong>ściana komórkowa</strong> z celulozy i duża <strong>wakuola</strong>. Całą komórkę otacza <strong>błona komórkowa</strong>, która decyduje, co wchodzi, a co wychodzi.</p>
+<p>Fotosynteza i oddychanie to dwie strony jednego obiegu. Rośliny wiążą energię Słońca w glukozie i wydzielają tlen; wszystkie organizmy (także rośliny!) rozkładają glukozę w oddychaniu i oddają dwutlenek węgla. Gdy tlenu brakuje, niektóre komórki prowadzą <strong>fermentację</strong> — uzyskują mniej energii, a produktem jest np. kwas mlekowy (mięśnie, bakterie jogurtu) albo alkohol i CO₂ (drożdże).</p>
+<p>Żeby to wszystko zobaczyć, biolog sięga po <strong>mikroskop</strong>: przygotowuje preparat, ustawia najmniejsze powiększenie, ostrość reguluje śrubą, a powiększenie oblicza, mnożąc powiększenie okularu i obiektywu. Na egzaminie z tej lekcji najczęściej wracają: porównanie komórek, równania fotosyntezy i oddychania, planowanie doświadczeń (próba kontrolna!) i czytanie wyników z tabel.</p>
+</div>
+</section>
+<section id="poziomy">
+<div class="part-heading"><span class="part-num">1</span> Poziomy organizacji organizmów <span class="level-badge level-basic">E8</span></div>
+<figure class="lk-fig bio-fig" data-bio-viz="lancuch" data-opt="{&quot;kroki&quot;: &quot;komórka|podstawowa jednostka &gt; tkanka|komórki o podobnej budowie i funkcji &gt; narząd|kilka tkanek, wspólna funkcja &gt; układ narządów|narządy współpracujące &gt; organizm|całość&quot;}"><div class="lk-fig-body bio-fig-body"></div><figcaption><b>Od komórki do organizmu</b> <span>kliknij poziom</span></figcaption></figure>
+<!-- OPIS: Łańcuch pięciu poziomów połączonych strzałkami: komórka (podstawowa jednostka) → tkanka (komórki o podobnej budowie i funkcji) → narząd (kilka tkanek, wspólna funkcja) → układ narządów (narządy współpracujące) → organizm (całość); kliknięcie poziomu pokazuje objaśnienie. Wniosek: każdy wyższy poziom składa się z elementów niższego, a organizm działa dzięki ich współpracy. -->
+<p>Komórki o podobnej budowie i funkcji tworzą <strong>tkanki</strong>, tkanki budują <strong>narządy</strong>, narządy współtworzą <strong>układy narządów</strong>. Atomy i cząsteczki to materia, z której zbudowane są struktury biologiczne, a nie poziomy organizacji organizmu w tym samym sensie. <strong>Nie każdy organizm ma wszystkie poziomy:</strong> bakteria jest jedną komórką, a mchy nie mają typowych tkanek przewodzących roślin naczyniowych.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Komórka wyspecjalizowana</th><th>Przystosowanie</th><th>Funkcja</th></tr></thead>
+<tbody>
+<tr><td>neuron</td><td>rozgałęzione wypustki</td><td>przewodzenie informacji</td></tr>
+<tr><td>komórka mięśniowa</td><td>białka kurczliwe, wydłużony kształt</td><td>skurcz</td></tr>
+<tr><td>erytrocyt ssaka</td><td>kształt dwuwklęsłego krążka, dojrzały bez jądra</td><td>transport tlenu</td></tr>
+<tr><td>włośnik korzeniowy</td><td>duża powierzchnia kontaktu z glebą</td><td>pobieranie wody i soli</td></tr>
+<tr><td>komórka szparkowa</td><td>zmienia kształt</td><td>otwieranie i zamykanie aparatu szparkowego</td></tr>
+</tbody></table></div>
+</section>
+<section id="mikroskop">
+<div class="part-heading"><span class="part-num">2</span> Mikroskop — jak obserwować <span class="level-badge level-basic">E8</span></div>
+<div class="card card-core">
+<span class="card-label">Procedura obserwacji</span>
+<ol>
+<li>Przygotuj preparat (np. skórka cebuli w kropli wody pod szkiełkiem nakrywkowym).</li>
+<li>Umieść go na stoliku, oświetl.</li>
+<li><strong>Zacznij od najmniejszego powiększenia</strong>, ustaw ostrość śrubą makrometryczną — używaj jej <strong>tylko przy małym powiększeniu</strong>, żeby nie zgnieść preparatu obiektywem.</li>
+<li>Dopiero potem zwiększ powiększenie i popraw ostrość śrubą mikrometryczną.</li>
+<li>Wykonaj <strong>rysunek biologiczny</strong>: czytelny, uproszczony, z podpisami tylko tych struktur, które naprawdę widzisz.</li>
+<li>Zapisz obserwację i wniosek osobno.</li>
+</ol>
+</div>
+<p><strong>Powiększenie mikroskopu</strong> = powiększenie okularu × powiększenie obiektywu (np. 10× · 40× = <strong>400×</strong>). <strong>Rozdzielczość</strong> to zdolność rozróżniania dwóch blisko położonych punktów — większe powiększenie nie zawsze daje więcej szczegółów.</p>
+<div class="card card-warning">
+<span class="card-label">Zasada interpretacji</span>
+<p>Brak widoczności struktury pod mikroskopem <strong>nie oznacza</strong>, że jej nie ma — może być za mała, niewybarwiona albo poza płaszczyzną ostrości.</p>
+</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Preparat</th><th>Co zobaczysz</th><th>Wniosek</th></tr></thead>
+<tbody>
+<tr><td>liść moczarki (Elodei)</td><td>zielone ziarna w komórkach</td><td>chloroplasty</td></tr>
+<tr><td>skórka cebuli</td><td>wyraźne granice komórek, brak zieleni</td><td>ściana komórkowa; ta tkanka nie ma chloroplastów — cebula nadal jest rośliną</td></tr>
+<tr><td>wymaz z policzka</td><td>komórki bez wyraźnej ściany, z jądrem</td><td>komórki zwierzęce</td></tr>
+</tbody></table></div>
+<figure class="lk-fig bio-fig" data-bio-viz="mikroskop-model" data-opt="{}"><div class="lk-fig-body bio-fig-body"></div><figcaption><b>Obraz z mikroskopu a model szkolny</b> <span>ta sama komórka liścia moczarki</span></figcaption></figure>
+<!-- OPIS: Okrągłe pole widzenia mikroskopu świetlnego (ok. ×400, bez barwienia): jedna prostokątna komórka liścia moczarki z grubą ścianą komórkową, zielone owalne chloroplasty rozmieszczone przy ścianach, jasny pusty środek — wakuola; jądro słabo widoczne (to obraz przykładowy — widoczność jądra zależy od preparatu, barwienia i płaszczyzny ostrości). Przyciski: „model szkolny” pokazuje tę samą komórkę jako uproszczony schemat z podpisami (ściana, błona, cytoplazma, jądro, chloroplasty, wakuola), „zabarw preparat” — jądro po barwieniu (np. błękitem metylenowym; dobór barwnika zależy od preparatu) staje się ciemniejszą plamką. Panel pod obrazem mówi, czego w mikroskopie świetlnym nie widać (rybosomy, szczegóły mitochondriów, błona obok ściany). Wniosek: w mikroskopie świetlnym widać tylko część struktur (ściana, chloroplasty, czasem jądro); model szkolny jest uproszczeniem, a nie zdjęciem — nie wszystko, co jest na modelu, zobaczysz w preparacie. -->
+</section>
+<section id="organelle">
+<div class="part-heading"><span class="part-num">3</span> Budowa komórki — organelle <span class="level-badge level-basic">E8</span></div>
+<div class="table-wrap"><table>
+<thead><tr><th>Struktura</th><th>Funkcja</th><th>Występuje u</th></tr></thead>
+<tbody>
+<tr><td><strong>jądro</strong></td><td>przechowuje DNA, kieruje pracą komórki</td><td>eukarionty (rośliny, zwierzęta, grzyby, protisty)</td></tr>
+<tr><td><strong>mitochondrium</strong></td><td>oddychanie komórkowe — wytwarzanie <strong>ATP</strong></td><td>prawie wszystkie eukarionty (także rośliny!)</td></tr>
+<tr><td><strong>chloroplast</strong></td><td><strong>fotosynteza</strong> (zawiera chlorofil)</td><td>rośliny, glony</td></tr>
+<tr><td><strong>błona komórkowa</strong></td><td>granica komórki, kontrola transportu</td><td>wszystkie komórki</td></tr>
+<tr><td><strong>ściana komórkowa</strong></td><td>ochrona, kształt, sztywność</td><td>rośliny (celuloza), grzyby (chityna), bakterie (peptydoglikan, zwany mureiną)</td></tr>
+<tr><td><strong>wakuola</strong></td><td>magazyn wody i substancji, <strong>turgor</strong></td><td>rośliny (duża, centralna), zwierzęta (drobne pęcherzyki i małe wakuole albo brak)</td></tr>
+<tr><td><strong>rybosomy</strong></td><td>synteza białek</td><td>wszystkie komórki (nie mają błony); <span class="level-badge level-extra">AMBITNE</span> także w mitochondriach i chloroplastach</td></tr>
+<tr><td><strong>cytoplazma</strong></td><td>środowisko przemian, w niej organelle</td><td>wszystkie komórki</td></tr>
+</tbody></table></div>
+<p><strong>Skojarzenia:</strong> jądro = biblioteka (DNA) · mitochondrium = elektrownia (ATP) · chloroplast = zielony (fotosynteza) · błona = płot z bramą · rybosom = robi białka · ściana ≠ zawsze roślina.</p>
+<div class="card card-extra">
+<span class="card-label">Ambitnie: skąd mitochondria i chloroplasty?</span>
+<p>Mitochondria i chloroplasty mają <strong>własne DNA</strong> (mtDNA, cpDNA) i rybosomy podobne do bakteryjnych. To argument za <strong>teorią endosymbiozy</strong>: te organelle pochodzą od dawnych bakterii, które zamieszkały w innej komórce. Człowiek dziedziczy mtDNA zwykle <strong>po matce</strong>.</p>
+</div>
+</section>
+<section id="typy-komorek">
+<div class="part-heading"><span class="part-num">4</span> Typy komórek <span class="level-badge level-basic">E8</span></div>
+<div class="table-wrap"><table>
+<thead><tr><th>Cecha</th><th>Bakteryjna</th><th>Roślinna</th><th>Zwierzęca</th><th>Grzyba</th></tr></thead>
+<tbody>
+<tr><td>jądro</td><td><strong>brak</strong> (nukleoid)</td><td>jest</td><td>jest</td><td>jest</td></tr>
+<tr><td>ściana komórkowa</td><td>jest (mureina)</td><td>jest (<strong>celuloza</strong>)</td><td><strong>brak</strong></td><td>jest (<strong>chityna</strong>)</td></tr>
+<tr><td>chloroplasty</td><td>brak</td><td>są (w zielonych częściach)</td><td>brak</td><td>brak</td></tr>
+<tr><td>mitochondria</td><td>brak</td><td>są</td><td>są</td><td>są</td></tr>
+<tr><td>wakuola</td><td>brak typowej wakuoli eukariotycznej</td><td>duża</td><td>małe lub brak</td><td>są</td></tr>
+<tr><td>rybosomy</td><td>są</td><td>są</td><td>są</td><td>są</td></tr>
+</tbody></table></div>
+<div class="card card-core">
+<span class="card-label">Typ komórki w 10 sekund</span>
+<ol>
+<li>Brak jądra → <strong>bakteria</strong> (lub dojrzały erytrocyt ssaka w zadaniu o krwi).</li>
+<li>Jest chloroplast → <strong>roślina</strong> (lub glon).</li>
+<li>Ściana bez chloroplastu → <strong>grzyb</strong> albo niezielona tkanka rośliny (np. skórka cebuli, korzeń) — rozstrzyga skład ściany.</li>
+<li>Brak ściany i chloroplastu, jest jądro → <strong>zwierzę</strong>.</li>
+</ol>
+</div>
+<p><strong>Prokarionty</strong> (bakterie, sinice) — bez jądra i (w ujęciu szkolnym) bez organelli błonowych. <strong>Eukarionty</strong> (protisty, grzyby, rośliny, zwierzęta) — z jądrem. Sinice prowadzą fotosyntezę, choć nie mają chloroplastów.</p>
+<figure class="lk-fig bio-fig" data-bio-viz="komorka-nakladki" data-opt="{&quot;start&quot;: &quot;roslinna&quot;}"><div class="lk-fig-body bio-fig-body"></div><figcaption><b>Typy komórek: wspólny rdzeń i nakładki</b> <span>przełączaj typ komórki i warstwy</span></figcaption></figure>
+<!-- OPIS: Jedna komórka zbudowana z warstw. Wspólny rdzeń każdej komórki: błona komórkowa, cytoplazma, rybosomy. Przyciski dodają nakładki typowe dla danego typu: bakteria (ściana, nukleoid, plazmid, bez jądra), komórka zwierzęca (jądro, mitochondria, bez ściany), roślinna (jądro, mitochondria, chloroplasty, duża wakuola, ściana z celulozy), grzyba (jądro, mitochondria, ściana z chityny, bez chloroplastów). Wniosek: typ komórki rozpoznajemy po obecności lub braku jądra, ściany (i jej budulca), chloroplastów i dużej wakuoli — rdzeń jest wspólny dla wszystkich. -->
+</section>
+<section id="blona">
+<div class="part-heading"><span class="part-num">5</span> Błona komórkowa i transport <span class="level-badge level-understand">TRENING</span></div>
+<p>Błona oddziela komórkę od otoczenia, ale nie jest szczelna — jest <strong>selektywnie przepuszczalna</strong> (jedne substancje przechodzą łatwiej, inne trudniej).</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Proces</th><th>Co to jest</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td><strong>dyfuzja</strong></td><td>samorzutny ruch <strong>netto</strong> cząsteczek z miejsca o większym stężeniu do miejsca o mniejszym</td><td>tlen z płuc do krwi</td></tr>
+<tr><td><strong>osmoza</strong></td><td>ruch netto <strong>wody</strong> przez błonę selektywnie przepuszczalną — w uproszczeniu szkolnym w stronę roztworu bardziej stężonego</td><td>jędrne komórki roślin (turgor); więdnięcie przy braku wody</td></tr>
+<tr><td>transport z udziałem energii</td><td>przenoszenie substancji wbrew różnicy stężeń, przez białka błonowe, z użyciem ATP</td><td>pobieranie soli przez korzeń</td></tr>
+</tbody></table></div>
+<figure class="lk-fig bio-fig" data-bio-viz="transport-blona" data-opt="{}"><div class="lk-fig-body bio-fig-body"></div><figcaption><b>Przekrój błony: cztery sposoby transportu</b> <span>kliknij sposób transportu</span></figcaption></figure>
+<!-- OPIS: Cztery wąskie panele przekroju błony (dwie warstwy fosfolipidów: żółte główki i ogonki), u góry zewnątrz komórki, na dole wnętrze; kropki oznaczają cząsteczki, ich zagęszczenie — stężenie. Dyfuzja prosta: małe cząsteczki przechodzą przez błonę z miejsca o większym stężeniu do mniejszego. Dyfuzja ułatwiona: cząsteczki glukozy przechodzą przez białkowy kanał, też zgodnie ze stężeniem. Transport aktywny: niebieska pompa białkowa przenosi jony wbrew stężeniu, zużywając ATP. Osmoza: przez błonę przechodzi woda w stronę roztworu bardziej stężonego. Kliknięcie panelu pokazuje opis i tabelę porównawczą. Wniosek: spośród pokazanych mechanizmów tylko transport aktywny wymaga energii (energii wymaga też niepokazany transport pęcherzykowy); dyfuzja i osmoza zachodzą samorzutnie zgodnie z różnicą stężeń. -->
+<nie-myl>
+<p><strong>Błona ≠ ściana.</strong> Błona jest selektywnie przepuszczalna i ma ją każda komórka; ściana daje ochronę i sztywność, a mają ją tylko rośliny, grzyby i bakterie. <strong>Dyfuzja ≠ osmoza:</strong> osmoza dotyczy tylko ruchu wody przez błonę.</p>
+</nie-myl>
+<div class="card card-understand">
+<span class="card-label">W skrócie — jak substancje przechodzą przez błonę</span>
+<p><strong>Dyfuzja</strong> — cząsteczki przemieszczają się samorzutnie z miejsca, gdzie jest ich więcej, tam, gdzie jest ich mniej (np. tlen do komórki). <strong>Osmoza</strong> — szczególny przypadek: przez błonę półprzepuszczalną przechodzi <strong>woda</strong>, z roztworu rozcieńczonego do stężonego. Dlatego komórka roślinna w stężonej solance traci wodę (plazmoliza), a erytrocyt w czystej wodzie pęcznieje i może pęknąć. <strong>Transport aktywny</strong> pozwala przenosić substancje „pod prąd” — wbrew różnicy stężeń, ale kosztem energii z ATP.</p>
+</div>
+</section>
+<section id="fotosynteza">
+<div class="part-heading"><span class="part-num">6</span> Fotosynteza <span class="level-badge level-basic">E8</span></div>
+<regula>
+<p><strong>Fotosynteza tlenowa u roślin</strong> — proces, w którym z CO₂ i wody powstają związki organiczne dzięki energii światła. W szkolnym równaniu sumarycznym zapisujemy: <strong>6CO₂ + 6H₂O —(światło)→ C₆H₁₂O₆ + 6O₂</strong>. U roślin zachodzi w chloroplastach. <span class="level-badge level-exam">KONKURS</span> W bardziej zaawansowanym ujęciu tlen wydzielany w fotosyntezie pochodzi z wody (nie wynika to z uproszczonego równania); organizmy fotosyntetyzujące nie wszystkie wykorzystują ten sam mechanizm.</p>
+</regula>
+<div class="formula-lg">6CO₂ + 6H₂O —(światło, chlorofil)→ C₆H₁₂O₆ + 6O₂</div>
+<p>Słownie: dwutlenek węgla + woda → glukoza + tlen. To zapis <strong>sumaryczny</strong> — w rzeczywistości proces ma wiele etapów.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Element</th><th>Skąd / dokąd</th></tr></thead>
+<tbody>
+<tr><td>CO₂</td><td>z powietrza przez <strong>aparaty szparkowe</strong> liścia</td></tr>
+<tr><td>H₂O</td><td>z gleby przez korzenie (włośniki), drewnem do liści</td></tr>
+<tr><td>światło</td><td>energia; pochłania ją chlorofil</td></tr>
+<tr><td>glukoza</td><td>budulec (celuloza ściany), materiał zapasowy (skrobia), „paliwo” do oddychania — może być przekształcana i magazynowana, nie tylko od razu zużywana; cukry są rozprowadzane łykiem <strong>głównie jako sacharoza</strong></td></tr>
+<tr><td>O₂</td><td>uwalniany do atmosfery przez aparaty szparkowe; częściowo zużywany w oddychaniu</td></tr>
+</tbody></table></div>
+<p><strong>Czynniki wpływające na intensywność fotosyntezy:</strong> natężenie światła, stężenie CO₂, temperatura, dostęp do wody. Zbyt wysoka temperatura obniża intensywność procesu.</p>
+<figure class="lk-fig bio-fig" data-bio-viz="fotosynteza-oddychanie" data-opt="{}"><div class="lk-fig-body bio-fig-body"></div><figcaption><b>Fotosynteza i oddychanie w jednej komórce liścia</b> <span>przesuń suwak światła i obserwuj wymianę gazów</span></figcaption></figure>
+<!-- OPIS: Owalna komórka liścia; w środku zielony chloroplast z tylakoidami i czerwonawe mitochondrium z pofałdowaną błoną. Z lewej słońce, którego jasność zmienia suwak. Strzałki: glukoza płynie z chloroplastu do mitochondrium, tlen z chloroplastu do mitochondrium; po prawej strzałki wymiany gazów z otoczeniem, których grubość zależy od bilansu. W ciemności i przy świetle poniżej punktu kompensacyjnego liść netto pobiera O₂ i oddaje CO₂, w punkcie kompensacyjnym (równowagi) wymiana wynosi około zera, przy silnym świetle liść pobiera CO₂ i oddaje O₂. Wniosek: oddychanie zachodzi stale, a fotosynteza tylko przy świetle — to, czy liść wydziela tlen, zależy od przewagi jednego procesu nad drugim. -->
+<div class="card card-understand">
+<span class="card-label">W skrócie — fotosynteza i oddychanie jako lustrzane odbicia</span>
+<p>Zapisz oba równania słownie, jedno pod drugim. <strong>Fotosynteza:</strong> dwutlenek węgla + woda → (światło, chlorofil) → glukoza + tlen. <strong>Oddychanie tlenowe:</strong> glukoza + tlen → dwutlenek węgla + woda + energia. Substraty jednego są produktami drugiego. Różnice, o które pyta egzamin: fotosynteza zachodzi tylko w komórkach z chloroplastami i tylko w świetle, energię <strong>pobiera</strong>; oddychanie zachodzi we wszystkich żywych komórkach, w dzień i w nocy, energię <strong>uwalnia</strong>. Pułapka: „rośliny oddychają tylko w nocy” — nie, oddychają cały czas, tylko w dzień przeważa fotosynteza.</p>
+</div>
+</section>
+<section id="oddychanie">
+<div class="part-heading"><span class="part-num">7</span> Oddychanie komórkowe i fermentacja <span class="level-badge level-basic">E8</span></div>
+<regula>
+<p><strong>Oddychanie komórkowe</strong> — rozkład związków organicznych (głównie glukozy) w komórkach, w którym energia jest uwalniana i częściowo magazynowana w <strong>ATP</strong> — bezpośrednim nośniku energii używanej przez komórkę (nie długoterminowym magazynie). <strong>Oddychanie tlenowe</strong> zachodzi z udziałem tlenu, u eukariontów głównie w <strong>mitochondriach</strong> (pierwszy etap — glikoliza — w cytoplazmie).</p>
+</regula>
+<div class="formula-lg">C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energia (ATP)</div>
+<p><strong>Fermentacja</strong> — beztlenowy rozkład glukozy; uwalnia <strong>znacznie mniej</strong> energii niż oddychanie tlenowe. <span class="level-badge level-extra">AMBITNE</span> Fermentacja odtwarza NAD⁺ potrzebny do dalszego przebiegu glikolizy — dzięki temu komórka może uzyskiwać ATP bez tlenu.
+- <strong>alkoholowa</strong> (drożdże): glukoza → alkohol etylowy + dwutlenek węgla + energia — pieczenie chleba (CO₂ spulchnia ciasto), produkcja wina;
+- <strong>mlekowa</strong> (bakterie mlekowe, a także — krótkotrwale, przy niedoborze tlenu podczas intensywnego wysiłku — mięśnie człowieka): glukoza → kwas mlekowy + energia — jogurt, kefir, kiszonki.</p>
+<figure class="lk-fig bio-fig" data-bio-viz="energia-glukozy" data-opt="{}"><div class="lk-fig-body bio-fig-body"></div><figcaption><b>Ile energii z jednej cząsteczki glukozy?</b> <span>oddychanie tlenowe a fermentacja</span></figcaption></figure>
+<!-- OPIS: Trzy poziome słupki: oddychanie tlenowe (czerwony, długi — ok. 30–32 ATP; starsze podręczniki podają 38 — to historyczna wartość teoretyczna), fermentacja alkoholowa (brązowy, krótki — ok. 2 ATP) i fermentacja mlekowa (niebieski, krótki — ok. 2 ATP); wartości szkolne, orientacyjne. Przyciski wybierają proces, a pod spodem pojawiają się warunki (z tlenem / bez tlenu), miejsce w komórce, produkty i przykłady organizmów. Wniosek: oddychanie tlenowe rozkłada glukozę do końca (CO₂ i H₂O) i daje wielokrotnie więcej energii niż fermentacja, w której część energii zostaje w alkoholu lub kwasie mlekowym. -->
+<div class="card card-understand">
+<span class="card-label">Bilans energetyczny oddychania</span>
+<p>Starsze podręczniki podają ok. <strong>38 ATP</strong> z jednej cząsteczki glukozy; współczesne obliczenia dla komórek eukariotycznych — ok. <strong>30–32 ATP</strong> (wynik zależy od organizmu i sposobu przenoszenia produktów glikolizy do mitochondrium). Na E8 wystarczy wiedzieć, że oddychanie tlenowe daje <strong>wielokrotnie więcej</strong> ATP niż fermentacja (ok. 2 ATP).</p>
+</div>
+<div class="table-wrap"><table>
+<thead><tr><th>Cecha</th><th>Fotosynteza</th><th>Oddychanie tlenowe</th></tr></thead>
+<tbody>
+<tr><td>sens</td><td><strong>wytwarza</strong> związki organiczne (magazynuje energię)</td><td><strong>rozkłada</strong> związki organiczne (uwalnia energię)</td></tr>
+<tr><td>substraty</td><td>CO₂, H₂O</td><td>glukoza, O₂</td></tr>
+<tr><td>produkty</td><td>glukoza, O₂</td><td>CO₂, H₂O, ATP</td></tr>
+<tr><td>źródło energii</td><td>światło</td><td>energia chemiczna glukozy</td></tr>
+<tr><td>miejsce (rośliny)</td><td>chloroplasty</td><td>cytoplazma + mitochondria</td></tr>
+<tr><td>kiedy</td><td>tylko przy świetle</td><td><strong>stale</strong>, w dzień i w nocy</td></tr>
+<tr><td>kto</td><td>organizmy samożywne</td><td>prawie wszystkie organizmy</td></tr>
+</tbody></table></div>
+<div class="card card-warning">
+<span class="card-label">Pułapka</span>
+<p>„Roślina w dzień fotosyntetyzuje, a w nocy oddycha” — <strong>błąd</strong>. Roślina oddycha <strong>przez całą dobę</strong>; w dzień przy świetle fotosynteza jest zwykle intensywniejsza niż oddychanie, dlatego roślina netto wydziela tlen.</p>
+</div>
+</section>
+<section id="czynnosci">
+<div class="part-heading"><span class="part-num">8</span> Czynności życiowe organizmów <span class="level-badge level-basic">E8</span></div>
+<div class="table-wrap"><table>
+<thead><tr><th>Czynność</th><th>Co oznacza</th><th>Przykład</th></tr></thead>
+<tbody>
+<tr><td>odżywianie</td><td>pobieranie lub wytwarzanie pokarmu: <strong>samożywne</strong> (fotosynteza) i <strong>cudzożywne</strong></td><td>roślina — fotosynteza; lis — drapieżnik</td></tr>
+<tr><td>oddychanie</td><td>uwalnianie energii ze związków organicznych</td><td>oddychanie tlenowe, fermentacja</td></tr>
+<tr><td>wydalanie</td><td>usuwanie zbędnych i szkodliwych produktów przemiany materii</td><td>CO₂, mocznik</td></tr>
+<tr><td>ruch</td><td>zmiana położenia ciała lub jego części</td><td>pływanie ryby; ruchy liści ku światłu</td></tr>
+<tr><td>reagowanie na bodźce</td><td>odbieranie zmian otoczenia i odpowiedź na nie</td><td>ucieczka zwierzęcia, wzrost rośliny ku światłu</td></tr>
+<tr><td>wzrost i rozwój</td><td>zwiększanie rozmiarów i zmiany budowy</td><td>kiełkowanie nasiona, przeobrażenie owada</td></tr>
+<tr><td>rozmnażanie</td><td>wydawanie potomstwa: <strong>płciowe</strong> i <strong>bezpłciowe</strong></td><td>nasiona; rozłogi truskawki, podział bakterii</td></tr>
+</tbody></table></div>
+<div class="card card-extra">
+<span class="card-label">Chemizm życia — z czego zbudowane są organizmy</span>
+<p>Najważniejsze pierwiastki: <strong>C, H, O, N</strong> (oraz P, S). Związki: <strong>woda</strong> (najwięcej — rozpuszczalnik, środowisko reakcji, transport), <strong>sole mineralne</strong> (budulec kości — wapń, fosfor; przewodzenie impulsów), <strong>cukry</strong> (energia: glukoza; zapas: skrobia u roślin, glikogen u zwierząt i grzybów; budulec: celuloza), <strong>tłuszcze</strong> (zapas energii, izolacja, błony), <strong>białka</strong> (budulec, enzymy, transport — hemoglobina, przeciwciała), <strong>kwasy nukleinowe</strong> (DNA, RNA — informacja genetyczna).</p>
+</div>
+</section>
+<section id="doswiadczenia">
+<div class="part-heading"><span class="part-num">9</span> Doświadczenia obowiązkowe <span class="level-badge level-exam">KONKURS</span></div>
+<div class="exp-card"><h5>Doświadczenie 1 — Wpływ światła na intensywność fotosyntezy (moczarka kanadyjska)</h5><div class="exp-grid"><b>Problem</b><span>Czy natężenie światła wpływa na intensywność fotosyntezy moczarki kanadyjskiej?</span><b>Hipoteza</b><span>Im silniejsze oświetlenie, tym intensywniej zachodzi fotosynteza (wydziela się więcej pęcherzyków tlenu).</span><b>Sprzęt</b><span>dwie jednakowe zlewki z wodą (najlepiej z dodatkiem wodorowęglanu sodu jako źródła CO₂), dwie jednakowe gałązki moczarki, lampa, zegarek.</span><b>Przebieg</b><span>Zlewkę A (próba kontrolna) ustawiamy blisko lampy, zlewkę B (próba badawcza) — w zacienionym miejscu. Lampa grzeje, więc temperaturę wody w obu zlewkach <strong>mierzymy termometrem i utrzymujemy jednakową</strong> (np. przegroda z wodą między lampą a zlewką albo lampa LED). Po kilku minutach liczymy pęcherzyki gazu wydzielane z przeciętej łodyżki w ciągu 1 minuty (kilka powtórzeń).</span><b>Obserwacja</b><span>Z moczarki silnie oświetlonej wydobywa się znacznie więcej pęcherzyków gazu niż z zacienionej.</span><b>Wniosek</b><span>Natężenie światła wpływa na intensywność fotosyntezy — przy silniejszym świetle fotosynteza zachodzi intensywniej. Liczba pęcherzyków jest wskaźnikiem <strong>orientacyjnym</strong> (pęcherzyki mają różną wielkość). (Gaz to głównie tlen — tlen podtrzymuje spalanie, więc tlące się łuczywo może ponownie się zapalić; przy małej ilości gazu wynik bywa niepewny.)</span><b>BHP</b><span>ostrożnie z lampą (nagrzewa się) i wodą przy urządzeniach elektrycznych.</span></div></div>
+<div class="exp-card"><h5>Doświadczenie 2 — Drożdże wydzielają dwutlenek węgla podczas fermentacji</h5><div class="exp-grid"><b>Problem</b><span>Czy drożdże podczas fermentacji wydzielają dwutlenek węgla?</span><b>Hipoteza</b><span>Drożdże w roztworze cukru wydzielają CO₂.</span><b>Sprzęt</b><span>dwie kolby, roztwór glukozy (cukru), drożdże, korki z rurkami, dwie probówki z wodą wapienną, ciepła woda.</span><b>Przebieg</b><span>Do kolby A (próba badawcza) wlewamy roztwór cukru z drożdżami, do kolby B (próba kontrolna) — sam roztwór cukru bez drożdży. Kolby zamykamy <strong>szczelnie</strong> korkami z rurkami, a gaz z każdej kolby odprowadzamy do osobnej probówki z wodą wapienną. Kolby stoją w tej samej, ciepłej temperaturze.</span><b>Obserwacja</b><span>W kolbie A pojawia się piana i pęcherzyki gazu, woda wapienna połączona z kolbą A mętnieje; w zestawie B zmian nie ma.</span><b>Wniosek</b><span>Drożdże w procesie fermentacji alkoholowej wydzielają dwutlenek węgla. Dowodem jest zmętnienie wody wapiennej — sama piana nie dowodzi obecności CO₂.</span><b>BHP</b><span>zwykłe zasady pracy ze szkłem; woda wapienna drażni oczy — okulary.</span></div></div>
+<div class="card card-understand">
+<span class="card-label">Jak zapisać doświadczenie w zadaniu</span>
+<ul>
+<li><strong>Problem</strong> — pytanie; <strong>hipoteza</strong> — przypuszczalna odpowiedź, którą da się sprawdzić.</li>
+<li><strong>Próba badawcza</strong> — z badanym czynnikiem zmienionym; <strong>kontrolna</strong> — identyczna poza tym czynnikiem.</li>
+<li><strong>Obserwacja</strong> to opis tego, co widać („pęcherzyki gazu”, „woda wapienna mętnieje”); <strong>wniosek</strong> — co z tego wynika („wydziela się CO₂”).</li>
+<li>Wynik jest wiarygodniejszy przy <strong>powtórzeniach</strong> i większej liczbie organizmów.</li>
+</ul>
+</div>
+<figure class="lk-fig bio-fig" data-bio-viz="proba-kontrolna" data-opt="{}"><div class="lk-fig-body bio-fig-body"></div><figcaption><b>Zaplanuj doświadczenie: próba badawcza i kontrolna</b> <span>zmieniaj warunki w obu próbach</span></figcaption></figure>
+<!-- OPIS: Tabela z dwiema kolumnami — próba badawcza i próba kontrolna — i wierszami czynników (dla moczarki: światło, temperatura wody, NaHCO₃, gałązka; dla drożdży: drożdże, cukier, temperatura, objętość). Kliknięcie przełącza wartość czynnika w danej próbie; wiersze, w których próby się różnią, są podświetlone na pomarańczowo. Pod tabelą ocena planu: próby identyczne, różnica w więcej niż jednym czynniku, różnica w złym czynniku albo dobry plan z nazwaną zmienną niezależną i zależną. Wniosek: próby muszą różnić się tylko badanym czynnikiem, a wszystkie inne warunki mają być jednakowe. -->
+</section>
+<section id="ciekawostki-plus">
+<div class="part-heading"><span class="part-num">9.5</span> Ciekawostki</div>
+<div class="card card-extra">
+<span class="card-label">Komórkę „zobaczył” Hooke w korku</span>
+<p>Słowo <strong>komórka</strong> (<em>cell</em>) wprowadził w 1665 r. Robert Hooke, oglądając pod prymitywnym mikroskopem cienki plasterek korka — puste przestrzenie skojarzyły mu się z celami w klasztorze. W rzeczywistości widział tylko ściany martwych komórek.</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Mitochondria mają własne DNA</span>
+<p>Mitochondria i chloroplasty mają własne DNA i rybosomy, podobne do bakteryjnych. To jeden z dowodów, że powstały z bakterii, które dawno temu zamieszkały wewnątrz większej komórki (teoria endosymbiozy).</p>
+</div>
+<div class="card card-extra">
+<span class="card-label">Tlen z oceanów</span>
+<p>Mniej więcej połowa tlenu wytwarzanego na Ziemi w fotosyntezie pochodzi nie z lasów, lecz z mikroskopijnych glonów i sinic w oceanach (fitoplanktonu). (orientacyjnie)</p>
+</div>
+</section>
+<section id="olimpijska">
+<div class="part-heading"><span class="part-num">9.6</span> Warstwa olimpijska — Dla olimpijczyka</div>
+<p><em>(Warstwa ponad E8 — do zweryfikowania z wymaganiami konkretnego konkursu.)</em></p>
+<div class="card card-understand">
+<span class="card-label">Dla olimpijczyka — powtórka z haczykiem</span>
+<p><strong>Bilans gazów rośliny</strong> zależy od natężenia światła: w ciemności roślina tylko oddycha (pobiera O₂, wydziela CO₂), przy słabym świetle oba procesy mogą się równoważyć (<strong>punkt kompensacyjny</strong>), przy silnym przeważa fotosynteza. <strong>Powiększenie mikroskopu</strong> to iloczyn powiększeń okularu i obiektywu (10× · 40× = 400×). <strong>Fermentacja a oddychanie</strong> — fermentacja nie wymaga tlenu i daje znacznie mniej energii z jednej cząsteczki glukozy. <strong>Komórki bez jądra</strong> — dojrzałe erytrocyty ssaków i komórki rurek sitowych roślin.</p>
+</div>
+<details class="adv"><summary>Zadanie O1 (3 pkt) — powiększenie <span class="adv-tag">poziom ambitny (konkurs)</span></summary><div class="adv-body">
+<p>Okular ma powiększenie 10×, a obiektywy: 4×, 10×, 40×. a) Podaj wszystkie możliwe powiększenia. b) Przy którym zobaczysz najmniejszy fragment preparatu? c) Od którego obiektywu zaczynasz obserwację i dlaczego?</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) 40×, 100×, 400× (1 pkt); b) przy 400× — największe powiększenie, najmniejsze pole widzenia (1 pkt); c) od najmniejszego (4×) — łatwiej odnaleźć obiekt i ustawić ostrość (1 pkt).</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie O2 (4 pkt) — doświadczenie z moczarką <span class="adv-tag">poziom ambitny (konkurs)</span></summary><div class="adv-body">
+<p>Moczarkę kanadyjską umieszczono w wodzie i liczono pęcherzyki gazu wydzielane w ciągu minuty przy lampie ustawionej w odległości 10, 20 i 40 cm. Otrzymano: 30, 15, 6 pęcherzyków. a) Podaj zmienną niezależną i zależną. b) Jaki gaz tworzy pęcherzyki? c) Sformułuj wniosek. d) Zaproponuj próbę kontrolną.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) niezależna: odległość lampy (natężenie światła); zależna: liczba pęcherzyków na minutę (1 pkt); b) tlen (1 pkt); c) im silniejsze oświetlenie (bliżej lampy), tym intensywniejsza fotosynteza (1 pkt); d) np. zestaw w ciemności albo z ugotowaną (martwą) moczarką (1 pkt).</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie O3 (3 pkt) — osmoza <span class="adv-tag">poziom ambitny (konkurs)</span></summary><div class="adv-body">
+<p>Plasterki ziemniaka włożono do: A — wody destylowanej, B — 0,9% roztworu soli, C — 10% roztworu soli. Po godzinie zważono je. Przewidź zmianę masy w każdej próbie i wyjaśnij.</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>A — masa wzrośnie (woda wnika do komórek, roztwór zewnętrzny bardziej rozcieńczony); B — niewielka zmiana (stężenie zbliżone do wnętrza komórek — orientacyjnie); C — masa zmaleje (woda wypływa z komórek do roztworu stężonego). Po 1 pkt.</p>
+</details>
+</div></details>
+<details class="adv"><summary>Zadanie O4 (3 pkt) — fermentacja <span class="adv-tag">poziom ambitny (konkurs)</span></summary><div class="adv-body">
+<p>Do dwóch kolb z roztworem cukru dodano drożdże; kolbę I zamknięto balonikiem, kolbę II pozostawiono z samym roztworem cukru (bez drożdży). Po kilku godzinach balonik na kolbie I się napełnił. a) Jaki gaz go napełnił? b) Która kolba to próba kontrolna? c) Jaki drugi produkt powstał w kolbie I?</p>
+<details class="answer"><summary>Pokaż klucz</summary>
+<p>a) dwutlenek węgla (1 pkt); b) kolba II (1 pkt); c) alkohol etylowy (etanol) (1 pkt).</p>
+</details>
+</div></details>
+</section>
+<section id="klinika">
+<div class="part-heading"><span class="part-num">10</span> Klinika błędów</div>
+<div class="myth-grid"><div class="myth"><p class="myth-x"><span>Mit</span>„Roślina nie ma mitochondriów, bo ma chloroplasty.”</p><p class="myth-ok"><span>Poprawnie</span>Ma jedne i drugie: chloroplast wytwarza glukozę, mitochondrium uwalnia z niej energię.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Roślina w dzień tylko fotosyntetyzuje, w nocy oddycha.”</p><p class="myth-ok"><span>Poprawnie</span>Oddycha stale; fotosynteza zachodzi tylko przy świetle.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Komórka zwierzęca ma ścianę komórkową.”</p><p class="myth-ok"><span>Poprawnie</span>Ma tylko błonę komórkową.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Ściana komórkowa to cecha tylko roślin.”</p><p class="myth-ok"><span>Poprawnie</span>Mają ją też grzyby (chityna) i bakterie (mureina).</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Każda komórka ma jądro.”</p><p class="myth-ok"><span>Poprawnie</span>Nie mają go bakterie i dojrzałe erytrocyty ssaków.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Wirus to najmniejsza komórka.”</p><p class="myth-ok"><span>Poprawnie</span>Wirus nie ma budowy komórkowej.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Chloroplasty są w każdej komórce rośliny.”</p><p class="myth-ok"><span>Poprawnie</span>Tylko w zielonych częściach; nie ma ich np. w korzeniu i skórce cebuli.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Fotosynteza dostarcza roślinie energii do życia bezpośrednio.”</p><p class="myth-ok"><span>Poprawnie</span>Fotosynteza magazynuje energię w glukozie; do pracy komórki energię uwalnia oddychanie (ATP).</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Brak jądra pod mikroskopem = komórka bez jądra.”</p><p class="myth-ok"><span>Poprawnie</span>Jądro mogło być niewybarwione lub poza ostrością.</p></div><div class="myth"><p class="myth-x"><span>Mit</span>„Fermentacja to oddychanie z tlenem.”</p><p class="myth-ok"><span>Poprawnie</span>Fermentacja zachodzi bez tlenu i daje mniej energii.</p></div></div>
+</section>
+<section id="cwiczenia">
+<div class="part-heading"><span class="part-num">11</span> Ćwiczenia</div>
+<h3 id="cw-a">A. Komórka</h3>
+<ol>
+<li>Komórka ma jądro, mitochondria, błonę, a nie ma ściany ani chloroplastów. Jaki to typ komórki?</li>
+<li>Komórka ma jądro, ścianę, mitochondria, dużą wakuolę, ale nie ma chloroplastów. Podaj dwie możliwości.</li>
+<li>Mikroskop ma okular 10× i obiektywy 4×, 10×, 40×. Jakie powiększenia można uzyskać?</li>
+<li>Wyjaśnij, dlaczego roślina więdnie, gdy długo nie jest podlewana (poziom komórkowy).</li>
+</ol>
+<details class="answer"><summary>Pokaż odpowiedzi</summary>
+<ol>
+<li>Zwierzęca. 2. Grzyba (ściana z chityny) albo niezielonej tkanki rośliny (np. korzenia, skórki cebuli — ściana z celulozy). 3. 40×, 100×, 400×. 4. Woda opuszcza komórki na drodze osmozy, spada turgor — komórki wiotczeją, a tkanki tracą jędrność.</li>
+</ol>
+</details>
+<h3 id="cw-b">B. Fotosynteza i oddychanie</h3>
+<ol start="5">
+<li>Podaj dwa produkty fotosyntezy i wskaż, który z nich roślina wykorzystuje w oddychaniu.</li>
+<li>Dlaczego ciasto drożdżowe rośnie w ciepłym miejscu?</li>
+<li>Uzupełnij: oddychanie tlenowe — substraty: …, produkty: …; miejsce u eukariontów: … .</li>
+<li>W szczelnie zamkniętym słoju umieszczono roślinę na świetle, a w drugim — w ciemności. W którym słoju po kilku godzinach będzie więcej tlenu? Uzasadnij.</li>
+</ol>
+<details class="answer"><summary>Pokaż odpowiedzi</summary>
+<ol start="5">
+<li>Glukoza i tlen; w oddychaniu tlenowym potrzebne są oba — glukoza jest substratem (źródłem energii), a tlen jest niezbędny do jej pełnego rozkładu. 6. Drożdże fermentują cukier i wydzielają CO₂, który spulchnia ciasto; ciepło przyspiesza ich procesy życiowe. 7. Glukoza i tlen; CO₂, woda, energia (ATP); mitochondria (pierwszy etap — cytoplazma). 8. Na świetle (przy dostatecznym świetle i typowych warunkach) — fotosynteza wydziela więcej tlenu, niż roślina zużywa w oddychaniu; w ciemności roślina tylko oddycha i zużywa tlen.</li>
+</ol>
+</details>
+<h3 id="cw-c">C. Doświadczenie i wykres <span class="level-badge level-exam">KONKURS</span></h3>
+<ol start="9">
+<li>Liczba pęcherzyków tlenu wydzielanych przez moczarkę w ciągu minuty przy różnej odległości od lampy: 10 cm — 42; 20 cm — 25; 40 cm — 9; 80 cm — 2. a) Jaki czynnik badano? b) Sformułuj wniosek. c) Podaj dwa warunki, które powinny być jednakowe. d) Dlaczego warto powtórzyć pomiar kilka razy?</li>
+</ol>
+<details class="answer"><summary>Pokaż odpowiedzi</summary>
+<p>a) Natężenie światła (odległość od źródła światła). b) Im większa odległość od lampy (słabsze światło), tym mniej pęcherzyków tlenu — intensywność fotosyntezy maleje wraz ze spadkiem natężenia światła (wniosek jakościowy — nie wyliczamy dokładnej zależności od odległości). c) Np. temperatura wody, ten sam gatunek i wielkość gałązki, ta sama zawartość CO₂ w wodzie, czas pomiaru. d) Żeby zmniejszyć wpływ przypadkowych błędów i uzyskać wiarygodną średnią.</p>
+</details>
+</section>
+<section id="test">
+<div class="part-heading"><span class="part-num">12</span> Test końcowy</div>
+<div class="che-quiz" id="quizWrap"><div class="quiz-q" data-ok="0" data-fb="Od najprostszego do najbardziej złożonego."><h5>1. Prawidłowa kolejność poziomów organizacji to:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">komórka → tkanka → narząd → układ narządów → organizm</button><button type="button" class="quiz-opt" data-a="1">tkanka → komórka → narząd → organizm → układ narządów</button><button type="button" class="quiz-opt" data-a="2">komórka → narząd → tkanka → układ narządów → organizm</button><button type="button" class="quiz-opt" data-a="3">organizm → tkanka → komórka → narząd → układ narządów</button></div></div><div class="quiz-q" data-ok="2" data-fb="Mitochondrium — oddychanie komórkowe."><h5>2. ATP powstaje głównie w:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">jądrze</button><button type="button" class="quiz-opt" data-a="1">chloroplaście</button><button type="button" class="quiz-opt" data-a="2">mitochondrium</button><button type="button" class="quiz-opt" data-a="3">wakuoli</button></div></div><div class="quiz-q" data-ok="2" data-fb="Rośliny — celuloza, bakterie — mureina, zwierzęta — brak ściany."><h5>3. Ścianę komórkową z chityny ma komórka:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">roślinna</button><button type="button" class="quiz-opt" data-a="1">zwierzęca</button><button type="button" class="quiz-opt" data-a="2">grzyba</button><button type="button" class="quiz-opt" data-a="3">bakterii</button></div></div><div class="quiz-q" data-ok="2" data-fb="DNA bakterii leży w nukleoidzie."><h5>4. Komórka bakteryjna nie ma:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">rybosomów</button><button type="button" class="quiz-opt" data-a="1">błony komórkowej</button><button type="button" class="quiz-opt" data-a="2">jądra komórkowego</button><button type="button" class="quiz-opt" data-a="3">cytoplazmy</button></div></div><div class="quiz-q" data-ok="0" data-fb="Najpierw ogólny obraz i ostrość, potem większe powiększenie."><h5>5. Obserwację mikroskopową zaczynamy od:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">najmniejszego powiększenia</button><button type="button" class="quiz-opt" data-a="1">największego powiększenia</button><button type="button" class="quiz-opt" data-a="2">śruby mikrometrycznej przy obiektywie 40×</button><button type="button" class="quiz-opt" data-a="3">zdjęcia szkiełka nakrywkowego</button></div></div><div class="quiz-q" data-ok="1" data-fb="Produktami są glukoza i tlen."><h5>6. Substratami fotosyntezy są:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">glukoza i tlen</button><button type="button" class="quiz-opt" data-a="1">dwutlenek węgla i woda</button><button type="button" class="quiz-opt" data-a="2">tlen i woda</button><button type="button" class="quiz-opt" data-a="3">glukoza i dwutlenek węgla</button></div></div><div class="quiz-q" data-ok="2" data-fb="Oddychanie zachodzi stale we wszystkich żywych komórkach."><h5>7. Rośliny oddychają:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">tylko w nocy</button><button type="button" class="quiz-opt" data-a="1">tylko w dzień</button><button type="button" class="quiz-opt" data-a="2">przez całą dobę</button><button type="button" class="quiz-opt" data-a="3">tylko gdy nie fotosyntetyzują</button></div></div><div class="quiz-q" data-ok="1" data-fb="CO₂ spulchnia ciasto drożdżowe."><h5>8. Podczas fermentacji alkoholowej drożdże wytwarzają:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">tlen i wodę</button><button type="button" class="quiz-opt" data-a="1">alkohol etylowy i dwutlenek węgla</button><button type="button" class="quiz-opt" data-a="2">kwas mlekowy</button><button type="button" class="quiz-opt" data-a="3">glukozę</button></div></div><div class="quiz-q" data-ok="1" data-fb="Dyfuzja dotyczy dowolnych cząsteczek; osmoza — ruchu netto wody przez błonę."><h5>9. Osmoza to ruch:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">dowolnych cząsteczek z miejsca o większym stężeniu do mniejszego</button><button type="button" class="quiz-opt" data-a="1">wody przez błonę selektywnie przepuszczalną</button><button type="button" class="quiz-opt" data-a="2">substancji wbrew różnicy stężeń z użyciem ATP</button><button type="button" class="quiz-opt" data-a="3">jonów przez ścianę komórkową</button></div></div><div class="quiz-q" data-ok="1" data-fb="Różni się od badawczej tylko obecnością drożdży."><h5>10. W doświadczeniu z drożdżami próbą kontrolną jest kolba:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">z drożdżami w roztworze cukru</button><button type="button" class="quiz-opt" data-a="1">z roztworem cukru bez drożdży</button><button type="button" class="quiz-opt" data-a="2">z drożdżami bez cukru i bez wody</button><button type="button" class="quiz-opt" data-a="3">pusta</button></div></div></div><div class="quiz-score" id="quizScore"></div>
+</section>
+<section id="fiszki">
+<div class="part-heading"><span class="part-num">13</span> Fiszki</div>
+<div id="flashcards" class="flashcard-grid"><button class="flashcard" type="button"><span class="front">Poziomy organizacji</span><span class="back">komórka → tkanka → narząd → układ narządów → organizm</span><span class="card-tag tag-basic">organizacja</span></button><button class="flashcard" type="button"><span class="front">Tkanka</span><span class="back">zespół komórek o podobnej budowie i funkcji</span><span class="card-tag tag-basic">organizacja</span></button><button class="flashcard" type="button"><span class="front">Jądro</span><span class="back">przechowuje DNA, kieruje pracą komórki</span><span class="card-tag tag-basic">komorka</span></button><button class="flashcard" type="button"><span class="front">Mitochondrium</span><span class="back">oddychanie komórkowe, ATP</span><span class="card-tag tag-basic">komorka</span></button><button class="flashcard" type="button"><span class="front">Chloroplast</span><span class="back">fotosynteza (chlorofil)</span><span class="card-tag tag-basic">komorka</span></button><button class="flashcard" type="button"><span class="front">Błona komórkowa</span><span class="back">granica, selektywny transport</span><span class="card-tag tag-basic">komorka</span></button><button class="flashcard" type="button"><span class="front">Ściana komórkowa</span><span class="back">rośliny — celuloza, grzyby — chityna, bakterie — mureina</span><span class="card-tag tag-basic">komorka</span></button><button class="flashcard" type="button"><span class="front">Wakuola</span><span class="back">magazyn, turgor (duża u roślin)</span><span class="card-tag tag-basic">komorka</span></button><button class="flashcard" type="button"><span class="front">Rybosomy</span><span class="back">synteza białek; we wszystkich komórkach</span><span class="card-tag tag-basic">komorka</span></button><button class="flashcard" type="button"><span class="front">Prokariont</span><span class="back">komórka bez jądra (bakterie, sinice)</span><span class="card-tag tag-basic">komorka</span></button><button class="flashcard" type="button"><span class="front">Powiększenie mikroskopu</span><span class="back">okular × obiektyw</span><span class="card-tag tag-basic">mikroskop</span></button><button class="flashcard" type="button"><span class="front">Fotosynteza — substraty</span><span class="back">CO₂ i H₂O (+ światło)</span><span class="card-tag tag-basic">procesy</span></button><button class="flashcard" type="button"><span class="front">Fotosynteza — produkty</span><span class="back">glukoza i O₂</span><span class="card-tag tag-basic">procesy</span></button><button class="flashcard" type="button"><span class="front">Chlorofil</span><span class="back">zielony barwnik pochłaniający światło</span><span class="card-tag tag-basic">procesy</span></button><button class="flashcard" type="button"><span class="front">Oddychanie tlenowe</span><span class="back">glukoza + O₂ → CO₂ + H₂O + energia (ATP)</span><span class="card-tag tag-basic">procesy</span></button><button class="flashcard" type="button"><span class="front">Fermentacja alkoholowa</span><span class="back">glukoza → alkohol etylowy + CO₂ + energia (drożdże)</span><span class="card-tag tag-basic">procesy</span></button><button class="flashcard" type="button"><span class="front">Fermentacja mlekowa</span><span class="back">beztlenowa przemiana glukozy: glukoza → kwas mlekowy (mleczan) + energia (bakterie mlekowe; mięśnie — krótkotrwale przy niedoborze tlenu)</span><span class="card-tag tag-basic">procesy</span></button><button class="flashcard" type="button"><span class="front">Kiedy roślina oddycha?</span><span class="back">stale, w dzień i w nocy</span><span class="card-tag tag-basic">procesy</span></button><button class="flashcard" type="button"><span class="front">Czynności życiowe</span><span class="back">odżywianie, oddychanie, wydalanie, ruch, reagowanie, wzrost i rozwój, rozmnażanie</span><span class="card-tag tag-basic">organizacja</span></button><button class="flashcard" type="button"><span class="front">Samożywność</span><span class="back">wytwarzanie związków organicznych z nieorganicznych (fotosynteza)</span><span class="card-tag tag-basic">procesy</span></button><button class="flashcard" type="button"><span class="front">Dyfuzja</span><span class="back">ruch netto cząsteczek zgodnie z różnicą stężeń</span><span class="card-tag tag-understand">trening</span></button><button class="flashcard" type="button"><span class="front">Osmoza</span><span class="back">ruch wody przez błonę selektywnie przepuszczalną</span><span class="card-tag tag-understand">trening</span></button><button class="flashcard" type="button"><span class="front">Turgor</span><span class="back">napięcie komórek roślinnych wypełnionych wodą</span><span class="card-tag tag-understand">trening</span></button><button class="flashcard" type="button"><span class="front">Wykrywanie CO₂</span><span class="back">woda wapienna mętnieje</span><span class="card-tag tag-exam">konkurs</span></button><button class="flashcard" type="button"><span class="front">Wykrywanie O₂</span><span class="back">tlące się łuczywo zapala się</span><span class="card-tag tag-exam">konkurs</span></button><button class="flashcard" type="button"><span class="front">Próba kontrolna</span><span class="back">identyczna jak badawcza poza badanym czynnikiem</span><span class="card-tag tag-exam">konkurs</span></button></div>
+</section>
+<section id="slownik">
+<div class="part-heading"><span class="part-num">14</span> Słownik</div>
+<dl><div class="def-item"><dt>Komórka</dt><dd>najmniejsza jednostka budowy i funkcjonowania organizmów zdolna do czynności życiowych</dd></div><div class="def-item"><dt>Organellum</dt><dd>wyodrębniona struktura komórki pełniąca określoną funkcję</dd></div><div class="def-item"><dt>ATP</dt><dd>związek przenoszący i udostępniający energię w komórce</dd></div><div class="def-item"><dt>Eukariont</dt><dd>organizm, którego komórki mają jądro</dd></div><div class="def-item"><dt>Prokariont</dt><dd>organizm, którego komórka nie ma jądra</dd></div><div class="def-item"><dt>Selektywna przepuszczalność</dt><dd>cecha błony przepuszczającej jedne substancje łatwiej niż inne</dd></div><div class="def-item"><dt>Fotosynteza</dt><dd>wytwarzanie związków organicznych z CO₂ i wody z wykorzystaniem energii światła</dd></div><div class="def-item"><dt>Oddychanie komórkowe</dt><dd>rozkład związków organicznych w komórce z uwolnieniem energii (ATP)</dd></div><div class="def-item"><dt>Fermentacja</dt><dd>beztlenowy rozkład związków organicznych z uwolnieniem niewielkiej ilości energii</dd></div><div class="def-item"><dt>Samożywność</dt><dd>zdolność do wytwarzania pokarmu z substancji nieorganicznych</dd></div><div class="def-item"><dt>Cudzożywność</dt><dd>pobieranie gotowych związków organicznych z otoczenia</dd></div></dl>
+</section>
+<section id="sciaga">
+<div class="part-heading"><span class="part-num">15</span> Ściąga</div>
+<div class="card card-core">
+<ul>
+<li>Komórka → tkanka → narząd → układ → organizm; bakteria = jedna komórka.</li>
+<li>Jądro = DNA · mitochondrium = ATP · chloroplast = fotosynteza · błona = granica · ściana: celuloza / chityna / mureina.</li>
+<li>Bakteria: bez jądra; roślina: ściana + chloroplast + duża wakuola; zwierzę: bez ściany; grzyb: chityna, bez chloroplastu.</li>
+<li>Mikroskop: od najmniejszego powiększenia; okular × obiektyw.</li>
+<li>Fotosynteza (zapis sumaryczny): CO₂ + H₂O → glukoza + O₂ (światło, chlorofil, chloroplast). Oddychanie: glukoza + O₂ → CO₂ + H₂O + ATP (stale, mitochondria). Fermentacja drożdży → alkohol + CO₂.</li>
+<li>CO₂ — woda wapienna mętnieje; O₂ — tlące się łuczywo się zapala.</li>
+</ul>
+</div>
+<p><strong>Co dalej:</strong> REV02 Różnorodność życia (druga część etapu szkolnego); na etapie rejonowym — organizm człowieka i homeostaza.</p>
+<details class="lk-log"><summary>AUDYT W19 — chemizm życia i klucze (2026-10-09, GPT-6)</summary>
+<h3>AUDYT W19 — chemizm życia i klucze (2026-10-09, GPT-6)</h3>
+<p><strong>Zakres:</strong> kontrola celowana równania fotosyntezy i częstych uogólnień.</p>
+<ul>
+<li>Wprowadzono zbilansowane równanie sumaryczne fotosyntezy tlenowej: 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂. W kluczu należy akceptować równoważny zapis słowny, jeśli pytanie nie wymaga wzorów.</li>
+<li>Zaznaczono, że jest to bilans sumaryczny, a nie opis wszystkich etapów reakcji.</li>
+<li><strong>Status:</strong> poprawiono konkretny zapis w treści głównej; pozostałe klucze nie zostały w tej partii sprawdzone jeden po drugim.</li>
+</ul>
+</details>
+<details class="lk-log"><summary>AUDYT W1 — Perplexity (2026-10-10), wersja 1.1</summary>
+<h3>AUDYT W1 — Perplexity (2026-10-10), wersja 1.1</h3>
+<ul>
+<li>Wprowadzone: glikoliza w cytoplazmie (minimum), definicja fermentacji, mchy (tkanki przewodzące), śruba makrometryczna tylko przy małym powiększeniu, barwienie jądra (Lugol jako przykład), mureina = peptydoglikan, wakuola u zwierząt i bakterii, rybosomy w organellach (ambitne), „ruch netto” w dyfuzji i osmozie, transport pęcherzykowy, sacharoza w łyku, punkt kompensacyjny w opisie grafiki, ATP ok. 30–32 (38 — wartość historyczna; także w grafice), fermentacja mlekowa w mięśniach — krótkotrwale, kontrola temperatury i szczelność w doświadczeniach, pęcherzyki jako wskaźnik orientacyjny, klucze 4, 8, 9c.</li>
+<li>Druga odpowiedź Perplexity (ta sama paczka): ATP jako nośnik energii, NAD⁺ w fermentacji (ambitne), karta bilansu ATP, łuczywo ostrożniej, klucz B5.</li>
+<li>Nieprzyjęte: zapis wzoru <code>$$</code> to składnia bloku wzoru w dialekcie lekcji (w HTML bez LaTeX-a), nie LaTeX; uwagi „bez zmian/klucz poprawny” (§10 zad. 3, §11 A zad. 5, §12 chityna, §15 równanie).</li>
+<li>Uzupełnienie zaległych uwag W1 (2026-10-10): kwalifikator „sumaryczny” w ściądze.</li>
+</ul>
+</details>
+</section>
+<section id="s1">
+<div class="part-heading">Ulepszenie — Claude, 2026-10-11</div>
+<ul>
+<li>Dodano: §0.3 wykład „od zera”, 2 mini-wykłady „W skrócie”, §9.5 ciekawostki (3), §9.6 warstwa olimpijska (Dla olimpijczyka + O1–O4 z kluczami). Nic nie usunięto.</li>
+</ul>
+</section>
+<footer class="footer"><p><strong>BIOLOGIA REV01 v1.1</strong> · Organizacja i chemizm życia · 2026</p></footer>
+</main>
+<script>
+/* bio-core.js — rdzeń biblioteki grafik BIO (v0.2): montaż, prymitywy, efekty i pomocnicze.
+   Ładowany przed każdą wizualizacją z wizualizacje/<id>.js. Wspólne pomocnicze są w BIO.Lh["<grupa>.<nazwa>"]. */
+(function(){ var w=window; w.BIO=w.BIO||{}; w.BIO.Lh=w.BIO.Lh||{}; })();
+/* ---- grupa A: rdzeń (dawny blok 1) ---- */
+(function(){
+'use strict';
+var BIO=window.BIO;
+var BIO=window.BIO=window.BIO||{};
+if(BIO.V)return;
+BIO.V='0.1';
+var REG={};
+BIO.define=function(id,def){REG[id]=def};
+BIO.katalog=function(){return Object.keys(REG).map(function(k){return{id:k,opis:REG[k].opis||''}})};
+var NS='http://www.w3.org/2000/svg';
+function set(e,at){for(var k in at){var v=at[k];if(v==null)continue;
+  if((k==='fill'||k==='stroke'||k==='stop-color')&&String(v).indexOf('var(')>=0)e.style.setProperty(k,v);else e.setAttribute(k,v)}}
+function add(e,kids){(kids||[]).forEach(function(c){if(c==null||c===false)return;e.appendChild(typeof c==='string'||typeof c==='number'?document.createTextNode(String(c)):c)});return e}
+function S(tag,at,kids){var e=document.createElementNS(NS,tag);set(e,at||{});return add(e,kids)}
+function H(tag,cls,html,kids){var e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.innerHTML=html;return add(e,kids)}
+function svg(w,h,label,kids){return S('svg',{viewBox:'0 0 '+w+' '+h,role:'img','aria-label':label||'',preserveAspectRatio:'xMidYMid meet'},kids)}
+function T(x,y,t,o){o=o||{};return S('text',{x:x,y:y,'text-anchor':o.a||'middle','dominant-baseline':o.b||'middle','font-size':o.s||12,'font-weight':o.w||600,fill:o.f||'var(--viz-ink)'},[t])}
+function btn(label,on){var b=H('button','bv-btn');b.type='button';b.textContent=label;if(on)b.onclick=on;return b}
+BIO.S=S;
+BIO.H=H;
+BIO.svg=svg;
+BIO.T=T;
+BIO.btn=btn;
+var NT={A:{n:'adenina',t:'puryna'},G:{n:'guanina',t:'puryna'},T:{n:'tymina',t:'pirymidyna'},C:{n:'cytozyna',t:'pirymidyna'},U:{n:'uracyl',t:'pirymidyna'}};
+var PAIR={A:'T',T:'A',C:'G',G:'C'};
+var PAIR_RNA={A:'U',T:'A',C:'G',G:'C'};
+var HB={A:2,T:2,C:3,G:3,U:2};
+function col(b){return'var(--nt-'+b+')'}
+function bg(b){return'var(--nt-'+b+'-bg)'}
+function pur(b){return NT[b]&&NT[b].t==='puryna'}
+BIO.NT=NT;
+BIO.PAIR=PAIR;
+BIO.PAIR_RNA=PAIR_RNA;
+BIO.HB=HB;
+var g=BIO.g={};
+function hexPts(cx,cy,r){var p=[];for(var i=0;i<6;i++){var a=Math.PI/180*(60*i-90);p.push([cx+r*Math.cos(a),cy+r*Math.sin(a)])}return p}
+function pentOn(p1,p2,hx,hy){ /* pięciokąt foremny na krawędzi p1-p2, na zewnątrz od środka (hx,hy) */
+  var mx=(p1[0]+p2[0])/2,my=(p1[1]+p2[1])/2,dx=p2[0]-p1[0],dy=p2[1]-p1[1],L=Math.hypot(dx,dy),nx=-dy/L,ny=dx/L;
+  if((mx+nx-hx)*(mx+nx-hx)+(my+ny-hy)*(my+ny-hy)<(mx-hx)*(mx-hx)+(my-hy)*(my-hy)){nx=-nx;ny=-ny}
+  var ap=L/(2*Math.tan(Math.PI/5)),R=L/(2*Math.sin(Math.PI/5)),cx=mx+nx*ap,cy=my+ny*ap,a0=Math.atan2(p1[1]-cy,p1[0]-cx),pts=[];
+  for(var i=0;i<5;i++){var a=a0+i*2*Math.PI/5;pts.push([cx+R*Math.cos(a),cy+R*Math.sin(a)])}return pts}
+function P(pts){return pts.map(function(p){return p[0].toFixed(1)+','+p[1].toFixed(1)}).join(' ')}
+g.ring=function(b,cx,cy,r,side,lab){
+  var h=hexPts(cx,cy,r),gg=S('g',{});
+  if(pur(b)){var e=side>0?[h[4],h[5]]:[h[1],h[2]];gg.appendChild(S('polygon',{points:P(pentOn(e[0],e[1],cx,cy)),fill:bg(b),stroke:col(b),'stroke-width':2,'stroke-linejoin':'round'}))}
+  gg.appendChild(S('polygon',{points:P(h),fill:bg(b),stroke:col(b),'stroke-width':2,'stroke-linejoin':'round'}));
+  if(lab!==false)gg.appendChild(T(cx,cy+1,b,{s:r*0.95,w:800,f:col(b)}));
+  return gg};
+g.hbonds=function(x1,x2,yc,n,gap){gap=gap||6;var gg=S('g',{});for(var i=0;i<n;i++){var y=yc+(i-(n-1)/2)*gap;gg.appendChild(S('line',{x1:x1,y1:y,x2:x2,y2:y,stroke:'var(--hbond)','stroke-width':2,'stroke-dasharray':'3 3'}))}return gg};
+g.sugar=function(cx,cy,r){var pts=[];for(var i=0;i<5;i++){var a=Math.PI/180*(72*i-90);pts.push([cx+r*Math.cos(a),cy+r*Math.sin(a)])}
+  return S('polygon',{points:P(pts),fill:'var(--sugar-bg)',stroke:'var(--sugar)','stroke-width':2,'stroke-linejoin':'round'})};
+g.phos=function(cx,cy,r){return S('g',{},[S('circle',{cx:cx,cy:cy,r:r,fill:'var(--phos-bg)',stroke:'var(--phos)','stroke-width':2}),T(cx,cy+0.5,'P',{s:r*1.05,w:800,f:'var(--phos)'})])};
+g.miniHelix=function(x,y,w,h,turns){var gg=S('g',{}),n=40,a='',b='';for(var i=0;i<=n;i++){var t=i/n,yy=y+t*h,ph=t*turns*2*Math.PI;
+  a+=(i?'L':'M')+(x+w/2+w/2*Math.sin(ph)).toFixed(1)+' '+yy.toFixed(1);b+=(i?'L':'M')+(x+w/2-w/2*Math.sin(ph)).toFixed(1)+' '+yy.toFixed(1);
+  if(i%4===2)gg.appendChild(S('line',{x1:x+w/2+w/2*Math.sin(ph),y1:yy,x2:x+w/2-w/2*Math.sin(ph),y2:yy,stroke:'var(--hbond)','stroke-width':1.5}))}
+  gg.appendChild(S('path',{d:a,fill:'none',stroke:'var(--strand1)','stroke-width':3,'stroke-linecap':'round'}));
+  gg.appendChild(S('path',{d:b,fill:'none',stroke:'var(--strand2)','stroke-width':3,'stroke-linecap':'round'}));return gg};
+g.squiggle=function(cx,cy,r,seed){var d='',n=120,s=seed||1;for(var i=0;i<=n;i++){var a=i/n*Math.PI*2+s,rr=r*(0.62+0.16*Math.sin(4*a+s)+0.1*Math.sin(9*a+2*s));
+  d+=(i?'L':'M')+(cx+rr*Math.cos(a)).toFixed(1)+' '+(cy+rr*Math.sin(a)).toFixed(1)}
+  return S('path',{d:d,fill:'none',stroke:'var(--dna-ink)','stroke-width':1.8,'stroke-linejoin':'round','stroke-linecap':'round'})};
+g.chromosome=function(cx,cy,h,fill){var gg=S('g',{}),w=h*0.26;
+  [-18,18].forEach(function(r){gg.appendChild(S('rect',{x:cx-w/2,y:cy-h/2,width:w,height:h,rx:w/2,fill:fill||'var(--nucleus-bg)',stroke:'var(--dna-ink)','stroke-width':2,transform:'rotate('+r+' '+cx+' '+cy+')'}))});
+  gg.appendChild(S('circle',{cx:cx,cy:cy,r:w*0.32,fill:'var(--dna-ink)'}));return gg};
+var fx=BIO.fx={};
+fx.info=function(root,box,map,first){
+  function show(k,el){var d=map[k];if(!d)return;root.querySelectorAll('.bv-hit.sel').forEach(function(x){x.classList.remove('sel')});
+    if(el)el.classList.add('sel');box.className='bv-info';box.innerHTML='<b>'+d[0]+'</b>'+d[1]}
+  root.querySelectorAll('[data-k]').forEach(function(el){el.classList.add('bv-hit');el.setAttribute('tabindex','0');el.setAttribute('role','button');
+    el.addEventListener('click',function(){show(el.getAttribute('data-k'),el)});
+    el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();show(el.getAttribute('data-k'),el)}})});
+  if(first)show(first,root.querySelector('[data-k="'+first+'"]'));return show};
+fx.infoBox=function(txt){return H('div','bv-info',txt||'Kliknij element grafiki, aby zobaczyć wyjaśnienie.')};
+fx.auto=function(el,step,ms,o){o=o||{};var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches,on=!rm,vis=false,tm=null;
+  var bar=H('div','bv-tools bv-auto'),b=H('button','bv-btn');b.type='button';
+  function lab(){b.textContent=on?'⏸ zatrzymaj animację':'▶ odtwarzaj automatycznie';b.setAttribute('aria-pressed',on?'true':'false');b.classList.toggle('on',on)}
+  function halt(){if(tm){clearInterval(tm);tm=null}}
+  function run(){if(tm||!on||!vis||document.hidden)return;if(o.now)step();tm=setInterval(function(){if(document.hidden||!vis){halt();return}step()},ms)}
+  b.onclick=function(){on=!on;lab();if(on)run();else halt()};bar.appendChild(b);el.insertBefore(bar,el.firstChild);lab();
+  function user(e){if(bar.contains(e.target)||!on)return;on=false;halt();lab()}
+  el.addEventListener('pointerdown',user,true);el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' ')user(e)},true);
+  if('IntersectionObserver' in window)new IntersectionObserver(function(es){es.forEach(function(e){vis=e.isIntersecting;if(vis)run();else halt()})},{threshold:.35}).observe(el);else{vis=true;run()}
+  document.addEventListener('visibilitychange',function(){if(document.hidden)halt();else run()});
+  return {stop:function(){on=false;halt();lab()}}};
+fx.toggle=function(btns,i){btns.forEach(function(b,j){b.classList.toggle('on',j===i);b.setAttribute('aria-pressed',j===i?'true':'false')})};
+BIO.mount=function(fig){if(fig.dataset.bioOn)return;fig.dataset.bioOn=1;
+  var id=fig.getAttribute('data-bio-viz'),body=fig.querySelector('.bio-fig-body')||fig,opt={};
+  try{opt=JSON.parse(fig.getAttribute('data-opt')||'{}')}catch(e){}
+  var d=REG[id];if(!d){body.innerHTML='<p class="bio-err">Brak grafiki „'+id+'” w bibliotece bio-viz.js.</p>';return}
+  d.mount(body,opt,fig)};
+BIO.mountAll=function(root){(root||document).querySelectorAll('[data-bio-viz]').forEach(BIO.mount)};
+function chain(el,nodes,opt){var c=H('div','bv-chain'+(opt.pion!=='nie'?' v':''));
+  nodes.forEach(function(n,i){if(i)c.appendChild(H('span','bv-arrow','→'));var d=H('div','bv-node'+(n.k?' k':''));
+    if(n.ico)d.appendChild(n.ico);d.appendChild(H('b',null,n.b));if(n.s)d.appendChild(H('small',null,n.s));if(n.key)d.setAttribute('data-k',n.key);c.appendChild(d)});
+  el.appendChild(c);return c}
+function ico(w,h,kids){var s=svg(w,h,'',kids);s.setAttribute('aria-hidden','true');s.setAttribute('class','bv-ico');return s}
+var ICO={
+ organizm:function(){return ico(120,80,[S('circle',{cx:60,cy:16,r:10,fill:'var(--accent-soft)',stroke:'var(--accent)','stroke-width':2}),S('path',{d:'M42 72V44q0-14 18-14t18 14v28',fill:'var(--accent-soft)',stroke:'var(--accent)','stroke-width':2,'stroke-linejoin':'round'})])},
+ komorka:function(){return ico(120,80,[S('ellipse',{cx:60,cy:40,rx:50,ry:32,fill:'var(--cell-cyto)',stroke:'var(--cell-mem)','stroke-width':2.5}),S('circle',{cx:64,cy:40,r:15,fill:'var(--nucleus-bg)',stroke:'var(--nucleus)','stroke-width':2}),S('ellipse',{cx:30,cy:50,rx:9,ry:5,fill:'var(--mito-bg)',stroke:'var(--mito)','stroke-width':1.5})])},
+ jadro:function(){return ico(120,80,[S('circle',{cx:60,cy:40,r:34,fill:'var(--nucleus-bg)',stroke:'var(--nucleus)','stroke-width':2.5}),g.squiggle(60,40,30,1),g.squiggle(58,42,26,3)])},
+ chromosom:function(){return ico(120,80,[g.chromosome(60,40,66)])},
+ dna:function(){var s=ico(120,80,[]);var gg=g.miniHelix(0,0,60,100,1.6);gg.setAttribute('transform','translate(110 10) rotate(90)');s.appendChild(gg);return s},
+ rna:function(){var d='M8 46',t=[];for(var i=0;i<=10;i++){var x=8+i*10.4,y=46+8*Math.sin(i*0.9);d+='L'+x.toFixed(1)+' '+y.toFixed(1);if(i<10)t.push(S('line',{x1:x,y1:y,x2:x,y2:y-14,stroke:['var(--nt-A)','var(--nt-U)','var(--nt-C)','var(--nt-G)'][i%4],'stroke-width':3,'stroke-linecap':'round'}))}
+   return ico(120,80,t.concat([S('path',{d:d,fill:'none',stroke:'var(--strand1)','stroke-width':3.5,'stroke-linecap':'round','stroke-linejoin':'round'})]))},
+ bialko:function(){var pts=[[14,60],[26,48],[22,32],[36,24],[50,32],[46,48],[58,58],[72,50],[70,34],[84,26],[98,34],[96,50],[106,62]],k=[S('path',{d:'M'+pts.map(function(p){return p.join(' ')}).join('L'),fill:'none',stroke:'var(--viz-mut)','stroke-width':2.5})];
+   pts.forEach(function(p,i){k.push(S('circle',{cx:p[0],cy:p[1],r:6,fill:['#ffd8a8','#c5f6fa','#d3f9d8','#e5dbff','#ffe3e3'][i%5],stroke:'var(--viz-mut)','stroke-width':1.2}))});return ico(120,80,k)},
+ funkcja:function(){return ico(120,80,[S('path',{d:'M60 40L92 22A36 36 0 1 0 92 58Z',fill:'var(--accent-soft)',stroke:'var(--accent)','stroke-width':2.5,'stroke-linejoin':'round',transform:'translate(-14 0)'}),
+   S('circle',{cx:96,cy:40,r:9,fill:'var(--phos-bg)',stroke:'var(--phos)','stroke-width':2}),S('path',{d:'M104 28l8-6M104 52l8 6',stroke:'var(--phos)','stroke-width':2,'stroke-linecap':'round'})])},
+ gen:function(){return ico(120,80,[S('rect',{x:6,y:30,width:108,height:20,rx:4,fill:'var(--viz-bg2)',stroke:'var(--viz-line)'}),S('rect',{x:40,y:28,width:46,height:24,rx:4,fill:'var(--accent-soft)',stroke:'var(--accent)','stroke-width':2}),T(63,40.5,'gen',{s:12,w:800,f:'var(--accent)'})])}};
+BIO.ICO=ICO;
+function mito(cx,cy,rx,ry,rot){var c='';for(var i=0;i<5;i++){var x=cx-rx*0.7+i*rx*0.35;c+='M'+x+' '+(cy+(i%2?-ry*0.75:ry*0.75))+'V'+(cy+(i%2?ry*0.1:-ry*0.1))}
+  return S('g',{'data-k':'mito',transform:rot?'rotate('+rot+' '+cx+' '+cy+')':null},[S('ellipse',{cx:cx,cy:cy,rx:rx,ry:ry,fill:'var(--mito-bg)',stroke:'var(--mito)','stroke-width':2}),
+   S('path',{d:c,fill:'none',stroke:'var(--mito)','stroke-width':1.4,'stroke-linecap':'round',opacity:0.8}),S('circle',{cx:cx+rx*0.45,cy:cy,r:Math.min(4,ry*0.4),fill:'none',stroke:'var(--dna-ink)','stroke-width':1.6})])}
+function nucleus(cx,cy,r,seed){return S('g',{'data-k':'jadro'},[S('circle',{cx:cx,cy:cy,r:r,fill:'var(--nucleus-bg)',stroke:'var(--nucleus)','stroke-width':2.5}),
+  S('circle',{cx:cx,cy:cy,r:r-4,fill:'none',stroke:'var(--nucleus)','stroke-width':0.8,opacity:0.6}),g.squiggle(cx,cy,r*0.85,seed),S('circle',{cx:cx+r*0.3,cy:cy-r*0.25,r:r*0.18,fill:'var(--nucleus)',opacity:0.55})])}
+function cleanSeq(s,def){s=String(s||def).toUpperCase().replace(/[^ATCG]/g,'');return s||def}
+if('IntersectionObserver' in window&&!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)){
+  var st=document.createElement('style');st.textContent='.bio-fig.rv{opacity:0;transform:translateY(10px)}.bio-fig.rv.in{opacity:1;transform:none;transition:opacity .5s ease,transform .5s ease}';document.head.appendChild(st);
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -40px 0px'});
+  var mA=BIO.mountAll;BIO.mountAll=function(root){mA(root);(root||document).querySelectorAll('.bio-fig:not(.rv)').forEach(function(f){f.classList.add('rv');io.observe(f)})}}
+BIO.Lh["A.REG"]=REG;BIO.Lh["A.S"]=S;BIO.Lh["A.H"]=H;BIO.Lh["A.svg"]=svg;BIO.Lh["A.T"]=T;BIO.Lh["A.btn"]=btn;BIO.Lh["A.NT"]=NT;BIO.Lh["A.PAIR"]=PAIR;BIO.Lh["A.PAIR_RNA"]=PAIR_RNA;BIO.Lh["A.HB"]=HB;BIO.Lh["A.g"]=g;BIO.Lh["A.hexPts"]=hexPts;BIO.Lh["A.pur"]=pur;BIO.Lh["A.P"]=P;BIO.Lh["A.pentOn"]=pentOn;BIO.Lh["A.bg"]=bg;BIO.Lh["A.col"]=col;BIO.Lh["A.fx"]=fx;BIO.Lh["A.ICO"]=ICO;BIO.Lh["A.NS"]=NS;BIO.Lh["A.set"]=set;BIO.Lh["A.add"]=add;BIO.Lh["A.chain"]=chain;BIO.Lh["A.ico"]=ico;BIO.Lh["A.mito"]=mito;BIO.Lh["A.nucleus"]=nucleus;BIO.Lh["A.cleanSeq"]=cleanSeq;
+})();
+/* ---- grupa B: prototypy (dawny blok 2, wzorcownia) ---- */
+(function(){
+var BIO=window.BIO;
+var BIO=window.BIO;
+if(!BIO||!BIO.define||BIO.WZOR)return;
+BIO.WZOR=1;
+var NS='http://www.w3.org/2000/svg';
+var UID=0;
+var css=document.createElement('style');
+css.textContent=
+'.bw-seg{display:flex;flex-wrap:wrap;gap:4px}.bw-out{display:grid;gap:4px}.bw-tbl{overflow-x:auto;margin-top:8px}.bw-tbl table{border-collapse:collapse;width:100%;font-size:13px}.bw-tbl th,.bw-tbl td{padding:4px 6px;border-bottom:1px solid var(--border,#dde4e8);text-align:left;vertical-align:top}'+
+'.bw-mono{font-family:ui-monospace,Consolas,monospace}.bw-svg{width:100%;max-width:520px;display:block;background:var(--surface,#fff);border:1px solid var(--border,#dde4e8);border-radius:8px}'+
+'.bw-codons{display:flex;flex-wrap:wrap;gap:6px}.bw-cod{border:1px solid var(--border,#dde4e8);border-radius:7px;padding:4px;display:grid;gap:2px;font:14px ui-monospace,Consolas,monospace;text-align:center;min-width:76px}'+
+'.bw-cod .r{display:flex;justify-content:center;gap:1px}.bw-cod .r span{width:22px;display:inline-block}.bw-cod .r.k span{cursor:pointer;border-radius:4px;background:var(--surface-soft,#eef3f1)}.bw-cod .r.k span.mut{background:#b8860b;color:#fff}'+
+'.bw-cod .r.m{color:var(--accent,#3f7a28);font-weight:700}.bw-cod .aa{font-weight:700;border-top:1px solid var(--border,#dde4e8);padding-top:2px}.bw-cod.chg{border-color:#b8860b}.bw-cod.stop .aa{color:#b23b2a}.bw-cod.off{opacity:.45}'+
+'.bw-key{display:grid;grid-template-columns:auto 1fr;gap:2px 8px;font-size:12.5px;margin-bottom:6px}.bw-key b{font-family:ui-monospace,monospace}'+
+'.bw-pun table{max-width:420px}.bw-pun td,.bw-pun th{text-align:center!important;border:1px solid var(--border,#dde4e8)}.bw-pun td{font:600 14px ui-monospace,monospace;padding:8px 4px}.bw-pun td small{display:block;font:400 11.5px Inter,system-ui;opacity:.8}'+
+'.bw-bars{display:grid;gap:4px}.bw-bar{display:grid;grid-template-columns:minmax(0,9.5em) 1fr 3.2em;gap:8px;align-items:center;font-size:13px}.bw-bar .t{height:12px;background:var(--surface-soft,#eef3f1);border-radius:3px;overflow:hidden}.bw-bar .t i{display:block;height:100%;background:var(--accent,#3f7a28)}.bw-bar .v{text-align:right;font-variant-numeric:tabular-nums}'+
+'.bw-svg text{font-family:system-ui,sans-serif}.bw-sel{font:600 12.5px Inter,system-ui;border:1px solid var(--border-strong,#c7d0d6);border-radius:7px;padding:5px 8px;background:var(--surface,#fff);color:inherit}';
+document.head.appendChild(css);
+function S(t,a,x){var e=document.createElementNS(NS,t);if(a)for(var k in a)e.setAttribute(k,a[k]);if(x!=null)e.textContent=x;return e}
+function H(t,a,h){var e=document.createElement(t);if(a)for(var k in a){if(k==='text')e.textContent=a[k];else e.setAttribute(k,a[k])}if(h!=null)e.innerHTML=h;return e}
+function clr(e){while(e.firstChild)e.removeChild(e.firstChild)}
+function seg(box,items,cur,cb){clr(box);items.forEach(function(it){var b=H('button',{type:'button','class':'bv-btn'+(it[0]===cur?' on':''),'aria-pressed':String(it[0]===cur)});b.textContent=it[1];b.onclick=function(){cb(it[0])};box.appendChild(b)})}
+function info(){return H('div',{'class':'bv-info bw-out','aria-live':'polite'})}
+function key(el,fn){el.setAttribute('role','button');el.setAttribute('tabindex','0');el.onclick=fn;el.onkeydown=function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();fn()}}}
+BIO.Lh["B.css"]=css;BIO.Lh["B.UID"]=UID;BIO.Lh["B.NS"]=NS;BIO.Lh["B.S"]=S;BIO.Lh["B.H"]=H;BIO.Lh["B.clr"]=clr;BIO.Lh["B.seg"]=seg;BIO.Lh["B.info"]=info;BIO.Lh["B.key"]=key;
+BIO.Lh["B.nextUid"]=function(){return ++UID};
+})();
+/* ---- grupa C: lekcje-przeglądy (dawny blok 3) ---- */
+(function(){
+var BIO=window.BIO;
+var BIO=window.BIO;
+if(!BIO||!BIO.define||BIO.REV_VIZ)return;
+BIO.REV_VIZ=1;
+var S=BIO.S;
+var svg=BIO.svg;
+var T=BIO.T;
+var btn=BIO.btn;
+function H(t,c,h,k){var e=BIO.H(t,c,h,k);if(c==='bv-info'){var w=BIO.H('div');e.appendChild(w);Object.defineProperty(e,'innerHTML',{set:function(v){w.innerHTML=String(v).replace(/^<b>([\s\S]*?)<\/b>/,'<strong style="display:block;margin-bottom:2px">$1</strong>').replace(/<(\/?)b(\s|>)/g,'<$1strong$2').replace(/<span>/g,'<span style="display:block;margin-top:3px">')},get:function(){return w.innerHTML}})}return e}
+function clr(e){while(e.firstChild)e.removeChild(e.firstChild)}
+function seg(box,items,cur,cb){clr(box);items.forEach(function(it){var b=btn(it[1],function(){cb(it[0])});if(it[0]===cur)b.classList.add('on');b.setAttribute('aria-pressed',String(it[0]===cur));box.appendChild(b)})}
+BIO.Lh["C.S"]=S;BIO.Lh["C.svg"]=svg;BIO.Lh["C.T"]=T;BIO.Lh["C.btn"]=btn;BIO.Lh["C.H"]=H;BIO.Lh["C.clr"]=clr;BIO.Lh["C.seg"]=seg;
+})();
+
+/* viz: lancuch — grupa A · z dawnego bio-viz.js (rozbij.js) */
+(function(){
+'use strict';
+var BIO=window.BIO;
+var ICO=BIO.Lh["A.ICO"],chain=BIO.Lh["A.chain"],H=BIO.Lh["A.H"];
+BIO.define('lancuch',{opis:'Łańcuch kroków A → B → C; opcje: kroki="A|opis > B > C", boki="środowisko; rozwój", wyroznij="nr" (od 1)',
+mount:function(el,o){var k=+(o.wyroznij||0);
+  function pick(t){t=t.toLowerCase();return/rna/.test(t)?ICO.rna():/dna|gen\b/.test(t)?ICO.dna():/białk/.test(t)?ICO.bialko():/funkc|enzym/.test(t)?ICO.funkcja():/cech|cesz|fenotyp|organizm/.test(t)?ICO.organizm():null}
+  chain(el,(o.kroki||'').split('>').map(function(s,i){var p=s.split('|');return{b:p[0].trim(),s:(p[1]||'').trim(),k:k===i+1,ico:o.ikony==='nie'?null:pick(p[0])}}),o);
+  if(o.boki){var sd=H('div','bv-side');o.boki.split(';').forEach(function(s){if(s.trim())sd.appendChild(H('span',null,s.trim()))});el.appendChild(sd)}}});
+})();
+
+/* viz: mikroskop-model — grupa A · z dawnego bio-viz.js (rozbij.js) */
+(function(){
+'use strict';
+var BIO=window.BIO;
+var H=BIO.Lh["A.H"],svg=BIO.Lh["A.svg"],S=BIO.Lh["A.S"],nucleus=BIO.Lh["A.nucleus"],mito=BIO.Lh["A.mito"],T=BIO.Lh["A.T"],btn=BIO.Lh["A.btn"];
+BIO.define('mikroskop-model',{opis:'Ta sama komórka liścia moczarki w dwóch widokach: obraz z mikroskopu świetlnego (rozmyty, widać ścianę, chloroplasty, wakuolę; jądro po barwieniu) i model szkolny ze wszystkimi strukturami podpisanymi; przełącznik barwienia; opcja start="mikroskop|model"',
+mount:function(el,o){var uid='bm'+Math.random().toString(36).slice(2,7),widok=(o&&o.start==='model')?'model':'mikroskop',barw=false,tools=H('div','bv-tools'),hold=H('div'),box=H('div','bv-info');
+  [tools,hold,box].forEach(function(e){el.appendChild(e)});
+  var CH=[[150,52],[196,48],[248,56],[300,54],[96,90],[104,140],[314,104],[322,152],[140,182],[204,186],[262,180]];
+  function rys(){var mik=widok==='mikroskop',s=svg(440,220,mik?'Obraz komórki w mikroskopie świetlnym':'Model szkolny komórki roślinnej',[]);
+    var d=S('defs',{},[S('filter',{id:uid+'b'},[S('feGaussianBlur',{stdDeviation:mik?1.6:0})]),S('clipPath',{id:uid+'c'},[S('circle',{cx:220,cy:110,r:150})]),S('radialGradient',{id:uid+'p'},[S('stop',{offset:'60%','stop-color':'#fbfbf2'}),S('stop',{offset:'100%','stop-color':'#d9d9c9'})])]);s.appendChild(d);
+    if(mik){s.appendChild(S('circle',{cx:220,cy:110,r:150,fill:'url(#'+uid+'p)'}));}
+    var k=S('g',mik?{filter:'url(#'+uid+'b)','clip-path':'url(#'+uid+'c)'}:{});s.appendChild(k);
+    if(mik){[[-150,0],[150,0]].forEach(function(p){k.appendChild(S('rect',{x:70+p[0],y:24+p[1],width:280,height:172,rx:8,fill:'#eef2df',stroke:'#7d8a5c','stroke-width':4}))})}
+    k.appendChild(S('rect',{x:70,y:24,width:280,height:172,rx:8,fill:mik?'#eef2df':'var(--cell-cyto)',stroke:mik?'#7d8a5c':'var(--wall)','stroke-width':mik?4:6}));
+    if(!mik)k.appendChild(S('rect',{x:76,y:30,width:268,height:160,rx:5,fill:'none',stroke:'var(--cell-mem)','stroke-width':1.6}));
+    k.appendChild(S('rect',{x:130,y:72,width:170,height:84,rx:26,fill:mik?'#f7f8ee':'#ffffff',stroke:mik?'#c9cdb4':'var(--viz-line)','stroke-width':1.2}));
+    CH.forEach(function(c){k.appendChild(S('ellipse',{cx:c[0],cy:c[1],rx:mik?9:11,ry:mik?6:6,fill:mik?'#5f9a3a':'var(--chloro-bg)',stroke:mik?'none':'var(--chloro)','stroke-width':1.6}))});
+    if(mik){if(barw){k.appendChild(S('circle',{cx:108,cy:60,r:15,fill:'#6d5aa8',opacity:0.75}));}else{k.appendChild(S('circle',{cx:108,cy:60,r:15,fill:'#e6e8d6',stroke:'#cfd2bb','stroke-width':1}))}}
+    else{k.appendChild(nucleus(108,60,16,6));[[232,168,0],[96,172,20]].forEach(function(m){k.appendChild(mito(m[0],m[1],13,6,m[2]))});
+      [[100,110],[90,40],[170,40],[226,40],[276,36],[330,80],[330,130],[120,160],[180,165],[290,166],[86,190],[340,186]].forEach(function(p){k.appendChild(S('circle',{cx:p[0],cy:p[1],r:1.8,fill:'var(--viz-mut)',opacity:0.8}))})}
+    if(mik){s.appendChild(T(220,212,'×400 · '+(barw?'po barwieniu':'bez barwienia'),{s:11,f:'var(--viz-mut)'}))}
+    else{[[356,34,350,34,'ściana'],[356,52,345,52,'błona'],[356,104,325,104,'chloroplast'],[356,130,300,130,'wakuola'],[356,168,245,168,'mitochondrium'],[64,60,92,60,'jądro'],[64,110,98,110,'rybosom']].forEach(function(l){var L=l[0]<l[2];s.appendChild(S('line',{x1:L?l[0]+3:l[0]-3,y1:l[1],x2:l[2],y2:l[3],stroke:'var(--viz-mut)','stroke-width':1}));s.appendChild(T(l[0],l[1],l[4],{s:10.5,a:L?'end':'start'}))})}
+    return s}
+  function opis(){if(widok==='model')return'<b>Model szkolny</b><span>Narysowane i podpisane są wszystkie struktury: ściana, błona, jądro, wakuola, chloroplasty, mitochondria, rybosomy. To uproszczenie — kształty i proporcje są umowne, a zwykle nie da się zobaczyć ich wszystkich jednocześnie.</span>';
+    return'<b>Mikroskop świetlny (ok. ×400)</b><span>Wyraźnie widać: ścianę komórkową (granice komórek) i zielone chloroplasty; wakuolę rozpoznajemy po pustym, jasnym środku. '+(barw?'Po barwieniu (np. błękitem metylenowym; barwnik zależy od preparatu) jądro staje się widoczne jako ciemniejsza plamka.':'Jądro jest słabo widoczne — trzeba zabarwić preparat.')+'</span><span>Nie widać: rybosomów (ok. 25 nm) ani szczegółów mitochondriów — są mniejsze niż zdolność rozdzielcza mikroskopu świetlnego (ok. 0,2 µm). Błony komórkowej nie odróżnisz od ściany.</span>'}
+  function draw(){hold.innerHTML='';hold.appendChild(rys());box.innerHTML=opis();tools.innerHTML='';
+    [['mikroskop','widok w mikroskopie'],['model','model szkolny']].forEach(function(v){var b=btn(v[1],function(){widok=v[0];draw()});if(widok===v[0])b.className+=' on';b.setAttribute('aria-pressed',String(widok===v[0]));tools.appendChild(b)});
+    if(widok==='mikroskop'){var b=btn(barw?'usuń barwienie':'zabarw preparat',function(){barw=!barw;draw()});if(barw)b.className+=' on';tools.appendChild(b)}}
+  draw()}});
+})();
+
+/* viz: komorka-nakladki — grupa A · z dawnego bio-viz.js (rozbij.js) */
+(function(){
+'use strict';
+var BIO=window.BIO;
+var H=BIO.Lh["A.H"],svg=BIO.Lh["A.svg"],S=BIO.Lh["A.S"],T=BIO.Lh["A.T"],nucleus=BIO.Lh["A.nucleus"],g=BIO.Lh["A.g"],mito=BIO.Lh["A.mito"],btn=BIO.Lh["A.btn"];
+var KN_WARSTWY=[['jadro','jądro'],['mito','mitochondria'],['chloro','chloroplasty'],['wakuola','duża wakuola'],['sciana','ściana komórkowa'],['plazmid','plazmid']];
+var KN_TYPY=[
+ {k:'rdzen',n:'tylko rdzeń',w:[],opis:'Błona komórkowa, cytoplazma, rybosomy i materiał genetyczny (DNA) — to ma każda komórka.'},
+ {k:'bakteria',n:'bakteria',w:['sciana','plazmid'],sc:'mureina',opis:'Komórka prokariotyczna: DNA leży w cytoplazmie (nukleoid), brak jądra i organelli błoniastych; ściana z mureiny, często plazmidy.'},
+ {k:'zwierzeca',n:'zwierzęca',w:['jadro','mito'],opis:'Jądro i mitochondria, brak ściany komórkowej, chloroplastów i dużej wakuoli.'},
+ {k:'roslinna',n:'roślinna',w:['jadro','mito','chloro','wakuola','sciana'],sc:'celuloza',opis:'Jądro, mitochondria, chloroplasty, duża wakuola i ściana z celulozy.'},
+ {k:'grzyb',n:'grzyb',w:['jadro','mito','wakuola','sciana'],sc:'chityna',opis:'Jądro, mitochondria, wakuola i ściana z chityny; brak chloroplastów — grzyb jest cudzożywny.'}];
+BIO.define('komorka-nakladki',{opis:'Komórka z warstwami: wspólny rdzeń (błona, cytoplazma, rybosomy, DNA) + nakładki — jądro, mitochondria, chloroplasty, wakuola, ściana, plazmid; przyciski typów (bakteria, zwierzęca, roślinna, grzyb) i pojedynczych warstw; opcja start="rdzen|bakteria|zwierzeca|roslinna|grzyb"',
+mount:function(el,o){var on={},typ=null,typy=H('div','bv-tools'),warstwy=H('div','bv-tools'),hold=H('div'),box=H('div','bv-info');
+  [typy,warstwy,hold,box].forEach(function(e){el.appendChild(e)});
+  function ustaw(t){on={};t.w.forEach(function(w){on[w]=1})}
+  function rozpoznaj(){var k=KN_WARSTWY.map(function(w){return on[w[0]]?1:0}).join('');
+    return KN_TYPY.filter(function(t){return KN_WARSTWY.map(function(w){return t.w.indexOf(w[0])>=0?1:0}).join('')===k})[0]||null}
+  function rys(){var t=rozpoznaj(),sc=t&&t.sc?t.sc:null,R=[];
+    var s=svg(460,240,'Komórka: '+(t?t.n:'zestaw własny'),R);
+    if(on.sciana){s.appendChild(S('rect',{x:8,y:8,width:444,height:224,rx:on.jadro?14:70,fill:'var(--wall)','fill-opacity':0.15,stroke:'var(--wall)','stroke-width':7}));
+      s.appendChild(T(230,22,'ściana komórkowa'+(sc?' ('+sc+')':''),{s:10.5,f:'var(--viz-mut)'}))}
+    s.appendChild(S('rect',{x:20,y:30,width:420,height:190,rx:on.jadro?10:64,fill:'var(--cell-cyto)',stroke:'var(--cell-mem)','stroke-width':3}));
+    s.appendChild(T(110,212,'błona komórkowa',{s:10,f:'var(--cell-mem)'}));
+    if(on.wakuola){s.appendChild(S('rect',{x:196,y:48,width:on.chloro?150:120,height:92,rx:30,fill:'#ffffff',stroke:'var(--viz-line)','stroke-width':1.6}));s.appendChild(T(on.chloro?271:256,94,'wakuola',{s:11,f:'var(--viz-mut)',w:500}))}
+    for(var i=0;i<26;i++){var x=40+((i*67)%380),y=46+((i*41)%160);if(on.wakuola&&x>190&&x<352&&y>44&&y<144)continue;s.appendChild(S('circle',{cx:x,cy:y,r:2.2,fill:'var(--viz-mut)',opacity:0.7}))}
+    s.appendChild(T(230,212,'rybosomy (kropki)',{s:9.5,f:'var(--viz-mut)',w:500}));
+    if(on.jadro){s.appendChild(nucleus(110,104,38,3));s.appendChild(T(110,156,'jądro (DNA)',{s:10.5}))}
+    else{s.appendChild(S('g',{},[S('ellipse',{cx:150,cy:118,rx:62,ry:34,fill:'none',stroke:'var(--nucleus)','stroke-width':1.2,'stroke-dasharray':'4 3'}),g.squiggle(150,118,40,5),g.squiggle(152,116,30,9)]));
+      s.appendChild(T(150,164,'DNA w cytoplazmie (nukleoid)',{s:10.5}))}
+    if(on.mito){s.appendChild(mito(330,188,22,10,-12));s.appendChild(mito(62,186,17,8,20));s.appendChild(T(330,210,'mitochondrium',{s:10}))}
+    if(on.chloro){[[392,80,-20],[388,136,15],[178,190,0]].forEach(function(c){s.appendChild(S('g',{transform:'rotate('+c[2]+' '+c[0]+' '+c[1]+')'},[S('ellipse',{cx:c[0],cy:c[1],rx:24,ry:11,fill:'var(--chloro-bg)',stroke:'var(--chloro)','stroke-width':2}),S('path',{d:'M'+(c[0]-14)+' '+(c[1]-4)+'h10M'+(c[0]-14)+' '+c[1]+'h10M'+(c[0]-14)+' '+(c[1]+4)+'h10M'+(c[0]+2)+' '+(c[1]-4)+'h10M'+(c[0]+2)+' '+c[1]+'h10M'+(c[0]+2)+' '+(c[1]+4)+'h10',stroke:'var(--chloro)','stroke-width':2})]))});
+      s.appendChild(T(392,60,'chloroplasty',{s:10,f:'var(--chloro)'}))}
+    if(on.plazmid){var px=on.wakuola?236:280,py=on.wakuola?176:90;s.appendChild(S('circle',{cx:px,cy:py,r:11,fill:'none',stroke:'var(--dna-ink)','stroke-width':2}));s.appendChild(on.wakuola?T(px+16,py,'plazmid',{s:10,a:'start'}):T(px,py+22,'plazmid',{s:10}))}
+    return{s:s,t:t}}
+  function opis(t){var lista=['błona','cytoplazma','rybosomy',on.jadro?'jądro z DNA':'DNA w cytoplazmie'].concat(KN_WARSTWY.filter(function(w){return w[0]!=='jadro'&&on[w[0]]}).map(function(w){return w[1]}));
+    var h='<b>'+(t&&t.k==='rdzen'?'Wspólny rdzeń każdej komórki':t?'To pasuje do komórki: '+t.n:'Zestaw własny — nie pasuje do żadnego z czterech typów')+'</b><span>'+(t?t.opis:'')+'</span><span>Na rysunku: '+lista.join(', ')+'.</span>';
+    if(!t&&!on.jadro&&(on.mito||on.chloro))h+='<span>Uwaga: mitochondria i chloroplasty mają tylko komórki z jądrem (eukariotyczne). Bakteria ich nie ma.</span>';
+    else if(!t&&on.chloro&&!on.sciana)h+='<span>Chloroplasty bez ściany: tak bywa u niektórych protistów (np. euglena), ale nie u typowej rośliny.</span>';
+    else if(!t&&on.plazmid&&on.jadro)h+='<span>Plazmidy są typowe dla bakterii; w komórkach z jądrem zdarzają się rzadko (np. u drożdży).</span>';
+    else if(!t)h+='<span>Porównaj z przyciskami typów u góry: czego brakuje, a co jest za dużo?</span>';
+    return h}
+  function przyciski(){typy.innerHTML='';warstwy.innerHTML='';
+    KN_TYPY.forEach(function(t){var b=btn(t.n,function(){ustaw(t);typ=t.k;draw()});if(typ===t.k)b.className+=' on';b.setAttribute('aria-pressed',String(typ===t.k));typy.appendChild(b)});
+    KN_WARSTWY.forEach(function(w){var b=btn((on[w[0]]?'− ':'+ ')+w[1],function(){if(on[w[0]])delete on[w[0]];else on[w[0]]=1;typ=null;draw()});if(on[w[0]])b.className+=' on';b.setAttribute('aria-pressed',String(!!on[w[0]]));warstwy.appendChild(b)})}
+  function draw(){var r=rys();hold.innerHTML='';hold.appendChild(r.s);box.innerHTML=opis(r.t);przyciski()}
+  var st=KN_TYPY.filter(function(t){return t.k===(o&&o.start)})[0]||KN_TYPY[0];ustaw(st);typ=st.k;draw()}});
+})();
+
+/* viz: transport-blona — grupa B · z dawnego bio-viz.js (rozbij.js) */
+(function(){
+var BIO=window.BIO;
+var UID=BIO.Lh["B.UID"],S=BIO.Lh["B.S"],info=BIO.Lh["B.info"],H=BIO.Lh["B.H"],clr=BIO.Lh["B.clr"],key=BIO.Lh["B.key"];
+var TZ=[
+ {k:'dp',n:'Dyfuzja prosta',co:'małe, niepolarne: O₂, CO₂',bialko:'nie',atp:'nie',kier:'zgodnie z gradientem',opis:'Cząsteczki przechodzą wprost przez warstwę lipidów, z miejsca o wyższym stężeniu do niższego.'},
+ {k:'du',n:'Dyfuzja ułatwiona',co:'glukoza, jony',bialko:'tak (kanał, nośnik)',atp:'nie',kier:'zgodnie z gradientem',opis:'Białko kanałowe lub nośnikowe przepuszcza cząsteczki, które nie przejdą przez lipidy. Energia nie jest potrzebna.'},
+ {k:'ta',n:'Transport aktywny',co:'jony, np. Na⁺, K⁺',bialko:'tak (pompa)',atp:'tak',kier:'wbrew gradientowi',opis:'Pompa białkowa przenosi cząsteczki tam, gdzie jest ich już więcej. Zużywa energię z rozkładu ATP.'},
+ {k:'os',n:'Osmoza',co:'woda',bialko:'często (akwaporyny)',atp:'nie',kier:'do roztworu o wyższym stężeniu substancji rozpuszczonej',opis:'Woda przechodzi przez błonę półprzepuszczalną w stronę, gdzie jest więcej substancji rozpuszczonej (mniej „wolnej” wody).'}];
+function rnd(seed){return function(){seed=(seed*16807)%2147483647;return (seed-1)/2147483646}}
+function dots(g,x0,y0,w,h,n,sh,col,seed){var r=rnd(seed);for(var i=0;i<n;i++){var x=x0+6+r()*(w-12),y=y0+6+r()*(h-12);
+ if(sh==='hex'){var p='';for(var k=0;k<6;k++){var a=k*Math.PI/3;p+=(k?'L':'M')+(x+5*Math.cos(a)).toFixed(1)+','+(y+5*Math.sin(a)).toFixed(1)}g.appendChild(S('path',{d:p+'z',fill:col,stroke:'#1a2528','stroke-width':'.6'}))}
+ else if(sh==='big')g.appendChild(S('circle',{cx:x,cy:y,r:5.5,fill:col,stroke:'#1a2528','stroke-width':'.6'}));else g.appendChild(S('circle',{cx:x,cy:y,r:3,fill:col}))}}
+BIO.define('transport-blona',{opis:'Przekrój błony: dyfuzja prosta, ułatwiona, transport aktywny (ATP), osmoza; kropki = stężenie; klik = opis + tabela porównawcza; opcja start="dp|du|ta|os"',
+mount:function(el,o){var id='bw'+(BIO.Lh["B.nextUid"]()),cur=TZ.some(function(z){return z.k===o.start})?o.start:'dp',svg=S('svg',{viewBox:'0 0 360 270',role:'img','aria-label':'Przekrój błony komórkowej z czterema sposobami transportu','class':'bw-svg'}),out=info(),tw=H('div',{'class':'bw-tbl'}),t=H('table');tw.appendChild(t);[svg,out,tw].forEach(function(e){el.appendChild(e)});
+  function draw(){clr(svg);var d=S('defs'),mk=S('marker',{id:id+'a',viewBox:'0 0 10 10',refX:'8',refY:'5',markerWidth:'6',markerHeight:'6',orient:'auto'});mk.appendChild(S('path',{d:'M0,0L10,5L0,10z',fill:'#1a2528'}));d.appendChild(mk);svg.appendChild(d);
+   svg.appendChild(S('text',{x:6,y:14,'font-size':'10',fill:'#5a6a6d'},'zewnątrz komórki'));svg.appendChild(S('text',{x:6,y:264,'font-size':'10',fill:'#5a6a6d'},'wnętrze komórki'));
+   TZ.forEach(function(z,i){var x0=i*90,g=S('g',{'aria-label':z.n,style:'cursor:pointer'}),cx=x0+45,AR=function(y1,y2){g.appendChild(S('line',{x1:cx,y1:y1,x2:cx,y2:y2,stroke:'#1a2528','stroke-width':'1.8','marker-end':'url(#'+id+'a)'}))};
+    g.appendChild(S('rect',{x:x0+1,y:20,width:88,height:232,rx:6,fill:z.k===cur?'#e7f1e1':'#ffffff',stroke:z.k===cur?'#3f7a28':'#e8efed'}));
+    for(var x=x0+5;x<x0+88;x+=9)[118,152].forEach(function(y,j){g.appendChild(S('line',{x1:x,y1:y+(j?-5:5),x2:x,y2:y+(j?-16:16),stroke:'#d6b04a','stroke-width':'1.4'}));g.appendChild(S('circle',{cx:x,cy:y,r:4,fill:'#e4a83a'}))});
+    if(z.k==='dp'){dots(g,x0,24,88,88,14,'o','#2a62b5',11);dots(g,x0,158,88,88,3,'o','#2a62b5',12);AR(96,178)}
+    if(z.k==='du'){g.appendChild(S('rect',{x:cx-14,y:104,width:10,height:62,rx:4,fill:'#7aa66a'}));g.appendChild(S('rect',{x:cx+4,y:104,width:10,height:62,rx:4,fill:'#7aa66a'}));dots(g,x0,24,88,80,8,'hex','#f2c14e',21);dots(g,x0,166,88,80,2,'hex','#f2c14e',22);AR(90,182)}
+    if(z.k==='ta'){g.appendChild(S('rect',{x:cx-16,y:102,width:32,height:66,rx:10,fill:'#5b8bc9'}));g.appendChild(S('text',{x:cx,y:140,'text-anchor':'middle','font-size':'9',fill:'#fff','font-weight':'700'},'pompa'));dots(g,x0,24,88,80,3,'big','#c03d2c',31);dots(g,x0,170,88,76,10,'big','#c03d2c',32);AR(92,184);g.appendChild(S('text',{x:cx+16,y:192,'font-size':'10','font-weight':'700',fill:'#b07610'},'ATP'));g.appendChild(S('text',{x:cx+16,y:203,'font-size':'9',fill:'#b07610'},'→ADP'))}
+    if(z.k==='os'){g.appendChild(S('rect',{x:cx-5,y:104,width:10,height:62,rx:4,fill:'#8fc1d6'}));dots(g,x0,24,88,80,10,'o','#4aa3c9',41);dots(g,x0,24,88,80,2,'big','#a07cc5',42);dots(g,x0,170,88,76,6,'o','#4aa3c9',43);dots(g,x0,170,88,76,7,'big','#a07cc5',44);AR(92,184)}
+    var w=z.n.split(' ');g.appendChild(S('text',{x:cx,y:36,'text-anchor':'middle','font-size':'9.5','font-weight':'700',fill:'#1a2528'},w[0]));g.appendChild(S('text',{x:cx,y:47,'text-anchor':'middle','font-size':'9.5','font-weight':'700',fill:'#1a2528'},w[1]||''));
+    key(g,function(){cur=z.k;draw()});svg.appendChild(g)});
+   var z=TZ.filter(function(q){return q.k===cur})[0];out.innerHTML='<b>'+z.n+'</b><span>'+z.opis+'</span><span style="font-size:12.5px">Kropki: więcej kropek po jednej stronie = wyższe stężenie.</span>'}
+  var hr=H('tr');['Sposób','Co przechodzi','Białko','ATP','Kierunek'].forEach(function(x){hr.appendChild(H('th',{text:x}))});t.appendChild(hr);
+  TZ.forEach(function(z){var tr=H('tr');[z.n,z.co,z.bialko,z.atp,z.kier].forEach(function(x){tr.appendChild(H('td',{text:x}))});t.appendChild(tr)});draw()}});
+})();
+
+/* viz: fotosynteza-oddychanie — grupa C · z dawnego bio-viz.js (rozbij.js) */
+(function(){
+var BIO=window.BIO;
+var H=BIO.Lh["C.H"],S=BIO.Lh["C.S"],svg=BIO.Lh["C.svg"],T=BIO.Lh["C.T"],clr=BIO.Lh["C.clr"];
+BIO.define('fotosynteza-oddychanie',{opis:'Komórka liścia: chloroplast (fotosynteza) i mitochondrium (oddychanie) z wymianą substancji; suwak światła → bilans gazów liścia (oddychanie stale, fotosynteza zależna od światła)',
+mount:function(el,o){var tools=H('div','bv-tools'),rng=document.createElement('input');rng.type='range';rng.min=0;rng.max=100;rng.value=o.swiatlo||70;rng.setAttribute('aria-label','Natężenie światła');rng.style.flex='1 1 160px';
+  tools.appendChild(H('span','bv-score','światło:'));tools.appendChild(rng);var lab=H('b',null,'');tools.appendChild(lab);
+  var pic=H('div'),out=H('div','bv-info');el.appendChild(tools);el.appendChild(pic);el.appendChild(out);
+  function strz(g,x1,y1,x2,y2,c,w){g.appendChild(S('line',{x1:x1,y1:y1,x2:x2,y2:y2,stroke:c,'stroke-width':w||2,'stroke-linecap':'round','marker-end':'url(#fo-a'+c.replace('#','')+')'}))}
+  function draw(){var L=+rng.value,F=Math.min(1,L/60),R=.25,net=F-R;lab.textContent=L===0?'noc (ciemność)':L<20?'słabe':L<60?'średnie':'silne';
+   var s=svg(420,230,'Komórka liścia: chloroplast i mitochondrium, wymiana CO₂, O₂, wody i glukozy'),d=S('defs');
+   ['2e7d32','c0392b','1565c0','8d6e00','5d6b7a'].forEach(function(c){var m=S('marker',{id:'fo-a'+c,viewBox:'0 0 10 10',refX:'8',refY:'5',markerWidth:'6',markerHeight:'6',orient:'auto'});m.appendChild(S('path',{d:'M0,0L10,5L0,10z',fill:'#'+c}));d.appendChild(m)});s.appendChild(d);
+   s.appendChild(S('rect',{x:70,y:30,width:280,height:170,rx:26,fill:'#eef7e9',stroke:'#7aa66a','stroke-width':3}));s.appendChild(T(210,20,'komórka liścia',{s:13,f:'var(--viz-mut)'}));
+   var sun=S('g',{opacity:.25+.75*L/100});sun.appendChild(S('circle',{cx:32,cy:40,r:16,fill:'#f6c343'}));for(var i=0;i<8;i++){var a=i*Math.PI/4;sun.appendChild(S('line',{x1:32+20*Math.cos(a),y1:40+20*Math.sin(a),x2:32+27*Math.cos(a),y2:40+27*Math.sin(a),stroke:'#f6c343','stroke-width':2.5}))}s.appendChild(sun);
+   var ch=S('g',{'data-k':'ch'});ch.appendChild(S('ellipse',{cx:150,cy:115,rx:52,ry:30,fill:'#5fae4e',stroke:'#2e7d32','stroke-width':2,opacity:.35+.65*F}));for(var j=0;j<4;j++)ch.appendChild(S('rect',{x:116+j*18,y:104,width:12,height:22,rx:3,fill:'#2e7d32',opacity:.8}));ch.appendChild(T(150,155,'chloroplast',{s:13}));s.appendChild(ch);
+   var mi=S('g',{'data-k':'mi'});mi.appendChild(S('ellipse',{cx:290,cy:115,rx:46,ry:26,fill:'#f2b8a0',stroke:'#c0392b','stroke-width':2}));mi.appendChild(S('path',{d:'M254 115 q8 -16 16 0 t16 0 t16 0 t16 0 t8 0',fill:'none',stroke:'#c0392b','stroke-width':1.6}));mi.appendChild(T(290,152,'mitochondrium',{s:13}));s.appendChild(mi);
+   if(L>0){strz(s,32,70,108,100,'#8d6e00',2);}
+   if(F>0){strz(s,200,105,240,105,'#8d6e00',2.5);s.appendChild(T(220,96,'glukoza',{s:12,f:'#8d6e00'}))}
+   if(F>0){strz(s,202,128,240,128,'#1565c0',1.6);s.appendChild(T(221,140,'O₂',{s:12,f:'#1565c0'}))}
+   
+   // wymiana z otoczeniem: wypadkowa
+   var gO=net>0?'O₂':'CO₂',gI=net>0?'CO₂':'O₂',k=Math.min(1,Math.abs(net)/(1-R)),w=1.5+4*k;
+   if(Math.abs(net)>.02){strz(s,395,60,355,90,net>0?'#5d6b7a':'#1565c0',w);s.appendChild(T(400,52,gI+' do liścia',{s:12,a:'end',f:'var(--viz-mut)'}));strz(s,355,150,395,180,net>0?'#1565c0':'#5d6b7a',w);s.appendChild(T(410,196,gO+' z liścia',{s:12,a:'end',f:'var(--viz-mut)'}))}
+   else s.appendChild(T(395,115,'bilans ≈ 0',{s:13,a:'end',f:'var(--viz-mut)'}));
+   s.appendChild(T(150,62,'fotosynteza: '+Math.round(F*100)+'%',{s:12,f:'#2e7d32'}));s.appendChild(T(290,72,'oddychanie: stałe',{s:12,f:'#c0392b'}));
+   clr(pic);pic.appendChild(s);
+   BIO.fx.info(pic,out,{ch:['Chloroplast — fotosynteza',' 6CO₂ + 6H₂O —(światło, chlorofil)→ C₆H₁₂O₆ + 6O₂. Intensywność rośnie ze światłem (do pewnej granicy); w ciemności fotosynteza nie zachodzi.'],
+     mi:['Mitochondrium — oddychanie tlenowe',' C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energia (ATP). Zachodzi stale, w dzień i w nocy.']});
+   out.innerHTML=L===0?'<b>Noc:</b> fotosynteza nie zachodzi, oddychanie trwa — liść <b>pobiera O₂ i oddaje CO₂</b>.':net<-.02?'<b>Przewaga oddychania:</b> fotosynteza słabsza niż oddychanie — liść nadal netto <b>oddaje CO₂</b>.':net<=.02?'<b>Punkt kompensacyjny:</b> ile O₂ powstaje w fotosyntezie, tyle zużywa oddychanie — wymiana gazów z otoczeniem ≈ 0.':'<b>Przewaga fotosyntezy:</b> fotosynteza intensywniejsza niż oddychanie — liść netto <b>pobiera CO₂ i oddaje O₂</b>. Oddychanie nadal trwa (część O₂ zużywa mitochondrium).'}
+  rng.oninput=draw;draw()}});
+})();
+
+/* viz: energia-glukozy — grupa C · z dawnego bio-viz.js (rozbij.js) */
+(function(){
+var BIO=window.BIO;
+var H=BIO.Lh["C.H"],seg=BIO.Lh["C.seg"],svg=BIO.Lh["C.svg"],T=BIO.Lh["C.T"],S=BIO.Lh["C.S"],clr=BIO.Lh["C.clr"];
+BIO.define('energia-glukozy',{opis:'Oddychanie tlenowe vs fermentacja alkoholowa vs mlekowa: warunki, miejsce, produkty i ilość ATP z jednej cząsteczki glukozy (słupki)',
+mount:function(el,o){var P=[['tl','oddychanie tlenowe','z tlenem','cytoplazma + mitochondria','CO₂ + H₂O',31,'#c0392b','prawie wszystkie organizmy'],
+   ['al','fermentacja alkoholowa','bez tlenu','cytoplazma','alkohol etylowy + CO₂',2,'#8d6e00','drożdże — chleb (CO₂ spulchnia ciasto), wino'],
+   ['ml','fermentacja mlekowa','bez tlenu','cytoplazma','kwas mlekowy',2,'#1565c0','bakterie mlekowe (jogurt, kiszonki); mięśnie przy intensywnym wysiłku']],cur=o.start||'tl';
+  var sg=H('div','bv-tools'),pic=H('div'),out=H('div','bv-info');el.appendChild(sg);el.appendChild(pic);el.appendChild(out);
+  function draw(){seg(sg,P.map(function(p){return[p[0],p[1]]}),cur,function(k){cur=k;draw()});
+   var s=svg(340,214,'Ilość ATP z jednej cząsteczki glukozy w oddychaniu tlenowym i fermentacjach');
+   P.forEach(function(p,i){var y=8+i*62,w=p[5]/38*230,on=p[0]===cur;s.appendChild(T(6,y+9,p[1],{s:13,a:'start',w:on?800:600}));
+    s.appendChild(S('rect',{x:6,y:y+20,width:Math.max(8,w),height:24,rx:6,fill:p[6],opacity:on?1:.45}));s.appendChild(T(14+Math.max(8,w),y+32,'ok. '+(p[5]===31?'30–32':p[5])+' ATP',{s:13,a:'start',w:700,f:p[6]}))});
+   s.appendChild(T(170,206,'ATP z 1 cząsteczki glukozy (orientacyjnie; starsze podręczniki: 38)',{s:10.5,f:'var(--viz-mut)'}));clr(pic);pic.appendChild(s);
+   var p=P.filter(function(x){return x[0]===cur})[0];
+   out.innerHTML='<b>'+p[1][0].toUpperCase()+p[1].slice(1)+'</b> — '+p[2]+', '+p[3]+'.<br>Glukoza → <b>'+p[4]+'</b> + energia (ATP). Kto: '+p[7]+'.'+(cur==='tl'?'<br>Glukoza rozkładana do końca (do CO₂ i H₂O) — energii jest <b>wielokrotnie więcej</b> niż w fermentacji.':'<br>Glukoza rozkładana <b>niecałkowicie</b> — w produkcie (alkohol, kwas mlekowy) zostaje dużo energii, dlatego ATP jest niewiele.')}
+  draw()}});
+})();
+
+/* viz: proba-kontrolna — grupa C · z dawnego bio-viz.js (rozbij.js) */
+(function(){
+var BIO=window.BIO;
+var H=BIO.Lh["C.H"],seg=BIO.Lh["C.seg"];
+BIO.define('proba-kontrolna',{opis:'Planowanie doświadczenia: próba badawcza i kontrolna różnią się tylko jednym czynnikiem; przełączniki warunków, ocena planu (zmienna niezależna, zależna, stałe)',
+mount:function(el,o){var D={mocz:{n:'Moczarka a światło',bad:'światło',zal:'liczba pęcherzyków O₂ w 5 min',cz:[['swiatlo','światło',['silne','słabe'],'światło'],['temp','temperatura wody',['20 °C','30 °C']],['nahco3','NaHCO₃ w wodzie',['tak','nie']],['galaz','gałązka moczarki',['jednakowa','dłuższa']]]},
+   drozdze:{n:'Drożdże a CO₂',bad:'drożdże',zal:'zmętnienie wody wapiennej',cz:[['drozdze','drożdże',['są','brak'],'drożdże'],['cukier','roztwór cukru',['tak','nie']],['temp','temperatura',['ok. 35 °C','ok. 5 °C']],['objetosc','objętość roztworu',['200 cm³','100 cm³']]]}};
+  var cur=o.start||'mocz',A={},B={};function reset(){var d=D[cur];A={};B={};d.cz.forEach(function(c){A[c[0]]=0;B[c[0]]=c[3]?1:0})}reset();
+  var sg=H('div','bv-tools'),tab=H('div'),out=H('div','bv-info');el.appendChild(sg);el.appendChild(tab);el.appendChild(out);
+  function draw(){var d=D[cur];seg(sg,Object.keys(D).map(function(k){return[k,D[k].n]}),cur,function(k){cur=k;reset();draw()});
+   var h='<table style="width:100%;border-collapse:collapse;font-size:13.5px;margin-top:6px"><tr><th align="left" style="padding:4px">czynnik</th><th style="padding:4px">próba badawcza</th><th style="padding:4px">próba kontrolna</th></tr>';
+   d.cz.forEach(function(c){var r=A[c[0]]!==B[c[0]];h+='<tr style="background:'+(r?'#fff4e5':'transparent')+'"><td style="padding:4px">'+c[1]+(c[3]?' <small>(badany)</small>':'')+'</td>'+['A','B'].map(function(s){var v=(s==='A'?A:B)[c[0]];return '<td align="center" style="padding:4px"><button type="button" class="bv-btn'+(r?' on':'')+'" data-s="'+s+'" data-c="'+c[0]+'">'+c[2][v]+'</button></td>'}).join('')+'</tr>'});
+   tab.innerHTML=h+'</table>';[].forEach.call(tab.querySelectorAll('button'),function(b){b.onclick=function(){var X=b.dataset.s==='A'?A:B;X[b.dataset.c]=1-X[b.dataset.c];draw()}});
+   var rozne=d.cz.filter(function(c){return A[c[0]]!==B[c[0]]}),badany=d.cz.filter(function(c){return c[3]})[0];
+   out.innerHTML=!rozne.length?'<b>Próby są identyczne</b> — nie da się niczego wykazać. Zmień w jednej próbie badany czynnik: <b>'+badany[1]+'</b>.':
+    rozne.length>1?'<b>Błąd planu:</b> próby różnią się '+rozne.length+' czynnikami ('+rozne.map(function(c){return c[1]}).join(', ')+'). Nie wiadomo, który spowodował wynik — zostaw różnicę tylko w czynniku <b>'+badany[1]+'</b>.':
+    rozne[0][3]?'<b>Dobry plan.</b> Zmienna niezależna (badana): <b>'+d.bad+'</b>. Zmienna zależna (mierzona): <b>'+d.zal+'</b>. Pozostałe warunki stałe — tylko wtedy wynik można przypisać badanemu czynnikowi. Wiarygodność zwiększą <b>powtórzenia</b>.':
+    '<b>Błąd planu:</b> próby różnią się czynnikiem „'+rozne[0][1]+'”, a badamy <b>'+badany[1]+'</b>. Zmieniaj tylko badany czynnik.'}
+  draw()}});
+})();
+
+/* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
+   postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
+(function(){
+var html=document.documentElement;
+function ciemny(){var t=html.getAttribute('data-theme');return t?t==='dark':!!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function oznacz(){if(ciemny())html.setAttribute('data-ciemny','');else html.removeAttribute('data-ciemny')}
+try{var z=localStorage.getItem('lekcja-motyw');if(z)html.setAttribute('data-theme',z)}catch(e){}
+oznacz();if(window.matchMedia)try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',oznacz)}catch(e){}
+
+function start(){
+var root=document;
+root.querySelectorAll('.flashcard').forEach(function(b){if(b.dataset.lkFz)return;b.dataset.lkFz=1;b.removeAttribute('onclick');b.setAttribute('aria-pressed','false');
+ b.addEventListener('click',function(){var on=b.classList.toggle('flipped');b.setAttribute('aria-pressed',on?'true':'false')})});
+root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibling,ok=0,n=0,all=w.querySelectorAll('.quiz-q').length;
+ if(sc&&sc.classList.contains('quiz-score'))sc.setAttribute('aria-live','polite');
+ w.querySelectorAll('.quiz-q').forEach(function(d){var good=+d.dataset.ok;d.querySelectorAll('.quiz-opt').forEach(function(b){b.onclick=function(){if(d.dataset.done)return;d.dataset.done=1;n++;if(+b.dataset.a===good)ok++;
+  d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
+  if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
+  if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var b=root.querySelector('#advToggle');
+if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
+ if(!k)b.style.display='none';
+ b.textContent='Pokaż treści akademickie ('+k+')';
+ b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';adv().forEach(function(d){d.open=on});b.setAttribute('aria-pressed',on?'true':'false');b.textContent=(on?'Ukryj':'Pokaż')+' treści akademickie ('+k+')'}}
+// spis zwinięty na telefonie
+var sp=root.querySelector('#spis');if(sp&&window.innerWidth<700)sp.removeAttribute('open');
+// przełącznik jasny/ciemny
+var tb=root.querySelector('#lkMotyw');
+if(tb)tb.onclick=function(){var t=ciemny()?'light':'dark';html.setAttribute('data-theme',t);try{localStorage.setItem('lekcja-motyw',t)}catch(e){}oznacz()};
+// postęp czytania + aktywna sekcja w spisie
+var bar=root.querySelector('.lk-prog'),links={},secs=[];
+root.querySelectorAll('.toc-link[href^="#"]').forEach(function(a){var s=document.getElementById(a.getAttribute('href').slice(1));if(s){links[s.id]=a;secs.push(s)}});
+var tick=false;function upd(){tick=false;var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+ if(bar)bar.style.transform='scaleX('+(max>0?Math.min(1,h.scrollTop/max):0)+')';
+ var cur=null,lim=(parseInt(getComputedStyle(h).getPropertyValue('--header-h'))||52)+40;
+ for(var i=0;i<secs.length;i++){if(secs[i].getBoundingClientRect().top<=lim)cur=secs[i];else break}
+ for(var id in links)links[id].classList.toggle('on',!!cur&&cur.id===id)}
+window.addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(upd)}},{passive:true});upd();
+// fiszki: pokazuje pierwsze N (domyślnie 6, atrybut data-fz-pierwsze="N"), reszta po wyraźnym przycisku
+root.querySelectorAll('.flashcard-grid').forEach(function(g){
+ var cards=[].slice.call(g.querySelectorAll('.flashcard')),N=+(g.getAttribute('data-fz-pierwsze')||6);
+ if(!(N>0)||cards.length<=N)return;
+ var ukryte=cards.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more';
+ function lab(on){ukryte.forEach(function(c){c.hidden=!on});
+  b.textContent=on?'▲ Zwiń fiszki':'▼ Pokaż pozostałe '+ile+' fiszek (razem '+cards.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ g.insertAdjacentElement('afterend',b);
+});
+// testy: pokazuje pierwsze N pytań (domyślnie 5, atrybut data-q-pierwsze), reszta po wyraźnym przycisku
+root.querySelectorAll('.che-quiz').forEach(function(w){
+ var qs=[].slice.call(w.querySelectorAll('.quiz-q')),N=+(w.getAttribute('data-q-pierwsze')||5);
+ if(!(N>0)||qs.length<=N)return;
+ var ukryte=qs.slice(N),ile=ukryte.length,b=document.createElement('button');
+ b.type='button';b.className='fz-more q-more';
+ function lab(on){ukryte.forEach(function(q){q.hidden=!on});
+  b.textContent=on?'▲ Zwiń pytania':'▼ Pokaż pozostałe '+ile+(ile===1?' pytanie':(ile<5?' pytania':' pytań'))+' (razem '+qs.length+')';b.setAttribute('aria-expanded',on?'true':'false')}
+ lab(false);
+ b.onclick=function(){lab(b.getAttribute('aria-expanded')!=='true')};
+ var sc=w.nextElementSibling;(sc&&sc.classList.contains('quiz-score')?sc:w).insertAdjacentElement('afterend',b);
+});
+// grafiki przedmiotu
+if(window.BIO&&BIO.mountAll)BIO.mountAll(root);
+if(window.LEKCJA_VIZ&&LEKCJA_VIZ.mountAll)LEKCJA_VIZ.mountAll(root);
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();
+
+</script>
+</body>
+</html>

@@ -32,7 +32,7 @@ Id w MD/HTML/kodzie jest angielskie (jak w silniku); nazwa PL z rejestru. Plik: 
 | `stirBar` | stirBar | Mieszadełko. |
 | `turbidity` | turbidity | Zmętnienie. |
 
-## chemia / naczynia (34)
+## chemia / naczynia (35)
 
 | id | nazwa | opis |
 |---|---|---|
@@ -70,6 +70,7 @@ Id w MD/HTML/kodzie jest angielskie (jak w silniku); nazwa PL z rejestru. Plik: 
 | `volFlask` | Kolba miarowa | Kolba miarowa — rozcieńczanie do kreski. |
 | `volFlask` | Kolba miarowa | Kolba miarowa — rozcieńczanie do kreski. |
 | `watchGlass` | watchGlass | Szkiełko zegarkowe. |
+| `zlewkaOdwrocona` | Zlewka odwrócona (dnem do góry) | Zlewka odwrócona nad płomieniem — kropelki H₂O na dnie. |
 
 ## chemia / reakcje (60)
 
@@ -136,7 +137,7 @@ Id w MD/HTML/kodzie jest angielskie (jak w silniku); nazwa PL z rejestru. Plik: 
 | `znoh2Naoh` | Zn(OH)₂ + NaOH (nadmiar) |  |
 | `znso4Naoh` | ZnSO₄ + NaOH (bez nadmiaru) |  |
 
-## chemia / sceny (9)
+## chemia / sceny (10)
 
 | id | nazwa | opis |
 |---|---|---|
@@ -148,13 +149,15 @@ Id w MD/HTML/kodzie jest angielskie (jak w silniku); nazwa PL z rejestru. Plik: 
 | `heating` | Ogrzewanie | Naczynie nad płomieniem — para, poświata, ewentualna zmiana barwy osadu. |
 | `indicator` | Wskaźnik w roztworze | Roztwór + wskaźnik — zmiana barwy cieczy. |
 | `indicatorRack` | Zestaw wskaźników | Szereg probówek z różnymi wskaźnikami / pH. |
+| `metanSpalanie` | Spalanie metanu — dwa dowody | Palnik pod zlewką odwróconą (krople H₂O); gaz do wody wapiennej (zmętnienie = CO₂). |
 | `titration` | Miareczkowanie | Biureta nad kolbą — krople, menisk, zmiana barwy punktu końcowego. |
 
-## chemia / widoki (27)
+## chemia / widoki (28)
 
 | id | nazwa | opis |
 |---|---|---|
 | `acid-rain-v01` | Kwaśne deszcze — emisja → chmura → opad → jezioro, las, zabytki |  |
+| `j03-osady-v01` | Dwie probówki, dwie sole — czy wytrąci się osad? |  |
 | `kinetics-v01` | Szybkość reakcji: metal + kwas solny (pomiar objętości H₂) |  |
 | `kw-bufor-v01` | Bufor octanowy kontra czysta woda — dodawaj kwas i zasadę |  |
 | `kw-doswiadczenia-v01` | Pracownia: doświadczenia z kwasami |  |

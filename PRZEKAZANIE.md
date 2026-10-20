@@ -2,6 +2,14 @@
 
 Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów (niżej) — czytaj tylko ten, którego dotyczy zadanie.
 
+## ⚑ PRZEKAZANIE — ANGIELSKI (2026-10-17, gałąź `claude/olimpiada-8-sprint`) — AKTUALNE
+
+- **Stan kursu:** `angielski/lekcje_md/` — L001–L027 (wszystkie z md + HTML). Numeracja po przenumerowaniu wg kolejności audytu; mapowanie stara→nowa: `angielski/plany/AUDYT_EN_kurs_2026-10-15.md`, sekcja 6. Kolejność: L001 operatory · L002 czasy teraźniejsze/przeszłe · L003 present perfect · L004 past simple/continuous · L005 future · L006 modalne · L007 tryb rozkazujący/stative/phrasal (10 zwrotów) · L008 rzeczownik · L009 przedimki · L010 przymiotniki · L011 przysłówek · L012 zaimki · L013 strona bierna · L014 warunkowe (+ wish) · L015 względne · L016 question tags · L017 used to/would · L018 spójniki · L019 mowa zależna · L020 słowotwórstwo · L021 inwersja (olimpijska) · L022 as/like/so/such/too/enough · L023 przyimki czasu i miejsca · L024 zdania czasowe · L025 there is/are · L026 pisanie (e-mail, list) · L027 słownictwo tematyczne.
+- **Stan weryfikacji:** W1 własny (przegląd błędów + poprawki) → `angielski/plany/audyty/W1_SAM_2026-10-15.md`. W2 (zakres) → `angielski/plany/audyty/W2_ZAKRES_2026-10-15.md` — braki z W2 uzupełnione (L023–L027, wish w L014). Paczki W1 dla zewnętrznej AI: `eksport/out/W1_ANG_A…I.md` (wysłane użytkownikowi, odpowiedzi jeszcze nie wczytane). **Żadna lekcja nie ma jeszcze stanu „W1 FULL”.**
+- **Otwarte:** (1) wczytać odpowiedzi zewnętrznego W1 (`narzedzia/wczytaj_odpowiedz.py`) i wprowadzić wszystkie uwagi; (2) fakty wykładów i ciekawostek L001–L027 — nie sprawdzone źródłami; (3) w L026 liczba słów i kryteria arkusza — do sprawdzenia z CKE; (4) stare numery w dokumentach historycznych (`L001-EN-Wszystkie-lekcje.md`, `eksport/out/`, ZIP-y) — celowo zostawione.
+- **Gdzie co jest:** ZIP przekazania (`narzedzia/zipuj_przekazanie.py`) → cały kurs i olimpiada; HTML-y osobno per przedmiot (ZIP-y w `scratchpad` sesji 2026-10-15).
+- **Uwaga:** lekcje z uploadu (18–36) — duplikaty odrzucone, unikalne przeniesione do R-serii (teraz L018–L027). Pliki uploadu nie są w repo.
+
 ## ⚑ PRZEKAZANIE DLA NOWEGO WĄTKU (2026-10-11 06:30, wątek „W1 polski + grafiki BIO + silnik”) — AKTUALNE
 - **Gałąź `claude/che-lekcje`** (ostatni commit przed wpisem: 4b73b76). Start: `git pull --rebase --autostash`.
 - **Zrobione 2026-10-10:**

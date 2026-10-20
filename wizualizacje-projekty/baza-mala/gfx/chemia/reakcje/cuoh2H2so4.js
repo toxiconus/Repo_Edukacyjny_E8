@@ -1,0 +1,1 @@
+P('cuoh2H2so4',{n:'Cu(OH)₂ + H₂SO₄',solid:{col:'ppt-cu-oh-2',eq:4,end:0,t:'powder',shape:'powder'},l1:'ion-cu2',out:['barwa'],why:'Niebieski osad znika, roztwór niebieski (Cu²⁺).'});

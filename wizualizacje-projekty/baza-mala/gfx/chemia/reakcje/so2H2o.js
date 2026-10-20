@@ -1,0 +1,1 @@
+P('so2H2o',{n:'SO₂ + H₂O (+ wskaźnik uniwersalny)',l0:u(7),l1:u(2.5),out:['barwa'],gas:'SO2',bubN:.6,teacher:1,why:'SO₂ rozpuszcza się w wodzie; roztwór kwasowy (H₂SO₃) — wskaźnik czerwonopomarańczowy. Dygestorium.'});

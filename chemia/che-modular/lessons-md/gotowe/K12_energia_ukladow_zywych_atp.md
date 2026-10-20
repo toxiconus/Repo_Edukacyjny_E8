@@ -8,7 +8,7 @@ lead: Organizm nie spala glukozy jak ognisko. Rozkłada ją w wielu małych krok
 plakietki: [[understand:ROZUMIENIE]][[extra:LO]][[exam:OLIMPIADA]]
 uwaga: Lekcja poza podstawą (LO i olimpiada). Wartości ΔG°′ dla biochemii dotyczą pH 7 i stężeń standardowych; w W1 sprawdzić wartości z literatury.
 stopka: **CHEMIA K12 v1.0** · Energia układów żywych · 2026
-stan: NOWA LEKCJA (2026-10-12) — Claude Haiku 5.5, na prośbę użytkownika (ATP); W1 FULL do zrobienia
+stan: NOWA LEKCJA (2026-10-12) — Claude Haiku 5.5, na prośbę użytkownika (ATP); uzupełnienie wklejki 2026-10-14 (samorzutność a szybkość, zadanie 6, ciekawostka); W1 FULL po przeglądzie linia po linii do wykonania
 ---
 
 Ta lekcja pokazuje, jak chemia opisuje energię w organizmach. Po jej przejściu policzysz, czy reakcja jest samorzutna, wyjaśnisz budowę ATP i hydrolizę, obliczysz sprzężenie reakcji oraz orientacyjną sprawność zapisu energii glukozy w ATP.
@@ -78,6 +78,12 @@ Entropia mierzy liczbę sposobów, na jakie można ułożyć cząsteczki i energ
 **Wniosek:** reakcja nie jest samorzutna w 298 K, ale byłaby samorzutna w wyższej temperaturze, gdzie T·ΔS przewyższa ΔH.
 :::
 
+::: karta warning | Ważne rozróżnienie: samorzutność a szybkość
+Ujemne ΔG mówi o korzystności termodynamicznej, a nie o szybkości. Reakcja z ΔG < 0 może przebiegać bardzo wolno z powodu dużej energii aktywacji. Enzym przyspiesza reakcję, obniżając energię aktywacji, ale nie zmienia znaku ΔG.
+
+Przykład: spalanie glukozy jest termodynamicznie korzystne, a kostka cukru nie zapala się samorzutnie w temperaturze pokojowej.
+:::
+
 ## 3 | ATP — budowa i hydroliza {#atp}
 
 ATP (trifosforan adenozyny) składa się z adeniny, rybozy i trzech reszt fosforanowych. Najważniejsze są wiązania bezwodnikowe między fosforanami.
@@ -124,6 +130,10 @@ Przy ok. 30 cząsteczkach ATP na glukozę (wartość orientacyjna) zapisana ener
 Organizm nie „oszczędza” energii przez brak ciepła — termodynamika tego nie pozwala. Jego sprawność zapisu 1/3 jest wysoka jak na proces biochemiczny, a większość energii i tak przechodzi w ciepło.
 :::
 
+::: karta extra | Ciekawostka — ATP jako waluta energii
+W 1941 roku Fritz Lipmann zaproponował, że fosforany o dużej energii przenoszenia grupy są uniwersalnym nośnikiem energii w komórce. Stąd określenie ATP jako „waluty energetycznej”. Lipmann otrzymał za te badania Nagrodę Nobla w 1953 roku wspólnie z Hansem Krebsem.
+:::
+
 ## 7 | Zadania z kluczem (poziom olimpijski) {#cwiczenia}
 
 ::: karta exam | Zadanie 1 (2 pkt) — samorzutność
@@ -161,6 +171,14 @@ Odpychanie ładunków i stabilizacja produktów sprzyjają reakcji; ponadto z je
 :::
 :::
 
+::: karta exam | Zadanie 6 — pułapka: szybkość a samorzutność
+Czy reakcja z ΔG < 0 musi zachodzić natychmiast? Uzasadnij.
+
+::: odp | Pokaż klucz
+Nie. Ujemne ΔG mówi o korzystności termodynamicznej, nie o szybkości. Szybkość zależy między innymi od energii aktywacji i obecności enzymu, który jej nie zmienia termodynamicznie.
+:::
+:::
+
 ## 8 | Fiszki {#fiszki}
 
 ::: fiszki
@@ -170,6 +188,7 @@ ATP | nukleotyd z trzema resztami fosforanowymi | basic:atp
 Hydroliza ATP | ATP + H₂O → ADP + Pᵢ; ΔG°′ ≈ −30,5 kJ/mol | basic:atp
 Sprzężenie | suma ΔG < 0 dzięki hydrolizie ATP | understand:atp
 ΔG = ΔG°′ + RT ln Q | wpływ stężeń na ΔG | extra:termo
+Samorzutność a szybkość | ΔG < 0 nie oznacza szybkiej reakcji; enzym nie zmienia ΔG | understand:kinetyka
 :::
 
 ## 9 | Słownik {#slownik}
@@ -229,3 +248,13 @@ Lekcja biologiczna o ATP (**BIO.06.L091**) pokazuje te same procesy od strony ko
 
 - Lekcja nowa, na prośbę użytkownika. Wartości ΔG°′ (hydroliza ATP ≈ −30,5 kJ/mol; fosforylacja glukozy ≈ +13,8 kJ/mol) i ΔH spalania glukozy (≈ −2800 kJ/mol) są standardowe, do weryfikacji w W1.
 - Liczba 30 ATP na glukozę zależy od założeń (wydajność przenoszenia NADH) — orientacyjna.
+
+### AUDYT — wklejka zewnętrzna (2026-10-14)
+
+Surowa odpowiedź: `chemia/plany/audyty/K12_wklejka_2026-10-14.md`.
+
+**Wprowadzono:** karta „Samorzutność a szybkość” (enzym nie zmienia ΔG, energia aktywacji, kostka cukru); zadanie 6 z pułapką kinetyczną i kluczem; fiszka o samorzutności a szybkości; ciekawostka o ATP jako walucie energii (Lipmann 1941, Nagroda Nobla 1953 wspólnie z Krebsem).
+
+**Już w lekcji:** wzory ΔG, przykład z Q = 0,01 (−42,4 kJ/mol), fosforylacja glukozy (+13,8 − 30,5 = −16,7 kJ/mol), sprawność, zadania 1–5.
+
+**Nieprzyjęte:** frontmatter w bloku kodu i fiszki/test w blokach ``` (niezgodne ze składnią repo); pytanie testowe „Dlaczego w komórce rzeczywiste ΔG” — urwane, bez treści i odpowiedzi; stan „W1 FULL — Perplexity” — pełnego przeglądu linia po linii nie wykonano.

@@ -1,0 +1,2 @@
+vessel('dropFunnel',{path:(c,r)=>{const{cx,n,R,yb,yt,cy}=dfG(r);c.beginPath();c.moveTo(cx-n,r.y);c.lineTo(cx-n,yt);c.bezierCurveTo(cx-n,yt+R*.5,cx-R,cy-R*.7,cx-R,cy);c.bezierCurveTo(cx-R,cy+R*.85,cx-5,yb-8,cx-3,yb);c.lineTo(cx-3,r.y+r.h);c.lineTo(cx+3,r.y+r.h);c.lineTo(cx+3,yb);c.bezierCurveTo(cx+5,yb-8,cx+R,cy+R*.85,cx+R,cy);c.bezierCurveTo(cx+R,cy-R*.7,cx+n,yt+R*.5,cx+n,yt);c.lineTo(cx+n,r.y)},
+ hmax:.5,pad:r=>r.h*.38,lw:3,rim:r=>{const{cx,n}=dfG(r);return[cx-n,cx+n,r.y]},hl:.3});

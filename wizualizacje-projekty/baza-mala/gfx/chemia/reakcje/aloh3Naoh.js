@@ -1,0 +1,1 @@
+P('aloh3Naoh',{n:'Al(OH)₃ + NaOH (nadmiar)',solid:{col:'ppt-al-oh-3',eq:4,end:0,t:'powder',shape:'powder'},out:['nic'],why:'Biały osad roztwarza się w nadmiarze mocnej zasady — amfoteryczność.'});

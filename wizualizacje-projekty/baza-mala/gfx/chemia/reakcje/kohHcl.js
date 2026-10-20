@@ -1,0 +1,1 @@
+P('kohHcl',{n:'KOH + HCl (+ fenoloftaleina)',l0:pink,l1:php,out:['barwa'],heat:.4,T:31,why:'Zanik barwy malinowej; roztwór lekko się ogrzewa.'});

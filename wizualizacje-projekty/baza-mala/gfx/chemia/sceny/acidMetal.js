@@ -1,0 +1,10 @@
+sceneReg('acidMetal',{label:'Metal + kwas solny → wodór (próba „pyk!")',lesson:'kwasy',desc:'Aktywność metali wobec kwasu; wykrywanie wodoru płonącym łuczywkiem.',height:360,aspect:1.45,
+ init:()=>({metal:'Zn',conc:1,rem:1,h2:0,splint:0,test:0,msg:''}),
+ parts:[{id:'stand',x:.06,y:.04,w:.5,h:.94,s:{clamps:[{x:.43,y:.3,w:62}]}},
+  {id:'testTube',name:'tube',x:.39,y:.18,w:.08,h:.64,get:S=>{const M=MRX[S.metal],g1=M.k>0&&S.rem>0?Math.min(1,M.k*S.conc*12)*Math.min(1,S.rem*4):0;return{liquid:M.l1?colors.mix(ACID,M.l1,(1-S.rem)*.9):ACID,level:.45,solids:[{col:M.col,eq:.6+3.4*S.rem,t:'metal',shape:M.sh}],gas:g1,bubSize:.8,bubN:2.4,T:20+(M.heat||0)*g1*45}}},
+  {id:'stand',x:.06,y:.04,w:.5,h:.94,s:{layer:'front',clamps:[{x:.43,y:.3,w:62}]}},
+  {id:'anchor',name:'mouth',x:.41,y:.13,w:.04,h:.04,get:S=>({fx:S.splint>0?{splint:{mode:'flame',angle:-28,len:120}}:null})}],
+ tick(S,dt,t,api){const M=MRX[S.metal];if(M.k>0&&S.rem>0){S.rem=Math.max(0,S.rem-M.k*S.conc*dt*.1);S.h2=Math.min(1,S.h2+M.k*S.conc*dt*1.6)}S.splint=Math.max(0,S.splint-dt);
+  if(S.test&&S.splint<1.2){S.test=0;if(S.h2>.12){api.trigger('pop',{},'mouth');S.h2=0;S.msg='<b>Pyk!</b> Charakterystyczny odgłos — w probówce był <b>wodór</b> (mieszanina H₂ z powietrzem).'}else S.msg=M.k?'Słaby efekt — za mało gazu. Odczekaj chwilę i spróbuj ponownie.':'Brak efektu — <b>miedź nie wypiera wodoru</b> z kwasu.'}},
+ overlay(c,W,H,S,t,T){const M=MRX[S.metal];head(c,T,W,M.eq,'HCl(aq), c = '+fmt(S.conc,1)+' mol/dm³',1);txt(c,'H₂ w probówce',W-12,H-30,T.mut,'right',10);c.fillStyle='rgba(100,116,139,.2)';rr(c,W-112,H-22,100,8,4);c.fill();c.fillStyle='#38bdf8';rr(c,W-112,H-22,100*S.h2,8,4);c.fill()},
+ ui(h,S,m,api){const r=UI.row(h);UI.sel(r,[['Mg','magnez Mg'],['Zn','cynk Zn'],['Fe','żelazo Fe'],['Cu','miedź Cu']],S.metal,v=>{S.metal=v;S.rem=1;S.h2=0;S.msg='';m.reset()},'Metal');UI.range(r,'HCl',.5,3,.1,S.conc,v=>S.conc=v,v=>fmt(v,1)+' M');UI.btn(r,'Zbliż płonące łuczywko',()=>{S.splint=1.8;S.test=1},1);UI.btn(r,'Nowa próbka',()=>{S.rem=1;S.h2=0;S.msg='';m.reset()});const n=UI.note(h);return S=>{n.innerHTML='<b>Obserwacja:</b> '+MRX[S.metal].obs+(S.msg?'<br>'+S.msg:'')}}});

@@ -1,0 +1,1 @@
+effect('ripples',{label:'Kręgi na powierzchni',draw:e=>{const p=e.st.pop||0;if(p<=0)return;const c=e.c,f=1-p;for(let i=0;i<3;i++){const k=Math.min(1,f+i*.12);c.strokeStyle='rgba(255,255,255,'+(.5*(1-k)*p)+')';c.lineWidth=1.5;c.beginPath();c.ellipse(e.r.x+e.r.w/2,e.top+2,10+k*e.r.w*.35,2+k*7,0,0,7);c.stroke()}}});

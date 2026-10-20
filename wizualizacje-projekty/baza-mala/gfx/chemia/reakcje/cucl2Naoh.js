@@ -1,0 +1,1 @@
+P('cucl2Naoh',{n:'CuCl₂ + NaOH',l0:'ion-cu2',ppt:'ppt-cu-oh-2',out:['osad'],why:'Niebieski, galaretowaty osad Cu(OH)₂; roztwór traci barwę.'});

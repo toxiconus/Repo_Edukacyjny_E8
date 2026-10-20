@@ -1,0 +1,1 @@
+P('hyd-na2co3',{qualitative:1,n:'Na₂CO₃ + H₂O (+ wskaźnik uniwersalny)',solid:pw(wh),l0:u(7),l1:u(11.6),out:['barwa'],eq:'CO₃²⁻ + H₂O ⇌ HCO₃⁻ + OH⁻',why:'Anion słabego kwasu reaguje z wodą — powstają jony OH⁻; wskaźnik granatowoniebieski (0,1 mol/dm³: pH ≈ 11,7).'});

@@ -1,0 +1,1 @@
+P('hyd-nh4cl',{qualitative:1,n:'NH₄Cl + H₂O (+ wskaźnik uniwersalny)',solid:pw(wh),l0:u(7),l1:u(5.1),out:['barwa'],eq:'NH₄⁺ + H₂O ⇌ NH₃ + H₃O⁺',why:'Kation słabej zasady oddaje proton wodzie — powstają jony H₃O⁺; wskaźnik pomarańczowy (0,1 mol/dm³: pH ≈ 5,1).'});

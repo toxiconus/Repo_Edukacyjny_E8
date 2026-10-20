@@ -1,923 +1,1346 @@
 ---
 kod: F09
-tytul: "Wartościowość, ładunek i stopień utlenienia"
-poziom: E8+LO
-wymaga: "F04; F05; F06; F08"
-poglebia: "F12; F17; X01–X09"
-zrodla: "Reguły ustalania stopni utlenienia (AGH, dokument dydaktyczny); prezentacja redoks (UMB); materiały ZPE (wyniki wyszukiwania, do weryfikacji); MASTER v17.0 — przebudowa 2026-10-12"
-opis: "Trzy różne pojęcia: ładunek jonu, wartościowość i stopień utlenienia. Reguły obliczania stopni utlenienia, wyjątki, ćwiczenia i test."
-stan: PRZEBUDOWA — Claude Haiku 5.5, 2026-10-12 (do W1)
+uid: CHE.01.F09.wartosciowosc_ladunek_stopien_utlenienia
+tytul: Wartościowość, ładunek i stopień utlenienia
+opis: Trzy różne liczby, które łatwo pomylić · ładunek jonu · wartościowość jako liczba wiązań · stopień utlenienia jako liczba przydzielona zgodnie z regułami · sprawdzanie sumy
+kicker: F09 · FUNDAMENTY · NOWA WERSJA
+lead: „Ile wiązań tworzy atom?”, „jaki ma ładunek?”, „jaki ma stopień utlenienia?” — w szkole te trzy pytania często są mieszane. Ta lekcja rozdziela je i pokazuje, kiedy która liczba jest właściwa.
+plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[extra:AMBITNE (LO)]]
+stan: "pełna struktura — 2026-10-15, audyt W1 wprowadzony (odp. zewn. 12), W2 wykonany, decyzja (b): etykiety E8+LO"
+stopka: **CHEMIA F09 v1.2** · Wartościowość, ładunek, stopień utlenienia · 2026
 ---
 
-# CHE.01.F09 — WARTOŚCIOWOŚĆ, ŁADUNEK I STOPIEŃ UTLENIENIA
+::: minimum | Muszę umieć na E8 — punkty 1, 2, 4 i 5; reszta: poziom E8+LO
 
-Po tej lekcji rozróżniasz ładunek jonu, wartościowość i stopień utlenienia, obliczysz stopień utlenienia w prostych związkach i jonach oraz wskażesz najczęstsze wyjątki. Lekcja jest samodzielna: nie wymaga notatek z innych tematów poza wzorami i pojęciem jonu.
-
-## Cel lekcji
-
-Po tej lekcji uczeń:
-
-- **definiuje** wartościowość, ładunek jonu i stopień utlenienia,
-- **rozróżnia** trzy pojęcia i **nie myli** ich ze sobą,
-- **podaje** typowe wartościowości pierwiastków,
-- **oblicza** stopień utlenienia w związku lub jonie,
-- **stosuje** algorytm: H → +I (lub −I), O → −II (wyjątki), F → −I, suma = ładunek,
-- **rozpoznaje** metale o zmiennej wartościowości (Fe, Cu, Sn, Pb, Mn, Cr),
-- (ambitnie) **rozumie** różnicę między stopniem utlenienia a rzeczywistym ładunkiem,
-- (zaawansowanie) **stosuje** reguły do redoks (most do X01).
-
----
-
-## Pytanie przewodnie
-
-**Czym różni się wartościowość od stopnia utlenienia — i dlaczego to rozróżnienie jest kluczowe?**
-
----
-
-## Przypomnienie — karta startowa
-
-1. ładunek jonu opisuje cały jon, np. Ca²⁺
-2. wartościowość opisuje w szkolnym modelu zdolność tworzenia określonej liczby wiązań
-3. stopień utlenienia jest formalnym bilansem elektronowym
-4. Na⁺ ma ładunek +1
-5. w NaCl sód ma formalnie stopień utlenienia +1
-6. wartościowość i stopień utlenienia mogą mieć różne znaczenie
-7. przed użyciem liczby trzeba nazwać, co opisuje
-8. ładunek jonu ≠ wartościowość ≠ stopień utlenienia
-9. bilans stopni utlenienia służy m.in. do redoks
-10. nie każda formalna liczba oznacza rzeczywisty lokalny ładunek atomu
-
-### Diagnoza wejściowa
-
-1. Co oznacza ładunek Ca²⁺?
-2. Co oznacza wartościowość?
-3. Co to stopień utlenienia?
-4. Czy wartościowość = stopień utlenienia?
-5. Jaki stopień utlenienia ma Na w NaCl?
-6. Która z trzech liczb opisuje cały jon?
-
-**Klucz:** 1 jon ma +2; 2 liczba wiązań w modelu szkolnym; 3 formalny bilans; 4 nie; 5 +1; 6 ładunek
-
-**Interpretacja:**
-- **0–2/6** → zacznij od rdzenia lekcji i wróć do przykładów krok po kroku.
-- **3–4/6** → przejdź przez rdzeń, szczególnie punkty z błędami.
-- **5–6/6** → przejdź szybko do ROZUMIENIA / zadań transferowych.
-
-
-**Pytanie przewodnie:** Jak nie pomylić trzech podobnie wyglądających pojęć?
-
-## Wykład — trzy liczby, które wyglądają jak jedna
-
-**Pytanie:** w NaCl sód ma liczbę +1. Czy to ładunek, wartościowość, czy stopień utlenienia? Odpowiedź: w tym przypadku wszystkie trzy wychodzą bliskie jedności, ale każda odpowiada na inne pytanie. Dlatego zanim użyjesz liczby, nazwij, co ona opisuje.
-
-Zacznij od pytania, nie od liczby. Gdy widzisz liczbę przy atomie, zapytaj:
-
-- **Ile ładunku elektrycznego niesie cała cząstka?** To ładunek jonu. Na⁺ ma +1, O²⁻ ma −2. Dotyczy tylko jonów, czyli cząstek z nadmiarem lub niedoborem elektronów.
-- **Ile wiązań tworzy atom w związku?** To wartościowość w modelu szkolnym. Zapisujemy ją cyfrą rzymską bez znaku: w CH₄ węgiel ma IV, w H₂O tlen ma II.
-- **Jaki formalny stopień utlenienia dostaje atom, gdy wiążące elektrony przypisujemy pierwiastkowi bardziej elektroujemnemu?** To stopień utlenienia, zapisywany ze znakiem. W CH₄ węgiel ma −IV, bo jest bardziej elektroujemny od wodoru i w umownym rachunku „przyjmuje” jego elektrony.
-
-**Wniosek:** w CH₄ wartościowość węgla to IV, a stopień utlenienia −IV. Cząsteczka metanu nie zawiera jednak jonu C⁴⁻. Liczba stopnia utlenienia jest narzędziem do bilansowania elektronów, a nie opisem prawdziwego ładunku atomu w cząsteczce.
-
-**Dlaczego stopień utlenienia jest „umowny”?** Zakładamy, że każde wiązanie jest w całości przesunięte w stronę atomu bardziej elektroujemnego. W rzeczywistości rozkład elektronów bywa pośredni, ale ten model pozwala uporządkować bilans elektronów. Dzięki niemu sprawdzisz poprawność wzoru, nazwiesz związek (np. tlenek żelaza(III)) i w reakcjach redoks zobaczysz, który atom oddał elektrony, a który je przyjął.
-
-**Jak liczyć?** Ustal stopnie znanych pierwiastków (H, O, F, metale grup 1–2), oznacz nieznany stopień literą x i zapisz równanie: suma stopni = ładunek (dla cząsteczki obojętnej: 0). W H₂SO₄ mamy 2·(+I) + x + 4·(−II) = 0, więc x = +VI.
-
-**Najczęstsza pułapka:** pomylić liczbę z ładunkiem jonu. Zapis „SO₄²⁻ ma stopień −2” jest błędem: −2 to ładunek całego jonu, a siarka w nim ma stopień +VI.
-
-
-::: karta understand | W skrócie — kiedy trzy liczby są takie same
-W prostych związkach jonowych liczby bywają zgodne: w NaCl sód ma wartościowość I, stopień utlenienia +I i ładunek jonu +1. Zgodność wynika z tego, że jon jest jednoatomowy i ma jeden wiążący elektron. To przypadek, nie definicja.
+1. **Ładunek jonu** to różnica między liczbą protonów i elektronów, np. Na⁺: 11 − 10 = +1.
+2. **Wartościowość** określa liczbę wiązań, które atom danego pierwiastka tworzy w określonej substancji lub związku, np. w H₂O tlen ma wartościowość II.
+3. **Stopień utlenienia** to formalna liczba przypisana atomowi zgodnie z ustalonymi regułami. W tym modelu wiążące elektrony przypisujemy bardziej elektroujemnemu atomowi.
+4. Suma stopni utlenienia w cząsteczce obojętnej wynosi **0**, a w jonie wieloatomowym równa się jego ładunkowi.
+5. Pierwiastek w stanie wolnym, np. O₂, Fe lub Cl₂, ma stopień utlenienia **0**.
+6. **Fluor** ma w związkach zawsze **−I**. **Tlen** ma zwykle **−II**, ale w nadtlenkach, np. H₂O₂, ma **−I**, a w OF₂ ma **+II**.
+7. **Wodór** ma zwykle **+I**, ale w wodorkach metali, np. NaH, ma **−I**.
+8. Metale grupy 1 mają w związkach zwykle **+I**, metale grupy 2 — **+II**, a glin — **+III**.
+9. W KMnO₄ mangan ma stopień utlenienia **+VII**, ponieważ:
+   `+I + x + 4·(−II) = 0`, więc `x = +VII`.
+10. Stopień utlenienia zapisujemy ze znakiem i cyfrą rzymską, np. **+VII** lub **−II**. W rachunkach wygodnie używać cyfr arabskich, np. `+1 + x − 8 = 0`. W nazwie związku cyfrę rzymską zapisujemy w nawiasie bez znaku, np. mangan(VII).
 :::
 
-::: karta understand | W skrócie — dlaczego stopień może wyjść dziwny
-W jonie NH₄⁺ azot ma stopień −III, choć cały jon jest dodatni. Nie oznacza to, że azot ma ładunek −3. To wynik bilansu: x + 4·(+I) = +1, więc x = −III.
+::: warstwy
+
+- e8 | <b>E8:</b> ładunek jonu; wartościowość jako liczba wiązań dla prostych cząsteczek; stopień utlenienia dla O, H, F, metali grup 1 i 2, glinu oraz prostych związków; reguła sumy
+- understand | <b>Rozumienie:</b> dlaczego stopień utlenienia jest formalny; jak elektroujemność wpływa na przydział elektronów; różnica między wartościowością a stopniem utlenienia
+- extra | <b>LO / ambitne:</b> stopnie utlenienia pierwiastków przejściowych, np. Mn, Cr i Fe; wartościowość chloru; zmienność stopnia utlenienia w reakcjach redoks
 :::
 
-::: karta understand | W skrócie — suma to kontrola
-Suma stopni utlenienia równa się ładunkowi jonu, a w cząsteczce obojętnej zeru. Ten bilans jest sprawdzianem każdego wyniku: jeśli suma się nie zgadza, błąd jest w rachunku, nie w regułach.
+::: rdzen {#rdzen} | Rdzeń lekcji — najpierw to
+
+Trzy liczby odpowiadają na trzy różne pytania:
+
+- **ładunek** — jaki jest stan elektryczny jonu;
+- **wartościowość** — ile wiązań tworzy atom w określonym związku;
+- **stopień utlenienia** — jaki formalny bilans elektronów przypisujemy atomowi w związku.
 :::
 
+## 0.1 | Jak pracować z tą lekcją {#jak-pracowac}
 
-## Trzy definicje
+::: karta understand | Kolejność pracy
 
-**Ładunek jonu** — rzeczywisty całkowity ładunek elektryczny cząstki.
+Najpierw przeczytaj minimum i zapamiętaj trzy pytania:
 
-**Wartościowość** — w szkolnym modelu liczba wiązań, które atom tworzy w danym związku lub sytuacji strukturalnej.
+1. Czy opisuję jon?
+2. Czy liczę wiązania?
+3. Czy przypisuję elektrony według reguł stopni utlenienia?
 
-**Stopień utlenienia** — formalna liczba przypisana atomowi zgodnie z regułami przydzielania elektronów w związku.
+Następnie przejdź do przykładów. Przy każdym obliczeniu stosuj procedurę:
 
-To nie są synonimy.
+1. wpisz znane stopnie utlenienia;
+2. zapisz sumę;
+3. przyrównaj ją do 0 albo do ładunku jonu;
+4. oblicz niewiadomą;
+5. sprawdź wynik.
+:::
 
-## Ładunek
+## 0.2 | Cele i pytanie przewodnie [[basic:E8]] {#cele}
 
-Dla jonu:
-`ładunek = liczba protonów − liczba elektronów`.
+::: karta basic | Po tej lekcji potrafisz
 
-Jeśli atom Mg ma 12 protonów i 10 elektronów:
-`Mg²⁺`.
+- odróżnić ładunek, wartościowość i stopień utlenienia;
+- obliczyć ładunek jonu na podstawie liczby protonów i elektronów;
+- rozpoznać wartościowość atomu w prostym schemacie związku;
+- wyznaczyć stopień utlenienia pierwiastka w cząsteczce i jonie wieloatomowym (E8+LO);
+- zastosować regułę sumy;
+- wskazać wyjątki dotyczące tlenu i wodoru (E8+LO);
+- wyjaśnić, dlaczego stopień utlenienia nie jest tym samym co rzeczywisty ładunek atomu.
+:::
 
-## Stopień utlenienia
+::: karta exam | Pytanie przewodnie
 
-Reguły:
-- pierwiastek wolny: 0;
-- jon jednoatomowy: równy ładunkowi;
-- tlen zwykle −II;
-- wodór zwykle +I, ale w wodorkach metali −I;
-- suma stopni utlenienia = ładunek całej cząstki.
+Azot w NH₃ i w HNO₃ ma różny stopień utlenienia. Czy oznacza to, że ma różny ładunek i różną wartościowość?
+:::
+
+## 0.3 | Kompas — co trzeba wiedzieć wcześniej {#kompas}
+
+- liczba protonów, neutronów i elektronów;
+- liczba atomowa pierwiastka;
+- jon i jego zapis;
+- elektrony walencyjne;
+- wiązanie jako wspólna para elektronowa;
+- elektroujemność, czyli zdolność atomu do przyciągania elektronów w wiązaniu.
+
+@opis: Lekcja nie wymaga rysunku. Najważniejsze rozróżnienie można przedstawić słownie: ładunek dotyczy jonu, wartościowość liczy wiązania, a stopień utlenienia jest formalnym bilansem elektronów.
+
+## 0.4 | Diagnoza startowa {#diagnoza}
+
+::: karta understand | Odpowiedz najpierw sam
+
+1. Jaki ładunek ma jon Mg²⁺?
+2. Ile wiązań tworzy atom wodoru w cząsteczce H₂?
+3. Jaki stopień utlenienia ma tlen w O₂?
+4. Czy cząsteczka H₂O ma ładunek, mimo że atomy H i O mają w niej przypisane stopnie utlenienia?
+5. Czy wartościowość może mieć znak minus?
+:::
+
+::: odp | Pokaż klucz i interpretację
+
+1. **+2**. Jon Mg²⁺ ma o dwa elektrony mniej niż obojętny atom magnezu.
+2. Jedno wiązanie. W cząsteczce H₂ oba atomy wodoru tworzą wiązanie H–H.
+3. **0**, ponieważ O₂ jest pierwiastkiem w stanie wolnym.
+4. Nie. H₂O jest cząsteczką obojętną, więc jej całkowity ładunek wynosi 0. Poszczególnym atomom można jednak przypisać stopnie utlenienia: H ma +I, a O ma −II.
+5. Nie. Wartościowość zapisuje się bez znaku. Znak „+” lub „−” należy do zapisu stopnia utlenienia albo ładunku.
+:::
+
+## 1 | Ładunek jonu [[basic:E8]] {#ladunek}
+
+Ładunek jonu wynika z różnicy między liczbą protonów i liczbą elektronów:
+
+`ładunek = liczba protonów − liczba elektronów`
+
+Proton ma ładunek dodatni, a elektron — ujemny. W obojętnym atomie liczba protonów i elektronów jest taka sama. Jon powstaje wtedy, gdy atom lub grupa atomów ma inną liczbę elektronów niż protonów.
+
+### Przykłady
+
+- Na⁺: 11 protonów i 10 elektronów → `11 − 10 = +1`;
+- Cl⁻: 17 protonów i 18 elektronów → `17 − 18 = −1`;
+- Mg²⁺: 12 protonów i 10 elektronów → `12 − 10 = +2`;
+- Al³⁺: 13 protonów i 10 elektronów → `13 − 10 = +3`.
+
+::: karta core | Pamiętaj o znaku
+
+Ładunek zapisujemy jako indeks górny po symbolu:
+
+- Na⁺ — jon sodu o ładunku +1;
+- Mg²⁺ — jon magnezu o ładunku +2;
+- Cl⁻ — jon chlorkowy o ładunku −1;
+- SO₄²⁻ — jon siarczanowy o ładunku −2.
+
+Dodatni ładunek oznacza niedobór elektronów względem liczby protonów. Ujemny ładunek oznacza nadmiar elektronów.
+:::
+
+### Jon jednoatomowy i jon wieloatomowy
+
+Jon jednoatomowy, np. Na⁺, składa się z jednego atomu. Jon wieloatomowy, np. SO₄²⁻, składa się z kilku atomów połączonych wiązaniami, ale jako całość ma określony ładunek.
+
+W jonie wieloatomowym ładunek całej grupy nie jest automatycznie stopniem utlenienia każdego atomu. Jest sumą stopni utlenienia wszystkich atomów w tej grupie.
 
 Przykład:
-`KMnO₄`:
-`(+I) + Mn + 4(−II)=0`,
-czyli `Mn=+VII`.
 
-## Wartościowość
+`SO₄²⁻`
 
-Wartościowość jest zależna od modelu struktury. W H₂O tlen tworzy dwa wiązania O–H, więc w szkolnym opisie ma wartościowość II. Nie oznacza to, że „stopień utlenienia tlenu = II”. W H₂O stopień utlenienia tlenu wynosi −II.
+Tlen ma zwykle −II. Cztery atomy tlenu dają:
 
-## Trzy pojęcia w porównaniu
+`4 · (−2) = −8`
 
-### A. Najważniejsza oś lekcji
+Suma stopni utlenienia ma wynosić −2:
 
-```text
-WARTOŚCIOWOŚĆ
-≠
-ŁADUNEK JONU
-≠
-STOPIEŃ UTLENIENIA
-```
+`x − 8 = −2`
 
-### B. Tabela porównawcza
+`x = +6`
 
-| Pojęcie | Pytanie | Typowy zapis |
-|---|---|---|
-| wartościowość | ile wiązań / jaka zdolność łączenia? | I, II, III... |
-| ładunek jonu | jaki rzeczywisty/formalny ładunek jonu? | Na⁺, O²⁻ |
-| stopień utlenienia | jak formalnie przypisujemy elektrony w związku? | Fe(III), S(−II) |
+Siarka ma więc stopień utlenienia **+VI**, a cały jon ma ładunek **−2**.
 
-### C. Trzy osobne zadania
+## 2 | Trzy pojęcia w porównaniu [[basic:E8]] {#trzy}
 
-Nie łączyć ich w jedno ćwiczenie na początku.
+| Pojęcie | Co opisuje | Jak się wyznacza | Przykład |
+|---|---|---|---|
+| Ładunek jonu | rzeczywisty stan elektryczny jonu | liczba protonów minus liczba elektronów | Mg²⁺: +2 |
+| Wartościowość | liczbę wiązań atomu w określonej substancji | liczenie wiązań w szkolnym schemacie | H₂O: O ma II |
+| Stopień utlenienia | formalny bilans elektronów przypisany atomowi | reguły stopni utlenienia i reguła sumy | KMnO₄: Mn ma +VII |
 
-1. Wyznacz ładunek jonu.
-2. Wyznacz wartościowość w szkolnym modelu.
-3. Wyznacz stopień utlenienia.
+### Przykładowe zestawienie
 
-Dopiero potem zadania mieszane.
+| Cząsteczka / jon | Analizowany atom | Ładunek całej cząsteczki lub jonu | Wartościowość atomu | Stopień utlenienia atomu |
+|---|---|---:|---:|---:|
+| Cl₂ | Cl | 0 | I | 0 |
+| O₂ | O | 0 | II | 0 |
+| N₂ | N | 0 | III | 0 |
+| H₂O₂ | O | 0 | II | −I |
+| HNO₃ | N | 0 | IV w szkolnym schemacie | +V |
+| NH₄⁺ | N | +1 dla całego jonu | IV | −III |
+| SO₄²⁻ | S | −2 dla całego jonu | zależna od modelu wiązań | +VI |
 
-### D. Typowe błędy w zapisie
+> Stopień utlenienia 0 nie oznacza „zero wiązań”. Na przykład w O₂ atomy tlenu są połączone wiązaniem, ale oba mają stopień utlenienia 0.
 
-Najczęstsze błędy zapisu:
+::: nie-myl | Ładunek ≠ stopień utlenienia ≠ wartościowość
 
-```text
-„Fe³⁺ ma wartościowość III” — nie zawsze jest to poprawne jako zamiennik pojęć.
-„SO₄²⁻ ma stopień utlenienia −2” — nie; −2 to ładunek całego jonu, nie stopień utlenienia siarki.
-„NaCl: Na ma stopień utlenienia −1” — błędna reguła przypisywania.
-```
-
-Każdy taki przypadek powinien być rozebrany krok po kroku.
-
----
-
-### Uzupełnienie o indeksach i współczynnikach
-
-#### Pięć pojęć, których nie wolno mieszać
-
-| Pojęcie | Co opisuje | Przykład |
-|---------|------------|----------|
-| **Wartościowość** | Ile wiązań tworzy atom w danym związku (model „liczby rąk”) | W CO₂ węgiel ma wartościowość IV, tlen II |
-| **Stopień utlenienia** | Umowny ładunek atomu przy założeniu całkowitego przesunięcia elektronów | W CO₂: C ma +IV, O ma −II |
-| **Ładunek jonu** | Rzeczywisty ładunek całego atomu lub grupy | Ca²⁺, Cl⁻, SO₄²⁻ |
-
-**Zapamiętaj:** 
-Wartościowość to **nie** ładunek. 
-W CaCl₂ wapń ma wartościowość II, a jon wapnia ma ładunek 2+. Wyniki są tu podobne, lecz opisują różne rzeczy. 
-
-**Uzupełnienie dla jonów:** 
-W przypadku jonów mówimy o **wartościowości jonu** — odpowiada ona wartości bezwzględnej ładunku (np. Ca²⁺ → II, Cl⁻ → I). Nie jest to jednak to samo co ładunek: wartościowość to liczba wiązań, a ładunek to nadmiar/niedobór elektronów.
-
-**Uwaga o związkach jonowych:** 
-W związkach jonowych nie wyodrębniamy pojedynczych wiązań — mówimy o **sieci jonowej** i przyciąganiu przeciwnie naładowanych jonów. Wartościowość mówi wtedy, ile ładunków musi się zrównoważyć.
-
-#### Wartościowość — szczegółowo
-
-**Definicja (uproszczenie szkolne / model dydaktyczny):** 
-**Wartościowość** to liczba wiązań, które atom tworzy z innymi atomami, przy czym wiązanie podwójne liczymy jako dwa, a potrójne jako trzy. 
-W szkole zapisujemy ją cyfrą rzymską, np. O(II), Al(III), Fe(II) lub Fe(III).
-
-> **Wartościowość — wersja szkolna:** liczba wiązań tworzonych przez atom w konkretnym związku. 
-> **Uwaga:** w bardziej zaawansowanej chemii opis wiązań bywa bardziej złożony (IUPAC rozróżnia wartościowość i stopień utlenienia). Na poziomie klasy 7/8 stosuj wartościowość jako narzędzie do układania wzorów i rysowania wiązań.
-
-**Model „liczby rąk” (bardzo użyteczny):** 
-Wyobraź sobie, że atom ma określoną liczbę „rąk”, którymi może łączyć się z innymi atomami.
-- H(I) ma 1 rękę
-- O(II) ma 2 ręce
-- Al(III) ma 3 ręce
-- C(IV) ma 4 ręce
-
-We wzorze wszystkie „ręce” muszą zostać wykorzystane. Dlatego Ca(II) i O(II) tworzą CaO, a nie Ca₂O₂: stosunek 1 : 1 jest już najprostszy.
-
-**Test równowagi wartościowości:**
-- W Al₂O₃: 2 · III = 6 oraz 3 · II = 6 → wzór poprawny.
-- W AlO: 1 · III ≠ 1 · II → wzór niepoprawny.
-- W Ca₂O₂: wartościowości się równoważą, ale wzór trzeba skrócić do CaO (najprostszy stosunek).
-
-**Ważne doprecyzowanie:** 
-Pierwiastek **nie ma jednej wartościowości „na zawsze”**. Wartościowość odczytujemy lub ustalamy w konkretnym związku. 
-Przykład: w H₂S siarka tworzy 2 wiązania (wartościowość II), w SO₂ — 4 (IV), w SO₃ — 6 (VI).
-
-**Nie myl pojęć (kluczowe rozróżnienie):** 
-· **Wartościowość** — mówi o liczbie wiązań (model szkolny „liczby rąk”). 
-· **Stopień utlenienia** — formalny „ładunek umowny” atomu w związku (przy założeniu całkowitego przesunięcia elektronów). 
-· **Ładunek jonu** — rzeczywisty ładunek całego atomu lub grupy (np. Ca²⁺, SO₄²⁻). 
-W prostych zadaniach szkolnych wyniki często wyglądają podobnie, ale **nie są to pojęcia tożsame**.
-
-**Jak ustalić:** 
-1. z układu okresowego (grupy główne), 
-2. z znanego wzoru — jeśli znasz wartościowość jednego pierwiastka i wzór, możesz obliczyć wartościowość drugiego tak, aby łączna wartościowość obu składników była taka sama, 
-3. z nazwy (np. tlenek żelaza(III)).
-
-**Metale o zmiennej wartościowości:** Fe (II/III), Cu (I/II), Sn (II/IV), Pb (II/IV), Mn (II/IV/VII), Cr (II/III/VI) — zawsze podawać w nazwie.
-
-**Wartościowość maksymalna:** 
-Najwyższa wartościowość, jaką pierwiastek może osiągnąć w związku. 
-Dla pierwiastków **grup głównych** maksymalna wartościowość względem tlenu jest często równa numerowi grupy w **dawnym zapisie A** (I, II, III, IV, V, VI, VII) — nie numerowi 1–18. 
-Przykłady: Al — III, C — IV, P — V, S — VI, Cl — VII (np. HClO₄).
-
-**Hak pamięciowy:** 
-Wartościowość to **liczba wiązań**, którymi atom łączy się z innymi atomami.
-
-**Mnemonic główny:** 
-**H–I, O–II, Al–III, C–IV** → „wodór raz, tlen dwa, glin trzy, węgiel cztery”.
-
-**Tabela szybkiego dostępu:**
-
-| Pierwiastek | Wartościowość |
-|-------------|---------------|
-| H | I |
-| O | II |
-| Na, K | I |
-| Mg, Ca | II |
-| Al | III |
-| C | IV |
-| N, P | III / V (P: względem H zwykle III, maks. względem O = V) |
-| S | II / IV / VI |
-| Cl | I (chlorki); III/V/VII (związki tlenowe, rozszerzenie) |
-| Fe | II / III |
-| Cu | I / II |
-| Sn | II / IV |
-| Pb | II / IV |
-| Mn | II / IV / VII |
-| Cr | II / III / VI |
-
-**Przykład obliczenia wartościowości z wzoru:** 
-CO₂ → tlen ma II, dwa atomy tlenu dają łącznie IV. Węgiel ma zatem wartościowość IV.
-
-#### DOPRECYZOWANIA I CIEKAWOSTKI L001 (przegląd mer. — doklejone)
-
-## Ściąga — reguły i tabele
-
-### 5.1. Wartościowość
-
-**Wartościowość (model szkolny)** — liczba wiązań, które atom tworzy z innymi atomami. Wiązanie podwójne liczymy jako dwa, potrójne jako trzy.
-
-- zapis: cyfra rzymska (I, II, III, IV, V, VI, VII),
-- przykłady: H(I), O(II), Al(III), C(IV).
-
-**Model „liczby rąk":**
-- H ma 1 rękę, O — 2, Al — 3, C — 4.
-
-**Uwaga:** wartościowość nie jest tym samym co stopień utlenienia (choć w prostych przypadkach liczby bywają zgodne).
-
-### 5.2. Ładunek jonu
-
-**Ładunek jonu** — rzeczywisty ładunek elektryczny atomu lub grupy atomów.
-
-- zapis: cyfra arabska ze znakiem (+1, −1, +2, −2),
-- przykład: Ca²⁺ (ładunek +2), Cl⁻ (ładunek −1), SO₄²⁻ (ładunek −2).
-
-**Ładunek jonu = p⁺ − e⁻** (dla jonu jednoatomowego).
-
-### 5.3. Stopień utlenienia
-
-**Stopień utlenienia** — formalny ładunek, jaki miałby atom, gdyby wszystkie wiązania były jonowe, a elektrony wiązań przypisane bardziej elektroujemnemu atomowi.
-
-- zapis: cyfra rzymska ze znakiem (+I, −II, +VII),
-- przykład: C w CH₄ = −IV; S w H₂SO₄ = +VI.
-
-**Ważne:** stopień utlenienia nie musi być rzeczywistym ładunkiem w cząsteczce.
-
-### 5.4. Porównanie — tabela
-
-| Pojęcie | Co opisuje | Zapis | Przykład dla C w CH₄ |
-|---------|------------|-------|-----------------------|
-| Wartościowość | liczba wiązań | cyfra rzymska | IV |
-| Ładunek jonu | rzeczywisty ładunek | arabska ze znakiem | nie dotyczy (C nie tworzy jonu) |
-| Stopień utlenienia | formalny ładunek | rzymska ze znakiem | −IV |
-
-| Pojęcie | Przykład dla S w H₂SO₄ |
-|---------|------------------------|
-| Wartościowość | VI |
-| Ładunek jonu | nie dotyczy |
-| Stopień utlenienia | +VI |
-
-| Pojęcie | Przykład dla Na w NaCl |
-|---------|------------------------|
-| Wartościowość | I |
-| Ładunek jonu | +1 (Na⁺) |
-| Stopień utlenienia | +I |
-
-**Uwaga:** w prostych związkach jonowych wartościowość i stopień utlenienia często się pokrywają liczbowo (choć definicje są różne).
-
-### 5.5. Reguły wyznaczania stopnia utlenienia
-
-1. **Pierwiastek w stanie wolnym:** 0 (np. O₂, Fe, N₂, Cl₂).
-2. **Jon jednoatomowy:** równy ładunkowi (Na⁺ = +I; Cl⁻ = −I; Ca²⁺ = +II).
-3. **Suma stopni utlenienia w cząsteczce = 0.**
-4. **Suma stopni utlenienia w jonie = ładunek jonu.**
-5. **Wodór:** +I (z niemetalami, np. HCl, H₂O); −I (z metalami, np. NaH, CaH₂).
-6. **Tlen:** −II (wyjątki: nadtlenki −I, np. H₂O₂; ponadtlenki −½; OF₂: +II).
-7. **Fluor:** zawsze −I.
-8. **Metale grup 1–2:** zawsze +I, +II.
-9. **Glin:** zawsze +III.
-
-### 5.6. Algorytm obliczania stopnia utlenienia
-
-1. Zapisz wzór.
-2. Ustal znane stopnie: H → +I (lub −I), O → −II (wyjątki), F → −I, metale 1–2 → +I, +II.
-3. Oznacz nieznany stopień jako x.
-4. Ułóż równanie: suma stopni = ładunek (0 dla cząsteczki obojętnej).
-5. Rozwiąż równanie.
-
-**Przykład — H₂SO₄:**
-- 2·(+I) + x + 4·(−II) = 0
-- 2 + x − 8 = 0
-- x = +VI
-
-**Przykład — KMnO₄:**
-- +1 + x + 4·(−II) = 0
-- 1 + x − 8 = 0
-- x = +VII
-
-**Przykład — K₂Cr₂O₇:**
-- 2·(+I) + 2x + 7·(−II) = 0
-- 2 + 2x − 14 = 0
-- 2x = 12 → x = +VI
-
-**Przykład — MnO₄⁻:**
-- x + 4·(−II) = −1
-- x − 8 = −1
-- x = +VII
-
-**Przykład — NH₄⁺:**
-- x + 4·(+I) = +1
-- x + 4 = +1
-- x = −III
-
-### 5.7. Typowe wartościowości
-
-| Pierwiastek | Symbol | Wartościowość |
-|-------------|--------|---------------|
-| Wodór | H | I |
-| Tlen | O | II |
-| Sód, potas | Na, K | I |
-| Magnez, wapń, bar | Mg, Ca, Ba | II |
-| Glin | Al | III |
-| Węgiel | C | IV |
-| Azot | N | III/V |
-| Fosfor | P | III/V |
-| Siarka | S | II/IV/VI |
-| Chlor | Cl | I (wobec H i metali) |
-| Żelazo | Fe | II/III |
-| Miedź | Cu | I/II |
-| Cyna | Sn | II/IV |
-| Ołów | Pb | II/IV |
-| Mangan | Mn | II/IV/VII |
-| Chrom | Cr | II/III/VI |
-
-### 5.8. Metale o zmiennej wartościowości
-
-Fe, Cu, Sn, Pb, Mn, Cr — mają kilka typowych wartościowości. W nazwach związków **zawsze** podajemy cyfrę rzymską.
-
-**Przykłady:**
-- FeCl₂ = chlorek żelaza(II),
-- FeCl₃ = chlorek żelaza(III),
-- Cu₂O = tlenek miedzi(I),
-- CuO = tlenek miedzi(II),
-- MnO₂ = tlenek manganu(IV),
-- KMnO₄ = manganian(VII) potasu,
-- K₂Cr₂O₇ = dichromian(VI) potasu.
-
-### 5.9. Przykłady wartościowość vs stopień utlenienia
-
-| Związek | Pierwiastek | Wartościowość | Stopień utlenienia |
-|---------|-------------|---------------|---------------------|
-| CH₄ | C | IV | −IV |
-| CO₂ | C | IV | +IV |
-| H₂O | O | II | −II |
-| H₂O₂ | O | II | −I |
-| NH₃ | N | III | −III |
-| HNO₃ | N | — | +V |
-| H₂SO₄ | S | VI | +VI |
-
-### 5.10. Wyjątki od typowych stopni
-
-| Pierwiastek | Wyjątek | Uwaga |
-|-------------|---------|-------|
-| O | −I w H₂O₂ | nadtlenki |
-| O | +II w OF₂ | fluorek tlenu |
-| H | −I w wodorkach metali | NaH, CaH₂ |
-| Fe | +6 w FeO₄²⁻ | żelazian(VI) — rzadkie |
-| Cl | +VII w HClO₄ | kwas chlorowy(VII) |
-| Mn | +VII w KMnO₄ | manganian(VII) |
-| Cr | +VI w K₂Cr₂O₇ | dichromian(VI) |
-
----
-
-## Doświadczenia modelowe
-
-### Doświadczenie 1: Wartościowość a wzór
-
-**Problem:** Jak ustalić wzór związków na podstawie wartościowości?
-**Hipoteza:** W–K–S–K.
-**Sprzęt:** tablica wartościowości.
-**Wykonanie:** ustal wzory dla Fe(III) + O(II), S(VI) + O(II).
-**Wniosek:** W–K–S–K prowadzi do poprawnych wzorów.
-
-### Doświadczenie 2: Stopień utlenienia w KMnO₄
-
-**Problem:** Jak obliczyć stopień utlenienia Mn w KMnO₄?
-**Wykonanie:**
-- K → +I, O → −II,
-- +1 + x + 4·(−2) = 0,
-- x = +VII.
-**Wniosek:** Mn ma stopień utlenienia +VII.
-
----
-
-## Klinika błędów
-
-### Tabela błędów
-
-| Błąd | Poprawnie | Dlaczego |
-|------|-----------|----------|
-| „Wartościowość = stopień utlenienia" | różne pojęcia | definicje różne, wartości mogą się różnić |
-| „Na⁺ ma wartościowość +I" | Na⁺ ma ładunek +1; wartościowość I | różne zapisy |
-| „N⁵⁺ istnieje w HNO₃" | +V to stopień utlenienia N | formalny zapis |
-| „Tlen zawsze −II" | wyjątki: −I (H₂O₂), +II (OF₂) | |
-| „Wodór zawsze +I" | wyjątki: −I (wodorki metali) | |
-| „S zawsze −II" | S może mieć −II, +IV, +VI | |
-| „Cl zawsze −I" | Cl w związkach tlenowych: +I, +III, +V, +VII | |
-| „Fe zawsze II" | Fe: +II i +III | |
-
-### Klinika 2.0 — przykład 1
-
-**Błąd:** „Wartościowość = stopień utlenienia."
-
-- **Znajdź:** mylenie pojęć.
-- **Popraw:** To różne pojęcia.
-- **Reguła:** wartościowość = liczba wiązań; stopień utlenienia = formalny ładunek.
-- **Dlaczego:** W CH₄ węgiel ma wartościowość IV, ale stopień utlenienia −IV.
-- **Zadanie podobne:** W CO₂ wartościowość i stopień utlenienia C?
-- **Pułapka:** „liczby są takie same, więc to samo" — nie.
-
-### Klinika 2.0 — przykład 2
-
-**Błąd:** „N⁵⁺ istnieje w HNO₃."
-
-- **Znajdź:** pomylenie stopnia utlenienia z jonem.
-- **Popraw:** +V to stopień utlenienia azotu.
-- **Reguła:** stopień utlenienia to formalny ładunek, nie rzeczywisty jon.
-- **Dlaczego:** azot nie tworzy jonu N⁵⁺ w HNO₃ (zbyt wysoka energia jonizacji).
-- **Zadanie podobne:** Czy S⁶⁺ istnieje w H₂SO₄?
-- **Pułapka:** „+VI to ładunek jonu" — nie.
-
-### Klinika 2.0 — przykład 3
-
-**Błąd:** „Tlen zawsze ma stopień utlenienia −II."
-
-- **Znajdź:** pominięcie wyjątków.
-- **Popraw:** −II w większości związków; −I w nadtlenkach; +II w OF₂.
-- **Reguła:** tlen ma wyjątki.
-- **Dlaczego:** W H₂O₂ wiązanie O–O (elektrony dzielone równo); w OF₂ fluor elektroujemniejszy od tlenu.
-- **Zadanie podobne:** Jaki jest stopień utlenienia O w Na₂O₂?
-- **Pułapka:** „tlen zawsze −II" — nie.
-
----
-
-## Ćwiczenia
-
-### 8.1. Mini-check (5 pytań)
-
-1. Co to wartościowość?
-2. Co to stopień utlenienia?
-3. Jaką wartościowość ma węgiel w CH₄?
-4. Jaki stopień utlenienia ma S w H₂SO₄?
-5. Jak oznaczyć ładunek jonu?
-
-### 8.2. Ćwiczenie prowadzone
-
-**Dane:** H₂SO₄.
-
-**Krok 1.** H → +I, O → −II.
-**Krok 2.** 2·(+I) + x + 4·(−II) = 0.
-**Krok 3.** 2 + x − 8 = 0.
-**Krok 4.** x = +VI.
-**Razem:** S ma stopień utlenienia +VI.
-
-**Spróbuj sam:** K₂Cr₂O₇.
-
-### 8.3. Ćwiczenia samodzielne
-
-**A. Podstawa**
-
-1. Podaj wartościowość: H, O, Al, C, S.
-2. Zapisz ładunek jonów: Na⁺, Cl⁻, Ca²⁺, O²⁻, Al³⁺.
-3. Podaj stopień utlenienia: H₂O, CO₂, NaCl.
-4. Co to metale o zmiennej wartościowości? Podaj 3 przykłady.
-5. Jak oznaczać wartościowość? Jak stopień utlenienia?
-
-**B. Trening**
-
-6. Oblicz stopień utlenienia: H₂SO₄, HNO₃, KMnO₄, K₂Cr₂O₇.
-7. Oblicz stopień utlenienia: MnO₄⁻, NO₃⁻, SO₄²⁻, NH₄⁺.
-8. Popraw: „wartościowość = stopień utlenienia".
-9. Podaj wartościowość C w CH₄ i stopień utlenienia C w CH₄.
-10. Wyjaśnij, dlaczego Cl w HClO₄ ma stopień +VII.
-
-**C. Ambitne**
-
-11. Oblicz stopień utlenienia: H₂O₂, OF₂, NaH, HClO₄.
-12. Jakie są możliwe stopnie utlenienia siarki? Podaj przykłady.
-13. Jakie są możliwe stopnie utlenienia manganu? Podaj przykłady.
-14. Wyjaśnij, dlaczego w CH₄ stopień utlenienia C to −IV.
-15. W jakich związkach wodór ma −I?
-
-**D. Zaawansowane**
-
-16. Stopień utlenienia Fe w Fe₃O₄?
-17. Dlaczego stopień utlenienia ≠ rzeczywisty ładunek?
-18. Jak stopień utlenienia łączy się z redoks?
-19. Oblicz stopień utlenienia Cr w Cr₂O₇²⁻.
-20. Dlaczego N nie tworzy jonu N⁵⁺?
-
-
-## Odpowiedzi
-
-### Mini-check
-
-1. Liczba wiązań tworzonych przez atom.
-2. Formalny ładunek atomu.
-3. IV.
-4. +VI.
-5. Cyfra arabska ze znakiem.
-
-### Ćwiczenia A
-
-1. H: I; O: II; Al: III; C: IV; S: II/IV/VI.
-2. +1, −1, +2, −2, +3.
-3. H₂O: H=+I, O=−II; CO₂: C=+IV, O=−II; NaCl: Na=+I, Cl=−I.
-4. Fe, Cu, Mn, Cr, Sn, Pb.
-5. Wartościowość — cyfra rzymska; stopień utlenienia — rzymska ze znakiem.
-
-### Ćwiczenia B
-
-6. H₂SO₄: S=+VI; HNO₃: N=+V; KMnO₄: Mn=+VII; K₂Cr₂O₇: Cr=+VI.
-7. MnO₄⁻: Mn=+VII; NO₃⁻: N=+V; SO₄²⁻: S=+VI; NH₄⁺: N=−III.
-8. Wartościowość ≠ stopień utlenienia.
-9. Wartościowość IV; stopień utlenienia −IV.
-10. Cl w HClO₄: 1·(+I) + x + 4·(−II) = 0 → x = +VII.
-
-### Ćwiczenia C
-
-11. H₂O₂: O=−I; OF₂: O=+II; NaH: H=−I; HClO₄: Cl=+VII.
-12. S: −II (H₂S), +IV (SO₂), +VI (H₂SO₄).
-13. Mn: +II (MnO), +IV (MnO₂), +VII (KMnO₄).
-14. W CH₄: węgiel połączony z 4 atomami H (mniej elektroujemny); elektrony „idą" do C → C ma −IV.
-15. W wodorkach metali: NaH, CaH₂, KH.
-
-### Ćwiczenia D
-
-16. Fe₃O₄: Fe(II,III) — średni stopień +8/3.
-17. Stopień utlenienia to formalny zapis, nie rzeczywisty ładunek.
-18. W redoks zmieniają się stopnie utlenienia — nie wartościowości.
-19. Cr₂O₇²⁻: 2x + 7·(−II) = −2 → x = +VI.
-20. Azot ma wysoką energię jonizacji — nie tworzy jonu +V.
-
----
-
-## Fiszki
-
-::: fiszki
-Co to wartościowość? | Liczba wiązań | E8:F09
-Co to stopień utlenienia? | Formalny ładunek | E8:F09
-Co to ładunek jonu? | Rzeczywisty ładunek | E8:F09
-Zapisz wartościowość H | I | E8:F09
-Zapisz wartościowość O | II | E8:F09
-Zapisz wartościowość C | IV | E8:F09
-Wartościowość vs stopień utlenienia? | Różne pojęcia | E8:F09
-Stopień utlenienia S w H₂SO₄? | +VI | E8:F09
-Stopień utlenienia Mn w KMnO₄? | +VII | E8:F09
-Stopień utlenienia N w HNO₃? | +V | E8:F09
-Stopień utlenienia N w NH₃? | −III | E8:F09
-Stopień utlenienia Cr w K₂Cr₂O₇? | +VI | E8:F09
-Suma stopni w cząsteczce? | 0 | E8:F09
-Suma stopni w jonie? | Ładunek jonu | E8:F09
-Reguła dla H? | +I (lub −I w wodorkach) | E8:F09
-Reguła dla O? | −II (wyjątki) | E8:F09
-Reguła dla F? | −I zawsze | E8:F09
-Wyjątek O w H₂O₂? | −I | E8:F09
-Wyjątek O w OF₂? | +II | E8:F09
-Wyjątek H w NaH? | −I | E8:F09
-Metale o zmiennej wartościowości? | Fe, Cu, Sn, Pb, Mn, Cr | E8:F09
-Wartościowości żelaza? | II/III | E8:F09
-Wartościowości miedzi? | I/II | E8:F09
-Wartościowości manganu? | II/IV/VII | E8:F09
-Ładunek jonu = ? | p⁺ − e⁻ | E8:F09
+- **Ładunek** dotyczy całego jonu albo obojętnej cząstki.
+- **Wartościowość** liczy wiązania atomu w określonym związku.
+- **Stopień utlenienia** jest formalnym przypisaniem elektronów według przyjętych reguł.
+- Wartościowość nie ma znaku.
+- Stopień utlenienia ma znak.
+- Ładunek jonu zapisujemy cyfrą arabską, np. Fe³⁺.
+- Stopień utlenienia zapisujemy zwykle ze znakiem i cyfrą rzymską, np. +III.
+- Wartościowość zapisujemy zwykle cyfrą rzymską bez znaku, np. III.
 :::
 
+## 2.1 | Uzupełnienie kanoniczne — trzy liczby, trzy znaczenia {#uzupelnienie-kanoniczne}
 
-## Sprawdzenie — test
+::: karta core | Nie zapisuj tych pojęć jednym symbolem
 
-::: test
-? W jonie Na⁺ liczba +1 oznacza:
-+ ładunek całego jonu
-- wartościowość sodu
-- stopień utlenienia sodu w każdym związku
-! Ładunek jonu dotyczy rzeczywistej cząstki. Wartościowość to liczba wiązań, a stopień utlenienia jest wartością formalną.
-? Jaki stopień utlenienia ma azot w NH₄⁺?
-+ −III
-- +III
-- −I
-! Z bilansu x + 4·(+I) = +1 wynika x = −III. Stopień utlenienia nie musi mieć znaku jonu.
-? Czy wartościowość węgla w CH₄ jest równa jego stopniowi utlenienia?
-+ Nie: wartościowość wynosi IV, stopień utlenienia −IV
-- Tak, obie wynoszą −IV
-- Tak, obie wynoszą IV
-! Wielkość liczby bywa ta sama, ale znak i pojęcie są różne: wartościowość to liczba wiązań, stopień utlenienia to wartość ze znakiem.
-? Ile wynosi stopień utlenienia siarki w SO₂?
-+ +IV
-- +VI
-- −IV
-! Dwa atomy tlenu po −II dają −IV, a suma musi wynosić zero, więc S ma +IV.
-? Który zapis jest poprawny?
-+ W OF₂ tlen ma stopień utlenienia +II
-- W H₂O₂ tlen ma zawsze −II
-- W NaH wodór ma stopień +I
-! Fluor jest bardziej elektroujemny od tlenu, więc w OF₂ tlen ma +II. W H₂O₂ tlen ma −I, a w NaH wodór ma −I.
+- **Ładunek jonu** jest rzeczywistym ładunkiem elektrycznym jonu. Zapisujemy go cyfrą arabską ze znakiem, np. Fe³⁺.
+- **Stopień utlenienia** jest formalnym ładunkiem przypisanym atomowi według ustalonych reguł. Zapisujemy go ze znakiem, zwykle cyfrą rzymską, np. +III.
+- **Wartościowość** określa liczbę wiązań atomu w określonym związku. Zapisujemy ją zwykle cyfrą rzymską bez znaku, np. III.
 :::
 
+::: karta understand | Dlaczego te liczby mogą być podobne?
 
-## Checklista
+W jonie jednoatomowym, np. Ca²⁺, liczba określająca ładunek jonu i liczba określająca stopień utlenienia mają tę samą wartość liczbową. Nadal są to różne pojęcia:
 
-| Temat | Musisz umieć |
-|-------|--------------|
-| Wartościowość | definicja, przykłady |
-| Stopień utlenienia | definicja, przykłady |
-| Ładunek jonu | definicja, przykłady |
-| Różnica między pojęciami | rozumiem |
-| Reguły stopni utlenienia | H, O, F, metale |
-| Algorytm obliczania | krok po kroku |
-| Wyjątki | H₂O₂, OF₂, NaH |
-| Metale zmiennowartościowe | Fe, Cu, Sn, Pb, Mn, Cr |
+- `Ca²⁺` oznacza rzeczywisty jon wapnia o ładunku +2;
+- `+II` oznacza formalny stopień utlenienia wapnia w związku.
 
----
-
-## Mapa pojęć
-
-::: drzewo
-Trzy pojęcia
-  Wartościowość
-    liczba wiązań tworzonych przez atom
-    zapis: cyfra rzymska bez znaku (II)
-    przykład: C w CH₄ ma IV
-  Ładunek jonu
-    rzeczywisty ładunek cząstki
-    zapis: cyfra arabska ze znakiem (+2, −1)
-    przykład: Ca²⁺ ma +2
-  Stopień utlenienia
-    formalna wartość przypisana atomowi
-    zapis: cyfra rzymska ze znakiem (−IV)
-    przykład: S w H₂SO₄ ma +VI
-Reguły obliczeń
-  H ma +I (w wodorkach metali −I)
-  O ma −II (wyjątki: nadtlenki −I, OF₂ +II)
-  F ma zawsze −I
-  suma w cząsteczce = 0, w jonie = ładunek jonu
+Nie należy więc traktować zapisu `Ca²⁺` i `+II` jako dwóch sposobów zapisu dokładnie tego samego.
 :::
 
+::: przykład | FeCl₃ — cztery informacje, których nie wolno mieszać
 
-## Co dalej
+W związku FeCl₃:
 
-**F12 — Wzory chemiczne:** zapis, indeksy, nawiasy, grupy atomów.
+- chlorek zawiera aniony Cl⁻;
+- formalny stopień utlenienia żelaza wynosi +III;
+- w szkolnym opisie żelazo ma wartościowość III;
+- zapis Fe³⁺ oznacza osobny jon żelaza o rzeczywistym ładunku +3.
 
-**X01 — Stopnie utlenienia w redoks:** bilans elektronowy i zastosowanie stopni utlenienia do równań.
-
----
-
-## Słownik
-
-| Pojęcie | Definicja |
-|---------|-----------|
-| Wartościowość | Liczba wiązań tworzonych przez atom. |
-| Ładunek jonu | Rzeczywisty ładunek atomu lub grupy. |
-| Stopień utlenienia | Formalny ładunek atomu (umowne przesunięcie elektronów). |
-| Metale zmiennowartościowe | Fe, Cu, Sn, Pb, Mn, Cr. |
-| Reguła stopnia utlenienia | H → +I, O → −II, F → −I, suma = ładunek. |
-
----
-
-## Mosty i rozszerzenia
-
-### Stopień utlenienia a redoks
-
-W reakcjach redoks zmieniają się stopnie utlenienia, a nie wartościowości.
-
-### Most do X01 (redoks)
-
-Stopień utlenienia → utlenianie/redukcja → bilans elektronowy.
-
-### Most do wzorów chemicznych
-
-Znajomość wartościowości i ładunków → układanie wzorów.
-
----
-
-## Źródła
-
-- AGH, dokument dydaktyczny „Reguły ustalania stopni utlenienia” (PDF): https://home.agh.edu.pl/~chemia/dydaktyka/Dokumenty/ChO_IMiR/Reguly_stopnie_utlenienia.pdf — reguły H, O, F, metale grup 1–2, suma 0 i suma = ładunek, wyjątki nadtlenków i OF₂.
-- UMB, prezentacja „Chemia — redoks” (PDF, wynik wyszukiwania): https://www.umb.edu.pl/photo/image/biologia-i-chemia/prezentacja_chemia_redoks.pdf — kontekst zastosowania stopni utlenienia w redoks.
-- ZPE, materiały do podstawy programowej (wyniki wyszukiwania, nie sprawdzono pełnej treści): https://zpe.gov.pl/pdf/Pvn4UaOvF
-- Nie udało się pobrać stron Khan Academy i Wikipedii w tej przebudowie; fakty z nich nie zostały użyte.
-
-
-## Ciekawostki
-
-::: karta extra | Wodór z metalem
-W NaH wodór ma stopień utlenienia −I. Wodór jest bardziej elektroujemny od sodu, więc to on „przyjmuje” wiążący elektron. Stąd wyjątek od reguły +I.
+Wartościowość, stopień utlenienia i ładunek jonu są powiązane, ale nie są tym samym pojęciem.
 :::
 
-::: karta extra | Fluor rządzi tlenem
-W OF₂ tlen ma stopień +II, bo fluor jest najbardziej elektroujemnym pierwiastkiem. Tlen oddaje mu elektrony, a nie odwrotnie.
+## 3 | Wartościowość — liczba wiązań [[basic:E8]] {#wartosciowosc}
+
+**Wartościowość** określa liczbę wiązań, które atom danego pierwiastka tworzy w określonej substancji lub związku.
+
+Wartościowość zapisuje się zwykle cyfrą rzymską, bez znaku.
+
+### Proste przykłady
+
+- H–Cl: wodór tworzy jedno wiązanie → wartościowość I;
+- H–O–H: tlen tworzy dwa wiązania → wartościowość II;
+- NH₃: azot tworzy trzy wiązania z wodorem → wartościowość III;
+- CH₄: węgiel tworzy cztery wiązania z wodorem → wartościowość IV.
+
+::: karta core | Wartościowość a liczba par wiążących
+
+W prostych cząsteczkach na poziomie szkolnym możemy liczyć wiązania:
+
+- wiązanie pojedyncze liczymy jako jedno;
+- wiązanie podwójne liczymy jako dwa;
+- wiązanie potrójne liczymy jako trzy.
+
+Przykłady:
+
+- O₂ ma wiązanie podwójne, więc tlen ma wartościowość II;
+- N₂ ma wiązanie potrójne, więc azot ma wartościowość III;
+- H₂ ma jedno wiązanie pojedyncze, więc wodór ma wartościowość I.
 :::
 
-::: karta extra | Nadtlenki
-W H₂O₂ tlen ma −I, bo dwa atomy tlenu łączą się wiązaniem O–O. Ten przykład pokazuje, że stopień utlenienia zależy od budowy, a nie tylko od rodzaju pierwiastka.
+### Typowe wartościowości
+
+Dla prostych związków pierwiastków grup głównych często spotykamy:
+
+- H — I;
+- O — II;
+- N — III lub V, zależnie od związku i przyjętego modelu;
+- C — IV;
+- Al — III;
+- Cl — I, III, V lub VII w różnych związkach.
+
+Wartościowość nie jest stałą cechą pierwiastka taką jak liczba protonów. Ten sam pierwiastek może tworzyć różną liczbę wiązań w różnych związkach.
+
+::: karta core | Wartościowość z układu okresowego
+
+- Pierwiastki grup 1 i 2: wartościowość równa numerowi grupy (I, II).
+- Pierwiastki grup 13–17: maksymalna wartościowość względem tlenu równa się numerowi grupy; względem wodoru (dla grup 14–17) wynosi 8 minus numer grupy.
+
+Przykłady:
+
+- azot (grupa 15): względem tlenu V, względem wodoru III;
+- tlen (grupa 16): względem wodoru II;
+- chlor (grupa 17): względem wodoru I, względem tlenu VII.
 :::
 
-::: karta extra | Magnetyt
-Fe₃O₄ ma średni stopień utlenienia żelaza +8/3. W tym związku część atomów żelaza ma +II, a część +III. Średnia nie oznacza, że każdy atom ma taki sam stopień.
+::: karta core | Wzór sumaryczny z wartościowości — krzyżowanie
+
+Przykład: tlenek glinu.
+
+1. Zapisz symbole: Al i O.
+2. Zapisz wartościowości: Al(III), O(II).
+3. Przenieś liczby „na krzyż” jako indeksy:
+   `Al₂O₃`.
+4. Sprawdź:
+   `2 · III = 3 · II = 6`.
+
+Wzór tlenku glinu to **Al₂O₃**.
 :::
 
-::: karta extra | Fioletowy utleniacz
-W KMnO₄ mangan ma +VII, czyli najwyższy stopień tego pierwiastka w typowych związkach szkolnych. Dlatego nadmanganian potasu jest silnym utleniaczem.
+### Skracanie indeksów
+
+Przykład: węgiel(IV) i tlen(II).
+
+Początkowo otrzymujemy:
+
+`C₂O₄`
+
+Indeksy 2 i 4 można skrócić przez 2:
+
+`CO₂`
+
+Wzór tlenku węgla(IV) to **CO₂**.
+
+::: karta warning | Nie myl wartościowości ze stopniem utlenienia
+
+Wartościowość zapisujemy bez znaku, np. III.
+
+Stopień utlenienia zapisujemy ze znakiem, np. +III albo −III.
+
+Nie mówimy „wartościowość −III”. Możemy powiedzieć:
+
+- azot ma wartościowość III;
+- azot ma stopień utlenienia −III.
 :::
 
+::: karta warning | Wartościowość chloru ma wiele wartości
 
-## Mity
+W szkolnych schematach:
 
-::: mity | Popularne błędy o trzech pojęciach
-Wartościowość i stopień utlenienia to to samo || Różne pojęcia. W niektórych prostych związkach liczby się zgadzają, ale definicje są różne.
-Stopień utlenienia to ładunek jonu || Ładunek dotyczy rzeczywistego jonu. Stopień utlenienia jest wartością formalną, która może wyjść poza zakres ładunku.
-Tlen zawsze ma −II || Najczęściej tak, ale w nadtlenkach ma −I, a w OF₂ +II.
+- w HCl chlor ma wartościowość I;
+- w HClO₂ chlor ma wartościowość III;
+- w HClO₃ chlor ma wartościowość V;
+- w HClO₄ chlor ma wartościowość VII.
+
+Nie można więc powiedzieć „chlor ma zawsze wartościowość I” bez wskazania związku.
 :::
 
+## 4 | Stopień utlenienia — reguły [[extra:E8+LO]] {#utlenienie}
 
-## Mnemotechniki
+**Stopień utlenienia** jest formalną liczbą przypisaną atomowi zgodnie z umownymi regułami. W uproszczeniu zakładamy, że wspólne elektrony wiążące należą do atomu bardziej elektroujemnego.
 
-::: karta understand | Sposoby pamięciowe
-Kation oddał, anion przyjął: kationy powstają przez oddanie elektronów, aniony przez ich przyjęcie.
-H–I, O–II, Al–III, C–IV: najczęstsze wartościowości do zapamiętania z głowy.
+### Najważniejsze reguły
+
+::: regula
+
+**1. Pierwiastek w stanie wolnym ma stopień utlenienia 0.**
+
+Dotyczy to zarówno metali, jak i cząsteczek pierwiastków:
+
+- Fe — 0;
+- Cu — 0;
+- O₂ — 0;
+- H₂ — 0;
+- Cl₂ — 0;
+- S₈ — 0.
+
+**2. Suma stopni utlenienia w cząsteczce obojętnej wynosi 0.**
+
+Przykład H₂O:
+
+`2 · (+I) + (−II) = 0`
+
+**3. Suma stopni utlenienia w jonie wieloatomowym równa się jego ładunkowi.**
+
+Przykład SO₄²⁻:
+
+`x + 4 · (−II) = −II`
+
+**4. Fluor w związkach ma zawsze stopień utlenienia −I.**
+
+Przykład HF: F ma −I.
+
+**5. Tlen ma zwykle stopień utlenienia −II.**
+
+Wyjątki:
+
+- nadtlenki, np. H₂O₂ — tlen ma −I;
+- OF₂ — tlen ma +II, ponieważ fluor jest bardziej elektroujemny.
+
+**6. Wodór ma zwykle +I.**
+
+Wyjątek stanowią wodorki metali, np. NaH, w których wodór ma −I.
+
+**7. Metale grupy 1 mają w związkach zwykle +I.**
+
+Przykład NaCl: Na ma +I.
+
+**8. Metale grupy 2 mają w związkach zwykle +II.**
+
+Przykład MgO: Mg ma +II.
+
+**9. Glin w typowych związkach ma +III.**
+
+Przykład Al₂O₃: Al ma +III.
+
+**10. Cl, Br i I mają zwykle −I w związkach z metalami i wodorem.**
+
+Przykłady:
+
+- NaCl;
+- HBr;
+- KI.
+
+W związkach z tlenem lub fluorem mogą mieć dodatnie stopnie utlenienia.
+
+**11. Siarka w siarczkach i w H₂S ma zwykle −II.**
+
+Przykłady:
+
+- Na₂S;
+- H₂S.
 :::
 
-## UZUPEŁNIENIE KANONICZNE — trzy pojęcia, których nie wolno utożsamiać (W1, 2026-10-09)
+::: karta understand | Stopień utlenienia a formalny przydział elektronów
 
-- **Wartościowość** opisuje liczbę wiązań przypisywanych atomowi w danym związku w przyjętym modelu; w szkolnym zapisie często oznacza się ją cyfrą rzymską bez znaku.
-- **Ładunek jonu** jest rzeczywistym ładunkiem elektrycznym jonu, np. `Fe³⁺` lub `Ca²⁺`.
-- **Stopień utlenienia** jest formalną wartością wyznaczaną według reguł; zapisuje się go ze znakiem, np. `+III`.
+Stopień utlenienia nie musi oznaczać rzeczywistego ładunku atomu.
 
-W jonie jednoatomowym liczba odpowiadająca ładunkowi jest równa stopniowi utlenienia, ale pojęcia nadal opisują co innego. W związku kowalencyjnym stopień utlenienia nie dowodzi, że cząsteczka zawiera wolne jony.
+W cząsteczce HCl elektrony wiążące są wspólne, ale chlor silniej je przyciąga. Na potrzeby obliczeń przypisujemy te elektrony chlorowi. Wtedy:
 
-### Podstawowe reguły stopni utlenienia
+- chlor otrzymuje formalny stopień −I;
+- wodór otrzymuje formalny stopień +I.
 
-- Pierwiastek w stanie wolnym ma stopień utlenienia `0`.
-- Suma stopni utlenienia w cząsteczce obojętnej wynosi `0`.
-- Suma stopni utlenienia w jonie wieloatomowym jest równa ładunkowi jonu.
-- Fluor w związkach ma `−I`.
-- Tlen ma zwykle `−II`, ale w nadtlenkach ma `−I`.
-- Wodór ma zwykle `+I`, a w wodorkach metali `−I`.
-- Litowce mają zwykle `+I`, a berylowce `+II`.
+Nie oznacza to, że cząsteczka HCl składa się wyłącznie z wolnych jonów H⁺ i Cl⁻. Jest to model używany do bilansowania elektronów i opisywania reakcji utleniania oraz redukcji.
+:::
 
-### Przykłady obliczeń
+## 4.1 | Procedura obliczania stopnia utlenienia {#procedura}
 
-W `H₂SO₄`: `2·(+I) + x + 4·(−II) = 0`, więc `x = +VI`. Siarka ma stopień utlenienia `+VI`.
+::: karta core | Cztery kroki
 
-W `FeCl₃` każdy chlor ma zwykle `−I`, więc żelazo ma formalny stopień utlenienia `+III`. Nie oznacza to, że zapis `Fe³⁺` jest po prostu innym sposobem zapisania stopnia utlenienia w cząsteczce.
+1. Zapisz wzór związku lub jonu.
+2. Wpisz znane stopnie utlenienia.
+3. Zapisz równanie: suma stopni utlenienia musi być równa 0 albo ładunkowi jonu.
+4. Oblicz niewiadomą i zapisz wynik ze znakiem.
+:::
 
-### Ćwiczenia kontrolne
+### Jak zapisywać rachunki?
 
-1. Wyznacz stopień utlenienia siarki w `SO₂`.
-2. Wyznacz stopień utlenienia azotu w `HNO₃`.
-3. Wyznacz stopień utlenienia manganu w `KMnO₄`.
-4. Wyjaśnij różnicę między jonem `Ca²⁺` a stopniem utlenienia `+II` wapnia w związku.
-5. Dlaczego w `H₂O` tlen ma stopień utlenienia `−II`, mimo że woda nie jest zbiorem jonów `H⁺` i `O²⁻`?
+W rachunkach używaj cyfr arabskich:
 
-**Klucz:** 1. `+IV`; 2. `+V`; 3. `+VII`; 4. `Ca²⁺` jest jonem o rzeczywistym ładunku `2+`, a `+II` to formalny stopień utlenienia; 5. stopień utlenienia wynika z formalnego przypisania elektronów według reguł, a nie z istnienia wolnych jonów w cząsteczce.
+`+1 + x − 8 = 0`
 
-## AUDYT W1 — Perplexity, 2026-10-09 (poprawki i uzupełnienia do wprowadzenia przy budowie lekcji)
+W odpowiedzi możesz zapisać:
 
-> Źródło: `chemia/plany/audyty/W1_perplexity_F07-F14₂026-10-09.md`. Weryfikacja treści wysłanego zapisu, nie zakresu.
+`x = +7`, czyli mangan ma stopień utlenienia **+VII**.
 
-### Poprawki
+## 4.2 | Przykład prowadzony — KMnO₄ {#kmno4}
 
-- Wartościowość, ładunek jonu i stopień utlenienia to różne pojęcia. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
-- **Wartościowość** określa liczbę wiązań, które atom danego pierwiastka tworzy w określonej substancji lub związku. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
-- Wartościowość zapisuje się zwykle cyfrą rzymską bez znaku, na przykład  Fe(III)  w znaczeniu wartościowości żelaza. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
-- **Ładunek jonu** jest rzeczywistym ładunkiem elektrycznym jonu i zapisuje się cyfrą arabską ze znakiem, na przykład Fe³⁺. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
-- **Stopień utlenienia** jest formalnym ładunkiem przypisanym atomowi zgodnie z ustalonymi regułami. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
-- Stopień utlenienia zapisuje się cyfrą rzymską ze znakiem, na przykład +III. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
-- Wartościowość nie musi być równa wartości bezwzględnej stopnia utlenienia. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
-- W jonie jednoatomowym ładunek jonu i stopień utlenienia mają tę samą wartość liczbową, ale są innymi pojęciami. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
-- W związku kowalencyjnym atom może mieć stopień utlenienia, mimo że nie występuje jako osobny jon. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+Wyznacz stopień utlenienia manganu w KMnO₄.
 
-### Uzupełnienia
+### Krok 1. Wpisz znane wartości
 
-#### Zasady wyznaczania stopni utlenienia
+- K jest metalem grupy 1 → +I;
+- O ma zwykle −II;
+- cząsteczka KMnO₄ jest obojętna → suma wynosi 0.
 
-- Pierwiastek w stanie wolnym ma stopień utlenienia 0. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
-- Suma stopni utlenienia w obojętnej cząsteczce wynosi 0. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
-- Suma stopni utlenienia w jonie wieloatomowym jest równa jego ładunkowi. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
-- Fluor ma w związkach stopień utlenienia -I. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
-- Tlen ma najczęściej -II, ale występują wyjątki, na przykład nadtlenki. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
-- Wodór ma zwykle +I, ale w wodorkach metali może mieć -I. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
-- Litowce mają zwykle +I. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
-- Berylowce mają zwykle +II. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+### Krok 2. Ułóż równanie
 
-#### Przykład
+`+1 + x + 4 · (−2) = 0`
 
-W H₂SO₄:
+### Krok 3. Oblicz x
 
- 2·(+1)+x+4·(-2)=0
+`1 + x − 8 = 0`
 
- x=+6
+`x = +7`
 
-Siarka ma stopień utlenienia +VI.
+### Odpowiedź
 
-#### Uwaga
+Mangan w KMnO₄ ma stopień utlenienia **+VII**.
 
-W zapisie FeCl₃:
+## 4.3 | Przykład — H₂SO₄ {#h2so4}
 
-- chlorek zawiera jony Cl⁻; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
-- formalny stopień utlenienia żelaza wynosi +III; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
-- można powiedzieć, że żelazo ma wartościowość III w szkolnym opisie; — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
-- nie należy zapisywać tych informacji jednym symbolem. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+Wyznacz stopień utlenienia siarki w H₂SO₄.
 
-#### Zadania
+Wodór ma +I, a tlen −II:
 
-1. Wyznacz stopień utlenienia siarki w SO₂. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
+`2 · (+1) + x + 4 · (−2) = 0`
+
+`2 + x − 8 = 0`
+
+`x − 6 = 0`
+
+`x = +6`
+
+Siarka w H₂SO₄ ma stopień utlenienia **+VI**.
+
+## 4.4 | Przykład — SO₂ {#so2}
+
+Tlen ma −II:
+
+`x + 2 · (−2) = 0`
+
+`x − 4 = 0`
+
+`x = +4`
+
+Siarka w SO₂ ma stopień utlenienia **+IV**.
+
+## 4.5 | Przykład — H₂O₂ {#h2o2}
+
+W H₂O₂ wodór ma +I. Oznaczmy stopień utlenienia jednego atomu tlenu przez x:
+
+`2 · (+1) + 2x = 0`
+
+`2 + 2x = 0`
+
+`2x = −2`
+
+`x = −1`
+
+Każdy atom tlenu w H₂O₂ ma stopień utlenienia **−I**.
+
+Dzieje się tak, ponieważ H₂O₂ jest nadtlenkiem i zawiera wiązanie O–O. Elektrony w wiązaniu między dwoma takimi samymi atomami dzielimy formalnie po równo.
+
+## 4.6 | Przykład — jon NO₃⁻ {#no3}
+
+Wyznacz stopień utlenienia azotu w NO₃⁻.
+
+Tlen ma −II, a suma stopni utlenienia ma wynosić −1:
+
+`x + 3 · (−2) = −1`
+
+`x − 6 = −1`
+
+`x = +5`
+
+Azot w NO₃⁻ ma stopień utlenienia **+V**.
+
+## 4.7 | Przykład — jon NH₄⁺ {#nh4}
+
+W jonie NH₄⁺ wodór ma +I, a suma stopni utlenienia wynosi +1:
+
+`x + 4 · (+1) = +1`
+
+`x + 4 = 1`
+
+`x = −3`
+
+Azot w NH₄⁺ ma stopień utlenienia **−III**.
+
+## 4.8 | Przykład — K₂Cr₂O₇ {#k2cr2o7}
+
+Wyznacz stopień utlenienia chromu w K₂Cr₂O₇.
+
+- K ma +I;
+- O ma −II;
+- związek jest obojętny.
+
+`2 · (+1) + 2x + 7 · (−2) = 0`
+
+`2 + 2x − 14 = 0`
+
+`2x − 12 = 0`
+
+`2x = 12`
+
+`x = +6`
+
+Chrom ma stopień utlenienia **+VI**.
+
+## 4.9 | Uzupełnienie kanoniczne — pięć zadań {#zadania-kanoniczne}
+
+::: karta exam | Rozwiąż samodzielnie
+
+1. Wyznacz stopień utlenienia siarki w SO₂.
 2. Wyznacz stopień utlenienia azotu w HNO₃.
 3. Wyznacz stopień utlenienia manganu w KMnO₄.
-4. Podaj różnicę między Ca²⁺ a +II wapnia w związku.
-5. Wyjaśnij, dlaczego w cząsteczce H₂O tlen ma stopień utlenienia -II, mimo że cząsteczka nie składa się z jonów H⁺ i O²⁻.
+4. Podaj różnicę między jonem Ca²⁺ a stopniem utlenienia +II wapnia w związku.
+5. Wyjaśnij, dlaczego w cząsteczce H₂O tlen ma stopień utlenienia −II, mimo że cząsteczka nie składa się z wolnych jonów H⁺ i O²⁻.
+:::
 
-#### Klucz
+::: odp | Pokaż klucz
 
-1. Siarka: +IV. — ✔ wprowadzone (sekcja UZUPEŁNIENIE KANONICZNE)
-2. Azot: +V.
-3. Mangan: +VII.
-4. Ca²⁺ jest rzeczywistym jonem o ładunku 2+; +II jest formalnym stopniem utlenienia atomu wapnia w związku.
-5. Stopień utlenienia jest formalnym przypisaniem elektronów według reguł elektroujemności, a nie dowodem rzeczywistego występowania wolnych jonów w cząsteczce.
+1. SO₂:
 
-**Status audytu:** poprawki i uzupełnienia zostały przeniesione do sekcji „UZUPEŁNIENIE KANONICZNE”; ćwiczenia i klucze dodano do treści lekcji.
+   `x + 2 · (−2) = 0`
 
-## LOG ZMIAN — 2026-10-12
+   `x = +4`
 
-Przebudowa lekcji (Claude Haiku 5.5). Stan przed: 109 939 B, 3117 wierszy, 126 sekcji `##`, 151 powtórzonych akapitów (267 nadmiarowych wystąpień), brak wykładu. Pełna poprzednia wersja: `chemia/plany/F09_materialy_robocze_v1.md`.
+   Siarka ma stopień utlenienia **+IV**.
 
-**Usunięto z treści (pełna treść w materiałach roboczych):**
-- Trzy kopie całej lekcji z warstw migracyjnych (MASTER v14/v15/v17, „F05”, „stary kanon”) — powtórzone karty, definicje, ściąga, klinika, ćwiczenia, odpowiedzi i fiszki.
-- Meta-sekcje procesu MASTER: „Wizualizacja V008v001”, „Most”, „Domknięcie wykładu MASTER 5.0”, „Jak pracować z tą lekcją”, „Warstwowanie lekcji”, „Poziomy (stałe)”, „Co warto wiedzieć wcześniej”, „Odniesienia w tej lekcji”, „Warstwa v0.2x”, „Cel i zakres” (z warstwy), „Status lekcji”.
-- „0. Wykład kanoniczny” — zastąpiony nowym wykładem „Wykład — trzy liczby, które wyglądają jak jedna”.
-- Diagnoza powtórzona dwa razy — zostawiona jedna (w przypomnieniu).
-- Mapa pojęć w bloku kodu i szybka ściąga w bloku kodu — zastąpione blokiem `::: drzewo`, zgodnie z zasadą bez diagramów ASCII.
-- „System powtórek” — podane czasy („20 min”, „po 1 dniu”), niezgodne z zasadą kursu we własnym tempie.
-- „10 zasad supernauki” — ogólne rady, nie treść lekcji.
-- „Definicje jednym zdaniem” — duplikat słownika.
-- „Dodatek C i D” — opisy formatu wewnętrznego, nie treść dla ucznia.
-- „Doprecyzowania i ciekawostki L001” — izotopy, Aᵣ, mol; nie dotyczą F09 (należą do innych lekcji).
-- Akapit o indeksach i współczynnikach w „Trzy pojęcia w porównaniu” — poza tematem F09 (dotyczy F12).
-- „8.4 Interleaving” — pytania o Z, orbitale i elektrony walencyjne S, poza tematem tej lekcji.
-- „Sprawdzenie diagnostyczne” (9 pytań bez kluczy) — zastąpione testem 5 pytań z wyjaśnieniami.
-- Dodatek E.2 (wyjątki) — duplikat tabeli 5.10.
-- „Warstwa ulepszenia”/„F05” w trzech kopiach — jedna wersja przeniesiona do sekcji porównawczej.
+2. HNO₃:
 
-**Dodano:**
-- Wykład „od zera” (trzy pytania, przykłady, pułapka, procedura liczenia).
-- Dwa mini-wykłady „W skrócie” (kiedy liczby są zgodne; dlaczego stopień wychodzi dziwny) i kartę kontroli sumy.
-- Ciekawostki (5), mity (3), źródła (AGH, UMB, ZPE — adresy z wyników wyszukiwania; AGH sprawdzony przez pobranie treści).
-- Test 5 pytań z wyjaśnieniami; fiszki zapisane jako blok `::: fiszki` (6 z 25 widać od razu, reszta zwinięta).
-- Mapa pojęć jako `::: drzewo`; sekcje ćwiczeń, odpowiedzi i kliniki bez zmian merytorycznych.
+   `+1 + x + 3 · (−2) = 0`
 
-**Poprawki merytoryczne:** brak nowych błędów; zweryfikowano reguły stopni utlenienia z dokumentem AGH (H, O, F, metale grup 1–2, suma 0 i suma = ładunek, wyjątki H w wodorkach, O w nadtlenkach i w OF₂).
+   `x = +5`
 
-**Sprawdzenie:** `narzedzia/limity_lekcji.py`: 0 ❌, ⚠ tylko „sekcje 28” (świadomie: lekcja ma wykład, test i ściągę; reszta to tematyka, nie powtórki). `narzedzia/sprawdz_wyklady.py`: wykład, 3 mini-wykłady, 5 ciekawostek.
+   Azot ma stopień utlenienia **+V**.
 
+3. KMnO₄:
+
+   `+1 + x + 4 · (−2) = 0`
+
+   `x = +7`
+
+   Mangan ma stopień utlenienia **+VII**.
+
+4. Ca²⁺ jest rzeczywistym jonem wapnia o ładunku +2. Zapis +II oznacza formalny stopień utlenienia wapnia w związku. Wartości liczbowe są takie same, ale pojęcia są różne.
+
+5. W H₂O tlen jest bardziej elektroujemny niż wodór. W formalnym modelu przypisujemy tlenowi wspólne elektrony wiążące. Dlatego tlen otrzymuje stopień −II, a wodór +I. Nie oznacza to, że cząsteczka wody zawiera wolne jony H⁺ i O²⁻.
+:::
+
+## 5 | Wykład — dlaczego stopień utlenienia jest „umowny” [[understand:ROZUMIENIE]] {#umowny}
+
+::: karta understand | Elektrony przypisujemy bardziej elektroujemnemu atomowi
+
+W wiązaniu kowalencyjnym elektrony są wspólne dla dwóch atomów. Jeżeli atomy są różne, jeden z nich może silniej przyciągać wspólną parę elektronową.
+
+Stopień utlenienia wyznaczamy tak, jakby wspólne elektrony zostały całkowicie przypisane atomowi bardziej elektroujemnemu.
+
+Przykład HCl:
+
+- chlor jest bardziej elektroujemny niż wodór;
+- wspólną parę elektronową przypisujemy formalnie chlorowi;
+- chlor otrzymuje −I;
+- wodór otrzymuje +I.
+
+To nie jest pełny opis rzeczywistego rozkładu ładunku w cząsteczce. Jest to model przydatny do:
+
+- porównywania związków;
+- zapisywania nazw;
+- bilansowania elektronów;
+- opisu utleniania i redukcji.
+:::
+
+::: karta understand | Kiedy stopień utlenienia ma znak minus?
+
+Ujemny stopień utlenienia otrzymuje zwykle atom, który w danym związku silniej przyciąga elektrony.
+
+Dlatego:
+
+- fluor ma −I;
+- tlen ma zwykle −II;
+- azot w NH₃ ma −III;
+- chlor w NaCl ma −I.
+
+Dodatni stopień utlenienia otrzymuje zwykle atom mniej elektroujemny:
+
+- sód w NaCl ma +I;
+- magnez w MgO ma +II;
+- węgiel w CO₂ ma +IV.
+:::
+
+## 5.1 | Odpowiedź na pytanie przewodnie {#odpowiedz}
+
+Azot w NH₃:
+
+- trzy wiązania N–H → wartościowość III;
+- wodór ma +I;
+- `x + 3 · (+1) = 0`;
+- `x = −3`;
+- azot ma stopień utlenienia −III.
+
+Azot w HNO₃:
+
+- w szkolnym schemacie tworzy połączenia z czterema atomami tlenu → wartościowość IV;
+- `+1 + x + 3 · (−2) = 0`;
+- `x = +5`;
+- azot ma stopień utlenienia +V.
+
+Obie cząsteczki, NH₃ i HNO₃, są obojętne, więc ich całkowity ładunek wynosi 0.
+
+Wniosek:
+
+- różny stopień utlenienia nie musi oznaczać różnego ładunku całej cząsteczki;
+- wartościowość nie musi być równa wartości bezwzględnej stopnia utlenienia;
+- stopień utlenienia i wartościowość odpowiadają na różne pytania.
+
+## 6 | Klinika błędów {#klinika}
+
+| Błąd | Poprawnie | Dlaczego? |
+|---|---|---|
+| „Stopień utlenienia O w H₂O₂ to −II.” | W H₂O₂ każdy O ma −I. | H₂O₂ jest nadtlenkiem i zawiera wiązanie O–O. |
+| „Wartościowość chloru to zawsze I.” | Wartościowość zależy od związku. | Chlor może mieć w szkolnych przykładach I, III, V lub VII. |
+| „Mg w metalu ma +II, bo MgO ma Mg(+II).” | Wolny Mg ma 0. | Stopień +II dotyczy magnezu w związku, a nie wolnego metalu. |
+| „Suma stopni zawsze wynosi 0.” | W jonie suma równa się jego ładunkowi. | Dla SO₄²⁻ suma wynosi −2. |
+| „Azot w NH₃ ma wartościowość −III.” | Azot ma wartościowość III i stopień −III. | Wartościowość nie ma znaku. |
+| „W SO₄²⁻ siarka ma −II, bo jon ma −2.” | Siarka ma +VI. | −2 jest sumą stopni wszystkich atomów w jonie. |
+| „Ca²⁺ i +II wapnia to dokładnie to samo.” | Są to różne pojęcia. | Ca²⁺ to rzeczywisty jon, a +II to formalny stopień utlenienia. |
+| „W HCl naprawdę występują wyłącznie jony H⁺ i Cl⁻.” | Stopnie utlenienia są formalnym modelem. | HCl jest związkiem kowalencyjnym spolaryzowanym. |
+
+### Przykład: stopień węgla w CO₂
+
+Uczeń liczy:
+
+> Tlen ma −II, więc dwa atomy tlenu dają −IV. Węgiel też ma −IV.
+
+To błąd. Suma stopni utlenienia w CO₂ ma wynosić 0:
+
+`x + 2 · (−2) = 0`
+
+`x − 4 = 0`
+
+`x = +4`
+
+Węgiel w CO₂ ma stopień utlenienia **+IV**, a nie −IV.
+
+### Przykład: stopień siarki w SO₄²⁻
+
+Uczeń mówi:
+
+> Jon ma ładunek −2, więc siarka ma −2.
+
+To błąd. Ładunek −2 dotyczy całego jonu:
+
+`x + 4 · (−2) = −2`
+
+`x − 8 = −2`
+
+`x = +6`
+
+Siarka ma **+VI**, a cały jon ma ładunek **−2**.
+
+## 7 | Ćwiczenia {#cwiczenia}
+
+::: karta exam | A. Podstawa — ładunki i stopnie (3 pkt)
+
+1. Jaki ładunek ma jon Al³⁺?
+2. Ile elektronów ma jon Al³⁺, jeśli Z(Al) = 13?
+3. Jaki stopień utlenienia ma fluor w HF?
+4. Jaki stopień utlenienia ma tlen w H₂O?
+5. Jaki stopień utlenienia ma chlor w Cl₂?
+:::
+
+::: odp | Pokaż odpowiedzi
+
+1. Jon Al³⁺ ma ładunek **+3**.
+2. Obojętny atom glinu ma 13 elektronów. Jon Al³⁺ oddał trzy elektrony:
+   `13 − 3 = 10`.
+3. Fluor w HF ma **−I**.
+4. Tlen w H₂O ma **−II**.
+5. Chlor w Cl₂ jest pierwiastkiem w stanie wolnym, więc ma **0**.
+:::
+
+::: karta exam | B. Trening — obliczanie stopni (3 pkt)
+
+1. Wyznacz stopień utlenienia siarki w SO₃.
+2. Wyznacz stopień utlenienia chloru w HClO₄.
+3. Wyznacz stopień utlenienia azotu w NO₃⁻.
+4. Wyznacz stopień utlenienia siarki w SO₂.
+:::
+
+::: odp | Pokaż odpowiedzi
+
+1. SO₃:
+
+   `x + 3 · (−2) = 0`
+
+   `x = +6`
+
+   Siarka ma **+VI**.
+
+2. HClO₄:
+
+   `+1 + x + 4 · (−2) = 0`
+
+   `x = +7`
+
+   Chlor ma **+VII**.
+
+3. NO₃⁻:
+
+   `x + 3 · (−2) = −1`
+
+   `x = +5`
+
+   Azot ma **+V**.
+
+4. SO₂:
+
+   `x + 2 · (−2) = 0`
+
+   `x = +4`
+
+   Siarka ma **+IV**.
+:::
+
+::: adv | C. Ambitne — wyjątki i porównania
+
+1. Wyznacz stopień utlenienia węgla w CH₄ i CO₂. Co wynika z porównania?
+2. Dlaczego w NaH wodór ma stopień −I?
+3. Wyznacz stopień utlenienia manganu w MnO₄⁻.
+4. Wyznacz stopień utlenienia tlenu w OF₂.
+5. Wyjaśnij, dlaczego tlen w H₂O₂ ma −I, a nie −II.
+:::
+
+::: odp | Pokaż odpowiedzi
+
+1. CH₄:
+
+   `x + 4 · (+1) = 0`
+
+   `x = −4`
+
+   Węgiel ma −IV.
+
+   CO₂:
+
+   `x + 2 · (−2) = 0`
+
+   `x = +4`
+
+   Węgiel ma +IV.
+
+   Ten sam pierwiastek może mieć różne stopnie utlenienia w różnych związkach.
+
+2. W NaH sód jest bardziej elektrododatni niż wodór. W formalnym modelu wodór otrzymuje elektrony, dlatego ma −I.
+
+3. MnO₄⁻:
+
+   `x + 4 · (−2) = −1`
+
+   `x = +7`
+
+   Mangan ma +VII.
+
+4. OF₂. Fluor ma −I:
+
+   `x + 2 · (−1) = 0`
+
+   `x = +2`
+
+   Tlen ma +II.
+
+5. W H₂O₂ atomy tlenu są połączone wiązaniem O–O. Ponieważ są takie same, wspólne elektrony tego wiązania dzielimy formalnie po równo. Tlen w nadtlenku ma −I.
+:::
+
+::: karta exam | D. Z ładunku do stopnia
+
+W jonie ClO₄⁻ tlen ma stopień −II.
+
+1. Jaki stopień ma chlor?
+2. Jaki stopień ma chlor w jonie ClO₃⁻?
+3. Dlaczego stopnie są różne?
+:::
+
+::: odp | Pokaż odpowiedź
+
+1. ClO₄⁻:
+
+   `x + 4 · (−2) = −1`
+
+   `x = +7`
+
+   Chlor ma +VII.
+
+2. ClO₃⁻:
+
+   `x + 3 · (−2) = −1`
+
+   `x = +5`
+
+   Chlor ma +V.
+
+3. Zmiana liczby atomów tlenu zmienia sumę ujemnych stopni utlenienia. Ponieważ całkowity ładunek jonu pozostaje określony, stopień chloru musi się zmienić.
+:::
+
+::: karta exam | E. Uzupełnienie kanoniczne — rozróżnij pojęcia
+
+1. Czy Ca²⁺ jest tym samym co +II wapnia w CaO?
+2. Czy w obojętnej cząsteczce mogą występować atomy o niezerowych stopniach utlenienia?
+3. Czy wartościowość ma znak?
+4. Czy atom w związku kowalencyjnym może mieć stopień utlenienia, mimo że nie występuje jako osobny jon?
+:::
+
+::: odp | Pokaż odpowiedzi
+
+1. Nie. Ca²⁺ to rzeczywisty jon wapnia o ładunku +2. +II to formalny stopień utlenienia wapnia w związku.
+2. Tak. W H₂O cząsteczka ma ładunek 0, ale H ma +I, a O ma −II.
+3. Nie. Wartościowość zapisujemy bez znaku.
+4. Tak. Stopień utlenienia jest formalnym przypisaniem elektronów, a nie dowodem, że atom występuje jako osobny jon.
+:::
+
+::: karta exam | Zadania do samodzielnej pracy G1–G5
+
+**G1 — Wzory i nazwy (E8, 3 pkt).**
+
+Podaj wzór tlenku fosforu(V) oraz stopień utlenienia fosforu w tym związku. Dlaczego we wzorze jest P₂O₅, a nie PO?
+
+::: odp | Pokaż klucz
+
+Wzór: **P₂O₅**.
+
+Fosfor ma stopień utlenienia **+V**.
+
+Tlen ma −II. Aby suma wynosiła 0:
+
+`2 · (+5) + 5 · (−2) = 0`
+
+`+10 − 10 = 0`
+
+Indeksów nie można zmienić na PO, ponieważ wtedy suma formalnych wartości nie równoważyłaby się.
+:::
+
+**G2 — Stopnie siarki (E8, 3 pkt).**
+
+Wyznacz stopień siarki w H₂S, SO₃²⁻ i S₈.
+
+::: odp | Pokaż klucz
+
+- H₂S: `2 · (+1) + x = 0` → S ma **−II**;
+- SO₃²⁻: `x + 3 · (−2) = −2` → S ma **+IV**;
+- S₈: pierwiastek w stanie wolnym → S ma **0**.
+:::
+
+**G3 — Znajdź błąd (ambitny, 2 pkt).**
+
+> „W jonie NH₄⁺ azot ma stopień +I, bo ładunek jonu wynosi +1.”
+
+::: odp | Pokaż klucz
+
+Ładunek jonu jest sumą stopni utlenienia wszystkich atomów, a nie stopniem jednego atomu.
+
+`x + 4 · (+1) = +1`
+
+`x = −3`
+
+Azot ma stopień utlenienia **−III**.
+:::
+
+**G4 — Wartościowość czy stopień? (ambitny, 3 pkt).**
+
+Podaj wartościowość i stopień utlenienia azotu w HNO₃. Wyjaśnij różnicę.
+
+::: odp | Pokaż klucz
+
+W szkolnym schemacie:
+
+- wartościowość azotu: **IV**;
+- stopień utlenienia azotu: **+V**.
+
+Wartościowość liczy wiązania atomu, natomiast stopień utlenienia wynika z formalnego przypisania elektronów według reguł elektroujemności. Wartościowość i stopień utlenienia nie muszą być równe.
+:::
+
+**G5 — Redukcja chromu (konkursowy, 3 pkt).**
+
+Oblicz stopień chromu w Cr₂O₇²⁻ i w Cr³⁺. Ile elektronów przyjmują dwa atomy chromu w przejściu od Cr₂O₇²⁻ do 2 Cr³⁺?
+
+::: odp | Pokaż klucz
+
+Dla Cr₂O₇²⁻:
+
+`2x + 7 · (−2) = −2`
+
+`2x − 14 = −2`
+
+`2x = 12`
+
+`x = +6`
+
+Każdy atom chromu zmienia stopień z +VI na +III, czyli przyjmuje 3 elektrony. Dwa atomy przyjmują łącznie:
+
+`2 · 3 = 6`
+
+Odpowiedź: dwa atomy chromu przyjmują **6 elektronów**.
+:::
+:::
+
+## 8 | Fiszki {#fiszki}
+
+::: fiszki
+
+Ładunek jonu to? | różnica liczby protonów i elektronów | basic:podstawa
+
+Co oznacza zapis Mg²⁺? | rzeczywisty jon magnezu o ładunku +2 | basic:podstawa
+
+Stopień utlenienia pierwiastka w stanie wolnym? | 0 | basic:podstawa
+
+Stopień utlenienia F w związkach? | −I | extra:LO
+
+Stopień utlenienia O w większości związków? | −II | extra:LO
+
+Stopień utlenienia O w nadtlenku H₂O₂? | −I | extra:LO
+
+Stopień utlenienia H w większości związków? | +I | extra:LO
+
+Stopień utlenienia H w NaH? | −I | understand:rozumienie
+
+Suma stopni w cząsteczce obojętnej wynosi? | 0 | basic:podstawa
+
+Suma stopni w jonie wieloatomowym wynosi? | ładunek jonu | basic:podstawa
+
+Stopień Mn w KMnO₄? | +VII | understand:rozumienie
+
+Stopień S w H₂SO₄? | +VI | understand:rozumienie
+
+Stopień N w NH₃? | −III | understand:rozumienie
+
+Stopień N w HNO₃? | +V | understand:rozumienie
+
+Wartościowość Cl w HCl? | I | understand:rozumienie
+
+Dlaczego stopień utlenienia jest „umowny”? | ponieważ wiążące elektrony przypisujemy formalnie bardziej elektroujemnemu atomowi | extra:ambitne
+
+Czym różni się Ca²⁺ od +II wapnia? | Ca²⁺ to rzeczywisty jon o ładunku +2, a +II to formalny stopień utlenienia wapnia w związku | extra:ambitne
+:::
+
+## 9 | Słownik {#slownik}
+
+::: slownik
+
+Ładunek jonu :: rzeczywisty stan elektryczny jonu wynikający z różnicy liczby protonów i elektronów
+
+Jon jednoatomowy :: jon zbudowany z jednego atomu, np. Na⁺ lub Ca²⁺
+
+Jon wieloatomowy :: grupa atomów połączonych wiązaniami, mająca jako całość określony ładunek, np. SO₄²⁻
+
+Wartościowość :: liczba wiązań tworzonych przez atom w określonej substancji lub związku; zapisuje się ją bez znaku
+
+Stopień utlenienia :: formalna liczba przypisana atomowi zgodnie z przyjętymi regułami; zapisuje się ją ze znakiem
+
+Reguła sumy :: suma stopni utlenienia w cząsteczce obojętnej wynosi 0, a w jonie równa się jego ładunkowi
+
+Nadtlenek :: związek zawierający wiązanie O–O; tlen ma w nim stopień utlenienia −I
+
+Elektroujemność :: zdolność atomu do przyciągania elektronów wiążących
+:::
+
+## 10 | Test {#test}
+
+::: test
+
+? Jaki ładunek ma jon S²⁻?
+
+- +2
++ −2
+- −4
+- 0
+
+! Siarka przyjęła dwa elektrony, więc jon ma ładunek −2.
+
+? Ile wynosi stopień manganu w KMnO₄?
+
+- +II
+- +IV
++ +VII
+- −VII
+
+! K ma +I, tlen ma −II, a suma w cząsteczce obojętnej wynosi 0. Mangan ma +VII.
+
+? Który związek zawiera tlen o stopniu utlenienia −I?
+
+- H₂O
++ H₂O₂
+- SO₂
+- CO₂
+
+! H₂O₂ jest nadtlenkiem. Tlen ma w nim −I.
+
+? Wartościowość chloru w HCl wynosi:
+
++ I
+- III
+- V
+- VII
+
+! W szkolnym schemacie H–Cl oznacza jedno wiązanie, więc wartościowość chloru wynosi I.
+
+? Stopień utlenienia pierwiastka w stanie wolnym to:
+
+- +1
+- −1
++ 0
+- równy numerowi grupy
+
+! O₂, Fe i Cl₂ są przykładami pierwiastków w stanie wolnym. Ich stopień utlenienia wynosi 0.
+
+? Jaki stopień utlenienia ma siarka w H₂SO₄?
+
+- +IV
++ +VI
+- −II
+- +II
+
+! `2 · (+1) + x + 4 · (−2) = 0`, więc x = +VI.
+
+? Jaki wzór ma tlenek glinu, jeśli Al jest III-wartościowy, a O — II-wartościowy?
+
+- AlO
+- Al₃O₂
++ Al₂O₃
+- AlO₃
+
+! `2 · III = 3 · II`, więc wzór to Al₂O₃.
+
+? Który atom ma różną wartościowość i różny stopień utlenienia?
+
+- O w O₂: wartościowość II, stopień 0
+- H w H₂O₂: wartościowość I, stopień +I
++ O w H₂O₂: wartościowość II, stopień −I
+- Na w NaCl: wartościowość I, stopień +I
+
+! W H₂O₂ tlen tworzy dwa połączenia w szkolnym schemacie, ale ma stopień utlenienia −I.
+
+? Czym różni się Ca²⁺ od +II wapnia w CaO?
+
+- Nie różnią się.
++ Ca²⁺ jest rzeczywistym jonem, a +II jest formalnym stopniem utlenienia.
+- Ca²⁺ oznacza wartościowość wapnia.
+- +II oznacza liczbę elektronów w jonie.
+
+! Wartości liczbowe są takie same, ale pojęcia są różne.
+
+? Jaki jest stopień utlenienia azotu w NH₄⁺?
+
+- +I
+- +III
++ −III
+- 0
+
+! `x + 4 · (+1) = +1`, więc x = −III.
+:::
+
+## 11 | Ciekawostki {#ciekawostki}
+
+::: karta extra | Wartościowość nie ma znaku
+
+Wartościowość zapisujemy bez znaku, ponieważ opisuje liczbę wiązań atomu w określonym związku. Możemy powiedzieć „wartościowość III”, ale nie „wartościowość −III”.
+
+Znak należy do stopnia utlenienia albo ładunku:
+
+- stopień utlenienia −III;
+- ładunek −3.
+:::
+
+::: karta extra | Dlaczego tlen często ma −II?
+
+Tlen jest bardzo elektroujemnym pierwiastkiem. W wielu związkach formalnie przypisujemy mu elektrony wiążące, dlatego jego stopień utlenienia wynosi −II.
+
+Wyjątki pokazują, że jest to reguła, a nie bezwarunkowe prawo:
+
+- H₂O₂ — tlen ma −I;
+- OF₂ — tlen ma +II.
+:::
+
+::: karta extra | Woda nie składa się z wolnych jonów H⁺ i O²⁻
+
+W cząsteczce wody wiązania O–H są kowalencyjne spolaryzowane. Elektrony są wspólne, ale tlen przyciąga je silniej.
+
+Na potrzeby stopni utlenienia przypisujemy je formalnie tlenowi:
+
+- każdy H otrzymuje +I;
+- O otrzymuje −II;
+- suma wynosi 0.
+
+Nie oznacza to, że cząsteczka wody jest prostym zbiorem wolnych jonów.
+:::
+
+::: karta extra | Mangan i jego barwy
+
+Mangan może występować na różnych stopniach utlenienia. Związki manganu często różnią się barwą.
+
+Nadmanganian potasu KMnO₄, w którym mangan ma +VII, jest intensywnie fioletowy. Stopień +VII wiąże się również z silnymi właściwościami utleniającymi tego związku.
+
+Dokładne właściwości zależą od środowiska reakcji i są omawiane szerzej przy reakcjach redoks.
+:::
+
+::: karta extra | Ten sam pierwiastek, różne stopnie
+
+Węgiel:
+
+- w CH₄ ma −IV;
+- w CO₂ ma +IV.
+
+Siarka:
+
+- w H₂S ma −II;
+- w SO₂ ma +IV;
+- w H₂SO₄ ma +VI.
+
+Stopień utlenienia zależy od związku, a nie tylko od symbolu pierwiastka.
+:::
+
+## 12 | Checklista — umiem… {#checklista}
+
+::: checklista
+
+- [ ] odróżnić ładunek, wartościowość i stopień utlenienia;
+- [ ] obliczyć ładunek jonu z liczby protonów i elektronów;
+- [ ] wyjaśnić, co oznacza zapis Ca²⁺;
+- [ ] wyjaśnić, co oznacza formalny zapis +II wapnia w związku;
+- [ ] pamiętać, że pierwiastek w stanie wolnym ma stopień utlenienia 0;
+- [ ] stosować regułę sumy dla cząsteczki obojętnej;
+- [ ] stosować regułę sumy dla jonu wieloatomowego;
+- [ ] stosować reguły dla F, O, H, metali grup 1 i 2 oraz glinu;
+- [ ] rozpoznać wyjątek dla nadtlenków;
+- [ ] rozpoznać wyjątek dla wodorków metali;
+- [ ] wyznaczyć stopień utlenienia pierwiastka w prostym związku;
+- [ ] wyjaśnić, dlaczego stopień utlenienia jest formalnym modelem;
+- [ ] pamiętać, że wartościowość nie ma znaku;
+- [ ] nie utożsamiać ładunku jonu ze stopniem utlenienia atomu w związku.
+:::
+
+::: karta core | Na jednej stronie
+
+**Ładunek jonu** = liczba protonów − liczba elektronów.
+
+**Wartościowość** = liczba wiązań atomu w określonym związku, bez znaku.
+
+**Stopień utlenienia** = formalny przydział elektronów, ze znakiem.
+
+**Suma stopni utlenienia:**
+
+- w cząsteczce obojętnej = 0;
+- w jonie wieloatomowym = ładunek jonu.
+
+**Najważniejsze reguły:**
+
+- pierwiastek wolny = 0;
+- F = −I;
+- O zwykle = −II;
+- O w nadtlenkach = −I;
+- O w OF₂ = +II;
+- H zwykle = +I;
+- H w wodorkach metali = −I;
+- litowce zwykle = +I;
+- berylowce zwykle = +II;
+- Al zwykle = +III.
+:::
+
+---
+
+# AUDYT W1 — audyt 09 z kanonu
+
+## Zakres audytu
+
+Audyt obejmował sprawdzenie rozróżnienia wartościowości, ładunku jonu i stopnia utlenienia, reguł obliczania stopni utlenienia, przykładów, ćwiczeń, kluczy odpowiedzi oraz kompletności materiału dla poziomu szkoły podstawowej i rozszerzeń ambitnych.
+
+## Co wprowadzono
+
+### Rozróżnienie pojęć
+
+Wprowadzono i doprecyzowano:
+
+- wartościowość jako liczbę wiązań atomu w określonym związku;
+- zapis wartościowości cyfrą rzymską bez znaku;
+- ładunek jonu jako rzeczywisty ładunek elektryczny;
+- zapis ładunku cyfrą arabską ze znakiem;
+- stopień utlenienia jako formalny ładunek przypisany atomowi według reguł;
+- zapis stopnia utlenienia ze znakiem, zwykle cyfrą rzymską;
+- fakt, że wartościowość nie musi być równa wartości bezwzględnej stopnia utlenienia;
+- fakt, że atom związku kowalencyjnego może mieć stopień utlenienia, mimo że nie występuje jako osobny jon;
+- fakt, że w jonie jednoatomowym ładunek jonu i stopień utlenienia mogą mieć tę samą wartość liczbową, ale oznaczają różne pojęcia.
+
+### Reguły stopni utlenienia
+
+Wprowadzono lub uporządkowano:
+
+- pierwiastek w stanie wolnym ma 0;
+- suma stopni w cząsteczce obojętnej wynosi 0;
+- suma stopni w jonie wieloatomowym równa się jego ładunkowi;
+- fluor ma −I;
+- tlen ma zwykle −II;
+- tlen w nadtlenkach ma −I;
+- tlen w OF₂ ma +II;
+- wodór ma zwykle +I;
+- wodór w wodorkach metali ma −I;
+- litowce mają zwykle +I;
+- berylowce mają zwykle +II;
+- glin ma zwykle +III.
+
+### Przykłady
+
+Zachowano i poprawiono przykłady:
+
+- SO₂ — siarka +IV;
+- H₂SO₄ — siarka +VI;
+- HNO₃ — azot +V;
+- KMnO₄ — mangan +VII;
+- K₂Cr₂O₇ — chrom +VI;
+- NH₄⁺ — azot −III;
+- SO₄²⁻ — siarka +VI;
+- H₂O₂ — tlen −I;
+- Ca²⁺ i formalne +II wapnia;
+- H₂O jako przykład formalnego przypisania elektronów bez utożsamiania cząsteczki z wolnymi jonami.
+
+### Zadania i klucze
+
+Dodano lub wyraźnie wyodrębniono zadania dotyczące:
+
+1. siarki w SO₂;
+2. azotu w HNO₃;
+3. manganu w KMnO₄;
+4. różnicy między Ca²⁺ i +II wapnia;
+5. formalnego charakteru stopnia utlenienia tlenu w H₂O.
+
+## Co poprawiono
+
+### Poprawki merytoryczne
+
+1. Zmieniono uproszczoną definicję wartościowości na definicję odnoszącą ją do określonego związku.
+2. Usunięto sugestię, że zapis Fe(III) powinien być używany bez rozróżnienia wartościowości i stopnia utlenienia.
+3. Doprecyzowano różnicę między Fe³⁺, +III i wartościowością III.
+4. Zmieniono zdanie „wartościowość jest zawsze dodatnia” na ostrożniejsze wyjaśnienie, że wartościowość zapisuje się bez znaku.
+5. Ograniczono regułę dotyczącą halogenów do związków z metalami i wodorem oraz dodano informację o dodatnich stopniach w związkach z tlenem i fluorem.
+6. Doprecyzowano, że cztery połączenia azotu w HNO₃ są elementem szkolnego modelu strukturalnego.
+7. Doprecyzowano, że przydział elektronów w HCl, H₂O i innych związkach jest formalny, a nie dowodzi występowania wolnych jonów.
+8. Uporządkowano zapis cyfr arabskich w rachunkach i cyfr rzymskich w odpowiedziach oraz nazwach.
+
+## Liczby i wyniki sprawdzone
+
+Poniższe wyniki są poprawne:
+
+| Substancja lub jon | Pierwiastek | Stopień utlenienia |
+|---|---|---:|
+| O₂ | O | 0 |
+| Cl₂ | Cl | 0 |
+| H₂O | O | −II |
+| H₂O₂ | O | −I |
+| NaH | H | −I |
+| HF | F | −I |
+| SO₂ | S | +IV |
+| SO₃ | S | +VI |
+| H₂SO₄ | S | +VI |
+| HNO₃ | N | +V |
+| NH₃ | N | −III |
+| NH₄⁺ | N | −III |
+| NO₃⁻ | N | +V |
+| SO₄²⁻ | S | +VI |
+| KMnO₄ | Mn | +VII |
+| K₂Cr₂O₇ | Cr | +VI |
+| Cr₂O₇²⁻ | Cr | +VI |
+| Cr³⁺ | Cr | +III |
+| OF₂ | O | +II |
+| CO₂ | C | +IV |
+| CH₄ | C | −IV |
+
+## Co odrzucono
+
+### Odrzucono utożsamianie pojęć
+
+Odrzucono możliwość zapisywania wartościowości, ładunku i stopnia utlenienia jednym symbolem, ponieważ prowadziłoby to do błędów pojęciowych.
+
+### Odrzucono nadmierne rozszerzenie
+
+Nie rozwijano szczegółowo:
+
+- średnich stopni utlenienia w tlenkach mieszanych, np. Fe₃O₄;
+- pełnej teorii orbitali;
+- szczegółowego opisu rezonansu w NO₃⁻;
+- pełnej nomenklatury związków;
+- zaawansowanych wyjątków dla wszystkich pierwiastków grup głównych.
+
+Te informacje mogą być przydatne na poziomie licealnym lub konkursowym, ale nie są konieczne do zrozumienia fundamentów lekcji. Wspomniano o nich tylko tam, gdzie ich pominięcie mogłoby prowadzić do błędnego uogólnienia.
+
+## Informacje „do sprawdzenia”
+
+- Dokładne przypisanie lekcji do konkretnych punktów aktualnej podstawy programowej i zakresu egzaminu ósmoklasisty należy zweryfikować z obowiązującym dokumentem Centralnej Komisji Egzaminacyjnej oraz aktualną podstawą programową.
+- Szczegółowa interpretacja wartościowości w złożonych strukturach kowalencyjnych, zwłaszcza w HNO₃, zależy od przyjętego szkolnego modelu zapisu.
+- Informację o wykorzystaniu KMnO₄ w doświadczeniach należy traktować jako ciekawostkę wymagającą zachowania zasad bezpieczeństwa; nie dodano instrukcji wykonywania doświadczeń.
+
+## Końcowy status
+
+Audyt W1 został wprowadzony do lekcji. Dodano brakujące uzupełnienie kanoniczne, rozdzielono ładunek, wartościowość i stopień utlenienia, poprawiono reguły, doprecyzowano przykłady, dodano zadania oraz uzupełniono klucze odpowiedzi.
