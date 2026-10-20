@@ -88,6 +88,9 @@ Cykl trwa średnio **28 dni** (u różnych kobiet od ok. 21 do 35 dni). Poniżej
 
 ## 4 | Zapłodnienie {#zaplodnienie}
 
+@viz podzial-komorki {typ="mej"} | Mejoza — skąd się biorą gamety (i porównanie z mitozą) | etapy zmieniają się same, ◀ ▶ ręcznie
+@opis Etapy mejozy dla komórki 2n = 4: interfaza, profaza I z crossing-over, metafaza I, anafaza I, koniec I, anafaza II, cztery gamety n = 2; przycisk „mitoza” pokazuje podział na dwie komórki identyczne 2n = 4. Wniosek: mejoza zmniejsza liczbę chromosomów o połowę i tworzy różne gamety, a mitoza daje dwie identyczne komórki (wzrost, regeneracja).
+
 Zapłodnienie zachodzi w **jajowodzie**, zwykle w jego najszerszej części (ampuli).
 
 1. Plemniki przepływają przez szyjkę macicy do jajowodu.

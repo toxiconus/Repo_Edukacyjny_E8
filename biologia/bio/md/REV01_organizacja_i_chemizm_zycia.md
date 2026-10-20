@@ -398,6 +398,9 @@ Słownie: dwutlenek węgla + woda → glukoza + tlen. To zapis **sumaryczny** �
 
 ## 7 | Oddychanie komórkowe i fermentacja [[basic:E8]] {#oddychanie}
 
+@viz fotosynteza-oddychanie | Fotosynteza i oddychanie — krążenie materii | przełączaj tryb, kropki płyną same
+@opis Chloroplast po lewej i mitochondrium po prawej; kropki płyną po strzałkach: światło i CO₂ + H₂O do chloroplastu, glukoza i O₂ do mitochondrium, CO₂ + H₂O z powrotem, ATP na zewnątrz. Przyciski wyróżniają fotosyntezę, oddychanie lub oba procesy; pod spodem tabela porównawcza. Wniosek: produkty jednego procesu są substratami drugiego, materia krąży, a energia przepływa (światło → ATP i ciepło).
+
 ::: regula
 **Oddychanie komórkowe** — rozkład związków organicznych (głównie glukozy) w komórkach, w którym uwalnia się energia magazynowana w **ATP**. **Oddychanie tlenowe** zachodzi z udziałem tlenu, u eukariontów głównie w **mitochondriach** (pierwszy etap — glikoliza — w cytoplazmie).
 :::

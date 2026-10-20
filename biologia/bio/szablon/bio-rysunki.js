@@ -456,4 +456,86 @@ mount:function(el){
   lab2();draw();
   if('IntersectionObserver'in window)new IntersectionObserver(function(es){vis=es[0].isIntersecting},{threshold:0.4}).observe(el);else vis=true;
   if(reduce){paused=true;lab2()}requestAnimationFrame(loop)}});
+
+/* =====================================================================
+   12. FOTOSYNTEZA ↔ ODDYCHANIE (krążenie materii) i PODZIAŁ KOMÓRKI (mitoza / mejoza)
+   ===================================================================== */
+var FUID=0;
+BIO.define('fotosynteza-oddychanie',{opis:'Chloroplast i mitochondrium: krążenie materii (glukoza, O₂, CO₂, H₂O) i przepływ energii (światło → ATP/ciepło); kropki płyną w pętli; tryby fotosynteza / oddychanie / oba + tabela porównawcza',
+mount:function(el,o){
+  var mode=['fot','odd','oba'].indexOf(o.tryb)>=0?o.tryb:'oba',vis=false,last=0,paused=false,reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var bar=H('div','bw-seg bv-tools'),svg=BIO.svg(360,290,'Fotosynteza w chloroplaście i oddychanie w mitochondrium'),out=H('div','bv-info bw-out'),tw=H('div','bw-tbl'),pb=H('button','bv-btn');
+  svg.setAttribute('class','bw-svg');pb.type='button';[bar,svg,out,tw].forEach(function(e){el.appendChild(e)});bar.appendChild(pb);
+  /* organelle */
+  svg.appendChild(E(88,150,64,40,'var(--chloro-bg,#e3f4e3)','var(--chloro,#4caf50)',3));[-30,-10,10,30].forEach(function(dx){svg.appendChild(R(88+dx-7,134,14,30,3,'#8bc98f','#2e7d32',1.2))});
+  svg.appendChild(BIO.T(88,194,'chloroplast',{s:11,w:700}));svg.appendChild(BIO.T(88,206,'fotosynteza',{s:9.5,w:500,f:'var(--viz-mut,#5d6b7a)'}));
+  svg.appendChild(E(272,150,58,36,'var(--mito-bg,#fde9dc)','var(--mito,#e58b5a)',3));svg.appendChild(P('M232,150 q9,-18 18,0 t18,0 t18,0 t18,0',null,'var(--mito,#e58b5a)',2));
+  svg.appendChild(BIO.T(272,194,'mitochondrium',{s:11,w:700}));svg.appendChild(BIO.T(272,206,'oddychanie tlenowe',{s:9.5,w:500,f:'var(--viz-mut,#5d6b7a)'}));
+  svg.appendChild(C(26,32,12,'#ffe082','#f9a825',2));[0,1,2,3,4,5,6,7].forEach(function(i){var a=i*Math.PI/4;svg.appendChild(L(26+16*Math.cos(a),32+16*Math.sin(a),26+22*Math.cos(a),32+22*Math.sin(a),'#f9a825',2))});
+  var PS=[ /* [path, kolor, etykieta, [tryby podświetlone], pozycja etykiety] */
+   ['M40,50 L72,114','#f9a825','światło',{fot:1,oba:1},[10,82]],
+   ['M30,262 Q44,200 66,176','#6a7b86','CO₂ + H₂O',{fot:1,oba:1},[2,270]],
+   ['M132,128 Q180,62 232,128','#e07b2a','glukoza',{fot:1,odd:1,oba:1},[150,76]],
+   ['M132,142 Q180,90 232,142','#4aa3c9','O₂',{fot:1,odd:1,oba:1},[172,134]],
+   ['M232,176 Q180,252 132,176','#6a7b86','CO₂ + H₂O',{odd:1,oba:1},[160,244]],
+   ['M300,176 L336,232','#43a047','ATP (energia)',{odd:1,oba:1},[262,262]]];
+  var paths=[],dots=[];
+  PS.forEach(function(p,i){var pa=P(p[0],'none',p[1],2.4,{'stroke-dasharray':'3 5'});svg.appendChild(pa);paths[i]=pa;
+    svg.appendChild(BIO.T(p[4][0],p[4][1],p[2],{s:9.5,w:700,a:'start',f:p[1]==='#f9a825'?'#b07a00':p[1]}));
+    var ds=[];for(var j=0;j<4;j++){var d=C(0,0,3.8,p[1],'#fff',1);svg.appendChild(d);ds.push(d)}dots[i]=ds});
+  var TXT={fot:'<b>Fotosynteza</b><span>6CO₂ + 6H₂O + energia światła → C₆H₁₂O₆ + 6O₂. Zachodzi w chloroplastach (chlorofil), tylko w zielonych komórkach roślin, glonów i sinic, w świetle. Energia świetlna zamienia się w energię wiązań chemicznych glukozy.</span>',
+   odd:'<b>Oddychanie komórkowe (tlenowe)</b><span>C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energia (ATP + ciepło). Zachodzi w mitochondriach, we WSZYSTKICH komórkach eukariotycznych, dzień i noc. Bez tlenu: fermentacja w cytoplazmie, znacznie mniej ATP.</span>',
+   oba:'<b>Krążenie materii, przepływ energii</b><span>Produkty jednego procesu są substratami drugiego (glukoza, O₂ ↔ CO₂, H₂O) — materia krąży. Energia nie krąży: światło wchodzi, a ATP i ciepło wychodzą. Roślina robi oba procesy; zwierzę tylko oddychanie.</span>'};
+  function setMode(m){mode=m;clr(bar);[['fot','fotosynteza'],['odd','oddychanie'],['oba','oba procesy']].forEach(function(f){var b=H('button','bv-btn'+(f[0]===mode?' on':''));b.type='button';b.textContent=f[1];b.onclick=function(){setMode(f[0])};bar.appendChild(b)});bar.appendChild(pb);
+    PS.forEach(function(p,i){var on=!!p[3][mode];paths[i].style.opacity=on?1:0.12;dots[i].forEach(function(d){d.style.opacity=on?1:0})});out.innerHTML=TXT[mode]}
+  function lab3(){pb.textContent=paused?'▶ wznów':'❚❚ pauza'}pb.onclick=function(){paused=!paused;lab3()};
+  var t=0;function frame(){PS.forEach(function(p,i){var L0=paths[i].getTotalLength();dots[i].forEach(function(d,j){var u=((t*0.25+j/4)%1),q=paths[i].getPointAtLength(u*L0);d.setAttribute('cx',q.x);d.setAttribute('cy',q.y)})})}
+  function loop(ts){if(!document.body.contains(el))return;if(vis&&!paused&&!reduce){t+=(ts-(last||ts))/1000;frame()}last=ts;requestAnimationFrame(loop)}
+  var h=['Cecha','Fotosynteza','Oddychanie komórkowe'],rows=[['Gdzie','chloroplasty (zielone komórki)','mitochondria (cytoplazma — glikoliza); wszystkie komórki eukariotyczne'],['Kiedy','tylko w świetle','stale, dzień i noc'],['Substraty','CO₂, H₂O, światło','glukoza, O₂'],['Produkty','glukoza, O₂','CO₂, H₂O, ATP, ciepło'],['Energia','pochłaniana (światło → wiązania)','uwalniana (wiązania → ATP)'],['Typ przemiany','synteza (anabolizm)','rozkład (katabolizm)']];
+  var t2=H('table'),hr=H('tr');h.forEach(function(x){hr.appendChild(H('th',null,x))});t2.appendChild(hr);rows.forEach(function(r){var tr=H('tr');r.forEach(function(x,i){tr.appendChild(H('td',null,i?x:'<b>'+x+'</b>'))});t2.appendChild(tr)});tw.appendChild(t2);
+  setMode(mode);lab3();frame();
+  if('IntersectionObserver'in window)new IntersectionObserver(function(es){vis=es[0].isIntersecting},{threshold:0.4}).observe(el);else vis=true;
+  if(reduce){paused=true;lab3()}requestAnimationFrame(loop)}});
+
+/* ---- podział komórki: mitoza i mejoza (2n = 4), autostart „do przodu i od początku” ---- */
+var CA='#2a6fb0',CB='#4fb3c9',CC='#c0392b',CD='#e8833a';
+function chr(g,x,y,len,col,type,rot,half){ /* type: X (2 chromatydy) | I (1) ; half: kolor drugiej chromatydy (crossing-over) */
+  var gg=S('g',{transform:'rotate('+(rot||0)+' '+x+' '+y+')'});
+  if(type==='X'){gg.appendChild(L(x-5,y-len/2,x+5,y+len/2,col,6));gg.appendChild(L(x+5,y-len/2,x-5,y+len/2,half||col,6))}
+  else gg.appendChild(L(x,y-len/2,x,y+len/2,col,6));
+  gg.appendChild(C(x,y,3,'#fff',col,1.5));g.appendChild(gg)}
+function cellO(g,x,y,rx,ry){g.appendChild(E(x,y,rx,ry,'var(--cell-cyto,#f4f9ef)','var(--cell-mem,#5c8a3a)',3))}
+function spindle(g,pts){g.appendChild(C(26,130,4,'#9aa8b4','none',0));pts.forEach(function(p){g.appendChild(L(26,130,p[0],p[1],'#c7d0d6',1));g.appendChild(L(334,130,p[0],p[1],'#c7d0d6',1))})}
+var DZ={
+ mit:{t:'Mitoza',st:[
+  ['interfaza (replikacja DNA)','2n = 4','Przed podziałem DNA się podwaja. Chromatyna jest rozluźniona, chromosomów jeszcze nie widać. Każdy chromosom będzie miał dwie identyczne chromatydy.',function(g){cellO(g,180,130,150,100);g.appendChild(C(180,130,52,'var(--nucleus-bg,#f3ecfb)','var(--nucleus,#9b6bd1)',2.5));g.appendChild(BIO.g.squiggle(180,130,52,1))}],
+  ['profaza','2n = 4 (każdy chromosom z 2 chromatyd)','Chromatyna kondensuje do widocznych chromosomów (każdy = 2 chromatydy połączone w centromerze). Zanika otoczka jądrowa, tworzy się wrzeciono podziałowe.',function(g){cellO(g,180,130,150,100);[[130,100,44,CA,20],[225,105,44,CB,-30],[145,160,30,CC,-15],[215,165,30,CD,40]].forEach(function(c){chr(g,c[0],c[1],c[2],c[3],'X',c[4])})}],
+  ['metafaza','2n = 4','Chromosomy ustawiają się w płaszczyźnie równikowej, włókna wrzeciona łączą się z centromerami. To najlepszy moment do policzenia chromosomów (kariotyp).',function(g){cellO(g,180,130,150,100);spindle(g,[[180,80],[180,108],[180,150],[180,178]]);[[180,80,44,CA],[180,108,44,CB],[180,150,30,CC],[180,178,30,CD]].forEach(function(c){chr(g,c[0],c[1],c[2],c[3],'X',90)})}],
+  ['anafaza','2n = 4 + 4 (8 chromosomów)','Chromatydy rozdzielają się i wędrują do biegunów — teraz każda to osobny chromosom. Przy każdym biegunie jest pełny komplet (4).',function(g){cellO(g,180,130,150,100);spindle(g,[[110,80],[110,108],[110,150],[110,178],[250,80],[250,108],[250,150],[250,178]]);[80,108,150,178].forEach(function(y,i){var c=[CA,CB,CC,CD][i],l=i<2?44:30;chr(g,110,y,l,c,'I',90);chr(g,250,y,l,c,'I',90)})}],
+  ['telofaza i cytokineza','2 komórki 2n = 4','Wokół chromosomów powstają jądra, cytoplazma się dzieli. Powstają DWIE komórki identyczne z komórką wyjściową (wzrost, regeneracja, rozmnażanie bezpłciowe).',function(g){[[105,130],[255,130]].forEach(function(p){cellO(g,p[0],p[1],78,88);g.appendChild(C(p[0],p[1],46,'var(--nucleus-bg,#f3ecfb)','var(--nucleus,#9b6bd1)',2));[[-14,-18,CA,36],[12,-14,CB,36],[-14,16,CC,26],[12,18,CD,26]].forEach(function(c){chr(g,p[0]+c[0],p[1]+c[1],c[3],c[2],'I',0)})})}]]},
+ mej:{t:'Mejoza',st:[
+  ['interfaza (replikacja DNA)','2n = 4','Jak w mitozie: DNA się podwaja, chromosomy mają po 2 chromatydy. Mejoza zachodzi tylko w komórkach linii płciowej i prowadzi do gamet.',function(g){cellO(g,180,130,150,100);g.appendChild(C(180,130,52,'var(--nucleus-bg,#f3ecfb)','var(--nucleus,#9b6bd1)',2.5));g.appendChild(BIO.g.squiggle(180,130,52,2))}],
+  ['profaza I (crossing-over)','2n = 4','Chromosomy homologiczne (od matki i od ojca) łączą się w pary — biwalenty. Chromatydy wymieniają fragmenty (crossing-over), co tworzy nowe kombinacje alleli.',function(g){cellO(g,180,130,150,100);chr(g,130,100,44,CA,'X',0,CB);chr(g,148,100,44,CB,'X',0,CA);chr(g,205,158,30,CC,'X',0,CD);chr(g,223,158,30,CD,'X',0,CC)}],
+  ['metafaza I','2n = 4','Pary homologów ustawiają się na równiku — każdy homolog z jednej strony. Ich ułożenie jest losowe (to druga przyczyna zmienności).',function(g){cellO(g,180,130,150,100);spindle(g,[[180,95],[180,165]]);chr(g,166,95,44,CA,'X',90,CB);chr(g,194,95,44,CB,'X',90,CA);chr(g,166,165,30,CC,'X',90,CD);chr(g,194,165,30,CD,'X',90,CC)}],
+  ['anafaza I','2n = 4 (rozdzielają się homologi)','Rozdzielają się CAŁE chromosomy homologiczne (nie chromatydy) i wędrują do biegunów. Liczba chromosomów przy biegunie spada o połowę.',function(g){cellO(g,180,130,150,100);spindle(g,[[110,95],[110,165],[250,95],[250,165]]);chr(g,110,95,44,CA,'X',90,CB);chr(g,250,95,44,CB,'X',90,CA);chr(g,110,165,30,CC,'X',90,CD);chr(g,250,165,30,CD,'X',90,CC)}],
+  ['koniec I','2 komórki n = 2 (X)','Powstają dwie komórki haploidalne (n = 2), ale chromosomy nadal mają po 2 chromatydy.',function(g){[[105,130],[255,130]].forEach(function(p,k){cellO(g,p[0],p[1],78,88);chr(g,p[0],p[1]-22,44,k?CB:CA,'X',0,k?CA:CB);chr(g,p[0],p[1]+26,30,k?CD:CC,'X',0,k?CC:CD)})}],
+  ['anafaza II','n = 2 → rozdzielają się chromatydy','W obu komórkach rozdzielają się chromatydy (jak w mitozie) i wędrują do biegunów.',function(g){[[105,130],[255,130]].forEach(function(p,k){cellO(g,p[0],p[1],78,88);[[-16,-30,44],[-16,30,30],[16,-30,44],[16,30,30]].forEach(function(c,j){chr(g,p[0]+c[0],p[1]+c[1],c[2],(j%2?(k?CD:CC):(k?CB:CA)),'I',0)})})}],
+  ['koniec II — gamety','4 komórki n = 2','Powstają CZTERY komórki haploidalne (n = 2), różniące się od siebie i od komórki wyjściowej. To gamety (u zwierząt plemniki/komórki jajowe) lub zarodniki (u roślin).',function(g){[[105,75],[255,75],[105,190],[255,190]].forEach(function(p,k){cellO(g,p[0],p[1],64,58);chr(g,p[0]-10,p[1],30,[CA,CB,CA,CB][k],'I',0);chr(g,p[0]+10,p[1],22,[CC,CD,CD,CC][k],'I',0)})}]]}
+};
+BIO.define('podzial-komorki',{opis:'Mitoza i mejoza (2n = 4) etap po etapie: chromosomy, chromatydy, liczba komórek; autostart w widoku (do przodu i od początku), strzałki ◀ ▶, przełącznik mitoza/mejoza; opcja typ="mit|mej"',
+mount:function(el,o){
+  var k=DZ[o.typ]?o.typ:'mit',i=0,paused=false,vis=false,last=0,acc=0,reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var tb=H('div','bw-seg bv-tools'),holder=H('div'),nb=H('div','bw-seg bv-tools'),out=H('div','bv-info bw-out');[tb,holder,nb,out].forEach(function(e){el.appendChild(e)});
+  function draw(){var d=DZ[k],st=d.st[i];clr(holder);var svg=BIO.svg(360,260,d.t+': '+st[0]);svg.setAttribute('class','bw-svg');holder.appendChild(svg);var g=S('g',{});st[3](g);svg.appendChild(g);
+    svg.appendChild(BIO.T(180,14,st[0]+'  ·  '+st[1],{s:11,w:700}));
+    clr(tb);[['mit','mitoza'],['mej','mejoza']].forEach(function(f){var b=H('button','bv-btn'+(f[0]===k?' on':''));b.type='button';b.textContent=f[1];b.onclick=function(){k=f[0];i=0;acc=0;draw()};tb.appendChild(b)});
+    clr(nb);var pv=H('button','bv-btn');pv.type='button';pv.textContent='◀';pv.setAttribute('aria-label','poprzedni etap');pv.onclick=function(){paused=true;i=(i+d.st.length-1)%d.st.length;draw()};
+    var nx=H('button','bv-btn');nx.type='button';nx.textContent='▶';nx.setAttribute('aria-label','następny etap');nx.onclick=function(){paused=true;i=(i+1)%d.st.length;draw()};
+    var pp=H('button','bv-btn');pp.type='button';pp.textContent=paused?'▶ wznów animację':'❚❚ pauza';pp.onclick=function(){paused=!paused;draw()};[pv,nx,pp].forEach(function(b){nb.appendChild(b)});
+    var dots=d.st.map(function(_,j){return j===i?'●':'○'}).join(' ');
+    out.innerHTML='<b>'+(i+1)+'/'+d.st.length+'. '+st[0]+' <span style="font-weight:500;opacity:.7">'+dots+'</span></b><span>'+st[2]+'</span>'}
+  function loop(ts){if(!document.body.contains(el))return;if(vis&&!paused&&!reduce){acc+=(ts-(last||ts));if(acc>3200){acc=0;i=(i+1)%DZ[k].st.length;draw()}}last=ts;requestAnimationFrame(loop)}
+  draw();
+  if('IntersectionObserver'in window)new IntersectionObserver(function(es){vis=es[0].isIntersecting},{threshold:0.4}).observe(el);else vis=true;
+  if(reduce)paused=true;requestAnimationFrame(loop)}});
 })();

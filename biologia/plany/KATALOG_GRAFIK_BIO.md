@@ -2,7 +2,7 @@
 
 Zasada: przed nowym rysunkiem sprawdź tę listę — używamy i ulepszamy istniejące (nowe i stare), nie dublujemy.
 
-## 1. Komponenty BIO (nowe, `biologia/bio/szablon/`) — 30
+## 1. Komponenty BIO (nowe, `biologia/bio/szablon/`) — 32
 
 | id | opis | plik | użyte w |
 |---|---|---|---|
@@ -36,6 +36,8 @@ Zasada: przed nowym rysunkiem sprawdź tę listę — używamy i ulepszamy istni
 | neuron-budowa | Neuron: dendryty, ciało komórki, jądro, akson, osłonka mielinowa, przewężenia Ranviera, zakończenia aksonu (synapsa); tryby poznaj / znajdź / podpisz | bio-rysunki.js | B2d_uklad_nerwowy_i_zmysly |
 | nefron-budowa | Nefron: kłębuszek, torebka Bowmana, kanalik bliższy, pętla Henlego, kanalik dalszy, kanalik zbiorczy, tętniczki, naczynia okołokanalikowe; tryby poznaj / znajdź / podpisz | bio-rysunki.js | B2c_oddychanie_i_wydalanie |
 | wentylacja | Mechanika oddychania: przepona, żebra, objętość klatki i płuc; animacja wdech ↔ wydech tam i z powrotem (autostart w widoku), suwak do ręcznego sterowania, opis fazy | bio-rysunki.js | B2c_oddychanie_i_wydalanie |
+| fotosynteza-oddychanie | Chloroplast i mitochondrium: krążenie materii (glukoza, O₂, CO₂, H₂O) i przepływ energii (światło → ATP/ciepło); kropki płyną w pętli; tryby fotosynteza / oddychanie / ob | bio-rysunki.js | REV01_organizacja_i_chemizm_zycia |
+| podzial-komorki | Mitoza i mejoza (2n = 4) etap po etapie: chromosomy, chromatydy, liczba komórek; autostart w widoku (do przodu i od początku), strzałki ◀ ▶, przełącznik mitoza/mejoza; op | bio-rysunki.js | B2f_rozmnazanie_i_rozwoj [typ="mej"] |
 
 ## 2. Stare lekcje/wizualizacje HTML (`biologia/`) — źródło do przeniesienia/ulepszenia
 
