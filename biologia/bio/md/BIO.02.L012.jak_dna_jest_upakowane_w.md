@@ -2092,15 +2092,6 @@ Rozwiąż bez zaglądania do odpowiedzi.
 
 ---
 
-## Powtórki rozłożone w czasie
-
-| Kiedy | Co | Czas |
-|---|---|---:|
-| Po lekcji | ściąga + 5 fiszek | 15–20 min |
-| +1 dzień | fiszki + tabela liczenia | 10 min |
-| +3 dni | klinika + kalkulator `2n = 8, 10, 20` | 15 min |
-| +1 tydzień | test + fiszki | 20 min |
-| +1 miesiąc | mapa pojęć + zadania z życia | 15 min |
 
 ### Zasada 3 pytań
 

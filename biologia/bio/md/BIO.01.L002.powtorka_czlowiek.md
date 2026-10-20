@@ -2269,26 +2269,6 @@ Wpisanie „✓" bez umiejętności wyjaśnienia to samooszukiwanie. Lepiej ozna
   
 
   System powtórek — diagnoza
-  
-    
-
-      
-      
-        
-        
-        
-        
-        
-        
-      
-    | Kiedy | Co |
-| --- | --- |
-| Ten sam dzień | fiszki startowe (sekcja 12) |
-| +2 dni | pytania, które były błędne |
-| +7 dni | pełna diagnoza jeszcze raz (inne sformułowania z sekcji 9) |
-| Po L013 | wróć do pytań o DNA / 46 / replikację |
-| Po L017 | allel, genotyp, fenotyp |
-| Po L021 | cała diagnoza jako „czy blok genetyki siedzi" |
 
   
 
