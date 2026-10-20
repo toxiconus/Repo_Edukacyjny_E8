@@ -252,3 +252,4 @@
 - 2026-10-15: F21 — zadania 14–15 oznaczone E8+LO; dodane zadanie 4b (2H, H₂, 2H₂); nagłówek: 21 zadań.
 - 2026-10-15: F20 — pełna lekcja z odpowiedzi zewnętrznej (AUDYT W1), etykiety E8+LO (powłoki, kolejność zapełniania, stopnie utlenienia, polarność, CO₃²⁻); W2: chemia/plany/audyty/F20_W2_zakres_2026-10-15.md.
 - 2026-10-15: ANG — wydzielone z pakietu L001-EN-Wszystkie-lekcje.md: lekcje 1, 7–11 (md w angielski/lekcje_md, html w angielski/html); index przebudowany.
+- 2026-10-20: H-A — odświeżone spisy: MAPA, BIO_KATALOG (tabela 58 lekcji, KB, @viz, audyty; katalog grafik zaktualizowany generatorem).

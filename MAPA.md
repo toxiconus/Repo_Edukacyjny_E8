@@ -3,7 +3,7 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (19 pl., 515 KB)
+## .  (19 pl., 517 KB)
 - (zwinięte; `ls .`) — duże:
 - ⚠`INDEKS.html` 56 KB
 - ⚠`SPIS_WSZYSTKICH.md` 61 KB
@@ -639,18 +639,18 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/pakiet  (1 pl., 28 KB)
 - `okladka.html` 28 KB
 
-## chemia/pakiet/html  (81 pl., 14.2 MB)
+## chemia/pakiet/html  (90 pl., 16.0 MB)
 - (zwinięte; `ls chemia/pakiet/html`) — duże:
-- ⚠`F01_jak_mysli_chemik.html` 218 KB
-- ⚠`F02_materia_i_substancje.html` 209 KB
-- ⚠`F03_wlasciwosci_i_rozdzielanie.html` 212 KB
-- ⚠`F04_atom.html` 205 KB
-- ⚠`F05_izotopy_jony_masa_atomowa.html` 188 KB
-- ⚠`F06_uklad_okresowy.html` 301 KB
-- ⚠`F07_konfiguracja_elektronowa.html` 161 KB
-- ⚠`F08_konfiguracja_uklad_okresowy.html` 148 KB
+- ⚠`C1c_konfiguracje_elektronowe.html` 251 KB
+- ⚠`C1c_kwasy_zasady_sole.html` 254 KB
+- ⚠`C1c_masy_sklad_procentowy.html` 243 KB
+- ⚠`C1c_wodorki_typy_reakcji.html` 250 KB
+- ⚠`C2m_mol_masa_molowa.html` 154 KB
+- ⚠`C2w_wzor_elementarny_rzeczywisty.html` 157 KB
+- ⚠`C3_rownania_i_obliczenia_z_rownan.html` 151 KB
+- ⚠`C4_doswiadczenia_zbiorczo.html` 176 KB
 
-## chemia/pakiet/md  (81 pl., 3.0 MB)
+## chemia/pakiet/md  (90 pl., 3.1 MB)
 - (zwinięte; `ls chemia/pakiet/md`) — duże:
 - ⚠`F01_jak_mysli_chemik.md` 62 KB
 - ⚠`F02_materia_i_substancje.md` 55 KB
@@ -715,7 +715,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## eksport/grafiki  (1 pl., 7 KB)
 - `VIZ_START.html` 7 KB
 
-## narzedzia  (28 pl., 188 KB)
+## narzedzia  (29 pl., 189 KB)
 - (zwinięte; `ls narzedzia`)
 
 ## narzedzia/jednorazowe  (5 pl., 14 KB)
@@ -800,18 +800,18 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `OLI.CHE.R07.stechiometria_z_nadmiarem.md` 10 KB
 - `OLI.CHE.X04.szereg_aktywnosci_metali.md` 17 KB
 
-## okladki/polski/html  (47 pl., 6.1 MB)
+## okladki/polski/html  (75 pl., 8.8 MB)
 - (zwinięte; `ls okladki/polski/html`) — duże:
-- ⚠`POL.01.L001.lektury_iv_vi_imieslowy.html` 241 KB
-- ⚠`POL.01.L002.hobbit_nieodmienne_czesci_mowy.html` 184 KB
-- ⚠`POL.01.L003.narnia_zaimek.html` 163 KB
-- ⚠`POL.01.L004.chlopcy_z_placu_broni_przymiotnik_liczebnik.html` 153 KB
-- ⚠`POL.01.L005.kajko_i_kokosz_rzeczownik.html` 159 KB
-- ⚠`POL.01.L006.akademia_pana_kleksa_czasownik.html` 156 KB
-- ⚠`POL.01.L007.przeglad_czesci_mowy.html` 129 KB
-- ⚠`POL.01.L008.czesci_zdania.html` 126 KB
+- ⚠`PL_G01_rzeczownik.html` 103 KB
+- ⚠`PL_G02_czasownik.html` 101 KB
+- ⚠`PL_G03_przymiotnik.html` 101 KB
+- ⚠`PL_G04_liczebnik.html` 110 KB
+- ⚠`PL_G05_zaimek.html` 108 KB
+- ⚠`PL_G06_imieslowy.html` 107 KB
+- ⚠`PL_G07_przyslowek.html` 106 KB
+- ⚠`PL_G08_przyimek.html` 107 KB
 
-## okladki/polski/md  (47 pl., 1.4 MB)
+## okladki/polski/md  (75 pl., 1.6 MB)
 - (zwinięte; `ls okladki/polski/md`) — duże:
 - ⚠`POL.01.L001.lektury_iv_vi_imieslowy.md` 112 KB
 - ⚠`POL.01.L002.hobbit_nieodmienne_czesci_mowy.md` 68 KB
@@ -1061,16 +1061,16 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `POL.01.L010.srodki_stylistyczne.md` 23 KB
 - `POL.01.L011.elementy_utworu_moral_puenta.md` 22 KB
 
-## polski/html  (48 pl., 6.1 MB)
+## polski/html  (76 pl., 8.8 MB)
 - (zwinięte; `ls polski/html`) — duże:
-- ⚠`POL.01.L001.lektury_iv_vi_imieslowy.html` 241 KB
-- ⚠`POL.01.L002.hobbit_nieodmienne_czesci_mowy.html` 184 KB
-- ⚠`POL.01.L003.narnia_zaimek.html` 163 KB
-- ⚠`POL.01.L004.chlopcy_z_placu_broni_przymiotnik_liczebnik.html` 153 KB
-- ⚠`POL.01.L005.kajko_i_kokosz_rzeczownik.html` 159 KB
-- ⚠`POL.01.L006.akademia_pana_kleksa_czasownik.html` 156 KB
-- ⚠`POL.01.L007.przeglad_czesci_mowy.html` 129 KB
-- ⚠`POL.01.L008.czesci_zdania.html` 126 KB
+- ⚠`PL_G01_rzeczownik.html` 103 KB
+- ⚠`PL_G02_czasownik.html` 101 KB
+- ⚠`PL_G03_przymiotnik.html` 101 KB
+- ⚠`PL_G04_liczebnik.html` 110 KB
+- ⚠`PL_G05_zaimek.html` 108 KB
+- ⚠`PL_G06_imieslowy.html` 107 KB
+- ⚠`PL_G07_przyslowek.html` 106 KB
+- ⚠`PL_G08_przyimek.html` 107 KB
 
 ## polski/lekcje  (32 pl., 80 KB)
 - (zwinięte; `ls polski/lekcje`)
@@ -1190,13 +1190,13 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## wizualizacje-projekty/baza-mala/gfx/chemia/efekty  (25 pl., 23 KB)
 - (zwinięte; `ls wizualizacje-projekty/baza-mala/gfx/chemia/efekty`)
 
-## wizualizacje-projekty/baza-mala/gfx/chemia/naczynia  (34 pl., 6 KB)
+## wizualizacje-projekty/baza-mala/gfx/chemia/naczynia  (35 pl., 7 KB)
 - (zwinięte; `ls wizualizacje-projekty/baza-mala/gfx/chemia/naczynia`)
 
 ## wizualizacje-projekty/baza-mala/gfx/chemia/reakcje  (60 pl., 11 KB)
 - (zwinięte; `ls wizualizacje-projekty/baza-mala/gfx/chemia/reakcje`)
 
-## wizualizacje-projekty/baza-mala/gfx/chemia/sceny  (9 pl., 15 KB)
+## wizualizacje-projekty/baza-mala/gfx/chemia/sceny  (10 pl., 17 KB)
 - `acidMetal.js` 2 KB
 - `carbonate.js` 1 KB
 - `conductivity.js` 1 KB
@@ -1205,7 +1205,11 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `heating.js` 1 KB
 - `indicator.js` 2 KB
 - `indicatorRack.js` 1 KB
+- `metanSpalanie.js` 2 KB
 - `titration.js` 3 KB
+
+## wizualizacje-projekty/baza-mala/gfx/chemia/szkielet  (1 pl., 2 KB)
+- `szkielet-zygzak.js` 2 KB
 
 ## wizualizacje-projekty/baza-mala/gfx/chemia/widoki  (28 pl., 99 KB)
 - (zwinięte; `ls wizualizacje-projekty/baza-mala/gfx/chemia/widoki`)
@@ -1239,10 +1243,13 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `anchor.js` 0 KB
 - `stage.js` 0 KB
 
+## wizualizacje-projekty/baza-mala/gfx/wspolne/styl  (1 pl., 3 KB)
+- `styl-tokeny.js` 3 KB
+
 ## wizualizacje-projekty/baza-mala/gfx/wspolne/widoki  (1 pl., 4 KB)
 - `che-test-silnika-v01.js` 4 KB
 
-## wizualizacje-projekty/baza-mala/klocki  (13 pl., 71 KB)
+## wizualizacje-projekty/baza-mala/klocki  (42 pl., 262 KB)
 - (zwinięte; `ls wizualizacje-projekty/baza-mala/klocki`)
 
 ## wizualizacje-projekty/baza-mala/klocki/dane  (1 pl., 11 KB)
