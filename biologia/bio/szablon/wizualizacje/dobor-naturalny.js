@@ -24,7 +24,7 @@ mount:function(el,o){var sc=o.start==='bakterie'?'bakterie':'cmy',tlo='ciemne',N
    var gx=226,gy=16,gw=200,gh=160;s.appendChild(S('rect',{x:gx,y:gy,width:gw,height:gh,fill:'#fff',stroke:'#c9d2cf'}));
    [0,50,100].forEach(function(v){var y=gy+gh-v/100*gh;s.appendChild(S('line',{x1:gx,y1:y,x2:gx+gw,y2:y,stroke:'#eef1f0'}));s.appendChild(T(gx-4,y,v+'%',{s:10,a:'end',f:'var(--viz-mut)'}))});
    var maxg=Math.max(10,hist.length-1),pts=hist.map(function(v,i){return(gx+i/maxg*gw).toFixed(1)+','+(gy+gh-v*gh).toFixed(1)}).join(' ');
-   s.appendChild(S('polyline',{points:pts,fill:'none',stroke:sc==='bakterie'?'#c0392b':'#2b2622','stroke-width':2.5}));
+   s.appendChild(S('polyline',{points:pts,fill:'none',stroke:sc==='bakterie'?'#c0392b':'#2b2622','stroke-width':2.5}));var lp=pts.split(' ').pop().split(',');s.appendChild(S('circle',{cx:lp[0],cy:lp[1],r:4.5,fill:sc==='bakterie'?'#c0392b':'#2b2622',stroke:'#fff','stroke-width':1.5}));if(hist.length===1)s.appendChild(T(+lp[0]+8,+lp[1]-8,'start: '+Math.round(hist[0]*100)+'%',{s:10.5,a:'start',w:700,f:'var(--viz-mut)'}));
    s.appendChild(T(gx+gw/2,gy+gh+16,'pokolenie (0–'+maxg+')',{s:10.5,f:'var(--viz-mut)'}));s.appendChild(T(gx+gw/2,10,sc==='bakterie'?'udział bakterii opornych':'udział ciemnych ciem',{s:10.5,w:700}));
    clr(pic);pic.appendChild(s);var u=Math.round(udz()*100);
    out.innerHTML='<b>Pokolenie '+gen+': '+(sc==='bakterie'?'oporne':'ciemne')+' — '+u+'%</b><span>'+(sc==='bakterie'?
