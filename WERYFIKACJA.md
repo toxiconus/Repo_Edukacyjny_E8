@@ -280,3 +280,31 @@ Zasada: po każdym audycie surowa odpowiedź trafia do `<przedmiot>/plany/audyty
 | BIO.00.REV01 | §1a.1 woda | Zakres 50–60% masy dorosłego (mężczyźni więcej, starsi mniej); mózg ok. 75–80%; poprawiono tekst |
 | BIO.00.REV01 | §4 lipidy | 38 kJ (9 kcal)/g vs 17 kJ (4 kcal)/g — ponad 2×; poprawiono tekst |
 | BIO.00.REV01 | §12a | Klucze zad. 1–3 zgodne z treścią lekcji; bez zmian |
+
+## Weryfikacja REV01 — Comet/Perplexity, tura 1 (2026-10-20)
+
+Źródło: odpowiedź „Rozmiar tekstu… KB nieustalony” na paczkę etapu I. Każdą uwagę sprawdzono w pliku `md`, nie tylko w odczycie HTML.
+
+**Wprowadzone do REV01:**
+- 1.1 Glikogen: grzyby nie mają wątroby i mięśni; zdanie rozdzielone na zwierzęta/grzyby i człowieka.
+- 1.2 Glukoza w tabeli transportu: glukoza nie jest celulozą ani skrobią; transport łykiem głównie jako sacharoza.
+- 1.4 Podpis wizualizacji „krążenie materii i energii” → „obieg materii i przepływ energii” (energia nie krąży).
+- 1.5 Lipidy: „hydrofobowe” zastąpione opisem zróżnicowanej grupy; fosfolipidy z częścią hydrofilową i hydrofobową.
+- 2.2 Skąd roślina bierze materiał (wodę, sole, CO₂; cukry z fotosyntezy): dopisane po zapisie sumarycznym.
+- 2.3 Dwuwarstwa fosfolipidowa i białka błonowe: dopisane przed tabelą transportu.
+- 3.1 Nagłówek „Typ komórki w 10 sekund” → „Jak rozpoznać typ komórki” (presja czasu). Liczba pęcherzyków na minutę i jednostki w danych doświadczeń pozostają.
+
+**Odrzucone z powodem:**
+- 1.3 „Substraty: CO₂, H₂O, światło” — w `md` wiersz „substraty” to „CO₂, H₂O | glukoza, O₂”, światła tam nie ma. Światło jest opisane osobno jako energia w tabeli z §6. Uwaga nie dotyczy źródła.
+- 1.6 Zamiana oznaczeń prób w doświadczeniu ze światłem — w procedurze (§9) i w §9.1 oznaczenia są spójne: próba kontrolna = warunki wyjściowe (blisko lampy), badawcza = zmieniony czynnik (zacieniona). Zestawienia odwróconego w `md` nie znaleziono. **Do sprawdzenia:** wizualizacja `proba-kontrolna` (@viz w §9.1), czy jej etykiety nie są odwrócone w danych.
+- 2.1 Zakres LKO 2026/27 wg załącznika „CZĘŚĆ II zakres wymagań” — nie wstawiam do lekcji notki redakcyjnej dla uczniów. **Do zrobienia:** odczytać załącznik Kuratorium Lublin i porównać z REV01/REV02.
+- 3.2 Opis słowny błony — w `md` już jest `@opis` przy przekroju błony (`transport-blona`); drugi opis by się dublował.
+- 3.3 Uwaga o sposobie weryfikacji wizualizacji — nie zmienia treści.
+- 4 Ciekawostki 1–3 — dublują już wprowadzone zmiany (2.2, 2.3, 1.4).
+- 5.1 Usunięcie wszystkich informacji o czasie — odrzucone zgodnie z odpowiedzią: jednostki w danych zostają.
+- 5.2 Pełna różnorodność organizmów w REV01 — odrzucone, zakres jest w REV02.
+- 5.3 Ukryte klucze, fiszki i O1–O4 — nie zweryfikowane w odczycie; zostają bez zmian.
+
+**Do zweryfikacji (nie zmieniono):**
+- Określenie „obowiązkowe” przy doświadczeniach w LKO — porównać z załącznikiem wymagań 2026/27.
+- Procedury BHP (NaOH, siarczan miedzi(II), ogrzewanie, wykrywanie gazów) — pełna weryfikacja warunków i nadzoru, nie tylko z odczytu.

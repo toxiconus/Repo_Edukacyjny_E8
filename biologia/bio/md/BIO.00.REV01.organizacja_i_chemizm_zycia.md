@@ -165,7 +165,7 @@ Woda jest najliczniejszym składnikiem większości organizmów. U dorosłego cz
 
 - **Glukoza** to najważniejszy cukier prosty: z niej komórki uzyskują energię w oddychaniu.
 - **Skrobia** to zapas glukozy u roślin, np. w ziemniaku, ziarnie pszenicy czy nasionach fasoli.
-- **Glikogen** to zapas glukozy u zwierząt i grzybów, głównie w wątrobie i mięśniach.
+- **Glikogen** to zapas glukozy u zwierząt i grzybów. U człowieka jest magazynowany przede wszystkim w wątrobie i mięśniach szkieletowych.
 - **Celuloza** buduje ściany komórkowe roślin. Człowiek nie trawi jej enzymami, ale pełni rolę błonnika — wspomaga pracę jelit.
 
 ::: mnemonik
@@ -178,7 +178,7 @@ Krowa nie trawi celulozy sama. Robią to za nią mikroorganizmy żyjące w żwac
 
 ### 1a.3 Lipidy — tłuszcze, oleje i woski {#lipidy}
 
-**Lipidy** to grupa związków hydrofobowych, czyli nie mieszających się z wodą. Do lipidów należą tłuszcze, oleje, fosfolipidy, woski i steroidy.
+**Lipidy** to zróżnicowana grupa związków organicznych, na ogół słabo rozpuszczalnych w wodzie. Do lipidów należą tłuszcze, oleje, fosfolipidy, woski i steroidy. Fosfolipidy mają część hydrofilową, oddziałującą z wodą, oraz część hydrofobową, unikającą kontaktu z wodą.
 
 | Rodzaj | Funkcja | Przykład |
 |---|---|---|
@@ -365,7 +365,7 @@ Mitochondria i chloroplasty mają **własne DNA** (mtDNA, cpDNA) i rybosomy podo
 | wakuola | brak | duża | małe lub brak | są |
 | rybosomy | są | są | są | są |
 
-::: karta core | Typ komórki w 10 sekund
+::: karta core | Jak rozpoznać typ komórki
 1. Brak jądra → **bakteria** (lub dojrzały erytrocyt ssaka w zadaniu o krwi).
 2. Jest chloroplast → **roślina** (lub glon).
 3. Ściana bez chloroplastu → **grzyb** albo niezielona tkanka rośliny (np. skórka cebuli, korzeń) — rozstrzyga skład ściany.
@@ -380,6 +380,8 @@ Mitochondria i chloroplasty mają **własne DNA** (mtDNA, cpDNA) i rybosomy podo
 ## 5 | Błona komórkowa i transport [[understand:TRENING]] {#blona}
 
 Błona oddziela komórkę od otoczenia, ale nie jest szczelna — jest **selektywnie przepuszczalna** (jedne substancje przechodzą łatwiej, inne trudniej).
+
+Podstawą błony jest **dwuwarstwa fosfolipidowa**: hydrofilowe główki fosfolipidów są zwrócone do wody po obu stronach błony, a hydrofobowe ogony — do wnętrza dwuwarstwy. **Białka błonowe** umożliwiają transport substancji, które nie przechodzą swobodnie przez lipidowe wnętrze.
 
 | Proces | Co to jest | Przykład |
 |---|---|---|
@@ -404,12 +406,14 @@ $$ 6CO₂ + 6H₂O —(światło, chlorofil)→ C₆H₁₂O₆ + 6O₂$$
 
 Słownie: dwutlenek węgla + woda → glukoza + tlen. To zapis **sumaryczny** — w rzeczywistości proces ma wiele etapów.
 
+Roślina nie pobiera z gleby gotowego pokarmu w postaci cukrów. Z gleby pobiera wodę i sole mineralne, a dwutlenek węgla pobiera z otoczenia. Węgiel zawarty w powstających podczas fotosyntezy związkach organicznych pochodzi z dwutlenku węgla. Glukoza może następnie służyć do wytwarzania materiałów budulcowych i zapasowych.
+
 | Element | Skąd / dokąd |
 |---|---|
 | CO₂ | z powietrza przez **aparaty szparkowe** liścia |
 | H₂O | z gleby przez korzenie (włośniki), drewnem do liści |
 | światło | energia; pochłania ją chlorofil |
-| glukoza | budulec (celuloza ściany), materiał zapasowy (skrobia), „paliwo” do oddychania; rozprowadzana łykiem |
+| glukoza | zużywana w oddychaniu oraz do budowy celulozy (ściany) i skrobi (zapas); w roślinie transportowana łykiem głównie jako sacharoza |
 | O₂ | uwalniany do atmosfery przez aparaty szparkowe; częściowo zużywany w oddychaniu |
 
 **Czynniki wpływające na intensywność fotosyntezy:** natężenie światła, stężenie CO₂, temperatura, dostęp do wody. Zbyt wysoka temperatura obniża intensywność procesu, ponieważ może uszkadzać białka i enzymy uczestniczące w procesie.
@@ -419,7 +423,7 @@ Słownie: dwutlenek węgla + woda → glukoza + tlen. To zapis **sumaryczny** �
 @viz fotosynteza-oddychanie | Fotosynteza i oddychanie w komórce liścia | suwak światła
 @opis Komórka liścia: chloroplast (fotosynteza) i mitochondrium (oddychanie) z wymianą substancji; suwak światła → bilans gazów liścia (oddychanie stale, fotosynteza zależna od światła) Wniosek: kliknij elementy i przejdź kroki, aby sprawdzić, jak budowa wynika z funkcji.
 
-@viz fotosynteza-oddychanie-krazenie | Fotosynteza i oddychanie — krążenie materii i energii | przełączaj tryb, kropki płyną same
+@viz fotosynteza-oddychanie-krazenie | Fotosynteza i oddychanie — obieg materii i przepływ energii | przełączaj tryb, kropki płyną same
 @opis Chloroplast po lewej i mitochondrium po prawej; kropki płyną po strzałkach: światło i CO₂ + H₂O do chloroplastu, glukoza i O₂ do mitochondrium, CO₂ + H₂O z powrotem, ATP na zewnątrz. Przyciski wyróżniają fotosyntezę, oddychanie lub oba procesy; pod spodem tabela porównawcza. Wniosek: produkty jednego procesu są substratami drugiego, materia krąży, a energia przepływa (światło → ATP i ciepło).
 
 ::: regula
