@@ -128,6 +128,9 @@ jajowa X + plemnik Y → XY (chłopiec)
 
 ### Cechy sprzężone z X (X-linked)
 
+@viz rodowod | Rodowód — cecha sprzężona z X | wybierz typ, kliknij osobę
+@opis Rodowód cechy sprzężonej z chromosomem X. Kwadrat to mężczyzna, koło kobieta, zaczernione symbole to osoby chore. Chory ojciec przekazuje cechę wszystkim córkom, a nie synom. Wniosek: zanim wybierzesz typ dziedziczenia, sprawdź, czy cecha występuje częściej u mężczyzn i czy chory ojciec ma chorych synów.
+
 @viz punnett {tryb="X"} | Dziedziczenie sprzężone z płcią | hemofilia — allel na chromosomie X
 @opis Szachownica dla chromosomów płci: gamety matki (X^H, X^h) i ojca (X^H, Y), w polach córki i synowie z oznaczeniem nosicielek i chorych, udziały w procentach. Wniosek: syn dostaje chromosom X tylko od matki, dlatego choroby sprzężone z X częściej ujawniają się u chłopców.
 

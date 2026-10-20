@@ -166,6 +166,9 @@ Jedną z najciekawszych umiejętności jest przewidywanie, co się stanie, gdy z
 
 ## 5 | Piramidy w ekologii {#piramidy}
 
+@viz piramida-ekologiczna | Piramida energii | kliknij, znajdź, podpisz
+@opis Cztery pasy piramidy, najszerszy na dole: producenci (10 000 kJ), konsumenci I rzędu (1000 kJ), II rzędu (100 kJ) i III rzędu (10 kJ). Przerywany nawias pokazuje regułę 10%. Wniosek: na każdym poziomie ok. 90% energii jest tracone, więc łańcuchy pokarmowe są krótkie.
+
 Piramidy pokazują relacje między poziomami troficznymi na trzy sposoby:
 
 | Piramida | Co pokazuje | Czy zawsze ma prawidłowy kształt? |

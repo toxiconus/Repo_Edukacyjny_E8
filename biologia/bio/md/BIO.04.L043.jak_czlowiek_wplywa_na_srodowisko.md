@@ -110,6 +110,9 @@ Wzrost średniej temperatury i zmiana opadów przesuwają zakresy występowania 
 
 ### 3.4 Nadmierne pozyskiwanie zasobów
 
+@viz obieg-wegla | Obieg węgla | kliknij, znajdź, podpisz
+@opis Schemat: CO₂ z atmosfery wiązany w fotosyntezie przez producentów, przekazywany konsumentom, uwalniany w oddychaniu, a szczątki rozkładane przez destruentów; osobno paliwa kopalne, których spalanie zwiększa ilość CO₂. Wniosek: węgiel krąży między atmosferą a organizmami, a spalanie paliw kopalnych zaburza ten obieg.
+
 Nadmierne łowienie ryb, wycinanie drzew czy zbieranie roślin w ilościach większych, niż mogą się odnowić, zmniejsza liczebność gatunków. Gdy znika gatunek, który był kluczowy dla sieci, skutki rozchodzą się dalej.
 
 ::: karta understand | Mini-wykład: próg, za którym ekosystem się zmienia

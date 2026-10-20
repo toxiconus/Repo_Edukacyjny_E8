@@ -252,6 +252,9 @@ c) (1 pkt) np. ochrona przed UV, niepalenie, zdrowa dieta i badania kontrolne �
 
 ## 5 | Ochrona przed mutagenami i mądre wykorzystanie {#ochrona} [[understand:ROZUMIENIE]]
 
+@viz kariotyp | Kariotyp człowieka | kliknij, znajdź, podpisz
+@opis Dwa rzędy par chromosomów autosomalnych o malejącej wielkości, obok ramka z parą chromosomów płci (X większy, Y mniejszy) oraz trzy chromosomy 21 jako przykład trisomii. Wniosek: człowiek ma 46 chromosomów (22 pary autosomów i 1 parę chromosomów płci), a zmiana ich liczby powoduje choroby, np. zespół Downa.
+
 Skoro strumienia mutacji nie da się wyłączyć (są samorzutne), to kontrolować można jego **prądy dodatkowe** — te od mutagenów. W codziennym życiu znaczenie mają cztery rytuały: ochrona skóry przed UV (krem z filtrem, cień w południe, ubranie, rozsądek wobec solarium), czyste powietrze i brak dymu tytoniowego, higiena żywności (pleśń to nie „przekrojony kawałek do wycięcia” w produktach sypkich) oraz rozsądne korzystanie z prześwietleń — zdjęcie rentgenowskie robi się wtedy, gdy korzyść diagnostyczna jest większa niż minimalne, kontrolowane ryzyko. Zauważ, że to ta sama logika, którą lekarze stosują świadomie: promieniowanie jonizujące jest niebezpieczne, ale w radioterapii celuje się je dokładnie w guz — żeby uszkadzać DNA komórek, które dzielą się zbyt szybko, i zatrzymać chorobę. Ten sam mutagen: hazard bez kontroli — lekarstwo z precyzją. (Wszystkie detale medyczne poza szkołą; wymagana jest sama idea.)
 
 ::: karta understand | W skrócie — jak promieniowanie leczy, skoro mutuje?
