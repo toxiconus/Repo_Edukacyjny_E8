@@ -796,7 +796,7 @@ Chiazma | **Miejsce skrzyżowania chromatyd** | ambitious:ambitny
 <div class="lk-czesc">17. Mapa pojęć</div>
 :::
 
-@viz lancuch {kroki="2n = 46|komórka diploidalna > replikacja|faza S: 46 → 92 chromatydy (L013) > mejoza I|rozdział par homologicznych > mejoza II|rozdział chromatyd siostrzanych > 4 komórki n = 23|gamety haploidalne > zapłodnienie|23 + 23 = 46 → zygota 2n" boki="zmienność: crossing-over; niezależna segregacja; losowe zapłodnienie"} | Mejoza w jednym łańcuchu | kliknij krok, aby zobaczyć wyjaśnienie
+@viz lancuch {kroki="2n = 46|komórka diploidalna > replikacja|faza S: 46 → 92 chromatydy (L013) > mejoza I|rozdział par homologicznych > mejoza II|rozdział chromatyd siostrzanych > 4 komórki n = 23|gamety haploidalne > zapłodnienie|23 + 23 = 46 → zygota 2n" opisy="Komórka diploidalna ma dwa komplety chromosomów: 46 u człowieka. > Replikacja DNA w fazie S: każdy chromosom składa się z dwóch chromatyd. > Mejoza I: rozdział par homologicznych chromosomów; liczba chromosomów spada do połowy. > Mejoza II: rozdział chromatyd siostrzanych; powstają cztery komórki haploidalne. > Gamety haploidalne (n = 23) mają jeden komplet chromosomów. > Zapłodnienie łączy dwie gamety; zygota ma znów 46 chromosomów (2n)." boki="zmienność: crossing-over; niezależna segregacja; losowe zapłodnienie"} | Mejoza w jednym łańcuchu | kliknij krok, aby zobaczyć wyjaśnienie
 @opis Łańcuch kroków: komórka 2n (46) → replikacja w fazie S (92 chromatydy) → mejoza I rozdziela pary homologiczne → mejoza II rozdziela chromatydy → 4 gamety n = 23 → zapłodnienie przywraca 2n = 46; z boku trzy źródła zmienności. Wniosek: mejoza zmniejsza liczbę chromosomów o połowę, a zapłodnienie ją przywraca.
 
 Mapa pojęć L015 — od mejozy przez 3 źródła zmienności do unikalności genetycznej.

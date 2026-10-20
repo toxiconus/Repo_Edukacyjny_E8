@@ -515,7 +515,7 @@ Chloroplasty i mitochondria współpracują w komórce roślinnej, ale pełnią 
 
 #### Od światła do ATP — jedna ścieżka
 
-@viz lancuch {kroki="światło + woda + CO₂|substraty fotosyntezy > CHLOROPLAST|fotosynteza > cukier + tlen|produkty fotosyntezy > MITOCHONDRIUM|oddychanie komórkowe > ATP + CO₂ + H₂O|energia dla komórki"} | Od światła do ATP — jedna ścieżka | kliknij krok, aby zobaczyć wyjaśnienie
+@viz lancuch {kroki="światło + woda + CO₂|substraty fotosyntezy > CHLOROPLAST|fotosynteza > cukier + tlen|produkty fotosyntezy > MITOCHONDRIUM|oddychanie komórkowe > ATP + CO₂ + H₂O|energia dla komórki" opisy="Surowce i energia fotosyntezy: światło dostarcza energii, woda i dwutlenek węgla są surowcami. > Miejsce fotosyntezy w komórkach roślin; zawiera chlorofil, który pochłania światło. > Reakcje wiążą energię światła w związkach organicznych; produktami są cukier i tlen. > Miejsce oddychania komórkowego; rozkłada cukier i uwalnia zawartą w nim energię. > ATP magazynuje energię, którą komórka zużywa; CO₂ i H₂O są produktami oddychania."} | Od światła do ATP — jedna ścieżka | kliknij krok, aby zobaczyć wyjaśnienie
 @opis Łańcuch pięciu kroków od góry do dołu: światło, woda i dwutlenek węgla → chloroplast (fotosynteza) → cukier i tlen → mitochondrium (oddychanie komórkowe) → ATP, CO₂ i woda. Wniosek: produkty fotosyntezy są substratami oddychania, a energia światła trafia do komórki jako ATP.
 
 Roślina jednocześnie fotosyntetyzuje i oddycha. Fotosynteza — tylko w komórkach z chloroplastami i przy świetle. Oddychanie — przez całą dobę.

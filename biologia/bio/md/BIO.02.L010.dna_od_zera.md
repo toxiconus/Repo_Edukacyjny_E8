@@ -196,7 +196,7 @@ Na koniec ważne zastrzeżenie: DNA to nie „wyrok”. Wiele cech — wzrost, m
 
 ## 6 | Od genu do cechy [[basic:E8]] {#gen-cecha}
 ### 6.1. Model podstawowy
-@viz lancuch {kroki="DNA (gen)|odcinek z informacją > RNA|kopia robocza > białko|produkt genu > funkcja w komórce|np. enzym, barwnik > udział w cesze|fenotyp" boki="+ środowisko; + rozwój" wyroznij="5"} | Od genu do cechy | model uproszczony
+@viz lancuch {kroki="DNA (gen)|odcinek z informacją > RNA|kopia robocza > białko|produkt genu > funkcja w komórce|np. enzym, barwnik > udział w cesze|fenotyp" opisy="Odcinek DNA z informacją o produkcie; kolejność zasad jest zapisem tej informacji. > Kopia robocza informacji z genu, powstająca w transkrypcji. > Łańcuch aminokwasów; powstaje w translacji na podstawie RNA. > Białko pełni funkcję, np. enzymu, który przyspiesza reakcje w komórce. > Efekt działania białka na poziomie cechy, np. barwnik wpływa na kolor. > Cecha widoczna lub mierzalna u organizmu (fenotyp); zależy też od środowiska." boki="+ środowisko; + rozwój" wyroznij="5"} | Od genu do cechy | model uproszczony
 @opis Łańcuch od genu do cechy: DNA (gen, odcinek z informacją) → RNA (kopia robocza) → białko (produkt genu) → funkcja w komórce (np. enzym, barwnik) → udział w cesze (fenotyp, krok wyróżniony); z boku dopisek „+ środowisko; + rozwój”. Wniosek: gen nie jest cechą — wpływa na nią przez białko, a na wynik działa też środowisko.
 
 To jest **model podstawowy**. W rzeczywistości:
