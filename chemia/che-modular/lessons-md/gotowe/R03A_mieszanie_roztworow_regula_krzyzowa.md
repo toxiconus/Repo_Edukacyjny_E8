@@ -134,7 +134,7 @@ Dla Cp₁ > Cp₃ > Cp₂ (mocniejszy, docelowy, słabszy):
 Reguła krzyżowa daje **stosunek mas**, nie gramy. Stosunek 1 : 2 to równie dobrze 10 g i 20 g, 100 g i 200 g, 1 kg i 2 kg — każda para da 10%. Gramy pojawią się dopiero, gdy znasz **masę całości** (wtedy dzielisz ją na sumę części) albo **masę jednego składnika** (wtedy liczysz, ile gramów to jedna część). Pomylenie części z gramami to najczęstszy błąd w tym dziale.
 :::
 
-@model r03-krzyz-v01 | Reguła krzyżowa i huśtawka — wpisz stężenia, zobacz masy | przykłady: 20% + 5%, rozcieńczanie wodą, dosypywanie substancji, hydrat
+@klocek regula-krzyzowa | Reguła krzyżowa i huśtawka — wpisz stężenia, zobacz masy
 @opis Interaktywny schemat: u góry pola na Cp₁ (mocniejszy), Cp₂ (słabszy, woda = 0%), Cp₃ (docelowy) i masę końcową oraz przyciski gotowych przykładów. Pod nimi krzyż: po lewej stężenia składników, pośrodku stężenie docelowe, dwie przecinające się kreski (czerwona i niebieska) prowadzą do różnic obliczonych po przekątnych, a przy każdej różnicy napis, do którego roztworu należy. Niżej „huśtawka”: pozioma deska od Cp₂ do Cp₁ z pomarańczową podpórką w Cp₃ i dwoma słupkami mas — wyższy słupek stoi na końcu bliższym podpórce. Pod rysunkiem: stosunek mas skrócony, masy w gramach i kontrola bilansem (ms obu składników, Cp mieszaniny). Gdy Cp₃ nie leży między składnikami, model wyświetla ostrzeżenie zamiast wyniku. Wniosek: masy roztworów są odwrotnie proporcjonalne do odległości ich stężeń od stężenia docelowego, a wynik zawsze da się sprawdzić bilansem substancji.
 
 ## 4 | Przykłady prowadzone [[basic:E8]] {#przyklady}
