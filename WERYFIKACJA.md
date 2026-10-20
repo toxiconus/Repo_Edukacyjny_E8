@@ -386,3 +386,10 @@ Lekcje: BIO.01.L004 (poziomy organizacji — brak liczb do sprawdzenia), BIO.01.
 - L008 — rozdzielczość mikroskopu świetlnego 0,2 µm zgodna z ZPE; ZPE podaje maksymalne powiększenie ok. 1000× (lekcja: przykład ×400 w modelu — zgodne jako przykład). Wirusy niewidoczne w mikroskopie świetlnym — zgodne. Dodatkowo ZPE opisuje mikroskop sił atomowych (AFM, <1 nm) — w lekcji nieobecny, poza zakresem E8.
 - L009 — cztery fazy mitozy (profaza, metafaza, anafaza, telofaza) i cytokineza zgodne z ZPE; ZPE mówi o „pięciu fazach” przy wyliczeniu czterech (cytokineza) — lekcja opisuje to poprawnie. Replikacja w fazie S i efekt mitozy (2n → 2n + 2n) zgodne.
 - WĄTPLIWE (dla Sonneta): L009, model „cykl podziałów” — zdanie „przy włączonej naprawie DNA ok. 80% uszkodzeń znika” nie pochodzi z ZPE ani z podręcznika; to parametr symulacji. Do decyzji: podać źródło, zamienić na ogólne sformułowanie („większość uszkodzeń jest naprawiana”) albo zostawić z dopiskiem „w modelu”.
+
+## H-Z3 — partia 4: zgodność z ZPE (2026-10-20)
+
+Lekcje: BIO.02.L016 (nowotwory i podziały), BIO.01.L001A (dodatek: endosymbioza). Bez zmian w treści.
+
+- L016 — mechanizm (protoonkogen → onkogen, geny supresorowe, naprawa DNA, apoptoza, utrata checkpointów) zgodny z ZPE. ZPE wymienia też geny stabilizujące (naprawa DNA) — w lekcji obecne jako „naprawa DNA”. Liczby z ZPE („TP53 — ponad 50% mutacji w nowotworach”) nie są w lekcji — nie trzeba ich dodawać. Uwaga dla przyszłych zmian: liczba „90%” w ZPE dotyczy raka szyjki macicy związanego z HPV, a nie nowotworów dziedzicznych — nie mylić przy ewentualnym dopisywaniu.
+- L001A — argumenty za endosymbiozą (własny DNA kolisty, rybosomy 70S, podział, rozmiar, podobieństwo błony) zgodne z ZPE. Mitochondria od proteobakterii, chloroplasty od cyjanobakterii — zgodne. Brak w ZPE: nazwisko autora teorii i daty. Lekcja podaje „ok. 1,5–2 mld lat, orientacyjnie” dla pochodzenia mitochondriów — nie ma tego w ZPE; do potwierdzenia w podręczniku (wartość orientacyjna, zostaje z dopiskiem).
