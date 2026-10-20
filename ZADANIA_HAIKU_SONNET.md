@@ -33,7 +33,8 @@ Priorytet: biologia LKO etap szkolny, środa 21.10.2026, 9:00, 60 min. Nie pisa�
 
 - [~] H-Z1. **Mapa ZPE dla biologii:** dla każdej lekcji z `SPIS_LEKCJI.md` (BIO) znaleźć na zpe.gov.pl (WebSearch „zpe.gov.pl <temat>”, WebFetch strony e-materiału) odpowiadające e-materiały; zapisać w `biologia/plany/MAPA_ZPE.md`: lekcja → URL → temat ZPE → status (pokryte / brak w lekcji: co). Po 10 lekcjach commit. Bez pytania „dalej?”.
   - Postęp (2026-10-20): 57 wierszy w `MAPA_ZPE.md` (commity e271bbf, e442ec8, bbc1387 i kolejny). Bez wierszy: BIO.01.L002, L003, BIO.02.L016A, L021, BIO.05.L050, BIO.06.L090 (do wyszukania lub oznaczenia jako powtórki bez ZPE).
-- [ ] H-Z2. **To samo dla chemii** → `chemia/plany/MAPA_ZPE.md`; potem dla polskiego i fizyki, jeśli ZPE ma materiały.
+- [~] H-Z2. **To samo dla chemii** → `chemia/plany/MAPA_ZPE.md`; potem dla polskiego i fizyki, jeśli ZPE ma materiały.
+  - Postęp (2026-10-20): `chemia/plany/MAPA_ZPE.md` — 18 wierszy (węgiel, wiązania, stechiometria, stężenia, pH, wodorotlenki, kwasy, sole, tlenki, węglowodory, estry, biochemia, polimery). Bez wierszy: F00, C2w, R06, O09, O10, O14, O24, P02–P06, F14, F16 (do wyszukania).
 - [ ] H-Z3. **Sprawdzenie treści z ZPE:** dla lekcji z mapy porównać definicje i liczby z ZPE; rozbieżności i braki zakresu wpisać do `WERYFIKACJA.md`, oczywiste braki dopisać do lekcji (nie usuwając treści); wątpliwe zostawić Sonnetowi.
 
 - [x] H-R1. **Zadania z rysunków arkuszy:** dla każdego nowego rysunku z `biologia/plany/ARKUSZE_RYSUNKI_POKRYCIE.md` dopisać do ćwiczeń właściwej lekcji 2–3 zadania w stylu konkursu (podpisz / przyporządkuj / oceń P–F) z kluczem; wzorce: arkusze w `olimpiada/` i `biologia/plany/ANALIZA_ARKUSZY_LKO_BIO.md`. Wątpliwe wypisać Sonnetowi.
