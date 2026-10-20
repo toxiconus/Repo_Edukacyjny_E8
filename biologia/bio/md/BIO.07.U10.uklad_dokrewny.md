@@ -7,7 +7,7 @@ kicker: U10 · BIOLOGIA · ORGANIZM CZŁOWIEKA · KONKURS ETAP REJONOWY (PKT III
 lead: Kilka mikrogramów cząsteczek krążących we krwi potrafi przyspieszyć serce, ustawić tempo wzrostu i pilnować poziomu cukru przez całe życie. Hormony to poczta organizmu — wolniejsza od nerwów, ale docierająca wszędzie.
 lead: Najważniejsze umiejętności działu: wskazać gruczoły i ich hormony, przewidzieć skutki niedoboru i nadmiaru, wyjaśnić antagonizm insuliny i glukagonu oraz sprzężenie zwrotne ujemne, porównać regulację nerwową i hormonalną.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]][[extra:AMBITNE]]
-uwaga: Zakres LKO biologia 2025/26, etap II (rejonowy): pkt III.10 układ dokrewny. Treści oznaczone „(konkurs)” wykraczają poza podstawę E8 — dobrane według typowych zadań etapu rejonowego, do zweryfikowania z wymaganiami konkursu. Regulacja glukozy i sprzężenie zwrotne szerzej — H01 Homeostaza. Liczby (normy glikemii, masy narządów, daty) orientacyjne — do weryfikacji w W1.
+uwaga: Zakres LKO biologia 2026/27, etap II (rejonowy): pkt III.10 układ dokrewny. Treści oznaczone „(konkurs)” wykraczają poza podstawę E8 — dobrane według typowych zadań etapu rejonowego, do zweryfikowania z wymaganiami konkursu. Regulacja glukozy i sprzężenie zwrotne szerzej — H01 Homeostaza. Liczby (normy glikemii, masy narządów, daty) orientacyjne — do weryfikacji w W1.
 stopka: **BIOLOGIA U10 v1.1** · Układ dokrewny — hormony · 2026
 stan: W1 FULL — GLM-5.3-Flash (§0–14 Zad. 7) + Claude Sonnet 5.5 (§14–23), 2026-10-11/12; scalił Claude 2026-10-12
 ---

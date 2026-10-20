@@ -7,7 +7,7 @@ kicker: U04 · BIOLOGIA · ORGANIZM CZŁOWIEKA · KONKURS ETAP REJONOWY (PKT III
 lead: Krew to płynna sieć transportowa organizmu, serce — jej pompa, a układ odpornościowy — straż, która odróżnia „swoje” od „obcego”.
 lead: Najważniejsza umiejętność tego działu: prześledzić drogę krwi na schemacie serca i nie dać się złapać na pułapkę „tętnica = krew utlenowana”.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]][[extra:AMBITNE]]
-uwaga: Zakres LKO biologia 2025/26, etap II (rejonowy): pkt III.4 układ krwionośny i limfatyczny, III.5 układ odpornościowy. Genetyka grup krwi — lekcja L019. Liczby fizjologiczne (tętno, liczba krwinek, objętość krwi) są orientacyjne — do weryfikacji w W1.
+uwaga: Zakres LKO biologia 2026/27, etap II (rejonowy): pkt III.4 układ krwionośny i limfatyczny, III.5 układ odpornościowy. Genetyka grup krwi — lekcja L019. Liczby fizjologiczne (tętno, liczba krwinek, objętość krwi) są orientacyjne — do weryfikacji w W1.
 stopka: **BIOLOGIA U04 v1.0** · Krążenie, krew i odporność · 2026
 stan: W1 FULL — Perplexity (paczki ULEPSZ BIO_U04_cz1–2), 2026-10-11; scalenie Claude
 ---

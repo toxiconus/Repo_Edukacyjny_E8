@@ -254,3 +254,4 @@
 - 2026-10-15: ANG — wydzielone z pakietu L001-EN-Wszystkie-lekcje.md: lekcje 1, 7–11 (md w angielski/lekcje_md, html w angielski/html); index przebudowany.
 - 2026-10-20: H-A — odświeżone spisy: MAPA, BIO_KATALOG (tabela 58 lekcji, KB, @viz, audyty; katalog grafik zaktualizowany generatorem).
 - 2026-10-20: H-B — REV01/REV02 sprawdzone: wszystkie @viz/@klocek z @opis; naprawiony sklejony nagłówek AUDYT W19 (REV01). Brak LaTeX-a.
+- 2026-10-20: H-C — 7 lekcji BIO: etykieta zakresu „LKO biologia 2025/26” zmieniona na 2026/27 (treść bez zmian). Tkanki roślinne: wymienione w REV02 §4 (zakres etapu I); lekcje BIO.07 dotyczą człowieka, bez zmian.

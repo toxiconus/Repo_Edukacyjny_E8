@@ -7,7 +7,7 @@ kicker: U03 · BIOLOGIA · ORGANIZM CZŁOWIEKA · KONKURS ETAP REJONOWY (PKT III
 lead: Kanapka nie może wejść do komórki. Układ pokarmowy rozbiera ją na cząsteczki tak małe, że przejdą przez ścianę jelita do krwi — i robi to w kilkumetrowej rurze z kilkoma „stacjami obróbki”.
 lead: Najważniejsze umiejętności działu: dla cukrów, białek i tłuszczów podać miejsce trawienia, enzym, produkt i drogę wchłaniania, wyjaśnić rolę żółci i kosmków oraz zaplanować doświadczenie z amylazą z próbą kontrolną.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]][[extra:AMBITNE]]
-uwaga: Zakres LKO biologia 2025/26, etap II (rejonowy): pkt III.3 układ pokarmowy. Regulacja glukozy (insulina, glukagon) w szczegółach — lekcja H01 Homeostaza. Liczby (długości odcinków, objętości soków, powierzchnia jelita, pH optymalne enzymów, wartości energetyczne) są orientacyjne — do weryfikacji w W1.
+uwaga: Zakres LKO biologia 2026/27, etap II (rejonowy): pkt III.3 układ pokarmowy. Regulacja glukozy (insulina, glukagon) w szczegółach — lekcja H01 Homeostaza. Liczby (długości odcinków, objętości soków, powierzchnia jelita, pH optymalne enzymów, wartości energetyczne) są orientacyjne — do weryfikacji w W1.
 stopka: **BIOLOGIA U03 v1.1** · Układ pokarmowy i odżywianie · 2026
 stan: W1 FULL — GLM-5.3 (Z.ai), 2026-10-11 (tryb ULEPSZ, 2 części; scalił Claude 2026-10-12)
 ---
