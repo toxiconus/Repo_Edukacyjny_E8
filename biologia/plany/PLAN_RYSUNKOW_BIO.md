@@ -34,4 +34,4 @@ Wszystkie nowe komponenty: wpis w `biologia/bio/BIO_KATALOG.md` i test `node bio
 
 ## Stan realizacji (2026-10-20)
 Zrobione (`szablon/bio-rysunki.js`, wstawione w REV01/REV02): wykres-dane, komorki-porownanie, ryba-budowa, mikroskop-budowa, jajo-ptaka, tkanki-zwierzece, stawonogi-budowa + dodatkowo jajo-porownanie (jajo u różnych grup, ścieżka ewolucyjna).
-Do zrobienia: preparat-krok, kwiat-cykl, cykl-zaby, cykl-tasiemca, cykl-mchu-paproci, szyszki-igly, faga-cykl (animacje); etap II: serce-obieg, krew, naczynia, neuron-odruch, przepona, nefron, trawienie, skóra, staw-czaszka.
+Zrobione też: komponent `cykl` (żaba, tasiemiec, mech, paproć, kwiat, faga). Do zrobienia: preparat-krok, szyszki-igly; etap II: serce-obieg, krew, naczynia, neuron-odruch, przepona, nefron, trawienie, skóra, staw-czaszka.

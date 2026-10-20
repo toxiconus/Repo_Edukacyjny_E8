@@ -307,4 +307,42 @@ mount:function(el,o){
     clr(ev);ev.appendChild(H('p',null,'<b>Co z czego wynika (ewolucja):</b>'));var c=H('div','bv-chain v');STEPS.forEach(function(s,i){if(i)c.appendChild(H('span','bv-arrow','↓'));var d=H('div','bv-node');d.appendChild(H('b',null,s[0]));d.appendChild(H('small',null,s[1]));c.appendChild(d)});ev.appendChild(c);
     ev.appendChild(H('p',null,'<b>Uwaga na pojęcia:</b> komórka jajowa to tylko komórka (u ptaka cała żółtkowa kula z tarczką); jajo to komórka razem z osłonkami, białkiem i skorupą. Owady nie są na tej ścieżce — ich jajo to osobne, równoległe rozwiązanie tego samego problemu (suchy ląd).'))}
   draw()}});
+
+/* =====================================================================
+   9. CYKLE ŻYCIOWE — pierścień etapów, autostart w widoku, „do przodu i od początku”
+   ===================================================================== */
+var CY={
+ zaba:{t:'Rozwój żaby (płazy)',st:[['jaja (skrzek)','w wodzie','Samica składa w wodzie dużo jaj w galaretowatej osłonce (bez skorupy); zapłodnienie zewnętrzne.'],['kijanka','skrzela, ogon','Larwa żyje w wodzie, oddycha skrzelami, ma ogon i płetwę, odżywia się roślinnie.'],['kijanka z odnóżami','płuca, przeobrażenie','Wyrastają tylne, potem przednie odnóża; skrzela zanikają, rozwijają się płuca.'],['młoda żaba','ogon zanika','Ogon się wchłania, zwierzę wychodzi na ląd i staje się drapieżnikiem.'],['dorosła żaba','oddycha płucami i skórą','Dojrzała płciowo wraca do wody na gody. Rozwój z przeobrażeniem to cecha płazów.']]},
+ tasiemiec:{t:'Tasiemiec uzbrojony (pasożyt)',st:[['dorosły tasiemiec','jelito człowieka','Żywiciel OSTATECZNY: człowiek. Tasiemiec żyje w jelicie cienkim, ma haczyki i przyssawki na główce.'],['człony z jajami','wydalane z kałem','Dojrzałe człony wypełnione jajami wydostają się z kałem na zewnątrz.'],['jaja zjadane','przez świnię','Żywiciel POŚREDNI: świnia zjada jaja wraz z paszą lub wodą.'],['larwa (onkosfera)','wnika do mięśni','W jelicie świni z jaja wychodzi larwa, przebija ścianę jelita i krwią trafia do mięśni.'],['wągier (finka)','w mięsie świni','W mięśniach powstaje pęcherzyk z zawiązkiem główki — wągier. Człowiek zje go w surowym lub niedogotowanym mięsie.']]},
+ mech:{t:'Cykl rozwojowy mchu (przemiana pokoleń)',st:[['gametofit','n — roślina mchu','Zielona „roślinka” (liście, łodyżka) to pokolenie płciowe, haploidalne (n) i DOMINUJĄCE.'],['gamety','n — plemnie i rodnie','Na wierzchołkach powstają plemniki i komórka jajowa. Plemniki płyną do rodni w kropli wody.'],['zygota','2n','Po zapłodnieniu powstaje zygota (2n), początek pokolenia bezpłciowego.'],['sporofit','2n — sporogon na nóżce','Sporofit (2n) tkwi na gametofitie i od niego zależy; to „puszka” na szczycie nóżki.'],['zarodniki','n — po mejozie','W puszce zachodzi MEJOZA: powstają haploidalne zarodniki. Po wykiełkowaniu dają nowy gametofit.']]},
+ paproc:{t:'Cykl rozwojowy paproci (przemiana pokoleń)',st:[['sporofit','2n — roślina z liśćmi','Duża paproć z kłączem i liśćmi to pokolenie bezpłciowe (2n), DOMINUJĄCE — odwrotnie niż u mchów.'],['zarodnie','na spodzie liści','Na spodzie liści w kupkach zarodni zachodzi MEJOZA i powstają zarodniki (n).'],['zarodnik','n','Zarodnik wydostaje się i kiełkuje na wilgotnej glebie.'],['przedrośle','n — gametofit','Mała, sercowata, zielona płytka: samodzielne pokolenie płciowe (n) z plemniami i rodniami.'],['zygota → młody sporofit','2n','Po zapłodnieniu (potrzebna woda) zygota (2n) rozwija się w nową paproć na przedroślu.']]},
+ kwiat:{t:'Cykl rozwojowy okrytonasiennych',st:[['roślina z kwiatem','2n — sporofit','Dominujące pokolenie bezpłciowe (2n). Kwiat ma pręciki (pylniki) i słupek (zalążnia z zalążkami).'],['mejoza w kwiecie','powstają zarodniki','W pylnikach: ziarna pyłku (n). W zalążku: woreczek zalążkowy (n) z komórką jajową.'],['zapylenie','pyłek na znamię','Pyłek (męski gametofit) trafia na znamię słupka (wiatr, owady).'],['podwójne zapłodnienie','2n + 3n','Jedno jądro plemnikowe łączy się z komórką jajową → zygota (2n); drugie z komórką centralną → bielmo (3n).'],['nasiono i owoc','zarodek 2n','Zalążek → nasiono (zarodek + bielmo + łupina), zalążnia → owoc. Kiełkowanie daje nowy sporofit.']]},
+ faga:{t:'Bakteriofag — cykl lityczny',st:[['adsorpcja','faga przyczepia się','Faga przyczepia się białkami ogonka do receptorów na ścianie bakterii.'],['wstrzyknięcie DNA','otoczka zostaje na zewnątrz','Do komórki wnika tylko kwas nukleinowy faga; białkowa otoczka pozostaje na zewnątrz.'],['replikacja i synteza','bakteria pracuje dla faga','Maszyneria komórki gospodarza powiela DNA faga i produkuje jego białka.'],['składanie wirionów','powstają nowe fagi','Z DNA i białek składają się nowe cząstki wirusa.'],['liza','komórka pęka','Bakteria pęka i uwalnia dziesiątki nowych fagów. W cyklu LIZOGENICZNYM DNA faga najpierw włącza się w DNA bakterii (profag) i czeka.']]}
+};
+var CYUID=0;
+BIO.define('cykl',{opis:'Cykl życiowy jako pierścień etapów z autostartem w widoku (do przodu i od początku); klik = wyjaśnienie i pauza; opcja cykl="zaba|tasiemiec|mech|paproc|kwiat|faga"',
+mount:function(el,o){
+  var k=CY[o.cykl]?o.cykl:'zaba',uid='cy'+(++CYUID),cur=0,paused=false,vis=false,tm=null,reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var svg=BIO.svg(360,310,'Cykl: '+CY[k].t),out=H('div','bv-info bw-out'),bar=H('div','bw-seg bv-tools'),btnP=H('button','bv-btn');btnP.type='button';
+  svg.setAttribute('class','bw-svg');out.setAttribute('aria-live','polite');[svg,bar,out].forEach(function(e){el.appendChild(e)});bar.appendChild(btnP);
+  var st=CY[k].st,n=st.length,cx=180,cy=158,rx=122,ry=112,ND=[],AR=[];
+  svg.appendChild(S('defs',{},[S('marker',{id:uid,viewBox:'0 0 10 10',refX:8,refY:5,markerWidth:7,markerHeight:7,orient:'auto'},[S('path',{d:'M0,0L10,5L0,10z',fill:'#6b7a88'})])]));
+  function pt(a){return [cx+rx*Math.cos(a),cy+ry*Math.sin(a)]}
+  var step=2*Math.PI/n,gap=0.36;
+  for(var i=0;i<n;i++){var a1=-Math.PI/2+i*step+gap*0.5*(n>5?0.7:1)+0.06,a2=-Math.PI/2+(i+1)*step-gap*0.5*(n>5?0.7:1)-0.06,p1=pt(a1),p2=pt(a2);
+    var ar=P('M'+p1[0].toFixed(1)+','+p1[1].toFixed(1)+' A'+rx+','+ry+' 0 0 1 '+p2[0].toFixed(1)+','+p2[1].toFixed(1),'none','#9aa8b4',2,{'marker-end':'url(#'+uid+')'});svg.appendChild(ar);AR[i]=ar}
+  st.forEach(function(s,i){var p=pt(-Math.PI/2+i*step),g=S('g',{'class':'bv-hit',role:'button',tabindex:'0','aria-label':s[0]});
+    g.appendChild(R(p[0]-50,p[1]-19,100,38,10,'var(--surface,#fff)','#9aa8b4',1.8));
+    g.appendChild(BIO.T(p[0],p[1]-5,s[0],{s:s[0].length>18?9.2:10.5,w:700}));g.appendChild(BIO.T(p[0],p[1]+9,s[1],{s:8.6,w:500,f:'var(--viz-mut,#5d6b7a)'}));
+    g.addEventListener('click',function(){paused=true;go(i);lab()});g.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();paused=true;go(i);lab()}});ND[i]=g;svg.appendChild(g)});
+  svg.appendChild(BIO.T(cx,cy-6,CY[k].t,{s:11,w:700}));svg.appendChild(BIO.T(cx,cy+10,'kliknij etap',{s:9,w:500,f:'var(--viz-mut,#5d6b7a)'}));
+  function go(i){cur=i;ND.forEach(function(g,j){var r=g.firstChild;r.setAttribute('stroke',j===i?'var(--accent,#3f7a28)':'#9aa8b4');r.setAttribute('stroke-width',j===i?3.2:1.8);r.style.fill=j===i?'var(--accent-soft,#e8f3e0)':'var(--surface,#fff)'});AR.forEach(function(a,j){a.setAttribute('stroke',j===i?'var(--accent,#3f7a28)':'#9aa8b4');a.setAttribute('stroke-width',j===i?3.2:2)});
+    out.innerHTML='<b>'+(i+1)+'. '+st[i][0]+'</b><span>'+st[i][2]+'</span>'}
+  function lab(){btnP.textContent=paused?'▶ wznów animację':'❚❚ pauza';btnP.setAttribute('aria-pressed',String(paused))}
+  btnP.onclick=function(){paused=!paused;lab()};
+  function tick(){if(vis&&!paused)go((cur+1)%n)}
+  go(0);lab();
+  if(reduce){paused=true;lab();return}
+  if('IntersectionObserver'in window){new IntersectionObserver(function(es){vis=es[0].isIntersecting},{threshold:0.4}).observe(el)}else vis=true;
+  tm=setInterval(function(){if(!document.body.contains(el)){clearInterval(tm);return}tick()},2800)}});
 })();

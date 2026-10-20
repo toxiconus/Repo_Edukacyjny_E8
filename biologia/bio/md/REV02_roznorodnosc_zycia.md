@@ -146,6 +146,9 @@ Antybiotyki działają na **bakterie**, nie na wirusy. Grypy nie leczy się anty
 
 ### 2.1 Bakteriofagi {#bakteriofagi}
 
+@viz cykl {cykl="faga"} | Cykl lityczny bakteriofaga | animacja startuje sama, kliknij etap
+@opis Pierścień pięciu etapów: adsorpcja, wstrzyknięcie DNA, replikacja i synteza, składanie wirionów, liza. Podświetlenie przesuwa się samo; kliknięcie etapu pokazuje wyjaśnienie. Wniosek: faga używa maszynerii komórki gospodarza, a w cyklu lizogenicznym jego DNA włącza się w DNA bakterii (profag).
+
 **Bakteriofag** (fag) to wirus, który atakuje wyłącznie bakterie. Nazwa pochodzi od greckich słów *bakterion* (bakteria) i *phagein* (pożerać).
 
 **Budowa:** główka (kapsyd) z DNA lub RNA, ogon z białkowej rurki, płytka podstawowa z włóknami ogonowymi, którymi fag przyczepia się do bakterii.
@@ -230,6 +233,9 @@ Protisty to organizmy **eukariotyczne** (mają jądro), jednokomórkowe lub pros
 
 ### 4.2 Mchy {#mchy}
 
+@viz cykl {cykl="mech"} | Przemiana pokoleń mchu | animacja startuje sama, kliknij etap
+@opis Pierścień: gametofit (n, dominujący) → gamety → zygota (2n) → sporofit (2n, zależny) → zarodniki (n) po mejozie. Wniosek: u mchów dominuje haploidalny gametofit, a sporofit na nim pasożytuje.
+
 ::: karta core | Mchy — cechy
 - **Środowisko:** miejsca wilgotne i zacienione (lasy, torfowiska, kamienie, pnie).
 - **Budowa:** niewielkie; **chwytniki** zamiast korzeni (tylko przytwierdzają), łodyżka, listki (zwykle jedna warstwa komórek); brak tkanek przewodzących typowych dla roślin naczyniowych.
@@ -240,6 +246,9 @@ Protisty to organizmy **eukariotyczne** (mają jądro), jednokomórkowe lub pros
 **Znaczenie:** chłoną i magazynują wodę jak gąbka (zapobiegają powodziom i erozji), torfowce tworzą **torf**, mchy zasiedlają skały jako rośliny pionierskie, dają schronienie drobnym zwierzętom.
 
 ### 4.3 Paprociowe {#paprociowe}
+
+@viz cykl {cykl="paproc"} | Przemiana pokoleń paproci | animacja startuje sama, kliknij etap
+@opis Pierścień: sporofit (2n, dominujący) → zarodnie i mejoza → zarodnik (n) → przedrośle (n) → zygota i młody sporofit. Wniosek: u paproci dominuje sporofit, a gametofit (przedrośle) jest mały, ale samodzielny.
 
 Do paprociowych należą **paprocie**, **skrzypy** i **widłaki**.
 
@@ -291,6 +300,9 @@ Plemnie (anteridia) wytwarzają plemniki, rodnie (archegonia) — komórkę jajo
 **Znaczenie:** tworzą lasy iglaste (tlen, siedliska, ochrona gleby), drewno, papier, żywica, olejki; nasiona — pokarm zwierząt.
 
 ### 4.5 Okrytonasienne {#okrytonasienne}
+
+@viz cykl {cykl="kwiat"} | Cykl okrytonasiennych | animacja startuje sama, kliknij etap
+@opis Pierścień: roślina z kwiatem (2n) → mejoza (pyłek, woreczek zalążkowy) → zapylenie → podwójne zapłodnienie (zygota 2n + bielmo 3n) → nasiono i owoc. Wniosek: gametofity są silnie uproszczone i ukryte w kwiecie, dominuje sporofit.
 
 **Formy:** rośliny **zielne** (mniszek), **krzewinki** (borówka czarna, wrzos), **krzewy** (leszczyna, bez czarny), **drzewa** (dąb, lipa).
 
@@ -485,6 +497,9 @@ T1. Tkanka nabłonkowa; ochrona albo wchłanianie substancji odżywczych. T2. 1B
 
 ### 7.1 Płazińce {#plazince}
 
+@viz cykl {cykl="tasiemiec"} | Cykl tasiemca uzbrojonego | animacja startuje sama, kliknij etap
+@opis Pierścień: dorosły tasiemiec w jelicie człowieka → człony z jajami → jaja zjadane przez świnię → larwa (onkosfera) w mięśniach → wągier w mięsie. Wniosek: człowiek jest żywicielem ostatecznym, świnia pośrednim; zakażenie przez niedogotowane mięso.
+
 **Cechy wspólne:** ciało **spłaszczone grzbietobrzusznie**, symetria dwuboczna. Wolno żyjące — **wypławki** (wody słodkie); pasożytnicze — **tasiemce** (jelito kręgowców).
 
 ::: karta core | Tasiemiec — przystosowania do pasożytnictwa
@@ -624,6 +639,9 @@ R1. Parzyste: piersiowa i brzuszna; nieparzyste: grzbietowa, ogonowa i odbytowa.
 :::
 
 ### 8.2 Płazy {#plazy}
+
+@viz cykl {cykl="zaba"} | Rozwój żaby | animacja startuje sama, kliknij etap
+@opis Pierścień: jaja w wodzie → kijanka ze skrzelami → kijanka z odnóżami i płucami → młoda żaba → dorosła żaba. Wniosek: płazy mają rozwój z przeobrażeniem i potrzebują wody do rozmnażania.
 **Bezogonowe** (żaba, ropucha, rzekotka) i **ogoniaste** (traszka, salamandra). Żyją w wodzie i na lądzie. **Skóra** cienka, wilgotna, z gruczołami śluzowymi — **oddychanie skórą** i **płucami** (kijanki — skrzelami). Kończyny — u żaby tylne skoczne z błoną pływną. **Rozmnażanie:** u bezogonowych **zapłodnienie zewnętrzne** w wodzie, jaja w osłonkach (**skrzek**); **rozwój złożony z przeobrażeniem**: kijanka (skrzela, ogon, życie w wodzie) → młoda żaba. Zimują w odrętwieniu. **W Polsce wszystkie płazy są chronione.** **Znaczenie:** zjadają owady (także szkodniki), są pokarmem innych zwierząt, świadczą o czystości środowiska.
 
 ### 8.3 Gady {#gady}
