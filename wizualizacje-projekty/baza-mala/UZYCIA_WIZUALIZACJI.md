@@ -769,7 +769,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | angielski | ANG.01.L025.there_is_are_some_any_no | — |
 | angielski | ANG.01.L026.pisanie_email_i_list | — |
 | angielski | ANG.01.L027.slownictwo_tematyczne | — |
-| biologia | BIO.00.REV01.organizacja_i_chemizm_zycia | `energia-glukozy` ×1, `fotosynteza-oddychanie` ×1, `fotosynteza-oddychanie-krazenie` ×1, `komorka-nakladki` ×1, `komorki-porownanie` ×1, `lancuch` ×1, `mikroskop-model` ×1, `proba-kontrolna` ×1, `transport-blona` ×1 |
+| biologia | BIO.00.REV01.organizacja_i_chemizm_zycia | `energia-glukozy` ×1, `fotosynteza-oddychanie` ×1, `fotosynteza-oddychanie-krazenie` ×1, `komorka-nakladki` ×1, `komorki-porownanie` ×1, `lancuch` ×1, `mikroskop-model` ×1, `proba-kontrolna` ×1, `transport-blona` ×1, `wykres-dane` ×1 |
 | biologia | BIO.00.REV02.roznorodnosc_zycia | `cykl` ×6, `jajo-porownanie` ×1, `jajo-ptaka` ×1, `klucz-kregowce` ×1, `mikroskop-budowa` ×1, `przeobrazenie-owadow` ×1, `przeobrazenie-plaza` ×1, `ryba-budowa` ×1, `stawonogi-budowa` ×1, `tkanki-zwierzece` ×1, `wirus-bakteria` ×1, `wykres-dane` ×1 |
 | biologia | BIO.01.B1b.krzyzowki_mendel | `krzyzowka-mendla` ×2, `punnett` ×1 |
 | biologia | BIO.01.L001.komorka | `komorka-nakladki` ×1, `lancuch` ×1, `mikroskop-model` ×1, `transport-blona` ×1 |
@@ -783,14 +783,14 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | biologia | BIO.01.L008.mikroskop_jak_obserwowac_komorke_a | `mikroskop-model` ×1 |
 | biologia | BIO.01.L009.podzial_komorki_wzrost_regeneracja_i | `podzial-komorki` ×1 |
 | biologia | BIO.02.B10.powtorka_uklady_czlowieka | `krazenie` ×1, `krazenie-obiegi` ×1, `serce-budowa` ×1 |
-| biologia | BIO.02.B2a.skora_uklad_ruchu | `skora-przekroj` ×1, `staw-antagonizm` ×1 |
+| biologia | BIO.02.B2a.skora_uklad_ruchu | `skora-przekroj` ×1, `staw-antagonizm` ×1, `tkanki-zwierzece` ×1 |
 | biologia | BIO.02.B2b.uklad_pokarmowy | `droga-pokarmu` ×1, `kosmek-jelitowy` ×1 |
 | biologia | BIO.02.B2c.oddychanie_wydalanie | `nefron` ×1, `nefron-budowa` ×1, `petla-regulacji` ×1, `wdech-wydech` ×1, `wentylacja` ×1, `wymiana-gazowa` ×1 |
-| biologia | BIO.02.B2d.uklad_nerwowy_zmysly | `cykl` ×1, `luk-odruchowy` ×1, `neuron-budowa` ×1, `synapsa` ×1 |
+| biologia | BIO.02.B2d.uklad_nerwowy_zmysly | `cykl` ×1, `luk-odruchowy` ×1, `neuron-budowa` ×1, `synapsa` ×1, `tkanki-zwierzece` ×1 |
 | biologia | BIO.02.B2e.uklad_dokrewny | `glukoza-wykres` ×1, `gruczoly-mapa` ×1, `petla-regulacji` ×1, `sprzezenie-zwrotne` ×1 |
-| biologia | BIO.02.B2f.rozmnazanie_rozwoj | `cykl-miesiaczkowy` ×1, `droga-zarodka` ×1, `lozysko-wymiana` ×1, `podzial-komorki` ×1, `podzial-komorki-skrot` ×1, `uklad-rozrodczy` ×1 |
+| biologia | BIO.02.B2f.rozmnazanie_rozwoj | `cykl` ×1, `cykl-miesiaczkowy` ×1, `droga-zarodka` ×1, `jajo-porownanie` ×1, `jajo-ptaka` ×1, `lozysko-wymiana` ×1, `podzial-komorki` ×1, `podzial-komorki-skrot` ×1, `uklad-rozrodczy` ×1 |
 | biologia | BIO.02.B2g.homeostaza | `glukoza-wykres` ×1, `petla-regulacji` ×1, `sprzezenie-zwrotne` ×1 |
-| biologia | BIO.02.L010.dna_od_zera | `drabina` ×1, `gdzie-dna` ×1, `helisa` ×1, `lancuch` ×1, `nukleotyd` ×1, `od-organizmu-do-genu` ×1, `pary-zasad` ×1, `pojemnosc` ×1, `poziomy-dna` ×1, `sekwencje` ×1, `szuflady-cech` ×1, `trener-nici` ×1 |
+| biologia | BIO.02.L010.dna_od_zera | `drabina` ×1, `gdzie-dna` ×1, `helisa` ×1, `komorki-porownanie` ×1, `lancuch` ×1, `nukleotyd` ×1, `od-organizmu-do-genu` ×1, `pary-zasad` ×1, `pojemnosc` ×1, `poziomy-dna` ×1, `sekwencje` ×1, `szuflady-cech` ×1, `trener-nici` ×1 |
 | biologia | BIO.02.L011.jak_dna_przechowuje_informacje | `drabina` ×1, `helisa` ×1, `kod-genetyczny` ×1, `nukleotyd` ×1, `pary-zasad` ×1 |
 | biologia | BIO.02.L012.jak_dna_jest_upakowane_w | `poziomy-dna` ×1 |
 | biologia | BIO.02.L013.jak_komorka_kopiuje_dna | `trener-nici` ×1 |

@@ -7,7 +7,7 @@ kicker: U06 · BIOLOGIA · ORGANIZM CZŁOWIEKA · KONKURS ETAP REJONOWY (PKT III
 lead: Każda twoja komórka potrzebuje tlenu i każda wytwarza odpady. Płuca wymieniają gazy z powietrzem, a nerki co dobę przesiewają ok. 170 litrów płynu, żeby zatrzymać to, co cenne, i wyrzucić to, co zbędne.
 lead: Najważniejsze umiejętności działu: opisać mechanizm wdechu i wydechu, wyjaśnić wymianę gazową dyfuzją w płucach i tkankach, odróżnić wydalanie od defekacji i opisać powstawanie moczu w nefronie z rolą ADH.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]][[extra:AMBITNE]]
-uwaga: Zakres LKO biologia 2025/26, etap II (rejonowy): pkt III.6 układ oddechowy, III.7 układ wydalniczy (moczowy). Nefron na poziomie szkoły podstawowej + warstwa ambitna. ADH i gospodarka wodna jako sprzężenie zwrotne — także H01 Homeostaza. Liczby (skład powietrza, liczba i powierzchnia pęcherzyków, objętości oddechowe, ilości moczu, przepływ krwi przez nerki) są orientacyjne — do weryfikacji w W1.
+uwaga: Zakres LKO biologia 2026/27, etap II (rejonowy): pkt III.6 układ oddechowy, III.7 układ wydalniczy (moczowy). Nefron na poziomie szkoły podstawowej + warstwa ambitna. ADH i gospodarka wodna jako sprzężenie zwrotne — także H01 Homeostaza. Liczby (skład powietrza, liczba i powierzchnia pęcherzyków, objętości oddechowe, ilości moczu, przepływ krwi przez nerki) są orientacyjne — do weryfikacji w W1.
 stopka: **BIOLOGIA U06 v1.0** · Oddychanie i wydalanie · 2026
 stan: W1 częściowo — GLM-5.3-Flash (Z.ai), 2026-10-11: tylko pakiet dodatków (zadania, test, fiszki, słownik, klinika, mity, ciekawostka, mini-wykład); przebudowa §0–14 nie dotarła — cała lekcja do ponownego W1
 ---

@@ -7,7 +7,7 @@ kicker: U08 · BIOLOGIA · ORGANIZM CZŁOWIEKA · KONKURS ETAP REJONOWY (PKT III
 lead: W ułamku sekundy cofasz rękę od gorącego garnka, zanim w ogóle poczujesz ból. Za tę szybkość odpowiadają miliardy neuronów połączonych synapsami — i zmysły, które bez przerwy zamieniają świat w impulsy.
 lead: Najważniejsze umiejętności działu: opisać budowę neuronu i drogę impulsu przez synapsę, rozpisać łuk odruchowy, przypisać funkcje częściom mózgowia, wyjaśnić działanie oka (akomodacja, wady wzroku) i ucha (słuch, równowaga).
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]][[extra:AMBITNE]]
-uwaga: Zakres LKO biologia 2025/26, etap II (rejonowy): pkt III.8 układ nerwowy, III.9 narządy zmysłów. Współpraca z układem hormonalnym — lekcja o układzie dokrewnym (B2e); sprzężenie zwrotne — H01 Homeostaza. Liczby (liczba neuronów, prędkość impulsu, liczba fotoreceptorów, zakres słyszalności, progi hałasu) są orientacyjne — do weryfikacji w W1.
+uwaga: Zakres LKO biologia 2026/27, etap II (rejonowy): pkt III.8 układ nerwowy, III.9 narządy zmysłów. Współpraca z układem hormonalnym — lekcja o układzie dokrewnym (B2e); sprzężenie zwrotne — H01 Homeostaza. Liczby (liczba neuronów, prędkość impulsu, liczba fotoreceptorów, zakres słyszalności, progi hałasu) są orientacyjne — do weryfikacji w W1.
 stopka: **BIOLOGIA U08 v1.1** · Układ nerwowy i narządy zmysłów · 2026
 stan: W1 FULL — AI z poczty (§0–13) + Claude Sonnet 5.5 (§14–27), 2026-10-11/12; scalił Claude 2026-10-12
 ---

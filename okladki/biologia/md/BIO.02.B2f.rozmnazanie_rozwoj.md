@@ -114,6 +114,14 @@ Zapłodnienie zachodzi w **jajowodzie**, zwykle w jego najszerszej części (amp
 
 ## 5 | Rozwój zarodkowy — pierwsze dwa tygodnie {#zarodek}
 
+@viz jajo-ptaka | Jajo ptaka w przekroju | poznaj, znajdź, podpisz
+@opis Przekrój jaja ptaka z numerami: skorupa, błony podskorupowe, komora powietrzna na tępym końcu, białko, żółtko w błonie żółtkowej, tarczka zarodkowa na żółtku, chalazy. Wniosek: skorupa chroni i przepuszcza gazy, żółtko jest zapasem pokarmu, tarczka to miejsce rozwoju zarodka, a chalazy utrzymują żółtko pośrodku.
+
+
+@viz cykl {cykl="zaba"} | Rozwój żaby — pierścień automatyczny | animacja startuje sama, kliknij etap
+@opis Pierścień: jaja w wodzie → kijanka ze skrzelami → kijanka z odnóżami i płucami → młoda żaba → dorosła żaba. Wniosek: płazy mają rozwój z przeobrażeniem i potrzebują wody do rozmnażania.
+
+
 @viz droga-zarodka | Droga zarodka | animacja etapów
 @opis Animacja drogi od owulacji do zagnieżdżenia: komórka jajowa w jajowodzie, zapłodnienie, zygota, bruzdkowanie i zagnieżdżenie w macicy. Wniosek: kliknij elementy i przejdź kroki, aby sprawdzić, jak budowa wynika z funkcji.
 
@@ -150,6 +158,10 @@ Podczas gastrulacji z zarodka powstają trzy listki, z których rozwijają się 
 **Trzeci trymestr (tydz. 28–40):** wzrost masy i dojrzewanie płuc. Surfaktant zaczyna być produkowany ok. 24.–28. tygodnia. Donoszony noworodek ma zwykle ok. 50 cm i ok. 3,3–3,5 kg.
 
 ## 8 | Łożysko {#lozysko}
+
+@viz jajo-porownanie | Jajo u różnych zwierząt — co z czego wynika | kliknij grupę
+@opis Tabela porównawcza jaja ryb i płazów, owadów, gadów, ptaków i ssaków łożyskowych (środowisko, żółtko, osłonki, błony płodowe, źródło pokarmu, opieka) oraz ścieżka ewolucyjna: jajo w wodzie → jajo owodniowe → ptaki i ssaki. Wniosek: skorupa i błony płodowe uniezależniły rozmnażanie od wody; u ssaków łożyskowych żółtko zanikło, bo pokarm daje łożysko; jajo owadów to analogia, nie pokrewieństwo.
+
 
 @viz lozysko-wymiana | Łożysko — wymiana substancji | kliknij elementy
 @opis Schemat łożyska: krew matki opływa kosmki z naczyniami płodu; strzałki pokazują, co płynie do płodu, a co do matki. Pępowina ma dwie tętnice i jedną żyłę. Wniosek: kliknij elementy i przejdź kroki, aby sprawdzić, jak budowa wynika z funkcji.

@@ -127,6 +127,10 @@ Chrząstka nie ma naczyń krwionośnych ani nerwów (poza okostną). Odżywia si
 
 ## 5 | Tkanka mięśniowa — trzy typy {#tkanka-miesniowa}
 
+@viz tkanki-zwierzece | Cztery tkanki zwierzęce | rozpoznaj po budowie
+@opis Cztery kwadraty: nabłonkowa (ściśle przylegające komórki na błonie podstawnej), łączna (mało komórek, dużo włókien), mięśniowa (długie włókna z prążkami i jądrami przy brzegu), nerwowa (neuron z dendrytami i długim aksonem). Wniosek: budowa wynika z funkcji — gęste komórki chronią, włókna łączą, prążki kurczą, wypustki przewodzą impuls.
+
+
 | Cecha | Szkieletowa | Gładka | Sercowa |
 |---|---|---|---|
 | Prążkowanie | tak | nie | tak |

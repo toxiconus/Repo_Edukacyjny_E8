@@ -7,7 +7,7 @@ kicker: REV01 · BIOLOGIA · POWTÓRKA · KONKURS ETAP SZKOLNY
 lead: Pierwsza część zakresu etapu szkolnego: jak zbudowane są organizmy i skąd biorą materię i energię.
 lead: Komórka jako mapa (jądro = DNA, mitochondrium = ATP, chloroplast = fotosynteza), fotosynteza i oddychanie jako dwa różne procesy oraz dwa obowiązkowe doświadczenia — ze światłem i z drożdżami.
 plakietki: [[basic:E8]][[understand:TRENING]][[exam:KONKURS]][[extra:AMBITNE]]
-uwaga: Zakres wg konkursu biologicznego LKO 2025/26 (etap I, pkt I podstawy programowej). Druga część zakresu — REV02 Różnorodność życia. Rozwinięcie komórki i DNA — L010.
+uwaga: Zakres wg konkursu biologicznego LKO 2026/27 (etap I, pkt I podstawy programowej). Druga część zakresu — REV02 Różnorodność życia. Rozwinięcie komórki i DNA — L010.
 stopka: **BIOLOGIA REV01 v1.1** · Organizacja i chemizm życia · 2026
 ---
 ::: minimum | Muszę umieć — 10 punktów
@@ -507,6 +507,10 @@ BHP: ostrożnie z gorącą wodą i szkłem laboratoryjnym.
 
 ### 9.1 Metoda naukowa — krok po kroku {#metoda-naukowa}
 
+@viz wykres-dane | Jak czytać wykres z doświadczenia | kliknij elementy, użyj suwaka
+@opis Wykres z tytułem, osiami, skalą i punktami (lub słupkami), do wyboru trzy zestawy danych: amylaza i temperatura, osmoza w ziemniaku, kiełkowanie nasion. Kliknięcie elementu wyjaśnia jego rolę; suwak odczytuje kolejne pomiary i opisuje trend. Wniosek: oś pozioma to zmienna niezależna (zmieniana), pionowa — zależna (mierzona), obie z jednostkami.
+
+
 **Obserwacja → problem badawczy → hipoteza → doświadczenie → wyniki → wniosek.** Hipotezę można sprawdzić albo obalić; wniosek musi wynikać z wyników.
 
 | Pojęcie | Znaczenie | Przykład: światło a fotosynteza |
@@ -917,7 +921,9 @@ Inhibitor :: substancja hamująca działanie enzymu
 - Lugol = skrobia; biuret = białko; Trommer/Benedict = cukry redukujące; Sudan III = tłuszcz.
 :::
 
-**Co dalej:** REV02 Różnorodność życia (druga część etapu szkolnego); na etapie rejonowym — organizm człowieka i homeostaza.## AUDYT W19 — chemizm życia i klucze (2026-10-09, GPT-6)
+**Co dalej:** REV02 Różnorodność życia (druga część etapu szkolnego); na etapie rejonowym — organizm człowieka i homeostaza.
+
+## AUDYT W19 — chemizm życia i klucze (2026-10-09, GPT-6)
 
 **Zakres:** kontrola celowana równania fotosyntezy i częstych uogólnień.
 

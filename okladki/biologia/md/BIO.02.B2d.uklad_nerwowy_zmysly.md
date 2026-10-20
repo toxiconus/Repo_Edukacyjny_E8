@@ -66,6 +66,10 @@ Rdzeń przewodzi impulsy **w górę** (czuciowe, do mózgu) i **w dół** (rucho
 
 ## 4 | Neuron i jego budowa {#neuron}
 
+@viz tkanki-zwierzece | Cztery tkanki zwierzęce | rozpoznaj po budowie
+@opis Cztery kwadraty: nabłonkowa (ściśle przylegające komórki na błonie podstawnej), łączna (mało komórek, dużo włókien), mięśniowa (długie włókna z prążkami i jądrami przy brzegu), nerwowa (neuron z dendrytami i długim aksonem). Wniosek: budowa wynika z funkcji — gęste komórki chronią, włókna łączą, prążki kurczą, wypustki przewodzą impuls.
+
+
 @viz neuron-budowa | Neuron — budowa | poznaj, znajdź, podpisz
 @opis Neuron z numerami: dendryty, ciało komórki z jądrem, akson, osłonka mielinowa, przewężenia Ranviera, zakończenia aksonu z kolbkami synaptycznymi. Wniosek: dendryty odbierają sygnał, akson przewodzi go dalej (szybciej dzięki osłonce, skokowo), a synapsa przekazuje go chemicznie następnej komórce.
 

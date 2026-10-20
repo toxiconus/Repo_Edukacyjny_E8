@@ -7,7 +7,7 @@ kicker: H01 · BIOLOGIA · ORGANIZM CZŁOWIEKA · KONKURS ETAP REJONOWY (PKT IV)
 lead: Na zewnątrz upał albo mróz, posiłek albo głodówka — a we krwi temperatura, glukoza i woda trzymają się wąskich granic. To homeostaza: ciągłe, niewidoczne poprawki.
 lead: Jeden schemat wyjaśnia wszystkie przykłady: bodziec → receptor → ośrodek → efektor → odpowiedź, która przeciwdziała zmianie.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]][[extra:AMBITNE]]
-uwaga: Zakres LKO biologia 2025/26, etap II (rejonowy): pkt IV Homeostaza. Łączy lekcje o układach: krążenia (U04), dokrewnym, nerwowym, wydalniczym i skórze. Wartości prawidłowe (temperatura, glukoza, ciśnienie, pH) są orientacyjne — zależą od metody pomiaru i laboratorium. Warstwa konkursowa (sekcje z [[exam:KONKURS]] i ::: adv) do zweryfikowania z wymaganiami LKO — w paczce nie ma dokumentu wymagań.
+uwaga: Zakres LKO biologia 2026/27, etap II (rejonowy): pkt IV Homeostaza. Łączy lekcje o układach: krążenia (U04), dokrewnym, nerwowym, wydalniczym i skórze. Wartości prawidłowe (temperatura, glukoza, ciśnienie, pH) są orientacyjne — zależą od metody pomiaru i laboratorium. Warstwa konkursowa (sekcje z [[exam:KONKURS]] i ::: adv) do zweryfikowania z wymaganiami LKO — w paczce nie ma dokumentu wymagań.
 stopka: **BIOLOGIA H01 v1.1** · Homeostaza · 2026
 stan: W1 FULL — 5 modeli AI w trybie ULEPSZ (model B — pełna wersja, GPT-6 — pełna wersja, model D — poprawki, model E — dodatki, model A — poprawki) + Claude (scalenie i sprawdzenie), 2026-10-11
 ---

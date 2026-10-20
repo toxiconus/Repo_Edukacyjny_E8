@@ -3,7 +3,7 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (19 pl., 517 KB)
+## .  (19 pl., 519 KB)
 - (zwinięte; `ls .`) — duże:
 - ⚠`INDEKS.html` 56 KB
 - ⚠`SPIS_WSZYSTKICH.md` 61 KB
@@ -61,8 +61,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIOLOGIA_L015_MEJOZA.html` 85 KB
 - ⚠`BIOLOGIA_L017_PUNNETT (2).html` 88 KB
 
-## biologia/bio  (2 pl., 10 KB)
-- `BIO_KATALOG.md` 5 KB
+## biologia/bio  (2 pl., 13 KB)
+- `BIO_KATALOG.md` 8 KB
 - `PRZEKAZANIE.md` 5 KB
 
 ## biologia/bio/ciekawostki  (1 pl., 8 KB)
@@ -73,9 +73,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `U10_krzywe_glukozy.svg` 10 KB
 - `U10_os_tarczycowa.svg` 10 KB
 
-## biologia/bio/md  (58 pl., 2.5 MB)
+## biologia/bio/md  (58 pl., 2.6 MB)
 - (zwinięte; `ls biologia/bio/md`) — duże:
-- ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.md` 66 KB
+- ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.md` 67 KB
 - ⚠`BIO.00.REV02.roznorodnosc_zycia.md` 86 KB
 - ⚠`BIO.01.L001.komorka.md` 81 KB
 - ⚠`BIO.01.L002.powtorka_czlowiek.md` 76 KB
@@ -104,7 +104,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## biologia/bio/szablon/wizualizacje  (59 pl., 300 KB)
 - (zwinięte; `ls biologia/bio/szablon/wizualizacje`)
 
-## biologia/html  (55 pl., 9.6 MB)
+## biologia/html  (55 pl., 9.8 MB)
 - (zwinięte; `ls biologia/html`) — duże:
 - ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 316 KB
 - ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 330 KB
@@ -183,9 +183,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (17 pl., 199 KB)
+## chemia/che-modular  (17 pl., 202 KB)
 - (zwinięte; `ls chemia/che-modular`) — duże:
-- ⚠`PROGRESS.md` 64 KB
+- ⚠`PROGRESS.md` 65 KB
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
 - `ARCHITEKTURA.md` 5 KB
@@ -535,7 +535,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 
 ## chemia/html  (94 pl., 9.5 MB)
 - (zwinięte; `ls chemia/html`) — duże:
-- ⚠`CHE.00.LAB.doswiadczenia.html` 154 KB
+- ⚠`CHE.00.LAB.doswiadczenia.html` 153 KB
 - ⚠`CHE.00.REV01.powtorka_klasy_7.html` 218 KB
 - ⚠`CHE.00.REV02.powtorka_klasy_8.html` 97 KB
 - ⚠`CHE.00.REV06.zaawansowana.html` 124 KB
@@ -544,9 +544,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`CHE.01.F00.wspolne_bloku_F.html` 115 KB
 - ⚠`CHE.01.F01.jak_mysli_chemik.html` 99 KB
 
-## chemia/lekcje_md/00  (6 pl., 276 KB)
-- ⚠`CHE.00.LAB.doswiadczenia.md` 67 KB
-- ⚠`CHE.00.REV01.powtorka_klasy_7.md` 124 KB
+## chemia/lekcje_md/00  (6 pl., 274 KB)
+- ⚠`CHE.00.LAB.doswiadczenia.md` 66 KB
+- ⚠`CHE.00.REV01.powtorka_klasy_7.md` 123 KB
 - `CHE.00.REV02.powtorka_klasy_8.md` 20 KB
 - `CHE.00.REV06.zaawansowana.md` 40 KB
 - `CHE.00.S00.system_kursu.md` 18 KB
@@ -568,7 +568,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE.06.E05.korozja.md` 4 KB
 - `CHE.06.E06.zrodla_energii_akumulatory.md` 4 KB
 
-## chemia/lekcje_md/F  (22 pl., 861 KB)
+## chemia/lekcje_md/F  (22 pl., 859 KB)
 - (zwinięte; `ls chemia/lekcje_md/F`) — duże:
 - ⚠`CHE.01.F06.uklad_okresowy.md` 72 KB
 - ⚠`CHE.01.F07.konfiguracja_elektronowa.md` 55 KB
@@ -594,7 +594,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE.07.K10.regula_le_chateliera.md` 14 KB
 - `CHE.07.K11.rownowaga_ilosciowa.md` 18 KB
 
-## chemia/lekcje_md/N  (8 pl., 507 KB)
+## chemia/lekcje_md/N  (8 pl., 506 KB)
 - `CHE.02.N01.powietrze_i_gazy.md` 33 KB
 - ⚠`CHE.02.N02.tlenki.md` 63 KB
 - ⚠`CHE.02.N03.wodorotlenki.md` 134 KB
@@ -604,12 +604,12 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE.02.N07.systematyka_nieorganiczna.md` 4 KB
 - `CHE.02.N08.mapa_przemian.md` 5 KB
 
-## chemia/lekcje_md/O  (9 pl., 122 KB)
-- `CHE.05.O01-O07.weglowodory.md` 41 KB
+## chemia/lekcje_md/O  (9 pl., 121 KB)
+- `CHE.05.O01-O07.weglowodory.md` 40 KB
 - `CHE.05.O08+O11+O12.alkohole_kwasy_estry.md` 12 KB
 - `CHE.05.O09.fenole.md` 4 KB
 - `CHE.05.O10.aldehydy_i_ketony.md` 4 KB
-- `CHE.05.O13+O15-O20+O22-O23.biochemia.md` 46 KB
+- `CHE.05.O13+O15-O20+O22-O23.biochemia.md` 45 KB
 - `CHE.05.O14.aminy_i_amidy.md` 3 KB
 - `CHE.05.O21.polimery_i_tworzywa.md` 4 KB
 - `CHE.05.O24.nazewnictwo_procedura_zbiorcza.md` 4 KB
@@ -623,15 +623,15 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE.01.P05.zwiazki_charakterystyczne_pierwiastkow.md` 1 KB
 - `CHE.01.P06.trend_wasciwosc_reaktywnosc.md` 1 KB
 
-## chemia/lekcje_md/R  (5 pl., 91 KB)
+## chemia/lekcje_md/R  (5 pl., 89 KB)
 - `CHE.03.R01.woda_i_roztwory.md` 5 KB
 - `CHE.03.R02.rozpuszczalnosc.md` 5 KB
 - `CHE.03.R03+R05.stezenia.md` 34 KB
-- `CHE.03.R04+R07-R09.stechiometria.md` 42 KB
+- `CHE.03.R04+R07-R09.stechiometria.md` 41 KB
 - `CHE.03.R06.gazy_objetosc_molowa.md` 4 KB
 
-## chemia/lekcje_md/X  (1 pl., 38 KB)
-- `CHE.06.X01-X09.redoks.md` 38 KB
+## chemia/lekcje_md/X  (1 pl., 37 KB)
+- `CHE.06.X01-X09.redoks.md` 37 KB
 
 ## chemia/notatki  (1 pl., 5 KB)
 - `H3O_jon_hydroniowy_woda.md` 5 KB
@@ -715,7 +715,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## eksport/grafiki  (1 pl., 7 KB)
 - `VIZ_START.html` 7 KB
 
-## narzedzia  (29 pl., 189 KB)
+## narzedzia  (30 pl., 190 KB)
 - (zwinięte; `ls narzedzia`)
 
 ## narzedzia/jednorazowe  (5 pl., 14 KB)
@@ -752,7 +752,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`ANG.01.L006.czasowniki_modalne_i_have_to.md` 79 KB
 - ⚠`ANG.01.L007.tryb_rozkazujacy_stative_phrasal_verbs.md` 55 KB
 
-## okladki/biologia/html  (54 pl., 9.6 MB)
+## okladki/biologia/html  (54 pl., 9.8 MB)
 - (zwinięte; `ls okladki/biologia/html`) — duże:
 - ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 316 KB
 - ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 330 KB
@@ -763,9 +763,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIO.01.L003.diagnoza.html` 200 KB
 - ⚠`BIO.01.L004.organizacja_budowy_organizmu_od_komorki.html` 140 KB
 
-## okladki/biologia/md  (54 pl., 2.2 MB)
+## okladki/biologia/md  (54 pl., 2.3 MB)
 - (zwinięte; `ls okladki/biologia/md`) — duże:
-- ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.md` 66 KB
+- ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.md` 67 KB
 - ⚠`BIO.00.REV02.roznorodnosc_zycia.md` 86 KB
 - ⚠`BIO.01.L001.komorka.md` 81 KB
 - ⚠`BIO.01.L002.powtorka_czlowiek.md` 76 KB
@@ -1148,15 +1148,15 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PRZEKAZANIE.md` 3 KB
 - ⚠`wzorcownia.html` 59 KB
 
-## wizualizacje-projekty/baza-mala  (5 pl., 140 KB)
+## wizualizacje-projekty/baza-mala  (5 pl., 144 KB)
 - `BRAKI_WIZUALIZACJI.md` 16 KB
-- `KATALOG_KLOCKOW.md` 24 KB
+- `KATALOG_KLOCKOW.md` 27 KB
 - `README.md` 3 KB
 - ⚠`UZYCIA_WIZUALIZACJI.md` 63 KB
 - `uzycia.json` 34 KB
 
-## wizualizacje-projekty/baza-mala/biblioteki/biologia  (1 pl., 5 KB)
-- `BIO_KATALOG.md` 5 KB
+## wizualizacje-projekty/baza-mala/biblioteki/biologia  (1 pl., 8 KB)
+- `BIO_KATALOG.md` 8 KB
 
 ## wizualizacje-projekty/baza-mala/biblioteki/biologia/wizualizacje  (59 pl., 300 KB)
 - (zwinięte; `ls wizualizacje-projekty/baza-mala/biblioteki/biologia/wizualizacje`)

@@ -52,18 +52,6 @@ stopka: **CHEMIA N04 v1.1 MASTER LAB** · Sole · 2026
 > **Kolejność pracy w każdym zadaniu:** diagnoza → wyjaśnienie → przykład prowadzony → samodzielna próba → sprawdzenie. Trudność rośnie: rozpoznanie → zastosowanie → przekształcenie → uzasadnienie → analiza → kontrprzykład → problem otwarty.
 :::
 
-::: odp | 10 zasad skutecznej nauki
-1. **Najpierw próbuj, potem czytaj.** Błąd to najlepszy nauczyciel.
-2. **Mów na głos.** Chemia wchodzi przez usta.
-3. **Rysuj.** Nawet brzydko.
-4. **Powtarzaj w odstępach.** Dziś → jutro → za 3 dni → za tydzień.
-5. **Mieszaj tematy.** Przeplatanie uczy mózg wybierać strategię.
-6. **Testuj się.** Fiszki, pytania, testy — to nie strata czasu, to nauka.
-7. **Tłumacz komuś.** Jeśli nie umiesz wytłumaczyć, nie rozumiesz.
-8. **Łap moment „aha!”.** To sygnał trwałego zapisu.
-9. **Śpij.** Mózg utrwala wiedzę we śnie.
-10. **Bądź ciekawy.** „Dlaczego?” to najlepsze pytanie w chemii.
-:::
 
 ## 0.2 | Cele lekcji i pytanie przewodnie [[basic:E8]] {#cele}
 

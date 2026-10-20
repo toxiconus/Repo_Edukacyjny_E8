@@ -17,7 +17,7 @@ Ta paczka zawiera kopie tego, co już działa w lekcjach. Zewnętrzny model moż
 | `biblioteki/polski/pol-viz.js` | kopia pliku | 21 KB |
 | `biblioteki/polski/POL_KATALOG_GRAFIK.md` | kopia pliku | 1 KB |
 | `biblioteki/biologia/wizualizacje` | kopia folderu | 299 KB |
-| `biblioteki/biologia/BIO_KATALOG.md` | kopia pliku | 4 KB |
+| `biblioteki/biologia/BIO_KATALOG.md` | kopia pliku | 7 KB |
 
 ## 2. Klocki laboratoryjne (`klocki/`) — mała baza
 
@@ -256,6 +256,65 @@ Każda grafika to osobny plik `wizualizacje/<id>.js`. Spis z `BIO_KATALOG.md`:
 | fotosynteza-oddychanie | chloroplast ↔ mitochondrium: krążenie materii, przepływ energii, kropki w pętli, tryby fot/odd/oba + tabela | — | REV01 §7 |
 | podzial-komorki | mitoza i mejoza (2n=4) etapami, autostart + ◀ ▶; opcja `typ="mit\|mej"` | — | B2f §4 |
 | cykl | cykl życiowy jako pierścień etapów, autostart w widoku (do przodu i od początku), klik = wyjaśnienie + pauza; opcja `cykl="zaba\|tasiemiec\|mech\|paproc\|kwiat\|faga"` (dane w `CY` w bio-rysunki.js) | — | REV02 §2.1, 4.2, 4.3, 4.5, 7.1, 8.2 |
+| Lekcja | KB | @viz | audyty |
+| BIO.00.REV01.organizacja_i_chemizm_zycia | 66 | 9 | 1 |
+| BIO.00.REV02.roznorodnosc_zycia | 85 | 17 | 2 |
+| BIO.01.B1b.krzyzowki_mendel | 22 | 1 | 0 |
+| BIO.01.L001.komorka | 81 | 4 | 0 |
+| BIO.01.L001A.dodatek_ambitny_od_komorki_do | 45 | 1 | 1 |
+| BIO.01.L002.powtorka_czlowiek | 75 | 1 | 1 |
+| BIO.01.L003.diagnoza | 76 | 0 | 0 |
+| BIO.01.L004.organizacja_budowy_organizmu_od_komorki | 37 | 2 | 2 |
+| BIO.01.L005.blona_komorkowa_i_transport_substancji | 29 | 1 | 2 |
+| BIO.01.L006.fotosynteza_skad_roslina_bierze_materie | 30 | 1 | 2 |
+| BIO.01.L007.oddychanie_komorkowe_skad_komorka_bierze | 35 | 2 | 3 |
+| BIO.01.L008.mikroskop_jak_obserwowac_komorke_a | 28 | 1 | 2 |
+| BIO.01.L009.podzial_komorki_wzrost_regeneracja_i | 26 | 1 | 2 |
+| BIO.02.B10.powtorka_uklady_czlowieka | 19 | 3 | 0 |
+| BIO.02.B2a.skora_uklad_ruchu | 18 | 2 | 0 |
+| BIO.02.B2b.uklad_pokarmowy | 19 | 2 | 0 |
+| BIO.02.B2c.oddychanie_wydalanie | 17 | 5 | 0 |
+| BIO.02.B2d.uklad_nerwowy_zmysly | 20 | 4 | 0 |
+| BIO.02.B2e.uklad_dokrewny | 18 | 3 | 0 |
+| BIO.02.B2f.rozmnazanie_rozwoj | 19 | 6 | 0 |
+| BIO.02.B2g.homeostaza | 32 | 2 | 0 |
+| BIO.02.L010.dna_od_zera | 64 | 12 | 3 |
+| BIO.02.L011.jak_dna_przechowuje_informacje | 41 | 5 | 1 |
+| BIO.02.L012.jak_dna_jest_upakowane_w | 55 | 1 | 1 |
+| BIO.02.L013.jak_komorka_kopiuje_dna | 24 | 1 | 4 |
+| BIO.02.L014.jak_komorki_ciala_powstaja_i | 61 | 1 | 2 |
+| BIO.02.L015.mejoza | 59 | 2 | 2 |
+| BIO.02.L016.co_sie_dzieje_gdy_podzialy | 18 | 1 | 3 |
+| BIO.02.L016A.zmiennosc_dlaczego_potomstwo_nie_jest | 17 | 1 | 2 |
+| BIO.02.L017.jak_przewidywac_dziedziczenie_jednej_cechy | 42 | 1 | 2 |
+| BIO.02.L018.jak_dziedziczy_sie_plec_i | 20 | 1 | 4 |
+| BIO.02.L019.dlaczego_grupy_krwi_nie_pasuja | 82 | 1 | 1 |
+| BIO.02.L020.czym_sa_mutacje_i_jakie | 83 | 1 | 1 |
+| BIO.02.L021.powtorka_genetyki | 86 | 2 | 1 |
+| BIO.02.L022.biotechnologia_i_inzynieria_genetyczna | 89 | 1 | 2 |
+| BIO.03.L030.czym_jest_ewolucja_i_jakie | 20 | 1 | 0 |
+| BIO.03.L031.jak_dziala_dobor_naturalny_i | 19 | 1 | 0 |
+| BIO.03.L032.powtorka_ewolucji | 15 | 2 | 1 |
+| BIO.04.L040.czym_jest_ekosystem_i_jakie | 30 | 1 | 0 |
+| BIO.04.L041.jak_zapisac_lancuchy_i_sieci | 19 | 1 | 0 |
+| BIO.04.L042.jakie_relacje_panuja_miedzy_organizmami | 19 | 1 | 0 |
+| BIO.04.L043.jak_czlowiek_wplywa_na_srodowisko | 21 | 1 | 0 |
+| BIO.04.L044.powtorka_ekologii | 14 | 2 | 1 |
+| BIO.05.L050.powtorka_roczna | 13 | 2 | 2 |
+| BIO.06.L090.extra_olimpijska | 19 | 2 | 2 |
+| BIO.06.L091.atp_jak_komorka_magazynuje_energie | 20 | 1 | 0 |
+| BIO.07.H01.homeostaza | 80 | 2 | 1 |
+| BIO.07.U01.skora_i_uklad_ruchu | 59 | 2 | 1 |
+| BIO.07.U03.uklad_pokarmowy_i_odzywianie | 106 | 3 | 1 |
+| BIO.07.U04.krazenie_krew_odpornosc | 90 | 2 | 1 |
+| BIO.07.U06.oddychanie_i_wydalanie | 81 | 3 | 1 |
+| BIO.07.U08.uklad_nerwowy_i_zmysly | 110 | 4 | 2 |
+| BIO.07.U10.uklad_dokrewny | 107 | 3 | 2 |
+| BIO.07.U11.rozmnazanie_i_rozwoj | 107 | 5 | 1 |
+| BIO.99.X00.system | 7 | 0 | 0 |
+| BIO.99.X01.szablon_lekcji | 61 | 0 | 1 |
+| BIO.99.X02.architektura_v52 | 0 | 0 | 0 |
+| BIO.99.X99.warstwy_audyt_backlog | 25 | 0 | 2 |
 
 ## 5. Polski (`biblioteki/polski/`)
 

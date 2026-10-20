@@ -7,7 +7,7 @@ kicker: U01 · BIOLOGIA · ORGANIZM CZŁOWIEKA · KONKURS ETAP REJONOWY (PKT III
 lead: Skóra to największy narząd ciała — tarcza, czujnik i chłodnica naraz. Pod nią kości, stawy i mięśnie działają jak zestaw dźwigni sterowanych linkami.
 lead: Najważniejsze umiejętności działu: przypisać funkcje do warstw skóry, wyjaśnić, za co odpowiadają składniki kości, i opisać współpracę mięśni antagonistycznych.
 plakietki: [[basic:E8]][[understand:ROZUMIENIE]][[exam:KONKURS]][[extra:AMBITNE]]
-uwaga: Zakres LKO biologia 2025/26, etap II (rejonowy): pkt III.1 skóra, III.2 układ ruchu. Termoregulacja w szczegółach — lekcja H01 Homeostaza. Liczby (masa i powierzchnia skóry, liczba kości, skład kości) są orientacyjne — do weryfikacji w W1.
+uwaga: Zakres LKO biologia 2026/27, etap II (rejonowy): pkt III.1 skóra, III.2 układ ruchu. Termoregulacja w szczegółach — lekcja H01 Homeostaza. Liczby (masa i powierzchnia skóry, liczba kości, skład kości) są orientacyjne — do weryfikacji w W1.
 stopka: **BIOLOGIA U01 v1.0** · Skóra i układ ruchu · 2026
 stan: W1 FULL — GLM-5.3 (Z.ai), 2026-10-11 (tryb ULEPSZ, 2 tury; scalił Claude 2026-10-12)
 ---
