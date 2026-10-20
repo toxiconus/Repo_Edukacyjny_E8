@@ -43,7 +43,7 @@ stan: ULEPSZONA — Perplexity, 2026-10-13; do sprawdzenia
 - [§10](#zadania-konkurs) — Zadania konkursowe.
 - [§16](#test) — Test końcowy.
 
-@model tabela-rozpuszczalnosci-v01 | Tabela rozpuszczalności soli i wodorotlenków (20 °C) | Silnik CHE · otwiera się w oknie
+@klocek tabela-rozpuszczalnosci | Tabela rozpuszczalności soli i wodorotlenków (20 °C)
 @opis Tabela: w kolumnach kationy, w wierszach aniony, w komórkach litery R (rozpuszczalny, zielone tło), T (trudno rozpuszczalny, żółte), N (praktycznie nierozpuszczalny, czerwone) i „—” (nie istnieje w wodzie lub rozkłada się). Kliknięcie komórki pokazuje wzór i nazwę związku, a dla osadów ich barwę. Wniosek: osad powstaje, gdy w roztworze spotkają się jony dające związek N lub T — tabela rozstrzyga, czy reakcja strąceniowa zajdzie.
 
 :::
@@ -103,7 +103,7 @@ Interpretacja wyniku:
 - 3–4 pkt — pracuj kolejno z lekcją, zwracając uwagę na zagadnienia, w których pojawił się błąd.
 - 0–2 pkt — zacznij od wykładu i spokojnie przećwicz każdy krok zapisu równania.
 
-@model rownania-jonowe-v01 | Równania jonowe: wybierz reakcję i zobacz trzy zapisy | Silnik CHE · otwiera się w oknie
+@klocek rownania-jonowe | Równania jonowe: wybierz reakcję i zobacz trzy zapisy
 @opis Wybierasz reakcję (zobojętnianie, strącanie osadów, węglany, metale z kwasami); model pokazuje ten sam proces jako równanie cząsteczkowe, jonowe pełne i jonowe skrócone, a obok animację w probówce. W zapisie jonowym osad (↓), gaz (↑) i woda są zapisane cząsteczkowo, a jony widzowe występują po obu stronach i są pomijane w zapisie skróconym. Wniosek: zapis skrócony pokazuje, co faktycznie reaguje.
 
 
@@ -250,7 +250,7 @@ Z jednej jednostki wzoru BaCl₂ wynikają jeden jon Ba²⁺ i dwa jony Cl⁻. Z
 
 Jon SO₄²⁻ pozostaje całą grupą. Nie rozbijamy go na atom siarki i atomy tlenu. Dysocjacja soli oddziela kation od anionu, nie niszczy w tym zapisie anionu wieloatomowego.
 
-@model rownania-jonowe-v01 | Równania jonowe — cząsteczkowe, jonowe pełne i skrócone dla reakcji z silnika | Zapis trzech poziomów, jony obserwatorowe, bilans atomów i ładunków · CHE.IONIC
+@klocek rownania-jonowe | Równania jonowe — cząsteczkowe, jonowe pełne i skrócone dla reakcji z silnika
 @opis Model równań jonowych: dla wybranej reakcji (np. AgNO₃ + NaCl, BaCl₂ + Na₂SO₄, zobojętnianie NaOH + HCl) pokazuje trzy poziomy zapisu obok siebie. Jony obserwatorowe są wyróżnione kolorem, a osad oznaczony ↓. Wniosek: po skreśleniu obserwatorów zostaje sama przemiana, np. Ag⁺ + Cl⁻ → AgCl↓.
 
 ::: karta core | Najważniejsze — trójkrok w jednym oddechu
@@ -479,7 +479,7 @@ Przykład: Fe(OH)₃. Nie jest wodorotlenkiem litowca ani jednym z bardziej rozp
 
 Fe³⁺ + 3OH⁻ → Fe(OH)₃↓
 
-@model tabela-rozpuszczalnosci-v01 | Tabela rozpuszczalności (20 °C) — kliknij parę kation–anion | Wzór soli, oznaczenie R / T / N i barwa osadu · CHE.DATA.SOLUBILITY_TABLE
+@klocek tabela-rozpuszczalnosci | Tabela rozpuszczalności (20 °C) — kliknij parę kation–anion
 @opis Tabela rozpuszczalności: wiersze to kationy, kolumny aniony. Każda komórka ma oznaczenie R (dobrze rozpuszczalna), T (trudno rozpuszczalna) lub N (praktycznie nierozpuszczalna) i po kliknięciu podaje wzór i nazwę soli oraz barwę osadu, jeśli występuje. Wniosek: przed zapisaniem równania strąceniowego sprawdź komórkę dla pary jonów.
 
 ::: karta understand | W skrócie — tabela rozpuszczalności
@@ -708,7 +708,7 @@ Pierwsza dotyczy Fe(OH)₂. Świeży osad jest brudnozielony, ale w obecności t
 
 Druga dotyczy białych osadów. AgCl, BaSO₄, CaCO₃ i PbCl₂ mogą wyglądać podobnie. Różnicuje je zachowanie wobec kwasów i innych odczynników. BaSO₄ pozostaje jako osad, a CaCO₃ rozpuszcza się z ulotem CO₂. Ag₂CO₃ ma zwykle barwę bladożółtą i również może zakłócić prostą próbę na chlorki.
 
-@model j03-osady-v01 | Dwie probówki, dwie sole — czy wytrąci się osad? | Probówki A i B z rozpuszczalnymi solami, wynik po zmieszaniu i równanie · CHE.DATA.SOLUBILITY_TABLE
+@klocek osady-dwie-sole | Dwie probówki, dwie sole — czy wytrąci się osad?
 @opis Model pokazuje dwie probówki z wybranymi rozpuszczalnymi solami (listy rozwijane A i B). Po zmieszaniu jony łączą się „na krzyż”, a model sprawdza w tabeli rozpuszczalności każdą nową parę. Jeżeli powstaje sól trudno rozpuszczalna (T) lub praktycznie nierozpuszczalna (N), w trzeciej probówce pojawia się osad w barwie z katalogu i zapisywane jest równanie jonowe skrócone z ↓. Jeżeli obie nowe sole są rozpuszczalne (R), roztwór pozostaje przezroczysty i komunikat brzmi „Brak osadu”. Wniosek: osad powstaje tylko wtedy, gdy przynajmniej jeden z produktów wymiany jest trudno rozpuszczalny.
 
 ::: karta understand | W skrócie — barwa jest obserwacją, nie identyfikacją

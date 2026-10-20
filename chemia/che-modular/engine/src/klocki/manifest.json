@@ -40,7 +40,10 @@
     "doswiadczenie.js": "Wspólny układ doświadczenia: cel, sprzęt, BHP, scena (inny klocek), równanie, obserwacje",
     "diagram_bohra.js": "Model Bohra atomu i jonu: jądro (p), powłoki K–N, suwak Z, oddawanie/przyjmowanie elektronu z animacją",
     "schemat_przemian.js": "Schemat dróg: kilka sposobów otrzymania tego samego typu substancji (substraty → strzałka → produkty), kliknięcie pokazuje uwagę",
-    "zbieranie_gazu.js": "Zbieranie gazu: wylotem do góry, do dołu albo nad wodą (kolba, rurka, naczynie); werdykt z gęstością względną i rozpuszczalnością"
+    "zbieranie_gazu.js": "Zbieranie gazu: wylotem do góry, do dołu albo nad wodą (kolba, rurka, naczynie); werdykt z gęstością względną i rozpuszczalnością",
+    "tabela_rozpuszczalnosci.js": "tabela rozpuszczalności R/T/N (20 °C), klik w komórkę: wzór, nazwa, rozpuszczalność",
+    "rownania_jonowe.js": "równania jonowe: cząsteczkowy, jonowy pełny i skrócony dla 12 reakcji",
+    "osady_dwie_sole.js": "dwie sole → czy powstaje osad (tabela rozpuszczalności, barwa osadu)"
   },
   "lekcje": {
     "P01": [
@@ -223,7 +226,10 @@
       "probowki_odczyn.js",
       "probowki_wybor.js",
       "doswiadczenie.js",
-      "karta_bhp.js"
+      "karta_bhp.js",
+      "tabela_rozpuszczalnosci.js",
+      "rownania_jonowe.js",
+      "osady_dwie_sole.js"
     ],
     "C1c": [
       "klocki.js",
@@ -241,7 +247,9 @@
       "sklad_procentowy.js",
       "doswiadczenie.js",
       "karta_bhp.js",
-      "schemat_przemian.js"
+      "schemat_przemian.js",
+      "tabela_rozpuszczalnosci.js",
+      "rownania_jonowe.js"
     ],
     "C2m": [
       "klocki.js",

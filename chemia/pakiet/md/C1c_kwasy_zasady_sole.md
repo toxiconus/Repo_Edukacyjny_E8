@@ -163,10 +163,10 @@ Jeśli żaden z nich nie powstaje, reakcja nie zachodzi.
 - Na₂CO₃ + 2 HCl → 2 NaCl + H₂O + CO₂↑: gaz (P) i woda (W), zachodzi.
 - NaNO₃ + KCl: wszystkie produkty rozpuszczalne, brak W, P, S, N — nie zachodzi.
 
-@model tabela-rozpuszczalnosci-v01 | Tabela rozpuszczalności soli i wodorotlenków (20 °C) | Silnik CHE · otwiera się w oknie
+@klocek tabela-rozpuszczalnosci | Tabela rozpuszczalności soli i wodorotlenków (20 °C)
 @opis Tabela: w kolumnach kationy, w wierszach aniony, w komórkach litery R (rozpuszczalny, zielone tło), T (trudno rozpuszczalny, żółte), N (praktycznie nierozpuszczalny, czerwone) i „—” (nie istnieje w wodzie lub rozkłada się). Kliknięcie komórki pokazuje wzór i nazwę związku, a dla osadów ich barwę. Wniosek: osad powstaje, gdy w roztworze spotkają się jony dające związek N lub T — tabela rozstrzyga, czy reakcja strąceniowa zajdzie.
 
-@model rownania-jonowe-v01 | Równania jonowe: wybierz reakcję i zobacz trzy zapisy | Silnik CHE · otwiera się w oknie
+@klocek rownania-jonowe | Równania jonowe: wybierz reakcję i zobacz trzy zapisy
 @opis Wybierasz reakcję (zobojętnianie, strącanie osadów, węglany, metale z kwasami); model pokazuje ten sam proces jako równanie cząsteczkowe, jonowe pełne i jonowe skrócone, a obok animację w probówce. W zapisie jonowym osad (↓), gaz (↑) i woda są zapisane cząsteczkowo, a jony widzowe występują po obu stronach i są pomijane w zapisie skróconym. Wniosek: zapis skrócony pokazuje, co faktycznie reaguje.
 
 @model acid-game | Kwas, zasada, sól czy tlenek? Klasyfikuj substancje | Gra w silniku CHE · otwiera się w oknie
