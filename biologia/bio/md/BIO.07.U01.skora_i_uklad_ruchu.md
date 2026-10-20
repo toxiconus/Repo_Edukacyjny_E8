@@ -151,6 +151,10 @@ Pot to woda. Gdy organizmowi brakuje wody, ogranicza pocenie, żeby nie tracić 
 @viz szkielet-czlowieka | Szkielet człowieka | kliknij, znajdź, podpisz
 @opis Sylwetka szkieletu: czaszka u góry, kręgosłup i klatka piersiowa z żebrami i mostkiem, obojczyki i łopatki, kości ramienne i przedramion, miednica oraz kości udowe, piszczele i strzałki. Wniosek: szkielet osiowy (czaszka, kręgosłup, klatka) chroni narządy, a szkielet kończyn umożliwia ruch.
 
+**Zadanie (podpisz):** podaj numery kości, które chronią serce i płuca. **Odpowiedź:** kręgosłup (2) oraz żebra i mostek (3) — tworzą klatkę piersiową.
+**Zadanie (wnioskuj):** dlaczego kość udowa (8) jest grubsza niż kości przedramienia? **Odpowiedź:** dźwiga ciężar całego ciała i działa dużymi siłami przy chodzeniu i bieganiu.
+
+
 **Układ ruchu** = część **bierna** (kości i ich połączenia) + część **czynna** (mięśnie szkieletowe ze ścięgnami).
 
 **Funkcje:** utrzymanie kształtu i postawy ciała, ruch, **ochrona narządów** (czaszka — mózg, klatka piersiowa — serce i płuca, kręgosłup — rdzeń kręgowy), **magazyn soli mineralnych** (wapń, fosfor), **wytwarzanie krwinek** (czerwony szpik), magazyn tłuszczu (żółty szpik).

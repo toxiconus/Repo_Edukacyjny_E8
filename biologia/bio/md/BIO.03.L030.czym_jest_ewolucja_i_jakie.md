@@ -124,6 +124,10 @@ Nie znamy wszystkich form, które kiedykolwiek żyły. Skamieniałość powstaje
 @viz drzewo-filogenetyczne | Drzewo filogenetyczne kręgowców | kliknij, znajdź, podpisz
 @opis Drzewo od lewej do prawej: wspólny przodek kręgowców, odgałęzienie ryb, potem płazów, a wyżej węzeł owodniowców, z którego rozchodzą się gady, ptaki i ssaki. Wniosek: im bliższy wspólny przodek (węzeł), tym bliższe pokrewieństwo, więc ptaki są bliżej gadów niż płazów.
 
+**Zadanie (odczytaj):** który organizm jest bliżej spokrewniony z ptakami: płaz czy gad? **Odpowiedź:** gad — ptaki i gady mają wspólny węzeł (owodniowce), a płazy odgałęziły się wcześniej.
+**Zadanie (wnioskuj):** co oznacza węzeł na drzewie? **Odpowiedź:** wspólnego przodka wszystkich gałęzi, które z niego wyrastają.
+
+
 Ten podział jest jednym z najczęściej mylonych w dziale ewolucji.
 
 - **Homologia** — podobieństwo wynikające ze wspólnego pochodzenia. Przykład: kończyny przednie kręgowców.

@@ -193,6 +193,10 @@ A mimo to DNA nadal musi zmieścić się w jądrze o średnicy kilku mikrometró
 @viz kariotyp | Kariotyp człowieka | kliknij, znajdź, podpisz
 @opis Dwa rzędy par chromosomów autosomalnych o malejącej wielkości, obok ramka z parą chromosomów płci (X większy, Y mniejszy) oraz trzy chromosomy 21 jako przykład trisomii. Wniosek: człowiek ma 46 chromosomów (22 pary autosomów i 1 parę chromosomów płci), a zmiana ich liczby powoduje choroby, np. zespół Downa.
 
+**Zadanie (policz):** ile chromosomów ma człowiek w kariotypie i ile to par? **Odpowiedź:** 46 chromosomów, czyli 23 pary (22 pary autosomów i para chromosomów płci).
+**Zadanie (rozpoznaj):** co na kariotypie wskazuje na zespół Downa? **Odpowiedź:** trzy chromosomy 21 zamiast dwóch (trisomia 21).
+
+
 **Chromosom to uporządkowana struktura zbudowana z DNA i białek, głównie histonów.**
 
 W szkolnym opisie:

@@ -195,6 +195,10 @@ Punktacja: po 1 pkt za wiersz (0,5 pkt za każdą odpowiedź TAK/NIE) — razem 
 @viz mozg-budowa | Mózg — budowa | kliknij, znajdź, podpisz
 @opis Przekrój boczny mózgu: duża pofałdowana półkula (kresomózgowie), pod nią wzgórze i podwzgórze, z tyłu móżdżek, a w dół pień mózgu przechodzący w rdzeń kręgowy. Wniosek: kresomózgowie odpowiada za myślenie, móżdżek za koordynację ruchów, a pień mózgu za podstawowe czynności życiowe.
 
+**Zadanie (podpisz):** który element odpowiada za koordynację ruchów, a który za czynności życiowe? **Odpowiedź:** móżdżek (5) — koordynacja ruchów; pień mózgu (6) — oddychanie i praca serca.
+**Zadanie (wskaż):** gdzie w mózgu leży kora, a gdzie wzgórze? **Odpowiedź:** kora to zewnętrzna warstwa kresomózgowia (1); wzgórze leży głębiej (4).
+
+
 | Część | Najważniejsze funkcje |
 |---|---|
 | **mózg (kresomózgowie)** — dwie półkule pokryte pofałdowaną **korą** | świadomość, myślenie, pamięć, uczenie się, mowa, planowanie, **ruchy dowolne**, odbieranie i rozpoznawanie wrażeń zmysłowych, emocje |
