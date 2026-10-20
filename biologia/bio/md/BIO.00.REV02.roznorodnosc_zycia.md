@@ -355,6 +355,11 @@ Liść ma **blaszkę** (fotosynteza, wymiana gazowa) i zwykle **ogonek**. W blas
 @viz przeksztalcenia-organow | Przekształcone organy roślin | kliknij, znajdź, podpisz
 @opis Siedem przykładów w dwóch rzędach: marchew (korzeń spichrzowy), ziemniak z oczkami (bulwa pędowa), kłącze z liśćmi nadziemnymi, cebula (skrócony pęd z łuskami), rozłogi truskawki z młodymi roślinkami, wąsy czepne grochu i ciernie berberysu. Wniosek: ten sam organ (korzeń, łodyga, liść) może pełnić nową funkcję — spichrzową, rozmnażania lub podpierania i obrony.
 
+**Zadanie (przyporządkuj):** który organ jest przekształcony w każdym przypadku: marchew (korzeń spichrzowy), ziemniak (bulwa pędowa), kłącze, rozłogi truskawki? **Odpowiedź:** marchew — korzeń; ziemniak, kłącze i rozłogi — pęd (łodyga).
+
+**Zadanie (wnioskuj):** dlaczego ziemniak jest pędem, a nie korzeniem? **Odpowiedź:** na bulwie widać oczka (pąki), a pąki wyrastają z węzłów pędu, nie z korzeni. Cebula i ciernie berberysu: do potwierdzenia w ZPE przed użyciem w testach.
+
+
 Roślina ma trzy organy wegetatywne: **korzeń**, **łodygę** (pęd) i **liść**. Wiele gatunków zmienia ich budowę, żeby spełniały nową funkcję — to **przekształcenie (modyfikacja) organu**. Kluczowe pytanie: **z jakiego organu powstało?**
 
 | Przekształcenie | Z czego powstało | Funkcja | Przykład |
@@ -500,6 +505,11 @@ CW1. B, C, D, A, E (nasiono i owoc rozwijają się równolegle po zapłodnieniu)
 
 @viz drzewa-krzewy | Drzewo, krzew, pnącze — pokrój | kliknij, znajdź, podpisz
 @opis Cztery sylwetki: drzewo liściaste (jeden pień i szeroka korona), drzewo iglaste (stożkowata korona), krzew (wiele pędów od ziemi) i pnącze (cienki pęd oplatający podporę). Wniosek: drzewo ma jeden pień, krzew wiele pędów od podstawy, a pnącze potrzebuje podpory.
+
+**Zadanie (porównaj):** podaj dwie cechy, po których odróżnisz drzewo od krzewu. **Odpowiedź:** drzewo ma jeden wyraźny pień i jest wyższe; krzew ma kilka pni wyrastających z podstawy i jest niższy.
+
+**Zadanie (rozpoznaj):** czym różni się pnącze od krzewu? **Odpowiedź:** pnącze nie utrzymuje się samo — rośnie w górę, opierając się o podpory, a krzew stoi samodzielnie na kilku pniach.
+
 
 Cztery drzewa liściaste często występujące przy wodzie i w wilgotnych lasach:
 
@@ -654,6 +664,11 @@ T6. a) Nabłonek walcowaty (jednowarstwowy); wchłanianie substancji odżywczych
 @viz polip-meduza | Polip i meduza | kliknij część, znajdź, podpisz
 @opis Po lewej polip: walcowate ciało przytwierdzone stopą, u góry otwór gębowy otoczony czułkami. Po prawej meduza: galaretowaty parasol, z dołu ramiona gębowe i czułki. Wniosek: to ten sam plan budowy (dwie warstwy ciała, jeden otwór gębowy), tylko w formie osiadłej i pływającej.
 
+**Zadanie (przyporządkuj):** które elementy należą do meduzy, a które do polipa? Podaj po dwa. **Odpowiedź:** meduza — parasol (dzwon), ramiona gębowe, czułki meduzy; polip — stopa przytwierdzona do podłoża, czułki z parzydełkami wokół otworu gębowego.
+
+**Zadanie (wnioskuj):** które z tych dwóch form jest bardziej przystosowana do pływania, a która do życia osiadłego? **Odpowiedź:** meduza (swobodne pływanie), polip (przytwierdzony stopą do podłoża).
+
+
 **Gąbki (Porifera)** — wodne zwierzęta osiadłe, bez prawdziwych tkanek i bez układu nerwowego. Woda wpływa do ciała przez pory, a wypływa przez większy otwór (osculum). Nie mają ust ani odbytu.
 
 **Parzydełkowce (Cnidaria)** — wodne zwierzęta z tkankami (nabłonkowa, mięśniowa, nerwowa), z jednym otworem pełniącym rolę ust i odbytu, otoczonym parzydełkami (knidocytami). Mają symetrię promienistą i występują jako polip (np. hydra, ukwiał) lub meduza.
@@ -772,6 +787,11 @@ Inne pasożytnicze nicienie: glista ludzka (niemyte warzywa i owoce), włosień 
 
 @viz bezkregowce-sylwetki | Sylwetki bezkręgowców — rozpoznaj grupę | kliknij, znajdź, podpisz
 @opis Siedem uproszczonych sylwetek: gąbka (bezkształtna z porami), parzydełkowiec (walec z czułkami), płaziniec (płaski listek), nicień (cienka nitka), pierścienica (ciało z pierścieniami), ślimak (muszla i noga), stawonóg (pancerz i odnóża). Wniosek: grupę rozpoznaje się po kształcie ciała i obecności segmentów, muszli lub odnóży.
+
+**Zadanie (przyporządkuj):** podaj grupę bezkręgowca dla każdej z cech: ciało spłaszczone; ciało obłe; ciało segmentowane; miękkie ciało z nogą; stawowane odnóża. **Odpowiedź:** płazińce; nicienie; pierścienice; mięczaki; stawonogi.
+
+**Zadanie (rozpoznaj):** które z sylwetek ma symetrię dwustronną, a które nie? **Odpowiedź:** gąbka nie ma symetrii; pozostałe wymienione grupy mają symetrię dwustronną (poza parzydełkowcami, które mają symetrię promienistą).
+
 
 ::: karta core | Klucz — po jednej najważniejszej cesze
 - ciało płaskie jak listek lub taśma → **płaziniec**;
@@ -1110,6 +1130,11 @@ D5. a) Roślina w ciemnej szafce (tu zmieniamy badany czynnik — odbieramy świ
 
 @viz preparat-mikroskopowy | Preparat ze skórki cebuli — elementy | poznaj, znajdź, podpisz
 @opis Przekrój boczny preparatu: na dole szkiełko podstawowe, na nim kropla wody ze skórką cebuli, nad nią cienkie szkiełko nakrywkowe; obok zakraplacz. Wniosek: obiekt leży w kropli wody między dwoma szkiełkami, a nakrywkowe przykłada się pod kątem, by uniknąć pęcherzyków powietrza.
+
+**Zadanie (ułóż kolejność):** ułóż w kolejności przygotowania preparatu: szkiełko nakrywkowe, skórka liścia cebuli, kropla wody, szkiełko podstawowe. **Odpowiedź:** szkiełko podstawowe → kropla wody (zakraplacz) → skórka liścia cebuli → szkiełko nakrywkowe.
+
+**Zadanie (wnioskuj):** po co dodajemy kroplę wody? **Odpowiedź:** woda chroni komórki przed wysychaniem i pozwala lepiej rozłożyć preparat pod szkiełkiem nakrywkowym.
+
 
 **Preparat ze skórki cebuli — kolejność:** 1) przygotuj zestaw (szkiełko podstawowe i nakrywkowe, zakraplacz, woda, igła preparacyjna); 2) nanieś kroplę wody na szkiełko podstawowe; 3) umieść w niej fragment skórki cebuli; 4) przyłóż szkiełko nakrywkowe, opuszczając je pod kątem (bez pęcherzyków powietrza); 5) umieść preparat na stoliku mikroskopu; 6) obserwuj, zaczynając od najmniejszego powiększenia.
 

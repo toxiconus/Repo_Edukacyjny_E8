@@ -122,6 +122,7 @@ Jak skopiować DNA wiernie — tak, by błędy były jak najrzadsze?
 @opis Schemat widełek: z lewej podwójna helisa, w miejscu rozplatania helikaza, od niej dwie nowe nici na matrycach. Nić wiodąca (pomarańczowa) rośnie ciągle w kierunku widełek, nić opóźniona powstaje z krótkich fragmentów Okazaki, każdy zaczyna się od startera RNA. Wniosek: każda nowa cząsteczka ma jedną nić starą i jedną nową (replikacja semikonserwatywna).
 
 **Zadanie (podpisz):** wskaż na schemacie helikazę, nić wiodącą, nić opóźnioną i starter RNA. **Odpowiedź:** helikaza rozplata helisę (2), nić wiodąca rośnie ciągle (4), nić opóźniona powstaje z fragmentów Okazaki (6, 7), starter RNA zaczyna każdy fragment (8).
+
 **Zadanie (wnioskuj):** dlaczego nić opóźniona powstaje z krótkich fragmentów? **Odpowiedź:** polimeraza DNA syntetyzuje nić tylko w kierunku 5′→3′, a na nici opóźnionej ten kierunek jest przeciwny do ruchu widełek, więc kopia powstaje z krótkich odcinków.
 
 

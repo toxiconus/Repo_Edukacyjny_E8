@@ -324,6 +324,7 @@ Limfa nie krąży w osobnym, zamkniętym obiegu jak krew. Naczynia limfatyczne z
 @opis Wykres poziomu przeciwciał w czasie: niebieska krzywa (pierwszy kontakt) rośnie z opóźnieniem do niskiego szczytu, czerwona (drugi kontakt) rośnie szybko i znacznie wyżej. Wniosek: pamięć immunologiczna daje szybszą i silniejszą odpowiedź, co wykorzystują szczepionki.
 
 **Zadanie (odczytaj):** po ilu dniach poziom przeciwciał po pierwszym kontakcie zaczyna wyraźnie rosnąć? **Odpowiedź:** po ok. 7 dniach (krzywa niebieska).
+
 **Zadanie (porównaj):** który kontakt daje wyższy szczyt i szybszą reakcję? **Odpowiedź:** drugi kontakt (czerwona krzywa) — pamięć immunologiczna.
 
 

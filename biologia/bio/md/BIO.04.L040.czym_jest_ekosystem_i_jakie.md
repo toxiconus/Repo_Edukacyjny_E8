@@ -136,6 +136,7 @@ Drapieżnictwo i konkurencja to relacje ważne, ale ekosystem nie jest wojną. M
 @opis Cztery pasy piramidy, najszerszy na dole: producenci (10 000 kJ), konsumenci I rzędu (1000 kJ), II rzędu (100 kJ) i III rzędu (10 kJ). Przerywany nawias pokazuje regułę 10%. Wniosek: na każdym poziomie ok. 90% energii jest tracone, więc łańcuchy pokarmowe są krótkie.
 
 **Zadanie (oblicz):** jeśli producenci mają 10 000 kJ, ile energii dociera do konsumentów III rzędu wg reguły 10%? **Odpowiedź:** 10 kJ (10 000 → 1000 → 100 → 10).
+
 **Zadanie (wnioskuj):** dlaczego łańcuchy pokarmowe są krótkie? **Odpowiedź:** na każdym poziomie ok. 90% energii jest tracone (oddychanie, ciepło), więc dla wyższych ogniw zostaje jej za mało.
 
 
@@ -181,6 +182,7 @@ W prawdziwym ekosystemie jeden gatunek zjada wiele innych, a sam bywa zjadany pr
 @opis Schemat: CO₂ z atmosfery wiązany w fotosyntezie przez producentów, przekazywany konsumentom, uwalniany w oddychaniu, a szczątki rozkładane przez destruentów; osobno paliwa kopalne, których spalanie zwiększa ilość CO₂. Wniosek: węgiel krąży między atmosferą a organizmami, a spalanie paliw kopalnych zaburza ten obieg.
 
 **Zadanie (prześledź):** którędy węgiel trafia z atmosfery do konsumentów i z powrotem? **Odpowiedź:** CO₂ (1) → fotosynteza (2) → producenci (4) → konsumenci (5); oddychanie (3) uwalnia CO₂, a destruenci (6) rozkładają szczątki.
+
 **Zadanie (wnioskuj):** dlaczego spalanie paliw kopalnych zmienia obieg węgla? **Odpowiedź:** uwalnia węgiel zmagazynowany przez miliony lat, zwiększając ilość CO₂ w obiegu, który wcześniej był zrównoważony.
 
 

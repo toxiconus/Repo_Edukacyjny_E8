@@ -105,6 +105,11 @@ Dlaczego krew jednych ludzi jest „zgodna”, a innych nie?
 @viz mapa-narzadow | Narządy człowieka — do jakiego układu należą? | kliknij, znajdź, podpisz
 @opis Sylwetka człowieka z zaznaczonymi narządami: mózg w głowie, płuca i serce w klatce piersiowej, wątroba, żołądek, trzustka, jelita, nerki i pęcherz moczowy w jamie brzusznej. Wniosek: każdy narząd należy do układu, w którym pełni swoją funkcję (np. trzustka — pokarmowy i dokrewny).
 
+**Zadanie (przyporządkuj):** wskaż narządy należące do układu pokarmowego, do wydalniczego, do nerwowego i do krążenia. **Odpowiedź:** pokarmowy — żołądek, jelito cienkie, jelito grube, wątroba, trzustka; wydalniczy — nerki, pęcherz moczowy; nerwowy — mózg; krążenia — serce.
+
+**Zadanie (wnioskuj):** dlaczego trzustka należy do dwóch układów? **Odpowiedź:** wydziela sok trawienny do jelita (układ pokarmowy) i hormony insulinę i glukagon do krwi (układ dokrewny).
+
+
 Cechy organizmu wynikają z komórek, a komórki działają według informacji zapisanej w DNA. Geny w jądrze kodują białka, które budują i regulują organizm.
 
 **Układy istotne dla genetyki:**

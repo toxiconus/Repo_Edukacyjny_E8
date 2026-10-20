@@ -54,6 +54,7 @@ ATP nie jest jedyną cząsteczką uczestniczącą w przekazywaniu energii i elek
 @opis Po lewej mitochondrium z gładką błoną zewnętrzną i pofałdowaną wewnętrzną (grzebienie) oraz macierzą; po prawej chloroplast z dwiema błonami, stosami tylakoidów (gran) i stromą. Wniosek: oba organelle mają dwie błony i własne DNA, mitochondrium zajmuje się oddychaniem, chloroplast fotosyntezą.
 
 **Zadanie (porównaj):** które części występują tylko w chloroplaście? **Odpowiedź:** tylakoidy w gran (5) i stroma (6); mitochondrium ma grzebienie (2) i macierz (3), których chloroplast nie ma.
+
 **Zadanie (wnioskuj):** dlaczego obie struktury mają dwie błony? **Odpowiedź:** pochodzą od bakterii pochłoniętych przez komórkę (endosymbioza), a zewnętrzna błona to ślad tego pochodzenia.
 
 U organizmów eukariotycznych **glikoliza** — pierwszy etap rozkładu glukozy — zachodzi w cytozolu. Dalsze główne etapy oddychania tlenowego są związane z mitochondriami: w macierzy mitochondrialnej zachodzą m.in. reakcje utleniania pirogronianu i cykl kwasu cytrynowego, a w wewnętrznej błonie mitochondrialnej działa łańcuch transportu elektronów i syntaza ATP.
