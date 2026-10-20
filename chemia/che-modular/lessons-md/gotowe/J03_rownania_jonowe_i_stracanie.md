@@ -342,7 +342,7 @@ NaCl → Na⁺ + Cl⁻ opisuje otrzymywanie roztworu zawierającego te jony. Ag�
 | Osad | Wzór substancji z oznaczeniem ↓ | AgCl↓, BaSO₄↓, Cu(OH)₂↓ |
 | Gaz | Wzór substancji z oznaczeniem ↑ | CO₂↑, H₂↑ |
 
-@model ion-vs-diss | Jonizacja vs dysocjacja — różnica między rozpadem soli a powstawaniem jonów z cząsteczki kwasu | CHE.IONIC
+@klocek dysocjacja-vs-jonizacja | Jonizacja vs dysocjacja — różnica między rozpadem soli a powstawaniem jonów z cząsteczki kwasu
 @opis Porównanie dwóch procesów: w krysztale NaCl jony Na⁺ i Cl⁻ są już obecne i po rozpuszczeniu zostają oddzielone przez cząsteczki wody; w cząsteczce HCl jony powstają dopiero w reakcji z wodą (H₃O⁺ + Cl⁻). Wniosek: sól jest dysocjowana, a kwas ulega jonizacji.
 
 Mocny elektrolit przedstawiamy w szkolnym modelu rozcieńczonego roztworu jako całkowicie lub niemal całkowicie zdysocjowany. Przykłady to HCl, HNO₃, NaOH, KOH, rozpuszczony Ba(OH)₂ oraz typowe rozpuszczalne sole.

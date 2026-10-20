@@ -63,10 +63,10 @@ Wodorki niemetali zachowują się w wodzie różnie:
 **Kwasy: HCl i H₂S. Zasada: NH₃. Obojętne: H₂O i CH₄.** Amoniak to jedyny ważny wodorek niemetalu, który w wodzie daje odczyn zasadowy — zapamiętaj go jako wyjątek.
 :::
 
-@model n05-wodorki-v01 | Mapa wodorków: kliknij pierwiastek | Silnik CHE · otwiera się w oknie
+@klocek n05-wodorki-v01 | Mapa wodorków: kliknij pierwiastek
 @opis Fragment układu okresowego (grupy 1, 2, 13–17 oraz kolumna d), w którym każdy pierwiastek jest przyciskiem z wzorem wodorku; kolor oznacza typ wiązania (jonowy, pośredni, kowalencyjny, metaliczny). Kliknięcie pokazuje nazwę, stopień utlenienia wodoru, elektroujemność, stan, temperaturę wrzenia i zachowanie w wodzie: HCl i HBr są mocnymi kwasami, H₂S słabym, NH₃ ma odczyn zasadowy, CH₄ nie reaguje z wodą. Kolumna d (wodorki metaliczne) jest poza zakresem LKO 2026/27. Wniosek: typ wodorku zależy od położenia pierwiastka, a nie każdy wodorek niemetalu jest kwasem.
 
-@model n05-trendy-v01 | Temperatury wrzenia wodorków grup 14–17 | wiązania wodorowe: H₂O, HF i NH₃ wrą „za wysoko”
+@klocek n05-trendy-v01 | Temperatury wrzenia wodorków grup 14–17
 @opis Wykres temperatur wrzenia wodorków grup 14–17 w okresach 2–5 (pod ciśnieniem 1013 hPa), z możliwością włączania grup. W każdej grupie temperatura wrzenia rośnie z masą cząsteczki, z wyjątkiem NH₃, H₂O i HF, które leżą wyraźnie wyżej. Wniosek: wiązania wodorowe między cząsteczkami podnoszą temperaturę wrzenia.
 
 @klocek wzor-2d {smiles="O" grupa="none"} | H₂O
@@ -181,7 +181,7 @@ Kwas reaguje z zasadą, tworząc sól i wodę. Jest to **szczególny przypadek w
 **Kolejność sprawdzania: najpierw liczba substratów i produktów, potem wolne pierwiastki.** Jeden produkt z dwóch substratów to synteza. Dwa produkty z jednego substratu to analiza. Wolny pierwiastek po obu stronach to wymiana pojedyncza.
 :::
 
-@model energy-profile | Profil energii: reakcja egzo- i endotermiczna | Silnik CHE · otwiera się w oknie
+@klocek profil-energii {typ="egzo"} | Profil energii: reakcja egzo- i endotermiczna
 @opis Wykres profilu energii reakcji: oś pionowa to energia, a oś pozioma postęp reakcji. Krzywa zaczyna się na poziomie substratów i przechodzi przez szczyt energii aktywacji Eₐ do produktów. Gdy produkty leżą niżej niż substraty, widać różnicę ΔH < 0 (reakcja egzotermiczna, np. spalanie wodoru); gdy wyżej, ΔH > 0 (endotermiczna). Wniosek: egzo oddaje energię do otoczenia, endo ją pobiera.
 
 ### 7. Algorytm rozpoznawania typu z równania

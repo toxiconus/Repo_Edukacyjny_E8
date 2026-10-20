@@ -155,7 +155,7 @@ $$ q = n · e
 **Jon** to atom (lub grupa atomów), który oddał lub przyjął elektrony: Na → Na⁺ + e⁻, Cl + e⁻ → Cl⁻. Ten sam mechanizm co przy elektryzowaniu — tylko na poziomie pojedynczych atomów. Atomy pierwiastków o dużej **elektroujemności** (Cl, O, F) chętnie przyjmują elektrony.
 :::
 
-@model kw-dysocjacja-v01 | Chemia: jony w roztworze — przeniesienie protonu H⁺ | Lekcja Kwasy · ten sam silnik
+@klocek przeniesienie-protonu | Chemia: jony w roztworze — przeniesienie protonu H⁺
 @opis Schemat cząsteczki kwasu w wodzie: po kliknięciu widać, jak jon H⁺ (proton) przeskakuje z cząsteczki kwasu na cząsteczkę wody, tworząc jon H₃O⁺ i jon reszty kwasowej. Wniosek: kwas oddaje proton, a woda go przyjmuje; to ten sam ruch ładunku dodatniego, który w elektrostatyce nie jest przenoszeniem elektronów.
 
 ## 2 | Elektryzowanie przez tarcie {#s2}
@@ -225,7 +225,7 @@ Materiał stojący **wcześniej** oddaje elektrony materiałowi stojącemu **dal
 @model fiz-przewodniki-v01 | Przewodnik czy izolator? Rozpływ ładunku w pręcie | ρ z silnika · czas rozpływu ładunku
 @opis Pręt przewodnika i pręt izolatora z naładowanym końcem: na przewodniku ładunek szybko rozpływa się po całej długości, na izolatorze pozostaje w miejscu dotyku. Wykres pokazuje czas rozpływu. Wniosek: przewodnik szybko przewodzi ładunek, izolator go nie przewodzi.
 
-@model gfx-scene-conductivity | Chemia: przewodzenie prądu przez roztwory (elektrolity) | Lekcja Kwasy · tester przewodnictwa
+@klocek tester-przewodnictwa | Chemia: przewodzenie prądu przez roztwory (elektrolity)
 @opis Model z lekcji o kwasach: tester przewodnictwa (bateria, żarówka, dwie elektrody) zanurzany w różnych roztworach — żarówka świeci w roztworach elektrolitów, a w wodzie destylowanej czy roztworze cukru nie. Wniosek: w roztworach ładunek przenoszą jony, więc przewodzą tylko roztwory, w których są jony.
 
 ::: karta understand | W skrócie — przewodnik czy izolator?

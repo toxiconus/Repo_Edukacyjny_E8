@@ -49,7 +49,12 @@
     "model_widok.js": "mostek CHE.VIEW.define → klocek (dla modeli przeniesionych z rozszerzenia.js)",
     "z_f04_nuklid.js": "f04-nuklid-v01: trening odczytu zapisu nuklidu",
     "z_f02_czastki.js": "f02-czastki-v01: substancja czysta czy mieszanina (model cząsteczkowy)",
-    "z_f02_magnes_fes.js": "f02-magnes-fes-v01: magnes, mieszanina Fe+S czy związek FeS"
+    "z_f02_magnes_fes.js": "f02-magnes-fes-v01: magnes, mieszanina Fe+S czy związek FeS",
+    "z_n05_wodorki.js": "n05-wodorki-v01 (mapa wodorków) i n05-trendy-v01 (temperatury wrzenia)",
+    "ui_klocki.js": "wspólne drobiazgi UI klocków HTML (przyciski, suwak, animacja w widoku)",
+    "profil_energii.js": "profil energii reakcji (egzo/endo, katalizator)",
+    "gra_klasyfikacja.js": "gra: kwas, zasada, sól czy tlenek",
+    "jony_w_wodzie.js": "dysocjacja vs jonizacja, przeniesienie protonu, tester przewodnictwa"
   },
   "lekcje": {
     "P01": [
@@ -228,6 +233,7 @@
     "J03": [
       "klocki.js",
       "pomocnicze.js",
+      "ui_klocki.js",
       "naczynia.js",
       "probowki_odczyn.js",
       "probowki_wybor.js",
@@ -235,11 +241,13 @@
       "karta_bhp.js",
       "tabela_rozpuszczalnosci.js",
       "rownania_jonowe.js",
-      "osady_dwie_sole.js"
+      "osady_dwie_sole.js",
+      "jony_w_wodzie.js"
     ],
     "C1c": [
       "klocki.js",
       "pomocnicze.js",
+      "ui_klocki.js",
       "naczynia.js",
       "probowki_odczyn.js",
       "probowki_wybor.js",
@@ -256,7 +264,11 @@
       "schemat_przemian.js",
       "tabela_rozpuszczalnosci.js",
       "rownania_jonowe.js",
-      "izotopy.js"
+      "izotopy.js",
+      "model_widok.js",
+      "z_n05_wodorki.js",
+      "gra_klasyfikacja.js",
+      "profil_energii.js"
     ],
     "C2m": [
       "klocki.js",
@@ -375,6 +387,12 @@
       "krzywe_rozpuszczalnosci.js",
       "regula_krzyzowa.js",
       "karta_bhp.js"
+    ],
+    "FIZ-01": [
+      "klocki.js",
+      "pomocnicze.js",
+      "ui_klocki.js",
+      "jony_w_wodzie.js"
     ]
   },
   "css": [
