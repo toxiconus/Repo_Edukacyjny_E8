@@ -1,5 +1,8 @@
 # BIO — przekazanie (stan pracy)
 
+## Stan 2026-10-21
+Szczegóły i lista otwartych zadań: sekcja „PRZEKAZANIE DLA NOWEGO WĄTKU (2026-10-21)” w `PRZEKAZANIE.md` w korzeniu repo. Gałąź `main`. Nowe: B2j (arkusz próbny rejon), przerysowane grafiki w `szablon/bio-rysunki.js`, mapa `plany/ZGODNOSC_ETAP_II.md`.
+
 ## Stan 2026-10-07
 - Gałąź: `claude/che-lekcje` (zbiorcza; `claude/bio-lekcje` scalona 2026-10-08). Kanon treści: `biologia/BIO.all.v01.00.md` (v5.2), pocięty na `biologia/md/<KOD>_*.md` (źródła robocze, nie format szablonu).
 - Nowy tor lekcji (jak CHE): `biologia/bio/md/<KOD>_*.md` w formacie `chemia/che/SZABLON_LEKCJI.md` + dodatki BIO (`@viz`, `::: mity`, `::: drzewo`).

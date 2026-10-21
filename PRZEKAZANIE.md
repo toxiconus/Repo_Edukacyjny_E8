@@ -1,4 +1,28 @@
-# PRZEKAZANIE — całe repo · 2026-10-11 (stan 06:30)
+# PRZEKAZANIE — całe repo · 2026-10-21 (stan po sesji z 20.10, gałąź `main`)
+
+## ⚑ PRZEKAZANIE DLA NOWEGO WĄTKU (2026-10-21) — AKTUALNE, czytaj najpierw
+- **Gałąź:** `main` (ostatni commit: „Ujednolicenie wartości … + decyzje w WERYFIKACJA”). Przed pracą: `git pull --rebase`. Push: `git push origin HEAD:main` (komunikat „repository moved” jest nieszkodliwy). Trailery commitów: `Co-Authored-By: Claude …` + `Claude-Session: …`.
+- **Terminy LKO biologia 2026/27:** etap szkolny **21.10.2026**, rejonowy **24.11.2026**. Zakres: `olimpiada/zrodla/LKO_2026_27_Czesc_II_zakres_wymagan.txt` §9.2.
+- **Build biologii:** `python3 narzedzia/zbuduj_wszystkie.py bio` z korzenia repo (>120 s — uruchamiać w tle z logiem), potem `node biologia/bio/narzedzia/sprawdz_bio.js` (0 FAIL; „OK 55 lekcji”, build podaje 58 — sprawdzacz liczy inaczej). `python3 narzedzia/odswiez_wszystko.py --szybko` odświeża spisy/mapy. Bez `sleep` w poleceniach (zablokowane) — czytać log.
+- **Zrobione 2026-10-20 (biologia):**
+  - Haiku: wszystkie zadania H-* zamknięte (mapa ZPE: `biologia/plany/MAPA_ZPE.md`, `chemia/plany/MAPA_ZPE.md`; weryfikacja: `WERYFIKACJA.md`; 13 rysunków `lab()` + zadania do nich).
+  - **Grafiki przerysowane po uwadze „słabe grafiki”** (`biologia/bio/szablon/bio-rysunki.js`): szkielet, mózg, ząb (+ części 8 szyjka, 9 korzeń), kariotyp, replikacja DNA, drzewo filogenetyczne, układ limfatyczny, obieg węgla, piramida energii; nowy `staw-czaszka`. Numeracja części zachowana (zadania w lekcjach pasują). Nieruszane (wyglądają dobrze): układ oddechowy, organelle, rodowód, odpowiedź immunologiczna. Do dopracowania: kształt kości czaszki w `staw-czaszka`, marker 2 (kręgosłup) na szkielecie leży na styku mostka i obojczyka.
+  - **B2j** — arkusz próbny etapu rejonowego (40 pkt, 16 zadań, klucz): `biologia/bio/md/BIO.02.B2j.arkusz_probny_etap_rejonowy.md`. Zadania autorskie, dane w zad. 6 przykładowe; porównać poziom z arkuszami rejonowymi 22/23 i 23/24.
+  - **S-D:** mapa zgodności `biologia/plany/ZGODNOSC_ETAP_II.md`; B2d §9.5–9.8 (węch, dotyk, akomodacja, wady wzroku, higiena zmysłów).
+  - **S-F:** B2h i B2i nie są potrzebne (pokryte przez BIO.07.U04); zapisano w `PLAN_BRAKUJACE_LEKCJE.md`.
+  - **Rozbieżności z ZPE rozstrzygnięte** (sekcja „S-decyzje” w `WERYFIKACJA.md`): pęcherzyki płucne, prędkość przewodzenia, warstwy skóry, implantacja, „80% naprawy DNA”.
+- **Otwarte (kolejność):**
+  1. **S-A — REV02: tury 2–4 odpowiedzi Perplexity** (w repo jest tylko tura 1: `biologia/plany/audyty/W1_perplexity_REV02_tura1_2026-10-20.md`). Wymaga odpowiedzi od użytkownika; wprowadzać WSZYSTKIE uwagi, odrzucone z powodem do `WERYFIKACJA.md`. Otwarte pozycje audytu REV02: P4, T7, D4, rzeżucha, D1–D3, CW1, T3, R1, D5, bakteriofag T4, protisty/gąbki/cykle n/2n, sprawdzenie animacji.
+  2. **S-E — gałęzie zdalne** z niepowiązaną historią: czeka na „scal” użytkownika.
+  3. Porównanie arkusza B2j z archiwalnymi arkuszami rejonowymi; ewentualne poprawki trudności.
+  4. Hierarchia „skóra: 2 czy 3 warstwy”, trzustka 95/5%, potencjały neuronu — zostawione jako wiedza podręcznikowa (opis w WERYFIKACJA.md).
+  5. Wiersz „tlenki” w `chemia/plany/MAPA_ZPE.md` bez pliku lekcji (N02 tlenki jest w `chemia/che-modular`) — powiązać.
+  6. Dług: 9 starych wizualizacji bez `@opis` (`narzedzia/opis_dlug.json`).
+- **Zasady użytkownika (skrót; pełne w pamięci):** odpowiedzi po polsku, zwięźle; „dalej” = rób bez pytania o następny krok; grafiki tylko gdy potrzebne, jedna najlepsza wersja, `@opis` przy każdej; spójny styl jak od jednego autora; animacje autostart, doświadczenia na klik; ZIP przekazania pełny (md + html + małe silniki + przekazanie + olimpiada z datami) — wysyłać na prośbę; Claude może sam commitować i pushować; duble usuwać po porównaniu; Haiku i inne modele mapują lekcje na ZPE.
+- **Paczka HTML biologii:** `biologia/html/` (58 lekcji + `index.html`), zip wysłano użytkownikowi 2026-10-20.
+- **Pełny ZIP przekazania:** `python3 narzedzia/zipuj_przekazanie.py /tmp/przekazanie_e8.zip` (wysłany użytkownikowi 2026-10-21).
+
+---
 
 Jeden punkt startu dla każdej sesji. Szczegóły są w przekazaniach obszarów (niżej) — czytaj tylko ten, którego dotyczy zadanie.
 
