@@ -9,7 +9,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = sys.argv[1] if len(sys.argv) > 1 else '/tmp/przekazanie_e8.zip'
 
 DOKUMENTY = ['eksport/PROMPTY_INDEKS.md', 'eksport/W1_PROMPT.md', 'eksport/W2_ZAKRES_PROMPT.md', 'eksport/ULEPSZ_PROMPT.md', 'eksport/INSPIRACJE_PROMPT.md', 'eksport/GOTOWE_PROMPT.md', 'eksport/GRAFIKI_PROMPT.md', 'eksport/OLIMPIADA_DODATEK.md', 'eksport/JAK_WYSYLAC.md', 'CLAUDE.md', 'README.md', 'PRZEKAZANIE.md', 'MAPA.md', 'WERYFIKACJA.md', 'SPIS_WSZYSTKICH.md',
-             'MAPA_POLACZEN.md', 'wizualizacje-projekty/PRZEKAZANIE.md', 'chemia/che-modular/PRZEKAZANIE.md', 'chemia/che-modular/PROGRESS.md', 'chemia/che-modular/SYSTEM.md',
+             'MAPA_POLACZEN.md', 'ZADANIA_HAIKU_SONNET.md', 'SPIS_LEKCJI.md', 'SPIS_WSZYSTKICH.md', 'wizualizacje-projekty/PRZEKAZANIE.md', 'chemia/che-modular/PRZEKAZANIE.md', 'chemia/che-modular/PROGRESS.md', 'chemia/che-modular/SYSTEM.md',
              'chemia/che-modular/STANDARD_LEKCJI.md', 'chemia/che-modular/KATALOG_MODELI.md',
              'biologia/bio/PRZEKAZANIE.md', 'biologia/bio/BIO_KATALOG.md', 'olimpiada/PRZEKAZANIE.md']
 KATALOGI = [
