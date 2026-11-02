@@ -19,3 +19,6 @@
 | 15 | Błędne odpowiedzi z wyjaśnieniem (Cu + HCl) | WPROWADZONE w quizie §9 (pole `!`); też w reakcje-kwasu-v03 | — |
 | 16 | Ka/pKa, bufory, miareczkowanie, kwasy utleniające → ponad program | WPROWADZONE | auto z plakietek/ramek; §9.1.2 przemianowane na „ponad program” |
 | 17 | Wulkan z płynem do naczyń jako osobne doświadczenie | ODRZUCONE jako osobne: ten sam gaz co w Exp. 12 — wariant opisany w jego „Wniosku” (unikamy dubla) | Exp. 12 |
+
+## Dopisek (klocki)
+N04 dostało 17 działających w pliku klocków z istniejącej bazy (manifest `lekcje.N04`): tester-przewodnictwa, przeniesienie-protonu, dysocjacja-vs-jonizacja, probowki-odczyn (§7 i Exp. 4, 5, 11–14), probowki-wybor (metale-HCl, węglan+kwas), zbieranie-gazu (Exp. 2), rownania-jonowe, gra-klasyfikacja, karta-bhp, wzor-2d. Stare `@model`/`@zlewka` zostają (działają w aplikacji). Nie przeniesione na klocki: pH-skala/miareczkowanie, bufor, kwaśne deszcze, rozcieńczanie, kw-reszty, kw-wlasciwosci — do zrobienia jako nowe klocki.

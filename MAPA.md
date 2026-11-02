@@ -536,7 +536,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/wizualizacje_r4  (1 pl., 35 KB)
 - `Wizualizacje_do_lekcji_R4.html` 35 KB
 
-## chemia/html  (128 pl., 15.3 MB)
+## chemia/html  (128 pl., 15.5 MB)
 - (zwinięte; `ls chemia/html`) — duże:
 - ⚠`C1c_konfiguracje_elektronowe.html` 253 KB
 - ⚠`C2m_mol_masa_molowa.html` 109 KB
@@ -595,9 +595,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE.07.K10.regula_le_chateliera.md` 14 KB
 - `CHE.07.K11.rownowaga_ilosciowa.md` 18 KB
 
-## chemia/lekcje_md/N  (3 pl., 370 KB)
+## chemia/lekcje_md/N  (3 pl., 375 KB)
 - ⚠`CHE.02.N03.wodorotlenki.md` 134 KB
-- ⚠`CHE.02.N04.kwasy.md` 147 KB
+- ⚠`CHE.02.N04.kwasy.md` 153 KB
 - ⚠`CHE.02.N05.sole.md` 89 KB
 
 ## chemia/lekcje_md/O  (9 pl., 121 KB)
@@ -668,7 +668,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`F09_materialy_robocze_v1.md` 107 KB
 - ⚠`F12_materialy_robocze_v1.md` 127 KB
 
-## chemia/plany/audyty  (105 pl., 1.7 MB)
+## chemia/plany/audyty  (106 pl., 1.7 MB)
 - (zwinięte; `ls chemia/plany/audyty`) — duże:
 - ⚠`GOTOWE_SONNET_FIZ-01_2026-10-12.md` 116 KB
 - ⚠`GOTOWE_ZAI_J03_2026-10-12.md` 92 KB
@@ -1166,7 +1166,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PRZEKAZANIE.md` 3 KB
 - ⚠`wzorcownia.html` 59 KB
 
-## wizualizacje-projekty/baza-mala  (5 pl., 159 KB)
+## wizualizacje-projekty/baza-mala  (5 pl., 160 KB)
 - `BRAKI_WIZUALIZACJI.md` 16 KB
 - `KATALOG_KLOCKOW.md` 33 KB
 - `README.md` 3 KB

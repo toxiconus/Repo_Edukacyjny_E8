@@ -363,7 +363,22 @@
     ],
     "N04": [
       "klocki.js",
-      "karta_bhp.js"
+      "pomocnicze.js",
+      "ui_klocki.js",
+      "naczynia.js",
+      "probowki_odczyn.js",
+      "probowki_wybor.js",
+      "zbieranie_gazu.js",
+      "jony_w_wodzie.js",
+      "tabela_rozpuszczalnosci.js",
+      "rownania_jonowe.js",
+      "gra_klasyfikacja.js",
+      "karta_bhp.js",
+      "c2d_core.js",
+      "c2d_grupy.js",
+      "c2d_wzor.js",
+      "c2d_prosta.js",
+      "c2d_klocek.js"
     ],
     "N05": [
       "klocki.js",

@@ -810,6 +810,7 @@
    "LKO_ORG07_cukry": 1,
    "LKO_ORG08_mol_gazy": 1,
    "N01": 1,
+   "N04": 1,
    "X04": 1
   },
   "uklad-okresowy": {
@@ -825,7 +826,8 @@
    "C1c_wodorki_typy_reakcji": 1
   },
   "gra-klasyfikacja": {
-   "C1c_kwasy_zasady_sole": 1
+   "C1c_kwasy_zasady_sole": 1,
+   "N04": 1
   },
   "haworth": {
    "LKO_ORG07_cukry": 1
@@ -844,7 +846,8 @@
    "LKO_ORG02_alkeny": 1,
    "LKO_ORG03_alkohole": 1,
    "LKO_ORG04_glicerol": 1,
-   "LKO_ORG05_kwasy": 1
+   "LKO_ORG05_kwasy": 1,
+   "N04": 7
   },
   "regula-krzyzowa": {
    "R03A_mieszanie_roztworow_regula_krzyzowa": 1
@@ -860,6 +863,7 @@
    "J03": 1,
    "N01": 1,
    "N02": 1,
+   "N04": 2,
    "X04": 1
   },
   "elektryzowanie": {
@@ -897,7 +901,8 @@
   },
   "zbieranie-gazu": {
    "LKO_ORG08_mol_gazy": 1,
-   "N01": 2
+   "N01": 2,
+   "N04": 1
   },
   "palnik-gazowy": {
    "LKO_ORG01_alkany": 1,
@@ -914,7 +919,8 @@
   },
   "rownania-jonowe": {
    "C1c_kwasy_zasady_sole": 1,
-   "J03": 2
+   "J03": 2,
+   "N04": 1
   },
   "probowki": {
    "P01": 1
@@ -928,7 +934,8 @@
    "LKO_ORG04_glicerol": 2,
    "LKO_ORG05_kwasy": 1,
    "LKO_ORG06_estry": 2,
-   "LKO_ORG07_cukry": 1
+   "LKO_ORG07_cukry": 1,
+   "N04": 1
   },
   "osady-dwie-sole": {
    "J03": 1
@@ -938,13 +945,16 @@
    "J03": 2
   },
   "dysocjacja-vs-jonizacja": {
-   "J03": 1
+   "J03": 1,
+   "N04": 1
   },
   "przeniesienie-protonu": {
-   "FIZ01": 1
+   "FIZ01": 1,
+   "N04": 1
   },
   "tester-przewodnictwa": {
-   "FIZ01": 1
+   "FIZ01": 1,
+   "N04": 1
   },
   "gruczoly-mapa": {
    "BIO.02.B2e.uklad_dokrewny": 1,
@@ -1508,7 +1518,6 @@
   "trend-tlenkow",
   "uklad-okresowy",
   "profil-energii",
-  "gra-klasyfikacja",
   "haworth",
   "regula-krzyzowa",
   "schemat-przemian",
@@ -1519,9 +1528,6 @@
   "nadmiar-substratu",
   "probowki",
   "osady-dwie-sole",
-  "dysocjacja-vs-jonizacja",
-  "przeniesienie-protonu",
-  "tester-przewodnictwa",
   "eutrofizacja",
   "sekwencje",
   "wirus-bakteria",
@@ -1574,6 +1580,7 @@
   "lancuch-przemian",
   "karta-bhp",
   "petla-regulacji",
+  "gra-klasyfikacja",
   "krzyzowka-mendla",
   "kalkulator-mola",
   "probowki-odczyn",
@@ -1590,6 +1597,9 @@
   "rownania-jonowe",
   "wzor-2d",
   "tabela-rozpuszczalnosci",
+  "dysocjacja-vs-jonizacja",
+  "przeniesienie-protonu",
+  "tester-przewodnictwa",
   "gruczoly-mapa",
   "kod-genetyczny",
   "drabina",

@@ -277,3 +277,4 @@
 - 2026-10-20: S-S1 krok 6: klocki elektrostatyki (6), chemia_wstep (lancuch-poziomow, zlewka-predykcja, mapa-mysli, czasteczki-3d, destylacja) w F01–F03.
 - 2026-10-20: S-S1 ZAKOŃCZONE: okresowy_tlenki.js (układ okresowy 1–54, tlenki); wszystkie modele chemii na klockach, 0 błędów JS w 74 lekcjach; spalanie metanu = istniejący palnik-gazowy.
 - 2026-11-02: N04 Kwasy — system poziomów (`poziomy: tak`: poz-must/e8/roz/pon + pasek filtra w builderze md2html/lekcja_html/lekcja.js/ulepszenia.css), ściąga „E8 w 5 minut”, Exp. 11–14, quizy po sekcjach; audyt: chemia/plany/audyty/N04_kwasy_audyt_poziomy_2026-11-02.md. Mechanizm opt-in — można włączyć w innych lekcjach.
+- 2026-11-02: N04 Kwasy — 17 klocków z bazy podpiętych w md (manifest lekcje.N04); brak klocków: pH/miareczkowanie, bufor, kwaśne deszcze, rozcieńczanie, kw-reszty, kw-wlasciwosci.

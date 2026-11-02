@@ -238,6 +238,10 @@ Kwasowe są tylko atomy H związane z **tlenem** (grupy –O–H). W H₃PO₃ s
 :::
 :::
 
+
+@klocek gra-klasyfikacja {} | Kwas, zasada, sól czy tlenek? Klasyfikuj substancje
+@opis Gra: wyświetla się wzór substancji, a uczeń wybiera, czy to kwas, zasada, sól czy tlenek; po odpowiedzi widać ocenę. Wniosek: ćwiczy rozpoznawanie kwasów po wzorze.
+
 ::: karta understand {.poz-must} | Sprawdź się
 ::: test {#quiz-s2}
 ? Nazwa H₂SO₄ to:
@@ -434,6 +438,12 @@ W szkole często używa się obu terminów zamiennie, ale dokładnie to różne 
 @model kw-dysocjacja-v01 | Dysocjacja kwasów mocnych i słabych na żywo: H⁺ przeskakuje na wodę (tryb „krok po kroku”), cząsteczki, α, pH | HCl, HNO₃, H₂SO₄, HF, CH₃COOH, H₃PO₄ · α i pH z Ka silnika · porównanie α(c) wszystkich kwasów
 @opis Animacja dysocjacji kwasów mocnych i słabych (HCl, HNO₃, H₂SO₄, HF, CH₃COOH, H₃PO₄): w trybie krok po kroku proton H⁺ przechodzi na cząsteczkę wody, tworząc H₃O⁺; przy kwasach mocnych rozpadają się prawie wszystkie cząsteczki, przy słabych tylko niewielka część; widać stopień dysocjacji α i pH. Wniosek: moc kwasu to stopień dysocjacji, a nie jego stężenie.
 
+@klocek przeniesienie-protonu {} | Kwas + woda: proton przechodzi na cząsteczkę wody
+@opis Cząsteczka kwasu zbliża się do cząsteczki wody; proton H⁺ przeskakuje na wodę i powstaje jon H₃O⁺ oraz anion reszty kwasowej. Wniosek: w wodzie „wolnego” H⁺ nie ma, jest H₃O⁺.
+
+@klocek dysocjacja-vs-jonizacja {} | NaCl dysocjuje, HCl ulega jonizacji — przycisk „Dodaj wodę”
+@opis Porównanie dwóch substancji: w krysztale NaCl jony Na⁺ i Cl⁻ już istnieją i woda je tylko uwalnia; w cząsteczce HCl jony H₃O⁺ i Cl⁻ powstają dopiero w reakcji z wodą. Wniosek: różnica między dysocjacją a jonizacją.
+
 ### 5.7 Przewodzenie prądu — dowód na jony [[basic:E8]]
 
 ::: karta basic | E8 — elektrolity
@@ -458,6 +468,9 @@ Prąd w roztworze przenoszą **jony**. Tester (dwie elektrody + żarówka/dioda)
 
 @model gfx-scene-conductivity | Przewodzenie prądu: tester z żarówką i model jonów | Doświadczenie w silniku GFX · otwiera się w oknie
 @opis Tester przewodnictwa z żarówką zanurzany w różnych cieczach: w roztworach kwasów, zasad i soli żarówka świeci (jasność zależy od liczby jonów), w wodzie destylowanej i roztworze cukru nie świeci; obok model ruchomych jonów. Wniosek: prąd w roztworze przewodzą jony powstałe w dysocjacji.
+
+@klocek tester-przewodnictwa {} | Tester przewodnictwa: wybierz roztwór i zobacz, czy żarówka świeci
+@opis Bateria, żarówka i dwie elektrody zanurzone w wybranym roztworze (przyciski wyboru). Żarówka świeci jasno w mocnym kwasie, słabo w słabym kwasie, wcale w wodzie destylowanej i roztworze cukru. Wniosek: prąd przewodzą jony, a ich liczba zależy od mocy kwasu.
 
 ::: karta understand {.poz-must} | Sprawdź się
 ::: test {#quiz-s5}
@@ -715,6 +728,9 @@ Wskaźnik to słaby kwas HInd, którego forma kwasowa i zasadowa mają różne b
 @model ph-indicators-v03 | Panel pH: skala, wskaźniki i barwy, drabinka kwasów i zasad | Barwy wskaźników z CHE.COLORS · roztwór × wskaźnik dla wybranego stężenia · silnik CHE
 @opis Panel pH: skala od 0 do 14 z zaznaczonym odczynem kwasowym, obojętnym i zasadowym, barwy wskaźników (uniwersalny, fenoloftaleina, oranż metylowy, wywar z czerwonej kapusty) przy różnych pH oraz przykłady codziennych roztworów. Wniosek: odczyn rozpoznaje się wskaźnikiem — fenoloftaleina barwi się na malinowo tylko w odczynie zasadowym.
 
+@klocek probowki-odczyn {tuby="Oranż + HCl:pomaranczowy:czerwony:brak,Fenol. + HCl:bezbarwny:bezbarwny:brak,Fenol. + NaOH:bezbarwny:malinowy:brak,Kapusta + ocet:fioletowy:czerwony:brak"} | Wskaźniki w kwasie i zasadzie: przed i po dodaniu odczynnika
+@opis Cztery probówki przed i po dodaniu odczynnika: oranż metylowy z HCl zmienia barwę na czerwoną, fenoloftaleina z HCl pozostaje bezbarwna, fenoloftaleina z NaOH staje się malinowa, wywar z kapusty z octem czerwienieje. Wniosek: barwa wskaźnika zależy od odczynu.
+
 ### 7.4 Laboratorium wskaźników
 
 @model gfx-scene-indicatorRack | Wskaźnik w siedmiu roztworach (statyw probówek) | Doświadczenie w silniku GFX · otwiera się w oknie
@@ -849,6 +865,9 @@ $$ Zn + H₂SO₄ (rozc.) → ZnSO₄ + H₂↑
 @model kw-szereg-metali-v01 | Szereg aktywności na żywo: Mg, Zn, Fe, Cu w HCl | Cztery probówki obok siebie · silnik GFX · otwiera się w oknie
 @opis Cztery probówki z kwasem solnym i metalami Mg, Zn, Fe, Cu obok siebie: magnez reaguje najgwałtowniej, cynk wyraźnie, żelazo powoli, miedź wcale (brak pęcherzyków). Wniosek: z kwasów wodór wypierają tylko metale aktywniejsze od wodoru — szereg aktywności Mg > Zn > Fe > (H) > Cu.
 
+@klocek probowki-wybor {zestaw="metale-hcl" wybrane="Mg,Zn,Fe,Cu" max="4"} | Szereg aktywności: metale w kwasie solnym (wybierz metale)
+@opis Cztery probówki z kwasem solnym i metalami Mg, Zn, Fe, Cu: Mg reaguje najgwałtowniej, Zn i Fe wolniej z pęcherzykami wodoru, w probówce z Cu nic się nie dzieje. Wniosek: z kwasami reagują tylko metale aktywniejsze od wodoru.
+
 @model gfx-scene-acidMetal | Metal + kwas solny → wodór i próba „pyk!” | Doświadczenie w silniku GFX · otwiera się w oknie
 @opis Scena doświadczenia: metal (np. cynk) w kwasie solnym roztwarza się, wydzielają się pęcherzyki gazu zbierane w probówce; zbliżona do płomienia probówka daje charakterystyczny odgłos „pyk”. Wniosek: w reakcji metalu aktywnego z kwasem powstaje sól i wodór.
 
@@ -941,6 +960,9 @@ H₃PO₄ (3 H) + 3 NaOH (3 OH) → Na₃PO₄ + 3 H₂O. ✓
 @model rownania-jonowe-v01 | Równania jonowe dla wszystkich reakcji z lekcji (generowane przez silnik) | Cząsteczkowe → jonowe pełne → skrócone · jony obserwatory · CHE.IONIC
 @opis Zestaw równań reakcji strącania wodorotlenków i zobojętniania w trzech zapisach: cząsteczkowym, jonowym pełnym i jonowym skróconym, z wyróżnieniem jonów, które nie biorą udziału w reakcji. Wniosek: zapis jonowy skrócony pokazuje tylko jony, które naprawdę reagują.
 
+@klocek rownania-jonowe {} | Równania jonowe: wybierz reakcję i zobacz trzy zapisy
+@opis Lista 12 reakcji; po wyborze widać zapis cząsteczkowy, jonowy pełny i jonowy skrócony. Wniosek: w zapisie skróconym zostają tylko jony, które naprawdę reagują.
+
 ::: karta extra | NaOH + HCl — trzy poziomy zapisu
 $$ Cząsteczkowe: NaOH(aq) + HCl(aq) → NaCl(aq) + H₂O(l)
 
@@ -988,6 +1010,9 @@ Kwas mocniejszy wypiera kwas słabszy z jego soli. HCl (mocny) wypiera H₂CO₃
 
 @model reakcje-kwasu-v03 | Reakcje kwasów: przewidź i sprawdź | Metal, tlenek, węglan, sól, zobojętnianie · najpierw predykcja, potem zlewka
 @opis Reakcje kwasów w trybie „przewidź i sprawdź”: kwas z metalem, tlenkiem metalu, węglanem, solą i zasadą — najpierw wybierasz przewidywane obserwacje i produkty, potem zlewka pokazuje wynik i równanie. Wniosek: kwasy reagują według kilku stałych schematów prowadzących do soli.
+
+@klocek probowki-wybor {zestaw="kwas-weglan"} | Węglan + kwas → CO₂ i woda wapienna mętnieje
+@opis Probówka z węglanem i kwasem wydziela pęcherzyki gazu, który po przepuszczeniu do wody wapiennej powoduje jej zmętnienie. Wniosek: tak wykrywamy CO₂ w reakcji węglanu z kwasem.
 
 ::: karta understand {.poz-must} | Sprawdź się
 ::: test {#quiz-s9}
@@ -1122,6 +1147,10 @@ Gdy wlewasz **wodę do kwasu** — woda (mniejsza gęstość) zostaje na powierz
 Gdy wlewasz **kwas do wody** — kwas opada, miesza się z całą objętością wody, ciepło rozchodzi się, ryzyko rozprysku znacznie mniejsze.
 :::
 
+
+@klocek karta-bhp {} | Zasady pracy i pierwsza pomoc
+@opis Rozwijane karty BHP: zasady pracy w pracowni i pierwsza pomoc (oparzenie kwasem, pryskanie do oczu). Wniosek: kwas do wody, okulary, spłukiwanie wodą.
+
 ## 13 | Kwasy organiczne (karboksylowe) [[extra:AMBITNE]] {#organiczne}
 
 ::: karta extra | Kwasy organiczne (karboksylowe) — ogólnie
@@ -1154,6 +1183,10 @@ Wszystkie są **słabymi kwasami** (dysocjują częściowo). Proton kwasowy poch
 > Uwaga: 3 atomy H w grupie CH₃ **nie są protonami kwasowymi** — tylko H z grupy –COOH. Dlatego CH₃COOH jest kwasem jednoprotonowym, mimo że ma 4 atomy H.
 
 > Kwas octowy: dysocjacja CH₃COOH ⇌ H⁺ + CH₃COO⁻ — [§5](#dysocjacja).2; dlaczego jest jednoprotonowy (tylko H z grupy –COOH) — [§2](#nazewnictwo).3.
+
+
+@klocek wzor-2d {smiles="CC(=O)O" kwas="1"} | Kwas octowy: tylko H z grupy –COOH jest kwasowy
+@opis Wzór strukturalny kwasu octowego CH₃COOH z wyróżnioną grupą –COOH i jej kwasowym atomem wodoru. Wniosek: z czterech atomów H tylko jeden jest protonem kwasowym.
 
 ## 14 | Miareczkowanie (titracja) [[extra:AMBITNE]] {#miareczkowanie}
 
@@ -1273,6 +1306,9 @@ BHP: Okulary. Próbę „pyk” wykonuje nauczyciel albo uczeń wyłącznie pod 
 
 @zlewka kw-doswiadczenia-v01 acidMetal | Zobacz w zlewce (pracownia GFX)
 @opis Metal (np. cynk) w kwasie solnym: metal się roztwarza, wydzielają się pęcherzyki bezbarwnego gazu, który przy płomieniu daje odgłos „pyk”. Wniosek: Zn + 2 HCl → ZnCl₂ + H₂↑ — metal aktywny wypiera wodór z kwasu.
+
+@klocek zbieranie-gazu {gaz="H2" gazy="H2"} | Zn + HCl: zbieranie wodoru w probówce i próba „pyk!”
+@opis Kolba z cynkiem i kwasem, rurka odprowadzająca gaz i probówka odwrócona do góry dnem, w której zbiera się wodór; zbliżony płomień daje charakterystyczny „pyk”. Wniosek: wodór jest lekki i zbiera się wylotem do dołu, a próba płomieniem go wykrywa.
 :::
 
 ::: dosw | Doświadczenie 3 — Kwas + węglan (otrzymywanie CO₂)
@@ -1301,6 +1337,9 @@ BHP: Okulary, rękawice — NaOH i HCl żrące.
 
 @zlewka kw-doswiadczenia-v01 hclNaOH+php | Zobacz w zlewce (pracownia GFX)
 @opis Do malinowego roztworu NaOH z fenoloftaleiną dodaje się porcjami kwas solny: barwa słabnie i w punkcie zobojętnienia roztwór staje się bezbarwny. Wniosek: HCl + NaOH → NaCl + H₂O (H⁺ + OH⁻ → H₂O) — kwas i zasada się zobojętniają.
+
+@klocek probowki-odczyn {tuby="Zasada + fenoloftaleina + HCl:malinowy:bezbarwny:brak"} | Zobojętnianie: malinowa barwa znika po dodaniu kwasu
+@opis Probówka z roztworem zasady i fenoloftaleiną jest malinowa; po dodaniu kwasu barwa zanika. Wniosek: kwas zobojętnił zasadę, odczyn zmienił się na obojętny/kwasowy.
 :::
 
 ::: dosw | Doświadczenie 5 — Kwas + tlenek metalu
@@ -1315,6 +1354,9 @@ BHP: Okulary; H₂SO₄ żrący.
 
 @zlewka kw-doswiadczenia-v01 cuoH2so4 | Zobacz w zlewce (pracownia GFX)
 @opis Czarny tlenek miedzi(II) w roztworze kwasu siarkowego(VI), lekko ogrzewanym: proszek znika, a roztwór barwi się na niebiesko. Wniosek: CuO + H₂SO₄ → CuSO₄ + H₂O — tlenek zasadowy reaguje z kwasem, tworząc sól i wodę.
+
+@klocek probowki-odczyn {tuby="CuO + H₂SO₄ (ogrzewanie):bezbarwny:blekitny:brak"} | Tlenek miedzi(II) + kwas siarkowy(VI): roztwór błękitnieje
+@opis Probówka z czarnym tlenkiem miedzi i kwasem; po ogrzaniu roztwór przybiera błękitną barwę jonów miedzi(II). Wniosek: tlenek metalu reaguje z kwasem, tworząc rozpuszczalną sól.
 :::
 
 ::: dosw | Doświadczenie 6 — Przewodzenie prądu przez roztwory kwasów
@@ -1414,6 +1456,9 @@ Równanie: brak — zmiana barwy barwnika zależna od pH (nie jest to reakcja kw
 BHP: Gorący wywar robi dorosły; nie próbujemy substancji; okulary przy mydle i sodzie.
 
 @opis Cztery szklanki z fioletowym wywarem z kapusty po dodaniu kolejno: octu (czerwono-różowy), wody (fioletowy), roztworu sody (niebieski) i roztworu mydła (niebieskozielony). Wniosek: barwa wskaźnika zależy od pH — kwas czerwieni, zasada niebieści/zieleni.
+
+@klocek probowki-odczyn {tuby="Ocet:fioletowy:czerwony:brak,Woda:fioletowy:fioletowy:brak,Soda:fioletowy:niebieski:brak,Mydło:fioletowy:zielony:brak"} | Kapusta jako wskaźnik: ocet, woda, soda, mydło
+@opis Cztery probówki z fioletowym wywarem z kapusty: po dodaniu octu czerwieni, w wodzie pozostaje fioletowy, z sodą niebieski, z mydłem zielony. Wniosek: barwa naturalnego wskaźnika pokazuje odczyn roztworu.
 :::
 
 ::: dosw | Doświadczenie 12 — Balon na butelce: soda + ocet (domowe)
@@ -1427,6 +1472,9 @@ Równanie: NaHCO₃ + CH₃COOH → CH₃COONa + H₂O + CO₂↑
 BHP: Okulary; balon mocno trzymamy na szyjce; reakcji nie robimy w zamkniętej butelce bez balonu (nadciśnienie).
 
 @opis Dwie butelki z balonami na szyjkach: w butelce z octem po wsypaniu sody balon nadmuchuje się dwutlenkiem węgla, w butelce z wodą balon pozostaje oklapnięty. Wniosek: kwas reaguje z sodą, wydzielając CO₂.
+
+@klocek probowki-odczyn {tuby="Ocet + soda:bezbarwny:bezbarwny:gaz,Woda + soda:bezbarwny:bezbarwny:brak"} | Soda z octem wydziela gaz, soda z wodą — nie
+@opis Dwie probówki: z octem i sodą unoszą się pęcherzyki CO₂, z wodą i sodą nie dzieje się nic. Wniosek: do wydzielenia CO₂ potrzebny jest kwas.
 :::
 
 ::: dosw | Doświadczenie 13 — Skorupka jajka w occie (domowe, 1–2 dni)
@@ -1440,6 +1488,9 @@ Równanie: CaCO₃ + 2 CH₃COOH → (CH₃COO)₂Ca + H₂O + CO₂↑
 BHP: Jajka po doświadczeniu nie jemy; ręce myjemy po kontakcie z surowym jajkiem.
 
 @opis Dwa słoiki z jajkami: w occie skorupka pokryta pęcherzykami gazu, z czasem znika, jajko staje się miękkie i półprzezroczyste; w wodzie skorupka bez zmian. Wniosek: kwas rozpuszcza CaCO₃ i wydziela CO₂.
+
+@klocek probowki-odczyn {tuby="Skorupka w occie:bezbarwny:bezbarwny:gaz,Skorupka w wodzie:bezbarwny:bezbarwny:brak"} | Skorupka w occie i w wodzie
+@opis W occie na skorupce pojawiają się pęcherzyki CO₂, w wodzie skorupka nie zmienia się. Wniosek: CaCO₃ reaguje z kwasem.
 :::
 
 ::: dosw | Doświadczenie 14 — Zardzewiały gwóźdź w occie (domowe)
@@ -1453,6 +1504,9 @@ Równanie: Fe₂O₃ + 6 CH₃COOH → 2 Fe(CH₃COO)₃ + 3 H₂O (uproszczony 
 BHP: Okulary; octu nie pijemy; gwoździe po doświadczeniu wyrzucamy do odpadów.
 
 @opis Dwa słoiki z zardzewiałymi gwoździami: w occie gwóźdź jaśnieje, a płyn przybiera żółtawy odcień; w wodzie gwóźdź pozostaje brązowy. Wniosek: kwas rozpuszcza rdzę (tlenek żelaza).
+
+@klocek probowki-odczyn {tuby="Rdza w occie:bezbarwny:zolty:brak,Rdza w wodzie:bezbarwny:bezbarwny:brak"} | Rdza w occie i w wodzie
+@opis W occie roztwór żółknie od rozpuszczonej soli żelaza(III), w wodzie bez zmian. Wniosek: kwas rozpuszcza rdzę.
 :::
 
 ## 17 | Klinika błędów {#klinika}
