@@ -8,7 +8,7 @@ Liczenie: każde wystąpienie dyrektywy `@model`, `@viz`, `@klocek`, `@zlewka` (
 
 | Liczba wizualizacji w bazie | Użyte 0 razy | Użyte 1 raz | Użyte 2 lub więcej razy |
 |---|---|---|---|
-| 381 | 208 | 83 | 90 |
+| 388 | 208 | 90 | 90 |
 
 Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobnie literówki lub klucze pracowni): **64**: `-`, `bezkregowce-sylwetki`, `caoh2Co2`, `cuoH2so4`, `cuso4Naoh`, `cykl`, `drzewa-krzewy`, `drzewo-filogenetyczne`, `f02-czastki-v01`, `f04-nuklid-v01`, `fecl3Naoh`, `fotosynteza-oddychanie-krazenie`, `hclNaOH`, `jajo-porownanie`, `jajo-ptaka`, `kariotyp`, `komorki-porownanie`, `krazenie`, `krew-skladniki`, `kwiat-budowa`, `liscie-rodzaje`, `mapa-narzadow`, `mgO2`, `miesnie-trzy`, `mikroskop-budowa`, `mozg-budowa`, `mutacje-punktowe`, `naH2o`, `nablonki-rodzaje`, `nasiono-ziarniak`, `nefron-budowa`, `neuron-budowa`, `neurony-mielina`, `obieg-wegla`, `odpowiedz-immunologiczna`, `organelle-energetyczne`, `osmoza-komorka`, `owoce-rozsiewanie`, `piramida-ekologiczna`, `podzial-komorki-skrot`, `polip-meduza`, `preparat-mikroskopowy`, `przeksztalcenia-organow`, `przewod-pokarmowy`, `replikacja-dna`, `rodowod`, `rx-ag-cl`, `rx-cu-naoh`, `rx-fe-cuso4`, `ryba-budowa`, `serce-budowa`, `staw-czaszka`, `stawonogi-budowa`, `szereg`, `szkielet-czlowieka`, `szyszki-iglaste`, `tkanki-zwierzece`, `uklad-limfatyczny`, `uklad-oddechowy`, `wentylacja`, `wlasciwosci`, `wykres-dane`, `zab-budowa`, `zboza-klosy`
 
@@ -16,8 +16,8 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 
 | # | Identyfikator | Biblioteka | Użycia | Lekcje (liczba użyć) |
 |---|---|---|---|---|
-| 1 | `karta-bhp` | klocek | **19** | C1c_kwasy_zasady_sole ×1, C2w_wzor_elementarny_rzeczywisty ×1, C4 ×1, F01 ×1, F02 ×1, F03 ×1, F06 ×1, J03 ×1, LKO_ORG01_alkany ×1, LKO_ORG02_alkeny ×1, LKO_ORG03_alkohole ×1, LKO_ORG04_glicerol ×1, LKO_ORG05_kwasy ×1, LKO_ORG06_estry ×1, LKO_ORG07_cukry ×1, LKO_ORG08_mol_gazy ×1, N01 ×1, N04 ×1, X04 ×1 |
-| 2 | `wzor-2d` | klocek | **17** | C1c_wodorki_typy_reakcji ×3, C1c_kwasy_zasady_sole ×2, LKO_ORG01_alkany ×2, LKO_ORG02_alkeny ×2, LKO_ORG04_glicerol ×2, LKO_ORG06_estry ×2, LKO_ORG03_alkohole ×1, LKO_ORG05_kwasy ×1, LKO_ORG07_cukry ×1, N04 ×1 |
+| 1 | `wzor-2d` | klocek | **21** | N04 ×5, C1c_wodorki_typy_reakcji ×3, C1c_kwasy_zasady_sole ×2, LKO_ORG01_alkany ×2, LKO_ORG02_alkeny ×2, LKO_ORG04_glicerol ×2, LKO_ORG06_estry ×2, LKO_ORG03_alkohole ×1, LKO_ORG05_kwasy ×1, LKO_ORG07_cukry ×1 |
+| 2 | `karta-bhp` | klocek | **19** | C1c_kwasy_zasady_sole ×1, C2w_wzor_elementarny_rzeczywisty ×1, C4 ×1, F01 ×1, F02 ×1, F03 ×1, F06 ×1, J03 ×1, LKO_ORG01_alkany ×1, LKO_ORG02_alkeny ×1, LKO_ORG03_alkohole ×1, LKO_ORG04_glicerol ×1, LKO_ORG05_kwasy ×1, LKO_ORG06_estry ×1, LKO_ORG07_cukry ×1, LKO_ORG08_mol_gazy ×1, N01 ×1, N04 ×1, X04 ×1 |
 | 3 | `probowki-odczyn` | klocek | **15** | N04 ×7, C4 ×3, C2w_wzor_elementarny_rzeczywisty ×1, LKO_ORG02_alkeny ×1, LKO_ORG03_alkohole ×1, LKO_ORG04_glicerol ×1, LKO_ORG05_kwasy ×1 |
 | 4 | `sole-doswiadczenia-v01` | CHE model | **15** | N05 ×14, C2w_wzor_elementarny_rzeczywisty ×1 |
 | 5 | `f01-doswiadczenia-v01` | CHE pracownia (lite) | **12** | F01 ×7, F02 ×3, F17 ×1, N01 ×1 |
@@ -114,6 +114,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 - `aloh3Naoh` (CHE gfx/reakcje) → N03
 - `bacl2Na2so4` (CHE gfx/reakcje) → N05
 - `bilans-spalania` (klocek) → LKO_ORG01_alkany
+- `bufor` (klocek) → N04
 - `cacl2Na2co3` (CHE gfx/reakcje) → N05
 - `carbonate` (CHE gfx/sceny) → N04
 - `chain-scn` (CHE model) → N05
@@ -148,10 +149,15 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 - `kw-bufor-v01` (CHE model) → N04
 - `kw-dysocjacja-v01` (CHE model) → N04
 - `kw-wlasciwosci-v01` (CHE model) → N04
+- `kwasne-deszcze` (klocek) → N04
+- `kwasy-reszty` (klocek) → N04
+- `kwasy-rozcienczanie` (klocek) → N04
+- `kwasy-wlasciwosci` (klocek) → N04
 - `lancuch-poziomow` (klocek) → F01
 - `liH2o` (CHE gfx/reakcje) → F06
 - `linie-pola` (klocek) → FIZ01
 - `mapa-mysli` (klocek) → F01
+- `miareczkowanie` (klocek) → N04
 - `n01-spalanie-v01` (CHE model) → N02
 - `n02-dysocjacja-v01` (CHE model) → N03
 - `n02-otrzymywanie-v01` (CHE model) → N03
@@ -168,6 +174,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 - `oko-akomodacja` (BIO) → BIO.07.U08.uklad_nerwowy_i_zmysly
 - `osady-dwie-sole` (klocek) → J03
 - `palenie` (klocek) → N02
+- `ph-skala` (klocek) → N04
 - `pojemnosc` (BIO) → BIO.02.L010.dna_od_zera
 - `proba-kontrolna` (BIO) → BIO.00.REV01.organizacja_i_chemizm_zycia
 - `probowki` (klocek) → P01
@@ -429,6 +436,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | `bilans-rownania` | klocek | 4 | C1c_wodorki_typy_reakcji ×1, C3 ×1, LKO_ORG05_kwasy ×1, LKO_ORG06_estry ×1 |
 | `bilans-spalania` | klocek | 1 | LKO_ORG01_alkany ×1 |
 | `bubbles` | CHE gfx/efekty | 0 | — |
+| `bufor` | klocek | 1 | N04 ×1 |
 | `burette` | CHE gfx/naczynia | 0 | — |
 | `burner` | CHE gfx/naczynia | 0 | — |
 | `caH2o` | CHE gfx/reakcje | 0 | — |
@@ -602,6 +610,10 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | `kw-reszty-v01` | CHE model | 2 | N04 ×1, N05 ×1 |
 | `kw-szereg-metali-v01` | CHE model | 2 | N04 ×1, N05 ×1 |
 | `kw-wlasciwosci-v01` | CHE model | 1 | N04 ×1 |
+| `kwasne-deszcze` | klocek | 1 | N04 ×1 |
+| `kwasy-reszty` | klocek | 1 | N04 ×1 |
+| `kwasy-rozcienczanie` | klocek | 1 | N04 ×1 |
+| `kwasy-wlasciwosci` | klocek | 1 | N04 ×1 |
 | `lab-beaker-v102` | CHE model | 0 | — |
 | `lab-library-v001` | CHE model | 0 | — |
 | `lab-stations-v102` | CHE model | 0 | — |
@@ -625,6 +637,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | `mgcl2Naoh` | CHE gfx/reakcje | 0 | — |
 | `mgoH2o` | CHE gfx/reakcje | 0 | — |
 | `mgoHcl` | CHE gfx/reakcje | 0 | — |
+| `miareczkowanie` | klocek | 1 | N04 ×1 |
 | `mikroskop-model` | BIO | 3 | BIO.00.REV01.organizacja_i_chemizm_zycia ×1, BIO.01.L001.komorka ×1, BIO.01.L008.mikroskop_jak_obserwowac_komorke_a ×1 |
 | `mind-map` | CHE model | 0 | — |
 | `mnso4Naoh` | CHE gfx/reakcje | 0 | — |
@@ -688,6 +701,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | `petri` | CHE gfx/naczynia | 0 | — |
 | `ph-indicators-v03` | CHE model | 3 | N03 ×2, N04 ×1 |
 | `ph-ladder` | CHE model | 0 | — |
+| `ph-skala` | klocek | 1 | N04 ×1 |
 | `pipette` | CHE gfx/naczynia | 0 | — |
 | `plomien` | klocek | 0 | — |
 | `plume` | CHE gfx/efekty | 0 | — |
@@ -778,7 +792,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | `wykres-zdania` | POL | 1 | POL.02.G12.czesci_zdania ×1 |
 | `wykres-zlozonego` | POL | 1 | POL.02.G15.zdania_wspolrzedne ×1 |
 | `wymiana-gazowa` | BIO | 2 | BIO.02.B2c.oddychanie_wydalanie ×1, BIO.07.U06.oddychanie_i_wydalanie ×1 |
-| `wzor-2d` | klocek | 17 | C1c_kwasy_zasady_sole ×2, C1c_wodorki_typy_reakcji ×3, LKO_ORG01_alkany ×2, LKO_ORG02_alkeny ×2, LKO_ORG03_alkohole ×1, LKO_ORG04_glicerol ×2, LKO_ORG05_kwasy ×1, LKO_ORG06_estry ×2, LKO_ORG07_cukry ×1, N04 ×1 |
+| `wzor-2d` | klocek | 21 | C1c_kwasy_zasady_sole ×2, C1c_wodorki_typy_reakcji ×3, LKO_ORG01_alkany ×2, LKO_ORG02_alkeny ×2, LKO_ORG03_alkohole ×1, LKO_ORG04_glicerol ×2, LKO_ORG05_kwasy ×1, LKO_ORG06_estry ×2, LKO_ORG07_cukry ×1, N04 ×5 |
 | `zbieranie-gazu` | klocek | 4 | LKO_ORG08_mol_gazy ×1, N01 ×2, N04 ×1 |
 | `zlewka` | klocek | 0 | — |
 | `zlewka-predykcja` | klocek | 1 | F01 ×1 |
@@ -970,7 +984,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | chemia | N01 | `f01-doswiadczenia-v01` ×1, `f01WodaWapienna` ×1, `karta-bhp` ×1, `palnik-gazowy` ×1, `probowki-wybor` ×1, `zbieranie-gazu` ×2 |
 | chemia | N02 | `caoH2o` ×1, `caoh2Co2` ×1, `cuoH2so4` ×1, `czasteczki-3d` ×1, `detektor-tlenku` ×1, `konstruktor-tlenku` ×1, `lancuch-przemian` ×3, `mgO2` ×1, `n01-doswiadczenia-v01` ×3, `n01-spalanie-v01` ×1, `palenie` ×1, `palnik-gazowy` ×1, `probowki-wybor` ×1, `reaktor-tlenku` ×1, `stech-kalkulator-v01` ×1, `trend-tlenkow` ×1, `uklad-okresowy-54` ×1 |
 | chemia | N03 | `-` ×1, `aloh3Naoh` ×1, `caoH2o` ×1, `caoh2Co2` ×1, `cuso4Naoh` ×1, `fecl3Naoh` ×1, `gfx-scene-indicatorRack` ×1, `hclNaOH` ×1, `n02-doswiadczenia-v01` ×8, `n02-dysocjacja-v01` ×1, `n02-otrzymywanie-v01` ×1, `n02-przeglad-v01` ×1, `n02-reaktor-v01` ×1, `n02-stracanie-v01` ×1, `n02-wzory-v01` ×1, `n02-zobojetnianie-v01` ×1, `naH2o` ×1, `ph-indicators-v03` ×2, `rownania-jonowe-v01` ×1, `tabela-rozpuszczalnosci-v01` ×1 |
-| chemia | N04 | `acid-rain-v01` ×1, `acidMetal` ×1, `carbonate` ×1, `conductivity` ×2, `cuoH2so4` ×1, `dysocjacja-vs-jonizacja` ×1, `gfx-scene-acidMetal` ×1, `gfx-scene-conductivity` ×1, `gfx-scene-dilution` ×1, `gfx-scene-indicatorRack` ×1, `gfx-scene-titration` ×1, `gra-klasyfikacja` ×1, `hclNaOH` ×1, `indicator` ×1, `karta-bhp` ×1, `kw-bufor-v01` ×1, `kw-doswiadczenia-v01` ×11, `kw-dysocjacja-v01` ×1, `kw-reszty-v01` ×1, `kw-szereg-metali-v01` ×1, `kw-wlasciwosci-v01` ×1, `ph-indicators-v03` ×1, `probowki-odczyn` ×7, `probowki-wybor` ×2, `przeniesienie-protonu` ×1, `reakcje-kwasu-v03` ×1, `rownania-jonowe` ×1, `rownania-jonowe-v01` ×1, `szereg` ×1, `tabela-rozpuszczalnosci-v01` ×1, `tester-przewodnictwa` ×1, `titration-merged` ×1, `wlasciwosci` ×2, `wzor-2d` ×1, `zbieranie-gazu` ×1 |
+| chemia | N04 | `acid-rain-v01` ×1, `acidMetal` ×1, `bufor` ×1, `carbonate` ×1, `conductivity` ×2, `cuoH2so4` ×1, `dysocjacja-vs-jonizacja` ×1, `gfx-scene-acidMetal` ×1, `gfx-scene-conductivity` ×1, `gfx-scene-dilution` ×1, `gfx-scene-indicatorRack` ×1, `gfx-scene-titration` ×1, `gra-klasyfikacja` ×1, `hclNaOH` ×1, `indicator` ×1, `karta-bhp` ×1, `kw-bufor-v01` ×1, `kw-doswiadczenia-v01` ×11, `kw-dysocjacja-v01` ×1, `kw-reszty-v01` ×1, `kw-szereg-metali-v01` ×1, `kw-wlasciwosci-v01` ×1, `kwasne-deszcze` ×1, `kwasy-reszty` ×1, `kwasy-rozcienczanie` ×1, `kwasy-wlasciwosci` ×1, `miareczkowanie` ×1, `ph-indicators-v03` ×1, `ph-skala` ×1, `probowki-odczyn` ×7, `probowki-wybor` ×2, `przeniesienie-protonu` ×1, `reakcje-kwasu-v03` ×1, `rownania-jonowe` ×1, `rownania-jonowe-v01` ×1, `szereg` ×1, `tabela-rozpuszczalnosci-v01` ×1, `tester-przewodnictwa` ×1, `titration-merged` ×1, `wlasciwosci` ×2, `wzor-2d` ×5, `zbieranie-gazu` ×1 |
 | chemia | N05 | `bacl2Na2so4` ×1, `cacl2Na2co3` ×1, `caoH2o` ×1, `chain-scn` ×1, `cuoH2so4` ×1, `cuso4Hydrate` ×1, `gfx-scene-conductivity` ×1, `hclNaOH` ×1, `hyd-na2co3` ×1, `hyd-nh4cl` ×1, `ion-map-v02` ×1, `kw-reszty-v01` ×1, `kw-szereg-metali-v01` ×1, `na2co3Hcl` ×1, `rownania-jonowe-v01` ×1, `rx-ag-cl` ×2, `rx-cu-naoh` ×1, `rx-fe-cuso4` ×1, `sole-doswiadczenia-v01` ×14, `stech-kalkulator-v01` ×1, `tabela-rozpuszczalnosci-v01` ×1 |
 | chemia | N06 | — |
 | chemia | N07 | — |

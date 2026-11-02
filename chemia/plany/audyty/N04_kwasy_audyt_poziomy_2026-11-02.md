@@ -22,3 +22,6 @@
 
 ## Dopisek (klocki)
 N04 dostało 17 działających w pliku klocków z istniejącej bazy (manifest `lekcje.N04`): tester-przewodnictwa, przeniesienie-protonu, dysocjacja-vs-jonizacja, probowki-odczyn (§7 i Exp. 4, 5, 11–14), probowki-wybor (metale-HCl, węglan+kwas), zbieranie-gazu (Exp. 2), rownania-jonowe, gra-klasyfikacja, karta-bhp, wzor-2d. Stare `@model`/`@zlewka` zostają (działają w aplikacji). Nie przeniesione na klocki: pH-skala/miareczkowanie, bufor, kwaśne deszcze, rozcieńczanie, kw-reszty, kw-wlasciwosci — do zrobienia jako nowe klocki.
+
+## Dopisek 2
+Nowe klocki `kwasy_modele.js`: ph-skala, miareczkowanie (mocny/słaby), bufor, kwasy-reszty, kwasy-wlasciwosci, kwasy-rozcienczanie, kwasne-deszcze — zastępują 7 wcześniej niedziałających modeli. Dodano 4 wzory strukturalne (wzor-2d: CH₃COOH, H₂SO₄, HNO₃, H₃PO₄) w §2 oraz kartę „Definicja kwasu — krok po kroku” (poz-must, z odpowiedziami) rozwijającą pkt 1 minimum.

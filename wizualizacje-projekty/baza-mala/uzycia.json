@@ -265,6 +265,13 @@
   "kalkulator-mola": "klocek",
   "plomien": "klocek",
   "probowki-odczyn": "klocek",
+  "ph-skala": "klocek",
+  "miareczkowanie": "klocek",
+  "bufor": "klocek",
+  "kwasy-reszty": "klocek",
+  "kwasy-wlasciwosci": "klocek",
+  "kwasy-rozcienczanie": "klocek",
+  "kwasne-deszcze": "klocek",
   "regula-krzyzowa": "klocek",
   "schemat-przemian": "klocek",
   "konfiguracje": "klocek",
@@ -849,6 +856,27 @@
    "LKO_ORG05_kwasy": 1,
    "N04": 7
   },
+  "ph-skala": {
+   "N04": 1
+  },
+  "miareczkowanie": {
+   "N04": 1
+  },
+  "bufor": {
+   "N04": 1
+  },
+  "kwasy-reszty": {
+   "N04": 1
+  },
+  "kwasy-wlasciwosci": {
+   "N04": 1
+  },
+  "kwasy-rozcienczanie": {
+   "N04": 1
+  },
+  "kwasne-deszcze": {
+   "N04": 1
+  },
   "regula-krzyzowa": {
    "R03A_mieszanie_roztworow_regula_krzyzowa": 1
   },
@@ -935,7 +963,7 @@
    "LKO_ORG05_kwasy": 1,
    "LKO_ORG06_estry": 2,
    "LKO_ORG07_cukry": 1,
-   "N04": 1
+   "N04": 5
   },
   "osady-dwie-sole": {
    "J03": 1
@@ -1519,6 +1547,13 @@
   "uklad-okresowy",
   "profil-energii",
   "haworth",
+  "ph-skala",
+  "miareczkowanie",
+  "bufor",
+  "kwasy-reszty",
+  "kwasy-wlasciwosci",
+  "kwasy-rozcienczanie",
+  "kwasne-deszcze",
   "regula-krzyzowa",
   "schemat-przemian",
   "konfiguracje",

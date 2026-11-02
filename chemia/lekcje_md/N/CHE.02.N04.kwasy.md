@@ -12,7 +12,7 @@ poziomy: tak
 stan: ULEPSZONA — Claude Haiku 5.5, audyt W1 wewnętrzny, 2026-10-12; do zewnętrznego W1
 ---
 ::: minimum | Muszę umieć na E8 — 10 faktów
-1. **Definicja kwasu (E8):** związek, który w roztworze wodnym dysocjuje na kationy wodoru H⁺ (dokładniej H₃O⁺) i aniony reszty kwasowej.
+1. **Definicja kwasu (E8):** związek, który w roztworze wodnym dysocjuje na kationy wodoru H⁺ (dokładniej H₃O⁺) i aniony reszty kwasowej. *Po ludzku: kwas = wodór + reszta; w wodzie rozpada się na „plusa” (H⁺) i „minusa” (reszta) — rozwinięcie niżej.*
 2. **Wzór ogólny:** HₙR, gdzie R = reszta kwasowa, n = wartościowość reszty.
 3. **Podział:** beztlenowe (HCl, HBr, HI, HF, H₂S, HCN) vs tlenowe (HNO₃, H₂SO₄, H₂CO₃, H₃PO₄, HClO₄) — oraz mocne (HCl, HBr, HI, HNO₃, H₂SO₄, HClO₄) vs słabe (HF, H₂S, H₂CO₃, H₂SO₃, HNO₂, H₃PO₄, CH₃COOH).
 4. **Dysocjacja:** HCl → H⁺ + Cl⁻; H₂SO₄ → 2H⁺ + SO₄²⁻; H₃PO₄ → 3H⁺ + PO₄³⁻. Na E8 to dopuszczalny skrót; dokładniej: H⁺ jest w wodzie jako jon hydroniowy H₃O⁺, a kwasy wieloprotonowe oddają protony stopniowo (H₂SO₄: I stopień praktycznie całkowity, II częściowy).
@@ -22,6 +22,33 @@ stan: ULEPSZONA — Claude Haiku 5.5, audyt W1 wewnętrzny, 2026-10-12; do zewn�
 8. **BHP:** kwas do wody, nigdy odwrotnie (reakcja egzotermiczna). Okulary, rękawice, nie pipetować ustami, nie wąchać bezpośrednio.
 9. **Właściwości:** stężony HCl „dymi” i ma ostry zapach; stężony H₂SO₄ jest oleisty, higroskopijny i *zwęgla* cukier, papier, drewno; HNO₃ żółknie na świetle, a z białkiem daje *żółte* zabarwienie (reakcja ksantoproteinowa).
 10. **Roztwory kwasów przewodzą prąd** — są elektrolitami, bo zawierają jony (H₃O⁺ i aniony reszty). Stężenie procentowe: C<sub>p</sub> = m<sub>s</sub>/m<sub>r</sub> · 100%.
+:::
+
+::: karta basic {#definicja-krok .poz-must} | Definicja kwasu — krok po kroku (po ludzku)
+**Zdanie z definicji rozbijamy na kawałki:**
+
+1. **„Związek”** — kwas to substancja zbudowana z kilku pierwiastków, np. HCl (wodór + chlor), H₂SO₄ (wodór + siarka + tlen).
+2. **Wzór kwasu = wodór + reszta kwasowa.** Wodór stoi na początku: H**Cl**, H₂**SO₄**, H₃**PO₄**. Reszta kwasowa to „cała reszta wzoru” (Cl, SO₄, PO₄).
+3. **„Roztwór wodny”** — kwas musi być w wodzie. Suchy gazowy chlorowodór HCl nie zachowuje się jak kwas; dopiero woda „rozrywa” jego cząsteczkę.
+4. **„Dysocjuje”** — to po prostu **rozpada się na jony**. Jon to atom lub grupa atomów z ładunkiem (dodatnim + albo ujemnym −).
+5. **Co powstaje:** wodór odchodzi **bez swojego elektronu** (elektron zostaje przy reszcie), więc staje się **jonem dodatnim H⁺** (kation wodoru), a reszta kwasowa z dodatkowym elektronem staje się **jonem ujemnym** (anion reszty), np. Cl⁻, SO₄²⁻.
+6. **„Dokładniej H₃O⁺”** — sam H⁺ to nagi proton, który w wodzie natychmiast „przykleja się” do cząsteczki wody: H⁺ + H₂O → H₃O⁺ (jon hydroniowy). Na E8 piszemy H⁺, ale wiemy, że w roztworze jest H₃O⁺.
+
+**Przykład w jednym zdaniu:** HCl w wodzie → H⁺ + Cl⁻ (jeden plus i jeden minus, więc ładunek się równoważy).
+
+**Dlaczego to ważne?** To jony H⁺ (H₃O⁺) **robią z roztworu kwas**: dają kwaśny odczyn (pH < 7), zmieniają barwę wskaźników i reagują z metalami. A ponieważ w roztworze są jony, **kwas przewodzi prąd**.
+
+**Trzy najczęstsze pomyłki:**
+
+- „Kwas to coś kwaśnego w smaku” — nie próbujemy chemikaliów; kwasy rozpoznajemy po **wzorze i jonach H⁺**, nie po smaku.
+- „Każdy związek z wodorem to kwas” — nie: H₂O i CH₄ nie dysocjują na H⁺ w wodzie, więc nie są kwasami. Kwas **oddaje** H⁺ do wody.
+- „Wzór HₙR zawsze znaczy: wszystkie H są kwasowe” — na E8 tak przyjmujemy (H₂SO₄ → 2H⁺ + SO₄²⁻), ale w CH₃COOH kwasowy jest tylko jeden H (z grupy –COOH).
+
+**Sprawdź sam:** (a) Z czego składa się wzór H₂SO₃? (b) Jaki jest ładunek reszty SO₃, jeśli oddały się 2 H⁺? (c) Co się dzieje z HCl, gdy wpada do wody?
+:::
+
+::: odp | Odpowiedzi do „Sprawdź sam”
+(a) Z 2 atomów wodoru (H₂) i reszty kwasowej SO₃. (b) 2− (SO₃²⁻), bo przy reszcie zostały 2 elektrony po dwóch atomach H, które odeszły jako H⁺. (c) Rozpada się na jony: HCl → H⁺ + Cl⁻ (w wodzie dokładniej H₃O⁺ + Cl⁻).
 :::
 
 ::: karta basic {#sciaga .poz-must} | E8 w 5 minut — ściąga przed egzaminem
@@ -242,6 +269,19 @@ Kwasowe są tylko atomy H związane z **tlenem** (grupy –O–H). W H₃PO₃ s
 @klocek gra-klasyfikacja {} | Kwas, zasada, sól czy tlenek? Klasyfikuj substancje
 @opis Gra: wyświetla się wzór substancji, a uczeń wybiera, czy to kwas, zasada, sól czy tlenek; po odpowiedzi widać ocenę. Wniosek: ćwiczy rozpoznawanie kwasów po wzorze.
 
+
+@klocek wzor-2d {smiles="CC(=O)O" kwas="1"} | Wzór strukturalny: kwas octowy CH₃COOH
+@opis Wzór strukturalny kwasu octowego: łańcuch CH₃– i grupa –COOH, wyróżniony atom H z grupy –OH jest kwasowy.
+
+@klocek wzor-2d {smiles="OS(=O)(=O)O" kwas="1"} | Wzór strukturalny: kwas siarkowy(VI) H₂SO₄
+@opis Wzór strukturalny H₂SO₄: atom siarki z dwoma wiązaniami podwójnymi do tlenu i dwiema grupami –OH; wyróżnione dwa kwasowe atomy H.
+
+@klocek wzor-2d {smiles="O[N+](=O)[O-]" kwas="1"} | Wzór strukturalny: kwas azotowy(V) HNO₃
+@opis Wzór strukturalny HNO₃: atom azotu z grupą –OH i dwoma atomami tlenu (jeden z wiązaniem podwójnym); wyróżniony jeden kwasowy atom H.
+
+@klocek wzor-2d {smiles="OP(=O)(O)O" kwas="1"} | Wzór strukturalny: kwas fosforowy(V) H₃PO₄
+@opis Wzór strukturalny H₃PO₄: atom fosforu z jednym wiązaniem podwójnym do tlenu i trzema grupami –OH; wyróżnione trzy kwasowe atomy H.
+
 ::: karta understand {.poz-must} | Sprawdź się
 ::: test {#quiz-s2}
 ? Nazwa H₂SO₄ to:
@@ -306,6 +346,9 @@ Kwasowe są tylko atomy H związane z **tlenem** (grupy –O–H). W H₃PO₃ s
 @model kw-reszty-v01 | Kwas → reszta kwasowa → sole (13 metali) | Dysocjacja, ładunek reszty, wzory i nazwy soli, rozpuszczalność · CHE.IONIC
 @opis Model kwas → reszta kwasowa → sól: kwas dysocjuje, model pokazuje ładunek reszty kwasowej (np. SO₄²⁻, NO₃⁻, PO₄³⁻), a dla 13 metali tworzy wzory i nazwy soli z informacją o rozpuszczalności. Wniosek: ładunek reszty kwasowej równa się liczbie atomów wodoru oddanych przez kwas i wyznacza wzór soli.
 
+@klocek kwasy-reszty {} | Tabela kwasów: kliknij wzór, zobacz resztę, dysocjację i zastosowanie
+@opis Chipy z wzorami kwasów (HCl, H₂SO₄, HNO₃, H₃PO₄, H₂CO₃, H₂SO₃, H₂S, CH₃COOH); po kliknięciu karta z nazwą, typem, mocą, resztą i jej ładunkiem, równaniem dysocjacji, solą sodową i zastosowaniem. Wniosek: ładunek reszty zależy od liczby oddawanych atomów H.
+
 ::: karta understand {.poz-must} | Sprawdź się
 ::: test {#quiz-s3}
 ? Ładunek reszty kwasowej w H₃PO₄ (PO₄) to:
@@ -354,6 +397,9 @@ H₂SO₄ ma ogromne powinowactwo do wody — odbiera z cząsteczek cukru atomy 
 
 @model kw-wlasciwosci-v01 | Właściwości stężonych kwasów — pokazy | Cukier + H₂SO₄ · białko + HNO₃ · HCl dymi · silnik GFX, otwiera się w oknie
 @opis Pokazy właściwości stężonych kwasów: cukier zalany stężonym H₂SO₄ czernieje i pęcznieje w porowatą masę węgla, białko po dodaniu HNO₃ żółknie, otwarta butelka stężonego HCl „dymi” (chlorowodór tworzy z parą wodną mgiełkę). Wniosek: stężone kwasy mają właściwości żrące, utleniające i odwadniające — praca tylko z nauczycielem i pod wyciągiem.
+
+@klocek kwasy-wlasciwosci {} | Pokazy: H₂SO₄ + cukier, HNO₃ + białko, dymiący HCl
+@opis Zlewka, w której po kliknięciu pokazu cukier z H₂SO₄ czernieje i rośnie, białko z HNO₃ żółknie, a nad stężonym HCl unosi się biała mgiełka. Wniosek: stężone kwasy mają różne charakterystyczne działanie (odwadnianie, nitrowanie, wydzielanie gazu).
 
 ## 5 | Dysocjacja jonowa kwasów [[basic:E8]] {#dysocjacja}
 
@@ -728,6 +774,9 @@ Wskaźnik to słaby kwas HInd, którego forma kwasowa i zasadowa mają różne b
 @model ph-indicators-v03 | Panel pH: skala, wskaźniki i barwy, drabinka kwasów i zasad | Barwy wskaźników z CHE.COLORS · roztwór × wskaźnik dla wybranego stężenia · silnik CHE
 @opis Panel pH: skala od 0 do 14 z zaznaczonym odczynem kwasowym, obojętnym i zasadowym, barwy wskaźników (uniwersalny, fenoloftaleina, oranż metylowy, wywar z czerwonej kapusty) przy różnych pH oraz przykłady codziennych roztworów. Wniosek: odczyn rozpoznaje się wskaźnikiem — fenoloftaleina barwi się na malinowo tylko w odczynie zasadowym.
 
+@klocek ph-skala {ph="3"} | Skala pH: przesuń suwak i zobacz barwy wskaźników
+@opis Poziomy pasek skali 0–14 od czerwonego (kwas) przez zielony (obojętny) do fioletowego (zasada) ze znacznikiem na suwaku; pod nim trzy próbki barwy: papierek uniwersalny, oranż metylowy i fenoloftaleina oraz stężenie H₃O⁺ i najbliższa substancja z życia. Wniosek: im niższe pH, tym więcej H₃O⁺ — każda jednostka to 10 razy.
+
 @klocek probowki-odczyn {tuby="Oranż + HCl:pomaranczowy:czerwony:brak,Fenol. + HCl:bezbarwny:bezbarwny:brak,Fenol. + NaOH:bezbarwny:malinowy:brak,Kapusta + ocet:fioletowy:czerwony:brak"} | Wskaźniki w kwasie i zasadzie: przed i po dodaniu odczynnika
 @opis Cztery probówki przed i po dodaniu odczynnika: oranż metylowy z HCl zmienia barwę na czerwoną, fenoloftaleina z HCl pozostaje bezbarwna, fenoloftaleina z NaOH staje się malinowa, wywar z kapusty z octem czerwienieje. Wniosek: barwa wskaźnika zależy od odczynu.
 
@@ -1075,6 +1124,9 @@ $$ 3 NO₂ + H₂O → 2 HNO₃ + NO (kwas azotowy(V))
 @model acid-rain-v01 | Kwaśne deszcze – animacja obiegu | Wizualizacja z biblioteki · otwiera się w oknie
 @opis Animacja obiegu kwaśnych deszczy: spaliny z elektrowni i samochodów zawierają tlenki siarki i azotu, które w chmurach reagują z wodą, tworząc kwasy; opady niszczą lasy, zakwaszają jeziora i glebę i niszczą budynki z wapienia. Wniosek: kwasowe tlenki z emisji przemysłowej wracają na ziemię jako kwasy.
 
+@klocek kwasne-deszcze {} | Kwaśny deszcz: od komina do marmuru, lasu i jeziora
+@opis Animacja: komin emituje dym (SO₂, NOₓ), w chmurze z wodą powstają H₂SO₄ i HNO₃, spada deszcz o pH poniżej 5,6, który niszczy marmur (CaCO₃), las i zakwasza jezioro. Wniosek: tlenki z paliw to źródło kwaśnych deszczy.
+
 ## 11 | Zastosowania kwasów [[basic:E8]] {#zastosowania}
 
 ::: div.table-wrap
@@ -1117,6 +1169,9 @@ $$ 3 NO₂ + H₂O → 2 HNO₃ + NO (kwas azotowy(V))
 
 @model gfx-scene-dilution | Rozcieńczanie: „kwas do wody!” — poprawnie i błędnie | Doświadczenie w silniku GFX · otwiera się w oknie
 @opis Dwie wersje rozcieńczania stężonego kwasu: poprawna — kwas wlewany powoli do wody, mieszanina tylko się ogrzewa; błędna — woda wlewana do kwasu, gwałtowne rozpryskiwanie wrzącej cieczy. Wniosek: zawsze wlewa się kwas do wody, powoli i mieszając.
+
+@klocek kwasy-rozcienczanie {} | Rozcieńczanie: kwas do wody czy woda do kwasu?
+@opis Dwa warianty zlewki z termometrem: kwas wlewany do wody — roztwór lekko się nagrzewa; woda wlewana do kwasu — gwałtowne nagrzanie i pryskanie żółtych kropel. Wniosek: zawsze najpierw woda, potem kwas.
 
 ::: karta error | Żrące właściwości kwasów
 Stężone kwasy **niszczą skórę, błony śluzowe i oczy**. Kontakt może prowadzić do trwałych oparzeń chemicznych.
@@ -1226,6 +1281,9 @@ c(HCl) = (0,1 × 20) / 25 = 0,08 M
 @model titration-merged | Krzywa miareczkowania: mocny/słaby kwas | pH(V) z silnika · punkt równoważnikowy
 @opis Krzywa miareczkowania: wykres pH od objętości dodanej zasady dla kwasu mocnego i słabego; przy punkcie równoważnikowym pH zmienia się skokowo, a dla kwasu słabego krzywa zaczyna się wyżej i skok jest mniejszy. Wniosek: przebieg krzywej zależy od mocy kwasu.
 
+@klocek miareczkowanie {kwas="HCl"} | Miareczkowanie: dodawaj NaOH do kwasu mocnego lub słabego
+@opis Kolba z kwasem i fenoloftaleiną oraz wykres pH(V): czerwony punkt biegnie po krzywej, przy 25 cm³ NaOH jest punkt równoważnikowy (pH 7 dla HCl, ok. 8,7 dla CH₃COOH), a po nim roztwór różowieje. Wniosek: miareczkowanie pozwala wyznaczyć stężenie kwasu.
+
 ## 15 | Bufory — model jakościowy [[extra:AMBITNE]] {#bufory}
 
 ::: karta core | Definicja
@@ -1270,6 +1328,9 @@ Pojemność buforowa β = dn/dpH jest największa, gdy [HA] = [A⁻] (pH = pK<su
 
 @model kw-bufor-v01 | Bufor octanowy kontra woda — dodawaj HCl i NaOH | pH-metry, wskaźnik uniwersalny, wykres · pKa z silnika · wyczerpanie pojemności
 @opis Porównanie buforu octanowego z wodą: do obu dodaje się porcjami HCl lub NaOH; pH wody zmienia się gwałtownie, pH buforu prawie stoi w miejscu, dopóki bufor nie wyczerpie swojej pojemności; widać pH-metry, wskaźnik i wykres. Wniosek: bufor utrzymuje prawie stałe pH, ale tylko do pewnej ilości dodanego kwasu lub zasady.
+
+@klocek bufor {} | Bufor octanowy kontra woda: dodawaj HCl i NaOH
+@opis Dwa pehametry obok siebie: w wodzie pH gwałtownie skacze po dodaniu 1 mmol HCl lub NaOH, a w buforze CH₃COOH + CH₃COONa zmienia się tylko o ułamek jednostki. Wniosek: bufor przeciwdziała zmianom pH, aż do wyczerpania.
 
 ## 16 | Doświadczenia {#doswiadczenia}
 
