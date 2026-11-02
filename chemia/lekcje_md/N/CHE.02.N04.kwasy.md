@@ -14,7 +14,7 @@ stan: ULEPSZONA — Claude Haiku 5.5, audyt W1 wewnętrzny, 2026-10-12; do zewn�
 ::: minimum | Muszę umieć na E8 — 10 faktów
 1. **Kwas to substancja, która w wodzie oddaje jony H⁺** (kwas = H⁺ + reszta kwasowa; w wodzie rozpada się na małe naładowane cząstki — jony). *Dokładniej (definicja szkolna):* związek, który w roztworze wodnym **dysocjuje** (rozpada się na jony) na **kationy** (jony dodatnie) wodoru H⁺ (dokładniej H₃O⁺) i **aniony** (jony ujemne) reszty kwasowej. Rozwinięcie krok po kroku — karta niżej.
 2. **Wzór ogólny:** HₙR, gdzie R = reszta kwasowa, n = wartościowość reszty.
-3. **Sześć kwasów do zapamiętania:** **mocne** — HCl, H₂SO₄, HNO₃; **słabe** — H₃PO₄ (średniej mocy), H₂CO₃, CH₃COOH. Podział: beztlenowe (bez tlenu we wzorze: HCl, H₂S) vs tlenowe (z tlenem: H₂SO₄, HNO₃). *Dodatkowo (rozszerzenie):* beztlenowe HBr, HI, HF, HCN; tlenowe HClO₄; mocne HBr, HI, HClO₄; słabe HF, H₂S, H₂SO₃, HNO₂.
+3. **Sześć kwasów do zapamiętania:** **mocne** — HCl, H₂SO₄, HNO₃; **słabe** — H₃PO₄ (słaby, choć mocniejszy niż ocet), H₂CO₃, CH₃COOH. Podział: beztlenowe (bez tlenu we wzorze: HCl, H₂S) vs tlenowe (z tlenem: H₂SO₄, HNO₃). *Dodatkowo (rozszerzenie):* beztlenowe HBr, HI, HF, HCN; tlenowe HClO₄; mocne HBr, HI, HClO₄; słabe HF, H₂S, H₂SO₃, HNO₂.
 4. **Dysocjacja:** HCl → H⁺ + Cl⁻; H₂SO₄ → 2H⁺ + SO₄²⁻; H₃PO₄ → 3H⁺ + PO₄³⁻. Na E8 to dopuszczalny skrót; dokładniej: H⁺ jest w wodzie jako jon hydroniowy H₃O⁺, a kwasy wieloprotonowe oddają protony stopniowo (H₂SO₄: I stopień praktycznie całkowity, II częściowy).
 5. **pH:** poniżej 7 kwasowy, 7 obojętny, powyżej 7 zasadowy. pH = −log₁₀[H₃O⁺].
 6. **Wskaźniki** (barwniki zmieniające kolor zależnie od odczynu): fenoloftaleina (**w kwasie niewidoczna, czyli bezbarwna; w zasadzie malinowa**); oranż metylowy (czerwony w kwasie, żółty w zasadzie); papierek uniwersalny (czerwony w kwasie, niebieski w zasadzie).
@@ -90,7 +90,7 @@ stan: ULEPSZONA — Claude Haiku 5.5, audyt W1 wewnętrzny, 2026-10-12; do zewn�
 **3 pułapki:**
 
 - **Stężenie ≠ moc.** Mocny kwas dysocjuje prawie całkowicie; rozcieńczony HCl nadal jest mocny, a stężony CH₃COOH nadal słaby.
-- **Cu, Ag, Au nie reagują z HCl ani z rozcieńczonym H₂SO₄** (są za wodorem w szeregu); HNO₃ nie daje H₂.
+- **Cu, Ag, Au nie reagują z HCl ani z rozcieńczonym H₂SO₄** (są za wodorem w szeregu); wyjątek: HNO₃ (i stężony H₂SO₄) to kwasy **utleniające** — reagują z Cu i Ag, ale **nie wydzielają H₂**.
 - **Kwas do wody, nigdy odwrotnie.**
 
 **5 doświadczeń, które trzeba umieć opisać:** odczyn wskaźnikiem (Exp. 1) · Zn + HCl i próba „pyk” (Exp. 2) · węglan + kwas, CO₂ i woda wapienna (Exp. 3) · zobojętnianie z fenoloftaleiną (Exp. 4) · przewodzenie prądu (Exp. 6).
@@ -303,15 +303,19 @@ Kwasowe są tylko atomy H związane z **tlenem** (grupy –O–H). W H₃PO₃ s
 @klocek wzor-2d {smiles="CC(=O)O" kwas="1"} | Wzór strukturalny: kwas octowy CH₃COOH
 @opis Wzór strukturalny kwasu octowego: łańcuch CH₃– i grupa –COOH, wyróżniony atom H z grupy –OH jest kwasowy.
 
-@klocek wzor-2d {smiles="OS(=O)(=O)O" kwas="1"} | Wzór strukturalny: kwas siarkowy(VI) H₂SO₄
-@opis Wzór strukturalny H₂SO₄: atom siarki z dwoma wiązaniami podwójnymi do tlenu i dwiema grupami –OH; wyróżnione dwa kwasowe atomy H.
+@klocek wzor-2d {smiles="OS(=O)(=O)O" grupa="none" kwas="1"} | Wzór strukturalny: kwas siarkowy(VI) H₂SO₄
+@opis Wzór strukturalny H₂SO₄: atom siarki z dwoma wiązaniami podwójnymi do tlenu i dwiema grupami –OH; dwa atomy H przy tlenie są kwasowe (oddają H⁺).
 
-@klocek wzor-2d {smiles="O[N+](=O)[O-]" kwas="1"} | Wzór strukturalny: kwas azotowy(V) HNO₃
-@opis Wzór strukturalny HNO₃: atom azotu z grupą –OH i dwoma atomami tlenu (jeden z wiązaniem podwójnym); wyróżniony jeden kwasowy atom H.
+@klocek wzor-2d {smiles="O[N+](=O)[O-]" grupa="none" kwas="1"} | Wzór strukturalny: kwas azotowy(V) HNO₃
+@opis Wzór strukturalny HNO₃: atom azotu z grupą –OH i dwoma atomami tlenu (jeden z wiązaniem podwójnym); jedyny atom H, przy tlenie, jest kwasowy.
 
-@klocek wzor-2d {smiles="OP(=O)(O)O" kwas="1"} | Wzór strukturalny: kwas fosforowy(V) H₃PO₄
-@opis Wzór strukturalny H₃PO₄: atom fosforu z jednym wiązaniem podwójnym do tlenu i trzema grupami –OH; wyróżnione trzy kwasowe atomy H.
+@klocek wzor-2d {smiles="OP(=O)(O)O" grupa="none" kwas="1"} | Wzór strukturalny: kwas fosforowy(V) H₃PO₄
+@opis Wzór strukturalny H₃PO₄: atom fosforu z jednym wiązaniem podwójnym do tlenu i trzema grupami –OH; trzy atomy H przy tlenach są kwasowe.
 
+::: karta understand {.poz-roz} | Rozszerzenie: te same wzory jako model kulkowy z wolnymi parami i kątami (kliknij atom)
+@klocek wzor-2d {smiles="OS(=O)(=O)O" kulki="1" pary="1" kat="1" interaktywny="1" grupa="none"} | H₂SO₄: model kulkowy, wolne pary, kąty (klik na atom)
+@opis Model kulkowy H₂SO₄: kule S i O z H, widoczne wolne pary elektronowe na tlenach i kąty między wiązaniami; kliknięcie atomu pokazuje sąsiadów, rodzaj wiązań σ/π i geometrię. Wniosek: tylko H związane z tlenem (grupy –OH) są kwasowe.
+:::
 ::: karta understand {.poz-must} | Sprawdź się
 ::: test {#quiz-s2}
 ? Nazwa H₂SO₄ to:
@@ -453,6 +457,8 @@ $$ H₂SO₄ → 2 H⁺ + SO₄²⁻
 $$ H₃PO₄ → 3 H⁺ + PO₄³⁻
 
 $$ CH₃COOH ⇌ H⁺ + CH₃COO⁻ (dysocjacja częściowa — kwas słaby)
+
+> **Uwaga:** zapisy H₂SO₄ i H₃PO₄ to **szkolny skrót**. W rzeczywistości dysocjacja zachodzi **stopniowo** — najpierw odchodzi jeden H⁺, potem drugi (a w H₃PO₄ trzeci); drugi i trzeci krok są wyraźnie słabsze. Nie czytaj skrótu jako „wszystkie H⁺ naraz”.
 :::
 
 ### 5.3 Trzy poziomy zapisu dysocjacji [[understand:ROZUMIENIE]]
@@ -531,7 +537,7 @@ Prąd w roztworze przenoszą **jony**. Tester (dwie elektrody + żarówka/dioda)
 <tbody>
 <tr><td>HCl(aq), 0,1 mol/dm³</td><td>świeci jasno</td><td>mocny elektrolit — prawie wszystkie cząsteczki dały jony</td></tr>
 <tr><td>CH₃COOH(aq), 0,1 mol/dm³</td><td>świeci słabo</td><td>słaby elektrolit — zjonizowało się ok. 1% cząsteczek</td></tr>
-<tr><td>woda destylowana</td><td>nie świeci</td><td>bardzo mało jonów (autodysocjacja wody)</td></tr>
+<tr><td>woda destylowana</td><td>praktycznie nie świeci</td><td>śladowe ilości jonów (autodysocjacja wody) — świecenie znikome, ale nie zerowe</td></tr>
 <tr><td>roztwór cukru</td><td>nie świeci</td><td>nieelektrolit — cząsteczki nie rozpadają się na jony</td></tr>
 <tr><td>HCl gazowy (HCl(g)) i bezwodny (czysty, bez wody) kwas octowy</td><td>nie świeci / bardzo słabo</td><td>gazowy HCl nie przewodzi prądu, bo nie ma w nim jonów; jony powstają dopiero po rozpuszczeniu w wodzie</td></tr>
 </tbody></table>
@@ -588,8 +594,8 @@ Prąd w roztworze przenoszą **jony**. Tester (dwie elektrody + żarówka/dioda)
 <tr class="ok-row"><td>HNO₃</td><td>mocny</td><td>α ≈ 1</td><td>→ H⁺ + NO₃⁻</td></tr>
 <tr class="ok-row"><td>H₂SO₄</td><td>mocny (tylko I stopień)</td><td>α₁ ≈ 1, α₂ < 1</td><td>→ H⁺ + HSO₄⁻ (I); HSO₄⁻ ⇌ H⁺ + SO₄²⁻ (II)</td></tr>
 <tr class="ok-row"><td>HClO₄</td><td>mocny</td><td>α ≈ 1</td><td>→ H⁺ + ClO₄⁻</td></tr>
-<tr><td>H₂SO₃</td><td>słaby (średniej mocy)</td><td>α₁ ≈ 0,3 (c = 0,1 mol/dm³)</td><td>⇌ H⁺ + HSO₃⁻</td></tr>
-<tr><td>H₃PO₄</td><td>słaby (średniej mocy)</td><td>α₁ ≈ 0,23 (c = 0,1 mol/dm³)</td><td>⇌ H⁺ + H₂PO₄⁻</td></tr>
+<tr><td>H₂SO₃</td><td>słaby (mocniejszy niż typowe słabe kwasy)</td><td>α₁ ≈ 0,3 (c = 0,1 mol/dm³)</td><td>⇌ H⁺ + HSO₃⁻</td></tr>
+<tr><td>H₃PO₄</td><td>słaby (mocniejszy niż ocet)</td><td>α₁ ≈ 0,23 (c = 0,1 mol/dm³)</td><td>⇌ H⁺ + H₂PO₄⁻</td></tr>
 <tr><td>HF</td><td>słaby</td><td>α ≈ 0,08 (c = 0,1 mol/dm³)</td><td>⇌ H⁺ + F⁻</td></tr>
 <tr><td>CH₃COOH</td><td>słaby</td><td>α ≈ 0,013 (c = 0,1 mol/dm³)</td><td>⇌ H⁺ + CH₃COO⁻</td></tr>
 <tr><td>H₂CO₃</td><td>słaby</td><td>α ≪ 1</td><td>⇌ H⁺ + HCO₃⁻</td></tr>
@@ -854,6 +860,8 @@ $$ CO₂ + H₂O ⇌ H₂CO₃ (słaby)
 
 $$ P₂O₅ + 3 H₂O → 2 H₃PO₄
 
+> P₂O₅ to **umowny skrót** (cząsteczka tlenku fosforu(V) to naprawdę P₄O₁₀: P₄O₁₀ + 6 H₂O → 4 H₃PO₄).
+
 <div class="formula-lg" data-rx="n2o5H2o">N₂O₅ + H₂O → 2 HNO₃</div>
 
 <div class="formula-lg" data-rx="n2o3H2o">N₂O₃ + H₂O → 2 HNO₂</div>
@@ -870,7 +878,7 @@ $$ H₂ + Cl₂ →(światło lub T) 2 HCl
 
 $$ H₂ + I₂ ⇌ 2 HI (T, katalizator Pt — reakcja odwracalna)
 
-$$ H₂ + S → H₂S (nad kat., podgrzewanie)
+$$ H₂ + S → H₂S (po podgrzaniu, w obecności katalizatora)
 
 > Reakcje wymagają zapoczątkowania: mieszanina H₂ + Cl₂ **wybucha na świetle** (reakcja łańcuchowa), z Br₂ i S wodór reaguje po ogrzaniu, z I₂ — tylko częściowo (równowaga). Powstają **gazy** (HCl, HBr, HI, H₂S) — kwasy dają dopiero po rozpuszczeniu w wodzie. W laboratorium otrzymuje się je najczęściej przez reakcję soli z kwasem mniej lotnym lub mocniejszym (metoda [§8](#otrzymywanie).3).
 :::
@@ -963,7 +971,7 @@ $$ Zn + H₂SO₄ (rozc.) → ZnSO₄ + H₂↑
 <div class="sr-leg"><b style="color:var(--accent,#0d6868)">Zielone</b> (przed H): wypierają H₂ z kwasów nieutleniających. <b style="color:var(--c-warn,#b06f1c)">H</b> – granica. <b style="color:var(--c-err,#b83a45)">Czerwone</b> (za H): brak reakcji z HCl. Aktywność maleje od lewej do prawej.</div>
 :::
 
-**Reguła E8:** kwas + metal → sól + H₂ **tylko dla metali przed H w szeregu**. Metale za H (Cu, Ag, Au) nie reagują z rozcieńczonymi kwasami nieutleniającymi.
+**Reguła E8:** kwas + metal → sól + H₂ **tylko dla metali przed H w szeregu**. Metale za H (Cu, Ag, Au) nie reagują z rozcieńczonymi kwasami nieutleniającymi (wyjątek: HNO₃ — kwas utleniający, patrz 9.1.2).
 
 > **Uzasadnienie:** metale aktywne łatwo oddają elektrony i tworzą kationy trwałe w wodzie — oddają elektrony jonom H₃O⁺, które redukują się do H₂. Metale szlachetne (Cu, Ag, Au) trudno się utleniają — jony H⁺ są dla nich zbyt słabym utleniaczem. Ilościowo decyduje **potencjał standardowy E°** (szereg napięciowy, LO rozszerzone): metal wypiera wodór, gdy E°(Mⁿ⁺/M) < 0 V (np. Zn −0,76 V, Fe −0,44 V, Cu +0,34 V).
 
@@ -1170,7 +1178,7 @@ $$ 3 NO₂ + H₂O → 2 HNO₃ + NO (kwas azotowy(V))
 <tr><td>H₂CO₃</td><td>napoje gazowane</td><td>CO₂ + H₂O; orzeźwiający smak napojów</td></tr>
 <tr><td>CH₃COOH</td><td>spożywczy, konserwant</td><td>E260; 5–10% w occie; konserwowanie ogórków</td></tr>
 <tr><td>HF</td><td>trawienie szkła</td><td>grawerowanie szkła (SiO₂ + 4 HF → SiF₄ + 2 H₂O)</td></tr>
-<tr><td>H₂SiO₃</td><td>żel krzemionkowy (silikażel), krzemiany</td><td>saszetki pochłaniające wilgoć (silikażel z odwodnionego H₂SiO₃); <em>szkło wodne</em> to roztwór soli Na₂SiO₃ — kleje, uszczelniacze</td></tr>
+<tr><td>H₂SiO₃</td><td>krzemiany; silikażel to odwodniona forma kwasu krzemowego (sam H₂SiO₃ nim nie jest)</td><td>saszetki pochłaniające wilgoć (silikażel z odwodnionego H₂SiO₃); <em>szkło wodne</em> to roztwór soli Na₂SiO₃ — kleje, uszczelniacze</td></tr>
 </tbody>
 </table>
 :::

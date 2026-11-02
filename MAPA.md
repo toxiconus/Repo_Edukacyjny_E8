@@ -538,7 +538,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 
 ## chemia/html  (128 pl., 15.5 MB)
 - (zwinięte; `ls chemia/html`) — duże:
-- ⚠`C1c_konfiguracje_elektronowe.html` 253 KB
+- ⚠`C1c_konfiguracje_elektronowe.html` 254 KB
 - ⚠`C2m_mol_masa_molowa.html` 109 KB
 - ⚠`C2w_wzor_elementarny_rzeczywisty.html` 112 KB
 - ⚠`C3_rownania_i_obliczenia_z_rownan.html` 106 KB
@@ -595,9 +595,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE.07.K10.regula_le_chateliera.md` 14 KB
 - `CHE.07.K11.rownowaga_ilosciowa.md` 18 KB
 
-## chemia/lekcje_md/N  (3 pl., 384 KB)
+## chemia/lekcje_md/N  (3 pl., 385 KB)
 - ⚠`CHE.02.N03.wodorotlenki.md` 134 KB
-- ⚠`CHE.02.N04.kwasy.md` 161 KB
+- ⚠`CHE.02.N04.kwasy.md` 163 KB
 - ⚠`CHE.02.N05.sole.md` 89 KB
 
 ## chemia/lekcje_md/O  (9 pl., 121 KB)

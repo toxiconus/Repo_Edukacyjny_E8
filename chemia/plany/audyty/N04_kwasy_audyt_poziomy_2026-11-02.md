@@ -41,3 +41,16 @@ Nowe klocki `kwasy_modele.js`: ph-skala, miareczkowanie (mocny/słaby), bufor, k
 | Wskaźniki: tylko trzy; zdanie o fenoloftaleinie | WPROWADZONE (ściąga, minimum) |
 | Cztery schematy reakcji + pułapka Cu/Ag/Au | JUŻ BYŁO w ściądze „E8 w 5 minut” |
 | Skrócić całą lekcję | CZĘŚCIOWO: długie treści nie zostały usunięte (zasada: bez utraty danych), tylko ukrywane filtrem „Muszę umieć”/„E8” |
+
+## Audyt 3 (drobne poprawki) — 2026-11-02
+| Uwaga | Decyzja |
+|---|---|
+| Dysocjacja H₂SO₄/H₃PO₄ — dopisek „stopniowo” przy głównym równaniu | WPROWADZONE (§5.2, ramka Uwaga) |
+| „H₂SO₃/H₃PO₄ średniej mocy” → słaby | WPROWADZONE (minimum, tabela §6, klocek kwasy-reszty): słaby, ale mocniejszy niż ocet / typowe słabe |
+| Woda destylowana „praktycznie nie świeci” | WPROWADZONE (tabela testera) |
+| Cu/Ag/Au — wyjątek HNO₃ przy samej regule | WPROWADZONE (ściąga i reguła w §9) |
+| „nad kat.” w H₂ + S | WPROWADZONE: „po podgrzaniu, w obecności katalizatora” |
+| P₂O₅ — umowny skrót | WPROWADZONE (ramka: P₄O₁₀ + 6H₂O → 4H₃PO₄) |
+| Silikażel ≠ H₂SiO₃ | WPROWADZONE (tabela zastosowań) |
+| „Lepsze wzory 2D” z bazy | Klocek wzor-2d (C2D v3): grupa="none" nie działało w prostym rendererze — NAPRAWIONE (naprawia też H₂SO₄/H₃PO₄ w C1c); komunikat „walencja niezgodna: S 6 z 2” dla H₂SO₄ — NAPRAWIONE (S, P, N, Cl z rozszerzoną walencją); dodano model kulkowy z wolnymi parami i kątami (rozszerzenie) |
+| „Lepsze grafiki” (gfx: burette, pHmeter, pHscale, splash, fumes, foam, thermometer) | NIE PRZENIESIONE — leżą w dużym silniku (gfx/chemia), nie w klockach; do zrobienia jako osobny port |

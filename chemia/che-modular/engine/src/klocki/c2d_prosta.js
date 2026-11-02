@@ -214,6 +214,7 @@
     host.textContent = '';
     try { m = uklad(zSmiles(t)); }
     catch (e) { host.textContent = 'Błąd wzoru „' + t + '”: ' + e.message; return; }
+    if (host.getAttribute('data-grupa') === 'none') m.groups = [];   // grupa="none": bez ramek grup funkcyjnych
     if (nazwa) { var h3 = document.createElement('h3'); h3.textContent = nazwa; host.appendChild(h3); }
     var svg = el('svg', {viewBox: dopasuj(m), role: 'img', 'aria-label': (nazwa || 'Cząsteczka') + ' – wzór strukturalny'}, null, host);
     m.groups.forEach(function (g) {

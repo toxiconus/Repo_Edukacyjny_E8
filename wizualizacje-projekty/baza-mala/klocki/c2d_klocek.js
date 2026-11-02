@@ -28,6 +28,7 @@
         host.innerHTML = '';
         var d = document.createElement('div');
         d.setAttribute('data-wzor', String(opc.smiles || 'CC(=O)O'));
+        if (g === 'none') d.setAttribute('data-grupa', 'none');
         d.className = 'mol';
         window.C2DP.rysuj(d);
         host.appendChild(d);
@@ -47,7 +48,8 @@
         m.bonds.forEach(function (b) { pi += b[2] - 1; });
         var t = '<b>' + esc(w.tekst) + '</b> · M ≈ ' + w.masa.toFixed(2).replace('.', ',') + ' g/mol · wiązania σ: ' + m.bonds.length + ', π: ' + pi;
         var zle = [];
-        m.atoms.forEach(function (a, i) { if (window.C2D.WALENCJA[a[0]] && suma[i] !== window.C2D.WALENCJA[a[0]]) zle.push(a[0] + (i + 1) + ': ' + suma[i] + ' z ' + window.C2D.WALENCJA[a[0]]); });
+        var ALT = {S: [2, 4, 6], P: [3, 5], N: [3, 4, 5], Cl: [1, 3, 5, 7]};   // pierwiastki z rozszerzoną walencją (np. S w H₂SO₄)
+        m.atoms.forEach(function (a, i) { if (window.C2D.WALENCJA[a[0]] && suma[i] !== window.C2D.WALENCJA[a[0]] && (ALT[a[0]] || []).indexOf(suma[i]) < 0) zle.push(a[0] + (i + 1) + ': ' + suma[i] + ' z ' + window.C2D.WALENCJA[a[0]]); });
         t += '<div style="margin-top:6px;color:' + (zle.length ? '#b91c1c' : '#15803d') + '">' +
              (zle.length ? 'Walencja niezgodna: ' + esc(zle.join(', ')) : 'Walencja zgodna dla wszystkich atomów.') + '</div>';
         if (sel >= 0) {

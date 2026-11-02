@@ -279,3 +279,4 @@
 - 2026-11-02: N04 Kwasy — system poziomów (`poziomy: tak`: poz-must/e8/roz/pon + pasek filtra w builderze md2html/lekcja_html/lekcja.js/ulepszenia.css), ściąga „E8 w 5 minut”, Exp. 11–14, quizy po sekcjach; audyt: chemia/plany/audyty/N04_kwasy_audyt_poziomy_2026-11-02.md. Mechanizm opt-in — można włączyć w innych lekcjach.
 - 2026-11-02: N04 Kwasy — 17 klocków z bazy podpiętych w md (manifest lekcje.N04); brak klocków: pH/miareczkowanie, bufor, kwaśne deszcze, rozcieńczanie, kw-reszty, kw-wlasciwosci.
 - 2026-11-02: N04 — nowe klocki kwasy_modele.js (ph-skala, miareczkowanie, bufor, kwasy-reszty, kwasy-wlasciwosci, kwasy-rozcienczanie, kwasne-deszcze), wzory strukturalne wzor-2d, karta definicji krok po kroku.
+- 2026-11-02: N04 — poprawki audytu 3, wzor-2d: grupa=none działa w c2d_prosta, walencja S/P/N/Cl w panelu; model kulkowy H₂SO₄ w rozszerzeniu.
