@@ -26,10 +26,10 @@
       host.style.display = 'block';
       if (!C.RXL) { host.textContent = 'Brak silniczka rx-lite.'; return; }
       var box = document.createElement('div'); host.appendChild(box);
-      var m = C.RXL.mount(box, opc.k, {dur: Number(opc.dur) || 6, auto: true});
+      var m = C.RXL.mount(box, opc.k, {dur: Number(opc.dur) || 6, auto: false});
       var I = C.RXL.info(opc.k), bar = document.createElement('div');
       bar.style.cssText = 'display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:center;margin-top:6px;font-size:13px';
-      var b = KLOCKI.ui.btn('▶ powtórz', function () { m.play(); }); bar.appendChild(b);
+      var b = KLOCKI.ui.btn('▶ start', function () { m.play(); }); bar.appendChild(b);
       if (I.gas) { var s = document.createElement('span'); s.style.color = 'var(--muted,#5b6b73)'; s.textContent = 'Gaz: ' + I.gas.name + ' — ' + I.gas.test; bar.appendChild(s); }
       if ((SPECS[opc.k] || {}).teacher) { var t = document.createElement('b'); t.style.color = '#b83a45'; t.textContent = 'pokaz nauczyciela'; bar.appendChild(t); }
       host.appendChild(bar);
@@ -61,9 +61,8 @@
       });
       host.appendChild(siatka);
       var bar = document.createElement('div'); bar.style.cssText = 'text-align:center;margin-top:8px';
-      bar.appendChild(KLOCKI.ui.btn('▶ wrzuć do wszystkich', function () { ms.forEach(function (m) { m.play(); }); }));
+      bar.appendChild(KLOCKI.ui.btn('▶ wrzuć metale / odczynnik', function () { ms.forEach(function (m) { m.play(); }); }));
       host.appendChild(bar);
-      setTimeout(function () { ms.forEach(function (m) { m.play(); }); }, 300);
     }
   });
 })();
