@@ -869,6 +869,9 @@ $$ P₂O₅ + 3 H₂O → 2 H₃PO₄
 > Typ reakcji: synteza (łączenie). Zachodzi dla tlenków kwasowych — z wyjątkiem SiO₂, który z wodą nie reaguje (H₂SiO₃ otrzymuje się z soli — [§8](#otrzymywanie).3). Zapis P₂O₅ jest uproszczony: rzeczywista cząsteczka to P₄O₁₀ (P₄O₁₀ + 6 H₂O → 4 H₃PO₄). NO₂ nie jest tlenkiem jednego kwasu: z wodą daje HNO₃ i HNO₂ (2 NO₂ + H₂O → HNO₃ + HNO₂).
 :::
 
+@klocek zlewki-rx {zestaw="kwasy-tlenowe"} | Tlenek kwasowy + woda: CO₂, SO₂ i P₄O₁₀ ze wskaźnikiem
+@opis Trzy zlewki z wodą i wskaźnikiem uniwersalnym; po kliknięciu do każdej trafia tlenek kwasowy: CO₂ (bąbelki gazu, barwa zmienia się lekko na pomarańczowo, kwas słaby), SO₂ (barwa czerwono-pomarańczowa, pokaz nauczyciela), P₄O₁₀ (biały proszek rozpuszcza się z ociepleniem, barwa czerwona, kwas mocniejszy). Pod każdą zlewką równanie. Wniosek: tlenek kwasowy z wodą daje kwas tlenowy, a barwa wskaźnika pokazuje jego odczyn.
+
 ### 8.2 Niemetal + wodór → kwas beztlenowy
 
 ::: karta basic
@@ -883,6 +886,9 @@ $$ H₂ + S → H₂S (po podgrzaniu, w obecności katalizatora)
 > Reakcje wymagają zapoczątkowania: mieszanina H₂ + Cl₂ **wybucha na świetle** (reakcja łańcuchowa), z Br₂ i S wodór reaguje po ogrzaniu, z I₂ — tylko częściowo (równowaga). Powstają **gazy** (HCl, HBr, HI, H₂S) — kwasy dają dopiero po rozpuszczeniu w wodzie. W laboratorium otrzymuje się je najczęściej przez reakcję soli z kwasem mniej lotnym lub mocniejszym (metoda [§8](#otrzymywanie).3).
 :::
 
+@klocek zlewki-rx {zestaw="kwasy-z-gazu"} | Kwas z gazu rozpuszczonego w wodzie: HCl i H₂S
+@opis Dwie zlewki z wodą i wskaźnikiem; do pierwszej wpływa chlorowodór (oranż metylowy robi się czerwony, kwas mocny), do drugiej siarkowodór (wskaźnik uniwersalny pomarańczowy, kwas słaby). Pod każdą zlewką równanie rozpuszczania i dysocjacji. Wniosek: kwas beztlenowy to wodny roztwór gazu, a jego moc widać po barwie wskaźnika.
+
 ### 8.3 Sól + kwas mocniejszy lub mniej lotny → nowy kwas
 
 ::: karta basic
@@ -892,6 +898,9 @@ $$ Na₂SiO₃ + 2 HCl → H₂SiO₃↓ + 2 NaCl
 
 > Tak otrzymuje się kwasy lotne (HCl) i kwasy nierozpuszczalne (H₂SiO₃ — SiO₂ z wodą nie reaguje). To reakcja kwas + sól: zachodzi, gdy powstaje **gaz** (HCl, CO₂, SO₂, H₂S) lub **osad** — warunki, reguły i dalsze przykłady (CaCO₃, Na₂SO₃, Na₂S) w [§9](#reakcje).4. Doświadczenie z NaCl + H₂SO₄ to **wyłącznie pokaz nauczycielski pod dygestorium** — HCl gazowy jest drażniący.
 :::
+
+@klocek zlewki-rx {zestaw="kwasy-z-soli"} | Sól + kwas → nowy kwas: HCl z NaCl oraz osad H₂SiO₃
+@opis Dwa naczynia: w pierwszym biały NaCl z kwasem siarkowym(VI) stężonym wydziela gaz HCl, który dymi w powietrzu (pokaz nauczyciela, pod dygestorium); w drugim roztwór Na₂SiO₃ po dodaniu HCl mętnieje, powstaje biały galaretowaty osad kwasu krzemowego. Wniosek: mocniejszy lub mniej lotny kwas wypiera z soli słabszy lub bardziej lotny kwas, który ulatnia się albo wytrąca.
 
 ### 8.4 Otrzymywanie HCl(aq) — etapy
 
@@ -958,6 +967,12 @@ $$ Zn + H₂SO₄ (rozc.) → ZnSO₄ + H₂↑
 @klocek zlewki-rx {zestaw="metale-hcl"} | Trzy zlewki z kwasem solnym: wrzucamy Mg, Zn i Cu
 @opis Trzy zlewki z kwasem solnym obok siebie; po kliknięciu „wrzuć” w każdej opada metal: w zlewce z magnezem bąbelki wodoru pojawiają się najszybciej i najgęściej, z cynkiem wolniej, z miedzią nie ma bąbelków. Pod każdą zlewką równanie (przy Cu: brak reakcji). Wniosek: im aktywniejszy metal, tym burzliwsza reakcja, a metal stojący za wodorem nie reaguje z kwasem.
 
+@klocek zlewki-rx {zestaw="mg-kwasy"} | Ten sam magnez w trzech kwasach: HCl, H₂SO₄ i ocet
+@opis Trzy zlewki z magnezem, każda z innym kwasem: w kwasie solnym i rozcieńczonym siarkowym(VI) bąbelki wodoru wydzielają się szybko i gęsto, w occie (kwas słaby, mało jonów H⁺) wyraźnie wolniej i rzadziej. Pod każdą zlewką równanie; we wszystkich powstaje sól i H₂. Wniosek: ten sam metal daje w każdym kwasie sól i wodór, ale szybkość zależy od mocy kwasu (ilości H⁺ w roztworze).
+
+@klocek zlewki-rx {zestaw="zn-kwasy"} | Ten sam cynk w trzech kwasach: HCl, H₂SO₄ i ocet
+@opis Trzy zlewki z granulkami cynku w HCl, w rozcieńczonym H₂SO₄ i w occie: w dwóch pierwszych równomierne bąbelki wodoru, w occie bardzo rzadkie, reakcja prawie niewidoczna. Wniosek: im słabszy kwas, tym wolniejsza reakcja z metalem, a produkty są tego samego typu (sól kwasu + H₂).
+
 @model gfx-scene-acidMetal | Metal + kwas solny → wodór i próba „pyk!” | Doświadczenie w silniku GFX · otwiera się w oknie
 @opis Scena doświadczenia: metal (np. cynk) w kwasie solnym roztwarza się, wydzielają się pęcherzyki gazu zbierane w probówce; zbliżona do płomienia probówka daje charakterystyczny odgłos „pyk”. Wniosek: w reakcji metalu aktywnego z kwasem powstaje sól i wodór.
 
@@ -1013,9 +1028,6 @@ $$ 3 Cu + 8 HNO₃ (rozcieńczony) → 3 Cu(NO₃)₂ + 2 NO↑ + 4 H₂O
 Mieszanina stęż. HNO₃ i HCl (1:3) rozpuszcza Au i Pt: HNO₃ utlenia metal, a jony Cl⁻ wiążą powstały kation w trwały kompleks, co przesuwa równowagę: Au + HNO₃ + 4 HCl → H[AuCl₄] + NO↑ + 2 H₂O.
 :::
 :::
-
-@klocek zlewki-rx {zestaw="moc-kwasu"} | Ten sam magnez: mocny kwas (HCl) kontra słaby (ocet)
-@opis Dwie zlewki z magnezem: w kwasie solnym (mocnym) bąbelki wodoru wydzielają się gwałtownie, w occie (słabym, mało jonów H⁺) wyraźnie wolniej i słabiej. Wniosek: moc kwasu to stopień dysocjacji, czyli ilość H⁺ w roztworze, i od niej zależy szybkość reakcji.
 
 ### 9.2 Kwas + tlenek metalu → sól + woda {#rx-tlenek}
 

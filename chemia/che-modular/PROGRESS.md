@@ -283,3 +283,4 @@
 - 2026-11-02: N04 — klocek zlewka-rx (rx-lite) dla 9 doświadczeń z kwasami.
 - 2026-11-02: N04 — klocek zlewki-rx (kilka zlewek naraz, jak pracownia f06): Mg/Zn/Cu w HCl, Mg w HCl vs ocet (§9.1); spec mgOcet.
 - 2026-11-02: N04 §9.1.1 — klocek probowki z P01 (Mg, Ca, Na w wodzie) jako porównanie z kwasem; manifest N04 + dane/pierwiastki.js, znaki.js, probowki.js.
+- 2026-11-02: N04 — zlewki-rx: otrzymywanie kwasów w §8 (tlenki kwasowe + woda, gaz + woda, sól + kwas, osad H₂SiO₃) i różne kwasy (Mg/Zn w HCl, H₂SO₄, ocet) w §9.1; nowe specy w zlewka_rx.js.

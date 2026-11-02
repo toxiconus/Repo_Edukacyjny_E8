@@ -16,6 +16,16 @@
     sodaOcet: {n: 'Soda oczyszczona + ocet', solid: {col: [246, 246, 240], eq: 4, end: 0, t: 'powder', shape: 'powder'}, gas: 'CO2', bubN: 2.4, foam: .9, eq: 'NaHCO₃ + CH₃COOH → CH₃COONa + H₂O + CO₂↑'},
     skorupkaOcet: {n: 'Skorupka jajka + ocet', solid: {col: [236, 228, 210], eq: 4, end: .4, t: 'chips', shape: 'chips'}, gas: 'CO2', bubN: 1, eq: 'CaCO₃ + 2 CH₃COOH → (CH₃COO)₂Ca + H₂O + CO₂↑'},
     mgOcet: {n: 'Mg + ocet (słaby kwas)', solid: {col: [190, 196, 204], eq: 3, end: .6, t: 'chips', shape: 'chips'}, gas: 'H2', bubN: .6, eq: 'Mg + 2 CH₃COOH → (CH₃COO)₂Mg + H₂↑'},
+    mgH2so4: {n: 'Mg + H₂SO₄ (rozc.)', solid: {col: [190, 196, 204], eq: 3, end: .1, t: 'chips', shape: 'chips'}, gas: 'H2', bubN: 2.4, eq: 'Mg + H₂SO₄ → MgSO₄ + H₂↑'},
+    znH2so4: {n: 'Zn + H₂SO₄ (rozc.)', solid: {col: [150, 158, 170], eq: 4, end: .4, t: 'chips', shape: 'chips'}, gas: 'H2', bubN: 1.5, eq: 'Zn + H₂SO₄ → ZnSO₄ + H₂↑'},
+    znOcet: {n: 'Zn + ocet (słaby kwas)', solid: {col: [150, 158, 170], eq: 4, end: .8, t: 'chips', shape: 'chips'}, gas: 'H2', bubN: .25, eq: 'Zn + 2 CH₃COOH → (CH₃COO)₂Zn + H₂↑'},
+    co2H2oUni: {n: 'CO₂ + H₂O (+ wskaźnik uniwersalny)', l0: ['ind-uniwersalny', 7], l1: ['ind-uniwersalny', 5], gas: 'CO2', bubN: 1.2, eq: 'CO₂ + H₂O ⇌ H₂CO₃ (słaby kwas)'},
+    so2H2oUni: {n: 'SO₂ + H₂O (+ wskaźnik; pokaz)', l0: ['ind-uniwersalny', 7], l1: ['ind-uniwersalny', 3], bubN: 1, teacher: 1, eq: 'SO₂ + H₂O ⇌ H₂SO₃'},
+    p4o10H2o: {n: 'P₄O₁₀ + H₂O (+ wskaźnik; pokaz)', l0: ['ind-uniwersalny', 7], l1: ['ind-uniwersalny', 1], solid: {col: [250, 250, 250], eq: 4, end: 0, t: 'powder', shape: 'powder'}, heat: .8, T: 50, teacher: 1, eq: 'P₄O₁₀ + 6 H₂O → 4 H₃PO₄'},
+    hclH2oOranz: {n: 'HCl(g) + H₂O (+ oranż metylowy)', l0: ['ind-oranz-metylowy', 7], l1: ['ind-oranz-metylowy', 1], gas: 'HCl', bubN: .5, eq: 'HCl + H₂O → H₃O⁺ + Cl⁻'},
+    h2sH2oUni: {n: 'H₂S + H₂O (+ wskaźnik uniwersalny)', l0: ['ind-uniwersalny', 7], l1: ['ind-uniwersalny', 4], gas: 'H2S', bubN: .5, eq: 'H₂S + H₂O ⇌ H₃O⁺ + HS⁻ (kwas słaby)'},
+    naclH2so4: {n: 'NaCl + H₂SO₄ (stęż.; pokaz)', solid: {col: [250, 250, 250], eq: 4, end: 0, t: 'powder', shape: 'powder'}, gas: 'HCl', fumes: 1, bubN: 1.1, heat: .6, T: 50, teacher: 1, eq: 'NaCl + H₂SO₄ → NaHSO₄ + HCl↑'},
+    na2sio3Hcl: {n: 'Na₂SiO₃ + HCl: osad kwasu', ppt: 'ppt-caco3', bubN: 0, eq: 'Na₂SiO₃ + 2 HCl → H₂SiO₃↓ + 2 NaCl'},
     rdzaOcet: {n: 'Rdza + ocet', solid: {col: [150, 82, 40], eq: 3, end: .15, t: 'powder', shape: 'powder'}, l1: 'ion-fe3', bubN: 0, eq: 'Fe₂O₃ + 6 CH₃COOH → 2 Fe(CH₃COO)₃ + 3 H₂O'}
   };
   if (C.RXL) C.RXL.data({specs: SPECS});
@@ -40,6 +50,11 @@
   var ZESTAWY = {
     'metale-hcl': ['mgHcl', 'znHcl', 'cuHcl'],
     'moc-kwasu': ['mgHcl', 'mgOcet'],
+    'kwasy-tlenowe': ['co2H2oUni', 'so2H2oUni', 'p4o10H2o'],
+    'kwasy-z-gazu': ['hclH2oOranz', 'h2sH2oUni'],
+    'kwasy-z-soli': ['naclH2so4', 'na2sio3Hcl'],
+    'mg-kwasy': ['mgHcl', 'mgH2so4', 'mgOcet'],
+    'zn-kwasy': ['znHcl', 'znH2so4', 'znOcet'],
     'weglan-kwasy': ['caco3Hcl', 'skorupkaOcet', 'sodaOcet']
   };
   KLOCKI.def('zlewki-rx', {
