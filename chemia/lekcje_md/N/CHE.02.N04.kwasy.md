@@ -955,6 +955,9 @@ $$ Zn + H₂SO₄ (rozc.) → ZnSO₄ + H₂↑
 @klocek probowki-wybor {zestaw="metale-hcl" wybrane="Mg,Zn,Fe,Cu" max="4"} | Szereg aktywności: metale w kwasie solnym (wybierz metale)
 @opis Cztery probówki z kwasem solnym i metalami Mg, Zn, Fe, Cu: Mg reaguje najgwałtowniej, Zn i Fe wolniej z pęcherzykami wodoru, w probówce z Cu nic się nie dzieje. Wniosek: z kwasami reagują tylko metale aktywniejsze od wodoru.
 
+@klocek zlewki-rx {zestaw="metale-hcl"} | Trzy zlewki z kwasem solnym: wrzucamy Mg, Zn i Cu
+@opis Trzy zlewki z kwasem solnym obok siebie; po kliknięciu „wrzuć” w każdej opada metal: w zlewce z magnezem bąbelki wodoru pojawiają się najszybciej i najgęściej, z cynkiem wolniej, z miedzią nie ma bąbelków. Pod każdą zlewką równanie (przy Cu: brak reakcji). Wniosek: im aktywniejszy metal, tym burzliwsza reakcja, a metal stojący za wodorem nie reaguje z kwasem.
+
 @model gfx-scene-acidMetal | Metal + kwas solny → wodór i próba „pyk!” | Doświadczenie w silniku GFX · otwiera się w oknie
 @opis Scena doświadczenia: metal (np. cynk) w kwasie solnym roztwarza się, wydzielają się pęcherzyki gazu zbierane w probówce; zbliżona do płomienia probówka daje charakterystyczny odgłos „pyk”. Wniosek: w reakcji metalu aktywnego z kwasem powstaje sól i wodór.
 
@@ -1003,6 +1006,9 @@ $$ 3 Cu + 8 HNO₃ (rozcieńczony) → 3 Cu(NO₃)₂ + 2 NO↑ + 4 H₂O
 Mieszanina stęż. HNO₃ i HCl (1:3) rozpuszcza Au i Pt: HNO₃ utlenia metal, a jony Cl⁻ wiążą powstały kation w trwały kompleks, co przesuwa równowagę: Au + HNO₃ + 4 HCl → H[AuCl₄] + NO↑ + 2 H₂O.
 :::
 :::
+
+@klocek zlewki-rx {zestaw="moc-kwasu"} | Ten sam magnez: mocny kwas (HCl) kontra słaby (ocet)
+@opis Dwie zlewki z magnezem: w kwasie solnym (mocnym) bąbelki wodoru wydzielają się gwałtownie, w occie (słabym, mało jonów H⁺) wyraźnie wolniej i słabiej. Wniosek: moc kwasu to stopień dysocjacji, czyli ilość H⁺ w roztworze, i od niej zależy szybkość reakcji.
 
 ### 9.2 Kwas + tlenek metalu → sól + woda {#rx-tlenek}
 

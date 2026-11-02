@@ -15,6 +15,7 @@
     hclDymi: {n: 'Stężony HCl „dymi”', gas: 'HCl', bubN: .3, fumes: 1, teacher: 1, eq: 'HCl(g) + H₂O(para) → mgiełka kropelek kwasu'},
     sodaOcet: {n: 'Soda oczyszczona + ocet', solid: {col: [246, 246, 240], eq: 4, end: 0, t: 'powder', shape: 'powder'}, gas: 'CO2', bubN: 2.4, foam: .9, eq: 'NaHCO₃ + CH₃COOH → CH₃COONa + H₂O + CO₂↑'},
     skorupkaOcet: {n: 'Skorupka jajka + ocet', solid: {col: [236, 228, 210], eq: 4, end: .4, t: 'chips', shape: 'chips'}, gas: 'CO2', bubN: 1, eq: 'CaCO₃ + 2 CH₃COOH → (CH₃COO)₂Ca + H₂O + CO₂↑'},
+    mgOcet: {n: 'Mg + ocet (słaby kwas)', solid: {col: [190, 196, 204], eq: 3, end: .6, t: 'chips', shape: 'chips'}, gas: 'H2', bubN: .6, eq: 'Mg + 2 CH₃COOH → (CH₃COO)₂Mg + H₂↑'},
     rdzaOcet: {n: 'Rdza + ocet', solid: {col: [150, 82, 40], eq: 3, end: .15, t: 'powder', shape: 'powder'}, l1: 'ion-fe3', bubN: 0, eq: 'Fe₂O₃ + 6 CH₃COOH → 2 Fe(CH₃COO)₃ + 3 H₂O'}
   };
   if (C.RXL) C.RXL.data({specs: SPECS});
@@ -32,6 +33,37 @@
       if (I.gas) { var s = document.createElement('span'); s.style.color = 'var(--muted,#5b6b73)'; s.textContent = 'Gaz: ' + I.gas.name + ' — ' + I.gas.test; bar.appendChild(s); }
       if ((SPECS[opc.k] || {}).teacher) { var t = document.createElement('b'); t.style.color = '#b83a45'; t.textContent = 'pokaz nauczyciela'; bar.appendChild(t); }
       host.appendChild(bar);
+    }
+  });
+
+  /* KLOCEK: zlewki-rx — kilka zlewek obok siebie, jeden przycisk „wrzuć” startuje wszystkie naraz (jak pracownia f06: litowce + woda). */
+  var ZESTAWY = {
+    'metale-hcl': ['mgHcl', 'znHcl', 'cuHcl'],
+    'moc-kwasu': ['mgHcl', 'mgOcet'],
+    'weglan-kwasy': ['caco3Hcl', 'skorupkaOcet', 'sodaOcet']
+  };
+  KLOCKI.def('zlewki-rx', {
+    opis: 'Kilka zlewek naraz (np. Mg, Zn i Cu w HCl); przycisk „wrzuć” uruchamia wszystkie animacje jednocześnie, pod każdą równanie.',
+    domyslne: {zestaw: 'metale-hcl', k: '', dur: 6},
+    html: function (host, opc) {
+      host.style.display = 'block';
+      if (!C.RXL) { host.textContent = 'Brak silniczka rx-lite.'; return; }
+      var lista = opc.k ? String(opc.k).split(',').map(function (x) { return x.trim(); }) : (ZESTAWY[opc.zestaw] || ZESTAWY['metale-hcl']);
+      var siatka = document.createElement('div');
+      siatka.style.cssText = 'display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px';
+      var ms = [];
+      lista.forEach(function (k) {
+        var kom = document.createElement('div'), box = document.createElement('div');
+        kom.appendChild(box);
+        ms.push(C.RXL.mount(box, k, {dur: Number(opc.dur) || 6, auto: false}));
+        var e = document.createElement('div'); e.style.cssText = 'text-align:center;font-size:13px;margin-top:2px';
+        e.textContent = (SPECS[k] || {}).eq || ''; kom.appendChild(e); siatka.appendChild(kom);
+      });
+      host.appendChild(siatka);
+      var bar = document.createElement('div'); bar.style.cssText = 'text-align:center;margin-top:8px';
+      bar.appendChild(KLOCKI.ui.btn('▶ wrzuć do wszystkich', function () { ms.forEach(function (m) { m.play(); }); }));
+      host.appendChild(bar);
+      setTimeout(function () { ms.forEach(function (m) { m.play(); }); }, 300);
     }
   });
 })();

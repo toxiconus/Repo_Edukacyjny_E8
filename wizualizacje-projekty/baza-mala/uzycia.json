@@ -295,6 +295,7 @@
   "probowki": "klocek",
   "wzor-2d": "klocek",
   "zlewka-rx": "klocek",
+  "zlewki-rx": "klocek",
   "osady-dwie-sole": "klocek",
   "tabela-rozpuszczalnosci": "klocek",
   "dysocjacja-vs-jonizacja": "klocek",
@@ -969,6 +970,9 @@
   "zlewka-rx": {
    "N04": 9
   },
+  "zlewki-rx": {
+   "N04": 2
+  },
   "osady-dwie-sole": {
    "J03": 1
   },
@@ -1636,6 +1640,7 @@
   "rownania-jonowe",
   "wzor-2d",
   "zlewka-rx",
+  "zlewki-rx",
   "tabela-rozpuszczalnosci",
   "dysocjacja-vs-jonizacja",
   "przeniesienie-protonu",
