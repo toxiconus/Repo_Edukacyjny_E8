@@ -54,3 +54,6 @@ Nowe klocki `kwasy_modele.js`: ph-skala, miareczkowanie (mocny/słaby), bufor, k
 | Silikażel ≠ H₂SiO₃ | WPROWADZONE (tabela zastosowań) |
 | „Lepsze wzory 2D” z bazy | Klocek wzor-2d (C2D v3): grupa="none" nie działało w prostym rendererze — NAPRAWIONE (naprawia też H₂SO₄/H₃PO₄ w C1c); komunikat „walencja niezgodna: S 6 z 2” dla H₂SO₄ — NAPRAWIONE (S, P, N, Cl z rozszerzoną walencją); dodano model kulkowy z wolnymi parami i kątami (rozszerzenie) |
 | „Lepsze grafiki” (gfx: burette, pHmeter, pHscale, splash, fumes, foam, thermometer) | NIE PRZENIESIONE — leżą w dużym silniku (gfx/chemia), nie w klockach; do zrobienia jako osobny port |
+
+## Dopisek 3 (zlewki z małej bazy)
+Znaleziony w repo mały silniczek `engine/src/lite/rx-lite.js` (SVG: zlewka, probówka w statywie, tygiel, palnik; ciało stałe, bąbelki, piana, opary, osad, barwa wskaźnika). Nowy klocek `zlewka-rx` (+ dane doświadczeń kwasowych) pokazuje w lekcji: Zn/Cu + HCl, CaCO₃ + HCl, zobojętnianie z fenoloftaleiną, CuO + H₂SO₄ (ogrzewanie), cukier + H₂SO₄ (pokaz), soda/skorupka/rdza + ocet. Zastępuje wcześniejsze probówki w Exp. 4, 5, 12–14. Duże sceny gfx (biureta, pehametr) wymagają dużego silnika — nie używane.

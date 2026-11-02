@@ -1,0 +1,37 @@
+/* KLOCEK: zlewka-rx — doświadczenie w zlewce / probówce (SVG, silniczek rx-lite: ciało stałe, bąbelki, piana, opary, osad, ogrzewanie, barwa wskaźnika).
+   Wymaga ../lite/rx-lite.js (w manifeście przed tym plikiem). Opcje: k = klucz doświadczenia (zob. SPECS niżej), dur = czas animacji w s (6).
+   Klik „powtórz” odtwarza animację. Dane kwasów (N04) są tu, bo rx-lite czyta specyfikacje w tym samym formacie co lab-dane.json. */
+(function () {
+  var C = window.CHE = window.CHE || {};
+  var SPECS = {
+    znHcl: {n: 'Zn + HCl', solid: {col: [150, 158, 170], eq: 4, end: .4, t: 'chips', shape: 'chips'}, gas: 'H2', bubN: 1.6, eq: 'Zn + 2 HCl → ZnCl₂ + H₂↑'},
+    mgHcl: {n: 'Mg + HCl', solid: {col: [190, 196, 204], eq: 3, end: .1, t: 'chips', shape: 'chips'}, gas: 'H2', bubN: 2.6, heat: 0, eq: 'Mg + 2 HCl → MgCl₂ + H₂↑'},
+    feHcl: {n: 'Fe + HCl (wolno)', solid: {col: [110, 112, 118], eq: 4, end: .8, t: 'chips', shape: 'chips'}, l1: 'ion-fe2', gas: 'H2', bubN: .5, eq: 'Fe + 2 HCl → FeCl₂ + H₂↑'},
+    cuHcl: {n: 'Cu + HCl — brak reakcji', solid: {col: [184, 115, 51], eq: 4, end: 1, t: 'chips', shape: 'chips'}, bubN: 0, eq: 'Cu + HCl → (brak reakcji)'},
+    caco3Hcl: {n: 'CaCO₃ + HCl', solid: {col: [242, 242, 236], eq: 4, end: .3, t: 'chips', shape: 'chips'}, gas: 'CO2', bubN: 1.8, foam: .3, eq: 'CaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂↑'},
+    naohHclPhph: {n: 'NaOH + HCl (fenoloftaleina)', l0: ['ind-fenoloftaleina', 13], l1: ['ind-fenoloftaleina', 7], eq: 'NaOH + HCl → NaCl + H₂O'},
+    cuoH2so4: {n: 'CuO + H₂SO₄ (ogrzewanie)', vessel: 'tube', heat: 1, T: 60, solid: {col: [28, 28, 30], eq: 3, end: 0, t: 'powder', shape: 'powder'}, l1: 'ion-cu2', eq: 'CuO + H₂SO₄ → CuSO₄ + H₂O'},
+    cukierH2so4: {n: 'Cukier + stężony H₂SO₄ (pokaz nauczyciela)', solid: {col: [250, 250, 246], eq: 4, end: .2, t: 'powder', shape: 'powder'}, l0: '#e9f2f6', l1: '#2a1b10', foam: 1.4, fumes: 1, teacher: 1, eq: 'C₁₂H₂₂O₁₁ → 12 C + 11 H₂O (odwodnienie)'},
+    hclDymi: {n: 'Stężony HCl „dymi”', gas: 'HCl', bubN: .3, fumes: 1, teacher: 1, eq: 'HCl(g) + H₂O(para) → mgiełka kropelek kwasu'},
+    sodaOcet: {n: 'Soda oczyszczona + ocet', solid: {col: [246, 246, 240], eq: 4, end: 0, t: 'powder', shape: 'powder'}, gas: 'CO2', bubN: 2.4, foam: .9, eq: 'NaHCO₃ + CH₃COOH → CH₃COONa + H₂O + CO₂↑'},
+    skorupkaOcet: {n: 'Skorupka jajka + ocet', solid: {col: [236, 228, 210], eq: 4, end: .4, t: 'chips', shape: 'chips'}, gas: 'CO2', bubN: 1, eq: 'CaCO₃ + 2 CH₃COOH → (CH₃COO)₂Ca + H₂O + CO₂↑'},
+    rdzaOcet: {n: 'Rdza + ocet', solid: {col: [150, 82, 40], eq: 3, end: .15, t: 'powder', shape: 'powder'}, l1: 'ion-fe3', bubN: 0, eq: 'Fe₂O₃ + 6 CH₃COOH → 2 Fe(CH₃COO)₃ + 3 H₂O'}
+  };
+  if (C.RXL) C.RXL.data({specs: SPECS});
+  KLOCKI.def('zlewka-rx', {
+    opis: 'Doświadczenie w zlewce lub probówce: ciało stałe, bąbelki gazu, piana, opary, ogrzewanie i zmiana barwy cieczy; przycisk „powtórz” odtwarza animację.',
+    domyslne: {k: 'znHcl', dur: 6},
+    html: function (host, opc) {
+      host.style.display = 'block';
+      if (!C.RXL) { host.textContent = 'Brak silniczka rx-lite.'; return; }
+      var box = document.createElement('div'); host.appendChild(box);
+      var m = C.RXL.mount(box, opc.k, {dur: Number(opc.dur) || 6, auto: true});
+      var I = C.RXL.info(opc.k), bar = document.createElement('div');
+      bar.style.cssText = 'display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:center;margin-top:6px;font-size:13px';
+      var b = KLOCKI.ui.btn('▶ powtórz', function () { m.play(); }); bar.appendChild(b);
+      if (I.gas) { var s = document.createElement('span'); s.style.color = 'var(--muted,#5b6b73)'; s.textContent = 'Gaz: ' + I.gas.name + ' — ' + I.gas.test; bar.appendChild(s); }
+      if ((SPECS[opc.k] || {}).teacher) { var t = document.createElement('b'); t.style.color = '#b83a45'; t.textContent = 'pokaz nauczyciela'; bar.appendChild(t); }
+      host.appendChild(bar);
+    }
+  });
+})();

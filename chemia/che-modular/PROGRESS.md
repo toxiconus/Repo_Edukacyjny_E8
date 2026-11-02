@@ -280,3 +280,4 @@
 - 2026-11-02: N04 Kwasy — 17 klocków z bazy podpiętych w md (manifest lekcje.N04); brak klocków: pH/miareczkowanie, bufor, kwaśne deszcze, rozcieńczanie, kw-reszty, kw-wlasciwosci.
 - 2026-11-02: N04 — nowe klocki kwasy_modele.js (ph-skala, miareczkowanie, bufor, kwasy-reszty, kwasy-wlasciwosci, kwasy-rozcienczanie, kwasne-deszcze), wzory strukturalne wzor-2d, karta definicji krok po kroku.
 - 2026-11-02: N04 — poprawki audytu 3, wzor-2d: grupa=none działa w c2d_prosta, walencja S/P/N/Cl w panelu; model kulkowy H₂SO₄ w rozszerzeniu.
+- 2026-11-02: N04 — klocek zlewka-rx (rx-lite) dla 9 doświadczeń z kwasami.

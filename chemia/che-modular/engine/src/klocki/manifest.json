@@ -58,7 +58,8 @@
     "fizyka_elektrostatyka.js": "elektrostatyka: elektryzowanie, przewodnik-izolator, kule-ladunek, elektroskop, prawo-coulomba, linie-pola",
     "chemia_wstep.js": "wstęp do chemii: lancuch-poziomow, zlewka-predykcja, mapa-mysli, czasteczki-3d, destylacja",
     "okresowy_tlenki.js": "układ okresowy 1–54 (tryby), konstruktor/detektor/reaktor tlenku, trend tlenków",
-    "kwasy_modele.js": "kwasy (N04): ph-skala, miareczkowanie, bufor, kwasy-reszty, kwasy-wlasciwosci, kwasy-rozcienczanie, kwasne-deszcze"
+    "kwasy_modele.js": "kwasy (N04): ph-skala, miareczkowanie, bufor, kwasy-reszty, kwasy-wlasciwosci, kwasy-rozcienczanie, kwasne-deszcze",
+    "zlewka_rx.js": "zlewka-rx: doświadczenia z kwasami w zlewce/probówce (SVG, rx-lite): Zn/Mg/Fe/Cu + HCl, CaCO₃, zobojętnianie, CuO, cukier + H₂SO₄, soda/skorupka/rdza + ocet"
   },
   "lekcje": {
     "P01": [
@@ -366,6 +367,7 @@
       "klocki.js",
       "pomocnicze.js",
       "ui_klocki.js",
+      "../lite/rx-lite.js",
       "naczynia.js",
       "probowki_odczyn.js",
       "probowki_wybor.js",
@@ -380,7 +382,8 @@
       "c2d_wzor.js",
       "c2d_prosta.js",
       "c2d_klocek.js",
-      "kwasy_modele.js"
+      "kwasy_modele.js",
+      "zlewka_rx.js"
     ],
     "N05": [
       "klocki.js",

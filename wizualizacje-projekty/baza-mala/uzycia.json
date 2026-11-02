@@ -294,6 +294,7 @@
   "rownania-jonowe": "klocek",
   "probowki": "klocek",
   "wzor-2d": "klocek",
+  "zlewka-rx": "klocek",
   "osady-dwie-sole": "klocek",
   "tabela-rozpuszczalnosci": "klocek",
   "dysocjacja-vs-jonizacja": "klocek",
@@ -854,7 +855,7 @@
    "LKO_ORG03_alkohole": 1,
    "LKO_ORG04_glicerol": 1,
    "LKO_ORG05_kwasy": 1,
-   "N04": 7
+   "N04": 2
   },
   "ph-skala": {
    "N04": 1
@@ -964,6 +965,9 @@
    "LKO_ORG06_estry": 2,
    "LKO_ORG07_cukry": 1,
    "N04": 6
+  },
+  "zlewka-rx": {
+   "N04": 9
   },
   "osady-dwie-sole": {
    "J03": 1
@@ -1631,6 +1635,7 @@
   "doswiadczenie",
   "rownania-jonowe",
   "wzor-2d",
+  "zlewka-rx",
   "tabela-rozpuszczalnosci",
   "dysocjacja-vs-jonizacja",
   "przeniesienie-protonu",
