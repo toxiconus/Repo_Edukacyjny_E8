@@ -482,3 +482,4 @@ Dyfuzja (z PLAN_RYSUNKOW_BIO): już istnieje `transport-blona` — nie dublowano
 - Implantacja (B2f): „ok. 6–10 (według części źródeł do 12)”.
 - L009/L016 „80% naprawy DNA”: opis oznaczony jako parametr symulacji, nie wynik badań.
 - Zostaje bez zmian, z powodem: trzustka 95/5% i potencjały neuronu (wiedza podręcznikowa, ZPE nie podaje); tłuszcz 38 kJ/g w REV01 (zaokrąglenie 9 kcal/g; chemia O13 ma wartość dokładniejszą — różnica to zaokrąglenie); L001A „1,5–2 mld lat” (oznaczone orientacyjnie); wiersz „tlenki” w MAPA_ZPE bez pliku lekcji (lekcja N02 tlenki istnieje w chemia/che-modular — wiersz do powiązania przy kolejnym przeglądzie).
+| chemia | N04 | Kwasy | 2026-11-02 | wprowadzone: poziomy + filtr, ściąga, Exp. 11–14, quizy (odrzucone/istniejące — w audycie) | `chemia/plany/audyty/N04_kwasy_audyt_poziomy_2026-11-02.md` | — |

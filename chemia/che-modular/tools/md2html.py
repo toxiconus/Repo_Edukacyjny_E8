@@ -111,10 +111,24 @@ def tag_spec(spec):
 # ---------------------------------------------------------------- bloki
 class Ctx:
     def __init__(self, meta): self.meta = meta; self.toc = []
+    @property
+    def poz(self): return str(self.meta.get('poziomy', '')).strip().lower() in ('tak', '1', 'true')
+
+def poz_cls(at, ctx, default):
+    """Poziomy treści (opt-in: poziomy: tak). Klasy poz-must / poz-e8 / poz-roz / poz-pon; brak jawnej → default."""
+    if not ctx.poz or not default: return at
+    at = dict(at); c = list(at.get('class', []))
+    if any(x.startswith('poz-') for x in c): return at
+    at['class'] = c + [default]; return at
+
+def poz_from_title(t):
+    if '[[extra:' in t: return 'poz-pon'
+    if '[[understand:' in t: return 'poz-roz'
+    return ''
 
 def parse_blocks(lines, ctx):
     """Lista linii → HTML. Kontenery ::: … ::: (zagnieżdżane), sekcje ##."""
-    out = []; i = 0; n = len(lines); section_open = False
+    out = []; i = 0; n = len(lines); section_open = False; h3_open = False
     while i < n:
         ln = lines[i]; st = ln.strip()
         if not st: i += 1; continue
@@ -129,21 +143,33 @@ def parse_blocks(lines, ctx):
                 if depth == 0: break
                 j += 1
             if depth: raise SyntaxError('niezamknięty kontener w linii %d: %s' % (i + 1, st))
+            if h3_open and ctx.poz and 'poz-must' in st.split('|')[0]: out.append('</div>'); h3_open = False   # karta „muszę umieć” wychodzi z bloku ###
             out.append(container(st[3:].strip(), lines[i + 1:j], ctx)); i = j + 1; continue
         # sekcja
         if st.startswith('## '):
+            if h3_open: out.append('</div>'); h3_open = False
             if section_open: out.append('</section>')
             head, at = split_trailing_attrs(st[3:])
             num, _, title = head.partition(' | ') if ' | ' in head else ('', '', head)
             sid = at.get('id', '')
             ctx.toc.append((sid, num.strip(), re.sub(r'\[\[\w+:[^\]]+\]\]', '', title).strip()))
             pn = '<span class="part-num">%s</span> ' % num.strip() if num.strip() else ''
+            if h3_open: out.append('</div>'); h3_open = False
+            at = poz_cls(at, ctx, poz_from_title(title) or 'poz-e8')
             out.append('<section%s>\n<div class="part-heading">%s%s</div>' % (attr_html(at), pn, inline(title.strip())))
             section_open = True; i += 1; continue
         # nagłówki
         m = re.match(r'(#{3,6}) (.*)$', st)
         if m:
             t, at = split_trailing_attrs(m.group(2)); lv = len(m.group(1))
+            if ctx.poz and lv == 3:
+                if h3_open: out.append('</div>'); h3_open = False
+                pc = poz_from_title(t)
+                c = list(at.get('class', []))
+                if pc or any(x.startswith('poz-') for x in c):
+                    if not any(x.startswith('poz-') for x in c) and pc: c.append(pc)
+                    at = {k: v for k, v in at.items() if k != 'class'}
+                    out.append('<div class="poz-blok %s">' % ' '.join(c)); h3_open = True
             out.append('<h%d%s>%s</h%d>' % (lv, attr_html(at), inline(t), lv)); i += 1; continue
         # @opis — opis wizualizacji: jawny w md, w HTML ukryty komentarz
         if st.startswith('@opis '):
@@ -175,6 +201,7 @@ def parse_blocks(lines, ctx):
             j += 1
         blk = [x.rstrip() for x in lines[i:j]]; i = j
         out.append(leaf(blk, ctx))
+    if h3_open: out.append('</div>')
     if section_open: out.append('</section>')
     return '\n'.join(x for x in out if x)
 
@@ -255,16 +282,18 @@ def container(head, body, ctx):
     if name == 'styl': return ''  # zbierane osobno
     if name == 'karta':
         typ = args[0] if args else '-'
+        at = poz_cls(at, ctx, 'poz-pon' if typ == 'extra' else '')
         cls = ['card'] + (['card-' + typ] if typ != '-' else [])
         lab = '<span class="card-label">%s</span>\n' % inline(t0) if titles else ''
         return '<div%s>\n%s%s\n</div>' % (attr_html(merge_cls(at, *cls)), lab, inner())
     if name == 'odp':
         return '<details%s><summary>%s</summary>\n%s\n</details>' % (attr_html(merge_cls(at, 'answer')), inline(t0), inner())
     if name == 'adv':
+        at = poz_cls(at, ctx, 'poz-pon')
         tag = ' <span class="adv-tag">%s</span>' % inline(titles[1]) if len(titles) > 1 else ''
         return '<details%s><summary>%s%s</summary><div class="adv-body">\n%s\n</div></details>' % (attr_html(merge_cls(at, 'adv')), inline(t0), tag, inner())
     if name == 'minimum':
-        at = dict(at); at.setdefault('id', 'minimum')
+        at = poz_cls(at, ctx, 'poz-must'); at.setdefault('id', 'minimum')
         return '<section%s><h3>%s</h3>\n%s\n</section>' % (attr_html(merge_cls(at, 'minimum-card')), inline(t0), inner())
     if name == 'rdzen':
         at = dict(at)
@@ -322,7 +351,8 @@ def container(head, body, ctx):
             ops = ''.join('<button type="button" class="quiz-opt" data-a="%d">%s</button>' % (j, inline(t)) for j, t in enumerate(q['o']))
             fb = ' data-fb="%s"' % H.escape(inline(q['fb']), quote=True) if q['fb'] else ''
             o.append('<div class="quiz-q" data-ok="%d"%s><h5>%d. %s</h5><div class="quiz-opts">%s</div></div>' % (q['ok'], fb, i + 1, inline(q['q']), ops))
-        return '<div class="che-quiz" id="quizWrap">%s</div><div class="quiz-score" id="quizScore"></div>' % ''.join(o)
+        qid = at.get('id', 'quizWrap'); sid = 'quizScore' if qid == 'quizWrap' else qid + 'Score'
+        return '<div class="che-quiz" id="%s">%s</div><div class="quiz-score" id="%s"></div>' % (qid, ''.join(o), sid)
     # ogólny: ::: tag.klasa#id {atrybuty} — element z zawartością blokową
     ts = tag_spec(name)
     if not ts: raise SyntaxError('nieznany kontener: ' + head)

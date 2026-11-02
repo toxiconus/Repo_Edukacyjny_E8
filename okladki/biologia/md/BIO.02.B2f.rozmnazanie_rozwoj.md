@@ -132,7 +132,7 @@ Zapłodnienie zachodzi w **jajowodzie**, zwykle w jego najszerszej części (amp
 | **Podziały (bruzdkowanie)** | 1–3 | 2, 4, 8, 16 komórek |
 | **Morula** | 3–4 | kulista, ok. 16–32 komórki, przypomina jagodę maliny |
 | **Blastocysta** | ok. 5 | trofoblast (zewnętrzny) i embrioblast (wewnętrzny); jama blastocysty |
-| **Implantacja** | ok. 6–10 | blastocysta zagnieżdża się w endometrium |
+| **Implantacja** | ok. 6–10 (według części źródeł do 12) | blastocysta zagnieżdża się w endometrium |
 | **Gastrulacja** | ok. 14–21 | powstają trzy listki zarodkowe |
 
 ## 6 | Trzy listki zarodkowe {#listki}

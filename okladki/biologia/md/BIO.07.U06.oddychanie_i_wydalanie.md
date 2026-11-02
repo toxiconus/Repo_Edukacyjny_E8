@@ -98,7 +98,7 @@ Układ oddechowy doprowadza tlen tylko do **płuc**. Do mitochondriów w palcu s
 
 **Zadanie (ułóż drogę):** wymień kolejno struktury, przez które przechodzi powietrze od nosa do pęcherzyków. **Odpowiedź:** jama nosowa (1) → gardło i krtań (2) → tchawica (3) → oskrzela (4) → oskrzeliki (6) → pęcherzyki płucne (7).
 
-**Zadanie (wnioskuj):** dlaczego pęcherzyki płucne są tak liczne? **Odpowiedź:** zwiększają powierzchnię wymiany gazowej; w płucach jest ich ok. 300 mln.
+**Zadanie (wnioskuj):** dlaczego pęcherzyki płucne są tak liczne? **Odpowiedź:** zwiększają powierzchnię wymiany gazowej; w płucach jest ich setki milionów (ok. 300–600 mln, zależnie od źródła).
 
 
 | Odcinek | Budowa | Funkcja |

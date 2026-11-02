@@ -79,7 +79,7 @@ Rdzeń przewodzi impulsy **w górę** (czuciowe, do mózgu) i **w dół** (rucho
 @viz neurony-mielina | Neuron bez osłonki i z osłonką mielinową | porównaj prędkość impulsu
 @opis Dwa neurony jeden pod drugim: górny ma gładki akson bez osłonki (impuls wolniejszy), dolny ma akson otoczony osłonką mielinową z przewężeniami Ranviera (impuls szybszy, przeskakuje między przewężeniami). Wniosek: mielina przyspiesza przewodzenie impulsu.
 
-**Zadanie (porównaj):** który neuron przewodzi impuls szybciej: A (bez osłonki) czy B (z osłonką mielinową)? Uzasadnij. **Odpowiedź:** B — impuls przeskakuje po przewężeniach Ranviera (skokowo), a nie płynie po całej długości włókna. Wartości prędkości (ok. 40 m/s wobec ok. 8 m/s) do potwierdzenia przed użyciem w testach.
+**Zadanie (porównaj):** który neuron przewodzi impuls szybciej: A (bez osłonki) czy B (z osłonką mielinową)? Uzasadnij. **Odpowiedź:** B — impuls przeskakuje po przewężeniach Ranviera (skokowo), a nie płynie po całej długości włókna. Przykładowe wartości: ok. 40 m/s z mieliną wobec ok. 8 m/s bez niej; w nerwach obwodowych człowieka prędkość wynosi od ok. 5 do ok. 130 m/s, zależnie od grubości włókna i obecności mieliny (ZPE).
 
 **Zadanie (wnioskuj):** jaką rolę pełnią przewężenia Ranviera? **Odpowiedź:** są miejscami, w których impuls jest wzmacniany; dzięki nim przeskok jest szybki.
 
@@ -221,6 +221,36 @@ Dawna „mapa smaków" (słodki na czubku języka, gorzki z tyłu) jest dziś uz
 - **nabłonek węchowy** w górnej części jamy nosowej (ok. 5 cm²),
 - receptory węchowe to neurony, z których każdy reaguje na określone cząsteczki zapachowe; u człowieka jest kilkaset typów receptorów (do potwierdzenia dokładna liczba),
 - sygnał trafia do **opuszki węchowej**, a stamtąd do kory węchowej w płacie skroniowym.
+
+### 9.5 Węch i dotyk {#wech-dotyk}
+
+- **Węch:** receptory węchowe leżą w nabłonku węchowym w górnej części jamy nosowej; cząsteczki zapachowe rozpuszczają się w śluzie, a impulsy biegną do opuszki węchowej w mózgowiu.
+- **Dotyk, ucisk, temperatura, ból:** receptory leżą w skórze (głównie w skórze właściwej); jest ich najwięcej tam, gdzie czucie jest najdokładniejsze — w opuszkach palców i na wargach.
+
+### 9.6 Droga światła w oku i akomodacja {#akomodacja}
+
+Światło przechodzi kolejno przez **rogówkę, ciecz wodnistą, źrenicę, soczewkę i ciało szkliste** i tworzy na **siatkówce** obraz rzeczywisty, odwrócony i pomniejszony; mózg „odwraca” go z powrotem.
+**Akomodacja** to zmiana kształtu soczewki: przy patrzeniu z bliska mięśnie rzęskowe się kurczą i soczewka staje się bardziej wypukła; przy patrzeniu w dal mięśnie się rozluźniają, a soczewka się spłaszcza. Źrenica zwęża się w jasnym świetle i rozszerza w ciemności (odruch źrenicowy).
+
+### 9.7 Wady i choroby oka {#wady-wzroku}
+
+| Wada / choroba | Co się dzieje | Korekcja / uwaga |
+|---|---|---|
+| krótkowzroczność | obraz ostrych odległych przedmiotów powstaje przed siatkówką (gałka zbyt długa lub załamywanie zbyt silne) | soczewki rozpraszające (wklęsłe) |
+| dalekowzroczność | obraz powstaje za siatkówką (gałka zbyt krótka) | soczewki skupiające (wypukłe) |
+| astygmatyzm | nierówna krzywizna rogówki — obraz zniekształcony | soczewki cylindryczne |
+| daltonizm | wada czopków — trudność w rozróżnianiu barw (np. czerwonej i zielonej); sprzężony z chromosomem X, częstszy u mężczyzn | brak leczenia |
+| zaćma | zmętnienie soczewki | operacyjna wymiana soczewki |
+| jaskra | podwyższone ciśnienie w gałce ocznej uszkadza nerw wzrokowy | leczenie farmakologiczne lub operacyjne; ważna kontrola |
+
+### 9.8 Higiena zmysłów {#higiena-zmyslow}
+
+- **Oko:** dobre oświetlenie, przerwy w pracy przy ekranie, okulary przeciwsłoneczne z filtrem UV.
+- **Ucho:** długotrwały hałas niszczy komórki rzęsate w ślimaku — ubytek słuchu jest trwały; nie czyść przewodu słuchowego głęboko patyczkami. Infekcje z gardła mogą przejść przez trąbkę Eustachiusza do ucha środkowego (zapalenie ucha).
+
+::: pulapka
+**Pułapka:** przy krótkowzroczności obraz tworzy się **przed** siatkówką, przy dalekowzroczności **za** nią. Mnemonik: krótkowzroczny — „kłopot z dali”, korekcja szkłem **wklęsłym** (rozpraszającym).
+:::
 
 ## Ciekawostki i mnemotechniki
 

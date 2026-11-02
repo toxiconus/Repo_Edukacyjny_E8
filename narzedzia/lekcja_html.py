@@ -268,6 +268,12 @@ def render(path, p):
             '<button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button>%s</section>') % (
         m.inline(kicker), tyt, leads, m.inline(meta.get('plakietki', '')), metah,
         ''.join('<p class="mini-note">%s</p>' % m.inline(x) for x in meta.get('uwaga', '').split('\n') if x))
+    if ctx.poz:
+        pasek = ('<div class="poz-bar" role="group" aria-label="Poziom treści"><span class="poz-bar-t">Pokaż:</span>'
+                 '<button type="button" data-poz="must">Muszę umieć</button><button type="button" data-poz="e8">E8</button>'
+                 '<button type="button" data-poz="roz">E8 + rozszerzenie</button><button type="button" data-poz="all">Wszystko</button>'
+                 '<span class="poz-bar-i" id="pozInfo"></span></div>')
+        main = pasek + '\n' + main
     toc = ['<a class="toc-link" href="#minimum">Minimum E8</a>'] if 'id="minimum"' in main else []
     for sid, num, t in ctx.toc:
         if sid:

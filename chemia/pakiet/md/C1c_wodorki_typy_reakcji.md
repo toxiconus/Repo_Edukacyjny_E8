@@ -364,3 +364,11 @@ Przed zawodami sprawdź, czy umiesz:
 4. Czy metan ma być omawiany wyłącznie jako wodorek (wzór, nazwa, odczyn), czy także przez spalanie?
 5. Czy uzasadnienie typu reakcji jest wymagane w punktacji, czy wystarczy podanie typu?
 6. Wartość wpływu metanu na klimat (w lekcji tylko jakościowo) — do uzupełnienia, jeśli konwencja wymaga liczby.
+
+### Rozstrzygnięcia z oficjalnego zakresu LKO 2026/27 (2026-10-22)
+
+Źródło: `olimpiada/zrodla/LKO_2026_27_Czesc_II_zakres_wymagan.txt`, konkurs chemiczny, etap II (rozszerzenia) i etap III.
+
+- Pyt. 2 (HCl z NaCl + stężony H₂SO₄): **tak, w zakresie etapu II** — zakres wymienia „otrzymywanie kwasów z ich soli” oraz otrzymywanie chlorowodoru.
+- Pyt. 4 (metan): alkany (nazwy, reakcje z fluorowcami) są w zakresie **etapu III**, nie II; w etapie II wystarcza metan jako wodorek węgla (wzór, nazwa). Spalanie — wiedza z podstawy programowej.
+- Pyt. 1 (warunki syntezy Habera–Boscha), 3 (wymiana z niemetalami, np. Cl₂ + 2 NaBr), 5 (uzasadnienie typu reakcji w punktacji) i 6 (liczba dla klimatu): **zakres tego nie rozstrzyga** — zostają otwarte do porównania z arkuszem rejonowym; do czasu rozstrzygnięcia uczeń podaje równanie i typ reakcji, a warunki tylko orientacyjnie.

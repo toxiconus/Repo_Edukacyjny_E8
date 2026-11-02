@@ -626,6 +626,17 @@ details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border
 details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
 @media print{details.lk-log{display:none}}
 
+/* poziomy treści (lekcje z poziomy: tak) — filtr: muszę umieć / E8 / E8+rozszerzenie / wszystko */
+.poz-bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0;padding:10px 12px;border:1px solid var(--border,#d0d7de);border-radius:10px;background:var(--surface-soft,#f6f8fa);position:sticky;top:0;z-index:20}
+.poz-bar-t{font-weight:700;font-size:14px}.poz-bar-i{flex-basis:100%;font-size:13px;color:var(--muted,#5b6b73)}
+.poz-bar button{font:inherit;font-size:14px;padding:6px 12px;border-radius:999px;border:1px solid var(--border-strong,#9aa6ad);background:var(--surface,#fff);color:inherit;cursor:pointer}
+.poz-bar button[aria-pressed="true"]{background:var(--accent,#0b6bcb);color:#fff;border-color:transparent}
+body[data-poz="must"] .poz-roz,body[data-poz="must"] .poz-pon,body[data-poz="e8"] .poz-roz,body[data-poz="e8"] .poz-pon,body[data-poz="roz"] .poz-pon{display:none!important}
+body[data-poz="must"] section.poz-e8>*:not(.part-heading):not(.poz-must){display:none}
+body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
+.poz-blok{display:block}
+@media print{.poz-bar{display:none}body[data-poz] .poz-roz,body[data-poz] .poz-pon{display:revert!important}}
+
 /* motyw che (Chemia) — kolory, wzór nagłówka, komponenty przedmiotu */
 :root{--accent:#0d6868;--accent-dark:#084848;--accent-soft:#e6f2f1;--accent-line:#b8d8d6;--accent-glow:rgba(13,104,104,.15);--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 104 180%27%3E%3Cg fill=%27none%27 stroke=%27%230d6868%27 stroke-width=%273%27%3E%3Cpath d=%27M52 10l40 23v46l-40 23-40-23V33z%27/%3E%3Cpath d=%27M52 100l40 23v46l-40 23-40-23v-46z%27/%3E%3Cpath d=%27M52 22v8M92 56h8M12 56H4%27/%3E%3C/g%3E%3Cg fill=%27%230d6868%27%3E%3Ccircle cx=%2752%27 cy=%2710%27 r=%275%27/%3E%3Ccircle cx=%2792%27 cy=%2779%27 r=%275%27/%3E%3Ccircle cx=%2712%27 cy=%27123%27 r=%275%27/%3E%3C/g%3E%3C/svg%3E")}
 @media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#5cc2c2;--accent-dark:#9be0e0;--accent-soft:#15302f;--accent-line:#2a5452;--accent-glow:rgba(92,194,194,.2);--hl-key:#7ad6d6;--hl-key-bg:#173634;--hl-formula:#bfeeee;--hl-formula-bg:#173634;}}
@@ -641,14 +652,15 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 <a class="skip-link" href="#main">Przejdź do treści</a>
 <header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">N04 Kwasy</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
-<section class="hero card"><div class="hero-kicker">N03 · MASTER LAB v1.9</div><h1>Kwasy</h1><p class="lead">Samodzielna lekcja MASTER: definicja, nazewnictwo, dysocjacja, moc, pH, reakcje, kwaśne deszcze, zastosowania, bezpieczeństwo, historia i rozszerzenia (titracja, bufory, kwasy organiczne).</p><div class="tag-row"><span class="level-badge level-basic">E8</span> <span class="level-badge level-understand">ROZUMIENIE</span> <span class="level-badge level-extra">AMBITNE (LO)</span></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button><p class="mini-note">Treści ponad poziom matury rozszerzonej (biol-chem) są zwinięte w ramkach „poziom akademicki” — nic nie zostało usunięte. Przycisk rozwija lub zwija wszystkie naraz.</p></section>
+<section class="hero card"><div class="hero-kicker">N03 · MASTER LAB v1.9</div><h1>Kwasy</h1><p class="lead">Samodzielna lekcja MASTER: definicja, nazewnictwo, dysocjacja, moc, pH, reakcje, kwaśne deszcze, zastosowania, bezpieczeństwo, historia i rozszerzenia (titracja, bufory, kwasy organiczne).</p><div class="tag-row"><span class="level-badge level-basic">E8</span> <span class="level-badge level-understand">ROZSZERZENIE</span> <span class="level-badge level-extra">PONAD PROGRAM</span></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button><p class="mini-note">Treści ponad poziom matury rozszerzonej (biol-chem) są zwinięte w ramkach „poziom akademicki” — nic nie zostało usunięte. Przycisk rozwija lub zwija wszystkie naraz. Pasek „Pokaż” nad lekcją: <strong>Muszę umieć</strong> (minimum + ściąga + sprawdziany) · <strong>E8</strong> (domyślnie) · <strong>E8 + rozszerzenie</strong> · <strong>Wszystko</strong>. Nic nie zostało usunięte — treści ponad E8 są tylko ukryte filtrem.</p></section>
 <details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#minimum">Minimum E8</a><a class="toc-link" href="#jak-pracowac">0.1. Jak pracować z lekcją</a><a class="toc-link" href="#cele">0.2. Cele lekcji i pytanie przewodnie</a><a class="toc-link" href="#kompas">0.3. Kompas — co trzeba wiedzieć wcześniej</a><a class="toc-link" href="#wyklad">0.4. Wykład — kwas od zera</a><a class="toc-link" href="#definicja">1. Definicja kwasu</a><a class="toc-link" href="#nazewnictwo">2. Nazewnictwo i podział kwasów</a><a class="toc-link" href="#reszty">3. Reszty kwasowe</a><a class="toc-link" href="#wlasciwosci">4. Właściwości kwasów</a><a class="toc-link" href="#dysocjacja">5. Dysocjacja jonowa kwasów</a><a class="toc-link" href="#moc">6. Moc kwasów</a><a class="toc-link" href="#ph">7. pH i wskaźniki kwasowo-zasadowe</a><a class="toc-link" href="#otrzymywanie">8. Otrzymywanie kwasów</a><a class="toc-link" href="#reakcje">9. Reakcje kwasów</a><a class="toc-link" href="#deszcze">10. Kwaśne deszcze</a><a class="toc-link" href="#zastosowania">11. Zastosowania kwasów</a><a class="toc-link" href="#bhp">12. Bezpieczeństwo (BHP)</a><a class="toc-link" href="#organiczne">13. Kwasy organiczne (karboksylowe)</a><a class="toc-link" href="#miareczkowanie">14. Miareczkowanie (titracja)</a><a class="toc-link" href="#bufory">15. Bufory — model jakościowy</a><a class="toc-link" href="#doswiadczenia">16. Doświadczenia</a><a class="toc-link" href="#klinika">17. Klinika błędów</a><a class="toc-link" href="#cwiczenia">18. Ćwiczenia</a><a class="toc-link" href="#test">19. Test końcowy</a><a class="toc-link" href="#powtorka">20. Karta szybkiego powtórzenia i mapa myśli</a><a class="toc-link" href="#fiszki">21. Fiszki</a><a class="toc-link" href="#slownik">22. Słownik</a><a class="toc-link" href="#checklista">23. Checklista</a><a class="toc-link" href="#historia">A. Dodatek A — historia pojęcia kwasu i teorie kwasów i zasad</a><a class="toc-link" href="#mosty">B. Dodatek B — mosty do innych lekcji</a><a class="toc-link" href="#modele">Modele silnika w tej lekcji</a><a class="toc-link" href="#audit">Audyt jakości</a></nav></details>
-<section id="minimum" class="minimum-card"><h3>Muszę umieć na E8 — 10 faktów</h3>
+<div class="poz-bar" role="group" aria-label="Poziom treści"><span class="poz-bar-t">Pokaż:</span><button type="button" data-poz="must">Muszę umieć</button><button type="button" data-poz="e8">E8</button><button type="button" data-poz="roz">E8 + rozszerzenie</button><button type="button" data-poz="all">Wszystko</button><span class="poz-bar-i" id="pozInfo"></span></div>
+<section class="minimum-card poz-must" id="minimum"><h3>Muszę umieć na E8 — 10 faktów</h3>
 <ol>
-<li><strong>Definicja kwasu (szkolna, Arrheniusa):</strong> związek, który w wodzie dysocjuje na kationy wodoru H⁺ (dokładniej H₃O⁺) i aniony reszty kwasowej. Rozszerzona (Brønsteda): donor protonu H⁺.</li>
+<li><strong>Definicja kwasu (E8):</strong> związek, który w roztworze wodnym dysocjuje na kationy wodoru H⁺ (dokładniej H₃O⁺) i aniony reszty kwasowej.</li>
 <li><strong>Wzór ogólny:</strong> HₙR, gdzie R = reszta kwasowa, n = wartościowość reszty.</li>
 <li><strong>Podział:</strong> beztlenowe (HCl, HBr, HI, HF, H₂S, HCN) vs tlenowe (HNO₃, H₂SO₄, H₂CO₃, H₃PO₄, HClO₄) — oraz mocne (HCl, HBr, HI, HNO₃, H₂SO₄, HClO₄) vs słabe (HF, H₂S, H₂CO₃, H₂SO₃, HNO₂, H₃PO₄, CH₃COOH).</li>
-<li><strong>Dysocjacja:</strong> HCl → H⁺ + Cl⁻; H₂SO₄ → 2H⁺ + SO₄²⁻; H₃PO₄ → 3H⁺ + PO₄³⁻. Dokładniej: H⁺ jest w wodzie jako jon hydroniowy H₃O⁺.</li>
+<li><strong>Dysocjacja:</strong> HCl → H⁺ + Cl⁻; H₂SO₄ → 2H⁺ + SO₄²⁻; H₃PO₄ → 3H⁺ + PO₄³⁻. Na E8 to dopuszczalny skrót; dokładniej: H⁺ jest w wodzie jako jon hydroniowy H₃O⁺, a kwasy wieloprotonowe oddają protony stopniowo (H₂SO₄: I stopień praktycznie całkowity, II częściowy).</li>
 <li><strong>pH:</strong> poniżej 7 kwasowy, 7 obojętny, powyżej 7 zasadowy. pH = −log₁₀[H₃O⁺].</li>
 <li><strong>Wskaźniki:</strong> fenoloftaleina (bezbarwna w kwasie, malinowa w zasadzie); oranż metylowy (czerwony w kwasie, żółty w zasadzie); papierek uniwersalny (czerwony w kwasie, niebieski w zasadzie).</li>
 <li><strong>Reakcje kwasów:</strong> + metal → sól + H₂ (tylko metale aktywniejsze od wodoru); + tlenek metalu → sól + H₂O; + wodorotlenek → sól + H₂O (zobojętnianie); + sól (węglan) → sól + H₂O + CO₂.</li>
@@ -657,11 +669,35 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 <li><strong>Roztwory kwasów przewodzą prąd</strong> — są elektrolitami, bo zawierają jony (H₃O⁺ i aniony reszty). Stężenie procentowe: C<sub>p</sub> = m<sub>s</sub>/m<sub>r</sub> · 100%.</li>
 </ol>
 </section>
+<div id="sciaga" class="card card-basic poz-must">
+<span class="card-label">E8 w 5 minut — ściąga przed egzaminem</span>
+<p><strong>6 równań:</strong></p>
+<ol>
+<li>HCl → H⁺ + Cl⁻ (dysocjacja)</li>
+<li>Zn + 2 HCl → ZnCl₂ + H₂↑ (metal + kwas)</li>
+<li>CuO + H₂SO₄ → CuSO₄ + H₂O (tlenek metalu + kwas)</li>
+<li>NaOH + HCl → NaCl + H₂O (zobojętnianie)</li>
+<li>CaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂↑ (węglan + kwas)</li>
+<li>SO₃ + H₂O → H₂SO₄ (tlenek kwasowy + woda)</li>
+</ol>
+<p><strong>3 pułapki:</strong></p>
+<ul>
+<li><strong>Stężenie ≠ moc.</strong> Mocny kwas dysocjuje prawie całkowicie; rozcieńczony HCl nadal jest mocny, a stężony CH₃COOH nadal słaby.</li>
+<li><strong>Cu, Ag, Au nie reagują z HCl ani z rozcieńczonym H₂SO₄</strong> (są za wodorem w szeregu); HNO₃ nie daje H₂.</li>
+<li><strong>Kwas do wody, nigdy odwrotnie.</strong></li>
+</ul>
+<p><strong>5 doświadczeń, które trzeba umieć opisać:</strong> odczyn wskaźnikiem (Exp. 1) · Zn + HCl i próba „pyk” (Exp. 2) · węglan + kwas, CO₂ i woda wapienna (Exp. 3) · zobojętnianie z fenoloftaleiną (Exp. 4) · przewodzenie prądu (Exp. 6).</p>
+<p><strong>Kolory wskaźników w kwasie:</strong> oranż metylowy — czerwony · fenoloftaleina — bezbarwna · papierek uniwersalny — czerwony/pomarańczowy · kapusta — czerwona/różowa.</p>
+</div>
+<div id="brensted" class="card card-extra poz-roz">
+<span class="card-label">Rozszerzenie: definicja Brønsteda</span>
+<p>Kwas (wg Brønsteda) to <strong>donor protonu H⁺</strong>; zasada to akceptor protonu. W wodzie kwas oddaje proton cząsteczce H₂O, która staje się H₃O⁺: HCl + H₂O → H₃O⁺ + Cl⁻. Pełne omówienie: <a href="#definicja">§1.2</a>.</p>
+</div>
 <div class="layer-legend">
-<div class="layer-row"><span class="dot e8"></span><span><b>E8:</b> definicja, nazwy i wzory, reszty kwasowe, właściwości, dysocjacja, moc, pH i wskaźniki, otrzymywanie, reakcje, kwaśne deszcze, zastosowania, BHP</span></div>
-<div class="layer-row"><span class="dot understand"></span><span><b>Rozumienie:</b> Brønsted, H₃O⁺, dysocjacja stopniowa, jonizacja a dysocjacja, paradoks HF, rozcieńczanie a α i pH</span></div>
-<div class="layer-row"><span class="dot extra"></span><span><b>Ambitne (LO):</b> K<sub>a</sub>/pK<sub>a</sub>, stężenie molowe, pOH i K<sub>w</sub>, kwasy utleniające, kwasy organiczne, miareczkowanie, bufory, kwasy w organizmie</span></div>
-<div class="layer-row"><span class="dot contest"></span><span><b>Ponad LO:</b> rozwijane bloki „poziom akademicki” — przycisk w nagłówku lekcji</span></div>
+<div class="layer-row"><span class="dot e8"></span><span><b>E8 (muszę umieć + E8):</b> definicja, nazwy i wzory, reszty kwasowe, właściwości, dysocjacja, moc, pH i wskaźniki, otrzymywanie, reakcje, kwaśne deszcze, zastosowania, BHP</span></div>
+<div class="layer-row"><span class="dot understand"></span><span><b>Rozszerzenie (warto rozumieć):</b> Brønsted, H₃O⁺, dysocjacja stopniowa, jonizacja a dysocjacja, paradoks HF, rozcieńczanie a α i pH, mechanizm zwęglania</span></div>
+<div class="layer-row"><span class="dot extra"></span><span><b>Ponad program:</b> K<sub>a</sub>/pK<sub>a</sub>, stężenie molowe, pOH i K<sub>w</sub>, kwasy utleniające i pasywacja, kwasy organiczne, miareczkowanie, bufory, kwasy w organizmie, H₃PO₃</span></div>
+<div class="layer-row"><span class="dot contest"></span><span><b>Poziom akademicki:</b> rozwijane bloki „poziom akademicki” — widoczne w trybie „Wszystko”</span></div>
 </div>
 <div id="rdzen" class="core-path">
 <div class="cp-title">Rdzeń lekcji — najpierw to</div>
@@ -675,7 +711,7 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 </ol>
 <p class="mini-note">Modele silnika stoją przy sekcjach, których dotyczą; doświadczenia — w <a href="#doswiadczenia">§16</a> (przycisk „Zobacz w zlewce” otwiera pracownię na danym doświadczeniu). Spis modeli: <a href="#modele">§↻</a>.</p>
 </div>
-<section id="jak-pracowac">
+<section id="jak-pracowac" class="poz-e8">
 <div class="part-heading"><span class="part-num">0.1</span> Jak pracować z lekcją</div>
 <div class="card card-understand">
 <ol>
@@ -688,7 +724,7 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 </ol>
 </div>
 </section>
-<section id="cele">
+<section id="cele" class="poz-e8">
 <div class="part-heading"><span class="part-num">0.2</span> Cele lekcji i pytanie przewodnie <span class="level-badge level-basic">E8</span></div>
 <div class="card card-basic">
 <span class="card-label">Po tej lekcji potrafisz</span>
@@ -708,7 +744,7 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 <p class="mini-note">Odpowiedź budujesz w <a href="#dysocjacja">§5</a> (jony w roztworze), <a href="#moc">§6</a> (stopień dysocjacji α) i <a href="#ph">§7</a> (skala pH); sprawdzasz ją w doświadczeniu 10 (<a href="#doswiadczenia">§16</a>).</p>
 </div>
 </section>
-<section id="kompas">
+<section id="kompas" class="poz-e8">
 <div class="part-heading"><span class="part-num">0.3</span> Kompas — co trzeba wiedzieć wcześniej</div>
 <div class="card card-understand">
 <ul>
@@ -722,7 +758,7 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 <p class="mini-note">Wartościowość, W–K–S–K i bilans — fundamenty F01–F09; tlenki kwasowe — N01 Tlenki; wodorotlenki i zobojętnianie — N02 Wodorotlenki; wskaźniki — szczegóły w <a href="#ph">§7</a>.</p>
 </div>
 </section>
-<section id="wyklad">
+<section id="wyklad" class="poz-e8">
 <div class="part-heading"><span class="part-num">0.4</span> Wykład — kwas od zera</div>
 <div class="card card-understand">
 <span class="card-label">Wykład od zera</span>
@@ -733,7 +769,7 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 <p>Pamiętaj o bezpieczeństwie: stężone kwasy są żrące, dlatego rozcieńczamy je zawsze <strong>wlewając kwas do wody</strong>, a nie odwrotnie.</p>
 </div>
 </section>
-<section id="definicja">
+<section id="definicja" class="poz-e8">
 <div class="part-heading"><span class="part-num">1</span> Definicja kwasu <span class="level-badge level-basic">E8</span></div>
 <h3>1.1 Definicja szkolna (Arrheniusa)</h3>
 <div class="card card-core">
@@ -742,16 +778,22 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 <div class="formula-lg">HₙR → n H⁺ + Rⁿ⁻</div>
 <p class="mini-note">Wzór ogólny: HₙR. Przykłady: HCl, HNO₃, H₂SO₄, H₃PO₄, CH₃COOH.</p>
 </div>
+<div class="poz-blok poz-roz">
 <h3>1.2 Definicja rozszerzona (Brønsteda) <span class="level-badge level-understand">ROZUMIENIE</span></h3>
-<div class="card card-extra">
+<div class="card card-extra poz-pon">
 <span class="card-label">Kwas — definicja Brønsteda</span>
 <p><strong>Kwas</strong> to <strong>donor protonu H⁺</strong> — substancja, która oddaje proton innemu związkowi.</p>
 <p><strong>Zasada</strong> to <strong>akceptor protonu H⁺</strong> — substancja, która przyjmuje proton.</p>
 <div class="formula-lg">HA + H₂O ⇌ H₃O⁺ + A⁻</div>
 <p>W tym ujęciu <strong>każdy kwas Arrheniusa jest też kwasem Brønsteda</strong>, ale nie odwrotnie. Kwasem Brønsteda może być także <strong>jon</strong> (np. NH₄⁺, HSO₄⁻, H₃O⁺, H₂PO₄⁻) albo cząsteczka, która oddaje proton innej substancji poza wodą (np. HCl wobec NH₃: HCl + NH₃ → NH₄Cl). Każdy kwas Brønsteda <strong>musi mieć atom wodoru</strong>, który może odłączyć jako proton. Substancje kwasowe <em>bez wodoru</em> (np. BF₃, AlCl₃, CO₂ wobec OH⁻) opisuje dopiero teoria <strong>Lewisa</strong> (<a href="#historia">§A</a>).</p>
 </div>
+</div>
+<div class="card card-understand poz-must">
+<span class="card-label">Sprawdź się</span>
+<div class="che-quiz" id="quiz-s1"><div class="quiz-q" data-ok="1" data-fb="Zasady dają aniony OH⁻; kwasy — kationy H⁺ i aniony reszty kwasowej."><h5>1. Kwas w wodzie dysocjuje na:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">kationy metalu i aniony OH⁻</button><button type="button" class="quiz-opt" data-a="1">kationy wodoru H⁺ (H₃O⁺) i aniony reszty kwasowej</button><button type="button" class="quiz-opt" data-a="2">cząsteczki bez ładunku</button></div></div><div class="quiz-q" data-ok="1" data-fb="Kwas ma wodór na początku wzoru i resztę kwasową: HNO₃."><h5>2. Który wzór przedstawia kwas?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">NaOH</button><button type="button" class="quiz-opt" data-a="1">HNO₃</button><button type="button" class="quiz-opt" data-a="2">NaCl</button></div></div></div><div class="quiz-score" id="quiz-s1Score"></div>
+</div>
 </section>
-<section id="nazewnictwo">
+<section id="nazewnictwo" class="poz-e8">
 <div class="part-heading"><span class="part-num">2</span> Nazewnictwo i podział kwasów <span class="level-badge level-basic">E8</span></div>
 <div class="mnemonic"><b>Mnemonik: jak nazwać kwas</b><ol><li><strong>Bez tlenu</strong> → kwas + pierwiastek + <strong>„-owodorowy”</strong> (HCl – chlorowodorowy).</li><li><strong>Z tlenem</strong> → policz wartościowość: <strong>W = 2·O − H</strong>.</li><li>H₂SO₄: 2·4 − 2 = 6 → siarkowy(VI) · HNO₂: 2·2 − 1 = 3 → azotowy(III) · HClO₄: 2·4 − 1 = 7 → chlorowy(VII).</li><li>Wyjątek: H₂CO₃ – kwas węglowy (bez cyfry). HCl(aq) = kwas solny, HCl(g) = chlorowodór.</li></ol></div>
 <h3>2.1 Kwasy beztlenowe</h3>
@@ -783,7 +825,7 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 <tr><td>H₂SO₃</td><td>kwas siarkowy(IV)</td><td>SO₃²⁻</td></tr>
 <tr><td>H₂SO₄</td><td>kwas siarkowy(VI)</td><td>SO₄²⁻</td></tr>
 <tr><td>H₂CO₃</td><td>kwas węglowy</td><td>CO₃²⁻</td></tr>
-<tr><td>H₃PO₃</td><td>kwas fosforowy(III)</td><td>PO₃³⁻ <small>(szkolny zapis formalny; w rzeczywistości HPO₃²⁻ — zob. <a href="#nazewnictwo">§2</a>.3)</small></td></tr>
+<tr class="poz-pon"><td>H₃PO₃</td><td>kwas fosforowy(III)</td><td>PO₃³⁻ <small>(szkolny zapis formalny; w rzeczywistości HPO₃²⁻ — zob. <a href="#nazewnictwo">§2</a>.3)</small></td></tr>
 <tr><td>H₃PO₄</td><td>kwas fosforowy(V)</td><td>PO₄³⁻</td></tr>
 <tr><td>HClO</td><td>kwas chlorowy(I)</td><td>ClO⁻</td></tr>
 <tr><td>HClO₂</td><td>kwas chlorowy(III)</td><td>ClO₂⁻</td></tr>
@@ -811,13 +853,20 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 </table>
 </div>
 <p class="mini-note"><strong>Uwaga:</strong> nie każdy atom H w kwasie jest protonem kwasowym. W CH₃COOH tylko H z grupy –COOH jest protonem kwasowym — pozostałe 3 atomy H są związane z węglem i nie dysocjują. Dlatego CH₃COOH jest kwasem jednoprotonowym, mimo że ma 4 atomy H.</p>
-<p class="mini-note"><strong>Uwaga 2:</strong> H₃PO₃ ma 3 atomy H, ale jeden jest związany bezpośrednio z fosforem, więc kwas jest w praktyce <strong>dwuprotonowy</strong> (sole: Na₂HPO₃). W tabelach szkolnych zapisuje się go formalnie jako trójprotonowy — na E8 wystarczy wzór i nazwa.</p>
-<details class="adv"><summary>Budowa kwasów tlenowych i „ile protonów naprawdę jest kwasowych” <span class="adv-tag">poziom akademicki · poza maturą rozszerzoną</span></summary><div class="adv-body">
+<div class="card card-extra poz-pon">
+<span class="card-label">Ponad program: H₃PO₃</span>
+<p>H₃PO₃ ma 3 atomy H, ale jeden jest związany bezpośrednio z fosforem, więc kwas jest w praktyce <strong>dwuprotonowy</strong> (sole: Na₂HPO₃). W tabelach szkolnych zapisuje się go formalnie jako trójprotonowy — na E8 wystarczy wzór i nazwa.</p>
+</div>
+<details class="adv poz-pon"><summary>Budowa kwasów tlenowych i „ile protonów naprawdę jest kwasowych” <span class="adv-tag">poziom akademicki · poza maturą rozszerzoną</span></summary><div class="adv-body">
 <p>Kwasowe są tylko atomy H związane z <strong>tlenem</strong> (grupy –O–H). W H₃PO₃ struktura to HP(O)(OH)₂ (kwas fosfonowy), a w H₃PO₂ — H₂P(O)OH (kwas fosfinowy, jednoprotonowy). Moc kwasów tlenowych rośnie z liczbą „wolnych” atomów O przy atomie centralnym (reguła Paulinga: HClO pKa ≈ 7,5; HClO₂ ≈ 2; HClO₃ ≈ −1; HClO₄ ≈ −10) — każdy dodatkowy atom O stabilizuje ładunek anionu (rezonans).</p>
 </div></details>
 </div>
+<div class="card card-understand poz-must">
+<span class="card-label">Sprawdź się</span>
+<div class="che-quiz" id="quiz-s2"><div class="quiz-q" data-ok="1" data-fb="Siarka na VI stopniu utlenienia → kwas siarkowy(VI); H₂SO₃ to siarkowy(IV), H₂S — siarkowodorowy."><h5>1. Nazwa H₂SO₄ to:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">kwas siarkowy(IV)</button><button type="button" class="quiz-opt" data-a="1">kwas siarkowy(VI)</button><button type="button" class="quiz-opt" data-a="2">kwas siarkowodorowy</button></div></div><div class="quiz-q" data-ok="0" data-fb="Beztlenowe: HCl, HBr, HI, HF, H₂S, HCN."><h5>2. Który kwas jest beztlenowy?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">H₂S</button><button type="button" class="quiz-opt" data-a="1">H₃PO₄</button><button type="button" class="quiz-opt" data-a="2">HNO₃</button></div></div></div><div class="quiz-score" id="quiz-s2Score"></div>
+</div>
 </section>
-<section id="reszty">
+<section id="reszty" class="poz-e8">
 <div class="part-heading"><span class="part-num">3</span> Reszty kwasowe <span class="level-badge level-basic">E8</span></div>
 <div class="card card-core">
 <span class="card-label">Definicja</span>
@@ -863,8 +912,12 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 </div>
 <div class="che-lesson-viz-ref" data-che-lesson-viz="kw-reszty-v01"><button type="button" data-che-open-viz="kw-reszty-v01" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'kw-reszty-v01',lessonId:'N04'},'*')"><b>Kwas → reszta kwasowa → sole (13 metali)</b><span>Dysocjacja, ładunek reszty, wzory i nazwy soli, rozpuszczalność · CHE.IONIC</span></button></div>
 <!-- OPIS: Model kwas → reszta kwasowa → sól: kwas dysocjuje, model pokazuje ładunek reszty kwasowej (np. SO₄²⁻, NO₃⁻, PO₄³⁻), a dla 13 metali tworzy wzory i nazwy soli z informacją o rozpuszczalności. Wniosek: ładunek reszty kwasowej równa się liczbie atomów wodoru oddanych przez kwas i wyznacza wzór soli. -->
+<div class="card card-understand poz-must">
+<span class="card-label">Sprawdź się</span>
+<div class="che-quiz" id="quiz-s3"><div class="quiz-q" data-ok="2" data-fb="Ładunek reszty = liczba atomów H w kwasie: H₃ → 3−."><h5>1. Ładunek reszty kwasowej w H₃PO₄ (PO₄) to:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">1−</button><button type="button" class="quiz-opt" data-a="1">2−</button><button type="button" class="quiz-opt" data-a="2">3−</button></div></div><div class="quiz-q" data-ok="0" data-fb="HCl → H⁺ + Cl⁻."><h5>2. Reszta kwasowa kwasu solnego HCl to:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Cl⁻</button><button type="button" class="quiz-opt" data-a="1">SO₄²⁻</button><button type="button" class="quiz-opt" data-a="2">NO₃⁻</button></div></div></div><div class="quiz-score" id="quiz-s3Score"></div>
+</div>
 </section>
-<section id="wlasciwosci">
+<section id="wlasciwosci" class="poz-e8">
 <div class="part-heading"><span class="part-num">4</span> Właściwości kwasów <span class="level-badge level-basic">E8</span></div>
 <h3>4.1 Właściwości wybranych kwasów</h3>
 <div class="card card-basic">
@@ -883,6 +936,7 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 </div>
 <p class="mini-note">Wspólne dla wszystkich roztworów kwasów: kwaśny smak (NIE sprawdzamy w laboratorium!), zmiana barwy wskaźników, przewodzenie prądu, reakcje z metalami aktywnymi, tlenkami metali, wodorotlenkami i węglanami.</p>
 </div>
+<div class="poz-blok poz-roz">
 <h3>4.2 Dlaczego stężony H₂SO₄ zwęgla cukier? <span class="level-badge level-understand">ROZUMIENIE</span></h3>
 <div class="card card-understand">
 <span class="card-label">Odwadnianie</span>
@@ -892,8 +946,9 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 </div>
 <div class="che-lesson-viz-ref" data-che-lesson-viz="kw-wlasciwosci-v01"><button type="button" data-che-open-viz="kw-wlasciwosci-v01" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'kw-wlasciwosci-v01',lessonId:'N04'},'*')"><b>Właściwości stężonych kwasów — pokazy</b><span>Cukier + H₂SO₄ · białko + HNO₃ · HCl dymi · silnik GFX, otwiera się w oknie</span></button></div>
 <!-- OPIS: Pokazy właściwości stężonych kwasów: cukier zalany stężonym H₂SO₄ czernieje i pęcznieje w porowatą masę węgla, białko po dodaniu HNO₃ żółknie, otwarta butelka stężonego HCl „dymi” (chlorowodór tworzy z parą wodną mgiełkę). Wniosek: stężone kwasy mają właściwości żrące, utleniające i odwadniające — praca tylko z nauczycielem i pod wyciągiem. -->
+</div>
 </section>
-<section id="dysocjacja">
+<section id="dysocjacja" class="poz-e8">
 <div class="part-heading"><span class="part-num">5</span> Dysocjacja jonowa kwasów <span class="level-badge level-basic">E8</span></div>
 <h3>5.1 Definicja</h3>
 <div class="card card-core">
@@ -909,6 +964,7 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 <div class="formula-lg">H₃PO₄ → 3 H⁺ + PO₄³⁻</div>
 <div class="formula-lg">CH₃COOH ⇌ H⁺ + CH₃COO⁻ (dysocjacja częściowa — kwas słaby)</div>
 </div>
+<div class="poz-blok poz-roz">
 <h3>5.3 Trzy poziomy zapisu dysocjacji <span class="level-badge level-understand">ROZUMIENIE</span></h3>
 <div class="card card-understand">
 <div class="table-wrap">
@@ -916,26 +972,32 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 </div>
 <p class="mini-note">→ = dysocjacja praktycznie całkowita (mocny), ⇌ = równowaga (słaby).</p>
 </div>
+</div>
+<div class="poz-blok poz-roz">
 <h3>5.4 Jon hydroniowy H₃O⁺ — dokładniejszy model <span class="level-badge level-understand">ROZUMIENIE</span></h3>
 <div class="card card-understand">
 <p>W wodzie kation H⁺ (proton) nie istnieje samodzielnie — natychmiast łączy się z cząsteczką wody, tworząc <strong>jon hydroniowy H₃O⁺</strong>:</p>
 <div class="formula-lg">H⁺ + H₂O → H₃O⁺</div>
 <p>W szkole często piszemy w skrócie H⁺, ale <strong>poprawnie w wodzie mamy H₃O⁺</strong>. W zadaniach o pH chodzi o stężenie H₃O⁺, nie „wolnego H⁺”.</p>
 </div>
+</div>
+<div class="poz-blok poz-roz">
 <h3>5.5 Dysocjacja stopniowa kwasów wieloprotonowych <span class="level-badge level-understand">ROZUMIENIE</span></h3>
-<div class="card card-extra">
+<div class="card card-extra poz-pon">
 <span class="card-label">H₂SO₄ — dwa etapy</span>
 <div class="formula-lg">H₂SO₄ → H⁺ + HSO₄⁻ (I stopień — praktycznie całkowity)</div>
 <div class="formula-lg">HSO₄⁻ ⇌ H⁺ + SO₄²⁻ (II stopień — częściowy)</div>
 <p>Dlatego mówimy, że <strong>H₂SO₄ jest mocnym kwasem tylko w I stopniu</strong>. W II stopniu jest słaby (HSO₄⁻ jest słabym kwasem).</p>
 </div>
-<div class="card card-extra">
+<div class="card card-extra poz-pon">
 <span class="card-label">H₃PO₄ — trzy etapy</span>
 <div class="formula-lg">H₃PO₄ ⇌ H⁺ + H₂PO₄⁻</div>
 <div class="formula-lg">H₂PO₄⁻ ⇌ H⁺ + HPO₄²⁻</div>
 <div class="formula-lg">HPO₄²⁻ ⇌ H⁺ + PO₄³⁻</div>
 <p>Wszystkie etapy są słabe — H₃PO₄ jest słabym kwasem trójprotonowym.</p>
 </div>
+</div>
+<div class="poz-blok poz-roz">
 <h3>5.6 Jonizacja a dysocjacja — różnica <span class="level-badge level-understand">ROZUMIENIE</span></h3>
 <div class="card card-warning">
 <p><strong>Jonizacja</strong> — powstawanie jonów w wyniku reakcji cząsteczki z rozpuszczalnikiem (np. HCl + H₂O → H₃O⁺ + Cl⁻). Cząsteczka HCl była kowalencyjna, po reakcji z wodą powstają jony.</p>
@@ -950,6 +1012,7 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 </div>
 <div class="che-lesson-viz-ref" data-che-lesson-viz="kw-dysocjacja-v01"><button type="button" data-che-open-viz="kw-dysocjacja-v01" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'kw-dysocjacja-v01',lessonId:'N04'},'*')"><b>Dysocjacja kwasów mocnych i słabych na żywo: H⁺ przeskakuje na wodę (tryb „krok po kroku”), cząsteczki, α, pH</b><span>HCl, HNO₃, H₂SO₄, HF, CH₃COOH, H₃PO₄ · α i pH z Ka silnika · porównanie α(c) wszystkich kwasów</span></button></div>
 <!-- OPIS: Animacja dysocjacji kwasów mocnych i słabych (HCl, HNO₃, H₂SO₄, HF, CH₃COOH, H₃PO₄): w trybie krok po kroku proton H⁺ przechodzi na cząsteczkę wody, tworząc H₃O⁺; przy kwasach mocnych rozpadają się prawie wszystkie cząsteczki, przy słabych tylko niewielka część; widać stopień dysocjacji α i pH. Wniosek: moc kwasu to stopień dysocjacji, a nie jego stężenie. -->
+</div>
 <h3>5.7 Przewodzenie prądu — dowód na jony <span class="level-badge level-basic">E8</span></h3>
 <div class="card card-basic">
 <span class="card-label">E8 — elektrolity</span>
@@ -966,12 +1029,16 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 </tbody></table>
 </div>
 <p class="mini-note">To samo stężenie, różne świecenie → różna <strong>moc</strong> kwasu (<a href="#moc">§6</a>). Elektroda ujemna (katoda) przyciąga kationy H₃O⁺, dodatnia (anoda) — aniony reszty kwasowej.</p>
-<p class="mini-note">Przy prądzie stałym na elektrodach zachodzi <strong>elektroliza</strong> — po chwili widać drobne pęcherzyki gazu: na <strong>katodzie (−)</strong> zawsze <strong>wodór</strong> (2 H⁺ + 2 e⁻ → H₂), na <strong>anodzie (+)</strong> — <strong>chlor</strong> z kwasu solnego (2 Cl⁻ → Cl₂ + 2 e⁻) albo <strong>tlen</strong> z H₂SO₄ i roztworów zasad (utlenia się woda / OH⁻). Przy baterii 4,5 V gazu jest niewiele.</p>
+<p class="mini-note">Przy odpowiednich warunkach (większe napięcie, dłuższy czas) na elektrodach mogą pojawić się pęcherzyki gazów — to <strong>elektroliza</strong>. Jej szczegóły (co powstaje na której elektrodzie) zależą od materiału elektrod, stężenia i napięcia i wykraczają poza E8. Przy baterii i zwykłym testerze pęcherzyków zwykle nie widać — liczy się jasność żarówki.</p>
 </div>
 <div class="che-lesson-viz-ref" data-che-lesson-viz="gfx-scene-conductivity"><button type="button" data-che-open-viz="gfx-scene-conductivity" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'gfx-scene-conductivity',lessonId:'N04'},'*')"><b>Przewodzenie prądu: tester z żarówką i model jonów</b><span>Doświadczenie w silniku GFX · otwiera się w oknie</span></button></div>
 <!-- OPIS: Tester przewodnictwa z żarówką zanurzany w różnych cieczach: w roztworach kwasów, zasad i soli żarówka świeci (jasność zależy od liczby jonów), w wodzie destylowanej i roztworze cukru nie świeci; obok model ruchomych jonów. Wniosek: prąd w roztworze przewodzą jony powstałe w dysocjacji. -->
+<div class="card card-understand poz-must">
+<span class="card-label">Sprawdź się</span>
+<div class="che-quiz" id="quiz-s5"><div class="quiz-q" data-ok="0" data-fb="Prąd w roztworze przewodzą jony H₃O⁺ i aniony reszty kwasowej."><h5>1. Przewodzenie prądu przez roztwór kwasu wynika z:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">obecności jonów</button><button type="button" class="quiz-opt" data-a="1">obecności swobodnych elektronów</button><button type="button" class="quiz-opt" data-a="2">obecności cząsteczek obojętnych</button></div></div><div class="quiz-q" data-ok="0" data-fb="Kwas oddaje kation H⁺ i anion reszty kwasowej."><h5>2. Poprawny zapis dysocjacji kwasu solnego:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">HCl → H⁺ + Cl⁻</button><button type="button" class="quiz-opt" data-a="1">HCl → H₂ + Cl₂</button><button type="button" class="quiz-opt" data-a="2">HCl → HCl⁺ + e⁻</button></div></div></div><div class="quiz-score" id="quiz-s5Score"></div>
+</div>
 </section>
-<section id="moc">
+<section id="moc" class="poz-e8">
 <div class="part-heading"><span class="part-num">6</span> Moc kwasów <span class="level-badge level-basic">E8</span></div>
 <h3>6.1 Definicja mocy</h3>
 <div class="card card-core">
@@ -1004,15 +1071,19 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 </table>
 </div>
 <p class="mini-note">Stopień dysocjacji słabego kwasu <strong>zależy od stężenia</strong> (i temperatury) — liczby podano dla 0,1 mol/dm³ i 25 °C. Stałą cechą kwasu jest <strong>Ka</strong> (<a href="#moc">§6</a>.6). H₃PO₄ i H₂SO₃ nazywa się czasem kwasami „średniej mocy”.</p>
-<h3>6.3 Paradoks HF — dlaczego fluorowodorowy jest słaby? <span class="level-badge level-understand">ROZUMIENIE</span></h3>
-<div class="card card-extra">
+<p class="mini-note"><strong>E8: HF jest słabym kwasem</strong> (mimo że fluor jest bardzo elektroujemny). Dlaczego — w rozszerzeniu poniżej.</p>
+<div class="poz-blok poz-roz">
+<h3>6.3 Paradoks HF — dlaczego fluorowodorowy jest słaby? <span class="level-badge level-understand">ROZSZERZENIE</span></h3>
+<div class="card card-extra poz-roz">
 <p>Fluor jest najbardziej elektroujemnym pierwiastkiem. Intuicja podpowiada, że HF powinien być mocnym kwasem. A jednak <strong>HF jest słabym kwasem w wodzie</strong>.</p>
 <p><strong>Wyjaśnienie:</strong> wiązanie H–F jest bardzo <strong>krótkie i mocne</strong> (565 kJ/mol; H–Cl 431, H–Br 366, H–I 299 kJ/mol) — proton trudno oderwać. Dodatkowo mały jon F⁻ i H₃O⁺ wiążą się silnymi wiązaniami wodorowymi w <strong>pary jonowe</strong> (H₃O⁺···F⁻), które nie dają „wolnych” jonów H₃O⁺. W szeregu <strong>HF &lt; HCl &lt; HBr &lt; HI</strong> moc rośnie, bo wraz ze wzrostem promienia atomu fluorowca wiązanie H–X słabnie — ważniejsza jest długość/energia wiązania niż sama elektroujemność.</p>
-<details class="adv"><summary>Termodynamika paradoksu HF <span class="adv-tag">poziom akademicki · poza maturą rozszerzoną</span></summary><div class="adv-body">
+<details class="adv poz-pon"><summary>Termodynamika paradoksu HF <span class="adv-tag">poziom akademicki · poza maturą rozszerzoną</span></summary><div class="adv-body">
 <p>Dla HX(aq) → H⁺(aq) + X⁻(aq) bilans energii obejmuje: zerwanie wiązania H–X, jonizację H, powinowactwo elektronowe X i hydratację obu jonów. Silna hydratacja małego F⁻ nie rekompensuje dużej energii wiązania, a dodatkowo uporządkowanie wody wokół F⁻ daje silnie ujemną entropię (ΔS°), więc ΔG° > 0 (pKa ≈ 3,2). W stężonym HF kwasowość <em>rośnie</em> dzięki homokoniugacji: HF + F⁻ ⇌ HF₂⁻ (jon wodorodifluorkowy), co wiąże F⁻ i przesuwa równowagę.</p>
 </div></details>
 <p class="mini-note">Na poziomie E8 wystarczy zapamiętać: <strong>HF jest słabym kwasem, mimo że fluor jest bardzo elektroujemny</strong>. Pełne wyjaśnienie wymaga analizy energii wiązania i entalpii hydratacji.</p>
 </div>
+</div>
+<div class="poz-blok poz-roz">
 <h3>6.4 Wpływ rozcieńczenia na stopień dysocjacji <span class="level-badge level-understand">ROZUMIENIE</span></h3>
 <div class="card card-understand">
 <p><strong>Prawo rozcieńczeń Ostwalda:</strong> im bardziej rozcieńczony roztwór słabego kwasu, tym większy stopień dysocjacji α.</p>
@@ -1022,6 +1093,7 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 <p class="mini-note">LO rozszerzone — prawo rozcieńczeń Ostwalda: K<sub>a</sub> = α²·c / (1 − α); dla α &lt; 5%: K<sub>a</sub> ≈ α²·c, czyli α ≈ √(K<sub>a</sub>/c).</p>
 </div>
 <p class="mini-note">Wykres α(c) dla wszystkich kwasów — model dysocjacji w <a href="#dysocjacja">§5</a>.</p>
+</div>
 <h3>6.5 Stężenie roztworu kwasu — procentowe i molowe <span class="level-badge level-basic">E8</span></h3>
 <div class="card card-basic">
 <span class="card-label">E8 — stężenie procentowe</span>
@@ -1031,7 +1103,7 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 <p><strong>Przykład 2 (rozcieńczanie).</strong> Do 50 g 36% kwasu solnego dodano 130 g wody. m<sub>s</sub> = 18 g, m<sub>r</sub> = 180 g → C<sub>p</sub> = <strong>10%</strong>. Masa substancji rozpuszczonej się nie zmienia — rośnie tylko masa roztworu.</p>
 <p class="mini-note">Rozcieńczając, wlewamy <strong>kwas do wody</strong> — zasady i uzasadnienie w <a href="#bhp">§12</a>.</p>
 </div>
-<div class="card card-extra">
+<div class="card card-extra poz-pon">
 <span class="card-label">LO rozszerzone — stężenie molowe i przeliczanie</span>
 <div class="formula-lg">c<sub>m</sub> = n / V   [mol/dm³]</div>
 <div class="formula-lg">c<sub>m</sub> = C<sub>p</sub> · d · 10 / M</div>
@@ -1039,8 +1111,9 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 <p>Stężony HCl (36%, d = 1,18 g/cm³): c<sub>m</sub> = 36 · 1,18 · 10 / 36,46 ≈ <strong>11,7 mol/dm³</strong>.</p>
 <p>Stężony H₂SO₄ (96%, d = 1,84 g/cm³): c<sub>m</sub> = 96 · 1,84 · 10 / 98,08 ≈ <strong>18,0 mol/dm³</strong>.</p>
 </div>
+<div class="poz-blok poz-pon">
 <h3>6.6 Stała dysocjacji K<sub>a</sub> i pK<sub>a</sub> <span class="level-badge level-extra">AMBITNE</span></h3>
-<div class="card card-extra">
+<div class="card card-extra poz-pon">
 <span class="card-label">LO rozszerzone (biol-chem)</span>
 <div class="formula-lg">HA + H₂O ⇌ H₃O⁺ + A⁻</div>
 <div class="formula-lg">K<sub>a</sub> = [H₃O⁺]·[A⁻] / [HA]</div>
@@ -1062,12 +1135,17 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 <p class="mini-note">Wartości pK<sub>a</sub> pochodzą z tej samej tabeli silnika (CHE.DATA.ACID_SYSTEMS), z której korzystają wizualizacje i Atlas (25 °C, CRC/IUPAC; CH₃COOH 4,756 — rekord zweryfikowany).</p>
 <p class="mini-note">Kolejne stopnie dysocjacji są coraz słabsze (pK<sub>a1</sub> &lt; pK<sub>a2</sub> &lt; pK<sub>a3</sub>) — trudniej oderwać proton od jonu, który już ma ładunek ujemny.</p>
 </div>
-<details class="adv"><summary>Mocne kwasy w wodzie: efekt wyrównujący, pK<sub>a</sub> ujemne, dokładne obliczenia <span class="adv-tag">poziom akademicki · poza maturą rozszerzoną</span></summary><div class="adv-body">
+<details class="adv poz-pon"><summary>Mocne kwasy w wodzie: efekt wyrównujący, pK<sub>a</sub> ujemne, dokładne obliczenia <span class="adv-tag">poziom akademicki · poza maturą rozszerzoną</span></summary><div class="adv-body">
 <p>W wodzie najmocniejszym kwasem, jaki może istnieć, jest H₃O⁺ — wszystkie kwasy mocniejsze (HCl, HBr, HI, HClO₄, HNO₃) oddają proton całkowicie i wyglądają „tak samo mocno” (<strong>efekt wyrównujący wody</strong>). Ich pK<sub>a</sub> (HCl ≈ −6, HBr ≈ −9, HI ≈ −10, HClO₄ ≈ −10, HNO₃ ≈ −1,4) wyznacza się pośrednio, w innych rozpuszczalnikach (np. kwasie octowym). Mieszaniny typu HSO₃F·SbF₅ to <strong>superkwasy</strong> (mocniejsze od 100% H₂SO₄).</p>
 <p>Dokładnie pH słabego kwasu liczy się z równania kwadratowego x² + K<sub>a</sub>x − K<sub>a</sub>c = 0 (dla bardzo rozcieńczonych roztworów trzeba uwzględnić też autodysocjację wody), a w stężonych roztworach zamiast stężeń stosuje się <strong>aktywności</strong> a = γ·c (współczynniki aktywności z teorii Debye’a–Hückla).</p>
 </div></details>
+</div>
+<div class="card card-understand poz-must">
+<span class="card-label">Sprawdź się</span>
+<div class="che-quiz" id="quiz-s6"><div class="quiz-q" data-ok="2" data-fb="Słabe: HF, H₂S, H₂CO₃, H₂SO₃, CH₃COOH. Mocne: HCl, HBr, HI, HNO₃, H₂SO₄, HClO₄."><h5>1. Który kwas jest słaby?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">HCl</button><button type="button" class="quiz-opt" data-a="1">HNO₃</button><button type="button" class="quiz-opt" data-a="2">H₂CO₃</button></div></div><div class="quiz-q" data-ok="0" data-fb="Moc to stopień dysocjacji, a nie stężenie ani żrące działanie."><h5>2. Mocny kwas to taki, który:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">dysocjuje prawie całkowicie</button><button type="button" class="quiz-opt" data-a="1">ma wysokie stężenie</button><button type="button" class="quiz-opt" data-a="2">jest bardzo żrący</button></div></div></div><div class="quiz-score" id="quiz-s6Score"></div>
+</div>
 </section>
-<section id="ph">
+<section id="ph" class="poz-e8">
 <div class="part-heading"><span class="part-num">7</span> pH i wskaźniki kwasowo-zasadowe <span class="level-badge level-basic">E8</span></div>
 <h3>7.1 Skala pH</h3>
 <div class="card card-core">
@@ -1108,14 +1186,14 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 <p>pH jest skalą <strong>logarytmiczną</strong>. Różnica 1 jednostki pH = 10× różnica stężenia H₃O⁺.</p>
 <p>pH 2 ma 10× więcej H₃O⁺ niż pH 3 i 100× więcej niż pH 4.</p>
 </div>
-<div class="card card-extra">
+<div class="card card-extra poz-pon">
 <span class="card-label">LO rozszerzone — pOH i iloczyn jonowy wody</span>
 <div class="formula-lg">K<sub>w</sub> = [H₃O⁺]·[OH⁻] = 1,0·10⁻¹⁴ (25 °C)</div>
 <div class="formula-lg">pH + pOH = 14</div>
 <p>Przykład: NaOH 0,01 mol/dm³ → [OH⁻] = 10⁻² → pOH = 2 → pH = 12.</p>
 <p class="mini-note">Woda destylowana stojąca na powietrzu ma pH ≈ 5,6–6 (pochłania CO₂). Krew: pH 7,35–7,45 (lekko zasadowy).</p>
 </div>
-<details class="adv"><summary>Dlaczego „pH 7 = obojętny” jest prawdą tylko w 25 °C <span class="adv-tag">poziom akademicki · poza maturą rozszerzoną</span></summary><div class="adv-body">
+<details class="adv poz-pon"><summary>Dlaczego „pH 7 = obojętny” jest prawdą tylko w 25 °C <span class="adv-tag">poziom akademicki · poza maturą rozszerzoną</span></summary><div class="adv-body">
 <p>K<sub>w</sub> rośnie z temperaturą (autodysocjacja wody jest endotermiczna): w 37 °C pK<sub>w</sub> ≈ 13,6, więc roztwór obojętny ma pH ≈ 6,8; w 100 °C pK<sub>w</sub> ≈ 12,3 i obojętne pH ≈ 6,1. Obojętny oznacza [H₃O⁺] = [OH⁻], a nie „pH = 7”. Skala pH nie kończy się na 0 i 14: stężony HCl może mieć pH &lt; 0, a stężony NaOH pH > 14 (formalnie pH = −log a<sub>H₃O⁺</sub>).</p>
 </div></details>
 <h3>7.3 Wskaźniki kwasowo-zasadowe</h3>
@@ -1135,7 +1213,7 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 </table>
 </div>
 <p class="mini-note"><strong>Zapamiętaj:</strong> fenoloftaleina jest <strong>bezbarwna</strong> w kwasie i obojętnym, <strong>malinowa</strong> w zasadzie. Oranż metylowy jest czerwony w kwasie, żółty w zasadzie — pomarańczowy tylko w wąskim zakresie pH 3,1–4,4; w wodzie (pH 7) jest już <strong>żółty</strong>, więc nie odróżni roztworu obojętnego od zasadowego. Do tego służy fenoloftaleina lub papierek uniwersalny.</p>
-<details class="adv"><summary>Wskaźnik jako słaby kwas <span class="adv-tag">poziom akademicki · poza maturą rozszerzoną</span></summary><div class="adv-body">
+<details class="adv poz-pon"><summary>Wskaźnik jako słaby kwas <span class="adv-tag">poziom akademicki · poza maturą rozszerzoną</span></summary><div class="adv-body">
 <p>Wskaźnik to słaby kwas HInd, którego forma kwasowa i zasadowa mają różne barwy: HInd ⇌ H⁺ + Ind⁻. Barwa przejściowa pojawia się przy pH ≈ pK<sub>Ind</sub> ± 1. Fenoloftaleina w bardzo silnie zasadowym środowisku (pH > 12–13) powoli się odbarwia (powstaje bezbarwna forma karbinolowa), a w stężonym H₂SO₄ jest pomarańczowa.</p>
 </div></details>
 </div>
@@ -1147,8 +1225,12 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 <div class="card card-basic">
 <p>Jeden wskaźnik w siedmiu roztworach — statyw probówek poniżej; roztwór × wskaźnik i drabinka pH kwasów i zasad dla wybranego stężenia — panel pH w <a href="#ph">§7</a>.3.</p>
 </div>
+<div class="card card-understand poz-must">
+<span class="card-label">Sprawdź się</span>
+<div class="che-quiz" id="quiz-s7"><div class="quiz-q" data-ok="0" data-fb="pH &amp;lt; 7 — kwasowy."><h5>1. Roztwór ma pH = 3. Jego odczyn jest:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">kwasowy</button><button type="button" class="quiz-opt" data-a="1">obojętny</button><button type="button" class="quiz-opt" data-a="2">zasadowy</button></div></div><div class="quiz-q" data-ok="0" data-fb="Oranż metylowy: czerwony w kwasie, żółty w zasadzie."><h5>2. Oranż metylowy w roztworze kwasu ma barwę:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">czerwoną</button><button type="button" class="quiz-opt" data-a="1">żółtą</button><button type="button" class="quiz-opt" data-a="2">bezbarwną</button></div></div><div class="quiz-q" data-ok="0" data-fb="Malinowa jest dopiero w zasadzie."><h5>3. Fenoloftaleina w roztworze kwasu jest:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">bezbarwna</button><button type="button" class="quiz-opt" data-a="1">malinowa</button><button type="button" class="quiz-opt" data-a="2">niebieska</button></div></div></div><div class="quiz-score" id="quiz-s7Score"></div>
+</div>
 </section>
-<section id="otrzymywanie">
+<section id="otrzymywanie" class="poz-e8">
 <div class="part-heading"><span class="part-num">8</span> Otrzymywanie kwasów <span class="level-badge level-basic">E8</span></div>
 <div class="mnemonic"><b>Mnemonik: TNS – trzy drogi do kwasu</b><ol><li><strong>T</strong>lenek kwasowy + woda → kwas tlenowy (SO₃ + H₂O → H₂SO₄).</li><li><strong>N</strong>iemetal + wodór → kwas beztlenowy (H₂ + Cl₂ → 2 HCl; dopiero w wodzie powstaje kwas).</li><li><strong>S</strong>ól + mocniejszy (lub mniej lotny) kwas → nowy kwas (NaCl + H₂SO₄ → NaHSO₄ + HCl↑).</li></ol></div>
 <h3>8.1 Tlenek kwasowy + woda → kwas</h3>
@@ -1187,7 +1269,7 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 <p class="mini-note">W wilgotnym powietrzu HCl(g) „dymi” — białą mgłę opisuje <a href="#wlasciwosci">§4</a>.1.</p>
 </div>
 </section>
-<section id="reakcje">
+<section id="reakcje" class="poz-e8">
 <div class="part-heading"><span class="part-num">9</span> Reakcje kwasów <span class="level-badge level-basic">E8</span></div>
 <div class="card card-core">
 <span class="card-label">Cztery główne schematy reakcji kwasów</span>
@@ -1242,24 +1324,27 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 </div>
 <p><strong>Reguła E8:</strong> kwas + metal → sól + H₂ <strong>tylko dla metali przed H w szeregu</strong>. Metale za H (Cu, Ag, Au) nie reagują z rozcieńczonymi kwasami nieutleniającymi.</p>
 <p class="mini-note"><strong>Uzasadnienie:</strong> metale aktywne łatwo oddają elektrony i tworzą kationy trwałe w wodzie — oddają elektrony jonom H₃O⁺, które redukują się do H₂. Metale szlachetne (Cu, Ag, Au) trudno się utleniają — jony H⁺ są dla nich zbyt słabym utleniaczem. Ilościowo decyduje <strong>potencjał standardowy E°</strong> (szereg napięciowy, LO rozszerzone): metal wypiera wodór, gdy E°(Mⁿ⁺/M) &lt; 0 V (np. Zn −0,76 V, Fe −0,44 V, Cu +0,34 V).</p>
-<details class="adv"><summary>Dlaczego nie wystarczy energia jonizacji <span class="adv-tag">poziom akademicki · poza maturą rozszerzoną</span></summary><div class="adv-body">
+<details class="adv poz-pon"><summary>Dlaczego nie wystarczy energia jonizacji <span class="adv-tag">poziom akademicki · poza maturą rozszerzoną</span></summary><div class="adv-body">
 <p>E° wynika z całego cyklu: atomizacja metalu + jonizacja + <strong>hydratacja kationu</strong>. Lit ma większą energię jonizacji niż cez, a mimo to najbardziej ujemny potencjał (−3,04 V), bo mały jon Li⁺ jest bardzo silnie hydratowany. Dlatego szereg aktywności „w wodzie” nie pokrywa się dokładnie z szeregiem energii jonizacji ani elektroujemności.</p>
 </div></details>
 </div>
-<h3>9.1.2 Wyjątek: HNO₃ jako kwas utleniający <span class="level-badge level-understand">ROZUMIENIE</span></h3>
-<div class="card card-extra">
+<p class="mini-note"><strong>E8:</strong> HNO₃ nie daje H₂ z metalami — nie stosujemy schematu „metal + kwas → sól + H₂”. Szczegóły (kwasy utleniające, pasywacja) — ponad program.</p>
+<div class="poz-blok poz-pon">
+<h3>9.1.2 Kwasy utleniające: HNO₃, stężony H₂SO₄ <span class="level-badge level-extra">PONAD PROGRAM</span></h3>
+<div class="card card-extra poz-pon">
 <p>HNO₃ reaguje z miedzią, ale <strong>NIE wydziela wodoru</strong> — jest kwasem utleniającym.</p>
 <div class="formula-lg">Cu + 4 HNO₃ (stężony) → Cu(NO₃)₂ + 2 NO₂↑ + 2 H₂O</div>
 <div class="formula-lg">3 Cu + 8 HNO₃ (rozcieńczony) → 3 Cu(NO₃)₂ + 2 NO↑ + 4 H₂O</div>
 <p class="mini-note">Produkt zależy od stężenia i temperatury. Na E8 wystarczy wiedzieć, że <strong>nie stosuje się schematu „metal + kwas → H₂”</strong> dla HNO₃. Doświadczenie z HNO₃ wykonuje wyłącznie nauczyciel (toksyczne gazy NO₂, NO).</p>
-<div class="card card-extra">
+<div class="card card-extra poz-pon">
 <span class="card-label">LO rozszerzone — kwasy utleniające i pasywacja</span>
 <p><strong>Gorący stężony H₂SO₄</strong> też jest utleniaczem: Cu + 2 H₂SO₄(stęż.) →(T) CuSO₄ + SO₂↑ + 2 H₂O.</p>
 <p><strong>Pasywacja:</strong> stężony HNO₃ i stężony H₂SO₄ na zimno pokrywają Fe, Al i Cr cienką, szczelną warstwą tlenku — reakcja ustaje. Dlatego stężony H₂SO₄ można przewozić w stalowych cysternach (rozcieńczony kwas żelazo rozpuszcza — w szkole kwasów nie przechowuje się w metalu).</p>
 </div>
-<details class="adv"><summary>Woda królewska — jak rozpuścić złoto <span class="adv-tag">poziom akademicki · poza maturą rozszerzoną</span></summary><div class="adv-body">
+<details class="adv poz-pon"><summary>Woda królewska — jak rozpuścić złoto <span class="adv-tag">poziom akademicki · poza maturą rozszerzoną</span></summary><div class="adv-body">
 <p>Mieszanina stęż. HNO₃ i HCl (1:3) rozpuszcza Au i Pt: HNO₃ utlenia metal, a jony Cl⁻ wiążą powstały kation w trwały kompleks, co przesuwa równowagę: Au + HNO₃ + 4 HCl → H[AuCl₄] + NO↑ + 2 H₂O.</p>
 </div></details>
+</div>
 </div>
 <h3 id="rx-tlenek">9.2 Kwas + tlenek metalu → sól + woda</h3>
 <div class="card card-basic">
@@ -1289,7 +1374,7 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 <h3>9.3.1 Równania jonowe zobojętniania</h3>
 <div class="che-lesson-viz-ref" data-che-lesson-viz="rownania-jonowe-v01"><button type="button" data-che-open-viz="rownania-jonowe-v01" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'rownania-jonowe-v01',lessonId:'N04'},'*')"><b>Równania jonowe dla wszystkich reakcji z lekcji (generowane przez silnik)</b><span>Cząsteczkowe → jonowe pełne → skrócone · jony obserwatory · CHE.IONIC</span></button></div>
 <!-- OPIS: Zestaw równań reakcji strącania wodorotlenków i zobojętniania w trzech zapisach: cząsteczkowym, jonowym pełnym i jonowym skróconym, z wyróżnieniem jonów, które nie biorą udziału w reakcji. Wniosek: zapis jonowy skrócony pokazuje tylko jony, które naprawdę reagują. -->
-<div class="card card-extra">
+<div class="card card-extra poz-pon">
 <span class="card-label">NaOH + HCl — trzy poziomy zapisu</span>
 <div class="formula-lg">Cząsteczkowe: NaOH(aq) + HCl(aq) → NaCl(aq) + H₂O(l)</div>
 <div class="formula-lg">Jonowe pełne: Na⁺ + OH⁻ + H⁺ + Cl⁻ → Na⁺ + Cl⁻ + H₂O</div>
@@ -1320,10 +1405,14 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 <h3>9.5 Przewidź i sprawdź</h3>
 <div class="che-lesson-viz-ref" data-che-lesson-viz="reakcje-kwasu-v03"><button type="button" data-che-open-viz="reakcje-kwasu-v03" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'reakcje-kwasu-v03',lessonId:'N04'},'*')"><b>Reakcje kwasów: przewidź i sprawdź</b><span>Metal, tlenek, węglan, sól, zobojętnianie · najpierw predykcja, potem zlewka</span></button></div>
 <!-- OPIS: Reakcje kwasów w trybie „przewidź i sprawdź”: kwas z metalem, tlenkiem metalu, węglanem, solą i zasadą — najpierw wybierasz przewidywane obserwacje i produkty, potem zlewka pokazuje wynik i równanie. Wniosek: kwasy reagują według kilku stałych schematów prowadzących do soli. -->
+<div class="card card-understand poz-must">
+<span class="card-label">Sprawdź się</span>
+<div class="che-quiz" id="quiz-s9"><div class="quiz-q" data-ok="0" data-fb="Miedź jest metalem szlachetniejszym od wodoru, więc nie wypiera go z kwasu."><h5>1. Co powstaje w reakcji Cu + HCl?</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">Nic — reakcja nie zachodzi (Cu jest za wodorem w szeregu)</button><button type="button" class="quiz-opt" data-a="1">CuCl₂ i H₂</button><button type="button" class="quiz-opt" data-a="2">CuH₂ i Cl₂</button></div></div><div class="quiz-q" data-ok="0" data-fb="Węglan + kwas → sól + woda + dwutlenek węgla."><h5>2. CaCO₃ + 2 HCl →</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">CaCl₂ + H₂O + CO₂</button><button type="button" class="quiz-opt" data-a="1">CaCl₂ + H₂</button><button type="button" class="quiz-opt" data-a="2">Ca + CO₂ + HCl</button></div></div><div class="quiz-q" data-ok="0" data-fb="Zasada + kwas → sól + woda."><h5>3. Produkty zobojętniania NaOH + HCl to:</h5><div class="quiz-opts"><button type="button" class="quiz-opt" data-a="0">NaCl i H₂O</button><button type="button" class="quiz-opt" data-a="1">NaCl i H₂</button><button type="button" class="quiz-opt" data-a="2">Na i HOCl</button></div></div></div><div class="quiz-score" id="quiz-s9Score"></div>
+</div>
 </section>
-<section id="deszcze">
+<section id="deszcze" class="poz-e8">
 <div class="part-heading"><span class="part-num">10</span> Kwaśne deszcze <span class="level-badge level-basic">E8</span></div>
-<div class="card card-extra">
+<div class="card card-extra poz-pon">
 <span class="card-label">Chemizm powstawania</span>
 <p><strong>Tlenki siarki:</strong></p>
 <div class="formula-lg">S + O₂ → SO₂ (spalanie paliw z siarką)</div>
@@ -1358,7 +1447,7 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 <div class="che-lesson-viz-ref" data-che-lesson-viz="acid-rain-v01"><button type="button" data-che-open-viz="acid-rain-v01" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'acid-rain-v01',lessonId:'N04'},'*')"><b>Kwaśne deszcze – animacja obiegu</b><span>Wizualizacja z biblioteki · otwiera się w oknie</span></button></div>
 <!-- OPIS: Animacja obiegu kwaśnych deszczy: spaliny z elektrowni i samochodów zawierają tlenki siarki i azotu, które w chmurach reagują z wodą, tworząc kwasy; opady niszczą lasy, zakwaszają jeziora i glebę i niszczą budynki z wapienia. Wniosek: kwasowe tlenki z emisji przemysłowej wracają na ziemię jako kwasy. -->
 </section>
-<section id="zastosowania">
+<section id="zastosowania" class="poz-e8">
 <div class="part-heading"><span class="part-num">11</span> Zastosowania kwasów <span class="level-badge level-basic">E8</span></div>
 <div class="table-wrap">
 <table>
@@ -1385,8 +1474,9 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 <li><strong>Akumulator samochodowy</strong> — H₂SO₄ (30–40%).</li>
 </ul>
 </div>
+<div class="poz-blok poz-pon">
 <h3>11.1 Kwasy w organizmie <span class="bio-tag">BIOL-CHEM</span> <span class="level-badge level-extra">AMBITNE</span></h3>
-<div class="card card-extra">
+<div class="card card-extra poz-pon">
 <span class="card-label">Kwasy, które działają w Twoim ciele</span>
 <ul>
 <li><strong>HCl w żołądku</strong> (komórki okładzinowe, pH ≈ 1,5–2): denaturuje białka, aktywuje pepsynę (optimum pH ≈ 2), niszczy bakterie. Leki „na zgagę” to zasady i sole — <em>reakcje zobojętniania</em>: Mg(OH)₂ + 2 HCl → MgCl₂ + 2 H₂O; NaHCO₃ + HCl → NaCl + H₂O + CO₂↑ (stąd odbijanie).</li>
@@ -1398,8 +1488,9 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 <li><strong>Próchnica</strong>: bakterie w płytce nazębnej fermentują cukry do kwasów; poniżej pH ≈ 5,5 szkliwo (hydroksyapatyt Ca₁₀(PO₄)₆(OH)₂) zaczyna się rozpuszczać. Fluor tworzy odporniejszy fluoroapatyt.</li>
 </ul>
 </div>
+</div>
 </section>
-<section id="bhp">
+<section id="bhp" class="poz-e8">
 <div class="part-heading"><span class="part-num">12</span> Bezpieczeństwo (BHP) <span class="level-badge level-basic">E8</span></div>
 <div class="che-lesson-viz-ref" data-che-lesson-viz="gfx-scene-dilution"><button type="button" data-che-open-viz="gfx-scene-dilution" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'gfx-scene-dilution',lessonId:'N04'},'*')"><b>Rozcieńczanie: „kwas do wody!” — poprawnie i błędnie</b><span>Doświadczenie w silniku GFX · otwiera się w oknie</span></button></div>
 <!-- OPIS: Dwie wersje rozcieńczania stężonego kwasu: poprawna — kwas wlewany powoli do wody, mieszanina tylko się ogrzewa; błędna — woda wlewana do kwasu, gwałtowne rozpryskiwanie wrzącej cieczy. Wniosek: zawsze wlewa się kwas do wody, powoli i mieszając. -->
@@ -1433,9 +1524,9 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 <p>Gdy wlewasz <strong>kwas do wody</strong> — kwas opada, miesza się z całą objętością wody, ciepło rozchodzi się, ryzyko rozprysku znacznie mniejsze.</p>
 </div>
 </section>
-<section id="organiczne">
+<section id="organiczne" class="poz-pon">
 <div class="part-heading"><span class="part-num">13</span> Kwasy organiczne (karboksylowe) <span class="level-badge level-extra">AMBITNE</span></div>
-<div class="card card-extra">
+<div class="card card-extra poz-pon">
 <span class="card-label">Kwasy organiczne (karboksylowe) — ogólnie</span>
 <p><strong>Kwasy karboksylowe</strong> to związki organiczne zawierające grupę karboksylową <strong>–COOH</strong>.</p>
 <p>Wzór ogólny: <strong>R–COOH</strong>, gdzie R = grupa węglowodorowa (lub wodór).</p>
@@ -1462,7 +1553,7 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 <p class="mini-note">Uwaga: 3 atomy H w grupie CH₃ <strong>nie są protonami kwasowymi</strong> — tylko H z grupy –COOH. Dlatego CH₃COOH jest kwasem jednoprotonowym, mimo że ma 4 atomy H.</p>
 <p class="mini-note">Kwas octowy: dysocjacja CH₃COOH ⇌ H⁺ + CH₃COO⁻ — <a href="#dysocjacja">§5</a>.2; dlaczego jest jednoprotonowy (tylko H z grupy –COOH) — <a href="#nazewnictwo">§2</a>.3.</p>
 </section>
-<section id="miareczkowanie">
+<section id="miareczkowanie" class="poz-pon">
 <div class="part-heading"><span class="part-num">14</span> Miareczkowanie (titracja) <span class="level-badge level-extra">AMBITNE</span></div>
 <div class="card card-core">
 <span class="card-label">Co to jest titracja?</span>
@@ -1495,7 +1586,7 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 <div class="che-lesson-viz-ref" data-che-lesson-viz="titration-merged"><button type="button" data-che-open-viz="titration-merged" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'titration-merged',lessonId:'N04'},'*')"><b>Krzywa miareczkowania: mocny/słaby kwas</b><span>pH(V) z silnika · punkt równoważnikowy</span></button></div>
 <!-- OPIS: Krzywa miareczkowania: wykres pH od objętości dodanej zasady dla kwasu mocnego i słabego; przy punkcie równoważnikowym pH zmienia się skokowo, a dla kwasu słabego krzywa zaczyna się wyżej i skok jest mniejszy. Wniosek: przebieg krzywej zależy od mocy kwasu. -->
 </section>
-<section id="bufory">
+<section id="bufory" class="poz-pon">
 <div class="part-heading"><span class="part-num">15</span> Bufory — model jakościowy <span class="level-badge level-extra">AMBITNE</span></div>
 <div class="card card-core">
 <span class="card-label">Definicja</span>
@@ -1517,13 +1608,13 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 </ul>
 <p><strong>Pojemność buforowa</strong> — ograniczona. Po dodaniu zbyt dużej ilości kwasu/zasady bufor przestaje działać.</p>
 </div>
-<div class="card card-extra">
+<div class="card card-extra poz-pon">
 <span class="card-label">Wzór Hendersona–Hasselbalcha (rozszerzenie)</span>
 <div class="formula-lg">pH = pKa + log([A⁻]/[HA])</div>
 <p>gdzie pKa = −log Ka (stała dysocjacji słabego kwasu), [A⁻] — stężenie sprzężonej zasady, [HA] — stężenie kwasu.</p>
 <p><strong>Optymalny zakres buforowania:</strong> pH ≈ pKa ± 1.</p>
 </div>
-<div class="card card-extra">
+<div class="card card-extra poz-pon">
 <span class="card-label">Przykłady biologiczne</span>
 <ul>
 <li><strong>Krew:</strong> bufor węglanowy H₂CO₃/HCO₃⁻ — utrzymuje pH ~7,4. Bufor wodorowęglanowy krwi: CO₂ + H₂O ⇌ H₂CO₃ ⇌ H⁺ + HCO₃⁻ (pierwszy etap przyspiesza enzym anhydraza węglanowa). pH krwi 7,35–7,45; spadek = kwasica, wzrost = zasadowica.</li>
@@ -1531,16 +1622,16 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 <li><strong>Ślina:</strong> głównie bufor wodorowęglanowy, a także fosforanowy H₂PO₄⁻/HPO₄²⁻ — pH ~6,5–7,0.</li>
 </ul>
 </div>
-<details class="adv"><summary>Bufor krwi w liczbach (Henderson–Hasselbalch) <span class="adv-tag">poziom akademicki · poza maturą rozszerzoną</span></summary><div class="adv-body">
+<details class="adv poz-pon"><summary>Bufor krwi w liczbach (Henderson–Hasselbalch) <span class="adv-tag">poziom akademicki · poza maturą rozszerzoną</span></summary><div class="adv-body">
 <p>pK<sub>a</sub>′ układu CO₂/HCO₃⁻ w osoczu ≈ 6,1, a stosunek [HCO₃⁻] : [CO₂(aq)] ≈ 20 : 1, więc pH = 6,1 + log 20 ≈ 7,4. Bufor jest skuteczny mimo pH daleko od pK<sub>a</sub>, bo jest to <strong>układ otwarty</strong>: płuca usuwają CO₂ (regulacja oddechowa w minutach), a nerki wydalają H⁺ i odzyskują HCO₃⁻ (regulacja metaboliczna w godzinach–dniach).</p>
 </div></details>
-<details class="adv"><summary>Bufor ilościowo: pojemność buforowa i wybór buforu <span class="adv-tag">poziom akademicki · poza maturą rozszerzoną</span></summary><div class="adv-body">
+<details class="adv poz-pon"><summary>Bufor ilościowo: pojemność buforowa i wybór buforu <span class="adv-tag">poziom akademicki · poza maturą rozszerzoną</span></summary><div class="adv-body">
 <p>Pojemność buforowa β = dn/dpH jest największa, gdy [HA] = [A⁻] (pH = pK<sub>a</sub>) i rośnie z całkowitym stężeniem buforu. Dlatego bufor wybiera się tak, by pK<sub>a</sub> leżało blisko żądanego pH (np. fosforanowy H₂PO₄⁻/HPO₄²⁻, pK<sub>a</sub> 7,2 — w biologii komórki; TRIS, HEPES — w laboratoriach biochemicznych).</p>
 </div></details>
 <div class="che-lesson-viz-ref" data-che-lesson-viz="kw-bufor-v01"><button type="button" data-che-open-viz="kw-bufor-v01" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'kw-bufor-v01',lessonId:'N04'},'*')"><b>Bufor octanowy kontra woda — dodawaj HCl i NaOH</b><span>pH-metry, wskaźnik uniwersalny, wykres · pKa z silnika · wyczerpanie pojemności</span></button></div>
 <!-- OPIS: Porównanie buforu octanowego z wodą: do obu dodaje się porcjami HCl lub NaOH; pH wody zmienia się gwałtownie, pH buforu prawie stoi w miejscu, dopóki bufor nie wyczerpie swojej pojemności; widać pH-metry, wskaźnik i wykres. Wniosek: bufor utrzymuje prawie stałe pH, ale tylko do pewnej ilości dodanego kwasu lub zasady. -->
 </section>
-<section id="doswiadczenia">
+<section id="doswiadczenia" class="poz-e8">
 <div class="part-heading"><span class="part-num">16</span> Doświadczenia</div>
 <div class="che-lesson-viz-ref" data-che-lesson-viz="kw-doswiadczenia-v01"><button type="button" data-che-open-viz="kw-doswiadczenia-v01" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'kw-doswiadczenia-v01',lessonId:'N04'},'*')"><b>Pracownia: wszystkie doświadczenia z kwasami (GFX)</b><span>Zestawy, reakcje i pokazy w jednym oknie · silnik GFX</span></button></div>
 <!-- OPIS: Pracownia doświadczeń z kwasami: zestawy i reakcje w zlewkach — wskaźniki w kwasie, metal z kwasem, węglan z kwasem, zobojętnianie, tlenek miedzi z kwasem, przewodnictwo, szereg aktywności metali i pokazy stężonych kwasów, z obserwacjami i równaniami. Wniosek: właściwości kwasów potwierdza się doświadczeniem. -->
@@ -1550,7 +1641,7 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 </div>
 <div class="exp-card"><h5>Doświadczenie 1 — Odczyn kwasu chlorowodorowego</h5><div class="exp-grid"><b>Problem</b><span>Jaki odczyn ma roztwór HCl?</span><b>Hipoteza</b><span>Kwasowy — papierek uniwersalny czerwony, oranż metylowy czerwony.</span><b>Sprzęt</b><span>HCl (rozcieńczony), papierek uniwersalny, oranż metylowy, fenoloftaleina, dwie probówki.</span><b>Przebieg</b><span>Zanurzamy papierek uniwersalny w roztworze HCl; dodajemy kroplę oranżu metylowego do probówki z HCl.</span><b>Obserwacja</b><span>Papierek uniwersalny czerwony; oranż metylowy czerwony; fenoloftaleina bezbarwna.</span><b>Wniosek</b><span>Roztwór HCl ma odczyn kwasowy (pH &lt; 7).</span><b>Równanie</b><span>HCl → H⁺ + Cl⁻</span><b>BHP</b><span>HCl żrący — okulary, rękawice; nie pipetować ustami.</span></div><button class="che-prac-go" data-k="indicator" data-prac="kw-doswiadczenia-v01" type="button">Zobacz w zlewce (pracownia GFX)</button>
 <!-- OPIS: Wskaźniki dodane do roztworu kwasu: papierek uniwersalny i oranż metylowy barwią się na czerwono, a fenoloftaleina pozostaje bezbarwna. Wniosek: roztwory kwasów mają odczyn kwasowy (pH < 7). --></div>
-<div class="exp-card"><h5>Doświadczenie 2 — Kwas + metal (Zn + HCl)</h5><div class="exp-grid"><b>Problem</b><span>Czy cynk reaguje z kwasem solnym?</span><b>Hipoteza</b><span>Wydzieli się wodór.</span><b>Sprzęt</b><span>Zn (granulki), HCl (rozcieńczony), probówka, zapałka.</span><b>Przebieg</b><span>Do probówki z HCl wrzucamy granulkę Zn. Po chwili zbliżamy zapaloną zapałkę do wylotu probówki.</span><b>Obserwacja</b><span>Pęcherzyki gazu; po zbliżeniu zapałki — charakterystyczny „szczek” (spalanie wodoru).</span><b>Wniosek</b><span>Cynk reaguje z HCl, wydzielając wodór.</span><b>Równanie</b><span>Zn + 2 HCl → ZnCl₂ + H₂↑</span><b>BHP</b><span>Okulary; wodór z powietrzem tworzy mieszaninę wybuchową — próbę „pyk” robimy tylko z małą ilością gazu zebraną w probówce (wylotem od siebie i innych), nigdy przy dużej aparaturze, w której gaz się wydziela.</span></div><button class="che-prac-go" data-k="acidMetal" data-prac="kw-doswiadczenia-v01" type="button">Zobacz w zlewce (pracownia GFX)</button>
+<div class="exp-card"><h5>Doświadczenie 2 — Kwas + metal (Zn + HCl)</h5><div class="exp-grid"><b>Problem</b><span>Czy cynk reaguje z kwasem solnym?</span><b>Hipoteza</b><span>Wydzieli się wodór.</span><b>Sprzęt</b><span>Zn (granulki), HCl (rozcieńczony), probówka, zapałka.</span><b>Przebieg</b><span>Do probówki z HCl wrzucamy granulkę Zn. Po chwili zbliżamy zapaloną zapałkę do wylotu probówki.</span><b>Obserwacja</b><span>Pęcherzyki gazu; po zbliżeniu zapałki — charakterystyczny „szczek” (spalanie wodoru).</span><b>Wniosek</b><span>Cynk reaguje z HCl, wydzielając wodór.</span><b>Równanie</b><span>Zn + 2 HCl → ZnCl₂ + H₂↑</span><b>BHP</b><span>Okulary. Próbę „pyk” wykonuje nauczyciel albo uczeń wyłącznie pod jego nadzorem. Zbieramy małą porcję gazu w osobnej probówce; płomienia nie zbliżamy do probówki, w której gaz nadal się wydziela (wodór z powietrzem tworzy mieszaninę wybuchową). Nigdy przy dużej aparaturze.</span></div><button class="che-prac-go" data-k="acidMetal" data-prac="kw-doswiadczenia-v01" type="button">Zobacz w zlewce (pracownia GFX)</button>
 <!-- OPIS: Metal (np. cynk) w kwasie solnym: metal się roztwarza, wydzielają się pęcherzyki bezbarwnego gazu, który przy płomieniu daje odgłos „pyk”. Wniosek: Zn + 2 HCl → ZnCl₂ + H₂↑ — metal aktywny wypiera wodór z kwasu. --></div>
 <div class="exp-card"><h5>Doświadczenie 3 — Kwas + węglan (otrzymywanie CO₂)</h5><div class="exp-grid"><b>Problem</b><span>Jak otrzymać CO₂ z węglanu?</span><b>Hipoteza</b><span>Powstanie CO₂ (gaz).</span><b>Sprzęt</b><span>CaCO₃ (kreda), HCl, probówka, rurka, woda wapienna.</span><b>Przebieg</b><span>Do probówki z CaCO₃ dodajemy HCl; gaz przepuszczamy przez rurkę do wody wapiennej.</span><b>Obserwacja</b><span>Pęcherzyki gazu; woda wapienna mętnieje.</span><b>Wniosek</b><span>CaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂↑; CO₂ mętni wodę wapienną.</span><b>Równanie</b><span>CaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂↑</span><b>BHP</b><span>Okulary; nie wciągać wody wapiennej do ust.</span></div><button class="che-prac-go" data-k="carbonate" data-prac="kw-doswiadczenia-v01" type="button">Zobacz w zlewce (pracownia GFX)</button>
 <!-- OPIS: Na węglan wapnia działa kwas: wydzielają się pęcherzyki gazu, który przepuszczony przez wodę wapienną powoduje jej zmętnienie. Wniosek: CaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂↑ — kwas wypiera z węglanu tlenek węgla(IV). --></div>
@@ -1558,13 +1649,13 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 <!-- OPIS: Do malinowego roztworu NaOH z fenoloftaleiną dodaje się porcjami kwas solny: barwa słabnie i w punkcie zobojętnienia roztwór staje się bezbarwny. Wniosek: HCl + NaOH → NaCl + H₂O (H⁺ + OH⁻ → H₂O) — kwas i zasada się zobojętniają. --></div>
 <div class="exp-card"><h5>Doświadczenie 5 — Kwas + tlenek metalu</h5><div class="exp-grid"><b>Problem</b><span>Czy CuO reaguje z H₂SO₄?</span><b>Hipoteza</b><span>Powstanie niebieski roztwór CuSO₄.</span><b>Sprzęt</b><span>CuO (czarny proszek), H₂SO₄ (rozcieńczony), probówka.</span><b>Przebieg</b><span>Do probówki z rozcieńczonym H₂SO₄ dodajemy szczyptę CuO; mieszamy; lekko podgrzewamy.</span><b>Obserwacja</b><span>Czarny CuO znika; powstaje niebieski roztwór.</span><b>Wniosek</b><span>CuO reaguje z kwasem; powstaje Cu²⁺ (niebieski kolor).</span><b>Równanie</b><span>CuO + H₂SO₄ → CuSO₄ + H₂O</span><b>BHP</b><span>Okulary; H₂SO₄ żrący.</span></div><button class="che-prac-go" data-k="cuoH2so4" data-prac="kw-doswiadczenia-v01" type="button">Zobacz w zlewce (pracownia GFX)</button>
 <!-- OPIS: Czarny tlenek miedzi(II) w roztworze kwasu siarkowego(VI), lekko ogrzewanym: proszek znika, a roztwór barwi się na niebiesko. Wniosek: CuO + H₂SO₄ → CuSO₄ + H₂O — tlenek zasadowy reaguje z kwasem, tworząc sól i wodę. --></div>
-<div class="exp-card"><h5>Doświadczenie 6 — Przewodzenie prądu przez roztwory kwasów</h5><div class="exp-grid"><b>Problem</b><span>Czy roztwory kwasów przewodzą prąd? Czy wszystkie jednakowo?</span><b>Hipoteza</b><span>Przewodzą, bo zawierają jony; mocny kwas przewodzi lepiej niż słaby o tym samym stężeniu.</span><b>Sprzęt</b><span>Tester przewodnictwa (elektrody, żarówka/dioda, bateria), zlewki: HCl 0,1 M, CH₃COOH 0,1 M, woda destylowana, roztwór cukru.</span><b>Przebieg</b><span>Zanurzamy elektrody kolejno w roztworach, płucząc je wodą destylowaną między pomiarami.</span><b>Obserwacja</b><span>HCl — żarówka świeci jasno, po chwili drobne pęcherzyki gazu na obu elektrodach (H₂ na katodzie, Cl₂ — zapach chloru — na anodzie); CH₃COOH — świeci słabo, gazu bardzo mało; woda i cukier — nie świeci, brak pęcherzyków.</span><b>Wniosek</b><span>Kwasy są elektrolitami; HCl — mocny (prawie pełna dysocjacja), CH₃COOH — słaby.</span><b>Równanie</b><span>HCl + H₂O → H₃O⁺ + Cl⁻;  CH₃COOH + H₂O ⇌ H₃O⁺ + CH₃COO⁻</span><b>BHP</b><span>Niskie napięcie (bateria); okulary; nie dotykać elektrod mokrymi rękami.</span></div><button class="che-prac-go" data-k="conductivity" data-prac="kw-doswiadczenia-v01" type="button">Zobacz w zlewce (pracownia GFX)</button>
+<div class="exp-card"><h5>Doświadczenie 6 — Przewodzenie prądu przez roztwory kwasów</h5><div class="exp-grid"><b>Problem</b><span>Czy roztwory kwasów przewodzą prąd? Czy wszystkie jednakowo?</span><b>Hipoteza</b><span>Przewodzą, bo zawierają jony; mocny kwas przewodzi lepiej niż słaby o tym samym stężeniu.</span><b>Sprzęt</b><span>Tester przewodnictwa (elektrody, żarówka/dioda, bateria), zlewki: HCl 0,1 M, CH₃COOH 0,1 M, woda destylowana, roztwór cukru.</span><b>Przebieg</b><span>Zanurzamy elektrody kolejno w roztworach, płucząc je wodą destylowaną między pomiarami.</span><b>Obserwacja</b><span>HCl — żarówka świeci jasno; CH₃COOH — świeci słabo; woda destylowana i cukier — nie świeci. (Przy niskim napięciu pęcherzyków gazu zwykle nie widać; ich ewentualne pojawienie się to elektroliza — poza zakresem E8.)</span><b>Wniosek</b><span>Kwasy są elektrolitami; HCl — mocny (prawie pełna dysocjacja), CH₃COOH — słaby.</span><b>Równanie</b><span>HCl + H₂O → H₃O⁺ + Cl⁻;  CH₃COOH + H₂O ⇌ H₃O⁺ + CH₃COO⁻</span><b>BHP</b><span>Niskie napięcie (bateria); okulary; nie dotykać elektrod mokrymi rękami.</span></div><button class="che-prac-go" data-k="conductivity" data-prac="kw-doswiadczenia-v01" type="button">Zobacz w zlewce (pracownia GFX)</button>
 <!-- OPIS: Tester z żarówką zanurzony w roztworze kwasu: żarówka świeci, a w wodzie destylowanej — nie. Wniosek: w roztworze kwasu są jony powstałe w dysocjacji, które przewodzą prąd. --></div>
 <div class="exp-card"><h5>Doświadczenie 7 — Aktywność metali wobec kwasu solnego</h5><div class="exp-grid"><b>Problem</b><span>Które metale wypierają wodór z HCl i jak szybko?</span><b>Hipoteza</b><span>Reagują metale stojące przed wodorem; najszybciej najaktywniejszy.</span><b>Sprzęt</b><span>4 probówki z HCl (ok. 2 mol/dm³), wiórki Mg, granulki Zn, opiłki Fe, blaszka Cu.</span><b>Przebieg</b><span>Do każdej probówki wrzucamy inny metal; porównujemy intensywność wydzielania gazu.</span><b>Obserwacja</b><span>Mg — gwałtowne pienienie, probówka się ogrzewa; Zn — wyraźne pęcherzyki; Fe — nieliczne pęcherzyki, roztwór bladozielony; Cu — brak zmian.</span><b>Wniosek</b><span>Aktywność: Mg > Zn > Fe > (H) > Cu.</span><b>Równanie</b><span>Mg + 2 HCl → MgCl₂ + H₂↑;  Fe + 2 HCl → FeCl₂ + H₂↑;  Cu + HCl → brak reakcji</span><b>BHP</b><span>Okulary; wodór łatwopalny — z dala od ognia.</span></div><button class="che-prac-go" data-k="szereg" data-prac="kw-doswiadczenia-v01" type="button">Zobacz w zlewce (pracownia GFX)</button>
 <!-- OPIS: Cztery probówki z kwasem solnym i metalami Mg, Zn, Fe, Cu: magnez reaguje najgwałtowniej, cynk wyraźnie, żelazo powoli, przy miedzi nie ma pęcherzyków. Wniosek: z kwasów wodór wypierają tylko metale aktywniejsze od wodoru. --></div>
-<div class="exp-card"><h5>Doświadczenie 8 — Działanie stężonego H₂SO₄ na cukier (pokaz nauczyciela)</h5><div class="exp-grid"><b>Problem</b><span>Jak stężony kwas siarkowy(VI) działa na substancje organiczne?</span><b>Hipoteza</b><span>Odbierze wodę — substancja ulegnie zwęgleniu.</span><b>Sprzęt</b><span>Zlewka, cukier (sacharoza), stężony H₂SO₄, bagietka; dygestorium.</span><b>Przebieg</b><span>Do cukru w zlewce nauczyciel wlewa niewielką ilość stężonego H₂SO₄ i miesza.</span><b>Obserwacja</b><span>Cukier żółknie, brunatnieje i czernieje; czarna porowata masa „rośnie”; zlewka bardzo gorąca, wydziela się para i ostry zapach.</span><b>Wniosek</b><span>Stężony H₂SO₄ ma właściwości higroskopijne i odwadniające — zwęgla związki organiczne.</span><b>Równanie</b><span>C₁₂H₂₂O₁₁ →(H₂SO₄ stęż.) 12 C + 11 H₂O</span><b>BHP</b><span>Tylko pokaz pod dygestorium; okulary, rękawice; SO₂ drażni drogi oddechowe.</span></div><button class="che-prac-go" data-k="wlasciwosci" data-prac="kw-doswiadczenia-v01" type="button">Zobacz w zlewce (pracownia GFX)</button>
+<div class="exp-card poz-roz"><h5>Doświadczenie 8 — Działanie stężonego H₂SO₄ na cukier (pokaz nauczyciela)</h5><div class="exp-grid"><b>Problem</b><span>Jak stężony kwas siarkowy(VI) działa na substancje organiczne?</span><b>Hipoteza</b><span>Odbierze wodę — substancja ulegnie zwęgleniu.</span><b>Sprzęt</b><span>Zlewka, cukier (sacharoza), stężony H₂SO₄, bagietka; dygestorium.</span><b>Przebieg</b><span>Do cukru w zlewce nauczyciel wlewa niewielką ilość stężonego H₂SO₄ i miesza.</span><b>Obserwacja</b><span>Cukier żółknie, brunatnieje i czernieje; czarna porowata masa „rośnie”; zlewka bardzo gorąca, wydziela się para i ostry zapach.</span><b>Wniosek</b><span>Stężony H₂SO₄ ma właściwości higroskopijne i odwadniające — zwęgla związki organiczne.</span><b>Równanie</b><span>C₁₂H₂₂O₁₁ →(H₂SO₄ stęż.) 12 C + 11 H₂O</span><b>BHP</b><span>Tylko pokaz pod dygestorium; okulary, rękawice; SO₂ drażni drogi oddechowe.</span></div><button class="che-prac-go" data-k="wlasciwosci" data-prac="kw-doswiadczenia-v01" type="button">Zobacz w zlewce (pracownia GFX)</button>
 <!-- OPIS: Pokazy stężonych kwasów: cukier ze stężonym H₂SO₄ czernieje i pęcznieje, białko z HNO₃ żółknie, stężony HCl „dymi” na powietrzu. Wniosek: stężone kwasy są żrące, utleniające i odwadniające — tylko pokaz nauczyciela pod wyciągiem. --></div>
-<div class="exp-card"><h5>Doświadczenie 9 — Kwas azotowy(V) i białko (pokaz nauczyciela)</h5><div class="exp-grid"><b>Problem</b><span>Jak HNO₃ działa na białko?</span><b>Hipoteza</b><span>Białko ulegnie ścięciu i zmieni barwę.</span><b>Sprzęt</b><span>Probówka z roztworem białka jaja kurzego, stężony HNO₃.</span><b>Przebieg</b><span>Do roztworu białka nauczyciel dodaje kilka kropel stężonego HNO₃ (można lekko ogrzać).</span><b>Obserwacja</b><span>Wytrąca się biały osad, który <strong>żółknie</strong>; po dodaniu zasady (np. NH₃(aq)) barwa przechodzi w pomarańczową.</span><b>Wniosek</b><span>HNO₃ denaturuje białko i nitruje pierścienie aromatyczne aminokwasów — reakcja ksantoproteinowa (wykrywanie białek). Dlatego HNO₃ barwi skórę na żółto.</span><b>Równanie</b><span>białko (reszty aromatyczne) + HNO₃ → żółte nitrozwiązki</span><b>BHP</b><span>Stężony HNO₃ — silnie żrący i utleniający; tylko pokaz.</span></div><button class="che-prac-go" data-k="wlasciwosci" data-prac="kw-doswiadczenia-v01" type="button">Zobacz w zlewce (pracownia GFX)</button>
+<div class="exp-card poz-roz"><h5>Doświadczenie 9 — Kwas azotowy(V) i białko (pokaz nauczyciela)</h5><div class="exp-grid"><b>Problem</b><span>Jak HNO₃ działa na białko?</span><b>Hipoteza</b><span>Białko ulegnie ścięciu i zmieni barwę.</span><b>Sprzęt</b><span>Probówka z roztworem białka jaja kurzego, stężony HNO₃.</span><b>Przebieg</b><span>Do roztworu białka nauczyciel dodaje kilka kropel stężonego HNO₃ (można lekko ogrzać).</span><b>Obserwacja</b><span>Wytrąca się biały osad, który <strong>żółknie</strong>; po dodaniu zasady (np. NH₃(aq)) barwa przechodzi w pomarańczową.</span><b>Wniosek</b><span>HNO₃ denaturuje białko i nitruje pierścienie aromatyczne aminokwasów — reakcja ksantoproteinowa (wykrywanie białek). Dlatego HNO₃ barwi skórę na żółto.</span><b>Równanie</b><span>białko (reszty aromatyczne) + HNO₃ → żółte nitrozwiązki</span><b>BHP</b><span>Stężony HNO₃ — silnie żrący i utleniający; tylko pokaz.</span></div><button class="che-prac-go" data-k="wlasciwosci" data-prac="kw-doswiadczenia-v01" type="button">Zobacz w zlewce (pracownia GFX)</button>
 <!-- OPIS: Pokazy stężonych kwasów: cukier ze stężonym H₂SO₄ czernieje i pęcznieje, białko z HNO₃ żółknie, stężony HCl „dymi” na powietrzu. Wniosek: stężone kwasy są żrące, utleniające i odwadniające — tylko pokaz nauczyciela pod wyciągiem. --></div>
 <div class="exp-card"><h5>Doświadczenie 10 — Odróżnianie HCl od CH₃COOH</h5><div class="exp-grid"><b>Problem</b><span>Jak odróżnić roztwory mocnego i słabego kwasu o tym samym stężeniu (0,1 mol/dm³)?</span><b>Hipoteza</b><span>Mocny kwas ma niższe pH, lepiej przewodzi prąd i szybciej reaguje z magnezem.</span><b>Sprzęt</b><span>pH-metr lub papierek uniwersalny, tester przewodnictwa, wiórki Mg, dwie probówki.</span><b>Przebieg</b><span>Mierzymy pH obu roztworów, sprawdzamy przewodnictwo, dodajemy do każdego po kawałku Mg.</span><b>Obserwacja</b><span>HCl: pH ≈ 1, żarówka świeci jasno, pęcherzyki wydzielają się szybko. CH₃COOH: pH ≈ 2,9, słabe świecenie, pęcherzyki wolniej.</span><b>Wniosek</b><span>HCl jest kwasem mocnym (pełna dysocjacja), CH₃COOH — słabym (ok. 1,3%). Fenoloftaleina tych roztworów nie odróżni (w obu bezbarwna).</span><b>Równanie</b><span>Mg + 2 H₃O⁺ → Mg²⁺ + H₂↑ + 2 H₂O</span><b>BHP</b><span>Okulary.</span></div><button class="che-prac-go" data-k="conductivity" data-prac="kw-doswiadczenia-v01" type="button">Zobacz w zlewce (pracownia GFX)</button>
 <!-- OPIS: Tester z żarówką zanurzony w roztworze kwasu: żarówka świeci, a w wodzie destylowanej — nie. Wniosek: w roztworze kwasu są jony powstałe w dysocjacji, które przewodzą prąd. --></div>
@@ -1583,8 +1674,12 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 </div>
 <p><strong>Nie pisz w obserwacji:</strong> „wydziela się H₂” — dopóki nie zidentyfikujesz gazu (np. przez „szczek” spalania).</p>
 </div>
+<div class="exp-card"><h5>Doświadczenie 11 — Czerwona kapusta jako wskaźnik (domowe)</h5><div class="exp-grid"><b>Problem</b><span>Jak zmienia barwę naturalny wskaźnik w kwasie, wodzie i zasadzie?</span><b>Hipoteza</b><span>Sok z czerwonej kapusty zmieni barwę zależnie od odczynu.</span><b>Sprzęt</b><span>wywar z czerwonej kapusty (gotowana kapusta, odcedzony sok), 4 szklanki lub probówki, ocet, woda z kranu, roztwór sody oczyszczonej, roztwór mydła lub płynu do zmywania.</span><b>Przebieg</b><span>Do każdego naczynia nalewamy po kilka ml wywaru, a następnie dodajemy kolejno: ocet, wodę, roztwór sody, roztwór mydła. Porównujemy barwy z naczyniem kontrolnym (sam wywar).</span><b>Obserwacja</b><span>Ocet — czerwony/różowy; woda — fioletowy (bez zmiany); soda — niebieski do niebieskozielonego; mydło — niebieskozielony do zielonego.</span><b>Wniosek</b><span>Barwnik z kapusty (antocyjany) jest wskaźnikiem pH: w kwasie czerwienieje, w zasadzie niebieski/zielony. Kwas octowy obniża pH roztworu.</span><b>Równanie</b><span>brak — zmiana barwy barwnika zależna od pH (nie jest to reakcja kwasu z metalem czy węglanem).</span><b>BHP</b><span>Gorący wywar robi dorosły; nie próbujemy substancji; okulary przy mydle i sodzie.</span></div><!-- OPIS: Cztery szklanki z fioletowym wywarem z kapusty po dodaniu kolejno: octu (czerwono-różowy), wody (fioletowy), roztworu sody (niebieski) i roztworu mydła (niebieskozielony). Wniosek: barwa wskaźnika zależy od pH — kwas czerwieni, zasada niebieści/zieleni. --></div>
+<div class="exp-card"><h5>Doświadczenie 12 — Balon na butelce: soda + ocet (domowe)</h5><div class="exp-grid"><b>Problem</b><span>Czy kwas octowy reaguje z sodą oczyszczoną i co powstaje?</span><b>Hipoteza</b><span>Powstanie gaz, który nadmucha balon.</span><b>Sprzęt</b><span>butelka plastikowa, balon, lejek, soda oczyszczona (2 łyżeczki), ocet (ok. 50 ml); kontrola: druga butelka z wodą zamiast octu.</span><b>Przebieg</b><span>Do butelki nalewamy ocet, do balonu wsypujemy sodę, zakładamy balon na szyjkę i unosimy go, by soda wpadła do octu. Powtarzamy z wodą zamiast octu.</span><b>Obserwacja</b><span>Z octem — burzenie, balon się nadmuchuje; z wodą — prawie nic się nie dzieje.</span><b>Wniosek</b><span>Kwas + wodorowęglan (węglan) → sól + woda + CO₂. Kwas jest potrzebny do reakcji. (Wersja „wulkan”: dodatek kropli płynu do naczyń daje trwałą pianę z tego samego gazu.)</span><b>Równanie</b><span>NaHCO₃ + CH₃COOH → CH₃COONa + H₂O + CO₂↑</span><b>BHP</b><span>Okulary; balon mocno trzymamy na szyjce; reakcji nie robimy w zamkniętej butelce bez balonu (nadciśnienie).</span></div><!-- OPIS: Dwie butelki z balonami na szyjkach: w butelce z octem po wsypaniu sody balon nadmuchuje się dwutlenkiem węgla, w butelce z wodą balon pozostaje oklapnięty. Wniosek: kwas reaguje z sodą, wydzielając CO₂. --></div>
+<div class="exp-card"><h5>Doświadczenie 13 — Skorupka jajka w occie (domowe, 1–2 dni)</h5><div class="exp-grid"><b>Problem</b><span>Co kwas robi ze skorupką jajka?</span><b>Hipoteza</b><span>Skorupka (CaCO₃) zareaguje z kwasem i wydzieli się CO₂.</span><b>Sprzęt</b><span>surowe jajko lub skorupki, słoik, ocet (tyle, by przykryć jajko); kontrola: drugi słoik z wodą.</span><b>Przebieg</b><span>Jajko zanurzamy w occie i obserwujemy po minucie, po kilku godzinach i po 1–2 dniach. Kontrola — jajko w wodzie.</span><b>Obserwacja</b><span>Po chwili na skorupce pojawiają się pęcherzyki; po 1–2 dniach skorupka się rozpuszcza, a jajko pozostaje w miękkiej błonie. W wodzie — bez zmian.</span><b>Wniosek</b><span>Węglan wapnia reaguje z kwasem; ta sama reakcja zachodzi, gdy kwaśne deszcze niszczą wapień i marmur.</span><b>Równanie</b><span>CaCO₃ + 2 CH₃COOH → (CH₃COO)₂Ca + H₂O + CO₂↑</span><b>BHP</b><span>Jajka po doświadczeniu nie jemy; ręce myjemy po kontakcie z surowym jajkiem.</span></div><!-- OPIS: Dwa słoiki z jajkami: w occie skorupka pokryta pęcherzykami gazu, z czasem znika, jajko staje się miękkie i półprzezroczyste; w wodzie skorupka bez zmian. Wniosek: kwas rozpuszcza CaCO₃ i wydziela CO₂. --></div>
+<div class="exp-card"><h5>Doświadczenie 14 — Zardzewiały gwóźdź w occie (domowe)</h5><div class="exp-grid"><b>Problem</b><span>Czy kwas usuwa rdzę z żelaza?</span><b>Hipoteza</b><span>Kwas przereaguje z rdzą (tlenkiem żelaza) i oczyści gwóźdź.</span><b>Sprzęt</b><span>dwa zardzewiałe gwoździe, dwa słoiki, ocet, woda.</span><b>Przebieg</b><span>Jeden gwóźdź zanurzamy w occie, drugi (kontrola) w wodzie. Oglądamy po godzinie i po kilku godzinach.</span><b>Obserwacja</b><span>W occie rdza stopniowo schodzi, gwóźdź jaśnieje, ocet żółknie; w wodzie rdza pozostaje.</span><b>Wniosek</b><span>Kwas reaguje z tlenkiem metalu (rdzą), tworząc rozpuszczalną sól; z samym żelazem reaguje znacznie wolniej.</span><b>Równanie</b><span>Fe₂O₃ + 6 CH₃COOH → 2 Fe(CH₃COO)₃ + 3 H₂O (uproszczony zapis; rdza to uwodnione tlenki żelaza(III))</span><b>BHP</b><span>Okulary; octu nie pijemy; gwoździe po doświadczeniu wyrzucamy do odpadów.</span></div><!-- OPIS: Dwa słoiki z zardzewiałymi gwoździami: w occie gwóźdź jaśnieje, a płyn przybiera żółtawy odcień; w wodzie gwóźdź pozostaje brązowy. Wniosek: kwas rozpuszcza rdzę (tlenek żelaza). --></div>
 </section>
-<section id="klinika">
+<section id="klinika" class="poz-e8">
 <div class="part-heading"><span class="part-num">17</span> Klinika błędów</div>
 <div class="table-wrap">
 <table class="klinika-table"><thead><tr><th>Błąd</th><th>Poprawnie</th><th>Dlaczego?</th></tr></thead><tbody><tr class="error-row"><td class="col-blad" data-label="Błąd">H₂Cl</td><td class="col-ok" data-label="Poprawa">HCl</td><td data-label="Dlaczego">W–K–S–K: H(I), Cl(I) → stosunek 1:1 → HCl.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">HSO₄</td><td class="col-ok" data-label="Poprawa">H₂SO₄</td><td data-label="Dlaczego">Reszta SO₄²⁻ ma ładunek −2, więc potrzebujemy 2 atomów H.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„wszystkie kwasy są mocne”</td><td class="col-ok" data-label="Poprawa">Mocne: HCl, HBr, HI, HNO₃, H₂SO₄, HClO₄. Słabe: HF, H₂CO₃, CH₃COOH, H₃PO₄.</td><td data-label="Dlaczego">Moc zależy od stopnia dysocjacji α. Nie każdy kwas dysocjuje całkowicie.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Cu + HCl → CuCl₂ + H₂↑</td><td class="col-ok" data-label="Poprawa">Reakcja nie zachodzi (Cu za H w szeregu aktywności).</td><td data-label="Dlaczego">Miedź nie wypiera wodoru z rozcieńczonego HCl. Szereg: K > Ca > Na > Mg > Al > Zn > Fe > Sn > Pb > H > Cu > Ag > Au.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">NaOH + HCl → NaCl</td><td class="col-ok" data-label="Poprawa">NaOH + HCl → NaCl + H₂O</td><td data-label="Dlaczego">Zobojętnianie daje sól <strong>i wodę</strong>. Woda jest produktem i nie może być pominięta.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„fenoloftaleina w kwasie jest czerwona”</td><td class="col-ok" data-label="Poprawa">Fenoloftaleina w kwasie jest <strong>bezbarwna</strong>.</td><td data-label="Dlaczego">Fenoloftaleina zmienia barwę dopiero przy pH > 8,2 (malinowa w zasadzie). W kwasie pozostaje bezbarwna.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„pH 7 to kwas”</td><td class="col-ok" data-label="Poprawa">pH 7 = odczyn <strong>obojętny</strong>.</td><td data-label="Dlaczego">pH &lt; 7 kwasowy, pH = 7 obojętny, pH > 7 zasadowy.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„wodę wlewamy do stężonego kwasu”</td><td class="col-ok" data-label="Poprawa">Kwas wlewamy do wody.</td><td data-label="Dlaczego">Rozcieńczanie kwasu wydziela dużo ciepła; woda do kwasu może gwałtownie się zagotować i rozpryskać kwas (niebezpieczeństwo oparzeń).</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„kwas chlorowodorowy = HClO”</td><td class="col-ok" data-label="Poprawa">HCl = kwas chlorowodorowy; HClO = kwas chlorowy(I).</td><td data-label="Dlaczego">Różne kwasy, różne wzory. HCl beztlenowy, HClO tlenowy.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„moc = stężenie”</td><td class="col-ok" data-label="Poprawa">Moc to stopień dysocjacji, stężenie to ilość moli w objętości.</td><td data-label="Dlaczego">Rozcieńczony HCl (mocny kwas) ma mniejsze stężenie niż stężony CH₃COOH (słaby kwas). To różne parametry.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„H⁺ w wodzie istnieje samodzielnie”</td><td class="col-ok" data-label="Poprawa">H⁺ + H₂O → H₃O⁺ (jon hydroniowy).</td><td data-label="Dlaczego">Proton H⁺ nie istnieje samodzielnie w wodzie; łączy się z H₂O, tworząc H₃O⁺.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„H₂SO₄ ma 2 protony, więc w II stopniu też mocny”</td><td class="col-ok" data-label="Poprawa">H₂SO₄ jest mocny tylko w I stopniu. HSO₄⁻ ⇌ H⁺ + SO₄²⁻ — słaby.</td><td data-label="Dlaczego">I stopień praktycznie całkowity (H₂SO₄ → H⁺ + HSO₄⁻), II stopień słaby (HSO₄⁻ to słaby kwas).</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„HCl(g) i HCl(aq) to to samo”</td><td class="col-ok" data-label="Poprawa">HCl(g) to gaz chlorowodór; HCl(aq) to roztwór kwasu chlorowodorowego.</td><td data-label="Dlaczego">Gaz nie przewodzi prądu (brak jonów); roztwór wodny dysocjuje na jony, przewodzi prąd i ma odczyn kwasowy.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">Fe + 2 HCl → FeCl₃ + H₂</td><td class="col-ok" data-label="Poprawa">Fe + 2 HCl → FeCl₂ + H₂↑</td><td data-label="Dlaczego">Jony H⁺ utleniają żelazo tylko do Fe²⁺ (bladozielony roztwór).</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„oranż metylowy w wodzie jest pomarańczowy”</td><td class="col-ok" data-label="Poprawa">w wodzie (pH 7) jest żółty</td><td data-label="Dlaczego">Zmienia barwę w zakresie pH 3,1–4,4; powyżej jest żółty — nie odróżni wody od zasady.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„H₂SO₄ wypiera HCl z NaCl, bo jest mocniejszy”</td><td class="col-ok" data-label="Poprawa">bo jest mniej lotny</td><td data-label="Dlaczego">HCl jest mocniejszy, ale jako gaz ulatnia się z układu.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„oparzenie kwasem — posyp sodą”</td><td class="col-ok" data-label="Poprawa">płucz wodą ok. 15 min</td><td data-label="Dlaczego">Zobojętnianie na skórze wydziela ciepło i opóźnia płukanie.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„rozcieńczony słaby kwas jest bardziej kwaśny, bo α rośnie”</td><td class="col-ok" data-label="Poprawa">pH rośnie — roztwór mniej kwaśny</td><td data-label="Dlaczego">[H₃O⁺] ≈ α·c maleje, bo c spada szybciej, niż rośnie α.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„CH₃COOH jest czteroprotonowy (4 atomy H)”</td><td class="col-ok" data-label="Poprawa">jednoprotonowy</td><td data-label="Dlaczego">Kwasowy jest tylko H z grupy –COOH; H przy węglu nie dysocjują.</td></tr><tr class="error-row"><td class="col-blad" data-label="Błąd">„Każda substancja z wodorem we wzorze to kwas.”</td><td class="col-ok" data-label="Poprawa">CH₄, NH₃, H₂O zawierają wodór, a nie są kwasami.</td><td data-label="Dlaczego">Kwas to substancja zwiększająca w wodzie stężenie jonów H₃O⁺ (H⁺).</td></tr></tbody></table>
@@ -1606,7 +1701,7 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 </details>
 </div>
 </section>
-<section id="cwiczenia">
+<section id="cwiczenia" class="poz-e8">
 <div class="part-heading"><span class="part-num">18</span> Ćwiczenia</div>
 <h3>Poziom A — podstawa</h3>
 <div class="card">
@@ -1649,7 +1744,7 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 </details>
 </div>
 <h3>Poziom C — ambitny</h3>
-<div class="card card-extra">
+<div class="card card-extra poz-pon">
 <ol start="12">
 <li>Zapisz dwustopniową dysocjację H₂SO₄.</li>
 <li>Wyjaśnij, dlaczego H⁺ w wodzie tworzy H₃O⁺.</li>
@@ -1668,7 +1763,7 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 </details>
 </div>
 <h3>Poziom D — zaawansowany</h3>
-<div class="card card-extra">
+<div class="card card-extra poz-pon">
 <ol start="17">
 <li>Oblicz pH roztworu o [H⁺] = 10⁻³ mol/dm³.</li>
 <li>Oblicz [H⁺] w roztworze o pH = 2.</li>
@@ -1744,7 +1839,7 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 </details>
 </div>
 </section>
-<section id="test">
+<section id="test" class="poz-must">
 <div class="part-heading"><span class="part-num">19</span> Test końcowy</div>
 <div id="quizWrap"></div>
 <div class="quiz-score" id="quizScore"></div>
@@ -1762,7 +1857,7 @@ ___ Al(OH)₃ + ___ HCl → ___ AlCl₃ + ___ H₂O</pre>
 </details>
 </div>
 </section>
-<section id="powtorka">
+<section id="powtorka" class="poz-must">
 <div class="part-heading"><span class="part-num">20</span> Karta szybkiego powtórzenia i mapa myśli</div>
 <div class="card card-basic">
 <span class="card-label">Karta szybkiego powtórzenia (do druku)</span>
@@ -1782,17 +1877,17 @@ ___ Al(OH)₃ + ___ HCl → ___ AlCl₃ + ___ H₂O</pre>
 </div>
 <div class="mnemonic"><b>Mapa myśli w pigułce</b><ol><li><strong>Kwas = H⁺ + reszta kwasowa</strong> (HₙR → n H⁺ + Rⁿ⁻); w wodzie H₃O⁺.</li><li><strong>MTWS</strong> – co robi kwas: <strong>M</strong>etal → sól + H₂ (tylko przed H) · <strong>T</strong>lenek metalu → sól + H₂O · <strong>W</strong>odorotlenek → sól + H₂O · <strong>S</strong>ól (węglan) → sól + H₂O + CO₂↑.</li><li>Zawsze powstaje <strong>sól</strong>; dodatek: H₂ / H₂O / CO₂.</li><li><strong>Moc</strong> = α (nie stężenie). Mocne: HCl, HBr, HI, HNO₃, H₂SO₄ (I st.), HClO₄.</li><li><strong>pH</strong> < 7 kwas · = 7 obojętny · &gt; 7 zasada; pH = −log[H₃O⁺].</li><li><strong>TNS</strong> – otrzymywanie: Tlenek + woda · Niemetal + wodór · Sól + mocniejszy kwas.</li><li><strong>BHP</strong>: kwas do wody, okulary, nie pipetować ustami.</li></ol><p class="mini-note">Szereg aktywności: K &gt; Ca &gt; Na &gt; Mg &gt; Al &gt; Zn &gt; Fe &gt; Sn &gt; Pb &gt; <strong>H</strong> &gt; Cu &gt; Ag &gt; Au (z kwasem reagują metale przed H).</p></div>
 </section>
-<section id="fiszki">
+<section id="fiszki" class="poz-must">
 <div class="part-heading"><span class="part-num">21</span> Fiszki</div>
 <div class="flashcard-grid" id="flashcards"></div>
 </section>
-<section id="slownik">
+<section id="slownik" class="poz-e8">
 <div class="part-heading"><span class="part-num">22</span> Słownik</div>
 <div class="card">
 <dl class="def-list"><div class="def-item"><dt>Kwas</dt><dd>Związek chemiczny, który w wodzie oddaje proton H⁺ (def. Brønsteda) lub dysocjuje na H⁺ i resztę kwasową (def. Arrheniusa).</dd></div><div class="def-item"><dt>Reszta kwasowa</dt><dd>Anion powstający po formalnym oddzieleniu protonów z kwasu; ma ładunek ujemny równy liczbie atomów H.</dd></div><div class="def-item"><dt>Dysocjacja elektrolityczna</dt><dd>Rozpad związku chemicznego na jony w roztworze wodnym.</dd></div><div class="def-item"><dt>Jonizacja</dt><dd>Powstawanie jonów w wyniku reakcji cząsteczki z rozpuszczalnikiem (HCl + H₂O → H₃O⁺ + Cl⁻).</dd></div><div class="def-item"><dt>Jon hydroniowy H₃O⁺</dt><dd>Kation powstający z protonu H⁺ i cząsteczki wody; faktyczna forma H⁺ w wodzie.</dd></div><div class="def-item"><dt>Stopień dysocjacji α</dt><dd>Ułamek cząsteczek, które uległy dysocjacji. α = 1 dla kwasów mocnych, α &lt; 1 dla słabych.</dd></div><div class="def-item"><dt>pH</dt><dd>Ujemny logarytm dziesiętny stężenia (aktywności) jonów hydroniowych H₃O⁺: pH = −log[H₃O⁺].</dd></div><div class="def-item"><dt>Wskaźnik kwasowo-zasadowy</dt><dd>Substancja zmieniająca barwę w zależności od pH roztworu (fenoloftaleina, oranż metylowy).</dd></div><div class="def-item"><dt>Zobojętnianie</dt><dd>Reakcja kwasu z zasadą → sól + woda. Jonowo: H⁺ + OH⁻ → H₂O.</dd></div><div class="def-item"><dt>Szereg aktywności metali</dt><dd>Uporządkowanie metali wg aktywności chemicznej: K > Ca > Na > Mg > Al > Zn > Fe > Sn > Pb > H > Cu > Ag > Au.</dd></div><div class="def-item"><dt>Kwas mocny</dt><dd>Kwas, który w wodzie dysocjuje praktycznie całkowicie (α ≈ 1): HCl, HBr, HI, HNO₃, H₂SO₄, HClO₄.</dd></div><div class="def-item"><dt>Kwas słaby</dt><dd>Kwas, który w wodzie dysocjuje tylko częściowo (α &lt; 1): HF, H₂CO₃, H₂S, H₂SO₃, HNO₂, H₃PO₄, CH₃COOH.</dd></div><div class="def-item"><dt>Kwas organiczny</dt><dd>Kwas zawierający grupę karboksylową –COOH (R–COOH); np. HCOOH, CH₃COOH.</dd></div><div class="def-item"><dt>Stała dysocjacji K<sub>a</sub></dt><dd>Stała równowagi dysocjacji słabego kwasu: K<sub>a</sub> = [H₃O⁺][A⁻]/[HA]; zależy od temperatury, nie od stężenia. pK<sub>a</sub> = −log K<sub>a</sub>.</dd></div><div class="def-item"><dt>Elektrolit</dt><dd>Substancja, której roztwór (lub stop) przewodzi prąd dzięki jonom; mocny — dysocjuje prawie całkowicie, słaby — częściowo.</dd></div><div class="def-item"><dt>Pasywacja</dt><dd>Pokrycie metalu cienką, szczelną warstwą tlenku (np. Fe, Al w stęż. HNO₃), która zatrzymuje dalszą reakcję.</dd></div><div class="def-item"><dt>Titracja (miareczkowanie)</dt><dd>Metoda analizy ilościowej — stopniowe dodawanie titranta do analitu do osiągnięcia punktu równoważnikowego.</dd></div><div class="def-item"><dt>Bufor</dt><dd>Układ (mieszanina słabego kwasu i jego soli lub słabej zasady i jej soli) ograniczający zmianę pH.</dd></div><div class="def-item"><dt>Kwaśne deszcze</dt><dd>Opady o pH &lt; 5,6, powstające z SO₂ i NO₂ w atmosferze.</dd></div><div class="def-item"><dt>Punkt równoważnikowy</dt><dd>Moment, w którym liczba moli titranta = liczba moli analitu (stechiometrycznie).</dd></div><div class="def-item"><dt>Punkt końcowy</dt><dd>Moment, w którym wskaźnik zmienia barwę; obserwowany, może różnić się od równoważnikowego.</dd></div></dl>
 </div>
 </section>
-<section id="checklista">
+<section id="checklista" class="poz-e8">
 <div class="part-heading"><span class="part-num">23</span> Checklista</div>
 <div class="checklist">
 <h4>Sprawdź, czy umiesz:</h4>
@@ -1821,7 +1916,7 @@ ___ Al(OH)₃ + ___ HCl → ___ AlCl₃ + ___ H₂O</pre>
 </ul>
 </div>
 </section>
-<section id="historia">
+<section id="historia" class="poz-pon">
 <div class="part-heading"><span class="part-num">A</span> Dodatek A — historia pojęcia kwasu i teorie kwasów i zasad <span class="level-badge level-extra">AMBITNE</span></div>
 <div class="card card-understand">
 <p class="mini-note">Definicje używane w lekcji: Arrhenius i Brønsted — <a href="#definicja">§1</a>.</p>
@@ -1860,7 +1955,7 @@ ___ Al(OH)₃ + ___ HCl → ___ AlCl₃ + ___ H₂O</pre>
 </div>
 </div>
 </div>
-<div class="card card-extra">
+<div class="card card-extra poz-pon">
 <span class="card-label">Ciekawostki o kwasach</span>
 <ul>
 <li><strong>Kwas fluorowodorowy</strong> trawi szkło (SiO₂ + 4 HF → SiF₄ + 2 H₂O), dlatego przechowuje się go w naczyniach z tworzywa, a nie ze szkła.</li>
@@ -1870,7 +1965,7 @@ ___ Al(OH)₃ + ___ HCl → ___ AlCl₃ + ___ H₂O</pre>
 </ul>
 </div>
 </section>
-<section id="mosty">
+<section id="mosty" class="poz-e8">
 <div class="part-heading"><span class="part-num">B</span> Dodatek B — mosty do innych lekcji</div>
 <div class="card card-understand">
 <span class="card-label">Powiązania</span>
@@ -1885,14 +1980,14 @@ ___ Al(OH)₃ + ___ HCl → ___ AlCl₃ + ___ H₂O</pre>
 <p class="mini-note">Wiadomości wcześniejsze — <a href="#kompas">§0.3</a>.</p>
 </div>
 </section>
-<section id="modele">
+<section id="modele" class="poz-e8">
 <div class="part-heading"><span class="part-num">↻</span> Modele silnika w tej lekcji</div>
 <div class="table-wrap">
 <table><thead><tr><th>Sekcja</th><th>Model</th><th>Co pokazuje</th></tr></thead><tbody><tr><td><a href="#reszty">§3</a></td><td><code>kw-reszty-v01</code></td><td>kwas → reszta → sole (13 metali)</td></tr><tr><td><a href="#wlasciwosci">§4</a></td><td><code>kw-wlasciwosci-v01</code></td><td>pokazy: cukier + H₂SO₄, białko + HNO₃, HCl dymi</td></tr><tr><td><a href="#dysocjacja">§5</a></td><td><code>kw-dysocjacja-v01</code></td><td>dysocjacja krok po kroku, α i pH z Ka, wykres α(c)</td></tr><tr><td><a href="#dysocjacja">§5</a></td><td><code>gfx-scene-conductivity</code></td><td>tester przewodnictwa</td></tr><tr><td><a href="#ph">§7</a></td><td><code>ph-indicators-v03</code></td><td>skala pH, barwy wskaźników, drabinka kwasów i zasad</td></tr><tr><td><a href="#ph">§7</a></td><td><code>gfx-scene-indicatorRack</code></td><td>wskaźnik w siedmiu roztworach</td></tr><tr><td><a href="#reakcje">§9</a></td><td><code>kw-szereg-metali-v01</code></td><td>szereg aktywności: Mg, Zn, Fe, Cu w HCl</td></tr><tr><td><a href="#reakcje">§9</a></td><td><code>gfx-scene-acidMetal</code></td><td>metal + HCl, próba „pyk!”</td></tr><tr><td><a href="#reakcje">§9</a></td><td><code>rownania-jonowe-v01</code></td><td>równania jonowe pełne i skrócone</td></tr><tr><td><a href="#reakcje">§9</a></td><td><code>tabela-rozpuszczalnosci-v01</code></td><td>tabela rozpuszczalności, nazwy soli</td></tr><tr><td><a href="#reakcje">§9</a></td><td><code>reakcje-kwasu-v03</code></td><td>przewidź i sprawdź</td></tr><tr><td><a href="#deszcze">§10</a></td><td><code>acid-rain-v01</code></td><td>obieg kwaśnych deszczy</td></tr><tr><td><a href="#bhp">§12</a></td><td><code>gfx-scene-dilution</code></td><td>„kwas do wody” — poprawnie i błędnie</td></tr><tr><td><a href="#miareczkowanie">§14</a></td><td><code>gfx-scene-titration</code></td><td>biureta, kolba, fenoloftaleina</td></tr><tr><td><a href="#miareczkowanie">§14</a></td><td><code>titration-merged</code></td><td>krzywa miareczkowania</td></tr><tr><td><a href="#bufory">§15</a></td><td><code>kw-bufor-v01</code></td><td>bufor octanowy kontra woda</td></tr><tr><td><a href="#doswiadczenia">§16</a></td><td><code>kw-doswiadczenia-v01</code></td><td>pracownia doświadczeń (przyciski „Zobacz w zlewce”)</td></tr></tbody></table>
 </div>
 <p class="mini-note">Każdy model występuje w lekcji raz; liczby, barwy i równania pochodzą z silnika CHE.</p>
 </section>
-<section id="audit">
+<section id="audit" class="poz-e8">
 <div class="part-heading"><span class="part-num">✓</span> Audyt jakości <span class="level-badge level-exam">KONTROLA</span></div>
 <div class="card card-new">
 <span class="card-label">AUDYT W1 — Claude Haiku 5.5, 2026-10-12 (przegląd wewnętrzny, pełny tekst lekcji)</span>
@@ -2399,6 +2494,18 @@ root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibli
   d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
   if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
   if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var pb=root.querySelector('.poz-bar');
+if(pb){var AB=root.querySelector('#advToggle');if(AB)AB.style.display='none';
+ var INF={must:'Tylko to, co trzeba umieć na pewno.',e8:'Zakres egzaminu ósmoklasisty.',roz:'E8 plus „warto rozumieć” (LO).',all:'Cały materiał, także ponad program.'};
+ var tocL=root.querySelectorAll('.toc-link');
+ var ust=function(m){document.body.setAttribute('data-poz',m);
+  pb.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x.dataset.poz===m?'true':'false')});
+  var inf=root.querySelector('#pozInfo');if(inf)inf.textContent=INF[m]||'';
+  root.querySelectorAll('section.poz-e8').forEach(function(s){s.classList.toggle('poz-nomust',!s.querySelector('.poz-must'))});
+  tocL.forEach(function(a){var t=root.getElementById?root.getElementById(a.getAttribute('href').slice(1)):null;a.style.display=(t&&getComputedStyle(t).display==='none')?'none':''});
+  try{localStorage.setItem('lekcja-poz',m)}catch(e){}};
+ pb.querySelectorAll('button').forEach(function(x){x.onclick=function(){ust(x.dataset.poz)}});
+ var m0='e8';try{m0=localStorage.getItem('lekcja-poz')||'e8'}catch(e){}if(!INF[m0])m0='e8';ust(m0)}
 var b=root.querySelector('#advToggle');
 if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
  if(!k)b.style.display='none';

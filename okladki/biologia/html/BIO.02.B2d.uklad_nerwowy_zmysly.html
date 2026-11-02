@@ -626,6 +626,17 @@ details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border
 details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
 @media print{details.lk-log{display:none}}
 
+/* poziomy treści (lekcje z poziomy: tak) — filtr: muszę umieć / E8 / E8+rozszerzenie / wszystko */
+.poz-bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0;padding:10px 12px;border:1px solid var(--border,#d0d7de);border-radius:10px;background:var(--surface-soft,#f6f8fa);position:sticky;top:0;z-index:20}
+.poz-bar-t{font-weight:700;font-size:14px}.poz-bar-i{flex-basis:100%;font-size:13px;color:var(--muted,#5b6b73)}
+.poz-bar button{font:inherit;font-size:14px;padding:6px 12px;border-radius:999px;border:1px solid var(--border-strong,#9aa6ad);background:var(--surface,#fff);color:inherit;cursor:pointer}
+.poz-bar button[aria-pressed="true"]{background:var(--accent,#0b6bcb);color:#fff;border-color:transparent}
+body[data-poz="must"] .poz-roz,body[data-poz="must"] .poz-pon,body[data-poz="e8"] .poz-roz,body[data-poz="e8"] .poz-pon,body[data-poz="roz"] .poz-pon{display:none!important}
+body[data-poz="must"] section.poz-e8>*:not(.part-heading):not(.poz-must){display:none}
+body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
+.poz-blok{display:block}
+@media print{.poz-bar{display:none}body[data-poz] .poz-roz,body[data-poz] .poz-pon{display:revert!important}}
+
 /* motyw bio (Biologia) — warstwa BIO: kolory, helisa w nagłówku, grafiki bio-viz. Wspólne rzeczy w ../ulepszenia.css */
 :root{
 --header-h:48px;
@@ -827,7 +838,7 @@ animation:bio-drift 60s linear infinite}
 <!-- OPIS: Neuron z numerami: dendryty, ciało komórki z jądrem, akson, osłonka mielinowa, przewężenia Ranviera, zakończenia aksonu z kolbkami synaptycznymi. Wniosek: dendryty odbierają sygnał, akson przewodzi go dalej (szybciej dzięki osłonce, skokowo), a synapsa przekazuje go chemicznie następnej komórce. -->
 <figure class="lk-fig bio-fig" data-bio-viz="neurony-mielina" data-opt="{}"><div class="lk-fig-body bio-fig-body"></div><figcaption><b>Neuron bez osłonki i z osłonką mielinową</b> <span>porównaj prędkość impulsu</span></figcaption></figure>
 <!-- OPIS: Dwa neurony jeden pod drugim: górny ma gładki akson bez osłonki (impuls wolniejszy), dolny ma akson otoczony osłonką mielinową z przewężeniami Ranviera (impuls szybszy, przeskakuje między przewężeniami). Wniosek: mielina przyspiesza przewodzenie impulsu. -->
-<p><strong>Zadanie (porównaj):</strong> który neuron przewodzi impuls szybciej: A (bez osłonki) czy B (z osłonką mielinową)? Uzasadnij. <strong>Odpowiedź:</strong> B — impuls przeskakuje po przewężeniach Ranviera (skokowo), a nie płynie po całej długości włókna. Wartości prędkości (ok. 40 m/s wobec ok. 8 m/s) do potwierdzenia przed użyciem w testach.</p>
+<p><strong>Zadanie (porównaj):</strong> który neuron przewodzi impuls szybciej: A (bez osłonki) czy B (z osłonką mielinową)? Uzasadnij. <strong>Odpowiedź:</strong> B — impuls przeskakuje po przewężeniach Ranviera (skokowo), a nie płynie po całej długości włókna. Przykładowe wartości: ok. 40 m/s z mieliną wobec ok. 8 m/s bez niej; w nerwach obwodowych człowieka prędkość wynosi od ok. 5 do ok. 130 m/s, zależnie od grubości włókna i obecności mieliny (ZPE).</p>
 <p><strong>Zadanie (wnioskuj):</strong> jaką rolę pełnią przewężenia Ranviera? <strong>Odpowiedź:</strong> są miejscami, w których impuls jest wzmacniany; dzięki nim przeskok jest szybki.</p>
 <p><strong>Neuron</strong> to podstawowa jednostka układu nerwowego.</p>
 <ul>
@@ -944,6 +955,33 @@ słodki, słony, kwaśny, gorzki i <strong>umami</strong> (smak glutaminianu —
 <li>receptory węchowe to neurony, z których każdy reaguje na określone cząsteczki zapachowe; u człowieka jest kilkaset typów receptorów (do potwierdzenia dokładna liczba),</li>
 <li>sygnał trafia do <strong>opuszki węchowej</strong>, a stamtąd do kory węchowej w płacie skroniowym.</li>
 </ul>
+<h3 id="wech-dotyk">9.5 Węch i dotyk</h3>
+<ul>
+<li><strong>Węch:</strong> receptory węchowe leżą w nabłonku węchowym w górnej części jamy nosowej; cząsteczki zapachowe rozpuszczają się w śluzie, a impulsy biegną do opuszki węchowej w mózgowiu.</li>
+<li><strong>Dotyk, ucisk, temperatura, ból:</strong> receptory leżą w skórze (głównie w skórze właściwej); jest ich najwięcej tam, gdzie czucie jest najdokładniejsze — w opuszkach palców i na wargach.</li>
+</ul>
+<h3 id="akomodacja">9.6 Droga światła w oku i akomodacja</h3>
+<p>Światło przechodzi kolejno przez <strong>rogówkę, ciecz wodnistą, źrenicę, soczewkę i ciało szkliste</strong> i tworzy na <strong>siatkówce</strong> obraz rzeczywisty, odwrócony i pomniejszony; mózg „odwraca” go z powrotem.
+<strong>Akomodacja</strong> to zmiana kształtu soczewki: przy patrzeniu z bliska mięśnie rzęskowe się kurczą i soczewka staje się bardziej wypukła; przy patrzeniu w dal mięśnie się rozluźniają, a soczewka się spłaszcza. Źrenica zwęża się w jasnym świetle i rozszerza w ciemności (odruch źrenicowy).</p>
+<h3 id="wady-wzroku">9.7 Wady i choroby oka</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Wada / choroba</th><th>Co się dzieje</th><th>Korekcja / uwaga</th></tr></thead>
+<tbody>
+<tr><td>krótkowzroczność</td><td>obraz ostrych odległych przedmiotów powstaje przed siatkówką (gałka zbyt długa lub załamywanie zbyt silne)</td><td>soczewki rozpraszające (wklęsłe)</td></tr>
+<tr><td>dalekowzroczność</td><td>obraz powstaje za siatkówką (gałka zbyt krótka)</td><td>soczewki skupiające (wypukłe)</td></tr>
+<tr><td>astygmatyzm</td><td>nierówna krzywizna rogówki — obraz zniekształcony</td><td>soczewki cylindryczne</td></tr>
+<tr><td>daltonizm</td><td>wada czopków — trudność w rozróżnianiu barw (np. czerwonej i zielonej); sprzężony z chromosomem X, częstszy u mężczyzn</td><td>brak leczenia</td></tr>
+<tr><td>zaćma</td><td>zmętnienie soczewki</td><td>operacyjna wymiana soczewki</td></tr>
+<tr><td>jaskra</td><td>podwyższone ciśnienie w gałce ocznej uszkadza nerw wzrokowy</td><td>leczenie farmakologiczne lub operacyjne; ważna kontrola</td></tr>
+</tbody></table></div>
+<h3 id="higiena-zmyslow">9.8 Higiena zmysłów</h3>
+<ul>
+<li><strong>Oko:</strong> dobre oświetlenie, przerwy w pracy przy ekranie, okulary przeciwsłoneczne z filtrem UV.</li>
+<li><strong>Ucho:</strong> długotrwały hałas niszczy komórki rzęsate w ślimaku — ubytek słuchu jest trwały; nie czyść przewodu słuchowego głęboko patyczkami. Infekcje z gardła mogą przejść przez trąbkę Eustachiusza do ucha środkowego (zapalenie ucha).</li>
+</ul>
+<pulapka>
+<p><strong>Pułapka:</strong> przy krótkowzroczności obraz tworzy się <strong>przed</strong> siatkówką, przy dalekowzroczności <strong>za</strong> nią. Mnemonik: krótkowzroczny — „kłopot z dali”, korekcja szkłem <strong>wklęsłym</strong> (rozpraszającym).</p>
+</pulapka>
 </section>
 <section id="s1">
 <div class="part-heading">Ciekawostki i mnemotechniki</div>
@@ -2403,6 +2441,18 @@ root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibli
   d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
   if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
   if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var pb=root.querySelector('.poz-bar');
+if(pb){var AB=root.querySelector('#advToggle');if(AB)AB.style.display='none';
+ var INF={must:'Tylko to, co trzeba umieć na pewno.',e8:'Zakres egzaminu ósmoklasisty.',roz:'E8 plus „warto rozumieć” (LO).',all:'Cały materiał, także ponad program.'};
+ var tocL=root.querySelectorAll('.toc-link');
+ var ust=function(m){document.body.setAttribute('data-poz',m);
+  pb.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x.dataset.poz===m?'true':'false')});
+  var inf=root.querySelector('#pozInfo');if(inf)inf.textContent=INF[m]||'';
+  root.querySelectorAll('section.poz-e8').forEach(function(s){s.classList.toggle('poz-nomust',!s.querySelector('.poz-must'))});
+  tocL.forEach(function(a){var t=root.getElementById?root.getElementById(a.getAttribute('href').slice(1)):null;a.style.display=(t&&getComputedStyle(t).display==='none')?'none':''});
+  try{localStorage.setItem('lekcja-poz',m)}catch(e){}};
+ pb.querySelectorAll('button').forEach(function(x){x.onclick=function(){ust(x.dataset.poz)}});
+ var m0='e8';try{m0=localStorage.getItem('lekcja-poz')||'e8'}catch(e){}if(!INF[m0])m0='e8';ust(m0)}
 var b=root.querySelector('#advToggle');
 if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
  if(!k)b.style.display='none';

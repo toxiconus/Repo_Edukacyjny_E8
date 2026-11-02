@@ -626,6 +626,17 @@ details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border
 details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
 @media print{details.lk-log{display:none}}
 
+/* poziomy treści (lekcje z poziomy: tak) — filtr: muszę umieć / E8 / E8+rozszerzenie / wszystko */
+.poz-bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0;padding:10px 12px;border:1px solid var(--border,#d0d7de);border-radius:10px;background:var(--surface-soft,#f6f8fa);position:sticky;top:0;z-index:20}
+.poz-bar-t{font-weight:700;font-size:14px}.poz-bar-i{flex-basis:100%;font-size:13px;color:var(--muted,#5b6b73)}
+.poz-bar button{font:inherit;font-size:14px;padding:6px 12px;border-radius:999px;border:1px solid var(--border-strong,#9aa6ad);background:var(--surface,#fff);color:inherit;cursor:pointer}
+.poz-bar button[aria-pressed="true"]{background:var(--accent,#0b6bcb);color:#fff;border-color:transparent}
+body[data-poz="must"] .poz-roz,body[data-poz="must"] .poz-pon,body[data-poz="e8"] .poz-roz,body[data-poz="e8"] .poz-pon,body[data-poz="roz"] .poz-pon{display:none!important}
+body[data-poz="must"] section.poz-e8>*:not(.part-heading):not(.poz-must){display:none}
+body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
+.poz-blok{display:block}
+@media print{.poz-bar{display:none}body[data-poz] .poz-roz,body[data-poz] .poz-pon{display:revert!important}}
+
 /* motyw oli (Olimpiada) — kolory, wzór nagłówka, komponenty przedmiotu */
 :root{--accent:#8a5a00;--accent-dark:#5f3e00;--accent-soft:#fbf1dd;--accent-line:#ecd29a;--accent-glow:rgba(138,90,0,.15);--hl-key:#8a5a00;--hl-key-bg:#f8e9c8;--hl-formula:#5f3e00;--hl-formula-bg:#fbf1dd;--motyw-wzor:url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 120 200%27%3E%3Cg fill=%27%238a5a00%27%3E%3Cpath d=%27M60 20l8 17 19 2-14 13 4 19-17-10-17 10 4-19-14-13 19-2z%27/%3E%3C/g%3E%3Cg fill=%27none%27 stroke=%27%238a5a00%27 stroke-width=%274%27 stroke-linecap=%27round%27%3E%3Cpath d=%27M30 110c-6 30 6 56 30 70M90 110c6 30-6 56-30 70%27/%3E%3C/g%3E%3Cg fill=%27%238a5a00%27%3E%3Cellipse cx=%2726%27 cy=%27128%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-60 26 128%29%27/%3E%3Cellipse cx=%2730%27 cy=%27150%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-40 30 150%29%27/%3E%3Cellipse cx=%2742%27 cy=%27168%27 rx=%279%27 ry=%275%27 transform=%27rotate%28-20 42 168%29%27/%3E%3Cellipse cx=%2794%27 cy=%27128%27 rx=%279%27 ry=%275%27 transform=%27rotate%2860 94 128%29%27/%3E%3Cellipse cx=%2790%27 cy=%27150%27 rx=%279%27 ry=%275%27 transform=%27rotate%2840 90 150%29%27/%3E%3Cellipse cx=%2778%27 cy=%27168%27 rx=%279%27 ry=%275%27 transform=%27rotate%2820 78 168%29%27/%3E%3C/g%3E%3C/svg%3E")}
 @media (prefers-color-scheme:dark){:root:not([data-theme=light]){--accent:#e9b85a;--accent-dark:#f5d79a;--accent-soft:#2b2312;--accent-line:#5c4a22;--accent-glow:rgba(233,184,90,.2);--hl-key:#efc677;--hl-key-bg:#33290f;--hl-formula:#f5d79a;--hl-formula-bg:#2b2312;}}
@@ -779,6 +790,18 @@ root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibli
   d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
   if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
   if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var pb=root.querySelector('.poz-bar');
+if(pb){var AB=root.querySelector('#advToggle');if(AB)AB.style.display='none';
+ var INF={must:'Tylko to, co trzeba umieć na pewno.',e8:'Zakres egzaminu ósmoklasisty.',roz:'E8 plus „warto rozumieć” (LO).',all:'Cały materiał, także ponad program.'};
+ var tocL=root.querySelectorAll('.toc-link');
+ var ust=function(m){document.body.setAttribute('data-poz',m);
+  pb.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x.dataset.poz===m?'true':'false')});
+  var inf=root.querySelector('#pozInfo');if(inf)inf.textContent=INF[m]||'';
+  root.querySelectorAll('section.poz-e8').forEach(function(s){s.classList.toggle('poz-nomust',!s.querySelector('.poz-must'))});
+  tocL.forEach(function(a){var t=root.getElementById?root.getElementById(a.getAttribute('href').slice(1)):null;a.style.display=(t&&getComputedStyle(t).display==='none')?'none':''});
+  try{localStorage.setItem('lekcja-poz',m)}catch(e){}};
+ pb.querySelectorAll('button').forEach(function(x){x.onclick=function(){ust(x.dataset.poz)}});
+ var m0='e8';try{m0=localStorage.getItem('lekcja-poz')||'e8'}catch(e){}if(!INF[m0])m0='e8';ust(m0)}
 var b=root.querySelector('#advToggle');
 if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
  if(!k)b.style.display='none';

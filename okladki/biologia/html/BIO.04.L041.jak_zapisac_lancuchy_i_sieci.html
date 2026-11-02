@@ -626,6 +626,17 @@ details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border
 details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
 @media print{details.lk-log{display:none}}
 
+/* poziomy treści (lekcje z poziomy: tak) — filtr: muszę umieć / E8 / E8+rozszerzenie / wszystko */
+.poz-bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0;padding:10px 12px;border:1px solid var(--border,#d0d7de);border-radius:10px;background:var(--surface-soft,#f6f8fa);position:sticky;top:0;z-index:20}
+.poz-bar-t{font-weight:700;font-size:14px}.poz-bar-i{flex-basis:100%;font-size:13px;color:var(--muted,#5b6b73)}
+.poz-bar button{font:inherit;font-size:14px;padding:6px 12px;border-radius:999px;border:1px solid var(--border-strong,#9aa6ad);background:var(--surface,#fff);color:inherit;cursor:pointer}
+.poz-bar button[aria-pressed="true"]{background:var(--accent,#0b6bcb);color:#fff;border-color:transparent}
+body[data-poz="must"] .poz-roz,body[data-poz="must"] .poz-pon,body[data-poz="e8"] .poz-roz,body[data-poz="e8"] .poz-pon,body[data-poz="roz"] .poz-pon{display:none!important}
+body[data-poz="must"] section.poz-e8>*:not(.part-heading):not(.poz-must){display:none}
+body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
+.poz-blok{display:block}
+@media print{.poz-bar{display:none}body[data-poz] .poz-roz,body[data-poz] .poz-pon{display:revert!important}}
+
 /* motyw bio (Biologia) — warstwa BIO: kolory, helisa w nagłówku, grafiki bio-viz. Wspólne rzeczy w ../ulepszenia.css */
 :root{
 --header-h:48px;
@@ -2327,6 +2338,18 @@ root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibli
   d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
   if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
   if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var pb=root.querySelector('.poz-bar');
+if(pb){var AB=root.querySelector('#advToggle');if(AB)AB.style.display='none';
+ var INF={must:'Tylko to, co trzeba umieć na pewno.',e8:'Zakres egzaminu ósmoklasisty.',roz:'E8 plus „warto rozumieć” (LO).',all:'Cały materiał, także ponad program.'};
+ var tocL=root.querySelectorAll('.toc-link');
+ var ust=function(m){document.body.setAttribute('data-poz',m);
+  pb.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x.dataset.poz===m?'true':'false')});
+  var inf=root.querySelector('#pozInfo');if(inf)inf.textContent=INF[m]||'';
+  root.querySelectorAll('section.poz-e8').forEach(function(s){s.classList.toggle('poz-nomust',!s.querySelector('.poz-must'))});
+  tocL.forEach(function(a){var t=root.getElementById?root.getElementById(a.getAttribute('href').slice(1)):null;a.style.display=(t&&getComputedStyle(t).display==='none')?'none':''});
+  try{localStorage.setItem('lekcja-poz',m)}catch(e){}};
+ pb.querySelectorAll('button').forEach(function(x){x.onclick=function(){ust(x.dataset.poz)}});
+ var m0='e8';try{m0=localStorage.getItem('lekcja-poz')||'e8'}catch(e){}if(!INF[m0])m0='e8';ust(m0)}
 var b=root.querySelector('#advToggle');
 if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
  if(!k)b.style.display='none';

@@ -1,6 +1,6 @@
 # Użycia wizualizacji — która grafika w której lekcji
 
-Stan: 2026-10-20. Generowane przez `wizualizacje-projekty/narzedzia/uzycia_wizualizacji.py`. **Nie edytować ręcznie.**
+Stan: 2026-11-02. Generowane przez `wizualizacje-projekty/narzedzia/uzycia_wizualizacji.py`. **Nie edytować ręcznie.**
 
 Liczenie: każde wystąpienie dyrektywy `@model`, `@viz`, `@klocek`, `@zlewka` (druga część = klucz) oraz `$gfx scene=` w źródłach lekcji. Lekcje z różnych folderów liczone osobno.
 

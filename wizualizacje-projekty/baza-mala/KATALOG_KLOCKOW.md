@@ -1,6 +1,6 @@
 # Katalog klocków — baza mała E8
 
-Wygenerowano: 2026-10-20 przez `wizualizacje-projekty/narzedzia/zbuduj_baze_mala.py`. **Nie edytować ręcznie** — źródłem jest duża baza (`chemia/che-modular/engine`, `biologia/bio`, `polski/szablon`).
+Wygenerowano: 2026-11-02 przez `wizualizacje-projekty/narzedzia/zbuduj_baze_mala.py`. **Nie edytować ręcznie** — źródłem jest duża baza (`chemia/che-modular/engine`, `biologia/bio`, `polski/szablon`).
 
 Ta paczka zawiera kopie tego, co już działa w lekcjach. Zewnętrzny model może z niej wziąć gotowy element zamiast budować go od zera. Spis braków: `BRAKI_WIZUALIZACJI.md`.
 

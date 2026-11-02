@@ -35,7 +35,7 @@ Po lekcji wyjaśnisz, dlaczego skóra jest narządem, a nie tylko „okryciem", 
 @opis Przekrój skóry: naskórek (warstwa rogowa, melanina), skóra właściwa (naczynia, receptory, gruczoł potowy i łojowy, mieszek włosowy, mięsień przywłosowy), tkanka podskórna (tłuszcz); kliknij element Wniosek: kliknij elementy i przejdź kroki, aby sprawdzić, jak budowa wynika z funkcji.
 
 
-Skóra to **największy narząd** człowieka: u dorosłego ok. 2 m², masa około 4 kg. Składa się z trzech warstw.
+Skóra to **największy narząd** człowieka: u dorosłego ok. 2 m², masa około 4 kg. Składa się z trzech warstw (część podręczników i ZPE liczy skórę jako dwie warstwy — naskórek i skórę właściwą — a tkankę podskórną opisuje jako leżącą pod skórą; w zadaniach o przekroju skóry podawaj wszystkie trzy).
 
 **Naskórek** (epidermis) jest zbudowany z **nabłonka wielowarstwowego rogowaciejącego**. Nie ma własnych naczyń krwionośnych, odżywia się przez dyfuzję ze skóry właściwej. W najgłębszej warstwie (podstawnej) znajdują się melanocyty produkujące melaninę. Najpłytsza warstwa to martwe, spłaszczone komórki wypełnione keratyną. Naskórek odnawia się mniej więcej co 4 tygodnie.
 

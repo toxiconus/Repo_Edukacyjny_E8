@@ -983,7 +983,7 @@ Kanały półkoliste | ruchy obrotowe głowy | basic:ucho
 Przedsionek | położenie głowy, przyspieszenia liniowe | basic:ucho
 Trąbka słuchowa | wyrównuje ciśnienie po obu stronach błony bębenkowej | basic:ucho
 Prawo „wszystko albo nic” | neuron daje impuls o stałej wielkości albo wcale; siła bodźca = częstość impulsów | olimpijski:neuron
-Przewodzenie skokowe | w aksonach z mieliną impuls przeskakuje między przewężeniami Ranviera — szybciej (do ok. 100 m/s, orientacyjnie) | olimpijski:neuron
+Przewodzenie skokowe | w aksonach z mieliną impuls przeskakuje między przewężeniami Ranviera — szybciej (do ok. 100–130 m/s w grubych włóknach; w nerwach obwodowych ogółem ok. 5–130 m/s, orientacyjnie) | olimpijski:neuron
 Adaptacja receptorów | szybka: lekki dotyk, węch; słaba: ból | olimpijski:receptory
 Fosfen | wrażenie światła bez światła (np. po uderzeniu w oko) | olimpijski:receptory
 Dioptria | jednostka mocy optycznej: D = 1/f (f w metrach); −2 D to f = −0,5 m | olimpijski:wady

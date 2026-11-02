@@ -1,0 +1,21 @@
+# N04 Kwasy — audyt zewnętrzny (poziomy E8) i wprowadzone zmiany, 2026-11-02
+
+| # | Uwaga audytu | Decyzja | Gdzie |
+|---|---|---|---|
+| 1 | Oznaczyć poziomy (muszę umieć / rozszerzenie / ponad program) | WPROWADZONE | klasy poz-must/poz-e8/poz-roz/poz-pon (`poziomy: tak`), legenda, plakietki |
+| 2 | Filtr „tylko E8” / „E8 + rozszerzenie” / „wszystko” | WPROWADZONE (+ tryb „Muszę umieć”) | pasek „Pokaż” nad lekcją; zapamiętywany w przeglądarce |
+| 3 | Definicja E8 bez Brønsteda | WPROWADZONE | minimum pkt 1; Brønsted → karta „Rozszerzenie” (poz-roz), §1.2 bez zmian |
+| 4 | H₂SO₄: skrót vs dysocjacja stopniowa | WPROWADZONE | minimum pkt 4 |
+| 5 | H₃PO₃ poza torem E8 | WPROWADZONE (nic nie skasowane) | wiersz tabeli i „Uwaga 2” → poz-pon |
+| 6 | HF poza „muszę umieć”, krótko „słaby kwas” | WPROWADZONE | jedna linia E8 + 6.3 jako rozszerzenie |
+| 7 | Exp. 6 — ostrożnie z elektrolizą | WPROWADZONE | §5.7 i Exp. 6 przeredagowane |
+| 8 | Exp. 2 — BHP „pyk” | WPROWADZONE | Exp. 2 BHP |
+| 9 | Ściąga „E8 w 5 minut” | WPROWADZONE (6 równań, 3 pułapki, 5 doświadczeń, kolory wskaźników) | karta #sciaga |
+| 10 | Doświadczenia: kapusta, balon/wulkan, skorupka, rdza | WPROWADZONE | Exp. 11–14 (nowe, domowe, z kontrolą i @opis); kapusta była już w tabeli wskaźników §7 |
+| 11 | Wirtualny tester pH (suwak NaOH) | JUŻ ISTNIEJE — nie dublujemy | modele ph-indicators-v03, gfx-scene-titration, titration-merged w §7/§14 |
+| 12 | Quiz po każdej sekcji | WPROWADZONE dla §1–3, 5–7, 9 | karty „Sprawdź się” (poz-must) |
+| 13 | Tryb „E8 exam” | = tryb „Muszę umieć” | pasek filtra |
+| 14 | Interaktywna tabela kwasów, „przewidź produkty”, mapa pojęć | JUŻ ISTNIEJĄ (kw-reszty-v01, reakcje-kwasu-v03, mapa myśli §20) | — |
+| 15 | Błędne odpowiedzi z wyjaśnieniem (Cu + HCl) | WPROWADZONE w quizie §9 (pole `!`); też w reakcje-kwasu-v03 | — |
+| 16 | Ka/pKa, bufory, miareczkowanie, kwasy utleniające → ponad program | WPROWADZONE | auto z plakietek/ramek; §9.1.2 przemianowane na „ponad program” |
+| 17 | Wulkan z płynem do naczyń jako osobne doświadczenie | ODRZUCONE jako osobne: ten sam gaz co w Exp. 12 — wariant opisany w jego „Wniosku” (unikamy dubla) | Exp. 12 |

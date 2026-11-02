@@ -17,6 +17,18 @@ root.querySelectorAll('.che-quiz').forEach(function(w){var sc=w.nextElementSibli
   d.querySelectorAll('.quiz-opt').forEach(function(x){x.disabled=true;if(+x.dataset.a===good)x.classList.add('correct');else if(x===b)x.classList.add('wrong')});
   if(d.dataset.fb){var f=document.createElement('div');f.className='quiz-fb';f.innerHTML=d.dataset.fb;d.appendChild(f)}
   if(sc&&sc.classList.contains('quiz-score'))sc.textContent='Wynik: '+ok+' / '+n+(n===all?' — test ukończony':'')}})})});
+var pb=root.querySelector('.poz-bar');
+if(pb){var AB=root.querySelector('#advToggle');if(AB)AB.style.display='none';
+ var INF={must:'Tylko to, co trzeba umieć na pewno.',e8:'Zakres egzaminu ósmoklasisty.',roz:'E8 plus „warto rozumieć” (LO).',all:'Cały materiał, także ponad program.'};
+ var tocL=root.querySelectorAll('.toc-link');
+ var ust=function(m){document.body.setAttribute('data-poz',m);
+  pb.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',x.dataset.poz===m?'true':'false')});
+  var inf=root.querySelector('#pozInfo');if(inf)inf.textContent=INF[m]||'';
+  root.querySelectorAll('section.poz-e8').forEach(function(s){s.classList.toggle('poz-nomust',!s.querySelector('.poz-must'))});
+  tocL.forEach(function(a){var t=root.getElementById?root.getElementById(a.getAttribute('href').slice(1)):null;a.style.display=(t&&getComputedStyle(t).display==='none')?'none':''});
+  try{localStorage.setItem('lekcja-poz',m)}catch(e){}};
+ pb.querySelectorAll('button').forEach(function(x){x.onclick=function(){ust(x.dataset.poz)}});
+ var m0='e8';try{m0=localStorage.getItem('lekcja-poz')||'e8'}catch(e){}if(!INF[m0])m0='e8';ust(m0)}
 var b=root.querySelector('#advToggle');
 if(b){var adv=function(){return root.querySelectorAll('details.adv')},k=adv().length;
  if(!k)b.style.display='none';
