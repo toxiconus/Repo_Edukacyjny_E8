@@ -985,6 +985,13 @@ E° wynika z całego cyklu: atomizacja metalu + jonizacja + **hydratacja kationu
 
 > **E8:** HNO₃ nie daje H₂ z metalami — nie stosujemy schematu „metal + kwas → sól + H₂”. Szczegóły (kwasy utleniające, pasywacja) — ponad program.
 
+::: karta understand {.poz-roz} | Dla porównania: te same metale w samej wodzie (bez kwasu)
+Kwas „otwiera” reakcję także metalom, które w wodzie prawie nic nie robią. W wodzie reagują tylko metale bardzo aktywne: Na gwałtownie, Ca spokojniej, Mg ledwo (zimna woda, bez kwasu). Zestaw to z probówkami z kwasem powyżej: Mg w HCl bąbelkuje szybko, Mg w wodzie prawie wcale.
+
+@klocek probowki {metale="Mg,Ca,Na", wskaznik="1"} | Mg, Ca i Na w wodzie z fenoloftaleiną (bez kwasu)
+@opis Trzy probówki z wodą i fenoloftaleiną: sód reaguje gwałtownie (bąbelki H₂, roztwór różowieje), wapń spokojniej, magnez prawie wcale. Powstają zasady (różowa barwa), nie sole. Wniosek: sama woda reaguje tylko z bardzo aktywnymi metalami, a kwas pozwala reagować także Mg, Zn i Fe.
+:::
+
 ### 9.1.2 Kwasy utleniające: HNO₃, stężony H₂SO₄ [[extra:PONAD PROGRAM]]
 
 ::: karta extra

@@ -369,6 +369,7 @@
       "ui_klocki.js",
       "../lite/rx-lite.js",
       "naczynia.js",
+      "dane/pierwiastki.js",
       "probowki_odczyn.js",
       "probowki_wybor.js",
       "zbieranie_gazu.js",
@@ -383,6 +384,8 @@
       "c2d_prosta.js",
       "c2d_klocek.js",
       "kwasy_modele.js",
+      "znaki.js",
+      "probowki.js",
       "zlewka_rx.js"
     ],
     "N05": [

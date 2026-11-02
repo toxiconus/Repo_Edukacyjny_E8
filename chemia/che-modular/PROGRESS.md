@@ -282,3 +282,4 @@
 - 2026-11-02: N04 — poprawki audytu 3, wzor-2d: grupa=none działa w c2d_prosta, walencja S/P/N/Cl w panelu; model kulkowy H₂SO₄ w rozszerzeniu.
 - 2026-11-02: N04 — klocek zlewka-rx (rx-lite) dla 9 doświadczeń z kwasami.
 - 2026-11-02: N04 — klocek zlewki-rx (kilka zlewek naraz, jak pracownia f06): Mg/Zn/Cu w HCl, Mg w HCl vs ocet (§9.1); spec mgOcet.
+- 2026-11-02: N04 §9.1.1 — klocek probowki z P01 (Mg, Ca, Na w wodzie) jako porównanie z kwasem; manifest N04 + dane/pierwiastki.js, znaki.js, probowki.js.

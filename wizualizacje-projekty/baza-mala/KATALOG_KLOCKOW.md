@@ -117,7 +117,7 @@ Lekcje i pliki, które wymieniają (`manifest.json` → `lekcje`):
 - **B2g**: `klocki.js`, `pomocnicze.js`, `petla_regulacji.js`
 - **N01**: `klocki.js`, `pomocnicze.js`, `ui_klocki.js`, `zbieranie_gazu.js`, `karta_bhp.js`, `naczynia.js`, `probowki_odczyn.js`, `probowki_wybor.js`, `palnik_gazowy.js`
 - **N02**: `klocki.js`, `pomocnicze.js`, `karta_bhp.js`, `ui_klocki.js`, `chemia_wstep.js`, `naczynia.js`, `probowki_odczyn.js`, `probowki_wybor.js`, `palnik_gazowy.js`, `zbieranie_gazu.js`, `lancuch_przemian.js`, `palenie.js`, `plomien.js`, `okresowy_tlenki.js`
-- **N04**: `klocki.js`, `pomocnicze.js`, `ui_klocki.js`, `../lite/rx-lite.js`, `naczynia.js`, `probowki_odczyn.js`, `probowki_wybor.js`, `zbieranie_gazu.js`, `jony_w_wodzie.js`, `tabela_rozpuszczalnosci.js`, `rownania_jonowe.js`, `gra_klasyfikacja.js`, `karta_bhp.js`, `c2d_core.js`, `c2d_grupy.js`, `c2d_wzor.js`, `c2d_prosta.js`, `c2d_klocek.js`, `kwasy_modele.js`, `zlewka_rx.js`
+- **N04**: `klocki.js`, `pomocnicze.js`, `ui_klocki.js`, `../lite/rx-lite.js`, `naczynia.js`, `dane/pierwiastki.js`, `probowki_odczyn.js`, `probowki_wybor.js`, `zbieranie_gazu.js`, `jony_w_wodzie.js`, `tabela_rozpuszczalnosci.js`, `rownania_jonowe.js`, `gra_klasyfikacja.js`, `karta_bhp.js`, `c2d_core.js`, `c2d_grupy.js`, `c2d_wzor.js`, `c2d_prosta.js`, `c2d_klocek.js`, `kwasy_modele.js`, `znaki.js`, `probowki.js`, `zlewka_rx.js`
 - **N05**: `klocki.js`, `pomocnicze.js`, `bilans_rownania.js`, `zbieranie_gazu.js`, `karta_bhp.js`
 - **F02**: `klocki.js`, `pomocnicze.js`, `model_widok.js`, `z_f02_czastki.js`, `z_f02_magnes_fes.js`, `karta_bhp.js`, `ui_klocki.js`, `chemia_wstep.js`
 - **F03**: `klocki.js`, `pomocnicze.js`, `karta_bhp.js`, `ui_klocki.js`, `chemia_wstep.js`

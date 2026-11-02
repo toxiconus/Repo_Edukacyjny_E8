@@ -953,6 +953,7 @@
    "N04": 1
   },
   "probowki": {
+   "N04": 1,
    "P01": 1
   },
   "wzor-2d": {
@@ -1569,7 +1570,6 @@
   "linie-pola",
   "estryfikacja",
   "nadmiar-substratu",
-  "probowki",
   "osady-dwie-sole",
   "eutrofizacja",
   "sekwencje",
@@ -1638,6 +1638,7 @@
   "palnik-gazowy",
   "doswiadczenie",
   "rownania-jonowe",
+  "probowki",
   "wzor-2d",
   "zlewka-rx",
   "zlewki-rx",

@@ -328,7 +328,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/engine/src/gfx/wspolne/widoki  (1 pl., 4 KB)
 - `che-test-silnika-v01.js` 4 KB
 
-## chemia/che-modular/engine/src/klocki  (61 pl., 452 KB)
+## chemia/che-modular/engine/src/klocki  (61 pl., 453 KB)
 - (zwinięte; `ls chemia/che-modular/engine/src/klocki`)
 
 ## chemia/che-modular/engine/src/klocki/dane  (1 pl., 11 KB)
@@ -597,7 +597,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 
 ## chemia/lekcje_md/N  (3 pl., 387 KB)
 - ⚠`CHE.02.N03.wodorotlenki.md` 134 KB
-- ⚠`CHE.02.N04.kwasy.md` 164 KB
+- ⚠`CHE.02.N04.kwasy.md` 165 KB
 - ⚠`CHE.02.N05.sole.md` 89 KB
 
 ## chemia/lekcje_md/O  (9 pl., 121 KB)
@@ -1267,7 +1267,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## wizualizacje-projekty/baza-mala/gfx/wspolne/widoki  (1 pl., 4 KB)
 - `che-test-silnika-v01.js` 4 KB
 
-## wizualizacje-projekty/baza-mala/klocki  (61 pl., 452 KB)
+## wizualizacje-projekty/baza-mala/klocki  (61 pl., 453 KB)
 - (zwinięte; `ls wizualizacje-projekty/baza-mala/klocki`)
 
 ## wizualizacje-projekty/baza-mala/klocki/dane  (1 pl., 11 KB)
