@@ -25,3 +25,19 @@ N04 dostało 17 działających w pliku klocków z istniejącej bazy (manifest `l
 
 ## Dopisek 2
 Nowe klocki `kwasy_modele.js`: ph-skala, miareczkowanie (mocny/słaby), bufor, kwasy-reszty, kwasy-wlasciwosci, kwasy-rozcienczanie, kwasne-deszcze — zastępują 7 wcześniej niedziałających modeli. Dodano 4 wzory strukturalne (wzor-2d: CH₃COOH, H₂SO₄, HNO₃, H₃PO₄) w §2 oraz kartę „Definicja kwasu — krok po kroku” (poz-must, z odpowiedziami) rozwijającą pkt 1 minimum.
+
+## Audyt 2 (uproszczenie dla ucznia klasy 8) — 2026-11-02
+| Uwaga | Decyzja |
+|---|---|
+| Nie zaczynać od „dysocjuje na kationy i aniony” — najpierw „kwas w wodzie oddaje H⁺” | WPROWADZONE: minimum pkt 1, §1.1 i karta „Definicja krok po kroku” zaczynają od wersji prostej; wersja dokładna w nawiasie/rozwinięciu |
+| Trudne słowa w nawiasach | WPROWADZONE: nawiasy przy jon/kation/anion/dysocjacja/wskaźnik/egzotermiczne + karta „Trudne słowa po ludzku” |
+| Ogranicz listę kwasów do 6 | WPROWADZONE: minimum pkt 3 = sześć do zapamiętania, reszta jako „dodatkowo (rozszerzenie)”; klocek kwasy-reszty: sześć + „dodatkowo” |
+| Ciekawostki/dodatki wyraźnie oddzielone | JUŻ WPROWADZONE (filtr poziomów) |
+| Niejasny zapis HCl(g) / bezwodny kwas octowy | WPROWADZONE (wiersz tabeli testera przewodnictwa) |
+| Zdanie o smaku | WPROWADZONE (minimum pkt 8, karta definicji) |
+| Rozpoznawanie kwasu po H na początku / OH na końcu | WPROWADZONE z zastrzeżeniem (H₂O, CH₄ to nie kwasy) |
+| Reszta kwasowa: ile H oddał, taki ładunek | WPROWADZONE (tabela w karcie definicji) |
+| pH bez logarytmów (pH 2 ≈ 10× bardziej kwaśne niż 3) | WPROWADZONE (słowniczek, ściąga) |
+| Wskaźniki: tylko trzy; zdanie o fenoloftaleinie | WPROWADZONE (ściąga, minimum) |
+| Cztery schematy reakcji + pułapka Cu/Ag/Au | JUŻ BYŁO w ściądze „E8 w 5 minut” |
+| Skrócić całą lekcję | CZĘŚCIOWO: długie treści nie zostały usunięte (zasada: bez utraty danych), tylko ukrywane filtrem „Muszę umieć”/„E8” |

@@ -148,9 +148,9 @@
     ['HNO₃', 'kwas azotowy(V)', 'tlenowy', 'NO₃⁻', '1−', 'HNO₃ → H⁺ + NO₃⁻', 'mocny', 'NaNO₃ — azotan(V) sodu', 'nawozy, materiały wybuchowe'],
     ['H₃PO₄', 'kwas fosforowy(V)', 'tlenowy', 'PO₄³⁻', '3−', 'stopniowo: H₃PO₄ ⇌ H⁺ + H₂PO₄⁻ ⇌ 2H⁺ + HPO₄²⁻ ⇌ 3H⁺ + PO₄³⁻. Skrót: H₃PO₄ ⇌ 3H⁺ + PO₄³⁻', 'słaby (średniej mocy)', 'Na₃PO₄ — fosforan(V) sodu', 'nawozy, napoje typu cola, odrdzewiacze'],
     ['H₂CO₃', 'kwas węglowy', 'tlenowy', 'CO₃²⁻', '2−', 'H₂CO₃ ⇌ 2H⁺ + CO₃²⁻ (kwas nietrwały: H₂CO₃ ⇌ H₂O + CO₂)', 'słaby', 'Na₂CO₃ — węglan sodu', 'woda gazowana'],
+    ['CH₃COOH', 'kwas octowy (etanowy)', 'organiczny', 'CH₃COO⁻', '1−', 'CH₃COOH ⇌ H⁺ + CH₃COO⁻ (kwasowy tylko H z grupy –COOH)', 'słaby', 'CH₃COONa — octan sodu', 'ocet, konserwacja żywności'],
     ['H₂SO₃', 'kwas siarkowy(IV)', 'tlenowy', 'SO₃²⁻', '2−', 'H₂SO₃ ⇌ 2H⁺ + SO₃²⁻', 'słaby', 'Na₂SO₃ — siarczan(IV) sodu', 'konserwant (SO₂), kwaśne deszcze'],
-    ['H₂S', 'kwas siarkowodorowy', 'beztlenowy', 'S²⁻', '2−', 'H₂S ⇌ 2H⁺ + S²⁻', 'słaby', 'Na₂S — siarczek sodu', 'zapach zgniłych jaj, woda siarkowodorowa'],
-    ['CH₃COOH', 'kwas octowy (etanowy)', 'organiczny', 'CH₃COO⁻', '1−', 'CH₃COOH ⇌ H⁺ + CH₃COO⁻ (kwasowy tylko H z grupy –COOH)', 'słaby', 'CH₃COONa — octan sodu', 'ocet, konserwacja żywności']
+    ['H₂S', 'kwas siarkowodorowy', 'beztlenowy', 'S²⁻', '2−', 'H₂S ⇌ 2H⁺ + S²⁻', 'słaby', 'Na₂S — siarczek sodu', 'zapach zgniłych jaj, woda siarkowodorowa']
   ];
   KLOCKI.def('kwasy-reszty', {
     opis: 'Tabela interaktywna: wybierasz wzór kwasu i widzisz jego nazwę, typ, resztę kwasową z ładunkiem, równanie dysocjacji, moc, sól sodową i zastosowanie.',
@@ -167,7 +167,7 @@
           '<div><b>Reszta kwasowa:</b> ' + k[3] + ' <span style="color:var(--muted,#5b6b73)">(ładunek ' + k[4] + ' = liczba atomów H oddawanych w skrócie)</span></div>' +
           '<div><b>Dysocjacja:</b> ' + k[5] + '</div><div><b>Sól sodowa:</b> ' + k[7] + '</div><div><b>Zastosowanie:</b> ' + k[8] + '</div>';
       }
-      KW.forEach(function (k, i) { var c = U().chip(k[0], i === 0, function () { pokaz(i); }); chips.push(c); bar.appendChild(c); });
+      KW.forEach(function (k, i) { if (i === 6) bar.appendChild(E('span', 'font-size:12px;color:var(--muted,#5b6b73);margin:0 4px 0 8px', 'dodatkowo (rozszerzenie):')); var c = U().chip(k[0], i === 0, function () { pokaz(i); }); chips.push(c); bar.appendChild(c); });
       host.append(bar, card); pokaz(0);
     }
   });

@@ -12,20 +12,33 @@ poziomy: tak
 stan: ULEPSZONA — Claude Haiku 5.5, audyt W1 wewnętrzny, 2026-10-12; do zewnętrznego W1
 ---
 ::: minimum | Muszę umieć na E8 — 10 faktów
-1. **Definicja kwasu (E8):** związek, który w roztworze wodnym dysocjuje na kationy wodoru H⁺ (dokładniej H₃O⁺) i aniony reszty kwasowej. *Po ludzku: kwas = wodór + reszta; w wodzie rozpada się na „plusa” (H⁺) i „minusa” (reszta) — rozwinięcie niżej.*
+1. **Kwas to substancja, która w wodzie oddaje jony H⁺** (kwas = H⁺ + reszta kwasowa; w wodzie rozpada się na małe naładowane cząstki — jony). *Dokładniej (definicja szkolna):* związek, który w roztworze wodnym **dysocjuje** (rozpada się na jony) na **kationy** (jony dodatnie) wodoru H⁺ (dokładniej H₃O⁺) i **aniony** (jony ujemne) reszty kwasowej. Rozwinięcie krok po kroku — karta niżej.
 2. **Wzór ogólny:** HₙR, gdzie R = reszta kwasowa, n = wartościowość reszty.
-3. **Podział:** beztlenowe (HCl, HBr, HI, HF, H₂S, HCN) vs tlenowe (HNO₃, H₂SO₄, H₂CO₃, H₃PO₄, HClO₄) — oraz mocne (HCl, HBr, HI, HNO₃, H₂SO₄, HClO₄) vs słabe (HF, H₂S, H₂CO₃, H₂SO₃, HNO₂, H₃PO₄, CH₃COOH).
+3. **Sześć kwasów do zapamiętania:** **mocne** — HCl, H₂SO₄, HNO₃; **słabe** — H₃PO₄ (średniej mocy), H₂CO₃, CH₃COOH. Podział: beztlenowe (bez tlenu we wzorze: HCl, H₂S) vs tlenowe (z tlenem: H₂SO₄, HNO₃). *Dodatkowo (rozszerzenie):* beztlenowe HBr, HI, HF, HCN; tlenowe HClO₄; mocne HBr, HI, HClO₄; słabe HF, H₂S, H₂SO₃, HNO₂.
 4. **Dysocjacja:** HCl → H⁺ + Cl⁻; H₂SO₄ → 2H⁺ + SO₄²⁻; H₃PO₄ → 3H⁺ + PO₄³⁻. Na E8 to dopuszczalny skrót; dokładniej: H⁺ jest w wodzie jako jon hydroniowy H₃O⁺, a kwasy wieloprotonowe oddają protony stopniowo (H₂SO₄: I stopień praktycznie całkowity, II częściowy).
 5. **pH:** poniżej 7 kwasowy, 7 obojętny, powyżej 7 zasadowy. pH = −log₁₀[H₃O⁺].
-6. **Wskaźniki:** fenoloftaleina (bezbarwna w kwasie, malinowa w zasadzie); oranż metylowy (czerwony w kwasie, żółty w zasadzie); papierek uniwersalny (czerwony w kwasie, niebieski w zasadzie).
+6. **Wskaźniki** (barwniki zmieniające kolor zależnie od odczynu): fenoloftaleina (**w kwasie niewidoczna, czyli bezbarwna; w zasadzie malinowa**); oranż metylowy (czerwony w kwasie, żółty w zasadzie); papierek uniwersalny (czerwony w kwasie, niebieski w zasadzie).
 7. **Reakcje kwasów:** + metal → sól + H₂ (tylko metale aktywniejsze od wodoru); + tlenek metalu → sól + H₂O; + wodorotlenek → sól + H₂O (zobojętnianie); + sól (węglan) → sól + H₂O + CO₂.
-8. **BHP:** kwas do wody, nigdy odwrotnie (reakcja egzotermiczna). Okulary, rękawice, nie pipetować ustami, nie wąchać bezpośrednio.
+8. **BHP:** kwas do wody, nigdy odwrotnie (rozcieńczanie wydziela dużo ciepła — egzotermiczne — i może pryskać). Okulary, rękawice, nie pipetować ustami, nie wąchać bezpośrednio, **nie sprawdzać kwasów smakiem**, mimo że wiele jest kwaśnych.
 9. **Właściwości:** stężony HCl „dymi” i ma ostry zapach; stężony H₂SO₄ jest oleisty, higroskopijny i *zwęgla* cukier, papier, drewno; HNO₃ żółknie na świetle, a z białkiem daje *żółte* zabarwienie (reakcja ksantoproteinowa).
 10. **Roztwory kwasów przewodzą prąd** — są elektrolitami, bo zawierają jony (H₃O⁺ i aniony reszty). Stężenie procentowe: C<sub>p</sub> = m<sub>s</sub>/m<sub>r</sub> · 100%.
 :::
 
 ::: karta basic {#definicja-krok .poz-must} | Definicja kwasu — krok po kroku (po ludzku)
-**Zdanie z definicji rozbijamy na kawałki:**
+**Najpierw najprościej:** kwas to substancja, która **w wodzie „puszcza” wodór jako jon H⁺**. Wyobraź sobie paczkę: **kwas = H⁺ + reszta kwasowa**. Np. HCl → H⁺ + Cl⁻ (kwas solny rozpada się na dodatni jon wodoru i ujemny jon chlorkowy). To właśnie H⁺ sprawia, że roztwór jest kwaśny. *Jon = atom lub grupa atomów z ładunkiem, + albo −.*
+
+| Kwas | co oddaje | reszta kwasowa |
+|---|---|---|
+| HCl | H⁺ | Cl⁻ |
+| H₂SO₄ | 2H⁺ | SO₄²⁻ |
+| HNO₃ | H⁺ | NO₃⁻ |
+| H₃PO₄ | 3H⁺ | PO₄³⁻ |
+
+**Reszta kwasowa** (to, co zostaje po odjęciu H⁺): ile H oddał kwas, taki ujemny ładunek ma reszta.
+
+**Jak rozpoznać kwas we wzorze?** Na początku wzoru stoi **H**: **H**Cl, **H**₂SO₄ — kwasy. NaCl — nie (brak H na początku). NaOH — nie, to zasada (OH na końcu). Reguła klasy 8: *H na początku → zwykle kwas; OH na końcu → zasada*. (Uwaga: H₂O i CH₄ też zaczynają się od H, ale nie są kwasami — nie oddają H⁺.)
+
+**Rozwinięcie — zdanie z definicji rozbijamy na kawałki:**
 
 1. **„Związek”** — kwas to substancja zbudowana z kilku pierwiastków, np. HCl (wodór + chlor), H₂SO₄ (wodór + siarka + tlen).
 2. **Wzór kwasu = wodór + reszta kwasowa.** Wodór stoi na początku: H**Cl**, H₂**SO₄**, H₃**PO₄**. Reszta kwasowa to „cała reszta wzoru” (Cl, SO₄, PO₄).
@@ -40,7 +53,7 @@ stan: ULEPSZONA — Claude Haiku 5.5, audyt W1 wewnętrzny, 2026-10-12; do zewn�
 
 **Trzy najczęstsze pomyłki:**
 
-- „Kwas to coś kwaśnego w smaku” — nie próbujemy chemikaliów; kwasy rozpoznajemy po **wzorze i jonach H⁺**, nie po smaku.
+- „Kwas to coś kwaśnego w smaku” — **nigdy nie sprawdzamy kwasów smakiem** (to niebezpieczne); kwasy rozpoznajemy po **wzorze i jonach H⁺**, nie po smaku.
 - „Każdy związek z wodorem to kwas” — nie: H₂O i CH₄ nie dysocjują na H⁺ w wodzie, więc nie są kwasami. Kwas **oddaje** H⁺ do wody.
 - „Wzór HₙR zawsze znaczy: wszystkie H są kwasowe” — na E8 tak przyjmujemy (H₂SO₄ → 2H⁺ + SO₄²⁻), ale w CH₃COOH kwasowy jest tylko jeden H (z grupy –COOH).
 
@@ -49,6 +62,19 @@ stan: ULEPSZONA — Claude Haiku 5.5, audyt W1 wewnętrzny, 2026-10-12; do zewn�
 
 ::: odp | Odpowiedzi do „Sprawdź sam”
 (a) Z 2 atomów wodoru (H₂) i reszty kwasowej SO₃. (b) 2− (SO₃²⁻), bo przy reszcie zostały 2 elektrony po dwóch atomach H, które odeszły jako H⁺. (c) Rozpada się na jony: HCl → H⁺ + Cl⁻ (w wodzie dokładniej H₃O⁺ + Cl⁻).
+:::
+
+::: karta basic {#slowa .poz-must} | Trudne słowa po ludzku
+- **jon** — atom lub grupa atomów z ładunkiem (H⁺, Cl⁻)
+- **kation** — jon dodatni (np. H⁺, Na⁺); **anion** — jon ujemny (np. Cl⁻)
+- **dysocjacja** — rozpad substancji na jony w wodzie
+- **reszta kwasowa** — to, co zostaje z kwasu po oddaniu H⁺ (np. Cl⁻, SO₄²⁻)
+- **odczyn** — czy roztwór jest kwasowy, obojętny czy zasadowy
+- **pH** — liczba mówiąca o odczynie: poniżej 7 kwas, 7 obojętny, powyżej 7 zasada; im niższe pH, tym bardziej kwaśny (pH 2 jest ok. 10 razy bardziej kwaśne niż pH 3)
+- **wskaźnik** — barwnik, który zmienia kolor w zależności od odczynu
+- **zobojętnianie** — reakcja kwasu z zasadą, w której powstaje sól i woda
+- **sól** — związek metalu z resztą kwasową (np. NaCl)
+- **egzotermiczna** — wydzielająca ciepło
 :::
 
 ::: karta basic {#sciaga .poz-must} | E8 w 5 minut — ściąga przed egzaminem
@@ -68,6 +94,8 @@ stan: ULEPSZONA — Claude Haiku 5.5, audyt W1 wewnętrzny, 2026-10-12; do zewn�
 - **Kwas do wody, nigdy odwrotnie.**
 
 **5 doświadczeń, które trzeba umieć opisać:** odczyn wskaźnikiem (Exp. 1) · Zn + HCl i próba „pyk” (Exp. 2) · węglan + kwas, CO₂ i woda wapienna (Exp. 3) · zobojętnianie z fenoloftaleiną (Exp. 4) · przewodzenie prądu (Exp. 6).
+
+**Zapamiętaj w 4 zdaniach:** kwas w wodzie oddaje H⁺ · wzór kwasu zaczyna się zwykle od H · pH poniżej 7 = kwas, 7 = obojętny, powyżej 7 = zasada (niższe pH = bardziej kwaśny) · fenoloftaleina w kwasie jest niewidoczna, w zasadzie malinowa.
 
 **Kolory wskaźników w kwasie:** oranż metylowy — czerwony · fenoloftaleina — bezbarwna · papierek uniwersalny — czerwony/pomarańczowy · kapusta — czerwona/różowa.
 :::
@@ -155,7 +183,9 @@ Pamiętaj o bezpieczeństwie: stężone kwasy są żrące, dlatego rozcieńczamy
 ### 1.1 Definicja szkolna (Arrheniusa)
 
 ::: karta core | Kwas — definicja Arrheniusa
-**Kwas** to związek chemiczny, który w wodzie dysocjuje na **kationy wodoru H⁺** (dokładniej — jony hydroniowe H₃O⁺) i **aniony reszty kwasowej**.
+**Najprościej:** kwas to substancja, która w wodzie oddaje jony H⁺.
+
+**Kwas** to związek chemiczny, który w wodzie dysocjuje (rozpada się na jony) na **kationy wodoru H⁺** (dokładniej — jony hydroniowe H₃O⁺) i **aniony reszty kwasowej**.
 
 $$ HₙR → n H⁺ + Rⁿ⁻
 
@@ -503,7 +533,7 @@ Prąd w roztworze przenoszą **jony**. Tester (dwie elektrody + żarówka/dioda)
 <tr><td>CH₃COOH(aq), 0,1 mol/dm³</td><td>świeci słabo</td><td>słaby elektrolit — zjonizowało się ok. 1% cząsteczek</td></tr>
 <tr><td>woda destylowana</td><td>nie świeci</td><td>bardzo mało jonów (autodysocjacja wody)</td></tr>
 <tr><td>roztwór cukru</td><td>nie świeci</td><td>nieelektrolit — cząsteczki nie rozpadają się na jony</td></tr>
-<tr><td>HCl(g), bezwodny kwas octowy</td><td>nie świeci / bardzo słabo</td><td>bez wody nie ma jonizacji — jonów brak</td></tr>
+<tr><td>HCl gazowy (HCl(g)) i bezwodny (czysty, bez wody) kwas octowy</td><td>nie świeci / bardzo słabo</td><td>gazowy HCl nie przewodzi prądu, bo nie ma w nim jonów; jony powstają dopiero po rozpuszczeniu w wodzie</td></tr>
 </tbody></table>
 :::
 
