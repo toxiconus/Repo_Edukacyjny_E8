@@ -6,7 +6,7 @@
     BTN: BTN,
     btn: function (t, f, tytul) { var b = document.createElement('button'); b.type = 'button'; b.style.cssText = BTN; b.innerHTML = t; if (tytul) b.title = tytul; b.addEventListener('click', f); return b; },
     chip: function (t, on, f) { var b = ui.btn(t, f); ui.zaznacz(b, on); return b; },
-    zaznacz: function (b, on) { b.style.background = on ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)'; b.style.color = on ? '#fff' : 'inherit'; b.style.borderColor = on ? 'var(--accent,#0d6868)' : 'var(--border-strong,#94a3b8)'; },
+    zaznacz: function (b, on) { b.style.background = on ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)'; b.style.color = on ? 'var(--bg,#fff)' : 'inherit'; b.style.borderColor = on ? 'var(--accent,#0d6868)' : 'var(--border-strong,#94a3b8)'; },
     suwak: function (et, mn, mx, st, w, f) {
       var l = document.createElement('label'); l.style.cssText = 'display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:14px;margin:4px 0';
       l.innerHTML = '<span style="min-width:120px">' + et + '</span><input type="range" min="' + mn + '" max="' + mx + '" step="' + st + '" value="' + w + '" style="flex:1;min-width:140px;accent-color:var(--accent,#0d6868)"><b class="sv" style="min-width:64px"></b>';

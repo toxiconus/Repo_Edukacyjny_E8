@@ -304,3 +304,4 @@
 - 2026-11-04: zarchiwizowano 15 nieużywanych widoków dużego silnika (archiwum/gfx_widoki_duze_2026-11), indeks gfx przebudowany.
 - 2026-11-04: klocek szybkosc-reakcji (port kinetics-v01) w K06 i K07; lekcja_html.py: cudzysłowy YAML w kod: "K06" nie psują już manifestu.
 - 2026-11-04: rx-lite (zlewka-rx/zlewki-rx, ok. 60 użyć) na tokenach motywu: szkło, stojaki, przyciski, notatki (jasny i ciemny), kontur 2,5 px; sprawdzone też probowki-odczyn i zbieranie-gazu w ciemnym — bez zmian.
+- 2026-11-04: audyt ciemnego motywu klocków: --muted→--text-muted (18), tekst na akcencie var(--bg), kolory znaczenia z --c-*, pola układu okresowego; zasady 11–16 w STYL_WIZUALIZACJI.md; test narzedzia/test_kontrast_klockow.js (0 elementów o niskim kontraście w 12 klockach).

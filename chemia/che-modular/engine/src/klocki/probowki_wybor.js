@@ -66,7 +66,7 @@
         klucze.forEach(function (k) {
           var on = wyb.indexOf(k) >= 0, b = przyciski[k];
           b.style.background = on ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)';
-          b.style.color = on ? '#fff' : 'var(--accent,#0d6868)';
+          b.style.color = on ? 'var(--bg,#fff)' : 'var(--accent,#0d6868)';
           b.setAttribute('aria-pressed', on ? 'true' : 'false');
         });
         var tuby = wyb.map(function (k) {

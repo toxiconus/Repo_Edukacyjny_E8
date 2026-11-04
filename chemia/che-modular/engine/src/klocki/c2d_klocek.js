@@ -37,7 +37,7 @@
       try {
         m = window.C2D.uklad(window.C2D.parse(String(opc.smiles || 'CC(=O)O')));
       } catch (e) {
-        host.innerHTML = '<div style="color:#b91c1c;font-size:14px;padding:8px">Nie mogę narysować „' + esc(opc.smiles) + '”: ' + esc(e.message) + '</div>';
+        host.innerHTML = '<div style="color:var(--c-error,#b83a45);font-size:14px;padding:8px">Nie mogę narysować „' + esc(opc.smiles) + '”: ' + esc(e.message) + '</div>';
         return;
       }
       base = {grupy: grupy, kulki: opcjaWlaczona(opc.kulki), kat: opcjaWlaczona(opc.kat), pary: opcjaWlaczona(opc.pary),

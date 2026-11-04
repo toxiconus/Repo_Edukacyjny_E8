@@ -28,7 +28,7 @@
           // biureta
           '<rect x="60" y="20" width="22" height="150" rx="3" fill="rgba(186,230,253,.25)" stroke="var(--border-strong,#64748b)" stroke-width="2"/>' +
           '<rect x="62" y="' + (20 + 150 * (1 - lev) * 1) + '" width="18" height="' + (150 * lev) + '" fill="rgba(191,219,254,.85)"/>' +
-          [0, 10, 20, 30, 40].map(function (m) { var y = 22 + m / VMAX * 146; return '<line x1="60" y1="' + y + '" x2="70" y2="' + y + '" stroke="#475569"/><text x="52" y="' + (y + 3) + '" font-size="8" text-anchor="end" fill="var(--muted,#64748b)">' + m + '</text>'; }).join('') +
+          [0, 10, 20, 30, 40].map(function (m) { var y = 22 + m / VMAX * 146; return '<line x1="60" y1="' + y + '" x2="70" y2="' + y + '" stroke="#475569"/><text x="52" y="' + (y + 3) + '" font-size="8" text-anchor="end" fill="var(--text-muted,#64748b)">' + m + '</text>'; }).join('') +
           '<rect x="64" y="170" width="14" height="10" fill="#94a3b8"/><rect x="56" y="173" width="30" height="4" rx="2" fill="#475569"/><path d="M68 180 h6 v12 l-3 6 l-3 -6z" fill="#cbd5e1" stroke="#64748b"/>' +
           (run && v < VMAX ? '<circle cx="71" cy="206" r="3" fill="#93c5fd"><animate attributeName="cy" from="196" to="236" dur=".5s" repeatCount="indefinite"/></circle>' : '') +
           '<text x="71" y="14" text-anchor="middle" font-size="10" font-weight="700" fill="var(--text,#0f172a)">NaOH 0,1 M</text>' +

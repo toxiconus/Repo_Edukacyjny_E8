@@ -58,12 +58,12 @@
         chips.forEach(function (c) { U.zaznacz(c.el, c.t === cur[0] && c.id === cur[1]); });
         var kat = cur[0] === 'c', id = cur[1], ion = (kat ? cats : ani)[id].ion, q = kat ? D.qc[id] : ani[id].q, par = [];
         (kat ? D.anions : D.cations).forEach(function (x) { var s = kat ? D.table[x.id][id] : D.table[id][x.id]; if (s === 'N' || s === 'T') par.push('<b>' + x.ion + '</b> (' + (s === 'N' ? 'osad' : 'trudno rozp.') + ')'); });
-        card.innerHTML = '<div style="font-size:22px"><b>' + ion + '</b> <span style="font-size:14px;color:var(--muted,#5b6b73)">' + (kat ? 'kation' : 'anion') + ' · ładunek ' + (kat ? '+' + q : q) + '</span></div>' +
+        card.innerHTML = '<div style="font-size:22px"><b>' + ion + '</b> <span style="font-size:14px;color:var(--text-muted,#5b6b73)">' + (kat ? 'kation' : 'anion') + ' · ładunek ' + (kat ? '+' + q : q) + '</span></div>' +
           '<div><b>Pochodzenie:</b> ' + (POCH[id] || '—') + '</div><div><b>Wykrywanie:</b> ' + (DET[id] || '—') + '</div>' +
           '<div><b>Tworzy osad z:</b> ' + (par.length ? par.join(', ') : 'prawie nic — jego sole są rozpuszczalne') + '</div>' +
-          '<div style="color:var(--muted,#5b6b73);font-size:13px;margin-top:4px">Bilans: aby powstała obojętna sól, ładunki kationu i anionu muszą się równoważyć (np. Ca²⁺ + 2 Cl⁻ → CaCl₂).</div>';
+          '<div style="color:var(--text-muted,#5b6b73);font-size:13px;margin-top:4px">Bilans: aby powstała obojętna sól, ładunki kationu i anionu muszą się równoważyć (np. Ca²⁺ + 2 Cl⁻ → CaCl₂).</div>';
       }
-      function mk(host2, list, t, lab) { var l = document.createElement('span'); l.style.cssText = 'font-size:12px;color:var(--muted,#5b6b73);align-self:center'; l.textContent = lab; host2.appendChild(l); list.forEach(function (x) { var c = U.chip(x.ion, false, function () { cur = [t, x.id]; pokaz(); }); chips.push({el: c, t: t, id: x.id}); host2.appendChild(c); }); }
+      function mk(host2, list, t, lab) { var l = document.createElement('span'); l.style.cssText = 'font-size:12px;color:var(--text-muted,#5b6b73);align-self:center'; l.textContent = lab; host2.appendChild(l); list.forEach(function (x) { var c = U.chip(x.ion, false, function () { cur = [t, x.id]; pokaz(); }); chips.push({el: c, t: t, id: x.id}); host2.appendChild(c); }); }
       mk(bar, D.cations, 'c', 'kationy:'); mk(bar2, D.anions, 'a', 'aniony:');
       host.append(bar, bar2, card); pokaz();
     }

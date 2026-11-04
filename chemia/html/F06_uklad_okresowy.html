@@ -652,9 +652,9 @@ body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
 :root{--lab:#0e2326;--lab-tekst:var(--text,#1a2332);--lab-cisza:var(--text-muted,#8892a0);--lab-linia:var(--border,#e5e9ee)}
 .lab{background:var(--surface,#fff);color:var(--text,#1a2332);border:1px solid var(--border,#e5e9ee);border-radius:var(--r-lg,14px);padding:16px;box-shadow:var(--sh-sm,none);font-family:var(--tekst,Inter,system-ui,sans-serif)}
 .lab-pasek{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between;margin-bottom:12px}
-.lab-pasek .btn{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+.lab-pasek .btn{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:var(--bg,#fff)}
 .lab-cisza{color:var(--text-muted,#8892a0);font-size:14px}
-.btn{appearance:none;cursor:pointer;border:1px solid var(--accent,#0d6868);background:var(--accent,#0d6868);color:#fff;border-radius:var(--r-md,10px);padding:8px 14px;font:600 13px var(--tekst,Inter,sans-serif)}
+.btn{appearance:none;cursor:pointer;border:1px solid var(--accent,#0d6868);background:var(--accent,#0d6868);color:var(--bg,#fff);border-radius:var(--r-md,10px);padding:8px 14px;font:600 13px var(--tekst,Inter,sans-serif)}
 .btn.jasny{background:var(--surface,#fff);color:var(--accent,#0d6868)}
 .btn:hover{filter:brightness(1.08)}
 .btn:focus-visible{outline:2px solid var(--accent,#0d6868);outline-offset:2px}
@@ -695,7 +695,7 @@ body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
 .wyb-lista{display:grid;gap:6px;margin:6px 0 8px;padding:8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-md,10px);background:var(--surface,#fff)}
 .wyb-g{display:block;font-size:11px;color:var(--text-muted,#8892a0);margin-bottom:3px}
 .wyb-sy{appearance:none;cursor:pointer;border:1px solid var(--border-strong,#cdd5dd);background:var(--surface-soft,#f6f8fa);color:var(--text,#1a2332);border-radius:var(--r-sm,6px);padding:4px 9px;margin:0 4px 4px 0;font:600 13px var(--naglowek,Inter,sans-serif)}
-.wyb-sy[aria-pressed="true"]{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+.wyb-sy[aria-pressed="true"]{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:var(--bg,#fff)}
 /* telefon: kilka stojaków obok siebie — węższy tekst, łamanie długich nazw */
 .kol{min-width:0}
 .kol b{overflow-wrap:anywhere;min-width:0}
@@ -706,7 +706,7 @@ body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
 @media (max-width:480px){.st-opis .obs{font-size:12.5px}.st .btn,.rack-ce .btn{padding:5px 8px;font-size:12px}}
 .seria-przyciski{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
 .seria-btn[aria-pressed="false"]{background:transparent;color:var(--accent,#0d6868)}
-.seria-btn[aria-pressed="true"]{background:var(--accent,#0d6868);color:#fff}
+.seria-btn[aria-pressed="true"]{background:var(--accent,#0d6868);color:var(--bg,#fff)}
 .seria-opis{margin:0 0 10px;font-size:14px;color:var(--lab-cisza,#8892a0)}
 
 
@@ -1655,7 +1655,7 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
     BTN: BTN,
     btn: function (t, f, tytul) { var b = document.createElement('button'); b.type = 'button'; b.style.cssText = BTN; b.innerHTML = t; if (tytul) b.title = tytul; b.addEventListener('click', f); return b; },
     chip: function (t, on, f) { var b = ui.btn(t, f); ui.zaznacz(b, on); return b; },
-    zaznacz: function (b, on) { b.style.background = on ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)'; b.style.color = on ? '#fff' : 'inherit'; b.style.borderColor = on ? 'var(--accent,#0d6868)' : 'var(--border-strong,#94a3b8)'; },
+    zaznacz: function (b, on) { b.style.background = on ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)'; b.style.color = on ? 'var(--bg,#fff)' : 'inherit'; b.style.borderColor = on ? 'var(--accent,#0d6868)' : 'var(--border-strong,#94a3b8)'; },
     suwak: function (et, mn, mx, st, w, f) {
       var l = document.createElement('label'); l.style.cssText = 'display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:14px;margin:4px 0';
       l.innerHTML = '<span style="min-width:120px">' + et + '</span><input type="range" min="' + mn + '" max="' + mx + '" step="' + st + '" value="' + w + '" style="flex:1;min-width:140px;accent-color:var(--accent,#0d6868)"><b class="sv" style="min-width:64px"></b>';
@@ -2638,7 +2638,7 @@ KLOCKI.def('uklad-okresowy', {
       function rys() {
         [].forEach.call(p[0].children, function (b, i) { var m = MODES.filter(function (x) { return dozw.indexOf(x[0]) >= 0; })[i]; U.zaznacz(b, m && m[0] === tr); });
         var h = '', s = EL[sel];
-        for (var per = 1; per <= 5; per++) for (var g = 1; g <= 18; g++) { var e = ORD.map(function (x) { return EL[x]; }).filter(function (x) { return x.p === per && x.g === g; })[0]; if (!e) { h += '<div></div>'; continue; } h += '<button type="button" data-s="' + e.s + '" title="' + e.n + '" style="aspect-ratio:1;min-width:0;padding:0;border:' + (e.s === sel ? '2px solid #0f172a' : '1px solid rgba(100,116,139,.4)') + ';border-radius:5px;background:' + kol(e) + ';color:#0f172a;font:700 11px system-ui;cursor:pointer">' + e.s + '</button>'; }
+        for (var per = 1; per <= 5; per++) for (var g = 1; g <= 18; g++) { var e = ORD.map(function (x) { return EL[x]; }).filter(function (x) { return x.p === per && x.g === g; })[0]; if (!e) { h += '<div></div>'; continue; } var kk = kol(e); h += '<button type="button" data-s="' + e.s + '" title="' + e.n + '" style="aspect-ratio:1;min-width:0;padding:0;border:' + (e.s === sel ? '2px solid var(--text,#0f172a)' : '1px solid var(--border-strong,rgba(100,116,139,.4))') + ';border-radius:5px;background:' + kk + ';color:' + (kk.indexOf('var(') === 0 ? 'var(--text,#0f172a)' : '#0f172a') + ';font:700 11px system-ui;cursor:pointer">' + e.s + '</button>'; }
         grid.innerHTML = h;
         var L = {adres: 'Pomarańczowy: wybrany pierwiastek; żółty: ten sam <b>okres</b> (wiersz = liczba powłok); niebieski: ta sama <b>grupa</b> (kolumna = podobna budowa zewnętrznej powłoki).', blok: 'Blok = typ podpowłoki obsadzanej na końcu: <b>s</b> (grupy 1–2 i He), <b>p</b> (13–18), <b>d</b> (3–12).', wal: 'Elektrony walencyjne w grupach głównych: grupy 1–2 → numer grupy, 13–18 → numer grupy − 10 (He: 2). Szare — metale przejściowe.', r: 'Promień kowalencyjny [pm]: rośnie w dół grupy, maleje w prawo okresu. Ciemniej = większy.', en: 'Elektroujemność (Pauling): rośnie w prawo i w górę. Ciemniej = większa.', ie: 'I energia jonizacji [kJ/mol]: rośnie w prawo i w górę. Ciemniej = większa.', tlenki: 'Charakter typowego tlenku pierwiastka: <span style="background:#dcfce7;padding:0 4px">zasadowy</span> <span style="background:#dbeafe;padding:0 4px">kwasowy</span> <span style="background:#ede9fe;padding:0 4px">amfoteryczny</span> <span style="background:#e2e8f0;padding:0 4px">obojętny</span>.'};
         leg.innerHTML = L[tr];
@@ -2671,7 +2671,7 @@ KLOCKI.def('uklad-okresowy', {
         p[2].innerHTML = 'Nazwa: <b>' + (nm ? DAT.ox[nm].n : nazwa) + '</b>.' + (nm ? ' Charakter: ' + DAT.ox[nm].c + '.' : '') + (s === 'C' && n === 4 ? ' Uwaga: w CO₂ i innych tlenkach tlen ma stopień −II; w nadtlenkach (np. Na₂O₂) jest −I — to nie są tlenki.' : '');
         sw.value = n;
       }
-      function spr() { var v = inp.value.replace(/\s/g, '').replace(/[₀-₉]/g, function (c) { return SUB.indexOf(c); }); var x = 2 / gcd(n, 2), y = n / gcd(n, 2), dob = s + (x > 1 ? x : '') + 'O' + (y > 1 ? y : ''); p[2].innerHTML = (v === dob ? '<b style="color:#16a34a">Dobrze:</b> ' + pf(dob) + '.' : '<b style="color:#dc2626">Nie zgadza się.</b> Spróbuj: krzyżuj wartościowości (' + s + ' ' + RZ[n] + ', O II), potem skróć indeksy.'); }
+      function spr() { var v = inp.value.replace(/\s/g, '').replace(/[₀-₉]/g, function (c) { return SUB.indexOf(c); }); var x = 2 / gcd(n, 2), y = n / gcd(n, 2), dob = s + (x > 1 ? x : '') + 'O' + (y > 1 ? y : ''); p[2].innerHTML = (v === dob ? '<b style="color:var(--c-basic,#2e7d4f)">Dobrze:</b> ' + pf(dob) + '.' : '<b style="color:var(--c-error,#b83a45)">Nie zgadza się.</b> Spróbuj: krzyżuj wartościowości (' + s + ' ' + RZ[n] + ', O II), potem skróć indeksy.'); }
       sel.onchange = function () { s = sel.value; wsw(); rys(); }; sw.onchange = function () { n = +sw.value; rys(); }; wsw(); sw.value = n; rys();
     }
   });
@@ -2711,7 +2711,7 @@ KLOCKI.def('uklad-okresowy', {
         p[1].appendChild(document.createElement('div'));
         var bar = p[1].lastChild; if (pred === null) { bar.appendChild(U.btn('Zachodzi', function () { pred = true; rys(); })); bar.appendChild(U.btn('Nie zachodzi', function () { pred = false; rys(); })); }
         p[2].innerHTML = pred === null ? 'Wskazówka: oprzyj się na charakterze tlenku (' + o.c + '): tlenki zasadowe reagują z kwasami, kwasowe z zasadami, amfoteryczne z jednymi i drugimi; z wodą reagują tylko te, które dają rozpuszczalny wodorotlenek lub kwas.' :
-          (pred === z ? '<b style="color:#16a34a">Przewidywanie trafne.</b> ' : '<b style="color:#dc2626">Przewidywanie chybione.</b> ') + 'Wynik: ' + (z ? '<b>reakcja zachodzi</b>' : '<b>brak reakcji</b>') + ' — ' + txt + '.<br>Sprawdź jeszcze: bilans atomów i ładunku oraz produkty (sól + woda z kwasem lub zasadą; wodorotlenek albo kwas z wodą).';
+          (pred === z ? '<b style="color:var(--c-basic,#2e7d4f)">Przewidywanie trafne.</b> ' : '<b style="color:var(--c-error,#b83a45)">Przewidywanie chybione.</b> ') + 'Wynik: ' + (z ? '<b>reakcja zachodzi</b>' : '<b>brak reakcji</b>') + ' — ' + txt + '.<br>Sprawdź jeszcze: bilans atomów i ładunku oraz produkty (sól + woda z kwasem lub zasadą; wodorotlenek albo kwas z wodą).';
       }
       sel.onchange = function () { k = sel.value; pred = null; rys(); }; rys();
     }
@@ -2748,7 +2748,7 @@ KLOCKI.def('uklad-okresowy', {
       '.che-port .r label{display:flex;gap:6px;align-items:center}.che-port .r input[type=range]{flex:1;min-width:140px;max-width:260px;accent-color:var(--accent,#0d6868)}' +
       '.che-port canvas{width:100%;display:block}' +
       '.che-port button{font:inherit;font-size:13px;padding:5px 11px;border:1px solid var(--border-strong,#94a3b8);border-radius:999px;background:var(--surface,#fff);color:inherit;cursor:pointer}' +
-      '.che-port .note{font-size:13px;line-height:1.5;margin-top:6px;color:var(--muted,#5b6b73)}';
+      '.che-port .note{font-size:13px;line-height:1.5;margin-top:6px;color:var(--text-muted,#5b6b73)}';
     document.head.appendChild(st);
   }
   if (C.VIEW && C.VIEW.define) return;
@@ -2917,8 +2917,8 @@ var RXL=C.RXL={
       var I = C.RXL.info(opc.k), bar = document.createElement('div');
       bar.style.cssText = 'display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:center;margin-top:6px;font-size:13px';
       var b = KLOCKI.ui.btn('▶ start', function () { m.play(); }); bar.appendChild(b);
-      if (I.gas) { var s = document.createElement('span'); s.style.color = 'var(--muted,#5b6b73)'; s.textContent = 'Gaz: ' + I.gas.name + ' — ' + I.gas.test; bar.appendChild(s); }
-      if ((SPECS[opc.k] || {}).teacher) { var t = document.createElement('b'); t.style.color = '#b83a45'; t.textContent = 'pokaz nauczyciela'; bar.appendChild(t); }
+      if (I.gas) { var s = document.createElement('span'); s.style.color = 'var(--text-muted,#5b6b73)'; s.textContent = 'Gaz: ' + I.gas.name + ' — ' + I.gas.test; bar.appendChild(s); }
+      if ((SPECS[opc.k] || {}).teacher) { var t = document.createElement('b'); t.style.color = 'var(--c-error,#b83a45)'; t.textContent = 'pokaz nauczyciela'; bar.appendChild(t); }
       host.appendChild(bar);
     }
   });
@@ -2984,7 +2984,7 @@ var RXL=C.RXL={
       bar.style.cssText = 'display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px'; q.style.cssText = 'margin:8px 0 4px;font-weight:700;font-size:14px';
       wynik.style.cssText = 'margin-top:8px;font-size:14px;line-height:1.5'; scena.style.cssText = 'max-width:300px;margin:0 auto';
       var rb = [], ob = [];
-      function wybierz(i) { cur = i; odp = null; rb.forEach(function (c, j) { U.zaznacz(c, j === i); }); ob.forEach(function (c) { U.zaznacz(c, false); }); scena.innerHTML = ''; wynik.innerHTML = '<span style="color:var(--muted,#5b6b73)">Wybierz przewidywaną obserwację i kliknij „Sprawdź”.</span>'; }
+      function wybierz(i) { cur = i; odp = null; rb.forEach(function (c, j) { U.zaznacz(c, j === i); }); ob.forEach(function (c) { U.zaznacz(c, false); }); scena.innerHTML = ''; wynik.innerHTML = '<span style="color:var(--text-muted,#5b6b73)">Wybierz przewidywaną obserwację i kliknij „Sprawdź”.</span>'; }
       PRZ.forEach(function (p, i) { var c = U.chip(p[1], i === 0, function () { wybierz(i); }); rb.push(c); bar.appendChild(c); });
       q.textContent = 'Co zobaczysz w zlewce?';
       var ob_bar = document.createElement('div'); ob_bar.style.cssText = 'display:flex;flex-wrap:wrap;gap:6px';
@@ -2995,7 +2995,7 @@ var RXL=C.RXL={
         var p = PRZ[cur]; scena.innerHTML = '';
         var m = C.RXL.mount(scena, p[0], {dur: Number(opc.dur) || 6, auto: false}); m.play();
         var ok = odp === p[2];
-        wynik.innerHTML = '<b style="color:' + (ok ? '#15803d' : '#b91c1c') + '">' + (ok ? '✔ Przewidywanie trafne.' : '✘ Inaczej: ' + OBS.filter(function (o) { return o[0] === p[2]; })[0][1] + '.') + '</b><br><b>Równanie:</b> ' + SPECS[p[0]].eq + '<br><span style="color:var(--muted,#5b6b73)">' + p[3] + '</span>';
+        wynik.innerHTML = '<b style="color:' + (ok ? '#15803d' : '#b91c1c') + '">' + (ok ? '✔ Przewidywanie trafne.' : '✘ Inaczej: ' + OBS.filter(function (o) { return o[0] === p[2]; })[0][1] + '.') + '</b><br><b>Równanie:</b> ' + SPECS[p[0]].eq + '<br><span style="color:var(--text-muted,#5b6b73)">' + p[3] + '</span>';
       }));
       host.append(bar, q, ob_bar, sp, scena, wynik); wybierz(0);
     }

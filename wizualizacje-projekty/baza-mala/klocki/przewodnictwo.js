@@ -36,7 +36,7 @@
       host.style.display = 'block';
       var bar = document.createElement('div'), row = document.createElement('div'), note = document.createElement('div'), eq = document.createElement('div');
       row.style.cssText = 'display:flex;flex-wrap:wrap;gap:8px;align-items:flex-start';
-      bar.style.cssText = 'margin-bottom:6px'; note.style.cssText = 'font-size:14px;margin-top:8px'; eq.style.cssText = 'font-size:13px;margin-top:4px;color:var(--muted,#5b6b73)';
+      bar.style.cssText = 'margin-bottom:6px'; note.style.cssText = 'font-size:14px;margin-top:8px'; eq.style.cssText = 'font-size:13px;margin-top:4px;color:var(--text-muted,#5b6b73)';
       function mk(w, h, flex) { var cv = document.createElement('canvas'); cv.style.cssText = 'flex:' + flex + ' 1 ' + w * .7 + 'px;min-width:0;width:' + (flex ? '' : '') + '100%;max-width:' + w * 1.3 + 'px;height:auto;aspect-ratio:' + w + '/' + h + ';border-radius:10px;background:var(--surface-soft,#f6f8fa)'; return cv; }
       var W1 = 340, H1 = 300, W2 = 280, H2 = 300, c1 = mk(W1, H1, 3), c2 = mk(W2, H2, 2), d = Math.min(2, window.devicePixelRatio || 1);
       [[c1, W1, H1], [c2, W2, H2]].forEach(function (a) { a[0].width = a[1] * d; a[0].height = a[2] * d; });

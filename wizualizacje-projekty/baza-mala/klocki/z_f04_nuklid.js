@@ -23,7 +23,7 @@ V.define('f04-nuklid-v01',{title:'Trening: odczytaj zapis nuklidu i policz p, n,
   function spr(){var z=ZAD[order[i]],p=z[1],n=z[2]-z[1],e=z[1]-z[3],dob={p:p,n:n,e:e},trafione=0;
    Object.keys(pola).forEach(function(k){var good=+pola[k].value===dob[k]&&pola[k].value!=='';pola[k].style.borderColor=good?'#16a34a':'#dc2626';if(good)trafione++});
    all++;if(trafione===3)ok++;licz();
-   wyn.innerHTML=(trafione===3?'<b style="color:#16a34a">Dobrze!</b> ':'<b style="color:#dc2626">Sprawdź jeszcze raz.</b> ')+
+   wyn.innerHTML=(trafione===3?'<b style="color:var(--c-basic,#2e7d4f)">Dobrze!</b> ':'<b style="color:var(--c-error,#b83a45)">Sprawdź jeszcze raz.</b> ')+
     'p = Z = <b>'+p+'</b> · n = A − Z = '+z[2]+' − '+p+' = <b>'+n+'</b> · e = Z − ładunek = '+p+(z[3]?(z[3]>0?' − ':' + ')+Math.abs(z[3]):' − 0')+' = <b>'+e+'</b>'+
     (z[3]?'<br>'+(z[3]>0?'Kation: atom <b>oddał</b> '+z[3]+' e⁻ — elektronów jest mniej niż protonów.':'Anion: atom <b>przyjął</b> '+(-z[3])+' e⁻ — elektronów jest więcej niż protonów.'):'<br>Atom obojętny: elektronów tyle, ile protonów.');
    var AB=C.LAB&&C.LAB.atomBohr;if(AB&&AB.anim){pic.innerHTML='<canvas width="520" height="520" style="width:100%;max-width:300px;display:block;margin:auto;border-radius:12px" role="img" aria-label="Model atomu: '+p+' p, '+n+' n, '+e+' e"></canvas>';if(stop)stop();stop=AB.anim(pic.firstChild,{p:p,n:n,e:e,lupa:true,zoom:1.3})}}

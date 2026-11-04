@@ -46,7 +46,7 @@
       function rys() {
         [].forEach.call(p[0].children, function (b, i) { var m = MODES.filter(function (x) { return dozw.indexOf(x[0]) >= 0; })[i]; U.zaznacz(b, m && m[0] === tr); });
         var h = '', s = EL[sel];
-        for (var per = 1; per <= 5; per++) for (var g = 1; g <= 18; g++) { var e = ORD.map(function (x) { return EL[x]; }).filter(function (x) { return x.p === per && x.g === g; })[0]; if (!e) { h += '<div></div>'; continue; } h += '<button type="button" data-s="' + e.s + '" title="' + e.n + '" style="aspect-ratio:1;min-width:0;padding:0;border:' + (e.s === sel ? '2px solid #0f172a' : '1px solid rgba(100,116,139,.4)') + ';border-radius:5px;background:' + kol(e) + ';color:#0f172a;font:700 11px system-ui;cursor:pointer">' + e.s + '</button>'; }
+        for (var per = 1; per <= 5; per++) for (var g = 1; g <= 18; g++) { var e = ORD.map(function (x) { return EL[x]; }).filter(function (x) { return x.p === per && x.g === g; })[0]; if (!e) { h += '<div></div>'; continue; } var kk = kol(e); h += '<button type="button" data-s="' + e.s + '" title="' + e.n + '" style="aspect-ratio:1;min-width:0;padding:0;border:' + (e.s === sel ? '2px solid var(--text,#0f172a)' : '1px solid var(--border-strong,rgba(100,116,139,.4))') + ';border-radius:5px;background:' + kk + ';color:' + (kk.indexOf('var(') === 0 ? 'var(--text,#0f172a)' : '#0f172a') + ';font:700 11px system-ui;cursor:pointer">' + e.s + '</button>'; }
         grid.innerHTML = h;
         var L = {adres: 'Pomarańczowy: wybrany pierwiastek; żółty: ten sam <b>okres</b> (wiersz = liczba powłok); niebieski: ta sama <b>grupa</b> (kolumna = podobna budowa zewnętrznej powłoki).', blok: 'Blok = typ podpowłoki obsadzanej na końcu: <b>s</b> (grupy 1–2 i He), <b>p</b> (13–18), <b>d</b> (3–12).', wal: 'Elektrony walencyjne w grupach głównych: grupy 1–2 → numer grupy, 13–18 → numer grupy − 10 (He: 2). Szare — metale przejściowe.', r: 'Promień kowalencyjny [pm]: rośnie w dół grupy, maleje w prawo okresu. Ciemniej = większy.', en: 'Elektroujemność (Pauling): rośnie w prawo i w górę. Ciemniej = większa.', ie: 'I energia jonizacji [kJ/mol]: rośnie w prawo i w górę. Ciemniej = większa.', tlenki: 'Charakter typowego tlenku pierwiastka: <span style="background:#dcfce7;padding:0 4px">zasadowy</span> <span style="background:#dbeafe;padding:0 4px">kwasowy</span> <span style="background:#ede9fe;padding:0 4px">amfoteryczny</span> <span style="background:#e2e8f0;padding:0 4px">obojętny</span>.'};
         leg.innerHTML = L[tr];
@@ -79,7 +79,7 @@
         p[2].innerHTML = 'Nazwa: <b>' + (nm ? DAT.ox[nm].n : nazwa) + '</b>.' + (nm ? ' Charakter: ' + DAT.ox[nm].c + '.' : '') + (s === 'C' && n === 4 ? ' Uwaga: w CO₂ i innych tlenkach tlen ma stopień −II; w nadtlenkach (np. Na₂O₂) jest −I — to nie są tlenki.' : '');
         sw.value = n;
       }
-      function spr() { var v = inp.value.replace(/\s/g, '').replace(/[₀-₉]/g, function (c) { return SUB.indexOf(c); }); var x = 2 / gcd(n, 2), y = n / gcd(n, 2), dob = s + (x > 1 ? x : '') + 'O' + (y > 1 ? y : ''); p[2].innerHTML = (v === dob ? '<b style="color:#16a34a">Dobrze:</b> ' + pf(dob) + '.' : '<b style="color:#dc2626">Nie zgadza się.</b> Spróbuj: krzyżuj wartościowości (' + s + ' ' + RZ[n] + ', O II), potem skróć indeksy.'); }
+      function spr() { var v = inp.value.replace(/\s/g, '').replace(/[₀-₉]/g, function (c) { return SUB.indexOf(c); }); var x = 2 / gcd(n, 2), y = n / gcd(n, 2), dob = s + (x > 1 ? x : '') + 'O' + (y > 1 ? y : ''); p[2].innerHTML = (v === dob ? '<b style="color:var(--c-basic,#2e7d4f)">Dobrze:</b> ' + pf(dob) + '.' : '<b style="color:var(--c-error,#b83a45)">Nie zgadza się.</b> Spróbuj: krzyżuj wartościowości (' + s + ' ' + RZ[n] + ', O II), potem skróć indeksy.'); }
       sel.onchange = function () { s = sel.value; wsw(); rys(); }; sw.onchange = function () { n = +sw.value; rys(); }; wsw(); sw.value = n; rys();
     }
   });
@@ -119,7 +119,7 @@
         p[1].appendChild(document.createElement('div'));
         var bar = p[1].lastChild; if (pred === null) { bar.appendChild(U.btn('Zachodzi', function () { pred = true; rys(); })); bar.appendChild(U.btn('Nie zachodzi', function () { pred = false; rys(); })); }
         p[2].innerHTML = pred === null ? 'Wskazówka: oprzyj się na charakterze tlenku (' + o.c + '): tlenki zasadowe reagują z kwasami, kwasowe z zasadami, amfoteryczne z jednymi i drugimi; z wodą reagują tylko te, które dają rozpuszczalny wodorotlenek lub kwas.' :
-          (pred === z ? '<b style="color:#16a34a">Przewidywanie trafne.</b> ' : '<b style="color:#dc2626">Przewidywanie chybione.</b> ') + 'Wynik: ' + (z ? '<b>reakcja zachodzi</b>' : '<b>brak reakcji</b>') + ' — ' + txt + '.<br>Sprawdź jeszcze: bilans atomów i ładunku oraz produkty (sól + woda z kwasem lub zasadą; wodorotlenek albo kwas z wodą).';
+          (pred === z ? '<b style="color:var(--c-basic,#2e7d4f)">Przewidywanie trafne.</b> ' : '<b style="color:var(--c-error,#b83a45)">Przewidywanie chybione.</b> ') + 'Wynik: ' + (z ? '<b>reakcja zachodzi</b>' : '<b>brak reakcji</b>') + ' — ' + txt + '.<br>Sprawdź jeszcze: bilans atomów i ładunku oraz produkty (sól + woda z kwasem lub zasadą; wodorotlenek albo kwas z wodą).';
       }
       sel.onchange = function () { k = sel.value; pred = null; rys(); }; rys();
     }

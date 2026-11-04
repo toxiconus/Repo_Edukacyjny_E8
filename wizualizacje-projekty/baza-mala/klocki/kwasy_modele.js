@@ -75,7 +75,7 @@
         o1.textContent = fmt(cb, 2) + ' mol/dm³'; o2.textContent = fmt(ratio, 2);
         var xx = n * drop, ha = B0.HA + xx, a = B0.A - xx, cap = Math.min(ha, a) / Math.max(B0.HA, B0.A);
         info.innerHTML = '<b>Woda:</b> pH = ' + fmt(pw, 2) + ' · <b>Bufor:</b> pH = ' + fmt(pb, 2) + ' (pK<sub>a</sub> = ' + fmt(pKa, 2) + ') · pozostała pojemność buforu: <b>' + Math.round(Math.max(0, cap) * 100) + '%</b>' +
-          '<br><span style="color:var(--muted,#5b6b73)">Kropla = 0,05 cm³ 1 M w 100 cm³ roztworu. H⁺ reaguje z octanem: CH₃COO⁻ + H₃O⁺ → CH₃COOH + H₂O; OH⁻ z kwasem: CH₃COOH + OH⁻ → CH₃COO⁻ + H₂O. Gdy jednego składnika zabraknie, bufor przestaje działać i pH zmienia się gwałtownie.</span>';
+          '<br><span style="color:var(--text-muted,#5b6b73)">Kropla = 0,05 cm³ 1 M w 100 cm³ roztworu. H⁺ reaguje z octanem: CH₃COO⁻ + H₃O⁺ → CH₃COOH + H₂O; OH⁻ z kwasem: CH₃COOH + OH⁻ → CH₃COO⁻ + H₂O. Gdy jednego składnika zabraknie, bufor przestaje działać i pH zmienia się gwałtownie.</span>';
         wykres();
       }
       host.append(bar, zl, sl, cv, info); reset(); rys(); setTimeout(rys, 60);
@@ -110,12 +110,12 @@
             '<path d="M' + (x + 2) + ' 60 v48 q0 11 8 11 q8 0 8 -11 v-48z" fill="' + kol + '" opacity=".92"/>' +
             (rev ? '' : '<text x="' + (x + 10) + '" y="95" text-anchor="middle" font-size="16" font-weight="700" fill="#64748b">?</text>') +
             '<text x="' + (x + 10) + '" y="140" text-anchor="middle" font-size="9" fill="var(--text,#0f172a)">' + r[0].split(' ')[0] + '</text>' + (r[0].indexOf(' ') > 0 ? '<text x="' + (x + 10) + '" y="150" text-anchor="middle" font-size="9" fill="var(--text,#0f172a)">' + r[0].split(' ').slice(1).join(' ') + '</text>' : '') +
-            (rev ? '<text x="' + (x + 10) + '" y="164" text-anchor="middle" font-size="8" font-weight="700" fill="var(--muted,#64748b)">pH ' + fmt(r[1], 1) + '</text>' : '') + '</g>';
+            (rev ? '<text x="' + (x + 10) + '" y="164" text-anchor="middle" font-size="8" font-weight="700" fill="var(--text-muted,#64748b)">pH ' + fmt(r[1], 1) + '</text>' : '') + '</g>';
         }).join('') + '</svg>';
         [].forEach.call(sc.querySelectorAll('g[data-i]'), function (g) { g.onclick = function () { odkryte[g.getAttribute('data-i')] = 1; rys(); }; });
         var n = Object.keys(odkryte).length;
         info.innerHTML = '<b>Wskaźnik: ' + W[wk][0] + '.</b> ' + (przewiduj ? (n < 7 ? 'Najpierw przewidź barwę w każdej probówce, potem kliknij ją (' + n + '/7).' : 'Wszystkie odkryte — porównaj z przewidywaniem.') : 'Barwy wszystkich roztworów.') +
-          '<br><span style="color:var(--muted,#5b6b73)">' + (wk === 'phph' ? 'Fenoloftaleina jest malinowa tylko w zasadach (pH > 8,2); w kwasach i w roztworach obojętnych — bezbarwna.' : wk === 'oranz' ? 'Oranż metylowy: czerwony poniżej pH 3,1, żółty powyżej 4,4 — odróżnia mocny kwas od reszty.' : 'Wskaźnik uniwersalny: od czerwonego (mocne kwasy) przez zielony (obojętny) do fioletowego (mocne zasady).') + '</span>';
+          '<br><span style="color:var(--text-muted,#5b6b73)">' + (wk === 'phph' ? 'Fenoloftaleina jest malinowa tylko w zasadach (pH > 8,2); w kwasach i w roztworach obojętnych — bezbarwna.' : wk === 'oranz' ? 'Oranż metylowy: czerwony poniżej pH 3,1, żółty powyżej 4,4 — odróżnia mocny kwas od reszty.' : 'Wskaźnik uniwersalny: od czerwonego (mocne kwasy) przez zielony (obojętny) do fioletowego (mocne zasady).') + '</span>';
         Object.keys(chips).forEach(function (k) { U().zaznacz(chips[k], k === wk); });
       }
       Object.keys(W).forEach(function (k) { chips[k] = U().chip(W[k][0], k === wk, function () { wk = k; rys(); }); bar.appendChild(chips[k]); });
@@ -136,9 +136,9 @@
       KAT.map(function (c, i) {
         var d = g(c[1], q), nc = q / d, na = c[1] / d, sym = c[0] === 'NH4' ? 'NH₄' : c[0], r = w.charAt(i), nm = a[0].length > 2 && na > 1;
         var f = (nc > 1 && c[0] === 'NH4' ? '(' + sym + ')' : sym) + (nc > 1 ? SUBD[nc] : '') + (nm ? '(' + a[0] + ')' : a[0]) + (na > 1 ? SUBD[na] : '');
-        var col = r === 'R' ? '#2e7d4f' : r === 'N' ? '#b83a45' : r === 'T' ? '#b06f1c' : '#64748b';
+        var col = r === 'R' ? 'var(--c-basic,#2e7d4f)' : r === 'N' ? 'var(--c-error,#b83a45)' : r === 'T' ? 'var(--c-warn,#b06f1c)' : 'var(--text-muted,#64748b)';
         return '<tr><td style="padding:2px 8px"><b>' + f + '</b></td><td style="padding:2px 8px">' + a[1] + ' ' + c[2] + '</td><td align="center" style="padding:2px 8px;color:' + col + ';font-weight:800">' + (r === '-' ? '—' : r) + '</td></tr>';
-      }).join('') + '</table><div style="font-size:12px;color:var(--muted,#5b6b73);margin-top:4px">R — rozpuszczalna · T — trudno · N — nierozpuszczalna · — nie istnieje w wodzie. Wzór soli: ładunki kationu i reszty muszą się równoważyć.</div>';
+      }).join('') + '</table><div style="font-size:12px;color:var(--text-muted,#5b6b73);margin-top:4px">R — rozpuszczalna · T — trudno · N — nierozpuszczalna · — nie istnieje w wodzie. Wzór soli: ładunki kationu i reszty muszą się równoważyć.</div>';
   }
   var KLUCZ = ['Cl', 'SO4', 'NO3', 'PO4', 'CO3', 'CH3COO', 'SO3', 'S'], LAD = [1, 2, 1, 3, 2, 1, 2, 2];
   KLOCKI.def('kwasy-reszty', {
@@ -152,12 +152,12 @@
         chips.forEach(function (c, j) { U().zaznacz(c, j === i); });
         var mocny = k[6] === 'mocny';
         card.innerHTML = '<div style="font-size:20px"><b>' + k[0] + '</b> — ' + k[1] + '</div>' +
-          '<div><b>Typ:</b> ' + k[2] + ' · <b>Moc:</b> <span style="color:' + (mocny ? '#b91c1c' : '#0f766e') + ';font-weight:700">' + k[6] + '</span></div>' +
-          '<div><b>Reszta kwasowa:</b> ' + k[3] + ' <span style="color:var(--muted,#5b6b73)">(ładunek ' + k[4] + ' = liczba atomów H oddawanych w skrócie)</span></div>' +
+          '<div><b>Typ:</b> ' + k[2] + ' · <b>Moc:</b> <span style="color:' + (mocny ? 'var(--c-error,#b91c1c)' : 'var(--c-new,#0f766e)') + ';font-weight:700">' + k[6] + '</span></div>' +
+          '<div><b>Reszta kwasowa:</b> ' + k[3] + ' <span style="color:var(--text-muted,#5b6b73)">(ładunek ' + k[4] + ' = liczba atomów H oddawanych w skrócie)</span></div>' +
           '<div><b>Dysocjacja:</b> ' + k[5] + '</div><div><b>Sól sodowa:</b> ' + k[7] + '</div><div><b>Zastosowanie:</b> ' + k[8] + '</div>' +
           '<details style="margin-top:6px"><summary style="cursor:pointer;font-weight:700">Sole z 16 kationami: wzór, nazwa, rozpuszczalność</summary>' + sol(KLUCZ[i], LAD[i]) + '</details>';
       }
-      KW.forEach(function (k, i) { if (i === 6) bar.appendChild(E('span', 'font-size:12px;color:var(--muted,#5b6b73);margin:0 4px 0 8px', 'dodatkowo (rozszerzenie):')); var c = U().chip(k[0], i === 0, function () { pokaz(i); }); chips.push(c); bar.appendChild(c); });
+      KW.forEach(function (k, i) { if (i === 6) bar.appendChild(E('span', 'font-size:12px;color:var(--text-muted,#5b6b73);margin:0 4px 0 8px', 'dodatkowo (rozszerzenie):')); var c = U().chip(k[0], i === 0, function () { pokaz(i); }); chips.push(c); bar.appendChild(c); });
       host.append(bar, card); pokaz(0);
     }
   });

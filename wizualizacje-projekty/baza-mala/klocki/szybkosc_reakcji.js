@@ -26,7 +26,7 @@
       var run = null, runs = [], nRun = 0, S = {V: 0, t: 0, on: false, rate: 0}, bubs = [];
       var ctrl = E('div', 'margin-bottom:6px'), chM = E('div'), chF = E('div'), chK = E('div');
       var scene = E('div', 'flex:1 1 260px;min-width:0'), chart = E('div', 'flex:1 1 280px;min-width:0'), row = E('div', 'display:flex;flex-wrap:wrap;gap:10px;align-items:flex-start');
-      var note = E('div', 'font-size:13px;margin-top:6px;border:1px solid var(--border,#cbd5e1);border-radius:10px;padding:8px 10px;line-height:1.5'), leg = E('div', 'font-size:12px;margin-top:4px;color:var(--muted,#64748b)');
+      var note = E('div', 'font-size:13px;margin-top:6px;border:1px solid var(--border,#cbd5e1);border-radius:10px;padding:8px 10px;line-height:1.5'), leg = E('div', 'font-size:12px;margin-top:4px;color:var(--text-muted,#64748b)');
       var cv = E('canvas', 'width:100%;height:240px;display:block;border-radius:10px;background:var(--surface-soft,#f6f8fa)');
       var sv = E('div'); scene.appendChild(sv); chart.append(cv, leg); row.append(scene, chart);
       function mkM() { chM.innerHTML = ''; Object.keys(METAL).forEach(function (k) { chM.appendChild(U().chip(k + ' · ' + METAL[k].n, st.metal === k, function () { st.metal = k; mkM(); upd(); })); }); }
@@ -62,7 +62,7 @@
           pcs += '<circle cx="' + px + '" cy="' + py + '" r="' + Math.max(.6, rr).toFixed(1) + '" fill="' + me.col + '" stroke="rgba(0,0,0,.25)" stroke-width=".6"/>';
         }
         var bb = bubs.map(function (b) { return '<circle cx="' + b.x.toFixed(1) + '" cy="' + b.y.toFixed(1) + '" r="' + b.r + '" fill="rgba(255,255,255,.55)" stroke="var(--border-strong,#64748b)" stroke-width=".7"/>'; }).join('');
-        var ticks = ''; for (var j = 0; j <= 4; j++) { var ty = 70 + 130 * j / 4; ticks += '<line x1="238" y1="' + ty + '" x2="248" y2="' + ty + '" stroke="var(--muted,#64748b)"/><text x="252" y="' + (ty + 3) + '" font-size="9" fill="var(--text,#0f172a)">' + Math.round(mx * (1 - j / 4)) + '</text>'; }
+        var ticks = ''; for (var j = 0; j <= 4; j++) { var ty = 70 + 130 * j / 4; ticks += '<line x1="238" y1="' + ty + '" x2="248" y2="' + ty + '" stroke="var(--text-muted,#64748b)"/><text x="252" y="' + (ty + 3) + '" font-size="9" fill="var(--text,#0f172a)">' + Math.round(mx * (1 - j / 4)) + '</text>'; }
         sv.innerHTML = '<svg viewBox="0 0 300 250" style="width:100%;max-width:380px;display:block;margin:0 auto" role="img" aria-label="Kolba z metalem w HCl i cylinder do zbierania wodoru">' +
           '<path d="M52 120 L52 224 Q52 236 64 236 L128 236 Q140 236 140 224 L140 120 L126 96 L126 80 L66 80 L66 96 Z" fill="none" stroke="var(--border-strong,#64748b)" stroke-width="2.5" stroke-linejoin="round"/>' +
           '<path d="M55 150 L55 224 Q55 233 64 233 L128 233 Q137 233 137 224 L137 150 Z" fill="rgba(147,197,253,.28)"/>' +

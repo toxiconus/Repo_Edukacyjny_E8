@@ -3,7 +3,7 @@
 ⚠ = ponad 50 KB: tylko `grep -n` + `sed -n a,bp`. ⛔ = nie czytać (wynik builda / zamrożone / historia).
 Pominięte: .specstory/, .vscode/, .claude/
 
-## .  (19 pl., 565 KB)
+## .  (19 pl., 566 KB)
 - (zwinięte; `ls .`) — duże:
 - ⚠`INDEKS.html` 59 KB
 - ⚠`SPIS_WSZYSTKICH.md` 61 KB
@@ -189,7 +189,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (17 pl., 208 KB)
+## chemia/che-modular  (17 pl., 210 KB)
 - (zwinięte; `ls chemia/che-modular`) — duże:
 - ⚠`PROGRESS.md` 72 KB
 
@@ -553,7 +553,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 
 ## chemia/html  (128 pl., 16.8 MB)
 - (zwinięte; `ls chemia/html`) — duże:
-- ⚠`C1c_konfiguracje_elektronowe.html` 260 KB
+- ⚠`C1c_konfiguracje_elektronowe.html` 261 KB
 - ⚠`C2m_mol_masa_molowa.html` 119 KB
 - ⚠`C2w_wzor_elementarny_rzeczywisty.html` 178 KB
 - ⚠`C3_rownania_i_obliczenia_z_rownan.html` 118 KB

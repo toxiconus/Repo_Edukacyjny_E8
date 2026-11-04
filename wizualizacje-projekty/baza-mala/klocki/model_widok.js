@@ -9,7 +9,7 @@
       '.che-port .r label{display:flex;gap:6px;align-items:center}.che-port .r input[type=range]{flex:1;min-width:140px;max-width:260px;accent-color:var(--accent,#0d6868)}' +
       '.che-port canvas{width:100%;display:block}' +
       '.che-port button{font:inherit;font-size:13px;padding:5px 11px;border:1px solid var(--border-strong,#94a3b8);border-radius:999px;background:var(--surface,#fff);color:inherit;cursor:pointer}' +
-      '.che-port .note{font-size:13px;line-height:1.5;margin-top:6px;color:var(--muted,#5b6b73)}';
+      '.che-port .note{font-size:13px;line-height:1.5;margin-top:6px;color:var(--text-muted,#5b6b73)}';
     document.head.appendChild(st);
   }
   if (C.VIEW && C.VIEW.define) return;

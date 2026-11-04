@@ -17,6 +17,15 @@ Kod: `engine/src/gfx/wspolne/styl/styl-tokeny.js` (`CHE.GFX.STYL`). Kontrola: `p
 9. **Opis słowny** `@opis` przy każdym rysunku (wymóg buildu).
 10. **Zakres:** rysunek pokazuje tylko to, co potrzebne do zrozumienia; treść poza zakresem LKO oznaczona w rysunku.
 
+## Zasady dla klocków HTML/SVG (dodane 2026-11-04, po audycie ciemnego motywu)
+
+11. **Tokeny motywu lekcji** (z `szablon/baza.css`): `--bg`, `--surface`, `--surface-soft`, `--border`, `--border-strong`, `--text`, `--text-soft`, `--text-muted`, `--accent`, `--accent-soft`, `--c-basic` (zielony), `--c-warn`, `--c-error`, `--c-new`. Nie wymyślać własnych nazw (`--muted`, `--ink` nie istnieją i dają stały kolor — w ciemnym motywie nieczytelny). Zawsze z fallbackiem: `var(--text-muted,#8892a0)`.
+12. **Tekst na akcencie** (aktywny chip, przycisk): `var(--bg,#fff)`, nie sztywne `#fff` — w ciemnym motywie akcent jest jasny.
+13. **Kolor znaczenia w tekście** (błąd, sukces, uwaga): `--c-error`, `--c-basic`, `--c-warn`; sztywne `#dc2626` / `#16a34a` tylko jako fallback.
+14. **SVG**: kolory interfejsu (kontur szkła, stojaki, podłoże) przez `style="stroke:var(--text-muted)"` (atrybutu `stroke` nie da się tokenizować); kolory substancji zostają realistyczne (reguła 3).
+15. **Pastelowe tła z kolorowaniem danych** (układ okresowy, tabele): tekst `#0f172a` na pastelu; na polu bez koloru (token tła) — `var(--text)`.
+16. **Kontrola:** `narzedzia/test_kontrast_klockow.js` (Playwright) otwiera lekcje w ciemnym motywie i liczy elementy tekstu o kontraście < 3; wynik ma być 0.
+
 ## Stan (z `STYL_RAPORT.md`)
 
 Chemia używa palety niebiesko-szarej, biologia własnej, ziemistej (`bio-viz.js`), fizyka trzeciej; grubości linii skaczą między 0,8 a 3 px. Największe odstępstwa: `lekcja/rozszerzenia.js` (wiele widoków w jednym pliku), `bio-viz.js`, prototyp R4, `acid-rain-v01`, `fiz-przewodniki-v01`, `kw-dysocjacja-v01`.

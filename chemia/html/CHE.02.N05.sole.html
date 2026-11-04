@@ -652,9 +652,9 @@ body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
 :root{--lab:#0e2326;--lab-tekst:var(--text,#1a2332);--lab-cisza:var(--text-muted,#8892a0);--lab-linia:var(--border,#e5e9ee)}
 .lab{background:var(--surface,#fff);color:var(--text,#1a2332);border:1px solid var(--border,#e5e9ee);border-radius:var(--r-lg,14px);padding:16px;box-shadow:var(--sh-sm,none);font-family:var(--tekst,Inter,system-ui,sans-serif)}
 .lab-pasek{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between;margin-bottom:12px}
-.lab-pasek .btn{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+.lab-pasek .btn{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:var(--bg,#fff)}
 .lab-cisza{color:var(--text-muted,#8892a0);font-size:14px}
-.btn{appearance:none;cursor:pointer;border:1px solid var(--accent,#0d6868);background:var(--accent,#0d6868);color:#fff;border-radius:var(--r-md,10px);padding:8px 14px;font:600 13px var(--tekst,Inter,sans-serif)}
+.btn{appearance:none;cursor:pointer;border:1px solid var(--accent,#0d6868);background:var(--accent,#0d6868);color:var(--bg,#fff);border-radius:var(--r-md,10px);padding:8px 14px;font:600 13px var(--tekst,Inter,sans-serif)}
 .btn.jasny{background:var(--surface,#fff);color:var(--accent,#0d6868)}
 .btn:hover{filter:brightness(1.08)}
 .btn:focus-visible{outline:2px solid var(--accent,#0d6868);outline-offset:2px}
@@ -695,7 +695,7 @@ body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
 .wyb-lista{display:grid;gap:6px;margin:6px 0 8px;padding:8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-md,10px);background:var(--surface,#fff)}
 .wyb-g{display:block;font-size:11px;color:var(--text-muted,#8892a0);margin-bottom:3px}
 .wyb-sy{appearance:none;cursor:pointer;border:1px solid var(--border-strong,#cdd5dd);background:var(--surface-soft,#f6f8fa);color:var(--text,#1a2332);border-radius:var(--r-sm,6px);padding:4px 9px;margin:0 4px 4px 0;font:600 13px var(--naglowek,Inter,sans-serif)}
-.wyb-sy[aria-pressed="true"]{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+.wyb-sy[aria-pressed="true"]{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:var(--bg,#fff)}
 /* telefon: kilka stojaków obok siebie — węższy tekst, łamanie długich nazw */
 .kol{min-width:0}
 .kol b{overflow-wrap:anywhere;min-width:0}
@@ -706,7 +706,7 @@ body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
 @media (max-width:480px){.st-opis .obs{font-size:12.5px}.st .btn,.rack-ce .btn{padding:5px 8px;font-size:12px}}
 .seria-przyciski{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
 .seria-btn[aria-pressed="false"]{background:transparent;color:var(--accent,#0d6868)}
-.seria-btn[aria-pressed="true"]{background:var(--accent,#0d6868);color:#fff}
+.seria-btn[aria-pressed="true"]{background:var(--accent,#0d6868);color:var(--bg,#fff)}
 .seria-opis{margin:0 0 10px;font-size:14px;color:var(--lab-cisza,#8892a0)}
 
 
@@ -1838,7 +1838,7 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
     BTN: BTN,
     btn: function (t, f, tytul) { var b = document.createElement('button'); b.type = 'button'; b.style.cssText = BTN; b.innerHTML = t; if (tytul) b.title = tytul; b.addEventListener('click', f); return b; },
     chip: function (t, on, f) { var b = ui.btn(t, f); ui.zaznacz(b, on); return b; },
-    zaznacz: function (b, on) { b.style.background = on ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)'; b.style.color = on ? '#fff' : 'inherit'; b.style.borderColor = on ? 'var(--accent,#0d6868)' : 'var(--border-strong,#94a3b8)'; },
+    zaznacz: function (b, on) { b.style.background = on ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)'; b.style.color = on ? 'var(--bg,#fff)' : 'inherit'; b.style.borderColor = on ? 'var(--accent,#0d6868)' : 'var(--border-strong,#94a3b8)'; },
     suwak: function (et, mn, mx, st, w, f) {
       var l = document.createElement('label'); l.style.cssText = 'display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:14px;margin:4px 0';
       l.innerHTML = '<span style="min-width:120px">' + et + '</span><input type="range" min="' + mn + '" max="' + mx + '" step="' + st + '" value="' + w + '" style="flex:1;min-width:140px;accent-color:var(--accent,#0d6868)"><b class="sv" style="min-width:64px"></b>';
@@ -1874,7 +1874,7 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
       '.che-port .r label{display:flex;gap:6px;align-items:center}.che-port .r input[type=range]{flex:1;min-width:140px;max-width:260px;accent-color:var(--accent,#0d6868)}' +
       '.che-port canvas{width:100%;display:block}' +
       '.che-port button{font:inherit;font-size:13px;padding:5px 11px;border:1px solid var(--border-strong,#94a3b8);border-radius:999px;background:var(--surface,#fff);color:inherit;cursor:pointer}' +
-      '.che-port .note{font-size:13px;line-height:1.5;margin-top:6px;color:var(--muted,#5b6b73)}';
+      '.che-port .note{font-size:13px;line-height:1.5;margin-top:6px;color:var(--text-muted,#5b6b73)}';
     document.head.appendChild(st);
   }
   if (C.VIEW && C.VIEW.define) return;
@@ -2207,7 +2207,7 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
       host.style.display = 'block';
       var bar = document.createElement('div'), row = document.createElement('div'), note = document.createElement('div'), eq = document.createElement('div');
       row.style.cssText = 'display:flex;flex-wrap:wrap;gap:8px;align-items:flex-start';
-      bar.style.cssText = 'margin-bottom:6px'; note.style.cssText = 'font-size:14px;margin-top:8px'; eq.style.cssText = 'font-size:13px;margin-top:4px;color:var(--muted,#5b6b73)';
+      bar.style.cssText = 'margin-bottom:6px'; note.style.cssText = 'font-size:14px;margin-top:8px'; eq.style.cssText = 'font-size:13px;margin-top:4px;color:var(--text-muted,#5b6b73)';
       function mk(w, h, flex) { var cv = document.createElement('canvas'); cv.style.cssText = 'flex:' + flex + ' 1 ' + w * .7 + 'px;min-width:0;width:' + (flex ? '' : '') + '100%;max-width:' + w * 1.3 + 'px;height:auto;aspect-ratio:' + w + '/' + h + ';border-radius:10px;background:var(--surface-soft,#f6f8fa)'; return cv; }
       var W1 = 340, H1 = 300, W2 = 280, H2 = 300, c1 = mk(W1, H1, 3), c2 = mk(W2, H2, 2), d = Math.min(2, window.devicePixelRatio || 1);
       [[c1, W1, H1], [c2, W2, H2]].forEach(function (a) { a[0].width = a[1] * d; a[0].height = a[2] * d; });
@@ -2370,12 +2370,12 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
         chips.forEach(function (c) { U.zaznacz(c.el, c.t === cur[0] && c.id === cur[1]); });
         var kat = cur[0] === 'c', id = cur[1], ion = (kat ? cats : ani)[id].ion, q = kat ? D.qc[id] : ani[id].q, par = [];
         (kat ? D.anions : D.cations).forEach(function (x) { var s = kat ? D.table[x.id][id] : D.table[id][x.id]; if (s === 'N' || s === 'T') par.push('<b>' + x.ion + '</b> (' + (s === 'N' ? 'osad' : 'trudno rozp.') + ')'); });
-        card.innerHTML = '<div style="font-size:22px"><b>' + ion + '</b> <span style="font-size:14px;color:var(--muted,#5b6b73)">' + (kat ? 'kation' : 'anion') + ' · ładunek ' + (kat ? '+' + q : q) + '</span></div>' +
+        card.innerHTML = '<div style="font-size:22px"><b>' + ion + '</b> <span style="font-size:14px;color:var(--text-muted,#5b6b73)">' + (kat ? 'kation' : 'anion') + ' · ładunek ' + (kat ? '+' + q : q) + '</span></div>' +
           '<div><b>Pochodzenie:</b> ' + (POCH[id] || '—') + '</div><div><b>Wykrywanie:</b> ' + (DET[id] || '—') + '</div>' +
           '<div><b>Tworzy osad z:</b> ' + (par.length ? par.join(', ') : 'prawie nic — jego sole są rozpuszczalne') + '</div>' +
-          '<div style="color:var(--muted,#5b6b73);font-size:13px;margin-top:4px">Bilans: aby powstała obojętna sól, ładunki kationu i anionu muszą się równoważyć (np. Ca²⁺ + 2 Cl⁻ → CaCl₂).</div>';
+          '<div style="color:var(--text-muted,#5b6b73);font-size:13px;margin-top:4px">Bilans: aby powstała obojętna sól, ładunki kationu i anionu muszą się równoważyć (np. Ca²⁺ + 2 Cl⁻ → CaCl₂).</div>';
       }
-      function mk(host2, list, t, lab) { var l = document.createElement('span'); l.style.cssText = 'font-size:12px;color:var(--muted,#5b6b73);align-self:center'; l.textContent = lab; host2.appendChild(l); list.forEach(function (x) { var c = U.chip(x.ion, false, function () { cur = [t, x.id]; pokaz(); }); chips.push({el: c, t: t, id: x.id}); host2.appendChild(c); }); }
+      function mk(host2, list, t, lab) { var l = document.createElement('span'); l.style.cssText = 'font-size:12px;color:var(--text-muted,#5b6b73);align-self:center'; l.textContent = lab; host2.appendChild(l); list.forEach(function (x) { var c = U.chip(x.ion, false, function () { cur = [t, x.id]; pokaz(); }); chips.push({el: c, t: t, id: x.id}); host2.appendChild(c); }); }
       mk(bar, D.cations, 'c', 'kationy:'); mk(bar2, D.anions, 'a', 'aniony:');
       host.append(bar, bar2, card); pokaz();
     }
@@ -2524,7 +2524,7 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
         o1.textContent = fmt(cb, 2) + ' mol/dm³'; o2.textContent = fmt(ratio, 2);
         var xx = n * drop, ha = B0.HA + xx, a = B0.A - xx, cap = Math.min(ha, a) / Math.max(B0.HA, B0.A);
         info.innerHTML = '<b>Woda:</b> pH = ' + fmt(pw, 2) + ' · <b>Bufor:</b> pH = ' + fmt(pb, 2) + ' (pK<sub>a</sub> = ' + fmt(pKa, 2) + ') · pozostała pojemność buforu: <b>' + Math.round(Math.max(0, cap) * 100) + '%</b>' +
-          '<br><span style="color:var(--muted,#5b6b73)">Kropla = 0,05 cm³ 1 M w 100 cm³ roztworu. H⁺ reaguje z octanem: CH₃COO⁻ + H₃O⁺ → CH₃COOH + H₂O; OH⁻ z kwasem: CH₃COOH + OH⁻ → CH₃COO⁻ + H₂O. Gdy jednego składnika zabraknie, bufor przestaje działać i pH zmienia się gwałtownie.</span>';
+          '<br><span style="color:var(--text-muted,#5b6b73)">Kropla = 0,05 cm³ 1 M w 100 cm³ roztworu. H⁺ reaguje z octanem: CH₃COO⁻ + H₃O⁺ → CH₃COOH + H₂O; OH⁻ z kwasem: CH₃COOH + OH⁻ → CH₃COO⁻ + H₂O. Gdy jednego składnika zabraknie, bufor przestaje działać i pH zmienia się gwałtownie.</span>';
         wykres();
       }
       host.append(bar, zl, sl, cv, info); reset(); rys(); setTimeout(rys, 60);
@@ -2559,12 +2559,12 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
             '<path d="M' + (x + 2) + ' 60 v48 q0 11 8 11 q8 0 8 -11 v-48z" fill="' + kol + '" opacity=".92"/>' +
             (rev ? '' : '<text x="' + (x + 10) + '" y="95" text-anchor="middle" font-size="16" font-weight="700" fill="#64748b">?</text>') +
             '<text x="' + (x + 10) + '" y="140" text-anchor="middle" font-size="9" fill="var(--text,#0f172a)">' + r[0].split(' ')[0] + '</text>' + (r[0].indexOf(' ') > 0 ? '<text x="' + (x + 10) + '" y="150" text-anchor="middle" font-size="9" fill="var(--text,#0f172a)">' + r[0].split(' ').slice(1).join(' ') + '</text>' : '') +
-            (rev ? '<text x="' + (x + 10) + '" y="164" text-anchor="middle" font-size="8" font-weight="700" fill="var(--muted,#64748b)">pH ' + fmt(r[1], 1) + '</text>' : '') + '</g>';
+            (rev ? '<text x="' + (x + 10) + '" y="164" text-anchor="middle" font-size="8" font-weight="700" fill="var(--text-muted,#64748b)">pH ' + fmt(r[1], 1) + '</text>' : '') + '</g>';
         }).join('') + '</svg>';
         [].forEach.call(sc.querySelectorAll('g[data-i]'), function (g) { g.onclick = function () { odkryte[g.getAttribute('data-i')] = 1; rys(); }; });
         var n = Object.keys(odkryte).length;
         info.innerHTML = '<b>Wskaźnik: ' + W[wk][0] + '.</b> ' + (przewiduj ? (n < 7 ? 'Najpierw przewidź barwę w każdej probówce, potem kliknij ją (' + n + '/7).' : 'Wszystkie odkryte — porównaj z przewidywaniem.') : 'Barwy wszystkich roztworów.') +
-          '<br><span style="color:var(--muted,#5b6b73)">' + (wk === 'phph' ? 'Fenoloftaleina jest malinowa tylko w zasadach (pH > 8,2); w kwasach i w roztworach obojętnych — bezbarwna.' : wk === 'oranz' ? 'Oranż metylowy: czerwony poniżej pH 3,1, żółty powyżej 4,4 — odróżnia mocny kwas od reszty.' : 'Wskaźnik uniwersalny: od czerwonego (mocne kwasy) przez zielony (obojętny) do fioletowego (mocne zasady).') + '</span>';
+          '<br><span style="color:var(--text-muted,#5b6b73)">' + (wk === 'phph' ? 'Fenoloftaleina jest malinowa tylko w zasadach (pH > 8,2); w kwasach i w roztworach obojętnych — bezbarwna.' : wk === 'oranz' ? 'Oranż metylowy: czerwony poniżej pH 3,1, żółty powyżej 4,4 — odróżnia mocny kwas od reszty.' : 'Wskaźnik uniwersalny: od czerwonego (mocne kwasy) przez zielony (obojętny) do fioletowego (mocne zasady).') + '</span>';
         Object.keys(chips).forEach(function (k) { U().zaznacz(chips[k], k === wk); });
       }
       Object.keys(W).forEach(function (k) { chips[k] = U().chip(W[k][0], k === wk, function () { wk = k; rys(); }); bar.appendChild(chips[k]); });
@@ -2585,9 +2585,9 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
       KAT.map(function (c, i) {
         var d = g(c[1], q), nc = q / d, na = c[1] / d, sym = c[0] === 'NH4' ? 'NH₄' : c[0], r = w.charAt(i), nm = a[0].length > 2 && na > 1;
         var f = (nc > 1 && c[0] === 'NH4' ? '(' + sym + ')' : sym) + (nc > 1 ? SUBD[nc] : '') + (nm ? '(' + a[0] + ')' : a[0]) + (na > 1 ? SUBD[na] : '');
-        var col = r === 'R' ? '#2e7d4f' : r === 'N' ? '#b83a45' : r === 'T' ? '#b06f1c' : '#64748b';
+        var col = r === 'R' ? 'var(--c-basic,#2e7d4f)' : r === 'N' ? 'var(--c-error,#b83a45)' : r === 'T' ? 'var(--c-warn,#b06f1c)' : 'var(--text-muted,#64748b)';
         return '<tr><td style="padding:2px 8px"><b>' + f + '</b></td><td style="padding:2px 8px">' + a[1] + ' ' + c[2] + '</td><td align="center" style="padding:2px 8px;color:' + col + ';font-weight:800">' + (r === '-' ? '—' : r) + '</td></tr>';
-      }).join('') + '</table><div style="font-size:12px;color:var(--muted,#5b6b73);margin-top:4px">R — rozpuszczalna · T — trudno · N — nierozpuszczalna · — nie istnieje w wodzie. Wzór soli: ładunki kationu i reszty muszą się równoważyć.</div>';
+      }).join('') + '</table><div style="font-size:12px;color:var(--text-muted,#5b6b73);margin-top:4px">R — rozpuszczalna · T — trudno · N — nierozpuszczalna · — nie istnieje w wodzie. Wzór soli: ładunki kationu i reszty muszą się równoważyć.</div>';
   }
   var KLUCZ = ['Cl', 'SO4', 'NO3', 'PO4', 'CO3', 'CH3COO', 'SO3', 'S'], LAD = [1, 2, 1, 3, 2, 1, 2, 2];
   KLOCKI.def('kwasy-reszty', {
@@ -2601,12 +2601,12 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
         chips.forEach(function (c, j) { U().zaznacz(c, j === i); });
         var mocny = k[6] === 'mocny';
         card.innerHTML = '<div style="font-size:20px"><b>' + k[0] + '</b> — ' + k[1] + '</div>' +
-          '<div><b>Typ:</b> ' + k[2] + ' · <b>Moc:</b> <span style="color:' + (mocny ? '#b91c1c' : '#0f766e') + ';font-weight:700">' + k[6] + '</span></div>' +
-          '<div><b>Reszta kwasowa:</b> ' + k[3] + ' <span style="color:var(--muted,#5b6b73)">(ładunek ' + k[4] + ' = liczba atomów H oddawanych w skrócie)</span></div>' +
+          '<div><b>Typ:</b> ' + k[2] + ' · <b>Moc:</b> <span style="color:' + (mocny ? 'var(--c-error,#b91c1c)' : 'var(--c-new,#0f766e)') + ';font-weight:700">' + k[6] + '</span></div>' +
+          '<div><b>Reszta kwasowa:</b> ' + k[3] + ' <span style="color:var(--text-muted,#5b6b73)">(ładunek ' + k[4] + ' = liczba atomów H oddawanych w skrócie)</span></div>' +
           '<div><b>Dysocjacja:</b> ' + k[5] + '</div><div><b>Sól sodowa:</b> ' + k[7] + '</div><div><b>Zastosowanie:</b> ' + k[8] + '</div>' +
           '<details style="margin-top:6px"><summary style="cursor:pointer;font-weight:700">Sole z 16 kationami: wzór, nazwa, rozpuszczalność</summary>' + sol(KLUCZ[i], LAD[i]) + '</details>';
       }
-      KW.forEach(function (k, i) { if (i === 6) bar.appendChild(E('span', 'font-size:12px;color:var(--muted,#5b6b73);margin:0 4px 0 8px', 'dodatkowo (rozszerzenie):')); var c = U().chip(k[0], i === 0, function () { pokaz(i); }); chips.push(c); bar.appendChild(c); });
+      KW.forEach(function (k, i) { if (i === 6) bar.appendChild(E('span', 'font-size:12px;color:var(--text-muted,#5b6b73);margin:0 4px 0 8px', 'dodatkowo (rozszerzenie):')); var c = U().chip(k[0], i === 0, function () { pokaz(i); }); chips.push(c); bar.appendChild(c); });
       host.append(bar, card); pokaz(0);
     }
   });
@@ -2830,7 +2830,7 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
         klucze.forEach(function (k) {
           var on = wyb.indexOf(k) >= 0, b = przyciski[k];
           b.style.background = on ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)';
-          b.style.color = on ? '#fff' : 'var(--accent,#0d6868)';
+          b.style.color = on ? 'var(--bg,#fff)' : 'var(--accent,#0d6868)';
           b.setAttribute('aria-pressed', on ? 'true' : 'false');
         });
         var tuby = wyb.map(function (k) {
@@ -2987,7 +2987,7 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
         var rows = A.map(function (x, i) { return [x[0], i < r.s.length ? 's' : 'p', x[1], x[2], k * x[1], x[3]]; });
         var ms = rows.reduce(function (t, x) { return t + (x[1] === 's' ? x[3] * x[4] : 0); }, 0), mp = rows.reduce(function (t, x) { return t + (x[1] === 'p' ? x[3] * x[4] : 0); }, 0);
         out.innerHTML = '<div style="font-weight:700;margin:6px 0">' + r.n + '</div>' + tab(rows) +
-          '<div style="color:var(--muted,#5b6b73)"><b>Tok rozumowania:</b><br>1) n(' + a[0] + ') = ' + (jed === 'm' ? 'm/M = ' + f(q, 2) + ' g ÷ ' + f(a[2], 1) + ' g/mol = ' + f(n0, 4) + ' mol' : jed === 'n' ? f(n0, 4) + ' mol' : 'V/22,4 = ' + f(q, 2) + ' ÷ 22,4 = ' + f(n0, 4) + ' mol') +
+          '<div style="color:var(--text-muted,#5b6b73)"><b>Tok rozumowania:</b><br>1) n(' + a[0] + ') = ' + (jed === 'm' ? 'm/M = ' + f(q, 2) + ' g ÷ ' + f(a[2], 1) + ' g/mol = ' + f(n0, 4) + ' mol' : jed === 'n' ? f(n0, 4) + ' mol' : 'V/22,4 = ' + f(q, 2) + ' ÷ 22,4 = ' + f(n0, 4) + ' mol') +
           '<br>2) z współczynników: n(inna) = n(' + a[0] + ') · (współcz. innej ÷ ' + a[1] + ')<br>3) m = n · M<br>4) kontrola: masa substratów ' + f(ms, 2) + ' g = masa produktów ' + f(mp, 2) + ' g (prawo zachowania masy).</div>';
       }
       function lim() {
@@ -3176,8 +3176,8 @@ var RXL=C.RXL={
       var I = C.RXL.info(opc.k), bar = document.createElement('div');
       bar.style.cssText = 'display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:center;margin-top:6px;font-size:13px';
       var b = KLOCKI.ui.btn('▶ start', function () { m.play(); }); bar.appendChild(b);
-      if (I.gas) { var s = document.createElement('span'); s.style.color = 'var(--muted,#5b6b73)'; s.textContent = 'Gaz: ' + I.gas.name + ' — ' + I.gas.test; bar.appendChild(s); }
-      if ((SPECS[opc.k] || {}).teacher) { var t = document.createElement('b'); t.style.color = '#b83a45'; t.textContent = 'pokaz nauczyciela'; bar.appendChild(t); }
+      if (I.gas) { var s = document.createElement('span'); s.style.color = 'var(--text-muted,#5b6b73)'; s.textContent = 'Gaz: ' + I.gas.name + ' — ' + I.gas.test; bar.appendChild(s); }
+      if ((SPECS[opc.k] || {}).teacher) { var t = document.createElement('b'); t.style.color = 'var(--c-error,#b83a45)'; t.textContent = 'pokaz nauczyciela'; bar.appendChild(t); }
       host.appendChild(bar);
     }
   });
@@ -3243,7 +3243,7 @@ var RXL=C.RXL={
       bar.style.cssText = 'display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px'; q.style.cssText = 'margin:8px 0 4px;font-weight:700;font-size:14px';
       wynik.style.cssText = 'margin-top:8px;font-size:14px;line-height:1.5'; scena.style.cssText = 'max-width:300px;margin:0 auto';
       var rb = [], ob = [];
-      function wybierz(i) { cur = i; odp = null; rb.forEach(function (c, j) { U.zaznacz(c, j === i); }); ob.forEach(function (c) { U.zaznacz(c, false); }); scena.innerHTML = ''; wynik.innerHTML = '<span style="color:var(--muted,#5b6b73)">Wybierz przewidywaną obserwację i kliknij „Sprawdź”.</span>'; }
+      function wybierz(i) { cur = i; odp = null; rb.forEach(function (c, j) { U.zaznacz(c, j === i); }); ob.forEach(function (c) { U.zaznacz(c, false); }); scena.innerHTML = ''; wynik.innerHTML = '<span style="color:var(--text-muted,#5b6b73)">Wybierz przewidywaną obserwację i kliknij „Sprawdź”.</span>'; }
       PRZ.forEach(function (p, i) { var c = U.chip(p[1], i === 0, function () { wybierz(i); }); rb.push(c); bar.appendChild(c); });
       q.textContent = 'Co zobaczysz w zlewce?';
       var ob_bar = document.createElement('div'); ob_bar.style.cssText = 'display:flex;flex-wrap:wrap;gap:6px';
@@ -3254,7 +3254,7 @@ var RXL=C.RXL={
         var p = PRZ[cur]; scena.innerHTML = '';
         var m = C.RXL.mount(scena, p[0], {dur: Number(opc.dur) || 6, auto: false}); m.play();
         var ok = odp === p[2];
-        wynik.innerHTML = '<b style="color:' + (ok ? '#15803d' : '#b91c1c') + '">' + (ok ? '✔ Przewidywanie trafne.' : '✘ Inaczej: ' + OBS.filter(function (o) { return o[0] === p[2]; })[0][1] + '.') + '</b><br><b>Równanie:</b> ' + SPECS[p[0]].eq + '<br><span style="color:var(--muted,#5b6b73)">' + p[3] + '</span>';
+        wynik.innerHTML = '<b style="color:' + (ok ? '#15803d' : '#b91c1c') + '">' + (ok ? '✔ Przewidywanie trafne.' : '✘ Inaczej: ' + OBS.filter(function (o) { return o[0] === p[2]; })[0][1] + '.') + '</b><br><b>Równanie:</b> ' + SPECS[p[0]].eq + '<br><span style="color:var(--text-muted,#5b6b73)">' + p[3] + '</span>';
       }));
       host.append(bar, q, ob_bar, sp, scena, wynik); wybierz(0);
     }

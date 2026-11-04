@@ -23,7 +23,7 @@
       function nast() {
         if (i >= ord.length) { w.textContent = ok + ' / ' + N; t.innerHTML = '<span>Koniec gry</span>'; b.innerHTML = ''; o.innerHTML = ok >= N * .8 ? 'Świetnie — klasyfikację masz opanowaną.' : 'Wróć do wskazówek: kwas zaczyna się od H, zasada kończy na OH, sól to metal (lub NH₄) + reszta kwasowa, tlenek to pierwiastek + O.'; b.appendChild(U.btn('Zagraj jeszcze raz', start)); return; }
         var q = Q[ord[i]]; odp = false; w.innerHTML = q[0]; t.innerHTML = '<span>Pytanie ' + (i + 1) + ' / ' + N + '</span><span>Punkty: <b>' + ok + '</b></span>'; o.innerHTML = 'Wybierz kategorię.'; b.innerHTML = '';
-        KAT.forEach(function (k) { b.appendChild(U.btn(k[1], function () { if (odp) return; odp = true; var dob = k[0] === q[1]; if (dob) ok++; o.innerHTML = (dob ? '<b style="color:#16a34a">Dobrze.</b> ' : '<b style="color:#dc2626">To ' + (q[1] === 'zasada' ? 'zasada' : q[1] === 'sól' ? 'sól' : q[1]) + '.</b> ') + q[2]; t.innerHTML = '<span>Pytanie ' + (i + 1) + ' / ' + N + '</span><span>Punkty: <b>' + ok + '</b></span>'; b.appendChild(U.btn('Dalej →', function () { i++; nast(); })); })); });
+        KAT.forEach(function (k) { b.appendChild(U.btn(k[1], function () { if (odp) return; odp = true; var dob = k[0] === q[1]; if (dob) ok++; o.innerHTML = (dob ? '<b style="color:var(--c-basic,#2e7d4f)">Dobrze.</b> ' : '<b style="color:var(--c-error,#b83a45)">To ' + (q[1] === 'zasada' ? 'zasada' : q[1] === 'sól' ? 'sól' : q[1]) + '.</b> ') + q[2]; t.innerHTML = '<span>Pytanie ' + (i + 1) + ' / ' + N + '</span><span>Punkty: <b>' + ok + '</b></span>'; b.appendChild(U.btn('Dalej →', function () { i++; nast(); })); })); });
       }
       start();
     }

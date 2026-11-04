@@ -41,7 +41,7 @@
         var rows = A.map(function (x, i) { return [x[0], i < r.s.length ? 's' : 'p', x[1], x[2], k * x[1], x[3]]; });
         var ms = rows.reduce(function (t, x) { return t + (x[1] === 's' ? x[3] * x[4] : 0); }, 0), mp = rows.reduce(function (t, x) { return t + (x[1] === 'p' ? x[3] * x[4] : 0); }, 0);
         out.innerHTML = '<div style="font-weight:700;margin:6px 0">' + r.n + '</div>' + tab(rows) +
-          '<div style="color:var(--muted,#5b6b73)"><b>Tok rozumowania:</b><br>1) n(' + a[0] + ') = ' + (jed === 'm' ? 'm/M = ' + f(q, 2) + ' g ÷ ' + f(a[2], 1) + ' g/mol = ' + f(n0, 4) + ' mol' : jed === 'n' ? f(n0, 4) + ' mol' : 'V/22,4 = ' + f(q, 2) + ' ÷ 22,4 = ' + f(n0, 4) + ' mol') +
+          '<div style="color:var(--text-muted,#5b6b73)"><b>Tok rozumowania:</b><br>1) n(' + a[0] + ') = ' + (jed === 'm' ? 'm/M = ' + f(q, 2) + ' g ÷ ' + f(a[2], 1) + ' g/mol = ' + f(n0, 4) + ' mol' : jed === 'n' ? f(n0, 4) + ' mol' : 'V/22,4 = ' + f(q, 2) + ' ÷ 22,4 = ' + f(n0, 4) + ' mol') +
           '<br>2) z współczynników: n(inna) = n(' + a[0] + ') · (współcz. innej ÷ ' + a[1] + ')<br>3) m = n · M<br>4) kontrola: masa substratów ' + f(ms, 2) + ' g = masa produktów ' + f(mp, 2) + ' g (prawo zachowania masy).</div>';
       }
       function lim() {

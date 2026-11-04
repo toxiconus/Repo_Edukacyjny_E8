@@ -40,6 +40,6 @@ V.define('f02-czastki-v01',{title:'Model cząsteczkowy: substancja czysta czy mi
    top.innerHTML='<span>Próbka '+(i+1)+' / '+P.length+': <b>'+p[0]+'</b></span><span>Wynik: <b>'+ok+' / '+all+'</b></span>';
    out.innerHTML='Policz: ile <b>rodzajów drobin</b>? ile <b>rodzajów atomów</b> w jednej drobinie? ile <b>faz</b>? Potem wybierz klasyfikację.'}
   function spr(k){var p=P[ord[i]],good=k===p[1];all++;if(good)ok++;
-   out.innerHTML=(good?'<b style="color:#16a34a">Dobrze!</b> ':'<b style="color:#dc2626">Nie.</b> ')+p[3];top.lastChild.innerHTML='Wynik: <b>'+ok+' / '+all+'</b>'}
+   out.innerHTML=(good?'<b style="color:var(--c-basic,#2e7d4f)">Dobrze!</b> ':'<b style="color:var(--c-error,#b83a45)">Nie.</b> ')+p[3];top.lastChild.innerHTML='Wynik: <b>'+ok+' / '+all+'</b>'}
   draw()}});
 })();
