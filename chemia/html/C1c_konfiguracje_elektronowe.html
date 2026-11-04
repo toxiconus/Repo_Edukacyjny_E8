@@ -2690,6 +2690,35 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
       });
     }
   });
+
+  /* KLOCEK: mapa-jonow — kliknij jon: ładunek, pochodzenie, wykrywanie i partnerzy dający osad (z tabeli rozpuszczalności). Zastępuje ion-map-v02. */
+  var DET = {Ag: 'Cl⁻ → biały AgCl↓; I⁻ → żółty AgI↓', Ba: 'SO₄²⁻ → biały BaSO₄↓ (nierozpuszczalny w kwasach)', Ca: 'CO₃²⁻ → biały CaCO₃↓; woda wapienna + CO₂ mętnieje', Cu: 'NaOH → niebieski Cu(OH)₂↓; roztwór niebieski', Fe3: 'NaOH → rdzawy Fe(OH)₃↓', Fe2: 'NaOH → zielonkawy Fe(OH)₂↓', Pb: 'I⁻ → żółty PbI₂↓', NH4: 'NaOH + ogrzanie → amoniak NH₃ (zapach, papierek niebieszczeje)', Al: 'NaOH → biały Al(OH)₃↓, rozpuszcza się w nadmiarze', Zn: 'NaOH → biały Zn(OH)₂↓, rozpuszcza się w nadmiarze', Na: 'barwa płomienia: żółta', K: 'barwa płomienia: fioletowa',
+    Cl: 'AgNO₃ → biały, serowaty AgCl↓', SO4: 'BaCl₂ → biały BaSO₄↓', CO3: 'kwas → bąbelki CO₂ (woda wapienna mętnieje)', PO4: 'AgNO₃ → żółty Ag₃PO₄↓', S: 'kwas → H₂S (zapach zgniłych jaj); Pb²⁺ → czarny PbS↓', NO3: 'brak typowych osadów — wszystkie azotany rozpuszczalne', OH: 'fenoloftaleina → malinowa; pH > 7', I: 'AgNO₃ → żółty AgI↓', Br: 'AgNO₃ → kremowy AgBr↓', F: 'Ca²⁺ → biały CaF₂↓', CH3COO: 'prawie wszystkie octany rozpuszczalne', SO3: 'kwas → SO₂ (ostry zapach)', SiO3: 'kwas → galaretowaty H₂SiO₃↓'};
+  var POCH = {Na: 'z NaOH i soli sodu', K: 'z KOH i soli potasu', NH4: 'z amoniaku i soli amonowych', Mg: 'z Mg(OH)₂ i soli magnezu', Ca: 'z Ca(OH)₂ (woda wapienna) i soli wapnia', Ba: 'z Ba(OH)₂ i soli baru', Al: 'z Al(OH)₃ i soli glinu', Zn: 'z Zn(OH)₂ i soli cynku', Cu: 'z Cu(OH)₂ i soli miedzi', Ag: 'z soli srebra (AgNO₃)', Pb: 'z soli ołowiu', Fe2: 'z soli żelaza(II)', Fe3: 'z soli żelaza(III)', Ni: 'z soli niklu', Mn: 'z soli manganu', Sn: 'z soli cyny',
+    OH: 'z wodorotlenków (NaOH, KOH, Ca(OH)₂…)', Cl: 'z kwasu solnego HCl', Br: 'z HBr', I: 'z HI', F: 'z HF', NO3: 'z kwasu azotowego(V) HNO₃', SO4: 'z kwasu siarkowego(VI) H₂SO₄', SO3: 'z kwasu siarkowego(IV) H₂SO₃', CO3: 'z kwasu węglowego H₂CO₃', PO4: 'z kwasu fosforowego(V) H₃PO₄', S: 'z kwasu siarkowodorowego H₂S', SiO3: 'z kwasu krzemowego H₂SiO₃', CH3COO: 'z kwasu octowego CH₃COOH', HCO3: 'z kwasu węglowego (sole kwaśne)'};
+  KLOCKI.def('mapa-jonow', {
+    opis: 'Mapa jonów: wybierasz kation lub anion i widzisz jego ładunek, pochodzenie (z jakiego kwasu lub wodorotlenku), sposób wykrywania oraz jony, z którymi tworzy osad (z tabeli rozpuszczalności).',
+    domyslne: {},
+    html: function (host) {
+      host.style.display = 'block';
+      var U = window.KLOCKI.ui, cur = ['a', 'Cl'], cats = {}, ani = {}, chips = [];
+      D.cations.forEach(function (c) { cats[c.id] = c; }); D.anions.forEach(function (a) { ani[a.id] = a; });
+      var bar = document.createElement('div'), bar2 = document.createElement('div'), card = document.createElement('div');
+      bar.style.cssText = bar2.style.cssText = 'display:flex;flex-wrap:wrap;gap:5px;margin-bottom:6px'; card.style.cssText = 'border:1px solid var(--border,#cbd5e1);border-radius:10px;padding:10px 12px;background:var(--surface-soft,#f6f8fa);font-size:14px;line-height:1.55';
+      function pokaz() {
+        chips.forEach(function (c) { U.zaznacz(c.el, c.t === cur[0] && c.id === cur[1]); });
+        var kat = cur[0] === 'c', id = cur[1], ion = (kat ? cats : ani)[id].ion, q = kat ? D.qc[id] : ani[id].q, par = [];
+        (kat ? D.anions : D.cations).forEach(function (x) { var s = kat ? D.table[x.id][id] : D.table[id][x.id]; if (s === 'N' || s === 'T') par.push('<b>' + x.ion + '</b> (' + (s === 'N' ? 'osad' : 'trudno rozp.') + ')'); });
+        card.innerHTML = '<div style="font-size:22px"><b>' + ion + '</b> <span style="font-size:14px;color:var(--muted,#5b6b73)">' + (kat ? 'kation' : 'anion') + ' · ładunek ' + (kat ? '+' + q : q) + '</span></div>' +
+          '<div><b>Pochodzenie:</b> ' + (POCH[id] || '—') + '</div><div><b>Wykrywanie:</b> ' + (DET[id] || '—') + '</div>' +
+          '<div><b>Tworzy osad z:</b> ' + (par.length ? par.join(', ') : 'prawie nic — jego sole są rozpuszczalne') + '</div>' +
+          '<div style="color:var(--muted,#5b6b73);font-size:13px;margin-top:4px">Bilans: aby powstała obojętna sól, ładunki kationu i anionu muszą się równoważyć (np. Ca²⁺ + 2 Cl⁻ → CaCl₂).</div>';
+      }
+      function mk(host2, list, t, lab) { var l = document.createElement('span'); l.style.cssText = 'font-size:12px;color:var(--muted,#5b6b73);align-self:center'; l.textContent = lab; host2.appendChild(l); list.forEach(function (x) { var c = U.chip(x.ion, false, function () { cur = [t, x.id]; pokaz(); }); chips.push({el: c, t: t, id: x.id}); host2.appendChild(c); }); }
+      mk(bar, D.cations, 'c', 'kationy:'); mk(bar2, D.anions, 'a', 'aniony:');
+      host.append(bar, bar2, card); pokaz();
+    }
+  });
 })();
 
 /* KLOCEK: rownania-jonowe — wybór reakcji i trzy zapisy: cząsteczkowy, jonowy pełny, jonowy skrócony; jony obserwatorowe wyróżnione.

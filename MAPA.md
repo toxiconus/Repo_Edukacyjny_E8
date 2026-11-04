@@ -328,7 +328,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/engine/src/gfx/wspolne/widoki  (1 pl., 4 KB)
 - `che-test-silnika-v01.js` 4 KB
 
-## chemia/che-modular/engine/src/klocki  (68 pl., 654 KB)
+## chemia/che-modular/engine/src/klocki  (69 pl., 679 KB)
 - (zwinięte; `ls chemia/che-modular/engine/src/klocki`) — duże:
 - ⚠`wodorotlenki_n02.js` 83 KB
 
@@ -539,7 +539,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 
 ## chemia/html  (128 pl., 16.1 MB)
 - (zwinięte; `ls chemia/html`) — duże:
-- ⚠`C1c_konfiguracje_elektronowe.html` 256 KB
+- ⚠`C1c_konfiguracje_elektronowe.html` 260 KB
 - ⚠`C2m_mol_masa_molowa.html` 109 KB
 - ⚠`C2w_wzor_elementarny_rzeczywisty.html` 112 KB
 - ⚠`C3_rownania_i_obliczenia_z_rownan.html` 106 KB
@@ -1268,7 +1268,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## wizualizacje-projekty/baza-mala/gfx/wspolne/widoki  (1 pl., 4 KB)
 - `che-test-silnika-v01.js` 4 KB
 
-## wizualizacje-projekty/baza-mala/klocki  (68 pl., 654 KB)
+## wizualizacje-projekty/baza-mala/klocki  (69 pl., 679 KB)
 - (zwinięte; `ls wizualizacje-projekty/baza-mala/klocki`) — duże:
 - ⚠`wodorotlenki_n02.js` 83 KB
 

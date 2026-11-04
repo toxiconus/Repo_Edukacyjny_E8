@@ -8,7 +8,7 @@ Liczenie: każde wystąpienie dyrektywy `@model`, `@viz`, `@klocek`, `@zlewka` (
 
 | Liczba wizualizacji w bazie | Użyte 0 razy | Użyte 1 raz | Użyte 2 lub więcej razy |
 |---|---|---|---|
-| 387 | 219 | 81 | 87 |
+| 388 | 220 | 81 | 87 |
 
 Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobnie literówki lub klucze pracowni): **64**: `-`, `bezkregowce-sylwetki`, `caoh2Co2`, `cuoH2so4`, `cuso4Naoh`, `cykl`, `drzewa-krzewy`, `drzewo-filogenetyczne`, `f02-czastki-v01`, `f04-nuklid-v01`, `fecl3Naoh`, `fotosynteza-oddychanie-krazenie`, `hclNaOH`, `jajo-porownanie`, `jajo-ptaka`, `kariotyp`, `komorki-porownanie`, `krazenie`, `krew-skladniki`, `kwiat-budowa`, `liscie-rodzaje`, `mapa-narzadow`, `mgO2`, `miesnie-trzy`, `mikroskop-budowa`, `mozg-budowa`, `mutacje-punktowe`, `naH2o`, `nablonki-rodzaje`, `nasiono-ziarniak`, `nefron-budowa`, `neuron-budowa`, `neurony-mielina`, `obieg-wegla`, `odpowiedz-immunologiczna`, `organelle-energetyczne`, `osmoza-komorka`, `owoce-rozsiewanie`, `piramida-ekologiczna`, `podzial-komorki-skrot`, `polip-meduza`, `preparat-mikroskopowy`, `przeksztalcenia-organow`, `przewod-pokarmowy`, `replikacja-dna`, `rodowod`, `rx-ag-cl`, `rx-cu-naoh`, `rx-fe-cuso4`, `ryba-budowa`, `serce-budowa`, `staw-czaszka`, `stawonogi-budowa`, `szereg`, `szkielet-czlowieka`, `szyszki-iglaste`, `tkanki-zwierzece`, `uklad-limfatyczny`, `uklad-oddechowy`, `wentylacja`, `wlasciwosci`, `wykres-dane`, `zab-budowa`, `zboza-klosy`
 
@@ -133,7 +133,6 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 - `hyd-na2co3` (CHE gfx/reakcje) → N05
 - `hyd-nh4cl` (CHE gfx/reakcje) → N05
 - `indicator` (CHE gfx/sceny) → N04
-- `ion-map-v02` (CHE model) → N05
 - `kH2o` (CHE gfx/reakcje) → F06
 - `klonowanie-genu` (BIO) → BIO.02.L022.biotechnologia_i_inzynieria_genetyczna
 - `klucz-kregowce` (BIO) → BIO.00.REV02.roznorodnosc_zycia
@@ -144,6 +143,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 - `lancuch-poziomow` (klocek) → F01
 - `liH2o` (CHE gfx/reakcje) → F06
 - `linie-pola` (klocek) → FIZ01
+- `mapa-jonow` (klocek) → N05
 - `mapa-mysli` (klocek) → F01
 - `miareczkowanie-biureta` (klocek) → N04
 - `n01-spalanie-v01` (CHE model) → N02
@@ -297,6 +297,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 - `hyd-nacl` (CHE gfx/reakcje: chemia)
 - `id` (POL: pol-viz.js)
 - `indicatorRack` (CHE gfx/sceny: chemia)
+- `ion-map-v02` (CHE model: Mapa jonów — ładunek, pochodzenie, wykrywanie, sole)
 - `ion-vs-diss` (CHE model: Jonizacja vs dysocjacja — różnica)
 - `j03-osady-v01` (CHE model: Dwie probówki, dwie sole — czy wytrąci się osad? (tabela R/T/N, barwa osadu, równanie jonowe))
 - `k2oH2o` (CHE gfx/reakcje: chemia)
@@ -578,7 +579,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | `id` | POL | 0 | — |
 | `indicator` | CHE gfx/sceny | 1 | N04 ×1 |
 | `indicatorRack` | CHE gfx/sceny | 0 | — |
-| `ion-map-v02` | CHE model | 1 | N05 ×1 |
+| `ion-map-v02` | CHE model | 0 | — |
 | `ion-vs-diss` | CHE model | 0 | — |
 | `izotopy` | klocek | 2 | C1c_masy_sklad_procentowy ×1, F05 ×1 |
 | `j03-osady-v01` | CHE model | 0 | — |
@@ -625,6 +626,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | `live-cv` | CHE model | 0 | — |
 | `lozysko-wymiana` | BIO | 2 | BIO.02.B2f.rozmnazanie_rozwoj ×1, BIO.07.U11.rozmnazanie_i_rozwoj ×1 |
 | `luk-odruchowy` | BIO | 2 | BIO.02.B2d.uklad_nerwowy_zmysly ×1, BIO.07.U08.uklad_nerwowy_i_zmysly ×1 |
+| `mapa-jonow` | klocek | 1 | N05 ×1 |
 | `mapa-mysli` | klocek | 1 | F01 ×1 |
 | `meniscus` | CHE gfx/efekty | 0 | — |
 | `metalBurn` | CHE gfx/efekty | 0 | — |
@@ -983,7 +985,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | chemia | N02 | `caoH2o` ×1, `caoh2Co2` ×1, `cuoH2so4` ×1, `czasteczki-3d` ×1, `detektor-tlenku` ×1, `konstruktor-tlenku` ×1, `lancuch-przemian` ×3, `mgO2` ×1, `n01-doswiadczenia-v01` ×3, `n01-spalanie-v01` ×1, `palenie` ×1, `palnik-gazowy` ×1, `probowki-wybor` ×1, `reaktor-tlenku` ×1, `stech-kalkulator-v01` ×1, `trend-tlenkow` ×1, `uklad-okresowy-54` ×1 |
 | chemia | N03 | `-` ×1, `aloh3Naoh` ×1, `caoH2o` ×1, `caoh2Co2` ×1, `cuso4Naoh` ×1, `fecl3Naoh` ×1, `hclNaOH` ×1, `n02-doswiadczenia-v01` ×8, `n02-dysocjacja-v01` ×1, `n02-otrzymywanie-v01` ×1, `n02-przeglad-v01` ×1, `n02-reaktor-v01` ×1, `n02-stracanie-v01` ×1, `n02-wzory-v01` ×1, `n02-zobojetnianie-v01` ×1, `naH2o` ×1, `ph-indicators-v03` ×2, `rownania-jonowe` ×1, `tabela-rozpuszczalnosci` ×1, `wskazniki-statyw` ×1 |
 | chemia | N04 | `acid-rain-v01` ×1, `acidMetal` ×1, `bufor` ×1, `carbonate` ×1, `conductivity` ×2, `cuoH2so4` ×1, `dysocjacja-vs-jonizacja` ×1, `gra-klasyfikacja` ×1, `hclNaOH` ×1, `indicator` ×1, `karta-bhp` ×1, `kw-doswiadczenia-v01` ×10, `kw-dysocjacja-v01` ×1, `kwasy-reszty` ×1, `kwasy-rozcienczanie` ×1, `miareczkowanie-biureta` ×1, `ph-indicators-v03` ×1, `probowki` ×1, `probowki-odczyn` ×2, `probowki-wybor` ×2, `przewodnictwo` ×1, `reakcje-przewidz` ×1, `rownania-jonowe` ×1, `szereg` ×1, `tabela-rozpuszczalnosci` ×1, `titration-merged` ×1, `wlasciwosci` ×2, `wskazniki-statyw` ×1, `wzor-2d` ×6, `zbieranie-gazu` ×1, `zlewki-rx` ×16 |
-| chemia | N05 | `bacl2Na2so4` ×1, `cacl2Na2co3` ×1, `caoH2o` ×1, `cuoH2so4` ×1, `cuso4Hydrate` ×1, `hclNaOH` ×1, `hyd-na2co3` ×1, `hyd-nh4cl` ×1, `ion-map-v02` ×1, `kwasy-reszty` ×1, `lancuch-przemian` ×1, `na2co3Hcl` ×1, `probowki-wybor` ×1, `przewodnictwo` ×1, `rownania-jonowe` ×1, `rx-ag-cl` ×2, `rx-cu-naoh` ×1, `rx-fe-cuso4` ×1, `sole-doswiadczenia-v01` ×14, `stechiometria` ×1, `tabela-rozpuszczalnosci` ×1 |
+| chemia | N05 | `bacl2Na2so4` ×1, `cacl2Na2co3` ×1, `caoH2o` ×1, `cuoH2so4` ×1, `cuso4Hydrate` ×1, `hclNaOH` ×1, `hyd-na2co3` ×1, `hyd-nh4cl` ×1, `kwasy-reszty` ×1, `lancuch-przemian` ×1, `mapa-jonow` ×1, `na2co3Hcl` ×1, `probowki-wybor` ×1, `przewodnictwo` ×1, `rownania-jonowe` ×1, `rx-ag-cl` ×2, `rx-cu-naoh` ×1, `rx-fe-cuso4` ×1, `sole-doswiadczenia-v01` ×14, `stechiometria` ×1, `tabela-rozpuszczalnosci` ×1 |
 | chemia | N06 | — |
 | chemia | N07 | — |
 | chemia | N08 | — |

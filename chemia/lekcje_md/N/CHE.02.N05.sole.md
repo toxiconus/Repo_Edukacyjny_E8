@@ -132,7 +132,7 @@ Sól powstaje, gdy H z kwasu zostaje „zastąpiony” metalem: HCl → NaCl, H�
 Szkolny łańcuch: **kwas → reszta kwasowa → sól**, np. H₂SO₄ → SO₄²⁻ → Na₂SO₄. Rzeczywiste sposoby otrzymywania soli są jednak szersze — nie każda sól powstaje przez prostą neutralizację ([§6](#otrzymywanie)). N04 zbiera zależności z N01–N03, ale jest osobną lekcją: sole to produkt reakcji kwasów z wodorotlenkami, metalami i tlenkami — domknięcie chemii nieorganicznej szkoły podstawowej.
 :::
 
-@model ion-map-v02 | Mapa jonów — ładunki, pochodzenie, wykrywanie; z czym każdy jon tworzy osad | Dane: tabela rozpuszczalności i kwasy z silnika
+@klocek mapa-jonow {} | Mapa jonów — ładunki, pochodzenie, wykrywanie; z czym każdy jon tworzy osad
 @opis Mapa jonów: dla każdego jonu podany jest ładunek, pochodzenie (z jakiego kwasu lub wodorotlenku), sposób wykrywania oraz jony, z którymi tworzy osad (np. Ag⁺ z Cl⁻, Ba²⁺ z SO₄²⁻, Ca²⁺ z CO₃²⁻). Wniosek: wiedząc, które pary jonów dają osad, można przewidzieć reakcje strąceniowe i wykrywać jony.
 
 ## 2 | Wzory soli — bilans ładunku [[basic:E8]] {#wzory}
