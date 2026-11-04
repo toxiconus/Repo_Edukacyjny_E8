@@ -2079,7 +2079,7 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
         b.addEventListener('click', function () { akt = k; pokaz(); }); chipy.appendChild(b); btn[k] = b;
       });
       function pokaz() {
-        Object.keys(btn).forEach(function (k) { btn[k].style.cssText = CH + (k === akt ? 'background:var(--accent,#0d6868);color:#fff' : 'background:var(--surface,#fff);color:var(--accent,#0d6868)'); });
+        Object.keys(btn).forEach(function (k) { btn[k].style.cssText = CH + (k === akt ? 'background:var(--accent,#0d6868);color:var(--bg,#fff)' : 'background:var(--surface,#fff);color:var(--accent,#0d6868)'); });
         scena.innerHTML = rys(DANE[akt]); nota.textContent = DANE[akt].nota;
       }
       pokaz();

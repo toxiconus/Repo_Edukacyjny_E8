@@ -191,7 +191,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 
 ## chemia/che-modular  (17 pl., 210 KB)
 - (zwinięte; `ls chemia/che-modular`) — duże:
-- ⚠`PROGRESS.md` 72 KB
+- ⚠`PROGRESS.md` 73 KB
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
 - `ARCHITEKTURA.md` 5 KB
@@ -371,7 +371,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/engine/src/lite  (4 pl., 37 KB)
 - `che-lite.js` 1 KB
 - `lab-dane.json` 15 KB
-- `rx-lite.js` 13 KB
+- `rx-lite.js` 14 KB
 - `stech-lite.js` 8 KB
 
 ## chemia/che-modular/engine/src/moduly  (72 pl., 1.0 MB)
@@ -754,7 +754,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## eksport/grafiki  (1 pl., 7 KB)
 - `VIZ_START.html` 7 KB
 
-## narzedzia  (31 pl., 196 KB)
+## narzedzia  (32 pl., 199 KB)
 - (zwinięte; `ls narzedzia`)
 
 ## narzedzia/jednorazowe  (5 pl., 14 KB)
@@ -1303,7 +1303,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## wizualizacje-projekty/baza-mala/klocki/lite  (4 pl., 37 KB)
 - `che-lite.js` 1 KB
 - `lab-dane.json` 15 KB
-- `rx-lite.js` 13 KB
+- `rx-lite.js` 14 KB
 - `stech-lite.js` 8 KB
 
 ## wizualizacje-projekty/baza-mala/tablice  (12 pl., 1.6 MB)

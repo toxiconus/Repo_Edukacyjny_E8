@@ -3077,7 +3077,7 @@ KLOCKI.def('uklad-okresowy', {
       Object.keys(kaf).forEach(function (k) {
         var on = k === s;
         kaf[k].style.background = on ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)';
-        kaf[k].style.color = on ? '#fff' : 'var(--text,#1a2332)';
+        kaf[k].style.color = on ? 'var(--bg,#fff)' : 'var(--text,#1a2332)';
         kaf[k].setAttribute('aria-pressed', on ? 'true' : 'false');
       });
       Array.prototype.forEach.call(detal.querySelectorAll('[data-uzyj]'), function (b) {
@@ -3137,7 +3137,7 @@ KLOCKI.def('uklad-okresowy', {
       Object.keys(btnTr).forEach(function (k) {
         var on = k === tryb;
         btnTr[k].style.background = on ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)';
-        btnTr[k].style.color = on ? '#fff' : 'var(--text,#1a2332)';
+        btnTr[k].style.color = on ? 'var(--bg,#fff)' : 'var(--text,#1a2332)';
         btnTr[k].setAttribute('aria-pressed', on ? 'true' : 'false');
       });
     }
@@ -4348,7 +4348,7 @@ function hex(a){return'#'+a.slice(0,3).map(function(v){return(Math.max(0,Math.mi
 function rgbCss(a){return a?'rgb('+a.map(function(v){return v|0}).join(',')+')':'#e2e8f0'}
 function ind(id,pH){try{return G().colors.at(id,Math.max(0,Math.min(14,pH)))}catch(_){return null}}
 function fmt(v,d){if(!isFinite(v))return'—';return(Math.round(v*Math.pow(10,d))/Math.pow(10,d)).toString().replace('.',',')}
-function card(t,b,col){return'<div style="border:1px solid var(--border,#e2e8f0);border-left:4px solid '+(col||'var(--accent,#0d6868)')+';border-radius:10px;padding:8px 12px;margin:6px 0;background:var(--panel,#fff)"><b>'+t+'</b><div style="margin-top:3px">'+b+'</div></div>'}
+function card(t,b,col){return'<div style="border:1px solid var(--border,#e2e8f0);border-left:4px solid '+(col||'var(--accent,#0d6868)')+';border-radius:10px;padding:8px 12px;margin:6px 0;background:var(--surface-soft,#f6f8fa)"><b>'+t+'</b><div style="margin-top:3px">'+b+'</div></div>'}
 function eqHtml(e){return e?'<div style="font:700 15px ui-monospace,Consolas,monospace;margin:4px 0;overflow-wrap:anywhere">'+e+'</div>':''}
 function grid(host,min){var g=el('div');g.style.cssText='display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,'+(min||300)+'px),1fr));gap:12px;align-items:start';host.appendChild(g);return g}
 var SOLC={R:'#16a34a',T:'#d97706',N:'#dc2626','—':'#64748b'};var SOLS={R:'✓',T:'~',N:'×','—':'!'};
@@ -4358,7 +4358,7 @@ function catCol(r){var k={Cu:'ion-cu2',Fe:r.q===3?'ion-fe3':'ion-fe2',Ni:'ion-ni
 
 function modelSVG(r,n,mode){var W=420,H=Math.max(150,60+n*44),cx=70,cy=H/2,M=r.metal,s='<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;max-width:460px;height:auto;display:block;margin:auto" role="img" aria-label="model wodorotlenku">';
  var txt=function(x,y,t,sz,col,w){return'<text x="'+x+'" y="'+y+'" font-size="'+(sz||18)+'" font-weight="'+(w||800)+'" text-anchor="middle" dominant-baseline="middle" fill="'+(col||'currentColor')+'">'+t+'</text>'};
- if(mode==='A'){s+=txt(cx,cy,M,24);for(var i=0;i<n;i++){var y=n===1?cy:30+i*(H-60)/Math.max(1,n-1);s+='<line x1="'+(cx+18)+'" y1="'+cy+'" x2="'+(cx+118)+'" y2="'+y+'" stroke="#64748b" stroke-width="2" stroke-dasharray="6 5"/>'+txt(cx+135,y,'O',20,'#dc2626')+'<line x1="'+(cx+150)+'" y1="'+y+'" x2="'+(cx+196)+'" y2="'+y+'" stroke="currentColor" stroke-width="2.5"/>'+txt(cx+210,y,'H',20,'#0f766e')}
+ if(mode==='A'){s+=txt(cx,cy,M,24);for(var i=0;i<n;i++){var y=n===1?cy:30+i*(H-60)/Math.max(1,n-1);s+='<line x1="'+(cx+18)+'" y1="'+cy+'" x2="'+(cx+118)+'" y2="'+y+'" stroke="#64748b" stroke-width="2" stroke-dasharray="6 5"/>'+txt(cx+135,y,'O',20,'#dc2626')+'<line x1="'+(cx+150)+'" y1="'+y+'" x2="'+(cx+196)+'" y2="'+y+'" stroke="currentColor" stroke-width="2.5"/>'+txt(cx+210,y,'H',20,'var(--c-new,#0f766e)')}
   s+='<text x="8" y="'+(H-8)+'" font-size="11" font-weight="600" fill="#64748b">- - - oddziaływanie jonowe M···O    —— wiązanie O–H</text>'}
  else if(mode==='B'){cx=W/2-40;s+=txt(cx,cy,M+'<tspan font-size="12" dy="-8">'+(r.q>1?r.q:'')+'+</tspan>',24);for(var j=0;j<n;j++){var a=-Math.PI/2+j*2*Math.PI/Math.max(1,n)+(n===2?Math.PI/2:0),R=Math.min(H/2-22,110),x=cx+Math.cos(a)*R,yy=cy+Math.sin(a)*R;
    s+='<line x1="'+(cx+Math.cos(a)*24)+'" y1="'+(cy+Math.sin(a)*24)+'" x2="'+(x-Math.cos(a)*26)+'" y2="'+(yy-Math.sin(a)*14)+'" stroke="#64748b" stroke-width="2" stroke-dasharray="6 5"/><rect x="'+(x-26)+'" y="'+(yy-14)+'" width="52" height="28" rx="8" fill="#dbeafe" stroke="#2563eb"/>'+txt(x,yy,'OH⁻',14,'#1e3a8a')}
@@ -4402,7 +4402,7 @@ V.define('n02-przeglad-v01',{title:'Wodorotlenki — rozpuszczalność, barwa os
   bar.appendChild(el('span',null,'<span style="margin-left:12px;font:600 12px system-ui">'+['R','T','N'].map(function(s){return'<span style="color:'+SOLC[s]+';margin-right:10px">'+SOLS[s]+' '+{R:'dobrze rozpuszczalny',T:'trudno',N:'praktycznie nierozpuszczalny (osad ↓)'}[s]+'</span>'}).join('')+'</span>'));
   var tg=el('div');tg.style.cssText='display:grid;grid-template-columns:repeat(auto-fill,minmax(124px,1fr));gap:8px;margin:8px 0';host.appendChild(tg);var det=el('div');host.appendChild(det);
   function tiles(){tg.innerHTML='';H.list(function(r){return(LVN[r.level]||1)<=st.lv}).forEach(function(r){var s=H.solubility(r.f),b=el('button');b.type='button';
-   b.style.cssText='display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;white-space:normal;height:auto;min-height:0;overflow:hidden;text-align:left;padding:8px;border-radius:10px;border:2px solid '+(SOLC[s.s]||'#64748b')+';background:var(--panel,#fff);cursor:pointer;color:inherit;font:inherit'+(r.f===st.f?';box-shadow:0 0 0 3px var(--accent-soft,#99f6e4)':'');
+   b.style.cssText='display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;white-space:normal;height:auto;min-height:0;overflow:hidden;text-align:left;padding:8px;border-radius:10px;border:2px solid '+(SOLC[s.s]||'#64748b')+';background:var(--surface-soft,#f6f8fa);cursor:pointer;color:inherit;font:inherit'+(r.f===st.f?';box-shadow:0 0 0 3px var(--accent-soft,#99f6e4)':'');
    b.innerHTML='<b style="display:block;font:800 16px Inter,system-ui,sans-serif;white-space:nowrap">'+r.pretty+'</b><small style="display:flex;align-items:center;gap:5px;margin-top:3px;white-space:nowrap"><span style="flex:none;width:12px;height:12px;border-radius:50%;background:'+r.hex+';border:1px solid #94a3b8"></span>'+r.cation+' · <b style="color:'+(SOLC[s.s]||'')+'">'+(SOLS[s.s]||'?')+'</b>'+(r.amph?' · amf.':'')+'</small>';
    b.onclick=function(){st.f=r.f;tiles()};tg.appendChild(b)});show()}
   function show(){var r=H.get(st.f),s=H.solubility(r.f),d=H.dissociation(r.f),ob=H.obtain(r.f);
@@ -4542,7 +4542,7 @@ var GAZY={CO2:['tlenek węgla(IV)','zmętnienie wody wapiennej'],H2:['wodór','c
  NH3:['amoniak','ostry zapach; wilgotny papierek uniwersalny zabarwia się na niebiesko'],H2S:['siarkowodór','zapach zgniłych jaj; bibułka z octanem ołowiu(II) czernieje'],
  HCl:['chlorowodór','biały dym przy bagietce zwilżonej amoniakiem'],Cl2:['chlor','żółtozielony gaz, odbarwia wilgotny papierek wskaźnikowy'],SO2:['tlenek siarki(IV)','ostry zapach, odbarwia roztwór manganianu(VII) potasu']};
 var CSS='.rxl{font:14px/1.5 var(--tekst,Inter,system-ui,sans-serif);color:var(--text,inherit)}.rxl svg{display:block;width:100%;max-width:340px;margin:0 auto}.rxl .bar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:6px 0}'+
- '.rxl button.o{border:1px solid var(--border-strong,rgba(100,116,139,.45));background:var(--surface,transparent);color:inherit;border-radius:999px;padding:5px 11px;font:600 12.5px var(--tekst,Inter,system-ui);cursor:pointer}.rxl button.o.on{background:var(--accent,#0d6868);color:#fff;border-color:var(--accent,#0d6868)}'+
+ '.rxl button.o{border:1px solid var(--border-strong,rgba(100,116,139,.45));background:var(--surface,transparent);color:inherit;border-radius:999px;padding:5px 11px;font:600 12.5px var(--tekst,Inter,system-ui);cursor:pointer}.rxl button.o.on{background:var(--accent,#0d6868);color:var(--bg,#fff);border-color:var(--accent,#0d6868)}'+
  '.rxl .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:12px;align-items:start}.rxl .eq{font:700 15px ui-monospace,Consolas,monospace;margin:4px 0 8px;overflow-wrap:anywhere}'+
  '.rxl .nt{border-left:3px solid var(--accent,#0d6868);background:var(--accent-soft,rgba(13,104,104,.06));padding:8px 10px;border-radius:6px;font-size:13.5px}.rxl .tch{color:var(--c-error,#b83a45);font-weight:700}.rxl .cap{text-align:center;font-weight:700;font-size:13px;margin-top:2px}';
 function css(){if(document.getElementById('rxl-css'))return;var s=document.createElement('style');s.id='rxl-css';s.textContent=CSS;document.head.appendChild(s)}

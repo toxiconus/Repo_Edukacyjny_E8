@@ -25,7 +25,7 @@
       wynik.style.cssText = 'font-size:14px;margin-top:8px;display:grid;gap:4px';
       host.appendChild(chipy); host.appendChild(scena); host.appendChild(wynik);
       var CH = 'border:1px solid var(--accent,#0d6868);border-radius:99px;padding:4px 12px;font:600 13px system-ui,sans-serif;cursor:pointer;min-height:0;height:auto;width:auto;flex:none;line-height:1.3;margin:0;box-shadow:none;';
-      function stylChip(b, on) { b.style.cssText = CH + (on ? 'background:var(--accent,#0d6868);color:#fff' : 'background:var(--surface,#fff);color:var(--accent,#0d6868)'); }
+      function stylChip(b, on) { b.style.cssText = CH + (on ? 'background:var(--accent,#0d6868);color:var(--bg,#fff)' : 'background:var(--surface,#fff);color:var(--accent,#0d6868)'); }
       var przyciski = lista.map(function (p, i) {
         var b = document.createElement('button'); b.type = 'button'; b.textContent = p[0] + ' × ' + p[1];
         b.addEventListener('click', function () { ci = i; pokaz = {}; wyb = null; rys(); });

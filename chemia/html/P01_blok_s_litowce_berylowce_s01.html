@@ -1857,7 +1857,7 @@ KLOCKI.def('uklad-okresowy', {
       Object.keys(kaf).forEach(function (k) {
         var on = k === s;
         kaf[k].style.background = on ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)';
-        kaf[k].style.color = on ? '#fff' : 'var(--text,#1a2332)';
+        kaf[k].style.color = on ? 'var(--bg,#fff)' : 'var(--text,#1a2332)';
         kaf[k].setAttribute('aria-pressed', on ? 'true' : 'false');
       });
       Array.prototype.forEach.call(detal.querySelectorAll('[data-uzyj]'), function (b) {
@@ -1917,7 +1917,7 @@ KLOCKI.def('uklad-okresowy', {
       Object.keys(btnTr).forEach(function (k) {
         var on = k === tryb;
         btnTr[k].style.background = on ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)';
-        btnTr[k].style.color = on ? '#fff' : 'var(--text,#1a2332)';
+        btnTr[k].style.color = on ? 'var(--bg,#fff)' : 'var(--text,#1a2332)';
         btnTr[k].setAttribute('aria-pressed', on ? 'true' : 'false');
       });
     }

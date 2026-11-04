@@ -1322,8 +1322,8 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
 
       function ustaw() {
         var o = ocena(gaz, metoda);
-        gB.forEach(function (b) { var a = b.getAttribute('data-g') === gaz; b.style.background = a ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)'; b.style.color = a ? '#fff' : 'inherit'; });
-        mB.forEach(function (b) { var a = b.getAttribute('data-m') === metoda; b.style.background = a ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)'; b.style.color = a ? '#fff' : 'inherit'; });
+        gB.forEach(function (b) { var a = b.getAttribute('data-g') === gaz; b.style.background = a ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)'; b.style.color = a ? 'var(--bg,#fff)' : 'inherit'; });
+        mB.forEach(function (b) { var a = b.getAttribute('data-m') === metoda; b.style.background = a ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)'; b.style.color = a ? 'var(--bg,#fff)' : 'inherit'; });
         rEl.innerHTML = esc(GAZY[gaz].r);
         wEl.style.color = o.ok ? 'var(--c-basic,#15803d)' : 'var(--c-error,#dc2626)';
         wEl.textContent = (o.ok ? '✓ ' : '✗ ') + o.t;
