@@ -296,6 +296,7 @@
   "osady-dwie-sole": "klocek",
   "tabela-rozpuszczalnosci": "klocek",
   "mapa-jonow": "klocek",
+  "szybkosc-reakcji": "klocek",
   "dysocjacja-vs-jonizacja": "klocek",
   "przeniesienie-protonu": "klocek",
   "miareczkowanie-biureta": "klocek",
@@ -922,6 +923,10 @@
   },
   "mapa-jonow": {
    "N05": 1
+  },
+  "szybkosc-reakcji": {
+   "K06": 1,
+   "K07": 1
   },
   "dysocjacja-vs-jonizacja": {
    "J03": 1,
@@ -1562,6 +1567,7 @@
   "zlewka-rx",
   "zlewki-rx",
   "tabela-rozpuszczalnosci",
+  "szybkosc-reakcji",
   "dysocjacja-vs-jonizacja",
   "gruczoly-mapa",
   "kod-genetyczny",

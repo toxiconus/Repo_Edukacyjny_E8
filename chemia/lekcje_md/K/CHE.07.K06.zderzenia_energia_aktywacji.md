@@ -84,6 +84,10 @@ Warto to porównać: wzrost temperatury zwiększa liczbę skutecznych zderzeń p
 3. Wniosek: katalizator przyspiesza dojście do równowagi, ale nie zwiększa wydajności końcowej.
 :::
 
+@klocek szybkosc-reakcji {metal="Mg"} | Zmierz szybkość: metal + HCl, wpływ T, c, rozdrobnienia i katalizatora
+
+@opis Pomiar objętości wodoru z metalu i kwasu solnego: wybierasz metal, postać (granulki, wiórki, proszek), stężenie HCl, temperaturę i katalizator CuSO₄, klikasz „zmierz”. W kolbie pojawiają się bąbelki, gaz zbiera się w cylindrze, a krzywa V(t) zostaje na wykresie do porównania z kolejnymi próbami. Wniosek: wyższa temperatura, większe stężenie, drobniejszy metal i katalizator dają stromszą krzywą, a wysokość plateau zależy tylko od reagenta limitującego.
+
 ## 6 | Ciekawostki {#ciekawostki}
 
 ::: karta extra | Katalizator w samochodzie

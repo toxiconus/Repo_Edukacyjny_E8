@@ -250,6 +250,8 @@ def render(path, p):
     pierwszy = re.search(r'(?m)^# (.+)$', body0)   # „# KOD — Tytuł” w plikach bez nagłówka YAML
     text = m.aliasy(preprocess(surowy, p))
     meta, body = m.front(text)
+    for _k, _v in list(meta.items()):   # wartości w cudzysłowach YAML (kod: "K06") → bez cudzysłowów
+        if isinstance(_v, str) and len(_v) > 1 and _v[0] == _v[-1] and _v[0] in '"\'': meta[_k] = _v[1:-1]
     if not meta.get('kod'): meta['kod'] = z_nazwy(path)
     if not meta.get('tytul') and pierwszy:
         t = pierwszy.group(1).strip()

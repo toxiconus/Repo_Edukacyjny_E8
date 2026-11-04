@@ -41,6 +41,10 @@ Dlaczego katalizator działa? Wiemy już z K06, że reakcja wymaga, by cząstecz
 Katalizator nie jest reagentem w sensie bilansu: pojawia się w mechanizmie, ale na końcu wraca do stanu wyjściowego. Nie oznacza to, że nigdy się nie zmienia. Może się zużyć, zanieczyścić albo utracić powierzchnię, dlatego w przemyśle pilnuje się jego stanu.
 :::
 
+@klocek szybkosc-reakcji {metal="Zn"} | Zn + HCl z katalizatorem CuSO₄ i bez
+
+@opis Pomiar objętości wodoru z metalu i kwasu solnego: wybierasz metal, postać (granulki, wiórki, proszek), stężenie HCl, temperaturę i katalizator CuSO₄, klikasz „zmierz”. W kolbie pojawiają się bąbelki, gaz zbiera się w cylindrze, a krzywa V(t) zostaje na wykresie do porównania z kolejnymi próbami. Wniosek: wyższa temperatura, większe stężenie, drobniejszy metal i katalizator dają stromszą krzywą, a wysokość plateau zależy tylko od reagenta limitującego.
+
 ### 1.1 Mini-wykład: skąd wzięło się słowo „kataliza"
 
 ::: karta understand | W skrócie: rozluźnianie i przyspieszanie

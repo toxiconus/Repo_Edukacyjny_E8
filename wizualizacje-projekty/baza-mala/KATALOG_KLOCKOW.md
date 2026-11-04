@@ -8,7 +8,7 @@ Ta paczka zawiera kopie tego, co już działa w lekcjach. Zewnętrzny model moż
 
 | Folder | Zawartość | Rozmiar |
 |---|---|---|
-| `klocki` | kopia folderu | 744 KB |
+| `klocki` | kopia folderu | 756 KB |
 | `klocki/lite` | kopia folderu | 36 KB |
 | `gfx` | kopia folderu | 690 KB |
 | `tablice` | kopia folderu | 1612 KB |
@@ -90,6 +90,7 @@ Ta paczka zawiera kopie tego, co już działa w lekcjach. Zewnętrzny model moż
 | `wodorotlenki_n02.js` | rodzina n02-*: wzory, przegląd, otrzymywanie, strącanie, zobojętnianie, dysocjacja, reaktor wodorotlenków |
 | `pracownie_rx.js` | pracownie rx-lite: n02-doswiadczenia-v01 (wodorotlenki), sole-doswiadczenia-v01 (sole) |
 | `pracownie_f.js` | pracownie rx-lite F01/F03 |
+| `szybkosc_reakcji.js` | Szybkość reakcji: metal + HCl, pomiar V(H₂) w czasie, wykres porównawczy (szybkosc-reakcji) |
 
 Lekcje i pliki, które wymieniają (`manifest.json` → `lekcje`):
 
@@ -136,6 +137,8 @@ Lekcje i pliki, które wymieniają (`manifest.json` → `lekcje`):
 - **R03A**: `klocki.js`, `pomocnicze.js`, `krzywe_rozpuszczalnosci.js`, `regula_krzyzowa.js`, `karta_bhp.js`
 - **FIZ-01**: `klocki.js`, `pomocnicze.js`, `ui_klocki.js`, `przewodnictwo.js`, `fizyka_elektrostatyka.js`
 - **F17**: `klocki.js`, `pomocnicze.js`, `ui_klocki.js`, `bilans_rownania.js`, `stechiometria.js`, `model_widok.js`, `../lite/rx-lite.js`, `zlewka_rx.js`, `pracownie_rx.js`, `pracownie_f.js`
+- **K06**: `klocki.js`, `pomocnicze.js`, `ui_klocki.js`, `szybkosc_reakcji.js`
+- **K07**: `klocki.js`, `pomocnicze.js`, `ui_klocki.js`, `szybkosc_reakcji.js`
 
 Lekkie silniki (`klocki/lite/`): `che-lite.js` (rejestr modeli), `rx-lite.js` (naczynia SVG), `stech-lite.js` (kalkulator stechiometryczny), `lab-dane.json` (dane zlewek).
 

@@ -172,6 +172,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/archiwum/che_v0_59/szablon  (1 pl., 25 KB)
 - (zwinięte; `ls chemia/archiwum/che_v0_59/szablon`)
 
+## chemia/archiwum/gfx_widoki_duze_2026-11  (16 pl., 38 KB)
+- (zwinięte; `ls chemia/archiwum/gfx_widoki_duze_2026-11`)
+
 ## chemia/archiwum/stare_2025  (9 pl., 990 KB)
 - (zwinięte; `ls chemia/archiwum/stare_2025`) — duże:
 - ⛔`CHEMIA_L001_FUNDAMENTY.html` 73 KB
@@ -537,7 +540,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/wizualizacje_r4  (1 pl., 35 KB)
 - `Wizualizacje_do_lekcji_R4.html` 35 KB
 
-## chemia/html  (128 pl., 16.7 MB)
+## chemia/html  (128 pl., 16.8 MB)
 - (zwinięte; `ls chemia/html`) — duże:
 - ⚠`C1c_konfiguracje_elektronowe.html` 260 KB
 - ⚠`C2m_mol_masa_molowa.html` 119 KB
@@ -588,8 +591,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE.04.J11.identyfikacja_jonow.md` 5 KB
 - `CHE.04.J12.miareczkowanie.md` 5 KB
 
-## chemia/lekcje_md/K  (6 pl., 96 KB)
-- `CHE.07.K06.zderzenia_energia_aktywacji.md` 16 KB
+## chemia/lekcje_md/K  (6 pl., 97 KB)
+- `CHE.07.K06.zderzenia_energia_aktywacji.md` 17 KB
 - `CHE.07.K07.kataliza.md` 20 KB
 - `CHE.07.K08.rownowaga_dynamiczna.md` 14 KB
 - `CHE.07.K09.stala_rownowagi.md` 14 KB
@@ -1167,7 +1170,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PRZEKAZANIE.md` 3 KB
 - ⚠`wzorcownia.html` 59 KB
 
-## wizualizacje-projekty/baza-mala  (5 pl., 162 KB)
+## wizualizacje-projekty/baza-mala  (5 pl., 163 KB)
 - `BRAKI_WIZUALIZACJI.md` 16 KB
 - `KATALOG_KLOCKOW.md` 36 KB
 - `README.md` 3 KB

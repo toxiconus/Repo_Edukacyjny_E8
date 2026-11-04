@@ -33,7 +33,7 @@ Bez odpowiednika (sprawdzić przed archiwizacją, czy lekcje N01 ich nie planuj�
 - n01-doswiadczenia → nowa pracownia `n01-doswiadczenia-v01` (pracownie_rx.js, 64 specyfikacje łącznie)
 - n01-spalanie → `palenie`/`plomien`/`palnik-gazowy` (do porównania, `mgO2` → zlewka `f01Mg`)
 - Wszystkie `@zlewka` w lekcjach zamienione na `zlewka-rx` / `zlewki-rx` (0 przycisków pracowni GFX)
-- Bez odpowiednika został tylko `kinetics-v01` (do przeportowania).
+- `kinetics-v01` → nowy klocek `szybkosc-reakcji` (szybkosc_reakcji.js; K06, K07). Wszystkie widoki mają już odpowiedniki; w silniku zostaje tylko ten jeden do archiwizacji.
 
 ## Decyzja
 Zrobione 2026-11-04: 15 widoków przeniesionych do `chemia/archiwum/gfx_widoki_duze_2026-11/`, `gfx/index.json` przebudowany. W silniku został `kinetics-v01` (brak klocka).

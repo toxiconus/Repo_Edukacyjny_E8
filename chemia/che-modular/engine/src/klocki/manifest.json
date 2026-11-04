@@ -67,7 +67,8 @@
     "stechiometria.js": "stechiometria: kalkulator reakcji (n, m, V, tok), tryb limitujący",
     "wodorotlenki_n02.js": "rodzina n02-*: wzory, przegląd, otrzymywanie, strącanie, zobojętnianie, dysocjacja, reaktor wodorotlenków",
     "pracownie_rx.js": "pracownie rx-lite: n02-doswiadczenia-v01 (wodorotlenki), sole-doswiadczenia-v01 (sole)",
-    "pracownie_f.js": "pracownie rx-lite F01/F03"
+    "pracownie_f.js": "pracownie rx-lite F01/F03",
+    "szybkosc_reakcji.js": "Szybkość reakcji: metal + HCl, pomiar V(H₂) w czasie, wykres porównawczy (szybkosc-reakcji)"
   },
   "lekcje": {
     "P01": [
@@ -548,6 +549,18 @@
       "zlewka_rx.js",
       "pracownie_rx.js",
       "pracownie_f.js"
+    ],
+    "K06": [
+      "klocki.js",
+      "pomocnicze.js",
+      "ui_klocki.js",
+      "szybkosc_reakcji.js"
+    ],
+    "K07": [
+      "klocki.js",
+      "pomocnicze.js",
+      "ui_klocki.js",
+      "szybkosc_reakcji.js"
     ]
   },
   "css": [
