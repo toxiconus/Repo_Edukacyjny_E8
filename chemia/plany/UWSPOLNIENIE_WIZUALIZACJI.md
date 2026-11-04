@@ -42,5 +42,6 @@ Zasada: jedna najlepsza wersja. Przy podmianie sprawdź, których lekcji dotyczy
 - `ph-skala` → panel pH: dobre z niej (substancje z życia: sok żołądkowy, cytryna, ocet, pomidor, deszcz, soda, mydło, woda amoniakalna) dopisane jako zakładka „Z życia” w drabince. Barwy wskaźników i stężenie H₃O⁺ panel już ma.
 - `kwasne-deszcze` → `acid-rain-v01`: równania i skutki oryginał miał; dodany marmur CaCO₃ ulegający korozji wraz z kwasowością. Usunięty.
 - `tester-przewodnictwa` → `przewodnictwo`: dopisane etanol i CuSO₄ (osad Cu na katodzie) z prostego testera; FIZ01 i N04 używają `przewodnictwo`. Usunięty.
-- Nadal do zrobienia: N05 (`@model gfx-scene-conductivity`), `bufor`, rodzina „naczynie + reakcja”, `wzor-2d`/`molekula-2d`.
+- Zrobione (2026-11-04): N05/N03 → klocki; `bufor` = port kw-bufor-v01; rodzina naczyń 7→5 (zlewka, metal-woda → zestaw `litowce-woda` w zlewki-rx); molekula-2d usunięty (wzor-2d pokrywa).
+- Nadal do zrobienia: porty z dużego silnika kw-reszty/kw-wlasciwosci/kw-dysocjacja/kw-szereg-metali/kw-doswiadczenia oraz pehametr+biureta w miareczkowaniu.
 - Efekty (`gfx/chemia/efekty`: bubbles, foam, fumes, precipitate…) dostępne w małym silniku tylko przez rx-lite (zlewka-rx/zlewki-rx) — nowe animacje reakcji budować na rx-lite, nie od zera.

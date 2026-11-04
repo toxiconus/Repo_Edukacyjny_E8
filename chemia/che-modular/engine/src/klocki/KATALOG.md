@@ -11,18 +11,18 @@ Przed napisaniem nowego klocka sprawdź tu rodzinę i użycia — nie twórz dub
 | Kwaśne deszcze | `acid-rain-v01` | scalone 2026-11-04: kwasne-deszcze usunięty, marmur dodany do acid-rain-v01 |
 | Bufor | `bufor` | oryginał kw-bufor-v01 (GFX, pH-metry) jeszcze nieprzeniesiony |
 | Przewodnictwo / elektroliza | `przewodnictwo` | scalone 2026-11-04: tester-przewodnictwa usunięty, N04 i FIZ01 używają przewodnictwo (N05 nadal @model gfx-scene-conductivity) |
-| Probówki / zlewki z reakcją | `probowki`, `probowki-odczyn`, `probowki-wybor`, `zlewka`, `zlewka-rx`, `zlewki-rx`, `metal-woda` | siedem klocków „naczynie + reakcja”; zlewki-rx i probowki-wybor pokrywają się częściowo |
-| Wzory cząsteczek 2D | `wzor-2d`, `molekula-2d` | wzor-2d (C2D) jest nowszy; molekula-2d sprawdzić użycia |
+| Probówki / zlewki z reakcją | `probowki`, `probowki-odczyn`, `probowki-wybor`, `zlewka-rx`, `zlewki-rx` | pięć klocków „naczynie + reakcja”: probówki (odczyn/wybór) i zlewki z silniczkiem rx-lite; litowce+woda = zestaw zlewki-rx |
+| Wzory cząsteczek 2D | `wzor-2d` | jeden klocek (SMILES, grupy, kwaśny H, kulki, kąty); dawny molekula-2d scalony i usunięty |
 | Reszty kwasowe / właściwości kwasów | `kwasy-reszty`, `kwasy-wlasciwosci`, `kwasy-rozcienczanie` | odpowiedniki kw-reszty-v01, kw-wlasciwosci-v01 z dużego silnika (nieprzeniesione) |
 
-## Wszystkie klocki (65)
+## Wszystkie klocki (62)
 
 | Klocek | Plik | Opis | Domyślne | Użycia (lekcja×liczba) |
 |---|---|---|---|---|
 | `acid-rain-v01` | acid_rain.js | Kwaśne deszcze — obieg SO₂/NOₓ → opad → skutki · v0.01 | (port; opcje z widoku) | N04×1 |
 | `bilans-rownania` | bilans_rownania.js | Dobieranie współczynników w równaniu reakcji z tabelą bilansu atomów. | {rownanie: 'H2 + O2 -> H2O', przyklady: 'H2 + O2 -> H2O; Mg + O2 -> Mg | C1c×1, C3×1, LKO×2 |
 | `bilans-spalania` | bilans_spalania.js | Bilans spalania całkowitego alkanu: współczynniki z n i liczba atomów C, H, O po obu stronach równania. | {n: 3, szer: 560, wys: 330} | LKO×1 |
-| `bufor` | kwasy_modele.js | Bufor octanowy (CH₃COOH + CH₃COONa) i czysta woda: dodawanie porcji HCl lub NaOH i odczyt pH na dwóch pehametrach — bufor prawie nie zmienia pH, woda zmienia się gwałtown | {} | N04×1 |
+| `bufor` | kwasy_modele.js | Bufor octanowy (CH₃COOH + CH₃COONa) kontra czysta woda: dodawanie kropli HCl lub NaOH, dwa pehametry z barwą wskaźnika uniwersalnego, wykres pH oraz pozostała pojemność b | {} | N04×1 |
 | `czasteczki-3d` | chemia_wstep.js | Obrotowy model kulkowy cząsteczki (przeciągnij, aby obrócić): O₂, O₃, H₂O, CO₂, SO₂, SO₃, NH₃, CH₄ z kątami między wiązaniami. | {mol: 'O₂,O₃,H₂O,CO₂'} | F02×1, N02×1 |
 | `destylacja` | chemia_wstep.js | Zestaw do destylacji: kolba z cieczą ogrzewana palnikiem, chłodnica Liebiga (para się skrapla) i odbieralnik; destylat zbiera się w odbieralniku. | {} | F03×1 |
 | `detektor-tlenku` | okresowy_tlenki.js | Detektor tlenku: dla wybranego tlenku z bazy 38 tlenków odpowiada na trzy pytania — charakter, reakcja z wodą, reakcja z kwasem i z zasadą — i pokazuje zlewkę ze wskaźnik | {tlenek: 'SO2'} | N02×1 |
@@ -49,8 +49,6 @@ Przed napisaniem nowego klocka sprawdź tu rodzinę i użycia — nie twórz dub
 | `lancuch-przemian` | lancuch_przemian.js | Schemat przemian: wzory substancji połączone strzałkami z literami reakcji; układ liniowy albo obieg zamknięty. | {wezly: 'Ca,CaO,Ca(OH)2,CaCO3', etyk: 'A,B,C', zamkniety: 0, szer: 480 | N02×3 |
 | `linie-pola` | fizyka_elektrostatyka.js | Linie pola dwóch ładunków: wychodzą z ładunku dodatniego i wchodzą do ujemnego; gęstość linii pokazuje siłę pola. Znaki ładunków można zmieniać. | {q1: 1, q2: -1} | FIZ01×1 |
 | `mapa-mysli` | chemia_wstep.js | Mapa myśli: centralne hasło i gałęzie; kliknięcie gałęzi odsłania jej pojęcia (do samodzielnego uzupełniania w pamięci przed odsłonięciem). | {centrum: 'CHEMIA', galezie: 'skład:pierwiastki,wzory;budowa:atomy,wią | F01×1 |
-| `metal-woda` | metal_woda.js | Kawałek metalu w zlewce z wodą; pęcherzyki wodoru, tempo zależne od metalu; przy fenoloftaleinie roztwór różowieje. | {metal: 'Na', wskaznik: 0, ciecz: '#dbeafe', szer: 480, wys: 300} | — |
-| `molekula-2d` | molekula_2d.js | Model cząsteczki 2D: atomy i wiązania, opcjonalnie wyróżniona grupa funkcyjna i kwaśny atom H. | {mol: 'kwas-octowy', grupa: 1, kwas: 1} | — |
 | `nadmiar-substratu` | nadmiar_substratu.js | Dwa substraty o podanych masach: który jest ograniczający, ile powstaje produktu i ile nadmiaru zostaje. | {reakcja: 'mg-hcl', mA: 0, mB: 0} | R07×1 |
 | `osady-dwie-sole` | osady_dwie_sole.js | Dwie probówki z rozpuszczalnymi solami: model łączy jony na krzyż i sprawdza w tabeli, czy powstaje osad i jakiej barwy. | {} | J03×1 |
 | `palenie` | palenie.js | Palenie metalu: płomień i iskry w barwie zależnej od metalu. | {metal: 'Mg', szer: 480, wys: 300} | N02×1 |
@@ -80,7 +78,6 @@ Przed napisaniem nowego klocka sprawdź tu rodzinę i użycia — nie twórz dub
 | `uklad-okresowy-54` | okresowy_tlenki.js | Układ okresowy pierwiastków 1–54: komórki kolorowane wg okresu i grupy, bloku, elektronów walencyjnych, promienia, elektroujemności, energii jonizacji lub charakteru tlen | {tryb: 'adres', wybrany: 'Na', tryby: 'adres,blok,wal,r,en,ie,tlenki'} | F04×1, F06×1, N02×1 |
 | `wzor-2d` | c2d_klocek.js | Wzór strukturalny 2D z SMILES: wiązania (pojedyncze, podwójne, potrójne), zaznaczone grupy funkcyjne; opcjonalnie model kulkowy, kąty, wolne pary, znaczniki walencji i kl | {smiles: 'CC(=O)O', grupa: 'all', kulki: 0, kat: 0, pary: 0, kwas: 1,  | C1c×5, LKO×11, N04×6 |
 | `zbieranie-gazu` | zbieranie_gazu.js | Zbieranie gazu: kolba z reakcją, rurka i naczynie ustawione wylotem do góry, do dołu albo nad wodą; werdykt zależy od gęstości i rozpuszczalności gazu. | {gaz: 'H2', metoda: 'auto', gazy: 'H2,O2,CO2,NH3,HCl'} | LKO×1, N01×2, N04×1 |
-| `zlewka` | zlewka.js | Zlewka z wodą; po wrzuceniu metalu pojawiają się bąbelki gazu. | {ciecz: '#dbeafe', bombelki: 0, opis: null} | — |
 | `zlewka-predykcja` | chemia_wstep.js | Najpierw wybierasz, czego spodziewasz się w zlewce, potem animacja pokazuje wynik i porównuje go z przewidywaniem. | {} | F01×1 |
 | `zlewka-rx` | zlewka_rx.js | Doświadczenie w zlewce lub probówce: ciało stałe, bąbelki gazu, piana, opary, ogrzewanie i zmiana barwy cieczy; przycisk „powtórz” odtwarza animację. | {k: 'znHcl', dur: 6} | — |
 | `zlewki-rx` | zlewka_rx.js | Kilka zlewek naraz (np. Mg, Zn i Cu w HCl); przycisk „wrzuć” uruchamia wszystkie animacje jednocześnie, pod każdą równanie. | {zestaw: 'metale-hcl', k: '', dur: 6} | N04×15 |

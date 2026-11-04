@@ -33,7 +33,6 @@ W md wstawia się go linią `@klocek nazwa {opcja="wartość"} | Podpis`, a pod 
 | `bilans-spalania` | bilans_spalania.js | Bilans atomów C, H, O przy spalaniu; współczynniki kolorowe | `n` (3), `szer` (560), `wys` (330) |
 | `palnik-gazowy` | palnik_gazowy.js | Palnik gazowy, zlewka odwrócona z kroplami wody, próba z wodą wapienną | `etap` 0–2, `anim` ("0" = statycznie) |
 | `wzor-2d` | c2d_klocek.js | Wzór strukturalny z SMILES; domyślnie prosty renderer | `smiles` (CC(=O)O), `grupa` (all), `kwas` (1); v3: `kulki`, `kat`, `pary`, `walencja`, `interaktywny` (0) |
-| `molekula-2d` | molekula_2d.js | Model 2D kilku gotowych cząsteczek (SVG) | `mol`, `grupa`, `kwas` |
 | `lancuch-przemian` | lancuch_przemian.js | Schemat przemian: wzory połączone strzałkami z literami reakcji | `wezly` (Ca,CaO,Ca(OH)2,CaCO3), `etyk` (A,B,C), `zamkniety` (0) |
 | `trojkat-przeliczen` | trojkat_przeliczen.js | Trójkąt konwersji m–n–N / m–n–V ze strzałkami ÷/× | `wzor` (mol) |
 | `probowki-odczyn` | probowki_odczyn.js | Probówki przed/po odczynniku (barwa, osad, gaz) | `tuby` (format: `nazwa:kolor_przed:kolor_po:efekt`, po przecinku), `kat` (pochylenie, np. 45 przy ogrzewaniu) |

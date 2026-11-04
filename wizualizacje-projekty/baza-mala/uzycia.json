@@ -257,7 +257,6 @@
   "lancuch-przemian": "klocek",
   "karta-bhp": "klocek",
   "uklad-okresowy": "klocek",
-  "molekula-2d": "klocek",
   "petla-regulacji": "klocek",
   "profil-energii": "klocek",
   "gra-klasyfikacja": "klocek",
@@ -280,8 +279,6 @@
   "elektroskop": "klocek",
   "prawo-coulomba": "klocek",
   "linie-pola": "klocek",
-  "zlewka": "klocek",
-  "metal-woda": "klocek",
   "estryfikacja": "klocek",
   "palniki": "klocek",
   "bilans-rownania": "klocek",
@@ -443,9 +440,7 @@
   "ion-vs-diss": {},
   "ka-pka-table": {},
   "kinetics-v01": {},
-  "kw-bufor-v01": {
-   "N04": 1
-  },
+  "kw-bufor-v01": {},
   "kw-doswiadczenia-v01": {
    "N04": 11
   },
@@ -824,7 +819,6 @@
   "uklad-okresowy": {
    "P01": 1
   },
-  "molekula-2d": {},
   "petla-regulacji": {
    "BIO.02.B2c.oddychanie_wydalanie": 1,
    "BIO.02.B2e.uklad_dokrewny": 1,
@@ -904,8 +898,6 @@
   "linie-pola": {
    "FIZ01": 1
   },
-  "zlewka": {},
-  "metal-woda": {},
   "estryfikacja": {
    "LKO_ORG06_estry": 1
   },
@@ -1315,6 +1307,7 @@
   "ion-vs-diss",
   "ka-pka-table",
   "kinetics-v01",
+  "kw-bufor-v01",
   "lab-beaker-v102",
   "lab-library-v001",
   "lab-stations-v102",
@@ -1473,10 +1466,7 @@
   "hyd-cuso4",
   "metanSpalanie",
   "krzywe-rozpuszczalnosci",
-  "molekula-2d",
   "plomien",
-  "zlewka",
-  "metal-woda",
   "zlewka-rx",
   "id",
   "cah2H2o",
@@ -1501,7 +1491,6 @@
   "gfx-scene-dilution",
   "gfx-scene-titration",
   "ion-map-v02",
-  "kw-bufor-v01",
   "kw-dysocjacja-v01",
   "kw-wlasciwosci-v01",
   "n01-spalanie-v01",

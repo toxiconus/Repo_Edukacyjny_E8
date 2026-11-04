@@ -2,9 +2,7 @@
   "opis": "Klocki używane przez lekcje. Każda lekcja wymienia tylko potrzebne pliki.",
   "klocki": {
     "klocki.js": "rejestr i montaż (zawsze)",
-    "zlewka.js": "zlewka z cieczą i bąbelkami",
     "plomien.js": "próba płomieniowa (barwa wg metalu)",
-    "metal_woda.js": "metal + woda: H₂ i fenoloftaleina",
     "palenie.js": "palenie metali: Mg, Na, K (barwa i iskry)",
     "uklad_okresowy.js": "mini układ okresowy, klik w grupę",
     "probowki.js": "statyw z probówkami (1–4 metale)",
@@ -17,7 +15,6 @@
     "lancuch_przemian.js": "łańcuch lub obieg przemian: wzory + strzałki z literami reakcji (bez odpowiedzi)",
     "trojkat_przeliczen.js": "trójkąt konwersji m–n–N (wzor=mol) lub m–n–V (wzor=gaz) z operacjami ÷/× M, N_A, Vₘ",
     "probowki_odczyn.js": "probówki przed/po odczynniku: zmiana barwy, osad, pęcherzyki gazu; opcja tuby",
-    "molekula_2d.js": "model cząsteczki 2D (SVG): kwas-octowy, eten, etanol; grupa do wyróżnienia; kwaśny H",
     "c2d_core.js": "chemia 2D (v3, moduł): parser SMILES, układ współrzędnych, geometria VSEPR, wzór i masa",
     "c2d_grupy.js": "wykrywanie grup funkcyjnych: COOH, ester, CHO, C=O, OH, eter, NH₂, NH, NR, X, C≡N, C=C, C≡C, Ar",
     "c2d_wzor.js": "rysunek 2D: szkielet (domyślnie), model kulkowy, kąty, wolne pary, ramki grup",
@@ -131,7 +128,6 @@
       "klocki.js",
       "pomocnicze.js",
       "naczynia.js",
-      "metal_woda.js",
       "lancuch_przemian.js",
       "probowki_odczyn.js"
     ],

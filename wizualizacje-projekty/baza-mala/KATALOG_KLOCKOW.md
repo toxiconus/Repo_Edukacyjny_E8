@@ -8,7 +8,7 @@ Ta paczka zawiera kopie tego, co już działa w lekcjach. Zewnętrzny model moż
 
 | Folder | Zawartość | Rozmiar |
 |---|---|---|
-| `klocki` | kopia folderu | 584 KB |
+| `klocki` | kopia folderu | 578 KB |
 | `klocki/lite` | kopia folderu | 36 KB |
 | `gfx` | kopia folderu | 729 KB |
 | `tablice` | kopia folderu | 1612 KB |
@@ -24,9 +24,7 @@ Ta paczka zawiera kopie tego, co już działa w lekcjach. Zewnętrzny model moż
 | Plik | Co zawiera |
 |---|---|
 | `klocki.js` | rejestr i montaż (zawsze) |
-| `zlewka.js` | zlewka z cieczą i bąbelkami |
 | `plomien.js` | próba płomieniowa (barwa wg metalu) |
-| `metal_woda.js` | metal + woda: H₂ i fenoloftaleina |
 | `palenie.js` | palenie metali: Mg, Na, K (barwa i iskry) |
 | `uklad_okresowy.js` | mini układ okresowy, klik w grupę |
 | `probowki.js` | statyw z probówkami (1–4 metale) |
@@ -39,7 +37,6 @@ Ta paczka zawiera kopie tego, co już działa w lekcjach. Zewnętrzny model moż
 | `lancuch_przemian.js` | łańcuch lub obieg przemian: wzory + strzałki z literami reakcji (bez odpowiedzi) |
 | `trojkat_przeliczen.js` | trójkąt konwersji m–n–N (wzor=mol) lub m–n–V (wzor=gaz) z operacjami ÷/× M, N_A, Vₘ |
 | `probowki_odczyn.js` | probówki przed/po odczynniku: zmiana barwy, osad, pęcherzyki gazu; opcja tuby |
-| `molekula_2d.js` | model cząsteczki 2D (SVG): kwas-octowy, eten, etanol; grupa do wyróżnienia; kwaśny H |
 | `c2d_core.js` | chemia 2D (v3, moduł): parser SMILES, układ współrzędnych, geometria VSEPR, wzór i masa |
 | `c2d_grupy.js` | wykrywanie grup funkcyjnych: COOH, ester, CHO, C=O, OH, eter, NH₂, NH, NR, X, C≡N, C=C, C≡C, Ar |
 | `c2d_wzor.js` | rysunek 2D: szkielet (domyślnie), model kulkowy, kąty, wolne pary, ramki grup |
@@ -96,7 +93,7 @@ Lekcje i pliki, które wymieniają (`manifest.json` → `lekcje`):
 - **N03**: `klocki.js`, `pomocnicze.js`, `naczynia.js`, `dane/pierwiastki.js`, `znaki.js`, `probowki.js`, `palniki.js`, `uklad_okresowy.js`, `karta_bhp.js`, `schemat_przemian.js`, `ui_klocki.js`, `model_widok.js`, `ruch_che.js`, `ph_panel.js`
 - **LKO-KRZYWE**: `klocki.js`, `pomocnicze.js`, `krzywe_rozpuszczalnosci.js`
 - **LKO-A1**: `klocki.js`, `pomocnicze.js`, `lancuch_przemian.js`
-- **LKO-METALE**: `klocki.js`, `pomocnicze.js`, `naczynia.js`, `metal_woda.js`, `lancuch_przemian.js`, `probowki_odczyn.js`
+- **LKO-METALE**: `klocki.js`, `pomocnicze.js`, `naczynia.js`, `lancuch_przemian.js`, `probowki_odczyn.js`
 - **LKO-STECH**: `klocki.js`, `pomocnicze.js`, `trojkat_przeliczen.js`
 - **LKO-ORG08**: `klocki.js`, `pomocnicze.js`, `trojkat_przeliczen.js`, `kalkulator_mola.js`, `zbieranie_gazu.js`, `karta_bhp.js`
 - **LKO-ORG02**: `klocki.js`, `pomocnicze.js`, `naczynia.js`, `probowki_odczyn.js`, `c2d_core.js`, `c2d_grupy.js`, `c2d_wzor.js`, `c2d_prosta.js`, `c2d_klocek.js`, `karta_bhp.js`

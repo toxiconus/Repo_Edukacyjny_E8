@@ -24,8 +24,12 @@ def braki(text):
     """Lista (nr_linii, linia) wizualizacji bez @opis w następnej niepustej linii."""
     L = text.split("\n")
     out = []
+    fence = False
     for i, ln in enumerate(L):
-        if WIZ.match(ln.strip()):
+        if ln.strip().startswith("```"):
+            fence = not fence      # kod w blokach ``` to przykład/szkic, nie wizualizacja lekcji
+            continue
+        if not fence and WIZ.match(ln.strip()):
             j = i + 1
             while j < len(L) and not L[j].strip():
                 j += 1
