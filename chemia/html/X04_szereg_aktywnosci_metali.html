@@ -960,7 +960,7 @@ a) Zn + Cu → Zn + Cu b) Zn + Cu²⁺ → Zn²⁺ + Cu c) Zn + SO₄²⁻ → Z
     if (k.html) { host.innerHTML = ''; k.html(host, opc); return null; }
     var c = document.createElement('canvas');
     c.width = opc.szer || 480; c.height = opc.wys || 300;
-    c.style.width = '100%'; c.style.maxWidth = c.width + 'px'; c.style.height = 'auto';
+    c.style.width = '100%'; c.style.maxWidth = c.width + 'px'; c.style.height = 'auto'; c.style.display = 'block'; c.style.margin = '0 auto';
     c.setAttribute('role', 'img');
     c.setAttribute('aria-label', (opc.opis || k.opis || nazwa));
     host.innerHTML = ''; host.appendChild(c);

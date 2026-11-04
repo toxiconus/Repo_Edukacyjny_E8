@@ -1784,7 +1784,7 @@ body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
     if (k.html) { host.innerHTML = ''; k.html(host, opc); return null; }
     var c = document.createElement('canvas');
     c.width = opc.szer || 480; c.height = opc.wys || 300;
-    c.style.width = '100%'; c.style.maxWidth = c.width + 'px'; c.style.height = 'auto';
+    c.style.width = '100%'; c.style.maxWidth = c.width + 'px'; c.style.height = 'auto'; c.style.display = 'block'; c.style.margin = '0 auto';
     c.setAttribute('role', 'img');
     c.setAttribute('aria-label', (opc.opis || k.opis || nazwa));
     host.innerHTML = ''; host.appendChild(c);
@@ -2351,7 +2351,7 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
       D.cations.forEach(function (c) { D.anions.forEach(function (a) { var k = Rz.zwiazek(c.id, a.id); if (k && k.sol === 'R') sols.push({c: c, a: a, k: k}); }); });
       var opt = sols.map(function (s, i) { return '<option value="' + i + '">' + s.k.pretty + ' — ' + s.k.name + '</option>'; }).join('');
       host.style.display = 'block';
-      host.innerHTML = '<div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:8px"><b>Probówka A:</b><select class="oa" style="font:inherit">' + opt + '</select><b>Probówka B:</b><select class="ob" style="font:inherit">' + opt + '</select></div><div class="ow"></div>';
+      host.innerHTML = '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-bottom:10px"><label style="display:flex;flex-direction:column;gap:4px;font-weight:700;font-size:13px">Probówka A<select class="oa" style="font:inherit;padding:6px 10px;border:1px solid var(--border-strong,#cdd5dd);border-radius:10px;background:var(--surface,#fff);color:var(--text,#18212b);max-width:100%">' + opt + '</select></label><label style="display:flex;flex-direction:column;gap:4px;font-weight:700;font-size:13px">Probówka B<select class="ob" style="font:inherit;padding:6px 10px;border:1px solid var(--border-strong,#cdd5dd);border-radius:10px;background:var(--surface,#fff);color:var(--text,#18212b);max-width:100%">' + opt + '</select></label></div><div class="ow"></div>';
       var A = host.querySelector('.oa'), B = host.querySelector('.ob'), W = host.querySelector('.ow'); function idx(f) { for (var i = 0; i < sols.length; i++) if (sols[i].k.pretty === f) return i; return 0; }
       A.value = idx('AgNO₃'); B.value = idx('NaCl');
       function rura(h, kol) { return '<span style="display:inline-block;width:46px;height:120px;border:2px solid #94a3b8;border-radius:0 0 23px 23px;position:relative;overflow:hidden;vertical-align:bottom;background:#e0f2fe">' + (kol ? '<span style="position:absolute;left:0;right:0;bottom:0;height:' + h + 'px;background:' + kol + '"></span>' : '') + '</span>'; }

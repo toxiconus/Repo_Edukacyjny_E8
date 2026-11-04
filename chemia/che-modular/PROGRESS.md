@@ -317,3 +317,4 @@
 - 2026-11-04: odświeżone pakiety/LKO_pakiet/okładki (pakiety_okladki.py); test kontrastu ciemnego: pozostałe zgłoszenia = tagi fiszek (szum przejść CSS), reszta czysta.
 - 2026-11-04: lab.css: większe cele dotykowe (select/input/.bar button) — regula-krzyzowa, stechiometria, titration, osady itd. spadły z listy; zostały komórki układu okresowego, bilans-rownania (−/+), probówki.
 - 2026-11-04: rx-lite efekty: piana rośnie nad ciecz (foamKeep/foamCol — węgiel z cukru zostaje), dym większy i kolorowy (fumeCol — brunatny NO₂), dłuższy zasięg.
+- 2026-11-04: klocki.js: kanwy klocków wyśrodkowane; osady-dwie-sole: selecty w stylu wspólnym (siatka, tokeny).
