@@ -4,7 +4,7 @@ const {chromium}=require('playwright');const fs=require('fs');const dir='/home/c
 for(const f of fs.readdirSync(dir).filter(f=>f.endsWith('.html')&&fs.readFileSync(dir+f,'utf8').includes('data-bio-viz'))){
  for(const mode of ['dark','mob']){const p=await b.newPage({viewport:{width:mode==='mob'?375:800,height:800}});const pe=[];p.on('pageerror',e=>pe.push(e.message));
  await p.addInitScript(()=>localStorage.setItem('lekcja-poz','all'));await p.goto('file://'+dir+f);await p.waitForTimeout(600);
- if(mode==='dark')await p.evaluate(()=>{try{localStorage.setItem('lekcja-motyw','dark')}catch(e){}});await p.reload();await p.waitForTimeout(500);
+ if(mode==='dark')await p.evaluate(()=>{try{localStorage.setItem('lekcja-motyw','dark')}catch(e){}});await p.reload();await p.waitForTimeout(900);
  if(mode==='dark'&&pe.length)errs.push(f+' '+pe[0]);
  const r=await p.evaluate((mode)=>{function lum(c){const m=c.match(/[\d.]+/g);if(!m)return null;const a=m.slice(0,3).map(x=>{x/=255;return x<=.03928?x/12.92:Math.pow((x+.055)/1.055,2.4)});return .2126*a[0]+.7152*a[1]+.0722*a[2]}
  function bg(el){while(el){const c=getComputedStyle(el).backgroundColor;if(c&&!/rgba\(0, 0, 0, 0\)|transparent/.test(c)&&!(/^rgba/.test(c)&&parseFloat(c.split(',')[3])<0.9))return c;el=el.parentElement}return 'rgb(0,0,0)'}

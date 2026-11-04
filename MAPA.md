@@ -25,7 +25,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 
 ## angielski/html  (28 pl., 2.9 MB)
 - (zwinięte; `ls angielski/html`) — duże:
-- ⚠`ANG.01.L001.operatory_i_czasowniki_posilkowe.html` 206 KB
+- ⚠`ANG.01.L001.operatory_i_czasowniki_posilkowe.html` 207 KB
 - ⚠`ANG.01.L002.czasy_terazniejsze_i_przeszle.html` 134 KB
 - ⚠`ANG.01.L003.present_perfect.html` 161 KB
 - ⚠`ANG.01.L004.past_simple_continuous.html` 144 KB
@@ -754,7 +754,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## eksport/grafiki  (1 pl., 7 KB)
 - `VIZ_START.html` 7 KB
 
-## narzedzia  (34 pl., 202 KB)
+## narzedzia  (36 pl., 208 KB)
 - (zwinięte; `ls narzedzia`)
 
 ## narzedzia/jednorazowe  (5 pl., 14 KB)
@@ -775,7 +775,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 
 ## okladki/angielski/html  (27 pl., 2.9 MB)
 - (zwinięte; `ls okladki/angielski/html`) — duże:
-- ⚠`ANG.01.L001.operatory_i_czasowniki_posilkowe.html` 206 KB
+- ⚠`ANG.01.L001.operatory_i_czasowniki_posilkowe.html` 207 KB
 - ⚠`ANG.01.L002.czasy_terazniejsze_i_przeszle.html` 134 KB
 - ⚠`ANG.01.L003.present_perfect.html` 161 KB
 - ⚠`ANG.01.L004.past_simple_continuous.html` 144 KB

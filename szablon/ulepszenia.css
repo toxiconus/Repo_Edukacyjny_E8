@@ -173,12 +173,12 @@ section ul,section ol{padding-left:1.35rem}
 @media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
 /* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
 details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
-details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--text-muted,#5b6b73)}
 @media print{details.lk-log{display:none}}
 
 /* poziomy treści (lekcje z poziomy: tak) — filtr: muszę umieć / E8 / E8+rozszerzenie / wszystko */
 .poz-bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0;padding:10px 12px;border:1px solid var(--border,#d0d7de);border-radius:10px;background:var(--surface-soft,#f6f8fa);position:sticky;top:0;z-index:20}
-.poz-bar-t{font-weight:700;font-size:14px}.poz-bar-i{flex-basis:100%;font-size:13px;color:var(--muted,#5b6b73)}
+.poz-bar-t{font-weight:700;font-size:14px}.poz-bar-i{flex-basis:100%;font-size:13px;color:var(--text-muted,#5b6b73)}
 .poz-bar button{font:inherit;font-size:14px;padding:6px 12px;border-radius:999px;border:1px solid var(--border-strong,#9aa6ad);background:var(--surface,#fff);color:inherit;cursor:pointer}
 .poz-bar button[aria-pressed="true"]{background:var(--accent,#0b6bcb);color:var(--bg,#fff);border-color:transparent}
 body[data-poz="must"] .poz-roz,body[data-poz="must"] .poz-pon,body[data-poz="e8"] .poz-roz,body[data-poz="e8"] .poz-pon,body[data-poz="roz"] .poz-pon{display:none!important}

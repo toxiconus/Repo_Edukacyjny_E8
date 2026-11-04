@@ -114,9 +114,9 @@ strong{font-weight:700;color:var(--text);}
 .formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
 code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
 pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
-.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
-.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
-.mnemonic b{color:#78350f;}
+.mnemonic{background:var(--c-warn-bg,#fff8e1);border:2px dashed var(--c-warn,#d69e2e);color:var(--text);border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:var(--surface,#fff);padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--c-warn,#78350f);}
+.mnemonic b{color:var(--c-warn,#78350f);}
 .card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
 @media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
 .card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
@@ -623,12 +623,12 @@ section ul,section ol{padding-left:1.35rem}
 @media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
 /* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
 details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
-details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--text-muted,#5b6b73)}
 @media print{details.lk-log{display:none}}
 
 /* poziomy treści (lekcje z poziomy: tak) — filtr: muszę umieć / E8 / E8+rozszerzenie / wszystko */
 .poz-bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0;padding:10px 12px;border:1px solid var(--border,#d0d7de);border-radius:10px;background:var(--surface-soft,#f6f8fa);position:sticky;top:0;z-index:20}
-.poz-bar-t{font-weight:700;font-size:14px}.poz-bar-i{flex-basis:100%;font-size:13px;color:var(--muted,#5b6b73)}
+.poz-bar-t{font-weight:700;font-size:14px}.poz-bar-i{flex-basis:100%;font-size:13px;color:var(--text-muted,#5b6b73)}
 .poz-bar button{font:inherit;font-size:14px;padding:6px 12px;border-radius:999px;border:1px solid var(--border-strong,#9aa6ad);background:var(--surface,#fff);color:inherit;cursor:pointer}
 .poz-bar button[aria-pressed="true"]{background:var(--accent,#0b6bcb);color:var(--bg,#fff);border-color:transparent}
 body[data-poz="must"] .poz-roz,body[data-poz="must"] .poz-pon,body[data-poz="e8"] .poz-roz,body[data-poz="e8"] .poz-pon,body[data-poz="roz"] .poz-pon{display:none!important}
@@ -1681,7 +1681,7 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
         var h = '', s = EL[sel];
         for (var per = 1; per <= 5; per++) for (var g = 1; g <= 18; g++) { var e = ORD.map(function (x) { return EL[x]; }).filter(function (x) { return x.p === per && x.g === g; })[0]; if (!e) { h += '<div></div>'; continue; } var kk = kol(e); h += '<button type="button" data-s="' + e.s + '" title="' + e.n + '" style="aspect-ratio:1;min-width:0;padding:0;border:' + (e.s === sel ? '2px solid var(--text,#0f172a)' : '1px solid var(--border-strong,rgba(100,116,139,.4))') + ';border-radius:5px;background:' + kk + ';color:' + (kk.indexOf('var(') === 0 ? 'var(--text,#0f172a)' : '#0f172a') + ';font:700 11px system-ui;cursor:pointer">' + e.s + '</button>'; }
         grid.innerHTML = h;
-        var L = {adres: 'Pomarańczowy: wybrany pierwiastek; żółty: ten sam <b>okres</b> (wiersz = liczba powłok); niebieski: ta sama <b>grupa</b> (kolumna = podobna budowa zewnętrznej powłoki).', blok: 'Blok = typ podpowłoki obsadzanej na końcu: <b>s</b> (grupy 1–2 i He), <b>p</b> (13–18), <b>d</b> (3–12).', wal: 'Elektrony walencyjne w grupach głównych: grupy 1–2 → numer grupy, 13–18 → numer grupy − 10 (He: 2). Szare — metale przejściowe.', r: 'Promień kowalencyjny [pm]: rośnie w dół grupy, maleje w prawo okresu. Ciemniej = większy.', en: 'Elektroujemność (Pauling): rośnie w prawo i w górę. Ciemniej = większa.', ie: 'I energia jonizacji [kJ/mol]: rośnie w prawo i w górę. Ciemniej = większa.', tlenki: 'Charakter typowego tlenku pierwiastka: <span style="background:#dcfce7;padding:0 4px">zasadowy</span> <span style="background:#dbeafe;padding:0 4px">kwasowy</span> <span style="background:#ede9fe;padding:0 4px">amfoteryczny</span> <span style="background:#e2e8f0;padding:0 4px">obojętny</span>.'};
+        var L = {adres: 'Pomarańczowy: wybrany pierwiastek; żółty: ten sam <b>okres</b> (wiersz = liczba powłok); niebieski: ta sama <b>grupa</b> (kolumna = podobna budowa zewnętrznej powłoki).', blok: 'Blok = typ podpowłoki obsadzanej na końcu: <b>s</b> (grupy 1–2 i He), <b>p</b> (13–18), <b>d</b> (3–12).', wal: 'Elektrony walencyjne w grupach głównych: grupy 1–2 → numer grupy, 13–18 → numer grupy − 10 (He: 2). Szare — metale przejściowe.', r: 'Promień kowalencyjny [pm]: rośnie w dół grupy, maleje w prawo okresu. Ciemniej = większy.', en: 'Elektroujemność (Pauling): rośnie w prawo i w górę. Ciemniej = większa.', ie: 'I energia jonizacji [kJ/mol]: rośnie w prawo i w górę. Ciemniej = większa.', tlenki: 'Charakter typowego tlenku pierwiastka: <span style="color:#0f172a;background:#dcfce7;padding:0 4px">zasadowy</span> <span style="color:#0f172a;background:#dbeafe;padding:0 4px">kwasowy</span> <span style="color:#0f172a;background:#ede9fe;padding:0 4px">amfoteryczny</span> <span style="color:#0f172a;background:#e2e8f0;padding:0 4px">obojętny</span>.'};
         leg.innerHTML = L[tr];
         var w = wal(s), ox = oxEl(s.s), st = DAT.states[s.s];
         card.innerHTML = '<div>' + bohr(s, 150) + '</div><div style="flex:1;min-width:220px"><div style="font-size:20px;font-weight:700">' + s.s + ' — ' + s.n.toLowerCase() + '</div>Z = ' + s.z + ' · masa ' + String(s.m).replace('.', ',') + ' u · okres ' + s.p + ' · grupa ' + s.g + ' · blok ' + s.b + '<br>Powłoki: ' + (s.sh || []).join(' · ') + (w != null ? ' → <b>' + w + '</b> e⁻ walencyjne' : ' (metal przejściowy)') +

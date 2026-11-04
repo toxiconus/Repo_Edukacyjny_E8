@@ -5,7 +5,7 @@ const {chromium}=require('playwright');const fs=require('fs');const dir='/home/c
 const files=fs.readdirSync(dir).filter(f=>f.endsWith('.html')&&fs.readFileSync(dir+f,'utf8').includes('data-klocek='));
 for(const f of files){const p=await b.newPage({viewport:{width:420,height:900}});const errs=[];p.on('pageerror',e=>errs.push(e.message));
 await p.addInitScript(()=>localStorage.setItem('lekcja-poz','all'));await p.goto('file://'+dir+f);await p.waitForTimeout(700);
-await p.evaluate(()=>{try{localStorage.setItem('lekcja-motyw','dark')}catch(e){}});await p.reload();await p.waitForTimeout(500);
+await p.evaluate(()=>{try{localStorage.setItem('lekcja-motyw','dark')}catch(e){}});await p.reload();await p.waitForTimeout(900);
 const names=await p.evaluate(()=>[...new Set([...document.querySelectorAll('[data-klocek]')].map(e=>e.dataset.klocek))]);
 for(const n of names){if(seen.has(n))continue;seen.add(n);const k=p.locator('[data-klocek="'+n+'"]').first();try{await k.scrollIntoViewIfNeeded({timeout:3000});await p.waitForTimeout(250);
 const r=await k.evaluate(e=>{function lum(c){const m=c.match(/[\d.]+/g);if(!m)return null;const a=m.slice(0,3).map(x=>{x/=255;return x<=.03928?x/12.92:Math.pow((x+.055)/1.055,2.4)});return .2126*a[0]+.7152*a[1]+.0722*a[2]}
