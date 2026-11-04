@@ -191,7 +191,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 
 ## chemia/che-modular  (17 pl., 213 KB)
 - (zwinięte; `ls chemia/che-modular`) — duże:
-- ⚠`PROGRESS.md` 75 KB
+- ⚠`PROGRESS.md` 76 KB
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
 - `ARCHITEKTURA.md` 5 KB

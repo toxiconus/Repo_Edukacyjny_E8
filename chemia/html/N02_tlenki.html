@@ -2136,7 +2136,7 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
       cv.addEventListener('pointerup', function () { drag = null; });
       function rys() {
         [].forEach.call(p[0].children, function (b, i) { if (i < lista.length) U.zaznacz(b, i === k); });
-        var m = MOL[lista[k]], c = cv.getContext('2d'), W = cv.width, H = cv.height, sc = 105, cy_ = Math.cos(ay), sy = Math.sin(ay), cx_ = Math.cos(ax), sx = Math.sin(ax);
+        var m = MOL[lista[k]], c = cv.getContext('2d'), W = cv.width, H = cv.height, ext = Math.max.apply(null, m.a.map(function (a) { return Math.hypot(a[1], a[2], a[3]); })), sc = Math.max(105, Math.min(165, Math.min(W, H) * .34 / Math.max(ext, .6))), cy_ = Math.cos(ay), sy = Math.sin(ay), cx_ = Math.cos(ax), sx = Math.sin(ax);
         c.clearRect(0, 0, W, H);
         var P = m.a.map(function (a) { var x = a[1], y = a[2], z = a[3], x1 = x * cy_ + z * sy, z1 = -x * sy + z * cy_, y1 = y * cx_ - z1 * sx, z2 = y * sx + z1 * cx_; return {s: a[0], x: W / 2 + x1 * sc, y: H / 2 - y1 * sc, z: z2}; });
         var ob = [];
@@ -2166,7 +2166,7 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
           '<path d="M150 110 L120 200 Q112 230 140 230 H210 Q238 230 230 200 L200 110 Z" fill="#fde68a" fill-opacity=".55" stroke="#64748b" stroke-width="2.5"/><rect x="166" y="74" width="18" height="40" fill="none" stroke="#64748b" stroke-width="2.5"/>' +
           '<path d="M184 84 L330 84 L470 170" fill="none" stroke="#64748b" stroke-width="2.5"/><rect x="322" y="105" width="160" height="44" rx="6" fill="#bae6fd" fill-opacity=".4" stroke="#64748b" stroke-width="2" transform="rotate(31.6 402 127)"/>' +
           '<path d="M450 205 H500 V262 H450 Z" fill="#e0f2fe" fill-opacity=".6" stroke="#64748b" stroke-width="2.5"/><rect x="450" y="' + (262 - Math.min(55, p2 * 55)) + '" width="50" height="' + Math.min(55, p2 * 55) + '" fill="#38bdf8" fill-opacity=".7"/>' +
-          '<text x="365" y="40" text-anchor="middle" font-size="12" fill="currentColor">chłodnica (woda chłodząca)</text><text x="175" y="258" text-anchor="middle" font-size="12" fill="currentColor">kolba z mieszaniną</text><text x="475" y="276" text-anchor="middle" font-size="12" fill="currentColor">odbieralnik</text>' +
+          '<text x="365" y="40" text-anchor="middle" font-size="12" fill="currentColor">chłodnica (woda chłodząca)</text><text x="175" y="274" text-anchor="middle" font-size="12" fill="currentColor">kolba z mieszaniną</text><text x="475" y="276" text-anchor="middle" font-size="12" fill="currentColor">odbieralnik</text>' +
           '<path d="M165 244 q10 -22 20 0 q-10 -4 -20 0" fill="' + (on ? '#f97316' : '#cbd5e1') + '"/><rect x="140" y="244" width="70" height="8" rx="2" fill="#475569"/>' + kr +
           '<text x="30" y="40" font-size="13" fill="currentColor">termometr: <tspan font-weight="700">' + Math.round(temp) + ' °C</tspan></text></svg>';
         p[2].innerHTML = temp < 76 ? 'Mieszanina ogrzewa się. Składnik o <b>niższej temperaturze wrzenia</b> (np. etanol ≈ 78 °C) zacznie wrzeć pierwszy.' : 'Para składnika o niższej t. wrzenia przechodzi do chłodnicy, tam się <b>skrapla</b> i spływa do odbieralnika jako destylat. Destylacja = odparowanie + skroplenie.';
