@@ -1149,7 +1149,7 @@ Fe³⁺ i Cl⁻ → FeCl₃; chlorek żelaza(III); Fe₂O₃ + 6 HCl → 2 FeCl�
 > Reguła informacji zwrotnej: najpierw wskaż etap rozwiązania, na którym wystąpił błąd; dopiero potem pokaż pełne rozwiązanie. W zadaniach obliczeniowych podawaj jednostki i etapy pośrednie.
 :::
 
-@model stech-kalkulator-v01 | Kalkulator stechiometryczny — masa osadu, mole, odczynnik limitujący | Silnik CHE · otwiera się w oknie
+@klocek stechiometria {reakcja="8"} | Kalkulator stechiometryczny — masa osadu, mole, odczynnik limitujący
 @opis Kalkulator stechiometryczny: dla wybranej reakcji (np. spalanie, rozkład CaCO₃, CuO z H₂SO₄) wpisujesz masę lub objętość jednego reagenta, a model przelicza mole, masy i objętości gazów pozostałych substancji i wskazuje odczynnik w niedomiarze. Wniosek: ilości substancji w reakcji wynikają ze współczynników równania.
 
 ## 20 | Test {#test}

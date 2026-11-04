@@ -63,7 +63,8 @@
     "miareczkowanie_tm.js": "titration-merged: miareczkowanie — typ kwasu, wskaźnik, krzywa pH(V), kolba, autoplay (port; shim CHE.EQUILIBRIUM.titrationPH)",
     "przewodnictwo.js": "przewodnictwo: tester przewodnictwa + elektroliza (gazy na elektrodach) + model jonów wędrujących do elektrod; port sceny GFX conductivity",
     "dysocjacja.js": "kw-dysocjacja-v01: dysocjacja kwasów na żywo (α, pH z Ka, wykres α(c), krok po kroku)",
-    "miareczkowanie_biureta.js": "miareczkowanie-biureta: biureta + kolba + pH-metr + wskaźnik (fenoloftaleina/oranż)"
+    "miareczkowanie_biureta.js": "miareczkowanie-biureta: biureta + kolba + pH-metr + wskaźnik (fenoloftaleina/oranż)",
+    "stechiometria.js": "stechiometria: kalkulator reakcji (n, m, V, tok), tryb limitujący"
   },
   "lekcje": {
     "P01": [
@@ -420,7 +421,8 @@
       "kwasy_modele.js",
       "probowki_odczyn.js",
       "probowki_wybor.js",
-      "lancuch_przemian.js"
+      "lancuch_przemian.js",
+      "stechiometria.js"
     ],
     "F02": [
       "klocki.js",
