@@ -72,7 +72,7 @@ Przed napisaniem nowego klocka sprawdź tu rodzinę i użycia — nie twórz dub
 | `rownania-jonowe` | rownania_jonowe.js | Równania jonowe: po wyborze reakcji pokazuje zapis cząsteczkowy, jonowy pełny z jonami obserwatorowymi i jonowy skrócony. | {reakcja: 0} | C1c×1, J03×2, N03×1, N04×1, N05×1 |
 | `schemat-przemian` | schemat_przemian.js | Schemat dróg: kilka sposobów otrzymania tego samego typu substancji, każdy jako substraty → strzałka → produkty. | {} | C1c×1 |
 | `sklad-procentowy` | sklad_procentowy.js | Masa cząsteczkowa i skład procentowy związku wg wzoru; pasek proporcjonalny do mas pierwiastków. | {wzor: 'H2SO4', przyklady: 'H2O,CO2,H2SO4,Fe2O3,Ca(OH)2'} | C1c×1 |
-| `stechiometria` | stechiometria.js | Kalkulator stechiometryczny: dla wybranej reakcji podajesz masę, liczbę moli lub objętość gazu jednej substancji, a tabela pokazuje mole, masy i objętości wszystkich reag | {reakcja: 0} | N05×1 |
+| `stechiometria` | stechiometria.js | Kalkulator stechiometryczny: dla wybranej reakcji podajesz masę, liczbę moli lub objętość gazu jednej substancji, a tabela pokazuje mole, masy i objętości wszystkich reag | {reakcja: 0} | C2m×1, C3×1, N02×1, N05×1, R07×1 |
 | `tabela-rozpuszczalnosci` | tabela_rozpuszczalnosci.js | Tabela rozpuszczalności soli i wodorotlenków w 20 °C; kliknięcie komórki pokazuje wzór, nazwę i rozpuszczalność. | {} | C1c×1, J03×2, N03×1, N04×1, N05×1 |
 | `titration-merged` | miareczkowanie_tm.js | Titracja — scalony model: typ + wskaźnik + krzywa + kolba | (port; opcje z widoku) | N04×1 |
 | `trend-tlenkow` | okresowy_tlenki.js | Trend charakteru tlenków: w 3. okresie od zasadowych przez amfoteryczny do kwasowych oraz dla Cr i Mn — rosnący stopień utlenienia zwiększa charakter kwasowy. | {seria: 'okres 3'} | N02×1 |

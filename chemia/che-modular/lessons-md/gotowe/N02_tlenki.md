@@ -657,7 +657,7 @@ Równanie: 2 Mg + O₂ → 2 MgO
 :::
 :::
 
-@model stech-kalkulator-v01 | Kalkulator stechiometryczny — masa, mole, objętość gazu, odczynnik limitujący | CHE.STECH · reakcje z tej lekcji
+@klocek stechiometria {} | Kalkulator stechiometryczny — masa, mole, objętość gazu, odczynnik limitujący | CHE.STECH · reakcje z tej lekcji
 @opis Kalkulator stechiometryczny: dla wybranej reakcji (spalanie, rozkład CaCO₃, CuO z H₂SO₄) wpisujesz masę lub objętość jednego reagenta, a model przelicza mole, masy i objętość gazu oraz wskazuje odczynnik limitujący. Wniosek: wynik zawsze liczymy z substratu, którego jest za mało względem równania.
 
 ## 21 | Doświadczenia modelowe [[basic:E8]] {#doswiadczenia}

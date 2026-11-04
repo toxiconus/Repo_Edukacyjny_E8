@@ -31,7 +31,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | 13 | `f06-doswiadczenia-v01` | CHE pracownia (lite) | **5** | F06 ×5 |
 | 14 | `podzial-komorki` | BIO | **5** | BIO.01.L009.podzial_komorki_wzrost_regeneracja_i ×1, BIO.02.B2f.rozmnazanie_rozwoj ×1, BIO.02.L014.jak_komorki_ciala_powstaja_i ×1, BIO.02.L015.mejoza ×1, BIO.05.L050.powtorka_roczna ×1 |
 | 15 | `punnett` | BIO | **5** | BIO.01.B1b.krzyzowki_mendel ×1, BIO.02.L017.jak_przewidywac_dziedziczenie_jednej_cechy ×1, BIO.02.L018.jak_dziedziczy_sie_plec_i ×1, BIO.02.L019.dlaczego_grupy_krwi_nie_pasuja ×1, BIO.02.L021.powtorka_genetyki ×1 |
-| 16 | `stech-kalkulator-v01` | CHE model | **5** | C2m_mol_masa_molowa ×1, C3 ×1, F17 ×1, N02 ×1, R07 ×1 |
+| 16 | `stechiometria` | klocek | **5** | C2m_mol_masa_molowa ×1, C3 ×1, N02 ×1, N05 ×1, R07 ×1 |
 | 17 | `bilans-rownania` | klocek | **4** | C1c_wodorki_typy_reakcji ×1, C3 ×1, LKO_ORG05_kwasy ×1, LKO_ORG06_estry ×1 |
 | 18 | `doswiadczenie` | klocek | **4** | C4 ×2, C1c_kwasy_zasady_sole ×1, X04 ×1 |
 | 19 | `fotosynteza-oddychanie` | BIO | **4** | BIO.00.REV01.organizacja_i_chemizm_zycia ×1, BIO.01.L006.fotosynteza_skad_roslina_bierze_materie ×1, BIO.01.L007.oddychanie_komorkowe_skad_komorka_bierze ×1, BIO.06.L091.atp_jak_komorka_magazynuje_energie ×1 |
@@ -176,7 +176,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 - `schemat-przemian` (klocek) → C1c_kwasy_zasady_sole
 - `sekwencje` (BIO) → BIO.02.L010.dna_od_zera
 - `sklad-procentowy` (klocek) → C1c_masy_sklad_procentowy
-- `stechiometria` (klocek) → N05
+- `stech-kalkulator-v01` (CHE model) → F17
 - `szuflady-cech` (BIO) → BIO.02.L010.dna_od_zera
 - `titration-merged` (CHE model) → N04
 - `trend-tlenkow` (klocek) → N02
@@ -756,8 +756,8 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | `stand` | CHE gfx/naczynia | 0 | — |
 | `staw-antagonizm` | BIO | 2 | BIO.02.B2a.skora_uklad_ruchu ×1, BIO.07.U01.skora_i_uklad_ruchu ×1 |
 | `steam` | CHE gfx/efekty | 0 | — |
-| `stech-kalkulator-v01` | CHE model | 5 | C2m_mol_masa_molowa ×1, C3 ×1, F17 ×1, N02 ×1, R07 ×1 |
-| `stechiometria` | klocek | 1 | N05 ×1 |
+| `stech-kalkulator-v01` | CHE model | 1 | F17 ×1 |
+| `stechiometria` | klocek | 5 | C2m_mol_masa_molowa ×1, C3 ×1, N02 ×1, N05 ×1, R07 ×1 |
 | `stirBar` | CHE gfx/efekty | 0 | — |
 | `stopper` | CHE gfx/efekty | 0 | — |
 | `substance` | CHE model | 0 | — |
@@ -903,9 +903,9 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | chemia | C1c_kwasy_zasady_sole | `doswiadczenie` ×1, `gra-klasyfikacja` ×1, `karta-bhp` ×1, `probowki-wybor` ×1, `rownania-jonowe` ×1, `schemat-przemian` ×1, `tabela-rozpuszczalnosci` ×1, `wzor-2d` ×2 |
 | chemia | C1c_masy_sklad_procentowy | `izotopy` ×1, `sklad-procentowy` ×1 |
 | chemia | C1c_wodorki_typy_reakcji | `bilans-rownania` ×1, `n05-trendy-v01` ×1, `n05-wodorki-v01` ×1, `profil-energii` ×1, `wzor-2d` ×3 |
-| chemia | C2m_mol_masa_molowa | `kalkulator-mola` ×1, `stech-kalkulator-v01` ×1, `trojkat-przeliczen` ×2 |
+| chemia | C2m_mol_masa_molowa | `kalkulator-mola` ×1, `stechiometria` ×1, `trojkat-przeliczen` ×2 |
 | chemia | C2w_wzor_elementarny_rzeczywisty | `cuso4Hydrate` ×1, `karta-bhp` ×1, `probowki-odczyn` ×1, `sole-doswiadczenia-v01` ×1 |
-| chemia | C3 | `bilans-rownania` ×1, `stech-kalkulator-v01` ×1 |
+| chemia | C3 | `bilans-rownania` ×1, `stechiometria` ×1 |
 | chemia | C4 | `doswiadczenie` ×2, `karta-bhp` ×1, `probowki-odczyn` ×3 |
 | chemia | CHE.00.LAB.doswiadczenia | — |
 | chemia | E01 | — |
@@ -982,7 +982,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | chemia | LKO_Z36_konfiguracje_do_z36 | — |
 | chemia | LKO_pulapki_wapno_woda_wapienna | — |
 | chemia | N01 | `f01-doswiadczenia-v01` ×1, `f01WodaWapienna` ×1, `karta-bhp` ×1, `palnik-gazowy` ×1, `probowki-wybor` ×1, `zbieranie-gazu` ×2 |
-| chemia | N02 | `caoH2o` ×1, `caoh2Co2` ×1, `cuoH2so4` ×1, `czasteczki-3d` ×1, `detektor-tlenku` ×1, `konstruktor-tlenku` ×1, `lancuch-przemian` ×3, `mgO2` ×1, `n01-doswiadczenia-v01` ×3, `n01-spalanie-v01` ×1, `palenie` ×1, `palnik-gazowy` ×1, `probowki-wybor` ×1, `reaktor-tlenku` ×1, `stech-kalkulator-v01` ×1, `trend-tlenkow` ×1, `uklad-okresowy-54` ×1 |
+| chemia | N02 | `caoH2o` ×1, `caoh2Co2` ×1, `cuoH2so4` ×1, `czasteczki-3d` ×1, `detektor-tlenku` ×1, `konstruktor-tlenku` ×1, `lancuch-przemian` ×3, `mgO2` ×1, `n01-doswiadczenia-v01` ×3, `n01-spalanie-v01` ×1, `palenie` ×1, `palnik-gazowy` ×1, `probowki-wybor` ×1, `reaktor-tlenku` ×1, `stechiometria` ×1, `trend-tlenkow` ×1, `uklad-okresowy-54` ×1 |
 | chemia | N03 | `-` ×1, `aloh3Naoh` ×1, `caoH2o` ×1, `caoh2Co2` ×1, `cuso4Naoh` ×1, `fecl3Naoh` ×1, `hclNaOH` ×1, `n02-doswiadczenia-v01` ×8, `n02-dysocjacja-v01` ×1, `n02-otrzymywanie-v01` ×1, `n02-przeglad-v01` ×1, `n02-reaktor-v01` ×1, `n02-stracanie-v01` ×1, `n02-wzory-v01` ×1, `n02-zobojetnianie-v01` ×1, `naH2o` ×1, `ph-indicators-v03` ×2, `rownania-jonowe` ×1, `tabela-rozpuszczalnosci` ×1, `wskazniki-statyw` ×1 |
 | chemia | N04 | `acid-rain-v01` ×1, `acidMetal` ×1, `bufor` ×1, `carbonate` ×1, `conductivity` ×2, `cuoH2so4` ×1, `dysocjacja-vs-jonizacja` ×1, `gra-klasyfikacja` ×1, `hclNaOH` ×1, `indicator` ×1, `karta-bhp` ×1, `kw-doswiadczenia-v01` ×10, `kw-dysocjacja-v01` ×1, `kwasy-reszty` ×1, `kwasy-rozcienczanie` ×1, `miareczkowanie-biureta` ×1, `ph-indicators-v03` ×1, `probowki` ×1, `probowki-odczyn` ×2, `probowki-wybor` ×2, `przewodnictwo` ×1, `reakcje-przewidz` ×1, `rownania-jonowe` ×1, `szereg` ×1, `tabela-rozpuszczalnosci` ×1, `titration-merged` ×1, `wlasciwosci` ×2, `wskazniki-statyw` ×1, `wzor-2d` ×6, `zbieranie-gazu` ×1, `zlewki-rx` ×16 |
 | chemia | N05 | `bacl2Na2so4` ×1, `cacl2Na2co3` ×1, `caoH2o` ×1, `cuoH2so4` ×1, `cuso4Hydrate` ×1, `hclNaOH` ×1, `hyd-na2co3` ×1, `hyd-nh4cl` ×1, `kwasy-reszty` ×1, `lancuch-przemian` ×1, `mapa-jonow` ×1, `na2co3Hcl` ×1, `probowki-wybor` ×1, `przewodnictwo` ×1, `rownania-jonowe` ×1, `rx-ag-cl` ×2, `rx-cu-naoh` ×1, `rx-fe-cuso4` ×1, `sole-doswiadczenia-v01` ×14, `stechiometria` ×1, `tabela-rozpuszczalnosci` ×1 |
@@ -1010,7 +1010,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | chemia | R03A_mieszanie_roztworow_regula_krzyzowa | `regula-krzyzowa` ×1 |
 | chemia | R04 | — |
 | chemia | R06 | — |
-| chemia | R07 | `nadmiar-substratu` ×1, `stech-kalkulator-v01` ×1 |
+| chemia | R07 | `nadmiar-substratu` ×1, `stechiometria` ×1 |
 | chemia | R08 | — |
 | chemia | R09 | — |
 | chemia | REV01 | — |

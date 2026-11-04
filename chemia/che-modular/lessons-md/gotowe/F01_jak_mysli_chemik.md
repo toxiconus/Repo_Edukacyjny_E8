@@ -383,7 +383,7 @@ Nie każde doświadczenie wymaga skomplikowanej kontroli, ale każde powinno mie
 
 ## 10 | Doświadczenia {#doswiadczenia}
 
-@model f01-doswiadczenia-v01 | Pracownia: co naprawdę się zmieniło? | zjawiska fizyczne i reakcje w zlewce, parownicy, probówce i tyglu — obserwacja, wniosek, BHP
+@klocek f01-doswiadczenia-v01 | Pracownia: co naprawdę się zmieniło? | zjawiska fizyczne i reakcje w zlewce, parownicy, probówce i tyglu — obserwacja, wniosek, BHP
 @opis Pracownia z doświadczeniami w zlewce, parownicy, probówce i tyglu: rozpuszczanie soli, odparowanie roztworu, soda z octem, woda wapienna z CO₂, żelazo z siarką po ogrzaniu, spalanie magnezu; przy każdym obserwacje, wniosek i zasady BHP. Wniosek: tylko część zmian to reakcje chemiczne — rozstrzyga, czy powstała nowa substancja.
 
 ::: dosw | Doświadczenie 1 — Co naprawdę się zmieniło? (trzy naczynia)

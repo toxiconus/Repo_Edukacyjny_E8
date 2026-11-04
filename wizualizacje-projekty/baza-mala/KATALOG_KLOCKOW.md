@@ -8,7 +8,7 @@ Ta paczka zawiera kopie tego, co już działa w lekcjach. Zewnętrzny model moż
 
 | Folder | Zawartość | Rozmiar |
 |---|---|---|
-| `klocki` | kopia folderu | 727 KB |
+| `klocki` | kopia folderu | 734 KB |
 | `klocki/lite` | kopia folderu | 36 KB |
 | `gfx` | kopia folderu | 729 KB |
 | `tablice` | kopia folderu | 1612 KB |
@@ -89,6 +89,7 @@ Ta paczka zawiera kopie tego, co już działa w lekcjach. Zewnętrzny model moż
 | `stechiometria.js` | stechiometria: kalkulator reakcji (n, m, V, tok), tryb limitujący |
 | `wodorotlenki_n02.js` | rodzina n02-*: wzory, przegląd, otrzymywanie, strącanie, zobojętnianie, dysocjacja, reaktor wodorotlenków |
 | `pracownie_rx.js` | pracownie rx-lite: n02-doswiadczenia-v01 (wodorotlenki), sole-doswiadczenia-v01 (sole) |
+| `pracownie_f.js` | pracownie rx-lite F01/F03 |
 
 Lekcje i pliki, które wymieniają (`manifest.json` → `lekcje`):
 
@@ -112,23 +113,23 @@ Lekcje i pliki, które wymieniają (`manifest.json` → `lekcje`):
 - **X04**: `klocki.js`, `pomocnicze.js`, `naczynia.js`, `probowki_odczyn.js`, `probowki_wybor.js`, `doswiadczenie.js`, `karta_bhp.js`
 - **J03**: `klocki.js`, `pomocnicze.js`, `ui_klocki.js`, `naczynia.js`, `probowki_odczyn.js`, `probowki_wybor.js`, `doswiadczenie.js`, `karta_bhp.js`, `tabela_rozpuszczalnosci.js`, `rownania_jonowe.js`, `osady_dwie_sole.js`, `jony_w_wodzie.js`
 - **C1c**: `klocki.js`, `pomocnicze.js`, `ui_klocki.js`, `naczynia.js`, `probowki_odczyn.js`, `probowki_wybor.js`, `c2d_core.js`, `c2d_grupy.js`, `c2d_wzor.js`, `c2d_prosta.js`, `c2d_klocek.js`, `konfiguracje.js`, `diagram_bohra.js`, `sklad_procentowy.js`, `doswiadczenie.js`, `karta_bhp.js`, `schemat_przemian.js`, `tabela_rozpuszczalnosci.js`, `rownania_jonowe.js`, `izotopy.js`, `model_widok.js`, `z_n05_wodorki.js`, `gra_klasyfikacja.js`, `profil_energii.js`
-- **C2m**: `klocki.js`, `pomocnicze.js`, `trojkat_przeliczen.js`, `kalkulator_mola.js`
+- **C2m**: `klocki.js`, `pomocnicze.js`, `trojkat_przeliczen.js`, `kalkulator_mola.js`, `ui_klocki.js`, `stechiometria.js`
 - **C4**: `klocki.js`, `pomocnicze.js`, `naczynia.js`, `probowki_odczyn.js`, `probowki_wybor.js`, `karta_bhp.js`, `doswiadczenie.js`
 - **B1b**: `klocki.js`, `pomocnicze.js`, `krzyzowka_mendla.js`
 - **R03**: `klocki.js`, `pomocnicze.js`, `krzywe_rozpuszczalnosci.js`, `regula_krzyzowa.js`, `karta_bhp.js`
 - **C2w**: `klocki.js`, `pomocnicze.js`, `naczynia.js`, `probowki_odczyn.js`, `karta_bhp.js`
-- **C3**: `klocki.js`, `pomocnicze.js`, `bilans_rownania.js`
-- **R07**: `klocki.js`, `pomocnicze.js`, `nadmiar_substratu.js`
+- **C3**: `klocki.js`, `pomocnicze.js`, `bilans_rownania.js`, `ui_klocki.js`, `stechiometria.js`
+- **R07**: `klocki.js`, `pomocnicze.js`, `nadmiar_substratu.js`, `ui_klocki.js`, `stechiometria.js`
 - **B2c**: `klocki.js`, `pomocnicze.js`, `petla_regulacji.js`
 - **B2e**: `klocki.js`, `pomocnicze.js`, `petla_regulacji.js`
 - **B2g**: `klocki.js`, `pomocnicze.js`, `petla_regulacji.js`
 - **N01**: `klocki.js`, `pomocnicze.js`, `ui_klocki.js`, `zbieranie_gazu.js`, `karta_bhp.js`, `naczynia.js`, `probowki_odczyn.js`, `probowki_wybor.js`, `palnik_gazowy.js`
-- **N02**: `klocki.js`, `pomocnicze.js`, `karta_bhp.js`, `ui_klocki.js`, `chemia_wstep.js`, `naczynia.js`, `probowki_odczyn.js`, `probowki_wybor.js`, `palnik_gazowy.js`, `zbieranie_gazu.js`, `lancuch_przemian.js`, `palenie.js`, `plomien.js`, `okresowy_tlenki.js`
+- **N02**: `klocki.js`, `pomocnicze.js`, `karta_bhp.js`, `chemia_wstep.js`, `naczynia.js`, `probowki_odczyn.js`, `probowki_wybor.js`, `palnik_gazowy.js`, `zbieranie_gazu.js`, `lancuch_przemian.js`, `palenie.js`, `plomien.js`, `okresowy_tlenki.js`, `ui_klocki.js`, `stechiometria.js`
 - **N04**: `klocki.js`, `pomocnicze.js`, `ui_klocki.js`, `../lite/rx-lite.js`, `naczynia.js`, `dane/pierwiastki.js`, `probowki_odczyn.js`, `probowki_wybor.js`, `zbieranie_gazu.js`, `jony_w_wodzie.js`, `tabela_rozpuszczalnosci.js`, `rownania_jonowe.js`, `gra_klasyfikacja.js`, `karta_bhp.js`, `c2d_core.js`, `c2d_grupy.js`, `c2d_wzor.js`, `c2d_prosta.js`, `c2d_klocek.js`, `model_widok.js`, `ph_panel.js`, `dysocjacja.js`, `ruch_che.js`, `acid_rain.js`, `miareczkowanie_tm.js`, `przewodnictwo.js`, `kwasy_modele.js`, `znaki.js`, `probowki.js`, `zlewka_rx.js`, `miareczkowanie_biureta.js`
 - **N05**: `klocki.js`, `pomocnicze.js`, `ui_klocki.js`, `model_widok.js`, `naczynia.js`, `bilans_rownania.js`, `zbieranie_gazu.js`, `karta_bhp.js`, `przewodnictwo.js`, `tabela_rozpuszczalnosci.js`, `rownania_jonowe.js`, `kwasy_modele.js`, `probowki_odczyn.js`, `probowki_wybor.js`, `lancuch_przemian.js`, `stechiometria.js`, `../lite/rx-lite.js`, `zlewka_rx.js`, `pracownie_rx.js`
 - **F02**: `klocki.js`, `pomocnicze.js`, `model_widok.js`, `z_f02_czastki.js`, `z_f02_magnes_fes.js`, `karta_bhp.js`, `ui_klocki.js`, `chemia_wstep.js`
-- **F03**: `klocki.js`, `pomocnicze.js`, `karta_bhp.js`, `ui_klocki.js`, `chemia_wstep.js`
-- **F01**: `klocki.js`, `pomocnicze.js`, `karta_bhp.js`, `ui_klocki.js`, `chemia_wstep.js`
+- **F03**: `klocki.js`, `pomocnicze.js`, `karta_bhp.js`, `ui_klocki.js`, `chemia_wstep.js`, `model_widok.js`, `../lite/rx-lite.js`, `pracownie_f.js`
+- **F01**: `klocki.js`, `pomocnicze.js`, `karta_bhp.js`, `ui_klocki.js`, `chemia_wstep.js`, `model_widok.js`, `../lite/rx-lite.js`, `pracownie_f.js`
 - **REV01**: `klocki.js`, `karta_bhp.js`
 - **F04**: `klocki.js`, `model_widok.js`, `z_f04_nuklid.js`, `pomocnicze.js`, `ui_klocki.js`, `diagram_bohra.js`, `okresowy_tlenki.js`
 - **F05**: `klocki.js`, `pomocnicze.js`, `izotopy.js`

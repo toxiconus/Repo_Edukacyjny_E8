@@ -211,7 +211,7 @@ Składniki mieszaniny zachowują swoje właściwości (F02), więc każda **ró�
 
 > Sublimację jodu prowadzimy wyłącznie jako pokaz pod wyciągiem — pary jodu są szkodliwe.
 
-@model f03-rozdzielanie-v01 | Pracownia: rozdzielanie mieszanin | zawiesiny i roztwór w zlewce — sedymentacja, sączenie, odparowanie; jaką różnicę właściwości wykorzystujesz?
+@klocek f03-rozdzielanie-v01 | Pracownia: rozdzielanie mieszanin | zawiesiny i roztwór w zlewce — sedymentacja, sączenie, odparowanie; jaką różnicę właściwości wykorzystujesz?
 @opis Zlewki z zawiesinami i roztworem pokazane w kolejnych metodach: sedymentacja (osad opada na dno), sączenie (osad zostaje na sączku, klarowny przesącz spływa do zlewki), odparowanie (w parownicy zostaje substancja stała). Wniosek: metodę rozdzielania dobiera się do różnicy właściwości składników mieszaniny.
 
 ## 6 | Procedura doboru metody [[basic:E8]] {#dobor}

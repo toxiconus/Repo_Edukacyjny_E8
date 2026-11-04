@@ -66,7 +66,8 @@
     "miareczkowanie_biureta.js": "miareczkowanie-biureta: biureta + kolba + pH-metr + wskaźnik (fenoloftaleina/oranż)",
     "stechiometria.js": "stechiometria: kalkulator reakcji (n, m, V, tok), tryb limitujący",
     "wodorotlenki_n02.js": "rodzina n02-*: wzory, przegląd, otrzymywanie, strącanie, zobojętnianie, dysocjacja, reaktor wodorotlenków",
-    "pracownie_rx.js": "pracownie rx-lite: n02-doswiadczenia-v01 (wodorotlenki), sole-doswiadczenia-v01 (sole)"
+    "pracownie_rx.js": "pracownie rx-lite: n02-doswiadczenia-v01 (wodorotlenki), sole-doswiadczenia-v01 (sole)",
+    "pracownie_f.js": "pracownie rx-lite F01/F03"
   },
   "lekcje": {
     "P01": [
@@ -298,7 +299,9 @@
       "klocki.js",
       "pomocnicze.js",
       "trojkat_przeliczen.js",
-      "kalkulator_mola.js"
+      "kalkulator_mola.js",
+      "ui_klocki.js",
+      "stechiometria.js"
     ],
     "C4": [
       "klocki.js",
@@ -331,12 +334,16 @@
     "C3": [
       "klocki.js",
       "pomocnicze.js",
-      "bilans_rownania.js"
+      "bilans_rownania.js",
+      "ui_klocki.js",
+      "stechiometria.js"
     ],
     "R07": [
       "klocki.js",
       "pomocnicze.js",
-      "nadmiar_substratu.js"
+      "nadmiar_substratu.js",
+      "ui_klocki.js",
+      "stechiometria.js"
     ],
     "B2c": [
       "klocki.js",
@@ -368,7 +375,6 @@
       "klocki.js",
       "pomocnicze.js",
       "karta_bhp.js",
-      "ui_klocki.js",
       "chemia_wstep.js",
       "naczynia.js",
       "probowki_odczyn.js",
@@ -378,7 +384,9 @@
       "lancuch_przemian.js",
       "palenie.js",
       "plomien.js",
-      "okresowy_tlenki.js"
+      "okresowy_tlenki.js",
+      "ui_klocki.js",
+      "stechiometria.js"
     ],
     "N04": [
       "klocki.js",
@@ -449,14 +457,20 @@
       "pomocnicze.js",
       "karta_bhp.js",
       "ui_klocki.js",
-      "chemia_wstep.js"
+      "chemia_wstep.js",
+      "model_widok.js",
+      "../lite/rx-lite.js",
+      "pracownie_f.js"
     ],
     "F01": [
       "klocki.js",
       "pomocnicze.js",
       "karta_bhp.js",
       "ui_klocki.js",
-      "chemia_wstep.js"
+      "chemia_wstep.js",
+      "model_widok.js",
+      "../lite/rx-lite.js",
+      "pracownie_f.js"
     ],
     "REV01": [
       "klocki.js",
