@@ -319,3 +319,4 @@
 - 2026-11-04: rx-lite efekty: piana rośnie nad ciecz (foamKeep/foamCol — węgiel z cukru zostaje), dym większy i kolorowy (fumeCol — brunatny NO₂), dłuższy zasięg.
 - 2026-11-04: klocki.js: kanwy klocków wyśrodkowane; osady-dwie-sole: selecty w stylu wspólnym (siatka, tokeny).
 - 2026-11-04: lancuch-przemian niższy (wys 190); probowki-odczyn: etykieta PRZED/PO wyśrodkowana.
+- 2026-11-04: bilans-rownania: przyciski −/+ 32 px. Test dotyku: zostały tylko komórki układu okresowego/palniki/izotopy i checkbox w etykiecie probówek (etykieta jest celem).
