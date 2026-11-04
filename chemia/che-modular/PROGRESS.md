@@ -321,3 +321,4 @@
 - 2026-11-04: lancuch-przemian niższy (wys 190); probowki-odczyn: etykieta PRZED/PO wyśrodkowana.
 - 2026-11-04: bilans-rownania: przyciski −/+ 32 px. Test dotyku: zostały tylko komórki układu okresowego/palniki/izotopy i checkbox w etykiecie probówek (etykieta jest celem).
 - 2026-11-04: izotopy: powłoki elektronowe 2-8-8-2, tabela mas z odstępami; lab.css: wspólny styl domyślny selectów/pól (:where, nadpisywalny).
+- 2026-11-04: zrzuty ciemne: miareczkowanie, bufor, elektryzowanie, kule-ladunek — czytelne; 7 zgłoszeń testu kontrastu = fałszywe (pastelowe pigułki z ciemnym tekstem).
