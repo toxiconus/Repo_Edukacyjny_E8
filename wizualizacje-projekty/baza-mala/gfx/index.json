@@ -1012,27 +1012,6 @@
  "che-visual-library-v001": [
   {
    "kind": "widoki",
-   "id": "kw-szereg-metali-v01",
-   "subject": "chemia",
-   "file": "chemia/widoki/kw-szereg-metali-v01.js",
-   "bytes": 1253
-  },
-  {
-   "kind": "widoki",
-   "id": "kw-wlasciwosci-v01",
-   "subject": "chemia",
-   "file": "chemia/widoki/kw-wlasciwosci-v01.js",
-   "bytes": 450
-  },
-  {
-   "kind": "widoki",
-   "id": "kw-doswiadczenia-v01",
-   "subject": "chemia",
-   "file": "chemia/widoki/kw-doswiadczenia-v01.js",
-   "bytes": 2054
-  },
-  {
-   "kind": "widoki",
    "id": "kinetics-v01",
    "subject": "chemia",
    "file": "chemia/widoki/kinetics-v01.js",
@@ -1047,27 +1026,6 @@
   },
   {
    "kind": "widoki",
-   "id": "neutralization",
-   "subject": "chemia",
-   "file": "chemia/widoki/neutralization.js",
-   "bytes": 481
-  },
-  {
-   "kind": "widoki",
-   "id": "rownania-jonowe-v01",
-   "subject": "chemia",
-   "file": "chemia/widoki/rownania-jonowe-v01.js",
-   "bytes": 265
-  },
-  {
-   "kind": "widoki",
-   "id": "tabela-rozpuszczalnosci-v01",
-   "subject": "chemia",
-   "file": "chemia/widoki/tabela-rozpuszczalnosci-v01.js",
-   "bytes": 2690
-  },
-  {
-   "kind": "widoki",
    "id": "sole-doswiadczenia-v01",
    "subject": "chemia",
    "file": "chemia/widoki/sole-doswiadczenia-v01.js",
@@ -1079,20 +1037,6 @@
    "subject": "chemia",
    "file": "chemia/widoki/kw-dysocjacja-v01.js",
    "bytes": 11566
-  },
-  {
-   "kind": "widoki",
-   "id": "kw-bufor-v01",
-   "subject": "chemia",
-   "file": "chemia/widoki/kw-bufor-v01.js",
-   "bytes": 5202
-  },
-  {
-   "kind": "widoki",
-   "id": "kw-reszty-v01",
-   "subject": "chemia",
-   "file": "chemia/widoki/kw-reszty-v01.js",
-   "bytes": 2327
   },
   {
    "kind": "widoki",
@@ -1128,41 +1072,6 @@
    "subject": "fizyka",
    "file": "fizyka/widoki/fiz-ladunek-v01.js",
    "bytes": 8318
-  },
-  {
-   "kind": "widoki",
-   "id": "n01-tlenki-v01",
-   "subject": "chemia",
-   "file": "chemia/widoki/n01-tlenki-v01.js",
-   "bytes": 4440
-  },
-  {
-   "kind": "widoki",
-   "id": "n01-konstruktor-v01",
-   "subject": "chemia",
-   "file": "chemia/widoki/n01-konstruktor-v01.js",
-   "bytes": 5053
-  },
-  {
-   "kind": "widoki",
-   "id": "n01-reaktor-v01",
-   "subject": "chemia",
-   "file": "chemia/widoki/n01-reaktor-v01.js",
-   "bytes": 4105
-  },
-  {
-   "kind": "widoki",
-   "id": "n01-trend-v01",
-   "subject": "chemia",
-   "file": "chemia/widoki/n01-trend-v01.js",
-   "bytes": 3607
-  },
-  {
-   "kind": "widoki",
-   "id": "n01-spalanie-v01",
-   "subject": "chemia",
-   "file": "chemia/widoki/n01-spalanie-v01.js",
-   "bytes": 3013
   },
   {
    "kind": "widoki",
@@ -1222,13 +1131,6 @@
   },
   {
    "kind": "widoki",
-   "id": "n01-doswiadczenia-v01",
-   "subject": "chemia",
-   "file": "chemia/widoki/n01-doswiadczenia-v01.js",
-   "bytes": 438
-  },
-  {
-   "kind": "widoki",
    "id": "n02-doswiadczenia-v01",
    "subject": "chemia",
    "file": "chemia/widoki/n02-doswiadczenia-v01.js",
@@ -1240,13 +1142,6 @@
    "subject": "wspolne",
    "file": "wspolne/widoki/che-test-silnika-v01.js",
    "bytes": 4604
-  },
-  {
-   "kind": "widoki",
-   "id": "j03-osady-v01",
-   "subject": "chemia",
-   "file": "chemia/widoki/j03-osady-v01.js",
-   "bytes": 3142
   }
  ]
 }

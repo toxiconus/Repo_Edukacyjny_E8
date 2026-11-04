@@ -248,9 +248,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `termo-redoks.json` 3 KB
 - ⚠`weryfikacja.json` 836 KB
 
-## chemia/che-modular/engine/src/gfx  (2 pl., 35 KB)
+## chemia/che-modular/engine/src/gfx  (2 pl., 33 KB)
 - `KATALOG.md` 11 KB
-- `index.json` 24 KB
+- `index.json` 22 KB
 
 ## chemia/che-modular/engine/src/gfx/_szkielet/che-lab-engine-v001  (13 pl., 306 KB)
 - (zwinięte; `ls chemia/che-modular/engine/src/gfx/_szkielet/che-lab-engine-v001`)
@@ -290,7 +290,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/engine/src/gfx/chemia/szkielet  (1 pl., 2 KB)
 - `szkielet-zygzak.js` 2 KB
 
-## chemia/che-modular/engine/src/gfx/chemia/widoki  (28 pl., 99 KB)
+## chemia/che-modular/engine/src/gfx/chemia/widoki  (13 pl., 62 KB)
 - (zwinięte; `ls chemia/che-modular/engine/src/gfx/chemia/widoki`)
 
 ## chemia/che-modular/engine/src/gfx/fizyka/efekty  (1 pl., 0 KB)
@@ -1188,9 +1188,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `POL_KATALOG_GRAFIK.md` 1 KB
 - `pol-viz.js` 22 KB
 
-## wizualizacje-projekty/baza-mala/gfx  (2 pl., 35 KB)
+## wizualizacje-projekty/baza-mala/gfx  (2 pl., 33 KB)
 - `KATALOG.md` 11 KB
-- `index.json` 24 KB
+- `index.json` 22 KB
 
 ## wizualizacje-projekty/baza-mala/gfx/_szkielet/che-lab-engine-v001  (13 pl., 306 KB)
 - (zwinięte; `ls wizualizacje-projekty/baza-mala/gfx/_szkielet/che-lab-engine-v001`)
@@ -1230,7 +1230,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## wizualizacje-projekty/baza-mala/gfx/chemia/szkielet  (1 pl., 2 KB)
 - `szkielet-zygzak.js` 2 KB
 
-## wizualizacje-projekty/baza-mala/gfx/chemia/widoki  (28 pl., 99 KB)
+## wizualizacje-projekty/baza-mala/gfx/chemia/widoki  (13 pl., 62 KB)
 - (zwinięte; `ls wizualizacje-projekty/baza-mala/gfx/chemia/widoki`)
 
 ## wizualizacje-projekty/baza-mala/gfx/fizyka/efekty  (1 pl., 0 KB)

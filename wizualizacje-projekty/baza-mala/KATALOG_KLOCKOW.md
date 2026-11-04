@@ -10,7 +10,7 @@ Ta paczka zawiera kopie tego, co już działa w lekcjach. Zewnętrzny model moż
 |---|---|---|
 | `klocki` | kopia folderu | 744 KB |
 | `klocki/lite` | kopia folderu | 36 KB |
-| `gfx` | kopia folderu | 729 KB |
+| `gfx` | kopia folderu | 690 KB |
 | `tablice` | kopia folderu | 1612 KB |
 | `biblioteki/chemia/rozszerzenia.js` | kopia pliku | 87 KB |
 | `biblioteki/chemia/KATALOG_MODELI.md` | kopia pliku | 13 KB |
@@ -345,4 +345,4 @@ Zbiory JSON z danymi referencyjnymi (pierwiastki, substancje, reakcje, rozpuszcz
 
 ## 7. Gfx — liczba wpisów
 
-Wpisów w `gfx/index.json`: **178**. Podział: chemia 158, fizyka 12, wspolne 8.
+Wpisów w `gfx/index.json`: **163**. Podział: chemia 143, fizyka 12, wspolne 8.

@@ -36,4 +36,4 @@ Bez odpowiednika (sprawdzić przed archiwizacją, czy lekcje N01 ich nie planuj�
 - Bez odpowiednika został tylko `kinetics-v01` (do przeportowania).
 
 ## Decyzja
-Nic nie usunięto. Archiwizacja (przeniesienie do `chemia/archiwum/`) po akceptacji; wymaga przebudowy `gfx/index.json`.
+Zrobione 2026-11-04: 15 widoków przeniesionych do `chemia/archiwum/gfx_widoki_duze_2026-11/`, `gfx/index.json` przebudowany. W silniku został `kinetics-v01` (brak klocka).

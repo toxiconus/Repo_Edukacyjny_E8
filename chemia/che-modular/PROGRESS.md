@@ -301,3 +301,4 @@
 - 2026-11-04: lekcje gotowe/ — stechiometria (C2m, C3, N02, R07), pracownie F01/F03 jako klocki; w lekcjach głównych 0 @model, zostaje F17 (f17-bilans, stech).
 - 2026-11-04: bilans-rownania z ładunkiem jonów (Cu + Ag^+); F17 w manifeście, bez @model.
 - 2026-11-04: wszystkie @zlewka → zlewka-rx/zlewki-rx (szereg-hcl, fluorowce, stezone-kwasy, litowce-woda); pracownia n01-doswiadczenia; audyt: poza kinetics wszystkie widoki mają odpowiedniki.
+- 2026-11-04: zarchiwizowano 15 nieużywanych widoków dużego silnika (archiwum/gfx_widoki_duze_2026-11), indeks gfx przebudowany.
