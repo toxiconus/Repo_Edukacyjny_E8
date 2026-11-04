@@ -93,4 +93,41 @@
       host.appendChild(bar);
     }
   });
+
+  /* KLOCEK: reakcje-przewidz — „przewidź i sprawdź”: uczeń wybiera reakcję kwasu i przewidywaną obserwację, potem zlewka (rx-lite) pokazuje wynik, równanie i ocenę przewidywania. */
+  var PRZ = [
+    ['znHcl', 'Zn + HCl', 'gaz', 'Cynk stoi przed wodorem w szeregu aktywności — wypiera H₂ z kwasu.'],
+    ['cuHcl', 'Cu + HCl', 'brak', 'Miedź stoi za wodorem — nie wypiera go z rozcieńczonego kwasu.'],
+    ['caco3Hcl', 'CaCO₃ + HCl', 'gaz', 'Węglan + kwas → sól + H₂CO₃, który rozkłada się na H₂O i CO₂↑.'],
+    ['cuoH2so4', 'CuO + H₂SO₄ (ogrzewanie)', 'barwa', 'Czarny tlenek się roztwarza, powstaje niebieski roztwór CuSO₄.'],
+    ['naohHclPhph', 'NaOH + HCl (fenoloftaleina)', 'barwa', 'Zobojętnienie: malinowa barwa zasady znika — roztwór staje się bezbarwny.'],
+    ['na2sio3Hcl', 'Na₂SiO₃ + HCl', 'osad', 'Kwas krzemowy jest słabym, nierozpuszczalnym kwasem — wytrąca się galaretowaty osad.']
+  ];
+  var OBS = [['gaz', 'wydziela się gaz'], ['barwa', 'zmienia się barwa'], ['osad', 'wytrąca się osad'], ['brak', 'nic się nie dzieje']];
+  KLOCKI.def('reakcje-przewidz', {
+    opis: 'Przewidź i sprawdź: wybierasz reakcję kwasu (metal, węglan, tlenek, zasada, sól) i przewidywaną obserwację, a zlewka pokazuje, co naprawdę się dzieje, wraz z równaniem i oceną odpowiedzi.',
+    domyslne: {dur: 6},
+    html: function (host, opc) {
+      host.style.display = 'block';
+      if (!C.RXL) { host.textContent = 'Brak silniczka rx-lite.'; return; }
+      var U = KLOCKI.ui, cur = 0, odp = null, bar = document.createElement('div'), q = document.createElement('div'), scena = document.createElement('div'), wynik = document.createElement('div');
+      bar.style.cssText = 'display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px'; q.style.cssText = 'margin:8px 0 4px;font-weight:700;font-size:14px';
+      wynik.style.cssText = 'margin-top:8px;font-size:14px;line-height:1.5'; scena.style.cssText = 'max-width:300px;margin:0 auto';
+      var rb = [], ob = [];
+      function wybierz(i) { cur = i; odp = null; rb.forEach(function (c, j) { U.zaznacz(c, j === i); }); ob.forEach(function (c) { U.zaznacz(c, false); }); scena.innerHTML = ''; wynik.innerHTML = '<span style="color:var(--muted,#5b6b73)">Wybierz przewidywaną obserwację i kliknij „Sprawdź”.</span>'; }
+      PRZ.forEach(function (p, i) { var c = U.chip(p[1], i === 0, function () { wybierz(i); }); rb.push(c); bar.appendChild(c); });
+      q.textContent = 'Co zobaczysz w zlewce?';
+      var ob_bar = document.createElement('div'); ob_bar.style.cssText = 'display:flex;flex-wrap:wrap;gap:6px';
+      OBS.forEach(function (o) { var c = U.chip(o[1], false, function () { odp = o[0]; ob.forEach(function (x, j) { U.zaznacz(x, OBS[j][0] === o[0]); }); }); ob.push(c); ob_bar.appendChild(c); });
+      var sp = document.createElement('div'); sp.style.cssText = 'margin-top:8px;text-align:center';
+      sp.appendChild(U.btn('Sprawdź ▶', function () {
+        if (!odp) { wynik.innerHTML = '<b>Najpierw wybierz przewidywanie.</b>'; return; }
+        var p = PRZ[cur]; scena.innerHTML = '';
+        var m = C.RXL.mount(scena, p[0], {dur: Number(opc.dur) || 6, auto: false}); m.play();
+        var ok = odp === p[2];
+        wynik.innerHTML = '<b style="color:' + (ok ? '#15803d' : '#b91c1c') + '">' + (ok ? '✔ Przewidywanie trafne.' : '✘ Inaczej: ' + OBS.filter(function (o) { return o[0] === p[2]; })[0][1] + '.') + '</b><br><b>Równanie:</b> ' + SPECS[p[0]].eq + '<br><span style="color:var(--muted,#5b6b73)">' + p[3] + '</span>';
+      }));
+      host.append(bar, q, ob_bar, sp, scena, wynik); wybierz(0);
+    }
+  });
 })();

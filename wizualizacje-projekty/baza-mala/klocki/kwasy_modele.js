@@ -93,6 +93,37 @@
     ['H₂SO₃', 'kwas siarkowy(IV)', 'tlenowy', 'SO₃²⁻', '2−', 'H₂SO₃ ⇌ 2H⁺ + SO₃²⁻', 'słaby', 'Na₂SO₃ — siarczan(IV) sodu', 'konserwant (SO₂), kwaśne deszcze'],
     ['H₂S', 'kwas siarkowodorowy', 'beztlenowy', 'S²⁻', '2−', 'H₂S ⇌ 2H⁺ + S²⁻', 'słaby', 'Na₂S — siarczek sodu', 'zapach zgniłych jaj, woda siarkowodorowa']
   ];
+  /* ---------- wskazniki-statyw (zastępuje gfx-scene-indicatorRack): wskaźnik w siedmiu roztworach, tryb „najpierw przewidź” ---------- */
+  KLOCKI.def('wskazniki-statyw', {
+    opis: 'Statyw siedmiu probówek (HCl, ocet, woda, NaCl, soda oczyszczona, woda amoniakalna, NaOH) i wybór wskaźnika (uniwersalny, fenoloftaleina, oranż metylowy); najpierw przewidujesz barwę, kliknięcie probówki ją odsłania.',
+    domyslne: {wskaznik: 'uni'},
+    html: function (host, opc) {
+      host.style.display = 'block';
+      var R = [['HCl 0,1 M', 1], ['ocet', 2.9], ['woda', 7], ['NaCl', 7], ['soda oczyszczona', 8.3], ['NH₃(aq)', 11], ['NaOH 0,1 M', 13]];
+      var W = {uni: ['uniwersalny', uni], phph: ['fenoloftaleina', fenol], oranz: ['oranż metylowy', oranz]};
+      var wk = W[opc.wskaznik] ? opc.wskaznik : 'uni', odkryte = {}, przewiduj = true, bar = E('div', 'display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px'), sc = E('div', ''), info = E('div', 'font-size:14px;margin-top:6px;' + BOX), chips = {};
+      function rys() {
+        var f = W[wk][1];
+        sc.innerHTML = '<svg viewBox="0 0 350 170" style="width:100%;display:block"><rect x="10" y="118" width="330" height="8" rx="3" fill="#b08154"/>' + R.map(function (r, i) {
+          var x = 22 + i * 46, rev = !przewiduj || odkryte[i], kol = rev ? f(r[1]) : 'rgba(226,240,250,.6)';
+          return '<g data-i="' + i + '" style="cursor:pointer"><path d="M' + x + ' 30 v78 q0 14 10 14 q10 0 10 -14 v-78" fill="rgba(226,232,240,.25)" stroke="var(--border-strong,#64748b)" stroke-width="2"/>' +
+            '<path d="M' + (x + 2) + ' 60 v48 q0 11 8 11 q8 0 8 -11 v-48z" fill="' + kol + '" opacity=".92"/>' +
+            (rev ? '' : '<text x="' + (x + 10) + '" y="95" text-anchor="middle" font-size="16" font-weight="700" fill="#64748b">?</text>') +
+            '<text x="' + (x + 10) + '" y="140" text-anchor="middle" font-size="9" fill="var(--text,#0f172a)">' + r[0].split(' ')[0] + '</text>' + (r[0].indexOf(' ') > 0 ? '<text x="' + (x + 10) + '" y="150" text-anchor="middle" font-size="9" fill="var(--text,#0f172a)">' + r[0].split(' ').slice(1).join(' ') + '</text>' : '') +
+            (rev ? '<text x="' + (x + 10) + '" y="164" text-anchor="middle" font-size="8" font-weight="700" fill="var(--muted,#64748b)">pH ' + fmt(r[1], 1) + '</text>' : '') + '</g>';
+        }).join('') + '</svg>';
+        [].forEach.call(sc.querySelectorAll('g[data-i]'), function (g) { g.onclick = function () { odkryte[g.getAttribute('data-i')] = 1; rys(); }; });
+        var n = Object.keys(odkryte).length;
+        info.innerHTML = '<b>Wskaźnik: ' + W[wk][0] + '.</b> ' + (przewiduj ? (n < 7 ? 'Najpierw przewidź barwę w każdej probówce, potem kliknij ją (' + n + '/7).' : 'Wszystkie odkryte — porównaj z przewidywaniem.') : 'Barwy wszystkich roztworów.') +
+          '<br><span style="color:var(--muted,#5b6b73)">' + (wk === 'phph' ? 'Fenoloftaleina jest malinowa tylko w zasadach (pH > 8,2); w kwasach i w roztworach obojętnych — bezbarwna.' : wk === 'oranz' ? 'Oranż metylowy: czerwony poniżej pH 3,1, żółty powyżej 4,4 — odróżnia mocny kwas od reszty.' : 'Wskaźnik uniwersalny: od czerwonego (mocne kwasy) przez zielony (obojętny) do fioletowego (mocne zasady).') + '</span>';
+        Object.keys(chips).forEach(function (k) { U().zaznacz(chips[k], k === wk); });
+      }
+      Object.keys(W).forEach(function (k) { chips[k] = U().chip(W[k][0], k === wk, function () { wk = k; rys(); }); bar.appendChild(chips[k]); });
+      bar.append(U().btn('Odkryj wszystkie', function () { przewiduj = false; rys(); }), U().btn('Od nowa (przewiduj)', function () { przewiduj = true; odkryte = {}; rys(); }));
+      host.append(bar, sc, info); rys();
+    }
+  });
+
   /* tabela soli kwasu z 16 kationami (rozpuszczalność wg szkolnej tabeli, 20 °C — jak w CHE.DATA.SOLUBILITY_TABLE) */
   var KAT = [['Na', 1, 'sodu'], ['K', 1, 'potasu'], ['NH4', 1, 'amonu'], ['Mg', 2, 'magnezu'], ['Ca', 2, 'wapnia'], ['Ba', 2, 'baru'], ['Al', 3, 'glinu'], ['Zn', 2, 'cynku'], ['Mn', 2, 'manganu(II)'],
     ['Fe', 2, 'żelaza(II)'], ['Fe', 3, 'żelaza(III)'], ['Ni', 2, 'niklu(II)'], ['Cu', 2, 'miedzi(II)'], ['Ag', 1, 'srebra'], ['Pb', 2, 'ołowiu(II)'], ['Sn', 2, 'cyny(II)']];

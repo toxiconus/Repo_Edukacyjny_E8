@@ -804,7 +804,7 @@ Wskaźnik to słaby kwas HInd, którego forma kwasowa i zasadowa mają różne b
 
 ### 7.4 Laboratorium wskaźników
 
-@model gfx-scene-indicatorRack | Wskaźnik w siedmiu roztworach (statyw probówek) | Doświadczenie w silniku GFX · otwiera się w oknie
+@klocek wskazniki-statyw | Wskaźnik w siedmiu roztworach: najpierw przewidź, potem odkryj
 @opis Siedem probówek z różnymi roztworami i wskaźnikiem: najpierw przewidujesz barwę, potem animacja pokazuje rzeczywiste barwy zależne od odczynu każdego roztworu. Wniosek: barwa wskaźnika zależy od odczynu roztworu, nie od jego wyglądu.
 
 ::: karta basic
@@ -1097,7 +1097,7 @@ Kwas mocniejszy wypiera kwas słabszy z jego soli. HCl (mocny) wypiera H₂CO₃
 
 ### 9.5 Przewidź i sprawdź
 
-@model reakcje-kwasu-v03 | Reakcje kwasów: przewidź i sprawdź | Metal, tlenek, węglan, sól, zobojętnianie · najpierw predykcja, potem zlewka
+@klocek reakcje-przewidz | Reakcje kwasów: przewidź i sprawdź
 @opis Reakcje kwasów w trybie „przewidź i sprawdź”: kwas z metalem, tlenkiem metalu, węglanem, solą i zasadą — najpierw wybierasz przewidywane obserwacje i produkty, potem zlewka pokazuje wynik i równanie. Wniosek: kwasy reagują według kilku stałych schematów prowadzących do soli.
 
 @klocek probowki-wybor {zestaw="kwas-weglan"} | Węglan + kwas → CO₂ i woda wapienna mętnieje
@@ -1361,9 +1361,6 @@ Pojemność buforowa β = dn/dpH jest największa, gdy [HA] = [A⁻] (pH = pK<su
 @opis Dwie zlewki z pehametrami obok siebie i wykres pH: po dodaniu kropel HCl lub NaOH pH wody gwałtownie skacze, a w buforze CH₃COOH + CH₃COONa zmienia się tylko o ułamek jednostki. Wniosek: bufor przeciwdziała zmianom pH, aż do wyczerpania.
 
 ## 16 | Doświadczenia {#doswiadczenia}
-
-@model kw-doswiadczenia-v01 | Pracownia: wszystkie doświadczenia z kwasami (GFX) | Zestawy, reakcje i pokazy w jednym oknie · silnik GFX
-@opis Pracownia doświadczeń z kwasami: zestawy i reakcje w zlewkach — wskaźniki w kwasie, metal z kwasem, węglan z kwasem, zobojętnianie, tlenek miedzi z kwasem, przewodnictwo, szereg aktywności metali i pokazy stężonych kwasów, z obserwacjami i równaniami. Wniosek: właściwości kwasów potwierdza się doświadczeniem.
 
 ::: karta error | BHP — zasady pracy
 Doświadczenia z kwasami wykonuj **tylko pod nadzorem nauczyciela** i w wyznaczonym do tego miejscu. Nigdy nie eksperymentuj samodzielnie z kwasami stężonymi.

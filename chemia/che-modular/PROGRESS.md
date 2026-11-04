@@ -293,3 +293,4 @@
 - 2026-11-04: N04 — kw-dysocjacja jako klocek (dysocjacja.js), kwasy-reszty z tabelą soli, stężone kwasy w zlewki-rx, usunięte dubel @model (reszty, właściwości, szereg).
 - 2026-11-04: N04 — miareczkowanie-biureta (nowy klocek), usunięte @model titration/acidMetal/dilution.
 - 2026-11-04: N03/N04/N05 — tabela-rozpuszczalnosci (z barwami osadów) i rownania-jonowe jako klocki zamiast @model.
+- 2026-11-04: N04 bez @model — reakcje-przewidz, wskazniki-statyw, tabela-rozpuszczalnosci, rownania-jonowe (klocki).

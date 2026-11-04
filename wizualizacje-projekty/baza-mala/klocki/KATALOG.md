@@ -15,7 +15,7 @@ Przed napisaniem nowego klocka sprawdź tu rodzinę i użycia — nie twórz dub
 | Wzory cząsteczek 2D | `wzor-2d` | jeden klocek (SMILES, grupy, kwaśny H, kulki, kąty); dawny molekula-2d scalony i usunięty |
 | Reszty kwasowe / właściwości kwasów | `kwasy-reszty`, `kwasy-rozcienczanie` | odpowiedniki kw-reszty-v01, kw-wlasciwosci-v01 z dużego silnika (nieprzeniesione) |
 
-## Wszystkie klocki (62)
+## Wszystkie klocki (64)
 
 | Klocek | Plik | Opis | Domyślne | Użycia (lekcja×liczba) |
 |---|---|---|---|---|
@@ -65,6 +65,7 @@ Przed napisaniem nowego klocka sprawdź tu rodzinę i użycia — nie twórz dub
 | `przeniesienie-protonu` | jony_w_wodzie.js | Kwas w wodzie: jon H⁺ (proton) przeskakuje z cząsteczki kwasu na cząsteczkę wody, tworząc H₃O⁺ i resztę kwasową. | {kwas: 'HCl'} | FIZ01×1 |
 | `przewodnictwo` | przewodnictwo.js | Tester przewodnictwa i elektroliza: wybierasz roztwór, włączasz prąd; żarówka świeci tylko dla elektrolitów, na elektrodach pojawiają się gazy, a w modelu jony wędrują do | {roztwor: 'HCl'} | FIZ01×1, N04×1, N05×1 |
 | `przewodnik-izolator` | fizyka_elektrostatyka.js | Pręt z naładowanym końcem: w przewodniku ładunek rozpływa się po całej długości, w izolatorze pozostaje w miejscu dotyku. | {} | FIZ01×1 |
+| `reakcje-przewidz` | zlewka_rx.js | Przewidź i sprawdź: wybierasz reakcję kwasu (metal, węglan, tlenek, zasada, sól) i przewidywaną obserwację, a zlewka pokazuje, co naprawdę się dzieje, wraz z równaniem i  | {dur: 6} | N04×1 |
 | `reaktor-tlenku` | okresowy_tlenki.js | Reaktor przewidywania: wybierasz tlenek i odczynnik (woda, kwas, zasada), zapisujesz przewidywanie, a model pokazuje, czy reakcja zachodzi, wraz z uzasadnieniem z charakt | {tlenek: 'CaO'} | N02×1 |
 | `regula-krzyzowa` | regula_krzyzowa.js | Reguła krzyżowa i huśtawka mas: dla dwóch roztworów i stężenia docelowego pokazuje różnice po przekątnych, stosunek mas, masy w gramach i kontrolę bilansem. | {} | R03A×1 |
 | `rownania-jonowe` | rownania_jonowe.js | Równania jonowe: po wyborze reakcji pokazuje zapis cząsteczkowy, jonowy pełny z jonami obserwatorowymi i jonowy skrócony. | {reakcja: 0} | C1c×1, J03×2, N03×1, N04×1, N05×1 |
@@ -76,6 +77,7 @@ Przed napisaniem nowego klocka sprawdź tu rodzinę i użycia — nie twórz dub
 | `trojkat-przeliczen` | trojkat_przeliczen.js | Trójkąt konwersji: masa, liczba moli i cząstki (lub objętość gazu) ze strzałkami operacji ÷/× M, N_A lub Vₘ. | {wzor: 'mol', szer: 480, wys: 300} | C2m×2, LKO×2 |
 | `uklad-okresowy` | uklad_okresowy.js | Tablica Mendelejewa: kafelki litowców i berylowców z opisem i przyciskami prób; pełny układ z przełącznikiem grup. | {grupa: 'oba', wybrany: 'Na'} | P01×1 |
 | `uklad-okresowy-54` | okresowy_tlenki.js | Układ okresowy pierwiastków 1–54: komórki kolorowane wg okresu i grupy, bloku, elektronów walencyjnych, promienia, elektroujemności, energii jonizacji lub charakteru tlen | {tryb: 'adres', wybrany: 'Na', tryby: 'adres,blok,wal,r,en,ie,tlenki'} | F04×1, F06×1, N02×1 |
+| `wskazniki-statyw` | kwasy_modele.js | Statyw siedmiu probówek (HCl, ocet, woda, NaCl, soda oczyszczona, woda amoniakalna, NaOH) i wybór wskaźnika (uniwersalny, fenoloftaleina, oranż metylowy); najpierw przewi | {wskaznik: 'uni'} | N04×1 |
 | `wzor-2d` | c2d_klocek.js | Wzór strukturalny 2D z SMILES: wiązania (pojedyncze, podwójne, potrójne), zaznaczone grupy funkcyjne; opcjonalnie model kulkowy, kąty, wolne pary, znaczniki walencji i kl | {smiles: 'CC(=O)O', grupa: 'all', kulki: 0, kat: 0, pary: 0, kwas: 1,  | C1c×5, LKO×11, N04×6 |
 | `zbieranie-gazu` | zbieranie_gazu.js | Zbieranie gazu: kolba z reakcją, rurka i naczynie ustawione wylotem do góry, do dołu albo nad wodą; werdykt zależy od gęstości i rozpuszczalności gazu. | {gaz: 'H2', metoda: 'auto', gazy: 'H2,O2,CO2,NH3,HCl'} | LKO×1, N01×2, N04×1 |
 | `zlewka-predykcja` | chemia_wstep.js | Najpierw wybierasz, czego spodziewasz się w zlewce, potem animacja pokazuje wynik i porównuje go z przewidywaniem. | {} | F01×1 |

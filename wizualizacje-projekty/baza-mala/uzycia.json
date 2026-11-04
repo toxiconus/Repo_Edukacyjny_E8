@@ -266,6 +266,7 @@
   "plomien": "klocek",
   "probowki-odczyn": "klocek",
   "bufor": "klocek",
+  "wskazniki-statyw": "klocek",
   "kwasy-reszty": "klocek",
   "kwasy-rozcienczanie": "klocek",
   "regula-krzyzowa": "klocek",
@@ -290,6 +291,7 @@
   "wzor-2d": "klocek",
   "zlewka-rx": "klocek",
   "zlewki-rx": "klocek",
+  "reakcje-przewidz": "klocek",
   "osady-dwie-sole": "klocek",
   "tabela-rozpuszczalnosci": "klocek",
   "dysocjacja-vs-jonizacja": "klocek",
@@ -422,8 +424,7 @@
   "gfx-scene-heating": {},
   "gfx-scene-indicator": {},
   "gfx-scene-indicatorRack": {
-   "N03": 1,
-   "N04": 1
+   "N03": 1
   },
   "gfx-scene-metanSpalanie": {},
   "gfx-scene-titration": {},
@@ -436,7 +437,7 @@
   "kinetics-v01": {},
   "kw-bufor-v01": {},
   "kw-doswiadczenia-v01": {
-   "N04": 11
+   "N04": 10
   },
   "kw-dysocjacja-v01": {
    "N04": 1
@@ -505,9 +506,7 @@
   },
   "ph-ladder": {},
   "reaction": {},
-  "reakcje-kwasu-v03": {
-   "N04": 1
-  },
+  "reakcje-kwasu-v03": {},
   "rownania-jonowe-v01": {},
   "safety": {},
   "sole-doswiadczenia-v01": {
@@ -836,6 +835,9 @@
   "bufor": {
    "N04": 1
   },
+  "wskazniki-statyw": {
+   "N04": 1
+  },
   "kwasy-reszty": {
    "N04": 1
   },
@@ -934,6 +936,9 @@
   "zlewka-rx": {},
   "zlewki-rx": {
    "N04": 16
+  },
+  "reakcje-przewidz": {
+   "N04": 1
   },
   "osady-dwie-sole": {
    "J03": 1
@@ -1321,6 +1326,7 @@
   "periodic-54",
   "ph-ladder",
   "reaction",
+  "reakcje-kwasu-v03",
   "rownania-jonowe-v01",
   "safety",
   "species-v01",
@@ -1479,6 +1485,7 @@
  "jeden": [
   "acid-rain-v01",
   "chain-scn",
+  "gfx-scene-indicatorRack",
   "ion-map-v02",
   "kw-dysocjacja-v01",
   "kw-reszty-v01",
@@ -1491,7 +1498,6 @@
   "n02-stracanie-v01",
   "n02-wzory-v01",
   "n02-zobojetnianie-v01",
-  "reakcje-kwasu-v03",
   "titration-merged",
   "n05-wodorki-v01",
   "n05-trendy-v01",
@@ -1522,6 +1528,7 @@
   "profil-energii",
   "haworth",
   "bufor",
+  "wskazniki-statyw",
   "kwasy-reszty",
   "kwasy-rozcienczanie",
   "regula-krzyzowa",
@@ -1531,6 +1538,7 @@
   "linie-pola",
   "estryfikacja",
   "nadmiar-substratu",
+  "reakcje-przewidz",
   "osady-dwie-sole",
   "przeniesienie-protonu",
   "miareczkowanie-biureta",
@@ -1563,7 +1571,6 @@
   "f06Br2Ki"
  ],
  "wiele": [
-  "gfx-scene-indicatorRack",
   "kw-doswiadczenia-v01",
   "n01-doswiadczenia-v01",
   "n02-doswiadczenia-v01",

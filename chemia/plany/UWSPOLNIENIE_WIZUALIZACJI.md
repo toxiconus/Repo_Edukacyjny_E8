@@ -45,4 +45,5 @@ Zasada: jedna najlepsza wersja. Przy podmianie sprawdź, których lekcji dotyczy
 - Zrobione (2026-11-04): N05/N03 → klocki; `bufor` = port kw-bufor-v01; rodzina naczyń 7→5 (zlewka, metal-woda → zestaw `litowce-woda` w zlewki-rx); molekula-2d usunięty (wzor-2d pokrywa).
 - Zrobione też: kwasy-reszty (+tabela soli 16 kationów), stężone kwasy → zlewki-rx `stezone-kwasy` (kwasy-wlasciwosci usunięty), kw-dysocjacja → klocek `kw-dysocjacja-v01` (dysocjacja.js), kw-szereg-metali → probowki-wybor.
 - Zrobione: miareczkowanie-biureta (biureta+kolba+pH-metr+wskaźnik) zastąpiło gfx-scene-titration; gfx-scene-acidMetal i gfx-scene-dilution usunięte (pokrywają je zlewki-rx i kwasy-rozcienczanie).
-- Nadal do zrobienia (N04): @model gfx-scene-indicatorRack (statyw 7 roztworów z przewidywaniem) i kw-doswiadczenia-v01 (pracownia z „przewidź i sprawdź”).
+- Zrobione: N04 ma 0 `@model`: tabela-rozpuszczalnosci (+barwy osadów) i rownania-jonowe jako klocki (też N03/N05), `reakcje-przewidz` (zamiast reakcje-kwasu-v03), `wskazniki-statyw` (zamiast gfx-scene-indicatorRack), pracownia kw-doswiadczenia usunięta (wszystkie jej elementy są klockami).
+- Nadal do zrobienia: @model w innych lekcjach (N01–N03, N05+, F, LKO) — sprawdzić `grep ^@model`, dla każdego klocek lub port.
