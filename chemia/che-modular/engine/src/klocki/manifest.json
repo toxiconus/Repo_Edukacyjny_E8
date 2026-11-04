@@ -503,6 +503,13 @@
       "ui_klocki.js",
       "przewodnictwo.js",
       "fizyka_elektrostatyka.js"
+    ],
+    "F17": [
+      "klocki.js",
+      "pomocnicze.js",
+      "ui_klocki.js",
+      "bilans_rownania.js",
+      "stechiometria.js"
     ]
   },
   "css": [

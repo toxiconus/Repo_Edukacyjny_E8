@@ -506,9 +506,7 @@
    "N05": 14
   },
   "species-v01": {},
-  "stech-kalkulator-v01": {
-   "F17": 1
-  },
+  "stech-kalkulator-v01": {},
   "substance": {},
   "tabela-rozpuszczalnosci-v01": {},
   "timeline": {},
@@ -525,9 +523,7 @@
   "f09-trzy-liczby-v01": {},
   "f10-energia-h2-v01": {},
   "f15-dipol-v01": {},
-  "f17-bilans-v01": {
-   "F17": 1
-  },
+  "f17-bilans-v01": {},
   "r03-krzyz-v01": {},
   "fiz02-obwod-v01": {},
   "beaker": {},
@@ -880,6 +876,7 @@
   "bilans-rownania": {
    "C1c_wodorki_typy_reakcji": 1,
    "C3": 1,
+   "F17": 1,
    "LKO_ORG05_kwasy": 1,
    "LKO_ORG06_estry": 1
   },
@@ -896,6 +893,7 @@
   "stechiometria": {
    "C2m_mol_masa_molowa": 1,
    "C3": 1,
+   "F17": 1,
    "N02": 1,
    "N05": 1,
    "R07": 1
@@ -1336,6 +1334,7 @@
   "rownania-jonowe-v01",
   "safety",
   "species-v01",
+  "stech-kalkulator-v01",
   "substance",
   "tabela-rozpuszczalnosci-v01",
   "timeline",
@@ -1343,6 +1342,7 @@
   "f09-trzy-liczby-v01",
   "f10-energia-h2-v01",
   "f15-dipol-v01",
+  "f17-bilans-v01",
   "r03-krzyz-v01",
   "fiz02-obwod-v01",
   "beaker",
@@ -1499,11 +1499,9 @@
   "n02-stracanie-v01",
   "n02-wzory-v01",
   "n02-zobojetnianie-v01",
-  "stech-kalkulator-v01",
   "titration-merged",
   "n05-wodorki-v01",
   "n05-trendy-v01",
-  "f17-bilans-v01",
   "acidMetal",
   "indicator",
   "carbonate",

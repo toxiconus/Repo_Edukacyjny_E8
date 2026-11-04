@@ -299,3 +299,4 @@
 - 2026-11-04: pracownie n02-doswiadczenia i sole-doswiadczenia jako klocki rx-lite (pracownie_rx.js, 46 specyfikacji).
 - 2026-11-04: N05 mapa-jonow (klocek) zamiast ion-map-v02; N03/N04/N05 bez @model.
 - 2026-11-04: lekcje gotowe/ — stechiometria (C2m, C3, N02, R07), pracownie F01/F03 jako klocki; w lekcjach głównych 0 @model, zostaje F17 (f17-bilans, stech).
+- 2026-11-04: bilans-rownania z ładunkiem jonów (Cu + Ag^+); F17 w manifeście, bez @model.

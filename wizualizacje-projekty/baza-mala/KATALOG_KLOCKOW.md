@@ -8,7 +8,7 @@ Ta paczka zawiera kopie tego, co już działa w lekcjach. Zewnętrzny model moż
 
 | Folder | Zawartość | Rozmiar |
 |---|---|---|
-| `klocki` | kopia folderu | 734 KB |
+| `klocki` | kopia folderu | 735 KB |
 | `klocki/lite` | kopia folderu | 36 KB |
 | `gfx` | kopia folderu | 729 KB |
 | `tablice` | kopia folderu | 1612 KB |
@@ -135,6 +135,7 @@ Lekcje i pliki, które wymieniają (`manifest.json` → `lekcje`):
 - **F05**: `klocki.js`, `pomocnicze.js`, `izotopy.js`
 - **R03A**: `klocki.js`, `pomocnicze.js`, `krzywe_rozpuszczalnosci.js`, `regula_krzyzowa.js`, `karta_bhp.js`
 - **FIZ-01**: `klocki.js`, `pomocnicze.js`, `ui_klocki.js`, `przewodnictwo.js`, `fizyka_elektrostatyka.js`
+- **F17**: `klocki.js`, `pomocnicze.js`, `ui_klocki.js`, `bilans_rownania.js`, `stechiometria.js`
 
 Lekkie silniki (`klocki/lite/`): `che-lite.js` (rejestr modeli), `rx-lite.js` (naczynia SVG), `stech-lite.js` (kalkulator stechiometryczny), `lab-dane.json` (dane zlewek).
 

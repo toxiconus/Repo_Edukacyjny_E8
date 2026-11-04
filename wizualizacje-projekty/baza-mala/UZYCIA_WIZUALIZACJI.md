@@ -8,7 +8,7 @@ Liczenie: każde wystąpienie dyrektywy `@model`, `@viz`, `@klocek`, `@zlewka` (
 
 | Liczba wizualizacji w bazie | Użyte 0 razy | Użyte 1 raz | Użyte 2 lub więcej razy |
 |---|---|---|---|
-| 388 | 220 | 81 | 87 |
+| 388 | 222 | 79 | 87 |
 
 Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobnie literówki lub klucze pracowni): **64**: `-`, `bezkregowce-sylwetki`, `caoh2Co2`, `cuoH2so4`, `cuso4Naoh`, `cykl`, `drzewa-krzewy`, `drzewo-filogenetyczne`, `f02-czastki-v01`, `f04-nuklid-v01`, `fecl3Naoh`, `fotosynteza-oddychanie-krazenie`, `hclNaOH`, `jajo-porownanie`, `jajo-ptaka`, `kariotyp`, `komorki-porownanie`, `krazenie`, `krew-skladniki`, `kwiat-budowa`, `liscie-rodzaje`, `mapa-narzadow`, `mgO2`, `miesnie-trzy`, `mikroskop-budowa`, `mozg-budowa`, `mutacje-punktowe`, `naH2o`, `nablonki-rodzaje`, `nasiono-ziarniak`, `nefron-budowa`, `neuron-budowa`, `neurony-mielina`, `obieg-wegla`, `odpowiedz-immunologiczna`, `organelle-energetyczne`, `osmoza-komorka`, `owoce-rozsiewanie`, `piramida-ekologiczna`, `podzial-komorki-skrot`, `polip-meduza`, `preparat-mikroskopowy`, `przeksztalcenia-organow`, `przewod-pokarmowy`, `replikacja-dna`, `rodowod`, `rx-ag-cl`, `rx-cu-naoh`, `rx-fe-cuso4`, `ryba-budowa`, `serce-budowa`, `staw-czaszka`, `stawonogi-budowa`, `szereg`, `szkielet-czlowieka`, `szyszki-iglaste`, `tkanki-zwierzece`, `uklad-limfatyczny`, `uklad-oddechowy`, `wentylacja`, `wlasciwosci`, `wykres-dane`, `zab-budowa`, `zboza-klosy`
 
@@ -27,12 +27,12 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | 9 | `probowki-wybor` | klocek | **8** | N04 ×2, C1c_kwasy_zasady_sole ×1, J03 ×1, N01 ×1, N02 ×1, N05 ×1, X04 ×1 |
 | 10 | `lancuch` | BIO | **6** | BIO.01.L004.organizacja_budowy_organizmu_od_komorki ×2, BIO.00.REV01.organizacja_i_chemizm_zycia ×1, BIO.01.L001.komorka ×1, BIO.02.L010.dna_od_zera ×1, BIO.02.L015.mejoza ×1 |
 | 11 | `rownania-jonowe` | klocek | **6** | J03 ×2, C1c_kwasy_zasady_sole ×1, N03 ×1, N04 ×1, N05 ×1 |
-| 12 | `tabela-rozpuszczalnosci` | klocek | **6** | J03 ×2, C1c_kwasy_zasady_sole ×1, N03 ×1, N04 ×1, N05 ×1 |
-| 13 | `f06-doswiadczenia-v01` | CHE pracownia (lite) | **5** | F06 ×5 |
-| 14 | `podzial-komorki` | BIO | **5** | BIO.01.L009.podzial_komorki_wzrost_regeneracja_i ×1, BIO.02.B2f.rozmnazanie_rozwoj ×1, BIO.02.L014.jak_komorki_ciala_powstaja_i ×1, BIO.02.L015.mejoza ×1, BIO.05.L050.powtorka_roczna ×1 |
-| 15 | `punnett` | BIO | **5** | BIO.01.B1b.krzyzowki_mendel ×1, BIO.02.L017.jak_przewidywac_dziedziczenie_jednej_cechy ×1, BIO.02.L018.jak_dziedziczy_sie_plec_i ×1, BIO.02.L019.dlaczego_grupy_krwi_nie_pasuja ×1, BIO.02.L021.powtorka_genetyki ×1 |
-| 16 | `stechiometria` | klocek | **5** | C2m_mol_masa_molowa ×1, C3 ×1, N02 ×1, N05 ×1, R07 ×1 |
-| 17 | `bilans-rownania` | klocek | **4** | C1c_wodorki_typy_reakcji ×1, C3 ×1, LKO_ORG05_kwasy ×1, LKO_ORG06_estry ×1 |
+| 12 | `stechiometria` | klocek | **6** | C2m_mol_masa_molowa ×1, C3 ×1, F17 ×1, N02 ×1, N05 ×1, R07 ×1 |
+| 13 | `tabela-rozpuszczalnosci` | klocek | **6** | J03 ×2, C1c_kwasy_zasady_sole ×1, N03 ×1, N04 ×1, N05 ×1 |
+| 14 | `bilans-rownania` | klocek | **5** | C1c_wodorki_typy_reakcji ×1, C3 ×1, F17 ×1, LKO_ORG05_kwasy ×1, LKO_ORG06_estry ×1 |
+| 15 | `f06-doswiadczenia-v01` | CHE pracownia (lite) | **5** | F06 ×5 |
+| 16 | `podzial-komorki` | BIO | **5** | BIO.01.L009.podzial_komorki_wzrost_regeneracja_i ×1, BIO.02.B2f.rozmnazanie_rozwoj ×1, BIO.02.L014.jak_komorki_ciala_powstaja_i ×1, BIO.02.L015.mejoza ×1, BIO.05.L050.powtorka_roczna ×1 |
+| 17 | `punnett` | BIO | **5** | BIO.01.B1b.krzyzowki_mendel ×1, BIO.02.L017.jak_przewidywac_dziedziczenie_jednej_cechy ×1, BIO.02.L018.jak_dziedziczy_sie_plec_i ×1, BIO.02.L019.dlaczego_grupy_krwi_nie_pasuja ×1, BIO.02.L021.powtorka_genetyki ×1 |
 | 18 | `doswiadczenie` | klocek | **4** | C4 ×2, C1c_kwasy_zasady_sole ×1, X04 ×1 |
 | 19 | `fotosynteza-oddychanie` | BIO | **4** | BIO.00.REV01.organizacja_i_chemizm_zycia ×1, BIO.01.L006.fotosynteza_skad_roslina_bierze_materie ×1, BIO.01.L007.oddychanie_komorkowe_skad_komorka_bierze ×1, BIO.06.L091.atp_jak_komorka_magazynuje_energie ×1 |
 | 20 | `glukoza-wykres` | BIO | **4** | BIO.02.B2e.uklad_dokrewny ×1, BIO.02.B2g.homeostaza ×1, BIO.07.H01.homeostaza ×1, BIO.07.U10.uklad_dokrewny ×1 |
@@ -125,7 +125,6 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 - `f03PiasekWoda` (CHE zlewka (lite)) → F03
 - `f06Br2Ki` (CHE zlewka (lite)) → F06
 - `f06Cl2Kbr` (CHE zlewka (lite)) → F06
-- `f17-bilans-v01` (CHE model) → F17
 - `gdzie-dna` (BIO) → BIO.02.L010.dna_od_zera
 - `hardy-weinberg` (BIO) → BIO.06.L090.extra_olimpijska
 - `haworth` (klocek) → LKO_ORG07_cukry
@@ -176,7 +175,6 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 - `schemat-przemian` (klocek) → C1c_kwasy_zasady_sole
 - `sekwencje` (BIO) → BIO.02.L010.dna_od_zera
 - `sklad-procentowy` (klocek) → C1c_masy_sklad_procentowy
-- `stech-kalkulator-v01` (CHE model) → F17
 - `szuflady-cech` (BIO) → BIO.02.L010.dna_od_zera
 - `titration-merged` (CHE model) → N04
 - `trend-tlenkow` (klocek) → N02
@@ -250,6 +248,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 - `f09-trzy-liczby-v01` (CHE model: Ładunek, wartościowość, stopień utlenienia — ta sama drobina, trzy pytania)
 - `f10-energia-h2-v01` (CHE model: Energia dwóch atomów wodoru — skąd się bierze wiązanie)
 - `f15-dipol-v01` (CHE model: Wektory dipola — polarność wiązań a polarność cząsteczki)
+- `f17-bilans-v01` (CHE model: Bilans równania reakcji — atomy i ładunek)
 - `fe2o3H2so4` (CHE gfx/reakcje: chemia)
 - `fe2o3Hcl` (CHE gfx/reakcje: chemia)
 - `feoh2O2` (CHE gfx/reakcje: chemia)
@@ -389,6 +388,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 - `stage` (CHE gfx/naczynia: wspolne)
 - `stand` (CHE gfx/naczynia: chemia)
 - `steam` (CHE gfx/efekty: chemia)
+- `stech-kalkulator-v01` (CHE model: Kalkulator stechiometryczny — masa, mole, objętość gazu, odczynnik limitujący)
 - `stirBar` (CHE gfx/efekty: chemia)
 - `stopper` (CHE gfx/efekty: wspolne)
 - `substance` (CHE model: Substancja)
@@ -433,7 +433,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | `baoh2H2so4` | CHE gfx/reakcje | 0 | — |
 | `beaker` | CHE gfx/naczynia | 0 | — |
 | `beaker-prediction-enhanced` | CHE model | 0 | — |
-| `bilans-rownania` | klocek | 4 | C1c_wodorki_typy_reakcji ×1, C3 ×1, LKO_ORG05_kwasy ×1, LKO_ORG06_estry ×1 |
+| `bilans-rownania` | klocek | 5 | C1c_wodorki_typy_reakcji ×1, C3 ×1, F17 ×1, LKO_ORG05_kwasy ×1, LKO_ORG06_estry ×1 |
 | `bilans-spalania` | klocek | 1 | LKO_ORG01_alkany ×1 |
 | `bubbles` | CHE gfx/efekty | 0 | — |
 | `bufor` | klocek | 1 | N04 ×1 |
@@ -519,7 +519,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | `f09-trzy-liczby-v01` | CHE model | 0 | — |
 | `f10-energia-h2-v01` | CHE model | 0 | — |
 | `f15-dipol-v01` | CHE model | 0 | — |
-| `f17-bilans-v01` | CHE model | 1 | F17 ×1 |
+| `f17-bilans-v01` | CHE model | 0 | — |
 | `fe2o3H2so4` | CHE gfx/reakcje | 0 | — |
 | `fe2o3Hcl` | CHE gfx/reakcje | 0 | — |
 | `feoh2O2` | CHE gfx/reakcje | 0 | — |
@@ -756,8 +756,8 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | `stand` | CHE gfx/naczynia | 0 | — |
 | `staw-antagonizm` | BIO | 2 | BIO.02.B2a.skora_uklad_ruchu ×1, BIO.07.U01.skora_i_uklad_ruchu ×1 |
 | `steam` | CHE gfx/efekty | 0 | — |
-| `stech-kalkulator-v01` | CHE model | 1 | F17 ×1 |
-| `stechiometria` | klocek | 5 | C2m_mol_masa_molowa ×1, C3 ×1, N02 ×1, N05 ×1, R07 ×1 |
+| `stech-kalkulator-v01` | CHE model | 0 | — |
+| `stechiometria` | klocek | 6 | C2m_mol_masa_molowa ×1, C3 ×1, F17 ×1, N02 ×1, N05 ×1, R07 ×1 |
 | `stirBar` | CHE gfx/efekty | 0 | — |
 | `stopper` | CHE gfx/efekty | 0 | — |
 | `substance` | CHE model | 0 | — |
@@ -931,7 +931,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | chemia | F14 | — |
 | chemia | F15 | — |
 | chemia | F16 | — |
-| chemia | F17 | `f01-doswiadczenia-v01` ×1, `f01Mg` ×1, `f17-bilans-v01` ×1, `stech-kalkulator-v01` ×1 |
+| chemia | F17 | `bilans-rownania` ×1, `f01-doswiadczenia-v01` ×1, `f01Mg` ×1, `stechiometria` ×1 |
 | chemia | F18 | — |
 | chemia | F19 | — |
 | chemia | F20 | — |

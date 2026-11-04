@@ -196,7 +196,7 @@ Fe(OH)₃ → Fe₂O₃ + H₂O. Fe: **2**Fe(OH)₃ → 6 O i 6 H po lewej. Wod�
 
 $$ 2Fe(OH)₃ → Fe₂O₃ + 3H₂O
 
-@model f17-bilans-v01 | Bilansowanie na żywo: zmieniaj współczynniki, licz atomy | 8 równań (woda, metan, propan, Al + HCl, Fe₂O₃, Cu + Ag⁺, strącanie) · tabela atomów i ładunku
+@klocek bilans-rownania {rownanie="Al + HCl -> AlCl3 + H2" przyklady="H2 + O2 -> H2O; CH4 + O2 -> CO2 + H2O; C3H8 + O2 -> CO2 + H2O; Al + HCl -> AlCl3 + H2; Fe2O3 + CO -> Fe + CO2; Cu + Ag^+ -> Cu^2+ + Ag; Ag^+ + Cl^- -> AgCl; Na + H2O -> NaOH + H2"} | Bilansowanie na żywo: zmieniaj współczynniki, licz atomy | 8 równań (woda, metan, propan, Al + HCl, Fe₂O₃, Cu + Ag⁺, strącanie) · tabela atomów i ładunku
 @opis Model równania z przyciskami „−” i „+” przy każdym wzorze: zmieniasz wyłącznie współczynniki (wzorów i indeksów nie da się edytować). Pod spodem tabela: każdy pierwiastek, liczba atomów po lewej i po prawej, kolorowe kreski-liczniki i znaczek OK albo błąd; ostatni wiersz porównuje łączny ładunek (ważne w równaniach z jonami, np. Cu + Ag⁺). Gdy wszystko się zgadza, pojawia się „Równanie uzgodnione”; tryb ekspercki ostrzega, gdy współczynniki da się jeszcze skrócić. Wniosek: równanie jest uzgodnione dopiero wtedy, gdy zgadza się każdy pierwiastek (i ładunek), a dobiera się je samymi współczynnikami w najmniejszych liczbach całkowitych.
 
 ::: karta understand | W skrócie — dlaczego „najmniejsze liczby całkowite”?
@@ -349,7 +349,7 @@ Z równania: 4 · 56 = 224 g Fe — 2 · 160 = 320 g Fe₂O₃ (po skróceniu pr
 Stosunek masowy możesz skrócić tak samo jak ułamek: 224 : 320 = 112 : 160 = 7 : 10. Wtedy 11,2 g Fe · 10/7 = 16 g. Mniejsze liczby = mniej pomyłek rachunkowych. Na konkursie jest prosty kalkulator, ale skracanie i tak przyspiesza i pozwala szybko oszacować wynik.
 :::
 
-@model stech-kalkulator-v01 | Kalkulator stechiometryczny — sprawdź swoje obliczenia | wybierz reakcję, wpisz masę jednego reagenta
+@klocek stechiometria {} | Kalkulator stechiometryczny — sprawdź swoje obliczenia | wybierz reakcję, wpisz masę jednego reagenta
 @opis Kalkulator: wybierasz reakcję z listy (np. spalanie węgla lub metanu, rozkład CaCO₃), wpisujesz masę jednego reagenta, a model przelicza masy pozostałych substratów i produktów; przy dwóch podanych substratach wskazuje, który jest w niedomiarze. Kalkulator pokazuje też mole i objętości gazów — to warstwa ambitna ([§13](#ambitne)). Wniosek: masy w reakcji zawsze pozostają w stałym stosunku wynikającym z równania; kalkulator służy do sprawdzenia wyniku policzonego samodzielnie proporcją.
 
 ## 8 | Nadmiar i reagent ograniczający [[exam:KONKURS]] {#nadmiar}
