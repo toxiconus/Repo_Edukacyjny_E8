@@ -15,7 +15,7 @@ Przed napisaniem nowego klocka sprawdź tu rodzinę i użycia — nie twórz dub
 | Wzory cząsteczek 2D | `wzor-2d` | jeden klocek (SMILES, grupy, kwaśny H, kulki, kąty); dawny molekula-2d scalony i usunięty |
 | Reszty kwasowe / właściwości kwasów | `kwasy-reszty`, `kwasy-rozcienczanie` | odpowiedniki kw-reszty-v01, kw-wlasciwosci-v01 z dużego silnika (nieprzeniesione) |
 
-## Wszystkie klocki (61)
+## Wszystkie klocki (62)
 
 | Klocek | Plik | Opis | Domyślne | Użycia (lekcja×liczba) |
 |---|---|---|---|---|
@@ -48,6 +48,7 @@ Przed napisaniem nowego klocka sprawdź tu rodzinę i użycia — nie twórz dub
 | `lancuch-przemian` | lancuch_przemian.js | Schemat przemian: wzory substancji połączone strzałkami z literami reakcji; układ liniowy albo obieg zamknięty. | {wezly: 'Ca,CaO,Ca(OH)2,CaCO3', etyk: 'A,B,C', zamkniety: 0, szer: 480 | N02×3 |
 | `linie-pola` | fizyka_elektrostatyka.js | Linie pola dwóch ładunków: wychodzą z ładunku dodatniego i wchodzą do ujemnego; gęstość linii pokazuje siłę pola. Znaki ładunków można zmieniać. | {q1: 1, q2: -1} | FIZ01×1 |
 | `mapa-mysli` | chemia_wstep.js | Mapa myśli: centralne hasło i gałęzie; kliknięcie gałęzi odsłania jej pojęcia (do samodzielnego uzupełniania w pamięci przed odsłonięciem). | {centrum: 'CHEMIA', galezie: 'skład:pierwiastki,wzory;budowa:atomy,wią | F01×1 |
+| `miareczkowanie-biureta` | miareczkowanie_biureta.js | Miareczkowanie 25 cm³ HCl o stężeniu 0,1 mol/dm³ roztworem NaOH z biurety: spadają krople, kolba zmienia barwę wskaźnika, pH-metr pokazuje pH i objętość titrantu; w punkc | {wskaznik: 'phph'} | N04×1 |
 | `nadmiar-substratu` | nadmiar_substratu.js | Dwa substraty o podanych masach: który jest ograniczający, ile powstaje produktu i ile nadmiaru zostaje. | {reakcja: 'mg-hcl', mA: 0, mB: 0} | R07×1 |
 | `osady-dwie-sole` | osady_dwie_sole.js | Dwie probówki z rozpuszczalnymi solami: model łączy jony na krzyż i sprawdza w tabeli, czy powstaje osad i jakiej barwy. | {} | J03×1 |
 | `palenie` | palenie.js | Palenie metalu: płomień i iskry w barwie zależnej od metalu. | {metal: 'Mg', szer: 480, wys: 300} | N02×1 |

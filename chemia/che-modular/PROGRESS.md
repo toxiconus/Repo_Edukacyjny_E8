@@ -291,3 +291,4 @@
 - 2026-11-04: scalone duble: ph-skala→panel pH (zakładka Z życia), kwasne-deszcze→acid-rain-v01 (+marmur), tester-przewodnictwa→przewodnictwo (+etanol, CuSO4; FIZ01 podmieniony). Katalog klocków: narzedzia/katalog_klockow.py.
 - 2026-11-04: uwspólnianie — N03/N05 @model→klocki; bufor = port kw-bufor-v01; zlewka+metal-woda → zestaw litowce-woda (zlewki-rx); molekula-2d usunięty; opis_wizualizacji pomija bloki ``` (dług @opis = 0).
 - 2026-11-04: N04 — kw-dysocjacja jako klocek (dysocjacja.js), kwasy-reszty z tabelą soli, stężone kwasy w zlewki-rx, usunięte dubel @model (reszty, właściwości, szereg).
+- 2026-11-04: N04 — miareczkowanie-biureta (nowy klocek), usunięte @model titration/acidMetal/dilution.

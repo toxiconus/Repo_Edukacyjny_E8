@@ -956,9 +956,6 @@ $$ Zn + H₂SO₄ (rozc.) → ZnSO₄ + H₂↑
 @klocek zlewki-rx {zestaw="zn-kwasy"} | Ten sam cynk w trzech kwasach: HCl, H₂SO₄ i ocet
 @opis Trzy zlewki z granulkami cynku w HCl, w rozcieńczonym H₂SO₄ i w occie: w dwóch pierwszych równomierne bąbelki wodoru, w occie bardzo rzadkie, reakcja prawie niewidoczna. Wniosek: im słabszy kwas, tym wolniejsza reakcja z metalem, a produkty są tego samego typu (sól kwasu + H₂).
 
-@model gfx-scene-acidMetal | Metal + kwas solny → wodór i próba „pyk!” | Doświadczenie w silniku GFX · otwiera się w oknie
-@opis Scena doświadczenia: metal (np. cynk) w kwasie solnym roztwarza się, wydzielają się pęcherzyki gazu zbierane w probówce; zbliżona do płomienia probówka daje charakterystyczny odgłos „pyk”. Wniosek: w reakcji metalu aktywnego z kwasem powstaje sól i wodór.
-
 ### 9.1.1 Szereg aktywności metali — pełna tabela
 
 ::: karta core | Szereg aktywności (od najbardziej aktywnego)
@@ -1210,9 +1207,6 @@ $$ 3 NO₂ + H₂O → 2 HNO₃ + NO (kwas azotowy(V))
 
 ## 12 | Bezpieczeństwo (BHP) [[basic:E8]] {#bhp}
 
-@model gfx-scene-dilution | Rozcieńczanie: „kwas do wody!” — poprawnie i błędnie | Doświadczenie w silniku GFX · otwiera się w oknie
-@opis Dwie wersje rozcieńczania stężonego kwasu: poprawna — kwas wlewany powoli do wody, mieszanina tylko się ogrzewa; błędna — woda wlewana do kwasu, gwałtowne rozpryskiwanie wrzącej cieczy. Wniosek: zawsze wlewa się kwas do wody, powoli i mieszając.
-
 @klocek kwasy-rozcienczanie {} | Rozcieńczanie: kwas do wody czy woda do kwasu?
 @opis Dwa warianty zlewki z termometrem: kwas wlewany do wody — roztwór lekko się nagrzewa; woda wlewana do kwasu — gwałtowne nagrzanie i pryskanie żółtych kropel. Wniosek: zawsze najpierw woda, potem kwas.
 
@@ -1318,7 +1312,7 @@ c(HCl) = (0,1 × 20) / 25 = 0,08 M
 :::
 :::
 
-@model gfx-scene-titration | Miareczkowanie: biureta, kolba, wskaźnik | Scena GFX · pH z bilansu, barwa fenoloftaleiny z silnika
+@klocek miareczkowanie-biureta | Miareczkowanie: biureta, kolba, pH-metr, wskaźnik
 @opis Miareczkowanie: z biurety kropla po kropli spływa roztwór zasady do kolby z kwasem i fenoloftaleiną; przy punkcie końcowym roztwór zmienia barwę z bezbarwnej na malinową, a obok widać pH. Wniosek: miareczkowanie pozwala ustalić, ile zasady zobojętnia daną ilość kwasu.
 
 @klocek titration-merged | Krzywa miareczkowania: mocny lub słaby kwas, wybór wskaźnika, autoplay

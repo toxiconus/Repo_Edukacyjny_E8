@@ -294,6 +294,7 @@
   "tabela-rozpuszczalnosci": "klocek",
   "dysocjacja-vs-jonizacja": "klocek",
   "przeniesienie-protonu": "klocek",
+  "miareczkowanie-biureta": "klocek",
   "gruczoly-mapa": "BIO",
   "kod-genetyczny": "BIO",
   "eutrofizacja": "BIO",
@@ -413,14 +414,10 @@
   "flashcards-deck": {},
   "flow-egzamin-enhanced": {},
   "flow-naming": {},
-  "gfx-scene-acidMetal": {
-   "N04": 1
-  },
+  "gfx-scene-acidMetal": {},
   "gfx-scene-carbonate": {},
   "gfx-scene-conductivity": {},
-  "gfx-scene-dilution": {
-   "N04": 1
-  },
+  "gfx-scene-dilution": {},
   "gfx-scene-gasCollection": {},
   "gfx-scene-heating": {},
   "gfx-scene-indicator": {},
@@ -429,9 +426,7 @@
    "N04": 1
   },
   "gfx-scene-metanSpalanie": {},
-  "gfx-scene-titration": {
-   "N04": 1
-  },
+  "gfx-scene-titration": {},
   "hf-paradox": {},
   "ion-map-v02": {
    "N05": 1
@@ -960,6 +955,9 @@
   "przeniesienie-protonu": {
    "FIZ01": 1
   },
+  "miareczkowanie-biureta": {
+   "N04": 1
+  },
   "gruczoly-mapa": {
    "BIO.02.B2e.uklad_dokrewny": 1,
    "BIO.07.U10.uklad_dokrewny": 1
@@ -1288,12 +1286,15 @@
   "flashcards-deck",
   "flow-egzamin-enhanced",
   "flow-naming",
+  "gfx-scene-acidMetal",
   "gfx-scene-carbonate",
   "gfx-scene-conductivity",
+  "gfx-scene-dilution",
   "gfx-scene-gasCollection",
   "gfx-scene-heating",
   "gfx-scene-indicator",
   "gfx-scene-metanSpalanie",
+  "gfx-scene-titration",
   "hf-paradox",
   "ion-vs-diss",
   "ka-pka-table",
@@ -1479,9 +1480,6 @@
  "jeden": [
   "acid-rain-v01",
   "chain-scn",
-  "gfx-scene-acidMetal",
-  "gfx-scene-dilution",
-  "gfx-scene-titration",
   "ion-map-v02",
   "kw-dysocjacja-v01",
   "kw-reszty-v01",
@@ -1536,6 +1534,7 @@
   "nadmiar-substratu",
   "osady-dwie-sole",
   "przeniesienie-protonu",
+  "miareczkowanie-biureta",
   "eutrofizacja",
   "sekwencje",
   "wirus-bakteria",

@@ -62,7 +62,8 @@
     "acid_rain.js": "acid-rain-v01: Kwaśne deszcze — emisja SO₂/NOₓ, chmura, opad, jezioro i las, odsiarczanie (port)",
     "miareczkowanie_tm.js": "titration-merged: miareczkowanie — typ kwasu, wskaźnik, krzywa pH(V), kolba, autoplay (port; shim CHE.EQUILIBRIUM.titrationPH)",
     "przewodnictwo.js": "przewodnictwo: tester przewodnictwa + elektroliza (gazy na elektrodach) + model jonów wędrujących do elektrod; port sceny GFX conductivity",
-    "dysocjacja.js": "kw-dysocjacja-v01: dysocjacja kwasów na żywo (α, pH z Ka, wykres α(c), krok po kroku)"
+    "dysocjacja.js": "kw-dysocjacja-v01: dysocjacja kwasów na żywo (α, pH z Ka, wykres α(c), krok po kroku)",
+    "miareczkowanie_biureta.js": "miareczkowanie-biureta: biureta + kolba + pH-metr + wskaźnik (fenoloftaleina/oranż)"
   },
   "lekcje": {
     "P01": [
@@ -399,7 +400,8 @@
       "kwasy_modele.js",
       "znaki.js",
       "probowki.js",
-      "zlewka_rx.js"
+      "zlewka_rx.js",
+      "miareczkowanie_biureta.js"
     ],
     "N05": [
       "klocki.js",
