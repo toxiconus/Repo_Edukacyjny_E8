@@ -47,3 +47,5 @@ Zasada: jedna najlepsza wersja. Przy podmianie sprawdź, których lekcji dotyczy
 - Zrobione: miareczkowanie-biureta (biureta+kolba+pH-metr+wskaźnik) zastąpiło gfx-scene-titration; gfx-scene-acidMetal i gfx-scene-dilution usunięte (pokrywają je zlewki-rx i kwasy-rozcienczanie).
 - Zrobione: N04 ma 0 `@model`: tabela-rozpuszczalnosci (+barwy osadów) i rownania-jonowe jako klocki (też N03/N05), `reakcje-przewidz` (zamiast reakcje-kwasu-v03), `wskazniki-statyw` (zamiast gfx-scene-indicatorRack), pracownia kw-doswiadczenia usunięta (wszystkie jej elementy są klockami).
 - Nadal do zrobienia: @model w innych lekcjach (N01–N03, N05+, F, LKO) — sprawdzić `grep ^@model`, dla każdego klocek lub port.
+
+- 2026-11-04 (późno): N05 `stechiometria` (kalkulator reakcji); N03 rodzina n02-* (7 widoków) → klocki w `wodorotlenki_n02.js` (z modułami HYDROXIDES/IONIC, dane 46 reakcji, minimalny model jonów); w N03 zostaje @model n02-doswiadczenia-v01 (pracownia 26 doświadczeń), w N05: ion-map-v02, sole-doswiadczenia-v01.

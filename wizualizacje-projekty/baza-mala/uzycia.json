@@ -284,6 +284,7 @@
   "bilans-rownania": "klocek",
   "zbieranie-gazu": "klocek",
   "palnik-gazowy": "klocek",
+  "stechiometria": "klocek",
   "nadmiar-substratu": "klocek",
   "doswiadczenie": "klocek",
   "rownania-jonowe": "klocek",
@@ -511,7 +512,6 @@
    "C3": 1,
    "F17": 1,
    "N02": 1,
-   "N05": 1,
    "R07": 1
   },
   "substance": {},
@@ -897,6 +897,9 @@
    "LKO_ORG01_alkany": 1,
    "N01": 1,
    "N02": 1
+  },
+  "stechiometria": {
+   "N05": 1
   },
   "nadmiar-substratu": {
    "R07": 1
@@ -1531,6 +1534,7 @@
   "przewodnik-izolator",
   "linie-pola",
   "estryfikacja",
+  "stechiometria",
   "nadmiar-substratu",
   "reakcje-przewidz",
   "osady-dwie-sole",

@@ -295,3 +295,4 @@
 - 2026-11-04: N03/N04/N05 — tabela-rozpuszczalnosci (z barwami osadów) i rownania-jonowe jako klocki zamiast @model.
 - 2026-11-04: N04 bez @model — reakcje-przewidz, wskazniki-statyw, tabela-rozpuszczalnosci, rownania-jonowe (klocki).
 - 2026-11-04: N03/N05 — indicatorRack→wskazniki-statyw, kw-reszty→kwasy-reszty, szereg→probowki-wybor, chain-scn→lancuch-przemian.
+- 2026-11-04: N03 n02-* → klocki (wodorotlenki_n02.js); N05 stechiometria.

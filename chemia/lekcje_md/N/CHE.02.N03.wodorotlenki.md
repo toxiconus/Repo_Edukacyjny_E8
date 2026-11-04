@@ -187,7 +187,7 @@ Traktowanie w zadaniach :: Jeden klocek (całość), nie osobne O i H.
 
 #### Model interaktywny — bilans ładunków i konstruktor wzorów {#wzorometr .merge-h}
 
-@model n02-wzory-v01 | Wzór wodorotlenku: kation + OH⁻ — bilans ładunków, nawias, modele A/B/jony, sprawdzanie wzoru | Zastępuje Wzórometr, Bilansator, Konstruktor i animację nawiasu · CHE.HYDROXIDES.build / check
+@klocek n02-wzory-v01 | Wzór wodorotlenku: kation + OH⁻ — bilans ładunków, nawias, modele A/B/jony, sprawdzanie wzoru | Zastępuje Wzórometr, Bilansator, Konstruktor i animację nawiasu · CHE.HYDROXIDES.build / check
 @opis Konstruktor wzoru wodorotlenku: kation metalu łączy się z odpowiednią liczbą anionów OH⁻, aż ładunki się zrównoważą; model pokazuje zapis z nawiasem (np. Ca(OH)₂, Al(OH)₃) w trzech ujęciach — wzór, model kulkowy i jony — i sprawdza wpisany wzór. Wniosek: liczba grup OH⁻ równa się ładunkowi (wartościowości) metalu, a nawias obejmuje całą grupę.
 
 Dodawaj grupy OH⁻, aż suma ładunków wyniesie zero. Wybierz kation i dodawaj grupy OH⁻, aż powstanie poprawny wzór.
@@ -309,7 +309,7 @@ W temperaturze pokojowej **wodorotlenki są ciałami stałymi** (kryształy, pro
 
 Jeden widok pokazuje pierwiastek, wartościowość, wzór wodorotlenku, rozpuszczalność i barwę osadu. Kliknij kafelek — szczegóły pojawią się na stałe pod spodem. {#wodor-grid}
 
-@model n02-przeglad-v01 | Wodorotlenki — kafelki: rozpuszczalność, barwa osadu, odczyn, dysocjacja, metody otrzymywania | CHE.DATA.HYDROXIDES + D.SOLUBILITY_TABLE
+@klocek n02-przeglad-v01 | Wodorotlenki — kafelki: rozpuszczalność, barwa osadu, odczyn, dysocjacja, metody otrzymywania | CHE.DATA.HYDROXIDES + D.SOLUBILITY_TABLE
 @opis Kafelki wodorotlenków: dla każdego podany jest wzór, rozpuszczalność, barwa osadu (np. Cu(OH)₂ niebieski, Fe(OH)₃ brunatnoczerwony), odczyn roztworu, równanie dysocjacji i metody otrzymywania. Wniosek: tylko wodorotlenki rozpuszczalne tworzą zasady; nierozpuszczalne poznaje się po barwie osadu.
 
 ### 6.3 Wodorotlenek a zasada; elektrolit i dysocjacja {#wodorotlenek-vs-zasada}
@@ -376,7 +376,7 @@ Roztwór <span class="formula">NaOH</span> jest **elektrolitem** (Na⁺ i OH⁻)
 
 Zobacz, jak kryształ NaOH rozpada się na jony, a jony otaczają się cząsteczkami wody.
 
-@model n02-dysocjacja-v01 | Rozpuszczanie i dysocjacja: NaOH, KOH, Ca(OH)₂, Mg(OH)₂, Cu(OH)₂, Fe(OH)₃ — jony, hydratacja, efekt cieplny | GFX.ions · CHE.HYDROXIDES.dissociation / heat
+@klocek n02-dysocjacja-v01 | Rozpuszczanie i dysocjacja: NaOH, KOH, Ca(OH)₂, Mg(OH)₂, Cu(OH)₂, Fe(OH)₃ — jony, hydratacja, efekt cieplny | GFX.ions · CHE.HYDROXIDES.dissociation / heat
 @opis Animacja rozpuszczania i dysocjacji wodorotlenków (NaOH, KOH, Ca(OH)₂, Mg(OH)₂, Cu(OH)₂, Fe(OH)₃): kryształ rozpada się na jony otoczone cząsteczkami wody, widać efekt cieplny (rozpuszczanie NaOH silnie ogrzewa roztwór), a wodorotlenki trudno rozpuszczalne pozostają głównie osadem. Wniosek: zasada to roztwór z jonami OH⁻ powstałymi w dysocjacji.
 
 #### Energia rozpuszczania [[understand:ROZUMIENIE]] {.merge-h}
@@ -463,7 +463,7 @@ Przesuwaj suwak lub klikaj wartości na skali. Zobaczysz jednocześnie kolor roz
 
 ### 7.1 Trzy szkolne metody i ich warunki {#metody}
 
-@model n02-otrzymywanie-v01 | Otrzymywanie wodorotlenków — trzy metody, „Jak otrzymać…?” i mapa przemian | Zlewka GFX.rx · reguły CHE.HYDROXIDES.obtain (kiedy metoda działa, a kiedy nie)
+@klocek n02-otrzymywanie-v01 | Otrzymywanie wodorotlenków — trzy metody, „Jak otrzymać…?” i mapa przemian | Zlewka GFX.rx · reguły CHE.HYDROXIDES.obtain (kiedy metoda działa, a kiedy nie)
 @opis Otrzymywanie wodorotlenków trzema metodami w zlewce: metal aktywny z wodą, tlenek metalu z wodą, strącanie z soli roztworem zasady; model mówi, kiedy dana metoda działa, a kiedy nie (np. CuO nie reaguje z wodą), i pokazuje mapę przemian. Wniosek: metodę dobiera się do aktywności metalu i rozpuszczalności produktu.
 
 ::: div.rule-box
@@ -529,7 +529,7 @@ Kwas dostarcza jony H⁺, zasada dostarcza jony OH⁻. Gdy są w równej liczbie
 :::
 
 
-@model n02-zobojetnianie-v01 | Zobojętnianie — licznik moli, pH, wskaźniki, jony H⁺ + OH⁻ → H₂O i krzywa pH | Zastępuje animację i symulator zobojętniania · CHE.HYDROXIDES.neutral (Kw), GFX.ions
+@klocek n02-zobojetnianie-v01 | Zobojętnianie — licznik moli, pH, wskaźniki, jony H⁺ + OH⁻ → H₂O i krzywa pH | Zastępuje animację i symulator zobojętniania · CHE.HYDROXIDES.neutral (Kw), GFX.ions
 @opis Zobojętnianie: do zasady dodaje się porcjami kwas; licznik moli pokazuje ubywanie jonów OH⁻ i przybywanie H₂O, zmienia się pH i barwa wskaźnika, a krzywa pH opada gwałtownie w punkcie zobojętnienia. Wniosek: H⁺ + OH⁻ → H₂O — w punkcie zobojętnienia ilości kwasu i zasady są równoważne.
 
 Postęp zobojętniania śledzimy wskaźnikiem: fenoloftaleina odbarwia się, gdy w roztworze znika nadmiar OH⁻ (barwy wskaźników — [§6.4](#ph-wskazniki)).
@@ -597,7 +597,7 @@ Trudno rozpuszczalne wodorotlenki podczas ogrzewania rozkładają się na tlenek
 
 **Reaktor:** Wybierz dwa substraty — sprawdź, czy zachodzi reakcja i jaka. {#reactor}
 
-@model n02-reaktor-v01 | Reaktor: wodorotlenek + odczynnik — przewiduj, potem sprawdź | CHE.HYDROXIDES.predict · H₂O, HCl, HNO₃, H₂SO₄, NaOH, CO₂, ogrzewanie, powietrze
+@klocek n02-reaktor-v01 | Reaktor: wodorotlenek + odczynnik — przewiduj, potem sprawdź | CHE.HYDROXIDES.predict · H₂O, HCl, HNO₃, H₂SO₄, NaOH, CO₂, ogrzewanie, powietrze
 @opis Reaktor przewidywania: wybierasz wodorotlenek i odczynnik (woda, HCl, HNO₃, H₂SO₄, NaOH, CO₂, ogrzewanie, powietrze), zapisujesz przewidywanie, potem model pokazuje wynik, produkty i równanie. Wniosek: reakcje wodorotlenków da się przewidzieć z ich rozpuszczalności i charakteru.
 
 ## 9 | Zastosowania, BHP i życie codzienne [[basic:E8]] {#zastosowania .section}
@@ -910,7 +910,7 @@ Model dydaktyczny: wolne jony → zbliżanie i zderzenia → krótkotrwałe skup
 Rzeczywisty proces jest bardziej złożony i może obejmować formy pośrednie oraz kompleksy. Animacja ma pokazać ideę powstawania fazy stałej, a nie pełną kinetykę procesu.
 :::
 
-@model n02-stracanie-v01 | Laboratorium jonowe — strącanie 13 wodorotlenków (model cząsteczkowy) | CHE.sim.ParticleSim · barwy osadów CHE.COLORS · równania jonowe CHE.IONIC
+@klocek n02-stracanie-v01 | Laboratorium jonowe — strącanie 13 wodorotlenków (model cząsteczkowy) | CHE.sim.ParticleSim · barwy osadów CHE.COLORS · równania jonowe CHE.IONIC
 @opis Laboratorium jonowe: model cząsteczkowy strącania 13 wodorotlenków — jony metalu i jony OH⁻ łączą się w osad o charakterystycznej barwie, a jony obce pozostają w roztworze; obok równanie jonowe skrócone. Wniosek: osad powstaje, gdy kation tworzy z OH⁻ substancję trudno rozpuszczalną.
 
 ::: adv | Etapy pośrednie strącania — hydroksokompleksy | poziom LO / akademicki

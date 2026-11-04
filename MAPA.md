@@ -328,7 +328,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/engine/src/gfx/wspolne/widoki  (1 pl., 4 KB)
 - `che-test-silnika-v01.js` 4 KB
 
-## chemia/che-modular/engine/src/klocki  (66 pl., 563 KB)
+## chemia/che-modular/engine/src/klocki  (67 pl., 571 KB)
 - (zwinięte; `ls chemia/che-modular/engine/src/klocki`)
 
 ## chemia/che-modular/engine/src/klocki/dane  (1 pl., 11 KB)
@@ -536,7 +536,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/wizualizacje_r4  (1 pl., 35 KB)
 - `Wizualizacje_do_lekcji_R4.html` 35 KB
 
-## chemia/html  (128 pl., 15.9 MB)
+## chemia/html  (128 pl., 16.0 MB)
 - (zwinięte; `ls chemia/html`) — duże:
 - ⚠`C1c_konfiguracje_elektronowe.html` 256 KB
 - ⚠`C2m_mol_masa_molowa.html` 109 KB
@@ -598,7 +598,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/lekcje_md/N  (3 pl., 384 KB)
 - ⚠`CHE.02.N03.wodorotlenki.md` 134 KB
 - ⚠`CHE.02.N04.kwasy.md` 162 KB
-- ⚠`CHE.02.N05.sole.md` 89 KB
+- ⚠`CHE.02.N05.sole.md` 88 KB
 
 ## chemia/lekcje_md/O  (9 pl., 121 KB)
 - `CHE.05.O01-O07.weglowodory.md` 40 KB
@@ -1166,7 +1166,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `PRZEKAZANIE.md` 3 KB
 - ⚠`wzorcownia.html` 59 KB
 
-## wizualizacje-projekty/baza-mala  (5 pl., 162 KB)
+## wizualizacje-projekty/baza-mala  (5 pl., 163 KB)
 - `BRAKI_WIZUALIZACJI.md` 16 KB
 - `KATALOG_KLOCKOW.md` 35 KB
 - `README.md` 3 KB
