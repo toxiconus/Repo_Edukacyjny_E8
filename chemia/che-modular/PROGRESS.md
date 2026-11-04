@@ -286,3 +286,4 @@
 - 2026-11-02: N04 — zlewki-rx: otrzymywanie kwasów w §8 (tlenki kwasowe + woda, gaz + woda, sól + kwas, osad H₂SiO₃) i różne kwasy (Mg/Zn w HCl, H₂SO₄, ocet) w §9.1; nowe specy w zlewka_rx.js.
 - 2026-11-04: N04 — port z visual-library do małych klocków: ph-indicators-v03 (ph_panel.js), titration-merged (miareczkowanie_tm.js), acid-rain-v01 (acid_rain.js); shimy model_widok.js (CSS .che-port) i ruch_che.js (CHE.MOTION); usunięty mój klocek miareczkowanie. Plan uwspólnienia: chemia/plany/UWSPOLNIENIE_WIZUALIZACJI.md.
 - 2026-11-04: N04 — pojedyncze zlewki doświadczeń zgrupowane po 2 obok siebie (zlewki-rx k="A,B": porównanie/kontrola); nowe specy: phphKontrola, cuoH2so4Zimno, sodaHcl, rdzaHcl.
+- 2026-11-04: zlewki-rx zawsze w jednym rzędzie (2–3 kolumny, także na telefonie 375 px), mniejsze podpisy.

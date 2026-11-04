@@ -5766,13 +5766,15 @@ KLOCKI.def('probowki', {
       if (!C.RXL) { host.textContent = 'Brak silniczka rx-lite.'; return; }
       var lista = opc.k ? String(opc.k).split(',').map(function (x) { return x.trim(); }) : (ZESTAWY[opc.zestaw] || ZESTAWY['metale-hcl']);
       var siatka = document.createElement('div');
-      siatka.style.cssText = 'display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px';
+      siatka.style.cssText = 'display:grid;grid-template-columns:repeat(' + Math.min(3, lista.length) + ',minmax(0,1fr));gap:6px';   // zawsze obok siebie (też na telefonie)
       var ms = [];
+      siatka.className = 'zrx';
+      if (!document.getElementById('zrx-css')) { var st = document.createElement('style'); st.id = 'zrx-css'; st.textContent = '.zrx .cap{font-size:clamp(11px,3vw,14px);line-height:1.2}'; document.head.appendChild(st); }
       lista.forEach(function (k) {
         var kom = document.createElement('div'), box = document.createElement('div');
         kom.appendChild(box);
         ms.push(C.RXL.mount(box, k, {dur: Number(opc.dur) || 6, auto: false}));
-        var e = document.createElement('div'); e.style.cssText = 'text-align:center;font-size:13px;margin-top:2px';
+        var e = document.createElement('div'); e.style.cssText = 'text-align:center;font-size:clamp(10px,2.6vw,13px);line-height:1.25;margin-top:2px;overflow-wrap:anywhere';
         e.textContent = (SPECS[k] || {}).eq || ''; kom.appendChild(e); siatka.appendChild(kom);
       });
       host.appendChild(siatka);
