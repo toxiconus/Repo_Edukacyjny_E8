@@ -368,7 +368,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `nawigacja.js` 11 KB
 - ⚠`rozszerzenia.js` 87 KB
 
-## chemia/che-modular/engine/src/lite  (4 pl., 37 KB)
+## chemia/che-modular/engine/src/lite  (4 pl., 38 KB)
 - `che-lite.js` 1 KB
 - `lab-dane.json` 15 KB
 - `rx-lite.js` 14 KB
@@ -555,7 +555,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - (zwinięte; `ls chemia/html`) — duże:
 - ⚠`C1c_konfiguracje_elektronowe.html` 261 KB
 - ⚠`C2m_mol_masa_molowa.html` 120 KB
-- ⚠`C2w_wzor_elementarny_rzeczywisty.html` 179 KB
+- ⚠`C2w_wzor_elementarny_rzeczywisty.html` 180 KB
 - ⚠`C3_rownania_i_obliczenia_z_rownan.html` 118 KB
 - ⚠`C4_doswiadczenia_zbiorczo.html` 132 KB
 - ⚠`CHE.00.LAB.doswiadczenia.html` 155 KB
@@ -754,7 +754,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## eksport/grafiki  (1 pl., 7 KB)
 - `VIZ_START.html` 7 KB
 
-## narzedzia  (33 pl., 201 KB)
+## narzedzia  (34 pl., 202 KB)
 - (zwinięte; `ls narzedzia`)
 
 ## narzedzia/jednorazowe  (5 pl., 14 KB)
@@ -1300,7 +1300,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## wizualizacje-projekty/baza-mala/klocki/dane  (1 pl., 11 KB)
 - `pierwiastki.js` 11 KB
 
-## wizualizacje-projekty/baza-mala/klocki/lite  (4 pl., 37 KB)
+## wizualizacje-projekty/baza-mala/klocki/lite  (4 pl., 38 KB)
 - `che-lite.js` 1 KB
 - `lab-dane.json` 15 KB
 - `rx-lite.js` 14 KB

@@ -308,3 +308,4 @@
 - 2026-11-04: test kontrastu w ciemnym motywie dla wszystkich 74 klocków: z 20 klocków z problemem zostało 6 (fałszywe alarmy SVG). Naprawione: --panel/--line (nieistniejące), tekst na akcencie, pastelowe chipy tlenków, rx-lite .on.
 - 2026-11-04: test mobilny klocków (375 px): naprawione select (tlenki), siatka doświadczeń, stojaki palników; zostają tylko tabele z przewijaniem.
 - 2026-11-04: cele dotykowe: chipy ≥36 px na telefonie (lab.css), test narzedzia/test_dotyk_klockow.js; liczba klocków z małymi przyciskami 31→kilka (komórki tabel, checkboxy).
+- 2026-11-04: rx-lite wizualnie: kadr bez pustego pola nad zlewką, blat z cieniem, połysk i cieniowanie szkła, menisk, kołnierz zlewki/probówki.

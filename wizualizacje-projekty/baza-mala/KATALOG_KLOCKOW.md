@@ -8,8 +8,8 @@ Ta paczka zawiera kopie tego, co już działa w lekcjach. Zewnętrzny model moż
 
 | Folder | Zawartość | Rozmiar |
 |---|---|---|
-| `klocki` | kopia folderu | 758 KB |
-| `klocki/lite` | kopia folderu | 37 KB |
+| `klocki` | kopia folderu | 759 KB |
+| `klocki/lite` | kopia folderu | 38 KB |
 | `gfx` | kopia folderu | 683 KB |
 | `tablice` | kopia folderu | 1612 KB |
 | `biblioteki/chemia/rozszerzenia.js` | kopia pliku | 87 KB |
