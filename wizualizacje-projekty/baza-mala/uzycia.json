@@ -508,11 +508,7 @@
   "reakcje-kwasu-v03": {
    "N04": 1
   },
-  "rownania-jonowe-v01": {
-   "N03": 1,
-   "N04": 1,
-   "N05": 1
-  },
+  "rownania-jonowe-v01": {},
   "safety": {},
   "sole-doswiadczenia-v01": {
    "C2w_wzor_elementarny_rzeczywisty": 1,
@@ -528,11 +524,7 @@
    "R07": 1
   },
   "substance": {},
-  "tabela-rozpuszczalnosci-v01": {
-   "N03": 1,
-   "N04": 1,
-   "N05": 1
-  },
+  "tabela-rozpuszczalnosci-v01": {},
   "timeline": {},
   "titration-merged": {
    "N04": 1
@@ -919,7 +911,9 @@
   "rownania-jonowe": {
    "C1c_kwasy_zasady_sole": 1,
    "J03": 2,
-   "N04": 1
+   "N03": 1,
+   "N04": 1,
+   "N05": 1
   },
   "probowki": {
    "N04": 1,
@@ -946,7 +940,10 @@
   },
   "tabela-rozpuszczalnosci": {
    "C1c_kwasy_zasady_sole": 1,
-   "J03": 2
+   "J03": 2,
+   "N03": 1,
+   "N04": 1,
+   "N05": 1
   },
   "dysocjacja-vs-jonizacja": {
    "J03": 1,
@@ -1324,9 +1321,11 @@
   "periodic-54",
   "ph-ladder",
   "reaction",
+  "rownania-jonowe-v01",
   "safety",
   "species-v01",
   "substance",
+  "tabela-rozpuszczalnosci-v01",
   "timeline",
   "n05-doswiadczenia-v01",
   "f09-trzy-liczby-v01",
@@ -1569,10 +1568,8 @@
   "n01-doswiadczenia-v01",
   "n02-doswiadczenia-v01",
   "ph-indicators-v03",
-  "rownania-jonowe-v01",
   "sole-doswiadczenia-v01",
   "stech-kalkulator-v01",
-  "tabela-rozpuszczalnosci-v01",
   "conductivity",
   "caoH2o",
   "cuso4Hydrate",

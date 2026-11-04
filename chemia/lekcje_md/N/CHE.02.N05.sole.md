@@ -254,7 +254,7 @@ Szkolna reguła „sole są mocnymi elektrolitami” ma wyjątki: niektóre sole
 > **Rozpuszczalność nie wynika z nazwy ani wzoru soli** — potrzebna jest reguła lub tabela, a zależy ona od konkretnej pary kation–anion. Tabela to model szkolny z wyjątkami (20 °C), a nie uniwersalna predykcja zachowania każdego roztworu. Litery R/T/N w tej sekcji audyt porównuje z tabelą silnika.
 :::
 
-@model tabela-rozpuszczalnosci-v01 | Interaktywna tabela rozpuszczalności (20 °C) — każda komórka podaje wzór i nazwę soli | CHE.DATA.SOLUBILITY_TABLE · kliknij komórkę
+@klocek tabela-rozpuszczalnosci | Interaktywna tabela rozpuszczalności (20 °C) — każda komórka podaje wzór i nazwę soli 
 @opis Tabela rozpuszczalności w temperaturze 20 °C: wiersze kationów, kolumny anionów (w tym OH⁻), komórki oznaczone jako substancja rozpuszczalna, trudno rozpuszczalna lub praktycznie nierozpuszczalna. Wniosek: z tabeli odczytuje się, który wodorotlenek lub sól wytrąci się jako osad.
 
 ## 6 | Otrzymywanie soli — 10 metod [[basic:E8]] {#otrzymywanie}
@@ -460,7 +460,7 @@ Samo powstanie osadu nie zawsze jednoznacznie identyfikuje jon — potrzebny jes
 </tbody></table>
 :::
 
-@model rownania-jonowe-v01 | Równania jonowe dla tych reakcji (generowane przez silnik) — strącanie, wypieranie, zobojętnianie | cząsteczkowe → jonowe pełne → skrócone
+@klocek rownania-jonowe {} | Równania jonowe dla tych reakcji (generowane przez silnik) — strącanie, wypieranie, zobojętnianie 
 @opis Zestaw równań reakcji strącania wodorotlenków i zobojętniania w trzech zapisach: cząsteczkowym, jonowym pełnym i jonowym skróconym, z wyróżnieniem jonów, które nie biorą udziału w reakcji. Wniosek: zapis jonowy skrócony pokazuje tylko jony, które naprawdę reagują.
 
 ## 8 | Wypieranie metali — szereg aktywności [[basic:E8]] {#wypieranie}

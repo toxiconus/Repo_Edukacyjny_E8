@@ -114,7 +114,9 @@
       "ui_klocki.js",
       "model_widok.js",
       "ruch_che.js",
-      "ph_panel.js"
+      "ph_panel.js",
+      "tabela_rozpuszczalnosci.js",
+      "rownania_jonowe.js"
     ],
     "LKO-KRZYWE": [
       "klocki.js",
@@ -410,7 +412,9 @@
       "zbieranie_gazu.js",
       "karta_bhp.js",
       "ui_klocki.js",
-      "przewodnictwo.js"
+      "przewodnictwo.js",
+      "tabela_rozpuszczalnosci.js",
+      "rownania_jonowe.js"
     ],
     "F02": [
       "klocki.js",

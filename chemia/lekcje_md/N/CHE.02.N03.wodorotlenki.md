@@ -304,7 +304,7 @@ W temperaturze pokojowej **wodorotlenki są ciałami stałymi** (kryształy, pro
 
 > **Reguła E8:** rozpuszczalność ↔ siła odczynu w roztworze. Dużo wolnych OH⁻ (NaOH) = mocno zasadowy; osad Cu(OH)₂/Fe(OH)₃ ≈ brak typowego odczynu zasadowego w wodzie. Wartości g/100 mL — orientacyjne (podręcznik / tablice).
 
-@model tabela-rozpuszczalnosci-v01 | Tabela rozpuszczalności (20 °C) — kolumna OH⁻ i wszystkie sole | To samo źródło danych co ta lekcja · CHE.DATA.SOLUBILITY_TABLE
+@klocek tabela-rozpuszczalnosci | Tabela rozpuszczalności (20 °C) — kolumna OH⁻ i wszystkie sole 
 @opis Tabela rozpuszczalności w temperaturze 20 °C: wiersze kationów, kolumny anionów (w tym OH⁻), komórki oznaczone jako substancja rozpuszczalna, trudno rozpuszczalna lub praktycznie nierozpuszczalna. Wniosek: z tabeli odczytuje się, który wodorotlenek lub sól wytrąci się jako osad.
 
 Jeden widok pokazuje pierwiastek, wartościowość, wzór wodorotlenku, rozpuszczalność i barwę osadu. Kliknij kafelek — szczegóły pojawią się na stałe pod spodem. {#wodor-grid}
@@ -959,7 +959,7 @@ Równanie jonowe pokazuje, które jony naprawdę biorą udział w reakcji. Zapis
 <p style="margin-top:10px;font-size:13px;">W ostatniej reakcji wszystkie jony biorą udział w przemianie — powstaje osad i woda, dlatego nie ma jonów widzów.</p>
 </div>
 
-@model rownania-jonowe-v01 | Równania jonowe — wszystkie reakcje z silnika (strącanie OH⁻, zobojętnianie) | Zapis cząsteczkowy, jonowy pełny i skrócony · CHE.IONIC
+@klocek rownania-jonowe {} | Równania jonowe — wszystkie reakcje z silnika (strącanie OH⁻, zobojętnianie) 
 @opis Zestaw równań reakcji strącania wodorotlenków i zobojętniania w trzech zapisach: cząsteczkowym, jonowym pełnym i jonowym skróconym, z wyróżnieniem jonów, które nie biorą udziału w reakcji. Wniosek: zapis jonowy skrócony pokazuje tylko jony, które naprawdę reagują.
 
 > Zapis zobojętniania: cząsteczkowy, jonowy pełny i jonowy skrócony — w modelu „Równania jonowe” wyżej wybierz reakcję HCl + NaOH (jeden model dla wszystkich równań jonowych lekcji).

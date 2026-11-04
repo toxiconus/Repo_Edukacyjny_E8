@@ -1049,9 +1049,6 @@ H₃PO₄ (3 H) + 3 NaOH (3 OH) → Na₃PO₄ + 3 H₂O. ✓
 
 ### 9.3.1 Równania jonowe zobojętniania
 
-@model rownania-jonowe-v01 | Równania jonowe dla wszystkich reakcji z lekcji (generowane przez silnik) | Cząsteczkowe → jonowe pełne → skrócone · jony obserwatory · CHE.IONIC
-@opis Zestaw równań reakcji strącania wodorotlenków i zobojętniania w trzech zapisach: cząsteczkowym, jonowym pełnym i jonowym skróconym, z wyróżnieniem jonów, które nie biorą udziału w reakcji. Wniosek: zapis jonowy skrócony pokazuje tylko jony, które naprawdę reagują.
-
 @klocek rownania-jonowe {} | Równania jonowe: wybierz reakcję i zobacz trzy zapisy
 @opis Lista 12 reakcji; po wyborze widać zapis cząsteczkowy, jonowy pełny i jonowy skrócony. Wniosek: w zapisie skróconym zostają tylko jony, które naprawdę reagują.
 
@@ -1072,7 +1069,7 @@ Reakcja zachodzi, gdy powstaje **osad**, **gaz** lub **słaby elektrolit (np. wo
 
 > Czy powstanie osad, sprawdzasz w **tabeli rozpuszczalności**: produkt oznaczony N (nierozpuszczalny) lub T (trudno rozpuszczalny) wytrąca się — np. AgCl (N), BaSO₄ (N). Jeśli wszystkie produkty są rozpuszczalne (R) i nie powstaje gaz ani słaby elektrolit — reakcja nie zachodzi (same jony obserwatory).
 
-@model tabela-rozpuszczalnosci-v01 | Tabela rozpuszczalności (20 °C) — kliknij komórkę | Wzór i nazwa soli, R / T / N, barwa osadu · CHE.DATA.SOLUBILITY_TABLE
+@klocek tabela-rozpuszczalnosci | Tabela rozpuszczalności (20 °C) — kliknij komórkę 
 @opis Tabela rozpuszczalności w temperaturze 20 °C: wiersze kationów, kolumny anionów (w tym OH⁻), komórki oznaczone jako substancja rozpuszczalna, trudno rozpuszczalna lub praktycznie nierozpuszczalna. Wniosek: z tabeli odczytuje się, który wodorotlenek lub sól wytrąci się jako osad.
 
 $$ 2 HCl + CaCO₃ → CaCl₂ + H₂O + CO₂↑ (gaz)

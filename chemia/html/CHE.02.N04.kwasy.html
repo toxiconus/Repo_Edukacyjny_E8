@@ -1525,8 +1525,6 @@ body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
 <p>H₃PO₄ (3 H) + 3 NaOH (3 OH) → Na₃PO₄ + 3 H₂O. ✓</p>
 </div>
 <h3>9.3.1 Równania jonowe zobojętniania</h3>
-<div class="che-lesson-viz-ref" data-che-lesson-viz="rownania-jonowe-v01"><button type="button" data-che-open-viz="rownania-jonowe-v01" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'rownania-jonowe-v01',lessonId:'N04'},'*')"><b>Równania jonowe dla wszystkich reakcji z lekcji (generowane przez silnik)</b><span>Cząsteczkowe → jonowe pełne → skrócone · jony obserwatory · CHE.IONIC</span></button></div>
-<!-- OPIS: Zestaw równań reakcji strącania wodorotlenków i zobojętniania w trzech zapisach: cząsteczkowym, jonowym pełnym i jonowym skróconym, z wyróżnieniem jonów, które nie biorą udziału w reakcji. Wniosek: zapis jonowy skrócony pokazuje tylko jony, które naprawdę reagują. -->
 <figure class="lk-fig" data-klocek="rownania-jonowe" data-opt="{}"><div class="lk-fig-body"></div><figcaption>Równania jonowe: wybierz reakcję i zobacz trzy zapisy</figcaption></figure>
 <!-- OPIS: Lista 12 reakcji; po wyborze widać zapis cząsteczkowy, jonowy pełny i jonowy skrócony. Wniosek: w zapisie skróconym zostają tylko jony, które naprawdę reagują. -->
 <div class="card card-extra poz-pon">
@@ -1541,7 +1539,7 @@ body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
 <span class="card-label">Warunki zachodzenia reakcji</span>
 <p>Reakcja zachodzi, gdy powstaje <strong>osad</strong>, <strong>gaz</strong> lub <strong>słaby elektrolit (np. woda)</strong>.</p>
 <p class="mini-note">Czy powstanie osad, sprawdzasz w <strong>tabeli rozpuszczalności</strong>: produkt oznaczony N (nierozpuszczalny) lub T (trudno rozpuszczalny) wytrąca się — np. AgCl (N), BaSO₄ (N). Jeśli wszystkie produkty są rozpuszczalne (R) i nie powstaje gaz ani słaby elektrolit — reakcja nie zachodzi (same jony obserwatory).</p>
-<div class="che-lesson-viz-ref" data-che-lesson-viz="tabela-rozpuszczalnosci-v01"><button type="button" data-che-open-viz="tabela-rozpuszczalnosci-v01" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'tabela-rozpuszczalnosci-v01',lessonId:'N04'},'*')"><b>Tabela rozpuszczalności (20 °C) — kliknij komórkę</b><span>Wzór i nazwa soli, R / T / N, barwa osadu · CHE.DATA.SOLUBILITY_TABLE</span></button></div>
+<figure class="lk-fig" data-klocek="tabela-rozpuszczalnosci" data-opt="{}"><div class="lk-fig-body"></div><figcaption>Tabela rozpuszczalności (20 °C) — kliknij komórkę</figcaption></figure>
 <!-- OPIS: Tabela rozpuszczalności w temperaturze 20 °C: wiersze kationów, kolumny anionów (w tym OH⁻), komórki oznaczone jako substancja rozpuszczalna, trudno rozpuszczalna lub praktycznie nierozpuszczalna. Wniosek: z tabeli odczytuje się, który wodorotlenek lub sól wytrąci się jako osad. -->
 <div class="formula-lg">2 HCl + CaCO₃ → CaCl₂ + H₂O + CO₂↑ (gaz)</div>
 <div class="formula-lg">HCl + AgNO₃ → AgCl↓ + HNO₃ (osad)</div>
@@ -3490,6 +3488,8 @@ DANE.CaO = {kon: 'związek CaO', rho: '3,34 g/cm³', rhoN: 3.34, mp: '2572 °C',
     else f = (sym === 'NH4' && nc > 1 ? '(NH4)' : sym) + (nc > 1 ? nc : '') + ((na > 1 && !mono) ? '(' + an + ')' + na : an + (na > 1 ? na : ''));
     return {pretty: pf(f), name: A.name + ' ' + D.gen[cid], sol: D.table[an][cid]};
   }
+  var PPT = {"Cu(OH)2": ["#4fa3e0", "galaretowaty, niebieski"], "Fe(OH)2": ["#9db79a", "zielonkawy, szybko brunatnieje"], "Fe(OH)3": ["#a0522d", "rdzawobrunatny"], "Al(OH)3": ["#f5f5f5", "biały, galaretowaty"], "Zn(OH)2": ["#f5f5f5", "biały"], "AgCl": ["#f8fafc", "biały, serowaty"], "AgBr": ["#f3ecc0", "kremowy"], "AgI": ["#f2e04a", "żółty"], "BaSO4": ["#f8fafc", "biały"], "CaCO3": ["#f8fafc", "biały"], "PbI2": ["#f5d90a", "żółty"], "CuS": ["#1f1f1f", "czarny"], "Ag2CrO4": ["#a3341f", "ceglastoczerwony"]};   // barwy osadów (z CHE.COLORS 'precipitate'), klucz = wzór bez indeksów
+  function barwa(k) { var f = k.pretty.replace(/[₀-₉]/g, function (c) { return SUB.indexOf(c); }); return PPT[f] || null; }
   window.KLOCKI.rozp = {D: D, zwiazek: zwiazek};
   var COL = {R: 'rgba(46,125,79,.16)', T: 'rgba(176,111,28,.2)', N: 'rgba(184,58,69,.18)', '—': 'rgba(100,116,139,.12)'};
   KLOCKI.def('tabela-rozpuszczalnosci', {
@@ -3510,7 +3510,8 @@ DANE.CaO = {kon: 'związek CaO', rho: '3,34 g/cm³', rhoN: 3.34, mp: '2572 °C',
       host.addEventListener('click', function (e) {
         var td = e.target.closest('td[data-c]'); if (!td) return;
         var k = zwiazek(td.dataset.c, td.dataset.a);
-        info.innerHTML = '<b style="font-size:16px">' + k.pretty + '</b> — ' + k.name + '<br>' + k.sol + ': ' + (D.legend[k.sol] || '') + ((k.sol === 'N' || k.sol === 'T') ? '<br><i>Powstaje jako osad w reakcji strącania.</i>' : '');
+        var b = barwa(k);
+        info.innerHTML = '<b style="font-size:16px">' + k.pretty + '</b> — ' + k.name + '<br>' + k.sol + ': ' + (D.legend[k.sol] || '') + (b ? '<br>Barwa osadu: <span style="display:inline-block;width:14px;height:14px;border-radius:3px;vertical-align:-2px;border:1px solid #9aa;background:' + b[0] + '"></span> ' + b[1] : '') + ((k.sol === 'N' || k.sol === 'T') ? '<br><i>Powstaje jako osad w reakcji strącania.</i>' : '');
       });
     }
   });

@@ -67,10 +67,10 @@ Przed napisaniem nowego klocka sprawdź tu rodzinę i użycia — nie twórz dub
 | `przewodnik-izolator` | fizyka_elektrostatyka.js | Pręt z naładowanym końcem: w przewodniku ładunek rozpływa się po całej długości, w izolatorze pozostaje w miejscu dotyku. | {} | FIZ01×1 |
 | `reaktor-tlenku` | okresowy_tlenki.js | Reaktor przewidywania: wybierasz tlenek i odczynnik (woda, kwas, zasada), zapisujesz przewidywanie, a model pokazuje, czy reakcja zachodzi, wraz z uzasadnieniem z charakt | {tlenek: 'CaO'} | N02×1 |
 | `regula-krzyzowa` | regula_krzyzowa.js | Reguła krzyżowa i huśtawka mas: dla dwóch roztworów i stężenia docelowego pokazuje różnice po przekątnych, stosunek mas, masy w gramach i kontrolę bilansem. | {} | R03A×1 |
-| `rownania-jonowe` | rownania_jonowe.js | Równania jonowe: po wyborze reakcji pokazuje zapis cząsteczkowy, jonowy pełny z jonami obserwatorowymi i jonowy skrócony. | {reakcja: 0} | C1c×1, J03×2, N04×1 |
+| `rownania-jonowe` | rownania_jonowe.js | Równania jonowe: po wyborze reakcji pokazuje zapis cząsteczkowy, jonowy pełny z jonami obserwatorowymi i jonowy skrócony. | {reakcja: 0} | C1c×1, J03×2, N03×1, N04×1, N05×1 |
 | `schemat-przemian` | schemat_przemian.js | Schemat dróg: kilka sposobów otrzymania tego samego typu substancji, każdy jako substraty → strzałka → produkty. | {} | C1c×1 |
 | `sklad-procentowy` | sklad_procentowy.js | Masa cząsteczkowa i skład procentowy związku wg wzoru; pasek proporcjonalny do mas pierwiastków. | {wzor: 'H2SO4', przyklady: 'H2O,CO2,H2SO4,Fe2O3,Ca(OH)2'} | C1c×1 |
-| `tabela-rozpuszczalnosci` | tabela_rozpuszczalnosci.js | Tabela rozpuszczalności soli i wodorotlenków w 20 °C; kliknięcie komórki pokazuje wzór, nazwę i rozpuszczalność. | {} | C1c×1, J03×2 |
+| `tabela-rozpuszczalnosci` | tabela_rozpuszczalnosci.js | Tabela rozpuszczalności soli i wodorotlenków w 20 °C; kliknięcie komórki pokazuje wzór, nazwę i rozpuszczalność. | {} | C1c×1, J03×2, N03×1, N04×1, N05×1 |
 | `titration-merged` | miareczkowanie_tm.js | Titracja — scalony model: typ + wskaźnik + krzywa + kolba | (port; opcje z widoku) | N04×1 |
 | `trend-tlenkow` | okresowy_tlenki.js | Trend charakteru tlenków: w 3. okresie od zasadowych przez amfoteryczny do kwasowych oraz dla Cr i Mn — rosnący stopień utlenienia zwiększa charakter kwasowy. | {seria: 'okres 3'} | N02×1 |
 | `trojkat-przeliczen` | trojkat_przeliczen.js | Trójkąt konwersji: masa, liczba moli i cząstki (lub objętość gazu) ze strzałkami operacji ÷/× M, N_A lub Vₘ. | {wzor: 'mol', szer: 480, wys: 300} | C2m×2, LKO×2 |
