@@ -306,7 +306,7 @@ Kwasowe są tylko atomy H związane z **tlenem** (grupy –O–H). W H₃PO₃ s
 @klocek wzor-2d {smiles="OS(=O)(=O)O" grupa="none" kwas="1"} | Wzór strukturalny: kwas siarkowy(VI) H₂SO₄
 @opis Wzór strukturalny H₂SO₄: atom siarki z dwoma wiązaniami podwójnymi do tlenu i dwiema grupami –OH; dwa atomy H przy tlenie są kwasowe (oddają H⁺).
 
-@klocek wzor-2d {smiles="O[N+](=O)[O-]" grupa="none" kwas="1"} | Wzór strukturalny: kwas azotowy(V) HNO₃
+@klocek wzor-2d {smiles="ON(=O)=O" grupa="none" kwas="1"} | Wzór strukturalny: kwas azotowy(V) HNO₃
 @opis Wzór strukturalny HNO₃: atom azotu z grupą –OH i dwoma atomami tlenu (jeden z wiązaniem podwójnym); jedyny atom H, przy tlenie, jest kwasowy.
 
 @klocek wzor-2d {smiles="OP(=O)(O)O" grupa="none" kwas="1"} | Wzór strukturalny: kwas fosforowy(V) H₃PO₄

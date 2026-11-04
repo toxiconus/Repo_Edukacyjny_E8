@@ -108,7 +108,7 @@ Lekcje i pliki, które wymieniają (`manifest.json` → `lekcje`):
 - **LKO-PUŁAPKI-WAPNO**: `klocki.js`, `pomocnicze.js`, `naczynia.js`, `probowki_odczyn.js`
 - **LKO-ORG05**: `klocki.js`, `pomocnicze.js`, `naczynia.js`, `probowki_odczyn.js`, `bilans_rownania.js`, `c2d_core.js`, `c2d_grupy.js`, `c2d_wzor.js`, `c2d_prosta.js`, `c2d_klocek.js`, `karta_bhp.js`
 - **LKO-ORG03**: `klocki.js`, `pomocnicze.js`, `naczynia.js`, `probowki_odczyn.js`, `c2d_core.js`, `c2d_grupy.js`, `c2d_wzor.js`, `c2d_prosta.js`, `c2d_klocek.js`, `karta_bhp.js`
-- **LKO-ORG06**: `klocki.js`, `pomocnicze.js`, `c2d_core.js`, `c2d_grupy.js`, `c2d_wzor.js`, `c2d_prosta.js`, `c2d_klocek.js`, `estryfikacja.js`, `karta_bhp.js`
+- **LKO-ORG06**: `klocki.js`, `pomocnicze.js`, `c2d_core.js`, `c2d_grupy.js`, `c2d_wzor.js`, `c2d_prosta.js`, `c2d_klocek.js`, `estryfikacja.js`, `bilans_rownania.js`, `karta_bhp.js`
 - **LKO-ORG01**: `klocki.js`, `pomocnicze.js`, `c2d_core.js`, `c2d_grupy.js`, `c2d_wzor.js`, `c2d_prosta.js`, `c2d_klocek.js`, `bilans_spalania.js`, `palnik_gazowy.js`, `karta_bhp.js`
 - **LKO-ORG07**: `klocki.js`, `pomocnicze.js`, `c2d_core.js`, `c2d_grupy.js`, `c2d_wzor.js`, `c2d_prosta.js`, `c2d_klocek.js`, `haworth.js`, `karta_bhp.js`
 - **X04**: `klocki.js`, `pomocnicze.js`, `naczynia.js`, `probowki_odczyn.js`, `probowki_wybor.js`, `doswiadczenie.js`, `karta_bhp.js`
@@ -135,7 +135,7 @@ Lekcje i pliki, które wymieniają (`manifest.json` → `lekcje`):
 - **F04**: `klocki.js`, `model_widok.js`, `z_f04_nuklid.js`, `pomocnicze.js`, `ui_klocki.js`, `diagram_bohra.js`, `okresowy_tlenki.js`
 - **F05**: `klocki.js`, `pomocnicze.js`, `izotopy.js`
 - **R03A**: `klocki.js`, `pomocnicze.js`, `krzywe_rozpuszczalnosci.js`, `regula_krzyzowa.js`, `karta_bhp.js`
-- **FIZ-01**: `klocki.js`, `pomocnicze.js`, `ui_klocki.js`, `przewodnictwo.js`, `fizyka_elektrostatyka.js`
+- **FIZ-01**: `klocki.js`, `pomocnicze.js`, `ui_klocki.js`, `przewodnictwo.js`, `jony_w_wodzie.js`, `fizyka_elektrostatyka.js`
 - **F17**: `klocki.js`, `pomocnicze.js`, `ui_klocki.js`, `bilans_rownania.js`, `stechiometria.js`, `model_widok.js`, `../lite/rx-lite.js`, `zlewka_rx.js`, `pracownie_rx.js`, `pracownie_f.js`
 - **K06**: `klocki.js`, `pomocnicze.js`, `ui_klocki.js`, `szybkosc_reakcji.js`
 - **K07**: `klocki.js`, `pomocnicze.js`, `ui_klocki.js`, `szybkosc_reakcji.js`

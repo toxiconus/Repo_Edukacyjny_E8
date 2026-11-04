@@ -228,6 +228,7 @@
       "c2d_prosta.js",
       "c2d_klocek.js",
       "estryfikacja.js",
+      "bilans_rownania.js",
       "karta_bhp.js"
     ],
     "LKO-ORG01": [
@@ -536,6 +537,7 @@
       "pomocnicze.js",
       "ui_klocki.js",
       "przewodnictwo.js",
+      "jony_w_wodzie.js",
       "fizyka_elektrostatyka.js"
     ],
     "F17": [
