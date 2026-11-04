@@ -964,11 +964,9 @@
    "LKO_ORG07_cukry": 1,
    "N04": 6
   },
-  "zlewka-rx": {
-   "N04": 9
-  },
+  "zlewka-rx": {},
   "zlewki-rx": {
-   "N04": 6
+   "N04": 15
   },
   "osady-dwie-sole": {
    "J03": 1
@@ -1488,6 +1486,7 @@
   "plomien",
   "zlewka",
   "metal-woda",
+  "zlewka-rx",
   "id",
   "cah2H2o",
   "nahH2o",
@@ -1635,7 +1634,6 @@
   "rownania-jonowe",
   "probowki",
   "wzor-2d",
-  "zlewka-rx",
   "zlewki-rx",
   "tabela-rozpuszczalnosci",
   "dysocjacja-vs-jonizacja",

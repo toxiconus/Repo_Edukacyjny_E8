@@ -26,6 +26,10 @@
     h2sH2oUni: {n: 'H₂S + H₂O (+ wskaźnik uniwersalny)', l0: ['ind-uniwersalny', 7], l1: ['ind-uniwersalny', 4], gas: 'H2S', bubN: .5, eq: 'H₂S + H₂O ⇌ H₃O⁺ + HS⁻ (kwas słaby)'},
     naclH2so4: {n: 'NaCl + H₂SO₄ (stęż.; pokaz)', solid: {col: [250, 250, 250], eq: 4, end: 0, t: 'powder', shape: 'powder'}, gas: 'HCl', fumes: 1, bubN: 1.1, heat: .6, T: 50, teacher: 1, eq: 'NaCl + H₂SO₄ → NaHSO₄ + HCl↑'},
     na2sio3Hcl: {n: 'Na₂SiO₃ + HCl: osad kwasu', ppt: 'ppt-caco3', bubN: 0, eq: 'Na₂SiO₃ + 2 HCl → H₂SiO₃↓ + 2 NaCl'},
+    phphKontrola: {n: 'NaOH + H₂O (kontrola, bez kwasu)', l0: ['ind-fenoloftaleina', 13], l1: ['ind-fenoloftaleina', 13], eq: 'NaOH + H₂O → barwa malinowa zostaje'},
+    cuoH2so4Zimno: {n: 'CuO + H₂SO₄ na zimno (wolno)', vessel: 'tube', solid: {col: [28, 28, 30], eq: 3, end: .75, t: 'powder', shape: 'powder'}, l1: 'ion-cu2', eq: 'CuO + H₂SO₄ → CuSO₄ + H₂O (na zimno bardzo wolno)'},
+    sodaHcl: {n: 'Soda oczyszczona + HCl', solid: {col: [246, 246, 240], eq: 4, end: 0, t: 'powder', shape: 'powder'}, gas: 'CO2', bubN: 3.2, foam: 1.1, eq: 'NaHCO₃ + HCl → NaCl + H₂O + CO₂↑'},
+    rdzaHcl: {n: 'Rdza + HCl', solid: {col: [150, 82, 40], eq: 3, end: .05, t: 'powder', shape: 'powder'}, l1: 'ion-fe3', bubN: 0, eq: 'Fe₂O₃ + 6 HCl → 2 FeCl₃ + 3 H₂O'},
     rdzaOcet: {n: 'Rdza + ocet', solid: {col: [150, 82, 40], eq: 3, end: .15, t: 'powder', shape: 'powder'}, l1: 'ion-fe3', bubN: 0, eq: 'Fe₂O₃ + 6 CH₃COOH → 2 Fe(CH₃COO)₃ + 3 H₂O'}
   };
   if (C.RXL) C.RXL.data({specs: SPECS});

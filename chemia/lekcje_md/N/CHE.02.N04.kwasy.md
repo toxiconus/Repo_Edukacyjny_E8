@@ -1431,8 +1431,8 @@ BHP: Okulary. Próbę „pyk” wykonuje nauczyciel albo uczeń wyłącznie pod 
 @klocek zbieranie-gazu {gaz="H2" gazy="H2"} | Zn + HCl: zbieranie wodoru w probówce i próba „pyk!”
 @opis Kolba z cynkiem i kwasem, rurka odprowadzająca gaz i probówka odwrócona do góry dnem, w której zbiera się wodór; zbliżony płomień daje charakterystyczny „pyk”. Wniosek: wodór jest lekki i zbiera się wylotem do dołu, a próba płomieniem go wykrywa.
 
-@klocek zlewka-rx {k="znHcl"} | Zn + HCl: granulki cynku w kwasie, bąbelki wodoru
-@opis Probówka z kwasem solnym; granulki cynku się zmniejszają, w cieczy unoszą się bąbelki bezbarwnego gazu (wodoru). Wniosek: cynk wypiera wodór z kwasu.
+@klocek zlewki-rx {k="znHcl,mgHcl"} | Zn + HCl: granulki cynku w kwasie, bąbelki wodoru
+@opis Probówka z kwasem solnym; granulki cynku się zmniejszają, w cieczy unoszą się bąbelki bezbarwnego gazu (wodoru). Wniosek: cynk wypiera wodór z kwasu. Obok magnez w tym samym kwasie: reaguje szybciej i gwałtowniej.
 :::
 
 ::: dosw | Doświadczenie 3 — Kwas + węglan (otrzymywanie CO₂)
@@ -1448,8 +1448,8 @@ BHP: Okulary; nie wciągać wody wapiennej do ust.
 @zlewka kw-doswiadczenia-v01 carbonate | Zobacz w zlewce (pracownia GFX)
 @opis Na węglan wapnia działa kwas: wydzielają się pęcherzyki gazu, który przepuszczony przez wodę wapienną powoduje jej zmętnienie. Wniosek: CaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂↑ — kwas wypiera z węglanu tlenek węgla(IV).
 
-@klocek zlewka-rx {k="caco3Hcl"} | Kawałki CaCO₃ w HCl: burzenie i piana
-@opis Zlewka z kwasem solnym; kawałki węglanu wapnia się zmniejszają, powstaje piana i bąbelki CO₂. Wniosek: węglan + kwas → sól + woda + CO₂.
+@klocek zlewki-rx {k="caco3Hcl,skorupkaOcet"} | Kawałki CaCO₃ w HCl: burzenie i piana
+@opis Zlewka z kwasem solnym; kawałki węglanu wapnia się zmniejszają, powstaje piana i bąbelki CO₂. Wniosek: węglan + kwas → sól + woda + CO₂. Obok skorupka jajka (CaCO₃) w occie: ta sama sól, ale kwas słaby, więc bąbelki są rzadsze.
 :::
 
 ::: dosw | Doświadczenie 4 — Kwas + wodorotlenek (zobojętnianie)
@@ -1465,8 +1465,8 @@ BHP: Okulary, rękawice — NaOH i HCl żrące.
 @zlewka kw-doswiadczenia-v01 hclNaOH+php | Zobacz w zlewce (pracownia GFX)
 @opis Do malinowego roztworu NaOH z fenoloftaleiną dodaje się porcjami kwas solny: barwa słabnie i w punkcie zobojętnienia roztwór staje się bezbarwny. Wniosek: HCl + NaOH → NaCl + H₂O (H⁺ + OH⁻ → H₂O) — kwas i zasada się zobojętniają.
 
-@klocek zlewka-rx {k="naohHclPhph"} | Zobojętnianie: malinowa barwa fenoloftaleiny znika
-@opis Zlewka z roztworem zasady i fenoloftaleiny; po dodaniu kwasu malinowa barwa przechodzi w bezbarwną. Wniosek: odczyn zmienił się na obojętny/kwasowy.
+@klocek zlewki-rx {k="naohHclPhph,phphKontrola"} | Zobojętnianie: malinowa barwa fenoloftaleiny znika
+@opis Zlewka z roztworem zasady i fenoloftaleiny; po dodaniu kwasu malinowa barwa przechodzi w bezbarwną. Wniosek: odczyn zmienił się na obojętny/kwasowy. Obok kontrola: NaOH z fenoloftaleiną bez kwasu zachowuje malinową barwę.
 :::
 
 ::: dosw | Doświadczenie 5 — Kwas + tlenek metalu
@@ -1482,8 +1482,8 @@ BHP: Okulary; H₂SO₄ żrący.
 @zlewka kw-doswiadczenia-v01 cuoH2so4 | Zobacz w zlewce (pracownia GFX)
 @opis Czarny tlenek miedzi(II) w roztworze kwasu siarkowego(VI), lekko ogrzewanym: proszek znika, a roztwór barwi się na niebiesko. Wniosek: CuO + H₂SO₄ → CuSO₄ + H₂O — tlenek zasadowy reaguje z kwasem, tworząc sól i wodę.
 
-@klocek zlewka-rx {k="cuoH2so4"} | CuO + H₂SO₄ w ogrzewanej probówce
-@opis Probówka nad palnikiem; czarny proszek CuO znika, a roztwór przybiera błękitną barwę jonów Cu²⁺. Wniosek: tlenek metalu reaguje z kwasem, tworząc sól.
+@klocek zlewki-rx {k="cuoH2so4,cuoH2so4Zimno"} | CuO + H₂SO₄ w ogrzewanej probówce
+@opis Probówka nad palnikiem; czarny proszek CuO znika, a roztwór przybiera błękitną barwę jonów Cu²⁺. Wniosek: tlenek metalu reaguje z kwasem, tworząc sól. Obok ta sama próba na zimno: czarny proszek roztwarza się bardzo wolno, ogrzewanie przyspiesza reakcję.
 :::
 
 ::: dosw | Doświadczenie 6 — Przewodzenie prądu przez roztwory kwasów
@@ -1513,8 +1513,8 @@ BHP: Okulary; wodór łatwopalny — z dala od ognia.
 @zlewka kw-doswiadczenia-v01 szereg | Zobacz w zlewce (pracownia GFX)
 @opis Cztery probówki z kwasem solnym i metalami Mg, Zn, Fe, Cu: magnez reaguje najgwałtowniej, cynk wyraźnie, żelazo powoli, przy miedzi nie ma pęcherzyków. Wniosek: z kwasów wodór wypierają tylko metale aktywniejsze od wodoru.
 
-@klocek zlewka-rx {k="cuHcl"} | Cu + HCl: brak reakcji (dla porównania z Zn)
-@opis Zlewka z kwasem solnym i kawałkami miedzi; nie widać bąbelków ani zmian. Wniosek: miedź jest za wodorem w szeregu, nie wypiera go.
+@klocek zlewki-rx {k="cuHcl,znHcl"} | Cu + HCl: brak reakcji (dla porównania z Zn)
+@opis Zlewka z kwasem solnym i kawałkami miedzi; nie widać bąbelków ani zmian. Wniosek: miedź jest za wodorem w szeregu, nie wypiera go. Obok cynk w tym samym kwasie: reaguje, bo stoi przed wodorem.
 :::
 
 ::: dosw {.poz-roz} | Doświadczenie 8 — Działanie stężonego H₂SO₄ na cukier (pokaz nauczyciela)
@@ -1530,8 +1530,8 @@ BHP: Tylko pokaz pod dygestorium; okulary, rękawice; SO₂ drażni drogi oddech
 @zlewka kw-doswiadczenia-v01 wlasciwosci | Zobacz w zlewce (pracownia GFX)
 @opis Pokazy stężonych kwasów: cukier ze stężonym H₂SO₄ czernieje i pęcznieje, białko z HNO₃ żółknie, stężony HCl „dymi” na powietrzu. Wniosek: stężone kwasy są żrące, utleniające i odwadniające — tylko pokaz nauczyciela pod wyciągiem.
 
-@klocek zlewka-rx {k="cukierH2so4"} | Cukier + stężony H₂SO₄: czernienie i spienianie (pokaz)
-@opis Zlewka z białym cukrem po zalaniu stężonym kwasem: ciecz ciemnieje do czerni, rośnie piana węglowa, unoszą się opary. Wniosek: H₂SO₄ odwadnia cukier (zwęglanie).
+@klocek zlewki-rx {k="cukierH2so4,hclDymi"} | Cukier + stężony H₂SO₄: czernienie i spienianie (pokaz)
+@opis Zlewka z białym cukrem po zalaniu stężonym kwasem: ciecz ciemnieje do czerni, rośnie piana węglowa, unoszą się opary. Wniosek: H₂SO₄ odwadnia cukier (zwęglanie). Obok stężony HCl „dymi” w powietrzu (drugi pokaz właściwości stężonych kwasów).
 :::
 
 ::: dosw {.poz-roz} | Doświadczenie 9 — Kwas azotowy(V) i białko (pokaz nauczyciela)
@@ -1606,8 +1606,8 @@ BHP: Okulary; balon mocno trzymamy na szyjce; reakcji nie robimy w zamkniętej b
 
 @opis Dwie butelki z balonami na szyjkach: w butelce z octem po wsypaniu sody balon nadmuchuje się dwutlenkiem węgla, w butelce z wodą balon pozostaje oklapnięty. Wniosek: kwas reaguje z sodą, wydzielając CO₂.
 
-@klocek zlewka-rx {k="sodaOcet"} | Soda + ocet: piana i bąbelki CO₂
-@opis Zlewka: biały proszek sody znika, powstaje piana i bąbelki CO₂. Wniosek: kwas + wodorowęglan → sól + woda + CO₂.
+@klocek zlewki-rx {k="sodaOcet,sodaHcl"} | Soda + ocet: piana i bąbelki CO₂
+@opis Zlewka: biały proszek sody znika, powstaje piana i bąbelki CO₂. Wniosek: kwas + wodorowęglan → sól + woda + CO₂. Obok ta sama soda w HCl: kwas mocny daje gwałtowniejsze pienienie.
 :::
 
 ::: dosw | Doświadczenie 13 — Skorupka jajka w occie (domowe, 1–2 dni)
@@ -1622,8 +1622,8 @@ BHP: Jajka po doświadczeniu nie jemy; ręce myjemy po kontakcie z surowym jajki
 
 @opis Dwa słoiki z jajkami: w occie skorupka pokryta pęcherzykami gazu, z czasem znika, jajko staje się miękkie i półprzezroczyste; w wodzie skorupka bez zmian. Wniosek: kwas rozpuszcza CaCO₃ i wydziela CO₂.
 
-@klocek zlewka-rx {k="skorupkaOcet"} | Skorupka w occie: bąbelki CO₂
-@opis Zlewka z octem; kawałki skorupki jajka pokrywają się bąbelkami CO₂ i zmniejszają. Wniosek: CaCO₃ reaguje z kwasem.
+@klocek zlewki-rx {k="skorupkaOcet,znOcet"} | Skorupka w occie: bąbelki CO₂
+@opis Zlewka z octem; kawałki skorupki jajka pokrywają się bąbelkami CO₂ i zmniejszają. Wniosek: CaCO₃ reaguje z kwasem. Obok cynk w occie: ocet reaguje też z metalem, ale bardzo wolno.
 :::
 
 ::: dosw | Doświadczenie 14 — Zardzewiały gwóźdź w occie (domowe)
@@ -1638,8 +1638,8 @@ BHP: Okulary; octu nie pijemy; gwoździe po doświadczeniu wyrzucamy do odpadów
 
 @opis Dwa słoiki z zardzewiałymi gwoździami: w occie gwóźdź jaśnieje, a płyn przybiera żółtawy odcień; w wodzie gwóźdź pozostaje brązowy. Wniosek: kwas rozpuszcza rdzę (tlenek żelaza).
 
-@klocek zlewka-rx {k="rdzaOcet"} | Rdza w occie: roztwór żółknie
-@opis Zlewka z octem; brązowy proszek rdzy znika, a ciecz żółknie od soli żelaza(III). Wniosek: kwas rozpuszcza tlenek żelaza.
+@klocek zlewki-rx {k="rdzaOcet,rdzaHcl"} | Rdza w occie: roztwór żółknie
+@opis Zlewka z octem; brązowy proszek rdzy znika, a ciecz żółknie od soli żelaza(III). Wniosek: kwas rozpuszcza tlenek żelaza. Obok rdza w HCl: kwas mocny rozpuszcza ją szybciej.
 :::
 
 ## 17 | Klinika błędów {#klinika}
