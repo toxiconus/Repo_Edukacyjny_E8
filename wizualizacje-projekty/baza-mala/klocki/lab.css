@@ -68,3 +68,6 @@
 /* telefon: stojaki obok siebie — opisy od góry (równe początki), przyciski na dole, mniejszy tekst */
 @media (max-width:480px){.rack-ce.st-opis,.rack-ce{justify-content:flex-start}.rack-ce>.btn:last-child,.rack-ce>button:last-child{margin-top:auto}.rack .st-opis,.rack-ce .obs,.rack-ce p{font-size:12.5px;line-height:1.4}.rack .kol b,.stacje .kol b{font-size:12px}.rack-ce .sw{width:16px;height:16px}}
 @media (max-width:480px){.rack .st-opis{margin-top:0;justify-content:flex-start}}
+
+/* wskazówka przewijania poziomego tabel w klockach */
+[data-klocek] div[style*="overflow-x:auto"]{background:linear-gradient(to right,var(--surface,#fff) 30%,transparent),linear-gradient(to left,var(--surface,#fff) 30%,transparent) 100% 0,radial-gradient(farthest-side at 0 50%,rgba(0,0,0,.30),transparent),radial-gradient(farthest-side at 100% 50%,rgba(0,0,0,.30),transparent) 100% 0;background-repeat:no-repeat;background-size:36px 100%,36px 100%,16px 100%,16px 100%;background-attachment:local,local,scroll,scroll}

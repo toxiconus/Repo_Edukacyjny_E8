@@ -48,7 +48,7 @@ section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
 .lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
 .lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
 .lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
-.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:var(--bg,#fff);font-weight:800}
 
 /* cytat z tekstu (lektura, źródło, wypowiedź) */
 .lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
@@ -180,7 +180,7 @@ details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(-
 .poz-bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0;padding:10px 12px;border:1px solid var(--border,#d0d7de);border-radius:10px;background:var(--surface-soft,#f6f8fa);position:sticky;top:0;z-index:20}
 .poz-bar-t{font-weight:700;font-size:14px}.poz-bar-i{flex-basis:100%;font-size:13px;color:var(--muted,#5b6b73)}
 .poz-bar button{font:inherit;font-size:14px;padding:6px 12px;border-radius:999px;border:1px solid var(--border-strong,#9aa6ad);background:var(--surface,#fff);color:inherit;cursor:pointer}
-.poz-bar button[aria-pressed="true"]{background:var(--accent,#0b6bcb);color:#fff;border-color:transparent}
+.poz-bar button[aria-pressed="true"]{background:var(--accent,#0b6bcb);color:var(--bg,#fff);border-color:transparent}
 body[data-poz="must"] .poz-roz,body[data-poz="must"] .poz-pon,body[data-poz="e8"] .poz-roz,body[data-poz="e8"] .poz-pon,body[data-poz="roz"] .poz-pon{display:none!important}
 body[data-poz="must"] section.poz-e8>*:not(.part-heading):not(.poz-must){display:none}
 body[data-poz="must"] section.poz-e8.poz-nomust{display:none}

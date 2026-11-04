@@ -27,7 +27,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - (zwinięte; `ls angielski/html`) — duże:
 - ⚠`ANG.01.L001.operatory_i_czasowniki_posilkowe.html` 206 KB
 - ⚠`ANG.01.L002.czasy_terazniejsze_i_przeszle.html` 134 KB
-- ⚠`ANG.01.L003.present_perfect.html` 160 KB
+- ⚠`ANG.01.L003.present_perfect.html` 161 KB
 - ⚠`ANG.01.L004.past_simple_continuous.html` 144 KB
 - ⚠`ANG.01.L005.future_simple.html` 145 KB
 - ⚠`ANG.01.L006.czasowniki_modalne_i_have_to.html` 178 KB
@@ -108,12 +108,12 @@ Pominięte: .specstory/, .vscode/, .claude/
 - (zwinięte; `ls biologia/html`) — duże:
 - ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 410 KB
 - ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 453 KB
-- ⚠`BIO.00.REV03.organizm_czlowieka_i_homeostaza.html` 133 KB
+- ⚠`BIO.00.REV03.organizm_czlowieka_i_homeostaza.html` 134 KB
 - ⚠`BIO.00.REV04.genetyka_ewolucja_ekologia.html` 124 KB
-- ⚠`BIO.00.TEST.proby_REV01_REV04.html` 115 KB
-- ⚠`BIO.01.B1b.krzyzowki_mendel.html` 148 KB
-- ⚠`BIO.01.L001.komorka.html` 224 KB
-- ⚠`BIO.01.L001A.dodatek_ambitny_od_komorki_do.html` 157 KB
+- ⚠`BIO.00.TEST.proby_REV01_REV04.html` 116 KB
+- ⚠`BIO.01.B1b.krzyzowki_mendel.html` 150 KB
+- ⚠`BIO.01.L001.komorka.html` 225 KB
+- ⚠`BIO.01.L001A.dodatek_ambitny_od_komorki_do.html` 158 KB
 
 ## biologia/niewykorzystane/archiwum_md  (3 pl., 46 KB)
 - `L001_komorka_jako_podstawowa_jednostka_zycia.md` 13 KB
@@ -191,7 +191,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 
 ## chemia/che-modular  (17 pl., 211 KB)
 - (zwinięte; `ls chemia/che-modular`) — duże:
-- ⚠`PROGRESS.md` 73 KB
+- ⚠`PROGRESS.md` 74 KB
 
 ## chemia/che-modular/engine/docs  (1 pl., 5 KB)
 - `ARCHITEKTURA.md` 5 KB
@@ -556,8 +556,8 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`C1c_konfiguracje_elektronowe.html` 263 KB
 - ⚠`C2m_mol_masa_molowa.html` 121 KB
 - ⚠`C2w_wzor_elementarny_rzeczywisty.html` 182 KB
-- ⚠`C3_rownania_i_obliczenia_z_rownan.html` 119 KB
-- ⚠`C4_doswiadczenia_zbiorczo.html` 133 KB
+- ⚠`C3_rownania_i_obliczenia_z_rownan.html` 120 KB
+- ⚠`C4_doswiadczenia_zbiorczo.html` 134 KB
 - ⚠`CHE.00.LAB.doswiadczenia.html` 155 KB
 - ⚠`CHE.00.REV01.powtorka_klasy_7.html` 220 KB
 - ⚠`CHE.00.REV02.powtorka_klasy_8.html` 99 KB
@@ -777,7 +777,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - (zwinięte; `ls okladki/angielski/html`) — duże:
 - ⚠`ANG.01.L001.operatory_i_czasowniki_posilkowe.html` 206 KB
 - ⚠`ANG.01.L002.czasy_terazniejsze_i_przeszle.html` 134 KB
-- ⚠`ANG.01.L003.present_perfect.html` 160 KB
+- ⚠`ANG.01.L003.present_perfect.html` 161 KB
 - ⚠`ANG.01.L004.past_simple_continuous.html` 144 KB
 - ⚠`ANG.01.L005.future_simple.html` 145 KB
 - ⚠`ANG.01.L006.czasowniki_modalne_i_have_to.html` 178 KB
@@ -795,12 +795,12 @@ Pominięte: .specstory/, .vscode/, .claude/
 - (zwinięte; `ls okladki/biologia/html`) — duże:
 - ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 410 KB
 - ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 453 KB
-- ⚠`BIO.00.REV03.organizm_czlowieka_i_homeostaza.html` 133 KB
+- ⚠`BIO.00.REV03.organizm_czlowieka_i_homeostaza.html` 134 KB
 - ⚠`BIO.00.REV04.genetyka_ewolucja_ekologia.html` 124 KB
-- ⚠`BIO.00.TEST.proby_REV01_REV04.html` 115 KB
-- ⚠`BIO.01.B1b.krzyzowki_mendel.html` 148 KB
-- ⚠`BIO.01.L001.komorka.html` 224 KB
-- ⚠`BIO.01.L001A.dodatek_ambitny_od_komorki_do.html` 157 KB
+- ⚠`BIO.00.TEST.proby_REV01_REV04.html` 116 KB
+- ⚠`BIO.01.B1b.krzyzowki_mendel.html` 150 KB
+- ⚠`BIO.01.L001.komorka.html` 225 KB
+- ⚠`BIO.01.L001A.dodatek_ambitny_od_komorki_do.html` 158 KB
 
 ## okladki/biologia/md  (58 pl., 2.4 MB)
 - (zwinięte; `ls okladki/biologia/md`) — duże:
@@ -813,14 +813,14 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIO.02.L012.jak_dna_jest_upakowane_w.md` 56 KB
 - ⚠`BIO.02.L014.jak_komorki_ciala_powstaja_i.md` 61 KB
 
-## okladki/olimpiada/html  (9 pl., 722 KB)
-- ⚠`OLI.BIO.B2.homeostaza.html` 79 KB
-- ⚠`OLI.BIO.B2a.skora_i_uklad_ruchu.html` 77 KB
+## okladki/olimpiada/html  (9 pl., 724 KB)
+- ⚠`OLI.BIO.B2.homeostaza.html` 80 KB
+- ⚠`OLI.BIO.B2a.skora_i_uklad_ruchu.html` 78 KB
 - ⚠`OLI.BIO.B2b.uklad_pokarmowy_i_odzywianie.html` 78 KB
 - ⚠`OLI.BIO.B2c.oddychanie_i_wydalanie.html` 78 KB
 - ⚠`OLI.BIO.B2d.uklad_nerwowy_i_zmysly.html` 78 KB
 - ⚠`OLI.BIO.B2e.uklad_dokrewny.html` 78 KB
-- ⚠`OLI.BIO.B2f.rozmnazanie_i_rozwoj.html` 77 KB
+- ⚠`OLI.BIO.B2f.rozmnazanie_i_rozwoj.html` 78 KB
 - ⚠`OLI.CHE.R07.stechiometria_z_nadmiarem.html` 84 KB
 - ⚠`OLI.CHE.X04.szereg_aktywnosci_metali.html` 92 KB
 
@@ -838,12 +838,12 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## okladki/polski/html  (75 pl., 9.0 MB)
 - (zwinięte; `ls okladki/polski/html`) — duże:
 - ⚠`PL_G01_rzeczownik.html` 105 KB
-- ⚠`PL_G02_czasownik.html` 103 KB
-- ⚠`PL_G03_przymiotnik.html` 103 KB
+- ⚠`PL_G02_czasownik.html` 104 KB
+- ⚠`PL_G03_przymiotnik.html` 104 KB
 - ⚠`PL_G04_liczebnik.html` 112 KB
 - ⚠`PL_G05_zaimek.html` 111 KB
 - ⚠`PL_G06_imieslowy.html` 109 KB
-- ⚠`PL_G07_przyslowek.html` 108 KB
+- ⚠`PL_G07_przyslowek.html` 109 KB
 - ⚠`PL_G08_przyimek.html` 109 KB
 
 ## okladki/polski/md  (75 pl., 1.6 MB)
@@ -889,14 +889,14 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## olimpiada/do_uzupelnienia/przeniesione  (1 pl., 12 KB)
 - `OLI.CHE.J03.rownania_jonowe_i_straceanie.md` 12 KB
 
-## olimpiada/html  (10 pl., 724 KB)
-- ⚠`OLI.BIO.B2.homeostaza.html` 79 KB
-- ⚠`OLI.BIO.B2a.skora_i_uklad_ruchu.html` 77 KB
+## olimpiada/html  (10 pl., 726 KB)
+- ⚠`OLI.BIO.B2.homeostaza.html` 80 KB
+- ⚠`OLI.BIO.B2a.skora_i_uklad_ruchu.html` 78 KB
 - ⚠`OLI.BIO.B2b.uklad_pokarmowy_i_odzywianie.html` 78 KB
 - ⚠`OLI.BIO.B2c.oddychanie_i_wydalanie.html` 78 KB
 - ⚠`OLI.BIO.B2d.uklad_nerwowy_i_zmysly.html` 78 KB
 - ⚠`OLI.BIO.B2e.uklad_dokrewny.html` 78 KB
-- ⚠`OLI.BIO.B2f.rozmnazanie_i_rozwoj.html` 77 KB
+- ⚠`OLI.BIO.B2f.rozmnazanie_i_rozwoj.html` 78 KB
 - ⚠`OLI.CHE.R07.stechiometria_z_nadmiarem.html` 84 KB
 - ⚠`OLI.CHE.X04.szereg_aktywnosci_metali.html` 92 KB
 - `index.html` 2 KB
@@ -1097,12 +1097,12 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## polski/html  (76 pl., 9.0 MB)
 - (zwinięte; `ls polski/html`) — duże:
 - ⚠`PL_G01_rzeczownik.html` 105 KB
-- ⚠`PL_G02_czasownik.html` 103 KB
-- ⚠`PL_G03_przymiotnik.html` 103 KB
+- ⚠`PL_G02_czasownik.html` 104 KB
+- ⚠`PL_G03_przymiotnik.html` 104 KB
 - ⚠`PL_G04_liczebnik.html` 112 KB
 - ⚠`PL_G05_zaimek.html` 111 KB
 - ⚠`PL_G06_imieslowy.html` 109 KB
-- ⚠`PL_G07_przyslowek.html` 108 KB
+- ⚠`PL_G07_przyslowek.html` 109 KB
 - ⚠`PL_G08_przyimek.html` 109 KB
 
 ## polski/lekcje  (32 pl., 80 KB)
@@ -1148,7 +1148,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `POL_KATALOG_GRAFIK.md` 1 KB
 - `pol-viz.js` 22 KB
 
-## szablon  (4 pl., 72 KB)
+## szablon  (4 pl., 73 KB)
 - `README.md` 5 KB
 - `baza.css` 45 KB
 - `lekcja.js` 6 KB
@@ -1156,7 +1156,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 
 ## szablon/motywy  (5 pl., 21 KB)
 - `ang.css` 2 KB
-- `bio.css` 12 KB
+- `bio.css` 13 KB
 - `che.css` 2 KB
 - `oli.css` 3 KB
 - `pol.css` 2 KB

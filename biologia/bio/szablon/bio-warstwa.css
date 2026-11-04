@@ -42,7 +42,7 @@ animation:bio-drift 60s linear infinite}
 .bv-tools{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 10px}
 .bv-btn{border:1px solid var(--border-strong);background:var(--surface);color:var(--text);border-radius:8px;padding:6px 11px;font:700 12.5px Inter,system-ui,sans-serif;cursor:pointer;min-height:34px}
 .bv-btn:hover{border-color:var(--accent);color:var(--accent)}
-.bv-btn.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.bv-btn.on{background:var(--accent);border-color:var(--accent);color:var(--bg,#fff)}
 .bv-info{margin-top:10px;padding:10px 12px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:8px;font-size:13.5px;line-height:1.55;min-height:44px}
 .bv-info b{display:block;margin-bottom:2px;color:var(--text)}
 .bv-info.ok{border-left-color:var(--c-basic);background:var(--c-basic-bg)}
@@ -111,7 +111,7 @@ animation:bio-drift 60s linear infinite}
 .bio-tree ul ul li:last-child::before{bottom:auto;height:16px}
 .bio-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
 .bio-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
-.bio-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+.bio-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:var(--bg,#fff);font-weight:800}
 @media print{.bio-bar{display:none}body{padding-top:0}.hero::after{display:none}}
 .hero{background:linear-gradient(135deg,var(--surface),var(--accent-soft))}
 @media(min-width:640px){.flashcard-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -121,3 +121,4 @@ animation:bio-drift 60s linear infinite}
 :root{--blood-o2:#c62828;--blood-o2-bg:#fde8e8;--blood-co2:#1f5fae;--blood-co2-bg:#e7effb;--ag-a:#c2410c;--ag-b:#7c3aed;--ag-d:#0f766e}
 @media (prefers-color-scheme:dark){:root:not([data-theme=light]){--blood-o2:#f87171;--blood-o2-bg:#3a1616;--blood-co2:#7aa7ff;--blood-co2-bg:#14213a;--ag-a:#fb923c;--ag-b:#c4b5fd;--ag-d:#5eead4}}
 :root[data-theme=dark]{--blood-o2:#f87171;--blood-o2-bg:#3a1616;--blood-co2:#7aa7ff;--blood-co2-bg:#14213a;--ag-a:#fb923c;--ag-b:#c4b5fd;--ag-d:#5eead4}
+

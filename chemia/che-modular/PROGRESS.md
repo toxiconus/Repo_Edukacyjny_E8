@@ -311,3 +311,4 @@
 - 2026-11-04: rx-lite wizualnie: kadr bez pustego pola nad zlewką, blat z cieniem, połysk i cieniowanie szkła, menisk, kołnierz zlewki/probówki.
 - 2026-11-04: wspólne szkło canvas (naczynia.szklo): cieniowanie, menisk, kołnierz, obrys 2,5 px — probowki-odczyn; zbieranie-gazu ostre na HiDPI i obrys 2,5 px.
 - 2026-11-04: stojaki (probowki, palniki) na telefonie: opisy od góry, przyciski wyrównane do dołu, mniejszy tekst; palnik-gazowy zostaje na ciemnej scenie (płomienie).
+- 2026-11-04: biologia: tekst na akcencie var(--bg) w szablonie CSS (baza, ulepszenia, bio; 16+1 reguł), cień przewijania tabel (bio, klocki); kontrast w ciemnym motywie 93→10 wizualizacji (reszta to tekst na kształtach SVG).
