@@ -377,9 +377,6 @@ Kwasowe są tylko atomy H związane z **tlenem** (grupy –O–H). W H₃PO₃ s
 - Na₃PO₄ → fosforan(V) sodu (od H₃PO₄)
 :::
 
-@model kw-reszty-v01 | Kwas → reszta kwasowa → sole (13 metali) | Dysocjacja, ładunek reszty, wzory i nazwy soli, rozpuszczalność · CHE.IONIC
-@opis Model kwas → reszta kwasowa → sól: kwas dysocjuje, model pokazuje ładunek reszty kwasowej (np. SO₄²⁻, NO₃⁻, PO₄³⁻), a dla 13 metali tworzy wzory i nazwy soli z informacją o rozpuszczalności. Wniosek: ładunek reszty kwasowej równa się liczbie atomów wodoru oddanych przez kwas i wyznacza wzór soli.
-
 @klocek kwasy-reszty {} | Tabela kwasów: kliknij wzór, zobacz resztę, dysocjację i zastosowanie
 @opis Chipy z wzorami kwasów (HCl, H₂SO₄, HNO₃, H₃PO₄, H₂CO₃, H₂SO₃, H₂S, CH₃COOH); po kliknięciu karta z nazwą, typem, mocą, resztą i jej ładunkiem, równaniem dysocjacji, solą sodową i zastosowaniem. Wniosek: ładunek reszty zależy od liczby oddawanych atomów H.
 
@@ -429,11 +426,8 @@ H₂SO₄ ma ogromne powinowactwo do wody — odbiera z cząsteczek cukru atomy 
 > Wydziela się dużo ciepła — woda paruje, porowata masa węgla „rośnie”; część węgla utlenia się do CO₂ i SO₂ (ostry zapach). To **pokaz nauczyciela** pod dygestorium (doświadczenie 8 w [§16](#doswiadczenia)).
 :::
 
-@model kw-wlasciwosci-v01 | Właściwości stężonych kwasów — pokazy | Cukier + H₂SO₄ · białko + HNO₃ · HCl dymi · silnik GFX, otwiera się w oknie
-@opis Pokazy właściwości stężonych kwasów: cukier zalany stężonym H₂SO₄ czernieje i pęcznieje w porowatą masę węgla, białko po dodaniu HNO₃ żółknie, otwarta butelka stężonego HCl „dymi” (chlorowodór tworzy z parą wodną mgiełkę). Wniosek: stężone kwasy mają właściwości żrące, utleniające i odwadniające — praca tylko z nauczycielem i pod wyciągiem.
-
-@klocek kwasy-wlasciwosci {} | Pokazy: H₂SO₄ + cukier, HNO₃ + białko, dymiący HCl
-@opis Zlewka, w której po kliknięciu pokazu cukier z H₂SO₄ czernieje i rośnie, białko z HNO₃ żółknie, a nad stężonym HCl unosi się biała mgiełka. Wniosek: stężone kwasy mają różne charakterystyczne działanie (odwadnianie, nitrowanie, wydzielanie gazu).
+@klocek zlewki-rx {zestaw="stezone-kwasy"} | Pokazy stężonych kwasów: H₂SO₄ + cukier, HNO₃ + białko, HNO₃ na świetle, dymiący HCl
+@opis Cztery zlewki obok siebie, po kliknięciu „wrzuć” startuje pokaz nauczyciela: cukier z stężonym H₂SO₄ czernieje i pęcznieje, białko z HNO₃ żółknie (reakcja ksantoproteinowa), stężony HNO₃ na świetle żółknie od rozpuszczonego NO₂, stężony HCl dymi. Wniosek: stężone kwasy mają dodatkowe właściwości — odwadniają, utleniają, parują; pokazy wykonuje tylko nauczyciel.
 
 ## 5 | Dysocjacja jonowa kwasów [[basic:E8]] {#dysocjacja}
 

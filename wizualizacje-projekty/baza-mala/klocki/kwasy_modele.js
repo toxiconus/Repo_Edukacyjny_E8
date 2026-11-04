@@ -1,4 +1,4 @@
-/* KLOCKI: kwasy (N04) — bufor, kwasy-reszty, kwasy-wlasciwosci, kwasy-rozcienczanie.
+/* KLOCKI: kwasy (N04) — bufor, kwasy-reszty, kwasy-rozcienczanie.
    Zastępują modele z dużego silnika (ph-indicators-v03, titration-merged, kw-bufor-v01, kw-reszty-v01, kw-wlasciwosci-v01, gfx-scene-dilution, acid-rain-v01).
    HTML/SVG, bez zależności poza ui_klocki.js. Barwy substancji realistyczne; interfejs w zmiennych motywu. */
 (function () {
@@ -93,6 +93,23 @@
     ['H₂SO₃', 'kwas siarkowy(IV)', 'tlenowy', 'SO₃²⁻', '2−', 'H₂SO₃ ⇌ 2H⁺ + SO₃²⁻', 'słaby', 'Na₂SO₃ — siarczan(IV) sodu', 'konserwant (SO₂), kwaśne deszcze'],
     ['H₂S', 'kwas siarkowodorowy', 'beztlenowy', 'S²⁻', '2−', 'H₂S ⇌ 2H⁺ + S²⁻', 'słaby', 'Na₂S — siarczek sodu', 'zapach zgniłych jaj, woda siarkowodorowa']
   ];
+  /* tabela soli kwasu z 16 kationami (rozpuszczalność wg szkolnej tabeli, 20 °C — jak w CHE.DATA.SOLUBILITY_TABLE) */
+  var KAT = [['Na', 1, 'sodu'], ['K', 1, 'potasu'], ['NH4', 1, 'amonu'], ['Mg', 2, 'magnezu'], ['Ca', 2, 'wapnia'], ['Ba', 2, 'baru'], ['Al', 3, 'glinu'], ['Zn', 2, 'cynku'], ['Mn', 2, 'manganu(II)'],
+    ['Fe', 2, 'żelaza(II)'], ['Fe', 3, 'żelaza(III)'], ['Ni', 2, 'niklu(II)'], ['Cu', 2, 'miedzi(II)'], ['Ag', 1, 'srebra'], ['Pb', 2, 'ołowiu(II)'], ['Sn', 2, 'cyny(II)']];
+  var ROZ = {Cl: 'RRRRRRRRRRRRRNTR', SO4: 'RRRRTNRRRRRRRTNR', NO3: 'RRRRRRRRRRRRRRR-', PO4: 'RRRNNNNNNNNNNNNN', CO3: 'RRRNNN-NNN-NNNN-', SO3: 'RRRTNN-NNN-N-NN-', S: 'RRR--R-NNN-NNNNN', CH3COO: 'RRRRRRRRRRRRRTR-'};
+  var ANI = {Cl: ['Cl', 'chlorek'], SO4: ['SO₄', 'siarczan(VI)'], NO3: ['NO₃', 'azotan(V)'], PO4: ['PO₄', 'fosforan(V)'], CO3: ['CO₃', 'węglan'], SO3: ['SO₃', 'siarczan(IV)'], S: ['S', 'siarczek'], CH3COO: ['CH₃COO', 'octan']};
+  var SUBD = '₀₁₂₃₄₅₆₇₈₉';
+  function sol(an, q) {
+    var a = ANI[an], w = ROZ[an], g = function (x, y) { return y ? g(y, x % y) : x; };
+    return '<table style="border-collapse:collapse;font-size:13px;margin-top:8px"><tr><th align="left" style="padding:3px 8px">sól</th><th align="left" style="padding:3px 8px">nazwa</th><th style="padding:3px 8px">rozp.</th></tr>' +
+      KAT.map(function (c, i) {
+        var d = g(c[1], q), nc = q / d, na = c[1] / d, sym = c[0] === 'NH4' ? 'NH₄' : c[0], r = w.charAt(i), nm = a[0].length > 2 && na > 1;
+        var f = (nc > 1 && c[0] === 'NH4' ? '(' + sym + ')' : sym) + (nc > 1 ? SUBD[nc] : '') + (nm ? '(' + a[0] + ')' : a[0]) + (na > 1 ? SUBD[na] : '');
+        var col = r === 'R' ? '#2e7d4f' : r === 'N' ? '#b83a45' : r === 'T' ? '#b06f1c' : '#64748b';
+        return '<tr><td style="padding:2px 8px"><b>' + f + '</b></td><td style="padding:2px 8px">' + a[1] + ' ' + c[2] + '</td><td align="center" style="padding:2px 8px;color:' + col + ';font-weight:800">' + (r === '-' ? '—' : r) + '</td></tr>';
+      }).join('') + '</table><div style="font-size:12px;color:var(--muted,#5b6b73);margin-top:4px">R — rozpuszczalna · T — trudno · N — nierozpuszczalna · — nie istnieje w wodzie. Wzór soli: ładunki kationu i reszty muszą się równoważyć.</div>';
+  }
+  var KLUCZ = ['Cl', 'SO4', 'NO3', 'PO4', 'CO3', 'CH3COO', 'SO3', 'S'], LAD = [1, 2, 1, 3, 2, 1, 2, 2];
   KLOCKI.def('kwasy-reszty', {
     opis: 'Tabela interaktywna: wybierasz wzór kwasu i widzisz jego nazwę, typ, resztę kwasową z ładunkiem, równanie dysocjacji, moc, sól sodową i zastosowanie.',
     domyslne: {},
@@ -106,42 +123,11 @@
         card.innerHTML = '<div style="font-size:20px"><b>' + k[0] + '</b> — ' + k[1] + '</div>' +
           '<div><b>Typ:</b> ' + k[2] + ' · <b>Moc:</b> <span style="color:' + (mocny ? '#b91c1c' : '#0f766e') + ';font-weight:700">' + k[6] + '</span></div>' +
           '<div><b>Reszta kwasowa:</b> ' + k[3] + ' <span style="color:var(--muted,#5b6b73)">(ładunek ' + k[4] + ' = liczba atomów H oddawanych w skrócie)</span></div>' +
-          '<div><b>Dysocjacja:</b> ' + k[5] + '</div><div><b>Sól sodowa:</b> ' + k[7] + '</div><div><b>Zastosowanie:</b> ' + k[8] + '</div>';
+          '<div><b>Dysocjacja:</b> ' + k[5] + '</div><div><b>Sól sodowa:</b> ' + k[7] + '</div><div><b>Zastosowanie:</b> ' + k[8] + '</div>' +
+          '<details style="margin-top:6px"><summary style="cursor:pointer;font-weight:700">Sole z 16 kationami: wzór, nazwa, rozpuszczalność</summary>' + sol(KLUCZ[i], LAD[i]) + '</details>';
       }
       KW.forEach(function (k, i) { if (i === 6) bar.appendChild(E('span', 'font-size:12px;color:var(--muted,#5b6b73);margin:0 4px 0 8px', 'dodatkowo (rozszerzenie):')); var c = U().chip(k[0], i === 0, function () { pokaz(i); }); chips.push(c); bar.appendChild(c); });
       host.append(bar, card); pokaz(0);
-    }
-  });
-
-  /* ---------- kwasy-wlasciwosci ---------- */
-  KLOCKI.def('kwasy-wlasciwosci', {
-    opis: 'Pokazy z wybranymi stężonymi kwasami: H₂SO₄ zwęgla cukier, HNO₃ żółci białko (próba ksantoproteinowa), stężony HCl dymi. Kliknięcie przycisku uruchamia pokaz.',
-    domyslne: {},
-    html: function (host) {
-      host.style.display = 'block';
-      var bar = E('div', 'margin-bottom:6px'), sc = E('div', ''), info = E('div', 'font-size:14px;margin-top:6px;' + BOX), chips = [];
-      var P = [
-        ['H₂SO₄ + cukier', 'Stężony H₂SO₄ odwadnia cukier: C₁₂H₂₂O₁₁ → 12 C + 11 H₂O. Biały cukier brązowieje i czernieje, rośnie porowata masa węgla, mieszanina się mocno nagrzewa. Pokaz wykonuje nauczyciel.', '#f8fafc', '#171717'],
-        ['HNO₃ + białko', 'Stężony HNO₃ nitruje pierścienie aromatyczne w białku — powstaje żółte zabarwienie (reakcja ksantoproteinowa). Na skórze zostawia żółte plamy. Pokaz wykonuje nauczyciel.', '#f8fafc', '#facc15'],
-        ['Stężony HCl (dymi)', 'Stężony kwas solny wydziela gazowy HCl, który z parą wodną z powietrza tworzy białą mgiełkę kropelek kwasu — „dymi”. Pracujemy pod wyciągiem.', '#e0f2fe', '#e0f2fe']
-      ];
-      function pokaz(i) {
-        chips.forEach(function (c, j) { U().zaznacz(c, j === i); });
-        var p = P[i], dym = i === 2, h = i === 0 ? 70 : 38;
-        sc.innerHTML = '<svg viewBox="0 0 260 150" style="width:100%;max-width:300px"><path d="M60 20v100q0 14 14 14h112q14 0 14-14V20" fill="rgba(224,242,254,.25)" stroke="var(--border-strong,#64748b)" stroke-width="2.5"/>' +
-          '<rect id="kw-sub" x="63" y="' + (132 - 38) + '" width="134" height="38" rx="4" fill="' + p[2] + '" style="transition:fill 4s ease,height 4s ease,y 4s ease"/>' +
-          (dym ? [0, 1, 2, 3, 4].map(function (k) { return '<circle class="kw-d" cx="' + (90 + k * 20) + '" cy="90" r="6" fill="#fff" opacity="0" stroke="#94a3b8" stroke-width=".5" style="transition:all 4s ease"/>'; }).join('') : '') +
-          '</svg>';
-        var r = sc.querySelector('#kw-sub'), ds = sc.querySelectorAll('.kw-d');
-        setTimeout(function () {
-          r.setAttribute('fill', p[3]); r.style.fill = p[3];
-          if (i === 0) { r.style.height = h + 'px'; r.style.y = (132 - h) + 'px'; r.setAttribute('height', h); r.setAttribute('y', 132 - h); }
-          [].forEach.call(ds, function (d, k) { d.setAttribute('opacity', '.85'); d.setAttribute('cy', 20 - k * 3); d.setAttribute('r', 14); });
-        }, 60);
-        info.innerHTML = '<b>' + p[0] + ':</b> ' + p[1];
-      }
-      P.forEach(function (p, i) { var c = U().chip(p[0], false, function () { pokaz(i); }); chips.push(c); bar.appendChild(c); });
-      host.append(bar, sc, info); pokaz(0);
     }
   });
 

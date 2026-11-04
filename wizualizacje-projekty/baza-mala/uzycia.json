@@ -267,7 +267,6 @@
   "probowki-odczyn": "klocek",
   "bufor": "klocek",
   "kwasy-reszty": "klocek",
-  "kwasy-wlasciwosci": "klocek",
   "kwasy-rozcienczanie": "klocek",
   "regula-krzyzowa": "klocek",
   "schemat-przemian": "klocek",
@@ -448,16 +447,13 @@
    "N04": 1
   },
   "kw-reszty-v01": {
-   "N04": 1,
    "N05": 1
   },
   "kw-szereg-metali-v01": {
    "N04": 1,
    "N05": 1
   },
-  "kw-wlasciwosci-v01": {
-   "N04": 1
-  },
+  "kw-wlasciwosci-v01": {},
   "lab-beaker-v102": {},
   "lab-library-v001": {},
   "lab-stations-v102": {},
@@ -857,9 +853,6 @@
   "kwasy-reszty": {
    "N04": 1
   },
-  "kwasy-wlasciwosci": {
-   "N04": 1
-  },
   "kwasy-rozcienczanie": {
    "N04": 1
   },
@@ -952,7 +945,7 @@
   },
   "zlewka-rx": {},
   "zlewki-rx": {
-   "N04": 15
+   "N04": 16
   },
   "osady-dwie-sole": {
    "J03": 1
@@ -1308,6 +1301,7 @@
   "ka-pka-table",
   "kinetics-v01",
   "kw-bufor-v01",
+  "kw-wlasciwosci-v01",
   "lab-beaker-v102",
   "lab-library-v001",
   "lab-stations-v102",
@@ -1492,7 +1486,7 @@
   "gfx-scene-titration",
   "ion-map-v02",
   "kw-dysocjacja-v01",
-  "kw-wlasciwosci-v01",
+  "kw-reszty-v01",
   "n01-spalanie-v01",
   "n02-dysocjacja-v01",
   "n02-otrzymywanie-v01",
@@ -1533,7 +1527,6 @@
   "haworth",
   "bufor",
   "kwasy-reszty",
-  "kwasy-wlasciwosci",
   "kwasy-rozcienczanie",
   "regula-krzyzowa",
   "schemat-przemian",
@@ -1574,7 +1567,6 @@
  "wiele": [
   "gfx-scene-indicatorRack",
   "kw-doswiadczenia-v01",
-  "kw-reszty-v01",
   "kw-szereg-metali-v01",
   "n01-doswiadczenia-v01",
   "n02-doswiadczenia-v01",

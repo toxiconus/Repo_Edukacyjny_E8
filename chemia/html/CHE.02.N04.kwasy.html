@@ -1041,8 +1041,6 @@ body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
 <li>Na₃PO₄ → fosforan(V) sodu (od H₃PO₄)</li>
 </ul>
 </div>
-<div class="che-lesson-viz-ref" data-che-lesson-viz="kw-reszty-v01"><button type="button" data-che-open-viz="kw-reszty-v01" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'kw-reszty-v01',lessonId:'N04'},'*')"><b>Kwas → reszta kwasowa → sole (13 metali)</b><span>Dysocjacja, ładunek reszty, wzory i nazwy soli, rozpuszczalność · CHE.IONIC</span></button></div>
-<!-- OPIS: Model kwas → reszta kwasowa → sól: kwas dysocjuje, model pokazuje ładunek reszty kwasowej (np. SO₄²⁻, NO₃⁻, PO₄³⁻), a dla 13 metali tworzy wzory i nazwy soli z informacją o rozpuszczalności. Wniosek: ładunek reszty kwasowej równa się liczbie atomów wodoru oddanych przez kwas i wyznacza wzór soli. -->
 <figure class="lk-fig" data-klocek="kwasy-reszty" data-opt="{}"><div class="lk-fig-body"></div><figcaption>Tabela kwasów: kliknij wzór, zobacz resztę, dysocjację i zastosowanie</figcaption></figure>
 <!-- OPIS: Chipy z wzorami kwasów (HCl, H₂SO₄, HNO₃, H₃PO₄, H₂CO₃, H₂SO₃, H₂S, CH₃COOH); po kliknięciu karta z nazwą, typem, mocą, resztą i jej ładunkiem, równaniem dysocjacji, solą sodową i zastosowaniem. Wniosek: ładunek reszty zależy od liczby oddawanych atomów H. -->
 <div class="card card-understand poz-must">
@@ -1077,10 +1075,8 @@ body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
 <div class="formula-lg" data-rx="sugarH2so4">C₁₂H₂₂O₁₁ →(stęż. H₂SO₄) 12 C + 11 H₂O</div>
 <p class="mini-note">Wydziela się dużo ciepła — woda paruje, porowata masa węgla „rośnie”; część węgla utlenia się do CO₂ i SO₂ (ostry zapach). To <strong>pokaz nauczyciela</strong> pod dygestorium (doświadczenie 8 w <a href="#doswiadczenia">§16</a>).</p>
 </div>
-<div class="che-lesson-viz-ref" data-che-lesson-viz="kw-wlasciwosci-v01"><button type="button" data-che-open-viz="kw-wlasciwosci-v01" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'kw-wlasciwosci-v01',lessonId:'N04'},'*')"><b>Właściwości stężonych kwasów — pokazy</b><span>Cukier + H₂SO₄ · białko + HNO₃ · HCl dymi · silnik GFX, otwiera się w oknie</span></button></div>
-<!-- OPIS: Pokazy właściwości stężonych kwasów: cukier zalany stężonym H₂SO₄ czernieje i pęcznieje w porowatą masę węgla, białko po dodaniu HNO₃ żółknie, otwarta butelka stężonego HCl „dymi” (chlorowodór tworzy z parą wodną mgiełkę). Wniosek: stężone kwasy mają właściwości żrące, utleniające i odwadniające — praca tylko z nauczycielem i pod wyciągiem. -->
-<figure class="lk-fig" data-klocek="kwasy-wlasciwosci" data-opt="{}"><div class="lk-fig-body"></div><figcaption>Pokazy: H₂SO₄ + cukier, HNO₃ + białko, dymiący HCl</figcaption></figure>
-<!-- OPIS: Zlewka, w której po kliknięciu pokazu cukier z H₂SO₄ czernieje i rośnie, białko z HNO₃ żółknie, a nad stężonym HCl unosi się biała mgiełka. Wniosek: stężone kwasy mają różne charakterystyczne działanie (odwadnianie, nitrowanie, wydzielanie gazu). -->
+<figure class="lk-fig" data-klocek="zlewki-rx" data-opt="{&quot;zestaw&quot;: &quot;stezone-kwasy&quot;}"><div class="lk-fig-body"></div><figcaption>Pokazy stężonych kwasów: H₂SO₄ + cukier, HNO₃ + białko, HNO₃ na świetle, dymiący HCl</figcaption></figure>
+<!-- OPIS: Cztery zlewki obok siebie, po kliknięciu „wrzuć” startuje pokaz nauczyciela: cukier z stężonym H₂SO₄ czernieje i pęcznieje, białko z HNO₃ żółknie (reakcja ksantoproteinowa), stężony HNO₃ na świetle żółknie od rozpuszczonego NO₂, stężony HCl dymi. Wniosek: stężone kwasy mają dodatkowe właściwości — odwadniają, utleniają, parują; pokazy wykonuje tylko nauczyciel. -->
 </div>
 </section>
 <section id="dysocjacja" class="poz-e8">
@@ -5359,7 +5355,7 @@ defineView('titration-merged', {
   });
 })();
 
-/* KLOCKI: kwasy (N04) — bufor, kwasy-reszty, kwasy-wlasciwosci, kwasy-rozcienczanie.
+/* KLOCKI: kwasy (N04) — bufor, kwasy-reszty, kwasy-rozcienczanie.
    Zastępują modele z dużego silnika (ph-indicators-v03, titration-merged, kw-bufor-v01, kw-reszty-v01, kw-wlasciwosci-v01, gfx-scene-dilution, acid-rain-v01).
    HTML/SVG, bez zależności poza ui_klocki.js. Barwy substancji realistyczne; interfejs w zmiennych motywu. */
 (function () {
@@ -5454,6 +5450,23 @@ defineView('titration-merged', {
     ['H₂SO₃', 'kwas siarkowy(IV)', 'tlenowy', 'SO₃²⁻', '2−', 'H₂SO₃ ⇌ 2H⁺ + SO₃²⁻', 'słaby', 'Na₂SO₃ — siarczan(IV) sodu', 'konserwant (SO₂), kwaśne deszcze'],
     ['H₂S', 'kwas siarkowodorowy', 'beztlenowy', 'S²⁻', '2−', 'H₂S ⇌ 2H⁺ + S²⁻', 'słaby', 'Na₂S — siarczek sodu', 'zapach zgniłych jaj, woda siarkowodorowa']
   ];
+  /* tabela soli kwasu z 16 kationami (rozpuszczalność wg szkolnej tabeli, 20 °C — jak w CHE.DATA.SOLUBILITY_TABLE) */
+  var KAT = [['Na', 1, 'sodu'], ['K', 1, 'potasu'], ['NH4', 1, 'amonu'], ['Mg', 2, 'magnezu'], ['Ca', 2, 'wapnia'], ['Ba', 2, 'baru'], ['Al', 3, 'glinu'], ['Zn', 2, 'cynku'], ['Mn', 2, 'manganu(II)'],
+    ['Fe', 2, 'żelaza(II)'], ['Fe', 3, 'żelaza(III)'], ['Ni', 2, 'niklu(II)'], ['Cu', 2, 'miedzi(II)'], ['Ag', 1, 'srebra'], ['Pb', 2, 'ołowiu(II)'], ['Sn', 2, 'cyny(II)']];
+  var ROZ = {Cl: 'RRRRRRRRRRRRRNTR', SO4: 'RRRRTNRRRRRRRTNR', NO3: 'RRRRRRRRRRRRRRR-', PO4: 'RRRNNNNNNNNNNNNN', CO3: 'RRRNNN-NNN-NNNN-', SO3: 'RRRTNN-NNN-N-NN-', S: 'RRR--R-NNN-NNNNN', CH3COO: 'RRRRRRRRRRRRRTR-'};
+  var ANI = {Cl: ['Cl', 'chlorek'], SO4: ['SO₄', 'siarczan(VI)'], NO3: ['NO₃', 'azotan(V)'], PO4: ['PO₄', 'fosforan(V)'], CO3: ['CO₃', 'węglan'], SO3: ['SO₃', 'siarczan(IV)'], S: ['S', 'siarczek'], CH3COO: ['CH₃COO', 'octan']};
+  var SUBD = '₀₁₂₃₄₅₆₇₈₉';
+  function sol(an, q) {
+    var a = ANI[an], w = ROZ[an], g = function (x, y) { return y ? g(y, x % y) : x; };
+    return '<table style="border-collapse:collapse;font-size:13px;margin-top:8px"><tr><th align="left" style="padding:3px 8px">sól</th><th align="left" style="padding:3px 8px">nazwa</th><th style="padding:3px 8px">rozp.</th></tr>' +
+      KAT.map(function (c, i) {
+        var d = g(c[1], q), nc = q / d, na = c[1] / d, sym = c[0] === 'NH4' ? 'NH₄' : c[0], r = w.charAt(i), nm = a[0].length > 2 && na > 1;
+        var f = (nc > 1 && c[0] === 'NH4' ? '(' + sym + ')' : sym) + (nc > 1 ? SUBD[nc] : '') + (nm ? '(' + a[0] + ')' : a[0]) + (na > 1 ? SUBD[na] : '');
+        var col = r === 'R' ? '#2e7d4f' : r === 'N' ? '#b83a45' : r === 'T' ? '#b06f1c' : '#64748b';
+        return '<tr><td style="padding:2px 8px"><b>' + f + '</b></td><td style="padding:2px 8px">' + a[1] + ' ' + c[2] + '</td><td align="center" style="padding:2px 8px;color:' + col + ';font-weight:800">' + (r === '-' ? '—' : r) + '</td></tr>';
+      }).join('') + '</table><div style="font-size:12px;color:var(--muted,#5b6b73);margin-top:4px">R — rozpuszczalna · T — trudno · N — nierozpuszczalna · — nie istnieje w wodzie. Wzór soli: ładunki kationu i reszty muszą się równoważyć.</div>';
+  }
+  var KLUCZ = ['Cl', 'SO4', 'NO3', 'PO4', 'CO3', 'CH3COO', 'SO3', 'S'], LAD = [1, 2, 1, 3, 2, 1, 2, 2];
   KLOCKI.def('kwasy-reszty', {
     opis: 'Tabela interaktywna: wybierasz wzór kwasu i widzisz jego nazwę, typ, resztę kwasową z ładunkiem, równanie dysocjacji, moc, sól sodową i zastosowanie.',
     domyslne: {},
@@ -5467,42 +5480,11 @@ defineView('titration-merged', {
         card.innerHTML = '<div style="font-size:20px"><b>' + k[0] + '</b> — ' + k[1] + '</div>' +
           '<div><b>Typ:</b> ' + k[2] + ' · <b>Moc:</b> <span style="color:' + (mocny ? '#b91c1c' : '#0f766e') + ';font-weight:700">' + k[6] + '</span></div>' +
           '<div><b>Reszta kwasowa:</b> ' + k[3] + ' <span style="color:var(--muted,#5b6b73)">(ładunek ' + k[4] + ' = liczba atomów H oddawanych w skrócie)</span></div>' +
-          '<div><b>Dysocjacja:</b> ' + k[5] + '</div><div><b>Sól sodowa:</b> ' + k[7] + '</div><div><b>Zastosowanie:</b> ' + k[8] + '</div>';
+          '<div><b>Dysocjacja:</b> ' + k[5] + '</div><div><b>Sól sodowa:</b> ' + k[7] + '</div><div><b>Zastosowanie:</b> ' + k[8] + '</div>' +
+          '<details style="margin-top:6px"><summary style="cursor:pointer;font-weight:700">Sole z 16 kationami: wzór, nazwa, rozpuszczalność</summary>' + sol(KLUCZ[i], LAD[i]) + '</details>';
       }
       KW.forEach(function (k, i) { if (i === 6) bar.appendChild(E('span', 'font-size:12px;color:var(--muted,#5b6b73);margin:0 4px 0 8px', 'dodatkowo (rozszerzenie):')); var c = U().chip(k[0], i === 0, function () { pokaz(i); }); chips.push(c); bar.appendChild(c); });
       host.append(bar, card); pokaz(0);
-    }
-  });
-
-  /* ---------- kwasy-wlasciwosci ---------- */
-  KLOCKI.def('kwasy-wlasciwosci', {
-    opis: 'Pokazy z wybranymi stężonymi kwasami: H₂SO₄ zwęgla cukier, HNO₃ żółci białko (próba ksantoproteinowa), stężony HCl dymi. Kliknięcie przycisku uruchamia pokaz.',
-    domyslne: {},
-    html: function (host) {
-      host.style.display = 'block';
-      var bar = E('div', 'margin-bottom:6px'), sc = E('div', ''), info = E('div', 'font-size:14px;margin-top:6px;' + BOX), chips = [];
-      var P = [
-        ['H₂SO₄ + cukier', 'Stężony H₂SO₄ odwadnia cukier: C₁₂H₂₂O₁₁ → 12 C + 11 H₂O. Biały cukier brązowieje i czernieje, rośnie porowata masa węgla, mieszanina się mocno nagrzewa. Pokaz wykonuje nauczyciel.', '#f8fafc', '#171717'],
-        ['HNO₃ + białko', 'Stężony HNO₃ nitruje pierścienie aromatyczne w białku — powstaje żółte zabarwienie (reakcja ksantoproteinowa). Na skórze zostawia żółte plamy. Pokaz wykonuje nauczyciel.', '#f8fafc', '#facc15'],
-        ['Stężony HCl (dymi)', 'Stężony kwas solny wydziela gazowy HCl, który z parą wodną z powietrza tworzy białą mgiełkę kropelek kwasu — „dymi”. Pracujemy pod wyciągiem.', '#e0f2fe', '#e0f2fe']
-      ];
-      function pokaz(i) {
-        chips.forEach(function (c, j) { U().zaznacz(c, j === i); });
-        var p = P[i], dym = i === 2, h = i === 0 ? 70 : 38;
-        sc.innerHTML = '<svg viewBox="0 0 260 150" style="width:100%;max-width:300px"><path d="M60 20v100q0 14 14 14h112q14 0 14-14V20" fill="rgba(224,242,254,.25)" stroke="var(--border-strong,#64748b)" stroke-width="2.5"/>' +
-          '<rect id="kw-sub" x="63" y="' + (132 - 38) + '" width="134" height="38" rx="4" fill="' + p[2] + '" style="transition:fill 4s ease,height 4s ease,y 4s ease"/>' +
-          (dym ? [0, 1, 2, 3, 4].map(function (k) { return '<circle class="kw-d" cx="' + (90 + k * 20) + '" cy="90" r="6" fill="#fff" opacity="0" stroke="#94a3b8" stroke-width=".5" style="transition:all 4s ease"/>'; }).join('') : '') +
-          '</svg>';
-        var r = sc.querySelector('#kw-sub'), ds = sc.querySelectorAll('.kw-d');
-        setTimeout(function () {
-          r.setAttribute('fill', p[3]); r.style.fill = p[3];
-          if (i === 0) { r.style.height = h + 'px'; r.style.y = (132 - h) + 'px'; r.setAttribute('height', h); r.setAttribute('y', 132 - h); }
-          [].forEach.call(ds, function (d, k) { d.setAttribute('opacity', '.85'); d.setAttribute('cy', 20 - k * 3); d.setAttribute('r', 14); });
-        }, 60);
-        info.innerHTML = '<b>' + p[0] + ':</b> ' + p[1];
-      }
-      P.forEach(function (p, i) { var c = U().chip(p[0], false, function () { pokaz(i); }); chips.push(c); bar.appendChild(c); });
-      host.append(bar, sc, info); pokaz(0);
     }
   });
 
@@ -5784,6 +5766,8 @@ KLOCKI.def('probowki', {
     liH2o: {n: 'Li + H₂O (+ fenoloftaleina)', l0: ['ind-fenoloftaleina', 7], l1: ['ind-fenoloftaleina', 13], solid: {col: [205, 211, 218], eq: 4, end: .2, t: 'chips', shape: 'chips'}, gas: 'H2', bubN: .7, eq: '2 Li + 2 H₂O → 2 LiOH + H₂↑'},
     naH2o: {n: 'Na + H₂O (+ fenoloftaleina)', l0: ['ind-fenoloftaleina', 7], l1: ['ind-fenoloftaleina', 13], solid: {col: [226, 229, 233], eq: 3, end: 0, t: 'chips', shape: 'chips'}, gas: 'H2', bubN: 1.8, heat: .3, eq: '2 Na + 2 H₂O → 2 NaOH + H₂↑'},
     kH2o: {n: 'K + H₂O (+ fenoloftaleina)', l0: ['ind-fenoloftaleina', 7], l1: ['ind-fenoloftaleina', 13], solid: {col: [238, 240, 243], eq: 2, end: 0, t: 'chips', shape: 'chips'}, gas: 'H2', bubN: 3, heat: .6, eq: '2 K + 2 H₂O → 2 KOH + H₂↑ (gwałtownie)'},
+    hno3Bialko: {n: 'Białko + stężony HNO₃ (próba ksantoproteinowa; pokaz)', solid: {col: [240, 238, 228], eq: 4, end: .5, t: 'powder', shape: 'powder'}, l0: '#e9f2f6', l1: '#e8c43c', teacher: 1, eq: 'białko (reszty aromatyczne) + HNO₃ → żółte nitrozwiązki'},
+    hno3Swiatlo: {n: 'Stężony HNO₃ na świetle żółknie (pokaz)', l0: '#eef3f5', l1: '#f0d678', fumes: 1, bubN: .3, teacher: 1, eq: '4 HNO₃ →(hν) 4 NO₂ + O₂ + 2 H₂O (brunatny NO₂ barwi kwas)'},
     znHcl: {n: 'Zn + HCl', solid: {col: [150, 158, 170], eq: 4, end: .4, t: 'chips', shape: 'chips'}, gas: 'H2', bubN: 1.6, eq: 'Zn + 2 HCl → ZnCl₂ + H₂↑'},
     mgHcl: {n: 'Mg + HCl', solid: {col: [190, 196, 204], eq: 3, end: .1, t: 'chips', shape: 'chips'}, gas: 'H2', bubN: 2.6, heat: 0, eq: 'Mg + 2 HCl → MgCl₂ + H₂↑'},
     feHcl: {n: 'Fe + HCl (wolno)', solid: {col: [110, 112, 118], eq: 4, end: .8, t: 'chips', shape: 'chips'}, l1: 'ion-fe2', gas: 'H2', bubN: .5, eq: 'Fe + 2 HCl → FeCl₂ + H₂↑'},
@@ -5832,6 +5816,7 @@ KLOCKI.def('probowki', {
 
   /* KLOCEK: zlewki-rx — kilka zlewek obok siebie, jeden przycisk „wrzuć” startuje wszystkie naraz (jak pracownia f06: litowce + woda). */
   var ZESTAWY = {
+    'stezone-kwasy': ['cukierH2so4', 'hno3Bialko', 'hno3Swiatlo', 'hclDymi'],
     'litowce-woda': ['liH2o', 'naH2o', 'kH2o'],
     'metale-hcl': ['mgHcl', 'znHcl', 'cuHcl'],
     'moc-kwasu': ['mgHcl', 'mgOcet'],
@@ -5850,7 +5835,7 @@ KLOCKI.def('probowki', {
       if (!C.RXL) { host.textContent = 'Brak silniczka rx-lite.'; return; }
       var lista = opc.k ? String(opc.k).split(',').map(function (x) { return x.trim(); }) : (ZESTAWY[opc.zestaw] || ZESTAWY['metale-hcl']);
       var siatka = document.createElement('div');
-      siatka.style.cssText = 'display:grid;grid-template-columns:repeat(' + Math.min(3, lista.length) + ',minmax(0,1fr));gap:6px';   // zawsze obok siebie (też na telefonie)
+      siatka.style.cssText = 'display:grid;grid-template-columns:repeat(' + (lista.length === 4 ? 2 : Math.min(3, lista.length)) + ',minmax(0,1fr));gap:6px';   // zawsze obok siebie (też na telefonie)
       var ms = [];
       siatka.className = 'zrx';
       if (!document.getElementById('zrx-css')) { var st = document.createElement('style'); st.id = 'zrx-css'; st.textContent = '.zrx .cap{font-size:clamp(11px,3vw,14px);line-height:1.2}'; document.head.appendChild(st); }

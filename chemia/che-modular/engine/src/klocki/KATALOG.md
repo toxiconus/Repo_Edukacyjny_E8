@@ -13,9 +13,9 @@ Przed napisaniem nowego klocka sprawdź tu rodzinę i użycia — nie twórz dub
 | Przewodnictwo / elektroliza | `przewodnictwo` | scalone 2026-11-04: tester-przewodnictwa usunięty, N04 i FIZ01 używają przewodnictwo (N05 nadal @model gfx-scene-conductivity) |
 | Probówki / zlewki z reakcją | `probowki`, `probowki-odczyn`, `probowki-wybor`, `zlewka-rx`, `zlewki-rx` | pięć klocków „naczynie + reakcja”: probówki (odczyn/wybór) i zlewki z silniczkiem rx-lite; litowce+woda = zestaw zlewki-rx |
 | Wzory cząsteczek 2D | `wzor-2d` | jeden klocek (SMILES, grupy, kwaśny H, kulki, kąty); dawny molekula-2d scalony i usunięty |
-| Reszty kwasowe / właściwości kwasów | `kwasy-reszty`, `kwasy-wlasciwosci`, `kwasy-rozcienczanie` | odpowiedniki kw-reszty-v01, kw-wlasciwosci-v01 z dużego silnika (nieprzeniesione) |
+| Reszty kwasowe / właściwości kwasów | `kwasy-reszty`, `kwasy-rozcienczanie` | odpowiedniki kw-reszty-v01, kw-wlasciwosci-v01 z dużego silnika (nieprzeniesione) |
 
-## Wszystkie klocki (62)
+## Wszystkie klocki (61)
 
 | Klocek | Plik | Opis | Domyślne | Użycia (lekcja×liczba) |
 |---|---|---|---|---|
@@ -44,7 +44,6 @@ Przed napisaniem nowego klocka sprawdź tu rodzinę i użycia — nie twórz dub
 | `kule-ladunek` | fizyka_elektrostatyka.js | Dwie przewodzące kule z ładunkami: po zetknięciu ładunek dzieli się proporcjonalnie do promieni (po równo dla jednakowych kul); uziemienie odprowadza ładunek; liczba elek | {q1: 8, q2: -2, r1: 1, r2: 1} | FIZ01×3 |
 | `kwasy-reszty` | kwasy_modele.js | Tabela interaktywna: wybierasz wzór kwasu i widzisz jego nazwę, typ, resztę kwasową z ładunkiem, równanie dysocjacji, moc, sól sodową i zastosowanie. | {} | N04×1 |
 | `kwasy-rozcienczanie` | kwasy_modele.js | Rozcieńczanie stężonego kwasu: kwas wlewany do wody nagrzewa roztwór bezpiecznie, a woda wlewana do kwasu powoduje lokalne wrzenie i pryskanie. | {} | N04×1 |
-| `kwasy-wlasciwosci` | kwasy_modele.js | Pokazy z wybranymi stężonymi kwasami: H₂SO₄ zwęgla cukier, HNO₃ żółci białko (próba ksantoproteinowa), stężony HCl dymi. Kliknięcie przycisku uruchamia pokaz. | {} | N04×1 |
 | `lancuch-poziomow` | chemia_wstep.js | Cztery poziomy opisu tego samego obiektu: atom, cząsteczka, próbka substancji, reakcja — przełączane przyciskami lub automatycznie. | {} | F01×1 |
 | `lancuch-przemian` | lancuch_przemian.js | Schemat przemian: wzory substancji połączone strzałkami z literami reakcji; układ liniowy albo obieg zamknięty. | {wezly: 'Ca,CaO,Ca(OH)2,CaCO3', etyk: 'A,B,C', zamkniety: 0, szer: 480 | N02×3 |
 | `linie-pola` | fizyka_elektrostatyka.js | Linie pola dwóch ładunków: wychodzą z ładunku dodatniego i wchodzą do ujemnego; gęstość linii pokazuje siłę pola. Znaki ładunków można zmieniać. | {q1: 1, q2: -1} | FIZ01×1 |
@@ -80,4 +79,4 @@ Przed napisaniem nowego klocka sprawdź tu rodzinę i użycia — nie twórz dub
 | `zbieranie-gazu` | zbieranie_gazu.js | Zbieranie gazu: kolba z reakcją, rurka i naczynie ustawione wylotem do góry, do dołu albo nad wodą; werdykt zależy od gęstości i rozpuszczalności gazu. | {gaz: 'H2', metoda: 'auto', gazy: 'H2,O2,CO2,NH3,HCl'} | LKO×1, N01×2, N04×1 |
 | `zlewka-predykcja` | chemia_wstep.js | Najpierw wybierasz, czego spodziewasz się w zlewce, potem animacja pokazuje wynik i porównuje go z przewidywaniem. | {} | F01×1 |
 | `zlewka-rx` | zlewka_rx.js | Doświadczenie w zlewce lub probówce: ciało stałe, bąbelki gazu, piana, opary, ogrzewanie i zmiana barwy cieczy; przycisk „powtórz” odtwarza animację. | {k: 'znHcl', dur: 6} | — |
-| `zlewki-rx` | zlewka_rx.js | Kilka zlewek naraz (np. Mg, Zn i Cu w HCl); przycisk „wrzuć” uruchamia wszystkie animacje jednocześnie, pod każdą równanie. | {zestaw: 'metale-hcl', k: '', dur: 6} | N04×15 |
+| `zlewki-rx` | zlewka_rx.js | Kilka zlewek naraz (np. Mg, Zn i Cu w HCl); przycisk „wrzuć” uruchamia wszystkie animacje jednocześnie, pod każdą równanie. | {zestaw: 'metale-hcl', k: '', dur: 6} | N04×16 |

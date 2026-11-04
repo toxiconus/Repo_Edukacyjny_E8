@@ -25,7 +25,7 @@ RODZINY = [
  ('Przewodnictwo / elektroliza', ['przewodnictwo'], 'scalone 2026-11-04: tester-przewodnictwa usunięty, N04 i FIZ01 używają przewodnictwo (N05 nadal @model gfx-scene-conductivity)'),
  ('Probówki / zlewki z reakcją', ['probowki', 'probowki-odczyn', 'probowki-wybor', 'zlewka-rx', 'zlewki-rx'], 'pięć klocków „naczynie + reakcja”: probówki (odczyn/wybór) i zlewki z silniczkiem rx-lite; litowce+woda = zestaw zlewki-rx'),
  ('Wzory cząsteczek 2D', ['wzor-2d'], 'jeden klocek (SMILES, grupy, kwaśny H, kulki, kąty); dawny molekula-2d scalony i usunięty'),
- ('Reszty kwasowe / właściwości kwasów', ['kwasy-reszty', 'kwasy-wlasciwosci', 'kwasy-rozcienczanie'], 'odpowiedniki kw-reszty-v01, kw-wlasciwosci-v01 z dużego silnika (nieprzeniesione)'),
+ ('Reszty kwasowe / właściwości kwasów', ['kwasy-reszty', 'kwasy-rozcienczanie'], 'odpowiedniki kw-reszty-v01, kw-wlasciwosci-v01 z dużego silnika (nieprzeniesione)'),
 ]
 out = ['# Katalog klocków (generowany: `python3 narzedzia/katalog_klockow.py`, wołany z `odswiez_wszystko.py`)', '',
        'Przed napisaniem nowego klocka sprawdź tu rodzinę i użycia — nie twórz dubla, rozbuduj istniejący. Nazwa → `@klocek nazwa {opcje} | podpis` + obowiązkowy `@opis`.', '',

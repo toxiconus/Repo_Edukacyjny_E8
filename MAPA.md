@@ -186,7 +186,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che  (1 pl., 1 KB)
 - `README.md` 1 KB
 
-## chemia/che-modular  (17 pl., 206 KB)
+## chemia/che-modular  (17 pl., 207 KB)
 - (zwinięte; `ls chemia/che-modular`) — duże:
 - ⚠`PROGRESS.md` 70 KB
 
@@ -595,9 +595,9 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `CHE.07.K10.regula_le_chateliera.md` 14 KB
 - `CHE.07.K11.rownowaga_ilosciowa.md` 18 KB
 
-## chemia/lekcje_md/N  (3 pl., 388 KB)
+## chemia/lekcje_md/N  (3 pl., 387 KB)
 - ⚠`CHE.02.N03.wodorotlenki.md` 134 KB
-- ⚠`CHE.02.N04.kwasy.md` 166 KB
+- ⚠`CHE.02.N04.kwasy.md` 165 KB
 - ⚠`CHE.02.N05.sole.md` 89 KB
 
 ## chemia/lekcje_md/O  (9 pl., 121 KB)
@@ -1170,7 +1170,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `BRAKI_WIZUALIZACJI.md` 16 KB
 - `KATALOG_KLOCKOW.md` 34 KB
 - `README.md` 3 KB
-- ⚠`UZYCIA_WIZUALIZACJI.md` 71 KB
+- ⚠`UZYCIA_WIZUALIZACJI.md` 70 KB
 - `uzycia.json` 37 KB
 
 ## wizualizacje-projekty/baza-mala/biblioteki/biologia  (1 pl., 10 KB)

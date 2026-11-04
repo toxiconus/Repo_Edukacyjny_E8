@@ -7,6 +7,8 @@
     liH2o: {n: 'Li + H₂O (+ fenoloftaleina)', l0: ['ind-fenoloftaleina', 7], l1: ['ind-fenoloftaleina', 13], solid: {col: [205, 211, 218], eq: 4, end: .2, t: 'chips', shape: 'chips'}, gas: 'H2', bubN: .7, eq: '2 Li + 2 H₂O → 2 LiOH + H₂↑'},
     naH2o: {n: 'Na + H₂O (+ fenoloftaleina)', l0: ['ind-fenoloftaleina', 7], l1: ['ind-fenoloftaleina', 13], solid: {col: [226, 229, 233], eq: 3, end: 0, t: 'chips', shape: 'chips'}, gas: 'H2', bubN: 1.8, heat: .3, eq: '2 Na + 2 H₂O → 2 NaOH + H₂↑'},
     kH2o: {n: 'K + H₂O (+ fenoloftaleina)', l0: ['ind-fenoloftaleina', 7], l1: ['ind-fenoloftaleina', 13], solid: {col: [238, 240, 243], eq: 2, end: 0, t: 'chips', shape: 'chips'}, gas: 'H2', bubN: 3, heat: .6, eq: '2 K + 2 H₂O → 2 KOH + H₂↑ (gwałtownie)'},
+    hno3Bialko: {n: 'Białko + stężony HNO₃ (próba ksantoproteinowa; pokaz)', solid: {col: [240, 238, 228], eq: 4, end: .5, t: 'powder', shape: 'powder'}, l0: '#e9f2f6', l1: '#e8c43c', teacher: 1, eq: 'białko (reszty aromatyczne) + HNO₃ → żółte nitrozwiązki'},
+    hno3Swiatlo: {n: 'Stężony HNO₃ na świetle żółknie (pokaz)', l0: '#eef3f5', l1: '#f0d678', fumes: 1, bubN: .3, teacher: 1, eq: '4 HNO₃ →(hν) 4 NO₂ + O₂ + 2 H₂O (brunatny NO₂ barwi kwas)'},
     znHcl: {n: 'Zn + HCl', solid: {col: [150, 158, 170], eq: 4, end: .4, t: 'chips', shape: 'chips'}, gas: 'H2', bubN: 1.6, eq: 'Zn + 2 HCl → ZnCl₂ + H₂↑'},
     mgHcl: {n: 'Mg + HCl', solid: {col: [190, 196, 204], eq: 3, end: .1, t: 'chips', shape: 'chips'}, gas: 'H2', bubN: 2.6, heat: 0, eq: 'Mg + 2 HCl → MgCl₂ + H₂↑'},
     feHcl: {n: 'Fe + HCl (wolno)', solid: {col: [110, 112, 118], eq: 4, end: .8, t: 'chips', shape: 'chips'}, l1: 'ion-fe2', gas: 'H2', bubN: .5, eq: 'Fe + 2 HCl → FeCl₂ + H₂↑'},
@@ -55,6 +57,7 @@
 
   /* KLOCEK: zlewki-rx — kilka zlewek obok siebie, jeden przycisk „wrzuć” startuje wszystkie naraz (jak pracownia f06: litowce + woda). */
   var ZESTAWY = {
+    'stezone-kwasy': ['cukierH2so4', 'hno3Bialko', 'hno3Swiatlo', 'hclDymi'],
     'litowce-woda': ['liH2o', 'naH2o', 'kH2o'],
     'metale-hcl': ['mgHcl', 'znHcl', 'cuHcl'],
     'moc-kwasu': ['mgHcl', 'mgOcet'],
@@ -73,7 +76,7 @@
       if (!C.RXL) { host.textContent = 'Brak silniczka rx-lite.'; return; }
       var lista = opc.k ? String(opc.k).split(',').map(function (x) { return x.trim(); }) : (ZESTAWY[opc.zestaw] || ZESTAWY['metale-hcl']);
       var siatka = document.createElement('div');
-      siatka.style.cssText = 'display:grid;grid-template-columns:repeat(' + Math.min(3, lista.length) + ',minmax(0,1fr));gap:6px';   // zawsze obok siebie (też na telefonie)
+      siatka.style.cssText = 'display:grid;grid-template-columns:repeat(' + (lista.length === 4 ? 2 : Math.min(3, lista.length)) + ',minmax(0,1fr));gap:6px';   // zawsze obok siebie (też na telefonie)
       var ms = [];
       siatka.className = 'zrx';
       if (!document.getElementById('zrx-css')) { var st = document.createElement('style'); st.id = 'zrx-css'; st.textContent = '.zrx .cap{font-size:clamp(11px,3vw,14px);line-height:1.2}'; document.head.appendChild(st); }
