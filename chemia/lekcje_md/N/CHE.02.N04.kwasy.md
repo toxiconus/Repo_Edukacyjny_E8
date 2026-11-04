@@ -1377,11 +1377,8 @@ pK<sub>a</sub>′ układu CO₂/HCO₃⁻ w osoczu ≈ 6,1, a stosunek [HCO₃�
 Pojemność buforowa β = dn/dpH jest największa, gdy [HA] = [A⁻] (pH = pK<sub>a</sub>) i rośnie z całkowitym stężeniem buforu. Dlatego bufor wybiera się tak, by pK<sub>a</sub> leżało blisko żądanego pH (np. fosforanowy H₂PO₄⁻/HPO₄²⁻, pK<sub>a</sub> 7,2 — w biologii komórki; TRIS, HEPES — w laboratoriach biochemicznych).
 :::
 
-@model kw-bufor-v01 | Bufor octanowy kontra woda — dodawaj HCl i NaOH | pH-metry, wskaźnik uniwersalny, wykres · pKa z silnika · wyczerpanie pojemności
-@opis Porównanie buforu octanowego z wodą: do obu dodaje się porcjami HCl lub NaOH; pH wody zmienia się gwałtownie, pH buforu prawie stoi w miejscu, dopóki bufor nie wyczerpie swojej pojemności; widać pH-metry, wskaźnik i wykres. Wniosek: bufor utrzymuje prawie stałe pH, ale tylko do pewnej ilości dodanego kwasu lub zasady.
-
 @klocek bufor {} | Bufor octanowy kontra woda: dodawaj HCl i NaOH
-@opis Dwa pehametry obok siebie: w wodzie pH gwałtownie skacze po dodaniu 1 mmol HCl lub NaOH, a w buforze CH₃COOH + CH₃COONa zmienia się tylko o ułamek jednostki. Wniosek: bufor przeciwdziała zmianom pH, aż do wyczerpania.
+@opis Dwie zlewki z pehametrami obok siebie i wykres pH: po dodaniu kropel HCl lub NaOH pH wody gwałtownie skacze, a w buforze CH₃COOH + CH₃COONa zmienia się tylko o ułamek jednostki. Wniosek: bufor przeciwdziała zmianom pH, aż do wyczerpania.
 
 ## 16 | Doświadczenia {#doswiadczenia}
 

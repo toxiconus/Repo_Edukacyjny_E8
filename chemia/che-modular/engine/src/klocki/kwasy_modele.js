@@ -17,38 +17,68 @@
   function fenol(ph) { return ph <= 8.2 ? 'rgba(224,242,254,.55)' : ph >= 10 ? '#be185d' : mixc('#e0f2fe', '#be185d', (ph - 8.2) / 1.8); }
   var BOX = 'border:1px solid var(--border,#cbd5e1);border-radius:10px;padding:10px 12px;background:var(--surface-soft,#f6f8fa)';
 
-  /* ---------- bufor ---------- */
+  /* ---------- bufor (port kw-bufor-v01: fizyka z oryginału, pehametry, kropla = 0,05 cm³ 1 M, wykres, wyczerpanie) ---------- */
+  function zlewkaSvg(kol, etyk, ph) {
+    return '<svg viewBox="0 0 150 150" style="width:100%;max-width:170px;display:block;margin:0 auto">' +
+      '<path d="M30 20 L30 128 Q30 136 38 136 L92 136 Q100 136 100 128 L100 20" fill="rgba(186,230,253,.18)" stroke="var(--border-strong,#64748b)" stroke-width="2.5"/>' +
+      '<path d="M32 58 L32 128 Q32 134 38 134 L92 134 Q98 134 98 128 L98 58 Z" fill="' + kol + '" opacity=".85"/>' +
+      '<line x1="32" y1="58" x2="98" y2="58" stroke="rgba(255,255,255,.7)" stroke-width="1.5"/>' +
+      '<g><rect x="108" y="30" width="34" height="62" rx="6" fill="#1e293b"/><rect x="112" y="35" width="26" height="16" rx="2" fill="#a7f3d0"/>' +
+      '<text x="125" y="47" text-anchor="middle" font-size="10" font-weight="700" fill="#064e3b">' + fmt(ph, 1) + '</text>' +
+      '<text x="125" y="66" text-anchor="middle" font-size="7" fill="#cbd5e1">pH</text><rect x="122" y="92" width="6" height="40" fill="#94a3b8"/></g>' +
+      '<line x1="125" y1="132" x2="75" y2="132" stroke="#94a3b8" stroke-width="2" stroke-dasharray="3 2"/>' +
+      '<text x="65" y="148" text-anchor="middle" font-size="12" font-weight="700" fill="var(--text,#0f172a)">' + etyk + '</text></svg>';
+  }
   KLOCKI.def('bufor', {
-    opis: 'Bufor octanowy (CH₃COOH + CH₃COONa) i czysta woda: dodawanie porcji HCl lub NaOH i odczyt pH na dwóch pehametrach — bufor prawie nie zmienia pH, woda zmienia się gwałtownie.',
+    opis: 'Bufor octanowy (CH₃COOH + CH₃COONa) kontra czysta woda: dodawanie kropli HCl lub NaOH, dwa pehametry z barwą wskaźnika uniwersalnego, wykres pH oraz pozostała pojemność buforu; suwaki stężenia i stosunku [A⁻]/[HA].',
     domyslne: {},
     html: function (host) {
       host.style.display = 'block';
-      var pKa = 4.76, nHA = 10, nA = 10, x = 0;   // mmol; x = dodane mmol H+ (dodatnie) lub OH- (ujemne); 100 cm³ każdego roztworu
-      var bar = E('div', 'margin-bottom:6px'), out = E('div', 'display:grid;grid-template-columns:1fr 1fr;gap:10px'), info = E('div', 'font-size:14px;margin-top:8px');
-      function phB() {
-        var a = nA - x, ha = nHA + x;
-        if (x >= 0) { if (a > .05) return pKa + Math.log10(a / ha); return -Math.log10(Math.max(x - nA, 1e-6) / 100 * 1000 * 1e-3 * 1000 / 1000 / 1); }
-        if (ha > .05) return pKa + Math.log10(a / ha);
-        return 14 + Math.log10(Math.max(-x - nHA, 1e-6) / 100);
+      var pKa = 4.756, Vl = 0.1, drop = 5e-5, cb = 0.1, ratio = 1, n = 0, hist = {}, B0 = {};
+      function reset() { var nT = cb * Vl; B0.HA = nT / (1 + ratio); B0.A = nT - B0.HA; n = 0; hist = {}; rec(); }
+      function pHw() { var c = n * drop / Vl, h = (c + Math.sqrt(c * c + 4e-14)) / 2; return n >= 0 ? -Math.log10(h) : 14 + Math.log10((-c + Math.sqrt(c * c + 4e-14)) / 2); }
+      function pHb() {
+        var x = n * drop, cT = (B0.HA + B0.A) / Vl, Na = (B0.A + Math.max(0, -x)) / Vl, Cl = Math.max(0, x) / Vl, Ka = Math.pow(10, -pKa), lo = -14.5, hi = 0.5;
+        // bilans ładunku: [H+] + [Na+] − [Cl−] − [A−] − [OH−] = 0 (dla NaOH: dodatkowy Na+ kompensuje OH−)
+        var NaT = (B0.A + Math.max(0, -x)) / Vl;
+        for (var i = 0; i < 60; i++) { var m = (lo + hi) / 2, h = Math.pow(10, m), f = h + NaT - Cl - cT * Ka / (Ka + h) - 1e-14 / h; if (f > 0) hi = m; else lo = m; }
+        return -(lo + hi) / 2;
       }
-      function phW() { var e = Math.abs(x) / (100 + 1); return x === 0 ? 7 : x > 0 ? -Math.log10(e / 1) + 0 - 0 : 14 + Math.log10(e); }
-      function pomiar(nazwa, ph, opis) {
-        return '<div style="' + BOX + ';text-align:center"><b>' + nazwa + '</b><div style="font-size:11px;color:var(--muted,#5b6b73)">' + opis + '</div>' +
-          '<div style="height:34px;border-radius:6px;margin:8px 0;border:1px solid var(--border-strong,#94a3b8);background:' + uni(ph) + '"></div>' +
-          '<div style="font-size:26px;font-weight:700">pH ' + fmt(ph, 2) + '</div></div>';
+      function rec() { hist[n] = [n, pHw(), pHb()]; }
+      var bar = E('div', 'display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px'), zl = E('div', 'display:grid;grid-template-columns:1fr 1fr;gap:8px'),
+          sl = E('div', 'display:flex;flex-wrap:wrap;gap:12px;margin:8px 0;font-size:13px'), cv = E('canvas', 'width:100%;height:190px;display:block;border-radius:10px;background:var(--surface-soft,#f6f8fa)'), info = E('div', 'font-size:13.5px;margin-top:8px');
+      function dodaj(k) { return function () { for (var i = 0; i < Math.abs(k); i++) { n += k > 0 ? 1 : -1; rec(); } rys(); }; }
+      bar.append(U().btn('+ kropla HCl', dodaj(1)), U().btn('+ 10 kropli HCl', dodaj(10)), U().btn('+ kropla NaOH', dodaj(-1)), U().btn('+ 10 kropli NaOH', dodaj(-10)), U().btn('↺ od nowa', function () { reset(); rys(); }));
+      var r1 = E('input'), r2 = E('input'), o1 = E('b'), o2 = E('b'), l1 = E('label', '', 'stężenie buforu '), l2 = E('label', '', '[A⁻]/[HA] ');
+      r1.type = r2.type = 'range'; r1.min = .01; r1.max = .5; r1.step = .01; r1.value = cb; r2.min = -1; r2.max = 1; r2.step = .1; r2.value = 0;
+      l1.append(r1, o1); l2.append(r2, o2); sl.append(l1, l2);
+      r1.oninput = function () { cb = +r1.value; reset(); rys(); }; r2.oninput = function () { ratio = Math.pow(10, +r2.value); reset(); rys(); };
+      function wykres() {
+        var d = Math.min(2, window.devicePixelRatio || 1), W = cv.clientWidth || 500, H = cv.clientHeight || 190; cv.width = W * d; cv.height = H * d;
+        var x = cv.getContext('2d'); x.setTransform(d, 0, 0, d, 0, 0);
+        var L = 30, B = H - 22, R = W - 10, T = 10, mut = '#64748b', pts = Object.keys(hist).map(function (k) { return hist[k]; }).sort(function (a, b) { return a[0] - b[0]; });
+        var ks = pts.map(function (p) { return p[0]; }), kmin = Math.min.apply(null, [-5].concat(ks)), kmax = Math.max.apply(null, [5].concat(ks));
+        x.strokeStyle = mut; x.fillStyle = mut; x.font = '600 10px system-ui'; x.beginPath(); x.moveTo(L, T); x.lineTo(L, B); x.lineTo(R, B); x.stroke();
+        [0, 7, 14].forEach(function (p) { var y = B - (B - T) * p / 14; x.fillText(p, L - 16, y + 3); x.globalAlpha = .25; x.beginPath(); x.moveTo(L, y); x.lineTo(R, y); x.stroke(); x.globalAlpha = 1; });
+        x.textAlign = 'center'; x.fillText('← krople NaOH | krople HCl →', (L + R) / 2, H - 6);
+        var X = function (k) { return L + (R - L) * (k - kmin) / (kmax - kmin); }, Y = function (p) { return B - (B - T) * Math.max(0, Math.min(14, p)) / 14; };
+        [[1, '#2563eb', 'woda'], [2, '#16a34a', 'bufor']].forEach(function (sr) {
+          x.strokeStyle = x.fillStyle = sr[1]; x.lineWidth = 2.5; x.beginPath();
+          pts.forEach(function (p, i) { i ? x.lineTo(X(p[0]), Y(p[sr[0]])) : x.moveTo(X(p[0]), Y(p[sr[0]])); }); x.stroke();
+          pts.forEach(function (p) { x.beginPath(); x.arc(X(p[0]), Y(p[sr[0]]), 2.2, 0, 7); x.fill(); });
+          x.textAlign = 'left'; x.fillText(sr[2], R - 46, sr[0] === 1 ? T + 10 : T + 24);
+        });
       }
       function rys() {
-        // x w mmol na 100 cm³ roztworu: stężenie H⁺ w wodzie = x mmol / ~100 cm³ → x·10 mmol/dm³ → x/100 mol/dm³
-        var pw = x === 0 ? 7 : x > 0 ? -Math.log10(x / 100) : 14 + Math.log10(-x / 100);
-        var pb = phB();
-        if (x > nA) pb = -Math.log10((x - nA) / 100);
-        out.innerHTML = pomiar('Woda', pw, '100 cm³ H₂O') + pomiar('Bufor', pb, '100 cm³: 0,1 M CH₃COOH + 0,1 M CH₃COONa');
-        info.innerHTML = 'Dodano: <b>' + (x === 0 ? 'nic' : x > 0 ? fmt(x, 0) + ' mmol HCl (' + fmt(x, 0) + ' cm³ 1 M)' : fmt(-x, 0) + ' mmol NaOH (' + fmt(-x, 0) + ' cm³ 1 M)') + '</b>' +
-          '<br><span style="color:var(--muted,#5b6b73)">Bufor: CH₃COO⁻ wiąże dodane H⁺ (→ CH₃COOH), a CH₃COOH neutralizuje dodane OH⁻ (→ CH₃COO⁻ + H₂O). pH = pK<sub>a</sub> + log([sól]/[kwas]), więc zmienia się tylko o ułamek. Gdy bufor się wyczerpie (po ~10 mmol), pH spada lub rośnie gwałtownie.</span>';
+        var pw = pHw(), pb = pHb();
+        zl.innerHTML = '<div style="' + BOX + '">' + zlewkaSvg(uni(pw), 'woda', pw) + '</div><div style="' + BOX + '">' + zlewkaSvg(uni(pb), 'bufor', pb) + '</div>';
+        o1.textContent = fmt(cb, 2) + ' mol/dm³'; o2.textContent = fmt(ratio, 2);
+        var xx = n * drop, ha = B0.HA + xx, a = B0.A - xx, cap = Math.min(ha, a) / Math.max(B0.HA, B0.A);
+        info.innerHTML = '<b>Woda:</b> pH = ' + fmt(pw, 2) + ' · <b>Bufor:</b> pH = ' + fmt(pb, 2) + ' (pK<sub>a</sub> = ' + fmt(pKa, 2) + ') · pozostała pojemność buforu: <b>' + Math.round(Math.max(0, cap) * 100) + '%</b>' +
+          '<br><span style="color:var(--muted,#5b6b73)">Kropla = 0,05 cm³ 1 M w 100 cm³ roztworu. H⁺ reaguje z octanem: CH₃COO⁻ + H₃O⁺ → CH₃COOH + H₂O; OH⁻ z kwasem: CH₃COOH + OH⁻ → CH₃COO⁻ + H₂O. Gdy jednego składnika zabraknie, bufor przestaje działać i pH zmienia się gwałtownie.</span>';
+        wykres();
       }
-      function dodaj(d) { return function () { x = Math.max(-12, Math.min(12, x + d)); rys(); }; }
-      bar.append(U().btn('+ 1 mmol HCl', dodaj(1)), U().btn('+ 1 mmol NaOH', dodaj(-1)), U().btn('Od nowa', function () { x = 0; rys(); }));
-      host.append(bar, out, info); rys();
+      host.append(bar, zl, sl, cv, info); reset(); rys(); setTimeout(rys, 60);
     }
   });
 
