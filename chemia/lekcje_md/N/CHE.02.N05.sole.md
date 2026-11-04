@@ -646,7 +646,7 @@ Dla osadu MₐXᵦ: K<sub>sp</sub> = [M]ᵃ[X]ᵇ (np. AgCl: K<sub>sp</sub> = 1,
 
 ## 16 | Doświadczenia {#doswiadczenia}
 
-@model sole-doswiadczenia-v01 | Pracownia: doświadczenia z solami (GFX) — otrzymywanie soli, strącanie, wypieranie metali, cykl wapienny, hydrat, odczyn | Zlewki i probówki w silniku GFX · równania z CHE.REACTION i CHE.IONIC
+@klocek sole-doswiadczenia-v01 | Pracownia: doświadczenia z solami (GFX) — otrzymywanie soli, strącanie, wypieranie metali, cykl wapienny, hydrat, odczyn | Zlewki i probówki w silniku GFX · równania z CHE.REACTION i CHE.IONIC
 @opis Pracownia doświadczeń z solami: otrzymywanie soli różnymi metodami, strącanie osadów, wypieranie metali z roztworów soli, cykl wapienny, odwadnianie hydratu i badanie odczynu roztworów soli — zlewki i probówki w animacji z obserwacjami i równaniami. Wniosek: sole otrzymuje się wieloma sposobami, a ich reakcje przewiduje się z rozpuszczalności i aktywności metali.
 
 ::: karta understand | Format doświadczenia i „obserwacja ≠ wniosek”

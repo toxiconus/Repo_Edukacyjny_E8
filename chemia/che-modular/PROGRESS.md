@@ -296,3 +296,4 @@
 - 2026-11-04: N04 bez @model — reakcje-przewidz, wskazniki-statyw, tabela-rozpuszczalnosci, rownania-jonowe (klocki).
 - 2026-11-04: N03/N05 — indicatorRack→wskazniki-statyw, kw-reszty→kwasy-reszty, szereg→probowki-wybor, chain-scn→lancuch-przemian.
 - 2026-11-04: N03 n02-* → klocki (wodorotlenki_n02.js); N05 stechiometria.
+- 2026-11-04: pracownie n02-doswiadczenia i sole-doswiadczenia jako klocki rx-lite (pracownie_rx.js, 46 specyfikacji).

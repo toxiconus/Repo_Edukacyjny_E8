@@ -65,7 +65,8 @@
     "dysocjacja.js": "kw-dysocjacja-v01: dysocjacja kwasów na żywo (α, pH z Ka, wykres α(c), krok po kroku)",
     "miareczkowanie_biureta.js": "miareczkowanie-biureta: biureta + kolba + pH-metr + wskaźnik (fenoloftaleina/oranż)",
     "stechiometria.js": "stechiometria: kalkulator reakcji (n, m, V, tok), tryb limitujący",
-    "wodorotlenki_n02.js": "rodzina n02-*: wzory, przegląd, otrzymywanie, strącanie, zobojętnianie, dysocjacja, reaktor wodorotlenków"
+    "wodorotlenki_n02.js": "rodzina n02-*: wzory, przegląd, otrzymywanie, strącanie, zobojętnianie, dysocjacja, reaktor wodorotlenków",
+    "pracownie_rx.js": "pracownie rx-lite: n02-doswiadczenia-v01 (wodorotlenki), sole-doswiadczenia-v01 (sole)"
   },
   "lekcje": {
     "P01": [
@@ -105,6 +106,8 @@
     "N03": [
       "klocki.js",
       "pomocnicze.js",
+      "ui_klocki.js",
+      "model_widok.js",
       "naczynia.js",
       "dane/pierwiastki.js",
       "znaki.js",
@@ -113,14 +116,15 @@
       "uklad_okresowy.js",
       "karta_bhp.js",
       "schemat_przemian.js",
-      "ui_klocki.js",
-      "model_widok.js",
       "ruch_che.js",
       "ph_panel.js",
       "tabela_rozpuszczalnosci.js",
       "rownania_jonowe.js",
       "kwasy_modele.js",
-      "wodorotlenki_n02.js"
+      "wodorotlenki_n02.js",
+      "../lite/rx-lite.js",
+      "zlewka_rx.js",
+      "pracownie_rx.js"
     ],
     "LKO-KRZYWE": [
       "klocki.js",
@@ -412,11 +416,12 @@
     "N05": [
       "klocki.js",
       "pomocnicze.js",
+      "ui_klocki.js",
+      "model_widok.js",
       "naczynia.js",
       "bilans_rownania.js",
       "zbieranie_gazu.js",
       "karta_bhp.js",
-      "ui_klocki.js",
       "przewodnictwo.js",
       "tabela_rozpuszczalnosci.js",
       "rownania_jonowe.js",
@@ -424,7 +429,10 @@
       "probowki_odczyn.js",
       "probowki_wybor.js",
       "lancuch_przemian.js",
-      "stechiometria.js"
+      "stechiometria.js",
+      "../lite/rx-lite.js",
+      "zlewka_rx.js",
+      "pracownie_rx.js"
     ],
     "F02": [
       "klocki.js",

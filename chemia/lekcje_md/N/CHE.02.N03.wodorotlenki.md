@@ -1034,7 +1034,7 @@ Format egzaminacyjny: problem → hipoteza → sprzęt → przebieg → obserwac
 :::
 :::
 
-@model n02-doswiadczenia-v01 | Pracownia: 26 doświadczeń z wodorotlenkami — zlewka, równania, obserwacje, BHP | GFX.rx · D.REACTIONS · CHE.IONIC
+@klocek n02-doswiadczenia-v01 | Pracownia: 26 doświadczeń z wodorotlenkami — zlewka, równania, obserwacje, BHP | GFX.rx · D.REACTIONS · CHE.IONIC
 @opis Pracownia 26 doświadczeń z wodorotlenkami: zlewki w animacji z obserwacjami, równaniami i zasadami BHP — m.in. sód z wodą, CaO z wodą, strącanie Cu(OH)₂ i Fe(OH)₃, zobojętnianie z fenoloftaleiną, Al(OH)₃ z nadmiarem NaOH. Wniosek: właściwości wodorotlenków potwierdza się doświadczeniem.
 
 ::: dosw | Doświadczenie A — Otrzymywanie NaOH: sód + woda [[basic:E8]]
