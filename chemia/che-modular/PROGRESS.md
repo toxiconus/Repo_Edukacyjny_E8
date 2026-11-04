@@ -307,3 +307,4 @@
 - 2026-11-04: audyt ciemnego motywu klocków: --muted→--text-muted (18), tekst na akcencie var(--bg), kolory znaczenia z --c-*, pola układu okresowego; zasady 11–16 w STYL_WIZUALIZACJI.md; test narzedzia/test_kontrast_klockow.js (0 elementów o niskim kontraście w 12 klockach).
 - 2026-11-04: test kontrastu w ciemnym motywie dla wszystkich 74 klocków: z 20 klocków z problemem zostało 6 (fałszywe alarmy SVG). Naprawione: --panel/--line (nieistniejące), tekst na akcencie, pastelowe chipy tlenków, rx-lite .on.
 - 2026-11-04: test mobilny klocków (375 px): naprawione select (tlenki), siatka doświadczeń, stojaki palników; zostają tylko tabele z przewijaniem.
+- 2026-11-04: cele dotykowe: chipy ≥36 px na telefonie (lab.css), test narzedzia/test_dotyk_klockow.js; liczba klocków z małymi przyciskami 31→kilka (komórki tabel, checkboxy).
