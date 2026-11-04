@@ -195,7 +195,7 @@ Dla metali o zmiennej wartościowości podajemy ją cyfrą rzymską: FeCl₂ —
 > Dalsze przykłady: CuCl — chlorek miedzi(I), CuCl₂ — chlorek miedzi(II), SnCl₂ — chlorek cyny(II), SnCl₄ — chlorek cyny(IV), Pb(NO₃)₂ — azotan(V) ołowiu(II), MnSO₄ — siarczan(VI) manganu(II). Ta sama zasada działa w tlenkach: Cu₂O — tlenek miedzi(I), CuO — tlenek miedzi(II). W KMnO₄ i K₂Cr₂O₇ cyfra rzymska należy do reszty kwasowej (Mn VII, Cr VI), a potasu nie opisujemy.
 :::
 
-@model kw-reszty-v01 | Kwas → reszta kwasowa → sole: wzory i nazwy dla 13 metali | Silnik CHE · otwiera się w oknie
+@klocek kwasy-reszty {} | Kwas → reszta kwasowa → sole: wzory i nazwy dla 16 kationów
 @opis Model kwas → reszta kwasowa → sól: kwas dysocjuje, model pokazuje ładunek reszty kwasowej (np. SO₄²⁻, NO₃⁻, PO₄³⁻), a dla 13 metali tworzy wzory i nazwy soli z informacją o rozpuszczalności. Wniosek: ładunek reszty kwasowej równa się liczbie atomów wodoru oddanych przez kwas i wyznacza wzór soli.
 
 ## 4 | Dysocjacja soli [[basic:E8]] {#dysocjacja}
@@ -385,7 +385,7 @@ $$ Cu + Cl₂ → CuCl₂ (ogrzewanie)
 > Metal aktywniejszy (wcześniej w szeregu) wypiera mniej aktywny. Cu + ZnSO₄ — brak reakcji. Szczegóły w [§8](#wypieranie).
 :::
 
-@model chain-scn | Łańcuch przemian: pierwiastek → tlenek → kwas → sól | Silnik CHE · otwiera się w oknie
+@klocek lancuch-przemian {wezly="Na,Na2O,NaOH,NaCl" etyk="A,B,C"} | Łańcuch przemian: pierwiastek → tlenek → wodorotlenek → sól
 @opis Łańcuchy przemian przedstawione jako kolejne ogniwa: Na → Na₂O → NaOH → NaCl, S → SO₃ → H₂SO₄ → Na₂SO₄, C → CO₂ → H₂CO₃ i podobne, z równaniem każdego kroku. Wniosek: od pierwiastka przez tlenek do wodorotlenku lub kwasu i dalej do soli prowadzi ciąg typowych reakcji.
 
 ## 7 | Reakcje strąceniowe, zapis jonowy i wykrywanie jonów [[basic:E8]] {#stracanie}
@@ -479,7 +479,7 @@ To reakcja **redoks**: Fe oddaje elektrony (utlenia się), Cu²⁺ je przyjmuje 
 > Cu + FeSO₄ — brak reakcji (Cu stoi za Fe). Metale K, Ca, Na reagują najpierw z wodą — do wypierania się nie nadają.
 :::
 
-@model kw-szereg-metali-v01 | Szereg aktywności: metale w kwasie solnym | Silnik CHE · otwiera się w oknie
+@klocek probowki-wybor {zestaw="metale-hcl" wybrane="Mg,Zn,Fe,Cu" max="4"} | Szereg aktywności: metale w kwasie solnym
 @opis Cztery probówki z kwasem solnym i metalami Mg, Zn, Fe, Cu obok siebie: magnez reaguje najgwałtowniej, cynk wyraźnie, żelazo powoli, miedź wcale (brak pęcherzyków). Wniosek: z kwasów wodór wypierają tylko metale aktywniejsze od wodoru — szereg aktywności Mg > Zn > Fe > (H) > Cu.
 
 ## 9 | Hydraty [[understand:ROZUMIENIE]] {#hydraty}

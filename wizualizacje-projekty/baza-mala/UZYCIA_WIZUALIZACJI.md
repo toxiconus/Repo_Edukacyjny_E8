@@ -8,7 +8,7 @@ Liczenie: każde wystąpienie dyrektywy `@model`, `@viz`, `@klocek`, `@zlewka` (
 
 | Liczba wizualizacji w bazie | Użyte 0 razy | Użyte 1 raz | Użyte 2 lub więcej razy |
 |---|---|---|---|
-| 386 | 215 | 86 | 85 |
+| 386 | 219 | 80 | 87 |
 
 Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobnie literówki lub klucze pracowni): **64**: `-`, `bezkregowce-sylwetki`, `caoh2Co2`, `cuoH2so4`, `cuso4Naoh`, `cykl`, `drzewa-krzewy`, `drzewo-filogenetyczne`, `f02-czastki-v01`, `f04-nuklid-v01`, `fecl3Naoh`, `fotosynteza-oddychanie-krazenie`, `hclNaOH`, `jajo-porownanie`, `jajo-ptaka`, `kariotyp`, `komorki-porownanie`, `krazenie`, `krew-skladniki`, `kwiat-budowa`, `liscie-rodzaje`, `mapa-narzadow`, `mgO2`, `miesnie-trzy`, `mikroskop-budowa`, `mozg-budowa`, `mutacje-punktowe`, `naH2o`, `nablonki-rodzaje`, `nasiono-ziarniak`, `nefron-budowa`, `neuron-budowa`, `neurony-mielina`, `obieg-wegla`, `odpowiedz-immunologiczna`, `organelle-energetyczne`, `osmoza-komorka`, `owoce-rozsiewanie`, `piramida-ekologiczna`, `podzial-komorki-skrot`, `polip-meduza`, `preparat-mikroskopowy`, `przeksztalcenia-organow`, `przewod-pokarmowy`, `replikacja-dna`, `rodowod`, `rx-ag-cl`, `rx-cu-naoh`, `rx-fe-cuso4`, `ryba-budowa`, `serce-budowa`, `staw-czaszka`, `stawonogi-budowa`, `szereg`, `szkielet-czlowieka`, `szyszki-iglaste`, `tkanki-zwierzece`, `uklad-limfatyczny`, `uklad-oddechowy`, `wentylacja`, `wlasciwosci`, `wykres-dane`, `zab-budowa`, `zboza-klosy`
 
@@ -24,7 +24,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | 6 | `kw-doswiadczenia-v01` | CHE model | **10** | N04 ×10 |
 | 7 | `probowki-odczyn` | klocek | **10** | C4 ×3, N04 ×2, C2w_wzor_elementarny_rzeczywisty ×1, LKO_ORG02_alkeny ×1, LKO_ORG03_alkohole ×1, LKO_ORG04_glicerol ×1, LKO_ORG05_kwasy ×1 |
 | 8 | `n02-doswiadczenia-v01` | CHE model | **8** | N03 ×8 |
-| 9 | `probowki-wybor` | klocek | **7** | N04 ×2, C1c_kwasy_zasady_sole ×1, J03 ×1, N01 ×1, N02 ×1, X04 ×1 |
+| 9 | `probowki-wybor` | klocek | **8** | N04 ×2, C1c_kwasy_zasady_sole ×1, J03 ×1, N01 ×1, N02 ×1, N05 ×1, X04 ×1 |
 | 10 | `lancuch` | BIO | **6** | BIO.01.L004.organizacja_budowy_organizmu_od_komorki ×2, BIO.00.REV01.organizacja_i_chemizm_zycia ×1, BIO.01.L001.komorka ×1, BIO.02.L010.dna_od_zera ×1, BIO.02.L015.mejoza ×1 |
 | 11 | `rownania-jonowe` | klocek | **6** | J03 ×2, C1c_kwasy_zasady_sole ×1, N03 ×1, N04 ×1, N05 ×1 |
 | 12 | `stech-kalkulator-v01` | CHE model | **6** | C2m_mol_masa_molowa ×1, C3 ×1, F17 ×1, N02 ×1, N05 ×1, R07 ×1 |
@@ -37,17 +37,17 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | 19 | `fotosynteza-oddychanie` | BIO | **4** | BIO.00.REV01.organizacja_i_chemizm_zycia ×1, BIO.01.L006.fotosynteza_skad_roslina_bierze_materie ×1, BIO.01.L007.oddychanie_komorkowe_skad_komorka_bierze ×1, BIO.06.L091.atp_jak_komorka_magazynuje_energie ×1 |
 | 20 | `glukoza-wykres` | BIO | **4** | BIO.02.B2e.uklad_dokrewny ×1, BIO.02.B2g.homeostaza ×1, BIO.07.H01.homeostaza ×1, BIO.07.U10.uklad_dokrewny ×1 |
 | 21 | `kod-genetyczny` | BIO | **4** | BIO.02.L011.jak_dna_przechowuje_informacje ×1, BIO.02.L020.czym_sa_mutacje_i_jakie ×1, BIO.02.L021.powtorka_genetyki ×1, BIO.06.L090.extra_olimpijska ×1 |
-| 22 | `sprzezenie-zwrotne` | BIO | **4** | BIO.02.B2e.uklad_dokrewny ×1, BIO.02.B2g.homeostaza ×1, BIO.07.H01.homeostaza ×1, BIO.07.U10.uklad_dokrewny ×1 |
-| 23 | `trojkat-przeliczen` | klocek | **4** | C2m_mol_masa_molowa ×2, LKO_ORG08_mol_gazy ×2 |
-| 24 | `zbieranie-gazu` | klocek | **4** | N01 ×2, LKO_ORG08_mol_gazy ×1, N04 ×1 |
-| 25 | `caoH2o` | CHE gfx/reakcje | **3** | N02 ×1, N03 ×1, N05 ×1 |
-| 26 | `diagram-bohra` | klocek | **3** | C1c_konfiguracje_elektronowe ×1, F04 ×1, F06 ×1 |
-| 27 | `elektroskop` | klocek | **3** | FIZ01 ×3 |
-| 28 | `elektryzowanie` | klocek | **3** | FIZ01 ×3 |
-| 29 | `f01Odparowanie` | CHE zlewka (lite) | **3** | F01 ×1, F02 ×1, F03 ×1 |
-| 30 | `f03-rozdzielanie-v01` | CHE pracownia (lite) | **3** | F03 ×3 |
-| 31 | `kule-ladunek` | klocek | **3** | FIZ01 ×3 |
-| 32 | `lancuch-przemian` | klocek | **3** | N02 ×3 |
+| 22 | `lancuch-przemian` | klocek | **4** | N02 ×3, N05 ×1 |
+| 23 | `sprzezenie-zwrotne` | BIO | **4** | BIO.02.B2e.uklad_dokrewny ×1, BIO.02.B2g.homeostaza ×1, BIO.07.H01.homeostaza ×1, BIO.07.U10.uklad_dokrewny ×1 |
+| 24 | `trojkat-przeliczen` | klocek | **4** | C2m_mol_masa_molowa ×2, LKO_ORG08_mol_gazy ×2 |
+| 25 | `zbieranie-gazu` | klocek | **4** | N01 ×2, LKO_ORG08_mol_gazy ×1, N04 ×1 |
+| 26 | `caoH2o` | CHE gfx/reakcje | **3** | N02 ×1, N03 ×1, N05 ×1 |
+| 27 | `diagram-bohra` | klocek | **3** | C1c_konfiguracje_elektronowe ×1, F04 ×1, F06 ×1 |
+| 28 | `elektroskop` | klocek | **3** | FIZ01 ×3 |
+| 29 | `elektryzowanie` | klocek | **3** | FIZ01 ×3 |
+| 30 | `f01Odparowanie` | CHE zlewka (lite) | **3** | F01 ×1, F02 ×1, F03 ×1 |
+| 31 | `f03-rozdzielanie-v01` | CHE pracownia (lite) | **3** | F03 ×3 |
+| 32 | `kule-ladunek` | klocek | **3** | FIZ01 ×3 |
 | 33 | `mikroskop-model` | BIO | **3** | BIO.00.REV01.organizacja_i_chemizm_zycia ×1, BIO.01.L001.komorka ×1, BIO.01.L008.mikroskop_jak_obserwowac_komorke_a ×1 |
 | 34 | `n01-doswiadczenia-v01` | CHE model | **3** | N02 ×3 |
 | 35 | `palnik-gazowy` | klocek | **3** | LKO_ORG01_alkany ×1, N01 ×1, N02 ×1 |
@@ -82,25 +82,27 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | 64 | `kosmek-jelitowy` | BIO | **2** | BIO.02.B2b.uklad_pokarmowy ×1, BIO.07.U03.uklad_pokarmowy_i_odzywianie ×1 |
 | 65 | `krazenie-obiegi` | BIO | **2** | BIO.02.B10.powtorka_uklady_czlowieka ×1, BIO.07.U04.krazenie_krew_odpornosc ×1 |
 | 66 | `krzyzowka-mendla` | klocek | **2** | BIO.01.B1b.krzyzowki_mendel ×2 |
-| 67 | `lozysko-wymiana` | BIO | **2** | BIO.02.B2f.rozmnazanie_rozwoj ×1, BIO.07.U11.rozmnazanie_i_rozwoj ×1 |
-| 68 | `luk-odruchowy` | BIO | **2** | BIO.02.B2d.uklad_nerwowy_zmysly ×1, BIO.07.U08.uklad_nerwowy_i_zmysly ×1 |
-| 69 | `nefron` | BIO | **2** | BIO.02.B2c.oddychanie_wydalanie ×1, BIO.07.U06.oddychanie_i_wydalanie ×1 |
-| 70 | `nukleotyd` | BIO | **2** | BIO.02.L010.dna_od_zera ×1, BIO.02.L011.jak_dna_przechowuje_informacje ×1 |
-| 71 | `palniki` | klocek | **2** | F07 ×1, P01 ×1 |
-| 72 | `pary-zasad` | BIO | **2** | BIO.02.L010.dna_od_zera ×1, BIO.02.L011.jak_dna_przechowuje_informacje ×1 |
-| 73 | `poziomy-dna` | BIO | **2** | BIO.02.L010.dna_od_zera ×1, BIO.02.L012.jak_dna_jest_upakowane_w ×1 |
-| 74 | `prawo-coulomba` | klocek | **2** | FIZ01 ×2 |
-| 75 | `probowki` | klocek | **2** | N04 ×1, P01 ×1 |
-| 76 | `relacje-ekologiczne` | BIO | **2** | BIO.04.L042.jakie_relacje_panuja_miedzy_organizmami ×1, BIO.04.L044.powtorka_ekologii ×1 |
-| 77 | `siec-troficzna` | BIO | **2** | BIO.04.L041.jak_zapisac_lancuchy_i_sieci ×1, BIO.05.L050.powtorka_roczna ×1 |
-| 78 | `skora-przekroj` | BIO | **2** | BIO.02.B2a.skora_uklad_ruchu ×1, BIO.07.U01.skora_i_uklad_ruchu ×1 |
-| 79 | `staw-antagonizm` | BIO | **2** | BIO.02.B2a.skora_uklad_ruchu ×1, BIO.07.U01.skora_i_uklad_ruchu ×1 |
-| 80 | `synapsa` | BIO | **2** | BIO.02.B2d.uklad_nerwowy_zmysly ×1, BIO.07.U08.uklad_nerwowy_i_zmysly ×1 |
-| 81 | `transfuzja` | BIO | **2** | BIO.02.L019.dlaczego_grupy_krwi_nie_pasuja ×1, BIO.07.U04.krazenie_krew_odpornosc ×1 |
-| 82 | `trener-nici` | BIO | **2** | BIO.02.L010.dna_od_zera ×1, BIO.02.L013.jak_komorka_kopiuje_dna ×1 |
-| 83 | `uklad-rozrodczy` | BIO | **2** | BIO.02.B2f.rozmnazanie_rozwoj ×1, BIO.07.U11.rozmnazanie_i_rozwoj ×1 |
-| 84 | `wdech-wydech` | BIO | **2** | BIO.02.B2c.oddychanie_wydalanie ×1, BIO.07.U06.oddychanie_i_wydalanie ×1 |
-| 85 | `wymiana-gazowa` | BIO | **2** | BIO.02.B2c.oddychanie_wydalanie ×1, BIO.07.U06.oddychanie_i_wydalanie ×1 |
+| 67 | `kwasy-reszty` | klocek | **2** | N04 ×1, N05 ×1 |
+| 68 | `lozysko-wymiana` | BIO | **2** | BIO.02.B2f.rozmnazanie_rozwoj ×1, BIO.07.U11.rozmnazanie_i_rozwoj ×1 |
+| 69 | `luk-odruchowy` | BIO | **2** | BIO.02.B2d.uklad_nerwowy_zmysly ×1, BIO.07.U08.uklad_nerwowy_i_zmysly ×1 |
+| 70 | `nefron` | BIO | **2** | BIO.02.B2c.oddychanie_wydalanie ×1, BIO.07.U06.oddychanie_i_wydalanie ×1 |
+| 71 | `nukleotyd` | BIO | **2** | BIO.02.L010.dna_od_zera ×1, BIO.02.L011.jak_dna_przechowuje_informacje ×1 |
+| 72 | `palniki` | klocek | **2** | F07 ×1, P01 ×1 |
+| 73 | `pary-zasad` | BIO | **2** | BIO.02.L010.dna_od_zera ×1, BIO.02.L011.jak_dna_przechowuje_informacje ×1 |
+| 74 | `poziomy-dna` | BIO | **2** | BIO.02.L010.dna_od_zera ×1, BIO.02.L012.jak_dna_jest_upakowane_w ×1 |
+| 75 | `prawo-coulomba` | klocek | **2** | FIZ01 ×2 |
+| 76 | `probowki` | klocek | **2** | N04 ×1, P01 ×1 |
+| 77 | `relacje-ekologiczne` | BIO | **2** | BIO.04.L042.jakie_relacje_panuja_miedzy_organizmami ×1, BIO.04.L044.powtorka_ekologii ×1 |
+| 78 | `siec-troficzna` | BIO | **2** | BIO.04.L041.jak_zapisac_lancuchy_i_sieci ×1, BIO.05.L050.powtorka_roczna ×1 |
+| 79 | `skora-przekroj` | BIO | **2** | BIO.02.B2a.skora_uklad_ruchu ×1, BIO.07.U01.skora_i_uklad_ruchu ×1 |
+| 80 | `staw-antagonizm` | BIO | **2** | BIO.02.B2a.skora_uklad_ruchu ×1, BIO.07.U01.skora_i_uklad_ruchu ×1 |
+| 81 | `synapsa` | BIO | **2** | BIO.02.B2d.uklad_nerwowy_zmysly ×1, BIO.07.U08.uklad_nerwowy_i_zmysly ×1 |
+| 82 | `transfuzja` | BIO | **2** | BIO.02.L019.dlaczego_grupy_krwi_nie_pasuja ×1, BIO.07.U04.krazenie_krew_odpornosc ×1 |
+| 83 | `trener-nici` | BIO | **2** | BIO.02.L010.dna_od_zera ×1, BIO.02.L013.jak_komorka_kopiuje_dna ×1 |
+| 84 | `uklad-rozrodczy` | BIO | **2** | BIO.02.B2f.rozmnazanie_rozwoj ×1, BIO.07.U11.rozmnazanie_i_rozwoj ×1 |
+| 85 | `wdech-wydech` | BIO | **2** | BIO.02.B2c.oddychanie_wydalanie ×1, BIO.07.U06.oddychanie_i_wydalanie ×1 |
+| 86 | `wskazniki-statyw` | klocek | **2** | N03 ×1, N04 ×1 |
+| 87 | `wymiana-gazowa` | BIO | **2** | BIO.02.B2c.oddychanie_wydalanie ×1, BIO.07.U06.oddychanie_i_wydalanie ×1 |
 
 ## 3. Użyte jeden raz
 
@@ -112,7 +114,6 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 - `bufor` (klocek) → N04
 - `cacl2Na2co3` (CHE gfx/reakcje) → N05
 - `carbonate` (CHE gfx/sceny) → N04
-- `chain-scn` (CHE model) → N05
 - `destylacja` (klocek) → F03
 - `detektor-tlenku` (klocek) → N02
 - `endosymbioza` (BIO) → BIO.01.L001A.dodatek_ambitny_od_komorki_do
@@ -126,7 +127,6 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 - `f06Cl2Kbr` (CHE zlewka (lite)) → F06
 - `f17-bilans-v01` (CHE model) → F17
 - `gdzie-dna` (BIO) → BIO.02.L010.dna_od_zera
-- `gfx-scene-indicatorRack` (CHE model) → N03
 - `hardy-weinberg` (BIO) → BIO.06.L090.extra_olimpijska
 - `haworth` (klocek) → LKO_ORG07_cukry
 - `homeostaza` (BIO) → BIO.01.L002.powtorka_czlowiek
@@ -140,9 +140,6 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 - `konfiguracje` (klocek) → C1c_konfiguracje_elektronowe
 - `konstruktor-tlenku` (klocek) → N02
 - `kw-dysocjacja-v01` (CHE model) → N04
-- `kw-reszty-v01` (CHE model) → N05
-- `kw-szereg-metali-v01` (CHE model) → N05
-- `kwasy-reszty` (klocek) → N04
 - `kwasy-rozcienczanie` (klocek) → N04
 - `lancuch-poziomow` (klocek) → F01
 - `liH2o` (CHE gfx/reakcje) → F06
@@ -185,7 +182,6 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 - `ucho-droga` (BIO) → BIO.07.U08.uklad_nerwowy_i_zmysly
 - `uklad-okresowy` (klocek) → P01
 - `wirus-bakteria` (BIO) → BIO.00.REV02.roznorodnosc_zycia
-- `wskazniki-statyw` (klocek) → N04
 - `wykres-zdania` (POL) → POL.02.G12.czesci_zdania
 - `wykres-zlozonego` (POL) → POL.02.G15.zdania_wspolrzedne
 - `zlewka-predykcja` (klocek) → F01
@@ -217,6 +213,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 - `caoh2Hcl` (CHE gfx/reakcje: chemia)
 - `caoh2Na2co3` (CHE gfx/reakcje: chemia)
 - `carboxyl` (CHE model: Grupa karboksylowa — który H jest kwaśny)
+- `chain-scn` (CHE model: Łańcuch przemian: pierwiastek → tlenek → kwas → sól)
 - `chargeBar` (CHE gfx/naczynia: fizyka)
 - `chargedRod` (CHE gfx/naczynia: fizyka)
 - `che-spojnosc-v01` (CHE model: Spójność danych: silnik ↔ Atlas ↔ lekcje ↔ GFX)
@@ -283,6 +280,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 - `gfx-scene-gasCollection` (CHE model: Zbieranie gazu nad wodą)
 - `gfx-scene-heating` (CHE model: Ogrzewanie cieczy na trójnogu (palnik Bunsena))
 - `gfx-scene-indicator` (CHE model: Wskaźnik kwasowo-zasadowy w roztworze)
+- `gfx-scene-indicatorRack` (CHE model: Wskaźnik w siedmiu roztworach (statyw))
 - `gfx-scene-metanSpalanie` (CHE model: Spalanie metanu — zlewka odwrócona (H₂O) i woda wapienna (CO₂))
 - `gfx-scene-titration` (CHE model: Zobojętnianie: miareczkowanie HCl zasadą NaOH)
 - `h2sCuso4` (CHE zlewka (lite): lab-dane.json)
@@ -307,6 +305,8 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 - `kohHno3` (CHE gfx/reakcje: chemia)
 - `krzywe-rozpuszczalnosci` (klocek: krzywe_rozpuszczalnosci.js)
 - `kw-bufor-v01` (CHE model: Bufor octanowy kontra czysta woda — dodawaj kwas i zasadę)
+- `kw-reszty-v01` (CHE model: Kwas → reszta kwasowa → sole)
+- `kw-szereg-metali-v01` (CHE model: Szereg aktywności: Mg, Zn, Fe, Cu w kwasie solnym)
 - `kw-wlasciwosci-v01` (CHE model: Właściwości stężonych kwasów — pokazy)
 - `lab-beaker-v102` (CHE model: CHE.LAB — uniwersalna zlewka (pełny panel) · v1.02)
 - `lab-library-v001` (CHE model: Biblioteka elementów laboratorium · v1.0)
@@ -447,7 +447,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | `caoh2Na2co3` | CHE gfx/reakcje | 0 | — |
 | `carbonate` | CHE gfx/sceny | 1 | N04 ×1 |
 | `carboxyl` | CHE model | 0 | — |
-| `chain-scn` | CHE model | 1 | N05 ×1 |
+| `chain-scn` | CHE model | 0 | — |
 | `chargeBar` | CHE gfx/naczynia | 0 | — |
 | `chargedRod` | CHE gfx/naczynia | 0 | — |
 | `che-spojnosc-v01` | CHE model | 0 | — |
@@ -551,7 +551,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | `gfx-scene-gasCollection` | CHE model | 0 | — |
 | `gfx-scene-heating` | CHE model | 0 | — |
 | `gfx-scene-indicator` | CHE model | 0 | — |
-| `gfx-scene-indicatorRack` | CHE model | 1 | N03 ×1 |
+| `gfx-scene-indicatorRack` | CHE model | 0 | — |
 | `gfx-scene-metanSpalanie` | CHE model | 0 | — |
 | `gfx-scene-titration` | CHE model | 0 | — |
 | `glukoza-wykres` | BIO | 4 | BIO.02.B2e.uklad_dokrewny ×1, BIO.02.B2g.homeostaza ×1, BIO.07.H01.homeostaza ×1, BIO.07.U10.uklad_dokrewny ×1 |
@@ -605,10 +605,10 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | `kw-bufor-v01` | CHE model | 0 | — |
 | `kw-doswiadczenia-v01` | CHE model | 10 | N04 ×10 |
 | `kw-dysocjacja-v01` | CHE model | 1 | N04 ×1 |
-| `kw-reszty-v01` | CHE model | 1 | N05 ×1 |
-| `kw-szereg-metali-v01` | CHE model | 1 | N05 ×1 |
+| `kw-reszty-v01` | CHE model | 0 | — |
+| `kw-szereg-metali-v01` | CHE model | 0 | — |
 | `kw-wlasciwosci-v01` | CHE model | 0 | — |
-| `kwasy-reszty` | klocek | 1 | N04 ×1 |
+| `kwasy-reszty` | klocek | 2 | N04 ×1, N05 ×1 |
 | `kwasy-rozcienczanie` | klocek | 1 | N04 ×1 |
 | `lab-beaker-v102` | CHE model | 0 | — |
 | `lab-library-v001` | CHE model | 0 | — |
@@ -616,7 +616,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | `label` | CHE gfx/efekty | 0 | — |
 | `lancuch` | BIO | 6 | BIO.00.REV01.organizacja_i_chemizm_zycia ×1, BIO.01.L001.komorka ×1, BIO.01.L004.organizacja_budowy_organizmu_od_komorki ×2, BIO.02.L010.dna_od_zera ×1, BIO.02.L015.mejoza ×1 |
 | `lancuch-poziomow` | klocek | 1 | F01 ×1 |
-| `lancuch-przemian` | klocek | 3 | N02 ×3 |
+| `lancuch-przemian` | klocek | 4 | N02 ×3, N05 ×1 |
 | `li2oH2o` | CHE gfx/reakcje | 0 | — |
 | `liH2o` | CHE gfx/reakcje | 1 | F06 ×1 |
 | `linie-pola` | klocek | 1 | FIZ01 ×1 |
@@ -707,7 +707,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | `proba-kontrolna` | BIO | 1 | BIO.00.REV01.organizacja_i_chemizm_zycia ×1 |
 | `probowki` | klocek | 2 | N04 ×1, P01 ×1 |
 | `probowki-odczyn` | klocek | 10 | C2w_wzor_elementarny_rzeczywisty ×1, C4 ×3, LKO_ORG02_alkeny ×1, LKO_ORG03_alkohole ×1, LKO_ORG04_glicerol ×1, LKO_ORG05_kwasy ×1, N04 ×2 |
-| `probowki-wybor` | klocek | 7 | C1c_kwasy_zasady_sole ×1, J03 ×1, N01 ×1, N02 ×1, N04 ×2, X04 ×1 |
+| `probowki-wybor` | klocek | 8 | C1c_kwasy_zasady_sole ×1, J03 ×1, N01 ×1, N02 ×1, N04 ×2, N05 ×1, X04 ×1 |
 | `profil-energii` | klocek | 1 | C1c_wodorki_typy_reakcji ×1 |
 | `przeniesienie-protonu` | klocek | 1 | FIZ01 ×1 |
 | `przeobrazenie-owadow` | BIO | 1 | BIO.00.REV02.roznorodnosc_zycia ×1 |
@@ -783,7 +783,7 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | `watchGlass` | CHE gfx/naczynia | 0 | — |
 | `wdech-wydech` | BIO | 2 | BIO.02.B2c.oddychanie_wydalanie ×1, BIO.07.U06.oddychanie_i_wydalanie ×1 |
 | `wirus-bakteria` | BIO | 1 | BIO.00.REV02.roznorodnosc_zycia ×1 |
-| `wskazniki-statyw` | klocek | 1 | N04 ×1 |
+| `wskazniki-statyw` | klocek | 2 | N03 ×1, N04 ×1 |
 | `wykres-zdania` | POL | 1 | POL.02.G12.czesci_zdania ×1 |
 | `wykres-zlozonego` | POL | 1 | POL.02.G15.zdania_wspolrzedne ×1 |
 | `wymiana-gazowa` | BIO | 2 | BIO.02.B2c.oddychanie_wydalanie ×1, BIO.07.U06.oddychanie_i_wydalanie ×1 |
@@ -979,9 +979,9 @@ Identyfikatory w lekcjach, których nie ma w bazie (do sprawdzenia, prawdopodobn
 | chemia | LKO_pulapki_wapno_woda_wapienna | — |
 | chemia | N01 | `f01-doswiadczenia-v01` ×1, `f01WodaWapienna` ×1, `karta-bhp` ×1, `palnik-gazowy` ×1, `probowki-wybor` ×1, `zbieranie-gazu` ×2 |
 | chemia | N02 | `caoH2o` ×1, `caoh2Co2` ×1, `cuoH2so4` ×1, `czasteczki-3d` ×1, `detektor-tlenku` ×1, `konstruktor-tlenku` ×1, `lancuch-przemian` ×3, `mgO2` ×1, `n01-doswiadczenia-v01` ×3, `n01-spalanie-v01` ×1, `palenie` ×1, `palnik-gazowy` ×1, `probowki-wybor` ×1, `reaktor-tlenku` ×1, `stech-kalkulator-v01` ×1, `trend-tlenkow` ×1, `uklad-okresowy-54` ×1 |
-| chemia | N03 | `-` ×1, `aloh3Naoh` ×1, `caoH2o` ×1, `caoh2Co2` ×1, `cuso4Naoh` ×1, `fecl3Naoh` ×1, `gfx-scene-indicatorRack` ×1, `hclNaOH` ×1, `n02-doswiadczenia-v01` ×8, `n02-dysocjacja-v01` ×1, `n02-otrzymywanie-v01` ×1, `n02-przeglad-v01` ×1, `n02-reaktor-v01` ×1, `n02-stracanie-v01` ×1, `n02-wzory-v01` ×1, `n02-zobojetnianie-v01` ×1, `naH2o` ×1, `ph-indicators-v03` ×2, `rownania-jonowe` ×1, `tabela-rozpuszczalnosci` ×1 |
+| chemia | N03 | `-` ×1, `aloh3Naoh` ×1, `caoH2o` ×1, `caoh2Co2` ×1, `cuso4Naoh` ×1, `fecl3Naoh` ×1, `hclNaOH` ×1, `n02-doswiadczenia-v01` ×8, `n02-dysocjacja-v01` ×1, `n02-otrzymywanie-v01` ×1, `n02-przeglad-v01` ×1, `n02-reaktor-v01` ×1, `n02-stracanie-v01` ×1, `n02-wzory-v01` ×1, `n02-zobojetnianie-v01` ×1, `naH2o` ×1, `ph-indicators-v03` ×2, `rownania-jonowe` ×1, `tabela-rozpuszczalnosci` ×1, `wskazniki-statyw` ×1 |
 | chemia | N04 | `acid-rain-v01` ×1, `acidMetal` ×1, `bufor` ×1, `carbonate` ×1, `conductivity` ×2, `cuoH2so4` ×1, `dysocjacja-vs-jonizacja` ×1, `gra-klasyfikacja` ×1, `hclNaOH` ×1, `indicator` ×1, `karta-bhp` ×1, `kw-doswiadczenia-v01` ×10, `kw-dysocjacja-v01` ×1, `kwasy-reszty` ×1, `kwasy-rozcienczanie` ×1, `miareczkowanie-biureta` ×1, `ph-indicators-v03` ×1, `probowki` ×1, `probowki-odczyn` ×2, `probowki-wybor` ×2, `przewodnictwo` ×1, `reakcje-przewidz` ×1, `rownania-jonowe` ×1, `szereg` ×1, `tabela-rozpuszczalnosci` ×1, `titration-merged` ×1, `wlasciwosci` ×2, `wskazniki-statyw` ×1, `wzor-2d` ×6, `zbieranie-gazu` ×1, `zlewki-rx` ×16 |
-| chemia | N05 | `bacl2Na2so4` ×1, `cacl2Na2co3` ×1, `caoH2o` ×1, `chain-scn` ×1, `cuoH2so4` ×1, `cuso4Hydrate` ×1, `hclNaOH` ×1, `hyd-na2co3` ×1, `hyd-nh4cl` ×1, `ion-map-v02` ×1, `kw-reszty-v01` ×1, `kw-szereg-metali-v01` ×1, `na2co3Hcl` ×1, `przewodnictwo` ×1, `rownania-jonowe` ×1, `rx-ag-cl` ×2, `rx-cu-naoh` ×1, `rx-fe-cuso4` ×1, `sole-doswiadczenia-v01` ×14, `stech-kalkulator-v01` ×1, `tabela-rozpuszczalnosci` ×1 |
+| chemia | N05 | `bacl2Na2so4` ×1, `cacl2Na2co3` ×1, `caoH2o` ×1, `cuoH2so4` ×1, `cuso4Hydrate` ×1, `hclNaOH` ×1, `hyd-na2co3` ×1, `hyd-nh4cl` ×1, `ion-map-v02` ×1, `kwasy-reszty` ×1, `lancuch-przemian` ×1, `na2co3Hcl` ×1, `probowki-wybor` ×1, `przewodnictwo` ×1, `rownania-jonowe` ×1, `rx-ag-cl` ×2, `rx-cu-naoh` ×1, `rx-fe-cuso4` ×1, `sole-doswiadczenia-v01` ×14, `stech-kalkulator-v01` ×1, `tabela-rozpuszczalnosci` ×1 |
 | chemia | N06 | — |
 | chemia | N07 | — |
 | chemia | N08 | — |

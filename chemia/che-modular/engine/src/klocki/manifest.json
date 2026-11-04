@@ -116,7 +116,8 @@
       "ruch_che.js",
       "ph_panel.js",
       "tabela_rozpuszczalnosci.js",
-      "rownania_jonowe.js"
+      "rownania_jonowe.js",
+      "kwasy_modele.js"
     ],
     "LKO-KRZYWE": [
       "klocki.js",
@@ -408,13 +409,18 @@
     "N05": [
       "klocki.js",
       "pomocnicze.js",
+      "naczynia.js",
       "bilans_rownania.js",
       "zbieranie_gazu.js",
       "karta_bhp.js",
       "ui_klocki.js",
       "przewodnictwo.js",
       "tabela_rozpuszczalnosci.js",
-      "rownania_jonowe.js"
+      "rownania_jonowe.js",
+      "kwasy_modele.js",
+      "probowki_odczyn.js",
+      "probowki_wybor.js",
+      "lancuch_przemian.js"
     ],
     "F02": [
       "klocki.js",

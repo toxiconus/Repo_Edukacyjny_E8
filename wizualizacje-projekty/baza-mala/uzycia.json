@@ -396,9 +396,7 @@
   "acid-table": {},
   "beaker-prediction-enhanced": {},
   "carboxyl": {},
-  "chain-scn": {
-   "N05": 1
-  },
+  "chain-scn": {},
   "che-spojnosc-v01": {},
   "che-test-silnika-v01": {},
   "chem-profile10": {},
@@ -423,9 +421,7 @@
   "gfx-scene-gasCollection": {},
   "gfx-scene-heating": {},
   "gfx-scene-indicator": {},
-  "gfx-scene-indicatorRack": {
-   "N03": 1
-  },
+  "gfx-scene-indicatorRack": {},
   "gfx-scene-metanSpalanie": {},
   "gfx-scene-titration": {},
   "hf-paradox": {},
@@ -442,12 +438,8 @@
   "kw-dysocjacja-v01": {
    "N04": 1
   },
-  "kw-reszty-v01": {
-   "N05": 1
-  },
-  "kw-szereg-metali-v01": {
-   "N05": 1
-  },
+  "kw-reszty-v01": {},
+  "kw-szereg-metali-v01": {},
   "kw-wlasciwosci-v01": {},
   "lab-beaker-v102": {},
   "lab-library-v001": {},
@@ -774,7 +766,8 @@
    "N02": 1
   },
   "lancuch-przemian": {
-   "N02": 3
+   "N02": 3,
+   "N05": 1
   },
   "karta-bhp": {
    "C1c_kwasy_zasady_sole": 1,
@@ -836,10 +829,12 @@
    "N04": 1
   },
   "wskazniki-statyw": {
+   "N03": 1,
    "N04": 1
   },
   "kwasy-reszty": {
-   "N04": 1
+   "N04": 1,
+   "N05": 1
   },
   "kwasy-rozcienczanie": {
    "N04": 1
@@ -859,6 +854,7 @@
    "N01": 1,
    "N02": 1,
    "N04": 2,
+   "N05": 1,
    "X04": 1
   },
   "elektryzowanie": {
@@ -1271,6 +1267,7 @@
   "acid-table",
   "beaker-prediction-enhanced",
   "carboxyl",
+  "chain-scn",
   "che-spojnosc-v01",
   "che-test-silnika-v01",
   "chem-profile10",
@@ -1295,6 +1292,7 @@
   "gfx-scene-gasCollection",
   "gfx-scene-heating",
   "gfx-scene-indicator",
+  "gfx-scene-indicatorRack",
   "gfx-scene-metanSpalanie",
   "gfx-scene-titration",
   "hf-paradox",
@@ -1302,6 +1300,8 @@
   "ka-pka-table",
   "kinetics-v01",
   "kw-bufor-v01",
+  "kw-reszty-v01",
+  "kw-szereg-metali-v01",
   "kw-wlasciwosci-v01",
   "lab-beaker-v102",
   "lab-library-v001",
@@ -1484,12 +1484,8 @@
  ],
  "jeden": [
   "acid-rain-v01",
-  "chain-scn",
-  "gfx-scene-indicatorRack",
   "ion-map-v02",
   "kw-dysocjacja-v01",
-  "kw-reszty-v01",
-  "kw-szereg-metali-v01",
   "n01-spalanie-v01",
   "n02-dysocjacja-v01",
   "n02-otrzymywanie-v01",
@@ -1528,8 +1524,6 @@
   "profil-energii",
   "haworth",
   "bufor",
-  "wskazniki-statyw",
-  "kwasy-reszty",
   "kwasy-rozcienczanie",
   "regula-krzyzowa",
   "schemat-przemian",
@@ -1593,6 +1587,8 @@
   "krzyzowka-mendla",
   "kalkulator-mola",
   "probowki-odczyn",
+  "wskazniki-statyw",
+  "kwasy-reszty",
   "probowki-wybor",
   "elektryzowanie",
   "kule-ladunek",

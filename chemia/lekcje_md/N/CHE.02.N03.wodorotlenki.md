@@ -416,7 +416,7 @@ Przesuwaj suwak lub klikaj wartości na skali. Zobaczysz jednocześnie kolor roz
 
 #### Laboratorium wskaźników — przewidź i sprawdź {.merge-h}
 
-@model gfx-scene-indicatorRack | Wskaźnik w siedmiu roztworach — przewidź barwę, potem sprawdź | Scena GFX · barwy wskaźników z CHE.COLORS
+@klocek wskazniki-statyw | Wskaźnik w siedmiu roztworach — przewidź barwę, potem sprawdź
 @opis Siedem probówek z różnymi roztworami i wskaźnikiem: najpierw przewidujesz barwę, potem animacja pokazuje rzeczywiste barwy zależne od odczynu każdego roztworu. Wniosek: barwa wskaźnika zależy od odczynu roztworu, nie od jego wyglądu.
 
 > **Uwaga:** Cu(OH)₂ w wodzie to zawiesina, nie jednorodny roztwór. Znikoma rozpuszczona część może wpływać na odczyn, ale nie traktuj zawiesiny jak roztworu NaOH.
