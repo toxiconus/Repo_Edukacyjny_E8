@@ -57,7 +57,7 @@ Przed napisaniem nowego klocka sprawdź tu rodzinę i użycia — nie twórz dub
 | `palnik-gazowy` | palnik_gazowy.js | Palnik gazowy (metan): płomień pod zlewką odwróconą z kroplami H₂O, zlewka kontrolna i woda wapienna mętniejąca od CO₂. | {etap: 2, szer: 560, wys: 340, anim: 1} | LKO×1, N01×1, N02×1 |
 | `palniki` | palniki.js |  | {seria: 'plomien'} | F07×1, P01×1 |
 | `petla-regulacji` | petla_regulacji.js | Pętla regulacji z pięciu elementów (bodziec, receptor, ośrodek, efektor, efekt) z krążącym impulsem. | {zestaw: 'temperatura', szer: 560, wys: 340} | — |
-| `ph-indicators-v03` | ph_panel.js | Panel pH — wskaźniki, roztwory, drabinka · v0.05 | (port; opcje z widoku) | N04×1 |
+| `ph-indicators-v03` | ph_panel.js | Panel pH — wskaźniki, roztwory, drabinka · v0.05 | (port; opcje z widoku) | N03×1, N04×1 |
 | `plomien` | plomien.js | Płomień palnika: barwa powoli zmienia się z pomarańczowej w barwę metalu. | {metal: 'Na', barwa: '#f59e0b', nazwa: 'Na — żółty', szer: 480, wys: 3 | — |
 | `prawo-coulomba` | fizyka_elektrostatyka.js | Siła Coulomba F = k·q₁·q₂/(εr·r²): suwaki zmieniają ładunki, odległość i ośrodek; wykres F(r) z zaznaczonym punktem. | {q1: 2, q2: 3, r: 10} | FIZ01×2 |
 | `probowki` | probowki.js |  | {metale: 'Li,K,Ca', wskaznik: 1} | N04×1, P01×1 |
@@ -65,7 +65,7 @@ Przed napisaniem nowego klocka sprawdź tu rodzinę i użycia — nie twórz dub
 | `probowki-wybor` | probowki_wybor.js | Kilka probówek naraz; uczeń wybiera metale lub odczynniki, a pod spodem widzi równanie jonowe skrócone. | {zestaw: 'metale-hcl', wybrane: '', kat: 0, max: 4, szer: 480, wys: 30 | C1c×1, J03×1, N01×1, N02×1, N04×2, X04×1 |
 | `profil-energii` | profil_energii.js | Profil energii reakcji: krzywa od substratów przez energię aktywacji do produktów; różnica poziomów to ΔH; katalizator obniża Eₐ. | {typ: 'egzo'} | C1c×1 |
 | `przeniesienie-protonu` | jony_w_wodzie.js | Kwas w wodzie: jon H⁺ (proton) przeskakuje z cząsteczki kwasu na cząsteczkę wody, tworząc H₃O⁺ i resztę kwasową. | {kwas: 'HCl'} | FIZ01×1, N04×1 |
-| `przewodnictwo` | przewodnictwo.js | Tester przewodnictwa i elektroliza: wybierasz roztwór, włączasz prąd; żarówka świeci tylko dla elektrolitów, na elektrodach pojawiają się gazy, a w modelu jony wędrują do | {roztwor: 'HCl'} | FIZ01×1, N04×1 |
+| `przewodnictwo` | przewodnictwo.js | Tester przewodnictwa i elektroliza: wybierasz roztwór, włączasz prąd; żarówka świeci tylko dla elektrolitów, na elektrodach pojawiają się gazy, a w modelu jony wędrują do | {roztwor: 'HCl'} | FIZ01×1, N04×1, N05×1 |
 | `przewodnik-izolator` | fizyka_elektrostatyka.js | Pręt z naładowanym końcem: w przewodniku ładunek rozpływa się po całej długości, w izolatorze pozostaje w miejscu dotyku. | {} | FIZ01×1 |
 | `reaktor-tlenku` | okresowy_tlenki.js | Reaktor przewidywania: wybierasz tlenek i odczynnik (woda, kwas, zasada), zapisujesz przewidywanie, a model pokazuje, czy reakcja zachodzi, wraz z uzasadnieniem z charakt | {tlenek: 'CaO'} | N02×1 |
 | `regula-krzyzowa` | regula_krzyzowa.js | Reguła krzyżowa i huśtawka mas: dla dwóch roztworów i stężenia docelowego pokazuje różnice po przekątnych, stosunek mas, masy w gramach i kontrolę bilansem. | {} | R03A×1 |

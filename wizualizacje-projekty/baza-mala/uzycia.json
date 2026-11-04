@@ -421,9 +421,7 @@
    "N04": 1
   },
   "gfx-scene-carbonate": {},
-  "gfx-scene-conductivity": {
-   "N05": 1
-  },
+  "gfx-scene-conductivity": {},
   "gfx-scene-dilution": {
    "N04": 1
   },
@@ -768,7 +766,8 @@
   },
   "przewodnictwo": {
    "FIZ01": 1,
-   "N04": 1
+   "N04": 1,
+   "N05": 1
   },
   "bilans-spalania": {
    "LKO_ORG01_alkany": 1
@@ -1307,6 +1306,7 @@
   "flow-egzamin-enhanced",
   "flow-naming",
   "gfx-scene-carbonate",
+  "gfx-scene-conductivity",
   "gfx-scene-gasCollection",
   "gfx-scene-heating",
   "gfx-scene-indicator",
@@ -1498,7 +1498,6 @@
   "acid-rain-v01",
   "chain-scn",
   "gfx-scene-acidMetal",
-  "gfx-scene-conductivity",
   "gfx-scene-dilution",
   "gfx-scene-titration",
   "ion-map-v02",

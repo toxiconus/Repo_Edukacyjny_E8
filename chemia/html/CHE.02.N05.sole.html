@@ -646,6 +646,70 @@ body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
 .rownanie{margin:12px 0;padding:12px 16px;border-radius:var(--r-md);background:var(--surface-soft);border:1px solid var(--border);font:600 17px/1.6 Inter,system-ui,sans-serif;text-align:center;overflow-x:auto;white-space:nowrap}
 .rownanie small{display:block;font-size:12px;font-weight:500;color:var(--text-muted);white-space:normal}
 
+/* Styl klocków laboratoryjnych (palniki, probówki, układ okresowy) — dobrany do motywu che:
+   jasna karta lekcji (--surface), akcent --accent, tekst --text. Scena z płótnem zostaje ciemna
+   (płomienie i poświaty wyglądają na ciemnym tle), reszta jak w sekcjach lekcji. */
+:root{--lab:#0e2326;--lab-tekst:var(--text,#1a2332);--lab-cisza:var(--text-muted,#8892a0);--lab-linia:var(--border,#e5e9ee)}
+.lab{background:var(--surface,#fff);color:var(--text,#1a2332);border:1px solid var(--border,#e5e9ee);border-radius:var(--r-lg,14px);padding:16px;box-shadow:var(--sh-sm,none);font-family:var(--tekst,Inter,system-ui,sans-serif)}
+.lab-pasek{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between;margin-bottom:12px}
+.lab-pasek .btn{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+.lab-cisza{color:var(--text-muted,#8892a0);font-size:14px}
+.btn{appearance:none;cursor:pointer;border:1px solid var(--accent,#0d6868);background:var(--accent,#0d6868);color:#fff;border-radius:var(--r-md,10px);padding:8px 14px;font:600 13px var(--tekst,Inter,sans-serif)}
+.btn.jasny{background:var(--surface,#fff);color:var(--accent,#0d6868)}
+.btn:hover{filter:brightness(1.08)}
+.btn:focus-visible{outline:2px solid var(--accent,#0d6868);outline-offset:2px}
+.btn[disabled]{opacity:.4;cursor:not-allowed}
+.stacje{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.st{display:flex;flex-direction:column;background:none;border:none;padding:0;min-width:0}
+.st-opis{margin-top:auto;display:flex;flex-direction:column;justify-content:flex-end}
+.st canvas,.rack canvas{display:block;width:100%;height:auto;cursor:pointer;background:var(--lab,#0e2326);border-radius:var(--r-md,10px);margin:6px 0 4px}
+.rack{margin:0 auto}
+.rack-kol{display:grid;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));gap:8px}
+.rack-ce{padding:0 6px;min-width:0;display:flex;flex-direction:column}
+.rack-ce.st-opis{justify-content:flex-end}
+.rack .wyb-gr{display:none}
+.rack .rown{font-size:14px}
+.rack-ce .btn,.st .btn{padding:6px 10px;font-size:12px}
+.st-opis{font-size:14px;color:var(--text,#1a2332)}
+.st-opis p{margin:0 0 6px}
+.rown{font:600 15px var(--naglowek,Inter,sans-serif);color:var(--text,#1a2332)}
+.obs{font-size:14px;color:var(--text-soft,#4a5568)}
+.meta{font-size:12.5px;color:var(--text-muted,#8892a0);display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-bottom:8px}
+.meta .pasek{background:var(--border,#e5e9ee);width:90px;height:8px;display:inline-block;vertical-align:middle;margin-left:6px;border-radius:99px;overflow:hidden}
+.meta .pasek i{display:block;height:100%;background:var(--accent,#0d6868)}
+.ostrz{color:var(--c-error,#b83a45);font-size:13px}
+.zak{display:flex;gap:10px;align-items:center;background:var(--c-warn-bg,#fcf4e6);border:1px solid var(--c-warn-line,#eed8a8);border-radius:var(--r-md,10px);padding:8px 10px;font-size:13px;line-height:1.35;margin:8px 0;color:var(--text,#1a2332)}
+.zak-ik{display:flex;gap:4px;flex:none}
+.el .tr{position:absolute;right:2px;bottom:2px;display:flex}
+.sz{position:relative}
+.sz .tr{position:absolute;top:2px;right:2px;display:flex}
+.tr2{display:flex;font-style:normal;margin-left:auto}
+.kol{display:flex;align-items:center;gap:10px;font-size:15px;color:var(--text,#1a2332)}
+.sw{width:20px;height:20px;border-radius:50%;flex:none;box-shadow:0 0 12px var(--glow,transparent)}
+.sw.pusty{border:2px dashed var(--border-strong,#cdd5dd)}
+.wyb-sym{position:relative;min-width:0}
+.wyb-sym>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:6px;font:700 15px var(--naglowek,Inter,sans-serif);color:var(--text,#1a2332);padding:4px 8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-sm,6px);background:var(--surface,#fff)}
+.wyb-sym>summary::-webkit-details-marker{display:none}
+.wyb-tri{display:inline-block;font-size:11px;color:var(--accent,#0d6868);transition:transform .15s}
+.wyb-sym[open] .wyb-tri{transform:rotate(90deg)}
+.wyb-lista{display:grid;gap:6px;margin:6px 0 8px;padding:8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-md,10px);background:var(--surface,#fff)}
+.wyb-g{display:block;font-size:11px;color:var(--text-muted,#8892a0);margin-bottom:3px}
+.wyb-sy{appearance:none;cursor:pointer;border:1px solid var(--border-strong,#cdd5dd);background:var(--surface-soft,#f6f8fa);color:var(--text,#1a2332);border-radius:var(--r-sm,6px);padding:4px 9px;margin:0 4px 4px 0;font:600 13px var(--naglowek,Inter,sans-serif)}
+.wyb-sy[aria-pressed="true"]{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+/* telefon: kilka stojaków obok siebie — węższy tekst, łamanie długich nazw */
+.kol{min-width:0}
+.kol b{overflow-wrap:anywhere;min-width:0}
+.st-opis{font-size:13px}
+.kol{font-size:14px}
+.stacje{gap:8px}
+.rack-kol{gap:6px}
+@media (max-width:480px){.st-opis .obs{font-size:12.5px}.st .btn,.rack-ce .btn{padding:5px 8px;font-size:12px}}
+.seria-przyciski{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
+.seria-btn[aria-pressed="false"]{background:transparent;color:var(--accent,#0d6868)}
+.seria-btn[aria-pressed="true"]{background:var(--accent,#0d6868);color:#fff}
+.seria-opis{margin:0 0 10px;font-size:14px;color:var(--lab-cisza,#8892a0)}
+
+
 </style>
 </head>
 <body>
@@ -858,7 +922,7 @@ body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
 <details class="adv"><summary>Czy każda sól jest mocnym elektrolitem? <span class="adv-tag">poziom akademicki · poza maturą rozszerzoną</span></summary><div class="adv-body">
 <p>Szkolna reguła „sole są mocnymi elektrolitami” ma wyjątki: niektóre sole metali ciężkich istnieją w roztworze częściowo jako cząsteczki lub kompleksy, np. HgCl₂, który w roztworze występuje głównie w postaci cząsteczek.</p>
 </div></details>
-<div class="che-lesson-viz-ref" data-che-lesson-viz="gfx-scene-conductivity"><button type="button" data-che-open-viz="gfx-scene-conductivity" onclick="parent.postMessage({type:'CHE_LESSON_OPEN_VISUAL',visualId:'gfx-scene-conductivity',lessonId:'N05'},'*')"><b>Przewodzenie prądu: elektrolity i dysocjacja</b><span>Scena GFX · tester przewodnictwa</span></button></div>
+<figure class="lk-fig" data-klocek="przewodnictwo" data-opt="{&quot;roztwor&quot;: &quot;NaCl&quot;}"><div class="lk-fig-body"></div><figcaption>Przewodzenie prądu: elektrolity i dysocjacja</figcaption></figure>
 <!-- OPIS: Tester przewodnictwa z żarówką zanurzany w różnych cieczach: w roztworach kwasów, zasad i soli żarówka świeci (jasność zależy od liczby jonów), w wodzie destylowanej i roztworze cukru nie świeci; obok model ruchomych jonów. Wniosek: prąd w roztworze przewodzą jony powstałe w dysocjacji. -->
 </section>
 <section id="rozpuszczalnosc">
@@ -1657,6 +1721,548 @@ body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
 <footer class="footer"><p><strong>CHEMIA N04 v1.1 MASTER LAB</strong> · Sole · 2026</p></footer>
 </main>
 <script>
+/* KLOCKI — lekkie komponenty wielokrotnego użytku dla lekcji (bez silnika).
+   Każdy klocek: KLOCKI.def(nazwa, {opis, dane, rysuj(canvas, stan, t)}) — rejestr,
+   KLOCKI.montuj(host, nazwa, opcje) — tworzy canvas, autostart gdy widoczny,
+   klik zatrzymuje/wznawia. Lekcja wymienia klocki w manifeście (klocki/manifest). */
+(function (g) {
+  var reg = {};
+  /* JEDEN zegar animacji dla wszystkich klocków: jedna pętla rAF, funkcje fn(now, dt); pętla stoi, gdy nikt nie gra. */
+  var zegar = (function () {
+    var fns = [], id = 0, ost = 0;
+    function petla(now) {
+      var dt = Math.min(0.05, (now - ost) / 1000); ost = now;
+      fns.slice().forEach(function (f) { try { f(now, dt); } catch (e) { } });
+      id = fns.length ? requestAnimationFrame(petla) : 0;
+    }
+    return {
+      dodaj: function (f) { if (fns.indexOf(f) < 0) fns.push(f); if (!id) { ost = performance.now(); id = requestAnimationFrame(petla); } },
+      usun: function (f) { var i = fns.indexOf(f); if (i >= 0) fns.splice(i, 1); },
+      liczba: function () { return fns.length; }
+    };
+  })();
+  var RM_ = !!(g.matchMedia && g.matchMedia('(prefers-reduced-motion: reduce)').matches);   // użytkownik prosi o brak animacji: bez autostartu
+  function def(nazwa, k) { reg[nazwa] = k; }
+  function montuj(host, nazwa, opc) {
+    var k = reg[nazwa];
+    if (!k) { host.textContent = 'Brak klocka: ' + nazwa; return null; }
+    opc = Object.assign({}, k.domyslne || {}, opc || {});
+    if (k.html) { host.innerHTML = ''; k.html(host, opc); return null; }
+    var c = document.createElement('canvas');
+    c.width = opc.szer || 480; c.height = opc.wys || 300;
+    c.style.width = '100%'; c.style.maxWidth = c.width + 'px'; c.style.height = 'auto';
+    c.setAttribute('role', 'img');
+    c.setAttribute('aria-label', (opc.opis || k.opis || nazwa));
+    host.innerHTML = ''; host.appendChild(c);
+    var stan = Object.assign({}, k.stan0 ? k.stan0(opc) : {}, {opc: opc});
+    var ctx = c.getContext('2d'), t0 = performance.now(), grane = false;   // start() dodaje klocek do wspólnego zegara (IO albo od razu)
+    function klatka(now) {
+      try { k.rysuj(ctx, c.width, c.height, stan, (now - t0) / 1000, opc); } catch (e) { }
+    }
+    function start() { if (!grane) { grane = true; t0 = performance.now() - (stan._t || 0) * 1000; zegar.dodaj(klatka); } }
+    function stop() { if (grane) { stan._t = (performance.now() - t0) / 1000; } grane = false; zegar.usun(klatka); }
+    c.addEventListener('click', function () { grane ? stop() : start(); });
+    if ('IntersectionObserver' in g && !RM_) {
+      var io = new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? start() : stop(); }); });
+      io.observe(c);
+    } else if (!RM_) { start(); }
+    k.rysuj(ctx, c.width, c.height, stan, 0, opc);
+    return {stop: stop, start: start, stan: stan, canvas: c};
+  }
+  g.KLOCKI = {def: def, montuj: montuj, zegar: zegar, nazwy: function () { return Object.keys(reg); }};
+})(window);
+
+/* KLOCKI — wspólne narzędzia (kolejność: pierwsze w manifeście). Wyciągnięte z animacji P01. */
+/* ---------------------------- narzędzia ---------------------------- */
+var RM = !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
+function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+function sm(v) { v = clamp(v, 0, 1); return v * v * (3 - 2 * v); }
+function cap(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
+function hex2rgb(h) { var n = parseInt(h.slice(1), 16); return [n >> 16 & 255, n >> 8 & 255, n & 255]; }
+function rgba(h, a) { var c = hex2rgb(h); return 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ',' + a + ')'; }
+function mixHex(a, b, k) {
+  var A = hex2rgb(a), B = hex2rgb(b);
+  return '#' + [0, 1, 2].map(function (i) { return ('0' + Math.round(A[i] + (B[i] - A[i]) * k).toString(16)).slice(-2); }).join('');
+}
+function rr(x, a, b, w, h, r) {
+  x.beginPath(); x.moveTo(a + r, b); x.arcTo(a + w, b, a + w, b + h, r); x.arcTo(a + w, b + h, a, b + h, r);
+  x.arcTo(a, b + h, a, b, r); x.arcTo(a, b, a + w, b, r); x.closePath();
+}
+
+
+/* ---------------------------- pętla animacji ---------------------------- */
+// jeden zegar: KLOCKI.zegar (klocki.js); uchwyt h ma metodę krok(dt)
+function wlacz(h) { if (!h._z) h._z = function (now, dt) { h.krok(dt); }; KLOCKI.zegar.dodaj(h._z); }
+function wylacz(h) { if (h._z) KLOCKI.zegar.usun(h._z); }
+function podepnij(canvas, h) {
+  h.rysuj();
+  if ('IntersectionObserver' in window && !RM) {
+    new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? wlacz(h) : wylacz(h); }); }, {threshold: .05}).observe(canvas);
+  } else if (!RM) wlacz(h);
+}
+
+
+function parsujListe(txt, dozwolone, domyslne) {
+  var l = String(txt || '').split(',').map(function (s) { return s.trim(); }).filter(function (s) { return dozwolone[s]; });
+  return (l.length ? l : domyslne).slice(0, 3);
+}
+
+
+/* Wybór pierwiastka: tylko symbole, a znacznik ▸ pokazuje, że lista się rozwija (bez pełnych nazw obok). */
+function wyborSymbole(grupy, start, onChange, etykieta) {
+  var box = el('details', 'wyb-sym'), sum = el('summary', null), cur = el('span', 'wyb-cur', start);
+  sum.appendChild(cur); sum.appendChild(el('span', 'wyb-tri', '▸')); box.appendChild(sum);
+  var lst = el('div', 'wyb-lista'), btns = [];
+  lst.setAttribute('role', 'listbox'); lst.setAttribute('aria-label', etykieta || 'Wybór pierwiastka');
+  var NAG = {1: 'Litowce', 2: 'Berylowce', 3: 'Tlenki berylowców'};
+  Object.keys(grupy).forEach(function (g) {
+    var w = el('div', 'wyb-grupa'); w.appendChild(el('span', 'wyb-g', NAG[g] || ('grupa ' + g)));
+    grupy[g].forEach(function (s) {
+      var b = el('button', 'wyb-sy', s); b.type = 'button'; b.setAttribute('data-sym', s);
+      b.setAttribute('title', cap(NAZ[SYM.indexOf(s)] || s));
+      b.addEventListener('click', function () { ustaw(s); box.open = false; onChange(s); });
+      w.appendChild(b); btns.push(b);
+    });
+    lst.appendChild(w);
+  });
+  box.appendChild(lst);
+  function ustaw(s) { cur.textContent = s; btns.forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-sym') === s ? 'true' : 'false'); }); }
+  ustaw(start);
+  return {el: box, ustaw: ustaw};
+}
+
+/* KLOCEK: bilans-rownania — dobieranie współczynników: przyciski − / + przy każdej substancji, tabela liczby atomów po obu stronach.
+   Opcje: rownanie ("H2 + O2 -> H2O"), przyklady (lista rówań oddzielona średnikami; chipy).
+   Zbilansowane równanie: wszystkie pierwiastki mają tyle samo atomów po lewej i po prawej (znak ✓), inaczej ✗ i różnica. */
+(function () {
+  var IND = '₀₁₂₃₄₅₆₇₈₉';
+  function ind(s) { return String(s).replace(/(\d+)/g, function (d) { return d.split('').map(function (c) { return IND[+c]; }).join(''); }); }
+  function parse(f) {
+    var i = 0;
+    function grupa() {
+      var w = {};
+      while (i < f.length && f[i] !== ')') {
+        var m;
+        if (f[i] === '(') {
+          i++; var g = grupa(); if (f[i] !== ')') throw 0; i++;
+          var d = /^\d+/.exec(f.slice(i)); var n = d ? +d[0] : 1; if (d) i += d[0].length;
+          for (var k in g) w[k] = (w[k] || 0) + g[k] * n;
+        } else if ((m = /^[A-Z][a-z]?/.exec(f.slice(i)))) {
+          i += m[0].length; var d2 = /^\d+/.exec(f.slice(i)); var c = d2 ? +d2[0] : 1; if (d2) i += d2[0].length;
+          w[m[0]] = (w[m[0]] || 0) + c;
+        } else throw 0;
+      }
+      return w;
+    }
+    var r = grupa(); if (i !== f.length) throw 0; return r;
+  }
+  KLOCKI.def('bilans-rownania', {
+    opis: 'Dobieranie współczynników w równaniu reakcji z tabelą bilansu atomów.',
+    domyslne: {rownanie: 'H2 + O2 -> H2O', przyklady: 'H2 + O2 -> H2O; Mg + O2 -> MgO; Al + O2 -> Al2O3; CaCO3 -> CaO + CO2; Mg + HCl -> MgCl2 + H2'},
+    html: function (host, opc) {
+      host.style.display = 'block';
+      host.innerHTML = '<div class="br-ch" style="display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px"></div><div class="br-r" style="font-size:18px;margin:6px 0 10px;display:flex;flex-wrap:wrap;align-items:center;gap:4px 6px"></div><div class="br-t" style="font-size:14px"></div>';
+      var ch = host.querySelector('.br-ch'), rr = host.querySelector('.br-r'), tt = host.querySelector('.br-t');
+      var BTN = 'border:1px solid var(--accent,#0d6868);border-radius:99px;padding:4px 12px;font:600 13px system-ui,sans-serif;cursor:pointer;min-height:0;height:auto;width:auto;flex:none;line-height:1.3;margin:0;box-shadow:none;background:var(--surface,#fff);color:var(--accent,#0d6868)';
+      var SM = 'border:1px solid var(--border-strong,#94a3b8);border-radius:6px;width:24px;height:24px;min-height:0;min-width:0;padding:0;margin:0;font:600 14px system-ui;cursor:pointer;background:var(--surface,#fff);color:inherit;line-height:1;box-shadow:none';
+      var st = null;
+      function laduj(r) {
+        var p = r.split(/->|→/); if (p.length !== 2) return;
+        function side(s) { return s.split('+').map(function (x) { return x.trim(); }).filter(Boolean); }
+        var L = side(p[0]), R = side(p[1]);
+        st = {L: L.map(function (f) { return {f: f, n: 1, a: parse(f)}; }), R: R.map(function (f) { return {f: f, n: 1, a: parse(f)}; })};
+        rys();
+      }
+      function strona(S, key) {
+        var h = '';
+        S.forEach(function (x, i) {
+          if (i) h += '<span>+</span>';
+          h += '<span style="display:inline-flex;align-items:center;gap:4px"><button type="button" data-s="' + key + '" data-i="' + i + '" data-d="-1" style="' + SM + '" aria-label="Zmniejsz współczynnik">−</button>' +
+               '<b style="color:var(--accent,#0d6868);min-width:14px;text-align:center">' + (x.n === 1 ? '' : x.n) + '</b>' + ind(x.f) +
+               '<button type="button" data-s="' + key + '" data-i="' + i + '" data-d="1" style="' + SM + '" aria-label="Zwiększ współczynnik">+</button></span>';
+        });
+        return h;
+      }
+      function rys() {
+        rr.innerHTML = strona(st.L, 'L') + '<span style="margin:0 6px">→</span>' + strona(st.R, 'R');
+        [].forEach.call(rr.querySelectorAll('button'), function (b) {
+          b.addEventListener('click', function () {
+            var x = st[b.dataset.s][+b.dataset.i]; x.n = Math.max(1, Math.min(12, x.n + (+b.dataset.d))); rys();
+          });
+        });
+        var el = {}; function dod(S, k) { S.forEach(function (x) { for (var e in x.a) { el[e] = el[e] || {L: 0, R: 0}; el[e][k] += x.n * x.a[e]; } }); }
+        dod(st.L, 'L'); dod(st.R, 'R');
+        var ok = true, h = '<table style="border-collapse:collapse;margin:0 auto"><tr><th style="padding:4px 12px;text-align:left">Atomy</th><th style="padding:4px 12px">lewa</th><th style="padding:4px 12px">prawa</th><th></th></tr>';
+        Object.keys(el).forEach(function (e) {
+          var r = el[e], eq = r.L === r.R; if (!eq) ok = false;
+          h += '<tr><td style="padding:3px 12px"><b>' + e + '</b></td><td style="text-align:center">' + r.L + '</td><td style="text-align:center">' + r.R + '</td><td style="padding:3px 12px;color:' + (eq ? 'var(--c-basic,#15803d)' : 'var(--c-error,#dc2626)') + ';font-weight:700">' + (eq ? '✓' : '✗ różnica ' + Math.abs(r.L - r.R)) + '</td></tr>';
+        });
+        tt.innerHTML = h + '</table><div style="text-align:center;margin-top:8px;font-weight:600;color:' + (ok ? 'var(--c-basic,#15803d)' : 'var(--text-soft,#64748b)') + '">' + (ok ? 'Równanie zbilansowane: tyle samo atomów po obu stronach.' : 'Zmieniaj współczynniki tak, aby liczby atomów po obu stronach były równe.') + '</div>';
+      }
+      String(opc.przyklady).split(';').forEach(function (r) {
+        r = r.trim(); if (!r) return;
+        var b = document.createElement('button'); b.type = 'button'; b.style.cssText = BTN; b.textContent = ind(r.replace('->', '→'));
+        b.addEventListener('click', function () { laduj(r); }); ch.appendChild(b);
+      });
+      laduj(opc.rownanie);
+    }
+  });
+})();
+
+/* KLOCEK: zbieranie-gazu — jak zbieramy gaz: wylotem do góry, wylotem do dołu albo nad wodą.
+   Animowana scena: kolba z reakcją → rurka → naczynie. Chipy wybierają gaz (H₂, O₂, CO₂, NH₃, HCl) i metodę; pod sceną werdykt
+   z gęstością względną d = M / 29 i rozpuszczalnością. Zły wybór pokazuje, jak gaz ucieka albo się rozpuszcza.
+   Opcje: gaz (H2), metoda (auto = pierwsza poprawna), gazy = "H2,O2,CO2,NH3,HCl" (które chipy pokazać).
+   Gazy są bezbarwne — na rysunku zaznaczone kropkami (powietrze: szare). Animacja startuje, gdy figura jest widoczna; prefers-reduced-motion: stan końcowy. */
+(function () {
+  var GAZY = {
+    H2:  {n: 'H₂',  M: 2,    roz: 'slabo',  r: 'Zn + 2 HCl → ZnCl₂ + H₂↑ (cynk w kwasie solnym)'},
+    O2:  {n: 'O₂',  M: 32,   roz: 'slabo',  r: '2 H₂O₂ → 2 H₂O + O₂↑ (katalizator MnO₂)'},
+    CO2: {n: 'CO₂', M: 44,   roz: 'czesc',  r: 'CaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂↑ (marmur w kwasie)'},
+    NH3: {n: 'NH₃', M: 17,   roz: 'bardzo', r: '2 NH₄Cl + Ca(OH)₂ → CaCl₂ + 2 NH₃↑ + 2 H₂O (ogrzewanie)'},
+    HCl: {n: 'HCl', M: 36.5, roz: 'bardzo', r: 'NaCl + H₂SO₄ → NaHSO₄ + HCl↑ (ogrzewanie, dygestorium)'}
+  };
+  var METODY = {gora: 'wylotem do góry', dol: 'wylotem do dołu', woda: 'nad wodą'};
+  var DOWOD = 29;
+  function fm(x) { return String(Math.round(x * 100) / 100).replace('.', ','); }
+  function ocena(g, m) {
+    var G = GAZY[g], d = G.M / DOWOD, ds = 'd = ' + fm(d);
+    if (m === 'gora') return d > 1
+      ? {ok: true, t: G.n + ' jest cięższy od powietrza (' + ds + '): opada na dno i wypycha powietrze ku górze. Zbieramy naczyniem wylotem do góry.'}
+      : {ok: false, t: G.n + ' jest lżejszy od powietrza (' + ds + '): ulatuje z naczynia ustawionego wylotem do góry.'};
+    if (m === 'dol') return d < 1
+      ? {ok: true, t: G.n + ' jest lżejszy od powietrza (' + ds + '): unosi się i gromadzi pod dnem odwróconego naczynia. Zbieramy wylotem do dołu.'}
+      : {ok: false, t: G.n + ' jest cięższy od powietrza (' + ds + '): opada i wypływa przez otwór naczynia wylotem do dołu.'};
+    return G.roz === 'slabo'
+      ? {ok: true, t: G.n + ' słabo rozpuszcza się w wodzie: zbiera się nad wodą i wypiera ją z naczynia (można też odczytać objętość).'}
+      : {ok: false, t: G.n + (G.roz === 'bardzo' ? ' bardzo dobrze' : ' częściowo') + ' rozpuszcza się w wodzie, więc nie zbieramy go nad wodą.'};
+  }
+  function los(n, z) { var v = Math.sin(n * 12.9898 + z * 78.233) * 43758.5453; return v - Math.floor(v); }
+  function dobra(g) { var d = GAZY[g].M / DOWOD; return d > 1 ? 'gora' : 'dol'; }
+  function esc(t) { return String(t).replace(/[&<>"]/g, function (c) { return {'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]; }); }
+
+  /* geometria: naczynie {x,y,w,h}, rurka (łamana), poziom wody w kuwecie */
+  var W = 520, H = 300;
+  function geom(m) {
+    if (m === 'gora') return {j: {x: 330, y: 100, w: 90, h: 150}, rur: [[82, 118], [82, 70], [375, 70], [375, 235]], wejscie: [375, 235], dir: 1};
+    if (m === 'dol') return {j: {x: 330, y: 100, w: 90, h: 150}, rur: [[82, 118], [82, 70], [215, 70], [215, 284], [375, 284], [375, 135]], wejscie: [375, 135], dir: -1};
+    return {j: {x: 330, y: 105, w: 90, h: 140}, rur: [[82, 118], [82, 70], [215, 70], [215, 284], [375, 284], [375, 240]], wejscie: [375, 240], dir: -1, woda: 232};
+  }
+
+  KLOCKI.def('zbieranie-gazu', {
+    opis: 'Zbieranie gazu: kolba z reakcją, rurka i naczynie ustawione wylotem do góry, do dołu albo nad wodą; werdykt zależy od gęstości i rozpuszczalności gazu.',
+    domyslne: {gaz: 'H2', metoda: 'auto', gazy: 'H2,O2,CO2,NH3,HCl'},
+    html: function (host, opc) {
+      host.style.display = 'block'; host.style.width = '100%';
+      var lista = String(opc.gazy || '').split(',').map(function (s) { return s.trim(); }).filter(function (s) { return GAZY[s]; });
+      if (!lista.length) lista = ['H2'];
+      var gaz = GAZY[opc.gaz] ? opc.gaz : lista[0];
+      if (lista.indexOf(gaz) < 0) lista.unshift(gaz);
+      var metoda = METODY[opc.metoda] ? opc.metoda : dobra(gaz);
+      var chipSt = 'padding:3px 10px;border:1.5px solid var(--border-strong,#94a3b8);border-radius:999px;background:var(--surface,#fff);cursor:pointer;font:inherit;font-size:13px';
+      host.innerHTML =
+        '<div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:0 0 6px"><span style="font-size:13px;color:var(--text-soft,#64748b)">Gaz:</span>' +
+        lista.map(function (g) { return '<button type="button" data-g="' + g + '" style="' + chipSt + '">' + GAZY[g].n + '</button>'; }).join('') + '</div>' +
+        '<div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:0 0 8px"><span style="font-size:13px;color:var(--text-soft,#64748b)">Zbieramy:</span>' +
+        Object.keys(METODY).map(function (m) { return '<button type="button" data-m="' + m + '" style="' + chipSt + '">' + METODY[m] + '</button>'; }).join('') + '</div>' +
+        '<canvas width="' + W + '" height="' + H + '" style="width:100%;max-width:' + W + 'px;height:auto;display:block;margin:0 auto" role="img"></canvas>' +
+        '<div class="zg-r" style="font-size:13px;text-align:center;color:var(--text-soft,#64748b);margin:4px 0 0"></div>' +
+        '<div class="zg-w" aria-live="polite" style="font-size:14px;margin:6px 2px 0;font-weight:600"></div>';
+      var cv = host.querySelector('canvas'), x = cv.getContext('2d'), rEl = host.querySelector('.zg-r'), wEl = host.querySelector('.zg-w');
+      var gB = [].slice.call(host.querySelectorAll('[data-g]')), mB = [].slice.call(host.querySelectorAll('[data-m]'));
+      var S = {t: 0, cykl: 0}, ruch = typeof RM !== 'undefined' && RM;
+
+      function ustaw() {
+        var o = ocena(gaz, metoda);
+        gB.forEach(function (b) { var a = b.getAttribute('data-g') === gaz; b.style.background = a ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)'; b.style.color = a ? '#fff' : 'inherit'; });
+        mB.forEach(function (b) { var a = b.getAttribute('data-m') === metoda; b.style.background = a ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)'; b.style.color = a ? '#fff' : 'inherit'; });
+        rEl.innerHTML = esc(GAZY[gaz].r);
+        wEl.style.color = o.ok ? 'var(--c-basic,#15803d)' : 'var(--c-error,#dc2626)';
+        wEl.textContent = (o.ok ? '✓ ' : '✗ ') + o.t;
+        cv.setAttribute('aria-label', 'Zbieranie gazu ' + GAZY[gaz].n + ' ' + METODY[metoda] + ': ' + (o.ok ? 'poprawnie' : 'błędnie') + '. ' + o.t);
+        S.t = 0; S.cykl = 0; rysuj();
+      }
+      gB.forEach(function (b) { b.addEventListener('click', function () { gaz = b.getAttribute('data-g'); ustaw(); }); });
+      mB.forEach(function (b) { b.addEventListener('click', function () { metoda = b.getAttribute('data-m'); ustaw(); }); });
+
+      /* ---- rysowanie ---- */
+      function kropka(px, py, r, kol) { x.beginPath(); x.arc(px, py, r, 0, 6.2832); x.fillStyle = kol; x.fill(); }
+      function linia(p, szer, kol) {
+        x.beginPath(); x.moveTo(p[0][0], p[0][1]); for (var i = 1; i < p.length; i++) x.lineTo(p[i][0], p[i][1]);
+        x.lineWidth = szer; x.strokeStyle = kol; x.lineJoin = 'round'; x.lineCap = 'round'; x.stroke();
+      }
+      function rysuj() {
+        var o = ocena(gaz, metoda), g = geom(metoda), j = g.j, t = S.t, GK = 'rgba(13,104,104,.85)', PK = 'rgba(100,116,139,.55)';
+        x.clearRect(0, 0, W, H);
+        /* postęp zbierania 0..1 (cykl: 7 s napełniania + 1,5 s pauzy), przy błędnym wyborze — brak gromadzenia */
+        var cyk = 8.5, ph = ruch ? 7 : (t % cyk), pr = o.ok ? Math.min(1, ph / 7) : 0;
+        /* kolba z reakcją */
+        x.fillStyle = 'rgba(148,163,184,.12)'; x.strokeStyle = '#94a3b8'; x.lineWidth = 2;
+        x.beginPath(); x.moveTo(66, 118); x.lineTo(66, 160); x.lineTo(30, 236); x.arcTo(24, 262, 50, 262, 14); x.lineTo(114, 262);
+        x.arcTo(140, 262, 134, 236, 14); x.lineTo(98, 160); x.lineTo(98, 118); x.stroke();
+        x.fillStyle = 'rgba(142,201,232,.35)'; x.beginPath(); x.moveTo(36, 222); x.lineTo(128, 222); x.lineTo(134, 236); x.arcTo(140, 262, 114, 262, 14); x.lineTo(50, 262); x.arcTo(24, 262, 30, 236, 14); x.closePath(); x.fill();
+        for (var b = 0; b < 7; b++) { var bt = ((t * .9 + b * .37) % 1), bx = 52 + ((b * 29) % 60) + Math.sin(t * 3 + b) * 3; kropka(bx, 255 - bt * 36, 2 + (b % 3) * .6, 'rgba(255,255,255,.8)'); }
+        x.fillStyle = '#b45309'; x.fillRect(62, 112, 40, 8);
+        /* naczynie */
+        if (g.woda) {
+          x.fillStyle = 'rgba(142,201,232,.3)'; x.fillRect(260, g.woda, 230, 284 - g.woda + 12); x.strokeStyle = '#94a3b8'; x.lineWidth = 2; x.strokeRect(260, g.woda - 8, 230, 296 - g.woda + 4);
+          var poz = j.y + (j.h) * pr;   /* poziom wody w naczyniu: z wodą do góry, gaz wypiera ją w dół */
+          x.fillStyle = 'rgba(142,201,232,.55)'; x.fillRect(j.x, Math.max(j.y, Math.min(g.woda, j.y + (g.woda - j.y) * pr)), j.w, g.woda - Math.max(j.y, Math.min(g.woda, j.y + (g.woda - j.y) * pr)));
+        }
+        /* gaz w naczyniu (kropki w pseudolosowych, ale stałych miejscach — bez „smug”) */
+        var szer = j.w - 6, lw = j.x + 3, ng = o.ok ? Math.round(34 * pr) : 0, i, drg = function (n) { return Math.sin(t * 1.7 + n * 2.3) * 2; };
+        var ox = function (n, z) { return lw + 6 + los(n, z) * (szer - 12) + drg(n); };
+        if (metoda === 'gora') {
+          var h = j.h * pr; x.fillStyle = 'rgba(13,104,104,.10)'; x.fillRect(lw, j.y + j.h - h, szer, h);
+          for (i = 0; i < ng; i++) kropka(ox(i, 1), j.y + j.h - 6 - los(i, 2) * Math.max(10, h - 8), 2.1, GK);
+          for (i = 0; i < 22; i++) { var yy = j.y + 6 + los(i, 4) * (j.h - 12); if (yy < j.y + j.h - h) kropka(ox(i, 3), yy, 2.1, PK); }
+        } else {
+          var hh = (metoda === 'woda' ? (g.woda - j.y) : j.h) * pr;
+          x.fillStyle = 'rgba(13,104,104,.10)'; x.fillRect(lw, j.y, szer, Math.max(0, hh));
+          for (i = 0; i < ng; i++) kropka(ox(i, 1), j.y + 6 + los(i, 2) * Math.max(10, hh - 8), 2.1, GK);
+          if (metoda === 'dol') for (i = 0; i < 22; i++) { var y2 = j.y + 6 + los(i, 4) * (j.h - 12); if (y2 > j.y + hh) kropka(ox(i, 3), y2, 2.1, PK); }
+        }
+        /* szkło naczynia: dla „do góry” otwarte u góry, dla „do dołu” i wody — otwarte u dołu */
+        x.strokeStyle = '#94a3b8'; x.lineWidth = 2.5; x.beginPath();
+        if (metoda === 'gora') { x.moveTo(j.x, j.y); x.lineTo(j.x, j.y + j.h - 8); x.arcTo(j.x, j.y + j.h, j.x + 10, j.y + j.h, 8); x.lineTo(j.x + j.w - 10, j.y + j.h); x.arcTo(j.x + j.w, j.y + j.h, j.x + j.w, j.y + j.h - 8, 8); x.lineTo(j.x + j.w, j.y); }
+        else { x.moveTo(j.x, j.y + j.h); x.lineTo(j.x, j.y + 8); x.arcTo(j.x, j.y, j.x + 10, j.y, 8); x.lineTo(j.x + j.w - 10, j.y); x.arcTo(j.x + j.w, j.y, j.x + j.w, j.y + 8, 8); x.lineTo(j.x + j.w, j.y + j.h); }
+        x.stroke();
+        /* rurka odprowadzająca */
+        linia(g.rur, 5, 'rgba(100,116,139,.35)'); linia(g.rur, 2, '#94a3b8');
+        /* gaz w rurce i uciekający / rozpuszczający się */
+        if (!ruch || true) {
+          var len = 0, seg = [], k;
+          for (k = 1; k < g.rur.length; k++) { var dl = Math.hypot(g.rur[k][0] - g.rur[k - 1][0], g.rur[k][1] - g.rur[k - 1][1]); seg.push(dl); len += dl; }
+          for (var m = 0; m < 9; m++) {
+            var u = ((t * .22 + m / 9) % 1) * len, s = 0; for (k = 0; k < seg.length && u > s + seg[k]; k++) s += seg[k];
+            var f = seg[k] ? (u - s) / seg[k] : 0; kropka(g.rur[k][0] + (g.rur[k + 1][0] - g.rur[k][0]) * f, g.rur[k][1] + (g.rur[k + 1][1] - g.rur[k][1]) * f, 2.4, GK);
+          }
+        }
+        var ex = g.wejscie[0], ey = g.wejscie[1];
+        if (!o.ok) {
+          /* gaz opuszcza naczynie: do góry (lekki w naczyniu „do góry”) albo w dół (ciężki w „do dołu”) */
+          var wyp = metoda === 'gora' ? -1 : (metoda === 'dol' ? 1 : 0);
+          if (metoda === 'woda') {
+            for (var bb = 0; bb < 7; bb++) { var bt2 = (t * .6 + bb * .21) % 1; kropka(ex + Math.sin(bb * 2 + t * 3) * 6, ey - bt2 * 60, 3.2 * (1 - bt2), 'rgba(13,104,104,' + (.8 - bt2 * .8) + ')'); }
+            x.fillStyle = 'rgba(100,116,139,.8)'; x.font = '12px system-ui'; x.fillText('gaz rozpuszcza się w wodzie', 262, 62);
+          } else for (var e = 0; e < 10; e++) { var te = (t * .5 + e * .1) % 1; kropka(ex + Math.sin(e * 2.1 + t * 2) * 12, (wyp < 0 ? j.y + 8 - te * 55 : j.y + j.h - 8 + te * 55), 2.2, 'rgba(13,104,104,' + (.9 - te * .8) + ')'); }
+        } else if (metoda === 'woda' && pr < 1) {
+          for (var bu = 0; bu < 5; bu++) { var bt3 = (t * .7 + bu * .2) % 1; kropka(ex + Math.sin(bu * 2 + t * 3) * 5, ey - bt3 * (ey - Math.max(j.y + 6, g.woda - 6 - (g.woda - j.y) * pr + 6)), 2.8, 'rgba(255,255,255,.9)'); }
+        }
+        x.fillStyle = 'rgba(100,116,139,.9)'; x.font = '12px system-ui'; x.textAlign = 'left';
+        x.fillStyle = GK; x.beginPath(); x.arc(24, 24, 3, 0, 6.2832); x.fill(); x.fillStyle = 'rgba(100,116,139,.9)'; x.fillText('gaz (bezbarwny, zaznaczony kropkami)', 34, 28);
+        x.fillStyle = PK; x.beginPath(); x.arc(24, 44, 3, 0, 6.2832); x.fill(); x.fillStyle = 'rgba(100,116,139,.9)'; x.fillText('powietrze', 34, 48);
+        if (!o.ok) { x.fillStyle = 'rgba(220,38,38,.9)'; x.font = '700 13px system-ui'; x.textAlign = 'center'; x.fillText('naczynie się nie napełnia', j.x + j.w / 2, j.y + j.h + 22); x.textAlign = 'left'; }
+        else if (pr >= 1) { x.fillStyle = 'rgba(21,128,61,.95)'; x.font = '700 13px system-ui'; x.textAlign = 'center'; x.fillText('naczynie pełne gazu', j.x + j.w / 2, j.y + j.h + 22); x.textAlign = 'left'; }
+      }
+      var h = {rysuj: rysuj, krok: function (dt) { S.t += dt; rysuj(); }};
+      ustaw();
+      if (typeof podepnij === 'function') podepnij(cv, h);
+    }
+  });
+})();
+
+/* KLOCEK: karta-bhp — zasady pracy w pracowni i krótkie kroki pierwszej pomocy (karty do rozwinięcia).
+   Treść ogólna, szkolna; przy poważnym urazie wezwać nauczyciela i pogotowie 112/999. Opcje: otwarte = "1" rozwija wszystkie; zwiniete = "1" wszystkie zwinięte;
+   karty = "Ogrzewanie,Kwasy i zasady" pokazuje tylko wskazane karty (nazwy jak w nagłówkach). */
+(function () {
+  var KARTY = [
+    ['Przed doświadczeniem', ['Okulary ochronne i fartuch, długie włosy związane.', 'Czytaj opis do końca; nic nie próbuj, nie wąchaj bezpośrednio znad naczynia.', 'Odczynniki bierz w najmniejszej potrzebnej ilości, naczynia podpisuj.']],
+    ['Kwasy i zasady', ['Kwas wlewaj do wody (nie odwrotnie), cienkim strumieniem, mieszając.', 'Kontakt ze skórą lub oczami: płucz dużą ilością bieżącej wody przez co najmniej 15 minut i zawołaj nauczyciela.', 'Rozlany odczynnik zgłoś nauczycielowi, nie wycieraj go gołą ręką.']],
+    ['Ogrzewanie', ['Probówkę ogrzewaj ukośnie (ok. 45°), otworem od siebie i od innych osób, poruszając nią w płomieniu.', 'Nie zaglądaj do ogrzewanej probówki od góry.', 'Gorące naczynia chwytaj szczypcami lub łapaczem, stawiaj na podkładce.']],
+    ['Oparzenie i zranienie', ['Oparzenie: chłodź zimną wodą kilkanaście minut, nie smaruj tłuszczem, powiadom nauczyciela.', 'Skaleczenie szkłem: nie usuwaj odłamków z rany, zawołaj nauczyciela.', 'Wdychanie gazu: wyjdź na świeże powietrze i zgłoś to nauczycielowi.']]
+  ];
+  KLOCKI.def('karta-bhp', {
+    opis: 'Karta BHP: zasady pracy w pracowni i pierwsza pomoc.',
+    domyslne: {otwarte: 0},
+    html: function (host, opc) {
+      host.style.display = 'block';
+      var wyb = opc.karty ? String(opc.karty).split(',').map(function (z) { return z.trim(); }) : null;
+      host.innerHTML = KARTY.filter(function (k) { return !wyb || wyb.indexOf(k[0]) >= 0; }).map(function (k, i) {
+        return '<details' + (Number(opc.otwarte) || (i === 0 && !Number(opc.zwiniete)) ? ' open' : '') + ' style="border:1px solid var(--border,#cbd5e1);border-radius:8px;padding:6px 12px;margin:0 0 6px;background:var(--surface,#fff)">' +
+          '<summary style="cursor:pointer;font-weight:600;color:var(--accent,#0d6868)">' + k[0] + '</summary><ul style="margin:6px 0 4px;padding-left:20px;font-size:14px">' +
+          k[1].map(function (t) { return '<li>' + t + '</li>'; }).join('') + '</ul></details>';
+      }).join('');
+    }
+  });
+})();
+
+/* ui_klocki.js — wspólne drobiazgi interfejsu dla klocków HTML/SVG (przyciski-chipy, suwak, autostart animacji w widoku).
+   KLOCKI.ui.btn(tekst, akcja) · .chip(tekst, aktywny, akcja) · .suwak(etykieta, min, max, krok, wartosc, akcja) · .anim(host, krok(dt, t)) → uchwyt {start, stop}. */
+(function () {
+  var BTN = 'font:inherit;font-size:13px;padding:5px 11px;border:1px solid var(--border-strong,#94a3b8);border-radius:999px;background:var(--surface,#fff);color:inherit;cursor:pointer;margin:2px';
+  var ui = {
+    BTN: BTN,
+    btn: function (t, f, tytul) { var b = document.createElement('button'); b.type = 'button'; b.style.cssText = BTN; b.innerHTML = t; if (tytul) b.title = tytul; b.addEventListener('click', f); return b; },
+    chip: function (t, on, f) { var b = ui.btn(t, f); ui.zaznacz(b, on); return b; },
+    zaznacz: function (b, on) { b.style.background = on ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)'; b.style.color = on ? '#fff' : 'inherit'; b.style.borderColor = on ? 'var(--accent,#0d6868)' : 'var(--border-strong,#94a3b8)'; },
+    suwak: function (et, mn, mx, st, w, f) {
+      var l = document.createElement('label'); l.style.cssText = 'display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:14px;margin:4px 0';
+      l.innerHTML = '<span style="min-width:120px">' + et + '</span><input type="range" min="' + mn + '" max="' + mx + '" step="' + st + '" value="' + w + '" style="flex:1;min-width:140px;accent-color:var(--accent,#0d6868)"><b class="sv" style="min-width:64px"></b>';
+      var i = l.querySelector('input'), v = l.querySelector('.sv');
+      i.addEventListener('input', function () { f(+i.value, v); }); f(+i.value, v); return l;
+    },
+    /* animacja startująca, gdy host jest widoczny; krok(dt_s, t_s). Reduced motion: jedna klatka. */
+    anim: function (host, krok) {
+      var raf = 0, t = 0, last = 0, on = false;
+      function p(now) { var dt = Math.min(.05, (now - last) / 1000); last = now; t += dt; krok(dt, t); raf = requestAnimationFrame(p); }
+      var h = {
+        start: function () { if (on) return; on = true; last = performance.now(); raf = requestAnimationFrame(p); },
+        stop: function () { on = false; cancelAnimationFrame(raf); },
+        t: function () { return t; }
+      };
+      if (typeof RM !== 'undefined' && RM) { krok(0, 0); return h; }
+      if ('IntersectionObserver' in window) new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? h.start() : h.stop(); }); }, {threshold: .05}).observe(host);
+      else h.start();
+      return h;
+    }
+  };
+  window.KLOCKI.ui = ui;
+})();
+
+/* KLOCEK: przewodnictwo — tester przewodnictwa z elektrolizą: bateria, żarówka, elektrody, pęcherzyki gazów na katodzie i anodzie
+   + model cząsteczkowy roztworu (jony z ładunkami wędrują do elektrod). Port sceny GFX „conductivity” (07_tubeRack.js / 08_padOf.js) na canvas, bez dużego silnika.
+   Opcje: roztwor = dist | sugar | HCl | H2SO4 | CH3COOH | NaOH | NaCl (HCl). Doświadczenie startuje kliknięciem „Włącz prąd”. Wymaga ui_klocki.js. */
+(function () {
+  var SOL = {
+    dist:   {n: 'woda destylowana', f: 'H₂O', cond: .02, mol: [['H2O', 16]], t: 'nieelektrolit (prawie nie przewodzi)'},
+    sugar:  {n: 'roztwór cukru', f: 'C₆H₁₂O₆', cond: .02, mol: [['SUG', 3], ['H2O', 12]], t: 'nieelektrolit — cząsteczki nie rozpadają się na jony'},
+    EtOH:   {n: 'etanol', f: 'C₂H₅OH', cond: .02, mol: [['EtOH', 5], ['H2O', 8]], t: 'nieelektrolit — cząsteczki etanolu nie dysocjują na jony'},
+    HCl:    {n: 'kwas solny', f: 'HCl(aq)', cond: 1, el: {cat: {f: 'H₂', n: 1}, an: {f: 'Cl₂', n: .6, col: [214, 232, 140]}, eq: 'katoda (−): 2 H⁺ + 2 e⁻ → H₂↑ · anoda (+): 2 Cl⁻ → Cl₂↑ + 2 e⁻'}, mol: [['H3O+', 6], ['Cl-', 6], ['H2O', 8]], t: 'elektrolit mocny — HCl całkowicie zdysocjowany: H₃O⁺ + Cl⁻'},
+    H2SO4:  {n: 'kwas siarkowy(VI)', f: 'H₂SO₄(aq)', cond: 1, el: {cat: {f: 'H₂', n: 1}, an: {f: 'O₂', n: .5}, eq: 'katoda (−): 2 H⁺ + 2 e⁻ → H₂↑ · anoda (+): 2 H₂O → O₂↑ + 4 H⁺ + 4 e⁻ (jony SO₄²⁻ nie utleniają się)'}, mol: [['H3O+', 6], ['SO42-', 3], ['H2O', 8]], t: 'elektrolit mocny: 2 H₃O⁺ + SO₄²⁻'},
+    CH3COOH: {n: 'kwas octowy', f: 'CH₃COOH(aq)', cond: .3, el: {cat: {f: 'H₂', n: .5}, an: {f: 'O₂', n: .25}, eq: 'katoda (−): 2 H⁺ + 2 e⁻ → H₂↑ · anoda (+): 2 H₂O → O₂↑ + 4 H⁺ + 4 e⁻ — mało jonów, więc gazu niewiele'}, mol: [['CH3COOH', 5], ['H3O+', 1], ['CH3COO-', 1], ['H2O', 9]], t: 'elektrolit słaby — zdysocjowana tylko niewielka część cząsteczek'},
+    NaOH:   {n: 'zasada sodowa', f: 'NaOH(aq)', cond: .95, el: {cat: {f: 'H₂', n: 1}, an: {f: 'O₂', n: .5}, eq: 'katoda (−): 2 H₂O + 2 e⁻ → H₂↑ + 2 OH⁻ (Na⁺ się nie redukuje) · anoda (+): 4 OH⁻ → O₂↑ + 2 H₂O + 4 e⁻'}, mol: [['Na+', 6], ['OH-', 6], ['H2O', 8]], t: 'elektrolit mocny: Na⁺ + OH⁻'},
+    CuSO4:  {n: 'siarczan(VI) miedzi(II)', f: 'CuSO₄(aq)', cond: .9, el: {cat: {f: 'Cu (osad)', n: 0, col: [184, 115, 51]}, an: {f: 'O₂', n: .5}, eq: 'katoda (−): Cu²⁺ + 2 e⁻ → Cu (czerwonobrunatny osad) · anoda (+): 2 H₂O → O₂↑ + 4 H⁺ + 4 e⁻'}, mol: [['Cu2+', 4], ['SO42-', 4], ['H2O', 8]], t: 'sól — elektrolit mocny: Cu²⁺ + SO₄²⁻'},
+    NaCl:   {n: 'roztwór soli kuchennej', f: 'NaCl(aq)', cond: .9, el: {cat: {f: 'H₂', n: 1}, an: {f: 'Cl₂', n: .6, col: [214, 232, 140]}, eq: 'katoda (−): 2 H₂O + 2 e⁻ → H₂↑ + 2 OH⁻ · anoda (+): 2 Cl⁻ → Cl₂↑ + 2 e⁻ (w roztworze stężonym)'}, mol: [['Na+', 6], ['Cl-', 6], ['H2O', 8]], t: 'elektrolit mocny: Na⁺ + Cl⁻'}
+  };
+  /* gatunki: r = promień, col, lab = napis, q = ładunek (+1/−1/0) */
+  var SP = {
+    'H2O': {r: 9, col: '#ef4444', lab: '', q: 0, wodory: 2},
+    'H3O+': {r: 10, col: '#f97316', lab: 'H₃O', q: 1}, 'Cl-': {r: 10, col: '#22c55e', lab: 'Cl', q: -1},
+    'SO42-': {r: 13, col: '#eab308', lab: 'SO₄', q: -2}, 'Na+': {r: 9, col: '#8b5cf6', lab: 'Na', q: 1},
+    'OH-': {r: 9, col: '#dc2626', lab: 'OH', q: -1}, 'CH3COO-': {r: 12, col: '#94a3b8', lab: 'AcO', q: -1},
+    'Cu2+': {r: 10, col: '#2563eb', lab: 'Cu', q: 2}, 'EtOH': {r: 13, col: '#a1a1aa', lab: 'C₂H₅OH', q: 0},
+    'CH3COOH': {r: 14, col: '#a1a1aa', lab: 'CH₃COOH', q: 0}, 'SUG': {r: 15, col: '#d6b98c', lab: 'C₆H₁₂O₆', q: 0}
+  };
+  var ORDER = ['dist', 'sugar', 'EtOH', 'HCl', 'H2SO4', 'CH3COOH', 'NaOH', 'NaCl', 'CuSO4'];
+
+  function ciemny() { return document.documentElement.hasAttribute('data-ciemny'); }
+  function rr(c, x, y, w, h, r) { c.beginPath(); if (c.roundRect) c.roundRect(x, y, w, h, r); else c.rect(x, y, w, h); }
+  function sr(i) { var v = Math.sin(i * 127.1 + 311.7) * 43758.5453; return v - Math.floor(v); }
+
+  KLOCKI.def('przewodnictwo', {
+    opis: 'Tester przewodnictwa i elektroliza: wybierasz roztwór, włączasz prąd; żarówka świeci tylko dla elektrolitów, na elektrodach pojawiają się gazy, a w modelu jony wędrują do elektrod.',
+    domyslne: {roztwor: 'HCl'},
+    html: function (host, opc) {
+      var U = KLOCKI.ui, key = SOL[opc.roztwor] ? opc.roztwor : 'HCl', on = false, k = 0, t = 0, parts = [];
+      host.style.display = 'block';
+      var bar = document.createElement('div'), row = document.createElement('div'), note = document.createElement('div'), eq = document.createElement('div');
+      row.style.cssText = 'display:flex;flex-wrap:wrap;gap:8px;align-items:flex-start';
+      bar.style.cssText = 'margin-bottom:6px'; note.style.cssText = 'font-size:14px;margin-top:8px'; eq.style.cssText = 'font-size:13px;margin-top:4px;color:var(--muted,#5b6b73)';
+      function mk(w, h, flex) { var cv = document.createElement('canvas'); cv.style.cssText = 'flex:' + flex + ' 1 ' + w * .7 + 'px;min-width:0;width:' + (flex ? '' : '') + '100%;max-width:' + w * 1.3 + 'px;height:auto;aspect-ratio:' + w + '/' + h + ';border-radius:10px;background:var(--surface-soft,#f6f8fa)'; return cv; }
+      var W1 = 340, H1 = 300, W2 = 280, H2 = 300, c1 = mk(W1, H1, 3), c2 = mk(W2, H2, 2), d = Math.min(2, window.devicePixelRatio || 1);
+      [[c1, W1, H1], [c2, W2, H2]].forEach(function (a) { a[0].width = a[1] * d; a[0].height = a[2] * d; });
+      row.append(c1, c2);
+      var btnOn = U.btn('▶ Włącz prąd', function () { on = !on; btnOn.innerHTML = on ? '⏸ Wyłącz prąd' : '▶ Włącz prąd'; });
+      var chips = ORDER.map(function (id) { var b = U.chip(SOL[id].n, id === key, function () { key = id; zaznacz(); rebuild(); }); return b; });
+      function zaznacz() { chips.forEach(function (b, i) { U.zaznacz(b, ORDER[i] === key); }); }
+      bar.append.apply(bar, chips); bar.append(btnOn);
+      host.append(bar, row, note, eq);
+
+      function rebuild() {
+        parts = []; var S = SOL[key];
+        S.mol.forEach(function (m) { for (var i = 0; i < m[1]; i++) parts.push({id: m[0], x: 20 + Math.random() * (W2 - 40), y: 40 + Math.random() * (H2 - 80), vx: (Math.random() - .5) * 40, vy: (Math.random() - .5) * 40, a: Math.random() * 6.28}); });
+        var E = S.el;
+        note.innerHTML = '<b>' + S.n + ' ' + S.f + '.</b> ' + S.t + '. Prąd w roztworze przenoszą <b>jony</b>: kationy wędrują do <b>katody (−)</b>, aniony do <b>anody (+)</b>; im więcej jonów, tym jaśniej świeci żarówka.';
+        eq.innerHTML = E ? '<b>Elektroliza:</b> ' + E.eq : 'Brak jonów — prąd nie płynie, na elektrodach nic się nie dzieje.';
+      }
+
+      function rysujTester(c) {
+        var S = SOL[key], E = S.el, dk = ciemny(), glass = dk ? '#94a3b8' : '#64748b', txt = dk ? '#e2e8f0' : '#0f172a', mut = dk ? '#94a3b8' : '#64748b';
+        c.setTransform(d, 0, 0, d, 0, 0); c.clearRect(0, 0, W1, H1);
+        var bx = 56, bw = 230, by = 150, bh = 140, lv = .62, ltop = by + bh - bh * lv, e1 = bx + bw * .32, e2 = bx + bw * .68, ey0 = by - 30, ey1 = by + bh - 16, wy = 80;
+        var bat = {x: 28, y: 20, w: 48, h: 20}, bl = {x: 270, y: 44};
+        /* zlewka z cieczą */
+        c.fillStyle = S.id === 'sugar' ? 'rgba(226,232,236,.7)' : 'rgba(186,230,253,.55)'; c.fillRect(bx + 2, ltop, bw - 4, by + bh - ltop - 2);
+        c.strokeStyle = glass; c.lineWidth = 3; c.lineJoin = 'round'; c.beginPath(); c.moveTo(bx, by); c.lineTo(bx, by + bh - 10); c.quadraticCurveTo(bx, by + bh, bx + 10, by + bh); c.lineTo(bx + bw - 10, by + bh); c.quadraticCurveTo(bx + bw, by + bh, bx + bw, by + bh - 10); c.lineTo(bx + bw, by); c.stroke();
+        /* przewody */
+        var czynny = k > .12;
+        function wire(pts) {
+          c.lineJoin = c.lineCap = 'round'; c.beginPath(); pts.forEach(function (q, i) { i ? c.lineTo(q[0], q[1]) : c.moveTo(q[0], q[1]); }); c.strokeStyle = dk ? '#94a3b8' : '#334155'; c.lineWidth = 2.2; c.stroke();
+          if (czynny) { c.setLineDash([3, 7]); c.lineDashOffset = -t * 40 * k; c.strokeStyle = 'rgba(250,204,21,.95)'; c.lineWidth = 2; c.stroke(); c.setLineDash([]); }
+        }
+        wire([[e1, ey0], [e1, wy], [bat.x + 8, wy], [bat.x + 8, bat.y + bat.h]]);
+        wire([[bat.x + bat.w, bat.y + bat.h / 2], [bl.x - 5, bat.y + bat.h / 2], [bl.x - 5, bl.y + 24]]);
+        wire([[bl.x + 5, bl.y + 26], [bl.x + 5, wy], [e2, wy], [e2, ey0]]);
+        /* elektrody + pęcherzyki + podpisy */
+        [e1, e2].forEach(function (x, i) {
+          c.fillStyle = '#3f3f46'; rr(c, x - 4, ey0, 8, ey1 - ey0, 2); c.fill(); c.fillStyle = '#71717a'; c.fillRect(x - 4, ey0, 8, 5);
+          var g = E ? (i ? E.an : E.cat) : null;
+          if (g && czynny) {
+            var nb = g.n ? Math.round(3 + 5 * g.n * k) : 0, col = g.col || [255, 255, 255];
+            for (var j = 0; j < nb; j++) {
+              var u = (t / 1.4 * (.6 + k) + sr(j + i * 9)) % 1, y = ey1 - (ey1 - ltop) * u;
+              if (y > ltop + 3) { c.beginPath(); c.arc(x + (j % 2 ? 6 : -6), y, 1.4 + sr(j) * 1.5, 0, 7); c.fillStyle = 'rgba(' + col.join(',') + ',' + (.75 * k) + ')'; c.fill(); c.strokeStyle = 'rgba(80,100,120,' + (.5 * k) + ')'; c.lineWidth = .6; c.stroke(); }
+            }
+          }
+          var lab = (i ? '(+) ' : '(−) ') + (g && czynny ? g.f : (i ? 'anoda' : 'katoda')); c.font = '800 10px system-ui,sans-serif'; var lw = c.measureText(lab).width + 8, lx = Math.max(2, Math.min(W1 - lw - 2, x - lw / 2)), ly = ey1 + 6;
+          c.fillStyle = dk ? 'rgba(30,41,59,.9)' : 'rgba(255,255,255,.9)'; rr(c, lx, ly, lw, 14, 3); c.fill(); c.fillStyle = i ? '#b91c1c' : '#1d4ed8'; c.textAlign = 'center'; c.fillText(lab, lx + lw / 2, ly + 11);
+        });
+        /* bateria */
+        c.fillStyle = dk ? '#475569' : '#1f2937'; rr(c, bat.x, bat.y, bat.w, bat.h, 3); c.fill(); c.fillStyle = '#f59e0b'; c.fillRect(bat.x + bat.w - 12, bat.y, 12, bat.h);
+        c.font = '800 12px system-ui,sans-serif'; c.textAlign = 'center'; c.fillStyle = '#fff'; c.fillText('−', bat.x + 8, bat.y + 15); c.fillStyle = '#1f2937'; c.fillText('+', bat.x + bat.w - 6, bat.y + 15);
+        c.font = '600 10px system-ui,sans-serif'; c.fillStyle = mut; c.fillText('4,5 V', bat.x + bat.w / 2 - 4, bat.y + bat.h + 13);
+        /* żarówka */
+        if (k > 0) { var R = 18 + 55 * k, g1 = c.createRadialGradient(bl.x, bl.y, 2, bl.x, bl.y, R); g1.addColorStop(0, 'rgba(255,226,120,' + .85 * k + ')'); g1.addColorStop(1, 'rgba(255,200,60,0)'); c.fillStyle = g1; c.beginPath(); c.arc(bl.x, bl.y, R, 0, 7); c.fill(); }
+        c.fillStyle = 'rgba(255,250,225,' + (.18 + .75 * k) + ')'; c.strokeStyle = glass; c.lineWidth = 2; c.beginPath(); c.arc(bl.x, bl.y, 15, 0, 7); c.fill(); c.stroke();
+        c.strokeStyle = k > .08 ? '#f59e0b' : '#78716c'; c.lineWidth = 1.4; c.beginPath(); c.moveTo(bl.x - 5, bl.y + 12); c.lineTo(bl.x - 4, bl.y); for (var q = 0; q < 5; q++) c.lineTo(bl.x - 4 + q * 2, bl.y + (q % 2 ? -3 : 0)); c.lineTo(bl.x + 5, bl.y + 12); c.stroke();
+        c.fillStyle = dk ? '#64748b' : '#78716c'; c.fillRect(bl.x - 7, bl.y + 14, 14, 12);
+        c.font = '800 12px system-ui,sans-serif'; c.fillStyle = txt; c.textAlign = 'center'; c.fillText(!on ? 'prąd wyłączony' : k > .6 ? 'świeci jasno' : k > .15 ? 'świeci słabo' : 'nie świeci', 150, 66);
+        /* etykieta roztworu */
+        c.font = '800 12px system-ui,sans-serif'; var lt = S.f, lw2 = c.measureText(lt).width + 14; c.fillStyle = dk ? 'rgba(30,41,59,.92)' : 'rgba(255,255,255,.93)'; rr(c, bx + bw / 2 - lw2 / 2, ltop + 6, lw2, 20, 4); c.fill(); c.fillStyle = txt; c.fillText(lt, bx + bw / 2, ltop + 20);
+      }
+
+      function rysujModel(c, dt) {
+        var S = SOL[key], dk = ciemny(), glass = dk ? '#94a3b8' : '#64748b', mut = dk ? '#94a3b8' : '#64748b', czynny = k > .12, zl = 18, zr = W2 - 18, top = 34, bot = H2 - 34;
+        c.setTransform(d, 0, 0, d, 0, 0); c.clearRect(0, 0, W2, H2);
+        c.fillStyle = 'rgba(186,230,253,.28)'; c.fillRect(zl, top, zr - zl, bot - top);
+        /* elektrody modelu */
+        c.fillStyle = '#3f3f46'; c.fillRect(6, top - 6, 8, bot - top + 6); c.fillRect(W2 - 14, top - 6, 8, bot - top + 6);
+        c.font = '800 11px system-ui,sans-serif'; c.textAlign = 'center'; c.fillStyle = '#1d4ed8'; c.fillText('katoda (−)', 40, 18); c.fillStyle = '#b91c1c'; c.fillText('anoda (+)', W2 - 42, 18);
+        parts.forEach(function (p) {
+          var sp = SP[p.id], v0 = 26;
+          p.vx += (Math.random() - .5) * v0 * dt * 8; p.vy += (Math.random() - .5) * v0 * dt * 8;
+          if (czynny && sp.q) p.vx += -Math.sign(sp.q) * 0 + (sp.q > 0 ? -1 : 1) * 60 * k * dt;     // kationy → katoda (lewa), aniony → anoda (prawa)
+          var v = Math.hypot(p.vx, p.vy), mx = 40 + (czynny && sp.q ? 30 * k : 0); if (v > mx) { p.vx *= mx / v; p.vy *= mx / v; }
+          p.x += p.vx * dt; p.y += p.vy * dt; p.a += dt * .5; var m = sp.r + 2;
+          if (p.x < zl + m) { p.x = zl + m; p.vx = Math.abs(p.vx); } if (p.x > zr - m) { p.x = zr - m; p.vx = -Math.abs(p.vx); }
+          if (p.y < top + m) { p.y = top + m; p.vy = Math.abs(p.vy); } if (p.y > bot - m) { p.y = bot - m; p.vy = -Math.abs(p.vy); }
+          c.lineWidth = 1; c.strokeStyle = 'rgba(0,0,0,.3)';
+          if (sp.wodory) {   // H₂O: O z dwoma H
+            c.fillStyle = sp.col; c.beginPath(); c.arc(p.x, p.y, sp.r * .8, 0, 7); c.fill(); c.stroke();
+            [-1, 1].forEach(function (s) { var ax = p.x + Math.cos(p.a + s * .9) * sp.r * 1.1, ay = p.y + Math.sin(p.a + s * .9) * sp.r * 1.1; c.fillStyle = '#e5e7eb'; c.beginPath(); c.arc(ax, ay, sp.r * .45, 0, 7); c.fill(); c.stroke(); });
+          } else {
+            c.fillStyle = sp.col; c.beginPath(); c.arc(p.x, p.y, sp.r, 0, 7); c.fill(); c.stroke();
+            c.fillStyle = '#fff'; c.font = '700 ' + Math.max(7, Math.round(sp.r * (sp.lab.length > 3 ? .5 : .75))) + 'px system-ui,sans-serif'; c.textAlign = 'center'; c.fillText(sp.lab, p.x, p.y + sp.r * .22);
+            if (sp.q) { var bx = p.x + sp.r * .85, by = p.y - sp.r * .85; c.fillStyle = sp.q > 0 ? '#ea580c' : '#2563eb'; c.beginPath(); c.arc(bx, by, 6, 0, 7); c.fill(); c.fillStyle = '#fff'; c.font = '800 9px system-ui,sans-serif'; c.fillText(Math.abs(sp.q) > 1 ? '2' + (sp.q > 0 ? '+' : '−') : (sp.q > 0 ? '+' : '−'), bx, by + 3); }
+          }
+        });
+        c.strokeStyle = glass; c.lineWidth = 3; c.beginPath(); c.moveTo(zl, top); c.lineTo(zl, bot); c.lineTo(zr, bot); c.lineTo(zr, top); c.stroke();
+        c.fillStyle = mut; c.font = '600 10px system-ui,sans-serif'; c.textAlign = 'center'; c.fillText('model roztworu: ' + S.f, W2 / 2, H2 - 10);
+      }
+
+      SOL.dist.id = 'dist'; Object.keys(SOL).forEach(function (i) { SOL[i].id = i; });
+      rebuild();
+      var h = U.anim(host, function (dt) {
+        t += dt; var cel = on ? SOL[key].cond : 0; k += (cel - k) * Math.min(1, dt * 3);
+        rysujTester(c1.getContext('2d')); rysujModel(c2.getContext('2d'), dt);
+      });
+    }
+  });
+})();
+
+(function(){document.querySelectorAll('[data-klocek]').forEach(function(f){var o={};try{o=JSON.parse(f.getAttribute('data-opt')||'{}')}catch(e){}Object.keys(o).forEach(function(k){if(o[k]!==''&&!isNaN(Number(o[k])))o[k]=Number(o[k])});KLOCKI.montuj(f.querySelector('.lk-fig-body'),f.getAttribute('data-klocek'),o)})})();
 /* lekcja.js — wspólne zachowanie lekcji wszystkich przedmiotów: fiszki, test, treści akademickie,
    postęp czytania, podświetlenie spisu, tryb ciemny, montaż grafik przedmiotu (window.BIO / window.LEKCJA_VIZ). Edytuj tylko tutaj. */
 (function(){

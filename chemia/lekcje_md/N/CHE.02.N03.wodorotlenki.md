@@ -409,7 +409,7 @@ Przy **fenoloftaleinie** zasada jest malinowa; po zobojętnieniu roztwór odbarw
 
 Przesuwaj suwak lub klikaj wartości na skali. Zobaczysz jednocześnie kolor roztworu, barwy trzech wskaźników i przykłady substancji.
 
-@model ph-indicators-v03 | Panel pH — skala, barwy wskaźników, przykłady roztworów | Barwy z CHE.COLORS
+@klocek ph-indicators-v03 | Panel pH — skala, barwy wskaźników, przykłady roztworów
 @opis Panel pH: skala od 0 do 14 z zaznaczonym odczynem kwasowym, obojętnym i zasadowym, barwy wskaźników (uniwersalny, fenoloftaleina, oranż metylowy, wywar z czerwonej kapusty) przy różnych pH oraz przykłady codziennych roztworów. Wniosek: odczyn rozpoznaje się wskaźnikiem — fenoloftaleina barwi się na malinowo tylko w odczynie zasadowym.
 
 > Woda czysta ma w przybliżeniu pH 7. Woda destylowana przechowywana na powietrzu pochłania CO₂, dlatego jej pH bywa nieco niższe od 7. Zakres zmiany barwy oranżu metylowego: pH ≈ 3,1–4,4.

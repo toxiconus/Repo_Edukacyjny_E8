@@ -111,7 +111,11 @@
       "palniki.js",
       "uklad_okresowy.js",
       "karta_bhp.js",
-      "schemat_przemian.js"
+      "schemat_przemian.js",
+      "ui_klocki.js",
+      "model_widok.js",
+      "ruch_che.js",
+      "ph_panel.js"
     ],
     "LKO-KRZYWE": [
       "klocki.js",
@@ -404,7 +408,9 @@
       "pomocnicze.js",
       "bilans_rownania.js",
       "zbieranie_gazu.js",
-      "karta_bhp.js"
+      "karta_bhp.js",
+      "ui_klocki.js",
+      "przewodnictwo.js"
     ],
     "F02": [
       "klocki.js",

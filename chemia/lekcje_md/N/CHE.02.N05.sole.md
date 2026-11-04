@@ -224,7 +224,7 @@ Jony istnieją już w krysztale, ale są unieruchomione w sieci. W wodzie (lub w
 Szkolna reguła „sole są mocnymi elektrolitami” ma wyjątki: niektóre sole metali ciężkich istnieją w roztworze częściowo jako cząsteczki lub kompleksy, np. HgCl₂, który w roztworze występuje głównie w postaci cząsteczek.
 :::
 
-@model gfx-scene-conductivity | Przewodzenie prądu: elektrolity i dysocjacja | Scena GFX · tester przewodnictwa
+@klocek przewodnictwo {roztwor="NaCl"} | Przewodzenie prądu: elektrolity i dysocjacja
 @opis Tester przewodnictwa z żarówką zanurzany w różnych cieczach: w roztworach kwasów, zasad i soli żarówka świeci (jasność zależy od liczby jonów), w wodzie destylowanej i roztworze cukru nie świeci; obok model ruchomych jonów. Wniosek: prąd w roztworze przewodzą jony powstałe w dysocjacji.
 
 ## 5 | Tabela rozpuszczalności [[basic:E8]] {#rozpuszczalnosc}
