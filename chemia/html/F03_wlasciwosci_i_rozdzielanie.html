@@ -1507,14 +1507,15 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
   var OBS = [['gaz', 'pęcherzyki gazu'], ['osad', 'osad (ciało stałe opada na dno)'], ['barwa', 'zmiana barwy roztworu'], ['nic', 'żadna widoczna zmiana']];
   KLOCKI.def('zlewka-predykcja', {
     opis: 'Najpierw wybierasz, czego spodziewasz się w zlewce, potem animacja pokazuje wynik i porównuje go z przewidywaniem.',
-    domyslne: {},
-    html: function (host) {
-      var U = KLOCKI.ui, p = box(host), i = 0, wyb = null, pokaz = false, t = 0;
+    domyslne: {tryb: 'oba'},   // tryb="test": tylko z przewidywaniem (zadanie); domyślnie można też uruchomić bez przewidywania
+    html: function (host, opc) {
+      var U = KLOCKI.ui, p = box(host), i = 0, wyb = null, pokaz = false, t = 0, test = String(opc && opc.tryb) === 'test';
       function nast() { i = (i + 1) % SC.length; wyb = null; pokaz = false; t = 0; ui(); }
       function ui() {
         p[0].innerHTML = '<div style="font-weight:700;margin-bottom:6px">Doświadczenie: ' + SC[i][0] + '</div><div style="margin-bottom:4px">Czego się spodziewasz?</div>';
         OBS.forEach(function (o) { var b = U.chip(o[1], wyb === o[0], function () { if (pokaz) return; wyb = o[0]; ui(); }); p[0].appendChild(b); });
         p[0].appendChild(U.btn('Sprawdź →', function () { if (!wyb) { p[2].innerHTML = 'Najpierw wybierz hipotezę — dopiero potem doświadczenie.'; return; } pokaz = true; t = 0; ui(); }));
+        if (!test) p[0].appendChild(U.btn('Uruchom bez przewidywania', function () { wyb = null; pokaz = true; t = 0; ui(); }));
         p[0].appendChild(U.btn('Następne doświadczenie', nast));
         rys();
       }
@@ -1522,8 +1523,8 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
         var s = SC[i], kol = s[4], ps = s[5], bub = '', os = '';
         if (pokaz) { if (s[1] === 'gaz') for (var q = 0; q < 14; q++) { var f = ((t * .5 + q / 14) % 1); bub += '<circle cx="' + (170 + (q * 37) % 100) + '" cy="' + (190 - f * 120) + '" r="' + (2 + (q % 3)) + '" fill="#fff" stroke="#64748b" stroke-width=".8"/>'; } if (s[1] === 'osad') os = '<path d="M130 188 Q220 ' + (188 - 22 * Math.min(1, t / 3)) + ' 310 188 Z" fill="' + ps + '" stroke="#94a3b8"/>'; if (s[1] === 'osad') kol = mixc(kol, '#ffffff', .35); }
         p[1].innerHTML = '<svg viewBox="0 0 440 230" width="100%" style="max-width:440px;display:block;margin:auto" role="img" aria-label="Zlewka: ' + s[0] + '"><path d="M110 30 V190 Q110 205 125 205 H315 Q330 205 330 190 V30" fill="' + kol + '" fill-opacity=".7" stroke="#64748b" stroke-width="3"/><rect x="112" y="30" width="216" height="20" fill="var(--surface,#fff)"/>' + os + bub + '</svg>';
-        if (pokaz) { var ok = wyb === s[1]; p[2].innerHTML = (ok ? '<b style="color:var(--c-basic,#2e7d4f)">Hipoteza potwierdzona.</b> ' : '<b style="color:var(--c-error,#b83a45)">Hipoteza obalona</b> (oczekiwano: ' + OBS.filter(function (o) { return o[0] === wyb; })[0][1] + '). ') + s[3] + '<br><i>' + s[2] + '</i><br>Hipotezę formułuje się <b>przed</b> doświadczeniem; wynik ją wspiera albo obala.'; }
-        else if (!p[2].innerHTML || p[2].innerHTML.indexOf('Najpierw') < 0) p[2].innerHTML = 'Wybierz przewidywanie i naciśnij „Sprawdź”.';
+        if (pokaz) { var ok = wyb === s[1]; p[2].innerHTML = (!wyb ? '<b>Obserwacja bez przewidywania.</b> ' : ok ? '<b style="color:var(--c-basic,#2e7d4f)">Hipoteza potwierdzona.</b> ' : '<b style="color:var(--c-error,#b83a45)">Hipoteza obalona</b> (oczekiwano: ' + OBS.filter(function (o) { return o[0] === wyb; })[0][1] + '). ') + s[3] + '<br><i>' + s[2] + '</i>' + (wyb ? '<br>Hipotezę formułuje się <b>przed</b> doświadczeniem; wynik ją wspiera albo obala.' : ''); }
+        else if (!p[2].innerHTML || p[2].innerHTML.indexOf('Najpierw') < 0) p[2].innerHTML = test ? 'Wybierz przewidywanie i naciśnij „Sprawdź”.' : 'Wybierz przewidywanie i naciśnij „Sprawdź” — albo uruchom doświadczenie bez przewidywania.';
       }
       function mixc(a, b, k) { return a; }
       ui(); U.anim(host, function (dt) { t += dt; if (pokaz) rys(); });

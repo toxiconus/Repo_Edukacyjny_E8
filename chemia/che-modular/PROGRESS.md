@@ -324,3 +324,4 @@
 - 2026-11-04: zrzuty ciemne: miareczkowanie, bufor, elektryzowanie, kule-ladunek — czytelne; 7 zgłoszeń testu kontrastu = fałszywe (pastelowe pigułki z ciemnym tekstem).
 - 2026-11-04: czasteczki-3d: skala modelu dopasowana do rozmiaru cząsteczki; destylacja: podpis kolby nie nachodzi na palnik.
 - 2026-11-04: naprawione 3 błędy klocków: FIZ-01 (+jony_w_wodzie.js), LKO-ORG06 (+bilans_rownania.js), N04 HNO₃ SMILES bez ładunków; nowy test narzedzia/test_brak_klockow.js (0 błędów).
+- 2026-11-04: zlewka-predykcja: przycisk „Uruchom bez przewidywania” (domyślnie); tryb="test" wymusza przewidywanie.
