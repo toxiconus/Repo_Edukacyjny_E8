@@ -596,7 +596,7 @@ Nie należy używać reguły „sól → obojętna”. Dla tej samej grupy soli 
 > W starszych podręcznikach spotkasz zapis NH₄⁺ + H₂O ⇌ NH₃·H₂O + H⁺ (lub z „NH₄OH”) — sens jest ten sam: powstają jony oksoniowe. W lekcji używamy zapisu z H₃O⁺, bo „NH₄OH” nie istnieje jako wyodrębniona substancja.
 :::
 
-@zlewka sole-doswiadczenia-v01 hyd-na2co3 | Zobacz w zlewce: odczyn roztworów soli (pracownia GFX)
+@klocek zlewka-rx {k="hyd-na2co3"}
 @opis Roztwór węglanu sodu z wskaźnikiem: wskaźnik pokazuje odczyn zasadowy (fenoloftaleina barwi się na malinowo). Wniosek: roztwory niektórych soli nie mają odczynu obojętnego — sól mocnej zasady i słabego kwasu daje odczyn zasadowy.
 
 ::: adv | Hydroliza ilościowo | poziom akademicki · poza maturą rozszerzoną
@@ -663,7 +663,7 @@ Wniosek: W reakcji zobojętniania powstała sól.
 Równanie:: HCl + NaOH → NaCl + H₂O
 BHP: Okulary; nie dopuścić do pryskania przy odparowywaniu; pipetować gruszką.
 
-@zlewka sole-doswiadczenia-v01 hclNaOH+php | Zobacz w zlewce (pracownia GFX)
+@klocek zlewka-rx {k="hclNaOH+php"}
 @opis Do malinowego roztworu NaOH z fenoloftaleiną dodaje się porcjami kwas solny: barwa słabnie i w punkcie zobojętnienia roztwór staje się bezbarwny. Wniosek: HCl + NaOH → NaCl + H₂O (H⁺ + OH⁻ → H₂O) — kwas i zasada się zobojętniają.
 :::
 
@@ -677,7 +677,7 @@ Wniosek: Zaszła reakcja strąceniowa: Cu²⁺ + 2 OH⁻ → Cu(OH)₂↓.
 Równanie:: CuSO₄ + 2 NaOH → Cu(OH)₂↓ + Na₂SO₄
 BHP: NaOH żrący — okulary, rękawice.
 
-@zlewka sole-doswiadczenia-v01 rx-cu-naoh | Zobacz w zlewce (pracownia GFX)
+@klocek zlewka-rx {k="cuso4Naoh"}
 @opis Do niebieskiego roztworu soli miedzi(II) dodano roztwór NaOH: wytrąca się niebieski, galaretowaty osad wodorotlenku miedzi(II). Wniosek: Cu²⁺ + 2 OH⁻ → Cu(OH)₂↓ — reakcja soli z zasadą zachodzi, gdy powstaje osad.
 :::
 
@@ -693,7 +693,7 @@ BHP: AgNO₃ plami skórę na czarno.
 
 > Wersja klasyczna: roztwory AgNO₃ i NaCl w probówce dają biały, serowaty osad (AgNO₃ + NaCl → AgCl↓ + NaNO₃).
 
-@zlewka sole-doswiadczenia-v01 rx-ag-cl | Zobacz w zlewce (pracownia GFX)
+@klocek zlewka-rx {k="agno3Nacl"}
 @opis Do roztworu chlorku dodano roztwór azotanu(V) srebra: wytrąca się biały, serowaty osad. Wniosek: Ag⁺ + Cl⁻ → AgCl↓ — reakcja strąceniowa służy do wykrywania jonów chlorkowych.
 :::
 
@@ -707,7 +707,7 @@ Wniosek: Fe wypiera Cu z roztworu soli (redoks).
 Równanie:: Fe + CuSO₄ → FeSO₄ + Cu
 BHP: Okulary.
 
-@zlewka sole-doswiadczenia-v01 rx-fe-cuso4 | Zobacz w zlewce (pracownia GFX)
+@klocek zlewka-rx {k="feCuso4"}
 @opis Żelazny gwóźdź w niebieskim roztworze siarczanu(VI) miedzi(II): na żelazie osadza się rudy nalot miedzi, a roztwór stopniowo traci niebieską barwę. Wniosek: Fe + CuSO₄ → FeSO₄ + Cu — metal aktywniejszy wypiera mniej aktywny z roztworu jego soli.
 :::
 
@@ -721,7 +721,7 @@ Wniosek: Powstał CaO, który z wodą daje zasadę Ca(OH)₂.
 Równanie:: CaCO₃ → CaO + CO₂;  CaO + H₂O → Ca(OH)₂
 BHP: CaO żrący, wysoka temperatura — tylko pokaz.
 
-@zlewka sole-doswiadczenia-v01 caoH2o | Zobacz w zlewce (pracownia GFX)
+@klocek zlewka-rx {k="caoH2o"}
 @opis Tlenek wapnia (wapno palone) zalany wodą: mieszanina silnie się ogrzewa, powstaje białe „mleko wapienne”, a wskaźnik wskazuje odczyn zasadowy. Wniosek: CaO + H₂O → Ca(OH)₂ — tlenek metalu aktywnego tworzy z wodą wodorotlenek.
 :::
 
@@ -735,7 +735,7 @@ Wniosek: Sole słabych kwasów — odczyn zasadowy, sole słabych zasad — kwas
 Równanie:: CO₃²⁻ + H₂O ⇌ HCO₃⁻ + OH⁻;  NH₄⁺ + H₂O ⇌ NH₃ + H₃O⁺
 BHP: Okulary.
 
-@zlewka sole-doswiadczenia-v01 hyd-nh4cl | Zobacz w zlewce (pracownia GFX)
+@klocek zlewka-rx {k="hyd-nh4cl"}
 @opis Roztwór chlorku amonu z wskaźnikiem: wskaźnik uniwersalny pokazuje odczyn lekko kwasowy. Wniosek: sól słabej zasady i mocnego kwasu daje w roztworze odczyn kwasowy.
 :::
 
@@ -749,7 +749,7 @@ Wniosek: Tlenek metalu reaguje z kwasem — powstaje sól (jony Cu²⁺ nadają 
 Równanie:: CuO + H₂SO₄ → CuSO₄ + H₂O
 BHP: H₂SO₄ żrący — okulary, rękawice; ogrzewać ostrożnie, wylotem probówki od siebie.
 
-@zlewka sole-doswiadczenia-v01 cuoH2so4 | Zobacz w zlewce (pracownia GFX)
+@klocek zlewka-rx {k="cuoH2so4"}
 @opis Czarny tlenek miedzi(II) w roztworze kwasu siarkowego(VI), lekko ogrzewanym: proszek znika, a roztwór barwi się na niebiesko. Wniosek: CuO + H₂SO₄ → CuSO₄ + H₂O — tlenek zasadowy reaguje z kwasem, tworząc sól i wodę.
 :::
 
@@ -763,14 +763,12 @@ Wniosek: Musuje Na₂CO₃; osad z BaCl₂ — Na₂SO₄; osad z AgNO₃ — Na
 Równanie:: Na₂CO₃ + 2 HCl → 2 NaCl + H₂O + CO₂↑;  Ba²⁺ + SO₄²⁻ → BaSO₄↓;  Ag⁺ + Cl⁻ → AgCl↓
 BHP: Sole baru trujące — odpady do pojemnika; AgNO₃ plami skórę.
 
-@zlewka sole-doswiadczenia-v01 na2co3Hcl | Zobacz w zlewce: krok 1 (pracownia GFX)
+@klocek zlewka-rx {k="na2co3Hcl"}
 @opis Do roztworu węglanu sodu dodano kwas solny: wydzielają się pęcherzyki bezbarwnego gazu. Wniosek: Na₂CO₃ + 2 HCl → 2 NaCl + H₂O + CO₂↑ — sól z kwasem reaguje, gdy powstaje gaz.
 
-@zlewka sole-doswiadczenia-v01 bacl2Na2so4 | krok 2
+@klocek zlewka-rx {k="bacl2Na2so4"}
 @opis Do roztworu siarczanu(VI) sodu dodano roztwór chlorku baru: wytrąca się biały, drobnokrystaliczny osad. Wniosek: Ba²⁺ + SO₄²⁻ → BaSO₄↓ — reakcja dwóch soli zachodzi, gdy powstaje osad.
 
-@zlewka sole-doswiadczenia-v01 rx-ag-cl | krok 3
-@opis Do roztworu chlorku dodano roztwór azotanu(V) srebra: wytrąca się biały, serowaty osad. Wniosek: Ag⁺ + Cl⁻ → AgCl↓ — reakcja strąceniowa służy do wykrywania jonów chlorkowych.
 :::
 
 ::: dosw | Doświadczenie 9 — Hydrat CuSO₄: wykrywanie wody
@@ -783,7 +781,7 @@ Wniosek: Woda krystalizacyjna jest częścią kryształu; bezwodny CuSO₄ wią�
 Równanie:: CuSO₄·5H₂O → CuSO₄ + 5 H₂O (ogrzewanie);  CuSO₄ + 5 H₂O → CuSO₄·5H₂O
 BHP: Okulary; CuSO₄ szkodliwy — nie dotykać gołą ręką; gorąca parownica.
 
-@zlewka sole-doswiadczenia-v01 cuso4Hydrate | Zobacz w zlewce (pracownia GFX)
+@klocek zlewka-rx {k="cuso4Hydrate"}
 @opis Niebieskie kryształy uwodnionego siarczanu(VI) miedzi(II) ogrzewane w probówce: tracą wodę (para skrapla się u wylotu) i stają się białym proszkiem; po dodaniu kropli wody znów błękitnieją. Wniosek: CuSO₄·5H₂O ⇌ CuSO₄ + 5 H₂O — hydrat zawiera wodę krystalizacyjną, a bezwodny CuSO₄ wykrywa wodę.
 :::
 
@@ -797,7 +795,7 @@ Wniosek: Jony Ca²⁺ zostały usunięte jako CaCO₃ — woda zmiękczona.
 Równanie:: CaCl₂ + Na₂CO₃ → CaCO₃↓ + 2 NaCl;  Ca²⁺ + CO₃²⁻ → CaCO₃↓
 BHP: Okulary; soda drażni oczy.
 
-@zlewka sole-doswiadczenia-v01 cacl2Na2co3 | Zobacz w zlewce (pracownia GFX)
+@klocek zlewka-rx {k="cacl2Na2co3"}
 @opis Do roztworu chlorku wapnia dodano roztwór węglanu sodu: wytrąca się biały osad. Wniosek: Ca²⁺ + CO₃²⁻ → CaCO₃↓ — węglan wapnia jest trudno rozpuszczalny.
 :::
 

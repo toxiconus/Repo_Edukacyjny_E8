@@ -27,5 +27,13 @@ Bez odpowiednika (sprawdzić przed archiwizacją, czy lekcje N01 ich nie planuj�
 ## Używane w md, ale już jako klocki (4)
 `acid-rain-v01`, `n02-doswiadczenia-v01`, `sole-doswiadczenia-v01` (jako `@klocek`), `stech-kalkulator-v01` występuje jeszcze w kopiach `chemia/pakiet/md/*` (przestarzałe kopie gotowych lekcji).
 
+## Aktualizacja 2026-11-04 (uwaga: inne widoki też mają odpowiedniki)
+- n01-konstruktor / n01-reaktor / n01-trend / n01-tlenki → klocki `okresowy_tlenki.js` (konstruktor-tlenku, reaktor-tlenku, trend-tlenkow, detektor-tlenku)
+- j03-osady → `osady-dwie-sole`; neutralization → `rownania-jonowe`
+- n01-doswiadczenia → nowa pracownia `n01-doswiadczenia-v01` (pracownie_rx.js, 64 specyfikacje łącznie)
+- n01-spalanie → `palenie`/`plomien`/`palnik-gazowy` (do porównania, `mgO2` → zlewka `f01Mg`)
+- Wszystkie `@zlewka` w lekcjach zamienione na `zlewka-rx` / `zlewki-rx` (0 przycisków pracowni GFX)
+- Bez odpowiednika został tylko `kinetics-v01` (do przeportowania).
+
 ## Decyzja
 Nic nie usunięto. Archiwizacja (przeniesienie do `chemia/archiwum/`) po akceptacji; wymaga przebudowy `gfx/index.json`.

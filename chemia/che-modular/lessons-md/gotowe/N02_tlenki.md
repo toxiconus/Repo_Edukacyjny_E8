@@ -680,7 +680,7 @@ Obserwacja to to, co rejestrują zmysły. Wniosek to interpretacja (nazwa produk
 **Równanie:** 2 Mg + O₂ → 2 MgO
 **BHP:** nie patrz bezpośrednio na płomień; okulary.
 :::
-@zlewka n01-spalanie-v01 mgO2 | Zobacz w modelu spalania
+@klocek zlewka-rx {k="f01Mg"}
 @opis Spalanie magnezu w tlenie: oślepiająco jasny, biały płomień; po spaleniu zostaje biały proszek tlenku magnezu. Wniosek: 2 Mg + O₂ → 2 MgO.
 
 ### Doświadczenie 2: CaO + H₂O (gaszenie wapna) {.merge-h}
@@ -694,7 +694,7 @@ Obserwacja to to, co rejestrują zmysły. Wniosek to interpretacja (nazwa produk
 **Równanie:** CaO + H₂O → Ca(OH)₂
 **BHP:** nie dotykaj CaO mokrymi rękami; okulary; reakcja egzotermiczna.
 :::
-@zlewka n01-doswiadczenia-v01 caoH2o | Zobacz w zlewce (pracownia)
+@klocek zlewka-rx {k="caoH2o"}
 @opis Tlenek wapnia zalany wodą: mieszanina silnie się ogrzewa, powstaje zawiesina (wapno gaszone), a odczyn jest zasadowy. Wniosek: CaO + H₂O → Ca(OH)₂.
 
 ### Doświadczenie 3: woda wapienna + CO₂ {.merge-h}
@@ -709,7 +709,7 @@ Obserwacja to to, co rejestrują zmysły. Wniosek to interpretacja (nazwa produk
 **Uwaga:** przy dużym nadmiarze CO₂ osad może zniknąć (powstaje rozpuszczalny Ca(HCO₃)₂).
 **BHP:** nie wciągaj wody wapiennej do ust; wykonuj jako demonstrację.
 :::
-@zlewka n01-doswiadczenia-v01 caoh2Co2 | Zobacz w zlewce (pracownia)
+@klocek zlewka-rx {k="caoh2Co2"}
 @opis Tlenek węgla(IV) wprowadzany do klarownej wody wapiennej: woda mętnieje, pojawia się biała zawiesina CaCO₃. Wniosek: test na CO₂.
 
 ### Doświadczenie 4: CuO + H₂SO₄ {.merge-h}
@@ -723,7 +723,7 @@ Obserwacja to to, co rejestrują zmysły. Wniosek to interpretacja (nazwa produk
 **Równanie:** CuO + H₂SO₄ → CuSO₄ + H₂O
 **BHP:** okulary; H₂SO₄ jest żrący.
 :::
-@zlewka n01-doswiadczenia-v01 cuoH2so4 | Zobacz w zlewce (pracownia)
+@klocek zlewka-rx {k="cuoH2so4"}
 @opis Czarny tlenek miedzi(II) w rozcieńczonym kwasie siarkowym(VI), lekko ogrzewany: proszek znika, roztwór barwi się na niebiesko. Wniosek: CuO + H₂SO₄ → CuSO₄ + H₂O.
 
 @klocek palenie {metal="Mg"} | Pracownia: doświadczenia z tlenkami — zlewka, równania, obserwacje, BHP

@@ -276,7 +276,7 @@ Obserwacja: Piasek opada na dno; na sączku zostaje piasek (osad), do zlewki sp�
 Wniosek: Sedymentacja, dekantacja i sączenie rozdzielają nierozpuszczalne ciało stałe od cieczy. Proces fizyczny — brak równania reakcji.
 BHP: okulary; szkło — ostrożnie; ciecz wlewamy po bagietce, nie przebijamy sączka.
 
-@zlewka f03-rozdzielanie-v01 f03PiasekWoda | Zobacz w zlewce: piasek + woda
+@klocek zlewka-rx {k="f03PiasekWoda"}
 @opis Zlewka z wodą i piaskiem: po zamieszaniu woda jest mętna, po chwili piasek opada na dno, a nad nim zostaje klarowna woda. Wniosek: piasek nie rozpuszcza się w wodzie — taką mieszaninę rozdziela się sedymentacją z dekantacją albo sączeniem.
 :::
 
@@ -289,7 +289,7 @@ Obserwacja: Na sączku nie ma soli; przesącz jest słony. W parownicy woda paru
 Wniosek: Sól rozpuszczona przechodzi przez sączek; odzyskujemy ją przez odparowanie lub krystalizację, bo woda jest lotna, a sól nie.
 BHP: okulary; gorąca parownica — tylko szczypcami; pod koniec odparowania kryształy pryskają — zmniejszyć ogrzewanie.
 
-@zlewka f03-rozdzielanie-v01 f01Odparowanie | Zobacz w parownicy: odparowanie roztworu soli
+@klocek zlewka-rx {k="f01Odparowanie"}
 @opis Parownica z roztworem soli ogrzewana palnikiem: woda paruje, na dnie zostają białe kryształy soli. Wniosek: rozpuszczona sól nie zniknęła — odparowanie oddziela substancję stałą od lotnego rozpuszczalnika i jest zjawiskiem fizycznym.
 :::
 

@@ -1376,8 +1376,6 @@ Wniosek: Roztwór HCl ma odczyn kwasowy (pH < 7).
 Równanie: HCl → H⁺ + Cl⁻
 BHP: HCl żrący — okulary, rękawice; nie pipetować ustami.
 
-@zlewka kw-doswiadczenia-v01 indicator | Zobacz w zlewce (pracownia GFX)
-@opis Wskaźniki dodane do roztworu kwasu: papierek uniwersalny i oranż metylowy barwią się na czerwono, a fenoloftaleina pozostaje bezbarwna. Wniosek: roztwory kwasów mają odczyn kwasowy (pH < 7).
 :::
 
 ::: dosw | Doświadczenie 2 — Kwas + metal (Zn + HCl)
@@ -1390,7 +1388,7 @@ Wniosek: Cynk reaguje z HCl, wydzielając wodór.
 Równanie: Zn + 2 HCl → ZnCl₂ + H₂↑
 BHP: Okulary. Próbę „pyk” wykonuje nauczyciel albo uczeń wyłącznie pod jego nadzorem. Zbieramy małą porcję gazu w osobnej probówce; płomienia nie zbliżamy do probówki, w której gaz nadal się wydziela (wodór z powietrzem tworzy mieszaninę wybuchową). Nigdy przy dużej aparaturze.
 
-@zlewka kw-doswiadczenia-v01 acidMetal | Zobacz w zlewce (pracownia GFX)
+@klocek zlewka-rx {k="znHcl"}
 @opis Metal (np. cynk) w kwasie solnym: metal się roztwarza, wydzielają się pęcherzyki bezbarwnego gazu, który przy płomieniu daje odgłos „pyk”. Wniosek: Zn + 2 HCl → ZnCl₂ + H₂↑ — metal aktywny wypiera wodór z kwasu.
 
 @klocek zbieranie-gazu {gaz="H2" gazy="H2"} | Zn + HCl: zbieranie wodoru w probówce i próba „pyk!”
@@ -1410,7 +1408,7 @@ Wniosek: CaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂↑; CO₂ mętni wodę wapi
 Równanie: CaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂↑
 BHP: Okulary; nie wciągać wody wapiennej do ust.
 
-@zlewka kw-doswiadczenia-v01 carbonate | Zobacz w zlewce (pracownia GFX)
+@klocek zlewka-rx {k="caco3Hcl"}
 @opis Na węglan wapnia działa kwas: wydzielają się pęcherzyki gazu, który przepuszczony przez wodę wapienną powoduje jej zmętnienie. Wniosek: CaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂↑ — kwas wypiera z węglanu tlenek węgla(IV).
 
 @klocek zlewki-rx {k="caco3Hcl,skorupkaOcet"} | Kawałki CaCO₃ w HCl: burzenie i piana
@@ -1427,7 +1425,7 @@ Wniosek: NaOH + HCl → NaCl + H₂O.
 Równanie: NaOH + HCl → NaCl + H₂O
 BHP: Okulary, rękawice — NaOH i HCl żrące.
 
-@zlewka kw-doswiadczenia-v01 hclNaOH+php | Zobacz w zlewce (pracownia GFX)
+@klocek zlewka-rx {k="hclNaOH+php"}
 @opis Do malinowego roztworu NaOH z fenoloftaleiną dodaje się porcjami kwas solny: barwa słabnie i w punkcie zobojętnienia roztwór staje się bezbarwny. Wniosek: HCl + NaOH → NaCl + H₂O (H⁺ + OH⁻ → H₂O) — kwas i zasada się zobojętniają.
 
 @klocek zlewki-rx {k="naohHclPhph,phphKontrola"} | Zobojętnianie: malinowa barwa fenoloftaleiny znika
@@ -1444,7 +1442,7 @@ Wniosek: CuO reaguje z kwasem; powstaje Cu²⁺ (niebieski kolor).
 Równanie: CuO + H₂SO₄ → CuSO₄ + H₂O
 BHP: Okulary; H₂SO₄ żrący.
 
-@zlewka kw-doswiadczenia-v01 cuoH2so4 | Zobacz w zlewce (pracownia GFX)
+@klocek zlewka-rx {k="cuoH2so4"}
 @opis Czarny tlenek miedzi(II) w roztworze kwasu siarkowego(VI), lekko ogrzewanym: proszek znika, a roztwór barwi się na niebiesko. Wniosek: CuO + H₂SO₄ → CuSO₄ + H₂O — tlenek zasadowy reaguje z kwasem, tworząc sól i wodę.
 
 @klocek zlewki-rx {k="cuoH2so4,cuoH2so4Zimno"} | CuO + H₂SO₄ w ogrzewanej probówce
@@ -1461,8 +1459,6 @@ Wniosek: Kwasy są elektrolitami; HCl — mocny (prawie pełna dysocjacja), CH�
 Równanie: HCl + H₂O → H₃O⁺ + Cl⁻;  CH₃COOH + H₂O ⇌ H₃O⁺ + CH₃COO⁻
 BHP: Niskie napięcie (bateria); okulary; nie dotykać elektrod mokrymi rękami.
 
-@zlewka kw-doswiadczenia-v01 conductivity | Zobacz w zlewce (pracownia GFX)
-@opis Tester z żarówką zanurzony w roztworze kwasu: żarówka świeci, a w wodzie destylowanej — nie. Wniosek: w roztworze kwasu są jony powstałe w dysocjacji, które przewodzą prąd.
 :::
 
 ::: dosw | Doświadczenie 7 — Aktywność metali wobec kwasu solnego
@@ -1475,7 +1471,7 @@ Wniosek: Aktywność: Mg > Zn > Fe > (H) > Cu.
 Równanie: Mg + 2 HCl → MgCl₂ + H₂↑;  Fe + 2 HCl → FeCl₂ + H₂↑;  Cu + HCl → brak reakcji
 BHP: Okulary; wodór łatwopalny — z dala od ognia.
 
-@zlewka kw-doswiadczenia-v01 szereg | Zobacz w zlewce (pracownia GFX)
+@klocek zlewki-rx {zestaw="szereg-hcl"}
 @opis Cztery probówki z kwasem solnym i metalami Mg, Zn, Fe, Cu: magnez reaguje najgwałtowniej, cynk wyraźnie, żelazo powoli, przy miedzi nie ma pęcherzyków. Wniosek: z kwasów wodór wypierają tylko metale aktywniejsze od wodoru.
 
 @klocek zlewki-rx {k="cuHcl,znHcl"} | Cu + HCl: brak reakcji (dla porównania z Zn)
@@ -1492,7 +1488,7 @@ Wniosek: Stężony H₂SO₄ ma właściwości higroskopijne i odwadniające —
 Równanie: C₁₂H₂₂O₁₁ →(H₂SO₄ stęż.) 12 C + 11 H₂O
 BHP: Tylko pokaz pod dygestorium; okulary, rękawice; SO₂ drażni drogi oddechowe.
 
-@zlewka kw-doswiadczenia-v01 wlasciwosci | Zobacz w zlewce (pracownia GFX)
+@klocek zlewki-rx {zestaw="stezone-kwasy"}
 @opis Pokazy stężonych kwasów: cukier ze stężonym H₂SO₄ czernieje i pęcznieje, białko z HNO₃ żółknie, stężony HCl „dymi” na powietrzu. Wniosek: stężone kwasy są żrące, utleniające i odwadniające — tylko pokaz nauczyciela pod wyciągiem.
 
 @klocek zlewki-rx {k="cukierH2so4,hclDymi"} | Cukier + stężony H₂SO₄: czernienie i spienianie (pokaz)
@@ -1509,8 +1505,6 @@ Wniosek: HNO₃ denaturuje białko i nitruje pierścienie aromatyczne aminokwas�
 Równanie: białko (reszty aromatyczne) + HNO₃ → żółte nitrozwiązki
 BHP: Stężony HNO₃ — silnie żrący i utleniający; tylko pokaz.
 
-@zlewka kw-doswiadczenia-v01 wlasciwosci | Zobacz w zlewce (pracownia GFX)
-@opis Pokazy stężonych kwasów: cukier ze stężonym H₂SO₄ czernieje i pęcznieje, białko z HNO₃ żółknie, stężony HCl „dymi” na powietrzu. Wniosek: stężone kwasy są żrące, utleniające i odwadniające — tylko pokaz nauczyciela pod wyciągiem.
 :::
 
 ::: dosw | Doświadczenie 10 — Odróżnianie HCl od CH₃COOH
@@ -1523,8 +1517,6 @@ Wniosek: HCl jest kwasem mocnym (pełna dysocjacja), CH₃COOH — słabym (ok. 
 Równanie: Mg + 2 H₃O⁺ → Mg²⁺ + H₂↑ + 2 H₂O
 BHP: Okulary.
 
-@zlewka kw-doswiadczenia-v01 conductivity | Zobacz w zlewce (pracownia GFX)
-@opis Tester z żarówką zanurzony w roztworze kwasu: żarówka świeci, a w wodzie destylowanej — nie. Wniosek: w roztworze kwasu są jony powstałe w dysocjacji, które przewodzą prąd.
 :::
 
 ::: karta warning | Obserwacja ≠ wniosek

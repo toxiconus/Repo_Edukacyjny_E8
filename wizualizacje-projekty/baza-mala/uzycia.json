@@ -432,9 +432,7 @@
   "ka-pka-table": {},
   "kinetics-v01": {},
   "kw-bufor-v01": {},
-  "kw-doswiadczenia-v01": {
-   "N04": 10
-  },
+  "kw-doswiadczenia-v01": {},
   "kw-dysocjacja-v01": {
    "N04": 1
   },
@@ -451,18 +449,14 @@
   "molecule-electrons": {},
   "molecule-orbitals": {},
   "molecule3d-merged": {},
-  "n01-doswiadczenia-v01": {
-   "N02": 3
-  },
+  "n01-doswiadczenia-v01": {},
   "n01-konstruktor-v01": {},
   "n01-reaktor-v01": {},
-  "n01-spalanie-v01": {
-   "N02": 1
-  },
+  "n01-spalanie-v01": {},
   "n01-tlenki-v01": {},
   "n01-trend-v01": {},
   "n02-doswiadczenia-v01": {
-   "N03": 8
+   "N03": 1
   },
   "n02-dysocjacja-v01": {
    "N03": 1
@@ -493,7 +487,7 @@
   "f05-izotopy-v01": {},
   "periodic-54": {},
   "ph-indicators-v03": {
-   "N03": 2,
+   "N03": 1,
    "N04": 1
   },
   "ph-ladder": {},
@@ -502,8 +496,7 @@
   "rownania-jonowe-v01": {},
   "safety": {},
   "sole-doswiadczenia-v01": {
-   "C2w_wzor_elementarny_rzeczywisty": 1,
-   "N05": 14
+   "N05": 1
   },
   "species-v01": {},
   "stech-kalkulator-v01": {},
@@ -579,9 +572,7 @@
   "dropper": {},
   "gasCollect": {},
   "tubeRack": {},
-  "conductivity": {
-   "N04": 2
-  },
+  "conductivity": {},
   "pHscale": {},
   "pHmeter": {},
   "thermometer": {},
@@ -597,36 +588,22 @@
   "fieldMap": {},
   "chargeBar": {},
   "discharge": {},
-  "acidMetal": {
-   "N04": 1
-  },
-  "indicator": {
-   "N04": 1
-  },
+  "acidMetal": {},
+  "indicator": {},
   "indicatorRack": {},
   "titration": {},
   "dilution": {},
   "gasCollection": {},
-  "carbonate": {
-   "N04": 1
-  },
+  "carbonate": {},
   "heating": {},
-  "liH2o": {
-   "F06": 1
-  },
-  "kH2o": {
-   "F06": 1
-  },
+  "liH2o": {},
+  "kH2o": {},
   "caH2o": {},
   "mgH2oHot": {},
   "na2oH2o": {},
   "k2oH2o": {},
   "li2oH2o": {},
-  "caoH2o": {
-   "N02": 1,
-   "N03": 1,
-   "N05": 1
-  },
+  "caoH2o": {},
   "mgoH2o": {},
   "baoH2o": {},
   "mgcl2Naoh": {},
@@ -648,9 +625,7 @@
   "cuoh2Hcl": {},
   "feoh3Hcl": {},
   "znoh2Hcl": {},
-  "aloh3Naoh": {
-   "N03": 1
-  },
+  "aloh3Naoh": {},
   "znoh2Naoh": {},
   "baoh2Co2": {},
   "cuoh2Heat": {},
@@ -673,26 +648,13 @@
   "al2o3NaohAq": {},
   "znoNaohAq": {},
   "sio2Naoh": {},
-  "bacl2Na2so4": {
-   "N05": 1
-  },
-  "cacl2Na2co3": {
-   "N05": 1
-  },
-  "na2co3Hcl": {
-   "N05": 1
-  },
-  "cuso4Hydrate": {
-   "C2w_wzor_elementarny_rzeczywisty": 1,
-   "N05": 1
-  },
+  "bacl2Na2so4": {},
+  "cacl2Na2co3": {},
+  "na2co3Hcl": {},
+  "cuso4Hydrate": {},
   "hyd-nacl": {},
-  "hyd-na2co3": {
-   "N05": 1
-  },
-  "hyd-nh4cl": {
-   "N05": 1
-  },
+  "hyd-na2co3": {},
+  "hyd-nh4cl": {},
   "hyd-cuso4": {},
   "metanSpalanie": {},
   "lancuch-poziomow": {
@@ -929,9 +891,21 @@
    "LKO_ORG07_cukry": 1,
    "N04": 6
   },
-  "zlewka-rx": {},
+  "zlewka-rx": {
+   "C2w_wzor_elementarny_rzeczywisty": 1,
+   "F01": 6,
+   "F02": 3,
+   "F03": 2,
+   "F17": 1,
+   "N01": 1,
+   "N02": 4,
+   "N03": 7,
+   "N04": 4,
+   "N05": 12
+  },
   "zlewki-rx": {
-   "N04": 16
+   "F06": 2,
+   "N04": 18
   },
   "reakcje-przewidz": {
    "N04": 1
@@ -1205,17 +1179,12 @@
    "POL.02.G15.zdania_wspolrzedne": 1
   },
   "f01-doswiadczenia-v01": {
-   "F01": 7,
-   "F02": 3,
-   "F17": 1,
-   "N01": 1
+   "F01": 1
   },
   "f03-rozdzielanie-v01": {
-   "F03": 3
+   "F03": 1
   },
-  "f06-doswiadczenia-v01": {
-   "F06": 5
-  },
+  "f06-doswiadczenia-v01": {},
   "cah2H2o": {},
   "nahH2o": {},
   "nh4clCaoh2": {},
@@ -1227,41 +1196,17 @@
   "nh3Hcl": {},
   "h2sPbac": {},
   "h2sCuso4": {},
-  "f01SolWoda": {
-   "F01": 1,
-   "F02": 1
-  },
-  "f01Odparowanie": {
-   "F01": 1,
-   "F02": 1,
-   "F03": 1
-  },
-  "f01SodaOcet": {
-   "F01": 1
-  },
-  "f01WodaWapienna": {
-   "F01": 1,
-   "N01": 1
-  },
-  "f01Mg": {
-   "F01": 1,
-   "F17": 1
-  },
-  "f01FeS": {
-   "F01": 1,
-   "F02": 1
-  },
-  "f03PiasekWoda": {
-   "F03": 1
-  },
+  "f01SolWoda": {},
+  "f01Odparowanie": {},
+  "f01SodaOcet": {},
+  "f01WodaWapienna": {},
+  "f01Mg": {},
+  "f01FeS": {},
+  "f03PiasekWoda": {},
   "f03KredaWoda": {},
-  "f06Cl2Kbr": {
-   "F06": 1
-  },
+  "f06Cl2Kbr": {},
   "f06Cl2Ki": {},
-  "f06Br2Ki": {
-   "F06": 1
-  },
+  "f06Br2Ki": {},
   "f06I2Kbr": {}
  },
  "zero": [
@@ -1304,6 +1249,7 @@
   "ka-pka-table",
   "kinetics-v01",
   "kw-bufor-v01",
+  "kw-doswiadczenia-v01",
   "kw-reszty-v01",
   "kw-szereg-metali-v01",
   "kw-wlasciwosci-v01",
@@ -1317,8 +1263,10 @@
   "molecule-electrons",
   "molecule-orbitals",
   "molecule3d-merged",
+  "n01-doswiadczenia-v01",
   "n01-konstruktor-v01",
   "n01-reaktor-v01",
+  "n01-spalanie-v01",
   "n01-tlenki-v01",
   "n01-trend-v01",
   "j03-osady-v01",
@@ -1398,6 +1346,7 @@
   "dropper",
   "gasCollect",
   "tubeRack",
+  "conductivity",
   "pHscale",
   "pHmeter",
   "thermometer",
@@ -1413,16 +1362,22 @@
   "fieldMap",
   "chargeBar",
   "discharge",
+  "acidMetal",
+  "indicator",
   "indicatorRack",
   "titration",
   "dilution",
   "gasCollection",
+  "carbonate",
   "heating",
+  "liH2o",
+  "kH2o",
   "caH2o",
   "mgH2oHot",
   "na2oH2o",
   "k2oH2o",
   "li2oH2o",
+  "caoH2o",
   "mgoH2o",
   "baoH2o",
   "mgcl2Naoh",
@@ -1444,6 +1399,7 @@
   "cuoh2Hcl",
   "feoh3Hcl",
   "znoh2Hcl",
+  "aloh3Naoh",
   "znoh2Naoh",
   "baoh2Co2",
   "cuoh2Heat",
@@ -1466,13 +1422,19 @@
   "al2o3NaohAq",
   "znoNaohAq",
   "sio2Naoh",
+  "bacl2Na2so4",
+  "cacl2Na2co3",
+  "na2co3Hcl",
+  "cuso4Hydrate",
   "hyd-nacl",
+  "hyd-na2co3",
+  "hyd-nh4cl",
   "hyd-cuso4",
   "metanSpalanie",
   "krzywe-rozpuszczalnosci",
   "plomien",
-  "zlewka-rx",
   "id",
+  "f06-doswiadczenia-v01",
   "cah2H2o",
   "nahH2o",
   "nh4clCaoh2",
@@ -1484,14 +1446,23 @@
   "nh3Hcl",
   "h2sPbac",
   "h2sCuso4",
+  "f01SolWoda",
+  "f01Odparowanie",
+  "f01SodaOcet",
+  "f01WodaWapienna",
+  "f01Mg",
+  "f01FeS",
+  "f03PiasekWoda",
   "f03KredaWoda",
+  "f06Cl2Kbr",
   "f06Cl2Ki",
+  "f06Br2Ki",
   "f06I2Kbr"
  ],
  "jeden": [
   "acid-rain-v01",
   "kw-dysocjacja-v01",
-  "n01-spalanie-v01",
+  "n02-doswiadczenia-v01",
   "n02-dysocjacja-v01",
   "n02-otrzymywanie-v01",
   "n02-przeglad-v01",
@@ -1499,20 +1470,10 @@
   "n02-stracanie-v01",
   "n02-wzory-v01",
   "n02-zobojetnianie-v01",
+  "sole-doswiadczenia-v01",
   "titration-merged",
   "n05-wodorki-v01",
   "n05-trendy-v01",
-  "acidMetal",
-  "indicator",
-  "carbonate",
-  "liH2o",
-  "kH2o",
-  "aloh3Naoh",
-  "bacl2Na2so4",
-  "cacl2Na2co3",
-  "na2co3Hcl",
-  "hyd-na2co3",
-  "hyd-nh4cl",
   "lancuch-poziomow",
   "zlewka-predykcja",
   "mapa-mysli",
@@ -1564,20 +1525,11 @@
   "rozbior-zdania",
   "wykres-zdania",
   "wykres-zlozonego",
-  "f01SodaOcet",
-  "f03PiasekWoda",
-  "f06Cl2Kbr",
-  "f06Br2Ki"
+  "f01-doswiadczenia-v01",
+  "f03-rozdzielanie-v01"
  ],
  "wiele": [
-  "kw-doswiadczenia-v01",
-  "n01-doswiadczenia-v01",
-  "n02-doswiadczenia-v01",
   "ph-indicators-v03",
-  "sole-doswiadczenia-v01",
-  "conductivity",
-  "caoH2o",
-  "cuso4Hydrate",
   "czasteczki-3d",
   "izotopy",
   "trojkat-przeliczen",
@@ -1607,6 +1559,7 @@
   "rownania-jonowe",
   "probowki",
   "wzor-2d",
+  "zlewka-rx",
   "zlewki-rx",
   "tabela-rozpuszczalnosci",
   "dysocjacja-vs-jonizacja",
@@ -1648,30 +1601,16 @@
   "dobor-naturalny",
   "trener-nici",
   "transfuzja",
-  "pary-zasad",
-  "f01-doswiadczenia-v01",
-  "f03-rozdzielanie-v01",
-  "f06-doswiadczenia-v01",
-  "f01SolWoda",
-  "f01Odparowanie",
-  "f01WodaWapienna",
-  "f01Mg",
-  "f01FeS"
+  "pary-zasad"
  ],
  "nie_w_bazie": [
-  "-",
   "bezkregowce-sylwetki",
-  "caoh2Co2",
-  "cuoH2so4",
-  "cuso4Naoh",
   "cykl",
   "drzewa-krzewy",
   "drzewo-filogenetyczne",
   "f02-czastki-v01",
   "f04-nuklid-v01",
-  "fecl3Naoh",
   "fotosynteza-oddychanie-krazenie",
-  "hclNaOH",
   "jajo-porownanie",
   "jajo-ptaka",
   "kariotyp",
@@ -1681,12 +1620,10 @@
   "kwiat-budowa",
   "liscie-rodzaje",
   "mapa-narzadow",
-  "mgO2",
   "miesnie-trzy",
   "mikroskop-budowa",
   "mozg-budowa",
   "mutacje-punktowe",
-  "naH2o",
   "nablonki-rodzaje",
   "nasiono-ziarniak",
   "nefron-budowa",
@@ -1705,21 +1642,16 @@
   "przewod-pokarmowy",
   "replikacja-dna",
   "rodowod",
-  "rx-ag-cl",
-  "rx-cu-naoh",
-  "rx-fe-cuso4",
   "ryba-budowa",
   "serce-budowa",
   "staw-czaszka",
   "stawonogi-budowa",
-  "szereg",
   "szkielet-czlowieka",
   "szyszki-iglaste",
   "tkanki-zwierzece",
   "uklad-limfatyczny",
   "uklad-oddechowy",
   "wentylacja",
-  "wlasciwosci",
   "wykres-dane",
   "zab-budowa",
   "zboza-klosy"

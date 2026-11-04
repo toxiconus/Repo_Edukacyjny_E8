@@ -124,7 +124,7 @@ Równanie:: 2Mg + O₂ → 2MgO
 BHP: nie patrzeć bezpośrednio w płomień magnezu (silne światło, także UV); tygiel chwytać szczypcami — jest bardzo gorący.
 :::
 
-@zlewka f01-doswiadczenia-v01 f01Mg | Zobacz w tyglu: spalanie magnezu
+@klocek zlewka-rx {k="f01Mg"}
 @opis Animacja tygla nad palnikiem: srebrzysta wstążka magnezu zapala się oślepiająco białym płomieniem, a po zakończeniu w tyglu zostaje biały proszek tlenku magnezu. Wniosek: magnez połączył się z tlenem z powietrza, więc produkt jest cięższy od użytego metalu — masa układu (Mg + O₂) się nie zmienia.
 
 ::: karta core | Przykład liczbowy

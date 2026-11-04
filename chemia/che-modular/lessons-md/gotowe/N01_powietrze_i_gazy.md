@@ -157,7 +157,7 @@ Hel, neon, argon, krypton, ksenon, radon — grupa 18. Mają **trwałą konfigur
 
 @klocek probowki-wybor {zestaw="kwas-weglan"} | Węglan wapnia + kwas → CO₂ i woda wapienna
 @opis Scena doświadczenia: na węglan wapnia (kreda, marmur) działa kwas — wydzielają się pęcherzyki gazu, który przepuszczony przez klarowną wodę wapienną powoduje jej zmętnienie (biały osad CaCO₃). Wniosek: powstaje tlenek węgla(IV), a zmętnienie wody wapiennej to jego próba identyfikacyjna.
-@zlewka f01-doswiadczenia-v01 f01WodaWapienna | Zobacz w zlewce: woda wapienna + CO₂
+@klocek zlewka-rx {k="f01WodaWapienna"}
 @opis Tlenek węgla(IV) wprowadzany do klarownej wody wapiennej: woda mętnieje, pojawia się biała zawiesina węglanu wapnia. Wniosek: zmętnienie wody wapiennej to test wykrywający CO₂.
 
 ## 6 | Wodór [[basic:E8]] {#wodor}

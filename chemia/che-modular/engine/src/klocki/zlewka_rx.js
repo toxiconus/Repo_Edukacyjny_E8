@@ -35,6 +35,8 @@
     cuoH2so4Zimno: {n: 'CuO + H₂SO₄ na zimno (wolno)', vessel: 'tube', solid: {col: [28, 28, 30], eq: 3, end: .75, t: 'powder', shape: 'powder'}, l1: 'ion-cu2', eq: 'CuO + H₂SO₄ → CuSO₄ + H₂O (na zimno bardzo wolno)'},
     sodaHcl: {n: 'Soda oczyszczona + HCl', solid: {col: [246, 246, 240], eq: 4, end: 0, t: 'powder', shape: 'powder'}, gas: 'CO2', bubN: 3.2, foam: 1.1, eq: 'NaHCO₃ + HCl → NaCl + H₂O + CO₂↑'},
     rdzaHcl: {n: 'Rdza + HCl', solid: {col: [150, 82, 40], eq: 3, end: .05, t: 'powder', shape: 'powder'}, l1: 'ion-fe3', bubN: 0, eq: 'Fe₂O₃ + 6 HCl → 2 FeCl₃ + 3 H₂O'},
+    f06Cl2Kbr: {n: 'Cl₂ (woda chlorowa) + KBr', l0: [236, 244, 246], l1: [226, 150, 48], eq: '2 KBr + Cl₂ → 2 KCl + Br₂ (chlor wypiera brom)'},
+    f06Br2Ki: {n: 'Br₂ (woda bromowa) + KI', l0: [236, 244, 246], l1: [110, 64, 30], eq: '2 KI + Br₂ → 2 KBr + I₂ (brom wypiera jod)'},
     rdzaOcet: {n: 'Rdza + ocet', solid: {col: [150, 82, 40], eq: 3, end: .15, t: 'powder', shape: 'powder'}, l1: 'ion-fe3', bubN: 0, eq: 'Fe₂O₃ + 6 CH₃COOH → 2 Fe(CH₃COO)₃ + 3 H₂O'}
   };
   if (C.RXL) C.RXL.data({specs: SPECS});
@@ -66,6 +68,8 @@
     'kwasy-z-soli': ['naclH2so4', 'na2sio3Hcl'],
     'mg-kwasy': ['mgHcl', 'mgH2so4', 'mgOcet'],
     'zn-kwasy': ['znHcl', 'znH2so4', 'znOcet'],
+    'szereg-hcl': ['mgHcl', 'znHcl', 'feHcl', 'cuHcl'],
+    'fluorowce': ['f06Cl2Kbr', 'f06Br2Ki'],
     'weglan-kwasy': ['caco3Hcl', 'skorupkaOcet', 'sodaOcet']
   };
   KLOCKI.def('zlewki-rx', {

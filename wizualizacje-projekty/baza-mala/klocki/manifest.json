@@ -92,7 +92,12 @@
       "uklad_okresowy.js",
       "karta_bhp.js",
       "diagram_bohra.js",
-      "okresowy_tlenki.js"
+      "okresowy_tlenki.js",
+      "model_widok.js",
+      "../lite/rx-lite.js",
+      "zlewka_rx.js",
+      "pracownie_rx.js",
+      "pracownie_f.js"
     ],
     "F07": [
       "klocki.js",
@@ -125,7 +130,8 @@
       "wodorotlenki_n02.js",
       "../lite/rx-lite.js",
       "zlewka_rx.js",
-      "pracownie_rx.js"
+      "pracownie_rx.js",
+      "pracownie_f.js"
     ],
     "LKO-KRZYWE": [
       "klocki.js",
@@ -329,7 +335,13 @@
       "pomocnicze.js",
       "naczynia.js",
       "probowki_odczyn.js",
-      "karta_bhp.js"
+      "karta_bhp.js",
+      "ui_klocki.js",
+      "model_widok.js",
+      "../lite/rx-lite.js",
+      "zlewka_rx.js",
+      "pracownie_rx.js",
+      "pracownie_f.js"
     ],
     "C3": [
       "klocki.js",
@@ -369,7 +381,12 @@
       "naczynia.js",
       "probowki_odczyn.js",
       "probowki_wybor.js",
-      "palnik_gazowy.js"
+      "palnik_gazowy.js",
+      "model_widok.js",
+      "../lite/rx-lite.js",
+      "zlewka_rx.js",
+      "pracownie_rx.js",
+      "pracownie_f.js"
     ],
     "N02": [
       "klocki.js",
@@ -386,7 +403,12 @@
       "plomien.js",
       "okresowy_tlenki.js",
       "ui_klocki.js",
-      "stechiometria.js"
+      "stechiometria.js",
+      "model_widok.js",
+      "../lite/rx-lite.js",
+      "zlewka_rx.js",
+      "pracownie_rx.js",
+      "pracownie_f.js"
     ],
     "N04": [
       "klocki.js",
@@ -419,7 +441,9 @@
       "znaki.js",
       "probowki.js",
       "zlewka_rx.js",
-      "miareczkowanie_biureta.js"
+      "miareczkowanie_biureta.js",
+      "pracownie_rx.js",
+      "pracownie_f.js"
     ],
     "N05": [
       "klocki.js",
@@ -440,17 +464,22 @@
       "stechiometria.js",
       "../lite/rx-lite.js",
       "zlewka_rx.js",
-      "pracownie_rx.js"
+      "pracownie_rx.js",
+      "pracownie_f.js"
     ],
     "F02": [
       "klocki.js",
       "pomocnicze.js",
+      "ui_klocki.js",
       "model_widok.js",
       "z_f02_czastki.js",
       "z_f02_magnes_fes.js",
       "karta_bhp.js",
-      "ui_klocki.js",
-      "chemia_wstep.js"
+      "chemia_wstep.js",
+      "../lite/rx-lite.js",
+      "zlewka_rx.js",
+      "pracownie_rx.js",
+      "pracownie_f.js"
     ],
     "F03": [
       "klocki.js",
@@ -460,7 +489,9 @@
       "chemia_wstep.js",
       "model_widok.js",
       "../lite/rx-lite.js",
-      "pracownie_f.js"
+      "pracownie_f.js",
+      "zlewka_rx.js",
+      "pracownie_rx.js"
     ],
     "F01": [
       "klocki.js",
@@ -470,7 +501,9 @@
       "chemia_wstep.js",
       "model_widok.js",
       "../lite/rx-lite.js",
-      "pracownie_f.js"
+      "pracownie_f.js",
+      "zlewka_rx.js",
+      "pracownie_rx.js"
     ],
     "REV01": [
       "klocki.js",
@@ -509,7 +542,12 @@
       "pomocnicze.js",
       "ui_klocki.js",
       "bilans_rownania.js",
-      "stechiometria.js"
+      "stechiometria.js",
+      "model_widok.js",
+      "../lite/rx-lite.js",
+      "zlewka_rx.js",
+      "pracownie_rx.js",
+      "pracownie_f.js"
     ]
   },
   "css": [

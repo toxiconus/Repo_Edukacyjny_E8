@@ -403,12 +403,8 @@ Równanie:: 2 K + 2 H₂O → 2 KOH + H₂↑
 BHP: pokaz wyłącznie nauczyciela, za osłoną, w okularach i rękawicach. Porcje sodu wielkości ziarna ryżu, a potasu jeszcze mniejsze. Metale kroić na sucho, nie dotykać palcami. Resztek nie wyrzucać do zlewu — zbiera je nauczyciel. Potas często nie jest dostępny w szkole — zamiast pokazu można obejrzeć film lub model.
 :::
 
-@zlewka f06-doswiadczenia-v01 liH2o | Zobacz w zlewce: lit + woda
+@klocek zlewki-rx {zestaw="litowce-woda"}
 @opis Kawałek litu wrzucony do wody: lit pływa po powierzchni i spokojnie wydziela pęcherzyki gazu (wodoru). Wniosek: lit reaguje z wodą najsłabiej z porównywanych litowców — reaktywność rośnie w dół grupy: Li < Na < K.
-@zlewka f06-doswiadczenia-v01 naH2o | Zobacz w zlewce: sód + woda
-@opis Kawałek sodu wrzucony do wody: sód topi się w srebrzystą kulkę, szybko porusza się po powierzchni i intensywnie wydziela gaz (wodór). Wniosek: sód reaguje z wodą gwałtowniej niż lit — reaktywność litowców rośnie w dół grupy.
-@zlewka f06-doswiadczenia-v01 kH2o | Zobacz w zlewce: potas + woda
-@opis Kawałek potasu wrzucony do wody: reakcja jest bardzo gwałtowna, wydzielający się wodór zapala się fioletowym płomieniem. Wniosek: potas jest najbardziej reaktywny z porównywanych litowców (Li < Na < K).
 
 ::: dosw | Doświadczenie 2 — Który fluorowiec wypiera który? [[extra:AMBITNE]]
 Problem: Czy fluorowce mają podobne właściwości i jak zmienia się ich aktywność w grupie?
@@ -423,10 +419,8 @@ Równanie:: Br₂ + 2 KI → 2 KBr + I₂
 BHP: woda chlorowa i bromowa — pod dygestorium, w rękawicach i okularach; chlor i brom są trujące i żrące.
 :::
 
-@zlewka f06-doswiadczenia-v01 f06Cl2Kbr | Zobacz w zlewce: chlor wypiera brom
+@klocek zlewki-rx {zestaw="fluorowce"}
 @opis Do bezbarwnego roztworu bromku potasu dodano wodę chlorową: roztwór barwi się na żółtopomarańczowo od wydzielonego bromu. Wniosek: chlor jest aktywniejszy od bromu i wypiera go z soli: Cl₂ + 2 KBr → 2 KCl + Br₂.
-@zlewka f06-doswiadczenia-v01 f06Br2Ki | Zobacz w zlewce: brom wypiera jod
-@opis Do bezbarwnego roztworu jodku potasu dodano wodę bromową: roztwór brunatnieje od wydzielonego jodu. Wniosek: brom wypiera jod — aktywność fluorowców maleje w dół grupy: Br₂ + 2 KI → 2 KBr + I₂.
 
 ::: karta understand | Obserwacja ≠ wniosek
 - **Obserwacja:** sód „biega” po wodzie, wydziela się gaz, fenoloftaleina malinowieje.

@@ -1047,7 +1047,7 @@ Równanie: <span class="formula" data-rx="naH2o">2Na + 2H₂O → 2NaOH + H₂�
 Wniosek: Metal aktywny + woda → wodorotlenek + wodór; roztwór ma odczyn zasadowy.
 BHP: Wyłącznie pokaz nauczyciela: okulary, osłona, bardzo mała porcja sodu (wodór może się zapalić).
 
-@zlewka n02-doswiadczenia-v01 naH2o | Zobacz w zlewce (pracownia GFX)
+@klocek zlewka-rx {k="naH2o"}
 @opis Kawałek sodu w wodzie z dodatkiem wskaźnika: sód topi się w srebrzystą kulkę, porusza się po powierzchni i wydziela gaz, a roztwór zmienia barwę na charakterystyczną dla odczynu zasadowego. Wniosek: 2 Na + 2 H₂O → 2 NaOH + H₂↑ — metal aktywny z wodą daje zasadę i wodór.
 :::
 
@@ -1061,7 +1061,7 @@ Równanie: <span class="formula" data-rx="caoH2o">CaO + H₂O → Ca(OH)₂</spa
 Wniosek: Tlenek zasadowy + woda → wodorotlenek. Część Ca(OH)₂ rozpuszcza się (woda wapienna), nadmiar zostaje jako zawiesina (mleko wapienne).
 BHP: Wykonuje nauczyciel. Reakcja silnie egzotermiczna — nie dotykaj CaO mokrymi rękami, nie pochylaj się nad naczyniem (aerozol Ca(OH)₂ jest żrący). Nie badaj wskaźnikiem gorącej, gęstej zawiesiny.
 
-@zlewka n02-doswiadczenia-v01 caoH2o | Zobacz w zlewce (pracownia GFX)
+@klocek zlewka-rx {k="caoH2o"}
 @opis Tlenek wapnia (wapno palone) zalany wodą: mieszanina silnie się ogrzewa, powstaje białe „mleko wapienne”, a wskaźnik wskazuje odczyn zasadowy. Wniosek: CaO + H₂O → Ca(OH)₂ — tlenek metalu aktywnego tworzy z wodą wodorotlenek.
 :::
 
@@ -1075,7 +1075,7 @@ Równanie: <span class="formula" data-rx="cuso4Naoh">CuSO₄ + 2NaOH → Cu(OH)�
 Wniosek: Sól + zasada → wodorotlenek↓ + sól (metoda strąceniowa) — działa, bo Cu(OH)₂ jest praktycznie nierozpuszczalny.
 BHP: NaOH żrący — okulary, rękawice.
 
-@zlewka n02-doswiadczenia-v01 cuso4Naoh | Zobacz w zlewce (pracownia GFX)
+@klocek zlewka-rx {k="cuso4Naoh"}
 @opis Do niebieskiego roztworu siarczanu(VI) miedzi(II) dodano roztwór NaOH: wytrąca się niebieski, galaretowaty osad. Wniosek: CuSO₄ + 2 NaOH → Cu(OH)₂↓ + Na₂SO₄ — wodorotlenek trudno rozpuszczalny otrzymuje się strącaniem.
 :::
 
@@ -1089,7 +1089,7 @@ Równanie: <span class="formula" data-rx="fecl3Naoh">FeCl₃ + 3NaOH → Fe(OH)�
 Wniosek: Powstał praktycznie nierozpuszczalny wodorotlenek żelaza(III); Fe³⁺ potrzebuje trzech OH⁻ — stąd współczynnik 3.
 BHP: NaOH żrący — okulary, rękawice.
 
-@zlewka n02-doswiadczenia-v01 fecl3Naoh | Zobacz w zlewce (pracownia GFX)
+@klocek zlewka-rx {k="fecl3Naoh"}
 @opis Do żółtobrunatnego roztworu chlorku żelaza(III) dodano roztwór NaOH: wytrąca się brunatnoczerwony, galaretowaty osad. Wniosek: FeCl₃ + 3 NaOH → Fe(OH)₃↓ + 3 NaCl — barwa osadu pozwala rozpoznać jon Fe³⁺.
 :::
 
@@ -1103,8 +1103,6 @@ Równanie: <span class="formula">NaOH → Na⁺ + OH⁻</span>
 Wniosek: Roztwór NaOH ma odczyn zasadowy (dla stężonego — silnie zasadowy): zawiera jony OH⁻.
 BHP: NaOH żrący. Roztwór przygotowuje nauczyciel — rozpuszczanie stałego NaOH jest silnie egzotermiczne.
 
-@zlewka ph-indicators-v03 - | Zobacz w modelu wskaźników
-@opis Model wskaźników: skala pH z barwami wskaźnika uniwersalnego, fenoloftaleiny i oranżu metylowego w roztworach kwasowych, obojętnych i zasadowych. Wniosek: barwa wskaźnika pokazuje odczyn roztworu.
 :::
 
 ::: dosw | Doświadczenie F — Zobojętnianie NaOH kwasem solnym [[basic:E8]]
@@ -1117,7 +1115,7 @@ Równanie: <span class="formula" data-rx="hclNaOH">NaOH + HCl → NaCl + H₂O</
 Wniosek: Zaszło zobojętnianie: H⁺ + OH⁻ → H₂O. Zanik barwy fenoloftaleiny oznacza, że nie ma już nadmiaru OH⁻.
 BHP: Roztwory żrące — okulary.
 
-@zlewka n02-doswiadczenia-v01 hclNaOH+php | Zobacz w zlewce (pracownia GFX)
+@klocek zlewka-rx {k="hclNaOH+php"}
 @opis Do malinowego roztworu NaOH z fenoloftaleiną dodaje się porcjami kwas solny: barwa słabnie i w punkcie zobojętnienia roztwór staje się bezbarwny. Wniosek: HCl + NaOH → NaCl + H₂O (H⁺ + OH⁻ → H₂O) — kwas i zasada się zobojętniają.
 :::
 
@@ -1131,7 +1129,7 @@ Równanie: <span class="formula" data-rx="caoh2Co2">Ca(OH)₂ + CO₂ → CaCO�
 Wniosek: Wydychane powietrze zawiera CO₂ — woda wapienna służy do jego wykrywania. Klarowanie: CaCO₃ + CO₂ + H₂O → Ca(HCO₃)₂ (rozszerzenie).
 BHP: Nie zasysaj roztworu przez rurkę.
 
-@zlewka n02-doswiadczenia-v01 caoh2Co2 | Zobacz w zlewce (pracownia GFX)
+@klocek zlewka-rx {k="caoh2Co2"}
 @opis Tlenek węgla(IV) wprowadzany do klarownej wody wapiennej: woda mętnieje, pojawia się biała zawiesina. Wniosek: Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O — test wykrywający CO₂ i dowód kwasowego charakteru tego tlenku.
 :::
 
@@ -1145,7 +1143,7 @@ Równanie: <span class="formula" data-rx="alcl3Naoh">AlCl₃ + 3NaOH → Al(OH)�
 Wniosek: Al(OH)₃ jest amfoteryczny: Al(OH)₃ + 3HCl → AlCl₃ + 3H₂O oraz Al(OH)₃ + NaOH → Na[Al(OH)₄] (zapis LO).
 BHP: NaOH żrący — okulary, rękawice.
 
-@zlewka n02-doswiadczenia-v01 aloh3Naoh | Zobacz w zlewce (pracownia GFX)
+@klocek zlewka-rx {k="aloh3Naoh"}
 @opis Do roztworu soli glinu dodaje się roztwór NaOH: najpierw wytrąca się biały galaretowaty osad Al(OH)₃, który w nadmiarze NaOH roztwarza się i roztwór znów jest klarowny. Wniosek: wodorotlenek glinu jest amfoteryczny — reaguje także z mocną zasadą.
 :::
 
