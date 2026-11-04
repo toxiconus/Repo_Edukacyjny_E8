@@ -1,4 +1,4 @@
-/* KLOCKI: kwasy (N04) — ph-skala, miareczkowanie, bufor, kwasy-reszty, kwasy-wlasciwosci, kwasy-rozcienczanie, kwasne-deszcze.
+/* KLOCKI: kwasy (N04) — ph-skala, bufor, kwasy-reszty, kwasy-wlasciwosci, kwasy-rozcienczanie, kwasne-deszcze.
    Zastępują modele z dużego silnika (ph-indicators-v03, titration-merged, kw-bufor-v01, kw-reszty-v01, kw-wlasciwosci-v01, gfx-scene-dilution, acid-rain-v01).
    HTML/SVG, bez zależności poza ui_klocki.js. Barwy substancji realistyczne; interfejs w zmiennych motywu. */
 (function () {
@@ -42,67 +42,6 @@
         if (o) o.textContent = fmt(v, 1);
       });
       host.append(sl, bar, ticks, out, info);
-    }
-  });
-
-  /* ---------- miareczkowanie ---------- */
-  function phTytr(slaby, V) {   // 25 cm³ 0,1 M kwasu + V cm³ 0,1 M NaOH
-    var Vk = 25, c = .1, Kw = 1e-14, Ka = 1.8e-5, ca = Vk * c / (Vk + V), cn = V * c / (Vk + V);
-    if (!slaby) {
-      var d = (Vk - V) * c / (Vk + V);
-      if (Math.abs(d) < 1e-9) return 7;
-      return d > 0 ? -Math.log10(d) : 14 + Math.log10(-d);
-    }
-    var lo = -14, hi = 0;   // log10 h
-    for (var i = 0; i < 80; i++) {
-      var m = (lo + hi) / 2, h = Math.pow(10, m), f = h + cn - ca * Ka / (Ka + h) - Kw / h;
-      if (f > 0) lo = m; else hi = m;
-    }
-    return -(lo + hi) / 2;
-  }
-  KLOCKI.def('miareczkowanie', {
-    opis: 'Miareczkowanie 25 cm³ kwasu 0,1 M roztworem NaOH 0,1 M: suwak dodaje zasadę, kolba z fenoloftaleiną zmienia barwę, a punkt biegnie po krzywej pH(V); wybór kwasu mocnego lub słabego.',
-    domyslne: {kwas: 'HCl'},
-    html: function (host, opc) {
-      host.style.display = 'block';
-      var slaby = String(opc.kwas).indexOf('CH3') === 0 || opc.kwas === 'slaby';
-      var bar = E('div', 'margin-bottom:6px'), W = 300, H = 170, pad = 30;
-      var svgNS = 'http://www.w3.org/2000/svg';
-      var wrap = E('div', 'display:flex;flex-wrap:wrap;gap:14px;align-items:center');
-      var kolba = E('div', 'width:150px;text-align:center;font-size:13px');
-      var cv = E('div', 'flex:1;min-width:240px');
-      var info = E('div', 'font-size:14px;margin-top:8px;' + BOX);
-      var V = 0, kw = slaby ? 'slaby' : 'mocny';
-      function krzywa(sl) {
-        var pts = []; for (var v = 0; v <= 50; v += .5) pts.push([pad + v / 50 * (W - pad - 8), 8 + (1 - phTytr(sl, v) / 14) * (H - 8 - pad)]);
-        return pts.map(function (p, i) { return (i ? 'L' : 'M') + p[0].toFixed(1) + ' ' + p[1].toFixed(1); }).join(' ');
-      }
-      function rys() {
-        var ph = phTytr(slaby, V), px = pad + V / 50 * (W - pad - 8), py = 8 + (1 - ph / 14) * (H - 8 - pad), eq = pad + .5 * (W - pad - 8);
-        var s = '<svg viewBox="0 0 ' + W + ' ' + H + '" style="width:100%;max-width:420px" role="img" aria-label="Krzywa miareczkowania">' +
-          '<line x1="' + pad + '" y1="' + (H - pad) + '" x2="' + (W - 6) + '" y2="' + (H - pad) + '" stroke="currentColor" stroke-width="1"/>' +
-          '<line x1="' + pad + '" y1="8" x2="' + pad + '" y2="' + (H - pad) + '" stroke="currentColor" stroke-width="1"/>' +
-          '<line x1="' + pad + '" y1="' + (8 + (1 - 7 / 14) * (H - 8 - pad)) + '" x2="' + (W - 6) + '" y2="' + (8 + (1 - 7 / 14) * (H - 8 - pad)) + '" stroke="currentColor" stroke-dasharray="3 3" opacity=".35"/>' +
-          '<line x1="' + eq + '" y1="8" x2="' + eq + '" y2="' + (H - pad) + '" stroke="currentColor" stroke-dasharray="3 3" opacity=".35"/>' +
-          '<path d="' + krzywa(slaby) + '" fill="none" stroke="#2563eb" stroke-width="2.5"/>' +
-          '<circle cx="' + px.toFixed(1) + '" cy="' + py.toFixed(1) + '" r="5.5" fill="#dc2626" stroke="#fff" stroke-width="1.5"/>' +
-          '<text x="' + (pad - 4) + '" y="14" font-size="10" text-anchor="end" fill="currentColor">14</text><text x="' + (pad - 4) + '" y="' + (H - pad) + '" font-size="10" text-anchor="end" fill="currentColor">0</text>' +
-          '<text x="' + (pad - 4) + '" y="' + (8 + (1 - 7 / 14) * (H - 8 - pad) + 3) + '" font-size="10" text-anchor="end" fill="currentColor">7</text>' +
-          '<text x="' + pad + '" y="' + (H - 12) + '" font-size="10" fill="currentColor">0</text><text x="' + eq + '" y="' + (H - 12) + '" font-size="10" text-anchor="middle" fill="currentColor">25</text><text x="' + (W - 8) + '" y="' + (H - 12) + '" font-size="10" text-anchor="end" fill="currentColor">50</text>' +
-          '<text x="' + (W / 2 + 10) + '" y="' + (H - 1) + '" font-size="10" text-anchor="middle" fill="currentColor">V NaOH [cm³]</text></svg>';
-        cv.innerHTML = s;
-        kolba.innerHTML = '<svg viewBox="0 0 120 130" style="width:120px"><path d="M45 8h30v32l30 62q5 14-10 14H25q-15 0-10-14L45 40z" fill="rgba(224,242,254,.35)" stroke="var(--border-strong,#64748b)" stroke-width="2"/>' +
-          '<path d="M38 66h44l23 36q5 12-9 12H24q-14 0-9-12z" fill="' + fenol(ph) + '" opacity=".95"/></svg><div>fenoloftaleina: <b>' + (ph < 8.2 ? 'bezbarwna' : ph < 9.9 ? 'różowieje' : 'malinowa') + '</b></div>';
-        var stan = V < 24.95 ? 'kwas w nadmiarze' : V > 25.05 ? 'zasada w nadmiarze' : '<b>punkt równoważnikowy</b>';
-        info.innerHTML = 'V NaOH = <b>' + fmt(V, 1) + ' cm³</b> · pH = <b>' + fmt(ph, 2) + '</b> · ' + stan +
-          '<br><span style="color:var(--muted,#5b6b73)">' + (slaby ? 'Kwas słaby (CH₃COOH): start przy pH ≈ 2,9, punkt równoważnikowy przy pH ≈ 8,7 (>7), bo octan sodu hydrolizuje.' : 'Kwas mocny (HCl): start przy pH = 1, punkt równoważnikowy przy pH = 7, a skok pH jest gwałtowny.') + ' Reakcja: ' + (slaby ? 'CH₃COOH + NaOH → CH₃COONa + H₂O' : 'HCl + NaOH → NaCl + H₂O') + '.</span>';
-      }
-      var chips = [U().chip('Kwas mocny: HCl', !slaby, function () { slaby = false; zazn(); rys(); }), U().chip('Kwas słaby: CH₃COOH', slaby, function () { slaby = true; zazn(); rys(); })];
-      function zazn() { U().zaznacz(chips[0], !slaby); U().zaznacz(chips[1], slaby); }
-      bar.append(chips[0], chips[1]);
-      var sl = U().suwak('Dodano NaOH [cm³]', 0, 50, 0.5, 0, function (v, o) { V = v; if (o) o.textContent = fmt(v, 1); if (cv.firstChild || true) rys(); });
-      wrap.append(kolba, cv);
-      host.append(bar, sl, wrap, info);
     }
   });
 

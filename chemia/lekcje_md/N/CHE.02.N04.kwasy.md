@@ -807,7 +807,7 @@ Wskaźnik to słaby kwas HInd, którego forma kwasowa i zasadowa mają różne b
 :::
 :::
 
-@model ph-indicators-v03 | Panel pH: skala, wskaźniki i barwy, drabinka kwasów i zasad | Barwy wskaźników z CHE.COLORS · roztwór × wskaźnik dla wybranego stężenia · silnik CHE
+@klocek ph-indicators-v03 | Panel pH: skala, wskaźniki i barwy, drabinka kwasów i zasad (wybierz roztwór i wskaźnik)
 @opis Panel pH: skala od 0 do 14 z zaznaczonym odczynem kwasowym, obojętnym i zasadowym, barwy wskaźników (uniwersalny, fenoloftaleina, oranż metylowy, wywar z czerwonej kapusty) przy różnych pH oraz przykłady codziennych roztworów. Wniosek: odczyn rozpoznaje się wskaźnikiem — fenoloftaleina barwi się na malinowo tylko w odczynie zasadowym.
 
 @klocek ph-skala {ph="3"} | Skala pH: przesuń suwak i zobacz barwy wskaźników
@@ -1184,7 +1184,7 @@ $$ 3 NO₂ + H₂O → 2 HNO₃ + NO (kwas azotowy(V))
 - **Wapnowanie gleb** — neutralizacja kwaśnych gleb wapnem (CaO, CaCO₃).
 :::
 
-@model acid-rain-v01 | Kwaśne deszcze – animacja obiegu | Wizualizacja z biblioteki · otwiera się w oknie
+@klocek acid-rain-v01 | Kwaśne deszcze: zmień emisję, włącz odsiarczanie i obserwuj pH deszczu i jeziora
 @opis Animacja obiegu kwaśnych deszczy: spaliny z elektrowni i samochodów zawierają tlenki siarki i azotu, które w chmurach reagują z wodą, tworząc kwasy; opady niszczą lasy, zakwaszają jeziora i glebę i niszczą budynki z wapienia. Wniosek: kwasowe tlenki z emisji przemysłowej wracają na ziemię jako kwasy.
 
 @klocek kwasne-deszcze {} | Kwaśny deszcz: od komina do marmuru, lasu i jeziora
@@ -1341,11 +1341,8 @@ c(HCl) = (0,1 × 20) / 25 = 0,08 M
 @model gfx-scene-titration | Miareczkowanie: biureta, kolba, wskaźnik | Scena GFX · pH z bilansu, barwa fenoloftaleiny z silnika
 @opis Miareczkowanie: z biurety kropla po kropli spływa roztwór zasady do kolby z kwasem i fenoloftaleiną; przy punkcie końcowym roztwór zmienia barwę z bezbarwnej na malinową, a obok widać pH. Wniosek: miareczkowanie pozwala ustalić, ile zasady zobojętnia daną ilość kwasu.
 
-@model titration-merged | Krzywa miareczkowania: mocny/słaby kwas | pH(V) z silnika · punkt równoważnikowy
+@klocek titration-merged | Krzywa miareczkowania: mocny lub słaby kwas, wybór wskaźnika, autoplay
 @opis Krzywa miareczkowania: wykres pH od objętości dodanej zasady dla kwasu mocnego i słabego; przy punkcie równoważnikowym pH zmienia się skokowo, a dla kwasu słabego krzywa zaczyna się wyżej i skok jest mniejszy. Wniosek: przebieg krzywej zależy od mocy kwasu.
-
-@klocek miareczkowanie {kwas="HCl"} | Miareczkowanie: dodawaj NaOH do kwasu mocnego lub słabego
-@opis Kolba z kwasem i fenoloftaleiną oraz wykres pH(V): czerwony punkt biegnie po krzywej, przy 25 cm³ NaOH jest punkt równoważnikowy (pH 7 dla HCl, ok. 8,7 dla CH₃COOH), a po nim roztwór różowieje. Wniosek: miareczkowanie pozwala wyznaczyć stężenie kwasu.
 
 ## 15 | Bufory — model jakościowy [[extra:AMBITNE]] {#bufory}
 

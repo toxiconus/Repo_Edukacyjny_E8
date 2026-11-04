@@ -1,6 +1,6 @@
 # Katalog klocków — baza mała E8
 
-Wygenerowano: 2026-11-02 przez `wizualizacje-projekty/narzedzia/zbuduj_baze_mala.py`. **Nie edytować ręcznie** — źródłem jest duża baza (`chemia/che-modular/engine`, `biologia/bio`, `polski/szablon`).
+Wygenerowano: 2026-11-04 przez `wizualizacje-projekty/narzedzia/zbuduj_baze_mala.py`. **Nie edytować ręcznie** — źródłem jest duża baza (`chemia/che-modular/engine`, `biologia/bio`, `polski/szablon`).
 
 Ta paczka zawiera kopie tego, co już działa w lekcjach. Zewnętrzny model może z niej wziąć gotowy element zamiast budować go od zera. Spis braków: `BRAKI_WIZUALIZACJI.md`.
 
@@ -8,7 +8,7 @@ Ta paczka zawiera kopie tego, co już działa w lekcjach. Zewnętrzny model moż
 
 | Folder | Zawartość | Rozmiar |
 |---|---|---|
-| `klocki` | kopia folderu | 502 KB |
+| `klocki` | kopia folderu | 559 KB |
 | `klocki/lite` | kopia folderu | 36 KB |
 | `gfx` | kopia folderu | 729 KB |
 | `tablice` | kopia folderu | 1612 KB |
@@ -80,8 +80,12 @@ Ta paczka zawiera kopie tego, co już działa w lekcjach. Zewnętrzny model moż
 | `fizyka_elektrostatyka.js` | elektrostatyka: elektryzowanie, przewodnik-izolator, kule-ladunek, elektroskop, prawo-coulomba, linie-pola |
 | `chemia_wstep.js` | wstęp do chemii: lancuch-poziomow, zlewka-predykcja, mapa-mysli, czasteczki-3d, destylacja |
 | `okresowy_tlenki.js` | układ okresowy 1–54 (tryby), konstruktor/detektor/reaktor tlenku, trend tlenków |
-| `kwasy_modele.js` | kwasy (N04): ph-skala, miareczkowanie, bufor, kwasy-reszty, kwasy-wlasciwosci, kwasy-rozcienczanie, kwasne-deszcze |
+| `kwasy_modele.js` | kwasy (N04): ph-skala, bufor, kwasy-reszty, kwasy-wlasciwosci, kwasy-rozcienczanie, kwasne-deszcze |
 | `zlewka_rx.js` | zlewka-rx: doświadczenia z kwasami w zlewce/probówce (SVG, rx-lite): Zn/Mg/Fe/Cu + HCl, CaCO₃, zobojętnianie, CuO, cukier + H₂SO₄, soda/skorupka/rdza + ocet |
+| `ph_panel.js` | ph-indicators-v03: Panel pH — skala wskaźników, roztwór × wskaźnik, drabinka kwasów i zasad (port z visual-library; zawiera CHE.COLORS i dane kwasów) |
+| `ruch_che.js` | CHE.MOTION (shim): add(canvas, fn(ctx,w,h,t)) — pętla rAF tylko gdy widoczne; dla klocków portowanych z visual-library |
+| `acid_rain.js` | acid-rain-v01: Kwaśne deszcze — emisja SO₂/NOₓ, chmura, opad, jezioro i las, odsiarczanie (port) |
+| `miareczkowanie_tm.js` | titration-merged: miareczkowanie — typ kwasu, wskaźnik, krzywa pH(V), kolba, autoplay (port; shim CHE.EQUILIBRIUM.titrationPH) |
 
 Lekcje i pliki, które wymieniają (`manifest.json` → `lekcje`):
 
@@ -117,7 +121,7 @@ Lekcje i pliki, które wymieniają (`manifest.json` → `lekcje`):
 - **B2g**: `klocki.js`, `pomocnicze.js`, `petla_regulacji.js`
 - **N01**: `klocki.js`, `pomocnicze.js`, `ui_klocki.js`, `zbieranie_gazu.js`, `karta_bhp.js`, `naczynia.js`, `probowki_odczyn.js`, `probowki_wybor.js`, `palnik_gazowy.js`
 - **N02**: `klocki.js`, `pomocnicze.js`, `karta_bhp.js`, `ui_klocki.js`, `chemia_wstep.js`, `naczynia.js`, `probowki_odczyn.js`, `probowki_wybor.js`, `palnik_gazowy.js`, `zbieranie_gazu.js`, `lancuch_przemian.js`, `palenie.js`, `plomien.js`, `okresowy_tlenki.js`
-- **N04**: `klocki.js`, `pomocnicze.js`, `ui_klocki.js`, `../lite/rx-lite.js`, `naczynia.js`, `dane/pierwiastki.js`, `probowki_odczyn.js`, `probowki_wybor.js`, `zbieranie_gazu.js`, `jony_w_wodzie.js`, `tabela_rozpuszczalnosci.js`, `rownania_jonowe.js`, `gra_klasyfikacja.js`, `karta_bhp.js`, `c2d_core.js`, `c2d_grupy.js`, `c2d_wzor.js`, `c2d_prosta.js`, `c2d_klocek.js`, `kwasy_modele.js`, `znaki.js`, `probowki.js`, `zlewka_rx.js`
+- **N04**: `klocki.js`, `pomocnicze.js`, `ui_klocki.js`, `../lite/rx-lite.js`, `naczynia.js`, `dane/pierwiastki.js`, `probowki_odczyn.js`, `probowki_wybor.js`, `zbieranie_gazu.js`, `jony_w_wodzie.js`, `tabela_rozpuszczalnosci.js`, `rownania_jonowe.js`, `gra_klasyfikacja.js`, `karta_bhp.js`, `c2d_core.js`, `c2d_grupy.js`, `c2d_wzor.js`, `c2d_prosta.js`, `c2d_klocek.js`, `model_widok.js`, `ph_panel.js`, `ruch_che.js`, `acid_rain.js`, `miareczkowanie_tm.js`, `kwasy_modele.js`, `znaki.js`, `probowki.js`, `zlewka_rx.js`
 - **N05**: `klocki.js`, `pomocnicze.js`, `bilans_rownania.js`, `zbieranie_gazu.js`, `karta_bhp.js`
 - **F02**: `klocki.js`, `pomocnicze.js`, `model_widok.js`, `z_f02_czastki.js`, `z_f02_magnes_fes.js`, `karta_bhp.js`, `ui_klocki.js`, `chemia_wstep.js`
 - **F03**: `klocki.js`, `pomocnicze.js`, `karta_bhp.js`, `ui_klocki.js`, `chemia_wstep.js`

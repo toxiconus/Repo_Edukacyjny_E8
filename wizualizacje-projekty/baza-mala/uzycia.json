@@ -266,7 +266,6 @@
   "plomien": "klocek",
   "probowki-odczyn": "klocek",
   "ph-skala": "klocek",
-  "miareczkowanie": "klocek",
   "bufor": "klocek",
   "kwasy-reszty": "klocek",
   "kwasy-wlasciwosci": "klocek",
@@ -859,9 +858,6 @@
    "N04": 2
   },
   "ph-skala": {
-   "N04": 1
-  },
-  "miareczkowanie": {
    "N04": 1
   },
   "bufor": {
@@ -1557,7 +1553,6 @@
   "profil-energii",
   "haworth",
   "ph-skala",
-  "miareczkowanie",
   "bufor",
   "kwasy-reszty",
   "kwasy-wlasciwosci",

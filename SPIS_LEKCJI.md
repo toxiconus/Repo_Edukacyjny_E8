@@ -1,6 +1,6 @@
 # SPIS LEKCJI (generowany: `python3 narzedzia/spis_lekcji.py`)
 
-Stan: 2026-11-02. KB = rozmiar pliku md. Wiz. = liczba @klocek/@model/@zlewka; @opis = liczba opisów (powinna być równa wiz.).
+Stan: 2026-11-04. KB = rozmiar pliku md. Wiz. = liczba @klocek/@model/@zlewka; @opis = liczba opisów (powinna być równa wiz.).
 Listy tematów (plan) są osobno: `chemia/plany/CHE_SPIS_TRESCI.md`, `polski/POL_SPIS_TRESCI_v2.md`, `olimpiada/OLIMPIADA_8_MASTER.md`.
 
 Etap LKO = do którego etapu konkursu lekcja jest potrzebna: **I** = szkolny (biologia 21.10, chemia 23.10; 60 min, 40 pkt), **II** = rejonowy (biologia 24.11, chemia 26.11; 90 min; obejmuje też etap I), **III** = wojewódzki (obejmuje I i II), **poza LKO** = kurs E8/inny przedmiot. Warstwy w lekcji: **E8** (podstawa programowa) · **rozum.** (trening, rozumienie) · **konkurs** (zadania i doświadczenia konkursowe) · **ambitne** (olimpiada, ponad zakres). Zakres źródłowy: `olimpiada/PRIORYTETY.md` §1.

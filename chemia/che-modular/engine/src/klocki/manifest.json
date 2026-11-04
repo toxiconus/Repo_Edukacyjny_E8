@@ -58,8 +58,12 @@
     "fizyka_elektrostatyka.js": "elektrostatyka: elektryzowanie, przewodnik-izolator, kule-ladunek, elektroskop, prawo-coulomba, linie-pola",
     "chemia_wstep.js": "wstęp do chemii: lancuch-poziomow, zlewka-predykcja, mapa-mysli, czasteczki-3d, destylacja",
     "okresowy_tlenki.js": "układ okresowy 1–54 (tryby), konstruktor/detektor/reaktor tlenku, trend tlenków",
-    "kwasy_modele.js": "kwasy (N04): ph-skala, miareczkowanie, bufor, kwasy-reszty, kwasy-wlasciwosci, kwasy-rozcienczanie, kwasne-deszcze",
-    "zlewka_rx.js": "zlewka-rx: doświadczenia z kwasami w zlewce/probówce (SVG, rx-lite): Zn/Mg/Fe/Cu + HCl, CaCO₃, zobojętnianie, CuO, cukier + H₂SO₄, soda/skorupka/rdza + ocet"
+    "kwasy_modele.js": "kwasy (N04): ph-skala, bufor, kwasy-reszty, kwasy-wlasciwosci, kwasy-rozcienczanie, kwasne-deszcze",
+    "zlewka_rx.js": "zlewka-rx: doświadczenia z kwasami w zlewce/probówce (SVG, rx-lite): Zn/Mg/Fe/Cu + HCl, CaCO₃, zobojętnianie, CuO, cukier + H₂SO₄, soda/skorupka/rdza + ocet",
+    "ph_panel.js": "ph-indicators-v03: Panel pH — skala wskaźników, roztwór × wskaźnik, drabinka kwasów i zasad (port z visual-library; zawiera CHE.COLORS i dane kwasów)",
+    "ruch_che.js": "CHE.MOTION (shim): add(canvas, fn(ctx,w,h,t)) — pętla rAF tylko gdy widoczne; dla klocków portowanych z visual-library",
+    "acid_rain.js": "acid-rain-v01: Kwaśne deszcze — emisja SO₂/NOₓ, chmura, opad, jezioro i las, odsiarczanie (port)",
+    "miareczkowanie_tm.js": "titration-merged: miareczkowanie — typ kwasu, wskaźnik, krzywa pH(V), kolba, autoplay (port; shim CHE.EQUILIBRIUM.titrationPH)"
   },
   "lekcje": {
     "P01": [
@@ -383,6 +387,11 @@
       "c2d_wzor.js",
       "c2d_prosta.js",
       "c2d_klocek.js",
+      "model_widok.js",
+      "ph_panel.js",
+      "ruch_che.js",
+      "acid_rain.js",
+      "miareczkowanie_tm.js",
       "kwasy_modele.js",
       "znaki.js",
       "probowki.js",
