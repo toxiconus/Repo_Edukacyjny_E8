@@ -33,7 +33,7 @@
 
   KLOCKI.def('lancuch-przemian', {
     opis: 'Schemat przemian: wzory substancji połączone strzałkami z literami reakcji; układ liniowy albo obieg zamknięty.',
-    domyslne: {wezly: 'Ca,CaO,Ca(OH)2,CaCO3', etyk: 'A,B,C', zamkniety: 0, szer: 480, wys: 300},
+    domyslne: {wezly: 'Ca,CaO,Ca(OH)2,CaCO3', etyk: 'A,B,C', zamkniety: 0, szer: 480, wys: 190},
     stan0: function () { return {}; },
     rysuj: function (x, w, h, s, t, opc) {
       var wezly = String(opc.wezly || '').split(',').map(function (v) { return v.trim(); }).filter(Boolean).slice(0, 8);

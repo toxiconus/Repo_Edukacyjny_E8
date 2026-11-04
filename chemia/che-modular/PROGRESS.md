@@ -318,3 +318,4 @@
 - 2026-11-04: lab.css: większe cele dotykowe (select/input/.bar button) — regula-krzyzowa, stechiometria, titration, osady itd. spadły z listy; zostały komórki układu okresowego, bilans-rownania (−/+), probówki.
 - 2026-11-04: rx-lite efekty: piana rośnie nad ciecz (foamKeep/foamCol — węgiel z cukru zostaje), dym większy i kolorowy (fumeCol — brunatny NO₂), dłuższy zasięg.
 - 2026-11-04: klocki.js: kanwy klocków wyśrodkowane; osady-dwie-sole: selecty w stylu wspólnym (siatka, tokeny).
+- 2026-11-04: lancuch-przemian niższy (wys 190); probowki-odczyn: etykieta PRZED/PO wyśrodkowana.

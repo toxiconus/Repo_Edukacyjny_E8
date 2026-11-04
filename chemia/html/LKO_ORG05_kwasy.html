@@ -1326,8 +1326,8 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
       var top = 30, bot = h - 62, x0 = (w - (n * tw + (n - 1) * gap)) / 2;
       x.textAlign = 'center'; x.textBaseline = 'middle';
 
-      x.fillStyle = tekst; x.globalAlpha = 0.7; x.font = '600 11px system-ui, sans-serif'; x.textAlign = 'left';
-      x.fillText(p < 0.5 ? 'PRZED' : 'PO', 8, 12); x.globalAlpha = 1; x.textAlign = 'center';
+      x.fillStyle = tekst; x.globalAlpha = 0.7; x.font = '600 11px system-ui, sans-serif'; x.textAlign = 'center';
+      x.fillText(p < 0.5 ? 'PRZED' : 'PO', w / 2, 12); x.globalAlpha = 1; x.textAlign = 'center';
       tuby.forEach(function (tb, i) {
         var X = x0 + i * (tw + gap), rr = tw / 2;
         var lvl = bot - (bot - top) * 0.6;
