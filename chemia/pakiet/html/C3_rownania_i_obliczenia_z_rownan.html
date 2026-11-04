@@ -39,7 +39,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans
 @media(min-width:600px){.fab-left{left:10px;}.fab-right{right:10px;}}
 @media(min-width:768px){.fab-left{left:14px;}.fab-right{right:14px;}}
 .fab-left::after{content:'';width:16px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;border-radius:1px;transition:transform 0.25s var(--ease);}
-.fab-left.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.fab-left.is-open{background:var(--accent);color:var(--bg,#fff);border-color:var(--accent);}
 .fab-left.is-open::after{width:16px;height:2px;background:currentColor;box-shadow:none;transform:rotate(45deg);}
 .fab-left.is-open::before{content:'';position:absolute;width:16px;height:2px;background:currentColor;transform:rotate(-45deg);border-radius:1px;}
 .fab-right::after{content:'';display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:8px solid currentColor;transition:transform 0.35s var(--ease-out);}
@@ -55,7 +55,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans
 .header-nav{display:flex;gap:2px;flex-shrink:0;align-items:center;}
 .header-nav a,.header-nav button{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;border-radius:var(--r-sm);font-size:16px;font-weight:500;transition:all 0.2s var(--ease);border:1px solid transparent;background:transparent;cursor:pointer;padding:0;font-family:inherit;}
 .header-nav a:hover,.header-nav button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
-.header-resume-btn.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.header-resume-btn.is-active{background:var(--accent);color:var(--bg,#fff);border-color:var(--accent);}
 .header-resume-btn::before{content:'▮';font-size:14px;line-height:1;}
 .header-panel{display:none;border-top:1px solid var(--border);background:linear-gradient(180deg,var(--surface) 0%,var(--surface-soft) 100%);padding:20px 16px 24px;}
 @media(min-width:768px){.header-panel{padding:24px 24px 28px;}}
@@ -67,7 +67,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans
 .header-subtitle{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:18px;max-width:720px;}
 .header-modes{display:flex;gap:6px;flex-wrap:wrap;}
 .mode-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 15px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);font-family:inherit;}
-.mode-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
+.mode-btn.active{background:var(--accent);color:var(--bg,#fff);border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
 .mode-btn:hover:not(.active){background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
 .resume-dropdown{display:none;position:fixed;top:calc(var(--header-h) + 6px);right:14px;z-index:1050;width:min(300px,calc(100vw - 30px));padding:14px;border:1px solid var(--border-strong);border-radius:12px;background:#fff;box-shadow:var(--sh-lg);}
 .resume-dropdown.is-open{display:block;}
@@ -75,7 +75,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans
 .resume-dropdown p{margin:0 0 12px;color:var(--text-muted);font-size:.75rem;line-height:1.5;}
 .resume-actions{display:flex;gap:6px;}
 .resume-actions button{flex:1;padding:8px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text-soft);font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
-.resume-actions .resume-save{background:var(--accent);color:#fff;border-color:var(--accent);}
+.resume-actions .resume-save{background:var(--accent);color:var(--bg,#fff);border-color:var(--accent);}
 .toc-overlay{position:fixed;inset:0;background:rgba(26,35,50,0.34);backdrop-filter:blur(3px);z-index:1100;opacity:0;visibility:hidden;transition:opacity 0.3s var(--ease),visibility 0.3s var(--ease);}
 .toc-overlay.is-visible{opacity:1;visibility:visible;}
 .toc-wrapper{position:fixed;left:0;top:0;width:320px;max-width:86vw;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:1150;transform:translateX(-100%);transition:transform 0.4s var(--ease-out);padding-top:64px;box-shadow:var(--sh-xl);}
@@ -114,9 +114,9 @@ strong{font-weight:700;color:var(--text);}
 .formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
 code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
 pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
-.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
-.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
-.mnemonic b{color:#78350f;}
+.mnemonic{background:var(--c-warn-bg,#fff8e1);border:2px dashed var(--c-warn,#d69e2e);color:var(--text);border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:var(--surface,#fff);padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--c-warn,#78350f);}
+.mnemonic b{color:var(--c-warn,#78350f);}
 .card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
 @media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
 .card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
@@ -148,7 +148,7 @@ details.answer[open] summary{color:var(--accent);}
 details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}
 .part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}
 @media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}
-.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
+.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:var(--bg,#fff);border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
 @media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}
 .table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}
 .table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}
@@ -211,7 +211,7 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-off
 .widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
 .bld-pool{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
 .bld-pool button{padding:6px 12px;border:1px solid var(--border);border-radius:20px;background:#fff;font:600 0.8rem inherit;cursor:pointer;font-family:inherit;color:var(--text);}
-.bld-pool button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bld-pool button.active{background:var(--accent);color:var(--bg,#fff);border-color:var(--accent);}
 .bld-workspace{min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;}
 .bld-feedback,.re-result,.st-feedback,.ch-feedback{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;line-height:1.5;}
 .bld-feedback.ok,.re-result.ok,.st-feedback.ok,.ch-feedback.ok{background:var(--c-basic-bg);color:var(--c-basic);border:1px solid var(--c-basic-line);}
@@ -220,8 +220,8 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-off
 .bld-feedback.warn,.re-result.warn,.st-feedback.warn,.ch-feedback.warn{background:var(--c-warn-bg);color:var(--c-warn);border:1px solid var(--c-warn-line);}
 .btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);color:var(--text);font-family:inherit;}
 .btn:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
-.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent);}
-.btn-primary:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+.btn-primary{background:var(--accent);color:var(--bg,#fff);border-color:var(--accent);}
+.btn-primary:hover{background:var(--accent-dark);color:var(--bg,#fff);border-color:var(--accent-dark);}
 .btn-sm{padding:6px 10px;font-size:12px;}
 .flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}
 @media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}
@@ -268,7 +268,7 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-off
 .klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}
 .map-card{position:relative;}
 .map-expand-btn{position:absolute;top:10px;right:10px;z-index:3;padding:6px 12px;border:1px solid var(--accent-line);background:rgba(255,255,255,0.95);color:var(--accent);border-radius:var(--r-sm);font-size:12px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:var(--sh-sm);transition:all 0.15s var(--ease);}
-.map-expand-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.map-expand-btn:hover{background:var(--accent);color:var(--bg,#fff);border-color:var(--accent);}
 .map-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(26,35,50,0.85);backdrop-filter:blur(6px);}
 .map-overlay.is-open{display:block;}
 .map-overlay-inner{position:absolute;inset:12px;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-xl);}
@@ -371,7 +371,7 @@ html,body{max-width:100%;overflow-x:hidden;}
 .lab-bridge{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 28px;padding:14px 16px;border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);background:linear-gradient(135deg,var(--surface-soft),var(--accent-soft));}
 .lab-bridge strong{display:block;color:var(--accent-dark);}
 .lab-bridge span{display:block;margin-top:3px;color:var(--text-soft);font-size:13px;}
-.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;}
+.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:var(--bg,#fff);text-decoration:none;font-size:12px;font-weight:800;}
 .lab-bridge-btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
 @media(max-width:600px){.lab-bridge{align-items:flex-start;flex-direction:column;}.lab-bridge-btn{width:100%;text-align:center;}}
 .exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}
@@ -442,7 +442,7 @@ background:linear-gradient(90deg,#e5262e 0%,#ef5a28 14%,#f6a21e 28%,#d7d93a 43%,
 @keyframes rxFume{to{transform:translate(var(--dx,0),-70px) scale(2.2);opacity:0}}
 
 
-.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:var(--bg,#fff);border-color:var(--accent)}
 .rx-label{flex:1 1 200px;font-size:13px;color:var(--text-soft);line-height:1.5}
 .rx-label b{color:var(--text);font-family:'JetBrains Mono',monospace}
 @media print{.js-reveal .card,.js-reveal .widget{opacity:1!important;transform:none!important}}
@@ -498,7 +498,7 @@ section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
 .lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
 .lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
 .lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
-.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:var(--bg,#fff);font-weight:800}
 
 /* cytat z tekstu (lektura, źródło, wypowiedź) */
 .lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
@@ -623,14 +623,14 @@ section ul,section ol{padding-left:1.35rem}
 @media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
 /* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
 details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
-details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--text-muted,#5b6b73)}
 @media print{details.lk-log{display:none}}
 
 /* poziomy treści (lekcje z poziomy: tak) — filtr: muszę umieć / E8 / E8+rozszerzenie / wszystko */
 .poz-bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0;padding:10px 12px;border:1px solid var(--border,#d0d7de);border-radius:10px;background:var(--surface-soft,#f6f8fa);position:sticky;top:0;z-index:20}
-.poz-bar-t{font-weight:700;font-size:14px}.poz-bar-i{flex-basis:100%;font-size:13px;color:var(--muted,#5b6b73)}
+.poz-bar-t{font-weight:700;font-size:14px}.poz-bar-i{flex-basis:100%;font-size:13px;color:var(--text-muted,#5b6b73)}
 .poz-bar button{font:inherit;font-size:14px;padding:6px 12px;border-radius:999px;border:1px solid var(--border-strong,#9aa6ad);background:var(--surface,#fff);color:inherit;cursor:pointer}
-.poz-bar button[aria-pressed="true"]{background:var(--accent,#0b6bcb);color:#fff;border-color:transparent}
+.poz-bar button[aria-pressed="true"]{background:var(--accent,#0b6bcb);color:var(--bg,#fff);border-color:transparent}
 body[data-poz="must"] .poz-roz,body[data-poz="must"] .poz-pon,body[data-poz="e8"] .poz-roz,body[data-poz="e8"] .poz-pon,body[data-poz="roz"] .poz-pon{display:none!important}
 body[data-poz="must"] section.poz-e8>*:not(.part-heading):not(.poz-must){display:none}
 body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
@@ -652,9 +652,9 @@ body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
 :root{--lab:#0e2326;--lab-tekst:var(--text,#1a2332);--lab-cisza:var(--text-muted,#8892a0);--lab-linia:var(--border,#e5e9ee)}
 .lab{background:var(--surface,#fff);color:var(--text,#1a2332);border:1px solid var(--border,#e5e9ee);border-radius:var(--r-lg,14px);padding:16px;box-shadow:var(--sh-sm,none);font-family:var(--tekst,Inter,system-ui,sans-serif)}
 .lab-pasek{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between;margin-bottom:12px}
-.lab-pasek .btn{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+.lab-pasek .btn{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:var(--bg,#fff)}
 .lab-cisza{color:var(--text-muted,#8892a0);font-size:14px}
-.btn{appearance:none;cursor:pointer;border:1px solid var(--accent,#0d6868);background:var(--accent,#0d6868);color:#fff;border-radius:var(--r-md,10px);padding:8px 14px;font:600 13px var(--tekst,Inter,sans-serif)}
+.btn{appearance:none;cursor:pointer;border:1px solid var(--accent,#0d6868);background:var(--accent,#0d6868);color:var(--bg,#fff);border-radius:var(--r-md,10px);padding:8px 14px;font:600 13px var(--tekst,Inter,sans-serif)}
 .btn.jasny{background:var(--surface,#fff);color:var(--accent,#0d6868)}
 .btn:hover{filter:brightness(1.08)}
 .btn:focus-visible{outline:2px solid var(--accent,#0d6868);outline-offset:2px}
@@ -695,7 +695,7 @@ body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
 .wyb-lista{display:grid;gap:6px;margin:6px 0 8px;padding:8px;border:1px solid var(--border,#e5e9ee);border-radius:var(--r-md,10px);background:var(--surface,#fff)}
 .wyb-g{display:block;font-size:11px;color:var(--text-muted,#8892a0);margin-bottom:3px}
 .wyb-sy{appearance:none;cursor:pointer;border:1px solid var(--border-strong,#cdd5dd);background:var(--surface-soft,#f6f8fa);color:var(--text,#1a2332);border-radius:var(--r-sm,6px);padding:4px 9px;margin:0 4px 4px 0;font:600 13px var(--naglowek,Inter,sans-serif)}
-.wyb-sy[aria-pressed="true"]{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:#fff}
+.wyb-sy[aria-pressed="true"]{background:var(--accent,#0d6868);border-color:var(--accent,#0d6868);color:var(--bg,#fff)}
 /* telefon: kilka stojaków obok siebie — węższy tekst, łamanie długich nazw */
 .kol{min-width:0}
 .kol b{overflow-wrap:anywhere;min-width:0}
@@ -706,8 +706,19 @@ body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
 @media (max-width:480px){.st-opis .obs{font-size:12.5px}.st .btn,.rack-ce .btn{padding:5px 8px;font-size:12px}}
 .seria-przyciski{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}
 .seria-btn[aria-pressed="false"]{background:transparent;color:var(--accent,#0d6868)}
-.seria-btn[aria-pressed="true"]{background:var(--accent,#0d6868);color:#fff}
+.seria-btn[aria-pressed="true"]{background:var(--accent,#0d6868);color:var(--bg,#fff)}
 .seria-opis{margin:0 0 10px;font-size:14px;color:var(--lab-cisza,#8892a0)}
+
+/* telefon: kilka stojaków obok siebie — nazwa pod kolorową kropką, łamanie tylko gdy konieczne */
+@media (max-width:480px){.rack .kol,.stacje .kol{flex-direction:column;align-items:flex-start;gap:4px}.rack .kol b,.stacje .kol b{overflow-wrap:break-word;hyphens:auto;font-size:13px}.rack .st-opis p,.stacje .st-opis p{overflow-wrap:break-word;hyphens:auto}}
+/* cele dotykowe: chipy i przyciski-pigułki min. 36 px wysokości na telefonie (małe pola tabel, np. układ okresowy, zostają) */
+@media (max-width:640px),(pointer:coarse){[data-klocek] button[style*="999px"],[data-klocek] button[style*="99px"],.rxl button.o,.che-port button:not(.che-prac-go){min-height:36px!important}.wyb-sy,.seria-btn,.rack-ce .btn,.st .btn{min-height:34px!important}[data-klocek] summary{min-height:36px;display:flex;align-items:center}}
+/* telefon: stojaki obok siebie — opisy od góry (równe początki), przyciski na dole, mniejszy tekst */
+@media (max-width:480px){.rack-ce.st-opis,.rack-ce{justify-content:flex-start}.rack-ce>.btn:last-child,.rack-ce>button:last-child{margin-top:auto}.rack .st-opis,.rack-ce .obs,.rack-ce p{font-size:12.5px;line-height:1.4}.rack .kol b,.stacje .kol b{font-size:12px}.rack-ce .sw{width:16px;height:16px}}
+@media (max-width:480px){.rack .st-opis{margin-top:0;justify-content:flex-start}}
+
+/* wskazówka przewijania poziomego tabel w klockach */
+[data-klocek] div[style*="overflow-x:auto"]{background:linear-gradient(to right,var(--surface,#fff) 30%,transparent),linear-gradient(to left,var(--surface,#fff) 30%,transparent) 100% 0,radial-gradient(farthest-side at 0 50%,rgba(0,0,0,.30),transparent),radial-gradient(farthest-side at 100% 50%,rgba(0,0,0,.30),transparent) 100% 0;background-repeat:no-repeat;background-size:36px 100%,36px 100%,16px 100%,16px 100%;background-attachment:local,local,scroll,scroll}
 
 
 
@@ -870,7 +881,7 @@ section[id],h2[id]{scroll-margin-top:72px}
 <p><strong>Sposób 1, proporcja:</strong> 48 : 80 = 24 : x, więc x = 40 g.</p>
 <p><strong>Sposób 2, współczynnik mnożnikowy:</strong> 24 g to połowa z 48 g, więc produkt też jest połową z 80 g: 40 g.</p>
 <p><strong>Wniosek:</strong> proporcja działa zawsze. Współczynnik mnożnikowy jest szybszy, gdy stosunek mas jest prostym ułamkiem (1/2, 1/4, 1/10).</p>
-<figure class="lk-fig che-fig" data-che-viz="stech-kalkulator-v01"><div class="lk-fig-body"></div><figcaption><b>Kalkulator stechiometryczny: masa, mole, objętość gazu</b> <span>Silnik CHE · otwiera się w oknie</span></figcaption></figure>
+<figure class="lk-fig" data-klocek="stechiometria" data-opt="{}"><div class="lk-fig-body"></div><figcaption>Kalkulator stechiometryczny: masa, mole, objętość gazu</figcaption></figure>
 <!-- OPIS: Dla wybranej reakcji wpisujesz masę, liczbę moli lub objętość gazu jednej substancji, a model pokazuje tabelę wszystkich substancji (współczynnik, masa molowa, mole, masa, objętość gazu) i tok rozumowania: n = m/M, stosunek współczynników, m = n·M. Objętość gazu liczona jest przy 22,4 dm³/mol (0 °C, 1013 hPa), a masy atomowe są dokładne, więc wynik może różnić się od zadania z masami zaokrąglonymi w drugim miejscu po przecinku. Tryb „limitujący” pokazuje odczynnik w niedomiarze. Wniosek: ilości substancji w reakcji wynikają ze współczynników równania. -->
 <h3>6. Wstęp do nadmiaru substratu</h3>
 <p>Gdy podane są masy obu substratów, sprawdzamy, czy są w idealnej proporcji. Jeśli nie, jeden z nich jest w nadmiarze, a drugi przereaguje w całości. Pełne obliczenia z nadmiarem są w ZADANIU 6.</p>
@@ -1116,11 +1127,12 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
 }
 
 /* KLOCEK: bilans-rownania — dobieranie współczynników: przyciski − / + przy każdej substancji, tabela liczby atomów po obu stronach.
-   Opcje: rownanie ("H2 + O2 -> H2O"), przyklady (lista rówań oddzielona średnikami; chipy).
+   Opcje: rownanie ("H2 + O2 -> H2O"; jony: Cu + Ag^+ -> Cu^2+ + Ag, ładunek po ^; składniki rozdzielone ' + ' ze spacjami), przyklady (lista rówań oddzielona średnikami; chipy).
    Zbilansowane równanie: wszystkie pierwiastki mają tyle samo atomów po lewej i po prawej (znak ✓), inaczej ✗ i różnica. */
 (function () {
   var IND = '₀₁₂₃₄₅₆₇₈₉';
-  function ind(s) { return String(s).replace(/(\d+)/g, function (d) { return d.split('').map(function (c) { return IND[+c]; }).join(''); }); }
+  function ind(s) {
+    var m = /\^(\d*)([+-])$/.exec(String(s)); if (m) { var SUP = {'0': '⁰', '1': '¹', '2': '²', '3': '³', '4': '⁴'}; return ind(String(s).slice(0, m.index)) + (m[1] && m[1] !== '1' ? SUP[m[1]] || m[1] : '') + (m[2] === '+' ? '⁺' : '⁻'); } return String(s).replace(/(\d+)/g, function (d) { return d.split('').map(function (c) { return IND[+c]; }).join(''); }); }
   function parse(f) {
     var i = 0;
     function grupa() {
@@ -1152,9 +1164,10 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
       var st = null;
       function laduj(r) {
         var p = r.split(/->|→/); if (p.length !== 2) return;
-        function side(s) { return s.split('+').map(function (x) { return x.trim(); }).filter(Boolean); }
+        function side(s) { return s.split(/\s+\+\s+/).map(function (x) { return x.trim(); }).filter(Boolean); }
         var L = side(p[0]), R = side(p[1]);
-        st = {L: L.map(function (f) { return {f: f, n: 1, a: parse(f)}; }), R: R.map(function (f) { return {f: f, n: 1, a: parse(f)}; })};
+        function mk(f) { var m = /\^(\d*)([+-])$/.exec(f), q = m ? (m[2] === '+' ? 1 : -1) * (m[1] ? +m[1] : 1) : 0; return {f: f, n: 1, a: parse(m ? f.slice(0, m.index) : f), q: q}; }
+        st = {L: L.map(mk), R: R.map(mk)};
         rys();
       }
       function strona(S, key) {
@@ -1181,14 +1194,121 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
           var r = el[e], eq = r.L === r.R; if (!eq) ok = false;
           h += '<tr><td style="padding:3px 12px"><b>' + e + '</b></td><td style="text-align:center">' + r.L + '</td><td style="text-align:center">' + r.R + '</td><td style="padding:3px 12px;color:' + (eq ? 'var(--c-basic,#15803d)' : 'var(--c-error,#dc2626)') + ';font-weight:700">' + (eq ? '✓' : '✗ różnica ' + Math.abs(r.L - r.R)) + '</td></tr>';
         });
+        var qL = 0, qR = 0, maQ = false; st.L.forEach(function (x) { qL += x.n * x.q; if (x.q) maQ = true; }); st.R.forEach(function (x) { qR += x.n * x.q; if (x.q) maQ = true; });
+        if (maQ) { var eqq = qL === qR; if (!eqq) ok = false; h += '<tr><td style="padding:3px 12px"><b>ładunek</b></td><td style="text-align:center">' + qL + '</td><td style="text-align:center">' + qR + '</td><td style="padding:3px 12px;color:' + (eqq ? 'var(--c-basic,#15803d)' : 'var(--c-error,#dc2626)') + '">' + (eqq ? '✓' : '✗') + '</td></tr>'; }
         tt.innerHTML = h + '</table><div style="text-align:center;margin-top:8px;font-weight:600;color:' + (ok ? 'var(--c-basic,#15803d)' : 'var(--text-soft,#64748b)') + '">' + (ok ? 'Równanie zbilansowane: tyle samo atomów po obu stronach.' : 'Zmieniaj współczynniki tak, aby liczby atomów po obu stronach były równe.') + '</div>';
       }
       String(opc.przyklady).split(';').forEach(function (r) {
         r = r.trim(); if (!r) return;
-        var b = document.createElement('button'); b.type = 'button'; b.style.cssText = BTN; b.textContent = ind(r.replace('->', '→'));
+        var b = document.createElement('button'); b.type = 'button'; b.style.cssText = BTN; b.textContent = ind(r.replace('->', '→').replace(/\^(\d*)([+-])/g, function (_, n, z) { var S = {'2': '²', '3': '³', '4': '⁴'}; return (n && n !== '1' ? S[n] || n : '') + (z === '+' ? '⁺' : '⁻'); }));
         b.addEventListener('click', function () { laduj(r); }); ch.appendChild(b);
       });
       laduj(opc.rownanie);
+    }
+  });
+})();
+
+/* ui_klocki.js — wspólne drobiazgi interfejsu dla klocków HTML/SVG (przyciski-chipy, suwak, autostart animacji w widoku).
+   KLOCKI.ui.btn(tekst, akcja) · .chip(tekst, aktywny, akcja) · .suwak(etykieta, min, max, krok, wartosc, akcja) · .anim(host, krok(dt, t)) → uchwyt {start, stop}. */
+(function () {
+  var BTN = 'font:inherit;font-size:13px;padding:5px 11px;border:1px solid var(--border-strong,#94a3b8);border-radius:999px;background:var(--surface,#fff);color:inherit;cursor:pointer;margin:2px';
+  var ui = {
+    BTN: BTN,
+    btn: function (t, f, tytul) { var b = document.createElement('button'); b.type = 'button'; b.style.cssText = BTN; b.innerHTML = t; if (tytul) b.title = tytul; b.addEventListener('click', f); return b; },
+    chip: function (t, on, f) { var b = ui.btn(t, f); ui.zaznacz(b, on); return b; },
+    zaznacz: function (b, on) { b.style.background = on ? 'var(--accent,#0d6868)' : 'var(--surface,#fff)'; b.style.color = on ? 'var(--bg,#fff)' : 'inherit'; b.style.borderColor = on ? 'var(--accent,#0d6868)' : 'var(--border-strong,#94a3b8)'; },
+    suwak: function (et, mn, mx, st, w, f) {
+      var l = document.createElement('label'); l.style.cssText = 'display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:14px;margin:4px 0';
+      l.innerHTML = '<span style="min-width:120px">' + et + '</span><input type="range" min="' + mn + '" max="' + mx + '" step="' + st + '" value="' + w + '" style="flex:1;min-width:140px;accent-color:var(--accent,#0d6868)"><b class="sv" style="min-width:64px"></b>';
+      var i = l.querySelector('input'), v = l.querySelector('.sv');
+      i.addEventListener('input', function () { f(+i.value, v); }); f(+i.value, v); return l;
+    },
+    /* animacja startująca, gdy host jest widoczny; krok(dt_s, t_s). Reduced motion: jedna klatka. */
+    anim: function (host, krok) {
+      var raf = 0, t = 0, last = 0, on = false;
+      function p(now) { var dt = Math.min(.05, (now - last) / 1000); last = now; t += dt; krok(dt, t); raf = requestAnimationFrame(p); }
+      var h = {
+        start: function () { if (on) return; on = true; last = performance.now(); raf = requestAnimationFrame(p); },
+        stop: function () { on = false; cancelAnimationFrame(raf); },
+        t: function () { return t; }
+      };
+      if (typeof RM !== 'undefined' && RM) { krok(0, 0); return h; }
+      if ('IntersectionObserver' in window) new IntersectionObserver(function (es) { es.forEach(function (e) { e.isIntersecting ? h.start() : h.stop(); }); }, {threshold: .05}).observe(host);
+      else h.start();
+      return h;
+    }
+  };
+  window.KLOCKI.ui = ui;
+})();
+
+/* KLOCEK: stechiometria — kalkulator stechiometryczny: wybierasz reakcję i substancję, podajesz masę / mole / objętość gazu, a tabela pokazuje n, m i V
+   wszystkich reagentów oraz tok rozumowania (n = m/M → stosunek współczynników → m = n·M); tryb „limitujący”: masy dwóch substratów → odczynnik w niedomiarze.
+   Zastępuje stech-kalkulator-v01 z dużego silnika. Masy molowe szkolne (zaokrąglone), V gazu w war. normalnych 22,4 dm³/mol. Wymaga ui_klocki.js. */
+(function () {
+  var U = function () { return window.KLOCKI.ui; };
+  function E(tag, css, html) { var e = document.createElement(tag); if (css) e.style.cssText = css; if (html != null) e.innerHTML = html; return e; }
+  function f(x, n) { return (+x.toFixed(n)).toString().replace('.', ','); }
+  // [wzór, współczynnik, M, gaz?]
+  var R = [
+    {n: '2 Mg + O₂ → 2 MgO', s: [['Mg', 2, 24], ['O₂', 1, 32, 1]], p: [['MgO', 2, 40]]},
+    {n: 'CaCO₃ → CaO + CO₂↑ (prażenie)', s: [['CaCO₃', 1, 100]], p: [['CaO', 1, 56], ['CO₂', 1, 44, 1]]},
+    {n: 'Zn + 2 HCl → ZnCl₂ + H₂↑', s: [['Zn', 1, 65], ['HCl', 2, 36.5]], p: [['ZnCl₂', 1, 136], ['H₂', 1, 2, 1]]},
+    {n: 'Mg + 2 HCl → MgCl₂ + H₂↑', s: [['Mg', 1, 24], ['HCl', 2, 36.5]], p: [['MgCl₂', 1, 95], ['H₂', 1, 2, 1]]},
+    {n: 'CuO + H₂SO₄ → CuSO₄ + H₂O', s: [['CuO', 1, 80], ['H₂SO₄', 1, 98]], p: [['CuSO₄', 1, 160], ['H₂O', 1, 18]]},
+    {n: 'CaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂↑', s: [['CaCO₃', 1, 100], ['HCl', 2, 36.5]], p: [['CaCl₂', 1, 111], ['H₂O', 1, 18], ['CO₂', 1, 44, 1]]},
+    {n: 'NaOH + HCl → NaCl + H₂O', s: [['NaOH', 1, 40], ['HCl', 1, 36.5]], p: [['NaCl', 1, 58.5], ['H₂O', 1, 18]]},
+    {n: 'AgNO₃ + NaCl → AgCl↓ + NaNO₃', s: [['AgNO₃', 1, 170], ['NaCl', 1, 58.5]], p: [['AgCl', 1, 143.5], ['NaNO₃', 1, 85]]},
+    {n: 'BaCl₂ + Na₂SO₄ → BaSO₄↓ + 2 NaCl', s: [['BaCl₂', 1, 208], ['Na₂SO₄', 1, 142]], p: [['BaSO₄', 1, 233], ['NaCl', 2, 58.5]]},
+    {n: 'CuSO₄ + 2 NaOH → Cu(OH)₂↓ + Na₂SO₄', s: [['CuSO₄', 1, 160], ['NaOH', 2, 40]], p: [['Cu(OH)₂', 1, 98], ['Na₂SO₄', 1, 142]]},
+    {n: '2 Na + 2 H₂O → 2 NaOH + H₂↑', s: [['Na', 2, 23], ['H₂O', 2, 18]], p: [['NaOH', 2, 40], ['H₂', 1, 2, 1]]}
+  ];
+  var TH = 'padding:4px 8px;text-align:left;border-bottom:1px solid var(--border,#cbd5e1)', TD = 'padding:4px 8px';
+  KLOCKI.def('stechiometria', {
+    opis: 'Kalkulator stechiometryczny: dla wybranej reakcji podajesz masę, liczbę moli lub objętość gazu jednej substancji, a tabela pokazuje mole, masy i objętości wszystkich reagentów oraz tok obliczeń; tryb limitujący wskazuje substrat w niedomiarze.',
+    domyslne: {reakcja: 0},
+    html: function (host, opc) {
+      host.style.display = 'block';
+      var cur = Math.min(R.length - 1, Math.max(0, +opc.reakcja || 0)), mode = 'calc', idx = 0, jed = 'm', q = 10, masy = [10, 10];
+      var bar = E('div', 'display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px'), sel = E('select', 'max-width:100%;font:inherit;padding:4px'), inp = E('div', 'display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:6px 0;font-size:14px'), out = E('div', 'font-size:14px');
+      R.forEach(function (r, i) { var o = E('option', '', r.n); o.value = i; sel.appendChild(o); }); sel.value = cur;
+      var mb = U().btn('tryb: obliczenia', function () { mode = mode === 'calc' ? 'lim' : 'calc'; mb.textContent = mode === 'calc' ? 'tryb: obliczenia' : 'tryb: odczynnik limitujący'; form(); });
+      sel.onchange = function () { cur = +sel.value; idx = 0; form(); };
+      bar.append(sel, mb);
+      function all() { return R[cur].s.concat(R[cur].p); }
+      function tab(rows, k) {   // rows: [[wzór, side, coef, M, n, gaz]]
+        return '<div style="overflow-x:auto"><table style="border-collapse:collapse;margin:6px 0"><tr>' + ['substancja', 'współcz.', 'M [g/mol]', 'n [mol]', 'm [g]', 'V [dm³]'].map(function (h) { return '<th style="' + TH + '">' + h + '</th>'; }).join('') + '</tr>' +
+          rows.map(function (x) { return '<tr><td style="' + TD + '">' + x[0] + ' <small>(' + (x[1] === 's' ? 'substrat' : 'produkt') + ')</small></td><td style="' + TD + '">' + x[2] + '</td><td style="' + TD + '">' + f(x[3], 1) + '</td><td style="' + TD + '">' + f(x[4], 4) + '</td><td style="' + TD + '"><b>' + f(x[4] * x[3], 2) + '</b></td><td style="' + TD + '">' + (x[5] ? f(x[4] * 22.4, 2) : '') + '</td></tr>'; }).join('') + '</table></div>';
+      }
+      function licz() {
+        var r = R[cur], A = all(), a = A[idx], n0 = jed === 'm' ? q / a[2] : jed === 'n' ? q : q / 22.4, k = n0 / a[1];
+        var rows = A.map(function (x, i) { return [x[0], i < r.s.length ? 's' : 'p', x[1], x[2], k * x[1], x[3]]; });
+        var ms = rows.reduce(function (t, x) { return t + (x[1] === 's' ? x[3] * x[4] : 0); }, 0), mp = rows.reduce(function (t, x) { return t + (x[1] === 'p' ? x[3] * x[4] : 0); }, 0);
+        out.innerHTML = '<div style="font-weight:700;margin:6px 0">' + r.n + '</div>' + tab(rows) +
+          '<div style="color:var(--text-muted,#5b6b73)"><b>Tok rozumowania:</b><br>1) n(' + a[0] + ') = ' + (jed === 'm' ? 'm/M = ' + f(q, 2) + ' g ÷ ' + f(a[2], 1) + ' g/mol = ' + f(n0, 4) + ' mol' : jed === 'n' ? f(n0, 4) + ' mol' : 'V/22,4 = ' + f(q, 2) + ' ÷ 22,4 = ' + f(n0, 4) + ' mol') +
+          '<br>2) z współczynników: n(inna) = n(' + a[0] + ') · (współcz. innej ÷ ' + a[1] + ')<br>3) m = n · M<br>4) kontrola: masa substratów ' + f(ms, 2) + ' g = masa produktów ' + f(mp, 2) + ' g (prawo zachowania masy).</div>';
+      }
+      function lim() {
+        var r = R[cur], S = r.s.slice(0, 2), t = S.map(function (x, i) { return {f: x[0], n: masy[i] / x[2], c: x[1], rat: masy[i] / x[2] / x[1], M: x[2]}; }), l = t[0].rat <= t[1].rat ? 0 : 1, k = t[l].rat;
+        var rows = all().map(function (x, i) { return [x[0], i < r.s.length ? 's' : 'p', x[1], x[2], k * x[1], x[3]]; });
+        var o = 1 - l, nad = t[o].n - k * t[o].c;
+        out.innerHTML = '<div style="font-weight:700;margin:6px 0">' + r.n + '</div><div style="border:1px solid var(--border,#cbd5e1);border-radius:10px;padding:8px 12px;background:var(--surface-soft,#f6f8fa)"><b>Odczynnik limitujący: ' + t[l].f + '</b> (n ÷ współcz.: ' + t.map(function (x) { return x.f + ' ' + f(x.n, 4) + '/' + x.c + ' = ' + f(x.rat, 4); }).join(' · ') + ')<br>W nadmiarze zostaje: ' + t[o].f + ' ' + f(nad * t[o].M, 2) + ' g</div>' + tab(rows);
+      }
+      function form() {
+        inp.innerHTML = ''; var r = R[cur];
+        if (mode === 'calc') {
+          var s1 = E('select', 'font:inherit;padding:4px'), q1 = E('input', 'width:90px;font:inherit;padding:4px'), u = E('select', 'font:inherit;padding:4px');
+          all().forEach(function (x, i) { var o = E('option', '', x[0]); o.value = i; s1.appendChild(o); }); s1.value = idx;
+          [['m', 'g'], ['n', 'mol']].concat(all()[idx][3] ? [['V', 'dm³ (gaz)']] : []).forEach(function (x) { var o = E('option', '', x[1]); o.value = x[0]; u.appendChild(o); });
+          if (!all()[idx][3] && jed === 'V') jed = 'm'; u.value = jed; q1.type = 'number'; q1.step = 'any'; q1.value = q;
+          var go = function () { idx = +s1.value; jed = u.value; q = Math.max(0, +q1.value || 0); licz(); };
+          s1.onchange = function () { idx = +s1.value; form(); }; u.onchange = go; q1.oninput = go;
+          inp.append(E('span', '', 'dane:'), s1, q1, u); licz();
+        } else {
+          r.s.slice(0, 2).forEach(function (x, i) { var q2 = E('input', 'width:80px;font:inherit;padding:4px'); q2.type = 'number'; q2.step = 'any'; q2.value = masy[i]; q2.oninput = function () { masy[i] = Math.max(0, +q2.value || 0); lim(); }; var l = E('label', '', 'm(' + x[0] + ') [g] '); l.appendChild(q2); inp.appendChild(l); });
+          lim();
+        }
+      }
+      host.append(bar, inp, out); form();
     }
   });
 })();
@@ -1290,57 +1410,6 @@ C.LITE_MOUNT=function(){[].forEach.call(document.querySelectorAll('[data-che-viz
   try{d.build(host)}catch(e){host.innerHTML='<p class="lk-err">Błąd modelu: '+e.message+'</p>';if(window.console)console.error(e)}})};
 })(window.CHE);
 
-/* stech-lite.js — lekki kalkulator stechiometryczny (2026-10-11), ten sam identyfikator co w silniku: stech-kalkulator-v01.
-   Rdzeń E8: masy z równania (współczynnik × masa cząsteczkowa), proporcja, nadmiar i reagent ograniczający, kontrola prawem
-   zachowania masy. Warstwa ambitna (przełącznik): mole i objętość gazów w warunkach normalnych (22,4 dm³/mol).
-   Masy atomowe szkolne (Cl = 35,5). Reakcje: lista RX poniżej — dopisuj w tym samym formacie, równania sprawdza bilans przy starcie. */
-(function(){
-var C=window.CHE=window.CHE||{};if(!C.VIEW||!C.VIEW.define||C.EXT_STECH_LITE)return;C.EXT_STECH_LITE=1;
-var AR={H:1,He:4,Li:7,C:12,N:14,O:16,F:19,Na:23,Mg:24,Al:27,Si:28,P:31,S:32,Cl:35.5,K:39,Ca:40,Mn:55,Fe:56,Cu:64,Zn:65,Br:80,Ag:108,I:127,Ba:137,Pb:207};
-var GAZ={H2:1,O2:1,N2:1,CO2:1,CO:1,Cl2:1,NH3:1,HCl:1,CH4:1,C2H6:1,C3H8:1,C4H10:1,SO2:1,H2S:1,NO2:1};
-var RX=[['spalanie wodoru','2 H2 + O2 → 2 H2O'],['spalanie węgla','C + O2 → CO2'],['spalanie metanu','CH4 + 2 O2 → CO2 + 2 H2O'],['spalanie propanu','C3H8 + 5 O2 → 3 CO2 + 4 H2O'],
- ['spalanie magnezu','2 Mg + O2 → 2 MgO'],['utlenianie żelaza','4 Fe + 3 O2 → 2 Fe2O3'],['synteza siarczku żelaza(II)','Fe + S → FeS'],['rozkład węglanu wapnia','CaCO3 → CaO + CO2'],
- ['cynk + kwas solny','Zn + 2 HCl → ZnCl2 + H2'],['glin + kwas solny','2 Al + 6 HCl → 2 AlCl3 + 3 H2'],['magnez + kwas solny','Mg + 2 HCl → MgCl2 + H2'],
- ['zobojętnianie NaOH + HCl','NaOH + HCl → NaCl + H2O'],['NaOH + H2SO4','2 NaOH + H2SO4 → Na2SO4 + 2 H2O'],['CuO + H2SO4','CuO + H2SO4 → CuSO4 + H2O'],
- ['tlenek wapnia + woda','CaO + H2O → Ca(OH)2'],['CO2 + woda wapienna','Ca(OH)2 + CO2 → CaCO3 + H2O'],['tlenek sodu + woda','Na2O + H2O → 2 NaOH'],['synteza amoniaku','N2 + 3 H2 → 2 NH3']];
-var SUB={'0':'₀','1':'₁','2':'₂','3':'₃','4':'₄','5':'₅','6':'₆','7':'₇','8':'₈','9':'₉'};
-function ladny(f){return f.replace(/(\D)(\d+)/g,function(m,a,b){return a+b.replace(/\d/g,function(d){return SUB[d]})}).replace(/\)(\d)/g,')$1')}
-function sklad(f){var c={};(function rec(t,m){var i=0;while(i<t.length){if(t[i]==='('){var d=1,j=i+1;while(d){if(t[j]==='(')d++;else if(t[j]===')')d--;j++}var k=/^\d*/.exec(t.slice(j))[0];rec(t.slice(i+1,j-1),m*(+k||1));i=j+k.length}
-  else{var g=/^([A-Z][a-z]?)(\d*)/.exec(t.slice(i));if(!g){i++;continue}c[g[1]]=(c[g[1]]||0)+m*(+g[2]||1);i+=g[0].length}}})(f,1);return c}
-function Mr(f){var c=sklad(f),s=0;for(var e in c){if(!AR[e])return NaN;s+=AR[e]*c[e]}return Math.round(s*100)/100}
-function parse(r){var p=r.split(' → ').map(function(s){return s.split(' + ').map(function(x){var m=/^(\d+)\s+(.*)$/.exec(x.trim());return{k:m?+m[1]:1,f:m?m[2]:x.trim()}})});return{L:p[0],P:p[1]}}
-function f2(x){if(!isFinite(x))return '—';var r=Math.abs(x)>=100?Math.round(x*10)/10:Math.round(x*100)/100;return String(r).replace('.',',')}
-RX.forEach(function(r){var q=parse(r[1]),bil={};q.L.forEach(function(s){var c=sklad(s.f);for(var e in c)bil[e]=(bil[e]||0)+c[e]*s.k});q.P.forEach(function(s){var c=sklad(s.f);for(var e in c)bil[e]=(bil[e]||0)-c[e]*s.k});
- for(var e in bil)if(Math.abs(bil[e])>1e-9&&window.console)console.warn('stech-lite: nieuzgodnione równanie',r[1])});
-var CSS='.stl{font:14px/1.5 Inter,system-ui,sans-serif}.stl .bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:6px 0}.stl select,.stl input[type=number]{font:inherit;padding:4px 6px;border:1px solid rgba(100,116,139,.5);border-radius:6px;background:transparent;color:inherit}'+
- '.stl input[type=number]{width:90px}.stl .eq{font:700 16px ui-monospace,Consolas,monospace;margin:8px 0;overflow-wrap:anywhere}.stl table{border-collapse:collapse;width:100%;font-size:13.5px;margin-top:6px}.stl th,.stl td{padding:5px 6px;border-bottom:1px solid rgba(100,116,139,.25);text-align:right}'+
- '.stl th:first-child,.stl td:first-child{text-align:left}.stl .nt{border-left:3px solid #0d6868;background:rgba(13,104,104,.06);padding:8px 10px;border-radius:6px;margin-top:8px;font-size:13.5px}.stl .lim{color:#b45309;font-weight:700}.stl .wrap{overflow-x:auto}';
-C.VIEW.define('stech-kalkulator-v01',{title:'Kalkulator stechiometryczny',hint:'Wybierz reakcję i wpisz masę jednego substratu (drugi w nadmiarze) albo obu — wtedy kalkulator znajdzie reagent ograniczający. Najpierw policz sam, potem sprawdź.',
- build:function(host){if(!document.getElementById('stl-css')){var st=document.createElement('style');st.id='stl-css';st.textContent=CSS;document.head.appendChild(st)}
-  host.classList.add('stl');var cur=0,amb=false,dane={};
-  var b1=document.createElement('div');b1.className='bar';var sel=document.createElement('select');sel.setAttribute('aria-label','Reakcja');RX.forEach(function(r,i){var o=document.createElement('option');o.value=i;o.textContent=r[0];sel.appendChild(o)});
-  var lab=document.createElement('label'),cb=document.createElement('input');cb.type='checkbox';lab.appendChild(cb);lab.appendChild(document.createTextNode(' mole i objętości (ambitne)'));b1.appendChild(sel);b1.appendChild(lab);
-  var eq=document.createElement('div');eq.className='eq';var b2=document.createElement('div');b2.className='bar';var tw=document.createElement('div');tw.className='wrap';var out=document.createElement('div');out.className='nt';
-  [b1,eq,b2,tw,out].forEach(function(e){host.appendChild(e)});
-  function wejscia(){var q=parse(RX[cur][1]);b2.innerHTML='';dane={};q.L.forEach(function(s,i){var l=document.createElement('label');l.innerHTML='m('+ladny(s.f)+') [g] ';var inp=document.createElement('input');inp.type='number';inp.min=0;inp.step='any';
-   if(i===0)inp.value=String(s.k*Mr(s.f));inp.oninput=function(){licz()};l.appendChild(inp);b2.appendChild(l);dane[i]=inp})}
-  function licz(){var q=parse(RX[cur][1]),all=q.L.concat(q.P),wz=all.map(function(s){return s.k*Mr(s.f)});
-   eq.textContent=q.L.map(function(s){return(s.k>1?s.k+' ':'')+ladny(s.f)}).join(' + ')+' → '+q.P.map(function(s){return(s.k>1?s.k+' ':'')+ladny(s.f)}).join(' + ');
-   var podane=[];q.L.forEach(function(s,i){var v=parseFloat(String(dane[i].value).replace(',','.'));if(isFinite(v)&&v>0)podane.push({i:i,m:v})});
-   if(!podane.length){tw.innerHTML='';out.innerHTML='Wpisz masę co najmniej jednego substratu.';return}
-   var x=Math.min.apply(null,podane.map(function(p){return p.m/wz[p.i]})),lim=podane.length>1?podane.filter(function(p){return Math.abs(p.m/wz[p.i]-x)<1e-12})[0].i:null;
-   var h='<table><tr><th>substancja</th><th>Mr [u]</th><th>z równania [g]</th><th>przereaguje / powstanie [g]</th>'+(amb?'<th>n [mol]</th><th>V [dm³]*</th>':'')+'</tr>',sL=0,sP=0;
-   all.forEach(function(s,i){var m=wz[i]*x,isL=i<q.L.length;if(isL)sL+=m;else sP+=m;var n=s.k*x,gaz=GAZ[s.f];
-    h+='<tr><td>'+(isL?'':'→ ')+ladny(s.f)+(i===lim?' <span class="lim">ogranicza</span>':'')+'</td><td>'+f2(Mr(s.f))+'</td><td>'+f2(wz[i])+'</td><td><b>'+f2(m)+'</b></td>'+(amb?'<td>'+f2(n)+'</td><td>'+(gaz?f2(n*22.4):'—')+'</td>':'')+'</tr>'});
-   tw.innerHTML=h+'</table>';
-   var t='<b>Proporcja:</b> masy z równania (współczynnik × Mr) skalujemy tym samym mnożnikiem ×'+f2(x)+'. ';
-   if(podane.length>1){var reszta=podane.filter(function(p){return p.i!==lim}).map(function(p){return '<b>'+f2(p.m-wz[p.i]*x)+' g</b> '+ladny(q.L[p.i].f)})
-    t+='Reagent ograniczający: <span class="lim">'+ladny(q.L[lim].f)+'</span> — kończy się pierwszy. W nadmiarze zostaje: '+reszta.join(', ')+'. '}
-   else if(q.L.length>1)t+='Pozostałe substraty przyjmujemy w nadmiarze — tabela pokazuje, ile ich przereaguje. ';
-   t+='<b>Kontrola:</b> substraty '+f2(sL)+' g = produkty '+f2(sP)+' g (prawo zachowania masy).'+(amb?'<br><small>* objętość gazu w warunkach normalnych (0°C, 1013,25 hPa), 22,4 dm³/mol.</small>':'');
-   out.innerHTML=t}
-  sel.onchange=function(){cur=+sel.value;wejscia();licz()};cb.onchange=function(){amb=cb.checked;licz()};wejscia();licz()}});
-})();
 
 CHE.LITE_MOUNT();
 /* nawigacja.js — hamburger ze spisem treści + zakładka czytania (wspólne: lekcje CHE z silnikiem i lekcje „lite”). */

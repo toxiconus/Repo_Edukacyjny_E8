@@ -449,7 +449,7 @@ Wniosek: Przed ogrzaniem — mieszanina (składniki zachowały właściwości, r
 Równanie:: Fe + S → FeS
 BHP: ogrzewanie wykonuje nauczyciel pod wyciągiem — może powstawać trujący SO₂; okulary; gorąca probówka może pęknąć.
 
-@zlewka f01-doswiadczenia-v01 f01FeS | Zobacz w probówce: Fe + S po ogrzaniu
+@klocek zlewka-rx {k="f01FeS"}
 @opis Probówka z mieszaniną opiłków żelaza i siarki po ogrzaniu: mieszanina rozżarza się, powstaje czarna, krucha substancja (siarczek żelaza(II)), której magnes już nie przyciąga. Wniosek: powstała nowa substancja o innych właściwościach — reakcja chemiczna Fe + S → FeS.
 :::
 
@@ -462,7 +462,7 @@ Obserwacja: Po wodzie z kranu zostaje biały nalot; po wodzie destylowanej szkie
 Wniosek: Woda z kranu to mieszanina jednorodna (zawiera rozpuszczone substancje), woda destylowana — w tym teście bez wykrywalnej pozostałości, więc w modelu szkolnym traktujemy ją jako czystą H₂O. Wygląd nie rozstrzygał — rozstrzygnął test.
 BHP: gorące szkiełko lub parownicę chwytać szczypcami; okulary.
 
-@zlewka f01-doswiadczenia-v01 f01Odparowanie | Zobacz w parownicy: odparowanie roztworu soli (analogia do wody z kranu)
+@klocek zlewka-rx {k="f01Odparowanie"}
 @opis Parownica z roztworem soli ogrzewana palnikiem: woda paruje, na dnie zostają białe kryształy soli. Woda z kranu daje podobny, słabszy nalot — ta sama zasada: po odparowaniu zostaje substancja stała. Wniosek: rozpuszczona sól nie zniknęła — odparowanie oddziela substancję stałą od lotnego rozpuszczalnika i jest zjawiskiem fizycznym.
 :::
 
@@ -475,7 +475,7 @@ Obserwacja: Woda z solą — jedna faza; woda z olejem — dwie warstwy cieczy (
 Wniosek: Woda z solą: 2 substancje, 1 faza. Woda z olejem: 2 substancje, 2 fazy. Woda z lodem: 1 substancja, 2 fazy.
 BHP: nie smakujemy substancji w pracowni; rozlany olej wytrzeć — śliska podłoga.
 
-@zlewka f01-doswiadczenia-v01 f01SolWoda | Zobacz w zlewce: sól w wodzie
+@klocek zlewka-rx {k="f01SolWoda"}
 @opis Sól wsypana do wody w zlewce: kryształy stopniowo znikają, powstaje klarowny, bezbarwny roztwór. Wniosek: to rozpuszczanie, czyli zjawisko fizyczne — sól można odzyskać, odparowując wodę.
 :::
 

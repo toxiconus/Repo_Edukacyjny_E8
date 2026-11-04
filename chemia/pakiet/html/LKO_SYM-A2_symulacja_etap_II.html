@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>LKO-SYM-A2 · &quot;Symulacja etapu II LKO (90 min / 40 pkt) — zakres kumulatywny I–VIII + rozszerzenia 1–7&quot;</title>
+<title>LKO-SYM-A2 · Symulacja etapu II LKO (90 min / 40 pkt) — zakres kumulatywny I–VIII + rozszerzenia 1–7</title>
 <style id="lekcja-css">
 /* baza.css — wspólna baza lekcji wszystkich przedmiotów (styl lekcji silnika CHE v0_57). Nie edytować — zmiany wspólne w ulepszenia.css, przedmiotowe w motywy/<kod>.css. */
 
@@ -39,7 +39,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans
 @media(min-width:600px){.fab-left{left:10px;}.fab-right{right:10px;}}
 @media(min-width:768px){.fab-left{left:14px;}.fab-right{right:14px;}}
 .fab-left::after{content:'';width:16px;height:2px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor;border-radius:1px;transition:transform 0.25s var(--ease);}
-.fab-left.is-open{background:var(--accent);color:#fff;border-color:var(--accent);}
+.fab-left.is-open{background:var(--accent);color:var(--bg,#fff);border-color:var(--accent);}
 .fab-left.is-open::after{width:16px;height:2px;background:currentColor;box-shadow:none;transform:rotate(45deg);}
 .fab-left.is-open::before{content:'';position:absolute;width:16px;height:2px;background:currentColor;transform:rotate(-45deg);border-radius:1px;}
 .fab-right::after{content:'';display:block;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:8px solid currentColor;transition:transform 0.35s var(--ease-out);}
@@ -55,7 +55,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans
 .header-nav{display:flex;gap:2px;flex-shrink:0;align-items:center;}
 .header-nav a,.header-nav button{width:32px;height:32px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);text-decoration:none;border-radius:var(--r-sm);font-size:16px;font-weight:500;transition:all 0.2s var(--ease);border:1px solid transparent;background:transparent;cursor:pointer;padding:0;font-family:inherit;}
 .header-nav a:hover,.header-nav button:hover{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line);}
-.header-resume-btn.is-active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.header-resume-btn.is-active{background:var(--accent);color:var(--bg,#fff);border-color:var(--accent);}
 .header-resume-btn::before{content:'▮';font-size:14px;line-height:1;}
 .header-panel{display:none;border-top:1px solid var(--border);background:linear-gradient(180deg,var(--surface) 0%,var(--surface-soft) 100%);padding:20px 16px 24px;}
 @media(min-width:768px){.header-panel{padding:24px 24px 28px;}}
@@ -67,7 +67,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans
 .header-subtitle{font-size:14px;color:var(--text-soft);line-height:1.6;margin-bottom:18px;max-width:720px;}
 .header-modes{display:flex;gap:6px;flex-wrap:wrap;}
 .mode-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 15px;border:1px solid var(--border);background:var(--surface);color:var(--text-soft);border-radius:var(--r-sm);font-size:12px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);font-family:inherit;}
-.mode-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
+.mode-btn.active{background:var(--accent);color:var(--bg,#fff);border-color:var(--accent);box-shadow:0 3px 10px var(--accent-glow);}
 .mode-btn:hover:not(.active){background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
 .resume-dropdown{display:none;position:fixed;top:calc(var(--header-h) + 6px);right:14px;z-index:1050;width:min(300px,calc(100vw - 30px));padding:14px;border:1px solid var(--border-strong);border-radius:12px;background:#fff;box-shadow:var(--sh-lg);}
 .resume-dropdown.is-open{display:block;}
@@ -75,7 +75,7 @@ body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans
 .resume-dropdown p{margin:0 0 12px;color:var(--text-muted);font-size:.75rem;line-height:1.5;}
 .resume-actions{display:flex;gap:6px;}
 .resume-actions button{flex:1;padding:8px;border:1px solid var(--border-strong);border-radius:8px;background:#fff;color:var(--text-soft);font:650 .72rem inherit;cursor:pointer;font-family:inherit;}
-.resume-actions .resume-save{background:var(--accent);color:#fff;border-color:var(--accent);}
+.resume-actions .resume-save{background:var(--accent);color:var(--bg,#fff);border-color:var(--accent);}
 .toc-overlay{position:fixed;inset:0;background:rgba(26,35,50,0.34);backdrop-filter:blur(3px);z-index:1100;opacity:0;visibility:hidden;transition:opacity 0.3s var(--ease),visibility 0.3s var(--ease);}
 .toc-overlay.is-visible{opacity:1;visibility:visible;}
 .toc-wrapper{position:fixed;left:0;top:0;width:320px;max-width:86vw;height:100vh;background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;z-index:1150;transform:translateX(-100%);transition:transform 0.4s var(--ease-out);padding-top:64px;box-shadow:var(--sh-xl);}
@@ -114,9 +114,9 @@ strong{font-weight:700;color:var(--text);}
 .formula-lg{display:block;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:16px;font-weight:700;color:var(--hl-formula);background:var(--hl-formula-bg);padding:10px 16px;border-radius:var(--r-md);border:1px solid var(--accent-line);letter-spacing:0.4px;margin:8px 0;text-align:center;overflow-x:auto;}
 code{background:var(--surface-soft);color:var(--accent);padding:2px 7px;border-radius:4px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;font-size:13px;font-weight:600;border:1px solid var(--border);}
 pre{background:var(--surface-soft);color:var(--text);padding:16px 18px;border-radius:var(--r-md);overflow-x:auto;border:1px solid var(--border);margin:14px 0;line-height:1.7;font-size:13px;font-family:'JetBrains Mono','Monaco','Consolas',monospace;}
-.mnemonic{background:linear-gradient(135deg,#fff8e1 0%,#ffecb3 100%);border:2px dashed #d69e2e;border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
-.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:#fff;padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:#78350f;}
-.mnemonic b{color:#78350f;}
+.mnemonic{background:var(--c-warn-bg,#fff8e1);border:2px dashed var(--c-warn,#d69e2e);color:var(--text);border-radius:var(--r-md);padding:16px 18px 14px;margin:14px 0;font-size:14.5px;position:relative;}
+.mnemonic::before{content:'Mnemotechnika';position:absolute;top:-10px;left:16px;background:var(--surface,#fff);padding:0 8px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.5px;color:var(--c-warn,#78350f);}
+.mnemonic b{color:var(--c-warn,#78350f);}
 .card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--accent);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;transition:box-shadow 0.2s var(--ease),transform 0.2s var(--ease);}
 @media(min-width:768px){.card{padding:18px 22px;margin:16px 0;}}
 .card:hover{box-shadow:var(--sh-md);transform:translateY(-1px);}
@@ -148,7 +148,7 @@ details.answer[open] summary{color:var(--accent);}
 details.answer > *:not(summary){margin-top:10px;font-size:13.5px;line-height:1.65;color:var(--text-soft);}
 .part-heading{display:flex;align-items:center;gap:14px;font-size:20px;font-weight:800;color:var(--text);margin-top:44px;margin-bottom:18px;letter-spacing:-0.4px;line-height:1.25;scroll-margin-top:80px;}
 @media(min-width:768px){.part-heading{font-size:22px;gap:16px;margin-top:52px;margin-bottom:22px;}}
-.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
+.part-num{flex-shrink:0;width:38px;height:38px;display:flex;align-items:center;justify-content:center;background:var(--accent);color:var(--bg,#fff);border-radius:50%;font-size:15px;font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 3px 10px var(--accent-glow);}
 @media(min-width:768px){.part-num{width:42px;height:42px;font-size:16px;}}
 .table-wrap{overflow-x:auto;margin:14px 0;border-radius:var(--r-md);border:1px solid var(--border);background:var(--surface);box-shadow:var(--sh-sm);-webkit-overflow-scrolling:touch;}
 .table-wrap table{width:100%;border-collapse:collapse;font-size:13.5px;}
@@ -211,7 +211,7 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-off
 .widget-hint{font-size:13px;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
 .bld-pool{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
 .bld-pool button{padding:6px 12px;border:1px solid var(--border);border-radius:20px;background:#fff;font:600 0.8rem inherit;cursor:pointer;font-family:inherit;color:var(--text);}
-.bld-pool button.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+.bld-pool button.active{background:var(--accent);color:var(--bg,#fff);border-color:var(--accent);}
 .bld-workspace{min-height:56px;padding:14px;border:1px dashed var(--border-strong);border-radius:10px;background:#fff;text-align:center;font-family:'JetBrains Mono',monospace;font-size:1.25rem;font-weight:700;margin-bottom:10px;}
 .bld-feedback,.re-result,.st-feedback,.ch-feedback{margin-top:10px;padding:10px 12px;border-radius:8px;font-size:0.9rem;font-weight:600;line-height:1.5;}
 .bld-feedback.ok,.re-result.ok,.st-feedback.ok,.ch-feedback.ok{background:var(--c-basic-bg);color:var(--c-basic);border:1px solid var(--c-basic-line);}
@@ -220,8 +220,8 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-off
 .bld-feedback.warn,.re-result.warn,.st-feedback.warn,.ch-feedback.warn{background:var(--c-warn-bg);color:var(--c-warn);border:1px solid var(--c-warn-line);}
 .btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:var(--r-sm);border:1px solid var(--border);background:#fff;font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s var(--ease);color:var(--text);font-family:inherit;}
 .btn:hover{background:var(--accent-soft);border-color:var(--accent-line);color:var(--accent);}
-.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent);}
-.btn-primary:hover{background:var(--accent-dark);color:#fff;border-color:var(--accent-dark);}
+.btn-primary{background:var(--accent);color:var(--bg,#fff);border-color:var(--accent);}
+.btn-primary:hover{background:var(--accent-dark);color:var(--bg,#fff);border-color:var(--accent-dark);}
 .btn-sm{padding:6px 10px;font-size:12px;}
 .flashcard-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:18px 0;}
 @media(min-width:520px){.flashcard-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}}
@@ -268,7 +268,7 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-off
 .klinika-table td.col-ok::before{content:'✓ ';font-weight:900;margin-right:4px;color:var(--c-basic);}
 .map-card{position:relative;}
 .map-expand-btn{position:absolute;top:10px;right:10px;z-index:3;padding:6px 12px;border:1px solid var(--accent-line);background:rgba(255,255,255,0.95);color:var(--accent);border-radius:var(--r-sm);font-size:12px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:var(--sh-sm);transition:all 0.15s var(--ease);}
-.map-expand-btn:hover{background:var(--accent);color:#fff;border-color:var(--accent);}
+.map-expand-btn:hover{background:var(--accent);color:var(--bg,#fff);border-color:var(--accent);}
 .map-overlay{display:none;position:fixed;inset:0;z-index:2000;background:rgba(26,35,50,0.85);backdrop-filter:blur(6px);}
 .map-overlay.is-open{display:block;}
 .map-overlay-inner{position:absolute;inset:12px;background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-xl);}
@@ -371,7 +371,7 @@ html,body{max-width:100%;overflow-x:hidden;}
 .lab-bridge{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:16px 0 28px;padding:14px 16px;border:1px solid var(--accent-line);border-left:4px solid var(--accent);border-radius:var(--r-md);background:linear-gradient(135deg,var(--surface-soft),var(--accent-soft));}
 .lab-bridge strong{display:block;color:var(--accent-dark);}
 .lab-bridge span{display:block;margin-top:3px;color:var(--text-soft);font-size:13px;}
-.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:800;}
+.lab-bridge-btn{flex-shrink:0;padding:8px 12px;border:1px solid var(--accent);border-radius:7px;background:var(--accent);color:var(--bg,#fff);text-decoration:none;font-size:12px;font-weight:800;}
 .lab-bridge-btn:hover{background:var(--accent-dark);border-color:var(--accent-dark);}
 @media(max-width:600px){.lab-bridge{align-items:flex-start;flex-direction:column;}.lab-bridge-btn{width:100%;text-align:center;}}
 .exp-card{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--c-basic);border-radius:var(--r-md);padding:14px 16px;margin:12px 0;}
@@ -442,7 +442,7 @@ background:linear-gradient(90deg,#e5262e 0%,#ef5a28 14%,#f6a21e 28%,#d7d93a 43%,
 @keyframes rxFume{to{transform:translate(var(--dx,0),-70px) scale(2.2);opacity:0}}
 
 
-.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.controls .btn-primary,.button-grid .btn-primary{background:var(--accent);color:var(--bg,#fff);border-color:var(--accent)}
 .rx-label{flex:1 1 200px;font-size:13px;color:var(--text-soft);line-height:1.5}
 .rx-label b{color:var(--text);font-family:'JetBrains Mono',monospace}
 @media print{.js-reveal .card,.js-reveal .widget{opacity:1!important;transform:none!important}}
@@ -498,7 +498,7 @@ section[id],[id].minimum-card{scroll-margin-top:calc(var(--header-h) + 14px)}
 .lk-tree ul ul li:last-child::before{bottom:auto;height:16px}
 .lk-tree ul ul li::after{content:"";position:absolute;left:0;top:16px;width:10px;border-top:2px solid var(--accent-line)}
 .lk-tree span{display:inline-block;padding:3px 10px;border-radius:8px;background:var(--surface-soft);border:1px solid var(--border)}
-.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:800}
+.lk-tree>ul>li>span{background:var(--accent);border-color:var(--accent);color:var(--bg,#fff);font-weight:800}
 
 /* cytat z tekstu (lektura, źródło, wypowiedź) */
 .lk-quote{margin:16px 0;padding:14px 18px 12px 20px;border-left:3px solid var(--accent);background:var(--surface-soft);border-radius:0 var(--r-md) var(--r-md) 0}
@@ -623,14 +623,14 @@ section ul,section ol{padding-left:1.35rem}
 @media print{.quiz-q[hidden]{display:revert!important}.q-more{display:none}}
 /* logi analizy zmian (::: log) — zwijane, domyślnie zamknięte */
 details.lk-log{margin:28px 0 8px;padding:8px 14px;border:1px dashed var(--border-strong,#9aa6ad);border-radius:var(--r-md,10px);background:transparent}
-details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--muted,#5b6b73)}
+details.lk-log>summary{cursor:pointer;font-weight:600;font-size:14px;color:var(--text-muted,#5b6b73)}
 @media print{details.lk-log{display:none}}
 
 /* poziomy treści (lekcje z poziomy: tak) — filtr: muszę umieć / E8 / E8+rozszerzenie / wszystko */
 .poz-bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0;padding:10px 12px;border:1px solid var(--border,#d0d7de);border-radius:10px;background:var(--surface-soft,#f6f8fa);position:sticky;top:0;z-index:20}
-.poz-bar-t{font-weight:700;font-size:14px}.poz-bar-i{flex-basis:100%;font-size:13px;color:var(--muted,#5b6b73)}
+.poz-bar-t{font-weight:700;font-size:14px}.poz-bar-i{flex-basis:100%;font-size:13px;color:var(--text-muted,#5b6b73)}
 .poz-bar button{font:inherit;font-size:14px;padding:6px 12px;border-radius:999px;border:1px solid var(--border-strong,#9aa6ad);background:var(--surface,#fff);color:inherit;cursor:pointer}
-.poz-bar button[aria-pressed="true"]{background:var(--accent,#0b6bcb);color:#fff;border-color:transparent}
+.poz-bar button[aria-pressed="true"]{background:var(--accent,#0b6bcb);color:var(--bg,#fff);border-color:transparent}
 body[data-poz="must"] .poz-roz,body[data-poz="must"] .poz-pon,body[data-poz="e8"] .poz-roz,body[data-poz="e8"] .poz-pon,body[data-poz="roz"] .poz-pon{display:none!important}
 body[data-poz="must"] section.poz-e8>*:not(.part-heading):not(.poz-must){display:none}
 body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
@@ -707,9 +707,9 @@ section[id],h2[id]{scroll-margin-top:72px}
 </head>
 <body>
 <a class="skip-link" href="#main">Przejdź do treści</a>
-<header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">LKO-SYM-A2 &quot;Symulacja etapu II LKO (90 min / 40 pkt) — zakres kumulatywny I–VIII + rozszerzenia 1–7&quot;</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
+<header class="lk-bar"><span class="lk-subj"><i></i>Chemia</span><span class="lk-title">LKO-SYM-A2 Symulacja etapu II LKO (90 min / 40 pkt) — zakres kumulatywny I–VIII + rozszerzenia 1–7</span><a class="lk-btn" href="#spis" aria-label="Spis treści">Spis</a><button class="lk-btn" id="lkMotyw" type="button" aria-label="Przełącz tryb jasny lub ciemny"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button><a class="lk-btn" href="#main" aria-label="Na górę">↑</a><span class="lk-prog" aria-hidden="true"></span></header>
 <main class="page" id="main">
-<section class="hero card"><div class="hero-kicker">Chemia, lekcja LKO-SYM-A2</div><h1>"Symulacja etapu II LKO (90 min / 40 pkt) — zakres kumulatywny I–VIII + rozszerzenia 1–7"</h1><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
+<section class="hero card"><div class="hero-kicker">Chemia, lekcja LKO-SYM-A2</div><h1>Symulacja etapu II LKO (90 min / 40 pkt) — zakres kumulatywny I–VIII + rozszerzenia 1–7</h1><div class="tag-row"></div><button type="button" class="adv-toggle" id="advToggle" aria-pressed="false">Pokaż treści akademickie</button></section>
 <details class="toc-item" id="spis" open><summary class="toc-summary">Spis treści</summary><nav class="toc-links"><a class="toc-link" href="#minimum">Minimum E8</a><a class="toc-link" href="#s1">LKO-SYM-A2 — Symulacja etapu II</a><a class="toc-link" href="#s2">Lustro i most</a><a class="toc-link" href="#s3">1. Wykład — jak zapisywać rozwiązania, żeby zdobyć punkty</a><a class="toc-link" href="#s4">Zasady przeprowadzenia</a><a class="toc-link" href="#s5">Zadania (formy etapu II)</a><a class="toc-link" href="#s6">Fiszki i słownik — symulacja</a><a class="toc-link" href="#s7">Ciekawostki</a><a class="toc-link" href="#s8">POST-MORTEM — z wyniku do decyzji</a><a class="toc-link" href="#s9">Krok 1. Wynik</a><a class="toc-link" href="#s10">Krok 2. Zadanie → plik → naprawa</a><a class="toc-link" href="#s11">Krok 3. Karta trzy błędy</a><a class="toc-link" href="#s12">Notatka dla prowadzącego: granice</a></nav></details>
 <div class="card card-understand">
 <span class="card-label">Zasady tego zestawu — co jest autorskie</span>

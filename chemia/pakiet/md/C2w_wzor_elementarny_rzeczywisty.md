@@ -144,7 +144,7 @@ Kryształy CuSO₄·5H₂O są niebieskie. Woda krystalizacyjna odchodzi stopnio
 Gips (CaSO₄·2H₂O) po ogrzaniu (temperatura orientacyjna, do weryfikacji) traci część wody i tworzy półhydrat CaSO₄·0,5H₂O, tzw. gips palony. Po zmieszaniu z wodą wiąże ponownie i twardnieje — stąd jego zastosowanie w budownictwie i medycynie.
 :::
 
-@zlewka sole-doswiadczenia-v01 cuso4Hydrate | Zobacz w zlewce: ogrzewanie CuSO₄·5H₂O (poza zakresem LKO 2026/27)
+@klocek zlewka-rx {k="cuso4Hydrate"}
 @opis Niebieskie kryształy uwodnionego siarczanu(VI) miedzi(II) ogrzewane w probówce: tracą wodę (para skrapla się u wylotu) i stają się białym proszkiem; po dodaniu kropli wody znów błękitnieją. Wniosek: CuSO₄·5H₂O ⇌ CuSO₄ + 5 H₂O — ubytek masy po ogrzaniu pozwala policzyć liczbę cząsteczek wody krystalizacyjnej.
 
 @klocek probowki-odczyn {tuby="CuSO₄·5H₂O ogrzewany:niebieski:bialy:gaz" kat="45"} | Ogrzewanie hydratu: niebieski kryształ biały, uchodzi para wodna (poza zakresem LKO 2026/27)

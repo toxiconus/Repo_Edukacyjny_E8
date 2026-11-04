@@ -383,7 +383,7 @@ Nie każde doświadczenie wymaga skomplikowanej kontroli, ale każde powinno mie
 
 ## 10 | Doświadczenia {#doswiadczenia}
 
-@model f01-doswiadczenia-v01 | Pracownia: co naprawdę się zmieniło? | zjawiska fizyczne i reakcje w zlewce, parownicy, probówce i tyglu — obserwacja, wniosek, BHP
+@klocek f01-doswiadczenia-v01 | Pracownia: co naprawdę się zmieniło? | zjawiska fizyczne i reakcje w zlewce, parownicy, probówce i tyglu — obserwacja, wniosek, BHP
 @opis Pracownia z doświadczeniami w zlewce, parownicy, probówce i tyglu: rozpuszczanie soli, odparowanie roztworu, soda z octem, woda wapienna z CO₂, żelazo z siarką po ogrzaniu, spalanie magnezu; przy każdym obserwacje, wniosek i zasady BHP. Wniosek: tylko część zmian to reakcje chemiczne — rozstrzyga, czy powstała nowa substancja.
 
 ::: dosw | Doświadczenie 1 — Co naprawdę się zmieniło? (trzy naczynia)
@@ -396,11 +396,11 @@ Wniosek: (a) i (b) — zjawiska fizyczne (pomocniczo: substancję wyjściową da
 Równanie:: NaHCO₃ + CH₃COOH → CH₃COONa + H₂O + CO₂↑
 BHP: okulary ochronne; nie smakujemy substancji; parownicę po ogrzaniu chwytamy szczypcami — jest gorąca; ocet nie do oczu.
 
-@zlewka f01-doswiadczenia-v01 f01SolWoda | Zobacz w zlewce: sól w wodzie
+@klocek zlewka-rx {k="f01SolWoda"}
 @opis Sól wsypana do wody w zlewce: kryształy stopniowo znikają, powstaje klarowny, bezbarwny roztwór. Wniosek: to rozpuszczanie, czyli zjawisko fizyczne — sól można odzyskać, odparowując wodę.
-@zlewka f01-doswiadczenia-v01 f01Odparowanie | Zobacz w zlewce: odparowanie roztworu soli
+@klocek zlewka-rx {k="f01Odparowanie"}
 @opis Parownica z roztworem soli ogrzewana palnikiem: woda paruje, na dnie zostają białe kryształy soli. Wniosek: rozpuszczona sól nie zniknęła — odparowanie oddziela substancję stałą od lotnego rozpuszczalnika i jest zjawiskiem fizycznym.
-@zlewka f01-doswiadczenia-v01 f01SodaOcet | Zobacz w zlewce: soda + ocet
+@klocek zlewka-rx {k="f01SodaOcet"}
 @opis Do sody oczyszczonej dodano ocet: mieszanina pieni się i intensywnie wydziela pęcherzyki bezbarwnego gazu. Wniosek: bardzo prawdopodobnie zachodzi reakcja chemiczna — powstaje nowa substancja gazowa; jej tożsamość sprawdzamy w Doświadczeniu 2.
 :::
 
@@ -414,7 +414,7 @@ Wniosek: zmętnienie wskazuje na CO₂ w tych warunkach (bez SO₂ i nadmiaru CO
 Równanie:: Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O
 BHP: okulary; woda wapienna jest zasadowa i drażni oczy oraz skórę; rurka nie może być zatkana (rosnące ciśnienie).
 
-@zlewka f01-doswiadczenia-v01 f01WodaWapienna | Zobacz w zlewce: woda wapienna i CO₂
+@klocek zlewka-rx {k="f01WodaWapienna"}
 @opis Tlenek węgla(IV) wprowadzany do klarownej wody wapiennej: woda mętnieje, pojawia się biała zawiesina węglanu wapnia. Wniosek: zmętnienie wody wapiennej wskazuje na CO₂ w tych warunkach; nadmiar CO₂ rozpuszcza osad i woda się klaruje.
 :::
 
@@ -428,7 +428,7 @@ Wniosek: powstała nowa substancja — tlenek magnezu; to reakcja chemiczna (obj
 Równanie:: 2 Mg + O₂ → 2 MgO
 BHP: wykonuje nauczyciel; **nie patrzeć bezpośrednio w płomień** (bardzo jasne światło); płonącego magnezu nie gasić wodą; okulary, płytka ceramiczna pod spodem.
 
-@zlewka f01-doswiadczenia-v01 f01Mg | Zobacz na płytce ceramicznej: spalanie magnezu
+@klocek zlewka-rx {k="f01Mg"}
 @opis Wstążka magnezu spalana nad płytką ceramiczną: oślepiająco jasny, biały płomień, po spaleniu zostaje biały proszek (tlenek magnezu). Wniosek: zaszła reakcja chemiczna 2 Mg + O₂ → 2 MgO; w płomień nie patrzymy bezpośrednio.
 :::
 
@@ -442,7 +442,7 @@ Wniosek: (1) mieszanina — składniki zachowują właściwości; (2) reakcja ch
 Równanie:: Fe + S → FeS
 BHP: wykonuje nauczyciel pod wyciągiem; przy ogrzewaniu siarki może powstawać trujący SO₂ — nie wąchać; gorąca probówka może pęknąć — okulary, szczypce.
 
-@zlewka f01-doswiadczenia-v01 f01FeS | Zobacz w probówce: Fe + S po ogrzaniu
+@klocek zlewka-rx {k="f01FeS"}
 @opis Probówka z mieszaniną opiłków żelaza i siarki po ogrzaniu: mieszanina rozżarza się, powstaje czarna, krucha substancja (siarczek żelaza(II)), której magnes już nie przyciąga. Wniosek: powstała nowa substancja o innych właściwościach — reakcja chemiczna Fe + S → FeS.
 :::
 

@@ -165,7 +165,7 @@ To samo zadanie można zrobić **współczynnikiem mnożnikowym**: 12 g to 4 raz
 
 **Wniosek:** proporcja działa zawsze. Współczynnik mnożnikowy jest szybszy, gdy stosunek mas jest prostym ułamkiem (1/2, 1/4, 1/10).
 
-@model stech-kalkulator-v01 | Kalkulator stechiometryczny: masa, mole, objętość gazu | Silnik CHE · otwiera się w oknie
+@klocek stechiometria {} | Kalkulator stechiometryczny: masa, mole, objętość gazu | Silnik CHE · otwiera się w oknie
 @opis Dla wybranej reakcji wpisujesz masę, liczbę moli lub objętość gazu jednej substancji, a model pokazuje tabelę wszystkich substancji (współczynnik, masa molowa, mole, masa, objętość gazu) i tok rozumowania: n = m/M, stosunek współczynników, m = n·M. Objętość gazu liczona jest przy 22,4 dm³/mol (0 °C, 1013 hPa), a masy atomowe są dokładne, więc wynik może różnić się od zadania z masami zaokrąglonymi w drugim miejscu po przecinku. Tryb „limitujący” pokazuje odczynnik w niedomiarze. Wniosek: ilości substancji w reakcji wynikają ze współczynników równania.
 
 ### 6. Wstęp do nadmiaru substratu

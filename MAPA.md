@@ -647,23 +647,23 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/pakiet  (1 pl., 24 KB)
 - `okladka.html` 24 KB
 
-## chemia/pakiet/html  (74 pl., 12.0 MB)
+## chemia/pakiet/html  (74 pl., 12.5 MB)
 - (zwinięte; `ls chemia/pakiet/html`) — duże:
-- ⚠`C1c_konfiguracje_elektronowe.html` 273 KB
-- ⚠`C1c_kwasy_zasady_sole.html` 276 KB
-- ⚠`C1c_masy_sklad_procentowy.html` 266 KB
-- ⚠`C1c_wodorki_typy_reakcji.html` 272 KB
-- ⚠`C2m_mol_masa_molowa.html` 137 KB
-- ⚠`C2w_wzor_elementarny_rzeczywisty.html` 132 KB
-- ⚠`C3_rownania_i_obliczenia_z_rownan.html` 134 KB
-- ⚠`C4_doswiadczenia_zbiorczo.html` 151 KB
+- ⚠`C1c_konfiguracje_elektronowe.html` 283 KB
+- ⚠`C1c_kwasy_zasady_sole.html` 286 KB
+- ⚠`C1c_masy_sklad_procentowy.html` 276 KB
+- ⚠`C1c_wodorki_typy_reakcji.html` 283 KB
+- ⚠`C2m_mol_masa_molowa.html` 141 KB
+- ⚠`C2w_wzor_elementarny_rzeczywisty.html` 202 KB
+- ⚠`C3_rownania_i_obliczenia_z_rownan.html` 140 KB
+- ⚠`C4_doswiadczenia_zbiorczo.html` 154 KB
 
 ## chemia/pakiet/md  (74 pl., 2.5 MB)
 - (zwinięte; `ls chemia/pakiet/md`) — duże:
 - ⚠`F01_jak_mysli_chemik.md` 62 KB
 - ⚠`F02_materia_i_substancje.md` 55 KB
 - ⚠`F03_wlasciwosci_i_rozdzielanie.md` 57 KB
-- ⚠`F06_uklad_okresowy.md` 72 KB
+- ⚠`F06_uklad_okresowy.md` 71 KB
 - ⚠`F17_rownania_reakcji_i_obliczenia.md` 57 KB
 - ⚠`FIZ01_elektrostatyka.md` 108 KB
 - ⚠`J03_rownania_jonowe_i_stracanie.md` 116 KB
@@ -754,7 +754,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## eksport/grafiki  (1 pl., 7 KB)
 - `VIZ_START.html` 7 KB
 
-## narzedzia  (36 pl., 208 KB)
+## narzedzia  (37 pl., 210 KB)
 - (zwinięte; `ls narzedzia`)
 
 ## narzedzia/jednorazowe  (5 pl., 14 KB)
@@ -764,7 +764,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - `fix_encoding_v2.ps1` 5 KB
 - `replace_gereb_card.ps1` 5 KB
 
-## okladki  (7 pl., 216 KB)
+## okladki  (7 pl., 215 KB)
 - ⚠`index.html` 106 KB
 - `okladka_angielski.html` 12 KB
 - `okladka_biologia.html` 24 KB
@@ -869,16 +869,16 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## olimpiada/LKO_pakiet  (1 pl., 8 KB)
 - `okladka.html` 8 KB
 
-## olimpiada/LKO_pakiet/html  (19 pl., 3.0 MB)
+## olimpiada/LKO_pakiet/html  (19 pl., 3.1 MB)
 - (zwinięte; `ls olimpiada/LKO_pakiet/html`) — duże:
 - ⚠`LKO_A1_symulacja_etap_I.html` 126 KB
-- ⚠`LKO_B1B2_zestawy_treningowe.html` 113 KB
+- ⚠`LKO_B1B2_zestawy_treningowe.html` 114 KB
 - ⚠`LKO_DIAG_diagnoza_wejsciowa.html` 116 KB
 - ⚠`LKO_DOSW_katalog_doswiadczen.html` 137 KB
 - ⚠`LKO_KRZYWE_krzywe_rozpuszczalnosci.html` 134 KB
 - ⚠`LKO_METALE_szereg_jonowe_otrzymywanie.html` 129 KB
-- ⚠`LKO_ORG01_alkany.html` 224 KB
-- ⚠`LKO_ORG02_alkeny.html` 213 KB
+- ⚠`LKO_ORG01_alkany.html` 226 KB
+- ⚠`LKO_ORG02_alkeny.html` 216 KB
 
 ## olimpiada/LKO_pakiet/md  (19 pl., 641 KB)
 - (zwinięte; `ls olimpiada/LKO_pakiet/md`)
