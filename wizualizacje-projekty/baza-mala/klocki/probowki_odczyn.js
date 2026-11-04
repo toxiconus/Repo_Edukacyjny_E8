@@ -104,7 +104,7 @@
         }
 
         // korpus probówki (zaokrąglone dno)
-        KLOCKI.naczynia.szklo(x, X + rr, top, bot - rr, tw);
+        KLOCKI.naczynia.szklo(x, X + rr, top, bot - rr, tw, ang ? null : lvl);
         x.restore();
 
         // podpis
