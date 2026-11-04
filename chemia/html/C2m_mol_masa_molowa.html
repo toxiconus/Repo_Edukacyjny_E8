@@ -719,6 +719,8 @@ body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
 
 /* wskazówka przewijania poziomego tabel w klockach */
 [data-klocek] div[style*="overflow-x:auto"]{background:linear-gradient(to right,var(--surface,#fff) 30%,transparent),linear-gradient(to left,var(--surface,#fff) 30%,transparent) 100% 0,radial-gradient(farthest-side at 0 50%,rgba(0,0,0,.30),transparent),radial-gradient(farthest-side at 100% 50%,rgba(0,0,0,.30),transparent) 100% 0;background-repeat:no-repeat;background-size:36px 100%,36px 100%,16px 100%,16px 100%;background-attachment:local,local,scroll,scroll}
+:where([data-klocek]) :where(select,input[type=number],input[type=text]){font:inherit;padding:5px 9px;border:1px solid var(--border-strong,#cdd5dd);border-radius:9px;background:var(--surface,#fff);color:var(--text,#18212b);max-width:100%;box-sizing:border-box}
+:where([data-klocek]) :where(select,input):focus-visible{outline:2px solid var(--accent,#0d6868);outline-offset:1px}
 
 
 </style>

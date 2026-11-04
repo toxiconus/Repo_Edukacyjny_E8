@@ -104,14 +104,14 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## biologia/bio/szablon/wizualizacje  (59 pl., 301 KB)
 - (zwinięte; `ls biologia/bio/szablon/wizualizacje`)
 
-## biologia/html  (59 pl., 15.3 MB)
+## biologia/html  (59 pl., 15.4 MB)
 - (zwinięte; `ls biologia/html`) — duże:
 - ⚠`BIO.00.REV01.organizacja_i_chemizm_zycia.html` 410 KB
 - ⚠`BIO.00.REV02.roznorodnosc_zycia.html` 453 KB
 - ⚠`BIO.00.REV03.organizm_czlowieka_i_homeostaza.html` 134 KB
 - ⚠`BIO.00.REV04.genetyka_ewolucja_ekologia.html` 124 KB
 - ⚠`BIO.00.TEST.proby_REV01_REV04.html` 116 KB
-- ⚠`BIO.01.B1b.krzyzowki_mendel.html` 150 KB
+- ⚠`BIO.01.B1b.krzyzowki_mendel.html` 151 KB
 - ⚠`BIO.01.L001.komorka.html` 225 KB
 - ⚠`BIO.01.L001A.dodatek_ambitny_od_komorki_do.html` 158 KB
 
@@ -342,7 +342,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/engine/src/gfx/wspolne/widoki  (1 pl., 4 KB)
 - `che-test-silnika-v01.js` 4 KB
 
-## chemia/che-modular/engine/src/klocki  (71 pl., 713 KB)
+## chemia/che-modular/engine/src/klocki  (71 pl., 714 KB)
 - (zwinięte; `ls chemia/che-modular/engine/src/klocki`) — duże:
 - ⚠`wodorotlenki_n02.js` 83 KB
 
@@ -557,7 +557,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`C2m_mol_masa_molowa.html` 122 KB
 - ⚠`C2w_wzor_elementarny_rzeczywisty.html` 183 KB
 - ⚠`C3_rownania_i_obliczenia_z_rownan.html` 120 KB
-- ⚠`C4_doswiadczenia_zbiorczo.html` 134 KB
+- ⚠`C4_doswiadczenia_zbiorczo.html` 135 KB
 - ⚠`CHE.00.LAB.doswiadczenia.html` 155 KB
 - ⚠`CHE.00.REV01.powtorka_klasy_7.html` 220 KB
 - ⚠`CHE.00.REV02.powtorka_klasy_8.html` 99 KB
@@ -798,7 +798,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 - ⚠`BIO.00.REV03.organizm_czlowieka_i_homeostaza.html` 134 KB
 - ⚠`BIO.00.REV04.genetyka_ewolucja_ekologia.html` 124 KB
 - ⚠`BIO.00.TEST.proby_REV01_REV04.html` 116 KB
-- ⚠`BIO.01.B1b.krzyzowki_mendel.html` 150 KB
+- ⚠`BIO.01.B1b.krzyzowki_mendel.html` 151 KB
 - ⚠`BIO.01.L001.komorka.html` 225 KB
 - ⚠`BIO.01.L001A.dodatek_ambitny_od_komorki_do.html` 158 KB
 
@@ -1293,7 +1293,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## wizualizacje-projekty/baza-mala/gfx/wspolne/widoki  (1 pl., 4 KB)
 - `che-test-silnika-v01.js` 4 KB
 
-## wizualizacje-projekty/baza-mala/klocki  (71 pl., 713 KB)
+## wizualizacje-projekty/baza-mala/klocki  (71 pl., 714 KB)
 - (zwinięte; `ls wizualizacje-projekty/baza-mala/klocki`) — duże:
 - ⚠`wodorotlenki_n02.js` 83 KB
 
