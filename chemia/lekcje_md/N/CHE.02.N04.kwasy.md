@@ -807,9 +807,6 @@ Wskaźnik to słaby kwas HInd, którego forma kwasowa i zasadowa mają różne b
 @klocek ph-indicators-v03 | Panel pH: skala, wskaźniki i barwy, drabinka kwasów i zasad (wybierz roztwór i wskaźnik)
 @opis Panel pH: skala od 0 do 14 z zaznaczonym odczynem kwasowym, obojętnym i zasadowym, barwy wskaźników (uniwersalny, fenoloftaleina, oranż metylowy, wywar z czerwonej kapusty) przy różnych pH oraz przykłady codziennych roztworów. Wniosek: odczyn rozpoznaje się wskaźnikiem — fenoloftaleina barwi się na malinowo tylko w odczynie zasadowym.
 
-@klocek ph-skala {ph="3"} | Skala pH: przesuń suwak i zobacz barwy wskaźników
-@opis Poziomy pasek skali 0–14 od czerwonego (kwas) przez zielony (obojętny) do fioletowego (zasada) ze znacznikiem na suwaku; pod nim trzy próbki barwy: papierek uniwersalny, oranż metylowy i fenoloftaleina oraz stężenie H₃O⁺ i najbliższa substancja z życia. Wniosek: im niższe pH, tym więcej H₃O⁺ — każda jednostka to 10 razy.
-
 @klocek probowki-odczyn {tuby="Oranż + HCl:pomaranczowy:czerwony:brak,Fenol. + HCl:bezbarwny:bezbarwny:brak,Fenol. + NaOH:bezbarwny:malinowy:brak,Kapusta + ocet:fioletowy:czerwony:brak"} | Wskaźniki w kwasie i zasadzie: przed i po dodaniu odczynnika
 @opis Cztery probówki przed i po dodaniu odczynnika: oranż metylowy z HCl zmienia barwę na czerwoną, fenoloftaleina z HCl pozostaje bezbarwna, fenoloftaleina z NaOH staje się malinowa, wywar z kapusty z octem czerwienieje. Wniosek: barwa wskaźnika zależy od odczynu.
 
@@ -1183,9 +1180,6 @@ $$ 3 NO₂ + H₂O → 2 HNO₃ + NO (kwas azotowy(V))
 
 @klocek acid-rain-v01 | Kwaśne deszcze: zmień emisję, włącz odsiarczanie i obserwuj pH deszczu i jeziora
 @opis Animacja obiegu kwaśnych deszczy: spaliny z elektrowni i samochodów zawierają tlenki siarki i azotu, które w chmurach reagują z wodą, tworząc kwasy; opady niszczą lasy, zakwaszają jeziora i glebę i niszczą budynki z wapienia. Wniosek: kwasowe tlenki z emisji przemysłowej wracają na ziemię jako kwasy.
-
-@klocek kwasne-deszcze {} | Kwaśny deszcz: od komina do marmuru, lasu i jeziora
-@opis Animacja: komin emituje dym (SO₂, NOₓ), w chmurze z wodą powstają H₂SO₄ i HNO₃, spada deszcz o pH poniżej 5,6, który niszczy marmur (CaCO₃), las i zakwasza jezioro. Wniosek: tlenki z paliw to źródło kwaśnych deszczy.
 
 ## 11 | Zastosowania kwasów [[basic:E8]] {#zastosowania}
 

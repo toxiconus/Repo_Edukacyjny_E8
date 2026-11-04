@@ -5,10 +5,12 @@
   var SOL = {
     dist:   {n: 'woda destylowana', f: 'H₂O', cond: .02, mol: [['H2O', 16]], t: 'nieelektrolit (prawie nie przewodzi)'},
     sugar:  {n: 'roztwór cukru', f: 'C₆H₁₂O₆', cond: .02, mol: [['SUG', 3], ['H2O', 12]], t: 'nieelektrolit — cząsteczki nie rozpadają się na jony'},
+    EtOH:   {n: 'etanol', f: 'C₂H₅OH', cond: .02, mol: [['EtOH', 5], ['H2O', 8]], t: 'nieelektrolit — cząsteczki etanolu nie dysocjują na jony'},
     HCl:    {n: 'kwas solny', f: 'HCl(aq)', cond: 1, el: {cat: {f: 'H₂', n: 1}, an: {f: 'Cl₂', n: .6, col: [214, 232, 140]}, eq: 'katoda (−): 2 H⁺ + 2 e⁻ → H₂↑ · anoda (+): 2 Cl⁻ → Cl₂↑ + 2 e⁻'}, mol: [['H3O+', 6], ['Cl-', 6], ['H2O', 8]], t: 'elektrolit mocny — HCl całkowicie zdysocjowany: H₃O⁺ + Cl⁻'},
     H2SO4:  {n: 'kwas siarkowy(VI)', f: 'H₂SO₄(aq)', cond: 1, el: {cat: {f: 'H₂', n: 1}, an: {f: 'O₂', n: .5}, eq: 'katoda (−): 2 H⁺ + 2 e⁻ → H₂↑ · anoda (+): 2 H₂O → O₂↑ + 4 H⁺ + 4 e⁻ (jony SO₄²⁻ nie utleniają się)'}, mol: [['H3O+', 6], ['SO42-', 3], ['H2O', 8]], t: 'elektrolit mocny: 2 H₃O⁺ + SO₄²⁻'},
     CH3COOH: {n: 'kwas octowy', f: 'CH₃COOH(aq)', cond: .3, el: {cat: {f: 'H₂', n: .5}, an: {f: 'O₂', n: .25}, eq: 'katoda (−): 2 H⁺ + 2 e⁻ → H₂↑ · anoda (+): 2 H₂O → O₂↑ + 4 H⁺ + 4 e⁻ — mało jonów, więc gazu niewiele'}, mol: [['CH3COOH', 5], ['H3O+', 1], ['CH3COO-', 1], ['H2O', 9]], t: 'elektrolit słaby — zdysocjowana tylko niewielka część cząsteczek'},
     NaOH:   {n: 'zasada sodowa', f: 'NaOH(aq)', cond: .95, el: {cat: {f: 'H₂', n: 1}, an: {f: 'O₂', n: .5}, eq: 'katoda (−): 2 H₂O + 2 e⁻ → H₂↑ + 2 OH⁻ (Na⁺ się nie redukuje) · anoda (+): 4 OH⁻ → O₂↑ + 2 H₂O + 4 e⁻'}, mol: [['Na+', 6], ['OH-', 6], ['H2O', 8]], t: 'elektrolit mocny: Na⁺ + OH⁻'},
+    CuSO4:  {n: 'siarczan(VI) miedzi(II)', f: 'CuSO₄(aq)', cond: .9, el: {cat: {f: 'Cu (osad)', n: 0, col: [184, 115, 51]}, an: {f: 'O₂', n: .5}, eq: 'katoda (−): Cu²⁺ + 2 e⁻ → Cu (czerwonobrunatny osad) · anoda (+): 2 H₂O → O₂↑ + 4 H⁺ + 4 e⁻'}, mol: [['Cu2+', 4], ['SO42-', 4], ['H2O', 8]], t: 'sól — elektrolit mocny: Cu²⁺ + SO₄²⁻'},
     NaCl:   {n: 'roztwór soli kuchennej', f: 'NaCl(aq)', cond: .9, el: {cat: {f: 'H₂', n: 1}, an: {f: 'Cl₂', n: .6, col: [214, 232, 140]}, eq: 'katoda (−): 2 H₂O + 2 e⁻ → H₂↑ + 2 OH⁻ · anoda (+): 2 Cl⁻ → Cl₂↑ + 2 e⁻ (w roztworze stężonym)'}, mol: [['Na+', 6], ['Cl-', 6], ['H2O', 8]], t: 'elektrolit mocny: Na⁺ + Cl⁻'}
   };
   /* gatunki: r = promień, col, lab = napis, q = ładunek (+1/−1/0) */
@@ -17,9 +19,10 @@
     'H3O+': {r: 10, col: '#f97316', lab: 'H₃O', q: 1}, 'Cl-': {r: 10, col: '#22c55e', lab: 'Cl', q: -1},
     'SO42-': {r: 13, col: '#eab308', lab: 'SO₄', q: -2}, 'Na+': {r: 9, col: '#8b5cf6', lab: 'Na', q: 1},
     'OH-': {r: 9, col: '#dc2626', lab: 'OH', q: -1}, 'CH3COO-': {r: 12, col: '#94a3b8', lab: 'AcO', q: -1},
+    'Cu2+': {r: 10, col: '#2563eb', lab: 'Cu', q: 2}, 'EtOH': {r: 13, col: '#a1a1aa', lab: 'C₂H₅OH', q: 0},
     'CH3COOH': {r: 14, col: '#a1a1aa', lab: 'CH₃COOH', q: 0}, 'SUG': {r: 15, col: '#d6b98c', lab: 'C₆H₁₂O₆', q: 0}
   };
-  var ORDER = ['dist', 'sugar', 'HCl', 'H2SO4', 'CH3COOH', 'NaOH', 'NaCl'];
+  var ORDER = ['dist', 'sugar', 'EtOH', 'HCl', 'H2SO4', 'CH3COOH', 'NaOH', 'NaCl', 'CuSO4'];
 
   function ciemny() { return document.documentElement.hasAttribute('data-ciemny'); }
   function rr(c, x, y, w, h, r) { c.beginPath(); if (c.roundRect) c.roundRect(x, y, w, h, r); else c.rect(x, y, w, h); }
@@ -74,13 +77,13 @@
           c.fillStyle = '#3f3f46'; rr(c, x - 4, ey0, 8, ey1 - ey0, 2); c.fill(); c.fillStyle = '#71717a'; c.fillRect(x - 4, ey0, 8, 5);
           var g = E ? (i ? E.an : E.cat) : null;
           if (g && czynny) {
-            var nb = Math.round(3 + 5 * g.n * k), col = g.col || [255, 255, 255];
+            var nb = g.n ? Math.round(3 + 5 * g.n * k) : 0, col = g.col || [255, 255, 255];
             for (var j = 0; j < nb; j++) {
               var u = (t / 1.4 * (.6 + k) + sr(j + i * 9)) % 1, y = ey1 - (ey1 - ltop) * u;
               if (y > ltop + 3) { c.beginPath(); c.arc(x + (j % 2 ? 6 : -6), y, 1.4 + sr(j) * 1.5, 0, 7); c.fillStyle = 'rgba(' + col.join(',') + ',' + (.75 * k) + ')'; c.fill(); c.strokeStyle = 'rgba(80,100,120,' + (.5 * k) + ')'; c.lineWidth = .6; c.stroke(); }
             }
           }
-          var lab = (i ? 'anoda (+)' : 'katoda (−)') + (g && czynny ? ': ' + g.f : ''); c.font = '800 10px system-ui,sans-serif'; var lw = c.measureText(lab).width + 8, lx = Math.max(2, Math.min(W1 - lw - 2, x - lw / 2)), ly = ey1 + 6;
+          var lab = (i ? '(+) ' : '(−) ') + (g && czynny ? g.f : (i ? 'anoda' : 'katoda')); c.font = '800 10px system-ui,sans-serif'; var lw = c.measureText(lab).width + 8, lx = Math.max(2, Math.min(W1 - lw - 2, x - lw / 2)), ly = ey1 + 6;
           c.fillStyle = dk ? 'rgba(30,41,59,.9)' : 'rgba(255,255,255,.9)'; rr(c, lx, ly, lw, 14, 3); c.fill(); c.fillStyle = i ? '#b91c1c' : '#1d4ed8'; c.textAlign = 'center'; c.fillText(lab, lx + lw / 2, ly + 11);
         });
         /* bateria */

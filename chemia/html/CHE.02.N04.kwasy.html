@@ -1359,8 +1359,6 @@ body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
 </div>
 <figure class="lk-fig" data-klocek="ph-indicators-v03" data-opt="{}"><div class="lk-fig-body"></div><figcaption>Panel pH: skala, wskaźniki i barwy, drabinka kwasów i zasad (wybierz roztwór i wskaźnik)</figcaption></figure>
 <!-- OPIS: Panel pH: skala od 0 do 14 z zaznaczonym odczynem kwasowym, obojętnym i zasadowym, barwy wskaźników (uniwersalny, fenoloftaleina, oranż metylowy, wywar z czerwonej kapusty) przy różnych pH oraz przykłady codziennych roztworów. Wniosek: odczyn rozpoznaje się wskaźnikiem — fenoloftaleina barwi się na malinowo tylko w odczynie zasadowym. -->
-<figure class="lk-fig" data-klocek="ph-skala" data-opt="{&quot;ph&quot;: &quot;3&quot;}"><div class="lk-fig-body"></div><figcaption>Skala pH: przesuń suwak i zobacz barwy wskaźników</figcaption></figure>
-<!-- OPIS: Poziomy pasek skali 0–14 od czerwonego (kwas) przez zielony (obojętny) do fioletowego (zasada) ze znacznikiem na suwaku; pod nim trzy próbki barwy: papierek uniwersalny, oranż metylowy i fenoloftaleina oraz stężenie H₃O⁺ i najbliższa substancja z życia. Wniosek: im niższe pH, tym więcej H₃O⁺ — każda jednostka to 10 razy. -->
 <figure class="lk-fig" data-klocek="probowki-odczyn" data-opt="{&quot;tuby&quot;: &quot;Oranż + HCl:pomaranczowy:czerwony:brak,Fenol. + HCl:bezbarwny:bezbarwny:brak,Fenol. + NaOH:bezbarwny:malinowy:brak,Kapusta + ocet:fioletowy:czerwony:brak&quot;}"><div class="lk-fig-body"></div><figcaption>Wskaźniki w kwasie i zasadzie: przed i po dodaniu odczynnika</figcaption></figure>
 <!-- OPIS: Cztery probówki przed i po dodaniu odczynnika: oranż metylowy z HCl zmienia barwę na czerwoną, fenoloftaleina z HCl pozostaje bezbarwna, fenoloftaleina z NaOH staje się malinowa, wywar z kapusty z octem czerwienieje. Wniosek: barwa wskaźnika zależy od odczynu. -->
 <h3>7.4 Laboratorium wskaźników</h3>
@@ -1615,8 +1613,6 @@ body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
 </div>
 <figure class="lk-fig" data-klocek="acid-rain-v01" data-opt="{}"><div class="lk-fig-body"></div><figcaption>Kwaśne deszcze: zmień emisję, włącz odsiarczanie i obserwuj pH deszczu i jeziora</figcaption></figure>
 <!-- OPIS: Animacja obiegu kwaśnych deszczy: spaliny z elektrowni i samochodów zawierają tlenki siarki i azotu, które w chmurach reagują z wodą, tworząc kwasy; opady niszczą lasy, zakwaszają jeziora i glebę i niszczą budynki z wapienia. Wniosek: kwasowe tlenki z emisji przemysłowej wracają na ziemię jako kwasy. -->
-<figure class="lk-fig" data-klocek="kwasne-deszcze" data-opt="{}"><div class="lk-fig-body"></div><figcaption>Kwaśny deszcz: od komina do marmuru, lasu i jeziora</figcaption></figure>
-<!-- OPIS: Animacja: komin emituje dym (SO₂, NOₓ), w chmurze z wodą powstają H₂SO₄ i HNO₃, spada deszcz o pH poniżej 5,6, który niszczy marmur (CaCO₃), las i zakwasza jezioro. Wniosek: tlenki z paliw to źródło kwaśnych deszczy. -->
 </section>
 <section id="zastosowania" class="poz-e8">
 <div class="part-heading"><span class="part-num">11</span> Zastosowania kwasów <span class="level-badge level-basic">E8</span></div>
@@ -3422,7 +3418,7 @@ DANE.CaO = {kon: 'związek CaO', rho: '3,34 g/cm³', rhoN: 3.34, mp: '2572 °C',
 })();
 
 /* KLOCKI: jony w wodzie — dysocjacja-vs-jonizacja (NaCl: jony już są; HCl: jony powstają), przeniesienie-protonu (kwas + woda → H₃O⁺),
-   tester-przewodnictwa (bateria, żarówka, elektrody; wybór roztworu). Wymaga ui_klocki.js. */
+   Wymaga ui_klocki.js. */
 (function () {
   function anim01(host, cel, f) {   // płynnie dąży do cel (0/1); f(t) rysuje; zwraca ustawianie celu
     var t = 0, c = cel, ZZ = window.KLOCKI.ui;
@@ -3490,30 +3486,6 @@ DANE.CaO = {kon: 'związek CaO', rho: '3,34 g/cm³', rhoN: 3.34, mp: '2572 °C',
         box.innerHTML = s + '</svg>';
         txt.innerHTML = t < .5 ? '<b>Przed:</b> kwas H–' + A[0] + ' i cząsteczka wody. Wiązanie H–' + A[0] + ' jest spolaryzowane.' : '<b>Po:</b> proton H⁺ przeszedł na wodę (H₃O⁺); reszta kwasowa jest teraz jonem <b>' + A[2] + '</b>. Kwas <b>oddaje proton</b>, woda go <b>przyjmuje</b>.';
       });
-    }
-  });
-
-  var ROZ = [['woda destylowana', 0, 'brak jonów'], ['roztwór cukru', 0, 'cząsteczki cukru nie dysocjują'], ['etanol', 0, 'cząsteczki, bez jonów'], ['NaCl (aq)', 1, 'jony Na⁺ i Cl⁻'], ['HCl (aq)', 1, 'jony H₃O⁺ i Cl⁻ (mocny kwas)'], ['NaOH (aq)', 1, 'jony Na⁺ i OH⁻'], ['CH₃COOH (aq)', .25, 'słaby kwas: mało jonów'], ['CuSO₄ (aq)', .9, 'jony Cu²⁺ i SO₄²⁻']];
-  KLOCKI.def('tester-przewodnictwa', {
-    opis: 'Tester przewodnictwa: bateria, żarówka i dwie elektrody zanurzone w wybranym roztworze; żarówka świeci tylko wtedy, gdy w roztworze są jony.',
-    domyslne: {},
-    html: function (host) {
-      var U = KLOCKI.ui, k = 3, bar = document.createElement('div'), box = document.createElement('div'), txt = document.createElement('div');
-      host.style.display = 'block'; bar.style.cssText = 'margin-bottom:6px'; txt.style.cssText = 'font-size:14px;margin-top:6px'; host.append(bar, box, txt);
-      function odsw() {
-        var r = ROZ[k], j = r[1], glow = j > 0 ? .25 + .75 * j : 0;
-        [].forEach.call(bar.children, function (b, i) { U.zaznacz(b, i === k); });
-        var jony = ''; for (var i = 0; i < Math.round(j * 10); i++) { var x = 150 + (i * 53) % 200, y = 150 + (i * 37) % 55; jony += '<circle cx="' + x + '" cy="' + y + '" r="4" fill="' + (i % 2 ? '#a855f7' : '#22c55e') + '"/>'; }
-        box.innerHTML = '<svg viewBox="0 0 520 250" width="100%" style="max-width:600px;display:block" role="img" aria-label="Tester przewodnictwa w roztworze: ' + r[0] + '">' +
-          '<rect x="60" y="30" width="46" height="34" rx="4" fill="#475569"/><text x="83" y="52" text-anchor="middle" font-size="12" fill="#fff">bateria</text>' +
-          '<path d="M106 47 H260 M290 47 H420 V170 M100 64 V170" fill="none" stroke="currentColor" stroke-width="2"/>' +
-          '<circle cx="275" cy="47" r="' + (14 + glow * 14) + '" fill="#fde047" fill-opacity="' + (glow * .45) + '"/><circle cx="275" cy="47" r="14" fill="' + (glow ? '#fde047' : '#e2e8f0') + '" stroke="#475569" stroke-width="2"/>' +
-          '<rect x="95" y="170" width="10" height="70" fill="#94a3b8"/><rect x="415" y="170" width="10" height="70" fill="#94a3b8"/>' +
-          '<path d="M85 150 H435 V235 Q435 245 425 245 H95 Q85 245 85 235 Z" fill="#bae6fd" fill-opacity=".55" stroke="#64748b" stroke-width="2"/>' + jony + '</svg>';
-        txt.innerHTML = '<b>' + r[0] + '</b>: żarówka ' + (j >= 1 ? 'świeci jasno' : j > 0 ? 'świeci słabo' : 'nie świeci') + ' — ' + r[2] + '. Prąd w roztworze przenoszą <b>jony</b>, nie elektrony.';
-      }
-      ROZ.forEach(function (r, i) { bar.appendChild(U.btn(r[0], function () { k = i; odsw(); })); });
-      odsw();
     }
   });
 })();
@@ -4850,6 +4822,7 @@ defineView('ph-indicators-v03',{
         out.push({id:b.id,f:b.f,name:b.name,type:'b',tag:b.kind==='strong'?'mocna':'słaba',pH:pH,alpha:alpha,note:note,eq:b.eq,ref:14+Math.log10(c)});
       });
       out.push({id:'H2O',f:'H₂O',name:'woda destylowana',type:'w',tag:'',pH:7,alpha:null,note:'woda czysta — [H₃O⁺] = [OH⁻] = 10⁻⁷ M, odczyn obojętny.',eq:'2 H₂O ⇌ H₃O⁺ + OH⁻'});
+      [[1.5,'sok żołądkowy'],[2.3,'sok z cytryny'],[2.9,'ocet'],[4.5,'sok pomidorowy'],[5.6,'deszcz'],[8.3,'soda oczyszczona'],[10,'mydło'],[11.5,'woda amoniakalna']].forEach(([v,n])=>out.push({id:'Z'+v,f:n,name:'substancja z życia (orientacyjne pH)',type:'z',tag:'',pH:v,alpha:null,note:n+' — pH ≈ '+String(v).replace('.',',')+'. Każda jednostka pH to 10× inne stężenie H₃O⁺.',eq:'pH = −log [H₃O⁺]'}));
       out.forEach(o=>{o.pH=clamp(o.pH,0,14)});
       return out;
     }
@@ -4892,7 +4865,7 @@ defineView('ph-indicators-v03',{
     const ddSmp=mkSel('Roztwór'),ddInd=mkSel('Odczynnik (wskaźnik)');
     const fill=()=>{ddSmp.innerHTML='';
       const o0=H('option',null,'— dowolne pH (suwak) —');o0.value='free';ddSmp.appendChild(o0);
-      [['a','Kwasy'],['b','Zasady'],['w','Woda']].forEach(([t,g])=>{const og=document.createElement('optgroup');og.label=g;
+      [['a','Kwasy'],['b','Zasady'],['z','Z życia'],['w','Woda']].forEach(([t,g])=>{const og=document.createElement('optgroup');og.label=g;
         items.filter(x=>x.type===t).forEach(x=>{const o=H('option',null,x.f+' · '+x.name);o.value=x.id;og.appendChild(o)});ddSmp.appendChild(og)});
       ddSmp.value=sampleId||'free'};
     IND.forEach((x,i)=>{const o=H('option',null,x.n);o.value=String(i);ddInd.appendChild(o)});ddInd.value=String(indIdx);
@@ -4917,7 +4890,7 @@ defineView('ph-indicators-v03',{
 
     host.appendChild(H('div','ph4-h','3 · Drabinka pH'));
     const tabs=H('div','ph4-tabs');
-    const tBtns=[['a','Kwasy'],['b','Zasady']].map(([k,l])=>{const b=H('button',null,l);b.type='button';b.onclick=()=>{tab=k;render()};tabs.appendChild(b);return b});
+    const tBtns=[['a','Kwasy'],['b','Zasady'],['z','Z życia']].map(([k,l])=>{const b=H('button',null,l);b.type='button';b.onclick=()=>{tab=k;render()};tabs.appendChild(b);return b});
     const ladNote=H('span');ladNote.style.cssText='font-size:12px;color:var(--text-muted,#64748b);margin-left:6px';tabs.appendChild(ladNote);
     const ladder=H('div');
     const ladFoot=H('div','ph4-note');
@@ -4999,17 +4972,17 @@ defineView('ph-indicators-v03',{
       dropBtn.textContent=dropped?'↺ Wylej i zacznij od nowa':'💧 Dodaj krople wskaźnika';
       desc.innerHTML=descHTML();
        
-      tBtns.forEach((b,i)=>b.classList.toggle('on',['a','b'][i]===tab));
+      tBtns.forEach((b,i)=>b.classList.toggle('on',['a','b','z'][i]===tab));
       ladNote.textContent='stężenie '+cTxt()+' (zmień wyżej)';
       ladder.innerHTML='';
-      const list=items.filter(x=>x.type===tab).sort((a,b)=>tab==='a'?a.pH-b.pH:b.pH-a.pH).concat(items.filter(x=>x.type==='w'));
+      const list=items.filter(x=>x.type===tab).sort((a,b)=>tab==='b'?b.pH-a.pH:a.pH-b.pH).concat(items.filter(x=>x.type==='w'));
       list.forEach(it=>{
         const r=H('div','ph4-lad-row'+(it.id===sampleId?' on':'')+(it.type==='w'?' ref':''));
         r.innerHTML='<b>'+it.f+(it.tag?'<small>'+it.tag+'</small>':'')+'</b><div class="tk"><i></i></div><em>'+f2(it.pH)+'</em>';
         const tk=r.querySelector('.tk');tk.style.background=gradCss(UNI);const dot=tk.firstChild;dot.style.left=(it.pH/14*100)+'%';dot.style.background=css(colorOf(UNI,it.pH));
         r.title=it.name;r.onclick=()=>pick(it.id);ladder.appendChild(r);
       });
-      ladFoot.innerHTML=tab==='a'?'Mocny kwas: rozcieńczenie 10× → pH +1. Kwas słaby: rozcieńczenie 10× → pH tylko ≈ +0,5 (rośnie stopień dysocjacji). Kolor kropki = barwa papierka uniwersalnego.'
+      ladFoot.innerHTML=tab==='z'?'Substancje z życia mają orientacyjne pH (zależy od składu). Sok żołądkowy i cytryna są kwasowe, soda i mydło lekko zasadowe, woda amoniakalna wyraźnie zasadowa.':tab==='a'?'Mocny kwas: rozcieńczenie 10× → pH +1. Kwas słaby: rozcieńczenie 10× → pH tylko ≈ +0,5 (rośnie stopień dysocjacji). Kolor kropki = barwa papierka uniwersalnego.'
         :'Mocna zasada: rozcieńczenie 10× → pH −1. Amoniak (słaba zasada) przy tym samym stężeniu ma wyraźnie niższe pH niż NaOH. Ca(OH)₂ ogranicza rozpuszczalność.';
     }
     fill();render();
@@ -5087,9 +5060,11 @@ defineView('acid-rain-v01', {
       for(let i=0;i<5;i++){const x=w*.52+i*w*.035,hh=h*.1;ctx.fillStyle=tree>.55?gr:za;ctx.globalAlpha=.4+.6*tree;ctx.beginPath();ctx.moveTo(x,g-hh);ctx.lineTo(x-9,g);ctx.lineTo(x+9,g);ctx.fill();ctx.globalAlpha=1}
       for(const p of gas){ctx.beginPath();ctx.arc(p.x,p.y,3.5,0,7);ctx.fillStyle=p.k?za:mu;ctx.fill()}
       for(const d of rain){ctx.strokeStyle=cloud>.45?za:bl;ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(d.x,d.y);ctx.lineTo(d.x,d.y+7);ctx.stroke()}
+      {const mx=w*.33,mw=22,mh=h*.16;ctx.fillStyle='#e5e7eb';ctx.fillRect(mx,g-mh,mw,mh);ctx.fillStyle='#cbd5e1';ctx.fillRect(mx-4,g-mh-5,mw+8,5);   /* marmur CaCO₃ — korozja rośnie z kwasowością deszczu */
+       ctx.fillStyle='rgba(120,100,70,.55)';for(let i=0;i<Math.round(cloud*9);i++){const bx=mx+3+((i*7)%(mw-6)),by=g-mh+4+((i*11)%(mh-8));ctx.beginPath();ctx.arc(bx,by,1.5+cloud*2,0,7);ctx.fill()}}
       ctx.fillStyle=tx;ctx.font='700 11px Inter,system-ui,sans-serif';ctx.textBaseline='top';ctx.textAlign='left';
       ctx.fillText('SO₂, NOₓ',chx-8,g-chh-16);ctx.textAlign='center';
-      ctx.fillText(cloud>.05?'H₂SO₄ · HNO₃':'chmura',cx,cy-6);ctx.fillText('las',w*.6,g+4);ctx.fillText('jezioro',lx+lw/2,g+18);
+      ctx.fillText(cloud>.05?'H₂SO₄ · HNO₃':'chmura',cx,cy-6);ctx.fillText('las',w*.6,g+4);ctx.fillText('marmur',w*.33+11,g+4);ctx.fillText('jezioro',lx+lw/2,g+18);
       if(Math.floor(tm*2)!==lastTxt){lastTxt=Math.floor(tm*2);note.textContent='Efektywna emisja: '+Math.round(ef*100)+'% · pH deszczu ≈ '+rainPH.toFixed(1)+' · pH jeziora ≈ '+lake.toFixed(1)+(lake<5?' · poniżej ~5 życie w jeziorze jest zagrożone':'')+(filt?' · odsiarczanie usuwa ok. 85% SO₂':'')}
     });
   }
@@ -5252,10 +5227,12 @@ defineView('titration-merged', {
   var SOL = {
     dist:   {n: 'woda destylowana', f: 'H₂O', cond: .02, mol: [['H2O', 16]], t: 'nieelektrolit (prawie nie przewodzi)'},
     sugar:  {n: 'roztwór cukru', f: 'C₆H₁₂O₆', cond: .02, mol: [['SUG', 3], ['H2O', 12]], t: 'nieelektrolit — cząsteczki nie rozpadają się na jony'},
+    EtOH:   {n: 'etanol', f: 'C₂H₅OH', cond: .02, mol: [['EtOH', 5], ['H2O', 8]], t: 'nieelektrolit — cząsteczki etanolu nie dysocjują na jony'},
     HCl:    {n: 'kwas solny', f: 'HCl(aq)', cond: 1, el: {cat: {f: 'H₂', n: 1}, an: {f: 'Cl₂', n: .6, col: [214, 232, 140]}, eq: 'katoda (−): 2 H⁺ + 2 e⁻ → H₂↑ · anoda (+): 2 Cl⁻ → Cl₂↑ + 2 e⁻'}, mol: [['H3O+', 6], ['Cl-', 6], ['H2O', 8]], t: 'elektrolit mocny — HCl całkowicie zdysocjowany: H₃O⁺ + Cl⁻'},
     H2SO4:  {n: 'kwas siarkowy(VI)', f: 'H₂SO₄(aq)', cond: 1, el: {cat: {f: 'H₂', n: 1}, an: {f: 'O₂', n: .5}, eq: 'katoda (−): 2 H⁺ + 2 e⁻ → H₂↑ · anoda (+): 2 H₂O → O₂↑ + 4 H⁺ + 4 e⁻ (jony SO₄²⁻ nie utleniają się)'}, mol: [['H3O+', 6], ['SO42-', 3], ['H2O', 8]], t: 'elektrolit mocny: 2 H₃O⁺ + SO₄²⁻'},
     CH3COOH: {n: 'kwas octowy', f: 'CH₃COOH(aq)', cond: .3, el: {cat: {f: 'H₂', n: .5}, an: {f: 'O₂', n: .25}, eq: 'katoda (−): 2 H⁺ + 2 e⁻ → H₂↑ · anoda (+): 2 H₂O → O₂↑ + 4 H⁺ + 4 e⁻ — mało jonów, więc gazu niewiele'}, mol: [['CH3COOH', 5], ['H3O+', 1], ['CH3COO-', 1], ['H2O', 9]], t: 'elektrolit słaby — zdysocjowana tylko niewielka część cząsteczek'},
     NaOH:   {n: 'zasada sodowa', f: 'NaOH(aq)', cond: .95, el: {cat: {f: 'H₂', n: 1}, an: {f: 'O₂', n: .5}, eq: 'katoda (−): 2 H₂O + 2 e⁻ → H₂↑ + 2 OH⁻ (Na⁺ się nie redukuje) · anoda (+): 4 OH⁻ → O₂↑ + 2 H₂O + 4 e⁻'}, mol: [['Na+', 6], ['OH-', 6], ['H2O', 8]], t: 'elektrolit mocny: Na⁺ + OH⁻'},
+    CuSO4:  {n: 'siarczan(VI) miedzi(II)', f: 'CuSO₄(aq)', cond: .9, el: {cat: {f: 'Cu (osad)', n: 0, col: [184, 115, 51]}, an: {f: 'O₂', n: .5}, eq: 'katoda (−): Cu²⁺ + 2 e⁻ → Cu (czerwonobrunatny osad) · anoda (+): 2 H₂O → O₂↑ + 4 H⁺ + 4 e⁻'}, mol: [['Cu2+', 4], ['SO42-', 4], ['H2O', 8]], t: 'sól — elektrolit mocny: Cu²⁺ + SO₄²⁻'},
     NaCl:   {n: 'roztwór soli kuchennej', f: 'NaCl(aq)', cond: .9, el: {cat: {f: 'H₂', n: 1}, an: {f: 'Cl₂', n: .6, col: [214, 232, 140]}, eq: 'katoda (−): 2 H₂O + 2 e⁻ → H₂↑ + 2 OH⁻ · anoda (+): 2 Cl⁻ → Cl₂↑ + 2 e⁻ (w roztworze stężonym)'}, mol: [['Na+', 6], ['Cl-', 6], ['H2O', 8]], t: 'elektrolit mocny: Na⁺ + Cl⁻'}
   };
   /* gatunki: r = promień, col, lab = napis, q = ładunek (+1/−1/0) */
@@ -5264,9 +5241,10 @@ defineView('titration-merged', {
     'H3O+': {r: 10, col: '#f97316', lab: 'H₃O', q: 1}, 'Cl-': {r: 10, col: '#22c55e', lab: 'Cl', q: -1},
     'SO42-': {r: 13, col: '#eab308', lab: 'SO₄', q: -2}, 'Na+': {r: 9, col: '#8b5cf6', lab: 'Na', q: 1},
     'OH-': {r: 9, col: '#dc2626', lab: 'OH', q: -1}, 'CH3COO-': {r: 12, col: '#94a3b8', lab: 'AcO', q: -1},
+    'Cu2+': {r: 10, col: '#2563eb', lab: 'Cu', q: 2}, 'EtOH': {r: 13, col: '#a1a1aa', lab: 'C₂H₅OH', q: 0},
     'CH3COOH': {r: 14, col: '#a1a1aa', lab: 'CH₃COOH', q: 0}, 'SUG': {r: 15, col: '#d6b98c', lab: 'C₆H₁₂O₆', q: 0}
   };
-  var ORDER = ['dist', 'sugar', 'HCl', 'H2SO4', 'CH3COOH', 'NaOH', 'NaCl'];
+  var ORDER = ['dist', 'sugar', 'EtOH', 'HCl', 'H2SO4', 'CH3COOH', 'NaOH', 'NaCl', 'CuSO4'];
 
   function ciemny() { return document.documentElement.hasAttribute('data-ciemny'); }
   function rr(c, x, y, w, h, r) { c.beginPath(); if (c.roundRect) c.roundRect(x, y, w, h, r); else c.rect(x, y, w, h); }
@@ -5321,13 +5299,13 @@ defineView('titration-merged', {
           c.fillStyle = '#3f3f46'; rr(c, x - 4, ey0, 8, ey1 - ey0, 2); c.fill(); c.fillStyle = '#71717a'; c.fillRect(x - 4, ey0, 8, 5);
           var g = E ? (i ? E.an : E.cat) : null;
           if (g && czynny) {
-            var nb = Math.round(3 + 5 * g.n * k), col = g.col || [255, 255, 255];
+            var nb = g.n ? Math.round(3 + 5 * g.n * k) : 0, col = g.col || [255, 255, 255];
             for (var j = 0; j < nb; j++) {
               var u = (t / 1.4 * (.6 + k) + sr(j + i * 9)) % 1, y = ey1 - (ey1 - ltop) * u;
               if (y > ltop + 3) { c.beginPath(); c.arc(x + (j % 2 ? 6 : -6), y, 1.4 + sr(j) * 1.5, 0, 7); c.fillStyle = 'rgba(' + col.join(',') + ',' + (.75 * k) + ')'; c.fill(); c.strokeStyle = 'rgba(80,100,120,' + (.5 * k) + ')'; c.lineWidth = .6; c.stroke(); }
             }
           }
-          var lab = (i ? 'anoda (+)' : 'katoda (−)') + (g && czynny ? ': ' + g.f : ''); c.font = '800 10px system-ui,sans-serif'; var lw = c.measureText(lab).width + 8, lx = Math.max(2, Math.min(W1 - lw - 2, x - lw / 2)), ly = ey1 + 6;
+          var lab = (i ? '(+) ' : '(−) ') + (g && czynny ? g.f : (i ? 'anoda' : 'katoda')); c.font = '800 10px system-ui,sans-serif'; var lw = c.measureText(lab).width + 8, lx = Math.max(2, Math.min(W1 - lw - 2, x - lw / 2)), ly = ey1 + 6;
           c.fillStyle = dk ? 'rgba(30,41,59,.9)' : 'rgba(255,255,255,.9)'; rr(c, lx, ly, lw, 14, 3); c.fill(); c.fillStyle = i ? '#b91c1c' : '#1d4ed8'; c.textAlign = 'center'; c.fillText(lab, lx + lw / 2, ly + 11);
         });
         /* bateria */
@@ -5383,7 +5361,7 @@ defineView('titration-merged', {
   });
 })();
 
-/* KLOCKI: kwasy (N04) — ph-skala, bufor, kwasy-reszty, kwasy-wlasciwosci, kwasy-rozcienczanie, kwasne-deszcze.
+/* KLOCKI: kwasy (N04) — bufor, kwasy-reszty, kwasy-wlasciwosci, kwasy-rozcienczanie.
    Zastępują modele z dużego silnika (ph-indicators-v03, titration-merged, kw-bufor-v01, kw-reszty-v01, kw-wlasciwosci-v01, gfx-scene-dilution, acid-rain-v01).
    HTML/SVG, bez zależności poza ui_klocki.js. Barwy substancji realistyczne; interfejs w zmiennych motywu. */
 (function () {
@@ -5401,34 +5379,6 @@ defineView('titration-merged', {
   function oranz(ph) { return ph <= 3.1 ? '#dc2626' : ph >= 4.4 ? '#facc15' : mixc('#dc2626', '#facc15', (ph - 3.1) / 1.3); }
   function fenol(ph) { return ph <= 8.2 ? 'rgba(224,242,254,.55)' : ph >= 10 ? '#be185d' : mixc('#e0f2fe', '#be185d', (ph - 8.2) / 1.8); }
   var BOX = 'border:1px solid var(--border,#cbd5e1);border-radius:10px;padding:10px 12px;background:var(--surface-soft,#f6f8fa)';
-
-  /* ---------- ph-skala ---------- */
-  var SUBST = [[1.5, 'sok żołądkowy'], [2.3, 'sok z cytryny'], [2.9, 'ocet'], [4.5, 'sok pomidorowy'], [5.6, 'deszcz'], [7, 'woda destylowana'], [8.3, 'soda oczyszczona'], [10, 'mydło'], [11.5, 'amoniak (woda)'], [13, 'NaOH 0,1 M']];
-  KLOCKI.def('ph-skala', {
-    opis: 'Skala pH 0–14: suwak pokazuje odczyn, stężenie H₃O⁺, barwę papierka uniwersalnego, oranżu metylowego i fenoloftaleiny oraz najbliższą substancję z życia.',
-    domyslne: {ph: 3},
-    html: function (host, opc) {
-      host.style.display = 'block';
-      var grad = 'linear-gradient(90deg,' + STOPS.map(function (s) { return s[1] + ' ' + (s[0] / 14 * 100) + '%'; }).join(',') + ')';
-      var bar = E('div', 'height:22px;border-radius:6px;border:1px solid var(--border-strong,#94a3b8);background:' + grad + ';position:relative;margin:4px 0 2px');
-      var ticks = E('div', 'display:flex;justify-content:space-between;font-size:11px;color:var(--muted,#5b6b73);padding:0 2px');
-      for (var i = 0; i <= 14; i += 2) ticks.appendChild(E('span', '', i));
-      var mark = E('div', 'position:absolute;top:-5px;width:3px;height:32px;background:#0f172a;border:1px solid #fff;border-radius:2px;transform:translateX(-50%)'); bar.appendChild(mark);
-      var out = E('div', 'display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;margin-top:8px');
-      var info = E('div', 'font-size:14px;margin-top:8px');
-      var sl = U().suwak('pH roztworu', 0, 14, 0.1, opc.ph, function (v, o) {
-        mark.style.left = (v / 14 * 100) + '%';
-        var h = Math.pow(10, -v), odc = v < 6.95 ? 'kwasowy' : v > 7.05 ? 'zasadowy' : 'obojętny';
-        var best = SUBST.reduce(function (a, s) { return Math.abs(s[0] - v) < Math.abs(a[0] - v) ? s : a; });
-        function sw(n, c) { return '<div style="text-align:center;font-size:12px"><div style="height:30px;border-radius:6px;border:1px solid var(--border-strong,#94a3b8);background:' + c + '"></div>' + n + '</div>'; }
-        out.innerHTML = sw('papierek uniwersalny', uni(v)) + sw('oranż metylowy', oranz(v)) + sw('fenoloftaleina', fenol(v));
-        info.innerHTML = '<b>Odczyn ' + odc + '</b> · [H₃O⁺] = 10<sup>−' + fmt(v, 1) + '</sup> mol/dm³ ≈ ' + h.toExponential(1).replace('e-', ' · 10⁻').replace('.', ',') +
-          '<br><span style="color:var(--muted,#5b6b73)">Najbliżej: ' + best[1] + ' (pH ≈ ' + fmt(best[0], 1) + '). Zmiana pH o 1 = 10× inne stężenie H₃O⁺.</span>';
-        if (o) o.textContent = fmt(v, 1);
-      });
-      host.append(sl, bar, ticks, out, info);
-    }
-  });
 
   /* ---------- bufor ---------- */
   KLOCKI.def('bufor', {
@@ -5558,40 +5508,6 @@ defineView('titration-merged', {
       }
       [['Kwas do wody', true], ['Woda do kwasu', false]].forEach(function (a, j) { var c = U().chip(a[0], j === 0, function () { pokaz(a[1]); }); chips.push(c); bar.appendChild(c); });
       host.append(bar, sc, info); pokaz(true);
-    }
-  });
-
-  /* ---------- kwasne-deszcze ---------- */
-  KLOCKI.def('kwasne-deszcze', {
-    opis: 'Obieg kwaśnego deszczu: komin emituje SO₂ i NOₓ, w chmurze powstają H₂SO₄ i HNO₃, deszcz o pH poniżej 5,6 niszczy marmur, las i jezioro. Animacja w pętli.',
-    domyslne: {szer: 640, wys: 320},
-    rysuj: function (x, w, h, st, t) {
-      var ciemny = document.documentElement.hasAttribute('data-ciemny'), tx = ciemny ? '#e2e8f0' : '#1f2937';
-      x.clearRect(0, 0, w, h); x.fillStyle = ciemny ? '#0f172a' : '#eef6fb'; x.fillRect(0, 0, w, h);
-      x.fillStyle = ciemny ? '#1e293b' : '#cbd5e1'; x.fillRect(0, h - 50, w, 50);
-      x.fillStyle = '#475569'; x.fillRect(50, h - 140, 46, 90); x.fillRect(62, h - 185, 12, 45);   // fabryka i komin
-      x.fillStyle = tx; x.font = '12px system-ui,sans-serif'; x.fillText('Spalanie paliw', 28, h - 30);
-      var cyc = (t % 8) / 8;
-      for (var i = 0; i < 12; i++) {   // dym: SO₂, NOₓ
-        var p = ((cyc * 1.2 + i / 12) % 1), px = 68 + p * (w * .38), py = h - 190 - p * 60 + Math.sin(i + t) * 3;
-        x.fillStyle = 'rgba(100,116,139,' + (.7 - p * .4) + ')'; x.beginPath(); x.arc(px, py, 6 + p * 6, 0, 6.3); x.fill();
-      }
-      x.fillStyle = tx; x.fillText('SO₂, NOₓ', 68, h - 205);
-      x.fillStyle = ciemny ? '#334155' : '#94a3b8';   // chmura
-      [[w * .55, 70, 38], [w * .63, 60, 46], [w * .72, 72, 36], [w * .6, 82, 30]].forEach(function (c) { x.beginPath(); x.arc(c[0], c[1], c[2], 0, 6.3); x.fill(); });
-      x.fillStyle = tx; x.font = '11px system-ui,sans-serif';
-      x.fillText('SO₂ + H₂O → H₂SO₃;  2SO₂ + O₂ → 2SO₃;  SO₃ + H₂O → H₂SO₄', w * .38, 22);
-      x.fillText('2NO₂ + H₂O → HNO₃ + HNO₂', w * .38, 38);
-      x.fillStyle = '#2563eb';   // deszcz
-      for (var d = 0; d < 26; d++) { var q = ((t * .9 + d * .137) % 1), dx = w * .45 + (d % 13) * 18 + (d > 12 ? 9 : 0); x.fillRect(dx, 110 + q * (h - 160), 2, 9); }
-      x.fillStyle = '#dc2626'; x.font = 'bold 13px system-ui,sans-serif'; x.fillText('deszcz pH < 5,6', w * .5, 115);
-      x.fillStyle = tx; x.font = '11px system-ui,sans-serif'; x.fillText('(czysty deszcz ≈ 5,6 — rozpuszczony CO₂)', w * .5, 130);
-      // skutki
-      x.fillStyle = '#f1f5f9'; x.fillRect(w * .43, h - 105, 26, 55); x.fillStyle = '#94a3b8'; x.fillRect(w * .43 - 4, h - 108, 34, 6);
-      x.fillStyle = tx; x.fillText('marmur', w * .41, h - 33); x.fillText('CaCO₃ + 2H⁺ → Ca²⁺ + H₂O + CO₂', w * .33, h - 15);
-      x.fillStyle = '#166534'; for (var k = 0; k < 4; k++) { x.beginPath(); x.moveTo(w * .62 + k * 22, h - 50); x.lineTo(w * .62 + k * 22 + 10, h - 100 + (k % 2) * 8); x.lineTo(w * .62 + k * 22 + 20, h - 50); x.fill(); }
-      x.fillStyle = tx; x.fillText('las', w * .68, h - 33);
-      x.fillStyle = '#38bdf8'; x.fillRect(w * .84, h - 62, w * .14, 12); x.fillStyle = tx; x.fillText('jezioro', w * .86, h - 33);
     }
   });
 })();

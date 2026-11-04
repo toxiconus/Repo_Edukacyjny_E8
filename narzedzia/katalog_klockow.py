@@ -18,11 +18,11 @@ for f in glob.glob(ROOT + '/chemia/lekcje_md/*/*.md') + glob.glob(ROOT + '/chemi
     kod = os.path.basename(f).split('.md')[0].split('_')[0] if 'lessons-md' in f else '.'.join(os.path.basename(f).split('.')[2:3])
     for m in re.finditer(r'^@klocek\s+([\w-]+)', open(f, encoding='utf-8').read(), re.M): use[m.group(1)][kod] += 1
 RODZINY = [
- ('Skala pH i wskaźniki', ['ph-indicators-v03', 'ph-skala'], 'ph-indicators-v03 jest pełniejszy; ph-skala dodaje tylko substancje z życia → scalić'),
+ ('Skala pH i wskaźniki', ['ph-indicators-v03'], 'scalone 2026-11-04: ph-skala usunięta, substancje z życia są zakładką „Z życia” w panelu'),
  ('Miareczkowanie', ['titration-merged'], 'jedna wersja (moja miareczkowanie usunięta)'),
- ('Kwaśne deszcze', ['acid-rain-v01', 'kwasne-deszcze'], 'oryginał ma sterowanie emisją, mój marmur/zabytki → scalić'),
+ ('Kwaśne deszcze', ['acid-rain-v01'], 'scalone 2026-11-04: kwasne-deszcze usunięty, marmur dodany do acid-rain-v01'),
  ('Bufor', ['bufor'], 'oryginał kw-bufor-v01 (GFX, pH-metry) jeszcze nieprzeniesiony'),
- ('Przewodnictwo / elektroliza', ['przewodnictwo', 'tester-przewodnictwa'], 'FIZ01 używa prostego tester-przewodnictwa → podmienić na przewodnictwo'),
+ ('Przewodnictwo / elektroliza', ['przewodnictwo'], 'scalone 2026-11-04: tester-przewodnictwa usunięty, N04 i FIZ01 używają przewodnictwo (N05 nadal @model gfx-scene-conductivity)'),
  ('Probówki / zlewki z reakcją', ['probowki', 'probowki-odczyn', 'probowki-wybor', 'zlewka', 'zlewka-rx', 'zlewki-rx', 'metal-woda'], 'siedem klocków „naczynie + reakcja”; zlewki-rx i probowki-wybor pokrywają się częściowo'),
  ('Wzory cząsteczek 2D', ['wzor-2d', 'molekula-2d'], 'wzor-2d (C2D) jest nowszy; molekula-2d sprawdzić użycia'),
  ('Reszty kwasowe / właściwości kwasów', ['kwasy-reszty', 'kwasy-wlasciwosci', 'kwasy-rozcienczanie'], 'odpowiedniki kw-reszty-v01, kw-wlasciwosci-v01 z dużego silnika (nieprzeniesione)'),

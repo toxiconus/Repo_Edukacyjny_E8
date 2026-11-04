@@ -6,16 +6,16 @@ Przed napisaniem nowego klocka sprawdź tu rodzinę i użycia — nie twórz dub
 
 | Rodzina | Klocki | Uwaga |
 |---|---|---|
-| Skala pH i wskaźniki | `ph-indicators-v03`, `ph-skala` | ph-indicators-v03 jest pełniejszy; ph-skala dodaje tylko substancje z życia → scalić |
+| Skala pH i wskaźniki | `ph-indicators-v03` | scalone 2026-11-04: ph-skala usunięta, substancje z życia są zakładką „Z życia” w panelu |
 | Miareczkowanie | `titration-merged` | jedna wersja (moja miareczkowanie usunięta) |
-| Kwaśne deszcze | `acid-rain-v01`, `kwasne-deszcze` | oryginał ma sterowanie emisją, mój marmur/zabytki → scalić |
+| Kwaśne deszcze | `acid-rain-v01` | scalone 2026-11-04: kwasne-deszcze usunięty, marmur dodany do acid-rain-v01 |
 | Bufor | `bufor` | oryginał kw-bufor-v01 (GFX, pH-metry) jeszcze nieprzeniesiony |
-| Przewodnictwo / elektroliza | `przewodnictwo`, `tester-przewodnictwa` | FIZ01 używa prostego tester-przewodnictwa → podmienić na przewodnictwo |
+| Przewodnictwo / elektroliza | `przewodnictwo` | scalone 2026-11-04: tester-przewodnictwa usunięty, N04 i FIZ01 używają przewodnictwo (N05 nadal @model gfx-scene-conductivity) |
 | Probówki / zlewki z reakcją | `probowki`, `probowki-odczyn`, `probowki-wybor`, `zlewka`, `zlewka-rx`, `zlewki-rx`, `metal-woda` | siedem klocków „naczynie + reakcja”; zlewki-rx i probowki-wybor pokrywają się częściowo |
 | Wzory cząsteczek 2D | `wzor-2d`, `molekula-2d` | wzor-2d (C2D) jest nowszy; molekula-2d sprawdzić użycia |
 | Reszty kwasowe / właściwości kwasów | `kwasy-reszty`, `kwasy-wlasciwosci`, `kwasy-rozcienczanie` | odpowiedniki kw-reszty-v01, kw-wlasciwosci-v01 z dużego silnika (nieprzeniesione) |
 
-## Wszystkie klocki (68)
+## Wszystkie klocki (65)
 
 | Klocek | Plik | Opis | Domyślne | Użycia (lekcja×liczba) |
 |---|---|---|---|---|
@@ -42,7 +42,6 @@ Przed napisaniem nowego klocka sprawdź tu rodzinę i użycia — nie twórz dub
 | `krzywe-rozpuszczalnosci` | krzywe_rozpuszczalnosci.js | Krzywe rozpuszczalności od temperatury (g na 100 g wody); przy wybranej T trzy strefy: nienasycony, nasycony, nasycony z osadem; opcjonalny punkt (T, m). | {subst: 'KNO3,NaCl,NH4Cl', T: 40, m: null, strefy: 1, szer: 480, wys:  | — |
 | `krzyzowka-mendla` | krzyzowka_mendla.js | Szachownica Punnetta: gamety rodziców, genotypy potomstwa i stosunek fenotypów. | {krzyzowki: 'AA×aa,Aa×Aa,Aa×aa,AA×Aa', start: 1, cechy: 'gładkie:pomar | — |
 | `kule-ladunek` | fizyka_elektrostatyka.js | Dwie przewodzące kule z ładunkami: po zetknięciu ładunek dzieli się proporcjonalnie do promieni (po równo dla jednakowych kul); uziemienie odprowadza ładunek; liczba elek | {q1: 8, q2: -2, r1: 1, r2: 1} | FIZ01×3 |
-| `kwasne-deszcze` | kwasy_modele.js | Obieg kwaśnego deszczu: komin emituje SO₂ i NOₓ, w chmurze powstają H₂SO₄ i HNO₃, deszcz o pH poniżej 5,6 niszczy marmur, las i jezioro. Animacja w pętli. | {szer: 640, wys: 320} | N04×1 |
 | `kwasy-reszty` | kwasy_modele.js | Tabela interaktywna: wybierasz wzór kwasu i widzisz jego nazwę, typ, resztę kwasową z ładunkiem, równanie dysocjacji, moc, sól sodową i zastosowanie. | {} | N04×1 |
 | `kwasy-rozcienczanie` | kwasy_modele.js | Rozcieńczanie stężonego kwasu: kwas wlewany do wody nagrzewa roztwór bezpiecznie, a woda wlewana do kwasu powoduje lokalne wrzenie i pryskanie. | {} | N04×1 |
 | `kwasy-wlasciwosci` | kwasy_modele.js | Pokazy z wybranymi stężonymi kwasami: H₂SO₄ zwęgla cukier, HNO₃ żółci białko (próba ksantoproteinowa), stężony HCl dymi. Kliknięcie przycisku uruchamia pokaz. | {} | N04×1 |
@@ -59,7 +58,6 @@ Przed napisaniem nowego klocka sprawdź tu rodzinę i użycia — nie twórz dub
 | `palniki` | palniki.js |  | {seria: 'plomien'} | F07×1, P01×1 |
 | `petla-regulacji` | petla_regulacji.js | Pętla regulacji z pięciu elementów (bodziec, receptor, ośrodek, efektor, efekt) z krążącym impulsem. | {zestaw: 'temperatura', szer: 560, wys: 340} | — |
 | `ph-indicators-v03` | ph_panel.js | Panel pH — wskaźniki, roztwory, drabinka · v0.05 | (port; opcje z widoku) | N04×1 |
-| `ph-skala` | kwasy_modele.js | Skala pH 0–14: suwak pokazuje odczyn, stężenie H₃O⁺, barwę papierka uniwersalnego, oranżu metylowego i fenoloftaleiny oraz najbliższą substancję z życia. | {ph: 3} | N04×1 |
 | `plomien` | plomien.js | Płomień palnika: barwa powoli zmienia się z pomarańczowej w barwę metalu. | {metal: 'Na', barwa: '#f59e0b', nazwa: 'Na — żółty', szer: 480, wys: 3 | — |
 | `prawo-coulomba` | fizyka_elektrostatyka.js | Siła Coulomba F = k·q₁·q₂/(εr·r²): suwaki zmieniają ładunki, odległość i ośrodek; wykres F(r) z zaznaczonym punktem. | {q1: 2, q2: 3, r: 10} | FIZ01×2 |
 | `probowki` | probowki.js |  | {metale: 'Li,K,Ca', wskaznik: 1} | N04×1, P01×1 |
@@ -67,7 +65,7 @@ Przed napisaniem nowego klocka sprawdź tu rodzinę i użycia — nie twórz dub
 | `probowki-wybor` | probowki_wybor.js | Kilka probówek naraz; uczeń wybiera metale lub odczynniki, a pod spodem widzi równanie jonowe skrócone. | {zestaw: 'metale-hcl', wybrane: '', kat: 0, max: 4, szer: 480, wys: 30 | C1c×1, J03×1, N01×1, N02×1, N04×2, X04×1 |
 | `profil-energii` | profil_energii.js | Profil energii reakcji: krzywa od substratów przez energię aktywacji do produktów; różnica poziomów to ΔH; katalizator obniża Eₐ. | {typ: 'egzo'} | C1c×1 |
 | `przeniesienie-protonu` | jony_w_wodzie.js | Kwas w wodzie: jon H⁺ (proton) przeskakuje z cząsteczki kwasu na cząsteczkę wody, tworząc H₃O⁺ i resztę kwasową. | {kwas: 'HCl'} | FIZ01×1, N04×1 |
-| `przewodnictwo` | przewodnictwo.js | Tester przewodnictwa i elektroliza: wybierasz roztwór, włączasz prąd; żarówka świeci tylko dla elektrolitów, na elektrodach pojawiają się gazy, a w modelu jony wędrują do | {roztwor: 'HCl'} | N04×1 |
+| `przewodnictwo` | przewodnictwo.js | Tester przewodnictwa i elektroliza: wybierasz roztwór, włączasz prąd; żarówka świeci tylko dla elektrolitów, na elektrodach pojawiają się gazy, a w modelu jony wędrują do | {roztwor: 'HCl'} | FIZ01×1, N04×1 |
 | `przewodnik-izolator` | fizyka_elektrostatyka.js | Pręt z naładowanym końcem: w przewodniku ładunek rozpływa się po całej długości, w izolatorze pozostaje w miejscu dotyku. | {} | FIZ01×1 |
 | `reaktor-tlenku` | okresowy_tlenki.js | Reaktor przewidywania: wybierasz tlenek i odczynnik (woda, kwas, zasada), zapisujesz przewidywanie, a model pokazuje, czy reakcja zachodzi, wraz z uzasadnieniem z charakt | {tlenek: 'CaO'} | N02×1 |
 | `regula-krzyzowa` | regula_krzyzowa.js | Reguła krzyżowa i huśtawka mas: dla dwóch roztworów i stężenia docelowego pokazuje różnice po przekątnych, stosunek mas, masy w gramach i kontrolę bilansem. | {} | R03A×1 |
@@ -75,7 +73,6 @@ Przed napisaniem nowego klocka sprawdź tu rodzinę i użycia — nie twórz dub
 | `schemat-przemian` | schemat_przemian.js | Schemat dróg: kilka sposobów otrzymania tego samego typu substancji, każdy jako substraty → strzałka → produkty. | {} | C1c×1 |
 | `sklad-procentowy` | sklad_procentowy.js | Masa cząsteczkowa i skład procentowy związku wg wzoru; pasek proporcjonalny do mas pierwiastków. | {wzor: 'H2SO4', przyklady: 'H2O,CO2,H2SO4,Fe2O3,Ca(OH)2'} | C1c×1 |
 | `tabela-rozpuszczalnosci` | tabela_rozpuszczalnosci.js | Tabela rozpuszczalności soli i wodorotlenków w 20 °C; kliknięcie komórki pokazuje wzór, nazwę i rozpuszczalność. | {} | C1c×1, J03×2 |
-| `tester-przewodnictwa` | jony_w_wodzie.js | Tester przewodnictwa: bateria, żarówka i dwie elektrody zanurzone w wybranym roztworze; żarówka świeci tylko wtedy, gdy w roztworze są jony. | {} | FIZ01×1 |
 | `titration-merged` | miareczkowanie_tm.js | Titracja — scalony model: typ + wskaźnik + krzywa + kolba | (port; opcje z widoku) | N04×1 |
 | `trend-tlenkow` | okresowy_tlenki.js | Trend charakteru tlenków: w 3. okresie od zasadowych przez amfoteryczny do kwasowych oraz dla Cr i Mn — rosnący stopień utlenienia zwiększa charakter kwasowy. | {seria: 'okres 3'} | N02×1 |
 | `trojkat-przeliczen` | trojkat_przeliczen.js | Trójkąt konwersji: masa, liczba moli i cząstki (lub objętość gazu) ze strzałkami operacji ÷/× M, N_A lub Vₘ. | {wzor: 'mol', szer: 480, wys: 300} | C2m×2, LKO×2 |

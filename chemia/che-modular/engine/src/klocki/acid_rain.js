@@ -41,9 +41,11 @@ defineView('acid-rain-v01', {
       for(let i=0;i<5;i++){const x=w*.52+i*w*.035,hh=h*.1;ctx.fillStyle=tree>.55?gr:za;ctx.globalAlpha=.4+.6*tree;ctx.beginPath();ctx.moveTo(x,g-hh);ctx.lineTo(x-9,g);ctx.lineTo(x+9,g);ctx.fill();ctx.globalAlpha=1}
       for(const p of gas){ctx.beginPath();ctx.arc(p.x,p.y,3.5,0,7);ctx.fillStyle=p.k?za:mu;ctx.fill()}
       for(const d of rain){ctx.strokeStyle=cloud>.45?za:bl;ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(d.x,d.y);ctx.lineTo(d.x,d.y+7);ctx.stroke()}
+      {const mx=w*.33,mw=22,mh=h*.16;ctx.fillStyle='#e5e7eb';ctx.fillRect(mx,g-mh,mw,mh);ctx.fillStyle='#cbd5e1';ctx.fillRect(mx-4,g-mh-5,mw+8,5);   /* marmur CaCO₃ — korozja rośnie z kwasowością deszczu */
+       ctx.fillStyle='rgba(120,100,70,.55)';for(let i=0;i<Math.round(cloud*9);i++){const bx=mx+3+((i*7)%(mw-6)),by=g-mh+4+((i*11)%(mh-8));ctx.beginPath();ctx.arc(bx,by,1.5+cloud*2,0,7);ctx.fill()}}
       ctx.fillStyle=tx;ctx.font='700 11px Inter,system-ui,sans-serif';ctx.textBaseline='top';ctx.textAlign='left';
       ctx.fillText('SO₂, NOₓ',chx-8,g-chh-16);ctx.textAlign='center';
-      ctx.fillText(cloud>.05?'H₂SO₄ · HNO₃':'chmura',cx,cy-6);ctx.fillText('las',w*.6,g+4);ctx.fillText('jezioro',lx+lw/2,g+18);
+      ctx.fillText(cloud>.05?'H₂SO₄ · HNO₃':'chmura',cx,cy-6);ctx.fillText('las',w*.6,g+4);ctx.fillText('marmur',w*.33+11,g+4);ctx.fillText('jezioro',lx+lw/2,g+18);
       if(Math.floor(tm*2)!==lastTxt){lastTxt=Math.floor(tm*2);note.textContent='Efektywna emisja: '+Math.round(ef*100)+'% · pH deszczu ≈ '+rainPH.toFixed(1)+' · pH jeziora ≈ '+lake.toFixed(1)+(lake<5?' · poniżej ~5 życie w jeziorze jest zagrożone':'')+(filt?' · odsiarczanie usuwa ok. 85% SO₂':'')}
     });
   }

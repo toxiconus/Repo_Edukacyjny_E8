@@ -37,3 +37,10 @@ Zasada: jedna najlepsza wersja. Przy podmianie sprawdź, których lekcji dotyczy
 ## Przewodnictwo / elektroliza (2026-11-04)
 - Nowy klocek `przewodnictwo` (port sceny GFX `conductivity`: tester, żarówka, gazy na elektrodach, model jonów wędrujących do elektrod); w N04 zastąpił `@model gfx-scene-conductivity` i prosty `tester-przewodnictwa`.
 - Do uwspólnienia: `@model gfx-scene-conductivity` jeszcze w N05 (§4), FIZ01 używa prostego `tester-przewodnictwa` (jony_w_wodzie.js) — podmienić na `przewodnictwo`, potem usunąć prosty klocek.
+
+## Scalone 2026-11-04 (sprawdzone, co było w usuniętych wersjach)
+- `ph-skala` → panel pH: dobre z niej (substancje z życia: sok żołądkowy, cytryna, ocet, pomidor, deszcz, soda, mydło, woda amoniakalna) dopisane jako zakładka „Z życia” w drabince. Barwy wskaźników i stężenie H₃O⁺ panel już ma.
+- `kwasne-deszcze` → `acid-rain-v01`: równania i skutki oryginał miał; dodany marmur CaCO₃ ulegający korozji wraz z kwasowością. Usunięty.
+- `tester-przewodnictwa` → `przewodnictwo`: dopisane etanol i CuSO₄ (osad Cu na katodzie) z prostego testera; FIZ01 i N04 używają `przewodnictwo`. Usunięty.
+- Nadal do zrobienia: N05 (`@model gfx-scene-conductivity`), `bufor`, rodzina „naczynie + reakcja”, `wzor-2d`/`molekula-2d`.
+- Efekty (`gfx/chemia/efekty`: bubbles, foam, fumes, precipitate…) dostępne w małym silniku tylko przez rx-lite (zlewka-rx/zlewki-rx) — nowe animacje reakcji budować na rx-lite, nie od zera.

@@ -308,6 +308,7 @@ defineView('ph-indicators-v03',{
         out.push({id:b.id,f:b.f,name:b.name,type:'b',tag:b.kind==='strong'?'mocna':'słaba',pH:pH,alpha:alpha,note:note,eq:b.eq,ref:14+Math.log10(c)});
       });
       out.push({id:'H2O',f:'H₂O',name:'woda destylowana',type:'w',tag:'',pH:7,alpha:null,note:'woda czysta — [H₃O⁺] = [OH⁻] = 10⁻⁷ M, odczyn obojętny.',eq:'2 H₂O ⇌ H₃O⁺ + OH⁻'});
+      [[1.5,'sok żołądkowy'],[2.3,'sok z cytryny'],[2.9,'ocet'],[4.5,'sok pomidorowy'],[5.6,'deszcz'],[8.3,'soda oczyszczona'],[10,'mydło'],[11.5,'woda amoniakalna']].forEach(([v,n])=>out.push({id:'Z'+v,f:n,name:'substancja z życia (orientacyjne pH)',type:'z',tag:'',pH:v,alpha:null,note:n+' — pH ≈ '+String(v).replace('.',',')+'. Każda jednostka pH to 10× inne stężenie H₃O⁺.',eq:'pH = −log [H₃O⁺]'}));
       out.forEach(o=>{o.pH=clamp(o.pH,0,14)});
       return out;
     }
@@ -350,7 +351,7 @@ defineView('ph-indicators-v03',{
     const ddSmp=mkSel('Roztwór'),ddInd=mkSel('Odczynnik (wskaźnik)');
     const fill=()=>{ddSmp.innerHTML='';
       const o0=H('option',null,'— dowolne pH (suwak) —');o0.value='free';ddSmp.appendChild(o0);
-      [['a','Kwasy'],['b','Zasady'],['w','Woda']].forEach(([t,g])=>{const og=document.createElement('optgroup');og.label=g;
+      [['a','Kwasy'],['b','Zasady'],['z','Z życia'],['w','Woda']].forEach(([t,g])=>{const og=document.createElement('optgroup');og.label=g;
         items.filter(x=>x.type===t).forEach(x=>{const o=H('option',null,x.f+' · '+x.name);o.value=x.id;og.appendChild(o)});ddSmp.appendChild(og)});
       ddSmp.value=sampleId||'free'};
     IND.forEach((x,i)=>{const o=H('option',null,x.n);o.value=String(i);ddInd.appendChild(o)});ddInd.value=String(indIdx);
@@ -375,7 +376,7 @@ defineView('ph-indicators-v03',{
 
     host.appendChild(H('div','ph4-h','3 · Drabinka pH'));
     const tabs=H('div','ph4-tabs');
-    const tBtns=[['a','Kwasy'],['b','Zasady']].map(([k,l])=>{const b=H('button',null,l);b.type='button';b.onclick=()=>{tab=k;render()};tabs.appendChild(b);return b});
+    const tBtns=[['a','Kwasy'],['b','Zasady'],['z','Z życia']].map(([k,l])=>{const b=H('button',null,l);b.type='button';b.onclick=()=>{tab=k;render()};tabs.appendChild(b);return b});
     const ladNote=H('span');ladNote.style.cssText='font-size:12px;color:var(--text-muted,#64748b);margin-left:6px';tabs.appendChild(ladNote);
     const ladder=H('div');
     const ladFoot=H('div','ph4-note');
@@ -457,17 +458,17 @@ defineView('ph-indicators-v03',{
       dropBtn.textContent=dropped?'↺ Wylej i zacznij od nowa':'💧 Dodaj krople wskaźnika';
       desc.innerHTML=descHTML();
        
-      tBtns.forEach((b,i)=>b.classList.toggle('on',['a','b'][i]===tab));
+      tBtns.forEach((b,i)=>b.classList.toggle('on',['a','b','z'][i]===tab));
       ladNote.textContent='stężenie '+cTxt()+' (zmień wyżej)';
       ladder.innerHTML='';
-      const list=items.filter(x=>x.type===tab).sort((a,b)=>tab==='a'?a.pH-b.pH:b.pH-a.pH).concat(items.filter(x=>x.type==='w'));
+      const list=items.filter(x=>x.type===tab).sort((a,b)=>tab==='b'?b.pH-a.pH:a.pH-b.pH).concat(items.filter(x=>x.type==='w'));
       list.forEach(it=>{
         const r=H('div','ph4-lad-row'+(it.id===sampleId?' on':'')+(it.type==='w'?' ref':''));
         r.innerHTML='<b>'+it.f+(it.tag?'<small>'+it.tag+'</small>':'')+'</b><div class="tk"><i></i></div><em>'+f2(it.pH)+'</em>';
         const tk=r.querySelector('.tk');tk.style.background=gradCss(UNI);const dot=tk.firstChild;dot.style.left=(it.pH/14*100)+'%';dot.style.background=css(colorOf(UNI,it.pH));
         r.title=it.name;r.onclick=()=>pick(it.id);ladder.appendChild(r);
       });
-      ladFoot.innerHTML=tab==='a'?'Mocny kwas: rozcieńczenie 10× → pH +1. Kwas słaby: rozcieńczenie 10× → pH tylko ≈ +0,5 (rośnie stopień dysocjacji). Kolor kropki = barwa papierka uniwersalnego.'
+      ladFoot.innerHTML=tab==='z'?'Substancje z życia mają orientacyjne pH (zależy od składu). Sok żołądkowy i cytryna są kwasowe, soda i mydło lekko zasadowe, woda amoniakalna wyraźnie zasadowa.':tab==='a'?'Mocny kwas: rozcieńczenie 10× → pH +1. Kwas słaby: rozcieńczenie 10× → pH tylko ≈ +0,5 (rośnie stopień dysocjacji). Kolor kropki = barwa papierka uniwersalnego.'
         :'Mocna zasada: rozcieńczenie 10× → pH −1. Amoniak (słaba zasada) przy tym samym stężeniu ma wyraźnie niższe pH niż NaOH. Ca(OH)₂ ogranicza rozpuszczalność.';
     }
     fill();render();

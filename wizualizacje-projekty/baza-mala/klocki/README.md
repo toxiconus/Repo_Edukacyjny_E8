@@ -3,6 +3,8 @@
 Klocek to samodzielny moduł rysujący jedną figurę (canvas albo HTML/SVG) w lekcji.
 W md wstawia się go linią `@klocek nazwa {opcja="wartość"} | Podpis`, a pod nią obowiązkowo `@opis …` (opis słowny — build to wymusza).
 
+**Pełny, generowany spis klocków (opis, opcje, użycia w lekcjach, rodziny do uwspólnienia): [`KATALOG.md`](KATALOG.md)** — tabela poniżej jest ręczna i może być niepełna.
+
 ## Rejestr i montowanie
 
 - `klocki.js` — `KLOCKI.def(nazwa, {opis, domyslne, stan0, rysuj(...) | html(host, opc)})` i `KLOCKI.montuj(host, nazwa, opcje)`.

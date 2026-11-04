@@ -1,5 +1,5 @@
 /* KLOCKI: jony w wodzie — dysocjacja-vs-jonizacja (NaCl: jony już są; HCl: jony powstają), przeniesienie-protonu (kwas + woda → H₃O⁺),
-   tester-przewodnictwa (bateria, żarówka, elektrody; wybór roztworu). Wymaga ui_klocki.js. */
+   Wymaga ui_klocki.js. */
 (function () {
   function anim01(host, cel, f) {   // płynnie dąży do cel (0/1); f(t) rysuje; zwraca ustawianie celu
     var t = 0, c = cel, ZZ = window.KLOCKI.ui;
@@ -67,30 +67,6 @@
         box.innerHTML = s + '</svg>';
         txt.innerHTML = t < .5 ? '<b>Przed:</b> kwas H–' + A[0] + ' i cząsteczka wody. Wiązanie H–' + A[0] + ' jest spolaryzowane.' : '<b>Po:</b> proton H⁺ przeszedł na wodę (H₃O⁺); reszta kwasowa jest teraz jonem <b>' + A[2] + '</b>. Kwas <b>oddaje proton</b>, woda go <b>przyjmuje</b>.';
       });
-    }
-  });
-
-  var ROZ = [['woda destylowana', 0, 'brak jonów'], ['roztwór cukru', 0, 'cząsteczki cukru nie dysocjują'], ['etanol', 0, 'cząsteczki, bez jonów'], ['NaCl (aq)', 1, 'jony Na⁺ i Cl⁻'], ['HCl (aq)', 1, 'jony H₃O⁺ i Cl⁻ (mocny kwas)'], ['NaOH (aq)', 1, 'jony Na⁺ i OH⁻'], ['CH₃COOH (aq)', .25, 'słaby kwas: mało jonów'], ['CuSO₄ (aq)', .9, 'jony Cu²⁺ i SO₄²⁻']];
-  KLOCKI.def('tester-przewodnictwa', {
-    opis: 'Tester przewodnictwa: bateria, żarówka i dwie elektrody zanurzone w wybranym roztworze; żarówka świeci tylko wtedy, gdy w roztworze są jony.',
-    domyslne: {},
-    html: function (host) {
-      var U = KLOCKI.ui, k = 3, bar = document.createElement('div'), box = document.createElement('div'), txt = document.createElement('div');
-      host.style.display = 'block'; bar.style.cssText = 'margin-bottom:6px'; txt.style.cssText = 'font-size:14px;margin-top:6px'; host.append(bar, box, txt);
-      function odsw() {
-        var r = ROZ[k], j = r[1], glow = j > 0 ? .25 + .75 * j : 0;
-        [].forEach.call(bar.children, function (b, i) { U.zaznacz(b, i === k); });
-        var jony = ''; for (var i = 0; i < Math.round(j * 10); i++) { var x = 150 + (i * 53) % 200, y = 150 + (i * 37) % 55; jony += '<circle cx="' + x + '" cy="' + y + '" r="4" fill="' + (i % 2 ? '#a855f7' : '#22c55e') + '"/>'; }
-        box.innerHTML = '<svg viewBox="0 0 520 250" width="100%" style="max-width:600px;display:block" role="img" aria-label="Tester przewodnictwa w roztworze: ' + r[0] + '">' +
-          '<rect x="60" y="30" width="46" height="34" rx="4" fill="#475569"/><text x="83" y="52" text-anchor="middle" font-size="12" fill="#fff">bateria</text>' +
-          '<path d="M106 47 H260 M290 47 H420 V170 M100 64 V170" fill="none" stroke="currentColor" stroke-width="2"/>' +
-          '<circle cx="275" cy="47" r="' + (14 + glow * 14) + '" fill="#fde047" fill-opacity="' + (glow * .45) + '"/><circle cx="275" cy="47" r="14" fill="' + (glow ? '#fde047' : '#e2e8f0') + '" stroke="#475569" stroke-width="2"/>' +
-          '<rect x="95" y="170" width="10" height="70" fill="#94a3b8"/><rect x="415" y="170" width="10" height="70" fill="#94a3b8"/>' +
-          '<path d="M85 150 H435 V235 Q435 245 425 245 H95 Q85 245 85 235 Z" fill="#bae6fd" fill-opacity=".55" stroke="#64748b" stroke-width="2"/>' + jony + '</svg>';
-        txt.innerHTML = '<b>' + r[0] + '</b>: żarówka ' + (j >= 1 ? 'świeci jasno' : j > 0 ? 'świeci słabo' : 'nie świeci') + ' — ' + r[2] + '. Prąd w roztworze przenoszą <b>jony</b>, nie elektrony.';
-      }
-      ROZ.forEach(function (r, i) { bar.appendChild(U.btn(r[0], function () { k = i; odsw(); })); });
-      odsw();
     }
   });
 })();

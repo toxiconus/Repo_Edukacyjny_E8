@@ -1,4 +1,4 @@
-/* KLOCKI: kwasy (N04) — ph-skala, bufor, kwasy-reszty, kwasy-wlasciwosci, kwasy-rozcienczanie, kwasne-deszcze.
+/* KLOCKI: kwasy (N04) — bufor, kwasy-reszty, kwasy-wlasciwosci, kwasy-rozcienczanie.
    Zastępują modele z dużego silnika (ph-indicators-v03, titration-merged, kw-bufor-v01, kw-reszty-v01, kw-wlasciwosci-v01, gfx-scene-dilution, acid-rain-v01).
    HTML/SVG, bez zależności poza ui_klocki.js. Barwy substancji realistyczne; interfejs w zmiennych motywu. */
 (function () {
@@ -16,34 +16,6 @@
   function oranz(ph) { return ph <= 3.1 ? '#dc2626' : ph >= 4.4 ? '#facc15' : mixc('#dc2626', '#facc15', (ph - 3.1) / 1.3); }
   function fenol(ph) { return ph <= 8.2 ? 'rgba(224,242,254,.55)' : ph >= 10 ? '#be185d' : mixc('#e0f2fe', '#be185d', (ph - 8.2) / 1.8); }
   var BOX = 'border:1px solid var(--border,#cbd5e1);border-radius:10px;padding:10px 12px;background:var(--surface-soft,#f6f8fa)';
-
-  /* ---------- ph-skala ---------- */
-  var SUBST = [[1.5, 'sok żołądkowy'], [2.3, 'sok z cytryny'], [2.9, 'ocet'], [4.5, 'sok pomidorowy'], [5.6, 'deszcz'], [7, 'woda destylowana'], [8.3, 'soda oczyszczona'], [10, 'mydło'], [11.5, 'amoniak (woda)'], [13, 'NaOH 0,1 M']];
-  KLOCKI.def('ph-skala', {
-    opis: 'Skala pH 0–14: suwak pokazuje odczyn, stężenie H₃O⁺, barwę papierka uniwersalnego, oranżu metylowego i fenoloftaleiny oraz najbliższą substancję z życia.',
-    domyslne: {ph: 3},
-    html: function (host, opc) {
-      host.style.display = 'block';
-      var grad = 'linear-gradient(90deg,' + STOPS.map(function (s) { return s[1] + ' ' + (s[0] / 14 * 100) + '%'; }).join(',') + ')';
-      var bar = E('div', 'height:22px;border-radius:6px;border:1px solid var(--border-strong,#94a3b8);background:' + grad + ';position:relative;margin:4px 0 2px');
-      var ticks = E('div', 'display:flex;justify-content:space-between;font-size:11px;color:var(--muted,#5b6b73);padding:0 2px');
-      for (var i = 0; i <= 14; i += 2) ticks.appendChild(E('span', '', i));
-      var mark = E('div', 'position:absolute;top:-5px;width:3px;height:32px;background:#0f172a;border:1px solid #fff;border-radius:2px;transform:translateX(-50%)'); bar.appendChild(mark);
-      var out = E('div', 'display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px;margin-top:8px');
-      var info = E('div', 'font-size:14px;margin-top:8px');
-      var sl = U().suwak('pH roztworu', 0, 14, 0.1, opc.ph, function (v, o) {
-        mark.style.left = (v / 14 * 100) + '%';
-        var h = Math.pow(10, -v), odc = v < 6.95 ? 'kwasowy' : v > 7.05 ? 'zasadowy' : 'obojętny';
-        var best = SUBST.reduce(function (a, s) { return Math.abs(s[0] - v) < Math.abs(a[0] - v) ? s : a; });
-        function sw(n, c) { return '<div style="text-align:center;font-size:12px"><div style="height:30px;border-radius:6px;border:1px solid var(--border-strong,#94a3b8);background:' + c + '"></div>' + n + '</div>'; }
-        out.innerHTML = sw('papierek uniwersalny', uni(v)) + sw('oranż metylowy', oranz(v)) + sw('fenoloftaleina', fenol(v));
-        info.innerHTML = '<b>Odczyn ' + odc + '</b> · [H₃O⁺] = 10<sup>−' + fmt(v, 1) + '</sup> mol/dm³ ≈ ' + h.toExponential(1).replace('e-', ' · 10⁻').replace('.', ',') +
-          '<br><span style="color:var(--muted,#5b6b73)">Najbliżej: ' + best[1] + ' (pH ≈ ' + fmt(best[0], 1) + '). Zmiana pH o 1 = 10× inne stężenie H₃O⁺.</span>';
-        if (o) o.textContent = fmt(v, 1);
-      });
-      host.append(sl, bar, ticks, out, info);
-    }
-  });
 
   /* ---------- bufor ---------- */
   KLOCKI.def('bufor', {
@@ -173,40 +145,6 @@
       }
       [['Kwas do wody', true], ['Woda do kwasu', false]].forEach(function (a, j) { var c = U().chip(a[0], j === 0, function () { pokaz(a[1]); }); chips.push(c); bar.appendChild(c); });
       host.append(bar, sc, info); pokaz(true);
-    }
-  });
-
-  /* ---------- kwasne-deszcze ---------- */
-  KLOCKI.def('kwasne-deszcze', {
-    opis: 'Obieg kwaśnego deszczu: komin emituje SO₂ i NOₓ, w chmurze powstają H₂SO₄ i HNO₃, deszcz o pH poniżej 5,6 niszczy marmur, las i jezioro. Animacja w pętli.',
-    domyslne: {szer: 640, wys: 320},
-    rysuj: function (x, w, h, st, t) {
-      var ciemny = document.documentElement.hasAttribute('data-ciemny'), tx = ciemny ? '#e2e8f0' : '#1f2937';
-      x.clearRect(0, 0, w, h); x.fillStyle = ciemny ? '#0f172a' : '#eef6fb'; x.fillRect(0, 0, w, h);
-      x.fillStyle = ciemny ? '#1e293b' : '#cbd5e1'; x.fillRect(0, h - 50, w, 50);
-      x.fillStyle = '#475569'; x.fillRect(50, h - 140, 46, 90); x.fillRect(62, h - 185, 12, 45);   // fabryka i komin
-      x.fillStyle = tx; x.font = '12px system-ui,sans-serif'; x.fillText('Spalanie paliw', 28, h - 30);
-      var cyc = (t % 8) / 8;
-      for (var i = 0; i < 12; i++) {   // dym: SO₂, NOₓ
-        var p = ((cyc * 1.2 + i / 12) % 1), px = 68 + p * (w * .38), py = h - 190 - p * 60 + Math.sin(i + t) * 3;
-        x.fillStyle = 'rgba(100,116,139,' + (.7 - p * .4) + ')'; x.beginPath(); x.arc(px, py, 6 + p * 6, 0, 6.3); x.fill();
-      }
-      x.fillStyle = tx; x.fillText('SO₂, NOₓ', 68, h - 205);
-      x.fillStyle = ciemny ? '#334155' : '#94a3b8';   // chmura
-      [[w * .55, 70, 38], [w * .63, 60, 46], [w * .72, 72, 36], [w * .6, 82, 30]].forEach(function (c) { x.beginPath(); x.arc(c[0], c[1], c[2], 0, 6.3); x.fill(); });
-      x.fillStyle = tx; x.font = '11px system-ui,sans-serif';
-      x.fillText('SO₂ + H₂O → H₂SO₃;  2SO₂ + O₂ → 2SO₃;  SO₃ + H₂O → H₂SO₄', w * .38, 22);
-      x.fillText('2NO₂ + H₂O → HNO₃ + HNO₂', w * .38, 38);
-      x.fillStyle = '#2563eb';   // deszcz
-      for (var d = 0; d < 26; d++) { var q = ((t * .9 + d * .137) % 1), dx = w * .45 + (d % 13) * 18 + (d > 12 ? 9 : 0); x.fillRect(dx, 110 + q * (h - 160), 2, 9); }
-      x.fillStyle = '#dc2626'; x.font = 'bold 13px system-ui,sans-serif'; x.fillText('deszcz pH < 5,6', w * .5, 115);
-      x.fillStyle = tx; x.font = '11px system-ui,sans-serif'; x.fillText('(czysty deszcz ≈ 5,6 — rozpuszczony CO₂)', w * .5, 130);
-      // skutki
-      x.fillStyle = '#f1f5f9'; x.fillRect(w * .43, h - 105, 26, 55); x.fillStyle = '#94a3b8'; x.fillRect(w * .43 - 4, h - 108, 34, 6);
-      x.fillStyle = tx; x.fillText('marmur', w * .41, h - 33); x.fillText('CaCO₃ + 2H⁺ → Ca²⁺ + H₂O + CO₂', w * .33, h - 15);
-      x.fillStyle = '#166534'; for (var k = 0; k < 4; k++) { x.beginPath(); x.moveTo(w * .62 + k * 22, h - 50); x.lineTo(w * .62 + k * 22 + 10, h - 100 + (k % 2) * 8); x.lineTo(w * .62 + k * 22 + 20, h - 50); x.fill(); }
-      x.fillStyle = tx; x.fillText('las', w * .68, h - 33);
-      x.fillStyle = '#38bdf8'; x.fillRect(w * .84, h - 62, w * .14, 12); x.fillStyle = tx; x.fillText('jezioro', w * .86, h - 33);
     }
   });
 })();

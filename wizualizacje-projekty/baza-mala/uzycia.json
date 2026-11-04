@@ -266,12 +266,10 @@
   "kalkulator-mola": "klocek",
   "plomien": "klocek",
   "probowki-odczyn": "klocek",
-  "ph-skala": "klocek",
   "bufor": "klocek",
   "kwasy-reszty": "klocek",
   "kwasy-wlasciwosci": "klocek",
   "kwasy-rozcienczanie": "klocek",
-  "kwasne-deszcze": "klocek",
   "regula-krzyzowa": "klocek",
   "schemat-przemian": "klocek",
   "konfiguracje": "klocek",
@@ -300,7 +298,6 @@
   "tabela-rozpuszczalnosci": "klocek",
   "dysocjacja-vs-jonizacja": "klocek",
   "przeniesienie-protonu": "klocek",
-  "tester-przewodnictwa": "klocek",
   "gruczoly-mapa": "BIO",
   "kod-genetyczny": "BIO",
   "eutrofizacja": "BIO",
@@ -770,6 +767,7 @@
    "N02": 1
   },
   "przewodnictwo": {
+   "FIZ01": 1,
    "N04": 1
   },
   "bilans-spalania": {
@@ -860,9 +858,6 @@
    "LKO_ORG05_kwasy": 1,
    "N04": 2
   },
-  "ph-skala": {
-   "N04": 1
-  },
   "bufor": {
    "N04": 1
   },
@@ -873,9 +868,6 @@
    "N04": 1
   },
   "kwasy-rozcienczanie": {
-   "N04": 1
-  },
-  "kwasne-deszcze": {
    "N04": 1
   },
   "regula-krzyzowa": {
@@ -985,9 +977,6 @@
   "przeniesienie-protonu": {
    "FIZ01": 1,
    "N04": 1
-  },
-  "tester-przewodnictwa": {
-   "FIZ01": 1
   },
   "gruczoly-mapa": {
    "BIO.02.B2e.uklad_dokrewny": 1,
@@ -1545,7 +1534,6 @@
   "mapa-mysli",
   "destylacja",
   "palenie",
-  "przewodnictwo",
   "bilans-spalania",
   "sklad-procentowy",
   "konstruktor-tlenku",
@@ -1555,12 +1543,10 @@
   "uklad-okresowy",
   "profil-energii",
   "haworth",
-  "ph-skala",
   "bufor",
   "kwasy-reszty",
   "kwasy-wlasciwosci",
   "kwasy-rozcienczanie",
-  "kwasne-deszcze",
   "regula-krzyzowa",
   "schemat-przemian",
   "konfiguracje",
@@ -1569,7 +1555,6 @@
   "estryfikacja",
   "nadmiar-substratu",
   "osady-dwie-sole",
-  "tester-przewodnictwa",
   "eutrofizacja",
   "sekwencje",
   "wirus-bakteria",
@@ -1616,6 +1601,7 @@
   "czasteczki-3d",
   "izotopy",
   "trojkat-przeliczen",
+  "przewodnictwo",
   "diagram-bohra",
   "uklad-okresowy-54",
   "lancuch-przemian",

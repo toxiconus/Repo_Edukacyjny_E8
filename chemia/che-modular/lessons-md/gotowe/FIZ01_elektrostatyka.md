@@ -225,8 +225,8 @@ Materiał stojący **wcześniej** oddaje elektrony materiałowi stojącemu **dal
 @klocek przewodnik-izolator | Przewodnik czy izolator? Rozpływ ładunku w pręcie
 @opis Pręt przewodnika i pręt izolatora z naładowanym końcem: na przewodniku ładunek szybko rozpływa się po całej długości, na izolatorze pozostaje w miejscu dotyku. Wykres pokazuje czas rozpływu. Wniosek: przewodnik szybko przewodzi ładunek, izolator go nie przewodzi.
 
-@klocek tester-przewodnictwa | Chemia: przewodzenie prądu przez roztwory (elektrolity)
-@opis Model z lekcji o kwasach: tester przewodnictwa (bateria, żarówka, dwie elektrody) zanurzany w różnych roztworach — żarówka świeci w roztworach elektrolitów, a w wodzie destylowanej czy roztworze cukru nie. Wniosek: w roztworach ładunek przenoszą jony, więc przewodzą tylko roztwory, w których są jony.
+@klocek przewodnictwo {roztwor="HCl"} | Chemia: przewodzenie prądu przez roztwory (elektrolity) i elektroliza
+@opis Tester przewodnictwa (bateria, żarówka, dwie elektrody w zlewce) z wyborem roztworu: po włączeniu prądu żarówka świeci w roztworach elektrolitów (kwasy, zasady, sole), a w wodzie destylowanej, etanolu i roztworze cukru nie; na elektrodach pojawiają się gazy, a obok model roztworu z jonami wędrującymi do katody i anody. Wniosek: w roztworach ładunek przenoszą jony, więc przewodzą tylko roztwory, w których są jony.
 
 ::: karta understand | W skrócie — przewodnik czy izolator?
 Pytanie rozstrzygające: **czy w materiale są swobodne nośniki ładunku?** Tak (elektrony swobodne w metalach i graficie, jony w roztworach i w ciele człowieka) — to przewodnik, a nadmiarowy ładunek rozmieszcza się na powierzchni ciała. Nie — to izolator i ładunek zostaje w miejscu. Różnica jest ogromna: opór właściwy miedzi i teflonu dzieli ok. 30 rzędów wielkości. Półprzewodniki (krzem) są pośrodku, a ich przewodnictwo można kształtować domieszkami.
