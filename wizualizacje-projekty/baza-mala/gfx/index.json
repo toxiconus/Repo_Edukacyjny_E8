@@ -1012,13 +1012,6 @@
  "che-visual-library-v001": [
   {
    "kind": "widoki",
-   "id": "kinetics-v01",
-   "subject": "chemia",
-   "file": "chemia/widoki/kinetics-v01.js",
-   "bytes": 7044
-  },
-  {
-   "kind": "widoki",
    "id": "acid-rain-v01",
    "subject": "chemia",
    "file": "chemia/widoki/acid-rain-v01.js",

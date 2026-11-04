@@ -172,7 +172,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/archiwum/che_v0_59/szablon  (1 pl., 25 KB)
 - (zwinięte; `ls chemia/archiwum/che_v0_59/szablon`)
 
-## chemia/archiwum/gfx_widoki_duze_2026-11  (16 pl., 38 KB)
+## chemia/archiwum/gfx_widoki_duze_2026-11  (17 pl., 45 KB)
 - (zwinięte; `ls chemia/archiwum/gfx_widoki_duze_2026-11`)
 
 ## chemia/archiwum/stare_2025  (9 pl., 990 KB)
@@ -253,7 +253,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 
 ## chemia/che-modular/engine/src/gfx  (2 pl., 33 KB)
 - `KATALOG.md` 11 KB
-- `index.json` 22 KB
+- `index.json` 21 KB
 
 ## chemia/che-modular/engine/src/gfx/_szkielet/che-lab-engine-v001  (13 pl., 306 KB)
 - (zwinięte; `ls chemia/che-modular/engine/src/gfx/_szkielet/che-lab-engine-v001`)
@@ -293,8 +293,19 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/engine/src/gfx/chemia/szkielet  (1 pl., 2 KB)
 - `szkielet-zygzak.js` 2 KB
 
-## chemia/che-modular/engine/src/gfx/chemia/widoki  (13 pl., 62 KB)
-- (zwinięte; `ls chemia/che-modular/engine/src/gfx/chemia/widoki`)
+## chemia/che-modular/engine/src/gfx/chemia/widoki  (12 pl., 55 KB)
+- `acid-rain-v01.js` 9 KB
+- `kw-dysocjacja-v01.js` 11 KB
+- `n02-doswiadczenia-v01.js` 0 KB
+- `n02-dysocjacja-v01.js` 4 KB
+- `n02-otrzymywanie-v01.js` 5 KB
+- `n02-przeglad-v01.js` 4 KB
+- `n02-reaktor-v01.js` 2 KB
+- `n02-stracanie-v01.js` 4 KB
+- `n02-wzory-v01.js` 4 KB
+- `n02-zobojetnianie-v01.js` 5 KB
+- `sole-doswiadczenia-v01.js` 1 KB
+- `stech-kalkulator-v01.js` 5 KB
 
 ## chemia/che-modular/engine/src/gfx/fizyka/efekty  (1 pl., 0 KB)
 - `discharge.js` 0 KB
@@ -331,7 +342,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/engine/src/gfx/wspolne/widoki  (1 pl., 4 KB)
 - `che-test-silnika-v01.js` 4 KB
 
-## chemia/che-modular/engine/src/klocki  (70 pl., 697 KB)
+## chemia/che-modular/engine/src/klocki  (71 pl., 709 KB)
 - (zwinięte; `ls chemia/che-modular/engine/src/klocki`) — duże:
 - ⚠`wodorotlenki_n02.js` 83 KB
 
@@ -1193,7 +1204,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 
 ## wizualizacje-projekty/baza-mala/gfx  (2 pl., 33 KB)
 - `KATALOG.md` 11 KB
-- `index.json` 22 KB
+- `index.json` 21 KB
 
 ## wizualizacje-projekty/baza-mala/gfx/_szkielet/che-lab-engine-v001  (13 pl., 306 KB)
 - (zwinięte; `ls wizualizacje-projekty/baza-mala/gfx/_szkielet/che-lab-engine-v001`)
@@ -1233,8 +1244,19 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## wizualizacje-projekty/baza-mala/gfx/chemia/szkielet  (1 pl., 2 KB)
 - `szkielet-zygzak.js` 2 KB
 
-## wizualizacje-projekty/baza-mala/gfx/chemia/widoki  (13 pl., 62 KB)
-- (zwinięte; `ls wizualizacje-projekty/baza-mala/gfx/chemia/widoki`)
+## wizualizacje-projekty/baza-mala/gfx/chemia/widoki  (12 pl., 55 KB)
+- `acid-rain-v01.js` 9 KB
+- `kw-dysocjacja-v01.js` 11 KB
+- `n02-doswiadczenia-v01.js` 0 KB
+- `n02-dysocjacja-v01.js` 4 KB
+- `n02-otrzymywanie-v01.js` 5 KB
+- `n02-przeglad-v01.js` 4 KB
+- `n02-reaktor-v01.js` 2 KB
+- `n02-stracanie-v01.js` 4 KB
+- `n02-wzory-v01.js` 4 KB
+- `n02-zobojetnianie-v01.js` 5 KB
+- `sole-doswiadczenia-v01.js` 1 KB
+- `stech-kalkulator-v01.js` 5 KB
 
 ## wizualizacje-projekty/baza-mala/gfx/fizyka/efekty  (1 pl., 0 KB)
 - `discharge.js` 0 KB
@@ -1271,7 +1293,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## wizualizacje-projekty/baza-mala/gfx/wspolne/widoki  (1 pl., 4 KB)
 - `che-test-silnika-v01.js` 4 KB
 
-## wizualizacje-projekty/baza-mala/klocki  (70 pl., 697 KB)
+## wizualizacje-projekty/baza-mala/klocki  (71 pl., 709 KB)
 - (zwinięte; `ls wizualizacje-projekty/baza-mala/klocki`) — duże:
 - ⚠`wodorotlenki_n02.js` 83 KB
 
