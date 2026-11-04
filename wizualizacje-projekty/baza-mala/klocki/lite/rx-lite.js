@@ -75,7 +75,7 @@ function anim(sc,sp,dur){var T0=null,raf=null,R=sc.warstwa,parts=[],bub=[],osad=
    var e=so.shape==='chips'?S('rect',{x:x,y:y,width:r*2.2,height:r,rx:1,fill:rgb(c)}):S('circle',{cx:x,cy:y,r:r,fill:rgb(c)});R.appendChild(e);parts.push({e:e,r:r,x:x,y:y})}}
   if(sp.ppt){var pc=kol(sp.ppt);for(var j=0;j<40;j++){var o=S('circle',{cx:sc.lewa+6+Math.random()*(sc.prawa-sc.lewa-12),cy:sc.poz+Math.random()*(sc.dno-sc.poz),r:1.6+Math.random(),fill:rgb(pc),opacity:0});R.appendChild(o);osad.push({e:o,y0:+o.getAttribute('cy'),d:Math.random()})}}
   if(sp.turb){var tb=S('rect',{x:0,y:sc.poz,width:300,height:250,fill:'rgba(255,255,255,0)'});R.appendChild(tb);sc.tb=tb}else sc.tb=null;
-  if(sp.foam){var fm=S('rect',{x:0,y:sc.poz-4,width:300,height:0,fill:'rgba(250,250,245,.9)'});R.appendChild(fm);sc.fm=fm}else sc.fm=null}
+  if(sp.foam){var fm=S('rect',{x:sc.lewa+3,y:sc.poz,width:sc.prawa-sc.lewa-6,height:0,rx:13,fill:sp.foamCol?rgb(kol(sp.foamCol)):'rgba(250,250,245,.92)',stroke:'rgba(0,0,0,.18)'});R.appendChild(fm);sc.fm=fm}else sc.fm=null}
  function krok(ts){if(T0==null)T0=ts;var t=Math.min(1,(ts-T0)/(dur*1000)),e=t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2;
   if(sc.ciecz&&(sp.l0||sp.l1))sc.ciecz.setAttribute('fill',rgb(mix(kol(sp.l0||'sol-water'),kol(sp.l1||sp.l0||'sol-water'),e),.85));
   var so=sp.solid;if(so){var end=so.end==null?1:so.end;parts.forEach(function(p){var k=1-(1-end)*e;if(p.e.tagName==='circle')p.e.setAttribute('r',Math.max(0,p.r*k));else{p.e.setAttribute('width',Math.max(0,p.r*2.2*k));}
@@ -83,11 +83,11 @@ function anim(sc,sp,dur){var T0=null,raf=null,R=sc.warstwa,parts=[],bub=[],osad=
   if(sp.heat&&(sp.T||0)>=700&&sc.v==='crucible'){var b=Math.max(0,Math.sin(Math.PI*Math.min(1,e*1.4)));sc.blask=sc.blask||(function(){var x=S('circle',{cx:150,cy:118,r:30,fill:'rgba(255,255,255,0)'});sc.g.appendChild(x);return x})();sc.blask.setAttribute('fill','rgba(255,255,240,'+(.9*b).toFixed(2)+')');sc.blask.setAttribute('r',20+30*b)}
   osad.forEach(function(o){var a=Math.max(0,Math.min(1,(e-.15)*1.6)),y=o.y0+(sc.dno-4-o.y0)*Math.max(0,e-.3-o.d*.3)/0.7;o.e.setAttribute('opacity',a.toFixed(2));o.e.setAttribute('cy',Math.min(sc.dno-3,y))});
   if(sc.tb)sc.tb.setAttribute('fill','rgba(255,255,255,'+(0.55*Math.sin(Math.PI*Math.min(1,e*1.2))).toFixed(2)+')');
-  if(sc.fm)sc.fm.setAttribute('height',Math.max(0,22*(sp.foam||0)*Math.sin(Math.PI*e)));
+  if(sc.fm){var fh=Math.max(0,24*(sp.foam||0)*(sp.foamKeep?Math.min(1,e*1.5):Math.sin(Math.PI*e)));sc.fm.setAttribute('height',fh);sc.fm.setAttribute('y',sc.poz-fh+3)}
   if(sp.gas&&t<1&&Math.random()<(sp.bubN||1)*0.12*Math.sin(Math.PI*e)+0.02){var x0=sc.lewa+8+Math.random()*(sc.prawa-sc.lewa-16),c=S('circle',{cx:x0,cy:sc.dno-6,r:1.5+Math.random()*2.5,fill:'rgba(255,255,255,.75)',stroke:'rgba(100,116,139,.6)'});R.appendChild(c);bub.push({e:c,y:sc.dno-6,v:1+Math.random()*1.5})}
   bub=bub.filter(function(b){b.y-=b.v;b.e.setAttribute('cy',b.y);if(b.y<sc.poz){R.removeChild(b.e);return false}return true});
-  if(sp.fumes&&Math.random()<.08*Math.sin(Math.PI*e)){var w=S('circle',{cx:sc.lewa+20+Math.random()*(sc.prawa-sc.lewa-40),cy:sc.top,r:4,fill:'rgba(220,220,220,.5)'});sc.g.appendChild(w);dym.push({e:w,y:sc.top,r:4})}
-  dym=dym.filter(function(d){d.y-=.8;d.r+=.25;d.e.setAttribute('cy',d.y);d.e.setAttribute('r',d.r);d.e.setAttribute('opacity',Math.max(0,1-(sc.top-d.y)/60));if(sc.top-d.y>60){sc.g.removeChild(d.e);return false}return true});
+  if(sp.fumes&&Math.random()<.14*Math.max(.25,Math.sin(Math.PI*e))){var w=S('circle',{cx:sc.lewa+20+Math.random()*(sc.prawa-sc.lewa-40),cy:sc.top,r:5,fill:sp.fumeCol||'rgba(235,235,235,.75)',stroke:'rgba(120,130,140,.25)'});sc.g.appendChild(w);dym.push({e:w,y:sc.top,r:5})}
+  dym=dym.filter(function(d){d.y-=.8;d.r+=.3;d.e.setAttribute('cy',d.y);d.e.setAttribute('r',d.r);d.e.setAttribute('opacity',Math.max(0,.9-(sc.top-d.y)/90));if(sc.top-d.y>90){sc.g.removeChild(d.e);return false}return true});
   if(sc.flame)sc.flame.setAttribute('transform','translate(0,'+(Math.sin(ts/90)*1.5).toFixed(1)+')');
   if(t<1||bub.length||dym.length)raf=requestAnimationFrame(krok);else raf=null}
  return {play:function(){if(raf)cancelAnimationFrame(raf);T0=null;start();raf=requestAnimationFrame(krok)}}}
