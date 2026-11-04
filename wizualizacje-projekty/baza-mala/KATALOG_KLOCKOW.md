@@ -8,7 +8,7 @@ Ta paczka zawiera kopie tego, co już działa w lekcjach. Zewnętrzny model moż
 
 | Folder | Zawartość | Rozmiar |
 |---|---|---|
-| `klocki` | kopia folderu | 757 KB |
+| `klocki` | kopia folderu | 758 KB |
 | `klocki/lite` | kopia folderu | 37 KB |
 | `gfx` | kopia folderu | 683 KB |
 | `tablice` | kopia folderu | 1612 KB |

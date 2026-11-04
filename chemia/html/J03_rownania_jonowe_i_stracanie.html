@@ -709,6 +709,9 @@ body[data-poz="must"] section.poz-e8.poz-nomust{display:none}
 .seria-btn[aria-pressed="true"]{background:var(--accent,#0d6868);color:var(--bg,#fff)}
 .seria-opis{margin:0 0 10px;font-size:14px;color:var(--lab-cisza,#8892a0)}
 
+/* telefon: kilka stojaków obok siebie — nazwa pod kolorową kropką, łamanie tylko gdy konieczne */
+@media (max-width:480px){.rack .kol,.stacje .kol{flex-direction:column;align-items:flex-start;gap:4px}.rack .kol b,.stacje .kol b{overflow-wrap:break-word;hyphens:auto;font-size:13px}.rack .st-opis p,.stacje .st-opis p{overflow-wrap:break-word;hyphens:auto}}
+
 
 </style>
 </head>
@@ -2130,7 +2133,7 @@ function wyborSymbole(grupy, start, onChange, etykieta) {
       .replace(/->/g, '→');
   }
   function esc(t) { return String(t).replace(/[&<>"]/g, function (c) { return {'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]; }); }
-  var WIERSZ = 'display:grid;grid-template-columns:130px 1fr;gap:4px 12px;margin:0 0 8px;font-size:14px;align-items:baseline';
+  var WIERSZ = 'display:grid;grid-template-columns:minmax(84px,130px) minmax(0,1fr);gap:4px 12px;margin:0 0 8px;font-size:14px;align-items:baseline;overflow-wrap:anywhere';
   KLOCKI.def('doswiadczenie', {
     opis: 'Opis doświadczenia: cel, sprzęt, BHP, scena z probówkami, równanie, miejsce na obserwacje.',
     domyslne: {},

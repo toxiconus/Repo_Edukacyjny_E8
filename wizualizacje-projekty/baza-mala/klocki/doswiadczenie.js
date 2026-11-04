@@ -12,7 +12,7 @@
       .replace(/->/g, '→');
   }
   function esc(t) { return String(t).replace(/[&<>"]/g, function (c) { return {'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]; }); }
-  var WIERSZ = 'display:grid;grid-template-columns:130px 1fr;gap:4px 12px;margin:0 0 8px;font-size:14px;align-items:baseline';
+  var WIERSZ = 'display:grid;grid-template-columns:minmax(84px,130px) minmax(0,1fr);gap:4px 12px;margin:0 0 8px;font-size:14px;align-items:baseline;overflow-wrap:anywhere';
   KLOCKI.def('doswiadczenie', {
     opis: 'Opis doświadczenia: cel, sprzęt, BHP, scena z probówkami, równanie, miejsce na obserwacje.',
     domyslne: {},

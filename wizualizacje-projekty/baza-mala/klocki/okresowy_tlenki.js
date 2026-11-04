@@ -67,8 +67,8 @@
     domyslne: {el: 'Al'},
     html: function (host, opc) {
       var U = KLOCKI.ui, p = box(host), s = KON.indexOf(opc.el) >= 0 ? opc.el : 'Al', n = DAT.states[s][0];
-      var sel = document.createElement('select'); sel.style.cssText = 'font:inherit;margin:0 6px'; KON.forEach(function (x) { sel.add(new Option(x + ' — ' + EL[x].n.toLowerCase(), x)); }); sel.value = s;
-      var sw = document.createElement('select'); sw.style.cssText = 'font:inherit;margin:0 6px';
+      var sel = document.createElement('select'); sel.style.cssText = 'font:inherit;margin:0 6px;max-width:calc(100% - 12px)'; KON.forEach(function (x) { sel.add(new Option(x + ' — ' + EL[x].n.toLowerCase(), x)); }); sel.value = s;
+      var sw = document.createElement('select'); sw.style.cssText = 'font:inherit;margin:0 6px;max-width:calc(100% - 12px)';
       var inp = document.createElement('input'); inp.placeholder = 'twój wzór, np. Al2O3'; inp.style.cssText = 'font:inherit;padding:4px 8px;width:160px;border:1px solid var(--border-strong,#94a3b8);border-radius:6px;background:transparent;color:inherit;margin:0 6px';
       p[0].append('Pierwiastek: ', sel, ' stopień utlenienia: ', sw, U.btn('Sprawdź mój wzór', function () { spr(); }), inp);
       function wsw() { sw.innerHTML = ''; DAT.states[s].forEach(function (x) { sw.add(new Option(RZ[x] + ' (' + x + ')', x)); }); sw.value = n = DAT.states[s][0]; }
@@ -89,7 +89,7 @@
     opis: 'Detektor tlenku: dla wybranego tlenku z bazy 38 tlenków odpowiada na trzy pytania — charakter, reakcja z wodą, reakcja z kwasem i z zasadą — i pokazuje zlewkę ze wskaźnikiem uniwersalnym.',
     domyslne: {tlenek: 'SO2'},
     html: function (host, opc) {
-      var U = KLOCKI.ui, p = box(host), k = DAT.ox[opc.tlenek] ? opc.tlenek : 'SO2', sel = document.createElement('select'); sel.style.cssText = 'font:inherit;margin:0 6px';
+      var U = KLOCKI.ui, p = box(host), k = DAT.ox[opc.tlenek] ? opc.tlenek : 'SO2', sel = document.createElement('select'); sel.style.cssText = 'font:inherit;margin:0 6px;max-width:calc(100% - 12px)';
       Object.keys(DAT.ox).forEach(function (x) { sel.add(new Option(pf(x) + ' — ' + DAT.ox[x].n, x)); }); sel.value = k; p[0].append('Tlenek: ', sel);
       function rys() {
         var o = DAT.ox[k], reaguje = /^(reaguje|powoli)/.test(o.w), pH = !reaguje ? 7 : o.c === 'kwasowy' ? 3 : o.c === 'zasadowy' ? 12 : 7, wk = pH < 6 ? '#ef4444' : pH > 9 ? '#7c3aed' : '#22c55e', woda = !reaguje ? '#e0f2fe' : wk;
@@ -106,7 +106,7 @@
     opis: 'Reaktor przewidywania: wybierasz tlenek i odczynnik (woda, kwas, zasada), zapisujesz przewidywanie, a model pokazuje, czy reakcja zachodzi, wraz z uzasadnieniem z charakteru tlenku.',
     domyslne: {tlenek: 'CaO'},
     html: function (host, opc) {
-      var U = KLOCKI.ui, p = box(host), k = DAT.ox[opc.tlenek] ? opc.tlenek : 'CaO', rea = 'w', pred = null, sel = document.createElement('select'); sel.style.cssText = 'font:inherit;margin:0 6px';
+      var U = KLOCKI.ui, p = box(host), k = DAT.ox[opc.tlenek] ? opc.tlenek : 'CaO', rea = 'w', pred = null, sel = document.createElement('select'); sel.style.cssText = 'font:inherit;margin:0 6px;max-width:calc(100% - 12px)';
       Object.keys(DAT.ox).forEach(function (x) { sel.add(new Option(pf(x) + ' — ' + DAT.ox[x].n, x)); }); sel.value = k;
       var RE = [['w', 'woda'], ['a', 'kwas'], ['z', 'zasada (mocna)']], bts = [];
       p[0].append('Tlenek: ', sel, ' odczynnik: '); RE.forEach(function (r) { var b = U.chip(r[1], r[0] === rea, function () { rea = r[0]; pred = null; rys(); }); bts.push(b); p[0].appendChild(b); });
