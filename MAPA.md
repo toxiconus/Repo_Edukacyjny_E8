@@ -328,7 +328,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## chemia/che-modular/engine/src/gfx/wspolne/widoki  (1 pl., 4 KB)
 - `che-test-silnika-v01.js` 4 KB
 
-## chemia/che-modular/engine/src/klocki  (65 pl., 513 KB)
+## chemia/che-modular/engine/src/klocki  (66 pl., 527 KB)
 - (zwinięte; `ls chemia/che-modular/engine/src/klocki`)
 
 ## chemia/che-modular/engine/src/klocki/dane  (1 pl., 11 KB)
@@ -1267,7 +1267,7 @@ Pominięte: .specstory/, .vscode/, .claude/
 ## wizualizacje-projekty/baza-mala/gfx/wspolne/widoki  (1 pl., 4 KB)
 - `che-test-silnika-v01.js` 4 KB
 
-## wizualizacje-projekty/baza-mala/klocki  (65 pl., 513 KB)
+## wizualizacje-projekty/baza-mala/klocki  (66 pl., 527 KB)
 - (zwinięte; `ls wizualizacje-projekty/baza-mala/klocki`)
 
 ## wizualizacje-projekty/baza-mala/klocki/dane  (1 pl., 11 KB)

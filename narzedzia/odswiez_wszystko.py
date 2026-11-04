@@ -6,7 +6,7 @@ import subprocess, sys, os
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 szybko = '--szybko' in sys.argv
 kroki = [] if szybko else [['zbuduj_wszystkie.py'], ['pakiety_okladki.py']]
-kroki += [['okladki_zakladki.py'], ['spis_lekcji.py'], ['katalog_grafik_bio.py'], ['opis_wizualizacji.py'], ['mapa.py']]
+kroki += [['okladki_zakladki.py'], ['spis_lekcji.py'], ['katalog_grafik_bio.py'], ['opis_wizualizacji.py'], ['katalog_klockow.py'], ['mapa.py']]
 extra = os.path.join(ROOT, 'wizualizacje-projekty/narzedzia/zbuduj_baze_mala.py')
 if os.path.exists(extra): kroki.insert(len(kroki) - 1, [extra])
 for k in kroki:
