@@ -450,7 +450,6 @@
    "N05": 1
   },
   "kw-szereg-metali-v01": {
-   "N04": 1,
    "N05": 1
   },
   "kw-wlasciwosci-v01": {},
@@ -959,8 +958,7 @@
    "N04": 1
   },
   "przeniesienie-protonu": {
-   "FIZ01": 1,
-   "N04": 1
+   "FIZ01": 1
   },
   "gruczoly-mapa": {
    "BIO.02.B2e.uklad_dokrewny": 1,
@@ -1487,6 +1485,7 @@
   "ion-map-v02",
   "kw-dysocjacja-v01",
   "kw-reszty-v01",
+  "kw-szereg-metali-v01",
   "n01-spalanie-v01",
   "n02-dysocjacja-v01",
   "n02-otrzymywanie-v01",
@@ -1536,6 +1535,7 @@
   "estryfikacja",
   "nadmiar-substratu",
   "osady-dwie-sole",
+  "przeniesienie-protonu",
   "eutrofizacja",
   "sekwencje",
   "wirus-bakteria",
@@ -1567,7 +1567,6 @@
  "wiele": [
   "gfx-scene-indicatorRack",
   "kw-doswiadczenia-v01",
-  "kw-szereg-metali-v01",
   "n01-doswiadczenia-v01",
   "n02-doswiadczenia-v01",
   "ph-indicators-v03",
@@ -1607,7 +1606,6 @@
   "zlewki-rx",
   "tabela-rozpuszczalnosci",
   "dysocjacja-vs-jonizacja",
-  "przeniesienie-protonu",
   "gruczoly-mapa",
   "kod-genetyczny",
   "drabina",

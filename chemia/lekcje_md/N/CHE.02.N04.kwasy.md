@@ -511,11 +511,9 @@ W szkole często używa się obu terminów zamiennie, ale dokładnie to różne 
 :::
 :::
 
-@model kw-dysocjacja-v01 | Dysocjacja kwasów mocnych i słabych na żywo: H⁺ przeskakuje na wodę (tryb „krok po kroku”), cząsteczki, α, pH | HCl, HNO₃, H₂SO₄, HF, CH₃COOH, H₃PO₄ · α i pH z Ka silnika · porównanie α(c) wszystkich kwasów
+@klocek kw-dysocjacja-v01 | Dysocjacja kwasów mocnych i słabych na żywo: H⁺ przeskakuje na wodę (tryb „krok po kroku”), cząsteczki, α, pH | HCl, HNO₃, H₂SO₄, HF, CH₃COOH, H₃PO₄ · α i pH z Ka silnika · porównanie α(c) wszystkich kwasów
 @opis Animacja dysocjacji kwasów mocnych i słabych (HCl, HNO₃, H₂SO₄, HF, CH₃COOH, H₃PO₄): w trybie krok po kroku proton H⁺ przechodzi na cząsteczkę wody, tworząc H₃O⁺; przy kwasach mocnych rozpadają się prawie wszystkie cząsteczki, przy słabych tylko niewielka część; widać stopień dysocjacji α i pH. Wniosek: moc kwasu to stopień dysocjacji, a nie jego stężenie.
 
-@klocek przeniesienie-protonu {} | Kwas + woda: proton przechodzi na cząsteczkę wody
-@opis Cząsteczka kwasu zbliża się do cząsteczki wody; proton H⁺ przeskakuje na wodę i powstaje jon H₃O⁺ oraz anion reszty kwasowej. Wniosek: w wodzie „wolnego” H⁺ nie ma, jest H₃O⁺.
 
 @klocek dysocjacja-vs-jonizacja {} | NaCl dysocjuje, HCl ulega jonizacji — przycisk „Dodaj wodę”
 @opis Porównanie dwóch substancji: w krysztale NaCl jony Na⁺ i Cl⁻ już istnieją i woda je tylko uwalnia; w cząsteczce HCl jony H₃O⁺ i Cl⁻ powstają dopiero w reakcji z wodą. Wniosek: różnica między dysocjacją a jonizacją.
@@ -945,9 +943,6 @@ $$ Zn + H₂SO₄ (rozc.) → ZnSO₄ + H₂↑
 - **Pb** stoi przed H, ale z HCl i H₂SO₄ reaguje bardzo słabo — na powierzchni powstaje trudno rozpuszczalny PbCl₂ / PbSO₄, który hamuje reakcję.
 - To reakcja **redoks**: Zn⁰ → Zn²⁺ + 2e⁻ (utlenianie), 2 H⁺ + 2e⁻ → H₂⁰ (redukcja). Jonowo: Zn + 2 H⁺ → Zn²⁺ + H₂↑.
 :::
-
-@model kw-szereg-metali-v01 | Szereg aktywności na żywo: Mg, Zn, Fe, Cu w HCl | Cztery probówki obok siebie · silnik GFX · otwiera się w oknie
-@opis Cztery probówki z kwasem solnym i metalami Mg, Zn, Fe, Cu obok siebie: magnez reaguje najgwałtowniej, cynk wyraźnie, żelazo powoli, miedź wcale (brak pęcherzyków). Wniosek: z kwasów wodór wypierają tylko metale aktywniejsze od wodoru — szereg aktywności Mg > Zn > Fe > (H) > Cu.
 
 @klocek probowki-wybor {zestaw="metale-hcl" wybrane="Mg,Zn,Fe,Cu" max="4"} | Szereg aktywności: metale w kwasie solnym (wybierz metale)
 @opis Cztery probówki z kwasem solnym i metalami Mg, Zn, Fe, Cu: Mg reaguje najgwałtowniej, Zn i Fe wolniej z pęcherzykami wodoru, w probówce z Cu nic się nie dzieje. Wniosek: z kwasami reagują tylko metale aktywniejsze od wodoru.

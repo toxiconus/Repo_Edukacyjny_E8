@@ -61,7 +61,8 @@
     "ruch_che.js": "CHE.MOTION (shim): add(canvas, fn(ctx,w,h,t)) — pętla rAF tylko gdy widoczne; dla klocków portowanych z visual-library",
     "acid_rain.js": "acid-rain-v01: Kwaśne deszcze — emisja SO₂/NOₓ, chmura, opad, jezioro i las, odsiarczanie (port)",
     "miareczkowanie_tm.js": "titration-merged: miareczkowanie — typ kwasu, wskaźnik, krzywa pH(V), kolba, autoplay (port; shim CHE.EQUILIBRIUM.titrationPH)",
-    "przewodnictwo.js": "przewodnictwo: tester przewodnictwa + elektroliza (gazy na elektrodach) + model jonów wędrujących do elektrod; port sceny GFX conductivity"
+    "przewodnictwo.js": "przewodnictwo: tester przewodnictwa + elektroliza (gazy na elektrodach) + model jonów wędrujących do elektrod; port sceny GFX conductivity",
+    "dysocjacja.js": "kw-dysocjacja-v01: dysocjacja kwasów na żywo (α, pH z Ka, wykres α(c), krok po kroku)"
   },
   "lekcje": {
     "P01": [
@@ -390,6 +391,7 @@
       "c2d_klocek.js",
       "model_widok.js",
       "ph_panel.js",
+      "dysocjacja.js",
       "ruch_che.js",
       "acid_rain.js",
       "miareczkowanie_tm.js",
