@@ -33,3 +33,7 @@ Zasada: jedna najlepsza wersja. Przy podmianie sprawdź, których lekcji dotyczy
 | `kwasy-rozcienczanie` | N04×1 |
 | `zlewka-rx` | N04×9 |
 | `zlewki-rx` | N04×6 |
+
+## Przewodnictwo / elektroliza (2026-11-04)
+- Nowy klocek `przewodnictwo` (port sceny GFX `conductivity`: tester, żarówka, gazy na elektrodach, model jonów wędrujących do elektrod); w N04 zastąpił `@model gfx-scene-conductivity` i prosty `tester-przewodnictwa`.
+- Do uwspólnienia: `@model gfx-scene-conductivity` jeszcze w N05 (§4), FIZ01 używa prostego `tester-przewodnictwa` (jony_w_wodzie.js) — podmienić na `przewodnictwo`, potem usunąć prosty klocek.

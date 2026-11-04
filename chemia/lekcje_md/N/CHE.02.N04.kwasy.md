@@ -548,11 +548,8 @@ Prąd w roztworze przenoszą **jony**. Tester (dwie elektrody + żarówka/dioda)
 > Przy odpowiednich warunkach (większe napięcie, dłuższy czas) na elektrodach mogą pojawić się pęcherzyki gazów — to **elektroliza**. Jej szczegóły (co powstaje na której elektrodzie) zależą od materiału elektrod, stężenia i napięcia i wykraczają poza E8. Przy baterii i zwykłym testerze pęcherzyków zwykle nie widać — liczy się jasność żarówki.
 :::
 
-@model gfx-scene-conductivity | Przewodzenie prądu: tester z żarówką i model jonów | Doświadczenie w silniku GFX · otwiera się w oknie
-@opis Tester przewodnictwa z żarówką zanurzany w różnych cieczach: w roztworach kwasów, zasad i soli żarówka świeci (jasność zależy od liczby jonów), w wodzie destylowanej i roztworze cukru nie świeci; obok model ruchomych jonów. Wniosek: prąd w roztworze przewodzą jony powstałe w dysocjacji.
-
-@klocek tester-przewodnictwa {} | Tester przewodnictwa: wybierz roztwór i zobacz, czy żarówka świeci
-@opis Bateria, żarówka i dwie elektrody zanurzone w wybranym roztworze (przyciski wyboru). Żarówka świeci jasno w mocnym kwasie, słabo w słabym kwasie, wcale w wodzie destylowanej i roztworze cukru. Wniosek: prąd przewodzą jony, a ich liczba zależy od mocy kwasu.
+@klocek przewodnictwo {roztwor="HCl"} | Tester przewodnictwa i elektroliza: wybierz roztwór, włącz prąd, obserwuj żarówkę, elektrody i jony
+@opis Po lewej tester: bateria, żarówka i dwie elektrody w zlewce; po kliknięciu „Włącz prąd” w roztworach kwasów, zasad i soli żarówka się rozjaśnia (w kwasie octowym słabiej), a na katodzie (−) i anodzie (+) pojawiają się pęcherzyki gazów (np. H₂ na katodzie, Cl₂ lub O₂ na anodzie); w wodzie destylowanej i roztworze cukru żarówka nie świeci. Po prawej model roztworu: jony z ładunkami wędrują do elektrod, kationy do katody, aniony do anody. Wniosek: prąd w roztworze przewodzą jony powstałe w dysocjacji, a ich liczba zależy od mocy elektrolitu.
 
 ::: karta understand {.poz-must} | Sprawdź się
 ::: test {#quiz-s5}

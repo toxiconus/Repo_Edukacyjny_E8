@@ -63,7 +63,8 @@
     "ph_panel.js": "ph-indicators-v03: Panel pH — skala wskaźników, roztwór × wskaźnik, drabinka kwasów i zasad (port z visual-library; zawiera CHE.COLORS i dane kwasów)",
     "ruch_che.js": "CHE.MOTION (shim): add(canvas, fn(ctx,w,h,t)) — pętla rAF tylko gdy widoczne; dla klocków portowanych z visual-library",
     "acid_rain.js": "acid-rain-v01: Kwaśne deszcze — emisja SO₂/NOₓ, chmura, opad, jezioro i las, odsiarczanie (port)",
-    "miareczkowanie_tm.js": "titration-merged: miareczkowanie — typ kwasu, wskaźnik, krzywa pH(V), kolba, autoplay (port; shim CHE.EQUILIBRIUM.titrationPH)"
+    "miareczkowanie_tm.js": "titration-merged: miareczkowanie — typ kwasu, wskaźnik, krzywa pH(V), kolba, autoplay (port; shim CHE.EQUILIBRIUM.titrationPH)",
+    "przewodnictwo.js": "przewodnictwo: tester przewodnictwa + elektroliza (gazy na elektrodach) + model jonów wędrujących do elektrod; port sceny GFX conductivity"
   },
   "lekcje": {
     "P01": [
@@ -392,6 +393,7 @@
       "ruch_che.js",
       "acid_rain.js",
       "miareczkowanie_tm.js",
+      "przewodnictwo.js",
       "kwasy_modele.js",
       "znaki.js",
       "probowki.js",

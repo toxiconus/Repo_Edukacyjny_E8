@@ -245,6 +245,7 @@
   "krzywe-rozpuszczalnosci": "klocek",
   "trojkat-przeliczen": "klocek",
   "palenie": "klocek",
+  "przewodnictwo": "klocek",
   "bilans-spalania": "klocek",
   "diagram-bohra": "klocek",
   "sklad-procentowy": "klocek",
@@ -424,7 +425,6 @@
   },
   "gfx-scene-carbonate": {},
   "gfx-scene-conductivity": {
-   "N04": 1,
    "N05": 1
   },
   "gfx-scene-dilution": {
@@ -769,6 +769,9 @@
   "palenie": {
    "N02": 1
   },
+  "przewodnictwo": {
+   "N04": 1
+  },
   "bilans-spalania": {
    "LKO_ORG01_alkany": 1
   },
@@ -984,8 +987,7 @@
    "N04": 1
   },
   "tester-przewodnictwa": {
-   "FIZ01": 1,
-   "N04": 1
+   "FIZ01": 1
   },
   "gruczoly-mapa": {
    "BIO.02.B2e.uklad_dokrewny": 1,
@@ -1507,6 +1509,7 @@
   "acid-rain-v01",
   "chain-scn",
   "gfx-scene-acidMetal",
+  "gfx-scene-conductivity",
   "gfx-scene-dilution",
   "gfx-scene-titration",
   "ion-map-v02",
@@ -1542,6 +1545,7 @@
   "mapa-mysli",
   "destylacja",
   "palenie",
+  "przewodnictwo",
   "bilans-spalania",
   "sklad-procentowy",
   "konstruktor-tlenku",
@@ -1565,6 +1569,7 @@
   "estryfikacja",
   "nadmiar-substratu",
   "osady-dwie-sole",
+  "tester-przewodnictwa",
   "eutrofizacja",
   "sekwencje",
   "wirus-bakteria",
@@ -1594,7 +1599,6 @@
   "f06Br2Ki"
  ],
  "wiele": [
-  "gfx-scene-conductivity",
   "gfx-scene-indicatorRack",
   "kw-doswiadczenia-v01",
   "kw-reszty-v01",
@@ -1638,7 +1642,6 @@
   "tabela-rozpuszczalnosci",
   "dysocjacja-vs-jonizacja",
   "przeniesienie-protonu",
-  "tester-przewodnictwa",
   "gruczoly-mapa",
   "kod-genetyczny",
   "drabina",
